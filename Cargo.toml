@@ -1,0 +1,13 @@
+[package]
+name = "donut-decomp"
+version = "0.1.0"
+edition = "2018"
+default-run = "buildgen"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.42"
+goblin = "0.4.2"
+clap = "2.33.3"
+csv = "1.1.6"

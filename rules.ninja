@@ -1,0 +1,12 @@
+rule extract-object
+    command = cargo run --quiet --release --bin extract-dol -- $in $out $start $end
+
+rule directory
+    command = mkdir $out
+
+rule genlcf
+    command = cargo run --quiet --release --bin genlcf -- $out
+
+rule ccld
+    command = ./run-exe.sh bin/mwcc/mwldeppc.exe $in -o $out -lcf $lcf -fp hard -linkmode moreram -map $map
+

@@ -1,0 +1,13 @@
+./build/obj/init_80004000_80006728.o
+./build/obj/extab_80006740_800068cc.o
+./build/obj/extabindex_800068e0_800069e4.o
+./build/obj/text_80006a00_80406244.o
+./build/obj/ctors_80406260_80406530.o
+./build/obj/dtors_80406540_8040654c.o
+./build/obj/rodata_80406560_80421030.o
+./build/obj/data_80421040_804966fc.o
+./build/obj/bss_80496700_8055640c.o
+./build/obj/sdata_80556420_8055c6d0.o
+./build/obj/sbss_8055c6e0_8055df74.o
+./build/obj/sdata2_8055df80_805643b0.o
+./build/obj/sbss2_805643c0_805643fc.o

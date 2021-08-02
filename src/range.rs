@@ -13,7 +13,7 @@ impl Ranges {
     }
     pub fn add_range(&mut self, start: u32, end: u32) -> &mut Self {
         self.range_list.insert(start, end);
-        self.merge_ranges();
+        //self.merge_ranges();
         self
     }
     pub fn remove_range(&mut self, start: u32, end: u32) -> &mut Self {
@@ -31,10 +31,10 @@ impl Ranges {
         self.split_range(start, end);
         self.split_range(end, range_end);
         self.range_list.remove(&start);
-        self.merge_ranges();
+        //self.merge_ranges();
         self
     }
-    fn merge_ranges(&mut self) {
+    pub fn merge_ranges(&mut self) {
         let mut last_start = 0;
         let mut last_end = 0;
         let mut block_gc_list = vec![];

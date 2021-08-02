@@ -49,9 +49,6 @@ MEMORY {
         .sbss2 ALIGN(0x20):{}
         .stack ALIGN(0x100):{}
     } > text
-    GROUP:{
-        binary_blobs ALIGN(0x20):{}
-    } > binary_blobs
         
     _stack_addr = (_f_sbss2 + SIZEOF(.sbss2) + 65536 + 0x7) & ~0x7;
     _stack_end = _f_sbss2 + SIZEOF(.sbss2);

@@ -3,3 +3,4 @@
 /build.ninja
 /build
 .ninja_log
+.ninja_deps

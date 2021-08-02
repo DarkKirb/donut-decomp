@@ -1,11 +1,18 @@
 //! Ninja file generator
 
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 use std::fs::File;
 use std::io::{BufWriter, Write};
 use std::path::{Path, PathBuf};
 
 use anyhow::Result;
+use once_cell::sync::Lazy;
+
+static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(|| {
+    let mut hm = HashMap::new();
+    hm.insert("sdk", &["-opt", "level=4"][..]);
+    hm
+});
 
 #[derive(Debug)]
 pub struct NinjaFile {
@@ -121,6 +128,56 @@ impl NinjaFile {
                 lcffile.display(),
                 parent.display(),
                 lcffile.display()
+            )
+            .as_bytes(),
+        )?;
+        self.emit_mkdir(parent)?;
+        Ok(())
+    }
+    pub fn emit_cc(&mut self, infile: impl AsRef<Path>, component: &str) -> Result<String> {
+        let infile = infile.as_ref();
+        let outfile = AsRef::<Path>::as_ref("build/obj/").join(infile.with_extension("o"));
+        if self.emitted_targets.contains(&outfile) {
+            return Ok(outfile.to_string_lossy().into_owned());
+        }
+        self.emitted_targets.insert(outfile.to_owned());
+        let parent = outfile.parent().unwrap();
+        self.writer.write_all(
+            format!(
+                "build {}: cc {} || {}\n",
+                outfile.display(),
+                infile.display(),
+                parent.display()
+            )
+            .as_bytes(),
+        )?;
+        self.writer.write_all(b"    cflags =")?;
+        for flag in CFLAGS[component] {
+            self.writer.write_all(format!(" \"{}\"", flag).as_bytes())?;
+        }
+        self.writer.write_all(b"\n")?;
+        self.emit_mkdir(parent)?;
+
+        Ok(outfile.to_string_lossy().into_owned())
+    }
+    pub fn emit_elf2dol(
+        &mut self,
+        outfile: impl AsRef<Path>,
+        infile: impl AsRef<Path>,
+    ) -> Result<()> {
+        let infile = infile.as_ref();
+        let outfile = outfile.as_ref();
+        if self.emitted_targets.contains(outfile) {
+            return Ok(());
+        }
+        self.emitted_targets.insert(outfile.to_owned());
+        let parent = outfile.parent().unwrap();
+        self.writer.write_all(
+            format!(
+                "build {}: elf2dol {} || {}\n",
+                outfile.display(),
+                infile.display(),
+                parent.display()
             )
             .as_bytes(),
         )?;

@@ -1,2 +1,6 @@
 Address,SymbolName
 80006310,__start
+80006300,__get_debug_bba
+80004000,_LOC_80004000
+80006310,_LOC_80006310
+80006b88,__destroy_global_chain

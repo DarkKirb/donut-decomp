@@ -1,8 +1,7 @@
 use std::{
     fs::File,
-    io::{BufReader, BufWriter, Write},
+    io::{BufRead, BufReader},
     num::ParseIntError,
-    process::Command,
 };
 
 use anyhow::Result;
@@ -11,6 +10,8 @@ use donut_decomp::{dol::Dol, range::Ranges};
 fn parse_hex(s: &str) -> Result<u32, ParseIntError> {
     u32::from_str_radix(s.trim_start_matches("0x"), 16)
 }
+
+const SOURCES: &[(&str, &str)] = &[("sdk/rvl/os/__start.c", "sdk")];
 
 fn main() -> Result<()> {
     let mut ninja = donut_decomp::ninja::NinjaFile::new("build.ninja")?;
@@ -41,7 +42,7 @@ fn main() -> Result<()> {
         );
     }
 
-    let mut objs = vec![];
+    ranges.merge_ranges();
 
     for (start, end) in ranges.into_iter() {
         let objfile = format!(
@@ -51,22 +52,21 @@ fn main() -> Result<()> {
             end
         );
         ninja.emit_extract("bin/donut/donut.dol", &objfile, start, end)?;
-        objs.push(objfile);
+    }
+
+    for source in SOURCES.iter() {
+        ninja.emit_cc(source.0, source.1)?;
     }
 
     ninja.emit_genlcf("build/donut.lcf")?;
-    ninja.emit_ccld("build/donut.elf", "build/donut.lcf", &objs)?;
+    ninja.emit_ccld(
+        "build/donut.elf",
+        "build/donut.lcf",
+        &BufReader::new(File::open("data/objects.txt")?)
+            .lines()
+            .collect::<Result<Vec<_>, std::io::Error>>()?,
+    )?;
+    ninja.emit_elf2dol("build/donut.dol", "build/donut.elf")?;
 
-    let mut obj_list = BufWriter::new(File::create("data/objects.txt")?);
-    for obj in objs.iter() {
-        obj_list.write_all(b"./")?;
-        obj_list.write_all(obj.as_bytes())?;
-        obj_list.write_all(b"\n")?;
-    }
-
-    Command::new("ninja")
-        .arg("build/donut.elf")
-        .spawn()?
-        .wait()?;
     Ok(())
 }

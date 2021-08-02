@@ -10,3 +10,10 @@ rule genlcf
 rule ccld
     command = ./run-exe.sh bin/mwcc/mwldeppc.exe $in -o $out -lcf $lcf -fp hard -linkmode moreram -map $map
 
+rule cc
+    command = ./run-exe.sh bin/mwcc/mwcceppc.exe $cflags -c $in -o $out -gccdep -MD
+    depfile = $out.d
+    deps = gcc
+
+rule elf2dol
+    command = cargo run --quiet --release --bin elf2dol -- $in $out

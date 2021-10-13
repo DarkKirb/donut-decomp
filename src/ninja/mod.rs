@@ -10,7 +10,7 @@ use once_cell::sync::Lazy;
 
 static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(|| {
     let mut hm = HashMap::new();
-    hm.insert("sdk", &["-opt", "level=4"][..]);
+    hm.insert("sdk", &["-opt", "level=4", "-func_align", "16"][..]);
     hm
 });
 

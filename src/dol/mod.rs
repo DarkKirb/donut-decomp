@@ -170,32 +170,64 @@ impl<R: Read + Seek> Dol<R> {
         let mut data = vec![0u8; size as usize];
         let binfile_name = format!("{}.bin", outname);
         let section = self.read_va_block(address, &mut data)?;
-        {
-            let mut binfile = File::create(&binfile_name)?;
-            binfile.write_all(&data)?;
+        if section < 18 {
+            {
+                let mut binfile = File::create(&binfile_name)?;
+                binfile.write_all(&data)?;
+            }
+            Command::new("llvm-objcopy")
+                .arg("-I")
+                .arg("binary")
+                .arg("-O")
+                .arg("elf32-powerpc")
+                .arg(&binfile_name)
+                .arg(outname)
+                //            .arg("--change-section-address")
+                //            .arg(format!(".data={}", address))
+                .arg("--strip-all")
+                .spawn()?
+                .wait()?;
+            fs::remove_file(&binfile_name)?;
+            Command::new("llvm-objcopy")
+                .arg("--rename-section")
+                .arg(format!(
+                    ".data={},{}",
+                    SECTION_NAMES[section], SECTION_BITS[section]
+                ))
+                .arg(outname)
+                .spawn()?
+                .wait()?;
+        } else {
+            let asmfile_name = format!("{}.S", outname);
+            {
+                let mut asmfile = File::create(&asmfile_name)?;
+                asmfile.write_all(format!(".section .bss\n.space {}\n", size).as_bytes())?;
+            }
+            Command::new("clang")
+                .arg("-c")
+                .arg("-o")
+                .arg(outname)
+                .arg(&asmfile_name)
+                .spawn()?
+                .wait()?;
+            Command::new("llvm-objcopy")
+                .arg("-O")
+                .arg("elf32-powerpc")
+                .arg(outname)
+                .arg("--strip-all")
+                .spawn()?
+                .wait()?;
+            Command::new("llvm-objcopy")
+                .arg("--rename-section")
+                .arg(format!(
+                    ".bss={},{}",
+                    SECTION_NAMES[section], SECTION_BITS[section]
+                ))
+                .arg(outname)
+                .spawn()?
+                .wait()?;
+            fs::remove_file(&asmfile_name)?;
         }
-        Command::new("llvm-objcopy")
-            .arg("-I")
-            .arg("binary")
-            .arg("-O")
-            .arg("elf32-powerpc")
-            .arg(&binfile_name)
-            .arg(outname)
-            //            .arg("--change-section-address")
-            //            .arg(format!(".data={}", address))
-            .arg("--strip-all")
-            .spawn()?
-            .wait()?;
-        fs::remove_file(&binfile_name)?;
-        Command::new("llvm-objcopy")
-            .arg("--rename-section")
-            .arg(format!(
-                ".data={},{}",
-                SECTION_NAMES[section], SECTION_BITS[section]
-            ))
-            .arg(outname)
-            .spawn()?
-            .wait()?;
         Command::new("llvm-objcopy")
             .arg("--add-symbol")
             .arg(format!(

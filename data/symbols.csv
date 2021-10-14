@@ -8,8 +8,11 @@ Address,SymbolName
 800190a0,TRK_InterruptHandler
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
-8001cea0,__OSCacheInit
+8001d530,OSDumpContext
 8001d990,OSReport
+8001da20,OSSetErrorHandler
+80021820,OSDisableInterrupts
+80021860,OSRestoreInterrupts
 80023820,OSResetSystem
 80028530,__init_user
 800285a0,exit

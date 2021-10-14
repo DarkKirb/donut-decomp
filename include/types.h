@@ -9,3 +9,8 @@ typedef signed char s8;
 typedef short s16;
 typedef long s32;
 typedef long long s64;
+
+typedef float f32;
+typedef double f64;
+
+typedef int BOOL;

@@ -12,6 +12,7 @@ int main(int argc, char **argv);
 void exit(int res);
 void __flush_cache(void *dst, unsigned long size);
 void __my_flush_cache(void *dst, unsigned long size);
+void OSResetSystem(int, int, int);
 
 extern int _stack_addr;
 extern int _SDA2_BASE_;
@@ -32,6 +33,13 @@ extern __rom_copy_info _rom_copy_info[];
 extern __bss_init_info _bss_init_info[];
 
 static char Debug_BBA;
+unsigned short Pad3 : 0x800030e4;
+
+__declspec(section ".init") void __check_pad3(void) {
+  if ((Pad3 & 0xEEF) != 0xEEF)
+    return;
+  OSResetSystem(0, 0, 0);
+}
 
 __declspec(section ".init") void __set_debug_bba() { Debug_BBA = 1; }
 

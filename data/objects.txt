@@ -1,5 +1,6 @@
-build/obj/0.o
+build/obj/sdk/msl/runtime/__mem.o
+build/obj/1.o
 build/obj/sdk/rvl/os/__start.o
 build/obj/sdk/rvl/os/__ppc_eabi_init.o
-build/obj/3.o
 build/obj/4.o
+build/obj/5.o

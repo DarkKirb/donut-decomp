@@ -10,5 +10,5 @@ set -e
 #if [[ $OSTYPE == 'darwin' ]]; then
 #    docker run -it --rm --volume $PWD/build/wine:/home/wineuser/.wine --volume $PWD:$PWD -w $PWD scottyhardy/docker-wine wine "$@"
 #else
-    wine "$@"
+    WINEARCH=win32 WINEPREFIX=$HOME/.wine32 wine "$@"
 #fi

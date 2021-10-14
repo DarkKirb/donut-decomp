@@ -1,8 +1,6 @@
 Address,SymbolName
 80004000,memcpy
-80004350,memset
 80006310,__start
-800062c0,__check_pad3
 80006b88,__destroy_global_chain
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
@@ -12,6 +10,7 @@ Address,SymbolName
 8001ad80,OSInit
 8001b670,__OSPSInit
 8001cea0,__OSCacheInit
+80023820,OSResetSystem
 80028530,__init_user
 800285a0,exit
 80174ad8,main

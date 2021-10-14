@@ -34,6 +34,32 @@ static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(
             "-gdwarf-2",
         ][..],
     );
+    hm.insert(
+        "msl",
+        &[
+            "-ipa",
+            "file",
+            "-O4,p",
+            "-inline",
+            "auto",
+            "-gccinc",
+            "-i",
+            "./include",
+            "-proc",
+            "gekko",
+            "-enum",
+            "int",
+            "-fp",
+            "hardware",
+            "-Cpp_exceptions",
+            "off",
+            "-RTTI",
+            "off",
+            "-gdwarf-2",
+            "-func_align",
+            "4",
+        ][..],
+    );
     hm
 });
 

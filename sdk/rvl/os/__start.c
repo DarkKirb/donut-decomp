@@ -1,3 +1,5 @@
+#include <string.h>
+
 void __init_registers(void);
 void __init_data(void);
 void __init_hardware(void);
@@ -8,15 +10,26 @@ void InitMetroTRK_BBA(void);
 void __init_user(void);
 int main(int argc, char **argv);
 void exit(int res);
-void *memcpy(void *dst, const void *src, unsigned long size);
 void __flush_cache(void *dst, unsigned long size);
-void *memset(void *dst, int c, unsigned long size);
+void __my_flush_cache(void *dst, unsigned long size);
 
 extern int _stack_addr;
 extern int _SDA2_BASE_;
 extern int _SDA_BASE_;
-extern int _rom_copy_info;
-extern int _bss_init_info;
+
+typedef struct __rom_copy_info {
+  void *src;
+  void *dst;
+  size_t size;
+} __rom_copy_info;
+
+typedef struct __bss_init_info {
+  void *dst;
+  size_t size;
+} __bss_init_info;
+
+extern __rom_copy_info _rom_copy_info[];
+extern __bss_init_info _bss_init_info[];
 
 static char Debug_BBA;
 
@@ -197,61 +210,36 @@ __declspec(section ".init") asm void __init_registers() {
   // clang-format on
 }
 
-__declspec(section ".init") asm void __init_data() {
-  // clang-format off
-  nofralloc;
-  stwu r1, -0x20(r1);
-  mflr r0;
-  stw r0, 0x24(r1);
-  stw r31, 0x1c(r1);
-  stw r30, 0x18(r1);
-  stw r29, 0x14(r1);
-  lis r29, _rom_copy_info@ha;
-  addi r29, r29, _rom_copy_info@l;
-LAB_80006580:
-  lwz r30, 0x8(r29);
-  cmpwi r30, 0x0;
-  beq LAB_800065c0
-  lwz r4, 0x0(r29);
-  lwz r31, 0x4(r29);
-  beq LAB_800065b8;
-  cmplw r31, r4;
-  beq LAB_800065b8;
-  or r3, r31, r31;
-  or r5, r30, r30;
-  bl memcpy;
-  or r3, r31, r31;
-  or r4, r30, r30;
-  bl __flush_cache;
-LAB_800065b8:
-  addi r29, r29, 0xc;
-  b LAB_80006580;
-LAB_800065c0:
-  lis r29, _bss_init_info@ha;
-  addi r29, r29, _bss_init_info@l;
-LAB_800065c8:
-  lwz r30, 0x4(r29);
-  cmpwi r30, 0x0;
-  beq LAB_80006600;
-  lwz r31, 0x0(r29);
-  beq LAB_800065f8;
-  or r3, r31, r31;
-  or r5, r30, r30;
-  li r4, 0x0;
-  bl memset;
-  or r3, r31, r31;
-  or r4, r30, r30;
-  bl __my_flush_cache;
-LAB_800065f8:
-  addi r29, r29, 0x8;
-  b LAB_800065c8;
-LAB_80006600:
-  lwz r0, 0x24(r1);
-  lwz r31, 0x1c(r1);
-  lwz r30, 0x18(r1);
-  lwz r29, 0x14(r1);
-  mtlr r0;
-  addi r1, r1, 0x20;
-  blr
-  // clang-format on
+static void rom_copy_section(void *dst, void *src, size_t size) {
+  if ((size != 0) && (dst != src)) {
+    memcpy(dst, src, size);
+    __flush_cache(dst, size);
+  }
+}
+
+static void bss_init_section(void *dst, size_t size) {
+  if (size != 0) {
+    memset(dst, 0, size);
+    __my_flush_cache(dst, size);
+  }
+}
+
+__declspec(section ".init") void __init_data() {
+  __rom_copy_info *rci;
+  __bss_init_info *bii;
+
+  rci = _rom_copy_info;
+  while (1) {
+    if (rci->size == 0)
+      break;
+    rom_copy_section(rci->dst, rci->src, rci->size);
+    rci++;
+  }
+  bii = _bss_init_info;
+  while (1) {
+    if (bii->size == 0)
+      break;
+    bss_init_section(bii->dst, bii->size);
+    bii++;
+  }
 }

@@ -13,6 +13,8 @@ Address,SymbolName
 80006620,__init_hardware
 80006650,__flush_cache
 80006b88,__destroy_global_chain
+800079fc,__init_cpp_exceptions
+80007a38,__fini_cpp_exceptions
 80015a14,InitMetroTRK
 80015aac,InitMetroTRK_BBA
 8001ad80,OSInit

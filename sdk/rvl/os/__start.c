@@ -45,7 +45,7 @@ __declspec(section ".init") void __set_debug_bba() { Debug_BBA = 1; }
 
 __declspec(section ".init") char __get_debug_bba() { return Debug_BBA; }
 
-__declspec(section ".init") asm void start() {
+__declspec(section ".init") asm void __start() {
   // clang-format off
   nofralloc;
   bl __init_registers;

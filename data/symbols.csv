@@ -1,11 +1,11 @@
 Address,SymbolName
-80004000,memcpy
-80006310,__start
 80006b88,__destroy_global_chain
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
 80015a14,InitMetroTRK
 80015aac,InitMetroTRK_BBA
+80015d28,__TRKreset
+800190a0,TRK_InterruptHandler
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
 8001b670,__OSPSInit

@@ -17,6 +17,8 @@ const SOURCES: &[(&str, &str)] = &[
     ("sdk/rvl/os/__ppc_eabi_init.c", "sdk"),
 ];
 
+const ASM_SOURCES: &[&str] = &["sdk/trk/__exception.S"];
+
 fn main() -> Result<()> {
     let mut ninja = donut_decomp::ninja::NinjaFile::new("build.ninja")?;
     let mut ranges = Ranges::new();
@@ -93,6 +95,10 @@ fn main() -> Result<()> {
 
     for source in SOURCES.iter() {
         ninja.emit_cc(source.0, source.1)?;
+    }
+
+    for source in ASM_SOURCES.iter() {
+        ninja.emit_as(source)?;
     }
 
     ninja.emit_genlcf("build/donut.lcf")?;

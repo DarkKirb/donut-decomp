@@ -15,6 +15,11 @@ rule cc
     depfile = $out.d
     deps = gcc
 
+rule as
+    command = ./run-exe.sh bin/mwcc/mwasmeppc.exe $asflags -c $in -o $out -gccdep -MD
+    depfile = $out.d
+    deps = gcc
+
 rule elf2dol
     command = cargo run --quiet --release --bin elf2dol -- $in $out
 

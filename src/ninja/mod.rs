@@ -63,6 +63,8 @@ static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(
     hm
 });
 
+static ASFLAGS: &[&str] = &["-gccinc", "-i", "./include", "-proc", "gekko", "-gdwarf-2"];
+
 #[derive(Debug)]
 pub struct NinjaFile {
     emitted_targets: HashSet<PathBuf>,
@@ -225,6 +227,33 @@ impl NinjaFile {
         )?;
         self.writer.write_all(b"    cflags =")?;
         for flag in CFLAGS[component] {
+            self.writer.write_all(format!(" \"{}\"", flag).as_bytes())?;
+        }
+        self.writer.write_all(b"\n")?;
+        self.emit_mkdir(parent)?;
+
+        Ok(outfile.to_string_lossy().into_owned())
+    }
+
+    pub fn emit_as(&mut self, infile: impl AsRef<Path>) -> Result<String> {
+        let infile = infile.as_ref();
+        let outfile = AsRef::<Path>::as_ref("build/obj/").join(infile.with_extension("o"));
+        if self.emitted_targets.contains(&outfile) {
+            return Ok(outfile.to_string_lossy().into_owned());
+        }
+        self.emitted_targets.insert(outfile.to_owned());
+        let parent = outfile.parent().unwrap();
+        self.writer.write_all(
+            format!(
+                "build {}: as {} || {}\n",
+                outfile.display(),
+                infile.display(),
+                parent.display()
+            )
+            .as_bytes(),
+        )?;
+        self.writer.write_all(b"    asflags =")?;
+        for flag in ASFLAGS {
             self.writer.write_all(format!(" \"{}\"", flag).as_bytes())?;
         }
         self.writer.write_all(b"\n")?;

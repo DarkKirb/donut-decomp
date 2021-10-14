@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-__declspec(section ".init") static asm void *memcpy(register void *dest,
-                                                    register const void *src,
-                                                    register size_t size) {
+__declspec(section ".init") asm void *memcpy(register void *dest,
+                                             register const void *src,
+                                             register size_t size) {
   // clang-format off
   nofralloc;
   cmplwi cr1, size, 0x0;
@@ -24,7 +24,7 @@ __declspec(section ".init") static asm void *memcpy(register void *dest,
   xor. r11, r10, r9;
   bne LAB_8000415c;
   andi. r10, r10, 0x7;
-  beq LAB_80004068;
+  beq+ LAB_80004068;
   li r6, 0x8;
   subf r9, r9, r6;
   addi r8, dest, 0x0;
@@ -124,7 +124,7 @@ LAB_80004178:
   xor. r11, r10, r9;
   bne LAB_80004288;
   andi. r10, r10, 0x7;
-  beq LAB_800041b4;
+  beq+ LAB_800041b4;
   mtctr r10;
 LAB_800041a8:
   lbzu r9, -1(src);
@@ -162,7 +162,7 @@ LAB_80004204:
   xor. r11, r10, r9;
   bne LAB_80004288;
   andi. r10, r10, 0x7;
-  beq LAB_80004238;
+  beq+ LAB_80004238;
   mtctr r10;
 LAB_8000422c:
   lbzu r9, -1(src);

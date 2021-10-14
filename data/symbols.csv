@@ -8,7 +8,6 @@ Address,SymbolName
 800190a0,TRK_InterruptHandler
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
-8001cab0,ICFlashInvalidate
 8001cea0,__OSCacheInit
 80023820,OSResetSystem
 80028530,__init_user

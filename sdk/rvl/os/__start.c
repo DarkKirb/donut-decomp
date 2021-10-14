@@ -1,11 +1,9 @@
 void __init_registers(void);
 void __init_data(void);
 void __init_hardware(void);
-void __set_debug_bba(void);
 void InitMetroTRK(void);
 void OSInit(void);
 void __check_pad3(void);
-void __get_debug_bba(void);
 void InitMetroTRK_BBA(void);
 void __init_user(void);
 int main(int argc, char **argv);
@@ -19,6 +17,12 @@ extern int _SDA2_BASE_;
 extern int _SDA_BASE_;
 extern int _rom_copy_info;
 extern int _bss_init_info;
+
+static char Debug_BBA;
+
+__declspec(section ".init") void __set_debug_bba() { Debug_BBA = 1; }
+
+__declspec(section ".init") char __get_debug_bba() { return Debug_BBA; }
 
 __declspec(section ".init") asm void start() {
   // clang-format off

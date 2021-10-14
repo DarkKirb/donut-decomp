@@ -89,6 +89,7 @@ pub struct Dol<R: Read + Seek + ?Sized> {
     section_sizes: [u32; 18],
     bss_address: u32,
     bss_size: u32,
+    #[allow(dead_code)]
     entry_point: u32,
     reader: R,
 }

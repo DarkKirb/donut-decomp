@@ -17,3 +17,6 @@ rule cc
 
 rule elf2dol
     command = cargo run --quiet --release --bin elf2dol -- $in $out
+
+rule mergeobj
+    command = ld.lld -relocatable $in -o $out

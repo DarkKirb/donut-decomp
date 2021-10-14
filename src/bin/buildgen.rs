@@ -36,15 +36,18 @@ fn main() -> Result<()> {
 
     for result in rdr.records() {
         let result = result?;
-        ranges.remove_range(
-            parse_hex(result.get(0).unwrap())?,
-            parse_hex(result.get(1).unwrap())?,
-        );
+        for i in 0..13 {
+            if &result[2 * i] == "" {
+                continue;
+            }
+            ranges.remove_range(parse_hex(&result[2 * i])?, parse_hex(&result[2 * i + 1])?);
+        }
     }
 
     ranges.merge_ranges();
 
-    for (start, end) in ranges.into_iter() {
+    for (start, end) in ranges.iter() {
+        let (start, end) = (*start, *end);
         let objfile = format!(
             "build/obj/{}_{:08x}_{:08x}.o",
             dolfile.get_section_name(start),
@@ -52,6 +55,36 @@ fn main() -> Result<()> {
             end
         );
         ninja.emit_extract("bin/donut/donut.dol", &objfile, start, end)?;
+    }
+
+    let mut rdr = csv::Reader::from_reader(BufReader::new(File::open("data/ranges.csv")?));
+
+    for (i, result) in rdr.records().enumerate() {
+        let result = result?;
+        let mut start_addrs = Vec::new();
+        for i in 0..13 {
+            if &result[2 * i] == "" {
+                continue;
+            }
+            start_addrs.push(parse_hex(&result[2 * i])?);
+        }
+        let mut to_merge = Vec::new();
+        for (start, end) in ranges.iter() {
+            let (start, end) = (*start, *end);
+            for start_addr in start_addrs.iter() {
+                if *start_addr == end {
+                    to_merge.push(format!(
+                        "build/obj/{}_{:08x}_{:08x}.o",
+                        dolfile.get_section_name(start),
+                        start,
+                        end
+                    ));
+                }
+            }
+        }
+        if !to_merge.is_empty() {
+            ninja.emit_merge(format!("build/obj/{}.o", i), &to_merge)?;
+        }
     }
 
     for source in SOURCES.iter() {

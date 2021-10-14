@@ -66,4 +66,7 @@ impl Ranges {
     pub fn into_iter(self) -> impl Iterator<Item = (u32, u32)> {
         self.range_list.into_iter()
     }
+    pub fn iter(&self) -> impl Iterator<Item = (&u32, &u32)> {
+        self.range_list.iter()
+    }
 }

@@ -85,6 +85,29 @@ impl NinjaFile {
         self.emit_mkdir(parent)?;
         Ok(())
     }
+
+    pub fn emit_merge(
+        &mut self,
+        outfile: impl AsRef<Path>,
+        objs: &[impl AsRef<Path>],
+    ) -> Result<()> {
+        let outfile = outfile.as_ref();
+        if self.emitted_targets.contains(outfile) {
+            return Ok(());
+        }
+        self.emitted_targets.insert(outfile.to_owned());
+        let parent = outfile.parent().unwrap();
+        self.writer
+            .write_all(format!("build {}: mergeobj ", outfile.display()).as_bytes())?;
+        for object in objs.iter() {
+            self.writer
+                .write_all(format!("{} ", object.as_ref().display()).as_bytes())?;
+        }
+        self.writer.write_all(b"\n")?;
+        self.emit_mkdir(parent)?;
+        Ok(())
+    }
+
     pub fn emit_genlcf(&mut self, outfile: impl AsRef<Path>) -> Result<()> {
         let outfile = outfile.as_ref();
         if self.emitted_targets.contains(outfile) {

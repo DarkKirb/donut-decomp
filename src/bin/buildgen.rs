@@ -11,7 +11,10 @@ fn parse_hex(s: &str) -> Result<u32, ParseIntError> {
     u32::from_str_radix(s.trim_start_matches("0x"), 16)
 }
 
-const SOURCES: &[(&str, &str)] = &[("sdk/rvl/os/__start.c", "sdk")];
+const SOURCES: &[(&str, &str)] = &[
+    ("sdk/rvl/os/__start.c", "sdk"),
+    ("sdk/rvl/os/__ppc_eabi_init.c", "sdk"),
+];
 
 fn main() -> Result<()> {
     let mut ninja = donut_decomp::ninja::NinjaFile::new("build.ninja")?;

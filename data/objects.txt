@@ -1,7 +1,9 @@
 build/obj/sdk/msl/runtime/__mem.o
 build/obj/sdk/trk/__exception.o
 build/obj/2.o
+build/obj/sdk/rvl/os/OS.o
+build/obj/3.o
 build/obj/sdk/rvl/os/__start.o
 build/obj/sdk/rvl/os/__ppc_eabi_init.o
-build/obj/5.o
 build/obj/6.o
+build/obj/7.o

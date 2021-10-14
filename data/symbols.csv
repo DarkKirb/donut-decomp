@@ -6,9 +6,11 @@ Address,SymbolName
 80015aac,InitMetroTRK_BBA
 80015d28,__TRKreset
 800190a0,TRK_InterruptHandler
+8001a200,PPCMfhid2
+8001a210,PPCMthid2
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
-8001b670,__OSPSInit
+8001cab0,ICFlashInvalidate
 8001cea0,__OSCacheInit
 80023820,OSResetSystem
 80028530,__init_user

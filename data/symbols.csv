@@ -6,8 +6,6 @@ Address,SymbolName
 80015aac,InitMetroTRK_BBA
 80015d28,__TRKreset
 800190a0,TRK_InterruptHandler
-8001a200,PPCMfhid2
-8001a210,PPCMthid2
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
 8001cab0,ICFlashInvalidate

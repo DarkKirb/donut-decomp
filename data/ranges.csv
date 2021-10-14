@@ -1,6 +1,7 @@
 .init start,.init end,extab start,extab end,extabindex start,extabindex end,.text start,.text end,.ctors start,.ctors end,.dtors start,.dtors end,.rodata start,.rodata end,.data start,.data end,.bss start,.bss end,.sdata start,.sdata end,.sbss start,.sbss end,.sdata2 start,.sdata2 end,.sbss2 start,.sbss2 end,File
 80004000,80004380,,,,,,,,,,,,,,,,,,,,,,,,,sdk/msl/runtime/__mem.o
 80004380,800062c0,,,,,,,,,,,,,,,,,,,,,,,,,sdk/trk/__exception.o
+,,,,,,8001a200,8001a218,,,,,,,,,,,,,,,,,,,sdk/rvl/base/PPCArch.o
 ,,,,,,8001b670,8001b6c4,,,,,,,,,,,,,,,,,,,sdk/rvl/os/OS.o
 800062c0,80006620,,,,,,,,,,,,,,,,,,,8055c878,8055c879,,,,,sdk/rvl/os/__start.o
 80006620,80006684,,,,,,,,,,,,,,,,,,,,,,,,,sdk/rvl/os/__ppc_eabi_init.o

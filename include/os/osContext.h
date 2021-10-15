@@ -39,6 +39,10 @@ typedef struct OSContext {
 
 void OSDumpContext(OSContext *context);
 
+static u32 __OSContextPA : 0x800000c0;
+static OSContext *__OSCurrentContext : 0x800000d4;
+static OSContext *__OSFPUContext : 0x800000d8;
+
 #ifdef __cplusplus
 }
 #endif

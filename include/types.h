@@ -14,3 +14,5 @@ typedef float f32;
 typedef double f64;
 
 typedef int BOOL;
+
+#define NULL 0

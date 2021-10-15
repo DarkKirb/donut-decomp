@@ -16,6 +16,7 @@ const SOURCES: &[(&str, &str)] = &[
     ("sdk/rvl/base/PPCArch.c", "sdk"),
     ("sdk/rvl/os/OS.c", "sdk"),
     ("sdk/rvl/os/OSCache.c", "sdk"),
+    ("sdk/rvl/os/OSContext.c", "sdk"),
     ("sdk/rvl/os/__start.c", "sdk"),
     ("sdk/rvl/os/__ppc_eabi_init.c", "sdk"),
 ];

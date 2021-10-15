@@ -165,7 +165,7 @@ asm void ICEnable(void) {
   // clang-format on
 }
 
-asm void __LCEnable(void) {
+static asm void __LCEnable(void) {
   // clang-format off
   nofralloc;
   mfmsr r5;
@@ -305,8 +305,8 @@ asm u32 LCQueueWait(register u32 len) {
   // clang-format on
 }
 
-void DMAErrorHandler(u32 unk, OSContext *context,
-                     ... /* function has varargs prologue ??? */) {
+static void DMAErrorHandler(u32 unk, OSContext *context,
+                            ... /* function has varargs prologue ??? */) {
   u32 hid2 = PPCMfhid2();
   OSReport("Machine check received\n");
   OSReport("HID2 = 0x%x   SRR1 = 0x%x\n", hid2, context->srr1);

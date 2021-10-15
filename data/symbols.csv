@@ -1,5 +1,8 @@
 Address,SymbolName
 80006b88,__destroy_global_chain
+80007214,__cvt_fp2unsigned
+80007334,_savegpr_25
+80007380,_restgpr_25
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
 80015a14,InitMetroTRK
@@ -8,10 +11,12 @@ Address,SymbolName
 800190a0,TRK_InterruptHandler
 8001a2c0,__OSFPRInit
 8001ad80,OSInit
-8001d530,OSDumpContext
+8001b540,__OSSetExceptionHandler
 8001d990,OSReport
 8001da20,OSSetErrorHandler
 80021820,OSDisableInterrupts
+80021820,__RAS_OSDisableInterrupts_begin
+8002182c,__RAS_OSDisableInterrupts_end
 80021860,OSRestoreInterrupts
 80023820,OSResetSystem
 80028530,__init_user

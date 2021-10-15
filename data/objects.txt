@@ -6,8 +6,9 @@ build/obj/3.o
 build/obj/sdk/rvl/os/OS.o
 build/obj/4.o
 build/obj/sdk/rvl/os/OSCache.o
-build/obj/5.o
+build/obj/sdk/rvl/os/OSContext.o
+build/obj/6.o
 build/obj/sdk/rvl/os/__start.o
 build/obj/sdk/rvl/os/__ppc_eabi_init.o
-build/obj/8.o
 build/obj/9.o
+build/obj/10.o

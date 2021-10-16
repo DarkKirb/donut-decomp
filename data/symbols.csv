@@ -1,8 +1,5 @@
 Address,SymbolName
 80006b88,__destroy_global_chain
-80007214,__cvt_fp2unsigned
-80007334,_savegpr_25
-80007380,_restgpr_25
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
 80015a14,InitMetroTRK

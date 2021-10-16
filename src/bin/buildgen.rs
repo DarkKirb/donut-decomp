@@ -13,6 +13,7 @@ fn parse_hex(s: &str) -> Result<u32, ParseIntError> {
 
 const SOURCES: &[(&str, &str)] = &[
     ("sdk/msl/runtime/__mem.c", "msl"),
+    ("sdk/msl/runtime/runtime.c", "msl"),
     ("sdk/rvl/base/PPCArch.c", "sdk"),
     ("sdk/rvl/os/OS.c", "sdk"),
     ("sdk/rvl/os/OSCache.c", "sdk"),

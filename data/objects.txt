@@ -1,3 +1,4 @@
+build/obj/0.o
 build/obj/sdk/msl/runtime/__mem.o
 build/obj/sdk/trk/__exception.o
 build/obj/2.o

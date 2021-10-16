@@ -263,3 +263,12 @@ __declspec(section ".init") void *memset(void *dest, int val, size_t count) {
   __fill_mem(dest, val, count);
   return dest;
 }
+
+size_t strlen(const char *s) {
+  unsigned char *p = (unsigned char *)s - 1;
+  size_t n = ~0;
+  do {
+    n++;
+  } while (*++p);
+  return n;
+}

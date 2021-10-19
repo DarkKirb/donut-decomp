@@ -4,6 +4,7 @@ void __OSPSInit(void);
 void __OSFPRInit(void);
 void __OSCacheInit(void);
 
+#ifdef __CWCC__
 __declspec(section ".init") asm void __init_hardware(void) {
   // clang-format off
   nofralloc;
@@ -18,7 +19,9 @@ __declspec(section ".init") asm void __init_hardware(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 __declspec(section ".init") asm void __flush_cache(register void *dst,
                                                    register size_t size) {
   // clang-format off
@@ -39,3 +42,4 @@ LAB_80006664:
   blr;
   // clang-format on
 }
+#endif

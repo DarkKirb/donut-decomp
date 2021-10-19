@@ -1,4 +1,5 @@
 #include <string.h>
+#include <defines.h>
 
 void __init_registers(void);
 void __init_data(void);
@@ -33,19 +34,20 @@ extern __rom_copy_info _rom_copy_info[];
 extern __bss_init_info _bss_init_info[];
 
 static char Debug_BBA;
-unsigned short Pad3 : 0x800030e4;
+unsigned short Pad3 AT(0x800030e4);
 
-__declspec(section ".init") void __check_pad3(void) {
+SECTION(".init") void __check_pad3(void) {
   if ((Pad3 & 0xEEF) != 0xEEF)
     return;
   OSResetSystem(0, 0, 0);
 }
 
-__declspec(section ".init") void __set_debug_bba() { Debug_BBA = 1; }
+SECTION(".init") void __set_debug_bba() { Debug_BBA = 1; }
 
-__declspec(section ".init") char __get_debug_bba() { return Debug_BBA; }
+SECTION(".init") char __get_debug_bba() { return Debug_BBA; }
 
-__declspec(section ".init") asm void __start() {
+#ifdef __CWCC__
+SECTION(".init") asm void __start() {
   // clang-format off
   nofralloc;
   bl __init_registers;
@@ -150,8 +152,10 @@ LAB_80006464:
   b exit
   // clang-format on
 }
+#endif
 
-__declspec(section ".init") asm void __my_flush_cache(void *dst,
+#ifdef __CWCC__
+SECTION(".init") asm void __my_flush_cache(void *dst,
                                                       unsigned long size) {
   // clang-format off
   nofralloc;
@@ -175,8 +179,10 @@ LAB_8000649c:
   blr;
   // clang-format on
 }
+#endif
 
-__declspec(section ".init") asm void __init_registers() {
+#ifdef __CWCC__
+SECTION(".init") asm void __init_registers() {
   // clang-format off
   nofralloc;
   li r0, 0x0;
@@ -217,6 +223,7 @@ __declspec(section ".init") asm void __init_registers() {
   blr
   // clang-format on
 }
+#endif
 
 static void rom_copy_section(void *dst, void *src, size_t size) {
   if ((size != 0) && (dst != src)) {
@@ -232,7 +239,7 @@ static void bss_init_section(void *dst, size_t size) {
   }
 }
 
-__declspec(section ".init") void __init_data() {
+SECTION(".init") void __init_data() {
   __rom_copy_info *rci;
   __bss_init_info *bii;
 

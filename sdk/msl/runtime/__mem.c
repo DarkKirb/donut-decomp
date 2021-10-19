@@ -3,8 +3,10 @@
 // Decompiled by GibHaltmannKill.
 
 #include <string.h>
+#include <defines.h>
 
-__declspec(section ".init") asm void *memcpy(register void *dest,
+#ifdef __CWCC__
+SECTION(".init") asm void *memcpy(register void *dest,
                                              register const void *src,
                                              register size_t size) {
   // clang-format off
@@ -200,8 +202,9 @@ LAB_8000428c:
   blr;
   // clang-format on
 }
+#endif
 
-__declspec(section ".init") static void __fill_mem(void *dest, int val,
+SECTION(".init") static void __fill_mem(void *dest, int val,
                                                    size_t count) {
   char *cdest = (char *)dest;
   int cval = (unsigned char)val;
@@ -259,7 +262,7 @@ __declspec(section ".init") static void __fill_mem(void *dest, int val,
   }
 }
 
-__declspec(section ".init") void *memset(void *dest, int val, size_t count) {
+SECTION(".init") void *memset(void *dest, int val, size_t count) {
   __fill_mem(dest, val, count);
   return dest;
 }

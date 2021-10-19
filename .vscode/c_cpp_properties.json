@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Wii",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/include/**"
+            ],
+            "compilerPath": "/home/darkkirb/.local/bin/clang",
+            "cStandard": "c99",
+            "cppStandard": "c++03",
+            "intelliSenseMode": "${default}",
+            "compilerArgs": [
+                "-ffreestanding",
+                "-nostdinc",
+                "-nostdinc++",
+                "-nostdlib",
+                "-nostdlib++",
+                "-mcpu=broadway",
+                "-target",
+                "powerpc-eabi",
+                "-fms-extensions",
+                "-Weverything"
+            ]
+        }
+    ],
+    "version": 4
+}

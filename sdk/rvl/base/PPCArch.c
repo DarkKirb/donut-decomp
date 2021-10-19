@@ -1,6 +1,7 @@
 #include <base.h>
 #include <os.h>
 
+#ifdef __CWCC__
 asm u32 PPCMfmsr(void) {
   // clang-format off
   nofralloc;
@@ -8,7 +9,9 @@ asm u32 PPCMfmsr(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtmsr(register u32 val) {
   // clang-format off
   nofralloc;
@@ -16,7 +19,9 @@ asm void PPCMtmsr(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm u32 PPCMfhid0(void) {
   // clang-format off
   nofralloc;
@@ -24,7 +29,9 @@ asm u32 PPCMfhid0(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMthid0(register u32 val) {
   // clang-format off
   nofralloc;
@@ -32,7 +39,9 @@ asm void PPCMthid0(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm u32 PPCMfl2cr(void) {
   // clang-format off
   nofralloc;
@@ -40,7 +49,9 @@ asm u32 PPCMfl2cr(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtl2cr(register u32 val) {
   // clang-format off
   nofralloc;
@@ -48,7 +59,9 @@ asm void PPCMtl2cr(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtdec(register u32 val) {
   // clang-format off
   nofralloc;
@@ -56,7 +69,9 @@ asm void PPCMtdec(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCSync(void) {
   // clang-format off
   nofralloc;
@@ -64,7 +79,9 @@ asm void PPCSync(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCHalt(void) {
   // clang-format off
   nofralloc;
@@ -76,7 +93,9 @@ LAB_8001a134:
   b LAB_8001a134;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtmmcr0(register u32 val) {
   // clang-format off
   nofralloc;
@@ -84,7 +103,9 @@ asm void PPCMtmmcr0(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtmmcr1(register u32 val) {
   // clang-format off
   nofralloc;
@@ -92,7 +113,9 @@ asm void PPCMtmmcr1(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtpmc1(register u32 val) {
   // clang-format off
   nofralloc;
@@ -100,7 +123,9 @@ asm void PPCMtpmc1(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtpmc2(register u32 val) {
   // clang-format off
   nofralloc;
@@ -108,7 +133,9 @@ asm void PPCMtpmc2(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtpmc3(register u32 val) {
   // clang-format off
   nofralloc;
@@ -124,7 +151,9 @@ asm void PPCMtpmc4(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm u32 PPCMffpscr(void) {
   // clang-format off
   nofralloc;
@@ -138,7 +167,9 @@ asm u32 PPCMffpscr(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtfpscr(register u32 val) {
   // clang-format off
   nofralloc;
@@ -154,7 +185,9 @@ asm void PPCMtfpscr(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm u32 PPCMfhid2(void) {
   // clang-format off
   nofralloc;
@@ -162,7 +195,9 @@ asm u32 PPCMfhid2(void) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMthid2(register u32 val) {
   // clang-format off
   nofralloc;
@@ -170,7 +205,9 @@ asm void PPCMthid2(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
+#ifdef __CWCC__
 asm void PPCMtwpar(register u32 val) {
   // clang-format off
   nofralloc;
@@ -178,9 +215,11 @@ asm void PPCMtwpar(register u32 val) {
   blr;
   // clang-format on
 }
+#endif
 
 void PPCDisableSpeculation(void) { PPCMthid0(PPCMfhid0() | 0x200); }
 
+#ifdef __CWCC__
 asm void PPCSetFpNonIEEEMode(void) {
   // clang-format off
   nofralloc;
@@ -188,17 +227,21 @@ asm void PPCSetFpNonIEEEMode(void) {
   blr;
   // clang-format on
 }
-
+#endif
 void PPCMthid4(register u32 val) {
   if (val & 0x80000000) {
+#ifdef __CWCC__
     asm {
       mtspr 1011, val;
     }
+#endif
   } else {
     OSReport("H4A should not be cleared because of Broadway errata.\n");
     val |= 0x80000000;
+#ifdef __CWCC__
     asm {
       mtspr 1011, val;
     }
+#endif
   }
 }

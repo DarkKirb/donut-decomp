@@ -1,6 +1,7 @@
 #include <base.h>
 #include <types.h>
 
+#ifdef __CWCC__
 void __OSPSInit(void) {
   PPCMthid2(PPCMfhid2() | 0xA0000000);
   ICFlashInvalidate();
@@ -17,3 +18,4 @@ void __OSPSInit(void) {
     mtspr 919, r3;
   }
 }
+#endif

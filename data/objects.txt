@@ -15,3 +15,5 @@ build/obj/sdk/rvl/os/__start.o
 build/obj/sdk/rvl/os/__ppc_eabi_init.o
 build/obj/10.o
 build/obj/11.o
+build/obj/donut/Main.o
+build/obj/12.o

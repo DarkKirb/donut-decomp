@@ -18,5 +18,5 @@ Address,SymbolName
 80023820,OSResetSystem
 80028530,__init_user
 800285a0,exit
-80174ad8,main
+801776bc,Run__Q23app10EntryPointFbPCc
 8055c878,Debug_BBA

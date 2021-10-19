@@ -63,9 +63,9 @@ static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(
     hm.insert(
         "donut",
         &[
-            "-ipa",
-            "file",
-            "-O4,p",
+            "-O3",
+            "-opt",
+            "space",
             "-inline",
             "auto",
             "-gccinc",

@@ -2,6 +2,7 @@ Address,SymbolName
 80006b88,__destroy_global_chain
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
+8000db3c,strcmp
 80015a14,InitMetroTRK
 80015aac,InitMetroTRK_BBA
 80015d28,__TRKreset
@@ -18,5 +19,8 @@ Address,SymbolName
 80023820,OSResetSystem
 80028530,__init_user
 800285a0,exit
-801776bc,Run__Q23app10EntryPointFbPCc
+80176268,Run__Q23app11ApplicationFRQ23app6Systembbb
+8017775c,__dt__Q23app6SystemFv
+8017bbdc,__ct__Q23app6SystemFv
+801bf250,SetupIfNotSetup__Q23mem6MemoryFv
 8055c878,Debug_BBA

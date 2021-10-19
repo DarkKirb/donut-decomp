@@ -21,6 +21,7 @@ const SOURCES: &[(&str, &str)] = &[
     ("sdk/rvl/os/__start.c", "sdk"),
     ("sdk/rvl/os/__ppc_eabi_init.c", "sdk"),
     ("donut/Main.cpp", "donut"),
+    ("donut/app/EntryPoint.cpp", "donut"),
 ];
 
 const ASM_SOURCES: &[&str] = &["sdk/trk/__exception.S"];

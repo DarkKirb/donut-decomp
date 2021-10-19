@@ -8,7 +8,7 @@ rule genlcf
     command = cargo run --quiet --release --bin genlcf -- $out
 
 rule ccld
-    command = ./run-exe.sh bin/mwcc/mwldeppc.exe $in -o $out -lcf $lcf -fp hard -linkmode moreram -map $map
+    command = ./run-exe.sh bin/mwcc/mwldeppc.exe $in -o $out -lcf $lcf -fp hard -linkmode moreram -map $map -mapunused -code_merging all
 
 rule cc
     command = ./run-exe.sh bin/mwcc/mwcceppc.exe $cflags -c $in -o $out -gccdep -MD

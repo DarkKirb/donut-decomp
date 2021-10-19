@@ -4,6 +4,11 @@
 #include <mem/Memory.hpp>
 #include <string.h>
 
+#ifdef __CWCC__
+#pragma optimization_level 3
+#pragma warning off(10548)
+#endif
+
 namespace app {
 void EntryPoint::Run(bool debug, const char *arg) {
   mem::Memory::SetupIfNotSetup();
@@ -19,3 +24,9 @@ void EntryPoint::Run(bool debug, const char *arg) {
   Application::Run(system, debug, is_hbm_reset, is_wiisystem_reset);
 }
 } // namespace app
+
+namespace hel {
+namespace common {
+bool PrivateSingleton<app::System>::isExist_;
+}
+} // namespace hel

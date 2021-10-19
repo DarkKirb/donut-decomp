@@ -6,6 +6,7 @@ namespace gfx {
 struct XFBManager {
   int unk[7];
   XFBManager(const VISetting &);
+  ~XFBManager();
   unsigned char *target1();
   unsigned char *target2();
 };

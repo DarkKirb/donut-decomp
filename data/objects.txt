@@ -20,8 +20,10 @@ build/obj/donut/app/AppImpl.o
 build/obj/12.o
 build/obj/donut/app/EntryPoint.o
 build/obj/13.o
-build/obj/donut/app/System.o
+build/obj/donut/app/EntryPoint2.o
 build/obj/14.o
-build/obj/donut/mem/Memory.o
+build/obj/donut/app/System.o
 build/obj/15.o
+build/obj/donut/mem/Memory.o
 build/obj/16.o
+build/obj/17.o

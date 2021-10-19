@@ -6,6 +6,7 @@ namespace hel {
 namespace common {
 template <class T> struct PrivateSingleton : NonCopyable {
   static bool isExist_;
+  ~PrivateSingleton();
 };
 } // namespace common
 } // namespace hel

@@ -31,6 +31,5 @@ struct System : hel::common::PrivateSingleton<System> {
   snd::SoundManager soundManager_;
 
   System();
-  ~System();
 };
 } // namespace app

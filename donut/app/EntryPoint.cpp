@@ -5,7 +5,6 @@
 #include <string.h>
 
 #ifdef __CWCC__
-#pragma optimization_level 3
 #pragma warning off(10548)
 #endif
 

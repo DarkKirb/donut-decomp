@@ -1,6 +1,7 @@
 #include <ai.h>
 #include <app/System.hpp>
 #include <ax.h>
+#include <defines.h>
 #include <dvd.h>
 #include <gx.h>
 #include <nw4r/g3d.hpp>
@@ -23,8 +24,8 @@ System::System()
   nw4r::g3d::tmem::SetTMemLayout(nw4r::g3d::tmem::TMEM_LAYOUT_1);
 }
 
-gfx::RenderSetting &System::renderSetting() { return renderSetting_; }
-gfx::XFBManager &System::xfbManager() { return xfbManager_; }
+USED gfx::RenderSetting &System::renderSetting() { return renderSetting_; }
+USED gfx::XFBManager &System::xfbManager() { return xfbManager_; }
 
 System::SDKInitializer::SDKInitializer() {
   SCInit();

@@ -1,3 +1,4 @@
+#include <defines.h>
 #include <util/Mutex.hpp>
 
 #ifdef __CWCC__
@@ -6,9 +7,9 @@
 
 namespace util {
 Mutex::Mutex() { OSInitMutex(&inner_); }
-void Mutex::lock() { OSLockMutex(&inner_); }
-void Mutex::unlock() { OSUnlockMutex(&inner_); }
+USED void Mutex::lock() { OSLockMutex(&inner_); }
+USED void Mutex::unlock() { OSUnlockMutex(&inner_); }
 
-ScopedMutex::ScopedMutex(Mutex &mutex) : mutex_(mutex) { mutex.lock(); }
-ScopedMutex::~ScopedMutex() { mutex_.unlock(); }
+USED ScopedMutex::ScopedMutex(Mutex &mutex) : mutex_(mutex) { mutex.lock(); }
+USED ScopedMutex::~ScopedMutex() { mutex_.unlock(); }
 } // namespace util

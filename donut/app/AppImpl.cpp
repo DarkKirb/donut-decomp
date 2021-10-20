@@ -1,3 +1,4 @@
+#include <defines.h>
 #include <gfx/VISetting.hpp>
 #include <hel/common/ExplicitSingleton.hpp>
 #include <mem/Memory.hpp>
@@ -10,7 +11,7 @@
 namespace hel {
 namespace common {
 mem::Memory *ExplicitSingleton<mem::Memory>::object_;
-snd::SoundManager *ExplicitSingleton<snd::SoundManager>::object_;
+USED snd::SoundManager *ExplicitSingleton<snd::SoundManager>::object_;
 gfx::VISetting *ExplicitSingleton<gfx::VISetting>::object_;
 } // namespace common
 } // namespace hel

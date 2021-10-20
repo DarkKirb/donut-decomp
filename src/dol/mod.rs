@@ -229,15 +229,6 @@ impl<R: Read + Seek> Dol<R> {
                 .wait()?;
             fs::remove_file(&asmfile_name)?;
         }
-        Command::new("llvm-objcopy")
-            .arg("--add-symbol")
-            .arg(format!(
-                "_LOC_{:08x}={}:0x{:08x},global",
-                address, SECTION_NAMES[section], address
-            ))
-            .arg(outname)
-            .spawn()?
-            .wait()?;
         Ok(())
     }
     pub fn extract_from_to(&mut self, start: u32, end: u32, outname: &str) -> Result<()> {

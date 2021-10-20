@@ -1,4 +1,5 @@
 #include <base.h>
+#include <defines.h>
 #include <os.h>
 
 #ifdef __CWCC__
@@ -32,7 +33,7 @@ asm u32 PPCMfhid0(void) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMthid0(register u32 val) {
+USED asm void PPCMthid0(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 1008, val;
@@ -62,7 +63,7 @@ asm void PPCMtl2cr(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtdec(register u32 val) {
+USED asm void PPCMtdec(register u32 val) {
   // clang-format off
   nofralloc;
   mtdec val;
@@ -72,7 +73,7 @@ asm void PPCMtdec(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCSync(void) {
+USED asm void PPCSync(void) {
   // clang-format off
   nofralloc;
   sc;
@@ -96,7 +97,7 @@ LAB_8001a134:
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtmmcr0(register u32 val) {
+USED asm void PPCMtmmcr0(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 952, val;
@@ -106,7 +107,7 @@ asm void PPCMtmmcr0(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtmmcr1(register u32 val) {
+USED asm void PPCMtmmcr1(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 956, val;
@@ -116,7 +117,7 @@ asm void PPCMtmmcr1(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtpmc1(register u32 val) {
+USED asm void PPCMtpmc1(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 953, val;
@@ -126,7 +127,7 @@ asm void PPCMtpmc1(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtpmc2(register u32 val) {
+USED asm void PPCMtpmc2(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 954, val;
@@ -136,7 +137,7 @@ asm void PPCMtpmc2(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtpmc3(register u32 val) {
+USED asm void PPCMtpmc3(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 957, val;
@@ -144,7 +145,7 @@ asm void PPCMtpmc3(register u32 val) {
   // clang-format on
 }
 
-asm void PPCMtpmc4(register u32 val) {
+USED asm void PPCMtpmc4(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 958, val;
@@ -154,7 +155,7 @@ asm void PPCMtpmc4(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm u32 PPCMffpscr(void) {
+USED asm u32 PPCMffpscr(void) {
   // clang-format off
   nofralloc;
   stwu r1, -0x20(r1);
@@ -170,7 +171,7 @@ asm u32 PPCMffpscr(void) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtfpscr(register u32 val) {
+USED asm void PPCMtfpscr(register u32 val) {
   // clang-format off
   nofralloc;
   stwu r1, -0x20(r1);
@@ -208,7 +209,7 @@ asm void PPCMthid2(register u32 val) {
 #endif
 
 #ifdef __CWCC__
-asm void PPCMtwpar(register u32 val) {
+USED asm void PPCMtwpar(register u32 val) {
   // clang-format off
   nofralloc;
   mtspr 921, val;
@@ -217,10 +218,10 @@ asm void PPCMtwpar(register u32 val) {
 }
 #endif
 
-void PPCDisableSpeculation(void) { PPCMthid0(PPCMfhid0() | 0x200); }
+USED void PPCDisableSpeculation(void) { PPCMthid0(PPCMfhid0() | 0x200); }
 
 #ifdef __CWCC__
-asm void PPCSetFpNonIEEEMode(void) {
+USED asm void PPCSetFpNonIEEEMode(void) {
   // clang-format off
   nofralloc;
   mtfsb1 29;
@@ -228,7 +229,7 @@ asm void PPCSetFpNonIEEEMode(void) {
   // clang-format on
 }
 #endif
-void PPCMthid4(register u32 val) {
+USED void PPCMthid4(register u32 val) {
   if (val & 0x80000000) {
 #ifdef __CWCC__
     asm {

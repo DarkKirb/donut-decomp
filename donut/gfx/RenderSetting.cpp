@@ -1,7 +1,8 @@
+#include <defines.h>
 #include <gfx/RenderSetting.hpp>
 #include <gx.h>
 
-void setCopyClear(void) {
+USED void setCopyClear(void) {
   GXColor color = {0, 0, 0, 255};
   GXSetCopyClear(color, 0xffffff);
 }

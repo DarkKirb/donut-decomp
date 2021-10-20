@@ -2,13 +2,13 @@
 // https://github.com/doldecomp/ogws/blob/82dbeac2267170fc5cef7e67a6d8c31c5ff45d69/src/RevoSDK/TRK/__mem.c
 // Decompiled by GibHaltmannKill.
 
-#include <string.h>
 #include <defines.h>
+#include <string.h>
 
 #ifdef __CWCC__
-SECTION(".init") asm void *memcpy(register void *dest,
-                                             register const void *src,
-                                             register size_t size) {
+SECTION(".init")
+asm void *memcpy(register void *dest, register const void *src,
+                 register size_t size) {
   // clang-format off
   nofralloc;
   cmplwi cr1, size, 0x0;
@@ -204,8 +204,7 @@ LAB_8000428c:
 }
 #endif
 
-SECTION(".init") static void __fill_mem(void *dest, int val,
-                                                   size_t count) {
+SECTION(".init") static void __fill_mem(void *dest, int val, size_t count) {
   char *cdest = (char *)dest;
   int cval = (unsigned char)val;
   int *idest = (int *)dest;
@@ -267,7 +266,7 @@ SECTION(".init") void *memset(void *dest, int val, size_t count) {
   return dest;
 }
 
-size_t strlen(const char *s) {
+USED size_t strlen(const char *s) {
   unsigned char *p = (unsigned char *)s - 1;
   size_t n = ~0;
   do {

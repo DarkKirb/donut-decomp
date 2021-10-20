@@ -1,3 +1,4 @@
+#include <defines.h>
 #include <os.h>
 #include <os/osContext.h>
 #include <os/osError.h>
@@ -171,7 +172,7 @@ LAB_8001d1e4:
 #endif
 
 #ifdef __CWCC__
-asm void OSSaveFPUContext(register OSContext *context) {
+USED asm void OSSaveFPUContext(register OSContext *context) {
   // clang-format off
   nofralloc;
   addi r5, context, 0;
@@ -212,10 +213,10 @@ LAB_8001d238:
 }
 #endif
 
-OSContext *OSGetCurrentContext(void) { return __OSCurrentContext; }
+USED OSContext *OSGetCurrentContext(void) { return __OSCurrentContext; }
 
 #ifdef __CWCC__
-asm u32 OSSaveContext(register OSContext *context) {
+USED asm u32 OSSaveContext(register OSContext *context) {
   // clang-format off
   stmw r13, 0x034(context);
   mfspr r0, 913;
@@ -257,7 +258,7 @@ extern u32 __RAS_OSDisableInterrupts_begin;
 extern u32 __RAS_OSDisableInterrupts_end;
 
 #ifdef __CWCC__
-asm void OSLoadContext(register OSContext *context) {
+USED asm void OSLoadContext(register OSContext *context) {
   // clang-format off
   nofralloc;
 
@@ -325,7 +326,7 @@ LAB_8001d344:
 #endif
 
 #ifdef __CWCC__
-asm void *OSGetStackPointer(void) {
+USED asm void *OSGetStackPointer(void) {
   // clang-format off
   nofralloc;
   mr r3, r1;
@@ -335,7 +336,7 @@ asm void *OSGetStackPointer(void) {
 #endif
 
 #ifdef __CWCC__
-asm void OSSwitchFiber(register u32 code, register u32 stack) {
+USED asm void OSSwitchFiber(register u32 code, register u32 stack) {
   // clang-format off
   nofralloc;
   mflr r0;
@@ -355,9 +356,9 @@ asm void OSSwitchFiber(register u32 code, register u32 stack) {
 #endif
 
 #ifdef __CWCC__
-asm void OSSwitchFiberEx(register u32 a0, register u32 a1, register u32 a2,
-                         register u32 a3, register u32 code,
-                         register u32 stack) {
+USED asm void OSSwitchFiberEx(register u32 a0, register u32 a1, register u32 a2,
+                              register u32 a3, register u32 code,
+                              register u32 stack) {
   // clang-format off
   nofralloc;
   mflr r0;
@@ -376,7 +377,7 @@ asm void OSSwitchFiberEx(register u32 a0, register u32 a1, register u32 a2,
 }
 #endif
 
-void OSClearContext(OSContext *context) {
+USED void OSClearContext(OSContext *context) {
   context->mode = 0;
   context->state = 0;
   if (context == __OSFPUContext)
@@ -384,8 +385,8 @@ void OSClearContext(OSContext *context) {
 }
 
 #ifdef __CWCC__
-asm void OSInitContext(register OSContext *context, register u32 code,
-                       register u32 stack) {
+USED asm void OSInitContext(register OSContext *context, register u32 code,
+                            register u32 stack) {
   // clang-format off
   nofralloc;
   stw code, 0x198(context);
@@ -496,8 +497,8 @@ void OSDumpContext(OSContext *context) {
 }
 
 #ifdef __CWCC__
-static asm void OSSwitchFPUContext(register u32 unk,
-                                   register OSContext *context) {
+USED static asm void OSSwitchFPUContext(register u32 unk,
+                                        register OSContext *context) {
   // clang-format off
   nofralloc;
   mfmsr r5;
@@ -538,17 +539,16 @@ LAB_8001d7d0:
   // clang-format on
 }
 #else
-void OSSwitchFPUContext(register u32 unk,
-                                   register OSContext *context);
+void OSSwitchFPUContext(register u32 unk, register OSContext *context);
 #endif
 
-void __OSContextInit(void) {
+USED void __OSContextInit(void) {
   __OSSetExceptionHandler(7, OSSwitchFPUContext);
   __OSFPUContext = NULL;
 }
 
 #ifdef __CWCC__
-asm void OSFillFPUContext(register OSContext *context) {
+USED asm void OSFillFPUContext(register OSContext *context) {
   // clang-format off
   nofralloc;
   mfmsr r5;

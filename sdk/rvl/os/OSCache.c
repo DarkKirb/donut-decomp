@@ -1,3 +1,4 @@
+#include <defines.h>
 #include <ic.h>
 #include <os.h>
 #include <os/osContext.h>
@@ -37,7 +38,7 @@ LAB_8001c9fc:
 #endif
 
 #ifdef __CWCC__
-asm void DCFlushRange(register void *addr, register u32 len) {
+USED asm void DCFlushRange(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -58,7 +59,7 @@ LAB_8001c99c:
 #endif
 
 #ifdef __CWCC__
-asm void DCStoreRange(register void *addr, register u32 len) {
+USED asm void DCStoreRange(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -79,7 +80,7 @@ LAB_8001c9cc:
 #endif
 
 #ifdef __CWCC__
-asm void DCFlushRangeNoSync(register void *addr, register u32 len) {
+USED asm void DCFlushRangeNoSync(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -99,7 +100,7 @@ LAB_8001c9fc:
 #endif
 
 #ifdef __CWCC__
-asm void DCStoreRangeNoSync(register void *addr, register u32 len) {
+USED asm void DCStoreRangeNoSync(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -119,7 +120,7 @@ LAB_8001ca2c:
 #endif
 
 #ifdef __CWCC__
-asm void DCZeroRange(register void *addr, register u32 len) {
+USED asm void DCZeroRange(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -139,7 +140,7 @@ LAB_8001ca5c:
 #endif
 
 #ifdef __CWCC__
-asm void ICInvalidateRange(register void *addr, register u32 len) {
+USED asm void ICInvalidateRange(register void *addr, register u32 len) {
   // clang-format off
   nofralloc;
   cmplwi len, 0;
@@ -224,7 +225,7 @@ LAB_8001cb6c:
 }
 #endif
 
-void LCEnable(void) {
+USED void LCEnable(void) {
   BOOL enabled;
 
   enabled = OSDisableInterrupts();
@@ -233,7 +234,7 @@ void LCEnable(void) {
 }
 
 #ifdef __CWCC__
-asm void LCDisable(void) {
+USED asm void LCDisable(void) {
   // clang-format off
 
   nofralloc;
@@ -254,8 +255,8 @@ LAB_8001cbfc:
 #endif
 
 #ifdef __CWCC__
-asm void LCLoadBlocks(register void *dest, register void *src,
-                      register u32 num) {
+USED asm void LCLoadBlocks(register void *dest, register void *src,
+                           register u32 num) {
   // clang-format off
 
   nofralloc;
@@ -274,8 +275,8 @@ asm void LCLoadBlocks(register void *dest, register void *src,
 #endif
 
 #ifdef __CWCC__
-asm void LCStoreBlocks(register void *dest, register void *src,
-                       register u32 num) {
+USED asm void LCStoreBlocks(register void *dest, register void *src,
+                            register u32 num) {
   // clang-format off
 
   nofralloc;
@@ -293,7 +294,7 @@ asm void LCStoreBlocks(register void *dest, register void *src,
 }
 #endif
 
-u32 LCStoreData(void *dest, void *src, u32 n) {
+USED u32 LCStoreData(void *dest, void *src, u32 n) {
   u32 num;
   u32 xacts;
 
@@ -314,7 +315,7 @@ u32 LCStoreData(void *dest, void *src, u32 n) {
 }
 
 #ifdef __CWCC__
-asm u32 LCQueueLength(void) {
+USED asm u32 LCQueueLength(void) {
   // clang-format off
   nofralloc;
   mfspr r4, 920;
@@ -325,7 +326,7 @@ asm u32 LCQueueLength(void) {
 #endif
 
 #ifdef __CWCC__
-asm u32 LCQueueWait(register u32 len) {
+USED asm u32 LCQueueWait(register u32 len) {
   // clang-format off
   nofralloc;
   mfspr r4, 920;
@@ -373,9 +374,11 @@ void __OSCacheInit(void) {
     msr = PPCMfmsr();
     __sync();
     PPCMtmsr(0x30);
-    __sync(); __sync();
+    __sync();
+    __sync();
     PPCMtl2cr(PPCMfl2cr() & 0x7FFFFFFF);
-    __sync(); __sync();
+    __sync();
+    __sync();
     PPCMtl2cr(PPCMfl2cr() & 0x7FFFFFFF);
     __sync();
     PPCMtl2cr(PPCMfl2cr() | 0x200000);

@@ -27,5 +27,6 @@ void EntryPoint::Run(bool debug, const char *arg) {
 namespace hel {
 namespace common {
 bool PrivateSingleton<app::System>::isExist_;
-}
+PrivateSingleton<app::System>::~PrivateSingleton() { isExist_ = false; }
+} // namespace common
 } // namespace hel

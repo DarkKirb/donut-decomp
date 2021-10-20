@@ -1,3 +1,4 @@
+#include <defines.h>
 #include <hel/common/PointerWrapper.hpp>
 #include <mem/Memory.hpp>
 #include <mem/OperatorNewDelete.hpp>
@@ -45,22 +46,30 @@ void t_operatorDelete(void *ptr) {
 
 } // namespace
 
-void *operator new(u32 size, IAllocator &alloc) {
+USED void *operator new(u32 size, IAllocator &alloc) {
   return t_operatorNew(size, alloc);
 }
 
-void *operator new(u32 size) { return t_operatorNew(size); }
+void *operator new[](u32 size, IAllocator &alloc) {
+  return t_operatorNew(size, alloc);
+}
+
+USED void *operator new(u32 size) { return t_operatorNew(size); }
+
+void *operator new[](u32 size) { return t_operatorNew(size); }
 
 void operator delete(void *ptr) { t_operatorDelete(ptr); }
 
+void operator delete[](void *ptr) { t_operatorDelete(ptr); }
+
 namespace mem {
-void OperatorNewDelete::SetDefaultAllocator(IAllocator &alloc) {
+USED void OperatorNewDelete::SetDefaultAllocator(IAllocator &alloc) {
   t_allocator.ptr_ = &alloc;
 }
-void OperatorNewDelete::SetGlobalNewDeleteAllocator(IAllocator &alloc) {
+USED void OperatorNewDelete::SetGlobalNewDeleteAllocator(IAllocator &alloc) {
   t_globalNewDeleteAllocator.ptr_ = &alloc;
 }
-void OperatorNewDelete::UnsetGlobalNewDeleteAllocator(IAllocator &alloc) {
+USED void OperatorNewDelete::UnsetGlobalNewDeleteAllocator(IAllocator &alloc) {
   // extraneous argument is not a copy-paste error
   t_globalNewDeleteAllocator.ptr_ = 0;
 }

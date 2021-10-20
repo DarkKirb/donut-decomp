@@ -1,3 +1,5 @@
+#include <defines.h>
+
 const double __constants[] = {0.0, 4294967296.0, 2147483648.0};
 
 #ifdef __CWCC__
@@ -108,7 +110,7 @@ void _restgpr_30(void);
 void _restgpr_31(void);
 
 #ifdef __CWCC__
-asm void __save_fpr(void) {
+USED asm void __save_fpr(void) {
   // clang-format off
 
   nofralloc;
@@ -155,7 +157,7 @@ entry _savefpr_31;
 #endif
 
 #ifdef __CWCC__
-asm void __restore_fpr(void) {
+USED asm void __restore_fpr(void) {
   // clang-format off
 
   nofralloc;
@@ -296,7 +298,7 @@ entry _restgpr_31;
 #endif
 
 #ifdef __CWCC__
-asm void __div2u() {
+USED asm void __div2u() {
   // clang-format off
   nofralloc;
   cmpwi r3, 0;
@@ -372,7 +374,7 @@ LAB_80007480:
 #endif
 
 #ifdef __CWCC__
-asm void __div2i() {
+USED asm void __div2i() {
   // clang-format off
   nofralloc;
 
@@ -476,7 +478,7 @@ LAB_800075bc:
 #endif
 
 #ifdef __CWCC__
-asm void __mod2u() {
+USED asm void __mod2u() {
   // clang-format off
   nofralloc;
   cmpwi r3, 0;
@@ -550,7 +552,7 @@ LAB_800076a4:
 #endif
 
 #ifdef __CWCC__
-asm void __mod2i() {
+USED asm void __mod2i() {
   // clang-format off
   nofralloc;
 
@@ -640,7 +642,7 @@ LAB_800077b0:
 #endif
 
 #ifdef __CWCC__
-asm void __shl2i() {
+USED asm void __shl2i() {
   // clang-format off
   nofralloc;
   subfic r8, r5, 0x20;
@@ -657,7 +659,7 @@ asm void __shl2i() {
 #endif
 
 #ifdef __CWCC__
-asm void __cvt_sll_dbl() {
+USED asm void __cvt_sll_dbl() {
   // clang-format off
   stwu r1, -0x10(r1);
   rlwinm. r5, r3, 0, 0, 0;
@@ -712,7 +714,7 @@ LAB_80007874:
 #endif
 
 #ifdef __CWCC__
-asm void __cvt_dbl_usll() {
+USED asm void __cvt_dbl_usll() {
   // clang-format off
   nofralloc;
 
@@ -778,7 +780,7 @@ LAB_8000794c:
 #endif
 
 #ifdef __CWCC__
-asm void __cvt_dbl_ull() {
+USED asm void __cvt_dbl_ull() {
   // clang-format off
   nofralloc;
   stwu r1, -0x10(r1);

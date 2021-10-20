@@ -1,4 +1,5 @@
 #include <dc.h>
+#include <defines.h>
 #include <gfx/GXFifoMemoryManager.hpp>
 #include <mem/Memory.hpp>
 
@@ -30,5 +31,5 @@ void *GXFifoMemoryManager::data() {
   return (void *)(((u32)fifo_ + 0x3ff) & ~0x3ff);
 }
 
-void GXFifoMemoryManager::setWriteEnable() { writeEnable_ = true; }
+USED void GXFifoMemoryManager::setWriteEnable() { writeEnable_ = true; }
 } // namespace gfx

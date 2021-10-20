@@ -75,13 +75,13 @@ MEMORY {
     }
     out.write_all(b"}\n")?;
 
-    let reader = BufReader::new(File::open("build/objects.txt")?);
+    /*let reader = BufReader::new(File::open("build/objects.txt")?);
     out.write_all(b"FORCEFILES { \n")?;
     for line in reader.lines() {
         let line = line?;
         out.write_all(format!("\"{}\"\n", line).as_bytes())?;
     }
-    out.write_all(b"}\n")?;
+    out.write_all(b"}\n")?;*/
 
     Ok(())
 }

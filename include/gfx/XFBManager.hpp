@@ -9,7 +9,6 @@ struct XFBManager {
   mem::DataBlock fb2_;
   bool oddFb_;
   XFBManager(const VISetting &);
-  ~XFBManager();
   unsigned char *target1();
   unsigned char *target2();
   unsigned char *drawTargetXFB();

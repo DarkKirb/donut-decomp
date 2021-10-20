@@ -19,5 +19,9 @@ struct Memory : hel::common::ExplicitSingleton<Memory> {
   static void SetupIfNotSetup();
   Memory();
   ~Memory();
+
+  HeapExp &mem1FixHeap();
 };
 } // namespace mem
+
+#define MEMORY_OBJ (hel::common::ExplicitSingleton<mem::Memory>::object_)

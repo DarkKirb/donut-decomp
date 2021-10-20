@@ -35,7 +35,6 @@ Address,SymbolName
 80177810,__dt__Q26freeze13FreezeManagerFv
 8017786c,__dt__Q23gfx10XFBManagerFv
 8018a900,__ct__Q26freeze13FreezeManagerFPUcPUc
-8019607c,__ct__Q23gfx19GXFifoMemoryManagerFUlUl
 80196168,__dt__Q23gfx19GXFifoMemoryManagerFv
 801961e0,data__Q23gfx19GXFifoMemoryManagerFv
 801962dc,__ct__Q23gfx13RenderSettingFv
@@ -50,7 +49,9 @@ Address,SymbolName
 801a39f8,__dt__Q23hid14LibInitializerFv
 801bf2bc,__ct__Q23mem6MemoryFv
 801bf520,__dt__Q23mem6MemoryFv
+801bf5e8,mem1FixHeap__Q23mem6MemoryFv
 801bf714,__dl__FPv
 80402ee8,__ct__Q23snd12SoundManagerFv
 80403150,__dt__Q23snd12SoundManagerFv
+80405a9c,__ct__Q24util5MutexFv
 8055c878,Debug_BBA

@@ -25,6 +25,12 @@ typedef struct {
   u8 vfilter[7];
 } GXRenderModeObject;
 
+typedef struct {
+  u8 r, g, b, a;
+} GXColor;
+
+void GXSetCopyClear(GXColor color, u32 clear);
+
 #ifdef __cplusplus
 }
 #endif

@@ -1,10 +1,11 @@
 #pragma once
 
 #include <gx.h>
+#include <hel/common/ExplicitSingleton.hpp>
 #include <types.h>
 
 namespace gfx {
-struct VISetting {
+struct VISetting : hel::common::ExplicitSingleton<VISetting> {
   GXRenderModeObject *rmode_;
   int unk[4];
   VISetting();

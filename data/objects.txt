@@ -24,10 +24,14 @@ build/obj/donut/app/EntryPoint2.o
 build/obj/14.o
 build/obj/donut/app/System.o
 build/obj/15.o
-build/obj/donut/gfx/GXFifoMemoryManager.o
+build/obj/donut/g3d/Root.o
 build/obj/16.o
-build/obj/donut/gfx/XFBManager.o
+build/obj/donut/gfx/GXFifoMemoryManager.o
 build/obj/17.o
-build/obj/donut/mem/Memory.o
+build/obj/donut/gfx/RenderSetting.o
 build/obj/18.o
+build/obj/donut/gfx/XFBManager.o
 build/obj/19.o
+build/obj/donut/mem/Memory.o
+build/obj/20.o
+build/obj/21.o

@@ -32,6 +32,7 @@ const SOURCES: &[(&str, &str)] = &[
     ("donut/mem/DataBlock.cpp", "donut"),
     ("donut/mem/MemBlock.cpp", "donut"),
     ("donut/mem/Memory.cpp", "donut"),
+    ("donut/mem/OperatorNewDelete.cpp", "donut"),
     ("donut/util/Mutex.cpp", "donut"),
 ];
 

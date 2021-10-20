@@ -66,7 +66,7 @@ MEMORY {
         let result = result?;
         out.write_all(
             format!(
-                "    {} = 0x{:08x};\n",
+                "    \"{}\" = 0x{:08x};\n",
                 result.get(1).unwrap(),
                 parse_hex(result.get(0).unwrap())?
             )

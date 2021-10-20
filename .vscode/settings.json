@@ -5,6 +5,19 @@
         "string_view": "c",
         "initializer_list": "c",
         "utility": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "memory_resource": "cpp",
+        "memory": "cpp",
+        "future": "cpp",
+        "iosfwd": "cpp",
+        "sstream": "cpp",
+        "tuple": "cpp"
     },
 }

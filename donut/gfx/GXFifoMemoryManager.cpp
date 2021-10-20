@@ -19,3 +19,16 @@ PrivateSingleton<gfx::GXFifoMemoryManager>::~PrivateSingleton() {
 bool PrivateSingleton<gfx::GXFifoMemoryManager>::isExist_;
 } // namespace common
 } // namespace hel
+
+namespace gfx {
+GXFifoMemoryManager::~GXFifoMemoryManager() {
+  MEMORY_OBJ->mem1FixHeap().free(fifo_);
+  fifo_ = 0;
+}
+
+void *GXFifoMemoryManager::data() {
+  return (void *)(((u32)fifo_ + 0x3ff) & ~0x3ff);
+}
+
+void GXFifoMemoryManager::setWriteEnable() { writeEnable_ = true; }
+} // namespace gfx

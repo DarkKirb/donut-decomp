@@ -26,6 +26,7 @@ const SOURCES: &[(&str, &str)] = &[
     ("donut/app/EntryPoint2.cpp", "donut"),
     ("donut/app/System.cpp", "donut"),
     ("donut/gfx/GXFifoMemoryManager.cpp", "donut"),
+    ("donut/gfx/XFBManager.cpp", "donut"),
     ("donut/mem/Memory.cpp", "donut"),
 ];
 

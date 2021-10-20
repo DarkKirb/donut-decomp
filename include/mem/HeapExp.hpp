@@ -12,5 +12,7 @@ struct HeapExp : public IHeap {
   virtual const MemBlock heapMemBlock() const;
   virtual u32 heapUsingBlockCount() const;
   virtual void heapDump() const;
+
+  void free(void *ptr);
 };
 } // namespace mem

@@ -17,5 +17,6 @@ struct GXFifoMemoryManager
 
   u32 size() const;
   void *data();
+  void setWriteEnable();
 };
 } // namespace gfx

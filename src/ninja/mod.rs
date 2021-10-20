@@ -66,6 +66,8 @@ static CFLAGS: Lazy<HashMap<&'static str, &'static [&'static str]>> = Lazy::new(
             "-O3",
             "-opt",
             "space,nopeep",
+            "-ipa",
+            "file",
             "-inline",
             "auto",
             "-gccinc",

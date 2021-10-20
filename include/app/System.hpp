@@ -16,11 +16,16 @@ struct System : hel::common::PrivateSingleton<System> {
     SDKInitializer();
   };
 
+  struct MemorySetupper {
+    MemorySetupper();
+  };
+
   struct GXInitializer {
     GXInitializer(gfx::GXFifoMemoryManager &);
   };
 
   SDKInitializer sdkInit_;
+  MemorySetupper memorySetupper_;
   gfx::GXFifoMemoryManager gxFifoMemoryManager_;
   GXInitializer gxInitializer_;
   gfx::VISetting viSetting_;

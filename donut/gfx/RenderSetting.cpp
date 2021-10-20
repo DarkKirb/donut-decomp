@@ -16,4 +16,6 @@ RenderSetting::RenderSetting()
       unk2_(0) {
   object_ = this;
 }
+RenderSetting::Rect::Rect(float x, float y, float w, float h)
+    : x_(x), y_(y), w_(w), h_(h) {}
 } // namespace gfx

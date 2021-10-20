@@ -39,7 +39,6 @@ Address,SymbolName
 80177810,__dt__Q26freeze13FreezeManagerFv
 8017786c,__dt__Q23gfx10XFBManagerFv
 8018a900,__ct__Q26freeze13FreezeManagerFPUcPUc
-801963f0,__ct__Q33gfx13RenderSetting4RectFffff
 80196404,__dt__Q23gfx13RenderSettingFv
 80196468,rmode__Q23gfx13RenderSettingCFv
 801979ac,__ct__Q23gfx9VISettingFv

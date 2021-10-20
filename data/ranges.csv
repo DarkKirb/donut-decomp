@@ -16,7 +16,7 @@
 ,,,,,,8017bbdc,8017bd88,,,,,,,,,,,,,,,,,,,donut/app/System.o
 ,,,,,,,,,,,,,,,,,,,,8055d1b0,8055d1b4,,,,,donut/gfx/Root.cpp
 ,,,,,,8019607c,801961fc,,,,,,,,,,,,,8055d1b4,8055d1b9,,,,,donut/gfx/GXFifoMemoryManager.o
-,,,,,,801962a8,801963f0,,,,,,,,,,,,,,,8055f720,8055f730,,,donut/gfx/RenderSetting.o
+,,,,,,801962a8,80196404,,,,,,,,,,,,,,,8055f720,8055f730,,,donut/gfx/RenderSetting.o
 ,,,,,,80197d50,80197ef4,,,,,,,,,,,,,,,,,,,donut/gfx/XFBManager.o
 ,,,,,,801bf250,801bf2bc,,,,,,,,,80545bf8,80545ed0,,,8055d2a0,8055d2a1,,,,,donut/mem/Memory.o
 80006684,80006728,,,,,,,8040652c,80406530,80406548,8040654c,,,,,,,,,,,,,,,Linker generated symbol file

@@ -25,11 +25,14 @@ struct System : hel::common::PrivateSingleton<System> {
   GXInitializer gxInitializer_;
   gfx::VISetting viSetting_;
   gfx::XFBManager xfbManager_;
-  gfx::RenderSetting renderingSetting_;
+  gfx::RenderSetting renderSetting_;
   freeze::FreezeManager freezeManager_;
   hid::LibInitializer libInitializer_;
   snd::SoundManager soundManager_;
 
   System();
+
+  gfx::RenderSetting &renderSetting();
+  gfx::XFBManager &xfbManager();
 };
 } // namespace app

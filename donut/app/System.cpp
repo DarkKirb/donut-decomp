@@ -1,6 +1,12 @@
+#include <ai.h>
 #include <app/System.hpp>
+#include <ax.h>
+#include <dvd.h>
+#include <gx.h>
 #include <nw4r/g3d.hpp>
 #include <nw4r/g3d/tmem.hpp>
+#include <sc.h>
+#include <vi.h>
 
 using namespace hel::common;
 
@@ -38,7 +44,7 @@ System *__ct__Q23app6SystemFv(System *self) {
   __ct__Q23gfx9VISettingFv(&self->viSetting_);
   __ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting(&self->xfbManager_,
                                               &self->viSetting_);
-  __ct__Q23gfx13RenderSettingFv(&self->renderingSetting_);
+  __ct__Q23gfx13RenderSettingFv(&self->renderSetting_);
   __ct__Q26freeze13FreezeManagerFPUcPUc(&self->freezeManager_,
                                         self->xfbManager_.target1(),
                                         self->xfbManager_.target2());
@@ -50,6 +56,40 @@ System *__ct__Q23app6SystemFv(System *self) {
 
   return self;
 }
+}
+
+gfx::RenderSetting &System::renderSetting() { return renderSetting_; }
+gfx::XFBManager &System::xfbManager() { return xfbManager_; }
+
+System::SDKInitializer::SDKInitializer() {
+  SCInit();
+  DVDInit();
+#ifdef __CWCC__
+  {
+    asm {
+      li r3, 0x4;
+      oris r3, r3, 0x4;
+      mtspr 914, r3;
+      li r3, 0x5;
+      oris r3, r3, 0x5;
+      mtspr 915, r3;
+      li r3, 0x6;
+      oris r3, r3, 0x6;
+      mtspr 916, r3;
+      li r3, 0x7;
+      oris r3, r3, 0x7;
+      mtspr 917, r3;
+    }
+  }
+#endif
+  VIInit();
+  AIInit(0);
+  AXInit();
+}
+
+System::GXInitializer::GXInitializer(gfx::GXFifoMemoryManager &fifoMM) {
+  GXInit(fifoMM.data(), fifoMM.size());
+  GXSetDither(0);
 }
 
 } // namespace app

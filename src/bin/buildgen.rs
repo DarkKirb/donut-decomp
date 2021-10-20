@@ -29,7 +29,10 @@ const SOURCES: &[(&str, &str)] = &[
     ("donut/gfx/GXFifoMemoryManager.cpp", "donut"),
     ("donut/gfx/RenderSetting.cpp", "donut"),
     ("donut/gfx/XFBManager.cpp", "donut"),
+    ("donut/mem/DataBlock.cpp", "donut"),
+    ("donut/mem/MemBlock.cpp", "donut"),
     ("donut/mem/Memory.cpp", "donut"),
+    ("donut/util/Mutex.cpp", "donut"),
 ];
 
 const ASM_SOURCES: &[&str] = &["sdk/trk/__exception.S"];

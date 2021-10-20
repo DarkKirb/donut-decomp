@@ -1,3 +1,4 @@
+#define MEM_BLOCK_CONSTRUCTOR_HACK
 #include <gfx/XFBManager.hpp>
 #include <mem/Memory.hpp>
 #include <vi.h>

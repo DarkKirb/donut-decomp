@@ -1,27 +1,41 @@
 rule extract-object
     command = cargo run --quiet --release --bin extract-dol -- $in $out $start $end
+    depfile = target/release/extract-dol.d
+    deps = gcc
 
 rule directory
     command = mkdir $out
 
 rule genlcf
     command = cargo run --quiet --release --bin genlcf -- $out
+    depfile = target/release/genlcf.d
+    deps = gcc
 
 rule ccld
     command = ./run-exe.sh bin/mwcc/mwldeppc.exe $in -o $out -lcf $lcf -fp hard -linkmode moreram -map $map -mapunused -code_merging all
 
 rule cc
-    command = ./run-exe.sh bin/mwcc/mwcceppc.exe $cflags -c $in -o $out -gccdep -MD
+    command = (./run-exe.sh bin/mwcc/mwcceppc.exe $cflags -c $in -o $out -gccdep -MDfile $out.d && sed -i 's|Z:||g; s|\\|/|g; s| /| \\|g' $out.d)
     depfile = $out.d
     deps = gcc
 
 rule as
-    command = ./run-exe.sh bin/mwcc/mwasmeppc.exe $asflags -c $in -o $out -gccdep -MD
+    command = (./run-exe.sh bin/mwcc/mwasmeppc.exe $asflags -c $in -o $out -gccdep -MDfile $out.d && sed -i 's|Z:||g; s|\\|/|g; s| /| \\|g' $out.d)
     depfile = $out.d
     deps = gcc
 
 rule elf2dol
     command = cargo run --quiet --release --bin elf2dol -- $in $out
+    depfile = target/release/elf2dol.d
+    deps = gcc
 
 rule mergeobj
     command = ld.lld -relocatable $in -o $out
+
+rule create_ninja
+    command = cargo run --quiet
+    generator = true
+    depfile = target/debug/buildgen.d
+    deps = gcc
+    
+build build.ninja build/objects.txt: create_ninja | data/ranges.csv

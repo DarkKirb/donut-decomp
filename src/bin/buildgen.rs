@@ -1,6 +1,6 @@
 use std::{
     fs::File,
-    io::{BufRead, BufReader},
+    io::{BufReader, BufWriter, Write},
     num::ParseIntError,
 };
 
@@ -79,6 +79,7 @@ fn main() -> Result<()> {
     }
 
     let mut rdr = csv::Reader::from_reader(BufReader::new(File::open("data/ranges.csv")?));
+    let mut objects = Vec::new();
 
     for (i, result) in rdr.records().enumerate() {
         let result = result?;
@@ -105,6 +106,10 @@ fn main() -> Result<()> {
         }
         if !to_merge.is_empty() {
             ninja.emit_merge(format!("build/obj/{}.o", i), &to_merge)?;
+            objects.push(format!("build/obj/{}.o", i));
+        }
+        if !result[26].is_empty() {
+            objects.push(format!("build/obj/{}", &result[26]));
         }
     }
 
@@ -117,14 +122,14 @@ fn main() -> Result<()> {
     }
 
     ninja.emit_genlcf("build/donut.lcf")?;
-    ninja.emit_ccld(
-        "build/donut.elf",
-        "build/donut.lcf",
-        &BufReader::new(File::open("data/objects.txt")?)
-            .lines()
-            .collect::<Result<Vec<_>, std::io::Error>>()?,
-    )?;
+    ninja.emit_ccld("build/donut.elf", "build/donut.lcf", &objects)?;
     ninja.emit_elf2dol("build/donut.dol", "build/donut.elf")?;
+
+    let mut writer = BufWriter::new(File::create("build/objects.txt")?);
+    for object in objects {
+        writer.write_all(object.as_bytes())?;
+        writer.write_all(b"\n")?;
+    }
 
     Ok(())
 }

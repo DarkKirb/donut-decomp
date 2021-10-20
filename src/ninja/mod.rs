@@ -226,7 +226,7 @@ impl NinjaFile {
         }
         self.writer.write_all(
             format!(
-                "| {} data/objects.txt || {}\n    lcf={}\n    map=build/donut.map\n",
+                "| {} build/objects.txt || {}\n    lcf={}\n    map=build/donut.map\n",
                 lcffile.display(),
                 parent.display(),
                 lcffile.display()

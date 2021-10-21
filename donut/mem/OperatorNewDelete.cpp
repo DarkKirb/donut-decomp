@@ -54,7 +54,7 @@ void *operator new[](u32 size, IAllocator &alloc) {
   return t_operatorNew(size, alloc);
 }
 
-USED void *operator new(u32 size) { return t_operatorNew(size); }
+void *operator new(u32 size) { return t_operatorNew(size); }
 
 void *operator new[](u32 size) { return t_operatorNew(size); }
 

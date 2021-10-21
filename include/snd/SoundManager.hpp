@@ -1,7 +1,9 @@
 #pragma once
 
+#include <hel/common/ExplicitSingleton.hpp>
+
 namespace snd {
-struct SoundManager {
+struct SoundManager : hel::common::ExplicitSingleton<SoundManager> {
   int unknown[188];
   SoundManager();
   ~SoundManager();

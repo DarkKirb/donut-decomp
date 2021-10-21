@@ -22,6 +22,7 @@ const SOURCES: &[(&str, &str)] = &[
     ("sdk/rvl/os/__ppc_eabi_init.c", "sdk"),
     ("donut/Main.cpp", "donut"),
     ("donut/app/AppImpl.cpp", "donut"),
+    ("donut/app/Application.cpp", "donut"),
     ("donut/app/EntryPoint.cpp", "donut"),
     ("donut/app/System.cpp", "donut"),
     ("donut/g3d/Root.cpp", "donut"),

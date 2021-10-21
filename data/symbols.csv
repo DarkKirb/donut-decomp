@@ -21,6 +21,7 @@ Address,SymbolName
 80022ba0,OSLockMutex
 80022c80,OSUnlockMutex
 80023820,OSResetSystem
+800244a0,CheckPointerIsValid__Q33hel6common13ScopedPtrUtilFPCv
 80028530,__init_user
 800285a0,exit
 8002c840,VIInit
@@ -38,9 +39,11 @@ Address,SymbolName
 800dd3e0,__ct__Q33hel6common34PointerWrapper<Q23mem10IAllocator>Fv
 800f16b0,G3dInit__Q24nw4r3g3dFb
 801007e0,startAddress__Q23mem8MemBlockCFv
+80174de0,__ct__Q23app7AppImplFRQ23app6System
+801754f4,run__Q23app7AppImplFbbb
 80175004,__dt__Q33hel6common43ExplicitSingleton<Q26freeze13FreezeManager>Fv
+80175004,__dt__Q33hel6common38ExplicitSingleton<Q23app11Application>Fv
 80175b68,__dt__Q33hel6common11NonCopyableFv
-80176268,Run__Q23app11ApplicationFRQ23app6Systembbb
 8018a900,__ct__Q26freeze13FreezeManagerFPUcPUc
 80196404,__dt__Q23gfx13RenderSettingFv
 80196468,rmode__Q23gfx13RenderSettingCFv

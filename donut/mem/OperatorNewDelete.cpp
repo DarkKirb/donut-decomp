@@ -50,21 +50,44 @@ USED void *operator new(u32 size, IAllocator &alloc) {
   return t_operatorNew(size, alloc);
 }
 
+void *operator new(u32 size, const std::nothrow_t &, IAllocator &alloc) {
+  return t_operatorNew(size, alloc);
+}
+
 void *operator new[](u32 size, IAllocator &alloc) {
   return t_operatorNew(size, alloc);
 }
 
 void *operator new(u32 size) { return t_operatorNew(size); }
 
+void *operator new(u32 size, const std::nothrow_t &) {
+  return t_operatorNew(size);
+}
+
 void *operator new[](u32 size) { return t_operatorNew(size); }
+
+void *operator new[](u32 size, const std::nothrow_t &) {
+  return t_operatorNew(size);
+}
 
 void operator delete(void *ptr) { t_operatorDelete(ptr); }
 
+void operator delete(void *ptr, const std::nothrow_t &) {
+  t_operatorDelete(ptr);
+}
+
 void operator delete[](void *ptr) { t_operatorDelete(ptr); }
+
+void operator delete[](void *ptr, const std::nothrow_t &) {
+  t_operatorDelete(ptr);
+}
 
 namespace mem {
 USED void OperatorNewDelete::SetDefaultAllocator(IAllocator &alloc) {
   t_allocator.ptr_ = &alloc;
+}
+IAllocator &OperatorNewDelete::GetDefaultAllocator() {
+  return *t_allocator.ptr_;
 }
 USED void OperatorNewDelete::SetGlobalNewDeleteAllocator(IAllocator &alloc) {
   t_globalNewDeleteAllocator.ptr_ = &alloc;

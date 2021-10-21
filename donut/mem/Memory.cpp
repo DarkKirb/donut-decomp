@@ -57,6 +57,12 @@ Memory::Memory()
 
 Memory::~Memory() { object_ = 0; }
 
+void Memory::sendArenaInfoToTerminal() {
+  // There is probably debug mode code in here, but in the retail game, this
+  // function would have been 4 bytes in size before being dead-stripped, likely
+  // a single blr instruction.
+}
+
 HeapExp &Memory::mem1FixHeap() { return mem1Fix_; }
 USED HeapExp &Memory::sceneHeap() { return scene_; }
 HeapExp &Memory::mem2FixHeap() { return mem2Fix_; }

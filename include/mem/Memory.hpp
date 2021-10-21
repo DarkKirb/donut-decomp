@@ -20,6 +20,8 @@ struct Memory : hel::common::ExplicitSingleton<Memory> {
   Memory();
   ~Memory();
 
+  void sendArenaInfoToTerminal();
+
   HeapExp &mem1FixHeap();
   HeapExp &sceneHeap();
   HeapExp &mem2FixHeap();

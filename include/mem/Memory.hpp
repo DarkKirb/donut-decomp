@@ -21,7 +21,11 @@ struct Memory : hel::common::ExplicitSingleton<Memory> {
   ~Memory();
 
   HeapExp &mem1FixHeap();
+  HeapExp &sceneHeap();
   HeapExp &mem2FixHeap();
+  HeapCompaction &externalHeap();
+  HeapExp &debugHeap();
+  HeapExp &seqHeap();
 };
 } // namespace mem
 

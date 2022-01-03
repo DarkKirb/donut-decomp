@@ -4,6 +4,9 @@ Address,SymbolName
 800079fc,__init_cpp_exceptions
 80007a38,__fini_cpp_exceptions
 8000db3c,strcmp
+80014004,floor
+80014444,sin
+80014588,acos
 80015a14,InitMetroTRK
 80015aac,InitMetroTRK_BBA
 80015d28,__TRKreset

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <dvd.h>
 #include <types.h>
 
 #ifdef __cplusplus
@@ -29,6 +30,18 @@ typedef struct OSIOSRev {
   u8 day;
   u16 year;
 } OSIOSRev;
+
+typedef struct OSBootInfo {
+  DVDDiskID diskId;
+  u32 bootCode;
+  u32 version;
+  u32 physicalMemorySize;
+  u32 boardModel;
+  u32 arenaLo;
+  u32 arenaHi;
+  u32 startOfFST;
+  u32 fstSize;
+} OSBootInfo;
 
 #ifdef __cplusplus
 }

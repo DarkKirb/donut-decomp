@@ -8,6 +8,12 @@ USED BOOL __OSInNandBoot = 0;
 USED BOOL __OSIsGcam = 0;
 static f64 ZeroF = 0.0;
 static f32 ZeroPS[2] = {0.0f, 0.0f};
+USED BOOL AreWeInitialized = 0;
+USED void *OSExceptionTable;
+USED char GameNameBuffer[5];
+USED BOOL BI2DebugFlagHolder;
+USED BOOL *BI2DebugFlag;
+USED OSBootInfo *BootInfo;
 
 #ifdef __CWCC__
 

@@ -19,6 +19,7 @@
         "iosfwd": "cpp",
         "sstream": "cpp",
         "tuple": "cpp",
-        "defines.h": "c"
+        "defines.h": "c",
+        "math.h": "c"
     },
 }

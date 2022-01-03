@@ -18,6 +18,7 @@
         "future": "cpp",
         "iosfwd": "cpp",
         "sstream": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "defines.h": "c"
     },
 }

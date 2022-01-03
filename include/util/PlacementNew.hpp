@@ -3,7 +3,7 @@
 namespace util {
 template <class T> struct PlacementNew {
   T *ptr_;
-  alignas(T) char data_[sizeof(T)];
+  char data_[sizeof(T)];
   inline PlacementNew() : ptr_(0) {}
   inline ~PlacementNew();
 

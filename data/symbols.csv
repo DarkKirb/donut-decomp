@@ -8,9 +8,9 @@ Address,SymbolName
 80015aac,InitMetroTRK_BBA
 80015d28,__TRKreset
 800190a0,TRK_InterruptHandler
-8001a2c0,__OSFPRInit
 8001ad80,OSInit
 8001b540,__OSSetExceptionHandler
+8001b670,__OSPSInit
 8001c370,OSGetMEM1ArenaHi
 8001c380,OSGetMEM2ArenaHi
 8001c390,OSGetMEM1ArenaLo

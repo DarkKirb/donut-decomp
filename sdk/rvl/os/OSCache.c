@@ -162,7 +162,7 @@ LAB_8001ca8c:
 #endif
 
 #ifdef __CWCC__
-asm void ICFlashInvalidate(void) {
+USED asm void ICFlashInvalidate(void) {
   // clang-format off
   nofralloc;
   mfspr r3, 1008;

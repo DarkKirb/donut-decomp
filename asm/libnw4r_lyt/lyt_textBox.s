@@ -1680,44 +1680,44 @@ __sinit_$$3lyt_textBox_cpp:
 /* 800F6AAC 000F28EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x800F6AA0  ;# ptr
+	.byte4 __sinit_$$3lyt_textBox_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt7TextBox
 __vt__Q34nw4r3lyt7TextBox:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F5630  ;# ptr
-	.4byte 0x800F6A90  ;# ptr
-	.4byte 0x800F30D0  ;# ptr
-	.4byte 0x800F33D0  ;# ptr
-	.4byte 0x800F58D0  ;# ptr
-	.4byte 0x800F3470  ;# ptr
-	.4byte 0x800F3500  ;# ptr
-	.4byte 0x800F57D0  ;# ptr
-	.4byte 0x800F57F0  ;# ptr
-	.4byte 0x800F2EC0  ;# ptr
-	.4byte 0x800F2EF0  ;# ptr
-	.4byte 0x800F5830  ;# ptr
-	.4byte 0x800F5850  ;# ptr
-	.4byte 0x800F2F40  ;# ptr
-	.4byte 0x800F3000  ;# ptr
-	.4byte 0x800F35C0  ;# ptr
-	.4byte 0x800F35E0  ;# ptr
-	.4byte 0x800F3670  ;# ptr
-	.4byte 0x800F3690  ;# ptr
-	.4byte 0x800F3730  ;# ptr
-	.4byte 0x800F3740  ;# ptr
-	.4byte 0x800F3750  ;# ptr
-	.4byte 0x800F3850  ;# ptr
-	.4byte 0x800F3A80  ;# ptr
-	.4byte 0x800F3AA0  ;# ptr
-	.4byte 0x800F3AB0  ;# ptr
-	.4byte 0x800F6570  ;# ptr
-	.4byte 0x800F6280  ;# ptr
-	.4byte 0x800F6350  ;# ptr
-	.4byte 0x800F63A0  ;# ptr
-	.4byte 0x800F6480  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt7TextBoxFv
+	.byte4 GetRuntimeTypeInfo__Q34nw4r3lyt7TextBoxCFv
+	.byte4 CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.byte4 DrawSelf__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Animate__Q34nw4r3lyt4PaneFUl
+	.byte4 AnimateSelf__Q34nw4r3lyt4PaneFUl
+	.byte4 GetVtxColor__Q34nw4r3lyt7TextBoxCFUl
+	.byte4 SetVtxColor__Q34nw4r3lyt7TextBoxFUlQ34nw4r2ut5Color
+	.byte4 GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.byte4 SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.byte4 GetVtxColorElement__Q34nw4r3lyt7TextBoxCFUl
+	.byte4 SetVtxColorElement__Q34nw4r3lyt7TextBoxFUlUc
+	.byte4 FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.byte4 FindMaterialByName__Q34nw4r3lyt4PaneFPCcb
+	.byte4 BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.byte4 UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.byte4 UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.byte4 UnbindAnimationSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.byte4 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.byte4 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.byte4 SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.byte4 SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.byte4 GetMaterialNum__Q34nw4r3lyt4PaneCFv
+	.byte4 GetMaterial__Q34nw4r3lyt4PaneCFv
+	.byte4 GetMaterial__Q34nw4r3lyt4PaneCFUl
+	.byte4 LoadMtx__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo
+	.byte4 AllocStringBuffer__Q34nw4r3lyt7TextBoxFUs
+	.byte4 FreeStringBuffer__Q34nw4r3lyt7TextBoxFv
+	.byte4 SetString__Q34nw4r3lyt7TextBoxFPCwUs
+	.byte4 SetString__Q34nw4r3lyt7TextBoxFPCwUsUs
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

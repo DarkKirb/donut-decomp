@@ -164,16 +164,16 @@ $$22301:
 	.balign 4
 .global USER_DIR_LIST
 USER_DIR_LIST:
-	.4byte 0x80556660
-	.4byte 0x80556668
-	.4byte 0x804364D0
-	.4byte 0x804364E0
-	.4byte 0x804364F0
-	.4byte 0x80436500
-	.4byte 0x80436510
-	.4byte 0x80436520
-	.4byte 0x80436530
-	.4byte 0x80436540
+	.byte4 $$22292
+	.byte4 $$22293
+	.byte4 $$22294
+	.byte4 $$22295
+	.byte4 $$22296
+	.byte4 $$22297
+	.byte4 $$22298
+	.byte4 $$22299
+	.byte4 $$22300
+	.byte4 $$22301
 	.4byte 0
 	.4byte 0
 

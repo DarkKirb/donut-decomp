@@ -155,9 +155,9 @@ __dt__Q53scn4step5enemy4como13StateDiveWaitFv:
 __vt__Q53scn4step5enemy4como13StateDiveWait:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A82E8  ;# ptr
-	.4byte 0x802A814C  ;# ptr
-	.4byte 0x802A81EC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A81F0  ;# ptr
-	.4byte 0x802A81F4  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy4como13StateDiveWaitFv
+	.byte4 procAnim__Q53scn4step5enemy4como13StateDiveWaitFv
+	.byte4 procMove__Q53scn4step5enemy4como13StateDiveWaitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy4como13StateDiveWaitFv
+	.byte4 procObjCollReact__Q53scn4step5enemy4como13StateDiveWaitFv

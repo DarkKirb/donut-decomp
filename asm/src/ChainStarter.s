@@ -94,9 +94,9 @@ onSwitchOn__Q53scn4step7gimmick12chainstarter12ChainStarterFv:
 __vt__Q53scn4step7gimmick12chainstarter12ChainStarter:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803057FC
-	.4byte 0x80305858
-	.4byte 0x802F7CFC
-	.4byte 0x802F7CF8
-	.4byte 0x802F7CF4
-	.4byte 0x802F7CF0
+	.byte4 __dt__Q53scn4step7gimmick12chainstarter12ChainStarterFv
+	.byte4 onSwitchOn__Q53scn4step7gimmick12chainstarter12ChainStarterFv
+	.byte4 onSwitchOff__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchToggle__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchOnFromSuperBeamSwitch__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 checkDemoPos__Q43scn4step7gimmick14SwitchReceiverCFRQ33hel4math7Vector2

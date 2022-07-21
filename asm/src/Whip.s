@@ -442,41 +442,41 @@ lbl_8038CCC0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21
 $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21:
-	.4byte 0x8055B2E8
+	.byte4 $$248751
 	.4byte 0
-	.4byte 0x8048B698
+	.byte4 $$248752
 	.4byte 0
-	.4byte 0x8048B6A8
+	.byte4 $$248753
 	.4byte 0
-	.4byte 0x8055B2F0
+	.byte4 $$248754
 	.4byte 0
-	.4byte 0x8048B6B8
+	.byte4 $$248755
 	.4byte 0
-	.4byte 0x8048B6C8
+	.byte4 $$248756
 	.4byte 0
-	.4byte 0x8055B2F8
+	.byte4 $$248757
 	.4byte 0
-	.4byte 0x8055B300
+	.byte4 $$248758
 	.4byte 0
-	.4byte 0x8048B6D8
+	.byte4 $$248759
 	.4byte 0
-	.4byte 0x8048B6E8
+	.byte4 $$248760
 	.4byte 0
-	.4byte 0x8048B6F4
+	.byte4 $$248761
 	.4byte 0
-	.4byte 0x8048B700
+	.byte4 $$248762
 	.4byte 0
-	.4byte 0x8055B308
+	.byte4 $$248763
 	.4byte 0
-	.4byte 0x8048B70C
+	.byte4 $$248764
 	.4byte 0
-	.4byte 0x8048B71C
+	.byte4 $$248765
 	.4byte 0
-	.4byte 0x8048B72C
+	.byte4 $$248766
 	.4byte 0
-	.4byte 0x8048B738
+	.byte4 $$248767
 	.4byte 0
-	.4byte 0x8048B748
+	.byte4 $$248768
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -513,16 +513,16 @@ $$248744:
 	.4byte 0
 .global $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21
 $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21:
-	.4byte 0x8055B2D0
-	.4byte 0x8055B2D8
-	.4byte 0x8048B618
-	.4byte 0x8048B624
-	.4byte 0x8055B2E0
-	.4byte 0x8048B630
-	.4byte 0x8048B63C
-	.4byte 0x8048B648
-	.4byte 0x8048B654
-	.4byte 0x8048B660
+	.byte4 $$248735
+	.byte4 $$248736
+	.byte4 $$248737
+	.byte4 $$248738
+	.byte4 $$248739
+	.byte4 $$248740
+	.byte4 $$248741
+	.byte4 $$248742
+	.byte4 $$248743
+	.byte4 $$248744
 .global $$248752
 $$248752:
 	.asciz "WhipCatchStart"
@@ -586,27 +586,27 @@ $$256580:
 __vt__Q53scn4step4hero4whip4Whip:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038C804
-	.4byte 0x8038C8A4
-	.4byte 0x8032B7A0
-	.4byte 0x8032B7A4
-	.4byte 0x8032B7A8
-	.4byte 0x8038C9C4
-	.4byte 0x8038CC64
-	.4byte 0x8032B7B4
-	.4byte 0x8032B7B8
-	.4byte 0x8032B7BC
-	.4byte 0x8032B7C0
-	.4byte 0x8032B7C4
-	.4byte 0x8032B7C8
-	.4byte 0x8032B7CC
-	.4byte 0x8032B7D0
-	.4byte 0x8032B7D4
-	.4byte 0x8032B7D8
-	.4byte 0x8038CB28
-	.4byte 0x8032B7E0
-	.4byte 0x8032B7E4
-	.4byte 0x8032B7E8
+	.byte4 __dt__Q53scn4step4hero4whip4WhipFv
+	.byte4 setup__Q53scn4step4hero4whip4WhipFv
+	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeState__Q53scn4step4hero4whip4WhipFv
+	.byte4 onStateEndCleanUp__Q53scn4step4hero4whip4WhipFv
+	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procAnim__Q53scn4step4hero4whip4WhipFv
+	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735

@@ -1140,90 +1140,90 @@ procFixPos__Q53scn4step5enemy6sparky11StatePraiseFv:
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80248558  ;# ptr
-	.4byte 0x8024853C  ;# ptr
+	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss12creditdedede11StatePraise
 __vt__Q53scn4step4boss12creditdedede11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80248378  ;# ptr
-	.4byte 0x8024837C  ;# ptr
-	.4byte 0x80248448  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024849C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss12creditdedede11StatePraiseFv
+	.byte4 procAnim__Q53scn4step4boss12creditdedede11StatePraiseFv
+	.byte4 procMove__Q53scn4step4boss12creditdedede11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss12creditdedede11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249690  ;# ptr
-	.4byte 0x80249674  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss9creditdee11StatePraise
 __vt__Q53scn4step4boss9creditdee11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802495A8  ;# ptr
-	.4byte 0x802495AC  ;# ptr
-	.4byte 0x8024961C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80249670  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9creditdee11StatePraiseFv
+	.byte4 procAnim__Q53scn4step4boss9creditdee11StatePraiseFv
+	.byte4 procMove__Q53scn4step4boss9creditdee11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9creditdee11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024AF10  ;# ptr
-	.4byte 0x8024AEF4  ;# ptr
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditmeta11StatePraise
 __vt__Q53scn4step4boss10creditmeta11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024AE14  ;# ptr
-	.4byte 0x8024AE18  ;# ptr
-	.4byte 0x8024AE9C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024AEF0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.byte4 procAnim__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.byte4 procMove__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common11StatePraise
 __vt__Q53scn4step5enemy6common11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802939F8  ;# ptr
-	.4byte 0x802939FC  ;# ptr
-	.4byte 0x80293A20  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80293A24  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common11StatePraiseFv
+	.byte4 procAnim__Q53scn4step5enemy6common11StatePraiseFv
+	.byte4 procMove__Q53scn4step5enemy6common11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6bouncy11StatePraise
 __vt__Q53scn4step5enemy6bouncy11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029DD38  ;# ptr
-	.4byte 0x8029DD3C  ;# ptr
-	.4byte 0x8029DE14  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8029DF84  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6bouncy11StatePraiseFv
+	.byte4 procAnim__Q53scn4step5enemy6bouncy11StatePraiseFv
+	.byte4 procMove__Q53scn4step5enemy6bouncy11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6bouncy11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sparky11StatePraise
 __vt__Q53scn4step5enemy6sparky11StatePraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E7594  ;# ptr
-	.4byte 0x802E7598  ;# ptr
-	.4byte 0x802E76D0  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802E77DC  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6sparky11StatePraiseFv
+	.byte4 procAnim__Q53scn4step5enemy6sparky11StatePraiseFv
+	.byte4 procMove__Q53scn4step5enemy6sparky11StatePraiseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6sparky11StatePraiseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255711

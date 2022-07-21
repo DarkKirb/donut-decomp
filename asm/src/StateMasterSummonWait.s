@@ -323,9 +323,9 @@ lbl_8029389C:
 __vt__Q53scn4step5enemy6common21StateMasterSummonWait:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80293508  ;# ptr
-	.4byte 0x802935D4  ;# ptr
-	.4byte 0x802935F0  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802935F4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common21StateMasterSummonWaitFv
+	.byte4 procAnim__Q53scn4step5enemy6common21StateMasterSummonWaitFv
+	.byte4 procMove__Q53scn4step5enemy6common21StateMasterSummonWaitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common21StateMasterSummonWaitFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

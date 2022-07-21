@@ -368,11 +368,11 @@ __dt__Q23seq15SequenceHistoryFv:
 __vt__Q23seq15SequenceHistory:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FEC18
-	.4byte 0x803FEC1C
-	.4byte 0x803FE7C0
-	.4byte 0x803FE808
-	.4byte 0x803FE86C
-	.4byte 0x803FE870
-	.4byte 0x803FEA34
+	.byte4 GetRuntimeTypeInfo__Q23seq15SequenceHistoryCFv
+	.byte4 __dt__Q23seq15SequenceHistoryFv
+	.byte4 nextAction__Q23seq15SequenceHistoryCFv
+	.byte4 createChildSequence__Q23seq15SequenceHistoryCFv
+	.byte4 onChildSequenceEnd__Q23seq15SequenceHistoryFRQ23seq9ISequence
+	.byte4 createScene__Q23seq15SequenceHistoryCFv
+	.byte4 onSceneEnd__Q23seq15SequenceHistoryFRQ23scn6IScene
 	.4byte 0

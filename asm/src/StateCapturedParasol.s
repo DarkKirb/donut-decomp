@@ -388,18 +388,18 @@ __dt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19St
 __vt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A4BB0  ;# ptr
-	.4byte 0x802A4B88  ;# ptr
+	.byte4 __dt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
+	.byte4 create__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
 .global __vt__Q53scn4step5enemy8captured20StateCapturedParasol
 __vt__Q53scn4step5enemy8captured20StateCapturedParasol:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A4730  ;# ptr
-	.4byte 0x802A47B8  ;# ptr
-	.4byte 0x802A4AE0  ;# ptr
-	.4byte 0x802A4AE4  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.byte4 procAnim__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.byte4 procMove__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.byte4 procConstraint__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256967

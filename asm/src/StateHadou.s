@@ -151,12 +151,12 @@ procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv:
 __vt__Q53scn4step5enemy10knucklejoe10StateHadou:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C024C  ;# ptr
-	.4byte 0x802C02F4  ;# ptr
-	.4byte 0x8028DDDC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802C0380  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.byte4 procAnim__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255822

@@ -73,21 +73,21 @@ lbl_80128838:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q210homebutton18GroupAnmController
 __vt__Q210homebutton18GroupAnmController:
-	.4byte 0x80442A20
+	.byte4 __RTTI__Q210homebutton18GroupAnmController
 	.4byte 0
-	.4byte 0x801287A0  ;# ptr
-	.4byte 0x80128630  ;# ptr
+	.byte4 __dt__Q210homebutton18GroupAnmControllerFv
+	.byte4 calc__Q210homebutton15FrameControllerFv
 .global $$28022
 $$28022:
 	.asciz "homebutton::GroupAnmController"
 	.balign 4
 .global $$28023
 $$28023:
-	.4byte 0x804429D8
+	.byte4 __RTTI__Q210homebutton15FrameController
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q210homebutton18GroupAnmController
 __RTTI__Q210homebutton18GroupAnmController:
-	.4byte 0x804429F0
-	.4byte 0x80442A10
+	.byte4 $$28022
+	.byte4 $$28023

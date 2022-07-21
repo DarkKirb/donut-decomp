@@ -23,7 +23,7 @@ __sinit_$$3MintOCollManager_cpp:
 /* 803CABB8 003C69F8  4B D1 28 28 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x803CABB4
+	.byte4 __sinit_$$3MintOCollManager_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_manager__Q43scn4step5ocoll30$$2unnamed$$2MintOCollManager_cpp$$2

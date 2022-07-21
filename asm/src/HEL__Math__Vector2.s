@@ -839,72 +839,72 @@ $$254046:
 $$254048:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F46C  ;# ptr
+	.byte4 toVector3XOY__Q33hel4math7Vector2CFv
 .global $$254109
 $$254109:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F45C  ;# ptr
+	.byte4 toVector3__Q33hel4math7Vector2CFv
 .global $$254114
 $$254114:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C1BB4  ;# ptr
+	.byte4 __dv__Q33hel4math7Vector2CFf
 .global $$254145
 $$254145:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F3B4  ;# ptr
+	.byte4 __ml__Q33hel4math7Vector2CFf
 .global $$254153
 $$254153:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A01FC  ;# ptr
+	.byte4 __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 .global $$254175
 $$254175:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A0590  ;# ptr
+	.byte4 __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 .global $$254187
 $$254187:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F0F8  ;# ptr
+	.byte4 __adv__Q33hel4math7Vector2Ff
 .global $$254195
 $$254195:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F000  ;# ptr
+	.byte4 __amu__Q33hel4math7Vector2Ff
 .global $$254200
 $$254200:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F48C  ;# ptr
+	.byte4 __ami__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 .global $$254208
 $$254208:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F438  ;# ptr
+	.byte4 __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 .global $$254213
 $$254213:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801B8E30  ;# ptr
+	.byte4 isZero__Q33hel4math7Vector2CFv
 .global $$254239
 $$254239:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A08C0  ;# ptr
+	.byte4 isZeroStrict__Q33hel4math7Vector2CFv
 .global $$254244
 $$254244:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801B58AC  ;# ptr
+	.byte4 isZeroLoose__Q33hel4math7Vector2CFf
 .global $$254265
 $$254265:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F3A8  ;# ptr
+	.byte4 set__Q33hel4math7Vector2Fff
 	.asciz "Assertion failed.\n"
 	.balign 4
 	.asciz "MintFuncProxy.hpp"

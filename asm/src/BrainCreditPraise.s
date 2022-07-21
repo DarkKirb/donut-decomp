@@ -226,17 +226,17 @@ __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802910C8  ;# ptr
-	.4byte 0x80291050  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common17BrainCreditPraise
 __vt__Q53scn4step5enemy6common17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029106C  ;# ptr
-	.4byte 0x80290FCC  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+	.byte4 onStart__Q53scn4step5enemy6common17BrainCreditPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -244,11 +244,11 @@ __vt__Q53scn4step5enemy6common17BrainCreditPraise:
 __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029CC08  ;# ptr
-	.4byte 0x8029CB7C  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
+	.byte4 onStart__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -256,9 +256,9 @@ __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise:
 __vt__Q53scn4step5enemy6sparky17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E6CB4  ;# ptr
-	.4byte 0x802E6C28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
+	.byte4 onStart__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

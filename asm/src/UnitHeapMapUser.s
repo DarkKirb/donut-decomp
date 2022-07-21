@@ -197,16 +197,16 @@ drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ4
 __vt__Q23mem15UnitHeapMapUser:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BEFB8  ;# ptr
-	.4byte 0x801BF7C0  ;# ptr
-	.4byte 0x801BF7D4  ;# ptr
-	.4byte 0x801BF7D8  ;# ptr
-	.4byte 0x801BF7EC  ;# ptr
-	.4byte 0x801BF84C  ;# ptr
-	.4byte 0x801BF8A0  ;# ptr
-	.4byte 0x801BF8DC  ;# ptr
-	.4byte 0x801BF94C  ;# ptr
-	.4byte 0x801BFA2C  ;# ptr
+	.byte4 __dt__Q23mem15UnitHeapMapUserFv
+	.byte4 heapName__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 fragmentBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 totalHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 startAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 endAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.byte4 drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249027

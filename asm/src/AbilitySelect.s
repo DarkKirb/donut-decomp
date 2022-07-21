@@ -1757,13 +1757,13 @@ panelOffsTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.4byte 0x805580F0
-	.4byte 0x805580F8
-	.4byte 0x80558100
-	.4byte 0x80558108
-	.4byte 0x80558110
-	.4byte 0x80558118
-	.4byte 0x80558120
+	.byte4 $$251749
+	.byte4 $$251750
+	.byte4 $$251751
+	.byte4 $$251752
+	.byte4 $$251753
+	.byte4 $$251754
+	.byte4 $$251755
 .global $$251757
 $$251757:
 	.asciz "CursorBase1N"
@@ -1778,14 +1778,14 @@ $$251759:
 	.balign 4
 .global cursorPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 cursorPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.4byte 0x8045FB74
-	.4byte 0x8045FB84
-	.4byte 0x8045FB94
+	.byte4 $$251757
+	.byte4 $$251758
+	.byte4 $$251759
 .global areaPanelTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 areaPanelTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.4byte 0x80415948
-	.4byte 0x80415980
-	.4byte 0x804159B8
+	.byte4 area1Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
+	.byte4 area2Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
+	.byte4 area3Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 .global $$253883
 $$253883:
 	.asciz "challengeability/Main"

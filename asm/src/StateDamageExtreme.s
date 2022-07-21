@@ -365,12 +365,12 @@ lbl_802A99C4:
 __vt__Q53scn4step5enemy6damage18StateDamageExtreme:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A9600  ;# ptr
-	.4byte 0x802A96A4  ;# ptr
-	.4byte 0x802A9884  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A98C0  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6damage18StateDamageExtremeFv
+	.byte4 procAnim__Q53scn4step5enemy6damage18StateDamageExtremeFv
+	.byte4 procMove__Q53scn4step5enemy6damage18StateDamageExtremeFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6damage18StateDamageExtremeFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256978

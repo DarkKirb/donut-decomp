@@ -615,5 +615,5 @@ onDirty__Q23g3d10CharaModelFv:
 __vt__Q23g3d10CharaModel:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8018D060  ;# ptr
-	.4byte 0x8018D648  ;# ptr
+	.byte4 __dt__Q23g3d10CharaModelFv
+	.byte4 onFrameChanged__Q23g3d10CharaModelFRCQ23g3d17ModelAnimAccessor

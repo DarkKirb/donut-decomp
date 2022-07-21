@@ -3647,10 +3647,10 @@ $$258679:
 	.4byte 0
 .global $$2LOCAL$$2isBuiltInType__Q26mintvm6VMCoreFPCc$$2table
 $$2LOCAL$$2isBuiltInType__Q26mintvm6VMCoreFPCc$$2table:
-	.4byte 0x80557580
-	.4byte 0x80557588
-	.4byte 0x8055758C
-	.4byte 0x80557594
+	.byte4 $$252608
+	.byte4 $$252609
+	.byte4 $$252610
+	.byte4 $$252611
 .global $$258793
 $$258793:
 	.asciz "Not Found VMCore::sizeOf"
@@ -3729,32 +3729,32 @@ $$259008:
 __vt__Q26mintvm6VMCore:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CAE1C  ;# ptr
+	.byte4 __dt__Q26mintvm6VMCoreFv
 .global __vt__Q26mintvm20VMMap$$0Ul$$44294967295$$1
 __vt__Q26mintvm20VMMap$$0Ul$$44294967295$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CADB0  ;# ptr
+	.byte4 __dt__Q26mintvm20VMMap$$0Ul$$44294967295$$1Fv
 .global __vt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMVariable$$1
 __vt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMVariable$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CACE8  ;# ptr
+	.byte4 __dt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMVariable$$1Fv
 .global __vt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMFunction$$1
 __vt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMFunction$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CAC20  ;# ptr
+	.byte4 __dt__Q26mintvm31VMMapPtr$$0Q26mintvm10VMFunction$$1Fv
 .global __vt__Q26mintvm28VMMapPtr$$0Q26mintvm8VMModule$$1
 __vt__Q26mintvm28VMMapPtr$$0Q26mintvm8VMModule$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CAB58  ;# ptr
+	.byte4 __dt__Q26mintvm28VMMapPtr$$0Q26mintvm8VMModule$$1Fv
 .global __vt__Q26mintvm8VMObject
 __vt__Q26mintvm8VMObject:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801C9F3C  ;# ptr
+	.byte4 __dt__Q26mintvm8VMObjectFv
 .global $$2STRING$$2addPtr__Q26mintvm29MPtrArray$$0Q26mintvm8VMModule$$1FPQ26mintvm8VMModule$$20
 $$2STRING$$2addPtr__Q26mintvm29MPtrArray$$0Q26mintvm8VMModule$$1FPQ26mintvm8VMModule$$20:
 	.asciz "mMax = %d\n"

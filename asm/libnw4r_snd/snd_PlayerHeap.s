@@ -155,5 +155,5 @@ GetFreeSize__Q44nw4r3snd6detail10PlayerHeapCFv:
 __vt__Q44nw4r3snd6detail10PlayerHeap:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8010B290  ;# ptr
-	.4byte 0x8010B390  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail10PlayerHeapFv
+	.byte4 Alloc__Q44nw4r3snd6detail10PlayerHeapFUl

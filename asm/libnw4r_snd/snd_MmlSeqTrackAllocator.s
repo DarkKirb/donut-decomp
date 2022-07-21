@@ -100,7 +100,7 @@ __dt__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFv:
 __vt__Q44nw4r3snd6detail20MmlSeqTrackAllocator:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8010B250  ;# ptr
-	.4byte 0x8010B140  ;# ptr
-	.4byte 0x8010B1B0  ;# ptr
-	.4byte 0x8010B240  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFv
+	.byte4 AllocTrack__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPQ44nw4r3snd6detail9SeqPlayer
+	.byte4 FreeTrack__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPQ44nw4r3snd6detail8SeqTrack
+	.byte4 GetAllocatableTrackCount__Q44nw4r3snd6detail20MmlSeqTrackAllocatorCFv

@@ -2071,10 +2071,10 @@ $$254633:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2
 SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2:
-	.4byte 0x8055A8F0
-	.4byte 0x8055A8F4
-	.4byte 0x8055A8FC
-	.4byte 0x8055A904
+	.byte4 $$253500
+	.byte4 $$253501
+	.byte4 $$253502
+	.byte4 $$253503
 .global $$256118
 $$256118:
 	.asciz "step/gimmick/Shutter"
@@ -2093,12 +2093,12 @@ $$256218:
 __vt__Q53scn4step7gimmick7shutter7Shutter:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80323894
-	.4byte 0x80323E08
-	.4byte 0x80323E20
-	.4byte 0x80323E38
-	.4byte 0x80323E84
-	.4byte 0x80323EC0
+	.byte4 __dt__Q53scn4step7gimmick7shutter7ShutterFv
+	.byte4 onSwitchOn__Q53scn4step7gimmick7shutter7ShutterFv
+	.byte4 onSwitchOff__Q53scn4step7gimmick7shutter7ShutterFv
+	.byte4 onSwitchToggle__Q53scn4step7gimmick7shutter7ShutterFv
+	.byte4 onSwitchOnFromSuperBeamSwitch__Q53scn4step7gimmick7shutter7ShutterFv
+	.byte4 checkDemoPos__Q53scn4step7gimmick7shutter7ShutterCFRQ33hel4math7Vector2
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253500

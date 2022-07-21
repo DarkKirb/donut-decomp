@@ -844,24 +844,24 @@ __dt__Q53scn4step5enemy10brontoburt12StatePursuitFv:
 __vt__Q53scn4step5enemy6common12StatePursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80294004  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x80293AAC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80293E68  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common12StatePursuitFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q53scn4step5enemy6common12StatePursuitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common12StatePursuitFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt12StatePursuit
 __vt__Q53scn4step5enemy10brontoburt12StatePursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A00C8  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x8029FB00  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8029FEBC  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10brontoburt12StatePursuitFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q53scn4step5enemy10brontoburt12StatePursuitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10brontoburt12StatePursuitFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256157

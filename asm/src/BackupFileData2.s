@@ -418,16 +418,16 @@ UseMaster3AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
 challengeMasterDataTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
 	.4byte 0x00000003
 	.4byte 0x00000003
-	.4byte 0x80420FC8
+	.byte4 UseMaster1AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 	.4byte 0x00000007
 	.4byte 0x00000003
-	.4byte 0x80420FD4
+	.byte4 UseMaster2AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 	.4byte 0x0000000A
 	.4byte 0x00000007
-	.4byte 0x80420FE0
+	.byte4 UseMaster3AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 	.4byte 0x0000000B
 	.4byte 0x00000007
-	.4byte 0x80420FE0
+	.byte4 UseMaster3AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 	.4byte 0
 	.4byte 0
 	.4byte 0

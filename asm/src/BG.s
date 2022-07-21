@@ -313,7 +313,7 @@ startAnim__Q43scn9grandmenu4menu2BGFv:
 /* 803F4B20 003F0960  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80207284  ;# ptr
+	.byte4 __sinit_$$3BG_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253189

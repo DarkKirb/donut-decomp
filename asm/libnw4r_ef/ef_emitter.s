@@ -2353,14 +2353,14 @@ lbl_800A6ED8:
 __vt__Q34nw4r2ef7Emitter:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800A4E80  ;# ptr
-	.4byte 0x800A4E90  ;# ptr
-	.4byte 0x800A53E0  ;# ptr
-	.4byte 0x800A5550  ;# ptr
-	.4byte 0x800A6500  ;# ptr
-	.4byte 0x800A66C0  ;# ptr
-	.4byte 0x800A6750  ;# ptr
-	.4byte 0x800A6870  ;# ptr
+	.byte4 SendClosing__Q34nw4r2ef7EmitterFv
+	.byte4 DestroyFunc__Q34nw4r2ef7EmitterFv
+	.byte4 Initialize__Q34nw4r2ef7EmitterFPQ34nw4r2ef6EffectPQ34nw4r2ef15EmitterResourceUc
+	.byte4 CreateEmitter__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3
+	.byte4 CalcEmitter__Q34nw4r2ef7EmitterFv
+	.byte4 CalcParticle__Q34nw4r2ef7EmitterFv
+	.byte4 CalcEmission__Q34nw4r2ef7EmitterFv
+	.byte4 CalcBillboard__Q34nw4r2ef7EmitterFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29108

@@ -407,11 +407,11 @@ __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv:
 __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AF9FC  ;# ptr
-	.4byte 0x802AF7E4  ;# ptr
-	.4byte 0x802AF8C4  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x802AF978  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.byte4 onStart__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.byte4 onRecover__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q53scn4step5enemy4elec15BrainMoveAttackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -419,11 +419,11 @@ __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
 __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B2164  ;# ptr
-	.4byte 0x802B1F8C  ;# ptr
-	.4byte 0x802B206C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.byte4 onStart__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.byte4 onRecover__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -431,11 +431,11 @@ __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D1630  ;# ptr
-	.4byte 0x802D15A8  ;# ptr
-	.4byte 0x802D162C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.byte4 onStart__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.byte4 onRecover__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

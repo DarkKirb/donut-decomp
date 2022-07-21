@@ -605,11 +605,11 @@ GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv:
 __vt__Q23seq17SequenceLvMapRoot:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FF420
-	.4byte 0x803FEF48
-	.4byte 0x803FEF4C
-	.4byte 0x803FEF7C
-	.4byte 0x803FF184
-	.4byte 0x803FF1A8
-	.4byte 0x803FF1AC
+	.byte4 GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv
+	.byte4 __dt__Q23seq17SequenceLvMapRootFv
+	.byte4 nextAction__Q23seq17SequenceLvMapRootCFv
+	.byte4 createChildSequence__Q23seq17SequenceLvMapRootCFv
+	.byte4 onChildSequenceEnd__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
+	.byte4 createScene__Q23seq17SequenceLvMapRootCFv
+	.byte4 onSceneEnd__Q23seq17SequenceLvMapRootFRQ23scn6IScene
 	.4byte 0

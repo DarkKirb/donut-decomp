@@ -142,7 +142,7 @@ lbl_803C7D34:
 __vt__Q53scn4step4item5state17StateFallFeathery:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C7BE8
-	.4byte 0x803C7C64
-	.4byte 0x803C7C68
-	.4byte 0x803C7CFC
+	.byte4 __dt__Q53scn4step4item5state17StateFallFeatheryFv
+	.byte4 procAnim__Q53scn4step4item5state17StateFallFeatheryFv
+	.byte4 procMove__Q53scn4step4item5state17StateFallFeatheryFv
+	.byte4 procFixPos__Q53scn4step4item5state17StateFallFeatheryFv

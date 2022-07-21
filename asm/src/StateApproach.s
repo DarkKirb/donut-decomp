@@ -138,10 +138,10 @@ lbl_803C7448:
 __vt__Q53scn4step4item5state13StateApproach:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C7408
-	.4byte 0x803C72E4
-	.4byte 0x803C72E8
-	.4byte 0x803C5204
+	.byte4 __dt__Q53scn4step4item5state13StateApproachFv
+	.byte4 procAnim__Q53scn4step4item5state13StateApproachFv
+	.byte4 procMove__Q53scn4step4item5state13StateApproachFv
+	.byte4 procFixPos__Q43scn4step4item9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255066

@@ -171,12 +171,12 @@ __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv:
 __vt__Q53scn4step5enemy5gordo17StateMoveStraight:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B9B44  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x802B99A0  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802B9A70  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255765

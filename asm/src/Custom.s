@@ -22062,8 +22062,8 @@ $$257952:
 __vt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss7bonkers8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80237C04  ;# ptr
-	.4byte 0x80237B68  ;# ptr
+	.byte4 __dt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss7bonkers8NodeKind$$1Fv
+	.byte4 create__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss7bonkers8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22072,8 +22072,8 @@ __vt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common11StateAppear$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80237C00  ;# ptr
-	.4byte 0x80237B88  ;# ptr
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common11StateAppear$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common11StateAppear$$4PQ43scn4step4boss4Boss$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22082,25 +22082,25 @@ __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common11Stat
 __vt__Q53scn4step4boss7bonkers6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80237B64  ;# ptr
-	.4byte 0x80237BA4  ;# ptr
-	.4byte 0x802373E0  ;# ptr
-	.4byte 0x80237740  ;# ptr
-	.4byte 0x802377FC  ;# ptr
-	.4byte 0x80237888  ;# ptr
-	.4byte 0x802378B8  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80237950  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x80237954  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss7bonkers6CustomCFv
+	.byte4 __dt__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onInit__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onAppear__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onStart__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onDamage__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onDead__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss7bonkers6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22130,14 +22130,14 @@ $$257947:
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateSCHide$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8023C438  ;# ptr
-	.4byte 0x8023C33C  ;# ptr
+	.byte4 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateSCHide$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateSCHide$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateStartWait$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateStartWait$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8023C434  ;# ptr
-	.4byte 0x8023C358  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateStartWait$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateStartWait$$4PQ43scn4step4boss4Boss$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22146,25 +22146,25 @@ __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q53scn4step4boss15challengemaster6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8023C338  ;# ptr
-	.4byte 0x8023C374  ;# ptr
-	.4byte 0x8023BCB0  ;# ptr
-	.4byte 0x8023BECC  ;# ptr
-	.4byte 0x8023BED0  ;# ptr
-	.4byte 0x8023BED4  ;# ptr
-	.4byte 0x8023BED8  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x8023BEDC  ;# ptr
-	.4byte 0x8023BF2C  ;# ptr
-	.4byte 0x8023BF74  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss15challengemaster6CustomCFv
+	.byte4 __dt__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onInit__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onAppear__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onStart__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onDamage__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onDead__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onProcMove__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onProcFixPos__Q53scn4step4boss15challengemaster6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22182,31 +22182,31 @@ __vt__Q53scn4step4boss15challengemaster6Custom:
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede9StateHide$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80247C54  ;# ptr
-	.4byte 0x80247C34  ;# ptr
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss12creditdedede6Custom
 __vt__Q53scn4step4boss12creditdedede6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80247C30  ;# ptr
-	.4byte 0x80247C50  ;# ptr
-	.4byte 0x80247B48  ;# ptr
-	.4byte 0x8022E5C8  ;# ptr
-	.4byte 0x80247C18  ;# ptr
-	.4byte 0x80247C1C  ;# ptr
-	.4byte 0x80247C20  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80247C24  ;# ptr
-	.4byte 0x80247C28  ;# ptr
-	.4byte 0x80247C2C  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss12creditdedede6CustomCFv
+	.byte4 __dt__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onInit__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onAppear__Q43scn4step4boss10CustomBaseFv
+	.byte4 onStart__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onDamage__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onDead__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onProcMove__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onProcFixPos__Q53scn4step4boss12creditdedede6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22214,31 +22214,31 @@ __vt__Q53scn4step4boss12creditdedede6Custom:
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StateHide$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802486A4  ;# ptr
-	.4byte 0x80248684  ;# ptr
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss9creditdee6Custom
 __vt__Q53scn4step4boss9creditdee6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80248680  ;# ptr
-	.4byte 0x802486A0  ;# ptr
-	.4byte 0x80248598  ;# ptr
-	.4byte 0x8022E5C8  ;# ptr
-	.4byte 0x80248668  ;# ptr
-	.4byte 0x8024866C  ;# ptr
-	.4byte 0x80248670  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80248674  ;# ptr
-	.4byte 0x80248678  ;# ptr
-	.4byte 0x8024867C  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss9creditdee6CustomCFv
+	.byte4 __dt__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onInit__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onAppear__Q43scn4step4boss10CustomBaseFv
+	.byte4 onStart__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onDamage__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onDead__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onProcMove__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onProcFixPos__Q53scn4step4boss9creditdee6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22246,31 +22246,31 @@ __vt__Q53scn4step4boss9creditdee6Custom:
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta9StateHide$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249D40  ;# ptr
-	.4byte 0x80249D20  ;# ptr
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditmeta6Custom
 __vt__Q53scn4step4boss10creditmeta6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249D1C  ;# ptr
-	.4byte 0x80249D3C  ;# ptr
-	.4byte 0x80249C34  ;# ptr
-	.4byte 0x8022E5C8  ;# ptr
-	.4byte 0x80249D04  ;# ptr
-	.4byte 0x80249D08  ;# ptr
-	.4byte 0x80249D0C  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80249D10  ;# ptr
-	.4byte 0x80249D14  ;# ptr
-	.4byte 0x80249D18  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss10creditmeta6CustomCFv
+	.byte4 __dt__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onInit__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onAppear__Q43scn4step4boss10CustomBaseFv
+	.byte4 onStart__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onDamage__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onDead__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onProcMove__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onProcFixPos__Q53scn4step4boss10creditmeta6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22278,31 +22278,31 @@ __vt__Q53scn4step4boss10creditmeta6Custom:
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah9StateHide$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024B6D0  ;# ptr
-	.4byte 0x8024B6B0  ;# ptr
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah9StateHide$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditroah6Custom
 __vt__Q53scn4step4boss10creditroah6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024B6AC  ;# ptr
-	.4byte 0x8024B6CC  ;# ptr
-	.4byte 0x8024B3E8  ;# ptr
-	.4byte 0x8022E5C8  ;# ptr
-	.4byte 0x8024B4F0  ;# ptr
-	.4byte 0x8024B4F4  ;# ptr
-	.4byte 0x8024B4F8  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x8024B4FC  ;# ptr
-	.4byte 0x8024B500  ;# ptr
-	.4byte 0x8024B504  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss10creditroah6CustomCFv
+	.byte4 __dt__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onInit__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onAppear__Q43scn4step4boss10CustomBaseFv
+	.byte4 onStart__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onDamage__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onDead__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onProcMove__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onProcFixPos__Q53scn4step4boss10creditroah6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22332,14 +22332,14 @@ $$258564:
 __vt__Q24util122StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6dubior8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024D418  ;# ptr
-	.4byte 0x8024D388  ;# ptr
+	.byte4 __dt__Q24util122StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6dubior8NodeKind$$1Fv
+	.byte4 create__Q24util122StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6dubior8NodeKind$$1Fv
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateWait$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateWait$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024D414  ;# ptr
-	.4byte 0x8024D38C  ;# ptr
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22352,25 +22352,25 @@ __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9State
 __vt__Q53scn4step4boss6dubior6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024D384  ;# ptr
-	.4byte 0x8024D3A8  ;# ptr
-	.4byte 0x8024CB14  ;# ptr
-	.4byte 0x8024CDA4  ;# ptr
-	.4byte 0x8024CDD0  ;# ptr
-	.4byte 0x8024CE5C  ;# ptr
-	.4byte 0x8024CE60  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x8024CEF8  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x8024CEFC  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8024CF00  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss6dubior6CustomCFv
+	.byte4 __dt__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onInit__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onAppear__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onStart__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onDamage__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onDead__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss6dubior6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q53scn4step4boss6dubior6CustomCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22406,8 +22406,8 @@ $$257882:
 __vt__Q24util127StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss10gigantedge8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802522B4  ;# ptr
-	.4byte 0x802522AC  ;# ptr
+	.byte4 __dt__Q24util127StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss10gigantedge8NodeKind$$1Fv
+	.byte4 create__Q24util127StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss10gigantedge8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22424,25 +22424,25 @@ __vt__Q24util127StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q53scn4step4boss10gigantedge6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802522A8  ;# ptr
-	.4byte 0x802522B0  ;# ptr
-	.4byte 0x80251B80  ;# ptr
-	.4byte 0x80251E30  ;# ptr
-	.4byte 0x80251E34  ;# ptr
-	.4byte 0x80251E38  ;# ptr
-	.4byte 0x80251E3C  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80251ED4  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x80251ED8  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss10gigantedge6CustomCFv
+	.byte4 __dt__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onInit__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onAppear__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onStart__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onDamage__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onDead__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss10gigantedge6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22479,8 +22479,8 @@ $$256380:
 __vt__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss8kingsdoo8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80253888  ;# ptr
-	.4byte 0x80253880  ;# ptr
+	.byte4 __dt__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss8kingsdoo8NodeKind$$1Fv
+	.byte4 create__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss8kingsdoo8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22497,25 +22497,25 @@ __vt__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q53scn4step4boss8kingsdoo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025387C  ;# ptr
-	.4byte 0x80253884  ;# ptr
-	.4byte 0x80253520  ;# ptr
-	.4byte 0x802537D0  ;# ptr
-	.4byte 0x802537D4  ;# ptr
-	.4byte 0x802537D8  ;# ptr
-	.4byte 0x802537DC  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80253874  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x80253878  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss8kingsdoo6CustomCFv
+	.byte4 __dt__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onInit__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onAppear__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onStart__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onDamage__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onDead__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss8kingsdoo6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "no name class"
 	.balign 4
 	.4byte 0
@@ -22549,8 +22549,8 @@ $$257225:
 __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80255AC4  ;# ptr
-	.4byte 0x80255ABC  ;# ptr
+	.byte4 __dt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8NodeKind$$1Fv
+	.byte4 create__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22567,25 +22567,25 @@ __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q53scn4step4boss9moundeath6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80255AB8  ;# ptr
-	.4byte 0x80255AC0  ;# ptr
-	.4byte 0x80255678  ;# ptr
-	.4byte 0x80255908  ;# ptr
-	.4byte 0x8025590C  ;# ptr
-	.4byte 0x80255910  ;# ptr
-	.4byte 0x80255914  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x802559AC  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x802559B0  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss9moundeath6CustomCFv
+	.byte4 __dt__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onInit__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onAppear__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onStart__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onDamage__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onDead__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss9moundeath6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "no name class"
 	.balign 4
 	.4byte 0
@@ -22619,8 +22619,8 @@ $$256478:
 __vt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80259DE0  ;# ptr
-	.4byte 0x80259D64  ;# ptr
+	.byte4 __dt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros8NodeKind$$1Fv
+	.byte4 create__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22637,25 +22637,25 @@ __vt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q53scn4step4boss13watergalboros6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80259D60  ;# ptr
-	.4byte 0x80259D68  ;# ptr
-	.4byte 0x802599BC  ;# ptr
-	.4byte 0x80259C84  ;# ptr
-	.4byte 0x80259C88  ;# ptr
-	.4byte 0x80259C8C  ;# ptr
-	.4byte 0x80259C90  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80259D4C  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x80259D54  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss13watergalboros6CustomCFv
+	.byte4 __dt__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onInit__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onAppear__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onStart__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onDamage__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onDead__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss13watergalboros6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "no name class"
 	.balign 4
 	.4byte 0
@@ -22681,20 +22681,20 @@ $$257038:
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateDamageL$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025C168  ;# ptr
-	.4byte 0x8025C07C  ;# ptr
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateDamageL$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateDamageL$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateDead$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateDead$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025C164  ;# ptr
-	.4byte 0x8025C098  ;# ptr
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateDead$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateDead$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateFirst$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateFirst$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025C160  ;# ptr
-	.4byte 0x8025C0B4  ;# ptr
+	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateFirst$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateFirst$$4PQ43scn4step4boss4Boss$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22703,25 +22703,25 @@ __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy10Stat
 __vt__Q53scn4step4boss6whispy6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025C078  ;# ptr
-	.4byte 0x8025C0D0  ;# ptr
-	.4byte 0x8025BBFC  ;# ptr
-	.4byte 0x8025BE28  ;# ptr
-	.4byte 0x8025BE2C  ;# ptr
-	.4byte 0x8025BE30  ;# ptr
-	.4byte 0x8025BEEC  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8025BF70  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x8025BF78  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x8025BFB0  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss6whispy6CustomCFv
+	.byte4 __dt__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onInit__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onAppear__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onStart__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onDamage__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onDead__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss6whispy6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22759,8 +22759,8 @@ $$256698:
 __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble8NodeKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8026080C  ;# ptr
-	.4byte 0x8026079C  ;# ptr
+	.byte4 __dt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble8NodeKind$$1Fv
+	.byte4 create__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9StateDead$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble8NodeKind$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -22777,25 +22777,25 @@ __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common9Stat
 __vt__Q53scn4step4boss9zankibble6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80260798  ;# ptr
-	.4byte 0x802607A0  ;# ptr
-	.4byte 0x8026043C  ;# ptr
-	.4byte 0x802606EC  ;# ptr
-	.4byte 0x802606F0  ;# ptr
-	.4byte 0x802606F4  ;# ptr
-	.4byte 0x802606F8  ;# ptr
-	.4byte 0x8022E5D8  ;# ptr
-	.4byte 0x8022E5DC  ;# ptr
-	.4byte 0x8022E5E0  ;# ptr
-	.4byte 0x8022E5E4  ;# ptr
-	.4byte 0x8022E5E8  ;# ptr
-	.4byte 0x8022E5EC  ;# ptr
-	.4byte 0x80260790  ;# ptr
-	.4byte 0x8022E5F4  ;# ptr
-	.4byte 0x80260794  ;# ptr
-	.4byte 0x8022E5FC  ;# ptr
-	.4byte 0x8022E600  ;# ptr
-	.4byte 0x8022E604  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4boss9zankibble6CustomCFv
+	.byte4 __dt__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onInit__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onAppear__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onStart__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onDamage__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onDead__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
+	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcAnim__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step4boss9zankibble6CustomFv
+	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -22809,21 +22809,21 @@ __vt__Q53scn4step4boss9zankibble6Custom:
 __vt__Q53scn4step5enemy8armordee6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802965CC  ;# ptr
-	.4byte 0x802965D0  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802964B8  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8armordee6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8armordee6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy8armordee6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22831,21 +22831,21 @@ __vt__Q53scn4step5enemy8armordee6Custom:
 __vt__Q53scn4step5enemy11bladeknight6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802971BC  ;# ptr
-	.4byte 0x802971C0  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy11bladeknight6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy11bladeknight6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22853,21 +22853,21 @@ __vt__Q53scn4step5enemy11bladeknight6Custom:
 __vt__Q53scn4step5enemy7blipper6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80299390  ;# ptr
-	.4byte 0x80299394  ;# ptr
-	.4byte 0x80298F50  ;# ptr
-	.4byte 0x802992BC  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80299064  ;# ptr
-	.4byte 0x802991B4  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80299348  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7blipper6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onInit__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onOutWater__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy7blipper6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22875,27 +22875,27 @@ __vt__Q53scn4step5enemy7blipper6Custom:
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bonkersbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029C0DC  ;# ptr
-	.4byte 0x8029C0BC  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bonkersbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bonkersbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy11bonkersbomb6Custom
 __vt__Q53scn4step5enemy11bonkersbomb6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029C0B8  ;# ptr
-	.4byte 0x8029C0D8  ;# ptr
-	.4byte 0x8029BCB8  ;# ptr
-	.4byte 0x8029BE98  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x8029BE28  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x8029BEA8  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy11bonkersbomb6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.byte4 onInit__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22903,21 +22903,21 @@ __vt__Q53scn4step5enemy11bonkersbomb6Custom:
 __vt__Q53scn4step5enemy6bouncy6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029D1CC  ;# ptr
-	.4byte 0x8029D1D0  ;# ptr
-	.4byte 0x8029D154  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6bouncy6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6bouncy6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6bouncy6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22925,21 +22925,21 @@ __vt__Q53scn4step5enemy6bouncy6Custom:
 __vt__Q53scn4step5enemy5bowby6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029E780  ;# ptr
-	.4byte 0x8029E784  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x8029E4B4  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x8029E548  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5bowby6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5bowby6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy5bowby6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy5bowby6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22947,27 +22947,27 @@ __vt__Q53scn4step5enemy5bowby6Custom:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateSkinned$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A2DA0  ;# ptr
-	.4byte 0x802A2D80  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateSkinned$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateSkinned$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5cappy6Custom
 __vt__Q53scn4step5enemy5cappy6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A2D7C  ;# ptr
-	.4byte 0x802A2D9C  ;# ptr
-	.4byte 0x802A28BC  ;# ptr
-	.4byte 0x802A2C24  ;# ptr
-	.4byte 0x802A29C4  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802A2C50  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802A2C60  ;# ptr
-	.4byte 0x802A2C54  ;# ptr
-	.4byte 0x802A2914  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5cappy6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onDead__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy5cappy6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22975,21 +22975,21 @@ __vt__Q53scn4step5enemy5cappy6Custom:
 __vt__Q53scn4step5enemy8cappyhat6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A3D0C  ;# ptr
-	.4byte 0x802A3D10  ;# ptr
-	.4byte 0x802A3A04  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802A3A34  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8cappyhat6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8cappyhat6CustomFv
+	.byte4 onInit__Q53scn4step5enemy8cappyhat6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy8cappyhat6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -22997,21 +22997,21 @@ __vt__Q53scn4step5enemy8cappyhat6Custom:
 __vt__Q53scn4step5enemy6chilly6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A62DC  ;# ptr
-	.4byte 0x802A62E0  ;# ptr
-	.4byte 0x802A62A8  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6chilly6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6chilly6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6chilly6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23019,21 +23019,21 @@ __vt__Q53scn4step5enemy6chilly6Custom:
 __vt__Q53scn4step5enemy4como6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A7400  ;# ptr
-	.4byte 0x802A7404  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802A73C8  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802A73F0  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802A73F8  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy4como6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy4como6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy4como6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy4como6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy4como6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23041,21 +23041,21 @@ __vt__Q53scn4step5enemy4como6Custom:
 __vt__Q53scn4step5enemy6degout6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AD33C  ;# ptr
-	.4byte 0x802AD340  ;# ptr
-	.4byte 0x802AD2E8  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802AD2EC  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6degout6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6degout6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6degout6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy6degout6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23063,21 +23063,21 @@ __vt__Q53scn4step5enemy6degout6Custom:
 __vt__Q53scn4step5enemy8dubiorjr6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AE18C  ;# ptr
-	.4byte 0x802AE190  ;# ptr
-	.4byte 0x802AE0B0  ;# ptr
-	.4byte 0x802AE108  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802AE104  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x802AE10C  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8dubiorjr6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8dubiorjr6CustomFv
+	.byte4 onInit__Q53scn4step5enemy8dubiorjr6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy8dubiorjr6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy8dubiorjr6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q53scn4step5enemy8dubiorjr6CustomFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23085,27 +23085,27 @@ __vt__Q53scn4step5enemy8dubiorjr6Custom:
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11dubiorspark9StateShot$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AEE7C  ;# ptr
-	.4byte 0x802AEE5C  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11dubiorspark9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11dubiorspark9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy11dubiorspark6Custom
 __vt__Q53scn4step5enemy11dubiorspark6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AEE58  ;# ptr
-	.4byte 0x802AEE78  ;# ptr
-	.4byte 0x802AED14  ;# ptr
-	.4byte 0x802AEDD4  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802AEDAC  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x802AEDD8  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy11dubiorspark6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy11dubiorspark6CustomFv
+	.byte4 onInit__Q53scn4step5enemy11dubiorspark6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy11dubiorspark6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy11dubiorspark6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q53scn4step5enemy11dubiorspark6CustomFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23113,21 +23113,21 @@ __vt__Q53scn4step5enemy11dubiorspark6Custom:
 __vt__Q53scn4step5enemy4elec6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AFC38  ;# ptr
-	.4byte 0x802AFC3C  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802AFAF0  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy4elec6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy4elec6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy4elec6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23135,21 +23135,21 @@ __vt__Q53scn4step5enemy4elec6Custom:
 __vt__Q53scn4step5enemy6flamer6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B22D0  ;# ptr
-	.4byte 0x802B22D4  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6flamer6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6flamer6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23157,21 +23157,21 @@ __vt__Q53scn4step5enemy6flamer6Custom:
 __vt__Q53scn4step5enemy5foley6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B49C0  ;# ptr
-	.4byte 0x802B49C4  ;# ptr
-	.4byte 0x802B4568  ;# ptr
-	.4byte 0x802B4854  ;# ptr
-	.4byte 0x802B4688  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802B4734  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5foley6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5foley6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5foley6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy5foley6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy5foley6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy5foley6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23179,21 +23179,21 @@ __vt__Q53scn4step5enemy5foley6Custom:
 __vt__Q53scn4step5enemy5gemra6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B61A4  ;# ptr
-	.4byte 0x802B61A8  ;# ptr
-	.4byte 0x802B59EC  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x802B59F0  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802B59F4  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5gemra6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5gemra6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5gemra6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy5gemra6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy5gemra6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23201,21 +23201,21 @@ __vt__Q53scn4step5enemy5gemra6Custom:
 __vt__Q53scn4step5enemy7gigatzo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B76B0  ;# ptr
-	.4byte 0x802B76B4  ;# ptr
-	.4byte 0x802B6C60  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802B707C  ;# ptr
-	.4byte 0x802B70AC  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802B6EE0  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7gigatzo6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7gigatzo6CustomFv
+	.byte4 onInit__Q53scn4step5enemy7gigatzo6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy7gigatzo6CustomFv
+	.byte4 onOutWater__Q53scn4step5enemy7gigatzo6CustomFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy7gigatzo6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23223,21 +23223,21 @@ __vt__Q53scn4step5enemy7gigatzo6Custom:
 __vt__Q53scn4step5enemy5gordo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B9050  ;# ptr
-	.4byte 0x802B9054  ;# ptr
-	.4byte 0x802B8E24  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802B8EB0  ;# ptr
-	.4byte 0x802B8EB4  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802B8EB8  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5gordo6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5gordo6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5gordo6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy5gordo6CustomFv
+	.byte4 onOutWater__Q53scn4step5enemy5gordo6CustomFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy5gordo6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23245,21 +23245,21 @@ __vt__Q53scn4step5enemy5gordo6Custom:
 __vt__Q53scn4step5enemy7hothead6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BA664  ;# ptr
-	.4byte 0x802BA668  ;# ptr
-	.4byte 0x802BA324  ;# ptr
-	.4byte 0x802BA37C  ;# ptr
-	.4byte 0x802BA3AC  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802BA3B0  ;# ptr
-	.4byte 0x802BA3B4  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802BA44C  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7hothead6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onInit__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy7hothead6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23279,21 +23279,21 @@ $$255360:
 __vt__Q53scn4step5enemy6juckle6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BB798  ;# ptr
-	.4byte 0x802BB79C  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802BB454  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802BB4F8  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6juckle6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6juckle6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy6juckle6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy6juckle6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23301,21 +23301,21 @@ __vt__Q53scn4step5enemy6juckle6Custom:
 __vt__Q53scn4step5enemy4kabu6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BCDC0  ;# ptr
-	.4byte 0x802BCDC4  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802BCCB0  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy4kabu6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy4kabu6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy4kabu6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23323,21 +23323,21 @@ __vt__Q53scn4step5enemy4kabu6Custom:
 __vt__Q53scn4step5enemy10knucklejoe6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BF8B8  ;# ptr
-	.4byte 0x802BF8BC  ;# ptr
-	.4byte 0x802BF42C  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802BF440  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy10knucklejoe6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy10knucklejoe6CustomFv
+	.byte4 onInit__Q53scn4step5enemy10knucklejoe6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy10knucklejoe6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23345,21 +23345,21 @@ __vt__Q53scn4step5enemy10knucklejoe6Custom:
 __vt__Q53scn4step5enemy6lanzer6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C2180  ;# ptr
-	.4byte 0x802C2184  ;# ptr
-	.4byte 0x802C208C  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802C2100  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6lanzer6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6lanzer6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6lanzer6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy6lanzer6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23367,27 +23367,27 @@ __vt__Q53scn4step5enemy6lanzer6Custom:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9mbossdead9StateMain$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C4694  ;# ptr
-	.4byte 0x802C460C  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9mbossdead9StateMain$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9mbossdead9StateMain$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy9mbossdead6Custom
 __vt__Q53scn4step5enemy9mbossdead6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C4608  ;# ptr
-	.4byte 0x802C4628  ;# ptr
-	.4byte 0x802C4284  ;# ptr
-	.4byte 0x802C445C  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802C4458  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x802C4408  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802C44CC  ;# ptr
-	.4byte 0x802C4560  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy9mbossdead6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 onInit__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 reqCustomDeadEffect__Q53scn4step5enemy9mbossdead6CustomFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23395,27 +23395,27 @@ __vt__Q53scn4step5enemy9mbossdead6Custom:
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7mumbies11StateEndure$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C4FFC  ;# ptr
-	.4byte 0x802C4FDC  ;# ptr
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7mumbies11StateEndure$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7mumbies11StateEndure$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy7mumbies6Custom
 __vt__Q53scn4step5enemy7mumbies6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C4FD8  ;# ptr
-	.4byte 0x802C4FF8  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802C4FA8  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x802C4E90  ;# ptr
-	.4byte 0x802C4FB8  ;# ptr
-	.4byte 0x802C4F2C  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x802C4FC8  ;# ptr
-	.4byte 0x802C4FBC  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7mumbies6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onDamaged__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onCaptured__Q53scn4step5enemy7mumbies6CustomFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23423,21 +23423,21 @@ __vt__Q53scn4step5enemy7mumbies6Custom:
 __vt__Q53scn4step5enemy8needlous6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C6194  ;# ptr
-	.4byte 0x802C6198  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x802C6080  ;# ptr
-	.4byte 0x802C6088  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8needlous6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8needlous6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q53scn4step5enemy8needlous6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy8needlous6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23445,21 +23445,21 @@ __vt__Q53scn4step5enemy8needlous6Custom:
 __vt__Q53scn4step5enemy5nruff6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C7DFC  ;# ptr
-	.4byte 0x802C7B34  ;# ptr
-	.4byte 0x802C7B38  ;# ptr
-	.4byte 0x802C7BC4  ;# ptr
-	.4byte 0x802C7BC8  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802C7BD0  ;# ptr
-	.4byte 0x802C7BDC  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802C7BD8  ;# ptr
-	.4byte 0x802C7BD4  ;# ptr
-	.4byte 0x802C7BCC  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5nruff6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onDead__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy5nruff6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23467,21 +23467,21 @@ __vt__Q53scn4step5enemy5nruff6Custom:
 __vt__Q53scn4step5enemy6owgulf6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C9F10  ;# ptr
-	.4byte 0x802C9F14  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6owgulf6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6owgulf6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23489,21 +23489,21 @@ __vt__Q53scn4step5enemy6owgulf6Custom:
 __vt__Q53scn4step5enemy7parasol6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CB100  ;# ptr
-	.4byte 0x802CABF8  ;# ptr
-	.4byte 0x802CAC84  ;# ptr
-	.4byte 0x802CAD2C  ;# ptr
-	.4byte 0x802CAED4  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802CAD70  ;# ptr
-	.4byte 0x802CADB4  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802CAE40  ;# ptr
-	.4byte 0x802CAE94  ;# ptr
-	.4byte 0x802CAEF8  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7parasol6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onInit__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onDead__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy7parasol6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23511,77 +23511,77 @@ __vt__Q53scn4step5enemy7parasol6Custom:
 __vt__Q53scn4step5enemy10parasoldee6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CC538  ;# ptr
-	.4byte 0x802CBB70  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802CBE4C  ;# ptr
-	.4byte 0x802CBDD8  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802CBE70  ;# ptr
-	.4byte 0x802CBD54  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802CBEF8  ;# ptr
-	.4byte 0x802CBE74  ;# ptr
-	.4byte 0x802CBC00  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy10parasoldee6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onDead__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CC54C  ;# ptr
-	.4byte 0x802CC544  ;# ptr
-	.4byte 0x802CC53C  ;# ptr
-	.4byte 0x802CC134  ;# ptr
-	.4byte 0x802CC250  ;# ptr
+	.byte4 $$28$$2__dt__Q53scn4step5enemy10parasoldee6CustomFv
+	.byte4 $$28$$2onParasolRelease__Q53scn4step5enemy10parasoldee6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 $$28$$2onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldee6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 onParasolRelease__Q53scn4step5enemy10parasoldee6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldee6CustomFRQ53scn4step5enemy7parasol6Custom
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldoo6Custom
 __vt__Q53scn4step5enemy10parasoldoo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CE460  ;# ptr
-	.4byte 0x802CDC9C  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802CDF78  ;# ptr
-	.4byte 0x802CDF04  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802CDF9C  ;# ptr
-	.4byte 0x802CDE80  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802CDFA4  ;# ptr
-	.4byte 0x802CDFA0  ;# ptr
-	.4byte 0x802CDD2C  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy10parasoldoo6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onDead__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CE474  ;# ptr
-	.4byte 0x802CE46C  ;# ptr
-	.4byte 0x802CE464  ;# ptr
-	.4byte 0x802CE10C  ;# ptr
-	.4byte 0x802CE220  ;# ptr
+	.byte4 $$28$$2__dt__Q53scn4step5enemy10parasoldoo6CustomFv
+	.byte4 $$28$$2onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 $$28$$2onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
+	.byte4 onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6pierce6Custom
 __vt__Q53scn4step5enemy6pierce6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CFB34  ;# ptr
-	.4byte 0x802CFB38  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6pierce6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6pierce6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23589,27 +23589,27 @@ __vt__Q53scn4step5enemy6pierce6Custom:
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy14poppybrojrbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D1D24  ;# ptr
-	.4byte 0x802D1C9C  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy14poppybrojrbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy14poppybrojrbomb9StateShot$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10poppybrojr6Custom
 __vt__Q53scn4step5enemy10poppybrojr6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D1C98  ;# ptr
-	.4byte 0x802D1CB8  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802D1780  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x802D17C4  ;# ptr
-	.4byte 0x802D1804  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy10poppybrojr6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy10poppybrojr6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy10poppybrojr6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q53scn4step5enemy10poppybrojr6CustomFv
+	.byte4 onDead__Q53scn4step5enemy10poppybrojr6CustomFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23617,21 +23617,21 @@ __vt__Q53scn4step5enemy10poppybrojr6Custom:
 __vt__Q53scn4step5enemy14poppybrojrbomb6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D2C04  ;# ptr
-	.4byte 0x802D2C08  ;# ptr
-	.4byte 0x802D2924  ;# ptr
-	.4byte 0x802D2B50  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802D2928  ;# ptr
-	.4byte 0x802D2B54  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy14poppybrojrbomb6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy14poppybrojrbomb6CustomFv
+	.byte4 onInit__Q53scn4step5enemy14poppybrojrbomb6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy14poppybrojrbomb6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy14poppybrojrbomb6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy14poppybrojrbomb6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23639,21 +23639,21 @@ __vt__Q53scn4step5enemy14poppybrojrbomb6Custom:
 __vt__Q53scn4step5enemy9puppetdee6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D3310  ;# ptr
-	.4byte 0x802D3314  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802D32C0  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy9puppetdee6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy9puppetdee6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy9puppetdee6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23661,21 +23661,21 @@ __vt__Q53scn4step5enemy9puppetdee6Custom:
 __vt__Q53scn4step5enemy5rocky6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D3A80  ;# ptr
-	.4byte 0x802D3A84  ;# ptr
-	.4byte 0x802D39F4  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5rocky6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5rocky6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5rocky6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23683,21 +23683,21 @@ __vt__Q53scn4step5enemy5rocky6Custom:
 __vt__Q53scn4step5enemy8rollball6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D6624  ;# ptr
-	.4byte 0x802D6628  ;# ptr
-	.4byte 0x802D62A0  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802D645C  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8rollball6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8rollball6CustomFv
+	.byte4 onInit__Q53scn4step5enemy8rollball6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy8rollball6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23705,21 +23705,21 @@ __vt__Q53scn4step5enemy8rollball6Custom:
 __vt__Q53scn4step5enemy7sandbag6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D9180  ;# ptr
-	.4byte 0x802D9184  ;# ptr
-	.4byte 0x802D88D0  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x802D8E28  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802D8E2C  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x802D8E60  ;# ptr
-	.4byte 0x802D8EB8  ;# ptr
-	.4byte 0x802D8BB8  ;# ptr
-	.4byte 0x802D893C  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy7sandbag6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onInit__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onCaptured__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onDead__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 onProcFixPos__Q53scn4step5enemy7sandbag6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23727,21 +23727,21 @@ __vt__Q53scn4step5enemy7sandbag6Custom:
 __vt__Q53scn4step5enemy6scarfy6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D9D50  ;# ptr
-	.4byte 0x802D9D54  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802D9C70  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x802D9C74  ;# ptr
-	.4byte 0x802D9C6C  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6scarfy6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6scarfy6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy6scarfy6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q53scn4step5enemy6scarfy6CustomFv
+	.byte4 onDamaged__Q53scn4step5enemy6scarfy6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23749,21 +23749,21 @@ __vt__Q53scn4step5enemy6scarfy6Custom:
 __vt__Q53scn4step5enemy8searches6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DBDE8  ;# ptr
-	.4byte 0x802DBDEC  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x802DBDE4  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802DBDE0  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy8searches6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy8searches6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy8searches6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy8searches6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23771,27 +23771,27 @@ __vt__Q53scn4step5enemy8searches6Custom:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DD8F4  ;# ptr
-	.4byte 0x802DD8D4  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5sheld6Custom
 __vt__Q53scn4step5enemy5sheld6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DD8D0  ;# ptr
-	.4byte 0x802DD8F0  ;# ptr
-	.4byte 0x802DCF68  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x802DD0A4  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802DD284  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5sheld6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5sheld6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5sheld6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy5sheld6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy5sheld6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23799,21 +23799,21 @@ __vt__Q53scn4step5enemy5sheld6Custom:
 __vt__Q53scn4step5enemy6shotzo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E0738  ;# ptr
-	.4byte 0x802E073C  ;# ptr
-	.4byte 0x802E02E4  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802E0384  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6shotzo6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6shotzo6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6shotzo6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy6shotzo6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23821,21 +23821,21 @@ __vt__Q53scn4step5enemy6shotzo6Custom:
 __vt__Q53scn4step5enemy9sirkibble6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E16DC  ;# ptr
-	.4byte 0x802E16E0  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802E1404  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802E1428  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy9sirkibble6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy9sirkibble6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy9sirkibble6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy9sirkibble6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23843,21 +23843,21 @@ __vt__Q53scn4step5enemy9sirkibble6Custom:
 __vt__Q53scn4step5enemy11sisterbound6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E2AEC  ;# ptr
-	.4byte 0x802E2AF0  ;# ptr
-	.4byte 0x802E296C  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802E29FC  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy11sisterbound6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy11sisterbound6CustomFv
+	.byte4 onInit__Q53scn4step5enemy11sisterbound6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy11sisterbound6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23865,21 +23865,21 @@ __vt__Q53scn4step5enemy11sisterbound6Custom:
 __vt__Q53scn4step5enemy5snowl6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E3838  ;# ptr
-	.4byte 0x802E383C  ;# ptr
-	.4byte 0x802E3768  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy5snowl6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy5snowl6CustomFv
+	.byte4 onInit__Q53scn4step5enemy5snowl6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23887,21 +23887,21 @@ __vt__Q53scn4step5enemy5snowl6Custom:
 __vt__Q53scn4step5enemy6sodory6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E53C8  ;# ptr
-	.4byte 0x802E53CC  ;# ptr
-	.4byte 0x802E4DCC  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802E4E44  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6sodory6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6sodory6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6sodory6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy6sodory6CustomFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23909,21 +23909,21 @@ __vt__Q53scn4step5enemy6sodory6Custom:
 __vt__Q53scn4step5enemy6sparky6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E6E70  ;# ptr
-	.4byte 0x802E6E74  ;# ptr
-	.4byte 0x802E6D84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy6sparky6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy6sparky6CustomFv
+	.byte4 onInit__Q53scn4step5enemy6sparky6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23931,21 +23931,21 @@ __vt__Q53scn4step5enemy6sparky6Custom:
 __vt__Q53scn4step5enemy10stareffect6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E7E7C  ;# ptr
-	.4byte 0x802E7E80  ;# ptr
-	.4byte 0x802E7AC4  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy10stareffect6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy10stareffect6CustomFv
+	.byte4 onInit__Q53scn4step5enemy10stareffect6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23953,21 +23953,21 @@ __vt__Q53scn4step5enemy10stareffect6Custom:
 __vt__Q53scn4step5enemy3sun6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E8C3C  ;# ptr
-	.4byte 0x802E8C40  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x802E8C08  ;# ptr
-	.4byte 0x802E8C0C  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy3sun6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy3sun6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q53scn4step5enemy3sun6CustomFv
+	.byte4 onOutWater__Q53scn4step5enemy3sun6CustomFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23975,21 +23975,21 @@ __vt__Q53scn4step5enemy3sun6Custom:
 __vt__Q53scn4step5enemy9tsukikage6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EAFF4  ;# ptr
-	.4byte 0x802EAFF8  ;# ptr
-	.4byte 0x802EA810  ;# ptr
-	.4byte 0x802EA984  ;# ptr
-	.4byte 0x802EA934  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x802EA8C4  ;# ptr
-	.4byte 0x802EA988  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy9tsukikage6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onInit__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onInWater__Q53scn4step5enemy9tsukikage6CustomFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -23997,21 +23997,21 @@ __vt__Q53scn4step5enemy9tsukikage6Custom:
 __vt__Q53scn4step5enemy9waddledoo6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EFB2C  ;# ptr
-	.4byte 0x802EFB30  ;# ptr
-	.4byte 0x80281E84  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy9waddledoo6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy9waddledoo6CustomFv
+	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24019,27 +24019,27 @@ __vt__Q53scn4step5enemy9waddledoo6Custom:
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple11StateAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F10A4  ;# ptr
-	.4byte 0x802F1084  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple11StateAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple11StateAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy11whispyapple6Custom
 __vt__Q53scn4step5enemy11whispyapple6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F1080  ;# ptr
-	.4byte 0x802F10A0  ;# ptr
-	.4byte 0x802F0D94  ;# ptr
-	.4byte 0x802F0E5C  ;# ptr
-	.4byte 0x80281E8C  ;# ptr
-	.4byte 0x802F0F34  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x802F107C  ;# ptr
-	.4byte 0x80281F24  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy11whispyapple6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy11whispyapple6CustomFv
+	.byte4 onInit__Q53scn4step5enemy11whispyapple6CustomFv
+	.byte4 onHitPointIsZero__Q53scn4step5enemy11whispyapple6CustomFv
+	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumResist__Q53scn4step5enemy11whispyapple6CustomFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q53scn4step5enemy11whispyapple6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24047,21 +24047,21 @@ __vt__Q53scn4step5enemy11whispyapple6Custom:
 __vt__Q53scn4step5enemy15zankibblecutter6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F2568  ;# ptr
-	.4byte 0x802F256C  ;# ptr
-	.4byte 0x802F23D8  ;# ptr
-	.4byte 0x80281E88  ;# ptr
-	.4byte 0x802F2538  ;# ptr
-	.4byte 0x80281E90  ;# ptr
-	.4byte 0x80281E94  ;# ptr
-	.4byte 0x80281E98  ;# ptr
-	.4byte 0x80281F10  ;# ptr
-	.4byte 0x80281F14  ;# ptr
-	.4byte 0x80281F18  ;# ptr
-	.4byte 0x80281F1C  ;# ptr
-	.4byte 0x80281F20  ;# ptr
-	.4byte 0x802F24B4  ;# ptr
-	.4byte 0x80281F28  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q53scn4step5enemy15zankibblecutter6CustomCFv
+	.byte4 __dt__Q53scn4step5enemy15zankibblecutter6CustomFv
+	.byte4 onInit__Q53scn4step5enemy15zankibblecutter6CustomFv
+	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onVacuumReceive__Q53scn4step5enemy15zankibblecutter6CustomFv
+	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
+	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q53scn4step5enemy15zankibblecutter6CustomFv
+	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24069,53 +24069,53 @@ __vt__Q53scn4step5enemy15zankibblecutter6Custom:
 __vt__Q53scn4step4hero5spark6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038CD9C
-	.4byte 0x8038CD30
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4hero5spark6CustomCFv
+	.byte4 __dt__Q53scn4step4hero5spark6CustomFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol6Custom
 __vt__Q53scn4step4hero7parasol6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80392554
-	.4byte 0x803924E8
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4hero7parasol6CustomCFv
+	.byte4 __dt__Q53scn4step4hero7parasol6CustomFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter6Custom
 __vt__Q53scn4step4hero7fighter6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039B4C0
-	.4byte 0x8039B454
+	.byte4 GetRuntimeTypeInfo__Q53scn4step4hero7fighter6CustomCFv
+	.byte4 __dt__Q53scn4step4hero7fighter6CustomFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DC22C
-	.4byte 0x803DC164
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DC228
-	.4byte 0x803DC180
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DC224
-	.4byte 0x803DC19C
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11starshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon11starshotlv16Custom
 __vt__Q53scn4step6weapon11starshotlv16Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DC160
-	.4byte 0x803DC1B8
-	.4byte 0x803DBD40
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon11starshotlv16CustomCFv
+	.byte4 __dt__Q53scn4step6weapon11starshotlv16CustomFv
+	.byte4 onInit__Q53scn4step6weapon11starshotlv16CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24123,17 +24123,17 @@ __vt__Q53scn4step6weapon11starshotlv16Custom:
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon7rollexp9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DEB3C
-	.4byte 0x803DEB1C
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon7rollexp9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon7rollexp9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon7rollexp6Custom
 __vt__Q53scn4step6weapon7rollexp6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803DEB18
-	.4byte 0x803DEB38
-	.4byte 0x803DEA94
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon7rollexp6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon7rollexp6CustomFv
+	.byte4 onInit__Q53scn4step6weapon7rollexp6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24141,17 +24141,17 @@ __vt__Q53scn4step6weapon7rollexp6Custom:
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13gigatzobullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E02B4
-	.4byte 0x803E0294
+	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13gigatzobullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13gigatzobullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon13gigatzobullet6Custom
 __vt__Q53scn4step6weapon13gigatzobullet6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E0290
-	.4byte 0x803E02B0
-	.4byte 0x803E020C
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon13gigatzobullet6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon13gigatzobullet6CustomFv
+	.byte4 onInit__Q53scn4step6weapon13gigatzobullet6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24159,17 +24159,17 @@ __vt__Q53scn4step6weapon13gigatzobullet6Custom:
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10comothread9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E2274
-	.4byte 0x803E21EC
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10comothread9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10comothread9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon10comothread6Custom
 __vt__Q53scn4step6weapon10comothread6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E21E8
-	.4byte 0x803E2208
-	.4byte 0x803E1FA0
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon10comothread6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon10comothread6CustomFv
+	.byte4 onInit__Q53scn4step6weapon10comothread6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24177,17 +24177,17 @@ __vt__Q53scn4step6weapon10comothread6Custom:
 __vt__Q24util153StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot9StateMain$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E6C4C
-	.4byte 0x803E6C28
+	.byte4 __dt__Q24util153StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot9StateMain$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1Fv
+	.byte4 create__Q24util153StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot9StateMain$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1Fv
 .global __vt__Q53scn4step6weapon16fighterhadoushot6Custom
 __vt__Q53scn4step6weapon16fighterhadoushot6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E6C24
-	.4byte 0x803E6C48
-	.4byte 0x803E6AF0
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon16fighterhadoushot6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon16fighterhadoushot6CustomFv
+	.byte4 onInit__Q53scn4step6weapon16fighterhadoushot6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24209,17 +24209,17 @@ $$256603:
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EE564
-	.4byte 0x803EE4DC
+	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon13vacuumedblock6Custom
 __vt__Q53scn4step6weapon13vacuumedblock6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EE4D8
-	.4byte 0x803EE4F8
-	.4byte 0x803EE2F0
-	.4byte 0x803EE3FC
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon13vacuumedblock6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.byte4 onInit__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.byte4 onDead__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24227,17 +24227,17 @@ __vt__Q53scn4step6weapon13vacuumedblock6Custom:
 __vt__Q24util116StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon26challengemastersummonlight9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EFA78
-	.4byte 0x803EFA58
+	.byte4 __dt__Q24util116StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon26challengemastersummonlight9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util116StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon26challengemastersummonlight9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon26challengemastersummonlight6Custom
 __vt__Q53scn4step6weapon26challengemastersummonlight6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EFA54
-	.4byte 0x803EFA74
-	.4byte 0x803EF9D0
-	.4byte 0x803D3768
-	.4byte 0x803D376C
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon26challengemastersummonlight6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon26challengemastersummonlight6CustomFv
+	.byte4 onInit__Q53scn4step6weapon26challengemastersummonlight6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -24245,23 +24245,23 @@ __vt__Q53scn4step6weapon26challengemastersummonlight6Custom:
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot10StateReady$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F04D8
-	.4byte 0x803F0498
+	.byte4 __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot10StateReady$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot10StateReady$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateWait$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateWait$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F04D4
-	.4byte 0x803F04B4
+	.byte4 __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateWait$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.byte4 create__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateWait$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q53scn4step6weapon19challengemastershot6Custom
 __vt__Q53scn4step6weapon19challengemastershot6Custom:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F0494
-	.4byte 0x803F04D0
-	.4byte 0x803F0280
-	.4byte 0x803D3768
-	.4byte 0x803F02FC
+	.byte4 GetRuntimeTypeInfo__Q53scn4step6weapon19challengemastershot6CustomCFv
+	.byte4 __dt__Q53scn4step6weapon19challengemastershot6CustomFv
+	.byte4 onInit__Q53scn4step6weapon19challengemastershot6CustomFv
+	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
+	.byte4 reqCustomDeadEffect__Q53scn4step6weapon19challengemastershot6CustomFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

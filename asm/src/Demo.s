@@ -132,14 +132,14 @@ unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv:
 __vt__Q53scn4step7gimmick11areamapdemo4Demo:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802FAD8C
-	.4byte 0x802FAE04
-	.4byte 0x802FAE08
+	.byte4 __dt__Q53scn4step7gimmick11areamapdemo4DemoFv
+	.byte4 registerToRoot__Q53scn4step7gimmick11areamapdemo4DemoFRQ23g3d4Root
+	.byte4 procAnim__Q53scn4step7gimmick11areamapdemo4DemoFv
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F9A60
-	.4byte 0x802F9A94
-	.4byte 0x802FAE90
+	.byte4 startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo4DemoFv
+	.byte4 isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo4DemoCFv
+	.byte4 unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252595

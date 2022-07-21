@@ -52,9 +52,9 @@ procFixPos__Q53scn4step4boss13watergalboros16StateAttackJointFv:
 __vt__Q53scn4step4boss13watergalboros16StateAttackJoint:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025A120  ;# ptr
-	.4byte 0x8025A124  ;# ptr
-	.4byte 0x8025A128  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025A12C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss13watergalboros16StateAttackJointFv
+	.byte4 procAnim__Q53scn4step4boss13watergalboros16StateAttackJointFv
+	.byte4 procMove__Q53scn4step4boss13watergalboros16StateAttackJointFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss13watergalboros16StateAttackJointFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

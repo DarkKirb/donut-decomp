@@ -65,9 +65,9 @@ __dt__Q53scn4step5enemy9tsukikage10BrainSmokeFv:
 __vt__Q53scn4step5enemy9tsukikage10BrainSmoke:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EA59C  ;# ptr
-	.4byte 0x802EA518  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9tsukikage10BrainSmokeFv
+	.byte4 onStart__Q53scn4step5enemy9tsukikage10BrainSmokeFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

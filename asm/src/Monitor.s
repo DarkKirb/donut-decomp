@@ -168,10 +168,10 @@ $$252078:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251937
 $$251937:
-	.4byte 0x80481B38
+	.byte4 $$251935
 .global lbl_805629B4
 lbl_805629B4:
-	.4byte 0x80481B44
+	.byte4 $$251936
 .global $$252079
 $$252079:
 	.4byte 0

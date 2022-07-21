@@ -89,9 +89,9 @@ __dt__Q53scn4step5enemy6juckle11BrainFollowFv:
 __vt__Q53scn4step5enemy6juckle11BrainFollow:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BB26C  ;# ptr
-	.4byte 0x802BB1A8  ;# ptr
-	.4byte 0x802BB268  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6juckle11BrainFollowFv
+	.byte4 onStart__Q53scn4step5enemy6juckle11BrainFollowFv
+	.byte4 onRecover__Q53scn4step5enemy6juckle11BrainFollowFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

@@ -602,18 +602,18 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCFlyAway$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802422DC  ;# ptr
-	.4byte 0x802422C0  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss15challengemaster14StateSCFlyAway
 __vt__Q53scn4step4boss15challengemaster14StateSCFlyAway:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80241B80  ;# ptr
-	.4byte 0x80241C2C  ;# ptr
-	.4byte 0x80241D18  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80241F58  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255744

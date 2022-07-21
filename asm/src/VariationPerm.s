@@ -103,11 +103,11 @@ setIsPose__Q53scn4step7gimmick10cameralock13VariationPermFb:
 __vt__Q53scn4step7gimmick10cameralock13VariationPerm:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80304CB4
-	.4byte 0x80304DC4
-	.4byte 0x80304DC8
-	.4byte 0x80304DCC
-	.4byte 0x80304DD0
+	.byte4 updateReady__Q53scn4step7gimmick10cameralock13VariationPermFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLock__Q53scn4step7gimmick10cameralock13VariationPermFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationPermFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationPermFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 setIsPose__Q53scn4step7gimmick10cameralock13VariationPermFb
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -444,55 +444,55 @@ lbl_8039B290:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21:
-	.4byte 0x8048B794
+	.byte4 $$249539
 	.4byte 0
-	.4byte 0x8048B7A8
+	.byte4 $$249540
 	.4byte 0
-	.4byte 0x8048B7BC
+	.byte4 $$249541
 	.4byte 0
-	.4byte 0x8048B7D0
+	.byte4 $$249542
 	.4byte 0
-	.4byte 0x8048B7E0
+	.byte4 $$249543
 	.4byte 0
-	.4byte 0x8048B7F8
+	.byte4 $$249544
 	.4byte 0
-	.4byte 0x8048B810
+	.byte4 $$249545
 	.4byte 0
-	.4byte 0x8048B828
+	.byte4 $$249546
 	.4byte 0
-	.4byte 0x8048B83C
+	.byte4 $$249547
 	.4byte 0
-	.4byte 0x8048B848
+	.byte4 $$249548
 	.4byte 0
-	.4byte 0x8048B858
+	.byte4 $$249549
 	.4byte 0
-	.4byte 0x8048B86C
+	.byte4 $$249550
 	.4byte 0
-	.4byte 0x8048B87C
+	.byte4 $$249551
 	.4byte 0
-	.4byte 0x8048B890
+	.byte4 $$249552
 	.4byte 0
-	.4byte 0x8048B8A4
+	.byte4 $$249553
 	.4byte 0
-	.4byte 0x8048B8B4
+	.byte4 $$249554
 	.4byte 0
-	.4byte 0x8048B8C8
+	.byte4 $$249555
 	.4byte 0
-	.4byte 0x8048B8D8
+	.byte4 $$249556
 	.4byte 0
-	.4byte 0x8048B8E8
+	.byte4 $$249557
 	.4byte 0
-	.4byte 0x8048B8F8
+	.byte4 $$249558
 	.4byte 0
-	.4byte 0x8048B908
+	.byte4 $$249559
 	.4byte 0
-	.4byte 0x8048B91C
+	.byte4 $$249560
 	.4byte 0
-	.4byte 0x8048B928
+	.byte4 $$249561
 	.4byte 0
-	.4byte 0x8048B938
+	.byte4 $$249562
 	.4byte 0
-	.4byte 0x8048B948
+	.byte4 $$249563
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -614,27 +614,27 @@ $$256290:
 __vt__Q53scn4step4hero4wing4Wing:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039B018
-	.4byte 0x8039B0A4
-	.4byte 0x8032B7A0
-	.4byte 0x8039B1E0
-	.4byte 0x8032B7A8
-	.4byte 0x8039B1E8
-	.4byte 0x8032B7B0
-	.4byte 0x8032B7B4
-	.4byte 0x8032B7B8
-	.4byte 0x8032B7BC
-	.4byte 0x8032B7C0
-	.4byte 0x8032B7C4
-	.4byte 0x8032B7C8
-	.4byte 0x8032B7CC
-	.4byte 0x8032B7D0
-	.4byte 0x8032B7D4
-	.4byte 0x8032B7D8
-	.4byte 0x8032B7DC
-	.4byte 0x8032B7E0
-	.4byte 0x8032B7E4
-	.4byte 0x8032B7E8
+	.byte4 __dt__Q53scn4step4hero4wing4WingFv
+	.byte4 setup__Q53scn4step4hero4wing4WingFv
+	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnInterval__Q53scn4step4hero4wing4WingFv
+	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeState__Q53scn4step4hero4wing4WingFv
+	.byte4 onStateEndCleanUp__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procAnim__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249532
@@ -643,7 +643,7 @@ $$249532:
 	.balign 4
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc4WingFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc4WingFv$$2names$$21:
-	.4byte 0x8055B310
+	.byte4 $$249532
 .global $$249870
 $$249870:
 	.asciz "LBDJ"

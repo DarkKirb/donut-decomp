@@ -963,7 +963,7 @@ mode__Q43scn4step4hero6NururiFv:
 __vt__Q26nururi6Nururi:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801D3510  ;# ptr
+	.byte4 __dt__Q26nururi6NururiFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

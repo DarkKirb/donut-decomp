@@ -673,9 +673,9 @@ lbl_803D8FF0:
 __vt__Q43scn4step4boss9SuperStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802346A8  ;# ptr
-	.4byte 0x80234728  ;# ptr
-	.4byte 0x80234770  ;# ptr
+	.byte4 __dt__Q43scn4step4boss9SuperStopFv
+	.byte4 onSuperStopStarted__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
+	.byte4 onSuperStopFinished__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -683,9 +683,9 @@ __vt__Q43scn4step4boss9SuperStop:
 __vt__Q43scn4step5enemy9SuperStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028DFAC  ;# ptr
-	.4byte 0x8028E080  ;# ptr
-	.4byte 0x8028E08C  ;# ptr
+	.byte4 __dt__Q43scn4step5enemy9SuperStopFv
+	.byte4 onSuperStopStarted__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
+	.byte4 onSuperStopFinished__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -693,9 +693,9 @@ __vt__Q43scn4step5enemy9SuperStop:
 __vt__Q43scn4step7gimmick9SuperStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F7A24
-	.4byte 0x802F7B68
-	.4byte 0x802F7B74
+	.byte4 __dt__Q43scn4step7gimmick9SuperStopFv
+	.byte4 onSuperStopStarted__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
+	.byte4 onSuperStopFinished__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -703,9 +703,9 @@ __vt__Q43scn4step7gimmick9SuperStop:
 __vt__Q43scn4step4item9SuperStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C530C
-	.4byte 0x803C538C
-	.4byte 0x803C53E8
+	.byte4 __dt__Q43scn4step4item9SuperStopFv
+	.byte4 onSuperStopStarted__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
+	.byte4 onSuperStopFinished__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -713,7 +713,7 @@ __vt__Q43scn4step4item9SuperStop:
 __vt__Q43scn4step6weapon9SuperStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D8E80
-	.4byte 0x803D8F60
-	.4byte 0x803D8FBC
+	.byte4 __dt__Q43scn4step6weapon9SuperStopFv
+	.byte4 onSuperStopStarted__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
+	.byte4 onSuperStopFinished__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0

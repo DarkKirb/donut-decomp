@@ -133,11 +133,11 @@ GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv:
 __vt__Q23seq19SequenceStaffCredit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FFDA8
-	.4byte 0x803FFCD4
-	.4byte 0x803FFCD8
-	.4byte 0x803FFD08
-	.4byte 0x803FFD0C
-	.4byte 0x803FFD10
-	.4byte 0x803FFD90
+	.byte4 GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv
+	.byte4 __dt__Q23seq19SequenceStaffCreditFv
+	.byte4 nextAction__Q23seq19SequenceStaffCreditCFv
+	.byte4 createChildSequence__Q23seq19SequenceStaffCreditCFv
+	.byte4 onChildSequenceEnd__Q23seq19SequenceStaffCreditFRQ23seq9ISequence
+	.byte4 createScene__Q23seq19SequenceStaffCreditCFv
+	.byte4 onSceneEnd__Q23seq19SequenceStaffCreditFRQ23scn6IScene
 	.4byte 0

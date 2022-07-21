@@ -247,7 +247,7 @@ __sinit_$$3snd_SoundSystem_cpp:
 /* 80114CDC 00110B1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80114C90  ;# ptr
+	.byte4 __sinit_$$3snd_SoundSystem_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$24759
@@ -258,7 +258,7 @@ $$24759:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_SND_Version_
 NW4R_SND_Version_:
-	.4byte 0x804424E0
+	.byte4 $$24759
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

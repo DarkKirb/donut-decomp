@@ -251,23 +251,23 @@ __dt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14Stat
 __vt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A28FC
-	.4byte 0x803A28BC
+	.byte4 __dt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1Fv
+	.byte4 create__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1Fv
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash20StateSmashKickCharge$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash20StateSmashKickCharge$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A28F8
-	.4byte 0x803A28DC
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash20StateSmashKickCharge$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash20StateSmashKickCharge$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero5smash20StateSmashKickCharge
 __vt__Q53scn4step4hero5smash20StateSmashKickCharge:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A2720
-	.4byte 0x803A27B0
-	.4byte 0x803A28B4
-	.4byte 0x8035550C
-	.4byte 0x803A28B8
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5smash20StateSmashKickChargeFv
+	.byte4 procAnim__Q53scn4step4hero5smash20StateSmashKickChargeFv
+	.byte4 procMove__Q53scn4step4hero5smash20StateSmashKickChargeFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5smash20StateSmashKickChargeFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

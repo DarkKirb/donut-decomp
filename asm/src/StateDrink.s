@@ -500,31 +500,31 @@ __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11Stat
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateMixPre$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80362808
-	.4byte 0x803627AC
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateMixPre$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateMixPre$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80362804
-	.4byte 0x803627C8
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateDrink$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateDrink$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80362800
-	.4byte 0x803627E4
+	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateDrink$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateDrink$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero6common10StateDrink
 __vt__Q53scn4step4hero6common10StateDrink:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803624EC
-	.4byte 0x803625C0
-	.4byte 0x80362740
-	.4byte 0x8035550C
-	.4byte 0x80362744
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common10StateDrinkFv
+	.byte4 procAnim__Q53scn4step4hero6common10StateDrinkFv
+	.byte4 procMove__Q53scn4step4hero6common10StateDrinkFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common10StateDrinkFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -1194,56 +1194,56 @@ lbl_80344FD4:
 /* 80344FE4 00340E24  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80313D40
+	.byte4 __sinit_$$3Mahoroa_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.4byte 0x8055A7B4
+	.byte4 $$255205
 	.4byte 0
-	.4byte 0x8055A7BC
+	.byte4 $$255206
 	.4byte 0
-	.4byte 0x8055A7C4
+	.byte4 $$255207
 	.4byte 0
-	.4byte 0x804815B8
+	.byte4 $$255208
 	.4byte 0
-	.4byte 0x804815C8
+	.byte4 $$255209
 	.4byte 0
-	.4byte 0x804815D4
+	.byte4 $$255210
 	.4byte 0
-	.4byte 0x804815E0
+	.byte4 $$255211
 	.4byte 0
-	.4byte 0x804815F0
+	.byte4 $$255212
 	.4byte 0
-	.4byte 0x804815FC
+	.byte4 $$255213
 	.4byte 0
-	.4byte 0x8048160C
+	.byte4 $$255214
 	.4byte 0
-	.4byte 0x8048161C
+	.byte4 $$255215
 	.4byte 0
-	.4byte 0x80481630
+	.byte4 $$255216
 	.4byte 0
-	.4byte 0x8055A7CC
+	.byte4 $$255217
 	.4byte 0
-	.4byte 0x8048163C
+	.byte4 $$255218
 	.4byte 0
-	.4byte 0x8055A7D4
+	.byte4 $$255219
 	.4byte 0
-	.4byte 0x8055A7DC
+	.byte4 $$255220
 	.4byte 0
-	.4byte 0x8055A7E4
+	.byte4 $$255221
 	.4byte 0
-	.4byte 0x8055A7EC
+	.byte4 $$255222
 	.4byte 0
-	.4byte 0x8055A7F4
+	.byte4 $$255223
 	.4byte 0
-	.4byte 0x8055A7FC
+	.byte4 $$255224
 	.4byte 0
-	.4byte 0x8055A804
+	.byte4 $$255225
 	.4byte 0
-	.4byte 0x8055A80C
+	.byte4 $$255226
 	.4byte 0
-	.4byte 0x8055A814
+	.byte4 $$255227
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -1341,7 +1341,7 @@ $$255233:
 	.balign 4
 .global T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.4byte 0x80481648
+	.byte4 $$255229
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1356,12 +1356,12 @@ T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0
-	.4byte 0x80481668
+	.byte4 $$255230
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8048168C
+	.byte4 $$255231
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1371,12 +1371,12 @@ T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0
-	.4byte 0x804816B4
+	.byte4 $$255232
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804816DC
+	.byte4 $$255233
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1453,7 +1453,7 @@ $$255203:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_NODE_NAMES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.4byte 0x8055A7A8
+	.byte4 $$255203
 .global $$255205
 $$255205:
 	.asciz "Wait"

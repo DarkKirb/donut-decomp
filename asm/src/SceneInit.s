@@ -647,13 +647,13 @@ $$253298:
 __vt__Q33scn4init9SceneInit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8021C058  ;# ptr
-	.4byte 0x8021B9E0  ;# ptr
-	.4byte 0x8021BA98  ;# ptr
-	.4byte 0x8021BA94  ;# ptr
-	.4byte 0x8021BFBC  ;# ptr
-	.4byte 0x8021BFC0  ;# ptr
-	.4byte 0x8021C004  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn4init9SceneInitCFv
+	.byte4 __dt__Q33scn4init9SceneInitFv
+	.byte4 updateMain__Q33scn4init9SceneInitFv
+	.byte4 updateUseGPU__Q33scn4init9SceneInitFv
+	.byte4 updateDebug__Q33scn4init9SceneInitFv
+	.byte4 draw__Q33scn4init9SceneInitFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn4init9SceneInitCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

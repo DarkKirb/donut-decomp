@@ -170,7 +170,7 @@ __dt__Q44nw4r3snd6detail11BasicPlayerFv:
 __vt__Q44nw4r3snd6detail11BasicPlayer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801054A0  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail11BasicPlayerFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

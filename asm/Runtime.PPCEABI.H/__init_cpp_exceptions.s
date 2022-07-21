@@ -40,15 +40,15 @@ lbl_80007A5C:
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
 .global __init_cpp_exceptions_reference
 __init_cpp_exceptions_reference:
-	.4byte 0x800079FC  ;# ptr
+	.byte4 __init_cpp_exceptions
 
 .section .dtors, "wa"  # 0x80406540 - 0x80406560
 .global __destroy_global_chain_reference
 __destroy_global_chain_reference:
-	.4byte 0x80006B88  ;# ptr
+	.byte4 __destroy_global_chain
 .global __fini_cpp_exceptions_reference
 __fini_cpp_exceptions_reference:
-	.4byte 0x80007A38  ;# ptr
+	.byte4 __fini_cpp_exceptions
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global fragmentID

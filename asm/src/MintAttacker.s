@@ -23,7 +23,7 @@ __sinit_$$3MintAttacker_cpp:
 /* 803D30B8 003CEEF8  4B D0 A3 28 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x803D30B4
+	.byte4 __sinit_$$3MintAttacker_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step6vacuum26$$2unnamed$$2MintAttacker_cpp$$2

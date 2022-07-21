@@ -260,5 +260,5 @@ $$252478:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_FILE_TABLE__Q23app26$$2unnamed$$2ResidentFile_cpp$$2
 T_FILE_TABLE__Q23app26$$2unnamed$$2ResidentFile_cpp$$2:
-	.4byte 0x80453020
+	.byte4 $$251961
 	.4byte 0

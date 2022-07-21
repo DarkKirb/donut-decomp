@@ -4201,25 +4201,25 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common21St
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common21StateMasterSummonWait$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80288210  ;# ptr
-	.4byte 0x802881B4  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common21StateMasterSummonWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common21StateMasterSummonWait$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028820C  ;# ptr
-	.4byte 0x802881D0  ;# ptr
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common22StateRoomGuarderAppear$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common22StateRoomGuarderAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80288208  ;# ptr
-	.4byte 0x802881EC  ;# ptr
+	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common22StateRoomGuarderAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common22StateRoomGuarderAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1
 __vt__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80286DF4  ;# ptr
+	.byte4 __dt__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1Fv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

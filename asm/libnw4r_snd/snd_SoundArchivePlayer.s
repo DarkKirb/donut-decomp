@@ -2991,28 +2991,28 @@ $$212$$2__dt__Q34nw4r3snd18SoundArchivePlayerFv:
 __vt__Q34nw4r3snd18SoundArchivePlayer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80111500  ;# ptr
-	.4byte 0x801137F0  ;# ptr
-	.4byte 0x801138A0  ;# ptr
+	.byte4 __dt__Q34nw4r3snd18SoundArchivePlayerFv
+	.byte4 InvalidateData__Q34nw4r3snd18SoundArchivePlayerFPCvPCv
+	.byte4 InvalidateWaveData__Q34nw4r3snd18SoundArchivePlayerFPCvPCv
 	.4byte 0
 	.4byte 0
-	.4byte 0x80113BA0  ;# ptr
-	.4byte 0x80113B90  ;# ptr
-	.4byte 0x80113B80  ;# ptr
-	.4byte 0x8010F690  ;# ptr
-	.4byte 0x801125C0  ;# ptr
+	.byte4 $$212$$2__dt__Q34nw4r3snd18SoundArchivePlayerFv
+	.byte4 $$212$$2detail_SetupSound__Q34nw4r3snd18SoundArchivePlayerFPQ34nw4r3snd11SoundHandleUlbPCQ44nw4r3snd14SoundStartable9StartInfo
+	.byte4 $$212$$2detail_ConvertLabelStringToSoundId__Q34nw4r3snd18SoundArchivePlayerFPCc
+	.byte4 detail_ConvertLabelStringToSoundId__Q34nw4r3snd18SoundArchivePlayerFPCc
+	.byte4 detail_SetupSound__Q34nw4r3snd18SoundArchivePlayerFPQ34nw4r3snd11SoundHandleUlbPCQ44nw4r3snd14SoundStartable9StartInfo
 .global __vt__Q44nw4r3snd18SoundArchivePlayer11WsdCallback
 __vt__Q44nw4r3snd18SoundArchivePlayer11WsdCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80111490  ;# ptr
-	.4byte 0x80113A80  ;# ptr
+	.byte4 __dt__Q44nw4r3snd18SoundArchivePlayer11WsdCallbackFv
+	.byte4 GetWaveSoundData__Q44nw4r3snd18SoundArchivePlayer11WsdCallbackCFPQ44nw4r3snd6detail13WaveSoundInfoPQ44nw4r3snd6detail17WaveSoundNoteInfoPQ44nw4r3snd6detail8WaveInfoPCviiUl
 .global __vt__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallback
 __vt__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80111480  ;# ptr
-	.4byte 0x80113950  ;# ptr
+	.byte4 __dt__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallbackFv
+	.byte4 NoteOn__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallbackFPQ44nw4r3snd6detail9SeqPlayeriRCQ44nw4r3snd6detail10NoteOnInfo
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$218172

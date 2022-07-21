@@ -250,27 +250,27 @@ onScriptExecPost__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6Script:
 __vt__Q43scn4step4boss14ScriptCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80233FE4  ;# ptr
-	.4byte 0x80234060  ;# ptr
-	.4byte 0x802340B0  ;# ptr
-	.4byte 0x802340B8  ;# ptr
+	.byte4 __dt__Q43scn4step4boss14ScriptCallbackFv
+	.byte4 onScriptRequested__Q43scn4step4boss14ScriptCallbackFRCQ24gobj6ScriptUlUl
+	.byte4 onScriptExecPre__Q43scn4step4boss14ScriptCallbackFRCQ24gobj6Script
+	.byte4 onScriptExecPost__Q43scn4step4boss14ScriptCallbackFRCQ24gobj6Script
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy14ScriptCallback
 __vt__Q43scn4step5enemy14ScriptCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028DA5C  ;# ptr
-	.4byte 0x8028DAD8  ;# ptr
-	.4byte 0x8028DB04  ;# ptr
-	.4byte 0x8028DB10  ;# ptr
+	.byte4 __dt__Q43scn4step5enemy14ScriptCallbackFv
+	.byte4 onScriptRequested__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6ScriptUlUl
+	.byte4 onScriptExecPre__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script
+	.byte4 onScriptExecPost__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon14ScriptCallback
 __vt__Q43scn4step6weapon14ScriptCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D88B8
-	.4byte 0x803D8934
-	.4byte 0x803D8938
-	.4byte 0x803D893C
+	.byte4 __dt__Q43scn4step6weapon14ScriptCallbackFv
+	.byte4 onScriptRequested__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6ScriptUlUl
+	.byte4 onScriptExecPre__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6Script
+	.byte4 onScriptExecPost__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6Script

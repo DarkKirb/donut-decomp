@@ -1820,81 +1820,81 @@ $$2871:
 	.4byte 0
 .global NameAndIDTbl
 NameAndIDTbl:
-	.4byte 0x8055667C
+	.byte4 $$2835
 	.4byte 0
-	.4byte 0x80556684
+	.byte4 $$2836
 	.4byte 0x00000001
-	.4byte 0x80556690
+	.byte4 $$2837
 	.4byte 0x00000002
-	.4byte 0x80556698
+	.byte4 $$2838
 	.4byte 0x00000003
-	.4byte 0x805566A0
+	.byte4 $$2839
 	.4byte 0x00000004
-	.4byte 0x805566A8
+	.byte4 $$2840
 	.4byte 0x00000005
-	.4byte 0x805566B0
+	.byte4 $$2841
 	.4byte 0x00000006
-	.4byte 0x80438240
+	.byte4 $$2842
 	.4byte 0x00000007
-	.4byte 0x805566B8
+	.byte4 $$2843
 	.4byte 0x00000008
-	.4byte 0x805566C0
+	.byte4 $$2844
 	.4byte 0x00000009
-	.4byte 0x805566C8
+	.byte4 $$2845
 	.4byte 0x0000000A
-	.4byte 0x805566D0
+	.byte4 $$2846
 	.4byte 0x0000000B
-	.4byte 0x805566D8
+	.byte4 $$2847
 	.4byte 0x0000000C
-	.4byte 0x805566E0
+	.byte4 $$2848
 	.4byte 0x0000000D
-	.4byte 0x805566E8
+	.byte4 $$2849
 	.4byte 0x0000000E
-	.4byte 0x805566F0
+	.byte4 $$2850
 	.4byte 0x0000000F
-	.4byte 0x8043824C
+	.byte4 $$2851
 	.4byte 0x00000010
-	.4byte 0x805566F8
+	.byte4 $$2852
 	.4byte 0x00000011
-	.4byte 0x80556700
+	.byte4 $$2853
 	.4byte 0x00000012
-	.4byte 0x80556708
+	.byte4 $$2854
 	.4byte 0x00000013
-	.4byte 0x80438258
+	.byte4 $$2855
 	.4byte 0x00000014
-	.4byte 0x80438264
+	.byte4 $$2856
 	.4byte 0x00000015
-	.4byte 0x80438270
+	.byte4 $$2857
 	.4byte 0x00000016
-	.4byte 0x8043827C
+	.byte4 $$2858
 	.4byte 0x00000017
-	.4byte 0x80556710
+	.byte4 $$2859
 	.4byte 0x00000018
-	.4byte 0x80556718
+	.byte4 $$2860
 	.4byte 0x00000019
-	.4byte 0x80556720
+	.byte4 $$2861
 	.4byte 0x0000001A
-	.4byte 0x80556728
+	.byte4 $$2862
 	.4byte 0x0000001B
-	.4byte 0x80556730
+	.byte4 $$2863
 	.4byte 0x0000001C
-	.4byte 0x80556738
+	.byte4 $$2864
 	.4byte 0x0000001D
-	.4byte 0x80556740
+	.byte4 $$2865
 	.4byte 0x0000001E
-	.4byte 0x80556748
+	.byte4 $$2866
 	.4byte 0x0000001F
-	.4byte 0x80556750
+	.byte4 $$2867
 	.4byte 0x00000020
-	.4byte 0x80556758
+	.byte4 $$2868
 	.4byte 0x00000021
-	.4byte 0x80556760
+	.byte4 $$2869
 	.4byte 0x00000022
-	.4byte 0x80556768
+	.byte4 $$2870
 	.4byte 0x00000023
-	.4byte 0x80438288
+	.byte4 $$2871
 	.4byte 0x00000024
-	.4byte 0x80556770
+	.byte4 $$2872
 	.4byte 0x00000025
 .global $$22788
 $$22788:
@@ -1912,7 +1912,7 @@ $$22788:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __SCVersion
 __SCVersion:
-	.4byte 0x804381F8
+	.byte4 $$21
 .global $$2835
 $$2835:
 	.asciz "IPL.CB"

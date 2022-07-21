@@ -32,9 +32,9 @@ __dt__Q53scn4step5enemy6common18BrainWalkTurnCliffFv:
 __vt__Q53scn4step5enemy6common18BrainWalkTurnCliff:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80291748  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x80291744  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common18BrainWalkTurnCliffFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy6common18BrainWalkTurnCliffFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

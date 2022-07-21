@@ -1028,7 +1028,7 @@ $$253377:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2
 T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2:
-	.4byte 0x80452EE0
+	.byte4 $$251882
 .global $$253132
 $$253132:
 	.asciz "%s%s%s"

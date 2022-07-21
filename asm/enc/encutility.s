@@ -183,7 +183,7 @@ $$2669:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __ENCVersion
 __ENCVersion:
-	.4byte 0x80438450
+	.byte4 $$2669
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -1181,82 +1181,82 @@ TYPE_NAME__Q34nw4r3g3d15AnmObjTexPatRes:
 __vt__Q34nw4r3g3d15AnmObjTexPatRes:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D6D50  ;# ptr
-	.4byte 0x800D6B40  ;# ptr
-	.4byte 0x800D6E30  ;# ptr
-	.4byte 0x800D6E20  ;# ptr
-	.4byte 0x800D6E10  ;# ptr
-	.4byte 0x800D6740  ;# ptr
-	.4byte 0x800D6800  ;# ptr
-	.4byte 0x800D68E0  ;# ptr
-	.4byte 0x800D6810  ;# ptr
-	.4byte 0x800D68D0  ;# ptr
-	.4byte 0x800D69C0  ;# ptr
-	.4byte 0x800D6140  ;# ptr
-	.4byte 0x800D6AC0  ;# ptr
-	.4byte 0x800D6150  ;# ptr
-	.4byte 0x800D6160  ;# ptr
-	.4byte 0x800D6170  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d15AnmObjTexPatResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d15AnmObjTexPatResFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d15AnmObjTexPatResFv
+	.byte4 GetTypeObj__Q34nw4r3g3d15AnmObjTexPatResCFv
+	.byte4 GetTypeName__Q34nw4r3g3d15AnmObjTexPatResCFv
+	.byte4 SetFrame__Q34nw4r3g3d15AnmObjTexPatResFf
+	.byte4 GetFrame__Q34nw4r3g3d15AnmObjTexPatResCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d15AnmObjTexPatResFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d15AnmObjTexPatResFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d15AnmObjTexPatResCFv
+	.byte4 Bind__Q34nw4r3g3d15AnmObjTexPatResFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d12AnmObjTexPatFv
+	.byte4 GetResult__Q34nw4r3g3d15AnmObjTexPatResFPQ34nw4r3g3d15TexPatAnmResultUl
+	.byte4 Attach__Q34nw4r3g3d12AnmObjTexPatFiPQ34nw4r3g3d15AnmObjTexPatRes
+	.byte4 Detach__Q34nw4r3g3d12AnmObjTexPatFi
+	.byte4 DetachAll__Q34nw4r3g3d12AnmObjTexPatFv
 .global __vt__Q34nw4r3g3d20AnmObjTexPatOverride
 __vt__Q34nw4r3g3d20AnmObjTexPatOverride:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D6E40  ;# ptr
-	.4byte 0x800D6340  ;# ptr
-	.4byte 0x800D6F50  ;# ptr
-	.4byte 0x800D6F40  ;# ptr
-	.4byte 0x800D6F30  ;# ptr
-	.4byte 0x800D6240  ;# ptr
-	.4byte 0x800D6250  ;# ptr
-	.4byte 0x800D6230  ;# ptr
-	.4byte 0x800D62B0  ;# ptr
-	.4byte 0x800D62C0  ;# ptr
-	.4byte 0x800D6320  ;# ptr
-	.4byte 0x800D6330  ;# ptr
-	.4byte 0x800D6490  ;# ptr
-	.4byte 0x800D6200  ;# ptr
-	.4byte 0x800D6210  ;# ptr
-	.4byte 0x800D6220  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d20AnmObjTexPatOverrideCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d16AnmObjTexPatNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d20AnmObjTexPatOverrideFv
+	.byte4 GetTypeObj__Q34nw4r3g3d20AnmObjTexPatOverrideCFv
+	.byte4 GetTypeName__Q34nw4r3g3d20AnmObjTexPatOverrideCFv
+	.byte4 SetFrame__Q34nw4r3g3d16AnmObjTexPatNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d16AnmObjTexPatNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d16AnmObjTexPatNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 Bind__Q34nw4r3g3d16AnmObjTexPatNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d16AnmObjTexPatNodeFv
+	.byte4 GetResult__Q34nw4r3g3d20AnmObjTexPatOverrideFPQ34nw4r3g3d15TexPatAnmResultUl
+	.byte4 Attach__Q34nw4r3g3d16AnmObjTexPatNodeFiPQ34nw4r3g3d15AnmObjTexPatRes
+	.byte4 Detach__Q34nw4r3g3d16AnmObjTexPatNodeFi
+	.byte4 DetachAll__Q34nw4r3g3d16AnmObjTexPatNodeFv
 .global __vt__Q34nw4r3g3d16AnmObjTexPatNode
 __vt__Q34nw4r3g3d16AnmObjTexPatNode:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D6EC0  ;# ptr
-	.4byte 0x800D6340  ;# ptr
-	.4byte 0x800D6190  ;# ptr
-	.4byte 0x800D6FD0  ;# ptr
-	.4byte 0x800D6FC0  ;# ptr
-	.4byte 0x800D6240  ;# ptr
-	.4byte 0x800D6250  ;# ptr
-	.4byte 0x800D6230  ;# ptr
-	.4byte 0x800D62B0  ;# ptr
-	.4byte 0x800D62C0  ;# ptr
-	.4byte 0x800D6320  ;# ptr
-	.4byte 0x800D6330  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d16AnmObjTexPatNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d16AnmObjTexPatNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d16AnmObjTexPatNodeFv
+	.byte4 GetTypeObj__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 GetTypeName__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 SetFrame__Q34nw4r3g3d16AnmObjTexPatNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d16AnmObjTexPatNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d16AnmObjTexPatNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d16AnmObjTexPatNodeCFv
+	.byte4 Bind__Q34nw4r3g3d16AnmObjTexPatNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d16AnmObjTexPatNodeFv
 	.4byte 0
-	.4byte 0x800D6200  ;# ptr
-	.4byte 0x800D6210  ;# ptr
-	.4byte 0x800D6220  ;# ptr
+	.byte4 Attach__Q34nw4r3g3d16AnmObjTexPatNodeFiPQ34nw4r3g3d15AnmObjTexPatRes
+	.byte4 Detach__Q34nw4r3g3d16AnmObjTexPatNodeFi
+	.byte4 DetachAll__Q34nw4r3g3d16AnmObjTexPatNodeFv
 .global __vt__Q34nw4r3g3d12AnmObjTexPat
 __vt__Q34nw4r3g3d12AnmObjTexPat:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D6DC0  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d12AnmObjTexPatCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.4byte 0x800D6180  ;# ptr
-	.4byte 0x800D6FF0  ;# ptr
-	.4byte 0x800D6FE0  ;# ptr
-	.4byte 0
-	.4byte 0
+	.byte4 __dt__Q34nw4r3g3d12AnmObjTexPatFv
+	.byte4 GetTypeObj__Q34nw4r3g3d12AnmObjTexPatCFv
+	.byte4 GetTypeName__Q34nw4r3g3d12AnmObjTexPatCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D6140  ;# ptr
 	.4byte 0
-	.4byte 0x800D6150  ;# ptr
-	.4byte 0x800D6160  ;# ptr
-	.4byte 0x800D6170  ;# ptr
+	.4byte 0
+	.byte4 Release__Q34nw4r3g3d12AnmObjTexPatFv
+	.4byte 0
+	.byte4 Attach__Q34nw4r3g3d12AnmObjTexPatFiPQ34nw4r3g3d15AnmObjTexPatRes
+	.byte4 Detach__Q34nw4r3g3d12AnmObjTexPatFi
+	.byte4 DetachAll__Q34nw4r3g3d12AnmObjTexPatFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210745

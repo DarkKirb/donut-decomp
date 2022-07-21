@@ -466,5 +466,5 @@ getCollidedHitOwnerUid__Q25ocoll9SearchHitCFUl:
 __vt__Q25ocoll9SearchHit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801D8FCC  ;# ptr
+	.byte4 __dt__Q25ocoll9SearchHitFv
 	.4byte 0

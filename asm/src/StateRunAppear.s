@@ -265,24 +265,24 @@ __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9St
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StatePick$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249BF4  ;# ptr
-	.4byte 0x80249BB8  ;# ptr
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StatePick$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee9StatePick$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee14StateRunAppear$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee14StateRunAppear$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249BF0  ;# ptr
-	.4byte 0x80249BD4  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee14StateRunAppear$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee14StateRunAppear$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss9creditdee14StateRunAppear
 __vt__Q53scn4step4boss9creditdee14StateRunAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249A48  ;# ptr
-	.4byte 0x80249A4C  ;# ptr
-	.4byte 0x80249A50  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80249ABC  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9creditdee14StateRunAppearFv
+	.byte4 procAnim__Q53scn4step4boss9creditdee14StateRunAppearFv
+	.byte4 procMove__Q53scn4step4boss9creditdee14StateRunAppearFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9creditdee14StateRunAppearFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255551

@@ -122,7 +122,7 @@ $$252260:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2:
-	.4byte 0x80460690
+	.byte4 $$251790
 .global $$252259
 $$252259:
 	.asciz "TopL"

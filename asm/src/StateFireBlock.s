@@ -426,13 +426,13 @@ lbl_8037662C:
 __vt__Q53scn4step4hero6damage14StateFireBlock:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80376258
-	.4byte 0x80376314
-	.4byte 0x803764A0
-	.4byte 0x8035550C
-	.4byte 0x80376508
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6damage14StateFireBlockFv
+	.byte4 procAnim__Q53scn4step4hero6damage14StateFireBlockFv
+	.byte4 procMove__Q53scn4step4hero6damage14StateFireBlockFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6damage14StateFireBlockFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

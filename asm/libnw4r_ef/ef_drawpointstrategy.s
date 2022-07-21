@@ -312,10 +312,10 @@ __dt__Q34nw4r2ef17DrawPointStrategyFv:
 __vt__Q34nw4r2ef17DrawPointStrategy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800C03C0  ;# ptr
-	.4byte 0x800BFFA0  ;# ptr
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
+	.byte4 __dt__Q34nw4r2ef17DrawPointStrategyFv
+	.byte4 Draw__Q34nw4r2ef17DrawPointStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$211451

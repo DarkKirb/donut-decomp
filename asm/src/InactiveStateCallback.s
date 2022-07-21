@@ -18,5 +18,5 @@ onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger
 __vt__Q43scn4step4hero21InactiveStateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803412A8
-	.4byte 0x803418A0
+	.byte4 __dt__Q43scn4step4hero21InactiveStateCallbackFv
+	.byte4 onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger

@@ -216,12 +216,12 @@ SOUND_TABLE__36$$2unnamed$$2VacuumAttackerCallback_cpp$$2:
 __vt__Q43scn4step4hero22VacuumAttackerCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80358918
-	.4byte 0x80358974
-	.4byte 0x80358A80
-	.4byte 0x80358AE0
-	.4byte 0x80358B2C
-	.4byte 0x80358B64
+	.byte4 __dt__Q43scn4step4hero22VacuumAttackerCallbackFv
+	.byte4 onEndIndivi__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8Attacker
+	.byte4 onDecCount__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8Attacker
+	.byte4 onHoldShake__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8Attacker
+	.byte4 onReceivedMighty__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 onReceivedCure__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8AttackerUl
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256925

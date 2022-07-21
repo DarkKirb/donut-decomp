@@ -1169,60 +1169,60 @@ __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv:
 __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80246E98  ;# ptr
-	.4byte 0x80246E78  ;# ptr
+	.byte4 __dt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1Fv
+	.byte4 create__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1Fv
 .global __vt__Q53scn4step4boss6common15StateJumpAttack
 __vt__Q53scn4step4boss6common15StateJumpAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80246C88  ;# ptr
-	.4byte 0x80246C8C  ;# ptr
-	.4byte 0x80246CF8  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80246D40  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6common15StateJumpAttackFv
+	.byte4 procAnim__Q53scn4step4boss6common15StateJumpAttackFv
+	.byte4 procMove__Q53scn4step4boss6common15StateJumpAttackFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6common15StateJumpAttackFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80261E0C  ;# ptr
-	.4byte 0x80261E08  ;# ptr
+	.byte4 __dt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1Fv
+	.byte4 create__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1Fv
 .global __vt__Q53scn4step4boss9zankibble15StateJumpAttack
 __vt__Q53scn4step4boss9zankibble15StateJumpAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802619A4  ;# ptr
-	.4byte 0x802619A8  ;# ptr
-	.4byte 0x80261A14  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80261BDC  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.byte4 procAnim__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.byte4 procMove__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9sirkibble15StateJumpAttack
 __vt__Q53scn4step5enemy9sirkibble15StateJumpAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E1E84  ;# ptr
-	.4byte 0x802E1E88  ;# ptr
-	.4byte 0x802E1FC4  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802E2038  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9sirkibble15StateJumpAttackFv
+	.byte4 procAnim__Q53scn4step5enemy9sirkibble15StateJumpAttackFv
+	.byte4 procMove__Q53scn4step5enemy9sirkibble15StateJumpAttackFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy9sirkibble15StateJumpAttackFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage15StateJumpAttack
 __vt__Q53scn4step5enemy9tsukikage15StateJumpAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EBF7C  ;# ptr
-	.4byte 0x802EBAC4  ;# ptr
-	.4byte 0x802EBD38  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802EBE24  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.byte4 procAnim__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.byte4 procMove__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256369

@@ -201,5 +201,5 @@ lbl_8019A88C:
 __vt__Q24gobj9GearModel:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8019A750  ;# ptr
-	.4byte 0x8019A7C8  ;# ptr
+	.byte4 __dt__Q24gobj9GearModelFv
+	.byte4 g3dModel__Q24gobj9GearModelFv

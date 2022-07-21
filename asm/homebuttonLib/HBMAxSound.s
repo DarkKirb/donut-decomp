@@ -947,34 +947,34 @@ $$26802:
 	.balign 4
 .global $$2LOCAL$$2GetMidiDataFromArc__24$$2unnamed$$2HBMAxSound_cpp$$2Fi$$2SOUND_FILENAME
 $$2LOCAL$$2GetMidiDataFromArc__24$$2unnamed$$2HBMAxSound_cpp$$2Fi$$2SOUND_FILENAME:
-	.4byte 0x80442CC8
-	.4byte 0x80442CE0
-	.4byte 0x80442CF8
-	.4byte 0x80442D10
-	.4byte 0x80442D28
-	.4byte 0x80442D3C
-	.4byte 0x80442D50
-	.4byte 0x80442D64
-	.4byte 0x80442D80
-	.4byte 0x80442DA0
-	.4byte 0x80442DB8
-	.4byte 0x80442DD4
-	.4byte 0x80442DF4
-	.4byte 0x80442E14
-	.4byte 0x80442E30
-	.4byte 0x80442E44
-	.4byte 0x80442E5C
-	.4byte 0x80442E80
-	.4byte 0x80442E98
-	.4byte 0x80442EB0
-	.4byte 0x80442EC8
-	.4byte 0x80442EE0
-	.4byte 0x80442F00
-	.4byte 0x80442F18
-	.4byte 0x80442F34
-	.4byte 0x80442F50
-	.4byte 0x80442F6C
-	.4byte 0x80442F88
+	.byte4 $$26775
+	.byte4 $$26776
+	.byte4 $$26777
+	.byte4 $$26778
+	.byte4 $$26779
+	.byte4 $$26780
+	.byte4 $$26781
+	.byte4 $$26782
+	.byte4 $$26783
+	.byte4 $$26784
+	.byte4 $$26785
+	.byte4 $$26786
+	.byte4 $$26787
+	.byte4 $$26788
+	.byte4 $$26789
+	.byte4 $$26790
+	.byte4 $$26791
+	.byte4 $$26792
+	.byte4 $$26793
+	.byte4 $$26794
+	.byte4 $$26795
+	.byte4 $$26796
+	.byte4 $$26797
+	.byte4 $$26798
+	.byte4 $$26799
+	.byte4 $$26800
+	.byte4 $$26801
+	.byte4 $$26802
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sWork__24$$2unnamed$$2HBMAxSound_cpp$$2

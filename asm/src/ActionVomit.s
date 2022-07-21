@@ -336,21 +336,21 @@ $$252932:
 __vt__Q53scn4step7gimmick10guideboard11ActionVomit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80311954
-	.4byte 0x8031195C
-	.4byte 0x80311960
-	.4byte 0x803119B0
-	.4byte 0x80311A24
-	.4byte 0x80311AAC
-	.4byte 0x80311C20
-	.4byte 0x80310568
-	.4byte 0x80310564
-	.4byte 0x80310560
-	.4byte 0x8031055C
-	.4byte 0x80310558
-	.4byte 0x80310554
-	.4byte 0x80310550
-	.4byte 0x80310574
+	.byte4 topLName__Q53scn4step7gimmick10guideboard11ActionVomitCFv
+	.byte4 isInitState__Q53scn4step7gimmick10guideboard11ActionVomitCFv
+	.byte4 reset__Q53scn4step7gimmick10guideboard11ActionVomitFb
+	.byte4 updateFrame__Q53scn4step7gimmick10guideboard11ActionVomitFv
+	.byte4 onFrameEnd__Q53scn4step7gimmick10guideboard11ActionVomitFv
+	.byte4 onEat__Q53scn4step7gimmick10guideboard11ActionVomitFRCQ33hel4math7Vector3
+	.byte4 onVomit__Q53scn4step7gimmick10guideboard11ActionVomitFRCQ33hel4math7Vector3
+	.byte4 onDrink__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onRun__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onHover__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onAbilityGet__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onAbilityClear__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onVacuumSuper__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onThroughLand__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.byte4 onAttack__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

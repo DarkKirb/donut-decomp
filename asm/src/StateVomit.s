@@ -506,41 +506,41 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10Stat
 __vt__Q53scn4step4boss13watergalboros10StateVomit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025AB88  ;# ptr
-	.4byte 0x8025AB8C  ;# ptr
-	.4byte 0x8025ACD0  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025ACD4  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss13watergalboros10StateVomitFv
+	.byte4 procAnim__Q53scn4step4boss13watergalboros10StateVomitFv
+	.byte4 procMove__Q53scn4step4boss13watergalboros10StateVomitFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss13watergalboros10StateVomitFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy10StateVomit
 __vt__Q53scn4step4boss6whispy10StateVomit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025EFF0  ;# ptr
-	.4byte 0x8025EFF4  ;# ptr
-	.4byte 0x8025F0D8  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025F0DC  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy10StateVomitFv
+	.byte4 procAnim__Q53scn4step4boss6whispy10StateVomitFv
+	.byte4 procMove__Q53scn4step4boss6whispy10StateVomitFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy10StateVomitFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036D944
-	.4byte 0x8036D928
+	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero6common10StateVomit
 __vt__Q53scn4step4hero6common10StateVomit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036D7C8
-	.4byte 0x8036D858
-	.4byte 0x8036D920
-	.4byte 0x8035550C
-	.4byte 0x8036D924
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common10StateVomitFv
+	.byte4 procAnim__Q53scn4step4hero6common10StateVomitFv
+	.byte4 procMove__Q53scn4step4hero6common10StateVomitFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common10StateVomitFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

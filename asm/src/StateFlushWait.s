@@ -113,18 +113,18 @@ __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common10Sta
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common10StateFlush$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80292074  ;# ptr
-	.4byte 0x80292054  ;# ptr
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common10StateFlush$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common10StateFlush$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common14StateFlushWait
 __vt__Q53scn4step5enemy6common14StateFlushWait:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80292070  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x8028DDDC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80291F80  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common14StateFlushWaitFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common14StateFlushWaitFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255730

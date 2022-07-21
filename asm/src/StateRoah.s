@@ -179,10 +179,10 @@ procFixPos__Q53scn4step4item5state9StateRoahFv:
 __vt__Q53scn4step4item5state9StateRoah:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C8748
-	.4byte 0x803C874C
-	.4byte 0x803C8750
-	.4byte 0x803C88C8
+	.byte4 __dt__Q53scn4step4item5state9StateRoahFv
+	.byte4 procAnim__Q53scn4step4item5state9StateRoahFv
+	.byte4 procMove__Q53scn4step4item5state9StateRoahFv
+	.byte4 procFixPos__Q53scn4step4item5state9StateRoahFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255795

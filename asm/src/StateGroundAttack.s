@@ -113,9 +113,9 @@ procMove__Q53scn4step5enemy6sodory17StateGroundAttackFv:
 __vt__Q53scn4step5enemy6sodory17StateGroundAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E635C  ;# ptr
-	.4byte 0x802E6420  ;# ptr
-	.4byte 0x802E6424  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6sodory17StateGroundAttackFv
+	.byte4 procAnim__Q53scn4step5enemy6sodory17StateGroundAttackFv
+	.byte4 procMove__Q53scn4step5enemy6sodory17StateGroundAttackFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

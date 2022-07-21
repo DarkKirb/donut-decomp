@@ -50,14 +50,14 @@ $$248732:
 	.balign 4
 .global T_FDN_NAME_TABLE__Q43scn4step3map34$$2unnamed$$2BinCarryItemKindUtil_cpp$$2
 T_FDN_NAME_TABLE__Q43scn4step3map34$$2unnamed$$2BinCarryItemKindUtil_cpp$$2:
-	.4byte 0x80492670
-	.4byte 0x80492688
-	.4byte 0x8049269C
-	.4byte 0x804926B0
-	.4byte 0x804926C0
-	.4byte 0x804926D8
-	.4byte 0x804926F0
-	.4byte 0x80492708
-	.4byte 0x8049271C
-	.4byte 0x8049269C
-	.4byte 0x80492734
+	.byte4 $$248723
+	.byte4 $$248724
+	.byte4 $$248725
+	.byte4 $$248726
+	.byte4 $$248727
+	.byte4 $$248728
+	.byte4 $$248729
+	.byte4 $$248730
+	.byte4 $$248731
+	.byte4 $$248725
+	.byte4 $$248732

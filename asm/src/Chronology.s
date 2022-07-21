@@ -151,150 +151,150 @@ $$248743:
 .global PRODUCTS__Q33scn7history24$$2unnamed$$2Chronology_cpp$$2
 PRODUCTS__Q33scn7history24$$2unnamed$$2Chronology_cpp$$2:
 	.4byte 0x000007C7
-	.4byte 0x80558498
-	.4byte 0x80460CD0
+	.byte4 $$248724
+	.byte4 $$248725
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007C8
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007C9
-	.4byte 0x8055849C
-	.4byte 0x805584AC
+	.byte4 $$248727
+	.byte4 $$248729
 	.4byte 0
-	.4byte 0x80460CE8
+	.byte4 $$248730
 	.4byte 0x000007C9
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000001
-	.4byte 0x80460CF8
+	.byte4 $$248731
 	.4byte 0x000007CA
-	.4byte 0x8055849C
-	.4byte 0x805584B0
+	.byte4 $$248727
+	.byte4 $$248732
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007CB
-	.4byte 0x8055849C
-	.4byte 0x805584B8
+	.byte4 $$248727
+	.byte4 $$248733
 	.4byte 0
-	.4byte 0x80460D08
+	.byte4 $$248734
 	.4byte 0x000007CB
-	.4byte 0x8055849C
-	.4byte 0x805584B8
+	.byte4 $$248727
+	.byte4 $$248733
 	.4byte 0x00000001
-	.4byte 0x80460D14
+	.byte4 $$248735
 	.4byte 0x000007CB
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000002
-	.4byte 0x80460D20
+	.byte4 $$248736
 	.4byte 0x000007CC
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000003
-	.4byte 0x80460CE8
+	.byte4 $$248730
 	.4byte 0x000007CC
-	.4byte 0x8055849C
-	.4byte 0x805584B8
+	.byte4 $$248727
+	.byte4 $$248733
 	.4byte 0x00000002
-	.4byte 0x80460CF8
+	.byte4 $$248731
 	.4byte 0x000007CD
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000004
-	.4byte 0x80460CE8
+	.byte4 $$248730
 	.4byte 0x000007CD
-	.4byte 0x8055849C
-	.4byte 0x805584B8
+	.byte4 $$248727
+	.byte4 $$248733
 	.4byte 0x00000003
-	.4byte 0x80460CF8
+	.byte4 $$248731
 	.4byte 0x000007CE
-	.4byte 0x8055849C
-	.4byte 0x805584C0
+	.byte4 $$248727
+	.byte4 $$248737
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007CF
-	.4byte 0x8055849C
-	.4byte 0x805584C8
+	.byte4 $$248727
+	.byte4 $$248738
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D0
-	.4byte 0x8055849C
-	.4byte 0x805584B8
+	.byte4 $$248727
+	.byte4 $$248733
 	.4byte 0x00000004
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D1
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000005
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D2
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000006
-	.4byte 0x80460CE8
+	.byte4 $$248730
 	.4byte 0x000007D2
-	.4byte 0x8055849C
-	.4byte 0x805584D0
+	.byte4 $$248727
+	.byte4 $$248739
 	.4byte 0
-	.4byte 0x80460CF8
+	.byte4 $$248731
 	.4byte 0x000007D3
-	.4byte 0x8055849C
-	.4byte 0x805584D8
+	.byte4 $$248727
+	.byte4 $$248740
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D4
-	.4byte 0x8055849C
-	.4byte 0x805584A4
+	.byte4 $$248727
+	.byte4 $$248728
 	.4byte 0x00000007
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D5
-	.4byte 0x8055849C
-	.4byte 0x805584DC
+	.byte4 $$248727
+	.byte4 $$248741
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D6
-	.4byte 0x8055849C
-	.4byte 0x805584DC
+	.byte4 $$248727
+	.byte4 $$248741
 	.4byte 0x00000001
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D7
-	.4byte 0x8055849C
-	.4byte 0x805584E0
+	.byte4 $$248727
+	.byte4 $$248742
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D8
-	.4byte 0x8055849C
-	.4byte 0x805584DC
+	.byte4 $$248727
+	.byte4 $$248741
 	.4byte 0x00000002
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007D9
-	.4byte 0x8055849C
-	.4byte 0x80460D2C
+	.byte4 $$248727
+	.byte4 $$248743
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007DA
-	.4byte 0x8055849C
-	.4byte 0x805584E8
+	.byte4 $$248727
+	.byte4 $$248744
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 	.4byte 0x000007DB
-	.4byte 0x8055849C
-	.4byte 0x805584DC
+	.byte4 $$248727
+	.byte4 $$248741
 	.4byte 0x00000003
-	.4byte 0x80460CE8
+	.byte4 $$248730
 	.4byte 0x000007DB
-	.4byte 0x8055849C
-	.4byte 0x805584E8
+	.byte4 $$248727
+	.byte4 $$248744
 	.4byte 0x00000001
-	.4byte 0x80460CF8
+	.byte4 $$248731
 	.4byte 0x000007DC
-	.4byte 0x8055849C
-	.4byte 0x805584EC
+	.byte4 $$248727
+	.byte4 $$248745
 	.4byte 0
-	.4byte 0x80460CDC
+	.byte4 $$248726
 .global $$248900
 $$248900:
 	.asciz "DotKirby"

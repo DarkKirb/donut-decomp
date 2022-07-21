@@ -565,13 +565,13 @@ endState__Q53scn4step4hero12interference10StateEatenFv:
 __vt__Q53scn4step4hero12interference10StateEaten:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80371088
-	.4byte 0x80371274
-	.4byte 0x803713A8
-	.4byte 0x803713AC
-	.4byte 0x80355510
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero12interference10StateEatenFv
+	.byte4 procAnim__Q53scn4step4hero12interference10StateEatenFv
+	.byte4 procMove__Q53scn4step4hero12interference10StateEatenFv
+	.byte4 procConstraint__Q53scn4step4hero12interference10StateEatenFv
+	.byte4 procFixPos__Q43scn4step4hero9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

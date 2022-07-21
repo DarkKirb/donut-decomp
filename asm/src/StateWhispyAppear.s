@@ -990,60 +990,60 @@ __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee1
 __vt__Q53scn4step5enemy10brontoburt17StateWhispyAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A052C  ;# ptr
-	.4byte 0x802A05A8  ;# ptr
-	.4byte 0x802A06C8  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A0844  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10brontoburt17StateWhispyAppearFv
+	.byte4 procAnim__Q53scn4step5enemy10brontoburt17StateWhispyAppearFv
+	.byte4 procMove__Q53scn4step5enemy10brontoburt17StateWhispyAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10brontoburt17StateWhispyAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B9DB0  ;# ptr
-	.4byte 0x802B9D8C  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5gordo17StateWhispyAppear
 __vt__Q53scn4step5enemy5gordo17StateWhispyAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B9BFC  ;# ptr
-	.4byte 0x802B9C78  ;# ptr
-	.4byte 0x802B9D84  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802B9D88  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.byte4 procAnim__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.byte4 procMove__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy17StateWhispyAppear
 __vt__Q53scn4step5enemy6scarfy17StateWhispyAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DB6C0  ;# ptr
-	.4byte 0x802DB73C  ;# ptr
-	.4byte 0x802DB8B4  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802DBA14  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6scarfy17StateWhispyAppearFv
+	.byte4 procAnim__Q53scn4step5enemy6scarfy17StateWhispyAppearFv
+	.byte4 procMove__Q53scn4step5enemy6scarfy17StateWhispyAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6scarfy17StateWhispyAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateWhispyFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateWhispyFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EEFB0  ;# ptr
-	.4byte 0x802EEF94  ;# ptr
+	.byte4 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateWhispyFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateWhispyFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy9waddledee17StateWhispyAppear
 __vt__Q53scn4step5enemy9waddledee17StateWhispyAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EED78  ;# ptr
-	.4byte 0x802EEDF4  ;# ptr
-	.4byte 0x802EEEA0  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802EEF90  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledee17StateWhispyAppearFv
+	.byte4 procAnim__Q53scn4step5enemy9waddledee17StateWhispyAppearFv
+	.byte4 procMove__Q53scn4step5enemy9waddledee17StateWhispyAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy9waddledee17StateWhispyAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255825

@@ -395,15 +395,15 @@ playChoice__Q43scn7history6detail6CursorFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251586
 $$251586:
-	.4byte 0x80557A28
-	.4byte 0x80557A30
-	.4byte 0x80557A38
-	.4byte 0x80557A40
-	.4byte 0x8045DF4C
-	.4byte 0x8045DF4C
-	.4byte 0x80557A48
-	.4byte 0x80557A50
-	.4byte 0x80557A58
+	.byte4 $$251578
+	.byte4 $$251579
+	.byte4 $$251580
+	.byte4 $$251581
+	.byte4 $$251582
+	.byte4 $$251582
+	.byte4 $$251583
+	.byte4 $$251584
+	.byte4 $$251585
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -419,7 +419,7 @@ $$251582:
 __vt__Q33scn19challengefileselect6Cursor:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801E3004  ;# ptr
+	.byte4 updateFrame__Q33scn19challengefileselect6CursorFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -459,43 +459,43 @@ $$251555:
 	.asciz "ListButtonN"
 .global PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.4byte 0x804618A0
-	.4byte 0x804618B0
-	.4byte 0x804618C0
-	.4byte 0x804618CC
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x804618F0
-	.4byte 0x80461900
-	.4byte 0x80461910
-	.4byte 0x80461920
+	.byte4 $$251547
+	.byte4 $$251548
+	.byte4 $$251549
+	.byte4 $$251550
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251552
+	.byte4 $$251553
+	.byte4 $$251554
+	.byte4 $$251555
 .global TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.4byte 0x804618A0
-	.4byte 0x80461920
-	.4byte 0x804618B0
-	.4byte 0x804618C0
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x80461920
-	.4byte 0x804618F0
-	.4byte 0x804618F0
-	.4byte 0x804618F0
+	.byte4 $$251547
+	.byte4 $$251555
+	.byte4 $$251548
+	.byte4 $$251549
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251555
+	.byte4 $$251552
+	.byte4 $$251552
+	.byte4 $$251552
 .global TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.4byte 0x804618A0
-	.4byte 0x80461920
-	.4byte 0x804618B0
-	.4byte 0x804618C0
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x804618DC
-	.4byte 0x80461920
-	.4byte 0x80461900
-	.4byte 0x80461900
-	.4byte 0x80461900
+	.byte4 $$251547
+	.byte4 $$251555
+	.byte4 $$251548
+	.byte4 $$251549
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251551
+	.byte4 $$251555
+	.byte4 $$251553
+	.byte4 $$251553
+	.byte4 $$251553
 .global $$252454
 $$252454:
 	.asciz "history/Detail"

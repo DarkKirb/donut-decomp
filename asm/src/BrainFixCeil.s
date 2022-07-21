@@ -141,11 +141,11 @@ __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv:
 __vt__Q53scn4step5enemy6shotzo12BrainFixCeil:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E00D4  ;# ptr
-	.4byte 0x802DFF3C  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+	.byte4 onStart__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

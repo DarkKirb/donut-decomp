@@ -287,5 +287,5 @@ $$2863:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global bta_hh_reg
 bta_hh_reg:
-	.4byte 0x8007D838  ;# ptr
-	.4byte 0x8007D19C  ;# ptr
+	.byte4 bta_hh_hdl_event
+	.byte4 BTA_HhDisable

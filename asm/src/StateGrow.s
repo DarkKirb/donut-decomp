@@ -263,12 +263,12 @@ procFixPos__Q53scn4step4boss6whispy9StateGrowFv:
 __vt__Q53scn4step4boss6whispy9StateGrow:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025D9C0  ;# ptr
-	.4byte 0x8025D9C4  ;# ptr
-	.4byte 0x8025DCF0  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025DCF4  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy9StateGrowFv
+	.byte4 procAnim__Q53scn4step4boss6whispy9StateGrowFv
+	.byte4 procMove__Q53scn4step4boss6whispy9StateGrowFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy9StateGrowFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256186

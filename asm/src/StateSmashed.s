@@ -794,36 +794,36 @@ __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DF7FC  ;# ptr
-	.4byte 0x802DF7E0  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5sheld12StateSmashed
 __vt__Q53scn4step5enemy5sheld12StateSmashed:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DF37C  ;# ptr
-	.4byte 0x802DF414  ;# ptr
-	.4byte 0x802DF5C8  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802DF634  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5sheld12StateSmashedFv
+	.byte4 procAnim__Q53scn4step5enemy5sheld12StateSmashedFv
+	.byte4 procMove__Q53scn4step5enemy5sheld12StateSmashedFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy5sheld12StateSmashedFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EE6C4  ;# ptr
-	.4byte 0x802EE6A8  ;# ptr
+	.byte4 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy9waddledee12StateSmashed
 __vt__Q53scn4step5enemy9waddledee12StateSmashed:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EE1A0  ;# ptr
-	.4byte 0x802EE24C  ;# ptr
-	.4byte 0x802EE400  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802EE46C  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledee12StateSmashedFv
+	.byte4 procAnim__Q53scn4step5enemy9waddledee12StateSmashedFv
+	.byte4 procMove__Q53scn4step5enemy9waddledee12StateSmashedFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy9waddledee12StateSmashedFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256802

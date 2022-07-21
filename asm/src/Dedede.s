@@ -84,53 +84,53 @@ Script__Q53scn4step4hero9modeldesc6DededeFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20
 $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA58
+	.byte4 $$248728
 	.4byte 0x0000000D
-	.4byte 0x8055AA60
+	.byte4 $$248729
 	.4byte 0x0000000D
-	.4byte 0x8055AA68
+	.byte4 $$248730
 	.4byte 0x0000000D
-	.4byte 0x8055AA70
+	.byte4 $$248731
 	.4byte 0x0000000D
-	.4byte 0x8055AA78
+	.byte4 $$248732
 	.4byte 0x0000000D
-	.4byte 0x8055AA80
+	.byte4 $$248733
 	.4byte 0x0000000D
-	.4byte 0x80488CF8
+	.byte4 $$248734
 	.4byte 0x0000000D
-	.4byte 0x8055AA88
+	.byte4 $$248735
 	.4byte 0x0000000D
-	.4byte 0x8055AA90
+	.byte4 $$248736
 	.4byte 0x0000000D
-	.4byte 0x8055AA98
+	.byte4 $$248737
 	.4byte 0x0000000D
-	.4byte 0x80488D04
+	.byte4 $$248738
 	.4byte 0x0000000D
-	.4byte 0x8055AAA0
+	.byte4 $$248739
 	.4byte 0x0000000D
-	.4byte 0x80488D10
+	.byte4 $$248740
 	.4byte 0x0000000D
-	.4byte 0x80488D1C
+	.byte4 $$248741
 	.4byte 0x0000000D
-	.4byte 0x8055AAA8
+	.byte4 $$248742
 	.4byte 0x0000000D
-	.4byte 0x80488D2C
+	.byte4 $$248743
 	.4byte 0x0000000D
-	.4byte 0x80488D38
+	.byte4 $$248744
 	.4byte 0x0000000D
-	.4byte 0x80488D44
+	.byte4 $$248745
 	.4byte 0x0000000D
-	.4byte 0x8055AAB0
+	.byte4 $$248746
 	.4byte 0x0000000D
-	.4byte 0x80488D50
+	.byte4 $$248747
 	.4byte 0x0000000D
-	.4byte 0x80488D5C
+	.byte4 $$248748
 	.4byte 0x0000000D
-	.4byte 0x80488D6C
+	.byte4 $$248749
 	.4byte 0x0000000D
-	.4byte 0x8055AAB8
+	.byte4 $$248750
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -144,15 +144,15 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AAC0
+	.byte4 $$248751
 	.4byte 0x0000000D
-	.4byte 0x80488D7C
+	.byte4 $$248752
 	.4byte 0x0000000D
-	.4byte 0x8055AAC8
+	.byte4 $$248753
 	.4byte 0x0000000D
-	.4byte 0x80488D88
+	.byte4 $$248754
 	.4byte 0x0000000D
-	.4byte 0x8055AAD0
+	.byte4 $$248755
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -174,7 +174,7 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AAC0
+	.byte4 $$248751
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -186,21 +186,21 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80488D94
+	.byte4 $$248756
 	.4byte 0x0000000D
-	.4byte 0x80488DA4
+	.byte4 $$248757
 	.4byte 0x0000000D
-	.4byte 0x80488DB0
+	.byte4 $$248758
 	.4byte 0x0000000D
-	.4byte 0x80488DC0
+	.byte4 $$248759
 	.4byte 0x0000000D
-	.4byte 0x80488DD0
+	.byte4 $$248760
 	.4byte 0x0000000D
-	.4byte 0x80488DDC
+	.byte4 $$248761
 	.4byte 0x0000000D
-	.4byte 0x80488D7C
+	.byte4 $$248752
 	.4byte 0x0000000D
-	.4byte 0x80488DE8
+	.byte4 $$248762
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -224,25 +224,25 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AAD4
+	.byte4 $$248763
 	.4byte 0x0000000D
-	.4byte 0x80488DF4
+	.byte4 $$248764
 	.4byte 0x0000000D
-	.4byte 0x8055AAD4
+	.byte4 $$248763
 	.4byte 0x0000000D
-	.4byte 0x80488DF4
+	.byte4 $$248764
 	.4byte 0x0000000D
-	.4byte 0x80488E00
+	.byte4 $$248765
 	.4byte 0x0000000D
-	.4byte 0x8055AADC
+	.byte4 $$248766
 	.4byte 0x0000000D
-	.4byte 0x80488E0C
+	.byte4 $$248767
 	.4byte 0x0000000D
-	.4byte 0x8055AAE4
+	.byte4 $$248768
 	.4byte 0x0000000D
-	.4byte 0x80488E18
+	.byte4 $$248769
 	.4byte 0x0000000D
-	.4byte 0x80488E30
+	.byte4 $$248770
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -256,115 +256,115 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AAE8
+	.byte4 $$248771
 	.4byte 0x0000000D
-	.4byte 0x8055AAF0
+	.byte4 $$248772
 	.4byte 0x0000000D
-	.4byte 0x8055AAF8
+	.byte4 $$248773
 	.4byte 0x0000000D
-	.4byte 0x8055AB00
+	.byte4 $$248774
 	.4byte 0x0000000D
-	.4byte 0x80488E44
+	.byte4 $$248775
 	.4byte 0x0000000D
-	.4byte 0x80488E50
+	.byte4 $$248776
 	.4byte 0x0000000D
-	.4byte 0x8055AB08
+	.byte4 $$248777
 	.4byte 0x0000000D
-	.4byte 0x8055AB10
+	.byte4 $$248778
 	.4byte 0x0000000D
-	.4byte 0x8055AB18
+	.byte4 $$248779
 	.4byte 0x0000000D
-	.4byte 0x8055AB20
+	.byte4 $$248780
 	.4byte 0x0000000D
-	.4byte 0x8055AB28
+	.byte4 $$248781
 	.4byte 0x0000000D
-	.4byte 0x8055AB30
+	.byte4 $$248782
 	.4byte 0x0000000D
-	.4byte 0x8055AB38
+	.byte4 $$248783
 	.4byte 0x0000000D
-	.4byte 0x8055AB40
+	.byte4 $$248784
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA78
+	.byte4 $$248732
 	.4byte 0x0000000D
-	.4byte 0x8055AB48
+	.byte4 $$248785
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AB50
+	.byte4 $$248786
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055AB58
+	.byte4 $$248787
 	.4byte 0x0000000D
-	.4byte 0x8055AB60
+	.byte4 $$248788
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80488E5C
+	.byte4 $$248789
 	.4byte 0x0000000D
-	.4byte 0x80488E68
+	.byte4 $$248790
 	.4byte 0x0000000D
-	.4byte 0x80488E74
+	.byte4 $$248791
 	.4byte 0x0000000D
-	.4byte 0x8055AA88
+	.byte4 $$248735
 	.4byte 0x0000000D
-	.4byte 0x8055AB68
+	.byte4 $$248792
 	.4byte 0x0000000D
-	.4byte 0x80488E80
+	.byte4 $$248793
 	.4byte 0x0000000D
-	.4byte 0x80488E8C
+	.byte4 $$248794
 	.4byte 0x0000000D
-	.4byte 0x80488EA0
+	.byte4 $$248795
 	.4byte 0x0000000D
-	.4byte 0x80488EB0
+	.byte4 $$248796
 	.4byte 0x0000000D
-	.4byte 0x80488EBC
+	.byte4 $$248797
 	.4byte 0x0000000D
-	.4byte 0x80488ECC
+	.byte4 $$248798
 	.4byte 0x0000000D
-	.4byte 0x8055AB70
+	.byte4 $$248799
 	.4byte 0x0000000D
-	.4byte 0x80488EDC
+	.byte4 $$248800
 	.4byte 0x0000000D
-	.4byte 0x80488EE8
+	.byte4 $$248801
 	.4byte 0x0000000D
-	.4byte 0x80488EF8
+	.byte4 $$248802
 	.4byte 0x0000000D
-	.4byte 0x80488F04
+	.byte4 $$248803
 	.4byte 0x0000000D
-	.4byte 0x80488F10
+	.byte4 $$248804
 	.4byte 0x0000000D
-	.4byte 0x8055AB78
+	.byte4 $$248805
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x80488F20
+	.byte4 $$248806
 	.4byte 0x0000000D
-	.4byte 0x80488F2C
+	.byte4 $$248807
 	.4byte 0x0000000D
-	.4byte 0x80488F38
+	.byte4 $$248808
 	.4byte 0x0000000D
-	.4byte 0x80488F48
+	.byte4 $$248809
 	.4byte 0x0000000D
-	.4byte 0x80488F58
+	.byte4 $$248810
 	.4byte 0x0000000D
-	.4byte 0x80488F70
+	.byte4 $$248811
 	.4byte 0x0000000D
-	.4byte 0x80488F80
+	.byte4 $$248812
 	.4byte 0x0000000D
-	.4byte 0x80488F98
+	.byte4 $$248813
 	.4byte 0x0000000D
-	.4byte 0x8055AB80
+	.byte4 $$248814
 	.4byte 0x0000000D
-	.4byte 0x80488FA4
+	.byte4 $$248815
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -804,59 +804,59 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80488FB0
+	.byte4 $$248816
 	.4byte 0x0000000D
-	.4byte 0x80488FC8
+	.byte4 $$248817
 	.4byte 0x0000000D
-	.4byte 0x80488FDC
+	.byte4 $$248818
 	.4byte 0x0000000D
-	.4byte 0x80488FF0
+	.byte4 $$248819
 	.4byte 0x0000000D
-	.4byte 0x80489000
+	.byte4 $$248820
 	.4byte 0x0000000D
-	.4byte 0x80489014
+	.byte4 $$248821
 	.4byte 0x0000000D
-	.4byte 0x80489028
+	.byte4 $$248822
 	.4byte 0x0000000D
-	.4byte 0x8048903C
+	.byte4 $$248823
 	.4byte 0x0000000D
-	.4byte 0x80489050
+	.byte4 $$248824
 	.4byte 0x0000000D
-	.4byte 0x80489068
+	.byte4 $$248825
 	.4byte 0x0000000D
-	.4byte 0x80489078
+	.byte4 $$248826
 	.4byte 0x0000000D
-	.4byte 0x80489088
+	.byte4 $$248827
 	.4byte 0x0000000D
-	.4byte 0x80489098
+	.byte4 $$248828
 	.4byte 0x0000000D
-	.4byte 0x804890A4
+	.byte4 $$248829
 	.4byte 0x0000000D
-	.4byte 0x804890B0
+	.byte4 $$248830
 	.4byte 0x0000000D
-	.4byte 0x804890C0
+	.byte4 $$248831
 	.4byte 0x0000000D
-	.4byte 0x804890CC
+	.byte4 $$248832
 	.4byte 0x0000000D
-	.4byte 0x804890E0
+	.byte4 $$248833
 	.4byte 0x0000000D
-	.4byte 0x804890F0
+	.byte4 $$248834
 	.4byte 0x0000000D
-	.4byte 0x80489100
+	.byte4 $$248835
 	.4byte 0x0000000D
-	.4byte 0x80489110
+	.byte4 $$248836
 	.4byte 0x0000000D
-	.4byte 0x80489128
+	.byte4 $$248837
 	.4byte 0x0000000D
-	.4byte 0x8048913C
+	.byte4 $$248838
 	.4byte 0x0000000D
-	.4byte 0x8048914C
+	.byte4 $$248839
 	.4byte 0x0000000D
-	.4byte 0x80489160
+	.byte4 $$248840
 	.4byte 0x0000000D
-	.4byte 0x80489170
+	.byte4 $$248841
 	.4byte 0x0000000D
-	.4byte 0x80489180
+	.byte4 $$248842
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -938,39 +938,39 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc6DededeFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80489194
+	.byte4 $$248843
 	.4byte 0x0000000D
-	.4byte 0x804891A0
+	.byte4 $$248844
 	.4byte 0x0000000D
-	.4byte 0x804891AC
+	.byte4 $$248845
 	.4byte 0x0000000D
-	.4byte 0x804891B8
+	.byte4 $$248846
 	.4byte 0x0000000D
-	.4byte 0x8055AB88
+	.byte4 $$248847
 	.4byte 0x0000000D
-	.4byte 0x804891C4
+	.byte4 $$248848
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AA50
+	.byte4 $$248727
 	.4byte 0x0000000D
-	.4byte 0x8055AB90
+	.byte4 $$248849
 	.4byte 0x0000000D
-	.4byte 0x8055AB98
+	.byte4 $$248850
 	.4byte 0x0000000D
-	.4byte 0x804891D0
+	.byte4 $$248851
 	.4byte 0x0000000D
-	.4byte 0x8055ABA0
+	.byte4 $$248852
 	.4byte 0x0000000D
-	.4byte 0x804891DC
+	.byte4 $$248853
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -1347,36 +1347,36 @@ $$248881:
 	.asciz "HammerheadJ"
 .global $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc6DededeFv$$2NAMES$$20
 $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc6DededeFv$$2NAMES$$20:
-	.4byte 0x8055ABA8
-	.4byte 0x804891E8
-	.4byte 0x804891F4
-	.4byte 0x80489200
-	.4byte 0x8055ABB0
-	.4byte 0x8048920C
-	.4byte 0x80489200
-	.4byte 0x80489200
-	.4byte 0x8055ABB8
-	.4byte 0x8055ABC0
-	.4byte 0x80489218
-	.4byte 0x804891E8
-	.4byte 0x8055ABC8
-	.4byte 0x80489224
-	.4byte 0x804891F4
-	.4byte 0x80489230
-	.4byte 0x804891E8
-	.4byte 0x8055ABD0
-	.4byte 0x8048923C
-	.4byte 0x80489248
-	.4byte 0x8055ABD8
-	.4byte 0x8055ABE0
-	.4byte 0x80489254
-	.4byte 0x8055ABA8
-	.4byte 0x8055ABE8
-	.4byte 0x8055ABE8
-	.4byte 0x8055ABE8
-	.4byte 0x8055ABE8
-	.4byte 0x8055ABE8
-	.4byte 0x8055ABE8
+	.byte4 $$248864
+	.byte4 $$248865
+	.byte4 $$248866
+	.byte4 $$248867
+	.byte4 $$248868
+	.byte4 $$248869
+	.byte4 $$248867
+	.byte4 $$248867
+	.byte4 $$248870
+	.byte4 $$248871
+	.byte4 $$248872
+	.byte4 $$248865
+	.byte4 $$248873
+	.byte4 $$248874
+	.byte4 $$248866
+	.byte4 $$248875
+	.byte4 $$248865
+	.byte4 $$248876
+	.byte4 $$248877
+	.byte4 $$248878
+	.byte4 $$248879
+	.byte4 $$248880
+	.byte4 $$248881
+	.byte4 $$248864
+	.byte4 $$248882
+	.byte4 $$248882
+	.byte4 $$248882
+	.byte4 $$248882
+	.byte4 $$248882
+	.byte4 $$248882
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248727

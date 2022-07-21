@@ -3255,16 +3255,16 @@ $$2LOCAL$$2SetupGX__Q34nw4r3lyt8MaterialFbUc$$2kAlpSels$$20:
 __vt__Q34nw4r3lyt8Material:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800FA490  ;# ptr
-	.4byte 0x800FAFB0  ;# ptr
-	.4byte 0x800FBDC0  ;# ptr
-	.4byte 0x800FBDE0  ;# ptr
-	.4byte 0x800FBDF0  ;# ptr
-	.4byte 0x800FBE10  ;# ptr
-	.4byte 0x800FBED0  ;# ptr
-	.4byte 0x800FBEE0  ;# ptr
-	.4byte 0x800FBEF0  ;# ptr
-	.4byte 0x800FBF40  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt8MaterialFv
+	.byte4 SetupGX__Q34nw4r3lyt8MaterialFbUc
+	.byte4 BindAnimation__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransform
+	.byte4 UnbindAnimation__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransform
+	.byte4 UnbindAllAnimation__Q34nw4r3lyt8MaterialFv
+	.byte4 Animate__Q34nw4r3lyt8MaterialFv
+	.byte4 FindAnimationLink__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransform
+	.byte4 FindAnimationLink__Q34nw4r3lyt8MaterialFRCQ34nw4r3lyt12AnimResource
+	.byte4 SetAnimationEnable__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransformb
+	.byte4 SetAnimationEnable__Q34nw4r3lyt8MaterialFRCQ34nw4r3lyt12AnimResourceb
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210055

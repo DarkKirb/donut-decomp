@@ -289,9 +289,9 @@ $$251711:
 	.balign 4
 .global T_COMIC_DN_TABLE__Q33scn5comic24$$2unnamed$$2SceneComic_cpp$$2
 T_COMIC_DN_TABLE__Q33scn5comic24$$2unnamed$$2SceneComic_cpp$$2:
-	.4byte 0x80460358
-	.4byte 0x80460368
-	.4byte 0x80460378
+	.byte4 $$251709
+	.byte4 $$251710
+	.byte4 $$251711
 .global $$252094
 $$252094:
 	.asciz "ComicCommon.dn"
@@ -320,13 +320,13 @@ $$252099:
 __vt__Q33scn5comic10SceneComic:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802006DC  ;# ptr
-	.4byte 0x80200598  ;# ptr
-	.4byte 0x8020062C  ;# ptr
-	.4byte 0x80200604  ;# ptr
-	.4byte 0x80200654  ;# ptr
-	.4byte 0x8020067C  ;# ptr
-	.4byte 0x802006B4  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn5comic10SceneComicCFv
+	.byte4 __dt__Q33scn5comic10SceneComicFv
+	.byte4 updateMain__Q33scn5comic10SceneComicFv
+	.byte4 updateUseGPU__Q33scn5comic10SceneComicFv
+	.byte4 updateDebug__Q33scn5comic10SceneComicFv
+	.byte4 draw__Q33scn5comic10SceneComicFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn5comic10SceneComicCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -341,13 +341,13 @@ $$252497:
 __vt__Q33scn11staffcredit16SceneStaffCredit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F9FD4
-	.4byte 0x803F9D88
-	.4byte 0x803F9E1C
-	.4byte 0x803F9DF4
-	.4byte 0x803F9E44
-	.4byte 0x803F9E6C
-	.4byte 0x803F9E94
+	.byte4 GetRuntimeTypeInfo__Q33scn11staffcredit16SceneStaffCreditCFv
+	.byte4 __dt__Q33scn11staffcredit16SceneStaffCreditFv
+	.byte4 updateMain__Q33scn11staffcredit16SceneStaffCreditFv
+	.byte4 updateUseGPU__Q33scn11staffcredit16SceneStaffCreditFv
+	.byte4 updateDebug__Q33scn11staffcredit16SceneStaffCreditFv
+	.byte4 draw__Q33scn11staffcredit16SceneStaffCreditFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn11staffcredit16SceneStaffCreditCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

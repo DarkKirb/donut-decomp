@@ -36,9 +36,9 @@ __dt__Q53scn4step5enemy6degout17BrainWaitAndChaseFv:
 __vt__Q53scn4step5enemy6degout17BrainWaitAndChase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AD214  ;# ptr
-	.4byte 0x802AD20C  ;# ptr
-	.4byte 0x802AD210  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6degout17BrainWaitAndChaseFv
+	.byte4 onStart__Q53scn4step5enemy6degout17BrainWaitAndChaseFv
+	.byte4 onRecover__Q53scn4step5enemy6degout17BrainWaitAndChaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

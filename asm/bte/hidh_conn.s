@@ -2311,16 +2311,16 @@ hidh_conn_dereg:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hst_reg_info
 hst_reg_info:
-	.4byte 0x8008E4CC  ;# ptr
-	.4byte 0x8008EA84  ;# ptr
+	.byte4 hidh_l2cif_connect_ind
+	.byte4 hidh_l2cif_connect_cfm
 	.4byte 0
-	.4byte 0x8008EDCC  ;# ptr
-	.4byte 0x8008F074  ;# ptr
-	.4byte 0x8008F380  ;# ptr
-	.4byte 0x8008F644  ;# ptr
+	.byte4 hidh_l2cif_config_ind
+	.byte4 hidh_l2cif_config_cfm
+	.byte4 hidh_l2cif_disconnect_ind
+	.byte4 hidh_l2cif_disconnect_cfm
 	.4byte 0
-	.4byte 0x8008FA84  ;# ptr
-	.4byte 0x8008F88C  ;# ptr
+	.byte4 hidh_l2cif_data_ind
+	.byte4 hidh_l2cif_cong_ind
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21580

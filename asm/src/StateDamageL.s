@@ -116,15 +116,15 @@ __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9State
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025CFC8  ;# ptr
-	.4byte 0x8025CFAC  ;# ptr
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss6whispy12StateDamageL
 __vt__Q53scn4step4boss6whispy12StateDamageL:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025CF08  ;# ptr
-	.4byte 0x8025CF0C  ;# ptr
-	.4byte 0x8025CFA4  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025CFA8  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy12StateDamageLFv
+	.byte4 procAnim__Q53scn4step4boss6whispy12StateDamageLFv
+	.byte4 procMove__Q53scn4step4boss6whispy12StateDamageLFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy12StateDamageLFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

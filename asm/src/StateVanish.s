@@ -391,24 +391,24 @@ procObjCollReact__Q53scn4step6weapon8deespear11StateVanishFv:
 __vt__Q53scn4step6weapon10spearspear11StateVanish:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E50A0
-	.4byte 0x803E514C
-	.4byte 0x803E5238
-	.4byte 0x803D895C
-	.4byte 0x803E523C
-	.4byte 0x803E5240
+	.byte4 __dt__Q53scn4step6weapon10spearspear11StateVanishFv
+	.byte4 procAnim__Q53scn4step6weapon10spearspear11StateVanishFv
+	.byte4 procMove__Q53scn4step6weapon10spearspear11StateVanishFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon10spearspear11StateVanishFv
+	.byte4 procObjCollReact__Q53scn4step6weapon10spearspear11StateVanishFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear11StateVanish
 __vt__Q53scn4step6weapon8deespear11StateVanish:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EDFEC
-	.4byte 0x803EE098
-	.4byte 0x803EE184
-	.4byte 0x803D895C
-	.4byte 0x803EE188
-	.4byte 0x803EE18C
+	.byte4 __dt__Q53scn4step6weapon8deespear11StateVanishFv
+	.byte4 procAnim__Q53scn4step6weapon8deespear11StateVanishFv
+	.byte4 procMove__Q53scn4step6weapon8deespear11StateVanishFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon8deespear11StateVanishFv
+	.byte4 procObjCollReact__Q53scn4step6weapon8deespear11StateVanishFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256857

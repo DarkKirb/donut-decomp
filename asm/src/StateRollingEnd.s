@@ -69,9 +69,9 @@ procFixPos__Q53scn4step4boss9moundeath15StateRollingEndFv:
 __vt__Q53scn4step4boss9moundeath15StateRollingEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80257684  ;# ptr
-	.4byte 0x80257688  ;# ptr
-	.4byte 0x8025768C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x802576E0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9moundeath15StateRollingEndFv
+	.byte4 procAnim__Q53scn4step4boss9moundeath15StateRollingEndFv
+	.byte4 procMove__Q53scn4step4boss9moundeath15StateRollingEndFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9moundeath15StateRollingEndFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

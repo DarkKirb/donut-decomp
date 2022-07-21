@@ -473,20 +473,20 @@ $$251791:
 	.4byte 0x00000024
 .global $$251826
 $$251826:
-	.4byte 0x80558058
-	.4byte 0x80558060
-	.4byte 0x80558068
-	.4byte 0x80558070
-	.4byte 0x8045FAB8
-	.4byte 0x8045FAC4
-	.4byte 0x80558078
-	.4byte 0x80558080
-	.4byte 0x80558088
-	.4byte 0x80558090
-	.4byte 0x80558098
-	.4byte 0x805580A0
-	.4byte 0x8045FAD0
-	.4byte 0x8045FADC
+	.byte4 $$251812
+	.byte4 $$251813
+	.byte4 $$251814
+	.byte4 $$251815
+	.byte4 $$251816
+	.byte4 $$251817
+	.byte4 $$251818
+	.byte4 $$251819
+	.byte4 $$251820
+	.byte4 $$251821
+	.byte4 $$251822
+	.byte4 $$251823
+	.byte4 $$251824
+	.byte4 $$251825
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251574
@@ -516,13 +516,13 @@ $$251580:
 	.balign 4
 .global abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2
 abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2:
-	.4byte 0x8045F9D8
-	.4byte 0x8045F9EC
-	.4byte 0x8045FA00
-	.4byte 0x8045FA18
-	.4byte 0x8045FA2C
-	.4byte 0x8045FA40
-	.4byte 0x8045FA54
+	.byte4 $$251574
+	.byte4 $$251575
+	.byte4 $$251576
+	.byte4 $$251577
+	.byte4 $$251578
+	.byte4 $$251579
+	.byte4 $$251580
 .global $$252687
 $$252687:
 	.asciz "challengeability/Main"

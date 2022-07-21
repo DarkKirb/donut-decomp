@@ -285,13 +285,13 @@ $$252053:
 __vt__Q33scn11packagelist16ScenePackageList:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8021CCC4  ;# ptr
-	.4byte 0x8021CB90  ;# ptr
-	.4byte 0x8021CC24  ;# ptr
-	.4byte 0x8021CBFC  ;# ptr
-	.4byte 0x8021CC4C  ;# ptr
-	.4byte 0x8021CC74  ;# ptr
-	.4byte 0x8021CC9C  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn11packagelist16ScenePackageListCFv
+	.byte4 __dt__Q33scn11packagelist16ScenePackageListFv
+	.byte4 updateMain__Q33scn11packagelist16ScenePackageListFv
+	.byte4 updateUseGPU__Q33scn11packagelist16ScenePackageListFv
+	.byte4 updateDebug__Q33scn11packagelist16ScenePackageListFv
+	.byte4 draw__Q33scn11packagelist16ScenePackageListFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn11packagelist16ScenePackageListCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

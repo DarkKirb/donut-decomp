@@ -1165,50 +1165,50 @@ AssignObjectID__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1FPv:
 __vt__Q34nw4r2ef13MemoryManager:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80185DD0  ;# ptr
-	.4byte 0x80184EBC  ;# ptr
-	.4byte 0x80186588  ;# ptr
-	.4byte 0x80186538  ;# ptr
-	.4byte 0x801864E0  ;# ptr
-	.4byte 0x80185294  ;# ptr
-	.4byte 0x80185304  ;# ptr
-	.4byte 0x8018644C  ;# ptr
-	.4byte 0x801863FC  ;# ptr
-	.4byte 0x801863A4  ;# ptr
-	.4byte 0x801852B0  ;# ptr
-	.4byte 0x80185320  ;# ptr
-	.4byte 0x80186310  ;# ptr
-	.4byte 0x801862C0  ;# ptr
-	.4byte 0x80186268  ;# ptr
-	.4byte 0x801852CC  ;# ptr
-	.4byte 0x8018533C  ;# ptr
-	.4byte 0x801861C8  ;# ptr
-	.4byte 0x80186178  ;# ptr
-	.4byte 0x80186120  ;# ptr
-	.4byte 0x801852E8  ;# ptr
-	.4byte 0x80185358  ;# ptr
-	.4byte 0x80185C38  ;# ptr
-	.4byte 0x80185F48  ;# ptr
+	.byte4 __dt__Q34nw4r2ef13MemoryManagerFv
+	.byte4 GarbageCollection__Q34nw4r2ef13MemoryManagerFv
+	.byte4 AllocEffect__Q34nw4r2ef13MemoryManagerFv
+	.byte4 FreeEffect__Q34nw4r2ef13MemoryManagerFPv
+	.byte4 GetNumAllocEffect__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumActiveEffect__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumFreeEffect__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 AllocEmitter__Q34nw4r2ef13MemoryManagerFv
+	.byte4 FreeEmitter__Q34nw4r2ef13MemoryManagerFPv
+	.byte4 GetNumAllocEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumActiveEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumFreeEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 AllocParticleManager__Q34nw4r2ef13MemoryManagerFv
+	.byte4 FreeParticleManager__Q34nw4r2ef13MemoryManagerFPv
+	.byte4 GetNumAllocParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumActiveParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumFreeParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 AllocParticle__Q34nw4r2ef13MemoryManagerFv
+	.byte4 FreeParticle__Q34nw4r2ef13MemoryManagerFPv
+	.byte4 GetNumAllocParticle__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumActiveParticle__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 GetNumFreeParticle__Q34nw4r2ef13MemoryManagerCFv
+	.byte4 AllocHeap__Q34nw4r2ef13MemoryManagerFUl
+	.byte4 FreeHeap__Q34nw4r2ef13MemoryManagerFPv
 .global __vt__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1
 __vt__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80186258  ;# ptr
+	.byte4 AssignObjectID__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1FPv
 .global __vt__Q34nw4r2ef45MemoryManagerTmp$$0Q34nw4r2ef15ParticleManager$$1
 __vt__Q34nw4r2ef45MemoryManagerTmp$$0Q34nw4r2ef15ParticleManager$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801863A0  ;# ptr
+	.byte4 AssignObjectID__Q34nw4r2ef45MemoryManagerTmp$$0Q34nw4r2ef15ParticleManager$$1FPv
 .global __vt__Q34nw4r2ef36MemoryManagerTmp$$0Q34nw4r2ef7Emitter$$1
 __vt__Q34nw4r2ef36MemoryManagerTmp$$0Q34nw4r2ef7Emitter$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801864DC  ;# ptr
+	.byte4 AssignObjectID__Q34nw4r2ef36MemoryManagerTmp$$0Q34nw4r2ef7Emitter$$1FPv
 .global __vt__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1
 __vt__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80186618  ;# ptr
+	.byte4 AssignObjectID__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1FPv
 .global $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$22
 $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$22:
 	.asciz "NW4R:Failed assertion mHeapStartAddr < mHeapEndAddr && reinterpret_cast<u8*>(mHeapEndAddr) - reinterpret_cast<u8*>(mHeapStartAddr) > headerSize"

@@ -365,7 +365,7 @@ lbl_800B56E4:
 __vt__Q34nw4r2ef15EmitterFormDisc:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800B5240  ;# ptr
+	.byte4 Emission__Q34nw4r2ef15EmitterFormDiscFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

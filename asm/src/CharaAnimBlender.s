@@ -958,26 +958,26 @@ $$249981:
 __vt__Q23g3d16CharaAnimBlender:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D9600  ;# ptr
-	.4byte 0x800D8380  ;# ptr
-	.4byte 0x8018CC24  ;# ptr
-	.4byte 0x800D9710  ;# ptr
-	.4byte 0x800D9700  ;# ptr
-	.4byte 0x800D8020  ;# ptr
-	.4byte 0x800D8030  ;# ptr
-	.4byte 0x800D8010  ;# ptr
-	.4byte 0x800D8090  ;# ptr
-	.4byte 0x800D80A0  ;# ptr
-	.4byte 0x8018C94C  ;# ptr
-	.4byte 0x800D8220  ;# ptr
-	.4byte 0x8018C2B4  ;# ptr
-	.4byte 0x800D7FE0  ;# ptr
-	.4byte 0x800D7FF0  ;# ptr
-	.4byte 0x800D8000  ;# ptr
-	.4byte 0x800D7E70  ;# ptr
-	.4byte 0x800D7E80  ;# ptr
-	.4byte 0x800D8110  ;# ptr
-	.4byte 0x800D8230  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
+	.byte4 __dt__Q23g3d16CharaAnimBlenderFv
+	.byte4 GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 Bind__Q23g3d16CharaAnimBlenderFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 GetResult__Q23g3d16CharaAnimBlenderFPQ34nw4r3g3d12ChrAnmResultUl
+	.byte4 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
+	.byte4 Detach__Q34nw4r3g3d13AnmObjChrNodeFi
+	.byte4 DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.byte4 GetWeight__Q34nw4r3g3d9AnmObjChrCFi
+	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 .global $$2STRING$$2FLog__Q24nw4r4mathFf$$20
 $$2STRING$$2FLog__Q24nw4r4mathFf$$20:
 	.asciz "FLog: Input is out of the domain."

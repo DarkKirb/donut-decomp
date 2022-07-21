@@ -2222,43 +2222,43 @@ __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11Stat
 __vt__Q53scn4step4boss6common9StateDead:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80245EAC  ;# ptr
-	.4byte 0x80245F34  ;# ptr
-	.4byte 0x80245FA4  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x802460DC  ;# ptr
-	.4byte 0x802462F0  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6common9StateDeadFv
+	.byte4 procAnim__Q53scn4step4boss6common9StateDeadFv
+	.byte4 procMove__Q53scn4step4boss6common9StateDeadFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6common9StateDeadFv
+	.byte4 procObjCollReact__Q53scn4step4boss6common9StateDeadFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy9StateDead
 __vt__Q53scn4step4boss6whispy9StateDead:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025D05C  ;# ptr
-	.4byte 0x8025D060  ;# ptr
-	.4byte 0x8025D3CC  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025D3D0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy9StateDeadFv
+	.byte4 procAnim__Q53scn4step4boss6whispy9StateDeadFv
+	.byte4 procMove__Q53scn4step4boss6whispy9StateDeadFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy9StateDeadFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80361E28
-	.4byte 0x80361E0C
+	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero6common9StateDead
 __vt__Q53scn4step4hero6common9StateDead:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80360E48
-	.4byte 0x80360EE8
-	.4byte 0x803616A0
-	.4byte 0x8035550C
-	.4byte 0x803616A4
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common9StateDeadFv
+	.byte4 procAnim__Q53scn4step4hero6common9StateDeadFv
+	.byte4 procMove__Q53scn4step4hero6common9StateDeadFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common9StateDeadFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

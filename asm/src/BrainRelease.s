@@ -233,17 +233,17 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldo
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CB9AC  ;# ptr
-	.4byte 0x802CB98C  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldee12BrainRelease
 __vt__Q53scn4step5enemy10parasoldee12BrainRelease:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CB9A8  ;# ptr
-	.4byte 0x802CB898  ;# ptr
-	.4byte 0x802CB984  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x802CB988  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.byte4 onStart__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.byte4 onRecover__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q53scn4step5enemy10parasoldee12BrainReleaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -251,15 +251,15 @@ __vt__Q53scn4step5enemy10parasoldee12BrainRelease:
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CDAD8  ;# ptr
-	.4byte 0x802CDAB8  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldoo12BrainRelease
 __vt__Q53scn4step5enemy10parasoldoo12BrainRelease:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CDAD4  ;# ptr
-	.4byte 0x802CD9C4  ;# ptr
-	.4byte 0x802CDAB0  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x802CDAB4  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.byte4 onStart__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.byte4 onRecover__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
 	.4byte 0

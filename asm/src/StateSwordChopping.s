@@ -336,23 +336,23 @@ __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword21Stat
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword21StateSwordChoppingHit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80387798
-	.4byte 0x80387778
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword21StateSwordChoppingHit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword21StateSwordChoppingHit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util100StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5sword18StateSwordChopping$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util100StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5sword18StateSwordChopping$$4PQ43scn4step4hero4Hero$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80387794
-	.4byte 0x80387758
+	.byte4 __dt__Q24util100StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5sword18StateSwordChopping$$4PQ43scn4step4hero4Hero$$4b$$1Fv
+	.byte4 create__Q24util100StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5sword18StateSwordChopping$$4PQ43scn4step4hero4Hero$$4b$$1Fv
 .global __vt__Q53scn4step4hero5sword18StateSwordChopping
 __vt__Q53scn4step4hero5sword18StateSwordChopping:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803875A4
-	.4byte 0x803875A8
-	.4byte 0x80387688
-	.4byte 0x8035550C
-	.4byte 0x8038768C
-	.4byte 0x803876B8
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.byte4 procAnim__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.byte4 procMove__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.byte4 procObjCollReact__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

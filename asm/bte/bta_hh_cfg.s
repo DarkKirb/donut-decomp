@@ -4,7 +4,7 @@
 .global bta_hh_cfg
 bta_hh_cfg:
 	.4byte 0x04000000
-	.4byte 0x805568C8
+	.byte4 p_devt_list
 	.4byte 0x04000000
 	.4byte 0
 
@@ -15,5 +15,5 @@ p_devt_list:
 	.4byte 0x01033102
 .global p_bta_hh_cfg
 p_bta_hh_cfg:
-	.4byte 0x80407E90
+	.byte4 bta_hh_cfg
 	.4byte 0

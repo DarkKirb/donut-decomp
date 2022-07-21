@@ -115,9 +115,9 @@ onSwitchOn__Q43scn4step7gimmick14SwitchReceiverFv:
 __vt__Q43scn4step7gimmick14SwitchReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F7C78
-	.4byte 0x802F7D00
-	.4byte 0x802F7CFC
-	.4byte 0x802F7CF8
-	.4byte 0x802F7CF4
-	.4byte 0x802F7CF0
+	.byte4 __dt__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchOn__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchOff__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchToggle__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchOnFromSuperBeamSwitch__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 checkDemoPos__Q43scn4step7gimmick14SwitchReceiverCFRQ33hel4math7Vector2

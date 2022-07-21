@@ -92,7 +92,7 @@ Remove__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager:
 __vt__Q34nw4r2ef9DrawOrder:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800A39E0  ;# ptr
-	.4byte 0x800A3A60  ;# ptr
-	.4byte 0x800A3950  ;# ptr
+	.byte4 Add__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager
+	.byte4 Remove__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager
+	.byte4 Draw__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectRCQ34nw4r2ef8DrawInfo
 	.4byte 0

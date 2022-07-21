@@ -463,17 +463,17 @@ $$227127:
 	.4byte 0x00000058
 	.4byte 0
 	.4byte 0x02000028
-	.4byte 0x800148E0  ;# ptr
+	.byte4 __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
 	.4byte 0x8680001D
 	.4byte 0
-	.4byte 0x80006BD0  ;# ptr
+	.byte4 __dt__Q23std9exceptionFv
 	.4byte 0x02000020
-	.4byte 0x800148E0  ;# ptr
+	.byte4 __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte 0x80006BD0  ;# ptr
+	.byte4 __dt__Q23std9exceptionFv
 	.4byte 0x82000030
-	.4byte 0x800149D8  ;# ptr
+	.byte4 __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
 .global $$227197
 $$227197:
 	.4byte 0x18180000
@@ -490,27 +490,27 @@ $$227197:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$225557
 $$225557:
-	.4byte 0x80014948  ;# ptr
+	.byte4 __dt__Q23std11logic_errorFv
 	.4byte 0x00000090
-	.4byte 0x80006804  ;# ptr
+	.byte4 $$225556
 .global $$226578
 $$226578:
-	.4byte 0x800149D8  ;# ptr
+	.byte4 __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
 	.4byte 0x00000064
-	.4byte 0x8000682C  ;# ptr
+	.byte4 $$226577
 .global $$227128
 $$227128:
-	.4byte 0x80014A3C  ;# ptr
+	.byte4 do_replace__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1FUlUlPCcPCcQ23std26random_access_iterator_tag
 	.4byte 0x000003F0
-	.4byte 0x80006834  ;# ptr
+	.byte4 $$227127
 .global $$227198
 $$227198:
-	.4byte 0x80014E2C  ;# ptr
+	.byte4 __dt__Q23std12length_errorFv
 	.4byte 0x00000094
-	.4byte 0x80006894  ;# ptr
+	.byte4 $$227197
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80014EC4  ;# ptr
+	.byte4 __sinit_$$3locale_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210379
@@ -543,41 +543,41 @@ $$2stringBase0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23std12out_of_range
 __vt__Q23std12out_of_range:
-	.4byte 0x80556468
+	.byte4 __RTTI__Q23std12out_of_range
 	.4byte 0
-	.4byte 0x80014EC0  ;# ptr
-	.4byte 0x80014944  ;# ptr
+	.byte4 __dt__Q23std12out_of_rangeFv
+	.byte4 what__Q23std11logic_errorCFv
 .global $$210380
 $$210380:
-	.4byte 0x80556420
+	.byte4 __RTTI__Q23std9exception
 	.4byte 0
-	.4byte 0x80556478
+	.byte4 __RTTI__Q23std11logic_error
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q23std12length_error
 __vt__Q23std12length_error:
-	.4byte 0x80556470
+	.byte4 __RTTI__Q23std12length_error
 	.4byte 0
-	.4byte 0x80014E2C  ;# ptr
-	.4byte 0x80014944  ;# ptr
+	.byte4 __dt__Q23std12length_errorFv
+	.byte4 what__Q23std11logic_errorCFv
 .global $$210382
 $$210382:
-	.4byte 0x80556420
+	.byte4 __RTTI__Q23std9exception
 	.4byte 0
-	.4byte 0x80556478
+	.byte4 __RTTI__Q23std11logic_error
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q23std11logic_error
 __vt__Q23std11logic_error:
-	.4byte 0x80556478
+	.byte4 __RTTI__Q23std11logic_error
 	.4byte 0
-	.4byte 0x80014948  ;# ptr
-	.4byte 0x80014944  ;# ptr
+	.byte4 __dt__Q23std11logic_errorFv
+	.byte4 what__Q23std11logic_errorCFv
 .global $$210388
 $$210388:
-	.4byte 0x80556420
+	.byte4 __RTTI__Q23std9exception
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -585,16 +585,16 @@ $$210388:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std12out_of_range
 __RTTI__Q23std12out_of_range:
-	.4byte 0x80407658
-	.4byte 0x80421A58
+	.byte4 $$210379
+	.byte4 $$210380
 .global __RTTI__Q23std12length_error
 __RTTI__Q23std12length_error:
-	.4byte 0x8040766C
-	.4byte 0x80421A80
+	.byte4 $$210381
+	.byte4 $$210382
 .global __RTTI__Q23std11logic_error
 __RTTI__Q23std11logic_error:
-	.4byte 0x80407680
-	.4byte 0x80421AA8
+	.byte4 $$210387
+	.byte4 $$210388
 .global $$211481
 $$211481:
 	.byte 0x00

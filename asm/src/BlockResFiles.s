@@ -164,7 +164,7 @@ __sinit_$$3BlockResFiles_cpp:
 /* 80302E60 002FECA0  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80302E30
+	.byte4 __sinit_$$3BlockResFiles_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248773
@@ -222,126 +222,126 @@ $$248793:
 	.balign 4
 .global T_CONTEXT_TABLE__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2
 T_CONTEXT_TABLE__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
-	.4byte 0x8047FF88
+	.byte4 $$248773
 	.4byte 0
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8047FFA0
-	.4byte 0x8055A580
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8047FFA0
-	.4byte 0x8055A588
-	.4byte 0x8047FFA0
-	.4byte 0x8055A590
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8047FFB8
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248775
+	.byte4 $$248776
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248775
+	.byte4 $$248777
+	.byte4 $$248775
+	.byte4 $$248778
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248779
 	.4byte 0
-	.4byte 0x8047FFD0
+	.byte4 $$248780
 	.4byte 0
-	.4byte 0x8047FFD0
+	.byte4 $$248780
 	.4byte 0
-	.4byte 0x8047FFF0
+	.byte4 $$248781
 	.4byte 0
-	.4byte 0x8047FFA0
-	.4byte 0x8055A598
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8047FFA0
-	.4byte 0x80480010
-	.4byte 0x8047FFA0
-	.4byte 0x8048001C
-	.4byte 0x8047FFA0
-	.4byte 0x80480028
-	.4byte 0x8047FFA0
-	.4byte 0x8055A5A0
-	.4byte 0x8047FFA0
-	.4byte 0x8055A5A8
-	.4byte 0x8047FFA0
-	.4byte 0x80480034
-	.4byte 0x80480040
+	.byte4 $$248775
+	.byte4 $$248782
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248775
+	.byte4 $$248783
+	.byte4 $$248775
+	.byte4 $$248784
+	.byte4 $$248775
+	.byte4 $$248785
+	.byte4 $$248775
+	.byte4 $$248786
+	.byte4 $$248775
+	.byte4 $$248787
+	.byte4 $$248775
+	.byte4 $$248788
+	.byte4 $$248789
 	.4byte 0
-	.4byte 0x8047FFA0
-	.4byte 0x80480058
-	.4byte 0x80480064
+	.byte4 $$248775
+	.byte4 $$248790
+	.byte4 $$248791
 	.4byte 0
-	.4byte 0x8048007C
+	.byte4 $$248792
 	.4byte 0
-	.4byte 0x80480098
+	.byte4 $$248793
 	.4byte 0
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
-	.4byte 0x8055A578
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
+	.byte4 $$248774
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248772
@@ -374,5 +374,5 @@ $$248787:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2
 T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
-	.4byte 0x8055A570
+	.byte4 $$248772
 	.4byte 0

@@ -572,7 +572,7 @@ lbl_800B5F2C:
 __vt__Q34nw4r2ef17EmitterFormSphere:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800B5780  ;# ptr
+	.byte4 Emission__Q34nw4r2ef17EmitterFormSphereFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

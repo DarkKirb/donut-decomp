@@ -199,11 +199,11 @@ __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15Sta
 __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A0C90  ;# ptr
-	.4byte 0x802A0C0C  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraiseFv
+	.byte4 onStart__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -211,11 +211,11 @@ __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise:
 __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A6058  ;# ptr
-	.4byte 0x802A5FD4  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraiseFv
+	.byte4 onStart__Q53scn4step5enemy6chilly23BrainCreditWalkToPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -223,15 +223,15 @@ __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise:
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802ED2C0  ;# ptr
-	.4byte 0x802ED2A0  ;# ptr
+	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802ED2BC  ;# ptr
-	.4byte 0x802ED21C  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraiseFv
+	.byte4 onStart__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

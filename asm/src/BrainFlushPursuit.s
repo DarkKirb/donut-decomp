@@ -126,21 +126,21 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12Sta
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80291240  ;# ptr
-	.4byte 0x80291200  ;# ptr
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029123C  ;# ptr
-	.4byte 0x8029121C  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common17BrainFlushPursuit
 __vt__Q53scn4step5enemy6common17BrainFlushPursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80291238  ;# ptr
-	.4byte 0x80291108  ;# ptr
-	.4byte 0x80291184  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.byte4 onStart__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.byte4 onRecover__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

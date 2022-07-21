@@ -525,49 +525,49 @@ lbl_8038A028:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21
 $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21:
-	.4byte 0x8055B2B0
+	.byte4 $$249586
 	.4byte 0
-	.4byte 0x8048B4B0
+	.byte4 $$249587
 	.4byte 0
-	.4byte 0x8048B4C4
+	.byte4 $$249588
 	.4byte 0
-	.4byte 0x8048B4D0
+	.byte4 $$249589
 	.4byte 0
-	.4byte 0x8048B4E0
+	.byte4 $$249590
 	.4byte 0
-	.4byte 0x8055B2B8
+	.byte4 $$249591
 	.4byte 0
-	.4byte 0x8048B4EC
+	.byte4 $$249592
 	.4byte 0
-	.4byte 0x8048B4F8
+	.byte4 $$249593
 	.4byte 0
-	.4byte 0x8048B50C
+	.byte4 $$249594
 	.4byte 0
-	.4byte 0x8048B518
+	.byte4 $$249595
 	.4byte 0
-	.4byte 0x8048B52C
+	.byte4 $$249596
 	.4byte 0
-	.4byte 0x8055B2C0
+	.byte4 $$249597
 	.4byte 0
-	.4byte 0x8048B53C
+	.byte4 $$249598
 	.4byte 0
-	.4byte 0x8048B548
+	.byte4 $$249599
 	.4byte 0
-	.4byte 0x8048B55C
+	.byte4 $$249600
 	.4byte 0
-	.4byte 0x8048B574
+	.byte4 $$249601
 	.4byte 0
-	.4byte 0x8048B584
+	.byte4 $$249602
 	.4byte 0
-	.4byte 0x8048B59C
+	.byte4 $$249603
 	.4byte 0
-	.4byte 0x8048B5A8
+	.byte4 $$249604
 	.4byte 0
-	.4byte 0x8048B5B8
+	.byte4 $$249605
 	.4byte 0
-	.4byte 0x8048B5C4
+	.byte4 $$249606
 	.4byte 0
-	.4byte 0x8055B2C8
+	.byte4 $$249607
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -669,27 +669,27 @@ $$256366:
 __vt__Q53scn4step4hero5sword5Sword:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80389D00
-	.4byte 0x80389D8C
-	.4byte 0x8032B7A0
-	.4byte 0x8032B7A4
-	.4byte 0x8032B7A8
-	.4byte 0x80389EB8
-	.4byte 0x80389FD4
-	.4byte 0x8032B7B4
-	.4byte 0x8032B7B8
-	.4byte 0x8032B7BC
-	.4byte 0x8032B7C0
-	.4byte 0x8032B7C4
-	.4byte 0x8032B7C8
-	.4byte 0x8032B7CC
-	.4byte 0x8032B7D0
-	.4byte 0x8032B7D4
-	.4byte 0x8032B7D8
-	.4byte 0x8032B7DC
-	.4byte 0x8032B7E0
-	.4byte 0x8032B7E4
-	.4byte 0x8032B7E8
+	.byte4 __dt__Q53scn4step4hero5sword5SwordFv
+	.byte4 setup__Q53scn4step4hero5sword5SwordFv
+	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeState__Q53scn4step4hero5sword5SwordFv
+	.byte4 onStateEndCleanUp__Q53scn4step4hero5sword5SwordFv
+	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procAnim__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249578
@@ -702,8 +702,8 @@ $$249579:
 	.balign 4
 .global $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21
 $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21:
-	.4byte 0x8055B298
-	.4byte 0x8055B2A0
+	.byte4 $$249578
+	.byte4 $$249579
 .global $$249586
 $$249586:
 	.asciz "Carry"

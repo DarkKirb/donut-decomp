@@ -175,12 +175,12 @@ procFixPos__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv:
 __vt__Q53scn4step5enemy11bladeknight17StateDoubleAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80297950  ;# ptr
-	.4byte 0x80297954  ;# ptr
-	.4byte 0x80297A40  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80297B34  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.byte4 procAnim__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.byte4 procMove__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255847

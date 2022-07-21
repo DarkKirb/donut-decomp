@@ -619,13 +619,13 @@ sceneChange__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv:
 __vt__Q53scn4step4hero7gimmick23StateChallengeBattleWin:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8037A018
-	.4byte 0x8037A0D4
-	.4byte 0x8037A1C4
-	.4byte 0x8035550C
-	.4byte 0x8037A1C8
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.byte4 procAnim__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.byte4 procMove__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

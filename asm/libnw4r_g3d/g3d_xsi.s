@@ -841,22 +841,22 @@ lbl_800E85EC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable:
-	.4byte 0x800E7CC0  ;# ptr
-	.4byte 0x800E7BA0  ;# ptr
-	.4byte 0x800E7C70  ;# ptr
-	.4byte 0x800E7AC0  ;# ptr
-	.4byte 0x800E7B00  ;# ptr
-	.4byte 0x800E7A30  ;# ptr
-	.4byte 0x800E79F0  ;# ptr
+	.byte4 MakeTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_T__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_R__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 .global $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20:
-	.4byte 0x800E8250  ;# ptr
-	.4byte 0x800E8090  ;# ptr
-	.4byte 0x800E81C0  ;# ptr
-	.4byte 0x800E7F20  ;# ptr
-	.4byte 0x800E7F50  ;# ptr
-	.4byte 0x800E7E10  ;# ptr
-	.4byte 0x800E7D90  ;# ptr
+	.byte4 ProductTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_T__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_R__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27161

@@ -783,63 +783,63 @@ hideAllText__Q43scn7history6detail4TextFv:
 .global COPYRIGHT_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 COPYRIGHT_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0x00000001
-	.4byte 0x804631B0
+	.byte4 $$251850
 	.4byte 0x00000001
-	.4byte 0x804631C0
+	.byte4 $$251851
 	.4byte 0x00000001
-	.4byte 0x804631D8
+	.byte4 $$251852
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0x00000001
-	.4byte 0x804631F0
+	.byte4 $$251853
 	.4byte 0x00000001
-	.4byte 0x80463204
+	.byte4 $$251854
 	.4byte 0x00000001
-	.4byte 0x80463218
+	.byte4 $$251855
 	.4byte 0x00000001
-	.4byte 0x80463228
+	.byte4 $$251856
 	.4byte 0x00000001
-	.4byte 0x80463240
+	.byte4 $$251857
 	.4byte 0x00000001
-	.4byte 0x80463254
+	.byte4 $$251858
 	.4byte 0x00000001
-	.4byte 0x80463270
+	.byte4 $$251859
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0x00000001
-	.4byte 0x80463280
+	.byte4 $$251860
 	.4byte 0x00000001
-	.4byte 0x80463294
+	.byte4 $$251861
 	.4byte 0x00000001
-	.4byte 0x804632AC
+	.byte4 $$251862
 	.4byte 0x00000001
-	.4byte 0x804632C8
+	.byte4 $$251863
 	.4byte 0x00000001
-	.4byte 0x804632E0
+	.byte4 $$251864
 	.4byte 0x00000001
-	.4byte 0x804632F8
+	.byte4 $$251865
 	.4byte 0x00000001
-	.4byte 0x80463310
+	.byte4 $$251866
 	.4byte 0x00000001
-	.4byte 0x80463324
+	.byte4 $$251867
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0x00000001
-	.4byte 0x8046333C
+	.byte4 $$251868
 	.4byte 0
-	.4byte 0x80558D10
+	.byte4 $$251849
 	.4byte 0x00000001
-	.4byte 0x80463350
+	.byte4 $$251869
 	.4byte 0x00000001
-	.4byte 0x80463368
+	.byte4 $$251870
 	.4byte 0x00000001
-	.4byte 0x80463384
+	.byte4 $$251871
 	.4byte 0x00000001
-	.4byte 0x80463398
+	.byte4 $$251872
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251808
@@ -867,60 +867,60 @@ $$251820:
 	.balign 4
 .global PANES__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 PANES__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.4byte 0x80558C08
-	.4byte 0x80558C10
-	.4byte 0x80558C18
-	.4byte 0x80558C1C
-	.4byte 0x80558C20
-	.4byte 0x80558C24
-	.4byte 0x80558C30
-	.4byte 0x80558C38
-	.4byte 0x80462FE8
-	.4byte 0x80462FF4
-	.4byte 0x80558C40
-	.4byte 0x80558C48
-	.4byte 0x80463000
-	.4byte 0x80558C50
-	.4byte 0x80558C58
-	.4byte 0x80558C60
-	.4byte 0x8046300C
-	.4byte 0x80463018
-	.4byte 0x80558C68
-	.4byte 0x80558C70
-	.4byte 0x80463024
-	.4byte 0x80558C78
-	.4byte 0x80558C80
+	.byte4 $$251800
+	.byte4 $$251801
+	.byte4 $$251802
+	.byte4 $$251803
+	.byte4 $$251804
+	.byte4 $$251805
+	.byte4 $$251806
+	.byte4 $$251807
+	.byte4 $$251808
+	.byte4 $$251809
+	.byte4 $$251810
+	.byte4 $$251811
+	.byte4 $$251812
+	.byte4 $$251813
+	.byte4 $$251814
+	.byte4 $$251815
+	.byte4 $$251816
+	.byte4 $$251817
+	.byte4 $$251818
+	.byte4 $$251819
+	.byte4 $$251820
+	.byte4 $$251821
+	.byte4 $$251822
 .global TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.4byte 0x80558C88
-	.4byte 0x80558C18
-	.4byte 0x80558C30
-	.4byte 0x80462FF4
-	.4byte 0x80558C88
-	.4byte 0x80558C38
-	.4byte 0x80462FE8
-	.4byte 0x80558C1C
-	.4byte 0x80558C10
-	.4byte 0x80558C08
-	.4byte 0x80558C40
-	.4byte 0x80558C20
-	.4byte 0x80558C88
-	.4byte 0x80558C88
-	.4byte 0x80558C24
-	.4byte 0x80558C48
-	.4byte 0x8046300C
-	.4byte 0x80558C78
-	.4byte 0x80463000
-	.4byte 0x80463018
-	.4byte 0x80558C60
-	.4byte 0x80558C68
-	.4byte 0x80558C88
-	.4byte 0x80558C58
-	.4byte 0x80558C88
-	.4byte 0x80558C70
-	.4byte 0x80463024
-	.4byte 0x80558C50
-	.4byte 0x80558C80
+	.byte4 $$251823
+	.byte4 $$251802
+	.byte4 $$251806
+	.byte4 $$251809
+	.byte4 $$251823
+	.byte4 $$251807
+	.byte4 $$251808
+	.byte4 $$251803
+	.byte4 $$251801
+	.byte4 $$251800
+	.byte4 $$251810
+	.byte4 $$251804
+	.byte4 $$251823
+	.byte4 $$251823
+	.byte4 $$251805
+	.byte4 $$251811
+	.byte4 $$251816
+	.byte4 $$251821
+	.byte4 $$251812
+	.byte4 $$251817
+	.byte4 $$251815
+	.byte4 $$251818
+	.byte4 $$251823
+	.byte4 $$251814
+	.byte4 $$251823
+	.byte4 $$251819
+	.byte4 $$251820
+	.byte4 $$251813
+	.byte4 $$251822
 .global $$251827
 $$251827:
 	.asciz "KPinball"
@@ -943,35 +943,35 @@ $$251845:
 	.balign 4
 .global PICTUREPANE_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 PICTUREPANE_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.4byte 0x80558C88
-	.4byte 0x80558C90
-	.4byte 0x80558C94
-	.4byte 0x80463100
-	.4byte 0x80558C88
-	.4byte 0x80558C9C
-	.4byte 0x8046310C
-	.4byte 0x80558CA4
-	.4byte 0x80558CA8
-	.4byte 0x80558CAC
-	.4byte 0x80558CB4
-	.4byte 0x80558CBC
-	.4byte 0x80558C88
-	.4byte 0x80558C88
-	.4byte 0x80558CC0
-	.4byte 0x80558CC4
-	.4byte 0x80463118
-	.4byte 0x80558CCC
-	.4byte 0x80463124
-	.4byte 0x80558CD8
-	.4byte 0x80558CE0
-	.4byte 0x80558CE8
-	.4byte 0x80558C88
-	.4byte 0x80558CF0
-	.4byte 0x80558C88
-	.4byte 0x80558CF8
-	.4byte 0x80463130
-	.4byte 0x80558D00
-	.4byte 0x80558D08
+	.byte4 $$251823
+	.byte4 $$251825
+	.byte4 $$251826
+	.byte4 $$251827
+	.byte4 $$251823
+	.byte4 $$251828
+	.byte4 $$251829
+	.byte4 $$251830
+	.byte4 $$251831
+	.byte4 $$251832
+	.byte4 $$251833
+	.byte4 $$251834
+	.byte4 $$251823
+	.byte4 $$251823
+	.byte4 $$251835
+	.byte4 $$251836
+	.byte4 $$251837
+	.byte4 $$251838
+	.byte4 $$251839
+	.byte4 $$251840
+	.byte4 $$251841
+	.byte4 $$251842
+	.byte4 $$251823
+	.byte4 $$251843
+	.byte4 $$251823
+	.byte4 $$251844
+	.byte4 $$251845
+	.byte4 $$251846
+	.byte4 $$251847
 .global $$251850
 $$251850:
 	.asciz "CopyrightKirby1"

@@ -1167,20 +1167,20 @@ lbl_800F4D94:
 __vt__Q34nw4r3lyt6Layout:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F40A0  ;# ptr
-	.4byte 0x800F41D0  ;# ptr
-	.4byte 0x800F4520  ;# ptr
-	.4byte 0x800F45A0  ;# ptr
-	.4byte 0x800F4600  ;# ptr
-	.4byte 0x800F4690  ;# ptr
-	.4byte 0x800F46C0  ;# ptr
-	.4byte 0x800F46F0  ;# ptr
-	.4byte 0x800F4710  ;# ptr
-	.4byte 0x800F49B0  ;# ptr
-	.4byte 0x800F49E0  ;# ptr
-	.4byte 0x800F4A00  ;# ptr
-	.4byte 0x800F4A20  ;# ptr
-	.4byte 0x800F4A80  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt6LayoutFv
+	.byte4 Build__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor
+	.byte4 CreateAnimTransform__Q34nw4r3lyt6LayoutFv
+	.byte4 CreateAnimTransform__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor
+	.byte4 CreateAnimTransform__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor
+	.byte4 BindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform
+	.byte4 UnbindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform
+	.byte4 UnbindAllAnimation__Q34nw4r3lyt6LayoutFv
+	.byte4 BindAnimationAuto__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor
+	.byte4 SetAnimationEnable__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransformb
+	.byte4 CalculateMtx__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Draw__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Animate__Q34nw4r3lyt6LayoutFUl
+	.byte4 SetTagProcessor__Q34nw4r3lyt6LayoutFPQ34nw4r2ut19TagProcessorBase$$0w$$1
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210260

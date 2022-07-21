@@ -710,37 +710,37 @@ __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20StateCapturedParasol$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80395288
-	.4byte 0x8039520C
+	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20StateCapturedParasol$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20StateCapturedParasol$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol19StateParasolCapture$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol19StateParasolCapture$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80395284
-	.4byte 0x80395228
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol19StateParasolCapture$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol19StateParasolCapture$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol18StateParasolShield$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol18StateParasolShield$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80395280
-	.4byte 0x80395244
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol18StateParasolShield$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol18StateParasolShield$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol17StateParasolSwing$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol17StateParasolSwing$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039527C
-	.4byte 0x80395260
+	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol17StateParasolSwing$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol17StateParasolSwing$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero7parasol17StateParasolSwing
 __vt__Q53scn4step4hero7parasol17StateParasolSwing:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80394A84
-	.4byte 0x80394B40
-	.4byte 0x80394D94
-	.4byte 0x8035550C
-	.4byte 0x80394D98
-	.4byte 0x80394D9C
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7parasol17StateParasolSwingFv
+	.byte4 procAnim__Q53scn4step4hero7parasol17StateParasolSwingFv
+	.byte4 procMove__Q53scn4step4hero7parasol17StateParasolSwingFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7parasol17StateParasolSwingFv
+	.byte4 procObjCollReact__Q53scn4step4hero7parasol17StateParasolSwingFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

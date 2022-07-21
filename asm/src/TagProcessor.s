@@ -125,7 +125,7 @@ setUseButtonPushedChar__Q23lyt12TagProcessorFb:
 __vt__Q23lyt12TagProcessor:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801AC73C  ;# ptr
-	.4byte 0x801AFC70  ;# ptr
-	.4byte 0x801AFD08  ;# ptr
+	.byte4 __dt__Q23lyt12TagProcessorFv
+	.byte4 Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
+	.byte4 CalcRect__Q23lyt12TagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0w$$1
 	.4byte 0

@@ -76,14 +76,14 @@ $$210953:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$210912
 $$210912:
-	.4byte 0x8001488C  ;# ptr
+	.byte4 get_deleter__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1CFRCQ23std9type_info
 	.4byte 0x0000004C
-	.4byte 0x800067F4  ;# ptr
+	.byte4 $$210911
 .global $$210954
 $$210954:
-	.4byte 0x800148E0  ;# ptr
+	.byte4 __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
 	.4byte 0x00000060
-	.4byte 0x800067FC  ;# ptr
+	.byte4 $$210953
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29022
@@ -99,27 +99,27 @@ $$29165:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1
 __vt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1:
-	.4byte 0x80556450
+	.byte4 __RTTI__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1
 	.4byte 0
-	.4byte 0x80014940  ;# ptr
-	.4byte 0x8001488C  ;# ptr
-	.4byte 0x800148D8  ;# ptr
+	.byte4 __dt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1Fv
+	.byte4 get_deleter__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1CFRCQ23std9type_info
+	.byte4 dispose__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1Fv
 .global $$29023
 $$29023:
-	.4byte 0x80556458
+	.byte4 __RTTI__Q43std3tr16detail25shared_ptr_deleter_common
 	.4byte 0
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1
 __RTTI__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1:
-	.4byte 0x804075B8
-	.4byte 0x80421A3C
+	.byte4 $$29022
+	.byte4 $$29023
 .global __RTTI__Q43std3tr16detail25shared_ptr_deleter_common
 __RTTI__Q43std3tr16detail25shared_ptr_deleter_common:
-	.4byte 0x80407608
+	.byte4 $$29050
 	.4byte 0
 .global __RTTI__Q33std6detail20default_delete$$0A0_c$$1
 __RTTI__Q33std6detail20default_delete$$0A0_c$$1:
-	.4byte 0x80407634
+	.byte4 $$29165
 	.4byte 0

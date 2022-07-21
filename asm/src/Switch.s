@@ -952,13 +952,13 @@ $$255943:
 __vt__Q53scn4step7gimmick8switch_n6Switch:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80327854
-	.4byte 0x80327B50
-	.4byte 0x80327B5C
-	.4byte 0x80327B54
-	.4byte 0x80327B58
-	.4byte 0x80327B60
-	.4byte 0x80327B64
+	.byte4 __dt__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 isChangeToOn__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 isChangeToOff__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 onChangeOffToOn__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 onChangeToOn__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 onChangeOnToOff__Q53scn4step7gimmick8switch_n6SwitchFv
+	.byte4 onChangeToOff__Q53scn4step7gimmick8switch_n6SwitchFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255903

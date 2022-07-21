@@ -226,17 +226,17 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8needlous17
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8needlous17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C5D18  ;# ptr
-	.4byte 0x802C5CF8  ;# ptr
+	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8needlous17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8needlous17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy8needlous19BrainAttackStraight
 __vt__Q53scn4step5enemy8needlous19BrainAttackStraight:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C5D14  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x802C5A80  ;# ptr
-	.4byte 0x802C5B50  ;# ptr
-	.4byte 0x802C5B54  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.byte4 onLanding__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.byte4 update__Q53scn4step5enemy8needlous19BrainAttackStraightFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

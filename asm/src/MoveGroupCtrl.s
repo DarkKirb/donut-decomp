@@ -1981,12 +1981,12 @@ t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_
 __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8031775C
-	.4byte 0x80317AB8
-	.4byte 0x80317B24
-	.4byte 0x802F7CF8
-	.4byte 0x802F7CF4
-	.4byte 0x802F7CF0
+	.byte4 __dt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.byte4 onSwitchOn__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.byte4 onSwitchOff__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.byte4 onSwitchToggle__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 onSwitchOnFromSuperBeamSwitch__Q43scn4step7gimmick14SwitchReceiverFv
+	.byte4 checkDemoPos__Q43scn4step7gimmick14SwitchReceiverCFRQ33hel4math7Vector2
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257160

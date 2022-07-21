@@ -2253,22 +2253,22 @@ $$214160:
 __vt__Q34nw4r3g3d12ScnMdlSimple:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800EE1B0  ;# ptr
-	.4byte 0x800EC9B0  ;# ptr
-	.4byte 0x800EE090  ;# ptr
-	.4byte 0x800EE230  ;# ptr
-	.4byte 0x800EE220  ;# ptr
-	.4byte 0x800E9830  ;# ptr
-	.4byte 0x800ED240  ;# ptr
-	.4byte 0x800ED280  ;# ptr
-	.4byte 0x800E96A0  ;# ptr
-	.4byte 0x800E96B0  ;# ptr
-	.4byte 0x800E9900  ;# ptr
-	.4byte 0x800ED3A0  ;# ptr
-	.4byte 0x800ED9B0  ;# ptr
-	.4byte 0x800EDB30  ;# ptr
-	.4byte 0x800EDC10  ;# ptr
-	.4byte 0x800EDC70  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d12ScnMdlSimpleFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d12ScnMdlSimpleFv
+	.byte4 GetTypeObj__Q34nw4r3g3d12ScnMdlSimpleCFv
+	.byte4 GetTypeName__Q34nw4r3g3d12ScnMdlSimpleCFv
+	.byte4 ForEach__Q34nw4r3g3d7ScnLeafFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.byte4 SetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleFUlUl
+	.byte4 GetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleCFUlPUl
+	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.byte4 CalcWorldMtx__Q34nw4r3g3d7ScnLeafFPCQ34nw4r4math5MTX34PUl
+	.byte4 SetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObjQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObj
+	.byte4 RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$214161

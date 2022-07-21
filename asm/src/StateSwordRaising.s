@@ -301,25 +301,25 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20Stat
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80388BF8
-	.4byte 0x80388BBC
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordRaising$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordRaising$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80388BF4
-	.4byte 0x80388BD8
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordRaising$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordRaising$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero5sword17StateSwordRaising
 __vt__Q53scn4step4hero5sword17StateSwordRaising:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803889E0
-	.4byte 0x803889E4
-	.4byte 0x80388AAC
-	.4byte 0x8035550C
-	.4byte 0x80388BB8
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5sword17StateSwordRaisingFv
+	.byte4 procAnim__Q53scn4step4hero5sword17StateSwordRaisingFv
+	.byte4 procMove__Q53scn4step4hero5sword17StateSwordRaisingFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5sword17StateSwordRaisingFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

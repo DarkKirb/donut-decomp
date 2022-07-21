@@ -488,48 +488,48 @@ t_ItemInfoTable__25$$2unnamed$$2Explanation_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0x0000000F
-	.4byte 0x804957B0
+	.byte4 $$251882
 	.4byte 0
 	.4byte 0x00000001
 	.4byte 0x0000000F
-	.4byte 0x804957C8
+	.byte4 $$251883
 	.4byte 0
 	.4byte 0x00000002
 	.4byte 0x0000000F
-	.4byte 0x804957D8
+	.byte4 $$251884
 	.4byte 0x00000001
 	.4byte 0x00000003
 	.4byte 0x0000000F
-	.4byte 0x8055C4F0
+	.byte4 $$251885
 	.4byte 0x00000001
 	.4byte 0x00000003
 	.4byte 0x0000000F
-	.4byte 0x8055C4F8
+	.byte4 $$251886
 	.4byte 0x00000001
 	.4byte 0x00000005
 	.4byte 0x0000000F
-	.4byte 0x8055C500
+	.byte4 $$251887
 	.4byte 0x00000001
 	.4byte 0x00000004
 	.4byte 0x0000000F
-	.4byte 0x804957EC
+	.byte4 $$251888
 	.4byte 0x00000001
 	.4byte 0x00000005
 	.4byte 0x0000000F
-	.4byte 0x804957FC
+	.byte4 $$251889
 	.4byte 0x00000001
 	.4byte 0x00000006
 	.4byte 0x0000000F
-	.4byte 0x8055C508
+	.byte4 $$251890
 .global $$252218
 $$252218:
-	.4byte 0x80495844
-	.4byte 0x80495850
-	.4byte 0x8049585C
-	.4byte 0x80495868
-	.4byte 0x80495874
-	.4byte 0x80495880
-	.4byte 0x80495890
+	.byte4 $$252211
+	.byte4 $$252212
+	.byte4 $$252213
+	.byte4 $$252214
+	.byte4 $$252215
+	.byte4 $$252216
+	.byte4 $$252217
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

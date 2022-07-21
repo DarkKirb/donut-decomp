@@ -403,18 +403,18 @@ lbl_8007DA30:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_hh_action
 bta_hh_action:
-	.4byte 0x8007C118  ;# ptr
-	.4byte 0x8007C2A8  ;# ptr
-	.4byte 0x8007C818  ;# ptr
-	.4byte 0x8007C360  ;# ptr
-	.4byte 0x8007C620  ;# ptr
-	.4byte 0x8007C3B8  ;# ptr
-	.4byte 0x8007BE1C  ;# ptr
-	.4byte 0x8007BFB0  ;# ptr
-	.4byte 0x8007CCB4  ;# ptr
-	.4byte 0x8007CA18  ;# ptr
-	.4byte 0x8007CA34  ;# ptr
-	.4byte 0x8007C180  ;# ptr
+	.byte4 bta_hh_api_disc_act
+	.byte4 bta_hh_open_act
+	.byte4 bta_hh_close_act
+	.byte4 bta_hh_data_act
+	.byte4 bta_hh_ctrl_dat_act
+	.byte4 bta_hh_handsk_act
+	.byte4 bta_hh_start_sdp
+	.byte4 bta_hh_sdp_cmpl
+	.byte4 bta_hh_write_dev_act
+	.byte4 bta_hh_get_dscp_act
+	.byte4 bta_hh_maint_dev_act
+	.byte4 bta_hh_open_cmpl_act
 .global bta_hh_st_idle
 bta_hh_st_idle:
 	.4byte 0x06020C01
@@ -441,9 +441,9 @@ bta_hh_st_connected:
 	.4byte 0x0A030C03
 .global bta_hh_st_tbl
 bta_hh_st_tbl:
-	.4byte 0x804080A0
-	.4byte 0x804080B8
-	.4byte 0x804080D0
+	.byte4 bta_hh_st_idle
+	.byte4 bta_hh_st_w4_conn
+	.byte4 bta_hh_st_connected
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

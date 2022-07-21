@@ -565,31 +565,31 @@ __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8State
 __vt__Q53scn4step4boss9creditdee8StateRun:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024970C  ;# ptr
-	.4byte 0x80249710  ;# ptr
-	.4byte 0x80249738  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x802497A4  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9creditdee8StateRunFv
+	.byte4 procAnim__Q53scn4step4boss9creditdee8StateRunFv
+	.byte4 procMove__Q53scn4step4boss9creditdee8StateRunFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9creditdee8StateRunFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80368BB8
-	.4byte 0x80368B9C
+	.byte4 __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero6common8StateRun
 __vt__Q53scn4step4hero6common8StateRun:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80368824
-	.4byte 0x803688D4
-	.4byte 0x80368AD4
-	.4byte 0x8035550C
-	.4byte 0x80368AD8
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common8StateRunFv
+	.byte4 procAnim__Q53scn4step4hero6common8StateRunFv
+	.byte4 procMove__Q53scn4step4hero6common8StateRunFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common8StateRunFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

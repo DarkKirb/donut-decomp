@@ -625,7 +625,7 @@ $$252851:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2
 T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2:
-	.4byte 0x805576A0
+	.byte4 $$251724
 .global T_FIX_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2
 T_FIX_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2:
-	.4byte 0x8045D4A8
+	.byte4 $$251725

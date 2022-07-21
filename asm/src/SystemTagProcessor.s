@@ -1649,9 +1649,9 @@ applyScale__Q23lyt18SystemTagProcessorCFPQ34nw4r2ut15PrintContext$$0w$$1Us:
 __vt__Q23lyt18SystemTagProcessor:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801AC810  ;# ptr
-	.4byte 0x801AE550  ;# ptr
-	.4byte 0x801AFA44  ;# ptr
+	.byte4 __dt__Q23lyt18SystemTagProcessorFv
+	.byte4 Process__Q23lyt18SystemTagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
+	.byte4 CalcRect__Q23lyt18SystemTagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0w$$1
 .global $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20
 $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20:
 	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."

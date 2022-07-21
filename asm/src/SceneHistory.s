@@ -322,13 +322,13 @@ $$254221:
 __vt__Q33scn7history12SceneHistory:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8020EA80  ;# ptr
-	.4byte 0x8020E8A4  ;# ptr
-	.4byte 0x8020E938  ;# ptr
-	.4byte 0x8020E910  ;# ptr
-	.4byte 0x8020E960  ;# ptr
-	.4byte 0x8020E988  ;# ptr
-	.4byte 0x8020E9B0  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn7history12SceneHistoryCFv
+	.byte4 __dt__Q33scn7history12SceneHistoryFv
+	.byte4 updateMain__Q33scn7history12SceneHistoryFv
+	.byte4 updateUseGPU__Q33scn7history12SceneHistoryFv
+	.byte4 updateDebug__Q33scn7history12SceneHistoryFv
+	.byte4 draw__Q33scn7history12SceneHistoryFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn7history12SceneHistoryCFv
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn7history12SceneHistory$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

@@ -2245,55 +2245,31 @@ logoScrollOutTime__Q33scn11staffcredit9StaffRollCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2
 POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
-	.4byte 0x80496048
+	.byte4 $$251814
 	.4byte 0
-	.4byte 0x80496054
+	.byte4 $$251815
 	.4byte 0
-	.4byte 0x80496068
+	.byte4 $$251816
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80496080
+	.byte4 $$251817
 	.4byte 0
-	.4byte 0x80496090
+	.byte4 $$251818
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8049609C
+	.byte4 $$251819
 	.4byte 0
-	.4byte 0x8055C628
+	.byte4 $$251820
 	.4byte 0x00000001
-	.4byte 0x804960AC
-	.4byte 0x00000001
-	.4byte 0
-	.4byte 0
-	.4byte 0x804960B8
+	.byte4 $$251821
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0x8055C630
-	.4byte 0x00000001
-	.4byte 0x804960CC
-	.4byte 0x00000001
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0x804960D8
-	.4byte 0x00000001
-	.4byte 0x804960E8
-	.4byte 0x00000001
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0x804960FC
+	.byte4 $$251822
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -2301,23 +2277,23 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80496108
+	.byte4 $$251823
 	.4byte 0x00000001
-	.4byte 0x8055C638
-	.4byte 0x00000001
-	.4byte 0x80496118
-	.4byte 0x00000001
-	.4byte 0
-	.4byte 0
-	.4byte 0x8055C640
+	.byte4 $$251824
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
+	.byte4 $$251825
+	.4byte 0x00000001
+	.byte4 $$251826
+	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
-	.4byte 0x80496128
+	.4byte 0
+	.4byte 0
+	.byte4 $$251827
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -2325,15 +2301,39 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8049613C
-	.4byte 0
-	.4byte 0x80496158
+	.byte4 $$251828
 	.4byte 0x00000001
-	.4byte 0x80496168
-	.4byte 0
-	.4byte 0x80496180
+	.byte4 $$251829
 	.4byte 0x00000001
-	.4byte 0x8049618C
+	.byte4 $$251830
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.byte4 $$251831
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.byte4 $$251832
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.byte4 $$251833
+	.4byte 0
+	.byte4 $$251834
+	.4byte 0x00000001
+	.byte4 $$251835
+	.4byte 0
+	.byte4 $$251836
+	.4byte 0x00000001
+	.byte4 $$251837
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
@@ -2341,7 +2341,7 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8049619C
+	.byte4 $$251838
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -2349,7 +2349,7 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804961B0
+	.byte4 $$251839
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -2357,7 +2357,7 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804961C4
+	.byte4 $$251840
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -2365,7 +2365,7 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804961D0
+	.byte4 $$251841
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -2373,7 +2373,7 @@ POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804961E0
+	.byte4 $$251842
 	.4byte 0
 	.4byte 0
 	.4byte 0

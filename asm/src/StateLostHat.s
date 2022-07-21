@@ -123,9 +123,9 @@ procFixPos__Q53scn4step5enemy5cappy12StateLostHatFv:
 __vt__Q53scn4step5enemy5cappy12StateLostHat:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A337C  ;# ptr
-	.4byte 0x802A3380  ;# ptr
-	.4byte 0x802A3448  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A349C  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5cappy12StateLostHatFv
+	.byte4 procAnim__Q53scn4step5enemy5cappy12StateLostHatFv
+	.byte4 procMove__Q53scn4step5enemy5cappy12StateLostHatFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy5cappy12StateLostHatFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

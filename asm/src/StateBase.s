@@ -281,37 +281,37 @@ lbl_803D89A8:
 __vt__Q43scn4step4boss9StateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80234508  ;# ptr
-	.4byte 0x802344F4  ;# ptr
-	.4byte 0x802344F8  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80234500  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q43scn4step4boss9StateBaseFv
+	.byte4 procAnim__Q43scn4step4boss9StateBaseFv
+	.byte4 procMove__Q43scn4step4boss9StateBaseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q43scn4step4boss9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy9StateBase
 __vt__Q43scn4step5enemy9StateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028DDEC  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x8028DDDC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q43scn4step5enemy9StateBaseFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero9StateBase
 __vt__Q43scn4step4hero9StateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8035551C
-	.4byte 0x80355504
-	.4byte 0x80355508
-	.4byte 0x8035550C
-	.4byte 0x80355510
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q43scn4step4hero9StateBaseFv
+	.byte4 procAnim__Q43scn4step4hero9StateBaseFv
+	.byte4 procMove__Q43scn4step4hero9StateBaseFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q43scn4step4hero9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -319,19 +319,19 @@ __vt__Q43scn4step4hero9StateBase:
 __vt__Q43scn4step4item9StateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C5208
-	.4byte 0x803C51FC
-	.4byte 0x803C5200
-	.4byte 0x803C5204
+	.byte4 __dt__Q43scn4step4item9StateBaseFv
+	.byte4 procAnim__Q43scn4step4item9StateBaseFv
+	.byte4 procMove__Q43scn4step4item9StateBaseFv
+	.byte4 procFixPos__Q43scn4step4item9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon9StateBase
 __vt__Q43scn4step6weapon9StateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D8968
-	.4byte 0x803D8954
-	.4byte 0x803D8958
-	.4byte 0x803D895C
-	.4byte 0x803D8960
-	.4byte 0x803D8964
+	.byte4 __dt__Q43scn4step6weapon9StateBaseFv
+	.byte4 procAnim__Q43scn4step6weapon9StateBaseFv
+	.byte4 procMove__Q43scn4step6weapon9StateBaseFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q43scn4step6weapon9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step6weapon9StateBaseFv

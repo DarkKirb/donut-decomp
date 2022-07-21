@@ -683,23 +683,23 @@ $$248860:
 	.balign 4
 .global CPU_EXP_NAME__23$$2unnamed$$2Exception_cpp$$2
 CPU_EXP_NAME__23$$2unnamed$$2Exception_cpp$$2:
-	.4byte 0x80453990
-	.4byte 0x804539A0
-	.4byte 0x80556D38
-	.4byte 0x80556D3C
-	.4byte 0x804539B0
-	.4byte 0x804539C4
-	.4byte 0x80556D40
-	.4byte 0x804539D0
-	.4byte 0x804539E0
-	.4byte 0x804539EC
-	.4byte 0x80556D48
-	.4byte 0x804539F8
-	.4byte 0x80453A0C
-	.4byte 0x80453A18
-	.4byte 0x80453A2C
-	.4byte 0x80453A40
-	.4byte 0x804539D0
+	.byte4 $$248845
+	.byte4 $$248846
+	.byte4 $$248847
+	.byte4 $$248848
+	.byte4 $$248849
+	.byte4 $$248850
+	.byte4 $$248851
+	.byte4 $$248852
+	.byte4 $$248853
+	.byte4 $$248854
+	.byte4 $$248855
+	.byte4 $$248856
+	.byte4 $$248857
+	.byte4 $$248858
+	.byte4 $$248859
+	.byte4 $$248860
+	.byte4 $$248852
 .global $$249260
 $$249260:
 	.asciz "******** EXCEPTION OCCURRED! ********\n"

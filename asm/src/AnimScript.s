@@ -14,7 +14,7 @@ $$248724:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global PLAY_LOOP__Q24gobj10AnimScript
 PLAY_LOOP__Q24gobj10AnimScript:
-	.4byte 0x80454FD0
+	.byte4 $$248723
 .global PLAY_ONE_SHOT__Q24gobj10AnimScript
 PLAY_ONE_SHOT__Q24gobj10AnimScript:
-	.4byte 0x80454FF4
+	.byte4 $$248724

@@ -175,15 +175,15 @@ __dt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14
 __vt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80256F60  ;# ptr
-	.4byte 0x80256F40  ;# ptr
+	.byte4 __dt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1Fv
+	.byte4 create__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1Fv
 .global __vt__Q53scn4step4boss9moundeath19StatePressJumpStart
 __vt__Q53scn4step4boss9moundeath19StatePressJumpStart:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80256DE0  ;# ptr
-	.4byte 0x80256DE4  ;# ptr
-	.4byte 0x80256EE8  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80256F3C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9moundeath19StatePressJumpStartFv
+	.byte4 procAnim__Q53scn4step4boss9moundeath19StatePressJumpStartFv
+	.byte4 procMove__Q53scn4step4boss9moundeath19StatePressJumpStartFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9moundeath19StatePressJumpStartFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

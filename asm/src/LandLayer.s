@@ -1789,7 +1789,7 @@ __sinit_$$3LandLayer_cpp:
 /* 801B9ACC 001B590C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x801B931C  ;# ptr
+	.byte4 __sinit_$$3LandLayer_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2

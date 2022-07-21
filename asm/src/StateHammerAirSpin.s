@@ -267,17 +267,17 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash18State
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash18StateHammerAirSpin$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A2048
-	.4byte 0x803A202C
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash18StateHammerAirSpin$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash18StateHammerAirSpin$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero5smash18StateHammerAirSpin
 __vt__Q53scn4step4hero5smash18StateHammerAirSpin:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A1E84
-	.4byte 0x803A1F34
-	.4byte 0x803A2024
-	.4byte 0x8035550C
-	.4byte 0x803A2028
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5smash18StateHammerAirSpinFv
+	.byte4 procAnim__Q53scn4step4hero5smash18StateHammerAirSpinFv
+	.byte4 procMove__Q53scn4step4hero5smash18StateHammerAirSpinFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5smash18StateHammerAirSpinFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

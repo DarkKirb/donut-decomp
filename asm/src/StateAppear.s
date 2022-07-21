@@ -1203,72 +1203,72 @@ $$257483:
 __vt__Q53scn4step4boss6common11StateAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80244738  ;# ptr
-	.4byte 0x80244814  ;# ptr
-	.4byte 0x80244AE0  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80244AE4  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6common11StateAppearFv
+	.byte4 procAnim__Q53scn4step4boss6common11StateAppearFv
+	.byte4 procMove__Q53scn4step4boss6common11StateAppearFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6common11StateAppearFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024BA6C  ;# ptr
-	.4byte 0x8024BA50  ;# ptr
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditroah11StateAppear
 __vt__Q53scn4step4boss10creditroah11StateAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024B9DC  ;# ptr
-	.4byte 0x8024B9E0  ;# ptr
-	.4byte 0x8024BA08  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024BA4C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss10creditroah11StateAppearFv
+	.byte4 procAnim__Q53scn4step4boss10creditroah11StateAppearFv
+	.byte4 procMove__Q53scn4step4boss10creditroah11StateAppearFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss10creditroah11StateAppearFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025CAF8  ;# ptr
-	.4byte 0x8025CADC  ;# ptr
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss6whispy11StateAppear
 __vt__Q53scn4step4boss6whispy11StateAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025C988  ;# ptr
-	.4byte 0x8025C98C  ;# ptr
-	.4byte 0x8025CA80  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025CA84  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy11StateAppearFv
+	.byte4 procAnim__Q53scn4step4boss6whispy11StateAppearFv
+	.byte4 procMove__Q53scn4step4boss6whispy11StateAppearFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy11StateAppearFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como11StateAppear
 __vt__Q53scn4step5enemy4como11StateAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A77B8  ;# ptr
-	.4byte 0x802A75BC  ;# ptr
-	.4byte 0x802A7680  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A77B4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy4como11StateAppearFv
+	.byte4 procAnim__Q53scn4step5enemy4como11StateAppearFv
+	.byte4 procMove__Q53scn4step5enemy4como11StateAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy4como11StateAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11whispyapple11StateAppear
 __vt__Q53scn4step5enemy11whispyapple11StateAppear:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F1210  ;# ptr
-	.4byte 0x802F128C  ;# ptr
-	.4byte 0x802F1330  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802F1334  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11whispyapple11StateAppearFv
+	.byte4 procAnim__Q53scn4step5enemy11whispyapple11StateAppearFv
+	.byte4 procMove__Q53scn4step5enemy11whispyapple11StateAppearFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy11whispyapple11StateAppearFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257435

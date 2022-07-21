@@ -859,15 +859,15 @@ lbl_801585B8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VX2CommandTable2x16
 VX2CommandTable2x16:
-	.4byte 0x80157900  ;# ptr
-	.4byte 0x80157A30  ;# ptr
-	.4byte 0x80157C50  ;# ptr
-	.4byte 0x80157E70  ;# ptr
-	.4byte 0x80158090  ;# ptr
-	.4byte 0x801582B0  ;# ptr
+	.byte4 VX2CommandSkip12x16__FR14VX2DecoderData
+	.byte4 VX2CommandBack12x16__FR14VX2DecoderData
+	.byte4 VX2CommandBack22x16__FR14VX2DecoderData
+	.byte4 VX2CommandBack32x16__FR14VX2DecoderData
+	.byte4 VX2CommandBack42x16__FR14VX2DecoderData
+	.byte4 VX2CommandBack52x16__FR14VX2DecoderData
 	.4byte 0
 	.4byte 0
-	.4byte 0x801584D0  ;# ptr
+	.byte4 VX2CommandCutH2x16__FR14VX2DecoderData
 	.4byte 0
 .global $$2LOCAL$$2VX2DecodeBlockInter2x16__FR14VX2DecoderData$$2command
 $$2LOCAL$$2VX2DecodeBlockInter2x16__FR14VX2DecoderData$$2command:

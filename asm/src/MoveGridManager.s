@@ -896,17 +896,17 @@ addType_SIceVolcano__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 .global addType_Tbl__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
 addType_Tbl__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 	.4byte 0
-	.4byte 0x80414C48
-	.4byte 0x80414C54
-	.4byte 0x80414C60
-	.4byte 0x80414C74
-	.4byte 0x80414CD8
-	.4byte 0x80414C88
-	.4byte 0x80414C94
-	.4byte 0x80414CA0
-	.4byte 0x80414CB4
-	.4byte 0x80414CC8
-	.4byte 0x8055FB90
+	.byte4 addType_ConditionalStepM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalStepHM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalStepL__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalStepHL__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_SIceVolcano__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalCloudStepM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalCloudStepHM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalCloudStepL__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalCloudStepHL__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalChallengeMasterExDoor__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
+	.byte4 addType_ConditionalCreditOtachidai__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
 .global $$252675
 $$252675:
 	.4byte 0x801BBC00  ;# ptr

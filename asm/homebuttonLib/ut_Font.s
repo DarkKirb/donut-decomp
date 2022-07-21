@@ -57,19 +57,19 @@ lbl_80141854:
 $$298:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8013FDD0  ;# ptr
+	.byte4 ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv
 .global $$299
 $$299:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8013FDE0  ;# ptr
+	.byte4 ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv
 .global $$2100
 $$2100:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8013FE00  ;# ptr
+	.byte4 ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv
 .global $$2101
 $$2101:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8013FDF0  ;# ptr
+	.byte4 ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv

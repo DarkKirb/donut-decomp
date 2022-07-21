@@ -2308,17 +2308,17 @@ __sinit_$$3ef_drawstrategyimpl_cpp:
 /* 800BAB4C 000B698C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x800BAAC0  ;# ptr
+	.byte4 __sinit_$$3ef_drawstrategyimpl_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef16DrawStrategyImpl
 __vt__Q34nw4r2ef16DrawStrategyImpl:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800BAAB0  ;# ptr
+	.byte4 __dt__Q34nw4r2ef16DrawStrategyImplFv
 	.4byte 0
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29915

@@ -3675,150 +3675,150 @@ PtclResPath__Q43scn9grandmenu6effect5TableFQ43scn9grandmenu6effect11PtclResSlot:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x8045EF38
-	.4byte 0x8045EF48
-	.4byte 0x80557DD8
-	.4byte 0x8045EF68
-	.4byte 0x80557DE0
-	.4byte 0x8045EF7C
+	.byte4 $$248738
+	.byte4 $$248739
+	.byte4 $$248740
+	.byte4 $$248741
+	.byte4 $$248742
+	.byte4 $$248743
 .global T_PTCL_INFOS__Q43scn15challengeresult6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn15challengeresult6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x80557DF0
-	.4byte 0x8045F028
-	.4byte 0x80557DF0
-	.4byte 0x8045F038
+	.byte4 $$248738
+	.byte4 $$248739
+	.byte4 $$248738
+	.byte4 $$248740
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x80558D28
-	.4byte 0x804635A0
-	.4byte 0x80558D30
-	.4byte 0x804635B8
-	.4byte 0x804635CC
-	.4byte 0x804635D8
+	.byte4 $$248738
+	.byte4 $$248739
+	.byte4 $$248740
+	.byte4 $$248741
+	.byte4 $$248742
+	.byte4 $$248743
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x8046F564
-	.4byte 0x8046F570
-	.4byte 0x8046F584
-	.4byte 0x8046F590
-	.4byte 0x805594C8
-	.4byte 0x8046F5A8
-	.4byte 0x805594D0
-	.4byte 0x8046F5B8
-	.4byte 0x805594D8
-	.4byte 0x8046F5C8
-	.4byte 0x805594E0
-	.4byte 0x8046F5DC
-	.4byte 0x8046F5F0
-	.4byte 0x8046F600
-	.4byte 0x805594E8
-	.4byte 0x8046F61C
-	.4byte 0x8046F630
-	.4byte 0x8046F63C
-	.4byte 0x805594F0
-	.4byte 0x8046F654
-	.4byte 0x805594F8
-	.4byte 0x8046F668
-	.4byte 0x80559500
-	.4byte 0x8046F67C
-	.4byte 0x80559508
-	.4byte 0x8046F690
-	.4byte 0x80559510
-	.4byte 0x8046F6A4
-	.4byte 0x8046F6B4
-	.4byte 0x8046F6C0
-	.4byte 0x80559518
-	.4byte 0x8046F6D8
-	.4byte 0x80559520
-	.4byte 0x8046F6F0
-	.4byte 0x80559528
-	.4byte 0x8046F700
-	.4byte 0x80559530
-	.4byte 0x8046F714
-	.4byte 0x8046F728
-	.4byte 0x8046F734
-	.4byte 0x80559538
-	.4byte 0x8046F74C
-	.4byte 0x8046F760
-	.4byte 0x8046F774
-	.4byte 0x8046F790
-	.4byte 0x8046F79C
-	.4byte 0x8046F7B4
-	.4byte 0x8046F7C0
-	.4byte 0x8046F7D4
-	.4byte 0x8046F7E0
-	.4byte 0x8046F7F8
-	.4byte 0x8046F804
-	.4byte 0x80559540
-	.4byte 0x8046F81C
-	.4byte 0x80559548
-	.4byte 0x8046F830
-	.4byte 0x8055954C
-	.4byte 0x8046F840
-	.4byte 0x80559554
-	.4byte 0x8046F850
-	.4byte 0x8055955C
-	.4byte 0x8046F860
-	.4byte 0x80559564
-	.4byte 0x8046F870
-	.4byte 0x8046F884
-	.4byte 0x8046F890
-	.4byte 0x8055956C
-	.4byte 0x8046F8A8
-	.4byte 0x80559578
-	.4byte 0x8046F8B8
-	.4byte 0x8046F8CC
-	.4byte 0x8046F8D8
-	.4byte 0x80559580
-	.4byte 0x8046F8F0
-	.4byte 0x80559588
-	.4byte 0x8046F904
-	.4byte 0x80559590
-	.4byte 0x8046F918
-	.4byte 0x80559598
-	.4byte 0x8046F92C
-	.4byte 0x8046F940
-	.4byte 0x8046F94C
-	.4byte 0x805595A0
-	.4byte 0x8046F968
-	.4byte 0x805595A8
-	.4byte 0x8046F978
-	.4byte 0x805595B0
-	.4byte 0x8046F98C
-	.4byte 0x805595B8
-	.4byte 0x8046F9A0
-	.4byte 0x805595C0
-	.4byte 0x8046F9B4
-	.4byte 0x805595C8
-	.4byte 0x8046F9C8
-	.4byte 0x805595D0
-	.4byte 0x8046F9DC
-	.4byte 0x805595D4
-	.4byte 0x8046F9EC
-	.4byte 0x805595E0
-	.4byte 0x8046FA00
-	.4byte 0x805595E8
-	.4byte 0x8046FA14
-	.4byte 0x805595F0
-	.4byte 0x8046FA28
-	.4byte 0x805595F8
-	.4byte 0x8046FA40
-	.4byte 0x80559600
-	.4byte 0x8046FA50
-	.4byte 0x80559608
-	.4byte 0x8046FA68
-	.4byte 0x80559610
-	.4byte 0x8046FA78
-	.4byte 0x8046FA8C
-	.4byte 0x8046FA98
-	.4byte 0x8046FAB0
-	.4byte 0x8046FABC
-	.4byte 0x80559618
-	.4byte 0x8046FAD0
+	.byte4 $$248738
+	.byte4 $$248739
+	.byte4 $$248740
+	.byte4 $$248741
+	.byte4 $$248742
+	.byte4 $$248743
+	.byte4 $$248744
+	.byte4 $$248745
+	.byte4 $$248746
+	.byte4 $$248747
+	.byte4 $$248748
+	.byte4 $$248749
+	.byte4 $$248750
+	.byte4 $$248751
+	.byte4 $$248752
+	.byte4 $$248753
+	.byte4 $$248754
+	.byte4 $$248755
+	.byte4 $$248756
+	.byte4 $$248757
+	.byte4 $$248758
+	.byte4 $$248759
+	.byte4 $$248760
+	.byte4 $$248761
+	.byte4 $$248762
+	.byte4 $$248763
+	.byte4 $$248764
+	.byte4 $$248765
+	.byte4 $$248766
+	.byte4 $$248767
+	.byte4 $$248768
+	.byte4 $$248769
+	.byte4 $$248770
+	.byte4 $$248771
+	.byte4 $$248772
+	.byte4 $$248773
+	.byte4 $$248774
+	.byte4 $$248775
+	.byte4 $$248776
+	.byte4 $$248777
+	.byte4 $$248778
+	.byte4 $$248779
+	.byte4 $$248780
+	.byte4 $$248781
+	.byte4 $$248782
+	.byte4 $$248783
+	.byte4 $$248784
+	.byte4 $$248785
+	.byte4 $$248786
+	.byte4 $$248787
+	.byte4 $$248788
+	.byte4 $$248789
+	.byte4 $$248790
+	.byte4 $$248791
+	.byte4 $$248792
+	.byte4 $$248793
+	.byte4 $$248794
+	.byte4 $$248795
+	.byte4 $$248796
+	.byte4 $$248797
+	.byte4 $$248798
+	.byte4 $$248799
+	.byte4 $$248800
+	.byte4 $$248801
+	.byte4 $$248802
+	.byte4 $$248803
+	.byte4 $$248804
+	.byte4 $$248805
+	.byte4 $$248806
+	.byte4 $$248807
+	.byte4 $$248808
+	.byte4 $$248809
+	.byte4 $$248810
+	.byte4 $$248811
+	.byte4 $$248812
+	.byte4 $$248813
+	.byte4 $$248814
+	.byte4 $$248815
+	.byte4 $$248816
+	.byte4 $$248817
+	.byte4 $$248818
+	.byte4 $$248819
+	.byte4 $$248820
+	.byte4 $$248821
+	.byte4 $$248822
+	.byte4 $$248823
+	.byte4 $$248824
+	.byte4 $$248825
+	.byte4 $$248826
+	.byte4 $$248827
+	.byte4 $$248828
+	.byte4 $$248829
+	.byte4 $$248830
+	.byte4 $$248831
+	.byte4 $$248832
+	.byte4 $$248833
+	.byte4 $$248834
+	.byte4 $$248835
+	.byte4 $$248836
+	.byte4 $$248837
+	.byte4 $$248838
+	.byte4 $$248839
+	.byte4 $$248840
+	.byte4 $$248841
+	.byte4 $$248842
+	.byte4 $$248843
+	.byte4 $$248844
+	.byte4 $$248845
+	.byte4 $$248846
+	.byte4 $$248847
+	.byte4 $$248848
+	.byte4 $$248849
+	.byte4 $$248850
+	.byte4 $$248851
+	.byte4 $$248852
+	.byte4 $$248853
+	.byte4 $$248854
+	.byte4 $$248855
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248738
@@ -6511,57 +6511,57 @@ $$248907:
 	.asciz "step/effect/wing/Flight"
 .global T_POLY_RESPATHS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2
 T_POLY_RESPATHS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x8046FAE4
-	.4byte 0x8046FB00
-	.4byte 0x8046FB24
-	.4byte 0x8046FB48
-	.4byte 0x8046FB68
-	.4byte 0x8046FB88
-	.4byte 0x8046FBB0
-	.4byte 0x8046FBD0
-	.4byte 0x8046FBF0
-	.4byte 0x8046FC0C
-	.4byte 0x8046FC30
-	.4byte 0x8046FC50
-	.4byte 0x8046FC74
-	.4byte 0x8046FC94
-	.4byte 0x8046FCB0
-	.4byte 0x8046FCCC
-	.4byte 0x8046FCE8
-	.4byte 0x8046FD04
-	.4byte 0x8046FD24
-	.4byte 0x8046FD40
-	.4byte 0x8046FD5C
-	.4byte 0x8046FD7C
-	.4byte 0x8046FD9C
-	.4byte 0x8046FDC4
-	.4byte 0x8046FDF0
-	.4byte 0x8046FE14
-	.4byte 0x8046FE34
-	.4byte 0x8046FE54
-	.4byte 0x8046FE74
-	.4byte 0x8046FE94
-	.4byte 0x8046FEB4
-	.4byte 0x8046FED0
-	.4byte 0x8046FEF0
-	.4byte 0x8046FF10
-	.4byte 0x8046FF34
-	.4byte 0x8046FF54
-	.4byte 0x8046FF74
-	.4byte 0x8046FF90
-	.4byte 0x8046FFAC
-	.4byte 0x8046FFCC
-	.4byte 0x8046FFF0
-	.4byte 0x80470014
-	.4byte 0x80470034
-	.4byte 0x80470050
-	.4byte 0x8047006C
-	.4byte 0x80470084
-	.4byte 0x804700A4
-	.4byte 0x804700BC
-	.4byte 0x804700E0
-	.4byte 0x804700F8
-	.4byte 0x80470118
+	.byte4 $$248857
+	.byte4 $$248858
+	.byte4 $$248859
+	.byte4 $$248860
+	.byte4 $$248861
+	.byte4 $$248862
+	.byte4 $$248863
+	.byte4 $$248864
+	.byte4 $$248865
+	.byte4 $$248866
+	.byte4 $$248867
+	.byte4 $$248868
+	.byte4 $$248869
+	.byte4 $$248870
+	.byte4 $$248871
+	.byte4 $$248872
+	.byte4 $$248873
+	.byte4 $$248874
+	.byte4 $$248875
+	.byte4 $$248876
+	.byte4 $$248877
+	.byte4 $$248878
+	.byte4 $$248879
+	.byte4 $$248880
+	.byte4 $$248881
+	.byte4 $$248882
+	.byte4 $$248883
+	.byte4 $$248884
+	.byte4 $$248885
+	.byte4 $$248886
+	.byte4 $$248887
+	.byte4 $$248888
+	.byte4 $$248889
+	.byte4 $$248890
+	.byte4 $$248891
+	.byte4 $$248892
+	.byte4 $$248893
+	.byte4 $$248894
+	.byte4 $$248895
+	.byte4 $$248896
+	.byte4 $$248897
+	.byte4 $$248898
+	.byte4 $$248899
+	.byte4 $$248900
+	.byte4 $$248901
+	.byte4 $$248902
+	.byte4 $$248903
+	.byte4 $$248904
+	.byte4 $$248905
+	.byte4 $$248906
+	.byte4 $$248907
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -6600,8 +6600,8 @@ $$248738:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_POLY_RESPATHS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2
 T_POLY_RESPATHS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x80460B60
-	.4byte 0x80460B78
+	.byte4 $$248741
+	.byte4 $$248742
 .global $$248890
 $$248890:
 	.4byte 0
@@ -6617,8 +6617,8 @@ $$248740:
 	.balign 4
 .global T_POLY_RESPATHS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2
 T_POLY_RESPATHS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x804635F0
-	.4byte 0x8046360C
+	.byte4 $$248745
+	.byte4 $$248746
 .global $$248876
 $$248876:
 	.4byte 0
@@ -6822,14 +6822,14 @@ $$248854:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x8045E968
-	.4byte 0x8045E974
+	.byte4 $$248738
+	.byte4 $$248739
 .global $$248833
 $$248833:
 	.4byte 0x00000001
 .global lbl_8055FD9C
 lbl_8055FD9C:
-	.4byte 0x80545EE0
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248847
@@ -6837,7 +6837,7 @@ $$248847:
 	.4byte 0x00000004
 .global lbl_8055FE24
 lbl_8055FE24:
-	.4byte 0x805461D0
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248842
@@ -6845,19 +6845,19 @@ $$248842:
 	.4byte 0x00000005
 .global lbl_8055FE64
 lbl_8055FE64:
-	.4byte 0x805462B8
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn15challengeresult6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x80460B38
-	.4byte 0x80460B48
+	.byte4 $$248738
+	.byte4 $$248739
 .global $$248870
 $$248870:
 	.4byte 0x00000010
 .global lbl_80560004
 lbl_80560004:
-	.4byte 0x805463E0
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248862
@@ -6865,7 +6865,7 @@ $$248862:
 	.4byte 0x0000000A
 .global lbl_805601F4
 lbl_805601F4:
-	.4byte 0x80546978
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250163
@@ -6873,19 +6873,19 @@ $$250163:
 	.4byte 0x00000244
 .global lbl_80560DEC
 lbl_80560DEC:
-	.4byte 0x80547610
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn9grandmenu6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn9grandmenu6effect19$$2unnamed$$2Table_cpp$$2:
-	.4byte 0x804956F0
-	.4byte 0x804956FC
+	.byte4 $$248738
+	.byte4 $$248739
 .global $$248839
 $$248839:
 	.4byte 0x00000002
 .global lbl_8056423C
 lbl_8056423C:
-	.4byte 0x80556398
+	.byte4 $$2LOCAL$$2t_genContextHeader__Q43scn9grandmenu6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2t_genContextHeader__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2Fv$$2CONTEXTS

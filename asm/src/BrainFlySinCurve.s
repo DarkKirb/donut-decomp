@@ -101,15 +101,15 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common16St
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common16StateFlySinCurve$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80291450  ;# ptr
-	.4byte 0x80291430  ;# ptr
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common16StateFlySinCurve$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common16StateFlySinCurve$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common16BrainFlySinCurve
 __vt__Q53scn4step5enemy6common16BrainFlySinCurve:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029144C  ;# ptr
-	.4byte 0x80291378  ;# ptr
-	.4byte 0x80291428  ;# ptr
-	.4byte 0x8029142C  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common16BrainFlySinCurveFv
+	.byte4 onStart__Q53scn4step5enemy6common16BrainFlySinCurveFv
+	.byte4 onRecover__Q53scn4step5enemy6common16BrainFlySinCurveFv
+	.byte4 onLanding__Q53scn4step5enemy6common16BrainFlySinCurveFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

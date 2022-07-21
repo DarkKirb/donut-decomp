@@ -854,27 +854,27 @@ $$28717:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt18AnimTransformBasic
 __vt__Q36nw4hbm3lyt18AnimTransformBasic:
-	.4byte 0x80443DD0
+	.byte4 __RTTI__Q36nw4hbm3lyt18AnimTransformBasic
 	.4byte 0
-	.4byte 0x80135010  ;# ptr
-	.4byte 0x801350A0  ;# ptr
-	.4byte 0x801351F0  ;# ptr
-	.4byte 0x801352F0  ;# ptr
-	.4byte 0x801353B0  ;# ptr
-	.4byte 0x80135590  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt18AnimTransformBasicFv
+	.byte4 SetResource__Q36nw4hbm3lyt18AnimTransformBasicFPCQ46nw4hbm3lyt3res14AnimationBlockPQ36nw4hbm3lyt16ResourceAccessor
+	.byte4 Bind__Q36nw4hbm3lyt18AnimTransformBasicFPQ36nw4hbm3lyt4Paneb
+	.byte4 Bind__Q36nw4hbm3lyt18AnimTransformBasicFPQ36nw4hbm3lyt8Material
+	.byte4 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt4Pane
+	.byte4 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt8Material
 .global $$28016
 $$28016:
 	.asciz "nw4hbm::lyt::AnimTransformBasic"
 .global $$28017
 $$28017:
-	.4byte 0x80443DF8
+	.byte4 __RTTI__Q36nw4hbm3lyt13AnimTransform
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt18AnimTransformBasic
 __RTTI__Q36nw4hbm3lyt18AnimTransformBasic:
-	.4byte 0x80443DA0
-	.4byte 0x80443DC0
+	.byte4 $$28016
+	.byte4 $$28017
 .global $$28018
 $$28018:
 	.asciz "nw4hbm::lyt::AnimTransform"
@@ -882,5 +882,5 @@ $$28018:
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt13AnimTransform
 __RTTI__Q36nw4hbm3lyt13AnimTransform:
-	.4byte 0x80443DD8
+	.byte4 $$28018
 	.4byte 0

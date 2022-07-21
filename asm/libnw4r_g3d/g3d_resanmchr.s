@@ -2037,14 +2037,14 @@ lbl_800D1F10:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2
 gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2:
-	.4byte 0x800D1790  ;# ptr
-	.4byte 0x800D18B0  ;# ptr
-	.4byte 0x800D1840  ;# ptr
-	.4byte 0x800D19A0  ;# ptr
-	.4byte 0x800D17B0  ;# ptr
-	.4byte 0x800D1A40  ;# ptr
-	.4byte 0x800D18F0  ;# ptr
-	.4byte 0x800D1AE0  ;# ptr
+	.byte4 GetAnmResult___Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_S__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_R__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_SR__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_T__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_ST__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_RT__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
+	.byte4 GetAnmResult_SRT__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r3g3d12ChrAnmResultRCQ34nw4r3g3d17ResAnmChrInfoDataPCQ34nw4r3g3d17ResAnmChrNodeDataf
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28848

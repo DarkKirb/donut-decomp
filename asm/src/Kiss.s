@@ -1172,8 +1172,8 @@ lbl_80344378:
 __vt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80344328
-	.4byte 0x80344268
+	.byte4 __dt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1Fv
+	.byte4 create__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1Fv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256609

@@ -20,5 +20,5 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8bossdemo17S
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8bossdemo17StateBossDemoWait$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803A2C20
-	.4byte 0x803A2C04
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8bossdemo17StateBossDemoWait$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8bossdemo17StateBossDemoWait$$4PQ43scn4step4hero4Hero$$1Fv

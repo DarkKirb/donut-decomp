@@ -4250,11 +4250,11 @@ T_BELTCONVEYOR_SPEED__Q35mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$2:
 __vt__Q35mcoll6detail12ActorDiamond:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801B141C  ;# ptr
-	.4byte 0x801B312C  ;# ptr
-	.4byte 0x801B3124  ;# ptr
-	.4byte 0x801B3134  ;# ptr
-	.4byte 0x801B3184  ;# ptr
+	.byte4 __dt__Q35mcoll6detail12ActorDiamondFv
+	.byte4 actorCurrentPos__Q35mcoll6detail12ActorDiamondCFv
+	.byte4 actorSetCurrentPos__Q35mcoll6detail12ActorDiamondFRCQ33hel4math7Vector2
+	.byte4 actorDetect__Q35mcoll6detail12ActorDiamondFRCQ35mcoll6detail7LandSetRQ35mcoll6detail10IResponderRCQ33hel4math7Vector2RCQ35mcoll6detail17ActorDetectOption
+	.byte4 actorDrawDebug__Q35mcoll6detail12ActorDiamondCFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

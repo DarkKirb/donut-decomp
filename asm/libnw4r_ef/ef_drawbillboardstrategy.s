@@ -2297,11 +2297,11 @@ __dt__Q34nw4r2ef21DrawBillboardStrategyFv:
 __vt__Q34nw4r2ef21DrawBillboardStrategy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800BCCB0  ;# ptr
-	.4byte 0x800BAB90  ;# ptr
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
-	.4byte 0x800BC6D0  ;# ptr
+	.byte4 __dt__Q34nw4r2ef21DrawBillboardStrategyFv
+	.byte4 Draw__Q34nw4r2ef21DrawBillboardStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetCalcAheadFunc__Q34nw4r2ef21DrawBillboardStrategyFPQ34nw4r2ef15ParticleManager
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

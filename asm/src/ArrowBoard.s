@@ -523,10 +523,10 @@ lbl_802FEAF4:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$253055
 $$253055:
-	.4byte 0x8055A528
-	.4byte 0x8055A530
-	.4byte 0x8055A538
-	.4byte 0x8055A53C
+	.byte4 $$253051
+	.byte4 $$253052
+	.byte4 $$253053
+	.byte4 $$253054
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254295

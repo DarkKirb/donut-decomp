@@ -1010,72 +1010,72 @@ __dt__Q53scn4step6weapon12dededehammer14StateExplosionFv:
 __vt__Q53scn4step6weapon12hammerhammer14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E5784
-	.4byte 0x803E5598
-	.4byte 0x803E5778
-	.4byte 0x803D895C
-	.4byte 0x803E577C
-	.4byte 0x803E5780
+	.byte4 __dt__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon12hammerhammer14StateExplosionFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion
 __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E6358
-	.4byte 0x803E635C
-	.4byte 0x803E63B4
-	.4byte 0x803D895C
-	.4byte 0x803E63B8
-	.4byte 0x803E63BC
+	.byte4 __dt__Q53scn4step6weapon16fightersmashshot14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon16fightersmashshot14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon16fightersmashshot14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon16fightersmashshot14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon16fightersmashshot14StateExplosionFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion
 __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E6770
-	.4byte 0x803E6774
-	.4byte 0x803E67CC
-	.4byte 0x803D895C
-	.4byte 0x803E67D0
-	.4byte 0x803E67D4
+	.byte4 __dt__Q53scn4step6weapon15fighterkickshot14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon15fighterkickshot14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon15fighterkickshot14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon15fighterkickshot14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon15fighterkickshot14StateExplosionFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion
 __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803E6D40
-	.4byte 0x803E6D44
-	.4byte 0x803E6E34
-	.4byte 0x803D895C
-	.4byte 0x803E6E38
-	.4byte 0x803E6E3C
+	.byte4 __dt__Q53scn4step6weapon16fighterhadoushot14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon16fighterhadoushot14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon16fighterhadoushot14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon16fighterhadoushot14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon16fighterhadoushot14StateExplosionFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion
 __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EB974
-	.4byte 0x803EB978
-	.4byte 0x803EB9D0
-	.4byte 0x803D895C
-	.4byte 0x803EB9D4
-	.4byte 0x803EB9D8
+	.byte4 __dt__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12dededehammer14StateExplosion
 __vt__Q53scn4step6weapon12dededehammer14StateExplosion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803ECBD0
-	.4byte 0x803EC9E4
-	.4byte 0x803ECBC4
-	.4byte 0x803D895C
-	.4byte 0x803ECBC8
-	.4byte 0x803ECBCC
+	.byte4 __dt__Q53scn4step6weapon12dededehammer14StateExplosionFv
+	.byte4 procAnim__Q53scn4step6weapon12dededehammer14StateExplosionFv
+	.byte4 procMove__Q53scn4step6weapon12dededehammer14StateExplosionFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q53scn4step6weapon12dededehammer14StateExplosionFv
+	.byte4 procObjCollReact__Q53scn4step6weapon12dededehammer14StateExplosionFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256495

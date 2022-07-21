@@ -255,15 +255,15 @@ __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster10StatePanic$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80241A34  ;# ptr
-	.4byte 0x80241A18  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster10StatePanic$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster10StatePanic$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss15challengemaster10StatePanic
 __vt__Q53scn4step4boss15challengemaster10StatePanic:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024186C  ;# ptr
-	.4byte 0x80241870  ;# ptr
-	.4byte 0x8024198C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80241990  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster10StatePanicFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster10StatePanicFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster10StatePanicFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster10StatePanicFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

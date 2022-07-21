@@ -5316,80 +5316,80 @@ onObjStopFinished__Q43scn4step4hero5ModelFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$258142
 $$258142:
-	.4byte 0x8035C6B4
-	.4byte 0x8035C6B4
-	.4byte 0x8035C6B4
-	.4byte 0x8035C6B4
-	.4byte 0x8035C7D4
-	.4byte 0x8035BC10
-	.4byte 0x8035BE24
+	.byte4 Model__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Model__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Model__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Model__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Model__Q53scn4step4hero9modeldesc4MetaFv
+	.byte4 Model__Q53scn4step4hero9modeldesc6DededeFv
+	.byte4 Model__Q53scn4step4hero9modeldesc3DeeFv
 .global $$258152
 $$258152:
-	.4byte 0x8035C634
-	.4byte 0x8035C634
-	.4byte 0x8035C634
-	.4byte 0x8035C634
-	.4byte 0x8035C77C
-	.4byte 0x8035BBE4
-	.4byte 0x8035BDCC
+	.byte4 Anim__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc4MetaFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc6DededeFv
+	.byte4 Anim__Q53scn4step4hero9modeldesc3DeeFv
 .global $$258162
 $$258162:
-	.4byte 0x8035C65C
-	.4byte 0x8035C65C
-	.4byte 0x8035C65C
-	.4byte 0x8035C65C
-	.4byte 0x8035C7A4
-	.4byte 0x8035BC0C
-	.4byte 0x8035BDF4
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc4MetaFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc6DededeFv
+	.byte4 MeshFlip__Q53scn4step4hero9modeldesc3DeeFv
 .global $$258172
 $$258172:
-	.4byte 0x8035C778
-	.4byte 0x8035C778
-	.4byte 0x8035C778
-	.4byte 0x8035C778
-	.4byte 0x8035C8A8
-	.4byte 0x8035BCE4
-	.4byte 0x8035BEF8
+	.byte4 Script__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Script__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Script__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Script__Q53scn4step4hero9modeldesc5KirbyFv
+	.byte4 Script__Q53scn4step4hero9modeldesc4MetaFv
+	.byte4 Script__Q53scn4step4hero9modeldesc6DededeFv
+	.byte4 Script__Q53scn4step4hero9modeldesc3DeeFv
 .global $$258190
 $$258190:
-	.4byte 0x80484E28
-	.4byte 0x80484E48
-	.4byte 0x80484E70
-	.4byte 0x80484E90
-	.4byte 0x80484EB4
-	.4byte 0x80484ED8
-	.4byte 0x80484EFC
+	.byte4 $$258183
+	.byte4 $$258184
+	.byte4 $$258185
+	.byte4 $$258186
+	.byte4 $$258187
+	.byte4 $$258188
+	.byte4 $$258189
 .global $$258207
 $$258207:
-	.4byte 0x80484F20
-	.4byte 0x80484F20
-	.4byte 0x80484F20
-	.4byte 0x80484F20
-	.4byte 0x80484F44
-	.4byte 0x80484F68
-	.4byte 0x80484F90
+	.byte4 $$258203
+	.byte4 $$258203
+	.byte4 $$258203
+	.byte4 $$258203
+	.byte4 $$258204
+	.byte4 $$258205
+	.byte4 $$258206
 .global $$258220
 $$258220:
-	.4byte 0x80484FB4
-	.4byte 0x80484FB4
-	.4byte 0x80484FB4
-	.4byte 0x80484FB4
-	.4byte 0x80484FDC
-	.4byte 0x80485000
-	.4byte 0x80485028
+	.byte4 $$258216
+	.byte4 $$258216
+	.byte4 $$258216
+	.byte4 $$258216
+	.byte4 $$258217
+	.byte4 $$258218
+	.byte4 $$258219
 	.4byte 0
 .global $$258964
 $$258964:
-	.4byte 0x8055AA08
-	.4byte 0x804850E0
-	.4byte 0x804850EC
-	.4byte 0x804850F8
+	.byte4 $$258960
+	.byte4 $$258961
+	.byte4 $$258962
+	.byte4 $$258963
 .global $$258967
 $$258967:
-	.4byte 0x8055AA08
-	.4byte 0x8055AA08
-	.4byte 0x8055AA08
-	.4byte 0x8055AA08
+	.byte4 $$258960
+	.byte4 $$258960
+	.byte4 $$258960
+	.byte4 $$258960
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256416
@@ -5400,20 +5400,20 @@ $$256416:
 __vt__Q33g3d5Model14ScnObjCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80190270  ;# ptr
-	.4byte 0x801903A4  ;# ptr
-	.4byte 0x800E9D20  ;# ptr
-	.4byte 0x801904C4  ;# ptr
-	.4byte 0x800EC990  ;# ptr
-	.4byte 0x800EC9A0  ;# ptr
+	.byte4 __dt__Q33g3d5Model14ScnObjCallbackFv
+	.byte4 ExecCallback_CALC_WORLD__Q33g3d5Model14ScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.byte4 ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.byte4 ExecCallback_CALC_VIEW__Q33g3d5Model14ScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.byte4 ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.byte4 ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
 .global __vt__Q33g3d5Model17CalcWorldCallback
 __vt__Q33g3d5Model17CalcWorldCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8018FFB0  ;# ptr
-	.4byte 0x80190024  ;# ptr
-	.4byte 0x800E3740  ;# ptr
-	.4byte 0x800E3750  ;# ptr
+	.byte4 __dt__Q33g3d5Model17CalcWorldCallbackFv
+	.byte4 ExecCallbackA__Q33g3d5Model17CalcWorldCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.byte4 ExecCallbackB__Q34nw4r3g3d18ICalcWorldCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.byte4 ExecCallbackC__Q34nw4r3g3d18ICalcWorldCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"
@@ -5469,18 +5469,18 @@ $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv:
 __vt__Q24gobj5Model:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8019B11C  ;# ptr
-	.4byte 0x8019B194  ;# ptr
+	.byte4 __dt__Q24gobj5ModelFv
+	.byte4 g3dModel__Q24gobj5ModelFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5chara5Model
 __vt__Q43scn4step5chara5Model:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80270C60  ;# ptr
-	.4byte 0x802710AC  ;# ptr
-	.4byte 0x802710CC  ;# ptr
-	.4byte 0x80271124  ;# ptr
+	.byte4 __dt__Q43scn4step5chara5ModelFv
+	.byte4 onScriptRequested__Q43scn4step5chara5ModelFRCQ24gobj6ScriptUlUl
+	.byte4 onScriptExecPre__Q43scn4step5chara5ModelFRCQ24gobj6Script
+	.byte4 onScriptExecPost__Q43scn4step5chara5ModelFRCQ24gobj6Script
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258183
@@ -5572,10 +5572,10 @@ $$258997:
 __vt__Q43scn4step4hero5Model:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8034D120
-	.4byte 0x8034D83C
-	.4byte 0x8034D9F4
-	.4byte 0x8034DADC
+	.byte4 __dt__Q43scn4step4hero5ModelFv
+	.byte4 onScriptRequested__Q43scn4step4hero5ModelFRCQ24gobj6ScriptUlUl
+	.byte4 onScriptExecPre__Q43scn4step4hero5ModelFRCQ24gobj6Script
+	.byte4 onScriptExecPost__Q43scn4step4hero5ModelFRCQ24gobj6Script
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -5630,10 +5630,10 @@ $$260417:
 	.4byte 0xBF800000
 .global $$258994
 $$258994:
-	.4byte 0x8055AA10
+	.byte4 $$258993
 .global $$258998
 $$258998:
-	.4byte 0x80485104
+	.byte4 $$258997
 .global $$260515
 $$260515:
 	.4byte 0xBE99999A

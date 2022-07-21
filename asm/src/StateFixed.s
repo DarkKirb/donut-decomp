@@ -65,7 +65,7 @@ __dt__Q53scn4step4item5state10StateFixedFv:
 __vt__Q53scn4step4item5state10StateFixed:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C7E08
-	.4byte 0x803C51FC
-	.4byte 0x803C7D98
-	.4byte 0x803C5204
+	.byte4 __dt__Q53scn4step4item5state10StateFixedFv
+	.byte4 procAnim__Q43scn4step4item9StateBaseFv
+	.byte4 procMove__Q53scn4step4item5state10StateFixedFv
+	.byte4 procFixPos__Q43scn4step4item9StateBaseFv

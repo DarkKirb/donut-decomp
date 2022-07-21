@@ -358,13 +358,13 @@ GetRuntimeTypeInfo__Q23seq17SequenceGrandMenuCFv:
 __vt__Q23seq17SequenceGrandMenu:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FE74C
-	.4byte 0x803FE418
-	.4byte 0x803FE41C
-	.4byte 0x803FE460
-	.4byte 0x803FE538
-	.4byte 0x803FE544
-	.4byte 0x803FE614
+	.byte4 GetRuntimeTypeInfo__Q23seq17SequenceGrandMenuCFv
+	.byte4 __dt__Q23seq17SequenceGrandMenuFv
+	.byte4 nextAction__Q23seq17SequenceGrandMenuCFv
+	.byte4 createChildSequence__Q23seq17SequenceGrandMenuCFv
+	.byte4 onChildSequenceEnd__Q23seq17SequenceGrandMenuFRQ23seq9ISequence
+	.byte4 createScene__Q23seq17SequenceGrandMenuCFv
+	.byte4 onSceneEnd__Q23seq17SequenceGrandMenuFRQ23scn6IScene
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -37905,7 +37905,7 @@ screenRemapDrawEnd__Q23sfx7ManagerFv:
 /* 80401308 003FD148  4B C2 31 98 */	b DefaultSwitchThreadCallback
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x801D13FC  ;# ptr
+	.byte4 __sinit_$$3Manager_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$257185
@@ -37915,11 +37915,11 @@ $$257185:
 	.4byte 0x0000000A
 .global $$257316
 $$257316:
-	.4byte 0x8047F8DC
-	.4byte 0x8047F8F8
-	.4byte 0x8047F914
-	.4byte 0x8047F930
-	.4byte 0x8047F950
+	.byte4 $$257311
+	.byte4 $$257312
+	.byte4 $$257313
+	.byte4 $$257314
+	.byte4 $$257315
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251648
@@ -37965,24 +37965,24 @@ $$249107:
 	.4byte 0
 .global t_fileNames__Q23msg21$$2unnamed$$2Manager_cpp$$2
 t_fileNames__Q23msg21$$2unnamed$$2Manager_cpp$$2:
-	.4byte 0x805575D0
-	.4byte 0x805575D8
-	.4byte 0x805575E0
-	.4byte 0x805575E8
-	.4byte 0x8045D108
-	.4byte 0x8045D114
-	.4byte 0x8045D124
-	.4byte 0x805575F0
-	.4byte 0x805575F8
-	.4byte 0x80557600
-	.4byte 0x80557608
-	.4byte 0x80557610
-	.4byte 0x80557618
-	.4byte 0x8045D138
-	.4byte 0x8045D144
-	.4byte 0x8045D150
-	.4byte 0x8045D15C
-	.4byte 0x8045D168
+	.byte4 $$249090
+	.byte4 $$249091
+	.byte4 $$249092
+	.byte4 $$249093
+	.byte4 $$249094
+	.byte4 $$249095
+	.byte4 $$249096
+	.byte4 $$249097
+	.byte4 $$249098
+	.byte4 $$249099
+	.byte4 $$249100
+	.byte4 $$249101
+	.byte4 $$249102
+	.byte4 $$249103
+	.byte4 $$249104
+	.byte4 $$249105
+	.byte4 $$249106
+	.byte4 $$249107
 .global $$249787
 $$249787:
 	.asciz "MsgManager"
@@ -38010,11 +38010,11 @@ $$252573:
 __vt__Q43scn4step2bg7Manager:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802273A8  ;# ptr
-	.4byte 0x802276B0  ;# ptr
-	.4byte 0x802276B8  ;# ptr
-	.4byte 0x802276C0  ;# ptr
-	.4byte 0x802276D0  ;# ptr
+	.byte4 __dt__Q43scn4step2bg7ManagerFv
+	.byte4 onStopNormalStarted__Q43scn4step2bg7ManagerFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step2bg7ManagerFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step2bg7ManagerFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step2bg7ManagerFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -38033,42 +38033,42 @@ T_SCORE_KIND_INFO_TABLE__21$$2unnamed$$2Manager_cpp$$2:
 	.4byte 0x00000127
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8026823C  ;# ptr
+	.byte4 resFile100__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268C84  ;# ptr
+	.byte4 incCoinSCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0x00000128
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8026822C  ;# ptr
+	.byte4 resFile1000__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268CD8  ;# ptr
+	.byte4 incCoinLCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0x01000000
 	.4byte 0x00000126
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268234  ;# ptr
+	.byte4 resFile50__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268D2C  ;# ptr
+	.byte4 incEnemyCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0x00000128
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8026822C  ;# ptr
+	.byte4 resFile1000__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268D88  ;# ptr
+	.byte4 incEnemyLCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0x01000000
 	.4byte 0x00000244
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268224  ;# ptr
+	.byte4 resFile100Minus__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x80268DDC  ;# ptr
+	.byte4 incDamageScore__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 .global $$255619
 $$255619:
@@ -38112,20 +38112,20 @@ $$259391:
 __vt__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6bouncy11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028A278  ;# ptr
-	.4byte 0x8028A214  ;# ptr
+	.byte4 __dt__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6bouncy11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
+	.byte4 create__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6bouncy11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
 .global __vt__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1
 __vt__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028A274  ;# ptr
-	.4byte 0x8028A234  ;# ptr
+	.byte4 __dt__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
+	.byte4 create__Q24util97StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StatePraise$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StateGoodbye$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StateGoodbye$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028A270  ;# ptr
-	.4byte 0x8028A254  ;# ptr
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StateGoodbye$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StateGoodbye$$4PQ43scn4step5enemy5Enemy$$1Fv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2__ct__Q43scn4step7gimmick21FlowEffectManager$$024$$1FRQ33scn4step9Component
@@ -38192,26 +38192,26 @@ $$266848:
 __vt__Q24util179StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$4Q33hel4math7Vector3$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80348E2C
-	.4byte 0x80348D68
+	.byte4 __dt__Q24util179StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$4Q33hel4math7Vector3$$1Fv
+	.byte4 create__Q24util179StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$4Q33hel4math7Vector3$$1Fv
 .global __vt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$1
 __vt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80348E28
-	.4byte 0x80348DC8
+	.byte4 __dt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$1Fv
+	.byte4 create__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StateSpaceJump$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero12interference14StateSpaceJump9NextState$$1Fv
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateEnterMahoroa$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateEnterMahoroa$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80348E24
-	.4byte 0x80348DE8
+	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateEnterMahoroa$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateEnterMahoroa$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateClearDanceFall$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateClearDanceFall$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80348E20
-	.4byte 0x80348E04
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateClearDanceFall$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateClearDanceFall$$4PQ43scn4step4hero4Hero$$1Fv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256047
@@ -38226,32 +38226,32 @@ $$256049:
 $$256236:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA04
+	.byte4 safeboolFunc__Q24util37PlacementNew$$0Q34info6common8SkipHelp$$1CFv
 .global $$256340
 $$256340:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA08
+	.byte4 safeboolFunc__Q24util35PlacementNew$$0Q34info5cutin7Manager$$1CFv
 .global $$256351
 $$256351:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA0C
+	.byte4 safeboolFunc__Q24util43PlacementNew$$0Q43scn4step4info11InfoControl$$1CFv
 .global $$256362
 $$256362:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA10
+	.byte4 safeboolFunc__Q24util40PlacementNew$$0Q53scn4step4info4ship4Ship$$1CFv
 .global $$256373
 $$256373:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA14
+	.byte4 safeboolFunc__Q24util42PlacementNew$$0Q53scn4step4info5lvmap5LvMap$$1CFv
 .global $$256384
 $$256384:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803ADA18
+	.byte4 safeboolFunc__Q24util50PlacementNew$$0Q53scn4step4info9challenge9Challenge$$1CFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254030

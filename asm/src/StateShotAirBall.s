@@ -358,13 +358,13 @@ procFixPos__Q53scn4step4hero6common16StateShotAirBallFv:
 __vt__Q53scn4step4boss6whispy16StateShotAirBall:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025E12C  ;# ptr
-	.4byte 0x8025E210  ;# ptr
-	.4byte 0x8025E37C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025E380  ;# ptr
-	.4byte 0x80234504  ;# ptr
-	.4byte 0x8025DF8C  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
+	.byte4 procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.byte4 procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.byte4 reqAirBall__Q53scn4step4boss6whispy16StateShotAirBallFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -372,13 +372,13 @@ __vt__Q53scn4step4boss6whispy16StateShotAirBall:
 __vt__Q53scn4step4hero6common16StateShotAirBall:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036A19C
-	.4byte 0x8036A218
-	.4byte 0x8036A2B4
-	.4byte 0x8035550C
-	.4byte 0x8036A32C
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common16StateShotAirBallFv
+	.byte4 procAnim__Q53scn4step4hero6common16StateShotAirBallFv
+	.byte4 procMove__Q53scn4step4hero6common16StateShotAirBallFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common16StateShotAirBallFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

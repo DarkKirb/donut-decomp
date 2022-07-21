@@ -263,23 +263,23 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17StateCapturedWhip$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038A76C
-	.4byte 0x8038A730
+	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17StateCapturedWhip$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17StateCapturedWhip$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038A768
-	.4byte 0x8038A74C
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero4whip16StateWhipCapture
 __vt__Q53scn4step4hero4whip16StateWhipCapture:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038A484
-	.4byte 0x8038A534
-	.4byte 0x8038A5E8
-	.4byte 0x8038A5EC
-	.4byte 0x8038A660
-	.4byte 0x8038A664
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procAnim__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procMove__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procConstraint__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procFixPos__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procObjCollReact__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

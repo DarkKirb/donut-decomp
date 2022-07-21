@@ -955,25 +955,25 @@ $$29664:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt6Layout
 __vt__Q36nw4hbm3lyt6Layout:
-	.4byte 0x80444008
+	.byte4 __RTTI__Q36nw4hbm3lyt6Layout
 	.4byte 0
-	.4byte 0x80136E00  ;# ptr
-	.4byte 0x80136F30  ;# ptr
-	.4byte 0x80137240  ;# ptr
-	.4byte 0x80137390  ;# ptr
-	.4byte 0x801373C0  ;# ptr
-	.4byte 0x801373D0  ;# ptr
-	.4byte 0x801373F0  ;# ptr
-	.4byte 0x80137420  ;# ptr
-	.4byte 0x80137430  ;# ptr
-	.4byte 0x80137440  ;# ptr
-	.4byte 0x801374C0  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt6LayoutFv
+	.byte4 Build__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor
+	.byte4 CreateAnimTransform__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor
+	.byte4 BindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 UnbindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 UnbindAllAnimation__Q36nw4hbm3lyt6LayoutFv
+	.byte4 SetAnimationEnable__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 CalculateMtx__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Draw__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Animate__Q36nw4hbm3lyt6LayoutFUl
+	.byte4 SetTagProcessor__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm2ut19TagProcessorBase$$0w$$1
 .global $$28461
 $$28461:
 	.asciz "nw4hbm::lyt::Layout"
 .global __RTTI__Q36nw4hbm3lyt6Layout
 __RTTI__Q36nw4hbm3lyt6Layout:
-	.4byte 0x80443FF4
+	.byte4 $$28461
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

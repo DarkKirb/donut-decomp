@@ -676,13 +676,13 @@ $$253523:
 __vt__Q33scn17challengetutorial22SceneChallengeTutorial:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801F7044  ;# ptr
-	.4byte 0x801F6E00  ;# ptr
-	.4byte 0x801F6E98  ;# ptr
-	.4byte 0x801F6E94  ;# ptr
-	.4byte 0x801F6FF4  ;# ptr
-	.4byte 0x801F6FF8  ;# ptr
-	.4byte 0x801F7030  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn17challengetutorial22SceneChallengeTutorialCFv
+	.byte4 __dt__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.byte4 updateMain__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.byte4 updateUseGPU__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.byte4 updateDebug__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.byte4 draw__Q33scn17challengetutorial22SceneChallengeTutorialFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn17challengetutorial22SceneChallengeTutorialCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -324,16 +324,16 @@ lbl_803AFACC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$253080
 $$253080:
-	.4byte 0x8055B680
-	.4byte 0x8055B688
-	.4byte 0x8055B690
-	.4byte 0x8055B694
+	.byte4 $$253076
+	.byte4 $$253077
+	.byte4 $$253078
+	.byte4 $$253079
 .global $$253090
 $$253090:
-	.4byte 0x8055B680
-	.4byte 0x8055B688
-	.4byte 0x8055B690
-	.4byte 0x8055B694
+	.byte4 $$253076
+	.byte4 $$253077
+	.byte4 $$253078
+	.byte4 $$253079
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253551

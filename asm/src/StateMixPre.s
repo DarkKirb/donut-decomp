@@ -174,17 +174,17 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common8Stat
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common8StateMix$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80367348
-	.4byte 0x80367328
+	.byte4 __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common8StateMix$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1Fv
+	.byte4 create__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common8StateMix$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1Fv
 .global __vt__Q53scn4step4hero6common11StateMixPre
 __vt__Q53scn4step4hero6common11StateMixPre:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80367194
-	.4byte 0x80367234
-	.4byte 0x80355508
-	.4byte 0x8035550C
-	.4byte 0x80355510
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common11StateMixPreFv
+	.byte4 procAnim__Q53scn4step4hero6common11StateMixPreFv
+	.byte4 procMove__Q43scn4step4hero9StateBaseFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q43scn4step4hero9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

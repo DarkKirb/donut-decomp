@@ -264,17 +264,17 @@ lbl_801CD758:
 __vt__Q26mintvm12VMObjectType:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA304  ;# ptr
+	.byte4 __dt__Q26mintvm12VMObjectTypeFv
 .global __vt__Q26mintvm14VMVariableList
 __vt__Q26mintvm14VMVariableList:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA560  ;# ptr
+	.byte4 __dt__Q26mintvm14VMVariableListFv
 .global __vt__Q26mintvm10VMVariable
 __vt__Q26mintvm10VMVariable:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA6E8  ;# ptr
+	.byte4 __dt__Q26mintvm10VMVariableFv
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable$$20
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable$$20:
 	.asciz "mMax = %d\n"

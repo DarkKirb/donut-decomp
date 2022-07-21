@@ -169,9 +169,9 @@ procMove__Q53scn4step5enemy6pierce12StateFlyWaitFv:
 __vt__Q53scn4step5enemy6pierce12StateFlyWait:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D1028  ;# ptr
-	.4byte 0x802D102C  ;# ptr
-	.4byte 0x802D1174  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6pierce12StateFlyWaitFv
+	.byte4 procAnim__Q53scn4step5enemy6pierce12StateFlyWaitFv
+	.byte4 procMove__Q53scn4step5enemy6pierce12StateFlyWaitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -280,10 +280,10 @@ $$22550:
 	.balign 4
 .global __vt__17MoSdkAudioDecoder
 __vt__17MoSdkAudioDecoder:
-	.4byte 0x80556AD0
+	.byte4 __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80152050  ;# ptr
-	.4byte 0x801520C0  ;# ptr
-	.4byte 0x8014F970  ;# ptr
+	.byte4 __dt__17MoSdkAudioDecoderFv
+	.byte4 decode__17MoSdkAudioDecoderFPCUcUl
+	.byte4 seekPerformed__17MoSdkAudioDecoderFv

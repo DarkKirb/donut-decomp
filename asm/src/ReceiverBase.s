@@ -261,22 +261,22 @@ handle__Q34util42ObjRefHandle$$0Q43scn4step6vacuum9IReceiver$$15OwnerFv:
 __vt__Q43scn4step6vacuum12ReceiverBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D3328
+	.byte4 __dt__Q43scn4step6vacuum12ReceiverBaseFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80236568  ;# ptr
-	.4byte 0x80236564  ;# ptr
-	.4byte 0x80236560  ;# ptr
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x80236554  ;# ptr
-	.4byte 0x80236550  ;# ptr
-	.4byte 0x8023654C  ;# ptr
-	.4byte 0x80236548  ;# ptr
-	.4byte 0x80236544  ;# ptr
-	.4byte 0x80236540  ;# ptr
-	.4byte 0x80236558  ;# ptr
-	.4byte 0x803D33A8
+	.byte4 reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.byte4 drawDebug__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut88LinkList$$0Q24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut88LinkList$$0Q24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

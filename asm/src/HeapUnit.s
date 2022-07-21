@@ -246,11 +246,11 @@ heapDump__Q23mem8HeapUnitCFv:
 __vt__Q23mem8HeapUnit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BF06C  ;# ptr
-	.4byte 0x801BF190  ;# ptr
-	.4byte 0x801BF194  ;# ptr
-	.4byte 0x801BF198  ;# ptr
-	.4byte 0x801BF19C  ;# ptr
-	.4byte 0x801BF1AC  ;# ptr
-	.4byte 0x801BF1B0  ;# ptr
+	.byte4 __dt__Q23mem8HeapUnitFv
+	.byte4 allocatorAlloc__Q23mem8HeapUnitFUll
+	.byte4 allocatorFree__Q23mem8HeapUnitFPv
+	.byte4 heapName__Q23mem8HeapUnitCFv
+	.byte4 heapMemBlock__Q23mem8HeapUnitCFv
+	.byte4 heapUsingBlockCount__Q23mem8HeapUnitCFv
+	.byte4 heapDump__Q23mem8HeapUnitCFv
 	.4byte 0

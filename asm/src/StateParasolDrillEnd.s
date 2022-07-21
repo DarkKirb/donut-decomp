@@ -109,11 +109,11 @@ procFixPos__Q53scn4step4hero7parasol20StateParasolDrillEndFv:
 __vt__Q53scn4step4hero7parasol20StateParasolDrillEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80393AFC
-	.4byte 0x80393BB8
-	.4byte 0x80393BBC
-	.4byte 0x8035550C
-	.4byte 0x80393BC0
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7parasol20StateParasolDrillEndFv
+	.byte4 procAnim__Q53scn4step4hero7parasol20StateParasolDrillEndFv
+	.byte4 procMove__Q53scn4step4hero7parasol20StateParasolDrillEndFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7parasol20StateParasolDrillEndFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

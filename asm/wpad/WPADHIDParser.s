@@ -5715,38 +5715,38 @@ _cExtInvalidData2:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __a1_input_reports_array
 __a1_input_reports_array:
-	.4byte 0x80060FF0  ;# ptr
-	.4byte 0x80061430  ;# ptr
-	.4byte 0x800617A0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063650  ;# ptr
-	.4byte 0x80063690  ;# ptr
-	.4byte 0x80063760  ;# ptr
-	.4byte 0x800637B0  ;# ptr
-	.4byte 0x800638C0  ;# ptr
-	.4byte 0x80063910  ;# ptr
-	.4byte 0x800639F0  ;# ptr
-	.4byte 0x80063AA0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063EF0  ;# ptr
-	.4byte 0x80063BF0  ;# ptr
-	.4byte 0x80063C20  ;# ptr
-	.4byte 0x80063D90  ;# ptr
+	.byte4 __a1_20_status_report
+	.byte4 __a1_21_user_data
+	.byte4 __a1_22_ack
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_30_data_type
+	.byte4 __a1_31_data_type
+	.byte4 __a1_32_data_type
+	.byte4 __a1_33_data_type
+	.byte4 __a1_34_data_type
+	.byte4 __a1_35_data_type
+	.byte4 __a1_36_data_type
+	.byte4 __a1_37_data_type
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_unused_report
+	.byte4 __a1_3d_data_type
+	.byte4 __a1_3e_data_type
+	.byte4 __a1_3f_data_type
 .global $$25371
 $$25371:
 	.4byte 0x80060704  ;# ptr

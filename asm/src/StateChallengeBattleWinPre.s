@@ -937,25 +937,25 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23St
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8037B4C4
-	.4byte 0x8037B480
+	.byte4 __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$4b$$1Fv
+	.byte4 create__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$4b$$1Fv
 .global __vt__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1
 __vt__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8037B4C0
-	.4byte 0x8037B4A0
+	.byte4 __dt__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1Fv
+	.byte4 create__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1Fv
 .global __vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre
 __vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8037AD88
-	.4byte 0x8037AE40
-	.4byte 0x8037B004
-	.4byte 0x8035550C
-	.4byte 0x8037B104
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.byte4 procAnim__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.byte4 procMove__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

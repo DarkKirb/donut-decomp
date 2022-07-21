@@ -81,5 +81,5 @@ $$28056:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_G3D_Version___22$$2unnamed$$2g3d_init_cpp$$2
 NW4R_G3D_Version___22$$2unnamed$$2g3d_init_cpp$$2:
-	.4byte 0x80441190
+	.byte4 $$28056
 	.4byte 0

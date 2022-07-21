@@ -523,37 +523,37 @@ lbl_80121B88:
 $$2943:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8011FF30  ;# ptr
+	.byte4 ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
 .global __vt__Q34nw4r2ut7RomFont
 __vt__Q34nw4r2ut7RomFont:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80121580  ;# ptr
-	.4byte 0x801216E0  ;# ptr
-	.4byte 0x801216F0  ;# ptr
-	.4byte 0x80121750  ;# ptr
-	.4byte 0x80121760  ;# ptr
-	.4byte 0x80121770  ;# ptr
-	.4byte 0x80121780  ;# ptr
-	.4byte 0x80121790  ;# ptr
-	.4byte 0x801217A0  ;# ptr
-	.4byte 0x801217B0  ;# ptr
-	.4byte 0x801217C0  ;# ptr
-	.4byte 0x801217D0  ;# ptr
-	.4byte 0x801217E0  ;# ptr
-	.4byte 0x80121800  ;# ptr
-	.4byte 0x80121820  ;# ptr
-	.4byte 0x801218B0  ;# ptr
-	.4byte 0x801218C0  ;# ptr
-	.4byte 0x80121950  ;# ptr
-	.4byte 0x801219A0  ;# ptr
-	.4byte 0x80121AA0  ;# ptr
-	.4byte 0x80121B60  ;# ptr
+	.byte4 __dt__Q34nw4r2ut7RomFontFv
+	.byte4 GetWidth__Q34nw4r2ut7RomFontCFv
+	.byte4 GetHeight__Q34nw4r2ut7RomFontCFv
+	.byte4 GetAscent__Q34nw4r2ut7RomFontCFv
+	.byte4 GetDescent__Q34nw4r2ut7RomFontCFv
+	.byte4 GetBaselinePos__Q34nw4r2ut7RomFontCFv
+	.byte4 GetCellHeight__Q34nw4r2ut7RomFontCFv
+	.byte4 GetCellWidth__Q34nw4r2ut7RomFontCFv
+	.byte4 GetMaxCharWidth__Q34nw4r2ut7RomFontCFv
+	.byte4 GetType__Q34nw4r2ut7RomFontCFv
+	.byte4 GetTextureFormat__Q34nw4r2ut7RomFontCFv
+	.byte4 GetLineFeed__Q34nw4r2ut7RomFontCFv
+	.byte4 GetDefaultCharWidths__Q34nw4r2ut7RomFontCFv
+	.byte4 SetDefaultCharWidths__Q34nw4r2ut7RomFontFRCQ34nw4r2ut10CharWidths
+	.byte4 SetAlternateChar__Q34nw4r2ut7RomFontFUs
+	.byte4 SetLineFeed__Q34nw4r2ut7RomFontFi
+	.byte4 GetCharWidth__Q34nw4r2ut7RomFontCFUs
+	.byte4 GetCharWidths__Q34nw4r2ut7RomFontCFUs
+	.byte4 GetGlyph__Q34nw4r2ut7RomFontCFPQ34nw4r2ut5GlyphUs
+	.byte4 HasGlyph__Q34nw4r2ut7RomFontCFUs
+	.byte4 GetEncoding__Q34nw4r2ut7RomFontCFv
 .global __vt__Q34nw4r2ut4Font
 __vt__Q34nw4r2ut4Font:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F6560  ;# ptr
+	.byte4 __dt__Q34nw4r2ut4FontFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

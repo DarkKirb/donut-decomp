@@ -515,27 +515,27 @@ $$256344:
 __vt__Q53scn4step4hero7fighter7Fighter:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039B508
-	.4byte 0x8039B594
-	.4byte 0x8032B7A0
-	.4byte 0x8032B7A4
-	.4byte 0x8032B7A8
-	.4byte 0x8039B698
-	.4byte 0x8032B7B0
-	.4byte 0x8032B7B4
-	.4byte 0x8032B7B8
-	.4byte 0x8032B7BC
-	.4byte 0x8032B7C0
-	.4byte 0x8032B7C4
-	.4byte 0x8032B7C8
-	.4byte 0x8032B7CC
-	.4byte 0x8032B7D0
-	.4byte 0x8032B7D4
-	.4byte 0x8032B7D8
-	.4byte 0x8039B744
-	.4byte 0x8032B7E0
-	.4byte 0x8032B7E4
-	.4byte 0x8032B7E8
+	.byte4 __dt__Q53scn4step4hero7fighter7FighterFv
+	.byte4 setup__Q53scn4step4hero7fighter7FighterFv
+	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeState__Q53scn4step4hero7fighter7FighterFv
+	.byte4 onStateEndCleanUp__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procAnim__Q53scn4step4hero7fighter7FighterFv
+	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
@@ -548,8 +548,8 @@ $$249542:
 	.asciz "HatBigM"
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21:
-	.4byte 0x8055ADA8
-	.4byte 0x8055ADB0
+	.byte4 $$249541
+	.byte4 $$249542
 .global $$249857
 $$249857:
 	.asciz "LBand1S"

@@ -1107,7 +1107,7 @@ __sinit_$$3HIDManager_cpp:
 /* 801A3838 0019F678  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x801A3808  ;# ptr
+	.byte4 __sinit_$$3HIDManager_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_wpadInfoArray__24$$2unnamed$$2HIDManager_cpp$$2

@@ -23,7 +23,7 @@ __sinit_$$3MintDemo_cpp:
 /* 802FDDB4 002F9BF4  4B DD F6 2C */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x802FDDB0
+	.byte4 __sinit_$$3MintDemo_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q53scn4step7gimmick11areamapdemo22$$2unnamed$$2MintDemo_cpp$$2

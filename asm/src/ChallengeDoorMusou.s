@@ -276,25 +276,25 @@ $$255023:
 __vt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusou:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8030918C
-	.4byte 0x80309410
-	.4byte 0x803091F8
-	.4byte 0x80306D6C
-	.4byte 0x80306D70
-	.4byte 0x80306D74
-	.4byte 0x80306D78
-	.4byte 0x80309278
-	.4byte 0x803092BC
-	.4byte 0x803076D8
-	.4byte 0x80309300
-	.4byte 0x803076E0
-	.4byte 0x80309354
-	.4byte 0x80307C68
-	.4byte 0x80307BA0
-	.4byte 0x80307BC8
-	.4byte 0x80307C24
-	.4byte 0x803079C0
-	.4byte 0x803079CC
+	.byte4 __dt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.byte4 kind__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouCFv
+	.byte4 init__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.byte4 registerToRoot__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaBack__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaFront__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 procAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 startUnlockDemo__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.byte4 endUnlockDemo__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.byte4 unsetZoomAll__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 unlockAnim__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.byte4 isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 canEnter__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouCFv
+	.byte4 isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 getEnterDistX__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 getEnterDistY__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 reqDoorOpenSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 reqDoorCloseSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

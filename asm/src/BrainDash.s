@@ -126,9 +126,9 @@ __dt__Q53scn4step5enemy5sheld9BrainDashFv:
 __vt__Q53scn4step5enemy5sheld9BrainDash:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DCB88  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802DCA40  ;# ptr
-	.4byte 0x802DCB84  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5sheld9BrainDashFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy5sheld9BrainDashFv
+	.byte4 update__Q53scn4step5enemy5sheld9BrainDashFv
 	.4byte 0

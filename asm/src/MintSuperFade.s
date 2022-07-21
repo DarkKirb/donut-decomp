@@ -24,7 +24,7 @@ __sinit_$$3MintSuperFade_cpp:
 /* 803CDD00 003C9B40  4B D0 F6 E0 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x803CDCFC
+	.byte4 __sinit_$$3MintSuperFade_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step3sfx27$$2unnamed$$2MintSuperFade_cpp$$2

@@ -417,7 +417,7 @@ __sinit_$$3MintEffect_cpp:
 /* 8026FD7C 0026BBBC  4B E6 D6 64 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8026FD78  ;# ptr
+	.byte4 __sinit_$$3MintEffect_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5chara24$$2unnamed$$2MintEffect_cpp$$2

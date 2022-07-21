@@ -8779,230 +8779,230 @@ __sinit_$$3ModelDesc_cpp:
 /* 803EF704 003EB544  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80232B24  ;# ptr
-	.4byte 0x8023DB80  ;# ptr
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80247D14  ;# ptr
-	.4byte 0x802488FC  ;# ptr
-	.4byte 0x80249E00  ;# ptr
-	.4byte 0x8024B7E8  ;# ptr
-	.4byte 0x8025C8DC  ;# ptr
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x802966DC  ;# ptr
-	.4byte 0x802975A8  ;# ptr
-	.4byte 0x80299448  ;# ptr
-	.4byte 0x8029D284  ;# ptr
-	.4byte 0x8029E8F0  ;# ptr
-	.4byte 0x8029F4C4  ;# ptr
-	.4byte 0x802A0F98  ;# ptr
-	.4byte 0x802A2E54  ;# ptr
-	.4byte 0x802A3DC4  ;# ptr
-	.4byte 0x802A5630  ;# ptr
-	.4byte 0x802A6394  ;# ptr
-	.4byte 0x802A7520  ;# ptr
-	.4byte 0x802AD3F4  ;# ptr
-	.4byte 0x802AE2FC  ;# ptr
-	.4byte 0x802AEF8C  ;# ptr
-	.4byte 0x802AFCF0  ;# ptr
-	.4byte 0x802B2388  ;# ptr
-	.4byte 0x802B4A78  ;# ptr
-	.4byte 0x802B625C  ;# ptr
-	.4byte 0x802B78C8  ;# ptr
-	.4byte 0x802B9108  ;# ptr
-	.4byte 0x802BA71C  ;# ptr
-	.4byte 0x802BB850  ;# ptr
-	.4byte 0x802BCE78  ;# ptr
-	.4byte 0x802BFC34  ;# ptr
-	.4byte 0x802C2238  ;# ptr
-	.4byte 0x802C3614  ;# ptr
-	.4byte 0x802C50B0  ;# ptr
-	.4byte 0x802C62B4  ;# ptr
-	.4byte 0x802C73DC  ;# ptr
-	.4byte 0x802C7EB0  ;# ptr
-	.4byte 0x802C9FC8  ;# ptr
-	.4byte 0x802CB1B4  ;# ptr
-	.4byte 0x802CFBEC  ;# ptr
-	.4byte 0x802D1FC0  ;# ptr
-	.4byte 0x802D33C8  ;# ptr
-	.4byte 0x802D3B38  ;# ptr
-	.4byte 0x802D678C  ;# ptr
-	.4byte 0x802D9238  ;# ptr
-	.4byte 0x802D9E2C  ;# ptr
-	.4byte 0x802DBEA0  ;# ptr
-	.4byte 0x802DD9A8  ;# ptr
-	.4byte 0x802E07F0  ;# ptr
-	.4byte 0x802E1794  ;# ptr
-	.4byte 0x802E2BA4  ;# ptr
-	.4byte 0x802E38F0  ;# ptr
-	.4byte 0x802E5480  ;# ptr
-	.4byte 0x802E6F28  ;# ptr
-	.4byte 0x802E8CF4  ;# ptr
-	.4byte 0x802EB0AC  ;# ptr
-	.4byte 0x802ED91C  ;# ptr
-	.4byte 0x802EFBEC  ;# ptr
-	.4byte 0x802F026C  ;# ptr
-	.4byte 0x802F08B4  ;# ptr
-	.4byte 0x802F1160  ;# ptr
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x803DB2C0
-	.4byte 0x803DCBB4
-	.4byte 0x803DD290
-	.4byte 0x803DE5B8
-	.4byte 0x803E2B18
-	.4byte 0x803E3774
-	.4byte 0x803E4070
-	.4byte 0x803E5C00
-	.4byte 0x803E7900
-	.4byte 0x803E85B0
-	.4byte 0x803E99D4
-	.4byte 0x803EADB8
-	.4byte 0x803ED094
-	.4byte 0x803EF6F8
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
+	.byte4 __sinit_$$3ModelDesc_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80558F10
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80558F18
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80464D58
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80464D64
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80464D70
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80464D7C
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80464D88
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80464D98
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80464DA4
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80558F20
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x80558F28
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x80558F30
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80464DB0
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80464DBC
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80464DCC
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x80464DDC
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x80558F38
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x80558F40
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x80464DE8
+	.byte4 $$250155
 	.4byte 0
-	.4byte 0x80464DF8
+	.byte4 $$250156
 	.4byte 0
-	.4byte 0x80464E04
+	.byte4 $$250157
 	.4byte 0
-	.4byte 0x80464E14
+	.byte4 $$250158
 	.4byte 0
-	.4byte 0x80464E28
+	.byte4 $$250159
 	.4byte 0
-	.4byte 0x80464E38
+	.byte4 $$250160
 	.4byte 0
-	.4byte 0x80464E48
+	.byte4 $$250161
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80464E58
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464E78
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464E98
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464EB8
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464ED8
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464EF8
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464F18
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464F3C
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464F60
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464F84
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464FB0
+	.byte4 $$250173
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464FD0
+	.byte4 $$250174
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80464FF0
+	.byte4 $$250175
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465014
+	.byte4 $$250176
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465038
+	.byte4 $$250177
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046505C
+	.byte4 $$250178
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465080
+	.byte4 $$250179
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804650A8
+	.byte4 $$250180
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9011,131 +9011,131 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80558F78
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80558F80
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80465680
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x8046568C
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80558F84
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80558F8C
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x8046569C
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x804656AC
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80558F94
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80558F9C
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x804656B8
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x80558FA8
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80558FB0
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80558FB8
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x804656C8
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x80558FC0
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x804656D8
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x80558FC8
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x804656E4
+	.byte4 $$250155
 	.4byte 0
-	.4byte 0x804656F0
+	.byte4 $$250156
 	.4byte 0
-	.4byte 0x80558FD0
+	.byte4 $$250157
 	.4byte 0
-	.4byte 0x80558FD8
+	.byte4 $$250158
 	.4byte 0
-	.4byte 0x80558FE0
+	.byte4 $$250159
 	.4byte 0
-	.4byte 0x804656FC
+	.byte4 $$250160
 	.4byte 0
-	.4byte 0x80558FE8
+	.byte4 $$250161
 	.4byte 0
-	.4byte 0x80465708
+	.byte4 $$250162
 	.4byte 0
-	.4byte 0x80558FF0
+	.byte4 $$250163
 	.4byte 0
-	.4byte 0x80465714
+	.byte4 $$250164
 	.4byte 0
-	.4byte 0x80465724
+	.byte4 $$250165
 	.4byte 0
-	.4byte 0x80465734
+	.byte4 $$250166
 	.4byte 0
-	.4byte 0x80465744
+	.byte4 $$250167
 	.4byte 0
-	.4byte 0x80465754
+	.byte4 $$250168
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss12creditdedede23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss12creditdedede23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559030
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x80559038
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559040
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8046657C
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80559048
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80559050
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80559058
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80559060
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80559064
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80466588
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x8055906C
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80466594
+	.byte4 $$250145
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559088
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559090
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80559098
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80466850
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x805590A0
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x805590A8
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x805590B0
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x805590B8
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x8046685C
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80466868
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80466880
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80466894
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x805590C0
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x804668A8
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x804668B8
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x805590C8
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x805590D0
+	.byte4 $$250151
 	.4byte 0
 .global T_DYNAMICS_DESCNODE__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_DYNAMICS_DESCNODE__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
@@ -9159,77 +9159,72 @@ T_DYNAMICS_DESCNODE__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x3F800000
 .global T_ANIM_ENTRIES__Q53scn4step4boss10creditmeta23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss10creditmeta23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805590E8
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x805590F0
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x805590F8
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80466CAC
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80559100
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80559108
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80559110
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80559118
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x8055911C
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80466CB8
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80466CC8
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80466CDC
+	.byte4 $$250145
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055918C
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80467578
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80467584
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x80467590
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559194
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8046759C
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x804675A8
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x805591A0
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x804675B4
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80467578
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x804675C4
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x804675B4
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x8055918C
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x804675D0
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x804675B4
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x804675B4
+	.byte4 $$250140
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x804675DC
+	.byte4 $$250144
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804675F8
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
+	.byte4 $$250145
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9239,47 +9234,52 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467618
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467634
+	.4byte 0
+	.byte4 $$250146
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467650
+	.byte4 $$250147
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467650
+	.byte4 $$250148
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.byte4 $$250148
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467674
+	.byte4 $$250149
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467698
+	.byte4 $$250150
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804676BC
+	.byte4 $$250151
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804676BC
+	.byte4 $$250151
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804676E0
+	.byte4 $$250152
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9289,149 +9289,149 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805591C8
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x805591D0
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80467C78
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80467C84
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x805591D8
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80467C90
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80467C9C
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x805591E0
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80467CAC
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x805591E8
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80467CB8
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x805591F0
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x805591F8
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x80467CC4
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80467CD4
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80467CE0
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80467CF0
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x80467CFC
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x80467D08
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x80559200
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x80559208
+	.byte4 $$250155
 	.4byte 0
-	.4byte 0x80467D14
+	.byte4 $$250156
 	.4byte 0
-	.4byte 0x80467C84
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x805591D8
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80467C90
+	.byte4 $$250140
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80467D20
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467D40
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467D64
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467D88
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467DA8
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467DC8
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467DE8
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E10
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E34
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E58
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E58
+	.byte4 $$250167
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E58
+	.byte4 $$250167
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467E80
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467EA8
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467ECC
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467EF0
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467F10
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467F3C
+	.byte4 $$250173
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467F64
+	.byte4 $$250174
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9439,137 +9439,137 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559238
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80559240
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x804683E4
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80559248
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80559250
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x804683F0
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80559258
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80559260
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80559260
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80559268
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80559248
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x804683FC
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80559270
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x80559278
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x804683E4
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80559258
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80468408
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80468414
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80559280
+	.byte4 $$250150
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80468420
+	.byte4 $$250152
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468440
+	.byte4 $$250153
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468460
+	.byte4 $$250154
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468484
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804684A4
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804684C4
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804684E4
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046850C
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468530
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468550
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468578
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046859C
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804685BC
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804685E8
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804685E8
+	.byte4 $$250165
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468614
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468648
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468670
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046869C
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9577,334 +9577,334 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805592A0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80468B78
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x805592A8
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x805592B0
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80468B8C
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80468B98
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x805592B8
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80468BA4
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x805592C0
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x805592C8
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80468BB0
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80468BB0
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80468B78
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x80468BBC
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80468BC8
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x805592A8
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x805592A0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x805592A8
+	.byte4 $$250135
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80468BD4
+	.byte4 $$250147
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468BF4
+	.byte4 $$250148
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468C18
+	.byte4 $$250149
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468C3C
+	.byte4 $$250150
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468C5C
+	.byte4 $$250151
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468C7C
+	.byte4 $$250152
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468CA0
+	.byte4 $$250153
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468CC8
+	.byte4 $$250154
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468CEC
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468D0C
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468D38
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468D5C
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468D88
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468DB4
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468DDC
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468E0C
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468E38
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468E64
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468E88
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468EB0
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468ED4
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468F00
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468F20
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468F48
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468F6C
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468F90
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468FB8
+	.byte4 $$250173
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80468FE0
+	.byte4 $$250174
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805592DC
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x805592E4
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x805592F0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x805592F8
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x804695F8
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80469604
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x80559300
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x80469610
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x8046961C
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80559308
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80469628
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80469634
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80559310
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80559318
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80469640
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x80559320
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x80469640
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x80559320
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x8046964C
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80559328
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80469658
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80469634
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80559308
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80469664
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x805592F0
+	.byte4 $$250134
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80469670
+	.byte4 $$250153
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469694
+	.byte4 $$250154
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804696BC
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804696E4
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469708
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469730
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469758
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046977C
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804697A8
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804697D0
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804697FC
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469828
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469854
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046987C
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804698A8
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804698CC
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804698F8
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469920
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046994C
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80469974
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -9913,228 +9913,228 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559368
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x80559370
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80469F00
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80559378
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x80559380
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x80559388
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x80469F0C
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80469F18
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80469F28
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x80469F38
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x80469F4C
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x80469F58
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x80469F68
+	.byte4 $$250155
 	.4byte 0
-	.4byte 0x80469F74
+	.byte4 $$250156
 	.4byte 0
-	.4byte 0x80469F80
+	.byte4 $$250157
 	.4byte 0
-	.4byte 0x80469F8C
+	.byte4 $$250158
 	.4byte 0
-	.4byte 0x80469F9C
+	.byte4 $$250159
 	.4byte 0
-	.4byte 0x80469FB0
+	.byte4 $$250160
 	.4byte 0
-	.4byte 0x80469FC0
+	.byte4 $$250161
 	.4byte 0
-	.4byte 0x80469FD4
+	.byte4 $$250162
 	.4byte 0
-	.4byte 0x80469FE0
+	.byte4 $$250163
 	.4byte 0
-	.4byte 0x80559390
+	.byte4 $$250164
 	.4byte 0
-	.4byte 0x80559398
+	.byte4 $$250165
 	.4byte 0
-	.4byte 0x80469FF0
+	.byte4 $$250166
 	.4byte 0
-	.4byte 0x8046A000
+	.byte4 $$250167
 	.4byte 0
-	.4byte 0x8046A00C
+	.byte4 $$250168
 	.4byte 0
-	.4byte 0x805593A0
+	.byte4 $$250169
 	.4byte 0
-	.4byte 0x8046A01C
+	.byte4 $$250170
 	.4byte 0
-	.4byte 0x805593A8
+	.byte4 $$250171
 	.4byte 0
-	.4byte 0x8046A028
+	.byte4 $$250172
 	.4byte 0
-	.4byte 0x805593B0
+	.byte4 $$250173
 	.4byte 0
-	.4byte 0x805593B8
+	.byte4 $$250174
 	.4byte 0
-	.4byte 0x805593C0
+	.byte4 $$250175
 	.4byte 0
-	.4byte 0x8046A034
+	.byte4 $$250176
 	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805593F0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x805593F8
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8046ABCC
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559400
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80559408
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8046ABD8
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8046ABE4
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80559410
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x8046ABF0
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80559418
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80559420
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x8046AC00
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x8046AC10
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x8046AC1C
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x8046AC1C
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x8046AC2C
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x8046AC40
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x8046AC4C
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x8046AC58
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80559428
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x8046AC64
+	.byte4 $$250152
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8046AC78
+	.byte4 $$250154
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AC98
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046ACBC
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046ACE4
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD04
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD24
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD48
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD70
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD94
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AD94
+	.byte4 $$250162
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046ADB8
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046ADE0
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE04
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE30
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE50
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE50
+	.byte4 $$250167
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE50
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AE7C
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AEA8
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AED0
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046AEF4
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046ACBC
+	.byte4 $$250156
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -10143,73 +10143,73 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559658
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559660
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559668
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559670
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559678
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80473478
+	.byte4 $$250129
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559690
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559698
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x805596A0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x805596A8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x805596B0
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80473758
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80473764
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80473770
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x805596B8
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x805596C0
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x805596C8
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80473780
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x805596D0
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8047378C
+	.byte4 $$250139
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7blipper23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7blipper23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805596E8
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80473CF4
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80473D00
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80473D0C
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x805596F0
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80473D18
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80473D24
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x805596F8
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80559700
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80559708
+	.byte4 $$250134
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80473FB8
+	.byte4 $$250126
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -10247,419 +10247,419 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559748
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559750
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80474264
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559748
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559758
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80474270
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559760
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80474264
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5bowby23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5bowby23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559788
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559790
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80474600
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559798
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047460C
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80474618
+	.byte4 $$250130
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80474920
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x805597B4
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x805597B8
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x805597C0
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x805597C8
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047492C
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8047492C
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80474938
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80474944
+	.byte4 $$250131
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805597E8
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x805597F0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x805597F8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559800
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559808
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559810
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80474CB0
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80474CBC
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80474CC8
+	.byte4 $$250133
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5cappy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5cappy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559830
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559838
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559840
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559830
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559848
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80475120
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80559850
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047512C
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80475138
+	.byte4 $$250134
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8cappyhat23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8cappyhat23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559868
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559868
+	.byte4 $$250124
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8cerulean23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8cerulean23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559888
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559890
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559888
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559890
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559898
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x804754B4
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559890
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x805598A0
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x805598A8
+	.byte4 $$250130
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805598C0
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x805598C8
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x805598D0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80475780
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x805598D8
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x805598E0
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x805598E8
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x805598F0
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8047578C
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80475798
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x804757A4
+	.byte4 $$250134
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy4como23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy4como23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559908
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559908
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559910
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559908
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559918
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80475AB0
+	.byte4 $$250128
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6degout23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6degout23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055993C
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559944
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80475F40
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055994C
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80475F4C
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559958
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559960
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559968
+	.byte4 $$250131
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8dubiorjr23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8dubiorjr23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559990
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559998
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x804761F8
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805599D8
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x805599D8
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x805599E0
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x805599E8
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x804765E8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x804765F4
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x805599F0
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80476600
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x805599F8
+	.byte4 $$250133
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559A20
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559A28
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80476ACC
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559A30
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559A38
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80476AD8
+	.byte4 $$250131
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559A70
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559A78
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80476D94
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80476DA0
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80559A80
+	.byte4 $$250132
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80477008
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80559AC8
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80477014
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80559AD0
+	.byte4 $$250134
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B28
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559B30
+	.byte4 $$250136
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559B60
+	.byte4 $$250124
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559B88
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559B90
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559B98
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559BA0
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559BA8
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x804778C4
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x804778D0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80559BB0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x804778E0
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x80559BB8
+	.byte4 $$250136
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6juckle23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6juckle23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559BD4
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559BDC
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80477C18
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559BE4
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559C10
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559C18
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559C20
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559C10
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559C28
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80477FA8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80477FB4
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559C30
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80559C38
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80559C40
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80559C48
+	.byte4 $$250134
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559C70
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x80559C78
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x804784A4
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x804784B0
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x80559C80
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x80559C88
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x80559C90
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x80559C98
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x804784BC
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x80559CA0
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x80559CA8
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x804784C8
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x804784E0
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x804784F8
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x80478510
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x80478528
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x80478544
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x80478560
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x80478578
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x80478590
+	.byte4 $$250155
 	.4byte 0
-	.4byte 0x804785A4
+	.byte4 $$250156
 	.4byte 0
-	.4byte 0x804785B8
+	.byte4 $$250157
 	.4byte 0
-	.4byte 0x804785D0
+	.byte4 $$250158
 	.4byte 0
-	.4byte 0x804785E8
+	.byte4 $$250159
 	.4byte 0
-	.4byte 0x80478604
+	.byte4 $$250160
 	.4byte 0
-	.4byte 0x80478620
+	.byte4 $$250161
 	.4byte 0
-	.4byte 0x8047863C
+	.byte4 $$250162
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559CC8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559CD0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559CD8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559CE0
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559CE8
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80478BD0
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80559CF0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x80478BDC
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x80478BE8
+	.byte4 $$250135
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6leafan23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6leafan23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D0C
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559D14
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559D20
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559D0C
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559D28
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80478E60
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559D30
+	.byte4 $$250129
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy9mbossdead23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy9mbossdead23$$2unnamed$$2ModelDesc_cpp$$2:
@@ -10701,135 +10701,135 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9mbossdead23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7mumbies23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7mumbies23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D64
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559D6C
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80479150
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8047915C
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80479168
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80479178
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559D74
+	.byte4 $$250130
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559DA0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559DA8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559DB0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559DB8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559DC0
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80479344
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80479350
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80559DC8
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8047935C
+	.byte4 $$250134
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5noddy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5noddy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559DDC
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559DE4
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559DF0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559DF8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559E00
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80479570
+	.byte4 $$250129
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E18
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559E20
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559E28
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559E30
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559E38
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80479800
+	.byte4 $$250132
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6owgulf23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6owgulf23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E58
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80479C04
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80479C10
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80479C1C
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559E5C
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80479C28
+	.byte4 $$250130
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7parasol23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7parasol23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E80
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559E88
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80479E28
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559E90
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80479E38
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559E88
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80479E28
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80479E44
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80479E38
+	.byte4 $$250130
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559EB0
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559EB8
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8047A3AC
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559EC0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047A3B8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559EC8
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x80559ED0
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x80559ED8
+	.byte4 $$250132
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy10poppybrojr23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy10poppybrojr23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559F00
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559F08
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559F10
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559F18
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047A780
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559F20
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047A78C
+	.byte4 $$250131
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy14poppybrojrbomb23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy14poppybrojrbomb23$$2unnamed$$2ModelDesc_cpp$$2:
@@ -10871,239 +10871,239 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy14poppybrojrbomb23$$2unnamed$$2ModelDesc_cpp$
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy9puppetdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy9puppetdee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559FA8
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x80559FB0
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x80559FB8
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x80559FC0
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x80559FC8
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047A9F0
+	.byte4 $$250129
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559FE0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8047AC30
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047AC3C
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x80559FE8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x80559FF0
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047AC4C
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8047AC58
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x80559FF8
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8047AC64
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047AC70
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8055A000
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8055A008
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8047AC7C
+	.byte4 $$250138
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8rollball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8rollball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A028
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A030
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A028
+	.byte4 $$250125
 	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A044
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A04C
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A058
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A044
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A060
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047B198
+	.byte4 $$250128
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A078
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A080
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047B4AC
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A088
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A090
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047B4B8
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8047B4C4
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047B4D0
+	.byte4 $$250133
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8searches23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8searches23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A0AC
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A0B4
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8047B760
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A0BC
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047B76C
+	.byte4 $$250128
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A0E0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A0E8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8055A0F0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A0F8
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A100
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047BA94
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8055A108
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047BAA0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A110
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8055A118
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8047BAAC
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8047BAB8
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8055A120
+	.byte4 $$250138
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A148
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A150
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy9sirkibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy9sirkibble23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A168
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A170
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A178
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8055A180
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8055A188
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047C3D4
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8047C3E0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047C3EC
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8047C3F8
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8055A190
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8047C404
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8047C414
+	.byte4 $$250139
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A1A8
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A1B0
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A1B8
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8055A1C0
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047C7FC
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A1C8
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047C808
+	.byte4 $$250131
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy5snowl23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy5snowl23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A1DC
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8047CA48
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A1E4
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A1EC
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A238
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A240
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8055A248
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8055A250
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8055A258
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8047CD88
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8047CD94
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x8055A260
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x8047CDA0
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x8047CDB4
+	.byte4 $$250142
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A278
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8055A280
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A288
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A290
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047D098
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8055A298
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047D0A4
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A2A0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047D0B0
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8047D0BC
+	.byte4 $$250136
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy10stareffect23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy10stareffect23$$2unnamed$$2ModelDesc_cpp$$2:
@@ -11145,191 +11145,191 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10stareffect23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 .global T_ANIM_ENTRIES_SUN__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES_SUN__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A2E0
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8055A2E0
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy9tsukikage23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy9tsukikage23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8047D780
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A2FC
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A308
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A310
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047D78C
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8047D798
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A318
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047D7A4
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8047D7B0
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047D7C0
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8047D7D0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047D7E0
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8047D7F0
+	.byte4 $$250136
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A330
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A338
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8055A340
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8055A348
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8055A350
+	.byte4 $$250132
 	.4byte 0
-	.4byte 0x8047DC14
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8047DC20
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047DC2C
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8055A358
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8055A360
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8047DC38
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8047DC44
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x8047DC58
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x8047DC68
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x8047DC74
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x8055A368
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x8047DC80
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x8047DC94
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x8047DCA0
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x8047DCAC
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x8047DCB8
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x8047DCC4
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x8055A370
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x8055A378
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x8055A380
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x8055A388
+	.byte4 $$250153
 	.4byte 0
-	.4byte 0x8055A390
+	.byte4 $$250154
 	.4byte 0
-	.4byte 0x8047DCD0
+	.byte4 $$250155
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A3C8
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A3D0
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8055A3D8
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8055A3E0
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8055A3E8
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8055A3F0
+	.byte4 $$250138
 	.4byte 0
-	.4byte 0x8047E4F8
+	.byte4 $$250139
 	.4byte 0
-	.4byte 0x8055A3F8
+	.byte4 $$250140
 	.4byte 0
-	.4byte 0x8055A3E8
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8047E504
+	.byte4 $$250141
 	.4byte 0
-	.4byte 0x8047E510
+	.byte4 $$250142
 	.4byte 0
-	.4byte 0x8047E51C
+	.byte4 $$250143
 	.4byte 0
-	.4byte 0x8047E52C
+	.byte4 $$250144
 	.4byte 0
-	.4byte 0x8047E538
+	.byte4 $$250145
 	.4byte 0
-	.4byte 0x8047E54C
+	.byte4 $$250146
 	.4byte 0
-	.4byte 0x8047E55C
+	.byte4 $$250147
 	.4byte 0
-	.4byte 0x8047E568
+	.byte4 $$250148
 	.4byte 0
-	.4byte 0x8047E57C
+	.byte4 $$250149
 	.4byte 0
-	.4byte 0x8047E588
+	.byte4 $$250150
 	.4byte 0
-	.4byte 0x8047E594
+	.byte4 $$250151
 	.4byte 0
-	.4byte 0x8047E5A0
+	.byte4 $$250152
 	.4byte 0
-	.4byte 0x8047E5AC
+	.byte4 $$250153
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy10watergalbo23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy10watergalbo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A40C
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A414
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055A420
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055A40C
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A428
+	.byte4 $$250127
 	.4byte 0
-	.4byte 0x8047E878
+	.byte4 $$250128
 	.4byte 0
-	.4byte 0x8055A430
+	.byte4 $$250129
 	.4byte 0
-	.4byte 0x8047E884
+	.byte4 $$250130
 	.4byte 0
-	.4byte 0x8047E890
+	.byte4 $$250131
 	.4byte 0
-	.4byte 0x8047E89C
+	.byte4 $$250132
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A488
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A488
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A488
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A488
+	.byte4 $$250133
 	.4byte 0
-	.4byte 0x8055A490
+	.byte4 $$250134
 	.4byte 0
-	.4byte 0x8047EA58
+	.byte4 $$250135
 	.4byte 0
-	.4byte 0x8047EA64
+	.byte4 $$250136
 	.4byte 0
-	.4byte 0x8047EA70
+	.byte4 $$250137
 	.4byte 0
-	.4byte 0x8055A498
+	.byte4 $$250138
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A4B4
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055A4BC
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8047EBD0
+	.byte4 $$250126
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
@@ -11368,17 +11368,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047EE50
+	.byte4 $$250127
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047EE7C
+	.byte4 $$250128
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047EE7C
+	.byte4 $$250128
 	.4byte 0x00000001
 	.4byte 0
 	.4byte 0
@@ -11387,53 +11387,51 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C0EC
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055C0F8
+	.byte4 $$250125
 	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80494610
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055C190
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055C198
+	.byte4 $$250127
 	.4byte 0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C244
+	.byte4 $$250124
 	.4byte 0
-	.4byte 0x8055C24C
+	.byte4 $$250125
 	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80494ED8
+	.byte4 $$250125
 	.4byte 0
-	.4byte 0x8055C388
+	.byte4 $$250126
 	.4byte 0
-	.4byte 0x8055C390
+	.byte4 $$250127
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2
 T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
-	.4byte 0x8025C810  ;# ptr
-	.4byte 0x802522B8  ;# ptr
+	.byte4 Create__Q53scn4step4boss6whispy9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss10gigantedge9ModelDescFUlb
 	.4byte 0
-	.4byte 0x80259DE4  ;# ptr
-	.4byte 0x8025388C  ;# ptr
-	.4byte 0x80260D68  ;# ptr
-	.4byte 0x80237C08  ;# ptr
-	.4byte 0x8024D75C  ;# ptr
+	.byte4 Create__Q53scn4step4boss13watergalboros9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss8kingsdoo9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss9zankibble9ModelDescFUlb
+	.byte4 CreateNormal__Q53scn4step4boss7bonkers9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss6dubior9ModelDescFUlb
 	.4byte 0
-	.4byte 0x80255AC8  ;# ptr
-	.4byte 0
-	.4byte 0
+	.byte4 Create__Q53scn4step4boss9moundeath9ModelDescFUlb
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -11443,11 +11441,13 @@ T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8023DAC8  ;# ptr
-	.4byte 0x8024B6D4  ;# ptr
-	.4byte 0x80247C58  ;# ptr
-	.4byte 0x802486A8  ;# ptr
-	.4byte 0x80249D44  ;# ptr
+	.4byte 0
+	.4byte 0
+	.byte4 Create__Q53scn4step4boss15challengemaster9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss10creditroah9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss12creditdedede9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss9creditdee9ModelDescFUlb
+	.byte4 Create__Q53scn4step4boss10creditmeta9ModelDescFUlb
 .global $$250315
 $$250315:
 	.asciz "Scn.Step.Boss"
@@ -11465,10 +11465,10 @@ $$250134:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80558F00
-	.4byte 0x80464D28
-	.4byte 0x80464D38
-	.4byte 0x80558F08
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
+	.byte4 $$250135
 .global $$250139
 $$250139:
 	.asciz "DownStart"
@@ -11640,12 +11640,12 @@ $$250134:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80558F58
-	.4byte 0x80558F60
-	.4byte 0x80465650
-	.4byte 0x80558F68
-	.4byte 0x8046565C
-	.4byte 0x80558F70
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
+	.byte4 $$250135
 .global $$250139
 $$250139:
 	.asciz "FlightWait"
@@ -11796,7 +11796,7 @@ $$250191:
 	.balign 4
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80465760
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -11821,107 +11821,107 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465788
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804657B4
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804657D8
+	.byte4 $$250173
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465800
+	.byte4 $$250174
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465830
+	.byte4 $$250175
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465860
+	.byte4 $$250176
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046588C
+	.byte4 $$250177
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804658B4
+	.byte4 $$250178
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804658E0
+	.byte4 $$250179
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465908
+	.byte4 $$250180
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465938
+	.byte4 $$250181
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465960
+	.byte4 $$250182
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465988
+	.byte4 $$250183
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804659B0
+	.byte4 $$250184
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804659D8
+	.byte4 $$250185
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804659FC
+	.byte4 $$250186
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465A24
+	.byte4 $$250187
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465A50
+	.byte4 $$250188
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465A7C
+	.byte4 $$250189
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465AA8
+	.byte4 $$250190
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80465AD4
+	.byte4 $$250191
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -11946,9 +11946,9 @@ $$250132:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss12creditdedede23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss12creditdedede23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559028
-	.4byte 0x80466558
-	.4byte 0x80466564
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
 .global $$250137
 $$250137:
 	.asciz "JumpStart"
@@ -12009,17 +12009,17 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss12creditdedede23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x804665A0
+	.byte4 $$250147
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804665C8
+	.byte4 $$250148
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804665EC
+	.byte4 $$250149
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12048,10 +12048,10 @@ $$250132:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559078
-	.4byte 0x80466828
-	.4byte 0x80466834
-	.4byte 0x80559080
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
 .global $$250138
 $$250138:
 	.asciz "JumpStart"
@@ -12132,37 +12132,37 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804668C8
+	.byte4 $$250153
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804668E8
+	.byte4 $$250154
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046690C
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046692C
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466950
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466974
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046699C
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12195,9 +12195,9 @@ $$250132:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss10creditmeta23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss10creditmeta23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805590E0
-	.4byte 0x80466C88
-	.4byte 0x80466C94
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
 .global $$250137
 $$250137:
 	.asciz "JumpStart"
@@ -12257,27 +12257,27 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss10creditmeta23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466CE8
+	.byte4 $$250147
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466D0C
+	.byte4 $$250148
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466D30
+	.byte4 $$250149
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466D54
+	.byte4 $$250150
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80466D7C
+	.byte4 $$250151
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12308,12 +12308,12 @@ $$250131:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559138
-	.4byte 0x80467018
-	.4byte 0x80559140
-	.4byte 0x80559148
-	.4byte 0x80559150
-	.4byte 0x80559158
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
+	.byte4 $$250135
 .global $$250139
 $$250139:
 	.asciz "CreditRoah.AnimScript.Appear.Exec"
@@ -12333,7 +12333,7 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467040
+	.byte4 $$250139
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12353,12 +12353,12 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467064
+	.byte4 $$250140
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80467088
+	.byte4 $$250141
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12458,10 +12458,10 @@ $$250133:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805591B0
-	.4byte 0x805591B8
-	.4byte 0x805591C0
-	.4byte 0x80467C58
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
 .global $$250137
 $$250137:
 	.asciz "PreAppear"
@@ -12593,11 +12593,11 @@ $$250270:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559210
-	.4byte 0x80559218
-	.4byte 0x80559220
-	.4byte 0x80559228
-	.4byte 0x80559230
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
 .global $$250138
 $$250138:
 	.asciz "PreAppear"
@@ -13008,18 +13008,18 @@ $$250141:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559330
-	.4byte 0x80559338
-	.4byte 0x80559340
-	.4byte 0x80559348
-	.4byte 0x80469E90
-	.4byte 0x80559350
-	.4byte 0x80559358
-	.4byte 0x80559360
-	.4byte 0x80469E9C
-	.4byte 0x80469EA8
-	.4byte 0x80469EB4
-	.4byte 0x80469EC0
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
+	.byte4 $$250135
+	.byte4 $$250136
+	.byte4 $$250137
+	.byte4 $$250138
+	.byte4 $$250139
+	.byte4 $$250140
+	.byte4 $$250141
 .global $$250145
 $$250145:
 	.asciz "WaitNoFace"
@@ -13182,12 +13182,12 @@ $$250196:
 	.4byte 0
 .global T_SCRIPT_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8046A040
+	.byte4 $$250178
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A05C
+	.byte4 $$250179
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13212,37 +13212,37 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A07C
+	.byte4 $$250180
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A0A0
+	.byte4 $$250181
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A0C8
+	.byte4 $$250182
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A0F0
+	.byte4 $$250183
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A110
+	.byte4 $$250184
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A134
+	.byte4 $$250185
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A158
+	.byte4 $$250186
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13252,52 +13252,52 @@ T_SCRIPT_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A17C
+	.byte4 $$250187
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A198
+	.byte4 $$250188
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A1BC
+	.byte4 $$250189
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A1DC
+	.byte4 $$250190
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A200
+	.byte4 $$250191
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A220
+	.byte4 $$250192
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A240
+	.byte4 $$250193
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A260
+	.byte4 $$250194
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A27C
+	.byte4 $$250195
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8046A2A0
+	.byte4 $$250196
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13474,12 +13474,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80473484
+	.byte4 $$250131
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804734A8
+	.byte4 $$250132
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13520,9 +13520,9 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559680
-	.4byte 0x80473740
-	.4byte 0x80559688
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250131
 $$250131:
 	.asciz "DamageEtc"
@@ -13598,12 +13598,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80473798
+	.byte4 $$250141
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804737BC
+	.byte4 $$250142
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13618,17 +13618,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11bladeknight23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x804737E8
+	.byte4 $$250143
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047381C
+	.byte4 $$250144
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80473850
+	.byte4 $$250145
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13818,12 +13818,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047427C
+	.byte4 $$250132
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804742AC
+	.byte4 $$250133
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13885,7 +13885,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5bowby23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474624
+	.byte4 $$250132
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13954,7 +13954,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474950
+	.byte4 $$250133
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -13969,7 +13969,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474970
+	.byte4 $$250134
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14036,7 +14036,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474CD4
+	.byte4 $$250135
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14066,17 +14066,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x0000000A
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474CF8
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474D2C
+	.byte4 $$250137
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80474D5C
+	.byte4 $$250138
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14098,10 +14098,10 @@ $$250124:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy5cappy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5cappy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559818
-	.4byte 0x80559820
-	.4byte 0x80475100
-	.4byte 0x80559828
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250131
 $$250131:
 	.asciz "DamageEtc"
@@ -14370,7 +14370,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x804757B0
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14395,9 +14395,9 @@ $$250123:
 	.asciz "CA3Thread1J"
 .global T_NODE_NAMES__Q53scn4step5enemy4como23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy4como23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559900
-	.4byte 0x80559900
-	.4byte 0x80475A98
+	.byte4 $$250122
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250128
 $$250128:
 	.asciz "DamageEtc"
@@ -14594,9 +14594,9 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805599C8
-	.4byte 0x804765D0
-	.4byte 0x805599D0
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250129
 $$250129:
 	.asciz "DamageEtc"
@@ -14662,12 +14662,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047660C
+	.byte4 $$250135
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80476628
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14680,9 +14680,9 @@ $$250214:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559A08
-	.4byte 0x80559A10
-	.4byte 0x80559A18
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250128
 $$250128:
 	.asciz "MoveStart"
@@ -14751,17 +14751,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000008
 	.4byte 0
 	.4byte 0
-	.4byte 0x80476AE4
+	.byte4 $$250133
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80476B04
+	.byte4 $$250134
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80476B24
+	.byte4 $$250135
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14773,11 +14773,11 @@ $$250212:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559A48
-	.4byte 0x80559A50
-	.4byte 0x80559A58
-	.4byte 0x80559A60
-	.4byte 0x80559A68
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250130
 $$250130:
 	.asciz "DamageEtc"
@@ -14847,14 +14847,14 @@ $$250124:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559A90
-	.4byte 0x80559A98
-	.4byte 0x80476FD8
-	.4byte 0x80559AA0
-	.4byte 0x80559AA8
-	.4byte 0x80559AB0
-	.4byte 0x80559AB8
-	.4byte 0x80559AC0
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
+	.byte4 $$250127
+	.byte4 $$250128
+	.byte4 $$250129
 .global $$250131
 $$250131:
 	.asciz "FlightWait"
@@ -14904,7 +14904,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80477020
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -14917,41 +14917,41 @@ $$250214:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559AE0
-	.4byte 0x80559AE8
-	.4byte 0x80559AF0
-	.4byte 0x80559AF8
-	.4byte 0x80559AE8
-	.4byte 0x80559AE8
-	.4byte 0x80559AE8
-	.4byte 0x80559B00
-	.4byte 0x80559B08
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250123
+	.byte4 $$250123
+	.byte4 $$250123
+	.byte4 $$250126
+	.byte4 $$250127
 .global $$250129
 $$250129:
 	.asciz "Effect1L"
 	.balign 4
 .global T_NODE_NAMES_VOLT__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_VOLT__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559AE0
-	.4byte 0x80559AE8
-	.4byte 0x80559AF0
-	.4byte 0x80559AF8
-	.4byte 0x8047733C
-	.4byte 0x80559B10
-	.4byte 0x80559B18
-	.4byte 0x80559B00
-	.4byte 0x80559B08
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250129
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250126
+	.byte4 $$250127
 .global T_NODE_NAMES_COLD__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_COLD__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559AE0
-	.4byte 0x80559AE8
-	.4byte 0x80559AF0
-	.4byte 0x80559AF8
-	.4byte 0x80559AE8
-	.4byte 0x80559AE8
-	.4byte 0x80559B18
-	.4byte 0x80559B20
-	.4byte 0x80559B20
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250123
+	.byte4 $$250123
+	.byte4 $$250131
+	.byte4 $$250133
+	.byte4 $$250133
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
@@ -15063,11 +15063,11 @@ $$250125:
 	.balign 4
 .global T_NODE_NAMES_NORMAL__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_NORMAL__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559B78
-	.4byte 0x80559B78
-	.4byte 0x80477898
-	.4byte 0x80559B80
-	.4byte 0x804778A4
+	.byte4 $$250122
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250132
 $$250132:
 	.asciz "DamageEtc"
@@ -15124,12 +15124,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x804778EC
+	.byte4 $$250138
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047790C
+	.byte4 $$250139
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15276,12 +15276,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x80477FC0
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80477FEC
+	.byte4 $$250137
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15334,19 +15334,19 @@ $$250134:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559C58
-	.4byte 0x804783F8
-	.4byte 0x80478404
-	.4byte 0x80559C60
-	.4byte 0x80559C68
-	.4byte 0x80478410
-	.4byte 0x8047841C
-	.4byte 0x80478428
-	.4byte 0x80478434
-	.4byte 0x80478440
-	.4byte 0x8047844C
-	.4byte 0x80478458
-	.4byte 0x80478464
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
+	.byte4 $$250127
+	.byte4 $$250128
+	.byte4 $$250129
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250132
+	.byte4 $$250133
+	.byte4 $$250134
 .global $$250138
 $$250138:
 	.asciz "LandingL"
@@ -15465,7 +15465,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000008
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478658
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15480,7 +15480,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047867C
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15490,37 +15490,37 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy10knucklejoe23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x804786A0
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804786C0
+	.byte4 $$250167
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804786E0
+	.byte4 $$250168
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478704
+	.byte4 $$250169
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478728
+	.byte4 $$250170
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478750
+	.byte4 $$250171
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478770
+	.byte4 $$250172
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15550,10 +15550,10 @@ $$250125:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559CB0
-	.4byte 0x80559CB8
-	.4byte 0x80559CC0
-	.4byte 0x80478BB0
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250132
 $$250132:
 	.asciz "DamageEtc"
@@ -15613,17 +15613,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478BF4
+	.byte4 $$250137
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478C14
+	.byte4 $$250138
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80478C30
+	.byte4 $$250139
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15776,9 +15776,9 @@ $$250208:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D88
-	.4byte 0x80559D90
-	.4byte 0x80559D98
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250131
 $$250131:
 	.asciz "DamageEtc"
@@ -15814,7 +15814,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x80479368
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15834,7 +15834,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x80479388
+	.byte4 $$250137
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -15910,10 +15910,10 @@ $$250125:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E10
-	.4byte 0x804797C8
-	.4byte 0x804797D4
-	.4byte 0x804797E0
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250132
 $$250132:
 	.asciz "DamageEtc"
@@ -15968,12 +15968,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047980C
+	.byte4 $$250134
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80479840
+	.byte4 $$250135
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16067,9 +16067,9 @@ $$250124:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy7parasol23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy7parasol23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E70
-	.4byte 0x80559E78
-	.4byte 0x80479E10
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250128
 $$250128:
 	.asciz "ParasolLanding"
@@ -16210,7 +16210,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x0000000A
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047A3C4
+	.byte4 $$250134
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16220,12 +16220,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047A3E8
+	.byte4 $$250135
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047A408
+	.byte4 $$250136
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16371,9 +16371,9 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559FD0
-	.4byte 0x8047AC18
-	.4byte 0x80559FD8
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250127
 $$250127:
 	.asciz "StoneFall"
@@ -16595,9 +16595,9 @@ $$250124:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A070
-	.4byte 0x8047B480
-	.4byte 0x8047B490
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250128
 $$250128:
 	.asciz "DamageEtc"
@@ -16731,7 +16731,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy8searches23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047B778
+	.byte4 $$250130
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16748,9 +16748,9 @@ $$250208:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A0C8
-	.4byte 0x8055A0D0
-	.4byte 0x8055A0D8
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250131
 $$250131:
 	.asciz "DamageEtc"
@@ -16806,7 +16806,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BAC4
+	.byte4 $$250140
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16831,12 +16831,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BAE0
+	.byte4 $$250141
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BB00
+	.byte4 $$250142
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16856,17 +16856,17 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BB1C
+	.byte4 $$250143
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BB3C
+	.byte4 $$250144
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047BB70
+	.byte4 $$250145
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -16882,9 +16882,9 @@ $$250123:
 	.asciz "CA2XrotateJ"
 .global T_NODE_NAMES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A138
-	.4byte 0x8047C0A0
-	.4byte 0x8055A140
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
@@ -16949,11 +16949,11 @@ $$250126:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy9sirkibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy9sirkibble23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A160
-	.4byte 0x8047C388
-	.4byte 0x8047C394
-	.4byte 0x8047C3A0
-	.4byte 0x8047C3B0
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250133
 $$250133:
 	.asciz "DamageEtc"
@@ -17031,7 +17031,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9sirkibble23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000006
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047C420
+	.byte4 $$250141
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17084,7 +17084,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047C814
+	.byte4 $$250133
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17119,7 +17119,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047C838
+	.byte4 $$250134
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17205,16 +17205,16 @@ $$250129:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A200
-	.4byte 0x8055A208
-	.4byte 0x8055A210
-	.4byte 0x8055A218
-	.4byte 0x8055A220
-	.4byte 0x8047CD38
-	.4byte 0x8047CD44
-	.4byte 0x8047CD50
-	.4byte 0x8055A228
-	.4byte 0x8055A230
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
+	.byte4 $$250127
+	.byte4 $$250128
+	.byte4 $$250129
+	.byte4 $$250130
+	.byte4 $$250131
 .global $$250138
 $$250138:
 	.asciz "DamageEtc"
@@ -17275,12 +17275,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047CDC4
+	.byte4 $$250144
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047CDE4
+	.byte4 $$250145
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17306,10 +17306,10 @@ $$250125:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A270
-	.4byte 0x8047D060
-	.4byte 0x8047D06C
-	.4byte 0x8047D078
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250131
 $$250131:
 	.asciz "DamageEtc"
@@ -17392,7 +17392,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047D0C8
+	.byte4 $$250138
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17418,10 +17418,10 @@ $$250124:
 	.4byte 0
 .global T_NODE_NAMES_SUN__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_SUN__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A2C8
-	.4byte 0x8055A2D0
-	.4byte 0x8047D3F0
-	.4byte 0x8055A2D8
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0
@@ -17606,11 +17606,11 @@ $$250125:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A320
-	.4byte 0x8047DBD8
-	.4byte 0x8047DBE4
-	.4byte 0x8047DBF0
-	.4byte 0x8055A328
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250133
 $$250133:
 	.asciz "DamageEtc"
@@ -17779,37 +17779,37 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DCDC
+	.byte4 $$250157
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DD04
+	.byte4 $$250158
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DD30
+	.byte4 $$250159
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DD58
+	.byte4 $$250160
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DD84
+	.byte4 $$250161
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DDB4
+	.byte4 $$250162
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DDE8
+	.byte4 $$250163
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17859,7 +17859,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DE14
+	.byte4 $$250164
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17874,12 +17874,12 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9waddledee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000008
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DE34
+	.byte4 $$250165
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047DE60
+	.byte4 $$250166
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -17929,17 +17929,17 @@ $$250130:
 	.balign 4
 .global T_NODE_NAMES_NORMAL__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_NORMAL__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A398
-	.4byte 0x8047E498
-	.4byte 0x8047E4A4
-	.4byte 0x8055A3A0
-	.4byte 0x8055A3A8
-	.4byte 0x8055A3B0
-	.4byte 0x8055A3B8
-	.4byte 0x8047E4B0
-	.4byte 0x8047E4BC
-	.4byte 0x8055A3C0
-	.4byte 0x8047E498
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
+	.byte4 $$250127
+	.byte4 $$250128
+	.byte4 $$250129
+	.byte4 $$250130
+	.byte4 $$250131
+	.byte4 $$250123
 .global $$250139
 $$250139:
 	.asciz "DamageEtc"
@@ -18038,7 +18038,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047E5B8
+	.byte4 $$250155
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -18098,7 +18098,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy9waddledoo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047E5DC
+	.byte4 $$250156
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -18201,16 +18201,16 @@ $$250210:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A438
-	.4byte 0x8055A440
-	.4byte 0x8055A448
-	.4byte 0x8055A450
-	.4byte 0x8055A458
-	.4byte 0x8055A460
-	.4byte 0x8055A468
-	.4byte 0x8055A470
-	.4byte 0x8055A478
-	.4byte 0x8055A480
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
+	.byte4 $$250127
+	.byte4 $$250128
+	.byte4 $$250129
+	.byte4 $$250130
+	.byte4 $$250131
 .global $$250135
 $$250135:
 	.asciz "DamageEtc"
@@ -18263,7 +18263,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047EA80
+	.byte4 $$250140
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -18318,7 +18318,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte 0x8047EBDC
+	.byte4 $$250128
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -18373,9 +18373,9 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon11starshotlv123$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon11starshotlv123$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C078
-	.4byte 0x80493F58
-	.4byte 0x8055C080
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250198
 $$250198:
 	.asciz "StarShotLv1"
@@ -18395,10 +18395,10 @@ $$250125:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C090
-	.4byte 0x80493FB8
-	.4byte 0x8055C098
-	.4byte 0x80493FC4
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250241
 $$250241:
 	.asciz "StarShotLv2"
@@ -18422,11 +18422,11 @@ $$250126:
 	.asciz "SmallStar2M"
 .global T_NODE_NAMES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C0B8
-	.4byte 0x80494030
-	.4byte 0x8055C0C0
-	.4byte 0x80494040
-	.4byte 0x8049404C
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250242
 $$250242:
 	.asciz "StarShotLv3"
@@ -18487,10 +18487,10 @@ $$250124:
 	.4byte 0
 .global T_NODE_NAMES__Q53scn4step6weapon13gigatzobullet23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon13gigatzobullet23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C118
-	.4byte 0x8055C120
-	.4byte 0x804942D8
-	.4byte 0x8055C128
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
 .global $$250288
 $$250288:
 	.asciz "GigatzoBullet"
@@ -18528,9 +18528,9 @@ $$250124:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon10comothread23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon10comothread23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C138
-	.4byte 0x804943D0
-	.4byte 0x804943DC
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250235
 $$250235:
 	.asciz "ComoThread"
@@ -18558,11 +18558,11 @@ $$250126:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C148
-	.4byte 0x80494458
-	.4byte 0x80494464
-	.4byte 0x80494470
-	.4byte 0x8049447C
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250242
 $$250242:
 	.asciz "EnemyWaterBullet"
@@ -18592,11 +18592,11 @@ $$250126:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C160
-	.4byte 0x804944F0
-	.4byte 0x804944FC
-	.4byte 0x80494508
-	.4byte 0x80494514
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250242
 $$250242:
 	.asciz "EnemyWaterBulletWarp"
@@ -18643,9 +18643,9 @@ $$250124:
 	.asciz "HammerheadJ"
 .global T_NODE_NAMES__Q53scn4step6weapon12hammerhammer23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon12hammerhammer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C1A8
-	.4byte 0x8055C1B0
-	.4byte 0x80494760
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250235
 $$250235:
 	.asciz "HammerHammer"
@@ -18727,11 +18727,11 @@ $$250125:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon10bowbyarrow23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon10bowbyarrow23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C260
-	.4byte 0x8055C268
-	.4byte 0x8055C270
-	.4byte 0x80494AF0
-	.4byte 0x8055C278
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
+	.byte4 $$250125
+	.byte4 $$250126
 .global $$250261
 $$250261:
 	.asciz "step/weapon/bowby/Arrow"
@@ -18747,9 +18747,9 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon12jucklecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon12jucklecutter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C290
-	.4byte 0x80494B68
-	.4byte 0x8055C298
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250236
 $$250236:
 	.asciz "step/weapon/juckle/Cutter"
@@ -18791,9 +18791,9 @@ $$250239:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C328
-	.4byte 0x8055C330
-	.4byte 0x8055C338
+	.byte4 $$250122
+	.byte4 $$250123
+	.byte4 $$250124
 .global $$250235
 $$250235:
 	.asciz "CombinationDeeShot"
@@ -19168,8 +19168,8 @@ $$250151:
 	.balign 4
 .global T_DYNAMICS_TARGET_NODE__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_DYNAMICS_TARGET_NODE__Q53scn4step4boss9creditdee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80466AB0
-	.4byte 0x80466AB0
+	.byte4 $$250161
+	.byte4 $$250161
 .global $$250130
 $$250130:
 	.asciz "TopL"
@@ -19242,7 +19242,7 @@ $$250130:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559180
+	.byte4 $$250130
 .global $$250132
 $$250132:
 	.asciz "Wait1"
@@ -19373,8 +19373,8 @@ $$250131:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss9moundeath23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559288
-	.4byte 0x80559290
+	.byte4 $$250130
+	.byte4 $$250131
 .global $$250133
 $$250133:
 	.asciz "Wait"
@@ -19403,7 +19403,7 @@ $$250130:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805592D0
+	.byte4 $$250130
 .global $$250132
 $$250132:
 	.asciz "Wait"
@@ -19527,8 +19527,8 @@ $$250130:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805593E0
-	.4byte 0x8046ABC0
+	.byte4 $$250130
+	.byte4 $$250131
 .global $$250133
 $$250133:
 	.asciz "Wait"
@@ -19573,8 +19573,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559648
-	.4byte 0x80559648
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -19642,8 +19642,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy7blipper23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy7blipper23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805596D8
-	.4byte 0x80473CE8
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait2"
@@ -19676,8 +19676,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559718
-	.4byte 0x80559720
+	.byte4 $$250122
+	.byte4 $$250123
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
@@ -19686,8 +19686,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559738
-	.4byte 0x80474258
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -19718,8 +19718,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy5bowby23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5bowby23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559770
-	.4byte 0x80559778
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -19742,7 +19742,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy10brontoburt23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805597A8
+	.byte4 $$250122
 .global $$250125
 $$250125:
 	.4byte 0x466C7900
@@ -19767,8 +19767,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11broomhatter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805597D0
-	.4byte 0x805597D8
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -19829,8 +19829,8 @@ $$250211:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8cappyhat23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8cappyhat23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x804752E0
-	.4byte 0x804752E0
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Attack"
@@ -19843,8 +19843,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8cerulean23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8cerulean23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559878
-	.4byte 0x804754A8
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -19871,8 +19871,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES_NORMAL__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_NORMAL__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805598B0
-	.4byte 0x805598B0
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -19931,7 +19931,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6degout23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6degout23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559930
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -19970,8 +19970,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8dubiorjr23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8dubiorjr23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559978
-	.4byte 0x80559980
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -19988,7 +19988,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805599A8
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Main"
@@ -20195,8 +20195,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559B50
-	.4byte 0x80559B50
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20249,7 +20249,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6juckle23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6juckle23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559BC8
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20277,8 +20277,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559BF8
-	.4byte 0x80559C00
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -20397,7 +20397,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6leafan23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6leafan23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D00
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20428,7 +20428,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy9mbossdead23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy9mbossdead23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D40
+	.byte4 $$250122
 .global $$250236
 $$250236:
 	.asciz "Model"
@@ -20440,7 +20440,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy7mumbies23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy7mumbies23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559D58
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20498,7 +20498,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy5noddy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5noddy23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559DD0
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20556,8 +20556,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6owgulf23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6owgulf23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559E48
-	.4byte 0x80479BF8
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.4byte 0x466C7900
@@ -20598,8 +20598,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559EA0
-	.4byte 0x8047A3A0
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -20635,8 +20635,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy10poppybrojr23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy10poppybrojr23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559EE8
-	.4byte 0x80559EF0
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait2"
@@ -20664,7 +20664,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy14poppybrojrbomb23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy14poppybrojrbomb23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559F88
+	.byte4 $$250122
 	.4byte 0
 .global $$250122
 $$250122:
@@ -20672,8 +20672,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy9puppetdee23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy9puppetdee23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559F98
-	.4byte 0x80559F98
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20733,8 +20733,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8rollball23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8rollball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A018
-	.4byte 0x8047B010
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -20749,7 +20749,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A038
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20798,7 +20798,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy8searches23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8searches23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A0A0
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -20917,8 +20917,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11sisterbound23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A198
-	.4byte 0x8047C7F0
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Wait"
@@ -20944,7 +20944,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy5snowl23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5snowl23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A1D0
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Damage"
@@ -21055,8 +21055,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy10stareffect23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy10stareffect23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A2B8
-	.4byte 0x8055A2B8
+	.byte4 $$250122
+	.byte4 $$250122
 .global $$250122
 $$250122:
 	.asciz "TopL"
@@ -21081,7 +21081,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy9tsukikage23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy9tsukikage23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A2F0
+	.byte4 $$250122
 .global $$250125
 $$250125:
 	.asciz "Fall"
@@ -21213,7 +21213,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy10watergalbo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy10watergalbo23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A400
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -21295,7 +21295,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A4A8
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Wait"
@@ -21315,8 +21315,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A4C8
-	.4byte 0x8055A4D0
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Loop"
@@ -21329,7 +21329,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C050
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Main"
@@ -21394,7 +21394,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C0E0
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Loop"
@@ -21409,7 +21409,7 @@ $$250257:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon12leafanpollen23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon12leafanpollen23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80494210
+	.byte4 $$250122
 .global $$250235
 $$250235:
 	.asciz "Model"
@@ -21473,8 +21473,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C178
-	.4byte 0x8055C180
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250126
 $$250126:
 	.asciz "Loop"
@@ -21505,7 +21505,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C1C0
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Main"
@@ -21521,8 +21521,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon12shotzobullet23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon12shotzobullet23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C1E0
-	.4byte 0x80494988
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250236
 $$250236:
 	.asciz "Model"
@@ -21537,8 +21537,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C1F8
-	.4byte 0x8055C200
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250125
 $$250125:
 	.asciz "Main"
@@ -21553,7 +21553,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon13owgulffeather23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon13owgulffeather23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C220
+	.byte4 $$250122
 .global $$250235
 $$250235:
 	.asciz "Model"
@@ -21565,7 +21565,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C238
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Vanish"
@@ -21628,8 +21628,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C2B0
-	.4byte 0x8055C2B8
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250240
 $$250240:
 	.asciz "TopL"
@@ -21640,7 +21640,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon10whispyroot23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon10whispyroot23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C2D0
+	.byte4 $$250122
 .global $$250235
 $$250235:
 	.asciz "TopL"
@@ -21652,7 +21652,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C2E8
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Main"
@@ -21688,8 +21688,8 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon12dededehammer23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon12dededehammer23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C358
-	.4byte 0x80494E50
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250236
 $$250236:
 	.asciz "Model"
@@ -21704,8 +21704,8 @@ $$250123:
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C370
-	.4byte 0x8055C378
+	.byte4 $$250122
+	.byte4 $$250123
 .global $$250126
 $$250126:
 	.asciz "Loop"
@@ -21724,7 +21724,7 @@ $$250125:
 	.balign 4
 .global $$2LOCAL$$2CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C3A0
+	.byte4 $$250125
 .global $$250570
 $$250570:
 	.asciz "TopL"
@@ -21735,7 +21735,7 @@ $$250171:
 	.asciz "TopL1x1"
 .global $$2LOCAL$$2CreateHeavy1x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy1x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C3B8
+	.byte4 $$250171
 	.4byte 0
 .global $$250585
 $$250585:
@@ -21745,7 +21745,7 @@ $$250194:
 	.asciz "TopL2x2"
 .global $$2LOCAL$$2CreateHeavy2x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy2x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C3D0
+	.byte4 $$250194
 	.4byte 0
 .global $$250589
 $$250589:
@@ -21755,7 +21755,7 @@ $$250217:
 	.asciz "TopL3x3"
 .global $$2LOCAL$$2CreateHeavy3x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy3x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C3E8
+	.byte4 $$250217
 	.4byte 0
 .global $$250593
 $$250593:
@@ -21765,27 +21765,27 @@ $$250240:
 	.asciz "TopL4x4"
 .global $$2LOCAL$$2CreateHeavy4x4__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy4x4__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C400
+	.byte4 $$250240
 	.4byte 0
 .global $$250597
 $$250597:
 	.asciz "TopL4x4"
 .global $$2LOCAL$$2CreateHeavyA1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavyA1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x80495108
+	.byte4 $$250263
 .global $$2LOCAL$$2CreateHeavyB1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavyB1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x80495134
+	.byte4 $$250286
 .global $$2LOCAL$$2CreateHeavy1x2x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy1x2x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x80495160
+	.byte4 $$250309
 	.4byte 0
 .global $$250332
 $$250332:
 	.asciz "TopL1x3"
 .global $$2LOCAL$$2CreateHeavy1x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy1x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C428
+	.byte4 $$250332
 	.4byte 0
 .global $$250613
 $$250613:
@@ -21795,24 +21795,24 @@ $$250355:
 	.asciz "TopL3x1"
 .global $$2LOCAL$$2CreateHeavy3x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy3x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x8055C440
+	.byte4 $$250355
 	.4byte 0
 .global $$250617
 $$250617:
 	.asciz "TopL3x1"
 .global $$2LOCAL$$2CreateHeavy2x4x4x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy2x4x4x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x804951AC
+	.byte4 $$250378
 .global $$2LOCAL$$2CreateHeavy3x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames
 $$2LOCAL$$2CreateHeavy3x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv$$2nodeNames:
-	.4byte 0x804951D8
+	.byte4 $$250401
 .global $$250122
 $$250122:
 	.asciz "TopL"
 	.balign 4
 .global T_NODE_NAMES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C460
+	.byte4 $$250122
 .global $$250124
 $$250124:
 	.asciz "Attack"
@@ -21826,7 +21826,7 @@ $$250240:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2
 T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8023DAC8  ;# ptr
+	.byte4 Create__Q53scn4step4boss15challengemaster9ModelDescFUlb
 .global $$250316
 $$250316:
 	.4byte 0
@@ -21846,7 +21846,7 @@ $$250364:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x80559160
+	.byte4 $$250137
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
@@ -21894,7 +21894,7 @@ $$250421:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x805599B4
+	.byte4 $$250124
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
@@ -21986,67 +21986,67 @@ T_MESHFLIP_NODE_TABLE__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055A4E0
+	.byte4 $$250125
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C05C
+	.byte4 $$250124
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C0A0
+	.byte4 $$250127
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C0C8
+	.byte4 $$250128
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C150
+	.byte4 $$250128
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C168
+	.byte4 $$250128
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C1CC
+	.byte4 $$250124
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C210
+	.byte4 $$250125
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C2B0
+	.byte4 $$250122
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C2F4
+	.byte4 $$250124
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2:
-	.4byte 0x8055C46C
+	.byte4 $$250124
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

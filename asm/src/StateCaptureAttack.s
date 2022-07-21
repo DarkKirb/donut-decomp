@@ -290,15 +290,15 @@ __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalbo
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalboros12StateCapture$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025A810  ;# ptr
-	.4byte 0x8025A7F4  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalboros12StateCapture$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalboros12StateCapture$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss13watergalboros18StateCaptureAttack
 __vt__Q53scn4step4boss13watergalboros18StateCaptureAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025A4A4  ;# ptr
-	.4byte 0x8025A51C  ;# ptr
-	.4byte 0x8025A740  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80234500  ;# ptr
-	.4byte 0x8025A744  ;# ptr
+	.byte4 __dt__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.byte4 procAnim__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.byte4 procMove__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q43scn4step4boss9StateBaseFv
+	.byte4 procObjCollReact__Q53scn4step4boss13watergalboros18StateCaptureAttackFv

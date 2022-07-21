@@ -1925,9 +1925,9 @@ $$257575:
 	.balign 4
 .global T_ANIM_LIST__Q53scn4step7gimmick13challengedoor27$$2unnamed$$2ChallengeDoor_cpp$$2
 T_ANIM_LIST__Q53scn4step7gimmick13challengedoor27$$2unnamed$$2ChallengeDoor_cpp$$2:
-	.4byte 0x80480800
-	.4byte 0x80480810
-	.4byte 0x80480820
+	.byte4 $$257573
+	.byte4 $$257574
+	.byte4 $$257575
 .global $$260101
 $$260101:
 	.asciz "step/gimmick/ChallengeDoor"
@@ -1975,8 +1975,8 @@ $$260508:
 __vt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80307ECC
-	.4byte 0x80307EA4
+	.byte4 __dt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1Fv
+	.byte4 create__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1985,25 +1985,25 @@ __vt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23St
 __vt__Q53scn4step7gimmick13challengedoor13ChallengeDoor:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80306740
+	.byte4 __dt__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
 	.4byte 0
-	.4byte 0x80306848
-	.4byte 0x80306D6C
-	.4byte 0x80306D70
-	.4byte 0x80306D74
-	.4byte 0x80306D78
-	.4byte 0x802FC218
-	.4byte 0x80305FC4
-	.4byte 0x803076D8
-	.4byte 0x803076DC
-	.4byte 0x803076E0
-	.4byte 0x803076E4
-	.4byte 0x80307C68
-	.4byte 0x80307BA0
-	.4byte 0x80307BC8
-	.4byte 0x80307C24
-	.4byte 0x803079C0
-	.4byte 0x803079CC
+	.byte4 init__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 registerToRoot__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaBack__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaFront__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 procAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 startUnlockDemo__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 endUnlockDemo__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 unsetZoomAll__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 unlockAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 canEnter__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 getEnterDistX__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 getEnterDistY__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 reqDoorOpenSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 reqDoorCloseSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

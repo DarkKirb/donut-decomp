@@ -74,9 +74,9 @@ __dt__Q53scn4step5enemy5nruff8BrainRunFv:
 __vt__Q53scn4step5enemy5nruff8BrainRun:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C7A64  ;# ptr
-	.4byte 0x802C79C8  ;# ptr
-	.4byte 0x802C7A60  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5nruff8BrainRunFv
+	.byte4 onStart__Q53scn4step5enemy5nruff8BrainRunFv
+	.byte4 onRecover__Q53scn4step5enemy5nruff8BrainRunFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

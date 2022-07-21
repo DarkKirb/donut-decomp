@@ -119,7 +119,7 @@ __sinit_$$3MintModelRotCtrl_cpp:
 /* 8026FE8C 0026BCCC  4B E6 D5 54 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8026FE88  ;# ptr
+	.byte4 __sinit_$$3MintModelRotCtrl_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5chara30$$2unnamed$$2MintModelRotCtrl_cpp$$2

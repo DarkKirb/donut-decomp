@@ -334,9 +334,9 @@ lbl_8007AE40:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global bta_dm_reg
 bta_dm_reg:
-	.4byte 0x8007AE50  ;# ptr
+	.byte4 bta_dm_sm_execute
 	.4byte 0
 .global bta_dm_search_reg
 bta_dm_search_reg:
-	.4byte 0x8007AEE8  ;# ptr
+	.byte4 bta_dm_search_sm_execute
 	.4byte 0

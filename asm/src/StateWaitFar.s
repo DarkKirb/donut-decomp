@@ -225,15 +225,15 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateWaitFar$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024C38C  ;# ptr
-	.4byte 0x8024C370  ;# ptr
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateWaitFar$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateWaitFar$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditroah12StateWaitFar
 __vt__Q53scn4step4boss10creditroah12StateWaitFar:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024C274  ;# ptr
-	.4byte 0x8024C2F0  ;# ptr
-	.4byte 0x8024C318  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024C36C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss10creditroah12StateWaitFarFv
+	.byte4 procAnim__Q53scn4step4boss10creditroah12StateWaitFarFv
+	.byte4 procMove__Q53scn4step4boss10creditroah12StateWaitFarFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss10creditroah12StateWaitFarFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

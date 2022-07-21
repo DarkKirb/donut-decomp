@@ -109,9 +109,9 @@ procFixPos__Q53scn4step4boss15challengemaster11StateSCHideFv:
 __vt__Q53scn4step4boss15challengemaster11StateSCHide:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024237C  ;# ptr
-	.4byte 0x8024240C  ;# ptr
-	.4byte 0x80242434  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80242438  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster11StateSCHideFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster11StateSCHideFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster11StateSCHideFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster11StateSCHideFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

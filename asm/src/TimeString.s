@@ -229,9 +229,9 @@ $$249499:
 __vt__Q43scn15challengeresult4info10TimeString:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801F5050  ;# ptr
-	.4byte 0x801F52A4  ;# ptr
-	.4byte 0x801F52A8  ;# ptr
+	.byte4 onStartTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUsUsPUc
+	.byte4 onEndTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUs
+	.byte4 onNormalChar__Q43scn15challengeresult4info10TimeStringFw
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

@@ -492,13 +492,13 @@ $$252720:
 __vt__Q33scn14challengetitle19SceneChallengeTitle:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801EFBBC  ;# ptr
-	.4byte 0x801EFA0C  ;# ptr
-	.4byte 0x801EFAA0  ;# ptr
-	.4byte 0x801EFA78  ;# ptr
-	.4byte 0x801EFAF4  ;# ptr
-	.4byte 0x801EFB1C  ;# ptr
-	.4byte 0x801EFB44  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn14challengetitle19SceneChallengeTitleCFv
+	.byte4 __dt__Q33scn14challengetitle19SceneChallengeTitleFv
+	.byte4 updateMain__Q33scn14challengetitle19SceneChallengeTitleFv
+	.byte4 updateUseGPU__Q33scn14challengetitle19SceneChallengeTitleFv
+	.byte4 updateDebug__Q33scn14challengetitle19SceneChallengeTitleFv
+	.byte4 draw__Q33scn14challengetitle19SceneChallengeTitleFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn14challengetitle19SceneChallengeTitleCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

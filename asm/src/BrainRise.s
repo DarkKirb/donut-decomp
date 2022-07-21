@@ -79,15 +79,15 @@ __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9Sta
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CAAF4  ;# ptr
-	.4byte 0x802CAAD4  ;# ptr
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy7parasol9BrainRise
 __vt__Q53scn4step5enemy7parasol9BrainRise:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CAAF0  ;# ptr
-	.4byte 0x802CAA50  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy7parasol9BrainRiseFv
+	.byte4 onStart__Q53scn4step5enemy7parasol9BrainRiseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

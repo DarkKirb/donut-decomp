@@ -3486,21 +3486,21 @@ $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kAlpSels$$20:
 	.4byte 0x00000012
 .global __vt__Q36nw4hbm3lyt8Material
 __vt__Q36nw4hbm3lyt8Material:
-	.4byte 0x80444090
+	.byte4 __RTTI__Q36nw4hbm3lyt8Material
 	.4byte 0
-	.4byte 0x80138D40  ;# ptr
-	.4byte 0x801399D0  ;# ptr
-	.4byte 0x8013A7F0  ;# ptr
-	.4byte 0x8013A800  ;# ptr
-	.4byte 0x8013A880  ;# ptr
-	.4byte 0x8013A890  ;# ptr
-	.4byte 0x8013A950  ;# ptr
-	.4byte 0x8013A960  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt8MaterialFv
+	.byte4 SetupGX__Q36nw4hbm3lyt8MaterialFbUc
+	.byte4 BindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 UnbindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 UnbindAllAnimation__Q36nw4hbm3lyt8MaterialFv
+	.byte4 Animate__Q36nw4hbm3lyt8MaterialFv
+	.byte4 FindAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 SetAnimationEnable__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransformb
 .global $$28504
 $$28504:
 	.asciz "nw4hbm::lyt::Material"
 	.balign 4
 .global __RTTI__Q36nw4hbm3lyt8Material
 __RTTI__Q36nw4hbm3lyt8Material:
-	.4byte 0x80444078
+	.byte4 $$28504
 	.4byte 0

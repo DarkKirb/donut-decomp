@@ -298,17 +298,17 @@ allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv:
 __vt__Q23mem7HeapExp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BE458  ;# ptr
-	.4byte 0x801BE5B4  ;# ptr
-	.4byte 0x801BE5B8  ;# ptr
-	.4byte 0x801BE5BC  ;# ptr
-	.4byte 0x801BE5C0  ;# ptr
-	.4byte 0x801BE5D0  ;# ptr
-	.4byte 0x801BE5D4  ;# ptr
+	.byte4 __dt__Q23mem7HeapExpFv
+	.byte4 allocatorAlloc__Q23mem7HeapExpFUll
+	.byte4 allocatorFree__Q23mem7HeapExpFPv
+	.byte4 heapName__Q23mem7HeapExpCFv
+	.byte4 heapMemBlock__Q23mem7HeapExpCFv
+	.byte4 heapUsingBlockCount__Q23mem7HeapExpCFv
+	.byte4 heapDump__Q23mem7HeapExpCFv
 .global __vt__Q33mem7HeapExp22AllocFromTailAllocator
 __vt__Q33mem7HeapExp22AllocFromTailAllocator:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BE3A4  ;# ptr
-	.4byte 0x801BE62C  ;# ptr
-	.4byte 0x801BE638  ;# ptr
+	.byte4 __dt__Q33mem7HeapExp22AllocFromTailAllocatorFv
+	.byte4 allocatorAlloc__Q33mem7HeapExp22AllocFromTailAllocatorFUll
+	.byte4 allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv

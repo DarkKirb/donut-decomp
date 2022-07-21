@@ -24,7 +24,7 @@ __sinit_$$3MintShake_cpp:
 /* 802706D8 0026C518  4B E6 CD 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x802706D4  ;# ptr
+	.byte4 __sinit_$$3MintShake_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5chara23$$2unnamed$$2MintShake_cpp$$2

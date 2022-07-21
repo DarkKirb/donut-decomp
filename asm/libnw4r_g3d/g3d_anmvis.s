@@ -1412,84 +1412,84 @@ TYPE_NAME__Q34nw4r3g3d12AnmObjVisRes:
 __vt__Q34nw4r3g3d12AnmObjVisRes:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D4760  ;# ptr
-	.4byte 0x800D3940  ;# ptr
-	.4byte 0x800D4860  ;# ptr
-	.4byte 0x800D4850  ;# ptr
-	.4byte 0x800D4820  ;# ptr
-	.4byte 0x800D4390  ;# ptr
-	.4byte 0x800D4400  ;# ptr
-	.4byte 0x800D4430  ;# ptr
-	.4byte 0x800D4410  ;# ptr
-	.4byte 0x800D4420  ;# ptr
-	.4byte 0x800D44C0  ;# ptr
-	.4byte 0x800D3880  ;# ptr
-	.4byte 0x800D45D0  ;# ptr
-	.4byte 0x800D38C0  ;# ptr
-	.4byte 0x800D38D0  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d12AnmObjVisResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d9AnmObjVisFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d12AnmObjVisResFv
+	.byte4 GetTypeObj__Q34nw4r3g3d12AnmObjVisResCFv
+	.byte4 GetTypeName__Q34nw4r3g3d12AnmObjVisResCFv
+	.byte4 SetFrame__Q34nw4r3g3d12AnmObjVisResFf
+	.byte4 GetFrame__Q34nw4r3g3d12AnmObjVisResCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d12AnmObjVisResFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d12AnmObjVisResFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d12AnmObjVisResCFv
+	.byte4 Bind__Q34nw4r3g3d12AnmObjVisResFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d9AnmObjVisFv
+	.byte4 GetResult__Q34nw4r3g3d12AnmObjVisResFUl
+	.byte4 Attach__Q34nw4r3g3d9AnmObjVisFiPQ34nw4r3g3d12AnmObjVisRes
+	.byte4 Detach__Q34nw4r3g3d9AnmObjVisFi
 .global __vt__Q34nw4r3g3d11AnmObjVisOR
 __vt__Q34nw4r3g3d11AnmObjVisOR:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D48B0  ;# ptr
-	.4byte 0x800D4030  ;# ptr
-	.4byte 0x800D49C0  ;# ptr
-	.4byte 0x800D49B0  ;# ptr
-	.4byte 0x800D49A0  ;# ptr
-	.4byte 0x800D3D10  ;# ptr
-	.4byte 0x800D3D80  ;# ptr
-	.4byte 0x800D3CB0  ;# ptr
-	.4byte 0x800D3DD0  ;# ptr
-	.4byte 0x800D3E40  ;# ptr
-	.4byte 0x800D3E90  ;# ptr
-	.4byte 0x800D3F80  ;# ptr
-	.4byte 0x800D41A0  ;# ptr
-	.4byte 0x800D3A50  ;# ptr
-	.4byte 0x800D3B40  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d11AnmObjVisORCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d13AnmObjVisNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d11AnmObjVisORFv
+	.byte4 GetTypeObj__Q34nw4r3g3d11AnmObjVisORCFv
+	.byte4 GetTypeName__Q34nw4r3g3d11AnmObjVisORCFv
+	.byte4 SetFrame__Q34nw4r3g3d13AnmObjVisNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjVisNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjVisNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 Bind__Q34nw4r3g3d13AnmObjVisNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d13AnmObjVisNodeFv
+	.byte4 GetResult__Q34nw4r3g3d11AnmObjVisORFUl
+	.byte4 Attach__Q34nw4r3g3d13AnmObjVisNodeFiPQ34nw4r3g3d12AnmObjVisRes
+	.byte4 Detach__Q34nw4r3g3d13AnmObjVisNodeFi
 .global __vt__Q34nw4r3g3d13AnmObjVisNode
 __vt__Q34nw4r3g3d13AnmObjVisNode:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D4930  ;# ptr
-	.4byte 0x800D4030  ;# ptr
-	.4byte 0x800D39C0  ;# ptr
-	.4byte 0x800D4A60  ;# ptr
-	.4byte 0x800D4A50  ;# ptr
-	.4byte 0x800D3D10  ;# ptr
-	.4byte 0x800D3D80  ;# ptr
-	.4byte 0x800D3CB0  ;# ptr
-	.4byte 0x800D3DD0  ;# ptr
-	.4byte 0x800D3E40  ;# ptr
-	.4byte 0x800D3E90  ;# ptr
-	.4byte 0x800D3F80  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d13AnmObjVisNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d13AnmObjVisNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d13AnmObjVisNodeFv
+	.byte4 GetTypeObj__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 GetTypeName__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 SetFrame__Q34nw4r3g3d13AnmObjVisNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjVisNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjVisNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjVisNodeCFv
+	.byte4 Bind__Q34nw4r3g3d13AnmObjVisNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d13AnmObjVisNodeFv
 	.4byte 0
-	.4byte 0x800D3A50  ;# ptr
-	.4byte 0x800D3B40  ;# ptr
+	.byte4 Attach__Q34nw4r3g3d13AnmObjVisNodeFiPQ34nw4r3g3d12AnmObjVisRes
+	.byte4 Detach__Q34nw4r3g3d13AnmObjVisNodeFi
 .global __vt__Q34nw4r3g3d9AnmObjVis
 __vt__Q34nw4r3g3d9AnmObjVis:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D47D0  ;# ptr
-	.4byte 0x800D3940  ;# ptr
-	.4byte 0x800D3980  ;# ptr
-	.4byte 0x800D4A80  ;# ptr
-	.4byte 0x800D4A70  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d9AnmObjVisCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d9AnmObjVisFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d9AnmObjVisFv
+	.byte4 GetTypeObj__Q34nw4r3g3d9AnmObjVisCFv
+	.byte4 GetTypeName__Q34nw4r3g3d9AnmObjVisCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D3880  ;# ptr
+	.byte4 Release__Q34nw4r3g3d9AnmObjVisFv
 	.4byte 0
-	.4byte 0x800D38C0  ;# ptr
-	.4byte 0x800D38D0  ;# ptr
+	.byte4 Attach__Q34nw4r3g3d9AnmObjVisFiPQ34nw4r3g3d12AnmObjVisRes
+	.byte4 Detach__Q34nw4r3g3d9AnmObjVisFi
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy$$2policyTable
 $$2LOCAL$$2GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy$$2policyTable:
-	.4byte 0x800DBE80  ;# ptr
-	.4byte 0x800DBE90  ;# ptr
+	.byte4 PlayPolicy_Onetime__Q24nw4r3g3dFfff
+	.byte4 PlayPolicy_Loop__Q24nw4r3g3dFfff
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27650

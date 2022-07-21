@@ -71,11 +71,11 @@ __dt__Q53scn4step5enemy8dubiorjr9BrainMainFv:
 __vt__Q53scn4step5enemy8dubiorjr9BrainMain:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802ADFB4  ;# ptr
-	.4byte 0x802ADF24  ;# ptr
-	.4byte 0x802ADFB0  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy8dubiorjr9BrainMainFv
+	.byte4 onStart__Q53scn4step5enemy8dubiorjr9BrainMainFv
+	.byte4 onRecover__Q53scn4step5enemy8dubiorjr9BrainMainFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

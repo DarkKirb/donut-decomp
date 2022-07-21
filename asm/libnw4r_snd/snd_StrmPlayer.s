@@ -3153,38 +3153,38 @@ $$2180$$2__dt__Q44nw4r3snd6detail10StrmPlayerFv:
 __vt__Q44nw4r3snd6detail10StrmPlayer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801160B0  ;# ptr
-	.4byte 0x80116540  ;# ptr
-	.4byte 0x801168A0  ;# ptr
-	.4byte 0x80116A70  ;# ptr
-	.4byte 0x80118A20  ;# ptr
-	.4byte 0x80118A10  ;# ptr
-	.4byte 0x80118A00  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 Start__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 Stop__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 Pause__Q44nw4r3snd6detail10StrmPlayerFb
+	.byte4 IsActive__Q44nw4r3snd6detail10StrmPlayerCFv
+	.byte4 IsStarted__Q44nw4r3snd6detail10StrmPlayerCFv
+	.byte4 IsPause__Q44nw4r3snd6detail10StrmPlayerCFv
 	.4byte 0
 	.4byte 0
-	.4byte 0x80118A60  ;# ptr
-	.4byte 0x80118A50  ;# ptr
-	.4byte 0x80118A40  ;# ptr
-	.4byte 0x80118A30  ;# ptr
-	.4byte 0x801189D0  ;# ptr
-	.4byte 0x801189E0  ;# ptr
-	.4byte 0x801189F0  ;# ptr
+	.byte4 $$2180$$2__dt__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 $$2180$$2OnUpdateFrameSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 $$2180$$2OnUpdateVoiceSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 $$2180$$2OnShutdownSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 OnUpdateFrameSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 OnUpdateVoiceSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.byte4 OnShutdownSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
 .global __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask
 __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801160A0  ;# ptr
-	.4byte 0x80118860  ;# ptr
-	.4byte 0x80118930  ;# ptr
-	.4byte 0x801189C0  ;# ptr
+	.byte4 __dt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.byte4 Execute__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.byte4 Cancel__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.byte4 OnCancel__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
 .global __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask
 __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80116090  ;# ptr
-	.4byte 0x80118700  ;# ptr
-	.4byte 0x80118750  ;# ptr
-	.4byte 0x80118760  ;# ptr
+	.byte4 __dt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.byte4 Execute__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.byte4 Cancel__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.byte4 OnCancel__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211788

@@ -572,13 +572,13 @@ $$253027:
 __vt__Q33scn5strap10SceneStrap:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F2830
-	.4byte 0x803F2384
-	.4byte 0x803F2418
-	.4byte 0x803F2414
-	.4byte 0x803F27A0
-	.4byte 0x803F27A4
-	.4byte 0x803F281C
+	.byte4 GetRuntimeTypeInfo__Q33scn5strap10SceneStrapCFv
+	.byte4 __dt__Q33scn5strap10SceneStrapFv
+	.byte4 updateMain__Q33scn5strap10SceneStrapFv
+	.byte4 updateUseGPU__Q33scn5strap10SceneStrapFv
+	.byte4 updateDebug__Q33scn5strap10SceneStrapFv
+	.byte4 draw__Q33scn5strap10SceneStrapFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn5strap10SceneStrapCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

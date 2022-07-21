@@ -1250,7 +1250,7 @@ $$254566:
 $$254817:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x803AC804
+	.byte4 safeboolFunc__Q24util45PlacementNew$$0Q43scn4step4info13WarpStarPanel$$1CFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

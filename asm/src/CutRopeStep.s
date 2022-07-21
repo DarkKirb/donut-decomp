@@ -2033,28 +2033,28 @@ $$259480:
 	.4byte 0
 .global $$256446
 $$256446:
-	.4byte 0x80481270
+	.byte4 $$256444
 .global lbl_80562834
 lbl_80562834:
-	.4byte 0x8048128C
+	.byte4 $$256445
 .global $$256458
 $$256458:
-	.4byte 0x8055A6A0
+	.byte4 $$256456
 .global lbl_8056283C
 lbl_8056283C:
-	.4byte 0x8055A6A8
+	.byte4 $$256457
 .global $$256474
 $$256474:
-	.4byte 0x8055A6B0
+	.byte4 $$256472
 .global lbl_80562844
 lbl_80562844:
-	.4byte 0x8055A6B8
+	.byte4 $$256473
 .global $$256486
 $$256486:
-	.4byte 0x8055A6C0
+	.byte4 $$256484
 .global lbl_8056284C
 lbl_8056284C:
-	.4byte 0x8055A6C8
+	.byte4 $$256485
 .global $$259707
 $$259707:
 	.4byte 0x3F000000

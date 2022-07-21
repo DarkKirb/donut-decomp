@@ -290,17 +290,17 @@ __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateW
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipDrill$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B514
-	.4byte 0x8038B4F8
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipDrill$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipDrill$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero4whip14StateWhipDrill
 __vt__Q53scn4step4hero4whip14StateWhipDrill:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B2A4
-	.4byte 0x8038B320
-	.4byte 0x8038B454
-	.4byte 0x8035550C
-	.4byte 0x8038B4F4
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero4whip14StateWhipDrillFv
+	.byte4 procAnim__Q53scn4step4hero4whip14StateWhipDrillFv
+	.byte4 procMove__Q53scn4step4hero4whip14StateWhipDrillFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero4whip14StateWhipDrillFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

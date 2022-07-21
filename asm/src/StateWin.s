@@ -115,9 +115,9 @@ procFixPos__Q53scn4step4boss15challengemaster8StateWinFv:
 __vt__Q53scn4step4boss15challengemaster8StateWin:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802436F4  ;# ptr
-	.4byte 0x802436F8  ;# ptr
-	.4byte 0x80243768  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024376C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster8StateWinFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster8StateWinFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster8StateWinFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster8StateWinFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

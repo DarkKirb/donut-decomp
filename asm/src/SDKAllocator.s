@@ -32,5 +32,5 @@ Free__Q23mem12SDKAllocatorFP12MEMAllocatorPv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global AllocatorFunc__Q23mem12SDKAllocator
 AllocatorFunc__Q23mem12SDKAllocator:
-	.4byte 0x801BF778  ;# ptr
-	.4byte 0x801BF794  ;# ptr
+	.byte4 Alloc__Q23mem12SDKAllocatorFP12MEMAllocatorUl
+	.byte4 Free__Q23mem12SDKAllocatorFP12MEMAllocatorPv

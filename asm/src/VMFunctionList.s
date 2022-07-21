@@ -170,12 +170,12 @@ lbl_801CD1B8:
 __vt__Q26mintvm14VMFunctionList:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA37C  ;# ptr
+	.byte4 __dt__Q26mintvm14VMFunctionListFv
 .global __vt__Q26mintvm10VMFunction
 __vt__Q26mintvm10VMFunction:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA504  ;# ptr
+	.byte4 __dt__Q26mintvm10VMFunctionFv
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction$$20
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction$$20:
 	.asciz "mMax = %d\n"

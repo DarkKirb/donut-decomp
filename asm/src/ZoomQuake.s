@@ -137,13 +137,13 @@ $$251541:
 	.asciz "BossPowerfulAttackCharge.Exec()"
 .global T_QUAKE_NAME_TABLE__Q43scn4step6camera23$$2unnamed$$2ZoomQuake_cpp$$2
 T_QUAKE_NAME_TABLE__Q43scn4step6camera23$$2unnamed$$2ZoomQuake_cpp$$2:
-	.4byte 0x8046B140
-	.4byte 0x8046B150
-	.4byte 0x8046B168
-	.4byte 0x8046B184
-	.4byte 0x8046B1A0
-	.4byte 0x8046B1C0
-	.4byte 0x8046B1E0
+	.byte4 $$251535
+	.byte4 $$251536
+	.byte4 $$251537
+	.byte4 $$251538
+	.byte4 $$251539
+	.byte4 $$251540
+	.byte4 $$251541
 .global $$251699
 $$251699:
 	.asciz "Scn.Step.Camera.ZoomQuake.%s"

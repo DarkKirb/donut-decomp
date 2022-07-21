@@ -706,7 +706,7 @@ SetBodyCollJump__Q43scn4step4hero11MintObjCollFv:
 /* 8034BAA0 003478E0  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80270684  ;# ptr
+	.byte4 __sinit_$$3MintObjColl_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5chara25$$2unnamed$$2MintObjColl_cpp$$2

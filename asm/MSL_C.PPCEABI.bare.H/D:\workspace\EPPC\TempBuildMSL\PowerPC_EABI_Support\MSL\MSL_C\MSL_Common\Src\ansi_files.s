@@ -92,17 +92,17 @@ __files:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80496AB8
+	.byte4 stdin_buff
 	.4byte 0x00000100
-	.4byte 0x80496AB8
+	.byte4 stdin_buff
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800186F8  ;# ptr
-	.4byte 0x80010454  ;# ptr
-	.4byte 0x80010524  ;# ptr
+	.byte4 __read_console
+	.byte4 __write_console
+	.byte4 __close_console
 	.4byte 0
 	.4byte 0x80421148
 	.4byte 0x00000001
@@ -112,17 +112,17 @@ __files:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804969B8
+	.byte4 stdout_buff
 	.4byte 0x00000100
-	.4byte 0x804969B8
+	.byte4 stdout_buff
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800186F8  ;# ptr
-	.4byte 0x80010454  ;# ptr
-	.4byte 0x80010524  ;# ptr
+	.byte4 __read_console
+	.byte4 __write_console
+	.byte4 __close_console
 	.4byte 0
 	.4byte 0x80421198
 	.4byte 0x00000002
@@ -132,17 +132,17 @@ __files:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x804968B8
+	.byte4 stderr_buff
 	.4byte 0x00000100
-	.4byte 0x804968B8
+	.byte4 stderr_buff
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800186F8  ;# ptr
-	.4byte 0x80010454  ;# ptr
-	.4byte 0x80010524  ;# ptr
+	.byte4 __read_console
+	.byte4 __write_console
+	.byte4 __close_console
 	.4byte 0
 	.4byte 0x804211E8
 	.4byte 0

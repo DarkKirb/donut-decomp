@@ -442,20 +442,20 @@ lbl_803B00E8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252167
 $$252167:
-	.4byte 0x8055B6F8
-	.4byte 0x8055B6FC
-	.4byte 0x8055B704
-	.4byte 0x8055B70C
-	.4byte 0x80490058
-	.4byte 0x8055B714
+	.byte4 $$252161
+	.byte4 $$252162
+	.byte4 $$252163
+	.byte4 $$252164
+	.byte4 $$252165
+	.byte4 $$252166
 .global $$252187
 $$252187:
-	.4byte 0x8055B6F8
-	.4byte 0x80490064
-	.4byte 0x80490070
-	.4byte 0x8049007C
-	.4byte 0x80490088
-	.4byte 0x80490098
+	.byte4 $$252161
+	.byte4 $$252182
+	.byte4 $$252183
+	.byte4 $$252184
+	.byte4 $$252185
+	.byte4 $$252186
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252619

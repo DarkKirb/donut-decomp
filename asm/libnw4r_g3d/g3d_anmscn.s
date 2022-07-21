@@ -1613,56 +1613,56 @@ TYPE_NAME__Q34nw4r3g3d9AnmScnRes:
 __vt__Q34nw4r3g3d9AnmScnRes:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800DBC40  ;# ptr
-	.4byte 0x800DB250  ;# ptr
-	.4byte 0x800DB110  ;# ptr
-	.4byte 0x800DBCE0  ;# ptr
-	.4byte 0x800DBCD0  ;# ptr
-	.4byte 0x800DB120  ;# ptr
-	.4byte 0x800DB180  ;# ptr
-	.4byte 0x800DB190  ;# ptr
-	.4byte 0x800DB1C0  ;# ptr
-	.4byte 0x800DB1D0  ;# ptr
-	.4byte 0x800DAD60  ;# ptr
-	.4byte 0x800DAD70  ;# ptr
-	.4byte 0x800DADC0  ;# ptr
-	.4byte 0x800DADD0  ;# ptr
-	.4byte 0x800DADE0  ;# ptr
-	.4byte 0x800DADF0  ;# ptr
-	.4byte 0x800DAE00  ;# ptr
-	.4byte 0x800DAE10  ;# ptr
-	.4byte 0x800DAE20  ;# ptr
-	.4byte 0x800DAE30  ;# ptr
-	.4byte 0x800DAE40  ;# ptr
-	.4byte 0x800DAE50  ;# ptr
-	.4byte 0x800DAE60  ;# ptr
-	.4byte 0x800DB2A0  ;# ptr
-	.4byte 0x800DB3E0  ;# ptr
-	.4byte 0x800DB450  ;# ptr
-	.4byte 0x800DB5D0  ;# ptr
-	.4byte 0x800DB680  ;# ptr
-	.4byte 0x800DBA30  ;# ptr
-	.4byte 0x800DBA70  ;# ptr
-	.4byte 0x800DB7E0  ;# ptr
-	.4byte 0x800DB880  ;# ptr
-	.4byte 0x800DB910  ;# ptr
-	.4byte 0x800DB9A0  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d9AnmScnResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d9AnmScnResFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d9AnmScnResFv
+	.byte4 GetTypeObj__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetTypeName__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 SetFrame__Q34nw4r3g3d9AnmScnResFf
+	.byte4 GetFrame__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d9AnmScnResFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d9AnmScnResFv
+	.byte4 Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes
+	.byte4 Detach__Q34nw4r3g3d6AnmScnFi
+	.byte4 GetNumLightSet__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetNumAmbLight__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetNumDiffuseLight__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetNumSpecularLight__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetNumFog__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetNumCamera__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetLightSetMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetAmbLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetDiffuseLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetFogMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetCameraMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.byte4 GetLightSet__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d8LightSetUl
+	.byte4 GetAmbLightColor__Q34nw4r3g3d9AnmScnResFUl
+	.byte4 GetLight__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d8LightObjPQ34nw4r3g3d8LightObjUl
+	.byte4 GetFog__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d3FogUl
+	.byte4 GetCamera__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d6CameraUl
+	.byte4 GetSpecularLightID__Q34nw4r3g3d9AnmScnResCFUl
+	.byte4 HasSpecularLight__Q34nw4r3g3d9AnmScnResCFUl
+	.byte4 GetAmbLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d17AmbLightAnmResultUl
+	.byte4 GetLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d14LightAnmResultUl
+	.byte4 GetFogResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d12FogAnmResultUl
+	.byte4 GetCameraResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d15CameraAnmResultUl
 .global __vt__Q34nw4r3g3d6AnmScn
 __vt__Q34nw4r3g3d6AnmScn:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800DBC90  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d6AnmScnCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.4byte 0x800DAD80  ;# ptr
-	.4byte 0x800DBD00  ;# ptr
-	.4byte 0x800DBCF0  ;# ptr
-	.4byte 0
-	.4byte 0
+	.byte4 __dt__Q34nw4r3g3d6AnmScnFv
+	.byte4 GetTypeObj__Q34nw4r3g3d6AnmScnCFv
+	.byte4 GetTypeName__Q34nw4r3g3d6AnmScnCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800DAD60  ;# ptr
-	.4byte 0x800DAD70  ;# ptr
+	.4byte 0
+	.4byte 0
+	.byte4 Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes
+	.byte4 Detach__Q34nw4r3g3d6AnmScnFi
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -1016,7 +1016,7 @@ $$253756:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2
 T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2:
-	.4byte 0x804572A8
+	.byte4 $$252041
 .global $$253617
 $$253617:
 	.asciz "Base"

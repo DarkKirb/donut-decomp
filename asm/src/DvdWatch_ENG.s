@@ -3,11 +3,11 @@
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ERROR_MSG_ENG__Q23app8DvdWatch
 ERROR_MSG_ENG__Q23app8DvdWatch:
-	.4byte 0x80556B78
-	.4byte 0x80452BC0
-	.4byte 0x80452BC0
-	.4byte 0x80452C04
-	.4byte 0x80452C50
+	.byte4 $$248836
+	.byte4 $$248837
+	.byte4 $$248837
+	.byte4 $$248838
+	.byte4 $$248839
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

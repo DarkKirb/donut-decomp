@@ -1082,7 +1082,7 @@ $$253846:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2:
-	.4byte 0x8045EE88
+	.byte4 $$252920
 .global $$253755
 $$253755:
 	.4byte 0x3F333333
@@ -1090,7 +1090,7 @@ $$253755:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2:
-	.4byte 0x80460A98
+	.byte4 $$252919
 .global $$253798
 $$253798:
 	.4byte 0x3F333333

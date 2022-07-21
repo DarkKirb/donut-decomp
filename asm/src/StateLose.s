@@ -88,9 +88,9 @@ procFixPos__Q53scn4step4boss15challengemaster9StateLoseFv:
 __vt__Q53scn4step4boss15challengemaster9StateLose:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80241030  ;# ptr
-	.4byte 0x80241034  ;# ptr
-	.4byte 0x80241038  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024103C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster9StateLoseFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster9StateLoseFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster9StateLoseFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster9StateLoseFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

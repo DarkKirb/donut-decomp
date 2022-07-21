@@ -223,7 +223,7 @@ lbl_801BD1F0:
 __vt__Q35mcoll6detail12StdResponder:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801B1574  ;# ptr
-	.4byte 0x801BCFB4  ;# ptr
-	.4byte 0x801BD080  ;# ptr
-	.4byte 0x801BD0AC  ;# ptr
+	.byte4 __dt__Q35mcoll6detail12StdResponderFv
+	.byte4 onDetectStarted__Q35mcoll6detail12StdResponderFRCQ35mcoll6detail6IActorRCQ33hel4math7Vector2
+	.byte4 onDetectFinished__Q35mcoll6detail12StdResponderFRCQ35mcoll6detail6IActorRCQ35mcoll6detail9ActorInfo
+	.byte4 onCollide__Q35mcoll6detail12StdResponderFRCQ35mcoll6detail6IActorRCQ35mcoll6detail12CollidedInfo

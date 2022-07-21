@@ -1858,13 +1858,13 @@ $$2STRING$$2AsinRad__Q24nw4r4mathFf:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2
 T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2:
-	.4byte 0x80556EA8
-	.4byte 0x80556EB0
-	.4byte 0x80556EB8
-	.4byte 0x80556EC0
-	.4byte 0x80556EC8
-	.4byte 0x80556ED0
-	.4byte 0x80556ED8
+	.byte4 $$251913
+	.byte4 $$251914
+	.byte4 $$251915
+	.byte4 $$251916
+	.byte4 $$251917
+	.byte4 $$251918
+	.byte4 $$251919
 .global $$254066
 $$254066:
 	.4byte 0xFF10FF11
@@ -1884,16 +1884,16 @@ $$254078:
 __vt__Q24info22Iterator$52761Util_cpp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A56E8  ;# ptr
-	.4byte 0x801A5680  ;# ptr
-	.4byte 0x801A5600  ;# ptr
+	.byte4 onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc
+	.byte4 onEndTag__Q24info22Iterator$52761Util_cppFPCwUlUsUs
+	.byte4 onNormalChar__Q24info22Iterator$52761Util_cppFw
 .global __vt__Q24info22Iterator$52705Util_cpp
 __vt__Q24info22Iterator$52705Util_cpp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A58A8  ;# ptr
-	.4byte 0x801A5850  ;# ptr
-	.4byte 0x801A5804  ;# ptr
+	.byte4 onStartTag__Q24info22Iterator$52705Util_cppFPCwUlUsUsUsPUc
+	.byte4 onEndTag__Q24info22Iterator$52705Util_cppFPCwUlUsUs
+	.byte4 onNormalChar__Q24info22Iterator$52705Util_cppFw
 .global $$254197
 $$254197:
 	.asciz "bad_function_call"
@@ -1902,16 +1902,16 @@ $$254197:
 __vt__Q24info22Iterator$52503Util_cpp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A5918  ;# ptr
-	.4byte 0x801AFF00  ;# ptr
-	.4byte 0x801AFF04  ;# ptr
+	.byte4 onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc
+	.byte4 onEndTag__Q33lyt7TagUtil14StringIteratorFPCwUlUsUs
+	.byte4 onNormalChar__Q33lyt7TagUtil14StringIteratorFw
 .global __vt__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cpp
 __vt__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cpp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A5A70  ;# ptr
-	.4byte 0x801A5A6C  ;# ptr
-	.4byte 0x801A5A68  ;# ptr
+	.byte4 onStartTag__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cppFPCwUlUsUsUsPUc
+	.byte4 onEndTag__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cppFPCwUlUsUs
+	.byte4 onNormalChar__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cppFw
 .global $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$22
 $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$22:
 	.asciz "NW4R:Pointer Error\nstr(=%p) is not valid pointer."

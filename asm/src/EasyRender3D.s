@@ -596,7 +596,7 @@ __sinit_$$3EasyRender3D_cpp:
 /* 80195850 00191690  4B FF F7 D4 */	b __ct__Q33hel4math8Matrix34Fv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80195848  ;# ptr
+	.byte4 __sinit_$$3EasyRender3D_cpp
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251446

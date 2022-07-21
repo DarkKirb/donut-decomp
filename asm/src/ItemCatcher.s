@@ -382,7 +382,7 @@ __sinit_$$3ItemCatcher_cpp:
 /* 80342C6C 0033EAAC  4B E5 C7 3C */	b set__Q33hel4math7Vector2Fff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80342C60
+	.byte4 __sinit_$$3ItemCatcher_cpp
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254426

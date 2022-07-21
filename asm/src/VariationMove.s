@@ -59,9 +59,9 @@ setIsPose__Q53scn4step7gimmick10cameralock13VariationMoveFb:
 __vt__Q53scn4step7gimmick10cameralock13VariationMove:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80304C20
-	.4byte 0x80304C88
-	.4byte 0x80304C8C
-	.4byte 0x80304C90
-	.4byte 0x80304C94
+	.byte4 updateReady__Q53scn4step7gimmick10cameralock13VariationMoveFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLock__Q53scn4step7gimmick10cameralock13VariationMoveFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationMoveFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationMoveFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 setIsPose__Q53scn4step7gimmick10cameralock13VariationMoveFb
 	.4byte 0

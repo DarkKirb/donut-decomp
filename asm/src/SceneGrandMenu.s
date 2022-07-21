@@ -449,13 +449,13 @@ $$249820:
 __vt__Q33scn9grandmenu14SceneGrandMenu:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803F4548
-	.4byte 0x803F43EC
-	.4byte 0x803F4480
-	.4byte 0x803F4458
-	.4byte 0x803F44A8
-	.4byte 0x803F44D0
-	.4byte 0x803F44F8
+	.byte4 GetRuntimeTypeInfo__Q33scn9grandmenu14SceneGrandMenuCFv
+	.byte4 __dt__Q33scn9grandmenu14SceneGrandMenuFv
+	.byte4 updateMain__Q33scn9grandmenu14SceneGrandMenuFv
+	.byte4 updateUseGPU__Q33scn9grandmenu14SceneGrandMenuFv
+	.byte4 updateDebug__Q33scn9grandmenu14SceneGrandMenuFv
+	.byte4 draw__Q33scn9grandmenu14SceneGrandMenuFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn9grandmenu14SceneGrandMenuCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

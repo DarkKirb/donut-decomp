@@ -348,9 +348,9 @@ onStopPowerfulFinished__Q43scn4step4core10PermEffectFRCQ25ostop5Actor:
 __vt__Q43scn4step4core10PermEffect:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8027814C  ;# ptr
-	.4byte 0x80278270  ;# ptr
-	.4byte 0x80278280  ;# ptr
-	.4byte 0x80278290  ;# ptr
-	.4byte 0x802782D0  ;# ptr
+	.byte4 __dt__Q43scn4step4core10PermEffectFv
+	.byte4 onStopNormalStarted__Q43scn4step4core10PermEffectFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step4core10PermEffectFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step4core10PermEffectFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step4core10PermEffectFRCQ25ostop5Actor
 	.4byte 0

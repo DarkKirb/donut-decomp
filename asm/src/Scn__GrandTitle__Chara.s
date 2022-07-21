@@ -948,72 +948,72 @@ $$256068:
 $$256070:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4EE8  ;# ptr
+	.byte4 isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256126
 $$256126:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4EA4  ;# ptr
+	.byte4 setLoopAnim__Q28mintglue22Scn__GrandTitle__CharaFPCcPCc
 .global $$256131
 $$256131:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4E80  ;# ptr
+	.byte4 stopWalkSE__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256139
 $$256139:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4E34  ;# ptr
+	.byte4 requestWalkSE__Q28mintglue22Scn__GrandTitle__CharaFUlUli
 .global $$256142
 $$256142:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4E10  ;# ptr
+	.byte4 flashReset__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256147
 $$256147:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4DDC  ;# ptr
+	.byte4 flashStart__Q28mintglue22Scn__GrandTitle__CharaFUl
 .global $$256150
 $$256150:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4DA8  ;# ptr
+	.byte4 setBlockVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 .global $$256158
 $$256158:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4D74  ;# ptr
+	.byte4 setVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 .global $$256163
 $$256163:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4D50  ;# ptr
+	.byte4 resetEffect__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256168
 $$256168:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4D0C  ;# ptr
+	.byte4 effectWarpRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256176
 $$256176:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4CC8  ;# ptr
+	.byte4 effectForeRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256181
 $$256181:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4C84  ;# ptr
+	.byte4 effectRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256186
 $$256186:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4C60  ;# ptr
+	.byte4 isAnimLooped__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256191
 $$256191:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C4BB8  ;# ptr
+	.byte4 changeAnim__Q28mintglue22Scn__GrandTitle__CharaFPCci
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv:
 	.asciz "MintPtr is 0."

@@ -635,7 +635,7 @@ lbl_8001C01C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.4byte 0x8001BF00  ;# ptr
+	.byte4 OnReset
 	.4byte 0xFFFFFFFF
 	.4byte 0
 	.4byte 0

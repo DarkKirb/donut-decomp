@@ -50,9 +50,9 @@ __dt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttackFv:
 __vt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EF9D4  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802EF994  ;# ptr
-	.4byte 0x802EF998  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttackFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy9waddledoo17BrainJumpOrAttackFv
+	.byte4 update__Q53scn4step5enemy9waddledoo17BrainJumpOrAttackFv
 	.4byte 0

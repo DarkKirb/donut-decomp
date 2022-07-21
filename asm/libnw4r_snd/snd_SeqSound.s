@@ -608,33 +608,33 @@ __sinit_$$3snd_SeqSound_cpp:
 /* 8010DF0C 00109D4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8010DF00  ;# ptr
+	.byte4 __sinit_$$3snd_SeqSound_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail8SeqSound
 __vt__Q44nw4r3snd6detail8SeqSound:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8010DEF0  ;# ptr
-	.4byte 0x8010DBA0  ;# ptr
-	.4byte 0x8010DAC0  ;# ptr
-	.4byte 0x8010DEE0  ;# ptr
-	.4byte 0x8010DD30  ;# ptr
-	.4byte 0x8010DD50  ;# ptr
-	.4byte 0x8010D810  ;# ptr
-	.4byte 0x8010DEC0  ;# ptr
-	.4byte 0x8010DED0  ;# ptr
-	.4byte 0x8010DC40  ;# ptr
-	.4byte 0x80106200  ;# ptr
-	.4byte 0x80106240  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q44nw4r3snd6detail8SeqSoundCFv
+	.byte4 __dt__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 Shutdown__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 IsPrepared__Q44nw4r3snd6detail8SeqSoundCFv
+	.byte4 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 DetachTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 InitParam__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundCFv
+	.byte4 OnUpdatePlayerPriority__Q44nw4r3snd6detail8SeqSoundFv
+	.byte4 UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
+	.byte4 UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
 .global __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask
 __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8010D7B0  ;# ptr
-	.4byte 0x8010DD60  ;# ptr
-	.4byte 0x8010DE60  ;# ptr
-	.4byte 0x8010DE90  ;# ptr
+	.byte4 __dt__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.byte4 Execute__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.byte4 Cancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.byte4 OnCancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q44nw4r3snd6detail8SeqSound

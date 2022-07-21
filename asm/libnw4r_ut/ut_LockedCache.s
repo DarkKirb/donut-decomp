@@ -156,7 +156,7 @@ __sinit_$$3ut_LockedCache_cpp:
 /* 8012146C 0011D2AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80121450  ;# ptr
+	.byte4 __sinit_$$3ut_LockedCache_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sLCImpl__Q34nw4r2ut28$$2unnamed$$2ut_LockedCache_cpp$$2

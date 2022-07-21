@@ -247,14 +247,14 @@ lbl_80136BFC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt5Group
 __vt__Q36nw4hbm3lyt5Group:
-	.4byte 0x80443FB8
+	.byte4 __RTTI__Q36nw4hbm3lyt5Group
 	.4byte 0
-	.4byte 0x801369E0  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt5GroupFv
 .global $$27939
 $$27939:
 	.asciz "nw4hbm::lyt::Group"
 	.balign 4
 .global __RTTI__Q36nw4hbm3lyt5Group
 __RTTI__Q36nw4hbm3lyt5Group:
-	.4byte 0x80443FA4
+	.byte4 $$27939
 	.4byte 0

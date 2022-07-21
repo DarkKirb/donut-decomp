@@ -1583,63 +1583,63 @@ __dt__Q34info8sequence11CommandWaitFv:
 $$255949:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A67CC  ;# ptr
+	.byte4 reset__Q34info8sequence7CommandFv
 .global __vt__Q34info8sequence11CommandWait
 __vt__Q34info8sequence11CommandWait:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A7018  ;# ptr
-	.4byte 0x801A696C  ;# ptr
-	.4byte 0x801A6924  ;# ptr
+	.byte4 __dt__Q34info8sequence11CommandWaitFv
+	.byte4 start__Q34info8sequence11CommandWaitFv
+	.byte4 proc__Q34info8sequence11CommandWaitFv
 .global __vt__Q34info8sequence11CommandProc
 __vt__Q34info8sequence11CommandProc:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A6FAC  ;# ptr
-	.4byte 0x801A6914  ;# ptr
-	.4byte 0x801A6974  ;# ptr
+	.byte4 __dt__Q34info8sequence11CommandProcFv
+	.byte4 start__Q34info8sequence7CommandFv
+	.byte4 proc__Q34info8sequence11CommandProcFv
 .global __vt__Q34info8sequence15CommandInterval
 __vt__Q34info8sequence15CommandInterval:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A6F34  ;# ptr
-	.4byte 0x801A6ACC  ;# ptr
-	.4byte 0x801A6A00  ;# ptr
+	.byte4 __dt__Q34info8sequence15CommandIntervalFv
+	.byte4 start__Q34info8sequence15CommandIntervalFv
+	.byte4 proc__Q34info8sequence15CommandIntervalFv
 .global __vt__Q34info8sequence11CommandCall
 __vt__Q34info8sequence11CommandCall:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A6EC8  ;# ptr
-	.4byte 0x801A6B24  ;# ptr
-	.4byte 0x801A5C68  ;# ptr
+	.byte4 __dt__Q34info8sequence11CommandCallFv
+	.byte4 start__Q34info8sequence11CommandCallFv
+	.byte4 proc__Q34info8sequence7CommandFv
 .global __vt__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeap
 __vt__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeap:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A649C  ;# ptr
-	.4byte 0x801A6C08  ;# ptr
-	.4byte 0x801A6C10  ;# ptr
+	.byte4 __dt__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeapFv
+	.byte4 allocatorAlloc__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeapFUll
+	.byte4 allocatorFree__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeapFPv
 .global __vt__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeap
 __vt__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeap:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A6080  ;# ptr
-	.4byte 0x801A6C14  ;# ptr
-	.4byte 0x801A6C18  ;# ptr
+	.byte4 __dt__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeapFv
+	.byte4 allocatorAlloc__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeapFUll
+	.byte4 allocatorFree__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeapFPv
 .global __vt__Q34info8sequence11CommandAnim
 __vt__Q34info8sequence11CommandAnim:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A6BAC  ;# ptr
-	.4byte 0x801A6B9C  ;# ptr
-	.4byte 0x801A6B5C  ;# ptr
+	.byte4 __dt__Q34info8sequence11CommandAnimFv
+	.byte4 start__Q34info8sequence11CommandAnimFv
+	.byte4 proc__Q34info8sequence11CommandAnimFv
 .global __vt__Q34info8sequence7Command
 __vt__Q34info8sequence7Command:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801A5DAC  ;# ptr
-	.4byte 0x801A6914  ;# ptr
-	.4byte 0x801A5C68  ;# ptr
+	.byte4 __dt__Q34info8sequence7CommandFv
+	.byte4 start__Q34info8sequence7CommandFv
+	.byte4 proc__Q34info8sequence7CommandFv
 .global $$256161
 $$256161:
 	.asciz "bad_function_call"

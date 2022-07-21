@@ -155,9 +155,9 @@ __dt__Q53scn4step5enemy6owgulf14BrainFlyAroundFv:
 __vt__Q53scn4step5enemy6owgulf14BrainFlyAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C9CD4  ;# ptr
-	.4byte 0x802C9B30  ;# ptr
-	.4byte 0x802C9BB4  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x802C9BB8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6owgulf14BrainFlyAroundFv
+	.byte4 onStart__Q53scn4step5enemy6owgulf14BrainFlyAroundFv
+	.byte4 onRecover__Q53scn4step5enemy6owgulf14BrainFlyAroundFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q53scn4step5enemy6owgulf14BrainFlyAroundFv
 	.4byte 0

@@ -92,11 +92,11 @@ lbl_803FFA40:
 __vt__Q23seq12SequenceRoot:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FF9FC
-	.4byte 0x803FFA00
-	.4byte 0x803FF984
-	.4byte 0x803FF988
-	.4byte 0x803FF9F0
-	.4byte 0x803FF9F4
-	.4byte 0x803FF9F8
+	.byte4 GetRuntimeTypeInfo__Q23seq12SequenceRootCFv
+	.byte4 __dt__Q23seq12SequenceRootFv
+	.byte4 nextAction__Q23seq12SequenceRootCFv
+	.byte4 createChildSequence__Q23seq12SequenceRootCFv
+	.byte4 onChildSequenceEnd__Q23seq12SequenceRootFRQ23seq9ISequence
+	.byte4 createScene__Q23seq12SequenceRootCFv
+	.byte4 onSceneEnd__Q23seq12SequenceRootFRQ23scn6IScene
 	.4byte 0

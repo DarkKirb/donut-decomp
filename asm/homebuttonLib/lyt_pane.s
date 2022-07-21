@@ -1238,7 +1238,7 @@ __sinit_$$3lyt_pane_cpp:
 /* 8013BB3C 0013797C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8013BB30  ;# ptr
+	.byte4 __sinit_$$3lyt_pane_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29169
@@ -1267,31 +1267,31 @@ $$29733:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt4Pane
 __vt__Q36nw4hbm3lyt4Pane:
-	.4byte 0x80443F38
+	.byte4 __RTTI__Q36nw4hbm3lyt4Pane
 	.4byte 0
-	.4byte 0x8013ABA0  ;# ptr
-	.4byte 0x801297F0  ;# ptr
-	.4byte 0x8013B0A0  ;# ptr
-	.4byte 0x8013B3A0  ;# ptr
-	.4byte 0x8013B430  ;# ptr
-	.4byte 0x8013B580  ;# ptr
-	.4byte 0x8013B610  ;# ptr
-	.4byte 0x8013AE90  ;# ptr
-	.4byte 0x8013AEA0  ;# ptr
-	.4byte 0x8013AEB0  ;# ptr
-	.4byte 0x8013AEE0  ;# ptr
-	.4byte 0x8013AF10  ;# ptr
-	.4byte 0x8013AF20  ;# ptr
-	.4byte 0x8013AF30  ;# ptr
-	.4byte 0x8013AFE0  ;# ptr
-	.4byte 0x8013B6D0  ;# ptr
-	.4byte 0x8013B6F0  ;# ptr
-	.4byte 0x8013B700  ;# ptr
-	.4byte 0x8013B710  ;# ptr
-	.4byte 0x8013B7F0  ;# ptr
-	.4byte 0x8013B870  ;# ptr
-	.4byte 0x8013BB20  ;# ptr
-	.4byte 0x8013B930  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt4PaneFv
+	.byte4 GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv
+	.byte4 CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 DrawSelf__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Animate__Q36nw4hbm3lyt4PaneFUl
+	.byte4 AnimateSelf__Q36nw4hbm3lyt4PaneFUl
+	.byte4 GetVtxColor__Q36nw4hbm3lyt4PaneCFUl
+	.byte4 SetVtxColor__Q36nw4hbm3lyt4PaneFUlQ36nw4hbm2ut5Color
+	.byte4 GetColorElement__Q36nw4hbm3lyt4PaneCFUl
+	.byte4 SetColorElement__Q36nw4hbm3lyt4PaneFUlUc
+	.byte4 GetVtxColorElement__Q36nw4hbm3lyt4PaneCFUl
+	.byte4 SetVtxColorElement__Q36nw4hbm3lyt4PaneFUlUc
+	.byte4 FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb
+	.byte4 UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb
+	.byte4 GetMaterial__Q36nw4hbm3lyt4PaneCFv
+	.byte4 LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

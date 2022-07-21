@@ -1077,15 +1077,15 @@ __dt__Q44nw4r3snd10WavePlayer10WavePacketFv:
 __vt__Q34nw4r3snd10WavePlayer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011D550  ;# ptr
-	.4byte 0x8011E390  ;# ptr
-	.4byte 0x8011E2A0  ;# ptr
-	.4byte 0x8011E290  ;# ptr
+	.byte4 __dt__Q34nw4r3snd10WavePlayerFv
+	.byte4 OnUpdateFrameSoundThread__Q34nw4r3snd10WavePlayerFv
+	.byte4 OnUpdateVoiceSoundThread__Q34nw4r3snd10WavePlayerFv
+	.byte4 OnShutdownSoundThread__Q34nw4r3snd10WavePlayerFv
 .global __vt__Q44nw4r3snd10WavePlayer10WavePacket
 __vt__Q44nw4r3snd10WavePlayer10WavePacket:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011E3A0  ;# ptr
+	.byte4 __dt__Q44nw4r3snd10WavePlayer10WavePacketFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

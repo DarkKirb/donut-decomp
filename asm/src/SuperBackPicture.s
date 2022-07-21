@@ -805,11 +805,11 @@ $$253741:
 __vt__Q43scn4step3sfx16SuperBackPicture:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803CFF94
-	.4byte 0x803D0798
-	.4byte 0x803D079C
-	.4byte 0x803D07A0
-	.4byte 0x803D07D8
+	.byte4 __dt__Q43scn4step3sfx16SuperBackPictureFv
+	.byte4 onStopNormalStarted__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

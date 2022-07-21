@@ -2422,12 +2422,12 @@ lbl_800E303C:
 .global bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2
 bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2:
 	.4byte 0
-	.4byte 0x800E0F60  ;# ptr
-	.4byte 0x800E11C0  ;# ptr
-	.4byte 0x800E1530  ;# ptr
-	.4byte 0x800E1840  ;# ptr
-	.4byte 0x800E1C50  ;# ptr
-	.4byte 0x800E1F60  ;# ptr
+	.byte4 Calc_BILLBOARD_STD__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
+	.byte4 Calc_BILLBOARD_PERSP_STD__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
+	.byte4 Calc_BILLBOARD_ROT__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
+	.byte4 Calc_BILLBOARD_PERSP_ROT__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
+	.byte4 Calc_BILLBOARD_Y__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
+	.byte4 Calc_BILLBOARD_PERSP_Y__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

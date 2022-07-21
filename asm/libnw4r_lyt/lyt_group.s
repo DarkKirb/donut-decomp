@@ -254,5 +254,5 @@ lbl_800F3E2C:
 __vt__Q34nw4r3lyt5Group:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F3C10  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt5GroupFv
 	.4byte 0

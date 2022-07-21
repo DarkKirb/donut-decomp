@@ -202,15 +202,15 @@ __dt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16St
 __vt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16StateSuperAppear$$4PQ43scn4step5enemy5Enemy$$4Q25ostop9ReqHandle$$4i$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80294B24  ;# ptr
-	.4byte 0x80294B00  ;# ptr
+	.byte4 __dt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16StateSuperAppear$$4PQ43scn4step5enemy5Enemy$$4Q25ostop9ReqHandle$$4i$$1Fv
+	.byte4 create__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16StateSuperAppear$$4PQ43scn4step5enemy5Enemy$$4Q25ostop9ReqHandle$$4i$$1Fv
 .global __vt__Q53scn4step5enemy6common19StateSuperAppearPre
 __vt__Q53scn4step5enemy6common19StateSuperAppearPre:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029494C  ;# ptr
-	.4byte 0x80294A24  ;# ptr
-	.4byte 0x80294AF8  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80294AFC  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common19StateSuperAppearPreFv
+	.byte4 procAnim__Q53scn4step5enemy6common19StateSuperAppearPreFv
+	.byte4 procMove__Q53scn4step5enemy6common19StateSuperAppearPreFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common19StateSuperAppearPreFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

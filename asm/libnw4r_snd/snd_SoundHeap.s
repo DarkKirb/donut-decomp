@@ -137,5 +137,5 @@ DisposeCallbackFunc__Q34nw4r3snd9SoundHeapFPvUlPv:
 __vt__Q34nw4r3snd9SoundHeap:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80113CA0  ;# ptr
-	.4byte 0x80113D30  ;# ptr
+	.byte4 __dt__Q34nw4r3snd9SoundHeapFv
+	.byte4 Alloc__Q34nw4r3snd9SoundHeapFUl

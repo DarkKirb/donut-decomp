@@ -549,20 +549,20 @@ Pal60Prog16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global StandardRenderModeSets__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
 StandardRenderModeSets__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
-	.4byte 0x804145B8
-	.4byte 0x804145FC
-	.4byte 0x80414640
-	.4byte 0x80414684
-	.4byte 0x804146C8
-	.4byte 0x8041470C
-	.4byte 0x80414750
-	.4byte 0x80414794
-	.4byte 0x804147D8
-	.4byte 0x8041481C
-	.4byte 0x80414860
-	.4byte 0x804148A4
-	.4byte 0x804148E8
-	.4byte 0x8041492C
+	.byte4 NtscInt4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscInt4x3AA__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscProg4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscProg4x3AA__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal50Int4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal60Int4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal60Prog4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscInt16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscInt16x9AA__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscProg16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 NtscProg16x9AA__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal50Int16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal60Int16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
+	.byte4 Pal60Prog16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249284

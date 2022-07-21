@@ -564,12 +564,12 @@ lbl_801E4194:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252047
 $$252047:
-	.4byte 0x80557B00
-	.4byte 0x80557B08
-	.4byte 0x80557B10
-	.4byte 0x80557B18
-	.4byte 0x80557B20
-	.4byte 0x80557B20
+	.byte4 $$252042
+	.byte4 $$252043
+	.byte4 $$252044
+	.byte4 $$252045
+	.byte4 $$252046
+	.byte4 $$252046
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252743
@@ -620,15 +620,15 @@ $$252898:
 __vt__Q33scn19challengefileselect4File:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801E412C  ;# ptr
-	.4byte 0x801E3D1C  ;# ptr
-	.4byte 0x801E3D54  ;# ptr
-	.4byte 0x801E3D64  ;# ptr
-	.4byte 0x801E3D70  ;# ptr
-	.4byte 0x801E3D7C  ;# ptr
-	.4byte 0x801E3D88  ;# ptr
-	.4byte 0x801E3D90  ;# ptr
-	.4byte 0x801E3E00  ;# ptr
+	.byte4 __dt__Q33scn19challengefileselect4FileFv
+	.byte4 updateFrame__Q33scn19challengefileselect4FileFv
+	.byte4 appear__Q33scn19challengefileselect4FileFv
+	.byte4 focus__Q33scn19challengefileselect4FileFv
+	.byte4 unfocus__Q33scn19challengefileselect4FileFv
+	.byte4 decide__Q33scn19challengefileselect4FileFv
+	.byte4 isAnimEnd__Q33scn19challengefileselect4FileCFv
+	.byte4 kind__Q33scn19challengefileselect4FileCFv
+	.byte4 cursorPane__Q33scn19challengefileselect4FileFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

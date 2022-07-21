@@ -334,33 +334,33 @@ __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12Stat
 __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025A434  ;# ptr
-	.4byte 0x8025A414  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.byte4 create__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
 .global __vt__Q53scn4step4boss13watergalboros12StateCapture
 __vt__Q53scn4step4boss13watergalboros12StateCapture:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025A244  ;# ptr
-	.4byte 0x8025A248  ;# ptr
-	.4byte 0x8025A40C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025A410  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss13watergalboros12StateCaptureFv
+	.byte4 procAnim__Q53scn4step4boss13watergalboros12StateCaptureFv
+	.byte4 procMove__Q53scn4step4boss13watergalboros12StateCaptureFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss13watergalboros12StateCaptureFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateChewing$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateChewing$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025CC0C  ;# ptr
-	.4byte 0x8025CBF0  ;# ptr
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateChewing$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy12StateChewing$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss6whispy12StateCapture
 __vt__Q53scn4step4boss6whispy12StateCapture:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025CB4C  ;# ptr
-	.4byte 0x8025CB50  ;# ptr
-	.4byte 0x8025CBE8  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025CBEC  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy12StateCaptureFv
+	.byte4 procAnim__Q53scn4step4boss6whispy12StateCaptureFv
+	.byte4 procMove__Q53scn4step4boss6whispy12StateCaptureFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy12StateCaptureFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

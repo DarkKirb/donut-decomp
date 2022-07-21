@@ -68,9 +68,9 @@ procFixPos__Q53scn4step4boss7bonkers14StateBombStartFv:
 __vt__Q53scn4step4boss7bonkers14StateBombStart:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802381AC  ;# ptr
-	.4byte 0x802381B0  ;# ptr
-	.4byte 0x802381FC  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80238200  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss7bonkers14StateBombStartFv
+	.byte4 procAnim__Q53scn4step4boss7bonkers14StateBombStartFv
+	.byte4 procMove__Q53scn4step4boss7bonkers14StateBombStartFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss7bonkers14StateBombStartFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

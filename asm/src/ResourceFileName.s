@@ -68,29 +68,29 @@ $$248736:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.4byte 0x80456930
+	.byte4 $$248726
 .global LAYOUT_FRA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_FRA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.4byte 0x80456944
+	.byte4 $$248728
 .global LAYOUT_SPA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_SPA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.4byte 0x80456958
+	.byte4 $$248729
 .global MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.4byte 0x8045696C
+	.byte4 $$248732
 .global MESSAGE_WARNING_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 MESSAGE_WARNING_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.4byte 0x80456980
+	.byte4 $$248733
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global CONFIG_FILENAME__Q23hbm16ResourceFileName
 CONFIG_FILENAME__Q23hbm16ResourceFileName:
-	.4byte 0x80456990
+	.byte4 $$248734
 .global SPEAKER_SE_FILENAME__Q23hbm16ResourceFileName
 SPEAKER_SE_FILENAME__Q23hbm16ResourceFileName:
-	.4byte 0x804569A0
+	.byte4 $$248735
 .global SE_FILENAME__Q23hbm16ResourceFileName
 SE_FILENAME__Q23hbm16ResourceFileName:
-	.4byte 0x804569B4
+	.byte4 $$248736
 	.4byte 0

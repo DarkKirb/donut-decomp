@@ -486,25 +486,25 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15Stat
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateSlidingHit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036A9C4
-	.4byte 0x8036A988
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateSlidingHit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateSlidingHit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateSliding$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateSliding$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036A9C0
-	.4byte 0x8036A9A4
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateSliding$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common12StateSliding$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero6common12StateSliding
 __vt__Q53scn4step4hero6common12StateSliding:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036A4C8
-	.4byte 0x8036A544
-	.4byte 0x8036A698
-	.4byte 0x8035550C
-	.4byte 0x8036A758
-	.4byte 0x8036A8D4
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common12StateSlidingFv
+	.byte4 procAnim__Q53scn4step4hero6common12StateSlidingFv
+	.byte4 procMove__Q53scn4step4hero6common12StateSlidingFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common12StateSlidingFv
+	.byte4 procObjCollReact__Q53scn4step4hero6common12StateSlidingFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

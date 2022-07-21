@@ -318,24 +318,24 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCPursuit$$4PQ43scn4step4boss4Boss$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80242A78  ;# ptr
-	.4byte 0x80242A38  ;# ptr
+	.byte4 __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCPursuit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.byte4 create__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCPursuit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80242A74  ;# ptr
-	.4byte 0x80242A58  ;# ptr
+	.byte4 __dt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss15challengemaster16StateSCLookKirby
 __vt__Q53scn4step4boss15challengemaster16StateSCLookKirby:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80242794  ;# ptr
-	.4byte 0x80242798  ;# ptr
-	.4byte 0x8024283C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80242A34  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255360

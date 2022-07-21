@@ -62,24 +62,24 @@ Name__Q24font12FontKindUtilFQ24font8FontKind:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2
 T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2:
-	.4byte 0x80556D28
-	.4byte 0x804537F0
-	.4byte 0x80556D28
-	.4byte 0x80453800
-	.4byte 0x80556D28
-	.4byte 0x80453814
-	.4byte 0x80556D28
-	.4byte 0x80453828
-	.4byte 0x80556D28
-	.4byte 0x80453840
-	.4byte 0x80556D28
-	.4byte 0x8045384C
-	.4byte 0x80556D28
-	.4byte 0x80453860
-	.4byte 0x80556D28
-	.4byte 0x80453874
-	.4byte 0x80556D28
-	.4byte 0x80453888
+	.byte4 $$248723
+	.byte4 $$248724
+	.byte4 $$248723
+	.byte4 $$248725
+	.byte4 $$248723
+	.byte4 $$248726
+	.byte4 $$248723
+	.byte4 $$248727
+	.byte4 $$248723
+	.byte4 $$248728
+	.byte4 $$248723
+	.byte4 $$248729
+	.byte4 $$248723
+	.byte4 $$248730
+	.byte4 $$248723
+	.byte4 $$248731
+	.byte4 $$248723
+	.byte4 $$248732
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248724

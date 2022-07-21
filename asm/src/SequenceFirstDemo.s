@@ -208,11 +208,11 @@ GetRuntimeTypeInfo__Q23seq17SequenceFirstDemoCFv:
 __vt__Q23seq17SequenceFirstDemo:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FE2C0
-	.4byte 0x803FE0F4
-	.4byte 0x803FE0F8
-	.4byte 0x803FE128
-	.4byte 0x803FE270
-	.4byte 0x803FE288
-	.4byte 0x803FE2BC
+	.byte4 GetRuntimeTypeInfo__Q23seq17SequenceFirstDemoCFv
+	.byte4 __dt__Q23seq17SequenceFirstDemoFv
+	.byte4 nextAction__Q23seq17SequenceFirstDemoCFv
+	.byte4 createChildSequence__Q23seq17SequenceFirstDemoCFv
+	.byte4 onChildSequenceEnd__Q23seq17SequenceFirstDemoFRQ23seq9ISequence
+	.byte4 createScene__Q23seq17SequenceFirstDemoCFv
+	.byte4 onSceneEnd__Q23seq17SequenceFirstDemoFRQ23scn6IScene
 	.4byte 0

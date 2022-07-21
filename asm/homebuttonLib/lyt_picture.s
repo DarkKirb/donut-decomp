@@ -392,7 +392,7 @@ __sinit_$$3lyt_picture_cpp:
 /* 8013C09C 00137EDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8013C080  ;# ptr
+	.byte4 __sinit_$$3lyt_picture_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$28171
@@ -403,48 +403,48 @@ $$28171:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt7Picture
 __vt__Q36nw4hbm3lyt7Picture:
-	.4byte 0x80444198
+	.byte4 __RTTI__Q36nw4hbm3lyt7Picture
 	.4byte 0
-	.4byte 0x8013BC70  ;# ptr
-	.4byte 0x8013C070  ;# ptr
-	.4byte 0x8013B0A0  ;# ptr
-	.4byte 0x8013B3A0  ;# ptr
-	.4byte 0x8013BF90  ;# ptr
-	.4byte 0x8013B580  ;# ptr
-	.4byte 0x8013B610  ;# ptr
-	.4byte 0x8013BF00  ;# ptr
-	.4byte 0x8013BF20  ;# ptr
-	.4byte 0x8013AEB0  ;# ptr
-	.4byte 0x8013AEE0  ;# ptr
-	.4byte 0x8013BF50  ;# ptr
-	.4byte 0x8013BF70  ;# ptr
-	.4byte 0x8013AF30  ;# ptr
-	.4byte 0x8013AFE0  ;# ptr
-	.4byte 0x8013B6D0  ;# ptr
-	.4byte 0x8013B6F0  ;# ptr
-	.4byte 0x8013B700  ;# ptr
-	.4byte 0x8013B710  ;# ptr
-	.4byte 0x8013B7F0  ;# ptr
-	.4byte 0x8013B870  ;# ptr
-	.4byte 0x8013BB20  ;# ptr
-	.4byte 0x8013B930  ;# ptr
-	.4byte 0x8013BD40  ;# ptr
-	.4byte 0x8013BD90  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt7PictureFv
+	.byte4 GetRuntimeTypeInfo__Q36nw4hbm3lyt7PictureCFv
+	.byte4 CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Animate__Q36nw4hbm3lyt4PaneFUl
+	.byte4 AnimateSelf__Q36nw4hbm3lyt4PaneFUl
+	.byte4 GetVtxColor__Q36nw4hbm3lyt7PictureCFUl
+	.byte4 SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color
+	.byte4 GetColorElement__Q36nw4hbm3lyt4PaneCFUl
+	.byte4 SetColorElement__Q36nw4hbm3lyt4PaneFUlUc
+	.byte4 GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl
+	.byte4 SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc
+	.byte4 FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb
+	.byte4 UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb
+	.byte4 GetMaterial__Q36nw4hbm3lyt4PaneCFv
+	.byte4 LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Append__Q36nw4hbm3lyt7PictureFP10TPLPalette
+	.byte4 Append__Q36nw4hbm3lyt7PictureFRC9_GXTexObj
 .global $$27912
 $$27912:
 	.asciz "nw4hbm::lyt::Picture"
 	.balign 4
 .global $$27913
 $$27913:
-	.4byte 0x80443F60
+	.byte4 __RTTI__Q46nw4hbm3lyt6detail8PaneBase
 	.4byte 0
-	.4byte 0x80443F38
+	.byte4 __RTTI__Q36nw4hbm3lyt4Pane
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt7Picture
 __RTTI__Q36nw4hbm3lyt7Picture:
-	.4byte 0x8044416C
-	.4byte 0x80444184
+	.byte4 $$27912
+	.byte4 $$27913
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt7Picture

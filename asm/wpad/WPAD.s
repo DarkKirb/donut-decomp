@@ -12118,7 +12118,7 @@ $$21504:
 	.balign 4
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.4byte 0x80053EA0  ;# ptr
+	.byte4 OnShutdown
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
@@ -12233,7 +12233,7 @@ $$29559:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __WPADVersion
 __WPADVersion:
-	.4byte 0x80438588
+	.byte4 $$21504
 .global _wpadOnReconnect
 _wpadOnReconnect:
 	.4byte 0xFFFFFFFF

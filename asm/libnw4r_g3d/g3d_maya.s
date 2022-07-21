@@ -901,22 +901,22 @@ lbl_800E79CC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2CalcTexMtx_Maya__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable
 $$2LOCAL$$2CalcTexMtx_Maya__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable:
-	.4byte 0x800E6FC0  ;# ptr
-	.4byte 0x800E6EC0  ;# ptr
-	.4byte 0x800E6F70  ;# ptr
-	.4byte 0x800E6DC0  ;# ptr
-	.4byte 0x800E6E00  ;# ptr
-	.4byte 0x800E6D20  ;# ptr
-	.4byte 0x800E6CE0  ;# ptr
+	.byte4 MakeTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_T__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_R__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 .global $$2LOCAL$$2CalcTexMtx_Maya__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20
 $$2LOCAL$$2CalcTexMtx_Maya__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20:
-	.4byte 0x800E7600  ;# ptr
-	.4byte 0x800E7420  ;# ptr
-	.4byte 0x800E7570  ;# ptr
-	.4byte 0x800E7250  ;# ptr
-	.4byte 0x800E7280  ;# ptr
-	.4byte 0x800E7120  ;# ptr
-	.4byte 0x800E70A0  ;# ptr
+	.byte4 ProductTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_T__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_R__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
+	.byte4 ProductTexSrtMtx_S__Q54nw4r3g3d6detail3dcc22$$2unnamed$$2g3d_maya_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27167

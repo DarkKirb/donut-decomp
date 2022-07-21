@@ -3882,7 +3882,7 @@ lbl_800E0018:
 /* 800E006C 000DBEAC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x800DFE00  ;# ptr
+	.byte4 __sinit_$$3g3d_state_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc$$2envMtx
@@ -3905,10 +3905,10 @@ $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4
 __vt__Q44nw4r3g3d8G3DState11IndMtxOpStd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800DFC90  ;# ptr
-	.4byte 0x800DF520  ;# ptr
-	.4byte 0x800DFC40  ;# ptr
-	.4byte 0x800DFAE0  ;# ptr
+	.byte4 __cl__Q44nw4r3g3d8G3DState11IndMtxOpStdFPQ44nw4r3g3d8G3DState13IndTexMtxInfo
+	.byte4 __dt__Q44nw4r3g3d8G3DState11IndMtxOpStdFv
+	.byte4 Reset__Q44nw4r3g3d8G3DState11IndMtxOpStdFv
+	.byte4 SetNrmMapMtx__Q44nw4r3g3d8G3DState11IndMtxOpStdF14_GXIndTexMtxIDPCQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34Q44nw4r3g3d14ResMatMiscData14IndirectMethod
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$213345
@@ -3916,7 +3916,7 @@ $$213345:
 	.4byte 0xFFFFFFFF
 .global pG3DStateIndMtxOp__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2
 pG3DStateIndMtxOp__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2:
-	.4byte 0x805103C8
+	.byte4 IndMtxOpDefault__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global cm2hw__Q34nw4r3g3d4fifo

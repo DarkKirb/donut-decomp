@@ -400,11 +400,11 @@ __dt__Q53scn4step5enemy9waddledoo15BrainWalkAroundFv:
 __vt__Q53scn4step5enemy6common15BrainWalkAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029162C  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802915A8  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common15BrainWalkAroundFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy6common15BrainWalkAroundFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -412,17 +412,17 @@ __vt__Q53scn4step5enemy6common15BrainWalkAround:
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A0E5C  ;# ptr
-	.4byte 0x802A0E3C  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy11broomhatter15BrainWalkAround
 __vt__Q53scn4step5enemy11broomhatter15BrainWalkAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A0E58  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802A0DB8  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11broomhatter15BrainWalkAroundFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy11broomhatter15BrainWalkAroundFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -430,11 +430,11 @@ __vt__Q53scn4step5enemy11broomhatter15BrainWalkAround:
 __vt__Q53scn4step5enemy6lanzer15BrainWalkAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802C1EE0  ;# ptr
-	.4byte 0x802C1D68  ;# ptr
-	.4byte 0x802C1E9C  ;# ptr
-	.4byte 0x802C1E98  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6lanzer15BrainWalkAroundFv
+	.byte4 onStart__Q53scn4step5enemy6lanzer15BrainWalkAroundFv
+	.byte4 onRecover__Q53scn4step5enemy6lanzer15BrainWalkAroundFv
+	.byte4 onLanding__Q53scn4step5enemy6lanzer15BrainWalkAroundFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -442,11 +442,11 @@ __vt__Q53scn4step5enemy6lanzer15BrainWalkAround:
 __vt__Q53scn4step5enemy6sodory15BrainWalkAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E4C38  ;# ptr
-	.4byte 0x802E4B44  ;# ptr
-	.4byte 0x802E4BEC  ;# ptr
-	.4byte 0x802E4BE8  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6sodory15BrainWalkAroundFv
+	.byte4 onStart__Q53scn4step5enemy6sodory15BrainWalkAroundFv
+	.byte4 onRecover__Q53scn4step5enemy6sodory15BrainWalkAroundFv
+	.byte4 onLanding__Q53scn4step5enemy6sodory15BrainWalkAroundFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -454,9 +454,9 @@ __vt__Q53scn4step5enemy6sodory15BrainWalkAround:
 __vt__Q53scn4step5enemy9waddledoo15BrainWalkAround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EFA1C  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802EFA14  ;# ptr
-	.4byte 0x802EFA18  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledoo15BrainWalkAroundFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy9waddledoo15BrainWalkAroundFv
+	.byte4 update__Q53scn4step5enemy9waddledoo15BrainWalkAroundFv
 	.4byte 0

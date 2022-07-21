@@ -770,11 +770,11 @@ $$24655:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1:
-	.4byte 0x80445678
+	.byte4 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 	.4byte 0
-	.4byte 0x801424F0  ;# ptr
-	.4byte 0x80142530  ;# ptr
-	.4byte 0x80142690  ;# ptr
+	.byte4 __dt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1Fv
+	.byte4 Process__Q36nw4hbm2ut19TagProcessorBase$$0w$$1FUsPQ36nw4hbm2ut15PrintContext$$0w$$1
+	.byte4 CalcRect__Q36nw4hbm2ut19TagProcessorBase$$0w$$1FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext$$0w$$1
 .global $$24426
 $$24426:
 	.asciz "nw4hbm::ut::TagProcessorBase<wchar_t>"
@@ -782,20 +782,20 @@ $$24426:
 	.4byte 0
 .global __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0w$$1:
-	.4byte 0x8044564C
+	.byte4 $$24426
 	.4byte 0
 .global __vt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1
 __vt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1:
-	.4byte 0x804456B8
+	.byte4 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0c$$1
 	.4byte 0
-	.4byte 0x80141F90  ;# ptr
-	.4byte 0x80141FD0  ;# ptr
-	.4byte 0x80142130  ;# ptr
+	.byte4 __dt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1Fv
+	.byte4 Process__Q36nw4hbm2ut19TagProcessorBase$$0c$$1FUsPQ36nw4hbm2ut15PrintContext$$0c$$1
+	.byte4 CalcRect__Q36nw4hbm2ut19TagProcessorBase$$0c$$1FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext$$0c$$1
 .global $$24427
 $$24427:
 	.asciz "nw4hbm::ut::TagProcessorBase<char>"
 	.balign 4
 .global __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0c$$1
 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0c$$1:
-	.4byte 0x80445694
+	.byte4 $$24427
 	.4byte 0

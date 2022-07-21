@@ -1695,7 +1695,7 @@ lbl_80025B18:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SwitchThreadCallback
 SwitchThreadCallback:
-	.4byte 0x800244A0  ;# ptr
+	.byte4 DefaultSwitchThreadCallback
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

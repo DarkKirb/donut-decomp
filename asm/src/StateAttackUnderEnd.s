@@ -84,11 +84,11 @@ procFixPos__Q53scn4step4hero5spark19StateAttackUnderEndFv:
 __vt__Q53scn4step4hero5spark19StateAttackUnderEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038EE3C
-	.4byte 0x8038EEBC
-	.4byte 0x8038EEC0
-	.4byte 0x8035550C
-	.4byte 0x8038EEC4
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5spark19StateAttackUnderEndFv
+	.byte4 procAnim__Q53scn4step4hero5spark19StateAttackUnderEndFv
+	.byte4 procMove__Q53scn4step4hero5spark19StateAttackUnderEndFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5spark19StateAttackUnderEndFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

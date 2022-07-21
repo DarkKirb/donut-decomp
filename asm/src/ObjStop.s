@@ -897,11 +897,11 @@ onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor:
 __vt__Q43scn4step4boss7ObjStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802337D4  ;# ptr
-	.4byte 0x80233878  ;# ptr
-	.4byte 0x802338BC  ;# ptr
-	.4byte 0x80233914  ;# ptr
-	.4byte 0x80233978  ;# ptr
+	.byte4 __dt__Q43scn4step4boss7ObjStopFv
+	.byte4 onStopNormalStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -909,11 +909,11 @@ __vt__Q43scn4step4boss7ObjStop:
 __vt__Q43scn4step5enemy7ObjStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028C090  ;# ptr
-	.4byte 0x8028C114  ;# ptr
-	.4byte 0x8028C164  ;# ptr
-	.4byte 0x8028C1C8  ;# ptr
-	.4byte 0x8028C208  ;# ptr
+	.byte4 __dt__Q43scn4step5enemy7ObjStopFv
+	.byte4 onStopNormalStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -921,11 +921,11 @@ __vt__Q43scn4step5enemy7ObjStop:
 __vt__Q43scn4step4hero7ObjStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80350B24
-	.4byte 0x80350C40
-	.4byte 0x80350C84
-	.4byte 0x80350CDC
-	.4byte 0x80350D40
+	.byte4 __dt__Q43scn4step4hero7ObjStopFv
+	.byte4 onStopNormalStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -933,11 +933,11 @@ __vt__Q43scn4step4hero7ObjStop:
 __vt__Q43scn4step4item7ObjStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C4E90
-	.4byte 0x803C4F14
-	.4byte 0x803C4F58
-	.4byte 0x803C4FB0
-	.4byte 0x803C5008
+	.byte4 __dt__Q43scn4step4item7ObjStopFv
+	.byte4 onStopNormalStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -945,9 +945,9 @@ __vt__Q43scn4step4item7ObjStop:
 __vt__Q43scn4step6weapon7ObjStop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D7CB8
-	.4byte 0x803D7D44
-	.4byte 0x803D7D88
-	.4byte 0x803D7DE0
-	.4byte 0x803D7E3C
+	.byte4 __dt__Q43scn4step6weapon7ObjStopFv
+	.byte4 onStopNormalStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
 	.4byte 0

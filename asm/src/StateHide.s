@@ -557,45 +557,45 @@ procFixPos__Q53scn4step4boss10creditroah9StateHideFv:
 __vt__Q53scn4step4boss12creditdedede9StateHide:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80247DC4  ;# ptr
-	.4byte 0x80247E54  ;# ptr
-	.4byte 0x80247E9C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80247EA0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss12creditdedede9StateHideFv
+	.byte4 procAnim__Q53scn4step4boss12creditdedede9StateHideFv
+	.byte4 procMove__Q53scn4step4boss12creditdedede9StateHideFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss12creditdedede9StateHideFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9creditdee9StateHide
 __vt__Q53scn4step4boss9creditdee9StateHide:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80249008  ;# ptr
-	.4byte 0x80249098  ;# ptr
-	.4byte 0x80249124  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80249128  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss9creditdee9StateHideFv
+	.byte4 procAnim__Q53scn4step4boss9creditdee9StateHideFv
+	.byte4 procMove__Q53scn4step4boss9creditdee9StateHideFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss9creditdee9StateHideFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditmeta9StateHide
 __vt__Q53scn4step4boss10creditmeta9StateHide:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024AC30  ;# ptr
-	.4byte 0x8024ACC0  ;# ptr
-	.4byte 0x8024AD08  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024AD0C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss10creditmeta9StateHideFv
+	.byte4 procAnim__Q53scn4step4boss10creditmeta9StateHideFv
+	.byte4 procMove__Q53scn4step4boss10creditmeta9StateHideFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss10creditmeta9StateHideFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditroah9StateHide
 __vt__Q53scn4step4boss10creditroah9StateHide:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8024BFF8  ;# ptr
-	.4byte 0x8024C088  ;# ptr
-	.4byte 0x8024C0B0  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024C0B4  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss10creditroah9StateHideFv
+	.byte4 procAnim__Q53scn4step4boss10creditroah9StateHideFv
+	.byte4 procMove__Q53scn4step4boss10creditroah9StateHideFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss10creditroah9StateHideFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

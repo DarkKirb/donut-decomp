@@ -228,7 +228,7 @@ lbl_800B4E80:
 __vt__Q34nw4r2ef16EmitterFormPoint:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800B4BB0  ;# ptr
+	.byte4 Emission__Q34nw4r2ef16EmitterFormPointFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

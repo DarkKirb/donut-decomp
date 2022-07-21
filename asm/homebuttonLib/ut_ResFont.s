@@ -147,55 +147,55 @@ lbl_80141AA0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm2ut7ResFont
 __vt__Q36nw4hbm2ut7ResFont:
-	.4byte 0x80445518
+	.byte4 __RTTI__Q36nw4hbm2ut7ResFont
 	.4byte 0
-	.4byte 0x80141910  ;# ptr
-	.4byte 0x80141B20  ;# ptr
-	.4byte 0x80141B30  ;# ptr
-	.4byte 0x80141B40  ;# ptr
-	.4byte 0x80141B50  ;# ptr
-	.4byte 0x80141B60  ;# ptr
-	.4byte 0x80141B70  ;# ptr
-	.4byte 0x80141B80  ;# ptr
-	.4byte 0x80141B90  ;# ptr
-	.4byte 0x80141BA0  ;# ptr
-	.4byte 0x80141BB0  ;# ptr
-	.4byte 0x80141BC0  ;# ptr
-	.4byte 0x80141BD0  ;# ptr
-	.4byte 0x80141BE0  ;# ptr
-	.4byte 0x80141BF0  ;# ptr
-	.4byte 0x80141C90  ;# ptr
-	.4byte 0x80141CA0  ;# ptr
-	.4byte 0x80141CB0  ;# ptr
-	.4byte 0x80141DB0  ;# ptr
-	.4byte 0x80141E60  ;# ptr
+	.byte4 __dt__Q36nw4hbm2ut7ResFontFv
+	.byte4 GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.byte4 SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths
+	.byte4 SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs
+	.byte4 SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi
+	.byte4 GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.byte4 GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.byte4 GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs
+	.byte4 GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv
 .global $$2355
 $$2355:
 	.asciz "nw4hbm::ut::ResFont"
 .global $$2356
 $$2356:
-	.4byte 0x80445570
+	.byte4 __RTTI__Q36nw4hbm2ut4Font
 	.4byte 0
-	.4byte 0x80445550
+	.byte4 __RTTI__Q46nw4hbm2ut6detail11ResFontBase
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q36nw4hbm2ut7ResFont
 __RTTI__Q36nw4hbm2ut7ResFont:
-	.4byte 0x804454F0
-	.4byte 0x80445504
+	.byte4 $$2355
+	.byte4 $$2356
 .global $$2357
 $$2357:
 	.asciz "nw4hbm::ut::detail::ResFontBase"
 .global $$2358
 $$2358:
-	.4byte 0x80445570
+	.byte4 __RTTI__Q36nw4hbm2ut4Font
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q46nw4hbm2ut6detail11ResFontBase
 __RTTI__Q46nw4hbm2ut6detail11ResFontBase:
-	.4byte 0x80445520
-	.4byte 0x80445540
+	.byte4 $$2357
+	.byte4 $$2358
 .global $$2359
 $$2359:
 	.asciz "nw4hbm::ut::Font"
@@ -203,5 +203,5 @@ $$2359:
 	.4byte 0
 .global __RTTI__Q36nw4hbm2ut4Font
 __RTTI__Q36nw4hbm2ut4Font:
-	.4byte 0x80445558
+	.byte4 $$2359
 	.4byte 0

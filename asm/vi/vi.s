@@ -3126,7 +3126,7 @@ GXPal524ProgAa:
 	.4byte 0
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.4byte 0x8002BAD0  ;# ptr
+	.byte4 OnShutdown
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
@@ -3243,7 +3243,7 @@ $$24441:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __VIVersion
 __VIVersion:
-	.4byte 0x8042FC90
+	.byte4 $$21
 .global $$2LOCAL$$2OnShutdown__FiUl$$2first
 $$2LOCAL$$2OnShutdown__FiUl$$2first:
 	.4byte 0x00000001

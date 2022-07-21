@@ -341,7 +341,7 @@ __sinit_$$3PerformanceController_cpp:
 /* 8017A9D8 00176818  4B F6 2A 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8017A9D4  ;# ptr
+	.byte4 __sinit_$$3PerformanceController_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_DRAW_FRAME_INTERVAL_TABLE__35$$2unnamed$$2PerformanceController_cpp$$2

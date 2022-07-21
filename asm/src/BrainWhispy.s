@@ -444,17 +444,17 @@ __dt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029F2D8  ;# ptr
-	.4byte 0x8029F2B8  ;# ptr
+	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10brontoburt11BrainWhispy
 __vt__Q53scn4step5enemy10brontoburt11BrainWhispy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029F2D4  ;# ptr
-	.4byte 0x8029F220  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8029F2B4  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10brontoburt11BrainWhispyFv
+	.byte4 onStart__Q53scn4step5enemy10brontoburt11BrainWhispyFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy10brontoburt11BrainWhispyFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -462,17 +462,17 @@ __vt__Q53scn4step5enemy10brontoburt11BrainWhispy:
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como11StateAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A7234  ;# ptr
-	.4byte 0x802A7214  ;# ptr
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como11StateAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como11StateAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy4como11BrainWhispy
 __vt__Q53scn4step5enemy4como11BrainWhispy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A7230  ;# ptr
-	.4byte 0x802A7104  ;# ptr
-	.4byte 0x802A7198  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy4como11BrainWhispyFv
+	.byte4 onStart__Q53scn4step5enemy4como11BrainWhispyFv
+	.byte4 onRecover__Q53scn4step5enemy4como11BrainWhispyFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -480,17 +480,17 @@ __vt__Q53scn4step5enemy4como11BrainWhispy:
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gordo17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B8D24  ;# ptr
-	.4byte 0x802B8D04  ;# ptr
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gordo17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gordo17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5gordo11BrainWhispy
 __vt__Q53scn4step5enemy5gordo11BrainWhispy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802B8D20  ;# ptr
-	.4byte 0x802B8C68  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5gordo11BrainWhispyFv
+	.byte4 onStart__Q53scn4step5enemy5gordo11BrainWhispyFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -498,17 +498,17 @@ __vt__Q53scn4step5enemy5gordo11BrainWhispy:
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D99FC  ;# ptr
-	.4byte 0x802D99DC  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6scarfy11BrainWhispy
 __vt__Q53scn4step5enemy6scarfy11BrainWhispy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D99F8  ;# ptr
-	.4byte 0x802D9944  ;# ptr
-	.4byte 0x802D99D8  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6scarfy11BrainWhispyFv
+	.byte4 onStart__Q53scn4step5enemy6scarfy11BrainWhispyFv
+	.byte4 onRecover__Q53scn4step5enemy6scarfy11BrainWhispyFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -516,15 +516,15 @@ __vt__Q53scn4step5enemy6scarfy11BrainWhispy:
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802ED66C  ;# ptr
-	.4byte 0x802ED64C  ;# ptr
+	.byte4 __dt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee17StateWhispyAppear$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy9waddledee11BrainWhispy
 __vt__Q53scn4step5enemy9waddledee11BrainWhispy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802ED668  ;# ptr
-	.4byte 0x802ED5B4  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802ED648  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledee11BrainWhispyFv
+	.byte4 onStart__Q53scn4step5enemy9waddledee11BrainWhispyFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy9waddledee11BrainWhispyFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

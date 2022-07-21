@@ -618,10 +618,10 @@ canCursorMoveRight__Q43scn7history6detail6ButtonCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251957
 $$251957:
-	.4byte 0x80556FB0
-	.4byte 0x80556FB8
-	.4byte 0x80556FC0
-	.4byte 0x80556FC8
+	.byte4 $$251953
+	.byte4 $$251954
+	.byte4 $$251955
+	.byte4 $$251956
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MOVE_TABLE__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
@@ -725,45 +725,45 @@ $$251584:
 	.balign 4
 .global PANES__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 PANES__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.4byte 0x804616A0
-	.4byte 0x804616B0
-	.4byte 0x804616C0
-	.4byte 0x804616D0
-	.4byte 0x804616DC
-	.4byte 0x804616EC
-	.4byte 0x80461700
-	.4byte 0x80461710
-	.4byte 0x80461720
-	.4byte 0x80461730
-	.4byte 0x80461740
-	.4byte 0x80461750
-	.4byte 0x8046175C
+	.byte4 $$251572
+	.byte4 $$251573
+	.byte4 $$251574
+	.byte4 $$251575
+	.byte4 $$251576
+	.byte4 $$251577
+	.byte4 $$251578
+	.byte4 $$251579
+	.byte4 $$251580
+	.byte4 $$251581
+	.byte4 $$251582
+	.byte4 $$251583
+	.byte4 $$251584
 .global TABLE_2__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 TABLE_2__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.4byte 0x804616A0
-	.4byte 0x80461750
-	.4byte 0x804616B0
-	.4byte 0x804616D0
-	.4byte 0x804616EC
-	.4byte 0x80461700
-	.4byte 0x80461710
-	.4byte 0x8046175C
-	.4byte 0x80461720
-	.4byte 0x80461720
-	.4byte 0x80461720
+	.byte4 $$251572
+	.byte4 $$251583
+	.byte4 $$251573
+	.byte4 $$251575
+	.byte4 $$251577
+	.byte4 $$251578
+	.byte4 $$251579
+	.byte4 $$251584
+	.byte4 $$251580
+	.byte4 $$251580
+	.byte4 $$251580
 .global TABLE_3__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 TABLE_3__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.4byte 0x804616A0
-	.4byte 0x80461750
-	.4byte 0x804616B0
-	.4byte 0x804616D0
-	.4byte 0x804616EC
-	.4byte 0x80461700
-	.4byte 0x80461710
-	.4byte 0x8046175C
-	.4byte 0x80461730
-	.4byte 0x80461730
-	.4byte 0x80461730
+	.byte4 $$251572
+	.byte4 $$251583
+	.byte4 $$251573
+	.byte4 $$251575
+	.byte4 $$251577
+	.byte4 $$251578
+	.byte4 $$251579
+	.byte4 $$251584
+	.byte4 $$251581
+	.byte4 $$251581
+	.byte4 $$251581
 .global $$252197
 $$252197:
 	.asciz "history/Detail"

@@ -1940,9 +1940,9 @@ $$252181:
 	.asciz "DisconnectTitle"
 .global ON_CANCEL_WINDOW_TEXT_MAIN__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_MAIN__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.4byte 0x80452D18
-	.4byte 0x80452D18
-	.4byte 0x80452D18
+	.byte4 $$252181
+	.byte4 $$252181
+	.byte4 $$252181
 .global $$252182
 $$252182:
 	.asciz "DisconnectTitleSubWithCancel"
@@ -1953,9 +1953,9 @@ $$252183:
 	.balign 4
 .global ON_CANCEL_WINDOW_TEXT_SUB__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_SUB__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.4byte 0x80452D18
-	.4byte 0x80452D34
-	.4byte 0x80452D54
+	.byte4 $$252181
+	.byte4 $$252182
+	.byte4 $$252183
 .global $$252184
 $$252184:
 	.asciz "DisconnectContinue"
@@ -1966,9 +1966,9 @@ $$252185:
 	.balign 4
 .global ON_CANCEL_WINDOW_TEXT_CONFIRM__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_CONFIRM__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.4byte 0x80452D7C
-	.4byte 0x80452D7C
-	.4byte 0x80452D90
+	.byte4 $$252184
+	.byte4 $$252184
+	.byte4 $$252185
 .global $$254504
 $$254504:
 	.asciz "ErrorMenu"

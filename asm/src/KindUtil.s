@@ -388,254 +388,254 @@ ToLevelIndex__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind:
 T_INFOS__Q43scn4step3map22$$2unnamed$$2KindUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF20
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249155
+	.byte4 $$249156
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF20
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249155
+	.byte4 $$249157
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF20
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249155
+	.byte4 $$249158
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF20
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249155
+	.byte4 $$249159
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249157
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249158
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249159
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF50
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249161
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF58
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249162
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF48
-	.4byte 0x8055BF60
+	.byte4 $$249154
+	.byte4 $$249160
+	.byte4 $$249163
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF68
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249164
+	.byte4 $$249156
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF68
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249164
+	.byte4 $$249157
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF68
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249164
+	.byte4 $$249158
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF68
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249164
+	.byte4 $$249159
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF70
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249165
+	.byte4 $$249156
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF70
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249165
+	.byte4 $$249157
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF70
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249165
+	.byte4 $$249158
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF70
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249165
+	.byte4 $$249159
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249157
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249158
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249159
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF50
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249161
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF78
-	.4byte 0x8055BF58
+	.byte4 $$249154
+	.byte4 $$249166
+	.byte4 $$249162
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF80
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249167
+	.byte4 $$249156
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF88
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249168
+	.byte4 $$249156
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF88
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249168
+	.byte4 $$249157
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF88
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249168
+	.byte4 $$249158
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF88
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249168
+	.byte4 $$249159
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF90
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249169
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF90
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249169
+	.byte4 $$249157
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF90
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249169
+	.byte4 $$249158
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF90
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249169
+	.byte4 $$249159
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF98
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249170
+	.byte4 $$249156
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF98
-	.4byte 0x8055BF30
+	.byte4 $$249154
+	.byte4 $$249170
+	.byte4 $$249157
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF98
-	.4byte 0x8055BF38
+	.byte4 $$249154
+	.byte4 $$249170
+	.byte4 $$249158
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BF98
-	.4byte 0x8055BF40
+	.byte4 $$249154
+	.byte4 $$249170
+	.byte4 $$249159
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BFA0
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249171
+	.byte4 $$249156
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BFA8
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249172
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BFB0
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249173
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x8055BFB8
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249174
+	.byte4 $$249156
 	.4byte 0
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x804928C4
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249175
+	.byte4 $$249156
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x804928D0
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249176
+	.byte4 $$249156
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x804928B8
-	.4byte 0x804928DC
-	.4byte 0x8055BF28
+	.byte4 $$249154
+	.byte4 $$249177
+	.byte4 $$249156
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055BFC0
-	.4byte 0x8055BFC8
-	.4byte 0x8055BFD0
+	.byte4 $$249178
+	.byte4 $$249179
+	.byte4 $$249180
 	.4byte 0x00000001
 	.4byte 0
-	.4byte 0x8055BFC0
-	.4byte 0x8055BFC8
-	.4byte 0x8055BFD8
+	.byte4 $$249178
+	.byte4 $$249179
+	.byte4 $$249181
 	.4byte 0x00000002
 	.4byte 0
-	.4byte 0x8055BFC0
-	.4byte 0x8055BFC8
-	.4byte 0x8055BFE0
+	.byte4 $$249178
+	.byte4 $$249179
+	.byte4 $$249182
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055BFC0
-	.4byte 0x8055BFE8
-	.4byte 0x804928E8
+	.byte4 $$249178
+	.byte4 $$249183
+	.byte4 $$249184
 	.4byte 0
 	.4byte 0
-	.4byte 0x8055BFC0
-	.4byte 0x804928F4
-	.4byte 0x80492900
+	.byte4 $$249178
+	.byte4 $$249185
+	.byte4 $$249186
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249154

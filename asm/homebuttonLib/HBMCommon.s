@@ -287,10 +287,10 @@ $$29367:
 	.balign 4
 .global __HBMVersion
 __HBMVersion:
-	.4byte 0x80443018
+	.byte4 $$29367
 .global spAllocator
 spAllocator:
-	.4byte 0x805436B0
+	.byte4 sAllocator
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sAllocator

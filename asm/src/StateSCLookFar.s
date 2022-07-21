@@ -168,15 +168,15 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCLookFar$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80242640  ;# ptr
-	.4byte 0x80242624  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCLookFar$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCLookFar$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss15challengemaster14StateSCLookFar
 __vt__Q53scn4step4boss15challengemaster14StateSCLookFar:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80242554  ;# ptr
-	.4byte 0x80242558  ;# ptr
-	.4byte 0x802425BC  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x802425C0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss15challengemaster14StateSCLookFarFv
+	.byte4 procAnim__Q53scn4step4boss15challengemaster14StateSCLookFarFv
+	.byte4 procMove__Q53scn4step4boss15challengemaster14StateSCLookFarFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss15challengemaster14StateSCLookFarFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -23,7 +23,7 @@ __sinit_$$3MintZoomQuake_cpp:
 /* 802662C0 00262100  4B E7 71 20 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x802662BC  ;# ptr
+	.byte4 __sinit_$$3MintZoomQuake_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step6camera27$$2unnamed$$2MintZoomQuake_cpp$$2

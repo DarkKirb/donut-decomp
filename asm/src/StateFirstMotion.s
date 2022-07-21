@@ -491,29 +491,29 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter14Sta
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateMoonSault$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039D150
-	.4byte 0x8039D0F4
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateMoonSault$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateMoonSault$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateRising$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateRising$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039D14C
-	.4byte 0x8039D110
+	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateRising$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateRising$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter16StateFirstMotion$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter16StateFirstMotion$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039D148
-	.4byte 0x8039D12C
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter16StateFirstMotion$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter16StateFirstMotion$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero7fighter16StateFirstMotion
 __vt__Q53scn4step4hero7fighter16StateFirstMotion:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039CC34
-	.4byte 0x8039CCB0
-	.4byte 0x8039D06C
-	.4byte 0x8035550C
-	.4byte 0x8039D070
-	.4byte 0x8039D074
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7fighter16StateFirstMotionFv
+	.byte4 procAnim__Q53scn4step4hero7fighter16StateFirstMotionFv
+	.byte4 procMove__Q53scn4step4hero7fighter16StateFirstMotionFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7fighter16StateFirstMotionFv
+	.byte4 procObjCollReact__Q53scn4step4hero7fighter16StateFirstMotionFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

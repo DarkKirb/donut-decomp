@@ -385,21 +385,21 @@ $$249285:
 	.balign 4
 .global $$2LOCAL$$2messageKindString__Q26mintvm11MintSettingFQ26mintvm11MintMsgKind$$2table
 $$2LOCAL$$2messageKindString__Q26mintvm11MintSettingFQ26mintvm11MintMsgKind$$2table:
-	.4byte 0x80557530
-	.4byte 0x80557538
-	.4byte 0x80557540
+	.byte4 $$249078
+	.byte4 $$249079
+	.byte4 $$249080
 .global __vt__Q26mintvm13MintAllocator
 __vt__Q26mintvm13MintAllocator:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801C5C54  ;# ptr
-	.4byte 0x801C5F38  ;# ptr
-	.4byte 0x801C5ECC  ;# ptr
+	.byte4 __dt__Q26mintvm13MintAllocatorFv
+	.byte4 mintAlloc__Q26mintvm13MintAllocatorFUl
+	.byte4 mintFree__Q26mintvm13MintAllocatorFPv
 .global __vt__Q26mintvm10IAllocator
 __vt__Q26mintvm10IAllocator:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801C5BB8  ;# ptr
+	.byte4 __dt__Q26mintvm10IAllocatorFv
 	.4byte 0
 	.4byte 0
 .global $$2STRING$$2UnsetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20

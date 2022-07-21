@@ -87,11 +87,11 @@ procFixPos__Q53scn4step4hero5sword20StateSwordRaisingEndFv:
 __vt__Q53scn4step4hero5sword20StateSwordRaisingEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80388C58
-	.4byte 0x80388C5C
-	.4byte 0x80388CF4
-	.4byte 0x8035550C
-	.4byte 0x80388CF8
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5sword20StateSwordRaisingEndFv
+	.byte4 procAnim__Q53scn4step4hero5sword20StateSwordRaisingEndFv
+	.byte4 procMove__Q53scn4step4hero5sword20StateSwordRaisingEndFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5sword20StateSwordRaisingEndFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

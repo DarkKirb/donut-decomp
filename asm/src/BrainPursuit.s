@@ -143,17 +143,17 @@ __dt__Q53scn4step5enemy6shotzo12BrainPursuitFv:
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029EFC8  ;# ptr
-	.4byte 0x8029EFA8  ;# ptr
+	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10brontoburt12BrainPursuit
 __vt__Q53scn4step5enemy10brontoburt12BrainPursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029EFC4  ;# ptr
-	.4byte 0x8029EF20  ;# ptr
-	.4byte 0x8029EFA4  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10brontoburt12BrainPursuitFv
+	.byte4 onStart__Q53scn4step5enemy10brontoburt12BrainPursuitFv
+	.byte4 onRecover__Q53scn4step5enemy10brontoburt12BrainPursuitFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -161,9 +161,9 @@ __vt__Q53scn4step5enemy10brontoburt12BrainPursuit:
 __vt__Q53scn4step5enemy6shotzo12BrainPursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E0198  ;# ptr
-	.4byte 0x802E0114  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6shotzo12BrainPursuitFv
+	.byte4 onStart__Q53scn4step5enemy6shotzo12BrainPursuitFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

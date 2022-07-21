@@ -201,7 +201,7 @@ $$252114:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252115
 $$252115:
-	.4byte 0x8047EFB0
+	.byte4 $$252113
 .global lbl_805625DC
 lbl_805625DC:
-	.4byte 0x8047EFCC
+	.byte4 $$252114

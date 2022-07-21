@@ -601,29 +601,29 @@ lbl_801222A0:
 $$21039:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8011FF30  ;# ptr
+	.byte4 ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
 .global __vt__Q44nw4r2ut6detail11ResFontBase
 __vt__Q44nw4r2ut6detail11ResFontBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80121BF0  ;# ptr
-	.4byte 0x80121C30  ;# ptr
-	.4byte 0x80121C40  ;# ptr
-	.4byte 0x80121C50  ;# ptr
-	.4byte 0x80121C60  ;# ptr
-	.4byte 0x80121C80  ;# ptr
-	.4byte 0x80121CA0  ;# ptr
-	.4byte 0x80121CB0  ;# ptr
-	.4byte 0x80121CC0  ;# ptr
-	.4byte 0x80121CD0  ;# ptr
-	.4byte 0x80121CE0  ;# ptr
-	.4byte 0x80121CF0  ;# ptr
-	.4byte 0x80121D00  ;# ptr
-	.4byte 0x80121D20  ;# ptr
-	.4byte 0x80121D40  ;# ptr
-	.4byte 0x80121E00  ;# ptr
-	.4byte 0x80121E10  ;# ptr
-	.4byte 0x80121E60  ;# ptr
-	.4byte 0x80121F80  ;# ptr
-	.4byte 0x80122050  ;# ptr
-	.4byte 0x80122110  ;# ptr
+	.byte4 __dt__Q44nw4r2ut6detail11ResFontBaseFv
+	.byte4 GetWidth__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetHeight__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetAscent__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetDescent__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetBaselinePos__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetCellHeight__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetCellWidth__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetMaxCharWidth__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetType__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetTextureFormat__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetLineFeed__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 GetDefaultCharWidths__Q44nw4r2ut6detail11ResFontBaseCFv
+	.byte4 SetDefaultCharWidths__Q44nw4r2ut6detail11ResFontBaseFRCQ34nw4r2ut10CharWidths
+	.byte4 SetAlternateChar__Q44nw4r2ut6detail11ResFontBaseFUs
+	.byte4 SetLineFeed__Q44nw4r2ut6detail11ResFontBaseFi
+	.byte4 GetCharWidth__Q44nw4r2ut6detail11ResFontBaseCFUs
+	.byte4 GetCharWidths__Q44nw4r2ut6detail11ResFontBaseCFUs
+	.byte4 GetGlyph__Q44nw4r2ut6detail11ResFontBaseCFPQ34nw4r2ut5GlyphUs
+	.byte4 HasGlyph__Q44nw4r2ut6detail11ResFontBaseCFUs
+	.byte4 GetEncoding__Q44nw4r2ut6detail11ResFontBaseCFv

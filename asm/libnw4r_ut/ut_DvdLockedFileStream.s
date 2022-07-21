@@ -291,36 +291,36 @@ __sinit_$$3ut_DvdLockedFileStream_cpp:
 /* 8012128C 0011D0CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80121280  ;# ptr
+	.byte4 __sinit_$$3ut_DvdLockedFileStream_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut19DvdLockedFileStream
 __vt__Q34nw4r2ut19DvdLockedFileStream:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80108A80  ;# ptr
-	.4byte 0x80120FC0  ;# ptr
-	.4byte 0x80121020  ;# ptr
-	.4byte 0x80121060  ;# ptr
-	.4byte 0x80108A70  ;# ptr
-	.4byte 0x80120630  ;# ptr
-	.4byte 0x80120640  ;# ptr
-	.4byte 0x80108A40  ;# ptr
-	.4byte 0x80108A50  ;# ptr
-	.4byte 0x80108A20  ;# ptr
-	.4byte 0x80108A10  ;# ptr
-	.4byte 0x801089F0  ;# ptr
-	.4byte 0x801089E0  ;# ptr
-	.4byte 0x801089D0  ;# ptr
-	.4byte 0x80120E60  ;# ptr
-	.4byte 0x80120DD0  ;# ptr
-	.4byte 0x80121220  ;# ptr
-	.4byte 0x80120DF0  ;# ptr
-	.4byte 0x80108A30  ;# ptr
-	.4byte 0x80108A00  ;# ptr
-	.4byte 0x80120E70  ;# ptr
-	.4byte 0x80121140  ;# ptr
-	.4byte 0x80108A60  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.byte4 __dt__Q34nw4r2ut19DvdLockedFileStreamFv
+	.byte4 Close__Q34nw4r2ut19DvdLockedFileStreamFv
+	.byte4 Read__Q34nw4r2ut19DvdLockedFileStreamFPvUl
+	.byte4 ReadAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.byte4 Write__Q34nw4r2ut8IOStreamFPCvUl
+	.byte4 WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.byte4 IsBusy__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 CanAsync__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.byte4 CanRead__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 CanWrite__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 GetSizeAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 GetSize__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 Seek__Q34nw4r2ut13DvdFileStreamFlUl
+	.byte4 Cancel__Q34nw4r2ut19DvdLockedFileStreamFv
+	.byte4 CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.byte4 CanSeek__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 CanCancel__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 Tell__Q34nw4r2ut13DvdFileStreamCFv
+	.byte4 Peek__Q34nw4r2ut19DvdLockedFileStreamFPvUl
+	.byte4 PeekAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -123,11 +123,11 @@ procFixPos__Q53scn4step4hero6common8StateEatFv:
 __vt__Q53scn4step4hero6common8StateEat:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803628C0
-	.4byte 0x803628C4
-	.4byte 0x8036298C
-	.4byte 0x8035550C
-	.4byte 0x80362990
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common8StateEatFv
+	.byte4 procAnim__Q53scn4step4hero6common8StateEatFv
+	.byte4 procMove__Q53scn4step4hero6common8StateEatFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common8StateEatFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

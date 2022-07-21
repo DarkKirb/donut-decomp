@@ -508,13 +508,13 @@ __dt__Q23seq26SequenceChallengeTitleRootFv:
 __vt__Q23seq26SequenceChallengeTitleRoot:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803FE020
-	.4byte 0x803FE024
-	.4byte 0x803FDB24
-	.4byte 0x803FDB94
-	.4byte 0x803FDD44
-	.4byte 0x803FDE08
-	.4byte 0x803FDF24
+	.byte4 GetRuntimeTypeInfo__Q23seq26SequenceChallengeTitleRootCFv
+	.byte4 __dt__Q23seq26SequenceChallengeTitleRootFv
+	.byte4 nextAction__Q23seq26SequenceChallengeTitleRootCFv
+	.byte4 createChildSequence__Q23seq26SequenceChallengeTitleRootCFv
+	.byte4 onChildSequenceEnd__Q23seq26SequenceChallengeTitleRootFRQ23seq9ISequence
+	.byte4 createScene__Q23seq26SequenceChallengeTitleRootCFv
+	.byte4 onSceneEnd__Q23seq26SequenceChallengeTitleRootFRQ23scn6IScene
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

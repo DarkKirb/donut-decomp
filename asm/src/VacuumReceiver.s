@@ -3691,28 +3691,28 @@ __dt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumed
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80236588  ;# ptr
-	.4byte 0x8023656C  ;# ptr
+	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1Fv
+	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q43scn4step4boss14VacuumReceiver
 __vt__Q43scn4step4boss14VacuumReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80235E24  ;# ptr
-	.4byte 0x80235F10  ;# ptr
-	.4byte 0x80235FCC  ;# ptr
-	.4byte 0x802360F8  ;# ptr
-	.4byte 0x80236568  ;# ptr
-	.4byte 0x80236564  ;# ptr
-	.4byte 0x80236560  ;# ptr
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x80236554  ;# ptr
-	.4byte 0x80236550  ;# ptr
-	.4byte 0x8023654C  ;# ptr
-	.4byte 0x80236548  ;# ptr
-	.4byte 0x80236544  ;# ptr
-	.4byte 0x80236540  ;# ptr
-	.4byte 0x80236558  ;# ptr
-	.4byte 0x803D33A8
+	.byte4 __dt__Q43scn4step4boss14VacuumReceiverFv
+	.byte4 chkVacuum__Q43scn4step4boss14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.byte4 prechkVacuum__Q43scn4step4boss14VacuumReceiverFRCQ33hel3geo4Rect
+	.byte4 reqDeadEnf__Q43scn4step4boss14VacuumReceiverFv
+	.byte4 reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.byte4 drawDebug__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut88LinkList$$0Q24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut88LinkList$$0Q24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util67ObjListNode$$0Q43scn4step6vacuum9IReceiver$$4Q24util16ObjListDummyType$$1$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"
@@ -3735,124 +3735,124 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut87LinkList$$0Q24util66ObjListNode$$0Q4
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80290A58  ;# ptr
-	.4byte 0x80290A38  ;# ptr
+	.byte4 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
+	.byte4 create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
 .global __vt__Q43scn4step5enemy14VacuumReceiver
 __vt__Q43scn4step5enemy14VacuumReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8028FEE4  ;# ptr
-	.4byte 0x802900C0  ;# ptr
-	.4byte 0x80290238  ;# ptr
-	.4byte 0x80290348  ;# ptr
-	.4byte 0x80236568  ;# ptr
-	.4byte 0x80236564  ;# ptr
-	.4byte 0x80236560  ;# ptr
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x80236554  ;# ptr
-	.4byte 0x80236550  ;# ptr
-	.4byte 0x8023654C  ;# ptr
-	.4byte 0x80236548  ;# ptr
-	.4byte 0x80236544  ;# ptr
-	.4byte 0x80236540  ;# ptr
-	.4byte 0x80290418  ;# ptr
-	.4byte 0x803D33A8
+	.byte4 __dt__Q43scn4step5enemy14VacuumReceiverFv
+	.byte4 chkVacuum__Q43scn4step5enemy14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.byte4 prechkVacuum__Q43scn4step5enemy14VacuumReceiverFRCQ33hel3geo4Rect
+	.byte4 reqDeadEnf__Q43scn4step5enemy14VacuumReceiverFv
+	.byte4 reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.byte4 drawDebug__Q43scn4step5enemy14VacuumReceiverFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80359E34
-	.4byte 0x80359D88
+	.byte4 __dt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.byte4 create__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
 .global __vt__Q24util155StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference12StateVomited$$4PQ43scn4step4hero4Hero$$4Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1$$4Ul$$4Ul$$1
 __vt__Q24util155StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference12StateVomited$$4PQ43scn4step4hero4Hero$$4Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1$$4Ul$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80359DC8
-	.4byte 0x80359D04
+	.byte4 __dt__Q24util155StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference12StateVomited$$4PQ43scn4step4hero4Hero$$4Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1$$4Ul$$4Ul$$1Fv
+	.byte4 create__Q24util155StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference12StateVomited$$4PQ43scn4step4hero4Hero$$4Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1$$4Ul$$4Ul$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference10StateEaten$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference10StateEaten$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80359DC4
-	.4byte 0x80359DA8
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference10StateEaten$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference10StateEaten$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q43scn4step4hero14VacuumReceiver
 __vt__Q43scn4step4hero14VacuumReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80358C04
-	.4byte 0x80358D3C
-	.4byte 0x80358DF4
-	.4byte 0x80358F24
-	.4byte 0x80358FAC
-	.4byte 0x80358FF4
-	.4byte 0x8035929C
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x8035943C
-	.4byte 0x80359464
-	.4byte 0x8035948C
-	.4byte 0x803594E8
-	.4byte 0x8035956C
-	.4byte 0x80359750
-	.4byte 0x803592E8
-	.4byte 0x803D33A8
+	.byte4 __dt__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 chkVacuum__Q43scn4step4hero14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.byte4 prechkVacuum__Q43scn4step4hero14VacuumReceiverFRCQ33hel3geo4Rect
+	.byte4 reqDeadEnf__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 reqReleaseEnf__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 setConstraintWeapon__Q43scn4step4hero14VacuumReceiverFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 mightyFrame__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 setMighty__Q43scn4step4hero14VacuumReceiverFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step4hero14VacuumReceiverFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step4hero14VacuumReceiverFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step4hero14VacuumReceiverCFv
+	.byte4 drawDebug__Q43scn4step4hero14VacuumReceiverFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1
 __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C5BE4
-	.4byte 0x803C5BC4
+	.byte4 __dt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1Fv
+	.byte4 create__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1Fv
 .global __vt__Q43scn4step4item14VacuumReceiver
 __vt__Q43scn4step4item14VacuumReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C55E0
-	.4byte 0x803C5830
-	.4byte 0x803C5894
-	.4byte 0x803C59C4
-	.4byte 0x80236568  ;# ptr
-	.4byte 0x80236564  ;# ptr
-	.4byte 0x80236560  ;# ptr
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x80236554  ;# ptr
-	.4byte 0x80236550  ;# ptr
-	.4byte 0x8023654C  ;# ptr
-	.4byte 0x80236548  ;# ptr
-	.4byte 0x80236544  ;# ptr
-	.4byte 0x80236540  ;# ptr
-	.4byte 0x803C5A24
-	.4byte 0x803D33A8
+	.byte4 __dt__Q43scn4step4item14VacuumReceiverFv
+	.byte4 chkVacuum__Q43scn4step4item14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.byte4 prechkVacuum__Q43scn4step4item14VacuumReceiverFRCQ33hel3geo4Rect
+	.byte4 reqDeadEnf__Q43scn4step4item14VacuumReceiverFv
+	.byte4 reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.byte4 drawDebug__Q43scn4step4item14VacuumReceiverFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1
 __vt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EF5E8
-	.4byte 0x803EF5C8
+	.byte4 __dt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1Fv
+	.byte4 create__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1Fv
 .global __vt__Q53scn4step6weapon13vacuumedblock14VacuumReceiver
 __vt__Q53scn4step6weapon13vacuumedblock14VacuumReceiver:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803EF274
-	.4byte 0x803EF2E0
-	.4byte 0x803EF2E4
-	.4byte 0x803EF2E8
-	.4byte 0x80236568  ;# ptr
-	.4byte 0x80236564  ;# ptr
-	.4byte 0x80236560  ;# ptr
-	.4byte 0x8023655C  ;# ptr
-	.4byte 0x80236554  ;# ptr
-	.4byte 0x80236550  ;# ptr
-	.4byte 0x8023654C  ;# ptr
-	.4byte 0x80236548  ;# ptr
-	.4byte 0x80236544  ;# ptr
-	.4byte 0x80236540  ;# ptr
-	.4byte 0x80236558  ;# ptr
-	.4byte 0x803D33A8
+	.byte4 __dt__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFv
+	.byte4 chkVacuum__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.byte4 prechkVacuum__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFRCQ33hel3geo4Rect
+	.byte4 reqDeadEnf__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFv
+	.byte4 reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1UlUl
+	.byte4 chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.byte4 isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.byte4 deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.byte4 isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.byte4 drawDebug__Q43scn4step6vacuum12ReceiverBaseFv
+	.byte4 handle__Q43scn4step6vacuum12ReceiverBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256314

@@ -489,7 +489,7 @@ lbl_800A4D04:
 /* 800A4D4C 000A0B8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x800A4C20  ;# ptr
+	.byte4 __sinit_$$3ef_effectsystem_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$27903
@@ -500,7 +500,7 @@ $$27903:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2
 NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2:
-	.4byte 0x80440098
+	.byte4 $$27903
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

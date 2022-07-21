@@ -12299,11 +12299,11 @@ UcsFF:
 	.4byte 0
 .global UcsSjisTable
 UcsSjisTable:
-	.4byte 0x80423A40
+	.byte4 Ucs00
 	.4byte 0
 	.4byte 0
-	.4byte 0x80423C40
-	.4byte 0x80423E40
+	.byte4 Ucs03
+	.byte4 Ucs04
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12331,13 +12331,13 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80424040
-	.4byte 0x80424240
-	.4byte 0x80424440
-	.4byte 0x80424640
+	.byte4 Ucs20
+	.byte4 Ucs21
+	.byte4 Ucs22
+	.byte4 Ucs23
 	.4byte 0
-	.4byte 0x80424840
-	.4byte 0x80424A40
+	.byte4 Ucs25
+	.byte4 Ucs26
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12347,7 +12347,7 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80424C40
+	.byte4 Ucs30
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12377,88 +12377,88 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x80424E40
-	.4byte 0x80425040
-	.4byte 0x80425240
-	.4byte 0x80425440
-	.4byte 0x80425640
-	.4byte 0x80425840
-	.4byte 0x80425A40
-	.4byte 0x80425C40
-	.4byte 0x80425E40
-	.4byte 0x80426040
-	.4byte 0x80426240
-	.4byte 0x80426440
-	.4byte 0x80426640
-	.4byte 0x80426840
-	.4byte 0x80426A40
-	.4byte 0x80426C40
-	.4byte 0x80426E40
-	.4byte 0x80427040
-	.4byte 0x80427240
-	.4byte 0x80427440
-	.4byte 0x80427640
-	.4byte 0x80427840
-	.4byte 0x80427A40
-	.4byte 0x80427C40
-	.4byte 0x80427E40
-	.4byte 0x80428040
-	.4byte 0x80428240
-	.4byte 0x80428440
-	.4byte 0x80428640
-	.4byte 0x80428840
-	.4byte 0x80428A40
-	.4byte 0x80428C40
-	.4byte 0x80428E40
-	.4byte 0x80429040
-	.4byte 0x80429240
-	.4byte 0x80429440
-	.4byte 0x80429640
-	.4byte 0x80429840
-	.4byte 0x80429A40
-	.4byte 0x80429C40
-	.4byte 0x80429E40
-	.4byte 0x8042A040
-	.4byte 0x8042A240
-	.4byte 0x8042A440
-	.4byte 0x8042A640
-	.4byte 0x8042A840
-	.4byte 0x8042AA40
-	.4byte 0x8042AC40
-	.4byte 0x8042AE40
-	.4byte 0x8042B040
-	.4byte 0x8042B240
-	.4byte 0x8042B440
-	.4byte 0x8042B640
-	.4byte 0x8042B840
-	.4byte 0x8042BA40
-	.4byte 0x8042BC40
-	.4byte 0x8042BE40
-	.4byte 0x8042C040
-	.4byte 0x8042C240
-	.4byte 0x8042C440
-	.4byte 0x8042C640
-	.4byte 0x8042C840
-	.4byte 0x8042CA40
-	.4byte 0x8042CC40
-	.4byte 0x8042CE40
-	.4byte 0x8042D040
-	.4byte 0x8042D240
-	.4byte 0x8042D440
-	.4byte 0x8042D640
-	.4byte 0x8042D840
-	.4byte 0x8042DA40
-	.4byte 0x8042DC40
-	.4byte 0x8042DE40
-	.4byte 0x8042E040
-	.4byte 0x8042E240
-	.4byte 0x8042E440
-	.4byte 0x8042E640
-	.4byte 0x8042E840
-	.4byte 0x8042EA40
-	.4byte 0x8042EC40
-	.4byte 0x8042EE40
-	.4byte 0x8042F040
+	.byte4 Ucs4E
+	.byte4 Ucs4F
+	.byte4 Ucs50
+	.byte4 Ucs51
+	.byte4 Ucs52
+	.byte4 Ucs53
+	.byte4 Ucs54
+	.byte4 Ucs55
+	.byte4 Ucs56
+	.byte4 Ucs57
+	.byte4 Ucs58
+	.byte4 Ucs59
+	.byte4 Ucs5A
+	.byte4 Ucs5B
+	.byte4 Ucs5C
+	.byte4 Ucs5D
+	.byte4 Ucs5E
+	.byte4 Ucs5F
+	.byte4 Ucs60
+	.byte4 Ucs61
+	.byte4 Ucs62
+	.byte4 Ucs63
+	.byte4 Ucs64
+	.byte4 Ucs65
+	.byte4 Ucs66
+	.byte4 Ucs67
+	.byte4 Ucs68
+	.byte4 Ucs69
+	.byte4 Ucs6A
+	.byte4 Ucs6B
+	.byte4 Ucs6C
+	.byte4 Ucs6D
+	.byte4 Ucs6E
+	.byte4 Ucs6F
+	.byte4 Ucs70
+	.byte4 Ucs71
+	.byte4 Ucs72
+	.byte4 Ucs73
+	.byte4 Ucs74
+	.byte4 Ucs75
+	.byte4 Ucs76
+	.byte4 Ucs77
+	.byte4 Ucs78
+	.byte4 Ucs79
+	.byte4 Ucs7A
+	.byte4 Ucs7B
+	.byte4 Ucs7C
+	.byte4 Ucs7D
+	.byte4 Ucs7E
+	.byte4 Ucs7F
+	.byte4 Ucs80
+	.byte4 Ucs81
+	.byte4 Ucs82
+	.byte4 Ucs83
+	.byte4 Ucs84
+	.byte4 Ucs85
+	.byte4 Ucs86
+	.byte4 Ucs87
+	.byte4 Ucs88
+	.byte4 Ucs89
+	.byte4 Ucs8A
+	.byte4 Ucs8B
+	.byte4 Ucs8C
+	.byte4 Ucs8D
+	.byte4 Ucs8E
+	.byte4 Ucs8F
+	.byte4 Ucs90
+	.byte4 Ucs91
+	.byte4 Ucs92
+	.byte4 Ucs93
+	.byte4 Ucs94
+	.byte4 Ucs95
+	.byte4 Ucs96
+	.byte4 Ucs97
+	.byte4 Ucs98
+	.byte4 Ucs99
+	.byte4 Ucs9A
+	.byte4 Ucs9B
+	.byte4 Ucs9C
+	.byte4 Ucs9D
+	.byte4 Ucs9E
+	.byte4 Ucs9F
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12554,4 +12554,4 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x8042F240
+	.byte4 UcsFF

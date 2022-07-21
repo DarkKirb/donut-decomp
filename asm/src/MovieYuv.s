@@ -623,11 +623,11 @@ getImage__Q23mov8MovieYuvFPv:
 __vt__Q23mov8MovieYuv:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801D0670  ;# ptr
-	.4byte 0x801D0DEC  ;# ptr
-	.4byte 0x801D0DB8  ;# ptr
-	.4byte 0x801D0AC0  ;# ptr
-	.4byte 0x801D0B7C  ;# ptr
+	.byte4 __dt__Q23mov8MovieYuvFv
+	.byte4 getImage__Q23mov8MovieYuvFPv
+	.byte4 setupRender__Q23mov8MovieYuvCFv
+	.byte4 restoreRender__Q23mov8MovieYuvCFv
+	.byte4 setupTexObjs__Q23mov8MovieYuvCFP9_GXTexObj
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

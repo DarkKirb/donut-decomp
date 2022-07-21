@@ -242,31 +242,31 @@ lbl_8014BC50:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.4byte 0x80556A98
+	.byte4 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 	.4byte 0
-	.4byte 0x8014BC00  ;# ptr
-	.4byte 0x8014B9E8  ;# ptr
-	.4byte 0x8014B9EC  ;# ptr
-	.4byte 0x8014B9F4  ;# ptr
-	.4byte 0x8014B9FC  ;# ptr
-	.4byte 0x8014BA04  ;# ptr
-	.4byte 0x8014BA0C  ;# ptr
-	.4byte 0x8014BA14  ;# ptr
-	.4byte 0x8014BA1C  ;# ptr
-	.4byte 0x8014BB34  ;# ptr
+	.byte4 __dt__Q44nrel6devkit7heapmap14ExpHeapMapUserFv
+	.byte4 heapName__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 fragmentBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 totalHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 startAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 endAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 drawUsedBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.byte4 drawFragmentBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
 .global $$22500
 $$22500:
 	.asciz "nrel::devkit::heapmap::ExpHeapMapUser"
 	.balign 4
 .global $$22501
 $$22501:
-	.4byte 0x80556AA0
+	.byte4 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q44nrel6devkit7heapmap12IHeapMapUser
 __vt__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.4byte 0x80556AA0
+	.byte4 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -294,9 +294,9 @@ $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.4byte 0x80446C88
-	.4byte 0x80446CB0
+	.byte4 $$22500
+	.byte4 $$22501
 .global __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.4byte 0x80446CF0
+	.byte4 $$22502
 	.4byte 0

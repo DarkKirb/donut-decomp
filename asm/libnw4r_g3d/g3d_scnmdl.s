@@ -2991,19 +2991,19 @@ TYPE_NAME__Q34nw4r3g3d6ScnMdl:
 __vt__Q34nw4r3g3d6ScnMdl:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F0A10  ;# ptr
-	.4byte 0x800EF990  ;# ptr
-	.4byte 0x800F09A0  ;# ptr
-	.4byte 0x800F0AA0  ;# ptr
-	.4byte 0x800F0A90  ;# ptr
-	.4byte 0x800E9830  ;# ptr
-	.4byte 0x800EFE40  ;# ptr
-	.4byte 0x800EFE80  ;# ptr
-	.4byte 0x800E96A0  ;# ptr
-	.4byte 0x800E96B0  ;# ptr
-	.4byte 0x800E9900  ;# ptr
-	.4byte 0x800F05A0  ;# ptr
-	.4byte 0x800F0710  ;# ptr
-	.4byte 0x800F0910  ;# ptr
-	.4byte 0x800F0960  ;# ptr
-	.4byte 0x800F0980  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d6ScnMdlCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d6ScnMdlFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d6ScnMdlFv
+	.byte4 GetTypeObj__Q34nw4r3g3d6ScnMdlCFv
+	.byte4 GetTypeName__Q34nw4r3g3d6ScnMdlCFv
+	.byte4 ForEach__Q34nw4r3g3d7ScnLeafFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.byte4 SetScnObjOption__Q34nw4r3g3d6ScnMdlFUlUl
+	.byte4 GetScnObjOption__Q34nw4r3g3d6ScnMdlCFUlPUl
+	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.byte4 CalcWorldMtx__Q34nw4r3g3d7ScnLeafFPCQ34nw4r4math5MTX34PUl
+	.byte4 SetAnmObj__Q34nw4r3g3d6ScnMdlFPQ34nw4r3g3d6AnmObjQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 RemoveAnmObj__Q34nw4r3g3d6ScnMdlFPQ34nw4r3g3d6AnmObj
+	.byte4 RemoveAnmObj__Q34nw4r3g3d6ScnMdlFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 GetAnmObj__Q34nw4r3g3d6ScnMdlFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.byte4 GetAnmObj__Q34nw4r3g3d6ScnMdlCFQ44nw4r3g3d12ScnMdlSimple10AnmObjType

@@ -107,11 +107,11 @@ procObjCollReact__Q53scn4step4hero4whip18StateWhipCaptureUpFv:
 __vt__Q53scn4step4hero4whip18StateWhipCaptureUp:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038A7E4
-	.4byte 0x8038A894
-	.4byte 0x8038A898
-	.4byte 0x8038A89C
-	.4byte 0x8038A8A0
-	.4byte 0x8038A8A4
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procAnim__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procMove__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procConstraint__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procFixPos__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procObjCollReact__Q53scn4step4hero4whip18StateWhipCaptureUpFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

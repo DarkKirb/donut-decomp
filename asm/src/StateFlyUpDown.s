@@ -342,24 +342,24 @@ lbl_802DB3CC:
 __vt__Q53scn4step5enemy6common14StateFlyUpDown:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80292668  ;# ptr
-	.4byte 0x8029266C  ;# ptr
-	.4byte 0x80292670  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8029271C  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.byte4 procAnim__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.byte4 procMove__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy14StateFlyUpDown
 __vt__Q53scn4step5enemy6scarfy14StateFlyUpDown:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DB218  ;# ptr
-	.4byte 0x802DB21C  ;# ptr
-	.4byte 0x802DB220  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802DB2E4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6scarfy14StateFlyUpDownFv
+	.byte4 procAnim__Q53scn4step5enemy6scarfy14StateFlyUpDownFv
+	.byte4 procMove__Q53scn4step5enemy6scarfy14StateFlyUpDownFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6scarfy14StateFlyUpDownFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255699

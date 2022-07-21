@@ -1948,96 +1948,96 @@ TYPE_NAME__Q34nw4r3g3d12AnmObjChrRes:
 __vt__Q34nw4r3g3d12AnmObjChrRes:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D9490  ;# ptr
-	.4byte 0x800D9480  ;# ptr
-	.4byte 0x800D9570  ;# ptr
-	.4byte 0x800D9560  ;# ptr
-	.4byte 0x800D9550  ;# ptr
-	.4byte 0x800D8D60  ;# ptr
-	.4byte 0x800D8E20  ;# ptr
-	.4byte 0x800D8F00  ;# ptr
-	.4byte 0x800D8E30  ;# ptr
-	.4byte 0x800D8EF0  ;# ptr
-	.4byte 0x800D8FE0  ;# ptr
-	.4byte 0x800D7E40  ;# ptr
-	.4byte 0x800D9400  ;# ptr
-	.4byte 0x800D7E50  ;# ptr
-	.4byte 0x800D7E60  ;# ptr
-	.4byte 0x800D7E90  ;# ptr
-	.4byte 0x800D7E70  ;# ptr
-	.4byte 0x800D7E80  ;# ptr
-	.4byte 0x800D8FF0  ;# ptr
-	.4byte 0x800D91F0  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d12AnmObjChrResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d12AnmObjChrResFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d12AnmObjChrResFv
+	.byte4 GetTypeObj__Q34nw4r3g3d12AnmObjChrResCFv
+	.byte4 GetTypeName__Q34nw4r3g3d12AnmObjChrResCFv
+	.byte4 SetFrame__Q34nw4r3g3d12AnmObjChrResFf
+	.byte4 GetFrame__Q34nw4r3g3d12AnmObjChrResCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d12AnmObjChrResFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d12AnmObjChrResFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d12AnmObjChrResCFv
+	.byte4 Bind__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d9AnmObjChrFv
+	.byte4 GetResult__Q34nw4r3g3d12AnmObjChrResFPQ34nw4r3g3d12ChrAnmResultUl
+	.byte4 Attach__Q34nw4r3g3d9AnmObjChrFiPQ34nw4r3g3d12AnmObjChrRes
+	.byte4 Detach__Q34nw4r3g3d9AnmObjChrFi
+	.byte4 DetachAll__Q34nw4r3g3d9AnmObjChrFv
+	.byte4 SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.byte4 GetWeight__Q34nw4r3g3d9AnmObjChrCFi
+	.byte4 Bind__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.byte4 Release__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 .global __vt__Q34nw4r3g3d14AnmObjChrBlend
 __vt__Q34nw4r3g3d14AnmObjChrBlend:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D9580  ;# ptr
-	.4byte 0x800D8380  ;# ptr
-	.4byte 0x800D9690  ;# ptr
-	.4byte 0x800D9680  ;# ptr
-	.4byte 0x800D9670  ;# ptr
-	.4byte 0x800D8020  ;# ptr
-	.4byte 0x800D8030  ;# ptr
-	.4byte 0x800D8010  ;# ptr
-	.4byte 0x800D8090  ;# ptr
-	.4byte 0x800D80A0  ;# ptr
-	.4byte 0x800D8100  ;# ptr
-	.4byte 0x800D8220  ;# ptr
-	.4byte 0x800D8510  ;# ptr
-	.4byte 0x800D7FE0  ;# ptr
-	.4byte 0x800D7FF0  ;# ptr
-	.4byte 0x800D8000  ;# ptr
-	.4byte 0x800D8B50  ;# ptr
-	.4byte 0x800D8B60  ;# ptr
-	.4byte 0x800D8110  ;# ptr
-	.4byte 0x800D8230  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d14AnmObjChrBlendCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d14AnmObjChrBlendFv
+	.byte4 GetTypeObj__Q34nw4r3g3d14AnmObjChrBlendCFv
+	.byte4 GetTypeName__Q34nw4r3g3d14AnmObjChrBlendCFv
+	.byte4 SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 GetResult__Q34nw4r3g3d14AnmObjChrBlendFPQ34nw4r3g3d12ChrAnmResultUl
+	.byte4 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
+	.byte4 Detach__Q34nw4r3g3d13AnmObjChrNodeFi
+	.byte4 DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetWeight__Q34nw4r3g3d14AnmObjChrBlendFif
+	.byte4 GetWeight__Q34nw4r3g3d14AnmObjChrBlendCFi
+	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 .global __vt__Q34nw4r3g3d13AnmObjChrNode
 __vt__Q34nw4r3g3d13AnmObjChrNode:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D9600  ;# ptr
-	.4byte 0x800D8380  ;# ptr
-	.4byte 0x800D7F70  ;# ptr
-	.4byte 0x800D9710  ;# ptr
-	.4byte 0x800D9700  ;# ptr
-	.4byte 0x800D8020  ;# ptr
-	.4byte 0x800D8030  ;# ptr
-	.4byte 0x800D8010  ;# ptr
-	.4byte 0x800D8090  ;# ptr
-	.4byte 0x800D80A0  ;# ptr
-	.4byte 0x800D8100  ;# ptr
-	.4byte 0x800D8220  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
+	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdl
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFv
 	.4byte 0
-	.4byte 0x800D7FE0  ;# ptr
-	.4byte 0x800D7FF0  ;# ptr
-	.4byte 0x800D8000  ;# ptr
-	.4byte 0x800D7E70  ;# ptr
-	.4byte 0x800D7E80  ;# ptr
-	.4byte 0x800D8110  ;# ptr
-	.4byte 0x800D8230  ;# ptr
+	.byte4 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
+	.byte4 Detach__Q34nw4r3g3d13AnmObjChrNodeFi
+	.byte4 DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
+	.byte4 SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.byte4 GetWeight__Q34nw4r3g3d9AnmObjChrCFi
+	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 .global __vt__Q34nw4r3g3d9AnmObjChr
 __vt__Q34nw4r3g3d9AnmObjChr:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D9500  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d9AnmObjChrCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.4byte 0x800D7F60  ;# ptr
-	.4byte 0x800D9730  ;# ptr
-	.4byte 0x800D9720  ;# ptr
-	.4byte 0
-	.4byte 0
+	.byte4 __dt__Q34nw4r3g3d9AnmObjChrFv
+	.byte4 GetTypeObj__Q34nw4r3g3d9AnmObjChrCFv
+	.byte4 GetTypeName__Q34nw4r3g3d9AnmObjChrCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte 0x800D7E40  ;# ptr
 	.4byte 0
-	.4byte 0x800D7E50  ;# ptr
-	.4byte 0x800D7E60  ;# ptr
-	.4byte 0x800D7E90  ;# ptr
-	.4byte 0x800D7E70  ;# ptr
-	.4byte 0x800D7E80  ;# ptr
+	.4byte 0
+	.byte4 Release__Q34nw4r3g3d9AnmObjChrFv
+	.4byte 0
+	.byte4 Attach__Q34nw4r3g3d9AnmObjChrFiPQ34nw4r3g3d12AnmObjChrRes
+	.byte4 Detach__Q34nw4r3g3d9AnmObjChrFi
+	.byte4 DetachAll__Q34nw4r3g3d9AnmObjChrFv
+	.byte4 SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.byte4 GetWeight__Q34nw4r3g3d9AnmObjChrCFi
 	.4byte 0
 	.4byte 0
 

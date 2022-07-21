@@ -474,16 +474,16 @@ lbl_801205FC:
 __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80120300  ;# ptr
-	.4byte 0x80120310  ;# ptr
-	.4byte 0x80120440  ;# ptr
+	.byte4 __dt__Q34nw4r2ut19TagProcessorBase$$0w$$1Fv
+	.byte4 Process__Q34nw4r2ut19TagProcessorBase$$0w$$1FUsPQ34nw4r2ut15PrintContext$$0w$$1
+	.byte4 CalcRect__Q34nw4r2ut19TagProcessorBase$$0w$$1FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0w$$1
 .global __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1
 __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011FFC0  ;# ptr
-	.4byte 0x8011FFD0  ;# ptr
-	.4byte 0x80120100  ;# ptr
+	.byte4 __dt__Q34nw4r2ut19TagProcessorBase$$0c$$1Fv
+	.byte4 Process__Q34nw4r2ut19TagProcessorBase$$0c$$1FUsPQ34nw4r2ut15PrintContext$$0c$$1
+	.byte4 CalcRect__Q34nw4r2ut19TagProcessorBase$$0c$$1FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0c$$1
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24919

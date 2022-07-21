@@ -57,9 +57,9 @@ _bss_init_info:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global _eti_init_info
 _eti_init_info:
-	.4byte 0x800068E0  ;# ptr
-	.4byte 0x800069C4  ;# ptr
-	.4byte 0x80006BD0  ;# ptr
+	.byte4 $$2191
+	.byte4 _eti_init_info
+	.byte4 __dt__Q23std9exceptionFv
 	.4byte 0x0000E460
 	.4byte 0
 	.4byte 0

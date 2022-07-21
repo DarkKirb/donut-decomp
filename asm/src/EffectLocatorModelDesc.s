@@ -64,7 +64,7 @@ $$250122:
 	.balign 4
 .global T_NODE_NAMES__Q43scn4step6weapon36$$2unnamed$$2EffectLocatorModelDesc_cpp$$2
 T_NODE_NAMES__Q43scn4step6weapon36$$2unnamed$$2EffectLocatorModelDesc_cpp$$2:
-	.4byte 0x8055C038
+	.byte4 $$250122
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

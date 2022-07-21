@@ -407,35 +407,35 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateW
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateWhipCaptureUp$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B130
-	.4byte 0x8038B0B4
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateWhipCaptureUp$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateWhipCaptureUp$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B12C
-	.4byte 0x8038B0D0
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B128
-	.4byte 0x8038B0EC
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038B124
-	.4byte 0x8038B108
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero4whip15StateWhipCharge
 __vt__Q53scn4step4hero4whip15StateWhipCharge:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038AD28
-	.4byte 0x8038ADA4
-	.4byte 0x8038B04C
-	.4byte 0x8035550C
-	.4byte 0x8038B0B0
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero4whip15StateWhipChargeFv
+	.byte4 procAnim__Q53scn4step4hero4whip15StateWhipChargeFv
+	.byte4 procMove__Q53scn4step4hero4whip15StateWhipChargeFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero4whip15StateWhipChargeFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

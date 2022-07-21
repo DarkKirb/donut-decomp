@@ -1885,7 +1885,7 @@ $$253157:
 __vt__Q26mintvm6Runner:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801C07C0  ;# ptr
+	.byte4 __dt__Q26mintvm6RunnerFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

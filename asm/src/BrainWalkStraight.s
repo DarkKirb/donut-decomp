@@ -101,11 +101,11 @@ __dt__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv:
 __vt__Q53scn4step5enemy6common17BrainWalkStraight:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80291704  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x80291680  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common17BrainWalkStraightFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy6common17BrainWalkStraightFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -113,9 +113,9 @@ __vt__Q53scn4step5enemy6common17BrainWalkStraight:
 __vt__Q53scn4step5enemy9waddledoo17BrainWalkStraight:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EFA64  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802EFA5C  ;# ptr
-	.4byte 0x802EFA60  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv
+	.byte4 update__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv
 	.4byte 0

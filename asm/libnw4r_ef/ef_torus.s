@@ -430,7 +430,7 @@ lbl_800B6D24:
 __vt__Q34nw4r2ef16EmitterFormTorus:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800B6790  ;# ptr
+	.byte4 Emission__Q34nw4r2ef16EmitterFormTorusFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -1564,32 +1564,32 @@ coefTable__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 __vt__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80106EC0  ;# ptr
-	.4byte 0x80106DE0  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail19BiquadFilterBpf2048Fv
+	.byte4 GetCoef__Q44nw4r3snd6detail19BiquadFilterBpf2048CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 .global __vt__Q44nw4r3snd6detail19BiquadFilterBpf1024
 __vt__Q44nw4r3snd6detail19BiquadFilterBpf1024:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80106EB0  ;# ptr
-	.4byte 0x80106D40  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail19BiquadFilterBpf1024Fv
+	.byte4 GetCoef__Q44nw4r3snd6detail19BiquadFilterBpf1024CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 .global __vt__Q44nw4r3snd6detail18BiquadFilterBpf512
 __vt__Q44nw4r3snd6detail18BiquadFilterBpf512:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80106EA0  ;# ptr
-	.4byte 0x80106CA0  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail18BiquadFilterBpf512Fv
+	.byte4 GetCoef__Q44nw4r3snd6detail18BiquadFilterBpf512CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 .global __vt__Q44nw4r3snd6detail15BiquadFilterHpf
 __vt__Q44nw4r3snd6detail15BiquadFilterHpf:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80106E90  ;# ptr
-	.4byte 0x80106C10  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail15BiquadFilterHpfFv
+	.byte4 GetCoef__Q44nw4r3snd6detail15BiquadFilterHpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 .global __vt__Q44nw4r3snd6detail15BiquadFilterLpf
 __vt__Q44nw4r3snd6detail15BiquadFilterLpf:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80106E80  ;# ptr
-	.4byte 0x80106B80  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail15BiquadFilterLpfFv
+	.byte4 GetCoef__Q44nw4r3snd6detail15BiquadFilterLpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2752

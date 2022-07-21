@@ -629,10 +629,10 @@ $$2LOCAL$$2Draw__Q34nw4r2ef16DrawFreeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15
 __vt__Q34nw4r2ef16DrawFreeStrategy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800BF950  ;# ptr
-	.4byte 0x800BF0E0  ;# ptr
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
+	.byte4 __dt__Q34nw4r2ef16DrawFreeStrategyFv
+	.byte4 Draw__Q34nw4r2ef16DrawFreeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global free_tex0_u8__Q24nw4r2ef

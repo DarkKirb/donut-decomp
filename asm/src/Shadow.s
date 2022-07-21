@@ -1084,7 +1084,7 @@ $$252351:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn14challengetitle20$$2unnamed$$2Shadow_cpp$$2
 G3D_RES_FILE_PATH__Q33scn14challengetitle20$$2unnamed$$2Shadow_cpp$$2:
-	.4byte 0x8045EE68
+	.byte4 $$251778
 .global $$252224
 $$252224:
 	.asciz "Shadow"
@@ -1098,7 +1098,7 @@ $$252232:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle20$$2unnamed$$2Shadow_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle20$$2unnamed$$2Shadow_cpp$$2:
-	.4byte 0x80460A78
+	.byte4 $$252146
 .global $$252859
 $$252859:
 	.asciz "Shadow"

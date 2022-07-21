@@ -402,24 +402,24 @@ __dt__Q53scn4step5enemy11broomhatter15StateCreditWalkFv:
 __vt__Q53scn4step5enemy6common15StateCreditWalk:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802919B8  ;# ptr
-	.4byte 0x80291A14  ;# ptr
-	.4byte 0x80291A18  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80291A70  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+	.byte4 procAnim__Q53scn4step5enemy6common15StateCreditWalkFv
+	.byte4 procMove__Q53scn4step5enemy6common15StateCreditWalkFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common15StateCreditWalkFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11broomhatter15StateCreditWalk
 __vt__Q53scn4step5enemy11broomhatter15StateCreditWalk:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A131C  ;# ptr
-	.4byte 0x802A1100  ;# ptr
-	.4byte 0x802A12D0  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802A1318  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11broomhatter15StateCreditWalkFv
+	.byte4 procAnim__Q53scn4step5enemy11broomhatter15StateCreditWalkFv
+	.byte4 procMove__Q53scn4step5enemy11broomhatter15StateCreditWalkFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy11broomhatter15StateCreditWalkFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256619

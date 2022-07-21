@@ -1386,8 +1386,8 @@ __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9State
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8032DF00
-	.4byte 0x8032DEE4
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1Fv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260222

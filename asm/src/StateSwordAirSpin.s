@@ -291,17 +291,17 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17State
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordAirSpin$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80386698
-	.4byte 0x8038667C
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordAirSpin$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17StateSwordAirSpin$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero5sword17StateSwordAirSpin
 __vt__Q53scn4step4hero5sword17StateSwordAirSpin:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80386444
-	.4byte 0x803864F4
-	.4byte 0x8038658C
-	.4byte 0x8035550C
-	.4byte 0x80386590
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5sword17StateSwordAirSpinFv
+	.byte4 procAnim__Q53scn4step4hero5sword17StateSwordAirSpinFv
+	.byte4 procMove__Q53scn4step4hero5sword17StateSwordAirSpinFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5sword17StateSwordAirSpinFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

@@ -718,20 +718,20 @@ TYPE_NAME__Q34nw4r3g3d12ScnMdlExpand:
 __vt__Q34nw4r3g3d12ScnMdlExpand:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F13E0  ;# ptr
-	.4byte 0x800F1080  ;# ptr
-	.4byte 0x800F1360  ;# ptr
-	.4byte 0x800F1460  ;# ptr
-	.4byte 0x800F1450  ;# ptr
-	.4byte 0x800E9D40  ;# ptr
-	.4byte 0x800E9350  ;# ptr
-	.4byte 0x800E94F0  ;# ptr
-	.4byte 0x800E96A0  ;# ptr
-	.4byte 0x800E96B0  ;# ptr
-	.4byte 0x800E9110  ;# ptr
-	.4byte 0x800F0D60  ;# ptr
-	.4byte 0x800F0EB0  ;# ptr
-	.4byte 0x800F0FF0  ;# ptr
+	.byte4 IsDerivedFrom__Q34nw4r3g3d12ScnMdlExpandCFQ44nw4r3g3d6G3dObj7TypeObj
+	.byte4 G3dProc__Q34nw4r3g3d12ScnMdlExpandFUlUlPv
+	.byte4 __dt__Q34nw4r3g3d12ScnMdlExpandFv
+	.byte4 GetTypeObj__Q34nw4r3g3d12ScnMdlExpandCFv
+	.byte4 GetTypeName__Q34nw4r3g3d12ScnMdlExpandCFv
+	.byte4 ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.byte4 SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
+	.byte4 GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
+	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.byte4 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
+	.byte4 Insert__Q34nw4r3g3d12ScnMdlExpandFUlPQ34nw4r3g3d6ScnObj
+	.byte4 Remove__Q34nw4r3g3d12ScnMdlExpandFUl
+	.byte4 Remove__Q34nw4r3g3d12ScnMdlExpandFPQ34nw4r3g3d6ScnObj
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global INVALID_NODE_ID__Q34nw4r3g3d30$$2unnamed$$2g3d_scnmdlexpand_cpp$$2

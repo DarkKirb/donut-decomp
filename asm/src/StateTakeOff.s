@@ -166,12 +166,12 @@ __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv:
 __vt__Q53scn4step5enemy10brontoburt12StateTakeOff:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802A030C  ;# ptr
-	.4byte 0x8028DDD8  ;# ptr
-	.4byte 0x802A0140  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
+	.byte4 procMove__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255068

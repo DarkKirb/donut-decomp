@@ -287,19 +287,19 @@ __dt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common18Sta
 __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common18StateClearDancePre$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8035FFAC
-	.4byte 0x8035FF8C
+	.byte4 __dt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common18StateClearDancePre$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.byte4 create__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common18StateClearDancePre$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
 .global __vt__Q53scn4step4hero6common19StateClearDanceWalk
 __vt__Q53scn4step4hero6common19StateClearDanceWalk:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8035FD3C
-	.4byte 0x8035FD40
-	.4byte 0x8035FD78
-	.4byte 0x8035550C
-	.4byte 0x8035FE6C
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common19StateClearDanceWalkFv
+	.byte4 procAnim__Q53scn4step4hero6common19StateClearDanceWalkFv
+	.byte4 procMove__Q53scn4step4hero6common19StateClearDanceWalkFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common19StateClearDanceWalkFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -423,13 +423,13 @@ T_DEPTH_LIST3__44$$2unnamed$$2StateShipRepairDemoAfterFollow_cpp$$2:
 __vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80369840
-	.4byte 0x803698F0
-	.4byte 0x803699E4
-	.4byte 0x8035550C
-	.4byte 0x80369AB0
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.byte4 procAnim__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.byte4 procMove__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

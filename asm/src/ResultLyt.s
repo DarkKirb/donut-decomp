@@ -2950,15 +2950,15 @@ $$253958:
 	.asciz "ResultBonusCoinComplete"
 .global T_BONUS_MESSAGE_LABEL__23$$2unnamed$$2ResultLyt_cpp$$2
 T_BONUS_MESSAGE_LABEL__23$$2unnamed$$2ResultLyt_cpp$$2:
-	.4byte 0x8045F0F8
-	.4byte 0x8045F10C
-	.4byte 0x8045F124
-	.4byte 0x8045F138
-	.4byte 0x8045F14C
-	.4byte 0x8045F160
-	.4byte 0x8045F174
-	.4byte 0x8045F188
-	.4byte 0x8045F1A0
+	.byte4 $$253950
+	.byte4 $$253951
+	.byte4 $$253952
+	.byte4 $$253953
+	.byte4 $$253954
+	.byte4 $$253955
+	.byte4 $$253956
+	.byte4 $$253957
+	.byte4 $$253958
 .global $$258204
 $$258204:
 	.asciz "challengeresult/Main"

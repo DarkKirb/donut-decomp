@@ -195,23 +195,23 @@ procFixPos__Q53scn4step4hero6common14StateVacuumEndFv:
 __vt__Q53scn4step4boss6whispy14StateVacuumEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8025ED7C  ;# ptr
-	.4byte 0x8025ED80  ;# ptr
-	.4byte 0x8025EE18  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8025EE1C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6whispy14StateVacuumEndFv
+	.byte4 procAnim__Q53scn4step4boss6whispy14StateVacuumEndFv
+	.byte4 procMove__Q53scn4step4boss6whispy14StateVacuumEndFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6whispy14StateVacuumEndFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common14StateVacuumEnd
 __vt__Q53scn4step4hero6common14StateVacuumEnd:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8036D500
-	.4byte 0x8036D504
-	.4byte 0x8036D5D8
-	.4byte 0x8035550C
-	.4byte 0x8036D5DC
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common14StateVacuumEndFv
+	.byte4 procAnim__Q53scn4step4hero6common14StateVacuumEndFv
+	.byte4 procMove__Q53scn4step4hero6common14StateVacuumEndFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common14StateVacuumEndFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

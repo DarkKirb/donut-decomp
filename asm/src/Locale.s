@@ -290,13 +290,13 @@ lbl_8019DDFC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2
 T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2:
-	.4byte 0x80556BF8
-	.4byte 0x80556C00
-	.4byte 0x80556C08
-	.4byte 0x80556C10
-	.4byte 0x80556C18
-	.4byte 0x80556C20
-	.4byte 0x80556C28
+	.byte4 $$250071
+	.byte4 $$250072
+	.byte4 $$250073
+	.byte4 $$250074
+	.byte4 $$250075
+	.byte4 $$250076
+	.byte4 $$250077
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

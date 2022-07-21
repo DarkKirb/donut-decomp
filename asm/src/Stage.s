@@ -1105,7 +1105,7 @@ __sinit_$$3Stage_cpp:
 /* 80210A70 0020C8B0  4B EA D6 50 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80210A5C  ;# ptr
+	.byte4 __sinit_$$3Stage_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254734

@@ -572,11 +572,11 @@ lbl_803670E0:
 __vt__Q53scn4step4hero6common8StateMix:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80366BC0
-	.4byte 0x80366D8C
-	.4byte 0x80366E20
-	.4byte 0x8035550C
-	.4byte 0x80366E24
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero6common8StateMixFv
+	.byte4 procAnim__Q53scn4step4hero6common8StateMixFv
+	.byte4 procMove__Q53scn4step4hero6common8StateMixFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero6common8StateMixFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

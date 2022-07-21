@@ -124,97 +124,97 @@ IsMonotoneIncludeFore__Q43scn4step3map21BinDecorationKindUtilFQ43scn4step3map17B
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INFOS__Q43scn4step3map35$$2unnamed$$2BinDecorationKindUtil_cpp$$2
 T_INFOS__Q43scn4step3map35$$2unnamed$$2BinDecorationKindUtil_cpp$$2:
-	.4byte 0x80492778
+	.byte4 $$248877
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492784
+	.byte4 $$248878
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492794
+	.byte4 $$248879
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927A8
+	.byte4 $$248880
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927BC
+	.byte4 $$248881
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927C8
+	.byte4 $$248882
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927D4
+	.byte4 $$248883
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927E0
+	.byte4 $$248884
 	.4byte 0x3DCCCCCD
 	.4byte 0
-	.4byte 0x804927EC
+	.byte4 $$248885
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804927F8
+	.byte4 $$248886
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492804
+	.byte4 $$248887
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492810
+	.byte4 $$248888
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049281C
+	.byte4 $$248889
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492828
+	.byte4 $$248890
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492834
+	.byte4 $$248891
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492840
+	.byte4 $$248892
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049284C
+	.byte4 $$248893
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492858
+	.byte4 $$248894
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492864
+	.byte4 $$248895
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492870
+	.byte4 $$248896
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049287C
+	.byte4 $$248897
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049287C
+	.byte4 $$248897
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049287C
+	.byte4 $$248897
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8049287C
+	.byte4 $$248897
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492888
+	.byte4 $$248898
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x80492894
+	.byte4 $$248899
 	.4byte 0x3DCCCCCD
 	.4byte 0
-	.4byte 0x8055BF00
+	.byte4 $$248900
 	.4byte 0x3DCCCCCD
 	.4byte 0
-	.4byte 0x8055BF08
+	.byte4 $$248901
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x804928A0
+	.byte4 $$248902
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8055BF10
+	.byte4 $$248903
 	.4byte 0x3F800000
 	.4byte 0
-	.4byte 0x8055BF18
+	.byte4 $$248904
 	.4byte 0x3F800000
 	.4byte 0
 	.4byte 0

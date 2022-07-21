@@ -1660,13 +1660,13 @@ lbl_800FD854:
 __vt__Q34nw4r3lyt18AnimTransformBasic:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800FC590  ;# ptr
-	.4byte 0x800FC660  ;# ptr
-	.4byte 0x800FC680  ;# ptr
-	.4byte 0x800FC800  ;# ptr
-	.4byte 0x800FC9D0  ;# ptr
-	.4byte 0x800FCAF0  ;# ptr
-	.4byte 0x800FCCD0  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt18AnimTransformBasicFv
+	.byte4 SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessor
+	.byte4 SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessorUs
+	.byte4 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt4Panebb
+	.byte4 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt8Materialb
+	.byte4 Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt4Pane
+	.byte4 Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt8Material
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

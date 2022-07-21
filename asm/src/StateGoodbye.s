@@ -206,9 +206,9 @@ $$256612:
 __vt__Q53scn4step5enemy6common12StateGoodbye:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80292984  ;# ptr
-	.4byte 0x80292988  ;# ptr
-	.4byte 0x802929AC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80292A00  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6common12StateGoodbyeFv
+	.byte4 procAnim__Q53scn4step5enemy6common12StateGoodbyeFv
+	.byte4 procMove__Q53scn4step5enemy6common12StateGoodbyeFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6common12StateGoodbyeFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

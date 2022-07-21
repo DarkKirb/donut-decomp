@@ -199,11 +199,11 @@ procFixPos__Q53scn4step4hero5stone19StateFallScrewStartFv:
 __vt__Q53scn4step4hero5stone19StateFallScrewStart:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039088C
-	.4byte 0x80390900
-	.4byte 0x803909D8
-	.4byte 0x8035550C
-	.4byte 0x80390A58
-	.4byte 0x80355514
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero5stone19StateFallScrewStartFv
+	.byte4 procAnim__Q53scn4step4hero5stone19StateFallScrewStartFv
+	.byte4 procMove__Q53scn4step4hero5stone19StateFallScrewStartFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero5stone19StateFallScrewStartFv
+	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

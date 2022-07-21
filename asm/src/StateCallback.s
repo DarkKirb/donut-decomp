@@ -376,37 +376,37 @@ __dt__Q43scn4step6weapon13StateCallbackFv:
 __vt__Q43scn4step4boss13StateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8022BF84  ;# ptr
-	.4byte 0x80234580  ;# ptr
+	.byte4 __dt__Q43scn4step4boss13StateCallbackFv
+	.byte4 onStateChanged__Q43scn4step4boss13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13StateCallback
 __vt__Q43scn4step5enemy13StateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80286D4C  ;# ptr
-	.4byte 0x8028DE5C  ;# ptr
+	.byte4 __dt__Q43scn4step5enemy13StateCallbackFv
+	.byte4 onStateChanged__Q43scn4step5enemy13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero13StateCallback
 __vt__Q43scn4step4hero13StateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8033C720
-	.4byte 0x8035558C
+	.byte4 __dt__Q43scn4step4hero13StateCallbackFv
+	.byte4 onStateChanged__Q43scn4step4hero13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item13StateCallback
 __vt__Q43scn4step4item13StateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C1C90
-	.4byte 0x803C5278
+	.byte4 __dt__Q43scn4step4item13StateCallbackFv
+	.byte4 onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon13StateCallback
 __vt__Q43scn4step6weapon13StateCallback:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D8A00
-	.4byte 0x803D89D8
+	.byte4 __dt__Q43scn4step6weapon13StateCallbackFv
+	.byte4 onStateChanged__Q43scn4step6weapon13StateCallbackFRCQ24util13IStateChanger

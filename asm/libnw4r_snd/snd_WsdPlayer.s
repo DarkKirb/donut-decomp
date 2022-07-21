@@ -1176,28 +1176,28 @@ $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv:
 __vt__Q44nw4r3snd6detail9WsdPlayer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011E420  ;# ptr
-	.4byte 0x8011EDE0  ;# ptr
-	.4byte 0x8011EDF0  ;# ptr
-	.4byte 0x8011EF20  ;# ptr
-	.4byte 0x8011FAC0  ;# ptr
-	.4byte 0x8011FAA0  ;# ptr
-	.4byte 0x8011FA80  ;# ptr
+	.byte4 __dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 Start__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 Stop__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 Pause__Q44nw4r3snd6detail9WsdPlayerFb
+	.byte4 IsActive__Q44nw4r3snd6detail9WsdPlayerCFv
+	.byte4 IsStarted__Q44nw4r3snd6detail9WsdPlayerCFv
+	.byte4 IsPause__Q44nw4r3snd6detail9WsdPlayerCFv
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011FB00  ;# ptr
-	.4byte 0x8011FAF0  ;# ptr
-	.4byte 0x8011FAE0  ;# ptr
+	.byte4 $$2180$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 $$2180$$2InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.byte4 $$2180$$2InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
 	.4byte 0
 	.4byte 0
-	.4byte 0x8011FB30  ;# ptr
-	.4byte 0x8011FB20  ;# ptr
-	.4byte 0x80109E20  ;# ptr
-	.4byte 0x8011FB10  ;# ptr
-	.4byte 0x8011F000  ;# ptr
-	.4byte 0x8011FA70  ;# ptr
-	.4byte 0x8011FA50  ;# ptr
-	.4byte 0x8011FA60  ;# ptr
+	.byte4 $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 $$2192$$2OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 OnUpdateVoiceSoundThread__Q54nw4r3snd6detail11SoundThread14PlayerCallbackFv
+	.byte4 $$2192$$2OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.byte4 InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.byte4 OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.byte4 OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210015

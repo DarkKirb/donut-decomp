@@ -1736,44 +1736,44 @@ $$251750:
 	.balign 4
 .global T_PARENT_NODE_NAME__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2
 T_PARENT_NODE_NAME__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2:
-	.4byte 0x80558340
-	.4byte 0x80558348
-	.4byte 0x80558350
-	.4byte 0x80558358
-	.4byte 0x80558360
-	.4byte 0x80558368
-	.4byte 0x80558370
-	.4byte 0x80558378
-	.4byte 0x80558380
-	.4byte 0x80558388
-	.4byte 0x804604A8
-	.4byte 0x804604B4
-	.4byte 0x804604C0
-	.4byte 0x804604CC
-	.4byte 0x804604D8
-	.4byte 0x804604E4
-	.4byte 0x804604F0
-	.4byte 0x804604FC
-	.4byte 0x80460508
-	.4byte 0x80460514
-	.4byte 0x80460520
-	.4byte 0x8046052C
-	.4byte 0x80460538
-	.4byte 0x80460544
-	.4byte 0x80460550
-	.4byte 0x8046055C
-	.4byte 0x80460568
-	.4byte 0x80460574
-	.4byte 0x80460580
-	.4byte 0x8046058C
-	.4byte 0x80460598
-	.4byte 0x804605A4
-	.4byte 0x804605B0
-	.4byte 0x804605BC
-	.4byte 0x804605C8
-	.4byte 0x804605D4
-	.4byte 0x804605E0
-	.4byte 0x804605EC
+	.byte4 $$251713
+	.byte4 $$251714
+	.byte4 $$251715
+	.byte4 $$251716
+	.byte4 $$251717
+	.byte4 $$251718
+	.byte4 $$251719
+	.byte4 $$251720
+	.byte4 $$251721
+	.byte4 $$251722
+	.byte4 $$251723
+	.byte4 $$251724
+	.byte4 $$251725
+	.byte4 $$251726
+	.byte4 $$251727
+	.byte4 $$251728
+	.byte4 $$251729
+	.byte4 $$251730
+	.byte4 $$251731
+	.byte4 $$251732
+	.byte4 $$251733
+	.byte4 $$251734
+	.byte4 $$251735
+	.byte4 $$251736
+	.byte4 $$251737
+	.byte4 $$251738
+	.byte4 $$251739
+	.byte4 $$251740
+	.byte4 $$251741
+	.byte4 $$251742
+	.byte4 $$251743
+	.byte4 $$251744
+	.byte4 $$251745
+	.byte4 $$251746
+	.byte4 $$251747
+	.byte4 $$251748
+	.byte4 $$251749
+	.byte4 $$251750
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256431
@@ -2134,7 +2134,7 @@ $$256822:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2:
-	.4byte 0x80460490
+	.byte4 $$251712
 	.4byte 0
 .global $$251713
 $$251713:

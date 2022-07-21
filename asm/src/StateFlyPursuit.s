@@ -493,12 +493,12 @@ lbl_802D0AEC:
 __vt__Q53scn4step5enemy6pierce15StateFlyPursuit:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802D0554  ;# ptr
-	.4byte 0x802D0558  ;# ptr
-	.4byte 0x802D0708  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802D0970  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6pierce15StateFlyPursuitFv
+	.byte4 procAnim__Q53scn4step5enemy6pierce15StateFlyPursuitFv
+	.byte4 procMove__Q53scn4step5enemy6pierce15StateFlyPursuitFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6pierce15StateFlyPursuitFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256306

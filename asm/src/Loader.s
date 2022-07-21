@@ -55,9 +55,9 @@ $$250075:
 	.balign 4
 .global tFILENAME_TABLE__Q33scn2vc20$$2unnamed$$2Loader_cpp$$2
 tFILENAME_TABLE__Q33scn2vc20$$2unnamed$$2Loader_cpp$$2:
-	.4byte 0x80495548
-	.4byte 0x80495560
-	.4byte 0x80495578
-	.4byte 0x80495590
-	.4byte 0x804955A8
-	.4byte 0x804955C0
+	.byte4 $$250070
+	.byte4 $$250071
+	.byte4 $$250072
+	.byte4 $$250073
+	.byte4 $$250074
+	.byte4 $$250075

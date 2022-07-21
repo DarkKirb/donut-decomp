@@ -113,5 +113,5 @@ $$248751:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2
 T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2:
-	.4byte 0x80459E10
+	.byte4 $$248751
 	.4byte 0

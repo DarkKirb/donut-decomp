@@ -3295,7 +3295,7 @@ lbl_80126CC4:
 /* 80126CDC 00122B1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80126C50  ;# ptr
+	.byte4 __sinit_$$3ut_TextWriterBase_cpp
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global mFormatBufferSize__Q34nw4r2ut17TextWriterBase$$0c$$1

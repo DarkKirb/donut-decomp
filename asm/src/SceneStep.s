@@ -554,13 +554,13 @@ $$252732:
 __vt__Q33scn4step9SceneStep:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80221E74  ;# ptr
-	.4byte 0x80221D04  ;# ptr
-	.4byte 0x80221D98  ;# ptr
-	.4byte 0x80221D70  ;# ptr
-	.4byte 0x80221DC0  ;# ptr
-	.4byte 0x80221DE8  ;# ptr
-	.4byte 0x80221E10  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn4step9SceneStepCFv
+	.byte4 __dt__Q33scn4step9SceneStepFv
+	.byte4 updateMain__Q33scn4step9SceneStepFv
+	.byte4 updateUseGPU__Q33scn4step9SceneStepFv
+	.byte4 updateDebug__Q33scn4step9SceneStepFv
+	.byte4 draw__Q33scn4step9SceneStepFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn4step9SceneStepCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

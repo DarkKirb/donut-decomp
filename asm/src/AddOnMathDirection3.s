@@ -1069,32 +1069,32 @@ $$254687:
 $$254769:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A1468  ;# ptr
+	.byte4 restructLeftUp__Q33hel4math10Direction3Fv
 .global $$254815
 $$254815:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A155C  ;# ptr
+	.byte4 restructLeftFront__Q33hel4math10Direction3Fv
 .global $$254827
 $$254827:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A15F4  ;# ptr
+	.byte4 restructUpLeft__Q33hel4math10Direction3Fv
 .global $$254840
 $$254840:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A168C  ;# ptr
+	.byte4 restructUpFront__Q33hel4math10Direction3Fv
 .global $$254854
 $$254854:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A1724  ;# ptr
+	.byte4 restructFrontLeft__Q33hel4math10Direction3Fv
 .global $$254863
 $$254863:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801A17BC  ;# ptr
+	.byte4 restructFrontUp__Q33hel4math10Direction3Fv
 	.asciz "Assertion failed.\n"
 	.balign 4
 	.asciz "MintFuncProxy.hpp"

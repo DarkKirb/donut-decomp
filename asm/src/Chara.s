@@ -2352,78 +2352,78 @@ lbl_8020243C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CHARA_INFO_TABLE__Q33scn14challengetitle19$$2unnamed$$2Chara_cpp$$2
 T_CHARA_INFO_TABLE__Q33scn14challengetitle19$$2unnamed$$2Chara_cpp$$2:
-	.4byte 0x80557CB8
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CC0
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CC8
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CD0
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CD8
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CE0
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
-	.4byte 0x80557CE8
-	.4byte 0x8045EAD0
-	.4byte 0x8045EAF0
+	.byte4 $$253228
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253231
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253232
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253233
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253234
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253235
+	.byte4 $$253229
+	.byte4 $$253230
+	.byte4 $$253236
+	.byte4 $$253229
+	.byte4 $$253230
 .global $$253282
 $$253282:
-	.4byte 0x8045EB08
-	.4byte 0x8045EB18
-	.4byte 0x8045EB28
-	.4byte 0x8045EB38
-	.4byte 0x8045EB48
+	.byte4 $$253277
+	.byte4 $$253278
+	.byte4 $$253279
+	.byte4 $$253280
+	.byte4 $$253281
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CHARA_INFO_TABLE__Q33scn10grandtitle19$$2unnamed$$2Chara_cpp$$2
 T_CHARA_INFO_TABLE__Q33scn10grandtitle19$$2unnamed$$2Chara_cpp$$2:
-	.4byte 0x805583B0
-	.4byte 0x804606B8
-	.4byte 0x804606B8
-	.4byte 0x805583B8
-	.4byte 0x804606CC
-	.4byte 0x804606CC
-	.4byte 0x805583C0
-	.4byte 0x804606E4
-	.4byte 0x804606E4
-	.4byte 0x805583B0
-	.4byte 0x804606F8
-	.4byte 0x80460718
-	.4byte 0x805583B8
-	.4byte 0x8046072C
-	.4byte 0x80460750
-	.4byte 0x805583C0
-	.4byte 0x80460768
-	.4byte 0x80460768
-	.4byte 0x805583C8
-	.4byte 0x80460778
-	.4byte 0x80460778
-	.4byte 0x805583D0
-	.4byte 0x80460778
-	.4byte 0x80460778
-	.4byte 0x805583D8
-	.4byte 0x80460788
-	.4byte 0x80460788
-	.4byte 0x804607A0
-	.4byte 0x804607AC
-	.4byte 0x804607AC
-	.4byte 0x804607C0
-	.4byte 0x804607CC
-	.4byte 0x804607CC
+	.byte4 $$253143
+	.byte4 $$253144
+	.byte4 $$253144
+	.byte4 $$253145
+	.byte4 $$253146
+	.byte4 $$253146
+	.byte4 $$253147
+	.byte4 $$253148
+	.byte4 $$253148
+	.byte4 $$253143
+	.byte4 $$253149
+	.byte4 $$253150
+	.byte4 $$253145
+	.byte4 $$253151
+	.byte4 $$253152
+	.byte4 $$253147
+	.byte4 $$253153
+	.byte4 $$253153
+	.byte4 $$253154
+	.byte4 $$253155
+	.byte4 $$253155
+	.byte4 $$253156
+	.byte4 $$253155
+	.byte4 $$253155
+	.byte4 $$253157
+	.byte4 $$253158
+	.byte4 $$253158
+	.byte4 $$253159
+	.byte4 $$253160
+	.byte4 $$253160
+	.byte4 $$253161
+	.byte4 $$253162
+	.byte4 $$253162
 .global $$253204
 $$253204:
-	.4byte 0x804607E4
-	.4byte 0x804607F4
-	.4byte 0x80460804
-	.4byte 0x80460814
-	.4byte 0x80460824
+	.byte4 $$253199
+	.byte4 $$253200
+	.byte4 $$253201
+	.byte4 $$253202
+	.byte4 $$253203
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253229

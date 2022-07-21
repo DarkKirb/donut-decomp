@@ -567,24 +567,24 @@ __dt__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv:
 __vt__Q53scn4step5enemy10parasoldee13StateNoseDive:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CD100  ;# ptr
-	.4byte 0x802CCE28  ;# ptr
-	.4byte 0x802CCFBC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802CD028  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10parasoldee13StateNoseDiveFv
+	.byte4 procAnim__Q53scn4step5enemy10parasoldee13StateNoseDiveFv
+	.byte4 procMove__Q53scn4step5enemy10parasoldee13StateNoseDiveFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10parasoldee13StateNoseDiveFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldoo13StateNoseDive
 __vt__Q53scn4step5enemy10parasoldoo13StateNoseDive:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802CEF3C  ;# ptr
-	.4byte 0x802CEC74  ;# ptr
-	.4byte 0x802CEE08  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802CEE74  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv
+	.byte4 procAnim__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv
+	.byte4 procMove__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257074

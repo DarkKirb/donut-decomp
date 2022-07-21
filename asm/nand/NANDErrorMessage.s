@@ -228,159 +228,159 @@ __NANDPrintErrorMessage:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __NANDMaxBlocksErrorMessageDefault
 __NANDMaxBlocksErrorMessageDefault:
-	.4byte 0x804365C8
-	.4byte 0x80436624
-	.4byte 0x80436690
-	.4byte 0x8043670C
-	.4byte 0x8043679C
-	.4byte 0x8043682C
-	.4byte 0x804368BC
+	.byte4 $$21805
+	.byte4 $$21806
+	.byte4 $$21807
+	.byte4 $$21808
+	.byte4 $$21809
+	.byte4 $$21810
+	.byte4 $$21811
 .global __NANDMaxBlocksErrorMessageEurope
 __NANDMaxBlocksErrorMessageEurope:
-	.4byte 0x804365C8
-	.4byte 0x80436934
-	.4byte 0x80436690
-	.4byte 0x804369AC
-	.4byte 0x80436A38
-	.4byte 0x8043682C
-	.4byte 0x804368BC
+	.byte4 $$21805
+	.byte4 $$21812
+	.byte4 $$21807
+	.byte4 $$21813
+	.byte4 $$21814
+	.byte4 $$21810
+	.byte4 $$21811
 .global __NANDMaxFilesErrorMessageDefault
 __NANDMaxFilesErrorMessageDefault:
-	.4byte 0x80436BB4
-	.4byte 0x80436624
-	.4byte 0x80436690
-	.4byte 0x80436C18
-	.4byte 0x80436CA8
-	.4byte 0x80436D38
-	.4byte 0x80436DCC
+	.byte4 $$21817
+	.byte4 $$21806
+	.byte4 $$21807
+	.byte4 $$21818
+	.byte4 $$21819
+	.byte4 $$21820
+	.byte4 $$21821
 .global __NANDMaxFilesErrorMessageEurope
 __NANDMaxFilesErrorMessageEurope:
-	.4byte 0x80436BB4
-	.4byte 0x80436934
-	.4byte 0x80436690
-	.4byte 0x804369AC
-	.4byte 0x80436A38
-	.4byte 0x80436D38
-	.4byte 0x80436DCC
+	.byte4 $$21817
+	.byte4 $$21812
+	.byte4 $$21807
+	.byte4 $$21813
+	.byte4 $$21814
+	.byte4 $$21820
+	.byte4 $$21821
 .global __NANDCorruptErrorMessageDefault
 __NANDCorruptErrorMessageDefault:
-	.4byte 0x80436F3C
-	.4byte 0x80436F90
-	.4byte 0x80436FEC
-	.4byte 0x8043706C
-	.4byte 0x804370E8
-	.4byte 0x80437168
-	.4byte 0x804371E8
+	.byte4 $$21824
+	.byte4 $$21825
+	.byte4 $$21826
+	.byte4 $$21827
+	.byte4 $$21828
+	.byte4 $$21829
+	.byte4 $$21830
 .global __NANDCorruptErrorMessageEurope
 __NANDCorruptErrorMessageEurope:
-	.4byte 0x80436F3C
-	.4byte 0x80437254
-	.4byte 0x804372B8
-	.4byte 0x80437338
-	.4byte 0x804373AC
-	.4byte 0x80437168
-	.4byte 0x804371E8
+	.byte4 $$21824
+	.byte4 $$21831
+	.byte4 $$21832
+	.byte4 $$21833
+	.byte4 $$21834
+	.byte4 $$21829
+	.byte4 $$21830
 .global __NANDBusyErrorMessageDefault
 __NANDBusyErrorMessageDefault:
-	.4byte 0x80437504
-	.4byte 0x80437574
-	.4byte 0x804375CC
-	.4byte 0x80437660
-	.4byte 0x804376E0
-	.4byte 0x80437770
-	.4byte 0x804377F8
+	.byte4 $$21837
+	.byte4 $$21838
+	.byte4 $$21839
+	.byte4 $$21840
+	.byte4 $$21841
+	.byte4 $$21842
+	.byte4 $$21843
 .global __NANDBusyErrorMessageEurope
 __NANDBusyErrorMessageEurope:
-	.4byte 0x80437504
-	.4byte 0x8043787C
-	.4byte 0x804375CC
-	.4byte 0x804378E0
-	.4byte 0x8043795C
-	.4byte 0x80437770
-	.4byte 0x804377F8
+	.byte4 $$21837
+	.byte4 $$21844
+	.byte4 $$21839
+	.byte4 $$21845
+	.byte4 $$21846
+	.byte4 $$21842
+	.byte4 $$21843
 .global __NANDUnknownErrorMessageDefault
 __NANDUnknownErrorMessageDefault:
-	.4byte 0x80437AD4
-	.4byte 0x80437B48
-	.4byte 0x80437BB0
-	.4byte 0x80437C4C
-	.4byte 0x80437D00
-	.4byte 0x80437DA4
-	.4byte 0x80437E68
+	.byte4 $$21849
+	.byte4 $$21850
+	.byte4 $$21851
+	.byte4 $$21852
+	.byte4 $$21853
+	.byte4 $$21854
+	.byte4 $$21855
 .global __NANDUnknownErrorMessageEurope
 __NANDUnknownErrorMessageEurope:
-	.4byte 0x80437AD4
-	.4byte 0x80437F04
-	.4byte 0x80437BB0
-	.4byte 0x80437F98
-	.4byte 0x80438048
-	.4byte 0x80437DA4
-	.4byte 0x80437E68
+	.byte4 $$21849
+	.byte4 $$21856
+	.byte4 $$21851
+	.byte4 $$21857
+	.byte4 $$21858
+	.byte4 $$21854
+	.byte4 $$21855
 .global $$21868
 $$21868:
 	.4byte 0xFFFFFF94
 	.4byte 0
-	.4byte 0x80407A38
+	.byte4 __NANDMaxBlocksErrorMessageDefault
 	.4byte 0xFFFFFF95
 	.4byte 0
-	.4byte 0x80407A70
+	.byte4 __NANDMaxFilesErrorMessageDefault
 	.4byte 0xFFFFFF99
 	.4byte 0
-	.4byte 0x80407AA8
+	.byte4 __NANDCorruptErrorMessageDefault
 	.4byte 0xFFFFFF8A
 	.4byte 0
-	.4byte 0x80407AE0
+	.byte4 __NANDBusyErrorMessageDefault
 	.4byte 0xFFFFFFEA
 	.4byte 0
-	.4byte 0x80407AE0
+	.byte4 __NANDBusyErrorMessageDefault
 	.4byte 0xFFFFFF8B
 	.4byte 0
-	.4byte 0x80407B18
+	.byte4 __NANDUnknownErrorMessageDefault
 	.4byte 0xFFFFFFF7
 	.4byte 0
-	.4byte 0x80407B18
+	.byte4 __NANDUnknownErrorMessageDefault
 	.4byte 0xFFFFFF94
 	.4byte 0x00000001
-	.4byte 0x80407A54
+	.byte4 __NANDMaxBlocksErrorMessageEurope
 	.4byte 0xFFFFFF95
 	.4byte 0x00000001
-	.4byte 0x80407A8C
+	.byte4 __NANDMaxFilesErrorMessageEurope
 	.4byte 0xFFFFFF99
 	.4byte 0x00000001
-	.4byte 0x80407AC4
+	.byte4 __NANDCorruptErrorMessageEurope
 	.4byte 0xFFFFFF8A
 	.4byte 0x00000001
-	.4byte 0x80407AFC
+	.byte4 __NANDBusyErrorMessageEurope
 	.4byte 0xFFFFFFEA
 	.4byte 0x00000001
-	.4byte 0x80407AFC
+	.byte4 __NANDBusyErrorMessageEurope
 	.4byte 0xFFFFFF8B
 	.4byte 0x00000001
-	.4byte 0x80407B34
+	.byte4 __NANDUnknownErrorMessageEurope
 	.4byte 0xFFFFFFF7
 	.4byte 0x00000001
-	.4byte 0x80407B34
+	.byte4 __NANDUnknownErrorMessageEurope
 	.4byte 0xFFFFFF94
 	.4byte 0x00000002
-	.4byte 0x8055E710
+	.byte4 __NANDMaxBlocksErrorMessageChinaKorea
 	.4byte 0xFFFFFF95
 	.4byte 0x00000002
-	.4byte 0x8055E718
+	.byte4 __NANDMaxFilesErrorMessageChinaKorea
 	.4byte 0xFFFFFF99
 	.4byte 0x00000002
-	.4byte 0x8055E720
+	.byte4 __NANDCorruptErrorMessageChinaKorea
 	.4byte 0xFFFFFF8A
 	.4byte 0x00000002
-	.4byte 0x8055E728
+	.byte4 __NANDBusyErrorMessageChinaKorea
 	.4byte 0xFFFFFFEA
 	.4byte 0x00000002
-	.4byte 0x8055E728
+	.byte4 __NANDBusyErrorMessageChinaKorea
 	.4byte 0xFFFFFF8B
 	.4byte 0x00000002
-	.4byte 0x8055E730
+	.byte4 __NANDUnknownErrorMessageChinaKorea
 	.4byte 0xFFFFFFF7
 	.4byte 0x00000002
-	.4byte 0x8055E730
+	.byte4 __NANDUnknownErrorMessageChinaKorea
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -1497,24 +1497,24 @@ $$21860:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __NANDMaxBlocksErrorMessageChinaKorea
 __NANDMaxBlocksErrorMessageChinaKorea:
-	.4byte 0x80436AC8
-	.4byte 0x80436B3C
+	.byte4 $$21815
+	.byte4 $$21816
 .global __NANDMaxFilesErrorMessageChinaKorea
 __NANDMaxFilesErrorMessageChinaKorea:
-	.4byte 0x80436E4C
-	.4byte 0x80436EC4
+	.byte4 $$21822
+	.byte4 $$21823
 .global __NANDCorruptErrorMessageChinaKorea
 __NANDCorruptErrorMessageChinaKorea:
-	.4byte 0x80437430
-	.4byte 0x8043749C
+	.byte4 $$21835
+	.byte4 $$21836
 .global __NANDBusyErrorMessageChinaKorea
 __NANDBusyErrorMessageChinaKorea:
-	.4byte 0x804379EC
-	.4byte 0x80437A70
+	.byte4 $$21847
+	.byte4 $$21848
 .global __NANDUnknownErrorMessageChinaKorea
 __NANDUnknownErrorMessageChinaKorea:
-	.4byte 0x804380F8
-	.4byte 0x80438184
+	.byte4 $$21859
+	.byte4 $$21860
 .global $$21888
 $$21888:
 	.4byte 0xFFFFFF00

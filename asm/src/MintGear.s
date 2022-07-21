@@ -123,7 +123,7 @@ __sinit_$$3MintGear_cpp:
 /* 8034B690 003474D0  4B D9 1D 50 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8034B68C
+	.byte4 __sinit_$$3MintGear_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step4hero22$$2unnamed$$2MintGear_cpp$$2

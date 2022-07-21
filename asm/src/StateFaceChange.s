@@ -248,9 +248,9 @@ lbl_802DB160:
 __vt__Q53scn4step5enemy6scarfy15StateFaceChange:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DAE88  ;# ptr
-	.4byte 0x802DAE8C  ;# ptr
-	.4byte 0x802DB044  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x8028DDE4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6scarfy15StateFaceChangeFv
+	.byte4 procAnim__Q53scn4step5enemy6scarfy15StateFaceChangeFv
+	.byte4 procMove__Q53scn4step5enemy6scarfy15StateFaceChangeFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -308,11 +308,11 @@ setIsPose__Q53scn4step7gimmick10cameralock15VariationSphereFb:
 __vt__Q53scn4step7gimmick10cameralock15VariationSphere:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80305034
-	.4byte 0x8030528C
-	.4byte 0x8030545C
-	.4byte 0x80305460
-	.4byte 0x80305464
+	.byte4 updateReady__Q53scn4step7gimmick10cameralock15VariationSphereFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLock__Q53scn4step7gimmick10cameralock15VariationSphereFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateReadyNonStop__Q53scn4step7gimmick10cameralock15VariationSphereFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLockNonStop__Q53scn4step7gimmick10cameralock15VariationSphereFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 setIsPose__Q53scn4step7gimmick10cameralock15VariationSphereFb
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

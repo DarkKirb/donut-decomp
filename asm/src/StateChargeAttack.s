@@ -334,12 +334,12 @@ lbl_80253D54:
 __vt__Q53scn4step4boss8kingsdoo17StateChargeAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802539CC  ;# ptr
-	.4byte 0x802539D0  ;# ptr
-	.4byte 0x80253A8C  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x80253AE0  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss8kingsdoo17StateChargeAttackFv
+	.byte4 procAnim__Q53scn4step4boss8kingsdoo17StateChargeAttackFv
+	.byte4 procMove__Q53scn4step4boss8kingsdoo17StateChargeAttackFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss8kingsdoo17StateChargeAttackFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256691

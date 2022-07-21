@@ -452,13 +452,13 @@ $$252625:
 __vt__Q33scn10grandtitle15SceneGrandTitle:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8020630C  ;# ptr
-	.4byte 0x802061B0  ;# ptr
-	.4byte 0x80206244  ;# ptr
-	.4byte 0x8020621C  ;# ptr
-	.4byte 0x8020626C  ;# ptr
-	.4byte 0x80206294  ;# ptr
-	.4byte 0x802062BC  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q33scn10grandtitle15SceneGrandTitleCFv
+	.byte4 __dt__Q33scn10grandtitle15SceneGrandTitleFv
+	.byte4 updateMain__Q33scn10grandtitle15SceneGrandTitleFv
+	.byte4 updateUseGPU__Q33scn10grandtitle15SceneGrandTitleFv
+	.byte4 updateDebug__Q33scn10grandtitle15SceneGrandTitleFv
+	.byte4 draw__Q33scn10grandtitle15SceneGrandTitleFRCQ23scn11DrawReqInfo
+	.byte4 isSceneEnd__Q33scn10grandtitle15SceneGrandTitleCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

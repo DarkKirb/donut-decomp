@@ -1403,92 +1403,92 @@ $$254558:
 $$254663:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2990  ;# ptr
+	.byte4 getZY__Q33hel4math7Vector3CFv
 .global $$254702
 $$254702:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2A7C  ;# ptr
+	.byte4 getZX__Q33hel4math7Vector3CFv
 .global $$254710
 $$254710:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2AD0  ;# ptr
+	.byte4 getYZ__Q33hel4math7Vector3CFv
 .global $$254718
 $$254718:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2B24  ;# ptr
+	.byte4 getYX__Q33hel4math7Vector3CFv
 .global $$254726
 $$254726:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2B78  ;# ptr
+	.byte4 getXZ__Q33hel4math7Vector3CFv
 .global $$254734
 $$254734:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2BCC  ;# ptr
+	.byte4 getXY__Q33hel4math7Vector3CFv
 .global $$254742
 $$254742:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C2C20  ;# ptr
+	.byte4 __dv__Q33hel4math7Vector3CFf
 .global $$254772
 $$254772:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8017C568  ;# ptr
+	.byte4 __ml__Q33hel4math7Vector3CFf
 .global $$254782
 $$254782:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8017C84C  ;# ptr
+	.byte4 __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 .global $$254806
 $$254806:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801954E0  ;# ptr
+	.byte4 __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 .global $$254820
 $$254820:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F724  ;# ptr
+	.byte4 __adv__Q33hel4math7Vector3Ff
 .global $$254828
 $$254828:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F730  ;# ptr
+	.byte4 __amu__Q33hel4math7Vector3Ff
 .global $$254833
 $$254833:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019FC88  ;# ptr
+	.byte4 __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 .global $$254841
 $$254841:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801829AC  ;# ptr
+	.byte4 __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 .global $$254846
 $$254846:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019E1BC  ;# ptr
+	.byte4 isZero__Q33hel4math7Vector3CFv
 .global $$254875
 $$254875:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x8019F888  ;# ptr
+	.byte4 isZeroStrict__Q33hel4math7Vector3CFv
 .global $$254880
 $$254880:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C326C  ;# ptr
+	.byte4 isZeroLoose__Q33hel4math7Vector3CFf
 .global $$254904
 $$254904:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte 0x801C33B4  ;# ptr
+	.byte4 set__Q33hel4math7Vector3Ffff
 	.asciz "Assertion failed.\n"
 	.balign 4
 	.asciz "MintFuncProxy.hpp"

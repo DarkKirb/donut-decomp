@@ -2548,7 +2548,7 @@ __sinit_$$3lyt_window_cpp:
 /* 800F904C 000F4E8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x800F9040  ;# ptr
+	.byte4 __sinit_$$3lyt_window_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GetTexutreFlipInfo__Q34nw4r3lyt24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos
@@ -2572,39 +2572,39 @@ $$2LOCAL$$2GetTexutreFlipInfo__Q34nw4r3lyt24$$2unnamed$$2lyt_window_cpp$$2FUc$$2
 __vt__Q34nw4r3lyt6Window:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800F6D40  ;# ptr
-	.4byte 0x800F9030  ;# ptr
-	.4byte 0x800F30D0  ;# ptr
-	.4byte 0x800F33D0  ;# ptr
-	.4byte 0x800F7020  ;# ptr
-	.4byte 0x800F3470  ;# ptr
-	.4byte 0x800F7200  ;# ptr
-	.4byte 0x800F6F90  ;# ptr
-	.4byte 0x800F6FB0  ;# ptr
-	.4byte 0x800F2EC0  ;# ptr
-	.4byte 0x800F2EF0  ;# ptr
-	.4byte 0x800F6FE0  ;# ptr
-	.4byte 0x800F7000  ;# ptr
-	.4byte 0x800F2F40  ;# ptr
-	.4byte 0x800F6E90  ;# ptr
-	.4byte 0x800F35C0  ;# ptr
-	.4byte 0x800F35E0  ;# ptr
-	.4byte 0x800F3670  ;# ptr
-	.4byte 0x800F7290  ;# ptr
-	.4byte 0x800F3730  ;# ptr
-	.4byte 0x800F3740  ;# ptr
-	.4byte 0x800F3750  ;# ptr
-	.4byte 0x800F3850  ;# ptr
-	.4byte 0x800F8FB0  ;# ptr
-	.4byte 0x800F3AA0  ;# ptr
-	.4byte 0x800F8FC0  ;# ptr
-	.4byte 0x800F3950  ;# ptr
-	.4byte 0x800F9020  ;# ptr
-	.4byte 0x800F8FF0  ;# ptr
-	.4byte 0x800F7320  ;# ptr
-	.4byte 0x800F7430  ;# ptr
-	.4byte 0x800F7A40  ;# ptr
-	.4byte 0x800F8180  ;# ptr
+	.byte4 __dt__Q34nw4r3lyt6WindowFv
+	.byte4 GetRuntimeTypeInfo__Q34nw4r3lyt6WindowCFv
+	.byte4 CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.byte4 DrawSelf__Q34nw4r3lyt6WindowFRCQ34nw4r3lyt8DrawInfo
+	.byte4 Animate__Q34nw4r3lyt4PaneFUl
+	.byte4 AnimateSelf__Q34nw4r3lyt6WindowFUl
+	.byte4 GetVtxColor__Q34nw4r3lyt6WindowCFUl
+	.byte4 SetVtxColor__Q34nw4r3lyt6WindowFUlQ34nw4r2ut5Color
+	.byte4 GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.byte4 SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.byte4 GetVtxColorElement__Q34nw4r3lyt6WindowCFUl
+	.byte4 SetVtxColorElement__Q34nw4r3lyt6WindowFUlUc
+	.byte4 FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.byte4 FindMaterialByName__Q34nw4r3lyt6WindowFPCcb
+	.byte4 BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.byte4 UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.byte4 UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.byte4 UnbindAnimationSelf__Q34nw4r3lyt6WindowFPQ34nw4r3lyt13AnimTransform
+	.byte4 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.byte4 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.byte4 SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.byte4 SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.byte4 GetMaterialNum__Q34nw4r3lyt6WindowCFv
+	.byte4 GetMaterial__Q34nw4r3lyt4PaneCFv
+	.byte4 GetMaterial__Q34nw4r3lyt6WindowCFUl
+	.byte4 LoadMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.byte4 GetContentMaterial__Q34nw4r3lyt6WindowCFv
+	.byte4 GetFrameMaterial__Q34nw4r3lyt6WindowCFUl
+	.byte4 DrawContent__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ34nw4r3lyt15WindowFrameSizeUc
+	.byte4 DrawFrame__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc
+	.byte4 DrawFrame4__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc
+	.byte4 DrawFrame8__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29836

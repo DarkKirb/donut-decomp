@@ -406,12 +406,12 @@ lbl_802AAE7C:
 __vt__Q53scn4step5enemy6damage16StateDeadInWater:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802AABC8  ;# ptr
-	.4byte 0x802AABCC  ;# ptr
-	.4byte 0x802AADCC  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802AAE14  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.byte4 procAnim__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.byte4 procMove__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256983

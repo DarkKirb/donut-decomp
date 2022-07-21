@@ -857,11 +857,11 @@ lbl_803CFCE4:
 __vt__Q43scn4step7gimmick4Stop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802F7388
-	.4byte 0x802F7708
-	.4byte 0x802F77C0
-	.4byte 0x802F7838
-	.4byte 0x802F7930
+	.byte4 __dt__Q43scn4step7gimmick4StopFv
+	.byte4 onStopNormalStarted__Q43scn4step7gimmick4StopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step7gimmick4StopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step7gimmick4StopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step7gimmick4StopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -869,9 +869,9 @@ __vt__Q43scn4step7gimmick4Stop:
 __vt__Q43scn4step3sfx4Stop:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803CF958
-	.4byte 0x803CFB20
-	.4byte 0x803CFB8C
-	.4byte 0x803CFC04
-	.4byte 0x803CFCAC
+	.byte4 __dt__Q43scn4step3sfx4StopFv
+	.byte4 onStopNormalStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.byte4 onStopNormalFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.byte4 onStopPowerfulFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
 	.4byte 0

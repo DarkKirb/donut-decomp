@@ -1074,30 +1074,30 @@ $$24$$2__dt__Q23mem14HeapCompactionFv:
 __vt__Q23mem14HeapCompaction:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BD720  ;# ptr
-	.4byte 0x801BDC58  ;# ptr
-	.4byte 0x801BDC60  ;# ptr
-	.4byte 0x801BDC64  ;# ptr
-	.4byte 0x801BDCB4  ;# ptr
-	.4byte 0x801BDCB8  ;# ptr
-	.4byte 0x801BDCBC  ;# ptr
-	.4byte 0x801BDCC4  ;# ptr
-	.4byte 0x801BDCCC  ;# ptr
-	.4byte 0x801BDD44  ;# ptr
+	.byte4 __dt__Q23mem14HeapCompactionFv
+	.byte4 heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 fragmentBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 totalHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 usedHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 startAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 endAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.byte4 drawUsedBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.byte4 drawFragmentBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BE1F0  ;# ptr
-	.4byte 0x801BE1E8  ;# ptr
-	.4byte 0x801BE1E0  ;# ptr
-	.4byte 0x801BDD48  ;# ptr
-	.4byte 0x801BDD88  ;# ptr
+	.byte4 $$24$$2__dt__Q23mem14HeapCompactionFv
+	.byte4 $$24$$2allocatorAlloc__Q23mem14HeapCompactionFUll
+	.byte4 $$24$$2allocatorFree__Q23mem14HeapCompactionFPv
+	.byte4 allocatorAlloc__Q23mem14HeapCompactionFUll
+	.byte4 allocatorFree__Q23mem14HeapCompactionFPv
 .global __vt__Q33mem14HeapCompaction22AllocFromTailAllocator
 __vt__Q33mem14HeapCompaction22AllocFromTailAllocator:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801BD6C4  ;# ptr
-	.4byte 0x801BE188  ;# ptr
-	.4byte 0x801BE1CC  ;# ptr
+	.byte4 __dt__Q33mem14HeapCompaction22AllocFromTailAllocatorFv
+	.byte4 allocatorAlloc__Q33mem14HeapCompaction22AllocFromTailAllocatorFUll
+	.byte4 allocatorFree__Q33mem14HeapCompaction22AllocFromTailAllocatorFPv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249358

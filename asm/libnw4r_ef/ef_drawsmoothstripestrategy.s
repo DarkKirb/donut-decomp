@@ -5478,11 +5478,11 @@ __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
 __vt__Q34nw4r2ef24DrawSmoothStripeStrategy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800C8AD0  ;# ptr
-	.4byte 0x800C7480  ;# ptr
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
-	.4byte 0x800C8150  ;# ptr
+	.byte4 __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv
+	.byte4 Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetCalcAheadFunc__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r2ef15ParticleManager
 	.4byte 0
 	.4byte 0
 	.4byte 0

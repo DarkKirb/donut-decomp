@@ -1758,7 +1758,7 @@ $$21:
 	.balign 4
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.4byte 0x80053C60  ;# ptr
+	.byte4 OnShutdown
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
@@ -1766,7 +1766,7 @@ ShutdownFunctionInfo:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __PADVersion
 __PADVersion:
-	.4byte 0x80438530
+	.byte4 $$21
 .global ResettingChan
 ResettingChan:
 	.4byte 0x00000020
@@ -1781,7 +1781,7 @@ Spec:
 	.4byte 0x00000005
 .global MakeStatus
 MakeStatus:
-	.4byte 0x80053850  ;# ptr
+	.byte4 SPEC2_MakeStatus
 .global CmdReadOrigin
 CmdReadOrigin:
 	.4byte 0x41000000

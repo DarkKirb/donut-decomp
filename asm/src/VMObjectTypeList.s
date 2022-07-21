@@ -332,7 +332,7 @@ $$250881:
 __vt__Q26mintvm16VMObjectTypeList:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801CA17C  ;# ptr
+	.byte4 __dt__Q26mintvm16VMObjectTypeListFv
 .global $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType$$20
 $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType$$20:
 	.asciz "mMax = %d\n"

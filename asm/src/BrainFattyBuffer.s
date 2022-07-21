@@ -83,15 +83,15 @@ __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26S
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferAppearFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80298C38  ;# ptr
-	.4byte 0x80298C18  ;# ptr
+	.byte4 __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferAppearFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.byte4 create__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferAppearFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy7blipper16BrainFattyBuffer
 __vt__Q53scn4step5enemy7blipper16BrainFattyBuffer:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80298C34  ;# ptr
-	.4byte 0x80298B90  ;# ptr
-	.4byte 0x80298C14  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy7blipper16BrainFattyBufferFv
+	.byte4 onStart__Q53scn4step5enemy7blipper16BrainFattyBufferFv
+	.byte4 onRecover__Q53scn4step5enemy7blipper16BrainFattyBufferFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

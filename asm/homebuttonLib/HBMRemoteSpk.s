@@ -667,9 +667,9 @@ isPlayReady__Q210homebutton9RemoteSpkCFl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q210homebutton9RemoteSpk
 __vt__Q210homebutton9RemoteSpk:
-	.4byte 0x80442CC0
+	.byte4 __RTTI__Q210homebutton9RemoteSpk
 	.4byte 0
-	.4byte 0x8012AFA0  ;# ptr
+	.byte4 __dt__Q210homebutton9RemoteSpkFv
 .global $$26598
 $$26598:
 	.asciz "homebutton::RemoteSpk"
@@ -677,7 +677,7 @@ $$26598:
 	.4byte 0
 .global __RTTI__Q210homebutton9RemoteSpk
 __RTTI__Q210homebutton9RemoteSpk:
-	.4byte 0x80442CA4
+	.byte4 $$26598
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

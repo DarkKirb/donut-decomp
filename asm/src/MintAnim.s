@@ -94,7 +94,7 @@ __sinit_$$3MintAnim_cpp:
 /* 8019AC64 00196AA4  4B F4 27 7C */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8019AC60  ;# ptr
+	.byte4 __sinit_$$3MintAnim_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj22$$2unnamed$$2MintAnim_cpp$$2

@@ -517,5 +517,5 @@ getCollidedAttackTargetGimmick__Q25ocoll12SearchAttackCFUl:
 __vt__Q25ocoll12SearchAttack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x801D8548  ;# ptr
+	.byte4 __dt__Q25ocoll12SearchAttackFv
 	.4byte 0

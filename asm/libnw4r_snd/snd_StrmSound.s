@@ -503,25 +503,25 @@ __sinit_$$3snd_StrmSound_cpp:
 /* 8011911C 00114F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x80119110  ;# ptr
+	.byte4 __sinit_$$3snd_StrmSound_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9StrmSound
 __vt__Q44nw4r3snd6detail9StrmSound:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80119100  ;# ptr
-	.4byte 0x80118F50  ;# ptr
-	.4byte 0x80118EB0  ;# ptr
-	.4byte 0x801190F0  ;# ptr
-	.4byte 0x801190A0  ;# ptr
-	.4byte 0x801190C0  ;# ptr
-	.4byte 0x80118B30  ;# ptr
-	.4byte 0x801190D0  ;# ptr
-	.4byte 0x801190E0  ;# ptr
-	.4byte 0x80118FB0  ;# ptr
-	.4byte 0x80118D50  ;# ptr
-	.4byte 0x80118DD0  ;# ptr
+	.byte4 GetRuntimeTypeInfo__Q44nw4r3snd6detail9StrmSoundCFv
+	.byte4 __dt__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 Shutdown__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 IsPrepared__Q44nw4r3snd6detail9StrmSoundCFv
+	.byte4 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 DetachTempSpecialHandle__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 InitParam__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 GetBasicPlayer__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 GetBasicPlayer__Q44nw4r3snd6detail9StrmSoundCFv
+	.byte4 OnUpdatePlayerPriority__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 UpdateMoveValue__Q44nw4r3snd6detail9StrmSoundFv
+	.byte4 UpdateParam__Q44nw4r3snd6detail9StrmSoundFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210414

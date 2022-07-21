@@ -314,23 +314,23 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15Sta
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateSkyKickHit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039EA6C
-	.4byte 0x8039EA30
+	.byte4 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateSkyKickHit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateSkyKickHit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039EA68
-	.4byte 0x8039EA4C
+	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero7fighter12StateSkyKick
 __vt__Q53scn4step4hero7fighter12StateSkyKick:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8039E820
-	.4byte 0x8039E824
-	.4byte 0x8039E8E8
-	.4byte 0x8035550C
-	.4byte 0x8039E944
-	.4byte 0x8039E990
-	.4byte 0x80355518
+	.byte4 __dt__Q53scn4step4hero7fighter12StateSkyKickFv
+	.byte4 procAnim__Q53scn4step4hero7fighter12StateSkyKickFv
+	.byte4 procMove__Q53scn4step4hero7fighter12StateSkyKickFv
+	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4hero7fighter12StateSkyKickFv
+	.byte4 procObjCollReact__Q53scn4step4hero7fighter12StateSkyKickFv
+	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

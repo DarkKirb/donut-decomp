@@ -687,22 +687,22 @@ lbl_803C7884:
 __vt__Q53scn4step5enemy10stareffect10StateBound:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802E7FF8  ;# ptr
-	.4byte 0x802E80BC  ;# ptr
-	.4byte 0x802E8154  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x802E81D4  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy10stareffect10StateBoundFv
+	.byte4 procAnim__Q53scn4step5enemy10stareffect10StateBoundFv
+	.byte4 procMove__Q53scn4step5enemy10stareffect10StateBoundFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy10stareffect10StateBoundFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state10StateBound
 __vt__Q53scn4step4item5state10StateBound:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803C7578
-	.4byte 0x803C760C
-	.4byte 0x803C7648
-	.4byte 0x803C76BC
+	.byte4 __dt__Q53scn4step4item5state10StateBoundFv
+	.byte4 procAnim__Q53scn4step4item5state10StateBoundFv
+	.byte4 procMove__Q53scn4step4item5state10StateBoundFv
+	.byte4 procFixPos__Q53scn4step4item5state10StateBoundFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257606

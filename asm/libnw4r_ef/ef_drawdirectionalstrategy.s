@@ -2521,11 +2521,11 @@ $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8Dra
 __vt__Q34nw4r2ef23DrawDirectionalStrategy:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800BF090  ;# ptr
-	.4byte 0x800BD020  ;# ptr
-	.4byte 0x800BA740  ;# ptr
-	.4byte 0x800BA760  ;# ptr
-	.4byte 0x800BEFC0  ;# ptr
+	.byte4 __dt__Q34nw4r2ef23DrawDirectionalStrategyFv
+	.byte4 Draw__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.byte4 GetCalcAheadFunc__Q34nw4r2ef23DrawDirectionalStrategyFPQ34nw4r2ef15ParticleManager
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

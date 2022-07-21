@@ -347,15 +347,15 @@ state__Q43scn4step4hero11ObjInfoImplCFv:
 __vt__Q43scn4step4boss11ObjInfoImpl:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80233610  ;# ptr
-	.4byte 0x80233690  ;# ptr
-	.4byte 0x802336B8  ;# ptr
-	.4byte 0x802336E0  ;# ptr
-	.4byte 0x802336E8  ;# ptr
-	.4byte 0x802336F0  ;# ptr
-	.4byte 0x80233718  ;# ptr
-	.4byte 0x80233720  ;# ptr
-	.4byte 0x80233748  ;# ptr
+	.byte4 __dt__Q43scn4step4boss11ObjInfoImplFv
+	.byte4 name__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 anim__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 footState__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 hitPoint__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 location__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 move__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 script__Q43scn4step4boss11ObjInfoImplCFv
+	.byte4 state__Q43scn4step4boss11ObjInfoImplCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -398,15 +398,15 @@ $$255469:
 __vt__Q43scn4step4hero11ObjInfoImpl:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8035088C
-	.4byte 0x8035090C
-	.4byte 0x80350A04
-	.4byte 0x80350A2C
-	.4byte 0x80350A34
-	.4byte 0x80350A3C
-	.4byte 0x80350A64
-	.4byte 0x80350A6C
-	.4byte 0x80350A94
+	.byte4 __dt__Q43scn4step4hero11ObjInfoImplFv
+	.byte4 name__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 anim__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 footState__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 hitPoint__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 location__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 move__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 script__Q43scn4step4hero11ObjInfoImplCFv
+	.byte4 state__Q43scn4step4hero11ObjInfoImplCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254747

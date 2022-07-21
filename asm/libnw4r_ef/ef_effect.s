@@ -881,12 +881,12 @@ lbl_800A4648:
 __vt__Q34nw4r2ef6Effect:
 	.4byte 0
 	.4byte 0
-	.4byte 0x800A3C80  ;# ptr
-	.4byte 0x800A3C90  ;# ptr
-	.4byte 0x800A3B40  ;# ptr
-	.4byte 0x800A4570  ;# ptr
-	.4byte 0x800A40A0  ;# ptr
-	.4byte 0x800A44D0  ;# ptr
+	.byte4 SendClosing__Q34nw4r2ef6EffectFv
+	.byte4 DestroyFunc__Q34nw4r2ef6EffectFv
+	.byte4 Initialize__Q34nw4r2ef6EffectFPQ34nw4r2ef12EffectSystemPQ34nw4r2ef15EmitterResourceUs
+	.byte4 CreateEmitter__Q34nw4r2ef6EffectFQ34nw4r2ef10ResEmitterUcUs
+	.byte4 Calc__Q34nw4r2ef6EffectFQ34nw4r2ef10CalcOption
+	.byte4 Draw__Q34nw4r2ef6EffectFRCQ34nw4r2ef8DrawInfo
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28467

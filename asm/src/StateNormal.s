@@ -104,12 +104,12 @@ lbl_803D8B34:
 __vt__Q43scn4step6weapon11StateNormal:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803D8A40
-	.4byte 0x803D8A9C
-	.4byte 0x803D8AA0
-	.4byte 0x803D895C
-	.4byte 0x803D8B00
-	.4byte 0x803D8964
+	.byte4 __dt__Q43scn4step6weapon11StateNormalFv
+	.byte4 procAnim__Q43scn4step6weapon11StateNormalFv
+	.byte4 procMove__Q43scn4step6weapon11StateNormalFv
+	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
+	.byte4 procFixPos__Q43scn4step6weapon11StateNormalFv
+	.byte4 procObjCollReact__Q43scn4step6weapon9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256141

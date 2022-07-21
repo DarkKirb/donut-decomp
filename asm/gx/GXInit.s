@@ -1313,7 +1313,7 @@ GXTexRegionAddrTable:
 	.4byte 0x00070000
 .global GXShutdownFuncInfo
 GXShutdownFuncInfo:
-	.4byte 0x80031D40  ;# ptr
+	.byte4 __GXShutdown
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
@@ -1321,13 +1321,13 @@ GXShutdownFuncInfo:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __GXVersion
 __GXVersion:
-	.4byte 0x80430800
+	.byte4 $$21
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __GXData
 __GXData:
-	.4byte 0x8049A780
+	.byte4 gxData
 .global $$22712
 $$22712:
 	.4byte 0x4B800000

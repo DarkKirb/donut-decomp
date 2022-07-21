@@ -390,7 +390,7 @@ $$249254:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
-	.4byte 0x804537E0
+	.byte4 $$249254
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -1175,27 +1175,27 @@ $$259458:
 __vt__Q53scn4step4hero5spark5Spark:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8038CE2C
-	.4byte 0x8038CEDC
-	.4byte 0x8032B7A0
-	.4byte 0x8032B7A4
-	.4byte 0x8032B7A8
-	.4byte 0x8038D02C
-	.4byte 0x8038D3B8
-	.4byte 0x8032B7B4
-	.4byte 0x8032B7B8
-	.4byte 0x8032B7BC
-	.4byte 0x8032B7C0
-	.4byte 0x8038D138
-	.4byte 0x8038D13C
-	.4byte 0x8032B7CC
-	.4byte 0x8032B7D0
-	.4byte 0x8032B7D4
-	.4byte 0x8032B7D8
-	.4byte 0x8038D140
-	.4byte 0x8032B7E0
-	.4byte 0x8038D328
-	.4byte 0x8032B7E8
+	.byte4 __dt__Q53scn4step4hero5spark5SparkFv
+	.byte4 setup__Q53scn4step4hero5spark5SparkFv
+	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.byte4 tryToChangeState__Q53scn4step4hero5spark5SparkFv
+	.byte4 onStateEndCleanUp__Q53scn4step4hero5spark5SparkFv
+	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onShowHero__Q53scn4step4hero5spark5SparkFv
+	.byte4 onHideHero__Q53scn4step4hero5spark5SparkFv
+	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procAnim__Q53scn4step4hero5spark5SparkFv
+	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
+	.byte4 procObjCollReact__Q53scn4step4hero5spark5SparkFv
+	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
@@ -1204,8 +1204,8 @@ $$248732:
 	.balign 4
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21:
-	.4byte 0x8055B278
-	.4byte 0x8048B430
+	.byte4 $$248732
+	.byte4 $$248733
 .global $$248831
 $$248831:
 	.asciz "TopL"
@@ -1218,7 +1218,7 @@ $$248766:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22:
-	.4byte 0x8055B290
+	.byte4 $$248766
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

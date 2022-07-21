@@ -45,5 +45,5 @@ lbl_80341870:
 __vt__Q43scn4step4hero17InactiveStateBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80341830
-	.4byte 0x8034182C
+	.byte4 __dt__Q43scn4step4hero17InactiveStateBaseFv
+	.byte4 proc__Q43scn4step4hero17InactiveStateBaseFv

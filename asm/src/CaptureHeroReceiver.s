@@ -1035,38 +1035,38 @@ __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25S
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333B0C
-	.4byte 0x80333A50
+	.byte4 __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333B08
-	.4byte 0x80333A6C
+	.byte4 __dt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333B04
-	.4byte 0x80333A88
+	.byte4 __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333B00
-	.4byte 0x80333AA4
+	.byte4 __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333AFC
-	.4byte 0x80333AC0
+	.byte4 __dt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80333AF8
-	.4byte 0x80333ADC
+	.byte4 __dt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1Fv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

@@ -387,25 +387,25 @@ $$256697:
 __vt__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouEx:
 	.4byte 0
 	.4byte 0
-	.4byte 0x803094A8
-	.4byte 0x803098D4
-	.4byte 0x803094AC
-	.4byte 0x80306D6C
-	.4byte 0x80306D70
-	.4byte 0x80306D74
-	.4byte 0x8030950C
-	.4byte 0x80309510
-	.4byte 0x80309554
-	.4byte 0x803076D8
-	.4byte 0x803095A0
-	.4byte 0x803076E0
-	.4byte 0x803095FC
-	.4byte 0x80307C68
-	.4byte 0x80309600
-	.4byte 0x80309604
-	.4byte 0x80309608
-	.4byte 0x803098CC
-	.4byte 0x803098D0
+	.byte4 __dt__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 kind__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv
+	.byte4 init__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 registerToRoot__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaBack__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 registerToRootCharaFront__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.byte4 procAnim__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 startUnlockDemo__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 endUnlockDemo__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 unsetZoomAll__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.byte4 unlockAnim__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 canEnter__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv
+	.byte4 isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.byte4 getEnterDistX__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv
+	.byte4 getEnterDistY__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv
+	.byte4 modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 reqDoorOpenSE__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
+	.byte4 reqDoorCloseSE__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

@@ -25,9 +25,9 @@ GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt16ResourceAccessor
 __vt__Q36nw4hbm3lyt16ResourceAccessor:
-	.4byte 0x80443E78
+	.byte4 __RTTI__Q36nw4hbm3lyt16ResourceAccessor
 	.4byte 0
-	.4byte 0x8013C0A0  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt16ResourceAccessorFv
 	.4byte 0
-	.4byte 0x8013C0C0  ;# ptr
+	.byte4 GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc
 	.4byte 0

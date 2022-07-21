@@ -92,9 +92,9 @@ procFixPos__Q53scn4step4boss6common14StateMoveJointFv:
 __vt__Q53scn4step4boss6common14StateMoveJoint:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802476B0  ;# ptr
-	.4byte 0x802476B4  ;# ptr
-	.4byte 0x80247714  ;# ptr
-	.4byte 0x802344FC  ;# ptr
-	.4byte 0x8024774C  ;# ptr
-	.4byte 0x80234504  ;# ptr
+	.byte4 __dt__Q53scn4step4boss6common14StateMoveJointFv
+	.byte4 procAnim__Q53scn4step4boss6common14StateMoveJointFv
+	.byte4 procMove__Q53scn4step4boss6common14StateMoveJointFv
+	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
+	.byte4 procFixPos__Q53scn4step4boss6common14StateMoveJointFv
+	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv

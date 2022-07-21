@@ -8888,115 +8888,115 @@ $$287026:
 __vt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StatePiggyback$$4PQ43scn4step4hero4Hero$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340868
-	.4byte 0x80340594
+	.byte4 __dt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StatePiggyback$$4PQ43scn4step4hero4Hero$$4b$$1Fv
+	.byte4 create__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StatePiggyback$$4PQ43scn4step4hero4Hero$$4b$$1Fv
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateAnyWhereIn$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateAnyWhereIn$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340864
-	.4byte 0x8034070C
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateAnyWhereIn$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateAnyWhereIn$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util99StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick13StateWarpStar$$4PQ43scn4step4hero4Hero$$4b$$4i$$1
 __vt__Q24util99StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick13StateWarpStar$$4PQ43scn4step4hero4Hero$$4b$$4i$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340860
-	.4byte 0x8034050C
+	.byte4 __dt__Q24util99StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick13StateWarpStar$$4PQ43scn4step4hero4Hero$$4b$$4i$$1Fv
+	.byte4 create__Q24util99StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick13StateWarpStar$$4PQ43scn4step4hero4Hero$$4b$$4i$$1Fv
 .global __vt__Q24util117StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick15StateWarpStarIn$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$1
 __vt__Q24util117StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick15StateWarpStarIn$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8034085C
-	.4byte 0x803405B4
+	.byte4 __dt__Q24util117StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick15StateWarpStarIn$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$1Fv
+	.byte4 create__Q24util117StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick15StateWarpStarIn$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$1Fv
 .global __vt__Q24util125StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateReturnWarpLowper$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4b$$1
 __vt__Q24util125StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateReturnWarpLowper$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340858
-	.4byte 0x80340530
+	.byte4 __dt__Q24util125StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateReturnWarpLowper$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4b$$1Fv
+	.byte4 create__Q24util125StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateReturnWarpLowper$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4b$$1Fv
 .global __vt__Q24util121StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick19StateLeaveLvMapDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1
 __vt__Q24util121StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick19StateLeaveLvMapDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340854
-	.4byte 0x80340614
+	.byte4 __dt__Q24util121StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick19StateLeaveLvMapDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
+	.byte4 create__Q24util121StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick19StateLeaveLvMapDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
 .global __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateLeaveChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1
 __vt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateLeaveChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340850
-	.4byte 0x80340670
+	.byte4 __dt__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateLeaveChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
+	.byte4 create__Q24util125StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateLeaveChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick16StateChallengeIn$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick16StateChallengeIn$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8034084C
-	.4byte 0x80340728
+	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick16StateChallengeIn$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick16StateChallengeIn$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateShipRepairDemo$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateShipRepairDemo$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340848
-	.4byte 0x80340744
+	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateShipRepairDemo$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common19StateShipRepairDemo$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common25StateShipRepairDemoFollow$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common25StateShipRepairDemoFollow$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340844
-	.4byte 0x80340760
+	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common25StateShipRepairDemoFollow$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common25StateShipRepairDemoFollow$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common24StateShipRepairDemoAfter$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common24StateShipRepairDemoAfter$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340840
-	.4byte 0x8034077C
+	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common24StateShipRepairDemoAfter$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common24StateShipRepairDemoAfter$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common30StateShipRepairDemoAfterFollow$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common30StateShipRepairDemoAfterFollow$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8034083C
-	.4byte 0x80340798
+	.byte4 __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common30StateShipRepairDemoAfterFollow$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common30StateShipRepairDemoAfterFollow$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateLeaveSubgameDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1
 __vt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateLeaveSubgameDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340838
-	.4byte 0x80340690
+	.byte4 __dt__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateLeaveSubgameDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
+	.byte4 create__Q24util123StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateLeaveSubgameDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$1Fv
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateFirstDemo$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateFirstDemo$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340834
-	.4byte 0x803407B4
+	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateFirstDemo$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateFirstDemo$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateInit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateInit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340830
-	.4byte 0x803407D0
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateInit$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateInit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8034082C
-	.4byte 0x803407EC
+	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340828
-	.4byte 0x80340808
+	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1Fv
+	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util112StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1
 __vt__Q24util112StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80340824
-	.4byte 0x803406EC
+	.byte4 __dt__Q24util112StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1Fv
+	.byte4 create__Q24util112StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common12StateCopyPre$$4PQ43scn4step4hero4Hero$$4Q25ostop9ReqHandle$$1Fv
 .global __vt__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1
 __vt__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8033C7C8
+	.byte4 __dt__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1Fv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

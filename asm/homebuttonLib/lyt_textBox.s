@@ -1428,7 +1428,7 @@ __sinit_$$3lyt_textBox_cpp:
 /* 8013D4EC 0013932C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.4byte 0x8013D4D0  ;# ptr
+	.byte4 __sinit_$$3lyt_textBox_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29376
@@ -1452,51 +1452,51 @@ $$29987:
 	.4byte 0x000A0000
 .global __vt__Q36nw4hbm3lyt7TextBox
 __vt__Q36nw4hbm3lyt7TextBox:
-	.4byte 0x80444260
+	.byte4 __RTTI__Q36nw4hbm3lyt7TextBox
 	.4byte 0
-	.4byte 0x8013C390  ;# ptr
-	.4byte 0x8013D4C0  ;# ptr
-	.4byte 0x8013B0A0  ;# ptr
-	.4byte 0x8013B3A0  ;# ptr
-	.4byte 0x8013C5C0  ;# ptr
-	.4byte 0x8013B580  ;# ptr
-	.4byte 0x8013B610  ;# ptr
-	.4byte 0x8013C520  ;# ptr
-	.4byte 0x8013C540  ;# ptr
-	.4byte 0x8013AEB0  ;# ptr
-	.4byte 0x8013AEE0  ;# ptr
-	.4byte 0x8013C580  ;# ptr
-	.4byte 0x8013C5A0  ;# ptr
-	.4byte 0x8013AF30  ;# ptr
-	.4byte 0x8013AFE0  ;# ptr
-	.4byte 0x8013B6D0  ;# ptr
-	.4byte 0x8013B6F0  ;# ptr
-	.4byte 0x8013B700  ;# ptr
-	.4byte 0x8013B710  ;# ptr
-	.4byte 0x8013B7F0  ;# ptr
-	.4byte 0x8013B870  ;# ptr
-	.4byte 0x8013BB20  ;# ptr
-	.4byte 0x8013B930  ;# ptr
-	.4byte 0x8013D130  ;# ptr
-	.4byte 0x8013D1B0  ;# ptr
-	.4byte 0x8013D200  ;# ptr
-	.4byte 0x8013D270  ;# ptr
+	.byte4 __dt__Q36nw4hbm3lyt7TextBoxFv
+	.byte4 GetRuntimeTypeInfo__Q36nw4hbm3lyt7TextBoxCFv
+	.byte4 CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 DrawSelf__Q36nw4hbm3lyt7TextBoxFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 Animate__Q36nw4hbm3lyt4PaneFUl
+	.byte4 AnimateSelf__Q36nw4hbm3lyt4PaneFUl
+	.byte4 GetVtxColor__Q36nw4hbm3lyt7TextBoxCFUl
+	.byte4 SetVtxColor__Q36nw4hbm3lyt7TextBoxFUlQ36nw4hbm2ut5Color
+	.byte4 GetColorElement__Q36nw4hbm3lyt4PaneCFUl
+	.byte4 SetColorElement__Q36nw4hbm3lyt4PaneFUlUc
+	.byte4 GetVtxColorElement__Q36nw4hbm3lyt7TextBoxCFUl
+	.byte4 SetVtxColorElement__Q36nw4hbm3lyt7TextBoxFUlUc
+	.byte4 FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb
+	.byte4 BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb
+	.byte4 UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb
+	.byte4 UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform
+	.byte4 SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb
+	.byte4 GetMaterial__Q36nw4hbm3lyt4PaneCFv
+	.byte4 LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo
+	.byte4 AllocStringBuffer__Q36nw4hbm3lyt7TextBoxFUs
+	.byte4 FreeStringBuffer__Q36nw4hbm3lyt7TextBoxFv
+	.byte4 SetString__Q36nw4hbm3lyt7TextBoxFPCwUs
+	.byte4 SetString__Q36nw4hbm3lyt7TextBoxFPCwUsUs
 .global $$28641
 $$28641:
 	.asciz "nw4hbm::lyt::TextBox"
 	.balign 4
 .global $$28642
 $$28642:
-	.4byte 0x80443F60
+	.byte4 __RTTI__Q46nw4hbm3lyt6detail8PaneBase
 	.4byte 0
-	.4byte 0x80443F38
+	.byte4 __RTTI__Q36nw4hbm3lyt4Pane
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt7TextBox
 __RTTI__Q36nw4hbm3lyt7TextBox:
-	.4byte 0x80444230
-	.4byte 0x80444248
+	.byte4 $$28641
+	.byte4 $$28642
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt7TextBox

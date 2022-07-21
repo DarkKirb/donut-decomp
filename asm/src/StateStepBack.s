@@ -244,9 +244,9 @@ lbl_80298394:
 __vt__Q53scn4step5enemy11bladeknight13StateStepBack:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8029813C  ;# ptr
-	.4byte 0x80298140  ;# ptr
-	.4byte 0x8029818C  ;# ptr
-	.4byte 0x8028DDE0  ;# ptr
-	.4byte 0x80298224  ;# ptr
-	.4byte 0x8028DDE8  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy11bladeknight13StateStepBackFv
+	.byte4 procAnim__Q53scn4step5enemy11bladeknight13StateStepBackFv
+	.byte4 procMove__Q53scn4step5enemy11bladeknight13StateStepBackFv
+	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
+	.byte4 procFixPos__Q53scn4step5enemy11bladeknight13StateStepBackFv
+	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv

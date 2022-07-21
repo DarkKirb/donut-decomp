@@ -65,9 +65,9 @@ __dt__Q53scn4step5enemy9tsukikage11BrainGroundFv:
 __vt__Q53scn4step5enemy9tsukikage11BrainGround:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802EA4D8  ;# ptr
-	.4byte 0x802EA454  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy9tsukikage11BrainGroundFv
+	.byte4 onStart__Q53scn4step5enemy9tsukikage11BrainGroundFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

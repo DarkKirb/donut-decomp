@@ -102,19 +102,19 @@ lbl_8007AF8C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_dm_action
 bta_dm_action:
-	.4byte 0x800786C4  ;# ptr
-	.4byte 0x800787D4  ;# ptr
-	.4byte 0x80078940  ;# ptr
-	.4byte 0x80078948  ;# ptr
-	.4byte 0x80078990  ;# ptr
-	.4byte 0x80078A00  ;# ptr
-	.4byte 0x80078A9C  ;# ptr
-	.4byte 0x80079FD4  ;# ptr
-	.4byte 0x8007A174  ;# ptr
-	.4byte 0x8007B8A0  ;# ptr
-	.4byte 0x8007B9C0  ;# ptr
-	.4byte 0x8007A90C  ;# ptr
-	.4byte 0x8007A994  ;# ptr
+	.byte4 bta_dm_enable
+	.byte4 bta_dm_disable
+	.byte4 bta_dm_set_dev_name
+	.byte4 bta_dm_set_visibility
+	.byte4 bta_dm_bond
+	.byte4 bta_dm_pin_reply
+	.byte4 bta_dm_auth_reply
+	.byte4 bta_dm_signal_strength
+	.byte4 bta_dm_acl_change
+	.byte4 bta_dm_pm_btm_status
+	.byte4 bta_dm_pm_timer
+	.byte4 bta_dm_keep_acl
+	.byte4 bta_dm_send_hci_reset
 .global bta_dm_st_table
 bta_dm_st_table:
 	.4byte 0x000D0001
@@ -130,24 +130,24 @@ bta_dm_st_table:
 	.4byte 0
 .global bta_dm_search_action
 bta_dm_search_action:
-	.4byte 0x80078B70  ;# ptr
-	.4byte 0x80078BD0  ;# ptr
-	.4byte 0x80078C54  ;# ptr
-	.4byte 0x80078D68  ;# ptr
-	.4byte 0x80078F8C  ;# ptr
-	.4byte 0x8007915C  ;# ptr
-	.4byte 0x800793C4  ;# ptr
-	.4byte 0x80079500  ;# ptr
-	.4byte 0x800793DC  ;# ptr
-	.4byte 0x8007942C  ;# ptr
-	.4byte 0x80079544  ;# ptr
-	.4byte 0x8007958C  ;# ptr
-	.4byte 0x800795D4  ;# ptr
-	.4byte 0x80079618  ;# ptr
-	.4byte 0x800796B8  ;# ptr
-	.4byte 0x8007965C  ;# ptr
-	.4byte 0x800790F8  ;# ptr
-	.4byte 0x80079BC8  ;# ptr
+	.byte4 bta_dm_search_start
+	.byte4 bta_dm_search_cancel
+	.byte4 bta_dm_discover
+	.byte4 bta_dm_inq_cmpl
+	.byte4 bta_dm_rmt_name
+	.byte4 bta_dm_sdp_result
+	.byte4 bta_dm_search_cmpl
+	.byte4 bta_dm_free_sdp_db
+	.byte4 bta_dm_disc_result
+	.byte4 bta_dm_search_result
+	.byte4 bta_dm_queue_search
+	.byte4 bta_dm_queue_disc
+	.byte4 bta_dm_search_clear_queue
+	.byte4 bta_dm_search_cancel_cmpl
+	.byte4 bta_dm_search_cancel_notify
+	.byte4 bta_dm_search_cancel_transac_cmpl
+	.byte4 bta_dm_disc_rmt_name
+	.byte4 bta_dm_cancel_rmt_name
 .global bta_dm_search_idle_st_table
 bta_dm_search_idle_st_table:
 	.4byte 0x0012010E
@@ -186,10 +186,10 @@ bta_dm_search_disc_active_st_table:
 	.4byte 0x08120300
 .global bta_dm_search_st_tbl
 bta_dm_search_st_tbl:
-	.4byte 0x80407FF0
-	.4byte 0x8040800C
-	.4byte 0x80408028
-	.4byte 0x80408044
+	.byte4 bta_dm_search_idle_st_table
+	.byte4 bta_dm_search_search_active_st_table
+	.byte4 bta_dm_search_search_cancelling_st_table
+	.byte4 bta_dm_search_disc_active_st_table
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_dm_search_cb

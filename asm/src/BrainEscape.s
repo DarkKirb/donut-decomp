@@ -65,9 +65,9 @@ __dt__Q53scn4step5enemy5sheld11BrainEscapeFv:
 __vt__Q53scn4step5enemy5sheld11BrainEscape:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802DCC4C  ;# ptr
-	.4byte 0x8027EE28  ;# ptr
-	.4byte 0x8027EE2C  ;# ptr
-	.4byte 0x802DCBC8  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy5sheld11BrainEscapeFv
+	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
+	.byte4 onLanding__Q53scn4step5enemy5sheld11BrainEscapeFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

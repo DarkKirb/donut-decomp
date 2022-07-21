@@ -670,11 +670,11 @@ T_SPACEJUMP_FRAME__Q53scn4step7gimmick10cameralock28$$2unnamed$$2VariationLoose_
 __vt__Q53scn4step7gimmick10cameralock14VariationLoose:
 	.4byte 0
 	.4byte 0
-	.4byte 0x8030444C
-	.4byte 0x8030462C
-	.4byte 0x80304960
-	.4byte 0x80304964
-	.4byte 0x80304968
+	.byte4 updateReady__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLock__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateReadyNonStop__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 updateLockNonStop__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.byte4 setIsPose__Q53scn4step7gimmick10cameralock14VariationLooseFb
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

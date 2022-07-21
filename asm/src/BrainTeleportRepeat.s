@@ -113,9 +113,9 @@ __dt__Q53scn4step5enemy4kabu19BrainTeleportRepeatFv:
 __vt__Q53scn4step5enemy4kabu19BrainTeleportRepeat:
 	.4byte 0
 	.4byte 0
-	.4byte 0x802BCBE8  ;# ptr
-	.4byte 0x802BCABC  ;# ptr
-	.4byte 0x802BCB78  ;# ptr
-	.4byte 0x8027EE30  ;# ptr
-	.4byte 0x8027EE34  ;# ptr
+	.byte4 __dt__Q53scn4step5enemy4kabu19BrainTeleportRepeatFv
+	.byte4 onStart__Q53scn4step5enemy4kabu19BrainTeleportRepeatFv
+	.byte4 onRecover__Q53scn4step5enemy4kabu19BrainTeleportRepeatFv
+	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
+	.byte4 update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

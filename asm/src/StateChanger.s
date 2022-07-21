@@ -181,5 +181,5 @@ onSetNextStateFactory__Q24util16StateChangerBaseFv:
 __vt__Q24util16StateChangerBase:
 	.4byte 0
 	.4byte 0
-	.4byte 0x80405D08
+	.byte4 __dt__Q24util16StateChangerBaseFv
 	.4byte 0

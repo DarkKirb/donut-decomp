@@ -242,31 +242,31 @@ lbl_8014BC50:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.byte4 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
+	.4byte __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 	.4byte 0
-	.byte4 __dt__Q44nrel6devkit7heapmap14ExpHeapMapUserFv
-	.byte4 heapName__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 fragmentBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 usedBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 totalHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 usedHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 startAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 endAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
-	.byte4 drawUsedBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
-	.byte4 drawFragmentBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte __dt__Q44nrel6devkit7heapmap14ExpHeapMapUserFv
+	.4byte heapName__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte fragmentBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedBlockCount__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte totalHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedHeapSize__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte startAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte endAddress__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte drawUsedBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte drawFragmentBlocks__Q44nrel6devkit7heapmap14ExpHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
 .global $$22500
 $$22500:
 	.asciz "nrel::devkit::heapmap::ExpHeapMapUser"
 	.balign 4
 .global $$22501
 $$22501:
-	.byte4 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
+	.4byte __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q44nrel6devkit7heapmap12IHeapMapUser
 __vt__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.byte4 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
+	.4byte __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -294,9 +294,9 @@ $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.byte4 $$22500
-	.byte4 $$22501
+	.4byte $$22500
+	.4byte $$22501
 .global __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.byte4 $$22502
+	.4byte $$22502
 	.4byte 0

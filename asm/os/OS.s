@@ -1649,7 +1649,7 @@ __OSExceptionLocations:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSVersion
 __OSVersion:
-	.byte4 $$21
+	.4byte $$21
 .global $$21784
 $$21784:
 	.asciz "RVA 1\n"
@@ -1671,7 +1671,7 @@ $$21187:
 	.balign 4
 .global AppGameNameForSysMenu
 AppGameNameForSysMenu:
-	.byte4 $$21187
+	.4byte $$21187
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

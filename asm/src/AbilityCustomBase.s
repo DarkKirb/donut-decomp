@@ -22,5 +22,5 @@ GetRuntimeTypeInfo__Q43scn4step4hero17AbilityCustomBaseCFv:
 __vt__Q43scn4step4hero17AbilityCustomBase:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q43scn4step4hero17AbilityCustomBaseCFv
-	.byte4 __dt__Q43scn4step4hero17AbilityCustomBaseFv
+	.4byte GetRuntimeTypeInfo__Q43scn4step4hero17AbilityCustomBaseCFv
+	.4byte __dt__Q43scn4step4hero17AbilityCustomBaseFv

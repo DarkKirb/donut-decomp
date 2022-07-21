@@ -23,7 +23,7 @@ __sinit_$$3MintBoss_cpp:
 /* 802329D0 0022E810  4B EA AA 10 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintBoss_cpp
+	.4byte __sinit_$$3MintBoss_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step4boss22$$2unnamed$$2MintBoss_cpp$$2

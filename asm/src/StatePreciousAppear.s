@@ -400,16 +400,16 @@ __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateW
 __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateWaft$$4PQ43scn4step4item4Item$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateWaft$$4PQ43scn4step4item4Item$$1Fv
-	.byte4 create__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateWaft$$4PQ43scn4step4item4Item$$1Fv
+	.4byte __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateWaft$$4PQ43scn4step4item4Item$$1Fv
+	.4byte create__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateWaft$$4PQ43scn4step4item4Item$$1Fv
 .global __vt__Q53scn4step4item5state19StatePreciousAppear
 __vt__Q53scn4step4item5state19StatePreciousAppear:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4item5state19StatePreciousAppearFv
-	.byte4 procAnim__Q53scn4step4item5state19StatePreciousAppearFv
-	.byte4 procMove__Q53scn4step4item5state19StatePreciousAppearFv
-	.byte4 procFixPos__Q43scn4step4item9StateBaseFv
+	.4byte __dt__Q53scn4step4item5state19StatePreciousAppearFv
+	.4byte procAnim__Q53scn4step4item5state19StatePreciousAppearFv
+	.4byte procMove__Q53scn4step4item5state19StatePreciousAppearFv
+	.4byte procFixPos__Q43scn4step4item9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255473

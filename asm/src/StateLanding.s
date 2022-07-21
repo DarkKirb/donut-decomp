@@ -2495,169 +2495,169 @@ __dt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9State
 __vt__Q53scn4step4boss6common12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6common12StateLandingFv
-	.byte4 procAnim__Q53scn4step4boss6common12StateLandingFv
-	.byte4 procMove__Q53scn4step4boss6common12StateLandingFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6common12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6common12StateLandingFv
+	.4byte procAnim__Q53scn4step4boss6common12StateLandingFv
+	.4byte procMove__Q53scn4step4boss6common12StateLandingFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6common12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common12StateLanding
 __vt__Q53scn4step5enemy6common12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6common12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy6common12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy6common12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy6common12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6common12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy6common12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy6common12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper12StateLanding
 __vt__Q53scn4step5enemy7blipper12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy7blipper12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy7blipper12StateLandingFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy7blipper12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11bonkersbomb12StateLanding
 __vt__Q53scn4step5enemy11bonkersbomb12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy11bonkersbomb12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy11bonkersbomb12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy11bonkersbomb12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy11bonkersbomb12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy11bonkersbomb12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy11bonkersbomb12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy11bonkersbomb12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11bonkersbomb12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6bouncy12StateLanding
 __vt__Q53scn4step5enemy6bouncy12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6bouncy12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy6bouncy12StateLandingFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6bouncy12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy6bouncy12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6leafan12StateLanding
 __vt__Q53scn4step5enemy6leafan12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6leafan12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy6leafan12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy6leafan12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy6leafan12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6leafan12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy6leafan12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy6leafan12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6leafan12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldee12StateLanding
 __vt__Q53scn4step5enemy10parasoldee12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10parasoldee12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy10parasoldee12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy10parasoldee12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy10parasoldee12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy10parasoldee12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy10parasoldee12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy10parasoldee12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10parasoldee12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldoo12StateLanding
 __vt__Q53scn4step5enemy10parasoldoo12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10parasoldoo12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy10parasoldoo12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy10parasoldoo12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy10parasoldoo12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy10parasoldoo12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy10parasoldoo12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy10parasoldoo12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10parasoldoo12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky10StateSlope$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5rocky12StateLanding
 __vt__Q53scn4step5enemy5rocky12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy5rocky12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy5rocky12StateLandingFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy5rocky12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy5rocky12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy5rocky12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5rocky12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11sisterbound12StateLanding
 __vt__Q53scn4step5enemy11sisterbound12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy11sisterbound12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy11sisterbound12StateLandingFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy11sisterbound12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage12StateLanding
 __vt__Q53scn4step5enemy9tsukikage12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy9tsukikage12StateLandingFv
-	.byte4 procAnim__Q53scn4step5enemy9tsukikage12StateLandingFv
-	.byte4 procMove__Q53scn4step5enemy9tsukikage12StateLandingFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy9tsukikage12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy9tsukikage12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy9tsukikage12StateLandingFv
+	.4byte procMove__Q53scn4step5enemy9tsukikage12StateLandingFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9tsukikage12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
-	.byte4 create__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
+	.4byte __dt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
+	.4byte create__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateWait$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
 .global __vt__Q53scn4step4hero5stone12StateLanding
 __vt__Q53scn4step4hero5stone12StateLanding:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero5stone12StateLandingFv
-	.byte4 procAnim__Q53scn4step4hero5stone12StateLandingFv
-	.byte4 procMove__Q53scn4step4hero5stone12StateLandingFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero5stone12StateLandingFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero5stone12StateLandingFv
+	.4byte procAnim__Q53scn4step4hero5stone12StateLandingFv
+	.4byte procMove__Q53scn4step4hero5stone12StateLandingFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero5stone12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

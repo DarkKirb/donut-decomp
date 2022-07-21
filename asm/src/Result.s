@@ -2902,15 +2902,15 @@ $$253571:
 	.asciz "ResultBonusCoinComplete"
 .global T_BONUS_MESSAGE_LABEL__Q63scn4step4info9challenge12masterresult20$$2unnamed$$2Result_cpp$$2
 T_BONUS_MESSAGE_LABEL__Q63scn4step4info9challenge12masterresult20$$2unnamed$$2Result_cpp$$2:
-	.byte4 $$253563
-	.byte4 $$253564
-	.byte4 $$253565
-	.byte4 $$253566
-	.byte4 $$253567
-	.byte4 $$253568
-	.byte4 $$253569
-	.byte4 $$253570
-	.byte4 $$253571
+	.4byte $$253563
+	.4byte $$253564
+	.4byte $$253565
+	.4byte $$253566
+	.4byte $$253567
+	.4byte $$253568
+	.4byte $$253569
+	.4byte $$253570
+	.4byte $$253571
 .global $$257484
 $$257484:
 	.asciz "masterresult/Main"

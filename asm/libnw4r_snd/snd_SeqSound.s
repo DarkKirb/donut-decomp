@@ -608,33 +608,33 @@ __sinit_$$3snd_SeqSound_cpp:
 /* 8010DF0C 00109D4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3snd_SeqSound_cpp
+	.4byte __sinit_$$3snd_SeqSound_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail8SeqSound
 __vt__Q44nw4r3snd6detail8SeqSound:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q44nw4r3snd6detail8SeqSoundCFv
-	.byte4 __dt__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 Shutdown__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 IsPrepared__Q44nw4r3snd6detail8SeqSoundCFv
-	.byte4 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 DetachTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 InitParam__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundCFv
-	.byte4 OnUpdatePlayerPriority__Q44nw4r3snd6detail8SeqSoundFv
-	.byte4 UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte GetRuntimeTypeInfo__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte __dt__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte Shutdown__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte IsPrepared__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte IsAttachedTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte DetachTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte InitParam__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte OnUpdatePlayerPriority__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
 .global __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask
 __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
-	.byte4 Execute__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
-	.byte4 Cancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
-	.byte4 OnCancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte __dt__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte Execute__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte Cancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte OnCancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q44nw4r3snd6detail8SeqSound

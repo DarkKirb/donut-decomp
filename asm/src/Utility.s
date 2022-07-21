@@ -10935,8 +10935,8 @@ $$261690:
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$264675
@@ -10955,8 +10955,8 @@ $$264675:
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249660

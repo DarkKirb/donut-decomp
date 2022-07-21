@@ -611,7 +611,7 @@ __sinit_$$3Vector3_cpp:
 /* 8019FD48 0019BB88  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Vector3_cpp
+	.4byte __sinit_$$3Vector3_cpp
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251176

@@ -5776,7 +5776,7 @@ $$2LOCAL$$2KPADiSamplingCallback__Fl$$2table:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __KPADVersion
 __KPADVersion:
-	.byte4 $$21614
+	.4byte $$21614
 .global idist_org
 idist_org:
 	.4byte 0x3F800000

@@ -152,5 +152,5 @@ $$251999:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2:
-	.byte4 $$251541
+	.4byte $$251541
 	.4byte 0

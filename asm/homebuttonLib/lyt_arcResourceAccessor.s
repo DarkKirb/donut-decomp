@@ -211,30 +211,30 @@ $$23472:
 	.4byte 0x2E2E0000
 .global __vt__Q36nw4hbm3lyt19ArcResourceAccessor
 __vt__Q36nw4hbm3lyt19ArcResourceAccessor:
-	.byte4 __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor
+	.4byte __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor
 	.4byte 0
-	.byte4 __dt__Q36nw4hbm3lyt19ArcResourceAccessorFv
-	.byte4 GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl
-	.byte4 GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc
+	.4byte __dt__Q36nw4hbm3lyt19ArcResourceAccessorFv
+	.4byte GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl
+	.4byte GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc
 .global $$23154
 $$23154:
 	.asciz "nw4hbm::lyt::ArcResourceAccessor"
 	.balign 4
 .global $$23155
 $$23155:
-	.byte4 __RTTI__Q36nw4hbm3lyt16ResourceAccessor
+	.4byte __RTTI__Q36nw4hbm3lyt16ResourceAccessor
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor
 __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor:
-	.byte4 $$23154
-	.byte4 $$23155
+	.4byte $$23154
+	.4byte $$23155
 .global $$23156
 $$23156:
 	.asciz "nw4hbm::lyt::ResourceAccessor"
 	.balign 4
 .global __RTTI__Q36nw4hbm3lyt16ResourceAccessor
 __RTTI__Q36nw4hbm3lyt16ResourceAccessor:
-	.byte4 $$23156
+	.4byte $$23156
 	.4byte 0

@@ -106,15 +106,15 @@ $$252003:
 __vt__Q33scn19challengefileselect6Rumble:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q33scn19challengefileselect6RumbleFv
-	.byte4 updateFrame__Q33scn19challengefileselect6RumbleFv
-	.byte4 appear__Q33scn19challengefileselect6RumbleFv
-	.byte4 focus__Q33scn19challengefileselect6RumbleFv
-	.byte4 unfocus__Q33scn19challengefileselect6RumbleFv
-	.byte4 decide__Q33scn19challengefileselect6RumbleFv
-	.byte4 isAnimEnd__Q33scn19challengefileselect6RumbleCFv
-	.byte4 kind__Q33scn19challengefileselect6RumbleCFv
-	.byte4 cursorPane__Q33scn19challengefileselect6RumbleFv
+	.4byte __dt__Q33scn19challengefileselect6RumbleFv
+	.4byte updateFrame__Q33scn19challengefileselect6RumbleFv
+	.4byte appear__Q33scn19challengefileselect6RumbleFv
+	.4byte focus__Q33scn19challengefileselect6RumbleFv
+	.4byte unfocus__Q33scn19challengefileselect6RumbleFv
+	.4byte decide__Q33scn19challengefileselect6RumbleFv
+	.4byte isAnimEnd__Q33scn19challengefileselect6RumbleCFv
+	.4byte kind__Q33scn19challengefileselect6RumbleCFv
+	.4byte cursorPane__Q33scn19challengefileselect6RumbleFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

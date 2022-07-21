@@ -5715,38 +5715,38 @@ _cExtInvalidData2:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __a1_input_reports_array
 __a1_input_reports_array:
-	.byte4 __a1_20_status_report
-	.byte4 __a1_21_user_data
-	.byte4 __a1_22_ack
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_30_data_type
-	.byte4 __a1_31_data_type
-	.byte4 __a1_32_data_type
-	.byte4 __a1_33_data_type
-	.byte4 __a1_34_data_type
-	.byte4 __a1_35_data_type
-	.byte4 __a1_36_data_type
-	.byte4 __a1_37_data_type
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_unused_report
-	.byte4 __a1_3d_data_type
-	.byte4 __a1_3e_data_type
-	.byte4 __a1_3f_data_type
+	.4byte __a1_20_status_report
+	.4byte __a1_21_user_data
+	.4byte __a1_22_ack
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_30_data_type
+	.4byte __a1_31_data_type
+	.4byte __a1_32_data_type
+	.4byte __a1_33_data_type
+	.4byte __a1_34_data_type
+	.4byte __a1_35_data_type
+	.4byte __a1_36_data_type
+	.4byte __a1_37_data_type
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_unused_report
+	.4byte __a1_3d_data_type
+	.4byte __a1_3e_data_type
+	.4byte __a1_3f_data_type
 .global $$25371
 $$25371:
 	.4byte 0x80060704  ;# ptr

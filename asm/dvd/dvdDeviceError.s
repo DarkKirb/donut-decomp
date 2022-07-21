@@ -196,13 +196,13 @@ lbl_800401C0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __DVDDeviceErrorMessage
 __DVDDeviceErrorMessage:
-	.byte4 $$2835
-	.byte4 $$2836
-	.byte4 $$2837
-	.byte4 $$2838
-	.byte4 $$2839
-	.byte4 $$2840
-	.byte4 $$2841
+	.4byte $$2835
+	.4byte $$2836
+	.4byte $$2837
+	.4byte $$2838
+	.4byte $$2839
+	.4byte $$2840
+	.4byte $$2841
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

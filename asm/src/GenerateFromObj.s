@@ -354,15 +354,15 @@ T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 .global T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.4byte 0x00000011
-	.byte4 T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
+	.4byte T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 .global T_ODDSTABLE_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.4byte 0x0000000D
-	.byte4 T_ODDS_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
+	.4byte T_ODDS_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 .global T_ODDSTABLE_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.4byte 0x00000005
-	.byte4 T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
+	.4byte T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 .global $$254118
 $$254118:
 	.4byte 0x3E99999A

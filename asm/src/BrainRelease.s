@@ -233,17 +233,17 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldo
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldee12BrainRelease
 __vt__Q53scn4step5enemy10parasoldee12BrainRelease:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10parasoldee12BrainReleaseFv
-	.byte4 onStart__Q53scn4step5enemy10parasoldee12BrainReleaseFv
-	.byte4 onRecover__Q53scn4step5enemy10parasoldee12BrainReleaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte __dt__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onStart__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onRecover__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q53scn4step5enemy10parasoldee12BrainReleaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -251,15 +251,15 @@ __vt__Q53scn4step5enemy10parasoldee12BrainRelease:
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy10parasoldoo12BrainRelease
 __vt__Q53scn4step5enemy10parasoldoo12BrainRelease:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
-	.byte4 onStart__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
-	.byte4 onRecover__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.4byte __dt__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.4byte onStart__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.4byte onRecover__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q53scn4step5enemy10parasoldoo12BrainReleaseFv
 	.4byte 0

@@ -79,9 +79,9 @@ lbl_80196FFC:
 __vt__Q23gfx10TPLTexture:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23gfx10TPLTextureFv
+	.4byte __dt__Q23gfx10TPLTextureFv
 .global __vt__Q23gfx10TextureObj
 __vt__Q23gfx10TextureObj:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23gfx10TextureObjFv
+	.4byte __dt__Q23gfx10TextureObjFv

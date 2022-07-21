@@ -298,17 +298,17 @@ allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv:
 __vt__Q23mem7HeapExp:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23mem7HeapExpFv
-	.byte4 allocatorAlloc__Q23mem7HeapExpFUll
-	.byte4 allocatorFree__Q23mem7HeapExpFPv
-	.byte4 heapName__Q23mem7HeapExpCFv
-	.byte4 heapMemBlock__Q23mem7HeapExpCFv
-	.byte4 heapUsingBlockCount__Q23mem7HeapExpCFv
-	.byte4 heapDump__Q23mem7HeapExpCFv
+	.4byte __dt__Q23mem7HeapExpFv
+	.4byte allocatorAlloc__Q23mem7HeapExpFUll
+	.4byte allocatorFree__Q23mem7HeapExpFPv
+	.4byte heapName__Q23mem7HeapExpCFv
+	.4byte heapMemBlock__Q23mem7HeapExpCFv
+	.4byte heapUsingBlockCount__Q23mem7HeapExpCFv
+	.4byte heapDump__Q23mem7HeapExpCFv
 .global __vt__Q33mem7HeapExp22AllocFromTailAllocator
 __vt__Q33mem7HeapExp22AllocFromTailAllocator:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q33mem7HeapExp22AllocFromTailAllocatorFv
-	.byte4 allocatorAlloc__Q33mem7HeapExp22AllocFromTailAllocatorFUll
-	.byte4 allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv
+	.4byte __dt__Q33mem7HeapExp22AllocFromTailAllocatorFv
+	.4byte allocatorAlloc__Q33mem7HeapExp22AllocFromTailAllocatorFUll
+	.4byte allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv

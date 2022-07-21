@@ -2742,9 +2742,9 @@ CalcLpfFreqTable__Q44nw4r3snd6detail4Util:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global PanTableTable__Q44nw4r3snd6detail4Util
 PanTableTable__Q44nw4r3snd6detail4Util:
-	.byte4 Pan2RatioTableSqrt__Q44nw4r3snd6detail4Util
-	.byte4 Pan2RatioTableSinCos__Q44nw4r3snd6detail4Util
-	.byte4 Pan2RatioTableLinear__Q44nw4r3snd6detail4Util
+	.4byte Pan2RatioTableSqrt__Q44nw4r3snd6detail4Util
+	.4byte Pan2RatioTableSinCos__Q44nw4r3snd6detail4Util
+	.4byte Pan2RatioTableLinear__Q44nw4r3snd6detail4Util
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

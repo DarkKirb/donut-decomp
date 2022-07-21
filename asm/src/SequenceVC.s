@@ -83,11 +83,11 @@ __dt__Q23seq10SequenceVCFv:
 __vt__Q23seq10SequenceVC:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q23seq10SequenceVCCFv
-	.byte4 __dt__Q23seq10SequenceVCFv
-	.byte4 nextAction__Q23seq10SequenceVCCFv
-	.byte4 createChildSequence__Q23seq10SequenceVCCFv
-	.byte4 onChildSequenceEnd__Q23seq10SequenceVCFRQ23seq9ISequence
-	.byte4 createScene__Q23seq10SequenceVCCFv
-	.byte4 onSceneEnd__Q23seq10SequenceVCFRQ23scn6IScene
+	.4byte GetRuntimeTypeInfo__Q23seq10SequenceVCCFv
+	.4byte __dt__Q23seq10SequenceVCFv
+	.4byte nextAction__Q23seq10SequenceVCCFv
+	.4byte createChildSequence__Q23seq10SequenceVCCFv
+	.4byte onChildSequenceEnd__Q23seq10SequenceVCFRQ23seq9ISequence
+	.4byte createScene__Q23seq10SequenceVCCFv
+	.4byte onSceneEnd__Q23seq10SequenceVCFRQ23scn6IScene
 	.4byte 0

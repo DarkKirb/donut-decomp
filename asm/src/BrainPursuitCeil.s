@@ -32,9 +32,9 @@ __dt__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv:
 __vt__Q53scn4step5enemy6shotzo16BrainPursuitCeil:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv
-	.byte4 onStart__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv
+	.4byte onStart__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

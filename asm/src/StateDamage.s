@@ -168,9 +168,9 @@ __dt__Q53scn4step5enemy8rollball11StateDamageFv:
 __vt__Q53scn4step5enemy8rollball11StateDamage:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy8rollball11StateDamageFv
-	.byte4 procAnim__Q53scn4step5enemy8rollball11StateDamageFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy8rollball11StateDamageFv
+	.4byte procAnim__Q53scn4step5enemy8rollball11StateDamageFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -150,7 +150,7 @@ $$251679:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2:
-	.byte4 $$251709
+	.4byte $$251709
 .global $$251840
 $$251840:
 	.4byte 0x4D617000
@@ -158,7 +158,7 @@ $$251840:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2:
-	.byte4 $$251679
+	.4byte $$251679
 .global $$251825
 $$251825:
 	.4byte 0x4D617000

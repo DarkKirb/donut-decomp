@@ -1403,92 +1403,92 @@ $$254558:
 $$254663:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getZY__Q33hel4math7Vector3CFv
+	.4byte getZY__Q33hel4math7Vector3CFv
 .global $$254702
 $$254702:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getZX__Q33hel4math7Vector3CFv
+	.4byte getZX__Q33hel4math7Vector3CFv
 .global $$254710
 $$254710:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getYZ__Q33hel4math7Vector3CFv
+	.4byte getYZ__Q33hel4math7Vector3CFv
 .global $$254718
 $$254718:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getYX__Q33hel4math7Vector3CFv
+	.4byte getYX__Q33hel4math7Vector3CFv
 .global $$254726
 $$254726:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getXZ__Q33hel4math7Vector3CFv
+	.4byte getXZ__Q33hel4math7Vector3CFv
 .global $$254734
 $$254734:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 getXY__Q33hel4math7Vector3CFv
+	.4byte getXY__Q33hel4math7Vector3CFv
 .global $$254742
 $$254742:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __dv__Q33hel4math7Vector3CFf
+	.4byte __dv__Q33hel4math7Vector3CFf
 .global $$254772
 $$254772:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __ml__Q33hel4math7Vector3CFf
+	.4byte __ml__Q33hel4math7Vector3CFf
 .global $$254782
 $$254782:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+	.4byte __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 .global $$254806
 $$254806:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+	.4byte __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 .global $$254820
 $$254820:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __adv__Q33hel4math7Vector3Ff
+	.4byte __adv__Q33hel4math7Vector3Ff
 .global $$254828
 $$254828:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __amu__Q33hel4math7Vector3Ff
+	.4byte __amu__Q33hel4math7Vector3Ff
 .global $$254833
 $$254833:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+	.4byte __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 .global $$254841
 $$254841:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+	.4byte __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 .global $$254846
 $$254846:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZero__Q33hel4math7Vector3CFv
+	.4byte isZero__Q33hel4math7Vector3CFv
 .global $$254875
 $$254875:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZeroStrict__Q33hel4math7Vector3CFv
+	.4byte isZeroStrict__Q33hel4math7Vector3CFv
 .global $$254880
 $$254880:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZeroLoose__Q33hel4math7Vector3CFf
+	.4byte isZeroLoose__Q33hel4math7Vector3CFf
 .global $$254904
 $$254904:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 set__Q33hel4math7Vector3Ffff
+	.4byte set__Q33hel4math7Vector3Ffff
 	.asciz "Assertion failed.\n"
 	.balign 4
 	.asciz "MintFuncProxy.hpp"

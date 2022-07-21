@@ -673,9 +673,9 @@ lbl_803D8FF0:
 __vt__Q43scn4step4boss9SuperStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4boss9SuperStopFv
-	.byte4 onSuperStopStarted__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
-	.byte4 onSuperStopFinished__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte __dt__Q43scn4step4boss9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step4boss9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -683,9 +683,9 @@ __vt__Q43scn4step4boss9SuperStop:
 __vt__Q43scn4step5enemy9SuperStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step5enemy9SuperStopFv
-	.byte4 onSuperStopStarted__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
-	.byte4 onSuperStopFinished__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte __dt__Q43scn4step5enemy9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step5enemy9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -693,9 +693,9 @@ __vt__Q43scn4step5enemy9SuperStop:
 __vt__Q43scn4step7gimmick9SuperStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step7gimmick9SuperStopFv
-	.byte4 onSuperStopStarted__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
-	.byte4 onSuperStopFinished__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte __dt__Q43scn4step7gimmick9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -703,9 +703,9 @@ __vt__Q43scn4step7gimmick9SuperStop:
 __vt__Q43scn4step4item9SuperStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4item9SuperStopFv
-	.byte4 onSuperStopStarted__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
-	.byte4 onSuperStopFinished__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte __dt__Q43scn4step4item9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -713,7 +713,7 @@ __vt__Q43scn4step4item9SuperStop:
 __vt__Q43scn4step6weapon9SuperStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step6weapon9SuperStopFv
-	.byte4 onSuperStopStarted__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
-	.byte4 onSuperStopFinished__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte __dt__Q43scn4step6weapon9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step6weapon9SuperStopFRCQ43scn4step6spstop7Manager
 	.4byte 0

@@ -600,7 +600,7 @@ $$250548:
 __vt__Q23snd12SoundManager:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23snd12SoundManagerFv
+	.4byte __dt__Q23snd12SoundManagerFv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

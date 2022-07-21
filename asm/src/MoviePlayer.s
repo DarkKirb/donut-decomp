@@ -924,10 +924,10 @@ $$250331:
 	.4byte 0x3F800000
 .global $$249607
 $$249607:
-	.byte4 MoDebug__3movFPvPCc
+	.4byte MoDebug__3movFPvPCc
 .global lbl_8055FC14
 lbl_8055FC14:
-	.byte4 MoError__3movFPvPCc
+	.4byte MoError__3movFPvPCc
 .global $$250385
 $$250385:
 	.4byte 0x3B800000

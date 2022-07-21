@@ -103,11 +103,11 @@ $$28430:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$28324
 $$28324:
-	.byte4 release__Q43std3tr16detail25shared_ptr_deleter_commonFv
+	.4byte release__Q43std3tr16detail25shared_ptr_deleter_commonFv
 	.4byte 0x00000078
-	.byte4 $$28323
+	.4byte $$28323
 .global $$28431
 $$28431:
-	.byte4 __dt__Q33std3tr114function$$0Fv_v$$1Fv
+	.4byte __dt__Q33std3tr114function$$0Fv_v$$1Fv
 	.4byte 0x000000A0
-	.byte4 $$28430
+	.4byte $$28430

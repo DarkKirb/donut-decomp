@@ -262,9 +262,9 @@ onEnd__Q43scn4step6weapon15HitStopCallbackFv:
 __vt__Q43scn4step4boss15HitStopCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4boss15HitStopCallbackFv
-	.byte4 onStart__Q43scn4step4boss15HitStopCallbackFv
-	.byte4 onEnd__Q43scn4step4boss15HitStopCallbackFv
+	.4byte __dt__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onStart__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step4boss15HitStopCallbackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -272,9 +272,9 @@ __vt__Q43scn4step4boss15HitStopCallback:
 __vt__Q43scn4step5enemy15HitStopCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step5enemy15HitStopCallbackFv
-	.byte4 onStart__Q43scn4step5enemy15HitStopCallbackFv
-	.byte4 onEnd__Q43scn4step5enemy15HitStopCallbackFv
+	.4byte __dt__Q43scn4step5enemy15HitStopCallbackFv
+	.4byte onStart__Q43scn4step5enemy15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step5enemy15HitStopCallbackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -282,9 +282,9 @@ __vt__Q43scn4step5enemy15HitStopCallback:
 __vt__Q43scn4step4hero15HitStopCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4hero15HitStopCallbackFv
-	.byte4 onStart__Q43scn4step4hero15HitStopCallbackFv
-	.byte4 onEnd__Q43scn4step4hero15HitStopCallbackFv
+	.4byte __dt__Q43scn4step4hero15HitStopCallbackFv
+	.4byte onStart__Q43scn4step4hero15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step4hero15HitStopCallbackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -292,7 +292,7 @@ __vt__Q43scn4step4hero15HitStopCallback:
 __vt__Q43scn4step6weapon15HitStopCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step6weapon15HitStopCallbackFv
-	.byte4 onStart__Q43scn4step6weapon15HitStopCallbackFv
-	.byte4 onEnd__Q43scn4step6weapon15HitStopCallbackFv
+	.4byte __dt__Q43scn4step6weapon15HitStopCallbackFv
+	.4byte onStart__Q43scn4step6weapon15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step6weapon15HitStopCallbackFv
 	.4byte 0

@@ -92,7 +92,7 @@ __sinit_$$3MovieKindUtil_cpp:
 /* 801CEDA8 001CABE8  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MovieKindUtil_cpp
+	.4byte __sinit_$$3MovieKindUtil_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
@@ -193,82 +193,82 @@ $$248751:
 	.balign 4
 .global MOVIE_INFO_TABLE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2
 MOVIE_INFO_TABLE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
-	.byte4 $$248726
+	.4byte $$248726
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248728
+	.4byte $$248728
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248729
+	.4byte $$248729
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248730
+	.4byte $$248730
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248731
+	.4byte $$248731
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248732
+	.4byte $$248732
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248733
+	.4byte $$248733
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248734
+	.4byte $$248734
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248735
+	.4byte $$248735
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248736
+	.4byte $$248736
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248737
+	.4byte $$248737
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248738
+	.4byte $$248738
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248739
+	.4byte $$248739
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248740
+	.4byte $$248740
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248741
+	.4byte $$248741
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248742
+	.4byte $$248742
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248743
+	.4byte $$248743
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248744
+	.4byte $$248744
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248745
+	.4byte $$248745
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248746
+	.4byte $$248746
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248747
+	.4byte $$248747
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248748
+	.4byte $$248748
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248749
+	.4byte $$248749
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248750
+	.4byte $$248750
 	.4byte 0x3F800000
 	.4byte 0
-	.byte4 $$248751
+	.4byte $$248751
 	.4byte 0x3F800000
 	.4byte 0
 

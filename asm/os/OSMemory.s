@@ -606,7 +606,7 @@ lbl_80022B44:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.byte4 OnShutdown
+	.4byte OnShutdown
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0

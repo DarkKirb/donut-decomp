@@ -430,8 +430,8 @@ lbl_803D37C4:
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
-	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q24util28StateFactory$$0Q24util6IState$$1
 __vt__Q24util28StateFactory$$0Q24util6IState$$1:
 	.4byte 0
@@ -442,25 +442,25 @@ __vt__Q24util28StateFactory$$0Q24util6IState$$1:
 __vt__Q43scn4step4boss10CustomBase:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q43scn4step4boss10CustomBaseCFv
-	.byte4 __dt__Q43scn4step4boss10CustomBaseFv
-	.byte4 onInit__Q43scn4step4boss10CustomBaseFv
-	.byte4 onAppear__Q43scn4step4boss10CustomBaseFv
-	.byte4 onStart__Q43scn4step4boss10CustomBaseFv
-	.byte4 onDamage__Q43scn4step4boss10CustomBaseFv
-	.byte4 onDead__Q43scn4step4boss10CustomBaseFv
-	.byte4 onStateChange__Q43scn4step4boss10CustomBaseFv
-	.byte4 onScriptRequested__Q43scn4step4boss10CustomBaseFv
-	.byte4 onHitStopStart__Q43scn4step4boss10CustomBaseFv
-	.byte4 onHitStopEnd__Q43scn4step4boss10CustomBaseFv
-	.byte4 onObjStopStarted__Q43scn4step4boss10CustomBaseFv
-	.byte4 onObjStopFinished__Q43scn4step4boss10CustomBaseFv
-	.byte4 onProcAnim__Q43scn4step4boss10CustomBaseFv
-	.byte4 onProcMove__Q43scn4step4boss10CustomBaseFv
-	.byte4 onProcFixPos__Q43scn4step4boss10CustomBaseFv
-	.byte4 onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
-	.byte4 onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
-	.byte4 getFirstOffs__Q43scn4step4boss10CustomBaseCFv
+	.4byte GetRuntimeTypeInfo__Q43scn4step4boss10CustomBaseCFv
+	.4byte __dt__Q43scn4step4boss10CustomBaseFv
+	.4byte onInit__Q43scn4step4boss10CustomBaseFv
+	.4byte onAppear__Q43scn4step4boss10CustomBaseFv
+	.4byte onStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onDamage__Q43scn4step4boss10CustomBaseFv
+	.4byte onDead__Q43scn4step4boss10CustomBaseFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcMove__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -468,27 +468,27 @@ __vt__Q43scn4step4boss10CustomBase:
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q43scn4step5enemy10CustomBase
 __vt__Q43scn4step5enemy10CustomBase:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q43scn4step5enemy10CustomBaseCFv
-	.byte4 __dt__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onInit__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onVacuumResist__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onDamaged__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onInWater__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onOutWater__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onRecover__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onCaptured__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onDead__Q43scn4step5enemy10CustomBaseFv
-	.byte4 onProcFixPos__Q43scn4step5enemy10CustomBaseFv
-	.byte4 reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
-	.byte4 setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte GetRuntimeTypeInfo__Q43scn4step5enemy10CustomBaseCFv
+	.4byte __dt__Q43scn4step5enemy10CustomBaseFv
+	.4byte onInit__Q43scn4step5enemy10CustomBaseFv
+	.4byte onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -496,11 +496,11 @@ __vt__Q43scn4step5enemy10CustomBase:
 __vt__Q43scn4step6weapon10CustomBase:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
-	.byte4 __dt__Q43scn4step6weapon10CustomBaseFv
-	.byte4 onInit__Q43scn4step6weapon10CustomBaseFv
-	.byte4 onDead__Q43scn4step6weapon10CustomBaseFv
-	.byte4 reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte __dt__Q43scn4step6weapon10CustomBaseFv
+	.4byte onInit__Q43scn4step6weapon10CustomBaseFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

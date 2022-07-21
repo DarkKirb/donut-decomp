@@ -90,5 +90,5 @@ request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo:
 __vt__Q36effect6detail22G3DAutoReqAnimCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q36effect6detail22G3DAutoReqAnimCallbackFv
-	.byte4 request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo
+	.4byte __dt__Q36effect6detail22G3DAutoReqAnimCallbackFv
+	.4byte request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo

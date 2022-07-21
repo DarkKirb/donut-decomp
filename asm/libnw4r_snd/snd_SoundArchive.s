@@ -516,7 +516,7 @@ lbl_8010FCD8:
 __vt__Q34nw4r3snd12SoundArchive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r3snd12SoundArchiveFv
+	.4byte __dt__Q34nw4r3snd12SoundArchiveFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

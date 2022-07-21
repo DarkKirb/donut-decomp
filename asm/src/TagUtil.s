@@ -272,13 +272,13 @@ onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc:
 __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp:
 	.4byte 0
 	.4byte 0
-	.byte4 onStartTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUsUsPUc
-	.byte4 onEndTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUs
-	.byte4 onNormalChar__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFw
+	.4byte onStartTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFw
 .global __vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp
 __vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp:
 	.4byte 0
 	.4byte 0
-	.byte4 onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc
-	.byte4 onEndTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUs
-	.byte4 onNormalChar__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFw
+	.4byte onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFw

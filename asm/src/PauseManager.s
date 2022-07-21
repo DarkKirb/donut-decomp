@@ -146,5 +146,5 @@ lbl_80277988:
 __vt__Q43scn4step4core12PauseManager:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4core12PauseManagerFv
-	.byte4 onResultDecided__Q43scn4step4core12PauseManagerFRCQ25pause5Pause
+	.4byte __dt__Q43scn4step4core12PauseManagerFv
+	.4byte onResultDecided__Q43scn4step4core12PauseManagerFRCQ25pause5Pause

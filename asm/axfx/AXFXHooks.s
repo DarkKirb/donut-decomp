@@ -36,7 +36,7 @@ AXFXGetHooks:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __AXFXAlloc
 __AXFXAlloc:
-	.byte4 __AXFXAllocFunction
+	.4byte __AXFXAllocFunction
 .global __AXFXFree
 __AXFXFree:
-	.byte4 __AXFXFreeFunction
+	.4byte __AXFXFreeFunction

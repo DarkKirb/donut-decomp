@@ -18,11 +18,11 @@ LytResPathPage__Q25pause8ConstantFQ25pause11PageResKind:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PAGE_RES_PATH__Q25pause22$$2unnamed$$2Constant_cpp$$2
 T_PAGE_RES_PATH__Q25pause22$$2unnamed$$2Constant_cpp$$2:
-	.byte4 $$248724
-	.byte4 $$248725
-	.byte4 $$248725
-	.byte4 $$248725
-	.byte4 $$248725
+	.4byte $$248724
+	.4byte $$248725
+	.4byte $$248725
+	.4byte $$248725
+	.4byte $$248725
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

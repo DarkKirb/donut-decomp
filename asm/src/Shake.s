@@ -109,17 +109,17 @@ T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 .global T_TABLE__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_TABLE__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 	.4byte 0x00000002
-	.byte4 T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 	.4byte 0x00000002
-	.byte4 T_SHAKE_OFFS_TABLE_SS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_SS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 	.4byte 0x00000004
-	.byte4 T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 	.4byte 0x00000004
-	.byte4 T_SHAKE_OFFS_TABLE_M__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_M__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 	.4byte 0x00000006
-	.byte4 T_SHAKE_OFFS_TABLE_L__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_L__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 	.4byte 0x0000000C
-	.byte4 T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
+	.4byte T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2

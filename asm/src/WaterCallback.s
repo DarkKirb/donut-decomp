@@ -64,7 +64,7 @@ lbl_80290B04:
 __vt__Q43scn4step5enemy13WaterCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step5enemy13WaterCallbackFv
-	.byte4 onInWater__Q43scn4step5enemy13WaterCallbackFv
-	.byte4 onOutWater__Q43scn4step5enemy13WaterCallbackFv
+	.4byte __dt__Q43scn4step5enemy13WaterCallbackFv
+	.4byte onInWater__Q43scn4step5enemy13WaterCallbackFv
+	.4byte onOutWater__Q43scn4step5enemy13WaterCallbackFv
 	.4byte 0

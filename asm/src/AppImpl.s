@@ -1560,11 +1560,11 @@ $$24$$2__dt__Q23app7AppImplFv:
 __vt__Q23app7AppImpl:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23app7AppImplFv
-	.byte4 drawerExecDraw__Q23app7AppImplFv
+	.4byte __dt__Q23app7AppImplFv
+	.4byte drawerExecDraw__Q23app7AppImplFv
 	.4byte 0
 	.4byte 0
-	.byte4 $$24$$2__dt__Q23app7AppImplFv
+	.4byte $$24$$2__dt__Q23app7AppImplFv
 .global $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv
 $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv:
 	.asciz "no name class"

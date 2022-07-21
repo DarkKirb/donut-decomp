@@ -231,12 +231,12 @@ lbl_802C8E1C:
 __vt__Q53scn4step5enemy5nruff9StateStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy5nruff9StateStopFv
-	.byte4 procAnim__Q53scn4step5enemy5nruff9StateStopFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy5nruff9StateStopFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy5nruff9StateStopFv
+	.4byte procAnim__Q53scn4step5enemy5nruff9StateStopFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5nruff9StateStopFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256172

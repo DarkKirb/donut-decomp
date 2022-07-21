@@ -540,36 +540,36 @@ __sinit_$$3ut_DvdFileStream_cpp:
 /* 80120E9C 0011CCDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3ut_DvdFileStream_cpp
+	.4byte __sinit_$$3ut_DvdFileStream_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut13DvdFileStream
 __vt__Q34nw4r2ut13DvdFileStream:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 __dt__Q34nw4r2ut13DvdFileStreamFv
-	.byte4 Close__Q34nw4r2ut13DvdFileStreamFv
-	.byte4 Read__Q34nw4r2ut13DvdFileStreamFPvUl
-	.byte4 ReadAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
-	.byte4 Write__Q34nw4r2ut8IOStreamFPCvUl
-	.byte4 WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
-	.byte4 IsBusy__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 CanAsync__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 CanRead__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 CanWrite__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 GetSizeAlign__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 GetSize__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 Seek__Q34nw4r2ut13DvdFileStreamFlUl
-	.byte4 Cancel__Q34nw4r2ut13DvdFileStreamFv
-	.byte4 CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv
-	.byte4 CanSeek__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 CanCancel__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 Tell__Q34nw4r2ut13DvdFileStreamCFv
-	.byte4 Peek__Q34nw4r2ut13DvdFileStreamFPvUl
-	.byte4 PeekAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte GetRuntimeTypeInfo__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte __dt__Q34nw4r2ut13DvdFileStreamFv
+	.4byte Close__Q34nw4r2ut13DvdFileStreamFv
+	.4byte Read__Q34nw4r2ut13DvdFileStreamFPvUl
+	.4byte ReadAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte Write__Q34nw4r2ut8IOStreamFPCvUl
+	.4byte WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte IsBusy__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanAsync__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanRead__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanWrite__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSizeAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSize__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Seek__Q34nw4r2ut13DvdFileStreamFlUl
+	.4byte Cancel__Q34nw4r2ut13DvdFileStreamFv
+	.4byte CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte CanSeek__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanCancel__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Tell__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Peek__Q34nw4r2ut13DvdFileStreamFPvUl
+	.4byte PeekAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

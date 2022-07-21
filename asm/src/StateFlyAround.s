@@ -959,24 +959,24 @@ lbl_802E3E80:
 __vt__Q53scn4step5enemy6pierce14StateFlyAround:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6pierce14StateFlyAroundFv
-	.byte4 procAnim__Q53scn4step5enemy6pierce14StateFlyAroundFv
-	.byte4 procMove__Q53scn4step5enemy6pierce14StateFlyAroundFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy6pierce14StateFlyAroundFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6pierce14StateFlyAroundFv
+	.4byte procAnim__Q53scn4step5enemy6pierce14StateFlyAroundFv
+	.4byte procMove__Q53scn4step5enemy6pierce14StateFlyAroundFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6pierce14StateFlyAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5snowl14StateFlyAround
 __vt__Q53scn4step5enemy5snowl14StateFlyAround:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy5snowl14StateFlyAroundFv
-	.byte4 procAnim__Q53scn4step5enemy5snowl14StateFlyAroundFv
-	.byte4 procMove__Q53scn4step5enemy5snowl14StateFlyAroundFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy5snowl14StateFlyAroundFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procAnim__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procMove__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256372

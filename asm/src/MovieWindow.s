@@ -1994,35 +1994,35 @@ $$252450:
 	.balign 4
 .global MSG_LABEL_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2
 MSG_LABEL_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2:
-	.byte4 $$252429
-	.byte4 $$252430
-	.byte4 $$252431
-	.byte4 $$252432
-	.byte4 $$252429
-	.byte4 $$252433
-	.byte4 $$252434
-	.byte4 $$252435
-	.byte4 $$252436
-	.byte4 $$252437
-	.byte4 $$252438
-	.byte4 $$252439
-	.byte4 $$252429
-	.byte4 $$252429
-	.byte4 $$252440
-	.byte4 $$252441
-	.byte4 $$252442
-	.byte4 $$252429
-	.byte4 $$252443
-	.byte4 $$252444
-	.byte4 $$252445
-	.byte4 $$252446
-	.byte4 $$252429
-	.byte4 $$252447
-	.byte4 $$252429
-	.byte4 $$252448
-	.byte4 $$252449
-	.byte4 $$252450
-	.byte4 $$252429
+	.4byte $$252429
+	.4byte $$252430
+	.4byte $$252431
+	.4byte $$252432
+	.4byte $$252429
+	.4byte $$252433
+	.4byte $$252434
+	.4byte $$252435
+	.4byte $$252436
+	.4byte $$252437
+	.4byte $$252438
+	.4byte $$252439
+	.4byte $$252429
+	.4byte $$252429
+	.4byte $$252440
+	.4byte $$252441
+	.4byte $$252442
+	.4byte $$252429
+	.4byte $$252443
+	.4byte $$252444
+	.4byte $$252445
+	.4byte $$252446
+	.4byte $$252429
+	.4byte $$252447
+	.4byte $$252429
+	.4byte $$252448
+	.4byte $$252449
+	.4byte $$252450
+	.4byte $$252429
 .global $$254931
 $$254931:
 	.asciz "MovieWindow"

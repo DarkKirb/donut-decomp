@@ -181,12 +181,12 @@ $$254952:
 $$254954:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setVisibility__Q28mintglue22Scn__GrandTitle__BlockFb
+	.4byte setVisibility__Q28mintglue22Scn__GrandTitle__BlockFb
 .global $$254989
 $$254989:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setVacuumed__Q28mintglue22Scn__GrandTitle__BlockFfi
+	.4byte setVacuumed__Q28mintglue22Scn__GrandTitle__BlockFfi
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv:
 	.asciz "MintPtr is 0."

@@ -51,19 +51,19 @@ bta_dm_pm_md:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global p_bta_dm_rm_cfg
 p_bta_dm_rm_cfg:
-	.byte4 bta_dm_rm_cfg
+	.4byte bta_dm_rm_cfg
 .global p_bta_dm_compress_cfg
 p_bta_dm_compress_cfg:
-	.byte4 bta_dm_compress_cfg
+	.4byte bta_dm_compress_cfg
 .global p_bta_dm_pm_cfg
 p_bta_dm_pm_cfg:
-	.byte4 bta_dm_pm_cfg
+	.4byte bta_dm_pm_cfg
 .global p_bta_dm_pm_spec
 p_bta_dm_pm_spec:
-	.byte4 bta_dm_pm_spec
+	.4byte bta_dm_pm_spec
 .global p_bta_dm_pm_md
 p_bta_dm_pm_md:
-	.byte4 bta_dm_pm_md
+	.4byte bta_dm_pm_md
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

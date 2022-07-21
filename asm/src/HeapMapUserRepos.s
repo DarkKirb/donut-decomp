@@ -155,7 +155,7 @@ __dt__Q33hel6common55MutableArray$$0PQ44nrel6devkit7heapmap12IHeapMapUser$$4512$
 /* 801BEEB4 001BACF4  4B FB 6C B4 */	b __dt__Q23scn6ISceneFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3HeapMapUserRepos_cpp
+	.4byte __sinit_$$3HeapMapUserRepos_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$248741

@@ -46,8 +46,8 @@ __dt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14Stat
 __vt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
-	.byte4 create__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
+	.4byte __dt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
+	.4byte create__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2BodyModel__Q53scn4step4hero9modeldesc5StoneFv$$2desc

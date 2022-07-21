@@ -116,22 +116,22 @@ __DVDPrintFatalMessage:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __DVDErrorMessageDefault
 __DVDErrorMessageDefault:
-	.byte4 $$21462
-	.byte4 $$21463
-	.byte4 $$21464
-	.byte4 $$21465
-	.byte4 $$21466
-	.byte4 $$21467
-	.byte4 $$21468
+	.4byte $$21462
+	.4byte $$21463
+	.4byte $$21464
+	.4byte $$21465
+	.4byte $$21466
+	.4byte $$21467
+	.4byte $$21468
 .global __DVDErrorMessageEurope
 __DVDErrorMessageEurope:
-	.byte4 $$21462
-	.byte4 $$21469
-	.byte4 $$21464
-	.byte4 $$21470
-	.byte4 $$21471
-	.byte4 $$21467
-	.byte4 $$21468
+	.4byte $$21462
+	.4byte $$21469
+	.4byte $$21464
+	.4byte $$21470
+	.4byte $$21471
+	.4byte $$21467
+	.4byte $$21468
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21462
@@ -428,8 +428,8 @@ $$21473:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DVDErrorMessageChinaKorea
 __DVDErrorMessageChinaKorea:
-	.byte4 $$21472
-	.byte4 $$21473
+	.4byte $$21472
+	.4byte $$21473
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21482

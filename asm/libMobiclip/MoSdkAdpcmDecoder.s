@@ -241,20 +241,20 @@ $$22535:
 	.balign 4
 .global __vt__17MoSdkAdpcmDecoder
 __vt__17MoSdkAdpcmDecoder:
-	.byte4 __RTTI__17MoSdkAdpcmDecoder
+	.4byte __RTTI__17MoSdkAdpcmDecoder
 	.4byte 0
-	.byte4 decodeIntoBuffer__17MoSdkAdpcmDecoderFPCUcUlPUsPUl
-	.byte4 getPcmSizeFromPacket__17MoSdkAdpcmDecoderFUl
-	.byte4 __dt__17MoSdkAdpcmDecoderFv
-	.byte4 decode__17MoSdkAudioDecoderFPCUcUl
-	.byte4 seekPerformed__17MoSdkAudioDecoderFv
+	.4byte decodeIntoBuffer__17MoSdkAdpcmDecoderFPCUcUlPUsPUl
+	.4byte getPcmSizeFromPacket__17MoSdkAdpcmDecoderFUl
+	.4byte __dt__17MoSdkAdpcmDecoderFv
+	.4byte decode__17MoSdkAudioDecoderFPCUcUl
+	.4byte seekPerformed__17MoSdkAudioDecoderFv
 .global $$22510
 $$22510:
 	.asciz "MoSdkAdpcmDecoder"
 	.balign 4
 .global $$22511
 $$22511:
-	.byte4 __RTTI__17MoSdkAudioDecoder
+	.4byte __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 .global $$22512
@@ -266,9 +266,9 @@ $$22512:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__17MoSdkAdpcmDecoder
 __RTTI__17MoSdkAdpcmDecoder:
-	.byte4 $$22510
-	.byte4 $$22511
+	.4byte $$22510
+	.4byte $$22511
 .global __RTTI__17MoSdkAudioDecoder
 __RTTI__17MoSdkAudioDecoder:
-	.byte4 $$22512
+	.4byte $$22512
 	.4byte 0

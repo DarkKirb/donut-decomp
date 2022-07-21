@@ -395,15 +395,15 @@ playChoice__Q43scn7history6detail6CursorFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251586
 $$251586:
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251580
-	.byte4 $$251581
-	.byte4 $$251582
-	.byte4 $$251582
-	.byte4 $$251583
-	.byte4 $$251584
-	.byte4 $$251585
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251580
+	.4byte $$251581
+	.4byte $$251582
+	.4byte $$251582
+	.4byte $$251583
+	.4byte $$251584
+	.4byte $$251585
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -419,7 +419,7 @@ $$251582:
 __vt__Q33scn19challengefileselect6Cursor:
 	.4byte 0
 	.4byte 0
-	.byte4 updateFrame__Q33scn19challengefileselect6CursorFv
+	.4byte updateFrame__Q33scn19challengefileselect6CursorFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -459,43 +459,43 @@ $$251555:
 	.asciz "ListButtonN"
 .global PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.byte4 $$251547
-	.byte4 $$251548
-	.byte4 $$251549
-	.byte4 $$251550
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251552
-	.byte4 $$251553
-	.byte4 $$251554
-	.byte4 $$251555
+	.4byte $$251547
+	.4byte $$251548
+	.4byte $$251549
+	.4byte $$251550
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251552
+	.4byte $$251553
+	.4byte $$251554
+	.4byte $$251555
 .global TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.byte4 $$251547
-	.byte4 $$251555
-	.byte4 $$251548
-	.byte4 $$251549
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251555
-	.byte4 $$251552
-	.byte4 $$251552
-	.byte4 $$251552
+	.4byte $$251547
+	.4byte $$251555
+	.4byte $$251548
+	.4byte $$251549
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251555
+	.4byte $$251552
+	.4byte $$251552
+	.4byte $$251552
 .global TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.byte4 $$251547
-	.byte4 $$251555
-	.byte4 $$251548
-	.byte4 $$251549
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251551
-	.byte4 $$251555
-	.byte4 $$251553
-	.byte4 $$251553
-	.byte4 $$251553
+	.4byte $$251547
+	.4byte $$251555
+	.4byte $$251548
+	.4byte $$251549
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251551
+	.4byte $$251555
+	.4byte $$251553
+	.4byte $$251553
+	.4byte $$251553
 .global $$252454
 $$252454:
 	.asciz "history/Detail"

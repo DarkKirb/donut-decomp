@@ -948,72 +948,72 @@ $$256068:
 $$256070:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv
+	.4byte isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256126
 $$256126:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setLoopAnim__Q28mintglue22Scn__GrandTitle__CharaFPCcPCc
+	.4byte setLoopAnim__Q28mintglue22Scn__GrandTitle__CharaFPCcPCc
 .global $$256131
 $$256131:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 stopWalkSE__Q28mintglue22Scn__GrandTitle__CharaFv
+	.4byte stopWalkSE__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256139
 $$256139:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 requestWalkSE__Q28mintglue22Scn__GrandTitle__CharaFUlUli
+	.4byte requestWalkSE__Q28mintglue22Scn__GrandTitle__CharaFUlUli
 .global $$256142
 $$256142:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 flashReset__Q28mintglue22Scn__GrandTitle__CharaFv
+	.4byte flashReset__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256147
 $$256147:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 flashStart__Q28mintglue22Scn__GrandTitle__CharaFUl
+	.4byte flashStart__Q28mintglue22Scn__GrandTitle__CharaFUl
 .global $$256150
 $$256150:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setBlockVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
+	.4byte setBlockVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 .global $$256158
 $$256158:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
+	.4byte setVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 .global $$256163
 $$256163:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 resetEffect__Q28mintglue22Scn__GrandTitle__CharaFv
+	.4byte resetEffect__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256168
 $$256168:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 effectWarpRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+	.4byte effectWarpRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256176
 $$256176:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 effectForeRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+	.4byte effectForeRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256181
 $$256181:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 effectRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+	.4byte effectRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
 .global $$256186
 $$256186:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isAnimLooped__Q28mintglue22Scn__GrandTitle__CharaFv
+	.4byte isAnimLooped__Q28mintglue22Scn__GrandTitle__CharaFv
 .global $$256191
 $$256191:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 changeAnim__Q28mintglue22Scn__GrandTitle__CharaFPCci
+	.4byte changeAnim__Q28mintglue22Scn__GrandTitle__CharaFPCci
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv:
 	.asciz "MintPtr is 0."

@@ -243,9 +243,9 @@ lbl_8025D7B0:
 __vt__Q53scn4step4boss6whispy14StateFallEnemy:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy14StateFallEnemyFv
-	.byte4 procAnim__Q53scn4step4boss6whispy14StateFallEnemyFv
-	.byte4 procMove__Q53scn4step4boss6whispy14StateFallEnemyFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy14StateFallEnemyFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6whispy14StateFallEnemyFv
+	.4byte procAnim__Q53scn4step4boss6whispy14StateFallEnemyFv
+	.4byte procMove__Q53scn4step4boss6whispy14StateFallEnemyFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy14StateFallEnemyFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

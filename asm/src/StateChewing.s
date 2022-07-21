@@ -193,15 +193,15 @@ __dt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10Stat
 __vt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
-	.byte4 create__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.4byte create__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6whispy10StateVomit$$4PQ43scn4step4boss4Boss$$4b$$1Fv
 .global __vt__Q53scn4step4boss6whispy12StateChewing
 __vt__Q53scn4step4boss6whispy12StateChewing:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy12StateChewingFv
-	.byte4 procAnim__Q53scn4step4boss6whispy12StateChewingFv
-	.byte4 procMove__Q53scn4step4boss6whispy12StateChewingFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy12StateChewingFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6whispy12StateChewingFv
+	.4byte procAnim__Q53scn4step4boss6whispy12StateChewingFv
+	.4byte procMove__Q53scn4step4boss6whispy12StateChewingFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy12StateChewingFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -861,24 +861,24 @@ kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$255380
 $$255380:
-	.byte4 $$255367
-	.byte4 $$255368
-	.byte4 $$255369
-	.byte4 $$255370
-	.byte4 $$255371
-	.byte4 $$255372
-	.byte4 $$255373
-	.byte4 $$255374
-	.byte4 $$255375
-	.byte4 $$255376
-	.byte4 $$255377
-	.byte4 $$255378
-	.byte4 $$255379
+	.4byte $$255367
+	.4byte $$255368
+	.4byte $$255369
+	.4byte $$255370
+	.4byte $$255371
+	.4byte $$255372
+	.4byte $$255373
+	.4byte $$255374
+	.4byte $$255375
+	.4byte $$255376
+	.4byte $$255377
+	.4byte $$255378
+	.4byte $$255379
 .global $$255490
 $$255490:
-	.byte4 $$255487
-	.byte4 $$255488
-	.byte4 $$255489
+	.4byte $$255487
+	.4byte $$255488
+	.4byte $$255489
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256036
@@ -992,25 +992,25 @@ $$256299:
 __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMaster:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
-	.byte4 init__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 registerToRoot__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
-	.byte4 registerToRootCharaBack__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
-	.byte4 registerToRootCharaFront__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
-	.byte4 procAnim__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 startUnlockDemo__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 endUnlockDemo__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 unsetZoomAll__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 unlockAnim__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
-	.byte4 canEnter__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
-	.byte4 isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
-	.byte4 getEnterDistX__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
-	.byte4 getEnterDistY__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
-	.byte4 modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
-	.byte4 reqDoorOpenSE__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
-	.byte4 reqDoorCloseSE__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte __dt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
+	.4byte init__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte registerToRoot__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
+	.4byte registerToRootCharaBack__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
+	.4byte registerToRootCharaFront__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRQ23g3d4Root
+	.4byte procAnim__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte startUnlockDemo__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte endUnlockDemo__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte unsetZoomAll__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte unlockAnim__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
+	.4byte canEnter__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
+	.4byte isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.4byte getEnterDistX__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
+	.4byte getEnterDistY__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv
+	.4byte modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.4byte reqDoorOpenSE__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
+	.4byte reqDoorCloseSE__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"
@@ -1055,7 +1055,7 @@ $$256158:
 	.4byte 0
 .global $$255480
 $$255480:
-	.byte4 $$255478
+	.4byte $$255478
 .global lbl_805627C4
 lbl_805627C4:
-	.byte4 $$255479
+	.4byte $$255479

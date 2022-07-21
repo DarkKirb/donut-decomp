@@ -3078,8 +3078,8 @@ requestEfConfetti__Q33scn11staffcredit9CommanderFv:
 /* 803F95DC 003F541C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Commander_cpp
-	.byte4 __sinit_$$3Commander_cpp
+	.4byte __sinit_$$3Commander_cpp
+	.4byte __sinit_$$3Commander_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_RETRY_HP_RATE_TABLE__Q43scn4step4boss23$$2unnamed$$2Commander_cpp$$2

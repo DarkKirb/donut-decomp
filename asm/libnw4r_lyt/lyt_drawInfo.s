@@ -48,7 +48,7 @@ __dt__Q34nw4r3lyt8DrawInfoFv:
 __vt__Q34nw4r3lyt8DrawInfo:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r3lyt8DrawInfoFv
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -492,13 +492,13 @@ $$252720:
 __vt__Q33scn14challengetitle19SceneChallengeTitle:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn14challengetitle19SceneChallengeTitleCFv
-	.byte4 __dt__Q33scn14challengetitle19SceneChallengeTitleFv
-	.byte4 updateMain__Q33scn14challengetitle19SceneChallengeTitleFv
-	.byte4 updateUseGPU__Q33scn14challengetitle19SceneChallengeTitleFv
-	.byte4 updateDebug__Q33scn14challengetitle19SceneChallengeTitleFv
-	.byte4 draw__Q33scn14challengetitle19SceneChallengeTitleFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn14challengetitle19SceneChallengeTitleCFv
+	.4byte GetRuntimeTypeInfo__Q33scn14challengetitle19SceneChallengeTitleCFv
+	.4byte __dt__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateMain__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateUseGPU__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateDebug__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte draw__Q33scn14challengetitle19SceneChallengeTitleFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn14challengetitle19SceneChallengeTitleCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

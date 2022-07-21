@@ -10034,30 +10034,30 @@ $$29524:
 	.balign 4
 .global scCursorLytName__Q210homebutton10HomeButton
 scCursorLytName__Q210homebutton10HomeButton:
-	.byte4 $$29521
-	.byte4 $$29522
-	.byte4 $$29523
-	.byte4 $$29524
+	.4byte $$29521
+	.4byte $$29522
+	.4byte $$29523
+	.4byte $$29524
 .global $$29525
 $$29525:
 	.asciz "N_Trans"
 .global scCursorPaneName__Q210homebutton10HomeButton
 scCursorPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29525
+	.4byte $$29525
 .global $$29526
 $$29526:
 	.asciz "N_Rot"
 	.balign 4
 .global scCursorRotPaneName__Q210homebutton10HomeButton
 scCursorRotPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29526
+	.4byte $$29526
 .global $$29527
 $$29527:
 	.asciz "N_SRot"
 	.balign 4
 .global scCursorSRotPaneName__Q210homebutton10HomeButton
 scCursorSRotPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29527
+	.4byte $$29527
 .global $$29528
 $$29528:
 	.asciz "B_btnL_00"
@@ -10072,9 +10072,9 @@ $$29530:
 	.balign 4
 .global scBtnName__Q210homebutton10HomeButton
 scBtnName__Q210homebutton10HomeButton:
-	.byte4 $$29528
-	.byte4 $$29529
-	.byte4 $$29530
+	.4byte $$29528
+	.4byte $$29529
+	.4byte $$29530
 	.4byte 0
 .global $$29531
 $$29531:
@@ -10091,9 +10091,9 @@ $$29533:
 	.4byte 0
 .global scTxtName__Q210homebutton10HomeButton
 scTxtName__Q210homebutton10HomeButton:
-	.byte4 $$29531
-	.byte4 $$29532
-	.byte4 $$29533
+	.4byte $$29531
+	.4byte $$29532
+	.4byte $$29533
 	.4byte 0
 .global $$29534
 $$29534:
@@ -10125,14 +10125,14 @@ $$29541:
 	.asciz "btnL_11_psh"
 .global scGrName__Q210homebutton10HomeButton
 scGrName__Q210homebutton10HomeButton:
-	.byte4 $$29534
-	.byte4 $$29535
-	.byte4 $$29536
-	.byte4 $$29537
-	.byte4 $$29538
-	.byte4 $$29539
-	.byte4 $$29540
-	.byte4 $$29541
+	.4byte $$29534
+	.4byte $$29535
+	.4byte $$29536
+	.4byte $$29537
+	.4byte $$29538
+	.4byte $$29539
+	.4byte $$29540
+	.4byte $$29541
 .global $$29542
 $$29542:
 	.asciz "_cntBtn_in.brlan"
@@ -10147,9 +10147,9 @@ $$29544:
 	.balign 4
 .global scAnimName__Q210homebutton10HomeButton
 scAnimName__Q210homebutton10HomeButton:
-	.byte4 $$29542
-	.byte4 $$29543
-	.byte4 $$29544
+	.4byte $$29542
+	.4byte $$29543
+	.4byte $$29544
 .global $$29545
 $$29545:
 	.asciz "_ltrIcn_on.brlan"
@@ -10207,21 +10207,21 @@ $$29559:
 	.asciz "_12btn_on.brlan"
 .global scPairGroupAnimName__Q210homebutton10HomeButton
 scPairGroupAnimName__Q210homebutton10HomeButton:
-	.byte4 $$29545
-	.byte4 $$29546
-	.byte4 $$29547
-	.byte4 $$29548
-	.byte4 $$29549
-	.byte4 $$29550
-	.byte4 $$29551
-	.byte4 $$29552
-	.byte4 $$29553
-	.byte4 $$29554
-	.byte4 $$29555
-	.byte4 $$29556
-	.byte4 $$29557
-	.byte4 $$29558
-	.byte4 $$29559
+	.4byte $$29545
+	.4byte $$29546
+	.4byte $$29547
+	.4byte $$29548
+	.4byte $$29549
+	.4byte $$29550
+	.4byte $$29551
+	.4byte $$29552
+	.4byte $$29553
+	.4byte $$29554
+	.4byte $$29555
+	.4byte $$29556
+	.4byte $$29557
+	.4byte $$29558
+	.4byte $$29559
 .global $$29560
 $$29560:
 	.asciz "ltrIcn_on"
@@ -10282,21 +10282,21 @@ $$29574:
 	.balign 4
 .global scPairGroupName__Q210homebutton10HomeButton
 scPairGroupName__Q210homebutton10HomeButton:
-	.byte4 $$29560
-	.byte4 $$29561
-	.byte4 $$29562
-	.byte4 $$29563
-	.byte4 $$29564
-	.byte4 $$29565
-	.byte4 $$29566
-	.byte4 $$29567
-	.byte4 $$29568
-	.byte4 $$29569
-	.byte4 $$29570
-	.byte4 $$29571
-	.byte4 $$29572
-	.byte4 $$29573
-	.byte4 $$29574
+	.4byte $$29560
+	.4byte $$29561
+	.4byte $$29562
+	.4byte $$29563
+	.4byte $$29564
+	.4byte $$29565
+	.4byte $$29566
+	.4byte $$29567
+	.4byte $$29568
+	.4byte $$29569
+	.4byte $$29570
+	.4byte $$29571
+	.4byte $$29572
+	.4byte $$29573
+	.4byte $$29574
 .global $$29575
 $$29575:
 	.asciz "_hmMenu_strt.brlan"
@@ -10382,28 +10382,28 @@ $$29596:
 	.asciz "_btry_red.brlan"
 .global scGroupAnimName__Q210homebutton10HomeButton
 scGroupAnimName__Q210homebutton10HomeButton:
-	.byte4 $$29575
-	.byte4 $$29576
-	.byte4 $$29577
-	.byte4 $$29578
-	.byte4 $$29579
-	.byte4 $$29580
-	.byte4 $$29581
-	.byte4 $$29582
-	.byte4 $$29583
-	.byte4 $$29584
-	.byte4 $$29585
-	.byte4 $$29586
-	.byte4 $$29587
-	.byte4 $$29588
-	.byte4 $$29589
-	.byte4 $$29590
-	.byte4 $$29591
-	.byte4 $$29592
-	.byte4 $$29593
-	.byte4 $$29594
-	.byte4 $$29595
-	.byte4 $$29596
+	.4byte $$29575
+	.4byte $$29576
+	.4byte $$29577
+	.4byte $$29578
+	.4byte $$29579
+	.4byte $$29580
+	.4byte $$29581
+	.4byte $$29582
+	.4byte $$29583
+	.4byte $$29584
+	.4byte $$29585
+	.4byte $$29586
+	.4byte $$29587
+	.4byte $$29588
+	.4byte $$29589
+	.4byte $$29590
+	.4byte $$29591
+	.4byte $$29592
+	.4byte $$29593
+	.4byte $$29594
+	.4byte $$29595
+	.4byte $$29596
 .global $$29597
 $$29597:
 	.asciz "hmMenu_strt"
@@ -10538,41 +10538,41 @@ $$29631:
 	.asciz "plyr_03"
 .global scGroupName__Q210homebutton10HomeButton
 scGroupName__Q210homebutton10HomeButton:
-	.byte4 $$29597
-	.byte4 $$29598
-	.byte4 $$29599
-	.byte4 $$29600
-	.byte4 $$29601
-	.byte4 $$29602
-	.byte4 $$29603
-	.byte4 $$29604
-	.byte4 $$29605
-	.byte4 $$29606
-	.byte4 $$29607
-	.byte4 $$29608
-	.byte4 $$29609
-	.byte4 $$29610
-	.byte4 $$29611
-	.byte4 $$29612
-	.byte4 $$29613
-	.byte4 $$29614
-	.byte4 $$29615
-	.byte4 $$29616
-	.byte4 $$29617
-	.byte4 $$29618
-	.byte4 $$29619
-	.byte4 $$29620
-	.byte4 $$29621
-	.byte4 $$29622
-	.byte4 $$29623
-	.byte4 $$29624
-	.byte4 $$29625
-	.byte4 $$29626
-	.byte4 $$29627
-	.byte4 $$29628
-	.byte4 $$29629
-	.byte4 $$29630
-	.byte4 $$29631
+	.4byte $$29597
+	.4byte $$29598
+	.4byte $$29599
+	.4byte $$29600
+	.4byte $$29601
+	.4byte $$29602
+	.4byte $$29603
+	.4byte $$29604
+	.4byte $$29605
+	.4byte $$29606
+	.4byte $$29607
+	.4byte $$29608
+	.4byte $$29609
+	.4byte $$29610
+	.4byte $$29611
+	.4byte $$29612
+	.4byte $$29613
+	.4byte $$29614
+	.4byte $$29615
+	.4byte $$29616
+	.4byte $$29617
+	.4byte $$29618
+	.4byte $$29619
+	.4byte $$29620
+	.4byte $$29621
+	.4byte $$29622
+	.4byte $$29623
+	.4byte $$29624
+	.4byte $$29625
+	.4byte $$29626
+	.4byte $$29627
+	.4byte $$29628
+	.4byte $$29629
+	.4byte $$29630
+	.4byte $$29631
 .global $$29632
 $$29632:
 	.asciz "let_icn_00"
@@ -10595,11 +10595,11 @@ $$29636:
 	.balign 4
 .global scFuncPaneName__Q210homebutton10HomeButton
 scFuncPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29632
-	.byte4 $$29633
-	.byte4 $$29634
-	.byte4 $$29635
-	.byte4 $$29636
+	.4byte $$29632
+	.4byte $$29633
+	.4byte $$29634
+	.4byte $$29635
+	.4byte $$29636
 .global $$29637
 $$29637:
 	.asciz "B_btn_00"
@@ -10642,16 +10642,16 @@ $$29646:
 	.balign 4
 .global scFuncTouchPaneName__Q210homebutton10HomeButton
 scFuncTouchPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29637
-	.byte4 $$29638
-	.byte4 $$29639
-	.byte4 $$29640
-	.byte4 $$29641
-	.byte4 $$29642
-	.byte4 $$29643
-	.byte4 $$29644
-	.byte4 $$29645
-	.byte4 $$29646
+	.4byte $$29637
+	.4byte $$29638
+	.4byte $$29639
+	.4byte $$29640
+	.4byte $$29641
+	.4byte $$29642
+	.4byte $$29643
+	.4byte $$29644
+	.4byte $$29645
+	.4byte $$29646
 .global $$29647
 $$29647:
 	.asciz "T_msg_00"
@@ -10666,9 +10666,9 @@ $$29649:
 	.balign 4
 .global scFuncTextPaneName__Q210homebutton10HomeButton
 scFuncTextPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29647
-	.byte4 $$29648
-	.byte4 $$29649
+	.4byte $$29647
+	.4byte $$29648
+	.4byte $$29649
 .global $$29650
 $$29650:
 	.asciz "btryPwr_00_0"
@@ -10735,22 +10735,22 @@ $$29665:
 	.balign 4
 .global scBatteryPaneName__Q210homebutton10HomeButton
 scBatteryPaneName__Q210homebutton10HomeButton:
-	.byte4 $$29650
-	.byte4 $$29651
-	.byte4 $$29652
-	.byte4 $$29653
-	.byte4 $$29654
-	.byte4 $$29655
-	.byte4 $$29656
-	.byte4 $$29657
-	.byte4 $$29658
-	.byte4 $$29659
-	.byte4 $$29660
-	.byte4 $$29661
-	.byte4 $$29662
-	.byte4 $$29663
-	.byte4 $$29664
-	.byte4 $$29665
+	.4byte $$29650
+	.4byte $$29651
+	.4byte $$29652
+	.4byte $$29653
+	.4byte $$29654
+	.4byte $$29655
+	.4byte $$29656
+	.4byte $$29657
+	.4byte $$29658
+	.4byte $$29659
+	.4byte $$29660
+	.4byte $$29661
+	.4byte $$29662
+	.4byte $$29663
+	.4byte $$29664
+	.4byte $$29665
 .global $$216076
 $$216076:
 	.4byte 0x61726300
@@ -10843,36 +10843,36 @@ $$218596:
 	.4byte 0
 .global __vt__Q210homebutton22HomeButtonEventHandler
 __vt__Q210homebutton22HomeButtonEventHandler:
-	.byte4 __RTTI__Q210homebutton22HomeButtonEventHandler
+	.4byte __RTTI__Q210homebutton22HomeButtonEventHandler
 	.4byte 0
-	.byte4 onEvent__Q210homebutton22HomeButtonEventHandlerFUlUlPv
-	.byte4 setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager
+	.4byte onEvent__Q210homebutton22HomeButtonEventHandlerFUlUlPv
+	.4byte setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager
 .global $$211453
 $$211453:
 	.asciz "homebutton::HomeButtonEventHandler"
 	.balign 4
 .global $$211454
 $$211454:
-	.byte4 __RTTI__Q310homebutton3gui12EventHandler
+	.4byte __RTTI__Q310homebutton3gui12EventHandler
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q210homebutton22HomeButtonEventHandler
 __RTTI__Q210homebutton22HomeButtonEventHandler:
-	.byte4 $$211453
-	.byte4 $$211454
+	.4byte $$211453
+	.4byte $$211454
 .global __vt__Q310homebutton3gui12EventHandler
 __vt__Q310homebutton3gui12EventHandler:
-	.byte4 __RTTI__Q310homebutton3gui12EventHandler
+	.4byte __RTTI__Q310homebutton3gui12EventHandler
 	.4byte 0
-	.byte4 onEvent__Q310homebutton3gui12EventHandlerFUlUlPv
-	.byte4 setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager
+	.4byte onEvent__Q310homebutton3gui12EventHandlerFUlUlPv
+	.4byte setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager
 .global $$211456
 $$211456:
 	.asciz "homebutton::gui::EventHandler"
 	.balign 4
 .global __RTTI__Q310homebutton3gui12EventHandler
 __RTTI__Q310homebutton3gui12EventHandler:
-	.byte4 $$211456
+	.4byte $$211456
 	.4byte 0
 	.4byte 0
 	.4byte 0

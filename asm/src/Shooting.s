@@ -44,5 +44,5 @@ __dt__Q53scn4step7gimmick8shooting8ShootingFv:
 __vt__Q53scn4step7gimmick8shooting8Shooting:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step7gimmick8shooting8ShootingFv
+	.4byte __dt__Q53scn4step7gimmick8shooting8ShootingFv
 	.4byte 0

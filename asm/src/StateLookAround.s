@@ -45,9 +45,9 @@ __dt__Q53scn4step5enemy6chilly15StateLookAroundFv:
 __vt__Q53scn4step5enemy6chilly15StateLookAround:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6chilly15StateLookAroundFv
-	.byte4 procAnim__Q53scn4step5enemy6chilly15StateLookAroundFv
-	.byte4 procMove__Q43scn4step5enemy9StateBaseFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy6chilly15StateLookAroundFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6chilly15StateLookAroundFv
+	.4byte procAnim__Q53scn4step5enemy6chilly15StateLookAroundFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6chilly15StateLookAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

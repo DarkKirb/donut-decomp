@@ -609,68 +609,68 @@ lbl_80386268:
 .global T_ABILITY_SET__Q53scn4step4hero3mix28$$2unnamed$$2ShuffleManager_cpp$$2
 T_ABILITY_SET__Q53scn4step4hero3mix28$$2unnamed$$2ShuffleManager_cpp$$2:
 	.4byte 0x00000001
-	.byte4 $$252280
-	.byte4 $$252281
+	.4byte $$252280
+	.4byte $$252281
 	.4byte 0x00000002
-	.byte4 $$252282
-	.byte4 $$252283
+	.4byte $$252282
+	.4byte $$252283
 	.4byte 0x00000003
-	.byte4 $$252284
-	.byte4 $$252285
+	.4byte $$252284
+	.4byte $$252285
 	.4byte 0x00000004
-	.byte4 $$252286
-	.byte4 $$252287
+	.4byte $$252286
+	.4byte $$252287
 	.4byte 0x00000005
-	.byte4 $$252288
-	.byte4 $$252289
+	.4byte $$252288
+	.4byte $$252289
 	.4byte 0x00000006
-	.byte4 $$252290
-	.byte4 $$252291
+	.4byte $$252290
+	.4byte $$252291
 	.4byte 0x00000007
-	.byte4 $$252292
-	.byte4 $$252293
+	.4byte $$252292
+	.4byte $$252293
 	.4byte 0x00000008
-	.byte4 $$252294
-	.byte4 $$252295
+	.4byte $$252294
+	.4byte $$252295
 	.4byte 0x00000009
-	.byte4 $$252296
-	.byte4 $$252297
+	.4byte $$252296
+	.4byte $$252297
 	.4byte 0x0000000A
-	.byte4 $$252298
-	.byte4 $$252299
+	.4byte $$252298
+	.4byte $$252299
 	.4byte 0x0000000B
-	.byte4 $$252300
-	.byte4 $$252301
+	.4byte $$252300
+	.4byte $$252301
 	.4byte 0x0000000C
-	.byte4 $$252302
-	.byte4 $$252303
+	.4byte $$252302
+	.4byte $$252303
 	.4byte 0x0000000D
-	.byte4 $$252304
-	.byte4 $$252305
+	.4byte $$252304
+	.4byte $$252305
 	.4byte 0x0000000E
-	.byte4 $$252306
-	.byte4 $$252307
+	.4byte $$252306
+	.4byte $$252307
 	.4byte 0x0000000F
-	.byte4 $$252308
-	.byte4 $$252309
+	.4byte $$252308
+	.4byte $$252309
 	.4byte 0x00000010
-	.byte4 $$252310
-	.byte4 $$252311
+	.4byte $$252310
+	.4byte $$252311
 	.4byte 0x00000011
-	.byte4 $$252312
-	.byte4 $$252313
+	.4byte $$252312
+	.4byte $$252313
 	.4byte 0x00000012
-	.byte4 $$252314
-	.byte4 $$252315
+	.4byte $$252314
+	.4byte $$252315
 	.4byte 0x00000013
-	.byte4 $$252316
-	.byte4 $$252317
+	.4byte $$252316
+	.4byte $$252317
 	.4byte 0x00000014
-	.byte4 $$252318
-	.byte4 $$252319
+	.4byte $$252318
+	.4byte $$252319
 	.4byte 0x00000015
-	.byte4 $$252320
-	.byte4 $$252321
+	.4byte $$252320
+	.4byte $$252321
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

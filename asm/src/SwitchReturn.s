@@ -166,13 +166,13 @@ onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv:
 __vt__Q53scn4step7gimmick8switch_n12SwitchReturn:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 isChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 isChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 onChangeOffToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 onChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 onChangeOnToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
-	.byte4 onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte __dt__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte isChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte isChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeOffToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeOnToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

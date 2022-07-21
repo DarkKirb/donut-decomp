@@ -1472,7 +1472,7 @@ $$29834:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 ChannelCallbackFunc__Q44nw4r3snd6detail8SeqTrackFPQ44nw4r3snd6detail7ChannelQ54nw4r3snd6detail7Channel21ChannelCallbackStatusUl
+	.4byte ChannelCallbackFunc__Q44nw4r3snd6detail8SeqTrackFPQ44nw4r3snd6detail7ChannelQ54nw4r3snd6detail7Channel21ChannelCallbackStatusUl
 	.4byte 0
 	.4byte 0
 
@@ -1481,7 +1481,7 @@ $$29834:
 __vt__Q44nw4r3snd6detail8SeqTrack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q44nw4r3snd6detail8SeqTrackFv
+	.4byte __dt__Q44nw4r3snd6detail8SeqTrackFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

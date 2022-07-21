@@ -1410,7 +1410,7 @@ s_currentDir:
 	.4byte 0
 .global s_shutdownFuncInfo
 s_shutdownFuncInfo:
-	.byte4 nandOnShutdown
+	.4byte nandOnShutdown
 	.4byte 0x000000FF
 	.4byte 0
 	.4byte 0
@@ -1441,7 +1441,7 @@ $$23880:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __NANDVersion
 __NANDVersion:
-	.byte4 $$22807
+	.4byte $$22807
 .global $$23783
 $$23783:
 	.4byte 0x2F000000

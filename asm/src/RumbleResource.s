@@ -86,5 +86,5 @@ $$248752:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2
 T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2:
-	.byte4 $$248751
-	.byte4 $$248752
+	.4byte $$248751
+	.4byte $$248752

@@ -2374,12 +2374,12 @@ $$251264:
 __vt__Q26mintvm6Regset:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q26mintvm6RegsetFv
+	.4byte __dt__Q26mintvm6RegsetFv
 .global __vt__Q26mintvm8RNObject
 __vt__Q26mintvm8RNObject:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q26mintvm8RNObjectFv
+	.4byte __dt__Q26mintvm8RNObjectFv
 	.4byte 0
 	.asciz "index = %d, count = %d\n"
 	.asciz "MArray.hpp"

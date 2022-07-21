@@ -24,32 +24,32 @@ $$2147:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __lconv
 __lconv:
-	.byte4 $$2139
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
+	.4byte $$2139
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.byte4 $$2140
+	.4byte $$2140
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 .global _loc_ctyp_C
 _loc_ctyp_C:
 	.4byte 0x43000000
 	.4byte 0
-	.byte4 __ctype_mapC
-	.byte4 __upper_mapC
-	.byte4 __lower_mapC
-	.byte4 __wctype_mapC
-	.byte4 __wupper_mapC
-	.byte4 __wlower_mapC
-	.byte4 __mbtowc_noconv
-	.byte4 __wctomb_noconv
+	.4byte __ctype_mapC
+	.4byte __upper_mapC
+	.4byte __lower_mapC
+	.4byte __wctype_mapC
+	.4byte __wupper_mapC
+	.4byte __wlower_mapC
+	.4byte __mbtowc_noconv
+	.4byte __wctomb_noconv
 .global char_coll_tableC
 char_coll_tableC:
 	.4byte 0x00010002
@@ -107,43 +107,43 @@ _loc_coll_C:
 	.4byte 0x00000020
 	.4byte 0x0000006E
 	.4byte 0
-	.byte4 char_coll_tableC
+	.4byte char_coll_tableC
 	.4byte 0
 .global _loc_mon_C
 _loc_mon_C:
 	.4byte 0x43000000
 	.4byte 0
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
-	.byte4 $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
+	.4byte $$2140
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.byte4 $$2140
+	.4byte $$2140
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 .global _loc_num_C
 _loc_num_C:
 	.4byte 0x43000000
 	.4byte 0
-	.byte4 $$2139
-	.byte4 $$2140
-	.byte4 $$2140
+	.4byte $$2139
+	.4byte $$2140
+	.4byte $$2140
 	.4byte 0
 .global _loc_tim_C
 _loc_tim_C:
 	.4byte 0x43000000
 	.4byte 0
-	.byte4 $$2141
-	.byte4 $$2142
-	.byte4 $$2143
-	.byte4 $$2144
-	.byte4 $$2145
-	.byte4 $$2146
-	.byte4 $$2147
-	.byte4 $$2140
+	.4byte $$2141
+	.4byte $$2142
+	.4byte $$2143
+	.4byte $$2144
+	.4byte $$2145
+	.4byte $$2146
+	.4byte $$2147
+	.4byte $$2140
 .global _current_locale
 _current_locale:
 	.4byte 0
@@ -159,11 +159,11 @@ _current_locale:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 _loc_coll_C
-	.byte4 _loc_ctyp_C
-	.byte4 _loc_mon_C
-	.byte4 _loc_num_C
-	.byte4 _loc_tim_C
+	.4byte _loc_coll_C
+	.4byte _loc_ctyp_C
+	.4byte _loc_mon_C
+	.4byte _loc_num_C
+	.4byte _loc_tim_C
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2139

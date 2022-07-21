@@ -822,19 +822,19 @@ __dt__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14St
 __vt__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateEnterDoor$$4PQ43scn4step4hero4Hero$$4Q53scn4step7gimmick4door6Result$$4b$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateEnterDoor$$4PQ43scn4step4hero4Hero$$4Q53scn4step7gimmick4door6Result$$4b$$4b$$1Fv
-	.byte4 create__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateEnterDoor$$4PQ43scn4step4hero4Hero$$4Q53scn4step7gimmick4door6Result$$4b$$4b$$1Fv
+	.4byte __dt__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateEnterDoor$$4PQ43scn4step4hero4Hero$$4Q53scn4step7gimmick4door6Result$$4b$$4b$$1Fv
+	.4byte create__Q24util132StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick14StateEnterDoor$$4PQ43scn4step4hero4Hero$$4Q53scn4step7gimmick4door6Result$$4b$$4b$$1Fv
 .global __vt__Q53scn4step4hero7gimmick14StateEnterDoor
 __vt__Q53scn4step4hero7gimmick14StateEnterDoor:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7gimmick14StateEnterDoorFv
-	.byte4 procAnim__Q53scn4step4hero7gimmick14StateEnterDoorFv
-	.byte4 procMove__Q53scn4step4hero7gimmick14StateEnterDoorFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero7gimmick14StateEnterDoorFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero7gimmick14StateEnterDoorFv
+	.4byte procAnim__Q53scn4step4hero7gimmick14StateEnterDoorFv
+	.4byte procMove__Q53scn4step4hero7gimmick14StateEnterDoorFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick14StateEnterDoorFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

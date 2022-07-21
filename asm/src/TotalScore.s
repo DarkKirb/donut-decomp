@@ -3293,12 +3293,12 @@ lbl_803B991C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global NAMES__Q34info6common24$$2unnamed$$2TotalScore_cpp$$2
 NAMES__Q34info6common24$$2unnamed$$2TotalScore_cpp$$2:
-	.byte4 $$251545
-	.byte4 $$251545
-	.byte4 $$251546
-	.byte4 $$251547
-	.byte4 $$251548
-	.byte4 $$251548
+	.4byte $$251545
+	.4byte $$251545
+	.4byte $$251546
+	.4byte $$251547
+	.4byte $$251548
+	.4byte $$251548
 .global $$252626
 $$252626:
 	.asciz "common/Main"

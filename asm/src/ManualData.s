@@ -467,260 +467,260 @@ IsCommandLineDouble__Q25pause10ManualDataFQ25pause10ManualKindUlUl:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248732
+	.4byte $$248732
 	.4byte 0
-	.byte4 $$248733
+	.4byte $$248733
 	.4byte 0
-	.byte4 $$248734
+	.4byte $$248734
 	.4byte 0
-	.byte4 $$248735
+	.4byte $$248735
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248736
+	.4byte $$248736
 	.4byte 0
-	.byte4 $$248737
+	.4byte $$248737
 	.4byte 0
-	.byte4 $$248738
+	.4byte $$248738
 	.4byte 0
 .global T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248739
+	.4byte $$248739
 	.4byte 0
-	.byte4 $$248740
+	.4byte $$248740
 	.4byte 0
-	.byte4 $$248741
+	.4byte $$248741
 	.4byte 0
 .global T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248742
+	.4byte $$248742
 	.4byte 0
-	.byte4 $$248743
+	.4byte $$248743
 	.4byte 0
-	.byte4 $$248744
+	.4byte $$248744
 	.4byte 0
-	.byte4 $$248745
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.byte4 $$248746
-	.4byte 0
-	.byte4 $$248736
-	.4byte 0
-	.byte4 $$248747
-	.4byte 0
-	.byte4 $$248748
+	.4byte $$248745
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248749
+	.4byte $$248746
 	.4byte 0
-	.byte4 $$248750
+	.4byte $$248736
 	.4byte 0
-	.byte4 $$248751
+	.4byte $$248747
+	.4byte 0
+	.4byte $$248748
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte $$248749
+	.4byte 0
+	.4byte $$248750
+	.4byte 0
+	.4byte $$248751
 	.4byte 0
 .global T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248752
+	.4byte $$248752
 	.4byte 0
-	.byte4 $$248753
+	.4byte $$248753
 	.4byte 0
-	.byte4 $$248754
+	.4byte $$248754
 	.4byte 0
-	.byte4 $$248755
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.byte4 $$248732
-	.4byte 0
-	.byte4 $$248756
-	.4byte 0
-	.byte4 $$248757
-	.4byte 0
-	.byte4 $$248758
+	.4byte $$248755
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248759
+	.4byte $$248732
 	.4byte 0
-	.byte4 $$248760
+	.4byte $$248756
 	.4byte 0
-	.byte4 $$248761
+	.4byte $$248757
 	.4byte 0
-	.byte4 $$248762
+	.4byte $$248758
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte $$248759
+	.4byte 0
+	.4byte $$248760
+	.4byte 0
+	.4byte $$248761
+	.4byte 0
+	.4byte $$248762
 	.4byte 0
 .global T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248763
+	.4byte $$248763
 	.4byte 0
-	.byte4 $$248764
+	.4byte $$248764
 	.4byte 0
-	.byte4 $$248765
+	.4byte $$248765
 	.4byte 0
-	.byte4 $$248766
+	.4byte $$248766
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248767
+	.4byte $$248767
 	.4byte 0
-	.byte4 $$248768
+	.4byte $$248768
 	.4byte 0
-	.byte4 $$248769
+	.4byte $$248769
 	.4byte 0
-	.byte4 $$248770
+	.4byte $$248770
 	.4byte 0
 .global T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248771
+	.4byte $$248771
 	.4byte 0
-	.byte4 $$248772
+	.4byte $$248772
 	.4byte 0
-	.byte4 $$248773
+	.4byte $$248773
 	.4byte 0
-	.byte4 $$248746
+	.4byte $$248746
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248774
+	.4byte $$248774
 	.4byte 0
-	.byte4 $$248775
+	.4byte $$248775
 	.4byte 0
-	.byte4 $$248776
+	.4byte $$248776
 	.4byte 0
-	.byte4 $$248777
+	.4byte $$248777
 	.4byte 0
 .global T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248778
+	.4byte $$248778
 	.4byte 0
-	.byte4 $$248779
+	.4byte $$248779
 	.4byte 0
-	.byte4 $$248780
+	.4byte $$248780
 	.4byte 0
-	.byte4 $$248781
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.byte4 $$248782
-	.4byte 0
-	.byte4 $$248783
-	.4byte 0
-	.byte4 $$248784
+	.4byte $$248781
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248785
+	.4byte $$248782
 	.4byte 0
-	.byte4 $$248786
+	.4byte $$248783
 	.4byte 0
-	.byte4 $$248787
+	.4byte $$248784
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte $$248785
+	.4byte 0
+	.4byte $$248786
+	.4byte 0
+	.4byte $$248787
 	.4byte 0
 .global T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248732
+	.4byte $$248732
 	.4byte 0
-	.byte4 $$248788
+	.4byte $$248788
 	.4byte 0
-	.byte4 $$248748
+	.4byte $$248748
 	.4byte 0
-	.byte4 $$248789
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.byte4 $$248790
-	.4byte 0
-	.byte4 $$248791
-	.4byte 0
-	.byte4 $$248792
-	.4byte 0
-	.byte4 $$248793
+	.4byte $$248789
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248767
+	.4byte $$248790
 	.4byte 0
-	.byte4 $$248794
+	.4byte $$248791
 	.4byte 0
-	.byte4 $$248795
+	.4byte $$248792
 	.4byte 0
-	.byte4 $$248796
+	.4byte $$248793
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248797
+	.4byte $$248767
 	.4byte 0
-	.byte4 $$248758
+	.4byte $$248794
 	.4byte 0
-	.byte4 $$248776
+	.4byte $$248795
 	.4byte 0
-	.byte4 $$248798
+	.4byte $$248796
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte $$248797
+	.4byte 0
+	.4byte $$248758
+	.4byte 0
+	.4byte $$248776
+	.4byte 0
+	.4byte $$248798
 	.4byte 0
 .global T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.byte4 $$248799
+	.4byte $$248799
 	.4byte 0
-	.byte4 $$248736
+	.4byte $$248736
 	.4byte 0
-	.byte4 $$248800
+	.4byte $$248800
 	.4byte 0
-	.byte4 $$248801
+	.4byte $$248801
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248802
+	.4byte $$248802
 	.4byte 0
-	.byte4 $$248803
+	.4byte $$248803
 	.4byte 0
-	.byte4 $$248804
+	.4byte $$248804
 	.4byte 0
-	.byte4 $$248805
+	.4byte $$248805
 	.4byte 0
 .global T_ENTRIES__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_ENTRIES__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
 	.4byte 0
-	.byte4 $$248742
+	.4byte $$248742
 	.4byte 0
-	.byte4 T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000008
 	.4byte 0
-	.byte4 $$248895
-	.byte4 $$248742
-	.byte4 T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte $$248895
+	.4byte $$248742
+	.4byte T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000003
 	.4byte 0
-	.byte4 $$248896
+	.4byte $$248896
 	.4byte 0
-	.byte4 T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x0000000D
 	.4byte 0x01000000
-	.byte4 $$248897
+	.4byte $$248897
 	.4byte 0
-	.byte4 T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x0000000E
 	.4byte 0
-	.byte4 $$248898
+	.4byte $$248898
 	.4byte 0
-	.byte4 T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000009
 	.4byte 0x01000000
-	.byte4 $$248899
+	.4byte $$248899
 	.4byte 0
-	.byte4 T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000009
 	.4byte 0
-	.byte4 $$248900
+	.4byte $$248900
 	.4byte 0
-	.byte4 T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x0000000C
 	.4byte 0x01000000
-	.byte4 $$248901
+	.4byte $$248901
 	.4byte 0
-	.byte4 T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000013
 	.4byte 0
-	.byte4 $$248902
+	.4byte $$248902
 	.4byte 0
-	.byte4 T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2
+	.4byte T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 	.4byte 0x00000009
 	.4byte 0
 

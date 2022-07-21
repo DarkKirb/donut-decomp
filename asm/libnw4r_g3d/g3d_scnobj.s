@@ -1831,35 +1831,35 @@ $$211656:
 __vt__Q34nw4r3g3d8ScnGroup:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d8ScnGroupCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d8ScnGroupFUlUlPv
-	.byte4 __dt__Q34nw4r3g3d8ScnGroupFv
-	.byte4 GetTypeObj__Q34nw4r3g3d8ScnGroupCFv
-	.byte4 GetTypeName__Q34nw4r3g3d8ScnGroupCFv
-	.byte4 ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
-	.byte4 SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
-	.byte4 GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
-	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
-	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
-	.byte4 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
-	.byte4 Insert__Q34nw4r3g3d8ScnGroupFUlPQ34nw4r3g3d6ScnObj
-	.byte4 Remove__Q34nw4r3g3d8ScnGroupFUl
-	.byte4 Remove__Q34nw4r3g3d8ScnGroupFPQ34nw4r3g3d6ScnObj
+	.4byte IsDerivedFrom__Q34nw4r3g3d8ScnGroupCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d8ScnGroupFUlUlPv
+	.4byte __dt__Q34nw4r3g3d8ScnGroupFv
+	.4byte GetTypeObj__Q34nw4r3g3d8ScnGroupCFv
+	.4byte GetTypeName__Q34nw4r3g3d8ScnGroupCFv
+	.4byte ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.4byte SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
+	.4byte GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
+	.4byte GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.4byte CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
+	.4byte Insert__Q34nw4r3g3d8ScnGroupFUlPQ34nw4r3g3d6ScnObj
+	.4byte Remove__Q34nw4r3g3d8ScnGroupFUl
+	.4byte Remove__Q34nw4r3g3d8ScnGroupFPQ34nw4r3g3d6ScnObj
 .global __vt__Q34nw4r3g3d6ScnObj
 __vt__Q34nw4r3g3d6ScnObj:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d6ScnObjCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte IsDerivedFrom__Q34nw4r3g3d6ScnObjCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.byte4 __dt__Q34nw4r3g3d6ScnObjFv
-	.byte4 GetTypeObj__Q34nw4r3g3d6ScnObjCFv
-	.byte4 GetTypeName__Q34nw4r3g3d6ScnObjCFv
+	.4byte __dt__Q34nw4r3g3d6ScnObjFv
+	.4byte GetTypeObj__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetTypeName__Q34nw4r3g3d6ScnObjCFv
 	.4byte 0
-	.byte4 SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
-	.byte4 GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
-	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
-	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
-	.byte4 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
+	.4byte SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
+	.4byte GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
+	.4byte GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.4byte CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

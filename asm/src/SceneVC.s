@@ -175,13 +175,13 @@ lbl_803F2B00:
 __vt__Q33scn2vc7SceneVC:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn2vc7SceneVCCFv
-	.byte4 __dt__Q33scn2vc7SceneVCFv
-	.byte4 updateMain__Q33scn2vc7SceneVCFv
-	.byte4 updateUseGPU__Q33scn2vc7SceneVCFv
-	.byte4 updateDebug__Q33scn2vc7SceneVCFv
-	.byte4 draw__Q33scn2vc7SceneVCFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn2vc7SceneVCCFv
+	.4byte GetRuntimeTypeInfo__Q33scn2vc7SceneVCCFv
+	.4byte __dt__Q33scn2vc7SceneVCFv
+	.4byte updateMain__Q33scn2vc7SceneVCFv
+	.4byte updateUseGPU__Q33scn2vc7SceneVCFv
+	.4byte updateDebug__Q33scn2vc7SceneVCFv
+	.4byte draw__Q33scn2vc7SceneVCFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn2vc7SceneVCCFv
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

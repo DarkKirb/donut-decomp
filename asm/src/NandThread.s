@@ -1649,49 +1649,49 @@ lbl_801D3020:
 SaveFiles__4nand:
 	.4byte 0
 	.4byte 0x0000F0A0
-	.byte4 $$249991
+	.4byte $$249991
 	.4byte 0x00000001
 	.4byte 0x000007D8
-	.byte4 $$249992
+	.4byte $$249992
 	.4byte 0x00000001
 	.4byte 0x00071C00
-	.byte4 $$249993
+	.4byte $$249993
 	.4byte 0x00000001
 	.4byte 0x00071C00
-	.byte4 $$249994
+	.4byte $$249994
 	.4byte 0x00000001
 	.4byte 0x00071C00
-	.byte4 $$249995
+	.4byte $$249995
 	.4byte 0x00000002
 	.4byte 0x00002000
-	.byte4 $$249996
+	.4byte $$249996
 	.4byte 0x00000002
 	.4byte 0x00002040
-	.byte4 $$249997
+	.4byte $$249997
 	.4byte 0x00000002
 	.4byte 0x00002020
-	.byte4 $$249998
+	.4byte $$249998
 	.4byte 0x00000002
 	.4byte 0x00008020
-	.byte4 $$249999
+	.4byte $$249999
 	.4byte 0x00000002
 	.4byte 0x00004000
-	.byte4 $$250000
+	.4byte $$250000
 	.4byte 0x00000002
 	.4byte 0x0000F788
-	.byte4 $$250001
+	.4byte $$250001
 	.4byte 0x00000002
 	.4byte 0x00011788
-	.byte4 $$250002
+	.4byte $$250002
 	.4byte 0x00000002
 	.4byte 0x00004260
-	.byte4 $$250003
+	.4byte $$250003
 	.4byte 0x00000002
 	.4byte 0x0005FD20
-	.byte4 $$250004
+	.4byte $$250004
 	.4byte 0x00000002
 	.4byte 0x00065D20
-	.byte4 $$250005
+	.4byte $$250005
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -1772,7 +1772,7 @@ $$249989:
 	.balign 4
 .global TMP_DIRECTORY__4nand
 TMP_DIRECTORY__4nand:
-	.byte4 $$249989
+	.4byte $$249989
 .global $$251560
 $$251560:
 	.asciz "Nand"

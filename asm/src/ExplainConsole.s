@@ -986,71 +986,71 @@ lbl_803BCF40:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global cdDataTbl__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 cdDataTbl__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
-	.byte4 bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
-	.byte4 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
 .global cdDataTblG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 cdDataTblG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000004
-	.byte4 bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000003
-	.byte4 bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
+	.4byte bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 	.4byte 0x00000002
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

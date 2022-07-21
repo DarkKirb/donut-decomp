@@ -311,9 +311,9 @@ $$251657:
 	.asciz "One_FourPersons"
 .global t_getTextLabel__Q43scn9grandmenu4menu26$$2unnamed$$2PlayerWindow_cpp$$2
 t_getTextLabel__Q43scn9grandmenu4menu26$$2unnamed$$2PlayerWindow_cpp$$2:
-	.byte4 $$251655
-	.byte4 $$251656
-	.byte4 $$251657
+	.4byte $$251655
+	.4byte $$251656
+	.4byte $$251657
 .global $$252109
 $$252109:
 	.asciz "grandmenu/Main"

@@ -5831,7 +5831,7 @@ lbl_80147E8C:
 /* 80147EAC 00143CEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3ut_TextWriterBase_cpp
+	.4byte __sinit_$$3ut_TextWriterBase_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$27999

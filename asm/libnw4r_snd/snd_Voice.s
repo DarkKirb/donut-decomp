@@ -3105,9 +3105,9 @@ $$211607:
 __vt__Q44nw4r3snd6detail5Voice:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q44nw4r3snd6detail5VoiceFv
-	.byte4 InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv
-	.byte4 InvalidateWaveData__Q44nw4r3snd6detail5VoiceFPCvPCv
+	.4byte __dt__Q44nw4r3snd6detail5VoiceFv
+	.4byte InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv
+	.4byte InvalidateWaveData__Q44nw4r3snd6detail5VoiceFPCvPCv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210576

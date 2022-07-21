@@ -154,11 +154,11 @@ procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv:
 __vt__Q53scn4step4boss6whispy20StateShotAirBallBase:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 	.4byte 0
 	.4byte 0

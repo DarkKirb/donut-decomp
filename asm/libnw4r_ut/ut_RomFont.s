@@ -523,37 +523,37 @@ lbl_80121B88:
 $$2943:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
+	.4byte ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
 .global __vt__Q34nw4r2ut7RomFont
 __vt__Q34nw4r2ut7RomFont:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r2ut7RomFontFv
-	.byte4 GetWidth__Q34nw4r2ut7RomFontCFv
-	.byte4 GetHeight__Q34nw4r2ut7RomFontCFv
-	.byte4 GetAscent__Q34nw4r2ut7RomFontCFv
-	.byte4 GetDescent__Q34nw4r2ut7RomFontCFv
-	.byte4 GetBaselinePos__Q34nw4r2ut7RomFontCFv
-	.byte4 GetCellHeight__Q34nw4r2ut7RomFontCFv
-	.byte4 GetCellWidth__Q34nw4r2ut7RomFontCFv
-	.byte4 GetMaxCharWidth__Q34nw4r2ut7RomFontCFv
-	.byte4 GetType__Q34nw4r2ut7RomFontCFv
-	.byte4 GetTextureFormat__Q34nw4r2ut7RomFontCFv
-	.byte4 GetLineFeed__Q34nw4r2ut7RomFontCFv
-	.byte4 GetDefaultCharWidths__Q34nw4r2ut7RomFontCFv
-	.byte4 SetDefaultCharWidths__Q34nw4r2ut7RomFontFRCQ34nw4r2ut10CharWidths
-	.byte4 SetAlternateChar__Q34nw4r2ut7RomFontFUs
-	.byte4 SetLineFeed__Q34nw4r2ut7RomFontFi
-	.byte4 GetCharWidth__Q34nw4r2ut7RomFontCFUs
-	.byte4 GetCharWidths__Q34nw4r2ut7RomFontCFUs
-	.byte4 GetGlyph__Q34nw4r2ut7RomFontCFPQ34nw4r2ut5GlyphUs
-	.byte4 HasGlyph__Q34nw4r2ut7RomFontCFUs
-	.byte4 GetEncoding__Q34nw4r2ut7RomFontCFv
+	.4byte __dt__Q34nw4r2ut7RomFontFv
+	.4byte GetWidth__Q34nw4r2ut7RomFontCFv
+	.4byte GetHeight__Q34nw4r2ut7RomFontCFv
+	.4byte GetAscent__Q34nw4r2ut7RomFontCFv
+	.4byte GetDescent__Q34nw4r2ut7RomFontCFv
+	.4byte GetBaselinePos__Q34nw4r2ut7RomFontCFv
+	.4byte GetCellHeight__Q34nw4r2ut7RomFontCFv
+	.4byte GetCellWidth__Q34nw4r2ut7RomFontCFv
+	.4byte GetMaxCharWidth__Q34nw4r2ut7RomFontCFv
+	.4byte GetType__Q34nw4r2ut7RomFontCFv
+	.4byte GetTextureFormat__Q34nw4r2ut7RomFontCFv
+	.4byte GetLineFeed__Q34nw4r2ut7RomFontCFv
+	.4byte GetDefaultCharWidths__Q34nw4r2ut7RomFontCFv
+	.4byte SetDefaultCharWidths__Q34nw4r2ut7RomFontFRCQ34nw4r2ut10CharWidths
+	.4byte SetAlternateChar__Q34nw4r2ut7RomFontFUs
+	.4byte SetLineFeed__Q34nw4r2ut7RomFontFi
+	.4byte GetCharWidth__Q34nw4r2ut7RomFontCFUs
+	.4byte GetCharWidths__Q34nw4r2ut7RomFontCFUs
+	.4byte GetGlyph__Q34nw4r2ut7RomFontCFPQ34nw4r2ut5GlyphUs
+	.4byte HasGlyph__Q34nw4r2ut7RomFontCFUs
+	.4byte GetEncoding__Q34nw4r2ut7RomFontCFv
 .global __vt__Q34nw4r2ut4Font
 __vt__Q34nw4r2ut4Font:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r2ut4FontFv
+	.4byte __dt__Q34nw4r2ut4FontFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -953,5 +953,5 @@ lbl_8035E29C:
 __vt__Q53scn4step4hero8inactive11StateSelect:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero8inactive11StateSelectFv
-	.byte4 proc__Q53scn4step4hero8inactive11StateSelectFv
+	.4byte __dt__Q53scn4step4hero8inactive11StateSelectFv
+	.4byte proc__Q53scn4step4hero8inactive11StateSelectFv

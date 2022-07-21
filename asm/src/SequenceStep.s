@@ -488,13 +488,13 @@ __dt__Q23seq12SequenceStepFv:
 __vt__Q23seq12SequenceStep:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q23seq12SequenceStepCFv
-	.byte4 __dt__Q23seq12SequenceStepFv
-	.byte4 nextAction__Q23seq12SequenceStepCFv
-	.byte4 createChildSequence__Q23seq12SequenceStepCFv
-	.byte4 onChildSequenceEnd__Q23seq12SequenceStepFRQ23seq9ISequence
-	.byte4 createScene__Q23seq12SequenceStepCFv
-	.byte4 onSceneEnd__Q23seq12SequenceStepFRQ23scn6IScene
+	.4byte GetRuntimeTypeInfo__Q23seq12SequenceStepCFv
+	.4byte __dt__Q23seq12SequenceStepFv
+	.4byte nextAction__Q23seq12SequenceStepCFv
+	.4byte createChildSequence__Q23seq12SequenceStepCFv
+	.4byte onChildSequenceEnd__Q23seq12SequenceStepFRQ23seq9ISequence
+	.4byte createScene__Q23seq12SequenceStepCFv
+	.4byte onSceneEnd__Q23seq12SequenceStepFRQ23scn6IScene
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -492,11 +492,11 @@ hcisu_h2_handle_event:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hcisu_h2
 hcisu_h2:
-	.byte4 hcisu_h2_init
-	.byte4 hcisu_h2_open
-	.byte4 hcisu_h2_close
-	.byte4 hcisu_h2_send
-	.byte4 hcisu_h2_handle_event
+	.4byte hcisu_h2_init
+	.4byte hcisu_h2_open
+	.4byte hcisu_h2_close
+	.4byte hcisu_h2_send
+	.4byte hcisu_h2_handle_event
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

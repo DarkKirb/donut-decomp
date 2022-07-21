@@ -381,7 +381,7 @@ __sinit_$$3Product_cpp:
 /* 8021A3F0 00216230  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Product_cpp
+	.4byte __sinit_$$3Product_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$249032

@@ -647,13 +647,13 @@ $$253298:
 __vt__Q33scn4init9SceneInit:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn4init9SceneInitCFv
-	.byte4 __dt__Q33scn4init9SceneInitFv
-	.byte4 updateMain__Q33scn4init9SceneInitFv
-	.byte4 updateUseGPU__Q33scn4init9SceneInitFv
-	.byte4 updateDebug__Q33scn4init9SceneInitFv
-	.byte4 draw__Q33scn4init9SceneInitFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn4init9SceneInitCFv
+	.4byte GetRuntimeTypeInfo__Q33scn4init9SceneInitCFv
+	.4byte __dt__Q33scn4init9SceneInitFv
+	.4byte updateMain__Q33scn4init9SceneInitFv
+	.4byte updateUseGPU__Q33scn4init9SceneInitFv
+	.4byte updateDebug__Q33scn4init9SceneInitFv
+	.4byte draw__Q33scn4init9SceneInitFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn4init9SceneInitCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

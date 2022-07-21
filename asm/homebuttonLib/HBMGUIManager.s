@@ -1818,146 +1818,146 @@ $$2LOCAL$$2drawLine___Q210homebutton3guiFfffffUcR8_GXColor$$2cubeScale:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q310homebutton3gui13PaneComponent
 __vt__Q310homebutton3gui13PaneComponent:
-	.byte4 __RTTI__Q310homebutton3gui13PaneComponent
+	.4byte __RTTI__Q310homebutton3gui13PaneComponent
 	.4byte 0
-	.byte4 create__Q310homebutton3gui9InterfaceFv
-	.byte4 init__Q310homebutton3gui9ComponentFv
-	.byte4 calc__Q310homebutton3gui9InterfaceFv
-	.byte4 draw__Q310homebutton3gui9InterfaceFRA3_A4_f
-	.byte4 draw__Q310homebutton3gui13PaneComponentFv
-	.byte4 __dt__Q310homebutton3gui13PaneComponentFv
-	.byte4 getID__Q310homebutton3gui9ComponentFv
-	.byte4 isPointed__Q310homebutton3gui9ComponentFi
-	.byte4 setPointed__Q310homebutton3gui9ComponentFib
-	.byte4 onPoint__Q310homebutton3gui9ComponentFv
-	.byte4 offPoint__Q310homebutton3gui9ComponentFv
-	.byte4 onDrag__Q310homebutton3gui9ComponentFff
-	.byte4 onMove__Q310homebutton3gui9ComponentFff
-	.byte4 onTrig__Q310homebutton3gui9ComponentFUlR3Vec
-	.byte4 setDraggingButton__Q310homebutton3gui9ComponentFUl
-	.byte4 update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
-	.byte4 update__Q310homebutton3gui9ComponentFiffUlUlUlPv
-	.byte4 isTriggerTarger__Q310homebutton3gui9ComponentFv
-	.byte4 setTriggerTarget__Q310homebutton3gui9ComponentFb
-	.byte4 setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
-	.byte4 isVisible__Q310homebutton3gui13PaneComponentFv
-	.byte4 contain__Q310homebutton3gui13PaneComponentFff
-	.byte4 setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane
-	.byte4 getPane__Q310homebutton3gui13PaneComponentFv
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui9ComponentFv
+	.4byte calc__Q310homebutton3gui9InterfaceFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui13PaneComponentFv
+	.4byte __dt__Q310homebutton3gui13PaneComponentFv
+	.4byte getID__Q310homebutton3gui9ComponentFv
+	.4byte isPointed__Q310homebutton3gui9ComponentFi
+	.4byte setPointed__Q310homebutton3gui9ComponentFib
+	.4byte onPoint__Q310homebutton3gui9ComponentFv
+	.4byte offPoint__Q310homebutton3gui9ComponentFv
+	.4byte onDrag__Q310homebutton3gui9ComponentFff
+	.4byte onMove__Q310homebutton3gui9ComponentFff
+	.4byte onTrig__Q310homebutton3gui9ComponentFUlR3Vec
+	.4byte setDraggingButton__Q310homebutton3gui9ComponentFUl
+	.4byte update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui9ComponentFiffUlUlUlPv
+	.4byte isTriggerTarger__Q310homebutton3gui9ComponentFv
+	.4byte setTriggerTarget__Q310homebutton3gui9ComponentFb
+	.4byte setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
+	.4byte isVisible__Q310homebutton3gui13PaneComponentFv
+	.4byte contain__Q310homebutton3gui13PaneComponentFff
+	.4byte setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane
+	.4byte getPane__Q310homebutton3gui13PaneComponentFv
 .global $$29429
 $$29429:
 	.asciz "homebutton::gui::PaneComponent"
 	.balign 4
 .global $$29430
 $$29430:
-	.byte4 __RTTI__Q310homebutton3gui9Interface
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
-	.byte4 __RTTI__Q310homebutton3gui9Component
+	.4byte __RTTI__Q310homebutton3gui9Component
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q310homebutton3gui13PaneComponent
 __RTTI__Q310homebutton3gui13PaneComponent:
-	.byte4 $$29429
-	.byte4 $$29430
+	.4byte $$29429
+	.4byte $$29430
 .global __vt__Q310homebutton3gui11PaneManager
 __vt__Q310homebutton3gui11PaneManager:
-	.byte4 __RTTI__Q310homebutton3gui11PaneManager
+	.4byte __RTTI__Q310homebutton3gui11PaneManager
 	.4byte 0
-	.byte4 create__Q310homebutton3gui9InterfaceFv
-	.byte4 init__Q310homebutton3gui7ManagerFv
-	.byte4 calc__Q310homebutton3gui7ManagerFv
-	.byte4 draw__Q310homebutton3gui9InterfaceFRA3_A4_f
-	.byte4 draw__Q310homebutton3gui7ManagerFv
-	.byte4 __dt__Q310homebutton3gui11PaneManagerFv
-	.byte4 addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
-	.byte4 delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
-	.byte4 getComponent__Q310homebutton3gui7ManagerFUl
-	.byte4 update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
-	.byte4 update__Q310homebutton3gui7ManagerFiffUlUlUlPv
-	.byte4 onEvent__Q310homebutton3gui7ManagerFUlUlPv
-	.byte4 setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
-	.byte4 setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
-	.byte4 createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
-	.byte4 addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
-	.byte4 delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
-	.byte4 getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane
-	.byte4 getDrawInfo__Q310homebutton3gui11PaneManagerFv
-	.byte4 setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo
-	.byte4 setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb
-	.byte4 walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList$$0Q36nw4hbm3lyt4Pane$$44$$1
-	.byte4 walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList$$0Q36nw4hbm3lyt4Pane$$44$$1
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui7ManagerFv
+	.4byte calc__Q310homebutton3gui7ManagerFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui7ManagerFv
+	.4byte __dt__Q310homebutton3gui11PaneManagerFv
+	.4byte addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte getComponent__Q310homebutton3gui7ManagerFUl
+	.4byte update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui7ManagerFiffUlUlUlPv
+	.4byte onEvent__Q310homebutton3gui7ManagerFUlUlPv
+	.4byte setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
+	.4byte setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
+	.4byte createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane
+	.4byte getDrawInfo__Q310homebutton3gui11PaneManagerFv
+	.4byte setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo
+	.4byte setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb
+	.4byte walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList$$0Q36nw4hbm3lyt4Pane$$44$$1
+	.4byte walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList$$0Q36nw4hbm3lyt4Pane$$44$$1
 .global $$29431
 $$29431:
 	.asciz "homebutton::gui::PaneManager"
 	.balign 4
 .global $$29432
 $$29432:
-	.byte4 __RTTI__Q310homebutton3gui9Interface
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
-	.byte4 __RTTI__Q310homebutton3gui7Manager
+	.4byte __RTTI__Q310homebutton3gui7Manager
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q310homebutton3gui11PaneManager
 __RTTI__Q310homebutton3gui11PaneManager:
-	.byte4 $$29431
-	.byte4 $$29432
+	.4byte $$29431
+	.4byte $$29432
 .global __vt__Q310homebutton3gui7Manager
 __vt__Q310homebutton3gui7Manager:
-	.byte4 __RTTI__Q310homebutton3gui7Manager
+	.4byte __RTTI__Q310homebutton3gui7Manager
 	.4byte 0
-	.byte4 create__Q310homebutton3gui9InterfaceFv
-	.byte4 init__Q310homebutton3gui7ManagerFv
-	.byte4 calc__Q310homebutton3gui7ManagerFv
-	.byte4 draw__Q310homebutton3gui9InterfaceFRA3_A4_f
-	.byte4 draw__Q310homebutton3gui7ManagerFv
-	.byte4 __dt__Q310homebutton3gui7ManagerFv
-	.byte4 addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
-	.byte4 delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
-	.byte4 getComponent__Q310homebutton3gui7ManagerFUl
-	.byte4 update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
-	.byte4 update__Q310homebutton3gui7ManagerFiffUlUlUlPv
-	.byte4 onEvent__Q310homebutton3gui7ManagerFUlUlPv
-	.byte4 setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
-	.byte4 setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui7ManagerFv
+	.4byte calc__Q310homebutton3gui7ManagerFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui7ManagerFv
+	.4byte __dt__Q310homebutton3gui7ManagerFv
+	.4byte addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte getComponent__Q310homebutton3gui7ManagerFUl
+	.4byte update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui7ManagerFiffUlUlUlPv
+	.4byte onEvent__Q310homebutton3gui7ManagerFUlUlPv
+	.4byte setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
+	.4byte setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
 .global $$29433
 $$29433:
 	.asciz "homebutton::gui::Manager"
 	.balign 4
 .global $$29434
 $$29434:
-	.byte4 __RTTI__Q310homebutton3gui9Interface
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q310homebutton3gui7Manager
 __RTTI__Q310homebutton3gui7Manager:
-	.byte4 $$29433
-	.byte4 $$29434
+	.4byte $$29433
+	.4byte $$29434
 .global __vt__Q310homebutton3gui9Component
 __vt__Q310homebutton3gui9Component:
-	.byte4 __RTTI__Q310homebutton3gui9Component
+	.4byte __RTTI__Q310homebutton3gui9Component
 	.4byte 0
-	.byte4 create__Q310homebutton3gui9InterfaceFv
-	.byte4 init__Q310homebutton3gui9ComponentFv
-	.byte4 calc__Q310homebutton3gui9InterfaceFv
-	.byte4 draw__Q310homebutton3gui9InterfaceFRA3_A4_f
-	.byte4 draw__Q310homebutton3gui9InterfaceFv
-	.byte4 __dt__Q310homebutton3gui9ComponentFv
-	.byte4 getID__Q310homebutton3gui9ComponentFv
-	.byte4 isPointed__Q310homebutton3gui9ComponentFi
-	.byte4 setPointed__Q310homebutton3gui9ComponentFib
-	.byte4 onPoint__Q310homebutton3gui9ComponentFv
-	.byte4 offPoint__Q310homebutton3gui9ComponentFv
-	.byte4 onDrag__Q310homebutton3gui9ComponentFff
-	.byte4 onMove__Q310homebutton3gui9ComponentFff
-	.byte4 onTrig__Q310homebutton3gui9ComponentFUlR3Vec
-	.byte4 setDraggingButton__Q310homebutton3gui9ComponentFUl
-	.byte4 update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
-	.byte4 update__Q310homebutton3gui9ComponentFiffUlUlUlPv
-	.byte4 isTriggerTarger__Q310homebutton3gui9ComponentFv
-	.byte4 setTriggerTarget__Q310homebutton3gui9ComponentFb
-	.byte4 setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
-	.byte4 isVisible__Q310homebutton3gui9ComponentFv
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui9ComponentFv
+	.4byte calc__Q310homebutton3gui9InterfaceFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui9InterfaceFv
+	.4byte __dt__Q310homebutton3gui9ComponentFv
+	.4byte getID__Q310homebutton3gui9ComponentFv
+	.4byte isPointed__Q310homebutton3gui9ComponentFi
+	.4byte setPointed__Q310homebutton3gui9ComponentFib
+	.4byte onPoint__Q310homebutton3gui9ComponentFv
+	.4byte offPoint__Q310homebutton3gui9ComponentFv
+	.4byte onDrag__Q310homebutton3gui9ComponentFff
+	.4byte onMove__Q310homebutton3gui9ComponentFff
+	.4byte onTrig__Q310homebutton3gui9ComponentFUlR3Vec
+	.4byte setDraggingButton__Q310homebutton3gui9ComponentFUl
+	.4byte update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui9ComponentFiffUlUlUlPv
+	.4byte isTriggerTarger__Q310homebutton3gui9ComponentFv
+	.4byte setTriggerTarget__Q310homebutton3gui9ComponentFb
+	.4byte setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
+	.4byte isVisible__Q310homebutton3gui9ComponentFv
 	.4byte 0
 .global $$29435
 $$29435:
@@ -1965,13 +1965,13 @@ $$29435:
 	.balign 4
 .global $$29436
 $$29436:
-	.byte4 __RTTI__Q310homebutton3gui9Interface
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
 	.4byte 0
 .global __RTTI__Q310homebutton3gui9Component
 __RTTI__Q310homebutton3gui9Component:
-	.byte4 $$29435
-	.byte4 $$29436
+	.4byte $$29435
+	.4byte $$29436
 .global $$29437
 $$29437:
 	.asciz "homebutton::gui::Interface"
@@ -1979,7 +1979,7 @@ $$29437:
 	.4byte 0
 .global __RTTI__Q310homebutton3gui9Interface
 __RTTI__Q310homebutton3gui9Interface:
-	.byte4 $$29437
+	.4byte $$29437
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

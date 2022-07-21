@@ -358,13 +358,13 @@ procFixPos__Q53scn4step4hero6common16StateShotAirBallFv:
 __vt__Q53scn4step4boss6whispy16StateShotAirBall:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
-	.byte4 procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
-	.byte4 reqAirBall__Q53scn4step4boss6whispy16StateShotAirBallFv
+	.4byte __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
+	.4byte procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte reqAirBall__Q53scn4step4boss6whispy16StateShotAirBallFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -372,13 +372,13 @@ __vt__Q53scn4step4boss6whispy16StateShotAirBall:
 __vt__Q53scn4step4hero6common16StateShotAirBall:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero6common16StateShotAirBallFv
-	.byte4 procAnim__Q53scn4step4hero6common16StateShotAirBallFv
-	.byte4 procMove__Q53scn4step4hero6common16StateShotAirBallFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero6common16StateShotAirBallFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero6common16StateShotAirBallFv
+	.4byte procAnim__Q53scn4step4hero6common16StateShotAirBallFv
+	.4byte procMove__Q53scn4step4hero6common16StateShotAirBallFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common16StateShotAirBallFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

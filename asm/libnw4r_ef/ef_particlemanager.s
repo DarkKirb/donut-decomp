@@ -2380,7 +2380,7 @@ __sinit_$$3ef_particlemanager_cpp:
 /* 800B253C 000AE37C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3ef_particlemanager_cpp
+	.4byte __sinit_$$3ef_particlemanager_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211043
@@ -2399,12 +2399,12 @@ $$211043:
 __vt__Q34nw4r2ef15ParticleManager:
 	.4byte 0
 	.4byte 0
-	.byte4 SendClosing__Q34nw4r2ef15ParticleManagerFv
-	.byte4 DestroyFunc__Q34nw4r2ef15ParticleManagerFv
-	.byte4 Initialize__Q34nw4r2ef15ParticleManagerFPQ34nw4r2ef7EmitterPQ34nw4r2ef15EmitterResource
-	.byte4 CreateParticle__Q34nw4r2ef15ParticleManagerFUsQ34nw4r4math4VEC3Q34nw4r4math4VEC3PCQ34nw4r4math5MTX34fPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUs
-	.byte4 Calc__Q34nw4r2ef15ParticleManagerFv
-	.byte4 Draw__Q34nw4r2ef15ParticleManagerFRCQ34nw4r2ef8DrawInfo
+	.4byte SendClosing__Q34nw4r2ef15ParticleManagerFv
+	.4byte DestroyFunc__Q34nw4r2ef15ParticleManagerFv
+	.4byte Initialize__Q34nw4r2ef15ParticleManagerFPQ34nw4r2ef7EmitterPQ34nw4r2ef15EmitterResource
+	.4byte CreateParticle__Q34nw4r2ef15ParticleManagerFUsQ34nw4r4math4VEC3Q34nw4r4math4VEC3PCQ34nw4r4math5MTX34fPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUs
+	.4byte Calc__Q34nw4r2ef15ParticleManagerFv
+	.4byte Draw__Q34nw4r2ef15ParticleManagerFRCQ34nw4r2ef8DrawInfo
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210377

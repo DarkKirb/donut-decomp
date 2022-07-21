@@ -429,7 +429,7 @@ $$2340:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x82000008
-	.byte4 __dt__26__partial_array_destructorFv
+	.4byte __dt__26__partial_array_destructorFv
 .global $$2351
 $$2351:
 	.4byte 0x18080000
@@ -441,7 +441,7 @@ $$2383:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x82000008
-	.byte4 __dt__26__partial_array_destructorFv
+	.4byte __dt__26__partial_array_destructorFv
 .global $$2401
 $$2401:
 	.4byte 0x20080000
@@ -450,29 +450,29 @@ $$2401:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2341
 $$2341:
-	.byte4 __construct_new_array
+	.4byte __construct_new_array
 	.4byte 0x00000104
-	.byte4 $$2340
+	.4byte $$2340
 .global $$2352
 $$2352:
-	.byte4 __dt__26__partial_array_destructorFv
+	.4byte __dt__26__partial_array_destructorFv
 	.4byte 0x000000BC
-	.byte4 $$2351
+	.4byte $$2351
 .global $$2384
 $$2384:
-	.byte4 __construct_array
+	.4byte __construct_array
 	.4byte 0x000000F8
-	.byte4 $$2383
+	.4byte $$2383
 .global $$2402
 $$2402:
-	.byte4 __destroy_arr
+	.4byte __destroy_arr
 	.4byte 0x00000078
-	.byte4 $$2401
+	.4byte $$2401
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global thandler__3std
 thandler__3std:
-	.byte4 dthandler__3stdFv
+	.4byte dthandler__3stdFv
 .global uhandler__3std
 uhandler__3std:
-	.byte4 duhandler__3stdFv
+	.4byte duhandler__3stdFv

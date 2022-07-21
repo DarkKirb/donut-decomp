@@ -482,19 +482,19 @@ $$252939:
 __vt__Q33scn5anime10SceneAnime:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn5anime10SceneAnimeCFv
-	.byte4 __dt__Q33scn5anime10SceneAnimeFv
-	.byte4 updateMain__Q33scn5anime10SceneAnimeFv
-	.byte4 updateUseGPU__Q33scn5anime10SceneAnimeFv
-	.byte4 updateDebug__Q33scn5anime10SceneAnimeFv
-	.byte4 draw__Q33scn5anime10SceneAnimeFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn5anime10SceneAnimeCFv
+	.4byte GetRuntimeTypeInfo__Q33scn5anime10SceneAnimeCFv
+	.4byte __dt__Q33scn5anime10SceneAnimeFv
+	.4byte updateMain__Q33scn5anime10SceneAnimeFv
+	.4byte updateUseGPU__Q33scn5anime10SceneAnimeFv
+	.4byte updateDebug__Q33scn5anime10SceneAnimeFv
+	.4byte draw__Q33scn5anime10SceneAnimeFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn5anime10SceneAnimeCFv
 .global __vt__Q23scn6IScene
 __vt__Q23scn6IScene:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q23scn6ISceneCFv
-	.byte4 __dt__Q23scn6ISceneFv
+	.4byte GetRuntimeTypeInfo__Q23scn6ISceneCFv
+	.4byte __dt__Q23scn6ISceneFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

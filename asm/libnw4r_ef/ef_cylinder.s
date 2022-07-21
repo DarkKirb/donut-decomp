@@ -531,7 +531,7 @@ lbl_800B6728:
 __vt__Q34nw4r2ef19EmitterFormCylinder:
 	.4byte 0
 	.4byte 0
-	.byte4 Emission__Q34nw4r2ef19EmitterFormCylinderFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
+	.4byte Emission__Q34nw4r2ef19EmitterFormCylinderFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

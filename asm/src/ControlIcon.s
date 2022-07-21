@@ -273,10 +273,10 @@ $$251820:
 	.4byte 0
 .global PANES__Q33scn5anime25$$2unnamed$$2ControlIcon_cpp$$2
 PANES__Q33scn5anime25$$2unnamed$$2ControlIcon_cpp$$2:
-	.byte4 $$251817
-	.byte4 $$251818
-	.byte4 $$251819
-	.byte4 $$251820
+	.4byte $$251817
+	.4byte $$251818
+	.4byte $$251819
+	.4byte $$251820
 .global $$252408
 $$252408:
 	.asciz "history/Detail"

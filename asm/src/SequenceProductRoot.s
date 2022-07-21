@@ -404,13 +404,13 @@ __dt__Q23seq19SequenceProductRootFv:
 __vt__Q23seq19SequenceProductRoot:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q23seq19SequenceProductRootCFv
-	.byte4 __dt__Q23seq19SequenceProductRootFv
-	.byte4 nextAction__Q23seq19SequenceProductRootCFv
-	.byte4 createChildSequence__Q23seq19SequenceProductRootCFv
-	.byte4 onChildSequenceEnd__Q23seq19SequenceProductRootFRQ23seq9ISequence
-	.byte4 createScene__Q23seq19SequenceProductRootCFv
-	.byte4 onSceneEnd__Q23seq19SequenceProductRootFRQ23scn6IScene
+	.4byte GetRuntimeTypeInfo__Q23seq19SequenceProductRootCFv
+	.4byte __dt__Q23seq19SequenceProductRootFv
+	.4byte nextAction__Q23seq19SequenceProductRootCFv
+	.4byte createChildSequence__Q23seq19SequenceProductRootCFv
+	.4byte onChildSequenceEnd__Q23seq19SequenceProductRootFRQ23seq9ISequence
+	.4byte createScene__Q23seq19SequenceProductRootCFv
+	.4byte onSceneEnd__Q23seq19SequenceProductRootFRQ23scn6IScene
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

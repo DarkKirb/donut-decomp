@@ -353,18 +353,18 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
-	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss10creditroah12StateFlyAway
 __vt__Q53scn4step4boss10creditroah12StateFlyAway:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss10creditroah12StateFlyAwayFv
-	.byte4 procAnim__Q53scn4step4boss10creditroah12StateFlyAwayFv
-	.byte4 procMove__Q53scn4step4boss10creditroah12StateFlyAwayFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss10creditroah12StateFlyAwayFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss10creditroah12StateFlyAwayFv
+	.4byte procAnim__Q53scn4step4boss10creditroah12StateFlyAwayFv
+	.4byte procMove__Q53scn4step4boss10creditroah12StateFlyAwayFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditroah12StateFlyAwayFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255018

@@ -2353,14 +2353,14 @@ lbl_800A6ED8:
 __vt__Q34nw4r2ef7Emitter:
 	.4byte 0
 	.4byte 0
-	.byte4 SendClosing__Q34nw4r2ef7EmitterFv
-	.byte4 DestroyFunc__Q34nw4r2ef7EmitterFv
-	.byte4 Initialize__Q34nw4r2ef7EmitterFPQ34nw4r2ef6EffectPQ34nw4r2ef15EmitterResourceUc
-	.byte4 CreateEmitter__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3
-	.byte4 CalcEmitter__Q34nw4r2ef7EmitterFv
-	.byte4 CalcParticle__Q34nw4r2ef7EmitterFv
-	.byte4 CalcEmission__Q34nw4r2ef7EmitterFv
-	.byte4 CalcBillboard__Q34nw4r2ef7EmitterFv
+	.4byte SendClosing__Q34nw4r2ef7EmitterFv
+	.4byte DestroyFunc__Q34nw4r2ef7EmitterFv
+	.4byte Initialize__Q34nw4r2ef7EmitterFPQ34nw4r2ef6EffectPQ34nw4r2ef15EmitterResourceUc
+	.4byte CreateEmitter__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3
+	.4byte CalcEmitter__Q34nw4r2ef7EmitterFv
+	.4byte CalcParticle__Q34nw4r2ef7EmitterFv
+	.4byte CalcEmission__Q34nw4r2ef7EmitterFv
+	.4byte CalcBillboard__Q34nw4r2ef7EmitterFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29108

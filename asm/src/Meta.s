@@ -95,41 +95,41 @@ Script__Q53scn4step4hero9modeldesc4MetaFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20
 $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248728
+	.4byte $$248728
 	.4byte 0x0000000C
-	.byte4 $$248729
+	.4byte $$248729
 	.4byte 0x0000000C
-	.byte4 $$248730
+	.4byte $$248730
 	.4byte 0x0000000C
-	.byte4 $$248731
+	.4byte $$248731
 	.4byte 0x0000000C
-	.byte4 $$248732
+	.4byte $$248732
 	.4byte 0x0000000C
-	.byte4 $$248733
+	.4byte $$248733
 	.4byte 0x0000000C
-	.byte4 $$248734
+	.4byte $$248734
 	.4byte 0x0000000C
-	.byte4 $$248735
+	.4byte $$248735
 	.4byte 0x0000000C
-	.byte4 $$248736
+	.4byte $$248736
 	.4byte 0x0000000C
-	.byte4 $$248737
+	.4byte $$248737
 	.4byte 0x0000000C
-	.byte4 $$248738
+	.4byte $$248738
 	.4byte 0x0000000C
-	.byte4 $$248739
+	.4byte $$248739
 	.4byte 0x0000000C
-	.byte4 $$248740
+	.4byte $$248740
 	.4byte 0x0000000C
-	.byte4 $$248741
+	.4byte $$248741
 	.4byte 0x0000000C
-	.byte4 $$248742
+	.4byte $$248742
 	.4byte 0x0000000C
-	.byte4 $$248743
+	.4byte $$248743
 	.4byte 0x0000000C
-	.byte4 $$248744
+	.4byte $$248744
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -155,15 +155,15 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248745
+	.4byte $$248745
 	.4byte 0x0000000C
-	.byte4 $$248746
+	.4byte $$248746
 	.4byte 0x0000000C
-	.byte4 $$248747
+	.4byte $$248747
 	.4byte 0x0000000C
-	.byte4 $$248748
+	.4byte $$248748
 	.4byte 0x0000000C
-	.byte4 $$248749
+	.4byte $$248749
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -197,21 +197,21 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248750
+	.4byte $$248750
 	.4byte 0x0000000C
-	.byte4 $$248751
+	.4byte $$248751
 	.4byte 0x0000000C
-	.byte4 $$248752
+	.4byte $$248752
 	.4byte 0x0000000C
-	.byte4 $$248753
+	.4byte $$248753
 	.4byte 0x0000000C
-	.byte4 $$248754
+	.4byte $$248754
 	.4byte 0x0000000C
-	.byte4 $$248755
+	.4byte $$248755
 	.4byte 0x0000000C
-	.byte4 $$248756
+	.4byte $$248756
 	.4byte 0x0000000C
-	.byte4 $$248757
+	.4byte $$248757
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -235,25 +235,25 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248758
+	.4byte $$248758
 	.4byte 0x0000000C
-	.byte4 $$248759
+	.4byte $$248759
 	.4byte 0x0000000C
-	.byte4 $$248758
+	.4byte $$248758
 	.4byte 0x0000000C
-	.byte4 $$248759
+	.4byte $$248759
 	.4byte 0x0000000C
-	.byte4 $$248760
+	.4byte $$248760
 	.4byte 0x0000000C
-	.byte4 $$248761
+	.4byte $$248761
 	.4byte 0x0000000C
-	.byte4 $$248762
+	.4byte $$248762
 	.4byte 0x0000000C
-	.byte4 $$248763
+	.4byte $$248763
 	.4byte 0x0000000C
-	.byte4 $$248764
+	.4byte $$248764
 	.4byte 0x0000000C
-	.byte4 $$248765
+	.4byte $$248765
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -267,115 +267,115 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248766
+	.4byte $$248766
 	.4byte 0x0000000C
-	.byte4 $$248767
+	.4byte $$248767
 	.4byte 0x0000000C
-	.byte4 $$248768
+	.4byte $$248768
 	.4byte 0x0000000C
-	.byte4 $$248769
+	.4byte $$248769
 	.4byte 0x0000000C
-	.byte4 $$248770
+	.4byte $$248770
 	.4byte 0x0000000C
-	.byte4 $$248771
+	.4byte $$248771
 	.4byte 0x0000000C
-	.byte4 $$248772
+	.4byte $$248772
 	.4byte 0x0000000C
-	.byte4 $$248773
+	.4byte $$248773
 	.4byte 0x0000000C
-	.byte4 $$248774
+	.4byte $$248774
 	.4byte 0x0000000C
-	.byte4 $$248775
+	.4byte $$248775
 	.4byte 0x0000000C
-	.byte4 $$248776
+	.4byte $$248776
 	.4byte 0x0000000C
-	.byte4 $$248777
+	.4byte $$248777
 	.4byte 0x0000000C
-	.byte4 $$248778
+	.4byte $$248778
 	.4byte 0x0000000C
-	.byte4 $$248779
+	.4byte $$248779
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248732
+	.4byte $$248732
 	.4byte 0x0000000C
-	.byte4 $$248780
+	.4byte $$248780
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
-	.byte4 $$248781
+	.4byte $$248781
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
-	.byte4 $$248782
+	.4byte $$248782
 	.4byte 0x0000000C
-	.byte4 $$248783
+	.4byte $$248783
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248784
+	.4byte $$248784
 	.4byte 0x0000000C
-	.byte4 $$248785
+	.4byte $$248785
 	.4byte 0x0000000C
-	.byte4 $$248786
+	.4byte $$248786
 	.4byte 0x0000000C
-	.byte4 $$248787
+	.4byte $$248787
 	.4byte 0x0000000C
-	.byte4 $$248788
+	.4byte $$248788
 	.4byte 0x0000000C
-	.byte4 $$248789
+	.4byte $$248789
 	.4byte 0x0000000C
-	.byte4 $$248790
+	.4byte $$248790
 	.4byte 0x0000000C
-	.byte4 $$248791
+	.4byte $$248791
 	.4byte 0x0000000C
-	.byte4 $$248792
+	.4byte $$248792
 	.4byte 0x0000000C
-	.byte4 $$248793
+	.4byte $$248793
 	.4byte 0x0000000C
-	.byte4 $$248794
+	.4byte $$248794
 	.4byte 0x0000000C
-	.byte4 $$248795
+	.4byte $$248795
 	.4byte 0x0000000C
-	.byte4 $$248795
+	.4byte $$248795
 	.4byte 0x0000000C
-	.byte4 $$248795
+	.4byte $$248795
 	.4byte 0x0000000C
-	.byte4 $$248796
+	.4byte $$248796
 	.4byte 0x0000000C
-	.byte4 $$248797
+	.4byte $$248797
 	.4byte 0x0000000C
-	.byte4 $$248798
+	.4byte $$248798
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248799
+	.4byte $$248799
 	.4byte 0x0000000C
-	.byte4 $$248747
+	.4byte $$248747
 	.4byte 0x0000000C
-	.byte4 $$248800
+	.4byte $$248800
 	.4byte 0x0000000C
-	.byte4 $$248801
+	.4byte $$248801
 	.4byte 0x0000000C
-	.byte4 $$248802
+	.4byte $$248802
 	.4byte 0x0000000C
-	.byte4 $$248803
+	.4byte $$248803
 	.4byte 0x0000000C
-	.byte4 $$248804
+	.4byte $$248804
 	.4byte 0x0000000C
-	.byte4 $$248805
+	.4byte $$248805
 	.4byte 0x0000000C
-	.byte4 $$248806
+	.4byte $$248806
 	.4byte 0x0000000C
-	.byte4 $$248807
+	.4byte $$248807
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -717,103 +717,103 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248808
+	.4byte $$248808
 	.4byte 0x0000000C
-	.byte4 $$248809
+	.4byte $$248809
 	.4byte 0x0000000C
-	.byte4 $$248810
+	.4byte $$248810
 	.4byte 0x0000000C
-	.byte4 $$248811
+	.4byte $$248811
 	.4byte 0x0000000C
-	.byte4 $$248812
+	.4byte $$248812
 	.4byte 0x0000000C
-	.byte4 $$248813
+	.4byte $$248813
 	.4byte 0x0000000C
-	.byte4 $$248814
+	.4byte $$248814
 	.4byte 0x0000000C
-	.byte4 $$248815
+	.4byte $$248815
 	.4byte 0x0000000C
-	.byte4 $$248816
+	.4byte $$248816
 	.4byte 0x0000000C
-	.byte4 $$248817
+	.4byte $$248817
 	.4byte 0x0000000C
-	.byte4 $$248818
+	.4byte $$248818
 	.4byte 0x0000000C
-	.byte4 $$248819
+	.4byte $$248819
 	.4byte 0x0000000C
-	.byte4 $$248820
+	.4byte $$248820
 	.4byte 0x0000000C
-	.byte4 $$248821
+	.4byte $$248821
 	.4byte 0x0000000C
-	.byte4 $$248822
+	.4byte $$248822
 	.4byte 0x0000000C
-	.byte4 $$248823
+	.4byte $$248823
 	.4byte 0x0000000C
-	.byte4 $$248824
+	.4byte $$248824
 	.4byte 0x0000000C
-	.byte4 $$248825
+	.4byte $$248825
 	.4byte 0x0000000C
-	.byte4 $$248826
+	.4byte $$248826
 	.4byte 0x0000000C
-	.byte4 $$248827
+	.4byte $$248827
 	.4byte 0x0000000C
-	.byte4 $$248828
+	.4byte $$248828
 	.4byte 0x0000000C
-	.byte4 $$248829
+	.4byte $$248829
 	.4byte 0x0000000C
-	.byte4 $$248830
+	.4byte $$248830
 	.4byte 0x0000000C
-	.byte4 $$248831
+	.4byte $$248831
 	.4byte 0x0000000C
-	.byte4 $$248832
+	.4byte $$248832
 	.4byte 0x0000000C
-	.byte4 $$248833
+	.4byte $$248833
 	.4byte 0x0000000C
-	.byte4 $$248834
+	.4byte $$248834
 	.4byte 0x0000000C
-	.byte4 $$248835
+	.4byte $$248835
 	.4byte 0x0000000C
-	.byte4 $$248836
+	.4byte $$248836
 	.4byte 0x0000000C
-	.byte4 $$248837
+	.4byte $$248837
 	.4byte 0x0000000C
-	.byte4 $$248838
+	.4byte $$248838
 	.4byte 0x0000000C
-	.byte4 $$248839
+	.4byte $$248839
 	.4byte 0x0000000C
-	.byte4 $$248840
+	.4byte $$248840
 	.4byte 0x0000000C
-	.byte4 $$248841
+	.4byte $$248841
 	.4byte 0x0000000C
-	.byte4 $$248842
+	.4byte $$248842
 	.4byte 0x0000000C
-	.byte4 $$248843
+	.4byte $$248843
 	.4byte 0x0000000C
-	.byte4 $$248844
+	.4byte $$248844
 	.4byte 0x0000000C
-	.byte4 $$248845
+	.4byte $$248845
 	.4byte 0x0000000C
-	.byte4 $$248846
+	.4byte $$248846
 	.4byte 0x0000000C
-	.byte4 $$248847
+	.4byte $$248847
 	.4byte 0x0000000C
-	.byte4 $$248848
+	.4byte $$248848
 	.4byte 0x0000000C
-	.byte4 $$248849
+	.4byte $$248849
 	.4byte 0x0000000C
-	.byte4 $$248850
+	.4byte $$248850
 	.4byte 0x0000000C
-	.byte4 $$248851
+	.4byte $$248851
 	.4byte 0x0000000C
-	.byte4 $$248852
+	.4byte $$248852
 	.4byte 0x0000000C
-	.byte4 $$248853
+	.4byte $$248853
 	.4byte 0x0000000C
-	.byte4 $$248854
+	.4byte $$248854
 	.4byte 0x0000000C
-	.byte4 $$248855
+	.4byte $$248855
 	.4byte 0x0000000C
-	.byte4 $$248856
+	.4byte $$248856
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -949,39 +949,39 @@ $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248857
+	.4byte $$248857
 	.4byte 0x0000000C
-	.byte4 $$248858
+	.4byte $$248858
 	.4byte 0x0000000C
-	.byte4 $$248859
+	.4byte $$248859
 	.4byte 0x0000000C
-	.byte4 $$248860
+	.4byte $$248860
 	.4byte 0x0000000C
-	.byte4 $$248861
+	.4byte $$248861
 	.4byte 0x0000000C
-	.byte4 $$248862
+	.4byte $$248862
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248727
+	.4byte $$248727
 	.4byte 0x0000000C
-	.byte4 $$248863
+	.4byte $$248863
 	.4byte 0x0000000C
-	.byte4 $$248864
+	.4byte $$248864
 	.4byte 0x0000000C
-	.byte4 $$248865
+	.4byte $$248865
 	.4byte 0x0000000C
-	.byte4 $$248866
+	.4byte $$248866
 	.4byte 0x0000000C
-	.byte4 $$248867
+	.4byte $$248867
 	.4byte 0x0000000C
 	.4byte 0
 	.4byte 0
@@ -1395,36 +1395,36 @@ $$248885:
 	.balign 4
 .global $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc4MetaFv$$2NAMES$$20
 $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc4MetaFv$$2NAMES$$20:
-	.byte4 $$248878
-	.byte4 $$248879
-	.byte4 $$248880
-	.byte4 $$248881
-	.byte4 $$248882
-	.byte4 $$248883
-	.byte4 $$248881
-	.byte4 $$248881
-	.byte4 $$248884
-	.byte4 $$248885
-	.byte4 $$248881
-	.byte4 $$248879
-	.byte4 $$248886
-	.byte4 $$248887
-	.byte4 $$248880
-	.byte4 $$248881
-	.byte4 $$248881
-	.byte4 $$248883
-	.byte4 $$248888
-	.byte4 $$248882
-	.byte4 $$248889
-	.byte4 $$248878
-	.byte4 $$248878
-	.byte4 $$248878
-	.byte4 $$248890
-	.byte4 $$248890
-	.byte4 $$248890
-	.byte4 $$248890
-	.byte4 $$248890
-	.byte4 $$248890
+	.4byte $$248878
+	.4byte $$248879
+	.4byte $$248880
+	.4byte $$248881
+	.4byte $$248882
+	.4byte $$248883
+	.4byte $$248881
+	.4byte $$248881
+	.4byte $$248884
+	.4byte $$248885
+	.4byte $$248881
+	.4byte $$248879
+	.4byte $$248886
+	.4byte $$248887
+	.4byte $$248880
+	.4byte $$248881
+	.4byte $$248881
+	.4byte $$248883
+	.4byte $$248888
+	.4byte $$248882
+	.4byte $$248889
+	.4byte $$248878
+	.4byte $$248878
+	.4byte $$248878
+	.4byte $$248890
+	.4byte $$248890
+	.4byte $$248890
+	.4byte $$248890
+	.4byte $$248890
+	.4byte $$248890
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248727

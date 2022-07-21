@@ -493,19 +493,19 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21St
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21StateParasolParachute$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21StateParasolParachute$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21StateParasolParachute$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21StateParasolParachute$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol21StateParasolParachute$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q53scn4step4hero7parasol21StateParasolParachute
 __vt__Q53scn4step4hero7parasol21StateParasolParachute:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7parasol21StateParasolParachuteFv
-	.byte4 procAnim__Q53scn4step4hero7parasol21StateParasolParachuteFv
-	.byte4 procMove__Q53scn4step4hero7parasol21StateParasolParachuteFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero7parasol21StateParasolParachuteFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero7parasol21StateParasolParachuteFv
+	.4byte procAnim__Q53scn4step4hero7parasol21StateParasolParachuteFv
+	.4byte procMove__Q53scn4step4hero7parasol21StateParasolParachuteFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7parasol21StateParasolParachuteFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -461,9 +461,9 @@ $$251704:
 	.balign 4
 .global T_WIPE_FILE_PATH_TABLE__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2
 T_WIPE_FILE_PATH_TABLE__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2:
-	.byte4 $$251702
-	.byte4 $$251703
-	.byte4 $$251704
+	.4byte $$251702
+	.4byte $$251703
+	.4byte $$251704
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

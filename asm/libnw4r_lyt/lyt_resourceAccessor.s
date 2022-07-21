@@ -27,7 +27,7 @@ GetFont__Q34nw4r3lyt16ResourceAccessorFPCc:
 __vt__Q34nw4r3lyt16ResourceAccessor:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r3lyt16ResourceAccessorFv
+	.4byte __dt__Q34nw4r3lyt16ResourceAccessorFv
 	.4byte 0
-	.byte4 GetFont__Q34nw4r3lyt16ResourceAccessorFPCc
+	.4byte GetFont__Q34nw4r3lyt16ResourceAccessorFPCc
 	.4byte 0

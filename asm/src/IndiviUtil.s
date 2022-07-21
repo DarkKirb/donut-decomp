@@ -562,227 +562,227 @@ lbl_803D6590:
 /* 803D65A4 003D23E4  4E 80 04 20 */	bctr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3IndiviUtil_cpp
+	.4byte __sinit_$$3IndiviUtil_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.byte4 Create__Q53scn4step6weapon11starshotlv19ModelDescFv
+	.4byte Create__Q53scn4step6weapon11starshotlv19ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon11starshotlv29ModelDescFv
+	.4byte Create__Q53scn4step6weapon11starshotlv29ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon11starshotlv39ModelDescFv
+	.4byte Create__Q53scn4step6weapon11starshotlv39ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon7airball9ModelDescFv
+	.4byte Create__Q53scn4step6weapon7airball9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon13whispyairball9ModelDescFv
-	.byte4 CreateEx__Q53scn4step6weapon13whispyairball9ModelDescFv
-	.byte4 Create__Q53scn4step6weapon10comothread9ModelDescFv
+	.4byte Create__Q53scn4step6weapon13whispyairball9ModelDescFv
+	.4byte CreateEx__Q53scn4step6weapon13whispyairball9ModelDescFv
+	.4byte Create__Q53scn4step6weapon10comothread9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon15sirkibblecutter9ModelDescFv
+	.4byte Create__Q53scn4step6weapon15sirkibblecutter9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon12shotzobullet9ModelDescFv
+	.4byte Create__Q53scn4step6weapon12shotzobullet9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon12leafanpollen9ModelDescFv
+	.4byte Create__Q53scn4step6weapon12leafanpollen9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon10spearspear9ModelDescFv
+	.4byte Create__Q53scn4step6weapon10spearspear9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon12hammerhammer9ModelDescFv
+	.4byte Create__Q53scn4step6weapon12hammerhammer9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon8wingshot9ModelDescFv
+	.4byte Create__Q53scn4step6weapon8wingshot9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv
+	.4byte Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon20enemywaterbulletwarp9ModelDescFv
+	.4byte Create__Q53scn4step6weapon20enemywaterbulletwarp9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon13gigatzobullet9ModelDescFv
+	.4byte Create__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon13owgulffeather9ModelDescFv
+	.4byte Create__Q53scn4step6weapon13owgulffeather9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon9foleyleaf9ModelDescFv
+	.4byte Create__Q53scn4step6weapon9foleyleaf9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon10bowbyarrow9ModelDescFv
+	.4byte Create__Q53scn4step6weapon10bowbyarrow9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon12jucklecutter9ModelDescFv
+	.4byte Create__Q53scn4step6weapon12jucklecutter9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon17tsukikageshuriken9ModelDescFv
+	.4byte Create__Q53scn4step6weapon17tsukikageshuriken9ModelDescFv
 	.4byte 0
-	.byte4 CreateVolt__Q53scn4step6weapon13gigatzobullet9ModelDescFv
+	.4byte CreateVolt__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 CreateCold__Q53scn4step6weapon13gigatzobullet9ModelDescFv
+	.4byte CreateCold__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon10whispyroot9ModelDescFv
+	.4byte Create__Q53scn4step6weapon10whispyroot9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon18combinationairball9ModelDescFv
+	.4byte Create__Q53scn4step6weapon18combinationairball9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv
+	.4byte Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon12dededehammer9ModelDescFv
+	.4byte Create__Q53scn4step6weapon12dededehammer9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon8deespear9ModelDescFv
+	.4byte Create__Q53scn4step6weapon8deespear9ModelDescFv
 	.4byte 0
-	.byte4 CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy1x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy1x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy2x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy2x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy3x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy3x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy4x4__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy4x4__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavyA1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavyA1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavyB1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavyB1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy1x2x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy1x2x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy1x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy1x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy3x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy3x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy2x4x4x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy2x4x4x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHeavy3x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
+	.4byte CreateHeavy3x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.byte4 CreateHalcan__Q53scn4step6weapon10bowbyarrow9ModelDescFv
+	.4byte CreateHalcan__Q53scn4step6weapon10bowbyarrow9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q53scn4step6weapon11hotheadfire9ModelDescFv
+	.4byte Create__Q53scn4step6weapon11hotheadfire9ModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.byte4 Create__Q43scn4step6weapon22EffectLocatorModelDescFv
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.byte4 Create__Q53scn4step5enemy9sirkibble9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9sirkibble10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9sirkibble9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9sirkibble10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy10brontoburt9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10brontoburt10CharaParamFv
+	.4byte Create__Q53scn4step5enemy10brontoburt9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10brontoburt10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9waddledee10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.byte4 CreateNormal__Q53scn4step5enemy11bladeknight9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11bladeknight10CharaParamFv
+	.4byte CreateNormal__Q53scn4step5enemy11bladeknight9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11bladeknight10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5cappy9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5cappy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5cappy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5cappy10CharaParamFv
 	.4byte 0
-	.byte4 CreateNormal__Q53scn4step5enemy7hothead9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7hothead10CharaParamFv
+	.4byte CreateNormal__Q53scn4step5enemy7hothead9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7hothead10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy10knucklejoe9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10knucklejoe10CharaParamFv
+	.4byte Create__Q53scn4step5enemy10knucklejoe9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10knucklejoe10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9puppetdee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9puppetdee10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9puppetdee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9puppetdee10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8armordee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8armordee10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8armordee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8armordee10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy4como9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy4como10CharaParamFv
+	.4byte Create__Q53scn4step5enemy4como9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4como10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5gordo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5gordo10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5gordo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5gordo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6whippy9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6whippy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6whippy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6whippy10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6shotzo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6shotzo10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6shotzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6shotzo10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6leafan9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6leafan10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6leafan9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6leafan10CharaParamFv
 	.4byte 0
-	.byte4 CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9waddledoo10CharaParamFv
+	.4byte CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledoo10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6bouncy9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6bouncy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6bouncy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6bouncy10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6sparky9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6sparky10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6sparky9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6sparky10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8needlous9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8needlous10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8needlous9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8needlous10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy11broomhatter9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11broomhatter10CharaParamFv
+	.4byte Create__Q53scn4step5enemy11broomhatter9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11broomhatter10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6scarfy9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6scarfy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6scarfy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6scarfy10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5nruff9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5nruff10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5nruff9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5nruff10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6flamer9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6flamer10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6flamer9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6flamer10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy10watergalbo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10watergalbo10CharaParamFv
+	.4byte Create__Q53scn4step5enemy10watergalbo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10watergalbo10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5rocky9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5rocky10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5rocky9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5rocky10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -793,20 +793,20 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy10poppybrojr9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10poppybrojr10CharaParamFv
+	.4byte Create__Q53scn4step5enemy10poppybrojr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10poppybrojr10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5noddy9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5noddy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5noddy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5noddy10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8cerulean9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8cerulean10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8cerulean9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8cerulean10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy7blipper9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7blipper10CharaParamFv
+	.4byte Create__Q53scn4step5enemy7blipper9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7blipper10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy7gigatzo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7gigatzo10CharaParamFv
+	.4byte Create__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -814,59 +814,59 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy11sisterbound9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11sisterbound10CharaParamFv
+	.4byte Create__Q53scn4step5enemy11sisterbound9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11sisterbound10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8rollball9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8rollball10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8rollball9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8rollball10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy7mumbies9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7mumbies10CharaParamFv
+	.4byte Create__Q53scn4step5enemy7mumbies9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7mumbies10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10parasoldee10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldee10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy4kabu9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy4kabu10CharaParamFv
+	.4byte Create__Q53scn4step5enemy4kabu9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4kabu10CharaParamFv
 	.4byte 0
-	.byte4 CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10parasoldoo10CharaParamFv
+	.4byte CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldoo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5foley9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5foley10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5foley9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5foley10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6juckle9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6juckle10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6juckle9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6juckle10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5bowby9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5bowby10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5bowby9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5bowby10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6owgulf9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6owgulf10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6owgulf9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6owgulf10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6degout9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6degout10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6degout9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6degout10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5sheld9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5sheld10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5sheld9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5sheld10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6lanzer9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6lanzer10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6lanzer9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6lanzer10CharaParamFv
 	.4byte 0
-	.byte4 CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6chilly10CharaParamFv
+	.4byte CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6chilly10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9tsukikage9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9tsukikage10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9tsukikage9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9tsukikage10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5gemra9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5gemra10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5gemra9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5gemra10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -874,8 +874,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 CreateVolt__Q53scn4step5enemy7gigatzo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7gigatzo10CharaParamFv
+	.4byte CreateVolt__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -889,17 +889,17 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6pierce9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6pierce10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6pierce9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6pierce10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8searches9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8searches10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8searches9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8searches10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy4elec9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy4elec10CharaParamFv
+	.4byte Create__Q53scn4step5enemy4elec9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4elec10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -907,23 +907,23 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy6sodory9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy6sodory10CharaParamFv
+	.4byte Create__Q53scn4step5enemy6sodory9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6sodory10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5snowl9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5snowl10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5snowl9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5snowl10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9waddledee10CharaParamFv
+	.4byte HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.byte4 CreateCold__Q53scn4step5enemy7gigatzo9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7gigatzo10CharaParamFv
+	.4byte CreateCold__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -943,8 +943,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8toughdee10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8toughdee10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -958,8 +958,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 HalcandleCreate__Q53scn4step5enemy10brontoburt9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10brontoburt10CharaParamFv
+	.4byte HalcandleCreate__Q53scn4step5enemy10brontoburt9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10brontoburt10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -979,23 +979,23 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy7sandbag9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7sandbag10CharaParamFv
+	.4byte Create__Q53scn4step5enemy7sandbag9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7sandbag10CharaParamFv
 	.4byte 0
-	.byte4 HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10parasoldee10CharaParamFv
+	.4byte HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldee10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 HalcandleCreate__Q53scn4step5enemy5bowby9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy5bowby10CharaParamFv
+	.4byte HalcandleCreate__Q53scn4step5enemy5bowby9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5bowby10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy3sun9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy3sun10CharaParamFv
+	.4byte Create__Q53scn4step5enemy3sun9ModelDescFv
+	.4byte Create__Q53scn4step5enemy3sun10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy3sun9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy3sun10CharaParamFv
+	.4byte Create__Q53scn4step5enemy3sun9ModelDescFv
+	.4byte Create__Q53scn4step5enemy3sun10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1003,17 +1003,17 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 CreateMaster__Q53scn4step5enemy8rollball9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8rollball10CharaParamFv
+	.4byte CreateMaster__Q53scn4step5enemy8rollball9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8rollball10CharaParamFv
 	.4byte 0
-	.byte4 GoldCreate__Q53scn4step5enemy9waddledee9ModelDescFv
-	.byte4 CreateGold__Q53scn4step5enemy9waddledee10CharaParamFv
+	.4byte GoldCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte CreateGold__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy10stareffect9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy10stareffect10CharaParamFv
+	.4byte Create__Q53scn4step5enemy10stareffect9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10stareffect10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8cappyhat9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8cappyhat10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8cappyhat9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8cappyhat10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1027,8 +1027,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy11whispyapple9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11whispyapple10CharaParamFv
+	.4byte Create__Q53scn4step5enemy11whispyapple9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11whispyapple10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1048,26 +1048,26 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy7parasol9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy7parasol10CharaParamFv
+	.4byte Create__Q53scn4step5enemy7parasol9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7parasol10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy8dubiorjr9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy8dubiorjr10CharaParamFv
-	.byte4 CreateEx__Q53scn4step5enemy8dubiorjr9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy14poppybrojrbomb9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy14poppybrojrbomb10CharaParamFv
+	.4byte Create__Q53scn4step5enemy8dubiorjr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8dubiorjr10CharaParamFv
+	.4byte CreateEx__Q53scn4step5enemy8dubiorjr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy14poppybrojrbomb9ModelDescFv
+	.4byte Create__Q53scn4step5enemy14poppybrojrbomb10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy15zankibblecutter9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy15zankibblecutter10CharaParamFv
+	.4byte Create__Q53scn4step5enemy15zankibblecutter9ModelDescFv
+	.4byte Create__Q53scn4step5enemy15zankibblecutter10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv
+	.4byte Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy11dubiorspark9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy11dubiorspark10CharaParamFv
+	.4byte Create__Q53scn4step5enemy11dubiorspark9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11dubiorspark10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1117,8 +1117,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy9mbossdead9ModelDescFv
-	.byte4 Create__Q53scn4step5enemy9mbossdead10CharaParamFv
+	.4byte Create__Q53scn4step5enemy9mbossdead9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9mbossdead10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1147,8 +1147,8 @@ T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q53scn4step5enemy5cappy9ModelDescFv
-	.byte4 CreateSkinned__Q53scn4step5enemy5cappy10CharaParamFv
+	.4byte Create__Q53scn4step5enemy5cappy9ModelDescFv
+	.4byte CreateSkinned__Q53scn4step5enemy5cappy10CharaParamFv
 	.4byte 0
 	.4byte 0
 
@@ -1169,10 +1169,10 @@ $$252525:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.byte4 Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
 .global T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.byte4 Create__Q53scn4step5enemy6common9ParamBaseFv
+	.4byte Create__Q53scn4step5enemy6common9ParamBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252509

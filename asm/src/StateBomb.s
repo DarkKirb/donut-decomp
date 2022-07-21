@@ -270,9 +270,9 @@ lbl_80238104:
 __vt__Q53scn4step4boss7bonkers9StateBomb:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss7bonkers9StateBombFv
-	.byte4 procAnim__Q53scn4step4boss7bonkers9StateBombFv
-	.byte4 procMove__Q53scn4step4boss7bonkers9StateBombFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss7bonkers9StateBombFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss7bonkers9StateBombFv
+	.4byte procAnim__Q53scn4step4boss7bonkers9StateBombFv
+	.4byte procMove__Q53scn4step4boss7bonkers9StateBombFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss7bonkers9StateBombFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -226,17 +226,17 @@ __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common17BrainCreditPraise
 __vt__Q53scn4step5enemy6common17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
-	.byte4 onStart__Q53scn4step5enemy6common17BrainCreditPraiseFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+	.4byte onStart__Q53scn4step5enemy6common17BrainCreditPraiseFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -244,11 +244,11 @@ __vt__Q53scn4step5enemy6common17BrainCreditPraise:
 __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
-	.byte4 onStart__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
+	.4byte onStart__Q53scn4step5enemy6bouncy17BrainCreditPraiseFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -256,9 +256,9 @@ __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise:
 __vt__Q53scn4step5enemy6sparky17BrainCreditPraise:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
-	.byte4 onStart__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
+	.4byte onStart__Q53scn4step5enemy6sparky17BrainCreditPraiseFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

@@ -347,15 +347,15 @@ state__Q43scn4step4hero11ObjInfoImplCFv:
 __vt__Q43scn4step4boss11ObjInfoImpl:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4boss11ObjInfoImplFv
-	.byte4 name__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 anim__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 footState__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 hitPoint__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 location__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 move__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 script__Q43scn4step4boss11ObjInfoImplCFv
-	.byte4 state__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte __dt__Q43scn4step4boss11ObjInfoImplFv
+	.4byte name__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte anim__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte footState__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte hitPoint__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte location__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte move__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte script__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte state__Q43scn4step4boss11ObjInfoImplCFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -398,15 +398,15 @@ $$255469:
 __vt__Q43scn4step4hero11ObjInfoImpl:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4hero11ObjInfoImplFv
-	.byte4 name__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 anim__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 footState__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 hitPoint__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 location__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 move__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 script__Q43scn4step4hero11ObjInfoImplCFv
-	.byte4 state__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte __dt__Q43scn4step4hero11ObjInfoImplFv
+	.4byte name__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte anim__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte footState__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte hitPoint__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte location__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte move__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte script__Q43scn4step4hero11ObjInfoImplCFv
+	.4byte state__Q43scn4step4hero11ObjInfoImplCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254747

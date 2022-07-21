@@ -647,19 +647,19 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9St
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1Fv
-	.byte4 create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1Fv
+	.4byte __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1Fv
+	.4byte create__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1Fv
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1Fv
-	.byte4 create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1Fv
+	.4byte __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1Fv
+	.4byte create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1Fv
 .global __vt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1
 __vt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1Fv
+	.4byte __dt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1Fv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

@@ -12299,11 +12299,11 @@ UcsFF:
 	.4byte 0
 .global UcsSjisTable
 UcsSjisTable:
-	.byte4 Ucs00
+	.4byte Ucs00
 	.4byte 0
 	.4byte 0
-	.byte4 Ucs03
-	.byte4 Ucs04
+	.4byte Ucs03
+	.4byte Ucs04
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12331,13 +12331,13 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Ucs20
-	.byte4 Ucs21
-	.byte4 Ucs22
-	.byte4 Ucs23
+	.4byte Ucs20
+	.4byte Ucs21
+	.4byte Ucs22
+	.4byte Ucs23
 	.4byte 0
-	.byte4 Ucs25
-	.byte4 Ucs26
+	.4byte Ucs25
+	.4byte Ucs26
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12347,7 +12347,7 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Ucs30
+	.4byte Ucs30
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12377,88 +12377,88 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Ucs4E
-	.byte4 Ucs4F
-	.byte4 Ucs50
-	.byte4 Ucs51
-	.byte4 Ucs52
-	.byte4 Ucs53
-	.byte4 Ucs54
-	.byte4 Ucs55
-	.byte4 Ucs56
-	.byte4 Ucs57
-	.byte4 Ucs58
-	.byte4 Ucs59
-	.byte4 Ucs5A
-	.byte4 Ucs5B
-	.byte4 Ucs5C
-	.byte4 Ucs5D
-	.byte4 Ucs5E
-	.byte4 Ucs5F
-	.byte4 Ucs60
-	.byte4 Ucs61
-	.byte4 Ucs62
-	.byte4 Ucs63
-	.byte4 Ucs64
-	.byte4 Ucs65
-	.byte4 Ucs66
-	.byte4 Ucs67
-	.byte4 Ucs68
-	.byte4 Ucs69
-	.byte4 Ucs6A
-	.byte4 Ucs6B
-	.byte4 Ucs6C
-	.byte4 Ucs6D
-	.byte4 Ucs6E
-	.byte4 Ucs6F
-	.byte4 Ucs70
-	.byte4 Ucs71
-	.byte4 Ucs72
-	.byte4 Ucs73
-	.byte4 Ucs74
-	.byte4 Ucs75
-	.byte4 Ucs76
-	.byte4 Ucs77
-	.byte4 Ucs78
-	.byte4 Ucs79
-	.byte4 Ucs7A
-	.byte4 Ucs7B
-	.byte4 Ucs7C
-	.byte4 Ucs7D
-	.byte4 Ucs7E
-	.byte4 Ucs7F
-	.byte4 Ucs80
-	.byte4 Ucs81
-	.byte4 Ucs82
-	.byte4 Ucs83
-	.byte4 Ucs84
-	.byte4 Ucs85
-	.byte4 Ucs86
-	.byte4 Ucs87
-	.byte4 Ucs88
-	.byte4 Ucs89
-	.byte4 Ucs8A
-	.byte4 Ucs8B
-	.byte4 Ucs8C
-	.byte4 Ucs8D
-	.byte4 Ucs8E
-	.byte4 Ucs8F
-	.byte4 Ucs90
-	.byte4 Ucs91
-	.byte4 Ucs92
-	.byte4 Ucs93
-	.byte4 Ucs94
-	.byte4 Ucs95
-	.byte4 Ucs96
-	.byte4 Ucs97
-	.byte4 Ucs98
-	.byte4 Ucs99
-	.byte4 Ucs9A
-	.byte4 Ucs9B
-	.byte4 Ucs9C
-	.byte4 Ucs9D
-	.byte4 Ucs9E
-	.byte4 Ucs9F
+	.4byte Ucs4E
+	.4byte Ucs4F
+	.4byte Ucs50
+	.4byte Ucs51
+	.4byte Ucs52
+	.4byte Ucs53
+	.4byte Ucs54
+	.4byte Ucs55
+	.4byte Ucs56
+	.4byte Ucs57
+	.4byte Ucs58
+	.4byte Ucs59
+	.4byte Ucs5A
+	.4byte Ucs5B
+	.4byte Ucs5C
+	.4byte Ucs5D
+	.4byte Ucs5E
+	.4byte Ucs5F
+	.4byte Ucs60
+	.4byte Ucs61
+	.4byte Ucs62
+	.4byte Ucs63
+	.4byte Ucs64
+	.4byte Ucs65
+	.4byte Ucs66
+	.4byte Ucs67
+	.4byte Ucs68
+	.4byte Ucs69
+	.4byte Ucs6A
+	.4byte Ucs6B
+	.4byte Ucs6C
+	.4byte Ucs6D
+	.4byte Ucs6E
+	.4byte Ucs6F
+	.4byte Ucs70
+	.4byte Ucs71
+	.4byte Ucs72
+	.4byte Ucs73
+	.4byte Ucs74
+	.4byte Ucs75
+	.4byte Ucs76
+	.4byte Ucs77
+	.4byte Ucs78
+	.4byte Ucs79
+	.4byte Ucs7A
+	.4byte Ucs7B
+	.4byte Ucs7C
+	.4byte Ucs7D
+	.4byte Ucs7E
+	.4byte Ucs7F
+	.4byte Ucs80
+	.4byte Ucs81
+	.4byte Ucs82
+	.4byte Ucs83
+	.4byte Ucs84
+	.4byte Ucs85
+	.4byte Ucs86
+	.4byte Ucs87
+	.4byte Ucs88
+	.4byte Ucs89
+	.4byte Ucs8A
+	.4byte Ucs8B
+	.4byte Ucs8C
+	.4byte Ucs8D
+	.4byte Ucs8E
+	.4byte Ucs8F
+	.4byte Ucs90
+	.4byte Ucs91
+	.4byte Ucs92
+	.4byte Ucs93
+	.4byte Ucs94
+	.4byte Ucs95
+	.4byte Ucs96
+	.4byte Ucs97
+	.4byte Ucs98
+	.4byte Ucs99
+	.4byte Ucs9A
+	.4byte Ucs9B
+	.4byte Ucs9C
+	.4byte Ucs9D
+	.4byte Ucs9E
+	.4byte Ucs9F
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12554,4 +12554,4 @@ UcsSjisTable:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 UcsFF
+	.4byte UcsFF

@@ -1579,7 +1579,7 @@ Type:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __SIVersion
 __SIVersion:
-	.byte4 $$21
+	.4byte $$21
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

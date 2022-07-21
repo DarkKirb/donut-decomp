@@ -677,22 +677,22 @@ $$255941:
 	.4byte 0
 .global STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
-	.byte4 $$255926
-	.byte4 $$255927
-	.byte4 $$255928
-	.byte4 $$255929
-	.byte4 $$255930
-	.byte4 $$255931
-	.byte4 $$255932
-	.byte4 $$255933
-	.byte4 $$255934
-	.byte4 $$255935
-	.byte4 $$255936
-	.byte4 $$255937
-	.byte4 $$255938
-	.byte4 $$255939
-	.byte4 $$255940
-	.byte4 $$255941
+	.4byte $$255926
+	.4byte $$255927
+	.4byte $$255928
+	.4byte $$255929
+	.4byte $$255930
+	.4byte $$255931
+	.4byte $$255932
+	.4byte $$255933
+	.4byte $$255934
+	.4byte $$255935
+	.4byte $$255936
+	.4byte $$255937
+	.4byte $$255938
+	.4byte $$255939
+	.4byte $$255940
+	.4byte $$255941
 .global $$257442
 $$257442:
 	.asciz "HrStoneBody"
@@ -730,27 +730,27 @@ $$257571:
 __vt__Q53scn4step4hero5smash5Smash:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero5smash5SmashFv
-	.byte4 setup__Q53scn4step4hero5smash5SmashFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero5smash5SmashFv
-	.byte4 onStateEndCleanUp__Q53scn4step4hero5smash5SmashFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero5smash5SmashFv
+	.4byte setup__Q53scn4step4hero5smash5SmashFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero5smash5SmashFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero5smash5SmashFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q43scn4step4hero11AbilityBaseFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

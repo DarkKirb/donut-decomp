@@ -74,7 +74,7 @@ __ct__Q33hel6common5ColorFUcUcUcUc:
 /* 8019D990 001997D0  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Color_cpp
+	.4byte __sinit_$$3Color_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global BLACK__Q33hel6common5Color

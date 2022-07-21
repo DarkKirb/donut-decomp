@@ -473,20 +473,20 @@ $$251791:
 	.4byte 0x00000024
 .global $$251826
 $$251826:
-	.byte4 $$251812
-	.byte4 $$251813
-	.byte4 $$251814
-	.byte4 $$251815
-	.byte4 $$251816
-	.byte4 $$251817
-	.byte4 $$251818
-	.byte4 $$251819
-	.byte4 $$251820
-	.byte4 $$251821
-	.byte4 $$251822
-	.byte4 $$251823
-	.byte4 $$251824
-	.byte4 $$251825
+	.4byte $$251812
+	.4byte $$251813
+	.4byte $$251814
+	.4byte $$251815
+	.4byte $$251816
+	.4byte $$251817
+	.4byte $$251818
+	.4byte $$251819
+	.4byte $$251820
+	.4byte $$251821
+	.4byte $$251822
+	.4byte $$251823
+	.4byte $$251824
+	.4byte $$251825
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251574
@@ -516,13 +516,13 @@ $$251580:
 	.balign 4
 .global abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2
 abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2:
-	.byte4 $$251574
-	.byte4 $$251575
-	.byte4 $$251576
-	.byte4 $$251577
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251580
+	.4byte $$251574
+	.4byte $$251575
+	.4byte $$251576
+	.4byte $$251577
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251580
 .global $$252687
 $$252687:
 	.asciz "challengeability/Main"

@@ -139,15 +139,15 @@ $$252004:
 __vt__Q33scn19challengefileselect6Delete:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q33scn19challengefileselect6DeleteFv
-	.byte4 updateFrame__Q33scn19challengefileselect6DeleteFv
-	.byte4 appear__Q33scn19challengefileselect6DeleteFv
-	.byte4 focus__Q33scn19challengefileselect6DeleteFv
-	.byte4 unfocus__Q33scn19challengefileselect6DeleteFv
-	.byte4 decide__Q33scn19challengefileselect6DeleteFv
-	.byte4 isAnimEnd__Q33scn19challengefileselect6DeleteCFv
-	.byte4 kind__Q33scn19challengefileselect6DeleteCFv
-	.byte4 cursorPane__Q33scn19challengefileselect6DeleteFv
+	.4byte __dt__Q33scn19challengefileselect6DeleteFv
+	.4byte updateFrame__Q33scn19challengefileselect6DeleteFv
+	.4byte appear__Q33scn19challengefileselect6DeleteFv
+	.4byte focus__Q33scn19challengefileselect6DeleteFv
+	.4byte unfocus__Q33scn19challengefileselect6DeleteFv
+	.4byte decide__Q33scn19challengefileselect6DeleteFv
+	.4byte isAnimEnd__Q33scn19challengefileselect6DeleteCFv
+	.4byte kind__Q33scn19challengefileselect6DeleteCFv
+	.4byte cursorPane__Q33scn19challengefileselect6DeleteFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251964

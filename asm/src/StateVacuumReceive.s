@@ -1320,37 +1320,37 @@ procFixPos__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv:
 __vt__Q53scn4step4boss6common18StateVacuumReceive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6common18StateVacuumReceiveFv
-	.byte4 procAnim__Q53scn4step4boss6common18StateVacuumReceiveFv
-	.byte4 procMove__Q53scn4step4boss6common18StateVacuumReceiveFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6common18StateVacuumReceiveFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procMove__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common18StateVacuumReceive
 __vt__Q53scn4step5enemy6common18StateVacuumReceive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6common18StateVacuumReceiveFv
-	.byte4 procAnim__Q53scn4step5enemy6common18StateVacuumReceiveFv
-	.byte4 procMove__Q53scn4step5enemy6common18StateVacuumReceiveFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy6common18StateVacuumReceiveFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy6common18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step5enemy6common18StateVacuumReceiveFv
+	.4byte procMove__Q53scn4step5enemy6common18StateVacuumReceiveFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common18StateVacuumReceiveFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference18StateVacuumReceive
 __vt__Q53scn4step4hero12interference18StateVacuumReceive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero12interference18StateVacuumReceiveFv
-	.byte4 procAnim__Q53scn4step4hero12interference18StateVacuumReceiveFv
-	.byte4 procMove__Q53scn4step4hero12interference18StateVacuumReceiveFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero12interference18StateVacuumReceiveFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero12interference18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step4hero12interference18StateVacuumReceiveFv
+	.4byte procMove__Q53scn4step4hero12interference18StateVacuumReceiveFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero12interference18StateVacuumReceiveFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -1358,22 +1358,22 @@ __vt__Q53scn4step4hero12interference18StateVacuumReceive:
 __vt__Q53scn4step4item5state18StateVacuumReceive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4item5state18StateVacuumReceiveFv
-	.byte4 procAnim__Q53scn4step4item5state18StateVacuumReceiveFv
-	.byte4 procMove__Q43scn4step4item9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4item5state18StateVacuumReceiveFv
+	.4byte __dt__Q53scn4step4item5state18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step4item5state18StateVacuumReceiveFv
+	.4byte procMove__Q43scn4step4item9StateBaseFv
+	.4byte procFixPos__Q53scn4step4item5state18StateVacuumReceiveFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive
 __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
-	.byte4 procAnim__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
-	.byte4 procMove__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
-	.byte4 procConstraint__Q43scn4step6weapon9StateBaseFv
-	.byte4 procFixPos__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
-	.byte4 procObjCollReact__Q43scn4step6weapon9StateBaseFv
+	.4byte __dt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
+	.4byte procMove__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv
+	.4byte procObjCollReact__Q43scn4step6weapon9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256631

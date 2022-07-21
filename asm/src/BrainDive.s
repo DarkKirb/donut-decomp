@@ -208,23 +208,23 @@ __dt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateB
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy4como9BrainDive
 __vt__Q53scn4step5enemy4como9BrainDive:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy4como9BrainDiveFv
-	.byte4 onStart__Q53scn4step5enemy4como9BrainDiveFv
-	.byte4 onRecover__Q53scn4step5enemy4como9BrainDiveFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy4como9BrainDiveFv
+	.4byte onStart__Q53scn4step5enemy4como9BrainDiveFv
+	.4byte onRecover__Q53scn4step5enemy4como9BrainDiveFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

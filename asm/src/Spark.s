@@ -1175,27 +1175,27 @@ $$259458:
 __vt__Q53scn4step4hero5spark5Spark:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero5spark5SparkFv
-	.byte4 setup__Q53scn4step4hero5spark5SparkFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero5spark5SparkFv
-	.byte4 onStateEndCleanUp__Q53scn4step4hero5spark5SparkFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q53scn4step4hero5spark5SparkFv
-	.byte4 onHideHero__Q53scn4step4hero5spark5SparkFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q53scn4step4hero5spark5SparkFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q53scn4step4hero5spark5SparkFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero5spark5SparkFv
+	.4byte setup__Q53scn4step4hero5spark5SparkFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero5spark5SparkFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero5spark5SparkFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q53scn4step4hero5spark5SparkFv
+	.4byte onHideHero__Q53scn4step4hero5spark5SparkFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q53scn4step4hero5spark5SparkFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q53scn4step4hero5spark5SparkFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
@@ -1204,8 +1204,8 @@ $$248732:
 	.balign 4
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21:
-	.byte4 $$248732
-	.byte4 $$248733
+	.4byte $$248732
+	.4byte $$248733
 .global $$248831
 $$248831:
 	.asciz "TopL"
@@ -1218,7 +1218,7 @@ $$248766:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22:
-	.byte4 $$248766
+	.4byte $$248766
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -525,49 +525,49 @@ lbl_8038A028:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21
 $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21:
-	.byte4 $$249586
+	.4byte $$249586
 	.4byte 0
-	.byte4 $$249587
+	.4byte $$249587
 	.4byte 0
-	.byte4 $$249588
+	.4byte $$249588
 	.4byte 0
-	.byte4 $$249589
+	.4byte $$249589
 	.4byte 0
-	.byte4 $$249590
+	.4byte $$249590
 	.4byte 0
-	.byte4 $$249591
+	.4byte $$249591
 	.4byte 0
-	.byte4 $$249592
+	.4byte $$249592
 	.4byte 0
-	.byte4 $$249593
+	.4byte $$249593
 	.4byte 0
-	.byte4 $$249594
+	.4byte $$249594
 	.4byte 0
-	.byte4 $$249595
+	.4byte $$249595
 	.4byte 0
-	.byte4 $$249596
+	.4byte $$249596
 	.4byte 0
-	.byte4 $$249597
+	.4byte $$249597
 	.4byte 0
-	.byte4 $$249598
+	.4byte $$249598
 	.4byte 0
-	.byte4 $$249599
+	.4byte $$249599
 	.4byte 0
-	.byte4 $$249600
+	.4byte $$249600
 	.4byte 0
-	.byte4 $$249601
+	.4byte $$249601
 	.4byte 0
-	.byte4 $$249602
+	.4byte $$249602
 	.4byte 0
-	.byte4 $$249603
+	.4byte $$249603
 	.4byte 0
-	.byte4 $$249604
+	.4byte $$249604
 	.4byte 0
-	.byte4 $$249605
+	.4byte $$249605
 	.4byte 0
-	.byte4 $$249606
+	.4byte $$249606
 	.4byte 0
-	.byte4 $$249607
+	.4byte $$249607
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -669,27 +669,27 @@ $$256366:
 __vt__Q53scn4step4hero5sword5Sword:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero5sword5SwordFv
-	.byte4 setup__Q53scn4step4hero5sword5SwordFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero5sword5SwordFv
-	.byte4 onStateEndCleanUp__Q53scn4step4hero5sword5SwordFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero5sword5SwordFv
+	.4byte setup__Q53scn4step4hero5sword5SwordFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero5sword5SwordFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero5sword5SwordFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q43scn4step4hero11AbilityBaseFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249578
@@ -702,8 +702,8 @@ $$249579:
 	.balign 4
 .global $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21
 $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21:
-	.byte4 $$249578
-	.byte4 $$249579
+	.4byte $$249578
+	.4byte $$249579
 .global $$249586
 $$249586:
 	.asciz "Carry"

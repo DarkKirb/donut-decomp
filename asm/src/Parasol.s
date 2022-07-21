@@ -325,37 +325,37 @@ lbl_803928E0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21
 $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21:
-	.byte4 $$248740
+	.4byte $$248740
 	.4byte 0
-	.byte4 $$248741
+	.4byte $$248741
 	.4byte 0
-	.byte4 $$248742
+	.4byte $$248742
 	.4byte 0
-	.byte4 $$248743
+	.4byte $$248743
 	.4byte 0
-	.byte4 $$248744
+	.4byte $$248744
 	.4byte 0
-	.byte4 $$248745
+	.4byte $$248745
 	.4byte 0
-	.byte4 $$248746
+	.4byte $$248746
 	.4byte 0
-	.byte4 $$248747
+	.4byte $$248747
 	.4byte 0
-	.byte4 $$248748
+	.4byte $$248748
 	.4byte 0
-	.byte4 $$248749
+	.4byte $$248749
 	.4byte 0
-	.byte4 $$248750
+	.4byte $$248750
 	.4byte 0
-	.byte4 $$248751
+	.4byte $$248751
 	.4byte 0
-	.byte4 $$248752
+	.4byte $$248752
 	.4byte 0
-	.byte4 $$248753
+	.4byte $$248753
 	.4byte 0
-	.byte4 $$248754
+	.4byte $$248754
 	.4byte 0
-	.byte4 $$248755
+	.4byte $$248755
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -413,27 +413,27 @@ $$257637:
 __vt__Q53scn4step4hero7parasol7Parasol:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7parasol7ParasolFv
-	.byte4 setup__Q53scn4step4hero7parasol7ParasolFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero7parasol7ParasolFv
-	.byte4 onStateEndCleanUp__Q53scn4step4hero7parasol7ParasolFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q53scn4step4hero7parasol7ParasolFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero7parasol7ParasolFv
+	.4byte setup__Q53scn4step4hero7parasol7ParasolFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero7parasol7ParasolFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero7parasol7ParasolFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q53scn4step4hero7parasol7ParasolFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
@@ -447,8 +447,8 @@ $$248733:
 	.balign 4
 .global $$2LOCAL$$2ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv$$2names$$21
 $$2LOCAL$$2ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv$$2names$$21:
-	.byte4 $$248732
-	.byte4 $$248733
+	.4byte $$248732
+	.4byte $$248733
 .global $$248740
 $$248740:
 	.asciz "Carry"

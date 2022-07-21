@@ -754,7 +754,7 @@ __sinit_$$3VariationDemo_cpp:
 /* 8030422C 0030006C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3VariationDemo_cpp
+	.4byte __sinit_$$3VariationDemo_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$254361
@@ -818,7 +818,7 @@ datTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
+	.4byte datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
 .global datSizeTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
 datSizeTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2:
 	.4byte 0
@@ -861,11 +861,11 @@ $$255233:
 __vt__Q53scn4step7gimmick10cameralock13VariationDemo:
 	.4byte 0
 	.4byte 0
-	.byte4 updateReady__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
-	.byte4 updateLock__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
-	.byte4 updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
-	.byte4 updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
-	.byte4 setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb
+	.4byte updateReady__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLock__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

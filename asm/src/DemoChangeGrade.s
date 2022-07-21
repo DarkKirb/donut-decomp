@@ -699,12 +699,12 @@ $$257298:
 	.4byte 0
 .global t_TrophyResFileName__29$$2unnamed$$2DemoChangeGrade_cpp$$2
 t_TrophyResFileName__29$$2unnamed$$2DemoChangeGrade_cpp$$2:
-	.byte4 $$257293
-	.byte4 $$257294
-	.byte4 $$257295
-	.byte4 $$257296
-	.byte4 $$257297
-	.byte4 $$257298
+	.4byte $$257293
+	.4byte $$257294
+	.4byte $$257295
+	.4byte $$257296
+	.4byte $$257297
+	.4byte $$257298
 .global $$258717
 $$258717:
 	.asciz "challengefileselect/Trophyanime"
@@ -720,14 +720,14 @@ $$258879:
 __vt__Q53scn4step7gimmick11areamapdemo15DemoChangeGrade:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
-	.byte4 registerToRoot__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFRQ23g3d4Root
-	.byte4 procAnim__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
-	.byte4 start__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
-	.byte4 end__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
-	.byte4 startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo4DemoFv
-	.byte4 isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo4DemoCFv
-	.byte4 unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv
+	.4byte __dt__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
+	.4byte registerToRoot__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFRQ23g3d4Root
+	.4byte procAnim__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
+	.4byte start__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
+	.4byte end__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFv
+	.4byte startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo4DemoFv
+	.4byte isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo4DemoCFv
+	.4byte unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257293

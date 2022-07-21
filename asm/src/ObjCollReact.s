@@ -3071,100 +3071,100 @@ T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
-	.byte4 create__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
+	.4byte __dt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
+	.4byte create__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1Fv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1
 __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1Fv
-	.byte4 create__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1Fv
+	.4byte __dt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1Fv
+	.4byte create__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1Fv
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1Fv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAMAGERATE_BY_PILE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2

@@ -828,17 +828,17 @@ __dt__Q53scn4step5enemy6whippy11BrainAttackFv:
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy5cappy11BrainAttack
 __vt__Q53scn4step5enemy5cappy11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy5cappy11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy5cappy11BrainAttackFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q53scn4step5enemy5cappy11BrainAttackFv
-	.byte4 update__Q53scn4step5enemy5cappy11BrainAttackFv
+	.4byte __dt__Q53scn4step5enemy5cappy11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy5cappy11BrainAttackFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q53scn4step5enemy5cappy11BrainAttackFv
+	.4byte update__Q53scn4step5enemy5cappy11BrainAttackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -846,17 +846,17 @@ __vt__Q53scn4step5enemy5cappy11BrainAttack:
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy4elec11BrainAttack
 __vt__Q53scn4step5enemy4elec11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy4elec11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy4elec11BrainAttackFv
-	.byte4 onRecover__Q53scn4step5enemy4elec11BrainAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onRecover__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -864,11 +864,11 @@ __vt__Q53scn4step5enemy4elec11BrainAttack:
 __vt__Q53scn4step5enemy6flamer11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6flamer11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy6flamer11BrainAttackFv
-	.byte4 onRecover__Q53scn4step5enemy6flamer11BrainAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6flamer11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy6flamer11BrainAttackFv
+	.4byte onRecover__Q53scn4step5enemy6flamer11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -876,17 +876,17 @@ __vt__Q53scn4step5enemy6flamer11BrainAttack:
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy7gigatzo11BrainAttack
 __vt__Q53scn4step5enemy7gigatzo11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy7gigatzo11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy7gigatzo11BrainAttackFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy7gigatzo11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy7gigatzo11BrainAttackFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -894,11 +894,11 @@ __vt__Q53scn4step5enemy7gigatzo11BrainAttack:
 __vt__Q53scn4step5enemy7hothead11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy7hothead11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy7hothead11BrainAttackFv
-	.byte4 onRecover__Q53scn4step5enemy7hothead11BrainAttackFv
-	.byte4 onLanding__Q53scn4step5enemy7hothead11BrainAttackFv
-	.byte4 update__Q53scn4step5enemy7hothead11BrainAttackFv
+	.4byte __dt__Q53scn4step5enemy7hothead11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy7hothead11BrainAttackFv
+	.4byte onRecover__Q53scn4step5enemy7hothead11BrainAttackFv
+	.4byte onLanding__Q53scn4step5enemy7hothead11BrainAttackFv
+	.4byte update__Q53scn4step5enemy7hothead11BrainAttackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -906,17 +906,17 @@ __vt__Q53scn4step5enemy7hothead11BrainAttack:
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6leafan11BrainAttack
 __vt__Q53scn4step5enemy6leafan11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6leafan11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy6leafan11BrainAttackFv
-	.byte4 onRecover__Q53scn4step5enemy6leafan11BrainAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6leafan11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy6leafan11BrainAttackFv
+	.4byte onRecover__Q53scn4step5enemy6leafan11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -924,11 +924,11 @@ __vt__Q53scn4step5enemy6leafan11BrainAttack:
 __vt__Q53scn4step5enemy10watergalbo11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv
-	.byte4 onStart__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onRecover__Q53scn4step5enemy10watergalbo11BrainAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv
+	.4byte onStart__Q43scn4step5enemy9BrainBaseFv
+	.4byte onRecover__Q53scn4step5enemy10watergalbo11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -936,9 +936,9 @@ __vt__Q53scn4step5enemy10watergalbo11BrainAttack:
 __vt__Q53scn4step5enemy6whippy11BrainAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6whippy11BrainAttackFv
-	.byte4 onStart__Q53scn4step5enemy6whippy11BrainAttackFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6whippy11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy6whippy11BrainAttackFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

@@ -128,14 +128,14 @@ __sinit_$$3Alarm_cpp:
 /* 804056BC 004014FC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Alarm_cpp
+	.4byte __sinit_$$3Alarm_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util5Alarm
 __vt__Q24util5Alarm:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util5AlarmFv
+	.4byte __dt__Q24util5AlarmFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

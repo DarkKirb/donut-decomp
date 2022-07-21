@@ -901,10 +901,10 @@ InvSbpTable:
 	.4byte 0xFFFFFFFF
 .global DecodeEscapeTable
 DecodeEscapeTable:
-	.byte4 DecodeEscape__FR14VX2DecoderDataRiRiRi
-	.byte4 DecodeEscape__FR14VX2DecoderDataRiRiRi
-	.byte4 DecodeEscape2__FR14VX2DecoderDataRiRiRi
-	.byte4 DecodeEscape3__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape2__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape3__FR14VX2DecoderDataRiRiRi
 .global ZigZag8x8
 ZigZag8x8:
 	.4byte 0

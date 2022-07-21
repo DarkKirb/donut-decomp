@@ -1176,28 +1176,28 @@ $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv:
 __vt__Q44nw4r3snd6detail9WsdPlayer:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 Start__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 Stop__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 Pause__Q44nw4r3snd6detail9WsdPlayerFb
-	.byte4 IsActive__Q44nw4r3snd6detail9WsdPlayerCFv
-	.byte4 IsStarted__Q44nw4r3snd6detail9WsdPlayerCFv
-	.byte4 IsPause__Q44nw4r3snd6detail9WsdPlayerCFv
+	.4byte __dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Start__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Stop__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Pause__Q44nw4r3snd6detail9WsdPlayerFb
+	.4byte IsActive__Q44nw4r3snd6detail9WsdPlayerCFv
+	.4byte IsStarted__Q44nw4r3snd6detail9WsdPlayerCFv
+	.4byte IsPause__Q44nw4r3snd6detail9WsdPlayerCFv
 	.4byte 0
 	.4byte 0
-	.byte4 $$2180$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 $$2180$$2InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
-	.byte4 $$2180$$2InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte $$2180$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte $$2180$$2InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte $$2180$$2InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
 	.4byte 0
 	.4byte 0
-	.byte4 $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 $$2192$$2OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 OnUpdateVoiceSoundThread__Q54nw4r3snd6detail11SoundThread14PlayerCallbackFv
-	.byte4 $$2192$$2OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
-	.byte4 InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
-	.byte4 OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
-	.byte4 OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte $$2192$$2OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte OnUpdateVoiceSoundThread__Q54nw4r3snd6detail11SoundThread14PlayerCallbackFv
+	.4byte $$2192$$2OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210015

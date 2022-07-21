@@ -299,86 +299,86 @@ $$251572:
 	.balign 4
 .global PANES__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2
 PANES__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2:
-	.byte4 $$251546
-	.byte4 $$251547
-	.byte4 $$251548
-	.byte4 $$251549
-	.byte4 $$251550
-	.byte4 $$251551
-	.byte4 $$251552
-	.byte4 $$251553
-	.byte4 $$251554
-	.byte4 $$251555
-	.byte4 $$251556
-	.byte4 $$251557
-	.byte4 $$251558
-	.byte4 $$251559
-	.byte4 $$251560
-	.byte4 $$251561
-	.byte4 $$251562
-	.byte4 $$251563
-	.byte4 $$251564
-	.byte4 $$251565
-	.byte4 $$251566
-	.byte4 $$251567
-	.byte4 $$251568
-	.byte4 $$251569
-	.byte4 $$251570
-	.byte4 $$251571
-	.byte4 $$251572
-	.byte4 $$251573
-	.byte4 $$251574
+	.4byte $$251546
+	.4byte $$251547
+	.4byte $$251548
+	.4byte $$251549
+	.4byte $$251550
+	.4byte $$251551
+	.4byte $$251552
+	.4byte $$251553
+	.4byte $$251554
+	.4byte $$251555
+	.4byte $$251556
+	.4byte $$251557
+	.4byte $$251558
+	.4byte $$251559
+	.4byte $$251560
+	.4byte $$251561
+	.4byte $$251562
+	.4byte $$251563
+	.4byte $$251564
+	.4byte $$251565
+	.4byte $$251566
+	.4byte $$251567
+	.4byte $$251568
+	.4byte $$251569
+	.4byte $$251570
+	.4byte $$251571
+	.4byte $$251572
+	.4byte $$251573
+	.4byte $$251574
 .global TABLE__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2
 TABLE__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2:
-	.byte4 $$251575
-	.byte4 $$251547
-	.byte4 $$251552
-	.byte4 $$251554
-	.byte4 $$251575
-	.byte4 $$251553
-	.byte4 $$251551
-	.byte4 $$251548
-	.byte4 $$251565
-	.byte4 $$251546
-	.byte4 $$251555
-	.byte4 $$251549
-	.byte4 $$251575
-	.byte4 $$251575
-	.byte4 $$251550
-	.byte4 $$251564
-	.byte4 $$251560
-	.byte4 $$251567
-	.byte4 $$251556
-	.byte4 $$251561
-	.byte4 $$251559
-	.byte4 $$251562
-	.byte4 $$251575
-	.byte4 $$251558
-	.byte4 $$251575
-	.byte4 $$251563
-	.byte4 $$251566
-	.byte4 $$251557
-	.byte4 $$251568
+	.4byte $$251575
+	.4byte $$251547
+	.4byte $$251552
+	.4byte $$251554
+	.4byte $$251575
+	.4byte $$251553
+	.4byte $$251551
+	.4byte $$251548
+	.4byte $$251565
+	.4byte $$251546
+	.4byte $$251555
+	.4byte $$251549
+	.4byte $$251575
+	.4byte $$251575
+	.4byte $$251550
+	.4byte $$251564
+	.4byte $$251560
+	.4byte $$251567
+	.4byte $$251556
+	.4byte $$251561
+	.4byte $$251559
+	.4byte $$251562
+	.4byte $$251575
+	.4byte $$251558
+	.4byte $$251575
+	.4byte $$251563
+	.4byte $$251566
+	.4byte $$251557
+	.4byte $$251568
 .global ICON_PANE_TABLE__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2
 ICON_PANE_TABLE__Q43scn7history6detail33$$2unnamed$$2SelectButtonContent_cpp$$2:
 	.4byte 0
-	.byte4 $$251577
-	.byte4 $$251577
+	.4byte $$251577
+	.4byte $$251577
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$251577
+	.4byte $$251577
 	.4byte 0
-	.byte4 $$251577
+	.4byte $$251577
 	.4byte 0
-	.byte4 $$251577
-	.4byte 0
-	.4byte 0
-	.byte4 $$251577
+	.4byte $$251577
 	.4byte 0
 	.4byte 0
-	.byte4 $$251578
+	.4byte $$251577
+	.4byte 0
+	.4byte 0
+	.4byte $$251578
 	.4byte 0
 	.4byte 0
 	.4byte 0

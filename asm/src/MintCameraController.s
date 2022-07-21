@@ -23,7 +23,7 @@ __sinit_$$3MintCameraController_cpp:
 /* 8026629C 002620DC  4B E7 71 44 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintCameraController_cpp
+	.4byte __sinit_$$3MintCameraController_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step6camera34$$2unnamed$$2MintCameraController_cpp$$2

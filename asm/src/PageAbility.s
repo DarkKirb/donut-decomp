@@ -226,12 +226,12 @@ $$252592:
 __vt__Q25pause11PageAbility:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q25pause11PageAbilityFv
-	.byte4 pageFrameTitle__Q25pause11PageAbilityCFv
-	.byte4 pageMainLayout__Q25pause11PageAbilityFv
-	.byte4 pageProcAnim__Q25pause11PageAbilityFv
-	.byte4 pageProcHID__Q25pause11PageAbilityFv
-	.byte4 pageIsBusy__Q25pause11PageAbilityCFv
+	.4byte __dt__Q25pause11PageAbilityFv
+	.4byte pageFrameTitle__Q25pause11PageAbilityCFv
+	.4byte pageMainLayout__Q25pause11PageAbilityFv
+	.4byte pageProcAnim__Q25pause11PageAbilityFv
+	.4byte pageProcHID__Q25pause11PageAbilityFv
+	.4byte pageIsBusy__Q25pause11PageAbilityCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

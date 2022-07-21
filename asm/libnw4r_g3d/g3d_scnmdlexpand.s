@@ -718,20 +718,20 @@ TYPE_NAME__Q34nw4r3g3d12ScnMdlExpand:
 __vt__Q34nw4r3g3d12ScnMdlExpand:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d12ScnMdlExpandCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d12ScnMdlExpandFUlUlPv
-	.byte4 __dt__Q34nw4r3g3d12ScnMdlExpandFv
-	.byte4 GetTypeObj__Q34nw4r3g3d12ScnMdlExpandCFv
-	.byte4 GetTypeName__Q34nw4r3g3d12ScnMdlExpandCFv
-	.byte4 ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
-	.byte4 SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
-	.byte4 GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
-	.byte4 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
-	.byte4 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
-	.byte4 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
-	.byte4 Insert__Q34nw4r3g3d12ScnMdlExpandFUlPQ34nw4r3g3d6ScnObj
-	.byte4 Remove__Q34nw4r3g3d12ScnMdlExpandFUl
-	.byte4 Remove__Q34nw4r3g3d12ScnMdlExpandFPQ34nw4r3g3d6ScnObj
+	.4byte IsDerivedFrom__Q34nw4r3g3d12ScnMdlExpandCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d12ScnMdlExpandFUlUlPv
+	.4byte __dt__Q34nw4r3g3d12ScnMdlExpandFv
+	.4byte GetTypeObj__Q34nw4r3g3d12ScnMdlExpandCFv
+	.4byte GetTypeName__Q34nw4r3g3d12ScnMdlExpandCFv
+	.4byte ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.4byte SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
+	.4byte GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
+	.4byte GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.4byte CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
+	.4byte Insert__Q34nw4r3g3d12ScnMdlExpandFUlPQ34nw4r3g3d6ScnObj
+	.4byte Remove__Q34nw4r3g3d12ScnMdlExpandFUl
+	.4byte Remove__Q34nw4r3g3d12ScnMdlExpandFPQ34nw4r3g3d6ScnObj
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global INVALID_NODE_ID__Q34nw4r3g3d30$$2unnamed$$2g3d_scnmdlexpand_cpp$$2

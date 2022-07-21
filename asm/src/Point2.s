@@ -9,7 +9,7 @@ __sinit_$$3Point2_cpp:
 /* 8019EC78 0019AAB8  48 00 07 30 */	b set__Q33hel4math7Vector2Fff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Point2_cpp
+	.4byte __sinit_$$3Point2_cpp
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249826

@@ -388,18 +388,18 @@ __dt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19St
 __vt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
-	.byte4 create__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
+	.4byte __dt__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
+	.4byte create__Q24util109StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateParasolRelease$$4PQ43scn4step5enemy5Enemy$$4Ux$$4Ul$$1Fv
 .global __vt__Q53scn4step5enemy8captured20StateCapturedParasol
 __vt__Q53scn4step5enemy8captured20StateCapturedParasol:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy8captured20StateCapturedParasolFv
-	.byte4 procAnim__Q53scn4step5enemy8captured20StateCapturedParasolFv
-	.byte4 procMove__Q53scn4step5enemy8captured20StateCapturedParasolFv
-	.byte4 procConstraint__Q53scn4step5enemy8captured20StateCapturedParasolFv
-	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.4byte procAnim__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.4byte procMove__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.4byte procConstraint__Q53scn4step5enemy8captured20StateCapturedParasolFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256967

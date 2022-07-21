@@ -515,27 +515,27 @@ $$256344:
 __vt__Q53scn4step4hero7fighter7Fighter:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7fighter7FighterFv
-	.byte4 setup__Q53scn4step4hero7fighter7FighterFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero7fighter7FighterFv
-	.byte4 onStateEndCleanUp__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q53scn4step4hero7fighter7FighterFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero7fighter7FighterFv
+	.4byte setup__Q53scn4step4hero7fighter7FighterFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero7fighter7FighterFv
+	.4byte onStateEndCleanUp__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q53scn4step4hero7fighter7FighterFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
@@ -548,8 +548,8 @@ $$249542:
 	.asciz "HatBigM"
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21:
-	.byte4 $$249541
-	.byte4 $$249542
+	.4byte $$249541
+	.4byte $$249542
 .global $$249857
 $$249857:
 	.asciz "LBand1S"

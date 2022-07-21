@@ -1626,14 +1626,14 @@ CHECK_DEEP_OFFS_ARRAY__19$$2unnamed$$2Water_cpp$$2:
 __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
-	.byte4 create__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.4byte __dt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.4byte create__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
-	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
+	.4byte create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253564

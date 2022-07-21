@@ -3843,48 +3843,48 @@ lbl_80322CB8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$260977
 $$260977:
-	.byte4 $$260970
-	.byte4 $$260971
-	.byte4 $$260972
-	.byte4 $$260973
-	.byte4 $$260974
-	.byte4 $$260975
-	.byte4 $$260976
+	.4byte $$260970
+	.4byte $$260971
+	.4byte $$260972
+	.4byte $$260973
+	.4byte $$260974
+	.4byte $$260975
+	.4byte $$260976
 	.4byte 0
 .global $$261005
 $$261005:
-	.byte4 $$260970
-	.byte4 $$260980
-	.byte4 $$260981
-	.byte4 $$260982
-	.byte4 $$260983
-	.byte4 $$260984
-	.byte4 $$260985
-	.byte4 $$260986
-	.byte4 $$260987
-	.byte4 $$260988
-	.byte4 $$260989
-	.byte4 $$260990
-	.byte4 $$260991
-	.byte4 $$260989
-	.byte4 $$260992
-	.byte4 $$260983
-	.byte4 $$260980
-	.byte4 $$260993
-	.byte4 $$260994
-	.byte4 $$260973
-	.byte4 $$260981
-	.byte4 $$260995
-	.byte4 $$260996
-	.byte4 $$260997
-	.byte4 $$260998
-	.byte4 $$260999
-	.byte4 $$261000
-	.byte4 $$261001
-	.byte4 $$261002
-	.byte4 $$260970
-	.byte4 $$261003
-	.byte4 $$261004
+	.4byte $$260970
+	.4byte $$260980
+	.4byte $$260981
+	.4byte $$260982
+	.4byte $$260983
+	.4byte $$260984
+	.4byte $$260985
+	.4byte $$260986
+	.4byte $$260987
+	.4byte $$260988
+	.4byte $$260989
+	.4byte $$260990
+	.4byte $$260991
+	.4byte $$260989
+	.4byte $$260992
+	.4byte $$260983
+	.4byte $$260980
+	.4byte $$260993
+	.4byte $$260994
+	.4byte $$260973
+	.4byte $$260981
+	.4byte $$260995
+	.4byte $$260996
+	.4byte $$260997
+	.4byte $$260998
+	.4byte $$260999
+	.4byte $$261000
+	.4byte $$261001
+	.4byte $$261002
+	.4byte $$260970
+	.4byte $$261003
+	.4byte $$261004
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$264598
@@ -3899,7 +3899,7 @@ $$264599:
 $$264706:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 actionCallback__Q53scn4step7gimmick9shipevent9ShipEventFPCcPCc
+	.4byte actionCallback__Q53scn4step7gimmick9shipevent9ShipEventFPCcPCc
 .global $$264779
 $$264779:
 	.asciz "Scn.Step.Gimmick.ShipEvent.FirstDemoEvent.Exec"
@@ -4036,15 +4036,15 @@ $$265156:
 __vt__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1Fv
-	.byte4 clone__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1CFv
-	.byte4 clone__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1CFPv
-	.byte4 __cl__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1FPCcPCc
+	.4byte __dt__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1Fv
+	.4byte clone__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1CFv
+	.4byte clone__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1CFPv
+	.4byte __cl__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1FPCcPCc
 .global __vt__Q43std3tr16detail25function_base$$0PFPCcPCc_v$$1
 __vt__Q43std3tr16detail25function_base$$0PFPCcPCc_v$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43std3tr16detail25function_base$$0PFPCcPCc_v$$1Fv
+	.4byte __dt__Q43std3tr16detail25function_base$$0PFPCcPCc_v$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -4052,9 +4052,9 @@ __vt__Q43std3tr16detail25function_base$$0PFPCcPCc_v$$1:
 __vt__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeap:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFv
-	.byte4 allocatorAlloc__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFUll
-	.byte4 allocatorFree__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFPv
+	.4byte __dt__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFv
+	.4byte allocatorAlloc__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFUll
+	.4byte allocatorFree__Q34util22Delegate$$0FPCcPCc_v$$464$$112DelegateHeapFPv
 .global $$265268
 $$265268:
 	.asciz "basic_string::reserve length_error"

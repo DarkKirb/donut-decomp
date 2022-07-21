@@ -218,8 +218,8 @@ onFrameChanged__Q23g3d34NullModelAnimAccessorEventReceiverFRCQ23g3d17ModelAnimAc
 __vt__Q23g3d34NullModelAnimAccessorEventReceiver:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23g3d34NullModelAnimAccessorEventReceiverFv
-	.byte4 onFrameChanged__Q23g3d34NullModelAnimAccessorEventReceiverFRCQ23g3d17ModelAnimAccessor
+	.4byte __dt__Q23g3d34NullModelAnimAccessorEventReceiverFv
+	.4byte onFrameChanged__Q23g3d34NullModelAnimAccessorEventReceiverFRCQ23g3d17ModelAnimAccessor
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2Instance__Q23g3d34NullModelAnimAccessorEventReceiverFv$$2obj

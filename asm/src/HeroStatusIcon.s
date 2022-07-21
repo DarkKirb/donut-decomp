@@ -694,27 +694,27 @@ $$251681:
 .global T_ABILITY_KIND_TO_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2
 T_ABILITY_KIND_TO_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2:
 	.4byte 0
-	.byte4 $$251661
-	.byte4 $$251662
-	.byte4 $$251663
-	.byte4 $$251664
-	.byte4 $$251665
-	.byte4 $$251666
-	.byte4 $$251667
-	.byte4 $$251668
-	.byte4 $$251669
-	.byte4 $$251670
-	.byte4 $$251671
-	.byte4 $$251672
-	.byte4 $$251673
-	.byte4 $$251674
-	.byte4 $$251675
-	.byte4 $$251676
-	.byte4 $$251677
-	.byte4 $$251678
-	.byte4 $$251679
-	.byte4 $$251680
-	.byte4 $$251681
+	.4byte $$251661
+	.4byte $$251662
+	.4byte $$251663
+	.4byte $$251664
+	.4byte $$251665
+	.4byte $$251666
+	.4byte $$251667
+	.4byte $$251668
+	.4byte $$251669
+	.4byte $$251670
+	.4byte $$251671
+	.4byte $$251672
+	.4byte $$251673
+	.4byte $$251674
+	.4byte $$251675
+	.4byte $$251676
+	.4byte $$251677
+	.4byte $$251678
+	.4byte $$251679
+	.4byte $$251680
+	.4byte $$251681
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -765,7 +765,7 @@ $$253211:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2
 T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2:
-	.byte4 $$251660
+	.4byte $$251660
 .global $$253023
 $$253023:
 	.asciz "IconN"

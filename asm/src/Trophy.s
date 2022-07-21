@@ -862,7 +862,7 @@ __sinit_$$3Trophy_cpp:
 /* 801EA0CC 001E5F0C  4B ED 3F F4 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Trophy_cpp
+	.4byte __sinit_$$3Trophy_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252758
@@ -901,12 +901,12 @@ $$252321:
 	.balign 4
 .global MODEL_NAMES__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 MODEL_NAMES__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
-	.byte4 $$252317
-	.byte4 $$252317
-	.byte4 $$252318
-	.byte4 $$252319
-	.byte4 $$252320
-	.byte4 $$252321
+	.4byte $$252317
+	.4byte $$252317
+	.4byte $$252318
+	.4byte $$252319
+	.4byte $$252320
+	.4byte $$252321
 .global $$253902
 $$253902:
 	.asciz "challengefileselect/Trophyanime"

@@ -317,11 +317,11 @@ lbl_8039F494:
 __vt__Q53scn4step4hero7fighter13StateSpinKick:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7fighter13StateSpinKickFv
-	.byte4 procAnim__Q53scn4step4hero7fighter13StateSpinKickFv
-	.byte4 procMove__Q53scn4step4hero7fighter13StateSpinKickFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero7fighter13StateSpinKickFv
-	.byte4 procObjCollReact__Q53scn4step4hero7fighter13StateSpinKickFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero7fighter13StateSpinKickFv
+	.4byte procAnim__Q53scn4step4hero7fighter13StateSpinKickFv
+	.4byte procMove__Q53scn4step4hero7fighter13StateSpinKickFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7fighter13StateSpinKickFv
+	.4byte procObjCollReact__Q53scn4step4hero7fighter13StateSpinKickFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

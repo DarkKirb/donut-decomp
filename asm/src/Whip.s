@@ -442,41 +442,41 @@ lbl_8038CCC0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21
 $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21:
-	.byte4 $$248751
+	.4byte $$248751
 	.4byte 0
-	.byte4 $$248752
+	.4byte $$248752
 	.4byte 0
-	.byte4 $$248753
+	.4byte $$248753
 	.4byte 0
-	.byte4 $$248754
+	.4byte $$248754
 	.4byte 0
-	.byte4 $$248755
+	.4byte $$248755
 	.4byte 0
-	.byte4 $$248756
+	.4byte $$248756
 	.4byte 0
-	.byte4 $$248757
+	.4byte $$248757
 	.4byte 0
-	.byte4 $$248758
+	.4byte $$248758
 	.4byte 0
-	.byte4 $$248759
+	.4byte $$248759
 	.4byte 0
-	.byte4 $$248760
+	.4byte $$248760
 	.4byte 0
-	.byte4 $$248761
+	.4byte $$248761
 	.4byte 0
-	.byte4 $$248762
+	.4byte $$248762
 	.4byte 0
-	.byte4 $$248763
+	.4byte $$248763
 	.4byte 0
-	.byte4 $$248764
+	.4byte $$248764
 	.4byte 0
-	.byte4 $$248765
+	.4byte $$248765
 	.4byte 0
-	.byte4 $$248766
+	.4byte $$248766
 	.4byte 0
-	.byte4 $$248767
+	.4byte $$248767
 	.4byte 0
-	.byte4 $$248768
+	.4byte $$248768
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -513,16 +513,16 @@ $$248744:
 	.4byte 0
 .global $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21
 $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21:
-	.byte4 $$248735
-	.byte4 $$248736
-	.byte4 $$248737
-	.byte4 $$248738
-	.byte4 $$248739
-	.byte4 $$248740
-	.byte4 $$248741
-	.byte4 $$248742
-	.byte4 $$248743
-	.byte4 $$248744
+	.4byte $$248735
+	.4byte $$248736
+	.4byte $$248737
+	.4byte $$248738
+	.4byte $$248739
+	.4byte $$248740
+	.4byte $$248741
+	.4byte $$248742
+	.4byte $$248743
+	.4byte $$248744
 .global $$248752
 $$248752:
 	.asciz "WhipCatchStart"
@@ -586,27 +586,27 @@ $$256580:
 __vt__Q53scn4step4hero4whip4Whip:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero4whip4WhipFv
-	.byte4 setup__Q53scn4step4hero4whip4WhipFv
-	.byte4 tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
-	.byte4 tryToChangeState__Q53scn4step4hero4whip4WhipFv
-	.byte4 onStateEndCleanUp__Q53scn4step4hero4whip4WhipFv
-	.byte4 onGetEventItem__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onShowHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onHideHero__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onDead__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onCaptured__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onVacuumed__Q43scn4step4hero11AbilityBaseFv
-	.byte4 onStartDemo__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procAnim__Q53scn4step4hero4whip4WhipFv
-	.byte4 procMove__Q43scn4step4hero11AbilityBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero11AbilityBaseFv
-	.byte4 isDepleted__Q43scn4step4hero11AbilityBaseCFv
+	.4byte __dt__Q53scn4step4hero4whip4WhipFv
+	.4byte setup__Q53scn4step4hero4whip4WhipFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero4whip4WhipFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero4whip4WhipFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q53scn4step4hero4whip4WhipFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735

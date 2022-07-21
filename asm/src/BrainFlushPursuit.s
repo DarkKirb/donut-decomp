@@ -126,21 +126,21 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12Sta
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
-	.byte4 create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
+	.4byte create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1Fv
 .global __vt__Q53scn4step5enemy6common17BrainFlushPursuit
 __vt__Q53scn4step5enemy6common17BrainFlushPursuit:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6common17BrainFlushPursuitFv
-	.byte4 onStart__Q53scn4step5enemy6common17BrainFlushPursuitFv
-	.byte4 onRecover__Q53scn4step5enemy6common17BrainFlushPursuitFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.4byte onStart__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.4byte onRecover__Q53scn4step5enemy6common17BrainFlushPursuitFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

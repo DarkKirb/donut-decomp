@@ -24,7 +24,7 @@ __sinit_$$3MintMeshFlip_cpp:
 /* 8019ADE4 00196C24  4B F4 25 FC */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintMeshFlip_cpp
+	.4byte __sinit_$$3MintMeshFlip_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj26$$2unnamed$$2MintMeshFlip_cpp$$2

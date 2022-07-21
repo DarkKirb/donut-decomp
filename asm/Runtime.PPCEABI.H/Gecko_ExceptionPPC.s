@@ -1697,34 +1697,34 @@ $$21130:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2284
 $$2284:
-	.byte4 ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo
+	.4byte ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo
 	.4byte 0x000001B0
-	.byte4 $$2283
+	.4byte $$2283
 .global $$2368
 $$2368:
-	.byte4 ExPPC_NextAction__FP14ActionIterator
+	.4byte ExPPC_NextAction__FP14ActionIterator
 	.4byte 0x000001B0
-	.byte4 $$2367
+	.4byte $$2367
 .global $$2558
 $$2558:
-	.byte4 ExPPC_PopStackFrame__FP12ThrowContextP15MWExceptionInfo
+	.4byte ExPPC_PopStackFrame__FP12ThrowContextP15MWExceptionInfo
 	.4byte 0x00000554
-	.byte4 $$2557
+	.4byte $$2557
 .global $$2862
 $$2862:
-	.byte4 ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv
 	.4byte 0x0000050C
-	.byte4 $$2861
+	.4byte $$2861
 .global $$2953
 $$2953:
-	.byte4 __unexpected
+	.4byte __unexpected
 	.4byte 0x000001B8
-	.byte4 $$2952
+	.4byte $$2952
 .global $$21131
 $$21131:
-	.byte4 ExPPC_ThrowHandler__FP12ThrowContext
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext
 	.4byte 0x00000408
-	.byte4 $$21130
+	.4byte $$21130
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21152
@@ -1782,13 +1782,13 @@ $$2860:
 	.4byte 0x80008890  ;# ptr
 .global __vt__Q23std13bad_exception
 __vt__Q23std13bad_exception:
-	.byte4 __RTTI__Q23std13bad_exception
+	.4byte __RTTI__Q23std13bad_exception
 	.4byte 0
-	.byte4 __dt__Q23std13bad_exceptionFv
-	.byte4 what__Q23std13bad_exceptionCFv
+	.4byte __dt__Q23std13bad_exceptionFv
+	.4byte what__Q23std13bad_exceptionCFv
 .global $$21153
 $$21153:
-	.byte4 __RTTI__Q23std9exception
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
 	.4byte 0
 .global $$2STRING$$2what__Q23std13bad_exceptionCFv
@@ -1800,8 +1800,8 @@ $$2STRING$$2what__Q23std13bad_exceptionCFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std13bad_exception
 __RTTI__Q23std13bad_exception:
-	.byte4 $$21152
-	.byte4 $$21153
+	.4byte $$21152
+	.4byte $$21153
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global fragmentinfo

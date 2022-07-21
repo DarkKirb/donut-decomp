@@ -4191,7 +4191,7 @@ stateChanger__Q43scn4step4boss4BossFv:
 __vt__Q24util41StateChanger$$0Q43scn4step4boss6IState$$4256$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util41StateChanger$$0Q43scn4step4boss6IState$$4256$$1Fv
+	.4byte __dt__Q24util41StateChanger$$0Q43scn4step4boss6IState$$4256$$1Fv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

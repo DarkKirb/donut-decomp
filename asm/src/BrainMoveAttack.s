@@ -407,11 +407,11 @@ __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv:
 __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy4elec15BrainMoveAttackFv
-	.byte4 onStart__Q53scn4step5enemy4elec15BrainMoveAttackFv
-	.byte4 onRecover__Q53scn4step5enemy4elec15BrainMoveAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.4byte __dt__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.4byte onStart__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.4byte onRecover__Q53scn4step5enemy4elec15BrainMoveAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q53scn4step5enemy4elec15BrainMoveAttackFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -419,11 +419,11 @@ __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
 __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy6flamer15BrainMoveAttackFv
-	.byte4 onStart__Q53scn4step5enemy6flamer15BrainMoveAttackFv
-	.byte4 onRecover__Q53scn4step5enemy6flamer15BrainMoveAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onStart__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onRecover__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -431,11 +431,11 @@ __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
-	.byte4 onStart__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
-	.byte4 onRecover__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.4byte onStart__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.4byte onRecover__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

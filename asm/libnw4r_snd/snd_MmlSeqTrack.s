@@ -64,5 +64,5 @@ lbl_8010B11C:
 __vt__Q44nw4r3snd6detail11MmlSeqTrack:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q44nw4r3snd6detail11MmlSeqTrackFv
-	.byte4 Parse__Q44nw4r3snd6detail11MmlSeqTrackFb
+	.4byte __dt__Q44nw4r3snd6detail11MmlSeqTrackFv
+	.4byte Parse__Q44nw4r3snd6detail11MmlSeqTrackFb

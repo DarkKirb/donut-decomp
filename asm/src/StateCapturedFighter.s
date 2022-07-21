@@ -303,24 +303,24 @@ __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18St
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1Fv
-	.byte4 create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1Fv
+	.4byte __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1Fv
+	.4byte create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1Fv
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
-	.byte4 create__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
+	.4byte __dt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
+	.4byte create__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1Fv
 .global __vt__Q53scn4step5enemy8captured20StateCapturedFighter
 __vt__Q53scn4step5enemy8captured20StateCapturedFighter:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy8captured20StateCapturedFighterFv
-	.byte4 procAnim__Q53scn4step5enemy8captured20StateCapturedFighterFv
-	.byte4 procMove__Q53scn4step5enemy8captured20StateCapturedFighterFv
-	.byte4 procConstraint__Q53scn4step5enemy8captured20StateCapturedFighterFv
-	.byte4 procFixPos__Q43scn4step5enemy9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procAnim__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procMove__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procConstraint__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255917

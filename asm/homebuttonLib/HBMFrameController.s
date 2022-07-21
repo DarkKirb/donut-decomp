@@ -140,5 +140,5 @@ $$22206:
 	.4byte 0
 .global __RTTI__Q210homebutton15FrameController
 __RTTI__Q210homebutton15FrameController:
-	.byte4 $$22206
+	.4byte $$22206
 	.4byte 0

@@ -30,9 +30,9 @@ $$2190:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2191
 $$2191:
-	.byte4 __dt__Q23std9exceptionFv
+	.4byte __dt__Q23std9exceptionFv
 	.4byte 0x00000040
-	.byte4 $$2190
+	.4byte $$2190
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2278
@@ -43,5 +43,5 @@ $$2278:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std9exception
 __RTTI__Q23std9exception:
-	.byte4 $$2278
+	.4byte $$2278
 	.4byte 0

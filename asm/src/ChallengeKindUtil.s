@@ -280,130 +280,130 @@ T_INFOS__Q33scn4step31$$2unnamed$$2ChallengeKindUtil_cpp$$2:
 	.4byte 0
 	.4byte 0x00000001
 	.4byte 0x00000002
-	.byte4 $$248746
-	.byte4 $$248746
-	.byte4 $$248747
-	.byte4 $$248746
+	.4byte $$248746
+	.4byte $$248746
+	.4byte $$248747
+	.4byte $$248746
 	.4byte 0
 	.4byte 0x40400000
 	.4byte 0x0000000B
 	.4byte 0x00000005
-	.byte4 $$248748
-	.byte4 $$248748
-	.byte4 $$248749
-	.byte4 $$248748
+	.4byte $$248748
+	.4byte $$248748
+	.4byte $$248749
+	.4byte $$248748
 	.4byte 0x00000022
 	.4byte 0x3F800000
 	.4byte 0x00000008
 	.4byte 0x00000004
-	.byte4 $$248750
-	.byte4 $$248750
-	.byte4 $$248751
-	.byte4 $$248750
+	.4byte $$248750
+	.4byte $$248750
+	.4byte $$248751
+	.4byte $$248750
 	.4byte 0x0000000F
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248752
-	.byte4 $$248752
-	.byte4 $$248753
-	.byte4 $$248754
+	.4byte $$248752
+	.4byte $$248752
+	.4byte $$248753
+	.4byte $$248754
 	.4byte 0x00000026
 	.4byte 0x40000000
 	.4byte 0x00000004
 	.4byte 0x00000003
-	.byte4 $$248755
-	.byte4 $$248755
-	.byte4 $$248756
-	.byte4 $$248755
+	.4byte $$248755
+	.4byte $$248755
+	.4byte $$248756
+	.4byte $$248755
 	.4byte 0x0000000B
 	.4byte 0x40A00000
 	.4byte 0x00000015
 	.4byte 0x00000007
-	.byte4 $$248757
-	.byte4 $$248757
-	.byte4 $$248758
-	.byte4 $$248757
+	.4byte $$248757
+	.4byte $$248757
+	.4byte $$248758
+	.4byte $$248757
 	.4byte 0x00000019
 	.4byte 0x40C00000
 	.4byte 0x00000013
 	.4byte 0x00000006
-	.byte4 $$248759
-	.byte4 $$248759
-	.byte4 $$248760
-	.byte4 $$248759
+	.4byte $$248759
+	.4byte $$248759
+	.4byte $$248760
+	.4byte $$248759
 	.4byte 0x0000001A
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248761
-	.byte4 $$248761
-	.byte4 $$248762
-	.byte4 $$248754
+	.4byte $$248761
+	.4byte $$248761
+	.4byte $$248762
+	.4byte $$248754
 	.4byte 0x00000027
 	.4byte 0x41000000
 	.4byte 0x00000018
 	.4byte 0x00000008
-	.byte4 $$248763
-	.byte4 $$248763
-	.byte4 $$248764
-	.byte4 $$248763
+	.4byte $$248763
+	.4byte $$248763
+	.4byte $$248764
+	.4byte $$248763
 	.4byte 0x00000013
 	.4byte 0x40E00000
 	.4byte 0
 	.4byte 0
-	.byte4 $$248754
-	.byte4 $$248754
-	.byte4 $$248765
-	.byte4 $$248754
+	.4byte $$248754
+	.4byte $$248754
+	.4byte $$248765
+	.4byte $$248754
 	.4byte 0x0000001E
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248766
-	.byte4 $$248766
-	.byte4 $$248767
-	.byte4 $$248754
+	.4byte $$248766
+	.4byte $$248766
+	.4byte $$248767
+	.4byte $$248754
 	.4byte 0x00000028
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$248768
-	.byte4 $$248768
-	.byte4 $$248769
-	.byte4 $$248754
+	.4byte $$248768
+	.4byte $$248768
+	.4byte $$248769
+	.4byte $$248754
 	.4byte 0x00000029
 	.4byte 0x41000000
 	.4byte 0x00000018
 	.4byte 0x00000008
-	.byte4 $$248770
-	.byte4 $$248763
-	.byte4 $$248771
-	.byte4 $$248763
+	.4byte $$248770
+	.4byte $$248763
+	.4byte $$248771
+	.4byte $$248763
 	.4byte 0x00000004
 	.4byte 0x41000000
 	.4byte 0
 	.4byte 0
-	.byte4 $$248772
-	.byte4 $$248772
-	.byte4 $$248773
-	.byte4 $$248754
+	.4byte $$248772
+	.4byte $$248772
+	.4byte $$248773
+	.4byte $$248754
 	.4byte 0x0000002A
 	.4byte 0x41000000
 	.4byte 0
 	.4byte 0
-	.byte4 $$248774
-	.byte4 $$248774
-	.byte4 $$248775
-	.byte4 $$248754
+	.4byte $$248774
+	.4byte $$248774
+	.4byte $$248775
+	.4byte $$248754
 	.4byte 0x0000002B
 	.4byte 0x41000000
 	.4byte 0
 	.4byte 0
-	.byte4 $$248776
-	.byte4 $$248776
-	.byte4 $$248777
-	.byte4 $$248754
+	.4byte $$248776
+	.4byte $$248776
+	.4byte $$248777
+	.4byte $$248754
 	.4byte 0x0000002C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

@@ -274,25 +274,25 @@ __sinit_$$3snd_WaveSound_cpp:
 /* 8011E70C 0011A54C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3snd_WaveSound_cpp
+	.4byte __sinit_$$3snd_WaveSound_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9WaveSound
 __vt__Q44nw4r3snd6detail9WaveSound:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q44nw4r3snd6detail9WaveSoundCFv
-	.byte4 __dt__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 Shutdown__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 IsPrepared__Q44nw4r3snd6detail9WaveSoundCFv
-	.byte4 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 DetachTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 InitParam__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundCFv
-	.byte4 OnUpdatePlayerPriority__Q44nw4r3snd6detail9WaveSoundFv
-	.byte4 UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte GetRuntimeTypeInfo__Q44nw4r3snd6detail9WaveSoundCFv
+	.4byte __dt__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte Shutdown__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte IsPrepared__Q44nw4r3snd6detail9WaveSoundCFv
+	.4byte IsAttachedTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte DetachTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte InitParam__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundCFv
+	.4byte OnUpdatePlayerPriority__Q44nw4r3snd6detail9WaveSoundFv
+	.4byte UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q44nw4r3snd6detail9WaveSound

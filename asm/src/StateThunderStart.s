@@ -395,18 +395,18 @@ __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12Stat
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1Fv
-	.byte4 create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss6dubior17StateThunderStart
 __vt__Q53scn4step4boss6dubior17StateThunderStart:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6dubior17StateThunderStartFv
-	.byte4 procAnim__Q53scn4step4boss6dubior17StateThunderStartFv
-	.byte4 procMove__Q53scn4step4boss6dubior17StateThunderStartFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6dubior17StateThunderStartFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6dubior17StateThunderStartFv
+	.4byte procAnim__Q53scn4step4boss6dubior17StateThunderStartFv
+	.4byte procMove__Q53scn4step4boss6dubior17StateThunderStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6dubior17StateThunderStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global WaitFrameTable__Q53scn4step4boss6dubior31$$2unnamed$$2StateThunderStart_cpp$$2

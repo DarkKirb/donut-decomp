@@ -1743,82 +1743,82 @@ TYPE_NAME__Q34nw4r3g3d15AnmObjMatClrRes:
 __vt__Q34nw4r3g3d15AnmObjMatClrRes:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d15AnmObjMatClrResCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d15AnmObjMatClrResFUlUlPv
-	.byte4 __dt__Q34nw4r3g3d15AnmObjMatClrResFv
-	.byte4 GetTypeObj__Q34nw4r3g3d15AnmObjMatClrResCFv
-	.byte4 GetTypeName__Q34nw4r3g3d15AnmObjMatClrResCFv
-	.byte4 SetFrame__Q34nw4r3g3d15AnmObjMatClrResFf
-	.byte4 GetFrame__Q34nw4r3g3d15AnmObjMatClrResCFv
-	.byte4 UpdateFrame__Q34nw4r3g3d15AnmObjMatClrResFv
-	.byte4 SetUpdateRate__Q34nw4r3g3d15AnmObjMatClrResFf
-	.byte4 GetUpdateRate__Q34nw4r3g3d15AnmObjMatClrResCFv
-	.byte4 Bind__Q34nw4r3g3d15AnmObjMatClrResFQ34nw4r3g3d6ResMdl
-	.byte4 Release__Q34nw4r3g3d12AnmObjMatClrFv
-	.byte4 GetResult__Q34nw4r3g3d15AnmObjMatClrResFPQ34nw4r3g3d12ClrAnmResultUl
-	.byte4 Attach__Q34nw4r3g3d12AnmObjMatClrFiPQ34nw4r3g3d15AnmObjMatClrRes
-	.byte4 Detach__Q34nw4r3g3d12AnmObjMatClrFi
-	.byte4 DetachAll__Q34nw4r3g3d12AnmObjMatClrFv
+	.4byte IsDerivedFrom__Q34nw4r3g3d15AnmObjMatClrResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d15AnmObjMatClrResFUlUlPv
+	.4byte __dt__Q34nw4r3g3d15AnmObjMatClrResFv
+	.4byte GetTypeObj__Q34nw4r3g3d15AnmObjMatClrResCFv
+	.4byte GetTypeName__Q34nw4r3g3d15AnmObjMatClrResCFv
+	.4byte SetFrame__Q34nw4r3g3d15AnmObjMatClrResFf
+	.4byte GetFrame__Q34nw4r3g3d15AnmObjMatClrResCFv
+	.4byte UpdateFrame__Q34nw4r3g3d15AnmObjMatClrResFv
+	.4byte SetUpdateRate__Q34nw4r3g3d15AnmObjMatClrResFf
+	.4byte GetUpdateRate__Q34nw4r3g3d15AnmObjMatClrResCFv
+	.4byte Bind__Q34nw4r3g3d15AnmObjMatClrResFQ34nw4r3g3d6ResMdl
+	.4byte Release__Q34nw4r3g3d12AnmObjMatClrFv
+	.4byte GetResult__Q34nw4r3g3d15AnmObjMatClrResFPQ34nw4r3g3d12ClrAnmResultUl
+	.4byte Attach__Q34nw4r3g3d12AnmObjMatClrFiPQ34nw4r3g3d15AnmObjMatClrRes
+	.4byte Detach__Q34nw4r3g3d12AnmObjMatClrFi
+	.4byte DetachAll__Q34nw4r3g3d12AnmObjMatClrFv
 .global __vt__Q34nw4r3g3d20AnmObjMatClrOverride
 __vt__Q34nw4r3g3d20AnmObjMatClrOverride:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d20AnmObjMatClrOverrideCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d16AnmObjMatClrNodeFUlUlPv
-	.byte4 __dt__Q34nw4r3g3d20AnmObjMatClrOverrideFv
-	.byte4 GetTypeObj__Q34nw4r3g3d20AnmObjMatClrOverrideCFv
-	.byte4 GetTypeName__Q34nw4r3g3d20AnmObjMatClrOverrideCFv
-	.byte4 SetFrame__Q34nw4r3g3d16AnmObjMatClrNodeFf
-	.byte4 GetFrame__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 UpdateFrame__Q34nw4r3g3d16AnmObjMatClrNodeFv
-	.byte4 SetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeFf
-	.byte4 GetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 Bind__Q34nw4r3g3d16AnmObjMatClrNodeFQ34nw4r3g3d6ResMdl
-	.byte4 Release__Q34nw4r3g3d16AnmObjMatClrNodeFv
-	.byte4 GetResult__Q34nw4r3g3d20AnmObjMatClrOverrideFPQ34nw4r3g3d12ClrAnmResultUl
-	.byte4 Attach__Q34nw4r3g3d16AnmObjMatClrNodeFiPQ34nw4r3g3d15AnmObjMatClrRes
-	.byte4 Detach__Q34nw4r3g3d16AnmObjMatClrNodeFi
-	.byte4 DetachAll__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte IsDerivedFrom__Q34nw4r3g3d20AnmObjMatClrOverrideCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d16AnmObjMatClrNodeFUlUlPv
+	.4byte __dt__Q34nw4r3g3d20AnmObjMatClrOverrideFv
+	.4byte GetTypeObj__Q34nw4r3g3d20AnmObjMatClrOverrideCFv
+	.4byte GetTypeName__Q34nw4r3g3d20AnmObjMatClrOverrideCFv
+	.4byte SetFrame__Q34nw4r3g3d16AnmObjMatClrNodeFf
+	.4byte GetFrame__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte UpdateFrame__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte SetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeFf
+	.4byte GetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte Bind__Q34nw4r3g3d16AnmObjMatClrNodeFQ34nw4r3g3d6ResMdl
+	.4byte Release__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte GetResult__Q34nw4r3g3d20AnmObjMatClrOverrideFPQ34nw4r3g3d12ClrAnmResultUl
+	.4byte Attach__Q34nw4r3g3d16AnmObjMatClrNodeFiPQ34nw4r3g3d15AnmObjMatClrRes
+	.4byte Detach__Q34nw4r3g3d16AnmObjMatClrNodeFi
+	.4byte DetachAll__Q34nw4r3g3d16AnmObjMatClrNodeFv
 .global __vt__Q34nw4r3g3d16AnmObjMatClrNode
 __vt__Q34nw4r3g3d16AnmObjMatClrNode:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d16AnmObjMatClrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d16AnmObjMatClrNodeFUlUlPv
-	.byte4 __dt__Q34nw4r3g3d16AnmObjMatClrNodeFv
-	.byte4 GetTypeObj__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 GetTypeName__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 SetFrame__Q34nw4r3g3d16AnmObjMatClrNodeFf
-	.byte4 GetFrame__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 UpdateFrame__Q34nw4r3g3d16AnmObjMatClrNodeFv
-	.byte4 SetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeFf
-	.byte4 GetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeCFv
-	.byte4 Bind__Q34nw4r3g3d16AnmObjMatClrNodeFQ34nw4r3g3d6ResMdl
-	.byte4 Release__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte IsDerivedFrom__Q34nw4r3g3d16AnmObjMatClrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d16AnmObjMatClrNodeFUlUlPv
+	.4byte __dt__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte GetTypeObj__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte GetTypeName__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte SetFrame__Q34nw4r3g3d16AnmObjMatClrNodeFf
+	.4byte GetFrame__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte UpdateFrame__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte SetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeFf
+	.4byte GetUpdateRate__Q34nw4r3g3d16AnmObjMatClrNodeCFv
+	.4byte Bind__Q34nw4r3g3d16AnmObjMatClrNodeFQ34nw4r3g3d6ResMdl
+	.4byte Release__Q34nw4r3g3d16AnmObjMatClrNodeFv
 	.4byte 0
-	.byte4 Attach__Q34nw4r3g3d16AnmObjMatClrNodeFiPQ34nw4r3g3d15AnmObjMatClrRes
-	.byte4 Detach__Q34nw4r3g3d16AnmObjMatClrNodeFi
-	.byte4 DetachAll__Q34nw4r3g3d16AnmObjMatClrNodeFv
+	.4byte Attach__Q34nw4r3g3d16AnmObjMatClrNodeFiPQ34nw4r3g3d15AnmObjMatClrRes
+	.4byte Detach__Q34nw4r3g3d16AnmObjMatClrNodeFi
+	.4byte DetachAll__Q34nw4r3g3d16AnmObjMatClrNodeFv
 .global __vt__Q34nw4r3g3d12AnmObjMatClr
 __vt__Q34nw4r3g3d12AnmObjMatClr:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d12AnmObjMatClrCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte IsDerivedFrom__Q34nw4r3g3d12AnmObjMatClrCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.byte4 __dt__Q34nw4r3g3d12AnmObjMatClrFv
-	.byte4 GetTypeObj__Q34nw4r3g3d12AnmObjMatClrCFv
-	.byte4 GetTypeName__Q34nw4r3g3d12AnmObjMatClrCFv
-	.4byte 0
-	.4byte 0
+	.4byte __dt__Q34nw4r3g3d12AnmObjMatClrFv
+	.4byte GetTypeObj__Q34nw4r3g3d12AnmObjMatClrCFv
+	.4byte GetTypeName__Q34nw4r3g3d12AnmObjMatClrCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 Release__Q34nw4r3g3d12AnmObjMatClrFv
 	.4byte 0
-	.byte4 Attach__Q34nw4r3g3d12AnmObjMatClrFiPQ34nw4r3g3d15AnmObjMatClrRes
-	.byte4 Detach__Q34nw4r3g3d12AnmObjMatClrFi
-	.byte4 DetachAll__Q34nw4r3g3d12AnmObjMatClrFv
+	.4byte 0
+	.4byte Release__Q34nw4r3g3d12AnmObjMatClrFv
+	.4byte 0
+	.4byte Attach__Q34nw4r3g3d12AnmObjMatClrFiPQ34nw4r3g3d15AnmObjMatClrRes
+	.4byte Detach__Q34nw4r3g3d12AnmObjMatClrFi
+	.4byte DetachAll__Q34nw4r3g3d12AnmObjMatClrFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28993

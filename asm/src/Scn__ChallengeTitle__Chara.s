@@ -691,57 +691,57 @@ $$256044:
 $$256046:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setRandomFrame__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte setRandomFrame__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256077
 $$256077:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 flashReset__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte flashReset__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256082
 $$256082:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 flashStart__Q28mintglue26Scn__ChallengeTitle__CharaFUlb
+	.4byte flashStart__Q28mintglue26Scn__ChallengeTitle__CharaFUlb
 .global $$256098
 $$256098:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 clearSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte clearSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256103
 $$256103:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte setSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256108
 $$256108:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 setVisibility__Q28mintglue26Scn__ChallengeTitle__CharaFb
+	.4byte setVisibility__Q28mintglue26Scn__ChallengeTitle__CharaFb
 .global $$256111
 $$256111:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 createEquip__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte createEquip__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256116
 $$256116:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 releaseEffect__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte releaseEffect__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256121
 $$256121:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 effectRequestN__Q28mintglue26Scn__ChallengeTitle__CharaFUlPCc
+	.4byte effectRequestN__Q28mintglue26Scn__ChallengeTitle__CharaFUlPCc
 .global $$256127
 $$256127:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isAnimLooped__Q28mintglue26Scn__ChallengeTitle__CharaFv
+	.4byte isAnimLooped__Q28mintglue26Scn__ChallengeTitle__CharaFv
 .global $$256141
 $$256141:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 changeAnim__Q28mintglue26Scn__ChallengeTitle__CharaFPCci
+	.4byte changeAnim__Q28mintglue26Scn__ChallengeTitle__CharaFPCci
 .global $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv
 $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv:
 	.asciz "MintPtr is 0."

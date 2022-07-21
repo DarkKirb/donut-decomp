@@ -1187,46 +1187,46 @@ RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2:
 	.4byte 0x00000003
 .global privateCharMap__30$$2unnamed$$2UserTagProcessor_cpp$$2
 privateCharMap__30$$2unnamed$$2UserTagProcessor_cpp$$2:
-	.byte4 $$249204
-	.byte4 $$249205
-	.byte4 $$249206
-	.byte4 $$249207
-	.byte4 $$249208
-	.byte4 $$249209
-	.byte4 $$249210
-	.byte4 $$249211
-	.byte4 $$249212
-	.byte4 $$249213
-	.byte4 $$249214
-	.byte4 $$249215
-	.byte4 $$249216
-	.byte4 $$249217
-	.byte4 $$249218
-	.byte4 $$249219
-	.byte4 $$249220
-	.byte4 $$249221
-	.byte4 $$249222
-	.byte4 $$249223
-	.byte4 $$249224
-	.byte4 $$249225
-	.byte4 $$249226
-	.byte4 $$249227
-	.byte4 $$249228
-	.byte4 $$249229
-	.byte4 $$249230
-	.byte4 $$249231
-	.byte4 $$249232
-	.byte4 $$249233
-	.byte4 $$249234
-	.byte4 $$249235
-	.byte4 $$249236
-	.byte4 $$249237
-	.byte4 $$249238
-	.byte4 $$249239
-	.byte4 $$249240
-	.byte4 $$249241
-	.byte4 $$249242
-	.byte4 $$249209
+	.4byte $$249204
+	.4byte $$249205
+	.4byte $$249206
+	.4byte $$249207
+	.4byte $$249208
+	.4byte $$249209
+	.4byte $$249210
+	.4byte $$249211
+	.4byte $$249212
+	.4byte $$249213
+	.4byte $$249214
+	.4byte $$249215
+	.4byte $$249216
+	.4byte $$249217
+	.4byte $$249218
+	.4byte $$249219
+	.4byte $$249220
+	.4byte $$249221
+	.4byte $$249222
+	.4byte $$249223
+	.4byte $$249224
+	.4byte $$249225
+	.4byte $$249226
+	.4byte $$249227
+	.4byte $$249228
+	.4byte $$249229
+	.4byte $$249230
+	.4byte $$249231
+	.4byte $$249232
+	.4byte $$249233
+	.4byte $$249234
+	.4byte $$249235
+	.4byte $$249236
+	.4byte $$249237
+	.4byte $$249238
+	.4byte $$249239
+	.4byte $$249240
+	.4byte $$249241
+	.4byte $$249242
+	.4byte $$249209
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249204
@@ -1307,9 +1307,9 @@ $$250943:
 __vt__Q23lyt16UserTagProcessor:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q23lyt16UserTagProcessorFv
-	.byte4 Process__Q23lyt16UserTagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
-	.byte4 CalcRect__Q23lyt16UserTagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0w$$1
+	.4byte __dt__Q23lyt16UserTagProcessorFv
+	.4byte Process__Q23lyt16UserTagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
+	.4byte CalcRect__Q23lyt16UserTagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext$$0w$$1
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$22
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$22:
 	.asciz "NW4R:Pointer Error\nstr(=%p) is not valid pointer."

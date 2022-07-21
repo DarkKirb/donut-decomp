@@ -23,7 +23,7 @@ __sinit_$$3MintHero_cpp:
 /* 8034B6B4 003474F4  4B D9 1D 2C */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintHero_cpp
+	.4byte __sinit_$$3MintHero_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step4hero22$$2unnamed$$2MintHero_cpp$$2

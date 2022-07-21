@@ -1173,7 +1173,7 @@ $$254028:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MOVE_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2
 T_MOVE_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2:
-	.byte4 $$252167
+	.4byte $$252167
 .global T_FIX_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2
 T_FIX_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2:
-	.byte4 $$252168
+	.4byte $$252168

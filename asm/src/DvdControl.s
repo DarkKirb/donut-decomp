@@ -491,7 +491,7 @@ __sinit_$$3DvdControl_cpp:
 /* 801CE5C0 001CA400  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3DvdControl_cpp
+	.4byte __sinit_$$3DvdControl_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249342
@@ -504,13 +504,13 @@ $$249343:
 	.balign 4
 .global dvdControlBlock
 dvdControlBlock:
-	.byte4 Open__FPvPCv
-	.byte4 GetStatus__FPvPv
-	.byte4 Close__FPvPv
-	.byte4 GetSize__FPvPv
-	.byte4 Tell__FPvPv
-	.byte4 Seek__FPvPvUl
-	.byte4 Read__FPvPvPUcUl
+	.4byte Open__FPvPCv
+	.4byte GetStatus__FPvPv
+	.4byte Close__FPvPv
+	.4byte GetSize__FPvPv
+	.4byte Tell__FPvPv
+	.4byte Seek__FPvPvUl
+	.4byte Read__FPvPvPUcUl
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

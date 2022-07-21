@@ -1072,30 +1072,30 @@ lbl_8024EEE4:
 __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10creditmeta10StateGlide$$4PQ43scn4step4boss4Boss$$4b$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10creditmeta10StateGlide$$4PQ43scn4step4boss4Boss$$4b$$1Fv
-	.byte4 create__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10creditmeta10StateGlide$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.4byte __dt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10creditmeta10StateGlide$$4PQ43scn4step4boss4Boss$$4b$$1Fv
+	.4byte create__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10creditmeta10StateGlide$$4PQ43scn4step4boss4Boss$$4b$$1Fv
 .global __vt__Q53scn4step4boss10creditmeta10StateGlide
 __vt__Q53scn4step4boss10creditmeta10StateGlide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss10creditmeta10StateGlideFv
-	.byte4 procAnim__Q53scn4step4boss10creditmeta10StateGlideFv
-	.byte4 procMove__Q53scn4step4boss10creditmeta10StateGlideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss10creditmeta10StateGlideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss10creditmeta10StateGlideFv
+	.4byte procAnim__Q53scn4step4boss10creditmeta10StateGlideFv
+	.4byte procMove__Q53scn4step4boss10creditmeta10StateGlideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditmeta10StateGlideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior10StateGlide
 __vt__Q53scn4step4boss6dubior10StateGlide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6dubior10StateGlideFv
-	.byte4 procAnim__Q53scn4step4boss6dubior10StateGlideFv
-	.byte4 procMove__Q53scn4step4boss6dubior10StateGlideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6dubior10StateGlideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6dubior10StateGlideFv
+	.4byte procAnim__Q53scn4step4boss6dubior10StateGlideFv
+	.4byte procMove__Q53scn4step4boss6dubior10StateGlideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6dubior10StateGlideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255202

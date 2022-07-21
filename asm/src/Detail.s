@@ -3610,9 +3610,9 @@ canRemove__Q43scn7history6detail6DetailFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252852
 $$252852:
-	.byte4 $$252849
-	.byte4 $$252850
-	.byte4 $$252851
+	.4byte $$252849
+	.4byte $$252850
+	.4byte $$252851
 .global $$252854
 $$252854:
 	.4byte 0x00000008
@@ -3870,10 +3870,10 @@ $$259188:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252847
 $$252847:
-	.byte4 $$252845
+	.4byte $$252845
 .global lbl_80560174
 lbl_80560174:
-	.byte4 $$252846
+	.4byte $$252846
 .global $$252906
 $$252906:
 	.4byte 0xFFFFFFFF

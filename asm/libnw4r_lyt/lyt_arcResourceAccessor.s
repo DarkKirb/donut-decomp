@@ -346,9 +346,9 @@ lbl_800FDD20:
 __vt__Q34nw4r3lyt19ArcResourceAccessor:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r3lyt19ArcResourceAccessorFv
-	.byte4 GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl
-	.byte4 GetFont__Q34nw4r3lyt19ArcResourceAccessorFPCc
+	.4byte __dt__Q34nw4r3lyt19ArcResourceAccessorFv
+	.4byte GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl
+	.4byte GetFont__Q34nw4r3lyt19ArcResourceAccessorFPCc
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

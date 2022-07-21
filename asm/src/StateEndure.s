@@ -136,9 +136,9 @@ lbl_802C5A24:
 __vt__Q53scn4step5enemy7mumbies11StateEndure:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy7mumbies11StateEndureFv
-	.byte4 procAnim__Q43scn4step5enemy9StateBaseFv
-	.byte4 procMove__Q53scn4step5enemy7mumbies11StateEndureFv
-	.byte4 procConstraint__Q43scn4step5enemy9StateBaseFv
-	.byte4 procFixPos__Q53scn4step5enemy7mumbies11StateEndureFv
-	.byte4 procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte __dt__Q53scn4step5enemy7mumbies11StateEndureFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy7mumbies11StateEndureFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy7mumbies11StateEndureFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

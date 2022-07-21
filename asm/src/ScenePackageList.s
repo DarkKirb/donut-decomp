@@ -285,13 +285,13 @@ $$252053:
 __vt__Q33scn11packagelist16ScenePackageList:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn11packagelist16ScenePackageListCFv
-	.byte4 __dt__Q33scn11packagelist16ScenePackageListFv
-	.byte4 updateMain__Q33scn11packagelist16ScenePackageListFv
-	.byte4 updateUseGPU__Q33scn11packagelist16ScenePackageListFv
-	.byte4 updateDebug__Q33scn11packagelist16ScenePackageListFv
-	.byte4 draw__Q33scn11packagelist16ScenePackageListFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn11packagelist16ScenePackageListCFv
+	.4byte GetRuntimeTypeInfo__Q33scn11packagelist16ScenePackageListCFv
+	.4byte __dt__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateMain__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateUseGPU__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateDebug__Q33scn11packagelist16ScenePackageListFv
+	.4byte draw__Q33scn11packagelist16ScenePackageListFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn11packagelist16ScenePackageListCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

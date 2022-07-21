@@ -2204,13 +2204,13 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNorm
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1Fv
-	.byte4 create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.4byte __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1Fv
+	.4byte create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1Fv
 .global __vt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1
 __vt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1Fv
+	.4byte __dt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1Fv
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.asciz "NW4R:Pointer must not be NULL (p)"

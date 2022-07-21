@@ -5908,13 +5908,13 @@ $$25139:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DVDVersion
 __DVDVersion:
-	.byte4 $$21
+	.4byte $$21
 .global autoInvalidation
 autoInvalidation:
 	.4byte 0x00000001
 .global checkOptionalCommand
 checkOptionalCommand:
-	.byte4 defaultOptionalCommandChecker
+	.4byte defaultOptionalCommandChecker
 .global $$24254
 $$24254:
 	.asciz "dvd.c"

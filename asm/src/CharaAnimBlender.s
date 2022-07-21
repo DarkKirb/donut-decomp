@@ -958,26 +958,26 @@ $$249981:
 __vt__Q23g3d16CharaAnimBlender:
 	.4byte 0
 	.4byte 0
-	.byte4 IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
-	.byte4 G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
-	.byte4 __dt__Q23g3d16CharaAnimBlenderFv
-	.byte4 GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv
-	.byte4 GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv
-	.byte4 SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
-	.byte4 GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
-	.byte4 UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
-	.byte4 SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
-	.byte4 GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
-	.byte4 Bind__Q23g3d16CharaAnimBlenderFQ34nw4r3g3d6ResMdl
-	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFv
-	.byte4 GetResult__Q23g3d16CharaAnimBlenderFPQ34nw4r3g3d12ChrAnmResultUl
-	.byte4 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
-	.byte4 Detach__Q34nw4r3g3d13AnmObjChrNodeFi
-	.byte4 DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
-	.byte4 SetWeight__Q34nw4r3g3d9AnmObjChrFif
-	.byte4 GetWeight__Q34nw4r3g3d9AnmObjChrCFi
-	.byte4 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
-	.byte4 Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.4byte IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
+	.4byte __dt__Q23g3d16CharaAnimBlenderFv
+	.4byte GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
+	.4byte GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
+	.4byte GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte Bind__Q23g3d16CharaAnimBlenderFQ34nw4r3g3d6ResMdl
+	.4byte Release__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte GetResult__Q23g3d16CharaAnimBlenderFPQ34nw4r3g3d12ChrAnmResultUl
+	.4byte Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
+	.4byte Detach__Q34nw4r3g3d13AnmObjChrNodeFi
+	.4byte DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.4byte GetWeight__Q34nw4r3g3d9AnmObjChrCFi
+	.4byte Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.4byte Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 .global $$2STRING$$2FLog__Q24nw4r4mathFf$$20
 $$2STRING$$2FLog__Q24nw4r4mathFf$$20:
 	.asciz "FLog: Input is out of the domain."

@@ -263,12 +263,12 @@ procFixPos__Q53scn4step4boss6whispy9StateGrowFv:
 __vt__Q53scn4step4boss6whispy9StateGrow:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy9StateGrowFv
-	.byte4 procAnim__Q53scn4step4boss6whispy9StateGrowFv
-	.byte4 procMove__Q53scn4step4boss6whispy9StateGrowFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy9StateGrowFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6whispy9StateGrowFv
+	.4byte procAnim__Q53scn4step4boss6whispy9StateGrowFv
+	.4byte procMove__Q53scn4step4boss6whispy9StateGrowFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy9StateGrowFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256186

@@ -839,72 +839,72 @@ $$254046:
 $$254048:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 toVector3XOY__Q33hel4math7Vector2CFv
+	.4byte toVector3XOY__Q33hel4math7Vector2CFv
 .global $$254109
 $$254109:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 toVector3__Q33hel4math7Vector2CFv
+	.4byte toVector3__Q33hel4math7Vector2CFv
 .global $$254114
 $$254114:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __dv__Q33hel4math7Vector2CFf
+	.4byte __dv__Q33hel4math7Vector2CFf
 .global $$254145
 $$254145:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __ml__Q33hel4math7Vector2CFf
+	.4byte __ml__Q33hel4math7Vector2CFf
 .global $$254153
 $$254153:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+	.4byte __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 .global $$254175
 $$254175:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+	.4byte __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 .global $$254187
 $$254187:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __adv__Q33hel4math7Vector2Ff
+	.4byte __adv__Q33hel4math7Vector2Ff
 .global $$254195
 $$254195:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __amu__Q33hel4math7Vector2Ff
+	.4byte __amu__Q33hel4math7Vector2Ff
 .global $$254200
 $$254200:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __ami__Q33hel4math7Vector2FRCQ33hel4math7Vector2
+	.4byte __ami__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 .global $$254208
 $$254208:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
+	.4byte __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 .global $$254213
 $$254213:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZero__Q33hel4math7Vector2CFv
+	.4byte isZero__Q33hel4math7Vector2CFv
 .global $$254239
 $$254239:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZeroStrict__Q33hel4math7Vector2CFv
+	.4byte isZeroStrict__Q33hel4math7Vector2CFv
 .global $$254244
 $$254244:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 isZeroLoose__Q33hel4math7Vector2CFf
+	.4byte isZeroLoose__Q33hel4math7Vector2CFf
 .global $$254265
 $$254265:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 set__Q33hel4math7Vector2Fff
+	.4byte set__Q33hel4math7Vector2Fff
 	.asciz "Assertion failed.\n"
 	.balign 4
 	.asciz "MintFuncProxy.hpp"

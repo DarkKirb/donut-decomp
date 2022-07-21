@@ -129,7 +129,7 @@ lbl_800B8B3C:
 __vt__Q34nw4r2ef19DrawStrategyBuilder:
 	.4byte 0
 	.4byte 0
-	.byte4 Create__Q34nw4r2ef19DrawStrategyBuilderFUl
+	.4byte Create__Q34nw4r2ef19DrawStrategyBuilderFUl
 	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

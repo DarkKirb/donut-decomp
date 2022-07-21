@@ -769,11 +769,11 @@ lbl_80382BAC:
 __vt__Q53scn4step4hero7gimmick13StateWarpStar:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7gimmick13StateWarpStarFv
-	.byte4 procAnim__Q53scn4step4hero7gimmick13StateWarpStarFv
-	.byte4 procMove__Q53scn4step4hero7gimmick13StateWarpStarFv
-	.byte4 procConstraint__Q53scn4step4hero7gimmick13StateWarpStarFv
-	.byte4 procFixPos__Q43scn4step4hero9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero7gimmick13StateWarpStarFv
+	.4byte procAnim__Q53scn4step4hero7gimmick13StateWarpStarFv
+	.4byte procMove__Q53scn4step4hero7gimmick13StateWarpStarFv
+	.4byte procConstraint__Q53scn4step4hero7gimmick13StateWarpStarFv
+	.4byte procFixPos__Q43scn4step4hero9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

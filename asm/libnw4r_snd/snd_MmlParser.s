@@ -1405,8 +1405,8 @@ $$210414:
 __vt__Q44nw4r3snd6detail9MmlParser:
 	.4byte 0
 	.4byte 0
-	.byte4 CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll
-	.byte4 NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb
+	.4byte CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll
+	.4byte NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$210407

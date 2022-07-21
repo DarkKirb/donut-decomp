@@ -557,45 +557,45 @@ procFixPos__Q53scn4step4boss10creditroah9StateHideFv:
 __vt__Q53scn4step4boss12creditdedede9StateHide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss12creditdedede9StateHideFv
-	.byte4 procAnim__Q53scn4step4boss12creditdedede9StateHideFv
-	.byte4 procMove__Q53scn4step4boss12creditdedede9StateHideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss12creditdedede9StateHideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss12creditdedede9StateHideFv
+	.4byte procAnim__Q53scn4step4boss12creditdedede9StateHideFv
+	.4byte procMove__Q53scn4step4boss12creditdedede9StateHideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss12creditdedede9StateHideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9creditdee9StateHide
 __vt__Q53scn4step4boss9creditdee9StateHide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss9creditdee9StateHideFv
-	.byte4 procAnim__Q53scn4step4boss9creditdee9StateHideFv
-	.byte4 procMove__Q53scn4step4boss9creditdee9StateHideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss9creditdee9StateHideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss9creditdee9StateHideFv
+	.4byte procAnim__Q53scn4step4boss9creditdee9StateHideFv
+	.4byte procMove__Q53scn4step4boss9creditdee9StateHideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss9creditdee9StateHideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditmeta9StateHide
 __vt__Q53scn4step4boss10creditmeta9StateHide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss10creditmeta9StateHideFv
-	.byte4 procAnim__Q53scn4step4boss10creditmeta9StateHideFv
-	.byte4 procMove__Q53scn4step4boss10creditmeta9StateHideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss10creditmeta9StateHideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss10creditmeta9StateHideFv
+	.4byte procAnim__Q53scn4step4boss10creditmeta9StateHideFv
+	.4byte procMove__Q53scn4step4boss10creditmeta9StateHideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditmeta9StateHideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditroah9StateHide
 __vt__Q53scn4step4boss10creditroah9StateHide:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss10creditroah9StateHideFv
-	.byte4 procAnim__Q53scn4step4boss10creditroah9StateHideFv
-	.byte4 procMove__Q53scn4step4boss10creditroah9StateHideFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss10creditroah9StateHideFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procAnim__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procMove__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

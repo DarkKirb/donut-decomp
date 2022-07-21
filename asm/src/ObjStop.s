@@ -897,11 +897,11 @@ onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor:
 __vt__Q43scn4step4boss7ObjStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4boss7ObjStopFv
-	.byte4 onStopNormalStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopNormalFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.4byte __dt__Q43scn4step4boss7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -909,11 +909,11 @@ __vt__Q43scn4step4boss7ObjStop:
 __vt__Q43scn4step5enemy7ObjStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step5enemy7ObjStopFv
-	.byte4 onStopNormalStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopNormalFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.4byte __dt__Q43scn4step5enemy7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -921,11 +921,11 @@ __vt__Q43scn4step5enemy7ObjStop:
 __vt__Q43scn4step4hero7ObjStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4hero7ObjStopFv
-	.byte4 onStopNormalStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopNormalFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte __dt__Q43scn4step4hero7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -933,11 +933,11 @@ __vt__Q43scn4step4hero7ObjStop:
 __vt__Q43scn4step4item7ObjStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4item7ObjStopFv
-	.byte4 onStopNormalStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopNormalFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.4byte __dt__Q43scn4step4item7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -945,9 +945,9 @@ __vt__Q43scn4step4item7ObjStop:
 __vt__Q43scn4step6weapon7ObjStop:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step6weapon7ObjStopFv
-	.byte4 onStopNormalStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopNormalFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
-	.byte4 onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.4byte __dt__Q43scn4step6weapon7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor
 	.4byte 0

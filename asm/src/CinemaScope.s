@@ -187,11 +187,11 @@ $$251631:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2:
-	.byte4 $$251791
+	.4byte $$251791
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2:
-	.byte4 $$251630
-	.byte4 $$251631
+	.4byte $$251630
+	.4byte $$251631

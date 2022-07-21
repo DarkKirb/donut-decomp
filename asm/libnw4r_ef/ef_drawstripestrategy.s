@@ -3794,11 +3794,11 @@ __dt__Q34nw4r2ef18DrawStripeStrategyFv:
 __vt__Q34nw4r2ef18DrawStripeStrategy:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q34nw4r2ef18DrawStripeStrategyFv
-	.byte4 Draw__Q34nw4r2ef18DrawStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
-	.byte4 GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
-	.byte4 GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
-	.byte4 GetCalcAheadFunc__Q34nw4r2ef18DrawStripeStrategyFPQ34nw4r2ef15ParticleManager
+	.4byte __dt__Q34nw4r2ef18DrawStripeStrategyFv
+	.4byte Draw__Q34nw4r2ef18DrawStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+	.4byte GetGetFirstDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.4byte GetGetNextDrawParticleFunc__Q34nw4r2ef16DrawStrategyImplFi
+	.4byte GetCalcAheadFunc__Q34nw4r2ef18DrawStripeStrategyFPQ34nw4r2ef15ParticleManager
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

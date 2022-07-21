@@ -43,5 +43,5 @@ MEMInitAllocatorForExpHeap:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2LOCAL$$2MEMInitAllocatorForExpHeap__FP12MEMAllocatorP12MEMiHeapHeadi$$2sAllocatorFunc
 $$2LOCAL$$2MEMInitAllocatorForExpHeap__FP12MEMAllocatorP12MEMiHeapHeadi$$2sAllocatorFunc:
-	.byte4 AllocatorAllocForExpHeap_
-	.byte4 AllocatorFreeForExpHeap_
+	.4byte AllocatorAllocForExpHeap_
+	.4byte AllocatorFreeForExpHeap_

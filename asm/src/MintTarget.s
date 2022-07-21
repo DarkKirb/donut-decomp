@@ -54,7 +54,7 @@ __sinit_$$3MintTarget_cpp:
 /* 8019AFD4 00196E14  4B F4 24 0C */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintTarget_cpp
+	.4byte __sinit_$$3MintTarget_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj24$$2unnamed$$2MintTarget_cpp$$2

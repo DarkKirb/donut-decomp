@@ -1644,25 +1644,25 @@ __sinit_$$3snd_BasicSound_cpp:
 /* 80106B7C 001029BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3snd_BasicSound_cpp
+	.4byte __sinit_$$3snd_BasicSound_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10BasicSound
 __vt__Q44nw4r3snd6detail10BasicSound:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q44nw4r3snd6detail10BasicSoundCFv
-	.byte4 __dt__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 Shutdown__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte GetRuntimeTypeInfo__Q44nw4r3snd6detail10BasicSoundCFv
+	.4byte __dt__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte Shutdown__Q44nw4r3snd6detail10BasicSoundFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 InitParam__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte InitParam__Q44nw4r3snd6detail10BasicSoundFv
 	.4byte 0
 	.4byte 0
-	.byte4 OnUpdatePlayerPriority__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
-	.byte4 UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte OnUpdatePlayerPriority__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212466

@@ -28,7 +28,7 @@ __sinit_$$3MintFootState_cpp:
 /* 8019AC90 00196AD0  4B F4 27 50 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MintFootState_cpp
+	.4byte __sinit_$$3MintFootState_cpp
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj27$$2unnamed$$2MintFootState_cpp$$2

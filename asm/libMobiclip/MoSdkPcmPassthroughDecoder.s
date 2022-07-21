@@ -108,20 +108,20 @@ lbl_80153980:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__26MoSdkPcmPassthroughDecoder
 __vt__26MoSdkPcmPassthroughDecoder:
-	.byte4 __RTTI__26MoSdkPcmPassthroughDecoder
+	.4byte __RTTI__26MoSdkPcmPassthroughDecoder
 	.4byte 0
-	.byte4 decodeIntoBuffer__26MoSdkPcmPassthroughDecoderFPCUcUlPUsPUl
-	.byte4 getPcmSizeFromPacket__26MoSdkPcmPassthroughDecoderFUl
-	.byte4 __dt__26MoSdkPcmPassthroughDecoderFv
-	.byte4 decode__17MoSdkAudioDecoderFPCUcUl
-	.byte4 seekPerformed__17MoSdkAudioDecoderFv
+	.4byte decodeIntoBuffer__26MoSdkPcmPassthroughDecoderFPCUcUlPUsPUl
+	.4byte getPcmSizeFromPacket__26MoSdkPcmPassthroughDecoderFUl
+	.4byte __dt__26MoSdkPcmPassthroughDecoderFv
+	.4byte decode__17MoSdkAudioDecoderFPCUcUl
+	.4byte seekPerformed__17MoSdkAudioDecoderFv
 .global $$22523
 $$22523:
 	.asciz "MoSdkPcmPassthroughDecoder"
 	.balign 4
 .global $$22524
 $$22524:
-	.byte4 __RTTI__17MoSdkAudioDecoder
+	.4byte __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -129,5 +129,5 @@ $$22524:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__26MoSdkPcmPassthroughDecoder
 __RTTI__26MoSdkPcmPassthroughDecoder:
-	.byte4 $$22523
-	.byte4 $$22524
+	.4byte $$22523
+	.4byte $$22524

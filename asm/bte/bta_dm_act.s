@@ -2608,11 +2608,11 @@ bta_service_id_to_btm_srv_id_lkup_tbl:
 	.4byte 0
 .global bta_security
 bta_security:
-	.byte4 bta_dm_authorize_cback
-	.byte4 bta_dm_pin_cback
-	.byte4 bta_dm_new_link_key_cback
-	.byte4 bta_dm_link_key_request_cback
-	.byte4 bta_dm_authentication_complete_cback
+	.4byte bta_dm_authorize_cback
+	.4byte bta_dm_pin_cback
+	.4byte bta_dm_new_link_key_cback
+	.4byte bta_dm_link_key_request_cback
+	.4byte bta_dm_authentication_complete_cback
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700

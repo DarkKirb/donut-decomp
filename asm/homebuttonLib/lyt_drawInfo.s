@@ -54,9 +54,9 @@ $$25012:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt8DrawInfo
 __vt__Q36nw4hbm3lyt8DrawInfo:
-	.byte4 __RTTI__Q36nw4hbm3lyt8DrawInfo
+	.4byte __RTTI__Q36nw4hbm3lyt8DrawInfo
 	.4byte 0
-	.byte4 __dt__Q36nw4hbm3lyt8DrawInfoFv
+	.4byte __dt__Q36nw4hbm3lyt8DrawInfoFv
 .global $$24994
 $$24994:
 	.asciz "nw4hbm::lyt::DrawInfo"
@@ -64,5 +64,5 @@ $$24994:
 	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt8DrawInfo
 __RTTI__Q36nw4hbm3lyt8DrawInfo:
-	.byte4 $$24994
+	.4byte $$24994
 	.4byte 0

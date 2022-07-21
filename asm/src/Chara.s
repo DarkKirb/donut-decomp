@@ -2352,78 +2352,78 @@ lbl_8020243C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CHARA_INFO_TABLE__Q33scn14challengetitle19$$2unnamed$$2Chara_cpp$$2
 T_CHARA_INFO_TABLE__Q33scn14challengetitle19$$2unnamed$$2Chara_cpp$$2:
-	.byte4 $$253228
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253231
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253232
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253233
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253234
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253235
-	.byte4 $$253229
-	.byte4 $$253230
-	.byte4 $$253236
-	.byte4 $$253229
-	.byte4 $$253230
+	.4byte $$253228
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253231
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253232
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253233
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253234
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253235
+	.4byte $$253229
+	.4byte $$253230
+	.4byte $$253236
+	.4byte $$253229
+	.4byte $$253230
 .global $$253282
 $$253282:
-	.byte4 $$253277
-	.byte4 $$253278
-	.byte4 $$253279
-	.byte4 $$253280
-	.byte4 $$253281
+	.4byte $$253277
+	.4byte $$253278
+	.4byte $$253279
+	.4byte $$253280
+	.4byte $$253281
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CHARA_INFO_TABLE__Q33scn10grandtitle19$$2unnamed$$2Chara_cpp$$2
 T_CHARA_INFO_TABLE__Q33scn10grandtitle19$$2unnamed$$2Chara_cpp$$2:
-	.byte4 $$253143
-	.byte4 $$253144
-	.byte4 $$253144
-	.byte4 $$253145
-	.byte4 $$253146
-	.byte4 $$253146
-	.byte4 $$253147
-	.byte4 $$253148
-	.byte4 $$253148
-	.byte4 $$253143
-	.byte4 $$253149
-	.byte4 $$253150
-	.byte4 $$253145
-	.byte4 $$253151
-	.byte4 $$253152
-	.byte4 $$253147
-	.byte4 $$253153
-	.byte4 $$253153
-	.byte4 $$253154
-	.byte4 $$253155
-	.byte4 $$253155
-	.byte4 $$253156
-	.byte4 $$253155
-	.byte4 $$253155
-	.byte4 $$253157
-	.byte4 $$253158
-	.byte4 $$253158
-	.byte4 $$253159
-	.byte4 $$253160
-	.byte4 $$253160
-	.byte4 $$253161
-	.byte4 $$253162
-	.byte4 $$253162
+	.4byte $$253143
+	.4byte $$253144
+	.4byte $$253144
+	.4byte $$253145
+	.4byte $$253146
+	.4byte $$253146
+	.4byte $$253147
+	.4byte $$253148
+	.4byte $$253148
+	.4byte $$253143
+	.4byte $$253149
+	.4byte $$253150
+	.4byte $$253145
+	.4byte $$253151
+	.4byte $$253152
+	.4byte $$253147
+	.4byte $$253153
+	.4byte $$253153
+	.4byte $$253154
+	.4byte $$253155
+	.4byte $$253155
+	.4byte $$253156
+	.4byte $$253155
+	.4byte $$253155
+	.4byte $$253157
+	.4byte $$253158
+	.4byte $$253158
+	.4byte $$253159
+	.4byte $$253160
+	.4byte $$253160
+	.4byte $$253161
+	.4byte $$253162
+	.4byte $$253162
 .global $$253204
 $$253204:
-	.byte4 $$253199
-	.byte4 $$253200
-	.byte4 $$253201
-	.byte4 $$253202
-	.byte4 $$253203
+	.4byte $$253199
+	.4byte $$253200
+	.4byte $$253201
+	.4byte $$253202
+	.4byte $$253203
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253229

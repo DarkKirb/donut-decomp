@@ -376,37 +376,37 @@ __dt__Q43scn4step6weapon13StateCallbackFv:
 __vt__Q43scn4step4boss13StateCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4boss13StateCallbackFv
-	.byte4 onStateChanged__Q43scn4step4boss13StateCallbackFRCQ24util13IStateChanger
+	.4byte __dt__Q43scn4step4boss13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4boss13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13StateCallback
 __vt__Q43scn4step5enemy13StateCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step5enemy13StateCallbackFv
-	.byte4 onStateChanged__Q43scn4step5enemy13StateCallbackFRCQ24util13IStateChanger
+	.4byte __dt__Q43scn4step5enemy13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step5enemy13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero13StateCallback
 __vt__Q43scn4step4hero13StateCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4hero13StateCallbackFv
-	.byte4 onStateChanged__Q43scn4step4hero13StateCallbackFRCQ24util13IStateChanger
+	.4byte __dt__Q43scn4step4hero13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4hero13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item13StateCallback
 __vt__Q43scn4step4item13StateCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step4item13StateCallbackFv
-	.byte4 onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger
+	.4byte __dt__Q43scn4step4item13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon13StateCallback
 __vt__Q43scn4step6weapon13StateCallback:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43scn4step6weapon13StateCallbackFv
-	.byte4 onStateChanged__Q43scn4step6weapon13StateCallbackFRCQ24util13IStateChanger
+	.4byte __dt__Q43scn4step6weapon13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step6weapon13StateCallbackFRCQ24util13IStateChanger

@@ -463,17 +463,17 @@ $$227127:
 	.4byte 0x00000058
 	.4byte 0
 	.4byte 0x02000028
-	.byte4 __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
+	.4byte __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
 	.4byte 0x8680001D
 	.4byte 0
-	.byte4 __dt__Q23std9exceptionFv
+	.4byte __dt__Q23std9exceptionFv
 	.4byte 0x02000020
-	.byte4 __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
+	.4byte __dt__Q210Metrowerks48move_ptr$$0c$$4RQ33std6detail20default_delete$$0A0_c$$1$$1Fv
 	.4byte 0x8680001E
 	.4byte 0
-	.byte4 __dt__Q23std9exceptionFv
+	.4byte __dt__Q23std9exceptionFv
 	.4byte 0x82000030
-	.byte4 __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
+	.4byte __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
 .global $$227197
 $$227197:
 	.4byte 0x18180000
@@ -490,27 +490,27 @@ $$227197:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$225557
 $$225557:
-	.byte4 __dt__Q23std11logic_errorFv
+	.4byte __dt__Q23std11logic_errorFv
 	.4byte 0x00000090
-	.byte4 $$225556
+	.4byte $$225556
 .global $$226578
 $$226578:
-	.byte4 __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
+	.4byte __dt__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1Fv
 	.4byte 0x00000064
-	.byte4 $$226577
+	.4byte $$226577
 .global $$227128
 $$227128:
-	.byte4 do_replace__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1FUlUlPCcPCcQ23std26random_access_iterator_tag
+	.4byte do_replace__Q23std59basic_string$$0c$$4Q23std14char_traits$$0c$$1$$4Q23std12allocator$$0c$$1$$1FUlUlPCcPCcQ23std26random_access_iterator_tag
 	.4byte 0x000003F0
-	.byte4 $$227127
+	.4byte $$227127
 .global $$227198
 $$227198:
-	.byte4 __dt__Q23std12length_errorFv
+	.4byte __dt__Q23std12length_errorFv
 	.4byte 0x00000094
-	.byte4 $$227197
+	.4byte $$227197
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3locale_cpp
+	.4byte __sinit_$$3locale_cpp
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210379
@@ -543,41 +543,41 @@ $$2stringBase0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23std12out_of_range
 __vt__Q23std12out_of_range:
-	.byte4 __RTTI__Q23std12out_of_range
+	.4byte __RTTI__Q23std12out_of_range
 	.4byte 0
-	.byte4 __dt__Q23std12out_of_rangeFv
-	.byte4 what__Q23std11logic_errorCFv
+	.4byte __dt__Q23std12out_of_rangeFv
+	.4byte what__Q23std11logic_errorCFv
 .global $$210380
 $$210380:
-	.byte4 __RTTI__Q23std9exception
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
-	.byte4 __RTTI__Q23std11logic_error
+	.4byte __RTTI__Q23std11logic_error
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q23std12length_error
 __vt__Q23std12length_error:
-	.byte4 __RTTI__Q23std12length_error
+	.4byte __RTTI__Q23std12length_error
 	.4byte 0
-	.byte4 __dt__Q23std12length_errorFv
-	.byte4 what__Q23std11logic_errorCFv
+	.4byte __dt__Q23std12length_errorFv
+	.4byte what__Q23std11logic_errorCFv
 .global $$210382
 $$210382:
-	.byte4 __RTTI__Q23std9exception
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
-	.byte4 __RTTI__Q23std11logic_error
+	.4byte __RTTI__Q23std11logic_error
 	.4byte 0
 	.4byte 0
 	.4byte 0
 .global __vt__Q23std11logic_error
 __vt__Q23std11logic_error:
-	.byte4 __RTTI__Q23std11logic_error
+	.4byte __RTTI__Q23std11logic_error
 	.4byte 0
-	.byte4 __dt__Q23std11logic_errorFv
-	.byte4 what__Q23std11logic_errorCFv
+	.4byte __dt__Q23std11logic_errorFv
+	.4byte what__Q23std11logic_errorCFv
 .global $$210388
 $$210388:
-	.byte4 __RTTI__Q23std9exception
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -585,16 +585,16 @@ $$210388:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std12out_of_range
 __RTTI__Q23std12out_of_range:
-	.byte4 $$210379
-	.byte4 $$210380
+	.4byte $$210379
+	.4byte $$210380
 .global __RTTI__Q23std12length_error
 __RTTI__Q23std12length_error:
-	.byte4 $$210381
-	.byte4 $$210382
+	.4byte $$210381
+	.4byte $$210382
 .global __RTTI__Q23std11logic_error
 __RTTI__Q23std11logic_error:
-	.byte4 $$210387
-	.byte4 $$210388
+	.4byte $$210387
+	.4byte $$210388
 .global $$211481
 $$211481:
 	.byte 0x00

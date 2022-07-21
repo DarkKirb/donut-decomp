@@ -2015,7 +2015,7 @@ __sinit_$$3MoveGridGroup_cpp:
 /* 801BBA68 001B78A8  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3MoveGridGroup_cpp
+	.4byte __sinit_$$3MoveGridGroup_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2

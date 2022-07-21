@@ -378,18 +378,18 @@ $$251587:
 	.asciz "AbilitySelect_Smash"
 .global ButtonMsgTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2
 ButtonMsgTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2:
-	.byte4 $$251576
-	.byte4 $$251577
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251580
-	.byte4 $$251581
-	.byte4 $$251582
-	.byte4 $$251583
-	.byte4 $$251584
-	.byte4 $$251585
-	.byte4 $$251586
-	.byte4 $$251587
+	.4byte $$251576
+	.4byte $$251577
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251580
+	.4byte $$251581
+	.4byte $$251582
+	.4byte $$251583
+	.4byte $$251584
+	.4byte $$251585
+	.4byte $$251586
+	.4byte $$251587
 .global $$251590
 $$251590:
 	.asciz "ParasolN"
@@ -404,14 +404,14 @@ ButtonIconTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.byte4 $$251589
-	.byte4 $$251590
-	.byte4 $$251591
-	.byte4 $$251592
-	.byte4 $$251593
-	.byte4 $$251594
-	.byte4 $$251595
-	.byte4 $$251596
+	.4byte $$251589
+	.4byte $$251590
+	.4byte $$251591
+	.4byte $$251592
+	.4byte $$251593
+	.4byte $$251594
+	.4byte $$251595
+	.4byte $$251596
 .global $$252410
 $$252410:
 	.asciz "ButtonActionBase"

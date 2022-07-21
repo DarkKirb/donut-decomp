@@ -950,9 +950,9 @@ lbl_800B023C:
 __vt__Q34nw4r2ef8Particle:
 	.4byte 0
 	.4byte 0
-	.byte4 SendClosing__Q34nw4r2ef8ParticleFv
-	.byte4 DestroyFunc__Q34nw4r2ef8ParticleFv
-	.byte4 Initialize__Q34nw4r2ef8ParticleFUsQ34nw4r4math4VEC3Q34nw4r4math4VEC3PQ34nw4r2ef15ParticleManagerPCQ34nw4r4math5MTX34fPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8Particle
+	.4byte SendClosing__Q34nw4r2ef8ParticleFv
+	.4byte DestroyFunc__Q34nw4r2ef8ParticleFv
+	.4byte Initialize__Q34nw4r2ef8ParticleFUsQ34nw4r4math4VEC3Q34nw4r4math4VEC3PQ34nw4r2ef15ParticleManagerPCQ34nw4r4math5MTX34fPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8Particle
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

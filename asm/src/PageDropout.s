@@ -828,25 +828,25 @@ T_ENTRIES_CHALLENGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
 	.4byte 0
 .global T_ENTRY_CONTEXTS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRY_CONTEXTS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.byte4 T_ENTRIES_STAGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
+	.4byte T_ENTRIES_STAGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 	.4byte 0x00000002
-	.byte4 T_ENTRIES_LEVELMAP__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
+	.4byte T_ENTRIES_LEVELMAP__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 	.4byte 0x00000002
-	.byte4 T_ENTRIES_CHALLENGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
+	.4byte T_ENTRIES_CHALLENGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 	.4byte 0x00000003
-	.byte4 T_ENTRIES_ABILITYROOM__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
+	.4byte T_ENTRIES_ABILITYROOM__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 	.4byte 0x00000002
 .global T_LABELS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_LABELS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.byte4 $$252145
-	.byte4 $$252146
-	.byte4 $$252146
-	.byte4 $$252147
-	.byte4 $$252148
-	.byte4 $$252149
-	.byte4 $$252149
-	.byte4 $$252146
-	.byte4 $$252150
+	.4byte $$252145
+	.4byte $$252146
+	.4byte $$252146
+	.4byte $$252147
+	.4byte $$252148
+	.4byte $$252149
+	.4byte $$252149
+	.4byte $$252146
+	.4byte $$252150
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -936,12 +936,12 @@ $$253492:
 __vt__Q25pause11PageDropout:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q25pause11PageDropoutFv
-	.byte4 pageFrameTitle__Q25pause11PageDropoutCFv
-	.byte4 pageMainLayout__Q25pause11PageDropoutFv
-	.byte4 pageProcAnim__Q25pause11PageDropoutFv
-	.byte4 pageProcHID__Q25pause11PageDropoutFv
-	.byte4 pageIsBusy__Q25pause11PageDropoutCFv
+	.4byte __dt__Q25pause11PageDropoutFv
+	.4byte pageFrameTitle__Q25pause11PageDropoutCFv
+	.4byte pageMainLayout__Q25pause11PageDropoutFv
+	.4byte pageProcAnim__Q25pause11PageDropoutFv
+	.4byte pageProcHID__Q25pause11PageDropoutFv
+	.4byte pageIsBusy__Q25pause11PageDropoutCFv
 	.asciz "NW4R:Pointer must not be NULL (p)"
 	.balign 4
 	.asciz "LinkList.h"

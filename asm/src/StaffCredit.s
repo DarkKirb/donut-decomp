@@ -221,15 +221,15 @@ $$252124:
 __vt__Q33scn19challengefileselect11StaffCredit:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 updateFrame__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 appear__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 focus__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 unfocus__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 decide__Q33scn19challengefileselect11StaffCreditFv
-	.byte4 isAnimEnd__Q33scn19challengefileselect11StaffCreditCFv
-	.byte4 kind__Q33scn19challengefileselect11StaffCreditCFv
-	.byte4 cursorPane__Q33scn19challengefileselect11StaffCreditFv
+	.4byte __dt__Q33scn19challengefileselect11StaffCreditFv
+	.4byte updateFrame__Q33scn19challengefileselect11StaffCreditFv
+	.4byte appear__Q33scn19challengefileselect11StaffCreditFv
+	.4byte focus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte unfocus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte decide__Q33scn19challengefileselect11StaffCreditFv
+	.4byte isAnimEnd__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte kind__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte cursorPane__Q33scn19challengefileselect11StaffCreditFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

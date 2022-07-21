@@ -61,37 +61,37 @@ HammerAnim__Q53scn4step4hero9modeldesc6HammerFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21
 $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21:
-	.byte4 $$248744
+	.4byte $$248744
 	.4byte 0
-	.byte4 $$248745
+	.4byte $$248745
 	.4byte 0
-	.byte4 $$248746
+	.4byte $$248746
 	.4byte 0
-	.byte4 $$248747
+	.4byte $$248747
 	.4byte 0
-	.byte4 $$248748
+	.4byte $$248748
 	.4byte 0
-	.byte4 $$248749
+	.4byte $$248749
 	.4byte 0
-	.byte4 $$248750
+	.4byte $$248750
 	.4byte 0
-	.byte4 $$248751
+	.4byte $$248751
 	.4byte 0
-	.byte4 $$248752
+	.4byte $$248752
 	.4byte 0
-	.byte4 $$248753
+	.4byte $$248753
 	.4byte 0
-	.byte4 $$248754
+	.4byte $$248754
 	.4byte 0
-	.byte4 $$248755
+	.4byte $$248755
 	.4byte 0
-	.byte4 $$248756
+	.4byte $$248756
 	.4byte 0
-	.byte4 $$248757
+	.4byte $$248757
 	.4byte 0
-	.byte4 $$248758
+	.4byte $$248758
 	.4byte 0
-	.byte4 $$248759
+	.4byte $$248759
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -103,9 +103,9 @@ $$248737:
 	.asciz "HammerheadJ"
 .global $$2LOCAL$$2HammerModel__Q53scn4step4hero9modeldesc6HammerFv$$2names$$21
 $$2LOCAL$$2HammerModel__Q53scn4step4hero9modeldesc6HammerFv$$2names$$21:
-	.byte4 $$248735
-	.byte4 $$248736
-	.byte4 $$248737
+	.4byte $$248735
+	.4byte $$248736
+	.4byte $$248737
 	.4byte 0
 .global $$248745
 $$248745:

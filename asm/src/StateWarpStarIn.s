@@ -670,7 +670,7 @@ __sinit_$$3StateWarpStarIn_cpp:
 /* 80383CD4 0037FB14  4B D3 A3 EC */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3StateWarpStarIn_cpp
+	.4byte __sinit_$$3StateWarpStarIn_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$260738
@@ -681,19 +681,19 @@ $$260738:
 __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
-	.byte4 create__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.4byte __dt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+	.4byte create__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
 .global __vt__Q53scn4step4hero7gimmick15StateWarpStarIn
 __vt__Q53scn4step4hero7gimmick15StateWarpStarIn:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero7gimmick15StateWarpStarInFv
-	.byte4 procAnim__Q53scn4step4hero7gimmick15StateWarpStarInFv
-	.byte4 procMove__Q53scn4step4hero7gimmick15StateWarpStarInFv
-	.byte4 procConstraint__Q53scn4step4hero7gimmick15StateWarpStarInFv
-	.byte4 procFixPos__Q43scn4step4hero9StateBaseFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procAnim__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procMove__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procConstraint__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procFixPos__Q43scn4step4hero9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0

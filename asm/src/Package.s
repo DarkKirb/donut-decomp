@@ -937,7 +937,7 @@ __sinit_$$3Package_cpp:
 /* 8020E010 00209E50  4B EB 00 B0 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.byte4 __sinit_$$3Package_cpp
+	.4byte __sinit_$$3Package_cpp
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253252
@@ -959,12 +959,12 @@ $$253256:
 __vt__Q33scn7history7Package:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q33scn7history7PackageFv
-	.byte4 ExecCallback_CALC_WORLD__Q33scn7history7PackageFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
-	.byte4 ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
-	.byte4 ExecCallback_CALC_VIEW__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
-	.byte4 ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
-	.byte4 ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte __dt__Q33scn7history7PackageFv
+	.4byte ExecCallback_CALC_WORLD__Q33scn7history7PackageFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_VIEW__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
 	.4byte 0
 	.4byte 0
 	.4byte 0

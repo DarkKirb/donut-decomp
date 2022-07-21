@@ -123,11 +123,11 @@ __dt__Q53scn4step5enemy4kabu9BrainJumpFv:
 __vt__Q53scn4step5enemy7blipper9BrainJump:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy7blipper9BrainJumpFv
-	.byte4 onStart__Q53scn4step5enemy7blipper9BrainJumpFv
-	.byte4 onRecover__Q53scn4step5enemy7blipper9BrainJumpFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy7blipper9BrainJumpFv
+	.4byte onStart__Q53scn4step5enemy7blipper9BrainJumpFv
+	.4byte onRecover__Q53scn4step5enemy7blipper9BrainJumpFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
@@ -135,9 +135,9 @@ __vt__Q53scn4step5enemy7blipper9BrainJump:
 __vt__Q53scn4step5enemy4kabu9BrainJump:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step5enemy4kabu9BrainJumpFv
-	.byte4 onStart__Q53scn4step5enemy4kabu9BrainJumpFv
-	.byte4 onRecover__Q43scn4step5enemy9BrainBaseFv
-	.byte4 onLanding__Q43scn4step5enemy9BrainBaseFv
-	.byte4 update__Q43scn4step5enemy9BrainBaseFv
+	.4byte __dt__Q53scn4step5enemy4kabu9BrainJumpFv
+	.4byte onStart__Q53scn4step5enemy4kabu9BrainJumpFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

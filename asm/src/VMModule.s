@@ -143,15 +143,15 @@ lbl_801CD3AC:
 __vt__Q26mintvm8VMModule:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q26mintvm8VMModuleFv
+	.4byte __dt__Q26mintvm8VMModuleFv
 .global __vt__Q26mintvm13VMSymbolTable
 __vt__Q26mintvm13VMSymbolTable:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q26mintvm13VMSymbolTableFv
+	.4byte __dt__Q26mintvm13VMSymbolTableFv
 .global __vt__Q26mintvm15VMConstantTable
 __vt__Q26mintvm15VMConstantTable:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q26mintvm15VMConstantTableFv
+	.4byte __dt__Q26mintvm15VMConstantTableFv
 	.4byte 0

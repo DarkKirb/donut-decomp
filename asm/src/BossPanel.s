@@ -1433,7 +1433,7 @@ $$257130:
 $$257147:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 start__Q23snd11SERequestorFUl
+	.4byte start__Q23snd11SERequestorFUl
 .global $$257172
 $$257172:
 	.asciz "step/game/Main"
@@ -1465,7 +1465,7 @@ $$257296:
 $$257322:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 appearParts__Q43scn4step4info9BossPanelFv
+	.4byte appearParts__Q43scn4step4info9BossPanelFv
 .global $$257433
 $$257433:
 	.asciz "PartsExN"
@@ -1494,7 +1494,7 @@ $$257439:
 $$257458:
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.byte4 disappearParts__Q43scn4step4info9BossPanelFUl
+	.4byte disappearParts__Q43scn4step4info9BossPanelFUl
 .global $$257542
 $$257542:
 	.asciz "CharaWhispy"
@@ -1662,18 +1662,18 @@ $$257578:
 __vt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
-	.byte4 clone__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
-	.byte4 clone__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
-	.byte4 __cl__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte __dt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte clone__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
+	.4byte clone__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
+	.4byte __cl__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 .global __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
-	.byte4 clone__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
-	.byte4 clone__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
-	.byte4 __cl__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte __dt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte clone__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
+	.4byte clone__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
+	.4byte __cl__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1684,10 +1684,10 @@ __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$
 __vt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
-	.byte4 clone__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
-	.byte4 clone__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
-	.byte4 __cl__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte __dt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
+	.4byte clone__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFv
+	.4byte clone__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1CFPv
+	.4byte __cl__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 	.4byte 0
 	.4byte 0
 	.4byte 0

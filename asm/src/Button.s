@@ -618,10 +618,10 @@ canCursorMoveRight__Q43scn7history6detail6ButtonCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251957
 $$251957:
-	.byte4 $$251953
-	.byte4 $$251954
-	.byte4 $$251955
-	.byte4 $$251956
+	.4byte $$251953
+	.4byte $$251954
+	.4byte $$251955
+	.4byte $$251956
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MOVE_TABLE__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
@@ -725,45 +725,45 @@ $$251584:
 	.balign 4
 .global PANES__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 PANES__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.byte4 $$251572
-	.byte4 $$251573
-	.byte4 $$251574
-	.byte4 $$251575
-	.byte4 $$251576
-	.byte4 $$251577
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251580
-	.byte4 $$251581
-	.byte4 $$251582
-	.byte4 $$251583
-	.byte4 $$251584
+	.4byte $$251572
+	.4byte $$251573
+	.4byte $$251574
+	.4byte $$251575
+	.4byte $$251576
+	.4byte $$251577
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251580
+	.4byte $$251581
+	.4byte $$251582
+	.4byte $$251583
+	.4byte $$251584
 .global TABLE_2__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 TABLE_2__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.byte4 $$251572
-	.byte4 $$251583
-	.byte4 $$251573
-	.byte4 $$251575
-	.byte4 $$251577
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251584
-	.byte4 $$251580
-	.byte4 $$251580
-	.byte4 $$251580
+	.4byte $$251572
+	.4byte $$251583
+	.4byte $$251573
+	.4byte $$251575
+	.4byte $$251577
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251584
+	.4byte $$251580
+	.4byte $$251580
+	.4byte $$251580
 .global TABLE_3__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 TABLE_3__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
-	.byte4 $$251572
-	.byte4 $$251583
-	.byte4 $$251573
-	.byte4 $$251575
-	.byte4 $$251577
-	.byte4 $$251578
-	.byte4 $$251579
-	.byte4 $$251584
-	.byte4 $$251581
-	.byte4 $$251581
-	.byte4 $$251581
+	.4byte $$251572
+	.4byte $$251583
+	.4byte $$251573
+	.4byte $$251575
+	.4byte $$251577
+	.4byte $$251578
+	.4byte $$251579
+	.4byte $$251584
+	.4byte $$251581
+	.4byte $$251581
+	.4byte $$251581
 .global $$252197
 $$252197:
 	.asciz "history/Detail"

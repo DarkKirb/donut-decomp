@@ -712,5 +712,5 @@ sortResult__Q25ocoll3HitFv:
 __vt__Q25ocoll3Hit:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q25ocoll3HitFv
+	.4byte __dt__Q25ocoll3HitFv
 	.4byte 0

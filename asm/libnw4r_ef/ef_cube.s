@@ -1951,7 +1951,7 @@ lbl_800B8904:
 __vt__Q34nw4r2ef15EmitterFormCube:
 	.4byte 0
 	.4byte 0
-	.byte4 Emission__Q34nw4r2ef15EmitterFormCubeFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
+	.4byte Emission__Q34nw4r2ef15EmitterFormCubeFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

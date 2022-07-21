@@ -116,15 +116,15 @@ __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9State
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
-	.byte4 create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
+	.4byte create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateGrow$$4PQ43scn4step4boss4Boss$$1Fv
 .global __vt__Q53scn4step4boss6whispy12StateDamageL
 __vt__Q53scn4step4boss6whispy12StateDamageL:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4boss6whispy12StateDamageLFv
-	.byte4 procAnim__Q53scn4step4boss6whispy12StateDamageLFv
-	.byte4 procMove__Q53scn4step4boss6whispy12StateDamageLFv
-	.byte4 procConstraint__Q43scn4step4boss9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4boss6whispy12StateDamageLFv
-	.byte4 procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte __dt__Q53scn4step4boss6whispy12StateDamageLFv
+	.4byte procAnim__Q53scn4step4boss6whispy12StateDamageLFv
+	.4byte procMove__Q53scn4step4boss6whispy12StateDamageLFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy12StateDamageLFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -215,13 +215,13 @@ procFixPos__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv:
 __vt__Q53scn4step4hero8captured29StateCapturedWaterGalborosEat:
 	.4byte 0
 	.4byte 0
-	.byte4 __dt__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
-	.byte4 procAnim__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
-	.byte4 procMove__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
-	.byte4 procConstraint__Q43scn4step4hero9StateBaseFv
-	.byte4 procFixPos__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
-	.byte4 procObjCollReact__Q43scn4step4hero9StateBaseFv
-	.byte4 procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte __dt__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
+	.4byte procAnim__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
+	.4byte procMove__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0

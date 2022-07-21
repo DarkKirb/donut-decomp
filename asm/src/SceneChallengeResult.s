@@ -829,13 +829,13 @@ $$254440:
 __vt__Q33scn15challengeresult20SceneChallengeResult:
 	.4byte 0
 	.4byte 0
-	.byte4 GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv
-	.byte4 __dt__Q33scn15challengeresult20SceneChallengeResultFv
-	.byte4 updateMain__Q33scn15challengeresult20SceneChallengeResultFv
-	.byte4 updateUseGPU__Q33scn15challengeresult20SceneChallengeResultFv
-	.byte4 updateDebug__Q33scn15challengeresult20SceneChallengeResultFv
-	.byte4 draw__Q33scn15challengeresult20SceneChallengeResultFRCQ23scn11DrawReqInfo
-	.byte4 isSceneEnd__Q33scn15challengeresult20SceneChallengeResultCFv
+	.4byte GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv
+	.4byte __dt__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateMain__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateUseGPU__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateDebug__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte draw__Q33scn15challengeresult20SceneChallengeResultFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn15challengeresult20SceneChallengeResultCFv
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254439

@@ -82,18 +82,18 @@ T_TABLE_LV7__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
 .global T_TABLES__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLES__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
 	.4byte 0x00000005
-	.byte4 T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV1__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV1__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV2__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV2__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV3__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV3__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV4__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV4__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV5__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV5__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV6__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV6__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 	.4byte 0x00000005
-	.byte4 T_TABLE_LV7__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
+	.4byte T_TABLE_LV7__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2

@@ -338,24 +338,30 @@ registerToRoot__Q43scn4step2bg12DecorationBGFRQ23g3d4Root:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252617
 $$252617:
-	.incbin "baserom.dol", 0x45FD68, 0x10
+	.asciz "step/map/%s/Bg"
+	.balign 4
 .global $$252689
 $$252689:
-	.incbin "baserom.dol", 0x45FD78, 0xC
+	.asciz "SceneAnim"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv$$20:
-	.incbin "baserom.dol", 0x45FD84, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv
 $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv:
-	.incbin "baserom.dol", 0x45FDA0, 0x10
+	.asciz "g3d_resmdl_ac.h"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252618
 $$252618:
-	.incbin "baserom.dol", 0x495248, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMdlFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMdlFv:
-	.incbin "baserom.dol", 0x495250, 0x8
+	.asciz "ResMdl"
+	.balign 4
 .global __FUNCTION__$31429
 __FUNCTION__$31429:
-	.incbin "baserom.dol", 0x495258, 0x8
+	.4byte 0x72656600
+	.4byte 0

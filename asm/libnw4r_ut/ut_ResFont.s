@@ -234,4 +234,27 @@ lbl_801225EC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut7ResFont
 __vt__Q34nw4r2ut7ResFont:
-	.incbin "baserom.dol", 0x43EA38, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0x80122340  ;# ptr
+	.4byte 0x80121C30  ;# ptr
+	.4byte 0x80121C40  ;# ptr
+	.4byte 0x80121C50  ;# ptr
+	.4byte 0x80121C60  ;# ptr
+	.4byte 0x80121C80  ;# ptr
+	.4byte 0x80121CA0  ;# ptr
+	.4byte 0x80121CB0  ;# ptr
+	.4byte 0x80121CC0  ;# ptr
+	.4byte 0x80121CD0  ;# ptr
+	.4byte 0x80121CE0  ;# ptr
+	.4byte 0x80121CF0  ;# ptr
+	.4byte 0x80121D00  ;# ptr
+	.4byte 0x80121D20  ;# ptr
+	.4byte 0x80121D40  ;# ptr
+	.4byte 0x80121E00  ;# ptr
+	.4byte 0x80121E10  ;# ptr
+	.4byte 0x80121E60  ;# ptr
+	.4byte 0x80121F80  ;# ptr
+	.4byte 0x80122050  ;# ptr
+	.4byte 0x80122110  ;# ptr
+	.4byte 0

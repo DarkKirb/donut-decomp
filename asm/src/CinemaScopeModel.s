@@ -193,15 +193,19 @@ draw__Q23sfx16CinemaScopeModelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251766
 $$251766:
-	.incbin "baserom.dol", 0x492668, 0x10
+	.asciz "CinemaScope"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251772
 $$251772:
-	.incbin "baserom.dol", 0x498A80, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$251776
 $$251776:
-	.incbin "baserom.dol", 0x498A88, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$251793
 $$251793:
-	.incbin "baserom.dol", 0x498A90, 0x8
+	.4byte 0x456E6400
+	.4byte 0

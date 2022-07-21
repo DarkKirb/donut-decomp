@@ -464,4 +464,7 @@ getCollidedHitOwnerUid__Q25ocoll9SearchHitCFUl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q25ocoll9SearchHit
 __vt__Q25ocoll9SearchHit:
-	.incbin "baserom.dol", 0x4594F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x801D8FCC  ;# ptr
+	.4byte 0

@@ -345,40 +345,81 @@ state__Q43scn4step4hero11ObjInfoImplCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss11ObjInfoImpl
 __vt__Q43scn4step4boss11ObjInfoImpl:
-	.incbin "baserom.dol", 0x460788, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x80233610  ;# ptr
+	.4byte 0x80233690  ;# ptr
+	.4byte 0x802336B8  ;# ptr
+	.4byte 0x802336E0  ;# ptr
+	.4byte 0x802336E8  ;# ptr
+	.4byte 0x802336F0  ;# ptr
+	.4byte 0x80233718  ;# ptr
+	.4byte 0x80233720  ;# ptr
+	.4byte 0x80233748  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255463
 $$255463:
-	.incbin "baserom.dol", 0x481308, 0x14
+	.4byte 0x834A815B
+	.4byte 0x83728342
+	.4byte 0x28837383
+	.4byte 0x93834E29
+	.4byte 0
 .global $$255464
 $$255464:
-	.incbin "baserom.dol", 0x48131C, 0x10
+	.4byte 0x834A815B
+	.4byte 0x83728342
+	.4byte 0x2889A929
+	.4byte 0
 .global $$255465
 $$255465:
-	.incbin "baserom.dol", 0x48132C, 0x10
+	.4byte 0x834A815B
+	.4byte 0x83728342
+	.4byte 0x2890C229
+	.4byte 0
 .global $$255466
 $$255466:
-	.incbin "baserom.dol", 0x48133C, 0x10
+	.4byte 0x834A815B
+	.4byte 0x83728342
+	.4byte 0x2897CE29
+	.4byte 0
 .global $$255467
 $$255467:
-	.incbin "baserom.dol", 0x48134C, 0xC
+	.4byte 0x8381835E
+	.4byte 0x83698343
+	.4byte 0x83670000
 .global $$255469
 $$255469:
-	.incbin "baserom.dol", 0x481358, 0xC
+	.4byte 0x838F8368
+	.4byte 0x838B8366
+	.4byte 0x83420000
 .global __vt__Q43scn4step4hero11ObjInfoImpl
 __vt__Q43scn4step4hero11ObjInfoImpl:
-	.incbin "baserom.dol", 0x481364, 0x2C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8035088C
+	.4byte 0x8035090C
+	.4byte 0x80350A04
+	.4byte 0x80350A2C
+	.4byte 0x80350A34
+	.4byte 0x80350A3C
+	.4byte 0x80350A64
+	.4byte 0x80350A6C
+	.4byte 0x80350A94
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254747
 $$254747:
-	.incbin "baserom.dol", 0x4952C8, 0x8
+	.4byte 0x837B8358
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255468
 $$255468:
-	.incbin "baserom.dol", 0x496DF8, 0x8
+	.4byte 0x83668366
+	.4byte 0x83660000
 .global $$255470
 $$255470:
-	.incbin "baserom.dol", 0x496E00, 0x8
+	.4byte 0x96A292E8
+	.4byte 0x8B600000

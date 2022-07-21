@@ -647,35 +647,39 @@ lbl_802629F8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2AsinDeg__Q24nw4r4mathFf$$20
 $$2STRING$$2AsinDeg__Q24nw4r4mathFf$$20:
-	.incbin "baserom.dol", 0x4671F0, 0x28
+	.asciz "AsinDeg: Input is out of the domain."
+	.balign 4
 .global $$2STRING$$2AsinDeg__Q24nw4r4mathFf
 $$2STRING$$2AsinDeg__Q24nw4r4mathFf:
-	.incbin "baserom.dol", 0x467218, 0x10
+	.asciz "triangular.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251615
 $$251615:
-	.incbin "baserom.dol", 0x495810, 0x8
+	.4byte 0x42B40000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252471
 $$252471:
-	.incbin "baserom.dol", 0x49B5D8, 0x4
+	.4byte 0
 .global $$252523
 $$252523:
-	.incbin "baserom.dol", 0x49B5DC, 0x4
+	.4byte 0x3C8EFA35
 .global $$252524
 $$252524:
-	.incbin "baserom.dol", 0x49B5E0, 0x4
+	.4byte 0x3F800000
 .global $$252525
 $$252525:
-	.incbin "baserom.dol", 0x49B5E4, 0x4
+	.4byte 0xBF800000
 .global $$252526
 $$252526:
-	.incbin "baserom.dol", 0x49B5E8, 0x4
+	.4byte 0x3F000000
 .global $$252527
 $$252527:
-	.incbin "baserom.dol", 0x49B5EC, 0x4
+	.4byte 0x42652EE1
 .global $$252528
 $$252528:
-	.incbin "baserom.dol", 0x49B5F0, 0x8
+	.4byte 0x40000000
+	.4byte 0

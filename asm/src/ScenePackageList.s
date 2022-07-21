@@ -259,25 +259,50 @@ GetRuntimeTypeInfo__Q33scn11packagelist16ScenePackageListCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252048
 $$252048:
-	.incbin "baserom.dol", 0x45FA20, 0x18
+	.asciz "PackageListCommon.dn"
+	.balign 4
 .global $$252049
 $$252049:
-	.incbin "baserom.dol", 0x45FA38, 0x18
+	.asciz "HistoryLayoutDetail.dn"
+	.balign 4
 .global $$252050
 $$252050:
-	.incbin "baserom.dol", 0x45FA50, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$252051
 $$252051:
-	.incbin "baserom.dol", 0x45FA64, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$252052
 $$252052:
-	.incbin "baserom.dol", 0x45FA78, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$252053
 $$252053:
-	.incbin "baserom.dol", 0x45FA8C, 0x14
+	.asciz "HistoryCommon.dn"
+	.balign 4
 .global __vt__Q33scn11packagelist16ScenePackageList
 __vt__Q33scn11packagelist16ScenePackageList:
-	.incbin "baserom.dol", 0x45FAA0, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8021CCC4  ;# ptr
+	.4byte 0x8021CB90  ;# ptr
+	.4byte 0x8021CC24  ;# ptr
+	.4byte 0x8021CBFC  ;# ptr
+	.4byte 0x8021CC4C  ;# ptr
+	.4byte 0x8021CC74  ;# ptr
+	.4byte 0x8021CC9C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn11packagelist16ScenePackageList$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

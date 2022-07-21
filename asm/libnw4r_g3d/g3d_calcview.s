@@ -2421,15 +2421,23 @@ lbl_800E303C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2
 bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2:
-	.incbin "baserom.dol", 0x404EC8, 0x20
+	.4byte 0
+	.4byte 0x800E0F60  ;# ptr
+	.4byte 0x800E11C0  ;# ptr
+	.4byte 0x800E1530  ;# ptr
+	.4byte 0x800E1840  ;# ptr
+	.4byte 0x800E1C50  ;# ptr
+	.4byte 0x800E1F60  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212856
 $$212856:
-	.incbin "baserom.dol", 0x499B58, 0x4
+	.4byte 0
 .global $$212857
 $$212857:
-	.incbin "baserom.dol", 0x499B5C, 0x4
+	.4byte 0x219392EF
 .global norm_epsilon__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2
 norm_epsilon__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2:
-	.incbin "baserom.dol", 0x499B60, 0x8
+	.4byte 0x219392EF
+	.4byte 0

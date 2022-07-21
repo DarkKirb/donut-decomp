@@ -562,54 +562,63 @@ lbl_8029343C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common17StateMasterSummon
 __vt__Q53scn4step5enemy6common17StateMasterSummon:
-	.incbin "baserom.dol", 0x46F318, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80292E20  ;# ptr
+	.4byte 0x80292ED4  ;# ptr
+	.4byte 0x80293104  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80293158  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257050
 $$257050:
-	.incbin "baserom.dol", 0x49BB98, 0x4
+	.4byte 0xFFFFFFFF
 .global $$259324
 $$259324:
-	.incbin "baserom.dol", 0x49BB9C, 0x4
+	.4byte 0x3DCCCCCD
 .global $$259325
 $$259325:
-	.incbin "baserom.dol", 0x49BBA0, 0x4
+	.4byte 0x3F666666
 .global $$257172
 $$257172:
-	.incbin "baserom.dol", 0x49BBA4, 0x4
+	.4byte 0x000000FF
 .global $$259361
 $$259361:
-	.incbin "baserom.dol", 0x49BBA8, 0x4
+	.4byte 0x41F00000
 .global $$259362
 $$259362:
-	.incbin "baserom.dol", 0x49BBAC, 0x4
+	.4byte 0x4222F983
 .global $$259363
 $$259363:
-	.incbin "baserom.dol", 0x49BBB0, 0x4
+	.4byte 0x3C8EFA35
 .global $$259364
 $$259364:
-	.incbin "baserom.dol", 0x49BBB4, 0x4
+	.4byte 0x42B40000
 .global $$259365
 $$259365:
-	.incbin "baserom.dol", 0x49BBB8, 0x4
+	.4byte 0x437F0000
 .global $$259366
 $$259366:
-	.incbin "baserom.dol", 0x49BBBC, 0x4
+	.4byte 0
 .global $$259367
 $$259367:
-	.incbin "baserom.dol", 0x49BBC0, 0x4
+	.4byte 0x44070000
 .global $$259368
 $$259368:
-	.incbin "baserom.dol", 0x49BBC4, 0x4
+	.4byte 0x3F800000
 .global $$259371
 $$259371:
-	.incbin "baserom.dol", 0x49BBC8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$259475
 $$259475:
-	.incbin "baserom.dol", 0x49BBD0, 0x4
+	.4byte 0x3F000000
 .global T_INIT_SCALE__Q53scn4step5enemy6common31$$2unnamed$$2StateMasterSummon_cpp$$2
 T_INIT_SCALE__Q53scn4step5enemy6common31$$2unnamed$$2StateMasterSummon_cpp$$2:
-	.incbin "baserom.dol", 0x49BBD4, 0x4
+	.4byte 0x3DCCCCCD
 .global T_END_SCALE__Q53scn4step5enemy6common31$$2unnamed$$2StateMasterSummon_cpp$$2
 T_END_SCALE__Q53scn4step5enemy6common31$$2unnamed$$2StateMasterSummon_cpp$$2:
-	.incbin "baserom.dol", 0x49BBD8, 0x8
+	.4byte 0x3F800000
+	.4byte 0

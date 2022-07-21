@@ -436,20 +436,37 @@ __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky11Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5nruff9StateStay
 __vt__Q53scn4step5enemy5nruff9StateStay:
-	.incbin "baserom.dol", 0x475AE8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C8998  ;# ptr
+	.4byte 0x802C899C  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C8A40  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476FD8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D5668  ;# ptr
+	.4byte 0x802D564C  ;# ptr
 .global __vt__Q53scn4step5enemy5rocky9StateStay
 __vt__Q53scn4step5enemy5rocky9StateStay:
-	.incbin "baserom.dol", 0x476FE8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D533C  ;# ptr
+	.4byte 0x802D5340  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802D5598  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256196
 $$256196:
-	.incbin "baserom.dol", 0x49CB58, 0x4
+	.4byte 0
 .global $$256245
 $$256245:
-	.incbin "baserom.dol", 0x49CB5C, 0x4
+	.4byte 0x3F800000

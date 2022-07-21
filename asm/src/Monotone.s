@@ -933,35 +933,40 @@ setupDrawOriginal__Q23sfx8MonotoneFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253437
 $$253437:
-	.incbin "baserom.dol", 0x48ED88, 0x18
+	.asciz "step/sfx/Monotone"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253430
 $$253430:
-	.incbin "baserom.dol", 0x49E738, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$253502
 $$253502:
-	.incbin "baserom.dol", 0x49E740, 0x4
+	.4byte 0x3F800000
 .global $$252981
 $$252981:
-	.incbin "baserom.dol", 0x49E744, 0x4
+	.4byte 0x000000FF
 .global $$252983
 $$252983:
-	.incbin "baserom.dol", 0x49E748, 0x4
+	.4byte 0x000000FF
 .global $$253028
 $$253028:
-	.incbin "baserom.dol", 0x49E74C, 0x4
+	.4byte 0xFFFFFF00
 .global $$253596
 $$253596:
-	.incbin "baserom.dol", 0x49E750, 0x8
+	.4byte 0x437F0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251472
 $$251472:
-	.incbin "baserom.dol", 0x49EE38, 0x4
+	.4byte 0xFFFFFFFF
 .global $$251648
 $$251648:
-	.incbin "baserom.dol", 0x49EE3C, 0x4
+	.4byte 0x000000FF
 .global $$251673
 $$251673:
-	.incbin "baserom.dol", 0x49EE40, 0x8
+	.4byte 0
+	.4byte 0

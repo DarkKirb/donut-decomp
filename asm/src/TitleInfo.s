@@ -955,110 +955,142 @@ lbl_80206D3C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252920
 $$252920:
-	.incbin "baserom.dol", 0x45AF88, 0x14
+	.asciz "challengetitle/Main"
 .global $$253701
 $$253701:
-	.incbin "baserom.dol", 0x45AF9C, 0xC
+	.asciz "TitleLogo"
+	.balign 4
 .global $$253703
 $$253703:
-	.incbin "baserom.dol", 0x45AFA8, 0xC
+	.asciz "BackButtonN"
 .global $$253704
 $$253704:
-	.incbin "baserom.dol", 0x45AFB4, 0xC
+	.asciz "TitleLogoN"
+	.balign 4
 .global $$253790
 $$253790:
-	.incbin "baserom.dol", 0x45AFC0, 0x10
+	.asciz "DisconnectTitle"
 .global $$253791
 $$253791:
-	.incbin "baserom.dol", 0x45AFD0, 0x14
+	.asciz "DisconnectExtTitle"
+	.balign 4
 .global $$253792
 $$253792:
-	.incbin "baserom.dol", 0x45AFE4, 0xC
+	.asciz "PushTextSh"
+	.balign 4
 .global $$253793
 $$253793:
-	.incbin "baserom.dol", 0x45AFF0, 0xC
+	.asciz "PushText"
+	.balign 4
 .global $$253794
 $$253794:
-	.incbin "baserom.dol", 0x45AFFC, 0x3C
+	.asciz "PushButton"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252919
 $$252919:
-	.incbin "baserom.dol", 0x45CB98, 0x10
+	.asciz "grandtitle/Main"
 .global $$253747
 $$253747:
-	.incbin "baserom.dol", 0x45CBA8, 0xC
+	.asciz "TitleLogo"
+	.balign 4
 .global $$253749
 $$253749:
-	.incbin "baserom.dol", 0x45CBB4, 0xC
+	.asciz "TitleLogoN"
+	.balign 4
 .global $$253841
 $$253841:
-	.incbin "baserom.dol", 0x45CBC0, 0x10
+	.asciz "DisconnectTitle"
 .global $$253842
 $$253842:
-	.incbin "baserom.dol", 0x45CBD0, 0x14
+	.asciz "DisconnectExtTitle"
+	.balign 4
 .global $$253843
 $$253843:
-	.incbin "baserom.dol", 0x45CBE4, 0xC
+	.asciz "PushTextSh"
+	.balign 4
 .global $$253844
 $$253844:
-	.incbin "baserom.dol", 0x45CBF0, 0xC
+	.asciz "PushText"
+	.balign 4
 .global $$253845
 $$253845:
-	.incbin "baserom.dol", 0x45CBFC, 0x3C
+	.asciz "PushButton"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253700
 $$253700:
-	.incbin "baserom.dol", 0x494188, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$253702
 $$253702:
-	.incbin "baserom.dol", 0x494190, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$253705
 $$253705:
-	.incbin "baserom.dol", 0x494198, 0x8
+	.asciz "PushN"
+	.balign 4
 .global $$253760
 $$253760:
-	.incbin "baserom.dol", 0x4941A0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253765
 $$253765:
-	.incbin "baserom.dol", 0x4941A8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253795
 $$253795:
-	.incbin "baserom.dol", 0x4941B0, 0x8
+	.asciz "Frame"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253746
 $$253746:
-	.incbin "baserom.dol", 0x494828, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$253748
 $$253748:
-	.incbin "baserom.dol", 0x494830, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$253750
 $$253750:
-	.incbin "baserom.dol", 0x494838, 0x8
+	.asciz "PushN"
+	.balign 4
 .global $$253803
 $$253803:
-	.incbin "baserom.dol", 0x494840, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253812
 $$253812:
-	.incbin "baserom.dol", 0x494848, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253846
 $$253846:
-	.incbin "baserom.dol", 0x494850, 0x8
+	.asciz "Frame"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2:
-	.incbin "baserom.dol", 0x49A958, 0x4
+	.4byte 0x8045EE88
 .global $$253755
 $$253755:
-	.incbin "baserom.dol", 0x49A95C, 0x4
+	.4byte 0x3F333333
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2:
-	.incbin "baserom.dol", 0x49AB30, 0x4
+	.4byte 0x80460A98
 .global $$253798
 $$253798:
-	.incbin "baserom.dol", 0x49AB34, 0x4
+	.4byte 0x3F333333

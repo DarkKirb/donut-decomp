@@ -3882,51 +3882,69 @@ lbl_800E0018:
 /* 800E006C 000DBEAC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40237C, 0x4
+	.4byte 0x800DFE00  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc$$2envMtx
 $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc$$2envMtx:
-	.incbin "baserom.dol", 0x404E88, 0x30
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0xBF000000
+	.4byte 0
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F800000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3g3d8G3DState11IndMtxOpStd
 __vt__Q44nw4r3g3d8G3DState11IndMtxOpStd:
-	.incbin "baserom.dol", 0x43D050, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800DFC90  ;# ptr
+	.4byte 0x800DF520  ;# ptr
+	.4byte 0x800DFC40  ;# ptr
+	.4byte 0x800DFAE0  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$213345
 $$213345:
-	.incbin "baserom.dol", 0x492DD8, 0x4
+	.4byte 0xFFFFFFFF
 .global pG3DStateIndMtxOp__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2
 pG3DStateIndMtxOp__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2:
-	.incbin "baserom.dol", 0x492DDC, 0x4
+	.4byte 0x805103C8
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global cm2hw__Q34nw4r3g3d4fifo
 cm2hw__Q34nw4r3g3d4fifo:
-	.incbin "baserom.dol", 0x499B10, 0x4
+	.4byte 0x00020103
 .global $$215665
 $$215665:
-	.incbin "baserom.dol", 0x499B14, 0x4
+	.4byte 0
 .global $$215666
 $$215666:
-	.incbin "baserom.dol", 0x499B18, 0x4
+	.4byte 0xBF800000
 .global $$215667
 $$215667:
-	.incbin "baserom.dol", 0x499B1C, 0x4
+	.4byte 0x358637BD
 .global $$215668
 $$215668:
-	.incbin "baserom.dol", 0x499B20, 0x4
+	.4byte 0x3F800000
 .global $$216488
 $$216488:
-	.incbin "baserom.dol", 0x499B24, 0x4
+	.4byte 0x3F000000
 .global $$216489
 $$216489:
-	.incbin "baserom.dol", 0x499B28, 0x8
+	.4byte 0x3B808081
+	.4byte 0
 .global $$216494
 $$216494:
-	.incbin "baserom.dol", 0x499B30, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sGenMode2__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2

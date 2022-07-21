@@ -36,7 +36,7 @@ AXFXGetHooks:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __AXFXAlloc
 __AXFXAlloc:
-	.incbin "baserom.dol", 0x492A08, 0x4
+	.4byte 0x80047040  ;# ptr
 .global __AXFXFree
 __AXFXFree:
-	.incbin "baserom.dol", 0x492A0C, 0x4
+	.4byte 0x80047050  ;# ptr

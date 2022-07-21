@@ -407,18 +407,25 @@ lbl_8025854C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath17StateTornadoChase
 __vt__Q53scn4step4boss9moundeath17StateTornadoChase:
-	.incbin "baserom.dol", 0x465310, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80258074  ;# ptr
+	.4byte 0x802580F4  ;# ptr
+	.4byte 0x802581F0  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802583E8  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257129
 $$257129:
-	.incbin "baserom.dol", 0x49B4A0, 0x4
+	.4byte 0
 .global $$257190
 $$257190:
-	.incbin "baserom.dol", 0x49B4A4, 0x4
+	.4byte 0x3727C5AC
 .global $$257212
 $$257212:
-	.incbin "baserom.dol", 0x49B4A8, 0x4
+	.4byte 0x3F000000
 .global $$257213
 $$257213:
-	.incbin "baserom.dol", 0x49B4AC, 0x4
+	.4byte 0xBF800000

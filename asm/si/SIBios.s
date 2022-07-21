@@ -1559,18 +1559,28 @@ lbl_8002B994:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42BC88, 0x48
+	.asciz "<< RVL_SDK - SI \trelease build: Aug 23 2010 17:33:18 (0x4302_145) >>"
+	.balign 4
 .global Si
 Si:
-	.incbin "baserom.dol", 0x42BCD0, 0x18
+	.4byte 0xFFFFFFFF
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global Type
 Type:
-	.incbin "baserom.dol", 0x42BCE8, 0x10
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __SIVersion
 __SIVersion:
-	.incbin "baserom.dol", 0x492900, 0x8
+	.4byte 0x8042FB88
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global Packet

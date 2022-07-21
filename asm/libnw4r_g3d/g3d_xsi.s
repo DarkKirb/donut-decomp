@@ -841,18 +841,31 @@ lbl_800E85EC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable:
-	.incbin "baserom.dol", 0x404F20, 0x1C
+	.4byte 0x800E7CC0  ;# ptr
+	.4byte 0x800E7BA0  ;# ptr
+	.4byte 0x800E7C70  ;# ptr
+	.4byte 0x800E7AC0  ;# ptr
+	.4byte 0x800E7B00  ;# ptr
+	.4byte 0x800E7A30  ;# ptr
+	.4byte 0x800E79F0  ;# ptr
 .global $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20:
-	.incbin "baserom.dol", 0x404F3C, 0x1C
+	.4byte 0x800E8250  ;# ptr
+	.4byte 0x800E8090  ;# ptr
+	.4byte 0x800E81C0  ;# ptr
+	.4byte 0x800E7F20  ;# ptr
+	.4byte 0x800E7F50  ;# ptr
+	.4byte 0x800E7E10  ;# ptr
+	.4byte 0x800E7D90  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27161
 $$27161:
-	.incbin "baserom.dol", 0x499BD8, 0x4
+	.4byte 0
 .global $$27162
 $$27162:
-	.incbin "baserom.dol", 0x499BDC, 0x4
+	.4byte 0x3F800000
 .global $$27166
 $$27166:
-	.incbin "baserom.dol", 0x499BE0, 0x8
+	.4byte 0x3F360B61
+	.4byte 0

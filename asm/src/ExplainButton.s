@@ -333,102 +333,153 @@ lbl_803BC15C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251576
 $$251576:
-	.incbin "baserom.dol", 0x48D2C0, 0x10
+	.asciz "ExplainStart"
+	.balign 4
 .global $$251577
 $$251577:
-	.incbin "baserom.dol", 0x48D2D0, 0x14
+	.asciz "ExplainCommandList"
+	.balign 4
 .global $$251578
 $$251578:
-	.incbin "baserom.dol", 0x48D2E4, 0x10
+	.asciz "ExplainGhost"
+	.balign 4
 .global $$251579
 $$251579:
-	.incbin "baserom.dol", 0x48D2F4, 0x10
+	.asciz "ExplainRanking"
+	.balign 4
 .global $$251580
 $$251580:
-	.incbin "baserom.dol", 0x48D304, 0x14
+	.asciz "AbilitySelect_Sword"
 .global $$251581
 $$251581:
-	.incbin "baserom.dol", 0x48D318, 0x18
+	.asciz "AbilitySelect_Parasol"
+	.balign 4
 .global $$251582
 $$251582:
-	.incbin "baserom.dol", 0x48D330, 0x14
+	.asciz "AbilitySelect_Spark"
 .global $$251583
 $$251583:
-	.incbin "baserom.dol", 0x48D344, 0x14
+	.asciz "AbilitySelect_Whip"
+	.balign 4
 .global $$251584
 $$251584:
-	.incbin "baserom.dol", 0x48D358, 0x14
+	.asciz "AbilitySelect_Wing"
+	.balign 4
 .global $$251585
 $$251585:
-	.incbin "baserom.dol", 0x48D36C, 0x18
+	.asciz "AbilitySelect_Fighter"
+	.balign 4
 .global $$251586
 $$251586:
-	.incbin "baserom.dol", 0x48D384, 0x18
+	.asciz "AbilitySelect_Normal"
+	.balign 4
 .global $$251587
 $$251587:
-	.incbin "baserom.dol", 0x48D39C, 0x14
+	.asciz "AbilitySelect_Smash"
 .global ButtonMsgTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2
 ButtonMsgTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2:
-	.incbin "baserom.dol", 0x48D3B0, 0x30
+	.4byte 0x804911C0
+	.4byte 0x804911D0
+	.4byte 0x804911E4
+	.4byte 0x804911F4
+	.4byte 0x80491204
+	.4byte 0x80491218
+	.4byte 0x80491230
+	.4byte 0x80491244
+	.4byte 0x80491258
+	.4byte 0x8049126C
+	.4byte 0x80491284
+	.4byte 0x8049129C
 .global $$251590
 $$251590:
-	.incbin "baserom.dol", 0x48D3E0, 0xC
+	.asciz "ParasolN"
+	.balign 4
 .global $$251594
 $$251594:
-	.incbin "baserom.dol", 0x48D3EC, 0xC
+	.asciz "FighterN"
+	.balign 4
 .global ButtonIconTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2
 ButtonIconTbl__Q53scn4step4info5lvmap27$$2unnamed$$2ExplainButton_cpp$$2:
-	.incbin "baserom.dol", 0x48D3F8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055BAD8
+	.4byte 0x804912E0
+	.4byte 0x8055BAE0
+	.4byte 0x8055BAE8
+	.4byte 0x8055BAF0
+	.4byte 0x804912EC
+	.4byte 0x8055BAF8
+	.4byte 0x8055BB00
 .global $$252410
 $$252410:
-	.incbin "baserom.dol", 0x48D428, 0x14
+	.asciz "ButtonActionBase"
+	.balign 4
 .global $$252412
 $$252412:
-	.incbin "baserom.dol", 0x48D43C, 0x10
+	.asciz "TrainingIcon"
+	.balign 4
 .global $$252414
 $$252414:
-	.incbin "baserom.dol", 0x48D44C, 0x10
+	.asciz "TrainingIconN"
+	.balign 4
 .global $$252521
 $$252521:
-	.incbin "baserom.dol", 0x48D45C, 0x10
+	.asciz "TrainingButton"
+	.balign 4
 .global $$252522
 $$252522:
-	.incbin "baserom.dol", 0x48D46C, 0x3C
+	.asciz "ButtonBigN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251589
 $$251589:
-	.incbin "baserom.dol", 0x497EB8, 0x8
+	.asciz "SwordN"
+	.balign 4
 .global $$251591
 $$251591:
-	.incbin "baserom.dol", 0x497EC0, 0x8
+	.asciz "SparkN"
+	.balign 4
 .global $$251592
 $$251592:
-	.incbin "baserom.dol", 0x497EC8, 0x8
+	.asciz "WhipN"
+	.balign 4
 .global $$251593
 $$251593:
-	.incbin "baserom.dol", 0x497ED0, 0x8
+	.asciz "WingN"
+	.balign 4
 .global $$251595
 $$251595:
-	.incbin "baserom.dol", 0x497ED8, 0x8
+	.asciz "NormalN"
 .global $$251596
 $$251596:
-	.incbin "baserom.dol", 0x497EE0, 0x8
+	.asciz "SmashN"
+	.balign 4
 .global $$252411
 $$252411:
-	.incbin "baserom.dol", 0x497EE8, 0x8
+	.asciz "Button"
+	.balign 4
 .global $$252413
 $$252413:
-	.incbin "baserom.dol", 0x497EF0, 0x8
+	.asciz "ButtonN"
 .global $$252520
 $$252520:
-	.incbin "baserom.dol", 0x497EF8, 0x4
+	.4byte 0
 .global $$252528
 $$252528:
-	.incbin "baserom.dol", 0x497EFC, 0xC
+	.asciz "Focus"
+	.balign 4
+	.4byte 0
 .global $$252531
 $$252531:
-	.incbin "baserom.dol", 0x497F08, 0x8
+	.asciz "UnFocus"
 .global $$252534
 $$252534:
-	.incbin "baserom.dol", 0x497F10, 0x8
+	.asciz "Decide"
+	.balign 4

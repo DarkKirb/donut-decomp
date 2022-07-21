@@ -62,4 +62,9 @@ lbl_80290B04:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13WaterCallback
 __vt__Q43scn4step5enemy13WaterCallback:
-	.incbin "baserom.dol", 0x46EE20, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x802863B4  ;# ptr
+	.4byte 0x80290A70  ;# ptr
+	.4byte 0x80290AC4  ;# ptr
+	.4byte 0

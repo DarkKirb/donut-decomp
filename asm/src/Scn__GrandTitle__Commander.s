@@ -473,94 +473,130 @@ lbl_801C54BC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256032
 $$256032:
-	.incbin "baserom.dol", 0x4573B8, 0x1C
+	.asciz "Scn.GrandTitle.Commander"
+	.balign 4
 .global $$256033
 $$256033:
-	.incbin "baserom.dol", 0x4573D4, 0x14
+	.asciz "int CurrentFrame()"
+	.balign 4
 .global $$256034
 $$256034:
-	.incbin "baserom.dol", 0x4573E8, 0x14
+	.asciz "void SetFrame(int)"
+	.balign 4
 .global $$256035
 $$256035:
-	.incbin "baserom.dol", 0x4573FC, 0x18
+	.asciz "void SceneAnimStart()"
+	.balign 4
 .global $$256036
 $$256036:
-	.incbin "baserom.dol", 0x457414, 0x18
+	.asciz "void SceneAnimStop()"
+	.balign 4
 .global $$256037
 $$256037:
-	.incbin "baserom.dol", 0x45742C, 0x1C
+	.asciz "void LocatorAnim(string)"
+	.balign 4
 .global $$256038
 $$256038:
-	.incbin "baserom.dol", 0x457448, 0x20
+	.asciz "Scn.GrandTitle.Chara Chara(int)"
 .global $$256039
 $$256039:
-	.incbin "baserom.dol", 0x457468, 0x20
+	.asciz "Scn.GrandTitle.Block Block(int)"
 .global $$256040
 $$256040:
-	.incbin "baserom.dol", 0x457488, 0x28
+	.asciz "void RequestLocatorEffect(int,string)"
+	.balign 4
 .global $$256041
 $$256041:
-	.incbin "baserom.dol", 0x4574B0, 0x1C
+	.asciz "void ResetLocatorEffect()"
+	.balign 4
 .global $$256042
 $$256042:
-	.incbin "baserom.dol", 0x4574CC, 0x1C
+	.asciz "void RequestBGEffect(int)"
+	.balign 4
 .global $$256043
 $$256043:
-	.incbin "baserom.dol", 0x4574E8, 0x24
+	.asciz "void RequestBGEffect(int,string)"
+	.balign 4
 .global $$256044
 $$256044:
-	.incbin "baserom.dol", 0x45750C, 0x18
+	.asciz "void ResetBGEffect()"
+	.balign 4
 .global $$256045
 $$256045:
-	.incbin "baserom.dol", 0x457524, 0x18
+	.asciz "void BGLayoutAppear()"
+	.balign 4
 .global $$256046
 $$256046:
-	.incbin "baserom.dol", 0x45753C, 0x18
+	.asciz "void TitleLogoAppear()"
+	.balign 4
 .global $$256047
 $$256047:
-	.incbin "baserom.dol", 0x457554, 0x18
+	.asciz "void TitlePushAppear()"
+	.balign 4
 .global $$256048
 $$256048:
-	.incbin "baserom.dol", 0x45756C, 0x18
+	.asciz "void TitleInfoAppear()"
+	.balign 4
 .global $$256049
 $$256049:
-	.incbin "baserom.dol", 0x457584, 0x1C
+	.asciz "void TitleInfoEffect(int)"
+	.balign 4
 .global $$256050
 $$256050:
-	.incbin "baserom.dol", 0x4575A0, 0x1C
+	.asciz "void TitleInfoEffectBG(int)"
 .global $$256051
 $$256051:
-	.incbin "baserom.dol", 0x4575BC, 0x18
+	.asciz "void CinemaScopeIn()"
+	.balign 4
 .global $$256052
 $$256052:
-	.incbin "baserom.dol", 0x4575D4, 0x18
+	.asciz "void CinemaScopeOut()"
+	.balign 4
 .global $$256053
 $$256053:
-	.incbin "baserom.dol", 0x4575EC, 0x1C
+	.asciz "void CinemaScopeHide()"
+	.balign 4
+	.4byte 0
 .global $$256054
 $$256054:
-	.incbin "baserom.dol", 0x457608, 0x10
+	.asciz "void BGMStart()"
 .global $$256055
 $$256055:
-	.incbin "baserom.dol", 0x457618, 0x1C
+	.asciz "void SetInValidBGMChange()"
+	.balign 4
 .global $$256056
 $$256056:
-	.incbin "baserom.dol", 0x457634, 0x14
+	.asciz "void SkipBGMStart()"
 .global $$256057
 $$256057:
-	.incbin "baserom.dol", 0x457648, 0x14
+	.asciz "void SEStart(int)"
+	.balign 4
 .global $$256058
 $$256058:
-	.incbin "baserom.dol", 0x45765C, 0x10
+	.asciz "void SEStop()"
+	.balign 4
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x45766C, 0x14
+	.asciz "void WalkSEStop()"
+	.balign 4
 .global $$256060
 $$256060:
-	.incbin "baserom.dol", 0x457680, 0x24
+	.asciz "void AbilityGetFadeSetValid(bool)"
+	.balign 4
 .global $$256061
 $$256061:
-	.incbin "baserom.dol", 0x4576A4, 0x1C
+	.asciz "void AbilityGetFadeClear()"
+	.balign 4
 .global $$256062
 $$256062:
-	.incbin "baserom.dol", 0x4576C0, 0x68
+	.asciz "bool IsSkipped()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0

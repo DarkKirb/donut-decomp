@@ -39,7 +39,9 @@ lbl_80193D0C:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249029
 $$249029:
-	.incbin "baserom.dol", 0x4931C0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$249041
 $$249041:
-	.incbin "baserom.dol", 0x4931C8, 0x8
+	.4byte 0x25730000
+	.4byte 0

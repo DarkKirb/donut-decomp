@@ -491,18 +491,27 @@ __sinit_$$3DvdControl_cpp:
 /* 801CE5C0 001CA400  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40243C, 0x4
+	.4byte 0x801CE598  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249342
 $$249342:
-	.incbin "baserom.dol", 0x458DA8, 0x10
+	.asciz "DvdControl.cpp"
+	.balign 4
 .global $$249343
 $$249343:
-	.incbin "baserom.dol", 0x458DB8, 0x10
+	.asciz "WiiFile::Close"
+	.balign 4
 .global dvdControlBlock
 dvdControlBlock:
-	.incbin "baserom.dol", 0x458DC8, 0x20
+	.4byte 0x801CE11C  ;# ptr
+	.4byte 0x801CE588  ;# ptr
+	.4byte 0x801CE280  ;# ptr
+	.4byte 0x801CE590  ;# ptr
+	.4byte 0x801CE44C  ;# ptr
+	.4byte 0x801CE454  ;# ptr
+	.4byte 0x801CE2F0  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global meFile

@@ -405,16 +405,37 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateW
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateWhipCaptureUp$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip18StateWhipCaptureUp$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4895C0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038B130
+	.4byte 0x8038B0B4
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip16StateWhipCapture$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4895D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038B12C
+	.4byte 0x8038B0D0
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipAttack$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4895E0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038B128
+	.4byte 0x8038B0EC
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip15StateWhipCharge$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4895F0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038B124
+	.4byte 0x8038B108
 .global __vt__Q53scn4step4hero4whip15StateWhipCharge
 __vt__Q53scn4step4hero4whip15StateWhipCharge:
-	.incbin "baserom.dol", 0x489600, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038AD28
+	.4byte 0x8038ADA4
+	.4byte 0x8038B04C
+	.4byte 0x8035550C
+	.4byte 0x8038B0B0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

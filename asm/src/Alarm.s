@@ -128,20 +128,25 @@ __sinit_$$3Alarm_cpp:
 /* 804056BC 004014FC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402628, 0x4
+	.4byte 0x8040566C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util5Alarm
 __vt__Q24util5Alarm:
-	.incbin "baserom.dol", 0x4927E0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80405558
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248922
 $$248922:
-	.incbin "baserom.dol", 0x49EEB8, 0x8
+	.4byte 0x3C888889
+	.4byte 0
 .global $$248924
 $$248924:
-	.incbin "baserom.dol", 0x49EEC0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global T_PERIOD__19$$2unnamed$$2Alarm_cpp$$2

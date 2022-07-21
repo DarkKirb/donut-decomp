@@ -4238,136 +4238,150 @@ isSpine__Q35mcoll6detail12LandGridDataCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BELTCONVEYOR_SPEED__Q35mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$2
 T_BELTCONVEYOR_SPEED__Q35mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$2:
-	.incbin "baserom.dol", 0x410D30, 0x18
+	.4byte 0
+	.4byte 0x3D0F5C29
+	.4byte 0x3D4CCCCD
+	.4byte 0x3D8F5C29
+	.4byte 0x3E800000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q35mcoll6detail12ActorDiamond
 __vt__Q35mcoll6detail12ActorDiamond:
-	.incbin "baserom.dol", 0x454178, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x801B141C  ;# ptr
+	.4byte 0x801B312C  ;# ptr
+	.4byte 0x801B3124  ;# ptr
+	.4byte 0x801B3134  ;# ptr
+	.4byte 0x801B3184  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253991
 $$253991:
-	.incbin "baserom.dol", 0x4935E0, 0x4
+	.4byte 0x00000002
 .global $$253994
 $$253994:
-	.incbin "baserom.dol", 0x4935E4, 0x4
+	.4byte 0x00000003
 .global $$253995
 $$253995:
-	.incbin "baserom.dol", 0x4935E8, 0x4
+	.4byte 0x00000001
 .global $$253997
 $$253997:
-	.incbin "baserom.dol", 0x4935EC, 0x4
+	.4byte 0x00000001
 .global $$253998
 $$253998:
-	.incbin "baserom.dol", 0x4935F0, 0x4
+	.4byte 0x00000003
 .global $$253999
 $$253999:
-	.incbin "baserom.dol", 0x4935F4, 0x4
+	.4byte 0
 .global $$254001
 $$254001:
-	.incbin "baserom.dol", 0x4935F8, 0x4
+	.4byte 0x00000001
 .global $$254004
 $$254004:
-	.incbin "baserom.dol", 0x4935FC, 0x4
+	.4byte 0
 .global $$254005
 $$254005:
-	.incbin "baserom.dol", 0x493600, 0x4
+	.4byte 0x00000002
 .global $$254007
 $$254007:
-	.incbin "baserom.dol", 0x493604, 0x4
+	.4byte 0x00000002
 .global $$254008
 $$254008:
-	.incbin "baserom.dol", 0x493608, 0x4
+	.4byte 0
 .global $$254009
 $$254009:
-	.incbin "baserom.dol", 0x49360C, 0x4
+	.4byte 0x00000003
 .global $$254013
 $$254013:
-	.incbin "baserom.dol", 0x493610, 0x4
+	.4byte 0x00000003
 .global $$254016
 $$254016:
-	.incbin "baserom.dol", 0x493614, 0x4
+	.4byte 0x00000002
 .global $$254017
 $$254017:
-	.incbin "baserom.dol", 0x493618, 0x4
+	.4byte 0
 .global $$254019
 $$254019:
-	.incbin "baserom.dol", 0x49361C, 0x4
+	.4byte 0
 .global $$254020
 $$254020:
-	.incbin "baserom.dol", 0x493620, 0x4
+	.4byte 0x00000002
 .global $$254021
 $$254021:
-	.incbin "baserom.dol", 0x493624, 0x4
+	.4byte 0x00000001
 .global $$254023
 $$254023:
-	.incbin "baserom.dol", 0x493628, 0x4
+	.4byte 0
 .global $$254026
 $$254026:
-	.incbin "baserom.dol", 0x49362C, 0x4
+	.4byte 0x00000001
 .global $$254027
 $$254027:
-	.incbin "baserom.dol", 0x493630, 0x4
+	.4byte 0x00000003
 .global $$254029
 $$254029:
-	.incbin "baserom.dol", 0x493634, 0x4
+	.4byte 0x00000003
 .global $$254030
 $$254030:
-	.incbin "baserom.dol", 0x493638, 0x4
+	.4byte 0x00000001
 .global $$254031
 $$254031:
-	.incbin "baserom.dol", 0x49363C, 0x4
+	.4byte 0x00000002
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259613
 $$259613:
-	.incbin "baserom.dol", 0x49A530, 0x4
+	.4byte 0
 .global $$259746
 $$259746:
-	.incbin "baserom.dol", 0x49A534, 0x4
+	.4byte 0x358637BD
 .global $$2LOCAL$$2exec__Q45mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$24WorkFv$$2distMin
 $$2LOCAL$$2exec__Q45mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$24WorkFv$$2distMin:
-	.incbin "baserom.dol", 0x49A538, 0x4
+	.4byte 0
 .global $$2LOCAL$$2collide__Q45mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$24WorkFv$$2STATIC_ARGS
 $$2LOCAL$$2collide__Q45mcoll6detail26$$2unnamed$$2ActorDiamond_cpp$$24WorkFv$$2STATIC_ARGS:
-	.incbin "baserom.dol", 0x49A53C, 0x4
+	.4byte 0x00000101
 .global $$259758
 $$259758:
-	.incbin "baserom.dol", 0x49A540, 0x4
+	.4byte 0x3F800000
 .global $$254672
 $$254672:
-	.incbin "baserom.dol", 0x49A544, 0x4
+	.4byte 0xFF8040FF
 .global $$254674
 $$254674:
-	.incbin "baserom.dol", 0x49A548, 0x4
+	.4byte 0xFFFF80FF
 .global $$259916
 $$259916:
-	.incbin "baserom.dol", 0x49A54C, 0x4
+	.4byte 0x3DCCCCCD
 .global $$259917
 $$259917:
-	.incbin "baserom.dol", 0x49A550, 0x4
+	.4byte 0xBF800000
 .global $$259918
 $$259918:
-	.incbin "baserom.dol", 0x49A554, 0x4
+	.4byte 0x3727C5AC
 .global $$259919
 $$259919:
-	.incbin "baserom.dol", 0x49A558, 0x4
+	.4byte 0x3F000000
 .global $$260302
 $$260302:
-	.incbin "baserom.dol", 0x49A55C, 0x4
+	.4byte 0xBF35C28F
 .global $$260305
 $$260305:
-	.incbin "baserom.dol", 0x49A560, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$260531
 $$260531:
-	.incbin "baserom.dol", 0x49A568, 0x4
+	.4byte 0xB727C5AC
 .global $$260603
 $$260603:
-	.incbin "baserom.dol", 0x49A56C, 0x4
+	.4byte 0x3F8CCCCD
 .global $$260610
 $$260610:
-	.incbin "baserom.dol", 0x49A570, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global object___Q33hel6common57ExplicitSingleton$$0Q35mcoll6detail21CollideTargetReposSet$$1

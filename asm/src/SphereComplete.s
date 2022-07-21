@@ -354,44 +354,56 @@ constraintPos__Q53scn4step4info5lvmap14SphereCompleteFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253706
 $$253706:
-	.incbin "baserom.dol", 0x48DBB8, 0x10
+	.asciz "step/lvmap/Main"
 .global $$253707
 $$253707:
-	.incbin "baserom.dol", 0x48DBC8, 0x10
+	.asciz "LevelComplete"
+	.balign 4
 .global $$253756
 $$253756:
-	.incbin "baserom.dol", 0x48DBD8, 0x10
+	.asciz "BronzeTrophyN"
+	.balign 4
 .global $$253757
 $$253757:
-	.incbin "baserom.dol", 0x48DBE8, 0x10
+	.asciz "SilverTrophyN"
+	.balign 4
 .global $$253758
 $$253758:
-	.incbin "baserom.dol", 0x48DBF8, 0x10
+	.asciz "GoldTrophyN"
+	.4byte 0
 .global $$253759
 $$253759:
-	.incbin "baserom.dol", 0x48DC08, 0x10
+	.asciz "PlatinumTrophyN"
 .global $$253760
 $$253760:
-	.incbin "baserom.dol", 0x48DC18, 0xC
+	.asciz "KingTrophyN"
 .global $$253761
 $$253761:
-	.incbin "baserom.dol", 0x48DC24, 0x10
+	.asciz "StageCompleteN"
+	.balign 4
 .global $$253767
 $$253767:
-	.incbin "baserom.dol", 0x48DC34, 0x3C
+	.asciz "Disappear"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253755
 $$253755:
-	.incbin "baserom.dol", 0x4980E8, 0x8
+	.asciz "Appear"
+	.balign 4
 .global $$253778
 $$253778:
-	.incbin "baserom.dol", 0x4980F0, 0x8
+	.asciz "Wait"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253708
 $$253708:
-	.incbin "baserom.dol", 0x49E4E0, 0x4
+	.4byte 0
 .global $$253789
 $$253789:
-	.incbin "baserom.dol", 0x49E4E4, 0x4
+	.4byte 0x42A00000

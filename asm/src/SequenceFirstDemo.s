@@ -206,4 +206,13 @@ GetRuntimeTypeInfo__Q23seq17SequenceFirstDemoCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq17SequenceFirstDemo
 __vt__Q23seq17SequenceFirstDemo:
-	.incbin "baserom.dol", 0x492500, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FE2C0
+	.4byte 0x803FE0F4
+	.4byte 0x803FE0F8
+	.4byte 0x803FE128
+	.4byte 0x803FE270
+	.4byte 0x803FE288
+	.4byte 0x803FE2BC
+	.4byte 0

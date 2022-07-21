@@ -328,16 +328,17 @@ setupDrawOriginal__Q23sfx4WarpFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251724
 $$251724:
-	.incbin "baserom.dol", 0x49EE70, 0x4
+	.4byte 0x8080FFFF
 .global $$251733
 $$251733:
-	.incbin "baserom.dol", 0x49EE74, 0x4
+	.4byte 0x000000FF
 .global $$251745
 $$251745:
-	.incbin "baserom.dol", 0x49EE78, 0x4
+	.4byte 0
 .global $$251759
 $$251759:
-	.incbin "baserom.dol", 0x49EE7C, 0x4
+	.4byte 0x3D800000
 .global $$251760
 $$251760:
-	.incbin "baserom.dol", 0x49EE80, 0x8
+	.4byte 0xBA816F00
+	.4byte 0

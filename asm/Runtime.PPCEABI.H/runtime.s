@@ -729,4 +729,9 @@ lbl_800079F4:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __constants
 __constants:
-	.incbin "baserom.dol", 0x402680, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x41F00000
+	.4byte 0
+	.4byte 0x41E00000
+	.4byte 0

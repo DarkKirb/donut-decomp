@@ -203,15 +203,77 @@ lbl_80353A20:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE_1__19$$2unnamed$$2Pinch_cpp$$2
 T_ALPHA_TABLE_1__19$$2unnamed$$2Pinch_cpp$$2:
-	.incbin "baserom.dol", 0x416328, 0x80
+	.4byte 0x00000030
+	.4byte 0x00000060
+	.4byte 0x00000080
+	.4byte 0x00000070
+	.4byte 0x00000060
+	.4byte 0x00000050
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global T_ALPHA_TABLE_2__19$$2unnamed$$2Pinch_cpp$$2
 T_ALPHA_TABLE_2__19$$2unnamed$$2Pinch_cpp$$2:
-	.incbin "baserom.dol", 0x4163A8, 0x80
+	.4byte 0x00000060
+	.4byte 0x00000080
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252532
 $$252532:
-	.incbin "baserom.dol", 0x49D950, 0x4
+	.4byte 0x3F800000
 .global $$252551
 $$252551:
-	.incbin "baserom.dol", 0x49D954, 0x4
+	.4byte 0x3F000000

@@ -450,34 +450,48 @@ lbl_80402564:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251702
 $$251702:
-	.incbin "baserom.dol", 0x48EE40, 0x14
+	.asciz "step/sfx/WipeCircle"
 .global $$251703
 $$251703:
-	.incbin "baserom.dol", 0x48EE54, 0x14
+	.asciz "step/sfx/WipeStar"
+	.balign 4
 .global $$251704
 $$251704:
-	.incbin "baserom.dol", 0x48EE68, 0x18
+	.asciz "step/sfx/WipeChallenge"
+	.balign 4
 .global T_WIPE_FILE_PATH_TABLE__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2
 T_WIPE_FILE_PATH_TABLE__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2:
-	.incbin "baserom.dol", 0x48EE80, 0x10
+	.4byte 0x80492D40
+	.4byte 0x80492D54
+	.4byte 0x80492D68
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251793
 $$251793:
-	.incbin "baserom.dol", 0x498AA0, 0x8
+	.asciz "Wipe"
+	.balign 4
 .global $$251832
 $$251832:
-	.incbin "baserom.dol", 0x498AA8, 0x18
+	.asciz "TopL"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251871
 $$251871:
-	.incbin "baserom.dol", 0x49E808, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251799
 $$251799:
-	.incbin "baserom.dol", 0x49EE88, 0x8
+	.4byte 0xBF800000
+	.4byte 0
 .global $$251836
 $$251836:
-	.incbin "baserom.dol", 0x49EE90, 0x8
+	.4byte 0x43300000
+	.4byte 0

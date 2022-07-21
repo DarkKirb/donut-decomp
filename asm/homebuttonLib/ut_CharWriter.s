@@ -1768,19 +1768,22 @@ lbl_80141510:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$26157
 $$26157:
-	.incbin "baserom.dol", 0x40A3B0, 0x4
+	.4byte 0
 .global $$26158
 $$26158:
-	.incbin "baserom.dol", 0x40A3B4, 0x4
+	.4byte 0x3F800000
 .global $$26464
 $$26464:
-	.incbin "baserom.dol", 0x40A3B8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$26506
 $$26506:
-	.incbin "baserom.dol", 0x40A3C0, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$26514
 $$26514:
-	.incbin "baserom.dol", 0x40A3C8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2SetupGXCommon__6nw4hbmFv$$2fog

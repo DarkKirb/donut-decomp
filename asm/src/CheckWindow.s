@@ -987,81 +987,107 @@ lbl_801A9330:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253274
 $$253274:
-	.incbin "baserom.dol", 0x453530, 0x14
+	.asciz "common/Checkwindow"
+	.balign 4
 .global $$253275
 $$253275:
-	.incbin "baserom.dol", 0x453544, 0x10
+	.asciz "ControlWindow"
+	.balign 4
 .global $$253276
 $$253276:
-	.incbin "baserom.dol", 0x453554, 0xC
+	.asciz "CheckWindow"
 .global $$253277
 $$253277:
-	.incbin "baserom.dol", 0x453560, 0xC
+	.asciz "CheckButton"
 .global $$253278
 $$253278:
-	.incbin "baserom.dol", 0x45356C, 0x14
+	.asciz "CheckButtonCursor"
+	.balign 4
 .global $$253279
 $$253279:
-	.incbin "baserom.dol", 0x453580, 0x10
+	.asciz "ControlN"
+	.balign 4
+	.4byte 0
 .global $$253283
 $$253283:
-	.incbin "baserom.dol", 0x453590, 0x10
+	.asciz "SaveFileButtonN"
 .global $$253284
 $$253284:
-	.incbin "baserom.dol", 0x4535A0, 0x10
+	.asciz "DeleteButtonN"
+	.balign 4
 .global $$253386
 $$253386:
-	.incbin "baserom.dol", 0x4535B0, 0xC
+	.asciz "TextGameT"
+	.balign 4
 .global $$253387
 $$253387:
-	.incbin "baserom.dol", 0x4535BC, 0xC
+	.asciz "TextPlayerT"
 .global $$253392
 $$253392:
-	.incbin "baserom.dol", 0x4535C8, 0x10
+	.asciz "CheckButtonT"
+	.balign 4
 .global $$253458
 $$253458:
-	.incbin "baserom.dol", 0x4535D8, 0x40
+	.asciz "NoChoice"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253280
 $$253280:
-	.incbin "baserom.dol", 0x4933D0, 0x8
+	.asciz "YesN"
+	.balign 4
 .global $$253281
 $$253281:
-	.incbin "baserom.dol", 0x4933D8, 0x8
+	.4byte 0x4E6F4E00
+	.4byte 0
 .global $$253282
 $$253282:
-	.incbin "baserom.dol", 0x4933E0, 0x8
+	.asciz "CursorN"
 .global $$253285
 $$253285:
-	.incbin "baserom.dol", 0x4933E8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253379
 $$253379:
-	.incbin "baserom.dol", 0x4933F0, 0x8
+	.asciz "GameN"
+	.balign 4
 .global $$253380
 $$253380:
-	.incbin "baserom.dol", 0x4933F8, 0x8
+	.asciz "TextT"
+	.balign 4
 .global $$253400
 $$253400:
-	.incbin "baserom.dol", 0x493400, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$253401
 $$253401:
-	.incbin "baserom.dol", 0x493408, 0x8
+	.asciz "Choice"
+	.balign 4
 .global $$253405
 $$253405:
-	.incbin "baserom.dol", 0x493410, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$253439
 $$253439:
-	.incbin "baserom.dol", 0x493418, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$253459
 $$253459:
-	.incbin "baserom.dol", 0x493420, 0x8
+	.asciz "UnFocus"
 .global $$253460
 $$253460:
-	.incbin "baserom.dol", 0x493428, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$253461
 $$253461:
-	.incbin "baserom.dol", 0x493430, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$253462
 $$253462:
-	.incbin "baserom.dol", 0x493438, 0x8
+	.asciz "Wait1"
+	.balign 4

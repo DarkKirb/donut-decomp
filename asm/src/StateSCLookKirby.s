@@ -316,23 +316,37 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCPursuit$$4PQ43scn4step4boss4Boss$$4b$$1
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCPursuit$$4PQ43scn4step4boss4Boss$$4b$$1:
-	.incbin "baserom.dol", 0x462048, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80242A78  ;# ptr
+	.4byte 0x80242A38  ;# ptr
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster16StateSCLookKirby$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x462058, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80242A74  ;# ptr
+	.4byte 0x80242A58  ;# ptr
 .global __vt__Q53scn4step4boss15challengemaster16StateSCLookKirby
 __vt__Q53scn4step4boss15challengemaster16StateSCLookKirby:
-	.incbin "baserom.dol", 0x462068, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80242794  ;# ptr
+	.4byte 0x80242798  ;# ptr
+	.4byte 0x8024283C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80242A34  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255360
 $$255360:
-	.incbin "baserom.dol", 0x495400, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255993
 $$255993:
-	.incbin "baserom.dol", 0x49B0C8, 0x4
+	.4byte 0x3727C5AC
 .global $$255994
 $$255994:
-	.incbin "baserom.dol", 0x49B0CC, 0x4
+	.4byte 0

@@ -1540,19 +1540,22 @@ lbl_80123A48:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26180
 $$26180:
-	.incbin "baserom.dol", 0x49A028, 0x4
+	.4byte 0
 .global $$26181
 $$26181:
-	.incbin "baserom.dol", 0x49A02C, 0x4
+	.4byte 0x3F800000
 .global $$26269
 $$26269:
-	.incbin "baserom.dol", 0x49A030, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$26299
 $$26299:
-	.incbin "baserom.dol", 0x49A038, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$26307
 $$26307:
-	.incbin "baserom.dol", 0x49A040, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mLoadingTexture__Q34nw4r2ut10CharWriter

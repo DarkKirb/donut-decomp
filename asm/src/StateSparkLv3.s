@@ -257,24 +257,33 @@ procFixPos__Q53scn4step4hero6damage13StateSparkLv3Fv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6damage13StateSparkLv3
 __vt__Q53scn4step4hero6damage13StateSparkLv3:
-	.incbin "baserom.dol", 0x488880, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80377C90
+	.4byte 0x80377D4C
+	.4byte 0x80377ED8
+	.4byte 0x8035550C
+	.4byte 0x80377F40
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257010
 $$257010:
-	.incbin "baserom.dol", 0x49DEA0, 0x4
+	.4byte 0
 .global $$257057
 $$257057:
-	.incbin "baserom.dol", 0x49DEA4, 0x4
+	.4byte 0x41A00000
 .global $$257058
 $$257058:
-	.incbin "baserom.dol", 0x49DEA8, 0x4
+	.4byte 0x43B40000
 .global $$257059
 $$257059:
-	.incbin "baserom.dol", 0x49DEAC, 0x4
+	.4byte 0x42652EE1
 .global $$257060
 $$257060:
-	.incbin "baserom.dol", 0x49DEB0, 0x4
+	.4byte 0x42480000
 .global $$257065
 $$257065:
-	.incbin "baserom.dol", 0x49DEB4, 0x4
+	.4byte 0x38D1B717

@@ -228,227 +228,1297 @@ __NANDPrintErrorMessage:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __NANDMaxBlocksErrorMessageDefault
 __NANDMaxBlocksErrorMessageDefault:
-	.incbin "baserom.dol", 0x403B38, 0x1C
+	.4byte 0x804365C8
+	.4byte 0x80436624
+	.4byte 0x80436690
+	.4byte 0x8043670C
+	.4byte 0x8043679C
+	.4byte 0x8043682C
+	.4byte 0x804368BC
 .global __NANDMaxBlocksErrorMessageEurope
 __NANDMaxBlocksErrorMessageEurope:
-	.incbin "baserom.dol", 0x403B54, 0x1C
+	.4byte 0x804365C8
+	.4byte 0x80436934
+	.4byte 0x80436690
+	.4byte 0x804369AC
+	.4byte 0x80436A38
+	.4byte 0x8043682C
+	.4byte 0x804368BC
 .global __NANDMaxFilesErrorMessageDefault
 __NANDMaxFilesErrorMessageDefault:
-	.incbin "baserom.dol", 0x403B70, 0x1C
+	.4byte 0x80436BB4
+	.4byte 0x80436624
+	.4byte 0x80436690
+	.4byte 0x80436C18
+	.4byte 0x80436CA8
+	.4byte 0x80436D38
+	.4byte 0x80436DCC
 .global __NANDMaxFilesErrorMessageEurope
 __NANDMaxFilesErrorMessageEurope:
-	.incbin "baserom.dol", 0x403B8C, 0x1C
+	.4byte 0x80436BB4
+	.4byte 0x80436934
+	.4byte 0x80436690
+	.4byte 0x804369AC
+	.4byte 0x80436A38
+	.4byte 0x80436D38
+	.4byte 0x80436DCC
 .global __NANDCorruptErrorMessageDefault
 __NANDCorruptErrorMessageDefault:
-	.incbin "baserom.dol", 0x403BA8, 0x1C
+	.4byte 0x80436F3C
+	.4byte 0x80436F90
+	.4byte 0x80436FEC
+	.4byte 0x8043706C
+	.4byte 0x804370E8
+	.4byte 0x80437168
+	.4byte 0x804371E8
 .global __NANDCorruptErrorMessageEurope
 __NANDCorruptErrorMessageEurope:
-	.incbin "baserom.dol", 0x403BC4, 0x1C
+	.4byte 0x80436F3C
+	.4byte 0x80437254
+	.4byte 0x804372B8
+	.4byte 0x80437338
+	.4byte 0x804373AC
+	.4byte 0x80437168
+	.4byte 0x804371E8
 .global __NANDBusyErrorMessageDefault
 __NANDBusyErrorMessageDefault:
-	.incbin "baserom.dol", 0x403BE0, 0x1C
+	.4byte 0x80437504
+	.4byte 0x80437574
+	.4byte 0x804375CC
+	.4byte 0x80437660
+	.4byte 0x804376E0
+	.4byte 0x80437770
+	.4byte 0x804377F8
 .global __NANDBusyErrorMessageEurope
 __NANDBusyErrorMessageEurope:
-	.incbin "baserom.dol", 0x403BFC, 0x1C
+	.4byte 0x80437504
+	.4byte 0x8043787C
+	.4byte 0x804375CC
+	.4byte 0x804378E0
+	.4byte 0x8043795C
+	.4byte 0x80437770
+	.4byte 0x804377F8
 .global __NANDUnknownErrorMessageDefault
 __NANDUnknownErrorMessageDefault:
-	.incbin "baserom.dol", 0x403C18, 0x1C
+	.4byte 0x80437AD4
+	.4byte 0x80437B48
+	.4byte 0x80437BB0
+	.4byte 0x80437C4C
+	.4byte 0x80437D00
+	.4byte 0x80437DA4
+	.4byte 0x80437E68
 .global __NANDUnknownErrorMessageEurope
 __NANDUnknownErrorMessageEurope:
-	.incbin "baserom.dol", 0x403C34, 0x1C
+	.4byte 0x80437AD4
+	.4byte 0x80437F04
+	.4byte 0x80437BB0
+	.4byte 0x80437F98
+	.4byte 0x80438048
+	.4byte 0x80437DA4
+	.4byte 0x80437E68
 .global $$21868
 $$21868:
-	.incbin "baserom.dol", 0x403C50, 0x100
+	.4byte 0xFFFFFF94
+	.4byte 0
+	.4byte 0x80407A38
+	.4byte 0xFFFFFF95
+	.4byte 0
+	.4byte 0x80407A70
+	.4byte 0xFFFFFF99
+	.4byte 0
+	.4byte 0x80407AA8
+	.4byte 0xFFFFFF8A
+	.4byte 0
+	.4byte 0x80407AE0
+	.4byte 0xFFFFFFEA
+	.4byte 0
+	.4byte 0x80407AE0
+	.4byte 0xFFFFFF8B
+	.4byte 0
+	.4byte 0x80407B18
+	.4byte 0xFFFFFFF7
+	.4byte 0
+	.4byte 0x80407B18
+	.4byte 0xFFFFFF94
+	.4byte 0x00000001
+	.4byte 0x80407A54
+	.4byte 0xFFFFFF95
+	.4byte 0x00000001
+	.4byte 0x80407A8C
+	.4byte 0xFFFFFF99
+	.4byte 0x00000001
+	.4byte 0x80407AC4
+	.4byte 0xFFFFFF8A
+	.4byte 0x00000001
+	.4byte 0x80407AFC
+	.4byte 0xFFFFFFEA
+	.4byte 0x00000001
+	.4byte 0x80407AFC
+	.4byte 0xFFFFFF8B
+	.4byte 0x00000001
+	.4byte 0x80407B34
+	.4byte 0xFFFFFFF7
+	.4byte 0x00000001
+	.4byte 0x80407B34
+	.4byte 0xFFFFFF94
+	.4byte 0x00000002
+	.4byte 0x8055E710
+	.4byte 0xFFFFFF95
+	.4byte 0x00000002
+	.4byte 0x8055E718
+	.4byte 0xFFFFFF99
+	.4byte 0x00000002
+	.4byte 0x8055E720
+	.4byte 0xFFFFFF8A
+	.4byte 0x00000002
+	.4byte 0x8055E728
+	.4byte 0xFFFFFFEA
+	.4byte 0x00000002
+	.4byte 0x8055E728
+	.4byte 0xFFFFFF8B
+	.4byte 0x00000002
+	.4byte 0x8055E730
+	.4byte 0xFFFFFFF7
+	.4byte 0x00000002
+	.4byte 0x8055E730
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21805
 $$21805:
-	.incbin "baserom.dol", 0x4326C8, 0x5C
+	.4byte 0x0A0A0A57
+	.4byte 0x6969967B
+	.4byte 0x91CC95DB
+	.4byte 0x91B68381
+	.4byte 0x8382838A
+	.4byte 0x82CC8BF3
+	.4byte 0x82AB9765
+	.4byte 0x97CA82AA
+	.4byte 0x88D98FED
+	.4byte 0x82C582B7
+	.4byte 0x81420A82
+	.4byte 0xAD82ED82
+	.4byte 0xB582AD82
+	.4byte 0xCD576969
+	.4byte 0x967B91CC
+	.4byte 0x82CC8EE6
+	.4byte 0x88B590E0
+	.4byte 0x96BE8F91
+	.4byte 0x82F082A8
+	.4byte 0x93C782DD
+	.4byte 0x0A82AD82
+	.4byte 0xBE82B382
+	.4byte 0xA2814200
 .global $$21806
 $$21806:
-	.incbin "baserom.dol", 0x432724, 0x6C
+	.asciz "\n\n\nThere is no more available space in\nWii system memory. Refer to the Wii\nOperations Manual for details."
+	.balign 4
 .global $$21807
 $$21807:
-	.incbin "baserom.dol", 0x432790, 0x7C
+	.asciz "\n\n\nDer Speicher der Wii-Konsole ist belegt.\nBitte lies die Wii-Bedienungsanleitung,\num weitere Informationen zu erhalten."
+	.balign 4
 .global $$21808
 $$21808:
-	.incbin "baserom.dol", 0x43280C, 0x90
+	.4byte 0x0A0A0A49
+	.4byte 0x6C206E27
+	.4byte 0x79206120
+	.4byte 0x70617320
+	.4byte 0x61737365
+	.4byte 0x7A206427
+	.4byte 0x65737061
+	.4byte 0x6365206C
+	.4byte 0x69627265
+	.4byte 0x0A64616E
+	.4byte 0x73206C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E0A
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x204D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F690A64
+	.4byte 0x65206C61
+	.4byte 0x20576969
+	.4byte 0x20706F75
+	.4byte 0x7220706C
+	.4byte 0x75732064
+	.4byte 0x652064E9
+	.asciz "tails."
+	.balign 4
 .global $$21809
 $$21809:
-	.incbin "baserom.dol", 0x43289C, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F207175
+	.4byte 0x65646120
+	.4byte 0x65737061
+	.4byte 0x63696F20
+	.4byte 0x6C696272
+	.4byte 0x6520656E
+	.4byte 0x206C6120
+	.4byte 0x6D656D6F
+	.4byte 0x7269610A
+	.4byte 0x6465206C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x692E2043
+	.4byte 0x6F6E7375
+	.4byte 0x6C746120
+	.4byte 0x656C206D
+	.4byte 0x616E7561
+	.4byte 0x6C0A6465
+	.4byte 0x206F7065
+	.4byte 0x72616369
+	.4byte 0x6F6E6573
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692070
+	.4byte 0x6172610A
+	.4byte 0x6F627465
+	.4byte 0x6E657220
+	.4byte 0x6DE17320
+	.4byte 0x696E666F
+	.4byte 0x726D6163
+	.4byte 0x69F36E2E
+	.4byte 0
 .global $$21810
 $$21810:
-	.incbin "baserom.dol", 0x43292C, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F6E2063
+	.4byte 0x27E82070
+	.4byte 0x69F92073
+	.asciz "pazio libero nella memoria\ndella console Wii. Per maggiori\ninformazioni, consulta il manuale di\nistruzioni della console Wii."
+	.balign 4
 .global $$21811
 $$21811:
-	.incbin "baserom.dol", 0x4329BC, 0x78
+	.asciz "\n\n\nEr is geen vrije ruimte meer in het\ninterne geheugen van het Wii-systeem.\nLees de handleiding voor meer informatie."
+	.balign 4
 .global $$21812
 $$21812:
-	.incbin "baserom.dol", 0x432A34, 0x78
+	.asciz "\n\n\nThere is no more available space in\nthe Wii System Memory. Please refer to\nthe Wii Operations Manual for details."
+	.balign 4
 .global $$21813
 $$21813:
-	.incbin "baserom.dol", 0x432AAC, 0x8C
+	.4byte 0x0A0A0A49
+	.4byte 0x6C206E27
+	.4byte 0x79206120
+	.4byte 0x70617320
+	.4byte 0x61737365
+	.4byte 0x7A206427
+	.4byte 0x65737061
+	.4byte 0x6365206C
+	.4byte 0x69627265
+	.4byte 0x2064616E
+	.4byte 0x730A6C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x0A766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x206D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692057
+	.4byte 0x69692070
+	.4byte 0x6F75720A
+	.4byte 0x706C7573
+	.4byte 0x20646520
+	.4byte 0x64E97461
+	.asciz "ils."
+	.balign 4
 .global $$21814
 $$21814:
-	.incbin "baserom.dol", 0x432B38, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F207175
+	.4byte 0x65646120
+	.4byte 0x65737061
+	.4byte 0x63696F20
+	.4byte 0x6C696272
+	.4byte 0x6520656E
+	.4byte 0x206C6120
+	.4byte 0x6D656D6F
+	.4byte 0x72696120
+	.4byte 0x64650A6C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x692E2043
+	.4byte 0x6F6E7375
+	.4byte 0x6C746120
+	.4byte 0x656C206D
+	.4byte 0x616E7561
+	.4byte 0x6C206465
+	.4byte 0x0A696E73
+	.4byte 0x74727563
+	.4byte 0x63696F6E
+	.4byte 0x65732064
+	.4byte 0x65206C61
+	.4byte 0x20636F6E
+	.4byte 0x736F6C61
+	.4byte 0x20576969
+	.4byte 0x20706172
+	.4byte 0x610A6F62
+	.4byte 0x74656E65
+	.4byte 0x72206DE1
+	.4byte 0x7320696E
+	.4byte 0x666F726D
+	.4byte 0x616369F3
+	.4byte 0x6E2E0000
 .global $$21815
 $$21815:
-	.incbin "baserom.dol", 0x432BC8, 0x74
+	.4byte 0x0A0A8347
+	.4byte 0x8389815B
+	.4byte 0x8352815B
+	.4byte 0x83688253
+	.4byte 0x824F8254
+	.4byte 0x81420A0A
+	.4byte 0x57696996
+	.4byte 0x7B91CC95
+	.4byte 0xDB91B683
+	.4byte 0x81838283
+	.4byte 0x8A82CC8B
+	.4byte 0xF382AB97
+	.4byte 0x6597CA82
+	.4byte 0xAA88D98F
+	.4byte 0xED82C582
+	.4byte 0xB781420A
+	.4byte 0x82AD82ED
+	.4byte 0x82B582AD
+	.4byte 0x82CD5769
+	.4byte 0x69967B91
+	.4byte 0xCC82CC8E
+	.4byte 0xE688B590
+	.4byte 0xE096BE8F
+	.4byte 0x9182F082
+	.4byte 0xA893C782
+	.4byte 0xDD0A82AD
+	.4byte 0x82BE82B3
+	.4byte 0x82A28142
+	.4byte 0
 .global $$21816
 $$21816:
-	.incbin "baserom.dol", 0x432C3C, 0x78
+	.asciz "\n\nError #405,\n\nThere is no more available space in\nWii system memory. Refer to the Wii\nOperations Manual for details."
+	.balign 4
 .global $$21817
 $$21817:
-	.incbin "baserom.dol", 0x432CB4, 0x64
+	.4byte 0x0A0A0A57
+	.4byte 0x6969967B
+	.4byte 0x91CC95DB
+	.4byte 0x91B68381
+	.4byte 0x8382838A
+	.4byte 0x82CC8BF3
+	.4byte 0x82AB8374
+	.4byte 0x83408343
+	.4byte 0x838B9094
+	.4byte 0x82AA88D9
+	.4byte 0x8FED82C5
+	.4byte 0x82B78142
+	.4byte 0x0A82AD82
+	.4byte 0xED82B582
+	.4byte 0xAD82CD57
+	.4byte 0x6969967B
+	.4byte 0x91CC82CC
+	.4byte 0x8EE688B5
+	.4byte 0x90E096BE
+	.4byte 0x8F9182F0
+	.4byte 0x82A893C7
+	.4byte 0x82DD0A82
+	.4byte 0xAD82BE82
+	.4byte 0xB382A281
+	.4byte 0x42000000
 .global $$21818
 $$21818:
-	.incbin "baserom.dol", 0x432D18, 0x90
+	.4byte 0x0A0A0A49
+	.4byte 0x6C206E27
+	.4byte 0x79206120
+	.4byte 0x70617320
+	.4byte 0x61737365
+	.4byte 0x7A206427
+	.4byte 0x65737061
+	.4byte 0x6365206C
+	.4byte 0x69627265
+	.4byte 0x2064616E
+	.4byte 0x730A6C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x0A766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x204D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692064
+	.4byte 0x65206C61
+	.4byte 0x20576969
+	.4byte 0x0A706F75
+	.4byte 0x7220706C
+	.4byte 0x75732064
+	.4byte 0x652064E9
+	.asciz "tails."
+	.balign 4
 .global $$21819
 $$21819:
-	.incbin "baserom.dol", 0x432DA8, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F207175
+	.4byte 0x65646120
+	.4byte 0x65737061
+	.4byte 0x63696F20
+	.4byte 0x6C696272
+	.4byte 0x6520656E
+	.4byte 0x206C6120
+	.4byte 0x6D656D6F
+	.4byte 0x72696120
+	.4byte 0x64650A6C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x692E2043
+	.4byte 0x6F6E7375
+	.4byte 0x6C746120
+	.4byte 0x656C206D
+	.4byte 0x616E7561
+	.4byte 0x6C206465
+	.4byte 0x0A6F7065
+	.4byte 0x72616369
+	.4byte 0x6F6E6573
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692070
+	.4byte 0x6172610A
+	.4byte 0x6F627465
+	.4byte 0x6E657220
+	.4byte 0x6DE17320
+	.4byte 0x696E666F
+	.4byte 0x726D6163
+	.4byte 0x69F36E2E
+	.4byte 0
 .global $$21820
 $$21820:
-	.incbin "baserom.dol", 0x432E38, 0x94
+	.asciz "\n\n\nImpossibile salvare altri dati nella\nmemoria della console Wii. Per maggiori\ninformazioni, consulta il manuale di\nistruzioni della console Wii."
+	.balign 4
 .global $$21821
 $$21821:
-	.incbin "baserom.dol", 0x432ECC, 0x80
+	.asciz "\n\n\nEr is geen ruimte meer beschikbaar\nin het interne geheugen van het\nWii-systeem. Lees de handleiding voor\nmeer informatie."
+	.balign 4
 .global $$21822
 $$21822:
-	.incbin "baserom.dol", 0x432F4C, 0x78
+	.4byte 0x0A0A8347
+	.4byte 0x8389815B
+	.4byte 0x8352815B
+	.4byte 0x83688253
+	.4byte 0x824F8255
+	.4byte 0x81420A0A
+	.4byte 0x57696996
+	.4byte 0x7B91CC95
+	.4byte 0xDB91B683
+	.4byte 0x81838283
+	.4byte 0x8A82CC8B
+	.4byte 0xF382AB83
+	.4byte 0x74834083
+	.4byte 0x43838B90
+	.4byte 0x9482AA88
+	.4byte 0xD98FED82
+	.4byte 0xC582B781
+	.4byte 0x420A82AD
+	.4byte 0x82ED82B5
+	.4byte 0x82AD82CD
+	.4byte 0x57696996
+	.4byte 0x7B91CC82
+	.4byte 0xCC8EE688
+	.4byte 0xB590E096
+	.4byte 0xBE8F9182
+	.4byte 0xF082A893
+	.4byte 0xC782DD0A
+	.4byte 0x82AD82BE
+	.4byte 0x82B382A2
+	.4byte 0x81420000
 .global $$21823
 $$21823:
-	.incbin "baserom.dol", 0x432FC4, 0x78
+	.asciz "\n\nError #406,\n\nThere is no more available space in\nWii system memory. Refer to the Wii\nOperations Manual for details."
+	.balign 4
 .global $$21824
 $$21824:
-	.incbin "baserom.dol", 0x43303C, 0x54
+	.4byte 0x0A0A0A57
+	.4byte 0x6969967B
+	.4byte 0x91CC95DB
+	.4byte 0x91B68381
+	.4byte 0x8382838A
+	.4byte 0x82AA89F3
+	.4byte 0x82EA82DC
+	.4byte 0x82B582BD
+	.4byte 0x81420A82
+	.4byte 0xAD82ED82
+	.4byte 0xB582AD82
+	.4byte 0xCD576969
+	.4byte 0x967B91CC
+	.4byte 0x82CC8EE6
+	.4byte 0x88B590E0
+	.4byte 0x96BE8F91
+	.4byte 0x82F082A8
+	.4byte 0x93C782DD
+	.4byte 0x0A82AD82
+	.4byte 0xBE82B382
+	.4byte 0xA2814200
 .global $$21825
 $$21825:
-	.incbin "baserom.dol", 0x433090, 0x5C
+	.asciz "\n\n\nThe Wii system memory has been damaged.\nRefer to the Wii Operations Manual for\ndetails."
+	.balign 4
 .global $$21826
 $$21826:
-	.incbin "baserom.dol", 0x4330EC, 0x80
+	.4byte 0x0A0A0A44
+	.4byte 0x65722053
+	.4byte 0x70656963
+	.4byte 0x68657220
+	.4byte 0x64657220
+	.4byte 0x5769692D
+	.4byte 0x4B6F6E73
+	.4byte 0x6F6C650A
+	.4byte 0x69737420
+	.4byte 0x62657363
+	.4byte 0x68E46469
+	.asciz "gt. Bitte lies die\nWii-Bedienungsanleitung, um weitere\nInformationen zu erhalten."
+	.balign 4
 .global $$21827
 $$21827:
-	.incbin "baserom.dol", 0x43316C, 0x7C
+	.4byte 0x0A0A0A4C
+	.4byte 0x61206DE9
+	.4byte 0x6D6F6972
+	.4byte 0x65206465
+	.4byte 0x206C6120
+	.4byte 0x636F6E73
+	.4byte 0x6F6C6520
+	.4byte 0x57696920
+	.4byte 0x6120E974
+	.4byte 0xE9200A65
+	.4byte 0x6E646F6D
+	.4byte 0x6D6167E9
+	.4byte 0x652E2056
+	.4byte 0x6575696C
+	.4byte 0x6C657A20
+	.4byte 0x766F7573
+	.4byte 0x2072E966
+	.4byte 0xE9726572
+	.4byte 0x2061750A
+	.4byte 0x4D6F6465
+	.4byte 0x20642765
+	.4byte 0x6D706C6F
+	.4byte 0x69206465
+	.4byte 0x206C6120
+	.4byte 0x57696920
+	.4byte 0x706F7572
+	.4byte 0x20706C75
+	.4byte 0x73206465
+	.4byte 0x0A64E974
+	.asciz "ails."
+	.balign 4
 .global $$21828
 $$21828:
-	.incbin "baserom.dol", 0x4331E8, 0x80
+	.4byte 0x0A0A0A4C
+	.4byte 0x61206D65
+	.4byte 0x6D6F7269
+	.4byte 0x61206465
+	.4byte 0x206C6120
+	.4byte 0x636F6E73
+	.4byte 0x6F6C6120
+	.4byte 0x5769690A
+	.4byte 0x657374E1
+	.4byte 0x206461F1
+	.4byte 0x6164612E
+	.4byte 0x20436F6E
+	.4byte 0x73756C74
+	.4byte 0x6120656C
+	.4byte 0x206D616E
+	.4byte 0x75616C20
+	.4byte 0x64650A6F
+	.4byte 0x70657261
+	.4byte 0x63696F6E
+	.4byte 0x65732064
+	.4byte 0x65206C61
+	.4byte 0x20636F6E
+	.4byte 0x736F6C61
+	.4byte 0x20576969
+	.4byte 0x20706172
+	.4byte 0x610A6F62
+	.4byte 0x74656E65
+	.4byte 0x72206DE1
+	.4byte 0x7320696E
+	.4byte 0x666F726D
+	.4byte 0x616369F3
+	.4byte 0x6E2E0000
 .global $$21829
 $$21829:
-	.incbin "baserom.dol", 0x433268, 0x80
+	.asciz "\n\n\nLa memoria della console Wii e\ndanneggiata. Per maggiori informazioni,\nconsulta il manuale di istruzioni della\nconsole Wii."
+	.balign 4
 .global $$21830
 $$21830:
-	.incbin "baserom.dol", 0x4332E8, 0x6C
+	.asciz "\n\n\nHet interne geheugen van het\nWii-systeem is beschadigd. Lees de\nWii-handleiding voor meer informatie."
+	.balign 4
 .global $$21831
 $$21831:
-	.incbin "baserom.dol", 0x433354, 0x64
+	.asciz "\n\n\nThe Wii System Memory has been damaged.\nPlease refer to the Wii Operations Manual\nfor details."
+	.balign 4
 .global $$21832
 $$21832:
-	.incbin "baserom.dol", 0x4333B8, 0x80
+	.asciz "\n\n\nDer Speicher der Wii-Konsole\nist beschadigt. Bitte lies die\nWii-Bedienungsanleitung, um weitere\nInformationen zu erhalten."
+	.balign 4
 .global $$21833
 $$21833:
-	.incbin "baserom.dol", 0x433438, 0x74
+	.4byte 0x0A0A0A4C
+	.4byte 0x61206DE9
+	.4byte 0x6D6F6972
+	.4byte 0x65206465
+	.4byte 0x206C6120
+	.4byte 0x636F6E73
+	.4byte 0x6F6C6520
+	.4byte 0x57696920
+	.4byte 0x6573740A
+	.4byte 0x656E646F
+	.4byte 0x6D6D6167
+	.4byte 0xE9652E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x0A6D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692057
+	.4byte 0x69692070
+	.4byte 0x6F757220
+	.4byte 0x706C7573
+	.4byte 0x20646520
+	.4byte 0x64E97461
+	.asciz "ils.\n"
+	.balign 4
 .global $$21834
 $$21834:
-	.incbin "baserom.dol", 0x4334AC, 0x84
+	.4byte 0x0A0A0A4C
+	.4byte 0x61206D65
+	.4byte 0x6D6F7269
+	.4byte 0x61206465
+	.4byte 0x206C6120
+	.4byte 0x636F6E73
+	.4byte 0x6F6C6120
+	.4byte 0x57696920
+	.4byte 0x657374E1
+	.4byte 0x206461F1
+	.4byte 0x6164612E
+	.4byte 0x0A436F6E
+	.4byte 0x73756C74
+	.4byte 0x6120656C
+	.4byte 0x206D616E
+	.4byte 0x75616C20
+	.4byte 0x64652069
+	.4byte 0x6E737472
+	.4byte 0x75636369
+	.4byte 0x6F6E6573
+	.4byte 0x20646520
+	.4byte 0x6C610A63
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692070
+	.4byte 0x61726120
+	.4byte 0x6F627465
+	.4byte 0x6E657220
+	.4byte 0x6DE17320
+	.4byte 0x696E666F
+	.4byte 0x726D6163
+	.4byte 0x69F36E2E
+	.4byte 0
 .global $$21835
 $$21835:
-	.incbin "baserom.dol", 0x433530, 0x6C
+	.4byte 0x0A0A8347
+	.4byte 0x8389815B
+	.4byte 0x8352815B
+	.4byte 0x83688253
+	.4byte 0x824F8257
+	.4byte 0x81420A0A
+	.4byte 0x57696996
+	.4byte 0x7B91CC95
+	.4byte 0xDB91B683
+	.4byte 0x81838283
+	.4byte 0x8A82AA89
+	.4byte 0xF382EA82
+	.4byte 0xDC82B582
+	.4byte 0xBD81420A
+	.4byte 0x82AD82ED
+	.4byte 0x82B582AD
+	.4byte 0x82CD5769
+	.4byte 0x69967B91
+	.4byte 0xCC82CC8E
+	.4byte 0xE688B590
+	.4byte 0xE096BE8F
+	.4byte 0x9182F082
+	.4byte 0xA893C782
+	.4byte 0xDD0A82AD
+	.4byte 0x82BE82B3
+	.4byte 0x82A28142
+	.4byte 0
 .global $$21836
 $$21836:
-	.incbin "baserom.dol", 0x43359C, 0x68
+	.asciz "\n\nError #408,\n\nThe Wii system memory has been damaged.\nRefer to the Wii Operations Manual for\ndetails."
+	.balign 4
 .global $$21837
 $$21837:
-	.incbin "baserom.dol", 0x433604, 0x70
+	.4byte 0x0A0A0A57
+	.4byte 0x6969967B
+	.4byte 0x91CC95DB
+	.4byte 0x91B68381
+	.4byte 0x8382838A
+	.4byte 0x82CC8F91
+	.4byte 0x82AB8D9E
+	.4byte 0x82DD2F93
+	.4byte 0xC782DD8F
+	.4byte 0x6F82B582
+	.4byte 0xAA0A82C5
+	.4byte 0x82AB82DC
+	.4byte 0x82B982F1
+	.4byte 0x82C582B5
+	.4byte 0x82BD8142
+	.4byte 0x0A82AD82
+	.4byte 0xED82B582
+	.4byte 0xAD82CD57
+	.4byte 0x6969967B
+	.4byte 0x91CC82CC
+	.4byte 0x8EE688B5
+	.4byte 0x90E096BE
+	.4byte 0x8F9182F0
+	.4byte 0x82A893C7
+	.4byte 0x82DD0A82
+	.4byte 0xAD82BE82
+	.4byte 0xB382A281
+	.4byte 0x42000000
 .global $$21838
 $$21838:
-	.incbin "baserom.dol", 0x433674, 0x58
+	.asciz "\n\n\nCould not access Wii system memory.\nRefer to the Wii Operations Manual for\ndetails."
+	.balign 4
 .global $$21839
 $$21839:
-	.incbin "baserom.dol", 0x4336CC, 0x94
+	.asciz "\n\n\nAuf den Speicher der Wii-Konsole konnte\nnicht zugegriffen werden. Bitte lies die\nWii-Bedienungsanleitung, um weitere\nInformationen zu erhalten."
+	.balign 4
 .global $$21840
 $$21840:
-	.incbin "baserom.dol", 0x433760, 0x80
+	.4byte 0x0A0A0A49
+	.4byte 0x6D706F73
+	.4byte 0x7369626C
+	.4byte 0x65206427
+	.4byte 0x616363E9
+	.4byte 0x64657220
+	.4byte 0xE0206C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x2064650A
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x720A6175
+	.4byte 0x204D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692064
+	.4byte 0x65206C61
+	.4byte 0x20576969
+	.4byte 0x20706F75
+	.4byte 0x7220706C
+	.4byte 0x75730A64
+	.4byte 0x652064E9
+	.asciz "tails."
+	.balign 4
 .global $$21841
 $$21841:
-	.incbin "baserom.dol", 0x4337E0, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F207365
+	.4byte 0x20686120
+	.4byte 0x706F6469
+	.4byte 0x646F2061
+	.4byte 0x63636564
+	.4byte 0x65722061
+	.4byte 0x206C6120
+	.4byte 0x6D656D6F
+	.4byte 0x72696120
+	.4byte 0x64650A6C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x692E2043
+	.4byte 0x6F6E7375
+	.4byte 0x6C746120
+	.4byte 0x656C206D
+	.4byte 0x616E7561
+	.4byte 0x6C206465
+	.4byte 0x0A6F7065
+	.4byte 0x72616369
+	.4byte 0x6F6E6573
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692070
+	.4byte 0x6172610A
+	.4byte 0x6F627465
+	.4byte 0x6E657220
+	.4byte 0x6DE17320
+	.4byte 0x696E666F
+	.4byte 0x726D6163
+	.4byte 0x69F36E2E
+	.4byte 0
 .global $$21842
 $$21842:
-	.incbin "baserom.dol", 0x433870, 0x88
+	.asciz "\n\n\nImpossibile accedere alla memoria della\nconsole Wii. Per maggiori informazioni,\nconsulta il manuale di istruzioni della\nconsole Wii."
 .global $$21843
 $$21843:
-	.incbin "baserom.dol", 0x4338F8, 0x84
+	.asciz "\n\n\nHet interne geheugen van het Wii-systeem\nkan niet worden gelezen of beschreven.\nLees de Wii-handleiding voor meer\ninformatie."
+	.balign 4
 .global $$21844
 $$21844:
-	.incbin "baserom.dol", 0x43397C, 0x64
+	.asciz "\n\n\nCould not access the Wii System Memory.Please refer to the Wii Operations Manual\nfor details."
+	.balign 4
 .global $$21845
 $$21845:
-	.incbin "baserom.dol", 0x4339E0, 0x7C
+	.4byte 0x0A0A0A49
+	.4byte 0x6D706F73
+	.4byte 0x7369626C
+	.4byte 0x65206427
+	.4byte 0x616363E9
+	.4byte 0x64657220
+	.4byte 0xE0206C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x20646520
+	.4byte 0x6C610A63
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x0A6D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692057
+	.4byte 0x69692070
+	.4byte 0x6F757220
+	.4byte 0x706C7573
+	.4byte 0x20646520
+	.4byte 0x64E97461
+	.asciz "ils."
+	.balign 4
 .global $$21846
 $$21846:
-	.incbin "baserom.dol", 0x433A5C, 0x90
+	.4byte 0x0A0A0A4E
+	.4byte 0x6F207365
+	.4byte 0x20686120
+	.4byte 0x706F6469
+	.4byte 0x646F2061
+	.4byte 0x63636564
+	.4byte 0x65722061
+	.4byte 0x206C6120
+	.4byte 0x6D656D6F
+	.4byte 0x72696120
+	.4byte 0x64650A6C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x692E2043
+	.4byte 0x6F6E7375
+	.4byte 0x6C746120
+	.4byte 0x656C206D
+	.4byte 0x616E7561
+	.4byte 0x6C206465
+	.4byte 0x0A696E73
+	.4byte 0x74727563
+	.4byte 0x63696F6E
+	.4byte 0x65732064
+	.4byte 0x65206C61
+	.4byte 0x20636F6E
+	.4byte 0x736F6C61
+	.4byte 0x20576969
+	.4byte 0x20706172
+	.4byte 0x610A6F62
+	.4byte 0x74656E65
+	.4byte 0x72206DE1
+	.4byte 0x7320696E
+	.4byte 0x666F726D
+	.4byte 0x616369F3
+	.4byte 0x6E2E0000
 .global $$21847
 $$21847:
-	.incbin "baserom.dol", 0x433AEC, 0x84
+	.4byte 0x0A0A8347
+	.4byte 0x8389815B
+	.4byte 0x8352815B
+	.4byte 0x83688253
+	.4byte 0x82508250
+	.4byte 0x81420A0A
+	.4byte 0x57696996
+	.4byte 0x7B91CC95
+	.4byte 0xDB91B683
+	.4byte 0x81838283
+	.4byte 0x8A82CC8F
+	.4byte 0x9182AB8D
+	.4byte 0x9E82DD2F
+	.4byte 0x93C782DD
+	.4byte 0x8F6F82B5
+	.4byte 0x82AA0A82
+	.4byte 0xC582AB82
+	.4byte 0xDC82B982
+	.4byte 0xF182C582
+	.4byte 0xB582BD81
+	.4byte 0x420A82AD
+	.4byte 0x82ED82B5
+	.4byte 0x82AD82CD
+	.4byte 0x57696996
+	.4byte 0x7B91CC82
+	.4byte 0xCC8EE688
+	.4byte 0xB590E096
+	.4byte 0xBE8F9182
+	.4byte 0xF082A893
+	.4byte 0xC782DD0A
+	.4byte 0x82AD82BE
+	.4byte 0x82B382A2
+	.4byte 0x81420000
 .global $$21848
 $$21848:
-	.incbin "baserom.dol", 0x433B70, 0x64
+	.asciz "\n\nError #411,\n\nCould not access Wii system memory.\nRefer to the Wii Operations Manual for\ndetails."
+	.balign 4
 .global $$21849
 $$21849:
-	.incbin "baserom.dol", 0x433BD4, 0x74
+	.4byte 0x0A0A0A57
+	.4byte 0x6969967B
+	.4byte 0x91CC95DB
+	.4byte 0x91B68381
+	.4byte 0x8382838A
+	.4byte 0x82CC8F91
+	.4byte 0x82AB8D9E
+	.4byte 0x82DD2F93
+	.4byte 0xC782DD8F
+	.4byte 0x6F82B592
+	.4byte 0x8682C90A
+	.4byte 0x83478389
+	.4byte 0x815B82AA
+	.4byte 0x94AD90B6
+	.4byte 0x82B582DC
+	.4byte 0x82B582BD
+	.4byte 0x81420A82
+	.4byte 0xAD82ED82
+	.4byte 0xB582AD82
+	.4byte 0xCD576969
+	.4byte 0x967B91CC
+	.4byte 0x82CC8EE6
+	.4byte 0x88B590E0
+	.4byte 0x96BE8F91
+	.4byte 0x82F082A8
+	.4byte 0x93C782DD
+	.4byte 0x0A82AD82
+	.4byte 0xBE82B382
+	.4byte 0xA2814200
 .global $$21850
 $$21850:
-	.incbin "baserom.dol", 0x433C48, 0x68
+	.asciz "\n\n\nAn error occurred while accessing Wii\nsystem memory. Refer to the Wii\nOperations Manual for details."
 .global $$21851
 $$21851:
-	.incbin "baserom.dol", 0x433CB0, 0x9C
+	.asciz "\n\n\nBeim Zugriff auf den Speicher der\nWii-Konsole ist ein Fehler aufgetreten.\nBitte lies die Wii-Bedienungsanleitung,\num weitere Informationen zu erhalten."
+	.balign 4
 .global $$21852
 $$21852:
-	.incbin "baserom.dol", 0x433D4C, 0xB4
+	.4byte 0x0A0A0A55
+	.4byte 0x6E652065
+	.4byte 0x72726575
+	.4byte 0x72206573
+	.4byte 0x74207375
+	.4byte 0x7276656E
+	.4byte 0x75652070
+	.4byte 0x656E6461
+	.4byte 0x6E74206C
+	.4byte 0x650A7072
+	.4byte 0x6F636573
+	.4byte 0x73757320
+	.4byte 0x6465206C
+	.4byte 0x65637475
+	.4byte 0x7265206F
+	.4byte 0x75206427
+	.4byte 0xE9637269
+	.4byte 0x74757265
+	.4byte 0x0A64616E
+	.4byte 0x73206C61
+	.4byte 0x206DE96D
+	.4byte 0x6F697265
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C652057
+	.4byte 0x69692E0A
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x732072E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x204D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F690A64
+	.4byte 0x65206C61
+	.4byte 0x20576969
+	.4byte 0x20706F75
+	.4byte 0x7220706C
+	.4byte 0x75732064
+	.4byte 0x652064E9
+	.asciz "tails."
+	.balign 4
 .global $$21853
 $$21853:
-	.incbin "baserom.dol", 0x433E00, 0xA4
+	.4byte 0x0A0A0A53
+	.4byte 0x65206861
+	.4byte 0x2070726F
+	.4byte 0x64756369
+	.4byte 0x646F2075
+	.4byte 0x6E206572
+	.4byte 0x726F7220
+	.4byte 0x616C2069
+	.4byte 0x6E74656E
+	.4byte 0x7461720A
+	.4byte 0x61636365
+	.4byte 0x64657220
+	.4byte 0x61206C61
+	.4byte 0x206D656D
+	.4byte 0x6F726961
+	.4byte 0x20646520
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692E0A
+	.4byte 0x436F6E73
+	.4byte 0x756C7461
+	.4byte 0x20656C20
+	.4byte 0x6D616E75
+	.4byte 0x616C2064
+	.4byte 0x65206F70
+	.4byte 0x65726163
+	.4byte 0x696F6E65
+	.4byte 0x730A6465
+	.4byte 0x206C6120
+	.4byte 0x636F6E73
+	.4byte 0x6F6C6120
+	.4byte 0x57696920
+	.4byte 0x70617261
+	.4byte 0x206F6274
+	.4byte 0x656E6572
+	.4byte 0x206DE173
+	.4byte 0x0A696E66
+	.4byte 0x6F726D61
+	.4byte 0x6369F36E
+	.4byte 0x2E000000
 .global $$21854
 $$21854:
-	.incbin "baserom.dol", 0x433EA4, 0xC4
+	.4byte 0x0A0A0A53
+	.4byte 0x6920E820
+	.asciz "verificato un errore durante la\nlettura o la modifica dei dati\nall'interno della memoria della\nconsole Wii. Per maggiori informazioni,\nconsulta il manuale di istruzioni della\nconsole Wii."
 .global $$21855
 $$21855:
-	.incbin "baserom.dol", 0x433F68, 0x9C
+	.asciz "\n\n\nEr is een fout opgetreden tijdens het\nlezen of beschrijven van het interne\ngeheugen van het Wii-systeem. Lees de\nWii-handleiding voor meer informatie."
+	.balign 4
 .global $$21856
 $$21856:
-	.incbin "baserom.dol", 0x434004, 0x94
+	.asciz "\n\n\nAn error occurred during the process of\nreading from or writing to the Wii System\nMemory. Please refer to the Wii Operations\nManual for details."
 .global $$21857
 $$21857:
-	.incbin "baserom.dol", 0x434098, 0xB0
+	.4byte 0x0A0A0A55
+	.4byte 0x6E652065
+	.4byte 0x72726575
+	.4byte 0x72206573
+	.4byte 0x74207375
+	.4byte 0x7276656E
+	.4byte 0x75652061
+	.4byte 0x76656320
+	.4byte 0x6C61206D
+	.4byte 0xE96D6F69
+	.4byte 0x72650A64
+	.4byte 0x65206C61
+	.4byte 0x20636F6E
+	.4byte 0x736F6C65
+	.4byte 0x20576969
+	.4byte 0x2070656E
+	.4byte 0x64616E74
+	.4byte 0x206C6520
+	.4byte 0x70726F63
+	.4byte 0x65737375
+	.4byte 0x730A6465
+	.4byte 0x206C6563
+	.4byte 0x74757265
+	.4byte 0x206F7520
+	.4byte 0x6427E963
+	.4byte 0x72697475
+	.4byte 0x72652E20
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20766F75
+	.4byte 0x730A72E9
+	.4byte 0x66E97265
+	.4byte 0x72206175
+	.4byte 0x206D6F64
+	.4byte 0x65206427
+	.4byte 0x656D706C
+	.4byte 0x6F692057
+	.4byte 0x69692070
+	.4byte 0x6F757220
+	.4byte 0x706C7573
+	.4byte 0x0A646520
+	.4byte 0x64E87461
+	.asciz "ils."
+	.balign 4
 .global $$21858
 $$21858:
-	.incbin "baserom.dol", 0x434148, 0xB0
+	.4byte 0x0A0A0A53
+	.4byte 0x65206861
+	.4byte 0x2070726F
+	.4byte 0x64756369
+	.4byte 0x646F2075
+	.4byte 0x6E206572
+	.4byte 0x726F7220
+	.4byte 0x64757261
+	.4byte 0x6E746520
+	.4byte 0x6C610A6C
+	.4byte 0x65637475
+	.4byte 0x7261206F
+	.4byte 0x20657363
+	.4byte 0x72697475
+	.4byte 0x72612064
+	.4byte 0x65206C61
+	.4byte 0x206D656D
+	.4byte 0x6F726961
+	.4byte 0x2064650A
+	.4byte 0x6C612063
+	.4byte 0x6F6E736F
+	.4byte 0x6C612057
+	.4byte 0x69692E20
+	.4byte 0x436F6E73
+	.4byte 0x756C7461
+	.4byte 0x20656C20
+	.4byte 0x6D616E75
+	.4byte 0x616C2064
+	.4byte 0x650A696E
+	.4byte 0x73747275
+	.4byte 0x6363696F
+	.4byte 0x6E657320
+	.4byte 0x6465206C
+	.4byte 0x6120636F
+	.4byte 0x6E736F6C
+	.4byte 0x61205769
+	.4byte 0x69207061
+	.4byte 0x72610A6F
+	.4byte 0x6274656E
+	.4byte 0x6572206D
+	.4byte 0xE1732069
+	.4byte 0x6E666F72
+	.4byte 0x6D616369
+	.4byte 0xF36E2E00
 .global $$21859
 $$21859:
-	.incbin "baserom.dol", 0x4341F8, 0x8C
+	.4byte 0x0A0A8347
+	.4byte 0x8389815B
+	.4byte 0x8352815B
+	.4byte 0x83688253
+	.4byte 0x82508251
+	.4byte 0x81420A0A
+	.4byte 0x57696996
+	.4byte 0x7B91CC95
+	.4byte 0xDB91B683
+	.4byte 0x81838283
+	.4byte 0x8A82CC8F
+	.4byte 0x9182AB8D
+	.4byte 0x9E82DD2F
+	.4byte 0x93C782DD
+	.4byte 0x8F6F82B5
+	.4byte 0x928682C9
+	.4byte 0x0A834783
+	.4byte 0x89815B82
+	.4byte 0xAA94AD90
+	.4byte 0xB682B582
+	.4byte 0xDC82B582
+	.4byte 0xBD81420A
+	.4byte 0x82AD82ED
+	.4byte 0x82B582AD
+	.4byte 0x82CD5769
+	.4byte 0x69967B91
+	.4byte 0xCC82CC8E
+	.4byte 0xE688B590
+	.4byte 0xE096BE8F
+	.4byte 0x9182F082
+	.4byte 0xA893C782
+	.4byte 0xDD0A82AD
+	.4byte 0x82BE82B3
+	.4byte 0x82A28142
+	.4byte 0
 .global $$21860
 $$21860:
-	.incbin "baserom.dol", 0x434284, 0x74
+	.asciz "\n\nError #412,\n\nAn error occurred while accessing Wii\nsystem memory. Refer to the Wii\nOperations Manual for details."
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __NANDMaxBlocksErrorMessageChinaKorea
 __NANDMaxBlocksErrorMessageChinaKorea:
-	.incbin "baserom.dol", 0x499250, 0x8
+	.4byte 0x80436AC8
+	.4byte 0x80436B3C
 .global __NANDMaxFilesErrorMessageChinaKorea
 __NANDMaxFilesErrorMessageChinaKorea:
-	.incbin "baserom.dol", 0x499258, 0x8
+	.4byte 0x80436E4C
+	.4byte 0x80436EC4
 .global __NANDCorruptErrorMessageChinaKorea
 __NANDCorruptErrorMessageChinaKorea:
-	.incbin "baserom.dol", 0x499260, 0x8
+	.4byte 0x80437430
+	.4byte 0x8043749C
 .global __NANDBusyErrorMessageChinaKorea
 __NANDBusyErrorMessageChinaKorea:
-	.incbin "baserom.dol", 0x499268, 0x8
+	.4byte 0x804379EC
+	.4byte 0x80437A70
 .global __NANDUnknownErrorMessageChinaKorea
 __NANDUnknownErrorMessageChinaKorea:
-	.incbin "baserom.dol", 0x499270, 0x8
+	.4byte 0x804380F8
+	.4byte 0x80438184
 .global $$21888
 $$21888:
-	.incbin "baserom.dol", 0x499278, 0x8
+	.4byte 0xFFFFFF00
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global NANDErrorFunc

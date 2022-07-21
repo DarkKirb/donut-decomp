@@ -290,49 +290,71 @@ lbl_8019DDFC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2
 T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2:
-	.incbin "baserom.dol", 0x4105E0, 0x20
+	.4byte 0x80556BF8
+	.4byte 0x80556C00
+	.4byte 0x80556C08
+	.4byte 0x80556C10
+	.4byte 0x80556C18
+	.4byte 0x80556C20
+	.4byte 0x80556C28
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249074
 $$249074:
-	.incbin "baserom.dol", 0x452AD0, 0x10
+	.4byte 0x00530050
+	.4byte 0x00250075
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250071
 $$250071:
-	.incbin "baserom.dol", 0x492FD8, 0x8
+	.asciz "US_JPN"
+	.balign 4
 .global $$250072
 $$250072:
-	.incbin "baserom.dol", 0x492FE0, 0x8
+	.asciz "US_ENG"
+	.balign 4
 .global $$250073
 $$250073:
-	.incbin "baserom.dol", 0x492FE8, 0x8
+	.asciz "US_GER"
+	.balign 4
 .global $$250074
 $$250074:
-	.incbin "baserom.dol", 0x492FF0, 0x8
+	.asciz "US_FRA"
+	.balign 4
 .global $$250075
 $$250075:
-	.incbin "baserom.dol", 0x492FF8, 0x8
+	.asciz "US_SPA"
+	.balign 4
 .global $$250076
 $$250076:
-	.incbin "baserom.dol", 0x493000, 0x8
+	.asciz "US_ITA"
+	.balign 4
 .global $$250077
 $$250077:
-	.incbin "baserom.dol", 0x493008, 0x8
+	.asciz "US_NED"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249050
 $$249050:
-	.incbin "baserom.dol", 0x493240, 0x8
+	.4byte 0x00250064
+	.4byte 0
 .global $$249072
 $$249072:
-	.incbin "baserom.dol", 0x493248, 0x8
+	.4byte 0x00250075
+	.4byte 0x00500000
 .global $$249073
 $$249073:
-	.incbin "baserom.dol", 0x493250, 0x8
+	.4byte 0x00500025
+	.4byte 0x00750000
 .global $$249075
 $$249075:
-	.incbin "baserom.dol", 0x493258, 0x8
+	.4byte 0x004A0025
+	.4byte 0x00750000
 .global $$249076
 $$249076:
-	.incbin "baserom.dol", 0x493260, 0x8
+	.4byte 0x00470025
+	.4byte 0x00750000

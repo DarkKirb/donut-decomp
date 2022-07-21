@@ -11,4 +11,5 @@ Zero__Q24gobj13MoveParamFallFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248787
 $$248787:
-	.incbin "baserom.dol", 0x49A2E8, 0x8
+	.4byte 0
+	.4byte 0

@@ -1008,94 +1008,139 @@ __dt__Q53scn4step6weapon12dededehammer14StateExplosionFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12hammerhammer14StateExplosion
 __vt__Q53scn4step6weapon12hammerhammer14StateExplosion:
-	.incbin "baserom.dol", 0x4908B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E5784
+	.4byte 0x803E5598
+	.4byte 0x803E5778
+	.4byte 0x803D895C
+	.4byte 0x803E577C
+	.4byte 0x803E5780
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion
 __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion:
-	.incbin "baserom.dol", 0x490968, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E6358
+	.4byte 0x803E635C
+	.4byte 0x803E63B4
+	.4byte 0x803D895C
+	.4byte 0x803E63B8
+	.4byte 0x803E63BC
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion
 __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion:
-	.incbin "baserom.dol", 0x4909B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E6770
+	.4byte 0x803E6774
+	.4byte 0x803E67CC
+	.4byte 0x803D895C
+	.4byte 0x803E67D0
+	.4byte 0x803E67D4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion
 __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion:
-	.incbin "baserom.dol", 0x490A38, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E6D40
+	.4byte 0x803E6D44
+	.4byte 0x803E6E34
+	.4byte 0x803D895C
+	.4byte 0x803E6E38
+	.4byte 0x803E6E3C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion
 __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion:
-	.incbin "baserom.dol", 0x490E58, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803EB974
+	.4byte 0x803EB978
+	.4byte 0x803EB9D0
+	.4byte 0x803D895C
+	.4byte 0x803EB9D4
+	.4byte 0x803EB9D8
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12dededehammer14StateExplosion
 __vt__Q53scn4step6weapon12dededehammer14StateExplosion:
-	.incbin "baserom.dol", 0x490F88, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803ECBD0
+	.4byte 0x803EC9E4
+	.4byte 0x803ECBC4
+	.4byte 0x803D895C
+	.4byte 0x803ECBC8
+	.4byte 0x803ECBCC
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256495
 $$256495:
-	.incbin "baserom.dol", 0x4986E8, 0x4
+	.4byte 0x00000019
 .global $$256497
 $$256497:
-	.incbin "baserom.dol", 0x4986EC, 0x4
+	.4byte 0x0000001A
 .global $$256499
 $$256499:
-	.incbin "baserom.dol", 0x4986F0, 0x4
+	.4byte 0x0000001B
 .global $$256505
 $$256505:
-	.incbin "baserom.dol", 0x4986F4, 0x4
+	.4byte 0x00000019
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256953
 $$256953:
-	.incbin "baserom.dol", 0x49EA90, 0x4
+	.4byte 0x3FC00000
 .global $$256954
 $$256954:
-	.incbin "baserom.dol", 0x49EA94, 0x4
+	.4byte 0x3F800000
 .global $$256955
 $$256955:
-	.incbin "baserom.dol", 0x49EA98, 0x4
+	.4byte 0xBF000000
 .global $$256956
 $$256956:
-	.incbin "baserom.dol", 0x49EA9C, 0x4
+	.4byte 0
 .global $$256960
 $$256960:
-	.incbin "baserom.dol", 0x49EAA0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256641
 $$256641:
-	.incbin "baserom.dol", 0x49EAF0, 0x4
+	.4byte 0x3F800000
 .global $$256642
 $$256642:
-	.incbin "baserom.dol", 0x49EAF4, 0x4
+	.4byte 0x3FC00000
 .global $$256643
 $$256643:
-	.incbin "baserom.dol", 0x49EAF8, 0x4
+	.4byte 0xBF000000
 .global $$256644
 $$256644:
-	.incbin "baserom.dol", 0x49EAFC, 0x4
+	.4byte 0
 .global $$256647
 $$256647:
-	.incbin "baserom.dol", 0x49EB00, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256953
 $$256953:
-	.incbin "baserom.dol", 0x49EC10, 0x4
+	.4byte 0x3FC00000
 .global $$256954
 $$256954:
-	.incbin "baserom.dol", 0x49EC14, 0x4
+	.4byte 0x3F800000
 .global $$256955
 $$256955:
-	.incbin "baserom.dol", 0x49EC18, 0x4
+	.4byte 0xBF000000
 .global $$256956
 $$256956:
-	.incbin "baserom.dol", 0x49EC1C, 0x4
+	.4byte 0
 .global $$256960
 $$256960:
-	.incbin "baserom.dol", 0x49EC20, 0x8
+	.4byte 0x43300000
+	.4byte 0

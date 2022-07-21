@@ -23,7 +23,7 @@ __sinit_$$3MintCommander_cpp:
 /* 803F9B78 003F59B8  4B CE 38 68 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402620, 0x4
+	.4byte 0x803F9B74
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q33scn11staffcredit27$$2unnamed$$2MintCommander_cpp$$2

@@ -890,10 +890,59 @@ lbl_8015ED68:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VX2CommandTable8x16
 VX2CommandTable8x16:
-	.incbin "baserom.dol", 0x40B1E8, 0x28
+	.4byte 0x8015E040  ;# ptr
+	.4byte 0x8015E170  ;# ptr
+	.4byte 0x8015E390  ;# ptr
+	.4byte 0x8015E5B0  ;# ptr
+	.4byte 0x8015E7D0  ;# ptr
+	.4byte 0x8015E9F0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8015EC10  ;# ptr
+	.4byte 0x8015EC90  ;# ptr
 .global $$2LOCAL$$2VX2DecodeBlockInter8x16__FR14VX2DecoderData$$2command
 $$2LOCAL$$2VX2DecodeBlockInter8x16__FR14VX2DecoderData$$2command:
-	.incbin "baserom.dol", 0x40B210, 0x80
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000009
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x00000005
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$2LOCAL$$2VX2DecodeBlockInter8x16__FR14VX2DecoderData$$2size$$20
 $$2LOCAL$$2VX2DecodeBlockInter8x16__FR14VX2DecoderData$$2size$$20:
-	.incbin "baserom.dol", 0x40B290, 0x28
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000005
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000003
+	.4byte 0x00000002

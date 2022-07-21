@@ -116,4 +116,5 @@ isDecideAnimating__Q25pause10ClosePanelCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252084
 $$252084:
-	.incbin "baserom.dol", 0x459560, 0x10
+	.asciz "PauseCloseN"
+	.4byte 0

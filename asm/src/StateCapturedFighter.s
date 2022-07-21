@@ -301,23 +301,39 @@ __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1:
-	.incbin "baserom.dol", 0x4714D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A4634  ;# ptr
+	.4byte 0x802A45EC  ;# ptr
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23StateDeadCaptureRelease$$4PQ43scn4step5enemy5Enemy$$4b$$1:
-	.incbin "baserom.dol", 0x4714E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A4630  ;# ptr
+	.4byte 0x802A4610  ;# ptr
 .global __vt__Q53scn4step5enemy8captured20StateCapturedFighter
 __vt__Q53scn4step5enemy8captured20StateCapturedFighter:
-	.incbin "baserom.dol", 0x4714F8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A42FC  ;# ptr
+	.4byte 0x802A4370  ;# ptr
+	.4byte 0x802A4578  ;# ptr
+	.4byte 0x802A457C  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255917
 $$255917:
-	.incbin "baserom.dol", 0x495C50, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256237
 $$256237:
-	.incbin "baserom.dol", 0x49C010, 0x8
+	.4byte 0x40A00000
+	.4byte 0
 .global $$256240
 $$256240:
-	.incbin "baserom.dol", 0x49C018, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -74,7 +74,7 @@ __ct__Q33hel6common5ColorFUcUcUcUc:
 /* 8019D990 001997D0  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402414, 0x4
+	.4byte 0x8019D88C  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global BLACK__Q33hel6common5Color

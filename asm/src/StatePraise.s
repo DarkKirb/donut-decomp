@@ -1138,48 +1138,101 @@ procFixPos__Q53scn4step5enemy6sparky11StatePraiseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x462890, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80248558  ;# ptr
+	.4byte 0x8024853C  ;# ptr
 .global __vt__Q53scn4step4boss12creditdedede11StatePraise
 __vt__Q53scn4step4boss12creditdedede11StatePraise:
-	.incbin "baserom.dol", 0x4628A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80248378  ;# ptr
+	.4byte 0x8024837C  ;# ptr
+	.4byte 0x80248448  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024849C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x462C90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80249690  ;# ptr
+	.4byte 0x80249674  ;# ptr
 .global __vt__Q53scn4step4boss9creditdee11StatePraise
 __vt__Q53scn4step4boss9creditdee11StatePraise:
-	.incbin "baserom.dol", 0x462CA0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802495A8  ;# ptr
+	.4byte 0x802495AC  ;# ptr
+	.4byte 0x8024961C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80249670  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463040, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024AF10  ;# ptr
+	.4byte 0x8024AEF4  ;# ptr
 .global __vt__Q53scn4step4boss10creditmeta11StatePraise
 __vt__Q53scn4step4boss10creditmeta11StatePraise:
-	.incbin "baserom.dol", 0x463050, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024AE14  ;# ptr
+	.4byte 0x8024AE18  ;# ptr
+	.4byte 0x8024AE9C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024AEF0  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common11StatePraise
 __vt__Q53scn4step5enemy6common11StatePraise:
-	.incbin "baserom.dol", 0x46F358, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802939F8  ;# ptr
+	.4byte 0x802939FC  ;# ptr
+	.4byte 0x80293A20  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80293A24  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6bouncy11StatePraise
 __vt__Q53scn4step5enemy6bouncy11StatePraise:
-	.incbin "baserom.dol", 0x470568, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029DD38  ;# ptr
+	.4byte 0x8029DD3C  ;# ptr
+	.4byte 0x8029DE14  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029DF84  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sparky11StatePraise
 __vt__Q53scn4step5enemy6sparky11StatePraise:
-	.incbin "baserom.dol", 0x479348, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E7594  ;# ptr
+	.4byte 0x802E7598  ;# ptr
+	.4byte 0x802E76D0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802E77DC  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255711
 $$255711:
-	.incbin "baserom.dol", 0x49B1A0, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256661
 $$256661:
-	.incbin "baserom.dol", 0x49BE88, 0x8
+	.4byte 0x3E23D70A
+	.4byte 0

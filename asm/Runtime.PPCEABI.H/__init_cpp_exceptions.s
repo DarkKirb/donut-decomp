@@ -40,17 +40,18 @@ lbl_80007A5C:
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
 .global __init_cpp_exceptions_reference
 __init_cpp_exceptions_reference:
-	.incbin "baserom.dol", 0x402360, 0x4
+	.4byte 0x800079FC  ;# ptr
 
 .section .dtors, "wa"  # 0x80406540 - 0x80406560
 .global __destroy_global_chain_reference
 __destroy_global_chain_reference:
-	.incbin "baserom.dol", 0x402640, 0x4
+	.4byte 0x80006B88  ;# ptr
 .global __fini_cpp_exceptions_reference
 __fini_cpp_exceptions_reference:
-	.incbin "baserom.dol", 0x402644, 0x4
+	.4byte 0x80007A38  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global fragmentID
 fragmentID:
-	.incbin "baserom.dol", 0x492810, 0x8
+	.4byte 0xFFFFFFFE
+	.4byte 0

@@ -596,33 +596,35 @@ __sinit_$$3EasyRender3D_cpp:
 /* 80195850 00191690  4B FF F7 D4 */	b __ct__Q33hel4math8Matrix34Fv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023E8, 0x4
+	.4byte 0x80195848  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251446
 $$251446:
-	.incbin "baserom.dol", 0x49A208, 0x4
+	.4byte 0x4040C0FF
 .global $$251747
 $$251747:
-	.incbin "baserom.dol", 0x49A20C, 0x4
+	.4byte 0xFFFFFFFF
 .global $$251775
 $$251775:
-	.incbin "baserom.dol", 0x49A210, 0x4
+	.4byte 0x40000000
 .global $$251776
 $$251776:
-	.incbin "baserom.dol", 0x49A214, 0x4
+	.4byte 0
 .global $$251777
 $$251777:
-	.incbin "baserom.dol", 0x49A218, 0x8
+	.4byte 0x40490FDB
+	.4byte 0
 .global $$251782
 $$251782:
-	.incbin "baserom.dol", 0x49A220, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$251809
 $$251809:
-	.incbin "baserom.dol", 0x49A228, 0x4
+	.4byte 0x4222F983
 .global $$251844
 $$251844:
-	.incbin "baserom.dol", 0x49A22C, 0x4
+	.4byte 0x40C00000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_viewMtx__26$$2unnamed$$2EasyRender3D_cpp$$2

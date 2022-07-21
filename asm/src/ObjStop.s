@@ -895,24 +895,59 @@ onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss7ObjStop
 __vt__Q43scn4step4boss7ObjStop:
-	.incbin "baserom.dol", 0x4607B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802337D4  ;# ptr
+	.4byte 0x80233878  ;# ptr
+	.4byte 0x802338BC  ;# ptr
+	.4byte 0x80233914  ;# ptr
+	.4byte 0x80233978  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy7ObjStop
 __vt__Q43scn4step5enemy7ObjStop:
-	.incbin "baserom.dol", 0x46E7B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C090  ;# ptr
+	.4byte 0x8028C114  ;# ptr
+	.4byte 0x8028C164  ;# ptr
+	.4byte 0x8028C1C8  ;# ptr
+	.4byte 0x8028C208  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero7ObjStop
 __vt__Q43scn4step4hero7ObjStop:
-	.incbin "baserom.dol", 0x481390, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350B24
+	.4byte 0x80350C40
+	.4byte 0x80350C84
+	.4byte 0x80350CDC
+	.4byte 0x80350D40
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item7ObjStop
 __vt__Q43scn4step4item7ObjStop:
-	.incbin "baserom.dol", 0x48DFE8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C4E90
+	.4byte 0x803C4F14
+	.4byte 0x803C4F58
+	.4byte 0x803C4FB0
+	.4byte 0x803C5008
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon7ObjStop
 __vt__Q43scn4step6weapon7ObjStop:
-	.incbin "baserom.dol", 0x48F8E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D7CB8
+	.4byte 0x803D7D44
+	.4byte 0x803D7D88
+	.4byte 0x803D7DE0
+	.4byte 0x803D7E3C
+	.4byte 0

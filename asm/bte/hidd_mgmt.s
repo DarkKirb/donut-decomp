@@ -61,7 +61,9 @@ lbl_8008D090:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2651
 $$2651:
-	.incbin "baserom.dol", 0x439210, 0x20
+	.asciz "hidd_proc_repage_timeout"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global hd_cb

@@ -34,4 +34,11 @@ __dt__Q53scn4step5enemy6degout17BrainWaitAndChaseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6degout17BrainWaitAndChase
 __vt__Q53scn4step5enemy6degout17BrainWaitAndChase:
-	.incbin "baserom.dol", 0x471FD8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AD214  ;# ptr
+	.4byte 0x802AD20C  ;# ptr
+	.4byte 0x802AD210  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

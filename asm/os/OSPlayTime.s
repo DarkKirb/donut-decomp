@@ -570,26 +570,31 @@ lbl_800281BC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21461
 $$21461:
-	.incbin "baserom.dol", 0x42BC00, 0x14
+	.asciz "/shared2/expired"
+	.balign 4
 .global $$21519
 $$21519:
-	.incbin "baserom.dol", 0x42BC14, 0x10
+	.asciz "OSPlayTime.c"
+	.balign 4
 .global $$21521
 $$21521:
-	.incbin "baserom.dol", 0x42BC24, 0x1C
+	.asciz "PlayTime: %d seconds left\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21520
 $$21520:
-	.incbin "baserom.dol", 0x4928F0, 0x8
+	.asciz "Expired"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21446
 $$21446:
-	.incbin "baserom.dol", 0x499058, 0x8
+	.4byte 0x3F7EB852
+	.4byte 0
 .global $$21448
 $$21448:
-	.incbin "baserom.dol", 0x499060, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __OSExpireAlarm

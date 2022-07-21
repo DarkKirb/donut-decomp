@@ -423,28 +423,53 @@ GetRuntimeTypeInfo__Q33scn10grandtitle15SceneGrandTitleCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252619
 $$252619:
-	.incbin "baserom.dol", 0x45CAA0, 0x14
+	.asciz "GrandTitleCommon.dn"
 .global $$252620
 $$252620:
-	.incbin "baserom.dol", 0x45CAB4, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$252621
 $$252621:
-	.incbin "baserom.dol", 0x45CAC8, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$252622
 $$252622:
-	.incbin "baserom.dol", 0x45CADC, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$252623
 $$252623:
-	.incbin "baserom.dol", 0x45CAF0, 0x10
+	.asciz "StaffCredit.dn"
+	.balign 4
 .global $$252624
 $$252624:
-	.incbin "baserom.dol", 0x45CB00, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$252625
 $$252625:
-	.incbin "baserom.dol", 0x45CB10, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global __vt__Q33scn10grandtitle15SceneGrandTitle
 __vt__Q33scn10grandtitle15SceneGrandTitle:
-	.incbin "baserom.dol", 0x45CB20, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8020630C  ;# ptr
+	.4byte 0x802061B0  ;# ptr
+	.4byte 0x80206244  ;# ptr
+	.4byte 0x8020621C  ;# ptr
+	.4byte 0x8020626C  ;# ptr
+	.4byte 0x80206294  ;# ptr
+	.4byte 0x802062BC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn10grandtitle15SceneGrandTitle$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

@@ -523,43 +523,58 @@ lbl_802FEAF4:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$253055
 $$253055:
-	.incbin "baserom.dol", 0x4157E8, 0x10
+	.4byte 0x8055A528
+	.4byte 0x8055A530
+	.4byte 0x8055A538
+	.4byte 0x8055A53C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254295
 $$254295:
-	.incbin "baserom.dol", 0x47BA70, 0x18
+	.asciz "step/gimmick/ArrowBoard"
 .global $$254466
 $$254466:
-	.incbin "baserom.dol", 0x47BA88, 0x24
+	.asciz "step/gimmick/ChallengeArrowBoard"
+	.balign 4
 .global $$254467
 $$254467:
-	.incbin "baserom.dol", 0x47BAAC, 0x24
+	.asciz "step/gimmick/DeathMatchArrowBoard"
+	.balign 4
 .global $$254468
 $$254468:
-	.incbin "baserom.dol", 0x47BAD0, 0x50
+	.asciz "step/gimmick/MasterArrowBoard"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253051
 $$253051:
-	.incbin "baserom.dol", 0x496908, 0x8
+	.asciz "Right"
+	.balign 4
 .global $$253052
 $$253052:
-	.incbin "baserom.dol", 0x496910, 0x8
+	.asciz "Left"
+	.balign 4
 .global $$253053
 $$253053:
-	.incbin "baserom.dol", 0x496918, 0x4
+	.4byte 0x55700000
 .global $$253054
 $$253054:
-	.incbin "baserom.dol", 0x49691C, 0x8
+	.asciz "Down"
+	.balign 4
 .global $$254296
 $$254296:
-	.incbin "baserom.dol", 0x496924, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$254469
 $$254469:
-	.incbin "baserom.dol", 0x49692C, 0x4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254369
 $$254369:
-	.incbin "baserom.dol", 0x49D1D8, 0x8
+	.4byte 0x40A00000
+	.4byte 0

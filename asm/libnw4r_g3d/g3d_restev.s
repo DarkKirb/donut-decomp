@@ -900,12 +900,41 @@ lbl_800CCD04:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2GXGetTevOrder__Q34nw4r3g3d6ResTevCF13_GXTevStageIDP13_GXTexCoordIDP11_GXTexMapIDP12_GXChannelID$$2r2c
 $$2LOCAL$$2GXGetTevOrder__Q34nw4r3g3d6ResTevCF13_GXTevStageIDP13_GXTexCoordIDP11_GXTexMapIDP12_GXChannelID$$2r2c:
-	.incbin "baserom.dol", 0x404420, 0x20
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x00000006
 .global $$2LOCAL$$2CallDisplayList__Q34nw4r3g3d6ResTevCFb$$2dlsize
 $$2LOCAL$$2CallDisplayList__Q34nw4r3g3d6ResTevCFb$$2dlsize:
-	.incbin "baserom.dol", 0x404440, 0x40
+	.4byte 0x000000A0
+	.4byte 0x000000A0
+	.4byte 0x000000C0
+	.4byte 0x000000C0
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0x00000120
+	.4byte 0x00000120
+	.4byte 0x00000160
+	.4byte 0x00000160
+	.4byte 0x00000180
+	.4byte 0x00000180
+	.4byte 0x000001C0
+	.4byte 0x000001C0
+	.4byte 0x000001E0
+	.4byte 0x000001E0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GXSetTevOrder__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r
 $$2LOCAL$$2GXSetTevOrder__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r:
-	.incbin "baserom.dol", 0x43C740, 0x20
+	.4byte 0x00010001
+	.4byte 0x00010705
+	.4byte 0x06000000
+	.4byte 0x00000007
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

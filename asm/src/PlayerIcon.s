@@ -288,42 +288,92 @@ hide__Q53scn4step4info5lvmap10PlayerIconFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252394
 $$252394:
-	.incbin "baserom.dol", 0x48D920, 0xC
+	.asciz "common/Main"
 .global $$252395
 $$252395:
-	.incbin "baserom.dol", 0x48D92C, 0xC
+	.asciz "PlayerIcon"
+	.balign 4
 .global $$252444
 $$252444:
-	.incbin "baserom.dol", 0x48D938, 0xC
+	.asciz "FighterN"
+	.balign 4
 .global $$252445
 $$252445:
-	.incbin "baserom.dol", 0x48D944, 0xC
+	.asciz "ParasolN"
+	.balign 4
 .global $$252451
 $$252451:
-	.incbin "baserom.dol", 0x48D950, 0xC
+	.asciz "MahoroaN"
+	.balign 4
 .global $$252453
 $$252453:
-	.incbin "baserom.dol", 0x48D95C, 0xC4
+	.4byte 0x803BE6FC
+	.4byte 0x803BE79C
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE7EC
+	.4byte 0x803BE724
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE814
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE774
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE7C4
+	.4byte 0x803BE864
+	.4byte 0x803BE74C
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE83C
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE864
+	.4byte 0x803BE888
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252442
 $$252442:
-	.incbin "baserom.dol", 0x498010, 0x8
+	.asciz "NormalN"
 .global $$252443
 $$252443:
-	.incbin "baserom.dol", 0x498018, 0x8
+	.asciz "FireN"
+	.balign 4
 .global $$252446
 $$252446:
-	.incbin "baserom.dol", 0x498020, 0x8
+	.asciz "SwordN"
+	.balign 4
 .global $$252447
 $$252447:
-	.incbin "baserom.dol", 0x498028, 0x8
+	.asciz "WingN"
+	.balign 4
 .global $$252448
 $$252448:
-	.incbin "baserom.dol", 0x498030, 0x8
+	.asciz "WhipN"
+	.balign 4
 .global $$252449
 $$252449:
-	.incbin "baserom.dol", 0x498038, 0x8
+	.asciz "SparkN"
+	.balign 4
 .global $$252450
 $$252450:
-	.incbin "baserom.dol", 0x498040, 0x8
+	.asciz "SmashN"
+	.balign 4

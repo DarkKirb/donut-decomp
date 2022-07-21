@@ -463,140 +463,202 @@ lbl_801F7CF8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251791
 $$251791:
-	.incbin "baserom.dol", 0x4119F0, 0x20
+	.4byte 0x00000018
+	.4byte 0x00000001
+	.4byte 0x0000000B
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000013
+	.4byte 0x00000015
+	.4byte 0x00000024
 .global $$251826
 $$251826:
-	.incbin "baserom.dol", 0x411A10, 0x38
+	.4byte 0x80558058
+	.4byte 0x80558060
+	.4byte 0x80558068
+	.4byte 0x80558070
+	.4byte 0x8045FAB8
+	.4byte 0x8045FAC4
+	.4byte 0x80558078
+	.4byte 0x80558080
+	.4byte 0x80558088
+	.4byte 0x80558090
+	.4byte 0x80558098
+	.4byte 0x805580A0
+	.4byte 0x8045FAD0
+	.4byte 0x8045FADC
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251574
 $$251574:
-	.incbin "baserom.dol", 0x45BAD8, 0x14
+	.asciz "AbilitySelect_Smash"
 .global $$251575
 $$251575:
-	.incbin "baserom.dol", 0x45BAEC, 0x14
+	.asciz "AbilitySelect_Sword"
 .global $$251576
 $$251576:
-	.incbin "baserom.dol", 0x45BB00, 0x18
+	.asciz "AbilitySelect_Parasol"
+	.balign 4
 .global $$251577
 $$251577:
-	.incbin "baserom.dol", 0x45BB18, 0x14
+	.asciz "AbilitySelect_Spark"
 .global $$251578
 $$251578:
-	.incbin "baserom.dol", 0x45BB2C, 0x14
+	.asciz "AbilitySelect_Whip"
+	.balign 4
 .global $$251579
 $$251579:
-	.incbin "baserom.dol", 0x45BB40, 0x14
+	.asciz "AbilitySelect_Wing"
+	.balign 4
 .global $$251580
 $$251580:
-	.incbin "baserom.dol", 0x45BB54, 0x18
+	.asciz "AbilitySelect_Fighter"
+	.balign 4
 .global abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2
 abilityName__Q43scn17challengetutorial4info26$$2unnamed$$2AbilityPanel_cpp$$2:
-	.incbin "baserom.dol", 0x45BB6C, 0x1C
+	.4byte 0x8045F9D8
+	.4byte 0x8045F9EC
+	.4byte 0x8045FA00
+	.4byte 0x8045FA18
+	.4byte 0x8045FA2C
+	.4byte 0x8045FA40
+	.4byte 0x8045FA54
 .global $$252687
 $$252687:
-	.incbin "baserom.dol", 0x45BB88, 0x18
+	.asciz "challengeability/Main"
+	.balign 4
 .global $$252689
 $$252689:
-	.incbin "baserom.dol", 0x45BBA0, 0xC
+	.asciz "PanelIcon"
+	.balign 4
 .global $$252691
 $$252691:
-	.incbin "baserom.dol", 0x45BBAC, 0xC
+	.asciz "PanelIconN"
+	.balign 4
 .global $$251816
 $$251816:
-	.incbin "baserom.dol", 0x45BBB8, 0xC
+	.asciz "ParasolN"
+	.balign 4
 .global $$251817
 $$251817:
-	.incbin "baserom.dol", 0x45BBC4, 0xC
+	.asciz "ParasolUN"
+	.balign 4
 .global $$251824
 $$251824:
-	.incbin "baserom.dol", 0x45BBD0, 0xC
+	.asciz "FighterN"
+	.balign 4
 .global $$251825
 $$251825:
-	.incbin "baserom.dol", 0x45BBDC, 0xC
+	.asciz "FighterUN"
+	.balign 4
 .global $$252775
 $$252775:
-	.incbin "baserom.dol", 0x45BBE8, 0xC
+	.asciz "UnFocusN"
+	.balign 4
 .global $$252779
 $$252779:
-	.incbin "baserom.dol", 0x45BBF4, 0xC
+	.asciz "NormalUN"
+	.balign 4
 .global $$252782
 $$252782:
-	.incbin "baserom.dol", 0x45BC00, 0xC
+	.asciz "FocusText"
+	.balign 4
 .global $$252783
 $$252783:
-	.incbin "baserom.dol", 0x45BC0C, 0xC
+	.asciz "UnFocusText"
 .global $$252784
 $$252784:
-	.incbin "baserom.dol", 0x45BC18, 0x40
+	.asciz "PlatinumN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252688
 $$252688:
-	.incbin "baserom.dol", 0x494418, 0x8
+	.asciz "Panel"
+	.balign 4
 .global $$252690
 $$252690:
-	.incbin "baserom.dol", 0x494420, 0x8
+	.asciz "Medal"
+	.balign 4
 .global $$252692
 $$252692:
-	.incbin "baserom.dol", 0x494428, 0x8
+	.asciz "MedalN"
+	.balign 4
 .global $$252693
 $$252693:
-	.incbin "baserom.dol", 0x494430, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$251812
 $$251812:
-	.incbin "baserom.dol", 0x494438, 0x8
+	.asciz "SmashN"
+	.balign 4
 .global $$251813
 $$251813:
-	.incbin "baserom.dol", 0x494440, 0x8
+	.asciz "SmashUN"
 .global $$251814
 $$251814:
-	.incbin "baserom.dol", 0x494448, 0x8
+	.asciz "SwordN"
+	.balign 4
 .global $$251815
 $$251815:
-	.incbin "baserom.dol", 0x494450, 0x8
+	.asciz "SwordUN"
 .global $$251818
 $$251818:
-	.incbin "baserom.dol", 0x494458, 0x8
+	.asciz "SparkN"
+	.balign 4
 .global $$251819
 $$251819:
-	.incbin "baserom.dol", 0x494460, 0x8
+	.asciz "SparkUN"
 .global $$251820
 $$251820:
-	.incbin "baserom.dol", 0x494468, 0x8
+	.asciz "WhipN"
+	.balign 4
 .global $$251821
 $$251821:
-	.incbin "baserom.dol", 0x494470, 0x8
+	.asciz "WhipUN"
+	.balign 4
 .global $$251822
 $$251822:
-	.incbin "baserom.dol", 0x494478, 0x8
+	.asciz "WingN"
+	.balign 4
 .global $$251823
 $$251823:
-	.incbin "baserom.dol", 0x494480, 0x8
+	.asciz "WingUN"
+	.balign 4
 .global $$252774
 $$252774:
-	.incbin "baserom.dol", 0x494488, 0x8
+	.asciz "UnFocus"
 .global $$252776
 $$252776:
-	.incbin "baserom.dol", 0x494490, 0x8
+	.asciz "FocusN"
+	.balign 4
 .global $$252777
 $$252777:
-	.incbin "baserom.dol", 0x494498, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252778
 $$252778:
-	.incbin "baserom.dol", 0x4944A0, 0x8
+	.asciz "NormalN"
 .global $$252780
 $$252780:
-	.incbin "baserom.dol", 0x4944A8, 0x8
+	.asciz "FireN"
+	.balign 4
 .global $$252781
 $$252781:
-	.incbin "baserom.dol", 0x4944B0, 0x8
+	.asciz "FireUN"
+	.balign 4
 .global $$252785
 $$252785:
-	.incbin "baserom.dol", 0x4944B8, 0x8
+	.asciz "GoldN"
+	.balign 4
 .global $$252786
 $$252786:
-	.incbin "baserom.dol", 0x4944C0, 0x8
+	.asciz "SilverN"
 .global $$252787
 $$252787:
-	.incbin "baserom.dol", 0x4944C8, 0x8
+	.asciz "BronzeN"

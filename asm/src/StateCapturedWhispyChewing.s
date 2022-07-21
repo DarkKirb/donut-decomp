@@ -114,4 +114,13 @@ procFixPos__Q53scn4step4hero8captured26StateCapturedWhispyChewingFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8captured26StateCapturedWhispyChewing
 __vt__Q53scn4step4hero8captured26StateCapturedWhispyChewing:
-	.incbin "baserom.dol", 0x488E20, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80384684
+	.4byte 0x80384724
+	.4byte 0x80384728
+	.4byte 0x8035550C
+	.4byte 0x8038472C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

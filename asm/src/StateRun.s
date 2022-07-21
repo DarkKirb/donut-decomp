@@ -563,20 +563,39 @@ __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8State
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9creditdee8StateRun
 __vt__Q53scn4step4boss9creditdee8StateRun:
-	.incbin "baserom.dol", 0x462CC0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024970C  ;# ptr
+	.4byte 0x80249710  ;# ptr
+	.4byte 0x80249738  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802497A4  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common8StateRun$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x488078, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80368BB8
+	.4byte 0x80368B9C
 .global __vt__Q53scn4step4hero6common8StateRun
 __vt__Q53scn4step4hero6common8StateRun:
-	.incbin "baserom.dol", 0x488088, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80368824
+	.4byte 0x803688D4
+	.4byte 0x80368AD4
+	.4byte 0x8035550C
+	.4byte 0x80368AD8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259126
 $$259126:
-	.incbin "baserom.dol", 0x49DBE0, 0x4
+	.4byte 0x3C23D70A
 .global $$259127
 $$259127:
-	.incbin "baserom.dol", 0x49DBE4, 0x4
+	.4byte 0

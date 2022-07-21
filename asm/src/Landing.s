@@ -133,7 +133,7 @@ lbl_80344C24:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252449
 $$252449:
-	.incbin "baserom.dol", 0x49D7A0, 0x4
+	.4byte 0
 .global $$252450
 $$252450:
-	.incbin "baserom.dol", 0x49D7A4, 0x4
+	.4byte 0x3DCCCCCD

@@ -58,7 +58,7 @@ __sinit_$$3MintLocation_cpp:
 /* 8019ADBC 00196BFC  4B F4 26 24 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023F8, 0x4
+	.4byte 0x8019ADB8  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj26$$2unnamed$$2MintLocation_cpp$$2

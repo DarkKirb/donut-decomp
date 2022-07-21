@@ -72,4 +72,5 @@ addPointStarCount__Q43scn4step4hero7CounterFUl:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_COUNT_MAX__Q43scn4step4hero21$$2unnamed$$2Counter_cpp$$2
 T_COUNT_MAX__Q43scn4step4hero21$$2unnamed$$2Counter_cpp$$2:
-	.incbin "baserom.dol", 0x49D6C8, 0x8
+	.4byte 0x000003E7
+	.4byte 0

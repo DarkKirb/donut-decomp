@@ -378,19 +378,23 @@ reset__Q24file10FDGManagerFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PREFIX_EXFLAG__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_PREFIX_EXFLAG__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
-	.incbin "baserom.dol", 0x410618, 0x10
+	.asciz ":EXFlag:"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249254
 $$249254:
-	.incbin "baserom.dol", 0x44F8E0, 0x10
+	.asciz "fdg/Archive.dat"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
-	.incbin "baserom.dol", 0x4930F0, 0x8
+	.4byte 0x804537E0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PREFIX_MSG__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_PREFIX_MSG__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
-	.incbin "baserom.dol", 0x49A190, 0x8
+	.asciz ":MSG:"
+	.balign 4

@@ -90,4 +90,11 @@ procFixPos__Q53scn4step4boss6common14StateMoveJointFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common14StateMoveJoint
 __vt__Q53scn4step4boss6common14StateMoveJoint:
-	.incbin "baserom.dol", 0x462590, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802476B0  ;# ptr
+	.4byte 0x802476B4  ;# ptr
+	.4byte 0x80247714  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024774C  ;# ptr
+	.4byte 0x80234504  ;# ptr

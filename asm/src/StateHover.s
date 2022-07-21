@@ -965,28 +965,53 @@ procFixPos__Q53scn4step4hero6damage10StateHoverFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common16StateShotAirBall$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common16StateShotAirBall$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x487DA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80364338
+	.4byte 0x80364318
 .global __vt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateHover$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateHover$$4PQ43scn4step4hero4Hero$$4b$$1:
-	.incbin "baserom.dol", 0x487DB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80364334
+	.4byte 0x803642F8
 .global __vt__Q53scn4step4hero6common10StateHover
 __vt__Q53scn4step4hero6common10StateHover:
-	.incbin "baserom.dol", 0x487DC0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80363BE0
+	.4byte 0x80363C90
+	.4byte 0x80363E70
+	.4byte 0x8035550C
+	.4byte 0x80364128
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6damage10StateHover
 __vt__Q53scn4step4hero6damage10StateHover:
-	.incbin "baserom.dol", 0x488808, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80377350
+	.4byte 0x803773EC
+	.4byte 0x8037748C
+	.4byte 0x8035550C
+	.4byte 0x803774F4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258766
 $$258766:
-	.incbin "baserom.dol", 0x49DB88, 0x4
+	.4byte 0x3E4CCCCD
 .global $$258788
 $$258788:
-	.incbin "baserom.dol", 0x49DB8C, 0x4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257465
 $$257465:
-	.incbin "baserom.dol", 0x49DE78, 0x8
+	.4byte 0x3A83126F
+	.4byte 0

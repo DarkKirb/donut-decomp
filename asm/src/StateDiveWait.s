@@ -153,4 +153,11 @@ __dt__Q53scn4step5enemy4como13StateDiveWaitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como13StateDiveWait
 __vt__Q53scn4step5enemy4como13StateDiveWait:
-	.incbin "baserom.dol", 0x471D20, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A82E8  ;# ptr
+	.4byte 0x802A814C  ;# ptr
+	.4byte 0x802A81EC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A81F0  ;# ptr
+	.4byte 0x802A81F4  ;# ptr

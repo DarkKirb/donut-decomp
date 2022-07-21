@@ -1047,15 +1047,25 @@ init__Q53scn4step4hero12interference14StateSpaceJumpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference14StateSpaceJump
 __vt__Q53scn4step4hero12interference14StateSpaceJump:
-	.incbin "baserom.dol", 0x488658, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80373A80
+	.4byte 0x80373C3C
+	.4byte 0x80373DB0
+	.4byte 0x8035550C
+	.4byte 0x80374280
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260789
 $$260789:
-	.incbin "baserom.dol", 0x49DD90, 0x4
+	.4byte 0
 .global $$260832
 $$260832:
-	.incbin "baserom.dol", 0x49DD94, 0x4
+	.4byte 0x3D75C28F
 .global $$260833
 $$260833:
-	.incbin "baserom.dol", 0x49DD98, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0

@@ -1647,77 +1647,140 @@ lbl_801D3020:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global SaveFiles__4nand
 SaveFiles__4nand:
-	.incbin "baserom.dol", 0x410ED0, 0xB8
+	.4byte 0
+	.4byte 0x0000F0A0
+	.4byte 0x8045D2B8
+	.4byte 0x00000001
+	.4byte 0x000007D8
+	.4byte 0x8045D2C4
+	.4byte 0x00000001
+	.4byte 0x00071C00
+	.4byte 0x8045D2D4
+	.4byte 0x00000001
+	.4byte 0x00071C00
+	.4byte 0x8045D2E0
+	.4byte 0x00000001
+	.4byte 0x00071C00
+	.4byte 0x8045D2EC
+	.4byte 0x00000002
+	.4byte 0x00002000
+	.4byte 0x8045D2F8
+	.4byte 0x00000002
+	.4byte 0x00002040
+	.4byte 0x8045D308
+	.4byte 0x00000002
+	.4byte 0x00002020
+	.4byte 0x8045D318
+	.4byte 0x00000002
+	.4byte 0x00008020
+	.4byte 0x8045D324
+	.4byte 0x00000002
+	.4byte 0x00004000
+	.4byte 0x8045D334
+	.4byte 0x00000002
+	.4byte 0x0000F788
+	.4byte 0x8045D340
+	.4byte 0x00000002
+	.4byte 0x00011788
+	.4byte 0x8045D350
+	.4byte 0x00000002
+	.4byte 0x00004260
+	.4byte 0x8045D360
+	.4byte 0x00000002
+	.4byte 0x0005FD20
+	.4byte 0x8045D370
+	.4byte 0x00000002
+	.4byte 0x00065D20
+	.4byte 0x8045D37C
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249991
 $$249991:
-	.incbin "baserom.dol", 0x4593B8, 0xC
+	.asciz "banner.bin"
+	.balign 4
 .global $$249992
 $$249992:
-	.incbin "baserom.dol", 0x4593C4, 0x10
+	.asciz "savedata.dat"
+	.balign 4
 .global $$249993
 $$249993:
-	.incbin "baserom.dol", 0x4593D4, 0xC
+	.asciz "ghost1.dat"
+	.balign 4
 .global $$249994
 $$249994:
-	.incbin "baserom.dol", 0x4593E0, 0xC
+	.asciz "ghost2.dat"
+	.balign 4
 .global $$249995
 $$249995:
-	.incbin "baserom.dol", 0x4593EC, 0xC
+	.asciz "ghost3.dat"
+	.balign 4
 .global $$249996
 $$249996:
-	.incbin "baserom.dol", 0x4593F8, 0x10
+	.asciz "GB_kby2_sdat"
+	.balign 4
 .global $$249997
 $$249997:
-	.incbin "baserom.dol", 0x459408, 0x10
+	.asciz "FC_yume_sdat"
+	.balign 4
 .global $$249998
 $$249998:
-	.incbin "baserom.dol", 0x459418, 0xC
+	.asciz "SF_sdx_sdat"
 .global $$249999
 $$249999:
-	.incbin "baserom.dol", 0x459424, 0x10
+	.asciz "SF_kby3_sdat"
+	.balign 4
 .global $$250000
 $$250000:
-	.incbin "baserom.dol", 0x459434, 0xC
+	.asciz "64_k64_sdat"
 .global $$250001
 $$250001:
-	.incbin "baserom.dol", 0x459440, 0x10
+	.asciz "GB_kby1_qdat"
+	.balign 4
 .global $$250002
 $$250002:
-	.incbin "baserom.dol", 0x459450, 0x10
+	.asciz "GB_kby2_qdat"
+	.balign 4
 .global $$250003
 $$250003:
-	.incbin "baserom.dol", 0x459460, 0x10
+	.asciz "FC_yume_qdat"
+	.balign 4
 .global $$250004
 $$250004:
-	.incbin "baserom.dol", 0x459470, 0xC
+	.asciz "SF_sdx_qdat"
 .global $$250005
 $$250005:
-	.incbin "baserom.dol", 0x45947C, 0x10
+	.asciz "SF_kby3_qdat"
+	.balign 4
 .global $$251580
 $$251580:
-	.incbin "baserom.dol", 0x45948C, 0x14
+	.asciz "nand/Banner.JP.bin"
+	.balign 4
 .global $$251581
 $$251581:
-	.incbin "baserom.dol", 0x4594A0, 0x14
+	.asciz "nand/Banner.US.bin"
+	.balign 4
 .global $$251582
 $$251582:
-	.incbin "baserom.dol", 0x4594B4, 0x14
+	.asciz "nand/Banner.EU.bin"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249989
 $$249989:
-	.incbin "baserom.dol", 0x493A18, 0x8
+	.asciz "/tmp"
+	.balign 4
 .global TMP_DIRECTORY__4nand
 TMP_DIRECTORY__4nand:
-	.incbin "baserom.dol", 0x493A20, 0x4
+	.4byte 0x80557638
 .global $$251560
 $$251560:
-	.incbin "baserom.dol", 0x493A24, 0x8
+	.asciz "Nand"
+	.balign 4
 .global $$251583
 $$251583:
-	.incbin "baserom.dol", 0x493A2C, 0x4
+	.4byte 0
 .global $$251705
 $$251705:
-	.incbin "baserom.dol", 0x493A30, 0x8
+	.asciz "%s/%s"
+	.balign 4

@@ -309,12 +309,21 @@ createWeapon__Q53scn4step4hero7fighter15StateDoubleKickFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter15StateDoubleKick
 __vt__Q53scn4step4hero7fighter15StateDoubleKick:
-	.incbin "baserom.dol", 0x48A488, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C710
+	.4byte 0x8039C78C
+	.4byte 0x8039C824
+	.4byte 0x8035550C
+	.4byte 0x8039C828
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257941
 $$257941:
-	.incbin "baserom.dol", 0x49E2E0, 0x4
+	.4byte 0x3F19999A
 .global $$257942
 $$257942:
-	.incbin "baserom.dol", 0x49E2E4, 0x4
+	.4byte 0

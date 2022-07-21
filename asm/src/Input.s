@@ -679,4 +679,6 @@ isRight__Q43scn9grandmenu4menu5InputCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251081
 $$251081:
-	.incbin "baserom.dol", 0x4919D0, 0x18
+	.asciz "bad_function_call"
+	.balign 4
+	.4byte 0

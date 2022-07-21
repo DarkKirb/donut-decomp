@@ -150,7 +150,65 @@ procFixPos__Q53scn4step5enemy6common12StateGoodbyeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256612
 $$256612:
-	.incbin "baserom.dol", 0x46F208, 0xD0
+	.4byte 0x80292928  ;# ptr
+	.4byte 0x802928F8  ;# ptr
+	.4byte 0x80292930  ;# ptr
+	.4byte 0x802928F0  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x80292938  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x80292900  ;# ptr
+	.4byte 0x80292920  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x80292918  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x80292910  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x8029293C  ;# ptr
+	.4byte 0x80292908  ;# ptr
 .global __vt__Q53scn4step5enemy6common12StateGoodbye
 __vt__Q53scn4step5enemy6common12StateGoodbye:
-	.incbin "baserom.dol", 0x46F2D8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80292984  ;# ptr
+	.4byte 0x80292988  ;# ptr
+	.4byte 0x802929AC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80292A00  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

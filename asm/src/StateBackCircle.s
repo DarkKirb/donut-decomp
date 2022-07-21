@@ -365,15 +365,23 @@ lbl_802F2B28:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy15zankibblecutter15StateBackCircle
 __vt__Q53scn4step5enemy15zankibblecutter15StateBackCircle:
-	.incbin "baserom.dol", 0x47AFD8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F26E0  ;# ptr
+	.4byte 0x802F26E4  ;# ptr
+	.4byte 0x802F26E8  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802F285C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256131
 $$256131:
-	.incbin "baserom.dol", 0x49D0D8, 0x4
+	.4byte 0
 .global $$256132
 $$256132:
-	.incbin "baserom.dol", 0x49D0DC, 0x4
+	.4byte 0xBF800000
 .global $$256133
 $$256133:
-	.incbin "baserom.dol", 0x49D0E0, 0x8
+	.4byte 0x3F800000
+	.4byte 0

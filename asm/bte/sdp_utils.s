@@ -1186,27 +1186,68 @@ lbl_800A1DE8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global sdp_base_uuid
 sdp_base_uuid:
-	.incbin "baserom.dol", 0x404350, 0x10
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x80000080
+	.4byte 0x5F9B34FB
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21109
 $$21109:
-	.incbin "baserom.dol", 0x43C038, 0x44
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A1170  ;# ptr
+	.4byte 0x800A1180  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A1194  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11A8  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11D0  ;# ptr
+	.4byte 0x800A11BC  ;# ptr
 .global $$21118
 $$21118:
-	.incbin "baserom.dol", 0x43C07C, 0x38
+	.asciz "SDP - sdpu_build_n_send_error  code: 0x%x  CID: 0x%x"
+	.balign 4
 .global $$21119
 $$21119:
-	.incbin "baserom.dol", 0x43C0B4, 0x1C
+	.asciz "SDP - no buf for err msg"
+	.balign 4
 .global $$21173
 $$21173:
-	.incbin "baserom.dol", 0x43C0D0, 0x20
+	.4byte 0x800A14E0  ;# ptr
+	.4byte 0x800A1470  ;# ptr
+	.4byte 0x800A1478  ;# ptr
+	.4byte 0x800A14E0  ;# ptr
+	.4byte 0x800A1480  ;# ptr
+	.4byte 0x800A1488  ;# ptr
+	.4byte 0x800A1494  ;# ptr
+	.4byte 0x800A14B0  ;# ptr
 .global $$21172
 $$21172:
-	.incbin "baserom.dol", 0x43C0F0, 0x14
+	.4byte 0x800A140C  ;# ptr
+	.4byte 0x800A139C  ;# ptr
+	.4byte 0x800A13A4  ;# ptr
+	.4byte 0x800A140C  ;# ptr
+	.4byte 0x800A13AC  ;# ptr
 .global lbl_80440004
 lbl_80440004:
-	.incbin "baserom.dol", 0x43C104, 0xC
+	.4byte 0x800A13B4  ;# ptr
+	.4byte 0x800A13C0  ;# ptr
+	.4byte 0x800A13DC  ;# ptr
 .global $$21221
 $$21221:
-	.incbin "baserom.dol", 0x43C110, 0x20
+	.4byte 0x800A191C  ;# ptr
+	.4byte 0x800A1928  ;# ptr
+	.4byte 0x800A1934  ;# ptr
+	.4byte 0x800A1940  ;# ptr
+	.4byte 0x800A194C  ;# ptr
+	.4byte 0x800A1958  ;# ptr
+	.4byte 0x800A1968  ;# ptr
+	.4byte 0x800A1988  ;# ptr

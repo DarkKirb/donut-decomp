@@ -197,4 +197,13 @@ procFixPos__Q53scn4step4hero5stone19StateFallScrewStartFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5stone19StateFallScrewStart
 __vt__Q53scn4step4hero5stone19StateFallScrewStart:
-	.incbin "baserom.dol", 0x489B60, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039088C
+	.4byte 0x80390900
+	.4byte 0x803909D8
+	.4byte 0x8035550C
+	.4byte 0x80390A58
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

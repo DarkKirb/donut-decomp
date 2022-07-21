@@ -1072,12 +1072,35 @@ $$24$$2__dt__Q23mem14HeapCompactionFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem14HeapCompaction
 __vt__Q23mem14HeapCompaction:
-	.incbin "baserom.dol", 0x455DB0, 0x4C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BD720  ;# ptr
+	.4byte 0x801BDC58  ;# ptr
+	.4byte 0x801BDC60  ;# ptr
+	.4byte 0x801BDC64  ;# ptr
+	.4byte 0x801BDCB4  ;# ptr
+	.4byte 0x801BDCB8  ;# ptr
+	.4byte 0x801BDCBC  ;# ptr
+	.4byte 0x801BDCC4  ;# ptr
+	.4byte 0x801BDCCC  ;# ptr
+	.4byte 0x801BDD44  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BE1F0  ;# ptr
+	.4byte 0x801BE1E8  ;# ptr
+	.4byte 0x801BE1E0  ;# ptr
+	.4byte 0x801BDD48  ;# ptr
+	.4byte 0x801BDD88  ;# ptr
 .global __vt__Q33mem14HeapCompaction22AllocFromTailAllocator
 __vt__Q33mem14HeapCompaction22AllocFromTailAllocator:
-	.incbin "baserom.dol", 0x455DFC, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BD6C4  ;# ptr
+	.4byte 0x801BE188  ;# ptr
+	.4byte 0x801BE1CC  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249358
 $$249358:
-	.incbin "baserom.dol", 0x493648, 0x8
+	.4byte 0x00000020
+	.4byte 0

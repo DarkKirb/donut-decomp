@@ -34,7 +34,7 @@ lbl_80016F54:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DDD8, 0x28
+	.asciz "MetroTRK - TRK_WriteUARTN returned %ld\n"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gPacketSeq

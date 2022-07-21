@@ -349,7 +349,7 @@ setScale__Q43scn4step4hero10NodeAttachFf:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256190
 $$256190:
-	.incbin "baserom.dol", 0x49D888, 0x4
+	.4byte 0x3F800000
 .global $$256194
 $$256194:
-	.incbin "baserom.dol", 0x49D88C, 0x4
+	.4byte 0

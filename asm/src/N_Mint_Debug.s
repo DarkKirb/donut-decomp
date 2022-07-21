@@ -434,53 +434,115 @@ N_Mint_Debug_StackDump__6mintvmFRQ26mintvm13MintFuncProxy:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250074
 $$250074:
-	.incbin "baserom.dol", 0x457E18, 0xC
+	.asciz "Assert Fail"
 .global $$250077
 $$250077:
-	.incbin "baserom.dol", 0x457E24, 0xC
+	.asciz "Test Fail!"
+	.balign 4
 .global $$250082
 $$250082:
-	.incbin "baserom.dol", 0x457E30, 0x14
+	.asciz "N_Mint_Debug.cpp"
+	.balign 4
 .global $$250083
 $$250083:
-	.incbin "baserom.dol", 0x457E44, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$250098
 $$250098:
-	.incbin "baserom.dol", 0x457E58, 0x20
+	.4byte 0x5B417373
+	.4byte 0x6572745F
+	.4byte 0x695D208A
+	.4byte 0xFA91D23A
+	.4byte 0x2025642C
+	.4byte 0x208EC08D
+	.4byte 0xDB3A2025
+	.4byte 0x640A0000
 .global $$250104
 $$250104:
-	.incbin "baserom.dol", 0x457E78, 0x20
+	.4byte 0x5B417373
+	.4byte 0x6572745F
+	.4byte 0x665D208A
+	.4byte 0xFA91D23A
+	.4byte 0x2025662C
+	.4byte 0x208EC08D
+	.4byte 0xDB3A2025
+	.4byte 0x660A0000
 .global $$250115
 $$250115:
-	.incbin "baserom.dol", 0x457E98, 0x40
+	.4byte 0x5B417373
+	.4byte 0x6572745F
+	.4byte 0x66745D20
+	.4byte 0x8AFA91D2
+	.4byte 0x3A202566
+	.4byte 0x2C208EC0
+	.4byte 0x8DDB3A20
+	.4byte 0x2566207C
+	.4byte 0x208CEB8D
+	.4byte 0xB73D2566
+	.4byte 0x2C208B96
+	.4byte 0x97658CEB
+	.4byte 0x8DB73D20
+	.asciz "+-%f\n"
+	.balign 4
+	.4byte 0
 .global $$250119
 $$250119:
-	.incbin "baserom.dol", 0x457ED8, 0x28
+	.4byte 0x5B546573
+	.4byte 0x745F695D
+	.4byte 0x208AFA91
+	.4byte 0xD23A2025
+	.4byte 0x642C208E
+	.4byte 0xC08DDB3A
+	.asciz " %d ... error!\n"
 .global $$250123
 $$250123:
-	.incbin "baserom.dol", 0x457F00, 0x28
+	.4byte 0x5B546573
+	.4byte 0x745F665D
+	.4byte 0x208AFA91
+	.4byte 0xD23A2025
+	.4byte 0x662C208E
+	.4byte 0xC08DDB3A
+	.asciz " %f ... error!\n"
 .global $$250131
 $$250131:
-	.incbin "baserom.dol", 0x457F28, 0x48
+	.4byte 0x5B546573
+	.4byte 0x745F6674
+	.4byte 0x5D208AFA
+	.4byte 0x91D23A20
+	.4byte 0x25662C20
+	.4byte 0x8EC08DDB
+	.4byte 0x3A202566
+	.4byte 0x207C208C
+	.4byte 0xEB8DB73D
+	.4byte 0x25662C20
+	.4byte 0x8B969765
+	.4byte 0x8CEB8DB7
+	.asciz "= +-%f ... error!\n"
+	.balign 4
+	.4byte 0
 .global $$250134
 $$250134:
-	.incbin "baserom.dol", 0x457F70, 0x10
+	.asciz "Dump(int) : %d\n"
 .global $$250137
 $$250137:
-	.incbin "baserom.dol", 0x457F80, 0x18
+	.asciz "Dump(float) : %f\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250075
 $$250075:
-	.incbin "baserom.dol", 0x493928, 0x4
+	.4byte 0
 .global $$250140
 $$250140:
-	.incbin "baserom.dol", 0x49392C, 0x4
+	.4byte 0x25730000
 .global $$250145
 $$250145:
-	.incbin "baserom.dol", 0x493930, 0x8
+	.4byte 0x25730A00
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250114
 $$250114:
-	.incbin "baserom.dol", 0x49A720, 0x8
+	.4byte 0
+	.4byte 0

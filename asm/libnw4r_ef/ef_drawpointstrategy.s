@@ -310,20 +310,27 @@ __dt__Q34nw4r2ef17DrawPointStrategyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef17DrawPointStrategy
 __vt__Q34nw4r2ef17DrawPointStrategy:
-	.incbin "baserom.dol", 0x43C580, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800C03C0  ;# ptr
+	.4byte 0x800BFFA0  ;# ptr
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$211451
 $$211451:
-	.incbin "baserom.dol", 0x492DB0, 0x8
+	.4byte 0x422A0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211644
 $$211644:
-	.incbin "baserom.dol", 0x4998E8, 0x4
+	.4byte 0
 .global $$211645
 $$211645:
-	.incbin "baserom.dol", 0x4998EC, 0x4
+	.4byte 0x34000000
 .global $$211646
 $$211646:
-	.incbin "baserom.dol", 0x4998F0, 0x8
+	.4byte 0x40C00000
+	.4byte 0

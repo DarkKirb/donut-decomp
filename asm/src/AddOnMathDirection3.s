@@ -963,114 +963,164 @@ Create__Q33hel4mint19AddOnMathDirection3FRCQ33hel4math7Vector3RCQ33hel4math7Vect
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254658
 $$254658:
-	.incbin "baserom.dol", 0x452B60, 0x14
+	.asciz "HEL.Math.Direction3"
 .global $$254662
 $$254662:
-	.incbin "baserom.dol", 0x452B74, 0x5C
+	.asciz "void this(const ref HEL.Math.Vector3,const ref HEL.Math.Vector3,const ref HEL.Math.Vector3)"
 .global $$254663
 $$254663:
-	.incbin "baserom.dol", 0x452BD0, 0x18
+	.asciz "void restructFrontUp()"
+	.balign 4
 .global $$254664
 $$254664:
-	.incbin "baserom.dol", 0x452BE8, 0x1C
+	.asciz "void restructFrontLeft()"
+	.balign 4
 .global $$254665
 $$254665:
-	.incbin "baserom.dol", 0x452C04, 0x18
+	.asciz "void restructUpFront()"
+	.balign 4
 .global $$254666
 $$254666:
-	.incbin "baserom.dol", 0x452C1C, 0x18
+	.asciz "void restructUpLeft()"
+	.balign 4
 .global $$254667
 $$254667:
-	.incbin "baserom.dol", 0x452C34, 0x1C
+	.asciz "void restructLeftFront()"
+	.balign 4
 .global $$254668
 $$254668:
-	.incbin "baserom.dol", 0x452C50, 0x18
+	.asciz "void restructLeftUp()"
+	.balign 4
 .global $$254669
 $$254669:
-	.incbin "baserom.dol", 0x452C68, 0x10
+	.asciz "void LoadLeft()"
 .global $$254670
 $$254670:
-	.incbin "baserom.dol", 0x452C78, 0x10
+	.asciz "void LoadUp()"
+	.balign 4
 .global $$254671
 $$254671:
-	.incbin "baserom.dol", 0x452C88, 0x14
+	.asciz "void LoadFront()"
+	.balign 4
 .global $$254672
 $$254672:
-	.incbin "baserom.dol", 0x452C9C, 0x14
+	.asciz "void StoreLeft()"
+	.balign 4
 .global $$254673
 $$254673:
-	.incbin "baserom.dol", 0x452CB0, 0x10
+	.asciz "void StoreUp()"
+	.balign 4
 .global $$254674
 $$254674:
-	.incbin "baserom.dol", 0x452CC0, 0x18
+	.asciz "void StoreFront()"
+	.balign 4
+	.4byte 0
 .global $$254675
 $$254675:
-	.incbin "baserom.dol", 0x452CD8, 0x10
+	.asciz "void SetBasis()"
 .global $$254676
 $$254676:
-	.incbin "baserom.dol", 0x452CE8, 0x18
+	.asciz "void SetFrontToRight()"
+	.balign 4
 .global $$254677
 $$254677:
-	.incbin "baserom.dol", 0x452D00, 0x18
+	.asciz "void SetFrontToLeft()"
+	.balign 4
 .global $$254678
 $$254678:
-	.incbin "baserom.dol", 0x452D18, 0x18
+	.asciz "void RestructFrontUp()"
+	.balign 4
 .global $$254679
 $$254679:
-	.incbin "baserom.dol", 0x452D30, 0x1C
+	.asciz "void RestructFrontLeft()"
+	.balign 4
 .global $$254680
 $$254680:
-	.incbin "baserom.dol", 0x452D4C, 0x18
+	.asciz "void RestructUpFront()"
+	.balign 4
 .global $$254681
 $$254681:
-	.incbin "baserom.dol", 0x452D64, 0x18
+	.asciz "void RestructUpLeft()"
+	.balign 4
 .global $$254682
 $$254682:
-	.incbin "baserom.dol", 0x452D7C, 0x1C
+	.asciz "void RestructLeftFront()"
+	.balign 4
 .global $$254683
 $$254683:
-	.incbin "baserom.dol", 0x452D98, 0x18
+	.asciz "void RestructLeftUp()"
+	.balign 4
 .global $$254684
 $$254684:
-	.incbin "baserom.dol", 0x452DB0, 0x1C
+	.asciz "HEL.Math.Direction3 Get()"
+	.balign 4
 .global $$254685
 $$254685:
-	.incbin "baserom.dol", 0x452DCC, 0x20
+	.asciz "void Set(HEL.Math.Direction3)"
+	.balign 4
 .global $$254686
 $$254686:
-	.incbin "baserom.dol", 0x452DEC, 0x1C
+	.asciz "HEL.Math.Direction3 Basis()"
 .global $$254687
 $$254687:
-	.incbin "baserom.dol", 0x452E08, 0x70
+	.asciz "HEL.Math.Direction3 Create(const ref HEL.Math.Vector3,const ref HEL.Math.Vector3,const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$254769
 $$254769:
-	.incbin "baserom.dol", 0x452E78, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A1468  ;# ptr
 .global $$254815
 $$254815:
-	.incbin "baserom.dol", 0x452E84, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A155C  ;# ptr
 .global $$254827
 $$254827:
-	.incbin "baserom.dol", 0x452E90, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A15F4  ;# ptr
 .global $$254840
 $$254840:
-	.incbin "baserom.dol", 0x452E9C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A168C  ;# ptr
 .global $$254854
 $$254854:
-	.incbin "baserom.dol", 0x452EA8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A1724  ;# ptr
 .global $$254863
 $$254863:
-	.incbin "baserom.dol", 0x452EB4, 0x84
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A17BC  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254659
 $$254659:
-	.incbin "baserom.dol", 0x493268, 0x8
+	.asciz "left"
+	.balign 4
 .global $$254660
 $$254660:
-	.incbin "baserom.dol", 0x493270, 0x4
+	.4byte 0x75700000
 .global $$254661
 $$254661:
-	.incbin "baserom.dol", 0x493274, 0xC
+	.asciz "front"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2t_obj__Q33hel4mint33$$2unnamed$$2AddOnMathDirection3_cpp$$2Fv$$2obj

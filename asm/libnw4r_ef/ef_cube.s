@@ -1949,42 +1949,47 @@ lbl_800B8904:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef15EmitterFormCube
 __vt__Q34nw4r2ef15EmitterFormCube:
-	.incbin "baserom.dol", 0x43C4D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800B7100  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28286
 $$28286:
-	.incbin "baserom.dol", 0x4997F0, 0x4
+	.4byte 0x00800000
 .global $$28287
 $$28287:
-	.incbin "baserom.dol", 0x4997F4, 0x4
+	.4byte 0x47800000
 .global $$28288
 $$28288:
-	.incbin "baserom.dol", 0x4997F8, 0x4
+	.4byte 0x40000000
 .global $$28289
 $$28289:
-	.incbin "baserom.dol", 0x4997FC, 0x4
+	.4byte 0x3F800000
 .global $$28290
 $$28290:
-	.incbin "baserom.dol", 0x499800, 0x4
+	.4byte 0
 .global $$28291
 $$28291:
-	.incbin "baserom.dol", 0x499804, 0x4
+	.4byte 0x3C23D70A
 .global $$28300
 $$28300:
-	.incbin "baserom.dol", 0x499808, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$28301
 $$28301:
-	.incbin "baserom.dol", 0x499810, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$29190
 $$29190:
-	.incbin "baserom.dol", 0x499818, 0x4
+	.4byte 0x3727C5AC
 .global $$29191
 $$29191:
-	.incbin "baserom.dol", 0x49981C, 0x4
+	.4byte 0x40490FDB
 .global $$29192
 $$29192:
-	.incbin "baserom.dol", 0x499820, 0x4
+	.4byte 0x34C90FDB
 .global $$29193
 $$29193:
-	.incbin "baserom.dol", 0x499824, 0x4
+	.4byte 0xBF800000

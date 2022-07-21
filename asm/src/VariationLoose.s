@@ -648,23 +648,45 @@ lbl_80304BF4:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SPACEJUMP_FRAME__Q53scn4step7gimmick10cameralock28$$2unnamed$$2VariationLoose_cpp$$2
 T_SPACEJUMP_FRAME__Q53scn4step7gimmick10cameralock28$$2unnamed$$2VariationLoose_cpp$$2:
-	.incbin "baserom.dol", 0x415A68, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick10cameralock14VariationLoose
 __vt__Q53scn4step7gimmick10cameralock14VariationLoose:
-	.incbin "baserom.dol", 0x47C4E0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8030444C
+	.4byte 0x8030462C
+	.4byte 0x80304960
+	.4byte 0x80304964
+	.4byte 0x80304968
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255250
 $$255250:
-	.incbin "baserom.dol", 0x49D278, 0x4
+	.4byte 0x3F000000
 .global $$255258
 $$255258:
-	.incbin "baserom.dol", 0x49D27C, 0x4
+	.4byte 0
 .global $$255274
 $$255274:
-	.incbin "baserom.dol", 0x49D280, 0x4
+	.4byte 0x3CCCCCCD
 .global $$255326
 $$255326:
-	.incbin "baserom.dol", 0x49D284, 0x4
+	.4byte 0x3DCCCCCD

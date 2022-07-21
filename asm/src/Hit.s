@@ -710,4 +710,7 @@ sortResult__Q25ocoll3HitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q25ocoll3Hit
 __vt__Q25ocoll3Hit:
-	.incbin "baserom.dol", 0x4594D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x801D6230  ;# ptr
+	.4byte 0

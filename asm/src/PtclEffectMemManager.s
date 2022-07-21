@@ -1163,37 +1163,74 @@ AssignObjectID__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1FPv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef13MemoryManager
 __vt__Q34nw4r2ef13MemoryManager:
-	.incbin "baserom.dol", 0x44F6E8, 0x68
+	.4byte 0
+	.4byte 0
+	.4byte 0x80185DD0  ;# ptr
+	.4byte 0x80184EBC  ;# ptr
+	.4byte 0x80186588  ;# ptr
+	.4byte 0x80186538  ;# ptr
+	.4byte 0x801864E0  ;# ptr
+	.4byte 0x80185294  ;# ptr
+	.4byte 0x80185304  ;# ptr
+	.4byte 0x8018644C  ;# ptr
+	.4byte 0x801863FC  ;# ptr
+	.4byte 0x801863A4  ;# ptr
+	.4byte 0x801852B0  ;# ptr
+	.4byte 0x80185320  ;# ptr
+	.4byte 0x80186310  ;# ptr
+	.4byte 0x801862C0  ;# ptr
+	.4byte 0x80186268  ;# ptr
+	.4byte 0x801852CC  ;# ptr
+	.4byte 0x8018533C  ;# ptr
+	.4byte 0x801861C8  ;# ptr
+	.4byte 0x80186178  ;# ptr
+	.4byte 0x80186120  ;# ptr
+	.4byte 0x801852E8  ;# ptr
+	.4byte 0x80185358  ;# ptr
+	.4byte 0x80185C38  ;# ptr
+	.4byte 0x80185F48  ;# ptr
 .global __vt__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1
 __vt__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1:
-	.incbin "baserom.dol", 0x44F750, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x80186258  ;# ptr
 .global __vt__Q34nw4r2ef45MemoryManagerTmp$$0Q34nw4r2ef15ParticleManager$$1
 __vt__Q34nw4r2ef45MemoryManagerTmp$$0Q34nw4r2ef15ParticleManager$$1:
-	.incbin "baserom.dol", 0x44F75C, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801863A0  ;# ptr
 .global __vt__Q34nw4r2ef36MemoryManagerTmp$$0Q34nw4r2ef7Emitter$$1
 __vt__Q34nw4r2ef36MemoryManagerTmp$$0Q34nw4r2ef7Emitter$$1:
-	.incbin "baserom.dol", 0x44F768, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801864DC  ;# ptr
 .global __vt__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1
 __vt__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1:
-	.incbin "baserom.dol", 0x44F774, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x80186618  ;# ptr
 .global $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$22
 $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$22:
-	.incbin "baserom.dol", 0x44F780, 0x90
+	.asciz "NW4R:Failed assertion mHeapStartAddr < mHeapEndAddr && reinterpret_cast<u8*>(mHeapEndAddr) - reinterpret_cast<u8*>(mHeapStartAddr) > headerSize"
 .global $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$21
 $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$21:
-	.incbin "baserom.dol", 0x44F810, 0x14
+	.asciz "memorymanagertmp.h"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$20
 $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii$$20:
-	.incbin "baserom.dol", 0x44F824, 0x50
+	.asciz "NW4R:Alignment Error(0x%x)\nstartAddress must be aligned to 32 bytes boundary."
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii
 $$2STRING$$2__ct__Q34nw4r2ef13MemoryManagerFPvUliiii:
-	.incbin "baserom.dol", 0x44F874, 0x14
+	.asciz "memorymanagertmp.h"
+	.balign 4
 .global $$2STRING$$2AllocHeap__Q34nw4r2ef13MemoryManagerFUl$$20
 $$2STRING$$2AllocHeap__Q34nw4r2ef13MemoryManagerFUl$$20:
-	.incbin "baserom.dol", 0x44F888, 0x1C
+	.asciz "NW4R:Failed assertion false"
 .global $$2STRING$$2AllocHeap__Q34nw4r2ef13MemoryManagerFUl
 $$2STRING$$2AllocHeap__Q34nw4r2ef13MemoryManagerFUl:
-	.incbin "baserom.dol", 0x44F8A4, 0x14
+	.asciz "memorymanagertmp.h"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global isExist___Q33hel6common56PrivateSingleton$$0Q36effect6detail20PtclEffectMemManager$$1

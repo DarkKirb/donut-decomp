@@ -69,9 +69,17 @@ __dt__Q53scn4step5enemy8dubiorjr9BrainMainFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8dubiorjr9BrainMain
 __vt__Q53scn4step5enemy8dubiorjr9BrainMain:
-	.incbin "baserom.dol", 0x472290, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ADFB4  ;# ptr
+	.4byte 0x802ADF24  ;# ptr
+	.4byte 0x802ADFB0  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254871
 $$254871:
-	.incbin "baserom.dol", 0x49C2E8, 0x8
+	.4byte 0
+	.4byte 0

@@ -375,7 +375,12 @@ lbl_80009730:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global fix_pool_sizes
 fix_pool_sizes:
-	.incbin "baserom.dol", 0x402770, 0x18
+	.4byte 0x00000004
+	.4byte 0x0000000C
+	.4byte 0x00000014
+	.4byte 0x00000024
+	.4byte 0x00000034
+	.4byte 0x00000044
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2get_malloc_pool__Fv$$2protopool

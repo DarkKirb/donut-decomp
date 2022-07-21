@@ -238,22 +238,33 @@ lbl_8021B600:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252314
 $$252314:
-	.incbin "baserom.dol", 0x45F618, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$252315
 $$252315:
-	.incbin "baserom.dol", 0x45F628, 0xC
+	.asciz "NumberBase"
+	.balign 4
 .global $$252316
 $$252316:
-	.incbin "baserom.dol", 0x45F634, 0xC
+	.asciz "Number%dN1"
+	.balign 4
 .global $$252317
 $$252317:
-	.incbin "baserom.dol", 0x45F640, 0xC
+	.asciz "Number%dN2"
+	.balign 4
 .global $$252318
 $$252318:
-	.incbin "baserom.dol", 0x45F64C, 0xC
+	.asciz "Number%dN3"
+	.balign 4
 .global $$252319
 $$252319:
-	.incbin "baserom.dol", 0x45F658, 0xC
+	.asciz "Number%dN4"
+	.balign 4
 .global $$252392
 $$252392:
-	.incbin "baserom.dol", 0x45F664, 0x3C
+	.asciz "Number%d"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4

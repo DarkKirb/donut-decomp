@@ -395,102 +395,166 @@ playChoice__Q43scn7history6detail6CursorFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251586
 $$251586:
-	.incbin "baserom.dol", 0x4115C8, 0x28
+	.4byte 0x80557A28
+	.4byte 0x80557A30
+	.4byte 0x80557A38
+	.4byte 0x80557A40
+	.4byte 0x8045DF4C
+	.4byte 0x8045DF4C
+	.4byte 0x80557A48
+	.4byte 0x80557A50
+	.4byte 0x80557A58
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251991
 $$251991:
-	.incbin "baserom.dol", 0x45A030, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$251582
 $$251582:
-	.incbin "baserom.dol", 0x45A04C, 0xC
+	.asciz "PlatinaN"
+	.balign 4
 .global __vt__Q33scn19challengefileselect6Cursor
 __vt__Q33scn19challengefileselect6Cursor:
-	.incbin "baserom.dol", 0x45A058, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E3004  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251547
 $$251547:
-	.incbin "baserom.dol", 0x45D9A0, 0x10
+	.asciz "PackageCursorN"
+	.balign 4
 .global $$251548
 $$251548:
-	.incbin "baserom.dol", 0x45D9B0, 0x10
+	.asciz "MovieCursorN"
+	.balign 4
 .global $$251549
 $$251549:
-	.incbin "baserom.dol", 0x45D9C0, 0xC
+	.asciz "PlayCursorN"
 .global $$251550
 $$251550:
-	.incbin "baserom.dol", 0x45D9CC, 0x10
+	.asciz "SelectButtonN"
+	.balign 4
 .global $$251551
 $$251551:
-	.incbin "baserom.dol", 0x45D9DC, 0x14
+	.asciz "AnimePlayButtonN"
+	.balign 4
 .global $$251552
 $$251552:
-	.incbin "baserom.dol", 0x45D9F0, 0x10
+	.asciz "TitleButtonN"
+	.balign 4
 .global $$251553
 $$251553:
-	.incbin "baserom.dol", 0x45DA00, 0x10
+	.asciz "TitleButtonSN"
+	.balign 4
 .global $$251554
 $$251554:
-	.incbin "baserom.dol", 0x45DA10, 0x10
+	.asciz "CheckButtonN"
+	.balign 4
 .global $$251555
 $$251555:
-	.incbin "baserom.dol", 0x45DA20, 0xC
+	.asciz "ListButtonN"
 .global PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 PANES__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.incbin "baserom.dol", 0x45DA2C, 0x2C
+	.4byte 0x804618A0
+	.4byte 0x804618B0
+	.4byte 0x804618C0
+	.4byte 0x804618CC
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x804618F0
+	.4byte 0x80461900
+	.4byte 0x80461910
+	.4byte 0x80461920
 .global TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_2__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.incbin "baserom.dol", 0x45DA58, 0x2C
+	.4byte 0x804618A0
+	.4byte 0x80461920
+	.4byte 0x804618B0
+	.4byte 0x804618C0
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x80461920
+	.4byte 0x804618F0
+	.4byte 0x804618F0
+	.4byte 0x804618F0
 .global TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2
 TABLE_3__Q43scn7history6detail20$$2unnamed$$2Cursor_cpp$$2:
-	.incbin "baserom.dol", 0x45DA84, 0x2C
+	.4byte 0x804618A0
+	.4byte 0x80461920
+	.4byte 0x804618B0
+	.4byte 0x804618C0
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x804618DC
+	.4byte 0x80461920
+	.4byte 0x80461900
+	.4byte 0x80461900
+	.4byte 0x80461900
 .global $$252454
 $$252454:
-	.incbin "baserom.dol", 0x45DAB0, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$252455
 $$252455:
-	.incbin "baserom.dol", 0x45DAC0, 0x48
+	.asciz "ProductButtonCursor"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251992
 $$251992:
-	.incbin "baserom.dol", 0x493DF8, 0x8
+	.asciz "Cursor"
+	.balign 4
 .global $$251993
 $$251993:
-	.incbin "baserom.dol", 0x493E00, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$251578
 $$251578:
-	.incbin "baserom.dol", 0x493E08, 0x8
+	.asciz "NormalN"
 .global $$251579
 $$251579:
-	.incbin "baserom.dol", 0x493E10, 0x8
+	.asciz "BronzeN"
 .global $$251580
 $$251580:
-	.incbin "baserom.dol", 0x493E18, 0x8
+	.asciz "SilverN"
 .global $$251581
 $$251581:
-	.incbin "baserom.dol", 0x493E20, 0x8
+	.asciz "GoldN"
+	.balign 4
 .global $$251583
 $$251583:
-	.incbin "baserom.dol", 0x493E28, 0x8
+	.asciz "DeleteN"
 .global $$251584
 $$251584:
-	.incbin "baserom.dol", 0x493E30, 0x8
+	.asciz "RumbleN"
 .global $$251585
 $$251585:
-	.incbin "baserom.dol", 0x493E38, 0x8
+	.asciz "EndingN"
 .global $$252034
 $$252034:
-	.incbin "baserom.dol", 0x493E40, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252044
 $$252044:
-	.incbin "baserom.dol", 0x493E48, 0x8
+	.asciz "Decide"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252551
 $$252551:
-	.incbin "baserom.dol", 0x494AC0, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$252560
 $$252560:
-	.incbin "baserom.dol", 0x494AC8, 0x8
+	.asciz "Choice"
+	.balign 4

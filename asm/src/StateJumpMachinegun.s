@@ -405,24 +405,33 @@ reqMachinegun__Q53scn4step4boss8kingsdoo19StateJumpMachinegunFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss8kingsdoo19StateJumpMachinegun
 __vt__Q53scn4step4boss8kingsdoo19StateJumpMachinegun:
-	.incbin "baserom.dol", 0x464898, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80254374  ;# ptr
+	.4byte 0x802543F4  ;# ptr
+	.4byte 0x802544F4  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80254610  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256540
 $$256540:
-	.incbin "baserom.dol", 0x49B3D0, 0x4
+	.4byte 0
 .global $$256569
 $$256569:
-	.incbin "baserom.dol", 0x49B3D4, 0x4
+	.4byte 0x3F800000
 .global $$256570
 $$256570:
-	.incbin "baserom.dol", 0x49B3D8, 0x8
+	.4byte 0x43340000
+	.4byte 0
 .global $$256573
 $$256573:
-	.incbin "baserom.dol", 0x49B3E0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256579
 $$256579:
-	.incbin "baserom.dol", 0x49B3E8, 0x4
+	.4byte 0x3C8EFA35
 .global $$256596
 $$256596:
-	.incbin "baserom.dol", 0x49B3EC, 0x4
+	.4byte 0xBF800000

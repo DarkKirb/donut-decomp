@@ -221,4 +221,9 @@ lbl_801BD1F0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q35mcoll6detail12StdResponder
 __vt__Q35mcoll6detail12StdResponder:
-	.incbin "baserom.dol", 0x455D98, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x801B1574  ;# ptr
+	.4byte 0x801BCFB4  ;# ptr
+	.4byte 0x801BD080  ;# ptr
+	.4byte 0x801BD0AC  ;# ptr

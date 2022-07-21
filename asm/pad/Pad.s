@@ -1754,36 +1754,40 @@ lbl_80053DD0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x434630, 0x48
+	.asciz "<< RVL_SDK - PAD \trelease build: Aug 23 2010 17:33:17 (0x4302_145) >>"
+	.balign 4
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.incbin "baserom.dol", 0x434678, 0x10
+	.4byte 0x80053C60  ;# ptr
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __PADVersion
 __PADVersion:
-	.incbin "baserom.dol", 0x492BA0, 0x4
+	.4byte 0x80438530
 .global ResettingChan
 ResettingChan:
-	.incbin "baserom.dol", 0x492BA4, 0x4
+	.4byte 0x00000020
 .global XPatchBits
 XPatchBits:
-	.incbin "baserom.dol", 0x492BA8, 0x4
+	.4byte 0xF0000000
 .global AnalogMode
 AnalogMode:
-	.incbin "baserom.dol", 0x492BAC, 0x4
+	.4byte 0x00000300
 .global Spec
 Spec:
-	.incbin "baserom.dol", 0x492BB0, 0x4
+	.4byte 0x00000005
 .global MakeStatus
 MakeStatus:
-	.incbin "baserom.dol", 0x492BB4, 0x4
+	.4byte 0x80053850  ;# ptr
 .global CmdReadOrigin
 CmdReadOrigin:
-	.incbin "baserom.dol", 0x492BB8, 0x4
+	.4byte 0x41000000
 .global CmdCalibrate
 CmdCalibrate:
-	.incbin "baserom.dol", 0x492BBC, 0x4
+	.4byte 0x42000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global Origin

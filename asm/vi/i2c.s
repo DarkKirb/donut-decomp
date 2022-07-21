@@ -641,7 +641,8 @@ lbl_8002ED8C:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __i2c_ident_flag
 __i2c_ident_flag:
-	.incbin "baserom.dol", 0x492928, 0x8
+	.4byte 0x00000001
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __i2c_ident_first

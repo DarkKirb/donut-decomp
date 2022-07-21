@@ -592,14 +592,17 @@ set__Q53scn4step4info9challenge5ScoreFi:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252015
 $$252015:
-	.incbin "baserom.dol", 0x48C8F8, 0x18
+	.asciz "step/challenge/Main"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249451
 $$249451:
-	.incbin "baserom.dol", 0x495818, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252016
 $$252016:
-	.incbin "baserom.dol", 0x497C80, 0x8
+	.asciz "Score"
+	.balign 4

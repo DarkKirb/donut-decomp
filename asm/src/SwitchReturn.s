@@ -164,9 +164,19 @@ onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8switch_n12SwitchReturn
 __vt__Q53scn4step7gimmick8switch_n12SwitchReturn:
-	.incbin "baserom.dol", 0x47E650, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80328368
+	.4byte 0x8032836C
+	.4byte 0x80328370
+	.4byte 0x80328468
+	.4byte 0x8032849C
+	.4byte 0x803284D0
+	.4byte 0x803284D4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252608
 $$252608:
-	.incbin "baserom.dol", 0x496D60, 0x8
+	.asciz "Return"
+	.balign 4

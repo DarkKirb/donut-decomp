@@ -68,7 +68,7 @@ __sinit_$$3MintBGMController_cpp:
 /* 80277638 00273478  4B E6 5D A8 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4024B4, 0x4
+	.4byte 0x80277634  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step4core31$$2unnamed$$2MintBGMController_cpp$$2

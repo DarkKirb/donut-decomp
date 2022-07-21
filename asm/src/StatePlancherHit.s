@@ -332,9 +332,19 @@ lbl_80368164:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common16StatePlancherHit
 __vt__Q53scn4step4hero6common16StatePlancherHit:
-	.incbin "baserom.dol", 0x488008, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80367DA4
+	.4byte 0x80367E20
+	.4byte 0x80367FF0
+	.4byte 0x8035550C
+	.4byte 0x8036812C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256509
 $$256509:
-	.incbin "baserom.dol", 0x49DBD0, 0x8
+	.4byte 0
+	.4byte 0

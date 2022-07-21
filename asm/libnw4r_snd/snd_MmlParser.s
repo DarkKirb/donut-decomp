@@ -1271,44 +1271,176 @@ lbl_8010B060:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$210410
 $$210410:
-	.incbin "baserom.dol", 0x43E210, 0x28
+	.asciz "#%08x[%d]: printvar %sVAR_%d(%d) = %d\n"
+	.balign 4
 .global $$210414
 $$210414:
-	.incbin "baserom.dol", 0x43E238, 0x1F8
+	.4byte 0x8010A5B8  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AA28  ;# ptr
+	.4byte 0x8010AA68  ;# ptr
+	.4byte 0x8010AA78  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010A5B0  ;# ptr
+	.4byte 0x8010A83C  ;# ptr
+	.4byte 0x8010A8B0  ;# ptr
+	.4byte 0x8010A634  ;# ptr
+	.4byte 0x8010A930  ;# ptr
+	.4byte 0x8010A938  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010A6AC  ;# ptr
+	.4byte 0x8010A5E0  ;# ptr
+	.4byte 0x8010A63C  ;# ptr
+	.4byte 0x8010A644  ;# ptr
+	.4byte 0x8010A64C  ;# ptr
+	.4byte 0x8010A6A4  ;# ptr
+	.4byte 0x8010A76C  ;# ptr
+	.4byte 0x8010A774  ;# ptr
+	.4byte 0x8010A888  ;# ptr
+	.4byte 0x8010A8DC  ;# ptr
+	.4byte 0x8010A790  ;# ptr
+	.4byte 0x8010A7B4  ;# ptr
+	.4byte 0x8010A7D8  ;# ptr
+	.4byte 0x8010A7E0  ;# ptr
+	.4byte 0x8010A8F4  ;# ptr
+	.4byte 0x8010A788  ;# ptr
+	.4byte 0x8010A81C  ;# ptr
+	.4byte 0x8010A824  ;# ptr
+	.4byte 0x8010A82C  ;# ptr
+	.4byte 0x8010A834  ;# ptr
+	.4byte 0x8010AB08  ;# ptr
+	.4byte 0x8010A62C  ;# ptr
+	.4byte 0x8010A97C  ;# ptr
+	.4byte 0x8010A714  ;# ptr
+	.4byte 0x8010A908  ;# ptr
+	.4byte 0x8010A95C  ;# ptr
+	.4byte 0x8010A964  ;# ptr
+	.4byte 0x8010A974  ;# ptr
+	.4byte 0x8010A708  ;# ptr
+	.4byte 0x8010A5D0  ;# ptr
+	.4byte 0x8010A96C  ;# ptr
+	.4byte 0x8010A864  ;# ptr
+	.4byte 0x8010A7E8  ;# ptr
+	.4byte 0x8010A590  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010A7F8  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010AE94  ;# ptr
+	.4byte 0x8010A848  ;# ptr
+	.4byte 0x8010AB40  ;# ptr
+	.4byte 0x8010AAB8  ;# ptr
+	.4byte 0
 .global __vt__Q44nw4r3snd6detail9MmlParser
 __vt__Q44nw4r3snd6detail9MmlParser:
-	.incbin "baserom.dol", 0x43E430, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010A530  ;# ptr
+	.4byte 0x8010AEB0  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$210407
 $$210407:
-	.incbin "baserom.dol", 0x492E38, 0x4
+	.4byte 0x54000000
 .global $$210408
 $$210408:
-	.incbin "baserom.dol", 0x492E3C, 0x4
+	.4byte 0x47000000
 .global $$210409
 $$210409:
-	.incbin "baserom.dol", 0x492E40, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210403
 $$210403:
-	.incbin "baserom.dol", 0x499E98, 0x4
+	.4byte 0x3C000000
 .global $$210404
 $$210404:
-	.incbin "baserom.dol", 0x499E9C, 0x4
+	.4byte 0x3EC80000
 .global $$210405
 $$210405:
-	.incbin "baserom.dol", 0x499EA0, 0x4
+	.4byte 0x3C800000
 .global $$210406
 $$210406:
-	.incbin "baserom.dol", 0x499EA4, 0x4
+	.4byte 0x42FE0000
 .global $$210415
 $$210415:
-	.incbin "baserom.dol", 0x499EA8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$210416
 $$210416:
-	.incbin "baserom.dol", 0x499EB0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mPrintVarEnabledFlag__Q44nw4r3snd6detail9MmlParser

@@ -489,25 +489,27 @@ lbl_800A4D04:
 /* 800A4D4C 000A0B8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402368, 0x4
+	.4byte 0x800A4C20  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$27903
 $$27903:
-	.incbin "baserom.dol", 0x43C198, 0x48
+	.asciz "<< NW4R    - EF \tfinal   build: Mar  1 2011 13:31:37 (0x4302_188) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2
 NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2:
-	.incbin "baserom.dol", 0x492D38, 0x8
+	.4byte 0x80440098
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28588
 $$28588:
-	.incbin "baserom.dol", 0x4994B8, 0x4
+	.4byte 0
 .global $$28613
 $$28613:
-	.incbin "baserom.dol", 0x4994BC, 0x4
+	.4byte 0x3F800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mSortEffectOperatorZDrawInfo__Q34nw4r2ef12EffectSystem

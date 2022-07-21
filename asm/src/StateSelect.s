@@ -951,4 +951,7 @@ lbl_8035E29C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8inactive11StateSelect
 __vt__Q53scn4step4hero8inactive11StateSelect:
-	.incbin "baserom.dol", 0x487A68, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8035D6AC
+	.4byte 0x8035D72C

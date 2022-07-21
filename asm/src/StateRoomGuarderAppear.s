@@ -224,18 +224,27 @@ procMove__Q53scn4step5enemy6common22StateRoomGuarderAppearFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common22StateRoomGuarderAppear
 __vt__Q53scn4step5enemy6common22StateRoomGuarderAppear:
-	.incbin "baserom.dol", 0x46F398, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802940E4  ;# ptr
+	.4byte 0x80294194  ;# ptr
+	.4byte 0x80294334  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256208
 $$256208:
-	.incbin "baserom.dol", 0x49BBF0, 0x4
+	.4byte 0x43B40000
 .global $$256209
 $$256209:
-	.incbin "baserom.dol", 0x49BBF4, 0x4
+	.4byte 0x42B40000
 .global $$256210
 $$256210:
-	.incbin "baserom.dol", 0x49BBF8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$256213
 $$256213:
-	.incbin "baserom.dol", 0x49BC00, 0x8
+	.4byte 0x43300000
+	.4byte 0

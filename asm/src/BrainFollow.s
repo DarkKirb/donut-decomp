@@ -87,4 +87,11 @@ __dt__Q53scn4step5enemy6juckle11BrainFollowFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6juckle11BrainFollow
 __vt__Q53scn4step5enemy6juckle11BrainFollow:
-	.incbin "baserom.dol", 0x473C88, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BB26C  ;# ptr
+	.4byte 0x802BB1A8  ;# ptr
+	.4byte 0x802BB268  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

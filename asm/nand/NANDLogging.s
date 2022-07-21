@@ -442,18 +442,21 @@ lbl_8004B10C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21150
 $$21150:
-	.incbin "baserom.dol", 0x432680, 0x1C
+	.asciz "/shared2/test2/nanderr.log"
+	.balign 4
 .global $$21155
 $$21155:
-	.incbin "baserom.dol", 0x43269C, 0x2C
+	.asciz "%d %04d/%02d/%02d %02d:%02d:%02d %s %s"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global s_fd
 s_fd:
-	.incbin "baserom.dol", 0x492A50, 0x4
+	.4byte 0xFFFFFF01
 .global s_err
 s_err:
-	.incbin "baserom.dol", 0x492A54, 0x4
+	.4byte 0xFFFFFF8B
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global s_message

@@ -3,20 +3,28 @@
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ERROR_MSG_ENG__Q23app8DvdWatch
 ERROR_MSG_ENG__Q23app8DvdWatch:
-	.incbin "baserom.dol", 0x4105C8, 0x18
+	.4byte 0x80556B78
+	.4byte 0x80452BC0
+	.4byte 0x80452BC0
+	.4byte 0x80452C04
+	.4byte 0x80452C50
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248837
 $$248837:
-	.incbin "baserom.dol", 0x44ECC0, 0x44
+	.asciz "Please insert the\nKirby's Dream Collection\nSpecial Edition disc."
+	.balign 4
 .global $$248838
 $$248838:
-	.incbin "baserom.dol", 0x44ED04, 0x4C
+	.asciz "The disc could not be read.\nRefer to the Wii Operations\nManual for details."
 .global $$248839
 $$248839:
-	.incbin "baserom.dol", 0x44ED50, 0xA8
+	.asciz "An error has occurred.\nPress the Eject Button, remove\nthe disc, and turn off the power\nto the console. Please read the\nWii Operations Manual for\nfurther instructions."
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248836
 $$248836:
-	.incbin "baserom.dol", 0x492F58, 0x8
+	.4byte 0
+	.4byte 0

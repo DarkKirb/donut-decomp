@@ -1785,66 +1785,84 @@ lbl_8001F838:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23219
 $$23219:
-	.incbin "baserom.dol", 0x41E998, 0x18
+	.asciz "\nDisc error occurred!\n"
+	.balign 4
 .global $$23220
 $$23220:
-	.incbin "baserom.dol", 0x41E9B0, 0x1C
+	.asciz "\nTimeout error occurred!\n"
+	.balign 4
 .global $$23221
 $$23221:
-	.incbin "baserom.dol", 0x41E9CC, 0x20
+	.asciz "\nUnexpected error occurred!\n"
+	.balign 4
 .global $$23222
 $$23222:
-	.incbin "baserom.dol", 0x41E9EC, 0x30
+	.asciz "\nThe specified game doesn't exist in the disc\n"
+	.balign 4
 .global $$23223
 $$23223:
-	.incbin "baserom.dol", 0x41EA1C, 0x24
+	.asciz "\nOSExec(): Failed to exec %d in %d\n"
 .global $$23295
 $$23295:
-	.incbin "baserom.dol", 0x41EA40, 0x44
+	.asciz "OSLaunchDisk(): You can't call this API from DVD application.  \n"
+	.balign 4
 .global $$23296
 $$23296:
-	.incbin "baserom.dol", 0x41EA84, 0xC
+	.asciz "OSExec.c"
+	.balign 4
 .global $$23298
 $$23298:
-	.incbin "baserom.dol", 0x41EA90, 0x48
+	.asciz "OSLaunchDisk(): You must call DVDPrepareDisk before launching disc.\n"
+	.balign 4
 .global $$23299
 $$23299:
-	.incbin "baserom.dol", 0x41EAD8, 0x54
+	.asciz "OSLaunchDisk(): Specified id is different from one specified to DVDPrepareDisk.\n"
+	.balign 4
 .global $$23300
 $$23300:
-	.incbin "baserom.dol", 0x41EB2C, 0x14
+	.asciz "0000000000000000"
+	.balign 4
 .global $$23378
 $$23378:
-	.incbin "baserom.dol", 0x41EB40, 0xC
+	.asciz "2004/02/01"
+	.balign 4
 .global $$23432
 $$23432:
-	.incbin "baserom.dol", 0x41EB4C, 0x38
+	.asciz "Warning: OSExec(): The specified file doesn't exist. \n"
+	.balign 4
 .global $$23516
 $$23516:
-	.incbin "baserom.dol", 0x41EB84, 0x48
+	.asciz "OSLaunchPartition(): You can't call this API from NAND application.  \n"
+	.balign 4
 .global $$23517
 $$23517:
-	.incbin "baserom.dol", 0x41EBCC, 0x44
+	.asciz "OSLaunchPartition(): Specified title ID is not DISC application.  \n"
 .global $$23518
 $$23518:
-	.incbin "baserom.dol", 0x41EC10, 0x14
+	.asciz "/title/%08x/%08x"
+	.balign 4
 .global $$23519
 $$23519:
-	.incbin "baserom.dol", 0x41EC24, 0x3C
+	.asciz "\nOSLaunchPartition(): Failed to get free i-nodes number\n"
+	.balign 4
 .global $$23520
 $$23520:
-	.incbin "baserom.dol", 0x41EC60, 0x50
+	.asciz "\nOSLaunchPartition(): There are not enough i-nodes to launch next partition\n"
+	.balign 4
 .global $$23521
 $$23521:
-	.incbin "baserom.dol", 0x41ECB0, 0x38
+	.asciz "\nOSLaunchPartition(): Failed to get nand status\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23377
 $$23377:
-	.incbin "baserom.dol", 0x4928B0, 0x8
+	.asciz "%016llx"
 .global $$23424
 $$23424:
-	.incbin "baserom.dol", 0x4928B8, 0x8
+	.4byte 0x25640000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global id

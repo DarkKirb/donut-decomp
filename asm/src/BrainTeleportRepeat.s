@@ -111,4 +111,11 @@ __dt__Q53scn4step5enemy4kabu19BrainTeleportRepeatFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4kabu19BrainTeleportRepeat
 __vt__Q53scn4step5enemy4kabu19BrainTeleportRepeat:
-	.incbin "baserom.dol", 0x474040, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BCBE8  ;# ptr
+	.4byte 0x802BCABC  ;# ptr
+	.4byte 0x802BCB78  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

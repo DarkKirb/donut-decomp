@@ -241,7 +241,7 @@ node__Q36effect6detail16RequestArgOptionCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global DEFAULT_SCALE__Q36effect6detail16RequestArgOption
 DEFAULT_SCALE__Q36effect6detail16RequestArgOption:
-	.incbin "baserom.dol", 0x49A188, 0x4
+	.4byte 0x3F800000
 .global $$252276
 $$252276:
-	.incbin "baserom.dol", 0x49A18C, 0x4
+	.4byte 0x3F800000

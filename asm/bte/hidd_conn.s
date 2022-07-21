@@ -59,7 +59,8 @@ lbl_8008CFC0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21275
 $$21275:
-	.incbin "baserom.dol", 0x4391E0, 0x18
+	.asciz "HID - Originate started"
 .global $$21276
 $$21276:
-	.incbin "baserom.dol", 0x4391F8, 0x18
+	.asciz "HID - Originate failed"
+	.balign 4

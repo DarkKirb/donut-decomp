@@ -1318,56 +1318,95 @@ procFixPos__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common18StateVacuumReceive
 __vt__Q53scn4step4boss6common18StateVacuumReceive:
-	.incbin "baserom.dol", 0x4625B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80247880  ;# ptr
+	.4byte 0x80247884  ;# ptr
+	.4byte 0x802478F8  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802478FC  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common18StateVacuumReceive
 __vt__Q53scn4step5enemy6common18StateVacuumReceive:
-	.incbin "baserom.dol", 0x46F448, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80295564  ;# ptr
+	.4byte 0x80295600  ;# ptr
+	.4byte 0x80295670  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80295674  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference18StateVacuumReceive
 __vt__Q53scn4step4hero12interference18StateVacuumReceive:
-	.incbin "baserom.dol", 0x488680, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803746A8
+	.4byte 0x80374814
+	.4byte 0x803748CC
+	.4byte 0x8035550C
+	.4byte 0x80374A0C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state18StateVacuumReceive
 __vt__Q53scn4step4item5state18StateVacuumReceive:
-	.incbin "baserom.dol", 0x48E730, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C8A3C
+	.4byte 0x803C8AB8
+	.4byte 0x803C5200
+	.4byte 0x803C8B24
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive
 __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive:
-	.incbin "baserom.dol", 0x491328, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803EF04C
+	.4byte 0x803EF050
+	.4byte 0x803EF0C4
+	.4byte 0x803D895C
+	.4byte 0x803EF0C8
+	.4byte 0x803D8964
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256631
 $$256631:
-	.incbin "baserom.dol", 0x49B178, 0x4
+	.4byte 0
 .global $$256632
 $$256632:
-	.incbin "baserom.dol", 0x49B17C, 0x4
+	.4byte 0x3F800000
 .global $$256633
 $$256633:
-	.incbin "baserom.dol", 0x49B180, 0x8
+	.4byte 0x3ECCCCCD
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256844
 $$256844:
-	.incbin "baserom.dol", 0x49BC30, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258416
 $$258416:
-	.incbin "baserom.dol", 0x49DDA0, 0x4
+	.4byte 0
 .global $$258417
 $$258417:
-	.incbin "baserom.dol", 0x49DDA4, 0x4
+	.4byte 0x3F000000
 .global $$258418
 $$258418:
-	.incbin "baserom.dol", 0x49DDA8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255920
 $$255920:
-	.incbin "baserom.dol", 0x49E638, 0x8
+	.4byte 0x3F800000
+	.4byte 0

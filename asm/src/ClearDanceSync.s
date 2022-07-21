@@ -156,7 +156,15 @@ lbl_80334080:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ANIM_KIND_TABLE_A__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2
 ANIM_KIND_TABLE_A__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2:
-	.incbin "baserom.dol", 0x415D68, 0x10
+	.4byte 0x00000056
+	.4byte 0x00000057
+	.4byte 0x00000058
+	.4byte 0
 .global ANIM_KIND_TABLE_B__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2
 ANIM_KIND_TABLE_B__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2:
-	.incbin "baserom.dol", 0x415D78, 0x18
+	.4byte 0x00000056
+	.4byte 0x00000057
+	.4byte 0x00000058
+	.4byte 0x0000005C
+	.4byte 0x0000005D
+	.4byte 0x0000005E

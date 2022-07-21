@@ -143,59 +143,70 @@ __ct__Q43scn4step4core11MintManagerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251597
 $$251597:
-	.incbin "baserom.dol", 0x45AE60, 0x18
+	.asciz "Scn.ChallengeTitle"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251597
 $$251597:
-	.incbin "baserom.dol", 0x45CA90, 0x10
+	.asciz "Scn.GrandTitle"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251597
 $$251597:
-	.incbin "baserom.dol", 0x468928, 0x10
+	.asciz "Scn.Step"
+	.balign 4
+	.4byte 0
 .global $$251599
 $$251599:
-	.incbin "baserom.dol", 0x468938, 0x10
+	.asciz "Scn.StaffCredit"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251594
 $$251594:
-	.incbin "baserom.dol", 0x494158, 0x4
+	.4byte 0x41707000
 .global $$251595
 $$251595:
-	.incbin "baserom.dol", 0x49415C, 0x8
+	.asciz "GObj"
+	.balign 4
 .global $$251596
 $$251596:
-	.incbin "baserom.dol", 0x494164, 0x4
+	.4byte 0x48454C00
 .global $$251598
 $$251598:
-	.incbin "baserom.dol", 0x494168, 0x8
+	.4byte 0x536E6400
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251594
 $$251594:
-	.incbin "baserom.dol", 0x4947F8, 0x4
+	.4byte 0x41707000
 .global $$251595
 $$251595:
-	.incbin "baserom.dol", 0x4947FC, 0x8
+	.asciz "GObj"
+	.balign 4
 .global $$251596
 $$251596:
-	.incbin "baserom.dol", 0x494804, 0x4
+	.4byte 0x48454C00
 .global $$251598
 $$251598:
-	.incbin "baserom.dol", 0x494808, 0x8
+	.4byte 0x536E6400
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251594
 $$251594:
-	.incbin "baserom.dol", 0x495858, 0x4
+	.4byte 0x41707000
 .global $$251595
 $$251595:
-	.incbin "baserom.dol", 0x49585C, 0x8
+	.asciz "GObj"
+	.balign 4
 .global $$251596
 $$251596:
-	.incbin "baserom.dol", 0x495864, 0x4
+	.4byte 0x48454C00
 .global $$251598
 $$251598:
-	.incbin "baserom.dol", 0x495868, 0x8
+	.4byte 0x536E6400
+	.4byte 0

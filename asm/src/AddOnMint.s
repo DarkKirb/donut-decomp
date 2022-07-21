@@ -31373,3594 +31373,5494 @@ lbl_8040262C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252191
 $$252191:
-	.incbin "baserom.dol", 0x450148, 0x14
+	.asciz "G3D.NodeAccessor"
+	.balign 4
 .global $$252192
 $$252192:
-	.incbin "baserom.dol", 0x45015C, 0x18
+	.asciz "void LoadWorldTrans()"
+	.balign 4
 .global $$252193
 $$252193:
-	.incbin "baserom.dol", 0x450174, 0x18
+	.asciz "void LoadWorldRotate()"
+	.balign 4
 .global $$252194
 $$252194:
-	.incbin "baserom.dol", 0x45018C, 0x18
+	.asciz "void LoadWorldScale()"
+	.balign 4
 .global $$252195
 $$252195:
-	.incbin "baserom.dol", 0x4501A4, 0x14
+	.asciz "bool IsVisible()"
+	.balign 4
 .global $$252196
 $$252196:
-	.incbin "baserom.dol", 0x4501B8, 0x1C
+	.asciz "void SetVisibility(bool)"
+	.balign 4
 .global $$252197
 $$252197:
-	.incbin "baserom.dol", 0x4501D4, 0x20
+	.asciz "void SetVisibilityBelow(bool)"
+	.balign 4
 .global $$252198
 $$252198:
-	.incbin "baserom.dol", 0x4501F4, 0x14
+	.asciz "G3D.ModelAccessor"
+	.balign 4
 .global $$2STRING$$2internal_getRet_addr__Q26mintvm13MintFuncProxyCFv$$20
 $$2STRING$$2internal_getRet_addr__Q26mintvm13MintFuncProxyCFv$$20:
-	.incbin "baserom.dol", 0x450208, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2internal_getRet_addr__Q26mintvm13MintFuncProxyCFv
 $$2STRING$$2internal_getRet_addr__Q26mintvm13MintFuncProxyCFv:
-	.incbin "baserom.dol", 0x45021C, 0x14
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
 .global $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1FUl$$20
 $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1FUl$$20:
-	.incbin "baserom.dol", 0x450230, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1FUl
 $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1FUl:
-	.incbin "baserom.dol", 0x450248, 0x10
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255014
 $$255014:
-	.incbin "baserom.dol", 0x450AE0, 0x10
+	.asciz "GObj.Anim"
+	.balign 4
+	.4byte 0
 .global $$255015
 $$255015:
-	.incbin "baserom.dol", 0x450AF0, 0x10
+	.asciz "void Start(int)"
 .global $$255016
 $$255016:
-	.incbin "baserom.dol", 0x450B00, 0x18
+	.asciz "void Start(int,bool)"
+	.balign 4
 .global $$255017
 $$255017:
-	.incbin "baserom.dol", 0x450B18, 0x1C
+	.asciz "void Start(int,bool,float)"
+	.balign 4
 .global $$255018
 $$255018:
-	.incbin "baserom.dol", 0x450B34, 0x10
+	.asciz "float Frame()"
+	.balign 4
 .global $$255019
 $$255019:
-	.incbin "baserom.dol", 0x450B44, 0x14
+	.asciz "int TotalFrame()"
+	.balign 4
 .global $$255020
 $$255020:
-	.incbin "baserom.dol", 0x450B58, 0x18
+	.asciz "void SetFrame(float)"
+	.balign 4
 .global $$255021
 $$255021:
-	.incbin "baserom.dol", 0x450B70, 0x18
+	.asciz "void SetFrameToHead()"
+	.balign 4
 .global $$255022
 $$255022:
-	.incbin "baserom.dol", 0x450B88, 0x18
+	.asciz "void SetFrameToTail()"
+	.balign 4
 .global $$255023
 $$255023:
-	.incbin "baserom.dol", 0x450BA0, 0x18
+	.asciz "bool IsAnimEnd()"
+	.balign 4
+	.4byte 0
 .global $$255024
 $$255024:
-	.incbin "baserom.dol", 0x450BB8, 0x10
+	.asciz "bool IsLooped()"
 .global $$255025
 $$255025:
-	.incbin "baserom.dol", 0x450BC8, 0x14
+	.asciz "float FrameRate()"
+	.balign 4
 .global $$255026
 $$255026:
-	.incbin "baserom.dol", 0x450BDC, 0x1C
+	.asciz "void SetFrameRate(float)"
+	.balign 4
 .global $$255027
 $$255027:
-	.incbin "baserom.dol", 0x450BF8, 0x20
+	.asciz "int CurrentG3DAnimIndex()"
+	.balign 4
+	.4byte 0
 .global $$255028
 $$255028:
-	.incbin "baserom.dol", 0x450C18, 0x20
+	.asciz "void CheckIsReachableFrame(int)"
 .global $$255029
 $$255029:
-	.incbin "baserom.dol", 0x450C38, 0x10
+	.asciz "GObj.FootState"
+	.balign 4
 .global $$255030
 $$255030:
-	.incbin "baserom.dol", 0x450C48, 0x10
+	.asciz "bool IsGround()"
 .global $$255031
 $$255031:
-	.incbin "baserom.dol", 0x450C58, 0x10
+	.asciz "bool IsAir()"
+	.balign 4
 .global $$255032
 $$255032:
-	.incbin "baserom.dol", 0x450C68, 0x10
+	.asciz "GObj.GearAnim"
+	.balign 4
 .global $$255033
 $$255033:
-	.incbin "baserom.dol", 0x450C78, 0x18
+	.asciz "void start(int)const"
+	.balign 4
 .global $$255034
 $$255034:
-	.incbin "baserom.dol", 0x450C90, 0x1C
+	.asciz "void start(int,bool)const"
+	.balign 4
 .global $$255035
 $$255035:
-	.incbin "baserom.dol", 0x450CAC, 0x20
+	.asciz "void start(int,bool,uint)const"
+	.balign 4
 .global $$255036
 $$255036:
-	.incbin "baserom.dol", 0x450CCC, 0x14
+	.asciz "float frame()const"
+	.balign 4
 .global $$255037
 $$255037:
-	.incbin "baserom.dol", 0x450CE0, 0x18
+	.asciz "float totalFrame()const"
 .global $$255038
 $$255038:
-	.incbin "baserom.dol", 0x450CF8, 0x18
+	.asciz "void setFrame(float)"
+	.balign 4
 .global $$255039
 $$255039:
-	.incbin "baserom.dol", 0x450D10, 0x18
+	.asciz "bool isAnimEnd()const"
+	.balign 4
 .global $$255040
 $$255040:
-	.incbin "baserom.dol", 0x450D28, 0x18
+	.asciz "bool isLooped()const"
+	.balign 4
 .global $$255041
 $$255041:
-	.incbin "baserom.dol", 0x450D40, 0x18
+	.asciz "float frameRate()const"
+	.balign 4
 .global $$255042
 $$255042:
-	.incbin "baserom.dol", 0x450D58, 0x20
+	.asciz "void setFrameRate(float)const"
+	.balign 4
 .global $$255043
 $$255043:
-	.incbin "baserom.dol", 0x450D78, 0x20
+	.asciz "int currentG3DAnimIndex()const"
+	.balign 4
 .global $$255044
 $$255044:
-	.incbin "baserom.dol", 0x450D98, 0x14
+	.asciz "GObj.GearAnim Obj()"
 .global $$255045
 $$255045:
-	.incbin "baserom.dol", 0x450DAC, 0x1C
+	.asciz "void Start(int,bool,int)"
+	.balign 4
 .global $$255046
 $$255046:
-	.incbin "baserom.dol", 0x450DC8, 0x10
+	.asciz "GObj.Location"
+	.balign 4
 .global $$255047
 $$255047:
-	.incbin "baserom.dol", 0x450DD8, 0x10
+	.asciz "void LoadPos()"
+	.balign 4
 .global $$255048
 $$255048:
-	.incbin "baserom.dol", 0x450DE8, 0x14
+	.asciz "void LoadPrevPos()"
+	.balign 4
 .global $$255049
 $$255049:
-	.incbin "baserom.dol", 0x450DFC, 0x20
+	.asciz "const HEL.Math.Vector3 Pos()"
+	.balign 4
 .global $$255050
 $$255050:
-	.incbin "baserom.dol", 0x450E1C, 0x24
+	.asciz "const HEL.Math.Vector3 PrevPos()"
+	.balign 4
 .global $$255051
 $$255051:
-	.incbin "baserom.dol", 0x450E40, 0x10
+	.asciz "GObj.MeshFlip"
+	.balign 4
 .global $$255052
 $$255052:
-	.incbin "baserom.dol", 0x450E50, 0x10
+	.asciz "void Flip(int)"
+	.balign 4
 .global $$255053
 $$255053:
-	.incbin "baserom.dol", 0x450E60, 0xC
+	.asciz "GObj.Model"
+	.balign 4
 .global $$255054
 $$255054:
-	.incbin "baserom.dol", 0x450E6C, 0x14
+	.asciz "void LoadNode(int)"
+	.balign 4
 .global $$255055
 $$255055:
-	.incbin "baserom.dol", 0x450E80, 0x24
+	.asciz "void SetScale(float,float,float)"
+	.balign 4
 .global $$255056
 $$255056:
-	.incbin "baserom.dol", 0x450EA4, 0xC
+	.asciz "GObj.Move"
+	.balign 4
 .global $$255057
 $$255057:
-	.incbin "baserom.dol", 0x450EB0, 0x14
+	.asciz "float GetSpeedH()"
+	.balign 4
 .global $$255058
 $$255058:
-	.incbin "baserom.dol", 0x450EC4, 0x14
+	.asciz "float GetSpeedV()"
+	.balign 4
 .global $$255059
 $$255059:
-	.incbin "baserom.dol", 0x450ED8, 0x14
+	.asciz "float GetSpeedD()"
+	.balign 4
 .global $$255060
 $$255060:
-	.incbin "baserom.dol", 0x450EEC, 0x18
+	.asciz "void SetSpeedH(float)"
+	.balign 4
 .global $$255061
 $$255061:
-	.incbin "baserom.dol", 0x450F04, 0x18
+	.asciz "void SetSpeedV(float)"
+	.balign 4
 .global $$255062
 $$255062:
-	.incbin "baserom.dol", 0x450F1C, 0x18
+	.asciz "void SetSpeedD(float)"
+	.balign 4
 .global $$255063
 $$255063:
-	.incbin "baserom.dol", 0x450F34, 0xC
+	.asciz "GObj.Script"
 .global $$255064
 $$255064:
-	.incbin "baserom.dol", 0x450F40, 0x18
+	.asciz "int PrevScriptIndex()"
+	.balign 4
 .global $$255065
 $$255065:
-	.incbin "baserom.dol", 0x450F58, 0xC
+	.asciz "GObj.Target"
 .global $$255066
 $$255066:
-	.incbin "baserom.dol", 0x450F64, 0x14
+	.asciz "bool IsRightDir()"
+	.balign 4
 .global $$255067
 $$255067:
-	.incbin "baserom.dol", 0x450F78, 0x20
+	.asciz "void SetIsRightDir(bool)"
+	.balign 4
+	.4byte 0
 .global $$255068
 $$255068:
-	.incbin "baserom.dol", 0x450F98, 0x10
+	.asciz "float GetSign()"
 .global $$255069
 $$255069:
-	.incbin "baserom.dol", 0x450FA8, 0x10
+	.asciz "void Invert()"
+	.balign 4
 .global $$255070
 $$255070:
-	.incbin "baserom.dol", 0x450FB8, 0x18
+	.asciz "void LoadDirection3()"
+	.balign 4
 .global $$255246
 $$255246:
-	.incbin "baserom.dol", 0x450FD0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198B8C  ;# ptr
 .global $$255273
 $$255273:
-	.incbin "baserom.dol", 0x450FDC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198C58  ;# ptr
 .global $$255285
 $$255285:
-	.incbin "baserom.dol", 0x450FE8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198D64  ;# ptr
 .global $$255299
 $$255299:
-	.incbin "baserom.dol", 0x450FF4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198DB4  ;# ptr
 .global $$255318
 $$255318:
-	.incbin "baserom.dol", 0x451000, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198E90  ;# ptr
 .global $$255327
 $$255327:
-	.incbin "baserom.dol", 0x45100C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198EE0  ;# ptr
 .global $$255336
 $$255336:
-	.incbin "baserom.dol", 0x451018, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80198F30  ;# ptr
 .global $$255350
 $$255350:
-	.incbin "baserom.dol", 0x451024, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80199014  ;# ptr
 .global $$255359
 $$255359:
-	.incbin "baserom.dol", 0x451030, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801990C0  ;# ptr
 .global $$255366
 $$255366:
-	.incbin "baserom.dol", 0x45103C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80199158  ;# ptr
 .global $$255373
 $$255373:
-	.incbin "baserom.dol", 0x451048, 0x38
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801991DC  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1CFUl$$20
 $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1CFUl$$20:
-	.incbin "baserom.dol", 0x451080, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1CFUl
 $$2STRING$$2at__Q26mintvm24MArray$$0Q26mintvm6MValue$$1CFUl:
-	.incbin "baserom.dol", 0x451098, 0x38
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257683
 $$257683:
-	.incbin "baserom.dol", 0x45FEF8, 0x18
+	.asciz "Scn.Step.Boss.Effect"
+	.balign 4
 .global $$257684
 $$257684:
-	.incbin "baserom.dol", 0x45FF10, 0x14
+	.asciz "void BindSuper()"
+	.balign 4
 .global $$257685
 $$257685:
-	.incbin "baserom.dol", 0x45FF24, 0x14
+	.asciz "void BindNormal()"
+	.balign 4
 .global $$257686
 $$257686:
-	.incbin "baserom.dol", 0x45FF38, 0x18
+	.asciz "void BindNormalWarp()"
+	.balign 4
 .global $$257687
 $$257687:
-	.incbin "baserom.dol", 0x45FF50, 0x14
+	.asciz "void BindState()"
+	.balign 4
 .global $$257688
 $$257688:
-	.incbin "baserom.dol", 0x45FF64, 0x1C
+	.asciz "void BindStateWarp()"
+	.balign 4
+	.4byte 0
 .global $$257689
 $$257689:
-	.incbin "baserom.dol", 0x45FF80, 0x10
+	.asciz "void BindBack()"
 .global $$257690
 $$257690:
-	.incbin "baserom.dol", 0x45FF90, 0x10
+	.asciz "void BindFore()"
 .global $$257691
 $$257691:
-	.incbin "baserom.dol", 0x45FFA0, 0x18
+	.asciz "Scn.Step.Boss.SoundSE"
+	.balign 4
 .global $$257692
 $$257692:
-	.incbin "baserom.dol", 0x45FFB8, 0x10
+	.asciz "void BindLoop()"
 .global $$257693
 $$257693:
-	.incbin "baserom.dol", 0x45FFC8, 0x14
+	.asciz "Scn.Step.Boss.Gear"
+	.balign 4
 .global $$257694
 $$257694:
-	.incbin "baserom.dol", 0x45FFDC, 0x10
+	.asciz "void Bind(int)"
+	.balign 4
 .global $$257695
 $$257695:
-	.incbin "baserom.dol", 0x45FFEC, 0x1C
+	.asciz "Scn.Step.Boss.AttackFlash"
+	.balign 4
 .global $$257696
 $$257696:
-	.incbin "baserom.dol", 0x460008, 0x20
+	.asciz "void SetStart(int,int,int,int)"
+	.balign 4
 .global $$257697
 $$257697:
-	.incbin "baserom.dol", 0x460028, 0x14
+	.asciz "void SetContinue()"
+	.balign 4
 .global $$257698
 $$257698:
-	.incbin "baserom.dol", 0x46003C, 0x20
+	.asciz "void SetEnd(int,int,int,int)"
+	.balign 4
 .global $$257699
 $$257699:
-	.incbin "baserom.dol", 0x46005C, 0x10
+	.asciz "void Cancel()"
+	.balign 4
 .global $$257700
 $$257700:
-	.incbin "baserom.dol", 0x46006C, 0x1C
+	.asciz "void SetAlphaIncRate(float)"
 .global $$257701
 $$257701:
-	.incbin "baserom.dol", 0x460088, 0x1C
+	.asciz "Scn.Step.Boss.GuardFlash"
+	.balign 4
 .global $$257702
 $$257702:
-	.incbin "baserom.dol", 0x4600A4, 0x18
+	.asciz "void SetIsValid(bool)"
+	.balign 4
 .global $$257703
 $$257703:
-	.incbin "baserom.dol", 0x4600BC, 0x1C
+	.asciz "Scn.Step.Boss.CustomFlash"
+	.balign 4
 .global $$257704
 $$257704:
-	.incbin "baserom.dol", 0x4600D8, 0x20
+	.asciz "void SetColor(int,int,int,int)"
+	.balign 4
 .global $$257705
 $$257705:
-	.incbin "baserom.dol", 0x4600F8, 0x18
+	.asciz "void SetOperation(int)"
+	.balign 4
 .global $$257706
 $$257706:
-	.incbin "baserom.dol", 0x460110, 0x14
+	.asciz "Scn.Step.Boss.Angry"
 .global $$257707
 $$257707:
-	.incbin "baserom.dol", 0x460124, 0x10
+	.asciz "bool Check()"
+	.balign 4
 .global $$257708
 $$257708:
-	.incbin "baserom.dol", 0x460134, 0x10
+	.asciz "bool IsAngry()"
+	.balign 4
 .global $$257709
 $$257709:
-	.incbin "baserom.dol", 0x460144, 0x18
+	.asciz "Scn.Step.Boss.Utility"
+	.balign 4
 .global $$257710
 $$257710:
-	.incbin "baserom.dol", 0x46015C, 0x2C
+	.asciz "bool IsHeroInRange(float,float,float,float)"
 .global $$257711
 $$257711:
-	.incbin "baserom.dol", 0x460188, 0x38
+	.asciz "bool IsHatedHeroInRange(float,float,float,float)"
+	.balign 4
+	.4byte 0
 .global $$257712
 $$257712:
-	.incbin "baserom.dol", 0x4601C0, 0x18
+	.asciz "bool IsHeroUpper(float)"
 .global $$257713
 $$257713:
-	.incbin "baserom.dol", 0x4601D8, 0x14
+	.asciz "bool IsHeroSuper()"
+	.balign 4
 .global $$257714
 $$257714:
-	.incbin "baserom.dol", 0x4601EC, 0x18
+	.asciz "bool IsHitWallFront()"
+	.balign 4
 .global $$257715
 $$257715:
-	.incbin "baserom.dol", 0x460204, 0x18
+	.asciz "bool IsHitWallBack()"
+	.balign 4
 .global $$257716
 $$257716:
-	.incbin "baserom.dol", 0x46021C, 0x1C
+	.asciz "bool IsFootStateGround()"
+	.balign 4
 .global $$257717
 $$257717:
-	.incbin "baserom.dol", 0x460238, 0x20
+	.asciz "bool IsExistSuperElement()"
+	.balign 4
+	.4byte 0
 .global $$257718
 $$257718:
-	.incbin "baserom.dol", 0x460258, 0x18
+	.asciz "float GetHitPointRate()"
 .global $$257719
 $$257719:
-	.incbin "baserom.dol", 0x460270, 0x10
+	.asciz "int GetLevel()"
+	.balign 4
 .global $$257720
 $$257720:
-	.incbin "baserom.dol", 0x460280, 0x18
+	.asciz "bool IsVariationExtra()"
 .global $$257721
 $$257721:
-	.incbin "baserom.dol", 0x460298, 0x1C
+	.asciz "bool IsVariationBossRush()"
+	.balign 4
 .global $$257722
 $$257722:
-	.incbin "baserom.dol", 0x4602B4, 0x3C
+	.asciz "void GenerateStarEffectPuff(float,float,float,float,int)"
+	.balign 4
 .global $$257723
 $$257723:
-	.incbin "baserom.dol", 0x4602F0, 0x3C
+	.asciz "void GenerateStarEffectBound(float,float,float,float,int)"
+	.balign 4
 .global $$257724
 $$257724:
-	.incbin "baserom.dol", 0x46032C, 0x14
+	.asciz "void LoadBasePos()"
+	.balign 4
 .global $$257725
 $$257725:
-	.incbin "baserom.dol", 0x460340, 0x20
+	.asciz "void LoadNearestHeroPos()"
+	.balign 4
+	.4byte 0
 .global $$257726
 $$257726:
-	.incbin "baserom.dol", 0x460360, 0x18
+	.asciz "void LoadHatedHeroPos()"
 .global $$257727
 $$257727:
-	.incbin "baserom.dol", 0x460378, 0x20
+	.asciz "void SendBossDemoSignal(int)"
+	.balign 4
 .global $$257728
 $$257728:
-	.incbin "baserom.dol", 0x460398, 0x10
+	.asciz "bool IsArena()"
+	.balign 4
 .global $$257729
 $$257729:
-	.incbin "baserom.dol", 0x4603A8, 0x14
+	.asciz "int GetRetryCount()"
 .global $$257730
 $$257730:
-	.incbin "baserom.dol", 0x4603BC, 0x1C
+	.asciz "Scn.Step.Boss.StagingCtrl"
+	.balign 4
 .global $$257731
 $$257731:
-	.incbin "baserom.dol", 0x4603D8, 0x28
+	.asciz "void InitZoom(float,float,float)"
+	.balign 4
+	.4byte 0
 .global $$257732
 $$257732:
-	.incbin "baserom.dol", 0x460400, 0x20
+	.asciz "void SetZoom(float,float,float)"
 .global $$257733
 $$257733:
-	.incbin "baserom.dol", 0x460420, 0x14
+	.asciz "void SetZoom(float)"
 .global $$257734
 $$257734:
-	.incbin "baserom.dol", 0x460434, 0x14
+	.asciz "void UnsetZoom()"
+	.balign 4
 .global $$257735
 $$257735:
-	.incbin "baserom.dol", 0x460448, 0x80
+	.asciz "void ChangeZoomIntpRate(float)"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255586
 $$255586:
-	.incbin "baserom.dol", 0x460A88, 0x24
+	.asciz "Scn.Step.Boss.Bonkers.SetNextState"
+	.balign 4
 .global $$255587
 $$255587:
-	.incbin "baserom.dol", 0x460AAC, 0x14
+	.asciz "void AttackHammer()"
 .global $$255588
 $$255588:
-	.incbin "baserom.dol", 0x460AC0, 0x18
+	.asciz "void AttackFireHammer()"
 .global $$255589
 $$255589:
-	.incbin "baserom.dol", 0x460AD8, 0x14
+	.asciz "void MoveForward()"
+	.balign 4
 .global $$255590
 $$255590:
-	.incbin "baserom.dol", 0x460AEC, 0x1C
+	.asciz "void StampFoot(float,float)"
 .global $$255591
 $$255591:
-	.incbin "baserom.dol", 0x460B08, 0x10
+	.asciz "void JumpBig()"
+	.balign 4
 .global $$255592
 $$255592:
-	.incbin "baserom.dol", 0x460B18, 0x10
+	.asciz "void Swing()"
+	.balign 4
 .global $$255593
 $$255593:
-	.incbin "baserom.dol", 0x460B28, 0x14
+	.asciz "void SwingPursuit()"
 .global $$255594
 $$255594:
-	.incbin "baserom.dol", 0x460B3C, 0x14
+	.asciz "void BombStart()"
+	.balign 4
 .global $$255595
 $$255595:
-	.incbin "baserom.dol", 0x460B50, 0x24
+	.asciz "void Bomb(float,float,bool,bool)"
+	.balign 4
 .global $$255596
 $$255596:
-	.incbin "baserom.dol", 0x460B74, 0x14
+	.asciz "void RainBomb(bool)"
 .global __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss7bonkers18StateRainBombStart$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss7bonkers13StateRainBomb6Config$$1
 __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss7bonkers18StateRainBombStart$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss7bonkers13StateRainBomb6Config$$1:
-	.incbin "baserom.dol", 0x460B88, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802373A0  ;# ptr
+	.4byte 0x80237264  ;# ptr
 .global __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss7bonkers9StateBomb$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss7bonkers9StateBomb6Config$$1
 __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss7bonkers9StateBomb$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss7bonkers9StateBomb6Config$$1:
-	.incbin "baserom.dol", 0x460B98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8023739C  ;# ptr
+	.4byte 0x802372B0  ;# ptr
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers14StateBombStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers14StateBombStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x460BA8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237398  ;# ptr
+	.4byte 0x80237310  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers17StateSwingPursuit$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers17StateSwingPursuit$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x460BB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237394  ;# ptr
+	.4byte 0x8023732C  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers10StateSwing$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers10StateSwing$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x460BC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237390  ;# ptr
+	.4byte 0x80237348  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers17StateJumpBigStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss7bonkers17StateJumpBigStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x460BD8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8023738C  ;# ptr
+	.4byte 0x80237364  ;# ptr
 .global __vt__Q24util165StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common9StateJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1
 __vt__Q24util165StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common9StateJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1:
-	.incbin "baserom.dol", 0x460BE8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237388  ;# ptr
+	.4byte 0x802371BC  ;# ptr
 .global __vt__Q24util173StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1
 __vt__Q24util173StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1:
-	.incbin "baserom.dol", 0x460BF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237384  ;# ptr
+	.4byte 0x802371E0  ;# ptr
 .global __vt__Q24util170StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1
 __vt__Q24util170StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss7bonkers10ScriptKind$$1:
-	.incbin "baserom.dol", 0x460C08, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237380  ;# ptr
+	.4byte 0x80237240  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254522
 $$254522:
-	.incbin "baserom.dol", 0x4613F0, 0x2C
+	.asciz "Scn.Step.Boss.ChallengeMaster.SetNextState"
+	.balign 4
 .global $$254523
 $$254523:
-	.incbin "baserom.dol", 0x46141C, 0x10
+	.asciz "void Summon()"
+	.balign 4
 .global $$254524
 $$254524:
-	.incbin "baserom.dol", 0x46142C, 0x14
+	.asciz "bool TryToShot()"
+	.balign 4
 .global $$254525
 $$254525:
-	.incbin "baserom.dol", 0x461440, 0x28
+	.asciz "Scn.Step.Boss.ChallengeMaster.Custom"
+	.balign 4
 .global $$254526
 $$254526:
-	.incbin "baserom.dol", 0x461468, 0x18
+	.asciz "bool IsInferior()"
+	.balign 4
+	.4byte 0
 .global $$254527
 $$254527:
-	.incbin "baserom.dol", 0x461480, 0x10
+	.asciz "bool IsLosing()"
 .global $$254528
 $$254528:
-	.incbin "baserom.dol", 0x461490, 0x18
+	.asciz "bool IsExistFrontLand()"
 .global $$254529
 $$254529:
-	.incbin "baserom.dol", 0x4614A8, 0x20
+	.asciz "bool IsExistSummonWaitEnemy()"
+	.balign 4
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateSummon$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateSummon$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x4614C8, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x80239E2C  ;# ptr
+	.4byte 0x80239E10  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255073
 $$255073:
-	.incbin "baserom.dol", 0x463338, 0x24
+	.asciz "Scn.Step.Boss.Dubior.SetNextState"
+	.balign 4
 .global $$255074
 $$255074:
-	.incbin "baserom.dol", 0x46335C, 0x10
+	.asciz "void Call(int)"
+	.balign 4
 .global $$255075
 $$255075:
-	.incbin "baserom.dol", 0x46336C, 0x18
+	.asciz "void MoveToOtherSide()"
+	.balign 4
 .global $$255076
 $$255076:
-	.incbin "baserom.dol", 0x463384, 0x14
+	.asciz "void HeightAdjust()"
 .global $$255077
 $$255077:
-	.incbin "baserom.dol", 0x463398, 0xC
+	.asciz "void Dash()"
 .global $$255078
 $$255078:
-	.incbin "baserom.dol", 0x4633A4, 0x10
+	.asciz "void Glide()"
+	.balign 4
 .global $$255079
 $$255079:
-	.incbin "baserom.dol", 0x4633B4, 0x10
+	.asciz "void Thunder()"
+	.balign 4
 .global $$255080
 $$255080:
-	.incbin "baserom.dol", 0x4633C4, 0x14
+	.asciz "void MoveThunder()"
+	.balign 4
 .global $$255081
 $$255081:
-	.incbin "baserom.dol", 0x4633D8, 0x18
+	.asciz "void Shot(float)"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateShot$$4PQ43scn4step4boss4Boss$$4f$$1
 __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateShot$$4PQ43scn4step4boss4Boss$$4f$$1:
-	.incbin "baserom.dol", 0x4633F0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C990  ;# ptr
+	.4byte 0x8024C88C  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior21StateMoveThunderStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior21StateMoveThunderStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463400, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C98C  ;# ptr
+	.4byte 0x8024C8CC  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior17StateThunderStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior17StateThunderStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463410, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C988  ;# ptr
+	.4byte 0x8024C8E8  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior10StateGlide$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior10StateGlide$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463420, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C984  ;# ptr
+	.4byte 0x8024C904  ;# ptr
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateDash$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateDash$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463430, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C980  ;# ptr
+	.4byte 0x8024C920  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior17StateHeightAdjust$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior17StateHeightAdjust$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463440, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C97C  ;# ptr
+	.4byte 0x8024C93C  ;# ptr
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior20StateMoveToOtherSide$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior20StateMoveToOtherSide$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463450, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C978  ;# ptr
+	.4byte 0x8024C958  ;# ptr
 .global __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateCall$$4PQ43scn4step4boss4Boss$$4Ul$$1
 __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6dubior9StateCall$$4PQ43scn4step4boss4Boss$$4Ul$$1:
-	.incbin "baserom.dol", 0x463460, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C974  ;# ptr
+	.4byte 0x8024C8AC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254625
 $$254625:
-	.incbin "baserom.dol", 0x463A10, 0x28
+	.asciz "Scn.Step.Boss.GigantEdge.SetNextState"
+	.balign 4
 .global $$254626
 $$254626:
-	.incbin "baserom.dol", 0x463A38, 0x10
+	.asciz "void Attack1()"
+	.balign 4
 .global $$254627
 $$254627:
-	.incbin "baserom.dol", 0x463A48, 0x14
+	.asciz "void Attack2(int)"
+	.balign 4
 .global $$254628
 $$254628:
-	.incbin "baserom.dol", 0x463A5C, 0x14
+	.asciz "void MoveForward()"
+	.balign 4
 .global $$254629
 $$254629:
-	.incbin "baserom.dol", 0x463A70, 0x10
+	.asciz "void MoveBack()"
 .global $$254630
 $$254630:
-	.incbin "baserom.dol", 0x463A80, 0x10
+	.asciz "void Dash(bool)"
 .global $$254631
 $$254631:
-	.incbin "baserom.dol", 0x463A90, 0x10
+	.asciz "void Guard()"
+	.balign 4
 .global $$254632
 $$254632:
-	.incbin "baserom.dol", 0x463AA0, 0x10
+	.asciz "void Shot(bool)"
 .global $$254633
 $$254633:
-	.incbin "baserom.dol", 0x463AB0, 0x18
+	.asciz "void JumpAttack()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util228StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$1
 __vt__Q24util228StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$1:
-	.incbin "baserom.dol", 0x463AC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B40  ;# ptr
+	.4byte 0x80251A30  ;# ptr
 .global __vt__Q24util140StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10gigantedge9StateShot$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss10gigantedge9StateShot6Config$$1
 __vt__Q24util140StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss10gigantedge9StateShot$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss10gigantedge9StateShot6Config$$1:
-	.incbin "baserom.dol", 0x463AD8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B3C  ;# ptr
+	.4byte 0x80251AC0  ;# ptr
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10gigantedge10StateGuard$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10gigantedge10StateGuard$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463AE8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B38  ;# ptr
+	.4byte 0x80251B0C  ;# ptr
 .global __vt__Q24util251StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$1
 __vt__Q24util251StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$4Q53scn4step4boss10gigantedge10ScriptKind$$1:
-	.incbin "baserom.dol", 0x463AF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B34  ;# ptr
+	.4byte 0x80251A04  ;# ptr
 .global __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common13StateMoveBack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1
 __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common13StateMoveBack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1:
-	.incbin "baserom.dol", 0x463B08, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B30  ;# ptr
+	.4byte 0x80251A58  ;# ptr
 .global __vt__Q24util177StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1
 __vt__Q24util177StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1:
-	.incbin "baserom.dol", 0x463B18, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B2C  ;# ptr
+	.4byte 0x80251AB8  ;# ptr
 .global __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1
 __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss10gigantedge10ScriptKind$$1:
-	.incbin "baserom.dol", 0x463B28, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x80251B28  ;# ptr
+	.4byte 0x80251ABC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255274
 $$255274:
-	.incbin "baserom.dol", 0x464150, 0x24
+	.asciz "Scn.Step.Boss.KingsDoo.SetNextState"
 .global $$255275
 $$255275:
-	.incbin "baserom.dol", 0x464174, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255276
 $$255276:
-	.incbin "baserom.dol", 0x464184, 0x14
+	.asciz "void MoveForward()"
+	.balign 4
 .global $$255277
 $$255277:
-	.incbin "baserom.dol", 0x464198, 0x10
+	.asciz "void Dash()"
+	.4byte 0
 .global $$255278
 $$255278:
-	.incbin "baserom.dol", 0x4641A8, 0x10
+	.asciz "void JumpBack()"
 .global $$255279
 $$255279:
-	.incbin "baserom.dol", 0x4641B8, 0x18
+	.asciz "void JumpAttack()"
+	.balign 4
+	.4byte 0
 .global $$255280
 $$255280:
-	.incbin "baserom.dol", 0x4641D0, 0x18
+	.asciz "void JumpCenterAttack()"
 .global $$255281
 $$255281:
-	.incbin "baserom.dol", 0x4641E8, 0x18
+	.asciz "void JumpMachinegun()"
+	.balign 4
 .global $$255282
 $$255282:
-	.incbin "baserom.dol", 0x464200, 0x20
+	.asciz "void ChargeAttackStart()"
+	.balign 4
+	.4byte 0
 .global $$255283
 $$255283:
-	.incbin "baserom.dol", 0x464220, 0x18
+	.asciz "void ChargeAttack(bool)"
 .global $$255284
 $$255284:
-	.incbin "baserom.dol", 0x464238, 0x20
+	.asciz "void ChargeAttackPursuit()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util152StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo17StateChargeAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss8kingsdoo17StateChargeAttack6Config$$1
 __vt__Q24util152StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo17StateChargeAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss8kingsdoo17StateChargeAttack6Config$$1:
-	.incbin "baserom.dol", 0x464258, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534E0  ;# ptr
+	.4byte 0x80253420  ;# ptr
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo22StateChargeAttackStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo22StateChargeAttackStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464268, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534DC  ;# ptr
+	.4byte 0x8025346C  ;# ptr
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo24StateJumpMachinegunStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo24StateJumpMachinegunStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464278, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534D8  ;# ptr
+	.4byte 0x80253488  ;# ptr
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo21StateJumpCenterAttack$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss8kingsdoo21StateJumpCenterAttack$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464288, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534D4  ;# ptr
+	.4byte 0x802534A4  ;# ptr
 .global __vt__Q24util222StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1
 __vt__Q24util222StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1:
-	.incbin "baserom.dol", 0x464298, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534D0  ;# ptr
+	.4byte 0x802533EC  ;# ptr
 .global __vt__Q24util210StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1
 __vt__Q24util210StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4642A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534CC  ;# ptr
+	.4byte 0x802533F0  ;# ptr
 .global __vt__Q24util242StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1
 __vt__Q24util242StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4642B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534C8  ;# ptr
+	.4byte 0x802533E8  ;# ptr
 .global __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1
 __vt__Q24util174StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4642C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534C4  ;# ptr
+	.4byte 0x80253418  ;# ptr
 .global __vt__Q24util171StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1
 __vt__Q24util171StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common15StateAttackDesc$$4Q53scn4step4boss8kingsdoo10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4642D8, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x802534C0  ;# ptr
+	.4byte 0x8025341C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254406
 $$254406:
-	.incbin "baserom.dol", 0x4648E8, 0x28
+	.asciz "Scn.Step.Boss.Moundeath.SetNextState"
+	.balign 4
 .global $$254407
 $$254407:
-	.incbin "baserom.dol", 0x464910, 0x14
+	.asciz "void MoveStart()"
+	.balign 4
 .global $$254408
 $$254408:
-	.incbin "baserom.dol", 0x464924, 0x14
+	.asciz "void MoveForward()"
+	.balign 4
 .global $$254409
 $$254409:
-	.incbin "baserom.dol", 0x464938, 0x10
+	.asciz "void MoveEnd()"
+	.balign 4
 .global $$254410
 $$254410:
-	.incbin "baserom.dol", 0x464948, 0x10
+	.asciz "void Jump()"
+	.4byte 0
 .global $$254411
 $$254411:
-	.incbin "baserom.dol", 0x464958, 0x10
+	.asciz "void JumpBack()"
 .global $$254412
 $$254412:
-	.incbin "baserom.dol", 0x464968, 0x10
+	.asciz "void Press()"
+	.balign 4
 .global $$254413
 $$254413:
-	.incbin "baserom.dol", 0x464978, 0x10
+	.asciz "void PressBig()"
 .global $$254414
 $$254414:
-	.incbin "baserom.dol", 0x464988, 0x14
+	.asciz "void GiantJump()"
+	.balign 4
 .global $$254415
 $$254415:
-	.incbin "baserom.dol", 0x46499C, 0x18
+	.asciz "void RollJumpStart()"
+	.balign 4
 .global $$254416
 $$254416:
-	.incbin "baserom.dol", 0x4649B4, 0x18
+	.asciz "void RollJumpRestart()"
+	.balign 4
 .global $$254417
 $$254417:
-	.incbin "baserom.dol", 0x4649CC, 0x18
+	.asciz "void RollJumpLanding()"
+	.balign 4
 .global $$254418
 $$254418:
-	.incbin "baserom.dol", 0x4649E4, 0xC
+	.asciz "void Dash()"
 .global $$254419
 $$254419:
-	.incbin "baserom.dol", 0x4649F0, 0x10
+	.asciz "void Rolling()"
+	.balign 4
 .global $$254420
 $$254420:
-	.incbin "baserom.dol", 0x464A00, 0x10
+	.asciz "void Tornado()"
+	.balign 4
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath16StateTornadoRise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath16StateTornadoRise$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464A10, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255638  ;# ptr
+	.4byte 0x802555A4  ;# ptr
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath17StateRollingStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath17StateRollingStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464A20, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255634  ;# ptr
+	.4byte 0x802555C0  ;# ptr
 .global __vt__Q24util245StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$4Q53scn4step4boss9moundeath10ScriptKind$$4Q53scn4step4boss9moundeath10ScriptKind$$1
 __vt__Q24util245StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$4Q53scn4step4boss9moundeath10ScriptKind$$4Q53scn4step4boss9moundeath10ScriptKind$$1:
-	.incbin "baserom.dol", 0x464A30, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255630  ;# ptr
+	.4byte 0x802554DC  ;# ptr
 .global __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath10ScriptKind$$1
 __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath10ScriptKind$$1:
-	.incbin "baserom.dol", 0x464A40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025562C  ;# ptr
+	.4byte 0x80255534  ;# ptr
 .global __vt__Q24util146StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath13StateRollJump$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9moundeath13StateRollJump6Config$$1
 __vt__Q24util146StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath13StateRollJump$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9moundeath13StateRollJump6Config$$1:
-	.incbin "baserom.dol", 0x464A50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255628  ;# ptr
+	.4byte 0x80255538  ;# ptr
 .global __vt__Q24util139StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath19StatePressJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1
 __vt__Q24util139StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath19StatePressJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1:
-	.incbin "baserom.dol", 0x464A60, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255624  ;# ptr
+	.4byte 0x80255584  ;# ptr
 .global __vt__Q24util167StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common9StateJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$1
 __vt__Q24util167StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common9StateJump$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$1:
-	.incbin "baserom.dol", 0x464A70, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255620  ;# ptr
+	.4byte 0x802554E0  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath9StateJump$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath9StateJump$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464A80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025561C  ;# ptr
+	.4byte 0x802555DC  ;# ptr
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath16StateMoveForward$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath16StateMoveForward$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x464A90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255618  ;# ptr
+	.4byte 0x802555F8  ;# ptr
 .global __vt__Q24util178StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common14StateMoveJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common18StateMoveJointDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$1
 __vt__Q24util178StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common14StateMoveJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common18StateMoveJointDesc$$4Q53scn4step4boss9moundeath10ScriptKind$$1:
-	.incbin "baserom.dol", 0x464AA0, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255614  ;# ptr
+	.4byte 0x802554E4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254862
 $$254862:
-	.incbin "baserom.dol", 0x465360, 0x2C
+	.asciz "Scn.Step.Boss.WaterGalboros.SetNextState"
+	.balign 4
 .global $$254863
 $$254863:
-	.incbin "baserom.dol", 0x46538C, 0x14
+	.asciz "void JumpSmall()"
+	.balign 4
 .global $$254864
 $$254864:
-	.incbin "baserom.dol", 0x4653A0, 0xC
+	.asciz "void Jump()"
 .global $$254865
 $$254865:
-	.incbin "baserom.dol", 0x4653AC, 0x10
+	.asciz "void JumpBig()"
+	.balign 4
 .global $$254866
 $$254866:
-	.incbin "baserom.dol", 0x4653BC, 0x14
+	.asciz "void AttackStart()"
+	.balign 4
 .global $$254867
 $$254867:
-	.incbin "baserom.dol", 0x4653D0, 0x14
+	.asciz "void AttackWater()"
+	.balign 4
 .global $$254868
 $$254868:
-	.incbin "baserom.dol", 0x4653E4, 0x14
+	.asciz "void AttackWave()"
+	.balign 4
 .global $$254869
 $$254869:
-	.incbin "baserom.dol", 0x4653F8, 0x18
+	.asciz "void Quivery(int,int)"
+	.balign 4
 .global $$254870
 $$254870:
-	.incbin "baserom.dol", 0x465410, 0xC
+	.asciz "void Dash()"
 .global $$254871
 $$254871:
-	.incbin "baserom.dol", 0x46541C, 0x10
+	.asciz "void Capture()"
+	.balign 4
 .global $$254872
 $$254872:
-	.incbin "baserom.dol", 0x46542C, 0x28
+	.asciz "Scn.Step.Boss.WaterGalboros.WeaponCtrl"
+	.balign 4
 .global $$254873
 $$254873:
-	.incbin "baserom.dol", 0x465454, 0x24
+	.asciz "void AddReqData(int,float,float)"
+	.balign 4
 .global $$254874
 $$254874:
-	.incbin "baserom.dol", 0x465478, 0x18
+	.asciz "void ClearReqBuff()"
+	.4byte 0
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalboros18StateCaptureAttack$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss13watergalboros18StateCaptureAttack$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x465490, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80259630  ;# ptr
+	.4byte 0x80259600  ;# ptr
 .global __vt__Q24util260StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$1
 __vt__Q24util260StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4654A0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025962C  ;# ptr
+	.4byte 0x80259564  ;# ptr
 .global __vt__Q24util154StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros12StateQuivery$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss13watergalboros12StateQuivery6Config$$1
 __vt__Q24util154StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros12StateQuivery$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss13watergalboros12StateQuivery6Config$$1:
-	.incbin "baserom.dol", 0x4654B0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80259628  ;# ptr
+	.4byte 0x8025956C  ;# ptr
 .global __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros10ScriptKind$$1
 __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros11StateAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4654C0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80259624  ;# ptr
+	.4byte 0x802595C0  ;# ptr
 .global __vt__Q24util149StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros16StateAttackJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros10ScriptKind$$1
 __vt__Q24util149StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss13watergalboros16StateAttackJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss13watergalboros10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4654D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80259620  ;# ptr
+	.4byte 0x802595E0  ;# ptr
 .global __vt__Q24util222StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$1
 __vt__Q24util222StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss13watergalboros10ScriptKind$$4Q53scn4step4boss13watergalboros10ScriptKind$$1:
-	.incbin "baserom.dol", 0x4654E0, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025961C  ;# ptr
+	.4byte 0x80259568  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254699
 $$254699:
-	.incbin "baserom.dol", 0x465C00, 0x24
+	.asciz "Scn.Step.Boss.Whispy.SetNextState"
+	.balign 4
 .global $$254700
 $$254700:
-	.incbin "baserom.dol", 0x465C24, 0x20
+	.asciz "void ShotAirBall(int,int,int)"
+	.balign 4
 .global $$254701
 $$254701:
-	.incbin "baserom.dol", 0x465C44, 0x24
+	.asciz "void ShotAirBallBig(int,int,int)"
+	.balign 4
 .global $$254702
 $$254702:
-	.incbin "baserom.dol", 0x465C68, 0x28
+	.asciz "void ShotAirBallTornado(int,int,int)"
+	.balign 4
 .global $$254703
 $$254703:
-	.incbin "baserom.dol", 0x465C90, 0x14
+	.asciz "void FallApple(int)"
 .global $$254704
 $$254704:
-	.incbin "baserom.dol", 0x465CA4, 0x14
+	.asciz "void FallEnemy(int)"
 .global $$254705
 $$254705:
-	.incbin "baserom.dol", 0x465CB8, 0x18
+	.asciz "void FallEnemy2(int)"
+	.balign 4
 .global $$254706
 $$254706:
-	.incbin "baserom.dol", 0x465CD0, 0x10
+	.asciz "void Vacuum()"
+	.balign 4
 .global $$254707
 $$254707:
-	.incbin "baserom.dol", 0x465CE0, 0x14
+	.asciz "void RootAttack()"
+	.balign 4
 .global $$254708
 $$254708:
-	.incbin "baserom.dol", 0x465CF4, 0x24
+	.asciz "Scn.Step.Boss.Whispy.EnemyReqBuff"
+	.balign 4
 .global $$254709
 $$254709:
-	.incbin "baserom.dol", 0x465D18, 0x18
+	.asciz "void Add(int,int,int)"
+	.balign 4
 .global $$254710
 $$254710:
-	.incbin "baserom.dol", 0x465D30, 0x28
+	.asciz "Scn.Step.Boss.Whispy.FaceRotCtrl"
+	.balign 4
+	.4byte 0
 .global $$254711
 $$254711:
-	.incbin "baserom.dol", 0x465D58, 0x10
+	.asciz "void Set(float)"
 .global $$254712
 $$254712:
-	.incbin "baserom.dol", 0x465D68, 0x10
+	.asciz "void Reset()"
+	.balign 4
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy15StateRootAttack$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy15StateRootAttack$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x465D78, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8EC  ;# ptr
+	.4byte 0x8025B8A0  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy16StateVacuumStart$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy16StateVacuumStart$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x465D88, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8E8  ;# ptr
+	.4byte 0x8025B8BC  ;# ptr
 .global __vt__Q24util134StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6whispy14StateFallEnemy$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6whispy10ScriptKind$$4Ul$$1
 __vt__Q24util134StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6whispy14StateFallEnemy$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6whispy10ScriptKind$$4Ul$$1:
-	.incbin "baserom.dol", 0x465D98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8E4  ;# ptr
+	.4byte 0x8025B87C  ;# ptr
 .global __vt__Q24util113StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy23StateShotAirBallTornado$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1
 __vt__Q24util113StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy23StateShotAirBallTornado$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1:
-	.incbin "baserom.dol", 0x465DA8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8E0  ;# ptr
+	.4byte 0x8025B804  ;# ptr
 .global __vt__Q24util109StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy19StateShotAirBallBig$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1
 __vt__Q24util109StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy19StateShotAirBallBig$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1:
-	.incbin "baserom.dol", 0x465DB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8DC  ;# ptr
+	.4byte 0x8025B82C  ;# ptr
 .global __vt__Q24util106StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy16StateShotAirBall$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1
 __vt__Q24util106StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6whispy16StateShotAirBall$$4PQ43scn4step4boss4Boss$$4Ul$$4Ul$$4Ul$$1:
-	.incbin "baserom.dol", 0x465DC8, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025B8D8  ;# ptr
+	.4byte 0x8025B854  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256474
 $$256474:
-	.incbin "baserom.dol", 0x4668E8, 0x28
+	.asciz "Scn.Step.Boss.Zankibble.SetNextState"
+	.balign 4
 .global $$256475
 $$256475:
-	.incbin "baserom.dol", 0x466910, 0x14
+	.asciz "void MoveStart()"
+	.balign 4
 .global $$256476
 $$256476:
-	.incbin "baserom.dol", 0x466924, 0x18
+	.asciz "void MoveStartCenter()"
+	.balign 4
 .global $$256477
 $$256477:
-	.incbin "baserom.dol", 0x46693C, 0x14
+	.asciz "void MoveForward()"
+	.balign 4
 .global $$256478
 $$256478:
-	.incbin "baserom.dol", 0x466950, 0x10
+	.asciz "void MoveEnd()"
+	.balign 4
 .global $$256479
 $$256479:
-	.incbin "baserom.dol", 0x466960, 0x10
+	.asciz "void Dash(bool)"
 .global $$256480
 $$256480:
-	.incbin "baserom.dol", 0x466970, 0x1C
+	.asciz "void AttackStraight(float)"
+	.balign 4
 .global $$256481
 $$256481:
-	.incbin "baserom.dol", 0x46698C, 0x24
+	.asciz "void AttackCircle(float,float,bool)"
 .global $$256482
 $$256482:
-	.incbin "baserom.dol", 0x4669B0, 0x24
+	.asciz "void AttackBackCircle(float,float)"
+	.balign 4
 .global $$256483
 $$256483:
-	.incbin "baserom.dol", 0x4669D4, 0x1C
+	.asciz "void JumpAttack(bool)"
+	.balign 4
+	.4byte 0
 .global $$256484
 $$256484:
-	.incbin "baserom.dol", 0x4669F0, 0x10
+	.asciz "void JumpBack()"
 .global __vt__Q24util212StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util212StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4boss6common14StateJumpStart$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateJumpDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
-	.incbin "baserom.dol", 0x466A00, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260384  ;# ptr
+	.4byte 0x802602B8  ;# ptr
 .global __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble15StateJumpAttack6Config$$1
 __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble20StateJumpAttackStart$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble15StateJumpAttack6Config$$1:
-	.incbin "baserom.dol", 0x466A10, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260380  ;# ptr
+	.4byte 0x802602C4  ;# ptr
 .global __vt__Q24util142StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble11StateAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble11StateAttack6Config$$1
 __vt__Q24util142StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble11StateAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble11StateAttack6Config$$1:
-	.incbin "baserom.dol", 0x466A20, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8026037C  ;# ptr
+	.4byte 0x80260310  ;# ptr
 .global __vt__Q24util245StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util245StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4boss6common9StateDash$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateDashDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
-	.incbin "baserom.dol", 0x466A30, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260378  ;# ptr
+	.4byte 0x802602B4  ;# ptr
 .global __vt__Q24util175StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util175StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common16StateMoveForward$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common13StateMoveDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
-	.incbin "baserom.dol", 0x466A40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260374  ;# ptr
+	.4byte 0x802602BC  ;# ptr
 .global __vt__Q24util178StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common14StateMoveJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common18StateMoveJointDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util178StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common14StateMoveJoint$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common18StateMoveJointDesc$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
-	.incbin "baserom.dol", 0x466A50, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260370  ;# ptr
+	.4byte 0x802602C0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253242
 $$253242:
-	.incbin "baserom.dol", 0x467140, 0x24
+	.asciz "Scn.Step.Camera.CameraController"
+	.balign 4
 .global $$253243
 $$253243:
-	.incbin "baserom.dol", 0x467164, 0x14
+	.asciz "void ReqQuake(int)"
+	.balign 4
 .global $$253244
 $$253244:
-	.incbin "baserom.dol", 0x467178, 0x18
+	.asciz "void ReqZoomQuake(int)"
+	.balign 4
 .global $$253245
 $$253245:
-	.incbin "baserom.dol", 0x467190, 0x24
+	.asciz "Scn.Step.Camera.ZoomQuake.Method"
+	.balign 4
 .global $$253246
 $$253246:
-	.incbin "baserom.dol", 0x4671B4, 0x3C
+	.asciz "void SetOffs(float)"
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258827
 $$258827:
-	.incbin "baserom.dol", 0x467498, 0x18
+	.asciz "Scn.Step.Chara.Effect"
+	.balign 4
 .global $$258828
 $$258828:
-	.incbin "baserom.dol", 0x4674B0, 0x34
+	.asciz "void requestP(int,const ref HEL.Math.Vector3)const"
+	.balign 4
 .global $$258829
 $$258829:
-	.incbin "baserom.dol", 0x4674E4, 0x3C
+	.asciz "void requestP(int,const ref HEL.Math.Vector3,float)const"
+	.balign 4
 .global $$258830
 $$258830:
-	.incbin "baserom.dol", 0x467520, 0x48
+	.asciz "void requestPD(int,const ref HEL.Math.Vector3,HEL.Math.Direction3)const"
 .global $$258831
 $$258831:
-	.incbin "baserom.dol", 0x467568, 0x50
+	.asciz "void requestPD(int,const ref HEL.Math.Vector3,HEL.Math.Direction3,float)const"
+	.balign 4
 .global $$258832
 $$258832:
-	.incbin "baserom.dol", 0x4675B8, 0x1C
+	.asciz "void requestN(int,int)const"
 .global $$258833
 $$258833:
-	.incbin "baserom.dol", 0x4675D4, 0x24
+	.asciz "void requestN(int,int,float)const"
+	.balign 4
 .global $$258834
 $$258834:
-	.incbin "baserom.dol", 0x4675F8, 0x38
+	.asciz "void requestN(int,int,const ref HEL.Math.Vector3)const"
+	.balign 4
 .global $$258835
 $$258835:
-	.incbin "baserom.dol", 0x467630, 0x40
+	.asciz "void requestN(int,int,const ref HEL.Math.Vector3const,float)"
+	.balign 4
 .global $$258836
 $$258836:
-	.incbin "baserom.dol", 0x467670, 0x3C
+	.asciz "void requestND(int,int,const ref HEL.Math.Direction3)const"
+	.balign 4
 .global $$258837
 $$258837:
-	.incbin "baserom.dol", 0x4676AC, 0x44
+	.asciz "void requestND(int,int,const ref HEL.Math.Direction3,float)const"
+	.balign 4
 .global $$258838
 $$258838:
-	.incbin "baserom.dol", 0x4676F0, 0x58
+	.asciz "void requestND(int,int,const ref HEL.Math.Direction3,const ref HEL.Math.Vector3)const"
+	.balign 4
 .global $$258839
 $$258839:
-	.incbin "baserom.dol", 0x467748, 0x5C
+	.asciz "void requestND(int,int,const ref HEL.Math.Direction3,const ref HEL.Math.Vector3,float)const"
 .global $$258840
 $$258840:
-	.incbin "baserom.dol", 0x4677A4, 0x14
+	.asciz "void release()const"
 .global $$258841
 $$258841:
-	.incbin "baserom.dol", 0x4677B8, 0x18
+	.asciz "void releaseAndVanish()"
 .global $$258842
 $$258842:
-	.incbin "baserom.dol", 0x4677D0, 0x14
+	.asciz "void RequestP(int)"
+	.balign 4
 .global $$258843
 $$258843:
-	.incbin "baserom.dol", 0x4677E4, 0x1C
+	.asciz "void RequestPS(int,float)"
+	.balign 4
 .global $$258844
 $$258844:
-	.incbin "baserom.dol", 0x467800, 0x14
+	.asciz "void RequestPD(int)"
 .global $$258845
 $$258845:
-	.incbin "baserom.dol", 0x467814, 0x1C
+	.asciz "void RequestPDS(int,float)"
+	.balign 4
 .global $$258846
 $$258846:
-	.incbin "baserom.dol", 0x467830, 0x18
+	.asciz "void RequestN(int,int)"
+	.balign 4
 .global $$258847
 $$258847:
-	.incbin "baserom.dol", 0x467848, 0x20
+	.asciz "void RequestNS(int,int,float)"
+	.balign 4
 .global $$258848
 $$258848:
-	.incbin "baserom.dol", 0x467868, 0x18
+	.asciz "void RequestNO(int,int)"
 .global $$258849
 $$258849:
-	.incbin "baserom.dol", 0x467880, 0x20
+	.asciz "void RequestNOS(int,int,float)"
+	.balign 4
 .global $$258850
 $$258850:
-	.incbin "baserom.dol", 0x4678A0, 0x18
+	.asciz "void RequestND(int,int)"
 .global $$258851
 $$258851:
-	.incbin "baserom.dol", 0x4678B8, 0x20
+	.asciz "void RequestNDS(int,int,float)"
+	.balign 4
 .global $$258852
 $$258852:
-	.incbin "baserom.dol", 0x4678D8, 0x20
+	.asciz "void RequestNDO(int,int)"
+	.balign 4
+	.4byte 0
 .global $$258853
 $$258853:
-	.incbin "baserom.dol", 0x4678F8, 0x20
+	.asciz "void RequestNDOS(int,int,float)"
 .global $$258854
 $$258854:
-	.incbin "baserom.dol", 0x467918, 0x10
+	.asciz "void Release()"
+	.balign 4
 .global $$258855
 $$258855:
-	.incbin "baserom.dol", 0x467928, 0x18
+	.asciz "void ReleaseAndVanish()"
 .global $$258856
 $$258856:
-	.incbin "baserom.dol", 0x467940, 0x30
+	.asciz "void RequestP(int,const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$258857
 $$258857:
-	.incbin "baserom.dol", 0x467970, 0x34
+	.asciz "void RequestP(int,const ref HEL.Math.Vector3,float)"
 .global $$258858
 $$258858:
-	.incbin "baserom.dol", 0x4679A4, 0x50
+	.asciz "void RequestPD(int,const ref HEL.Math.Vector3,const ref HEL.Math.Direciont3)"
+	.balign 4
 .global $$258859
 $$258859:
-	.incbin "baserom.dol", 0x4679F4, 0x54
+	.asciz "void RequestPD(int,const ref HEL.Math.Vector3,const ref HEL.Math.Direciont3,float)"
+	.balign 4
 .global $$258860
 $$258860:
-	.incbin "baserom.dol", 0x467A48, 0x20
+	.asciz "void RequestN(int,int,float)"
+	.balign 4
 .global $$258861
 $$258861:
-	.incbin "baserom.dol", 0x467A68, 0x38
+	.asciz "void RequestN(int,int,const ref HEL.Math.Vector3)"
+	.balign 4
+	.4byte 0
 .global $$258862
 $$258862:
-	.incbin "baserom.dol", 0x467AA0, 0x38
+	.asciz "void RequestN(int,int,const ref HEL.Math.Vector3,float)"
 .global $$258863
 $$258863:
-	.incbin "baserom.dol", 0x467AD8, 0x38
+	.asciz "void RequestND(int,int,const ref HEL.Math.Direction3)"
+	.balign 4
 .global $$258864
 $$258864:
-	.incbin "baserom.dol", 0x467B10, 0x3C
+	.asciz "void RequestND(int,int,const ref HEL.Math.Direction3,float)"
 .global $$258865
 $$258865:
-	.incbin "baserom.dol", 0x467B4C, 0x54
+	.asciz "void RequestND(int,int,const ref HEL.Math.Direction3,const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$258866
 $$258866:
-	.incbin "baserom.dol", 0x467BA0, 0x58
+	.asciz "void RequestND(int,int,const ref HEL.Math.Direction3,const ref HEL.Math.Vector3,float)"
+	.balign 4
 .global $$258867
 $$258867:
-	.incbin "baserom.dol", 0x467BF8, 0x18
+	.asciz "Scn.Step.Chara.ObjColl"
+	.balign 4
 .global $$258868
 $$258868:
-	.incbin "baserom.dol", 0x467C10, 0x20
+	.asciz "void AddBodyColl(int,float)"
+	.4byte 0
 .global $$258869
 $$258869:
-	.incbin "baserom.dol", 0x467C30, 0x28
+	.asciz "void AddBodyColl(int,float,float,float)"
 .global $$258870
 $$258870:
-	.incbin "baserom.dol", 0x467C58, 0x34
+	.asciz "void AddBodyColl(int,float,float,float,float,float)"
 .global $$258871
 $$258871:
-	.incbin "baserom.dol", 0x467C8C, 0x38
+	.asciz "void AddBodyColl(int,float,const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$258872
 $$258872:
-	.incbin "baserom.dol", 0x467CC4, 0x54
+	.asciz "void AddBodyColl(int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$258873
 $$258873:
-	.incbin "baserom.dol", 0x467D18, 0x18
+	.asciz "void ClearBodyColl()"
+	.balign 4
 .global $$258874
 $$258874:
-	.incbin "baserom.dol", 0x467D30, 0x20
+	.asciz "void AddAttack(int,int,float)"
+	.balign 4
 .global $$258875
 $$258875:
-	.incbin "baserom.dol", 0x467D50, 0x2C
+	.asciz "void AddAttack(int,int,float,float,float)"
+	.balign 4
 .global $$258876
 $$258876:
-	.incbin "baserom.dol", 0x467D7C, 0x38
+	.asciz "void AddAttack(int,int,float,float,float,float,float)"
+	.balign 4
 .global $$258877
 $$258877:
-	.incbin "baserom.dol", 0x467DB4, 0x3C
+	.asciz "void AddAttack(int,int,float,float,float,float,float,bool)"
+	.balign 4
 .global $$258878
 $$258878:
-	.incbin "baserom.dol", 0x467DF0, 0x3C
+	.asciz "void AddAttack(int,int,float,const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$258879
 $$258879:
-	.incbin "baserom.dol", 0x467E2C, 0x54
+	.asciz "void AddAttack(int,int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2)"
 .global $$258880
 $$258880:
-	.incbin "baserom.dol", 0x467E80, 0x5C
+	.asciz "void AddAttack(int,int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2,bool)"
+	.balign 4
 .global $$258881
 $$258881:
-	.incbin "baserom.dol", 0x467EDC, 0x14
+	.asciz "void ClearAttack()"
+	.balign 4
 .global $$258882
 $$258882:
-	.incbin "baserom.dol", 0x467EF0, 0x18
+	.asciz "void ClearAttack(int)"
+	.balign 4
 .global $$258883
 $$258883:
-	.incbin "baserom.dol", 0x467F08, 0x1C
+	.asciz "void SetAttackType(int,int)"
 .global $$258884
 $$258884:
-	.incbin "baserom.dol", 0x467F24, 0x28
+	.asciz "void SetAttackCenter(int,float,float)"
+	.balign 4
 .global $$258885
 $$258885:
-	.incbin "baserom.dol", 0x467F4C, 0x14
+	.asciz "void RenewAttack()"
+	.balign 4
 .global $$258886
 $$258886:
-	.incbin "baserom.dol", 0x467F60, 0x20
+	.asciz "void AddSearchHit(int,float)"
+	.balign 4
 .global $$258887
 $$258887:
-	.incbin "baserom.dol", 0x467F80, 0x2C
+	.asciz "void AddSearchHit(int,float,float,float)"
+	.balign 4
 .global $$258888
 $$258888:
-	.incbin "baserom.dol", 0x467FAC, 0x38
+	.asciz "void AddSearchHit(int,float,float,float,float,float)"
+	.balign 4
 .global $$258889
 $$258889:
-	.incbin "baserom.dol", 0x467FE4, 0x3C
+	.asciz "void AddSearchHit(int,float,float,float,float,float,bool)"
+	.balign 4
 .global $$258890
 $$258890:
-	.incbin "baserom.dol", 0x468020, 0x38
+	.asciz "void AddSearchHit(int,float,const ref HEL.Math.Vector2)"
 .global $$258891
 $$258891:
-	.incbin "baserom.dol", 0x468058, 0x58
+	.asciz "void AddSearchHit(int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2)"
+	.balign 4
+	.4byte 0
 .global $$258892
 $$258892:
-	.incbin "baserom.dol", 0x4680B0, 0x58
+	.asciz "void AddSearchHit(int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2,bool)"
 .global $$258893
 $$258893:
-	.incbin "baserom.dol", 0x468108, 0x18
+	.asciz "void ClearSearchHit()"
+	.balign 4
 .global $$258894
 $$258894:
-	.incbin "baserom.dol", 0x468120, 0x20
+	.asciz "void SetSearchHitTeamXlu(int)"
+	.balign 4
 .global $$258895
 $$258895:
-	.incbin "baserom.dol", 0x468140, 0x20
+	.asciz "void AddSearchAttack(int,float)"
 .global $$258896
 $$258896:
-	.incbin "baserom.dol", 0x468160, 0x30
+	.asciz "void AddSearchAttack(int,float,float,float)"
+	.4byte 0
 .global $$258897
 $$258897:
-	.incbin "baserom.dol", 0x468190, 0x38
+	.asciz "void AddSearchAttack(int,float,float,float,float,float)"
 .global $$258898
 $$258898:
-	.incbin "baserom.dol", 0x4681C8, 0x40
+	.asciz "void AddSearchAttack(int,float,float,float,float,float,bool)"
+	.balign 4
 .global $$258899
 $$258899:
-	.incbin "baserom.dol", 0x468208, 0x3C
+	.asciz "void AddSearchAttack(int,float,const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$258900
 $$258900:
-	.incbin "baserom.dol", 0x468244, 0x58
+	.asciz "void AddSearchAttack(int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$258901
 $$258901:
-	.incbin "baserom.dol", 0x46829C, 0x5C
+	.asciz "void AddSearchAttack(int,float,const ref HEL.Math.Vector2,const ref HEL.Math.Vector2,bool)"
+	.balign 4
 .global $$258902
 $$258902:
-	.incbin "baserom.dol", 0x4682F8, 0x1C
+	.asciz "void ClearSearchAttack()"
+	.balign 4
 .global $$258903
 $$258903:
-	.incbin "baserom.dol", 0x468314, 0x20
+	.asciz "bool IsSearchAttackCollide()"
+	.balign 4
 .global $$258904
 $$258904:
-	.incbin "baserom.dol", 0x468334, 0x20
+	.asciz "void SetBodyCollStateNormal()"
+	.balign 4
 .global $$258905
 $$258905:
-	.incbin "baserom.dol", 0x468354, 0x24
+	.asciz "void SetBodyCollStateInvincible()"
+	.balign 4
 .global $$258906
 $$258906:
-	.incbin "baserom.dol", 0x468378, 0x1C
+	.asciz "void SetBodyCollStateXlu()"
+	.balign 4
 .global $$258907
 $$258907:
-	.incbin "baserom.dol", 0x468394, 0x20
+	.asciz "void SetBodyCollStateHitOnly()"
+	.balign 4
 .global $$258908
 $$258908:
-	.incbin "baserom.dol", 0x4683B4, 0x24
+	.asciz "void SetBodyCollStateCaptureOnly()"
+	.balign 4
 .global $$258909
 $$258909:
-	.incbin "baserom.dol", 0x4683D8, 0x18
+	.asciz "Scn.Step.Chara.Model"
+	.balign 4
 .global $$258910
 $$258910:
-	.incbin "baserom.dol", 0x4683F0, 0x24
+	.asciz "void SetScale3(float,float,float)"
+	.balign 4
 .global $$258911
 $$258911:
-	.incbin "baserom.dol", 0x468414, 0x1C
+	.asciz "Scn.Step.Chara.ModelRotCtrl"
 .global $$258912
 $$258912:
-	.incbin "baserom.dol", 0x468430, 0x14
+	.asciz "void SetValid(bool)"
 .global $$258913
 $$258913:
-	.incbin "baserom.dol", 0x468444, 0x1C
+	.asciz "void ResetRotTarget()"
+	.balign 4
+	.4byte 0
 .global $$258914
 $$258914:
-	.incbin "baserom.dol", 0x468460, 0x10
+	.asciz "float GetRotH()"
 .global $$258915
 $$258915:
-	.incbin "baserom.dol", 0x468470, 0x18
+	.asciz "void InitRotH(float)"
+	.balign 4
 .global $$258916
 $$258916:
-	.incbin "baserom.dol", 0x468488, 0x14
+	.asciz "void SetRotH(float)"
 .global $$258917
 $$258917:
-	.incbin "baserom.dol", 0x46849C, 0x1C
+	.asciz "void SetRotHTarget(float)"
+	.balign 4
 .global $$258918
 $$258918:
-	.incbin "baserom.dol", 0x4684B8, 0x1C
+	.asciz "void SetRotHIntpRate(float)"
 .global $$258919
 $$258919:
-	.incbin "baserom.dol", 0x4684D4, 0x1C
+	.asciz "void SetRotHIntoTarget()"
+	.balign 4
 .global $$258920
 $$258920:
-	.incbin "baserom.dol", 0x4684F0, 0x10
+	.asciz "float GetRotV()"
 .global $$258921
 $$258921:
-	.incbin "baserom.dol", 0x468500, 0x18
+	.asciz "void InitRotV(float)"
+	.balign 4
 .global $$258922
 $$258922:
-	.incbin "baserom.dol", 0x468518, 0x14
+	.asciz "void SetRotV(float)"
 .global $$258923
 $$258923:
-	.incbin "baserom.dol", 0x46852C, 0x1C
+	.asciz "void SetRotVTarget(float)"
+	.balign 4
 .global $$258924
 $$258924:
-	.incbin "baserom.dol", 0x468548, 0x1C
+	.asciz "void SetRotVIntpRate(float)"
 .global $$258925
 $$258925:
-	.incbin "baserom.dol", 0x468564, 0x1C
+	.asciz "void SetRotVIntoTarget()"
+	.balign 4
 .global $$258926
 $$258926:
-	.incbin "baserom.dol", 0x468580, 0x10
+	.asciz "float GetRotD()"
 .global $$258927
 $$258927:
-	.incbin "baserom.dol", 0x468590, 0x18
+	.asciz "void InitRotD(float)"
+	.balign 4
 .global $$258928
 $$258928:
-	.incbin "baserom.dol", 0x4685A8, 0x14
+	.asciz "void SetRotD(float)"
 .global $$258929
 $$258929:
-	.incbin "baserom.dol", 0x4685BC, 0x1C
+	.asciz "void SetRotDTarget(float)"
+	.balign 4
 .global $$258930
 $$258930:
-	.incbin "baserom.dol", 0x4685D8, 0x1C
+	.asciz "void SetRotDIntpRate(float)"
 .global $$258931
 $$258931:
-	.incbin "baserom.dol", 0x4685F4, 0x1C
+	.asciz "void SetRotDIntoTarget()"
+	.balign 4
 .global $$258932
 $$258932:
-	.incbin "baserom.dol", 0x468610, 0x18
+	.asciz "Scn.Step.Chara.Trigger"
+	.balign 4
 .global $$258933
 $$258933:
-	.incbin "baserom.dol", 0x468628, 0x10
+	.asciz "void Set(int)"
+	.balign 4
 .global $$258934
 $$258934:
-	.incbin "baserom.dol", 0x468638, 0x18
+	.asciz "Scn.Step.Chara.Shake"
+	.balign 4
 .global $$258935
 $$258935:
-	.incbin "baserom.dol", 0x468650, 0x14
+	.asciz "void Request(int)"
+	.balign 4
 .global $$259186
 $$259186:
-	.incbin "baserom.dol", 0x468664, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026BD28  ;# ptr
 .global $$259211
 $$259211:
-	.incbin "baserom.dol", 0x468670, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026BDD4  ;# ptr
 .global $$259220
 $$259220:
-	.incbin "baserom.dol", 0x46867C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026BEA8  ;# ptr
 .global $$259229
 $$259229:
-	.incbin "baserom.dol", 0x468688, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026BF68  ;# ptr
 .global $$259238
 $$259238:
-	.incbin "baserom.dol", 0x468694, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C028  ;# ptr
 .global $$259246
 $$259246:
-	.incbin "baserom.dol", 0x4686A0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C0D4  ;# ptr
 .global $$259254
 $$259254:
-	.incbin "baserom.dol", 0x4686AC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C194  ;# ptr
 .global $$259262
 $$259262:
-	.incbin "baserom.dol", 0x4686B8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C240  ;# ptr
 .global $$259270
 $$259270:
-	.incbin "baserom.dol", 0x4686C4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C2EC  ;# ptr
 .global $$259277
 $$259277:
-	.incbin "baserom.dol", 0x4686D0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C384  ;# ptr
 .global $$259284
 $$259284:
-	.incbin "baserom.dol", 0x4686DC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C444  ;# ptr
 .global $$259293
 $$259293:
-	.incbin "baserom.dol", 0x4686E8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C4F0  ;# ptr
 .global $$259302
 $$259302:
-	.incbin "baserom.dol", 0x4686F4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C59C  ;# ptr
 .global $$259310
 $$259310:
-	.incbin "baserom.dol", 0x468700, 0x88
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8026C634  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252121
 $$252121:
-	.incbin "baserom.dol", 0x4687A0, 0x1C
+	.asciz "Scn.Step.Core.BGMController"
 .global $$252122
 $$252122:
-	.incbin "baserom.dol", 0x4687BC, 0x1C
+	.asciz "void Request(int,int,bool)"
+	.balign 4
 .global $$252123
 $$252123:
-	.incbin "baserom.dol", 0x4687D8, 0x18
+	.asciz "void Unrequest(int)"
+	.4byte 0
 .global $$252124
 $$252124:
-	.incbin "baserom.dol", 0x4687F0, 0x10
+	.asciz "void Pause(int)"
 .global $$252125
 $$252125:
-	.incbin "baserom.dol", 0x468800, 0x14
+	.asciz "void Pause(int,int)"
 .global $$252126
 $$252126:
-	.incbin "baserom.dol", 0x468814, 0x14
+	.asciz "void Unpause(int)"
+	.balign 4
 .global $$252127
 $$252127:
-	.incbin "baserom.dol", 0x468828, 0x18
+	.asciz "void Unpause(int,int)"
+	.balign 4
 .global $$252128
 $$252128:
-	.incbin "baserom.dol", 0x468840, 0x48
+	.asciz "void SetVolume(int,float)"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256469
 $$256469:
-	.incbin "baserom.dol", 0x46C300, 0x18
+	.asciz "Scn.Step.Enemy.Effect"
+	.balign 4
 .global $$256470
 $$256470:
-	.incbin "baserom.dol", 0x46C318, 0x14
+	.asciz "void BindNormal()"
+	.balign 4
 .global $$256471
 $$256471:
-	.incbin "baserom.dol", 0x46C32C, 0x14
+	.asciz "void BindState()"
+	.balign 4
 .global $$256472
 $$256472:
-	.incbin "baserom.dol", 0x46C340, 0x14
+	.asciz "void BindSuper()"
+	.balign 4
 .global $$256473
 $$256473:
-	.incbin "baserom.dol", 0x46C354, 0x18
+	.asciz "Scn.Step.Enemy.SoundSE"
+	.balign 4
 .global $$256474
 $$256474:
-	.incbin "baserom.dol", 0x46C36C, 0x18
+	.asciz "Scn.Step.Enemy.Flash"
+	.balign 4
 .global $$256475
 $$256475:
-	.incbin "baserom.dol", 0x46C384, 0x20
+	.asciz "void SetEnf1F(int,int,int,int)"
+	.balign 4
 .global $$256476
 $$256476:
-	.incbin "baserom.dol", 0x46C3A4, 0x1C
+	.asciz "Scn.Step.Enemy.Utility"
+	.balign 4
+	.4byte 0
 .global $$256477
 $$256477:
-	.incbin "baserom.dol", 0x46C3C0, 0x20
+	.asciz "float GetModelScaleBySizeType()"
 .global $$256478
 $$256478:
-	.incbin "baserom.dol", 0x46C3E0, 0x1C
+	.asciz "bool IsNearestPlayerRight()"
 .global $$256479
 $$256479:
-	.incbin "baserom.dol", 0x46C3FC, 0x1C
+	.asciz "void SetTargetByDirType()"
+	.balign 4
 .global $$256480
 $$256480:
-	.incbin "baserom.dol", 0x46C418, 0x10
+	.asciz "void Turn()"
+	.4byte 0
 .global $$256481
 $$256481:
-	.incbin "baserom.dol", 0x46C428, 0x10
+	.asciz "bool ChkCliff()"
 .global $$256482
 $$256482:
-	.incbin "baserom.dol", 0x46C438, 0x14
+	.asciz "void ChkCliffTurn()"
 .global $$256483
 $$256483:
-	.incbin "baserom.dol", 0x46C44C, 0x1C
+	.asciz "void ChkNururiTurn()"
+	.balign 4
+	.4byte 0
 .global $$256484
 $$256484:
-	.incbin "baserom.dol", 0x46C468, 0x10
+	.asciz "void TurnHero()"
 .global $$256485
 $$256485:
-	.incbin "baserom.dol", 0x46C478, 0xC
+	.asciz "int Level()"
 .global $$256486
 $$256486:
-	.incbin "baserom.dol", 0x46C484, 0x10
+	.asciz "void Suicide()"
+	.balign 4
 .global $$256487
 $$256487:
-	.incbin "baserom.dol", 0x46C494, 0x2C
+	.asciz "bool IsHeroInRange(float,float,float,float)"
 .global $$256488
 $$256488:
-	.incbin "baserom.dol", 0x46C4C0, 0x34
+	.asciz "bool IsHeroInRangeByDir(float,float,float,float)"
+	.balign 4
 .global $$256489
 $$256489:
-	.incbin "baserom.dol", 0x46C4F4, 0x20
+	.asciz "bool IsExistLand(float,float)"
+	.balign 4
 .global $$256490
 $$256490:
-	.incbin "baserom.dol", 0x46C514, 0x1C
+	.asciz "void GetDirVecByDirType()"
+	.balign 4
 .global $$256491
 $$256491:
-	.incbin "baserom.dol", 0x46C530, 0x18
+	.asciz "bool IsFixDirType()"
+	.4byte 0
 .global $$256492
 $$256492:
-	.incbin "baserom.dol", 0x46C548, 0x18
+	.asciz "float GetRotByDirType()"
 .global $$256493
 $$256493:
-	.incbin "baserom.dol", 0x46C560, 0x20
+	.asciz "bool IsWaterGrid(float,float)"
+	.balign 4
 .global $$256494
 $$256494:
-	.incbin "baserom.dol", 0x46C580, 0x18
+	.asciz "bool IsPlayerExist()"
+	.balign 4
 .global $$256495
 $$256495:
-	.incbin "baserom.dol", 0x46C598, 0x14
+	.asciz "bool IsCameraOut()"
+	.balign 4
 .global $$256496
 $$256496:
-	.incbin "baserom.dol", 0x46C5AC, 0x20
+	.asciz "bool IsExistKeyCarryingHero()"
+	.balign 4
 .global $$256497
 $$256497:
-	.incbin "baserom.dol", 0x46C5CC, 0x74
+	.asciz "bool IsExtra()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256079
 $$256079:
-	.incbin "baserom.dol", 0x46EE38, 0x24
+	.asciz "Scn.Step.Enemy.Common.SetNextState"
+	.balign 4
 .global $$256080
 $$256080:
-	.incbin "baserom.dol", 0x46EE5C, 0xC
+	.asciz "void Wait()"
 .global $$256081
 $$256081:
-	.incbin "baserom.dol", 0x46EE68, 0x14
+	.asciz "void WalkStraight()"
 .global $$256082
 $$256082:
-	.incbin "baserom.dol", 0x46EE7C, 0x14
+	.asciz "void WalkAround()"
+	.balign 4
 .global $$256083
 $$256083:
-	.incbin "baserom.dol", 0x46EE90, 0xC
+	.asciz "void Fall()"
 .global $$256084
 $$256084:
-	.incbin "baserom.dol", 0x46EE9C, 0xC
+	.asciz "void Fly()"
+	.balign 4
 .global $$256085
 $$256085:
-	.incbin "baserom.dol", 0x46EEA8, 0x18
+	.asciz "Scn.Step.Enemy.Common"
+	.balign 4
 .global $$256086
 $$256086:
-	.incbin "baserom.dol", 0x46EEC0, 0x18
+	.asciz "int Random_Rand(int)"
+	.balign 4
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EED8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80290F8C  ;# ptr
+	.4byte 0x80290F10  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EEF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80290F88  ;# ptr
+	.4byte 0x80290F2C  ;# ptr
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common17StateWalkStraight$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EF08, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80290F84  ;# ptr
+	.4byte 0x80290F48  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EF18, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x80290F80  ;# ptr
+	.4byte 0x80290F64  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254073
 $$254073:
-	.incbin "baserom.dol", 0x46F4C8, 0x20
+	.asciz "Scn.Step.Enemy.ArmorDee.Custom"
+	.balign 4
 .global $$254074
 $$254074:
-	.incbin "baserom.dol", 0x46F4E8, 0x18
+	.asciz "float GetFrameRate()"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255899
 $$255899:
-	.incbin "baserom.dol", 0x46F6B0, 0x28
+	.asciz "Scn.Step.Enemy.BladeKnight.SetNextState"
 .global $$255900
 $$255900:
-	.incbin "baserom.dol", 0x46F6D8, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255901
 $$255901:
-	.incbin "baserom.dol", 0x46F6E8, 0x14
+	.asciz "void DoubleAttack()"
 .global $$255902
 $$255902:
-	.incbin "baserom.dol", 0x46F6FC, 0xC
+	.asciz "void Walk()"
 .global $$255903
 $$255903:
-	.incbin "baserom.dol", 0x46F708, 0x10
+	.asciz "void StepBack()"
 .global $$255904
 $$255904:
-	.incbin "baserom.dol", 0x46F718, 0x20
+	.asciz "void GrandLowperEscape()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util117StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util117StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F738, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80296D04  ;# ptr
+	.4byte 0x80296C68  ;# ptr
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight13StateStepBack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight13StateStepBack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F748, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80296D00  ;# ptr
+	.4byte 0x80296C84  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F758, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80296CFC  ;# ptr
+	.4byte 0x80296CA0  ;# ptr
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight17StateDoubleAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight17StateDoubleAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F768, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80296CF8  ;# ptr
+	.4byte 0x80296CBC  ;# ptr
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F778, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x80296CF4  ;# ptr
+	.4byte 0x80296CD8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256078
 $$256078:
-	.incbin "baserom.dol", 0x46FBC8, 0x24
+	.asciz "Scn.Step.Enemy.Blipper.SetNextState"
 .global $$256079
 $$256079:
-	.incbin "baserom.dol", 0x46FBEC, 0x10
+	.asciz "void Chase()"
+	.balign 4
 .global $$256080
 $$256080:
-	.incbin "baserom.dol", 0x46FBFC, 0xC
+	.asciz "void Dive()"
 .global $$256081
 $$256081:
-	.incbin "baserom.dol", 0x46FC08, 0xC
+	.asciz "void Fall()"
 .global $$256082
 $$256082:
-	.incbin "baserom.dol", 0x46FC14, 0x14
+	.asciz "void FlyingOut()"
+	.balign 4
 .global $$256083
 $$256083:
-	.incbin "baserom.dol", 0x46FC28, 0xC
+	.asciz "void Jump()"
 .global $$256084
 $$256084:
-	.incbin "baserom.dol", 0x46FC34, 0x10
+	.asciz "void Landing()"
+	.balign 4
 .global $$256085
 $$256085:
-	.incbin "baserom.dol", 0x46FC44, 0xC
+	.asciz "void Move()"
 .global $$256086
 $$256086:
-	.incbin "baserom.dol", 0x46FC50, 0x20
+	.asciz "void FattyBufferEscapeNear()"
+	.balign 4
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FC70, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A28  ;# ptr
+	.4byte 0x8029892C  ;# ptr
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateDive$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateDive$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FC80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A24  ;# ptr
+	.4byte 0x80298948  ;# ptr
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FC90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A20  ;# ptr
+	.4byte 0x80298964  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper14StateFlyingOut$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper14StateFlyingOut$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FCA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A1C  ;# ptr
+	.4byte 0x80298980  ;# ptr
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FCB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A18  ;# ptr
+	.4byte 0x8029899C  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper12StateLanding$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper12StateLanding$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FCC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A14  ;# ptr
+	.4byte 0x802989B8  ;# ptr
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper9StateMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FCD0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A10  ;# ptr
+	.4byte 0x802989D4  ;# ptr
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferEscapeNear$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferEscapeNear$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FCE0, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298A0C  ;# ptr
+	.4byte 0x802989F0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255833
 $$255833:
-	.incbin "baserom.dol", 0x470158, 0x24
+	.asciz "Scn.Step.Enemy.Bouncy.SetNextState"
+	.balign 4
 .global $$255834
 $$255834:
-	.incbin "baserom.dol", 0x47017C, 0xC
+	.asciz "void Jump()"
 .global $$255835
 $$255835:
-	.incbin "baserom.dol", 0x470188, 0x10
+	.asciz "void Landing()"
+	.balign 4
 .global $$255836
 $$255836:
-	.incbin "baserom.dol", 0x470198, 0x20
+	.asciz "Scn.Step.Enemy.Bouncy.Custom"
+	.balign 4
 .global $$255837
 $$255837:
-	.incbin "baserom.dol", 0x4701B8, 0x18
+	.asciz "void SetSpeedH(float)"
+	.balign 4
 .global $$255838
 $$255838:
-	.incbin "baserom.dol", 0x4701D0, 0x18
+	.asciz "void SetSpeedV(float)"
+	.balign 4
 .global $$255839
 $$255839:
-	.incbin "baserom.dol", 0x4701E8, 0x20
+	.asciz "void GrandLowperEscape()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470208, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029CB3C  ;# ptr
+	.4byte 0x8029CAE0  ;# ptr
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy12StateLanding$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy12StateLanding$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470218, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029CB38  ;# ptr
+	.4byte 0x8029CAFC  ;# ptr
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470228, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029CB34  ;# ptr
+	.4byte 0x8029CB18  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255839
 $$255839:
-	.incbin "baserom.dol", 0x470588, 0x24
+	.asciz "Scn.Step.Enemy.Bowby.SetNextState"
+	.balign 4
 .global $$255840
 $$255840:
-	.incbin "baserom.dol", 0x4705AC, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255841
 $$255841:
-	.incbin "baserom.dol", 0x4705BC, 0x1C
+	.asciz "Scn.Step.Enemy.Bowby.Custom"
 .global $$255842
 $$255842:
-	.incbin "baserom.dol", 0x4705D8, 0x18
+	.asciz "bool IsPlayerInArea()"
+	.balign 4
 .global $$255843
 $$255843:
-	.incbin "baserom.dol", 0x4705F0, 0x14
+	.asciz "bool IsAnimStart()"
+	.balign 4
 .global $$255844
 $$255844:
-	.incbin "baserom.dol", 0x470604, 0x14
+	.asciz "void OffAnimStart()"
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5bowby11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5bowby11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470618, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029E240  ;# ptr
+	.4byte 0x8029E224  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254184
 $$254184:
-	.incbin "baserom.dol", 0x470860, 0x24
+	.asciz "Scn.Step.Enemy.BrontoBurt.Custom"
+	.balign 4
 .global $$254185
 $$254185:
-	.incbin "baserom.dol", 0x470884, 0x14
+	.asciz "bool IsHitFloor()"
+	.balign 4
 .global $$254186
 $$254186:
-	.incbin "baserom.dol", 0x470898, 0x78
+	.asciz "bool IsHitRoof()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255719
 $$255719:
-	.incbin "baserom.dol", 0x470C58, 0x28
+	.asciz "Scn.Step.Enemy.BroomHatter.SetNextState"
 .global $$255720
 $$255720:
-	.incbin "baserom.dol", 0x470C80, 0xC
+	.asciz "void Walk()"
 .global $$255721
 $$255721:
-	.incbin "baserom.dol", 0x470C8C, 0x1C
+	.asciz "void GrandLowperEscape()"
+	.balign 4
 .global $$255722
 $$255722:
-	.incbin "baserom.dol", 0x470CA8, 0x14
+	.asciz "void CreditWalk()"
+	.balign 4
 .global $$255723
 $$255723:
-	.incbin "baserom.dol", 0x470CBC, 0x14
+	.asciz "void CreditPraise()"
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470CD0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0BCC  ;# ptr
+	.4byte 0x802A0B70  ;# ptr
 .global __vt__Q24util117StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util117StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470CE0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0BC8  ;# ptr
+	.4byte 0x802A0B8C  ;# ptr
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470CF0, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0BC4  ;# ptr
+	.4byte 0x802A0BA8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255979
 $$255979:
-	.incbin "baserom.dol", 0x471068, 0x24
+	.asciz "Scn.Step.Enemy.Cappy.SetNextState"
+	.balign 4
 .global $$255980
 $$255980:
-	.incbin "baserom.dol", 0x47108C, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255981
 $$255981:
-	.incbin "baserom.dol", 0x47109C, 0x1C
+	.asciz "Scn.Step.Enemy.Cappy.Custom"
 .global $$255982
 $$255982:
-	.incbin "baserom.dol", 0x4710B8, 0x18
+	.asciz "int ThrowCount()"
+	.balign 4
+	.4byte 0
 .global $$255983
 $$255983:
-	.incbin "baserom.dol", 0x4710D0, 0x18
+	.asciz "void SetThrowCount(int)"
 .global $$255984
 $$255984:
-	.incbin "baserom.dol", 0x4710E8, 0x10
+	.asciz "bool Cap()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4710F8, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A2404  ;# ptr
+	.4byte 0x802A23E8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255881
 $$255881:
-	.incbin "baserom.dol", 0x4716D0, 0x24
+	.asciz "Scn.Step.Enemy.Chilly.SetNextState"
+	.balign 4
 .global $$255882
 $$255882:
-	.incbin "baserom.dol", 0x4716F4, 0xC
+	.asciz "void Wait()"
 .global $$255883
 $$255883:
-	.incbin "baserom.dol", 0x471700, 0xC
+	.asciz "void Move()"
 .global $$255884
 $$255884:
-	.incbin "baserom.dol", 0x47170C, 0x14
+	.asciz "void LookAround()"
+	.balign 4
 .global $$255885
 $$255885:
-	.incbin "baserom.dol", 0x471720, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255886
 $$255886:
-	.incbin "baserom.dol", 0x471730, 0x14
+	.asciz "void CreditMove()"
+	.balign 4
 .global $$255887
 $$255887:
-	.incbin "baserom.dol", 0x471744, 0x24
+	.asciz "void CreditPraise()"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly9StateMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly9StateMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471768, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A5F94  ;# ptr
+	.4byte 0x802A5F18  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly15StateLookAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly15StateLookAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471778, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A5F90  ;# ptr
+	.4byte 0x802A5F34  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471788, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A5F8C  ;# ptr
+	.4byte 0x802A5F50  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly15StateCreditMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6chilly15StateCreditMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471798, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A5F88  ;# ptr
+	.4byte 0x802A5F6C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255521
 $$255521:
-	.incbin "baserom.dol", 0x471A70, 0x24
+	.asciz "Scn.Step.Enemy.Como.SetNextState"
+	.balign 4
 .global $$255522
 $$255522:
-	.incbin "baserom.dol", 0x471A94, 0xC
+	.asciz "void Dive()"
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateDive$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateDive$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471AA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6C84  ;# ptr
+	.4byte 0x802A6C68  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255869
 $$255869:
-	.incbin "baserom.dol", 0x471EA0, 0x24
+	.asciz "Scn.Step.Enemy.Degout.SetNextState"
+	.balign 4
 .global $$255870
 $$255870:
-	.incbin "baserom.dol", 0x471EC4, 0x10
+	.asciz "void Chase()"
+	.balign 4
 .global $$255871
 $$255871:
-	.incbin "baserom.dol", 0x471ED4, 0x20
+	.asciz "Scn.Step.Enemy.Degout.Custom"
+	.balign 4
 .global $$255872
 $$255872:
-	.incbin "baserom.dol", 0x471EF4, 0x14
+	.asciz "bool IsChaseFlag()"
+	.balign 4
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6degout10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6degout10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471F08, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ACF38  ;# ptr
+	.4byte 0x802ACF1C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255902
 $$255902:
-	.incbin "baserom.dol", 0x4721A0, 0x28
+	.asciz "Scn.Step.Enemy.DubiorJr.SetNextState"
+	.balign 4
 .global $$255903
 $$255903:
-	.incbin "baserom.dol", 0x4721C8, 0x10
+	.asciz "void Fly(float)"
 .global $$255904
 $$255904:
-	.incbin "baserom.dol", 0x4721D8, 0x14
+	.asciz "void Move(float)"
+	.balign 4
 .global $$255905
 $$255905:
-	.incbin "baserom.dol", 0x4721EC, 0x14
+	.asciz "void Dash(float)"
+	.balign 4
 .global $$255906
 $$255906:
-	.incbin "baserom.dol", 0x472200, 0x18
+	.asciz "void Back(float)"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util96StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr9StateBack$$4PQ43scn4step5enemy5Enemy$$4f$$1
 __vt__Q24util96StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr9StateBack$$4PQ43scn4step5enemy5Enemy$$4f$$1:
-	.incbin "baserom.dol", 0x472218, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ADEE4  ;# ptr
+	.4byte 0x802ADE9C  ;# ptr
 .global __vt__Q24util98StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr9StateMove$$4PQ43scn4step5enemy5Enemy$$4f$$4f$$1
 __vt__Q24util98StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr9StateMove$$4PQ43scn4step5enemy5Enemy$$4f$$4f$$1:
-	.incbin "baserom.dol", 0x472228, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ADEE0  ;# ptr
+	.4byte 0x802ADE78  ;# ptr
 .global __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr8StateFly$$4PQ43scn4step5enemy5Enemy$$4f$$1
 __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy8dubiorjr8StateFly$$4PQ43scn4step5enemy5Enemy$$4f$$1:
-	.incbin "baserom.dol", 0x472238, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ADEDC  ;# ptr
+	.4byte 0x802ADEBC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256662
 $$256662:
-	.incbin "baserom.dol", 0x472508, 0x20
+	.asciz "Scn.Step.Enemy.Elec.Custom"
+	.balign 4
+	.4byte 0
 .global $$256663
 $$256663:
-	.incbin "baserom.dol", 0x472528, 0x20
+	.asciz "void SetViewOffset(float,float)"
 .global $$256664
 $$256664:
-	.incbin "baserom.dol", 0x472548, 0x18
+	.asciz "void AttackEffect0()"
+	.balign 4
 .global $$256665
 $$256665:
-	.incbin "baserom.dol", 0x472560, 0x50
+	.asciz "void AttackEffect1()"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256629
 $$256629:
-	.incbin "baserom.dol", 0x4728B0, 0x24
+	.asciz "Scn.Step.Enemy.Flamer.SetNextState"
+	.balign 4
 .global $$256630
 $$256630:
-	.incbin "baserom.dol", 0x4728D4, 0x10
+	.asciz "void MoveCWR()"
+	.balign 4
 .global $$256631
 $$256631:
-	.incbin "baserom.dol", 0x4728E4, 0x10
+	.asciz "void MoveCCW()"
+	.balign 4
 .global $$256632
 $$256632:
-	.incbin "baserom.dol", 0x4728F4, 0x10
+	.asciz "void Chase()"
+	.balign 4
 .global $$256633
 $$256633:
-	.incbin "baserom.dol", 0x472904, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$256634
 $$256634:
-	.incbin "baserom.dol", 0x472914, 0x10
+	.asciz "void Agony()"
+	.balign 4
 .global $$256635
 $$256635:
-	.incbin "baserom.dol", 0x472924, 0xC
+	.asciz "void Fall()"
 .global $$256636
 $$256636:
-	.incbin "baserom.dol", 0x472930, 0x14
+	.asciz "void ChaseOrAgony()"
 .global $$256637
 $$256637:
-	.incbin "baserom.dol", 0x472944, 0x20
+	.asciz "Scn.Step.Enemy.Flamer.Custom"
+	.balign 4
 .global $$256638
 $$256638:
-	.incbin "baserom.dol", 0x472964, 0x10
+	.asciz "bool IsMove()"
+	.balign 4
 .global $$256639
 $$256639:
-	.incbin "baserom.dol", 0x472974, 0x18
+	.asciz "void SetIsMove(bool)"
+	.balign 4
 .global $$256640
 $$256640:
-	.incbin "baserom.dol", 0x47298C, 0xC
+	.asciz "void Dead()"
 .global $$256641
 $$256641:
-	.incbin "baserom.dol", 0x472998, 0x20
+	.asciz "void SetViewOffset(float,float)"
 .global $$256642
 $$256642:
-	.incbin "baserom.dol", 0x4729B8, 0x14
+	.asciz "void ChaseEffect()"
+	.balign 4
 .global $$256643
 $$256643:
-	.incbin "baserom.dol", 0x4729CC, 0x18
+	.asciz "void AttackREffect()"
+	.balign 4
 .global $$256644
 $$256644:
-	.incbin "baserom.dol", 0x4729E4, 0x1C
+	.asciz "void AttackLEffect()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer12StateMoveCWR$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer12StateMoveCWR$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x472A00, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BBC  ;# ptr
+	.4byte 0x802B1A3C  ;# ptr
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer12StateMoveCCW$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer12StateMoveCCW$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x472A10, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BB8  ;# ptr
+	.4byte 0x802B1A9C  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x472A20, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BB4  ;# ptr
+	.4byte 0x802B1AF8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x472A40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BB0  ;# ptr
+	.4byte 0x802B1B14  ;# ptr
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer10StateAgony$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6flamer10StateAgony$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x472A50, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BAC  ;# ptr
+	.4byte 0x802B1B30  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q53scn4step5enemy6flamer12StateMoveCCW
 __vt__Q53scn4step5enemy6flamer12StateMoveCCW:
-	.incbin "baserom.dol", 0x472A70, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1BA8  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802B36D4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802B3B20  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
+	.4byte 0x802B1A34  ;# ptr
 .global __vt__Q53scn4step5enemy6flamer12StateMoveCWR
 __vt__Q53scn4step5enemy6flamer12StateMoveCWR:
-	.incbin "baserom.dol", 0x472A94, 0x84
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B1B4C  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802B36D4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802B3B20  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
+	.4byte 0x802B1A38  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255574
 $$255574:
-	.incbin "baserom.dol", 0x472FF0, 0x24
+	.asciz "Scn.Step.Enemy.Gemra.SetNextState"
+	.balign 4
 .global $$255575
 $$255575:
-	.incbin "baserom.dol", 0x473014, 0xC
+	.asciz "void Fly()"
+	.balign 4
 .global $$255576
 $$255576:
-	.incbin "baserom.dol", 0x473020, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gemra11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gemra11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473030, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B5684  ;# ptr
+	.4byte 0x802B5648  ;# ptr
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gemra8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5gemra8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473040, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B5680  ;# ptr
+	.4byte 0x802B5664  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255988
 $$255988:
-	.incbin "baserom.dol", 0x473238, 0x24
+	.asciz "Scn.Step.Enemy.Gigatzo.SetNextState"
 .global $$255989
 $$255989:
-	.incbin "baserom.dol", 0x47325C, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255990
 $$255990:
-	.incbin "baserom.dol", 0x47326C, 0xC
+	.asciz "void Aim()"
+	.balign 4
 .global $$255991
 $$255991:
-	.incbin "baserom.dol", 0x473278, 0x20
+	.asciz "Scn.Step.Enemy.Gigatzo.Custom"
+	.balign 4
 .global $$255992
 $$255992:
-	.incbin "baserom.dol", 0x473298, 0x20
+	.asciz "bool IsPlayerInAimArea()"
+	.balign 4
+	.4byte 0
 .global $$255993
 $$255993:
-	.incbin "baserom.dol", 0x4732B8, 0x18
+	.asciz "int SetWaitAttackTime()"
 .global $$255994
 $$255994:
-	.incbin "baserom.dol", 0x4732D0, 0x20
+	.asciz "int SetWaitBackAttackTime()"
+	.4byte 0
 .global $$255995
 $$255995:
-	.incbin "baserom.dol", 0x4732F0, 0x20
+	.asciz "int SetWaitBackAttackMoreTime()"
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo8StateAim$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo8StateAim$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473310, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B69C0  ;# ptr
+	.4byte 0x802B6984  ;# ptr
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473320, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B69BC  ;# ptr
+	.4byte 0x802B69A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255976
 $$255976:
-	.incbin "baserom.dol", 0x4737E8, 0x24
+	.asciz "Scn.Step.Enemy.HotHead.SetNextState"
 .global $$255977
 $$255977:
-	.incbin "baserom.dol", 0x47380C, 0x14
+	.asciz "void AttackBreath()"
 .global $$255978
 $$255978:
-	.incbin "baserom.dol", 0x473820, 0x14
+	.asciz "void AttackShot()"
+	.balign 4
 .global $$255979
 $$255979:
-	.incbin "baserom.dol", 0x473834, 0x20
+	.asciz "Scn.Step.Enemy.HotHead.Custom"
+	.balign 4
 .global $$255980
 $$255980:
-	.incbin "baserom.dol", 0x473854, 0x18
+	.asciz "bool IsPlayerPosNear()"
+	.balign 4
 .global $$255981
 $$255981:
-	.incbin "baserom.dol", 0x47386C, 0x14
+	.asciz "bool IsInViewRect()"
 .global $$255982
 $$255982:
-	.incbin "baserom.dol", 0x473880, 0x20
+	.asciz "int SetAfterAttackFrame()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7hothead15StateAttackShot$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7hothead15StateAttackShot$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4738A0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BA0FC  ;# ptr
+	.4byte 0x802BA0C0  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7hothead17StateAttackBreath$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7hothead17StateAttackBreath$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4738B0, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BA0F8  ;# ptr
+	.4byte 0x802BA0DC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255955
 $$255955:
-	.incbin "baserom.dol", 0x473B58, 0x24
+	.asciz "Scn.Step.Enemy.Juckle.SetNextState"
+	.balign 4
 .global $$255956
 $$255956:
-	.incbin "baserom.dol", 0x473B7C, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255957
 $$255957:
-	.incbin "baserom.dol", 0x473B8C, 0x10
+	.asciz "void Follow()"
+	.balign 4
 .global $$255958
 $$255958:
-	.incbin "baserom.dol", 0x473B9C, 0x20
+	.asciz "Scn.Step.Enemy.Juckle.Custom"
+	.balign 4
 .global $$255959
 $$255959:
-	.incbin "baserom.dol", 0x473BBC, 0x1C
+	.asciz "bool IsPlayerInArea()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6juckle11StateFollow$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6juckle11StateFollow$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473BD8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BB120  ;# ptr
+	.4byte 0x802BB0E4  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6juckle11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6juckle11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473BE8, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BB11C  ;# ptr
+	.4byte 0x802BB100  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256136
 $$256136:
-	.incbin "baserom.dol", 0x473E20, 0x24
+	.asciz "Scn.Step.Enemy.Kabu.SetNextState"
+	.balign 4
 .global $$256137
 $$256137:
-	.incbin "baserom.dol", 0x473E44, 0xC
+	.asciz "void Jump()"
 .global $$256138
 $$256138:
-	.incbin "baserom.dol", 0x473E50, 0xC
+	.asciz "void Move()"
 .global $$256139
 $$256139:
-	.incbin "baserom.dol", 0x473E5C, 0x14
+	.asciz "void MoveAround()"
+	.balign 4
 .global $$256140
 $$256140:
-	.incbin "baserom.dol", 0x473E70, 0x1C
+	.asciz "void GrandLowperEscape()"
+	.balign 4
 .global $$256141
 $$256141:
-	.incbin "baserom.dol", 0x473E8C, 0x1C
+	.asciz "Scn.Step.Enemy.Kabu.Custom"
+	.balign 4
 .global $$256142
 $$256142:
-	.incbin "baserom.dol", 0x473EA8, 0x18
+	.asciz "int setJumpWaitTime()"
+	.balign 4
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473EC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC5C0  ;# ptr
+	.4byte 0x802BC544  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu15StateMoveAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu15StateMoveAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473ED0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC5BC  ;# ptr
+	.4byte 0x802BC560  ;# ptr
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu9StateMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu9StateMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473EE0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC5B8  ;# ptr
+	.4byte 0x802BC57C  ;# ptr
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x473EF0, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC5B4  ;# ptr
+	.4byte 0x802BC598  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256081
 $$256081:
-	.incbin "baserom.dol", 0x474358, 0x28
+	.asciz "Scn.Step.Enemy.KnuckleJoe.SetNextState"
+	.balign 4
 .global $$256082
 $$256082:
-	.incbin "baserom.dol", 0x474380, 0xC
+	.asciz "void Walk()"
 .global $$256083
 $$256083:
-	.incbin "baserom.dol", 0x47438C, 0x14
+	.asciz "void WalkStepBack()"
 .global $$256084
 $$256084:
-	.incbin "baserom.dol", 0x4743A0, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$256085
 $$256085:
-	.incbin "baserom.dol", 0x4743B0, 0x24
+	.asciz "Scn.Step.Enemy.KnuckleJoe.Custom"
+	.balign 4
 .global $$256086
 $$256086:
-	.incbin "baserom.dol", 0x4743D4, 0x18
+	.asciz "void AttackEffect(int)"
+	.balign 4
 .global $$256087
 $$256087:
-	.incbin "baserom.dol", 0x4743EC, 0xC
+	.asciz "void Shot()"
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4743F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BF09C  ;# ptr
+	.4byte 0x802BF040  ;# ptr
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe17StateWalkStepBack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe17StateWalkStepBack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474408, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BF098  ;# ptr
+	.4byte 0x802BF05C  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10knucklejoe9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474418, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BF094  ;# ptr
+	.4byte 0x802BF078  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255828
 $$255828:
-	.incbin "baserom.dol", 0x474B10, 0x24
+	.asciz "Scn.Step.Enemy.Lanzer.SetNextState"
+	.balign 4
 .global $$255829
 $$255829:
-	.incbin "baserom.dol", 0x474B34, 0xC
+	.asciz "void Wait()"
 .global $$255830
 $$255830:
-	.incbin "baserom.dol", 0x474B40, 0xC
+	.asciz "void Walk()"
 .global $$255831
 $$255831:
-	.incbin "baserom.dol", 0x474B4C, 0x14
+	.asciz "void WalkAround()"
+	.balign 4
 .global $$255832
 $$255832:
-	.incbin "baserom.dol", 0x474B60, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255833
 $$255833:
-	.incbin "baserom.dol", 0x474B70, 0x20
+	.asciz "Scn.Step.Enemy.Lanzer.Custom"
+	.balign 4
 .global $$255834
 $$255834:
-	.incbin "baserom.dol", 0x474B90, 0x18
+	.asciz "void AttackEffect()"
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474BA8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1B00  ;# ptr
+	.4byte 0x802C1A84  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474BB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1AFC  ;# ptr
+	.4byte 0x802C1AA0  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474BC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1AF8  ;# ptr
+	.4byte 0x802C1ABC  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer9StateWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6lanzer9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474BD8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1AF4  ;# ptr
+	.4byte 0x802C1AD8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255605
 $$255605:
-	.incbin "baserom.dol", 0x474EB0, 0x24
+	.asciz "Scn.Step.Enemy.Leafan.SetNextState"
+	.balign 4
 .global $$255606
 $$255606:
-	.incbin "baserom.dol", 0x474ED4, 0xC
+	.asciz "void Jump()"
 .global $$255607
 $$255607:
-	.incbin "baserom.dol", 0x474EE0, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474EF0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C33F8  ;# ptr
+	.4byte 0x802C33BC  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x474F00, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C33F4  ;# ptr
+	.4byte 0x802C33D8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255631
 $$255631:
-	.incbin "baserom.dol", 0x475190, 0x24
+	.asciz "Scn.Step.Enemy.Mumbies.SetNextState"
 .global $$255632
 $$255632:
-	.incbin "baserom.dol", 0x4751B4, 0x14
+	.asciz "void Chase()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7mumbies10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7mumbies10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4751C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C4CE8  ;# ptr
+	.4byte 0x802C4CCC  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255490
 $$255490:
-	.incbin "baserom.dol", 0x4755F0, 0x24
+	.asciz "Scn.Step.Enemy.Noddy.SetNextState"
+	.balign 4
 .global $$255491
 $$255491:
-	.incbin "baserom.dol", 0x475614, 0xC
+	.asciz "void Walk()"
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5noddy9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5noddy9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475620, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C71A0  ;# ptr
+	.4byte 0x802C7184  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255673
 $$255673:
-	.incbin "baserom.dol", 0x475740, 0x24
+	.asciz "Scn.Step.Enemy.Nruff.SetNextState"
+	.balign 4
 .global $$255674
 $$255674:
-	.incbin "baserom.dol", 0x475764, 0xC
+	.asciz "void Walk()"
 .global $$255675
 $$255675:
-	.incbin "baserom.dol", 0x475770, 0xC
+	.asciz "void Stay()"
 .global $$255676
 $$255676:
-	.incbin "baserom.dol", 0x47577C, 0x1C
+	.asciz "void GrandLowperEscape()"
+	.balign 4
 .global $$255677
 $$255677:
-	.incbin "baserom.dol", 0x475798, 0x1C
+	.asciz "Scn.Step.Enemy.Nruff.Model"
+	.balign 4
 .global $$255678
 $$255678:
-	.incbin "baserom.dol", 0x4757B4, 0x1C
+	.asciz "void ReqScriptWalk()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4757D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C776C  ;# ptr
+	.4byte 0x802C7710  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff9StateStay$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff9StateStay$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4757E0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C7768  ;# ptr
+	.4byte 0x802C772C  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff9StateWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff9StateWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4757F0, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C7764  ;# ptr
+	.4byte 0x802C7748  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255889
 $$255889:
-	.incbin "baserom.dol", 0x475B78, 0x24
+	.asciz "Scn.Step.Enemy.Owgulf.SetNextState"
+	.balign 4
 .global $$255890
 $$255890:
-	.incbin "baserom.dol", 0x475B9C, 0xC
+	.asciz "void Wait()"
 .global $$255891
 $$255891:
-	.incbin "baserom.dol", 0x475BA8, 0x10
+	.asciz "void WaitFix()"
+	.balign 4
 .global $$255892
 $$255892:
-	.incbin "baserom.dol", 0x475BB8, 0x14
+	.asciz "void FlyStraight()"
+	.balign 4
 .global $$255893
 $$255893:
-	.incbin "baserom.dol", 0x475BCC, 0x24
+	.asciz "void Attack()"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateFlyWaitFix$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateFlyWaitFix$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475BF0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C9AC8  ;# ptr
+	.4byte 0x802C9A4C  ;# ptr
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf16StateFlyStraight$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf16StateFlyStraight$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475C00, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C9AC4  ;# ptr
+	.4byte 0x802C9A68  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateAttack1Way$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateAttack1Way$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475C10, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C9AC0  ;# ptr
+	.4byte 0x802C9A84  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateAttack3Way$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6owgulf15StateAttack3Way$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475C20, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C9ABC  ;# ptr
+	.4byte 0x802C9AA0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255979
 $$255979:
-	.incbin "baserom.dol", 0x4766B0, 0x28
+	.asciz "Scn.Step.Enemy.PoppyBroJr.SetNextState"
+	.balign 4
 .global $$255980
 $$255980:
-	.incbin "baserom.dol", 0x4766D8, 0xC
+	.asciz "void Move()"
 .global $$255981
 $$255981:
-	.incbin "baserom.dol", 0x4766E4, 0x10
+	.asciz "void Throw()"
+	.balign 4
 .global $$255982
 $$255982:
-	.incbin "baserom.dol", 0x4766F4, 0x24
+	.asciz "Scn.Step.Enemy.PoppyBroJr.Custom"
+	.balign 4
 .global $$255983
 $$255983:
-	.incbin "baserom.dol", 0x476718, 0x14
+	.asciz "int SetWaitTime()"
+	.balign 4
 .global $$255984
 $$255984:
-	.incbin "baserom.dol", 0x47672C, 0x14
+	.asciz "bool IsThrowValid()"
 .global $$255985
 $$255985:
-	.incbin "baserom.dol", 0x476740, 0x18
+	.asciz "void RequestBomb()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10poppybrojr9StateMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10poppybrojr9StateMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476758, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D1568  ;# ptr
+	.4byte 0x802D152C  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10poppybrojr10StateThrow$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10poppybrojr10StateThrow$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476768, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D1564  ;# ptr
+	.4byte 0x802D1548  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255661
 $$255661:
-	.incbin "baserom.dol", 0x476BB0, 0x24
+	.asciz "Scn.Step.Enemy.Rocky.SetNextState"
+	.balign 4
 .global $$255662
 $$255662:
-	.incbin "baserom.dol", 0x476BD4, 0x14
+	.asciz "void WalkStart()"
+	.balign 4
 .global $$255663
 $$255663:
-	.incbin "baserom.dol", 0x476BE8, 0xC
+	.asciz "void Stay()"
 .global $$255664
 $$255664:
-	.incbin "baserom.dol", 0x476BF4, 0x2C
+	.asciz "void CreditGoodbye()"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky9StateStay$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky9StateStay$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476C20, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D360C  ;# ptr
+	.4byte 0x802D35D0  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky14StateWalkStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky14StateWalkStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476C30, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D3608  ;# ptr
+	.4byte 0x802D35EC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255890
 $$255890:
-	.incbin "baserom.dol", 0x477350, 0x24
+	.asciz "Scn.Step.Enemy.Scarfy.SetNextState"
+	.balign 4
 .global $$255891
 $$255891:
-	.incbin "baserom.dol", 0x477374, 0x10
+	.asciz "void Escape()"
+	.balign 4
 .global $$255892
 $$255892:
-	.incbin "baserom.dol", 0x477384, 0x20
+	.asciz "Scn.Step.Enemy.Scarfy.Custom"
+	.balign 4
 .global $$255893
 $$255893:
-	.incbin "baserom.dol", 0x4773A4, 0x14
+	.asciz "bool IsAnger()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy11StateEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy11StateEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4773B8, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D949C  ;# ptr
+	.4byte 0x802D9480  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255748
 $$255748:
-	.incbin "baserom.dol", 0x4779D0, 0x24
+	.asciz "Scn.Step.Enemy.Sheld.SetNextState"
+	.balign 4
 .global $$255749
 $$255749:
-	.incbin "baserom.dol", 0x4779F4, 0xC
+	.asciz "void Dash()"
 .global $$255750
 $$255750:
-	.incbin "baserom.dol", 0x477A00, 0x10
+	.asciz "void Chase()"
+	.balign 4
 .global $$255751
 $$255751:
-	.incbin "baserom.dol", 0x477A10, 0x10
+	.asciz "void Escape()"
+	.balign 4
 .global $$255752
 $$255752:
-	.incbin "baserom.dol", 0x477A20, 0x20
+	.asciz "void GrandLowperEscape()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477A40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DC838  ;# ptr
+	.4byte 0x802DC7BC  ;# ptr
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld11StateEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld11StateEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477A50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DC834  ;# ptr
+	.4byte 0x802DC7D8  ;# ptr
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477A60, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DC830  ;# ptr
+	.4byte 0x802DC7F4  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld9StateDash$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld9StateDash$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477A70, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DC82C  ;# ptr
+	.4byte 0x802DC810  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255896
 $$255896:
-	.incbin "baserom.dol", 0x477FB0, 0x24
+	.asciz "Scn.Step.Enemy.Shotzo.SetNextState"
+	.balign 4
 .global $$255897
 $$255897:
-	.incbin "baserom.dol", 0x477FD4, 0xC
+	.asciz "void Shot()"
 .global $$255898
 $$255898:
-	.incbin "baserom.dol", 0x477FE0, 0xC
+	.asciz "void Aim()"
+	.balign 4
 .global $$255899
 $$255899:
-	.incbin "baserom.dol", 0x477FEC, 0x20
+	.asciz "Scn.Step.Enemy.Shotzo.Custom"
+	.balign 4
 .global $$255900
 $$255900:
-	.incbin "baserom.dol", 0x47800C, 0x1C
+	.asciz "bool IsPlayerInAimArea()"
+	.balign 4
 .global $$255901
 $$255901:
-	.incbin "baserom.dol", 0x478028, 0x10
+	.asciz "bool IsFixPos()"
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6shotzo9StateShot$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6shotzo9StateShot$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478038, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DFD9C  ;# ptr
+	.4byte 0x802DFD60  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6shotzo8StateAim$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6shotzo8StateAim$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478048, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DFD98  ;# ptr
+	.4byte 0x802DFD7C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255925
 $$255925:
-	.incbin "baserom.dol", 0x4782D0, 0x28
+	.asciz "Scn.Step.Enemy.SirKibble.SetNextState"
+	.balign 4
 .global $$255926
 $$255926:
-	.incbin "baserom.dol", 0x4782F8, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$255927
 $$255927:
-	.incbin "baserom.dol", 0x478308, 0x10
+	.asciz "void Jump()"
+	.4byte 0
 .global $$255928
 $$255928:
-	.incbin "baserom.dol", 0x478318, 0x20
+	.asciz "Scn.Step.Enemy.SirKibble.Custom"
 .global $$255929
 $$255929:
-	.incbin "baserom.dol", 0x478338, 0x14
+	.asciz "void ChkPlayerPos()"
 .global $$255930
 $$255930:
-	.incbin "baserom.dol", 0x47834C, 0x18
+	.asciz "bool IsPlayerUpPos()"
+	.balign 4
 .global $$255931
 $$255931:
-	.incbin "baserom.dol", 0x478364, 0x1C
+	.asciz "bool IsChangeDirType()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478380, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E11F4  ;# ptr
+	.4byte 0x802E11B8  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478390, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E11F0  ;# ptr
+	.4byte 0x802E11D4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255955
 $$255955:
-	.incbin "baserom.dol", 0x478730, 0x28
+	.asciz "Scn.Step.Enemy.SisterBound.SetNextState"
 .global $$255956
 $$255956:
-	.incbin "baserom.dol", 0x478758, 0x14
+	.asciz "void JumpStart()"
+	.balign 4
 .global $$255957
 $$255957:
-	.incbin "baserom.dol", 0x47876C, 0x10
+	.asciz "void Landing()"
+	.balign 4
 .global $$255958
 $$255958:
-	.incbin "baserom.dol", 0x47877C, 0x24
+	.asciz "Scn.Step.Enemy.SisterBound.Custom"
+	.balign 4
 .global $$255959
 $$255959:
-	.incbin "baserom.dol", 0x4787A0, 0x18
+	.asciz "bool IsChangeDir()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11sisterbound12StateLanding$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11sisterbound12StateLanding$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4787B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E259C  ;# ptr
+	.4byte 0x802E2560  ;# ptr
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11sisterbound14StateJumpStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11sisterbound14StateJumpStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4787C8, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E2598  ;# ptr
+	.4byte 0x802E257C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256129
 $$256129:
-	.incbin "baserom.dol", 0x478C60, 0x24
+	.asciz "Scn.Step.Enemy.Sodory.SetNextState"
+	.balign 4
 .global $$256130
 $$256130:
-	.incbin "baserom.dol", 0x478C84, 0xC
+	.asciz "void Wait()"
 .global $$256131
 $$256131:
-	.incbin "baserom.dol", 0x478C90, 0x14
+	.asciz "void WalkAround()"
+	.balign 4
 .global $$256132
 $$256132:
-	.incbin "baserom.dol", 0x478CA4, 0xC
+	.asciz "void Fly()"
+	.balign 4
 .global $$256133
 $$256133:
-	.incbin "baserom.dol", 0x478CB0, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$256134
 $$256134:
-	.incbin "baserom.dol", 0x478CC0, 0x14
+	.asciz "void GroundAttack()"
 .global $$256135
 $$256135:
-	.incbin "baserom.dol", 0x478CD4, 0x20
+	.asciz "Scn.Step.Enemy.Sodory.Custom"
+	.balign 4
 .global $$256136
 $$256136:
-	.incbin "baserom.dol", 0x478CF4, 0x14
+	.asciz "void AttackEffect()"
 .global $$256137
 $$256137:
-	.incbin "baserom.dol", 0x478D08, 0x18
+	.asciz "void SetDirection()"
+	.4byte 0
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory17StateGroundAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory17StateGroundAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478D20, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E480C  ;# ptr
+	.4byte 0x802E4770  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478D30, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E4808  ;# ptr
+	.4byte 0x802E478C  ;# ptr
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478D40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E4804  ;# ptr
+	.4byte 0x802E47A8  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478D50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E4800  ;# ptr
+	.4byte 0x802E47C4  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory9StateWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sodory9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478D60, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E47FC  ;# ptr
+	.4byte 0x802E47E0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255574
 $$255574:
-	.incbin "baserom.dol", 0x479078, 0x24
+	.asciz "Scn.Step.Enemy.Sparky.SetNextState"
+	.balign 4
 .global $$255575
 $$255575:
-	.incbin "baserom.dol", 0x47909C, 0xC
+	.asciz "void Jump()"
 .global $$255576
 $$255576:
-	.incbin "baserom.dol", 0x4790A8, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sparky11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4790B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E6BE8  ;# ptr
+	.4byte 0x802E6BAC  ;# ptr
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sparky9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6sparky9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4790C8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E6BE4  ;# ptr
+	.4byte 0x802E6BC8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256382
 $$256382:
-	.incbin "baserom.dol", 0x4795E8, 0x28
+	.asciz "Scn.Step.Enemy.Tsukikage.SetNextState"
+	.balign 4
 .global $$256383
 $$256383:
-	.incbin "baserom.dol", 0x479610, 0xC
+	.asciz "void Jump()"
 .global $$256384
 $$256384:
-	.incbin "baserom.dol", 0x47961C, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global $$256385
 $$256385:
-	.incbin "baserom.dol", 0x47962C, 0x14
+	.asciz "void WallAttack()"
+	.balign 4
 .global $$256386
 $$256386:
-	.incbin "baserom.dol", 0x479640, 0xC
+	.asciz "void Wait()"
 .global $$256387
 $$256387:
-	.incbin "baserom.dol", 0x47964C, 0x14
+	.asciz "void JumpAttack()"
+	.balign 4
 .global $$256388
 $$256388:
-	.incbin "baserom.dol", 0x479660, 0xC
+	.asciz "void Warp()"
 .global $$256389
 $$256389:
-	.incbin "baserom.dol", 0x47966C, 0xC
+	.asciz "void Wall()"
 .global $$256390
 $$256390:
-	.incbin "baserom.dol", 0x479678, 0x20
+	.asciz "Scn.Step.Enemy.Tsukikage.Custom"
 .global $$256391
 $$256391:
-	.incbin "baserom.dol", 0x479698, 0x10
+	.asciz "bool IsWall()"
+	.balign 4
 .global $$256392
 $$256392:
-	.incbin "baserom.dol", 0x4796A8, 0x14
+	.asciz "bool IsJumpAttack()"
 .global $$256393
 $$256393:
-	.incbin "baserom.dol", 0x4796BC, 0x18
+	.asciz "bool IsFirstAppear()"
+	.balign 4
 .global $$256394
 $$256394:
-	.incbin "baserom.dol", 0x4796D4, 0x14
+	.asciz "bool IsWallAttack()"
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4796E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA414  ;# ptr
+	.4byte 0x802EA338  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWarp$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWarp$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4796F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA410  ;# ptr
+	.4byte 0x802EA354  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage15StateJumpAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage15StateJumpAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479708, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA40C  ;# ptr
+	.4byte 0x802EA370  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479718, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA408  ;# ptr
+	.4byte 0x802EA38C  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage15StateWallAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage15StateWallAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479728, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA404  ;# ptr
+	.4byte 0x802EA3A8  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479738, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA400  ;# ptr
+	.4byte 0x802EA3C4  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9tsukikage9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479748, 0x80
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA3FC  ;# ptr
+	.4byte 0x802EA3E0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255574
 $$255574:
-	.incbin "baserom.dol", 0x479B80, 0x28
+	.asciz "Scn.Step.Enemy.WaddleDee.SetNextState"
+	.balign 4
 .global $$255575
 $$255575:
-	.incbin "baserom.dol", 0x479BA8, 0x1C
+	.asciz "void GrandLowperEscape()"
+	.balign 4
 .global $$255576
 $$255576:
-	.incbin "baserom.dol", 0x479BC4, 0x24
+	.asciz "void CreditPraise()"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStart$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479BE8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ED1DC  ;# ptr
+	.4byte 0x802ED1C0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255574
 $$255574:
-	.incbin "baserom.dol", 0x47A468, 0x28
+	.asciz "Scn.Step.Enemy.WaddleDoo.SetNextState"
+	.balign 4
 .global $$255575
 $$255575:
-	.incbin "baserom.dol", 0x47A490, 0xC
+	.asciz "void Jump()"
 .global $$255576
 $$255576:
-	.incbin "baserom.dol", 0x47A49C, 0x14
+	.asciz "void Attack()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledoo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledoo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x47A4B0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EF954  ;# ptr
+	.4byte 0x802EF918  ;# ptr
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledoo9StateJump$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledoo9StateJump$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x47A4C0, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EF950  ;# ptr
+	.4byte 0x802EF934  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255490
 $$255490:
-	.incbin "baserom.dol", 0x47A910, 0x28
+	.asciz "Scn.Step.Enemy.WaterGalbo.SetNextState"
+	.balign 4
 .global $$255491
 $$255491:
-	.incbin "baserom.dol", 0x47A938, 0x10
+	.asciz "void Attack()"
+	.balign 4
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10watergalbo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10watergalbo11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x47A948, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F005C  ;# ptr
+	.4byte 0x802F0040  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255490
 $$255490:
-	.incbin "baserom.dol", 0x47AAC8, 0x24
+	.asciz "Scn.Step.Enemy.Whippy.SetNextState"
+	.balign 4
 .global $$255491
 $$255491:
-	.incbin "baserom.dol", 0x47AAEC, 0x14
+	.asciz "void Attack()"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6whippy11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6whippy11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x47AB00, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F0734  ;# ptr
+	.4byte 0x802F0718  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255444
 $$255444:
-	.incbin "baserom.dol", 0x47B130, 0x28
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.SoundSE"
+	.balign 4
 .global $$255445
 $$255445:
-	.incbin "baserom.dol", 0x47B158, 0x14
+	.asciz "void BindNormal()"
+	.balign 4
 .global $$255446
 $$255446:
-	.incbin "baserom.dol", 0x47B16C, 0x24
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Custom"
 .global $$255447
 $$255447:
-	.incbin "baserom.dol", 0x47B190, 0x14
+	.asciz "void UnpauseBGM()"
+	.balign 4
 .global $$255448
 $$255448:
-	.incbin "baserom.dol", 0x47B1A4, 0x1C
+	.asciz "void StartDoorUnlockDemo()"
+	.balign 4
 .global $$255449
 $$255449:
-	.incbin "baserom.dol", 0x47B1C0, 0x1C
+	.asciz "bool IsDoorUnlockDemoEnd()"
+	.balign 4
 .global $$255450
 $$255450:
-	.incbin "baserom.dol", 0x47B1DC, 0x1C
+	.asciz "void SetZoom(bool,float)"
+	.balign 4
 .global $$255451
 $$255451:
-	.incbin "baserom.dol", 0x47B1F8, 0x14
+	.asciz "void UnsetZoom()"
+	.balign 4
 .global $$255452
 $$255452:
-	.incbin "baserom.dol", 0x47B20C, 0x14
+	.asciz "void UnsetZoomAll()"
 .global $$255453
 $$255453:
-	.incbin "baserom.dol", 0x47B220, 0x10
+	.asciz "void SetEnd()"
+	.balign 4
 .global $$255454
 $$255454:
-	.incbin "baserom.dol", 0x47B230, 0x24
+	.asciz "void SetupOtherDoorUnlockDemoZoom()"
 .global $$255455
 $$255455:
-	.incbin "baserom.dol", 0x47B254, 0x24
+	.asciz "bool IsExistOtherDoorUnlockDemo()"
+	.balign 4
 .global $$255456
 $$255456:
-	.incbin "baserom.dol", 0x47B278, 0x20
+	.asciz "void StartOtherDoorUnlockDemo()"
 .global $$255457
 $$255457:
-	.incbin "baserom.dol", 0x47B298, 0x20
+	.asciz "bool IsOtherDoorUnlockDemoEnd()"
 .global $$255458
 $$255458:
-	.incbin "baserom.dol", 0x47B2B8, 0x20
+	.asciz "void SetZoomTargetToMusouDoor()"
 .global $$255459
 $$255459:
-	.incbin "baserom.dol", 0x47B2D8, 0x28
+	.asciz "void SetZoomTargetToMasterDoor()"
+	.balign 4
+	.4byte 0
 .global $$255460
 $$255460:
-	.incbin "baserom.dol", 0x47B300, 0x20
+	.asciz "void StartMusouDoorUnlockDemo()"
 .global $$255461
 $$255461:
-	.incbin "baserom.dol", 0x47B320, 0x20
+	.asciz "bool IsMusouDoorUnlockDemoEnd()"
 .global $$255462
 $$255462:
-	.incbin "baserom.dol", 0x47B340, 0x24
+	.asciz "void StartMasterDoorUnlockDemo()"
+	.balign 4
 .global $$255463
 $$255463:
-	.incbin "baserom.dol", 0x47B364, 0x24
+	.asciz "bool IsMasterDoorUnlockDemoEnd()"
+	.balign 4
 .global $$255464
 $$255464:
-	.incbin "baserom.dol", 0x47B388, 0x20
+	.asciz "void FirstPlayStartCameraMove()"
 .global $$255465
 $$255465:
-	.incbin "baserom.dol", 0x47B3A8, 0x2C
+	.asciz "void FirstLvInStartCameraMove(int,float)"
+	.balign 4
 .global $$255466
 $$255466:
-	.incbin "baserom.dol", 0x47B3D4, 0x24
+	.asciz "void ChangeGradeAppearInfo()"
+	.balign 4
+	.4byte 0
 .global $$255467
 $$255467:
-	.incbin "baserom.dol", 0x47B3F8, 0x20
+	.asciz "void ChangeGradeDisappearInfo()"
 .global $$255468
 $$255468:
-	.incbin "baserom.dol", 0x47B418, 0x20
+	.asciz "void ChangeGradeAppearModel()"
+	.balign 4
 .global $$255469
 $$255469:
-	.incbin "baserom.dol", 0x47B438, 0x24
+	.asciz "void ChangeGradeDisappearModel()"
+	.balign 4
 .global $$255470
 $$255470:
-	.incbin "baserom.dol", 0x47B45C, 0x28
+	.asciz "bool ChangeGradeIsDisappearedModel()"
+	.balign 4
 .global $$255471
 $$255471:
-	.incbin "baserom.dol", 0x47B484, 0x24
+	.asciz "void ChangeGradeRequestBGM()"
+	.balign 4
+	.4byte 0
 .global $$255472
 $$255472:
-	.incbin "baserom.dol", 0x47B4A8, 0x20
+	.asciz "void ChangeGradeRequestEffect()"
 .global $$255473
 $$255473:
-	.incbin "baserom.dol", 0x47B4C8, 0x1C
+	.asciz "int ChangeGradeGetBGMType()"
 .global $$255474
 $$255474:
-	.incbin "baserom.dol", 0x47B4E4, 0x30
+	.asciz "void AppearWarpStarStartCameraMove(int,float)"
+	.balign 4
 .global $$255475
 $$255475:
-	.incbin "baserom.dol", 0x47B514, 0x2C
+	.asciz "void AppearWarpStarEndCameraMove(int,float)"
 .global $$255476
 $$255476:
-	.incbin "baserom.dol", 0x47B540, 0x20
+	.asciz "void AllStageClearAppearInfo()"
+	.balign 4
 .global $$255477
 $$255477:
-	.incbin "baserom.dol", 0x47B560, 0x24
+	.asciz "void AllStageClearDisappearInfo()"
+	.balign 4
 .global $$255478
 $$255478:
-	.incbin "baserom.dol", 0x47B584, 0x20
+	.asciz "void AllStageClearRequestBGM()"
+	.balign 4
 .global $$255479
 $$255479:
-	.incbin "baserom.dol", 0x47B5A4, 0x74
+	.asciz "void AllStageClearRequestEffect()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256126
 $$256126:
-	.incbin "baserom.dol", 0x47C5E0, 0x28
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.SoundSE"
+	.balign 4
 .global $$256127
 $$256127:
-	.incbin "baserom.dol", 0x47C608, 0x14
+	.asciz "void BindNormal()"
+	.balign 4
 .global $$256128
 $$256128:
-	.incbin "baserom.dol", 0x47C61C, 0x28
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Custom"
+	.balign 4
 .global $$256129
 $$256129:
-	.incbin "baserom.dol", 0x47C644, 0x14
+	.asciz "void FadeOut(int)"
+	.balign 4
 .global $$256130
 $$256130:
-	.incbin "baserom.dol", 0x47C658, 0x14
+	.asciz "void FadeIn(int)"
+	.balign 4
 .global $$256131
 $$256131:
-	.incbin "baserom.dol", 0x47C66C, 0x1C
+	.asciz "int SetZoom(float,float)"
+	.balign 4
 .global $$256132
 $$256132:
-	.incbin "baserom.dol", 0x47C688, 0x1C
+	.asciz "void UpdateZoom(int,float)"
+	.balign 4
 .global $$256133
 $$256133:
-	.incbin "baserom.dol", 0x47C6A4, 0x14
+	.asciz "void UnsetZoom(int)"
 .global $$256134
 $$256134:
-	.incbin "baserom.dol", 0x47C6B8, 0x1C
+	.asciz "void SetVisibility(bool)"
+	.balign 4
 .global $$256135
 $$256135:
-	.incbin "baserom.dol", 0x47C6D4, 0x14
+	.asciz "void UnlockAnim()"
+	.balign 4
 .global $$256136
 $$256136:
-	.incbin "baserom.dol", 0x47C6E8, 0x18
+	.asciz "bool IsUnlockAnimEnd()"
+	.balign 4
 .global $$256137
 $$256137:
-	.incbin "baserom.dol", 0x47C700, 0x18
+	.asciz "void StarStartEffect()"
+	.balign 4
 .global $$256138
 $$256138:
-	.incbin "baserom.dol", 0x47C718, 0x18
+	.asciz "void StarStartAnim()"
+	.balign 4
 .global $$256139
 $$256139:
-	.incbin "baserom.dol", 0x47C730, 0x20
+	.asciz "void StarSetZoom(bool,float)"
+	.balign 4
 .global $$256140
 $$256140:
-	.incbin "baserom.dol", 0x47C750, 0x18
+	.asciz "void StarUnsetZoom()"
+	.balign 4
 .global $$256141
 $$256141:
-	.incbin "baserom.dol", 0x47C768, 0x14
+	.asciz "bool StarIsFlyEnd()"
 .global $$256142
 $$256142:
-	.incbin "baserom.dol", 0x47C77C, 0x24
+	.asciz "void ReqUnlockEffect1_UnlockDoor()"
+	.balign 4
 .global $$256143
 $$256143:
-	.incbin "baserom.dol", 0x47C7A0, 0x1C
+	.asciz "bool IsNeedLastUnlockAnim()"
 .global $$256144
 $$256144:
-	.incbin "baserom.dol", 0x47C7BC, 0x18
+	.asciz "void LastUnlockAnim()"
+	.balign 4
 .global $$256145
 $$256145:
-	.incbin "baserom.dol", 0x47C7D4, 0x1C
+	.asciz "bool IsLastUnlockAnimEnd()"
+	.balign 4
 .global $$256146
 $$256146:
-	.incbin "baserom.dol", 0x47C7F0, 0x20
+	.asciz "void ReqUnlockEffect1_LockHit()"
 .global $$256147
 $$256147:
-	.incbin "baserom.dol", 0x47C810, 0x24
+	.asciz "void ReqUnlockEffect1_LockBreak()"
+	.balign 4
 .global $$256148
 $$256148:
-	.incbin "baserom.dol", 0x47C834, 0x24
+	.asciz "void ReqUnlockEffect1_UnlockEnd()"
+	.balign 4
 .global $$256149
 $$256149:
-	.incbin "baserom.dol", 0x47C858, 0x28
+	.asciz "void ReqUnlockEffect2_ChainBreak(int)"
+	.balign 4
 .global $$256150
 $$256150:
-	.incbin "baserom.dol", 0x47C880, 0x18
+	.asciz "void EndUnlockDemo()"
+	.balign 4
 .global $$256151
 $$256151:
-	.incbin "baserom.dol", 0x47C898, 0x68
+	.asciz "void SetDemoEnd()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254867
 $$254867:
-	.incbin "baserom.dol", 0x47DBC0, 0x20
+	.asciz "Scn.Step.Gimmick.Monitor.Custom"
 .global $$254868
 $$254868:
-	.incbin "baserom.dol", 0x47DBE0, 0x10
+	.asciz "void SeReq()"
+	.balign 4
 .global $$254869
 $$254869:
-	.incbin "baserom.dol", 0x47DBF0, 0x14
+	.asciz "void ViewNoise()"
+	.balign 4
 .global $$254870
 $$254870:
-	.incbin "baserom.dol", 0x47DC04, 0x14
+	.asciz "void ViewCaution()"
+	.balign 4
 .global $$254871
 $$254871:
-	.incbin "baserom.dol", 0x47DC18, 0x10
+	.asciz "void ViewMap()"
+	.balign 4
 .global $$254872
 $$254872:
-	.incbin "baserom.dol", 0x47DC28, 0x10
+	.asciz "void ViewShip()"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257355
 $$257355:
-	.incbin "baserom.dol", 0x47DCE0, 0x24
+	.asciz "Scn.Step.Gimmick.ShipEvent.Custom"
+	.balign 4
 .global $$257356
 $$257356:
-	.incbin "baserom.dol", 0x47DD04, 0x18
+	.asciz "void CCtrl_SeenPhoto()"
+	.balign 4
 .global $$257357
 $$257357:
-	.incbin "baserom.dol", 0x47DD1C, 0x1C
+	.asciz "void CCtrl_SeenTalkZoom()"
+	.balign 4
 .global $$257358
 $$257358:
-	.incbin "baserom.dol", 0x47DD38, 0x20
+	.asciz "void CCtrl_SeenMonitor()"
+	.balign 4
+	.4byte 0
 .global $$257359
 $$257359:
-	.incbin "baserom.dol", 0x47DD58, 0x18
+	.asciz "void CCtrl_SeenReboot()"
 .global $$257360
 $$257360:
-	.incbin "baserom.dol", 0x47DD70, 0x20
+	.asciz "void CCtrl_SeenFirstDemoTalk()"
+	.balign 4
 .global $$257361
 $$257361:
-	.incbin "baserom.dol", 0x47DD90, 0x20
+	.asciz "void CCtrl_SeenFirstDemoRoom()"
+	.balign 4
 .global $$257362
 $$257362:
-	.incbin "baserom.dol", 0x47DDB0, 0x1C
+	.asciz "void CCtrl_MomentMonitor()"
+	.balign 4
 .global $$257363
 $$257363:
-	.incbin "baserom.dol", 0x47DDCC, 0x18
+	.asciz "void CCtrl_FadeOut()"
+	.balign 4
 .global $$257364
 $$257364:
-	.incbin "baserom.dol", 0x47DDE4, 0x14
+	.asciz "void CCtrl_FadeIn()"
 .global $$257365
 $$257365:
-	.incbin "baserom.dol", 0x47DDF8, 0x14
+	.asciz "void CCtrl_Nature()"
 .global $$257366
 $$257366:
-	.incbin "baserom.dol", 0x47DE0C, 0x18
+	.asciz "void CCtrl_SeenReset()"
+	.balign 4
 .global $$257367
 $$257367:
-	.incbin "baserom.dol", 0x47DE24, 0x14
+	.asciz "bool CCtrl_isEnd()"
+	.balign 4
 .global $$257368
 $$257368:
-	.incbin "baserom.dol", 0x47DE38, 0x14
+	.asciz "void PCtrl_Wait()"
+	.balign 4
 .global $$257369
 $$257369:
-	.incbin "baserom.dol", 0x47DE4C, 0x18
+	.asciz "void PCtrl_TurnBack()"
+	.balign 4
 .global $$257370
 $$257370:
-	.incbin "baserom.dol", 0x47DE64, 0x18
+	.asciz "void PCtrl_ItemGet()"
+	.balign 4
 .global $$257371
 $$257371:
-	.incbin "baserom.dol", 0x47DE7C, 0x14
+	.asciz "void PCtrl_Free()"
+	.balign 4
 .global $$257372
 $$257372:
-	.incbin "baserom.dol", 0x47DE90, 0x18
+	.asciz "void PCtrl_Listening()"
+	.balign 4
 .global $$257373
 $$257373:
-	.incbin "baserom.dol", 0x47DEA8, 0x14
+	.asciz "void MaCtrl_Wait()"
+	.balign 4
 .global $$257374
 $$257374:
-	.incbin "baserom.dol", 0x47DEBC, 0x14
+	.asciz "void MaCtrl_Wait2()"
 .global $$257375
 $$257375:
-	.incbin "baserom.dol", 0x47DED0, 0x14
+	.asciz "void MaCtrl_Wait3()"
 .global $$257376
 $$257376:
-	.incbin "baserom.dol", 0x47DEE4, 0x14
+	.asciz "void MaCtrl_Wait5()"
 .global $$257377
 $$257377:
-	.incbin "baserom.dol", 0x47DEF8, 0x14
+	.asciz "void MaCtrl_Wait6()"
 .global $$257378
 $$257378:
-	.incbin "baserom.dol", 0x47DF0C, 0x14
+	.asciz "void MaCtrl_Wait7()"
 .global $$257379
 $$257379:
-	.incbin "baserom.dol", 0x47DF20, 0x14
+	.asciz "void MaCtrl_Wait8()"
 .global $$257380
 $$257380:
-	.incbin "baserom.dol", 0x47DF34, 0x14
+	.asciz "void MaCtrl_Wait9()"
 .global $$257381
 $$257381:
-	.incbin "baserom.dol", 0x47DF48, 0x18
+	.asciz "void MaCtrl_Wait10()"
+	.balign 4
 .global $$257382
 $$257382:
-	.incbin "baserom.dol", 0x47DF60, 0x18
+	.asciz "void MaCtrl_Wait11()"
+	.balign 4
 .global $$257383
 $$257383:
-	.incbin "baserom.dol", 0x47DF78, 0x18
+	.asciz "void MaCtrl_TurnFront()"
 .global $$257384
 $$257384:
-	.incbin "baserom.dol", 0x47DF90, 0x18
+	.asciz "void MaCtrl_TurnBack()"
+	.balign 4
 .global $$257385
 $$257385:
-	.incbin "baserom.dol", 0x47DFA8, 0x14
+	.asciz "void MaCtrl_Talk()"
+	.balign 4
 .global $$257386
 $$257386:
-	.incbin "baserom.dol", 0x47DFBC, 0x18
+	.asciz "void MaCtrl_TalkGlad()"
+	.balign 4
 .global $$257387
 $$257387:
-	.incbin "baserom.dol", 0x47DFD4, 0x1C
+	.asciz "void MaCtrl_TalkRegret()"
+	.balign 4
 .global $$257388
 $$257388:
-	.incbin "baserom.dol", 0x47DFF0, 0x1C
+	.asciz "void MaCtrl_TalkPointing()"
+	.balign 4
 .global $$257389
 $$257389:
-	.incbin "baserom.dol", 0x47E00C, 0x14
+	.asciz "void MaCtrl_Glad()"
+	.balign 4
 .global $$257390
 $$257390:
-	.incbin "baserom.dol", 0x47E020, 0x20
+	.asciz "void MaCtrl_TurnMainPlayer()"
+	.balign 4
 .global $$257391
 $$257391:
-	.incbin "baserom.dol", 0x47E040, 0x24
+	.asciz "void MaCtrl_WaitMainPlayerMove()"
+	.balign 4
 .global $$257392
 $$257392:
-	.incbin "baserom.dol", 0x47E064, 0x18
+	.asciz "void TCtrl_First(int)"
+	.balign 4
 .global $$257393
 $$257393:
-	.incbin "baserom.dol", 0x47E07C, 0x18
+	.asciz "void TCtrl_Second(int)"
+	.balign 4
 .global $$257394
 $$257394:
-	.incbin "baserom.dol", 0x47E094, 0x14
+	.asciz "void MoCtrl_SeReq()"
 .global $$257395
 $$257395:
-	.incbin "baserom.dol", 0x47E0A8, 0x18
+	.asciz "void MoCtrl_ViewNoise()"
 .global $$257396
 $$257396:
-	.incbin "baserom.dol", 0x47E0C0, 0x1C
+	.asciz "void MoCtrl_ViewCaution()"
+	.balign 4
 .global $$257397
 $$257397:
-	.incbin "baserom.dol", 0x47E0DC, 0x18
+	.asciz "void MoCtrl_ViewMap()"
+	.balign 4
 .global $$257398
 $$257398:
-	.incbin "baserom.dol", 0x47E0F4, 0x18
+	.asciz "void MoCtrl_ViewShip()"
+	.balign 4
 .global $$257399
 $$257399:
-	.incbin "baserom.dol", 0x47E10C, 0x1C
+	.asciz "void BgmCtrl_PauseNormal()"
+	.balign 4
 .global $$257400
 $$257400:
-	.incbin "baserom.dol", 0x47E128, 0x20
+	.asciz "void BgmCtrl_UnPauseNormal()"
+	.balign 4
 .global $$257401
 $$257401:
-	.incbin "baserom.dol", 0x47E148, 0x18
+	.asciz "void BgmCtrl_ReqFanf1()"
 .global $$257402
 $$257402:
-	.incbin "baserom.dol", 0x47E160, 0x14
+	.asciz "bool IsSuspend()"
+	.balign 4
 .global $$257403
 $$257403:
-	.incbin "baserom.dol", 0x47E174, 0x18
+	.asciz "void SuspendResume()"
+	.balign 4
 .global $$257404
 $$257404:
-	.incbin "baserom.dol", 0x47E18C, 0x14
+	.asciz "bool IsTalkEnd()"
+	.balign 4
 .global $$257405
 $$257405:
-	.incbin "baserom.dol", 0x47E1A0, 0x14
+	.asciz "void EnableSkip()"
+	.balign 4
 .global $$257406
 $$257406:
-	.incbin "baserom.dol", 0x47E1B4, 0x14
+	.asciz "bool IsEnableSkip()"
 .global $$257407
 $$257407:
-	.incbin "baserom.dol", 0x47E1C8, 0x60
+	.asciz "void Release()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$259268
 $$259268:
-	.incbin "baserom.dol", 0x47EAE0, 0x18
+	.asciz "Scn.Step.Hero.Effect"
+	.balign 4
 .global $$259269
 $$259269:
-	.incbin "baserom.dol", 0x47EAF8, 0x14
+	.asciz "void BindNormal()"
+	.balign 4
 .global $$259270
 $$259270:
-	.incbin "baserom.dol", 0x47EB0C, 0x18
+	.asciz "void BindNormalWarp()"
+	.balign 4
 .global $$259271
 $$259271:
-	.incbin "baserom.dol", 0x47EB24, 0x14
+	.asciz "void BindState()"
+	.balign 4
 .global $$259272
 $$259272:
-	.incbin "baserom.dol", 0x47EB38, 0x14
+	.asciz "void BindState2()"
+	.balign 4
 .global $$259273
 $$259273:
-	.incbin "baserom.dol", 0x47EB4C, 0x18
+	.asciz "void BindStateWarp()"
+	.balign 4
 .global $$259274
 $$259274:
-	.incbin "baserom.dol", 0x47EB64, 0x14
+	.asciz "void BindMighty()"
+	.balign 4
 .global $$259275
 $$259275:
-	.incbin "baserom.dol", 0x47EB78, 0x14
+	.asciz "void BindOther()"
+	.balign 4
 .global $$259276
 $$259276:
-	.incbin "baserom.dol", 0x47EB8C, 0x14
+	.asciz "void BindSuper()"
+	.balign 4
 .global $$259277
 $$259277:
-	.incbin "baserom.dol", 0x47EBA0, 0x14
+	.asciz "void BindWater()"
+	.balign 4
 .global $$259278
 $$259278:
-	.incbin "baserom.dol", 0x47EBB4, 0x18
+	.asciz "void BindWaterState()"
+	.balign 4
 .global $$259279
 $$259279:
-	.incbin "baserom.dol", 0x47EBCC, 0x18
+	.asciz "void BindWaterWarp()"
+	.balign 4
 .global $$259280
 $$259280:
-	.incbin "baserom.dol", 0x47EBE4, 0x14
+	.asciz "void BindAbility()"
+	.balign 4
 .global $$259281
 $$259281:
-	.incbin "baserom.dol", 0x47EBF8, 0x14
+	.asciz "void BindNonStop()"
+	.balign 4
 .global $$259282
 $$259282:
-	.incbin "baserom.dol", 0x47EC0C, 0x18
+	.asciz "void BindNonStopFore()"
+	.balign 4
 .global $$259283
 $$259283:
-	.incbin "baserom.dol", 0x47EC24, 0x20
+	.asciz "Scn.Step.Chara.Effect Normal()"
+	.balign 4
 .global $$259284
 $$259284:
-	.incbin "baserom.dol", 0x47EC44, 0x24
+	.asciz "Scn.Step.Chara.Effect NormalWarp()"
+	.balign 4
 .global $$259285
 $$259285:
-	.incbin "baserom.dol", 0x47EC68, 0x20
+	.asciz "Scn.Step.Chara.Effect State()"
+	.balign 4
 .global $$259286
 $$259286:
-	.incbin "baserom.dol", 0x47EC88, 0x20
+	.asciz "Scn.Step.Chara.Effect State2()"
+	.balign 4
 .global $$259287
 $$259287:
-	.incbin "baserom.dol", 0x47ECA8, 0x24
+	.asciz "Scn.Step.Chara.Effect StateWarp()"
+	.balign 4
 .global $$259288
 $$259288:
-	.incbin "baserom.dol", 0x47ECCC, 0x20
+	.asciz "Scn.Step.Chara.Effect Mighty()"
+	.balign 4
 .global $$259289
 $$259289:
-	.incbin "baserom.dol", 0x47ECEC, 0x20
+	.asciz "Scn.Step.Chara.Effect Other()"
+	.balign 4
 .global $$259290
 $$259290:
-	.incbin "baserom.dol", 0x47ED0C, 0x20
+	.asciz "Scn.Step.Chara.Effect Super()"
+	.balign 4
 .global $$259291
 $$259291:
-	.incbin "baserom.dol", 0x47ED2C, 0x24
+	.asciz "Scn.Step.Chara.Effect WaterWarp()"
+	.balign 4
 .global $$259292
 $$259292:
-	.incbin "baserom.dol", 0x47ED50, 0x20
+	.asciz "Scn.Step.Chara.Effect Ability()"
 .global $$259293
 $$259293:
-	.incbin "baserom.dol", 0x47ED70, 0x20
+	.asciz "Scn.Step.Chara.Effect NonStop()"
 .global $$259294
 $$259294:
-	.incbin "baserom.dol", 0x47ED90, 0x24
+	.asciz "Scn.Step.Chara.Effect NonStopFore()"
 .global $$259295
 $$259295:
-	.incbin "baserom.dol", 0x47EDB4, 0x18
+	.asciz "Scn.Step.Hero.Utility"
+	.balign 4
 .global $$259296
 $$259296:
-	.incbin "baserom.dol", 0x47EDCC, 0x14
+	.asciz "bool IsMainPlayer()"
 .global $$259297
 $$259297:
-	.incbin "baserom.dol", 0x47EDE0, 0x10
+	.asciz "bool IsKirby()"
+	.balign 4
 .global $$259298
 $$259298:
-	.incbin "baserom.dol", 0x47EDF0, 0x10
+	.asciz "bool IsMeta()"
+	.balign 4
 .global $$259299
 $$259299:
-	.incbin "baserom.dol", 0x47EE00, 0x10
+	.asciz "bool IsDedede()"
 .global $$259300
 $$259300:
-	.incbin "baserom.dol", 0x47EE10, 0x10
+	.asciz "bool IsDee()"
+	.balign 4
 .global $$259301
 $$259301:
-	.incbin "baserom.dol", 0x47EE20, 0x10
+	.asciz "void LoadPos()"
+	.balign 4
 .global $$259302
 $$259302:
-	.incbin "baserom.dol", 0x47EE30, 0x10
+	.asciz "void LoadDir()"
+	.balign 4
 .global $$259303
 $$259303:
-	.incbin "baserom.dol", 0x47EE40, 0x14
+	.asciz "void LoadModelDir()"
 .global $$259304
 $$259304:
-	.incbin "baserom.dol", 0x47EE54, 0x1C
+	.asciz "void LoadDirFollowFloor()"
+	.balign 4
 .global $$259305
 $$259305:
-	.incbin "baserom.dol", 0x47EE70, 0x18
+	.asciz "void ReqLandingStar()"
+	.balign 4
 .global $$259306
 $$259306:
-	.incbin "baserom.dol", 0x47EE88, 0x14
+	.asciz "void ReqNakigoe()"
+	.balign 4
 .global $$259307
 $$259307:
-	.incbin "baserom.dol", 0x47EE9C, 0x14
+	.asciz "void ReqKakegoe()"
+	.balign 4
 .global $$259308
 $$259308:
-	.incbin "baserom.dol", 0x47EEB0, 0x10
+	.asciz "bool IsPinch()"
+	.balign 4
 .global $$259309
 $$259309:
-	.incbin "baserom.dol", 0x47EEC0, 0x14
+	.asciz "bool IsInWater()"
+	.balign 4
 .global $$259310
 $$259310:
-	.incbin "baserom.dol", 0x47EED4, 0x18
+	.asciz "int ShakeChargePower()"
+	.balign 4
 .global $$259311
 $$259311:
-	.incbin "baserom.dol", 0x47EEEC, 0x14
+	.asciz "bool IsInvisible()"
+	.balign 4
 .global $$259312
 $$259312:
-	.incbin "baserom.dol", 0x47EF00, 0x18
+	.asciz "bool IsPressHDirKey()"
+	.balign 4
 .global $$259313
 $$259313:
-	.incbin "baserom.dol", 0x47EF18, 0x10
+	.asciz "bool IsOnIce()"
+	.balign 4
 .global $$259314
 $$259314:
-	.incbin "baserom.dol", 0x47EF28, 0x20
+	.asciz "bool IsExistPiggybackChild()"
+	.balign 4
 .global $$259315
 $$259315:
-	.incbin "baserom.dol", 0x47EF48, 0x18
+	.asciz "bool IsExistCarryItem()"
 .global $$259316
 $$259316:
-	.incbin "baserom.dol", 0x47EF60, 0x1C
+	.asciz "bool IsMainPlayerRight()"
+	.balign 4
 .global $$259317
 $$259317:
-	.incbin "baserom.dol", 0x47EF7C, 0x1C
+	.asciz "void SetIsDirRight(bool)"
+	.balign 4
 .global $$259318
 $$259318:
-	.incbin "baserom.dol", 0x47EF98, 0x14
+	.asciz "bool IsDirRight()"
+	.balign 4
 .global $$259319
 $$259319:
-	.incbin "baserom.dol", 0x47EFAC, 0x14
+	.asciz "bool IsHidDisable()"
 .global $$259320
 $$259320:
-	.incbin "baserom.dol", 0x47EFC0, 0x18
+	.asciz "bool IsBossDemoSilent()"
 .global $$259321
 $$259321:
-	.incbin "baserom.dol", 0x47EFD8, 0x20
+	.asciz "bool IsSeparateProcessMyTurn()"
+	.balign 4
 .global $$259322
 $$259322:
-	.incbin "baserom.dol", 0x47EFF8, 0x14
+	.asciz "bool IsHaveCandle()"
 .global $$259323
 $$259323:
-	.incbin "baserom.dol", 0x47F00C, 0x14
+	.asciz "int PlayerCount()"
+	.balign 4
 .global $$259324
 $$259324:
-	.incbin "baserom.dol", 0x47F020, 0x28
+	.asciz "void AddAttackGearNode3(int,int,float)"
+	.balign 4
 .global $$259325
 $$259325:
-	.incbin "baserom.dol", 0x47F048, 0x34
+	.asciz "void AddAttackGearNode5(int,int,float,float,float)"
+	.balign 4
 .global $$259326
 $$259326:
-	.incbin "baserom.dol", 0x47F07C, 0x40
+	.asciz "void AddAttackGearNode7(int,int,float,float,float,float,float)"
+	.balign 4
 .global $$259327
 $$259327:
-	.incbin "baserom.dol", 0x47F0BC, 0x44
+	.asciz "void AddAttackGearNode8(int,int,float,float,float,float,float,bool)"
 .global $$259328
 $$259328:
-	.incbin "baserom.dol", 0x47F100, 0x28
+	.asciz "void RequestEffectGearNodeN(int,int)"
+	.balign 4
 .global $$259329
 $$259329:
-	.incbin "baserom.dol", 0x47F128, 0x2C
+	.asciz "void RequestEffectGearNodeNS(int,int,float)"
 .global $$259330
 $$259330:
-	.incbin "baserom.dol", 0x47F154, 0x28
+	.asciz "void RequestEffectGearNodeNO(int,int)"
+	.balign 4
 .global $$259331
 $$259331:
-	.incbin "baserom.dol", 0x47F17C, 0x30
+	.asciz "void RequestEffectGearNodeNOS(int,int,float)"
+	.balign 4
 .global $$259332
 $$259332:
-	.incbin "baserom.dol", 0x47F1AC, 0x28
+	.asciz "void RequestEffectGearNodeND(int,int)"
+	.balign 4
 .global $$259333
 $$259333:
-	.incbin "baserom.dol", 0x47F1D4, 0x30
+	.asciz "void RequestEffectGearNodeNDS(int,int,float)"
+	.balign 4
 .global $$259334
 $$259334:
-	.incbin "baserom.dol", 0x47F204, 0x28
+	.asciz "void RequestEffectGearNodeNDO(int,int)"
+	.balign 4
 .global $$259335
 $$259335:
-	.incbin "baserom.dol", 0x47F22C, 0x30
+	.asciz "void RequestEffectGearNodeNDOS(int,int,float)"
+	.balign 4
 .global $$259336
 $$259336:
-	.incbin "baserom.dol", 0x47F25C, 0x1C
+	.asciz "Scn.Step.Hero.SoundSE"
+	.balign 4
+	.4byte 0
 .global $$259337
 $$259337:
-	.incbin "baserom.dol", 0x47F278, 0x10
+	.asciz "void BindLoop()"
 .global $$259338
 $$259338:
-	.incbin "baserom.dol", 0x47F288, 0x14
+	.asciz "void BindVacuum()"
+	.balign 4
 .global $$259339
 $$259339:
-	.incbin "baserom.dol", 0x47F29C, 0x18
+	.asciz "Scn.Step.Hero.SlopeFit"
+	.balign 4
 .global $$259340
 $$259340:
-	.incbin "baserom.dol", 0x47F2B4, 0x14
+	.asciz "void SetValid(bool)"
 .global $$259341
 $$259341:
-	.incbin "baserom.dol", 0x47F2C8, 0x18
+	.asciz "void SetIntpRate(float)"
 .global $$259342
 $$259342:
-	.incbin "baserom.dol", 0x47F2E0, 0x1C
+	.asciz "void SetAffectRate(float)"
+	.balign 4
 .global $$259343
 $$259343:
-	.incbin "baserom.dol", 0x47F2FC, 0x18
+	.asciz "Scn.Step.Hero.ObjColl"
+	.balign 4
 .global $$259344
 $$259344:
-	.incbin "baserom.dol", 0x47F314, 0x1C
+	.asciz "void SetBodyCollDefault()"
+	.balign 4
 .global $$259345
 $$259345:
-	.incbin "baserom.dol", 0x47F330, 0x18
+	.asciz "void SetBodyCollBig()"
+	.balign 4
 .global $$259346
 $$259346:
-	.incbin "baserom.dol", 0x47F348, 0x18
+	.asciz "void SetBodyCollSquat()"
 .global $$259347
 $$259347:
-	.incbin "baserom.dol", 0x47F360, 0x18
+	.asciz "void SetBodyCollJump()"
+	.balign 4
 .global $$259348
 $$259348:
-	.incbin "baserom.dol", 0x47F378, 0x1C
+	.asciz "Scn.Step.Hero.ScriptData"
+	.balign 4
 .global $$259349
 $$259349:
-	.incbin "baserom.dol", 0x47F394, 0x18
+	.asciz "void SetFlipFoot(bool)"
+	.balign 4
 .global $$259350
 $$259350:
-	.incbin "baserom.dol", 0x47F3AC, 0x14
+	.asciz "bool GetFlipFoot()"
+	.balign 4
 .global $$259351
 $$259351:
-	.incbin "baserom.dol", 0x47F3C0, 0x1C
+	.asciz "Scn.Step.Hero.StateChecker"
+	.balign 4
 .global $$259352
 $$259352:
-	.incbin "baserom.dol", 0x47F3DC, 0x10
+	.asciz "bool IsRun()"
+	.balign 4
 .global $$259353
 $$259353:
-	.incbin "baserom.dol", 0x47F3EC, 0x10
+	.asciz "bool IsFloat()"
+	.balign 4
 .global $$259354
 $$259354:
-	.incbin "baserom.dol", 0x47F3FC, 0x1C
+	.asciz "bool IsCarryBombDanger()"
+	.balign 4
 .global $$259355
 $$259355:
-	.incbin "baserom.dol", 0x47F418, 0x10
+	.asciz "bool IsHover()"
+	.balign 4
 .global $$259356
 $$259356:
-	.incbin "baserom.dol", 0x47F428, 0x20
+	.asciz "Scn.Step.Hero.AbilityManager"
+	.balign 4
 .global $$259357
 $$259357:
-	.incbin "baserom.dol", 0x47F448, 0x10
+	.asciz "bool IsSuper()"
+	.balign 4
 .global $$259358
 $$259358:
-	.incbin "baserom.dol", 0x47F458, 0x14
+	.asciz "int AbilityKind()"
+	.balign 4
 .global $$259359
 $$259359:
-	.incbin "baserom.dol", 0x47F46C, 0x14
+	.asciz "int GetUseCount()"
+	.balign 4
 .global $$259360
 $$259360:
-	.incbin "baserom.dol", 0x47F480, 0x20
+	.asciz "bool IsOnGrandLowperBattle()"
+	.balign 4
 .global $$259361
 $$259361:
-	.incbin "baserom.dol", 0x47F4A0, 0x14
+	.asciz "Scn.Step.Hero.Model"
 .global $$259362
 $$259362:
-	.incbin "baserom.dol", 0x47F4B4, 0x14
+	.asciz "void BindGearHat()"
+	.balign 4
 .global $$259363
 $$259363:
-	.incbin "baserom.dol", 0x47F4C8, 0x14
+	.asciz "void BindGearHat2()"
 .global $$259364
 $$259364:
-	.incbin "baserom.dol", 0x47F4DC, 0x18
+	.asciz "void BindGearRHand()"
+	.balign 4
 .global $$259365
 $$259365:
-	.incbin "baserom.dol", 0x47F4F4, 0x18
+	.asciz "void BindGearLHand()"
+	.balign 4
 .global $$259366
 $$259366:
-	.incbin "baserom.dol", 0x47F50C, 0x14
+	.asciz "void BindGearRot()"
+	.balign 4
 .global $$259367
 $$259367:
-	.incbin "baserom.dol", 0x47F520, 0x14
+	.asciz "void BindGearTop()"
+	.balign 4
 .global $$259368
 $$259368:
-	.incbin "baserom.dol", 0x47F534, 0x18
+	.asciz "void BindGearGoggle()"
+	.balign 4
 .global $$259369
 $$259369:
-	.incbin "baserom.dol", 0x47F54C, 0x1C
+	.asciz "void BindGearFloater()"
+	.balign 4
+	.4byte 0
 .global $$259370
 $$259370:
-	.incbin "baserom.dol", 0x47F568, 0x18
+	.asciz "void BindGearWarpStar()"
 .global $$259371
 $$259371:
-	.incbin "baserom.dol", 0x47F580, 0x20
+	.asciz "Scn.Step.Hero.Gear GearHat()"
+	.balign 4
 .global $$259372
 $$259372:
-	.incbin "baserom.dol", 0x47F5A0, 0x20
+	.asciz "Scn.Step.Hero.Gear GearHat2()"
+	.balign 4
 .global $$259373
 $$259373:
-	.incbin "baserom.dol", 0x47F5C0, 0x20
+	.asciz "Scn.Step.Hero.Gear GearRHand()"
+	.balign 4
 .global $$259374
 $$259374:
-	.incbin "baserom.dol", 0x47F5E0, 0x20
+	.asciz "Scn.Step.Hero.Gear GearLHand()"
+	.balign 4
 .global $$259375
 $$259375:
-	.incbin "baserom.dol", 0x47F600, 0x20
+	.asciz "Scn.Step.Hero.Gear GearRot()"
+	.balign 4
 .global $$259376
 $$259376:
-	.incbin "baserom.dol", 0x47F620, 0x20
+	.asciz "Scn.Step.Hero.Gear GearTop()"
+	.balign 4
 .global $$259377
 $$259377:
-	.incbin "baserom.dol", 0x47F640, 0x20
+	.asciz "Scn.Step.Hero.Gear GearGoggle()"
 .global $$259378
 $$259378:
-	.incbin "baserom.dol", 0x47F660, 0x24
+	.asciz "Scn.Step.Hero.Gear GearFloater()"
+	.balign 4
 .global $$259379
 $$259379:
-	.incbin "baserom.dol", 0x47F684, 0x24
+	.asciz "Scn.Step.Hero.Gear GearWarpStar()"
+	.balign 4
 .global $$259380
 $$259380:
-	.incbin "baserom.dol", 0x47F6A8, 0x14
+	.asciz "Scn.Step.Hero.Gear"
+	.balign 4
 .global $$259381
 $$259381:
-	.incbin "baserom.dol", 0x47F6BC, 0x20
+	.asciz "void setVisibility(bool)const"
+	.balign 4
 .global $$259382
 $$259382:
-	.incbin "baserom.dol", 0x47F6DC, 0x2C
+	.asciz "void setNodeVisibility(int,bool)const"
+	.balign 4
+	.4byte 0
 .global $$259383
 $$259383:
-	.incbin "baserom.dol", 0x47F708, 0x18
+	.asciz "bool isAnimExist()const"
 .global $$259384
 $$259384:
-	.incbin "baserom.dol", 0x47F720, 0x1C
+	.asciz "GObj.GearAnim anim()const"
+	.balign 4
 .global $$259385
 $$259385:
-	.incbin "baserom.dol", 0x47F73C, 0x24
+	.asciz "Scn.Step.Chara.Effect effect()const"
 .global $$259386
 $$259386:
-	.incbin "baserom.dol", 0x47F760, 0x28
+	.asciz "Scn.Step.Chara.Effect effectWarp()const"
 .global $$259387
 $$259387:
-	.incbin "baserom.dol", 0x47F788, 0x1C
+	.asciz "void SetVisibility(bool)"
+	.balign 4
 .global $$259388
 $$259388:
-	.incbin "baserom.dol", 0x47F7A4, 0x24
+	.asciz "void SetNodeVisibility(int,bool)"
+	.balign 4
 .global $$259389
 $$259389:
-	.incbin "baserom.dol", 0x47F7C8, 0x14
+	.asciz "void LoadNode(int)"
+	.balign 4
 .global $$259390
 $$259390:
-	.incbin "baserom.dol", 0x47F7DC, 0x14
+	.asciz "void BindEffect()"
+	.balign 4
 .global $$259391
 $$259391:
-	.incbin "baserom.dol", 0x47F7F0, 0x18
+	.asciz "void BindEffectWarp()"
+	.balign 4
 .global $$259392
 $$259392:
-	.incbin "baserom.dol", 0x47F808, 0x1C
+	.asciz "Scn.Step.Hero.GatherItem"
+	.balign 4
 .global $$259393
 $$259393:
-	.incbin "baserom.dol", 0x47F824, 0x24
+	.asciz "void Add(float,float,float,float)"
+	.balign 4
 .global $$259394
 $$259394:
-	.incbin "baserom.dol", 0x47F848, 0x10
+	.asciz "void Clear()"
+	.balign 4
 .global $$259395
 $$259395:
-	.incbin "baserom.dol", 0x47F858, 0x1C
+	.asciz "Scn.Step.Hero.Invincible"
+	.balign 4
 .global $$259396
 $$259396:
-	.incbin "baserom.dol", 0x47F874, 0x10
+	.asciz "void Set(int)"
+	.balign 4
 .global $$259397
 $$259397:
-	.incbin "baserom.dol", 0x47F884, 0x10
+	.asciz "void SetPerm()"
+	.balign 4
 .global $$259398
 $$259398:
-	.incbin "baserom.dol", 0x47F894, 0x14
+	.asciz "void UnsetPerm()"
+	.balign 4
 .global $$259399
 $$259399:
-	.incbin "baserom.dol", 0x47F8A8, 0x10
+	.asciz "bool IsMighty()"
 .global $$259400
 $$259400:
-	.incbin "baserom.dol", 0x47F8B8, 0x14
+	.asciz "Scn.Step.Hero.Hid"
+	.balign 4
 .global $$259401
 $$259401:
-	.incbin "baserom.dol", 0x47F8CC, 0x14
+	.asciz "bool IsHold(int)"
+	.balign 4
 .global $$259402
 $$259402:
-	.incbin "baserom.dol", 0x47F8E0, 0x14
+	.asciz "bool IsTrigger(int)"
 .global $$259403
 $$259403:
-	.incbin "baserom.dol", 0x47F8F4, 0x1C
+	.asciz "void SetAutoInputHold(int)"
+	.balign 4
 .global $$259404
 $$259404:
-	.incbin "baserom.dol", 0x47F910, 0x18
+	.asciz "Scn.Step.Hero.HidRumble"
 .global $$259405
 $$259405:
-	.incbin "baserom.dol", 0x47F928, 0x10
+	.asciz "void Start(int)"
 .global $$259406
 $$259406:
-	.incbin "baserom.dol", 0x47F938, 0xC
+	.asciz "void Stop()"
 .global $$259407
 $$259407:
-	.incbin "baserom.dol", 0x47F944, 0x1C
+	.asciz "Scn.Step.Hero.Squash"
+	.balign 4
+	.4byte 0
 .global $$259408
 $$259408:
-	.incbin "baserom.dol", 0x47F960, 0x28
+	.asciz "void SetTarget(float,float,float,float)"
 .global $$259409
 $$259409:
-	.incbin "baserom.dol", 0x47F988, 0x18
+	.asciz "void ResetTarget(float)"
 .global $$259410
 $$259410:
-	.incbin "baserom.dol", 0x47F9A0, 0x1C
+	.asciz "Scn.Step.Hero.LandAttribute"
 .global $$259411
 $$259411:
-	.incbin "baserom.dol", 0x47F9BC, 0x20
+	.asciz "void ReqEffectL(float,float)"
+	.balign 4
 .global $$259412
 $$259412:
-	.incbin "baserom.dol", 0x47F9DC, 0x20
+	.asciz "void ReqEffectS(float,float)"
+	.balign 4
 .global $$259413
 $$259413:
-	.incbin "baserom.dol", 0x47F9FC, 0x24
+	.asciz "void ReqEffectLanding(float,float)"
+	.balign 4
 .global $$259414
 $$259414:
-	.incbin "baserom.dol", 0x47FA20, 0x10
+	.asciz "void ReqSE()"
+	.balign 4
 .global $$259415
 $$259415:
-	.incbin "baserom.dol", 0x47FA30, 0x14
+	.asciz "int AttributeType()"
 .global $$259416
 $$259416:
-	.incbin "baserom.dol", 0x47FA44, 0x1C
+	.asciz "Scn.Step.Hero.StagingCtrl"
+	.balign 4
 .global $$259417
 $$259417:
-	.incbin "baserom.dol", 0x47FA60, 0x20
+	.asciz "void SetZoom(float,float,float)"
 .global $$259418
 $$259418:
-	.incbin "baserom.dol", 0x47FA80, 0x14
+	.asciz "void SetZoom(float)"
 .global $$259419
 $$259419:
-	.incbin "baserom.dol", 0x47FA94, 0x14
+	.asciz "void UnsetZoom()"
+	.balign 4
 .global $$259420
 $$259420:
-	.incbin "baserom.dol", 0x47FAA8, 0x1C
+	.asciz "void SetCamRot(float,float)"
 .global $$259421
 $$259421:
-	.incbin "baserom.dol", 0x47FAC4, 0x14
+	.asciz "void UnsetCamRot()"
+	.balign 4
 .global $$259422
 $$259422:
-	.incbin "baserom.dol", 0x47FAD8, 0x20
+	.asciz "Scn.Step.Hero.FloaterRotCtrl"
+	.balign 4
 .global $$259423
 $$259423:
-	.incbin "baserom.dol", 0x47FAF8, 0x10
+	.asciz "float GetRotV()"
 .global $$259424
 $$259424:
-	.incbin "baserom.dol", 0x47FB08, 0x18
+	.asciz "void InitRotV(float)"
+	.balign 4
 .global $$259425
 $$259425:
-	.incbin "baserom.dol", 0x47FB20, 0x1C
+	.asciz "void SetRotVTarget(float)"
+	.balign 4
 .global $$259426
 $$259426:
-	.incbin "baserom.dol", 0x47FB3C, 0x18
+	.asciz "void ResetRotVTarget()"
+	.balign 4
 .global $$259427
 $$259427:
-	.incbin "baserom.dol", 0x47FB54, 0x1C
+	.asciz "void SetRotVIntpRate(float)"
 .global $$259428
 $$259428:
-	.incbin "baserom.dol", 0x47FB70, 0x1C
+	.asciz "void ResetRotVIntpRate()"
+	.balign 4
 .global $$259429
 $$259429:
-	.incbin "baserom.dol", 0x47FB8C, 0x20
+	.asciz "Scn.Step.Hero.ClearDanceSync"
+	.balign 4
 .global $$259430
 $$259430:
-	.incbin "baserom.dol", 0x47FBAC, 0x14
+	.asciz "bool IsSync()"
+	.balign 4
+	.4byte 0
 .global $$259431
 $$259431:
-	.incbin "baserom.dol", 0x47FBC0, 0x10
+	.asciz "int FirstAnim()"
 .global $$259432
 $$259432:
-	.incbin "baserom.dol", 0x47FBD0, 0x18
+	.asciz "int SecondAnim()"
+	.balign 4
+	.4byte 0
 .global $$259433
 $$259433:
-	.incbin "baserom.dol", 0x47FBE8, 0x10
+	.asciz "int ThirdAnim()"
 .global $$259434
 $$259434:
-	.incbin "baserom.dol", 0x47FBF8, 0x14
+	.asciz "int FinishAnim()"
+	.balign 4
 .global $$259597
 $$259597:
-	.incbin "baserom.dol", 0x47FC0C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FA4C
 .global $$259638
 $$259638:
-	.incbin "baserom.dol", 0x47FC18, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FB4C
 .global $$259647
 $$259647:
-	.incbin "baserom.dol", 0x47FC24, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FBFC
 .global $$259669
 $$259669:
-	.incbin "baserom.dol", 0x47FC30, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FCC8
 .global $$259683
 $$259683:
-	.incbin "baserom.dol", 0x47FC3C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FD60
 .global $$259690
 $$259690:
-	.incbin "baserom.dol", 0x47FC48, 0x88
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8032FDE4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252285
 $$252285:
-	.incbin "baserom.dol", 0x48EA88, 0x1C
+	.asciz "Scn.Step.OColl.AttackData"
+	.balign 4
 .global $$252286
 $$252286:
-	.incbin "baserom.dol", 0x48EAA4, 0x4C
+	.asciz "void Register(int,int,int,int,int,float,float,float,float,int,int,int)"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252096
 $$252096:
-	.incbin "baserom.dol", 0x48EB30, 0x18
+	.asciz "Scn.Step.Sfx.SuperFade"
+	.balign 4
 .global $$252097
 $$252097:
-	.incbin "baserom.dol", 0x48EB48, 0x14
+	.asciz "void SetBack(bool)"
+	.balign 4
 .global $$252098
 $$252098:
-	.incbin "baserom.dol", 0x48EB5C, 0x24
+	.asciz "Scn.Step.Sfx.SuperBackPicture"
+	.balign 4
+	.4byte 0
 .global $$252099
 $$252099:
-	.incbin "baserom.dol", 0x48EB80, 0x18
+	.asciz "void RequestEffect(int)"
 .global $$252100
 $$252100:
-	.incbin "baserom.dol", 0x48EB98, 0x1C
+	.asciz "void RequestEffectN(int)"
+	.balign 4
 .global $$252101
 $$252101:
-	.incbin "baserom.dol", 0x48EBB4, 0x18
+	.asciz "void ReleaseEffect()"
+	.balign 4
 .global $$252102
 $$252102:
-	.incbin "baserom.dol", 0x48EBCC, 0x1C
+	.asciz "void RequestEffect2(int)"
+	.balign 4
 .global $$252103
 $$252103:
-	.incbin "baserom.dol", 0x48EBE8, 0x1C
+	.asciz "void RequestEffect2N(int)"
+	.balign 4
 .global $$252104
 $$252104:
-	.incbin "baserom.dol", 0x48EC04, 0x18
+	.asciz "void ReleaseEffect2()"
+	.balign 4
 .global $$252105
 $$252105:
-	.incbin "baserom.dol", 0x48EC1C, 0x24
+	.asciz "void RequestEffectNonStop(int)"
+	.balign 4
+	.4byte 0
 .global $$252106
 $$252106:
-	.incbin "baserom.dol", 0x48EC40, 0x20
+	.asciz "void RequestEffectNonStopN(int)"
 .global $$252107
 $$252107:
-	.incbin "baserom.dol", 0x48EC60, 0x20
+	.asciz "void ReleaseEffectNonStop()"
+	.4byte 0
 .global $$252108
 $$252108:
-	.incbin "baserom.dol", 0x48EC80, 0x20
+	.asciz "void RequestEffectNonStop2(int)"
 .global $$252109
 $$252109:
-	.incbin "baserom.dol", 0x48ECA0, 0x24
+	.asciz "void RequestEffectNonStop2N(int)"
+	.balign 4
 .global $$252110
 $$252110:
-	.incbin "baserom.dol", 0x48ECC4, 0x4C
+	.asciz "void ReleaseEffectNonStop2()"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252118
 $$252118:
-	.incbin "baserom.dol", 0x48EE90, 0x1C
+	.asciz "Scn.Step.Vacuum.Attacker"
+	.balign 4
 .global $$252119
 $$252119:
-	.incbin "baserom.dol", 0x48EEAC, 0x14
+	.asciz "int VacuumCount()"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256232
 $$256232:
-	.incbin "baserom.dol", 0x491D38, 0x18
+	.asciz "Scn.StaffCredit.Utility"
 .global $$256233
 $$256233:
-	.incbin "baserom.dol", 0x491D50, 0x1C
+	.asciz "void SendHeroSignal(int)"
+	.balign 4
 .global $$256234
 $$256234:
-	.incbin "baserom.dol", 0x491D6C, 0x1C
+	.asciz "void SendBossSignal(int)"
+	.balign 4
 .global $$256235
 $$256235:
-	.incbin "baserom.dol", 0x491D88, 0x28
+	.asciz "void SetPosDedede(float,float,float)"
+	.balign 4
 .global $$256236
 $$256236:
-	.incbin "baserom.dol", 0x491DB0, 0x24
+	.asciz "void SetPosDee(float,float,float)"
+	.balign 4
 .global $$256237
 $$256237:
-	.incbin "baserom.dol", 0x491DD4, 0x24
+	.asciz "void SetPosMeta(float,float,float)"
+	.balign 4
 .global $$256238
 $$256238:
-	.incbin "baserom.dol", 0x491DF8, 0x20
+	.asciz "void SetupPlaceBasePos(float)"
+	.balign 4
 .global $$256239
 $$256239:
-	.incbin "baserom.dol", 0x491E18, 0x2C
+	.asciz "void ReqEnemyPraise(int,float,float,float)"
+	.balign 4
 .global $$256240
 $$256240:
-	.incbin "baserom.dol", 0x491E44, 0x34
+	.asciz "void ReqEnemyMoveToPraise(int,float,float,float)"
+	.balign 4
 .global $$256241
 $$256241:
-	.incbin "baserom.dol", 0x491E78, 0x30
+	.asciz "void ReqFlyFarBrontoBurt(int,float,float,float)"
 .global $$256242
 $$256242:
-	.incbin "baserom.dol", 0x491EA8, 0x18
+	.asciz "void GoodbyeAllEnemy()"
+	.balign 4
 .global $$256243
 $$256243:
-	.incbin "baserom.dol", 0x491EC0, 0x14
+	.asciz "void SetNextBG()"
+	.balign 4
 .global $$256244
 $$256244:
-	.incbin "baserom.dol", 0x491ED4, 0x18
+	.asciz "void StartStaffRoll()"
+	.balign 4
 .global $$256245
 $$256245:
-	.incbin "baserom.dol", 0x491EEC, 0x1C
+	.asciz "void StartPraiseCamera()"
+	.balign 4
 .global $$256246
 $$256246:
-	.incbin "baserom.dol", 0x491F08, 0x18
+	.asciz "void EndPraiseCamera()"
+	.balign 4
 .global $$256247
 $$256247:
-	.incbin "baserom.dol", 0x491F20, 0x18
+	.asciz "void StartIntroCamera()"
 .global $$256248
 $$256248:
-	.incbin "baserom.dol", 0x491F38, 0x18
+	.asciz "void MoveIntroCamera()"
+	.balign 4
 .global $$256249
 $$256249:
-	.incbin "baserom.dol", 0x491F50, 0x18
+	.asciz "void EndIntroCamera()"
+	.balign 4
 .global $$256250
 $$256250:
-	.incbin "baserom.dol", 0x491F68, 0x14
+	.asciz "bool IsEndScroll()"
+	.balign 4
 .global $$256251
 $$256251:
-	.incbin "baserom.dol", 0x491F7C, 0x20
+	.asciz "bool IsEnableEndingObjPlace()"
+	.balign 4
 .global $$256252
 $$256252:
-	.incbin "baserom.dol", 0x491F9C, 0x18
+	.asciz "void SetupOtachidai()"
+	.balign 4
 .global $$256253
 $$256253:
-	.incbin "baserom.dol", 0x491FB4, 0x6C
+	.asciz "void RequestEfConfetti()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252053
 $$252053:
-	.incbin "baserom.dol", 0x492678, 0x10
+	.asciz "Snd.SERequestor"
 .global $$252054
 $$252054:
-	.incbin "baserom.dol", 0x492688, 0x10
+	.asciz "void Start(int)"
 .global $$252055
 $$252055:
-	.incbin "baserom.dol", 0x492698, 0x38
+	.asciz "void Stop()"
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255346
 $$255346:
-	.incbin "baserom.dol", 0x49A2B8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255473
 $$255473:
-	.incbin "baserom.dol", 0x49AF20, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255121
 $$255121:
-	.incbin "baserom.dol", 0x49B398, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254743
 $$254743:
-	.incbin "baserom.dol", 0x49B4C8, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256317
 $$256317:
-	.incbin "baserom.dol", 0x49B590, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256635
 $$256635:
-	.incbin "baserom.dol", 0x49C330, 0x4
+	.4byte 0
 .global $$256647
 $$256647:
-	.incbin "baserom.dol", 0x49C334, 0x4
+	.4byte 0x3E99999A
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256592
 $$256592:
-	.incbin "baserom.dol", 0x49C3B8, 0x4
+	.4byte 0
 .global $$256607
 $$256607:
-	.incbin "baserom.dol", 0x49C3BC, 0x4
+	.4byte 0x3F800000
 .global $$256627
 $$256627:
-	.incbin "baserom.dol", 0x49C3C0, 0x8
+	.4byte 0xBF800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x49C6B0, 0x4
+	.4byte 0
 .global $$256060
 $$256060:
-	.incbin "baserom.dol", 0x49C6B4, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255820
 $$255820:
-	.incbin "baserom.dol", 0x49C790, 0x4
+	.4byte 0
 .global $$255821
 $$255821:
-	.incbin "baserom.dol", 0x49C794, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256107
 $$256107:
-	.incbin "baserom.dol", 0x49CE60, 0x4
+	.4byte 0
 .global $$256108
 $$256108:
-	.incbin "baserom.dol", 0x49CE64, 0x4
+	.4byte 0x3F800000

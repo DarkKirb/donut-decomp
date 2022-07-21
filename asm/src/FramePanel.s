@@ -528,80 +528,104 @@ lbl_801DBD2C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251725
 $$251725:
-	.incbin "baserom.dol", 0x4595A8, 0xC
+	.asciz "IconFixN"
+	.balign 4
 .global $$252727
 $$252727:
-	.incbin "baserom.dol", 0x4595B4, 0xC
+	.asciz "PauseFrame"
+	.balign 4
 .global $$252808
 $$252808:
-	.incbin "baserom.dol", 0x4595C0, 0x10
+	.asciz "PTotalTextD1"
+	.balign 4
 .global $$252809
 $$252809:
-	.incbin "baserom.dol", 0x4595D0, 0x10
+	.asciz "PTotalTextD2"
+	.balign 4
 .global $$252821
 $$252821:
-	.incbin "baserom.dol", 0x4595E0, 0xC
+	.asciz "SwitchOut"
+	.balign 4
 .global $$252824
 $$252824:
-	.incbin "baserom.dol", 0x4595EC, 0xC
+	.asciz "SwitchIn"
+	.balign 4
 .global $$252852
 $$252852:
-	.incbin "baserom.dol", 0x4595F8, 0x10
+	.asciz "PCurrentTextD1"
+	.balign 4
 .global $$252853
 $$252853:
-	.incbin "baserom.dol", 0x459608, 0x10
+	.asciz "PCurrentTextD2"
+	.balign 4
 .global $$252854
 $$252854:
-	.incbin "baserom.dol", 0x459618, 0x40
+	.asciz "TitleText"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251724
 $$251724:
-	.incbin "baserom.dol", 0x493A80, 0x8
+	.asciz "IconN"
+	.balign 4
 .global $$252728
 $$252728:
-	.incbin "baserom.dol", 0x493A88, 0x8
+	.asciz "Icon"
+	.balign 4
 .global $$252729
 $$252729:
-	.incbin "baserom.dol", 0x493A90, 0x8
+	.asciz "FrameN"
+	.balign 4
 .global $$252730
 $$252730:
-	.incbin "baserom.dol", 0x493A98, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252790
 $$252790:
-	.incbin "baserom.dol", 0x493AA0, 0x8
+	.asciz "AbStar"
+	.balign 4
 .global $$252791
 $$252791:
-	.incbin "baserom.dol", 0x493AA8, 0x8
+	.asciz "AbIconN"
 .global $$252810
 $$252810:
-	.incbin "baserom.dol", 0x493AB0, 0x4
+	.4byte 0x256C7500
 .global $$252811
 $$252811:
-	.incbin "baserom.dol", 0x493AB4, 0xC
+	.asciz "PageN"
+	.balign 4
+	.4byte 0
 .global $$252846
 $$252846:
-	.incbin "baserom.dol", 0x493AC0, 0x8
+	.asciz "Dropout"
 .global $$252847
 $$252847:
-	.incbin "baserom.dol", 0x493AC8, 0x8
+	.asciz "Special"
 .global $$252848
 $$252848:
-	.incbin "baserom.dol", 0x493AD0, 0x8
+	.asciz "Ship"
+	.balign 4
 .global $$252849
 $$252849:
-	.incbin "baserom.dol", 0x493AD8, 0x8
+	.asciz "Remote"
+	.balign 4
 .global $$252850
 $$252850:
-	.incbin "baserom.dol", 0x493AE0, 0x8
+	.asciz "Ability"
 .global $$252851
 $$252851:
-	.incbin "baserom.dol", 0x493AE8, 0x8
+	.asciz "Friend"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2
 T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2:
-	.incbin "baserom.dol", 0x49A7F8, 0x4
+	.4byte 0x805576A0
 .global T_FIX_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2
 T_FIX_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2:
-	.incbin "baserom.dol", 0x49A7FC, 0x4
+	.4byte 0x8045D4A8

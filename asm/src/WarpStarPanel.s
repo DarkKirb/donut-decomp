@@ -1047,44 +1047,57 @@ isOpenAreaDemoEnd__Q53scn4step4info13WarpStarPanel19WarpStarPanelIndiviCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258551
 $$258551:
-	.incbin "baserom.dol", 0x48C1D8, 0x10
+	.asciz "step/lvmap/Main"
 .global $$258552
 $$258552:
-	.incbin "baserom.dol", 0x48C1E8, 0x10
+	.asciz "WarpStarBase"
+	.balign 4
 .global $$258554
 $$258554:
-	.incbin "baserom.dol", 0x48C1F8, 0x10
+	.asciz "WarpStarName"
+	.balign 4
 .global $$258600
 $$258600:
-	.incbin "baserom.dol", 0x48C208, 0xC
+	.asciz "WarpStar_1"
+	.balign 4
 .global $$258601
 $$258601:
-	.incbin "baserom.dol", 0x48C214, 0xC
+	.asciz "WarpStar_2"
+	.balign 4
 .global $$258602
 $$258602:
-	.incbin "baserom.dol", 0x48C220, 0x40
+	.asciz "WarpStar_3"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258555
 $$258555:
-	.incbin "baserom.dol", 0x497B00, 0x4
+	.4byte 0
 .global $$258645
 $$258645:
-	.incbin "baserom.dol", 0x497B04, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$258646
 $$258646:
-	.incbin "baserom.dol", 0x497B0C, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$258649
 $$258649:
-	.incbin "baserom.dol", 0x497B14, 0x4
+	.4byte 0x456E6400
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258553
 $$258553:
-	.incbin "baserom.dol", 0x49E448, 0x4
+	.4byte 0
 .global $$258641
 $$258641:
-	.incbin "baserom.dol", 0x49E44C, 0x4
+	.4byte 0x40E00000
 .global $$258642
 $$258642:
-	.incbin "baserom.dol", 0x49E450, 0x8
+	.4byte 0x40C00000
+	.4byte 0

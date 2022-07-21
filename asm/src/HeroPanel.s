@@ -1071,9 +1071,12 @@ helpShakeSuccess__Q43scn4step4info9HeroPanelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256777
 $$256777:
-	.incbin "baserom.dol", 0x48B8A8, 0x10
+	.asciz "IfHrPanel"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257013
 $$257013:
-	.incbin "baserom.dol", 0x49E410, 0x8
+	.4byte 0
+	.4byte 0

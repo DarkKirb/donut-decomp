@@ -268,36 +268,54 @@ lbl_801E0008:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251820
 $$251820:
-	.incbin "baserom.dol", 0x459C88, 0x10
+	.asciz "ForwardN"
+	.balign 4
+	.4byte 0
 .global PANES__Q33scn5anime25$$2unnamed$$2ControlIcon_cpp$$2
 PANES__Q33scn5anime25$$2unnamed$$2ControlIcon_cpp$$2:
-	.incbin "baserom.dol", 0x459C98, 0x10
+	.4byte 0x80557930
+	.4byte 0x80557938
+	.4byte 0x80557940
+	.4byte 0x8045DB88
 .global $$252408
 $$252408:
-	.incbin "baserom.dol", 0x459CA8, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$252409
 $$252409:
-	.incbin "baserom.dol", 0x459CB8, 0x14
+	.asciz "MusicControlIcon"
+	.balign 4
 .global $$252410
 $$252410:
-	.incbin "baserom.dol", 0x459CCC, 0x14
+	.asciz "AnimeControlIcon"
+	.balign 4
 .global $$252469
 $$252469:
-	.incbin "baserom.dol", 0x459CE0, 0x40
+	.asciz "Disappear"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251817
 $$251817:
-	.incbin "baserom.dol", 0x493D10, 0x8
+	.asciz "RewindN"
 .global $$251818
 $$251818:
-	.incbin "baserom.dol", 0x493D18, 0x8
+	.asciz "PlayN"
+	.balign 4
 .global $$251819
 $$251819:
-	.incbin "baserom.dol", 0x493D20, 0x8
+	.asciz "StopN"
+	.balign 4
 .global $$252462
 $$252462:
-	.incbin "baserom.dol", 0x493D28, 0x8
+	.asciz "Appear"
+	.balign 4
 .global $$252463
 $$252463:
-	.incbin "baserom.dol", 0x493D30, 0x8
+	.asciz "Wait"
+	.balign 4

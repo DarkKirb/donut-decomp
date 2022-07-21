@@ -743,21 +743,31 @@ lbl_8036C8B8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common9StateSwim
 __vt__Q53scn4step4hero6common9StateSwim:
-	.incbin "baserom.dol", 0x4882B8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036C0A4
+	.4byte 0x8036C11C
+	.4byte 0x8036C4D0
+	.4byte 0x8035550C
+	.4byte 0x8036C6A8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257929
 $$257929:
-	.incbin "baserom.dol", 0x49DC60, 0x4
+	.4byte 0
 .global $$257985
 $$257985:
-	.incbin "baserom.dol", 0x49DC64, 0x4
+	.4byte 0xBF800000
 .global $$257986
 $$257986:
-	.incbin "baserom.dol", 0x49DC68, 0x4
+	.4byte 0x42480000
 .global $$257987
 $$257987:
-	.incbin "baserom.dol", 0x49DC6C, 0x4
+	.4byte 0x3F800000
 .global $$257988
 $$257988:
-	.incbin "baserom.dol", 0x49DC70, 0x8
+	.4byte 0xC2480000
+	.4byte 0

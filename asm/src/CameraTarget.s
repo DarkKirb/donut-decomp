@@ -1029,54 +1029,55 @@ lbl_803D373C:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256033
 $$256033:
-	.incbin "baserom.dol", 0x49D658, 0x4
+	.4byte 0
 .global $$256034
 $$256034:
-	.incbin "baserom.dol", 0x49D65C, 0x4
+	.4byte 0x3F800000
 .global $$256035
 $$256035:
-	.incbin "baserom.dol", 0x49D660, 0x4
+	.4byte 0x3E800000
 .global $$256036
 $$256036:
-	.incbin "baserom.dol", 0x49D664, 0x4
+	.4byte 0x3F000000
 .global $$256116
 $$256116:
-	.incbin "baserom.dol", 0x49D668, 0x4
+	.4byte 0xB727C5AC
 .global $$256117
 $$256117:
-	.incbin "baserom.dol", 0x49D66C, 0x4
+	.4byte 0x3727C5AC
 .global $$256118
 $$256118:
-	.incbin "baserom.dol", 0x49D670, 0x4
+	.4byte 0x3FC00000
 .global $$256119
 $$256119:
-	.incbin "baserom.dol", 0x49D674, 0x4
+	.4byte 0xBF000000
 .global $$256120
 $$256120:
-	.incbin "baserom.dol", 0x49D678, 0x4
+	.4byte 0xC0000000
 .global $$256121
 $$256121:
-	.incbin "baserom.dol", 0x49D67C, 0x4
+	.4byte 0x40000000
 .global $$256122
 $$256122:
-	.incbin "baserom.dol", 0x49D680, 0x4
+	.4byte 0x3DCCCCCD
 .global $$256123
 $$256123:
-	.incbin "baserom.dol", 0x49D684, 0x4
+	.4byte 0xC2200000
 .global $$256124
 $$256124:
-	.incbin "baserom.dol", 0x49D688, 0x4
+	.4byte 0xC1F00000
 .global $$256125
 $$256125:
-	.incbin "baserom.dol", 0x49D68C, 0x4
+	.4byte 0x42200000
 .global $$256126
 $$256126:
-	.incbin "baserom.dol", 0x49D690, 0x4
+	.4byte 0x41F00000
 .global $$256203
 $$256203:
-	.incbin "baserom.dol", 0x49D694, 0x4
+	.4byte 0x3D4CCCCD
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253235
 $$253235:
-	.incbin "baserom.dol", 0x49E840, 0x8
+	.4byte 0
+	.4byte 0

@@ -1155,38 +1155,117 @@ GetTypeObj__Q34nw4r3g3d12AnmObjTexPatCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12AnmObjTexPat
 TYPE_NAME__Q34nw4r3g3d12AnmObjTexPat:
-	.incbin "baserom.dol", 0x404558, 0x18
+	.4byte 0x0000000D
+	.asciz "AnmObjTexPat"
+	.balign 4
+	.4byte 0
 .global TYPE_NAME__Q34nw4r3g3d16AnmObjTexPatNode
 TYPE_NAME__Q34nw4r3g3d16AnmObjTexPatNode:
-	.incbin "baserom.dol", 0x404570, 0x18
+	.4byte 0x00000011
+	.asciz "AnmObjTexPatNode"
+	.balign 4
 .global TYPE_NAME__Q34nw4r3g3d20AnmObjTexPatOverride
 TYPE_NAME__Q34nw4r3g3d20AnmObjTexPatOverride:
-	.incbin "baserom.dol", 0x404588, 0x20
+	.4byte 0x00000015
+	.asciz "AnmObjTexPatOverride"
+	.balign 4
+	.4byte 0
 .global TYPE_NAME__Q34nw4r3g3d15AnmObjTexPatRes
 TYPE_NAME__Q34nw4r3g3d15AnmObjTexPatRes:
-	.incbin "baserom.dol", 0x4045A8, 0x18
+	.4byte 0x00000010
+	.asciz "AnmObjTexPatRes"
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d15AnmObjTexPatRes
 __vt__Q34nw4r3g3d15AnmObjTexPatRes:
-	.incbin "baserom.dol", 0x43CA30, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D6D50  ;# ptr
+	.4byte 0x800D6B40  ;# ptr
+	.4byte 0x800D6E30  ;# ptr
+	.4byte 0x800D6E20  ;# ptr
+	.4byte 0x800D6E10  ;# ptr
+	.4byte 0x800D6740  ;# ptr
+	.4byte 0x800D6800  ;# ptr
+	.4byte 0x800D68E0  ;# ptr
+	.4byte 0x800D6810  ;# ptr
+	.4byte 0x800D68D0  ;# ptr
+	.4byte 0x800D69C0  ;# ptr
+	.4byte 0x800D6140  ;# ptr
+	.4byte 0x800D6AC0  ;# ptr
+	.4byte 0x800D6150  ;# ptr
+	.4byte 0x800D6160  ;# ptr
+	.4byte 0x800D6170  ;# ptr
 .global __vt__Q34nw4r3g3d20AnmObjTexPatOverride
 __vt__Q34nw4r3g3d20AnmObjTexPatOverride:
-	.incbin "baserom.dol", 0x43CA78, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D6E40  ;# ptr
+	.4byte 0x800D6340  ;# ptr
+	.4byte 0x800D6F50  ;# ptr
+	.4byte 0x800D6F40  ;# ptr
+	.4byte 0x800D6F30  ;# ptr
+	.4byte 0x800D6240  ;# ptr
+	.4byte 0x800D6250  ;# ptr
+	.4byte 0x800D6230  ;# ptr
+	.4byte 0x800D62B0  ;# ptr
+	.4byte 0x800D62C0  ;# ptr
+	.4byte 0x800D6320  ;# ptr
+	.4byte 0x800D6330  ;# ptr
+	.4byte 0x800D6490  ;# ptr
+	.4byte 0x800D6200  ;# ptr
+	.4byte 0x800D6210  ;# ptr
+	.4byte 0x800D6220  ;# ptr
 .global __vt__Q34nw4r3g3d16AnmObjTexPatNode
 __vt__Q34nw4r3g3d16AnmObjTexPatNode:
-	.incbin "baserom.dol", 0x43CAC0, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D6EC0  ;# ptr
+	.4byte 0x800D6340  ;# ptr
+	.4byte 0x800D6190  ;# ptr
+	.4byte 0x800D6FD0  ;# ptr
+	.4byte 0x800D6FC0  ;# ptr
+	.4byte 0x800D6240  ;# ptr
+	.4byte 0x800D6250  ;# ptr
+	.4byte 0x800D6230  ;# ptr
+	.4byte 0x800D62B0  ;# ptr
+	.4byte 0x800D62C0  ;# ptr
+	.4byte 0x800D6320  ;# ptr
+	.4byte 0x800D6330  ;# ptr
+	.4byte 0
+	.4byte 0x800D6200  ;# ptr
+	.4byte 0x800D6210  ;# ptr
+	.4byte 0x800D6220  ;# ptr
 .global __vt__Q34nw4r3g3d12AnmObjTexPat
 __vt__Q34nw4r3g3d12AnmObjTexPat:
-	.incbin "baserom.dol", 0x43CB08, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D6DC0  ;# ptr
+	.4byte 0
+	.4byte 0x800D6180  ;# ptr
+	.4byte 0x800D6FF0  ;# ptr
+	.4byte 0x800D6FE0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D6140  ;# ptr
+	.4byte 0
+	.4byte 0x800D6150  ;# ptr
+	.4byte 0x800D6160  ;# ptr
+	.4byte 0x800D6170  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210745
 $$210745:
-	.incbin "baserom.dol", 0x499A70, 0x4
+	.4byte 0
 .global $$210768
 $$210768:
-	.incbin "baserom.dol", 0x499A74, 0x4
+	.4byte 0x3F800000
 .global $$210921
 $$210921:
-	.incbin "baserom.dol", 0x499A78, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

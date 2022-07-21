@@ -2073,62 +2073,79 @@ lbl_801ADCD4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255792
 $$255792:
-	.incbin "baserom.dol", 0x453970, 0x10
+	.asciz "lyt/%s.arc.cmp"
+	.balign 4
 .global $$256286
 $$256286:
-	.incbin "baserom.dol", 0x453980, 0xC
+	.asciz "%s.brlyt"
+	.balign 4
 .global $$256339
 $$256339:
-	.incbin "baserom.dol", 0x45398C, 0xC
+	.asciz "root/anim"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x453998, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x4539BC, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x4539C8, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut28LinkList$$0Q34nw4r3lyt4Pane$$44$$18IteratorCFv:
-	.incbin "baserom.dol", 0x4539EC, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x4539F8, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x453A1C, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x453A28, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x453A4C, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x453A58, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x453A7C, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255793
 $$255793:
-	.incbin "baserom.dol", 0x493538, 0x4
+	.4byte 0
 .global $$255794
 $$255794:
-	.incbin "baserom.dol", 0x49353C, 0x8
+	.asciz "root"
+	.balign 4
 .global $$256337
 $$256337:
-	.incbin "baserom.dol", 0x493544, 0x4
+	.4byte 0x25735F00
 .global $$256338
 $$256338:
-	.incbin "baserom.dol", 0x493548, 0x8
+	.asciz "anim"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256461
 $$256461:
-	.incbin "baserom.dol", 0x49A4C0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256509
 $$256509:
-	.incbin "baserom.dol", 0x49A4C8, 0x8
+	.4byte 0
+	.4byte 0

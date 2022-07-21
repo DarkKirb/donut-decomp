@@ -101,15 +101,23 @@ setIsPose__Q53scn4step7gimmick10cameralock13VariationPermFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick10cameralock13VariationPerm
 __vt__Q53scn4step7gimmick10cameralock13VariationPerm:
-	.incbin "baserom.dol", 0x47C520, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80304CB4
+	.4byte 0x80304DC4
+	.4byte 0x80304DC8
+	.4byte 0x80304DCC
+	.4byte 0x80304DD0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254287
 $$254287:
-	.incbin "baserom.dol", 0x49D288, 0x4
+	.4byte 0x3F000000
 .global $$254288
 $$254288:
-	.incbin "baserom.dol", 0x49D28C, 0x4
+	.4byte 0xBF000000
 .global $$254289
 $$254289:
-	.incbin "baserom.dol", 0x49D290, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0

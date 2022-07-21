@@ -914,19 +914,25 @@ isActive__Q43scn4step5ostop9RequestorCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x44F360, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x44F384, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x44F390, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x44F3B4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x44F3C0, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x44F3E4, 0xC
+	.asciz "LinkList.h"
+	.balign 4

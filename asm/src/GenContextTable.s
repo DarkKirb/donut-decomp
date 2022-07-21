@@ -344,4 +344,5 @@ lbl_80181B84:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249762
 $$249762:
-	.incbin "baserom.dol", 0x44F4F0, 0x18
+	.asciz "vector length error"
+	.4byte 0

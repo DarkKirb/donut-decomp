@@ -108,7 +108,8 @@ lbl_80016444:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DD70, 0x20
+	.asciz "MetroTRK for Revolution v0.4"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gTRKBigEndian

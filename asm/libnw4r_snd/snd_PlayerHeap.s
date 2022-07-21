@@ -153,4 +153,7 @@ GetFreeSize__Q44nw4r3snd6detail10PlayerHeapCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10PlayerHeap
 __vt__Q44nw4r3snd6detail10PlayerHeap:
-	.incbin "baserom.dol", 0x43E468, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010B290  ;# ptr
+	.4byte 0x8010B390  ;# ptr

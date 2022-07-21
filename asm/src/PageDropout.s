@@ -822,112 +822,168 @@ lbl_801DD99C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ENTRIES_CHALLENGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRIES_CHALLENGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x411538, 0x10
+	.4byte 0
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0
 .global T_ENTRY_CONTEXTS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRY_CONTEXTS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x411548, 0x20
+	.4byte 0x8055FCC0
+	.4byte 0x00000002
+	.4byte 0x8055FCC8
+	.4byte 0x00000002
+	.4byte 0x80415438
+	.4byte 0x00000003
+	.4byte 0x8055FCD0
+	.4byte 0x00000002
 .global T_LABELS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_LABELS__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x411568, 0x28
+	.4byte 0x8045D8E8
+	.4byte 0x8045D8F4
+	.4byte 0x8045D8F4
+	.4byte 0x8045D900
+	.4byte 0x8045D914
+	.4byte 0x805578D8
+	.4byte 0x805578D8
+	.4byte 0x8045D8F4
+	.4byte 0x8045D924
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252145
 $$252145:
-	.incbin "baserom.dol", 0x4599E8, 0xC
+	.asciz "Continue"
+	.balign 4
 .global $$252146
 $$252146:
-	.incbin "baserom.dol", 0x4599F4, 0xC
+	.asciz "ExitStage"
+	.balign 4
 .global $$252147
 $$252147:
-	.incbin "baserom.dol", 0x459A00, 0x14
+	.asciz "ReturnFileSelect"
+	.balign 4
 .global $$252148
 $$252148:
-	.incbin "baserom.dol", 0x459A14, 0x10
+	.asciz "ReturnAreaMap"
+	.balign 4
 .global $$252150
 $$252150:
-	.incbin "baserom.dol", 0x459A24, 0xC
+	.asciz "BattleKing"
+	.balign 4
 .global $$253327
 $$253327:
-	.incbin "baserom.dol", 0x459A30, 0x10
+	.asciz "DropoutWindow"
+	.balign 4
 .global $$253329
 $$253329:
-	.incbin "baserom.dol", 0x459A40, 0xC
+	.asciz "ConfirmN"
+	.balign 4
 .global $$253331
 $$253331:
-	.incbin "baserom.dol", 0x459A4C, 0xC
+	.asciz "common/Main"
 .global $$253332
 $$253332:
-	.incbin "baserom.dol", 0x459A58, 0x10
+	.asciz "ConfirmWindow"
+	.balign 4
 .global $$253333
 $$253333:
-	.incbin "baserom.dol", 0x459A68, 0xC
+	.asciz "ButtonA1N"
+	.balign 4
 .global $$253334
 $$253334:
-	.incbin "baserom.dol", 0x459A74, 0xC
+	.asciz "ButtonA2N"
+	.balign 4
 .global $$253335
 $$253335:
-	.incbin "baserom.dol", 0x459A80, 0xC
+	.asciz "ButtonB1N"
+	.balign 4
 .global $$253336
 $$253336:
-	.incbin "baserom.dol", 0x459A8C, 0xC
+	.asciz "ButtonB2N"
+	.balign 4
 .global $$253337
 $$253337:
-	.incbin "baserom.dol", 0x459A98, 0xC
+	.asciz "ButtonB3N"
+	.balign 4
 .global $$253339
 $$253339:
-	.incbin "baserom.dol", 0x459AA4, 0xC
+	.asciz "Dropout%s"
+	.balign 4
 .global $$253415
 $$253415:
-	.incbin "baserom.dol", 0x459AB0, 0x14
+	.asciz "PageTitleDropout"
+	.balign 4
 .global $$253488
 $$253488:
-	.incbin "baserom.dol", 0x459AC4, 0x10
+	.asciz "DropoutAgain2"
+	.balign 4
 .global $$253489
 $$253489:
-	.incbin "baserom.dol", 0x459AD4, 0x1C
+	.asciz "DropoutReturnFileSelect2"
+	.balign 4
 .global $$253490
 $$253490:
-	.incbin "baserom.dol", 0x459AF0, 0x14
+	.asciz "DropoutBattleKing2"
+	.balign 4
 .global $$253491
 $$253491:
-	.incbin "baserom.dol", 0x459B04, 0x14
+	.asciz "ConfirmNotSaved2"
+	.balign 4
 .global $$253492
 $$253492:
-	.incbin "baserom.dol", 0x459B18, 0x10
+	.asciz "ConfirmNotSaved"
 .global __vt__Q25pause11PageDropout
 __vt__Q25pause11PageDropout:
-	.incbin "baserom.dol", 0x459B28, 0x50
+	.4byte 0
+	.4byte 0
+	.4byte 0x801DD928  ;# ptr
+	.4byte 0x801DD44C  ;# ptr
+	.4byte 0x801DD458  ;# ptr
+	.4byte 0x801DD45C  ;# ptr
+	.4byte 0x801DD4C4  ;# ptr
+	.4byte 0x801DD4F4  ;# ptr
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252149
 $$252149:
-	.incbin "baserom.dol", 0x493CB8, 0x8
+	.asciz "Again"
+	.balign 4
 .global $$253328
 $$253328:
-	.incbin "baserom.dol", 0x493CC0, 0x8
+	.asciz "WindowN"
 .global $$253330
 $$253330:
-	.incbin "baserom.dol", 0x493CC8, 0x4
+	.4byte 0
 .global $$253338
 $$253338:
-	.incbin "baserom.dol", 0x493CCC, 0x4
+	.4byte 0
 .global $$253340
 $$253340:
-	.incbin "baserom.dol", 0x493CD0, 0x8
+	.asciz "Button"
+	.balign 4
 .global $$253493
 $$253493:
-	.incbin "baserom.dol", 0x493CD8, 0x8
+	.asciz "%s_Yes"
+	.balign 4
 .global $$253494
 $$253494:
-	.incbin "baserom.dol", 0x493CE0, 0x8
+	.asciz "%s_No"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ENTRIES_STAGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRIES_STAGE__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x49A800, 0x8
+	.4byte 0
+	.4byte 0x00000002
 .global T_ENTRIES_LEVELMAP__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRIES_LEVELMAP__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x49A808, 0x8
+	.4byte 0
+	.4byte 0x00000003
 .global T_ENTRIES_ABILITYROOM__Q25pause25$$2unnamed$$2PageDropout_cpp$$2
 T_ENTRIES_ABILITYROOM__Q25pause25$$2unnamed$$2PageDropout_cpp$$2:
-	.incbin "baserom.dol", 0x49A810, 0x8
+	.4byte 0
+	.4byte 0x00000004

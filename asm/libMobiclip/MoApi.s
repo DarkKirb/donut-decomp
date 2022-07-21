@@ -1089,69 +1089,95 @@ lbl_8014FAEC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22662
 $$22662:
-	.incbin "baserom.dol", 0x443C88, 0x50
+	.asciz "<< RVL_MWM - MOBICLIP_MO \trelease build: Dec  8 2011 09:50:37 (0x4302_188) >>"
+	.balign 4
 .global $$23383
 $$23383:
-	.incbin "baserom.dol", 0x443CD8, 0x20
+	.asciz "[MOOpen] Null movie pointer\n"
+	.balign 4
 .global $$23384
 $$23384:
-	.incbin "baserom.dol", 0x443CF8, 0x1C
+	.asciz "[MOOpen] already opened\n"
+	.balign 4
 .global $$23385
 $$23385:
-	.incbin "baserom.dol", 0x443D14, 0x14
+	.asciz "[MOOpen] failed\n"
+	.balign 4
 .global $$23402
 $$23402:
-	.incbin "baserom.dol", 0x443D28, 0x24
+	.4byte 0x8014EF74  ;# ptr
+	.4byte 0x8014EF7C  ;# ptr
+	.4byte 0x8014EF84  ;# ptr
+	.4byte 0x8014EF8C  ;# ptr
+	.4byte 0x8014EF94  ;# ptr
+	.4byte 0x8014EF9C  ;# ptr
+	.4byte 0x8014EFA4  ;# ptr
+	.4byte 0x8014EFB4  ;# ptr
+	.4byte 0x8014EFAC  ;# ptr
 .global $$23409
 $$23409:
-	.incbin "baserom.dol", 0x443D4C, 0x1C
+	.asciz "[MORun] movie not opened\n"
+	.balign 4
 .global $$23410
 $$23410:
-	.incbin "baserom.dol", 0x443D68, 0x18
+	.asciz "[MORun] fatal error\n"
+	.balign 4
 .global $$23417
 $$23417:
-	.incbin "baserom.dol", 0x443D80, 0x20
+	.asciz "[MOClose] movie was not opened\n"
 .global $$23425
 $$23425:
-	.incbin "baserom.dol", 0x443DA0, 0x2C
+	.asciz "[MODestroyInstance] movie was not closed\n"
+	.balign 4
 .global $$23509
 $$23509:
-	.incbin "baserom.dol", 0x443DCC, 0x28
+	.asciz "[MOGetYUVImage] movie was not opened\n"
+	.balign 4
 .global $$23533
 $$23533:
-	.incbin "baserom.dol", 0x443DF4, 0x28
+	.asciz "[MOGetRGBImage] movie was not opened\n"
+	.balign 4
 .global $$23546
 $$23546:
-	.incbin "baserom.dol", 0x443E1C, 0x24
+	.asciz "[MOSkipImage] movie was not opened\n"
 .global $$23582
 $$23582:
-	.incbin "baserom.dol", 0x443E40, 0x2C
+	.asciz "[MOGetAudioPacket] movie was not opened\n"
+	.balign 4
 .global $$23583
 $$23583:
-	.incbin "baserom.dol", 0x443E6C, 0x30
+	.asciz "[MOGetAudioPacket] failed, audio queue empty\n"
+	.balign 4
 .global $$23584
 $$23584:
-	.incbin "baserom.dol", 0x443E9C, 0x30
+	.asciz "[MOGetAudioPacket] Given buffer is too small\n"
+	.balign 4
 .global $$23585
 $$23585:
-	.incbin "baserom.dol", 0x443ECC, 0x30
+	.asciz "[MOGetAudioPacket]  failed, audio queue empty\n"
+	.balign 4
 .global $$23600
 $$23600:
-	.incbin "baserom.dol", 0x443EFC, 0x2C
+	.asciz "[MOSkipAudioPacket] movie was not opened\n"
+	.balign 4
 .global $$23601
 $$23601:
-	.incbin "baserom.dol", 0x443F28, 0x30
+	.asciz "[MOSkipAudioPacket]  failed, audio queue empty\n"
 .global $$23614
 $$23614:
-	.incbin "baserom.dol", 0x443F58, 0x34
+	.asciz "[MOGetNextAudioPacketSize] movie was not opened\n"
+	.balign 4
 .global $$23615
 $$23615:
-	.incbin "baserom.dol", 0x443F8C, 0x3C
+	.asciz "[MOGetNextAudioPacketSize] failed, audio queue empty\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __MOBICLIP_MOVersion
 __MOBICLIP_MOVersion:
-	.incbin "baserom.dol", 0x492E90, 0x8
+	.4byte 0x80447B88
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global MOiNbCreatedInstances

@@ -135,4 +135,7 @@ DisposeCallbackFunc__Q34nw4r3snd9SoundHeapFPvUlPv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd9SoundHeap
 __vt__Q34nw4r3snd9SoundHeap:
-	.incbin "baserom.dol", 0x43E5D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80113CA0  ;# ptr
+	.4byte 0x80113D30  ;# ptr

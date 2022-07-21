@@ -1452,7 +1452,32 @@ lbl_8032CB2C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$261578
 $$261578:
-	.incbin "baserom.dol", 0x47EA68, 0x68
+	.4byte 0x8032C850
+	.4byte 0x8032C634
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C680
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C6CC
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C718
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C764
+	.4byte 0x8032C848
+	.4byte 0x8032C7B0
+	.4byte 0x8032C848
+	.4byte 0x8032C848
+	.4byte 0x8032C7FC
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q53scn4step4hero5spark6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

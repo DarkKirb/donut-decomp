@@ -224,19 +224,19 @@ PSMTX44Concat:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21671
 $$21671:
-	.incbin "baserom.dol", 0x499090, 0x4
+	.4byte 0x3F800000
 .global $$21672
 $$21672:
-	.incbin "baserom.dol", 0x499094, 0x4
+	.4byte 0x40000000
 .global $$21673
 $$21673:
-	.incbin "baserom.dol", 0x499098, 0x4
+	.4byte 0
 .global $$21674
 $$21674:
-	.incbin "baserom.dol", 0x49909C, 0x4
+	.4byte 0xBF800000
 .global $$21681
 $$21681:
-	.incbin "baserom.dol", 0x4990A0, 0x4
+	.4byte 0x3F000000
 .global $$21682
 $$21682:
-	.incbin "baserom.dol", 0x4990A4, 0x4
+	.4byte 0x3C8EFA35

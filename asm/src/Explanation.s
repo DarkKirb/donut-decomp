@@ -485,83 +485,144 @@ lbl_803F542C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global t_ItemInfoTable__25$$2unnamed$$2Explanation_cpp$$2
 t_ItemInfoTable__25$$2unnamed$$2Explanation_cpp$$2:
-	.incbin "baserom.dol", 0x41CC40, 0x90
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000000F
+	.4byte 0x804957B0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x0000000F
+	.4byte 0x804957C8
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x0000000F
+	.4byte 0x804957D8
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x0000000F
+	.4byte 0x8055C4F0
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x0000000F
+	.4byte 0x8055C4F8
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0x0000000F
+	.4byte 0x8055C500
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x0000000F
+	.4byte 0x804957EC
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0x0000000F
+	.4byte 0x804957FC
+	.4byte 0x00000001
+	.4byte 0x00000006
+	.4byte 0x0000000F
+	.4byte 0x8055C508
 .global $$252218
 $$252218:
-	.incbin "baserom.dol", 0x41CCD0, 0x20
+	.4byte 0x80495844
+	.4byte 0x80495850
+	.4byte 0x8049585C
+	.4byte 0x80495868
+	.4byte 0x80495874
+	.4byte 0x80495880
+	.4byte 0x80495890
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251882
 $$251882:
-	.incbin "baserom.dol", 0x4918B0, 0x18
+	.asciz "Explain_Challenge"
+	.balign 4
+	.4byte 0
 .global $$251883
 $$251883:
-	.incbin "baserom.dol", 0x4918C8, 0x10
+	.asciz "Explain_History"
 .global $$251884
 $$251884:
-	.incbin "baserom.dol", 0x4918D8, 0x14
+	.asciz "Explain_Collection"
+	.balign 4
 .global $$251888
 $$251888:
-	.incbin "baserom.dol", 0x4918EC, 0x10
+	.asciz "KirbyDreamLand"
+	.balign 4
 .global $$251889
 $$251889:
-	.incbin "baserom.dol", 0x4918FC, 0xC
+	.asciz "KirbySDX"
+	.balign 4
 .global $$252784
 $$252784:
-	.incbin "baserom.dol", 0x491908, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 .global $$252785
 $$252785:
-	.incbin "baserom.dol", 0x491918, 0xC
+	.asciz "Explanation"
 .global $$252786
 $$252786:
-	.incbin "baserom.dol", 0x491924, 0x10
+	.asciz "explanationLT"
+	.balign 4
 .global $$252788
 $$252788:
-	.incbin "baserom.dol", 0x491934, 0x10
+	.asciz "explanationCT"
+	.balign 4
 .global $$252211
 $$252211:
-	.incbin "baserom.dol", 0x491944, 0xC
+	.asciz "Iconstar_mc"
 .global $$252212
 $$252212:
-	.incbin "baserom.dol", 0x491950, 0xC
+	.asciz "Iconstar_tl"
 .global $$252213
 $$252213:
-	.incbin "baserom.dol", 0x49195C, 0xC
+	.asciz "Iconstar_vc"
 .global $$252214
 $$252214:
-	.incbin "baserom.dol", 0x491968, 0xC
+	.asciz "Iconstar_gb"
 .global $$252215
 $$252215:
-	.incbin "baserom.dol", 0x491974, 0xC
+	.asciz "Iconstar_fc"
 .global $$252216
 $$252216:
-	.incbin "baserom.dol", 0x491980, 0x10
+	.asciz "Iconstar_sfc"
+	.balign 4
 .global $$252217
 $$252217:
-	.incbin "baserom.dol", 0x491990, 0x40
+	.asciz "Iconstar_64"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251885
 $$251885:
-	.incbin "baserom.dol", 0x4988D0, 0x8
+	.asciz "Kirby1"
+	.balign 4
 .global $$251886
 $$251886:
-	.incbin "baserom.dol", 0x4988D8, 0x8
+	.asciz "Kirby2"
+	.balign 4
 .global $$251887
 $$251887:
-	.incbin "baserom.dol", 0x4988E0, 0x8
+	.asciz "Kirby3"
+	.balign 4
 .global $$251890
 $$251890:
-	.incbin "baserom.dol", 0x4988E8, 0x8
+	.asciz "Kirby64"
 .global $$252787
 $$252787:
-	.incbin "baserom.dol", 0x4988F0, 0x8
+	.asciz "Range"
+	.balign 4
 .global $$252857
 $$252857:
-	.incbin "baserom.dol", 0x4988F8, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$252877
 $$252877:
-	.incbin "baserom.dol", 0x498900, 0x4
+	.4byte 0x496E0000
 .global $$252880
 $$252880:
-	.incbin "baserom.dol", 0x498904, 0x4
+	.4byte 0x4F757400

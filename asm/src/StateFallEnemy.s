@@ -241,4 +241,11 @@ lbl_8025D7B0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy14StateFallEnemy
 __vt__Q53scn4step4boss6whispy14StateFallEnemy:
-	.incbin "baserom.dol", 0x4666E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025D5BC  ;# ptr
+	.4byte 0x8025D63C  ;# ptr
+	.4byte 0x8025D728  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025D72C  ;# ptr
+	.4byte 0x80234504  ;# ptr

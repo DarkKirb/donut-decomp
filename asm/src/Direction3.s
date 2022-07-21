@@ -443,18 +443,19 @@ __sinit_$$3Direction3_cpp:
 /* 8019E58C 0019A3CC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402418, 0x4
+	.4byte 0x8019E454  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255184
 $$255184:
-	.incbin "baserom.dol", 0x49A368, 0x4
+	.4byte 0
 .global $$255436
 $$255436:
-	.incbin "baserom.dol", 0x49A36C, 0x4
+	.4byte 0x3F800000
 .global $$255438
 $$255438:
-	.incbin "baserom.dol", 0x49A370, 0x8
+	.4byte 0xBF800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global BASIS__Q33hel4math10Direction3

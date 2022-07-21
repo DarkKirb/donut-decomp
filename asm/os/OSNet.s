@@ -438,42 +438,54 @@ lbl_800277DC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21053
 $$21053:
-	.incbin "baserom.dol", 0x42BA78, 0x34
+	.asciz "Failed to register network shutdown function. %d\n"
+	.balign 4
 .global $$21054
 $$21054:
-	.incbin "baserom.dol", 0x42BAAC, 0x34
+	.asciz "Failed to suspend the WiiConnect24 scheduler. %d\n"
+	.balign 4
 .global $$21055
 $$21055:
-	.incbin "baserom.dol", 0x42BAE0, 0x40
+	.asciz "Failed to synchronize time with network resource managers. %d\n"
+	.balign 4
 .global __FUNCTION__$681
 __FUNCTION__$681:
-	.incbin "baserom.dol", 0x42BB20, 0x18
+	.asciz "NWC24iPrepareShutdown"
+	.balign 4
 .global $$21069
 $$21069:
-	.incbin "baserom.dol", 0x42BB38, 0x14
+	.asciz "/dev/net/kd/request"
 .global __FUNCTION__$697
 __FUNCTION__$697:
-	.incbin "baserom.dol", 0x42BB4C, 0x18
+	.asciz "NWC24SuspendScheduler"
+	.balign 4
 .global __FUNCTION__$711
 __FUNCTION__$711:
-	.incbin "baserom.dol", 0x42BB64, 0x18
+	.asciz "NWC24ResumeScheduler"
+	.balign 4
 .global __FUNCTION__$727
 __FUNCTION__$727:
-	.incbin "baserom.dol", 0x42BB7C, 0x18
+	.asciz "NWC24iRequestShutdown"
+	.balign 4
 .global $$21122
 $$21122:
-	.incbin "baserom.dol", 0x42BB94, 0x1C
+	.asciz "NWC24Shutdown_: Give up!\n"
+	.balign 4
 .global __FUNCTION__$756
 __FUNCTION__$756:
-	.incbin "baserom.dol", 0x42BBB0, 0x18
+	.asciz "NWC24iSetRtcCounter_"
+	.balign 4
 .global $$21137
 $$21137:
-	.incbin "baserom.dol", 0x42BBC8, 0x18
+	.asciz "/dev/net/kd/time"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global nwc24ShtFd
 nwc24ShtFd:
-	.incbin "baserom.dol", 0x4928E8, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global ShutdownFuncInfo

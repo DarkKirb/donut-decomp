@@ -40,4 +40,5 @@ BTE_Init:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global BT_BD_ANY
 BT_BD_ANY:
-	.incbin "baserom.dol", 0x499498, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFF0000

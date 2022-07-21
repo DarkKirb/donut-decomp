@@ -617,9 +617,19 @@ sceneChange__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick23StateChallengeBattleWin
 __vt__Q53scn4step4hero7gimmick23StateChallengeBattleWin:
-	.incbin "baserom.dol", 0x488980, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037A018
+	.4byte 0x8037A0D4
+	.4byte 0x8037A1C4
+	.4byte 0x8035550C
+	.4byte 0x8037A1C8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$259503
 $$259503:
-	.incbin "baserom.dol", 0x497718, 0x8
+	.4byte 0
+	.4byte 0

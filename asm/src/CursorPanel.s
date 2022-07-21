@@ -135,10 +135,13 @@ lbl_801DB5BC:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251812
 $$251812:
-	.incbin "baserom.dol", 0x493A68, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$251819
 $$251819:
-	.incbin "baserom.dol", 0x493A70, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$251823
 $$251823:
-	.incbin "baserom.dol", 0x493A78, 0x8
+	.asciz "Free"
+	.balign 4

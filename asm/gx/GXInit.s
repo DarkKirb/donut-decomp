@@ -1179,53 +1179,178 @@ lbl_80032CA8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42C900, 0x60
+	.asciz "<< RVL_SDK - GX \trelease build: Aug 23 2010 17:32:50 (0x4302_145) >>"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global DefaultTexData
 DefaultTexData:
-	.incbin "baserom.dol", 0x42C960, 0x20
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
 .global GXDefaultVATList
 GXDefaultVATList:
-	.incbin "baserom.dol", 0x42C980, 0xD0
+	.4byte 0x00000009
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000A
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000B
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0x0000000D
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000E
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000F
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000011
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000012
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000013
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000014
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global GXDefaultProjData
 GXDefaultProjData:
-	.incbin "baserom.dol", 0x42CA50, 0x20
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0xC0000000
+	.4byte 0
+	.4byte 0
 .global GXTexRegionAddrTable
 GXTexRegionAddrTable:
-	.incbin "baserom.dol", 0x42CA70, 0xC0
+	.4byte 0
+	.4byte 0x00010000
+	.4byte 0x00020000
+	.4byte 0x00030000
+	.4byte 0x00040000
+	.4byte 0x00050000
+	.4byte 0x00060000
+	.4byte 0x00070000
+	.4byte 0x00008000
+	.4byte 0x00018000
+	.4byte 0x00028000
+	.4byte 0x00038000
+	.4byte 0x00048000
+	.4byte 0x00058000
+	.4byte 0x00068000
+	.4byte 0x00078000
+	.4byte 0
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00098000
+	.4byte 0x00060000
+	.4byte 0x000B8000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00088000
+	.4byte 0x00050000
+	.4byte 0x000A8000
+	.4byte 0x00070000
+	.4byte 0
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00090000
+	.4byte 0x00060000
+	.4byte 0x000B0000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00080000
+	.4byte 0x00050000
+	.4byte 0x000A0000
+	.4byte 0x00070000
 .global GXShutdownFuncInfo
 GXShutdownFuncInfo:
-	.incbin "baserom.dol", 0x42CB30, 0x10
+	.4byte 0x80031D40  ;# ptr
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __GXVersion
 __GXVersion:
-	.incbin "baserom.dol", 0x492948, 0x8
+	.4byte 0x80430800
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __GXData
 __GXData:
-	.incbin "baserom.dol", 0x4990C8, 0x4
+	.4byte 0x8049A780
 .global $$22712
 $$22712:
-	.incbin "baserom.dol", 0x4990CC, 0x4
+	.4byte 0x4B800000
 .global $$22713
 $$22713:
-	.incbin "baserom.dol", 0x4990D0, 0x4
+	.4byte 0
 .global $$22366
 $$22366:
-	.incbin "baserom.dol", 0x4990D4, 0x4
+	.4byte 0x404040FF
 .global $$22370
 $$22370:
-	.incbin "baserom.dol", 0x4990D8, 0x4
+	.4byte 0xFFFFFFFF
 .global $$22746
 $$22746:
-	.incbin "baserom.dol", 0x4990DC, 0x4
+	.4byte 0x3F800000
 .global $$22747
 $$22747:
-	.incbin "baserom.dol", 0x4990E0, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0
 .global $$22750
 $$22750:
-	.incbin "baserom.dol", 0x4990E8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global FifoObj

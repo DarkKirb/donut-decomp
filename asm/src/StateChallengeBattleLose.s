@@ -1073,33 +1073,43 @@ lbl_80379E84:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick24StateChallengeBattleLose
 __vt__Q53scn4step4hero7gimmick24StateChallengeBattleLose:
-	.incbin "baserom.dol", 0x488958, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80378FFC
+	.4byte 0x803790EC
+	.4byte 0x80379808
+	.4byte 0x8035550C
+	.4byte 0x8037999C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$262138
 $$262138:
-	.incbin "baserom.dol", 0x49DEE8, 0x4
+	.4byte 0
 .global $$260537
 $$260537:
-	.incbin "baserom.dol", 0x49DEEC, 0x4
+	.4byte 0x000000FF
 .global $$260547
 $$260547:
-	.incbin "baserom.dol", 0x49DEF0, 0x4
+	.4byte 0x000000FF
 .global $$262256
 $$262256:
-	.incbin "baserom.dol", 0x49DEF4, 0x4
+	.4byte 0x3F800000
 .global $$262257
 $$262257:
-	.incbin "baserom.dol", 0x49DEF8, 0x4
+	.4byte 0x3F000000
 .global $$262258
 $$262258:
-	.incbin "baserom.dol", 0x49DEFC, 0x4
+	.4byte 0x43340000
 .global $$262261
 $$262261:
-	.incbin "baserom.dol", 0x49DF00, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$262300
 $$262300:
-	.incbin "baserom.dol", 0x49DF08, 0x4
+	.4byte 0x42B40000
 .global $$262340
 $$262340:
-	.incbin "baserom.dol", 0x49DF0C, 0x4
+	.4byte 0xC1400000

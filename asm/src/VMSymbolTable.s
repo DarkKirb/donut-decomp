@@ -140,7 +140,9 @@ lbl_801CDD80:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl$$20
 $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl$$20:
-	.incbin "baserom.dol", 0x458D80, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl
 $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl:
-	.incbin "baserom.dol", 0x458D98, 0x10
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0

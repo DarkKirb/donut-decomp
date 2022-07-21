@@ -346,4 +346,11 @@ onStopPowerfulFinished__Q43scn4step4core10PermEffectFRCQ25ostop5Actor:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4core10PermEffect
 __vt__Q43scn4step4core10PermEffect:
-	.incbin "baserom.dol", 0x468958, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8027814C  ;# ptr
+	.4byte 0x80278270  ;# ptr
+	.4byte 0x80278280  ;# ptr
+	.4byte 0x80278290  ;# ptr
+	.4byte 0x802782D0  ;# ptr
+	.4byte 0

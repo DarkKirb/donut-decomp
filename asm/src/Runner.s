@@ -1793,75 +1793,205 @@ lbl_801C9D44:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20
 $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20:
-	.incbin "baserom.dol", 0x455EE0, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv
 $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv:
-	.incbin "baserom.dol", 0x455EF4, 0x1C
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252995
 $$252995:
-	.incbin "baserom.dol", 0x458298, 0xC
+	.asciz "Runner.cpp"
+	.balign 4
 .global $$252996
 $$252996:
-	.incbin "baserom.dol", 0x4582A4, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$253155
 $$253155:
-	.incbin "baserom.dol", 0x4582B8, 0x10
+	.asciz "[NOT IMPLEMENT]"
 .global $$253157
 $$253157:
-	.incbin "baserom.dol", 0x4582C8, 0x108
+	.4byte 0x801C974C  ;# ptr
+	.4byte 0x801C8A70  ;# ptr
+	.4byte 0x801C8A94  ;# ptr
+	.4byte 0x801C8AB8  ;# ptr
+	.4byte 0x801C8AFC  ;# ptr
+	.4byte 0x801C8B40  ;# ptr
+	.4byte 0x801C8B6C  ;# ptr
+	.4byte 0x801C8B90  ;# ptr
+	.4byte 0x801C8BD4  ;# ptr
+	.4byte 0x801C8C04  ;# ptr
+	.4byte 0x801C8C50  ;# ptr
+	.4byte 0x801C8C7C  ;# ptr
+	.4byte 0x801C8CC8  ;# ptr
+	.4byte 0x801C8CF4  ;# ptr
+	.4byte 0x801C8D40  ;# ptr
+	.4byte 0x801C8D74  ;# ptr
+	.4byte 0x801C8DA8  ;# ptr
+	.4byte 0x801C8DDC  ;# ptr
+	.4byte 0x801C8E10  ;# ptr
+	.4byte 0x801C8E44  ;# ptr
+	.4byte 0x801C8E68  ;# ptr
+	.4byte 0x801C8E8C  ;# ptr
+	.4byte 0x801C8EB8  ;# ptr
+	.4byte 0x801C8EEC  ;# ptr
+	.4byte 0x801C8F20  ;# ptr
+	.4byte 0x801C8F54  ;# ptr
+	.4byte 0x801C8F88  ;# ptr
+	.4byte 0x801C8FAC  ;# ptr
+	.4byte 0x801C8FD0  ;# ptr
+	.4byte 0x801C8FFC  ;# ptr
+	.4byte 0x801C9030  ;# ptr
+	.4byte 0x801C9064  ;# ptr
+	.4byte 0x801C9098  ;# ptr
+	.4byte 0x801C90CC  ;# ptr
+	.4byte 0x801C9100  ;# ptr
+	.4byte 0x801C9134  ;# ptr
+	.4byte 0x801C9168  ;# ptr
+	.4byte 0x801C919C  ;# ptr
+	.4byte 0x801C91C8  ;# ptr
+	.4byte 0x801C91F4  ;# ptr
+	.4byte 0x801C9228  ;# ptr
+	.4byte 0x801C925C  ;# ptr
+	.4byte 0x801C9290  ;# ptr
+	.4byte 0x801C92C4  ;# ptr
+	.4byte 0x801C92F8  ;# ptr
+	.4byte 0x801C9324  ;# ptr
+	.4byte 0x801C9350  ;# ptr
+	.4byte 0x801C9384  ;# ptr
+	.4byte 0x801C93B8  ;# ptr
+	.4byte 0x801C93CC  ;# ptr
+	.4byte 0x801C93F0  ;# ptr
+	.4byte 0x801C9414  ;# ptr
+	.4byte 0x801C9458  ;# ptr
+	.4byte 0x801C946C  ;# ptr
+	.4byte 0x801C9480  ;# ptr
+	.4byte 0x801C94D8  ;# ptr
+	.4byte 0x801C94FC  ;# ptr
+	.4byte 0x801C9530  ;# ptr
+	.4byte 0x801C957C  ;# ptr
+	.4byte 0x801C95C8  ;# ptr
+	.4byte 0x801C9614  ;# ptr
+	.4byte 0x801C9660  ;# ptr
+	.4byte 0x801C96AC  ;# ptr
+	.4byte 0x801C96D0  ;# ptr
+	.4byte 0x801C96FC  ;# ptr
+	.4byte 0x801C9728  ;# ptr
 .global __vt__Q26mintvm6Runner
 __vt__Q26mintvm6Runner:
-	.incbin "baserom.dol", 0x4583D0, 0x15C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801C07C0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2instruction__Q26mintvm10VMFunctionCFv$$20
 $$2STRING$$2instruction__Q26mintvm10VMFunctionCFv$$20:
-	.incbin "baserom.dol", 0x45852C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2instruction__Q26mintvm10VMFunctionCFv
 $$2STRING$$2instruction__Q26mintvm10VMFunctionCFv:
-	.incbin "baserom.dol", 0x458540, 0x10
+	.asciz "VMFunction.hpp"
+	.balign 4
 .global $$2STRING$$2nativeFunc__Q26mintvm10VMFunctionCFv$$20
 $$2STRING$$2nativeFunc__Q26mintvm10VMFunctionCFv$$20:
-	.incbin "baserom.dol", 0x458550, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2nativeFunc__Q26mintvm10VMFunctionCFv
 $$2STRING$$2nativeFunc__Q26mintvm10VMFunctionCFv:
-	.incbin "baserom.dol", 0x458564, 0x14
+	.asciz "VMFunction.hpp"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1CFUl$$20
 $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1CFUl$$20:
-	.incbin "baserom.dol", 0x458578, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1CFUl
 $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1CFUl:
-	.incbin "baserom.dol", 0x458590, 0xC
+	.asciz "MArray.hpp"
+	.balign 4
 .global $$2STRING$$2get__Q26mintvm15VMConstantTableCFUs$$20
 $$2STRING$$2get__Q26mintvm15VMConstantTableCFUs$$20:
-	.incbin "baserom.dol", 0x45859C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2get__Q26mintvm15VMConstantTableCFUs
 $$2STRING$$2get__Q26mintvm15VMConstantTableCFUs:
-	.incbin "baserom.dol", 0x4585B0, 0x18
+	.asciz "VMConstantTable.hpp"
+	.4byte 0
 .global $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1CFUl$$20
 $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1CFUl$$20:
-	.incbin "baserom.dol", 0x4585C8, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1CFUl
 $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1CFUl:
-	.incbin "baserom.dol", 0x4585E0, 0x10
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1FUl$$20
 $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1FUl$$20:
-	.incbin "baserom.dol", 0x4585F0, 0x18
+	.asciz "index = %d, count = %d\n"
 .global $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1FUl
 $$2STRING$$2at__Q26mintvm28MArray$$0PCQ26mintvm8VMModule$$1FUl:
-	.incbin "baserom.dol", 0x458608, 0xC
+	.asciz "MArray.hpp"
+	.balign 4
 .global $$2STRING$$2popModule__Q26mintvm6RunnerFv$$20
 $$2STRING$$2popModule__Q26mintvm6RunnerFv$$20:
-	.incbin "baserom.dol", 0x458614, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2popModule__Q26mintvm6RunnerFv
 $$2STRING$$2popModule__Q26mintvm6RunnerFv:
-	.incbin "baserom.dol", 0x458628, 0xC
+	.asciz "Runner.hpp"
+	.balign 4
 .global $$2STRING$$2decYieldCount__Q26mintvm6RegsetFv$$20
 $$2STRING$$2decYieldCount__Q26mintvm6RegsetFv$$20:
-	.incbin "baserom.dol", 0x458634, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2decYieldCount__Q26mintvm6RegsetFv
 $$2STRING$$2decYieldCount__Q26mintvm6RegsetFv:
-	.incbin "baserom.dol", 0x458648, 0x38
+	.asciz "Regset.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global object___Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1

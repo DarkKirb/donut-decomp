@@ -424,35 +424,55 @@ lbl_8000716C:
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2340
 $$2340:
-	.incbin "baserom.dol", 0x4020A8, 0x18
+	.4byte 0x28080000
+	.4byte 0x00000070
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x82000008
+	.4byte 0x80006F68  ;# ptr
 .global $$2351
 $$2351:
-	.incbin "baserom.dol", 0x4020C0, 0x8
+	.4byte 0x18080000
+	.4byte 0
 .global $$2383
 $$2383:
-	.incbin "baserom.dol", 0x4020C8, 0x18
+	.4byte 0x20080000
+	.4byte 0x0000005C
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x82000008
+	.4byte 0x80006F68  ;# ptr
 .global $$2401
 $$2401:
-	.incbin "baserom.dol", 0x4020E0, 0x8
+	.4byte 0x20080000
+	.4byte 0
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2341
 $$2341:
-	.incbin "baserom.dol", 0x40224C, 0xC
+	.4byte 0x80006E64  ;# ptr
+	.4byte 0x00000104
+	.4byte 0x80006748  ;# ptr
 .global $$2352
 $$2352:
-	.incbin "baserom.dol", 0x402258, 0xC
+	.4byte 0x80006F68  ;# ptr
+	.4byte 0x000000BC
+	.4byte 0x80006760  ;# ptr
 .global $$2384
 $$2384:
-	.incbin "baserom.dol", 0x402264, 0xC
+	.4byte 0x80007024  ;# ptr
+	.4byte 0x000000F8
+	.4byte 0x80006768  ;# ptr
 .global $$2402
 $$2402:
-	.incbin "baserom.dol", 0x402270, 0xC
+	.4byte 0x8000711C  ;# ptr
+	.4byte 0x00000078
+	.4byte 0x80006780  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global thandler__3std
 thandler__3std:
-	.incbin "baserom.dol", 0x492808, 0x4
+	.4byte 0x80006C10  ;# ptr
 .global uhandler__3std
 uhandler__3std:
-	.incbin "baserom.dol", 0x49280C, 0x4
+	.4byte 0x80006C14  ;# ptr

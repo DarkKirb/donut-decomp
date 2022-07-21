@@ -377,13 +377,13 @@ lbl_8019EACC:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251888
 $$251888:
-	.incbin "baserom.dol", 0x49A378, 0x4
+	.4byte 0x4222F983
 .global $$251900
 $$251900:
-	.incbin "baserom.dol", 0x49A37C, 0x4
+	.4byte 0x3F360B61
 .global $$251977
 $$251977:
-	.incbin "baserom.dol", 0x49A380, 0x4
+	.4byte 0x3727C5AC
 .global $$251978
 $$251978:
-	.incbin "baserom.dol", 0x49A384, 0x4
+	.4byte 0x3F800000

@@ -130,12 +130,21 @@ unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick11areamapdemo4Demo
 __vt__Q53scn4step7gimmick11areamapdemo4Demo:
-	.incbin "baserom.dol", 0x47B618, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FAD8C
+	.4byte 0x802FAE04
+	.4byte 0x802FAE08
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F9A60
+	.4byte 0x802F9A94
+	.4byte 0x802FAE90
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252595
 $$252595:
-	.incbin "baserom.dol", 0x49D140, 0x4
+	.4byte 0x41100000
 .global $$252596
 $$252596:
-	.incbin "baserom.dol", 0x49D144, 0x4
+	.4byte 0x41800000

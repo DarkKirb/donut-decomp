@@ -477,23 +477,35 @@ __sinit_$$3StateWarpStarFall_cpp:
 /* 8038330C 0037F14C  4B D3 AD B4 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025C8, 0x4
+	.4byte 0x803832F8
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay$$4PQ43scn4step4hero4Hero$$4i$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay$$4PQ43scn4step4hero4Hero$$4i$$1:
-	.incbin "baserom.dol", 0x488D48, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803832F4
+	.4byte 0x803832D4
 .global __vt__Q53scn4step4hero7gimmick17StateWarpStarFall
 __vt__Q53scn4step4hero7gimmick17StateWarpStarFall:
-	.incbin "baserom.dol", 0x488D58, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80382D80
+	.4byte 0x80382E9C
+	.4byte 0x803831BC
+	.4byte 0x8035550C
+	.4byte 0x803831C0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260208
 $$260208:
-	.incbin "baserom.dol", 0x49DFE8, 0x4
+	.4byte 0
 .global $$260209
 $$260209:
-	.incbin "baserom.dol", 0x49DFEC, 0x4
+	.4byte 0x3F000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global TARGET_OFFSET__31$$2unnamed$$2StateWarpStarFall_cpp$$2

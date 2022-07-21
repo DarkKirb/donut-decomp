@@ -57,7 +57,7 @@ AXFXReverbHiCallback:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22209
 $$22209:
-	.incbin "baserom.dol", 0x499208, 0x4
+	.4byte 0
 .global $$22210
 $$22210:
-	.incbin "baserom.dol", 0x49920C, 0x4
+	.4byte 0x3F800000

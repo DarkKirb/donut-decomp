@@ -192,15 +192,16 @@ lbl_802F82FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252113
 $$252113:
-	.incbin "baserom.dol", 0x47B0B0, 0x1C
+	.asciz "step/message/MahoroaName"
+	.balign 4
 .global $$252114
 $$252114:
-	.incbin "baserom.dol", 0x47B0CC, 0x24
+	.asciz "step/message/MahoroaSpeak_FirstDemo"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252115
 $$252115:
-	.incbin "baserom.dol", 0x49D118, 0x4
+	.4byte 0x8047EFB0
 .global lbl_805625DC
 lbl_805625DC:
-	.incbin "baserom.dol", 0x49D11C, 0x4
+	.4byte 0x8047EFCC

@@ -311,18 +311,25 @@ __dt__Q53scn4step5enemy5gordo17StateMoveSinCurveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5gordo17StateMoveSinCurve
 __vt__Q53scn4step5enemy5gordo17StateMoveSinCurve:
-	.incbin "baserom.dol", 0x473778, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B98F8  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802B9568  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802B96D0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255872
 $$255872:
-	.incbin "baserom.dol", 0x49C5A0, 0x4
+	.4byte 0
 .global $$255895
 $$255895:
-	.incbin "baserom.dol", 0x49C5A4, 0x4
+	.4byte 0x43B40000
 .global $$255921
 $$255921:
-	.incbin "baserom.dol", 0x49C5A8, 0x4
+	.4byte 0x42B40000
 .global $$255922
 $$255922:
-	.incbin "baserom.dol", 0x49C5AC, 0x4
+	.4byte 0x43870000

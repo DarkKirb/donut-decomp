@@ -30,4 +30,43 @@ G3DLightSetCount__Q43scn4step4core17DrawLayerKindUtilFQ43scn4step4core13DrawLaye
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ENTRIES__Q43scn4step4core31$$2unnamed$$2DrawLayerKindUtil_cpp$$2
 T_ENTRIES__Q43scn4step4core31$$2unnamed$$2DrawLayerKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x413B60, 0xA0
+	.4byte 0x00000001
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000100
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000100
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0

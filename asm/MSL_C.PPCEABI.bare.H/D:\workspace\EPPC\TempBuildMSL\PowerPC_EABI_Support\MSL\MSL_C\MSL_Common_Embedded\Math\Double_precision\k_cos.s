@@ -80,28 +80,37 @@ lbl_800121C4:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2476
 $$2476:
-	.incbin "baserom.dol", 0x498E70, 0x8
+	.4byte 0x3FF00000
+	.4byte 0
 .global $$2477
 $$2477:
-	.incbin "baserom.dol", 0x498E78, 0x8
+	.4byte 0x3FA55555
+	.4byte 0x5555554C
 .global $$2478
 $$2478:
-	.incbin "baserom.dol", 0x498E80, 0x8
+	.4byte 0xBF56C16C
+	.4byte 0x16C15177
 .global $$2479
 $$2479:
-	.incbin "baserom.dol", 0x498E88, 0x8
+	.4byte 0x3EFA01A0
+	.4byte 0x19CB1590
 .global $$2480
 $$2480:
-	.incbin "baserom.dol", 0x498E90, 0x8
+	.4byte 0xBE927E4F
+	.4byte 0x809C52AD
 .global $$2481
 $$2481:
-	.incbin "baserom.dol", 0x498E98, 0x8
+	.4byte 0x3E21EE9E
+	.4byte 0xBDB4B1C4
 .global $$2482
 $$2482:
-	.incbin "baserom.dol", 0x498EA0, 0x8
+	.4byte 0xBDA8FAE9
+	.4byte 0xBE8838D4
 .global $$2483
 $$2483:
-	.incbin "baserom.dol", 0x498EA8, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$2484
 $$2484:
-	.incbin "baserom.dol", 0x498EB0, 0x8
+	.4byte 0x3FD20000
+	.4byte 0

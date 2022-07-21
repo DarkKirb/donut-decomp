@@ -842,37 +842,51 @@ __dt__Q53scn4step5enemy10brontoburt12StatePursuitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common12StatePursuit
 __vt__Q53scn4step5enemy6common12StatePursuit:
-	.incbin "baserom.dol", 0x46F378, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80294004  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x80293AAC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80293E68  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt12StatePursuit
 __vt__Q53scn4step5enemy10brontoburt12StatePursuit:
-	.incbin "baserom.dol", 0x470BC8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A00C8  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x8029FB00  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029FEBC  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256157
 $$256157:
-	.incbin "baserom.dol", 0x49BBE0, 0x4
+	.4byte 0
 .global $$256210
 $$256210:
-	.incbin "baserom.dol", 0x49BBE4, 0x4
+	.4byte 0x3727C5AC
 .global $$256211
 $$256211:
-	.incbin "baserom.dol", 0x49BBE8, 0x4
+	.4byte 0x3F800000
 .global $$256249
 $$256249:
-	.incbin "baserom.dol", 0x49BBEC, 0x4
+	.4byte 0x40000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256193
 $$256193:
-	.incbin "baserom.dol", 0x49BF00, 0x4
+	.4byte 0
 .global $$256245
 $$256245:
-	.incbin "baserom.dol", 0x49BF04, 0x4
+	.4byte 0x3727C5AC
 .global $$256246
 $$256246:
-	.incbin "baserom.dol", 0x49BF08, 0x4
+	.4byte 0x3F800000
 .global $$256288
 $$256288:
-	.incbin "baserom.dol", 0x49BF0C, 0x4
+	.4byte 0x40000000

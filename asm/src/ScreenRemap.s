@@ -228,10 +228,11 @@ setupDrawOriginal__Q23sfx11ScreenRemapFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251565
 $$251565:
-	.incbin "baserom.dol", 0x49EE48, 0x4
+	.4byte 0xFFFFFFFF
 .global $$251592
 $$251592:
-	.incbin "baserom.dol", 0x49EE4C, 0x4
+	.4byte 0x000000FF
 .global $$251606
 $$251606:
-	.incbin "baserom.dol", 0x49EE50, 0x8
+	.4byte 0
+	.4byte 0

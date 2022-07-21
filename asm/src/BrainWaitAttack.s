@@ -34,4 +34,11 @@ __dt__Q53scn4step5enemy10poppybrojr15BrainWaitAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10poppybrojr15BrainWaitAttack
 __vt__Q53scn4step5enemy10poppybrojr15BrainWaitAttack:
-	.incbin "baserom.dol", 0x476808, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D1678  ;# ptr
+	.4byte 0x802D1670  ;# ptr
+	.4byte 0x802D1674  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

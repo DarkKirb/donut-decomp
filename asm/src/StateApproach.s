@@ -136,12 +136,17 @@ lbl_803C7448:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state13StateApproach
 __vt__Q53scn4step4item5state13StateApproach:
-	.incbin "baserom.dol", 0x48E660, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C7408
+	.4byte 0x803C72E4
+	.4byte 0x803C72E8
+	.4byte 0x803C5204
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255066
 $$255066:
-	.incbin "baserom.dol", 0x49E5B0, 0x4
+	.4byte 0
 .global $$255081
 $$255081:
-	.incbin "baserom.dol", 0x49E5B4, 0x4
+	.4byte 0x3F800000

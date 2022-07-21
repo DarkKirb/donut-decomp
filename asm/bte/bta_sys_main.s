@@ -184,10 +184,12 @@ bta_sys_set_trace_level:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2587
 $$2587:
-	.incbin "baserom.dol", 0x436B20, 0x14
+	.asciz "BTA got event 0x%x"
+	.balign 4
 .global $$2588
 $$2588:
-	.incbin "baserom.dol", 0x436B34, 0x24
+	.asciz "BTA got unregistered event id %d"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_sys_cb

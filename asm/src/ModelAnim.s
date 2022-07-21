@@ -1636,83 +1636,103 @@ lbl_80191C68:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmShpFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmShpFv:
-	.incbin "baserom.dol", 0x450790, 0xC
+	.asciz "ResAnmShp"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmShpCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmShpCFv$$20:
-	.incbin "baserom.dol", 0x45079C, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmShpCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmShpCFv:
-	.incbin "baserom.dol", 0x4507B8, 0x14
+	.asciz "g3d_resanmshp_ac.h"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d12ResAnmTexSrtFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d12ResAnmTexSrtFv:
-	.incbin "baserom.dol", 0x4507CC, 0x10
+	.asciz "ResAnmTexSrt"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexSrtCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexSrtCFv$$20:
-	.incbin "baserom.dol", 0x4507DC, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexSrtCFv
 $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexSrtCFv:
-	.incbin "baserom.dol", 0x4507F8, 0x18
+	.asciz "g3d_resanmtexsrt_ac.h"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d12ResAnmTexPatFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d12ResAnmTexPatFv:
-	.incbin "baserom.dol", 0x450810, 0x10
+	.asciz "ResAnmTexPat"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexPatCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexPatCFv$$20:
-	.incbin "baserom.dol", 0x450820, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexPatCFv
 $$2STRING$$2ref__Q34nw4r3g3d12ResAnmTexPatCFv:
-	.incbin "baserom.dol", 0x45083C, 0x18
+	.asciz "g3d_resanmtexpat_ac.h"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmVisFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmVisFv:
-	.incbin "baserom.dol", 0x450854, 0xC
+	.asciz "ResAnmVis"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmVisCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmVisCFv$$20:
-	.incbin "baserom.dol", 0x450860, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmVisCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmVisCFv:
-	.incbin "baserom.dol", 0x45087C, 0x14
+	.asciz "g3d_resanmvis_ac.h"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmClrFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmClrFv:
-	.incbin "baserom.dol", 0x450890, 0xC
+	.asciz "ResAnmClr"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmClrCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmClrCFv$$20:
-	.incbin "baserom.dol", 0x45089C, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmClrCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmClrCFv:
-	.incbin "baserom.dol", 0x4508B8, 0x14
+	.asciz "g3d_resanmclr_ac.h"
+	.balign 4
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmChrFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmChrFv:
-	.incbin "baserom.dol", 0x4508CC, 0xC
+	.asciz "ResAnmChr"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv$$20:
-	.incbin "baserom.dol", 0x4508D8, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv:
-	.incbin "baserom.dol", 0x4508F4, 0x14
+	.asciz "g3d_resanmchr_ac.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __FUNCTION__$37026
 __FUNCTION__$37026:
-	.incbin "baserom.dol", 0x493190, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$35235
 __FUNCTION__$35235:
-	.incbin "baserom.dol", 0x493194, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$30873
 __FUNCTION__$30873:
-	.incbin "baserom.dol", 0x493198, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$29726
 __FUNCTION__$29726:
-	.incbin "baserom.dol", 0x49319C, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$29445
 __FUNCTION__$29445:
-	.incbin "baserom.dol", 0x4931A0, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$29180
 __FUNCTION__$29180:
-	.incbin "baserom.dol", 0x4931A4, 0x4
+	.4byte 0x72656600
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253047
 $$253047:
-	.incbin "baserom.dol", 0x49A1C8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$253701
 $$253701:
-	.incbin "baserom.dol", 0x49A1D0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

@@ -462,18 +462,23 @@ drawFrontXlu__Q43scn4step2bg15DecorationMaproCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252744
 $$252744:
-	.incbin "baserom.dol", 0x45FDB0, 0x14
+	.asciz "step/map/%s/Parts"
+	.balign 4
 .global $$252770
 $$252770:
-	.incbin "baserom.dol", 0x45FDC4, 0xC
+	.asciz "SceneAnim"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252745
 $$252745:
-	.incbin "baserom.dol", 0x495260, 0x8
+	.asciz "BLand"
+	.balign 4
 .global $$252746
 $$252746:
-	.incbin "baserom.dol", 0x495268, 0x8
+	.asciz "MLand"
+	.balign 4
 .global $$252747
 $$252747:
-	.incbin "baserom.dol", 0x495270, 0x8
+	.asciz "FLand"
+	.balign 4

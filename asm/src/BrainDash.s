@@ -124,4 +124,11 @@ __dt__Q53scn4step5enemy5sheld9BrainDashFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld9BrainDash
 __vt__Q53scn4step5enemy5sheld9BrainDash:
-	.incbin "baserom.dol", 0x477AC0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DCB88  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802DCA40  ;# ptr
+	.4byte 0x802DCB84  ;# ptr
+	.4byte 0

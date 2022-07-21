@@ -3610,202 +3610,273 @@ canRemove__Q43scn7history6detail6DetailFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252852
 $$252852:
-	.incbin "baserom.dol", 0x411D78, 0xC
+	.4byte 0x80461A20
+	.4byte 0x80461A2C
+	.4byte 0x80461A38
 .global $$252854
 $$252854:
-	.incbin "baserom.dol", 0x411D84, 0xC
+	.4byte 0x00000008
+	.4byte 0x00000009
+	.4byte 0x0000000A
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252845
 $$252845:
-	.incbin "baserom.dol", 0x45DB08, 0xC
+	.asciz "Select1N"
+	.balign 4
 .global $$252846
 $$252846:
-	.incbin "baserom.dol", 0x45DB14, 0xC
+	.asciz "Select2N"
+	.balign 4
 .global $$252849
 $$252849:
-	.incbin "baserom.dol", 0x45DB20, 0xC
+	.asciz "SelectLN"
+	.balign 4
 .global $$252850
 $$252850:
-	.incbin "baserom.dol", 0x45DB2C, 0xC
+	.asciz "SelectMN"
+	.balign 4
 .global $$252851
 $$252851:
-	.incbin "baserom.dol", 0x45DB38, 0xC
+	.asciz "SelectRN"
+	.balign 4
 .global $$258572
 $$258572:
-	.incbin "baserom.dol", 0x45DB44, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$258573
 $$258573:
-	.incbin "baserom.dol", 0x45DB54, 0x10
+	.asciz "ProductDetail"
+	.balign 4
 .global $$258574
 $$258574:
-	.incbin "baserom.dol", 0x45DB64, 0x10
+	.asciz "ProductTitle"
+	.balign 4
 .global $$258577
 $$258577:
-	.incbin "baserom.dol", 0x45DB74, 0xC
+	.asciz "HardIcon"
+	.balign 4
 .global $$258578
 $$258578:
-	.incbin "baserom.dol", 0x45DB80, 0x18
+	.asciz "history/detail/Detail"
+	.balign 4
 .global $$258579
 $$258579:
-	.incbin "baserom.dol", 0x45DB98, 0x10
+	.asciz "PackageButtonN"
+	.balign 4
 .global $$258580
 $$258580:
-	.incbin "baserom.dol", 0x45DBA8, 0x10
+	.asciz "MovieButtonN"
+	.balign 4
 .global $$258581
 $$258581:
-	.incbin "baserom.dol", 0x45DBB8, 0xC
+	.asciz "PlayButtonN"
 .global $$258582
 $$258582:
-	.incbin "baserom.dol", 0x45DBC4, 0x10
+	.asciz "AnimeButton01N"
+	.balign 4
 .global $$258583
 $$258583:
-	.incbin "baserom.dol", 0x45DBD4, 0x10
+	.asciz "AnimeButton02N"
+	.balign 4
 .global $$258584
 $$258584:
-	.incbin "baserom.dol", 0x45DBE4, 0x10
+	.asciz "AnimeButton03N"
+	.balign 4
 .global $$258585
 $$258585:
-	.incbin "baserom.dol", 0x45DBF4, 0x10
+	.asciz "MusicButtonN"
+	.balign 4
 .global $$258586
 $$258586:
-	.incbin "baserom.dol", 0x45DC04, 0x10
+	.asciz "TitleWindowN"
+	.balign 4
 .global $$258587
 $$258587:
-	.incbin "baserom.dol", 0x45DC14, 0xC
+	.asciz "TextWindowN"
 .global $$258588
 $$258588:
-	.incbin "baserom.dol", 0x45DC20, 0xC
+	.asciz "PackageN"
+	.balign 4
 .global $$258592
 $$258592:
-	.incbin "baserom.dol", 0x45DC2C, 0xC
+	.asciz "PictureSN"
+	.balign 4
 .global $$258593
 $$258593:
-	.incbin "baserom.dol", 0x45DC38, 0xC
+	.asciz "PictureN"
+	.balign 4
 .global $$258594
 $$258594:
-	.incbin "baserom.dol", 0x45DC44, 0x10
+	.asciz "TitleButtonST"
+	.balign 4
 .global $$258595
 $$258595:
-	.incbin "baserom.dol", 0x45DC54, 0x10
+	.asciz "TitleButtonT"
+	.balign 4
 .global $$258856
 $$258856:
-	.incbin "baserom.dol", 0x45DC64, 0x48
+	.4byte 0x80212BC0  ;# ptr
+	.4byte 0x80212AF8  ;# ptr
+	.4byte 0x80212B04  ;# ptr
+	.4byte 0x80212B10  ;# ptr
+	.4byte 0x80212B1C  ;# ptr
+	.4byte 0x80212B28  ;# ptr
+	.4byte 0x80212B40  ;# ptr
+	.4byte 0x80212B34  ;# ptr
+	.4byte 0x80212B58  ;# ptr
+	.4byte 0x80212B4C  ;# ptr
+	.4byte 0x80212B70  ;# ptr
+	.4byte 0x80212B64  ;# ptr
+	.4byte 0x80212B88  ;# ptr
+	.4byte 0x80212B7C  ;# ptr
+	.4byte 0x80212BA0  ;# ptr
+	.4byte 0x80212B94  ;# ptr
+	.4byte 0x80212BAC  ;# ptr
+	.4byte 0x80212BB8  ;# ptr
 .global $$258998
 $$258998:
-	.incbin "baserom.dol", 0x45DCAC, 0x10
+	.asciz "AnimeCommon.dn"
+	.balign 4
 .global $$259139
 $$259139:
-	.incbin "baserom.dol", 0x45DCBC, 0xC
+	.asciz "TitleLongT"
+	.balign 4
 .global $$259142
 $$259142:
-	.incbin "baserom.dol", 0x45DCC8, 0x10
+	.asciz "ExplanationT"
+	.balign 4
 .global $$259143
 $$259143:
-	.incbin "baserom.dol", 0x45DCD8, 0x14
+	.asciz "AnimePlayButtonT"
+	.balign 4
 .global $$259145
 $$259145:
-	.incbin "baserom.dol", 0x45DCEC, 0x10
+	.asciz "AnimeButton02"
+	.balign 4
 .global $$259147
 $$259147:
-	.incbin "baserom.dol", 0x45DCFC, 0x14
+	.asciz "AnimeButton03_00"
+	.balign 4
 .global $$259149
 $$259149:
-	.incbin "baserom.dol", 0x45DD10, 0xC
+	.asciz "HardIconSFC"
 .global $$259150
 $$259150:
-	.incbin "baserom.dol", 0x45DD1C, 0xC
+	.asciz "HardIcon64"
+	.balign 4
 .global $$259151
 $$259151:
-	.incbin "baserom.dol", 0x45DD28, 0xC
+	.asciz "HardIconFC"
+	.balign 4
 .global $$259152
 $$259152:
-	.incbin "baserom.dol", 0x45DD34, 0x3C
+	.asciz "HardIconGB"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258575
 $$258575:
-	.incbin "baserom.dol", 0x494AD0, 0x8
+	.asciz "AgeN"
+	.balign 4
 .global $$258576
 $$258576:
-	.incbin "baserom.dol", 0x494AD8, 0x8
+	.asciz "BackN"
+	.balign 4
 .global $$258589
 $$258589:
-	.incbin "baserom.dol", 0x494AE0, 0x8
+	.asciz "MovieN"
+	.balign 4
 .global $$258590
 $$258590:
-	.incbin "baserom.dol", 0x494AE8, 0x8
+	.asciz "IconN"
+	.balign 4
 .global $$258591
 $$258591:
-	.incbin "baserom.dol", 0x494AF0, 0x8
+	.asciz "WindowN"
 .global $$258596
 $$258596:
-	.incbin "baserom.dol", 0x494AF8, 0x8
+	.asciz "Back"
+	.balign 4
 .global $$258597
 $$258597:
-	.incbin "baserom.dol", 0x494B00, 0x8
+	.asciz "BarN"
+	.balign 4
 .global $$258876
 $$258876:
-	.incbin "baserom.dol", 0x494B08, 0x4
+	.4byte 0x496E3200
 .global $$258877
 $$258877:
-	.incbin "baserom.dol", 0x494B0C, 0x8
+	.asciz "Wait1"
+	.balign 4
 .global $$258878
 $$258878:
-	.incbin "baserom.dol", 0x494B14, 0x4
+	.4byte 0x496E3100
 .global $$258879
 $$258879:
-	.incbin "baserom.dol", 0x494B18, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$258946
 $$258946:
-	.incbin "baserom.dol", 0x494B20, 0x8
+	.asciz "Out1"
+	.balign 4
 .global $$258996
 $$258996:
-	.incbin "baserom.dol", 0x494B28, 0x4
+	.4byte 0x59657300
 .global $$258997
 $$258997:
-	.incbin "baserom.dol", 0x494B2C, 0x4
+	.4byte 0x4E6F0000
 .global $$259010
 $$259010:
-	.incbin "baserom.dol", 0x494B30, 0x8
+	.asciz "CursorN"
 .global $$259072
 $$259072:
-	.incbin "baserom.dol", 0x494B38, 0x8
+	.asciz "Out2"
+	.balign 4
 .global $$259138
 $$259138:
-	.incbin "baserom.dol", 0x494B40, 0x8
+	.asciz "TitleT"
+	.balign 4
 .global $$259140
 $$259140:
-	.incbin "baserom.dol", 0x494B48, 0x4
+	.4byte 0
 .global $$259141
 $$259141:
-	.incbin "baserom.dol", 0x494B4C, 0x4
+	.4byte 0x00200000
 .global $$259144
 $$259144:
-	.incbin "baserom.dol", 0x494B50, 0x8
+	.asciz "Play1"
+	.balign 4
 .global $$259146
 $$259146:
-	.incbin "baserom.dol", 0x494B58, 0x8
+	.asciz "Play4"
+	.balign 4
 .global $$259148
 $$259148:
-	.incbin "baserom.dol", 0x494B60, 0x8
+	.asciz "Play5"
+	.balign 4
 .global $$259187
 $$259187:
-	.incbin "baserom.dol", 0x494B68, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$259188
 $$259188:
-	.incbin "baserom.dol", 0x494B70, 0x8
+	.asciz "UnFocus"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252847
 $$252847:
-	.incbin "baserom.dol", 0x49ACB0, 0x4
+	.4byte 0x80461A08
 .global lbl_80560174
 lbl_80560174:
-	.incbin "baserom.dol", 0x49ACB4, 0x4
+	.4byte 0x80461A14
 .global $$252906
 $$252906:
-	.incbin "baserom.dol", 0x49ACB8, 0x4
+	.4byte 0xFFFFFFFF
 .global $$255019
 $$255019:
-	.incbin "baserom.dol", 0x49ACBC, 0x4
+	.4byte 0x000000FF

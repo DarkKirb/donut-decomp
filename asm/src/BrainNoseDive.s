@@ -253,21 +253,47 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476098, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB858  ;# ptr
+	.4byte 0x802CB818  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee13StateNoseDive$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee13StateNoseDive$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4760A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB854  ;# ptr
+	.4byte 0x802CB834  ;# ptr
 .global __vt__Q53scn4step5enemy10parasoldee13BrainNoseDive
 __vt__Q53scn4step5enemy10parasoldee13BrainNoseDive:
-	.incbin "baserom.dol", 0x4760B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB850  ;# ptr
+	.4byte 0x802CB71C  ;# ptr
+	.4byte 0x802CB798  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x802CB814  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476248, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CD984  ;# ptr
+	.4byte 0x802CD944  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo13StateNoseDive$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo13StateNoseDive$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476258, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CD980  ;# ptr
+	.4byte 0x802CD960  ;# ptr
 .global __vt__Q53scn4step5enemy10parasoldoo13BrainNoseDive
 __vt__Q53scn4step5enemy10parasoldoo13BrainNoseDive:
-	.incbin "baserom.dol", 0x476268, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CD97C  ;# ptr
+	.4byte 0x802CD848  ;# ptr
+	.4byte 0x802CD8C4  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x802CD940  ;# ptr
+	.4byte 0

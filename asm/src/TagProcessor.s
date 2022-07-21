@@ -123,4 +123,9 @@ setUseButtonPushedChar__Q23lyt12TagProcessorFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23lyt12TagProcessor
 __vt__Q23lyt12TagProcessor:
-	.incbin "baserom.dol", 0x453EA0, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x801AC73C  ;# ptr
+	.4byte 0x801AFC70  ;# ptr
+	.4byte 0x801AFD08  ;# ptr
+	.4byte 0

@@ -3151,33 +3151,64 @@ $$2180$$2__dt__Q44nw4r3snd6detail10StrmPlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10StrmPlayer
 __vt__Q44nw4r3snd6detail10StrmPlayer:
-	.incbin "baserom.dol", 0x43E628, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x801160B0  ;# ptr
+	.4byte 0x80116540  ;# ptr
+	.4byte 0x801168A0  ;# ptr
+	.4byte 0x80116A70  ;# ptr
+	.4byte 0x80118A20  ;# ptr
+	.4byte 0x80118A10  ;# ptr
+	.4byte 0x80118A00  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x80118A60  ;# ptr
+	.4byte 0x80118A50  ;# ptr
+	.4byte 0x80118A40  ;# ptr
+	.4byte 0x80118A30  ;# ptr
+	.4byte 0x801189D0  ;# ptr
+	.4byte 0x801189E0  ;# ptr
+	.4byte 0x801189F0  ;# ptr
 .global __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask
 __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask:
-	.incbin "baserom.dol", 0x43E670, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x801160A0  ;# ptr
+	.4byte 0x80118860  ;# ptr
+	.4byte 0x80118930  ;# ptr
+	.4byte 0x801189C0  ;# ptr
 .global __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask
 __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask:
-	.incbin "baserom.dol", 0x43E688, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x80116090  ;# ptr
+	.4byte 0x80118700  ;# ptr
+	.4byte 0x80118750  ;# ptr
+	.4byte 0x80118760  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211788
 $$211788:
-	.incbin "baserom.dol", 0x499F20, 0x8
+	.4byte 0
+	.4byte 0
 .global $$211793
 $$211793:
-	.incbin "baserom.dol", 0x499F28, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$211794
 $$211794:
-	.incbin "baserom.dol", 0x499F30, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$211836
 $$211836:
-	.incbin "baserom.dol", 0x499F38, 0x4
+	.4byte 0x3F800000
 .global $$212109
 $$212109:
-	.incbin "baserom.dol", 0x499F3C, 0x4
+	.4byte 0x42FE0000
 .global $$212110
 $$212110:
-	.incbin "baserom.dol", 0x499F40, 0x8
+	.4byte 0x427C0000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sLoadBuffer__Q44nw4r3snd6detail10StrmPlayer

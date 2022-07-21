@@ -251,10 +251,11 @@ setCameraRect__Q43scn4step6camera12IndiviCameraFRCQ33hel3geo4Rectf:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251843
 $$251843:
-	.incbin "baserom.dol", 0x49B650, 0x4
+	.4byte 0x3F800000
 .global $$251844
 $$251844:
-	.incbin "baserom.dol", 0x49B654, 0x4
+	.4byte 0xBF800000
 .global $$251864
 $$251864:
-	.incbin "baserom.dol", 0x49B658, 0x8
+	.4byte 0x3C8EFA35
+	.4byte 0

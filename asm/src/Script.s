@@ -260,9 +260,13 @@ prevScriptIndex__Q24gobj6ScriptCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251537
 $$251537:
-	.incbin "baserom.dol", 0x451140, 0x20
+	.asciz "GObj.Script.DoNothing"
+	.balign 4
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251536
 $$251536:
-	.incbin "baserom.dol", 0x493208, 0x8
+	.asciz "%s.%s"
+	.balign 4

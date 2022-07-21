@@ -904,39 +904,51 @@ canRemove__Q23mov11MoviePlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250367
 $$250367:
-	.incbin "baserom.dol", 0x459118, 0x28
+	.4byte 0x801CF744  ;# ptr
+	.4byte 0x801CF518  ;# ptr
+	.4byte 0x801CF534  ;# ptr
+	.4byte 0x801CF554  ;# ptr
+	.4byte 0x801CF590  ;# ptr
+	.4byte 0x801CF5AC  ;# ptr
+	.4byte 0x801CF644  ;# ptr
+	.4byte 0x801CF688  ;# ptr
+	.4byte 0x801CF70C  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250273
 $$250273:
-	.incbin "baserom.dol", 0x49A748, 0x4
+	.4byte 0
 .global $$250331
 $$250331:
-	.incbin "baserom.dol", 0x49A74C, 0x4
+	.4byte 0x3F800000
 .global $$249607
 $$249607:
-	.incbin "baserom.dol", 0x49A750, 0x4
+	.4byte 0x801CEDC0  ;# ptr
 .global lbl_8055FC14
 lbl_8055FC14:
-	.incbin "baserom.dol", 0x49A754, 0x4
+	.4byte 0x801CEDAC  ;# ptr
 .global $$250385
 $$250385:
-	.incbin "baserom.dol", 0x49A758, 0x4
+	.4byte 0x3B800000
 .global $$250386
 $$250386:
-	.incbin "baserom.dol", 0x49A75C, 0x4
+	.4byte 0x41F00000
 .global $$250387
 $$250387:
-	.incbin "baserom.dol", 0x49A760, 0x4
+	.4byte 0x41EF3333
 .global $$250388
 $$250388:
-	.incbin "baserom.dol", 0x49A764, 0x4
+	.4byte 0x42700000
 .global $$250389
 $$250389:
-	.incbin "baserom.dol", 0x49A768, 0x8
+	.4byte 0x425FF5C3
+	.4byte 0
 .global $$250390
 $$250390:
-	.incbin "baserom.dol", 0x49A770, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$250393
 $$250393:
-	.incbin "baserom.dol", 0x49A778, 0x8
+	.4byte 0x43300000
+	.4byte 0

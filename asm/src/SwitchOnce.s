@@ -66,9 +66,19 @@ onChangeToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8switch_n10SwitchOnce
 __vt__Q53scn4step7gimmick8switch_n10SwitchOnce:
-	.incbin "baserom.dol", 0x47E628, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803282A0
+	.4byte 0x803282FC
+	.4byte 0x80328300
+	.4byte 0x80328304
+	.4byte 0x80328308
+	.4byte 0x80327B60
+	.4byte 0x80327B64
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252477
 $$252477:
-	.incbin "baserom.dol", 0x496D58, 0x8
+	.asciz "Once"
+	.balign 4

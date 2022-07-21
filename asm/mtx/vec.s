@@ -171,10 +171,11 @@ PSVECSquareDistance:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21414
 $$21414:
-	.incbin "baserom.dol", 0x4990A8, 0x4
+	.4byte 0x3F000000
 .global $$21415
 $$21415:
-	.incbin "baserom.dol", 0x4990AC, 0x4
+	.4byte 0x40400000
 .global $$21443
 $$21443:
-	.incbin "baserom.dol", 0x4990B0, 0x8
+	.4byte 0
+	.4byte 0

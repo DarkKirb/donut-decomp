@@ -90,4 +90,9 @@ Remove__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef9DrawOrder
 __vt__Q34nw4r2ef9DrawOrder:
-	.incbin "baserom.dol", 0x43C160, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800A39E0  ;# ptr
+	.4byte 0x800A3A60  ;# ptr
+	.4byte 0x800A3950  ;# ptr
+	.4byte 0

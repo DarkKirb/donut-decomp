@@ -177,24 +177,31 @@ procFixPos__Q53scn4step4item5state9StateRoahFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state9StateRoah
 __vt__Q53scn4step4item5state9StateRoah:
-	.incbin "baserom.dol", 0x48E718, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C8748
+	.4byte 0x803C874C
+	.4byte 0x803C8750
+	.4byte 0x803C88C8
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255795
 $$255795:
-	.incbin "baserom.dol", 0x49E618, 0x4
+	.4byte 0
 .global $$255830
 $$255830:
-	.incbin "baserom.dol", 0x49E61C, 0x4
+	.4byte 0x4222F983
 .global $$255831
 $$255831:
-	.incbin "baserom.dol", 0x49E620, 0x4
+	.4byte 0x3C8EFA35
 .global $$255832
 $$255832:
-	.incbin "baserom.dol", 0x49E624, 0x4
+	.4byte 0x42B40000
 .global $$255833
 $$255833:
-	.incbin "baserom.dol", 0x49E628, 0x8
+	.4byte 0xBF800000
+	.4byte 0
 .global $$255836
 $$255836:
-	.incbin "baserom.dol", 0x49E630, 0x8
+	.4byte 0x43300000
+	.4byte 0

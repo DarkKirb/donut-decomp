@@ -986,73 +986,162 @@ lbl_803BCF40:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global cdDataTbl__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 cdDataTbl__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x41BF28, 0x80
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x8055BB38
+	.4byte 0x00000002
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x8055BB38
+	.4byte 0x00000002
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x8055BB38
+	.4byte 0x00000002
+	.4byte 0x8055BB38
+	.4byte 0x00000002
+	.4byte 0x804913A8
+	.4byte 0x00000003
+	.4byte 0x804913D4
+	.4byte 0x00000003
+	.4byte 0x804913E0
+	.4byte 0x00000003
+	.4byte 0x8055BB40
+	.4byte 0x00000002
 .global cdDataTblG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 cdDataTblG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x41BFA8, 0x80
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913C8
+	.4byte 0x00000003
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913C8
+	.4byte 0x00000003
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913C8
+	.4byte 0x00000003
+	.4byte 0x804913C8
+	.4byte 0x00000003
+	.4byte 0x804913B8
+	.4byte 0x00000004
+	.4byte 0x804913D4
+	.4byte 0x00000003
+	.4byte 0x804913E0
+	.4byte 0x00000003
+	.4byte 0x8055BB40
+	.4byte 0x00000002
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdChallenge__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x48D4A8, 0x10
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0
 .global bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdChallengeG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x48D4B8, 0x10
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000003
 .global bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdMasterG__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x48D4C8, 0xC
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000003
 .global bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdTraining1__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x48D4D4, 0xC
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
 .global bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdTraining2__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x48D4E0, 0xC
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x00000008
 .global $$253492
 $$253492:
-	.incbin "baserom.dol", 0x48D4EC, 0xC
+	.asciz "ButtonBase"
+	.balign 4
 .global $$253493
 $$253493:
-	.incbin "baserom.dol", 0x48D4F8, 0xC
+	.asciz "ButtonBG"
+	.balign 4
 .global $$253496
 $$253496:
-	.incbin "baserom.dol", 0x48D504, 0xC
+	.asciz "ButtonBGN"
+	.balign 4
 .global $$253690
 $$253690:
-	.incbin "baserom.dol", 0x48D510, 0xC
+	.asciz "TrainingLv3"
 .global $$253691
 $$253691:
-	.incbin "baserom.dol", 0x48D51C, 0xC
+	.asciz "Training"
+	.balign 4
 .global $$253692
 $$253692:
-	.incbin "baserom.dol", 0x48D528, 0xC
+	.asciz "MasterGhost"
 .global $$253694
 $$253694:
-	.incbin "baserom.dol", 0x48D534, 0x10
+	.asciz "ChallengeGhost"
+	.balign 4
 .global $$253695
 $$253695:
-	.incbin "baserom.dol", 0x48D544, 0xC
+	.asciz "Challenge"
+	.balign 4
 .global $$253696
 $$253696:
-	.incbin "baserom.dol", 0x48D550, 0x40
+	.asciz "Button%dN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdMaster__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x497F18, 0x8
+	.4byte 0
+	.4byte 0x00000003
 .global bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2
 bIdTraining3__Q53scn4step4info5lvmap28$$2unnamed$$2ExplainConsole_cpp$$2:
-	.incbin "baserom.dol", 0x497F20, 0x8
+	.4byte 0x0000000B
+	.4byte 0x0000000A
 .global $$253494
 $$253494:
-	.incbin "baserom.dol", 0x497F28, 0x8
+	.asciz "CursorN"
 .global $$253693
 $$253693:
-	.incbin "baserom.dol", 0x497F30, 0x8
+	.asciz "Master"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253495
 $$253495:
-	.incbin "baserom.dol", 0x49E4D8, 0x4
+	.4byte 0
 .global $$253847
 $$253847:
-	.incbin "baserom.dol", 0x49E4DC, 0x4
+	.4byte 0x3F800000

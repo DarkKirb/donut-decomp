@@ -405,17 +405,47 @@ __sinit_$$3lyt_picture_cpp:
 /* 800F533C 000F117C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402384, 0x4
+	.4byte 0x800F5330  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt7Picture
 __vt__Q34nw4r3lyt7Picture:
-	.incbin "baserom.dol", 0x43D3A8, 0x78
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F4F10  ;# ptr
+	.4byte 0x800F5320  ;# ptr
+	.4byte 0x800F30D0  ;# ptr
+	.4byte 0x800F33D0  ;# ptr
+	.4byte 0x800F5240  ;# ptr
+	.4byte 0x800F3470  ;# ptr
+	.4byte 0x800F3500  ;# ptr
+	.4byte 0x800F51B0  ;# ptr
+	.4byte 0x800F51D0  ;# ptr
+	.4byte 0x800F2EC0  ;# ptr
+	.4byte 0x800F2EF0  ;# ptr
+	.4byte 0x800F5200  ;# ptr
+	.4byte 0x800F5220  ;# ptr
+	.4byte 0x800F2F40  ;# ptr
+	.4byte 0x800F3000  ;# ptr
+	.4byte 0x800F35C0  ;# ptr
+	.4byte 0x800F35E0  ;# ptr
+	.4byte 0x800F3670  ;# ptr
+	.4byte 0x800F3690  ;# ptr
+	.4byte 0x800F3730  ;# ptr
+	.4byte 0x800F3740  ;# ptr
+	.4byte 0x800F3750  ;# ptr
+	.4byte 0x800F3850  ;# ptr
+	.4byte 0x800F3A80  ;# ptr
+	.4byte 0x800F3AA0  ;# ptr
+	.4byte 0x800F3AB0  ;# ptr
+	.4byte 0x800F3950  ;# ptr
+	.4byte 0x800F4FF0  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28804
 $$28804:
-	.incbin "baserom.dol", 0x499C80, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r3lyt7Picture

@@ -667,13 +667,18 @@ isPlayReady__Q210homebutton9RemoteSpkCFl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q210homebutton9RemoteSpk
 __vt__Q210homebutton9RemoteSpk:
-	.incbin "baserom.dol", 0x43ED98, 0xC
+	.4byte 0x80442CC0
+	.4byte 0
+	.4byte 0x8012AFA0  ;# ptr
 .global $$26598
 $$26598:
-	.incbin "baserom.dol", 0x43EDA4, 0x1C
+	.asciz "homebutton::RemoteSpk"
+	.balign 4
+	.4byte 0
 .global __RTTI__Q210homebutton9RemoteSpk
 __RTTI__Q210homebutton9RemoteSpk:
-	.incbin "baserom.dol", 0x43EDC0, 0x8
+	.4byte 0x80442CA4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global spInstance__Q210homebutton9RemoteSpk

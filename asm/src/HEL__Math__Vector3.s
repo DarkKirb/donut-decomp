@@ -1263,174 +1263,254 @@ lbl_801C3434:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254520
 $$254520:
-	.incbin "baserom.dol", 0x456610, 0x14
+	.asciz "HEL.Math.Vector3"
+	.balign 4
 .global $$254524
 $$254524:
-	.incbin "baserom.dol", 0x456624, 0x20
+	.asciz "void this(float,float,float)"
+	.balign 4
 .global $$254525
 $$254525:
-	.incbin "baserom.dol", 0x456644, 0x1C
+	.asciz "void set(float,float,float)"
 .global $$254526
 $$254526:
-	.incbin "baserom.dol", 0x456660, 0x20
+	.asciz "bool isZeroLoose(float)const"
+	.balign 4
 .global $$254527
 $$254527:
-	.incbin "baserom.dol", 0x456680, 0x1C
+	.asciz "bool isZeroStrict()const"
+	.balign 4
 .global $$254528
 $$254528:
-	.incbin "baserom.dol", 0x45669C, 0x14
+	.asciz "bool isZero()const"
+	.balign 4
 .global $$254529
 $$254529:
-	.incbin "baserom.dol", 0x4566B0, 0x30
+	.asciz "void opAddAssign(const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$254530
 $$254530:
-	.incbin "baserom.dol", 0x4566E0, 0x30
+	.asciz "void opSubAssign(const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$254531
 $$254531:
-	.incbin "baserom.dol", 0x456710, 0x18
+	.asciz "void opMulAssign(float)"
 .global $$254532
 $$254532:
-	.incbin "baserom.dol", 0x456728, 0x18
+	.asciz "void opDivAssign(float)"
 .global $$254533
 $$254533:
-	.incbin "baserom.dol", 0x456740, 0x38
+	.asciz "HEL.Math.Vector3 opAdd(const ref HEL.Math.Vector3)const"
 .global $$254534
 $$254534:
-	.incbin "baserom.dol", 0x456778, 0x38
+	.asciz "HEL.Math.Vector3 opSub(const ref HEL.Math.Vector3)const"
 .global $$254535
 $$254535:
-	.incbin "baserom.dol", 0x4567B0, 0x24
+	.asciz "HEL.Math.Vector3 opMul(float)const"
+	.balign 4
 .global $$254536
 $$254536:
-	.incbin "baserom.dol", 0x4567D4, 0x24
+	.asciz "HEL.Math.Vector3 opDiv(float)const"
+	.balign 4
 .global $$254537
 $$254537:
-	.incbin "baserom.dol", 0x4567F8, 0x20
+	.asciz "HEL.Math.Vector2 getXY()const"
+	.balign 4
 .global $$254538
 $$254538:
-	.incbin "baserom.dol", 0x456818, 0x20
+	.asciz "HEL.Math.Vector2 getXZ()const"
+	.balign 4
 .global $$254539
 $$254539:
-	.incbin "baserom.dol", 0x456838, 0x20
+	.asciz "HEL.Math.Vector2 getYX()const"
+	.balign 4
 .global $$254540
 $$254540:
-	.incbin "baserom.dol", 0x456858, 0x20
+	.asciz "HEL.Math.Vector2 getYZ()const"
+	.balign 4
 .global $$254541
 $$254541:
-	.incbin "baserom.dol", 0x456878, 0x20
+	.asciz "HEL.Math.Vector2 getZX()const"
+	.balign 4
 .global $$254542
 $$254542:
-	.incbin "baserom.dol", 0x456898, 0x20
+	.asciz "HEL.Math.Vector2 getZY()const"
+	.balign 4
 .global $$254543
 $$254543:
-	.incbin "baserom.dol", 0x4568B8, 0x20
+	.asciz "const HEL.Math.Vector3 Get()"
+	.balign 4
 .global $$254544
 $$254544:
-	.incbin "baserom.dol", 0x4568D8, 0x10
+	.asciz "float GetX()"
+	.balign 4
 .global $$254545
 $$254545:
-	.incbin "baserom.dol", 0x4568E8, 0x10
+	.asciz "float GetY()"
+	.balign 4
 .global $$254546
 $$254546:
-	.incbin "baserom.dol", 0x4568F8, 0x10
+	.asciz "float GetZ()"
+	.balign 4
 .global $$254547
 $$254547:
-	.incbin "baserom.dol", 0x456908, 0x28
+	.asciz "void Set(const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$254548
 $$254548:
-	.incbin "baserom.dol", 0x456930, 0x20
+	.asciz "void SetXYZ(float,float,float)"
+	.balign 4
 .global $$254549
 $$254549:
-	.incbin "baserom.dol", 0x456950, 0x14
+	.asciz "void SetX(float)"
+	.balign 4
 .global $$254550
 $$254550:
-	.incbin "baserom.dol", 0x456964, 0x14
+	.asciz "void SetY(float)"
+	.balign 4
 .global $$254551
 $$254551:
-	.incbin "baserom.dol", 0x456978, 0x18
+	.asciz "void SetZ(float)"
+	.balign 4
+	.4byte 0
 .global $$254552
 $$254552:
-	.incbin "baserom.dol", 0x456990, 0x10
+	.asciz "void Mul(float)"
 .global $$254553
 $$254553:
-	.incbin "baserom.dol", 0x4569A0, 0x10
+	.asciz "void Div(float)"
 .global $$254554
 $$254554:
-	.incbin "baserom.dol", 0x4569B0, 0x14
+	.asciz "void SlotLoad(int)"
+	.balign 4
 .global $$254555
 $$254555:
-	.incbin "baserom.dol", 0x4569C4, 0x14
+	.asciz "void SlotSave(int)"
+	.balign 4
 .global $$254556
 $$254556:
-	.incbin "baserom.dol", 0x4569D8, 0x14
+	.asciz "void SlotAdd(int)"
+	.balign 4
 .global $$254557
 $$254557:
-	.incbin "baserom.dol", 0x4569EC, 0x14
+	.asciz "void SlotSub(int)"
+	.balign 4
 .global $$254558
 $$254558:
-	.incbin "baserom.dol", 0x456A00, 0x34
+	.asciz "const HEL.Math.Vector3 Create(float,float,float)"
+	.balign 4
 .global $$254663
 $$254663:
-	.incbin "baserom.dol", 0x456A34, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2990  ;# ptr
 .global $$254702
 $$254702:
-	.incbin "baserom.dol", 0x456A40, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2A7C  ;# ptr
 .global $$254710
 $$254710:
-	.incbin "baserom.dol", 0x456A4C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2AD0  ;# ptr
 .global $$254718
 $$254718:
-	.incbin "baserom.dol", 0x456A58, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2B24  ;# ptr
 .global $$254726
 $$254726:
-	.incbin "baserom.dol", 0x456A64, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2B78  ;# ptr
 .global $$254734
 $$254734:
-	.incbin "baserom.dol", 0x456A70, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2BCC  ;# ptr
 .global $$254742
 $$254742:
-	.incbin "baserom.dol", 0x456A7C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C2C20  ;# ptr
 .global $$254772
 $$254772:
-	.incbin "baserom.dol", 0x456A88, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8017C568  ;# ptr
 .global $$254782
 $$254782:
-	.incbin "baserom.dol", 0x456A94, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8017C84C  ;# ptr
 .global $$254806
 $$254806:
-	.incbin "baserom.dol", 0x456AA0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801954E0  ;# ptr
 .global $$254820
 $$254820:
-	.incbin "baserom.dol", 0x456AAC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F724  ;# ptr
 .global $$254828
 $$254828:
-	.incbin "baserom.dol", 0x456AB8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F730  ;# ptr
 .global $$254833
 $$254833:
-	.incbin "baserom.dol", 0x456AC4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019FC88  ;# ptr
 .global $$254841
 $$254841:
-	.incbin "baserom.dol", 0x456AD0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801829AC  ;# ptr
 .global $$254846
 $$254846:
-	.incbin "baserom.dol", 0x456ADC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019E1BC  ;# ptr
 .global $$254875
 $$254875:
-	.incbin "baserom.dol", 0x456AE8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F888  ;# ptr
 .global $$254880
 $$254880:
-	.incbin "baserom.dol", 0x456AF4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C326C  ;# ptr
 .global $$254904
 $$254904:
-	.incbin "baserom.dol", 0x456B00, 0x88
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C33B4  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254521
 $$254521:
-	.incbin "baserom.dol", 0x4936C8, 0x4
+	.4byte 0x78000000
 .global $$254522
 $$254522:
-	.incbin "baserom.dol", 0x4936CC, 0x4
+	.4byte 0x79000000
 .global $$254523
 $$254523:
-	.incbin "baserom.dol", 0x4936D0, 0x8
+	.4byte 0x7A000000
+	.4byte 0

@@ -1695,7 +1695,8 @@ lbl_80025B18:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SwitchThreadCallback
 SwitchThreadCallback:
-	.incbin "baserom.dol", 0x4928D0, 0x8
+	.4byte 0x800244A0  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global DefaultThread

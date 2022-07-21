@@ -502,37 +502,76 @@ GetRuntimeTypeInfo__Q33scn4step9SceneStepCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252721
 $$252721:
-	.incbin "baserom.dol", 0x45FC10, 0x14
+	.asciz "StepLevelMap1.dn"
+	.balign 4
 .global $$252722
 $$252722:
-	.incbin "baserom.dol", 0x45FC24, 0x14
+	.asciz "StepLevelMap2.dn"
+	.balign 4
 .global $$252723
 $$252723:
-	.incbin "baserom.dol", 0x45FC38, 0x18
+	.asciz "StepLevelMap3.dn"
+	.balign 4
+	.4byte 0
 .global $$252724
 $$252724:
-	.incbin "baserom.dol", 0x45FC50, 0x18
+	.asciz "StepExplainChallenge.dn"
 .global $$252725
 $$252725:
-	.incbin "baserom.dol", 0x45FC68, 0x14
+	.asciz "StepAbiliryRoom1.dn"
 .global $$252726
 $$252726:
-	.incbin "baserom.dol", 0x45FC7C, 0x14
+	.asciz "StepAbiliryRoom2.dn"
 .global $$252727
 $$252727:
-	.incbin "baserom.dol", 0x45FC90, 0x14
+	.asciz "StepAbiliryRoom3.dn"
 .global $$252728
 $$252728:
-	.incbin "baserom.dol", 0x45FCA4, 0x14
+	.asciz "StepExplainMusou.dn"
 .global $$252729
 $$252729:
-	.incbin "baserom.dol", 0x45FCB8, 0x18
+	.asciz "StepExplainMaster.dn"
+	.balign 4
 .global $$252732
 $$252732:
-	.incbin "baserom.dol", 0x45FCD0, 0x40
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221BA8  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221B8C  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221BA8  ;# ptr
+	.4byte 0x80221B8C  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221BA8  ;# ptr
+	.4byte 0x80221BA8  ;# ptr
+	.4byte 0x80221B8C  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
+	.4byte 0x80221AFC  ;# ptr
 .global __vt__Q33scn4step9SceneStep
 __vt__Q33scn4step9SceneStep:
-	.incbin "baserom.dol", 0x45FD10, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x80221E74  ;# ptr
+	.4byte 0x80221D04  ;# ptr
+	.4byte 0x80221D98  ;# ptr
+	.4byte 0x80221D70  ;# ptr
+	.4byte 0x80221DC0  ;# ptr
+	.4byte 0x80221DE8  ;# ptr
+	.4byte 0x80221E10  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn4step9SceneStep$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

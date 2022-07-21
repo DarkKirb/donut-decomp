@@ -313,50 +313,57 @@ startAnim__Q43scn9grandmenu4menu2BGFv:
 /* 803F4B20 003F0960  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402454, 0x4
+	.4byte 0x80207284  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253189
 $$253189:
-	.incbin "baserom.dol", 0x45CDC0, 0x10
+	.asciz "history/Sky"
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251625
 $$251625:
-	.incbin "baserom.dol", 0x491890, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253190
 $$253190:
-	.incbin "baserom.dol", 0x494868, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$253192
 $$253192:
-	.incbin "baserom.dol", 0x494870, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251626
 $$251626:
-	.incbin "baserom.dol", 0x498888, 0x4
+	.4byte 0x42470000
 .global $$251637
 $$251637:
-	.incbin "baserom.dol", 0x49888C, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$251640
 $$251640:
-	.incbin "baserom.dol", 0x498894, 0xC
+	.asciz "Start"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253191
 $$253191:
-	.incbin "baserom.dol", 0x49AB48, 0x4
+	.4byte 0x40900000
 .global $$253252
 $$253252:
-	.incbin "baserom.dol", 0x49AB4C, 0x4
+	.4byte 0x42480000
 .global $$253253
 $$253253:
-	.incbin "baserom.dol", 0x49AB50, 0x4
+	.4byte 0x40C00000
 .global $$253254
 $$253254:
-	.incbin "baserom.dol", 0x49AB54, 0x4
+	.4byte 0xC0A00000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global MODEL_OFFSET__Q33scn7history16$$2unnamed$$2BG_cpp$$2

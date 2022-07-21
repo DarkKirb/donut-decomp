@@ -439,15 +439,31 @@ __dt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick20St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick20StateUnlockLvMapDoor$$4PQ43scn4step4hero4Hero$$4i$$1
 __vt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick20StateUnlockLvMapDoor$$4PQ43scn4step4hero4Hero$$4i$$1:
-	.incbin "baserom.dol", 0x488C28, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80380E54
+	.4byte 0x80380E10
 .global __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick18StateAllStageClear$$4PQ43scn4step4hero4Hero$$4i$$1
 __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick18StateAllStageClear$$4PQ43scn4step4hero4Hero$$4i$$1:
-	.incbin "baserom.dol", 0x488C38, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80380E50
+	.4byte 0x80380E30
 .global __vt__Q53scn4step4hero7gimmick19StateLeaveLvMapDoor
 __vt__Q53scn4step4hero7gimmick19StateLeaveLvMapDoor:
-	.incbin "baserom.dol", 0x488C48, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803809C8
+	.4byte 0x80380A7C
+	.4byte 0x80380DD0
+	.4byte 0x8035550C
+	.4byte 0x80380E0C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259504
 $$259504:
-	.incbin "baserom.dol", 0x49DFA8, 0x8
+	.4byte 0
+	.4byte 0

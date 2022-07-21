@@ -6003,269 +6003,888 @@ __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11hotheadf
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252639
 $$252639:
-	.incbin "baserom.dol", 0x4605E0, 0x70
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EDE0  ;# ptr
+	.4byte 0x8022ECF0  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EDA4  ;# ptr
+	.4byte 0x8022ED2C  ;# ptr
+	.4byte 0x8022EE1C  ;# ptr
+	.4byte 0x8022EB4C  ;# ptr
+	.4byte 0x8022ECB4  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022ED68  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EE58  ;# ptr
+	.4byte 0x8022EB88  ;# ptr
+	.4byte 0x8022EC78  ;# ptr
+	.4byte 0x8022EBC4  ;# ptr
+	.4byte 0x8022EC00  ;# ptr
+	.4byte 0x8022EC3C  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256431
 $$256431:
-	.incbin "baserom.dol", 0x46DCD8, 0x258
+	.4byte 0x80283BDC  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283404  ;# ptr
+	.4byte 0x8028356C  ;# ptr
+	.4byte 0x80283440  ;# ptr
+	.4byte 0x80283C90  ;# ptr
+	.4byte 0x8028365C  ;# ptr
+	.4byte 0x80283698  ;# ptr
+	.4byte 0x802832D8  ;# ptr
+	.4byte 0x802836D4  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x802834F4  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283B48  ;# ptr
+	.4byte 0x80283260  ;# ptr
+	.4byte 0x802833C8  ;# ptr
+	.4byte 0x802834B8  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x802831E8  ;# ptr
+	.4byte 0x802831AC  ;# ptr
+	.4byte 0x8028347C  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283314  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283B0C  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x8028338C  ;# ptr
+	.4byte 0x80283968  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283350  ;# ptr
+	.4byte 0x8028392C  ;# ptr
+	.4byte 0x80283530  ;# ptr
+	.4byte 0x80283154  ;# ptr
+	.4byte 0x802830DC  ;# ptr
+	.4byte 0x80283170  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283710  ;# ptr
+	.4byte 0x8028374C  ;# ptr
+	.4byte 0x8028383C  ;# ptr
+	.4byte 0x80283800  ;# ptr
+	.4byte 0x80283878  ;# ptr
+	.4byte 0x80283C54  ;# ptr
+	.4byte 0x80283CCC  ;# ptr
+	.4byte 0x802839A4  ;# ptr
+	.4byte 0x802838F0  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D08  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283968  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x802839E0  ;# ptr
+	.4byte 0x80283A1C  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283A58  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D44  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283A94  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283968  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283B84  ;# ptr
+	.4byte 0x80283BC0  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x8028383C  ;# ptr
+	.4byte 0x80283C18  ;# ptr
+	.4byte 0x80283C18  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x8028392C  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283224  ;# ptr
+	.4byte 0x802835A8  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x8028329C  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283118  ;# ptr
+	.4byte 0x802835E4  ;# ptr
+	.4byte 0x80283620  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283788  ;# ptr
+	.4byte 0x802837C4  ;# ptr
+	.4byte 0x802838B4  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283AD0  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x80283D80  ;# ptr
+	.4byte 0x8028356C  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$264044
 $$264044:
-	.incbin "baserom.dol", 0x48F038, 0x108
+	.4byte 0x803D38C0
+	.4byte 0x803D38C0
+	.4byte 0x803D38C0
+	.4byte 0x803D38FC
+	.4byte 0x803D393C
+	.4byte 0x803D397C
+	.4byte 0x803D39BC
+	.4byte 0x803D39FC
+	.4byte 0x803D3A3C
+	.4byte 0x803D3A7C
+	.4byte 0x803D3AB8
+	.4byte 0x803D3AF8
+	.4byte 0x803D3B38
+	.4byte 0x803D3B78
+	.4byte 0x803D3BB8
+	.4byte 0x803D3BF8
+	.4byte 0x803D3C78
+	.4byte 0x803D3CB8
+	.4byte 0x803D3CF8
+	.4byte 0x803D3D38
+	.4byte 0x803D3D78
+	.4byte 0x803D3DB8
+	.4byte 0x803D3DF8
+	.4byte 0x803D3E34
+	.4byte 0x803D3E74
+	.4byte 0x803D3EB4
+	.4byte 0x803D3EF4
+	.4byte 0x803D3F30
+	.4byte 0x803D3F6C
+	.4byte 0x803D3C38
+	.4byte 0x803D3FAC
+	.4byte 0x803D3FEC
+	.4byte 0x803D402C
+	.4byte 0x803D4048
+	.4byte 0x803D4088
+	.4byte 0x803D3F30
+	.4byte 0x803D40C8
+	.4byte 0x803D4108
+	.4byte 0x803D4148
+	.4byte 0x803D3F30
+	.4byte 0x803D4188
+	.4byte 0x803D41C8
+	.4byte 0x803D4208
+	.4byte 0x803D4248
+	.4byte 0x803D4288
+	.4byte 0x803D42C8
+	.4byte 0x803D4308
+	.4byte 0x803D4348
+	.4byte 0x803D4388
+	.4byte 0x803D43C8
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4408
+	.4byte 0x803D4444
+	.4byte 0x803D4460
+	.4byte 0x803D44A0
+	.4byte 0x803D44DC
 .global __vt__Q43scn4step6weapon50CustomSimple$$0Q53scn4step6weapon7airball9StateMain$$1
 __vt__Q43scn4step6weapon50CustomSimple$$0Q53scn4step6weapon7airball9StateMain$$1:
-	.incbin "baserom.dol", 0x48F140, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B20
+	.4byte 0x803D59A8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon55CustomSimple$$0Q53scn4step6weapon11waterpistol9StateMain$$1
 __vt__Q43scn4step6weapon55CustomSimple$$0Q53scn4step6weapon11waterpistol9StateMain$$1:
-	.incbin "baserom.dol", 0x48F15C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B1C
+	.4byte 0x803D592C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9swordbeam9StateMain$$1
 __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9swordbeam9StateMain$$1:
-	.incbin "baserom.dol", 0x48F178, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B18
+	.4byte 0x803D58B0
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15cutterfinalwave9StateMain$$1
 __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15cutterfinalwave9StateMain$$1:
-	.incbin "baserom.dol", 0x48F194, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B14
+	.4byte 0x803D5834
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon61CustomSimple$$0Q53scn4step6weapon17fireburningbullet9StateMain$$1
 __vt__Q43scn4step6weapon61CustomSimple$$0Q53scn4step6weapon17fireburningbullet9StateMain$$1:
-	.incbin "baserom.dol", 0x48F1B0, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B10
+	.4byte 0x803D57B8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13whispyairball9StateMain$$1
 __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13whispyairball9StateMain$$1:
-	.incbin "baserom.dol", 0x48F1CC, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B0C
+	.4byte 0x803D573C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15sirkibblecutter9StateMain$$1
 __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15sirkibblecutter9StateMain$$1:
-	.incbin "baserom.dol", 0x48F1E8, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B08
+	.4byte 0x803D56C0
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12shotzobullet9StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12shotzobullet9StateMain$$1:
-	.incbin "baserom.dol", 0x48F204, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B04
+	.4byte 0x803D5644
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12leafanpollen9StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12leafanpollen9StateMain$$1:
-	.incbin "baserom.dol", 0x48F220, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5B00
+	.4byte 0x803D55C8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv19StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv19StateMain$$1:
-	.incbin "baserom.dol", 0x48F23C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AFC
+	.4byte 0x803D554C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv29StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv29StateMain$$1:
-	.incbin "baserom.dol", 0x48F258, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AF8
+	.4byte 0x803D54D0
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv39StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12sparkshotlv39StateMain$$1:
-	.incbin "baserom.dol", 0x48F274, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AF4
+	.4byte 0x803D5454
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18watergalboroswater9StateMain$$1
 __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18watergalboroswater9StateMain$$1:
-	.incbin "baserom.dol", 0x48F290, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AF0
+	.4byte 0x803D53D8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10spearspear9StateMain$$1
 __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10spearspear9StateMain$$1:
-	.incbin "baserom.dol", 0x48F2AC, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AEC
+	.4byte 0x803D535C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12hammerhammer9StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12hammerhammer9StateMain$$1:
-	.incbin "baserom.dol", 0x48F2C8, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AE8
+	.4byte 0x803D52E0
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8wingshot9StateMain$$1
 __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8wingshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F2E4, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AE4
+	.4byte 0x803D5264
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13wingshockwave9StateMain$$1
 __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13wingshockwave9StateMain$$1:
-	.incbin "baserom.dol", 0x48F300, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AE0
+	.4byte 0x803D51E8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16fightersmashshot9StateMain$$1
 __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16fightersmashshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F31C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5ADC
+	.4byte 0x803D516C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15fighterkickshot9StateMain$$1
 __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15fighterkickshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F338, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AD8
+	.4byte 0x803D50F0
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon58CustomSimple$$0Q53scn4step6weapon14gigantedgeshot9StateMain$$1
 __vt__Q43scn4step6weapon58CustomSimple$$0Q53scn4step6weapon14gigantedgeshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F354, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AD4
+	.4byte 0x803D5074
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16enemywaterbullet9StateMain$$1
 __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16enemywaterbullet9StateMain$$1:
-	.incbin "baserom.dol", 0x48F370, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AD0
+	.4byte 0x803D4FF8
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon64CustomSimple$$0Q53scn4step6weapon20enemywaterbulletwarp9StateMain$$1
 __vt__Q43scn4step6weapon64CustomSimple$$0Q53scn4step6weapon20enemywaterbulletwarp9StateMain$$1:
-	.incbin "baserom.dol", 0x48F38C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5ACC
+	.4byte 0x803D4F7C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16kingsdoowaveshot9StateMain$$1
 __vt__Q43scn4step6weapon60CustomSimple$$0Q53scn4step6weapon16kingsdoowaveshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F3A8, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AC8
+	.4byte 0x803D4F00
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13owgulffeather9StateMain$$1
 __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13owgulffeather9StateMain$$1:
-	.incbin "baserom.dol", 0x48F3C4, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AC4
+	.4byte 0x803D4E84
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9foleyleaf9StateMain$$1
 __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9foleyleaf9StateMain$$1:
-	.incbin "baserom.dol", 0x48F3E0, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AC0
+	.4byte 0x803D4E08
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10bowbyarrow9StateMain$$1
 __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10bowbyarrow9StateMain$$1:
-	.incbin "baserom.dol", 0x48F3FC, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5ABC
+	.4byte 0x803D4D8C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12jucklecutter9StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12jucklecutter9StateMain$$1:
-	.incbin "baserom.dol", 0x48F418, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AB8
+	.4byte 0x803D4D10
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon61CustomSimple$$0Q53scn4step6weapon17tsukikageshuriken9StateMain$$1
 __vt__Q43scn4step6weapon61CustomSimple$$0Q53scn4step6weapon17tsukikageshuriken9StateMain$$1:
-	.incbin "baserom.dol", 0x48F434, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AB4
+	.4byte 0x803D4C94
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15knucklejoehadou9StateMain$$1
 __vt__Q43scn4step6weapon59CustomSimple$$0Q53scn4step6weapon15knucklejoehadou9StateMain$$1:
-	.incbin "baserom.dol", 0x48F450, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AB0
+	.4byte 0x803D4C18
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9snowlball9StateMain$$1
 __vt__Q43scn4step6weapon52CustomSimple$$0Q53scn4step6weapon9snowlball9StateMain$$1:
-	.incbin "baserom.dol", 0x48F46C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AAC
+	.4byte 0x803D4B9C
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10floweffect9StateMain$$1
 __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10floweffect9StateMain$$1:
-	.incbin "baserom.dol", 0x48F488, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AA8
+	.4byte 0x803D4B20
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13whispytornado9StateMain$$1
 __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13whispytornado9StateMain$$1:
-	.incbin "baserom.dol", 0x48F4A4, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AA4
+	.4byte 0x803D4AA4
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10whispyroot9StateMain$$1
 __vt__Q43scn4step6weapon54CustomSimple$$0Q53scn4step6weapon10whispyroot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F4C0, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5AA0
+	.4byte 0x803D4A28
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18combinationairball9StateMain$$1
 __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18combinationairball9StateMain$$1:
-	.incbin "baserom.dol", 0x48F4DC, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A9C
+	.4byte 0x803D49AC
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon63CustomSimple$$0Q53scn4step6weapon19combinationmetabeam9StateMain$$1
 __vt__Q43scn4step6weapon63CustomSimple$$0Q53scn4step6weapon19combinationmetabeam9StateMain$$1:
-	.incbin "baserom.dol", 0x48F4F8, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A98
+	.4byte 0x803D4930
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon67CustomSimple$$0Q53scn4step6weapon23combinationdededebomber9StateMain$$1
 __vt__Q43scn4step6weapon67CustomSimple$$0Q53scn4step6weapon23combinationdededebomber9StateMain$$1:
-	.incbin "baserom.dol", 0x48F514, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A94
+	.4byte 0x803D48B4
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18combinationdeeshot9StateMain$$1
 __vt__Q43scn4step6weapon62CustomSimple$$0Q53scn4step6weapon18combinationdeeshot9StateMain$$1:
-	.incbin "baserom.dol", 0x48F530, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A90
+	.4byte 0x803D4838
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8metabeam9StateMain$$1
 __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8metabeam9StateMain$$1:
-	.incbin "baserom.dol", 0x48F54C, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A8C
+	.4byte 0x803D47BC
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13metashockwave9StateMain$$1
 __vt__Q43scn4step6weapon57CustomSimple$$0Q53scn4step6weapon13metashockwave9StateMain$$1:
-	.incbin "baserom.dol", 0x48F568, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A88
+	.4byte 0x803D4740
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12dededehammer9StateMain$$1
 __vt__Q43scn4step6weapon56CustomSimple$$0Q53scn4step6weapon12dededehammer9StateMain$$1:
-	.incbin "baserom.dol", 0x48F584, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A84
+	.4byte 0x803D46C4
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8deespear9StateMain$$1
 __vt__Q43scn4step6weapon51CustomSimple$$0Q53scn4step6weapon8deespear9StateMain$$1:
-	.incbin "baserom.dol", 0x48F5A0, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A80
+	.4byte 0x803D4648
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q43scn4step6weapon55CustomSimple$$0Q53scn4step6weapon11hotheadfire9StateMain$$1
 __vt__Q43scn4step6weapon55CustomSimple$$0Q53scn4step6weapon11hotheadfire9StateMain$$1:
-	.incbin "baserom.dol", 0x48F5BC, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D3770
+	.4byte 0x803D5A24
+	.4byte 0x803D45CC
+	.4byte 0x803D3768
+	.4byte 0x803D376C
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11hotheadfire9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11hotheadfire9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F5D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6060
+	.4byte 0x803D5B24
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F5E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D605C
+	.4byte 0x803D5B40
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededehammer9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededehammer9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F5F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6058
+	.4byte 0x803D5B5C
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13metashockwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13metashockwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F608, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6054
+	.4byte 0x803D5B78
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8metabeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8metabeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F618, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6050
+	.4byte 0x803D5B94
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18combinationdeeshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18combinationdeeshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F628, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D604C
+	.4byte 0x803D5BB0
 .global __vt__Q24util113StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinationdededebomber9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util113StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinationdededebomber9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F638, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6048
+	.4byte 0x803D5BCC
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19combinationmetabeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19combinationmetabeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F648, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6044
+	.4byte 0x803D5BE8
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18combinationairball9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18combinationairball9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F658, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6040
+	.4byte 0x803D5C04
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10whispyroot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10whispyroot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F668, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D603C
+	.4byte 0x803D5C20
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13whispytornado9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13whispytornado9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F678, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6038
+	.4byte 0x803D5C3C
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10floweffect9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10floweffect9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F688, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6034
+	.4byte 0x803D5C58
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9snowlball9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9snowlball9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F698, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6030
+	.4byte 0x803D5C74
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15knucklejoehadou9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15knucklejoehadou9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D602C
+	.4byte 0x803D5C90
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon17tsukikageshuriken9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon17tsukikageshuriken9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6028
+	.4byte 0x803D5CAC
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12jucklecutter9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12jucklecutter9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6024
+	.4byte 0x803D5CC8
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10bowbyarrow9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10bowbyarrow9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6020
+	.4byte 0x803D5CE4
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9foleyleaf9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9foleyleaf9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D601C
+	.4byte 0x803D5D00
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13owgulffeather9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13owgulffeather9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F6F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6018
+	.4byte 0x803D5D1C
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16kingsdoowaveshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16kingsdoowaveshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F708, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6014
+	.4byte 0x803D5D38
 .global __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon20enemywaterbulletwarp9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util110StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon20enemywaterbulletwarp9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F718, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6010
+	.4byte 0x803D5D54
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16enemywaterbullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16enemywaterbullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F728, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D600C
+	.4byte 0x803D5D70
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon14gigantedgeshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon14gigantedgeshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F738, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6008
+	.4byte 0x803D5D8C
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterkickshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterkickshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F748, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6004
+	.4byte 0x803D5DA8
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fightersmashshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fightersmashshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F758, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D6000
+	.4byte 0x803D5DC4
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13wingshockwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13wingshockwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F768, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FFC
+	.4byte 0x803D5DE0
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8wingshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8wingshot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F778, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FF8
+	.4byte 0x803D5DFC
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerhammer9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerhammer9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F788, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FF4
+	.4byte 0x803D5E18
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10spearspear9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10spearspear9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F798, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FF0
+	.4byte 0x803D5E34
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18watergalboroswater9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon18watergalboroswater9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FEC
+	.4byte 0x803D5E50
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv39StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FE8
+	.4byte 0x803D5E6C
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv29StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FE4
+	.4byte 0x803D5E88
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12sparkshotlv19StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FE0
+	.4byte 0x803D5EA4
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12leafanpollen9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12leafanpollen9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FDC
+	.4byte 0x803D5EC0
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12shotzobullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12shotzobullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F7F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FD8
+	.4byte 0x803D5EDC
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15sirkibblecutter9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15sirkibblecutter9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F808, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FD4
+	.4byte 0x803D5EF8
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13whispyairball9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon13whispyairball9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F818, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FD0
+	.4byte 0x803D5F14
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon17fireburningbullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon17fireburningbullet9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F828, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FCC
+	.4byte 0x803D5F30
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15cutterfinalwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15cutterfinalwave9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F838, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FC8
+	.4byte 0x803D5F4C
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9swordbeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon9swordbeam9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F848, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FC4
+	.4byte 0x803D5F68
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11waterpistol9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11waterpistol9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F858, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FC0
+	.4byte 0x803D5F84
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon7airball9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon7airball9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48F868, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D5FBC
+	.4byte 0x803D5FA0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q53scn4step4boss7bonkers6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

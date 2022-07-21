@@ -1120,33 +1120,61 @@ lbl_803A3C44:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$260245
 $$260245:
-	.incbin "baserom.dol", 0x48B080, 0x40
+	.4byte 0x803A33E8
+	.4byte 0x803A3158
+	.4byte 0x803A31BC
+	.4byte 0x803A31D8
+	.4byte 0x803A31F4
+	.4byte 0x803A3210
+	.4byte 0x803A322C
+	.4byte 0x803A3248
+	.4byte 0x803A326C
+	.4byte 0x803A3290
+	.4byte 0x803A32B4
+	.4byte 0x803A32D8
+	.4byte 0x803A32FC
+	.4byte 0x803A3398
+	.4byte 0x803A33B4
+	.4byte 0x803A33D0
 .global __vt__Q53scn4step4hero8bossdemo17StateBossDemoWait
 __vt__Q53scn4step4hero8bossdemo17StateBossDemoWait:
-	.incbin "baserom.dol", 0x48B0C0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2F6C
+	.4byte 0x803A3054
+	.4byte 0x803A343C
+	.4byte 0x8035550C
+	.4byte 0x803A38C4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260133
 $$260133:
-	.incbin "baserom.dol", 0x49E370, 0x4
+	.4byte 0
 .global $$260134
 $$260134:
-	.incbin "baserom.dol", 0x49E374, 0x4
+	.4byte 0x3DCCCCCD
 .global $$260138
 $$260138:
-	.incbin "baserom.dol", 0x49E378, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$260299
 $$260299:
-	.incbin "baserom.dol", 0x49E380, 0x4
+	.4byte 0x3FE00000
 .global $$260300
 $$260300:
-	.incbin "baserom.dol", 0x49E384, 0x4
+	.4byte 0x3FA00000
 .global $$260301
 $$260301:
-	.incbin "baserom.dol", 0x49E388, 0x8
+	.4byte 0x40300000
+	.4byte 0
 .global $$260305
 $$260305:
-	.incbin "baserom.dol", 0x49E390, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$260333
 $$260333:
-	.incbin "baserom.dol", 0x49E398, 0x8
+	.4byte 0xBF800000
+	.4byte 0

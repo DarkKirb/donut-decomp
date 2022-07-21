@@ -525,114 +525,206 @@ lbl_8038A028:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21
 $$2LOCAL$$2SwordAnim__Q53scn4step4hero9modeldesc5SwordFv$$2entries$$21:
-	.incbin "baserom.dol", 0x41BAC0, 0xB0
+	.4byte 0x8055B2B0
+	.4byte 0
+	.4byte 0x8048B4B0
+	.4byte 0
+	.4byte 0x8048B4C4
+	.4byte 0
+	.4byte 0x8048B4D0
+	.4byte 0
+	.4byte 0x8048B4E0
+	.4byte 0
+	.4byte 0x8055B2B8
+	.4byte 0
+	.4byte 0x8048B4EC
+	.4byte 0
+	.4byte 0x8048B4F8
+	.4byte 0
+	.4byte 0x8048B50C
+	.4byte 0
+	.4byte 0x8048B518
+	.4byte 0
+	.4byte 0x8048B52C
+	.4byte 0
+	.4byte 0x8055B2C0
+	.4byte 0
+	.4byte 0x8048B53C
+	.4byte 0
+	.4byte 0x8048B548
+	.4byte 0
+	.4byte 0x8048B55C
+	.4byte 0
+	.4byte 0x8048B574
+	.4byte 0
+	.4byte 0x8048B584
+	.4byte 0
+	.4byte 0x8048B59C
+	.4byte 0
+	.4byte 0x8048B5A8
+	.4byte 0
+	.4byte 0x8048B5B8
+	.4byte 0
+	.4byte 0x8048B5C4
+	.4byte 0
+	.4byte 0x8055B2C8
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249844
 $$249844:
-	.incbin "baserom.dol", 0x487540, 0x20
+	.asciz "step/hero/modeldesc/Sword"
+	.balign 4
+	.4byte 0
 .global $$249861
 $$249861:
-	.incbin "baserom.dol", 0x487560, 0x20
+	.asciz "step/chara/hero/kirby/sword/Hat"
 .global $$249877
 $$249877:
-	.incbin "baserom.dol", 0x487580, 0xC
+	.asciz "HatTail1DJ"
+	.balign 4
 .global $$249888
 $$249888:
-	.incbin "baserom.dol", 0x48758C, 0x24
+	.asciz "step/chara/hero/kirby/sword/Sword"
+	.balign 4
 .global $$249587
 $$249587:
-	.incbin "baserom.dol", 0x4875B0, 0x14
+	.asciz "SwordAttackStart"
+	.balign 4
 .global $$249588
 $$249588:
-	.incbin "baserom.dol", 0x4875C4, 0xC
+	.asciz "SwordAttack"
 .global $$249589
 $$249589:
-	.incbin "baserom.dol", 0x4875D0, 0x10
+	.asciz "SwordAttackEnd"
+	.balign 4
 .global $$249590
 $$249590:
-	.incbin "baserom.dol", 0x4875E0, 0xC
+	.asciz "ThrustStart"
 .global $$249592
 $$249592:
-	.incbin "baserom.dol", 0x4875EC, 0xC
+	.asciz "ThrustEnd"
+	.balign 4
 .global $$249593
 $$249593:
-	.incbin "baserom.dol", 0x4875F8, 0x14
+	.asciz "UnderThrustStart"
+	.balign 4
 .global $$249594
 $$249594:
-	.incbin "baserom.dol", 0x48760C, 0xC
+	.asciz "UnderThrust"
 .global $$249595
 $$249595:
-	.incbin "baserom.dol", 0x487618, 0x14
+	.asciz "UnderThrustLanding"
+	.balign 4
 .global $$249596
 $$249596:
-	.incbin "baserom.dol", 0x48762C, 0x10
+	.asciz "RaisingStart"
+	.balign 4
 .global $$249598
 $$249598:
-	.incbin "baserom.dol", 0x48763C, 0xC
+	.asciz "RaisingEnd"
+	.balign 4
 .global $$249599
 $$249599:
-	.incbin "baserom.dol", 0x487648, 0x14
+	.asciz "TornadoAttackCharge"
 .global $$249600
 $$249600:
-	.incbin "baserom.dol", 0x48765C, 0x18
+	.asciz "TornadoAttackChargeMax"
+	.balign 4
 .global $$249601
 $$249601:
-	.incbin "baserom.dol", 0x487674, 0x10
+	.asciz "TornadoAttack"
+	.balign 4
 .global $$249602
 $$249602:
-	.incbin "baserom.dol", 0x487684, 0x18
+	.asciz "TornadoAttackCharge2"
+	.balign 4
 .global $$249603
 $$249603:
-	.incbin "baserom.dol", 0x48769C, 0xC
+	.asciz "FinelyCut"
+	.balign 4
 .global $$249604
 $$249604:
-	.incbin "baserom.dol", 0x4876A8, 0x10
+	.asciz "ChoppingStart"
+	.balign 4
 .global $$249605
 $$249605:
-	.incbin "baserom.dol", 0x4876B8, 0xC
+	.asciz "Chopping"
+	.balign 4
 .global $$249606
 $$249606:
-	.incbin "baserom.dol", 0x4876C4, 0x14
+	.asciz "FinelyCutEnd"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256365
 $$256365:
-	.incbin "baserom.dol", 0x4893F0, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$256366
 $$256366:
-	.incbin "baserom.dol", 0x489410, 0x24
+	.asciz "step/chara/hero/kirby/sword/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero5sword5Sword
 __vt__Q53scn4step4hero5sword5Sword:
-	.incbin "baserom.dol", 0x489434, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x80389D00
+	.4byte 0x80389D8C
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x80389EB8
+	.4byte 0x80389FD4
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8032B7DC
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249578
 $$249578:
-	.incbin "baserom.dol", 0x497678, 0x8
+	.asciz "AllL"
+	.balign 4
 .global $$249579
 $$249579:
-	.incbin "baserom.dol", 0x497680, 0x8
+	.asciz "EdgeL"
+	.balign 4
 .global $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21
 $$2LOCAL$$2SwordModel__Q53scn4step4hero9modeldesc5SwordFv$$2names$$21:
-	.incbin "baserom.dol", 0x497688, 0x8
+	.4byte 0x8055B298
+	.4byte 0x8055B2A0
 .global $$249586
 $$249586:
-	.incbin "baserom.dol", 0x497690, 0x8
+	.asciz "Carry"
+	.balign 4
 .global $$249591
 $$249591:
-	.incbin "baserom.dol", 0x497698, 0x8
+	.asciz "Thrust"
+	.balign 4
 .global $$249597
 $$249597:
-	.incbin "baserom.dol", 0x4976A0, 0x8
+	.asciz "Raising"
 .global $$249607
 $$249607:
-	.incbin "baserom.dol", 0x4976A8, 0x8
+	.asciz "Meteo"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249876
 $$249876:
-	.incbin "baserom.dol", 0x49DB00, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SwordFv$$2desc

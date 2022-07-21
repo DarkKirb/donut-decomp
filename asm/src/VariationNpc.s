@@ -1480,120 +1480,200 @@ objCollRect__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7maho
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258009
 $$258009:
-	.incbin "baserom.dol", 0x47D9B8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314BBC
 .global $$258010
 $$258010:
-	.incbin "baserom.dol", 0x47D9C4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314C00
 .global $$258011
 $$258011:
-	.incbin "baserom.dol", 0x47D9D0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314C44
 .global $$258012
 $$258012:
-	.incbin "baserom.dol", 0x47D9DC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314C88
 .global $$258013
 $$258013:
-	.incbin "baserom.dol", 0x47D9E8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314CCC
 .global $$258014
 $$258014:
-	.incbin "baserom.dol", 0x47D9F4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314D10
 .global $$258015
 $$258015:
-	.incbin "baserom.dol", 0x47DA00, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314D54
 .global $$258016
 $$258016:
-	.incbin "baserom.dol", 0x47DA0C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314D98
 .global $$258017
 $$258017:
-	.incbin "baserom.dol", 0x47DA18, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314DDC
 .global $$258018
 $$258018:
-	.incbin "baserom.dol", 0x47DA24, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314E20
 .global $$258019
 $$258019:
-	.incbin "baserom.dol", 0x47DA30, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314E64
 .global $$258020
 $$258020:
-	.incbin "baserom.dol", 0x47DA3C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80314F64
 .global $$258021
 $$258021:
-	.incbin "baserom.dol", 0x47DA48, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803150B4
 .global $$258022
 $$258022:
-	.incbin "baserom.dol", 0x47DA54, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803150F8
 .global $$258023
 $$258023:
-	.incbin "baserom.dol", 0x47DA60, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8031513C
 .global $$258024
 $$258024:
-	.incbin "baserom.dol", 0x47DA6C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80315180
 .global $$258025
 $$258025:
-	.incbin "baserom.dol", 0x47DA78, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803151C4
 .global $$258026
 $$258026:
-	.incbin "baserom.dol", 0x47DA84, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80315208
 .global $$258027
 $$258027:
-	.incbin "baserom.dol", 0x47DA90, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8031524C
 .global $$258028
 $$258028:
-	.incbin "baserom.dol", 0x47DA9C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80315290
 .global $$258029
 $$258029:
-	.incbin "baserom.dol", 0x47DAA8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803153DC
 .global $$258030
 $$258030:
-	.incbin "baserom.dol", 0x47DAB4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803154E8
 .global $$258031
 $$258031:
-	.incbin "baserom.dol", 0x47DAC0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803155E8
 .global $$258043
 $$258043:
-	.incbin "baserom.dol", 0x47DACC, 0x5C
+	.4byte 0x8031488C
+	.4byte 0x803148AC
+	.4byte 0x803148CC
+	.4byte 0x803148EC
+	.4byte 0x8031490C
+	.4byte 0x8031492C
+	.4byte 0x8031494C
+	.4byte 0x8031496C
+	.4byte 0x8031498C
+	.4byte 0x803149AC
+	.4byte 0x803149CC
+	.4byte 0x803149EC
+	.4byte 0x80314A0C
+	.4byte 0x80314A2C
+	.4byte 0x80314A4C
+	.4byte 0x80314A6C
+	.4byte 0x80314A8C
+	.4byte 0x80314AAC
+	.4byte 0x80314ACC
+	.4byte 0x80314AEC
+	.4byte 0x80314B0C
+	.4byte 0x80314B2C
+	.4byte 0x80314B4C
 .global __vt__Q53scn4step7gimmick7mahoroa12VariationNpc
 __vt__Q53scn4step7gimmick7mahoroa12VariationNpc:
-	.incbin "baserom.dol", 0x47DB28, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x80314600
+	.4byte 0x80314640
+	.4byte 0x8031479C
+	.4byte 0x80315740
+	.4byte 0x803147C4
 .global __vt__Q53scn4step7gimmick7mahoroa10IVariation
 __vt__Q53scn4step7gimmick7mahoroa10IVariation:
-	.incbin "baserom.dol", 0x47DB44, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257896
 $$257896:
-	.incbin "baserom.dol", 0x49D458, 0x4
+	.4byte 0x3F800000
 .global $$257902
 $$257902:
-	.incbin "baserom.dol", 0x49D45C, 0x4
+	.4byte 0
 .global TURN_MAINPLAYER_X__Q53scn4step7gimmick7mahoroa12VariationNpc
 TURN_MAINPLAYER_X__Q53scn4step7gimmick7mahoroa12VariationNpc:
-	.incbin "baserom.dol", 0x49D460, 0x4
+	.4byte 0x41A00000
 .global TURN_BACK_X__Q53scn4step7gimmick7mahoroa12VariationNpc
 TURN_BACK_X__Q53scn4step7gimmick7mahoroa12VariationNpc:
-	.incbin "baserom.dol", 0x49D464, 0x4
+	.4byte 0x43340000
 .global TURN_FULL_X__Q53scn4step7gimmick7mahoroa12VariationNpc
 TURN_FULL_X__Q53scn4step7gimmick7mahoroa12VariationNpc:
-	.incbin "baserom.dol", 0x49D468, 0x4
+	.4byte 0x43B40000
 .global $$256702
 $$256702:
-	.incbin "baserom.dol", 0x49D46C, 0x4
+	.4byte 0x00000032
 .global $$257914
 $$257914:
-	.incbin "baserom.dol", 0x49D470, 0x4
+	.4byte 0x3E99999A
 .global $$257915
 $$257915:
-	.incbin "baserom.dol", 0x49D474, 0x4
+	.4byte 0xBE4CCCCD
 .global $$257916
 $$257916:
-	.incbin "baserom.dol", 0x49D478, 0x4
+	.4byte 0xC0000000
 .global $$258103
 $$258103:
-	.incbin "baserom.dol", 0x49D47C, 0x4
+	.4byte 0x3D4CCCCD
 .global $$258115
 $$258115:
-	.incbin "baserom.dol", 0x49D480, 0x4
+	.4byte 0x3DCCCCCD
 .global $$258165
 $$258165:
-	.incbin "baserom.dol", 0x49D484, 0x4
+	.4byte 0x42652EE1
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global TURN_FRONT_X__Q53scn4step7gimmick7mahoroa12VariationNpc

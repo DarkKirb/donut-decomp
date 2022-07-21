@@ -41,4 +41,5 @@ allocatorForBG__Q43scn4step3map10MemManagerFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248975
 $$248975:
-	.incbin "baserom.dol", 0x4983D0, 0x8
+	.4byte 0x4D617000
+	.4byte 0

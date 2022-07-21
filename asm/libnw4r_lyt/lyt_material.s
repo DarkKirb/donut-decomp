@@ -3233,33 +3233,60 @@ lbl_800FBFF8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2SetupGX__Q34nw4r3lyt8MaterialFbUc$$2kColSels
 $$2LOCAL$$2SetupGX__Q34nw4r3lyt8MaterialFbUc$$2kColSels:
-	.incbin "baserom.dol", 0x43D5E8, 0x20
+	.4byte 0x0000001F
+	.4byte 0x0000001B
+	.4byte 0x00000017
+	.4byte 0x00000013
+	.4byte 0x0000001E
+	.4byte 0x0000001A
+	.4byte 0x00000016
+	.4byte 0x00000012
 .global $$2LOCAL$$2SetupGX__Q34nw4r3lyt8MaterialFbUc$$2kAlpSels$$20
 $$2LOCAL$$2SetupGX__Q34nw4r3lyt8MaterialFbUc$$2kAlpSels$$20:
-	.incbin "baserom.dol", 0x43D608, 0x20
+	.4byte 0x0000001F
+	.4byte 0x0000001B
+	.4byte 0x00000017
+	.4byte 0x00000013
+	.4byte 0x0000001E
+	.4byte 0x0000001A
+	.4byte 0x00000016
+	.4byte 0x00000012
 .global __vt__Q34nw4r3lyt8Material
 __vt__Q34nw4r3lyt8Material:
-	.incbin "baserom.dol", 0x43D628, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x800FA490  ;# ptr
+	.4byte 0x800FAFB0  ;# ptr
+	.4byte 0x800FBDC0  ;# ptr
+	.4byte 0x800FBDE0  ;# ptr
+	.4byte 0x800FBDF0  ;# ptr
+	.4byte 0x800FBE10  ;# ptr
+	.4byte 0x800FBED0  ;# ptr
+	.4byte 0x800FBEE0  ;# ptr
+	.4byte 0x800FBEF0  ;# ptr
+	.4byte 0x800FBF40  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210055
 $$210055:
-	.incbin "baserom.dol", 0x499CB8, 0x4
+	.4byte 0x3F000000
 .global $$210056
 $$210056:
-	.incbin "baserom.dol", 0x499CBC, 0x4
+	.4byte 0x3F360B61
 .global $$210057
 $$210057:
-	.incbin "baserom.dol", 0x499CC0, 0x4
+	.4byte 0
 .global $$210058
 $$210058:
-	.incbin "baserom.dol", 0x499CC4, 0x4
+	.4byte 0x3F800000
 .global $$210071
 $$210071:
-	.incbin "baserom.dol", 0x499CC8, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$212398
 $$212398:
-	.incbin "baserom.dol", 0x499CD0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global DefaultBlackColor

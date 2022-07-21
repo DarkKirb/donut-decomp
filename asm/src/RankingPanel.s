@@ -297,66 +297,81 @@ updateFrame__Q53scn4step4info5lvmap12RankingPanelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252661
 $$252661:
-	.incbin "baserom.dol", 0x48DB10, 0x18
+	.asciz "step/challengeship/Main"
 .global $$252663
 $$252663:
-	.incbin "baserom.dol", 0x48DB28, 0x10
+	.asciz "PlayerIconN"
+	.4byte 0
 .global $$252664
 $$252664:
-	.incbin "baserom.dol", 0x48DB38, 0x10
+	.asciz "TotalScoreBaseN"
 .global $$252665
 $$252665:
-	.incbin "baserom.dol", 0x48DB48, 0xC
+	.asciz "RankingN"
+	.balign 4
 .global $$252742
 $$252742:
-	.incbin "baserom.dol", 0x48DB54, 0xC
+	.asciz "FileKirby1"
+	.balign 4
 .global $$252744
 $$252744:
-	.incbin "baserom.dol", 0x48DB60, 0xC
+	.asciz "FileKirby2"
+	.balign 4
 .global $$252746
 $$252746:
-	.incbin "baserom.dol", 0x48DB6C, 0xC
+	.asciz "FileKirby3"
+	.balign 4
 .global $$252748
 $$252748:
-	.incbin "baserom.dol", 0x48DB78, 0x40
+	.asciz "FileMahoroa"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252660
 $$252660:
-	.incbin "baserom.dol", 0x498098, 0x8
+	.asciz "Plate"
+	.balign 4
 .global $$252662
 $$252662:
-	.incbin "baserom.dol", 0x4980A0, 0x8
+	.asciz "Ranking"
 .global $$252734
 $$252734:
-	.incbin "baserom.dol", 0x4980A8, 0x4
+	.4byte 0x31737400
 .global $$252735
 $$252735:
-	.incbin "baserom.dol", 0x4980AC, 0x4
+	.4byte 0x31000000
 .global $$252736
 $$252736:
-	.incbin "baserom.dol", 0x4980B0, 0x4
+	.4byte 0x326E6400
 .global $$252737
 $$252737:
-	.incbin "baserom.dol", 0x4980B4, 0x4
+	.4byte 0x32000000
 .global $$252738
 $$252738:
-	.incbin "baserom.dol", 0x4980B8, 0x4
+	.4byte 0x33726400
 .global $$252739
 $$252739:
-	.incbin "baserom.dol", 0x4980BC, 0x4
+	.4byte 0x33000000
 .global $$252740
 $$252740:
-	.incbin "baserom.dol", 0x4980C0, 0x8
+	.asciz "Kirby1"
+	.balign 4
 .global $$252741
 $$252741:
-	.incbin "baserom.dol", 0x4980C8, 0x8
+	.asciz "Name"
+	.balign 4
 .global $$252743
 $$252743:
-	.incbin "baserom.dol", 0x4980D0, 0x8
+	.asciz "Kirby2"
+	.balign 4
 .global $$252745
 $$252745:
-	.incbin "baserom.dol", 0x4980D8, 0x8
+	.asciz "Kirby3"
+	.balign 4
 .global $$252747
 $$252747:
-	.incbin "baserom.dol", 0x4980E0, 0x8
+	.asciz "Mahoroa"

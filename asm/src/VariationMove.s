@@ -57,4 +57,11 @@ setIsPose__Q53scn4step7gimmick10cameralock13VariationMoveFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick10cameralock13VariationMove
 __vt__Q53scn4step7gimmick10cameralock13VariationMove:
-	.incbin "baserom.dol", 0x47C500, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80304C20
+	.4byte 0x80304C88
+	.4byte 0x80304C8C
+	.4byte 0x80304C90
+	.4byte 0x80304C94
+	.4byte 0

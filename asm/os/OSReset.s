@@ -686,49 +686,65 @@ OSResetSystem:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22083
 $$22083:
-	.incbin "baserom.dol", 0x41F838, 0xC
+	.asciz "OSReset.c"
+	.balign 4
 .global $$22084
 $$22084:
-	.incbin "baserom.dol", 0x41F844, 0x2C
+	.asciz "__OSHotReset(): Falied to reset system.\n"
+	.balign 4
 .global $$22129
 $$22129:
-	.incbin "baserom.dol", 0x41F870, 0x34
+	.asciz "__OSReturnToMenu(): Falied to boot system menu.\n"
+	.balign 4
 .global $$22131
 $$22131:
-	.incbin "baserom.dol", 0x41F8A4, 0x30
+	.asciz "OSReturnToMenu(): Falied to boot system menu.\n"
+	.balign 4
 .global $$22133
 $$22133:
-	.incbin "baserom.dol", 0x41F8D4, 0x38
+	.asciz "OSReturnToDataManager(): Falied to boot system menu.\n"
+	.balign 4
 .global $$22144
 $$22144:
-	.incbin "baserom.dol", 0x41F90C, 0x20
+	.asciz "Calendar/Calendar_index.html"
+	.balign 4
 .global $$22145
 $$22145:
-	.incbin "baserom.dol", 0x41F92C, 0x1C
+	.asciz "Display/Display_index.html"
+	.balign 4
 .global $$22146
 $$22146:
-	.incbin "baserom.dol", 0x41F948, 0x18
+	.asciz "Sound/Sound_index.html"
+	.balign 4
 .global $$22147
 $$22147:
-	.incbin "baserom.dol", 0x41F960, 0x30
+	.asciz "Parental_Control/Parental_Control_index.html"
+	.balign 4
 .global $$22148
 $$22148:
-	.incbin "baserom.dol", 0x41F990, 0x20
+	.asciz "Internet/Internet_index.html"
+	.balign 4
 .global $$22149
 $$22149:
-	.incbin "baserom.dol", 0x41F9B0, 0x28
+	.asciz "WiiConnect24/Wiiconnect24_index.html"
+	.balign 4
 .global $$22150
 $$22150:
-	.incbin "baserom.dol", 0x41F9D8, 0x1C
+	.asciz "Update/Update_index.html"
+	.balign 4
 .global $$22151
 $$22151:
-	.incbin "baserom.dol", 0x41F9F4, 0x30
+	.asciz "OSReturnToSetting(): You can't specify %d.  \n"
+	.balign 4
 .global $$22163
 $$22163:
-	.incbin "baserom.dol", 0x41FA24, 0x3C
+	.asciz "OSResetSystem() is obsoleted. It doesn't work any longer.\n"
+	.balign 4
 .global $$22165
 $$22165:
-	.incbin "baserom.dol", 0x41FA60, 0x40
+	.asciz "OSSetBootDol() is obsoleted. It doesn't work any longer.\n"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bootThisDol

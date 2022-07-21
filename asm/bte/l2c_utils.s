@@ -2213,27 +2213,34 @@ lbl_800962F4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22062
 $$22062:
-	.incbin "baserom.dol", 0x43AC68, 0x1C
+	.asciz "L2CAP - no buffer cmd_rej"
+	.balign 4
 .global $$22067
 $$22067:
-	.incbin "baserom.dol", 0x43AC84, 0x20
+	.asciz "L2CAP - no buffer for conn_req"
+	.balign 4
 .global $$22125
 $$22125:
-	.incbin "baserom.dol", 0x43ACA4, 0x20
+	.asciz "L2CAP - no buffer for cfg_rej"
+	.balign 4
 .global $$22159
 $$22159:
-	.incbin "baserom.dol", 0x43ACC4, 0x20
+	.asciz "L2CAP - no buffer for echo_req"
+	.balign 4
 .global $$22327
 $$22327:
-	.incbin "baserom.dol", 0x43ACE4, 0x44
+	.asciz "l2cu_create_conn - btm_is_sco_active_by_bdaddr() is_sco_active = %s"
 .global $$22338
 $$22338:
-	.incbin "baserom.dol", 0x43AD28, 0x28
+	.asciz "L2CAP - no buffer for l2cu_create_conn"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22328
 $$22328:
-	.incbin "baserom.dol", 0x492D00, 0x8
+	.asciz "TRUE"
+	.balign 4
 .global $$22329
 $$22329:
-	.incbin "baserom.dol", 0x492D08, 0x8
+	.asciz "FALSE"
+	.balign 4

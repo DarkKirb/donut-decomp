@@ -359,33 +359,41 @@ __dt__Q53scn4step5enemy6juckle11StateFollowFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6juckle11StateFollow
 __vt__Q53scn4step5enemy6juckle11StateFollow:
-	.incbin "baserom.dol", 0x473E00, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC18C  ;# ptr
+	.4byte 0x802BBE80  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255367
 $$255367:
-	.incbin "baserom.dol", 0x49C620, 0x4
+	.4byte 0
 .global $$255368
 $$255368:
-	.incbin "baserom.dol", 0x49C624, 0x4
+	.4byte 0x43340000
 .global $$255369
 $$255369:
-	.incbin "baserom.dol", 0x49C628, 0x4
+	.4byte 0x42340000
 .global $$255370
 $$255370:
-	.incbin "baserom.dol", 0x49C62C, 0x4
+	.4byte 0xC2340000
 .global $$255371
 $$255371:
-	.incbin "baserom.dol", 0x49C630, 0x4
+	.4byte 0xC3340000
 .global $$255395
 $$255395:
-	.incbin "baserom.dol", 0x49C634, 0x4
+	.4byte 0x42B40000
 .global $$255398
 $$255398:
-	.incbin "baserom.dol", 0x49C638, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$255413
 $$255413:
-	.incbin "baserom.dol", 0x49C640, 0x4
+	.4byte 0xBF800000
 .global $$255430
 $$255430:
-	.incbin "baserom.dol", 0x49C644, 0x4
+	.4byte 0x41B40000

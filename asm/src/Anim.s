@@ -455,4 +455,5 @@ mainAnim__Q24gobj4AnimCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252554
 $$252554:
-	.incbin "baserom.dol", 0x49A2C0, 0x8
+	.4byte 0
+	.4byte 0

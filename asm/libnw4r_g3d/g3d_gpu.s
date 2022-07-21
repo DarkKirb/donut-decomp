@@ -358,19 +358,19 @@ GDLoadTexMtxImm3x3__Q34nw4r3g3d4fifoFRCQ34nw4r4math5MTX33Ul:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global cm2hw__Q34nw4r3g3d4fifo
 cm2hw__Q34nw4r3g3d4fifo:
-	.incbin "baserom.dol", 0x499AF0, 0x4
+	.4byte 0x00020103
 .global $$26418
 $$26418:
-	.incbin "baserom.dol", 0x499AF4, 0x4
+	.4byte 0x3F800000
 .global $$26419
 $$26419:
-	.incbin "baserom.dol", 0x499AF8, 0x4
+	.4byte 0x3F000000
 .global $$26420
 $$26420:
-	.incbin "baserom.dol", 0x499AFC, 0x4
+	.4byte 0x40000000
 .global $$26421
 $$26421:
-	.incbin "baserom.dol", 0x499B00, 0x4
+	.4byte 0x44800000
 .global $$26433
 $$26433:
-	.incbin "baserom.dol", 0x499B04, 0x4
+	.4byte 0

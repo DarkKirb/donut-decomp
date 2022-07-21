@@ -401,15 +401,17 @@ lbl_8034EA74:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252312
 $$252312:
-	.incbin "baserom.dol", 0x49B908, 0x8
+	.4byte 0
+	.4byte 0
 .global $$252315
 $$252315:
-	.incbin "baserom.dol", 0x49B910, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252015
 $$252015:
-	.incbin "baserom.dol", 0x49D878, 0x4
+	.4byte 0
 .global $$252069
 $$252069:
-	.incbin "baserom.dol", 0x49D87C, 0x4
+	.4byte 0xB727C5AC

@@ -459,7 +459,8 @@ lbl_800A2628:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __esFd
 __esFd:
-	.incbin "baserom.dol", 0x492D28, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 .global $$21766
 $$21766:
-	.incbin "baserom.dol", 0x492D30, 0x8
+	.asciz "/dev/es"

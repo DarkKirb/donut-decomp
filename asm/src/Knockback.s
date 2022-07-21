@@ -102,22 +102,23 @@ reset__Q43scn4step5chara9KnockbackFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250134
 $$250134:
-	.incbin "baserom.dol", 0x49B7D0, 0x4
+	.4byte 0
 .global $$250145
 $$250145:
-	.incbin "baserom.dol", 0x49B7D4, 0x4
+	.4byte 0x40C00000
 .global $$250146
 $$250146:
-	.incbin "baserom.dol", 0x49B7D8, 0x4
+	.4byte 0x4222F983
 .global $$250147
 $$250147:
-	.incbin "baserom.dol", 0x49B7DC, 0x4
+	.4byte 0x3C8EFA35
 .global $$250148
 $$250148:
-	.incbin "baserom.dol", 0x49B7E0, 0x4
+	.4byte 0x42B40000
 .global $$250149
 $$250149:
-	.incbin "baserom.dol", 0x49B7E4, 0x4
+	.4byte 0x3F800000
 .global $$250152
 $$250152:
-	.incbin "baserom.dol", 0x49B7E8, 0x8
+	.4byte 0x43300000
+	.4byte 0

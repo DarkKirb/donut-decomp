@@ -261,22 +261,23 @@ lbl_802718B0:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global ROT_H_TARGET__Q43scn4step5chara12ModelRotCtrl
 ROT_H_TARGET__Q43scn4step5chara12ModelRotCtrl:
-	.incbin "baserom.dol", 0x49B820, 0x4
+	.4byte 0x42480000
 .global ROT_H_TARGET_DEFAULT__Q43scn4step5chara12ModelRotCtrl
 ROT_H_TARGET_DEFAULT__Q43scn4step5chara12ModelRotCtrl:
-	.incbin "baserom.dol", 0x49B824, 0x4
+	.4byte 0x42480000
 .global $$250889
 $$250889:
-	.incbin "baserom.dol", 0x49B828, 0x4
+	.4byte 0
 .global $$250890
 $$250890:
-	.incbin "baserom.dol", 0x49B82C, 0x4
+	.4byte 0x42480000
 .global $$250891
 $$250891:
-	.incbin "baserom.dol", 0x49B830, 0x4
+	.4byte 0x3DCCCCCD
 .global $$250896
 $$250896:
-	.incbin "baserom.dol", 0x49B834, 0x4
+	.4byte 0x3F800000
 .global $$250956
 $$250956:
-	.incbin "baserom.dol", 0x49B838, 0x8
+	.4byte 0x43B40000
+	.4byte 0

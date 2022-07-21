@@ -764,24 +764,38 @@ lbl_80142A14:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$24655
 $$24655:
-	.incbin "baserom.dol", 0x40A3D0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1:
-	.incbin "baserom.dol", 0x441738, 0x14
+	.4byte 0x80445678
+	.4byte 0
+	.4byte 0x801424F0  ;# ptr
+	.4byte 0x80142530  ;# ptr
+	.4byte 0x80142690  ;# ptr
 .global $$24426
 $$24426:
-	.incbin "baserom.dol", 0x44174C, 0x2C
+	.asciz "nw4hbm::ut::TagProcessorBase<wchar_t>"
+	.balign 4
+	.4byte 0
 .global __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0w$$1:
-	.incbin "baserom.dol", 0x441778, 0x8
+	.4byte 0x8044564C
+	.4byte 0
 .global __vt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1
 __vt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1:
-	.incbin "baserom.dol", 0x441780, 0x14
+	.4byte 0x804456B8
+	.4byte 0
+	.4byte 0x80141F90  ;# ptr
+	.4byte 0x80141FD0  ;# ptr
+	.4byte 0x80142130  ;# ptr
 .global $$24427
 $$24427:
-	.incbin "baserom.dol", 0x441794, 0x24
+	.asciz "nw4hbm::ut::TagProcessorBase<char>"
+	.balign 4
 .global __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0c$$1
 __RTTI__Q36nw4hbm2ut19TagProcessorBase$$0c$$1:
-	.incbin "baserom.dol", 0x4417B8, 0x8
+	.4byte 0x80445694
+	.4byte 0

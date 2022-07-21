@@ -272,24 +272,30 @@ lbl_8014C038:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$214354
 $$214354:
-	.incbin "baserom.dol", 0x442E58, 0x18
+	.asciz "HeapMapBlockDrawer.cpp"
+	.balign 4
 .global $$214355
 $$214355:
-	.incbin "baserom.dol", 0x442E70, 0x2C
+	.asciz "NW4R:Failed assertion aStartAddr < aEndAddr"
 .global $$214356
 $$214356:
-	.incbin "baserom.dol", 0x442E9C, 0x4C
+	.asciz "NW4R:Failed assertion aTargetAddr >= aStartAddr && aTargetAddr <= aEndAddr"
+	.balign 4
 .global $$214463
 $$214463:
-	.incbin "baserom.dol", 0x442EE8, 0x30
+	.asciz "NW4R:Failed assertion rect.top <= rect.bottom"
+	.balign 4
 .global $$214516
 $$214516:
-	.incbin "baserom.dol", 0x442F18, 0x50
+	.asciz "NW4R:Failed assertion aCurrentAddr >= aStartAddr && aCurrentAddr <= aEndAddr"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214358
 $$214358:
-	.incbin "baserom.dol", 0x49A098, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$214464
 $$214464:
-	.incbin "baserom.dol", 0x49A0A0, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -5640,51 +5640,288 @@ lbl_8003F048:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42D360, 0x48
+	.asciz "<< RVL_SDK - DVD \trelease build: Aug 23 2010 17:30:05 (0x4302_145) >>"
+	.balign 4
 .global $$24255
 $$24255:
-	.incbin "baserom.dol", 0x42D3A8, 0x34
+	.asciz "DVDChangeDisk(): FST in the new disc is too big.   "
 .global $$24490
 $$24490:
-	.incbin "baserom.dol", 0x42D3DC, 0xAC
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C43C  ;# ptr
+	.4byte 0x8003C43C  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C41C  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C424  ;# ptr
+	.4byte 0x8003C424  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C424  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C448  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
+	.4byte 0x8003C3E8  ;# ptr
 .global $$24658
 $$24658:
-	.incbin "baserom.dol", 0x42D488, 0xAC
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D324  ;# ptr
+	.4byte 0x8003D44C  ;# ptr
+	.4byte 0x8003D468  ;# ptr
+	.4byte 0x8003D324  ;# ptr
+	.4byte 0x8003D300  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D498  ;# ptr
+	.4byte 0x8003D4B8  ;# ptr
+	.4byte 0x8003D480  ;# ptr
+	.4byte 0x8003D4DC  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D4FC  ;# ptr
+	.4byte 0x8003D514  ;# ptr
+	.4byte 0x8003D63C  ;# ptr
+	.4byte 0x8003D668  ;# ptr
+	.4byte 0x8003D690  ;# ptr
+	.4byte 0x8003D6A0  ;# ptr
+	.4byte 0x8003D680  ;# ptr
+	.4byte 0x8003D790  ;# ptr
+	.4byte 0x8003D6BC  ;# ptr
+	.4byte 0x8003D6E8  ;# ptr
+	.4byte 0x8003D75C  ;# ptr
 .global $$24657
 $$24657:
-	.incbin "baserom.dol", 0x42D534, 0xAC
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D2DC  ;# ptr
+	.4byte 0x8003D258  ;# ptr
+	.4byte 0x8003D258  ;# ptr
 .global ImmCommand
 ImmCommand:
-	.incbin "baserom.dol", 0x42D5E0, 0xC
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
 .global $$25033
 $$25033:
-	.incbin "baserom.dol", 0x42D5EC, 0xAC
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E6A4  ;# ptr
+	.4byte 0x8003E6A4  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E704  ;# ptr
+	.4byte 0x8003E684  ;# ptr
+	.4byte 0x8003E684  ;# ptr
 .global $$25032
 $$25032:
-	.incbin "baserom.dol", 0x42D698, 0x38
+	.4byte 0x8003E590  ;# ptr
+	.4byte 0x8003E590  ;# ptr
+	.4byte 0x8003E5B0  ;# ptr
+	.4byte 0x8003E614  ;# ptr
+	.4byte 0x8003E660  ;# ptr
+	.4byte 0x8003E730  ;# ptr
+	.4byte 0x8003E730  ;# ptr
+	.4byte 0x8003E730  ;# ptr
+	.4byte 0x8003E730  ;# ptr
+	.4byte 0x8003E87C  ;# ptr
+	.4byte 0x8003E87C  ;# ptr
+	.4byte 0x8003E590  ;# ptr
+	.4byte 0x8003E730  ;# ptr
+	.4byte 0x8003E82C  ;# ptr
 .global $$25040
 $$25040:
-	.incbin "baserom.dol", 0x42D6D0, 0x9C
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E93C  ;# ptr
+	.4byte 0x8003E948  ;# ptr
+	.4byte 0x8003E948  ;# ptr
 .global $$25139
 $$25139:
-	.incbin "baserom.dol", 0x42D76C, 0x3C
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBDC  ;# ptr
+	.4byte 0x8003EB7C  ;# ptr
+	.4byte 0x8003EB7C  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBDC  ;# ptr
+	.4byte 0x8003EB7C  ;# ptr
+	.4byte 0x8003EB7C  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0x8003EBAC  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DVDVersion
 __DVDVersion:
-	.incbin "baserom.dol", 0x4929B8, 0x4
+	.4byte 0x80431260
 .global autoInvalidation
 autoInvalidation:
-	.incbin "baserom.dol", 0x4929BC, 0x4
+	.4byte 0x00000001
 .global checkOptionalCommand
 checkOptionalCommand:
-	.incbin "baserom.dol", 0x4929C0, 0x4
+	.4byte 0x8003A200  ;# ptr
 .global $$24254
 $$24254:
-	.incbin "baserom.dol", 0x4929C4, 0x8
+	.asciz "dvd.c"
+	.balign 4
 .global DmaCommand
 DmaCommand:
-	.incbin "baserom.dol", 0x4929CC, 0x4
+	.4byte 0xFFFFFFFF
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __DVDTicketViewBuffer

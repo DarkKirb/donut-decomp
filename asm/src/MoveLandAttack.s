@@ -268,20 +268,26 @@ lbl_8031A058:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254149
 $$254149:
-	.incbin "baserom.dol", 0x47DC68, 0x28
+	.asciz "step/weapon/common/EffectLocator"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254150
 $$254150:
-	.incbin "baserom.dol", 0x496C28, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$254151
 $$254151:
-	.incbin "baserom.dol", 0x496C30, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254152
 $$254152:
-	.incbin "baserom.dol", 0x49D500, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$254157
 $$254157:
-	.incbin "baserom.dol", 0x49D508, 0x8
+	.4byte 0x43300000
+	.4byte 0

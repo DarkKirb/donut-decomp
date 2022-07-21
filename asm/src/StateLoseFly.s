@@ -475,25 +475,37 @@ __sinit_$$3StateLoseFly_cpp:
 /* 802416E0 0023D520  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40247C, 0x4
+	.4byte 0x802416BC  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster9StateLose$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster9StateLose$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x461F68, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802416B8  ;# ptr
+	.4byte 0x8024169C  ;# ptr
 .global __vt__Q53scn4step4boss15challengemaster12StateLoseFly
 __vt__Q53scn4step4boss15challengemaster12StateLoseFly:
-	.incbin "baserom.dol", 0x461F78, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80241178  ;# ptr
+	.4byte 0x8024117C  ;# ptr
+	.4byte 0x80241340  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802415F8  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256401
 $$256401:
-	.incbin "baserom.dol", 0x4953F0, 0x8
+	.4byte 0x3D4CCCCD
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257754
 $$257754:
-	.incbin "baserom.dol", 0x49B090, 0x8
+	.4byte 0x3727C5AC
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global SQ_LIMIT_DIST__Q53scn4step4boss15challengemaster26$$2unnamed$$2StateLoseFly_cpp$$2

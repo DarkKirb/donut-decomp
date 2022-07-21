@@ -3792,36 +3792,47 @@ __dt__Q34nw4r2ef18DrawStripeStrategyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef18DrawStripeStrategy
 __vt__Q34nw4r2ef18DrawStripeStrategy:
-	.incbin "baserom.dol", 0x43C598, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x800C3A80  ;# ptr
+	.4byte 0x800C25A0  ;# ptr
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
+	.4byte 0x800C3100  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211761
 $$211761:
-	.incbin "baserom.dol", 0x4998F8, 0x4
+	.4byte 0x3C23D70A
 .global $$211762
 $$211762:
-	.incbin "baserom.dol", 0x4998FC, 0x4
+	.4byte 0x3F800000
 .global $$211769
 $$211769:
-	.incbin "baserom.dol", 0x499900, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$211929
 $$211929:
-	.incbin "baserom.dol", 0x499908, 0x4
+	.4byte 0x34000000
 .global $$211930
 $$211930:
-	.incbin "baserom.dol", 0x49990C, 0x4
+	.4byte 0x3CC90FDB
 .global $$211931
 $$211931:
-	.incbin "baserom.dol", 0x499910, 0x8
+	.4byte 0
+	.4byte 0
 .global $$211940
 $$211940:
-	.incbin "baserom.dol", 0x499918, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$212421
 $$212421:
-	.incbin "baserom.dol", 0x499920, 0x4
+	.4byte 0x43B40000
 .global $$212422
 $$212422:
-	.incbin "baserom.dol", 0x499924, 0x4
+	.4byte 0x3F360B61
 .global $$212628
 $$212628:
-	.incbin "baserom.dol", 0x499928, 0x8
+	.4byte 0xBF800000
+	.4byte 0

@@ -312,13 +312,23 @@ GetRuntimeTypeInfo__Q33scn7history12SceneHistoryCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254220
 $$254220:
-	.incbin "baserom.dol", 0x45D618, 0x14
+	.asciz "HistoryCommon2.dn"
+	.balign 4
 .global $$254221
 $$254221:
-	.incbin "baserom.dol", 0x45D62C, 0x18
+	.asciz "HistoryLayoutDetail.dn"
+	.balign 4
 .global __vt__Q33scn7history12SceneHistory
 __vt__Q33scn7history12SceneHistory:
-	.incbin "baserom.dol", 0x45D644, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x8020EA80  ;# ptr
+	.4byte 0x8020E8A4  ;# ptr
+	.4byte 0x8020E938  ;# ptr
+	.4byte 0x8020E910  ;# ptr
+	.4byte 0x8020E960  ;# ptr
+	.4byte 0x8020E988  ;# ptr
+	.4byte 0x8020E9B0  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn7history12SceneHistory$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

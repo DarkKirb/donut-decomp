@@ -265,18 +265,25 @@ __dt__Q53scn4step5enemy6owgulf15StateAttack3WayFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6owgulf15StateAttack3Way
 __vt__Q53scn4step5enemy6owgulf15StateAttack3Way:
-	.incbin "baserom.dol", 0x475E38, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CA728  ;# ptr
+	.4byte 0x802CA468  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255579
 $$255579:
-	.incbin "baserom.dol", 0x49C938, 0x4
+	.4byte 0x4222F983
 .global $$255580
 $$255580:
-	.incbin "baserom.dol", 0x49C93C, 0x4
+	.4byte 0x3C8EFA35
 .global $$255581
 $$255581:
-	.incbin "baserom.dol", 0x49C940, 0x4
+	.4byte 0
 .global $$255582
 $$255582:
-	.incbin "baserom.dol", 0x49C944, 0x4
+	.4byte 0x3F000000

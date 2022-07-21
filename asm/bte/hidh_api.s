@@ -983,31 +983,40 @@ lbl_8008E184:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21051
 $$21051:
-	.incbin "baserom.dol", 0x439230, 0x18
+	.asciz "HID_ERR_NOT_REGISTERED"
+	.balign 4
 .global $$21052
 $$21052:
-	.incbin "baserom.dol", 0x439248, 0x18
+	.asciz "HID_ERR_INVALID_PARAM"
+	.balign 4
 .global $$21053
 $$21053:
-	.incbin "baserom.dol", 0x439260, 0x24
+	.asciz "HID_ERR_NO_CONNECTION dev_handle %d"
 .global $$21083
 $$21083:
-	.incbin "baserom.dol", 0x439284, 0x20
+	.asciz "Security Registration 1 failed"
+	.balign 4
 .global $$21084
 $$21084:
-	.incbin "baserom.dol", 0x4392A4, 0x20
+	.asciz "Security Registration 2 failed"
+	.balign 4
 .global $$21085
 $$21085:
-	.incbin "baserom.dol", 0x4392C4, 0x20
+	.asciz "Security Registration 3 failed"
+	.balign 4
 .global $$21086
 $$21086:
-	.incbin "baserom.dol", 0x4392E4, 0x20
+	.asciz "Security Registration 4 failed"
+	.balign 4
 .global $$21087
 $$21087:
-	.incbin "baserom.dol", 0x439304, 0x20
+	.asciz "Security Registration 5 failed"
+	.balign 4
 .global $$21088
 $$21088:
-	.incbin "baserom.dol", 0x439324, 0x24
+	.asciz "Security Registration 6 failed"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global hh_cb

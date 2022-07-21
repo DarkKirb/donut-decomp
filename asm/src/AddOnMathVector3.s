@@ -332,7 +332,8 @@ SlotSub__Q33hel4mint16AddOnMathVector3FUl:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253590
 $$253590:
-	.incbin "baserom.dol", 0x49A440, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2t_obj__Q33hel4mint30$$2unnamed$$2AddOnMathVector3_cpp$$2Fv$$2obj

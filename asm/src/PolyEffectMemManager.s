@@ -396,4 +396,6 @@ free__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249795
 $$249795:
-	.incbin "baserom.dol", 0x44F508, 0x18
+	.asciz "PolyEffectMemBlock"
+	.balign 4
+	.4byte 0

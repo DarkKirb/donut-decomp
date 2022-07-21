@@ -362,99 +362,193 @@ lbl_8032B844:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_MANUAL_KIND_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2
 T_MANUAL_KIND_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x415CC0, 0x90
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000003
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000006
+	.4byte 0
+	.4byte 0x00000007
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249295
 $$249295:
-	.incbin "baserom.dol", 0x45AA98, 0x28
+	.asciz "step/chara/hero/kirby/sword/Sword"
+	.balign 4
+	.4byte 0
 .global $$249296
 $$249296:
-	.incbin "baserom.dol", 0x45AAC0, 0x20
+	.asciz "step/chara/hero/kirby/whip/Whip"
 .global $$249297
 $$249297:
-	.incbin "baserom.dol", 0x45AAE0, 0x28
+	.asciz "step/chara/hero/kirby/parasol/Parasol"
+	.balign 4
 .global $$249321
 $$249321:
-	.incbin "baserom.dol", 0x45AB08, 0x20
+	.asciz "step/chara/hero/kirby/sword/Hat"
 .global $$249322
 $$249322:
-	.incbin "baserom.dol", 0x45AB28, 0x20
+	.asciz "step/chara/hero/kirby/whip/Hat"
+	.balign 4
 .global $$249323
 $$249323:
-	.incbin "baserom.dol", 0x45AB48, 0x20
+	.asciz "step/chara/hero/kirby/spark/Hat"
 .global $$249324
 $$249324:
-	.incbin "baserom.dol", 0x45AB68, 0x20
+	.asciz "step/chara/hero/kirby/wing/Hat"
+	.balign 4
 .global $$249325
 $$249325:
-	.incbin "baserom.dol", 0x45AB88, 0x28
+	.asciz "step/chara/hero/kirby/fighter/Hat"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248725
 $$248725:
-	.incbin "baserom.dol", 0x47E880, 0x18
+	.asciz "StepHrAbKirbyNormal.dn"
+	.balign 4
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x47E898, 0x18
+	.asciz "StepHrAbKirbySword.dn"
+	.balign 4
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x47E8B0, 0x18
+	.asciz "StepHrAbKirbyCutter.dn"
+	.balign 4
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x47E8C8, 0x18
+	.asciz "StepHrAbKirbyWhip.dn"
+	.balign 4
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x47E8E0, 0x18
+	.asciz "StepHrAbKirbyFire.dn"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x47E8F8, 0x18
+	.asciz "StepHrAbKirbySpark.dn"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x47E910, 0x18
+	.asciz "StepHrAbKirbyStone.dn"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x47E928, 0x18
+	.asciz "StepHrAbKirbyParasol.dn"
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x47E940, 0x18
+	.asciz "StepHrAbKirbyHammer.dn"
+	.balign 4
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x47E958, 0x18
+	.asciz "StepHrAbKirbyWing.dn"
+	.balign 4
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x47E970, 0x18
+	.asciz "StepHrAbKirbyFighter.dn"
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x47E988, 0x18
+	.asciz "StepHrAbKirbySmash.dn"
+	.balign 4
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x47E9A0, 0x10
+	.asciz "StepHrAbMeta.dn"
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x47E9B0, 0x14
+	.asciz "StepHrAbDedede.dn"
+	.balign 4
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x47E9C4, 0x14
+	.asciz "StepHrAbDee.dn"
+	.balign 4
+	.4byte 0
 .global T_FDN_NAME_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2
 T_FDN_NAME_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x47E9D8, 0x90
+	.4byte 0x80482780
+	.4byte 0x80482798
+	.4byte 0x804827B0
+	.4byte 0x80482780
+	.4byte 0x804827C8
+	.4byte 0x804827E0
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x804827F8
+	.4byte 0x80482810
+	.4byte 0x80482780
+	.4byte 0x80482828
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482840
+	.4byte 0x80482780
+	.4byte 0x80482858
+	.4byte 0x80482780
+	.4byte 0x80482870
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482888
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x80482780
+	.4byte 0x804828A0
+	.4byte 0x804828B0
+	.4byte 0x804828C4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249304
 $$249304:
-	.incbin "baserom.dol", 0x494078, 0x4
+	.4byte 0
 .global $$249305
 $$249305:
-	.incbin "baserom.dol", 0x49407C, 0x8
+	.asciz "EdgeL"
+	.balign 4
 .global $$249306
 $$249306:
-	.incbin "baserom.dol", 0x494084, 0xC
+	.asciz "AllL"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249353
 $$249353:
-	.incbin "baserom.dol", 0x49A8E0, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2Dyna__Q33scn14challengetitle15AbilityKindUtilFQ33scn14challengetitle11AbilityKind$$2dynaDesc$$21

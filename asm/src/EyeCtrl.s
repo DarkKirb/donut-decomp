@@ -152,4 +152,9 @@ lbl_8023D794:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21$$2unnamed$$2EyeCtrl_cpp$$2
 T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21$$2unnamed$$2EyeCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x412898, 0x18
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x0000003C
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x0000001E

@@ -186,7 +186,7 @@ setDebugColor__Q25ocoll5ShapeFRC8_GXColor:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252228
 $$252228:
-	.incbin "baserom.dol", 0x49A7F0, 0x4
+	.4byte 0x3F000000
 .global $$252229
 $$252229:
-	.incbin "baserom.dol", 0x49A7F4, 0x4
+	.4byte 0

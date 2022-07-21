@@ -289,12 +289,19 @@ lbl_802F1EC8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11whispyapple14StateBoundNear
 __vt__Q53scn4step5enemy11whispyapple14StateBoundNear:
-	.incbin "baserom.dol", 0x47AEB8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F1C40  ;# ptr
+	.4byte 0x802F1C44  ;# ptr
+	.4byte 0x802F1D58  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802F1DB0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256802
 $$256802:
-	.incbin "baserom.dol", 0x49D0C0, 0x4
+	.4byte 0
 .global $$256828
 $$256828:
-	.incbin "baserom.dol", 0x49D0C4, 0x4
+	.4byte 0x43B40000

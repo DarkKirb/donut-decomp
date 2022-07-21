@@ -446,29 +446,32 @@ mfStartStrike__Q53scn4step7gimmick5stake5StakeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258060
 $$258060:
-	.incbin "baserom.dol", 0x47E588, 0x14
+	.asciz "step/gimmick/Stake"
+	.balign 4
 .global $$258062
 $$258062:
-	.incbin "baserom.dol", 0x47E59C, 0x10
+	.asciz "StandbyStake"
+	.balign 4
 .global $$258184
 $$258184:
-	.incbin "baserom.dol", 0x47E5AC, 0xC
+	.asciz "StrikeStake"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258061
 $$258061:
-	.incbin "baserom.dol", 0x496D20, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258063
 $$258063:
-	.incbin "baserom.dol", 0x49D5B8, 0x4
+	.4byte 0x3E4CCCCD
 .global $$258064
 $$258064:
-	.incbin "baserom.dol", 0x49D5BC, 0x4
+	.4byte 0xBE99999A
 .global $$258065
 $$258065:
-	.incbin "baserom.dol", 0x49D5C0, 0x4
+	.4byte 0x3F4CCCCD
 .global $$258066
 $$258066:
-	.incbin "baserom.dol", 0x49D5C4, 0x4
+	.4byte 0x3E99999A

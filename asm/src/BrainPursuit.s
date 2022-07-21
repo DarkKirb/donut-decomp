@@ -141,12 +141,29 @@ __dt__Q53scn4step5enemy6shotzo12BrainPursuitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470970, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029EFC8  ;# ptr
+	.4byte 0x8029EFA8  ;# ptr
 .global __vt__Q53scn4step5enemy10brontoburt12BrainPursuit
 __vt__Q53scn4step5enemy10brontoburt12BrainPursuit:
-	.incbin "baserom.dol", 0x470980, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029EFC4  ;# ptr
+	.4byte 0x8029EF20  ;# ptr
+	.4byte 0x8029EFA4  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6shotzo12BrainPursuit
 __vt__Q53scn4step5enemy6shotzo12BrainPursuit:
-	.incbin "baserom.dol", 0x478118, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E0198  ;# ptr
+	.4byte 0x802E0114  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

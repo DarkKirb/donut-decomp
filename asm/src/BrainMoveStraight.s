@@ -68,4 +68,11 @@ __dt__Q53scn4step5enemy4kabu17BrainMoveStraightFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4kabu17BrainMoveStraight
 __vt__Q53scn4step5enemy4kabu17BrainMoveStraight:
-	.incbin "baserom.dol", 0x473FF0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BC98C  ;# ptr
+	.4byte 0x802BC900  ;# ptr
+	.4byte 0x802BC988  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

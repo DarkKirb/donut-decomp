@@ -169,9 +169,17 @@ __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5gordo17StateMoveStraight
 __vt__Q53scn4step5enemy5gordo17StateMoveStraight:
-	.incbin "baserom.dol", 0x473798, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B9B44  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802B99A0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802B9A70  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255765
 $$255765:
-	.incbin "baserom.dol", 0x49C5B0, 0x8
+	.4byte 0xBF800000
+	.4byte 0

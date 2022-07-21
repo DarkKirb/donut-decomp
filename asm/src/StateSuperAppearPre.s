@@ -200,7 +200,17 @@ __dt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16StateSuperAppear$$4PQ43scn4step5enemy5Enemy$$4Q25ostop9ReqHandle$$4i$$1
 __vt__Q24util121StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy6common16StateSuperAppear$$4PQ43scn4step5enemy5Enemy$$4Q25ostop9ReqHandle$$4i$$1:
-	.incbin "baserom.dol", 0x46F3D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80294B24  ;# ptr
+	.4byte 0x80294B00  ;# ptr
 .global __vt__Q53scn4step5enemy6common19StateSuperAppearPre
 __vt__Q53scn4step5enemy6common19StateSuperAppearPre:
-	.incbin "baserom.dol", 0x46F3E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029494C  ;# ptr
+	.4byte 0x80294A24  ;# ptr
+	.4byte 0x80294AF8  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80294AFC  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

@@ -513,15 +513,23 @@ lbl_80027014:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2933
 $$2933:
-	.incbin "baserom.dol", 0x42BA08, 0x2C
+	.asciz "/title/00000001/00000002/data/play_rec.dat"
+	.balign 4
 .global $$2983
 $$2983:
-	.incbin "baserom.dol", 0x42BA34, 0x1C
+	.4byte 0x80026990  ;# ptr
+	.4byte 0x8002699C  ;# ptr
+	.4byte 0x80026A18  ;# ptr
+	.4byte 0x80026A5C  ;# ptr
+	.4byte 0x80026A84  ;# ptr
+	.4byte 0x80026A90  ;# ptr
+	.4byte 0x80026B18  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global PlayRecordState
 PlayRecordState:
-	.incbin "baserom.dol", 0x4928E0, 0x8
+	.4byte 0x00000009
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global PlayRecord

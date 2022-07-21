@@ -921,17 +921,21 @@ lbl_80084418:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global btm_pm_md_comp_matrix
 btm_pm_md_comp_matrix:
-	.incbin "baserom.dol", 0x4041F8, 0x10
+	.4byte 0x03020201
+	.4byte 0x03010102
+	.4byte 0x03000000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21775
 $$21775:
-	.incbin "baserom.dol", 0x438040, 0x40
+	.asciz "btm mode change AFTER unsniffing; hci hdl 0x%x, types 0x%02x"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global btm_pm_mode_off
 btm_pm_mode_off:
-	.incbin "baserom.dol", 0x499488, 0x4
+	.4byte 0x00000100
 .global btm_pm_mode_msk
 btm_pm_mode_msk:
-	.incbin "baserom.dol", 0x49948C, 0x4
+	.4byte 0x40800100

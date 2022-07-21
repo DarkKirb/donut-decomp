@@ -1836,164 +1836,222 @@ InScreen__Q43scn4step7gimmick4UtilFRQ33scn4step9ComponentRCQ33hel4math7Vector2f:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251998
 $$251998:
-	.incbin "baserom.dol", 0x410C40, 0x20
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000001
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2AsinRad__Q24nw4r4mathFf$$20
 $$2STRING$$2AsinRad__Q24nw4r4mathFf$$20:
-	.incbin "baserom.dol", 0x44F268, 0x28
+	.asciz "AsinRad: Input is out of the domain."
+	.balign 4
 .global $$2STRING$$2AsinRad__Q24nw4r4mathFf
 $$2STRING$$2AsinRad__Q24nw4r4mathFf:
-	.incbin "baserom.dol", 0x44F290, 0x10
+	.asciz "triangular.h"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2
 T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2:
-	.incbin "baserom.dol", 0x453080, 0x1C
+	.4byte 0x80556EA8
+	.4byte 0x80556EB0
+	.4byte 0x80556EB8
+	.4byte 0x80556EC0
+	.4byte 0x80556EC8
+	.4byte 0x80556ED0
+	.4byte 0x80556ED8
 .global $$254066
 $$254066:
-	.incbin "baserom.dol", 0x45309C, 0x18
+	.4byte 0xFF10FF11
+	.4byte 0xFF12FF13
+	.4byte 0xFF14FF15
+	.4byte 0xFF16FF17
+	.4byte 0xFF18FF19
+	.4byte 0
 .global $$254067
 $$254067:
-	.incbin "baserom.dol", 0x4530B4, 0xC
+	.asciz "SphereCount"
 .global $$254078
 $$254078:
-	.incbin "baserom.dol", 0x4530C0, 0xC
+	.asciz "PlayerNum"
+	.balign 4
 .global __vt__Q24info22Iterator$52761Util_cpp
 __vt__Q24info22Iterator$52761Util_cpp:
-	.incbin "baserom.dol", 0x4530CC, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A56E8  ;# ptr
+	.4byte 0x801A5680  ;# ptr
+	.4byte 0x801A5600  ;# ptr
 .global __vt__Q24info22Iterator$52705Util_cpp
 __vt__Q24info22Iterator$52705Util_cpp:
-	.incbin "baserom.dol", 0x4530E0, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A58A8  ;# ptr
+	.4byte 0x801A5850  ;# ptr
+	.4byte 0x801A5804  ;# ptr
 .global $$254197
 $$254197:
-	.incbin "baserom.dol", 0x4530F4, 0x14
+	.asciz "bad_function_call"
+	.balign 4
 .global __vt__Q24info22Iterator$52503Util_cpp
 __vt__Q24info22Iterator$52503Util_cpp:
-	.incbin "baserom.dol", 0x453108, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A5918  ;# ptr
+	.4byte 0x801AFF00  ;# ptr
+	.4byte 0x801AFF04  ;# ptr
 .global __vt__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cpp
 __vt__Q218$$2unnamed$$2Util_cpp$$222Iterator$52007Util_cpp:
-	.incbin "baserom.dol", 0x45311C, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A5A70  ;# ptr
+	.4byte 0x801A5A6C  ;# ptr
+	.4byte 0x801A5A68  ;# ptr
 .global $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$22
 $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$22:
-	.incbin "baserom.dol", 0x453130, 0x34
+	.asciz "NW4R:Pointer Error\nstr(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$21
 $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$21:
-	.incbin "baserom.dol", 0x453164, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$20
 $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw$$20:
-	.incbin "baserom.dol", 0x453178, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw
 $$2STRING$$2CalcStringWidth__Q34nw4r2ut17TextWriterBase$$0w$$1CFPCw:
-	.incbin "baserom.dol", 0x4531AC, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$22
 $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$22:
-	.incbin "baserom.dol", 0x4531C0, 0x3C
+	.asciz "NW4R:Pointer Error\ntagProcessor(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$21
 $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$21:
-	.incbin "baserom.dol", 0x4531FC, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$20
 $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1$$20:
-	.incbin "baserom.dol", 0x453210, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1
 $$2STRING$$2SetTagProcessor__Q34nw4r2ut17TextWriterBase$$0w$$1FPQ34nw4r2ut19TagProcessorBase$$0w$$1:
-	.incbin "baserom.dol", 0x453244, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20
 $$2STRING$$2SetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20:
-	.incbin "baserom.dol", 0x453258, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff
 $$2STRING$$2SetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff:
-	.incbin "baserom.dol", 0x45328C, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20
 $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20:
-	.incbin "baserom.dol", 0x4532A0, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff
 $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff:
-	.incbin "baserom.dol", 0x4532D4, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251913
 $$251913:
-	.incbin "baserom.dol", 0x493288, 0x8
+	.asciz "KirbyN"
+	.balign 4
 .global $$251914
 $$251914:
-	.incbin "baserom.dol", 0x493290, 0x8
+	.asciz "KirbyYN"
 .global $$251915
 $$251915:
-	.incbin "baserom.dol", 0x493298, 0x8
+	.asciz "KirbyRN"
 .global $$251916
 $$251916:
-	.incbin "baserom.dol", 0x4932A0, 0x8
+	.asciz "KirbyGN"
 .global $$251917
 $$251917:
-	.incbin "baserom.dol", 0x4932A8, 0x8
+	.asciz "MetaN"
+	.balign 4
 .global $$251918
 $$251918:
-	.incbin "baserom.dol", 0x4932B0, 0x8
+	.asciz "DededeN"
 .global $$251919
 $$251919:
-	.incbin "baserom.dol", 0x4932B8, 0x8
+	.asciz "WadoN"
+	.balign 4
 .global $$254065
 $$254065:
-	.incbin "baserom.dol", 0x4932C0, 0x8
+	.4byte 0x00250075
+	.4byte 0
 .global $$254094
 $$254094:
-	.incbin "baserom.dol", 0x4932C8, 0x8
+	.asciz "FileNum"
 .global $$254215
 $$254215:
-	.incbin "baserom.dol", 0x4932D0, 0x8
+	.asciz "Replace"
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc$$20
 $$2STRING$$2onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc$$20:
-	.incbin "baserom.dol", 0x4932D8, 0x8
+	.asciz "Suspend"
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc
 $$2STRING$$2onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc:
-	.incbin "baserom.dol", 0x4932E0, 0x8
+	.asciz "Action"
+	.balign 4
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$22
 $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$22:
-	.incbin "baserom.dol", 0x4932E8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$21
 $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$21:
-	.incbin "baserom.dol", 0x4932F0, 0x8
+	.asciz "Suspend"
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$20
 $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$20:
-	.incbin "baserom.dol", 0x4932F8, 0x8
+	.asciz "Suspend"
 .global $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc
 $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc:
-	.incbin "baserom.dol", 0x493300, 0x8
+	.asciz "Action"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251710
 $$251710:
-	.incbin "baserom.dol", 0x49A148, 0x4
+	.4byte 0x3727C5AC
 .global $$251731
 $$251731:
-	.incbin "baserom.dol", 0x49A14C, 0x4
+	.4byte 0
 .global $$251760
 $$251760:
-	.incbin "baserom.dol", 0x49A150, 0x4
+	.4byte 0x3F800000
 .global $$251761
 $$251761:
-	.incbin "baserom.dol", 0x49A154, 0x4
+	.4byte 0xBF800000
 .global $$251762
 $$251762:
-	.incbin "baserom.dol", 0x49A158, 0x4
+	.4byte 0x40490FDB
 .global $$251842
 $$251842:
-	.incbin "baserom.dol", 0x49A15C, 0x4
+	.4byte 0x00800000
 .global $$251843
 $$251843:
-	.incbin "baserom.dol", 0x49A160, 0x4
+	.4byte 0x3FC90FDB
 .global $$251844
 $$251844:
-	.incbin "baserom.dol", 0x49A164, 0x4
+	.4byte 0xBFC90FDB
 .global $$251845
 $$251845:
-	.incbin "baserom.dol", 0x49A168, 0x4
+	.4byte 0x4222F983
 .global $$251853
 $$251853:
-	.incbin "baserom.dol", 0x49A16C, 0x4
+	.4byte 0x3CC90FDB
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253983
 $$253983:
-	.incbin "baserom.dol", 0x49A478, 0x8
+	.4byte 0
+	.4byte 0

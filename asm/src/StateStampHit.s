@@ -200,12 +200,21 @@ procFixPos__Q53scn4step4hero7fighter13StateStampHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter13StateStampHit
 __vt__Q53scn4step4hero7fighter13StateStampHit:
-	.incbin "baserom.dol", 0x48A730, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039F7C4
+	.4byte 0x8039F7C8
+	.4byte 0x8039F8A0
+	.4byte 0x8035550C
+	.4byte 0x8039F988
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255748
 $$255748:
-	.incbin "baserom.dol", 0x49E330, 0x4
+	.4byte 0
 .global $$255749
 $$255749:
-	.incbin "baserom.dol", 0x49E334, 0x4
+	.4byte 0x3A83126F

@@ -820,70 +820,84 @@ lbl_800A008C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21261
 $$21261:
-	.incbin "baserom.dol", 0x43BC98, 0x14
+	.asciz "Service Discovery"
+	.balign 4
 .global $$21262
 $$21262:
-	.incbin "baserom.dol", 0x43BCAC, 0x24
+	.asciz "Security Registration Server failed"
 .global $$21263
 $$21263:
-	.incbin "baserom.dol", 0x43BCD0, 0x28
+	.asciz "Security Registration for Client failed"
 .global $$21264
 $$21264:
-	.incbin "baserom.dol", 0x43BCF8, 0x18
+	.asciz "SDP Registration failed"
 .global $$21274
 $$21274:
-	.incbin "baserom.dol", 0x43BD10, 0x38
+	.asciz "SDP - Rcvd L2CAP conn ind, sent config req, CID 0x%x"
+	.balign 4
 .global $$21290
 $$21290:
-	.incbin "baserom.dol", 0x43BD48, 0x2C
+	.asciz "SDP - Rcvd conn cnf for unknown CID 0x%x"
+	.balign 4
 .global $$21291
 $$21291:
-	.incbin "baserom.dol", 0x43BD74, 0x2C
+	.asciz "SDP - got conn cnf, sent cfg req, CID: 0x%x"
 .global $$21292
 $$21292:
-	.incbin "baserom.dol", 0x43BDA0, 0x30
+	.asciz "SDP - Rcvd conn cnf with error: 0x%x  CID 0x%x"
+	.balign 4
 .global $$21306
 $$21306:
-	.incbin "baserom.dol", 0x43BDD0, 0x2C
+	.asciz "SDP - Rcvd L2CAP cfg ind, unknown CID: 0x%x"
 .global $$21307
 $$21307:
-	.incbin "baserom.dol", 0x43BDFC, 0x2C
+	.asciz "SDP - Rcvd cfg ind, sent cfg cfm, CID: 0x%x"
 .global $$21322
 $$21322:
-	.incbin "baserom.dol", 0x43BE28, 0x2C
+	.asciz "SDP - Rcvd cfg cfm, CID: 0x%x  Result: %d"
+	.balign 4
 .global $$21323
 $$21323:
-	.incbin "baserom.dol", 0x43BE54, 0x1C
+	.asciz "SDP - disconnect  CID: 0x%x"
 .global $$21337
 $$21337:
-	.incbin "baserom.dol", 0x43BE70, 0x2C
+	.asciz "SDP - Rcvd L2CAP disc, unknown CID: 0x%x"
+	.balign 4
 .global $$21338
 $$21338:
-	.incbin "baserom.dol", 0x43BE9C, 0x24
+	.asciz "SDP - Rcvd L2CAP disc, CID: 0x%x"
+	.balign 4
 .global $$21347
 $$21347:
-	.incbin "baserom.dol", 0x43BEC0, 0x38
+	.asciz "SDP - Ignored L2CAP data while in state: %d, CID: 0x%x"
+	.balign 4
 .global $$21348
 $$21348:
-	.incbin "baserom.dol", 0x43BEF8, 0x2C
+	.asciz "SDP - Rcvd L2CAP data, unknown CID: 0x%x"
+	.balign 4
 .global $$21356
 $$21356:
-	.incbin "baserom.dol", 0x43BF24, 0x1C
+	.asciz "SDP - no spare CCB for orig"
 .global $$21357
 $$21357:
-	.incbin "baserom.dol", 0x43BF40, 0x18
+	.asciz "SDP - Originate started"
 .global $$21358
 $$21358:
-	.incbin "baserom.dol", 0x43BF58, 0x18
+	.asciz "SDP - Originate failed"
+	.balign 4
 .global $$21375
 $$21375:
-	.incbin "baserom.dol", 0x43BF70, 0x30
+	.asciz "SDP - Rcvd L2CAP disc cfm, unknown CID: 0x%x"
+	.balign 4
 .global $$21376
 $$21376:
-	.incbin "baserom.dol", 0x43BFA0, 0x28
+	.asciz "SDP - Rcvd L2CAP disc cfm, CID: 0x%x"
+	.balign 4
 .global $$21382
 $$21382:
-	.incbin "baserom.dol", 0x43BFC8, 0x30
+	.asciz "SDP - CCB timeout in state: %d  CID: 0x%x"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sdp_cb

@@ -30,4 +30,11 @@ __dt__Q53scn4step5enemy6shotzo16BrainPursuitCeilFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6shotzo16BrainPursuitCeil
 __vt__Q53scn4step5enemy6shotzo16BrainPursuitCeil:
-	.incbin "baserom.dol", 0x478138, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E01DC  ;# ptr
+	.4byte 0x802E01D8  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

@@ -788,36 +788,47 @@ isIgnoredNonSuper__Q43scn4step5enemy15CaptureReceiverCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$20:
-	.incbin "baserom.dol", 0x46DB90, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1:
-	.incbin "baserom.dol", 0x46DBB4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$20:
-	.incbin "baserom.dol", 0x46DBC0, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1:
-	.incbin "baserom.dol", 0x46DBE4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x46DBF0, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x46DC14, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x46DC20, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x46DC44, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x46DC50, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x46DC74, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258668
 $$258668:
-	.incbin "baserom.dol", 0x49B930, 0x8
+	.4byte 0
+	.4byte 0

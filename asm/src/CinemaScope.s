@@ -165,27 +165,33 @@ draw__Q43scn4step3sfx11CinemaScopeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251854
 $$251854:
-	.incbin "baserom.dol", 0x45AC98, 0x10
+	.asciz "step/sfx/CSTalk"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251791
 $$251791:
-	.incbin "baserom.dol", 0x45C9E8, 0x18
+	.asciz "step/sfx/CSTitle"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251630
 $$251630:
-	.incbin "baserom.dol", 0x48ED10, 0x18
+	.asciz "step/sfx/CSArrow"
+	.balign 4
+	.4byte 0
 .global $$251631
 $$251631:
-	.incbin "baserom.dol", 0x48ED28, 0x10
+	.asciz "step/sfx/CSTalk"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2:
-	.incbin "baserom.dol", 0x4947F0, 0x8
+	.4byte 0x804608E8
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2:
-	.incbin "baserom.dol", 0x4983D8, 0x8
+	.4byte 0x80492C10
+	.4byte 0x80492C28

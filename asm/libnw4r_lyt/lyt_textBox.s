@@ -1680,31 +1680,67 @@ __sinit_$$3lyt_textBox_cpp:
 /* 800F6AAC 000F28EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402388, 0x4
+	.4byte 0x800F6AA0  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt7TextBox
 __vt__Q34nw4r3lyt7TextBox:
-	.incbin "baserom.dol", 0x43D420, 0x88
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F5630  ;# ptr
+	.4byte 0x800F6A90  ;# ptr
+	.4byte 0x800F30D0  ;# ptr
+	.4byte 0x800F33D0  ;# ptr
+	.4byte 0x800F58D0  ;# ptr
+	.4byte 0x800F3470  ;# ptr
+	.4byte 0x800F3500  ;# ptr
+	.4byte 0x800F57D0  ;# ptr
+	.4byte 0x800F57F0  ;# ptr
+	.4byte 0x800F2EC0  ;# ptr
+	.4byte 0x800F2EF0  ;# ptr
+	.4byte 0x800F5830  ;# ptr
+	.4byte 0x800F5850  ;# ptr
+	.4byte 0x800F2F40  ;# ptr
+	.4byte 0x800F3000  ;# ptr
+	.4byte 0x800F35C0  ;# ptr
+	.4byte 0x800F35E0  ;# ptr
+	.4byte 0x800F3670  ;# ptr
+	.4byte 0x800F3690  ;# ptr
+	.4byte 0x800F3730  ;# ptr
+	.4byte 0x800F3740  ;# ptr
+	.4byte 0x800F3750  ;# ptr
+	.4byte 0x800F3850  ;# ptr
+	.4byte 0x800F3A80  ;# ptr
+	.4byte 0x800F3AA0  ;# ptr
+	.4byte 0x800F3AB0  ;# ptr
+	.4byte 0x800F6570  ;# ptr
+	.4byte 0x800F6280  ;# ptr
+	.4byte 0x800F6350  ;# ptr
+	.4byte 0x800F63A0  ;# ptr
+	.4byte 0x800F6480  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$210917
 $$210917:
-	.incbin "baserom.dol", 0x492E28, 0x8
+	.4byte 0x000A0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210401
 $$210401:
-	.incbin "baserom.dol", 0x499C88, 0x8
+	.4byte 0
+	.4byte 0
 .global $$210454
 $$210454:
-	.incbin "baserom.dol", 0x499C90, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$210915
 $$210915:
-	.incbin "baserom.dol", 0x499C98, 0x4
+	.4byte 0x3F000000
 .global $$210916
 $$210916:
-	.incbin "baserom.dol", 0x499C9C, 0x4
+	.4byte 0x3F800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r3lyt7TextBox

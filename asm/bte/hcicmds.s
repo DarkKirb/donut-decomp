@@ -2805,4 +2805,7 @@ lbl_8008CEB0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21618
 $$21618:
-	.incbin "baserom.dol", 0x404218, 0x10
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF7F0000
+	.4byte 0

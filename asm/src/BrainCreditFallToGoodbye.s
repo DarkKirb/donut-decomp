@@ -112,7 +112,17 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky9State
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5rocky9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476C60, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D3764  ;# ptr
+	.4byte 0x802D3744  ;# ptr
 .global __vt__Q53scn4step5enemy5rocky24BrainCreditFallToGoodbye
 __vt__Q53scn4step5enemy5rocky24BrainCreditFallToGoodbye:
-	.incbin "baserom.dol", 0x476C70, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D3760  ;# ptr
+	.4byte 0x802D364C  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

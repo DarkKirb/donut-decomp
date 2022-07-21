@@ -318,4 +318,5 @@ __GXFlushTextureState:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22555
 $$22555:
-	.incbin "baserom.dol", 0x499168, 0x8
+	.4byte 0x44800000
+	.4byte 0

@@ -621,39 +621,41 @@ __sinit_$$3Scroll_cpp:
 /* 8020F2EC 0020B12C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402460, 0x4
+	.4byte 0x8020F2A4  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253103
 $$253103:
-	.incbin "baserom.dol", 0x49AC40, 0x4
+	.4byte 0
 .global $$253177
 $$253177:
-	.incbin "baserom.dol", 0x49AC44, 0x4
+	.4byte 0x41F00000
 .global $$253178
 $$253178:
-	.incbin "baserom.dol", 0x49AC48, 0x4
+	.4byte 0x3FC00000
 .global $$253179
 $$253179:
-	.incbin "baserom.dol", 0x49AC4C, 0x4
+	.4byte 0xBF000000
 .global $$253183
 $$253183:
-	.incbin "baserom.dol", 0x49AC50, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$253220
 $$253220:
-	.incbin "baserom.dol", 0x49AC58, 0x4
+	.4byte 0x41700000
 .global $$253221
 $$253221:
-	.incbin "baserom.dol", 0x49AC5C, 0x4
+	.4byte 0x3E800000
 .global $$253222
 $$253222:
-	.incbin "baserom.dol", 0x49AC60, 0x4
+	.4byte 0x41200000
 .global $$253223
 $$253223:
-	.incbin "baserom.dol", 0x49AC64, 0x4
+	.4byte 0x41A00000
 .global $$253224
 $$253224:
-	.incbin "baserom.dol", 0x49AC68, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global STEP_WIDTH__Q33scn7history20$$2unnamed$$2Scroll_cpp$$2

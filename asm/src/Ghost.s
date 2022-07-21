@@ -611,67 +611,73 @@ __sinit_$$3Ghost_cpp:
 /* 8030FB98 0030B9D8  4B DA E5 28 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025AC, 0x4
+	.4byte 0x8030FB84
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254434
 $$254434:
-	.incbin "baserom.dol", 0x47D3F8, 0x18
+	.asciz "step/chara/ghost/Ghost"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254435
 $$254435:
-	.incbin "baserom.dol", 0x496AC0, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$254437
 $$254437:
-	.incbin "baserom.dol", 0x496AC8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254505
 $$254505:
-	.incbin "baserom.dol", 0x496AD0, 0x8
+	.asciz "Door"
+	.balign 4
 .global $$254506
 $$254506:
-	.incbin "baserom.dol", 0x496AD8, 0x8
+	.asciz "Appear"
+	.balign 4
 .global $$254507
 $$254507:
-	.incbin "baserom.dol", 0x496AE0, 0x8
+	.asciz "Goal"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254436
 $$254436:
-	.incbin "baserom.dol", 0x49D3D0, 0x4
+	.4byte 0x42480000
 .global $$254508
 $$254508:
-	.incbin "baserom.dol", 0x49D3D4, 0x4
+	.4byte 0xC1700000
 .global $$254509
 $$254509:
-	.incbin "baserom.dol", 0x49D3D8, 0x4
+	.4byte 0x41700000
 .global $$254510
 $$254510:
-	.incbin "baserom.dol", 0x49D3DC, 0x4
+	.4byte 0
 .global $$254573
 $$254573:
-	.incbin "baserom.dol", 0x49D3E0, 0x4
+	.4byte 0xC2480000
 .global $$254574
 $$254574:
-	.incbin "baserom.dol", 0x49D3E4, 0x4
+	.4byte 0x43B40000
 .global $$254575
 $$254575:
-	.incbin "baserom.dol", 0x49D3E8, 0x4
+	.4byte 0xC3B40000
 .global $$254576
 $$254576:
-	.incbin "baserom.dol", 0x49D3EC, 0x4
+	.4byte 0x3F000000
 .global $$254577
 $$254577:
-	.incbin "baserom.dol", 0x49D3F0, 0x4
+	.4byte 0x40A00000
 .global $$254578
 $$254578:
-	.incbin "baserom.dol", 0x49D3F4, 0x4
+	.4byte 0x3C8EFA35
 .global $$254587
 $$254587:
-	.incbin "baserom.dol", 0x49D3F8, 0x4
+	.4byte 0x3F4CCCCD
 .global $$254588
 $$254588:
-	.incbin "baserom.dol", 0x49D3FC, 0x4
+	.4byte 0xBF800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global Offset__19$$2unnamed$$2Ghost_cpp$$2

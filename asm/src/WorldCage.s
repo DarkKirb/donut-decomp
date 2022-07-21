@@ -355,10 +355,11 @@ changePadding__Q43scn4step5chara9WorldCageFff:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254475
 $$254475:
-	.incbin "baserom.dol", 0x49B8B0, 0x4
+	.4byte 0
 .global $$254508
 $$254508:
-	.incbin "baserom.dol", 0x49B8B4, 0x4
+	.4byte 0x3F000000
 .global $$254509
 $$254509:
-	.incbin "baserom.dol", 0x49B8B8, 0x8
+	.4byte 0x3727C5AC
+	.4byte 0

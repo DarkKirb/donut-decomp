@@ -1238,35 +1238,61 @@ __sinit_$$3lyt_pane_cpp:
 /* 8013BB3C 0013797C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023C8, 0x4
+	.4byte 0x8013BB30  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29169
 $$29169:
-	.incbin "baserom.dol", 0x40A330, 0x4
+	.4byte 0
 .global $$29170
 $$29170:
-	.incbin "baserom.dol", 0x40A334, 0x4
+	.4byte 0x3F800000
 .global $$29469
 $$29469:
-	.incbin "baserom.dol", 0x40A338, 0x4
+	.4byte 0x3F000000
 .global $$2LOCAL$$2CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo$$2invAlpha
 $$2LOCAL$$2CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo$$2invAlpha:
-	.incbin "baserom.dol", 0x40A33C, 0x4
+	.4byte 0x3B808081
 .global $$29728
 $$29728:
-	.incbin "baserom.dol", 0x40A340, 0x4
+	.4byte 0x3C8EFA35
 .global $$29729
 $$29729:
-	.incbin "baserom.dol", 0x40A344, 0x4
+	.4byte 0x3B808081
 .global $$29733
 $$29733:
-	.incbin "baserom.dol", 0x40A348, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt4Pane
 __vt__Q36nw4hbm3lyt4Pane:
-	.incbin "baserom.dol", 0x440198, 0x68
+	.4byte 0x80443F38
+	.4byte 0
+	.4byte 0x8013ABA0  ;# ptr
+	.4byte 0x801297F0  ;# ptr
+	.4byte 0x8013B0A0  ;# ptr
+	.4byte 0x8013B3A0  ;# ptr
+	.4byte 0x8013B430  ;# ptr
+	.4byte 0x8013B580  ;# ptr
+	.4byte 0x8013B610  ;# ptr
+	.4byte 0x8013AE90  ;# ptr
+	.4byte 0x8013AEA0  ;# ptr
+	.4byte 0x8013AEB0  ;# ptr
+	.4byte 0x8013AEE0  ;# ptr
+	.4byte 0x8013AF10  ;# ptr
+	.4byte 0x8013AF20  ;# ptr
+	.4byte 0x8013AF30  ;# ptr
+	.4byte 0x8013AFE0  ;# ptr
+	.4byte 0x8013B6D0  ;# ptr
+	.4byte 0x8013B6F0  ;# ptr
+	.4byte 0x8013B700  ;# ptr
+	.4byte 0x8013B710  ;# ptr
+	.4byte 0x8013B7F0  ;# ptr
+	.4byte 0x8013B870  ;# ptr
+	.4byte 0x8013BB20  ;# ptr
+	.4byte 0x8013B930  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt4Pane

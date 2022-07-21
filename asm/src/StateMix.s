@@ -570,4 +570,13 @@ lbl_803670E0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common8StateMix
 __vt__Q53scn4step4hero6common8StateMix:
-	.incbin "baserom.dol", 0x487F48, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80366BC0
+	.4byte 0x80366D8C
+	.4byte 0x80366E20
+	.4byte 0x8035550C
+	.4byte 0x80366E24
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

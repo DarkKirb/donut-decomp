@@ -332,21 +332,31 @@ lbl_8037FF00:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick17StateGetShipParts
 __vt__Q53scn4step4hero7gimmick17StateGetShipParts:
-	.incbin "baserom.dol", 0x488BB0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037FC1C
+	.4byte 0x8037FD2C
+	.4byte 0x8037FEC4
+	.4byte 0x8035550C
+	.4byte 0x8037FEC8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259720
 $$259720:
-	.incbin "baserom.dol", 0x49DF88, 0x4
+	.4byte 0x3FA00000
 .global $$259721
 $$259721:
-	.incbin "baserom.dol", 0x49DF8C, 0x4
+	.4byte 0x3F800000
 .global $$259722
 $$259722:
-	.incbin "baserom.dol", 0x49DF90, 0x4
+	.4byte 0x43340000
 .global $$259723
 $$259723:
-	.incbin "baserom.dol", 0x49DF94, 0x4
+	.4byte 0
 .global $$259726
 $$259726:
-	.incbin "baserom.dol", 0x49DF98, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

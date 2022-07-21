@@ -47,4 +47,7 @@ lbl_8000720C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __ptmf_null
 __ptmf_null:
-	.incbin "baserom.dol", 0x402670, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

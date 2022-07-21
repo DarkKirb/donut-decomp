@@ -235,15 +235,19 @@ lbl_8020E65C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252124
 $$252124:
-	.incbin "baserom.dol", 0x45D600, 0x18
+	.asciz "history/PackageHelpPos"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252169
 $$252169:
-	.incbin "baserom.dol", 0x494A40, 0x8
+	.asciz "Anime"
+	.balign 4
 .global $$252170
 $$252170:
-	.incbin "baserom.dol", 0x494A48, 0x8
+	.asciz "Comic"
+	.balign 4
 .global $$252171
 $$252171:
-	.incbin "baserom.dol", 0x494A50, 0x8
+	.4byte 0x56430000
+	.4byte 0

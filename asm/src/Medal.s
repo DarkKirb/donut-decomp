@@ -246,39 +246,56 @@ lbl_803B4A64:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252254
 $$252254:
-	.incbin "baserom.dol", 0x48C710, 0x14
+	.asciz "masterresult/Main"
+	.balign 4
 .global $$252255
 $$252255:
-	.incbin "baserom.dol", 0x48C724, 0x18
+	.asciz "challengeresult/Main"
+	.balign 4
 .global $$252301
 $$252301:
-	.incbin "baserom.dol", 0x48C73C, 0xC
+	.asciz "Platinum"
+	.balign 4
 .global $$252313
 $$252313:
-	.incbin "baserom.dol", 0x48C748, 0xC
+	.asciz "BronzeWait"
+	.balign 4
 .global $$252314
 $$252314:
-	.incbin "baserom.dol", 0x48C754, 0xC
+	.asciz "SilverWait"
+	.balign 4
 .global $$252315
 $$252315:
-	.incbin "baserom.dol", 0x48C760, 0xC
+	.asciz "GoldWait"
+	.balign 4
 .global $$252316
 $$252316:
-	.incbin "baserom.dol", 0x48C76C, 0x44
+	.asciz "PlatinumWait"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252256
 $$252256:
-	.incbin "baserom.dol", 0x497C00, 0x8
+	.asciz "Medal"
+	.balign 4
 .global $$252257
 $$252257:
-	.incbin "baserom.dol", 0x497C08, 0x8
+	.asciz "MedalN"
+	.balign 4
 .global $$252298
 $$252298:
-	.incbin "baserom.dol", 0x497C10, 0x8
+	.asciz "Bronze"
+	.balign 4
 .global $$252299
 $$252299:
-	.incbin "baserom.dol", 0x497C18, 0x8
+	.asciz "Silver"
+	.balign 4
 .global $$252300
 $$252300:
-	.incbin "baserom.dol", 0x497C20, 0x8
+	.asciz "Gold"
+	.balign 4

@@ -446,49 +446,102 @@ lbl_8008A790:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2882
 $$2882:
-	.incbin "baserom.dol", 0x438EF0, 0x3C
+	.asciz "   GAP Inquiry Complete Event (Status 0x%04x, Result(s) %d)"
 .global $$2883
 $$2883:
-	.incbin "baserom.dol", 0x438F2C, 0x34
+	.asciz "   GAP Discovery Complete Event(SDP Result: 0x%04x)"
 .global $$2884
 $$2884:
-	.incbin "baserom.dol", 0x438F60, 0x28
+	.asciz "   GAP Discovery Successfully Completed"
 .global $$2885
 $$2885:
-	.incbin "baserom.dol", 0x438F88, 0x34
+	.asciz "   GAP Remote Name Complete Event (status 0x%04x)"
+	.balign 4
 .global $$2887
 $$2887:
-	.incbin "baserom.dol", 0x438FBC, 0x24
+	.4byte 0x8008A2A8  ;# ptr
+	.4byte 0x8008A2B0  ;# ptr
+	.4byte 0x8008A2B8  ;# ptr
+	.4byte 0x8008A2E0  ;# ptr
+	.4byte 0x8008A2C0  ;# ptr
+	.4byte 0x8008A2C0  ;# ptr
+	.4byte 0x8008A2C8  ;# ptr
+	.4byte 0x8008A2D0  ;# ptr
+	.4byte 0x8008A2D8  ;# ptr
 .global $$2905
 $$2905:
-	.incbin "baserom.dol", 0x438FE0, 0x44
+	.asciz "GAP Inquiry Results Callback (bdaddr [%02x%02x%02x%02x%02x%02x])"
+	.balign 4
 .global $$2906
 $$2906:
-	.incbin "baserom.dol", 0x439024, 0x44
+	.asciz "                             (COD [%02x%02x%02x], clkoff 0x%04x)"
+	.balign 4
 .global $$2942
 $$2942:
-	.incbin "baserom.dol", 0x439068, 0x44
+	.asciz "   GAP: FindAddrByName Rem Name Cmpl Evt (Status 0x%04x, Name [%s])"
 .global $$2943
 $$2943:
-	.incbin "baserom.dol", 0x4390AC, 0x3C
+	.asciz "   GAP: FindAddrByName Rem Name Cmpl Evt (Status 0x%04x)"
+	.balign 4
 .global $$2946
 $$2946:
-	.incbin "baserom.dol", 0x4390E8, 0x24
+	.4byte 0x8008A500  ;# ptr
+	.4byte 0x8008A508  ;# ptr
+	.4byte 0x8008A510  ;# ptr
+	.4byte 0x8008A538  ;# ptr
+	.4byte 0x8008A518  ;# ptr
+	.4byte 0x8008A518  ;# ptr
+	.4byte 0x8008A520  ;# ptr
+	.4byte 0x8008A528  ;# ptr
+	.4byte 0x8008A530  ;# ptr
 .global $$2945
 $$2945:
-	.incbin "baserom.dol", 0x43910C, 0x24
+	.4byte 0x8008A468  ;# ptr
+	.4byte 0x8008A470  ;# ptr
+	.4byte 0x8008A478  ;# ptr
+	.4byte 0x8008A4A0  ;# ptr
+	.4byte 0x8008A480  ;# ptr
+	.4byte 0x8008A480  ;# ptr
+	.4byte 0x8008A488  ;# ptr
+	.4byte 0x8008A490  ;# ptr
+	.4byte 0x8008A498  ;# ptr
 .global $$2979
 $$2979:
-	.incbin "baserom.dol", 0x439130, 0x44
+	.asciz "   GAP: FindAddrByName Inq Cmpl Evt (Status 0x%04x, Result(s) %d)"
+	.balign 4
 .global $$2982
 $$2982:
-	.incbin "baserom.dol", 0x439174, 0x24
+	.4byte 0x8008A6B4  ;# ptr
+	.4byte 0x8008A6BC  ;# ptr
+	.4byte 0x8008A6C4  ;# ptr
+	.4byte 0x8008A6EC  ;# ptr
+	.4byte 0x8008A6CC  ;# ptr
+	.4byte 0x8008A6CC  ;# ptr
+	.4byte 0x8008A6D4  ;# ptr
+	.4byte 0x8008A6DC  ;# ptr
+	.4byte 0x8008A6E4  ;# ptr
 .global $$2981
 $$2981:
-	.incbin "baserom.dol", 0x439198, 0x24
+	.4byte 0x8008A644  ;# ptr
+	.4byte 0x8008A64C  ;# ptr
+	.4byte 0x8008A654  ;# ptr
+	.4byte 0x8008A67C  ;# ptr
+	.4byte 0x8008A65C  ;# ptr
+	.4byte 0x8008A65C  ;# ptr
+	.4byte 0x8008A664  ;# ptr
+	.4byte 0x8008A66C  ;# ptr
+	.4byte 0x8008A674  ;# ptr
 .global $$21009
 $$21009:
-	.incbin "baserom.dol", 0x4391BC, 0x24
+	.4byte 0x8008A758  ;# ptr
+	.4byte 0x8008A760  ;# ptr
+	.4byte 0x8008A768  ;# ptr
+	.4byte 0x8008A790  ;# ptr
+	.4byte 0x8008A770  ;# ptr
+	.4byte 0x8008A770  ;# ptr
+	.4byte 0x8008A778  ;# ptr
+	.4byte 0x8008A780  ;# ptr
+	.4byte 0x8008A788  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gap_cb

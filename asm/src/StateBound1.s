@@ -339,18 +339,31 @@ __dt__Q24util106StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy11whispyapp
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple14StateBoundNear$$4PQ43scn4step5enemy5Enemy$$4b$$1
 __vt__Q24util106StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple14StateBoundNear$$4PQ43scn4step5enemy5Enemy$$4b$$1:
-	.incbin "baserom.dol", 0x47AE58, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F17C8  ;# ptr
+	.4byte 0x802F17A4  ;# ptr
 .global __vt__Q24util106StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple11StateBound2$$4PQ43scn4step5enemy5Enemy$$4Ul$$4b$$1
 __vt__Q24util106StateFactoryArg3$$0Q24util6IState$$4Q53scn4step5enemy11whispyapple11StateBound2$$4PQ43scn4step5enemy5Enemy$$4Ul$$4b$$1:
-	.incbin "baserom.dol", 0x47AE68, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F17C4  ;# ptr
+	.4byte 0x802F1780  ;# ptr
 .global __vt__Q53scn4step5enemy11whispyapple11StateBound1
 __vt__Q53scn4step5enemy11whispyapple11StateBound1:
-	.incbin "baserom.dol", 0x47AE78, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F13E4  ;# ptr
+	.4byte 0x802F13E8  ;# ptr
+	.4byte 0x802F1494  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802F15C8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256704
 $$256704:
-	.incbin "baserom.dol", 0x49D0B0, 0x4
+	.4byte 0
 .global $$256716
 $$256716:
-	.incbin "baserom.dol", 0x49D0B4, 0x4
+	.4byte 0x43B40000

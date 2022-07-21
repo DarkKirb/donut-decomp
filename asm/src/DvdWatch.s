@@ -1009,48 +1009,54 @@ lbl_8017769C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl$$20
 $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl$$20:
-	.incbin "baserom.dol", 0x44EC30, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl
 $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl:
-	.incbin "baserom.dol", 0x44EC64, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff$$20
 $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff$$20:
-	.incbin "baserom.dol", 0x44EC78, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff
 $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff:
-	.incbin "baserom.dol", 0x44ECAC, 0x14
+	.asciz "CharWriter.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253258
 $$253258:
-	.incbin "baserom.dol", 0x49A0E8, 0x4
+	.4byte 0
 .global $$253259
 $$253259:
-	.incbin "baserom.dol", 0x49A0EC, 0x4
+	.4byte 0x3F800000
 .global $$253260
 $$253260:
-	.incbin "baserom.dol", 0x49A0F0, 0x4
+	.4byte 0x43E40000
 .global $$253261
 $$253261:
-	.incbin "baserom.dol", 0x49A0F4, 0x4
+	.4byte 0x3C23D70A
 .global $$253262
 $$253262:
-	.incbin "baserom.dol", 0x49A0F8, 0x4
+	.4byte 0x42C80000
 .global $$253263
 $$253263:
-	.incbin "baserom.dol", 0x49A0FC, 0x4
+	.4byte 0xBF800000
 .global $$253264
 $$253264:
-	.incbin "baserom.dol", 0x49A100, 0x4
+	.4byte 0x41F00000
 .global $$253265
 $$253265:
-	.incbin "baserom.dol", 0x49A104, 0x4
+	.4byte 0x41D00000
 .global $$253266
 $$253266:
-	.incbin "baserom.dol", 0x49A108, 0x4
+	.4byte 0x3F000000
 .global $$253267
 $$253267:
-	.incbin "baserom.dol", 0x49A10C, 0x4
+	.4byte 0x43640000
 .global $$253272
 $$253272:
-	.incbin "baserom.dol", 0x49A110, 0x8
+	.4byte 0x43300000
+	.4byte 0

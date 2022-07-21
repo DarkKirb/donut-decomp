@@ -603,4 +603,13 @@ GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq17SequenceLvMapRoot
 __vt__Q23seq17SequenceLvMapRoot:
-	.incbin "baserom.dol", 0x492578, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FF420
+	.4byte 0x803FEF48
+	.4byte 0x803FEF4C
+	.4byte 0x803FEF7C
+	.4byte 0x803FF184
+	.4byte 0x803FF1A8
+	.4byte 0x803FF1AC
+	.4byte 0

@@ -176,4 +176,5 @@ landVelocity__Q35mcoll6detail12CollidedInfoCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250421
 $$250421:
-	.incbin "baserom.dol", 0x49A580, 0x8
+	.4byte 0
+	.4byte 0

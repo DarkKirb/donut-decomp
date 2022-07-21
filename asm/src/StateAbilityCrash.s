@@ -222,21 +222,33 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage17Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage17StateAbilityCrash$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage17StateAbilityCrash$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4886D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80375874
+	.4byte 0x80375858
 .global __vt__Q53scn4step4hero6damage17StateAbilityCrash
 __vt__Q53scn4step4hero6damage17StateAbilityCrash:
-	.incbin "baserom.dol", 0x4886E0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037572C
+	.4byte 0x803757E8
+	.4byte 0x803757EC
+	.4byte 0x8035550C
+	.4byte 0x80375854
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256035
 $$256035:
-	.incbin "baserom.dol", 0x49DDE0, 0x4
+	.4byte 0xBD99999A
 .global $$256036
 $$256036:
-	.incbin "baserom.dol", 0x49DDE4, 0x4
+	.4byte 0x3E000000
 .global $$256037
 $$256037:
-	.incbin "baserom.dol", 0x49DDE8, 0x4
+	.4byte 0
 .global $$256060
 $$256060:
-	.incbin "baserom.dol", 0x49DDEC, 0x4
+	.4byte 0x38D1B717

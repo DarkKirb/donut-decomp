@@ -372,15 +372,15 @@ onObjStopFinished__Q43scn4step4hero7SoundSEFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251502
 $$251502:
-	.incbin "baserom.dol", 0x495840, 0x4
+	.4byte 0x3F800000
 .global $$251505
 $$251505:
-	.incbin "baserom.dol", 0x495844, 0x4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251607
 $$251607:
-	.incbin "baserom.dol", 0x49B8A0, 0x4
+	.4byte 0x3F800000
 .global $$251648
 $$251648:
-	.incbin "baserom.dol", 0x49B8A4, 0x4
+	.4byte 0x3C23D70A

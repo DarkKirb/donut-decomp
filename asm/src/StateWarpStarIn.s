@@ -670,52 +670,69 @@ __sinit_$$3StateWarpStarIn_cpp:
 /* 80383CD4 0037FB14  4B D3 A3 EC */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025CC, 0x4
+	.4byte 0x80383CC0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$260738
 $$260738:
-	.incbin "baserom.dol", 0x488D80, 0x18
+	.asciz "step/gimmick/WarpStar"
+	.balign 4
 .global __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1
 __vt__Q24util102StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick17StateWarpStarFall$$4PQ43scn4step4hero4Hero$$4Ul$$1:
-	.incbin "baserom.dol", 0x488D98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80383CBC
+	.4byte 0x80383C9C
 .global __vt__Q53scn4step4hero7gimmick15StateWarpStarIn
 __vt__Q53scn4step4hero7gimmick15StateWarpStarIn:
-	.incbin "baserom.dol", 0x488DA8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803837C0
+	.4byte 0x80383958
+	.4byte 0x80383B6C
+	.4byte 0x80383C34
+	.4byte 0x80355510
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$260737
 $$260737:
-	.incbin "baserom.dol", 0x497728, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$260739
 $$260739:
-	.incbin "baserom.dol", 0x497730, 0x8
+	.asciz "AnimL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260734
 $$260734:
-	.incbin "baserom.dol", 0x49DFF0, 0x4
+	.4byte 0xC0A00000
 .global $$260735
 $$260735:
-	.incbin "baserom.dol", 0x49DFF4, 0x4
+	.4byte 0x41200000
 .global $$260736
 $$260736:
-	.incbin "baserom.dol", 0x49DFF8, 0x4
+	.4byte 0
 .global $$260740
 $$260740:
-	.incbin "baserom.dol", 0x49DFFC, 0x4
+	.4byte 0x3F800000
 .global $$260835
 $$260835:
-	.incbin "baserom.dol", 0x49E000, 0x4
+	.4byte 0x3F000000
 .global $$260836
 $$260836:
-	.incbin "baserom.dol", 0x49E004, 0x4
+	.4byte 0x3E000000
 .global $$260848
 $$260848:
-	.incbin "baserom.dol", 0x49E008, 0x8
+	.4byte 0x42480000
+	.4byte 0
 .global $$260851
 $$260851:
-	.incbin "baserom.dol", 0x49E010, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global TARGET_OFFSET__29$$2unnamed$$2StateWarpStarIn_cpp$$2

@@ -783,40 +783,73 @@ __dt__Q24util96StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7fighter10Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9zankibble10StateCatch
 __vt__Q53scn4step4boss9zankibble10StateCatch:
-	.incbin "baserom.dol", 0x4670C0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802616B8  ;# ptr
+	.4byte 0x80261738  ;# ptr
+	.4byte 0x80261854  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80261858  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9sirkibble10StateCatch
 __vt__Q53scn4step5enemy9sirkibble10StateCatch:
-	.incbin "baserom.dol", 0x478690, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E19B0  ;# ptr
+	.4byte 0x802E19B4  ;# ptr
+	.4byte 0x802E1A4C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802E1A50  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateThrow$$4PQ43scn4step4hero4Hero$$4b$$4b$$1
 __vt__Q24util96StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateThrow$$4PQ43scn4step4hero4Hero$$4b$$4b$$1:
-	.incbin "baserom.dol", 0x48A3A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039BF04
+	.4byte 0x8039BEA0
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20StateCapturedFighter$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured20StateCapturedFighter$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x48A3B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039BF00
+	.4byte 0x8039BEC4
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateCatch$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateCatch$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A3C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039BEFC
+	.4byte 0x8039BEE0
 .global __vt__Q53scn4step4hero7fighter10StateCatch
 __vt__Q53scn4step4hero7fighter10StateCatch:
-	.incbin "baserom.dol", 0x48A3D8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039B920
+	.4byte 0x8039B9BC
+	.4byte 0x8039BC0C
+	.4byte 0x8039BC10
+	.4byte 0x8039BD68
+	.4byte 0x8039BE9C
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258320
 $$258320:
-	.incbin "baserom.dol", 0x49E2C0, 0x4
+	.4byte 0
 .global $$258376
 $$258376:
-	.incbin "baserom.dol", 0x49E2C4, 0x4
+	.4byte 0x3F000000
 .global $$258377
 $$258377:
-	.incbin "baserom.dol", 0x49E2C8, 0x4
+	.4byte 0x3ECCCCCD
 .global $$258442
 $$258442:
-	.incbin "baserom.dol", 0x49E2CC, 0x4
+	.4byte 0x3F666666
 .global $$258443
 $$258443:
-	.incbin "baserom.dol", 0x49E2D0, 0x8
+	.asciz "?333"
+	.balign 4

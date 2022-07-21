@@ -740,41 +740,53 @@ getTotalTime__Q33scn5anime6PlayerCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251631
 $$251631:
-	.incbin "baserom.dol", 0x4115A0, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0xC2C80000
 .global $$251633
 $$251633:
-	.incbin "baserom.dol", 0x4115AC, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x42C80000
 .global $$251635
 $$251635:
-	.incbin "baserom.dol", 0x4115B8, 0x10
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253021
 $$253021:
-	.incbin "baserom.dol", 0x493DF0, 0x8
+	.asciz "Player"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251642
 $$251642:
-	.incbin "baserom.dol", 0x49A838, 0x8
+	.4byte 0x64000080
+	.4byte 0
 .global $$253123
 $$253123:
-	.incbin "baserom.dol", 0x49A840, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$253147
 $$253147:
-	.incbin "baserom.dol", 0x49A848, 0x4
+	.4byte 0x440A0000
 .global $$253148
 $$253148:
-	.incbin "baserom.dol", 0x49A84C, 0x4
+	.4byte 0x43C20000
 .global $$253149
 $$253149:
-	.incbin "baserom.dol", 0x49A850, 0x4
+	.4byte 0x3F800000
 .global $$253162
 $$253162:
-	.incbin "baserom.dol", 0x49A854, 0x4
+	.4byte 0
 .global $$253166
 $$253166:
-	.incbin "baserom.dol", 0x49A858, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$253172
 $$253172:
-	.incbin "baserom.dol", 0x49A860, 0x8
+	.4byte 0x3FDD89D9
+	.4byte 0

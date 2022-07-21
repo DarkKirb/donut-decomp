@@ -617,45 +617,57 @@ __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challeng
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x4914A0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F1070
+	.4byte 0x803F1050
 .global __vt__Q53scn4step6weapon19challengemastershot10StateReady
 __vt__Q53scn4step6weapon19challengemastershot10StateReady:
-	.incbin "baserom.dol", 0x4914B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F106C
+	.4byte 0x803F08D8
+	.4byte 0x803F0AC4
+	.4byte 0x803D895C
+	.4byte 0x803F0DD8
+	.4byte 0x803D8964
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257357
 $$257357:
-	.incbin "baserom.dol", 0x49ECC0, 0x4
+	.4byte 0
 .global $$257431
 $$257431:
-	.incbin "baserom.dol", 0x49ECC4, 0x4
+	.4byte 0x3F800000
 .global $$257432
 $$257432:
-	.incbin "baserom.dol", 0x49ECC8, 0x4
+	.4byte 0x3DCCCCCD
 .global $$257433
 $$257433:
-	.incbin "baserom.dol", 0x49ECCC, 0x4
+	.4byte 0x43340000
 .global $$257434
 $$257434:
-	.incbin "baserom.dol", 0x49ECD0, 0x4
+	.4byte 0xBDCCCCCD
 .global $$257435
 $$257435:
-	.incbin "baserom.dol", 0x49ECD4, 0x4
+	.4byte 0x43B40000
 .global $$257436
 $$257436:
-	.incbin "baserom.dol", 0x49ECD8, 0x4
+	.4byte 0x4222F983
 .global $$257437
 $$257437:
-	.incbin "baserom.dol", 0x49ECDC, 0x4
+	.4byte 0x3C8EFA35
 .global $$257438
 $$257438:
-	.incbin "baserom.dol", 0x49ECE0, 0x4
+	.4byte 0x42B40000
 .global $$257439
 $$257439:
-	.incbin "baserom.dol", 0x49ECE4, 0x4
+	.4byte 0x3F000000
 .global $$257442
 $$257442:
-	.incbin "baserom.dol", 0x49ECE8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$257479
 $$257479:
-	.incbin "baserom.dol", 0x49ECF0, 0x8
+	.4byte 0x40400000
+	.4byte 0

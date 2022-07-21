@@ -184,24 +184,35 @@ init__Q34info6common10ButtonHelpFRCQ23lyt12PaneAccessor:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252014
 $$252014:
-	.incbin "baserom.dol", 0x4534C8, 0xC
+	.asciz "common/Main"
 .global $$252015
 $$252015:
-	.incbin "baserom.dol", 0x4534D4, 0x10
+	.asciz "CommonButton"
+	.balign 4
 .global $$252016
 $$252016:
-	.incbin "baserom.dol", 0x4534E4, 0xC
+	.asciz "WiiButtonN"
+	.balign 4
 .global $$252073
 $$252073:
-	.incbin "baserom.dol", 0x4534F0, 0x40
+	.asciz "CommonText"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252060
 $$252060:
-	.incbin "baserom.dol", 0x4933B8, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$252080
 $$252080:
-	.incbin "baserom.dol", 0x4933C0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252081
 $$252081:
-	.incbin "baserom.dol", 0x4933C8, 0x8
+	.asciz "Back"
+	.balign 4

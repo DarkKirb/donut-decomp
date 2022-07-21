@@ -245,15 +245,20 @@ lbl_8017B500:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251961
 $$251961:
-	.incbin "baserom.dol", 0x44F120, 0x1C
+	.asciz "lyt/resident/Main.arc.cmp"
+	.balign 4
 .global $$252401
 $$252401:
-	.incbin "baserom.dol", 0x44F13C, 0x18
+	.asciz "ResidentFileLoadThread"
+	.balign 4
 .global $$252478
 $$252478:
-	.incbin "baserom.dol", 0x44F154, 0x14
+	.asciz "Resident.msbt"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_FILE_TABLE__Q23app26$$2unnamed$$2ResidentFile_cpp$$2
 T_FILE_TABLE__Q23app26$$2unnamed$$2ResidentFile_cpp$$2:
-	.incbin "baserom.dol", 0x49A128, 0x8
+	.4byte 0x80453020
+	.4byte 0

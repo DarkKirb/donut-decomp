@@ -220,4 +220,11 @@ procFixPos__Q53scn4step5enemy5rocky14StateCliffJumpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5rocky14StateCliffJump
 __vt__Q53scn4step5enemy5rocky14StateCliffJump:
-	.incbin "baserom.dol", 0x476F18, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D4050  ;# ptr
+	.4byte 0x802D4054  ;# ptr
+	.4byte 0x802D41D0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802D4250  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

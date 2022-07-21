@@ -695,10 +695,12 @@ GXResetOverflowCount:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21961
 $$21961:
-	.incbin "baserom.dol", 0x42CB40, 0x18
+	.asciz "CPUFifo: %08X - %08X\n"
+	.balign 4
 .global $$21962
 $$21962:
-	.incbin "baserom.dol", 0x42CB58, 0x18
+	.asciz "GP Fifo: %08X - %08X\n"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global GPFifo

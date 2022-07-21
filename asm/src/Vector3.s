@@ -611,33 +611,33 @@ __sinit_$$3Vector3_cpp:
 /* 8019FD48 0019BB88  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402424, 0x4
+	.4byte 0x8019FCBC  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251176
 $$251176:
-	.incbin "baserom.dol", 0x49A3C0, 0x4
+	.4byte 0
 .global $$251220
 $$251220:
-	.incbin "baserom.dol", 0x49A3C4, 0x4
+	.4byte 0x3F800000
 .global $$251221
 $$251221:
-	.incbin "baserom.dol", 0x49A3C8, 0x4
+	.4byte 0xBF800000
 .global $$251266
 $$251266:
-	.incbin "baserom.dol", 0x49A3CC, 0x4
+	.4byte 0x4222F983
 .global $$251306
 $$251306:
-	.incbin "baserom.dol", 0x49A3D0, 0x4
+	.4byte 0x3727C5AC
 .global $$251307
 $$251307:
-	.incbin "baserom.dol", 0x49A3D4, 0x4
+	.4byte 0x3F000000
 .global $$251308
 $$251308:
-	.incbin "baserom.dol", 0x49A3D8, 0x4
+	.4byte 0x3FC90FDB
 .global $$251309
 $$251309:
-	.incbin "baserom.dol", 0x49A3DC, 0x4
+	.4byte 0x40000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global ZERO__Q33hel4math7Vector3

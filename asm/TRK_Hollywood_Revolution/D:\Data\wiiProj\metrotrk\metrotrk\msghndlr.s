@@ -1109,13 +1109,29 @@ lbl_80018694:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2781
 $$2781:
-	.incbin "baserom.dol", 0x41DE28, 0x1C
+	.4byte 0x80017AE4  ;# ptr
+	.4byte 0x80017B04  ;# ptr
+	.4byte 0x80017ADC  ;# ptr
+	.4byte 0x80017B04  ;# ptr
+	.4byte 0x80017AEC  ;# ptr
+	.4byte 0x80017AF4  ;# ptr
+	.4byte 0x80017AFC  ;# ptr
 .global $$2826
 $$2826:
-	.incbin "baserom.dol", 0x41DE44, 0x1C
+	.4byte 0x80017CF4  ;# ptr
+	.4byte 0x80017D14  ;# ptr
+	.4byte 0x80017CEC  ;# ptr
+	.4byte 0x80017D14  ;# ptr
+	.4byte 0x80017CFC  ;# ptr
+	.4byte 0x80017D04  ;# ptr
+	.4byte 0x80017D0C  ;# ptr
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DE60, 0x30
+	.asciz "\nMetroTRK Option : SerialIO - "
+	.byte 0x45
+	.asciz "nable\n"
+	.byte 0x44
+	.asciz "isable\n"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global g_CurrentSequence

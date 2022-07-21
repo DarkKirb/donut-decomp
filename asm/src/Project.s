@@ -100,4 +100,5 @@ listItemName__Q23msg7ProjectCFUsUsUsUs:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249096
 $$249096:
-	.incbin "baserom.dol", 0x4593A8, 0x10
+	.asciz "msg/%s.msbp"
+	.4byte 0

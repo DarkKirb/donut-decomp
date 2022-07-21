@@ -2241,95 +2241,202 @@ lbl_801C86FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251070
 $$251070:
-	.incbin "baserom.dol", 0x457F98, 0xC
+	.asciz "Regset.cpp"
+	.balign 4
 .global $$251071
 $$251071:
-	.incbin "baserom.dol", 0x457FA4, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$251100
 $$251100:
-	.incbin "baserom.dol", 0x457FB8, 0x40
+	.4byte 0x5B657272
+	.4byte 0x6F725D20
+	.4byte 0x73722564
+	.4byte 0x203D2025
+	.4byte 0x64202F20
+	.4byte 0x2564203A
+	.4byte 0x20444956
+	.4byte 0x49333296
+	.4byte 0xBD97DF82
+	.4byte 0xC982C481
+	.4byte 0x41308F9C
+	.4byte 0x8E5A82AA
+	.4byte 0x8EC08D73
+	.4byte 0x82B382EA
+	.4byte 0x82DC82B5
+	.4byte 0x82BD0A00
 .global $$251120
 $$251120:
-	.incbin "baserom.dol", 0x457FF8, 0x40
+	.4byte 0x5B657272
+	.4byte 0x6F725D20
+	.4byte 0x73722564
+	.4byte 0x203D2025
+	.4byte 0x66202F20
+	.4byte 0x2566203A
+	.4byte 0x20444956
+	.4byte 0x46333296
+	.4byte 0xBD97DF82
+	.4byte 0xC982C481
+	.4byte 0x41308F9C
+	.4byte 0x8E5A82AA
+	.4byte 0x8EC08D73
+	.4byte 0x82B382EA
+	.4byte 0x82DC82B5
+	.4byte 0x82BD0A00
 .global $$251201
 $$251201:
-	.incbin "baserom.dol", 0x458038, 0x44
+	.4byte 0x5B657272
+	.4byte 0x6F725D20
+	.4byte 0x7969656C
+	.4byte 0x64282564
+	.4byte 0x29203A20
+	.4byte 0x7969656C
+	.4byte 0x6496BD97
+	.4byte 0xDF82C993
+	.4byte 0x6E82B792
+	.4byte 0x6C82CD30
+	.4byte 0x88C88FE3
+	.4byte 0x82C596B3
+	.4byte 0x82AF82EA
+	.4byte 0x82CE82C8
+	.4byte 0x82E882DC
+	.4byte 0x82B982F1
+	.4byte 0x0A000000
 .global $$251224
 $$251224:
-	.incbin "baserom.dol", 0x45807C, 0x48
+	.4byte 0x5B657272
+	.4byte 0x6F725D20
+	.4byte 0x41727261
+	.4byte 0x792E6C65
+	.4byte 0x6E677468
+	.4byte 0x203D3D20
+	.4byte 0x2564203A
+	.4byte 0x20947A97
+	.4byte 0xF182C993
+	.4byte 0x6E82B382
+	.4byte 0xEA82BD83
+	.4byte 0x54834383
+	.4byte 0x5982AA90
+	.4byte 0xB382B582
+	.4byte 0xAD82A082
+	.4byte 0xE882DC82
+	.4byte 0xB982F10A
+	.4byte 0
 .global $$251229
 $$251229:
-	.incbin "baserom.dol", 0x4580C4, 0x54
+	.4byte 0x5B657272
+	.4byte 0x6F725D20
+	.4byte 0x947A97F1
+	.4byte 0x82CC8BAB
+	.4byte 0x8A458A4F
+	.4byte 0x82C582B7
+	.asciz " -> a[%d] (a.length=%d)\n                             ^^^\n"
+	.balign 4
 .global $$251251
 $$251251:
-	.incbin "baserom.dol", 0x458118, 0x10
+	.asciz "=== Regset ===\n"
 .global $$251252
 $$251252:
-	.incbin "baserom.dol", 0x458128, 0xC
+	.asciz "-- main --\n"
 .global $$251253
 $$251253:
-	.incbin "baserom.dol", 0x458134, 0x14
+	.asciz "pc         = %p\n"
+	.balign 4
 .global $$251254
 $$251254:
-	.incbin "baserom.dol", 0x458148, 0x14
+	.asciz "lr         = %p\n"
+	.balign 4
 .global $$251255
 $$251255:
-	.incbin "baserom.dol", 0x45815C, 0x18
+	.asciz "stack_head = %p(%d)\n"
+	.balign 4
 .global $$251256
 $$251256:
-	.incbin "baserom.dol", 0x458174, 0x14
+	.asciz "srp        = %u\n"
+	.balign 4
 .global $$251257
 $$251257:
-	.incbin "baserom.dol", 0x458188, 0x14
+	.asciz "sp         = %u\n"
+	.balign 4
 .global $$251258
 $$251258:
-	.incbin "baserom.dol", 0x45819C, 0x10
+	.asciz "-- stack --\n"
+	.balign 4
 .global $$251263
 $$251263:
-	.incbin "baserom.dol", 0x4581AC, 0xC
+	.asciz "-- fr --\n"
+	.balign 4
 .global $$251264
 $$251264:
-	.incbin "baserom.dol", 0x4581B8, 0xC
+	.asciz "%08x(%2d) "
+	.balign 4
 .global __vt__Q26mintvm6Regset
 __vt__Q26mintvm6Regset:
-	.incbin "baserom.dol", 0x4581C4, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801C0838  ;# ptr
 .global __vt__Q26mintvm8RNObject
 __vt__Q26mintvm8RNObject:
-	.incbin "baserom.dol", 0x4581D0, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801C0928  ;# ptr
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
 .global $$2STRING$$2spInc__Q26mintvm6RegsetFUi$$20
 $$2STRING$$2spInc__Q26mintvm6RegsetFUi$$20:
-	.incbin "baserom.dol", 0x45822C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2spInc__Q26mintvm6RegsetFUi
 $$2STRING$$2spInc__Q26mintvm6RegsetFUi:
-	.incbin "baserom.dol", 0x458240, 0xC
+	.asciz "Regset.hpp"
+	.balign 4
 .global $$2STRING$$2spDec__Q26mintvm6RegsetFUi$$20
 $$2STRING$$2spDec__Q26mintvm6RegsetFUi$$20:
-	.incbin "baserom.dol", 0x45824C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2spDec__Q26mintvm6RegsetFUi
 $$2STRING$$2spDec__Q26mintvm6RegsetFUi:
-	.incbin "baserom.dol", 0x458260, 0x38
+	.asciz "Regset.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251259
 $$251259:
-	.incbin "baserom.dol", 0x493938, 0x8
+	.asciz "%3d : "
+	.balign 4
 .global $$251260
 $$251260:
-	.incbin "baserom.dol", 0x493940, 0x8
+	.asciz "%08x"
+	.balign 4
 .global $$251261
 $$251261:
-	.incbin "baserom.dol", 0x493948, 0x8
+	.asciz "(%2d) "
+	.balign 4
 .global $$251262
 $$251262:
-	.incbin "baserom.dol", 0x493950, 0x8
+	.4byte 0x0A000000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251099
 $$251099:
-	.incbin "baserom.dol", 0x49A728, 0x8
+	.4byte 0
+	.4byte 0
 .global $$251103
 $$251103:
-	.incbin "baserom.dol", 0x49A730, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$251123
 $$251123:
-	.incbin "baserom.dol", 0x49A738, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -474,36 +474,45 @@ procFixPos__Q53scn4step4boss6dubior16StateMoveThunderFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior16StateMoveThunder
 __vt__Q53scn4step4boss6dubior16StateMoveThunder:
-	.incbin "baserom.dol", 0x463910, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024F440  ;# ptr
+	.4byte 0x8024F4BC  ;# ptr
+	.4byte 0x8024F834  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024F978  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257085
 $$257085:
-	.incbin "baserom.dol", 0x49B2F0, 0x4
+	.4byte 0x3F800000
 .global $$257086
 $$257086:
-	.incbin "baserom.dol", 0x49B2F4, 0x4
+	.4byte 0xBF800000
 .global $$257087
 $$257087:
-	.incbin "baserom.dol", 0x49B2F8, 0x4
+	.4byte 0
 .global $$257159
 $$257159:
-	.incbin "baserom.dol", 0x49B2FC, 0x4
+	.4byte 0x3FC00000
 .global $$257160
 $$257160:
-	.incbin "baserom.dol", 0x49B300, 0x4
+	.4byte 0x3F000000
 .global $$257161
 $$257161:
-	.incbin "baserom.dol", 0x49B304, 0x4
+	.4byte 0x4222F983
 .global $$257162
 $$257162:
-	.incbin "baserom.dol", 0x49B308, 0x4
+	.4byte 0x3C8EFA35
 .global $$257163
 $$257163:
-	.incbin "baserom.dol", 0x49B30C, 0x4
+	.4byte 0x43B40000
 .global $$257164
 $$257164:
-	.incbin "baserom.dol", 0x49B310, 0x8
+	.4byte 0x42B40000
+	.4byte 0
 .global $$257167
 $$257167:
-	.incbin "baserom.dol", 0x49B318, 0x8
+	.4byte 0x43300000
+	.4byte 0

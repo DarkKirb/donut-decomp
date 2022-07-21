@@ -85,4 +85,13 @@ procFixPos__Q53scn4step4hero5sword20StateSwordRaisingEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5sword20StateSwordRaisingEnd
 __vt__Q53scn4step4hero5sword20StateSwordRaisingEnd:
-	.incbin "baserom.dol", 0x489250, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80388C58
+	.4byte 0x80388C5C
+	.4byte 0x80388CF4
+	.4byte 0x8035550C
+	.4byte 0x80388CF8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

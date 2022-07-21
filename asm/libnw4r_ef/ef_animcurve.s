@@ -5670,42 +5670,171 @@ lbl_800ABDDC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global gCountStandBit__Q24nw4r2ef
 gCountStandBit__Q24nw4r2ef:
-	.incbin "baserom.dol", 0x43C208, 0x100
+	.4byte 0x00010102
+	.4byte 0x01020203
+	.4byte 0x01020203
+	.4byte 0x02030304
+	.4byte 0x01020203
+	.4byte 0x02030304
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x01020203
+	.4byte 0x02030304
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x01020203
+	.4byte 0x02030304
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x04050506
+	.4byte 0x05060607
+	.4byte 0x01020203
+	.4byte 0x02030304
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x04050506
+	.4byte 0x05060607
+	.4byte 0x02030304
+	.4byte 0x03040405
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x04050506
+	.4byte 0x05060607
+	.4byte 0x03040405
+	.4byte 0x04050506
+	.4byte 0x04050506
+	.4byte 0x05060607
+	.4byte 0x04050506
+	.4byte 0x05060607
+	.4byte 0x05060607
+	.4byte 0x06070708
 .global gMSB__Q24nw4r2ef
 gMSB__Q24nw4r2ef:
-	.incbin "baserom.dol", 0x43C308, 0x100
+	.4byte 0x00010202
+	.4byte 0x04040404
+	.4byte 0x08080808
+	.4byte 0x08080808
+	.4byte 0x10101010
+	.4byte 0x10101010
+	.4byte 0x10101010
+	.4byte 0x10101010
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x40404040
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
+	.4byte 0x80808080
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211024
 $$211024:
-	.incbin "baserom.dol", 0x4994F8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$211031
 $$211031:
-	.incbin "baserom.dol", 0x499500, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$211032
 $$211032:
-	.incbin "baserom.dol", 0x499508, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$211089
 $$211089:
-	.incbin "baserom.dol", 0x499510, 0x4
+	.4byte 0x3F800000
 .global $$211364
 $$211364:
-	.incbin "baserom.dol", 0x499514, 0x4
+	.4byte 0x34000000
 .global $$211365
 $$211365:
-	.incbin "baserom.dol", 0x499518, 0x4
+	.4byte 0x47800000
 .global $$211366
 $$211366:
-	.incbin "baserom.dol", 0x49951C, 0x4
+	.4byte 0x40400000
 .global $$211367
 $$211367:
-	.incbin "baserom.dol", 0x499520, 0x4
+	.4byte 0x40000000
 .global $$211368
 $$211368:
-	.incbin "baserom.dol", 0x499524, 0x4
+	.4byte 0x3FC00000
 .global $$211369
 $$211369:
-	.incbin "baserom.dol", 0x499528, 0x4
+	.4byte 0xC0000000
 .global $$211370
 $$211370:
-	.incbin "baserom.dol", 0x49952C, 0x4
+	.4byte 0x437F0000

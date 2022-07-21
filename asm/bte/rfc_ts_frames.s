@@ -1591,45 +1591,58 @@ lbl_8009BF90:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21168
 $$21168:
-	.incbin "baserom.dol", 0x43B8E8, 0x10
+	.asciz "Bad Length1: %d"
 .global $$21169
 $$21169:
-	.incbin "baserom.dol", 0x43B8F8, 0x14
+	.asciz "Bad Length2 %d %d"
+	.balign 4
 .global $$21170
 $$21170:
-	.incbin "baserom.dol", 0x43B90C, 0xC
+	.asciz "Bad SABME"
+	.balign 4
 .global $$21173
 $$21173:
-	.incbin "baserom.dol", 0x43B918, 0xC
+	.asciz "Bad DISC"
+	.balign 4
 .global $$21174
 $$21174:
-	.incbin "baserom.dol", 0x43B924, 0x18
+	.asciz "Bad UIH - invalid DLCI"
+	.balign 4
 .global $$21175
 $$21175:
-	.incbin "baserom.dol", 0x43B93C, 0x10
+	.asciz "Bad UIH - FCS"
+	.balign 4
 .global $$21176
 $$21176:
-	.incbin "baserom.dol", 0x43B94C, 0x14
+	.asciz "Bad UIH - response"
+	.balign 4
 .global $$21233
 $$21233:
-	.incbin "baserom.dol", 0x43B960, 0x20
+	.asciz "Illegal MX Frame ea:%d len:%d"
+	.balign 4
 .global $$21234
 $$21234:
-	.incbin "baserom.dol", 0x43B980, 0x10
+	.asciz "Bad MX frame"
+	.balign 4
 .global $$21235
 $$21235:
-	.incbin "baserom.dol", 0x43B990, 0x10
+	.asciz "Bad PN frame"
+	.balign 4
 .global $$21236
 $$21236:
-	.incbin "baserom.dol", 0x43B9A0, 0x10
+	.asciz "Bad MSC frame"
+	.balign 4
 .global $$21237
 $$21237:
-	.incbin "baserom.dol", 0x43B9B0, 0x10
+	.asciz "Bad RPN frame"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21171
 $$21171:
-	.incbin "baserom.dol", 0x492D10, 0x8
+	.asciz "Bad UA"
+	.balign 4
 .global $$21172
 $$21172:
-	.incbin "baserom.dol", 0x492D18, 0x8
+	.asciz "Bad DM"
+	.balign 4

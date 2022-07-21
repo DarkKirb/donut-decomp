@@ -289,15 +289,18 @@ lbl_803BD324:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252146
 $$252146:
-	.incbin "baserom.dol", 0x48D590, 0x10
+	.asciz "ButtonCursor"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252181
 $$252181:
-	.incbin "baserom.dol", 0x497F38, 0x8
+	.asciz "UnFocus"
 .global $$252190
 $$252190:
-	.incbin "baserom.dol", 0x497F40, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252221
 $$252221:
-	.incbin "baserom.dol", 0x497F48, 0x8
+	.asciz "Decide"
+	.balign 4

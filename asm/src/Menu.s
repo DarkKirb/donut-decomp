@@ -1870,83 +1870,131 @@ lbl_803F7B84:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global t_ModeItemSetList__18$$2unnamed$$2Menu_cpp$$2
 t_ModeItemSetList__18$$2unnamed$$2Menu_cpp$$2:
-	.incbin "baserom.dol", 0x491B58, 0x10
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0
 .global t_VCItemSetList__18$$2unnamed$$2Menu_cpp$$2
 t_VCItemSetList__18$$2unnamed$$2Menu_cpp$$2:
-	.incbin "baserom.dol", 0x491B68, 0x18
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
 .global t_NextItemKindTable__18$$2unnamed$$2Menu_cpp$$2
 t_NextItemKindTable__18$$2unnamed$$2Menu_cpp$$2:
-	.incbin "baserom.dol", 0x491B80, 0x48
+	.4byte 0x00000009
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000009
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000009
+	.4byte 0x00000006
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000005
+	.4byte 0x00000009
 .global $$255667
 $$255667:
-	.incbin "baserom.dol", 0x491BC8, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 .global $$255670
 $$255670:
-	.incbin "baserom.dol", 0x491BD8, 0xC
+	.asciz "CurtainN"
+	.balign 4
 .global $$255671
 $$255671:
-	.incbin "baserom.dol", 0x491BE4, 0x10
+	.asciz "ExplanationN"
+	.balign 4
 .global $$255942
 $$255942:
-	.incbin "baserom.dol", 0x491BF4, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$255943
 $$255943:
-	.incbin "baserom.dol", 0x491C04, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global $$255944
 $$255944:
-	.incbin "baserom.dol", 0x491C14, 0x10
+	.asciz "StaffCredit.dn"
+	.balign 4
 .global $$255945
 $$255945:
-	.incbin "baserom.dol", 0x491C24, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$255946
 $$255946:
-	.incbin "baserom.dol", 0x491C38, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$255947
 $$255947:
-	.incbin "baserom.dol", 0x491C4C, 0x44
+	.asciz "HistoryPackage3.dn"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255668
 $$255668:
-	.incbin "baserom.dol", 0x498978, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$255669
 $$255669:
-	.incbin "baserom.dol", 0x498980, 0x4
+	.4byte 0x42474E00
 .global $$255672
 $$255672:
-	.incbin "baserom.dol", 0x498984, 0x8
+	.asciz "Mode"
+	.balign 4
 .global $$255673
 $$255673:
-	.incbin "baserom.dol", 0x49898C, 0x8
+	.asciz "ModeN"
+	.balign 4
 .global $$255674
 $$255674:
-	.incbin "baserom.dol", 0x498994, 0x4
+	.4byte 0x53697800
 .global $$255675
 $$255675:
-	.incbin "baserom.dol", 0x498998, 0x8
+	.asciz "ButtonN"
 .global $$255676
 $$255676:
-	.incbin "baserom.dol", 0x4989A0, 0x8
+	.asciz "Wipe"
+	.balign 4
 .global $$255677
 $$255677:
-	.incbin "baserom.dol", 0x4989A8, 0x8
+	.asciz "PlayerN"
 .global $$256091
 $$256091:
-	.incbin "baserom.dol", 0x4989B0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$256099
 $$256099:
-	.incbin "baserom.dol", 0x4989B8, 0x8
+	.asciz "MenuBN"
+	.balign 4
 .global $$256100
 $$256100:
-	.incbin "baserom.dol", 0x4989C0, 0x8
+	.asciz "MenuFN"
+	.balign 4
 .global $$256101
 $$256101:
-	.incbin "baserom.dol", 0x4989C8, 0x8
+	.asciz "VCBN"
+	.balign 4
 .global $$256102
 $$256102:
-	.incbin "baserom.dol", 0x4989D0, 0x8
+	.asciz "VCFN"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256090
 $$256090:
-	.incbin "baserom.dol", 0x49ED80, 0x8
+	.4byte 0x41200000
+	.4byte 0

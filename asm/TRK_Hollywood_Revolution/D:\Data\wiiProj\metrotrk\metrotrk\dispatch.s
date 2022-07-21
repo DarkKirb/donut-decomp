@@ -80,4 +80,31 @@ lbl_800159F8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2109
 $$2109:
-	.incbin "baserom.dol", 0x41DBB8, 0x70
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x8001593C  ;# ptr
+	.4byte 0x8001594C  ;# ptr
+	.4byte 0x8001595C  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x8001596C  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x8001597C  ;# ptr
+	.4byte 0x8001598C  ;# ptr
+	.4byte 0x8001599C  ;# ptr
+	.4byte 0x800159AC  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159F8  ;# ptr
+	.4byte 0x800159EC  ;# ptr
+	.4byte 0x800159BC  ;# ptr
+	.4byte 0x800159CC  ;# ptr
+	.4byte 0x800159DC  ;# ptr
+	.4byte 0

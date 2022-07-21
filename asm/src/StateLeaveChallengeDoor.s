@@ -415,9 +415,19 @@ procFixPos__Q53scn4step4hero7gimmick23StateLeaveChallengeDoorFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick23StateLeaveChallengeDoor
 __vt__Q53scn4step4hero7gimmick23StateLeaveChallengeDoor:
-	.incbin "baserom.dol", 0x488C00, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80380418
+	.4byte 0x80380578
+	.4byte 0x803807E8
+	.4byte 0x8035550C
+	.4byte 0x80380830
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260395
 $$260395:
-	.incbin "baserom.dol", 0x49DFA0, 0x8
+	.4byte 0
+	.4byte 0

@@ -1032,28 +1032,37 @@ lbl_802F9258:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DIR_ROTATION__Q53scn4step7gimmick7airflow21$$2unnamed$$2AirFlow_cpp$$2
 DIR_ROTATION__Q53scn4step7gimmick7airflow21$$2unnamed$$2AirFlow_cpp$$2:
-	.incbin "baserom.dol", 0x4157A8, 0x20
+	.4byte 0
+	.4byte 0x439D8000
+	.4byte 0x43870000
+	.4byte 0x43610000
+	.4byte 0x43340000
+	.4byte 0x43070000
+	.4byte 0x42B40000
+	.4byte 0x42340000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253529
 $$253529:
-	.incbin "baserom.dol", 0x47B0F0, 0x18
+	.asciz "step/gimmick/AirFlow"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253684
 $$253684:
-	.incbin "baserom.dol", 0x4968C8, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253530
 $$253530:
-	.incbin "baserom.dol", 0x49D120, 0x4
+	.4byte 0
 .global $$253767
 $$253767:
-	.incbin "baserom.dol", 0x49D124, 0x4
+	.4byte 0x3C8EFA35
 .global $$253783
 $$253783:
-	.incbin "baserom.dol", 0x49D128, 0x4
+	.4byte 0x41800000
 .global $$253784
 $$253784:
-	.incbin "baserom.dol", 0x49D12C, 0x4
+	.4byte 0x43100000

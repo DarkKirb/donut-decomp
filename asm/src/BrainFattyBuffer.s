@@ -81,7 +81,17 @@ __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26S
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferAppearFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7blipper26StateFattyBufferAppearFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FD30, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298C38  ;# ptr
+	.4byte 0x80298C18  ;# ptr
 .global __vt__Q53scn4step5enemy7blipper16BrainFattyBuffer
 __vt__Q53scn4step5enemy7blipper16BrainFattyBuffer:
-	.incbin "baserom.dol", 0x46FD40, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298C34  ;# ptr
+	.4byte 0x80298B90  ;# ptr
+	.4byte 0x80298C14  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

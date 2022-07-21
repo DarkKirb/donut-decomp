@@ -166,4 +166,11 @@ procFixPos__Q53scn4step4boss6dubior12StateThunderFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior12StateThunder
 __vt__Q53scn4step4boss6dubior12StateThunder:
-	.incbin "baserom.dol", 0x4639A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802506D0  ;# ptr
+	.4byte 0x80250750  ;# ptr
+	.4byte 0x80250874  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80250878  ;# ptr
+	.4byte 0x80234504  ;# ptr

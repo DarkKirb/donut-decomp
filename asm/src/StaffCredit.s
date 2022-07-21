@@ -204,45 +204,80 @@ hideNew__Q33scn19challengefileselect11StaffCreditFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252079
 $$252079:
-	.incbin "baserom.dol", 0x45A8A8, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$252082
 $$252082:
-	.incbin "baserom.dol", 0x45A8C4, 0xC
+	.asciz "StaffCredit"
 .global $$252085
 $$252085:
-	.incbin "baserom.dol", 0x45A8D0, 0x10
+	.asciz "StaffCreditNew"
+	.balign 4
 .global $$252124
 $$252124:
-	.incbin "baserom.dol", 0x45A8E0, 0xC
+	.asciz "OpenSmall"
+	.balign 4
 .global __vt__Q33scn19challengefileselect11StaffCredit
 __vt__Q33scn19challengefileselect11StaffCredit:
-	.incbin "baserom.dol", 0x45A8EC, 0x8C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E5938  ;# ptr
+	.4byte 0x801E9324  ;# ptr
+	.4byte 0x801E935C  ;# ptr
+	.4byte 0x801E936C  ;# ptr
+	.4byte 0x801E9378  ;# ptr
+	.4byte 0x801E9384  ;# ptr
+	.4byte 0x801E9390  ;# ptr
+	.4byte 0x801E9394  ;# ptr
+	.4byte 0x801E939C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252080
 $$252080:
-	.incbin "baserom.dol", 0x494018, 0x8
+	.asciz "Ending"
+	.balign 4
 .global $$252081
 $$252081:
-	.incbin "baserom.dol", 0x494020, 0x4
+	.4byte 0x4E657700
 .global $$252083
 $$252083:
-	.incbin "baserom.dol", 0x494024, 0x8
+	.asciz "NewN"
+	.balign 4
 .global $$252084
 $$252084:
-	.incbin "baserom.dol", 0x49402C, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252127
 $$252127:
-	.incbin "baserom.dol", 0x494034, 0xC
+	.asciz "Focus"
+	.balign 4
+	.4byte 0
 .global $$252130
 $$252130:
-	.incbin "baserom.dol", 0x494040, 0x8
+	.asciz "UnFocus"
 .global $$252133
 $$252133:
-	.incbin "baserom.dol", 0x494048, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$252139
 $$252139:
-	.incbin "baserom.dol", 0x494050, 0x8
+	.asciz "CursorN"
 .global $$252143
 $$252143:
-	.incbin "baserom.dol", 0x494058, 0x8
+	.asciz "OpenBig"

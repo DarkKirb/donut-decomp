@@ -223,18 +223,27 @@ reqQuivery__Q53scn4step4boss13watergalboros12StateQuiveryFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss13watergalboros12StateQuivery
 __vt__Q53scn4step4boss13watergalboros12StateQuivery:
-	.incbin "baserom.dol", 0x465BC0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025A8AC  ;# ptr
+	.4byte 0x8025A8B0  ;# ptr
+	.4byte 0x8025AA00  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025AA04  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256461
 $$256461:
-	.incbin "baserom.dol", 0x49B4E0, 0x4
+	.4byte 0
 .global $$256462
 $$256462:
-	.incbin "baserom.dol", 0x49B4E4, 0x4
+	.4byte 0x42B40000
 .global $$256480
 $$256480:
-	.incbin "baserom.dol", 0x49B4E8, 0x8
+	.4byte 0x43B40000
+	.4byte 0
 .global $$256483
 $$256483:
-	.incbin "baserom.dol", 0x49B4F0, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -482,21 +482,59 @@ reserveWithTevRegID__Q23g3d19ColorAnimTevManagerF11_GXTevRegID:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249444
 $$249444:
-	.incbin "baserom.dol", 0x450490, 0x50
+	.4byte 0x8018E22C  ;# ptr
+	.4byte 0x8018E244  ;# ptr
+	.4byte 0x8018E25C  ;# ptr
+	.4byte 0x8018E274  ;# ptr
+	.4byte 0x8018E22C  ;# ptr
+	.4byte 0x8018E244  ;# ptr
+	.4byte 0x8018E25C  ;# ptr
+	.4byte 0x8018E274  ;# ptr
+	.4byte 0x8018E22C  ;# ptr
+	.4byte 0x8018E244  ;# ptr
+	.4byte 0x8018E25C  ;# ptr
+	.4byte 0x8018E274  ;# ptr
+	.4byte 0x8018E22C  ;# ptr
+	.4byte 0x8018E244  ;# ptr
+	.4byte 0x8018E25C  ;# ptr
+	.4byte 0x8018E274  ;# ptr
+	.4byte 0x8018E22C  ;# ptr
+	.4byte 0x8018E244  ;# ptr
+	.4byte 0x8018E25C  ;# ptr
+	.4byte 0x8018E274  ;# ptr
 .global $$249473
 $$249473:
-	.incbin "baserom.dol", 0x4504E0, 0x40
+	.4byte 0x8018E3A8  ;# ptr
+	.4byte 0x8018E3C0  ;# ptr
+	.4byte 0x8018E3D8  ;# ptr
+	.4byte 0x8018E3F0  ;# ptr
+	.4byte 0x8018E3A8  ;# ptr
+	.4byte 0x8018E3C0  ;# ptr
+	.4byte 0x8018E3D8  ;# ptr
+	.4byte 0x8018E3F0  ;# ptr
+	.4byte 0x8018E3A8  ;# ptr
+	.4byte 0x8018E3C0  ;# ptr
+	.4byte 0x8018E3D8  ;# ptr
+	.4byte 0x8018E3F0  ;# ptr
+	.4byte 0x8018E3A8  ;# ptr
+	.4byte 0x8018E3C0  ;# ptr
+	.4byte 0x8018E3D8  ;# ptr
+	.4byte 0x8018E3F0  ;# ptr
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv$$20:
-	.incbin "baserom.dol", 0x450520, 0x20
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv
 $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv:
-	.incbin "baserom.dol", 0x450540, 0x10
+	.asciz "g3d_restev_ac.h"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d6ResTevFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d6ResTevFv:
-	.incbin "baserom.dol", 0x493160, 0x8
+	.asciz "ResTev"
+	.balign 4
 .global __FUNCTION__$31740
 __FUNCTION__$31740:
-	.incbin "baserom.dol", 0x493168, 0x8
+	.4byte 0x72656600
+	.4byte 0

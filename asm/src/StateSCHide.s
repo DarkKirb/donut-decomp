@@ -107,4 +107,11 @@ procFixPos__Q53scn4step4boss15challengemaster11StateSCHideFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss15challengemaster11StateSCHide
 __vt__Q53scn4step4boss15challengemaster11StateSCHide:
-	.incbin "baserom.dol", 0x461FF8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024237C  ;# ptr
+	.4byte 0x8024240C  ;# ptr
+	.4byte 0x80242434  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80242438  ;# ptr
+	.4byte 0x80234504  ;# ptr

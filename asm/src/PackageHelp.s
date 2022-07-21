@@ -228,30 +228,38 @@ lbl_8020E328:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252155
 $$252155:
-	.incbin "baserom.dol", 0x45D5E0, 0x10
+	.asciz "history/Main"
+	.balign 4
 .global $$252156
 $$252156:
-	.incbin "baserom.dol", 0x45D5F0, 0x10
+	.asciz "IconAnim"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252157
 $$252157:
-	.incbin "baserom.dol", 0x494A10, 0x8
+	.asciz "Icon"
+	.balign 4
 .global $$252158
 $$252158:
-	.incbin "baserom.dol", 0x494A18, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$252200
 $$252200:
-	.incbin "baserom.dol", 0x494A20, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252201
 $$252201:
-	.incbin "baserom.dol", 0x494A28, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252210
 $$252210:
-	.incbin "baserom.dol", 0x494A30, 0x8
+	.asciz "MovieN"
+	.balign 4
 .global $$252211
 $$252211:
-	.incbin "baserom.dol", 0x494A38, 0x4
+	.4byte 0x56434E00
 .global $$252220
 $$252220:
-	.incbin "baserom.dol", 0x494A3C, 0x4
+	.4byte 0x456E6400

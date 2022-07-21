@@ -5831,26 +5831,29 @@ lbl_80147E8C:
 /* 80147EAC 00143CEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023D8, 0x4
+	.4byte 0x80147E00  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$27999
 $$27999:
-	.incbin "baserom.dol", 0x40A3D8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$28011
 $$28011:
-	.incbin "baserom.dol", 0x40A3E0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$29160
 $$29160:
-	.incbin "baserom.dol", 0x40A3E8, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0c$$1
 mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0c$$1:
-	.incbin "baserom.dol", 0x4417C0, 0x4
+	.4byte 0x00000100
 .global mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0w$$1
 mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0w$$1:
-	.incbin "baserom.dol", 0x4417C4, 0x4
+	.4byte 0x00000100
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$25889

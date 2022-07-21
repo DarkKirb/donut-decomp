@@ -121,7 +121,7 @@ with open(sys.argv[1], 'rt') as f:
         m = re.match(r'\s*\.section\s+([\._A-Za-z0-9]+)', line)
         if m:
             currSection = m.groups()[0]
-        elif currSection in ['.rodata', '.data', '.sdata', '..ctors', '.ctors', '.dtors', 'extab_', 'extabindex_']:
+        elif currSection in ['.rodata', '.data', '.sdata', '..ctors', '.ctors', '.dtors', 'extab', 'extabindex', '.sdata2']:
             # Incbin directive
             m = re.match(r'\s*\.incbin\s+"baserom.dol"\s*,\s*([^,]+),\s*([^,]+)', line)
             if m:
@@ -131,4 +131,4 @@ with open(sys.argv[1], 'rt') as f:
                 data = read_baserom(start, size)
                 print(convert_data(data, start).rstrip())
                 continue
-#        print(line)
+        print(line)

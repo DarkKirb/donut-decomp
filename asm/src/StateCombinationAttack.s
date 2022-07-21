@@ -1043,27 +1043,41 @@ __dt__Q24util113StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interferen
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util113StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference22StateCombinationAttack$$4PQ43scn4step4hero4Hero$$4Ul$$1
 __vt__Q24util113StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference22StateCombinationAttack$$4PQ43scn4step4hero4Hero$$4Ul$$1:
-	.incbin "baserom.dol", 0x488538, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80370E38
+	.4byte 0x80370E18
 .global __vt__Q53scn4step4hero12interference22StateCombinationAttack
 __vt__Q53scn4step4hero12interference22StateCombinationAttack:
-	.incbin "baserom.dol", 0x488548, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803700C8
+	.4byte 0x80370144
+	.4byte 0x803701B4
+	.4byte 0x8035550C
+	.4byte 0x803701B8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258437
 $$258437:
-	.incbin "baserom.dol", 0x49DCF0, 0x4
+	.4byte 0x3F800000
 .global $$258438
 $$258438:
-	.incbin "baserom.dol", 0x49DCF4, 0x4
+	.4byte 0
 .global $$258458
 $$258458:
-	.incbin "baserom.dol", 0x49DCF8, 0x4
+	.4byte 0xBF800000
 .global $$258529
 $$258529:
-	.incbin "baserom.dol", 0x49DCFC, 0x4
+	.4byte 0x3F490FDB
 .global $$258532
 $$258532:
-	.incbin "baserom.dol", 0x49DD00, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$258548
 $$258548:
-	.incbin "baserom.dol", 0x49DD08, 0x8
+	.4byte 0x40000000
+	.4byte 0

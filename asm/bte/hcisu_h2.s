@@ -492,23 +492,33 @@ hcisu_h2_handle_event:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hcisu_h2
 hcisu_h2:
-	.incbin "baserom.dol", 0x403EE8, 0x18
+	.4byte 0x800769E0  ;# ptr
+	.4byte 0x80076A10  ;# ptr
+	.4byte 0x80076A80  ;# ptr
+	.4byte 0x80076AC0  ;# ptr
+	.4byte 0x80076AF0  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2530
 $$2530:
-	.incbin "baserom.dol", 0x436AB0, 0x3C
+	.asciz "HCIS: Unable to allocate buffer for incoming HCI message."
+	.balign 4
 .global $$2531
 $$2531:
-	.incbin "baserom.dol", 0x436AEC, 0x34
+	.asciz "HCIS: Invalid length for incoming HCI message."
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global hcisu_preamble_table
 hcisu_preamble_table:
-	.incbin "baserom.dol", 0x499448, 0x8
+	.4byte 0x03040302
+	.4byte 0
 .global hcisu_msg_evt_table
 hcisu_msg_evt_table:
-	.incbin "baserom.dol", 0x499450, 0x8
+	.4byte 0x13001100
+	.4byte 0x12001000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global hcisu_h2_cb

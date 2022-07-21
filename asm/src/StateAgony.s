@@ -328,42 +328,51 @@ __dt__Q53scn4step5enemy6flamer10StateAgonyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6flamer10StateAgony
 __vt__Q53scn4step5enemy6flamer10StateAgony:
-	.incbin "baserom.dol", 0x472D50, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B2878  ;# ptr
+	.4byte 0x802B2484  ;# ptr
+	.4byte 0x802B27E8  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257328
 $$257328:
-	.incbin "baserom.dol", 0x49C3D0, 0x4
+	.4byte 0
 .global $$257329
 $$257329:
-	.incbin "baserom.dol", 0x49C3D4, 0x4
+	.4byte 0x4222F983
 .global $$257330
 $$257330:
-	.incbin "baserom.dol", 0x49C3D8, 0x4
+	.4byte 0x42C80000
 .global $$257331
 $$257331:
-	.incbin "baserom.dol", 0x49C3DC, 0x4
+	.4byte 0x3F000000
 .global $$257332
 $$257332:
-	.incbin "baserom.dol", 0x49C3E0, 0x4
+	.4byte 0x3E19999A
 .global $$257333
 $$257333:
-	.incbin "baserom.dol", 0x49C3E4, 0x4
+	.4byte 0x42B40000
 .global $$257334
 $$257334:
-	.incbin "baserom.dol", 0x49C3E8, 0x4
+	.4byte 0x3C8EFA35
 .global $$257335
 $$257335:
-	.incbin "baserom.dol", 0x49C3EC, 0x4
+	.4byte 0x3F800000
 .global $$257336
 $$257336:
-	.incbin "baserom.dol", 0x49C3F0, 0x4
+	.4byte 0x437F0000
 .global $$257337
 $$257337:
-	.incbin "baserom.dol", 0x49C3F4, 0x4
+	.4byte 0x43340000
 .global $$257341
 $$257341:
-	.incbin "baserom.dol", 0x49C3F8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$257342
 $$257342:
-	.incbin "baserom.dol", 0x49C400, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

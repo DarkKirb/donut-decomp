@@ -2548,26 +2548,77 @@ __sinit_$$3lyt_window_cpp:
 /* 800F904C 000F4E8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40238C, 0x4
+	.4byte 0x800F9040  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GetTexutreFlipInfo__Q34nw4r3lyt24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos
 $$2LOCAL$$2GetTexutreFlipInfo__Q34nw4r3lyt24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos:
-	.incbin "baserom.dol", 0x43D4A8, 0x3C
+	.4byte 0x00000100
+	.4byte 0x00010101
+	.4byte 0x00010100
+	.4byte 0x00000101
+	.4byte 0x00010001
+	.4byte 0x00010101
+	.4byte 0x00000100
+	.4byte 0x00010001
+	.4byte 0x00000101
+	.4byte 0x01000100
+	.4byte 0x01010001
+	.4byte 0x01000000
+	.4byte 0x00010100
+	.4byte 0x01010000
+	.4byte 0x00010100
 .global __vt__Q34nw4r3lyt6Window
 __vt__Q34nw4r3lyt6Window:
-	.incbin "baserom.dol", 0x43D4E4, 0x8C
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F6D40  ;# ptr
+	.4byte 0x800F9030  ;# ptr
+	.4byte 0x800F30D0  ;# ptr
+	.4byte 0x800F33D0  ;# ptr
+	.4byte 0x800F7020  ;# ptr
+	.4byte 0x800F3470  ;# ptr
+	.4byte 0x800F7200  ;# ptr
+	.4byte 0x800F6F90  ;# ptr
+	.4byte 0x800F6FB0  ;# ptr
+	.4byte 0x800F2EC0  ;# ptr
+	.4byte 0x800F2EF0  ;# ptr
+	.4byte 0x800F6FE0  ;# ptr
+	.4byte 0x800F7000  ;# ptr
+	.4byte 0x800F2F40  ;# ptr
+	.4byte 0x800F6E90  ;# ptr
+	.4byte 0x800F35C0  ;# ptr
+	.4byte 0x800F35E0  ;# ptr
+	.4byte 0x800F3670  ;# ptr
+	.4byte 0x800F7290  ;# ptr
+	.4byte 0x800F3730  ;# ptr
+	.4byte 0x800F3740  ;# ptr
+	.4byte 0x800F3750  ;# ptr
+	.4byte 0x800F3850  ;# ptr
+	.4byte 0x800F8FB0  ;# ptr
+	.4byte 0x800F3AA0  ;# ptr
+	.4byte 0x800F8FC0  ;# ptr
+	.4byte 0x800F3950  ;# ptr
+	.4byte 0x800F9020  ;# ptr
+	.4byte 0x800F8FF0  ;# ptr
+	.4byte 0x800F7320  ;# ptr
+	.4byte 0x800F7430  ;# ptr
+	.4byte 0x800F7A40  ;# ptr
+	.4byte 0x800F8180  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29836
 $$29836:
-	.incbin "baserom.dol", 0x499CA0, 0x8
+	.4byte 0
+	.4byte 0
 .global $$210228
 $$210228:
-	.incbin "baserom.dol", 0x499CA8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$210229
 $$210229:
-	.incbin "baserom.dol", 0x499CB0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r3lyt6Window

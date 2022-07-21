@@ -563,9 +563,19 @@ endState__Q53scn4step4hero12interference10StateEatenFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference10StateEaten
 __vt__Q53scn4step4hero12interference10StateEaten:
-	.incbin "baserom.dol", 0x488570, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80371088
+	.4byte 0x80371274
+	.4byte 0x803713A8
+	.4byte 0x803713AC
+	.4byte 0x80355510
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259191
 $$259191:
-	.incbin "baserom.dol", 0x49DD10, 0x8
+	.4byte 0
+	.4byte 0

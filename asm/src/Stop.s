@@ -855,9 +855,23 @@ lbl_803CFCE4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick4Stop
 __vt__Q43scn4step7gimmick4Stop:
-	.incbin "baserom.dol", 0x47B058, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F7388
+	.4byte 0x802F7708
+	.4byte 0x802F77C0
+	.4byte 0x802F7838
+	.4byte 0x802F7930
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step3sfx4Stop
 __vt__Q43scn4step3sfx4Stop:
-	.incbin "baserom.dol", 0x48EDC8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803CF958
+	.4byte 0x803CFB20
+	.4byte 0x803CFB8C
+	.4byte 0x803CFC04
+	.4byte 0x803CFCAC
+	.4byte 0

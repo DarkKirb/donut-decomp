@@ -565,37 +565,51 @@ __dt__Q53scn4step5enemy10parasoldoo13StateNoseDiveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldee13StateNoseDive
 __vt__Q53scn4step5enemy10parasoldee13StateNoseDive:
-	.incbin "baserom.dol", 0x4761E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CD100  ;# ptr
+	.4byte 0x802CCE28  ;# ptr
+	.4byte 0x802CCFBC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802CD028  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldoo13StateNoseDive
 __vt__Q53scn4step5enemy10parasoldoo13StateNoseDive:
-	.incbin "baserom.dol", 0x476398, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CEF3C  ;# ptr
+	.4byte 0x802CEC74  ;# ptr
+	.4byte 0x802CEE08  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802CEE74  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257074
 $$257074:
-	.incbin "baserom.dol", 0x49C9C8, 0x4
+	.4byte 0x3D23D70A
 .global $$257075
 $$257075:
-	.incbin "baserom.dol", 0x49C9CC, 0x4
+	.4byte 0x3C23D70A
 .global $$257076
 $$257076:
-	.incbin "baserom.dol", 0x49C9D0, 0x4
+	.4byte 0x3F000000
 .global $$257102
 $$257102:
-	.incbin "baserom.dol", 0x49C9D4, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256945
 $$256945:
-	.incbin "baserom.dol", 0x49CA18, 0x4
+	.4byte 0x3D23D70A
 .global $$256946
 $$256946:
-	.incbin "baserom.dol", 0x49CA1C, 0x4
+	.4byte 0x3C23D70A
 .global $$256947
 $$256947:
-	.incbin "baserom.dol", 0x49CA20, 0x4
+	.4byte 0x3F000000
 .global $$256973
 $$256973:
-	.incbin "baserom.dol", 0x49CA24, 0x4
+	.4byte 0x3F800000

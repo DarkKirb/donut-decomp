@@ -434,84 +434,174 @@ lbl_80014F00:
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$225556
 $$225556:
-	.incbin "baserom.dol", 0x402164, 0x28
+	.4byte 0x18180000
+	.4byte 0x00000048
+	.4byte 0x00000018
+	.4byte 0x00000054
+	.4byte 0x00000024
+	.4byte 0
+	.4byte 0x8F000000
+	.4byte 0x0000004C
+	.4byte 0x00000008
+	.4byte 0x8D000008
 .global $$226577
 $$226577:
-	.incbin "baserom.dol", 0x40218C, 0x8
+	.4byte 0x10080000
+	.4byte 0
 .global $$227127
 $$227127:
-	.incbin "baserom.dol", 0x402194, 0x60
+	.4byte 0x68080000
+	.4byte 0x00000094
+	.4byte 0x00000038
+	.4byte 0x000000B0
+	.4byte 0x00000030
+	.4byte 0x0000019C
+	.4byte 0x0000004C
+	.4byte 0x000001B8
+	.4byte 0x00000044
+	.4byte 0x0000035C
+	.4byte 0x00000058
+	.4byte 0
+	.4byte 0x02000028
+	.4byte 0x800148E0  ;# ptr
+	.4byte 0x8680001D
+	.4byte 0
+	.4byte 0x80006BD0  ;# ptr
+	.4byte 0x02000020
+	.4byte 0x800148E0  ;# ptr
+	.4byte 0x8680001E
+	.4byte 0
+	.4byte 0x80006BD0  ;# ptr
+	.4byte 0x82000030
+	.4byte 0x800149D8  ;# ptr
 .global $$227197
 $$227197:
-	.incbin "baserom.dol", 0x4021F4, 0x28
+	.4byte 0x18180000
+	.4byte 0x0000004C
+	.4byte 0x00000018
+	.4byte 0x00000058
+	.4byte 0x00000024
+	.4byte 0
+	.4byte 0x8F000000
+	.4byte 0x00000050
+	.4byte 0x00000008
+	.4byte 0x8D000008
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$225557
 $$225557:
-	.incbin "baserom.dol", 0x4022DC, 0xC
+	.4byte 0x80014948  ;# ptr
+	.4byte 0x00000090
+	.4byte 0x80006804  ;# ptr
 .global $$226578
 $$226578:
-	.incbin "baserom.dol", 0x4022E8, 0xC
+	.4byte 0x800149D8  ;# ptr
+	.4byte 0x00000064
+	.4byte 0x8000682C  ;# ptr
 .global $$227128
 $$227128:
-	.incbin "baserom.dol", 0x4022F4, 0xC
+	.4byte 0x80014A3C  ;# ptr
+	.4byte 0x000003F0
+	.4byte 0x80006834  ;# ptr
 .global $$227198
 $$227198:
-	.incbin "baserom.dol", 0x402300, 0xC
+	.4byte 0x80014E2C  ;# ptr
+	.4byte 0x00000094
+	.4byte 0x80006894  ;# ptr
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402364, 0x4
+	.4byte 0x80014EC4  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210379
 $$210379:
-	.incbin "baserom.dol", 0x403758, 0x14
+	.asciz "std::out_of_range"
+	.balign 4
 .global $$210381
 $$210381:
-	.incbin "baserom.dol", 0x40376C, 0x14
+	.asciz "std::length_error"
+	.balign 4
 .global $$210387
 $$210387:
-	.incbin "baserom.dol", 0x403780, 0x14
+	.asciz "std::logic_error"
+	.balign 4
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x403794, 0xE4
+	.asciz "vector length error"
+	.asciz "!std::exception!!std::logic_error!!std::length_error!!"
+	.byte 0x62
+	.asciz "asic_string: out_of_range"
+	.byte 0x21, 0x73
+	.asciz "td::exception!!std::logic_error!!std::out_of_range!!"
+	.byte 0x43, 0x00, 0x2A
+	.4byte 0x00626173
+	.asciz "ic_string: length_error"
+	.asciz "basic_string::reserve length_error"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23std12out_of_range
 __vt__Q23std12out_of_range:
-	.incbin "baserom.dol", 0x41DB48, 0x10
+	.4byte 0x80556468
+	.4byte 0
+	.4byte 0x80014EC0  ;# ptr
+	.4byte 0x80014944  ;# ptr
 .global $$210380
 $$210380:
-	.incbin "baserom.dol", 0x41DB58, 0x18
+	.4byte 0x80556420
+	.4byte 0
+	.4byte 0x80556478
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q23std12length_error
 __vt__Q23std12length_error:
-	.incbin "baserom.dol", 0x41DB70, 0x10
+	.4byte 0x80556470
+	.4byte 0
+	.4byte 0x80014E2C  ;# ptr
+	.4byte 0x80014944  ;# ptr
 .global $$210382
 $$210382:
-	.incbin "baserom.dol", 0x41DB80, 0x18
+	.4byte 0x80556420
+	.4byte 0
+	.4byte 0x80556478
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q23std11logic_error
 __vt__Q23std11logic_error:
-	.incbin "baserom.dol", 0x41DB98, 0x10
+	.4byte 0x80556478
+	.4byte 0
+	.4byte 0x80014948  ;# ptr
+	.4byte 0x80014944  ;# ptr
 .global $$210388
 $$210388:
-	.incbin "baserom.dol", 0x41DBA8, 0x10
+	.4byte 0x80556420
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std12out_of_range
 __RTTI__Q23std12out_of_range:
-	.incbin "baserom.dol", 0x492848, 0x8
+	.4byte 0x80407658
+	.4byte 0x80421A58
 .global __RTTI__Q23std12length_error
 __RTTI__Q23std12length_error:
-	.incbin "baserom.dol", 0x492850, 0x8
+	.4byte 0x8040766C
+	.4byte 0x80421A80
 .global __RTTI__Q23std11logic_error
 __RTTI__Q23std11logic_error:
-	.incbin "baserom.dol", 0x492858, 0x8
+	.4byte 0x80407680
+	.4byte 0x80421AA8
 .global $$211481
 $$211481:
-	.incbin "baserom.dol", 0x492860, 0x1
+	.byte 0x00
 .global $$211495
 $$211495:
-	.incbin "baserom.dol", 0x492861, 0x7
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2id__Q23std8ctype$$0c$$1

@@ -274,49 +274,62 @@ lbl_8007DDC8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2865
 $$2865:
-	.incbin "baserom.dol", 0x4374F0, 0x24
+	.asciz "found kdev_cb[%d] hid_handle = %d "
+	.balign 4
 .global $$2866
 $$2866:
-	.incbin "baserom.dol", 0x437514, 0x34
+	.asciz "in_use ? [%d] kdev[%d].hid_handle = %d state = [%d]"
 .global $$2867
 $$2867:
-	.incbin "baserom.dol", 0x437548, 0x2C
+	.asciz "bta_hh_find_cb:: index = %d while max = %d"
+	.balign 4
 .global $$2880
 $$2880:
-	.incbin "baserom.dol", 0x437574, 0x14
+	.asciz "subclass = 0x%2x"
+	.balign 4
 .global $$2954
 $$2954:
-	.incbin "baserom.dol", 0x437588, 0x40
+	.asciz "bta_hh_parse_keybd_rpt:  (report=%p, report_len=%d) called"
+	.balign 4
+	.4byte 0
 .global $$2955
 $$2955:
-	.incbin "baserom.dol", 0x4375C8, 0x10
+	.asciz "Alt key pressed"
 .global $$2956
 $$2956:
-	.incbin "baserom.dol", 0x4375D8, 0x14
+	.asciz "Alt key not pressed"
 .global $$2957
 $$2957:
-	.incbin "baserom.dol", 0x4375EC, 0x14
+	.asciz "this_char = %02x"
+	.balign 4
 .global $$2958
 $$2958:
-	.incbin "baserom.dol", 0x437600, 0x48
+	.asciz "BTA_HhParseKeybdRpt:  Cannot interpret scan code                 0x%02x"
 .global $$2970
 $$2970:
-	.incbin "baserom.dol", 0x437648, 0x5C
+	.asciz "bta_hh_parse_mice_rpt:  bta_keybd_rpt_rcvd(report=%p,                 report_len=%d) called"
 .global $$2971
 $$2971:
-	.incbin "baserom.dol", 0x4376A4, 0x14
+	.asciz "mice button: 0x%2x"
+	.balign 4
 .global $$2972
 $$2972:
-	.incbin "baserom.dol", 0x4376B8, 0x1C
+	.asciz "mice move: x = %d y = %d"
+	.balign 4
 .global $$2990
 $$2990:
-	.incbin "baserom.dol", 0x4376D4, 0x3C
+	.asciz "bta_hh_trace_dev_db:: Device DB list********************"
+	.balign 4
 .global $$2991
 $$2991:
-	.incbin "baserom.dol", 0x437710, 0x24
+	.asciz "kdev[%d] in_use[%d]  handle[%d] "
+	.balign 4
 .global $$2992
 $$2992:
-	.incbin "baserom.dol", 0x437734, 0x3C
+	.asciz "\t\t\t attr_mask[%04x] state [%d] sub_class[%02x] index = %d"
+	.balign 4
 .global $$2993
 $$2993:
-	.incbin "baserom.dol", 0x437770, 0x40
+	.asciz "*********************************************************"
+	.balign 4
+	.4byte 0

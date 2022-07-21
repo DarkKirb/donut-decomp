@@ -193,9 +193,25 @@ procFixPos__Q53scn4step4hero6common14StateVacuumEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy14StateVacuumEnd
 __vt__Q53scn4step4boss6whispy14StateVacuumEnd:
-	.incbin "baserom.dol", 0x466858, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025ED7C  ;# ptr
+	.4byte 0x8025ED80  ;# ptr
+	.4byte 0x8025EE18  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025EE1C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common14StateVacuumEnd
 __vt__Q53scn4step4hero6common14StateVacuumEnd:
-	.incbin "baserom.dol", 0x488338, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036D500
+	.4byte 0x8036D504
+	.4byte 0x8036D5D8
+	.4byte 0x8035550C
+	.4byte 0x8036D5DC
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

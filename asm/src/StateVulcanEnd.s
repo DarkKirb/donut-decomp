@@ -136,9 +136,27 @@ procFixPos__Q53scn4step4hero5smash14StateVulcanEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter14StateVulcanEnd
 __vt__Q53scn4step4hero7fighter14StateVulcanEnd:
-	.incbin "baserom.dol", 0x48A7B8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A0448
+	.4byte 0x803A044C
+	.4byte 0x803A0500
+	.4byte 0x8035550C
+	.4byte 0x803A0504
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5smash14StateVulcanEnd
 __vt__Q53scn4step4hero5smash14StateVulcanEnd:
-	.incbin "baserom.dol", 0x48B048, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2BEC
+	.4byte 0x803A2BF0
+	.4byte 0x803A2BF4
+	.4byte 0x8035550C
+	.4byte 0x803A2BF8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

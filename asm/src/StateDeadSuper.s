@@ -473,27 +473,35 @@ lbl_802AB5FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage14StateDeadSuper
 __vt__Q53scn4step5enemy6damage14StateDeadSuper:
-	.incbin "baserom.dol", 0x471E40, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AB0E8  ;# ptr
+	.4byte 0x802AB18C  ;# ptr
+	.4byte 0x802AB39C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802AB40C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257110
 $$257110:
-	.incbin "baserom.dol", 0x49C230, 0x4
+	.4byte 0
 .global $$257152
 $$257152:
-	.incbin "baserom.dol", 0x49C234, 0x4
+	.4byte 0x41E00000
 .global $$257153
 $$257153:
-	.incbin "baserom.dol", 0x49C238, 0x4
+	.4byte 0x420C0000
 .global $$257154
 $$257154:
-	.incbin "baserom.dol", 0x49C23C, 0x4
+	.4byte 0x43B40000
 .global $$257155
 $$257155:
-	.incbin "baserom.dol", 0x49C240, 0x4
+	.4byte 0x3F800000
 .global $$257156
 $$257156:
-	.incbin "baserom.dol", 0x49C244, 0x4
+	.4byte 0x42652EE1
 .global $$257181
 $$257181:
-	.incbin "baserom.dol", 0x49C248, 0x8
+	.4byte 0xBF800000
+	.4byte 0

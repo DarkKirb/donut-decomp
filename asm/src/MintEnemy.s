@@ -23,7 +23,7 @@ __sinit_$$3MintEnemy_cpp:
 /* 8028ADD8 00286C18  4B E5 26 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4024BC, 0x4
+	.4byte 0x8028ADD4  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5enemy23$$2unnamed$$2MintEnemy_cpp$$2

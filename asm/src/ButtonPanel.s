@@ -148,24 +148,30 @@ lbl_801DA740:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252079
 $$252079:
-	.incbin "baserom.dol", 0x459520, 0xC
+	.asciz "common/Main"
 .global $$252080
 $$252080:
-	.incbin "baserom.dol", 0x45952C, 0xC
+	.asciz "ButtonText"
+	.balign 4
 .global $$252123
 $$252123:
-	.incbin "baserom.dol", 0x459538, 0xC
+	.asciz "GrayChoice"
+	.balign 4
 .global $$252130
 $$252130:
-	.incbin "baserom.dol", 0x459544, 0xC
+	.asciz "NoChoice"
+	.balign 4
 .global $$252131
 $$252131:
-	.incbin "baserom.dol", 0x459550, 0x10
+	.asciz "GrayNoChoice"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252122
 $$252122:
-	.incbin "baserom.dol", 0x493A40, 0x8
+	.asciz "Choice"
+	.balign 4
 .global $$252134
 $$252134:
-	.incbin "baserom.dol", 0x493A48, 0x8
+	.asciz "Decide"
+	.balign 4

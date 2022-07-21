@@ -186,21 +186,25 @@ lbl_80047534:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x4322C0, 0x48
+	.asciz "<< RVL_SDK - DSP \trelease build: Aug 23 2010 17:30:03 (0x4302_145) >>"
+	.balign 4
 .global $$22198
 $$22198:
-	.incbin "baserom.dol", 0x432308, 0x20
+	.asciz "DSPInit(): Build Date: %s %s\n"
+	.balign 4
 .global $$22199
 $$22199:
-	.incbin "baserom.dol", 0x432328, 0xC
+	.asciz "Aug 23 2010"
 .global $$22200
 $$22200:
-	.incbin "baserom.dol", 0x432334, 0xC
+	.asciz "17:30:03"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DSPVersion
 __DSPVersion:
-	.incbin "baserom.dol", 0x492A10, 0x8
+	.4byte 0x804361C0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __DSP_init_flag

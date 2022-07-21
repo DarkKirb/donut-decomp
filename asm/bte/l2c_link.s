@@ -1291,43 +1291,56 @@ lbl_80093400:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21744
 $$21744:
-	.incbin "baserom.dol", 0x43A6F8, 0x20
+	.asciz "L2CAP failed to allocate LCB"
+	.balign 4
 .global $$21745
 $$21745:
-	.incbin "baserom.dol", 0x43A718, 0x28
+	.asciz "L2CAP got conn_req while connected"
+	.balign 4
+	.4byte 0
 .global $$21771
 $$21771:
-	.incbin "baserom.dol", 0x43A740, 0x28
+	.asciz "L2CAP got conn_comp for unknown BD_ADDR"
 .global $$21772
 $$21772:
-	.incbin "baserom.dol", 0x43A768, 0x34
+	.asciz "L2CAP got conn_comp in bad state: %d  status: 0x%d"
+	.balign 4
 .global $$21783
 $$21783:
-	.incbin "baserom.dol", 0x43A79C, 0x28
+	.asciz "L2CAP got sec_comp for unknown BD_ADDR"
+	.balign 4
 .global $$21822
 $$21822:
-	.incbin "baserom.dol", 0x43A7C4, 0x18
+	.asciz "L2CAP - ping timeout"
+	.balign 4
 .global $$21869
 $$21869:
-	.incbin "baserom.dol", 0x43A7DC, 0x2C
+	.asciz "L2CAP - Congested(), CID: 0x%04x, Congested"
 .global $$21870
 $$21870:
-	.incbin "baserom.dol", 0x43A808, 0x40
+	.asciz "L2CAP - Calling CongestionStatus_Cb(), CID: 0x%04x, Congested"
+	.balign 4
 .global $$21871
 $$21871:
-	.incbin "baserom.dol", 0x43A848, 0x20
+	.asciz "!!! L2CAP - buffer dropped"
+	.balign 4
+	.4byte 0
 .global $$21872
 $$21872:
-	.incbin "baserom.dol", 0x43A868, 0x40
+	.asciz "L2CAP - Calling CongestionStatus_Cb(), CID: 0x%04x, Uncongested"
 .global $$21907
 $$21907:
-	.incbin "baserom.dol", 0x43A8A8, 0x48
+	.asciz "LCB %d Priority:%d XmitWindow:%d Congestion Start:%d End:%d Discard:%d"
+	.balign 4
 .global $$21949
 $$21949:
-	.incbin "baserom.dol", 0x43A8F0, 0x20
+	.asciz "L2CAP - dropping incomplete pkt"
 .global $$21950
 $$21950:
-	.incbin "baserom.dol", 0x43A910, 0x20
+	.asciz "L2CAP - dropping too long pkt"
+	.balign 4
 .global $$21986
 $$21986:
-	.incbin "baserom.dol", 0x43A930, 0x38
+	.asciz "L2CAP - rcvd segment complete, unknown handle: %d"
+	.balign 4
+	.4byte 0

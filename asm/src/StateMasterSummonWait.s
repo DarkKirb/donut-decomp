@@ -321,4 +321,11 @@ lbl_8029389C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common21StateMasterSummonWait
 __vt__Q53scn4step5enemy6common21StateMasterSummonWait:
-	.incbin "baserom.dol", 0x46F338, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80293508  ;# ptr
+	.4byte 0x802935D4  ;# ptr
+	.4byte 0x802935F0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802935F4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

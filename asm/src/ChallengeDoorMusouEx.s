@@ -354,42 +354,75 @@ kind__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256569
 $$256569:
-	.incbin "baserom.dol", 0x47CF80, 0x24
+	.asciz "step/gimmick/ChallengeMusouBoard"
+	.balign 4
 .global $$256571
 $$256571:
-	.incbin "baserom.dol", 0x47CFA4, 0x1C
+	.asciz "step/gimmick/DoorMusouEx"
+	.balign 4
 .global $$256631
 $$256631:
-	.incbin "baserom.dol", 0x47CFC0, 0x38
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Unlock.UnlockMusouExDoor"
 .global $$256636
 $$256636:
-	.incbin "baserom.dol", 0x47CFF8, 0x14
+	.asciz "DoorAppearance00"
+	.balign 4
 .global $$256692
 $$256692:
-	.incbin "baserom.dol", 0x47D00C, 0x10
+	.asciz "NormalWait00"
+	.balign 4
 .global $$256695
 $$256695:
-	.incbin "baserom.dol", 0x47D01C, 0xC
+	.asciz "locator21"
+	.balign 4
 .global $$256696
 $$256696:
-	.incbin "baserom.dol", 0x47D028, 0xC
+	.asciz "locator18"
+	.balign 4
 .global $$256697
 $$256697:
-	.incbin "baserom.dol", 0x47D034, 0xC
+	.asciz "locator19"
+	.balign 4
 .global __vt__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouEx
 __vt__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouEx:
-	.incbin "baserom.dol", 0x47D040, 0x88
+	.4byte 0
+	.4byte 0
+	.4byte 0x803094A8
+	.4byte 0x803098D4
+	.4byte 0x803094AC
+	.4byte 0x80306D6C
+	.4byte 0x80306D70
+	.4byte 0x80306D74
+	.4byte 0x8030950C
+	.4byte 0x80309510
+	.4byte 0x80309554
+	.4byte 0x803076D8
+	.4byte 0x803095A0
+	.4byte 0x803076E0
+	.4byte 0x803095FC
+	.4byte 0x80307C68
+	.4byte 0x80309600
+	.4byte 0x80309604
+	.4byte 0x80309608
+	.4byte 0x803098CC
+	.4byte 0x803098D0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256570
 $$256570:
-	.incbin "baserom.dol", 0x496A30, 0x8
+	.4byte 0
+	.4byte 0
 .global $$256691
 $$256691:
-	.incbin "baserom.dol", 0x496A38, 0x8
+	.asciz "AnimL52"
 .global $$256693
 $$256693:
-	.incbin "baserom.dol", 0x496A40, 0x8
+	.asciz "AnimL50"
 .global $$256694
 $$256694:
-	.incbin "baserom.dol", 0x496A48, 0x8
+	.asciz "AnimL51"

@@ -152,4 +152,13 @@ procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy20StateShotAirBallBase
 __vt__Q53scn4step4boss6whispy20StateShotAirBallBase:
-	.incbin "baserom.dol", 0x4667A0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025DF88  ;# ptr
+	.4byte 0x8025E210  ;# ptr
+	.4byte 0x8025E37C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025E380  ;# ptr
+	.4byte 0x80234504  ;# ptr
+	.4byte 0
+	.4byte 0

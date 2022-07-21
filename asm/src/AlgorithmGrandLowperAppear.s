@@ -126,28 +126,29 @@ updateHoldFrameRate__Q53scn4step5enemy9algorithm26AlgorithmGrandLowperAppearFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250840
 $$250840:
-	.incbin "baserom.dol", 0x49BC90, 0x4
+	.4byte 0xFFFFFFFF
 .global $$250983
 $$250983:
-	.incbin "baserom.dol", 0x49BC94, 0x4
+	.4byte 0x3F800000
 .global $$250984
 $$250984:
-	.incbin "baserom.dol", 0x49BC98, 0x4
+	.4byte 0
 .global $$250860
 $$250860:
-	.incbin "baserom.dol", 0x49BC9C, 0x4
+	.4byte 0x000000FF
 .global $$250996
 $$250996:
-	.incbin "baserom.dol", 0x49BCA0, 0x4
+	.4byte 0x437F0000
 .global $$251001
 $$251001:
-	.incbin "baserom.dol", 0x49BCA4, 0x4
+	.4byte 0x3951B717
 .global $$251002
 $$251002:
-	.incbin "baserom.dol", 0x49BCA8, 0x4
+	.4byte 0x3E333333
 .global $$251009
 $$251009:
-	.incbin "baserom.dol", 0x49BCAC, 0x4
+	.4byte 0x42200000
 .global $$251012
 $$251012:
-	.incbin "baserom.dol", 0x49BCB0, 0x8
+	.4byte 0x43300000
+	.4byte 0

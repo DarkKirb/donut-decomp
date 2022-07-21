@@ -558,30 +558,47 @@ __dt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol25St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol25StateParasolWaterDrillEnd$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol25StateParasolWaterDrillEnd$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489F40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803965F0
+	.4byte 0x803965B4
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol22StateParasolWaterDrill$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7parasol22StateParasolWaterDrill$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489F50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803965EC
+	.4byte 0x803965D0
 .global __vt__Q53scn4step4hero7parasol22StateParasolWaterDrill
 __vt__Q53scn4step4hero7parasol22StateParasolWaterDrill:
-	.incbin "baserom.dol", 0x489F60, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80396010
+	.4byte 0x80396114
+	.4byte 0x8039630C
+	.4byte 0x8035550C
+	.4byte 0x803963C8
+	.4byte 0x803963CC
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258172
 $$258172:
-	.incbin "baserom.dol", 0x49E1E8, 0x4
+	.4byte 0xFF00FFFF
 .global $$258959
 $$258959:
-	.incbin "baserom.dol", 0x49E1EC, 0x4
+	.4byte 0
 .global $$258962
 $$258962:
-	.incbin "baserom.dol", 0x49E1F0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$258997
 $$258997:
-	.incbin "baserom.dol", 0x49E1F8, 0x4
+	.4byte 0x3F000000
 .global $$258998
 $$258998:
-	.incbin "baserom.dol", 0x49E1FC, 0x4
+	.4byte 0x40800000
 .global $$258999
 $$258999:
-	.incbin "baserom.dol", 0x49E200, 0x8
+	.4byte 0xBF000000
+	.4byte 0

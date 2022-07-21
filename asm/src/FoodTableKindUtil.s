@@ -25,28 +25,75 @@ RandomFoodKind__Q43scn4step4item17FoodTableKindUtilFQ43scn4step4item13FoodTableK
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C228, 0x14
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
 .global T_TABLE_LV1__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV1__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C23C, 0x14
+	.4byte 0
+	.4byte 0x00000006
+	.4byte 0x00000008
+	.4byte 0x00000003
+	.4byte 0x00000013
 .global T_TABLE_LV2__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV2__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C250, 0x14
+	.4byte 0x00000001
+	.4byte 0x00000009
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000020
 .global T_TABLE_LV3__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV3__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C264, 0x14
+	.4byte 0x00000007
+	.4byte 0x00000005
+	.4byte 0x00000015
+	.4byte 0x0000000C
+	.4byte 0x00000021
 .global T_TABLE_LV4__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV4__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C278, 0x14
+	.4byte 0x00000014
+	.4byte 0x0000000D
+	.4byte 0x00000022
+	.4byte 0x00000019
+	.4byte 0x0000001F
 .global T_TABLE_LV5__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV5__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C28C, 0x14
+	.4byte 0x0000000A
+	.4byte 0x00000015
+	.4byte 0x0000000E
+	.4byte 0x0000001D
+	.4byte 0x0000001A
 .global T_TABLE_LV6__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV6__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C2A0, 0x14
+	.4byte 0x00000011
+	.4byte 0x0000000D
+	.4byte 0x00000016
+	.4byte 0x00000018
+	.4byte 0x00000017
 .global T_TABLE_LV7__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_LV7__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C2B4, 0x14
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x0000000F
+	.4byte 0x00000022
+	.4byte 0x0000001C
 .global T_TABLES__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLES__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C2C8, 0x40
+	.4byte 0x00000005
+	.4byte 0x80420128
+	.4byte 0x00000005
+	.4byte 0x8042013C
+	.4byte 0x00000005
+	.4byte 0x80420150
+	.4byte 0x00000005
+	.4byte 0x80420164
+	.4byte 0x00000005
+	.4byte 0x80420178
+	.4byte 0x00000005
+	.4byte 0x8042018C
+	.4byte 0x00000005
+	.4byte 0x804201A0
+	.4byte 0x00000005
+	.4byte 0x804201B4

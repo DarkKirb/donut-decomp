@@ -114,4 +114,11 @@ __dt__Q53scn4step5enemy10knucklejoe17BrainWalkStepBackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe17BrainWalkStepBack
 __vt__Q53scn4step5enemy10knucklejoe17BrainWalkStepBack:
-	.incbin "baserom.dol", 0x474490, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BF2C4  ;# ptr
+	.4byte 0x802BF1A4  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802BF29C  ;# ptr
+	.4byte 0x802BF2A0  ;# ptr
+	.4byte 0

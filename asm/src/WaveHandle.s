@@ -406,12 +406,17 @@ setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23snd10WaveHandle
 __vt__Q23snd10WaveHandle:
-	.incbin "baserom.dol", 0x4927B8, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x804040A4
 .global __vt__Q33snd10WaveHandle10WavePacket
 __vt__Q33snd10WaveHandle10WavePacket:
-	.incbin "baserom.dol", 0x4927C4, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x80404048
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249104
 $$249104:
-	.incbin "baserom.dol", 0x49EEA0, 0x8
+	.4byte 0x3F800000
+	.4byte 0

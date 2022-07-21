@@ -700,414 +700,734 @@ ListenConfirmMusic__Q43scn7history6detail7MessageFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MSG_LABEL_ARRAY__Q43scn7history6detail21$$2unnamed$$2Message_cpp$$2
 MSG_LABEL_ARRAY__Q43scn7history6detail21$$2unnamed$$2Message_cpp$$2:
-	.incbin "baserom.dol", 0x411D90, 0x330
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80558810
+	.4byte 0x80461D60
+	.4byte 0x80461D70
+	.4byte 0x80461D80
+	.4byte 0x80558818
+	.4byte 0x80461D90
+	.4byte 0x80461DA4
+	.4byte 0x80461DB0
+	.4byte 0x80461DC0
+	.4byte 0x80461DD8
+	.4byte 0x80461DF0
+	.4byte 0x8055881C
+	.4byte 0x80461E08
+	.4byte 0x80461DA4
+	.4byte 0x80461E24
+	.4byte 0x80461E34
+	.4byte 0x80461E48
+	.4byte 0x80461E5C
+	.4byte 0x80558818
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80461E70
+	.4byte 0x80461E80
+	.4byte 0x80461E90
+	.4byte 0x80461EA4
+	.4byte 0x80558824
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80461EB8
+	.4byte 0x80461EC8
+	.4byte 0x80461EE0
+	.4byte 0x80461EF8
+	.4byte 0x80558824
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558828
+	.4byte 0x80461F10
+	.4byte 0x80461F20
+	.4byte 0x80461F30
+	.4byte 0x80558818
+	.4byte 0x80461F40
+	.4byte 0x80461DA4
+	.4byte 0x80461F54
+	.4byte 0x80461F64
+	.4byte 0x80461F7C
+	.4byte 0x80461F94
+	.4byte 0x80558818
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80461FAC
+	.4byte 0x80461FB8
+	.4byte 0x80461FC8
+	.4byte 0x80461FD8
+	.4byte 0x80558824
+	.4byte 0x80461FE8
+	.4byte 0x80462000
+	.4byte 0x80462010
+	.4byte 0x8046201C
+	.4byte 0x80462030
+	.4byte 0x80462044
+	.4byte 0x80558818
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558830
+	.4byte 0x80462058
+	.4byte 0x80462068
+	.4byte 0x80462078
+	.4byte 0x80558824
+	.4byte 0x80462088
+	.4byte 0x80462000
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80558838
+	.4byte 0x8046209C
+	.4byte 0x804620AC
+	.4byte 0x804620BC
+	.4byte 0x80558840
+	.4byte 0x804620CC
+	.4byte 0x804620E8
+	.4byte 0x804620F8
+	.4byte 0x80462108
+	.4byte 0x8046211C
+	.4byte 0x80462134
+	.4byte 0x80558844
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x8046214C
+	.4byte 0x80462160
+	.4byte 0x80462178
+	.4byte 0x80462190
+	.4byte 0x80558848
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x804621A8
+	.4byte 0x804621B4
+	.4byte 0x804621C8
+	.4byte 0x804621DC
+	.4byte 0x80558850
+	.4byte 0x804621F0
+	.4byte 0x80558820
+	.4byte 0x80462200
+	.4byte 0x80462210
+	.4byte 0x80462224
+	.4byte 0x80462238
+	.4byte 0x80558858
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x8046224C
+	.4byte 0x80462258
+	.4byte 0x8046226C
+	.4byte 0x80462280
+	.4byte 0x80558848
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80462294
+	.4byte 0x804622A0
+	.4byte 0x804622B4
+	.4byte 0x804622C8
+	.4byte 0x8055885C
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x804622DC
+	.4byte 0x804622EC
+	.4byte 0x80462300
+	.4byte 0x80462314
+	.4byte 0x8055885C
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80462328
+	.4byte 0x80462334
+	.4byte 0x80462348
+	.4byte 0x80462358
+	.4byte 0x8055885C
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0x80558808
+	.4byte 0
+	.4byte 0x80462368
+	.4byte 0x80462378
+	.4byte 0x8046238C
+	.4byte 0x804623A4
+	.4byte 0x80558860
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x804623C0
+	.4byte 0x804623D0
+	.4byte 0x804623E8
+	.4byte 0x80462400
+	.4byte 0x8055885C
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80462418
+	.4byte 0x80462424
+	.4byte 0x80462438
+	.4byte 0x80462448
+	.4byte 0x80558860
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0x80558868
+	.4byte 0x80462458
+	.4byte 0x80462468
+	.4byte 0x80462478
+	.4byte 0x80558870
+	.4byte 0x80558820
+	.4byte 0x80558820
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248890
 $$248890:
-	.incbin "baserom.dol", 0x4592D0, 0xC
+	.asciz "US_English"
+	.balign 4
 .global $$248891
 $$248891:
-	.incbin "baserom.dol", 0x4592DC, 0xC
+	.asciz "US_French"
+	.balign 4
 .global $$248892
 $$248892:
-	.incbin "baserom.dol", 0x4592E8, 0xC
+	.asciz "US_Spanish"
+	.balign 4
 .global DIRS_US__21$$2unnamed$$2Message_cpp$$2
 DIRS_US__21$$2unnamed$$2Message_cpp$$2:
-	.incbin "baserom.dol", 0x4592F4, 0x1C
+	.4byte 0
+	.4byte 0x8045D1D0
+	.4byte 0
+	.4byte 0x8045D1DC
+	.4byte 0x8045D1E8
+	.4byte 0
+	.4byte 0
 .global $$248894
 $$248894:
-	.incbin "baserom.dol", 0x459310, 0xC
+	.asciz "EU_English"
+	.balign 4
 .global $$248895
 $$248895:
-	.incbin "baserom.dol", 0x45931C, 0xC
+	.asciz "EU_German"
+	.balign 4
 .global $$248896
 $$248896:
-	.incbin "baserom.dol", 0x459328, 0xC
+	.asciz "EU_French"
+	.balign 4
 .global $$248897
 $$248897:
-	.incbin "baserom.dol", 0x459334, 0xC
+	.asciz "EU_Spanish"
+	.balign 4
 .global $$248898
 $$248898:
-	.incbin "baserom.dol", 0x459340, 0xC
+	.asciz "EU_Italian"
+	.balign 4
 .global $$248899
 $$248899:
-	.incbin "baserom.dol", 0x45934C, 0xC
+	.asciz "EU_Dutch"
+	.balign 4
 .global DIRS_EU__21$$2unnamed$$2Message_cpp$$2
 DIRS_EU__21$$2unnamed$$2Message_cpp$$2:
-	.incbin "baserom.dol", 0x459358, 0x1C
+	.4byte 0
+	.4byte 0x8045D210
+	.4byte 0x8045D21C
+	.4byte 0x8045D228
+	.4byte 0x8045D234
+	.4byte 0x8045D240
+	.4byte 0x8045D24C
 .global $$248901
 $$248901:
-	.incbin "baserom.dol", 0x459374, 0xC
+	.asciz "JP_Japanese"
 .global DIRS_JP__21$$2unnamed$$2Message_cpp$$2
 DIRS_JP__21$$2unnamed$$2Message_cpp$$2:
-	.incbin "baserom.dol", 0x459380, 0x1C
+	.4byte 0x8045D274
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$249227
 $$249227:
-	.incbin "baserom.dol", 0x45939C, 0xC
+	.asciz "msg/%s/%s"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x45DE60, 0x10
+	.asciz "SelectKirby1"
+	.balign 4
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x45DE70, 0x10
+	.asciz "ReleaseKirby1"
+	.balign 4
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x45DE80, 0x10
+	.asciz "ExplainKirby1"
+	.balign 4
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x45DE90, 0x14
+	.asciz "PlayGameCheckKirby1"
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x45DEA4, 0xC
+	.asciz "OnePersons"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x45DEB0, 0x10
+	.asciz "KirbyDreamLand"
+	.balign 4
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x45DEC0, 0x18
+	.asciz "SelectKirbyDreamLand"
+	.balign 4
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x45DED8, 0x18
+	.asciz "ReleaseKirbyDreamLand"
+	.balign 4
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x45DEF0, 0x18
+	.asciz "ExplainKirbyDreamLand"
+	.balign 4
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x45DF08, 0x1C
+	.asciz "PlayGameCheckKirbyDreamLand"
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x45DF24, 0x10
+	.asciz "KirbyPinBall"
+	.balign 4
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x45DF34, 0x14
+	.asciz "SelectKirbyPinBall"
+	.balign 4
 .global $$248769
 $$248769:
-	.incbin "baserom.dol", 0x45DF48, 0x14
+	.asciz "ReleaseKirbyPinBall"
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x45DF5C, 0x14
+	.asciz "ExplainKirbyPinBall"
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x45DF70, 0x10
+	.asciz "KirbyBall"
+	.balign 4
+	.4byte 0
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x45DF80, 0x10
+	.asciz "SelectKirbyBall"
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x45DF90, 0x14
+	.asciz "ReleaseKirbyBall"
+	.balign 4
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x45DFA4, 0x14
+	.asciz "ExplainKirbyBall"
+	.balign 4
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x45DFB8, 0x10
+	.asciz "KirbyAvalanche"
+	.balign 4
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x45DFC8, 0x18
+	.asciz "SelectKirbyAvalanche"
+	.balign 4
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x45DFE0, 0x18
+	.asciz "ReleaseKirbyAvalanche"
+	.balign 4
 .global $$248780
 $$248780:
-	.incbin "baserom.dol", 0x45DFF8, 0x18
+	.asciz "ExplainKirbyAvalanche"
+	.balign 4
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x45E010, 0x10
+	.asciz "SelectKirby2"
+	.balign 4
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x45E020, 0x10
+	.asciz "ReleaseKirby2"
+	.balign 4
 .global $$248784
 $$248784:
-	.incbin "baserom.dol", 0x45E030, 0x10
+	.asciz "ExplainKirby2"
+	.balign 4
 .global $$248785
 $$248785:
-	.incbin "baserom.dol", 0x45E040, 0x14
+	.asciz "PlayGameCheckKirby2"
 .global $$248786
 $$248786:
-	.incbin "baserom.dol", 0x45E054, 0x10
+	.asciz "KirbyBlockBall"
+	.balign 4
 .global $$248787
 $$248787:
-	.incbin "baserom.dol", 0x45E064, 0x18
+	.asciz "SelectKirbyBlockBall"
+	.balign 4
 .global $$248788
 $$248788:
-	.incbin "baserom.dol", 0x45E07C, 0x18
+	.asciz "ReleaseKirbyBlockBall"
+	.balign 4
 .global $$248789
 $$248789:
-	.incbin "baserom.dol", 0x45E094, 0x18
+	.asciz "ExplainKirbyBlockBall"
+	.balign 4
 .global $$248790
 $$248790:
-	.incbin "baserom.dol", 0x45E0AC, 0xC
+	.asciz "KirbySDX"
+	.balign 4
 .global $$248791
 $$248791:
-	.incbin "baserom.dol", 0x45E0B8, 0x10
+	.asciz "SelectKirbySDX"
+	.balign 4
 .global $$248792
 $$248792:
-	.incbin "baserom.dol", 0x45E0C8, 0x10
+	.asciz "ReleaseKirbySDX"
 .global $$248793
 $$248793:
-	.incbin "baserom.dol", 0x45E0D8, 0x10
+	.asciz "ExplainKirbySDX"
 .global $$248794
 $$248794:
-	.incbin "baserom.dol", 0x45E0E8, 0x18
+	.asciz "PlayGameCheckKirbySDX"
+	.balign 4
 .global $$248795
 $$248795:
-	.incbin "baserom.dol", 0x45E100, 0x10
+	.asciz "One_TwoPersons"
+	.balign 4
 .global $$248796
 $$248796:
-	.incbin "baserom.dol", 0x45E110, 0xC
+	.asciz "KirbyKidsGB"
 .global $$248797
 $$248797:
-	.incbin "baserom.dol", 0x45E11C, 0x14
+	.asciz "SelectKirbyKidsGB"
+	.balign 4
 .global $$248798
 $$248798:
-	.incbin "baserom.dol", 0x45E130, 0x14
+	.asciz "ReleaseKirbyKidsGB"
+	.balign 4
 .global $$248799
 $$248799:
-	.incbin "baserom.dol", 0x45E144, 0x14
+	.asciz "ExplainKirbyKidsGB"
+	.balign 4
 .global $$248801
 $$248801:
-	.incbin "baserom.dol", 0x45E158, 0x10
+	.asciz "SelectKirby3"
+	.balign 4
 .global $$248802
 $$248802:
-	.incbin "baserom.dol", 0x45E168, 0x10
+	.asciz "ReleaseKirby3"
+	.balign 4
 .global $$248803
 $$248803:
-	.incbin "baserom.dol", 0x45E178, 0x10
+	.asciz "ExplainKirby3"
+	.balign 4
 .global $$248804
 $$248804:
-	.incbin "baserom.dol", 0x45E188, 0x14
+	.asciz "PlayGameCheckKirby3"
 .global $$248806
 $$248806:
-	.incbin "baserom.dol", 0x45E19C, 0x10
+	.asciz "SelectKirby64"
+	.balign 4
 .global $$248807
 $$248807:
-	.incbin "baserom.dol", 0x45E1AC, 0x10
+	.asciz "ReleaseKirby64"
+	.balign 4
 .global $$248808
 $$248808:
-	.incbin "baserom.dol", 0x45E1BC, 0x10
+	.asciz "ExplainKirby64"
+	.balign 4
 .global $$248810
 $$248810:
-	.incbin "baserom.dol", 0x45E1CC, 0x1C
+	.asciz "PlayGameCheckKirby64"
+	.balign 4
+	.4byte 0
 .global $$248811
 $$248811:
-	.incbin "baserom.dol", 0x45E1E8, 0x10
+	.asciz "One_FourPersons"
 .global $$248812
 $$248812:
-	.incbin "baserom.dol", 0x45E1F8, 0x10
+	.asciz "KirbyKoroKoro"
+	.balign 4
 .global $$248813
 $$248813:
-	.incbin "baserom.dol", 0x45E208, 0x14
+	.asciz "SelectKirbyKoroKoro"
 .global $$248814
 $$248814:
-	.incbin "baserom.dol", 0x45E21C, 0x18
+	.asciz "ReleaseKirbyKoroKoro"
+	.balign 4
 .global $$248815
 $$248815:
-	.incbin "baserom.dol", 0x45E234, 0x18
+	.asciz "ExplainKirbyKoroKoro"
+	.balign 4
 .global $$248817
 $$248817:
-	.incbin "baserom.dol", 0x45E24C, 0x14
+	.asciz "KirbyDreamLandDX"
+	.balign 4
 .global $$248818
 $$248818:
-	.incbin "baserom.dol", 0x45E260, 0x18
+	.asciz "SelectKirbyDreamLandDX"
+	.balign 4
 .global $$248819
 $$248819:
-	.incbin "baserom.dol", 0x45E278, 0x18
+	.asciz "ReleaseKirbyDreamLandDX"
 .global $$248820
 $$248820:
-	.incbin "baserom.dol", 0x45E290, 0x18
+	.asciz "ExplainKirbyDreamLandDX"
 .global $$248822
 $$248822:
-	.incbin "baserom.dol", 0x45E2A8, 0xC
+	.asciz "KirbyAnime1"
 .global $$248823
 $$248823:
-	.incbin "baserom.dol", 0x45E2B4, 0x14
+	.asciz "SelectKirbyAnime1"
+	.balign 4
 .global $$248824
 $$248824:
-	.incbin "baserom.dol", 0x45E2C8, 0x14
+	.asciz "ReleaseKirbyAnime1"
+	.balign 4
 .global $$248825
 $$248825:
-	.incbin "baserom.dol", 0x45E2DC, 0x14
+	.asciz "ExplainKirbyAnime1"
+	.balign 4
 .global $$248827
 $$248827:
-	.incbin "baserom.dol", 0x45E2F0, 0x10
+	.asciz "PlayAnimeCheck"
+	.balign 4
 .global $$248828
 $$248828:
-	.incbin "baserom.dol", 0x45E300, 0x10
+	.asciz "KirbyAirRide"
+	.balign 4
 .global $$248829
 $$248829:
-	.incbin "baserom.dol", 0x45E310, 0x14
+	.asciz "SelectKirbyAirRide"
+	.balign 4
 .global $$248830
 $$248830:
-	.incbin "baserom.dol", 0x45E324, 0x14
+	.asciz "ReleaseKirbyAirRide"
 .global $$248831
 $$248831:
-	.incbin "baserom.dol", 0x45E338, 0x14
+	.asciz "ExplainKirbyAirRide"
 .global $$248833
 $$248833:
-	.incbin "baserom.dol", 0x45E34C, 0xC
+	.asciz "KirbyMirror"
 .global $$248834
 $$248834:
-	.incbin "baserom.dol", 0x45E358, 0x14
+	.asciz "SelectKirbyMirror"
+	.balign 4
 .global $$248835
 $$248835:
-	.incbin "baserom.dol", 0x45E36C, 0x14
+	.asciz "ReleaseKirbyMirror"
+	.balign 4
 .global $$248836
 $$248836:
-	.incbin "baserom.dol", 0x45E380, 0x14
+	.asciz "ExplainKirbyMirror"
+	.balign 4
 .global $$248837
 $$248837:
-	.incbin "baserom.dol", 0x45E394, 0xC
+	.asciz "KirbyTouch"
+	.balign 4
 .global $$248838
 $$248838:
-	.incbin "baserom.dol", 0x45E3A0, 0x14
+	.asciz "SelectKirbyTouch"
+	.balign 4
 .global $$248839
 $$248839:
-	.incbin "baserom.dol", 0x45E3B4, 0x14
+	.asciz "ReleaseKirbyTouch"
+	.balign 4
 .global $$248840
 $$248840:
-	.incbin "baserom.dol", 0x45E3C8, 0x14
+	.asciz "ExplainKirbyTouch"
+	.balign 4
 .global $$248842
 $$248842:
-	.incbin "baserom.dol", 0x45E3DC, 0x10
+	.asciz "KirbyDoroche"
+	.balign 4
 .global $$248843
 $$248843:
-	.incbin "baserom.dol", 0x45E3EC, 0x14
+	.asciz "SelectKirbyDoroche"
+	.balign 4
 .global $$248844
 $$248844:
-	.incbin "baserom.dol", 0x45E400, 0x14
+	.asciz "ReleaseKirbyDoroche"
 .global $$248845
 $$248845:
-	.incbin "baserom.dol", 0x45E414, 0x14
+	.asciz "ExplainKirbyDoroche"
 .global $$248846
 $$248846:
-	.incbin "baserom.dol", 0x45E428, 0xC
+	.asciz "KirbyDDX"
+	.balign 4
 .global $$248847
 $$248847:
-	.incbin "baserom.dol", 0x45E434, 0x14
+	.asciz "SelectKirbyDDX"
+	.balign 4
+	.4byte 0
 .global $$248848
 $$248848:
-	.incbin "baserom.dol", 0x45E448, 0x10
+	.asciz "ReleaseKirbyDDX"
 .global $$248849
 $$248849:
-	.incbin "baserom.dol", 0x45E458, 0x10
+	.asciz "ExplainKirbyDDX"
 .global $$248850
 $$248850:
-	.incbin "baserom.dol", 0x45E468, 0x10
+	.asciz "KirbyEpicYarn"
+	.balign 4
 .global $$248851
 $$248851:
-	.incbin "baserom.dol", 0x45E478, 0x14
+	.asciz "SelectKirbyEpicYarn"
 .global $$248852
 $$248852:
-	.incbin "baserom.dol", 0x45E48C, 0x18
+	.asciz "ReleaseKirbyEpicYarn"
+	.balign 4
 .global $$248853
 $$248853:
-	.incbin "baserom.dol", 0x45E4A4, 0x1C
+	.asciz "ExplainKirbyEpicYarn"
+	.balign 4
+	.4byte 0
 .global $$248855
 $$248855:
-	.incbin "baserom.dol", 0x45E4C0, 0x10
+	.asciz "KirbyMassAttack"
 .global $$248856
 $$248856:
-	.incbin "baserom.dol", 0x45E4D0, 0x18
+	.asciz "SelectKirbyMassAttack"
+	.balign 4
 .global $$248857
 $$248857:
-	.incbin "baserom.dol", 0x45E4E8, 0x18
+	.asciz "ReleaseKirbyMassAttack"
+	.balign 4
 .global $$248858
 $$248858:
-	.incbin "baserom.dol", 0x45E500, 0x18
+	.asciz "ExplainKirbyMassAttack"
+	.balign 4
 .global $$248859
 $$248859:
-	.incbin "baserom.dol", 0x45E518, 0xC
+	.asciz "KirbyWii"
+	.balign 4
 .global $$248860
 $$248860:
-	.incbin "baserom.dol", 0x45E524, 0x14
+	.asciz "SelectKirbyWii"
+	.balign 4
+	.4byte 0
 .global $$248861
 $$248861:
-	.incbin "baserom.dol", 0x45E538, 0x10
+	.asciz "ReleaseKirbyWii"
 .global $$248862
 $$248862:
-	.incbin "baserom.dol", 0x45E548, 0x10
+	.asciz "ExplainKirbyWii"
 .global $$248864
 $$248864:
-	.incbin "baserom.dol", 0x45E558, 0x10
+	.asciz "SelectKirby20"
+	.balign 4
 .global $$248865
 $$248865:
-	.incbin "baserom.dol", 0x45E568, 0x10
+	.asciz "ReleaseKirby20"
+	.balign 4
 .global $$248866
 $$248866:
-	.incbin "baserom.dol", 0x45E578, 0x10
+	.asciz "ExplainKirby20"
+	.balign 4
 .global $$249027
 $$249027:
-	.incbin "baserom.dol", 0x45E588, 0xC
+	.asciz "ToMainMenu"
+	.balign 4
 .global $$249035
 $$249035:
-	.incbin "baserom.dol", 0x45E594, 0x14
+	.asciz "PlayMusicCheck"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249207
 $$249207:
-	.incbin "baserom.dol", 0x493A08, 0x8
+	.asciz ".msbt"
+	.balign 4
 .global $$249208
 $$249208:
-	.incbin "baserom.dol", 0x493A10, 0x8
+	.asciz "%s%s"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x494BE8, 0x8
+	.asciz "Dummy"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x494BF0, 0x8
+	.asciz "Kirby1"
+	.balign 4
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x494BF8, 0x4
+	.4byte 0x47420000
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x494BFC, 0x4
+	.4byte 0x46430000
 .global $$248771
 $$248771:
-	.incbin "baserom.dol", 0x494C00, 0x4
+	.4byte 0
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x494C04, 0x4
+	.4byte 0x53464300
 .global $$248781
 $$248781:
-	.incbin "baserom.dol", 0x494C08, 0x8
+	.asciz "Kirby2"
+	.balign 4
 .global $$248800
 $$248800:
-	.incbin "baserom.dol", 0x494C10, 0x8
+	.asciz "Kirby3"
+	.balign 4
 .global $$248805
 $$248805:
-	.incbin "baserom.dol", 0x494C18, 0x8
+	.asciz "Kirby64"
 .global $$248809
 $$248809:
-	.incbin "baserom.dol", 0x494C20, 0x4
+	.4byte 0x4E363400
 .global $$248816
 $$248816:
-	.incbin "baserom.dol", 0x494C24, 0x4
+	.4byte 0x47424300
 .global $$248821
 $$248821:
-	.incbin "baserom.dol", 0x494C28, 0x8
+	.4byte 0x47424100
+	.4byte 0
 .global $$248826
 $$248826:
-	.incbin "baserom.dol", 0x494C30, 0x8
+	.asciz "TVAnime"
 .global $$248832
 $$248832:
-	.incbin "baserom.dol", 0x494C38, 0x4
+	.4byte 0x47430000
 .global $$248841
 $$248841:
-	.incbin "baserom.dol", 0x494C3C, 0x4
+	.4byte 0x44530000
 .global $$248854
 $$248854:
-	.incbin "baserom.dol", 0x494C40, 0x8
+	.4byte 0x57696900
+	.4byte 0
 .global $$248863
 $$248863:
-	.incbin "baserom.dol", 0x494C48, 0x8
+	.asciz "Kirby20"
 .global $$248867
 $$248867:
-	.incbin "baserom.dol", 0x494C50, 0x8
+	.asciz "Donut"
+	.balign 4
 .global $$249033
 $$249033:
-	.incbin "baserom.dol", 0x494C58, 0x8
+	.asciz "%s%d"
+	.balign 4

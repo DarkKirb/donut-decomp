@@ -178,24 +178,31 @@ rotate__Q23g3d7ResNodeCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2ref__Q34nw4r3g3d7ResNodeCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d7ResNodeCFv$$20:
-	.incbin "baserom.dol", 0x4509B0, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d7ResNodeCFv
 $$2STRING$$2ref__Q34nw4r3g3d7ResNodeCFv:
-	.incbin "baserom.dol", 0x4509CC, 0x14
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
 .global $$2STRING$$2GetID__Q34nw4r3g3d7ResNodeCFv$$20
 $$2STRING$$2GetID__Q34nw4r3g3d7ResNodeCFv$$20:
-	.incbin "baserom.dol", 0x4509E0, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2GetID__Q34nw4r3g3d7ResNodeCFv
 $$2STRING$$2GetID__Q34nw4r3g3d7ResNodeCFv:
-	.incbin "baserom.dol", 0x450A00, 0x18
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2GetMtxID__Q34nw4r3g3d7ResNodeCFv$$20
 $$2STRING$$2GetMtxID__Q34nw4r3g3d7ResNodeCFv$$20:
-	.incbin "baserom.dol", 0x450A18, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2GetMtxID__Q34nw4r3g3d7ResNodeCFv
 $$2STRING$$2GetMtxID__Q34nw4r3g3d7ResNodeCFv:
-	.incbin "baserom.dol", 0x450A38, 0x18
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __FUNCTION__$30525
 __FUNCTION__$30525:
-	.incbin "baserom.dol", 0x4931D0, 0x8
+	.4byte 0x72656600
+	.4byte 0

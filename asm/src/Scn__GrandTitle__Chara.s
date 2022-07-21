@@ -891,101 +891,154 @@ isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256054
 $$256054:
-	.incbin "baserom.dol", 0x4570E0, 0x18
+	.asciz "Scn.GrandTitle.Chara"
+	.balign 4
 .global $$256055
 $$256055:
-	.incbin "baserom.dol", 0x4570F8, 0x1C
+	.asciz "void changeAnim(string,int)"
 .global $$256056
 $$256056:
-	.incbin "baserom.dol", 0x457114, 0x14
+	.asciz "bool isAnimLooped()"
 .global $$256057
 $$256057:
-	.incbin "baserom.dol", 0x457128, 0x20
+	.asciz "void effectRequestN(int,string)"
 .global $$256058
 $$256058:
-	.incbin "baserom.dol", 0x457148, 0x24
+	.asciz "void effectForeRequestN(int,string)"
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x45716C, 0x24
+	.asciz "void effectWarpRequestN(int,string)"
 .global $$256060
 $$256060:
-	.incbin "baserom.dol", 0x457190, 0x14
+	.asciz "void resetEffect()"
+	.balign 4
 .global $$256061
 $$256061:
-	.incbin "baserom.dol", 0x4571A4, 0x1C
+	.asciz "void setVisibility(bool)"
+	.balign 4
 .global $$256062
 $$256062:
-	.incbin "baserom.dol", 0x4571C0, 0x20
+	.asciz "void setBlockVisibility(bool)"
+	.balign 4
 .global $$256063
 $$256063:
-	.incbin "baserom.dol", 0x4571E0, 0x18
+	.asciz "void flashStart(int)"
+	.balign 4
 .global $$256064
 $$256064:
-	.incbin "baserom.dol", 0x4571F8, 0x18
+	.asciz "void flashReset()"
+	.balign 4
+	.4byte 0
 .global $$256065
 $$256065:
-	.incbin "baserom.dol", 0x457210, 0x20
+	.asciz "void requestWalkSE(int,int,int)"
 .global $$256066
 $$256066:
-	.incbin "baserom.dol", 0x457230, 0x18
+	.asciz "void stopWalkSE()"
+	.balign 4
+	.4byte 0
 .global $$256067
 $$256067:
-	.incbin "baserom.dol", 0x457248, 0x20
+	.asciz "void setLoopAnim(string,string)"
 .global $$256068
 $$256068:
-	.incbin "baserom.dol", 0x457268, 0x20
+	.asciz "bool isCelebrateAnimPlayed()"
+	.balign 4
 .global $$256070
 $$256070:
-	.incbin "baserom.dol", 0x457288, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4EE8  ;# ptr
 .global $$256126
 $$256126:
-	.incbin "baserom.dol", 0x457294, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4EA4  ;# ptr
 .global $$256131
 $$256131:
-	.incbin "baserom.dol", 0x4572A0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4E80  ;# ptr
 .global $$256139
 $$256139:
-	.incbin "baserom.dol", 0x4572AC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4E34  ;# ptr
 .global $$256142
 $$256142:
-	.incbin "baserom.dol", 0x4572B8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4E10  ;# ptr
 .global $$256147
 $$256147:
-	.incbin "baserom.dol", 0x4572C4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4DDC  ;# ptr
 .global $$256150
 $$256150:
-	.incbin "baserom.dol", 0x4572D0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4DA8  ;# ptr
 .global $$256158
 $$256158:
-	.incbin "baserom.dol", 0x4572DC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4D74  ;# ptr
 .global $$256163
 $$256163:
-	.incbin "baserom.dol", 0x4572E8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4D50  ;# ptr
 .global $$256168
 $$256168:
-	.incbin "baserom.dol", 0x4572F4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4D0C  ;# ptr
 .global $$256176
 $$256176:
-	.incbin "baserom.dol", 0x457300, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4CC8  ;# ptr
 .global $$256181
 $$256181:
-	.incbin "baserom.dol", 0x45730C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4C84  ;# ptr
 .global $$256186
 $$256186:
-	.incbin "baserom.dol", 0x457318, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4C60  ;# ptr
 .global $$256191
 $$256191:
-	.incbin "baserom.dol", 0x457324, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4BB8  ;# ptr
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv:
-	.incbin "baserom.dol", 0x457330, 0x88
+	.asciz "MintPtr is 0."
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv$$20
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv$$20:
-	.incbin "baserom.dol", 0x4936E8, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256198
 $$256198:
-	.incbin "baserom.dol", 0x49A710, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

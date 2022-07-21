@@ -28,7 +28,7 @@ __ct__Q36effect6detail10CameraInfoFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251288
 $$251288:
-	.incbin "baserom.dol", 0x49A170, 0x4
+	.4byte 0
 .global $$251289
 $$251289:
-	.incbin "baserom.dol", 0x49A174, 0x4
+	.4byte 0x3F800000

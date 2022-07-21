@@ -65,4 +65,11 @@ __dt__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit
 __vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit:
-	.incbin "baserom.dol", 0x4709D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029F1E0  ;# ptr
+	.4byte 0x8029F160  ;# ptr
+	.4byte 0x8029F164  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

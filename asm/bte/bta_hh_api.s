@@ -281,9 +281,11 @@ lbl_8007D4D0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2863
 $$2863:
-	.incbin "baserom.dol", 0x4371E0, 0x30
+	.asciz "No resource to send HID host Connect request."
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global bta_hh_reg
 bta_hh_reg:
-	.incbin "baserom.dol", 0x499478, 0x8
+	.4byte 0x8007D838  ;# ptr
+	.4byte 0x8007D19C  ;# ptr

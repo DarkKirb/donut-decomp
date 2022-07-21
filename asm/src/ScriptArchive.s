@@ -107,9 +107,11 @@ lbl_801C0C48:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x455F10, 0x18
+	.asciz "mint/Archive.bin.cmp"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2
 T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2:
-	.incbin "baserom.dol", 0x4936B8, 0x8
+	.4byte 0x80459E10
+	.4byte 0

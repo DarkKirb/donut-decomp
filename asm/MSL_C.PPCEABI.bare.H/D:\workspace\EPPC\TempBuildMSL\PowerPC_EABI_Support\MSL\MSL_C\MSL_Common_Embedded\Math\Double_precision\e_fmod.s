@@ -274,4 +274,7 @@ lbl_80011154:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global Zero
 Zero:
-	.incbin "baserom.dol", 0x4033A0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80000000
+	.4byte 0

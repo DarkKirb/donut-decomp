@@ -194,21 +194,31 @@ procFixPos__Q53scn4step4hero4wing22StateDashAttackWallHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero4wing22StateDashAttackWallHit
 __vt__Q53scn4step4hero4wing22StateDashAttackWallHit:
-	.incbin "baserom.dol", 0x48A088, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80397ED4
+	.4byte 0x80397F78
+	.4byte 0x80397F7C
+	.4byte 0x8035550C
+	.4byte 0x80398068
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256276
 $$256276:
-	.incbin "baserom.dol", 0x49E228, 0x4
+	.4byte 0x3E4CCCCD
 .global $$256277
 $$256277:
-	.incbin "baserom.dol", 0x49E22C, 0x4
+	.4byte 0x3CA3D70A
 .global $$256278
 $$256278:
-	.incbin "baserom.dol", 0x49E230, 0x4
+	.4byte 0x3BA3D70A
 .global $$256279
 $$256279:
-	.incbin "baserom.dol", 0x49E234, 0x4
+	.4byte 0
 .global $$256280
 $$256280:
-	.incbin "baserom.dol", 0x49E238, 0x8
+	.4byte 0x3A83126F
+	.4byte 0

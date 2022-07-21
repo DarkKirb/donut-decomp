@@ -3092,48 +3092,61 @@ InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211607
 $$211607:
-	.incbin "baserom.dol", 0x43E6D8, 0x24
+	.4byte 0x8011BA28  ;# ptr
+	.4byte 0x8011BA30  ;# ptr
+	.4byte 0x8011BA40  ;# ptr
+	.4byte 0x8011BA54  ;# ptr
+	.4byte 0x8011BA60  ;# ptr
+	.4byte 0x8011BA70  ;# ptr
+	.4byte 0x8011BA84  ;# ptr
+	.4byte 0x8011BA90  ;# ptr
+	.4byte 0x8011BAA4  ;# ptr
 .global __vt__Q44nw4r3snd6detail5Voice
 __vt__Q44nw4r3snd6detail5Voice:
-	.incbin "baserom.dol", 0x43E6FC, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x80119CB0  ;# ptr
+	.4byte 0x8011C4D0  ;# ptr
+	.4byte 0x8011C380  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210576
 $$210576:
-	.incbin "baserom.dol", 0x499F58, 0x4
+	.4byte 0x3F800000
 .global $$210577
 $$210577:
-	.incbin "baserom.dol", 0x499F5C, 0x4
+	.4byte 0
 .global $$211354
 $$211354:
-	.incbin "baserom.dol", 0x499F60, 0x4
+	.4byte 0xBDF5C28F
 .global $$211355
 $$211355:
-	.incbin "baserom.dol", 0x499F64, 0x4
+	.4byte 0x3F6147AE
 .global $$211356
 $$211356:
-	.incbin "baserom.dol", 0x499F68, 0x4
+	.4byte 0x3F000000
 .global $$211357
 $$211357:
-	.incbin "baserom.dol", 0x499F6C, 0x4
+	.4byte 0x3F8F5C29
 .global $$211358
 $$211358:
-	.incbin "baserom.dol", 0x499F70, 0x4
+	.4byte 0x3F59999A
 .global $$211359
 $$211359:
-	.incbin "baserom.dol", 0x499F74, 0x4
+	.4byte 0x3E199998
 .global $$211360
 $$211360:
-	.incbin "baserom.dol", 0x499F78, 0x4
+	.4byte 0x40000000
 .global $$211361
 $$211361:
-	.incbin "baserom.dol", 0x499F7C, 0x4
+	.4byte 0x3EB33334
 .global $$211601
 $$211601:
-	.incbin "baserom.dol", 0x499F80, 0x4
+	.4byte 0xBF800000
 .global $$211602
 $$211602:
-	.incbin "baserom.dol", 0x499F84, 0x4
+	.4byte 0xC0400000
 .global $$211603
 $$211603:
-	.incbin "baserom.dol", 0x499F88, 0x8
+	.4byte 0x47000000
+	.4byte 0

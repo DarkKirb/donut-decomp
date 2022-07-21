@@ -463,21 +463,43 @@ __dt__Q24util161StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone19Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util161StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone19StateFallScrewStart$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util161StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone19StateFallScrewStart$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
-	.incbin "baserom.dol", 0x489A88, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803900D0
+	.4byte 0x80390044
 .global __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateSlip$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateSlip$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
-	.incbin "baserom.dol", 0x489A98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803900CC
+	.4byte 0x80390064
 .global __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateFall$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone9StateFall$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
-	.incbin "baserom.dol", 0x489AA8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803900C8
+	.4byte 0x80390084
 .global __vt__Q24util153StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone11StateChange$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util153StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone11StateChange$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
-	.incbin "baserom.dol", 0x489AB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803900C4
+	.4byte 0x803900A4
 .global __vt__Q53scn4step4hero5stone11StateChange
 __vt__Q53scn4step4hero5stone11StateChange:
-	.incbin "baserom.dol", 0x489AC8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038FC84
+	.4byte 0x8038FD1C
+	.4byte 0x8038FF10
+	.4byte 0x8035550C
+	.4byte 0x8038FFD8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258219
 $$258219:
-	.incbin "baserom.dol", 0x49E108, 0x8
+	.4byte 0
+	.4byte 0

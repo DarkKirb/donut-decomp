@@ -1276,28 +1276,31 @@ createAABBox__Q43scn4step2bg17DecorationManagerCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254496
 $$254496:
-	.incbin "baserom.dol", 0x49AD68, 0x4
+	.4byte 0xBF800000
 .global $$254497
 $$254497:
-	.incbin "baserom.dol", 0x49AD6C, 0x4
+	.4byte 0
 .global $$254498
 $$254498:
-	.incbin "baserom.dol", 0x49AD70, 0x4
+	.4byte 0x3F000000
 .global $$254499
 $$254499:
-	.incbin "baserom.dol", 0x49AD74, 0x4
+	.4byte 0x3F800000
 .global $$254500
 $$254500:
-	.incbin "baserom.dol", 0x49AD78, 0x8
+	.4byte 0x3B808081
+	.4byte 0
 .global $$254505
 $$254505:
-	.incbin "baserom.dol", 0x49AD80, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$254511
 $$254511:
-	.incbin "baserom.dol", 0x49AD88, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$254590
 $$254590:
-	.incbin "baserom.dol", 0x49AD90, 0x4
+	.4byte 0xFF7FFFFF
 .global $$254591
 $$254591:
-	.incbin "baserom.dol", 0x49AD94, 0x4
+	.4byte 0x7F7FFFFF

@@ -325,82 +325,157 @@ lbl_803928E0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21
 $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21:
-	.incbin "baserom.dol", 0x41BA40, 0x80
+	.4byte 0x8055B240
+	.4byte 0
+	.4byte 0x8055B248
+	.4byte 0
+	.4byte 0x8048B390
+	.4byte 0
+	.4byte 0x8048B39C
+	.4byte 0
+	.4byte 0x8048B3A8
+	.4byte 0
+	.4byte 0x8055B250
+	.4byte 0
+	.4byte 0x8055B258
+	.4byte 0
+	.4byte 0x8055B260
+	.4byte 0
+	.4byte 0x8048B3B4
+	.4byte 0
+	.4byte 0x8055B268
+	.4byte 0
+	.4byte 0x8048B3C0
+	.4byte 0
+	.4byte 0x8048B3CC
+	.4byte 0
+	.4byte 0x8048B3DC
+	.4byte 0
+	.4byte 0x8048B3F0
+	.4byte 0
+	.4byte 0x8048B400
+	.4byte 0
+	.4byte 0x8055B270
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248808
 $$248808:
-	.incbin "baserom.dol", 0x487468, 0x28
+	.asciz "step/chara/hero/kirby/parasol/Parasol"
+	.balign 4
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x487490, 0xC
+	.asciz "SwingEnd"
+	.balign 4
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x48749C, 0xC
+	.asciz "Parachute"
+	.balign 4
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x4874A8, 0xC
+	.asciz "DiveStart"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x4874B4, 0xC
+	.asciz "DrillStart"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x4874C0, 0xC
+	.asciz "DrillEnd"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x4874CC, 0x10
+	.asciz "ParasolCatch"
+	.balign 4
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x4874DC, 0x14
+	.asciz "ParasolPerformance"
+	.balign 4
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x4874F0, 0x10
+	.asciz "ParasolThrow"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x487500, 0x10
+	.asciz "CloseStart"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257636
 $$257636:
-	.incbin "baserom.dol", 0x489C58, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$257637
 $$257637:
-	.incbin "baserom.dol", 0x489C78, 0x28
+	.asciz "step/chara/hero/kirby/parasol/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero7parasol7Parasol
 __vt__Q53scn4step4hero7parasol7Parasol:
-	.incbin "baserom.dol", 0x489CA0, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0x803925A4
+	.4byte 0x80392630
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x80392738
+	.4byte 0x80392870
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x80392850
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x497608, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x497610, 0x8
+	.asciz "AllL"
+	.balign 4
 .global $$2LOCAL$$2ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv$$2names$$21
 $$2LOCAL$$2ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv$$2names$$21:
-	.incbin "baserom.dol", 0x497618, 0x8
+	.4byte 0x8055B228
+	.4byte 0x8055B230
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x497620, 0x8
+	.asciz "Carry"
+	.balign 4
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x497628, 0x8
+	.asciz "Swing"
+	.balign 4
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x497630, 0x8
+	.asciz "Dive"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x497638, 0x8
+	.asciz "DiveEnd"
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x497640, 0x8
+	.asciz "Shield"
+	.balign 4
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x497648, 0x8
+	.asciz "Drill"
+	.balign 4
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x497650, 0x8
+	.asciz "Close"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv$$2desc

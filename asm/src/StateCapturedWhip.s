@@ -337,27 +337,37 @@ __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageCapture$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageCapture$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471548, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A5064  ;# ptr
+	.4byte 0x802A5048  ;# ptr
 .global __vt__Q53scn4step5enemy8captured17StateCapturedWhip
 __vt__Q53scn4step5enemy8captured17StateCapturedWhip:
-	.incbin "baserom.dol", 0x471558, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A4C9C  ;# ptr
+	.4byte 0x802A4D10  ;# ptr
+	.4byte 0x802A501C  ;# ptr
+	.4byte 0x802A5020  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256311
 $$256311:
-	.incbin "baserom.dol", 0x49C040, 0x4
+	.4byte 0
 .global $$256312
 $$256312:
-	.incbin "baserom.dol", 0x49C044, 0x4
+	.4byte 0x3F800000
 .global $$256313
 $$256313:
-	.incbin "baserom.dol", 0x49C048, 0x4
+	.4byte 0xBF800000
 .global $$256351
 $$256351:
-	.incbin "baserom.dol", 0x49C04C, 0x4
+	.4byte 0x3727C5AC
 .global $$256352
 $$256352:
-	.incbin "baserom.dol", 0x49C050, 0x4
+	.4byte 0x3D4CCCCD
 .global $$256353
 $$256353:
-	.incbin "baserom.dol", 0x49C054, 0x4
+	.4byte 0x3E800000

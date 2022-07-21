@@ -2948,84 +2948,321 @@ __VIResetSIIdle:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42BD90, 0x48
+	.asciz "<< RVL_SDK - VI \trelease build: Aug 23 2010 17:33:19 (0x4302_145) >>"
+	.balign 4
 .global timing
 timing:
-	.incbin "baserom.dol", 0x42BDD8, 0x1A4
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x00040C0C
+	.4byte 0x0C0C0208
+	.4byte 0x02080208
+	.4byte 0x0208020E
+	.4byte 0x01AD4047
+	.4byte 0x69A20175
+	.4byte 0x7A00019C
+	.4byte 0x0500011F
+	.4byte 0x00230024
+	.4byte 0x00010000
+	.4byte 0x0D0C0B0A
+	.4byte 0x026B026A
+	.4byte 0x0269026C
+	.4byte 0x027101B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C8500
+	.4byte 0x01A40500
+	.4byte 0x011F0021
+	.4byte 0x00210002
+	.4byte 0x00020D0B
+	.4byte 0x0D0B026B
+	.4byte 0x026D026B
+	.4byte 0x026D0270
+	.4byte 0x01B0404B
+	.4byte 0x6AAC017C
+	.4byte 0x850001A4
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x100F0E0D
+	.4byte 0x02060205
+	.4byte 0x02040207
+	.4byte 0x020D01AD
+	.4byte 0x404E70A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x0004100E
+	.4byte 0x100E0206
+	.4byte 0x02080206
+	.4byte 0x0208020E
+	.4byte 0x01AD404E
+	.4byte 0x70A20175
+	.4byte 0x7A00019C
+	.4byte 0x0C0001E0
+	.4byte 0x00300030
+	.4byte 0x00060006
+	.4byte 0x18181818
+	.4byte 0x040E040E
+	.4byte 0x040E040E
+	.4byte 0x041A01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0C00
+	.4byte 0x01E0002C
+	.4byte 0x002C000A
+	.4byte 0x000A1818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69A8017B
+	.4byte 0x7A00019C
+	.4byte 0x060000F1
+	.4byte 0x00180019
+	.4byte 0x00010000
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x4047699F
+	.4byte 0x01727A00
+	.4byte 0x019C0C00
+	.4byte 0x01E00030
+	.4byte 0x00300006
+	.4byte 0x00061818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69B40187
+	.4byte 0x7A00019C
+	.4byte 0x0A000240
+	.4byte 0x003E003E
+	.4byte 0x00060006
+	.4byte 0x14141414
+	.4byte 0x04D804D8
+	.4byte 0x04D804D8
+	.4byte 0x04E201B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C7A00
+	.4byte 0x019C0000
 .global taps
 taps:
-	.incbin "baserom.dol", 0x42BF7C, 0x34
+	.4byte 0x01F001DC
+	.4byte 0x01AE0174
+	.4byte 0x012900DB
+	.4byte 0x008E0046
+	.4byte 0x000C00E2
+	.4byte 0x00CB00C0
+	.4byte 0x00C400CF
+	.4byte 0x00DE00EC
+	.4byte 0x00FC0008
+	.4byte 0x000F0013
+	.4byte 0x0013000F
+	.4byte 0x000C0008
+	.4byte 0x00010000
 .global GXPal528Prog
 GXPal528Prog:
-	.incbin "baserom.dol", 0x42BFB0, 0x3C
+	.4byte 0x00000006
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060000
+	.4byte 0x15161500
+	.4byte 0
 .global GXPal528ProgSoft
 GXPal528ProgSoft:
-	.incbin "baserom.dol", 0x42BFEC, 0x3C
+	.4byte 0x00000006
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
 .global GXPal524ProgAa
 GXPal524ProgAa:
-	.incbin "baserom.dol", 0x42C028, 0x40
+	.4byte 0x00000006
+	.4byte 0x02800108
+	.4byte 0x020C0028
+	.4byte 0x00170280
+	.4byte 0x020C0000
+	.4byte 0
+	.4byte 0x00010302
+	.4byte 0x0906030A
+	.4byte 0x03020906
+	.4byte 0x030A0902
+	.4byte 0x0306090A
+	.4byte 0x09020306
+	.4byte 0x090A0408
+	.4byte 0x0C100C08
+	.4byte 0x04000000
+	.4byte 0
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.incbin "baserom.dol", 0x42C068, 0x10
+	.4byte 0x8002BAD0  ;# ptr
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
 .global $$23436
 $$23436:
-	.incbin "baserom.dol", 0x42C078, 0x24
+	.4byte 0x8002BFC0  ;# ptr
+	.4byte 0x8002BFC8  ;# ptr
+	.4byte 0x8002BFD0  ;# ptr
+	.4byte 0x8002BFC0  ;# ptr
+	.4byte 0x8002BFC8  ;# ptr
+	.4byte 0x8002BFD0  ;# ptr
+	.4byte 0x8002BFC0  ;# ptr
+	.4byte 0x8002BFC0  ;# ptr
+	.4byte 0x8002BFC0  ;# ptr
 .global $$23466
 $$23466:
-	.incbin "baserom.dol", 0x42C09C, 0x8C
+	.4byte 0x8002C540  ;# ptr
+	.4byte 0x8002C54C  ;# ptr
+	.4byte 0x8002C5B8  ;# ptr
+	.4byte 0x8002C5C8  ;# ptr
+	.4byte 0x8002C55C  ;# ptr
+	.4byte 0x8002C56C  ;# ptr
+	.4byte 0x8002C618  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C598  ;# ptr
+	.4byte 0x8002C5A8  ;# ptr
+	.4byte 0x8002C5B8  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C5D8  ;# ptr
+	.4byte 0x8002C5E8  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C57C  ;# ptr
+	.4byte 0x8002C588  ;# ptr
+	.4byte 0x8002C5B8  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C5F8  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C608  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C628  ;# ptr
+	.4byte 0x8002C628  ;# ptr
+	.4byte 0x8002C628  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C630  ;# ptr
+	.4byte 0x8002C628  ;# ptr
 .global $$23633
 $$23633:
-	.incbin "baserom.dol", 0x42C128, 0x24
+	.4byte 0x8002CCD4  ;# ptr
+	.4byte 0x8002CCDC  ;# ptr
+	.4byte 0x8002CCE4  ;# ptr
+	.4byte 0x8002CCD4  ;# ptr
+	.4byte 0x8002CCDC  ;# ptr
+	.4byte 0x8002CCE4  ;# ptr
+	.4byte 0x8002CCD4  ;# ptr
+	.4byte 0x8002CCD4  ;# ptr
+	.4byte 0x8002CCD4  ;# ptr
 .global $$23931
 $$23931:
-	.incbin "baserom.dol", 0x42C14C, 0x2C
+	.asciz "***************************************\n"
+	.balign 4
 .global $$23932
 $$23932:
-	.incbin "baserom.dol", 0x42C178, 0x2C
+	.asciz " ! ! ! C A U T I O N ! ! !             \n"
+	.balign 4
 .global $$23933
 $$23933:
-	.incbin "baserom.dol", 0x42C1A4, 0x2C
+	.asciz "This TV format \"DEBUG_PAL\" is only for \n"
+	.balign 4
 .global $$23934
 $$23934:
-	.incbin "baserom.dol", 0x42C1D0, 0x2C
+	.asciz "temporary solution until PAL DAC board \n"
+	.balign 4
 .global $$23935
 $$23935:
-	.incbin "baserom.dol", 0x42C1FC, 0x2C
+	.asciz "is available. Please do NOT use this   \n"
+	.balign 4
 .global $$23936
 $$23936:
-	.incbin "baserom.dol", 0x42C228, 0x2C
+	.asciz "mode in real games!!!                  \n"
+	.balign 4
 .global $$23938
 $$23938:
-	.incbin "baserom.dol", 0x42C254, 0x4C
+	.asciz "VIConfigure(): Tried to change mode from (%d) to (%d), which is forbidden\n"
+	.balign 4
 .global $$24121
 $$24121:
-	.incbin "baserom.dol", 0x42C2A0, 0x24
+	.4byte 0x8002E048  ;# ptr
+	.4byte 0x8002E050  ;# ptr
+	.4byte 0x8002E054  ;# ptr
+	.4byte 0x8002E048  ;# ptr
+	.4byte 0x8002E050  ;# ptr
+	.4byte 0x8002E054  ;# ptr
+	.4byte 0x8002E048  ;# ptr
+	.4byte 0x8002E048  ;# ptr
+	.4byte 0x8002E048  ;# ptr
 .global $$24441
 $$24441:
-	.incbin "baserom.dol", 0x42C2C4, 0x24
+	.4byte 0x8002E394  ;# ptr
+	.4byte 0x8002E39C  ;# ptr
+	.4byte 0x8002E3A0  ;# ptr
+	.4byte 0x8002E394  ;# ptr
+	.4byte 0x8002E39C  ;# ptr
+	.4byte 0x8002E3A0  ;# ptr
+	.4byte 0x8002E394  ;# ptr
+	.4byte 0x8002E394  ;# ptr
+	.4byte 0x8002E394  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __VIVersion
 __VIVersion:
-	.incbin "baserom.dol", 0x492908, 0x4
+	.4byte 0x8042FC90
 .global $$2LOCAL$$2OnShutdown__FiUl$$2first
 $$2LOCAL$$2OnShutdown__FiUl$$2first:
-	.incbin "baserom.dol", 0x49290C, 0x4
+	.4byte 0x00000001
 .global $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2old_dtvStatus
 $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2old_dtvStatus:
-	.incbin "baserom.dol", 0x492910, 0x4
+	.4byte 0x000003E7
 .global $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2old_tvtype$$20
 $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2old_tvtype$$20:
-	.incbin "baserom.dol", 0x492914, 0x4
+	.4byte 0x000003E7
 .global $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2__VIDimmingFlag_Enable_old$$21
 $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2__VIDimmingFlag_Enable_old$$21:
-	.incbin "baserom.dol", 0x492918, 0x4
+	.4byte 0x00000001
 .global $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2__VIDVDStopFlag_Enable_old$$22
 $$2LOCAL$$2__VIRetraceHandler__FsP9OSContext$$2__VIDVDStopFlag_Enable_old$$22:
-	.incbin "baserom.dol", 0x49291C, 0x4
+	.4byte 0x00000001
 .global $$23937
 $$23937:
-	.incbin "baserom.dol", 0x492920, 0x8
+	.asciz "vi.c"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global shdwRegs

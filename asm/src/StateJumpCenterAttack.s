@@ -292,18 +292,27 @@ lbl_802542AC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss8kingsdoo21StateJumpCenterAttack
 __vt__Q53scn4step4boss8kingsdoo21StateJumpCenterAttack:
-	.incbin "baserom.dol", 0x464878, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80253FC8  ;# ptr
+	.4byte 0x80253FCC  ;# ptr
+	.4byte 0x80254040  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80254220  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256165
 $$256165:
-	.incbin "baserom.dol", 0x49B3B8, 0x4
+	.4byte 0
 .global $$256209
 $$256209:
-	.incbin "baserom.dol", 0x49B3BC, 0x4
+	.4byte 0x42B40000
 .global $$256210
 $$256210:
-	.incbin "baserom.dol", 0x49B3C0, 0x8
+	.4byte 0x43340000
+	.4byte 0
 .global $$256213
 $$256213:
-	.incbin "baserom.dol", 0x49B3C8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

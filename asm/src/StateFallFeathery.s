@@ -140,4 +140,9 @@ lbl_803C7D34:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state17StateFallFeathery
 __vt__Q53scn4step4item5state17StateFallFeathery:
-	.incbin "baserom.dol", 0x48E6A8, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C7BE8
+	.4byte 0x803C7C64
+	.4byte 0x803C7C68
+	.4byte 0x803C7CFC

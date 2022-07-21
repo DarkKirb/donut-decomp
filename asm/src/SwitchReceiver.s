@@ -113,4 +113,11 @@ onSwitchOn__Q43scn4step7gimmick14SwitchReceiverFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick14SwitchReceiver
 __vt__Q43scn4step7gimmick14SwitchReceiver:
-	.incbin "baserom.dol", 0x47B090, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F7C78
+	.4byte 0x802F7D00
+	.4byte 0x802F7CFC
+	.4byte 0x802F7CF8
+	.4byte 0x802F7CF4
+	.4byte 0x802F7CF0

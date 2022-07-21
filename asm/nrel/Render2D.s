@@ -146,4 +146,5 @@ renderRect__Q34nrel8ezrender8Render2DFRCQ34nw4r2ut4RectRC8_GXColor:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24710
 $$24710:
-	.incbin "baserom.dol", 0x49A0B8, 0x8
+	.4byte 0x808080FF
+	.4byte 0

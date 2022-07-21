@@ -893,31 +893,41 @@ lbl_8032B1A8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DIR_ROTATION__Q53scn4step7gimmick9waterflow23$$2unnamed$$2WaterFlow_cpp$$2
 DIR_ROTATION__Q53scn4step7gimmick9waterflow23$$2unnamed$$2WaterFlow_cpp$$2:
-	.incbin "baserom.dol", 0x415CA0, 0x20
+	.4byte 0
+	.4byte 0x439D8000
+	.4byte 0x43870000
+	.4byte 0x43610000
+	.4byte 0x43340000
+	.4byte 0x43070000
+	.4byte 0x42B40000
+	.4byte 0x42340000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253562
 $$253562:
-	.incbin "baserom.dol", 0x47E7F8, 0x18
+	.asciz "step/gimmick/WaterFlow"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253723
 $$253723:
-	.incbin "baserom.dol", 0x496DD0, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253563
 $$253563:
-	.incbin "baserom.dol", 0x49D5F8, 0x4
+	.4byte 0
 .global $$253722
 $$253722:
-	.incbin "baserom.dol", 0x49D5FC, 0x4
+	.4byte 0x3E99999A
 .global $$253805
 $$253805:
-	.incbin "baserom.dol", 0x49D600, 0x4
+	.4byte 0x3C8EFA35
 .global $$253821
 $$253821:
-	.incbin "baserom.dol", 0x49D604, 0x4
+	.4byte 0x41C00000
 .global $$253822
 $$253822:
-	.incbin "baserom.dol", 0x49D608, 0x8
+	.4byte 0x43100000
+	.4byte 0

@@ -2568,44 +2568,92 @@ lbl_8007A9C8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_service_id_to_uuid_lkup_tbl
 bta_service_id_to_uuid_lkup_tbl:
-	.incbin "baserom.dol", 0x403FA0, 0x30
+	.4byte 0x12001101
+	.4byte 0x11031111
+	.4byte 0x11021108
+	.4byte 0x111E1105
+	.4byte 0x11061109
+	.4byte 0x11101104
+	.4byte 0x1118111B
+	.4byte 0x11151116
+	.4byte 0x1117112D
+	.4byte 0x110B110E
+	.4byte 0x11241304
+	.4byte 0x112F0000
 .global bta_service_id_to_btm_srv_id_lkup_tbl
 bta_service_id_to_btm_srv_id_lkup_tbl:
-	.incbin "baserom.dol", 0x403FD0, 0x60
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x0000000B
+	.4byte 0x00000002
+	.4byte 0x0000000C
+	.4byte 0x0000001D
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x00000004
+	.4byte 0x00000016
+	.4byte 0x00000023
+	.4byte 0x00000019
+	.4byte 0x0000001B
+	.4byte 0x0000001A
+	.4byte 0x00000028
+	.4byte 0x00000025
+	.4byte 0x00000027
+	.4byte 0x00000020
+	.4byte 0x00000025
+	.4byte 0x0000002C
+	.4byte 0
 .global bta_security
 bta_security:
-	.incbin "baserom.dol", 0x404030, 0x18
+	.4byte 0x80079BCC  ;# ptr
+	.4byte 0x80079D54  ;# ptr
+	.4byte 0x80079E8C  ;# ptr
+	.4byte 0x80079E84  ;# ptr
+	.4byte 0x80079F28  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22277
 $$22277:
-	.incbin "baserom.dol", 0x436B58, 0x20
+	.asciz " bta_dm_disable_timer_cback  "
+	.balign 4
 .global $$22402
 $$22402:
-	.incbin "baserom.dol", 0x436B78, 0x20
+	.asciz " bta_dm_search_timer_cback  "
+	.balign 4
 .global $$22488
 $$22488:
-	.incbin "baserom.dol", 0x436B98, 0x40
+	.asciz " bta_dm_pin_cback() -> Failed to start Remote Name Request  "
+	.balign 4
 .global $$22555
 $$22555:
-	.incbin "baserom.dol", 0x436BD8, 0x14
+	.asciz " timer stopped  "
+	.balign 4
 .global $$22586
 $$22586:
-	.incbin "baserom.dol", 0x436BEC, 0x30
+	.asciz "bta_dm_l2cap_server_compress_cback, BTA ID %d"
+	.balign 4
 .global $$22689
 $$22689:
-	.incbin "baserom.dol", 0x436C1C, 0x3C
+	.asciz "bta_dm_compress_cback open app_id %d, BTA id %d, state %d"
+	.balign 4
 .global $$22690
 $$22690:
-	.incbin "baserom.dol", 0x436C58, 0x40
+	.asciz "bta_dm_compress_cback close app_id %d, BTA id %d, state %d"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21489
 $$21489:
-	.incbin "baserom.dol", 0x499460, 0x2
+	.byte 0x00, 0x01
 .global lbl_8055E922
 lbl_8055E922:
-	.incbin "baserom.dol", 0x499462, 0x6
+	.byte 0x80, 0x01
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_dm_compress_srvcs

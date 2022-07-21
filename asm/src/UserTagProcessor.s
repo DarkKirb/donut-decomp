@@ -1177,197 +1177,275 @@ setUsePrivateCharButtonPushed__Q23lyt16UserTagProcessorFb:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2
 RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2:
-	.incbin "baserom.dol", 0x410C70, 0x20
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000003
 .global privateCharMap__30$$2unnamed$$2UserTagProcessor_cpp$$2
 privateCharMap__30$$2unnamed$$2UserTagProcessor_cpp$$2:
-	.incbin "baserom.dol", 0x410C90, 0xA0
+	.4byte 0x80457DE0
+	.4byte 0x80557170
+	.4byte 0x80457DEC
+	.4byte 0x80557174
+	.4byte 0x80457DF8
+	.4byte 0x80557178
+	.4byte 0x80457E04
+	.4byte 0x8055717C
+	.4byte 0x80457E10
+	.4byte 0x80557180
+	.4byte 0x80457E1C
+	.4byte 0x80557184
+	.4byte 0x80457E2C
+	.4byte 0x80557188
+	.4byte 0x80457E38
+	.4byte 0x8055718C
+	.4byte 0x80457E48
+	.4byte 0x80557190
+	.4byte 0x80457E58
+	.4byte 0x80557194
+	.4byte 0x80557198
+	.4byte 0x805571A0
+	.4byte 0x805571A4
+	.4byte 0x805571AC
+	.4byte 0x80457E68
+	.4byte 0x805571B0
+	.4byte 0x80457E7C
+	.4byte 0x805571B4
+	.4byte 0x80457E90
+	.4byte 0x805571B8
+	.4byte 0x80457EA0
+	.4byte 0x805571BC
+	.4byte 0x80457EB0
+	.4byte 0x805571C0
+	.4byte 0x80457EBC
+	.4byte 0x805571C4
+	.4byte 0x80457EC8
+	.4byte 0x805571C8
+	.4byte 0x80457EDC
+	.4byte 0x80557178
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249204
 $$249204:
-	.incbin "baserom.dol", 0x453EE0, 0xC
+	.asciz "Button_1"
+	.balign 4
 .global $$249206
 $$249206:
-	.incbin "baserom.dol", 0x453EEC, 0xC
+	.asciz "Button_2"
+	.balign 4
 .global $$249208
 $$249208:
-	.incbin "baserom.dol", 0x453EF8, 0xC
+	.asciz "Button_Up"
+	.balign 4
 .global $$249210
 $$249210:
-	.incbin "baserom.dol", 0x453F04, 0xC
+	.asciz "Button_Down"
 .global $$249212
 $$249212:
-	.incbin "baserom.dol", 0x453F10, 0xC
+	.asciz "Button_Left"
 .global $$249214
 $$249214:
-	.incbin "baserom.dol", 0x453F1C, 0x10
+	.asciz "Button_Right"
+	.balign 4
 .global $$249216
 $$249216:
-	.incbin "baserom.dol", 0x453F2C, 0xC
+	.asciz "Button_A"
+	.balign 4
 .global $$249218
 $$249218:
-	.incbin "baserom.dol", 0x453F38, 0x10
+	.asciz "Shake_LeftHalf"
+	.balign 4
 .global $$249220
 $$249220:
-	.incbin "baserom.dol", 0x453F48, 0x10
+	.asciz "Shake_RightHalf"
 .global $$249222
 $$249222:
-	.incbin "baserom.dol", 0x453F58, 0x10
+	.asciz "Button_Minus"
+	.balign 4
 .global $$249228
 $$249228:
-	.incbin "baserom.dol", 0x453F68, 0x14
+	.asciz "Button_UpRightDown"
+	.balign 4
 .global $$249230
 $$249230:
-	.incbin "baserom.dol", 0x453F7C, 0x14
+	.asciz "Button_UpRight"
+	.balign 4
+	.4byte 0
 .global $$249232
 $$249232:
-	.incbin "baserom.dol", 0x453F90, 0x10
+	.asciz "Button_DownLeft"
 .global $$249234
 $$249234:
-	.incbin "baserom.dol", 0x453FA0, 0x10
+	.asciz "Button_UpDown"
+	.balign 4
 .global $$249236
 $$249236:
-	.incbin "baserom.dol", 0x453FB0, 0xC
+	.asciz "Button_Plus"
 .global $$249238
 $$249238:
-	.incbin "baserom.dol", 0x453FBC, 0xC
+	.asciz "Button_2_3D"
 .global $$249240
 $$249240:
-	.incbin "baserom.dol", 0x453FC8, 0x14
+	.asciz "Button_2_3D_Push"
+	.balign 4
 .global $$249242
 $$249242:
-	.incbin "baserom.dol", 0x453FDC, 0x10
+	.asciz "Button_Random"
+	.balign 4
 .global $$250658
 $$250658:
-	.incbin "baserom.dol", 0x453FEC, 0x10
+	.asciz "Button_Random"
+	.balign 4
 .global $$250943
 $$250943:
-	.incbin "baserom.dol", 0x453FFC, 0xC
+	.asciz "PrivateChar"
 .global __vt__Q23lyt16UserTagProcessor
 __vt__Q23lyt16UserTagProcessor:
-	.incbin "baserom.dol", 0x454008, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801AC7B4  ;# ptr
+	.4byte 0x801B02C8  ;# ptr
+	.4byte 0x801B0CAC  ;# ptr
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$22
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$22:
-	.incbin "baserom.dol", 0x45401C, 0x34
+	.asciz "NW4R:Pointer Error\nstr(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$21
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$21:
-	.incbin "baserom.dol", 0x454050, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$20
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw$$20:
-	.incbin "baserom.dol", 0x454064, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0w$$1FPCw:
-	.incbin "baserom.dol", 0x454098, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5ColorQ34nw4r2ut5Color$$20
 $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5ColorQ34nw4r2ut5Color$$20:
-	.incbin "baserom.dol", 0x4540AC, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5ColorQ34nw4r2ut5Color
 $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5ColorQ34nw4r2ut5Color:
-	.incbin "baserom.dol", 0x4540E0, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetGradationStartColor__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetGradationStartColor__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x4540F0, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetGradationStartColor__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetGradationStartColor__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x454124, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x454134, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x454168, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249205
 $$249205:
-	.incbin "baserom.dol", 0x493550, 0x4
+	.4byte 0xF0000000
 .global $$249207
 $$249207:
-	.incbin "baserom.dol", 0x493554, 0x4
+	.4byte 0xF0010000
 .global $$249209
 $$249209:
-	.incbin "baserom.dol", 0x493558, 0x4
+	.4byte 0xF0020000
 .global $$249211
 $$249211:
-	.incbin "baserom.dol", 0x49355C, 0x4
+	.4byte 0xF0030000
 .global $$249213
 $$249213:
-	.incbin "baserom.dol", 0x493560, 0x4
+	.4byte 0xF0040000
 .global $$249215
 $$249215:
-	.incbin "baserom.dol", 0x493564, 0x4
+	.4byte 0xF0050000
 .global $$249217
 $$249217:
-	.incbin "baserom.dol", 0x493568, 0x4
+	.4byte 0xF0060000
 .global $$249219
 $$249219:
-	.incbin "baserom.dol", 0x49356C, 0x4
+	.4byte 0xF0070000
 .global $$249221
 $$249221:
-	.incbin "baserom.dol", 0x493570, 0x4
+	.4byte 0xF0080000
 .global $$249223
 $$249223:
-	.incbin "baserom.dol", 0x493574, 0x4
+	.4byte 0xF0090000
 .global $$249224
 $$249224:
-	.incbin "baserom.dol", 0x493578, 0x8
+	.asciz "Cursor"
+	.balign 4
 .global $$249225
 $$249225:
-	.incbin "baserom.dol", 0x493580, 0x4
+	.4byte 0xF00A0000
 .global $$249226
 $$249226:
-	.incbin "baserom.dol", 0x493584, 0x8
+	.asciz "Star"
+	.balign 4
 .global $$249227
 $$249227:
-	.incbin "baserom.dol", 0x49358C, 0x4
+	.4byte 0xF0100000
 .global $$249229
 $$249229:
-	.incbin "baserom.dol", 0x493590, 0x4
+	.4byte 0xF0120000
 .global $$249231
 $$249231:
-	.incbin "baserom.dol", 0x493594, 0x4
+	.4byte 0xF0130000
 .global $$249233
 $$249233:
-	.incbin "baserom.dol", 0x493598, 0x4
+	.4byte 0xF0140000
 .global $$249235
 $$249235:
-	.incbin "baserom.dol", 0x49359C, 0x4
+	.4byte 0xF0150000
 .global $$249237
 $$249237:
-	.incbin "baserom.dol", 0x4935A0, 0x4
+	.4byte 0xF0190000
 .global $$249239
 $$249239:
-	.incbin "baserom.dol", 0x4935A4, 0x4
+	.4byte 0xF00D0000
 .global $$249241
 $$249241:
-	.incbin "baserom.dol", 0x4935A8, 0x4
+	.4byte 0xF01D0000
 .global $$250655
 $$250655:
-	.incbin "baserom.dol", 0x4935AC, 0x4
+	.4byte 0xF00B0000
 .global $$250656
 $$250656:
-	.incbin "baserom.dol", 0x4935B0, 0x4
+	.4byte 0xF00C0000
 .global $$250657
 $$250657:
-	.incbin "baserom.dol", 0x4935B4, 0x4
+	.4byte 0xF01D0000
 .global $$250659
 $$250659:
-	.incbin "baserom.dol", 0x4935B8, 0x4
+	.4byte 0xF0020000
 .global $$250660
 $$250660:
-	.incbin "baserom.dol", 0x4935BC, 0x4
+	.4byte 0xF0030000
 .global $$250661
 $$250661:
-	.incbin "baserom.dol", 0x4935C0, 0x4
+	.4byte 0xF0040000
 .global $$250662
 $$250662:
-	.incbin "baserom.dol", 0x4935C4, 0x4
+	.4byte 0xF0050000
 .global $$250663
 $$250663:
-	.incbin "baserom.dol", 0x4935C8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$250941
 $$250941:
-	.incbin "baserom.dol", 0x4935D0, 0x8
+	.asciz "Replace"
 .global $$250942
 $$250942:
-	.incbin "baserom.dol", 0x4935D8, 0x8
+	.asciz "Action"
+	.balign 4

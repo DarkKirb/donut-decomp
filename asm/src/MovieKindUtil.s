@@ -92,95 +92,190 @@ __sinit_$$3MovieKindUtil_cpp:
 /* 801CEDA8 001CABE8  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402440, 0x4
+	.4byte 0x801CED30  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x458DE8, 0x10
+	.asciz "mov/Kirby1.mo"
+	.balign 4
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x458DF8, 0x18
+	.asciz "mov/KirbyDreamLand.mo"
+	.balign 4
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x458E10, 0x14
+	.asciz "mov/KirbyPinBall.mo"
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x458E24, 0x14
+	.asciz "mov/KirbyBall.mo"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x458E38, 0x10
+	.asciz "mov/Kirby2.mo"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x458E48, 0x18
+	.asciz "mov/KirbyBlockBall.mo"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x458E60, 0x10
+	.asciz "mov/KirbySDX.mo"
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x458E70, 0x14
+	.asciz "mov/KirbyKidsGB.mo"
+	.balign 4
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x458E84, 0x10
+	.asciz "mov/Kirby3.mo"
+	.balign 4
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x458E94, 0x14
+	.asciz "mov/KirbyKidsSFC.mo"
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x458EA8, 0x10
+	.asciz "mov/Kirby64.mo"
+	.balign 4
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x458EB8, 0x18
+	.asciz "mov/KirbyKoroKoro.mo"
+	.balign 4
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x458ED0, 0x18
+	.asciz "mov/KirbyDreamLandDX.mo"
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x458EE8, 0x14
+	.asciz "mov/KirbyAirRide.mo"
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x458EFC, 0x14
+	.asciz "mov/KirbyMirror.mo"
+	.balign 4
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x458F10, 0x14
+	.asciz "mov/KirbyTouch.mo"
+	.balign 4
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x458F24, 0x14
+	.asciz "mov/KirbyDoroche.mo"
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x458F38, 0x10
+	.asciz "mov/KirbyDDX.mo"
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x458F48, 0x18
+	.asciz "mov/KirbyEpicYarn.mo"
+	.balign 4
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x458F60, 0x18
+	.asciz "mov/KirbyMassAttack.mo"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x458F78, 0x10
+	.asciz "mov/KirbyWii.mo"
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x458F88, 0x18
+	.asciz "mov/KirbyAvalanche.mo"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x458FA0, 0x10
+	.asciz "mov/Anime01.mo"
+	.balign 4
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x458FB0, 0x10
+	.asciz "mov/Anime02.mo"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x458FC0, 0x10
+	.asciz "mov/Anime03.mo"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x458FD0, 0x10
+	.asciz "mov/music.mo"
+	.balign 4
 .global MOVIE_INFO_TABLE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2
 MOVIE_INFO_TABLE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x458FE0, 0x138
+	.4byte 0x8045CCE8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CCF8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD10
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD24
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD38
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD48
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD60
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD70
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD84
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CD94
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CDA8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CDB8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CDD0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CDE8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CDFC
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE10
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE24
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE38
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE48
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE60
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE78
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CE88
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CEA0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CEB0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CEC0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8045CED0
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_WHITE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2
 T_WHITE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x49A740, 0x4
+	.4byte 0xFFFFFFFF
 .global T_BLACK__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2
 T_BLACK__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x49A744, 0x4
+	.4byte 0x000000FF

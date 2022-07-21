@@ -196,40 +196,90 @@ lbl_800401C0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __DVDDeviceErrorMessage
 __DVDDeviceErrorMessage:
-	.incbin "baserom.dol", 0x403988, 0x20
+	.4byte 0x80431EA0
+	.4byte 0x80431EDC
+	.4byte 0x80431F14
+	.4byte 0x80431F54
+	.4byte 0x80431F90
+	.4byte 0x80431FCC
+	.4byte 0x80432008
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2835
 $$2835:
-	.incbin "baserom.dol", 0x42DFA0, 0x3C
+	.4byte 0x0A0A0A83
+	.4byte 0x47838981
+	.4byte 0x5B835281
+	.4byte 0x5B836882
+	.4byte 0x4F824F82
+	.4byte 0x5081420A
+	.4byte 0x957396BE
+	.4byte 0x82C88366
+	.4byte 0x836F8343
+	.4byte 0x835882AA
+	.4byte 0x8CA982C2
+	.4byte 0x82A982E8
+	.4byte 0x82DC82B5
+	.4byte 0x82BD8142
+	.4byte 0
 .global $$2836
 $$2836:
-	.incbin "baserom.dol", 0x42DFDC, 0x38
+	.asciz "\n\n\nError #001,\nunauthorized device has been detected."
+	.balign 4
 .global $$2837
 $$2837:
-	.incbin "baserom.dol", 0x42E014, 0x40
+	.4byte 0x0A0A0A46
+	.4byte 0x65686C65
+	.4byte 0x72202330
+	.4byte 0x30313A0A
+	.4byte 0x45732077
+	.4byte 0x75726465
+	.4byte 0x2065696E
+	.4byte 0x6520756E
+	.4byte 0x7A756CE4
+	.asciz "ssige Komponente\nentdeckt."
+	.balign 4
 .global $$2838
 $$2838:
-	.incbin "baserom.dol", 0x42E054, 0x3C
+	.4byte 0x0A0A0A45
+	.4byte 0x72726575
+	.4byte 0x72203030
+	.4byte 0x313A0A75
+	.4byte 0x6E206469
+	.4byte 0x73706F73
+	.4byte 0x69746966
+	.4byte 0x206E6F6E
+	.4byte 0x20617574
+	.4byte 0x6F726973
+	.4byte 0xE9206120
+	.4byte 0xE974E920
+	.4byte 0x64E97465
+	.4byte 0x6374E92E
+	.4byte 0
 .global $$2839
 $$2839:
-	.incbin "baserom.dol", 0x42E090, 0x3C
+	.asciz "\n\n\nError 001:\nSe ha detectado un dispositivo no\nautorizado."
 .global $$2840
 $$2840:
-	.incbin "baserom.dol", 0x42E0CC, 0x3C
+	.asciz "\n\n\nErrore #001:\nrilevato un dispositivo non autorizzato."
+	.balign 4
 .global $$2841
 $$2841:
-	.incbin "baserom.dol", 0x42E108, 0x30
+	.asciz "\n\n\nFout #001:\nongeoorloofd onderdeel gevonden."
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global lowDone
 lowDone:
-	.incbin "baserom.dol", 0x4929D8, 0x8
+	.4byte 0x00000001
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2850
 $$2850:
-	.incbin "baserom.dol", 0x4991E0, 0x8
+	.4byte 0xFFFFFF00
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global CheckBuffer

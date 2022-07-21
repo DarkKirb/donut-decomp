@@ -712,37 +712,47 @@ lbl_8001D988:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2715
 $$2715:
-	.incbin "baserom.dol", 0x41E500, 0x48
+	.asciz "------------------------- Context 0x%08x -------------------------\n"
+	.4byte 0
 .global $$2716
 $$2716:
-	.incbin "baserom.dol", 0x41E548, 0x30
+	.asciz "r%-2d  = 0x%08x (%14d)  r%-2d  = 0x%08x (%14d)\n"
 .global $$2717
 $$2717:
-	.incbin "baserom.dol", 0x41E578, 0x30
+	.asciz "LR   = 0x%08x                   CR   = 0x%08x\n"
+	.balign 4
 .global $$2718
 $$2718:
-	.incbin "baserom.dol", 0x41E5A8, 0x30
+	.asciz "SRR0 = 0x%08x                   SRR1 = 0x%08x\n"
+	.balign 4
 .global $$2719
 $$2719:
-	.incbin "baserom.dol", 0x41E5D8, 0x14
+	.asciz "\nGQRs----------\n"
+	.balign 4
 .global $$2720
 $$2720:
-	.incbin "baserom.dol", 0x41E5EC, 0x24
+	.asciz "gqr%d = 0x%08x \t gqr%d = 0x%08x\n"
+	.balign 4
 .global $$2721
 $$2721:
-	.incbin "baserom.dol", 0x41E610, 0x14
+	.asciz "\n\nFPRs----------\n"
+	.balign 4
 .global $$2722
 $$2722:
-	.incbin "baserom.dol", 0x41E624, 0x1C
+	.asciz "fr%d \t= %d \t fr%d \t= %d\n"
+	.balign 4
 .global $$2723
 $$2723:
-	.incbin "baserom.dol", 0x41E640, 0x14
+	.asciz "\n\nPSFs----------\n"
+	.balign 4
 .global $$2724
 $$2724:
-	.incbin "baserom.dol", 0x41E654, 0x20
+	.asciz "ps%d \t= 0x%x \t ps%d \t= 0x%x\n"
+	.balign 4
 .global $$2725
 $$2725:
-	.incbin "baserom.dol", 0x41E674, 0x28
+	.asciz "\nAddress:      Back Chain    LR Save\n"
+	.balign 4
 .global $$2726
 $$2726:
-	.incbin "baserom.dol", 0x41E69C, 0x1C
+	.asciz "0x%08x:   0x%08x    0x%08x\n"

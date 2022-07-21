@@ -19,4 +19,5 @@ __ct__Q53scn4step4hero5stone7ContextFRQ53scn4step4hero5stone21GearNodeRandomChan
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248858
 $$248858:
-	.incbin "baserom.dol", 0x49E100, 0x8
+	.4byte 0
+	.4byte 0

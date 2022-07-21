@@ -12,175 +12,272 @@ ScriptPath__Q43scn4step4hero11HidKindUtilFQ43scn4step4hero7HidKind:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248723
 $$248723:
-	.incbin "baserom.dol", 0x480248, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSword.Exec1"
 .global $$248724
 $$248724:
-	.incbin "baserom.dol", 0x480274, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSword.Exec2"
 .global $$248725
 $$248725:
-	.incbin "baserom.dol", 0x4802A0, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSword.Exec3"
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x4802CC, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSword.Exec4"
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x4802F8, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSword.Exec5"
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x480324, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec1"
+	.balign 4
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x480354, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec2"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x480384, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec3"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x4803B4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec4"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x4803E4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec5"
+	.balign 4
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x480414, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestParasol.Exec6"
+	.balign 4
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x480444, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec1"
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x480470, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec2"
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x48049C, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec3"
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x4804C8, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec4"
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x4804F4, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec5"
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x480520, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSpark.Exec6"
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x48054C, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec1"
+	.balign 4
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x480578, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec2"
+	.balign 4
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x4805A4, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec3"
+	.balign 4
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x4805D0, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec4"
+	.balign 4
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x4805FC, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec5"
+	.balign 4
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x480628, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWhip.Exec6"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x480654, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestFighter.Exec"
+	.balign 4
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x480684, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec1"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x4806B0, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec2"
+	.balign 4
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x4806DC, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec3"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x480708, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec4"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x480734, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec5"
+	.balign 4
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x480760, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestWing.Exec6"
+	.balign 4
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x48078C, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec1"
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x4807B8, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec2"
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x4807E4, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec3"
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x480810, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec4"
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x48083C, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec5"
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x480868, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmash.Exec6"
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x480894, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec1"
+	.balign 4
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x4808C4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec2"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x4808F4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec3"
+	.balign 4
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x480924, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec4"
+	.balign 4
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x480954, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec5"
+	.balign 4
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x480984, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestNormal.Exec6"
+	.balign 4
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x4809B4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec1"
+	.balign 4
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x4809E4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec2"
+	.balign 4
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x480A14, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec3"
+	.balign 4
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x480A44, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec4"
+	.balign 4
 .global $$248769
 $$248769:
-	.incbin "baserom.dol", 0x480A74, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec5"
+	.balign 4
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x480AA4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec6"
+	.balign 4
 .global $$248771
 $$248771:
-	.incbin "baserom.dol", 0x480AD4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestSmashEx.Exec7"
+	.balign 4
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x480B04, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestMaster1.Exec"
+	.balign 4
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x480B34, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestMaster2.Exec"
+	.balign 4
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x480B64, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestMaster3.Exec"
+	.balign 4
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x480B94, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestMaster4.Exec"
+	.balign 4
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x480BC4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestAbility.Exec1"
+	.balign 4
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x480BF4, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestAbility.Exec2"
+	.balign 4
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x480C24, 0x30
+	.asciz "Scn.Step.Hero.HidScript.AutoTestAbility.Exec3"
+	.balign 4
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x480C54, 0x2C
+	.asciz "Scn.Step.Hero.HidScript.AutoTestLevel.Exec"
+	.balign 4
 .global T_SCRIPT_PATH__Q43scn4step4hero25$$2unnamed$$2HidKindUtil_cpp$$2
 T_SCRIPT_PATH__Q43scn4step4hero25$$2unnamed$$2HidKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x480C80, 0xE8
+	.4byte 0
+	.4byte 0x80484148
+	.4byte 0x80484174
+	.4byte 0x804841A0
+	.4byte 0x804841CC
+	.4byte 0x804841F8
+	.4byte 0x80484224
+	.4byte 0x80484254
+	.4byte 0x80484284
+	.4byte 0x804842B4
+	.4byte 0x804842E4
+	.4byte 0x80484314
+	.4byte 0x80484344
+	.4byte 0x80484370
+	.4byte 0x8048439C
+	.4byte 0x804843C8
+	.4byte 0x804843F4
+	.4byte 0x80484420
+	.4byte 0x8048444C
+	.4byte 0x80484478
+	.4byte 0x804844A4
+	.4byte 0x804844D0
+	.4byte 0x804844FC
+	.4byte 0x80484528
+	.4byte 0x80484554
+	.4byte 0x80484584
+	.4byte 0x804845B0
+	.4byte 0x804845DC
+	.4byte 0x80484608
+	.4byte 0x80484634
+	.4byte 0x80484660
+	.4byte 0x8048468C
+	.4byte 0x804846B8
+	.4byte 0x804846E4
+	.4byte 0x80484710
+	.4byte 0x8048473C
+	.4byte 0x80484768
+	.4byte 0x80484794
+	.4byte 0x804847C4
+	.4byte 0x804847F4
+	.4byte 0x80484824
+	.4byte 0x80484854
+	.4byte 0x80484884
+	.4byte 0x804848B4
+	.4byte 0x804848E4
+	.4byte 0x80484914
+	.4byte 0x80484944
+	.4byte 0x80484974
+	.4byte 0x804849A4
+	.4byte 0x804849D4
+	.4byte 0x80484A04
+	.4byte 0x80484A34
+	.4byte 0x80484A64
+	.4byte 0x80484A94
+	.4byte 0x80484AC4
+	.4byte 0x80484AF4
+	.4byte 0x80484B24
+	.4byte 0x80484B54

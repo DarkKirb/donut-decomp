@@ -327,12 +327,19 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster12StateLoseFly$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster12StateLoseFly$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x461E38, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8023F8A0  ;# ptr
+	.4byte 0x8023F864  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateWinFly$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster11StateWinFly$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x461E48, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8023F89C  ;# ptr
+	.4byte 0x8023F880  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254746
 $$254746:
-	.incbin "baserom.dol", 0x49B058, 0x8
+	.4byte 0
+	.4byte 0

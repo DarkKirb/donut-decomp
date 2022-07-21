@@ -516,62 +516,101 @@ GetRuntimeTypeInfo__Q33scn5strap10SceneStrapCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252931
 $$252931:
-	.incbin "baserom.dol", 0x491510, 0x14
+	.asciz "strap/Main.US_FRA"
+	.balign 4
 .global $$252933
 $$252933:
-	.incbin "baserom.dol", 0x491524, 0x14
+	.asciz "strap/Main.US_SPA"
+	.balign 4
 .global $$252934
 $$252934:
-	.incbin "baserom.dol", 0x491538, 0x14
+	.asciz "strap/Main.US_ENG"
+	.balign 4
 .global $$252935
 $$252935:
-	.incbin "baserom.dol", 0x49154C, 0xC
+	.asciz "strap/Main"
+	.balign 4
 .global $$252936
 $$252936:
-	.incbin "baserom.dol", 0x491558, 0xC
+	.asciz "Sideways"
+	.balign 4
 .global $$253019
 $$253019:
-	.incbin "baserom.dol", 0x491564, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$253020
 $$253020:
-	.incbin "baserom.dol", 0x491578, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$253021
 $$253021:
-	.incbin "baserom.dol", 0x49158C, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$253022
 $$253022:
-	.incbin "baserom.dol", 0x4915A0, 0x10
+	.asciz "StaffCredit.dn"
+	.balign 4
 .global $$253023
 $$253023:
-	.incbin "baserom.dol", 0x4915B0, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$253024
 $$253024:
-	.incbin "baserom.dol", 0x4915C0, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global $$253027
 $$253027:
-	.incbin "baserom.dol", 0x4915D0, 0x20
+	.4byte 0x803F256C
+	.4byte 0x803F25CC
+	.4byte 0x803F2608
+	.4byte 0x803F2650
+	.4byte 0x803F2690
+	.4byte 0x803F2710
+	.4byte 0x803F26D0
+	.4byte 0x803F2744
 .global __vt__Q33scn5strap10SceneStrap
 __vt__Q33scn5strap10SceneStrap:
-	.incbin "baserom.dol", 0x4915F0, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F2830
+	.4byte 0x803F2384
+	.4byte 0x803F2418
+	.4byte 0x803F2414
+	.4byte 0x803F27A0
+	.4byte 0x803F27A4
+	.4byte 0x803F281C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252932
 $$252932:
-	.incbin "baserom.dol", 0x498860, 0x8
+	.asciz "Strap"
+	.balign 4
 .global $$253025
 $$253025:
-	.incbin "baserom.dol", 0x498868, 0x8
+	.asciz "FadeOut"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252128
 $$252128:
-	.incbin "baserom.dol", 0x49ED20, 0x4
+	.4byte 0xFFFFFFFF
 .global $$253046
 $$253046:
-	.incbin "baserom.dol", 0x49ED24, 0x4
+	.4byte 0xC2C80000
 .global $$253047
 $$253047:
-	.incbin "baserom.dol", 0x49ED28, 0x8
+	.4byte 0x42C80000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn5strap10SceneStrap$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

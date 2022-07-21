@@ -300,30 +300,35 @@ seqHeap__Q23mem6MemoryFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249237
 $$249237:
-	.incbin "baserom.dol", 0x455E70, 0x10
+	.asciz "External"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249232
 $$249232:
-	.incbin "baserom.dol", 0x493660, 0x8
+	.asciz "ArenaM1"
 .global $$249233
 $$249233:
-	.incbin "baserom.dol", 0x493668, 0x8
+	.asciz "ArenaM2"
 .global $$249234
 $$249234:
-	.incbin "baserom.dol", 0x493670, 0x8
+	.asciz "Mem1Fix"
 .global $$249235
 $$249235:
-	.incbin "baserom.dol", 0x493678, 0x8
+	.asciz "Scene"
+	.balign 4
 .global $$249236
 $$249236:
-	.incbin "baserom.dol", 0x493680, 0x8
+	.asciz "Mem2Fix"
 .global $$249238
 $$249238:
-	.incbin "baserom.dol", 0x493688, 0x8
+	.asciz "Debug"
+	.balign 4
 .global $$249239
 $$249239:
-	.incbin "baserom.dol", 0x493690, 0x8
+	.4byte 0x53657100
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$248941

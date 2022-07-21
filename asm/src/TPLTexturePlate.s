@@ -323,16 +323,19 @@ setPos__Q23gfx15TPLTexturePlateFRCQ33hel4math7Vector2:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250129
 $$250129:
-	.incbin "baserom.dol", 0x49A278, 0x4
+	.4byte 0
 .global $$250161
 $$250161:
-	.incbin "baserom.dol", 0x49A27C, 0x4
+	.4byte 0x3F800000
 .global $$250183
 $$250183:
-	.incbin "baserom.dol", 0x49A280, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$250188
 $$250188:
-	.incbin "baserom.dol", 0x49A288, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$250192
 $$250192:
-	.incbin "baserom.dol", 0x49A290, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

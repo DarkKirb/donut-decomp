@@ -1194,174 +1194,350 @@ lbl_80344FD4:
 /* 80344FE4 00340E24  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025B0, 0x4
+	.4byte 0x80313D40
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.incbin "baserom.dol", 0x415AE8, 0xB8
+	.4byte 0x8055A7B4
+	.4byte 0
+	.4byte 0x8055A7BC
+	.4byte 0
+	.4byte 0x8055A7C4
+	.4byte 0
+	.4byte 0x804815B8
+	.4byte 0
+	.4byte 0x804815C8
+	.4byte 0
+	.4byte 0x804815D4
+	.4byte 0
+	.4byte 0x804815E0
+	.4byte 0
+	.4byte 0x804815F0
+	.4byte 0
+	.4byte 0x804815FC
+	.4byte 0
+	.4byte 0x8048160C
+	.4byte 0
+	.4byte 0x8048161C
+	.4byte 0
+	.4byte 0x80481630
+	.4byte 0
+	.4byte 0x8055A7CC
+	.4byte 0
+	.4byte 0x8048163C
+	.4byte 0
+	.4byte 0x8055A7D4
+	.4byte 0
+	.4byte 0x8055A7DC
+	.4byte 0
+	.4byte 0x8055A7E4
+	.4byte 0
+	.4byte 0x8055A7EC
+	.4byte 0
+	.4byte 0x8055A7F4
+	.4byte 0
+	.4byte 0x8055A7FC
+	.4byte 0
+	.4byte 0x8055A804
+	.4byte 0
+	.4byte 0x8055A80C
+	.4byte 0
+	.4byte 0x8055A814
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253502
 $$253502:
-	.incbin "baserom.dol", 0x45AD78, 0x1C
+	.asciz "step/chara/enemy/Mahoroa"
+	.balign 4
 .global $$253504
 $$253504:
-	.incbin "baserom.dol", 0x45AD94, 0xC
+	.asciz "MahoroaL"
+	.balign 4
 .global $$253574
 $$253574:
-	.incbin "baserom.dol", 0x45ADA0, 0xC
+	.asciz "TitleAgain"
+	.balign 4
 .global $$253576
 $$253576:
-	.incbin "baserom.dol", 0x45ADAC, 0x10
+	.asciz "TitleWaitStart"
+	.balign 4
 .global $$253578
 $$253578:
-	.incbin "baserom.dol", 0x45ADBC, 0xC
+	.asciz "TitleWait1"
+	.balign 4
 .global $$253579
 $$253579:
-	.incbin "baserom.dol", 0x45ADC8, 0xC
+	.asciz "TitleWait2"
+	.balign 4
 .global $$253580
 $$253580:
-	.incbin "baserom.dol", 0x45ADD4, 0x44
+	.asciz "TitleWaitEnd"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255208
 $$255208:
-	.incbin "baserom.dol", 0x47D6B8, 0x10
+	.asciz "TalkGladStart"
+	.balign 4
 .global $$255209
 $$255209:
-	.incbin "baserom.dol", 0x47D6C8, 0xC
+	.asciz "TalkGlad"
+	.balign 4
 .global $$255210
 $$255210:
-	.incbin "baserom.dol", 0x47D6D4, 0xC
+	.asciz "TalkGladEnd"
 .global $$255211
 $$255211:
-	.incbin "baserom.dol", 0x47D6E0, 0x10
+	.asciz "TalkRegretStart"
 .global $$255212
 $$255212:
-	.incbin "baserom.dol", 0x47D6F0, 0xC
+	.asciz "TalkRegret"
+	.balign 4
 .global $$255213
 $$255213:
-	.incbin "baserom.dol", 0x47D6FC, 0x10
+	.asciz "TalkRegretEnd"
+	.balign 4
 .global $$255214
 $$255214:
-	.incbin "baserom.dol", 0x47D70C, 0x10
+	.asciz "TalkPointing"
+	.balign 4
 .global $$255215
 $$255215:
-	.incbin "baserom.dol", 0x47D71C, 0x14
+	.asciz "TalkChuckleStart"
+	.balign 4
 .global $$255216
 $$255216:
-	.incbin "baserom.dol", 0x47D730, 0xC
+	.asciz "TalkChuckle"
 .global $$255218
 $$255218:
-	.incbin "baserom.dol", 0x47D73C, 0xC
+	.asciz "TalkGoLoop"
+	.balign 4
 .global $$255229
 $$255229:
-	.incbin "baserom.dol", 0x47D748, 0x20
+	.asciz "Mahoroa.AnimScript.Wait.Exec()"
+	.balign 4
 .global $$255230
 $$255230:
-	.incbin "baserom.dol", 0x47D768, 0x24
+	.asciz "Mahoroa.AnimScript.TalkGlad.Exec()"
+	.balign 4
 .global $$255231
 $$255231:
-	.incbin "baserom.dol", 0x47D78C, 0x28
+	.asciz "Mahoroa.AnimScript.TalkRegret.Exec()"
+	.balign 4
 .global $$255232
 $$255232:
-	.incbin "baserom.dol", 0x47D7B4, 0x28
+	.asciz "Mahoroa.AnimScript.TalkChuckle.Exec()"
+	.balign 4
 .global $$255233
 $$255233:
-	.incbin "baserom.dol", 0x47D7DC, 0x24
+	.asciz "Mahoroa.AnimScript.TalkGo.Exec()"
+	.balign 4
 .global T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.incbin "baserom.dol", 0x47D800, 0x154
+	.4byte 0x80481648
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0x80481668
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8048168C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000009
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0x804816B4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804816DC
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000000E
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000000F
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000011
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000012
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000013
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000014
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000015
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000016
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
 .global $$258000
 $$258000:
-	.incbin "baserom.dol", 0x47D954, 0x1C
+	.asciz "step/chara/enemy/Mahoroa"
+	.balign 4
 .global $$258002
 $$258002:
-	.incbin "baserom.dol", 0x47D970, 0x48
+	.asciz "Scn.Step.Gimmick"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253503
 $$253503:
-	.incbin "baserom.dol", 0x494150, 0x8
+	.asciz "Model"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255203
 $$255203:
-	.incbin "baserom.dol", 0x496B88, 0x8
+	.asciz "TopL"
+	.balign 4
 .global T_NODE_NAMES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2
 T_NODE_NAMES__Q53scn4step7gimmick7mahoroa21$$2unnamed$$2Mahoroa_cpp$$2:
-	.incbin "baserom.dol", 0x496B90, 0x4
+	.4byte 0x8055A7A8
 .global $$255205
 $$255205:
-	.incbin "baserom.dol", 0x496B94, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$255206
 $$255206:
-	.incbin "baserom.dol", 0x496B9C, 0x8
+	.asciz "Talk1"
+	.balign 4
 .global $$255207
 $$255207:
-	.incbin "baserom.dol", 0x496BA4, 0x8
+	.asciz "Glad"
+	.balign 4
 .global $$255217
 $$255217:
-	.incbin "baserom.dol", 0x496BAC, 0x8
+	.asciz "TalkGo"
+	.balign 4
 .global $$255219
 $$255219:
-	.incbin "baserom.dol", 0x496BB4, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$255220
 $$255220:
-	.incbin "baserom.dol", 0x496BBC, 0x8
+	.asciz "Wait3"
+	.balign 4
 .global $$255221
 $$255221:
-	.incbin "baserom.dol", 0x496BC4, 0x8
+	.asciz "Wait5"
+	.balign 4
 .global $$255222
 $$255222:
-	.incbin "baserom.dol", 0x496BCC, 0x8
+	.asciz "Wait6"
+	.balign 4
 .global $$255223
 $$255223:
-	.incbin "baserom.dol", 0x496BD4, 0x8
+	.asciz "Wait7"
+	.balign 4
 .global $$255224
 $$255224:
-	.incbin "baserom.dol", 0x496BDC, 0x8
+	.asciz "Wait8"
+	.balign 4
 .global $$255225
 $$255225:
-	.incbin "baserom.dol", 0x496BE4, 0x8
+	.asciz "Wait9"
+	.balign 4
 .global $$255226
 $$255226:
-	.incbin "baserom.dol", 0x496BEC, 0x8
+	.asciz "Wait10"
+	.balign 4
 .global $$255227
 $$255227:
-	.incbin "baserom.dol", 0x496BF4, 0xC
+	.asciz "Wait11"
+	.balign 4
+	.4byte 0
 .global $$258001
 $$258001:
-	.incbin "baserom.dol", 0x496C00, 0x8
+	.asciz "Mahoroa"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253575
 $$253575:
-	.incbin "baserom.dol", 0x49A948, 0x4
+	.4byte 0
 .global $$253577
 $$253577:
-	.incbin "baserom.dol", 0x49A94C, 0x4
+	.4byte 0x3F000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257700
 $$257700:
-	.incbin "baserom.dol", 0x49D440, 0x4
+	.4byte 0
 .global $$257847
 $$257847:
-	.incbin "baserom.dol", 0x49D444, 0x4
+	.4byte 0x40000000
 .global $$257942
 $$257942:
-	.incbin "baserom.dol", 0x49D448, 0x4
+	.4byte 0xBF000000
 .global $$257943
 $$257943:
-	.incbin "baserom.dol", 0x49D44C, 0x4
+	.4byte 0x3F000000
 .global $$257944
 $$257944:
-	.incbin "baserom.dol", 0x49D450, 0x4
+	.4byte 0x3F800000
 .global $$258016
 $$258016:
-	.incbin "baserom.dol", 0x49D454, 0x4
+	.4byte 0x3DCCCCCD
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2createModelDesc__Q53scn4step7gimmick7mahoroa7MahoroaFv$$2desc

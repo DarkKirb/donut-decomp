@@ -270,15 +270,25 @@ procFixPos__Q53scn4step4hero7fighter15StateSkyKickHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter15StateSkyKickHit
 __vt__Q53scn4step4hero7fighter15StateSkyKickHit:
-	.incbin "baserom.dol", 0x48A680, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039EBA4
+	.4byte 0x8039EBA8
+	.4byte 0x8039ED50
+	.4byte 0x8035550C
+	.4byte 0x8039EE38
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258356
 $$258356:
-	.incbin "baserom.dol", 0x49E318, 0x4
+	.4byte 0xBF800000
 .global $$258389
 $$258389:
-	.incbin "baserom.dol", 0x49E31C, 0x4
+	.4byte 0
 .global $$258390
 $$258390:
-	.incbin "baserom.dol", 0x49E320, 0x8
+	.4byte 0x3A83126F
+	.4byte 0

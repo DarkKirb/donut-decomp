@@ -426,15 +426,17 @@ lbl_8030B644:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251712
 $$251712:
-	.incbin "baserom.dol", 0x47D350, 0x20
+	.asciz "step/gimmick/ConsecutiveBattle"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251713
 $$251713:
-	.incbin "baserom.dol", 0x49D348, 0x4
+	.4byte 0xFF7FFFFF
 .global $$251797
 $$251797:
-	.incbin "baserom.dol", 0x49D34C, 0x4
+	.4byte 0
 .global $$251798
 $$251798:
-	.incbin "baserom.dol", 0x49D350, 0x8
+	.4byte 0x3F000000
+	.4byte 0

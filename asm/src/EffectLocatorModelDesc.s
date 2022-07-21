@@ -49,18 +49,23 @@ lbl_803D6398:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250196
 $$250196:
-	.incbin "baserom.dol", 0x48F878, 0x10
+	.asciz "EffectLocator"
+	.balign 4
 .global $$250197
 $$250197:
-	.incbin "baserom.dol", 0x48F888, 0x28
+	.asciz "step/weapon/common/EffectLocator"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
-	.incbin "baserom.dol", 0x498418, 0x8
+	.asciz "TopL"
+	.balign 4
 .global T_NODE_NAMES__Q43scn4step6weapon36$$2unnamed$$2EffectLocatorModelDesc_cpp$$2
 T_NODE_NAMES__Q43scn4step6weapon36$$2unnamed$$2EffectLocatorModelDesc_cpp$$2:
-	.incbin "baserom.dol", 0x498420, 0x8
+	.4byte 0x8055C038
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2CreateTmpl$$067$$1__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc$$2desc

@@ -331,24 +331,31 @@ lbl_802AA9A0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage16StateDeadExtreme
 __vt__Q53scn4step5enemy6damage16StateDeadExtreme:
-	.incbin "baserom.dol", 0x471E00, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AA690  ;# ptr
+	.4byte 0x802AA734  ;# ptr
+	.4byte 0x802AA944  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802AA948  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257029
 $$257029:
-	.incbin "baserom.dol", 0x49C1C0, 0x4
+	.4byte 0
 .global $$257071
 $$257071:
-	.incbin "baserom.dol", 0x49C1C4, 0x4
+	.4byte 0x41800000
 .global $$257072
 $$257072:
-	.incbin "baserom.dol", 0x49C1C8, 0x4
+	.4byte 0x41A00000
 .global $$257073
 $$257073:
-	.incbin "baserom.dol", 0x49C1CC, 0x4
+	.4byte 0x43B40000
 .global $$257074
 $$257074:
-	.incbin "baserom.dol", 0x49C1D0, 0x4
+	.4byte 0x3F800000
 .global $$257075
 $$257075:
-	.incbin "baserom.dol", 0x49C1D4, 0x4
+	.4byte 0x42652EE1

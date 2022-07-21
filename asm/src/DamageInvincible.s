@@ -109,4 +109,17 @@ lbl_8022F228:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30$$2unnamed$$2DamageInvincible_cpp$$2
 T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30$$2unnamed$$2DamageInvincible_cpp$$2:
-	.incbin "baserom.dol", 0x460650, 0x38
+	.4byte 0x00000023
+	.4byte 0x00000024
+	.4byte 0x00000019
+	.4byte 0x0000001C
+	.4byte 0x00000014
+	.4byte 0x00000014
+	.4byte 0x0000000B
+	.4byte 0x00000010
+	.4byte 0x00000006
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0

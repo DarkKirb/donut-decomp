@@ -344,12 +344,17 @@ lbl_800FDD20:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt19ArcResourceAccessor
 __vt__Q34nw4r3lyt19ArcResourceAccessor:
-	.incbin "baserom.dol", 0x43D6A8, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800FDCD0  ;# ptr
+	.4byte 0x800FDC00  ;# ptr
+	.4byte 0x800FDC60  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23486
 $$23486:
-	.incbin "baserom.dol", 0x492E30, 0x4
+	.4byte 0x2E000000
 .global $$23487
 $$23487:
-	.incbin "baserom.dol", 0x492E34, 0x4
+	.4byte 0x2E2E0000

@@ -154,14 +154,18 @@ TPLGetGXTexObjFromPalette:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2773
 $$2773:
-	.incbin "baserom.dol", 0x43C130, 0x30
+	.asciz "invalid version number for texture palette"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2772
 $$2772:
-	.incbin "baserom.dol", 0x492D20, 0x8
+	.asciz "TPL.c"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2795
 $$2795:
-	.incbin "baserom.dol", 0x4994A0, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -179,4 +179,7 @@ onSetNextStateFactory__Q24util16StateChangerBaseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util16StateChangerBase
 __vt__Q24util16StateChangerBase:
-	.incbin "baserom.dol", 0x4927F0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80405D08
+	.4byte 0

@@ -50,4 +50,11 @@ procFixPos__Q53scn4step4boss13watergalboros16StateAttackJointFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss13watergalboros16StateAttackJoint
 __vt__Q53scn4step4boss13watergalboros16StateAttackJoint:
-	.incbin "baserom.dol", 0x465B40, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025A120  ;# ptr
+	.4byte 0x8025A124  ;# ptr
+	.4byte 0x8025A128  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025A12C  ;# ptr
+	.4byte 0x80234504  ;# ptr

@@ -173,7 +173,16 @@ lbl_803F2B00:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q33scn2vc7SceneVC
 __vt__Q33scn2vc7SceneVC:
-	.incbin "baserom.dol", 0x4916F0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F2AAC
+	.4byte 0x803F2AB0
+	.4byte 0x803F29FC
+	.4byte 0x803F29D4
+	.4byte 0x803F2A24
+	.4byte 0x803F2A4C
+	.4byte 0x803F2A84
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn2vc7SceneVC$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

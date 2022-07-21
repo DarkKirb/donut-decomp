@@ -1296,59 +1296,171 @@ nandGetHomeDir:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$23073
 $$23073:
-	.incbin "baserom.dol", 0x4039F0, 0x148
+	.4byte 0
+	.4byte 0
+	.4byte 0xFFFFFF9A
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFF99
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFF8E
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFF97
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFF8C
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFF9B
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFF94
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFF93
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFF95
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFF92
+	.4byte 0xFFFFFFF0
+	.4byte 0xFFFFFF96
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFF8D
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFF98
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF91
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFF8B
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF8A
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFF89
+	.4byte 0xFFFFFF80
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFF9
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF0
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEF
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEE
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFED
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEC
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEA
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFE9
+	.4byte 0xFFFFFFC0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22807
 $$22807:
-	.incbin "baserom.dol", 0x432480, 0x60
+	.asciz "<< RVL_SDK - NAND \trelease build: Aug 23 2010 17:33:46 (0x4302_145) >>"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global s_currentDir
 s_currentDir:
-	.incbin "baserom.dol", 0x4324E0, 0x40
+	.4byte 0x2F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global s_shutdownFuncInfo
 s_shutdownFuncInfo:
-	.incbin "baserom.dol", 0x432520, 0x10
+	.4byte 0x8004A010  ;# ptr
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
 .global $$23814
 $$23814:
-	.incbin "baserom.dol", 0x432530, 0xC
+	.asciz "/shared2"
+	.balign 4
 .global $$23818
 $$23818:
-	.incbin "baserom.dol", 0x43253C, 0xC
+	.asciz "/shared2/"
+	.balign 4
 .global $$23849
 $$23849:
-	.incbin "baserom.dol", 0x432548, 0x14
+	.asciz "ISFS error code: %d"
 .global $$23850
 $$23850:
-	.incbin "baserom.dol", 0x43255C, 0x34
+	.asciz "CAUTION!  Unexpected error code [%d] was found.\n"
+	.balign 4
 .global $$23851
 $$23851:
-	.incbin "baserom.dol", 0x432590, 0x20
+	.asciz "ISFS unexpected error code: %d"
+	.balign 4
 .global $$23880
 $$23880:
-	.incbin "baserom.dol", 0x4325B0, 0x20
+	.asciz "Failed to set home directory.\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __NANDVersion
 __NANDVersion:
-	.incbin "baserom.dol", 0x492A20, 0x4
+	.4byte 0x80436380
 .global $$23783
 $$23783:
-	.incbin "baserom.dol", 0x492A24, 0x4
+	.4byte 0x2F000000
 .global $$23784
 $$23784:
-	.incbin "baserom.dol", 0x492A28, 0x4
+	.4byte 0
 .global $$23797
 $$23797:
-	.incbin "baserom.dol", 0x492A2C, 0x4
+	.4byte 0x2E000000
 .global $$23798
 $$23798:
-	.incbin "baserom.dol", 0x492A30, 0x4
+	.4byte 0x2E2E0000
 .global $$23799
 $$23799:
-	.incbin "baserom.dol", 0x492A34, 0x4
+	.4byte 0x2F257300
 .global $$23800
 $$23800:
-	.incbin "baserom.dol", 0x492A38, 0x8
+	.asciz "%s/%s"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global s_homeDir

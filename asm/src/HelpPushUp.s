@@ -361,32 +361,40 @@ startDisappearAnim__Q43scn4step4info10HelpPushUpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252107
 $$252107:
-	.incbin "baserom.dol", 0x48B748, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$252108
 $$252108:
-	.incbin "baserom.dol", 0x48B758, 0x10
+	.asciz "HelpPushUp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252109
 $$252109:
-	.incbin "baserom.dol", 0x4978D0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252189
 $$252189:
-	.incbin "baserom.dol", 0x4978D8, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$252192
 $$252192:
-	.incbin "baserom.dol", 0x4978E0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252195
 $$252195:
-	.incbin "baserom.dol", 0x4978E8, 0x8
+	.4byte 0x456E6400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp
 APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp:
-	.incbin "baserom.dol", 0x49E3E8, 0x4
+	.4byte 0x0000001E
 .global $$252184
 $$252184:
-	.incbin "baserom.dol", 0x49E3EC, 0x4
+	.4byte 0
 .global $$252185
 $$252185:
-	.incbin "baserom.dol", 0x49E3F0, 0x8
+	.4byte 0x42C80000
+	.4byte 0

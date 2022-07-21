@@ -29,4 +29,5 @@ toWorldPos__Q33scn4step8MaproPosCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249677
 $$249677:
-	.incbin "baserom.dol", 0x49AD50, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

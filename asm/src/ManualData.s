@@ -467,299 +467,593 @@ IsCommandLineDouble__Q25pause10ManualDataFQ25pause10ManualKindUlUl:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x411180, 0x40
+	.4byte 0x80557710
+	.4byte 0
+	.4byte 0x80557718
+	.4byte 0
+	.4byte 0x8045D558
+	.4byte 0
+	.4byte 0x80557720
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80557728
+	.4byte 0
+	.4byte 0x80557730
+	.4byte 0
+	.4byte 0x80557738
+	.4byte 0
 .global T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_NORMAL_IN_WATER__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x4111C0, 0x18
+	.4byte 0x80557740
+	.4byte 0
+	.4byte 0x80557748
+	.4byte 0
+	.4byte 0x80557750
+	.4byte 0
 .global T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SWORD__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x4111D8, 0x68
+	.4byte 0x80557758
+	.4byte 0
+	.4byte 0x80557760
+	.4byte 0
+	.4byte 0x8045D568
+	.4byte 0
+	.4byte 0x8045D574
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80557768
+	.4byte 0
+	.4byte 0x80557728
+	.4byte 0
+	.4byte 0x8045D584
+	.4byte 0
+	.4byte 0x80557770
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80557778
+	.4byte 0
+	.4byte 0x80557780
+	.4byte 0
+	.4byte 0x80557788
+	.4byte 0
 .global T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_WHIP__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x411240, 0x70
+	.4byte 0x8045D590
+	.4byte 0
+	.4byte 0x80557790
+	.4byte 0
+	.4byte 0x8045D59C
+	.4byte 0
+	.4byte 0x80557798
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80557710
+	.4byte 0
+	.4byte 0x8045D5A8
+	.4byte 0
+	.4byte 0x805577A0
+	.4byte 0
+	.4byte 0x805577A8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D5B4
+	.4byte 0
+	.4byte 0x8045D5C0
+	.4byte 0
+	.4byte 0x8045D5CC
+	.4byte 0
+	.4byte 0x8045D5D8
+	.4byte 0
 .global T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SPARK__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x4112B0, 0x48
+	.4byte 0x805577B0
+	.4byte 0
+	.4byte 0x805577B8
+	.4byte 0
+	.4byte 0x805577C0
+	.4byte 0
+	.4byte 0x805577C8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x805577D0
+	.4byte 0
+	.4byte 0x805577D8
+	.4byte 0
+	.4byte 0x8045D5E4
+	.4byte 0
+	.4byte 0x8045D5F0
+	.4byte 0
 .global T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_PARASOL__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x4112F8, 0x48
+	.4byte 0x805577E0
+	.4byte 0
+	.4byte 0x805577E8
+	.4byte 0
+	.4byte 0x8045D5FC
+	.4byte 0
+	.4byte 0x80557768
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D608
+	.4byte 0
+	.4byte 0x805577F0
+	.4byte 0
+	.4byte 0x805577F8
+	.4byte 0
+	.4byte 0x80557800
+	.4byte 0
 .global T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_WING__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x411340, 0x60
+	.4byte 0x8045D614
+	.4byte 0
+	.4byte 0x8045D620
+	.4byte 0
+	.4byte 0x80557808
+	.4byte 0
+	.4byte 0x8045D630
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D640
+	.4byte 0
+	.4byte 0x8045D64C
+	.4byte 0
+	.4byte 0x8045D658
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80557810
+	.4byte 0
+	.4byte 0x8045D668
+	.4byte 0
+	.4byte 0x8045D674
+	.4byte 0
 .global T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_FIGHTER__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x4113A0, 0x98
+	.4byte 0x80557710
+	.4byte 0
+	.4byte 0x80557818
+	.4byte 0
+	.4byte 0x80557770
+	.4byte 0
+	.4byte 0x8045D680
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D68C
+	.4byte 0
+	.4byte 0x8045D698
+	.4byte 0
+	.4byte 0x8045D6A4
+	.4byte 0
+	.4byte 0x80557820
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x805577D0
+	.4byte 0
+	.4byte 0x8045D6B0
+	.4byte 0
+	.4byte 0x8045D6BC
+	.4byte 0
+	.4byte 0x8045D6C8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D6D8
+	.4byte 0
+	.4byte 0x805577A8
+	.4byte 0
+	.4byte 0x805577F8
+	.4byte 0
+	.4byte 0x8045D6E4
+	.4byte 0
 .global T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x411438, 0x48
+	.4byte 0x80557828
+	.4byte 0
+	.4byte 0x80557728
+	.4byte 0
+	.4byte 0x8055782C
+	.4byte 0
+	.4byte 0x80557834
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8045D6F0
+	.4byte 0
+	.4byte 0x80557840
+	.4byte 0
+	.4byte 0x80557848
+	.4byte 0
+	.4byte 0x8045D700
+	.4byte 0
 .global T_ENTRIES__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_ENTRIES__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
-	.incbin "baserom.dol", 0x411480, 0xB8
+	.4byte 0
+	.4byte 0x80557758
+	.4byte 0
+	.4byte 0x80415080
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0x8045D710
+	.4byte 0x80557758
+	.4byte 0x804150C0
+	.4byte 0x00000003
+	.4byte 0
+	.4byte 0x80557850
+	.4byte 0
+	.4byte 0x804150D8
+	.4byte 0x0000000D
+	.4byte 0x01000000
+	.4byte 0x80557858
+	.4byte 0
+	.4byte 0x80415140
+	.4byte 0x0000000E
+	.4byte 0
+	.4byte 0x80557860
+	.4byte 0
+	.4byte 0x804151B0
+	.4byte 0x00000009
+	.4byte 0x01000000
+	.4byte 0x80557868
+	.4byte 0
+	.4byte 0x804151F8
+	.4byte 0x00000009
+	.4byte 0
+	.4byte 0x80557870
+	.4byte 0
+	.4byte 0x80415240
+	.4byte 0x0000000C
+	.4byte 0x01000000
+	.4byte 0x80557878
+	.4byte 0
+	.4byte 0x804152A0
+	.4byte 0x00000013
+	.4byte 0
+	.4byte 0x80557880
+	.4byte 0
+	.4byte 0x80415338
+	.4byte 0x00000009
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x459658, 0x10
+	.asciz "DrawingSuper"
+	.balign 4
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x459668, 0xC
+	.asciz "ComboAttack"
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x459674, 0x10
+	.asciz "ComboAttack2"
+	.balign 4
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x459684, 0xC
+	.asciz "Chopping"
+	.balign 4
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x459690, 0xC
+	.asciz "ItemCatch"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x45969C, 0xC
+	.asciz "MultiAttack"
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x4596A8, 0xC
+	.asciz "CicleRibon"
+	.balign 4
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x4596B4, 0xC
+	.asciz "BeatFront"
+	.balign 4
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x4596C0, 0xC
+	.asciz "BeatDouble"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x4596CC, 0xC
+	.asciz "BeatBack"
+	.balign 4
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x4596D8, 0xC
+	.asciz "BeatHight"
+	.balign 4
 .global $$248769
 $$248769:
-	.incbin "baserom.dol", 0x4596E4, 0xC
+	.asciz "Thunderbolt"
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x4596F0, 0xC
+	.asciz "Lightning"
+	.balign 4
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x4596FC, 0xC
+	.asciz "Direction"
+	.balign 4
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x459708, 0xC
+	.asciz "Guriguri"
+	.balign 4
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x459714, 0xC
+	.asciz "FeatherGun"
+	.balign 4
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x459720, 0x10
+	.asciz "FeatherSnipe"
+	.balign 4
 .global $$248781
 $$248781:
-	.incbin "baserom.dol", 0x459730, 0x10
+	.asciz "FallingCombo"
+	.balign 4
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x459740, 0xC
+	.asciz "DivingCombo"
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x45974C, 0xC
+	.asciz "FallingBomb"
 .global $$248784
 $$248784:
-	.incbin "baserom.dol", 0x459758, 0x10
+	.asciz "DivingCondor"
+	.balign 4
 .global $$248786
 $$248786:
-	.incbin "baserom.dol", 0x459768, 0xC
+	.asciz "ShuttleLoop"
 .global $$248787
 $$248787:
-	.incbin "baserom.dol", 0x459774, 0xC
+	.asciz "Flapping"
+	.balign 4
 .global $$248789
 $$248789:
-	.incbin "baserom.dol", 0x459780, 0xC
+	.asciz "SpinKick"
+	.balign 4
 .global $$248790
 $$248790:
-	.incbin "baserom.dol", 0x45978C, 0xC
+	.asciz "TrampleKick"
 .global $$248791
 $$248791:
-	.incbin "baserom.dol", 0x459798, 0xC
+	.asciz "DoubleKick"
+	.balign 4
 .global $$248792
 $$248792:
-	.incbin "baserom.dol", 0x4597A4, 0xC
+	.asciz "RisingBreak"
 .global $$248794
 $$248794:
-	.incbin "baserom.dol", 0x4597B0, 0xC
+	.asciz "MegaCannon"
+	.balign 4
 .global $$248795
 $$248795:
-	.incbin "baserom.dol", 0x4597BC, 0xC
+	.asciz "GigaCannon"
+	.balign 4
 .global $$248796
 $$248796:
-	.incbin "baserom.dol", 0x4597C8, 0x10
+	.asciz "MegaCannonFast"
+	.balign 4
 .global $$248797
 $$248797:
-	.incbin "baserom.dol", 0x4597D8, 0xC
+	.asciz "MoonSalto"
+	.balign 4
 .global $$248798
 $$248798:
-	.incbin "baserom.dol", 0x4597E4, 0xC
+	.asciz "BackThrow"
+	.balign 4
 .global $$248802
 $$248802:
-	.incbin "baserom.dol", 0x4597F0, 0x10
+	.asciz "FinalCombo"
+	.balign 4
+	.4byte 0
 .global $$248805
 $$248805:
-	.incbin "baserom.dol", 0x459800, 0x10
+	.asciz "StoneFallingAir"
 .global $$248895
 $$248895:
-	.incbin "baserom.dol", 0x459810, 0xC
+	.asciz "NormalWater"
 .global $$249240
 $$249240:
-	.incbin "baserom.dol", 0x45981C, 0x1C
+	.asciz "common/abilitystaricon/%s"
+	.balign 4
 .global $$249254
 $$249254:
-	.incbin "baserom.dol", 0x459838, 0xC
+	.asciz "Abl%sTitle"
+	.balign 4
 .global $$249263
 $$249263:
-	.incbin "baserom.dol", 0x459844, 0x18
+	.asciz "pause/abilityimage/%s"
+	.balign 4
 .global $$249272
 $$249272:
-	.incbin "baserom.dol", 0x45985C, 0xC
+	.asciz "Abl%sInfo"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x493AF0, 0x8
+	.asciz "Jump"
+	.balign 4
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x493AF8, 0x8
+	.asciz "Drawing"
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x493B00, 0x8
+	.asciz "Drawn"
+	.balign 4
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x493B08, 0x8
+	.asciz "Dash"
+	.balign 4
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x493B10, 0x8
+	.asciz "Guard"
+	.balign 4
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x493B18, 0x8
+	.asciz "Sliding"
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x493B20, 0x8
+	.asciz "Swim"
+	.balign 4
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x493B28, 0x8
+	.asciz "Swim2"
+	.balign 4
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x493B30, 0x8
+	.asciz "Pistol"
+	.balign 4
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x493B38, 0x8
+	.asciz "Normal"
+	.balign 4
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x493B40, 0x8
+	.asciz "Beam"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x493B48, 0x8
+	.asciz "Dril"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x493B50, 0x8
+	.asciz "Under"
+	.balign 4
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x493B58, 0x8
+	.asciz "Upper"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x493B60, 0x8
+	.asciz "Mteoend"
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x493B68, 0x8
+	.asciz "Roll"
+	.balign 4
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x493B70, 0x8
+	.asciz "Slash"
+	.balign 4
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x493B78, 0x8
+	.asciz "Roof"
+	.balign 4
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x493B80, 0x8
+	.asciz "Typhoon"
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x493B88, 0x8
+	.asciz "Capture"
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x493B90, 0x8
+	.asciz "Attack"
+	.balign 4
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x493B98, 0x8
+	.asciz "Stored"
+	.balign 4
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x493BA0, 0x8
+	.asciz "Arrow"
+	.balign 4
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x493BA8, 0x8
+	.asciz "Laser"
+	.balign 4
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x493BB0, 0x8
+	.asciz "Cannon"
+	.balign 4
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x493BB8, 0x8
+	.asciz "Barrier"
 .global $$248771
 $$248771:
-	.incbin "baserom.dol", 0x493BC0, 0x8
+	.asciz "Swing"
+	.balign 4
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x493BC8, 0x8
+	.asciz "Sheild"
+	.balign 4
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x493BD0, 0x8
+	.asciz "Diving"
+	.balign 4
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x493BD8, 0x8
+	.asciz "Throw"
+	.balign 4
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x493BE0, 0x8
+	.asciz "Falling"
 .global $$248780
 $$248780:
-	.incbin "baserom.dol", 0x493BE8, 0x8
+	.asciz "Heading"
 .global $$248785
 $$248785:
-	.incbin "baserom.dol", 0x493BF0, 0x8
+	.asciz "Toss"
+	.balign 4
 .global $$248788
 $$248788:
-	.incbin "baserom.dol", 0x493BF8, 0x8
+	.asciz "Panchi"
+	.balign 4
 .global $$248793
 $$248793:
-	.incbin "baserom.dol", 0x493C00, 0x8
+	.asciz "SkyKick"
 .global $$248799
 $$248799:
-	.incbin "baserom.dol", 0x493C08, 0x4
+	.4byte 0x4A616200
 .global $$248800
 $$248800:
-	.incbin "baserom.dol", 0x493C0C, 0x8
+	.asciz "Hammer"
+	.balign 4
 .global $$248801
 $$248801:
-	.incbin "baserom.dol", 0x493C14, 0xC
+	.asciz "Wheel"
+	.balign 4
+	.4byte 0
 .global $$248803
 $$248803:
-	.incbin "baserom.dol", 0x493C20, 0x8
+	.asciz "Twinkle"
 .global $$248804
 $$248804:
-	.incbin "baserom.dol", 0x493C28, 0x8
+	.asciz "Stone"
+	.balign 4
 .global $$248896
 $$248896:
-	.incbin "baserom.dol", 0x493C30, 0x8
+	.asciz "Sword"
+	.balign 4
 .global $$248897
 $$248897:
-	.incbin "baserom.dol", 0x493C38, 0x8
+	.asciz "Whip"
+	.balign 4
 .global $$248898
 $$248898:
-	.incbin "baserom.dol", 0x493C40, 0x8
+	.asciz "Spark"
+	.balign 4
 .global $$248899
 $$248899:
-	.incbin "baserom.dol", 0x493C48, 0x8
+	.asciz "Parasol"
 .global $$248900
 $$248900:
-	.incbin "baserom.dol", 0x493C50, 0x8
+	.asciz "Wing"
+	.balign 4
 .global $$248901
 $$248901:
-	.incbin "baserom.dol", 0x493C58, 0x8
+	.asciz "Fighter"
 .global $$248902
 $$248902:
-	.incbin "baserom.dol", 0x493C60, 0x8
+	.asciz "Smash"
+	.balign 4
 .global $$249320
 $$249320:
-	.incbin "baserom.dol", 0x493C68, 0x8
+	.asciz "%sBtn"
+	.balign 4
 .global $$249331
 $$249331:
-	.incbin "baserom.dol", 0x493C70, 0x8
+	.asciz "Abl%s%s"

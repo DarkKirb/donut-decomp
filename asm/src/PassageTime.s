@@ -264,36 +264,46 @@ lbl_803B4E3C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253861
 $$253861:
-	.incbin "baserom.dol", 0x48C7B0, 0x14
+	.asciz "step/challenge/Main"
 .global $$253862
 $$253862:
-	.incbin "baserom.dol", 0x48C7C4, 0xC
+	.asciz "PassageTime"
 .global $$253867
 $$253867:
-	.incbin "baserom.dol", 0x48C7D0, 0x40
+	.asciz "FrameText"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253863
 $$253863:
-	.incbin "baserom.dol", 0x497C28, 0x8
+	.asciz "MinText"
 .global $$253864
 $$253864:
-	.incbin "baserom.dol", 0x497C30, 0x8
+	.4byte 0x30000000
+	.4byte 0
 .global $$253865
 $$253865:
-	.incbin "baserom.dol", 0x497C38, 0x8
+	.asciz "SecText"
 .global $$253866
 $$253866:
-	.incbin "baserom.dol", 0x497C40, 0x4
+	.4byte 0x30300000
 .global $$253906
 $$253906:
-	.incbin "baserom.dol", 0x497C44, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253909
 $$253909:
-	.incbin "baserom.dol", 0x497C4C, 0x8
+	.asciz "Goal"
+	.balign 4
 .global $$253945
 $$253945:
-	.incbin "baserom.dol", 0x497C54, 0x4
+	.4byte 0x25750000
 .global $$253946
 $$253946:
-	.incbin "baserom.dol", 0x497C58, 0x8
+	.asciz "%02u"
+	.balign 4

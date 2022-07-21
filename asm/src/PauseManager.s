@@ -144,4 +144,7 @@ lbl_80277988:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4core12PauseManager
 __vt__Q43scn4step4core12PauseManager:
-	.incbin "baserom.dol", 0x468948, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8021F370  ;# ptr
+	.4byte 0x8027790C  ;# ptr

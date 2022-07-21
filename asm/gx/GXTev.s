@@ -513,16 +513,41 @@ GXSetNumTevStages:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global TEVCOpTableST0
 TEVCOpTableST0:
-	.incbin "baserom.dol", 0x42D078, 0x14
+	.4byte 0xC008F8AF
+	.4byte 0xC008A89F
+	.4byte 0xC008AC8F
+	.4byte 0xC008FFF8
+	.4byte 0xC008FFFA
 .global TEVCOpTableST1
 TEVCOpTableST1:
-	.incbin "baserom.dol", 0x42D08C, 0x14
+	.4byte 0xC008F80F
+	.4byte 0xC008089F
+	.4byte 0xC0080C8F
+	.4byte 0xC008FFF8
+	.4byte 0xC008FFF0
 .global TEVAOpTableST0
 TEVAOpTableST0:
-	.incbin "baserom.dol", 0x42D0A0, 0x14
+	.4byte 0xC108F2F0
+	.4byte 0xC108FFD0
+	.4byte 0xC108F2F0
+	.4byte 0xC108FFC0
+	.4byte 0xC108FFD0
 .global TEVAOpTableST1
 TEVAOpTableST1:
-	.incbin "baserom.dol", 0x42D0B4, 0x14
+	.4byte 0xC108F070
+	.4byte 0xC108FF80
+	.4byte 0xC108F070
+	.4byte 0xC108FFC0
+	.4byte 0xC108FF80
 .global $$2LOCAL$$2GXSetTevOrder__F13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r
 $$2LOCAL$$2GXSetTevOrder__F13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r:
-	.incbin "baserom.dol", 0x42D0C8, 0x28
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000007
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0

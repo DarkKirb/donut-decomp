@@ -1247,52 +1247,148 @@ lbl_8009A424:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21372
 $$21372:
-	.incbin "baserom.dol", 0x43B5C0, 0x14
+	.asciz "NULL port event %d"
+	.balign 4
 .global $$21388
 $$21388:
-	.incbin "baserom.dol", 0x43B5D4, 0x20
+	.asciz "Port error state %d event %d"
+	.balign 4
 .global $$21389
 $$21389:
-	.incbin "baserom.dol", 0x43B5F4, 0x24
+	.asciz "Port state closed Event ignored %d"
+	.balign 4
 .global $$21392
 $$21392:
-	.incbin "baserom.dol", 0x43B618, 0x3C
+	.4byte 0x800993B4  ;# ptr
+	.4byte 0x800993EC  ;# ptr
+	.4byte 0x800993F0  ;# ptr
+	.4byte 0x80099414  ;# ptr
+	.4byte 0x800993F8  ;# ptr
+	.4byte 0x80099428  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x8009936C  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x80099460  ;# ptr
+	.4byte 0x800993A4  ;# ptr
+	.4byte 0x800993A8  ;# ptr
 .global $$21416
 $$21416:
-	.incbin "baserom.dol", 0x43B654, 0x2C
+	.asciz "Port state sabme_wait_ua Event ignored %d"
+	.balign 4
 .global $$21419
 $$21419:
-	.incbin "baserom.dol", 0x43B680, 0x3C
+	.4byte 0x800995BC  ;# ptr
+	.4byte 0x8009954C  ;# ptr
+	.4byte 0x80099570  ;# ptr
+	.4byte 0x80099590  ;# ptr
+	.4byte 0x800995CC  ;# ptr
+	.4byte 0x800995D8  ;# ptr
+	.4byte 0x800995FC  ;# ptr
+	.4byte 0x800995FC  ;# ptr
+	.4byte 0x800995FC  ;# ptr
+	.4byte 0x800994E0  ;# ptr
+	.4byte 0x800995FC  ;# ptr
+	.4byte 0x800994E0  ;# ptr
+	.4byte 0x80099510  ;# ptr
+	.4byte 0x80099538  ;# ptr
+	.4byte 0x80099540  ;# ptr
 .global $$21444
 $$21444:
-	.incbin "baserom.dol", 0x43B6BC, 0x2C
+	.asciz "Port error state Term Wait Sec event Data"
+	.balign 4
 .global $$21445
 $$21445:
-	.incbin "baserom.dol", 0x43B6E8, 0x30
+	.asciz "Port state term_wait_sec_check Event ignored %d"
 .global $$21448
 $$21448:
-	.incbin "baserom.dol", 0x43B718, 0x40
+	.4byte 0x8009973C  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x80099740  ;# ptr
+	.4byte 0x80099770  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x800996CC  ;# ptr
+	.4byte 0x800997BC  ;# ptr
+	.4byte 0x8009977C  ;# ptr
+	.4byte 0x800996CC  ;# ptr
+	.4byte 0x800996F8  ;# ptr
+	.4byte 0x80099710  ;# ptr
+	.4byte 0x80099684  ;# ptr
 .global $$21461
 $$21461:
-	.incbin "baserom.dol", 0x43B758, 0x30
+	.asciz "Port error state Orig Wait Sec event Data"
+	.balign 4
+	.4byte 0
 .global $$21462
 $$21462:
-	.incbin "baserom.dol", 0x43B788, 0x30
+	.asciz "Port state orig_wait_sec_check Event ignored %d"
 .global $$21465
 $$21465:
-	.incbin "baserom.dol", 0x43B7B8, 0x40
+	.4byte 0x80099890  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x80099900  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x80099890  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x800998BC  ;# ptr
+	.4byte 0x8009990C  ;# ptr
+	.4byte 0x800998D4  ;# ptr
+	.4byte 0x80099840  ;# ptr
 .global $$21487
 $$21487:
-	.incbin "baserom.dol", 0x43B7F8, 0x24
+	.asciz "Port state opened Event ignored %d"
+	.balign 4
 .global $$21490
 $$21490:
-	.incbin "baserom.dol", 0x43B81C, 0x3C
+	.4byte 0x80099A60  ;# ptr
+	.4byte 0x80099A5C  ;# ptr
+	.4byte 0x80099A70  ;# ptr
+	.4byte 0x80099A88  ;# ptr
+	.4byte 0x80099AAC  ;# ptr
+	.4byte 0x80099ABC  ;# ptr
+	.4byte 0x80099AF4  ;# ptr
+	.4byte 0x80099AF4  ;# ptr
+	.4byte 0x80099AF4  ;# ptr
+	.4byte 0x80099988  ;# ptr
+	.4byte 0x80099AF4  ;# ptr
+	.4byte 0x80099AF4  ;# ptr
+	.4byte 0x800999B8  ;# ptr
+	.4byte 0x800999E0  ;# ptr
+	.4byte 0x800999E8  ;# ptr
 .global $$21505
 $$21505:
-	.incbin "baserom.dol", 0x43B858, 0x2C
+	.asciz "Port state disc_wait_ua Event ignored %d"
+	.balign 4
 .global $$21508
 $$21508:
-	.incbin "baserom.dol", 0x43B884, 0x3C
+	.4byte 0x80099BC8  ;# ptr
+	.4byte 0x80099BB0  ;# ptr
+	.4byte 0x80099BBC  ;# ptr
+	.4byte 0x80099BDC  ;# ptr
+	.4byte 0x80099BF0  ;# ptr
+	.4byte 0x80099C0C  ;# ptr
+	.4byte 0x80099C14  ;# ptr
+	.4byte 0x80099C14  ;# ptr
+	.4byte 0x80099C14  ;# ptr
+	.4byte 0x80099B70  ;# ptr
+	.4byte 0x80099C14  ;# ptr
+	.4byte 0x80099B70  ;# ptr
+	.4byte 0x80099C14  ;# ptr
+	.4byte 0x80099B9C  ;# ptr
+	.4byte 0x80099BA4  ;# ptr
 .global $$21516
 $$21516:
-	.incbin "baserom.dol", 0x43B8C0, 0x28
+	.asciz "***** MX PN while disconnecting *****"
+	.balign 4

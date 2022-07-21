@@ -287,12 +287,19 @@ procFixPos__Q53scn4step5enemy6damage17StateDamageNormalFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage17StateDamageNormal
 __vt__Q53scn4step5enemy6damage17StateDamageNormal:
-	.incbin "baserom.dol", 0x471DA0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A9C58  ;# ptr
+	.4byte 0x802A9CDC  ;# ptr
+	.4byte 0x802A9D8C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A9DB0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256803
 $$256803:
-	.incbin "baserom.dol", 0x49C198, 0x4
+	.4byte 0
 .global $$256804
 $$256804:
-	.incbin "baserom.dol", 0x49C19C, 0x4
+	.4byte 0x3F19999A

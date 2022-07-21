@@ -82,4 +82,13 @@ procFixPos__Q53scn4step4hero5spark18StateAttackOverEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5spark18StateAttackOverEnd
 __vt__Q53scn4step4hero5spark18StateAttackOverEnd:
-	.incbin "baserom.dol", 0x4899B8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038E7E8
+	.4byte 0x8038E868
+	.4byte 0x8038E86C
+	.4byte 0x8035550C
+	.4byte 0x8038E870
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

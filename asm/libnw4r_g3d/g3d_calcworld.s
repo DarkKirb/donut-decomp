@@ -755,17 +755,19 @@ lbl_800E3C34:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29581
 $$29581:
-	.incbin "baserom.dol", 0x43D068, 0x10
+	.asciz "NodeTree"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$29736
 $$29736:
-	.incbin "baserom.dol", 0x492DE0, 0x8
+	.asciz "NodeMix"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29400
 $$29400:
-	.incbin "baserom.dol", 0x499B68, 0x4
+	.4byte 0x3F800000
 .global $$29737
 $$29737:
-	.incbin "baserom.dol", 0x499B6C, 0x4
+	.4byte 0

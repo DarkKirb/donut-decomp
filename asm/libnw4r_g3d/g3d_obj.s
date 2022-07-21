@@ -118,9 +118,19 @@ GetTypeObj__Q34nw4r3g3d6G3dObjCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6G3dObj
 TYPE_NAME__Q34nw4r3g3d6G3dObj:
-	.incbin "baserom.dol", 0x4046E8, 0x10
+	.4byte 0x00000007
+	.asciz "G3dObj"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d6G3dObj
 __vt__Q34nw4r3g3d6G3dObj:
-	.incbin "baserom.dol", 0x43D030, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x800DBE40  ;# ptr
+	.4byte 0
+	.4byte 0x800DBD10  ;# ptr
+	.4byte 0x800DBE70  ;# ptr
+	.4byte 0x800DBE60  ;# ptr
+	.4byte 0

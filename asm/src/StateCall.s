@@ -534,9 +534,17 @@ lbl_8024DFD4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior9StateCall
 __vt__Q53scn4step4boss6dubior9StateCall:
-	.incbin "baserom.dol", 0x463860, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024D89C  ;# ptr
+	.4byte 0x8024D8A0  ;# ptr
+	.4byte 0x8024D95C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024D9B0  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256053
 $$256053:
-	.incbin "baserom.dol", 0x49B290, 0x8
+	.4byte 0
+	.4byte 0

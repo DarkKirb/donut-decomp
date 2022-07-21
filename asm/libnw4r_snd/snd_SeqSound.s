@@ -608,15 +608,33 @@ __sinit_$$3snd_SeqSound_cpp:
 /* 8010DF0C 00109D4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40239C, 0x4
+	.4byte 0x8010DF00  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail8SeqSound
 __vt__Q44nw4r3snd6detail8SeqSound:
-	.incbin "baserom.dol", 0x43E4E0, 0x38
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010DEF0  ;# ptr
+	.4byte 0x8010DBA0  ;# ptr
+	.4byte 0x8010DAC0  ;# ptr
+	.4byte 0x8010DEE0  ;# ptr
+	.4byte 0x8010DD30  ;# ptr
+	.4byte 0x8010DD50  ;# ptr
+	.4byte 0x8010D810  ;# ptr
+	.4byte 0x8010DEC0  ;# ptr
+	.4byte 0x8010DED0  ;# ptr
+	.4byte 0x8010DC40  ;# ptr
+	.4byte 0x80106200  ;# ptr
+	.4byte 0x80106240  ;# ptr
 .global __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask
 __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask:
-	.incbin "baserom.dol", 0x43E518, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010D7B0  ;# ptr
+	.4byte 0x8010DD60  ;# ptr
+	.4byte 0x8010DE60  ;# ptr
+	.4byte 0x8010DE90  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q44nw4r3snd6detail8SeqSound

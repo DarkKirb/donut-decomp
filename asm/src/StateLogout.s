@@ -218,4 +218,13 @@ procFixPos__Q53scn4step4hero6common11StateLogoutFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common11StateLogout
 __vt__Q53scn4step4hero6common11StateLogout:
-	.incbin "baserom.dol", 0x487F20, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803668BC
+	.4byte 0x803668C0
+	.4byte 0x803668C4
+	.4byte 0x8035550C
+	.4byte 0x803668C8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

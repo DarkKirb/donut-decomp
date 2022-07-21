@@ -1935,31 +1935,60 @@ GetTypeObj__Q34nw4r3g3d7ScnRootCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d7ScnRoot
 TYPE_NAME__Q34nw4r3g3d7ScnRoot:
-	.incbin "baserom.dol", 0x404FC0, 0x10
+	.4byte 0x00000008
+	.asciz "ScnRoot"
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d12ScnObjGather
 __vt__Q34nw4r3g3d12ScnObjGather:
-	.incbin "baserom.dol", 0x43D140, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x800EC300  ;# ptr
+	.4byte 0x800EB5D0  ;# ptr
+	.4byte 0x800EC2F0  ;# ptr
+	.4byte 0x800EB6F0  ;# ptr
+	.4byte 0x800EBFD0  ;# ptr
+	.4byte 0x800EC150  ;# ptr
+	.4byte 0x800EC1C0  ;# ptr
+	.4byte 0x800EC250  ;# ptr
+	.4byte 0x800EC2E0  ;# ptr
+	.4byte 0
 .global __vt__Q34nw4r3g3d7ScnRoot
 __vt__Q34nw4r3g3d7ScnRoot:
-	.incbin "baserom.dol", 0x43D170, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x800EC310  ;# ptr
+	.4byte 0x800EAA70  ;# ptr
+	.4byte 0x800EB550  ;# ptr
+	.4byte 0x800EC390  ;# ptr
+	.4byte 0x800EC380  ;# ptr
+	.4byte 0x800E9D40  ;# ptr
+	.4byte 0x800E9350  ;# ptr
+	.4byte 0x800E94F0  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9110  ;# ptr
+	.4byte 0x800EA450  ;# ptr
+	.4byte 0x800EA5E0  ;# ptr
+	.4byte 0x800EA6A0  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$213447
 $$213447:
-	.incbin "baserom.dol", 0x492DF0, 0x4
+	.4byte 0x00000020
 .global $$213459
 $$213459:
-	.incbin "baserom.dol", 0x492DF4, 0x4
+	.4byte 0x00000020
 .global $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4PFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b$$1__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4PFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b$$1__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x492DF8, 0x4
+	.4byte 0xFFFFFFFC
 .global $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4RPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b$$1__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjRPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4RPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b$$1__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjRPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x492DFC, 0x4
+	.4byte 0xFFFFFFFC
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214739
 $$214739:
-	.incbin "baserom.dol", 0x499C08, 0x8
+	.4byte 0x3F000000
+	.4byte 0

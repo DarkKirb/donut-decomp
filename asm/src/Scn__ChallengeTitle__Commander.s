@@ -290,64 +290,90 @@ lbl_801C4084:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255876
 $$255876:
-	.incbin "baserom.dol", 0x456DC0, 0x20
+	.asciz "Scn.ChallengeTitle.Commander"
+	.balign 4
 .global $$255877
 $$255877:
-	.incbin "baserom.dol", 0x456DE0, 0x14
+	.asciz "int CurrentFrame()"
+	.balign 4
 .global $$255878
 $$255878:
-	.incbin "baserom.dol", 0x456DF4, 0x14
+	.asciz "void SetFrame(int)"
+	.balign 4
 .global $$255879
 $$255879:
-	.incbin "baserom.dol", 0x456E08, 0x18
+	.asciz "void SceneAnimStart()"
+	.balign 4
 .global $$255880
 $$255880:
-	.incbin "baserom.dol", 0x456E20, 0x18
+	.asciz "void SceneAnimStop()"
+	.balign 4
 .global $$255881
 $$255881:
-	.incbin "baserom.dol", 0x456E38, 0x1C
+	.asciz "void LocatorAnim(string)"
+	.balign 4
 .global $$255882
 $$255882:
-	.incbin "baserom.dol", 0x456E54, 0x24
+	.asciz "Scn.ChallengeTitle.Chara Chara(int)"
 .global $$255883
 $$255883:
-	.incbin "baserom.dol", 0x456E78, 0x14
+	.asciz "void RandomAnim()"
+	.balign 4
 .global $$255884
 $$255884:
-	.incbin "baserom.dol", 0x456E8C, 0x20
+	.asciz "void SetWaitAnimFromRandom()"
+	.balign 4
 .global $$255885
 $$255885:
-	.incbin "baserom.dol", 0x456EAC, 0x1C
+	.asciz "bool IsRandomAnimLooped()"
+	.balign 4
 .global $$255886
 $$255886:
-	.incbin "baserom.dol", 0x456EC8, 0x18
+	.asciz "void ResetRandomAnim()"
+	.balign 4
 .global $$255887
 $$255887:
-	.incbin "baserom.dol", 0x456EE0, 0x18
+	.asciz "void SetRandomFrame()"
+	.balign 4
 .global $$255888
 $$255888:
-	.incbin "baserom.dol", 0x456EF8, 0x18
+	.asciz "bool IsSetRandomFrame()"
 .global $$255889
 $$255889:
-	.incbin "baserom.dol", 0x456F10, 0x18
+	.asciz "void TitleInfoAppear()"
+	.balign 4
 .global $$255890
 $$255890:
-	.incbin "baserom.dol", 0x456F28, 0x1C
+	.asciz "void TitleInfoEffect(int)"
+	.balign 4
 .global $$255891
 $$255891:
-	.incbin "baserom.dol", 0x456F44, 0x1C
+	.asciz "void TitleInfoEffectBG(int)"
 .global $$255892
 $$255892:
-	.incbin "baserom.dol", 0x456F60, 0x18
+	.asciz "void CinemaScopeOut()"
+	.balign 4
 .global $$255893
 $$255893:
-	.incbin "baserom.dol", 0x456F78, 0x18
+	.asciz "void CinemaScopeHide()"
+	.balign 4
 .global $$255894
 $$255894:
-	.incbin "baserom.dol", 0x456F90, 0x10
+	.asciz "void BGMStart()"
 .global $$255895
 $$255895:
-	.incbin "baserom.dol", 0x456FA0, 0x14
+	.asciz "void SEStart(int)"
+	.balign 4
 .global $$255896
 $$255896:
-	.incbin "baserom.dol", 0x456FB4, 0x64
+	.asciz "void SEStop()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0

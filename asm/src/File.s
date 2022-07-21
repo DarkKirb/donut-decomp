@@ -564,101 +564,156 @@ lbl_801E4194:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252047
 $$252047:
-	.incbin "baserom.dol", 0x4115F0, 0x18
+	.4byte 0x80557B00
+	.4byte 0x80557B08
+	.4byte 0x80557B10
+	.4byte 0x80557B18
+	.4byte 0x80557B20
+	.4byte 0x80557B20
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252743
 $$252743:
-	.incbin "baserom.dol", 0x45A1D8, 0x20
+	.asciz "challengefileselect/Main"
+	.balign 4
+	.4byte 0
 .global $$252745
 $$252745:
-	.incbin "baserom.dol", 0x45A1F8, 0x10
+	.asciz "TotalScoreBaseN"
 .global $$252748
 $$252748:
-	.incbin "baserom.dol", 0x45A208, 0xC
+	.asciz "FileNumber"
+	.balign 4
 .global $$252750
 $$252750:
-	.incbin "baserom.dol", 0x45A214, 0x10
+	.asciz "FileNumberBG"
+	.balign 4
 .global $$252752
 $$252752:
-	.incbin "baserom.dol", 0x45A224, 0xC
+	.asciz "BlankFile"
+	.balign 4
 .global $$252753
 $$252753:
-	.incbin "baserom.dol", 0x45A230, 0xC
+	.asciz "ScoreText"
+	.balign 4
 .global $$252754
 $$252754:
-	.incbin "baserom.dol", 0x45A23C, 0xC
+	.asciz "TotalScore"
+	.balign 4
 .global $$252818
 $$252818:
-	.incbin "baserom.dol", 0x45A248, 0xC
+	.asciz "OpenSmall"
+	.balign 4
 .global $$252895
 $$252895:
-	.incbin "baserom.dol", 0x45A254, 0xC
+	.asciz "Blank%dPN"
+	.balign 4
 .global $$252897
 $$252897:
-	.incbin "baserom.dol", 0x45A260, 0xC
+	.asciz "%sFrameN"
+	.balign 4
 .global $$252898
 $$252898:
-	.incbin "baserom.dol", 0x45A26C, 0xC
+	.asciz "Black%sN"
+	.balign 4
 .global __vt__Q33scn19challengefileselect4File
 __vt__Q33scn19challengefileselect4File:
-	.incbin "baserom.dol", 0x45A278, 0x88
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E412C  ;# ptr
+	.4byte 0x801E3D1C  ;# ptr
+	.4byte 0x801E3D54  ;# ptr
+	.4byte 0x801E3D64  ;# ptr
+	.4byte 0x801E3D70  ;# ptr
+	.4byte 0x801E3D7C  ;# ptr
+	.4byte 0x801E3D88  ;# ptr
+	.4byte 0x801E3D90  ;# ptr
+	.4byte 0x801E3E00  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252744
 $$252744:
-	.incbin "baserom.dol", 0x493E90, 0x8
+	.asciz "File"
+	.balign 4
 .global $$252746
 $$252746:
-	.incbin "baserom.dol", 0x493E98, 0x8
+	.asciz "Kirby"
+	.balign 4
 .global $$252747
 $$252747:
-	.incbin "baserom.dol", 0x493EA0, 0x8
+	.asciz "FileBG"
+	.balign 4
 .global $$252749
 $$252749:
-	.incbin "baserom.dol", 0x493EA8, 0x4
+	.4byte 0x25640000
 .global $$252751
 $$252751:
-	.incbin "baserom.dol", 0x493EAC, 0x8
+	.asciz "Blank"
+	.balign 4
 .global $$252821
 $$252821:
-	.incbin "baserom.dol", 0x493EB4, 0xC
+	.asciz "Focus"
+	.balign 4
+	.4byte 0
 .global $$252824
 $$252824:
-	.incbin "baserom.dol", 0x493EC0, 0x8
+	.asciz "UnFocus"
 .global $$252827
 $$252827:
-	.incbin "baserom.dol", 0x493EC8, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$252843
 $$252843:
-	.incbin "baserom.dol", 0x493ED0, 0x8
+	.asciz "CursorN"
 .global $$252847
 $$252847:
-	.incbin "baserom.dol", 0x493ED8, 0x8
+	.asciz "OpenBig"
 .global $$252042
 $$252042:
-	.incbin "baserom.dol", 0x493EE0, 0x8
+	.asciz "Normal"
+	.balign 4
 .global $$252043
 $$252043:
-	.incbin "baserom.dol", 0x493EE8, 0x8
+	.asciz "Bronze"
+	.balign 4
 .global $$252044
 $$252044:
-	.incbin "baserom.dol", 0x493EF0, 0x8
+	.asciz "Silver"
+	.balign 4
 .global $$252045
 $$252045:
-	.incbin "baserom.dol", 0x493EF8, 0x8
+	.asciz "Gold"
+	.balign 4
 .global $$252046
 $$252046:
-	.incbin "baserom.dol", 0x493F00, 0x8
+	.asciz "Platina"
 .global $$252894
 $$252894:
-	.incbin "baserom.dol", 0x493F08, 0x8
+	.asciz "File%dN"
 .global $$252896
 $$252896:
-	.incbin "baserom.dol", 0x493F10, 0x4
+	.4byte 0x25734E00
 .global $$252899
 $$252899:
-	.incbin "baserom.dol", 0x493F14, 0x8
+	.asciz "BlankN"
+	.balign 4
 .global $$252900
 $$252900:
-	.incbin "baserom.dol", 0x493F1C, 0xC
+	.asciz "ScoreN"
+	.balign 4
+	.4byte 0

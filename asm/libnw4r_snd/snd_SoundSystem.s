@@ -247,17 +247,19 @@ __sinit_$$3snd_SoundSystem_cpp:
 /* 80114CDC 00110B1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023A0, 0x4
+	.4byte 0x80114C90  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$24759
 $$24759:
-	.incbin "baserom.dol", 0x43E5E0, 0x48
+	.asciz "<< NW4R    - SND \tfinal   build: Mar  1 2011 13:31:44 (0x4302_188) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_SND_Version_
 NW4R_SND_Version_:
-	.incbin "baserom.dol", 0x492E48, 0x8
+	.4byte 0x804424E0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$24760

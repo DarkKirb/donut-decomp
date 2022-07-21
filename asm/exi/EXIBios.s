@@ -1781,12 +1781,14 @@ lbl_80029ED0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42BC40, 0x48
+	.asciz "<< RVL_SDK - EXI \trelease build: Aug 23 2010 17:30:08 (0x4302_145) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __EXIVersion
 __EXIVersion:
-	.incbin "baserom.dol", 0x4928F8, 0x8
+	.4byte 0x8042FB40
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global Ecb

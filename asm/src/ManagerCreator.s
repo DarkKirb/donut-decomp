@@ -53,4 +53,5 @@ lbl_803CAB30:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251813
 $$251813:
-	.incbin "baserom.dol", 0x48EAF0, 0x30
+	.asciz "Scn.Step.OColl.AttackData.ExecRegisterAll()"
+	.4byte 0

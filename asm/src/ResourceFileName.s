@@ -37,53 +37,60 @@ lbl_8019D884:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x452A30, 0x14
+	.asciz "hbm/homeBtn_ENG.arc"
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x452A44, 0x14
+	.asciz "hbm/homeBtn_FRA.arc"
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x452A58, 0x14
+	.asciz "hbm/homeBtn_SPA.arc"
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x452A6C, 0x14
+	.asciz "hbm/home_nosave.csv"
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x452A80, 0x10
+	.asciz "hbm/home.csv"
+	.balign 4
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x452A90, 0x10
+	.asciz "hbm/config.txt"
+	.balign 4
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x452AA0, 0x14
+	.asciz "hbm/SpeakerSe.arc"
+	.balign 4
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x452AB4, 0x1C
+	.asciz "hbm/HomeButtonSe.arc"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.incbin "baserom.dol", 0x493228, 0x4
+	.4byte 0x80456930
 .global LAYOUT_FRA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_FRA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.incbin "baserom.dol", 0x49322C, 0x4
+	.4byte 0x80456944
 .global LAYOUT_SPA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_SPA_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.incbin "baserom.dol", 0x493230, 0x4
+	.4byte 0x80456958
 .global MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.incbin "baserom.dol", 0x493234, 0x4
+	.4byte 0x8045696C
 .global MESSAGE_WARNING_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 MESSAGE_WARNING_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
-	.incbin "baserom.dol", 0x493238, 0x8
+	.4byte 0x80456980
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global CONFIG_FILENAME__Q23hbm16ResourceFileName
 CONFIG_FILENAME__Q23hbm16ResourceFileName:
-	.incbin "baserom.dol", 0x49A358, 0x4
+	.4byte 0x80456990
 .global SPEAKER_SE_FILENAME__Q23hbm16ResourceFileName
 SPEAKER_SE_FILENAME__Q23hbm16ResourceFileName:
-	.incbin "baserom.dol", 0x49A35C, 0x4
+	.4byte 0x804569A0
 .global SE_FILENAME__Q23hbm16ResourceFileName
 SE_FILENAME__Q23hbm16ResourceFileName:
-	.incbin "baserom.dol", 0x49A360, 0x8
+	.4byte 0x804569B4
+	.4byte 0

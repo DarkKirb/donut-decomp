@@ -619,33 +619,77 @@ __dt__Q53scn4step5enemy5sheld10BrainChaseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper10BrainChase
 __vt__Q53scn4step5enemy7blipper10BrainChase:
-	.incbin "baserom.dol", 0x46FD10, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80298B50  ;# ptr
+	.4byte 0x80298A68  ;# ptr
+	.4byte 0x80298B4C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6degout10BrainChase
 __vt__Q53scn4step5enemy6degout10BrainChase:
-	.incbin "baserom.dol", 0x471F88, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AD0EC  ;# ptr
+	.4byte 0x802ACFF4  ;# ptr
+	.4byte 0x802AD070  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7mumbies10BrainChase
 __vt__Q53scn4step5enemy7mumbies10BrainChase:
-	.incbin "baserom.dol", 0x4751D8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C4DB0  ;# ptr
+	.4byte 0x802C4D28  ;# ptr
+	.4byte 0x802C4DAC  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateAngerChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateAngerChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477438, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D96FC  ;# ptr
+	.4byte 0x802D969C  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateFaceChange$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateFaceChange$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477448, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D96F8  ;# ptr
+	.4byte 0x802D96B8  ;# ptr
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477458, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D96F4  ;# ptr
+	.4byte 0x802D96D4  ;# ptr
 .global __vt__Q53scn4step5enemy6scarfy10BrainChase
 __vt__Q53scn4step5enemy6scarfy10BrainChase:
-	.incbin "baserom.dol", 0x477468, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D96F0  ;# ptr
+	.4byte 0x802D94DC  ;# ptr
+	.4byte 0x802D9558  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld10BrainChase
 __vt__Q53scn4step5enemy5sheld10BrainChase:
-	.incbin "baserom.dol", 0x477AA0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DCA00  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802DC878  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

@@ -42,15 +42,31 @@ toMoveRate__Q53scn4step7gimmick13movegroupctrl9OrderUtilFUc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global t_SEList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2
 t_SEList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2:
-	.incbin "baserom.dol", 0x47DB80, 0x28
+	.4byte 0
+	.4byte 0x00000261
+	.4byte 0x00000260
+	.4byte 0x0000025F
+	.4byte 0x0000025E
+	.4byte 0x0000025D
+	.4byte 0x0000025C
+	.4byte 0x0000025B
+	.4byte 0x00000259
+	.4byte 0x0000025A
 .global t_QuakeList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2
 t_QuakeList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2:
-	.incbin "baserom.dol", 0x47DBA8, 0x18
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x00000005
+	.4byte 0x00000007
+	.4byte 0x00000009
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248798
 $$248798:
-	.incbin "baserom.dol", 0x49D4E0, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0
 .global $$248800
 $$248800:
-	.incbin "baserom.dol", 0x49D4E8, 0x8
+	.4byte 0x43300000
+	.4byte 0

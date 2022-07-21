@@ -1658,15 +1658,18 @@ lbl_80052288:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21709
 $$21709:
-	.incbin "baserom.dol", 0x434608, 0x28
+	.asciz "APP ERROR: Not enough IPC arena\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __fsFd
 __fsFd:
-	.incbin "baserom.dol", 0x492B90, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 .global $$21710
 $$21710:
-	.incbin "baserom.dol", 0x492B98, 0x8
+	.asciz "/dev/fs"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __fsInitialized

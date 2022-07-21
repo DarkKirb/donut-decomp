@@ -72,4 +72,11 @@ __dt__Q53scn4step5enemy5nruff8BrainRunFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5nruff8BrainRun
 __vt__Q53scn4step5enemy5nruff8BrainRun:
-	.incbin "baserom.dol", 0x475860, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C7A64  ;# ptr
+	.4byte 0x802C79C8  ;# ptr
+	.4byte 0x802C7A60  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

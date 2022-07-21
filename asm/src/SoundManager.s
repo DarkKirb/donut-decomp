@@ -551,30 +551,78 @@ final__Q23snd12SoundManagerFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$249464
 $$249464:
-	.incbin "baserom.dol", 0x41D028, 0xA0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x0000000A
+	.4byte 0x00000009
+	.4byte 0x0000000C
+	.4byte 0x0000000B
+	.4byte 0x0000000D
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x00000013
+	.4byte 0x00000015
+	.4byte 0x00000016
+	.4byte 0x00000017
+	.4byte 0x00000018
+	.4byte 0x0000001A
+	.4byte 0x0000001C
+	.4byte 0x00000019
+	.4byte 0x0000001D
+	.4byte 0x00000010
+	.4byte 0x00000011
+	.4byte 0x00000012
+	.4byte 0x00000014
+	.4byte 0x0000001B
+	.4byte 0x00000020
+	.4byte 0x00000021
+	.4byte 0x00000022
+	.4byte 0x00000023
+	.4byte 0x00000024
+	.4byte 0x00000025
+	.4byte 0x00000026
+	.4byte 0x00000027
+	.4byte 0x0000001F
+	.4byte 0x00000028
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250548
 $$250548:
-	.incbin "baserom.dol", 0x492700, 0x18
+	.asciz "snd/iuk_sound/IUK.brsar"
 .global __vt__Q23snd12SoundManager
 __vt__Q23snd12SoundManager:
-	.incbin "baserom.dol", 0x492718, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x80403150
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x492724, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x492748, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x492754, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x492778, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x492784, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x4927A8, 0x10
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0

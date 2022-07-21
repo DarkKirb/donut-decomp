@@ -638,24 +638,28 @@ cbForReadSync:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21638
 $$21638:
-	.incbin "baserom.dol", 0x42D1F8, 0xC8
+	.asciz "DVDConvertEntrynumToPath(possibly DVDOpen or DVDChangeDir or DVDOpenDir): specified directory or file (%s) doesn't match standard 8.3 format. This is a temporary restriction and will be removed soon\n"
 .global $$21688
 $$21688:
-	.incbin "baserom.dol", 0x42D2C0, 0x38
+	.asciz "Warning: DVDOpen(): file '%s' was not found under %s.\n"
+	.balign 4
 .global $$21762
 $$21762:
-	.incbin "baserom.dol", 0x42D2F8, 0x34
+	.asciz "DVDReadAsync(): specified area is out of the file  "
 .global $$21787
 $$21787:
-	.incbin "baserom.dol", 0x42D32C, 0x34
+	.asciz "DVDRead(): specified area is out of the file  "
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DVDLongFileNameFlag
 __DVDLongFileNameFlag:
-	.incbin "baserom.dol", 0x4929A8, 0x8
+	.4byte 0x00000001
+	.4byte 0
 .global $$21637
 $$21637:
-	.incbin "baserom.dol", 0x4929B0, 0x8
+	.asciz "dvdfs.c"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global currentDirectory

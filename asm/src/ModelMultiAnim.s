@@ -739,4 +739,4 @@ __ct__Q33g3d14ModelMultiAnim16ModelAnimWrapperFRCQ23g3d15ResModelContextRCQ23mem
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251837
 $$251837:
-	.incbin "baserom.dol", 0x4931A8, 0x8
+	.asciz "%s_A%lu"

@@ -121,4 +121,11 @@ procFixPos__Q53scn4step5enemy5cappy12StateLostHatFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5cappy12StateLostHat
 __vt__Q53scn4step5enemy5cappy12StateLostHat:
-	.incbin "baserom.dol", 0x471358, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A337C  ;# ptr
+	.4byte 0x802A3380  ;# ptr
+	.4byte 0x802A3448  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A349C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

@@ -130,12 +130,15 @@ lbl_8012874C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$22246
 $$22246:
-	.incbin "baserom.dol", 0x409EE0, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22206
 $$22206:
-	.incbin "baserom.dol", 0x43EAB8, 0x20
+	.asciz "homebutton::FrameController"
+	.4byte 0
 .global __RTTI__Q210homebutton15FrameController
 __RTTI__Q210homebutton15FrameController:
-	.incbin "baserom.dol", 0x43EAD8, 0x8
+	.4byte 0x804429B8
+	.4byte 0

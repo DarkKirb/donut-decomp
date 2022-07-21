@@ -90,12 +90,15 @@ procAnim__Q53scn4step4info4ship4ShipFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252067
 $$252067:
-	.incbin "baserom.dol", 0x48DD88, 0x10
+	.asciz "step/demo/Main"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252068
 $$252068:
-	.incbin "baserom.dol", 0x498118, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$252069
 $$252069:
-	.incbin "baserom.dol", 0x498120, 0x8
+	.asciz "SkipN"
+	.balign 4

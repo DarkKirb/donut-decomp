@@ -66,10 +66,11 @@ reset__Q43scn4step4hero8SlopeFitFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250930
 $$250930:
-	.incbin "baserom.dol", 0x49D9B0, 0x4
+	.4byte 0x3F000000
 .global $$250931
 $$250931:
-	.incbin "baserom.dol", 0x49D9B4, 0x4
+	.4byte 0x3F800000
 .global $$250932
 $$250932:
-	.incbin "baserom.dol", 0x49D9B8, 0x8
+	.4byte 0
+	.4byte 0

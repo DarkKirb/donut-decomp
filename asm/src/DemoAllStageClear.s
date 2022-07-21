@@ -265,21 +265,32 @@ mfGetBasePos__Q53scn4step7gimmick11areamapdemo17DemoAllStageClearFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257907
 $$257907:
-	.incbin "baserom.dol", 0x47B640, 0x38
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Unlock.AllStageClear"
+	.balign 4
+	.4byte 0
 .global __vt__Q53scn4step7gimmick11areamapdemo17DemoAllStageClear
 __vt__Q53scn4step7gimmick11areamapdemo17DemoAllStageClear:
-	.incbin "baserom.dol", 0x47B678, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FAFA0
+	.4byte 0x802FAE04
+	.4byte 0x802FAE08
+	.4byte 0x802FB00C
+	.4byte 0x802FB09C
+	.4byte 0x802F9A60
+	.4byte 0x802F9A94
+	.4byte 0x802FAE90
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257905
 $$257905:
-	.incbin "baserom.dol", 0x49D148, 0x4
+	.4byte 0x41080000
 .global $$257906
 $$257906:
-	.incbin "baserom.dol", 0x49D14C, 0x4
+	.4byte 0
 .global $$257936
 $$257936:
-	.incbin "baserom.dol", 0x49D150, 0x4
+	.4byte 0x40C00000
 .global $$257937
 $$257937:
-	.incbin "baserom.dol", 0x49D154, 0x4
+	.4byte 0x3E4CCCCD

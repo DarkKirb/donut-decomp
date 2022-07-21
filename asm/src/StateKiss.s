@@ -680,30 +680,43 @@ __dt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interferen
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference16StateKissReceive$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q43scn4step4hero11KissContext$$1
 __vt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference16StateKissReceive$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q43scn4step4hero11KissContext$$1:
-	.incbin "baserom.dol", 0x4885D0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803729C8
+	.4byte 0x80372944
 .global __vt__Q53scn4step4hero12interference9StateKiss
 __vt__Q53scn4step4hero12interference9StateKiss:
-	.incbin "baserom.dol", 0x4885E0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037218C
+	.4byte 0x803722F4
+	.4byte 0x803726A4
+	.4byte 0x8035550C
+	.4byte 0x803726A8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259088
 $$259088:
-	.incbin "baserom.dol", 0x49DD40, 0x4
+	.4byte 0
 .global $$259197
 $$259197:
-	.incbin "baserom.dol", 0x49DD44, 0x4
+	.4byte 0x3F000000
 .global $$259198
 $$259198:
-	.incbin "baserom.dol", 0x49DD48, 0x4
+	.4byte 0x4222F983
 .global $$259199
 $$259199:
-	.incbin "baserom.dol", 0x49DD4C, 0x4
+	.4byte 0x3C8EFA35
 .global $$259200
 $$259200:
-	.incbin "baserom.dol", 0x49DD50, 0x4
+	.4byte 0x43340000
 .global $$259201
 $$259201:
-	.incbin "baserom.dol", 0x49DD54, 0x4
+	.4byte 0x3F800000
 .global $$259205
 $$259205:
-	.incbin "baserom.dol", 0x49DD58, 0x8
+	.4byte 0x43300000
+	.4byte 0

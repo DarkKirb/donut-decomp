@@ -154,16 +154,17 @@ setValid__Q43scn4step5chara12CliffCheckerFb:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252371
 $$252371:
-	.incbin "baserom.dol", 0x49B760, 0x4
+	.4byte 0x3D4CCCCD
 .global $$252372
 $$252372:
-	.incbin "baserom.dol", 0x49B764, 0x4
+	.4byte 0
 .global $$252373
 $$252373:
-	.incbin "baserom.dol", 0x49B768, 0x4
+	.4byte 0xBF000000
 .global $$252374
 $$252374:
-	.incbin "baserom.dol", 0x49B76C, 0x4
+	.4byte 0x3F000000
 .global $$252377
 $$252377:
-	.incbin "baserom.dol", 0x49B770, 0x8
+	.4byte 0x43300000
+	.4byte 0

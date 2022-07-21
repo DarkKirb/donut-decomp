@@ -847,68 +847,88 @@ lbl_803A8074:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253933
 $$253933:
-	.incbin "baserom.dol", 0x48B788, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$253934
 $$253934:
-	.incbin "baserom.dol", 0x48B798, 0xC
+	.asciz "HeroLifeBar"
 .global $$253935
 $$253935:
-	.incbin "baserom.dol", 0x48B7A4, 0x14
+	.asciz "HeroLifeBarFlash"
+	.balign 4
 .global $$253995
 $$253995:
-	.incbin "baserom.dol", 0x48B7B8, 0xC
+	.asciz "NormalModeN"
 .global $$253996
 $$253996:
-	.incbin "baserom.dol", 0x48B7C4, 0x10
+	.asciz "LifeBar_Star"
+	.balign 4
 .global $$254005
 $$254005:
-	.incbin "baserom.dol", 0x48B7D4, 0xC
+	.asciz "PinchDamage"
 .global $$254012
 $$254012:
-	.incbin "baserom.dol", 0x48B7E0, 0x10
+	.asciz "PinchRecovery"
+	.balign 4
 .global $$254013
 $$254013:
-	.incbin "baserom.dol", 0x48B7F0, 0xC
+	.asciz "Recovery"
+	.balign 4
 .global $$254021
 $$254021:
-	.incbin "baserom.dol", 0x48B7FC, 0xC
+	.asciz "PinchWait"
+	.balign 4
 .global $$254024
 $$254024:
-	.incbin "baserom.dol", 0x48B808, 0x10
+	.asciz "InvincibleStart"
 .global $$254025
 $$254025:
-	.incbin "baserom.dol", 0x48B818, 0x10
+	.asciz "InvincibleWait"
+	.balign 4
 .global $$254032
 $$254032:
-	.incbin "baserom.dol", 0x48B828, 0x80
+	.asciz "InvincibleEnd"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "NW4R:Failed assertion texSRTIdx < mGXMemNum.texSRT"
+	.balign 4
+	.asciz "material.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253937
 $$253937:
-	.incbin "baserom.dol", 0x497920, 0x8
+	.asciz "FlashN"
+	.balign 4
 .global $$253938
 $$253938:
-	.incbin "baserom.dol", 0x497928, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254006
 $$254006:
-	.incbin "baserom.dol", 0x497930, 0x8
+	.asciz "Damage"
+	.balign 4
 .global $$254018
 $$254018:
-	.incbin "baserom.dol", 0x497938, 0x8
+	.asciz "Pinch"
+	.balign 4
 .global $$254091
 $$254091:
-	.incbin "baserom.dol", 0x497940, 0x8
+	.asciz "LifeBar"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253936
 $$253936:
-	.incbin "baserom.dol", 0x49E400, 0x4
+	.4byte 0
 .global $$253939
 $$253939:
-	.incbin "baserom.dol", 0x49E404, 0x4
+	.4byte 0x3F800000
 .global $$254057
 $$254057:
-	.incbin "baserom.dol", 0x49E408, 0x4
+	.4byte 0x3C449BA6
 .global $$254072
 $$254072:
-	.incbin "baserom.dol", 0x49E40C, 0x4
+	.4byte 0x3B83126F

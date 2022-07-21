@@ -172,18 +172,25 @@ setIsPose__Q53scn4step7gimmick10cameralock14VariationStillFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick10cameralock14VariationStill
 __vt__Q53scn4step7gimmick10cameralock14VariationStill:
-	.incbin "baserom.dol", 0x47C580, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80305498
+	.4byte 0x80305628
+	.4byte 0x803056A8
+	.4byte 0x803056AC
+	.4byte 0x803056B0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254589
 $$254589:
-	.incbin "baserom.dol", 0x49D2B8, 0x4
+	.4byte 0x3F000000
 .global $$254590
 $$254590:
-	.incbin "baserom.dol", 0x49D2BC, 0x4
+	.4byte 0xBF000000
 .global $$254591
 $$254591:
-	.incbin "baserom.dol", 0x49D2C0, 0x4
+	.4byte 0
 .global $$254592
 $$254592:
-	.incbin "baserom.dol", 0x49D2C4, 0x4
+	.4byte 0x3F800000

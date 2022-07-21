@@ -334,20 +334,29 @@ lbl_8039AF24:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero4wing23StateUnderAttackLanding
 __vt__Q53scn4step4hero4wing23StateUnderAttackLanding:
-	.incbin "baserom.dol", 0x48A228, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039AC64
+	.4byte 0x8039AD08
+	.4byte 0x8039ADC4
+	.4byte 0x8035550C
+	.4byte 0x8039AE1C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256962
 $$256962:
-	.incbin "baserom.dol", 0x497870, 0x4
+	.4byte 0x3F800000
 .global $$256963
 $$256963:
-	.incbin "baserom.dol", 0x497874, 0x4
+	.4byte 0xBF800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257777
 $$257777:
-	.incbin "baserom.dol", 0x49E2B8, 0x4
+	.4byte 0x3E19999A
 .global $$257778
 $$257778:
-	.incbin "baserom.dol", 0x49E2BC, 0x4
+	.4byte 0

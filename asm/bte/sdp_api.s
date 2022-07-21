@@ -1040,4 +1040,5 @@ lbl_8009D5E8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21415
 $$21415:
-	.incbin "baserom.dol", 0x43BA50, 0x50
+	.asciz "SDP_InitDiscoveryDb Illegal param: p_db 0x%x, len %d, num_uuid %d, num_attr %d"
+	.balign 4

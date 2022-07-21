@@ -862,87 +862,119 @@ __sinit_$$3Trophy_cpp:
 /* 801EA0CC 001E5F0C  4B ED 3F F4 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402448, 0x4
+	.4byte 0x801EA0B8  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252758
 $$252758:
-	.incbin "baserom.dol", 0x4116F8, 0x28
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252317
 $$252317:
-	.incbin "baserom.dol", 0x45A978, 0x10
+	.asciz "Coppertrophy"
+	.balign 4
 .global $$252318
 $$252318:
-	.incbin "baserom.dol", 0x45A988, 0x10
+	.asciz "Silvertrophy"
+	.balign 4
 .global $$252319
 $$252319:
-	.incbin "baserom.dol", 0x45A998, 0xC
+	.asciz "Goldtrophy"
+	.balign 4
 .global $$252320
 $$252320:
-	.incbin "baserom.dol", 0x45A9A4, 0x10
+	.asciz "Platinumtrophy"
+	.balign 4
 .global $$252321
 $$252321:
-	.incbin "baserom.dol", 0x45A9B4, 0xC
+	.asciz "Kingtrophy"
+	.balign 4
 .global MODEL_NAMES__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 MODEL_NAMES__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
-	.incbin "baserom.dol", 0x45A9C0, 0x18
+	.4byte 0x8045E878
+	.4byte 0x8045E878
+	.4byte 0x8045E888
+	.4byte 0x8045E898
+	.4byte 0x8045E8A4
+	.4byte 0x8045E8B4
 .global $$253902
 $$253902:
-	.incbin "baserom.dol", 0x45A9D8, 0x20
+	.asciz "challengefileselect/Trophyanime"
 .global $$253903
 $$253903:
-	.incbin "baserom.dol", 0x45A9F8, 0x24
+	.asciz "challengefileselect/Trophyswitch"
+	.balign 4
 .global $$253908
 $$253908:
-	.incbin "baserom.dol", 0x45AA1C, 0x4C
+	.asciz "challengefileselect/%s"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253905
 $$253905:
-	.incbin "baserom.dol", 0x494060, 0x4
+	.4byte 0x496E0000
 .global $$253906
 $$253906:
-	.incbin "baserom.dol", 0x494064, 0x8
+	.asciz "Base01"
+	.balign 4
 .global $$253909
 $$253909:
-	.incbin "baserom.dol", 0x49406C, 0xC
+	.asciz "Wait"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global LAYER_DEPTH__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 LAYER_DEPTH__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
-	.incbin "baserom.dol", 0x49A898, 0x4
+	.4byte 0x447A0000
 .global MODEL_SCALE__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 MODEL_SCALE__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
-	.incbin "baserom.dol", 0x49A89C, 0x4
+	.4byte 0x42C80000
 .global WAIT_ANIM_START_FRAME__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 WAIT_ANIM_START_FRAME__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
-	.incbin "baserom.dol", 0x49A8A0, 0x4
+	.4byte 0x437F0000
 .global $$253904
 $$253904:
-	.incbin "baserom.dol", 0x49A8A4, 0x4
+	.4byte 0
 .global $$253907
 $$253907:
-	.incbin "baserom.dol", 0x49A8A8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$253915
 $$253915:
-	.incbin "baserom.dol", 0x49A8B0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$253993
 $$253993:
-	.incbin "baserom.dol", 0x49A8B8, 0x4
+	.4byte 0x40000000
 .global $$253994
 $$253994:
-	.incbin "baserom.dol", 0x49A8BC, 0x4
+	.4byte 0xC0000000
 .global $$254069
 $$254069:
-	.incbin "baserom.dol", 0x49A8C0, 0x4
+	.4byte 0xC39B0000
 .global $$254070
 $$254070:
-	.incbin "baserom.dol", 0x49A8C4, 0x4
+	.4byte 0xC1C80000
 .global $$254071
 $$254071:
-	.incbin "baserom.dol", 0x49A8C8, 0x8
+	.4byte 0xC3FA0000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global MODEL_TRANS__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2

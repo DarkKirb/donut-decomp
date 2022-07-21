@@ -235,30 +235,42 @@ lbl_803D7B30:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2
 T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C398, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250228
 $$250228:
-	.incbin "baserom.dol", 0x46E758, 0x10
+	.asciz "Scn.Step.Enemy"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250281
 $$250281:
-	.incbin "baserom.dol", 0x48DFD8, 0x10
+	.asciz "Scn.Step.Item"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250293
 $$250293:
-	.incbin "baserom.dol", 0x48F8D8, 0x10
+	.asciz "Scn.Step.Weapon"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil
 SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil:
-	.incbin "baserom.dol", 0x498150, 0x4
+	.4byte 0x80420298
 .global $$250143
 $$250143:
-	.incbin "baserom.dol", 0x498154, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$2LOCAL$$2Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry$$2NODE_NAMES
 $$2LOCAL$$2Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry$$2NODE_NAMES:
-	.incbin "baserom.dol", 0x49815C, 0x4
+	.4byte 0x8055BD74

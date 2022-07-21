@@ -158,7 +158,11 @@ getContract__Q24util10UIntAABBoxCFRCQ24util10UIntAABBox:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250237
 $$250237:
-	.incbin "baserom.dol", 0x49EEE8, 0x4
+	.4byte 0
 .global $$250238
 $$250238:
-	.incbin "baserom.dol", 0x49EEEC, 0x14
+	.4byte 0x4F800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

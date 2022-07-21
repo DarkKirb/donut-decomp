@@ -125,19 +125,21 @@ viewMtx__Q33scn9grandmenu6CameraFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251509
 $$251509:
-	.incbin "baserom.dol", 0x49ED30, 0x4
+	.4byte 0x42480000
 .global $$251510
 $$251510:
-	.incbin "baserom.dol", 0x49ED34, 0x4
+	.4byte 0x3FB40000
 .global $$251513
 $$251513:
-	.incbin "baserom.dol", 0x49ED38, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$251526
 $$251526:
-	.incbin "baserom.dol", 0x49ED40, 0x4
+	.4byte 0x3F800000
 .global $$251528
 $$251528:
-	.incbin "baserom.dol", 0x49ED44, 0x4
+	.4byte 0x447A0000
 .global $$251536
 $$251536:
-	.incbin "baserom.dol", 0x49ED48, 0x8
+	.4byte 0
+	.4byte 0

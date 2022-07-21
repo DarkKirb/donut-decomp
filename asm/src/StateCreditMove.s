@@ -179,15 +179,25 @@ __dt__Q53scn4step5enemy6chilly15StateCreditMoveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6chilly15StateCreditMove
 __vt__Q53scn4step5enemy6chilly15StateCreditMove:
-	.incbin "baserom.dol", 0x471A10, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6880  ;# ptr
+	.4byte 0x802A66D4  ;# ptr
+	.4byte 0x802A6760  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A687C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256565
 $$256565:
-	.incbin "baserom.dol", 0x49C070, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$256568
 $$256568:
-	.incbin "baserom.dol", 0x49C078, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256570
 $$256570:
-	.incbin "baserom.dol", 0x49C080, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

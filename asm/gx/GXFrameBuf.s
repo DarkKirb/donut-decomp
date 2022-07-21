@@ -599,18 +599,75 @@ GXClearBoundingBox:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global GXNtsc480IntDf
 GXNtsc480IntDf:
-	.incbin "baserom.dol", 0x42CD60, 0x3C
+	.4byte 0
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
 .global GXMpal480IntDf
 GXMpal480IntDf:
-	.incbin "baserom.dol", 0x42CD9C, 0x3C
+	.4byte 0x00000008
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
 .global GXPal528IntDf
 GXPal528IntDf:
-	.incbin "baserom.dol", 0x42CDD8, 0x3C
+	.4byte 0x00000004
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
 .global GXEurgb60Hz480IntDf
 GXEurgb60Hz480IntDf:
-	.incbin "baserom.dol", 0x42CE14, 0x3C
+	.4byte 0x00000014
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22195
 $$22195:
-	.incbin "baserom.dol", 0x4990F0, 0x8
+	.4byte 0x43800000
+	.4byte 0

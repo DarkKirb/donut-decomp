@@ -1105,23 +1105,25 @@ __sinit_$$3Stage_cpp:
 /* 80210A70 0020C8B0  4B EA D6 50 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402464, 0x4
+	.4byte 0x80210A5C  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254734
 $$254734:
-	.incbin "baserom.dol", 0x45D6A0, 0x18
+	.asciz "history/PackageOffset"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254735
 $$254735:
-	.incbin "baserom.dol", 0x49AC88, 0x4
+	.4byte 0
 .global $$255028
 $$255028:
-	.incbin "baserom.dol", 0x49AC8C, 0x4
+	.4byte 0xC1F00000
 .global $$255029
 $$255029:
-	.incbin "baserom.dol", 0x49AC90, 0x8
+	.4byte 0x3FC00000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global FUTURE_EFFECT_OFFSET__19$$2unnamed$$2Stage_cpp$$2

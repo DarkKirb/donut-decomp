@@ -107,90 +107,163 @@ lbl_80215A30:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251550
 $$251550:
-	.incbin "baserom.dol", 0x45E5A8, 0xC
+	.asciz "KAvalancheN"
 .global $$251553
 $$251553:
-	.incbin "baserom.dol", 0x45E5B4, 0xC
+	.asciz "KPinballN"
+	.balign 4
 .global $$251555
 $$251555:
-	.incbin "baserom.dol", 0x45E5C0, 0xC
+	.asciz "KAirRideN"
+	.balign 4
 .global $$251559
 $$251559:
-	.incbin "baserom.dol", 0x45E5CC, 0xC
+	.asciz "KDreamDXN"
+	.balign 4
 .global $$251560
 $$251560:
-	.incbin "baserom.dol", 0x45E5D8, 0xC
+	.asciz "KMirrorN"
+	.balign 4
 .global $$251563
 $$251563:
-	.incbin "baserom.dol", 0x45E5E4, 0xC
+	.asciz "KAtsumeteN"
+	.balign 4
 .global PANES__Q43scn7history6detail32$$2unnamed$$2MovieButtonContent_cpp$$2
 PANES__Q43scn7history6detail32$$2unnamed$$2MovieButtonContent_cpp$$2:
-	.incbin "baserom.dol", 0x45E5F0, 0x58
+	.4byte 0x80558880
+	.4byte 0x80558888
+	.4byte 0x8055888C
+	.4byte 0x80558890
+	.4byte 0x80558894
+	.4byte 0x804624A8
+	.4byte 0x805588A0
+	.4byte 0x805588A8
+	.4byte 0x804624B4
+	.4byte 0x805588B0
+	.4byte 0x804624C0
+	.4byte 0x805588B8
+	.4byte 0x805588C0
+	.4byte 0x805588C8
+	.4byte 0x804624CC
+	.4byte 0x804624D8
+	.4byte 0x805588D0
+	.4byte 0x805588D8
+	.4byte 0x804624E4
+	.4byte 0x805588E0
+	.4byte 0x805588E8
+	.4byte 0x805588F0
 .global TABLE__Q43scn7history6detail32$$2unnamed$$2MovieButtonContent_cpp$$2
 TABLE__Q43scn7history6detail32$$2unnamed$$2MovieButtonContent_cpp$$2:
-	.incbin "baserom.dol", 0x45E648, 0x74
+	.4byte 0x805588F8
+	.4byte 0x80558888
+	.4byte 0x805588A0
+	.4byte 0x804624B4
+	.4byte 0x805588F8
+	.4byte 0x805588A8
+	.4byte 0x804624A8
+	.4byte 0x8055888C
+	.4byte 0x805588E0
+	.4byte 0x80558880
+	.4byte 0x805588B0
+	.4byte 0x80558890
+	.4byte 0x805588F8
+	.4byte 0x805588F8
+	.4byte 0x80558894
+	.4byte 0x805588E8
+	.4byte 0x804624CC
+	.4byte 0x80558888
+	.4byte 0x804624C0
+	.4byte 0x804624D8
+	.4byte 0x805588C8
+	.4byte 0x805588D0
+	.4byte 0x805588F8
+	.4byte 0x805588C0
+	.4byte 0x805588F8
+	.4byte 0x805588D8
+	.4byte 0x804624E4
+	.4byte 0x805588B8
+	.4byte 0x805588F0
 .global $$252003
 $$252003:
-	.incbin "baserom.dol", 0x45E6BC, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$252004
 $$252004:
-	.incbin "baserom.dol", 0x45E6CC, 0x44
+	.asciz "ProductMovieButton"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251545
 $$251545:
-	.incbin "baserom.dol", 0x494C60, 0x8
+	.asciz "KSDXN"
+	.balign 4
 .global $$251546
 $$251546:
-	.incbin "baserom.dol", 0x494C68, 0x4
+	.4byte 0x4B314E00
 .global $$251547
 $$251547:
-	.incbin "baserom.dol", 0x494C6C, 0x4
+	.4byte 0x4B324E00
 .global $$251548
 $$251548:
-	.incbin "baserom.dol", 0x494C70, 0x4
+	.4byte 0x4B334E00
 .global $$251549
 $$251549:
-	.incbin "baserom.dol", 0x494C74, 0xC
+	.asciz "K64N"
+	.balign 4
+	.4byte 0
 .global $$251551
 $$251551:
-	.incbin "baserom.dol", 0x494C80, 0x8
+	.asciz "KDreamN"
 .global $$251552
 $$251552:
-	.incbin "baserom.dol", 0x494C88, 0x8
+	.asciz "KBallN"
+	.balign 4
 .global $$251554
 $$251554:
-	.incbin "baserom.dol", 0x494C90, 0x8
+	.asciz "KKiraN"
+	.balign 4
 .global $$251556
 $$251556:
-	.incbin "baserom.dol", 0x494C98, 0x8
+	.asciz "KWiiN"
+	.balign 4
 .global $$251557
 $$251557:
-	.incbin "baserom.dol", 0x494CA0, 0x8
+	.asciz "KUSDXN"
+	.balign 4
 .global $$251558
 $$251558:
-	.incbin "baserom.dol", 0x494CA8, 0x8
+	.asciz "KTouchN"
 .global $$251561
 $$251561:
-	.incbin "baserom.dol", 0x494CB0, 0x8
+	.asciz "KDoroN"
+	.balign 4
 .global $$251562
 $$251562:
-	.incbin "baserom.dol", 0x494CB8, 0x8
+	.asciz "KWoolN"
+	.balign 4
 .global $$251564
 $$251564:
-	.incbin "baserom.dol", 0x494CC0, 0x8
+	.asciz "KBBN"
+	.balign 4
 .global $$251565
 $$251565:
-	.incbin "baserom.dol", 0x494CC8, 0x8
+	.asciz "KCoroN"
+	.balign 4
 .global $$251566
 $$251566:
-	.incbin "baserom.dol", 0x494CD0, 0x8
+	.asciz "KDonutN"
 .global $$251567
 $$251567:
-	.incbin "baserom.dol", 0x494CD8, 0x8
+	.asciz "Dummy"
+	.balign 4
 .global $$252005
 $$252005:
-	.incbin "baserom.dol", 0x494CE0, 0x8
+	.asciz "Unfocus"
 .global $$252051
 $$252051:
-	.incbin "baserom.dol", 0x494CE8, 0x8
+	.asciz "Focus"
+	.balign 4

@@ -383,14 +383,27 @@ procFixPos__Q53scn4step4hero11staffcredit9StateInitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8inactive9StateInit
 __vt__Q53scn4step4hero8inactive9StateInit:
-	.incbin "baserom.dol", 0x487A58, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8035D2E4
+	.4byte 0x8035D340
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero11staffcredit9StateInit
 __vt__Q53scn4step4hero11staffcredit9StateInit:
-	.incbin "baserom.dol", 0x48B0E8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A3DB0
+	.4byte 0x803A3E2C
+	.4byte 0x803A3E78
+	.4byte 0x8035550C
+	.4byte 0x803A3E7C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259466
 $$259466:
-	.incbin "baserom.dol", 0x49E3A0, 0x8
+	.4byte 0
+	.4byte 0

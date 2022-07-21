@@ -671,66 +671,88 @@ lbl_801F4F70:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253406
 $$253406:
-	.incbin "baserom.dol", 0x45B6F0, 0x14
+	.asciz "masterresult/Main"
+	.balign 4
 .global $$253407
 $$253407:
-	.incbin "baserom.dol", 0x45B704, 0xC
+	.asciz "ResultScore"
 .global $$253408
 $$253408:
-	.incbin "baserom.dol", 0x45B710, 0x18
+	.asciz "challengeresult/Main"
+	.balign 4
 .global $$253411
 $$253411:
-	.incbin "baserom.dol", 0x45B728, 0xC
+	.asciz "GoldCoinN"
+	.balign 4
 .global $$253412
 $$253412:
-	.incbin "baserom.dol", 0x45B734, 0xC
+	.asciz "SilverCoinN"
 .global $$253413
 $$253413:
-	.incbin "baserom.dol", 0x45B740, 0xC
+	.asciz "EnemyiconN"
+	.balign 4
 .global $$253414
 $$253414:
-	.incbin "baserom.dol", 0x45B74C, 0x10
+	.asciz "GoldEnemyiconN"
+	.balign 4
 .global $$253415
 $$253415:
-	.incbin "baserom.dol", 0x45B75C, 0xC
+	.asciz "TimeIconN"
+	.balign 4
 .global $$253416
 $$253416:
-	.incbin "baserom.dol", 0x45B768, 0xC
+	.asciz "DamageText"
+	.balign 4
 .global $$253419
 $$253419:
-	.incbin "baserom.dol", 0x45B774, 0xC
+	.asciz "ScoreText"
+	.balign 4
 .global $$253420
 $$253420:
-	.incbin "baserom.dol", 0x45B780, 0xC
+	.asciz "TotalText"
+	.balign 4
 .global $$253421
 $$253421:
-	.incbin "baserom.dol", 0x45B78C, 0x10
+	.asciz "ToDamageText"
+	.balign 4
 .global $$253422
 $$253422:
-	.incbin "baserom.dol", 0x45B79C, 0x10
+	.asciz "NoDamageText"
+	.balign 4
 .global $$253504
 $$253504:
-	.incbin "baserom.dol", 0x45B7AC, 0x14
+	.asciz "ResultDamageScore"
+	.balign 4
 .global $$253505
 $$253505:
-	.incbin "baserom.dol", 0x45B7C0, 0x50
+	.asciz "ResultDamageScore_Nothing"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253409
 $$253409:
-	.incbin "baserom.dol", 0x494340, 0x8
+	.asciz "ScoreN"
+	.balign 4
 .global $$253410
 $$253410:
-	.incbin "baserom.dol", 0x494348, 0x8
+	.asciz "TimeN"
+	.balign 4
 .global $$253417
 $$253417:
-	.incbin "baserom.dol", 0x494350, 0x4
+	.4byte 0x58000000
 .global $$253418
 $$253418:
-	.incbin "baserom.dol", 0x494354, 0x8
+	.asciz "Equal"
+	.balign 4
 .global $$253503
 $$253503:
-	.incbin "baserom.dol", 0x49435C, 0x4
+	.4byte 0x25750000
 .global $$253506
 $$253506:
-	.incbin "baserom.dol", 0x494360, 0x8
+	.asciz "Start"
+	.balign 4

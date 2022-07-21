@@ -251,18 +251,29 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath12S
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath12StateRolling$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9moundeath12StateRolling$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x4652C0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80257A5C  ;# ptr
+	.4byte 0x80257A40  ;# ptr
 .global __vt__Q53scn4step4boss9moundeath17StateRollingStart
 __vt__Q53scn4step4boss9moundeath17StateRollingStart:
-	.incbin "baserom.dol", 0x4652D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80257810  ;# ptr
+	.4byte 0x8025788C  ;# ptr
+	.4byte 0x802579CC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80257A3C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256231
 $$256231:
-	.incbin "baserom.dol", 0x49B470, 0x4
+	.4byte 0
 .global $$256258
 $$256258:
-	.incbin "baserom.dol", 0x49B474, 0x4
+	.4byte 0x43B40000
 .global $$256261
 $$256261:
-	.incbin "baserom.dol", 0x49B478, 0x8
+	.4byte 0x43300000
+	.4byte 0

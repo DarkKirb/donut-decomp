@@ -213,12 +213,21 @@ procFixPos__Q53scn4step4hero8captured29StateCapturedWaterGalborosEatFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8captured29StateCapturedWaterGalborosEat
 __vt__Q53scn4step4hero8captured29StateCapturedWaterGalborosEat:
-	.incbin "baserom.dol", 0x488DD0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80383F7C
+	.4byte 0x80384044
+	.4byte 0x80384048
+	.4byte 0x8035550C
+	.4byte 0x80384124
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257761
 $$257761:
-	.incbin "baserom.dol", 0x49E038, 0x4
+	.4byte 0x3DCCCCCD
 .global $$257762
 $$257762:
-	.incbin "baserom.dol", 0x49E03C, 0x4
+	.4byte 0x3F666666

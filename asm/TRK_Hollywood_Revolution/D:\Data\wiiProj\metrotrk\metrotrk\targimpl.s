@@ -1739,21 +1739,54 @@ lbl_8001A090:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global gTRKMemMap
 gTRKMemMap:
-	.incbin "baserom.dol", 0x403878, 0x10
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000001
 .global $$2984
 $$2984:
-	.incbin "baserom.dol", 0x403888, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 .global $$2999
 $$2999:
-	.incbin "baserom.dol", 0x4038B0, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 .global $$21022
 $$21022:
-	.incbin "baserom.dol", 0x4038D8, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global gTRKExceptionStatus
 gTRKExceptionStatus:
-	.incbin "baserom.dol", 0x41DE90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x01000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gTRKRestoreFlags

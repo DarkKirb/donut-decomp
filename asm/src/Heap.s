@@ -789,20 +789,25 @@ lbl_80338ED4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252930
 $$252930:
-	.incbin "baserom.dol", 0x455EB0, 0x10
+	.asciz "mint/Heap"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250138
 $$250138:
-	.incbin "baserom.dol", 0x47FFA0, 0x10
+	.asciz "HeroGear%02lu"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252931
 $$252931:
-	.incbin "baserom.dol", 0x4936A8, 0x8
+	.asciz "Mint"
+	.balign 4
 .global $$252932
 $$252932:
-	.incbin "baserom.dol", 0x4936B0, 0x8
+	.asciz "MNT%s"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_heapPtr__Q24mint18$$2unnamed$$2Heap_cpp$$2

@@ -1122,61 +1122,86 @@ lbl_80094428:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21563
 $$21563:
-	.incbin "baserom.dol", 0x43A968, 0x24
+	.asciz "L2CAP - expected pkt start, got: %d"
 .global $$21564
 $$21564:
-	.incbin "baserom.dol", 0x43A98C, 0x54
+	.asciz "L2CAP - holding ACL for unknown handle:%d ls:%d cid:%d opcode:%d cur count:%d"
+	.balign 4
+	.4byte 0
 .global $$21565
 $$21565:
-	.incbin "baserom.dol", 0x43A9E0, 0x18
+	.asciz "L2CAP - unknown CID: %d"
 .global $$21566
 $$21566:
-	.incbin "baserom.dol", 0x43A9F8, 0x24
+	.asciz "L2CAP - got incorrect hci header"
+	.balign 4
 .global $$21567
 $$21567:
-	.incbin "baserom.dol", 0x43AA1C, 0x2C
+	.asciz "L2CAP - bad length in pkt. Exp: %d  Act: %d"
 .global $$21568
 $$21568:
-	.incbin "baserom.dol", 0x43AA48, 0x20
+	.asciz "GOT CONNECTIONLESS DATA PSM:%d"
+	.balign 4
 .global $$21662
 $$21662:
-	.incbin "baserom.dol", 0x43AA68, 0x34
+	.asciz "Command len bad  pkt_len: %d  cmd_len: %d  code: %d"
 .global $$21663
 $$21663:
-	.incbin "baserom.dol", 0x43AA9C, 0x24
+	.asciz "L2CAP - MTU rej Handle: %d MTU: %d"
+	.balign 4
 .global $$21664
 $$21664:
-	.incbin "baserom.dol", 0x43AAC0, 0x30
+	.asciz "L2CAP - rej with CID invalid, LCID: %d RCID: %d"
 .global $$21665
 $$21665:
-	.incbin "baserom.dol", 0x43AAF0, 0x2C
+	.asciz "L2CAP - rcvd conn req for unknown PSM: %d"
+	.balign 4
 .global $$21666
 $$21666:
-	.incbin "baserom.dol", 0x43AB1C, 0x20
+	.asciz "L2CAP - unable to allocate CCB"
+	.balign 4
 .global $$21667
 $$21667:
-	.incbin "baserom.dol", 0x43AB3C, 0x30
+	.asciz "L2CAP - no CCB for conn rsp, LCID: %d RCID: %d"
+	.balign 4
 .global $$21668
 $$21668:
-	.incbin "baserom.dol", 0x43AB6C, 0x2C
+	.asciz "L2CAP - con rsp - bad ID. Exp: %d Got: %d"
+	.balign 4
 .global $$21669
 $$21669:
-	.incbin "baserom.dol", 0x43AB98, 0x2C
+	.asciz "L2CAP - cfg rsp - bad ID. Exp: %d Got: %d"
+	.balign 4
 .global $$21670
 $$21670:
-	.incbin "baserom.dol", 0x43ABC4, 0x2C
+	.asciz "L2CAP - rcvd cfg rsp for unknown CID: %d"
+	.balign 4
 .global $$21671
 $$21671:
-	.incbin "baserom.dol", 0x43ABF0, 0x1C
+	.asciz "L2CAP - bad cmd code: %d"
+	.balign 4
 .global $$21674
 $$21674:
-	.incbin "baserom.dol", 0x43AC0C, 0x30
+	.4byte 0x80094270  ;# ptr
+	.4byte 0x80093920  ;# ptr
+	.4byte 0x800939F4  ;# ptr
+	.4byte 0x80093AC0  ;# ptr
+	.4byte 0x80093BB8  ;# ptr
+	.4byte 0x80093E68  ;# ptr
+	.4byte 0x80094118  ;# ptr
+	.4byte 0x8009418C  ;# ptr
+	.4byte 0x800941EC  ;# ptr
+	.4byte 0x8009422C  ;# ptr
+	.4byte 0x8009424C  ;# ptr
+	.4byte 0x800938A0  ;# ptr
 .global $$21693
 $$21693:
-	.incbin "baserom.dol", 0x43AC3C, 0x14
+	.asciz "L2CAP HOLD CONTINUE"
 .global $$21694
 $$21694:
-	.incbin "baserom.dol", 0x43AC50, 0x18
+	.asciz "L2CAP HOLD TIMEOUT"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global l2cb

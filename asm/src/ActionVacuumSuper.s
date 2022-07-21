@@ -301,29 +301,51 @@ lbl_803118CC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252897
 $$252897:
-	.incbin "baserom.dol", 0x47D5C8, 0xC
+	.asciz "EChange2"
+	.balign 4
 .global $$252901
 $$252901:
-	.incbin "baserom.dol", 0x47D5D4, 0xC
+	.asciz "EChange1"
+	.balign 4
 .global __vt__Q53scn4step7gimmick10guideboard17ActionVacuumSuper
 __vt__Q53scn4step7gimmick10guideboard17ActionVacuumSuper:
-	.incbin "baserom.dol", 0x47D5E0, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x80311538
+	.4byte 0x80310578
+	.4byte 0x80311540
+	.4byte 0x80311590
+	.4byte 0x80311630
+	.4byte 0x80310570
+	.4byte 0x8031056C
+	.4byte 0x80310568
+	.4byte 0x80310564
+	.4byte 0x80310560
+	.4byte 0x803116B8
+	.4byte 0x80311734
+	.4byte 0x80311794
+	.4byte 0x80310550
+	.4byte 0x80310574
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252880
 $$252880:
-	.incbin "baserom.dol", 0x496B50, 0x8
+	.asciz "ETopL"
+	.balign 4
 .global $$252882
 $$252882:
-	.incbin "baserom.dol", 0x496B58, 0x8
+	.asciz "EWait2"
+	.balign 4
 .global $$252892
 $$252892:
-	.incbin "baserom.dol", 0x496B60, 0x8
+	.asciz "EWait1"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252902
 $$252902:
-	.incbin "baserom.dol", 0x49D428, 0x4
+	.4byte 0xBF800000
 .global $$252937
 $$252937:
-	.incbin "baserom.dol", 0x49D42C, 0x4
+	.4byte 0

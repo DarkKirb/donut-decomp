@@ -125,30 +125,46 @@ lbl_801E334C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251963
 $$251963:
-	.incbin "baserom.dol", 0x45A068, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$251965
 $$251965:
-	.incbin "baserom.dol", 0x45A084, 0xC
+	.asciz "DeleteFile"
+	.balign 4
 .global $$252004
 $$252004:
-	.incbin "baserom.dol", 0x45A090, 0xC
+	.asciz "OpenSmall"
+	.balign 4
 .global __vt__Q33scn19challengefileselect6Delete
 __vt__Q33scn19challengefileselect6Delete:
-	.incbin "baserom.dol", 0x45A09C, 0x2C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E32FC  ;# ptr
+	.4byte 0x801E32A8  ;# ptr
+	.4byte 0x801E32AC  ;# ptr
+	.4byte 0x801E32BC  ;# ptr
+	.4byte 0x801E32C8  ;# ptr
+	.4byte 0x801E32D4  ;# ptr
+	.4byte 0x801E32E0  ;# ptr
+	.4byte 0x801E32E8  ;# ptr
+	.4byte 0x801E32F0  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251964
 $$251964:
-	.incbin "baserom.dol", 0x493E50, 0x8
+	.asciz "Delete"
+	.balign 4
 .global $$252007
 $$252007:
-	.incbin "baserom.dol", 0x493E58, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252010
 $$252010:
-	.incbin "baserom.dol", 0x493E60, 0x8
+	.asciz "UnFocus"
 .global $$252013
 $$252013:
-	.incbin "baserom.dol", 0x493E68, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$252019
 $$252019:
-	.incbin "baserom.dol", 0x493E70, 0x8
+	.asciz "CursorN"

@@ -220,33 +220,41 @@ __dt__Q53scn4step5enemy7parasol9StateRiseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7parasol9StateRise
 __vt__Q53scn4step5enemy7parasol9StateRise:
-	.incbin "baserom.dol", 0x476078, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB6DC  ;# ptr
+	.4byte 0x802CB4D0  ;# ptr
+	.4byte 0x802CB560  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802CB5F8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255826
 $$255826:
-	.incbin "baserom.dol", 0x49C980, 0x4
+	.4byte 0
 .global $$255827
 $$255827:
-	.incbin "baserom.dol", 0x49C984, 0x4
+	.4byte 0x3ECCCCCD
 .global $$255828
 $$255828:
-	.incbin "baserom.dol", 0x49C988, 0x4
+	.4byte 0x3F8B851F
 .global $$255829
 $$255829:
-	.incbin "baserom.dol", 0x49C98C, 0x4
+	.4byte 0x3F170A3D
 .global $$255830
 $$255830:
-	.incbin "baserom.dol", 0x49C990, 0x4
+	.4byte 0x42680000
 .global $$255839
 $$255839:
-	.incbin "baserom.dol", 0x49C994, 0x4
+	.4byte 0x40A00000
 .global $$255840
 $$255840:
-	.incbin "baserom.dol", 0x49C998, 0x4
+	.4byte 0x43B40000
 .global $$255843
 $$255843:
-	.incbin "baserom.dol", 0x49C99C, 0x4
+	.4byte 0x3A378034
 .global $$255864
 $$255864:
-	.incbin "baserom.dol", 0x49C9A0, 0x8
+	.4byte 0x3FC00000
+	.4byte 0

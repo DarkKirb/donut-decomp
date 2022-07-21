@@ -315,12 +315,21 @@ lbl_803845A0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit
 __vt__Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit:
-	.incbin "baserom.dol", 0x488DF8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803842C0
+	.4byte 0x803843A0
+	.4byte 0x80384414
+	.4byte 0x8035550C
+	.4byte 0x8038446C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257995
 $$257995:
-	.incbin "baserom.dol", 0x49E040, 0x4
+	.4byte 0
 .global $$258014
 $$258014:
-	.incbin "baserom.dol", 0x49E044, 0x4
+	.4byte 0x43B40000

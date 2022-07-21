@@ -77,7 +77,11 @@ lbl_80196FFC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23gfx10TPLTexture
 __vt__Q23gfx10TPLTexture:
-	.incbin "baserom.dol", 0x450A90, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x80195854  ;# ptr
 .global __vt__Q23gfx10TextureObj
 __vt__Q23gfx10TextureObj:
-	.incbin "baserom.dol", 0x450A9C, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801958C0  ;# ptr

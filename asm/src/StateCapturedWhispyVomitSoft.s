@@ -307,15 +307,25 @@ lbl_80385A8C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft
 __vt__Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft:
-	.incbin "baserom.dol", 0x488F08, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80385720
+	.4byte 0x803857F4
+	.4byte 0x803858E0
+	.4byte 0x8035550C
+	.4byte 0x80385938
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257620
 $$257620:
-	.incbin "baserom.dol", 0x49E070, 0x4
+	.4byte 0
 .global $$257648
 $$257648:
-	.incbin "baserom.dol", 0x49E074, 0x4
+	.4byte 0x43B40000
 .global $$257649
 $$257649:
-	.incbin "baserom.dol", 0x49E078, 0x8
+	.4byte 0x42480000
+	.4byte 0

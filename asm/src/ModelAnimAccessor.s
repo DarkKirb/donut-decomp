@@ -216,7 +216,10 @@ onFrameChanged__Q23g3d34NullModelAnimAccessorEventReceiverFRCQ23g3d17ModelAnimAc
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23g3d34NullModelAnimAccessorEventReceiver
 __vt__Q23g3d34NullModelAnimAccessorEventReceiver:
-	.incbin "baserom.dol", 0x450908, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80191E8C  ;# ptr
+	.4byte 0x80191EE8  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2Instance__Q23g3d34NullModelAnimAccessorEventReceiverFv$$2obj

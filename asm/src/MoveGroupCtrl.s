@@ -1971,38 +1971,53 @@ lbl_80319188:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2
 t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x415BA0, 0x10
+	.4byte 0
+	.4byte 0x3CF5C28F
+	.4byte 0x3D75C28F
+	.4byte 0x3DF5C28F
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl
 __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl:
-	.incbin "baserom.dol", 0x47DB60, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8031775C
+	.4byte 0x80317AB8
+	.4byte 0x80317B24
+	.4byte 0x802F7CF8
+	.4byte 0x802F7CF4
+	.4byte 0x802F7CF0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257160
 $$257160:
-	.incbin "baserom.dol", 0x49D4A8, 0x4
+	.4byte 0
 .global $$257240
 $$257240:
-	.incbin "baserom.dol", 0x49D4AC, 0x4
+	.4byte 0x41200000
 .global $$257241
 $$257241:
-	.incbin "baserom.dol", 0x49D4B0, 0x8
+	.4byte 0x41000000
+	.4byte 0
 .global $$257263
 $$257263:
-	.incbin "baserom.dol", 0x49D4B8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$257314
 $$257314:
-	.incbin "baserom.dol", 0x49D4C0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$257372
 $$257372:
-	.incbin "baserom.dol", 0x49D4C8, 0x8
+	.4byte 0x3F847AE1
+	.4byte 0x47AE147B
 .global $$257529
 $$257529:
-	.incbin "baserom.dol", 0x49D4D0, 0x4
+	.4byte 0x3DCCCCCD
 .global $$257530
 $$257530:
-	.incbin "baserom.dol", 0x49D4D4, 0x4
+	.4byte 0x3B03126F
 .global $$257531
 $$257531:
-	.incbin "baserom.dol", 0x49D4D8, 0x8
+	.4byte 0x40000000
+	.4byte 0

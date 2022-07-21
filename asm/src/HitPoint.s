@@ -171,4 +171,5 @@ rate__Q43scn4step5chara8HitPointCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249001
 $$249001:
-	.incbin "baserom.dol", 0x49B7C8, 0x8
+	.4byte 0x43300000
+	.4byte 0

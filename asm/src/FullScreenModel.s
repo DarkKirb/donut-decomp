@@ -407,27 +407,31 @@ draw__Q23sfx15FullScreenModelFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252811
 $$252811:
-	.incbin "baserom.dol", 0x498A98, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252748
 $$252748:
-	.incbin "baserom.dol", 0x49EE10, 0x4
+	.4byte 0
 .global $$252749
 $$252749:
-	.incbin "baserom.dol", 0x49EE14, 0x4
+	.4byte 0x3F000000
 .global $$252750
 $$252750:
-	.incbin "baserom.dol", 0x49EE18, 0x4
+	.4byte 0x3DCCCCCD
 .global $$252751
 $$252751:
-	.incbin "baserom.dol", 0x49EE1C, 0x4
+	.4byte 0x447A0000
 .global $$252752
 $$252752:
-	.incbin "baserom.dol", 0x49EE20, 0x8
+	.4byte 0x42C80000
+	.4byte 0
 .global $$252756
 $$252756:
-	.incbin "baserom.dol", 0x49EE28, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$252877
 $$252877:
-	.incbin "baserom.dol", 0x49EE30, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

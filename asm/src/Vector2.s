@@ -444,24 +444,25 @@ __sinit_$$3Vector2_cpp:
 /* 8019F508 0019B348  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402420, 0x4
+	.4byte 0x8019F4B0  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250690
 $$250690:
-	.incbin "baserom.dol", 0x49A3A8, 0x4
+	.4byte 0
 .global $$250708
 $$250708:
-	.incbin "baserom.dol", 0x49A3AC, 0x4
+	.4byte 0x3F800000
 .global $$250709
 $$250709:
-	.incbin "baserom.dol", 0x49A3B0, 0x4
+	.4byte 0xBF800000
 .global $$250737
 $$250737:
-	.incbin "baserom.dol", 0x49A3B4, 0x4
+	.4byte 0x3727C5AC
 .global $$250738
 $$250738:
-	.incbin "baserom.dol", 0x49A3B8, 0x8
+	.4byte 0x40490FDB
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global ZERO__Q33hel4math7Vector2

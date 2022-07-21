@@ -199,4 +199,7 @@ lbl_8019A88C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24gobj9GearModel
 __vt__Q24gobj9GearModel:
-	.incbin "baserom.dol", 0x451120, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8019A750  ;# ptr
+	.4byte 0x8019A7C8  ;# ptr

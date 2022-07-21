@@ -955,18 +955,25 @@ lbl_800E0D54:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210241
 $$210241:
-	.incbin "baserom.dol", 0x404EB8, 0x10
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000003
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211256
 $$211256:
-	.incbin "baserom.dol", 0x499B38, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$211257
 $$211257:
-	.incbin "baserom.dol", 0x499B40, 0x8
+	.4byte 0x40100000
+	.4byte 0
 .global $$211258
 $$211258:
-	.incbin "baserom.dol", 0x499B48, 0x8
+	.4byte 0x437F0000
+	.4byte 0
 .global $$211268
 $$211268:
-	.incbin "baserom.dol", 0x499B50, 0x8
+	.4byte 0x43300000
+	.4byte 0

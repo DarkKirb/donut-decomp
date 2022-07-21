@@ -3180,198 +3180,303 @@ mfReqEffect__Q43scn9grandmenu4menu4ItemFQ43scn9grandmenu6effect4KindRCQ33hel4mat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$266370
 $$266370:
-	.incbin "baserom.dol", 0x48DE48, 0x20
+	.4byte 0x803C292C
+	.4byte 0x803C2A08
+	.4byte 0x803C292C
+	.4byte 0x803C2A08
+	.4byte 0x803C292C
+	.4byte 0x803C2A08
+	.4byte 0x803C292C
+	.4byte 0x803C2A08
 .global $$266928
 $$266928:
-	.incbin "baserom.dol", 0x48DE68, 0x30
+	.4byte 0x803C3810
+	.4byte 0x803C3690
+	.4byte 0x803C36D0
+	.4byte 0x803C36D0
+	.4byte 0x803C3810
+	.4byte 0x803C3810
+	.4byte 0x803C3710
+	.4byte 0x803C3750
+	.4byte 0x803C3790
+	.4byte 0x803C3690
+	.4byte 0x803C37D0
+	.4byte 0
 .global __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateFall$$4PQ43scn4step4item4Item$$1
 __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateFall$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DE98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3970
+	.4byte 0x803C3890
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state10StateBound$$4PQ43scn4step4item4Item$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state10StateBound$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DEA8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C396C
+	.4byte 0x803C38AC
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state17StateFallFeathery$$4PQ43scn4step4item4Item$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state17StateFallFeathery$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DEB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3968
+	.4byte 0x803C38C8
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state19StatePreciousAppear$$4PQ43scn4step4item4Item$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state19StatePreciousAppear$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DEC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3964
+	.4byte 0x803C38E4
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state13StateApproach$$4PQ43scn4step4item4Item$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state13StateApproach$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DED8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3960
+	.4byte 0x803C3900
 .global __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateRoah$$4PQ43scn4step4item4Item$$1
 __vt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateRoah$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DEE8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C395C
+	.4byte 0x803C391C
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state10StateFixed$$4PQ43scn4step4item4Item$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state10StateFixed$$4PQ43scn4step4item4Item$$1:
-	.incbin "baserom.dol", 0x48DEF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3958
+	.4byte 0x803C3938
 .global __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state11StateGather$$4PQ43scn4step4item4Item$$4Q33std3tr143reference_wrapper$$0Q43scn4step4item7Catcher$$1$$1
 __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state11StateGather$$4PQ43scn4step4item4Item$$4Q33std3tr143reference_wrapper$$0Q43scn4step4item7Catcher$$1$$1:
-	.incbin "baserom.dol", 0x48DF08, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C3954
+	.4byte 0x803C3870
 .global __vt__Q24util41StateChanger$$0Q43scn4step4item6IState$$4256$$1
 __vt__Q24util41StateChanger$$0Q43scn4step4item6IState$$4256$$1:
-	.incbin "baserom.dol", 0x48DF18, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C1D38
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x48DF24, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x48DF48, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x48DF54, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x48DF78, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x48DF84, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x48DFA8, 0x10
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252783
 $$252783:
-	.incbin "baserom.dol", 0x4919E8, 0xC
+	.asciz "SoftKSDX"
+	.balign 4
 .global t_LayoutNameTable__18$$2unnamed$$2Item_cpp$$2
 t_LayoutNameTable__18$$2unnamed$$2Item_cpp$$2:
-	.incbin "baserom.dol", 0x4919F4, 0x24
+	.4byte 0x8055C528
+	.4byte 0x8055C530
+	.4byte 0x8055C538
+	.4byte 0x8055C540
+	.4byte 0x8055C548
+	.4byte 0x8055C550
+	.4byte 0x8055C558
+	.4byte 0x804958E8
+	.4byte 0x8055C560
 .global $$252786
 $$252786:
-	.incbin "baserom.dol", 0x491A18, 0xC
+	.asciz "MenuMCBN"
+	.balign 4
 .global $$252787
 $$252787:
-	.incbin "baserom.dol", 0x491A24, 0xC
+	.asciz "MenuMCFN"
+	.balign 4
 .global $$252788
 $$252788:
-	.incbin "baserom.dol", 0x491A30, 0xC
+	.asciz "MenuTLBN"
+	.balign 4
 .global $$252789
 $$252789:
-	.incbin "baserom.dol", 0x491A3C, 0xC
+	.asciz "MenuTLFN"
+	.balign 4
 .global $$252790
 $$252790:
-	.incbin "baserom.dol", 0x491A48, 0xC
+	.asciz "MenuVCBN"
+	.balign 4
 .global $$252791
 $$252791:
-	.incbin "baserom.dol", 0x491A54, 0xC
+	.asciz "MenuVCFN"
+	.balign 4
 .global $$252792
 $$252792:
-	.incbin "baserom.dol", 0x491A60, 0xC
+	.asciz "SoftK01BN"
+	.balign 4
 .global $$252793
 $$252793:
-	.incbin "baserom.dol", 0x491A6C, 0xC
+	.asciz "SoftK01FN"
+	.balign 4
 .global $$252794
 $$252794:
-	.incbin "baserom.dol", 0x491A78, 0xC
+	.asciz "SoftK02BN"
+	.balign 4
 .global $$252795
 $$252795:
-	.incbin "baserom.dol", 0x491A84, 0xC
+	.asciz "SoftK02FN"
+	.balign 4
 .global $$252796
 $$252796:
-	.incbin "baserom.dol", 0x491A90, 0xC
+	.asciz "SoftK03BN"
+	.balign 4
 .global $$252797
 $$252797:
-	.incbin "baserom.dol", 0x491A9C, 0xC
+	.asciz "SoftK03FN"
+	.balign 4
 .global $$252798
 $$252798:
-	.incbin "baserom.dol", 0x491AA8, 0xC
+	.asciz "SoftKFCBN"
+	.balign 4
 .global $$252799
 $$252799:
-	.incbin "baserom.dol", 0x491AB4, 0xC
+	.asciz "SoftKFCFN"
+	.balign 4
 .global $$252800
 $$252800:
-	.incbin "baserom.dol", 0x491AC0, 0xC
+	.asciz "SoftKSDXBN"
+	.balign 4
 .global $$252801
 $$252801:
-	.incbin "baserom.dol", 0x491ACC, 0xC
+	.asciz "SoftKSDXFN"
+	.balign 4
 .global $$252802
 $$252802:
-	.incbin "baserom.dol", 0x491AD8, 0xC
+	.asciz "SoftK64BN"
+	.balign 4
 .global $$252803
 $$252803:
-	.incbin "baserom.dol", 0x491AE4, 0xC
+	.asciz "SoftK64FN"
+	.balign 4
 .global t_ParentPaneNameTable__18$$2unnamed$$2Item_cpp$$2
 t_ParentPaneNameTable__18$$2unnamed$$2Item_cpp$$2:
-	.incbin "baserom.dol", 0x491AF0, 0x48
+	.4byte 0x80495918
+	.4byte 0x80495924
+	.4byte 0x80495930
+	.4byte 0x8049593C
+	.4byte 0x80495948
+	.4byte 0x80495954
+	.4byte 0x80495960
+	.4byte 0x8049596C
+	.4byte 0x80495978
+	.4byte 0x80495984
+	.4byte 0x80495990
+	.4byte 0x8049599C
+	.4byte 0x804959A8
+	.4byte 0x804959B4
+	.4byte 0x804959C0
+	.4byte 0x804959CC
+	.4byte 0x804959D8
+	.4byte 0x804959E4
 .global $$253750
 $$253750:
-	.incbin "baserom.dol", 0x491B38, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 .global $$253828
 $$253828:
-	.incbin "baserom.dol", 0x491B48, 0x10
+	.asciz "EffectDecisionN"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$266368
 $$266368:
-	.incbin "baserom.dol", 0x498140, 0x8
+	.asciz "AnimL"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252776
 $$252776:
-	.incbin "baserom.dol", 0x498908, 0x8
+	.asciz "MenuMC"
+	.balign 4
 .global $$252777
 $$252777:
-	.incbin "baserom.dol", 0x498910, 0x8
+	.asciz "MenuTL"
+	.balign 4
 .global $$252778
 $$252778:
-	.incbin "baserom.dol", 0x498918, 0x8
+	.asciz "MenuVC"
+	.balign 4
 .global $$252779
 $$252779:
-	.incbin "baserom.dol", 0x498920, 0x8
+	.asciz "SoftK01"
 .global $$252780
 $$252780:
-	.incbin "baserom.dol", 0x498928, 0x8
+	.asciz "SoftK02"
 .global $$252781
 $$252781:
-	.incbin "baserom.dol", 0x498930, 0x8
+	.asciz "SoftK03"
 .global $$252782
 $$252782:
-	.incbin "baserom.dol", 0x498938, 0x8
+	.asciz "SoftKFC"
 .global $$252784
 $$252784:
-	.incbin "baserom.dol", 0x498940, 0x8
+	.asciz "SoftK64"
 .global $$253802
 $$253802:
-	.incbin "baserom.dol", 0x498948, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$253803
 $$253803:
-	.incbin "baserom.dol", 0x498950, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253810
 $$253810:
-	.incbin "baserom.dol", 0x498958, 0x8
+	.asciz "Choose"
+	.balign 4
 .global $$253811
 $$253811:
-	.incbin "baserom.dol", 0x498960, 0x8
+	.asciz "EffectN"
 .global $$253818
 $$253818:
-	.incbin "baserom.dol", 0x498968, 0x8
+	.asciz "Quit"
+	.balign 4
 .global $$253827
 $$253827:
-	.incbin "baserom.dol", 0x498970, 0x8
+	.asciz "Decide"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$265701
 $$265701:
-	.incbin "baserom.dol", 0x49E530, 0x4
+	.4byte 0x40200000
 .global $$266209
 $$266209:
-	.incbin "baserom.dol", 0x49E534, 0x4
+	.4byte 0x3F800000
 .global $$266241
 $$266241:
-	.incbin "baserom.dol", 0x49E538, 0x4
+	.4byte 0
 .global $$266242
 $$266242:
-	.incbin "baserom.dol", 0x49E53C, 0x4
+	.4byte 0x3F000000
 .global $$266317
 $$266317:
-	.incbin "baserom.dol", 0x49E540, 0x4
+	.4byte 0x41000000
 .global $$266318
 $$266318:
-	.incbin "baserom.dol", 0x49E544, 0x4
+	.4byte 0x40800000
 .global $$266329
 $$266329:
-	.incbin "baserom.dol", 0x49E548, 0x4
+	.4byte 0x41800000
 .global $$266845
 $$266845:
-	.incbin "baserom.dol", 0x49E54C, 0x4
+	.4byte 0x3F4CCCCD

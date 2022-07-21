@@ -505,34 +505,51 @@ __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como13State
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper9StateDive
 __vt__Q53scn4step5enemy7blipper9StateDive:
-	.incbin "baserom.dol", 0x46FF60, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029A56C  ;# ptr
+	.4byte 0x8029A1F0  ;# ptr
+	.4byte 0x8029A240  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029A320  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como13StateDiveWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como13StateDiveWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471CF0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A8104  ;# ptr
+	.4byte 0x802A80E8  ;# ptr
 .global __vt__Q53scn4step5enemy4como9StateDive
 __vt__Q53scn4step5enemy4como9StateDive:
-	.incbin "baserom.dol", 0x471D00, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A7ED8  ;# ptr
+	.4byte 0x802A7EDC  ;# ptr
+	.4byte 0x802A7EE0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A8074  ;# ptr
+	.4byte 0x802A80E4  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255836
 $$255836:
-	.incbin "baserom.dol", 0x49BDD0, 0x4
+	.4byte 0xBD4CCCCD
 .global $$255837
 $$255837:
-	.incbin "baserom.dol", 0x49BDD4, 0x4
+	.4byte 0xBF800000
 .global $$255838
 $$255838:
-	.incbin "baserom.dol", 0x49BDD8, 0x4
+	.4byte 0
 .global $$255886
 $$255886:
-	.incbin "baserom.dol", 0x49BDDC, 0x4
+	.4byte 0x3A83126F
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256046
 $$256046:
-	.incbin "baserom.dol", 0x49C100, 0x4
+	.4byte 0
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x49C104, 0x4
+	.4byte 0x3F800000

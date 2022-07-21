@@ -48,4 +48,11 @@ __dt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttack
 __vt__Q53scn4step5enemy9waddledoo17BrainJumpOrAttack:
-	.incbin "baserom.dol", 0x47A4F0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EF9D4  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802EF994  ;# ptr
+	.4byte 0x802EF998  ;# ptr
+	.4byte 0

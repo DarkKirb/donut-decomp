@@ -153,31 +153,41 @@ lbl_8014C2E0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$22
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$22:
-	.incbin "baserom.dol", 0x442F68, 0x34
+	.asciz "NW4R:Pointer Error\nstr(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$21
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$21:
-	.incbin "baserom.dol", 0x442F9C, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$20
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc$$20:
-	.incbin "baserom.dol", 0x442FB0, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc
 $$2STRING$$2Print__Q34nw4r2ut17TextWriterBase$$0c$$1FPCc:
-	.incbin "baserom.dol", 0x442FE4, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$22
 $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$22:
-	.incbin "baserom.dol", 0x442FF8, 0x38
+	.asciz "NW4R:Pointer Error\n& font(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$21
 $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$21:
-	.incbin "baserom.dol", 0x443030, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$20
 $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font$$20:
-	.incbin "baserom.dol", 0x443040, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font
 $$2STRING$$2SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font:
-	.incbin "baserom.dol", 0x443074, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color$$20
 $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color$$20:
-	.incbin "baserom.dol", 0x443084, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color
 $$2STRING$$2SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color:
-	.incbin "baserom.dol", 0x4430B8, 0x10
+	.asciz "CharWriter.h"
+	.balign 4

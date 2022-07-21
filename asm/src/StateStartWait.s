@@ -111,4 +111,11 @@ procFixPos__Q53scn4step4boss15challengemaster14StateStartWaitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss15challengemaster14StateStartWait
 __vt__Q53scn4step4boss15challengemaster14StateStartWait:
-	.incbin "baserom.dol", 0x4620D8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024333C  ;# ptr
+	.4byte 0x80243340  ;# ptr
+	.4byte 0x80243424  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80243428  ;# ptr
+	.4byte 0x80234504  ;# ptr

@@ -611,141 +611,216 @@ lbl_803AA5D4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251660
 $$251660:
-	.incbin "baserom.dol", 0x48B9C8, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$251661
 $$251661:
-	.incbin "baserom.dol", 0x48B9D8, 0x20
+	.asciz "step/game/ability_icon/Sword"
+	.balign 4
 .global $$251662
 $$251662:
-	.incbin "baserom.dol", 0x48B9F8, 0x20
+	.asciz "step/game/ability_icon/Cutter"
+	.balign 4
 .global $$251663
 $$251663:
-	.incbin "baserom.dol", 0x48BA18, 0x1C
+	.asciz "step/game/ability_icon/Leaf"
 .global $$251664
 $$251664:
-	.incbin "baserom.dol", 0x48BA34, 0x1C
+	.asciz "step/game/ability_icon/Whip"
 .global $$251665
 $$251665:
-	.incbin "baserom.dol", 0x48BA50, 0x1C
+	.asciz "step/game/ability_icon/Fire"
 .global $$251666
 $$251666:
-	.incbin "baserom.dol", 0x48BA6C, 0x20
+	.asciz "step/game/ability_icon/Needle"
+	.balign 4
 .global $$251667
 $$251667:
-	.incbin "baserom.dol", 0x48BA8C, 0x1C
+	.asciz "step/game/ability_icon/Beam"
 .global $$251668
 $$251668:
-	.incbin "baserom.dol", 0x48BAA8, 0x20
+	.asciz "step/game/ability_icon/Spark"
+	.balign 4
 .global $$251669
 $$251669:
-	.incbin "baserom.dol", 0x48BAC8, 0x20
+	.asciz "step/game/ability_icon/Stone"
+	.balign 4
 .global $$251670
 $$251670:
-	.incbin "baserom.dol", 0x48BAE8, 0x20
+	.asciz "step/game/ability_icon/Sleep"
+	.balign 4
 .global $$251671
 $$251671:
-	.incbin "baserom.dol", 0x48BB08, 0x20
+	.asciz "step/game/ability_icon/Parasol"
+	.balign 4
 .global $$251672
 $$251672:
-	.incbin "baserom.dol", 0x48BB28, 0x20
+	.asciz "step/game/ability_icon/Water"
+	.balign 4
 .global $$251673
 $$251673:
-	.incbin "baserom.dol", 0x48BB48, 0x20
+	.asciz "step/game/ability_icon/Highjump"
 .global $$251674
 $$251674:
-	.incbin "baserom.dol", 0x48BB68, 0x20
+	.asciz "step/game/ability_icon/Tornado"
+	.balign 4
 .global $$251675
 $$251675:
-	.incbin "baserom.dol", 0x48BB88, 0x1C
+	.asciz "step/game/ability_icon/Bomb"
 .global $$251676
 $$251676:
-	.incbin "baserom.dol", 0x48BBA4, 0x20
+	.asciz "step/game/ability_icon/Spear"
+	.balign 4
 .global $$251677
 $$251677:
-	.incbin "baserom.dol", 0x48BBC4, 0x20
+	.asciz "step/game/ability_icon/Hammer"
+	.balign 4
 .global $$251678
 $$251678:
-	.incbin "baserom.dol", 0x48BBE4, 0x1C
+	.asciz "step/game/ability_icon/Ice"
+	.balign 4
 .global $$251679
 $$251679:
-	.incbin "baserom.dol", 0x48BC00, 0x1C
+	.asciz "step/game/ability_icon/Wing"
 .global $$251680
 $$251680:
-	.incbin "baserom.dol", 0x48BC1C, 0x20
+	.asciz "step/game/ability_icon/Ninja"
+	.balign 4
 .global $$251681
 $$251681:
-	.incbin "baserom.dol", 0x48BC3C, 0x24
+	.asciz "step/game/ability_icon/Fighter"
+	.balign 4
+	.4byte 0
 .global T_ABILITY_KIND_TO_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2
 T_ABILITY_KIND_TO_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2:
-	.incbin "baserom.dol", 0x48BC60, 0x90
+	.4byte 0
+	.4byte 0x8048F8D8
+	.4byte 0x8048F8F8
+	.4byte 0x8048F918
+	.4byte 0x8048F934
+	.4byte 0x8048F950
+	.4byte 0x8048F96C
+	.4byte 0x8048F98C
+	.4byte 0x8048F9A8
+	.4byte 0x8048F9C8
+	.4byte 0x8048F9E8
+	.4byte 0x8048FA08
+	.4byte 0x8048FA28
+	.4byte 0x8048FA48
+	.4byte 0x8048FA68
+	.4byte 0x8048FA88
+	.4byte 0x8048FAA4
+	.4byte 0x8048FAC4
+	.4byte 0x8048FAE4
+	.4byte 0x8048FB00
+	.4byte 0x8048FB1C
+	.4byte 0x8048FB3C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$253019
 $$253019:
-	.incbin "baserom.dol", 0x48BCF0, 0xC
+	.asciz "IfHrStIcon"
+	.balign 4
 .global $$253020
 $$253020:
-	.incbin "baserom.dol", 0x48BCFC, 0x14
+	.asciz "HeroStatusIconBase"
+	.balign 4
 .global $$253021
 $$253021:
-	.incbin "baserom.dol", 0x48BD10, 0x10
+	.asciz "HeroStatusIcon"
+	.balign 4
 .global $$253022
 $$253022:
-	.incbin "baserom.dol", 0x48BD20, 0xC
+	.asciz "HeroPEffect"
 .global $$253024
 $$253024:
-	.incbin "baserom.dol", 0x48BD2C, 0x10
+	.asciz "HeroPEffectN"
+	.balign 4
 .global $$253210
 $$253210:
-	.incbin "baserom.dol", 0x48BD3C, 0xC
+	.asciz "HeroIcon"
+	.balign 4
 .global $$253211
 $$253211:
-	.incbin "baserom.dol", 0x48BD48, 0x40
+	.asciz "HeroIconN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2
 T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2:
-	.incbin "baserom.dol", 0x497960, 0x4
+	.4byte 0x8048F8C8
 .global $$253023
 $$253023:
-	.incbin "baserom.dol", 0x497964, 0x8
+	.asciz "IconN"
+	.balign 4
 .global $$253025
 $$253025:
-	.incbin "baserom.dol", 0x49796C, 0x8
+	.asciz "Pinch"
+	.balign 4
 .global $$253132
 $$253132:
-	.incbin "baserom.dol", 0x497974, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253135
 $$253135:
-	.incbin "baserom.dol", 0x49797C, 0x8
+	.asciz "Damage"
+	.balign 4
 .global $$253138
 $$253138:
-	.incbin "baserom.dol", 0x497984, 0x8
+	.asciz "Flash"
+	.balign 4
 .global $$253141
 $$253141:
-	.incbin "baserom.dol", 0x49798C, 0x8
+	.asciz "Dead"
+	.balign 4
 .global $$253202
 $$253202:
-	.incbin "baserom.dol", 0x497994, 0x8
+	.asciz "Normal"
+	.balign 4
 .global $$253203
 $$253203:
-	.incbin "baserom.dol", 0x49799C, 0xC
+	.asciz "Sword"
+	.balign 4
+	.4byte 0
 .global $$253204
 $$253204:
-	.incbin "baserom.dol", 0x4979A8, 0x8
+	.asciz "Parasol"
 .global $$253205
 $$253205:
-	.incbin "baserom.dol", 0x4979B0, 0x8
+	.asciz "Spark"
+	.balign 4
 .global $$253206
 $$253206:
-	.incbin "baserom.dol", 0x4979B8, 0x8
+	.asciz "Whip"
+	.balign 4
 .global $$253207
 $$253207:
-	.incbin "baserom.dol", 0x4979C0, 0x8
+	.asciz "Wing"
+	.balign 4
 .global $$253208
 $$253208:
-	.incbin "baserom.dol", 0x4979C8, 0x8
+	.asciz "Fighter"
 .global $$253209
 $$253209:
-	.incbin "baserom.dol", 0x4979D0, 0x8
+	.asciz "Smash"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global object___Q33hel6common57ExplicitSingleton$$0Q43scn4step4info20HeroStatusIconSyncer$$1

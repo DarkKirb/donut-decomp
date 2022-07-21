@@ -446,4 +446,8 @@ lbl_80016B7C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DD90, 0x48
+	.asciz "MetroTRK - bad reply size %ld\n"
+	.byte 0x4D
+	.asciz "etroTRK - failed in RequestSend\n"
+	.balign 4
+	.4byte 0

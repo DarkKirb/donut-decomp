@@ -1441,24 +1441,39 @@ lbl_80275F60:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VIEW_PORT_SETTINGS__Q43scn4step4core20$$2unnamed$$2Drawer_cpp$$2
 VIEW_PORT_SETTINGS__Q43scn4step4core20$$2unnamed$$2Drawer_cpp$$2:
-	.incbin "baserom.dol", 0x413B20, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258077
 $$258077:
-	.incbin "baserom.dol", 0x49B8E0, 0x4
+	.4byte 0x3ECCCCCD
 .global $$258078
 $$258078:
-	.incbin "baserom.dol", 0x49B8E4, 0x4
+	.4byte 0x3F800000
 .global $$258079
 $$258079:
-	.incbin "baserom.dol", 0x49B8E8, 0x4
+	.4byte 0x3E99999A
 .global $$258080
 $$258080:
-	.incbin "baserom.dol", 0x49B8EC, 0x4
+	.4byte 0
 .global $$258129
 $$258129:
-	.incbin "baserom.dol", 0x49B8F0, 0x4
+	.4byte 0x3E4CCCCD
 .global $$258130
 $$258130:
-	.incbin "baserom.dol", 0x49B8F4, 0x4
+	.4byte 0x3DCCCCCD

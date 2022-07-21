@@ -195,9 +195,21 @@ drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ4
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem15UnitHeapMapUser
 __vt__Q23mem15UnitHeapMapUser:
-	.incbin "baserom.dol", 0x455E80, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BEFB8  ;# ptr
+	.4byte 0x801BF7C0  ;# ptr
+	.4byte 0x801BF7D4  ;# ptr
+	.4byte 0x801BF7D8  ;# ptr
+	.4byte 0x801BF7EC  ;# ptr
+	.4byte 0x801BF84C  ;# ptr
+	.4byte 0x801BF8A0  ;# ptr
+	.4byte 0x801BF8DC  ;# ptr
+	.4byte 0x801BF94C  ;# ptr
+	.4byte 0x801BFA2C  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249027
 $$249027:
-	.incbin "baserom.dol", 0x49A700, 0x8
+	.4byte 0x00FFFF40
+	.4byte 0

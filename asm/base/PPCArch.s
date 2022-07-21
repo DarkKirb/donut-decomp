@@ -208,4 +208,5 @@ lbl_8001A2AC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22249
 $$22249:
-	.incbin "baserom.dol", 0x41DEA0, 0x38
+	.asciz "H4A should not be cleared because of Broadway errata.\n"
+	.balign 4

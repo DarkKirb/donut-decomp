@@ -943,10 +943,11 @@ RequestEffectGearNodeNDOS__Q43scn4step4hero11MintUtilityFQ43scn4step6effect4Kind
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259354
 $$259354:
-	.incbin "baserom.dol", 0x49D848, 0x4
+	.4byte 0x3F800000
 .global $$259355
 $$259355:
-	.incbin "baserom.dol", 0x49D84C, 0x4
+	.4byte 0xBF800000
 .global $$259357
 $$259357:
-	.incbin "baserom.dol", 0x49D850, 0x8
+	.4byte 0
+	.4byte 0

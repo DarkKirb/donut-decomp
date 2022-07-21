@@ -2489,43 +2489,81 @@ __dt__Q34nw4r2ef23DrawDirectionalStrategyFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2p
 $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2p:
-	.incbin "baserom.dol", 0x404360, 0x30
+	.4byte 0xBF800000
+	.4byte 0xBF800000
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0xBF800000
+	.4byte 0
 .global $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2px$$20
 $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2px$$20:
-	.incbin "baserom.dol", 0x404390, 0x30
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0xBF800000
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0xBF800000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef23DrawDirectionalStrategy
 __vt__Q34nw4r2ef23DrawDirectionalStrategy:
-	.incbin "baserom.dol", 0x43C530, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x800BF090  ;# ptr
+	.4byte 0x800BD020  ;# ptr
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
+	.4byte 0x800BEFC0  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global directional_tex0_u8__Q24nw4r2ef
 directional_tex0_u8__Q24nw4r2ef:
-	.incbin "baserom.dol", 0x492D80, 0x20
+	.4byte 0x00010000
+	.4byte 0x01000101
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$213563
 $$213563:
-	.incbin "baserom.dol", 0x499888, 0x4
+	.4byte 0
 .global $$213564
 $$213564:
-	.incbin "baserom.dol", 0x49988C, 0x4
+	.4byte 0x34000000
 .global $$213565
 $$213565:
-	.incbin "baserom.dol", 0x499890, 0x4
+	.4byte 0x3F800000
 .global $$213566
 $$213566:
-	.incbin "baserom.dol", 0x499894, 0x4
+	.4byte 0x42C80000
 .global $$213567
 $$213567:
-	.incbin "baserom.dol", 0x499898, 0x4
+	.4byte 0x3F000000
 .global $$213568
 $$213568:
-	.incbin "baserom.dol", 0x49989C, 0x4
+	.4byte 0x3CC90FDB
 .global $$213575
 $$213575:
-	.incbin "baserom.dol", 0x4998A0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$213576
 $$213576:
-	.incbin "baserom.dol", 0x4998A8, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -450,84 +450,95 @@ getColor__Q43scn4step4hero11DamageFlashCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4boss25$$2unnamed$$2DamageFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss25$$2unnamed$$2DamageFlash_cpp$$2:
-	.incbin "baserom.dol", 0x4124A8, 0x10
+	.4byte 0x6018400C
+	.4byte 0x20001000
+	.4byte 0x08000000
+	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__25$$2unnamed$$2DamageFlash_cpp$$2
 T_ALPHA_TABLE__25$$2unnamed$$2DamageFlash_cpp$$2:
-	.incbin "baserom.dol", 0x415DE8, 0x18
+	.4byte 0x000000FF
+	.4byte 0x00000080
+	.4byte 0x000000F0
+	.4byte 0x00000060
+	.4byte 0x000000C0
+	.4byte 0x00000040
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250026
 $$250026:
-	.incbin "baserom.dol", 0x495A00, 0x8
+	.4byte 0x42B40000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x49AE40, 0x4
+	.4byte 0xF0FFA0FF
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x49AE44, 0x4
+	.4byte 0xA05000FF
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x49AE48, 0x4
+	.4byte 0xA0F0FFFF
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x49AE4C, 0x4
+	.4byte 0xA0FF50FF
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x49AE50, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_COLOR_TABLE__Q43scn4step5enemy25$$2unnamed$$2DamageFlash_cpp$$2
 T_COLOR_TABLE__Q43scn4step5enemy25$$2unnamed$$2DamageFlash_cpp$$2:
-	.incbin "baserom.dol", 0x49B948, 0x4
+	.4byte 0xFF004000
 .global $$250237
 $$250237:
-	.incbin "baserom.dol", 0x49B94C, 0x4
+	.4byte 0xFFFFFF00
 .global $$250243
 $$250243:
-	.incbin "baserom.dol", 0x49B950, 0x4
+	.4byte 0
 .global $$250244
 $$250244:
-	.incbin "baserom.dol", 0x49B954, 0x4
+	.4byte 0x3F800000
 .global $$250268
 $$250268:
-	.incbin "baserom.dol", 0x49B958, 0x4
+	.4byte 0x40600000
 .global $$250269
 $$250269:
-	.incbin "baserom.dol", 0x49B95C, 0x4
+	.4byte 0x43B40000
 .global $$250270
 $$250270:
-	.incbin "baserom.dol", 0x49B960, 0x4
+	.4byte 0x3D19999A
 .global $$250271
 $$250271:
-	.incbin "baserom.dol", 0x49B964, 0x4
+	.4byte 0x3F733333
 .global $$250272
 $$250272:
-	.incbin "baserom.dol", 0x49B968, 0x4
+	.4byte 0x4222F983
 .global $$250273
 $$250273:
-	.incbin "baserom.dol", 0x49B96C, 0x4
+	.4byte 0x3C8EFA35
 .global $$250274
 $$250274:
-	.incbin "baserom.dol", 0x49B970, 0x4
+	.4byte 0x3F000000
 .global $$250275
 $$250275:
-	.incbin "baserom.dol", 0x49B974, 0x4
+	.4byte 0x437F0000
 .global $$250068
 $$250068:
-	.incbin "baserom.dol", 0x49B978, 0x4
+	.4byte 0xF0FFA0FF
 .global $$250073
 $$250073:
-	.incbin "baserom.dol", 0x49B97C, 0x4
+	.4byte 0xA00000FF
 .global $$250077
 $$250077:
-	.incbin "baserom.dol", 0x49B980, 0x4
+	.4byte 0xA0F0FFFF
 .global $$250081
 $$250081:
-	.incbin "baserom.dol", 0x49B984, 0x4
+	.4byte 0xA0FF50FF
 .global $$250086
 $$250086:
-	.incbin "baserom.dol", 0x49B988, 0x8
+	.4byte 0xFFF0F0FF
+	.4byte 0

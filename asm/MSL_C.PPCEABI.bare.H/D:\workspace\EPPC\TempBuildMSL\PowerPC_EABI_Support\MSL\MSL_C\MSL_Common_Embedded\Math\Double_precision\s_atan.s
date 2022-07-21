@@ -161,27 +161,67 @@ lbl_80013DBC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global atanhi
 atanhi:
-	.incbin "baserom.dol", 0x403620, 0x20
+	.4byte 0x3FDDAC67
+	.4byte 0x0561BB4F
+	.4byte 0x3FE921FB
+	.4byte 0x54442D18
+	.4byte 0x3FEF730B
+	.4byte 0xD281F69B
+	.4byte 0x3FF921FB
+	.4byte 0x54442D18
 .global atanlo
 atanlo:
-	.incbin "baserom.dol", 0x403640, 0x20
+	.4byte 0x3C7A2B7F
+	.4byte 0x222F65E2
+	.4byte 0x3C81A626
+	.4byte 0x33145C07
+	.4byte 0x3C700788
+	.4byte 0x7AF0CBBD
+	.4byte 0x3C91A626
+	.4byte 0x33145C07
 .global aT
 aT:
-	.incbin "baserom.dol", 0x403660, 0x58
+	.4byte 0x3FD55555
+	.4byte 0x5555550D
+	.4byte 0xBFC99999
+	.4byte 0x9998EBC4
+	.4byte 0x3FC24924
+	.4byte 0x920083FF
+	.4byte 0xBFBC71C6
+	.4byte 0xFE231671
+	.4byte 0x3FB745CD
+	.4byte 0xC54C206E
+	.4byte 0xBFB3B0F2
+	.4byte 0xAF749A6D
+	.4byte 0x3FB10D66
+	.4byte 0xA0D03D51
+	.4byte 0xBFADDE2D
+	.4byte 0x52DEFD9A
+	.4byte 0x3FA97B4B
+	.4byte 0x24760DEB
+	.4byte 0xBFA2B444
+	.4byte 0x2C6A6C2F
+	.4byte 0x3F90AD3A
+	.4byte 0xE322DA11
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2532
 $$2532:
-	.incbin "baserom.dol", 0x498F68, 0x8
+	.4byte 0x7E37E43C
+	.4byte 0x8800759C
 .global $$2533
 $$2533:
-	.incbin "baserom.dol", 0x498F70, 0x8
+	.4byte 0x3FF00000
+	.4byte 0
 .global $$2534
 $$2534:
-	.incbin "baserom.dol", 0x498F78, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$2535
 $$2535:
-	.incbin "baserom.dol", 0x498F80, 0x8
+	.4byte 0x3FF80000
+	.4byte 0
 .global $$2536
 $$2536:
-	.incbin "baserom.dol", 0x498F88, 0x8
+	.4byte 0xBFF00000
+	.4byte 0

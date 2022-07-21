@@ -1658,120 +1658,202 @@ lbl_8007D0F4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21516
 $$21516:
-	.incbin "baserom.dol", 0x436CE8, 0x58
+	.asciz "bta_hh_sdp_cback: p_cb: %d result 0x%02x,                             attr_mask 0x%02x"
+	.balign 4
 .global $$21527
 $$21527:
-	.incbin "baserom.dol", 0x436D40, 0x30
+	.asciz "bta_hh_start_sdp:: skip SDP for known devices"
+	.balign 4
 .global $$21528
 $$21528:
-	.incbin "baserom.dol", 0x436D70, 0x50
+	.asciz "bta_hh_start_sdp:  HID_HostGetSDPRecord failed:                 Status 0x%2X"
+	.balign 4
 .global $$21541
 $$21541:
-	.incbin "baserom.dol", 0x436DC0, 0x20
+	.asciz "bta_hh_sdp_cmpl:  status 0x%2X"
+	.balign 4
 .global $$21542
 $$21542:
-	.incbin "baserom.dol", 0x436DE0, 0x4C
+	.asciz "bta_hh_sdp_cmpl:  HID_HostOpenDev failed:                     Status 0x%2X"
+	.balign 4
 .global $$21573
 $$21573:
-	.incbin "baserom.dol", 0x436E2C, 0x28
+	.asciz "bta_hh_open_act:  Device[%d] connected"
+	.balign 4
 .global $$21625
 $$21625:
-	.incbin "baserom.dol", 0x436E54, 0x14
+	.asciz "BTA_HH_GET_RPT_EVT"
+	.balign 4
 .global $$21626
 $$21626:
-	.incbin "baserom.dol", 0x436E68, 0x14
+	.asciz "BTA_HH_SET_RPT_EVT"
+	.balign 4
 .global $$21627
 $$21627:
-	.incbin "baserom.dol", 0x436E7C, 0x18
+	.asciz "BTA_HH_GET_PROTO_EVT"
+	.balign 4
 .global $$21628
 $$21628:
-	.incbin "baserom.dol", 0x436E94, 0x18
+	.asciz "BTA_HH_SET_PROTO_EVT"
+	.balign 4
 .global $$21629
 $$21629:
-	.incbin "baserom.dol", 0x436EAC, 0x14
+	.asciz "BTA_HH_GET_IDLE_EVT"
 .global $$21630
 $$21630:
-	.incbin "baserom.dol", 0x436EC0, 0x18
+	.asciz "BTA_HH_SET_IDLE_EVT"
+	.4byte 0
 .global $$21631
 $$21631:
-	.incbin "baserom.dol", 0x436ED8, 0x10
+	.asciz "BTA_HH_OPEN_EVT"
 .global $$21632
 $$21632:
-	.incbin "baserom.dol", 0x436EE8, 0x10
+	.asciz "Unknown event"
+	.balign 4
 .global $$21633
 $$21633:
-	.incbin "baserom.dol", 0x436EF8, 0x2C
+	.asciz "HANDSHAKE received for: event = %s data= %d"
 .global $$21634
 $$21634:
-	.incbin "baserom.dol", 0x436F24, 0x1C
+	.asciz "unknown transaction type"
+	.balign 4
 .global $$21638
 $$21638:
-	.incbin "baserom.dol", 0x436F40, 0x28
+	.4byte 0x8007C5DC  ;# ptr
+	.4byte 0x8007C5DC  ;# ptr
+	.4byte 0x8007C570  ;# ptr
+	.4byte 0x8007C5DC  ;# ptr
+	.4byte 0x8007C480  ;# ptr
+	.4byte 0x8007C500  ;# ptr
+	.4byte 0x8007C480  ;# ptr
+	.4byte 0x8007C500  ;# ptr
+	.4byte 0x8007C480  ;# ptr
+	.4byte 0x8007C500  ;# ptr
 .global $$21637
 $$21637:
-	.incbin "baserom.dol", 0x436F68, 0x28
+	.4byte 0x8007C448  ;# ptr
+	.4byte 0x8007C448  ;# ptr
+	.4byte 0x8007C440  ;# ptr
+	.4byte 0x8007C448  ;# ptr
+	.4byte 0x8007C410  ;# ptr
+	.4byte 0x8007C418  ;# ptr
+	.4byte 0x8007C420  ;# ptr
+	.4byte 0x8007C428  ;# ptr
+	.4byte 0x8007C430  ;# ptr
+	.4byte 0x8007C438  ;# ptr
 .global $$21673
 $$21673:
-	.incbin "baserom.dol", 0x436F90, 0x24
+	.asciz "Ctrl DATA received w4: event[%s]"
+	.balign 4
 .global $$21674
 $$21674:
-	.incbin "baserom.dol", 0x436FB4, 0x38
+	.asciz "invalid  transaction type for DATA payload: 4_evt[%s]"
+	.balign 4
 .global $$21678
 $$21678:
-	.incbin "baserom.dol", 0x436FEC, 0x28
+	.4byte 0x8007C7A0  ;# ptr
+	.4byte 0x8007C7A0  ;# ptr
+	.4byte 0x8007C798  ;# ptr
+	.4byte 0x8007C7A0  ;# ptr
+	.4byte 0x8007C768  ;# ptr
+	.4byte 0x8007C770  ;# ptr
+	.4byte 0x8007C778  ;# ptr
+	.4byte 0x8007C780  ;# ptr
+	.4byte 0x8007C788  ;# ptr
+	.4byte 0x8007C790  ;# ptr
 .global $$21677
 $$21677:
-	.incbin "baserom.dol", 0x437014, 0x2C
+	.4byte 0x8007C6BC  ;# ptr
+	.4byte 0x8007C6BC  ;# ptr
+	.4byte 0x8007C6B4  ;# ptr
+	.4byte 0x8007C6BC  ;# ptr
+	.4byte 0x8007C684  ;# ptr
+	.4byte 0x8007C68C  ;# ptr
+	.4byte 0x8007C694  ;# ptr
+	.4byte 0x8007C69C  ;# ptr
+	.4byte 0x8007C6A4  ;# ptr
+	.4byte 0x8007C6AC  ;# ptr
+	.4byte 0
 .global $$21713
 $$21713:
-	.incbin "baserom.dol", 0x437040, 0x10
+	.asciz "invalid command"
 .global $$21760
 $$21760:
-	.incbin "baserom.dol", 0x437050, 0x1C
+	.asciz "HID_HostWriteDev Error %d"
+	.balign 4
 .global $$21761
 $$21761:
-	.incbin "baserom.dol", 0x43706C, 0x28
+	.asciz "bta_hh_write_dev_act:: cmd type = %d"
+	.balign 4
 .global $$21792
 $$21792:
-	.incbin "baserom.dol", 0x437094, 0x14
+	.asciz "HID_HDEV_EVT_OPEN"
+	.balign 4
 .global $$21793
 $$21793:
-	.incbin "baserom.dol", 0x4370A8, 0x14
+	.asciz "HID_HDEV_EVT_CLOSE"
+	.balign 4
 .global $$21794
 $$21794:
-	.incbin "baserom.dol", 0x4370BC, 0x18
+	.asciz "HID_HDEV_EVT_RETRYING"
+	.balign 4
 .global $$21795
 $$21795:
-	.incbin "baserom.dol", 0x4370D4, 0x18
+	.asciz "HID_HDEV_EVT_INTR_DATA"
+	.balign 4
 .global $$21796
 $$21796:
-	.incbin "baserom.dol", 0x4370EC, 0x18
+	.asciz "HID_HDEV_EVT_INTR_DATC"
+	.balign 4
 .global $$21797
 $$21797:
-	.incbin "baserom.dol", 0x437104, 0x18
+	.asciz "HID_HDEV_EVT_CTRL_DATA"
+	.balign 4
 .global $$21798
 $$21798:
-	.incbin "baserom.dol", 0x43711C, 0x18
+	.asciz "HID_HDEV_EVT_CTRL_DATC"
+	.balign 4
 .global $$21799
 $$21799:
-	.incbin "baserom.dol", 0x437134, 0x18
+	.asciz "HID_HDEV_EVT_HANDSHAKE"
+	.balign 4
 .global $$21800
 $$21800:
-	.incbin "baserom.dol", 0x43714C, 0x18
+	.asciz "HID_HDEV_EVT_VC_UNPLUG"
+	.balign 4
 .global $$21801
 $$21801:
-	.incbin "baserom.dol", 0x437164, 0x14
+	.asciz "Unknown HID event"
+	.balign 4
 .global $$21802
 $$21802:
-	.incbin "baserom.dol", 0x437178, 0x20
+	.asciz "bta_hh_cback::HID_event [%s]"
+	.balign 4
 .global $$21804
 $$21804:
-	.incbin "baserom.dol", 0x437198, 0x24
+	.4byte 0x8007CF58  ;# ptr
+	.4byte 0x8007CF60  ;# ptr
+	.4byte 0x8007D0C4  ;# ptr
+	.4byte 0x8007CF68  ;# ptr
+	.4byte 0x8007CF80  ;# ptr
+	.4byte 0x8007CF78  ;# ptr
+	.4byte 0x8007CF80  ;# ptr
+	.4byte 0x8007CF70  ;# ptr
+	.4byte 0x8007CF8C  ;# ptr
 .global $$21803
 $$21803:
-	.incbin "baserom.dol", 0x4371BC, 0x24
+	.4byte 0x8007CEE0  ;# ptr
+	.4byte 0x8007CEE8  ;# ptr
+	.4byte 0x8007CEF0  ;# ptr
+	.4byte 0x8007CEF8  ;# ptr
+	.4byte 0x8007CF00  ;# ptr
+	.4byte 0x8007CF08  ;# ptr
+	.4byte 0x8007CF10  ;# ptr
+	.4byte 0x8007CF18  ;# ptr
+	.4byte 0x8007CF20  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21486
 $$21486:
-	.incbin "baserom.dol", 0x492CD8, 0x8
+	.4byte 0
+	.4byte 0

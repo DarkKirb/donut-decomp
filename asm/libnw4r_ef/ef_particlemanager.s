@@ -2380,59 +2380,79 @@ __sinit_$$3ef_particlemanager_cpp:
 /* 800B253C 000AE37C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40236C, 0x4
+	.4byte 0x800B2530  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211043
 $$211043:
-	.incbin "baserom.dol", 0x43C420, 0x28
+	.4byte 0x800B0E90  ;# ptr
+	.4byte 0x800B0E68  ;# ptr
+	.4byte 0x800B1394  ;# ptr
+	.4byte 0x800B13E8  ;# ptr
+	.4byte 0x800B1478  ;# ptr
+	.4byte 0x800B15E8  ;# ptr
+	.4byte 0x800B1328  ;# ptr
+	.4byte 0x800B0ED4  ;# ptr
+	.4byte 0x800B1578  ;# ptr
+	.4byte 0
 .global __vt__Q34nw4r2ef15ParticleManager
 __vt__Q34nw4r2ef15ParticleManager:
-	.incbin "baserom.dol", 0x43C448, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x800B02C0  ;# ptr
+	.4byte 0x800B02D0  ;# ptr
+	.4byte 0x800B0440  ;# ptr
+	.4byte 0x800B05A0  ;# ptr
+	.4byte 0x800B06D0  ;# ptr
+	.4byte 0x800B1C20  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210377
 $$210377:
-	.incbin "baserom.dol", 0x4995B8, 0x4
+	.4byte 0x3F800000
 .global $$210378
 $$210378:
-	.incbin "baserom.dol", 0x4995BC, 0x4
+	.4byte 0
 .global $$211032
 $$211032:
-	.incbin "baserom.dol", 0x4995C0, 0x4
+	.4byte 0x3F13CD3A
 .global $$211033
 $$211033:
-	.incbin "baserom.dol", 0x4995C4, 0x4
+	.4byte 0x47000000
 .global $$211034
 $$211034:
-	.incbin "baserom.dol", 0x4995C8, 0x4
+	.4byte 0x477FFF00
 .global $$211035
 $$211035:
-	.incbin "baserom.dol", 0x4995CC, 0x4
+	.4byte 0x40000000
 .global $$211036
 $$211036:
-	.incbin "baserom.dol", 0x4995D0, 0x4
+	.4byte 0x40490FDB
 .global $$211037
 $$211037:
-	.incbin "baserom.dol", 0x4995D4, 0x4
+	.4byte 0x4222F983
 .global $$211038
 $$211038:
-	.incbin "baserom.dol", 0x4995D8, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$211039
 $$211039:
-	.incbin "baserom.dol", 0x4995E0, 0x8
+	.4byte 0xBF800000
+	.4byte 0
 .global $$211044
 $$211044:
-	.incbin "baserom.dol", 0x4995E8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$211045
 $$211045:
-	.incbin "baserom.dol", 0x4995F0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$211202
 $$211202:
-	.incbin "baserom.dol", 0x4995F8, 0x4
+	.4byte 0x34000000
 .global $$211203
 $$211203:
-	.incbin "baserom.dol", 0x4995FC, 0x4
+	.4byte 0x43800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global smDrawMtxPMtoEM__Q34nw4r2ef15ParticleManager

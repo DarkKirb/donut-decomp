@@ -514,4 +514,11 @@ lbl_8010FCD8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd12SoundArchive
 __vt__Q34nw4r3snd12SoundArchive:
-	.incbin "baserom.dol", 0x43E560, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010F6D0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

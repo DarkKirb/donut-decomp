@@ -102,28 +102,94 @@ lbl_8007AF8C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_dm_action
 bta_dm_action:
-	.incbin "baserom.dol", 0x404048, 0x34
+	.4byte 0x800786C4  ;# ptr
+	.4byte 0x800787D4  ;# ptr
+	.4byte 0x80078940  ;# ptr
+	.4byte 0x80078948  ;# ptr
+	.4byte 0x80078990  ;# ptr
+	.4byte 0x80078A00  ;# ptr
+	.4byte 0x80078A9C  ;# ptr
+	.4byte 0x80079FD4  ;# ptr
+	.4byte 0x8007A174  ;# ptr
+	.4byte 0x8007B8A0  ;# ptr
+	.4byte 0x8007B9C0  ;# ptr
+	.4byte 0x8007A90C  ;# ptr
+	.4byte 0x8007A994  ;# ptr
 .global bta_dm_st_table
 bta_dm_st_table:
-	.incbin "baserom.dol", 0x40407C, 0x2C
+	.4byte 0x000D0001
+	.4byte 0x0D00020D
+	.4byte 0x00030D00
+	.4byte 0x070D0008
+	.4byte 0x0D00040D
+	.4byte 0x00050D00
+	.4byte 0x060D0009
+	.4byte 0x0D000A0D
+	.4byte 0x000B0D00
+	.4byte 0x0C0D0000
+	.4byte 0
 .global bta_dm_search_action
 bta_dm_search_action:
-	.incbin "baserom.dol", 0x4040A8, 0x48
+	.4byte 0x80078B70  ;# ptr
+	.4byte 0x80078BD0  ;# ptr
+	.4byte 0x80078C54  ;# ptr
+	.4byte 0x80078D68  ;# ptr
+	.4byte 0x80078F8C  ;# ptr
+	.4byte 0x8007915C  ;# ptr
+	.4byte 0x800793C4  ;# ptr
+	.4byte 0x80079500  ;# ptr
+	.4byte 0x800793DC  ;# ptr
+	.4byte 0x8007942C  ;# ptr
+	.4byte 0x80079544  ;# ptr
+	.4byte 0x8007958C  ;# ptr
+	.4byte 0x800795D4  ;# ptr
+	.4byte 0x80079618  ;# ptr
+	.4byte 0x800796B8  ;# ptr
+	.4byte 0x8007965C  ;# ptr
+	.4byte 0x800790F8  ;# ptr
+	.4byte 0x80079BC8  ;# ptr
 .global bta_dm_search_idle_st_table
 bta_dm_search_idle_st_table:
-	.incbin "baserom.dol", 0x4040F0, 0x1C
+	.4byte 0x0012010E
+	.4byte 0x12000212
+	.4byte 0x03121200
+	.4byte 0x12120012
+	.4byte 0x12000712
+	.4byte 0x00121200
+	.4byte 0x12120000
 .global bta_dm_search_search_active_st_table
 bta_dm_search_search_active_st_table:
-	.incbin "baserom.dol", 0x40410C, 0x1C
+	.4byte 0x12120101
+	.4byte 0x12021212
+	.4byte 0x01031201
+	.4byte 0x04120111
+	.4byte 0x12010512
+	.4byte 0x01061200
+	.4byte 0x09120100
 .global bta_dm_search_search_cancelling_st_table
 bta_dm_search_search_cancelling_st_table:
-	.incbin "baserom.dol", 0x404128, 0x1C
+	.4byte 0x0A12020C
+	.4byte 0x0E020B12
+	.4byte 0x020D1200
+	.4byte 0x0F0D0012
+	.4byte 0x12020F0D
+	.4byte 0x000D1200
+	.4byte 0x0D120000
 .global bta_dm_search_disc_active_st_table
 bta_dm_search_disc_active_st_table:
-	.incbin "baserom.dol", 0x404144, 0x1C
+	.4byte 0x1212030E
+	.4byte 0x12031212
+	.4byte 0x03121203
+	.4byte 0x10120311
+	.4byte 0x12030512
+	.4byte 0x03121200
+	.4byte 0x08120300
 .global bta_dm_search_st_tbl
 bta_dm_search_st_tbl:
-	.incbin "baserom.dol", 0x404160, 0x10
+	.4byte 0x80407FF0
+	.4byte 0x8040800C
+	.4byte 0x80408028
+	.4byte 0x80408044
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_dm_search_cb

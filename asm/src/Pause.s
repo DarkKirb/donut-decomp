@@ -666,9 +666,12 @@ lbl_801DF1F0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253172
 $$253172:
-	.incbin "baserom.dol", 0x459C60, 0x10
+	.asciz "Disappear"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253126
 $$253126:
-	.incbin "baserom.dol", 0x493D00, 0x8
+	.asciz "Appear"
+	.balign 4

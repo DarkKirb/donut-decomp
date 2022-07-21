@@ -203,32 +203,44 @@ disappear__Q33scn5anime8LoadIconFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252060
 $$252060:
-	.incbin "baserom.dol", 0x459E40, 0xC
+	.asciz "movie/Main"
+	.balign 4
 .global $$252061
 $$252061:
-	.incbin "baserom.dol", 0x459E4C, 0xC
+	.asciz "LoadBase"
+	.balign 4
 .global $$252062
 $$252062:
-	.incbin "baserom.dol", 0x459E58, 0x40
+	.asciz "LoadIcon"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252063
 $$252063:
-	.incbin "baserom.dol", 0x493DC0, 0x8
+	.asciz "IconN"
+	.balign 4
 .global $$252066
 $$252066:
-	.incbin "baserom.dol", 0x493DC8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252106
 $$252106:
-	.incbin "baserom.dol", 0x493DD0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252107
 $$252107:
-	.incbin "baserom.dol", 0x493DD8, 0x8
+	.4byte 0x456E6400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252064
 $$252064:
-	.incbin "baserom.dol", 0x49A828, 0x4
+	.4byte 0xC2C80000
 .global $$252065
 $$252065:
-	.incbin "baserom.dol", 0x49A82C, 0x4
+	.4byte 0

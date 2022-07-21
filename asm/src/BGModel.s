@@ -137,25 +137,28 @@ update__Q33scn10grandtitle7BGModelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251709
 $$251709:
-	.incbin "baserom.dol", 0x45ABB0, 0x20
+	.asciz "challengetitle/TitleScene"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251679
 $$251679:
-	.incbin "baserom.dol", 0x45C578, 0x18
+	.asciz "grandtitle/TitleScene"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2:
-	.incbin "baserom.dol", 0x494090, 0x4
+	.4byte 0x8045EAB0
 .global $$251840
 $$251840:
-	.incbin "baserom.dol", 0x494094, 0x4
+	.4byte 0x4D617000
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2:
-	.incbin "baserom.dol", 0x494710, 0x4
+	.4byte 0x80460478
 .global $$251825
 $$251825:
-	.incbin "baserom.dol", 0x494714, 0x4
+	.4byte 0x4D617000

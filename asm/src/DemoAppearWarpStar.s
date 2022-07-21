@@ -281,21 +281,32 @@ endCameraMove__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarFif:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256147
 $$256147:
-	.incbin "baserom.dol", 0x47B6A0, 0x38
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Unlock.AppearWarpStar"
+	.balign 4
+	.4byte 0
 .global __vt__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStar
 __vt__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStar:
-	.incbin "baserom.dol", 0x47B6D8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FB2AC
+	.4byte 0x802FAE04
+	.4byte 0x802FB308
+	.4byte 0x802FB3B0
+	.4byte 0x802FB3C0
+	.4byte 0x802FB3EC
+	.4byte 0x802FB3FC
+	.4byte 0x802FAE90
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256125
 $$256125:
-	.incbin "baserom.dol", 0x49D158, 0x4
+	.4byte 0
 .global $$256141
 $$256141:
-	.incbin "baserom.dol", 0x49D15C, 0x4
+	.4byte 0x40400000
 .global $$256142
 $$256142:
-	.incbin "baserom.dol", 0x49D160, 0x4
+	.4byte 0x40000000
 .global $$256183
 $$256183:
-	.incbin "baserom.dol", 0x49D164, 0x4
+	.4byte 0x41380000

@@ -95,479 +95,1526 @@ Script__Q53scn4step4hero9modeldesc4MetaFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20
 $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
-	.incbin "baserom.dol", 0x41AC08, 0xE38
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B090
+	.4byte 0x0000000C
+	.4byte 0x8055B098
+	.4byte 0x0000000C
+	.4byte 0x8055B0A0
+	.4byte 0x0000000C
+	.4byte 0x8055B0A8
+	.4byte 0x0000000C
+	.4byte 0x8055B0B0
+	.4byte 0x0000000C
+	.4byte 0x8055B0B8
+	.4byte 0x0000000C
+	.4byte 0x8048ACA8
+	.4byte 0x0000000C
+	.4byte 0x8055B0C0
+	.4byte 0x0000000C
+	.4byte 0x8055B0C8
+	.4byte 0x0000000C
+	.4byte 0x8055B0D0
+	.4byte 0x0000000C
+	.4byte 0x8048ACB4
+	.4byte 0x0000000C
+	.4byte 0x8055B0D8
+	.4byte 0x0000000C
+	.4byte 0x8048ACC0
+	.4byte 0x0000000C
+	.4byte 0x8048ACCC
+	.4byte 0x0000000C
+	.4byte 0x8055B0E0
+	.4byte 0x0000000C
+	.4byte 0x8048ACDC
+	.4byte 0x0000000C
+	.4byte 0x8048ACE8
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B0E8
+	.4byte 0x0000000C
+	.4byte 0x8048ACF4
+	.4byte 0x0000000C
+	.4byte 0x8048AD00
+	.4byte 0x0000000C
+	.4byte 0x8048AD0C
+	.4byte 0x0000000C
+	.4byte 0x8055B0F0
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8048AD18
+	.4byte 0x0000000C
+	.4byte 0x8048AD28
+	.4byte 0x0000000C
+	.4byte 0x8048AD38
+	.4byte 0x0000000C
+	.4byte 0x8048AD48
+	.4byte 0x0000000C
+	.4byte 0x8048AD58
+	.4byte 0x0000000C
+	.4byte 0x8048AD64
+	.4byte 0x0000000C
+	.4byte 0x8048AD70
+	.4byte 0x0000000C
+	.4byte 0x8048AD7C
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B0F4
+	.4byte 0x0000000C
+	.4byte 0x8048AD88
+	.4byte 0x0000000C
+	.4byte 0x8055B0F4
+	.4byte 0x0000000C
+	.4byte 0x8048AD88
+	.4byte 0x0000000C
+	.4byte 0x8048AD94
+	.4byte 0x0000000C
+	.4byte 0x8055B0FC
+	.4byte 0x0000000C
+	.4byte 0x8048ADA0
+	.4byte 0x0000000C
+	.4byte 0x8055B104
+	.4byte 0x0000000C
+	.4byte 0x8048ADAC
+	.4byte 0x0000000C
+	.4byte 0x8048ADC4
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B108
+	.4byte 0x0000000C
+	.4byte 0x8055B110
+	.4byte 0x0000000C
+	.4byte 0x8055B118
+	.4byte 0x0000000C
+	.4byte 0x8055B120
+	.4byte 0x0000000C
+	.4byte 0x8048ADD8
+	.4byte 0x0000000C
+	.4byte 0x8048ADE4
+	.4byte 0x0000000C
+	.4byte 0x8055B128
+	.4byte 0x0000000C
+	.4byte 0x8055B130
+	.4byte 0x0000000C
+	.4byte 0x8055B138
+	.4byte 0x0000000C
+	.4byte 0x8055B140
+	.4byte 0x0000000C
+	.4byte 0x8055B148
+	.4byte 0x0000000C
+	.4byte 0x8055B150
+	.4byte 0x0000000C
+	.4byte 0x8055B158
+	.4byte 0x0000000C
+	.4byte 0x8055B160
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B0B0
+	.4byte 0x0000000C
+	.4byte 0x8055B168
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B170
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B178
+	.4byte 0x0000000C
+	.4byte 0x8055B180
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8048ADF0
+	.4byte 0x0000000C
+	.4byte 0x8048ADFC
+	.4byte 0x0000000C
+	.4byte 0x8048AE08
+	.4byte 0x0000000C
+	.4byte 0x8055B188
+	.4byte 0x0000000C
+	.4byte 0x8055B190
+	.4byte 0x0000000C
+	.4byte 0x8048AE14
+	.4byte 0x0000000C
+	.4byte 0x8048AE20
+	.4byte 0x0000000C
+	.4byte 0x8048AE34
+	.4byte 0x0000000C
+	.4byte 0x8048AE44
+	.4byte 0x0000000C
+	.4byte 0x8048AE50
+	.4byte 0x0000000C
+	.4byte 0x8048AE60
+	.4byte 0x0000000C
+	.4byte 0x8055B198
+	.4byte 0x0000000C
+	.4byte 0x8055B198
+	.4byte 0x0000000C
+	.4byte 0x8055B198
+	.4byte 0x0000000C
+	.4byte 0x8048AE70
+	.4byte 0x0000000C
+	.4byte 0x8048AE7C
+	.4byte 0x0000000C
+	.4byte 0x8048AE88
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8048AE98
+	.4byte 0x0000000C
+	.4byte 0x8048AD00
+	.4byte 0x0000000C
+	.4byte 0x8048AEA4
+	.4byte 0x0000000C
+	.4byte 0x8048AEB4
+	.4byte 0x0000000C
+	.4byte 0x8048AEC4
+	.4byte 0x0000000C
+	.4byte 0x8048AED8
+	.4byte 0x0000000C
+	.4byte 0x8048AEE8
+	.4byte 0x0000000C
+	.4byte 0x8048AF00
+	.4byte 0x0000000C
+	.4byte 0x8055B1A0
+	.4byte 0x0000000C
+	.4byte 0x8048AF0C
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8048AF18
+	.4byte 0x0000000C
+	.4byte 0x8055B1A8
+	.4byte 0x0000000C
+	.4byte 0x8048AF28
+	.4byte 0x0000000C
+	.4byte 0x8055B1B0
+	.4byte 0x0000000C
+	.4byte 0x8048AF34
+	.4byte 0x0000000C
+	.4byte 0x8055B1B8
+	.4byte 0x0000000C
+	.4byte 0x8048AF40
+	.4byte 0x0000000C
+	.4byte 0x8048AF4C
+	.4byte 0x0000000C
+	.4byte 0x8048AF58
+	.4byte 0x0000000C
+	.4byte 0x8048AF68
+	.4byte 0x0000000C
+	.4byte 0x8048AF74
+	.4byte 0x0000000C
+	.4byte 0x8048AF80
+	.4byte 0x0000000C
+	.4byte 0x8048AF90
+	.4byte 0x0000000C
+	.4byte 0x8048AF9C
+	.4byte 0x0000000C
+	.4byte 0x8048AFAC
+	.4byte 0x0000000C
+	.4byte 0x8048AFBC
+	.4byte 0x0000000C
+	.4byte 0x8048AFC8
+	.4byte 0x0000000C
+	.4byte 0x8048AFD4
+	.4byte 0x0000000C
+	.4byte 0x8048AFE4
+	.4byte 0x0000000C
+	.4byte 0x8048AFF8
+	.4byte 0x0000000C
+	.4byte 0x8048B004
+	.4byte 0x0000000C
+	.4byte 0x8048B014
+	.4byte 0x0000000C
+	.4byte 0x8048B024
+	.4byte 0x0000000C
+	.4byte 0x8048B038
+	.4byte 0x0000000C
+	.4byte 0x8048B04C
+	.4byte 0x0000000C
+	.4byte 0x8048B064
+	.4byte 0x0000000C
+	.4byte 0x8048B078
+	.4byte 0x0000000C
+	.4byte 0x8048B098
+	.4byte 0x0000000C
+	.4byte 0x8048B0B8
+	.4byte 0x0000000C
+	.4byte 0x8048B0D8
+	.4byte 0x0000000C
+	.4byte 0x8048B0EC
+	.4byte 0x0000000C
+	.4byte 0x8048B0FC
+	.4byte 0x0000000C
+	.4byte 0x8048B110
+	.4byte 0x0000000C
+	.4byte 0x8048B120
+	.4byte 0x0000000C
+	.4byte 0x8055B1C0
+	.4byte 0x0000000C
+	.4byte 0x8048B134
+	.4byte 0x0000000C
+	.4byte 0x8048B150
+	.4byte 0x0000000C
+	.4byte 0x8048B168
+	.4byte 0x0000000C
+	.4byte 0x8048B184
+	.4byte 0x0000000C
+	.4byte 0x8048B198
+	.4byte 0x0000000C
+	.4byte 0x8048B1A8
+	.4byte 0x0000000C
+	.4byte 0x8048B1B8
+	.4byte 0x0000000C
+	.4byte 0x8048B1C8
+	.4byte 0x0000000C
+	.4byte 0x8048B1E0
+	.4byte 0x0000000C
+	.4byte 0x8048B1F4
+	.4byte 0x0000000C
+	.4byte 0x8048B204
+	.4byte 0x0000000C
+	.4byte 0x8048B218
+	.4byte 0x0000000C
+	.4byte 0x8048B228
+	.4byte 0x0000000C
+	.4byte 0x8048B238
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8048B24C
+	.4byte 0x0000000C
+	.4byte 0x8048B258
+	.4byte 0x0000000C
+	.4byte 0x8048B264
+	.4byte 0x0000000C
+	.4byte 0x8048B270
+	.4byte 0x0000000C
+	.4byte 0x8055B1C8
+	.4byte 0x0000000C
+	.4byte 0x8048B27C
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B088
+	.4byte 0x0000000C
+	.4byte 0x8055B1D0
+	.4byte 0x0000000C
+	.4byte 0x8055B1D8
+	.4byte 0x0000000C
+	.4byte 0x8048B288
+	.4byte 0x0000000C
+	.4byte 0x8055B1E0
+	.4byte 0x0000000C
+	.4byte 0x8048B294
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x486DA8, 0xC
+	.asciz "JumpStart"
+	.balign 4
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x486DB4, 0xC
+	.asciz "SquatStart"
+	.balign 4
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x486DC0, 0xC
+	.asciz "SquatEnd"
+	.balign 4
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x486DCC, 0x10
+	.asciz "SlidingStart"
+	.balign 4
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x486DDC, 0xC
+	.asciz "SlidingEnd"
+	.balign 4
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x486DE8, 0xC
+	.asciz "SlidingHit"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x486DF4, 0xC
+	.asciz "DamageEtc"
+	.balign 4
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x486E00, 0xC
+	.asciz "LadderUp"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x486E0C, 0xC
+	.asciz "LadderDown"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x486E18, 0x10
+	.asciz "PlancherStart"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x486E28, 0x10
+	.asciz "Plancher"
+	.balign 4
+	.4byte 0
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x486E38, 0x10
+	.asciz "PlancherLanding"
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x486E48, 0x10
+	.asciz "PlancherBound"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x486E58, 0xC
+	.asciz "SquashRoof"
+	.balign 4
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x486E64, 0xC
+	.asciz "SquashWall"
+	.balign 4
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x486E70, 0xC
+	.asciz "DeadFall"
+	.balign 4
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x486E7C, 0xC
+	.asciz "DyingWait"
+	.balign 4
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x486E88, 0xC
+	.asciz "GuardEnd"
+	.balign 4
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x486E94, 0xC
+	.asciz "HaveTwoHand"
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x486EA0, 0xC
+	.asciz "AirThrow"
+	.balign 4
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x486EAC, 0x18
+	.asciz "WarpStarDemoRideStart"
+	.balign 4
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x486EC4, 0x14
+	.asciz "WarpStarDemoRide"
+	.balign 4
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x486ED8, 0xC
+	.asciz "DanceAEL"
+	.balign 4
 .global $$248771
 $$248771:
-	.incbin "baserom.dol", 0x486EE4, 0xC
+	.asciz "DanceAER"
+	.balign 4
 .global $$248784
 $$248784:
-	.incbin "baserom.dol", 0x486EF0, 0xC
+	.asciz "FloatWait"
+	.balign 4
 .global $$248785
 $$248785:
-	.incbin "baserom.dol", 0x486EFC, 0xC
+	.asciz "FloatMove"
+	.balign 4
 .global $$248786
 $$248786:
-	.incbin "baserom.dol", 0x486F08, 0xC
+	.asciz "Piggyback"
+	.balign 4
 .global $$248789
 $$248789:
-	.incbin "baserom.dol", 0x486F14, 0xC
+	.asciz "ItemGetWait"
 .global $$248790
 $$248790:
-	.incbin "baserom.dol", 0x486F20, 0x14
+	.asciz "ItemGetWaitStart"
+	.balign 4
 .global $$248791
 $$248791:
-	.incbin "baserom.dol", 0x486F34, 0x10
+	.asciz "ItemGetWaitEnd"
+	.balign 4
 .global $$248792
 $$248792:
-	.incbin "baserom.dol", 0x486F44, 0xC
+	.asciz "CannonWait"
+	.balign 4
 .global $$248793
 $$248793:
-	.incbin "baserom.dol", 0x486F50, 0x10
+	.asciz "CannonWaitHide"
+	.balign 4
 .global $$248794
 $$248794:
-	.incbin "baserom.dol", 0x486F60, 0x10
+	.asciz "CannonWaitShow"
+	.balign 4
 .global $$248796
 $$248796:
-	.incbin "baserom.dol", 0x486F70, 0xC
+	.asciz "DangleMoveR"
 .global $$248797
 $$248797:
-	.incbin "baserom.dol", 0x486F7C, 0xC
+	.asciz "DangleMoveL"
 .global $$248798
 $$248798:
-	.incbin "baserom.dol", 0x486F88, 0x10
+	.asciz "CarryBombDanger"
 .global $$248799
 $$248799:
-	.incbin "baserom.dol", 0x486F98, 0xC
+	.asciz "Listening"
+	.balign 4
 .global $$248800
 $$248800:
-	.incbin "baserom.dol", 0x486FA4, 0x10
+	.asciz "WaitNoWeapon"
+	.balign 4
 .global $$248801
 $$248801:
-	.incbin "baserom.dol", 0x486FB4, 0x10
+	.asciz "VictoryStand"
+	.balign 4
 .global $$248802
 $$248802:
-	.incbin "baserom.dol", 0x486FC4, 0x14
+	.asciz "VictoryStandStart"
+	.balign 4
 .global $$248803
 $$248803:
-	.incbin "baserom.dol", 0x486FD8, 0x10
+	.asciz "VictoryStandCup"
 .global $$248804
 $$248804:
-	.incbin "baserom.dol", 0x486FE8, 0x18
+	.asciz "VictoryStandCupStart"
+	.balign 4
 .global $$248805
 $$248805:
-	.incbin "baserom.dol", 0x487000, 0xC
+	.asciz "Struggle"
+	.balign 4
 .global $$248807
 $$248807:
-	.incbin "baserom.dol", 0x48700C, 0xC
+	.asciz "LoseStart"
+	.balign 4
 .global $$248808
 $$248808:
-	.incbin "baserom.dol", 0x487018, 0x10
+	.asciz "Attack1Start"
+	.balign 4
 .global $$248810
 $$248810:
-	.incbin "baserom.dol", 0x487028, 0xC
+	.asciz "Attack1End"
+	.balign 4
 .global $$248812
 $$248812:
-	.incbin "baserom.dol", 0x487034, 0xC
+	.asciz "Attack2End"
+	.balign 4
 .global $$248814
 $$248814:
-	.incbin "baserom.dol", 0x487040, 0xC
+	.asciz "Attack3End"
+	.balign 4
 .global $$248815
 $$248815:
-	.incbin "baserom.dol", 0x48704C, 0xC
+	.asciz "AttackAir"
+	.balign 4
 .global $$248816
 $$248816:
-	.incbin "baserom.dol", 0x487058, 0x10
+	.asciz "AttackHiStart"
+	.balign 4
 .global $$248817
 $$248817:
-	.incbin "baserom.dol", 0x487068, 0xC
+	.asciz "AttackHi"
+	.balign 4
 .global $$248818
 $$248818:
-	.incbin "baserom.dol", 0x487074, 0xC
+	.asciz "AttackHiEnd"
 .global $$248819
 $$248819:
-	.incbin "baserom.dol", 0x487080, 0x10
+	.asciz "AttackSideStart"
 .global $$248820
 $$248820:
-	.incbin "baserom.dol", 0x487090, 0xC
+	.asciz "AttackSide"
+	.balign 4
 .global $$248821
 $$248821:
-	.incbin "baserom.dol", 0x48709C, 0x10
+	.asciz "AttackSideEnd"
+	.balign 4
 .global $$248822
 $$248822:
-	.incbin "baserom.dol", 0x4870AC, 0x10
+	.asciz "ChoppingStart"
+	.balign 4
 .global $$248823
 $$248823:
-	.incbin "baserom.dol", 0x4870BC, 0xC
+	.asciz "Chopping"
+	.balign 4
 .global $$248824
 $$248824:
-	.incbin "baserom.dol", 0x4870C8, 0xC
+	.asciz "FinelyCut"
+	.balign 4
 .global $$248825
 $$248825:
-	.incbin "baserom.dol", 0x4870D4, 0x10
+	.asciz "FinelyCutEnd"
+	.balign 4
 .global $$248826
 $$248826:
-	.incbin "baserom.dol", 0x4870E4, 0x14
+	.asciz "UnderThrustStart"
+	.balign 4
 .global $$248827
 $$248827:
-	.incbin "baserom.dol", 0x4870F8, 0xC
+	.asciz "UnderThrust"
 .global $$248828
 $$248828:
-	.incbin "baserom.dol", 0x487104, 0x10
+	.asciz "UnderThrustEnd"
+	.balign 4
 .global $$248829
 $$248829:
-	.incbin "baserom.dol", 0x487114, 0x10
+	.asciz "UnderThrustHit"
+	.balign 4
 .global $$248830
 $$248830:
-	.incbin "baserom.dol", 0x487124, 0x14
+	.asciz "UnderThrustLanding"
+	.balign 4
 .global $$248831
 $$248831:
-	.incbin "baserom.dol", 0x487138, 0x14
+	.asciz "TornadoAttackCharge"
 .global $$248832
 $$248832:
-	.incbin "baserom.dol", 0x48714C, 0x18
+	.asciz "TornadoAttackChargeMax"
+	.balign 4
 .global $$248833
 $$248833:
-	.incbin "baserom.dol", 0x487164, 0x14
+	.asciz "TornadoAttack"
+	.balign 4
+	.4byte 0
 .global $$248834
 $$248834:
-	.incbin "baserom.dol", 0x487178, 0x20
+	.asciz "TornadeAttackChargeAttack1Chain"
 .global $$248835
 $$248835:
-	.incbin "baserom.dol", 0x487198, 0x20
+	.asciz "TornadeAttackChargeAttack2Chain"
 .global $$248836
 $$248836:
-	.incbin "baserom.dol", 0x4871B8, 0x20
+	.asciz "TornadeAttackChargeAttack3Chain"
 .global $$248837
 $$248837:
-	.incbin "baserom.dol", 0x4871D8, 0x14
+	.asciz "WingCondorDiveStart"
 .global $$248838
 $$248838:
-	.incbin "baserom.dol", 0x4871EC, 0x10
+	.asciz "WingCondorDive"
+	.balign 4
 .global $$248839
 $$248839:
-	.incbin "baserom.dol", 0x4871FC, 0x14
+	.asciz "WingCondorDiveEnd"
+	.balign 4
 .global $$248840
 $$248840:
-	.incbin "baserom.dol", 0x487210, 0x10
+	.asciz "WingShuttleLoop"
 .global $$248841
 $$248841:
-	.incbin "baserom.dol", 0x487220, 0x14
+	.asciz "WingShuttleLoopEnd"
+	.balign 4
 .global $$248843
 $$248843:
-	.incbin "baserom.dol", 0x487234, 0x1C
+	.asciz "MetaCombinationAttackStart"
+	.balign 4
 .global $$248844
 $$248844:
-	.incbin "baserom.dol", 0x487250, 0x18
+	.asciz "MetaCombinationAttack"
+	.balign 4
 .global $$248845
 $$248845:
-	.incbin "baserom.dol", 0x487268, 0x1C
+	.asciz "MetaCombinationAttackEnd"
+	.balign 4
 .global $$248846
 $$248846:
-	.incbin "baserom.dol", 0x487284, 0x14
+	.asciz "LandiaFlightWait"
+	.balign 4
 .global $$248847
 $$248847:
-	.incbin "baserom.dol", 0x487298, 0x10
+	.asciz "LandiaDamage"
+	.balign 4
 .global $$248848
 $$248848:
-	.incbin "baserom.dol", 0x4872A8, 0x10
+	.asciz "LandiaDamageEtc"
 .global $$248849
 $$248849:
-	.incbin "baserom.dol", 0x4872B8, 0x10
+	.asciz "LandiaDeathFall"
 .global $$248850
 $$248850:
-	.incbin "baserom.dol", 0x4872C8, 0x18
+	.asciz "LandiaCannonChargeStart"
 .global $$248851
 $$248851:
-	.incbin "baserom.dol", 0x4872E0, 0x14
+	.asciz "LandiaCannonCharge"
+	.balign 4
 .global $$248852
 $$248852:
-	.incbin "baserom.dol", 0x4872F4, 0x10
+	.asciz "LandiaCannon"
+	.balign 4
 .global $$248853
 $$248853:
-	.incbin "baserom.dol", 0x487304, 0x14
+	.asciz "SpiralDragonStart"
+	.balign 4
 .global $$248854
 $$248854:
-	.incbin "baserom.dol", 0x487318, 0x10
+	.asciz "SpiralDragon"
+	.balign 4
 .global $$248855
 $$248855:
-	.incbin "baserom.dol", 0x487328, 0x10
+	.asciz "SpiralDragonEnd"
 .global $$248856
 $$248856:
-	.incbin "baserom.dol", 0x487338, 0x14
+	.asciz "SpiralDragonBack"
+	.balign 4
 .global $$248857
 $$248857:
-	.incbin "baserom.dol", 0x48734C, 0xC
+	.asciz "LookAround"
+	.balign 4
 .global $$248858
 $$248858:
-	.incbin "baserom.dol", 0x487358, 0xC
+	.asciz "LookAround2"
 .global $$248859
 $$248859:
-	.incbin "baserom.dol", 0x487364, 0xC
+	.asciz "LookAround3"
 .global $$248860
 $$248860:
-	.incbin "baserom.dol", 0x487370, 0xC
+	.asciz "LookUpStart"
 .global $$248862
 $$248862:
-	.incbin "baserom.dol", 0x48737C, 0xC
+	.asciz "LookUpEnd"
+	.balign 4
 .global $$248865
 $$248865:
-	.incbin "baserom.dol", 0x487388, 0xC
+	.asciz "TumbleStart"
 .global $$248867
 $$248867:
-	.incbin "baserom.dol", 0x487394, 0xC
+	.asciz "TumbleEnd"
+	.balign 4
 .global $$248879
 $$248879:
-	.incbin "baserom.dol", 0x4873A0, 0xC
+	.asciz "CA3BodyJ"
+	.balign 4
 .global $$248880
 $$248880:
-	.incbin "baserom.dol", 0x4873AC, 0xC
+	.asciz "Control2L"
+	.balign 4
 .global $$248881
 $$248881:
-	.incbin "baserom.dol", 0x4873B8, 0xC
+	.asciz "CA4FaceJ"
+	.balign 4
 .global $$248883
 $$248883:
-	.incbin "baserom.dol", 0x4873C4, 0xC
+	.asciz "LA3HandJ"
+	.balign 4
 .global $$248884
 $$248884:
-	.incbin "baserom.dol", 0x4873D0, 0x10
+	.asciz "LA1ShoulderJ"
+	.balign 4
 .global $$248885
 $$248885:
-	.incbin "baserom.dol", 0x4873E0, 0x10
+	.asciz "RA1ShoulderJ"
+	.balign 4
 .global $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc4MetaFv$$2NAMES$$20
 $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc4MetaFv$$2NAMES$$20:
-	.incbin "baserom.dol", 0x4873F0, 0x78
+	.4byte 0x8055B1E8
+	.4byte 0x8048B2A0
+	.4byte 0x8048B2AC
+	.4byte 0x8048B2B8
+	.4byte 0x8055B1F0
+	.4byte 0x8048B2C4
+	.4byte 0x8048B2B8
+	.4byte 0x8048B2B8
+	.4byte 0x8048B2D0
+	.4byte 0x8048B2E0
+	.4byte 0x8048B2B8
+	.4byte 0x8048B2A0
+	.4byte 0x8055B1F8
+	.4byte 0x8055B200
+	.4byte 0x8048B2AC
+	.4byte 0x8048B2B8
+	.4byte 0x8048B2B8
+	.4byte 0x8048B2C4
+	.4byte 0x8055B208
+	.4byte 0x8055B1F0
+	.4byte 0x8055B210
+	.4byte 0x8055B1E8
+	.4byte 0x8055B1E8
+	.4byte 0x8055B1E8
+	.4byte 0x8055B218
+	.4byte 0x8055B218
+	.4byte 0x8055B218
+	.4byte 0x8055B218
+	.4byte 0x8055B218
+	.4byte 0x8055B218
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x497468, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x497470, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x497478, 0x8
+	.asciz "Wait3"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x497480, 0x8
+	.asciz "Wait4"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x497488, 0x8
+	.asciz "Wait5"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x497490, 0x8
+	.asciz "Fall"
+	.balign 4
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x497498, 0x8
+	.asciz "Walk"
+	.balign 4
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x4974A0, 0x8
+	.asciz "Jump"
+	.balign 4
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x4974A8, 0x8
+	.asciz "JumpEnd"
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x4974B0, 0x8
+	.asciz "Landing"
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x4974B8, 0x8
+	.asciz "Squat"
+	.balign 4
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x4974C0, 0x8
+	.asciz "Sliding"
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x4974C8, 0x8
+	.asciz "Damage"
+	.balign 4
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x4974D0, 0x4
+	.4byte 0x52756E00
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x4974D4, 0x8
+	.asciz "Guard"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x4974DC, 0x8
+	.asciz "Throw"
+	.balign 4
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x4974E4, 0x4
+	.4byte 0x50757400
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x4974E8, 0x8
+	.asciz "DanceK1"
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x4974F0, 0x8
+	.asciz "DanceK2"
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x4974F8, 0x8
+	.asciz "DanceK3"
 .global $$248769
 $$248769:
-	.incbin "baserom.dol", 0x497500, 0x8
+	.asciz "DanceKE"
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x497508, 0x8
+	.asciz "DanceA1"
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x497510, 0x8
+	.asciz "DanceA2"
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x497518, 0x8
+	.asciz "DanceA3"
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x497520, 0x8
+	.asciz "DanceAE"
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x497528, 0x8
+	.asciz "DanceT1"
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x497530, 0x8
+	.asciz "DanceT2"
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x497538, 0x8
+	.asciz "DanceT3"
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x497540, 0x8
+	.asciz "DanceTE"
 .global $$248780
 $$248780:
-	.incbin "baserom.dol", 0x497548, 0x8
+	.asciz "Faint"
+	.balign 4
 .global $$248781
 $$248781:
-	.incbin "baserom.dol", 0x497550, 0x8
+	.asciz "WakeUp"
+	.balign 4
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x497558, 0x8
+	.asciz "Swim"
+	.balign 4
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x497560, 0x8
+	.asciz "Stroke"
+	.balign 4
 .global $$248787
 $$248787:
-	.incbin "baserom.dol", 0x497568, 0x8
+	.asciz "Flight"
+	.balign 4
 .global $$248788
 $$248788:
-	.incbin "baserom.dol", 0x497570, 0x8
+	.asciz "ItemGet"
 .global $$248795
 $$248795:
-	.incbin "baserom.dol", 0x497578, 0x8
+	.asciz "Dangle"
+	.balign 4
 .global $$248806
 $$248806:
-	.incbin "baserom.dol", 0x497580, 0x8
+	.asciz "Lose"
+	.balign 4
 .global $$248809
 $$248809:
-	.incbin "baserom.dol", 0x497588, 0x8
+	.asciz "Attack1"
 .global $$248811
 $$248811:
-	.incbin "baserom.dol", 0x497590, 0x8
+	.asciz "Attack2"
 .global $$248813
 $$248813:
-	.incbin "baserom.dol", 0x497598, 0x8
+	.asciz "Attack3"
 .global $$248842
 $$248842:
-	.incbin "baserom.dol", 0x4975A0, 0x8
+	.asciz "Glide"
+	.balign 4
 .global $$248861
 $$248861:
-	.incbin "baserom.dol", 0x4975A8, 0x8
+	.asciz "LookUp"
+	.balign 4
 .global $$248863
 $$248863:
-	.incbin "baserom.dol", 0x4975B0, 0x8
+	.asciz "WonderR"
 .global $$248864
 $$248864:
-	.incbin "baserom.dol", 0x4975B8, 0x8
+	.asciz "WonderL"
 .global $$248866
 $$248866:
-	.incbin "baserom.dol", 0x4975C0, 0x8
+	.asciz "Tumble"
+	.balign 4
 .global $$248878
 $$248878:
-	.incbin "baserom.dol", 0x4975C8, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248882
 $$248882:
-	.incbin "baserom.dol", 0x4975D0, 0x8
+	.asciz "RHaveL"
+	.balign 4
 .global $$248886
 $$248886:
-	.incbin "baserom.dol", 0x4975D8, 0x8
+	.asciz "CA1HipJ"
 .global $$248887
 $$248887:
-	.incbin "baserom.dol", 0x4975E0, 0x8
+	.asciz "Rot1L"
+	.balign 4
 .global $$248888
 $$248888:
-	.incbin "baserom.dol", 0x4975E8, 0x8
+	.asciz "SwordM"
+	.balign 4
 .global $$248889
 $$248889:
-	.incbin "baserom.dol", 0x4975F0, 0x8
+	.asciz "LoadL"
+	.balign 4
 .global $$248890
 $$248890:
-	.incbin "baserom.dol", 0x4975F8, 0x8
+	.asciz "BodyM"
+	.balign 4
 .global $$248980
 $$248980:
-	.incbin "baserom.dol", 0x497600, 0x8
+	.asciz "Meta"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2d

@@ -444,115 +444,215 @@ lbl_8039B290:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21:
-	.incbin "baserom.dol", 0x41BC00, 0xC8
+	.4byte 0x8048B794
+	.4byte 0
+	.4byte 0x8048B7A8
+	.4byte 0
+	.4byte 0x8048B7BC
+	.4byte 0
+	.4byte 0x8048B7D0
+	.4byte 0
+	.4byte 0x8048B7E0
+	.4byte 0
+	.4byte 0x8048B7F8
+	.4byte 0
+	.4byte 0x8048B810
+	.4byte 0
+	.4byte 0x8048B828
+	.4byte 0
+	.4byte 0x8048B83C
+	.4byte 0
+	.4byte 0x8048B848
+	.4byte 0
+	.4byte 0x8048B858
+	.4byte 0
+	.4byte 0x8048B86C
+	.4byte 0
+	.4byte 0x8048B87C
+	.4byte 0
+	.4byte 0x8048B890
+	.4byte 0
+	.4byte 0x8048B8A4
+	.4byte 0
+	.4byte 0x8048B8B4
+	.4byte 0
+	.4byte 0x8048B8C8
+	.4byte 0
+	.4byte 0x8048B8D8
+	.4byte 0
+	.4byte 0x8048B8E8
+	.4byte 0
+	.4byte 0x8048B8F8
+	.4byte 0
+	.4byte 0x8048B908
+	.4byte 0
+	.4byte 0x8048B91C
+	.4byte 0
+	.4byte 0x8048B928
+	.4byte 0
+	.4byte 0x8048B938
+	.4byte 0
+	.4byte 0x8048B948
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249847
 $$249847:
-	.incbin "baserom.dol", 0x487858, 0x1C
+	.asciz "step/hero/modeldesc/Wing"
+	.balign 4
 .global $$249864
 $$249864:
-	.incbin "baserom.dol", 0x487874, 0x20
+	.asciz "step/chara/hero/kirby/wing/Hat"
+	.balign 4
 .global $$249539
 $$249539:
-	.incbin "baserom.dol", 0x487894, 0x14
+	.asciz "WingFeatheGunStart"
+	.balign 4
 .global $$249540
 $$249540:
-	.incbin "baserom.dol", 0x4878A8, 0x14
+	.asciz "WingFeatheGunLoop"
+	.balign 4
 .global $$249541
 $$249541:
-	.incbin "baserom.dol", 0x4878BC, 0x14
+	.asciz "WingFeatheGunWait"
+	.balign 4
 .global $$249542
 $$249542:
-	.incbin "baserom.dol", 0x4878D0, 0x10
+	.asciz "WingFeatheGun"
+	.balign 4
 .global $$249543
 $$249543:
-	.incbin "baserom.dol", 0x4878E0, 0x18
+	.asciz "WingFeatheGunAirStart"
+	.balign 4
 .global $$249544
 $$249544:
-	.incbin "baserom.dol", 0x4878F8, 0x18
+	.asciz "WingFeatheGunAirLoop"
+	.balign 4
 .global $$249545
 $$249545:
-	.incbin "baserom.dol", 0x487910, 0x18
+	.asciz "WingFeatheGunAirWait"
+	.balign 4
 .global $$249546
 $$249546:
-	.incbin "baserom.dol", 0x487928, 0x14
+	.asciz "WingFeatheGunAir"
+	.balign 4
 .global $$249547
 $$249547:
-	.incbin "baserom.dol", 0x48793C, 0xC
+	.asciz "WingFlight"
+	.balign 4
 .global $$249548
 $$249548:
-	.incbin "baserom.dol", 0x487948, 0x10
+	.asciz "WingFlightFall"
+	.balign 4
 .global $$249549
 $$249549:
-	.incbin "baserom.dol", 0x487958, 0x14
+	.asciz "WingBigBangAirStart"
 .global $$249550
 $$249550:
-	.incbin "baserom.dol", 0x48796C, 0x10
+	.asciz "WingBigBangAir"
+	.balign 4
 .global $$249551
 $$249551:
-	.incbin "baserom.dol", 0x48797C, 0x14
+	.asciz "WingBigBangAirEnd"
+	.balign 4
 .global $$249552
 $$249552:
-	.incbin "baserom.dol", 0x487990, 0x14
+	.asciz "WingCondorDiveStart"
 .global $$249553
 $$249553:
-	.incbin "baserom.dol", 0x4879A4, 0x10
+	.asciz "WingCondorDive"
+	.balign 4
 .global $$249554
 $$249554:
-	.incbin "baserom.dol", 0x4879B4, 0x14
+	.asciz "WingCondorDiveEnd"
+	.balign 4
 .global $$249555
 $$249555:
-	.incbin "baserom.dol", 0x4879C8, 0x10
+	.asciz "WingTossStart"
+	.balign 4
 .global $$249556
 $$249556:
-	.incbin "baserom.dol", 0x4879D8, 0x10
+	.asciz "WingTossJump"
+	.balign 4
 .global $$249557
 $$249557:
-	.incbin "baserom.dol", 0x4879E8, 0x10
+	.asciz "WingTossEnd"
+	.4byte 0
 .global $$249558
 $$249558:
-	.incbin "baserom.dol", 0x4879F8, 0x10
+	.asciz "WingShuttleLoop"
 .global $$249559
 $$249559:
-	.incbin "baserom.dol", 0x487A08, 0x14
+	.asciz "WingShuttleLoopEnd"
+	.balign 4
 .global $$249560
 $$249560:
-	.incbin "baserom.dol", 0x487A1C, 0xC
+	.asciz "WingDash"
+	.balign 4
 .global $$249561
 $$249561:
-	.incbin "baserom.dol", 0x487A28, 0x10
+	.asciz "WingAirDash"
+	.4byte 0
 .global $$249562
 $$249562:
-	.incbin "baserom.dol", 0x487A38, 0x10
+	.asciz "WingDashEndWall"
 .global $$249563
 $$249563:
-	.incbin "baserom.dol", 0x487A48, 0x10
+	.asciz "WingReset"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256289
 $$256289:
-	.incbin "baserom.dol", 0x48A250, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$256290
 $$256290:
-	.incbin "baserom.dol", 0x48A270, 0x24
+	.asciz "step/chara/hero/kirby/wing/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero4wing4Wing
 __vt__Q53scn4step4hero4wing4Wing:
-	.incbin "baserom.dol", 0x48A294, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039B018
+	.4byte 0x8039B0A4
+	.4byte 0x8032B7A0
+	.4byte 0x8039B1E0
+	.4byte 0x8032B7A8
+	.4byte 0x8039B1E8
+	.4byte 0x8032B7B0
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8032B7DC
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249532
 $$249532:
-	.incbin "baserom.dol", 0x4976F0, 0x8
+	.asciz "AllJ"
+	.balign 4
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc4WingFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc4WingFv$$2names$$21:
-	.incbin "baserom.dol", 0x4976F8, 0x4
+	.4byte 0x8055B310
 .global $$249870
 $$249870:
-	.incbin "baserom.dol", 0x4976FC, 0x8
+	.asciz "LBDJ"
+	.balign 4
 .global $$249901
 $$249901:
-	.incbin "baserom.dol", 0x497704, 0xC
+	.asciz "RBDJ"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc4WingFv$$2desc

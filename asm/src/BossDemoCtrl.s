@@ -67,4 +67,5 @@ setSignal__Q43scn4step4hero12BossDemoCtrlFQ43scn4step4hero18BossDemoSignalKind:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248846
 $$248846:
-	.incbin "baserom.dol", 0x49D650, 0x8
+	.4byte 0
+	.4byte 0

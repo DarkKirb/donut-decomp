@@ -177,12 +177,14 @@ lbl_8004D974:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2669
 $$2669:
-	.incbin "baserom.dol", 0x434550, 0x48
+	.asciz "<< RVL_SDK - ENC \trelease build: Aug 23 2010 17:34:07 (0x4302_145) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __ENCVersion
 __ENCVersion:
-	.incbin "baserom.dol", 0x492B78, 0x8
+	.4byte 0x80438450
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global encRegistered

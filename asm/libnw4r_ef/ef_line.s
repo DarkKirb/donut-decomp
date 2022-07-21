@@ -222,27 +222,33 @@ lbl_800B51D8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef15EmitterFormLine
 __vt__Q34nw4r2ef15EmitterFormLine:
-	.incbin "baserom.dol", 0x43C488, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800B4F00  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27653
 $$27653:
-	.incbin "baserom.dol", 0x4996A0, 0x4
+	.4byte 0x47800000
 .global $$27654
 $$27654:
-	.incbin "baserom.dol", 0x4996A4, 0x4
+	.4byte 0
 .global $$27655
 $$27655:
-	.incbin "baserom.dol", 0x4996A8, 0x4
+	.4byte 0x3F000000
 .global $$27656
 $$27656:
-	.incbin "baserom.dol", 0x4996AC, 0x4
+	.4byte 0x3F800000
 .global $$27657
 $$27657:
-	.incbin "baserom.dol", 0x4996B0, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0
 .global $$27665
 $$27665:
-	.incbin "baserom.dol", 0x4996B8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$27666
 $$27666:
-	.incbin "baserom.dol", 0x4996C0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

@@ -823,13 +823,14 @@ lbl_801367CC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$27898
 $$27898:
-	.incbin "baserom.dol", 0x40A2E0, 0x4
+	.4byte 0
 .global $$27899
 $$27899:
-	.incbin "baserom.dol", 0x40A2E4, 0x4
+	.4byte 0x3F800000
 .global $$28392
 $$28392:
-	.incbin "baserom.dol", 0x40A2E8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2SetSize__Q46nw4hbm3lyt6detail11TexCoordAryFUc$$2texCoords

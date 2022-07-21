@@ -18,36 +18,46 @@ LytResPathPage__Q25pause8ConstantFQ25pause11PageResKind:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PAGE_RES_PATH__Q25pause22$$2unnamed$$2Constant_cpp$$2
 T_PAGE_RES_PATH__Q25pause22$$2unnamed$$2Constant_cpp$$2:
-	.incbin "baserom.dol", 0x411168, 0x18
+	.4byte 0x8045D470
+	.4byte 0x8045D484
+	.4byte 0x8045D484
+	.4byte 0x8045D484
+	.4byte 0x8045D484
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248724
 $$248724:
-	.incbin "baserom.dol", 0x459570, 0x14
+	.asciz "pause/PageDropout"
+	.balign 4
 .global $$248725
 $$248725:
-	.incbin "baserom.dol", 0x459584, 0x14
+	.asciz "pause/PageCommand"
+	.balign 4
 .global $$248784
 $$248784:
-	.incbin "baserom.dol", 0x459598, 0x10
+	.asciz "pause/Main"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global ERROR_BG_COLOR__Q23app8Constant
 ERROR_BG_COLOR__Q23app8Constant:
-	.incbin "baserom.dol", 0x49A0E0, 0x4
+	.4byte 0xFFE0E0FF
 .global ERROR_FONT_COLOR__Q23app8Constant
 ERROR_FONT_COLOR__Q23app8Constant:
-	.incbin "baserom.dol", 0x49A0E4, 0x4
+	.4byte 0xE08080FF
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global LIFE_BAR_LENGTH_MAIN__Q43scn4step4hero8Constant
 LIFE_BAR_LENGTH_MAIN__Q43scn4step4hero8Constant:
-	.incbin "baserom.dol", 0x49D6C0, 0x4
+	.4byte 0x3F800000
 .global LIFE_BAR_LENGTH_EXTRA__Q43scn4step4hero8Constant
 LIFE_BAR_LENGTH_EXTRA__Q43scn4step4hero8Constant:
-	.incbin "baserom.dol", 0x49D6C4, 0x4
+	.4byte 0x3F19999A
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global ONE_GRID_SIZE_ON_MAPRO_POS__Q43scn4step3map8Constant
 ONE_GRID_SIZE_ON_MAPRO_POS__Q43scn4step3map8Constant:
-	.incbin "baserom.dol", 0x49E660, 0x8
+	.4byte 0x41800000
+	.4byte 0

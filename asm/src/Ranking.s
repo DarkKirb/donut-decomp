@@ -694,63 +694,83 @@ lbl_803BF41C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253816
 $$253816:
-	.incbin "baserom.dol", 0x48DA20, 0x14
+	.asciz "RankingWindowBase"
+	.balign 4
 .global $$253818
 $$253818:
-	.incbin "baserom.dol", 0x48DA34, 0x1C
+	.asciz "step/challenge/Challenge"
+	.balign 4
 .global $$254052
 $$254052:
-	.incbin "baserom.dol", 0x48DA50, 0x14
+	.asciz "RankingWindowMaster"
 .global $$254053
 $$254053:
-	.incbin "baserom.dol", 0x48DA64, 0x14
+	.asciz "RankingWindowMusou"
+	.balign 4
 .global $$254054
 $$254054:
-	.incbin "baserom.dol", 0x48DA78, 0x18
+	.asciz "RankingWindowChallenge"
+	.balign 4
 .global $$254055
 $$254055:
-	.incbin "baserom.dol", 0x48DA90, 0x10
+	.asciz "WindowPictureN"
+	.balign 4
 .global $$254058
 $$254058:
-	.incbin "baserom.dol", 0x48DAA0, 0xC
+	.asciz "Plate%dN"
+	.balign 4
 .global $$254061
 $$254061:
-	.incbin "baserom.dol", 0x48DAAC, 0x10
+	.asciz "ExplainRanking"
+	.balign 4
 .global $$254062
 $$254062:
-	.incbin "baserom.dol", 0x48DABC, 0x10
+	.asciz "RankingShadow"
+	.balign 4
 .global $$254064
 $$254064:
-	.incbin "baserom.dol", 0x48DACC, 0x44
+	.asciz "ExplainRankingMsg"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253815
 $$253815:
-	.incbin "baserom.dol", 0x498048, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$253817
 $$253817:
-	.incbin "baserom.dol", 0x498050, 0x8
+	.asciz "BackN"
+	.balign 4
 .global $$253819
 $$253819:
-	.incbin "baserom.dol", 0x498058, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$254051
 $$254051:
-	.incbin "baserom.dol", 0x498060, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$254056
 $$254056:
-	.incbin "baserom.dol", 0x498068, 0x8
+	.asciz "BGStarN"
 .global $$254057
 $$254057:
-	.incbin "baserom.dol", 0x498070, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254059
 $$254059:
-	.incbin "baserom.dol", 0x498078, 0x8
+	.asciz "MedalN"
+	.balign 4
 .global $$254060
 $$254060:
-	.incbin "baserom.dol", 0x498080, 0x8
+	.asciz "Ranking"
 .global $$254063
 $$254063:
-	.incbin "baserom.dol", 0x498088, 0x8
+	.asciz "Explain"
 .global $$254118
 $$254118:
-	.incbin "baserom.dol", 0x498090, 0x8
+	.asciz "Close"
+	.balign 4

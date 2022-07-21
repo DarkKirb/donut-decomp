@@ -1061,68 +1061,82 @@ lbl_803B3484:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257163
 $$257163:
-	.incbin "baserom.dol", 0x48C520, 0x14
+	.asciz "step/challenge/Main"
 .global $$257164
 $$257164:
-	.incbin "baserom.dol", 0x48C534, 0x10
+	.asciz "ScreenOutBase"
+	.balign 4
 .global $$257165
 $$257165:
-	.incbin "baserom.dol", 0x48C544, 0x10
+	.asciz "ScreenOutGhost"
+	.balign 4
 .global $$257166
 $$257166:
-	.incbin "baserom.dol", 0x48C554, 0x10
+	.asciz "ScreenOutArrow"
+	.balign 4
 .global $$257167
 $$257167:
-	.incbin "baserom.dol", 0x48C564, 0x14
+	.asciz "ScreenOutIconN"
+	.balign 4
+	.4byte 0
 .global $$257168
 $$257168:
-	.incbin "baserom.dol", 0x48C578, 0x10
+	.asciz "ScreenOutArrowN"
 .global $$257170
 $$257170:
-	.incbin "baserom.dol", 0x48C588, 0x10
+	.asciz "MahoroaArrowN"
+	.balign 4
 .global $$257171
 $$257171:
-	.incbin "baserom.dol", 0x48C598, 0xC
+	.asciz "IconLimitLU"
 .global $$257172
 $$257172:
-	.incbin "baserom.dol", 0x48C5A4, 0xC
+	.asciz "IconLimitRD"
 .global $$257173
 $$257173:
-	.incbin "baserom.dol", 0x48C5B0, 0x10
+	.asciz "MasterLimitLU"
+	.balign 4
 .global $$257174
 $$257174:
-	.incbin "baserom.dol", 0x48C5C0, 0x40
+	.asciz "MasterLimitRD"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257169
 $$257169:
-	.incbin "baserom.dol", 0x497B80, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$257325
 $$257325:
-	.incbin "baserom.dol", 0x497B88, 0x8
+	.asciz "ScaleN"
+	.balign 4
 .global $$257333
 $$257333:
-	.incbin "baserom.dol", 0x497B90, 0x4
+	.4byte 0x496E0000
 .global $$257340
 $$257340:
-	.incbin "baserom.dol", 0x497B94, 0x4
+	.4byte 0x4F757400
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257175
 $$257175:
-	.incbin "baserom.dol", 0x49E460, 0x4
+	.4byte 0x41200000
 .global $$257267
 $$257267:
-	.incbin "baserom.dol", 0x49E464, 0x4
+	.4byte 0x3727C5AC
 .global $$257268
 $$257268:
-	.incbin "baserom.dol", 0x49E468, 0x4
+	.4byte 0
 .global $$257269
 $$257269:
-	.incbin "baserom.dol", 0x49E46C, 0x4
+	.4byte 0x3F800000
 .global $$257326
 $$257326:
-	.incbin "baserom.dol", 0x49E470, 0x4
+	.4byte 0x3CC90FDB
 .global $$257327
 $$257327:
-	.incbin "baserom.dol", 0x49E474, 0x4
+	.4byte 0x42652EE1

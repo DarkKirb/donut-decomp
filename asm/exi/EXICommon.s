@@ -114,4 +114,5 @@ lbl_8002A39C:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __EXIFreq
 __EXIFreq:
-	.incbin "baserom.dol", 0x499068, 0x8
+	.4byte 0x00000004
+	.4byte 0

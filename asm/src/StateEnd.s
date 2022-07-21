@@ -145,15 +145,25 @@ procFixPos__Q53scn4step4hero5stone8StateEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5stone8StateEnd
 __vt__Q53scn4step4hero5stone8StateEnd:
-	.incbin "baserom.dol", 0x489AF0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039021C
+	.4byte 0x803902A8
+	.4byte 0x803902AC
+	.4byte 0x8035550C
+	.4byte 0x803902B0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256284
 $$256284:
-	.incbin "baserom.dol", 0x49E110, 0x4
+	.4byte 0x3727C5AC
 .global $$256285
 $$256285:
-	.incbin "baserom.dol", 0x49E114, 0x4
+	.4byte 0xB727C5AC
 .global $$256286
 $$256286:
-	.incbin "baserom.dol", 0x49E118, 0x8
+	.4byte 0
+	.4byte 0

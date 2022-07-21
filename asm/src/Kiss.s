@@ -1170,23 +1170,28 @@ lbl_80344378:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1
 __vt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1:
-	.incbin "baserom.dol", 0x480EA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80344328
+	.4byte 0x80344268
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256609
 $$256609:
-	.incbin "baserom.dol", 0x496DD8, 0x1
+	.byte 0x00
 .global $$256610
 $$256610:
-	.incbin "baserom.dol", 0x496DD9, 0x7
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258801
 $$258801:
-	.incbin "baserom.dol", 0x49D788, 0x4
+	.4byte 0x3FC00000
 .global $$258802
 $$258802:
-	.incbin "baserom.dol", 0x49D78C, 0x4
+	.4byte 0
 .global $$258803
 $$258803:
-	.incbin "baserom.dol", 0x49D790, 0x8
+	.4byte 0x3F000000
+	.4byte 0

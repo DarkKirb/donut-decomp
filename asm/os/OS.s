@@ -1523,122 +1523,164 @@ lbl_8001B794:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x41DED8, 0x48
+	.asciz "<< RVL_SDK - OS \trelease build: Aug 23 2010 17:33:06 (0x4302_145) >>"
+	.balign 4
 .global $$21776
 $$21776:
-	.incbin "baserom.dol", 0x41DF20, 0x10
+	.asciz "\nRevolution OS\n"
 .global $$21777
 $$21777:
-	.incbin "baserom.dol", 0x41DF30, 0x18
+	.asciz "Kernel built : %s %s\n"
+	.balign 4
 .global $$21778
 $$21778:
-	.incbin "baserom.dol", 0x41DF48, 0xC
+	.asciz "Aug 23 2010"
 .global $$21779
 $$21779:
-	.incbin "baserom.dol", 0x41DF54, 0xC
+	.asciz "17:33:06"
+	.balign 4
 .global $$21780
 $$21780:
-	.incbin "baserom.dol", 0x41DF60, 0x10
+	.asciz "Console Type : "
 .global $$21781
 $$21781:
-	.incbin "baserom.dol", 0x41DF70, 0x18
+	.asciz "Pre-production board 1\n"
 .global $$21782
 $$21782:
-	.incbin "baserom.dol", 0x41DF88, 0x1C
+	.asciz "Pre-production board 2-1\n"
+	.balign 4
 .global $$21783
 $$21783:
-	.incbin "baserom.dol", 0x41DFA4, 0x1C
+	.asciz "Pre-production board 2-2\n"
+	.balign 4
 .global $$21785
 $$21785:
-	.incbin "baserom.dol", 0x41DFC0, 0xC
+	.asciz "Retail %d\n"
+	.balign 4
 .global $$21786
 $$21786:
-	.incbin "baserom.dol", 0x41DFCC, 0xC
+	.asciz "NDEV 2.1\n"
+	.balign 4
 .global $$21787
 $$21787:
-	.incbin "baserom.dol", 0x41DFD8, 0xC
+	.asciz "NDEV 2.0\n"
+	.balign 4
 .global $$21788
 $$21788:
-	.incbin "baserom.dol", 0x41DFE4, 0xC
+	.asciz "NDEV 1.2\n"
+	.balign 4
 .global $$21789
 $$21789:
-	.incbin "baserom.dol", 0x41DFF0, 0xC
+	.asciz "NDEV 1.1\n"
+	.balign 4
 .global $$21790
 $$21790:
-	.incbin "baserom.dol", 0x41DFFC, 0xC
+	.asciz "NDEV 1.0\n"
+	.balign 4
 .global $$21791
 $$21791:
-	.incbin "baserom.dol", 0x41E008, 0x18
+	.asciz "Revolution Emulator\n"
+	.balign 4
 .global $$21792
 $$21792:
-	.incbin "baserom.dol", 0x41E020, 0x1C
+	.asciz "Emulation platform (%08x)\n"
+	.balign 4
 .global $$21793
 $$21793:
-	.incbin "baserom.dol", 0x41E03C, 0x1C
+	.asciz "TDEV-based emulation HW%d\n"
+	.balign 4
 .global $$21795
 $$21795:
-	.incbin "baserom.dol", 0x41E058, 0x1C
+	.asciz "Firmware     : %d.%d.%d "
+	.balign 4
 .global $$21796
 $$21796:
-	.incbin "baserom.dol", 0x41E074, 0xC
+	.asciz "(%d/%d/%d)\n"
 .global $$21797
 $$21797:
-	.incbin "baserom.dol", 0x41E080, 0x10
+	.asciz "Memory %d MB\n"
+	.balign 4
 .global $$21798
 $$21798:
-	.incbin "baserom.dol", 0x41E090, 0x1C
+	.asciz "MEM1 Arena : 0x%x - 0x%x\n"
+	.balign 4
 .global $$21799
 $$21799:
-	.incbin "baserom.dol", 0x41E0AC, 0x1C
+	.asciz "MEM2 Arena : 0x%x - 0x%x\n"
+	.balign 4
 .global $$21848
 $$21848:
-	.incbin "baserom.dol", 0x41E0C8, 0x50
+	.asciz "OS ERROR: boot program is not for RVL target. Please use correct boot program.\n"
 .global $$21850
 $$21850:
-	.incbin "baserom.dol", 0x41E118, 0x18
+	.asciz "Failed to run app"
+	.balign 4
+	.4byte 0
 .global $$21851
 $$21851:
-	.incbin "baserom.dol", 0x41E130, 0x58
+	.asciz "OS ERROR: apploader[D].img is not for RVL target. Please use correct apploader[D].img.\n"
 .global $$21852
 $$21852:
-	.incbin "baserom.dol", 0x41E188, 0x60
+	.asciz "OS ERROR: This firmware is an improper version for this SDK. Please use a correct Firmware.\n"
+	.balign 4
 .global $$21853
 $$21853:
-	.incbin "baserom.dol", 0x41E1E8, 0xC0
+	.asciz "\n\nERROR #002\nAn error has occurred.\nPress the Eject Button, remove the\nGame Disc, and turn off the power to \nthe console. \nPlease read the Wii Operations Manual \nfor further instructions.\n"
+	.balign 4
 .global __OSExceptionLocations
 __OSExceptionLocations:
-	.incbin "baserom.dol", 0x41E2A8, 0x40
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000300
+	.4byte 0x00000400
+	.4byte 0x00000500
+	.4byte 0x00000600
+	.4byte 0x00000700
+	.4byte 0x00000800
+	.4byte 0x00000900
+	.4byte 0x00000C00
+	.4byte 0x00000D00
+	.4byte 0x00000F00
+	.4byte 0x00001300
+	.4byte 0x00001400
+	.4byte 0x00001700
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSVersion
 __OSVersion:
-	.incbin "baserom.dol", 0x492868, 0x4
+	.4byte 0x80421DD8
 .global $$21784
 $$21784:
-	.incbin "baserom.dol", 0x49286C, 0x8
+	.asciz "RVA 1\n"
+	.balign 4
 .global $$21794
 $$21794:
-	.incbin "baserom.dol", 0x492874, 0x8
+	.asciz "%08x\n"
+	.balign 4
 .global $$21847
 $$21847:
-	.incbin "baserom.dol", 0x49287C, 0x4
+	.4byte 0x25730A00
 .global $$21849
 $$21849:
-	.incbin "baserom.dol", 0x492880, 0x8
+	.asciz "OS.c"
+	.balign 4
 .global $$21187
 $$21187:
-	.incbin "baserom.dol", 0x492888, 0x8
+	.asciz "HAEA"
+	.balign 4
 .global AppGameNameForSysMenu
 AppGameNameForSysMenu:
-	.incbin "baserom.dol", 0x492890, 0x8
+	.4byte 0x805564A8
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21010
 $$21010:
-	.incbin "baserom.dol", 0x499008, 0x4
+	.4byte 0x0000FF00
 .global $$21012
 $$21012:
-	.incbin "baserom.dol", 0x49900C, 0x4
+	.4byte 0xFFFFFF00
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __OSRebootParams

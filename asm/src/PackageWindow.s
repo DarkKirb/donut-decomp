@@ -2043,154 +2043,233 @@ __sinit_$$3PackageWindow_cpp:
 /* 80219EA8 00215CE8  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402468, 0x4
+	.4byte 0x80219E54  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255641
 $$255641:
-	.incbin "baserom.dol", 0x45ECE0, 0x20
+	.asciz "history/detail/PackageWindow"
+	.balign 4
 .global $$255642
 $$255642:
-	.incbin "baserom.dol", 0x45ED00, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$255643
 $$255643:
-	.incbin "baserom.dol", 0x45ED10, 0x10
+	.asciz "PackageWindow"
+	.balign 4
 .global $$255644
 $$255644:
-	.incbin "baserom.dol", 0x45ED20, 0xC
+	.asciz "WiiButtonN"
+	.balign 4
 .global $$255645
 $$255645:
-	.incbin "baserom.dol", 0x45ED2C, 0xC
+	.asciz "common/Back"
 .global $$255646
 $$255646:
-	.incbin "baserom.dol", 0x45ED38, 0xC
+	.asciz "Rotation"
+	.balign 4
 .global $$255647
 $$255647:
-	.incbin "baserom.dol", 0x45ED44, 0xC
+	.asciz "Button1N"
+	.balign 4
 .global $$255650
 $$255650:
-	.incbin "baserom.dol", 0x45ED50, 0xC
+	.asciz "Button2N"
+	.balign 4
 .global $$255652
 $$255652:
-	.incbin "baserom.dol", 0x45ED5C, 0x10
+	.asciz "CrossButtonN"
+	.balign 4
 .global $$255653
 $$255653:
-	.incbin "baserom.dol", 0x45ED6C, 0x10
+	.asciz "ResetButtonN"
+	.balign 4
 .global $$255655
 $$255655:
-	.incbin "baserom.dol", 0x45ED7C, 0xC
+	.asciz "BackText"
+	.balign 4
 .global $$255657
 $$255657:
-	.incbin "baserom.dol", 0x45ED88, 0xC
+	.asciz "RotateReset"
 .global $$255831
 $$255831:
-	.incbin "baserom.dol", 0x45ED94, 0xC
+	.asciz "PackageN"
+	.balign 4
 .global $$256044
 $$256044:
-	.incbin "baserom.dol", 0x45EDA0, 0x10
+	.asciz "history/%s/%s"
+	.balign 4
 .global $$256102
 $$256102:
-	.incbin "baserom.dol", 0x45EDB0, 0x78
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219DB0  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DBC  ;# ptr
+	.4byte 0x80219DBC  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219DBC  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219DBC  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DC8  ;# ptr
+	.4byte 0x80219DA4  ;# ptr
+	.4byte 0x80219DD4  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DE0  ;# ptr
+	.4byte 0x80219DD4  ;# ptr
+	.4byte 0x80219DEC  ;# ptr
+	.4byte 0x80219DEC  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DEC  ;# ptr
+	.4byte 0x80219E04  ;# ptr
+	.4byte 0x80219DF8  ;# ptr
+	.4byte 0x80219DEC  ;# ptr
+	.4byte 0x80219DF8  ;# ptr
+	.4byte 0x80219DF8  ;# ptr
+	.4byte 0
 .global __vt__Q43scn7history6detail13PackageWindow
 __vt__Q43scn7history6detail13PackageWindow:
-	.incbin "baserom.dol", 0x45EE28, 0xA0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802187C8  ;# ptr
+	.4byte 0x80218A70  ;# ptr
+	.4byte 0x800E9D20  ;# ptr
+	.4byte 0x800E9D30  ;# ptr
+	.4byte 0x800EC990  ;# ptr
+	.4byte 0x800EC9A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255648
 $$255648:
-	.incbin "baserom.dol", 0x494E60, 0x8
+	.asciz "Reset"
+	.balign 4
 .global $$255649
 $$255649:
-	.incbin "baserom.dol", 0x494E68, 0x8
+	.asciz "Zoom"
+	.balign 4
 .global $$255654
 $$255654:
-	.incbin "baserom.dol", 0x494E70, 0x8
+	.asciz "ZoomN"
+	.balign 4
 .global $$255656
 $$255656:
-	.incbin "baserom.dol", 0x494E78, 0x8
+	.asciz "Rotate"
+	.balign 4
 .global $$255658
 $$255658:
-	.incbin "baserom.dol", 0x494E80, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$255788
 $$255788:
-	.incbin "baserom.dol", 0x494E88, 0x8
+	.asciz "BoxM"
+	.balign 4
 .global $$252738
 $$252738:
-	.incbin "baserom.dol", 0x494E90, 0x4
+	.4byte 0x3A83126F
 .global $$255827
 $$255827:
-	.incbin "baserom.dol", 0x494E94, 0x8
+	.asciz "PlusN"
+	.balign 4
 .global $$255828
 $$255828:
-	.incbin "baserom.dol", 0x494E9C, 0x8
+	.asciz "MinusN"
+	.balign 4
 .global $$255829
 $$255829:
-	.incbin "baserom.dol", 0x494EA4, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$255830
 $$255830:
-	.incbin "baserom.dol", 0x494EAC, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$255832
 $$255832:
-	.incbin "baserom.dol", 0x494EB4, 0x8
+	.asciz "ScaleL"
+	.balign 4
 .global $$252838
 $$252838:
-	.incbin "baserom.dol", 0x494EBC, 0x4
+	.4byte 0x3A83126F
 .global $$253200
 $$253200:
-	.incbin "baserom.dol", 0x494EC0, 0x4
+	.4byte 0x3A83126F
 .global $$256045
 $$256045:
-	.incbin "baserom.dol", 0x494EC4, 0xC
+	.asciz "Model"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255615
 $$255615:
-	.incbin "baserom.dol", 0x49ACE8, 0x4
+	.4byte 0xFFFFFFFF
 .global $$255651
 $$255651:
-	.incbin "baserom.dol", 0x49ACEC, 0x4
+	.4byte 0x3F800000
 .global $$255659
 $$255659:
-	.incbin "baserom.dol", 0x49ACF0, 0x4
+	.4byte 0
 .global $$255660
 $$255660:
-	.incbin "baserom.dol", 0x49ACF4, 0x4
+	.4byte 0x41F00000
 .global $$255661
 $$255661:
-	.incbin "baserom.dol", 0x49ACF8, 0x4
+	.4byte 0x42340000
 .global $$255662
 $$255662:
-	.incbin "baserom.dol", 0x49ACFC, 0x4
+	.4byte 0xC2C80000
 .global $$255663
 $$255663:
-	.incbin "baserom.dol", 0x49AD00, 0x4
+	.4byte 0xC0400000
 .global $$255664
 $$255664:
-	.incbin "baserom.dol", 0x49AD04, 0x4
+	.4byte 0x42480000
 .global $$255929
 $$255929:
-	.incbin "baserom.dol", 0x49AD08, 0x4
+	.4byte 0x40A00000
 .global $$255930
 $$255930:
-	.incbin "baserom.dol", 0x49AD0C, 0x4
+	.4byte 0x3C8EFA35
 .global $$255931
 $$255931:
-	.incbin "baserom.dol", 0x49AD10, 0x4
+	.4byte 0x3E800000
 .global $$255966
 $$255966:
-	.incbin "baserom.dol", 0x49AD14, 0x4
+	.4byte 0xBF800000
 .global $$255967
 $$255967:
-	.incbin "baserom.dol", 0x49AD18, 0x4
+	.4byte 0x3727C5AC
 .global $$256003
 $$256003:
-	.incbin "baserom.dol", 0x49AD1C, 0x4
+	.4byte 0x3FC00000
 .global $$256004
 $$256004:
-	.incbin "baserom.dol", 0x49AD20, 0x8
+	.4byte 0xBF000000
+	.4byte 0
 .global $$256048
 $$256048:
-	.incbin "baserom.dol", 0x49AD28, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global INIT_DIR__Q43scn7history6detail27$$2unnamed$$2PackageWindow_cpp$$2

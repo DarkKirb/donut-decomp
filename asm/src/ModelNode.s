@@ -1142,27 +1142,30 @@ __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20
 $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20:
-	.incbin "baserom.dol", 0x44F230, 0x24
+	.asciz "FSqrt: Input is out of the domain."
+	.balign 4
 .global $$2STRING$$2FSqrt__Q24nw4r4mathFf
 $$2STRING$$2FSqrt__Q24nw4r4mathFf:
-	.incbin "baserom.dol", 0x44F254, 0x14
+	.asciz "arithmetic.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253498
 $$253498:
-	.incbin "baserom.dol", 0x49A130, 0x4
+	.4byte 0x3C8EFA35
 .global $$253499
 $$253499:
-	.incbin "baserom.dol", 0x49A134, 0x4
+	.4byte 0
 .global $$253589
 $$253589:
-	.incbin "baserom.dol", 0x49A138, 0x4
+	.4byte 0x3727C5AC
 .global $$253675
 $$253675:
-	.incbin "baserom.dol", 0x49A13C, 0x4
+	.4byte 0xBF800000
 .global $$253676
 $$253676:
-	.incbin "baserom.dol", 0x49A140, 0x4
+	.4byte 0x4222F983
 .global $$253677
 $$253677:
-	.incbin "baserom.dol", 0x49A144, 0x4
+	.4byte 0x3F800000

@@ -100,4 +100,5 @@ procMove__Q43scn4step6weapon17StickObjAlgorithmFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253717
 $$253717:
-	.incbin "baserom.dol", 0x49E868, 0x8
+	.4byte 0xC0000000
+	.4byte 0

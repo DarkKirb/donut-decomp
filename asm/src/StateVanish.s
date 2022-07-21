@@ -389,25 +389,39 @@ procObjCollReact__Q53scn4step6weapon8deespear11StateVanishFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10spearspear11StateVanish
 __vt__Q53scn4step6weapon10spearspear11StateVanish:
-	.incbin "baserom.dol", 0x490840, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E50A0
+	.4byte 0x803E514C
+	.4byte 0x803E5238
+	.4byte 0x803D895C
+	.4byte 0x803E523C
+	.4byte 0x803E5240
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear11StateVanish
 __vt__Q53scn4step6weapon8deespear11StateVanish:
-	.incbin "baserom.dol", 0x491108, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803EDFEC
+	.4byte 0x803EE098
+	.4byte 0x803EE184
+	.4byte 0x803D895C
+	.4byte 0x803EE188
+	.4byte 0x803EE18C
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256857
 $$256857:
-	.incbin "baserom.dol", 0x49EA80, 0x4
+	.4byte 0
 .global $$256904
 $$256904:
-	.incbin "baserom.dol", 0x49EA84, 0x4
+	.4byte 0x43B40000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256857
 $$256857:
-	.incbin "baserom.dol", 0x49EC68, 0x4
+	.4byte 0
 .global $$256904
 $$256904:
-	.incbin "baserom.dol", 0x49EC6C, 0x4
+	.4byte 0x43B40000

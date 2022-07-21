@@ -553,56 +553,77 @@ decideEffect__Q33scn7history10StagePartsFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253814
 $$253814:
-	.incbin "baserom.dol", 0x45D6B8, 0x10
+	.asciz "history/WallUs"
+	.balign 4
 .global $$253942
 $$253942:
-	.incbin "baserom.dol", 0x45D6C8, 0x1C
+	.asciz "history/statue/Statuekirby"
+	.balign 4
 .global $$253943
 $$253943:
-	.incbin "baserom.dol", 0x45D6E4, 0x1C
+	.asciz "history/statue/Statuedee"
+	.balign 4
 .global $$253944
 $$253944:
-	.incbin "baserom.dol", 0x45D700, 0x1C
+	.asciz "history/statue/Statuerick"
+	.balign 4
 .global $$253945
 $$253945:
-	.incbin "baserom.dol", 0x45D71C, 0x1C
+	.asciz "history/statue/Statuekine"
+	.balign 4
 .global $$253946
 $$253946:
-	.incbin "baserom.dol", 0x45D738, 0x1C
+	.asciz "history/statue/Statuecoo"
+	.balign 4
 .global $$253966
 $$253966:
-	.incbin "baserom.dol", 0x45D754, 0xC
+	.asciz "SelectEnd"
+	.balign 4
 .global $$253969
 $$253969:
-	.incbin "baserom.dol", 0x45D760, 0x40
+	.asciz "Package2LA"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253815
 $$253815:
-	.incbin "baserom.dol", 0x494A88, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$253816
 $$253816:
-	.incbin "baserom.dol", 0x494A90, 0x8
+	.asciz "PlateL"
+	.balign 4
 .global $$253906
 $$253906:
-	.incbin "baserom.dol", 0x494A98, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253947
 $$253947:
-	.incbin "baserom.dol", 0x494AA0, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$253948
 $$253948:
-	.incbin "baserom.dol", 0x494AA8, 0x8
+	.asciz "StatueL"
 .global $$253959
 $$253959:
-	.incbin "baserom.dol", 0x494AB0, 0x8
+	.asciz "Select"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global WIDTH__Q33scn7history10StageParts
 WIDTH__Q33scn7history10StageParts:
-	.incbin "baserom.dol", 0x49AC98, 0x8
+	.4byte 0x40E00000
+	.4byte 0
 .global $$253821
 $$253821:
-	.incbin "baserom.dol", 0x49ACA0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$253965
 $$253965:
-	.incbin "baserom.dol", 0x49ACA8, 0x8
+	.4byte 0x40A00000
+	.4byte 0

@@ -111,4 +111,11 @@ procMove__Q53scn4step5enemy6sodory17StateGroundAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory17StateGroundAttack
 __vt__Q53scn4step5enemy6sodory17StateGroundAttack:
-	.incbin "baserom.dol", 0x479018, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E635C  ;# ptr
+	.4byte 0x802E6420  ;# ptr
+	.4byte 0x802E6424  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

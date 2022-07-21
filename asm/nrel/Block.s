@@ -31,7 +31,10 @@ lbl_8014C71C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2515
 $$2515:
-	.incbin "baserom.dol", 0x4430C8, 0xC
+	.asciz "Block.cpp"
+	.balign 4
 .global $$2516
 $$2516:
-	.incbin "baserom.dol", 0x4430D4, 0x2C
+	.asciz "NW4R:Failed assertion aStart <= aEnd"
+	.balign 4
+	.4byte 0

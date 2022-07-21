@@ -1075,33 +1075,45 @@ __dt__Q44nw4r3snd10WavePlayer10WavePacketFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd10WavePlayer
 __vt__Q34nw4r3snd10WavePlayer:
-	.incbin "baserom.dol", 0x43E720, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011D550  ;# ptr
+	.4byte 0x8011E390  ;# ptr
+	.4byte 0x8011E2A0  ;# ptr
+	.4byte 0x8011E290  ;# ptr
 .global __vt__Q44nw4r3snd10WavePlayer10WavePacket
 __vt__Q44nw4r3snd10WavePlayer10WavePacket:
-	.incbin "baserom.dol", 0x43E738, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011E3A0  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29744
 $$29744:
-	.incbin "baserom.dol", 0x499FC0, 0x4
+	.4byte 0x3F800000
 .global $$29745
 $$29745:
-	.incbin "baserom.dol", 0x499FC4, 0x4
+	.4byte 0
 .global $$29803
 $$29803:
-	.incbin "baserom.dol", 0x499FC8, 0x4
+	.4byte 0x40000000
 .global $$29804
 $$29804:
-	.incbin "baserom.dol", 0x499FCC, 0x4
+	.4byte 0x40400000
 .global $$29805
 $$29805:
-	.incbin "baserom.dol", 0x499FD0, 0x8
+	.4byte 0x447A0000
+	.4byte 0
 .global $$29808
 $$29808:
-	.incbin "baserom.dol", 0x499FD8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$29857
 $$29857:
-	.incbin "baserom.dol", 0x499FE0, 0x8
+	.4byte 0x40C00000
+	.4byte 0
 .global $$29861
 $$29861:
-	.incbin "baserom.dol", 0x499FE8, 0x8
+	.4byte 0x43300000
+	.4byte 0

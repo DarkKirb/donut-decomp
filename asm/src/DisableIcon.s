@@ -170,33 +170,35 @@ __sinit_$$3DisableIcon_cpp:
 /* 8019C38C 001981CC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402410, 0x4
+	.4byte 0x8019C354  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250030
 $$250030:
-	.incbin "baserom.dol", 0x49A2F8, 0x4
+	.4byte 0x41700000
 .global $$250031
 $$250031:
-	.incbin "baserom.dol", 0x49A2FC, 0x4
+	.4byte 0x437F0000
 .global $$250032
 $$250032:
-	.incbin "baserom.dol", 0x49A300, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$250035
 $$250035:
-	.incbin "baserom.dol", 0x49A308, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$250056
 $$250056:
-	.incbin "baserom.dol", 0x49A310, 0x4
+	.4byte 0xC35C0000
 .global $$250057
 $$250057:
-	.incbin "baserom.dol", 0x49A314, 0x4
+	.4byte 0x42D20000
 .global $$250058
 $$250058:
-	.incbin "baserom.dol", 0x49A318, 0x4
+	.4byte 0xC39E0000
 .global $$250059
 $$250059:
-	.incbin "baserom.dol", 0x49A31C, 0x4
+	.4byte 0x430C0000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global DISABLE_ICON_POS_4x3__25$$2unnamed$$2DisableIcon_cpp$$2

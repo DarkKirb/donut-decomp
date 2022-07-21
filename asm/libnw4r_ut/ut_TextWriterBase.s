@@ -3295,26 +3295,29 @@ lbl_80126CC4:
 /* 80126CDC 00122B1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023C0, 0x4
+	.4byte 0x80126C50  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global mFormatBufferSize__Q34nw4r2ut17TextWriterBase$$0c$$1
 mFormatBufferSize__Q34nw4r2ut17TextWriterBase$$0c$$1:
-	.incbin "baserom.dol", 0x492E60, 0x8
+	.4byte 0x00000100
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28480
 $$28480:
-	.incbin "baserom.dol", 0x49A048, 0x4
+	.4byte 0x7F7FFFFF
 .global $$28481
 $$28481:
-	.incbin "baserom.dol", 0x49A04C, 0x4
+	.4byte 0
 .global $$28501
 $$28501:
-	.incbin "baserom.dol", 0x49A050, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$29845
 $$29845:
-	.incbin "baserom.dol", 0x49A058, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$26159

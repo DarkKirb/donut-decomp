@@ -978,7 +978,16 @@ GetRuntimeTypeInfo__Q23seq21SequenceChallengeRootCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq21SequenceChallengeRoot
 __vt__Q23seq21SequenceChallengeRoot:
-	.incbin "baserom.dol", 0x4924B0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FD984
+	.4byte 0x803FCECC
+	.4byte 0x803FCF38
+	.4byte 0x803FCFD4
+	.4byte 0x803FD180
+	.4byte 0x803FD198
+	.4byte 0x803FD510
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q23seq21SequenceChallengeRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

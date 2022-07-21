@@ -1558,10 +1558,18 @@ $$24$$2__dt__Q23app7AppImplFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23app7AppImpl
 __vt__Q23app7AppImpl:
-	.incbin "baserom.dol", 0x44EC00, 0x1C
+	.4byte 0
+	.4byte 0
+	.4byte 0x80175364  ;# ptr
+	.4byte 0x80175750  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x80176260  ;# ptr
 .global $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv
 $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv:
-	.incbin "baserom.dol", 0x44EC1C, 0x14
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q23scn6IScene$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

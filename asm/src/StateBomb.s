@@ -268,4 +268,11 @@ lbl_80238104:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss7bonkers9StateBomb
 __vt__Q53scn4step4boss7bonkers9StateBomb:
-	.incbin "baserom.dol", 0x461280, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80237E54  ;# ptr
+	.4byte 0x80237EB0  ;# ptr
+	.4byte 0x80237F6C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80237FC0  ;# ptr
+	.4byte 0x80234504  ;# ptr

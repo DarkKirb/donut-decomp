@@ -413,12 +413,14 @@ lbl_80042DD4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x42F040, 0x48
+	.asciz "<< RVL_SDK - AI \trelease build: Aug 23 2010 17:29:47 (0x4302_145) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __AIVersion
 __AIVersion:
-	.incbin "baserom.dol", 0x4929F0, 0x8
+	.4byte 0x80432F40
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __AI_init_flag

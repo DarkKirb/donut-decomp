@@ -132,7 +132,7 @@ camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251461
 $$251461:
-	.incbin "baserom.dol", 0x49ED50, 0x4
+	.4byte 0x41700000
 .global $$251462
 $$251462:
-	.incbin "baserom.dol", 0x49ED54, 0x4
+	.4byte 0x40E00000

@@ -870,55 +870,131 @@ lbl_80099288:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2759
 $$2759:
-	.incbin "baserom.dol", 0x43B308, 0x1C
+	.4byte 0x80098680  ;# ptr
+	.4byte 0x80098684  ;# ptr
+	.4byte 0x80098688  ;# ptr
+	.4byte 0x8009868C  ;# ptr
+	.4byte 0x80098690  ;# ptr
+	.4byte 0x80098694  ;# ptr
+	.4byte 0x80098698  ;# ptr
 .global $$2778
 $$2778:
-	.incbin "baserom.dol", 0x43B324, 0x20
+	.asciz "rfc_mx_sm_state_idle - evt:%d"
+	.balign 4
 .global $$2779
 $$2779:
-	.incbin "baserom.dol", 0x43B344, 0x1C
+	.asciz "Mx error state %d event %d"
+	.balign 4
 .global $$2780
 $$2780:
-	.incbin "baserom.dol", 0x43B360, 0x18
+	.asciz "rfc_mx_send_config_req"
+	.balign 4
 .global $$2781
 $$2781:
-	.incbin "baserom.dol", 0x43B378, 0x28
+	.asciz "RFCOMM MX ignored - evt:%d in state:%d"
+	.balign 4
 .global $$2784
 $$2784:
-	.incbin "baserom.dol", 0x43B3A0, 0x34
+	.4byte 0x80098868  ;# ptr
+	.4byte 0x8009883C  ;# ptr
+	.4byte 0x8009883C  ;# ptr
+	.4byte 0x80098840  ;# ptr
+	.4byte 0x80098854  ;# ptr
+	.4byte 0x80098868  ;# ptr
+	.4byte 0x80098718  ;# ptr
+	.4byte 0x8009875C  ;# ptr
+	.4byte 0x80098868  ;# ptr
+	.4byte 0x8009875C  ;# ptr
+	.4byte 0x80098788  ;# ptr
+	.4byte 0x8009875C  ;# ptr
+	.4byte 0x8009875C  ;# ptr
 .global $$2796
 $$2796:
-	.incbin "baserom.dol", 0x43B3D4, 0x28
+	.asciz "rfc_mx_sm_state_wait_conn_cnf - evt:%d"
+	.balign 4
 .global $$2809
 $$2809:
-	.incbin "baserom.dol", 0x43B3FC, 0x24
+	.asciz "rfc_mx_sm_state_configure - evt:%d"
+	.balign 4
 .global $$2812
 $$2812:
-	.incbin "baserom.dol", 0x43B420, 0x24
+	.4byte 0x80098AEC  ;# ptr
+	.4byte 0x80098B4C  ;# ptr
+	.4byte 0x80098B4C  ;# ptr
+	.4byte 0x80098AEC  ;# ptr
+	.4byte 0x80098B4C  ;# ptr
+	.4byte 0x80098B28  ;# ptr
+	.4byte 0x80098B18  ;# ptr
+	.4byte 0x80098B4C  ;# ptr
+	.4byte 0x80098B38  ;# ptr
 .global $$2826
 $$2826:
-	.incbin "baserom.dol", 0x43B444, 0x24
+	.asciz "rfc_mx_sm_sabme_wait_ua - evt:%d"
+	.balign 4
 .global $$2829
 $$2829:
-	.incbin "baserom.dol", 0x43B468, 0x3C
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098C70  ;# ptr
+	.4byte 0x80098C98  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098CA0  ;# ptr
+	.4byte 0x80098C10  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098C10  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098C4C  ;# ptr
+	.4byte 0x80098C3C  ;# ptr
+	.4byte 0x80098CC0  ;# ptr
+	.4byte 0x80098C5C  ;# ptr
 .global $$2839
 $$2839:
-	.incbin "baserom.dol", 0x43B4A4, 0x24
+	.asciz "rfc_mx_sm_state_wait_sabme - evt:%d"
 .global $$2851
 $$2851:
-	.incbin "baserom.dol", 0x43B4C8, 0x24
+	.asciz "rfc_mx_sm_state_connected - evt:%d"
+	.balign 4
 .global $$2853
 $$2853:
-	.incbin "baserom.dol", 0x43B4EC, 0x30
+	.4byte 0x80098ED0  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098E98  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098E98  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EFC  ;# ptr
+	.4byte 0x80098EBC  ;# ptr
 .global $$2868
 $$2868:
-	.incbin "baserom.dol", 0x43B51C, 0x28
+	.asciz "rfc_mx_sm_state_disc_wait_ua - evt:%d"
+	.balign 4
 .global $$2871
 $$2871:
-	.incbin "baserom.dol", 0x43B544, 0x3C
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80098FB4  ;# ptr
+	.4byte 0x80098FB4  ;# ptr
+	.4byte 0x80099020  ;# ptr
+	.4byte 0x80099030  ;# ptr
+	.4byte 0x80098FB4  ;# ptr
+	.4byte 0x8009904C  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x8009906C  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80099070  ;# ptr
+	.4byte 0x80099058  ;# ptr
 .global $$2885
 $$2885:
-	.incbin "baserom.dol", 0x43B580, 0x24
+	.asciz "rfc_mx_conf_cnf p_cfg:%08x res:%d "
+	.balign 4
 .global $$2895
 $$2895:
-	.incbin "baserom.dol", 0x43B5A4, 0x1C
+	.asciz "rfc_mx_conf_ind p_cfg:%0x"
+	.balign 4

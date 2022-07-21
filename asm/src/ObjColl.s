@@ -907,25 +907,25 @@ onObjStopFinished__Q43scn4step4hero7ObjCollFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257554
 $$257554:
-	.incbin "baserom.dol", 0x49D8B8, 0x4
+	.4byte 0
 .global $$257555
 $$257555:
-	.incbin "baserom.dol", 0x49D8BC, 0x4
+	.4byte 0x3F000000
 .global $$257556
 $$257556:
-	.incbin "baserom.dol", 0x49D8C0, 0x4
+	.4byte 0x3F400000
 .global $$257604
 $$257604:
-	.incbin "baserom.dol", 0x49D8C4, 0x4
+	.4byte 0x3ECCCCCD
 .global $$257615
 $$257615:
-	.incbin "baserom.dol", 0x49D8C8, 0x4
+	.4byte 0x3E4CCCCD
 .global $$257616
 $$257616:
-	.incbin "baserom.dol", 0x49D8CC, 0x4
+	.4byte 0x3E800000
 .global $$257617
 $$257617:
-	.incbin "baserom.dol", 0x49D8D0, 0x4
+	.4byte 0xBE4CCCCD
 .global $$257622
 $$257622:
-	.incbin "baserom.dol", 0x49D8D4, 0x4
+	.4byte 0x3F4CCCCD

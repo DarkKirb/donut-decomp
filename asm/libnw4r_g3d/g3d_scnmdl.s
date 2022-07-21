@@ -2981,9 +2981,29 @@ GetTypeObj__Q34nw4r3g3d6ScnMdlCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6ScnMdl
 TYPE_NAME__Q34nw4r3g3d6ScnMdl:
-	.incbin "baserom.dol", 0x404FE8, 0x10
+	.4byte 0x00000007
+	.asciz "ScnMdl"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d6ScnMdl
 __vt__Q34nw4r3g3d6ScnMdl:
-	.incbin "baserom.dol", 0x43D208, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F0A10  ;# ptr
+	.4byte 0x800EF990  ;# ptr
+	.4byte 0x800F09A0  ;# ptr
+	.4byte 0x800F0AA0  ;# ptr
+	.4byte 0x800F0A90  ;# ptr
+	.4byte 0x800E9830  ;# ptr
+	.4byte 0x800EFE40  ;# ptr
+	.4byte 0x800EFE80  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9900  ;# ptr
+	.4byte 0x800F05A0  ;# ptr
+	.4byte 0x800F0710  ;# ptr
+	.4byte 0x800F0910  ;# ptr
+	.4byte 0x800F0960  ;# ptr
+	.4byte 0x800F0980  ;# ptr

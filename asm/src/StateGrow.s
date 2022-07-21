@@ -261,17 +261,27 @@ procFixPos__Q53scn4step4boss6whispy9StateGrowFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy9StateGrow
 __vt__Q53scn4step4boss6whispy9StateGrow:
-	.incbin "baserom.dol", 0x466738, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025D9C0  ;# ptr
+	.4byte 0x8025D9C4  ;# ptr
+	.4byte 0x8025DCF0  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025DCF4  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256186
 $$256186:
-	.incbin "baserom.dol", 0x4957B8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256769
 $$256769:
-	.incbin "baserom.dol", 0x49B540, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$256772
 $$256772:
-	.incbin "baserom.dol", 0x49B548, 0x8
+	.4byte 0x43300000
+	.4byte 0

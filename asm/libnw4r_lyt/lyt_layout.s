@@ -1165,15 +1165,30 @@ lbl_800F4D94:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt6Layout
 __vt__Q34nw4r3lyt6Layout:
-	.incbin "baserom.dol", 0x43D368, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F40A0  ;# ptr
+	.4byte 0x800F41D0  ;# ptr
+	.4byte 0x800F4520  ;# ptr
+	.4byte 0x800F45A0  ;# ptr
+	.4byte 0x800F4600  ;# ptr
+	.4byte 0x800F4690  ;# ptr
+	.4byte 0x800F46C0  ;# ptr
+	.4byte 0x800F46F0  ;# ptr
+	.4byte 0x800F4710  ;# ptr
+	.4byte 0x800F49B0  ;# ptr
+	.4byte 0x800F49E0  ;# ptr
+	.4byte 0x800F4A00  ;# ptr
+	.4byte 0x800F4A20  ;# ptr
+	.4byte 0x800F4A80  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210260
 $$210260:
-	.incbin "baserom.dol", 0x499C78, 0x4
+	.4byte 0
 .global $$210651
 $$210651:
-	.incbin "baserom.dol", 0x499C7C, 0x4
+	.4byte 0x3F000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mspAllocator__Q34nw4r3lyt6Layout

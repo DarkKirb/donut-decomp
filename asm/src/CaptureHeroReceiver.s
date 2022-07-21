@@ -1033,48 +1033,73 @@ __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25S
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FE50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333B0C
+	.4byte 0x80333A50
 .global __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24StateCapturedWhispyVomit$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FE60, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333B08
+	.4byte 0x80333A6C
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured28StateCapturedWhispyVomitSoft$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FE70, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333B04
+	.4byte 0x80333A88
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured26StateCapturedWhispyRelease$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FE80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333B00
+	.4byte 0x80333AA4
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured29StateCapturedWaterGalborosEat$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FE90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333AFC
+	.4byte 0x80333AC0
 .global __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util114StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured31StateCapturedWaterGalborosVomit$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FEA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333AF8
+	.4byte 0x80333ADC
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x47FEB0, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x47FED4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x47FEE0, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x47FF04, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x47FF10, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x47FF34, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259086
 $$259086:
-	.incbin "baserom.dol", 0x49D6A8, 0x4
+	.4byte 0
 .global $$259390
 $$259390:
-	.incbin "baserom.dol", 0x49D6AC, 0x4
+	.4byte 0x3ECCCCCD
 .global $$259421
 $$259421:
-	.incbin "baserom.dol", 0x49D6B0, 0x8
+	.4byte 0x3F000000
+	.4byte 0

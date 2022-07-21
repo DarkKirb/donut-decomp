@@ -113,20 +113,23 @@ lbl_8030FEF4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252652
 $$252652:
-	.incbin "baserom.dol", 0x47D410, 0x18
+	.asciz "step/gimmick/GoalFlag"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252653
 $$252653:
-	.incbin "baserom.dol", 0x496AE8, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$252655
 $$252655:
-	.incbin "baserom.dol", 0x496AF0, 0x8
+	.asciz "Main"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252654
 $$252654:
-	.incbin "baserom.dol", 0x49D400, 0x4
+	.4byte 0xC0400000
 .global $$252669
 $$252669:
-	.incbin "baserom.dol", 0x49D404, 0x4
+	.4byte 0x40A00000

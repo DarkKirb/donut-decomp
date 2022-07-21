@@ -154,9 +154,19 @@ __dt__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy23StateShotAirBallTornado
 __vt__Q53scn4step4boss6whispy23StateShotAirBallTornado:
-	.incbin "baserom.dol", 0x4667F0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025E8D4  ;# ptr
+	.4byte 0x8025E210  ;# ptr
+	.4byte 0x8025E37C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025E380  ;# ptr
+	.4byte 0x80234504  ;# ptr
+	.4byte 0x8025E6E8  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253395
 $$253395:
-	.incbin "baserom.dol", 0x49B568, 0x8
+	.4byte 0
+	.4byte 0

@@ -121,4 +121,13 @@ procFixPos__Q53scn4step4hero6common8StateEatFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common8StateEat
 __vt__Q53scn4step4hero6common8StateEat:
-	.incbin "baserom.dol", 0x487CC0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803628C0
+	.4byte 0x803628C4
+	.4byte 0x8036298C
+	.4byte 0x8035550C
+	.4byte 0x80362990
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

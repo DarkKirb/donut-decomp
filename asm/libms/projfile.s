@@ -319,42 +319,56 @@ lbl_80174AB4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23242
 $$23242:
-	.incbin "baserom.dol", 0x44EBF0, 0x10
+	.asciz "MsgPrjBn"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23243
 $$23243:
-	.incbin "baserom.dol", 0x492EF0, 0x8
+	.asciz "CLR1"
+	.balign 4
 .global $$23244
 $$23244:
-	.incbin "baserom.dol", 0x492EF8, 0x8
+	.asciz "CLB1"
+	.balign 4
 .global $$23245
 $$23245:
-	.incbin "baserom.dol", 0x492F00, 0x8
+	.asciz "ATI2"
+	.balign 4
 .global $$23246
 $$23246:
-	.incbin "baserom.dol", 0x492F08, 0x8
+	.asciz "ALB1"
+	.balign 4
 .global $$23247
 $$23247:
-	.incbin "baserom.dol", 0x492F10, 0x8
+	.asciz "ALI2"
+	.balign 4
 .global $$23248
 $$23248:
-	.incbin "baserom.dol", 0x492F18, 0x8
+	.asciz "TGG2"
+	.balign 4
 .global $$23249
 $$23249:
-	.incbin "baserom.dol", 0x492F20, 0x8
+	.asciz "TAG2"
+	.balign 4
 .global $$23250
 $$23250:
-	.incbin "baserom.dol", 0x492F28, 0x8
+	.asciz "TGP2"
+	.balign 4
 .global $$23251
 $$23251:
-	.incbin "baserom.dol", 0x492F30, 0x8
+	.asciz "TGL2"
+	.balign 4
 .global $$23252
 $$23252:
-	.incbin "baserom.dol", 0x492F38, 0x8
+	.asciz "SYL3"
+	.balign 4
 .global $$23253
 $$23253:
-	.incbin "baserom.dol", 0x492F40, 0x8
+	.asciz "SLB1"
+	.balign 4
 .global $$23254
 $$23254:
-	.incbin "baserom.dol", 0x492F48, 0x8
+	.asciz "CTI1"
+	.balign 4

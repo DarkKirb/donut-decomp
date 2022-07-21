@@ -133,12 +133,21 @@ __dt__Q53scn4step5enemy6common10StateFlushFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common10StateFlush
 __vt__Q53scn4step5enemy6common10StateFlush:
-	.incbin "baserom.dol", 0x46F158, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291F10  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x80291DB4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254965
 $$254965:
-	.incbin "baserom.dol", 0x49BB20, 0x8
+	.4byte 0x40C00000
+	.4byte 0
 .global $$254968
 $$254968:
-	.incbin "baserom.dol", 0x49BB28, 0x8
+	.4byte 0x43300000
+	.4byte 0

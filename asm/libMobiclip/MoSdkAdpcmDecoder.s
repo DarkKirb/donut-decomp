@@ -237,24 +237,38 @@ lbl_80151E50:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22535
 $$22535:
-	.incbin "baserom.dol", 0x444280, 0x24
+	.asciz "[AudioDecoder] Wrong packet size!\n"
+	.balign 4
 .global __vt__17MoSdkAdpcmDecoder
 __vt__17MoSdkAdpcmDecoder:
-	.incbin "baserom.dol", 0x4442A4, 0x1C
+	.4byte 0x80556AC8
+	.4byte 0
+	.4byte 0x80151C40  ;# ptr
+	.4byte 0x80151BE0  ;# ptr
+	.4byte 0x80151B70  ;# ptr
+	.4byte 0x801520C0  ;# ptr
+	.4byte 0x8014F970  ;# ptr
 .global $$22510
 $$22510:
-	.incbin "baserom.dol", 0x4442C0, 0x14
+	.asciz "MoSdkAdpcmDecoder"
+	.balign 4
 .global $$22511
 $$22511:
-	.incbin "baserom.dol", 0x4442D4, 0xC
+	.4byte 0x80556AD0
+	.4byte 0
+	.4byte 0
 .global $$22512
 $$22512:
-	.incbin "baserom.dol", 0x4442E0, 0x18
+	.asciz "MoSdkAudioDecoder"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__17MoSdkAdpcmDecoder
 __RTTI__17MoSdkAdpcmDecoder:
-	.incbin "baserom.dol", 0x492EA8, 0x8
+	.4byte 0x804481C0
+	.4byte 0x804481D4
 .global __RTTI__17MoSdkAudioDecoder
 __RTTI__17MoSdkAudioDecoder:
-	.incbin "baserom.dol", 0x492EB0, 0x8
+	.4byte 0x804481E0
+	.4byte 0

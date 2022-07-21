@@ -415,56 +415,65 @@ __sinit_$$3StateParasolCapture_cpp:
 /* 80392EFC 0038ED3C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025D0, 0x4
+	.4byte 0x80392DD4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol19StateParasolCapture
 __vt__Q53scn4step4hero7parasol19StateParasolCapture:
-	.incbin "baserom.dol", 0x489D00, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803929BC
+	.4byte 0x80392AA0
+	.4byte 0x80392B68
+	.4byte 0x8035550C
+	.4byte 0x80392B6C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258789
 $$258789:
-	.incbin "baserom.dol", 0x49E158, 0x4
+	.4byte 0
 .global $$258790
 $$258790:
-	.incbin "baserom.dol", 0x49E15C, 0x4
+	.4byte 0x3F000000
 .global $$258791
 $$258791:
-	.incbin "baserom.dol", 0x49E160, 0x4
+	.4byte 0x3ECCCCCD
 .global $$258834
 $$258834:
-	.incbin "baserom.dol", 0x49E164, 0x4
+	.4byte 0x3FA66666
 .global $$258835
 $$258835:
-	.incbin "baserom.dol", 0x49E168, 0x4
+	.4byte 0x3F19999A
 .global $$258836
 $$258836:
-	.incbin "baserom.dol", 0x49E16C, 0x4
+	.4byte 0x3F99999A
 .global $$258837
 $$258837:
-	.incbin "baserom.dol", 0x49E170, 0x4
+	.4byte 0x3F8CCCCD
 .global $$258838
 $$258838:
-	.incbin "baserom.dol", 0x49E174, 0x4
+	.4byte 0x3F333333
 .global $$258839
 $$258839:
-	.incbin "baserom.dol", 0x49E178, 0x4
+	.4byte 0x3F800000
 .global $$258840
 $$258840:
-	.incbin "baserom.dol", 0x49E17C, 0x4
+	.4byte 0x3F666666
 .global $$258841
 $$258841:
-	.incbin "baserom.dol", 0x49E180, 0x4
+	.4byte 0x3F4CCCCD
 .global $$258842
 $$258842:
-	.incbin "baserom.dol", 0x49E184, 0x4
+	.4byte 0x3FB33333
 .global $$258843
 $$258843:
-	.incbin "baserom.dol", 0x49E188, 0x4
+	.4byte 0x3FCCCCCD
 .global $$258844
 $$258844:
-	.incbin "baserom.dol", 0x49E18C, 0x4
+	.4byte 0x3FE66666
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global OFFSET_TABLE__Q53scn4step4hero7parasol33$$2unnamed$$2StateParasolCapture_cpp$$2

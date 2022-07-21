@@ -678,62 +678,89 @@ lbl_802FBF78:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257294
 $$257294:
-	.incbin "baserom.dol", 0x47B700, 0x24
+	.asciz "challengefileselect/Coppertrophy"
+	.balign 4
 .global $$257295
 $$257295:
-	.incbin "baserom.dol", 0x47B724, 0x24
+	.asciz "challengefileselect/Silvertrophy"
+	.balign 4
 .global $$257296
 $$257296:
-	.incbin "baserom.dol", 0x47B748, 0x20
+	.asciz "challengefileselect/Goldtrophy"
+	.balign 4
 .global $$257297
 $$257297:
-	.incbin "baserom.dol", 0x47B768, 0x24
+	.asciz "challengefileselect/Platinumtrophy"
+	.balign 4
 .global $$257298
 $$257298:
-	.incbin "baserom.dol", 0x47B78C, 0x24
+	.asciz "challengefileselect/Kingtrophy"
+	.balign 4
+	.4byte 0
 .global t_TrophyResFileName__29$$2unnamed$$2DemoChangeGrade_cpp$$2
 t_TrophyResFileName__29$$2unnamed$$2DemoChangeGrade_cpp$$2:
-	.incbin "baserom.dol", 0x47B7B0, 0x18
+	.4byte 0x8055A4F8
+	.4byte 0x8047F600
+	.4byte 0x8047F624
+	.4byte 0x8047F648
+	.4byte 0x8047F668
+	.4byte 0x8047F68C
 .global $$258717
 $$258717:
-	.incbin "baserom.dol", 0x47B7C8, 0x20
+	.asciz "challengefileselect/Trophyanime"
 .global $$258843
 $$258843:
-	.incbin "baserom.dol", 0x47B7E8, 0x30
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Unlock.ChangeGrade"
 .global $$258879
 $$258879:
-	.incbin "baserom.dol", 0x47B818, 0x10
+	.asciz "Disappear"
+	.balign 4
+	.4byte 0
 .global __vt__Q53scn4step7gimmick11areamapdemo15DemoChangeGrade
 __vt__Q53scn4step7gimmick11areamapdemo15DemoChangeGrade:
-	.incbin "baserom.dol", 0x47B828, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FB848
+	.4byte 0x802FB8CC
+	.4byte 0x802FB904
+	.4byte 0x802FB9F4
+	.4byte 0x802FBA84
+	.4byte 0x802F9A60
+	.4byte 0x802F9A94
+	.4byte 0x802FAE90
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257293
 $$257293:
-	.incbin "baserom.dol", 0x4968D8, 0x4
+	.4byte 0
 .global $$258869
 $$258869:
-	.incbin "baserom.dol", 0x4968DC, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$258870
 $$258870:
-	.incbin "baserom.dol", 0x4968E4, 0x8
+	.asciz "ScaleL"
+	.balign 4
 .global $$258871
 $$258871:
-	.incbin "baserom.dol", 0x4968EC, 0x8
+	.asciz "Appear"
+	.balign 4
 .global $$258872
 $$258872:
-	.incbin "baserom.dol", 0x4968F4, 0xC
+	.asciz "TopL"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258841
 $$258841:
-	.incbin "baserom.dol", 0x49D168, 0x4
+	.4byte 0x41080000
 .global $$258842
 $$258842:
-	.incbin "baserom.dol", 0x49D16C, 0x4
+	.4byte 0
 .global $$258855
 $$258855:
-	.incbin "baserom.dol", 0x49D170, 0x4
+	.4byte 0x40C00000
 .global $$258856
 $$258856:
-	.incbin "baserom.dol", 0x49D174, 0x4
+	.4byte 0x3E4CCCCD

@@ -443,4 +443,5 @@ lbl_801881EC:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249818
 $$249818:
-	.incbin "baserom.dol", 0x4930F8, 0x8
+	.asciz ".cmp"
+	.balign 4

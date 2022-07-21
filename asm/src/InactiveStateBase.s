@@ -43,4 +43,7 @@ lbl_80341870:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero17InactiveStateBase
 __vt__Q43scn4step4hero17InactiveStateBase:
-	.incbin "baserom.dol", 0x480DB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80341830
+	.4byte 0x8034182C

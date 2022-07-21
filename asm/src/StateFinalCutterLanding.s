@@ -225,18 +225,27 @@ procFixPos__Q53scn4step4hero5smash23StateFinalCutterLandingFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5smash23StateFinalCutterLanding
 __vt__Q53scn4step4hero5smash23StateFinalCutterLanding:
-	.incbin "baserom.dol", 0x48AE78, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A156C
+	.4byte 0x803A15E8
+	.4byte 0x803A168C
+	.4byte 0x8035550C
+	.4byte 0x803A1690
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259013
 $$259013:
-	.incbin "baserom.dol", 0x49E358, 0x4
+	.4byte 0x3E19999A
 .global $$259014
 $$259014:
-	.incbin "baserom.dol", 0x49E35C, 0x4
+	.4byte 0x3E4CCCCD
 .global $$259015
 $$259015:
-	.incbin "baserom.dol", 0x49E360, 0x4
+	.4byte 0x3F066666
 .global $$259016
 $$259016:
-	.incbin "baserom.dol", 0x49E364, 0x4
+	.4byte 0

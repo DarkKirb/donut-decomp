@@ -465,18 +465,131 @@ checkInputSubStick__Q23hid11HIDAccessorCFRCQ33hel4math7Vector2f:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BUTTON_CONVDATA_CL__25$$2unnamed$$2HIDAccessor_cpp$$2
 T_BUTTON_CONVDATA_CL__25$$2unnamed$$2HIDAccessor_cpp$$2:
-	.incbin "baserom.dol", 0x410A70, 0xF0
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0x00008000
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00004000
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0x00000400
+	.4byte 0x00000010
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0
+	.4byte 0x00000800
+	.4byte 0x00008000
+	.4byte 0x00008000
+	.4byte 0
+	.4byte 0x00000008
+	.4byte 0x00000100
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0
+	.4byte 0x00002000
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000200
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000400
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0x00000400
+	.4byte 0
+	.4byte 0
 .global T_BUTTON_CONVDATA_GC__25$$2unnamed$$2HIDAccessor_cpp$$2
 T_BUTTON_CONVDATA_GC__25$$2unnamed$$2HIDAccessor_cpp$$2:
-	.incbin "baserom.dol", 0x410B60, 0xC0
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00000010
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0
+	.4byte 0x00000400
+	.4byte 0x00000100
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0x00000800
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
 .global T_STICK_CONVDATA__25$$2unnamed$$2HIDAccessor_cpp$$2
 T_STICK_CONVDATA__25$$2unnamed$$2HIDAccessor_cpp$$2:
-	.incbin "baserom.dol", 0x410C20, 0x20
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000001
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250596
 $$250596:
-	.incbin "baserom.dol", 0x49A450, 0x4
+	.4byte 0x3E800000
 .global $$250617
 $$250617:
-	.incbin "baserom.dol", 0x49A454, 0x4
+	.4byte 0x3DCCCCCD

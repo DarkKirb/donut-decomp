@@ -606,7 +606,10 @@ lbl_80022B44:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.incbin "baserom.dol", 0x41F828, 0x10
+	.4byte 0x80022320  ;# ptr
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2__OSInitMemoryProtection__Fv$$2initialized

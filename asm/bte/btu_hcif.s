@@ -1323,13 +1323,17 @@ btu_hcif_link_key_notification_evt:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22212
 $$22212:
-	.incbin "baserom.dol", 0x438D90, 0x18
+	.asciz "Ctlr H/w error event"
+	.balign 4
 .global $$22352
 $$22352:
-	.incbin "baserom.dol", 0x438DA8, 0x28
+	.asciz "Event mismatch opcode=%X cmd opcode=%X"
+	.balign 4
 .global $$22368
 $$22368:
-	.incbin "baserom.dol", 0x438DD0, 0x20
+	.asciz "Cmd timeout; no cmd in queue"
+	.balign 4
 .global $$22369
 $$22369:
-	.incbin "baserom.dol", 0x438DF0, 0x30
+	.asciz "BTU HCI command timeout - cmd opcode = 0x%02x"
+	.balign 4

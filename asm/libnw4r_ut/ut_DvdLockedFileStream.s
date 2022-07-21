@@ -291,12 +291,37 @@ __sinit_$$3ut_DvdLockedFileStream_cpp:
 /* 8012128C 0011D0CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023B8, 0x4
+	.4byte 0x80121280  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut19DvdLockedFileStream
 __vt__Q34nw4r2ut19DvdLockedFileStream:
-	.incbin "baserom.dol", 0x43E870, 0x68
+	.4byte 0
+	.4byte 0
+	.4byte 0x80108A80  ;# ptr
+	.4byte 0x80120FC0  ;# ptr
+	.4byte 0x80121020  ;# ptr
+	.4byte 0x80121060  ;# ptr
+	.4byte 0x80108A70  ;# ptr
+	.4byte 0x80120630  ;# ptr
+	.4byte 0x80120640  ;# ptr
+	.4byte 0x80108A40  ;# ptr
+	.4byte 0x80108A50  ;# ptr
+	.4byte 0x80108A20  ;# ptr
+	.4byte 0x80108A10  ;# ptr
+	.4byte 0x801089F0  ;# ptr
+	.4byte 0x801089E0  ;# ptr
+	.4byte 0x801089D0  ;# ptr
+	.4byte 0x80120E60  ;# ptr
+	.4byte 0x80120DD0  ;# ptr
+	.4byte 0x80121220  ;# ptr
+	.4byte 0x80120DF0  ;# ptr
+	.4byte 0x80108A30  ;# ptr
+	.4byte 0x80108A00  ;# ptr
+	.4byte 0x80120E70  ;# ptr
+	.4byte 0x80121140  ;# ptr
+	.4byte 0x80108A60  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sMutex__Q34nw4r2ut19DvdLockedFileStream

@@ -595,12 +595,21 @@ lbl_8037C1C0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick16StateChallengeIn
 __vt__Q53scn4step4hero7gimmick16StateChallengeIn:
-	.incbin "baserom.dol", 0x488A28, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037BB84
+	.4byte 0x8037BCB4
+	.4byte 0x8037BE18
+	.4byte 0x8035550C
+	.4byte 0x8037BEE4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260558
 $$260558:
-	.incbin "baserom.dol", 0x49DF30, 0x4
+	.4byte 0
 .global $$260569
 $$260569:
-	.incbin "baserom.dol", 0x49DF34, 0x4
+	.4byte 0x3F800000

@@ -138,4 +138,13 @@ procFixPos__Q53scn4step4hero5spark14StateAttackEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5spark14StateAttackEnd
 __vt__Q53scn4step4hero5spark14StateAttackEnd:
-	.incbin "baserom.dol", 0x489948, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038E110
+	.4byte 0x8038E1A4
+	.4byte 0x8038E204
+	.4byte 0x8035550C
+	.4byte 0x8038E208
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

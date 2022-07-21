@@ -204,10 +204,11 @@ lbl_800E6CC0:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27058
 $$27058:
-	.incbin "baserom.dol", 0x499BB0, 0x4
+	.4byte 0x3F360B61
 .global $$27059
 $$27059:
-	.incbin "baserom.dol", 0x499BB4, 0x4
+	.4byte 0
 .global $$27060
 $$27060:
-	.incbin "baserom.dol", 0x499BB8, 0x8
+	.4byte 0x3F800000
+	.4byte 0

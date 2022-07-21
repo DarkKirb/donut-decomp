@@ -64,7 +64,7 @@ invert__Q24gobj6TargetFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250757
 $$250757:
-	.incbin "baserom.dol", 0x49A2F0, 0x4
+	.4byte 0x3F800000
 .global $$250758
 $$250758:
-	.incbin "baserom.dol", 0x49A2F4, 0x4
+	.4byte 0xBF800000

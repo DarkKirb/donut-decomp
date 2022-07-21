@@ -885,16 +885,16 @@ UUSB_Unregister:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global wait4hci
 wait4hci:
-	.incbin "baserom.dol", 0x492C80, 0x4
+	.4byte 0x00000001
 .global __ntd_ios_file_descriptor
 __ntd_ios_file_descriptor:
-	.incbin "baserom.dol", 0x492C84, 0x4
+	.4byte 0xFFFFFFFF
 .global $$23103
 $$23103:
-	.incbin "baserom.dol", 0x492C88, 0x4
+	.4byte 0x6F683000
 .global $$23104
 $$23104:
-	.incbin "baserom.dol", 0x492C8C, 0x4
+	.4byte 0x6F683100
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global usb

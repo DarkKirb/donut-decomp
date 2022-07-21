@@ -63,4 +63,11 @@ __dt__Q53scn4step5enemy9tsukikage10BrainSmokeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage10BrainSmoke
 __vt__Q53scn4step5enemy9tsukikage10BrainSmoke:
-	.incbin "baserom.dol", 0x4797E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EA59C  ;# ptr
+	.4byte 0x802EA518  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

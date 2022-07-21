@@ -506,7 +506,16 @@ __dt__Q23seq26SequenceChallengeTitleRootFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq26SequenceChallengeTitleRoot
 __vt__Q23seq26SequenceChallengeTitleRoot:
-	.incbin "baserom.dol", 0x4924D8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FE020
+	.4byte 0x803FE024
+	.4byte 0x803FDB24
+	.4byte 0x803FDB94
+	.4byte 0x803FDD44
+	.4byte 0x803FDE08
+	.4byte 0x803FDF24
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q23seq26SequenceChallengeTitleRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

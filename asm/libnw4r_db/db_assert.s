@@ -182,15 +182,16 @@ WarningAlarmFunc___Q24nw4r2dbFP7OSAlarmP9OSContext:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$26682
 $$26682:
-	.incbin "baserom.dol", 0x43EAA8, 0x10
+	.asciz "%s:%d Warning:"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global sDispWarningAuto__Q24nw4r2db
 sDispWarningAuto__Q24nw4r2db:
-	.incbin "baserom.dol", 0x492E70, 0x4
+	.4byte 0x01000000
 .global $$26647
 $$26647:
-	.incbin "baserom.dol", 0x492E74, 0x4
+	.4byte 0x0A000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2GetWarningAlarm___Q24nw4r2dbFv$$2sWarningAlarm$$20

@@ -98,4 +98,9 @@ __dt__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail20MmlSeqTrackAllocator
 __vt__Q44nw4r3snd6detail20MmlSeqTrackAllocator:
-	.incbin "baserom.dol", 0x43E450, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010B250  ;# ptr
+	.4byte 0x8010B140  ;# ptr
+	.4byte 0x8010B1B0  ;# ptr
+	.4byte 0x8010B240  ;# ptr

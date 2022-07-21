@@ -937,70 +937,101 @@ __sinit_$$3Package_cpp:
 /* 8020E010 00209E50  4B EB 00 B0 */	b __ct__Q34nw4r4math4VEC3Ffff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40245C, 0x4
+	.4byte 0x8020DFFC  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253252
 $$253252:
-	.incbin "baserom.dol", 0x45D520, 0x10
+	.asciz "history/%s/%s"
+	.balign 4
 .global $$253253
 $$253253:
-	.incbin "baserom.dol", 0x45D530, 0x10
+	.asciz "history/Boxanim"
 .global $$253255
 $$253255:
-	.incbin "baserom.dol", 0x45D540, 0x18
+	.asciz "history/PackageScale"
+	.balign 4
 .global $$253256
 $$253256:
-	.incbin "baserom.dol", 0x45D558, 0x18
+	.asciz "history/ShadowScale"
+	.4byte 0
 .global __vt__Q33scn7history7Package
 __vt__Q33scn7history7Package:
-	.incbin "baserom.dol", 0x45D570, 0x70
+	.4byte 0
+	.4byte 0
+	.4byte 0x8020D6B0  ;# ptr
+	.4byte 0x8020DD50  ;# ptr
+	.4byte 0x800E9D20  ;# ptr
+	.4byte 0x800E9D30  ;# ptr
+	.4byte 0x800EC990  ;# ptr
+	.4byte 0x800EC9A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253254
 $$253254:
-	.incbin "baserom.dol", 0x4949D0, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$253257
 $$253257:
-	.incbin "baserom.dol", 0x4949D8, 0x8
+	.asciz "RotYL"
+	.balign 4
 .global $$253258
 $$253258:
-	.incbin "baserom.dol", 0x4949E0, 0x8
+	.asciz "ScaleL"
+	.balign 4
 .global $$253259
 $$253259:
-	.incbin "baserom.dol", 0x4949E8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$253368
 $$253368:
-	.incbin "baserom.dol", 0x4949F0, 0x8
+	.asciz "Vacuum"
+	.balign 4
 .global $$253369
 $$253369:
-	.incbin "baserom.dol", 0x4949F8, 0x8
+	.asciz "Vacuum2"
 .global $$253383
 $$253383:
-	.incbin "baserom.dol", 0x494A00, 0x8
+	.asciz "Shake"
+	.balign 4
 .global $$253427
 $$253427:
-	.incbin "baserom.dol", 0x494A08, 0x8
+	.asciz "BoxM"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253265
 $$253265:
-	.incbin "baserom.dol", 0x49AC20, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$253278
 $$253278:
-	.incbin "baserom.dol", 0x49AC28, 0x4
+	.4byte 0
 .global $$253410
 $$253410:
-	.incbin "baserom.dol", 0x49AC2C, 0x4
+	.4byte 0x3F800000
 .global $$253411
 $$253411:
-	.incbin "baserom.dol", 0x49AC30, 0x4
+	.4byte 0x3ECCCCCD
 .global $$253466
 $$253466:
-	.incbin "baserom.dol", 0x49AC34, 0x4
+	.4byte 0x3E4CCCCD
 .global $$253467
 $$253467:
-	.incbin "baserom.dol", 0x49AC38, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global BIG_SHADOW_OFFSET__Q33scn7history21$$2unnamed$$2Package_cpp$$2

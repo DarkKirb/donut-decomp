@@ -66,12 +66,19 @@ __dt__Q53scn4step5enemy6owgulf15StateFlyWaitFixFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6owgulf15StateFlyWaitFix
 __vt__Q53scn4step5enemy6owgulf15StateFlyWaitFix:
-	.incbin "baserom.dol", 0x475E78, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CAA10  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802CA9B0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254812
 $$254812:
-	.incbin "baserom.dol", 0x49C958, 0x4
+	.4byte 0x3CA3D70A
 .global $$254813
 $$254813:
-	.incbin "baserom.dol", 0x49C95C, 0x4
+	.4byte 0

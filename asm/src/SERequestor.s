@@ -351,7 +351,9 @@ updateOutput__Q23snd11SERequestorFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$20:
-	.incbin "baserom.dol", 0x4926D0, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1:
-	.incbin "baserom.dol", 0x4926F4, 0xC
+	.asciz "LinkList.h"
+	.balign 4

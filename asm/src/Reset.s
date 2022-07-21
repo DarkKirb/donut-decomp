@@ -469,18 +469,20 @@ dvdCheckDiskCallback__Q23app5ResetFlP15DVDCommandBlock:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250602
 $$250602:
-	.incbin "baserom.dol", 0x493098, 0x4
+	.4byte 0
 .global $$250603
 $$250603:
-	.incbin "baserom.dol", 0x49309C, 0x4
+	.4byte 0x437F0000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251058
 $$251058:
-	.incbin "baserom.dol", 0x49A118, 0x8
+	.4byte 0x41A00000
+	.4byte 0
 .global $$251061
 $$251061:
-	.incbin "baserom.dol", 0x49A120, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global tIsPushedReset__Q23app19$$2unnamed$$2Reset_cpp$$2

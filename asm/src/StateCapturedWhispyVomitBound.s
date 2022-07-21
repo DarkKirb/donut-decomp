@@ -377,21 +377,31 @@ lbl_80385614:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBound
 __vt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBound:
-	.incbin "baserom.dol", 0x488EE0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80385208
+	.4byte 0x803852C8
+	.4byte 0x80385434
+	.4byte 0x8035550C
+	.4byte 0x8038548C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258072
 $$258072:
-	.incbin "baserom.dol", 0x49E058, 0x4
+	.4byte 0
 .global $$258117
 $$258117:
-	.incbin "baserom.dol", 0x49E05C, 0x4
+	.4byte 0x43B40000
 .global $$258118
 $$258118:
-	.incbin "baserom.dol", 0x49E060, 0x4
+	.4byte 0x3727C5AC
 .global $$258119
 $$258119:
-	.incbin "baserom.dol", 0x49E064, 0x4
+	.4byte 0x42652EE1
 .global $$258120
 $$258120:
-	.incbin "baserom.dol", 0x49E068, 0x8
+	.4byte 0x42480000
+	.4byte 0

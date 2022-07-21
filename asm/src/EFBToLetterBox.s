@@ -420,25 +420,25 @@ RoundUp$$0Us$$1__Q34nw4r2ut24$$2unnamed$$2Precompile_pch$$2FUsUi_Us:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251900
 $$251900:
-	.incbin "baserom.dol", 0x49A230, 0x4
+	.4byte 0x000000FF
 .global $$251984
 $$251984:
-	.incbin "baserom.dol", 0x49A234, 0x4
+	.4byte 0x3F800000
 .global $$251985
 $$251985:
-	.incbin "baserom.dol", 0x49A238, 0x4
+	.4byte 0xBF800000
 .global $$251986
 $$251986:
-	.incbin "baserom.dol", 0x49A23C, 0x4
+	.4byte 0
 .global $$251987
 $$251987:
-	.incbin "baserom.dol", 0x49A240, 0x4
+	.4byte 0x42740000
 .global $$251988
 $$251988:
-	.incbin "baserom.dol", 0x49A244, 0x4
+	.4byte 0x44200000
 .global $$251989
 $$251989:
-	.incbin "baserom.dol", 0x49A248, 0x4
+	.4byte 0x43A70000
 .global $$251990
 $$251990:
-	.incbin "baserom.dol", 0x49A24C, 0x4
+	.4byte 0xBF000000

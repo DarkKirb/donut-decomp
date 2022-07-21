@@ -157,4 +157,11 @@ lbl_802BA944:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7hothead17StateAttackBreath
 __vt__Q53scn4step5enemy7hothead17StateAttackBreath:
-	.incbin "baserom.dol", 0x473B18, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BA7B0  ;# ptr
+	.4byte 0x802BA7B4  ;# ptr
+	.4byte 0x802BA8BC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802BA8C0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

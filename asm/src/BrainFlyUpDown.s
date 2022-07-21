@@ -175,15 +175,35 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46F058, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291568  ;# ptr
+	.4byte 0x80291548  ;# ptr
 .global __vt__Q53scn4step5enemy6common14BrainFlyUpDown
 __vt__Q53scn4step5enemy6common14BrainFlyUpDown:
-	.incbin "baserom.dol", 0x46F068, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291564  ;# ptr
+	.4byte 0x80291490  ;# ptr
+	.4byte 0x80291540  ;# ptr
+	.4byte 0x80291544  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4774A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D9824  ;# ptr
+	.4byte 0x802D9804  ;# ptr
 .global __vt__Q53scn4step5enemy6scarfy14BrainFlyUpDown
 __vt__Q53scn4step5enemy6scarfy14BrainFlyUpDown:
-	.incbin "baserom.dol", 0x4774B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D9820  ;# ptr
+	.4byte 0x802D9784  ;# ptr
+	.4byte 0x802D9800  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

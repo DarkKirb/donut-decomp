@@ -638,194 +638,256 @@ lbl_8018A1F0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248845
 $$248845:
-	.incbin "baserom.dol", 0x44FA90, 0x10
+	.asciz "SYSTEM RESET"
+	.balign 4
 .global $$248846
 $$248846:
-	.incbin "baserom.dol", 0x44FAA0, 0x10
+	.asciz "MACHINE CHECK"
+	.balign 4
 .global $$248849
 $$248849:
-	.incbin "baserom.dol", 0x44FAB0, 0x14
+	.asciz "EXTERNAL INTERRUPT"
+	.balign 4
 .global $$248850
 $$248850:
-	.incbin "baserom.dol", 0x44FAC4, 0xC
+	.asciz "ALIGNMENT"
+	.balign 4
 .global $$248852
 $$248852:
-	.incbin "baserom.dol", 0x44FAD0, 0x10
+	.asciz "FLOATING POINT"
+	.balign 4
 .global $$248853
 $$248853:
-	.incbin "baserom.dol", 0x44FAE0, 0xC
+	.asciz "DECREMENTER"
 .global $$248854
 $$248854:
-	.incbin "baserom.dol", 0x44FAEC, 0xC
+	.asciz "SYSTEM CALL"
 .global $$248856
 $$248856:
-	.incbin "baserom.dol", 0x44FAF8, 0x14
+	.asciz "PERFORMACE MONITOR"
+	.balign 4
 .global $$248857
 $$248857:
-	.incbin "baserom.dol", 0x44FB0C, 0xC
+	.asciz "BREAK POINT"
 .global $$248858
 $$248858:
-	.incbin "baserom.dol", 0x44FB18, 0x14
+	.asciz "SYSTEM INTERRUPT"
+	.balign 4
 .global $$248859
 $$248859:
-	.incbin "baserom.dol", 0x44FB2C, 0x14
+	.asciz "THERMAL INTERRUPT"
+	.balign 4
 .global $$248860
 $$248860:
-	.incbin "baserom.dol", 0x44FB40, 0xC
+	.asciz "PROTECTION"
+	.balign 4
 .global CPU_EXP_NAME__23$$2unnamed$$2Exception_cpp$$2
 CPU_EXP_NAME__23$$2unnamed$$2Exception_cpp$$2:
-	.incbin "baserom.dol", 0x44FB4C, 0x44
+	.4byte 0x80453990
+	.4byte 0x804539A0
+	.4byte 0x80556D38
+	.4byte 0x80556D3C
+	.4byte 0x804539B0
+	.4byte 0x804539C4
+	.4byte 0x80556D40
+	.4byte 0x804539D0
+	.4byte 0x804539E0
+	.4byte 0x804539EC
+	.4byte 0x80556D48
+	.4byte 0x804539F8
+	.4byte 0x80453A0C
+	.4byte 0x80453A18
+	.4byte 0x80453A2C
+	.4byte 0x80453A40
+	.4byte 0x804539D0
 .global $$249260
 $$249260:
-	.incbin "baserom.dol", 0x44FB90, 0x28
+	.asciz "******** EXCEPTION OCCURRED! ********\n"
+	.balign 4
 .global $$249261
 $$249261:
-	.incbin "baserom.dol", 0x44FBB8, 0x20
+	.asciz "******** USER HALT ********\n"
+	.balign 4
 .global $$249262
 $$249262:
-	.incbin "baserom.dol", 0x44FBD8, 0x10
+	.asciz "---MainInfo---\n"
 .global $$249263
 $$249263:
-	.incbin "baserom.dol", 0x44FBE8, 0x1C
+	.asciz "---EXCEPTION_INFO_GPR---\n"
+	.balign 4
 .global $$249264
 $$249264:
-	.incbin "baserom.dol", 0x44FC04, 0x20
+	.asciz "---EXCEPTION_INFO_SRR0MAP---\n"
+	.balign 4
 .global $$249265
 $$249265:
-	.incbin "baserom.dol", 0x44FC24, 0x20
+	.asciz "---EXCEPTION_INFO_GPRMAP---\n"
+	.balign 4
 .global $$249266
 $$249266:
-	.incbin "baserom.dol", 0x44FC44, 0x1C
+	.asciz "---EXCEPTION_INFO_FPR---\n"
+	.balign 4
 .global $$249267
 $$249267:
-	.incbin "baserom.dol", 0x44FC60, 0x1C
+	.asciz " MSR:%08XH     FPSCR:%08XH\n"
 .global $$249268
 $$249268:
-	.incbin "baserom.dol", 0x44FC7C, 0x24
+	.asciz "--------------------------------\n"
+	.balign 4
 .global $$249286
 $$249286:
-	.incbin "baserom.dol", 0x44FCA0, 0x1C
+	.asciz " FPE: Invalid operation @"
+	.balign 4
 .global $$249288
 $$249288:
-	.incbin "baserom.dol", 0x44FCBC, 0x18
+	.asciz " Infinity - Infinity\n"
+	.balign 4
 .global $$249289
 $$249289:
-	.incbin "baserom.dol", 0x44FCD4, 0x18
+	.asciz " Infinity / Infinity\n"
+	.balign 4
 .global $$249291
 $$249291:
-	.incbin "baserom.dol", 0x44FCEC, 0x10
+	.asciz " Infinity * 0\n"
+	.balign 4
 .global $$249292
 $$249292:
-	.incbin "baserom.dol", 0x44FCFC, 0x14
+	.asciz " Invalid compare\n"
+	.balign 4
 .global $$249293
 $$249293:
-	.incbin "baserom.dol", 0x44FD10, 0x14
+	.asciz " Software request\n"
+	.balign 4
 .global $$249294
 $$249294:
-	.incbin "baserom.dol", 0x44FD24, 0x18
+	.asciz " Invalid square root\n"
+	.balign 4
 .global $$249295
 $$249295:
-	.incbin "baserom.dol", 0x44FD3C, 0x1C
+	.asciz " Invalid integer convert\n"
+	.balign 4
 .global $$249296
 $$249296:
-	.incbin "baserom.dol", 0x44FD58, 0x10
+	.asciz " FPE: Overflow\n"
 .global $$249297
 $$249297:
-	.incbin "baserom.dol", 0x44FD68, 0x14
+	.asciz " FPE: Underflow\n"
+	.balign 4
 .global $$249298
 $$249298:
-	.incbin "baserom.dol", 0x44FD7C, 0x18
+	.asciz " FPE: Zero division\n"
+	.balign 4
 .global $$249299
 $$249299:
-	.incbin "baserom.dol", 0x44FD94, 0x18
+	.asciz " FPE: Inexact result\n"
+	.balign 4
 .global $$249305
 $$249305:
-	.incbin "baserom.dol", 0x44FDAC, 0x20
+	.asciz "CONTEXT:%08XH  (%s EXCEPTION)\n"
+	.balign 4
 .global $$249306
 $$249306:
-	.incbin "baserom.dol", 0x44FDCC, 0x10
+	.asciz "CONTEXT:%08XH\n"
+	.balign 4
 .global $$249307
 $$249307:
-	.incbin "baserom.dol", 0x44FDDC, 0x1C
+	.asciz "SRR0:   %08XH   SRR1:%08XH\n"
 .global $$249308
 $$249308:
-	.incbin "baserom.dol", 0x44FDF8, 0x1C
+	.asciz "DSISR:  %08XH   DAR: %08XH\n"
 .global $$249318
 $$249318:
-	.incbin "baserom.dol", 0x44FE14, 0x28
+	.asciz "-------------------------------- GPR\n"
+	.balign 4
 .global $$249319
 $$249319:
-	.incbin "baserom.dol", 0x44FE3C, 0x28
+	.asciz "R%02d:%08XH  R%02d:%08XH  R%02d:%08XH\n"
+	.balign 4
 .global $$249320
 $$249320:
-	.incbin "baserom.dol", 0x44FE64, 0x1C
+	.asciz "R%02d:%08XH  R%02d:%08XH\n"
+	.balign 4
 .global $$249329
 $$249329:
-	.incbin "baserom.dol", 0x44FE80, 0x2C
+	.asciz "-------------------------------- GPRMAP\n"
+	.balign 4
 .global $$249330
 $$249330:
-	.incbin "baserom.dol", 0x44FEAC, 0x10
+	.asciz "R%02d: %08XH "
+	.balign 4
 .global $$249331
 $$249331:
-	.incbin "baserom.dol", 0x44FEBC, 0x14
+	.asciz " no information\n"
+	.balign 4
 .global $$249332
 $$249332:
-	.incbin "baserom.dol", 0x44FED0, 0x28
+	.asciz "  no register which seem to address.\n"
+	.balign 4
 .global $$249338
 $$249338:
-	.incbin "baserom.dol", 0x44FEF8, 0x2C
+	.asciz "-------------------------------- SRR0MAP\n"
+	.balign 4
 .global $$249339
 $$249339:
-	.incbin "baserom.dol", 0x44FF24, 0x10
+	.asciz "SRR0: %08XH "
+	.balign 4
 .global $$249350
 $$249350:
-	.incbin "baserom.dol", 0x44FF34, 0x14
+	.asciz "F%02d: Nan      "
+	.balign 4
 .global $$249351
 $$249351:
-	.incbin "baserom.dol", 0x44FF48, 0x14
+	.asciz "F%02d:+Inf      "
+	.balign 4
 .global $$249352
 $$249352:
-	.incbin "baserom.dol", 0x44FF5C, 0x14
+	.asciz "F%02d:-Inf      "
+	.balign 4
 .global $$249354
 $$249354:
-	.incbin "baserom.dol", 0x44FF70, 0x14
+	.asciz "F%02d: 0.0      "
+	.balign 4
 .global $$249355
 $$249355:
-	.incbin "baserom.dol", 0x44FF84, 0xC
+	.asciz "F%02d:%+.3E"
 .global $$249364
 $$249364:
-	.incbin "baserom.dol", 0x44FF90, 0x28
+	.asciz "-------------------------------- FPR\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248847
 $$248847:
-	.incbin "baserom.dol", 0x493118, 0x4
+	.4byte 0x44534900
 .global $$248848
 $$248848:
-	.incbin "baserom.dol", 0x49311C, 0x4
+	.4byte 0x49534900
 .global $$248851
 $$248851:
-	.incbin "baserom.dol", 0x493120, 0x8
+	.asciz "PROGRAM"
 .global $$248855
 $$248855:
-	.incbin "baserom.dol", 0x493128, 0x8
+	.asciz "TRACE"
+	.balign 4
 .global $$249287
 $$249287:
-	.incbin "baserom.dol", 0x493130, 0x8
+	.asciz " SNaN\n"
+	.balign 4
 .global $$249290
 $$249290:
-	.incbin "baserom.dol", 0x493138, 0x8
+	.asciz " 0 / 0\n"
 .global $$249365
 $$249365:
-	.incbin "baserom.dol", 0x493140, 0x4
+	.4byte 0x20000000
 .global $$249366
 $$249366:
-	.incbin "baserom.dol", 0x493144, 0x4
+	.4byte 0x0A000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249353
 $$249353:
-	.incbin "baserom.dol", 0x49A198, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global object___Q33hel6common38ExplicitSingleton$$0Q26freeze9Exception$$1

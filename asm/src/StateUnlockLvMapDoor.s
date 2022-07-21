@@ -233,4 +233,13 @@ procFixPos__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick20StateUnlockLvMapDoor
 __vt__Q53scn4step4hero7gimmick20StateUnlockLvMapDoor:
-	.incbin "baserom.dol", 0x488CF8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80381EE4
+	.4byte 0x80381F74
+	.4byte 0x80382154
+	.4byte 0x8035550C
+	.4byte 0x80382158
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

@@ -1396,7 +1396,7 @@ lbl_800CB7E0:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2GetDrawEnumerator__Q34nw4r3g3d6ResMdlCFv$$20
 $$2STRING$$2GetDrawEnumerator__Q34nw4r3g3d6ResMdlCFv$$20:
-	.incbin "baserom.dol", 0x492DB8, 0x8
+	.asciz "DrawXlu"
 .global $$2STRING$$2GetDrawEnumerator__Q34nw4r3g3d6ResMdlCFv
 $$2STRING$$2GetDrawEnumerator__Q34nw4r3g3d6ResMdlCFv:
-	.incbin "baserom.dol", 0x492DC0, 0x8
+	.asciz "DrawOpa"

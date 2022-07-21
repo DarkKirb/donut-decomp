@@ -1772,149 +1772,256 @@ lbl_8004CCC0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ConfDirName
 ConfDirName:
-	.incbin "baserom.dol", 0x403D50, 0x10
+	.asciz "/shared2/sys"
+	.balign 4
 .global ConfFileName
 ConfFileName:
-	.incbin "baserom.dol", 0x403D60, 0x18
+	.asciz "/shared2/sys/SYSCONF"
+	.balign 4
 .global ProductInfoFileName
 ProductInfoFileName:
-	.incbin "baserom.dol", 0x403D78, 0x30
+	.asciz "/title/00000001/00000002/data/setting.txt"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
-	.incbin "baserom.dol", 0x4342F8, 0x48
+	.asciz "<< RVL_SDK - SC \trelease build: Aug 23 2010 17:33:48 (0x4302_145) >>"
+	.balign 4
 .global $$2842
 $$2842:
-	.incbin "baserom.dol", 0x434340, 0xC
+	.asciz "IPL.EULA"
+	.balign 4
 .global $$2851
 $$2851:
-	.incbin "baserom.dol", 0x43434C, 0xC
+	.asciz "IPL.SADR"
+	.balign 4
 .global $$2855
 $$2855:
-	.incbin "baserom.dol", 0x434358, 0xC
+	.asciz "NET.CTPC"
+	.balign 4
 .global $$2856
 $$2856:
-	.incbin "baserom.dol", 0x434364, 0xC
+	.asciz "NET.PROF"
+	.balign 4
 .global $$2857
 $$2857:
-	.incbin "baserom.dol", 0x434370, 0xC
+	.asciz "NET.WCPC"
+	.balign 4
 .global $$2858
 $$2858:
-	.incbin "baserom.dol", 0x43437C, 0xC
+	.asciz "NET.WCFG"
+	.balign 4
 .global $$2871
 $$2871:
-	.incbin "baserom.dol", 0x434388, 0x10
+	.asciz "MPLS.MOVIE"
+	.balign 4
+	.4byte 0
 .global NameAndIDTbl
 NameAndIDTbl:
-	.incbin "baserom.dol", 0x434398, 0x130
+	.4byte 0x8055667C
+	.4byte 0
+	.4byte 0x80556684
+	.4byte 0x00000001
+	.4byte 0x80556690
+	.4byte 0x00000002
+	.4byte 0x80556698
+	.4byte 0x00000003
+	.4byte 0x805566A0
+	.4byte 0x00000004
+	.4byte 0x805566A8
+	.4byte 0x00000005
+	.4byte 0x805566B0
+	.4byte 0x00000006
+	.4byte 0x80438240
+	.4byte 0x00000007
+	.4byte 0x805566B8
+	.4byte 0x00000008
+	.4byte 0x805566C0
+	.4byte 0x00000009
+	.4byte 0x805566C8
+	.4byte 0x0000000A
+	.4byte 0x805566D0
+	.4byte 0x0000000B
+	.4byte 0x805566D8
+	.4byte 0x0000000C
+	.4byte 0x805566E0
+	.4byte 0x0000000D
+	.4byte 0x805566E8
+	.4byte 0x0000000E
+	.4byte 0x805566F0
+	.4byte 0x0000000F
+	.4byte 0x8043824C
+	.4byte 0x00000010
+	.4byte 0x805566F8
+	.4byte 0x00000011
+	.4byte 0x80556700
+	.4byte 0x00000012
+	.4byte 0x80556708
+	.4byte 0x00000013
+	.4byte 0x80438258
+	.4byte 0x00000014
+	.4byte 0x80438264
+	.4byte 0x00000015
+	.4byte 0x80438270
+	.4byte 0x00000016
+	.4byte 0x8043827C
+	.4byte 0x00000017
+	.4byte 0x80556710
+	.4byte 0x00000018
+	.4byte 0x80556718
+	.4byte 0x00000019
+	.4byte 0x80556720
+	.4byte 0x0000001A
+	.4byte 0x80556728
+	.4byte 0x0000001B
+	.4byte 0x80556730
+	.4byte 0x0000001C
+	.4byte 0x80556738
+	.4byte 0x0000001D
+	.4byte 0x80556740
+	.4byte 0x0000001E
+	.4byte 0x80556748
+	.4byte 0x0000001F
+	.4byte 0x80556750
+	.4byte 0x00000020
+	.4byte 0x80556758
+	.4byte 0x00000021
+	.4byte 0x80556760
+	.4byte 0x00000022
+	.4byte 0x80556768
+	.4byte 0x00000023
+	.4byte 0x80438288
+	.4byte 0x00000024
+	.4byte 0x80556770
+	.4byte 0x00000025
 .global $$22788
 $$22788:
-	.incbin "baserom.dol", 0x4344C8, 0x28
+	.4byte 0x8004C9E0  ;# ptr
+	.4byte 0x8004CA24  ;# ptr
+	.4byte 0x8004CA64  ;# ptr
+	.4byte 0x8004CA94  ;# ptr
+	.4byte 0x8004CADC  ;# ptr
+	.4byte 0x8004CB10  ;# ptr
+	.4byte 0x8004CB44  ;# ptr
+	.4byte 0x8004CB88  ;# ptr
+	.4byte 0x8004CBC4  ;# ptr
+	.4byte 0x8004CBCC  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __SCVersion
 __SCVersion:
-	.incbin "baserom.dol", 0x492A58, 0x4
+	.4byte 0x804381F8
 .global $$2835
 $$2835:
-	.incbin "baserom.dol", 0x492A5C, 0x8
+	.asciz "IPL.CB"
+	.balign 4
 .global $$2836
 $$2836:
-	.incbin "baserom.dol", 0x492A64, 0xC
+	.asciz "IPL.AR"
+	.balign 4
+	.4byte 0
 .global $$2837
 $$2837:
-	.incbin "baserom.dol", 0x492A70, 0x8
+	.asciz "IPL.ARN"
 .global $$2838
 $$2838:
-	.incbin "baserom.dol", 0x492A78, 0x8
+	.asciz "IPL.CD"
+	.balign 4
 .global $$2839
 $$2839:
-	.incbin "baserom.dol", 0x492A80, 0x8
+	.asciz "IPL.CD2"
 .global $$2840
 $$2840:
-	.incbin "baserom.dol", 0x492A88, 0x8
+	.asciz "IPL.DH"
+	.balign 4
 .global $$2841
 $$2841:
-	.incbin "baserom.dol", 0x492A90, 0x8
+	.asciz "IPL.E60"
 .global $$2843
 $$2843:
-	.incbin "baserom.dol", 0x492A98, 0x8
+	.asciz "IPL.FRC"
 .global $$2844
 $$2844:
-	.incbin "baserom.dol", 0x492AA0, 0x8
+	.asciz "IPL.IDL"
 .global $$2845
 $$2845:
-	.incbin "baserom.dol", 0x492AA8, 0x8
+	.asciz "IPL.INC"
 .global $$2846
 $$2846:
-	.incbin "baserom.dol", 0x492AB0, 0x8
+	.asciz "IPL.LNG"
 .global $$2847
 $$2847:
-	.incbin "baserom.dol", 0x492AB8, 0x8
+	.asciz "IPL.NIK"
 .global $$2848
 $$2848:
-	.incbin "baserom.dol", 0x492AC0, 0x8
+	.asciz "IPL.PC"
+	.balign 4
 .global $$2849
 $$2849:
-	.incbin "baserom.dol", 0x492AC8, 0x8
+	.asciz "IPL.PGS"
 .global $$2850
 $$2850:
-	.incbin "baserom.dol", 0x492AD0, 0x8
+	.asciz "IPL.SSV"
 .global $$2852
 $$2852:
-	.incbin "baserom.dol", 0x492AD8, 0x8
+	.asciz "IPL.SND"
 .global $$2853
 $$2853:
-	.incbin "baserom.dol", 0x492AE0, 0x8
+	.asciz "IPL.UPT"
 .global $$2854
 $$2854:
-	.incbin "baserom.dol", 0x492AE8, 0x8
+	.asciz "NET.CNF"
 .global $$2859
 $$2859:
-	.incbin "baserom.dol", 0x492AF0, 0x8
+	.asciz "DEV.BTM"
 .global $$2860
 $$2860:
-	.incbin "baserom.dol", 0x492AF8, 0x8
+	.asciz "DEV.VIM"
 .global $$2861
 $$2861:
-	.incbin "baserom.dol", 0x492B00, 0x8
+	.asciz "DEV.CTC"
 .global $$2862
 $$2862:
-	.incbin "baserom.dol", 0x492B08, 0x8
+	.asciz "DEV.DSM"
 .global $$2863
 $$2863:
-	.incbin "baserom.dol", 0x492B10, 0x8
+	.asciz "BT.DINF"
 .global $$2864
 $$2864:
-	.incbin "baserom.dol", 0x492B18, 0x8
+	.asciz "BT.CDIF"
 .global $$2865
 $$2865:
-	.incbin "baserom.dol", 0x492B20, 0x8
+	.asciz "BT.SENS"
 .global $$2866
 $$2866:
-	.incbin "baserom.dol", 0x492B28, 0x8
+	.asciz "BT.SPKV"
 .global $$2867
 $$2867:
-	.incbin "baserom.dol", 0x492B30, 0x8
+	.asciz "BT.MOT"
+	.balign 4
 .global $$2868
 $$2868:
-	.incbin "baserom.dol", 0x492B38, 0x8
+	.asciz "BT.BAR"
+	.balign 4
 .global $$2869
 $$2869:
-	.incbin "baserom.dol", 0x492B40, 0x8
+	.asciz "DVD.CNF"
 .global $$2870
 $$2870:
-	.incbin "baserom.dol", 0x492B48, 0x8
+	.asciz "WWW.RST"
 .global $$2872
 $$2872:
-	.incbin "baserom.dol", 0x492B50, 0x8
+	.asciz "IPL.TID"
 .global $$22434
 $$22434:
-	.incbin "baserom.dol", 0x492B58, 0x8
+	.asciz "SCv0"
+	.balign 4
 .global $$22435
 $$22435:
-	.incbin "baserom.dol", 0x492B60, 0x8
+	.asciz "SCed"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global Control

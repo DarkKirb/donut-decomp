@@ -168,24 +168,40 @@ setVisibility__Q28mintglue22Scn__GrandTitle__BlockFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254950
 $$254950:
-	.incbin "baserom.dol", 0x457018, 0x18
+	.asciz "Scn.GrandTitle.Block"
+	.balign 4
 .global $$254951
 $$254951:
-	.incbin "baserom.dol", 0x457030, 0x1C
+	.asciz "void setVacuumed(float,int)"
 .global $$254952
 $$254952:
-	.incbin "baserom.dol", 0x45704C, 0x1C
+	.asciz "void setVisibility(bool)"
+	.balign 4
 .global $$254954
 $$254954:
-	.incbin "baserom.dol", 0x457068, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C42A8  ;# ptr
 .global $$254989
 $$254989:
-	.incbin "baserom.dol", 0x457074, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C4218  ;# ptr
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv:
-	.incbin "baserom.dol", 0x457080, 0x60
+	.asciz "MintPtr is 0."
+	.balign 4
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv$$20
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv$$20:
-	.incbin "baserom.dol", 0x4936E0, 0x8
+	.4byte 0
+	.4byte 0

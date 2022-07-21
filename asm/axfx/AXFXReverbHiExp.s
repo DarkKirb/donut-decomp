@@ -1006,42 +1006,149 @@ lbl_80047004:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __EarlySizeTable
 __EarlySizeTable:
-	.incbin "baserom.dol", 0x432120, 0x60
+	.4byte 0x0000009D
+	.4byte 0x000001DF
+	.4byte 0x0000033D
+	.4byte 0x0000013D
+	.4byte 0x00000329
+	.4byte 0x0000045D
+	.4byte 0x000001DF
+	.4byte 0x000003AD
+	.4byte 0x000005CF
+	.4byte 0x00000281
+	.4byte 0x000004EB
+	.4byte 0x0000079D
+	.4byte 0x0000031D
+	.4byte 0x00000683
+	.4byte 0x00000A13
+	.4byte 0x000003C7
+	.4byte 0x0000076D
+	.4byte 0x00000B57
+	.4byte 0x00000463
+	.4byte 0x00000883
+	.4byte 0x00000D55
+	.4byte 0x000004FF
+	.4byte 0x000009AD
+	.4byte 0x00000F31
 .global __EarlyCoefTable
 __EarlyCoefTable:
-	.incbin "baserom.dol", 0x432180, 0x60
+	.4byte 0x3ECCCCCD
+	.4byte 0xBF800000
+	.4byte 0x3E99999A
+	.4byte 0x3F000000
+	.4byte 0xBF733333
+	.4byte 0x3E99999A
+	.4byte 0x3F19999A
+	.4byte 0xBF666666
+	.4byte 0x3E99999A
+	.4byte 0x3F400000
+	.4byte 0xBF59999A
+	.4byte 0x3E99999A
+	.4byte 0xBF666666
+	.4byte 0x3F4CCCCD
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
 .global __FilterSizeTable
 __FilterSizeTable:
-	.incbin "baserom.dol", 0x4321E0, 0xE0
+	.4byte 0x000006FD
+	.4byte 0x000007CF
+	.4byte 0x0000091D
+	.4byte 0x000001B1
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x00000095
+	.4byte 0x00000125
+	.4byte 0x000001C1
+	.4byte 0x000000FB
+	.4byte 0x00000067
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000003B3
+	.4byte 0x00000551
+	.4byte 0x000005FB
+	.4byte 0x000001B1
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000004FF
+	.4byte 0x000005FB
+	.4byte 0x000007B5
+	.4byte 0x000001FD
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000005FB
+	.4byte 0x00000737
+	.4byte 0x000008F9
+	.4byte 0x00000233
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23078
 $$23078:
-	.incbin "baserom.dol", 0x499210, 0x4
+	.4byte 0x46FA0000
 .global $$23123
 $$23123:
-	.incbin "baserom.dol", 0x499214, 0x4
+	.4byte 0
 .global $$23288
 $$23288:
-	.incbin "baserom.dol", 0x499218, 0x4
+	.4byte 0x3F800000
 .global $$23289
 $$23289:
-	.incbin "baserom.dol", 0x49921C, 0x4
+	.4byte 0x3F19999A
 .global $$23290
 $$23290:
-	.incbin "baserom.dol", 0x499220, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$23294
 $$23294:
-	.incbin "baserom.dol", 0x499228, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$23484
 $$23484:
-	.incbin "baserom.dol", 0x499230, 0x8
+	.4byte 0xC0400000
+	.4byte 0
 .global $$23485
 $$23485:
-	.incbin "baserom.dol", 0x499238, 0x8
+	.4byte 0x40240000
+	.4byte 0
 .global $$23486
 $$23486:
-	.incbin "baserom.dol", 0x499240, 0x8
+	.asciz "?s33"
+	.balign 4
 .global $$23489
 $$23489:
-	.incbin "baserom.dol", 0x499248, 0x8
+	.4byte 0x43300000
+	.4byte 0

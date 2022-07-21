@@ -217,24 +217,34 @@ onNormalChar__Q43scn15challengeresult4info10TimeStringFw:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249497
 $$249497:
-	.incbin "baserom.dol", 0x45B810, 0xC
+	.4byte 0x00250030
+	.4byte 0x00310064
+	.4byte 0
 .global $$249499
 $$249499:
-	.incbin "baserom.dol", 0x45B81C, 0xC
+	.4byte 0x00250030
+	.4byte 0x00320064
+	.4byte 0
 .global __vt__Q43scn15challengeresult4info10TimeString
 __vt__Q43scn15challengeresult4info10TimeString:
-	.incbin "baserom.dol", 0x45B828, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x801F5050  ;# ptr
+	.4byte 0x801F52A4  ;# ptr
+	.4byte 0x801F52A8  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249495
 $$249495:
-	.incbin "baserom.dol", 0x494368, 0x8
+	.asciz "Replace"
 .global $$249496
 $$249496:
-	.incbin "baserom.dol", 0x494370, 0x8
+	.asciz "Minutes"
 .global $$249498
 $$249498:
-	.incbin "baserom.dol", 0x494378, 0x8
+	.asciz "Seconds"
 .global $$249500
 $$249500:
-	.incbin "baserom.dol", 0x494380, 0x8
+	.asciz "Frames"
+	.balign 4

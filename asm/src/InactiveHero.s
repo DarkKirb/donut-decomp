@@ -645,18 +645,27 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1:
-	.incbin "baserom.dol", 0x480D80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80341814
+	.4byte 0x803417F4
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11StateSelect$$4PQ43scn4step4hero12InactiveHero$$4b$$1:
-	.incbin "baserom.dol", 0x480D90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80341810
+	.4byte 0x803417D4
 .global __vt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1
 __vt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1:
-	.incbin "baserom.dol", 0x480DA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803412AC
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256074
 $$256074:
-	.incbin "baserom.dol", 0x49D748, 0x4
+	.4byte 0
 .global $$256075
 $$256075:
-	.incbin "baserom.dol", 0x49D74C, 0x4
+	.4byte 0x3F800000

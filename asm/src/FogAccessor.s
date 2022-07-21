@@ -151,25 +151,33 @@ lbl_8018E624:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType$$20
 $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType$$20:
-	.incbin "baserom.dol", 0x450550, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType
 $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType:
-	.incbin "baserom.dol", 0x450570, 0x10
+	.asciz "g3d_fog.h"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2SetZ__Q34nw4r3g3d3FogFff$$20
 $$2STRING$$2SetZ__Q34nw4r3g3d3FogFff$$20:
-	.incbin "baserom.dol", 0x450580, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2SetZ__Q34nw4r3g3d3FogFff
 $$2STRING$$2SetZ__Q34nw4r3g3d3FogFff:
-	.incbin "baserom.dol", 0x4505A0, 0x10
+	.asciz "g3d_fog.h"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2SetFogColor__Q34nw4r3g3d3FogF8_GXColor$$20
 $$2STRING$$2SetFogColor__Q34nw4r3g3d3FogF8_GXColor$$20:
-	.incbin "baserom.dol", 0x4505B0, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2SetFogColor__Q34nw4r3g3d3FogF8_GXColor
 $$2STRING$$2SetFogColor__Q34nw4r3g3d3FogF8_GXColor:
-	.incbin "baserom.dol", 0x4505D0, 0x10
+	.asciz "g3d_fog.h"
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2SetFogRangeAdj__Q34nw4r3g3d3FogFb$$20
 $$2STRING$$2SetFogRangeAdj__Q34nw4r3g3d3FogFb$$20:
-	.incbin "baserom.dol", 0x4505E0, 0x20
+	.asciz "NW4R:Failed assertion IsValid()"
 .global $$2STRING$$2SetFogRangeAdj__Q34nw4r3g3d3FogFb
 $$2STRING$$2SetFogRangeAdj__Q34nw4r3g3d3FogFb:
-	.incbin "baserom.dol", 0x450600, 0x10
+	.asciz "g3d_fog.h"
+	.balign 4
+	.4byte 0

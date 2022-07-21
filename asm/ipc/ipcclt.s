@@ -1929,10 +1929,10 @@ lbl_80050258:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __mailboxAck
 __mailboxAck:
-	.incbin "baserom.dol", 0x492B88, 0x4
+	.4byte 0x00000001
 .global hid
 hid:
-	.incbin "baserom.dol", 0x492B8C, 0x4
+	.4byte 0xFFFFFFFF
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __responses

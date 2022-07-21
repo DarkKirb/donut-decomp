@@ -413,48 +413,65 @@ lbl_801AB108:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252511
 $$252511:
-	.incbin "baserom.dol", 0x4537D0, 0xC
+	.asciz "common/Main"
 .global $$252512
 $$252512:
-	.incbin "baserom.dol", 0x4537DC, 0xC
+	.asciz "WiiButton"
+	.balign 4
 .global $$252513
 $$252513:
-	.incbin "baserom.dol", 0x4537E8, 0xC
+	.asciz "Button1N"
+	.balign 4
 .global $$252514
 $$252514:
-	.incbin "baserom.dol", 0x4537F4, 0xC
+	.asciz "Button2N"
+	.balign 4
 .global $$252515
 $$252515:
-	.incbin "baserom.dol", 0x453800, 0xC
+	.asciz "ButtonPlusN"
 .global $$252516
 $$252516:
-	.incbin "baserom.dol", 0x45380C, 0x10
+	.asciz "ButtonMinusN"
+	.balign 4
 .global $$252517
 $$252517:
-	.incbin "baserom.dol", 0x45381C, 0xC
+	.asciz "ButtonAN"
+	.balign 4
 .global $$252518
 $$252518:
-	.incbin "baserom.dol", 0x453828, 0x40
+	.asciz "ButtonCrossN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252558
 $$252558:
-	.incbin "baserom.dol", 0x4934E0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252559
 $$252559:
-	.incbin "baserom.dol", 0x4934E8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252562
 $$252562:
-	.incbin "baserom.dol", 0x4934F0, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$252565
 $$252565:
-	.incbin "baserom.dol", 0x4934F8, 0x8
+	.asciz "Blink"
+	.balign 4
 .global $$252568
 $$252568:
-	.incbin "baserom.dol", 0x493500, 0x4
+	.4byte 0x456E6400
 .global $$252582
 $$252582:
-	.incbin "baserom.dol", 0x493504, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$252587
 $$252587:
-	.incbin "baserom.dol", 0x49350C, 0xC
+	.asciz "Hold"
+	.balign 4
+	.4byte 0

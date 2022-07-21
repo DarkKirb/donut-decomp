@@ -406,27 +406,35 @@ lbl_80338D70:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253823
 $$253823:
-	.incbin "baserom.dol", 0x45AD58, 0xC
+	.asciz "PtcPointL"
+	.balign 4
 .global $$253825
 $$253825:
-	.incbin "baserom.dol", 0x45AD64, 0x14
+	.asciz "WinghatWingBM"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253819
 $$253819:
-	.incbin "baserom.dol", 0x494120, 0x4
+	.4byte 0x48617400
 .global $$253820
 $$253820:
-	.incbin "baserom.dol", 0x494124, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$253821
 $$253821:
-	.incbin "baserom.dol", 0x49412C, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$253822
 $$253822:
-	.incbin "baserom.dol", 0x494134, 0x8
+	.asciz "HatL"
+	.balign 4
 .global $$253824
 $$253824:
-	.incbin "baserom.dol", 0x49413C, 0xC
+	.asciz "Main"
+	.balign 4
+	.4byte 0
 .global $$253826
 $$253826:
-	.incbin "baserom.dol", 0x494148, 0x8
+	.asciz "HatBigM"

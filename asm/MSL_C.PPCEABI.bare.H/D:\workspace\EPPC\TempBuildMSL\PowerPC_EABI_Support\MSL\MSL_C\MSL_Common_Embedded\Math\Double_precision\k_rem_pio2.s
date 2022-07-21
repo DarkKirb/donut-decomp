@@ -1587,33 +1587,59 @@ lbl_80013864:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global init_jk
 init_jk:
-	.incbin "baserom.dol", 0x403568, 0x10
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000006
 .global PIo2
 PIo2:
-	.incbin "baserom.dol", 0x403578, 0x40
+	.4byte 0x3FF921FB
+	.4byte 0x40000000
+	.asciz ">tD-"
+	.balign 4
+	.4byte 0x3CF84698
+	.4byte 0x80000000
+	.4byte 0x3B78CC51
+	.4byte 0x60000000
+	.4byte 0x39F01B83
+	.4byte 0x80000000
+	.asciz "8z% @"
+	.balign 4
+	.4byte 0x36E38222
+	.4byte 0x80000000
+	.4byte 0x3569F31D
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21235
 $$21235:
-	.incbin "baserom.dol", 0x498EB8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$21236
 $$21236:
-	.incbin "baserom.dol", 0x498EC0, 0x8
+	.4byte 0x3E700000
+	.4byte 0
 .global $$21237
 $$21237:
-	.incbin "baserom.dol", 0x498EC8, 0x8
+	.4byte 0x41700000
+	.4byte 0
 .global $$21238
 $$21238:
-	.incbin "baserom.dol", 0x498ED0, 0x8
+	.4byte 0x40200000
+	.4byte 0
 .global $$21239
 $$21239:
-	.incbin "baserom.dol", 0x498ED8, 0x8
+	.4byte 0x3FC00000
+	.4byte 0
 .global $$21240
 $$21240:
-	.incbin "baserom.dol", 0x498EE0, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$21241
 $$21241:
-	.incbin "baserom.dol", 0x498EE8, 0x8
+	.4byte 0x3FF00000
+	.4byte 0
 .global $$21247
 $$21247:
-	.incbin "baserom.dol", 0x498EF0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

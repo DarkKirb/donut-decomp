@@ -20,4 +20,7 @@ GetRuntimeTypeInfo__Q43scn4step4hero17AbilityCustomBaseCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero17AbilityCustomBase
 __vt__Q43scn4step4hero17AbilityCustomBase:
-	.incbin "baserom.dol", 0x47E870, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8032B804
+	.4byte 0x8032B800

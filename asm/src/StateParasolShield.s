@@ -128,4 +128,13 @@ procFixPos__Q53scn4step4hero7parasol18StateParasolShieldFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol18StateParasolShield
 __vt__Q53scn4step4hero7parasol18StateParasolShield:
-	.incbin "baserom.dol", 0x489E40, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803947A0
+	.4byte 0x8039485C
+	.4byte 0x803948B0
+	.4byte 0x8035550C
+	.4byte 0x803948B4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

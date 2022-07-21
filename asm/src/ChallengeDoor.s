@@ -1913,98 +1913,155 @@ __dt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257573
 $$257573:
-	.incbin "baserom.dol", 0x47C900, 0x10
+	.asciz "NormalClose00"
+	.balign 4
 .global $$257574
 $$257574:
-	.incbin "baserom.dol", 0x47C910, 0x10
+	.asciz "NormalOpen00"
+	.balign 4
 .global $$257575
 $$257575:
-	.incbin "baserom.dol", 0x47C920, 0x10
+	.asciz "NormalWait00"
+	.balign 4
 .global T_ANIM_LIST__Q53scn4step7gimmick13challengedoor27$$2unnamed$$2ChallengeDoor_cpp$$2
 T_ANIM_LIST__Q53scn4step7gimmick13challengedoor27$$2unnamed$$2ChallengeDoor_cpp$$2:
-	.incbin "baserom.dol", 0x47C930, 0xC
+	.4byte 0x80480800
+	.4byte 0x80480810
+	.4byte 0x80480820
 .global $$260101
 $$260101:
-	.incbin "baserom.dol", 0x47C93C, 0x1C
+	.asciz "step/gimmick/ChallengeDoor"
+	.balign 4
 .global $$260204
 $$260204:
-	.incbin "baserom.dol", 0x47C958, 0x14
+	.asciz "GmkDoorChallenge"
+	.balign 4
 .global $$260303
 $$260303:
-	.incbin "baserom.dol", 0x47C96C, 0xC
+	.asciz "NewRelease"
+	.balign 4
 .global $$260342
 $$260342:
-	.incbin "baserom.dol", 0x47C978, 0x2C
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Common.Enter"
 .global $$260419
 $$260419:
-	.incbin "baserom.dol", 0x47C9A4, 0xC
+	.asciz "IconConstL"
+	.balign 4
 .global $$260499
 $$260499:
-	.incbin "baserom.dol", 0x47C9B0, 0xC
+	.asciz "CopperGet"
+	.balign 4
 .global $$260501
 $$260501:
-	.incbin "baserom.dol", 0x47C9BC, 0xC
+	.asciz "SilverGet"
+	.balign 4
 .global $$260505
 $$260505:
-	.incbin "baserom.dol", 0x47C9C8, 0x10
+	.asciz "KingCrownGet"
+	.balign 4
 .global $$260506
 $$260506:
-	.incbin "baserom.dol", 0x47C9D8, 0xC
+	.asciz "KingCrown"
+	.balign 4
 .global $$260507
 $$260507:
-	.incbin "baserom.dol", 0x47C9E4, 0xC
+	.asciz "PlatinumGet"
 .global $$260508
 $$260508:
-	.incbin "baserom.dol", 0x47C9F0, 0x10
+	.asciz "Platinum"
+	.balign 4
+	.4byte 0
 .global __vt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1
 __vt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1:
-	.incbin "baserom.dol", 0x47CA00, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80307ECC
+	.4byte 0x80307EA4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q53scn4step7gimmick13challengedoor13ChallengeDoor
 __vt__Q53scn4step7gimmick13challengedoor13ChallengeDoor:
-	.incbin "baserom.dol", 0x47CA20, 0x88
+	.4byte 0
+	.4byte 0
+	.4byte 0x80306740
+	.4byte 0
+	.4byte 0x80306848
+	.4byte 0x80306D6C
+	.4byte 0x80306D70
+	.4byte 0x80306D74
+	.4byte 0x80306D78
+	.4byte 0x802FC218
+	.4byte 0x80305FC4
+	.4byte 0x803076D8
+	.4byte 0x803076DC
+	.4byte 0x803076E0
+	.4byte 0x803076E4
+	.4byte 0x80307C68
+	.4byte 0x80307BA0
+	.4byte 0x80307BC8
+	.4byte 0x80307C24
+	.4byte 0x803079C0
+	.4byte 0x803079CC
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$260205
 $$260205:
-	.incbin "baserom.dol", 0x496990, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$260206
 $$260206:
-	.incbin "baserom.dol", 0x496998, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$260207
 $$260207:
-	.incbin "baserom.dol", 0x4969A0, 0x8
+	.asciz "EffectL"
 .global $$260304
 $$260304:
-	.incbin "baserom.dol", 0x4969A8, 0x4
+	.4byte 0x4E657700
 .global $$260498
 $$260498:
-	.incbin "baserom.dol", 0x4969AC, 0x8
+	.asciz "Normal"
+	.balign 4
 .global $$260500
 $$260500:
-	.incbin "baserom.dol", 0x4969B4, 0x8
+	.asciz "Copper"
+	.balign 4
 .global $$260502
 $$260502:
-	.incbin "baserom.dol", 0x4969BC, 0xC
+	.asciz "Silver"
+	.balign 4
+	.4byte 0
 .global $$260503
 $$260503:
-	.incbin "baserom.dol", 0x4969C8, 0x8
+	.asciz "GoldGet"
 .global $$260504
 $$260504:
-	.incbin "baserom.dol", 0x4969D0, 0x8
+	.asciz "Gold"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260317
 $$260317:
-	.incbin "baserom.dol", 0x49D2D0, 0x4
+	.4byte 0x3F800000
 .global $$260318
 $$260318:
-	.incbin "baserom.dol", 0x49D2D4, 0x4
+	.4byte 0x40000000
 .global $$260331
 $$260331:
-	.incbin "baserom.dol", 0x49D2D8, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0
 .global $$260394
 $$260394:
-	.incbin "baserom.dol", 0x49D2E0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$260420
 $$260420:
-	.incbin "baserom.dol", 0x49D2E8, 0x8
+	.4byte 0xBDCCCCCD
+	.4byte 0

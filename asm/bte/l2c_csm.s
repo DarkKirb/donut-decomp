@@ -1434,100 +1434,371 @@ lbl_80092264:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21658
 $$21658:
-	.incbin "baserom.dol", 0x439EC0, 0x24
+	.4byte 0x80090DCC  ;# ptr
+	.4byte 0x80090DD0  ;# ptr
+	.4byte 0x80090DD4  ;# ptr
+	.4byte 0x80090DD8  ;# ptr
+	.4byte 0x80090DDC  ;# ptr
+	.4byte 0x80090DE0  ;# ptr
+	.4byte 0x80090DE4  ;# ptr
+	.4byte 0x80090DE8  ;# ptr
+	.4byte 0x80090DEC  ;# ptr
 .global $$21685
 $$21685:
-	.incbin "baserom.dol", 0x439EE4, 0x1C
+	.asciz "L2CAP - st: CLOSED evt: %d"
+	.balign 4
 .global $$21686
 $$21686:
-	.incbin "baserom.dol", 0x439F00, 0x44
+	.asciz "L2CAP - Calling Disconnect_Ind_Cb(), CID: 0x%04x  No Conf Needed"
+	.balign 4
 .global $$21687
 $$21687:
-	.incbin "baserom.dol", 0x439F44, 0x3C
+	.asciz "L2CAP - Calling ConnectCfm_Cb(), CID: 0x%04x  Status: %d"
+	.balign 4
 .global $$21690
 $$21690:
-	.incbin "baserom.dol", 0x439F80, 0x7C
+	.4byte 0x80090EB4  ;# ptr
+	.4byte 0x80090EE4  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80090E70  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80090F68  ;# ptr
+	.4byte 0x80090F8C  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80090FD8  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x8009105C  ;# ptr
+	.4byte 0x80090F2C  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091068  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x80091070  ;# ptr
+	.4byte 0x8009105C  ;# ptr
+	.4byte 0x80091008  ;# ptr
 .global $$21704
 $$21704:
-	.incbin "baserom.dol", 0x439FFC, 0x28
+	.asciz "L2CAP - st: ORIG_W4_SEC_COMP evt: %d"
+	.balign 4
 .global $$21707
 $$21707:
-	.incbin "baserom.dol", 0x43A024, 0x6C
+	.4byte 0x80091108  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x8009114C  ;# ptr
+	.4byte 0x80091178  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911C0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911CC  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911E0  ;# ptr
+	.4byte 0x800911C0  ;# ptr
 .global $$21721
 $$21721:
-	.incbin "baserom.dol", 0x43A090, 0x28
+	.asciz "L2CAP - st: TERM_W4_SEC_COMP evt: %d"
+	.balign 4
 .global $$21722
 $$21722:
-	.incbin "baserom.dol", 0x43A0B8, 0x30
+	.asciz "L2CAP - Calling Connect_Ind_Cb(), CID: 0x%04x"
+	.balign 4
 .global $$21725
 $$21725:
-	.incbin "baserom.dol", 0x43A0E8, 0x6C
+	.4byte 0x80091268  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091280  ;# ptr
+	.4byte 0x800912E8  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x8009131C  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091304  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091310  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091344  ;# ptr
+	.4byte 0x80091304  ;# ptr
 .global $$21744
 $$21744:
-	.incbin "baserom.dol", 0x43A154, 0x28
+	.asciz "L2CAP - st: W4_L2CAP_CON_RSP evt: %d"
+	.balign 4
 .global $$21745
 $$21745:
-	.incbin "baserom.dol", 0x43A17C, 0x38
+	.asciz "L2CAP - Calling Connect_Cfm_Cb(), CID: 0x%04x, Success"
+	.balign 4
 .global $$21746
 $$21746:
-	.incbin "baserom.dol", 0x43A1B4, 0x24
+	.asciz "L2CAP - Calling Connect_Pnd_Cb()"
+	.balign 4
 .global $$21747
 $$21747:
-	.incbin "baserom.dol", 0x43A1D8, 0x40
+	.asciz "L2CAP - Calling Connect_Cfm_Cb(), CID: 0x%04x, Failure Code: %d"
 .global $$21748
 $$21748:
-	.incbin "baserom.dol", 0x43A218, 0x38
+	.asciz "L2CAP - Calling Connect_Cfm_Cb(), CID: 0x%04x, Timeout"
+	.balign 4
 .global $$21751
 $$21751:
-	.incbin "baserom.dol", 0x43A250, 0x70
+	.4byte 0x800913E0  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009142C  ;# ptr
+	.4byte 0x8009148C  ;# ptr
+	.4byte 0x800914E4  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x80091584  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x80091578  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x8009158C  ;# ptr
+	.4byte 0x80091584  ;# ptr
+	.4byte 0x8009152C  ;# ptr
 .global $$21770
 $$21770:
-	.incbin "baserom.dol", 0x43A2C0, 0x24
+	.asciz "L2CAP - st: W4_L2CA_CON_RSP evt: %d"
 .global $$21773
 $$21773:
-	.incbin "baserom.dol", 0x43A2E4, 0x70
+	.4byte 0x8009161C  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091738  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091664  ;# ptr
+	.4byte 0x800916C4  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091744  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091764  ;# ptr
+	.4byte 0x80091738  ;# ptr
+	.4byte 0x800916E0  ;# ptr
 .global $$21800
 $$21800:
-	.incbin "baserom.dol", 0x43A354, 0x1C
+	.asciz "L2CAP - st: CONFIG evt: %d"
+	.balign 4
 .global $$21801
 $$21801:
-	.incbin "baserom.dol", 0x43A370, 0x30
+	.asciz "L2CAP - Calling Config_Req_Cb(), CID: 0x%04x"
+	.balign 4
 .global $$21802
 $$21802:
-	.incbin "baserom.dol", 0x43A3A0, 0x30
+	.asciz "L2CAP - Calling Config_Rsp_Cb(), CID: 0x%04x"
+	.balign 4
 .global $$21803
 $$21803:
-	.incbin "baserom.dol", 0x43A3D0, 0x3C
+	.asciz "L2CAP - Calling Config_Rsp_Cb(), CID: 0x%04x, Failure: %d"
+	.balign 4
 .global $$21804
 $$21804:
-	.incbin "baserom.dol", 0x43A40C, 0x40
+	.asciz "L2CAP - Calling Disconnect_Ind_Cb(), CID: 0x%04x  Conf Needed"
+	.balign 4
 .global $$21805
 $$21805:
-	.incbin "baserom.dol", 0x43A44C, 0x2C
+	.asciz "L2CAP - Calling DataInd_Cb(), CID: 0x%04x"
+	.balign 4
 .global $$21808
 $$21808:
-	.incbin "baserom.dol", 0x43A478, 0x70
+	.4byte 0x800917F8  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x8009183C  ;# ptr
+	.4byte 0x800918A0  ;# ptr
+	.4byte 0x8009191C  ;# ptr
+	.4byte 0x80091968  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091A7C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x800919C0  ;# ptr
+	.4byte 0x800919EC  ;# ptr
+	.4byte 0x80091A38  ;# ptr
+	.4byte 0x80091A58  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091B2C  ;# ptr
+	.4byte 0x80091ABC  ;# ptr
+	.4byte 0x80091AE4  ;# ptr
 .global $$21829
 $$21829:
-	.incbin "baserom.dol", 0x43A4E8, 0x1C
+	.asciz "L2CAP - st: OPEN evt: %d"
+	.balign 4
 .global $$21832
 $$21832:
-	.incbin "baserom.dol", 0x43A504, 0x6C
+	.4byte 0x80091BC0  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091C04  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091C28  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091CA0  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091CF8  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D50  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D14  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D88  ;# ptr
+	.4byte 0x80091D38  ;# ptr
 .global $$21848
 $$21848:
-	.incbin "baserom.dol", 0x43A570, 0x28
+	.asciz "L2CAP - st: W4_L2CAP_DISC_RSP evt: %d"
+	.balign 4
 .global $$21849
 $$21849:
-	.incbin "baserom.dol", 0x43A598, 0x30
+	.asciz "L2CAP - Calling DisconnectCfm_Cb(), CID: 0x%04x"
 .global $$21852
 $$21852:
-	.incbin "baserom.dol", 0x43A5C8, 0x70
+	.4byte 0x80091E20  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091EB0  ;# ptr
+	.4byte 0x80091E64  ;# ptr
+	.4byte 0x80091F64  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F6C  ;# ptr
+	.4byte 0x80091F64  ;# ptr
+	.4byte 0x80091F10  ;# ptr
 .global $$21863
 $$21863:
-	.incbin "baserom.dol", 0x43A638, 0x28
+	.asciz "L2CAP - st: W4_L2CA_DISC_RSP evt: %d"
+	.balign 4
 .global $$21866
 $$21866:
-	.incbin "baserom.dol", 0x43A660, 0x70
+	.4byte 0x80091FFC  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C0  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920A0  ;# ptr
+	.4byte 0x800920C8  ;# ptr
+	.4byte 0x800920C0  ;# ptr
+	.4byte 0x80092044  ;# ptr
 .global $$21883
 $$21883:
-	.incbin "baserom.dol", 0x43A6D0, 0x28
+	.asciz "L2CAP - cannot send buffer, offset: %d"
+	.balign 4

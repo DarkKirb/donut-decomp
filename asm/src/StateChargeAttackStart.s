@@ -54,4 +54,11 @@ procFixPos__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart
 __vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart:
-	.incbin "baserom.dol", 0x464858, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80253E8C  ;# ptr
+	.4byte 0x80253E90  ;# ptr
+	.4byte 0x80253E94  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80253E98  ;# ptr
+	.4byte 0x80234504  ;# ptr

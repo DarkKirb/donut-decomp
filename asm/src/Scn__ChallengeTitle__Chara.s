@@ -644,83 +644,130 @@ setRandomFrame__Q28mintglue26Scn__ChallengeTitle__CharaFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256033
 $$256033:
-	.incbin "baserom.dol", 0x456B88, 0x1C
+	.asciz "Scn.ChallengeTitle.Chara"
+	.balign 4
 .global $$256034
 $$256034:
-	.incbin "baserom.dol", 0x456BA4, 0x1C
+	.asciz "void changeAnim(string,int)"
 .global $$256035
 $$256035:
-	.incbin "baserom.dol", 0x456BC0, 0x18
+	.asciz "bool isAnimLooped()"
+	.4byte 0
 .global $$256036
 $$256036:
-	.incbin "baserom.dol", 0x456BD8, 0x20
+	.asciz "void effectRequestN(int,string)"
 .global $$256037
 $$256037:
-	.incbin "baserom.dol", 0x456BF8, 0x18
+	.asciz "void releaseEffect()"
+	.balign 4
 .global $$256038
 $$256038:
-	.incbin "baserom.dol", 0x456C10, 0x14
+	.asciz "void createEquip()"
+	.balign 4
 .global $$256039
 $$256039:
-	.incbin "baserom.dol", 0x456C24, 0x1C
+	.asciz "void setVisibility(bool)"
+	.balign 4
 .global $$256040
 $$256040:
-	.incbin "baserom.dol", 0x456C40, 0x14
+	.asciz "void setSubAnim()"
+	.balign 4
 .global $$256041
 $$256041:
-	.incbin "baserom.dol", 0x456C54, 0x14
+	.asciz "void clearSubAnim()"
 .global $$256042
 $$256042:
-	.incbin "baserom.dol", 0x456C68, 0x1C
+	.asciz "void flashStart(int,bool)"
+	.balign 4
 .global $$256043
 $$256043:
-	.incbin "baserom.dol", 0x456C84, 0x14
+	.asciz "void flashReset()"
+	.balign 4
 .global $$256044
 $$256044:
-	.incbin "baserom.dol", 0x456C98, 0x18
+	.asciz "void setRandomFrame()"
+	.balign 4
 .global $$256046
 $$256046:
-	.incbin "baserom.dol", 0x456CB0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3D00  ;# ptr
 .global $$256077
 $$256077:
-	.incbin "baserom.dol", 0x456CBC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3CDC  ;# ptr
 .global $$256082
 $$256082:
-	.incbin "baserom.dol", 0x456CC8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3C98  ;# ptr
 .global $$256098
 $$256098:
-	.incbin "baserom.dol", 0x456CD4, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3C74  ;# ptr
 .global $$256103
 $$256103:
-	.incbin "baserom.dol", 0x456CE0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3C50  ;# ptr
 .global $$256108
 $$256108:
-	.incbin "baserom.dol", 0x456CEC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3C1C  ;# ptr
 .global $$256111
 $$256111:
-	.incbin "baserom.dol", 0x456CF8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3BF8  ;# ptr
 .global $$256116
 $$256116:
-	.incbin "baserom.dol", 0x456D04, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3BD4  ;# ptr
 .global $$256121
 $$256121:
-	.incbin "baserom.dol", 0x456D10, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3B90  ;# ptr
 .global $$256127
 $$256127:
-	.incbin "baserom.dol", 0x456D1C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3B6C  ;# ptr
 .global $$256141
 $$256141:
-	.incbin "baserom.dol", 0x456D28, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C3AC4  ;# ptr
 .global $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv
 $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv:
-	.incbin "baserom.dol", 0x456D34, 0x8C
+	.asciz "MintPtr is 0."
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv$$20
 $$2STRING$$2ref__Q26mintvm37MintPtr$$0Q33scn14challengetitle5Chara$$1CFv$$20:
-	.incbin "baserom.dol", 0x4936D8, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256148
 $$256148:
-	.incbin "baserom.dol", 0x49A708, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

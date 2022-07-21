@@ -670,64 +670,84 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53247App__Alert_cppFRQ26mintvm13Mint
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253984
 $$253984:
-	.incbin "baserom.dol", 0x455F28, 0xC
+	.asciz "App.Alert"
+	.balign 4
 .global $$253985
 $$253985:
-	.incbin "baserom.dol", 0x455F34, 0x14
+	.asciz "void Print(string)"
+	.balign 4
 .global $$253986
 $$253986:
-	.incbin "baserom.dol", 0x455F48, 0x20
+	.asciz "void PrintIndex(int,string)"
+	.4byte 0
 .global $$253987
 $$253987:
-	.incbin "baserom.dol", 0x455F68, 0x10
+	.asciz "void Print(int)"
 .global $$253988
 $$253988:
-	.incbin "baserom.dol", 0x455F78, 0x18
+	.asciz "void Print(string,int)"
+	.balign 4
 .global $$253989
 $$253989:
-	.incbin "baserom.dol", 0x455F90, 0x1C
+	.asciz "void Print(string,int,int)"
+	.balign 4
 .global $$253990
 $$253990:
-	.incbin "baserom.dol", 0x455FAC, 0x20
+	.asciz "void Print(string,int,int,int)"
+	.balign 4
 .global $$253991
 $$253991:
-	.incbin "baserom.dol", 0x455FCC, 0x1C
+	.asciz "void PrintIndex(int,int)"
+	.balign 4
 .global $$253992
 $$253992:
-	.incbin "baserom.dol", 0x455FE8, 0x20
+	.asciz "void PrintIndex(int,string,int)"
 .global $$253993
 $$253993:
-	.incbin "baserom.dol", 0x456008, 0x28
+	.asciz "void PrintIndex(int,string,int,int)"
+	.4byte 0
 .global $$253994
 $$253994:
-	.incbin "baserom.dol", 0x456030, 0x28
+	.asciz "void PrintIndex(int,string,int,int,int)"
 .global $$253995
 $$253995:
-	.incbin "baserom.dol", 0x456058, 0x14
+	.asciz "void Print(float)"
+	.balign 4
 .global $$253996
 $$253996:
-	.incbin "baserom.dol", 0x45606C, 0x1C
+	.asciz "void Print(string,float)"
+	.balign 4
 .global $$253997
 $$253997:
-	.incbin "baserom.dol", 0x456088, 0x20
+	.asciz "void Print(string,float,float)"
+	.balign 4
 .global $$253998
 $$253998:
-	.incbin "baserom.dol", 0x4560A8, 0x28
+	.asciz "void Print(string,float,float,float)"
+	.balign 4
 .global $$253999
 $$253999:
-	.incbin "baserom.dol", 0x4560D0, 0x1C
+	.asciz "void PrintIndex(int,float)"
+	.balign 4
 .global $$254000
 $$254000:
-	.incbin "baserom.dol", 0x4560EC, 0x24
+	.asciz "void PrintIndex(int,string,float)"
+	.balign 4
 .global $$254001
 $$254001:
-	.incbin "baserom.dol", 0x456110, 0x28
+	.asciz "void PrintIndex(int,string,float,float)"
 .global $$254002
 $$254002:
-	.incbin "baserom.dol", 0x456138, 0x30
+	.asciz "void PrintIndex(int,string,float,float,float)"
+	.balign 4
 .global $$254003
 $$254003:
-	.incbin "baserom.dol", 0x456168, 0x28
+	.asciz "void Print(const ref HEL.Math.Vector3)"
+	.balign 4
 .global $$254004
 $$254004:
-	.incbin "baserom.dol", 0x456190, 0x58
+	.asciz "void PrintIndex(int,const ref HEL.Math.Vector3)"
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0

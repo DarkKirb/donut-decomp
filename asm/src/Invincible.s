@@ -847,19 +847,173 @@ lbl_803429C0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_ANIM_TABLE__Q43scn4step5chara24$$2unnamed$$2Invincible_cpp$$2
 T_ALPHA_ANIM_TABLE__Q43scn4step5chara24$$2unnamed$$2Invincible_cpp$$2:
-	.incbin "baserom.dol", 0x413A60, 0x28
+	.4byte 0x000000F0
+	.4byte 0x00000050
+	.4byte 0x000000A0
+	.4byte 0x00000014
+	.4byte 0x0000008C
+	.4byte 0x0000000A
+	.4byte 0x00000078
+	.4byte 0
+	.4byte 0x00000064
+	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MIGHTY_COLOR_TABLE__24$$2unnamed$$2Invincible_cpp$$2
 MIGHTY_COLOR_TABLE__24$$2unnamed$$2Invincible_cpp$$2:
-	.incbin "baserom.dol", 0x415EA0, 0x240
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000040
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000060
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000080
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000A0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000C0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000E0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000E0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000C0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000A0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000C4
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000040
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000060
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000080
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000A0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000C0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000E0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000E0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000C0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000A0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000060
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000040
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000060
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x00000080
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000A0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000C0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000E0
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000E0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000C0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x000000A0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000060
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0x00000020
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250018
 $$250018:
-	.incbin "baserom.dol", 0x49AE88, 0x8
+	.4byte 0xFFFFFF00
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253735
 $$253735:
-	.incbin "baserom.dol", 0x49D768, 0x8
+	.4byte 0xFFFFFF00
+	.4byte 0

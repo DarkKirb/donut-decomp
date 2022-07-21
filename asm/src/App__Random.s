@@ -197,22 +197,38 @@ lbl_801C1850:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252401
 $$252401:
-	.incbin "baserom.dol", 0x4561E8, 0xC
+	.asciz "App.Random"
+	.balign 4
 .global $$252402
 $$252402:
-	.incbin "baserom.dol", 0x4561F4, 0x18
+	.asciz "bool RandBool(float)"
+	.balign 4
 .global $$252403
 $$252403:
-	.incbin "baserom.dol", 0x45620C, 0x10
+	.asciz "int Rand(int)"
+	.balign 4
 .global $$252404
 $$252404:
-	.incbin "baserom.dol", 0x45621C, 0x14
+	.asciz "int Rand(int,int)"
+	.balign 4
 .global $$252405
 $$252405:
-	.incbin "baserom.dol", 0x456230, 0x1C
+	.asciz "float RandF(float,float)"
+	.balign 4
 .global $$252406
 $$252406:
-	.incbin "baserom.dol", 0x45624C, 0x10
+	.asciz "float RandNF()"
+	.balign 4
 .global $$252407
 $$252407:
-	.incbin "baserom.dol", 0x45625C, 0x64
+	.asciz "float RandAF()"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0

@@ -1644,23 +1644,37 @@ __sinit_$$3snd_BasicSound_cpp:
 /* 80106B7C 001029BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402398, 0x4
+	.4byte 0x80106B70  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10BasicSound
 __vt__Q44nw4r3snd6detail10BasicSound:
-	.incbin "baserom.dol", 0x43E100, 0x38
+	.4byte 0
+	.4byte 0
+	.4byte 0x80106B60  ;# ptr
+	.4byte 0x80106B50  ;# ptr
+	.4byte 0x80106610  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80105590  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x80106840  ;# ptr
+	.4byte 0x80106200  ;# ptr
+	.4byte 0x80106240  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212466
 $$212466:
-	.incbin "baserom.dol", 0x499DF0, 0x4
+	.4byte 0x3F800000
 .global $$212467
 $$212467:
-	.incbin "baserom.dol", 0x499DF4, 0x4
+	.4byte 0
 .global $$212524
 $$212524:
-	.incbin "baserom.dol", 0x499DF8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q44nw4r3snd6detail10BasicSound

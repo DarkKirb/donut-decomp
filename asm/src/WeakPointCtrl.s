@@ -94,4 +94,5 @@ __vc__Q33hel6common62MutableArray$$0Q53scn4step4boss13WeakPointCtrl13WeakPointDa
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249046
 $$249046:
-	.incbin "baserom.dol", 0x49AF18, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -362,24 +362,33 @@ procFixPos__Q53scn4step4boss9moundeath13StateRollJumpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath13StateRollJump
 __vt__Q53scn4step4boss9moundeath13StateRollJump:
-	.incbin "baserom.dol", 0x4652F0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80257C18  ;# ptr
+	.4byte 0x80257C98  ;# ptr
+	.4byte 0x80257E50  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80257F8C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256524
 $$256524:
-	.incbin "baserom.dol", 0x49B480, 0x4
+	.4byte 0
 .global $$256538
 $$256538:
-	.incbin "baserom.dol", 0x49B484, 0x4
+	.4byte 0xBF800000
 .global $$256556
 $$256556:
-	.incbin "baserom.dol", 0x49B488, 0x4
+	.4byte 0x42B40000
 .global $$256557
 $$256557:
-	.incbin "baserom.dol", 0x49B48C, 0x4
+	.4byte 0x3F800000
 .global $$256558
 $$256558:
-	.incbin "baserom.dol", 0x49B490, 0x8
+	.4byte 0x43340000
+	.4byte 0
 .global $$256561
 $$256561:
-	.incbin "baserom.dol", 0x49B498, 0x8
+	.4byte 0x43300000
+	.4byte 0

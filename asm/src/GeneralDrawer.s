@@ -289,7 +289,7 @@ lbl_8027A994:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global DEFAULT_COLOR__Q43scn4step5debug27$$2unnamed$$2GeneralDrawer_cpp$$2
 DEFAULT_COLOR__Q43scn4step5debug27$$2unnamed$$2GeneralDrawer_cpp$$2:
-	.incbin "baserom.dol", 0x49B920, 0x4
+	.4byte 0xFFFFFF80
 .global $$252239
 $$252239:
-	.incbin "baserom.dol", 0x49B924, 0x4
+	.4byte 0x3727C5AC

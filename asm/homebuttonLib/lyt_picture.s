@@ -392,26 +392,59 @@ __sinit_$$3lyt_picture_cpp:
 /* 8013C09C 00137EDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023CC, 0x4
+	.4byte 0x8013C080  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$28171
 $$28171:
-	.incbin "baserom.dol", 0x40A350, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt7Picture
 __vt__Q36nw4hbm3lyt7Picture:
-	.incbin "baserom.dol", 0x440200, 0x6C
+	.4byte 0x80444198
+	.4byte 0
+	.4byte 0x8013BC70  ;# ptr
+	.4byte 0x8013C070  ;# ptr
+	.4byte 0x8013B0A0  ;# ptr
+	.4byte 0x8013B3A0  ;# ptr
+	.4byte 0x8013BF90  ;# ptr
+	.4byte 0x8013B580  ;# ptr
+	.4byte 0x8013B610  ;# ptr
+	.4byte 0x8013BF00  ;# ptr
+	.4byte 0x8013BF20  ;# ptr
+	.4byte 0x8013AEB0  ;# ptr
+	.4byte 0x8013AEE0  ;# ptr
+	.4byte 0x8013BF50  ;# ptr
+	.4byte 0x8013BF70  ;# ptr
+	.4byte 0x8013AF30  ;# ptr
+	.4byte 0x8013AFE0  ;# ptr
+	.4byte 0x8013B6D0  ;# ptr
+	.4byte 0x8013B6F0  ;# ptr
+	.4byte 0x8013B700  ;# ptr
+	.4byte 0x8013B710  ;# ptr
+	.4byte 0x8013B7F0  ;# ptr
+	.4byte 0x8013B870  ;# ptr
+	.4byte 0x8013BB20  ;# ptr
+	.4byte 0x8013B930  ;# ptr
+	.4byte 0x8013BD40  ;# ptr
+	.4byte 0x8013BD90  ;# ptr
 .global $$27912
 $$27912:
-	.incbin "baserom.dol", 0x44026C, 0x18
+	.asciz "nw4hbm::lyt::Picture"
+	.balign 4
 .global $$27913
 $$27913:
-	.incbin "baserom.dol", 0x440284, 0x14
+	.4byte 0x80443F60
+	.4byte 0
+	.4byte 0x80443F38
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt7Picture
 __RTTI__Q36nw4hbm3lyt7Picture:
-	.incbin "baserom.dol", 0x440298, 0x8
+	.4byte 0x8044416C
+	.4byte 0x80444184
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt7Picture

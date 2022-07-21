@@ -32,4 +32,5 @@ Free__Q23mem12SDKAllocatorFP12MEMAllocatorPv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global AllocatorFunc__Q23mem12SDKAllocator
 AllocatorFunc__Q23mem12SDKAllocator:
-	.incbin "baserom.dol", 0x49A6F8, 0x8
+	.4byte 0x801BF778  ;# ptr
+	.4byte 0x801BF794  ;# ptr

@@ -37,9 +37,11 @@ VPanic__Q24nw4r2dbFPCciPCcP16__va_list_structb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x450138, 0x10
+	.asciz "NW4R ASSERT: "
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x493158, 0x8
+	.4byte 0
+	.4byte 0

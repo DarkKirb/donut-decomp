@@ -830,18 +830,22 @@ lbl_8008A164:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21709
 $$21709:
-	.incbin "baserom.dol", 0x438E20, 0x44
+	.asciz "WARNING: GAP Conn Indication for Unexpected Bd Addr...Disconnecting"
 .global $$21710
 $$21710:
-	.incbin "baserom.dol", 0x438E64, 0x2C
+	.asciz "GAP_CONN - Rcvd L2CAP conn ind, CID: 0x%x"
+	.balign 4
 .global $$21777
 $$21777:
-	.incbin "baserom.dol", 0x438E90, 0x28
+	.asciz "GAP_CONN - Rcvd L2CAP disc, CID: 0x%x"
+	.balign 4
 .global $$21798
 $$21798:
-	.incbin "baserom.dol", 0x438EB8, 0x38
+	.asciz "GAP_CONN - Rcvd L2CAP Is Congested (%d), CID: 0x%x"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21708
 $$21708:
-	.incbin "baserom.dol", 0x492CF8, 0x8
+	.asciz "*******"

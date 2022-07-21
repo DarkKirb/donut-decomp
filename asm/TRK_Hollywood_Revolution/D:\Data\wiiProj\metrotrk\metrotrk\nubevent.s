@@ -127,7 +127,8 @@ TRKDestructEvent:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DD50, 0x20
+	.asciz "MetroTRK - Event Queue full\n"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gTRKEventQueue

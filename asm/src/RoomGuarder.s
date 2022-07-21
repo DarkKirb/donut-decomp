@@ -3169,39 +3169,41 @@ lbl_8031E070:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$263446
 $$263446:
-	.incbin "baserom.dol", 0x47DCA8, 0x20
+	.asciz "step/gimmick/RoomGuarder"
+	.balign 4
+	.4byte 0
 .global $$263447
 $$263447:
-	.incbin "baserom.dol", 0x47DCC8, 0x18
+	.asciz "step/gimmick/CameraLock"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$263448
 $$263448:
-	.incbin "baserom.dol", 0x49D538, 0x4
+	.4byte 0
 .global $$263691
 $$263691:
-	.incbin "baserom.dol", 0x49D53C, 0x4
+	.4byte 0xFF7FFFFF
 .global $$263894
 $$263894:
-	.incbin "baserom.dol", 0x49D540, 0x4
+	.4byte 0x3F000000
 .global $$263895
 $$263895:
-	.incbin "baserom.dol", 0x49D544, 0x4
+	.4byte 0x3ECCCCCD
 .global $$263956
 $$263956:
-	.incbin "baserom.dol", 0x49D548, 0x4
+	.4byte 0x40000000
 .global $$263957
 $$263957:
-	.incbin "baserom.dol", 0x49D54C, 0x4
+	.4byte 0x3F800000
 .global $$260428
 $$260428:
-	.incbin "baserom.dol", 0x49D550, 0x4
+	.4byte 0xFFFFFFF0
 .global $$264155
 $$264155:
-	.incbin "baserom.dol", 0x49D554, 0x4
+	.4byte 0xBF000000
 .global $$264156
 $$264156:
-	.incbin "baserom.dol", 0x49D558, 0x4
+	.4byte 0x3DCCCCCD
 .global $$264195
 $$264195:
-	.incbin "baserom.dol", 0x49D55C, 0x4
+	.4byte 0x3727C5AC

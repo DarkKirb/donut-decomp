@@ -218,4 +218,13 @@ procFixPos__Q53scn4step4hero5smash14StateSmashKickFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5smash14StateSmashKick
 __vt__Q53scn4step4hero5smash14StateSmashKick:
-	.incbin "baserom.dol", 0x48AF90, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2410
+	.4byte 0x803A24D0
+	.4byte 0x803A2540
+	.4byte 0x8035550C
+	.4byte 0x803A25C0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

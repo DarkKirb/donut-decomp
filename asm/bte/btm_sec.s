@@ -3425,171 +3425,210 @@ lbl_8008821C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22854
 $$22854:
-	.incbin "baserom.dol", 0x438380, 0x20
+	.asciz "BTM_Sec: application registered"
 .global $$22894
 $$22894:
-	.incbin "baserom.dol", 0x4383A0, 0x20
+	.asciz "BTM_SetSecurityMode: mode:%d"
+	.balign 4
 .global $$22895
 $$22895:
-	.incbin "baserom.dol", 0x4383C0, 0x2C
+	.asciz "BTM_SetSecurityMode: Authen Enable -> FALSE"
 .global $$22896
 $$22896:
-	.incbin "baserom.dol", 0x4383EC, 0x2C
+	.asciz "BTM_SetSecurityMode: Authen Enable -> TRUE"
+	.balign 4
 .global $$22900
 $$22900:
-	.incbin "baserom.dol", 0x438418, 0x48
+	.asciz "BTM_SetPinType: pin type %d [variable-0, fixed-1], code %s, length %d"
+	.balign 4
 .global $$22920
 $$22920:
-	.incbin "baserom.dol", 0x438460, 0x48
+	.asciz "BTM_SEC_REG[%d]: id %d, is_orig %d, psm 0x%04x, proto_id %d, chan_id %d"
 .global $$22921
 $$22921:
-	.incbin "baserom.dol", 0x4384A8, 0x48
+	.asciz "               : sec: 0x%x, service name [%s] (up to %d chars saved)"
+	.balign 4
 .global $$22922
 $$22922:
-	.incbin "baserom.dol", 0x4384F0, 0x30
+	.asciz "BTM_SEC_REG: Out of Service Records (%d)"
+	.balign 4
+	.4byte 0
 .global $$22972
 $$22972:
-	.incbin "baserom.dol", 0x438520, 0x60
+	.asciz "Security Manager: Attempting Authorization of Unknown Device Address [%02x%02x%02x%02x%02x%02x]"
 .global $$22973
 $$22973:
-	.incbin "baserom.dol", 0x438580, 0x30
+	.asciz "Security Manager: authorized status:%d State:%d"
 .global $$23010
 $$23010:
-	.incbin "baserom.dol", 0x4385B0, 0x30
+	.asciz "BTM_SecBond BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.balign 4
 .global $$23011
 $$23011:
-	.incbin "baserom.dol", 0x4385E0, 0x20
+	.asciz "BTM_SecBond: Illegal Pin len:%d"
 .global $$23012
 $$23012:
-	.incbin "baserom.dol", 0x438600, 0x20
+	.asciz "BTM_SecBond: no device block"
+	.balign 4
 .global $$23013
 $$23013:
-	.incbin "baserom.dol", 0x438620, 0x20
+	.asciz "BTM_SecBond -> Already Paired"
+	.balign 4
 .global $$23014
 $$23014:
-	.incbin "baserom.dol", 0x438640, 0x24
+	.asciz "BTM_SecBond: Authen Enable -> TRUE"
+	.balign 4
 .global $$23015
 $$23015:
-	.incbin "baserom.dol", 0x438664, 0x18
+	.asciz "BTM_SecBond: no buffer"
+	.balign 4
 .global $$23016
 $$23016:
-	.incbin "baserom.dol", 0x43867C, 0x28
+	.asciz "btm_restore_mode: Authen Enable -> %d"
+	.balign 4
 .global $$23045
 $$23045:
-	.incbin "baserom.dol", 0x4386A4, 0x34
+	.asciz "Security Manager: BTM_SetEncryption not connected"
+	.balign 4
 .global $$23046
 $$23046:
-	.incbin "baserom.dol", 0x4386D8, 0x38
+	.asciz "Security Manager: BTM_SetEncryption already encrypted"
+	.balign 4
 .global $$23047
 $$23047:
-	.incbin "baserom.dol", 0x438710, 0x30
+	.asciz "Security Manager: BTM_SetEncryption busy"
+	.balign 4
+	.4byte 0
 .global $$23048
 $$23048:
-	.incbin "baserom.dol", 0x438740, 0x50
+	.asciz "Security Manager: BTM_SetEncryption Handle:%d State:%d Flags:0x%x Required:0x%x"
 .global $$23080
 $$23080:
-	.incbin "baserom.dol", 0x438790, 0x38
+	.asciz "Security Manager: l2cap_access_req PSM:%d no resources"
+	.balign 4
 .global $$23081
 $$23081:
-	.incbin "baserom.dol", 0x4387C8, 0x44
+	.asciz "Security Manager: l2cap_access_req PSM:%d no application registerd"
+	.balign 4
 .global $$23082
 $$23082:
-	.incbin "baserom.dol", 0x43880C, 0x44
+	.asciz "Security Manager: l2cap_access_req PSM:%d postponed for multiplexer"
 .global $$23083
 $$23083:
-	.incbin "baserom.dol", 0x438850, 0x58
+	.asciz "Security Manager: l2cap_access_req PSM:%d Handle:%d State:%d Flags:0x%x Required:0x%x"
+	.balign 4
 .global $$23084
 $$23084:
-	.incbin "baserom.dol", 0x4388A8, 0x30
+	.asciz "Security Manager: trusted:0x%04x%04x Flags:0x%x"
 .global $$23105
 $$23105:
-	.incbin "baserom.dol", 0x4388D8, 0x40
+	.asciz "Security Manager: MX service not found PSM:%d Proto:%d SCN:%d"
+	.balign 4
 .global $$23125
 $$23125:
-	.incbin "baserom.dol", 0x438918, 0x3C
+	.asciz "Security Manager: connect request from not paired device"
+	.balign 4
 .global $$23195
 $$23195:
-	.incbin "baserom.dol", 0x438954, 0x38
+	.asciz "Security Manager: rmt_name_complete status:%d State:%d"
+	.balign 4
 .global $$23238
 $$23238:
-	.incbin "baserom.dol", 0x43898C, 0x34
+	.asciz "Security Manager: auth_complete status:%d State:%d"
+	.balign 4
 .global $$23250
 $$23250:
-	.incbin "baserom.dol", 0x4389C0, 0x30
+	.asciz "Security Manager: mkey comp status:%d State:%d"
+	.balign 4
 .global $$23268
 $$23268:
-	.incbin "baserom.dol", 0x4389F0, 0x34
+	.asciz "Security Manager: encrypt_change status:%d State:%d"
 .global $$23318
 $$23318:
-	.incbin "baserom.dol", 0x438A24, 0x44
+	.asciz "Security Manager: btm_sec_connected handle:%d status:%d enc_mode:%d"
 .global $$23358
 $$23358:
-	.incbin "baserom.dol", 0x438A68, 0x44
+	.asciz "btm_sec_link_key_notification()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
 .global $$23359
 $$23359:
-	.incbin "baserom.dol", 0x438AAC, 0x2C
+	.asciz "                                TYPE: %d"
+	.balign 4
 .global $$23373
 $$23373:
-	.incbin "baserom.dol", 0x438AD8, 0x40
+	.asciz "btm_sec_link_key_request()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.balign 4
 .global $$23377
 $$23377:
-	.incbin "baserom.dol", 0x438B18, 0x24
+	.asciz "btm_sec_pin_code_request_timeout()"
+	.balign 4
 .global $$23404
 $$23404:
-	.incbin "baserom.dol", 0x438B3C, 0x40
+	.asciz "btm_sec_pin_code_request()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.balign 4
 .global $$23405
 $$23405:
-	.incbin "baserom.dol", 0x438B7C, 0x30
+	.asciz "btm_sec_pin_code_request bonding sending reply"
+	.balign 4
 .global $$23406
 $$23406:
-	.incbin "baserom.dol", 0x438BAC, 0x30
+	.asciz "btm_sec_pin_code_request: Authen Enable -> %d"
+	.balign 4
 .global $$23407
 $$23407:
-	.incbin "baserom.dol", 0x438BDC, 0x50
+	.asciz "btm_sec_pin_code_request(): Pairing disabled:%d; PIN callback:%x, Dev Rec:%x!"
+	.balign 4
 .global $$23485
 $$23485:
-	.incbin "baserom.dol", 0x438C2C, 0x40
+	.asciz "btm_sec_execute_procedure: Required:0x%x Flags:0x%x State:%d"
+	.balign 4
 .global $$23486
 $$23486:
-	.incbin "baserom.dol", 0x438C6C, 0x24
+	.asciz "L2CAP - no LCB for L2CA_conn_req"
+	.balign 4
 .global $$23487
 $$23487:
-	.incbin "baserom.dol", 0x438C90, 0x24
+	.asciz "Security Manager: Start get name"
+	.balign 4
 .global $$23488
 $$23488:
-	.incbin "baserom.dol", 0x438CB4, 0x28
+	.asciz "Security Manager: Start authentication"
+	.balign 4
 .global $$23489
 $$23489:
-	.incbin "baserom.dol", 0x438CDC, 0x24
+	.asciz "Security Manager: Start encryption"
+	.balign 4
 .global $$23490
 $$23490:
-	.incbin "baserom.dol", 0x438D00, 0x28
+	.asciz "Security Manager: Start authorization"
+	.balign 4
 .global $$23491
 $$23491:
-	.incbin "baserom.dol", 0x438D28, 0x28
+	.asciz "Security Manager: trusted:0x%04x%04x"
+	.balign 4
 .global $$23492
 $$23492:
-	.incbin "baserom.dol", 0x438D50, 0x24
+	.asciz "Security Manager: access granted"
+	.balign 4
 .global $$23519
 $$23519:
-	.incbin "baserom.dol", 0x438D74, 0x1C
+	.asciz "btm_sec_collision_timeout()"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21779
 $$21779:
-	.incbin "baserom.dol", 0x499490, 0x1
+	.byte 0xFF
 .global lbl_8055E951
 lbl_8055E951:
-	.incbin "baserom.dol", 0x499491, 0x1
+	.byte 0xFF
 .global lbl_8055E952
 lbl_8055E952:
-	.incbin "baserom.dol", 0x499492, 0x1
+	.byte 0xFF
 .global lbl_8055E953
 lbl_8055E953:
-	.incbin "baserom.dol", 0x499493, 0x1
+	.byte 0xFF
 .global lbl_8055E954
 lbl_8055E954:
-	.incbin "baserom.dol", 0x499494, 0x1
+	.byte 0xFF
 .global lbl_8055E955
 lbl_8055E955:
-	.incbin "baserom.dol", 0x499495, 0x3
+	.byte 0xFF, 0x00, 0x00

@@ -223,7 +223,13 @@ __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick24St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick24StateChallengeBattleLose$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick24StateChallengeBattleLose$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FF40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333E00
+	.4byte 0x80333DC0
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x47FF50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80333DFC
+	.4byte 0x80333DDC

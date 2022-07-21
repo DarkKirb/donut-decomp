@@ -259,15 +259,25 @@ lbl_803694DC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common24StateShipRepairDemoAfter
 __vt__Q53scn4step4hero6common24StateShipRepairDemoAfter:
-	.incbin "baserom.dol", 0x4880D8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80369294
+	.4byte 0x80369344
+	.4byte 0x80369410
+	.4byte 0x8035550C
+	.4byte 0x803694A8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260120
 $$260120:
-	.incbin "baserom.dol", 0x49DBF0, 0x4
+	.4byte 0
 .global $$260147
 $$260147:
-	.incbin "baserom.dol", 0x49DBF4, 0x4
+	.4byte 0x3DCCCCCD
 .global $$260150
 $$260150:
-	.incbin "baserom.dol", 0x49DBF8, 0x8
+	.4byte 0x43300000
+	.4byte 0

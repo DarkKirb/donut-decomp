@@ -154,4 +154,5 @@ setInvalid__Q43scn4step7gimmick18FallLandControllerFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253415
 $$253415:
-	.incbin "baserom.dol", 0x49D110, 0x8
+	.4byte 0
+	.4byte 0

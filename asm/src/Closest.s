@@ -279,10 +279,11 @@ __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250353
 $$250353:
-	.incbin "baserom.dol", 0x49A3F8, 0x4
+	.4byte 0
 .global $$250354
 $$250354:
-	.incbin "baserom.dol", 0x49A3FC, 0x4
+	.4byte 0x3F800000
 .global $$250429
 $$250429:
-	.incbin "baserom.dol", 0x49A400, 0x8
+	.4byte 0x3727C5AC
+	.4byte 0

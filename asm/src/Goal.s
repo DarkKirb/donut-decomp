@@ -158,18 +158,23 @@ lbl_803B36B4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253424
 $$253424:
-	.incbin "baserom.dol", 0x48C600, 0x18
+	.asciz "step/challenge/Main"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253425
 $$253425:
-	.incbin "baserom.dol", 0x497B98, 0x8
+	.asciz "Goal"
+	.balign 4
 .global $$253462
 $$253462:
-	.incbin "baserom.dol", 0x497BA0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253478
 $$253478:
-	.incbin "baserom.dol", 0x497BA8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253479
 $$253479:
-	.incbin "baserom.dol", 0x497BB0, 0x8
+	.4byte 0x456E6400
+	.4byte 0

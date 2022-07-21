@@ -708,14 +708,33 @@ GetTypeObj__Q34nw4r3g3d12ScnMdlExpandCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12ScnMdlExpand
 TYPE_NAME__Q34nw4r3g3d12ScnMdlExpand:
-	.incbin "baserom.dol", 0x404FF8, 0x18
+	.4byte 0x0000000D
+	.asciz "ScnMdlExpand"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d12ScnMdlExpand
 __vt__Q34nw4r3g3d12ScnMdlExpand:
-	.incbin "baserom.dol", 0x43D250, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F13E0  ;# ptr
+	.4byte 0x800F1080  ;# ptr
+	.4byte 0x800F1360  ;# ptr
+	.4byte 0x800F1460  ;# ptr
+	.4byte 0x800F1450  ;# ptr
+	.4byte 0x800E9D40  ;# ptr
+	.4byte 0x800E9350  ;# ptr
+	.4byte 0x800E94F0  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9110  ;# ptr
+	.4byte 0x800F0D60  ;# ptr
+	.4byte 0x800F0EB0  ;# ptr
+	.4byte 0x800F0FF0  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global INVALID_NODE_ID__Q34nw4r3g3d30$$2unnamed$$2g3d_scnmdlexpand_cpp$$2
 INVALID_NODE_ID__Q34nw4r3g3d30$$2unnamed$$2g3d_scnmdlexpand_cpp$$2:
-	.incbin "baserom.dol", 0x492E18, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0

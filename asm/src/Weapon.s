@@ -2202,42 +2202,55 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNorm
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q43scn4step6weapon11StateNormal$$4PQ43scn4step6weapon6Weapon$$1:
-	.incbin "baserom.dol", 0x48FEF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803DB1B4
+	.4byte 0x803DB198
 .global __vt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1
 __vt__Q24util43StateChanger$$0Q43scn4step6weapon6IState$$4256$$1:
-	.incbin "baserom.dol", 0x48FF08, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x803DA544
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x48FF14, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x48FF38, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x48FF44, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x48FF68, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x48FF74, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x48FF98, 0x10
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$266105
 $$266105:
-	.incbin "baserom.dol", 0x49E878, 0x4
+	.4byte 0x41200000
 .global $$266106
 $$266106:
-	.incbin "baserom.dol", 0x49E87C, 0x4
+	.4byte 0x40000000
 .global $$266107
 $$266107:
-	.incbin "baserom.dol", 0x49E880, 0x4
+	.4byte 0
 .global $$266108
 $$266108:
-	.incbin "baserom.dol", 0x49E884, 0x4
+	.4byte 0x3F800000
 .global $$266109
 $$266109:
-	.incbin "baserom.dol", 0x49E888, 0x8
+	.4byte 0x42B40000
+	.4byte 0

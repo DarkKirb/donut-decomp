@@ -181,18 +181,24 @@ lbl_80174454:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22545
 $$22545:
-	.incbin "baserom.dol", 0x44EBE0, 0x10
+	.asciz "MsgStdBn"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22546
 $$22546:
-	.incbin "baserom.dol", 0x492ED0, 0x8
+	.asciz "LBL1"
+	.balign 4
 .global $$22547
 $$22547:
-	.incbin "baserom.dol", 0x492ED8, 0x8
+	.asciz "TXT2"
+	.balign 4
 .global $$22548
 $$22548:
-	.incbin "baserom.dol", 0x492EE0, 0x8
+	.asciz "ATR1"
+	.balign 4
 .global $$22549
 $$22549:
-	.incbin "baserom.dol", 0x492EE8, 0x8
+	.asciz "TSY1"
+	.balign 4

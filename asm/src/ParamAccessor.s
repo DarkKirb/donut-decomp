@@ -114,9 +114,11 @@ str__Q25param13ParamAccessorCFUi:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249124
 $$249124:
-	.incbin "baserom.dol", 0x459508, 0x18
+	.asciz "param/Archive.bin.cmp"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249125
 $$249125:
-	.incbin "baserom.dol", 0x493A38, 0x8
+	.asciz "%s.bin"
+	.balign 4

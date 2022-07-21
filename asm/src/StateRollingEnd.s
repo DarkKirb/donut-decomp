@@ -67,4 +67,11 @@ procFixPos__Q53scn4step4boss9moundeath15StateRollingEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath15StateRollingEnd
 __vt__Q53scn4step4boss9moundeath15StateRollingEnd:
-	.incbin "baserom.dol", 0x4652A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80257684  ;# ptr
+	.4byte 0x80257688  ;# ptr
+	.4byte 0x8025768C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802576E0  ;# ptr
+	.4byte 0x80234504  ;# ptr

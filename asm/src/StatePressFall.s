@@ -341,12 +341,19 @@ lbl_802564D4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath14StatePressFall
 __vt__Q53scn4step4boss9moundeath14StatePressFall:
-	.incbin "baserom.dol", 0x4651C0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80256180  ;# ptr
+	.4byte 0x80256200  ;# ptr
+	.4byte 0x80256204  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025625C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256793
 $$256793:
-	.incbin "baserom.dol", 0x49B428, 0x4
+	.4byte 0
 .global $$256815
 $$256815:
-	.incbin "baserom.dol", 0x49B42C, 0x4
+	.4byte 0xBF800000

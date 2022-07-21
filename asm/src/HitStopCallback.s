@@ -260,19 +260,39 @@ onEnd__Q43scn4step6weapon15HitStopCallbackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss15HitStopCallback
 __vt__Q43scn4step4boss15HitStopCallback:
-	.incbin "baserom.dol", 0x4606B8, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x80230AA8  ;# ptr
+	.4byte 0x80230B04  ;# ptr
+	.4byte 0x80230B74  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy15HitStopCallback
 __vt__Q43scn4step5enemy15HitStopCallback:
-	.incbin "baserom.dol", 0x46E000, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x80288A34  ;# ptr
+	.4byte 0x80288A38  ;# ptr
+	.4byte 0x80288A78  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero15HitStopCallback
 __vt__Q43scn4step4hero15HitStopCallback:
-	.incbin "baserom.dol", 0x480D68, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x80340EE4
+	.4byte 0x80340EE8
+	.4byte 0x80340F34
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon15HitStopCallback
 __vt__Q43scn4step6weapon15HitStopCallback:
-	.incbin "baserom.dol", 0x48F8B0, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D64E0
+	.4byte 0x803D64E4
+	.4byte 0x803D6524
+	.4byte 0

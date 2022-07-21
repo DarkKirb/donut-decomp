@@ -324,19 +324,41 @@ GetRuntimeTypeInfo__Q33scn11staffcredit16SceneStaffCreditCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252494
 $$252494:
-	.incbin "baserom.dol", 0x4920A8, 0x10
+	.asciz "StaffCredit.dn"
+	.balign 4
 .global $$252495
 $$252495:
-	.incbin "baserom.dol", 0x4920B8, 0x18
+	.asciz "StaffCreditAfterLoad.dn"
 .global $$252496
 $$252496:
-	.incbin "baserom.dol", 0x4920D0, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$252497
 $$252497:
-	.incbin "baserom.dol", 0x4920E0, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global __vt__Q33scn11staffcredit16SceneStaffCredit
 __vt__Q33scn11staffcredit16SceneStaffCredit:
-	.incbin "baserom.dol", 0x4920F0, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F9FD4
+	.4byte 0x803F9D88
+	.4byte 0x803F9E1C
+	.4byte 0x803F9DF4
+	.4byte 0x803F9E44
+	.4byte 0x803F9E6C
+	.4byte 0x803F9E94
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn11staffcredit16SceneStaffCredit$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

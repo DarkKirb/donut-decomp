@@ -1937,132 +1937,176 @@ lbl_801793A0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252181
 $$252181:
-	.incbin "baserom.dol", 0x44EE18, 0x10
+	.asciz "DisconnectTitle"
 .global ON_CANCEL_WINDOW_TEXT_MAIN__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_MAIN__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.incbin "baserom.dol", 0x44EE28, 0xC
+	.4byte 0x80452D18
+	.4byte 0x80452D18
+	.4byte 0x80452D18
 .global $$252182
 $$252182:
-	.incbin "baserom.dol", 0x44EE34, 0x20
+	.asciz "DisconnectTitleSubWithCancel"
+	.balign 4
 .global $$252183
 $$252183:
-	.incbin "baserom.dol", 0x44EE54, 0x1C
+	.asciz "DisconnectTitleSubWithQuit"
+	.balign 4
 .global ON_CANCEL_WINDOW_TEXT_SUB__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_SUB__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.incbin "baserom.dol", 0x44EE70, 0xC
+	.4byte 0x80452D18
+	.4byte 0x80452D34
+	.4byte 0x80452D54
 .global $$252184
 $$252184:
-	.incbin "baserom.dol", 0x44EE7C, 0x14
+	.asciz "DisconnectContinue"
+	.balign 4
 .global $$252185
 $$252185:
-	.incbin "baserom.dol", 0x44EE90, 0x10
+	.asciz "DisconnectQuit"
+	.balign 4
 .global ON_CANCEL_WINDOW_TEXT_CONFIRM__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2
 ON_CANCEL_WINDOW_TEXT_CONFIRM__Q23app26$$2unnamed$$2HIDErrorMenu_cpp$$2:
-	.incbin "baserom.dol", 0x44EEA0, 0xC
+	.4byte 0x80452D7C
+	.4byte 0x80452D7C
+	.4byte 0x80452D90
 .global $$254504
 $$254504:
-	.incbin "baserom.dol", 0x44EEAC, 0xC
+	.asciz "ErrorMenu"
+	.balign 4
 .global $$254614
 $$254614:
-	.incbin "baserom.dol", 0x44EEB8, 0xC
+	.asciz "common/Main"
 .global $$254616
 $$254616:
-	.incbin "baserom.dol", 0x44EEC4, 0x10
+	.asciz "BatteryWindow"
+	.balign 4
 .global $$254617
 $$254617:
-	.incbin "baserom.dol", 0x44EED4, 0xC
+	.asciz "Button01N"
+	.balign 4
 .global $$254618
 $$254618:
-	.incbin "baserom.dol", 0x44EEE0, 0xC
+	.asciz "Button02N"
+	.balign 4
 .global $$254620
 $$254620:
-	.incbin "baserom.dol", 0x44EEEC, 0xC
+	.asciz "ConfirmYes"
+	.balign 4
 .global $$254621
 $$254621:
-	.incbin "baserom.dol", 0x44EEF8, 0xC
+	.asciz "ConfirmNo"
+	.balign 4
 .global $$254699
 $$254699:
-	.incbin "baserom.dol", 0x44EF04, 0xC
+	.asciz "Switch01"
+	.balign 4
 .global $$254701
 $$254701:
-	.incbin "baserom.dol", 0x44EF10, 0x28
+	.4byte 0x801784F4  ;# ptr
+	.4byte 0x80178514  ;# ptr
+	.4byte 0x80178530  ;# ptr
+	.4byte 0x801785B4  ;# ptr
+	.4byte 0x801785D0  ;# ptr
+	.4byte 0x801786F0  ;# ptr
+	.4byte 0x80178738  ;# ptr
+	.4byte 0x80178754  ;# ptr
+	.4byte 0x80178774  ;# ptr
+	.4byte 0
 .global $$254822
 $$254822:
-	.incbin "baserom.dol", 0x44EF38, 0x10
+	.asciz "DisconnectTitle"
 .global $$254823
 $$254823:
-	.incbin "baserom.dol", 0x44EF48, 0x14
+	.asciz "DisconnectExtTitle"
+	.balign 4
 .global $$254824
 $$254824:
-	.incbin "baserom.dol", 0x44EF5C, 0x14
+	.asciz "ConnectClassicCtrl"
+	.balign 4
 .global $$254825
 $$254825:
-	.incbin "baserom.dol", 0x44EF70, 0x18
+	.asciz "DisconnectClassicCtrl"
+	.balign 4
 .global $$254826
 $$254826:
-	.incbin "baserom.dol", 0x44EF88, 0xC
+	.asciz "MainText"
+	.balign 4
 .global $$254828
 $$254828:
-	.incbin "baserom.dol", 0x44EF94, 0xC
+	.asciz "ConfirmText"
 .global $$254876
 $$254876:
-	.incbin "baserom.dol", 0x44EFA0, 0xC
+	.asciz "Switch02"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$20:
-	.incbin "baserom.dol", 0x44EFAC, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1:
-	.incbin "baserom.dol", 0x44EFD0, 0x10
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254615
 $$254615:
-	.incbin "baserom.dol", 0x492F60, 0x8
+	.asciz "Confirm"
 .global $$254619
 $$254619:
-	.incbin "baserom.dol", 0x492F68, 0x8
+	.asciz "WinN"
+	.balign 4
 .global $$254816
 $$254816:
-	.incbin "baserom.dol", 0x492F70, 0x8
+	.asciz "StdN"
+	.balign 4
 .global $$254817
 $$254817:
-	.incbin "baserom.dol", 0x492F78, 0x8
+	.asciz "SelN"
+	.balign 4
 .global $$254818
 $$254818:
-	.incbin "baserom.dol", 0x492F80, 0x8
+	.asciz "ExtN"
+	.balign 4
 .global $$254819
 $$254819:
-	.incbin "baserom.dol", 0x492F88, 0x8
+	.asciz "ClaN"
+	.balign 4
 .global $$254820
 $$254820:
-	.incbin "baserom.dol", 0x492F90, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$254821
 $$254821:
-	.incbin "baserom.dol", 0x492F98, 0x8
+	.4byte 0
+	.4byte 0
 .global $$254827
 $$254827:
-	.incbin "baserom.dol", 0x492FA0, 0x8
+	.asciz "SubText"
 .global $$254829
 $$254829:
-	.incbin "baserom.dol", 0x492FA8, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$254873
 $$254873:
-	.incbin "baserom.dol", 0x492FB0, 0x8
+	.asciz "Connect"
 .global $$254880
 $$254880:
-	.incbin "baserom.dol", 0x492FB8, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$254896
 $$254896:
-	.incbin "baserom.dol", 0x492FC0, 0x4
+	.4byte 0x53746400
 .global $$254897
 $$254897:
-	.incbin "baserom.dol", 0x492FC4, 0x4
+	.4byte 0x53656C00
 .global $$254898
 $$254898:
-	.incbin "baserom.dol", 0x492FC8, 0x4
+	.4byte 0x45787400
 .global $$254899
 $$254899:
-	.incbin "baserom.dol", 0x492FCC, 0x4
+	.4byte 0x436C6100
 .global $$254900
 $$254900:
-	.incbin "baserom.dol", 0x492FD0, 0x8
+	.asciz "%s%s"
+	.balign 4

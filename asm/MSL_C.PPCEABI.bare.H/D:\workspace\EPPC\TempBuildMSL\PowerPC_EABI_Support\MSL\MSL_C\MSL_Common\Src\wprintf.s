@@ -2411,20 +2411,187 @@ lbl_80010318:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x403398, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22455
 $$22455:
-	.incbin "baserom.dol", 0x41D888, 0xE0
+	.4byte 0x8000E620  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E684  ;# ptr
+	.4byte 0x8000E5D4  ;# ptr
+	.4byte 0x8000E670  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E590  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E620  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E6FC  ;# ptr
+	.4byte 0x8000E590  ;# ptr
+	.4byte 0x8000E684  ;# ptr
+	.4byte 0x8000E5D4  ;# ptr
+	.4byte 0x8000E670  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E590  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E768  ;# ptr
+	.4byte 0x8000E590  ;# ptr
+	.4byte 0x8000E6D8  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E738  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E590  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E780  ;# ptr
+	.4byte 0x8000E590  ;# ptr
 .global $$22923
 $$22923:
-	.incbin "baserom.dol", 0x41D968, 0x150
+	.4byte 0x80010030  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FCF8  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FB20  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FCF8  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FFD8  ;# ptr
+	.4byte 0x8000F9C4  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x8000FC7C  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000F9C4  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FF20  ;# ptr
+	.4byte 0x8000FB20  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FD74  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FB20  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x80010040  ;# ptr
+	.4byte 0x8000FB20  ;# ptr
 .global $$2wstringBase0
 $$2wstringBase0:
-	.incbin "baserom.dol", 0x41DAB8, 0x70
+	.4byte 0x002D0030
+	.4byte 0x00580030
+	.4byte 0x0000002D
+	.4byte 0x00300078
+	.4byte 0x00300000
+	.4byte 0x00300058
+	.4byte 0x00300000
+	.4byte 0x00300078
+	.4byte 0x00300000
+	.4byte 0x002D0049
+	.4byte 0x004E0046
+	.4byte 0x0000002D
+	.4byte 0x0069006E
+	.4byte 0x00660000
+	.4byte 0x0049004E
+	.4byte 0x00460000
+	.4byte 0x0069006E
+	.4byte 0x00660000
+	.4byte 0x002D004E
+	.4byte 0x0041004E
+	.4byte 0x0000002D
+	.4byte 0x006E0061
+	.4byte 0x006E0000
+	.4byte 0x004E0041
+	.4byte 0x004E0000
+	.4byte 0x006E0061
+	.4byte 0x006E0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22601
 $$22601:
-	.incbin "baserom.dol", 0x498AE8, 0x8
+	.4byte 0
+	.4byte 0

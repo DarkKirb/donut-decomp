@@ -416,29 +416,41 @@ procFixPos__Q53scn4step4boss6dubior20StateMoveToOtherSideFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global WaitFrameTable__Q53scn4step4boss6dubior34$$2unnamed$$2StateMoveToOtherSide_cpp$$2
 WaitFrameTable__Q53scn4step4boss6dubior34$$2unnamed$$2StateMoveToOtherSide_cpp$$2:
-	.incbin "baserom.dol", 0x412CC8, 0x10
+	.4byte 0x0000000A
+	.4byte 0x0000001E
+	.4byte 0x0000000A
+	.4byte 0x0000000A
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide
 __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide:
-	.incbin "baserom.dol", 0x463960, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802500E0  ;# ptr
+	.4byte 0x80250170  ;# ptr
+	.4byte 0x8025027C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80250330  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256237
 $$256237:
-	.incbin "baserom.dol", 0x49B338, 0x4
+	.4byte 0
 .global $$256238
 $$256238:
-	.incbin "baserom.dol", 0x49B33C, 0x4
+	.4byte 0xBF800000
 .global $$256239
 $$256239:
-	.incbin "baserom.dol", 0x49B340, 0x4
+	.4byte 0x3F800000
 .global $$256240
 $$256240:
-	.incbin "baserom.dol", 0x49B344, 0x4
+	.4byte 0x3E800000
 .global $$256244
 $$256244:
-	.incbin "baserom.dol", 0x49B348, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256306
 $$256306:
-	.incbin "baserom.dol", 0x49B350, 0x8
+	.4byte 0x3F000000
+	.4byte 0

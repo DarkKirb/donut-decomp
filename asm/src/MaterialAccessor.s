@@ -285,13 +285,17 @@ lbl_801ADF98:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10$$20
 $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10$$20:
-	.incbin "baserom.dol", 0x453A88, 0x28
+	.asciz "NW4R:Failed assertion idx < TevColorMax"
 .global $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10
 $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10:
-	.incbin "baserom.dol", 0x453AB0, 0xC
+	.asciz "material.h"
+	.balign 4
 .global $$2STRING$$2SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf$$20
 $$2STRING$$2SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf$$20:
-	.incbin "baserom.dol", 0x453ABC, 0x34
+	.asciz "NW4R:Failed assertion texSRTIdx < mGXMemNum.texSRT"
+	.balign 4
 .global $$2STRING$$2SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf
 $$2STRING$$2SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf:
-	.incbin "baserom.dol", 0x453AF0, 0x10
+	.asciz "material.h"
+	.balign 4
+	.4byte 0

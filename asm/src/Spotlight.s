@@ -331,37 +331,51 @@ lbl_8020FB14:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global IS_LARGE__Q33scn7history23$$2unnamed$$2Spotlight_cpp$$2
 IS_LARGE__Q33scn7history23$$2unnamed$$2Spotlight_cpp$$2:
-	.incbin "baserom.dol", 0x411CB8, 0x18
+	.4byte 0x00010101
+	.4byte 0x01000000
+	.4byte 0x00010000
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x01000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253289
 $$253289:
-	.incbin "baserom.dol", 0x45D690, 0x10
+	.asciz "history/Light"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253290
 $$253290:
-	.incbin "baserom.dol", 0x494A60, 0x8
+	.asciz "LightM"
+	.balign 4
 .global $$253291
 $$253291:
-	.incbin "baserom.dol", 0x494A68, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$253347
 $$253347:
-	.incbin "baserom.dol", 0x494A70, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253351
 $$253351:
-	.incbin "baserom.dol", 0x494A78, 0x4
+	.4byte 0x456E6400
 .global $$253362
 $$253362:
-	.incbin "baserom.dol", 0x494A7C, 0xC
+	.asciz "TopL"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253352
 $$253352:
-	.incbin "baserom.dol", 0x49AC70, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$253355
 $$253355:
-	.incbin "baserom.dol", 0x49AC78, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$253361
 $$253361:
-	.incbin "baserom.dol", 0x49AC80, 0x8
+	.4byte 0x3FA66666
+	.4byte 0

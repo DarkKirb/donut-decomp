@@ -101,4 +101,6 @@ lbl_802784FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250582
 $$250582:
-	.incbin "baserom.dol", 0x468978, 0x18
+	.asciz "Challengeresult.dn"
+	.balign 4
+	.4byte 0

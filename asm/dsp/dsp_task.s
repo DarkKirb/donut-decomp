@@ -640,25 +640,33 @@ lbl_80047E18:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22654
 $$22654:
-	.incbin "baserom.dol", 0x432340, 0x20
+	.asciz "DSP is booting task: 0x%08X\n"
+	.balign 4
 .global $$22655
 $$22655:
-	.incbin "baserom.dol", 0x432360, 0x30
+	.asciz "__DSP_boot_task()  : IRAM MMEM ADDR: 0x%08X\n"
+	.balign 4
 .global $$22656
 $$22656:
-	.incbin "baserom.dol", 0x432390, 0x30
+	.asciz "__DSP_boot_task()  : IRAM DSP ADDR : 0x%08X\n"
+	.balign 4
 .global $$22657
 $$22657:
-	.incbin "baserom.dol", 0x4323C0, 0x30
+	.asciz "__DSP_boot_task()  : IRAM LENGTH   : 0x%08X\n"
+	.balign 4
 .global $$22658
 $$22658:
-	.incbin "baserom.dol", 0x4323F0, 0x30
+	.asciz "__DSP_boot_task()  : DRAM MMEM ADDR: 0x%08X\n"
+	.balign 4
 .global $$22659
 $$22659:
-	.incbin "baserom.dol", 0x432420, 0x30
+	.asciz "__DSP_boot_task()  : Start Vector  : 0x%08X\n"
+	.balign 4
 .global $$22684
 $$22684:
-	.incbin "baserom.dol", 0x432450, 0x30
+	.asciz "__DSP_add_task() : Added task    : 0x%08X\n"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __DSP_rude_task_pending

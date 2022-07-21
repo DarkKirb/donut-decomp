@@ -44,10 +44,11 @@ resetRotVIntpRate__Q43scn4step4hero14FloaterRotCtrlFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250072
 $$250072:
-	.incbin "baserom.dol", 0x49D6F8, 0x4
+	.4byte 0
 .global $$250073
 $$250073:
-	.incbin "baserom.dol", 0x49D6FC, 0x4
+	.4byte 0x3E3851EC
 .global $$250080
 $$250080:
-	.incbin "baserom.dol", 0x49D700, 0x8
+	.4byte 0x3F800000
+	.4byte 0

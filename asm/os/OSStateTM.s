@@ -528,22 +528,27 @@ lbl_800268EC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2980
 $$2980:
-	.incbin "baserom.dol", 0x42B940, 0x14
+	.asciz "/dev/stm/immediate"
+	.balign 4
 .global $$2981
 $$2981:
-	.incbin "baserom.dol", 0x42B954, 0x14
+	.asciz "/dev/stm/eventhook"
+	.balign 4
 .global $$2990
 $$2990:
-	.incbin "baserom.dol", 0x42B968, 0xC
+	.asciz "OSStateTM.c"
 .global $$2991
 $$2991:
-	.incbin "baserom.dol", 0x42B974, 0x38
+	.asciz "Error: The firmware doesn't support shutdown feature.\n"
+	.balign 4
 .global $$21001
 $$21001:
-	.incbin "baserom.dol", 0x42B9AC, 0x38
+	.asciz "Error: The firmware doesn't support reboot feature.\n"
+	.balign 4
 .global $$21045
 $$21045:
-	.incbin "baserom.dol", 0x42B9E4, 0x24
+	.asciz "Error on STM state event handler\n"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global StmEhInBuf

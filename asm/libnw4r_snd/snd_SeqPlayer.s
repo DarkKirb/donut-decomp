@@ -1541,21 +1541,48 @@ $$2192$$2__dt__Q44nw4r3snd6detail9SeqPlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9SeqPlayer
 __vt__Q44nw4r3snd6detail9SeqPlayer:
-	.incbin "baserom.dol", 0x43E478, 0x68
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010C390  ;# ptr
+	.4byte 0x8010C960  ;# ptr
+	.4byte 0x8010C9D0  ;# ptr
+	.4byte 0x8010CB20  ;# ptr
+	.4byte 0x80109E50  ;# ptr
+	.4byte 0x80109E40  ;# ptr
+	.4byte 0x80109E30  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010D6F0  ;# ptr
+	.4byte 0x80109E70  ;# ptr
+	.4byte 0x80109E60  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010D700  ;# ptr
+	.4byte 0x80109E90  ;# ptr
+	.4byte 0x80109E20  ;# ptr
+	.4byte 0x80109E80  ;# ptr
+	.4byte 0x8010CD40  ;# ptr
+	.4byte 0x80109E10  ;# ptr
+	.4byte 0x8010D6E0  ;# ptr
+	.4byte 0x80109DF0  ;# ptr
+	.4byte 0x80109E00  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211283
 $$211283:
-	.incbin "baserom.dol", 0x499EB8, 0x4
+	.4byte 0x3F800000
 .global $$211284
 $$211284:
-	.incbin "baserom.dol", 0x499EBC, 0x4
+	.4byte 0
 .global $$211523
 $$211523:
-	.incbin "baserom.dol", 0x499EC0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$211919
 $$211919:
-	.incbin "baserom.dol", 0x499EC8, 0x8
+	.4byte 0x476A6000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mGlobalVariable__Q44nw4r3snd6detail9SeqPlayer

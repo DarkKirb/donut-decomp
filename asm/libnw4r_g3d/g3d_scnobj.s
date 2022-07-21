@@ -1787,35 +1787,88 @@ GetTypeObj__Q34nw4r3g3d6ScnObjCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6ScnObj
 TYPE_NAME__Q34nw4r3g3d6ScnObj:
-	.incbin "baserom.dol", 0x404F90, 0x10
+	.4byte 0x00000007
+	.asciz "ScnObj"
+	.balign 4
+	.4byte 0
 .global TYPE_NAME__Q34nw4r3g3d7ScnLeaf
 TYPE_NAME__Q34nw4r3g3d7ScnLeaf:
-	.incbin "baserom.dol", 0x404FA0, 0x10
+	.4byte 0x00000008
+	.asciz "ScnLeaf"
+	.4byte 0
 .global TYPE_NAME__Q34nw4r3g3d8ScnGroup
 TYPE_NAME__Q34nw4r3g3d8ScnGroup:
-	.incbin "baserom.dol", 0x404FB0, 0x10
+	.4byte 0x00000009
+	.asciz "ScnGroup"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211622
 $$211622:
-	.incbin "baserom.dol", 0x43D078, 0x28
+	.4byte 0x800E94D8  ;# ptr
+	.4byte 0x800E9370  ;# ptr
+	.4byte 0x800E9398  ;# ptr
+	.4byte 0x800E93C0  ;# ptr
+	.4byte 0x800E93E8  ;# ptr
+	.4byte 0x800E9410  ;# ptr
+	.4byte 0x800E9438  ;# ptr
+	.4byte 0x800E9460  ;# ptr
+	.4byte 0x800E9488  ;# ptr
+	.4byte 0x800E94B0  ;# ptr
 .global $$211656
 $$211656:
-	.incbin "baserom.dol", 0x43D0A0, 0x28
+	.4byte 0x800E95B0  ;# ptr
+	.4byte 0x800E9520  ;# ptr
+	.4byte 0x800E9530  ;# ptr
+	.4byte 0x800E9540  ;# ptr
+	.4byte 0x800E9550  ;# ptr
+	.4byte 0x800E9560  ;# ptr
+	.4byte 0x800E9570  ;# ptr
+	.4byte 0x800E9580  ;# ptr
+	.4byte 0x800E9590  ;# ptr
+	.4byte 0x800E95A0  ;# ptr
 .global __vt__Q34nw4r3g3d8ScnGroup
 __vt__Q34nw4r3g3d8ScnGroup:
-	.incbin "baserom.dol", 0x43D0C8, 0x40
+	.4byte 0
+	.4byte 0
+	.4byte 0x800EA860  ;# ptr
+	.4byte 0x800E9FA0  ;# ptr
+	.4byte 0x800EA7A0  ;# ptr
+	.4byte 0x800EA900  ;# ptr
+	.4byte 0x800EA8F0  ;# ptr
+	.4byte 0x800E9D40  ;# ptr
+	.4byte 0x800E9350  ;# ptr
+	.4byte 0x800E94F0  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9110  ;# ptr
+	.4byte 0x800EA450  ;# ptr
+	.4byte 0x800EA5E0  ;# ptr
+	.4byte 0x800EA6A0  ;# ptr
 .global __vt__Q34nw4r3g3d6ScnObj
 __vt__Q34nw4r3g3d6ScnObj:
-	.incbin "baserom.dol", 0x43D108, 0x38
+	.4byte 0
+	.4byte 0
+	.4byte 0x800EA8B0  ;# ptr
+	.4byte 0
+	.4byte 0x800E92D0  ;# ptr
+	.4byte 0x800EA920  ;# ptr
+	.4byte 0x800EA910  ;# ptr
+	.4byte 0
+	.4byte 0x800E9350  ;# ptr
+	.4byte 0x800E94F0  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9110  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211583
 $$211583:
-	.incbin "baserom.dol", 0x499C00, 0x4
+	.4byte 0
 .global $$211803
 $$211803:
-	.incbin "baserom.dol", 0x499C04, 0x4
+	.4byte 0x3F800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gpCullingFrustum__Q24nw4r3g3d

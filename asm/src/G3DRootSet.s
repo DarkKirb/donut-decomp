@@ -1800,12 +1800,15 @@ setViewMtx__Q33scn9grandmenu10G3DRootSetFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252374
 $$252374:
-	.incbin "baserom.dol", 0x495850, 0x8
+	.4byte 0x00000008
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253282
 $$253282:
-	.incbin "baserom.dol", 0x49B8F8, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$253286
 $$253286:
-	.incbin "baserom.dol", 0x49B900, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -224,17 +224,41 @@ __dt__Q53scn4step5enemy6sparky17BrainCreditPraiseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common11StatePraise$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EF98, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802910C8  ;# ptr
+	.4byte 0x80291050  ;# ptr
 .global __vt__Q53scn4step5enemy6common17BrainCreditPraise
 __vt__Q53scn4step5enemy6common17BrainCreditPraise:
-	.incbin "baserom.dol", 0x46EFA8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029106C  ;# ptr
+	.4byte 0x80290FCC  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise
 __vt__Q53scn4step5enemy6bouncy17BrainCreditPraise:
-	.incbin "baserom.dol", 0x470280, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029CC08  ;# ptr
+	.4byte 0x8029CB7C  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sparky17BrainCreditPraise
 __vt__Q53scn4step5enemy6sparky17BrainCreditPraise:
-	.incbin "baserom.dol", 0x4790F8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E6CB4  ;# ptr
+	.4byte 0x802E6C28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

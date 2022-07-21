@@ -120,4 +120,5 @@ __ct__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatorRCQ33hel6common43M
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x494B78, 0x8
+	.4byte 0
+	.4byte 0

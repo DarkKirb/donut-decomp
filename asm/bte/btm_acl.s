@@ -2159,58 +2159,75 @@ lbl_8007FB10:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22591
 $$22591:
-	.incbin "baserom.dol", 0x4377B0, 0x40
+	.asciz "Duplicate btm_acl_created: RemBdAddr: %02x%02x%02x%02x%02x%02x"
+	.balign 4
 .global $$22592
 $$22592:
-	.incbin "baserom.dol", 0x4377F0, 0x20
+	.asciz "SetPacketType Mask -> 0x%04x"
+	.balign 4
 .global $$22642
 $$22642:
-	.incbin "baserom.dol", 0x437810, 0x5C
+	.asciz "Role change request declined since the previous request for this device is not completed "
+	.balign 4
 .global $$22685
 $$22685:
-	.incbin "baserom.dol", 0x43786C, 0x3C
+	.asciz "BTM_SetLinkPolicy switch not supported (settings: 0x%04x)"
+	.balign 4
 .global $$22686
 $$22686:
-	.incbin "baserom.dol", 0x4378A8, 0x38
+	.asciz "BTM_SetLinkPolicy hold not supported (settings: 0x%04x)"
 .global $$22687
 $$22687:
-	.incbin "baserom.dol", 0x4378E0, 0x40
+	.asciz "BTM_SetLinkPolicy sniff not supported (settings: 0x%04x)"
+	.balign 4
+	.4byte 0
 .global $$22688
 $$22688:
-	.incbin "baserom.dol", 0x437920, 0x38
+	.asciz "BTM_SetLinkPolicy park not supported (settings: 0x%04x)"
 .global $$22701
 $$22701:
-	.incbin "baserom.dol", 0x437958, 0x38
+	.asciz "BTM_ReadLinkPolicy: RemBdAddr: %02x%02x%02x%02x%02x%02x"
 .global $$22800
 $$22800:
-	.incbin "baserom.dol", 0x437990, 0x3C
+	.asciz "BTM_ReadClockOffset: RemBdAddr: %02x%02x%02x%02x%02x%02x"
+	.balign 4
 .global $$22857
 $$22857:
-	.incbin "baserom.dol", 0x4379CC, 0x38
+	.asciz "Role Switch Event: new_role 0x%02x, HCI Status 0x%02x"
+	.balign 4
 .global $$22938
 $$22938:
-	.incbin "baserom.dol", 0x437A04, 0x30
+	.asciz "BTM_SetQoS: BdAddr: %02x%02x%02x%02x%02x%02x"
+	.balign 4
 .global $$22946
 $$22946:
-	.incbin "baserom.dol", 0x437A34, 0x28
+	.asciz "BTM: p_flow->delay_variation: 0x%02x"
+	.balign 4
 .global $$22957
 $$22957:
-	.incbin "baserom.dol", 0x437A5C, 0x34
+	.asciz "BTM_ReadRSSI: RemBdAddr: %02x%02x%02x%02x%02x%02x"
+	.balign 4
 .global $$22969
 $$22969:
-	.incbin "baserom.dol", 0x437A90, 0x3C
+	.asciz "BTM_ReadLinkQuality: RemBdAddr: %02x%02x%02x%02x%02x%02x"
+	.balign 4
 .global $$22982
 $$22982:
-	.incbin "baserom.dol", 0x437ACC, 0x30
+	.asciz "BTM RSSI Complete: rssi %d, hci status 0x%02x"
+	.balign 4
 .global $$22994
 $$22994:
-	.incbin "baserom.dol", 0x437AFC, 0x40
+	.asciz "BTM Link Quality Complete: Link Quality %d, hci status 0x%02x"
+	.balign 4
 .global $$23042
 $$23042:
-	.incbin "baserom.dol", 0x437B3C, 0x30
+	.asciz "btm BEFORE SCO setting to 1 slot; hci hdl 0x%x"
+	.balign 4
 .global $$23043
 $$23043:
-	.incbin "baserom.dol", 0x437B6C, 0x30
+	.asciz "btm last SCO removed; unsniffing hci hdl 0x%x"
+	.balign 4
 .global $$23044
 $$23044:
-	.incbin "baserom.dol", 0x437B9C, 0x34
+	.asciz "btm last SCO removed; hci hdl 0x%x, types 0x%02x"
+	.balign 4

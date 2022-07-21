@@ -195,26 +195,29 @@ mfCreateMoveLand__Q53scn4step7gimmick9otachidai9OtachidaiFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253405
 $$253405:
-	.incbin "baserom.dol", 0x47DC90, 0x18
+	.asciz "step/gimmick/Otachidai"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253406
 $$253406:
-	.incbin "baserom.dol", 0x496C38, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253404
 $$253404:
-	.incbin "baserom.dol", 0x49D510, 0x4
+	.4byte 0
 .global $$253427
 $$253427:
-	.incbin "baserom.dol", 0x49D514, 0x4
+	.4byte 0x40A00000
 .global $$253443
 $$253443:
-	.incbin "baserom.dol", 0x49D518, 0x4
+	.4byte 0x3F000000
 .global $$253444
 $$253444:
-	.incbin "baserom.dol", 0x49D51C, 0x4
+	.4byte 0x3F800000
 .global $$253445
 $$253445:
-	.incbin "baserom.dol", 0x49D520, 0x8
+	.4byte 0x3F400000
+	.4byte 0

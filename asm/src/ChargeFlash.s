@@ -54,9 +54,15 @@ lbl_80333E80:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4hero25$$2unnamed$$2ChargeFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4hero25$$2unnamed$$2ChargeFlash_cpp$$2:
-	.incbin "baserom.dol", 0x415D50, 0x18
+	.4byte 0x00000040
+	.4byte 0x40408080
+	.4byte 0x80C0C0C0
+	.4byte 0x80808040
+	.4byte 0x40400000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249325
 $$249325:
-	.incbin "baserom.dol", 0x49D6B8, 0x8
+	.4byte 0xE0E0FF00
+	.4byte 0

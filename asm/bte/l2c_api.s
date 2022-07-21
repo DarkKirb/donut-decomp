@@ -872,127 +872,164 @@ lbl_80090D9C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21653
 $$21653:
-	.incbin "baserom.dol", 0x439730, 0x30
+	.asciz "L2CAP - L2CA_Register() called for PSM: 0x%04x"
+	.balign 4
 .global $$21654
 $$21654:
-	.incbin "baserom.dol", 0x439760, 0x28
+	.asciz "L2CAP - no cb registering PSM: 0x%04x"
+	.balign 4
 .global $$21655
 $$21655:
-	.incbin "baserom.dol", 0x439788, 0x28
+	.asciz "L2CAP - invalid PSM value, PSM: 0x%04x"
+	.balign 4
 .global $$21656
 $$21656:
-	.incbin "baserom.dol", 0x4397B0, 0x28
+	.asciz "L2CAP - no RCB available, PSM: 0x%04x"
+	.balign 4
 .global $$21663
 $$21663:
-	.incbin "baserom.dol", 0x4397D8, 0x34
+	.asciz "L2CAP - L2CA_Deregister() called for PSM: 0x%04x"
+	.balign 4
 .global $$21664
 $$21664:
-	.incbin "baserom.dol", 0x43980C, 0x34
+	.asciz "L2CAP - PSM: 0x%04x not found for deregistration"
+	.balign 4
 .global $$21682
 $$21682:
-	.incbin "baserom.dol", 0x439840, 0x20
+	.asciz "L2CA_ConnectReq()  PSM: 0x%04x"
+	.balign 4
 .global $$21683
 $$21683:
-	.incbin "baserom.dol", 0x439860, 0x38
+	.asciz "L2CA_ConnectReq()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
+	.balign 4
 .global $$21684
 $$21684:
-	.incbin "baserom.dol", 0x439898, 0x24
+	.asciz "L2CAP connect req - BTU not ready"
+	.balign 4
 .global $$21685
 $$21685:
-	.incbin "baserom.dol", 0x4398BC, 0x30
+	.asciz "L2CAP - no RCB for L2CA_conn_req, PSM: 0x%04x"
+	.balign 4
 .global $$21686
 $$21686:
-	.incbin "baserom.dol", 0x4398EC, 0x24
+	.asciz "L2CAP - no LCB for L2CA_conn_req"
+	.balign 4
 .global $$21687
 $$21687:
-	.incbin "baserom.dol", 0x439910, 0x38
+	.asciz "L2CAP API - L2CA_conn_req rejected - link disconnecting"
 .global $$21688
 $$21688:
-	.incbin "baserom.dol", 0x439948, 0x24
+	.asciz "L2CAP - no CCB for L2CA_conn_req"
+	.balign 4
 .global $$21689
 $$21689:
-	.incbin "baserom.dol", 0x43996C, 0x30
+	.asciz "L2CAP - L2CA_conn_req() returned CID: 0x%04x"
+	.balign 4
 .global $$21706
 $$21706:
-	.incbin "baserom.dol", 0x43999C, 0x38
+	.asciz "L2CA_ConnectRsp()  CID: 0x%04x  Result: %d  Status: %d"
+	.balign 4
 .global $$21707
 $$21707:
-	.incbin "baserom.dol", 0x4399D4, 0x38
+	.asciz "L2CA_ConnectRsp()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
+	.balign 4
 .global $$21708
 $$21708:
-	.incbin "baserom.dol", 0x439A0C, 0x24
+	.asciz "L2CAP - no LCB for L2CA_conn_rsp"
+	.balign 4
 .global $$21709
 $$21709:
-	.incbin "baserom.dol", 0x439A30, 0x24
+	.asciz "L2CAP - no CCB for L2CA_conn_rsp"
+	.balign 4
 .global $$21710
 $$21710:
-	.incbin "baserom.dol", 0x439A54, 0x34
+	.asciz "L2CAP - bad id in L2CA_conn_rsp. Exp: %d  Got: %d"
+	.balign 4
 .global $$21716
 $$21716:
-	.incbin "baserom.dol", 0x439A88, 0x20
+	.asciz "L2CA_ConfigReq()  CID: 0x%04x"
+	.balign 4
 .global $$21717
 $$21717:
-	.incbin "baserom.dol", 0x439AA8, 0x2C
+	.asciz "L2CAP - no CCB for L2CA_cfg_req, CID: %d"
+	.balign 4
 .global $$21725
 $$21725:
-	.incbin "baserom.dol", 0x439AD4, 0x2C
+	.asciz "L2CA_ConfigRsp()  CID: 0x%04x  Result: %d"
+	.balign 4
 .global $$21726
 $$21726:
-	.incbin "baserom.dol", 0x439B00, 0x2C
+	.asciz "L2CAP - no CCB for L2CA_cfg_rsp, CID: %d"
+	.balign 4
 .global $$21732
 $$21732:
-	.incbin "baserom.dol", 0x439B2C, 0x24
+	.asciz "L2CA_DisconnectReq()  CID: 0x%04x"
+	.balign 4
 .global $$21733
 $$21733:
-	.incbin "baserom.dol", 0x439B50, 0x2C
+	.asciz "L2CAP - no CCB for L2CA_disc_req, CID: %d"
+	.balign 4
 .global $$21738
 $$21738:
-	.incbin "baserom.dol", 0x439B7C, 0x24
+	.asciz "L2CA_DisconnectRsp()  CID: 0x%04x"
+	.balign 4
 .global $$21739
 $$21739:
-	.incbin "baserom.dol", 0x439BA0, 0x2C
+	.asciz "L2CAP - no CCB for L2CA_disc_rsp, CID: %d"
+	.balign 4
 .global $$21747
 $$21747:
-	.incbin "baserom.dol", 0x439BCC, 0x28
+	.asciz "L2CA_DataWrite()  CID: 0x%04x  Len: %d"
+	.balign 4
 .global $$21748
 $$21748:
-	.incbin "baserom.dol", 0x439BF4, 0x2C
+	.asciz "L2CAP - no CCB for L2CA_DataWrite, CID: %d"
+	.balign 4
 .global $$21749
 $$21749:
-	.incbin "baserom.dol", 0x439C20, 0x38
+	.asciz "L2CAP - cannot send message bigger than peer's mtu size"
 .global $$21765
 $$21765:
-	.incbin "baserom.dol", 0x439C58, 0x30
+	.asciz "L2CA_Ping()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
 .global $$21766
 $$21766:
-	.incbin "baserom.dol", 0x439C88, 0x20
+	.asciz "L2CAP - no LCB for L2CA_ping"
+	.balign 4
 .global $$21767
 $$21767:
-	.incbin "baserom.dol", 0x439CA8, 0x28
+	.asciz "L2CAP - rejected second L2CA_ping"
+	.balign 4
+	.4byte 0
 .global $$21768
 $$21768:
-	.incbin "baserom.dol", 0x439CD0, 0x30
+	.asciz "L2CAP - L2CA_ping rejected - link disconnecting"
 .global $$21778
 $$21778:
-	.incbin "baserom.dol", 0x439D00, 0x30
+	.asciz "L2CAP - no CCB for L2CA_SetIdleTimeout, CID: %d"
 .global $$21804
 $$21804:
-	.incbin "baserom.dol", 0x439D30, 0x38
+	.asciz "L2CA_SetAclPriority()  bdaddr: %02x%02x%02x%02x%02x%02x"
 .global $$21805
 $$21805:
-	.incbin "baserom.dol", 0x439D68, 0x28
+	.asciz "L2CAP - no LCB for L2CA_SetAclPriority"
+	.balign 4
 .global $$21812
 $$21812:
-	.incbin "baserom.dol", 0x439D90, 0x60
+	.asciz "L2CA_SetCompression() local cid %d, direction %d, pe_type %d, mem_level %d, wbits %d, enable %d"
 .global $$21827
 $$21827:
-	.incbin "baserom.dol", 0x439DF0, 0x28
+	.asciz "L2CAP - no CCB for L2CA_Flush, CID: %d"
+	.balign 4
 .global $$21828
 $$21828:
-	.incbin "baserom.dol", 0x439E18, 0x30
+	.asciz "L2CA_Flush()  CID: 0x%04x flushed %d buffers"
+	.balign 4
 .global $$21837
 $$21837:
-	.incbin "baserom.dol", 0x439E48, 0x40
+	.asciz "L2CA_GetNumQueuedBufs()  CID: 0x%04x  abmormally returning 0"
+	.balign 4
 .global $$21838
 $$21838:
-	.incbin "baserom.dol", 0x439E88, 0x38
+	.asciz "L2CA_GetNumQueuedBufs()  CID: 0x%04x  returning %d"
+	.balign 4
+	.4byte 0

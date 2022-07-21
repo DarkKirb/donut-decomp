@@ -827,16 +827,40 @@ lbl_801D0544:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250121
 $$250121:
-	.incbin "baserom.dol", 0x459140, 0x30
+	.4byte 0x2573206F
+	.4byte 0x70656E50
+	.4byte 0x50726F63
+	.4byte 0x65737328
+	.4byte 0x29203A20
+	.4byte 0x4D4F4F70
+	.4byte 0x656E82C9
+	.4byte 0x8EB89473
+	.4byte 0x82B582DC
+	.4byte 0x82B582BD
+	.4byte 0x0A000000
+	.4byte 0
 .global $$250122
 $$250122:
-	.incbin "baserom.dol", 0x459170, 0x10
+	.asciz "MovieThread.cpp"
 .global $$250149
 $$250149:
-	.incbin "baserom.dol", 0x459180, 0x18
+	.asciz "%s SkipImage fail %d\n"
+	.balign 4
 .global $$250150
 $$250150:
-	.incbin "baserom.dol", 0x459198, 0x1C
+	.asciz "%s SkipAudioPacket fail %d\n"
 .global $$250246
 $$250246:
-	.incbin "baserom.dol", 0x4591B4, 0x34
+	.4byte 0x801CFFB4  ;# ptr
+	.4byte 0x801D0230  ;# ptr
+	.4byte 0x801D0328  ;# ptr
+	.4byte 0x801D0340  ;# ptr
+	.4byte 0x801D03A0  ;# ptr
+	.4byte 0x801D0400  ;# ptr
+	.4byte 0x801D04B4  ;# ptr
+	.4byte 0x801D0060  ;# ptr
+	.4byte 0x801D0178  ;# ptr
+	.4byte 0x801D0190  ;# ptr
+	.4byte 0x801CFFDC  ;# ptr
+	.4byte 0x801D0058  ;# ptr
+	.4byte 0

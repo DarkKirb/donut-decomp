@@ -585,7 +585,39 @@ lbl_80108B0C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream
 __vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream:
-	.incbin "baserom.dol", 0x43E188, 0x68
+	.4byte 0
+	.4byte 0
+	.4byte 0x80108A80  ;# ptr
+	.4byte 0x80108AD0  ;# ptr
+	.4byte 0x80121020  ;# ptr
+	.4byte 0x80108920  ;# ptr
+	.4byte 0x80108A70  ;# ptr
+	.4byte 0x80120630  ;# ptr
+	.4byte 0x80120640  ;# ptr
+	.4byte 0x80108A40  ;# ptr
+	.4byte 0x80108A50  ;# ptr
+	.4byte 0x80108A20  ;# ptr
+	.4byte 0x80108A10  ;# ptr
+	.4byte 0x801089F0  ;# ptr
+	.4byte 0x801089E0  ;# ptr
+	.4byte 0x801089D0  ;# ptr
+	.4byte 0x80108A90  ;# ptr
+	.4byte 0x80108950  ;# ptr
+	.4byte 0x80121220  ;# ptr
+	.4byte 0x80120DF0  ;# ptr
+	.4byte 0x80108A30  ;# ptr
+	.4byte 0x80108A00  ;# ptr
+	.4byte 0x80108AA0  ;# ptr
+	.4byte 0x80121140  ;# ptr
+	.4byte 0x80108A60  ;# ptr
+	.4byte 0
 .global __vt__Q34nw4r3snd15DvdSoundArchive
 __vt__Q34nw4r3snd15DvdSoundArchive:
-	.incbin "baserom.dol", 0x43E1F0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80108450  ;# ptr
+	.4byte 0x80108AC0  ;# ptr
+	.4byte 0x80108AB0  ;# ptr
+	.4byte 0x801087F0  ;# ptr
+	.4byte 0x80108680  ;# ptr
+	.4byte 0x80108730  ;# ptr

@@ -2765,222 +2765,283 @@ lbl_80042840:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23815
 $$23815:
-	.incbin "baserom.dol", 0x42E138, 0x34
+	.asciz "(doTransactionCallback) Error - context mangled!\n"
+	.balign 4
 .global $$23822
 $$23822:
-	.incbin "baserom.dol", 0x42E16C, 0x2C
+	.asciz "(doCoverCallback) Error - context mangled!\n"
 .global $$23832
 $$23832:
-	.incbin "baserom.dol", 0x42E198, 0x28
+	.asciz "(DVDLowFinish) Error: IOS_Close failed\n"
 .global $$23852
 $$23852:
-	.incbin "baserom.dol", 0x42E1C0, 0x20
+	.asciz "IPCCltInit returned error: %d\n"
+	.balign 4
 .global $$23853
 $$23853:
-	.incbin "baserom.dol", 0x42E1E0, 0x3C
+	.asciz "(ddrAllocAligned32) Not enough space to allocate %d bytes\n"
+	.balign 4
 .global $$23854
 $$23854:
-	.incbin "baserom.dol", 0x42E21C, 0x28
+	.asciz "Allocation of diCommand blocks failed\n"
+	.balign 4
 .global $$23855
 $$23855:
-	.incbin "baserom.dol", 0x42E244, 0x20
+	.asciz "Allocation of pathBuf failed\n"
+	.balign 4
 .global $$23857
 $$23857:
-	.incbin "baserom.dol", 0x42E264, 0x4C
+	.asciz "(DVDLowInit) Error: IOS_Open failed - pathname '/dev/di' does not exist\n"
+	.balign 4
 .global $$23858
 $$23858:
-	.incbin "baserom.dol", 0x42E2B0, 0x48
+	.asciz "(DVDLowInit) Error: IOS_Open failed - calling thread lacks permission\n"
+	.balign 4
 .global $$23859
 $$23859:
-	.incbin "baserom.dol", 0x42E2F8, 0x4C
+	.asciz "(DVDLowInit) Error: IOS_Open failed - connection limit has been reached\n"
+	.balign 4
 .global $$23860
 $$23860:
-	.incbin "baserom.dol", 0x42E344, 0x34
+	.asciz "(DVDLowInit) IOS_Open failed, errorcode = %d\n"
+	.balign 4
+	.4byte 0
 .global $$23870
 $$23870:
-	.incbin "baserom.dol", 0x42E378, 0x38
+	.asciz "(newContext) ERROR: freeDvdContext.inUse (#%d) is true\n"
 .global $$23871
 $$23871:
-	.incbin "baserom.dol", 0x42E3B0, 0x30
+	.asciz "(newContext) Now spinning in infinite loop\n"
+	.4byte 0
 .global $$23872
 $$23872:
-	.incbin "baserom.dol", 0x42E3E0, 0x40
+	.asciz "(newContext) Something overwrote the context magic - spinning \n"
 .global $$23873
 $$23873:
-	.incbin "baserom.dol", 0x42E420, 0x3C
+	.asciz "@@@@@@ WARNING - Calling DVDLowReadDiskId with NULL ptr\n"
+	.balign 4
 .global $$23874
 $$23874:
-	.incbin "baserom.dol", 0x42E45C, 0x3C
+	.asciz "@@@ (DVDLowReadDiskID) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$23892
 $$23892:
-	.incbin "baserom.dol", 0x42E498, 0x38
+	.asciz "(DVDLowOpenPartition) eTicket memory is unaligned\n"
+	.balign 4
+	.4byte 0
 .global $$23893
 $$23893:
-	.incbin "baserom.dol", 0x42E4D0, 0x38
+	.asciz "(DVDLowOpenPartition) certificates memory is unaligned\n"
 .global $$23894
 $$23894:
-	.incbin "baserom.dol", 0x42E508, 0x40
+	.asciz "@@@ (DVDLowOpenPartition) IOS_IoctlvAsync returned error: %d\n"
+	.balign 4
 .global __FUNCTION__$2461
 __FUNCTION__$2461:
-	.incbin "baserom.dol", 0x42E548, 0x24
+	.asciz "DVDLowOpenPartitionWithTmdAndTicket"
 .global $$23915
 $$23915:
-	.incbin "baserom.dol", 0x42E56C, 0x24
+	.asciz "(%s) eTicket memory is unaligned\n"
+	.balign 4
 .global $$23916
 $$23916:
-	.incbin "baserom.dol", 0x42E590, 0x24
+	.asciz "(%s) tmd parameter cannot be NULL\n"
+	.balign 4
 .global $$23917
 $$23917:
-	.incbin "baserom.dol", 0x42E5B4, 0x20
+	.asciz "(%s) tmd memory is unaligned\n"
+	.balign 4
 .global $$23918
 $$23918:
-	.incbin "baserom.dol", 0x42E5D4, 0x2C
+	.asciz "(%s) eTicket parameter cannot be NULL\n"
+	.balign 4
+	.4byte 0
 .global __FUNCTION__$2494
 __FUNCTION__$2494:
-	.incbin "baserom.dol", 0x42E600, 0x28
+	.asciz "DVDLowOpenPartitionWithTmdAndTicketView"
 .global $$23938
 $$23938:
-	.incbin "baserom.dol", 0x42E628, 0x2C
+	.asciz "(%s) eTicketView parameter cannot be NULL\n"
+	.balign 4
 .global $$23939
 $$23939:
-	.incbin "baserom.dol", 0x42E654, 0x28
+	.asciz "(%s) eTicketView memory is unaligned\n"
+	.balign 4
 .global __FUNCTION__$2521
 __FUNCTION__$2521:
-	.incbin "baserom.dol", 0x42E67C, 0x1C
+	.asciz "DVDLowGetNoDiscBufferSizes"
+	.balign 4
 .global $$23956
 $$23956:
-	.incbin "baserom.dol", 0x42E698, 0x24
+	.asciz "(%s) Error: NULL pointer argument\n"
+	.balign 4
 .global $$23957
 $$23957:
-	.incbin "baserom.dol", 0x42E6BC, 0x28
+	.asciz "(%s) numTmdBytes memory is unaligned\n"
+	.balign 4
 .global $$23958
 $$23958:
-	.incbin "baserom.dol", 0x42E6E4, 0x28
+	.asciz "(%s) certificates memory is unaligned\n"
+	.balign 4
 .global $$23959
 $$23959:
-	.incbin "baserom.dol", 0x42E70C, 0x30
+	.asciz "@@@ (%s) IOS_IoctlvAsync returned error: %d\n"
+	.balign 4
 .global __FUNCTION__$2544
 __FUNCTION__$2544:
-	.incbin "baserom.dol", 0x42E73C, 0x24
+	.asciz "DVDLowGetNoDiscOpenPartitionParams"
+	.balign 4
 .global $$23975
 $$23975:
-	.incbin "baserom.dol", 0x42E760, 0x24
+	.asciz "(%s) pointer argument is unaligned\n"
 .global __FUNCTION__$2575
 __FUNCTION__$2575:
-	.incbin "baserom.dol", 0x42E784, 0x1C
+	.asciz "DVDLowNoDiscOpenPartition"
+	.balign 4
 .global $$24008
 $$24008:
-	.incbin "baserom.dol", 0x42E7A0, 0x40
+	.asciz "@@@ (DVDLowClosePartition) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24018
 $$24018:
-	.incbin "baserom.dol", 0x42E7E0, 0x40
+	.asciz "@@@ (DVDLowUnencryptedRead) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24029
 $$24029:
-	.incbin "baserom.dol", 0x42E820, 0x3C
+	.asciz "@@@ (DVDLowStopMotor) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24039
 $$24039:
-	.incbin "baserom.dol", 0x42E85C, 0x44
+	.asciz "@@@ (DVDLowWaitForCoverClose) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24049
 $$24049:
-	.incbin "baserom.dol", 0x42E8A0, 0x38
+	.asciz "@@@ (DVDLowInquiry) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24060
 $$24060:
-	.incbin "baserom.dol", 0x42E8D8, 0x3C
+	.asciz "@@@ (DVDLowRequestError) IOS_IoctlAsync returned error: %d\n"
 .global $$24067
 $$24067:
-	.incbin "baserom.dol", 0x42E914, 0x48
+	.asciz "(DVDLowSetSpinupFlag): Synch functions can't be called in callbacks\n"
+	.balign 4
 .global $$24068
 $$24068:
-	.incbin "baserom.dol", 0x42E95C, 0x3C
+	.asciz "@@@ (DVDLowNotifyReset) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24077
 $$24077:
-	.incbin "baserom.dol", 0x42E998, 0x38
+	.asciz "@@@ (DVDLowReset) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24087
 $$24087:
-	.incbin "baserom.dol", 0x42E9D0, 0x44
+	.asciz "@@@ (DVDLowAudioBufferConfig) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24101
 $$24101:
-	.incbin "baserom.dol", 0x42EA14, 0x48
+	.asciz "(DVDLowGetCoverStatus): Synch functions can't be called in callbacks\n"
+	.balign 4
 .global $$24102
 $$24102:
-	.incbin "baserom.dol", 0x42EA5C, 0x3C
+	.asciz "@@@ (DVDLowGetCoverStatus) IOS_Ioctl returned error: %d\n"
+	.balign 4
 .global $$24115
 $$24115:
-	.incbin "baserom.dol", 0x42EA98, 0x38
+	.asciz "@@@ (DVDLowReadDVD) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24126
 $$24126:
-	.incbin "baserom.dol", 0x42EAD0, 0x40
+	.asciz "@@@ (DVDLowReadDVDConfig) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24136
 $$24136:
-	.incbin "baserom.dol", 0x42EB10, 0x40
+	.asciz "@@@ (DVDLowReadDvdCopyright) IOS_IoctlAsync returned error: %d\n"
 .global $$24146
 $$24146:
-	.incbin "baserom.dol", 0x42EB50, 0x40
+	.asciz "@@@ (DVDLowReadDvdPhysical) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24157
 $$24157:
-	.incbin "baserom.dol", 0x42EB90, 0x40
+	.asciz "@@@ (DVDLowReadDvdDiscKey) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24168
 $$24168:
-	.incbin "baserom.dol", 0x42EBD0, 0x3C
+	.asciz "@@@ (DVDLowReportKey) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24181
 $$24181:
-	.incbin "baserom.dol", 0x42EC0C, 0x38
+	.asciz "@@@ (DVDLowOffset) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24191
 $$24191:
-	.incbin "baserom.dol", 0x42EC44, 0x3C
+	.asciz "@@@ (DVDLowStopLaser) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24201
 $$24201:
-	.incbin "baserom.dol", 0x42EC80, 0x3C
+	.asciz "@@@ (DVDLowReadDiskBca) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24212
 $$24212:
-	.incbin "baserom.dol", 0x42ECBC, 0x40
+	.asciz "@@@ (DVDLowSerMeasControl) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24223
 $$24223:
-	.incbin "baserom.dol", 0x42ECFC, 0x44
+	.asciz "@@@ (DVDLowRequestDiscStatus) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24233
 $$24233:
-	.incbin "baserom.dol", 0x42ED40, 0x44
+	.asciz "@@@ (DVDLowRequestRetryNumber) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24243
 $$24243:
-	.incbin "baserom.dol", 0x42ED84, 0x40
+	.asciz "@@@ (DVDLowSetMaxRotation) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24254
 $$24254:
-	.incbin "baserom.dol", 0x42EDC4, 0x40
+	.asciz "(DVDLowRead): ERROR - destAddr buffer is not 32 byte aligned\n"
+	.balign 4
 .global $$24255
 $$24255:
-	.incbin "baserom.dol", 0x42EE04, 0x34
+	.asciz "@@@ (DVDLowRead) IOS_IoctlAsync returned error: %d\n"
 .global $$24266
 $$24266:
-	.incbin "baserom.dol", 0x42EE38, 0x34
+	.asciz "@@@ (DVDLowSeek) IOS_IoctlAsync returned error: %d\n"
 .global $$24272
 $$24272:
-	.incbin "baserom.dol", 0x42EE6C, 0x44
+	.asciz "(DVDLowGetCoverReg): Synch functions can't be called in callbacks\n"
+	.balign 4
 .global $$24273
 $$24273:
-	.incbin "baserom.dol", 0x42EEB0, 0x38
+	.asciz "@@@ (DVDLowGetCoverReg) IOS_Ioctl returned error: %d\n"
+	.balign 4
 .global $$24285
 $$24285:
-	.incbin "baserom.dol", 0x42EEE8, 0x44
+	.asciz "@@@ (DVDLowPrepareCoverRegsiter) IOS_IoctlAsync returned error: %d\n"
 .global $$24295
 $$24295:
-	.incbin "baserom.dol", 0x42EF2C, 0x48
+	.asciz "@@@ (DVDLowPrepareStatusRegsiter) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24305
 $$24305:
-	.incbin "baserom.dol", 0x42EF74, 0x48
+	.asciz "@@@ (DVDLowPrepareControlRegister) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24320
 $$24320:
-	.incbin "baserom.dol", 0x42EFBC, 0x44
+	.asciz "@@@ (DVDLowClearCoverInterrupt) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 .global $$24332
 $$24332:
-	.incbin "baserom.dol", 0x42F000, 0x40
+	.asciz "@@@ (DVDLowEnableDvdVideo) IOS_IoctlAsync returned error: %d\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global DiFD
 DiFD:
-	.incbin "baserom.dol", 0x4929E0, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 .global $$23856
 $$23856:
-	.incbin "baserom.dol", 0x4929E8, 0x8
+	.asciz "/dev/di"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global dvdContexts

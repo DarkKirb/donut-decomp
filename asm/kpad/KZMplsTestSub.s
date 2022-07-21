@@ -672,18 +672,27 @@ __KMPLS_linear_Direction:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global e_dir
 e_dir:
-	.incbin "baserom.dol", 0x436110, 0x28
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22972
 $$22972:
-	.incbin "baserom.dol", 0x499438, 0x4
+	.4byte 0x3F000000
 .global $$22973
 $$22973:
-	.incbin "baserom.dol", 0x49943C, 0x4
+	.4byte 0
 .global $$22982
 $$22982:
-	.incbin "baserom.dol", 0x499440, 0x4
+	.4byte 0x3F800000
 .global $$23054
 $$23054:
-	.incbin "baserom.dol", 0x499444, 0x4
+	.4byte 0x403FEF9E

@@ -671,24 +671,49 @@ lbl_803D8FF0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss9SuperStop
 __vt__Q43scn4step4boss9SuperStop:
-	.incbin "baserom.dol", 0x460958, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x802346A8  ;# ptr
+	.4byte 0x80234728  ;# ptr
+	.4byte 0x80234770  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy9SuperStop
 __vt__Q43scn4step5enemy9SuperStop:
-	.incbin "baserom.dol", 0x46ED60, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028DFAC  ;# ptr
+	.4byte 0x8028E080  ;# ptr
+	.4byte 0x8028E08C  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick9SuperStop
 __vt__Q43scn4step7gimmick9SuperStop:
-	.incbin "baserom.dol", 0x47B078, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F7A24
+	.4byte 0x802F7B68
+	.4byte 0x802F7B74
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item9SuperStop
 __vt__Q43scn4step4item9SuperStop:
-	.incbin "baserom.dol", 0x48E030, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C530C
+	.4byte 0x803C538C
+	.4byte 0x803C53E8
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon9SuperStop
 __vt__Q43scn4step6weapon9SuperStop:
-	.incbin "baserom.dol", 0x48FEE0, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D8E80
+	.4byte 0x803D8F60
+	.4byte 0x803D8FBC
+	.4byte 0

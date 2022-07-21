@@ -3573,293 +3573,456 @@ lbl_801FD0B0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PageDataNormal__Q33scn17challengetutorial4info
 T_PageDataNormal__Q33scn17challengetutorial4info:
-	.incbin "baserom.dol", 0x411B18, 0xC0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000005
+	.4byte 0x00000005
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000006
+	.4byte 0x00000006
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000008
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258272
 $$258272:
-	.incbin "baserom.dol", 0x45BDF8, 0x18
+	.asciz "challengetutorial/Main"
+	.balign 4
 .global $$258273
 $$258273:
-	.incbin "baserom.dol", 0x45BE10, 0xC
+	.asciz "Tutorial"
+	.balign 4
 .global $$258274
 $$258274:
-	.incbin "baserom.dol", 0x45BE1C, 0xC
+	.asciz "TutorialBG"
+	.balign 4
 .global $$258275
 $$258275:
-	.incbin "baserom.dol", 0x45BE28, 0x10
+	.asciz "TutorialFrame"
+	.balign 4
 .global $$258276
 $$258276:
-	.incbin "baserom.dol", 0x45BE38, 0x14
+	.asciz "TutorialIllustBase"
+	.balign 4
 .global $$258277
 $$258277:
-	.incbin "baserom.dol", 0x45BE4C, 0xC
+	.asciz "common/Main"
 .global $$258278
 $$258278:
-	.incbin "baserom.dol", 0x45BE58, 0x10
+	.asciz "CommonButton"
+	.balign 4
 .global $$258279
 $$258279:
-	.incbin "baserom.dol", 0x45BE68, 0xC
+	.asciz "WiiButtonN"
+	.balign 4
 .global $$258280
 $$258280:
-	.incbin "baserom.dol", 0x45BE74, 0x1C
+	.asciz "step/challenge/Challenge"
+	.balign 4
 .global $$258283
 $$258283:
-	.incbin "baserom.dol", 0x45BE90, 0x10
+	.asciz "BackButton01N"
+	.balign 4
 .global $$258284
 $$258284:
-	.incbin "baserom.dol", 0x45BEA0, 0x10
+	.asciz "BackButton02N"
+	.balign 4
 .global $$258285
 $$258285:
-	.incbin "baserom.dol", 0x45BEB0, 0x10
+	.asciz "IllustFrameN"
+	.balign 4
 .global $$258618
 $$258618:
-	.incbin "baserom.dol", 0x45BEC0, 0x10
+	.asciz "FrameChallengeN"
 .global $$258619
 $$258619:
-	.incbin "baserom.dol", 0x45BED0, 0xC
+	.asciz "FrameMusouN"
 .global $$258620
 $$258620:
-	.incbin "baserom.dol", 0x45BEDC, 0x10
+	.asciz "FrameMasterN"
+	.balign 4
 .global $$258621
 $$258621:
-	.incbin "baserom.dol", 0x45BEEC, 0x10
+	.asciz "HintChallengeN"
+	.balign 4
 .global $$258622
 $$258622:
-	.incbin "baserom.dol", 0x45BEFC, 0xC
+	.asciz "HintMusouN"
+	.balign 4
 .global $$258623
 $$258623:
-	.incbin "baserom.dol", 0x45BF08, 0xC
+	.asciz "HintMasterN"
 .global $$258624
 $$258624:
-	.incbin "baserom.dol", 0x45BF14, 0x18
+	.asciz "step/challenge/Master"
+	.balign 4
 .global $$258625
 $$258625:
-	.incbin "baserom.dol", 0x45BF2C, 0xC
+	.asciz "BoardMaster"
 .global $$258626
 $$258626:
-	.incbin "baserom.dol", 0x45BF38, 0x18
+	.asciz "step/challenge/Musou"
+	.balign 4
 .global $$258627
 $$258627:
-	.incbin "baserom.dol", 0x45BF50, 0xC
+	.asciz "BoardMusou"
+	.balign 4
 .global $$258628
 $$258628:
-	.incbin "baserom.dol", 0x45BF5C, 0x18
+	.asciz "step/challenge/Normal"
+	.balign 4
 .global $$258629
 $$258629:
-	.incbin "baserom.dol", 0x45BF74, 0x10
+	.asciz "BoardChallenge"
+	.balign 4
 .global $$258632
 $$258632:
-	.incbin "baserom.dol", 0x45BF84, 0x14
+	.asciz "step/challenge/Main"
 .global $$258633
 $$258633:
-	.incbin "baserom.dol", 0x45BF98, 0x10
+	.asciz "TitleExplain"
+	.balign 4
 .global $$258634
 $$258634:
-	.incbin "baserom.dol", 0x45BFA8, 0x10
+	.asciz "TitleExplainN"
+	.balign 4
 .global $$258636
 $$258636:
-	.incbin "baserom.dol", 0x45BFB8, 0xC
+	.asciz "LimitTimeN"
+	.balign 4
 .global $$258637
 $$258637:
-	.incbin "baserom.dol", 0x45BFC4, 0xC
+	.asciz "AButtonN"
+	.balign 4
 .global $$258640
 $$258640:
-	.incbin "baserom.dol", 0x45BFD0, 0xC
+	.asciz "TutorialN"
+	.balign 4
 .global $$258642
 $$258642:
-	.incbin "baserom.dol", 0x45BFDC, 0xC
+	.asciz "PageButtonN"
 .global $$258645
 $$258645:
-	.incbin "baserom.dol", 0x45BFE8, 0x10
+	.asciz "TutorialSkip"
+	.balign 4
 .global $$258647
 $$258647:
-	.incbin "baserom.dol", 0x45BFF8, 0x10
+	.asciz "TutorialKOTSU"
+	.balign 4
 .global $$258648
 $$258648:
-	.incbin "baserom.dol", 0x45C008, 0xC
+	.asciz "HintSkip"
+	.balign 4
 .global $$258649
 $$258649:
-	.incbin "baserom.dol", 0x45C014, 0x24
+	.asciz "challengetutorial/tutorialillust/%s"
 .global $$258655
 $$258655:
-	.incbin "baserom.dol", 0x45C038, 0x14
+	.asciz "ChallengeTitleTime"
+	.balign 4
 .global $$258658
 $$258658:
-	.incbin "baserom.dol", 0x45C04C, 0xC
+	.asciz "LimitShadow"
 .global $$258659
 $$258659:
-	.incbin "baserom.dol", 0x45C058, 0xC
+	.asciz "TimeShadow"
+	.balign 4
 .global $$258661
 $$258661:
-	.incbin "baserom.dol", 0x45C064, 0x14
+	.asciz "ConfirmWindow"
+	.balign 4
+	.4byte 0
 .global $$258662
 $$258662:
-	.incbin "baserom.dol", 0x45C078, 0x10
+	.asciz "ResultMenu_Hint"
 .global $$258663
 $$258663:
-	.incbin "baserom.dol", 0x45C088, 0xC
+	.asciz "GameOver_No"
 .global $$258664
 $$258664:
-	.incbin "baserom.dol", 0x45C094, 0x10
+	.asciz "GameOver_Yes"
+	.balign 4
 .global $$258665
 $$258665:
-	.incbin "baserom.dol", 0x45C0A4, 0xC
+	.asciz "GameOver"
+	.balign 4
 .global $$258666
 $$258666:
-	.incbin "baserom.dol", 0x45C0B0, 0x10
+	.asciz "SelectGhost_No"
+	.balign 4
 .global $$258667
 $$258667:
-	.incbin "baserom.dol", 0x45C0C0, 0x10
+	.asciz "SelectGhost_Yes"
 .global $$258668
 $$258668:
-	.incbin "baserom.dol", 0x45C0D0, 0xC
+	.asciz "SelectGhost"
 .global $$258671
 $$258671:
-	.incbin "baserom.dol", 0x45C0DC, 0x34
+	.4byte 0x801FA2F8  ;# ptr
+	.4byte 0x801FA490  ;# ptr
+	.4byte 0x801FA398  ;# ptr
+	.4byte 0x801FA490  ;# ptr
+	.4byte 0x801FA2F8  ;# ptr
+	.4byte 0x801FA398  ;# ptr
+	.4byte 0x801FA490  ;# ptr
+	.4byte 0x801FA2F8  ;# ptr
+	.4byte 0x801FA2F8  ;# ptr
+	.4byte 0x801FA398  ;# ptr
+	.4byte 0x801FA438  ;# ptr
+	.4byte 0x801FA438  ;# ptr
+	.4byte 0x801FA438  ;# ptr
 .global $$258825
 $$258825:
-	.incbin "baserom.dol", 0x45C110, 0x6C
+	.4byte 0x801FB1E0  ;# ptr
+	.4byte 0x801FB0AC  ;# ptr
+	.4byte 0x801FB0B8  ;# ptr
+	.4byte 0x801FB0C4  ;# ptr
+	.4byte 0x801FB0D0  ;# ptr
+	.4byte 0x801FB0DC  ;# ptr
+	.4byte 0x801FB0E8  ;# ptr
+	.4byte 0x801FB0F4  ;# ptr
+	.4byte 0x801FB100  ;# ptr
+	.4byte 0x801FB10C  ;# ptr
+	.4byte 0x801FB118  ;# ptr
+	.4byte 0x801FB124  ;# ptr
+	.4byte 0x801FB130  ;# ptr
+	.4byte 0x801FB13C  ;# ptr
+	.4byte 0x801FB148  ;# ptr
+	.4byte 0x801FB154  ;# ptr
+	.4byte 0x801FB160  ;# ptr
+	.4byte 0x801FB16C  ;# ptr
+	.4byte 0x801FB178  ;# ptr
+	.4byte 0x801FB184  ;# ptr
+	.4byte 0x801FB190  ;# ptr
+	.4byte 0x801FB19C  ;# ptr
+	.4byte 0x801FB1A8  ;# ptr
+	.4byte 0x801FB1B4  ;# ptr
+	.4byte 0x801FB1C0  ;# ptr
+	.4byte 0x801FB1CC  ;# ptr
+	.4byte 0x801FB1D8  ;# ptr
 .global $$258842
 $$258842:
-	.incbin "baserom.dol", 0x45C17C, 0x18
+	.asciz "%sChallengeTutorial%d"
+	.balign 4
 .global $$258843
 $$258843:
-	.incbin "baserom.dol", 0x45C194, 0x14
+	.asciz "%sChallengeHint0_%d"
 .global $$258864
 $$258864:
-	.incbin "baserom.dol", 0x45C1A8, 0x10
+	.asciz "%sIllust%02d"
+	.balign 4
 .global $$258865
 $$258865:
-	.incbin "baserom.dol", 0x45C1B8, 0x10
+	.asciz "%sIllust0_%d"
+	.balign 4
 .global $$258885
 $$258885:
-	.incbin "baserom.dol", 0x45C1C8, 0xC
+	.asciz "ExplainTex"
+	.balign 4
 .global $$258886
 $$258886:
-	.incbin "baserom.dol", 0x45C1D4, 0x10
+	.asciz "ExplainTexSh"
+	.balign 4
 .global $$258887
 $$258887:
-	.incbin "baserom.dol", 0x45C1E4, 0x1C
+	.asciz "%sChallengeTutorialBtn%d"
+	.balign 4
 .global $$258888
 $$258888:
-	.incbin "baserom.dol", 0x45C200, 0xC
+	.asciz "CommandTex"
+	.balign 4
 .global $$258889
 $$258889:
-	.incbin "baserom.dol", 0x45C20C, 0xC
+	.asciz "CommandN"
+	.balign 4
 .global $$258904
 $$258904:
-	.incbin "baserom.dol", 0x45C218, 0x18
+	.asciz "%sChallengeHintBtn0_%d"
+	.balign 4
 .global $$258947
 $$258947:
-	.incbin "baserom.dol", 0x45C230, 0xC
+	.asciz "Denominator"
 .global $$258949
 $$258949:
-	.incbin "baserom.dol", 0x45C23C, 0xC
+	.asciz "Molecular"
+	.balign 4
 .global $$258950
 $$258950:
-	.incbin "baserom.dol", 0x45C248, 0xC
+	.asciz "CommonText"
+	.balign 4
 .global $$258953
 $$258953:
-	.incbin "baserom.dol", 0x45C254, 0x10
+	.asciz "TutorialStart"
+	.balign 4
 .global $$259084
 $$259084:
-	.incbin "baserom.dol", 0x45C264, 0xC
+	.asciz "EXdisappear"
 .global $$259086
 $$259086:
-	.incbin "baserom.dol", 0x45C270, 0xC
+	.asciz "EXbackdis"
+	.balign 4
 .global $$259093
 $$259093:
-	.incbin "baserom.dol", 0x45C27C, 0xC
+	.asciz "EXappear"
+	.balign 4
 .global $$259100
 $$259100:
-	.incbin "baserom.dol", 0x45C288, 0x10
+	.asciz "EXbackapp"
+	.balign 4
+	.4byte 0
 .global $$259119
 $$259119:
-	.incbin "baserom.dol", 0x45C298, 0x50
+	.asciz "TutorialSETUMEI"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258281
 $$258281:
-	.incbin "baserom.dol", 0x494550, 0x8
+	.asciz "ShadowN"
 .global $$258282
 $$258282:
-	.incbin "baserom.dol", 0x494558, 0x8
+	.asciz "FrameN"
+	.balign 4
 .global $$258286
 $$258286:
-	.incbin "baserom.dol", 0x494560, 0x8
+	.asciz "BaseN"
+	.balign 4
 .global $$258630
 $$258630:
-	.incbin "baserom.dol", 0x494568, 0x8
+	.asciz "BoardN"
+	.balign 4
 .global $$258631
 $$258631:
-	.incbin "baserom.dol", 0x494570, 0x8
+	.asciz "TitleN"
+	.balign 4
 .global $$258635
 $$258635:
-	.incbin "baserom.dol", 0x494578, 0x8
+	.asciz "GhostN"
+	.balign 4
 .global $$258638
 $$258638:
-	.incbin "baserom.dol", 0x494580, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$258639
 $$258639:
-	.incbin "baserom.dol", 0x494588, 0x8
+	.asciz "close"
+	.balign 4
 .global $$258641
 $$258641:
-	.incbin "baserom.dol", 0x494590, 0x8
+	.asciz "HintN"
+	.balign 4
 .global $$258643
 $$258643:
-	.incbin "baserom.dol", 0x494598, 0x8
+	.asciz "Shadow"
+	.balign 4
 .global $$258644
 $$258644:
-	.incbin "baserom.dol", 0x4945A0, 0x8
+	.asciz "Skip"
+	.balign 4
 .global $$258646
 $$258646:
-	.incbin "baserom.dol", 0x4945A8, 0x8
+	.asciz "AButton"
 .global $$258650
 $$258650:
-	.incbin "baserom.dol", 0x4945B0, 0x8
+	.asciz "Illust"
+	.balign 4
 .global $$258651
 $$258651:
-	.incbin "baserom.dol", 0x4945B8, 0x8
+	.asciz "IllustN"
 .global $$258652
 $$258652:
-	.incbin "baserom.dol", 0x4945C0, 0x8
+	.asciz "appear"
+	.balign 4
 .global $$258653
 $$258653:
-	.incbin "baserom.dol", 0x4945C8, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$258654
 $$258654:
-	.incbin "baserom.dol", 0x4945D0, 0x8
+	.asciz "Limit"
+	.balign 4
 .global $$258656
 $$258656:
-	.incbin "baserom.dol", 0x4945D8, 0x8
+	.asciz "Time"
+	.balign 4
 .global $$258657
 $$258657:
-	.incbin "baserom.dol", 0x4945E0, 0x8
+	.asciz "%d:%02d"
 .global $$258660
 $$258660:
-	.incbin "baserom.dol", 0x4945E8, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$258948
 $$258948:
-	.incbin "baserom.dol", 0x4945F0, 0x4
+	.4byte 0x25640000
 .global $$258951
 $$258951:
-	.incbin "baserom.dol", 0x4945F4, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$258952
 $$258952:
-	.incbin "baserom.dol", 0x4945FC, 0x8
+	.asciz "Back"
+	.balign 4
 .global $$258954
 $$258954:
-	.incbin "baserom.dol", 0x494604, 0x8
+	.asciz "Next"
+	.balign 4
 .global $$259085
 $$259085:
-	.incbin "baserom.dol", 0x49460C, 0x4
+	.4byte 0x456E6400
 .global $$259087
 $$259087:
-	.incbin "baserom.dol", 0x494610, 0x8
+	.asciz "Close2"
+	.balign 4
 .global $$259088
 $$259088:
-	.incbin "baserom.dol", 0x494618, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$259089
 $$259089:
-	.incbin "baserom.dol", 0x494620, 0x8
+	.asciz "Page"
+	.balign 4

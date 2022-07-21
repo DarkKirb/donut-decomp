@@ -315,4 +315,13 @@ lbl_8039F494:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter13StateSpinKick
 __vt__Q53scn4step4hero7fighter13StateSpinKick:
-	.incbin "baserom.dol", 0x48A6D0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039F0F0
+	.4byte 0x8039F16C
+	.4byte 0x8039F2CC
+	.4byte 0x8035550C
+	.4byte 0x8039F450
+	.4byte 0x8039F454
+	.4byte 0x80355518
+	.4byte 0

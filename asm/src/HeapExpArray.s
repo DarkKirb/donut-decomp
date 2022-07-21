@@ -455,7 +455,8 @@ clearIfUsing__Q33mem12HeapExpArray5BlockFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249831
 $$249831:
-	.incbin "baserom.dol", 0x493650, 0x8
+	.4byte 0x25730000
+	.4byte 0
 .global $$249832
 $$249832:
-	.incbin "baserom.dol", 0x493658, 0x8
+	.asciz "%s%02lu"

@@ -124,95 +124,200 @@ IsMonotoneIncludeFore__Q43scn4step3map21BinDecorationKindUtilFQ43scn4step3map17B
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INFOS__Q43scn4step3map35$$2unnamed$$2BinDecorationKindUtil_cpp$$2
 T_INFOS__Q43scn4step3map35$$2unnamed$$2BinDecorationKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C3C0, 0x178
+	.4byte 0x80492778
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492784
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492794
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927A8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927BC
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927C8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927D4
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927E0
+	.4byte 0x3DCCCCCD
+	.4byte 0
+	.4byte 0x804927EC
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804927F8
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492804
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492810
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049281C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492828
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492834
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492840
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049284C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492858
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492864
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492870
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049287C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049287C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049287C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8049287C
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492888
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x80492894
+	.4byte 0x3DCCCCCD
+	.4byte 0
+	.4byte 0x8055BF00
+	.4byte 0x3DCCCCCD
+	.4byte 0
+	.4byte 0x8055BF08
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x804928A0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8055BF10
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x8055BF18
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248877
 $$248877:
-	.incbin "baserom.dol", 0x48E878, 0xC
+	.asciz "challenge"
+	.balign 4
 .global $$248878
 $$248878:
-	.incbin "baserom.dol", 0x48E884, 0x10
+	.asciz "challengemusou"
+	.balign 4
 .global $$248879
 $$248879:
-	.incbin "baserom.dol", 0x48E894, 0x14
+	.asciz "challengemaster1"
+	.balign 4
 .global $$248880
 $$248880:
-	.incbin "baserom.dol", 0x48E8A8, 0x14
+	.asciz "challengemaster2"
+	.balign 4
 .global $$248881
 $$248881:
-	.incbin "baserom.dol", 0x48E8BC, 0xC
+	.asciz "challenge01"
 .global $$248882
 $$248882:
-	.incbin "baserom.dol", 0x48E8C8, 0xC
+	.asciz "challenge02"
 .global $$248883
 $$248883:
-	.incbin "baserom.dol", 0x48E8D4, 0xC
+	.asciz "challenge03"
 .global $$248884
 $$248884:
-	.incbin "baserom.dol", 0x48E8E0, 0xC
+	.asciz "challenge04"
 .global $$248885
 $$248885:
-	.incbin "baserom.dol", 0x48E8EC, 0xC
+	.asciz "challenge05"
 .global $$248886
 $$248886:
-	.incbin "baserom.dol", 0x48E8F8, 0xC
+	.asciz "challenge06"
 .global $$248887
 $$248887:
-	.incbin "baserom.dol", 0x48E904, 0xC
+	.asciz "challenge07"
 .global $$248888
 $$248888:
-	.incbin "baserom.dol", 0x48E910, 0xC
+	.asciz "challenge08"
 .global $$248889
 $$248889:
-	.incbin "baserom.dol", 0x48E91C, 0xC
+	.asciz "challenge09"
 .global $$248890
 $$248890:
-	.incbin "baserom.dol", 0x48E928, 0xC
+	.asciz "challenge10"
 .global $$248891
 $$248891:
-	.incbin "baserom.dol", 0x48E934, 0xC
+	.asciz "challenge11"
 .global $$248892
 $$248892:
-	.incbin "baserom.dol", 0x48E940, 0xC
+	.asciz "challenge12"
 .global $$248893
 $$248893:
-	.incbin "baserom.dol", 0x48E94C, 0xC
+	.asciz "challenge13"
 .global $$248894
 $$248894:
-	.incbin "baserom.dol", 0x48E958, 0xC
+	.asciz "levelmap1"
+	.balign 4
 .global $$248895
 $$248895:
-	.incbin "baserom.dol", 0x48E964, 0xC
+	.asciz "levelmap2"
+	.balign 4
 .global $$248896
 $$248896:
-	.incbin "baserom.dol", 0x48E970, 0xC
+	.asciz "levelmap3"
+	.balign 4
 .global $$248897
 $$248897:
-	.incbin "baserom.dol", 0x48E97C, 0xC
+	.asciz "abilityroom"
 .global $$248898
 $$248898:
-	.incbin "baserom.dol", 0x48E988, 0xC
+	.asciz "firstdemo"
+	.balign 4
 .global $$248899
 $$248899:
-	.incbin "baserom.dol", 0x48E994, 0xC
+	.asciz "staffcredit"
 .global $$248902
 $$248902:
-	.incbin "baserom.dol", 0x48E9A0, 0xC
+	.asciz "gckbeach"
+	.balign 4
 .global $$249156
 $$249156:
-	.incbin "baserom.dol", 0x48E9AC, 0xC
+	.asciz "step/map/%s"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248900
 $$248900:
-	.incbin "baserom.dol", 0x4982E0, 0x8
+	.asciz "airfort"
 .global $$248901
 $$248901:
-	.incbin "baserom.dol", 0x4982E8, 0x8
+	.asciz "desert"
+	.balign 4
 .global $$248903
 $$248903:
-	.incbin "baserom.dol", 0x4982F0, 0x8
+	.asciz "grass"
+	.balign 4
 .global $$248904
 $$248904:
-	.incbin "baserom.dol", 0x4982F8, 0x8
+	.asciz "snow"
+	.balign 4

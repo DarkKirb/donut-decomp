@@ -90,4 +90,13 @@ lbl_803FFA40:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq12SequenceRoot
 __vt__Q23seq12SequenceRoot:
-	.incbin "baserom.dol", 0x4925C8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FF9FC
+	.4byte 0x803FFA00
+	.4byte 0x803FF984
+	.4byte 0x803FF988
+	.4byte 0x803FF9F0
+	.4byte 0x803FF9F4
+	.4byte 0x803FF9F8
+	.4byte 0

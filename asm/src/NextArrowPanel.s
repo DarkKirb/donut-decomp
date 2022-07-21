@@ -324,56 +324,80 @@ lbl_803AFACC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$253080
 $$253080:
-	.incbin "baserom.dol", 0x41BED8, 0x10
+	.4byte 0x8055B680
+	.4byte 0x8055B688
+	.4byte 0x8055B690
+	.4byte 0x8055B694
 .global $$253090
 $$253090:
-	.incbin "baserom.dol", 0x41BEE8, 0x10
+	.4byte 0x8055B680
+	.4byte 0x8055B688
+	.4byte 0x8055B690
+	.4byte 0x8055B694
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253551
 $$253551:
-	.incbin "baserom.dol", 0x48C098, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$253552
 $$253552:
-	.incbin "baserom.dol", 0x48C0A8, 0x10
+	.asciz "NextArrowBase"
+	.balign 4
 .global $$253553
 $$253553:
-	.incbin "baserom.dol", 0x48C0B8, 0x40
+	.asciz "NextArrow"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253076
 $$253076:
-	.incbin "baserom.dol", 0x497A60, 0x8
+	.asciz "RightN"
+	.balign 4
 .global $$253077
 $$253077:
-	.incbin "baserom.dol", 0x497A68, 0x8
+	.asciz "LeftN"
+	.balign 4
 .global $$253078
 $$253078:
-	.incbin "baserom.dol", 0x497A70, 0x4
+	.4byte 0x55704E00
 .global $$253079
 $$253079:
-	.incbin "baserom.dol", 0x497A74, 0x8
+	.asciz "DownN"
+	.balign 4
 .global $$253554
 $$253554:
-	.incbin "baserom.dol", 0x497A7C, 0x8
+	.asciz "RightN"
+	.balign 4
 .global $$253555
 $$253555:
-	.incbin "baserom.dol", 0x497A84, 0x8
+	.asciz "LeftN"
+	.balign 4
 .global $$253556
 $$253556:
-	.incbin "baserom.dol", 0x497A8C, 0x4
+	.4byte 0x55704E00
 .global $$253557
 $$253557:
-	.incbin "baserom.dol", 0x497A90, 0x8
+	.asciz "DownN"
+	.balign 4
 .global $$253599
 $$253599:
-	.incbin "baserom.dol", 0x497A98, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253600
 $$253600:
-	.incbin "baserom.dol", 0x497AA0, 0x8
+	.asciz "StartR"
+	.balign 4
 .global $$253601
 $$253601:
-	.incbin "baserom.dol", 0x497AA8, 0x8
+	.asciz "WaitR"
+	.balign 4
 .global $$253612
 $$253612:
-	.incbin "baserom.dol", 0x497AB0, 0x8
+	.asciz "EndR"
+	.balign 4

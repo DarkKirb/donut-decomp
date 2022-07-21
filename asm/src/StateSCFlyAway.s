@@ -600,47 +600,59 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengem
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCFlyAway$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateSCFlyAway$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x461FC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802422DC  ;# ptr
+	.4byte 0x802422C0  ;# ptr
 .global __vt__Q53scn4step4boss15challengemaster14StateSCFlyAway
 __vt__Q53scn4step4boss15challengemaster14StateSCFlyAway:
-	.incbin "baserom.dol", 0x461FD8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80241B80  ;# ptr
+	.4byte 0x80241C2C  ;# ptr
+	.4byte 0x80241D18  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80241F58  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255744
 $$255744:
-	.incbin "baserom.dol", 0x4953F8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256779
 $$256779:
-	.incbin "baserom.dol", 0x49B098, 0x4
+	.4byte 0
 .global $$256800
 $$256800:
-	.incbin "baserom.dol", 0x49B09C, 0x4
+	.4byte 0x42B40000
 .global $$256801
 $$256801:
-	.incbin "baserom.dol", 0x49B0A0, 0x4
+	.4byte 0x3F11EB85
 .global $$256802
 $$256802:
-	.incbin "baserom.dol", 0x49B0A4, 0x4
+	.4byte 0xBF800000
 .global $$256803
 $$256803:
-	.incbin "baserom.dol", 0x49B0A8, 0x4
+	.4byte 0x43B40000
 .global $$256804
 $$256804:
-	.incbin "baserom.dol", 0x49B0AC, 0x4
+	.4byte 0x43340000
 .global $$256807
 $$256807:
-	.incbin "baserom.dol", 0x49B0B0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256812
 $$256812:
-	.incbin "baserom.dol", 0x49B0B8, 0x4
+	.4byte 0x4222F983
 .global $$256813
 $$256813:
-	.incbin "baserom.dol", 0x49B0BC, 0x4
+	.4byte 0x3C8EFA35
 .global $$256878
 $$256878:
-	.incbin "baserom.dol", 0x49B0C0, 0x4
+	.4byte 0x3F800000
 .global $$256879
 $$256879:
-	.incbin "baserom.dol", 0x49B0C4, 0x4
+	.4byte 0x3727C5AC

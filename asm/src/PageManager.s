@@ -1091,67 +1091,89 @@ Create__Q35pause11PageManager10PageRecipeFQ35pause11PageManager8PageKindUl:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252644
 $$252644:
-	.incbin "baserom.dol", 0x411590, 0x10
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252168
 $$252168:
-	.incbin "baserom.dol", 0x459B78, 0xC
+	.asciz "WindowFixN"
+	.balign 4
 .global $$253823
 $$253823:
-	.incbin "baserom.dol", 0x459B84, 0xC
+	.asciz "PausePage"
+	.balign 4
 .global $$253824
 $$253824:
-	.incbin "baserom.dol", 0x459B90, 0x10
+	.asciz "PauseCursorBase"
 .global $$253825
 $$253825:
-	.incbin "baserom.dol", 0x459BA0, 0xC
+	.asciz "CursorLN"
+	.balign 4
 .global $$253826
 $$253826:
-	.incbin "baserom.dol", 0x459BAC, 0x10
+	.asciz "PauseCursorL"
+	.balign 4
 .global $$253827
 $$253827:
-	.incbin "baserom.dol", 0x459BBC, 0xC
+	.asciz "CursorRN"
+	.balign 4
 .global $$253828
 $$253828:
-	.incbin "baserom.dol", 0x459BC8, 0x10
+	.asciz "PauseCursorR"
+	.balign 4
 .global $$253829
 $$253829:
-	.incbin "baserom.dol", 0x459BD8, 0x10
+	.asciz "PauseCursorN"
+	.balign 4
 .global $$253970
 $$253970:
-	.incbin "baserom.dol", 0x459BE8, 0xC
+	.asciz "NextPage2"
+	.balign 4
 .global $$253971
 $$253971:
-	.incbin "baserom.dol", 0x459BF4, 0xC
+	.asciz "PrevPage2"
+	.balign 4
 .global $$254026
 $$254026:
-	.incbin "baserom.dol", 0x459C00, 0xC
+	.asciz "lyt/%s.arc"
+	.balign 4
 .global $$254027
 $$254027:
-	.incbin "baserom.dol", 0x459C0C, 0xC
+	.asciz "%s.cmpbin"
+	.balign 4
 .global $$254051
 $$254051:
-	.incbin "baserom.dol", 0x459C18, 0xC
+	.asciz "NextPage1"
+	.balign 4
 .global $$254052
 $$254052:
-	.incbin "baserom.dol", 0x459C24, 0x3C
+	.asciz "PrevPage1"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252167
 $$252167:
-	.incbin "baserom.dol", 0x493CE8, 0x8
+	.asciz "WindowN"
 .global $$253830
 $$253830:
-	.incbin "baserom.dol", 0x493CF0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254028
 $$254028:
-	.incbin "baserom.dol", 0x493CF8, 0x8
+	.asciz "%s.cmp"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MOVE_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2
 T_MOVE_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2:
-	.incbin "baserom.dol", 0x49A818, 0x4
+	.4byte 0x80557908
 .global T_FIX_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2
 T_FIX_NODE_NAME__Q25pause25$$2unnamed$$2PageManager_cpp$$2:
-	.incbin "baserom.dol", 0x49A81C, 0x4
+	.4byte 0x8045DA78

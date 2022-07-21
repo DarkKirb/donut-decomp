@@ -364,22 +364,27 @@ VX2_Free__FPv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22798
 $$22798:
-	.incbin "baserom.dol", 0x4445F8, 0x1C
+	.asciz "[VideoDecoder] Destroying\n"
+	.balign 4
 .global $$22814
 $$22814:
-	.incbin "baserom.dol", 0x444614, 0x1C
+	.asciz "[Decoder] Queue too small\n"
+	.balign 4
 .global $$22815
 $$22815:
-	.incbin "baserom.dol", 0x444630, 0x28
+	.asciz "[VideoDecoder] Cannot initialize codec"
+	.balign 4
 .global $$22824
 $$22824:
-	.incbin "baserom.dol", 0x444658, 0x24
+	.asciz "[decodeImage] Output queue full\n"
+	.balign 4
 .global $$22825
 $$22825:
-	.incbin "baserom.dol", 0x44467C, 0x1C
+	.asciz "[decodeImage] decode error\n"
 .global $$22834
 $$22834:
-	.incbin "baserom.dol", 0x444698, 0x1C
+	.asciz "[VideoDecoder] Queue empty\n"
 .global $$22842
 $$22842:
-	.incbin "baserom.dol", 0x4446B4, 0x24
+	.asciz "[VideoDecoder] Skip:Queue empty\n"
+	.balign 4

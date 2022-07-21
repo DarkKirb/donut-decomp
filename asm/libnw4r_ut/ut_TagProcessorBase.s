@@ -472,12 +472,21 @@ lbl_801205FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1
 __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1:
-	.incbin "baserom.dol", 0x43E7E0, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x80120300  ;# ptr
+	.4byte 0x80120310  ;# ptr
+	.4byte 0x80120440  ;# ptr
 .global __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1
 __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1:
-	.incbin "baserom.dol", 0x43E7F4, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011FFC0  ;# ptr
+	.4byte 0x8011FFD0  ;# ptr
+	.4byte 0x80120100  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24919
 $$24919:
-	.incbin "baserom.dol", 0x49A020, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

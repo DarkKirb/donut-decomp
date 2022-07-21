@@ -5476,42 +5476,54 @@ __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef24DrawSmoothStripeStrategy
 __vt__Q34nw4r2ef24DrawSmoothStripeStrategy:
-	.incbin "baserom.dol", 0x43C5B8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x800C8AD0  ;# ptr
+	.4byte 0x800C7480  ;# ptr
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
+	.4byte 0x800C8150  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$215287
 $$215287:
-	.incbin "baserom.dol", 0x499930, 0x4
+	.4byte 0x34000000
 .global $$215288
 $$215288:
-	.incbin "baserom.dol", 0x499934, 0x4
+	.4byte 0x3CC90FDB
 .global $$215289
 $$215289:
-	.incbin "baserom.dol", 0x499938, 0x4
+	.4byte 0
 .global $$215290
 $$215290:
-	.incbin "baserom.dol", 0x49993C, 0x4
+	.4byte 0x3F800000
 .global $$215299
 $$215299:
-	.incbin "baserom.dol", 0x499940, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$215425
 $$215425:
-	.incbin "baserom.dol", 0x499948, 0x4
+	.4byte 0x3F000000
 .global $$215426
 $$215426:
-	.incbin "baserom.dol", 0x49994C, 0x4
+	.4byte 0xBF800000
 .global $$215501
 $$215501:
-	.incbin "baserom.dol", 0x499950, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$215880
 $$215880:
-	.incbin "baserom.dol", 0x499958, 0x4
+	.4byte 0x3C23D70A
 .global $$216421
 $$216421:
-	.incbin "baserom.dol", 0x49995C, 0x4
+	.4byte 0x43B40000
 .global $$216422
 $$216422:
-	.incbin "baserom.dol", 0x499960, 0x8
+	.4byte 0x3F360B61
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2v0

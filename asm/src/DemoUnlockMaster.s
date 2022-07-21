@@ -306,18 +306,30 @@ lbl_802FCC4C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255141
 $$255141:
-	.incbin "baserom.dol", 0x47B900, 0x38
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Unlock.UnlockMaster"
+	.balign 4
+	.4byte 0
 .global __vt__Q53scn4step7gimmick11areamapdemo16DemoUnlockMaster
 __vt__Q53scn4step7gimmick11areamapdemo16DemoUnlockMaster:
-	.incbin "baserom.dol", 0x47B938, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FC8D8
+	.4byte 0x802FAE04
+	.4byte 0x802FAE08
+	.4byte 0x802FC944
+	.4byte 0x802FC954
+	.4byte 0x802FC958
+	.4byte 0x802FC96C
+	.4byte 0x802FC9A0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255199
 $$255199:
-	.incbin "baserom.dol", 0x49D1A0, 0x4
+	.4byte 0x3F800000
 .global $$255200
 $$255200:
-	.incbin "baserom.dol", 0x49D1A4, 0x4
+	.4byte 0
 .global $$255203
 $$255203:
-	.incbin "baserom.dol", 0x49D1A8, 0x8
+	.4byte 0x43300000
+	.4byte 0

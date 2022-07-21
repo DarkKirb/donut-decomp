@@ -982,77 +982,100 @@ setPhaseOn__Q44info6common12AddWiiRemote6RemoteFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252041
 $$252041:
-	.incbin "baserom.dol", 0x4533A8, 0x10
+	.asciz "common/Remote"
+	.balign 4
 .global $$253618
 $$253618:
-	.incbin "baserom.dol", 0x4533B8, 0xC
+	.asciz "PlusButtonN"
 .global $$253619
 $$253619:
-	.incbin "baserom.dol", 0x4533C4, 0xC
+	.asciz "BackText"
+	.balign 4
 .global $$253620
 $$253620:
-	.incbin "baserom.dol", 0x4533D0, 0x18
+	.asciz "SystemWiiRemoteAddBtn"
+	.balign 4
 .global $$253754
 $$253754:
-	.incbin "baserom.dol", 0x4533E8, 0xC
+	.asciz "Remote0%dN"
+	.balign 4
 .global $$253755
 $$253755:
-	.incbin "baserom.dol", 0x4533F4, 0xC
+	.asciz "BtnLamp01N"
+	.balign 4
 .global $$253756
 $$253756:
-	.incbin "baserom.dol", 0x453400, 0x40
+	.asciz "BtnLamp02N"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2
 T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2:
-	.incbin "baserom.dol", 0x493308, 0x4
+	.4byte 0x804572A8
 .global $$253617
 $$253617:
-	.incbin "baserom.dol", 0x49330C, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$253710
 $$253710:
-	.incbin "baserom.dol", 0x493314, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253727
 $$253727:
-	.incbin "baserom.dol", 0x49331C, 0x4
+	.4byte 0x4F757400
 .global $$253751
 $$253751:
-	.incbin "baserom.dol", 0x493320, 0x8
+	.asciz "Remote"
+	.balign 4
 .global $$253752
 $$253752:
-	.incbin "baserom.dol", 0x493328, 0x8
+	.asciz "BtnLamp"
 .global $$253753
 $$253753:
-	.incbin "baserom.dol", 0x493330, 0x4
+	.4byte 0x4C454400
 .global $$253757
 $$253757:
-	.incbin "baserom.dol", 0x493334, 0x8
+	.asciz "LEDN"
+	.balign 4
 .global $$253758
 $$253758:
-	.incbin "baserom.dol", 0x49333C, 0x8
+	.asciz "LED01"
+	.balign 4
 .global $$253759
 $$253759:
-	.incbin "baserom.dol", 0x493344, 0x8
+	.asciz "LED02"
+	.balign 4
 .global $$253760
 $$253760:
-	.incbin "baserom.dol", 0x49334C, 0x8
+	.asciz "LED03"
+	.balign 4
 .global $$253761
 $$253761:
-	.incbin "baserom.dol", 0x493354, 0x8
+	.asciz "LED04"
+	.balign 4
 .global $$253790
 $$253790:
-	.incbin "baserom.dol", 0x49335C, 0x8
+	.asciz "ToOn"
+	.balign 4
 .global $$253799
 $$253799:
-	.incbin "baserom.dol", 0x493364, 0x8
+	.asciz "ToOff"
+	.balign 4
 .global $$253807
 $$253807:
-	.incbin "baserom.dol", 0x49336C, 0x4
+	.4byte 0x4F666600
 .global $$253810
 $$253810:
-	.incbin "baserom.dol", 0x493370, 0x8
+	.4byte 0x4F6E0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253693
 $$253693:
-	.incbin "baserom.dol", 0x49A480, 0x8
+	.4byte 0x3F800000
+	.4byte 0

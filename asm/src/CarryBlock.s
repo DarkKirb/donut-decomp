@@ -111,23 +111,28 @@ update__Q33scn10grandtitle10CarryBlockFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251790
 $$251790:
-	.incbin "baserom.dol", 0x45C790, 0x18
+	.asciz "grandtitle/BlockStar"
+	.balign 4
 .global $$252260
 $$252260:
-	.incbin "baserom.dol", 0x45C7A8, 0x10
+	.asciz "CA3BodyJ"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2:
-	.incbin "baserom.dol", 0x494780, 0x4
+	.4byte 0x80460690
 .global $$252259
 $$252259:
-	.incbin "baserom.dol", 0x494784, 0xC
+	.asciz "TopL"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252261
 $$252261:
-	.incbin "baserom.dol", 0x49AA88, 0x4
+	.4byte 0
 .global $$252262
 $$252262:
-	.incbin "baserom.dol", 0x49AA8C, 0x4
+	.4byte 0x3F800000

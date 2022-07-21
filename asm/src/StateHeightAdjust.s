@@ -262,21 +262,29 @@ procFixPos__Q53scn4step4boss6dubior17StateHeightAdjustFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior17StateHeightAdjust
 __vt__Q53scn4step4boss6dubior17StateHeightAdjust:
-	.incbin "baserom.dol", 0x4638F0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024F0EC  ;# ptr
+	.4byte 0x8024F0F0  ;# ptr
+	.4byte 0x8024F19C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024F2B8  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255294
 $$255294:
-	.incbin "baserom.dol", 0x49B2D8, 0x4
+	.4byte 0
 .global $$255295
 $$255295:
-	.incbin "baserom.dol", 0x49B2DC, 0x4
+	.4byte 0x3F800000
 .global $$255296
 $$255296:
-	.incbin "baserom.dol", 0x49B2E0, 0x4
+	.4byte 0xBF800000
 .global $$255297
 $$255297:
-	.incbin "baserom.dol", 0x49B2E4, 0x4
+	.4byte 0x3F000000
 .global $$255333
 $$255333:
-	.incbin "baserom.dol", 0x49B2E8, 0x8
+	.4byte 0x43300000
+	.4byte 0

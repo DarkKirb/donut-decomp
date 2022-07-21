@@ -2308,38 +2308,47 @@ __sinit_$$3ef_drawstrategyimpl_cpp:
 /* 800BAB4C 000B698C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402378, 0x4
+	.4byte 0x800BAAC0  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef16DrawStrategyImpl
 __vt__Q34nw4r2ef16DrawStrategyImpl:
-	.incbin "baserom.dol", 0x43C4F8, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800BAAB0  ;# ptr
+	.4byte 0
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29915
 $$29915:
-	.incbin "baserom.dol", 0x499828, 0x4
+	.4byte 0x3F800000
 .global $$29916
 $$29916:
-	.incbin "baserom.dol", 0x49982C, 0x4
+	.4byte 0
 .global $$29989
 $$29989:
-	.incbin "baserom.dol", 0x499830, 0x4
+	.4byte 0x42C80000
 .global $$210502
 $$210502:
-	.incbin "baserom.dol", 0x499834, 0x4
+	.4byte 0xBF800000
 .global $$210503
 $$210503:
-	.incbin "baserom.dol", 0x499838, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$210510
 $$210510:
-	.incbin "baserom.dol", 0x499840, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$210511
 $$210511:
-	.incbin "baserom.dol", 0x499848, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$210650
 $$210650:
-	.incbin "baserom.dol", 0x499850, 0x8
+	.4byte 0x34000000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mXUnitVec__Q34nw4r2ef16DrawStrategyImpl

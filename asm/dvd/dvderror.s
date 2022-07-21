@@ -725,10 +725,12 @@ __DVDStoreErrorCode:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21459
 $$21459:
-	.incbin "baserom.dol", 0x42D7A8, 0x1C
+	.asciz "/shared2/test2/dvderror.dat"
 .global $$21478
 $$21478:
-	.incbin "baserom.dol", 0x42D7C4, 0x14
+	.asciz "/shared2/test2"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global NandInfo

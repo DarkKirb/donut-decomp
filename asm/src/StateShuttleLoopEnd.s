@@ -189,4 +189,13 @@ procFixPos__Q53scn4step4hero4wing19StateShuttleLoopEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero4wing19StateShuttleLoopEnd
 __vt__Q53scn4step4hero4wing19StateShuttleLoopEnd:
-	.incbin "baserom.dol", 0x48A1A0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80399DE0
+	.4byte 0x80399E84
+	.4byte 0x80399EE0
+	.4byte 0x8035550C
+	.4byte 0x80399FA8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

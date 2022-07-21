@@ -554,4 +554,5 @@ setFlash__Q24gobj9ColorAnimFRCQ23g3d14ColorAnimFlash:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251917
 $$251917:
-	.incbin "baserom.dol", 0x49A2C8, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0

@@ -307,20 +307,40 @@ lbl_803114B0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253269
 $$253269:
-	.incbin "baserom.dol", 0x47D578, 0xC
+	.asciz "FChange1"
+	.balign 4
 .global __vt__Q53scn4step7gimmick10guideboard17ActionThroughLand
 __vt__Q53scn4step7gimmick10guideboard17ActionThroughLand:
-	.incbin "baserom.dol", 0x47D584, 0x44
+	.4byte 0
+	.4byte 0
+	.4byte 0x80311108
+	.4byte 0x80311110
+	.4byte 0x80311134
+	.4byte 0x803111D8
+	.4byte 0x803111DC
+	.4byte 0x80310570
+	.4byte 0x8031056C
+	.4byte 0x80310568
+	.4byte 0x80310564
+	.4byte 0x80310560
+	.4byte 0x8031055C
+	.4byte 0x80310558
+	.4byte 0x80310554
+	.4byte 0x80311378
+	.4byte 0x80310574
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253223
 $$253223:
-	.incbin "baserom.dol", 0x496B40, 0x8
+	.asciz "FTopL"
+	.balign 4
 .global $$253236
 $$253236:
-	.incbin "baserom.dol", 0x496B48, 0x8
+	.asciz "FWait1"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253318
 $$253318:
-	.incbin "baserom.dol", 0x49D420, 0x8
+	.4byte 0
+	.4byte 0

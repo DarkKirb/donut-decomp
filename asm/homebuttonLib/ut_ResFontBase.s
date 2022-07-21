@@ -400,10 +400,55 @@ lbl_80141F20:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2549
 $$2549:
-	.incbin "baserom.dol", 0x441678, 0x10
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8013FDF0  ;# ptr
+	.4byte 0
 .global __vt__Q46nw4hbm2ut6detail11ResFontBase
 __vt__Q46nw4hbm2ut6detail11ResFontBase:
-	.incbin "baserom.dol", 0x441688, 0x58
+	.4byte 0x80445550
+	.4byte 0
+	.4byte 0x80141B10  ;# ptr
+	.4byte 0x80141B20  ;# ptr
+	.4byte 0x80141B30  ;# ptr
+	.4byte 0x80141B40  ;# ptr
+	.4byte 0x80141B50  ;# ptr
+	.4byte 0x80141B60  ;# ptr
+	.4byte 0x80141B70  ;# ptr
+	.4byte 0x80141B80  ;# ptr
+	.4byte 0x80141B90  ;# ptr
+	.4byte 0x80141BA0  ;# ptr
+	.4byte 0x80141BB0  ;# ptr
+	.4byte 0x80141BC0  ;# ptr
+	.4byte 0x80141BD0  ;# ptr
+	.4byte 0x80141BE0  ;# ptr
+	.4byte 0x80141BF0  ;# ptr
+	.4byte 0x80141C90  ;# ptr
+	.4byte 0x80141CA0  ;# ptr
+	.4byte 0x80141CB0  ;# ptr
+	.4byte 0x80141DB0  ;# ptr
+	.4byte 0x80141E60  ;# ptr
 .global __vt__Q36nw4hbm2ut4Font
 __vt__Q36nw4hbm2ut4Font:
-	.incbin "baserom.dol", 0x4416E0, 0x58
+	.4byte 0x80445570
+	.4byte 0
+	.4byte 0x8013D340  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

@@ -129,7 +129,9 @@ lbl_8014D1E4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2789
 $$2789:
-	.incbin "baserom.dol", 0x4436E8, 0x14
+	.asciz "ExpHeapSupport.cpp"
+	.balign 4
 .global $$2790
 $$2790:
-	.incbin "baserom.dol", 0x4436FC, 0x2C
+	.asciz "NW4R:Failed assertion hasMutex( aHandle )"
+	.balign 4

@@ -830,24 +830,28 @@ __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common17St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common17StateMasterSummon$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common17StateMasterSummon$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x461740, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8023D5B0  ;# ptr
+	.4byte 0x8023D594  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259024
 $$259024:
-	.incbin "baserom.dol", 0x49AFF0, 0x4
+	.4byte 0
 .global $$259025
 $$259025:
-	.incbin "baserom.dol", 0x49AFF4, 0x4
+	.4byte 0x3F800000
 .global $$259026
 $$259026:
-	.incbin "baserom.dol", 0x49AFF8, 0x4
+	.4byte 0x3F000000
 .global $$259027
 $$259027:
-	.incbin "baserom.dol", 0x49AFFC, 0x4
+	.4byte 0x3C8EFA35
 .global $$259038
 $$259038:
-	.incbin "baserom.dol", 0x49B000, 0x8
+	.4byte 0x40800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q53scn4step6weapon26challengemastersummonlight6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

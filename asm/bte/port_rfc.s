@@ -1451,82 +1451,103 @@ lbl_80097730:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21517
 $$21517:
-	.incbin "baserom.dol", 0x43AD50, 0x14
+	.asciz "port_open_continue"
+	.balign 4
 .global $$21518
 $$21518:
-	.incbin "baserom.dol", 0x43AD64, 0x24
+	.asciz "port_open_continue no mx channel"
+	.balign 4
 .global $$21560
 $$21560:
-	.incbin "baserom.dol", 0x43AD88, 0x18
+	.asciz "PORT_StartCnf result:%d"
 .global $$21561
 $$21561:
-	.incbin "baserom.dol", 0x43ADA0, 0x20
+	.asciz "PORT_StartCnf failed result:%d"
+	.balign 4
 .global $$21573
 $$21573:
-	.incbin "baserom.dol", 0x43ADC0, 0x10
+	.asciz "PORT_StartInd"
+	.balign 4
 .global $$21600
 $$21600:
-	.incbin "baserom.dol", 0x43ADD0, 0x20
+	.asciz "PORT_ParNegInd dlci:%d mtu:%d"
+	.balign 4
 .global $$21601
 $$21601:
-	.incbin "baserom.dol", 0x43ADF0, 0x20
+	.asciz "PORT_ParNegInd: port not found"
+	.balign 4
 .global $$21618
 $$21618:
-	.incbin "baserom.dol", 0x43AE10, 0x2C
+	.asciz "PORT_ParNegCnf dlci:%d mtu:%d cl: %d k: %d"
+	.balign 4
 .global $$21631
 $$21631:
-	.incbin "baserom.dol", 0x43AE3C, 0x24
+	.asciz "PORT_DlcEstablishInd dlci:%d mtu:%d"
 .global $$21649
 $$21649:
-	.incbin "baserom.dol", 0x43AE60, 0x30
+	.asciz "PORT_DlcEstablishCnf dlci:%d mtu:%d result:%d"
+	.balign 4
 .global $$21655
 $$21655:
-	.incbin "baserom.dol", 0x43AE90, 0x10
+	.asciz "PORT_PortNegInd"
 .global $$21666
 $$21666:
-	.incbin "baserom.dol", 0x43AEA0, 0x10
+	.asciz "PORT_PortNegCnf"
 .global $$21667
 $$21667:
-	.incbin "baserom.dol", 0x43AEB0, 0x18
+	.asciz "PORT_PortNegCnf no port"
 .global $$21668
 $$21668:
-	.incbin "baserom.dol", 0x43AEC8, 0x28
+	.asciz "PORT_PortNegCnf Control Already sent"
+	.balign 4
 .global $$21702
 $$21702:
-	.incbin "baserom.dol", 0x43AEF0, 0x10
+	.asciz "PORT_ControlInd"
 .global $$21703
 $$21703:
-	.incbin "baserom.dol", 0x43AF00, 0x40
+	.asciz "PORT_ControlInd DTR_DSR : %d, RTS_CTS : %d, RI : %d, DCD : %d"
+	.balign 4
 .global $$21717
 $$21717:
-	.incbin "baserom.dol", 0x43AF40, 0x10
+	.asciz "PORT_ControlCnf"
 .global $$21732
 $$21732:
-	.incbin "baserom.dol", 0x43AF50, 0x14
+	.asciz "PORT_LineStatusInd"
+	.balign 4
 .global $$21737
 $$21737:
-	.incbin "baserom.dol", 0x43AF64, 0x14
+	.asciz "PORT_DlcReleaseInd"
+	.balign 4
 .global $$21746
 $$21746:
-	.incbin "baserom.dol", 0x43AF78, 0x10
+	.asciz "PORT_CloseInd"
+	.balign 4
 .global $$21755
 $$21755:
-	.incbin "baserom.dol", 0x43AF88, 0x18
+	.asciz "Port_TimeOutCloseMux"
+	.balign 4
 .global $$21780
 $$21780:
-	.incbin "baserom.dol", 0x43AFA0, 0x24
+	.asciz "PORT_DataInd with data length %d"
+	.balign 4
 .global $$21781
 $$21781:
-	.incbin "baserom.dol", 0x43AFC4, 0x34
+	.asciz "PORT_DataInd. Buffer over run. Dropping the buffer"
+	.balign 4
 .global $$21799
 $$21799:
-	.incbin "baserom.dol", 0x43AFF8, 0x14
+	.asciz "PORT_FlowInd fc:%d"
+	.balign 4
 .global $$21812
 $$21812:
-	.incbin "baserom.dol", 0x43B00C, 0x18
+	.asciz "Sending RFCOMM_DataReq"
+	.balign 4
 .global $$21829
 $$21829:
-	.incbin "baserom.dol", 0x43B024, 0x2C
+	.asciz "port_rfc_closed in OPENING state ignored"
+	.balign 4
 .global $$21830
 $$21830:
-	.incbin "baserom.dol", 0x43B050, 0x30
+	.asciz "port_rfc_closed state:%d sending events:%x"
+	.balign 4
+	.4byte 0

@@ -55,4 +55,11 @@ lbl_8027EE78:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy9BrainBase
 __vt__Q43scn4step5enemy9BrainBase:
-	.incbin "baserom.dol", 0x46C640, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8027EE38  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

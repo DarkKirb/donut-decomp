@@ -497,43 +497,71 @@ procAnim__Q53scn4step4hero7fighter7FighterFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249834
 $$249834:
-	.incbin "baserom.dol", 0x485AA8, 0x1C
+	.asciz "step/hero/modeldesc/Fighter"
 .global $$249851
 $$249851:
-	.incbin "baserom.dol", 0x485AC4, 0x24
+	.asciz "step/chara/hero/kirby/fighter/Hat"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256343
 $$256343:
-	.incbin "baserom.dol", 0x48A300, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$256344
 $$256344:
-	.incbin "baserom.dol", 0x48A320, 0x28
+	.asciz "step/chara/hero/kirby/fighter/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero7fighter7Fighter
 __vt__Q53scn4step4hero7fighter7Fighter:
-	.incbin "baserom.dol", 0x48A348, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039B508
+	.4byte 0x8039B594
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x8039B698
+	.4byte 0x8032B7B0
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8039B744
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249541
 $$249541:
-	.incbin "baserom.dol", 0x497188, 0x8
+	.asciz "HatM"
+	.balign 4
 .global $$249542
 $$249542:
-	.incbin "baserom.dol", 0x497190, 0x8
+	.asciz "HatBigM"
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2names$$21:
-	.incbin "baserom.dol", 0x497198, 0x8
+	.4byte 0x8055ADA8
+	.4byte 0x8055ADB0
 .global $$249857
 $$249857:
-	.incbin "baserom.dol", 0x4971A0, 0x8
+	.asciz "LBand1S"
 .global $$249888
 $$249888:
-	.incbin "baserom.dol", 0x4971A8, 0x8
+	.asciz "RBand1S"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249856
 $$249856:
-	.incbin "baserom.dol", 0x49DAF0, 0x8
+	.4byte 0x3BA3D70A
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc7FighterFv$$2desc

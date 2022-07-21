@@ -155,12 +155,21 @@ createWeapon__Q53scn4step4hero7fighter10StateSmashFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter10StateSmash
 __vt__Q53scn4step4hero7fighter10StateSmash:
-	.incbin "baserom.dol", 0x48A6A8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039EE90
+	.4byte 0x8039EE94
+	.4byte 0x8039EF04
+	.4byte 0x8035550C
+	.4byte 0x8039EF08
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257075
 $$257075:
-	.incbin "baserom.dol", 0x49E328, 0x4
+	.4byte 0x3F19999A
 .global $$257076
 $$257076:
-	.incbin "baserom.dol", 0x49E32C, 0x4
+	.4byte 0

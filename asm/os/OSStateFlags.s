@@ -154,7 +154,7 @@ lbl_80027228:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2709
 $$2709:
-	.incbin "baserom.dol", 0x42BA50, 0x28
+	.asciz "/title/00000001/00000002/data/state.dat"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global StateFlags

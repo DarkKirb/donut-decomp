@@ -363,21 +363,29 @@ lbl_802A99C4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage18StateDamageExtreme
 __vt__Q53scn4step5enemy6damage18StateDamageExtreme:
-	.incbin "baserom.dol", 0x471D80, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A9600  ;# ptr
+	.4byte 0x802A96A4  ;# ptr
+	.4byte 0x802A9884  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A98C0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256978
 $$256978:
-	.incbin "baserom.dol", 0x49C180, 0x4
+	.4byte 0
 .global $$257016
 $$257016:
-	.incbin "baserom.dol", 0x49C184, 0x4
+	.4byte 0x41A00000
 .global $$257017
 $$257017:
-	.incbin "baserom.dol", 0x49C188, 0x4
+	.4byte 0x43B40000
 .global $$257018
 $$257018:
-	.incbin "baserom.dol", 0x49C18C, 0x4
+	.4byte 0x3F800000
 .global $$257019
 $$257019:
-	.incbin "baserom.dol", 0x49C190, 0x8
+	.4byte 0x42652EE1
+	.4byte 0

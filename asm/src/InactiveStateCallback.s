@@ -16,4 +16,7 @@ onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero21InactiveStateCallback
 __vt__Q43scn4step4hero21InactiveStateCallback:
-	.incbin "baserom.dol", 0x480DC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803412A8
+	.4byte 0x803418A0

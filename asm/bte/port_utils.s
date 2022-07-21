@@ -435,22 +435,27 @@ lbl_80097D14:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21174
 $$21174:
-	.incbin "baserom.dol", 0x43B080, 0x20
+	.asciz "port_select_mtu bad packet size"
 .global $$21175
 $$21175:
-	.incbin "baserom.dol", 0x43B0A0, 0x38
+	.asciz "port_select_mtu selected %d based on connection speed"
+	.balign 4
 .global $$21176
 $$21176:
-	.incbin "baserom.dol", 0x43B0D8, 0x38
+	.asciz "port_select_mtu selected %d based on l2cap PDU size"
+	.4byte 0
 .global $$21177
 $$21177:
-	.incbin "baserom.dol", 0x43B110, 0x28
+	.asciz "port_select_mtu application selected %d"
 .global $$21178
 $$21178:
-	.incbin "baserom.dol", 0x43B138, 0x48
+	.asciz "port_select_mtu credit_rx_max %d, credit_rx_low %d, rx_buf_critical %d"
+	.balign 4
 .global $$21192
 $$21192:
-	.incbin "baserom.dol", 0x43B180, 0x18
+	.asciz "rfc_port_closed DONE"
+	.balign 4
 .global $$21272
 $$21272:
-	.incbin "baserom.dol", 0x43B198, 0x30
+	.asciz "PORT_DataInd Data reached HW. Sending FC set."
+	.balign 4

@@ -356,14 +356,33 @@ procFixPos__Q53scn4step4hero6common16StateShotAirBallFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy16StateShotAirBall
 __vt__Q53scn4step4boss6whispy16StateShotAirBall:
-	.incbin "baserom.dol", 0x466778, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025E12C  ;# ptr
+	.4byte 0x8025E210  ;# ptr
+	.4byte 0x8025E37C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025E380  ;# ptr
+	.4byte 0x80234504  ;# ptr
+	.4byte 0x8025DF8C  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common16StateShotAirBall
 __vt__Q53scn4step4hero6common16StateShotAirBall:
-	.incbin "baserom.dol", 0x488150, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036A19C
+	.4byte 0x8036A218
+	.4byte 0x8036A2B4
+	.4byte 0x8035550C
+	.4byte 0x8036A32C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253461
 $$253461:
-	.incbin "baserom.dol", 0x49B560, 0x8
+	.4byte 0
+	.4byte 0

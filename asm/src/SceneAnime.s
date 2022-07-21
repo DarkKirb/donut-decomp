@@ -456,28 +456,52 @@ GetRuntimeTypeInfo__Q23scn6ISceneCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252934
 $$252934:
-	.incbin "baserom.dol", 0x459F60, 0x10
+	.asciz "AnimeCommon.dn"
+	.balign 4
 .global $$252935
 $$252935:
-	.incbin "baserom.dol", 0x459F70, 0x18
+	.asciz "HistoryLayoutDetail.dn"
+	.balign 4
 .global $$252936
 $$252936:
-	.incbin "baserom.dol", 0x459F88, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$252937
 $$252937:
-	.incbin "baserom.dol", 0x459F9C, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$252938
 $$252938:
-	.incbin "baserom.dol", 0x459FB0, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$252939
 $$252939:
-	.incbin "baserom.dol", 0x459FC4, 0x14
+	.asciz "HistoryCommon.dn"
+	.balign 4
 .global __vt__Q33scn5anime10SceneAnime
 __vt__Q33scn5anime10SceneAnime:
-	.incbin "baserom.dol", 0x459FD8, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E2F7C  ;# ptr
+	.4byte 0x801E2E08  ;# ptr
+	.4byte 0x801E2E9C  ;# ptr
+	.4byte 0x801E2E74  ;# ptr
+	.4byte 0x801E2EC4  ;# ptr
+	.4byte 0x801E2EEC  ;# ptr
+	.4byte 0x801E2F24  ;# ptr
 .global __vt__Q23scn6IScene
 __vt__Q23scn6IScene:
-	.incbin "baserom.dol", 0x459FFC, 0x34
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E2F80  ;# ptr
+	.4byte 0x80175B68  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn5anime10SceneAnime$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

@@ -2094,54 +2094,60 @@ drawLYT__Q33scn9grandmenu13EffectManagerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x44F450, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x44F474, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x44F480, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x44F4A4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x44F4B0, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x44F4D4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253266
 $$253266:
-	.incbin "baserom.dol", 0x49A918, 0x4
+	.4byte 0x3DCCCCCD
 .global $$253267
 $$253267:
-	.incbin "baserom.dol", 0x49A91C, 0x4
+	.4byte 0x447A0000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253568
 $$253568:
-	.incbin "baserom.dol", 0x49AAE0, 0x4
+	.4byte 0x3DCCCCCD
 .global $$253569
 $$253569:
-	.incbin "baserom.dol", 0x49AAE4, 0x4
+	.4byte 0x447A0000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253274
 $$253274:
-	.incbin "baserom.dol", 0x49AB80, 0x4
+	.4byte 0x3DCCCCCD
 .global $$253275
 $$253275:
-	.incbin "baserom.dol", 0x49AB84, 0x4
+	.4byte 0x447A0000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253185
 $$253185:
-	.incbin "baserom.dol", 0x49ED60, 0x4
+	.4byte 0x3DCCCCCD
 .global $$253186
 $$253186:
-	.incbin "baserom.dol", 0x49ED64, 0x4
+	.4byte 0x447A0000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global isExist___Q33hel6common49PrivateSingleton$$0Q36effect6detail13EffectManager$$1

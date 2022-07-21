@@ -196,15 +196,39 @@ lbl_8004D45C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ProductAreaAndStringTbl
 ProductAreaAndStringTbl:
-	.incbin "baserom.dol", 0x4344F0, 0x48
+	.4byte 0x004A504E
+	.4byte 0x00015553
+	.4byte 0x41000245
+	.4byte 0x55520003
+	.4byte 0x41555300
+	.4byte 0x04425241
+	.4byte 0x00055457
+	.4byte 0x4E000552
+	.4byte 0x4F430006
+	.4byte 0x4B4F5200
+	.4byte 0x07484B47
+	.4byte 0x00084153
+	.4byte 0x4900094C
+	.4byte 0x544E000A
+	.4byte 0x53414600
+	.4byte 0x0B43484E
+	.4byte 0x00FF0000
+	.4byte 0
 .global ProductGameRegionAndStringTbl
 ProductGameRegionAndStringTbl:
-	.incbin "baserom.dol", 0x434538, 0x18
+	.4byte 0x004A5000
+	.4byte 0x01555300
+	.4byte 0x02455500
+	.4byte 0x044B5200
+	.4byte 0x05434E00
+	.4byte 0xFF000000
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21016
 $$21016:
-	.incbin "baserom.dol", 0x492B68, 0x8
+	.asciz "AREA"
+	.balign 4
 .global $$21065
 $$21065:
-	.incbin "baserom.dol", 0x492B70, 0x8
+	.asciz "GAME"
+	.balign 4

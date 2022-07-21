@@ -477,12 +477,21 @@ lbl_80391514:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5stone9StateSlip
 __vt__Q53scn4step4hero5stone9StateSlip:
-	.incbin "baserom.dol", 0x489BC0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80390F18
+	.4byte 0x80391008
+	.4byte 0x80391058
+	.4byte 0x8035550C
+	.4byte 0x8039123C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257140
 $$257140:
-	.incbin "baserom.dol", 0x49E120, 0x4
+	.4byte 0x3F800000
 .global $$257141
 $$257141:
-	.incbin "baserom.dol", 0x49E124, 0x4
+	.4byte 0

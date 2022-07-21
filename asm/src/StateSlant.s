@@ -271,9 +271,17 @@ lbl_802F3468:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy15zankibblecutter10StateSlant
 __vt__Q53scn4step5enemy15zankibblecutter10StateSlant:
-	.incbin "baserom.dol", 0x47B018, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F31B8  ;# ptr
+	.4byte 0x802F31BC  ;# ptr
+	.4byte 0x802F31C0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802F31C4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256064
 $$256064:
-	.incbin "baserom.dol", 0x49D0F8, 0x8
+	.4byte 0xBF800000
+	.4byte 0

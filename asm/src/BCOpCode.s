@@ -359,291 +359,523 @@ getOpTypeName__Q26mintvm8BCOpCodeCFQ36mintvm8BCOpCode6OpType:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249613
 $$249613:
-	.incbin "baserom.dol", 0x457728, 0x10
+	.asciz "        %-8s"
+	.balign 4
 .global $$249615
 $$249615:
-	.incbin "baserom.dol", 0x457738, 0x10
+	.asciz "    %d,    %d\n"
+	.balign 4
 .global $$249617
 $$249617:
-	.incbin "baserom.dol", 0x457748, 0x18
+	.asciz "    %d,    %d,    %d\n"
+	.balign 4
 .global $$249618
 $$249618:
-	.incbin "baserom.dol", 0x457760, 0x10
+	.asciz "BCOpCode.cpp"
+	.balign 4
 .global $$249619
 $$249619:
-	.incbin "baserom.dol", 0x457770, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$249621
 $$249621:
-	.incbin "baserom.dol", 0x457784, 0x34
+	.4byte 0x801C5938  ;# ptr
+	.4byte 0x801C5648  ;# ptr
+	.4byte 0x801C5660  ;# ptr
+	.4byte 0x801C56A4  ;# ptr
+	.4byte 0x801C56EC  ;# ptr
+	.4byte 0x801C5734  ;# ptr
+	.4byte 0x801C5744  ;# ptr
+	.4byte 0x801C5788  ;# ptr
+	.4byte 0x801C57D0  ;# ptr
+	.4byte 0x801C5818  ;# ptr
+	.4byte 0x801C5860  ;# ptr
+	.4byte 0x801C58AC  ;# ptr
+	.4byte 0x801C58F4  ;# ptr
 .global $$249693
 $$249693:
-	.incbin "baserom.dol", 0x4577B8, 0x108
+	.4byte 0x801C5AD4  ;# ptr
+	.4byte 0x801C59CC  ;# ptr
+	.4byte 0x801C59D4  ;# ptr
+	.4byte 0x801C59DC  ;# ptr
+	.4byte 0x801C59DC  ;# ptr
+	.4byte 0x801C59E4  ;# ptr
+	.4byte 0x801C59EC  ;# ptr
+	.4byte 0x801C59F4  ;# ptr
+	.4byte 0x801C59FC  ;# ptr
+	.4byte 0x801C59FC  ;# ptr
+	.4byte 0x801C5A04  ;# ptr
+	.4byte 0x801C5A0C  ;# ptr
+	.4byte 0x801C5A14  ;# ptr
+	.4byte 0x801C5A1C  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A2C  ;# ptr
+	.4byte 0x801C5A2C  ;# ptr
+	.4byte 0x801C5A34  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A24  ;# ptr
+	.4byte 0x801C5A2C  ;# ptr
+	.4byte 0x801C5A2C  ;# ptr
+	.4byte 0x801C5A34  ;# ptr
+	.4byte 0x801C5A3C  ;# ptr
+	.4byte 0x801C5A3C  ;# ptr
+	.4byte 0x801C5A3C  ;# ptr
+	.4byte 0x801C5A3C  ;# ptr
+	.4byte 0x801C5A44  ;# ptr
+	.4byte 0x801C5A44  ;# ptr
+	.4byte 0x801C5A44  ;# ptr
+	.4byte 0x801C5A44  ;# ptr
+	.4byte 0x801C5A4C  ;# ptr
+	.4byte 0x801C5A4C  ;# ptr
+	.4byte 0x801C5A54  ;# ptr
+	.4byte 0x801C5A54  ;# ptr
+	.4byte 0x801C5A5C  ;# ptr
+	.4byte 0x801C5A5C  ;# ptr
+	.4byte 0x801C5A5C  ;# ptr
+	.4byte 0x801C5A64  ;# ptr
+	.4byte 0x801C5A64  ;# ptr
+	.4byte 0x801C5A6C  ;# ptr
+	.4byte 0x801C5A6C  ;# ptr
+	.4byte 0x801C5A74  ;# ptr
+	.4byte 0x801C5A7C  ;# ptr
+	.4byte 0x801C5A7C  ;# ptr
+	.4byte 0x801C5A84  ;# ptr
+	.4byte 0x801C5A8C  ;# ptr
+	.4byte 0x801C5A8C  ;# ptr
+	.4byte 0x801C5A94  ;# ptr
+	.4byte 0x801C5A9C  ;# ptr
+	.4byte 0x801C5AA4  ;# ptr
+	.4byte 0x801C5AAC  ;# ptr
+	.4byte 0x801C5AB4  ;# ptr
+	.4byte 0x801C5AB4  ;# ptr
+	.4byte 0x801C5AB4  ;# ptr
+	.4byte 0x801C5ABC  ;# ptr
+	.4byte 0x801C5AC4  ;# ptr
+	.4byte 0x801C5ACC  ;# ptr
+	.4byte 0x801C5ACC  ;# ptr
+	.4byte 0x801C5AC4  ;# ptr
 .global $$2LOCAL$$2getOpTypeName__Q26mintvm8BCOpCodeCFQ36mintvm8BCOpCode6OpType$$2table
 $$2LOCAL$$2getOpTypeName__Q26mintvm8BCOpCodeCFQ36mintvm8BCOpCode6OpType$$2table:
-	.incbin "baserom.dol", 0x4578C0, 0x108
+	.4byte 0x8055731C
+	.4byte 0x80557320
+	.4byte 0x80557328
+	.4byte 0x80557330
+	.4byte 0x80557338
+	.4byte 0x80557340
+	.4byte 0x80557348
+	.4byte 0x80557350
+	.4byte 0x80557358
+	.4byte 0x80557360
+	.4byte 0x80557368
+	.4byte 0x80557370
+	.4byte 0x80557378
+	.4byte 0x80557380
+	.4byte 0x80557388
+	.4byte 0x80557390
+	.4byte 0x80557398
+	.4byte 0x805573A0
+	.4byte 0x805573A8
+	.4byte 0x805573B0
+	.4byte 0x805573B8
+	.4byte 0x805573C0
+	.4byte 0x805573C8
+	.4byte 0x805573D0
+	.4byte 0x805573D8
+	.4byte 0x805573E0
+	.4byte 0x805573E8
+	.4byte 0x805573F0
+	.4byte 0x805573F8
+	.4byte 0x80557400
+	.4byte 0x80557408
+	.4byte 0x80557410
+	.4byte 0x80557418
+	.4byte 0x80557420
+	.4byte 0x80557428
+	.4byte 0x80557430
+	.4byte 0x80557438
+	.4byte 0x80557440
+	.4byte 0x80557448
+	.4byte 0x80557450
+	.4byte 0x80557458
+	.4byte 0x80557460
+	.4byte 0x80557468
+	.4byte 0x80557470
+	.4byte 0x80557478
+	.4byte 0x80557480
+	.4byte 0x80557488
+	.4byte 0x80557490
+	.4byte 0x80557498
+	.4byte 0x8055749C
+	.4byte 0x805574A4
+	.4byte 0x805574AC
+	.4byte 0x805574B4
+	.4byte 0x805574BC
+	.4byte 0x805574C4
+	.4byte 0x805574CC
+	.4byte 0x805574D4
+	.4byte 0x805574DC
+	.4byte 0x805574E4
+	.4byte 0x805574EC
+	.4byte 0x805574F4
+	.4byte 0x805574FC
+	.4byte 0x80557504
+	.4byte 0x8055750C
+	.4byte 0x80557514
+	.4byte 0x8055751C
 .global $$2STRING$$2getCU1__Q26mintvm8BCOpCodeCFv$$20
 $$2STRING$$2getCU1__Q26mintvm8BCOpCodeCFv$$20:
-	.incbin "baserom.dol", 0x4579C8, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getCU1__Q26mintvm8BCOpCodeCFv
 $$2STRING$$2getCU1__Q26mintvm8BCOpCodeCFv:
-	.incbin "baserom.dol", 0x4579DC, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getCU1_CU1__Q26mintvm8BCOpCodeCFRUcRUc$$20
 $$2STRING$$2getCU1_CU1__Q26mintvm8BCOpCodeCFRUcRUc$$20:
-	.incbin "baserom.dol", 0x4579EC, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getCU1_CU1__Q26mintvm8BCOpCodeCFRUcRUc
 $$2STRING$$2getCU1_CU1__Q26mintvm8BCOpCodeCFRUcRUc:
-	.incbin "baserom.dol", 0x457A00, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getFR1_SR1__Q26mintvm8BCOpCodeCFRUcRUc$$20
 $$2STRING$$2getFR1_SR1__Q26mintvm8BCOpCodeCFRUcRUc$$20:
-	.incbin "baserom.dol", 0x457A10, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getFR1_SR1__Q26mintvm8BCOpCodeCFRUcRUc
 $$2STRING$$2getFR1_SR1__Q26mintvm8BCOpCodeCFRUcRUc:
-	.incbin "baserom.dol", 0x457A24, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1__Q26mintvm8BCOpCodeCFv$$20
 $$2STRING$$2getSR1__Q26mintvm8BCOpCodeCFv$$20:
-	.incbin "baserom.dol", 0x457A34, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1__Q26mintvm8BCOpCodeCFv
 $$2STRING$$2getSR1__Q26mintvm8BCOpCodeCFv:
-	.incbin "baserom.dol", 0x457A48, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1_CS2__Q26mintvm8BCOpCodeCFRUcRs$$20
 $$2STRING$$2getSR1_CS2__Q26mintvm8BCOpCodeCFRUcRs$$20:
-	.incbin "baserom.dol", 0x457A58, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1_CS2__Q26mintvm8BCOpCodeCFRUcRs
 $$2STRING$$2getSR1_CS2__Q26mintvm8BCOpCodeCFRUcRs:
-	.incbin "baserom.dol", 0x457A6C, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1_CTI__Q26mintvm8BCOpCodeCFRUcRUs$$20
 $$2STRING$$2getSR1_CTI__Q26mintvm8BCOpCodeCFRUcRUs$$20:
-	.incbin "baserom.dol", 0x457A7C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1_CTI__Q26mintvm8BCOpCodeCFRUcRUs
 $$2STRING$$2getSR1_CTI__Q26mintvm8BCOpCodeCFRUcRUs:
-	.incbin "baserom.dol", 0x457A90, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1_SR2__Q26mintvm8BCOpCodeCFRUcRUc$$20
 $$2STRING$$2getSR1_SR2__Q26mintvm8BCOpCodeCFRUcRUc$$20:
-	.incbin "baserom.dol", 0x457AA0, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1_SR2__Q26mintvm8BCOpCodeCFRUcRUc
 $$2STRING$$2getSR1_SR2__Q26mintvm8BCOpCodeCFRUcRUc:
-	.incbin "baserom.dol", 0x457AB4, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1_SR2_SR3__Q26mintvm8BCOpCodeCFRUcRUcRUc$$20
 $$2STRING$$2getSR1_SR2_SR3__Q26mintvm8BCOpCodeCFRUcRUcRUc$$20:
-	.incbin "baserom.dol", 0x457AC4, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1_SR2_SR3__Q26mintvm8BCOpCodeCFRUcRUcRUc
 $$2STRING$$2getSR1_SR2_SR3__Q26mintvm8BCOpCodeCFRUcRUcRUc:
-	.incbin "baserom.dol", 0x457AD8, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSR1_STI__Q26mintvm8BCOpCodeCFRUcRUs$$20
 $$2STRING$$2getSR1_STI__Q26mintvm8BCOpCodeCFRUcRUs$$20:
-	.incbin "baserom.dol", 0x457AE8, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSR1_STI__Q26mintvm8BCOpCodeCFRUcRUs
 $$2STRING$$2getSR1_STI__Q26mintvm8BCOpCodeCFRUcRUs:
-	.incbin "baserom.dol", 0x457AFC, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 .global $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv$$20
 $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv$$20:
-	.incbin "baserom.dol", 0x457B0C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv
 $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv:
-	.incbin "baserom.dol", 0x457B20, 0x10
+	.asciz "BCOpCode.hpp"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249614
 $$249614:
-	.incbin "baserom.dol", 0x4936F0, 0x8
+	.asciz "    %d\n"
 .global $$249616
 $$249616:
-	.incbin "baserom.dol", 0x4936F8, 0x4
+	.4byte 0x0A000000
 .global $$249200
 $$249200:
-	.incbin "baserom.dol", 0x4936FC, 0x4
+	.4byte 0x4E4F5000
 .global $$249201
 $$249201:
-	.incbin "baserom.dol", 0x493700, 0x8
+	.asciz "LDSRZR"
+	.balign 4
 .global $$249202
 $$249202:
-	.incbin "baserom.dol", 0x493708, 0x8
+	.asciz "LDSRBT"
+	.balign 4
 .global $$249203
 $$249203:
-	.incbin "baserom.dol", 0x493710, 0x8
+	.asciz "LDSRC4"
+	.balign 4
 .global $$249204
 $$249204:
-	.incbin "baserom.dol", 0x493718, 0x8
+	.asciz "LDSRCA"
+	.balign 4
 .global $$249205
 $$249205:
-	.incbin "baserom.dol", 0x493720, 0x8
+	.asciz "LDSRSR"
+	.balign 4
 .global $$249206
 $$249206:
-	.incbin "baserom.dol", 0x493728, 0x8
+	.asciz "LDSRFZ"
+	.balign 4
 .global $$249207
 $$249207:
-	.incbin "baserom.dol", 0x493730, 0x8
+	.asciz "LDFRSR"
+	.balign 4
 .global $$249208
 $$249208:
-	.incbin "baserom.dol", 0x493738, 0x8
+	.asciz "LDSRSA"
+	.balign 4
 .global $$249209
 $$249209:
-	.incbin "baserom.dol", 0x493740, 0x8
+	.asciz "LDSRSV"
+	.balign 4
 .global $$249210
 $$249210:
-	.incbin "baserom.dol", 0x493748, 0x8
+	.asciz "LDSRA4"
+	.balign 4
 .global $$249211
 $$249211:
-	.incbin "baserom.dol", 0x493750, 0x8
+	.asciz "LDSRSZ"
+	.balign 4
 .global $$249212
 $$249212:
-	.incbin "baserom.dol", 0x493758, 0x8
+	.asciz "STSRSR"
+	.balign 4
 .global $$249213
 $$249213:
-	.incbin "baserom.dol", 0x493760, 0x8
+	.asciz "STSVSR"
+	.balign 4
 .global $$249214
 $$249214:
-	.incbin "baserom.dol", 0x493768, 0x8
+	.asciz "ADDI32"
+	.balign 4
 .global $$249215
 $$249215:
-	.incbin "baserom.dol", 0x493770, 0x8
+	.asciz "SUBI32"
+	.balign 4
 .global $$249216
 $$249216:
-	.incbin "baserom.dol", 0x493778, 0x8
+	.asciz "MULS32"
+	.balign 4
 .global $$249217
 $$249217:
-	.incbin "baserom.dol", 0x493780, 0x8
+	.asciz "DIVS32"
+	.balign 4
 .global $$249218
 $$249218:
-	.incbin "baserom.dol", 0x493788, 0x8
+	.asciz "MODS32"
+	.balign 4
 .global $$249219
 $$249219:
-	.incbin "baserom.dol", 0x493790, 0x8
+	.asciz "INCI32"
+	.balign 4
 .global $$249220
 $$249220:
-	.incbin "baserom.dol", 0x493798, 0x8
+	.asciz "DECI32"
+	.balign 4
 .global $$249221
 $$249221:
-	.incbin "baserom.dol", 0x4937A0, 0x8
+	.asciz "NEGS32"
+	.balign 4
 .global $$249222
 $$249222:
-	.incbin "baserom.dol", 0x4937A8, 0x8
+	.asciz "ADDF32"
+	.balign 4
 .global $$249223
 $$249223:
-	.incbin "baserom.dol", 0x4937B0, 0x8
+	.asciz "SUBF32"
+	.balign 4
 .global $$249224
 $$249224:
-	.incbin "baserom.dol", 0x4937B8, 0x8
+	.asciz "MULF32"
+	.balign 4
 .global $$249225
 $$249225:
-	.incbin "baserom.dol", 0x4937C0, 0x8
+	.asciz "DIVF32"
+	.balign 4
 .global $$249226
 $$249226:
-	.incbin "baserom.dol", 0x4937C8, 0x8
+	.asciz "INCF32"
+	.balign 4
 .global $$249227
 $$249227:
-	.incbin "baserom.dol", 0x4937D0, 0x8
+	.asciz "DECF32"
+	.balign 4
 .global $$249228
 $$249228:
-	.incbin "baserom.dol", 0x4937D8, 0x8
+	.asciz "NEGF32"
+	.balign 4
 .global $$249229
 $$249229:
-	.incbin "baserom.dol", 0x4937E0, 0x8
+	.asciz "LTS32"
+	.balign 4
 .global $$249230
 $$249230:
-	.incbin "baserom.dol", 0x4937E8, 0x8
+	.asciz "LES32"
+	.balign 4
 .global $$249231
 $$249231:
-	.incbin "baserom.dol", 0x4937F0, 0x8
+	.asciz "EQI32"
+	.balign 4
 .global $$249232
 $$249232:
-	.incbin "baserom.dol", 0x4937F8, 0x8
+	.asciz "NEI32"
+	.balign 4
 .global $$249233
 $$249233:
-	.incbin "baserom.dol", 0x493800, 0x8
+	.asciz "LTF32"
+	.balign 4
 .global $$249234
 $$249234:
-	.incbin "baserom.dol", 0x493808, 0x8
+	.asciz "LEF32"
+	.balign 4
 .global $$249235
 $$249235:
-	.incbin "baserom.dol", 0x493810, 0x8
+	.asciz "EQF32"
+	.balign 4
 .global $$249236
 $$249236:
-	.incbin "baserom.dol", 0x493818, 0x8
+	.asciz "NEF32"
+	.balign 4
 .global $$249237
 $$249237:
-	.incbin "baserom.dol", 0x493820, 0x8
+	.asciz "LTCMP"
+	.balign 4
 .global $$249238
 $$249238:
-	.incbin "baserom.dol", 0x493828, 0x8
+	.asciz "LECMP"
+	.balign 4
 .global $$249239
 $$249239:
-	.incbin "baserom.dol", 0x493830, 0x8
+	.asciz "EQBOOL"
+	.balign 4
 .global $$249240
 $$249240:
-	.incbin "baserom.dol", 0x493838, 0x8
+	.asciz "NEBOOL"
+	.balign 4
 .global $$249241
 $$249241:
-	.incbin "baserom.dol", 0x493840, 0x8
+	.asciz "ANDI32"
+	.balign 4
 .global $$249242
 $$249242:
-	.incbin "baserom.dol", 0x493848, 0x8
+	.asciz "ORI32"
+	.balign 4
 .global $$249243
 $$249243:
-	.incbin "baserom.dol", 0x493850, 0x8
+	.asciz "XORI32"
+	.balign 4
 .global $$249244
 $$249244:
-	.incbin "baserom.dol", 0x493858, 0x8
+	.asciz "NTI32"
+	.balign 4
 .global $$249245
 $$249245:
-	.incbin "baserom.dol", 0x493860, 0x8
+	.asciz "NTBOOL"
+	.balign 4
 .global $$249246
 $$249246:
-	.incbin "baserom.dol", 0x493868, 0x8
+	.asciz "SLLI32"
+	.balign 4
 .global $$249247
 $$249247:
-	.incbin "baserom.dol", 0x493870, 0x8
+	.asciz "SLRI32"
+	.balign 4
 .global $$249248
 $$249248:
-	.incbin "baserom.dol", 0x493878, 0x4
+	.4byte 0x4A4D5000
 .global $$249249
 $$249249:
-	.incbin "baserom.dol", 0x49387C, 0x8
+	.asciz "JMPPOS"
+	.balign 4
 .global $$249250
 $$249250:
-	.incbin "baserom.dol", 0x493884, 0x8
+	.asciz "JMPNEG"
+	.balign 4
 .global $$249251
 $$249251:
-	.incbin "baserom.dol", 0x49388C, 0x8
+	.asciz "FENTER"
+	.balign 4
 .global $$249252
 $$249252:
-	.incbin "baserom.dol", 0x493894, 0x8
+	.asciz "FLEAVE"
+	.balign 4
 .global $$249253
 $$249253:
-	.incbin "baserom.dol", 0x49389C, 0x8
+	.asciz "FRET"
+	.balign 4
 .global $$249254
 $$249254:
-	.incbin "baserom.dol", 0x4938A4, 0x8
+	.asciz "CALL"
+	.balign 4
 .global $$249255
 $$249255:
-	.incbin "baserom.dol", 0x4938AC, 0x8
+	.asciz "YIELD"
+	.balign 4
 .global $$249256
 $$249256:
-	.incbin "baserom.dol", 0x4938B4, 0x8
+	.asciz "MCOPY"
+	.balign 4
 .global $$249257
 $$249257:
-	.incbin "baserom.dol", 0x4938BC, 0x8
+	.asciz "MZEROS"
+	.balign 4
 .global $$249258
 $$249258:
-	.incbin "baserom.dol", 0x4938C4, 0x8
+	.asciz "SPPSH"
+	.balign 4
 .global $$249259
 $$249259:
-	.incbin "baserom.dol", 0x4938CC, 0x8
+	.asciz "SPPSHZ"
+	.balign 4
 .global $$249260
 $$249260:
-	.incbin "baserom.dol", 0x4938D4, 0x8
+	.asciz "SPPOP"
+	.balign 4
 .global $$249261
 $$249261:
-	.incbin "baserom.dol", 0x4938DC, 0x8
+	.asciz "ADDOFS"
+	.balign 4
 .global $$249262
 $$249262:
-	.incbin "baserom.dol", 0x4938E4, 0x8
+	.asciz "ARPSHZ"
+	.balign 4
 .global $$249263
 $$249263:
-	.incbin "baserom.dol", 0x4938EC, 0x8
+	.asciz "ARIDX"
+	.balign 4
 .global $$249264
 $$249264:
-	.incbin "baserom.dol", 0x4938F4, 0x8
+	.asciz "ARLEN"
+	.balign 4
 .global $$249265
 $$249265:
-	.incbin "baserom.dol", 0x4938FC, 0xC
+	.asciz "ARPOP"
+	.balign 4
+	.4byte 0

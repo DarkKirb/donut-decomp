@@ -197,17 +197,41 @@ __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise:
-	.incbin "baserom.dol", 0x470D30, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0C90  ;# ptr
+	.4byte 0x802A0C0C  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise:
-	.incbin "baserom.dol", 0x4717D8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6058  ;# ptr
+	.4byte 0x802A5FD4  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x479C18, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ED2C0  ;# ptr
+	.4byte 0x802ED2A0  ;# ptr
 .global __vt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraise:
-	.incbin "baserom.dol", 0x479C28, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ED2BC  ;# ptr
+	.4byte 0x802ED21C  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

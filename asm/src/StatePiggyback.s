@@ -374,18 +374,27 @@ procFixPos__Q53scn4step4hero12interference14StatePiggybackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference14StatePiggyback
 __vt__Q53scn4step4hero12interference14StatePiggyback:
-	.incbin "baserom.dol", 0x488630, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80373308
+	.4byte 0x803733E0
+	.4byte 0x80373588
+	.4byte 0x8037358C
+	.4byte 0x80373590
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257204
 $$257204:
-	.incbin "baserom.dol", 0x49DD80, 0x4
+	.4byte 0
 .global $$257205
 $$257205:
-	.incbin "baserom.dol", 0x49DD84, 0x4
+	.4byte 0x3E4CCCCD
 .global $$257206
 $$257206:
-	.incbin "baserom.dol", 0x49DD88, 0x4
+	.4byte 0x3F800000
 .global $$257207
 $$257207:
-	.incbin "baserom.dol", 0x49DD8C, 0x4
+	.4byte 0xBE4CCCCD

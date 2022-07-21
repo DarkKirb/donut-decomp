@@ -406,17 +406,31 @@ procFixPos__Q53scn4step4boss6dubior16StateDashWallHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common16StateDashWallHit
 __vt__Q53scn4step4boss6common16StateDashWallHit:
-	.incbin "baserom.dol", 0x462420, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024592C  ;# ptr
+	.4byte 0x80245930  ;# ptr
+	.4byte 0x80245934  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80245970  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior16StateDashWallHit
 __vt__Q53scn4step4boss6dubior16StateDashWallHit:
-	.incbin "baserom.dol", 0x4638B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024E5C0  ;# ptr
+	.4byte 0x8024E5C4  ;# ptr
+	.4byte 0x8024E5C8  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024E5CC  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255953
 $$255953:
-	.incbin "baserom.dol", 0x49B130, 0x4
+	.4byte 0
 .global $$255993
 $$255993:
-	.incbin "baserom.dol", 0x49B134, 0x4
+	.4byte 0xBF800000

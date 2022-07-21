@@ -636,54 +636,95 @@ GetRuntimeTypeInfo__Q33scn17challengetutorial22SceneChallengeTutorialCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253516
 $$253516:
-	.incbin "baserom.dol", 0x45B988, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$253517
 $$253517:
-	.incbin "baserom.dol", 0x45B998, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global $$253518
 $$253518:
-	.incbin "baserom.dol", 0x45B9A8, 0x24
+	.asciz "ChallengetutorialPreLoadNormal.dn"
+	.balign 4
 .global $$253519
 $$253519:
-	.incbin "baserom.dol", 0x45B9CC, 0x24
+	.asciz "ChallengetutorialPreLoadMusou.dn"
+	.balign 4
 .global $$253520
 $$253520:
-	.incbin "baserom.dol", 0x45B9F0, 0x24
+	.asciz "ChallengetutorialPreLoadMaster.dn"
+	.balign 4
 .global $$253523
 $$253523:
-	.incbin "baserom.dol", 0x45BA14, 0x40
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F69E0  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F69B8  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F69E0  ;# ptr
+	.4byte 0x801F69B8  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F69E0  ;# ptr
+	.4byte 0x801F69E0  ;# ptr
+	.4byte 0x801F69B8  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F6990  ;# ptr
+	.4byte 0x801F6990  ;# ptr
 .global __vt__Q33scn17challengetutorial22SceneChallengeTutorial
 __vt__Q33scn17challengetutorial22SceneChallengeTutorial:
-	.incbin "baserom.dol", 0x45BA54, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x801F7044  ;# ptr
+	.4byte 0x801F6E00  ;# ptr
+	.4byte 0x801F6E98  ;# ptr
+	.4byte 0x801F6E94  ;# ptr
+	.4byte 0x801F6FF4  ;# ptr
+	.4byte 0x801F6FF8  ;# ptr
+	.4byte 0x801F7030  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252749
 $$252749:
-	.incbin "baserom.dol", 0x49A9D8, 0x4
+	.4byte 0x000000FF
 .global $$253588
 $$253588:
-	.incbin "baserom.dol", 0x49A9DC, 0x4
+	.4byte 0xBF800000
 .global $$253589
 $$253589:
-	.incbin "baserom.dol", 0x49A9E0, 0x4
+	.4byte 0
 .global $$253590
 $$253590:
-	.incbin "baserom.dol", 0x49A9E4, 0x4
+	.4byte 0x42200000
 .global $$253591
 $$253591:
-	.incbin "baserom.dol", 0x49A9E8, 0x4
+	.4byte 0x42700000
 .global $$253592
 $$253592:
-	.incbin "baserom.dol", 0x49A9EC, 0x4
+	.4byte 0x3FE38E39
 .global $$253593
 $$253593:
-	.incbin "baserom.dol", 0x49A9F0, 0x4
+	.4byte 0x3DCCCCCD
 .global $$253594
 $$253594:
-	.incbin "baserom.dol", 0x49A9F4, 0x4
+	.4byte 0x447A0000
 .global $$252934
 $$252934:
-	.incbin "baserom.dol", 0x49A9F8, 0x8
+	.4byte 0x000000FF
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn17challengetutorial22SceneChallengeTutorial$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

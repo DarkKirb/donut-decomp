@@ -54,4 +54,7 @@ lbl_8000920C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x402700, 0x70
+	.asciz "GCN_Mem_Alloc.c : InitDefaultHeap. No Heap Available\n"
+	.byte 0x4D, 0x65
+	.asciz "trowerks CW runtime library initializing default heap\n"
+	.balign 4

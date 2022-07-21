@@ -2311,75 +2311,102 @@ hidh_conn_dereg:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hst_reg_info
 hst_reg_info:
-	.incbin "baserom.dol", 0x404228, 0x28
+	.4byte 0x8008E4CC  ;# ptr
+	.4byte 0x8008EA84  ;# ptr
+	.4byte 0
+	.4byte 0x8008EDCC  ;# ptr
+	.4byte 0x8008F074  ;# ptr
+	.4byte 0x8008F380  ;# ptr
+	.4byte 0x8008F644  ;# ptr
+	.4byte 0
+	.4byte 0x8008FA84  ;# ptr
+	.4byte 0x8008F88C  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21580
 $$21580:
-	.incbin "baserom.dol", 0x439348, 0x20
+	.asciz "HID Control Registration failed"
 .global $$21581
 $$21581:
-	.incbin "baserom.dol", 0x439368, 0x24
+	.asciz "HID Interrupt Registration failed"
+	.balign 4
 .global $$21592
 $$21592:
-	.incbin "baserom.dol", 0x43938C, 0x14
+	.asciz "HID - disconnect"
+	.balign 4
 .global $$21638
 $$21638:
-	.incbin "baserom.dol", 0x4393A0, 0x34
+	.asciz "HID - Rcvd L2CAP conn ind, PSM: 0x%04x  CID 0x%x"
+	.balign 4
 .global $$21639
 $$21639:
-	.incbin "baserom.dol", 0x4393D4, 0x34
+	.asciz "HID - Rcvd INTR L2CAP conn ind, but no CTL channel"
+	.balign 4
 .global $$21640
 $$21640:
-	.incbin "baserom.dol", 0x439408, 0x30
+	.asciz "HID - Rcvd INTR L2CAP conn ind, wrong state: %d"
 .global $$21641
 $$21641:
-	.incbin "baserom.dol", 0x439438, 0x30
+	.asciz "HID - Rcvd CTL L2CAP conn ind, wrong state: %d"
+	.balign 4
 .global $$21642
 $$21642:
-	.incbin "baserom.dol", 0x439468, 0x44
+	.asciz "HID - Rcvd L2CAP conn ind, sent config req, PSM: 0x%04x  CID 0x%x"
+	.balign 4
 .global $$21652
 $$21652:
-	.incbin "baserom.dol", 0x4394AC, 0x1C
+	.asciz "HID - Originate failed"
+	.balign 4
+	.4byte 0
 .global $$21682
 $$21682:
-	.incbin "baserom.dol", 0x4394C8, 0x20
+	.asciz "HID - Originator security pass."
 .global $$21683
 $$21683:
-	.incbin "baserom.dol", 0x4394E8, 0x1C
+	.asciz "HID - INTR Originate failed"
 .global $$21724
 $$21724:
-	.incbin "baserom.dol", 0x439504, 0x2C
+	.asciz "HID - Rcvd unexpected conn cnf, CID 0x%x "
+	.balign 4
 .global $$21725
 $$21725:
-	.incbin "baserom.dol", 0x439530, 0x34
+	.asciz "HID - got CTRL conn cnf, sent cfg req, CID: 0x%x"
+	.balign 4
 .global $$21747
 $$21747:
-	.incbin "baserom.dol", 0x439564, 0x2C
+	.asciz "HID - Rcvd L2CAP cfg ind, unknown CID: 0x%x"
 .global $$21748
 $$21748:
-	.incbin "baserom.dol", 0x439590, 0x2C
+	.asciz "HID - Rcvd cfg ind, sent cfg cfm, CID: 0x%x"
 .global $$21776
 $$21776:
-	.incbin "baserom.dol", 0x4395BC, 0x2C
+	.asciz "HID - Rcvd cfg cfm, CID: 0x%x  Result: %d"
+	.balign 4
 .global $$21798
 $$21798:
-	.incbin "baserom.dol", 0x4395E8, 0x2C
+	.asciz "HID - Rcvd L2CAP disc, unknown CID: 0x%x"
+	.balign 4
 .global $$21799
 $$21799:
-	.incbin "baserom.dol", 0x439614, 0x24
+	.asciz "HID - Rcvd L2CAP disc, CID: 0x%x"
+	.balign 4
 .global $$21816
 $$21816:
-	.incbin "baserom.dol", 0x439638, 0x30
+	.asciz "HID - Rcvd L2CAP disc cfm, unknown CID: 0x%x"
+	.balign 4
 .global $$21817
 $$21817:
-	.incbin "baserom.dol", 0x439668, 0x28
+	.asciz "HID - Rcvd L2CAP disc cfm, CID: 0x%x"
+	.balign 4
 .global $$21833
 $$21833:
-	.incbin "baserom.dol", 0x439690, 0x38
+	.asciz "HID - Rcvd L2CAP congestion status, unknown CID: 0x%x"
+	.balign 4
 .global $$21834
 $$21834:
-	.incbin "baserom.dol", 0x4396C8, 0x38
+	.asciz "HID - Rcvd L2CAP congestion status, CID: 0x%x  Cong: %d"
 .global $$21874
 $$21874:
-	.incbin "baserom.dol", 0x439700, 0x30
+	.asciz "HID - Rcvd L2CAP data, unknown CID: 0x%x"
+	.balign 4
+	.4byte 0

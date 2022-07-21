@@ -205,25 +205,36 @@ GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23471
 $$23471:
-	.incbin "baserom.dol", 0x43FF00, 0x4
+	.4byte 0x2E000000
 .global $$23472
 $$23472:
-	.incbin "baserom.dol", 0x43FF04, 0x4
+	.4byte 0x2E2E0000
 .global __vt__Q36nw4hbm3lyt19ArcResourceAccessor
 __vt__Q36nw4hbm3lyt19ArcResourceAccessor:
-	.incbin "baserom.dol", 0x43FF08, 0x14
+	.4byte 0x80443E50
+	.4byte 0
+	.4byte 0x8012C9A0  ;# ptr
+	.4byte 0x80135B00  ;# ptr
+	.4byte 0x80135B20  ;# ptr
 .global $$23154
 $$23154:
-	.incbin "baserom.dol", 0x43FF1C, 0x24
+	.asciz "nw4hbm::lyt::ArcResourceAccessor"
+	.balign 4
 .global $$23155
 $$23155:
-	.incbin "baserom.dol", 0x43FF40, 0x10
+	.4byte 0x80443E78
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor
 __RTTI__Q36nw4hbm3lyt19ArcResourceAccessor:
-	.incbin "baserom.dol", 0x43FF50, 0x8
+	.4byte 0x80443E1C
+	.4byte 0x80443E40
 .global $$23156
 $$23156:
-	.incbin "baserom.dol", 0x43FF58, 0x20
+	.asciz "nw4hbm::lyt::ResourceAccessor"
+	.balign 4
 .global __RTTI__Q36nw4hbm3lyt16ResourceAccessor
 __RTTI__Q36nw4hbm3lyt16ResourceAccessor:
-	.incbin "baserom.dol", 0x43FF78, 0x8
+	.4byte 0x80443E58
+	.4byte 0

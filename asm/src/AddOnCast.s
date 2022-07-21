@@ -110,15 +110,28 @@ lbl_801A0EE8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252192
 $$252192:
-	.incbin "baserom.dol", 0x452AE0, 0xC
+	.asciz "HEL.Cast"
+	.balign 4
 .global $$252193
 $$252193:
-	.incbin "baserom.dol", 0x452AEC, 0x10
+	.asciz "float I2F(int)"
+	.balign 4
 .global $$252194
 $$252194:
-	.incbin "baserom.dol", 0x452AFC, 0x64
+	.asciz "int F2I(float)"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252188
 $$252188:
-	.incbin "baserom.dol", 0x49A420, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

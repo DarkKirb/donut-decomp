@@ -1858,17 +1858,22 @@ allocator__Q43scn4step4hero4GearFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252434
 $$252434:
-	.incbin "baserom.dol", 0x45AD48, 0x10
+	.asciz "WhipReset"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252432
 $$252432:
-	.incbin "baserom.dol", 0x494110, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$252433
 $$252433:
-	.incbin "baserom.dol", 0x494118, 0x8
+	.asciz "RHaveL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252435
 $$252435:
-	.incbin "baserom.dol", 0x49A940, 0x8
+	.4byte 0
+	.4byte 0

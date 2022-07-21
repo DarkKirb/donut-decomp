@@ -313,27 +313,31 @@ lbl_80271D20:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251342
 $$251342:
-	.incbin "baserom.dol", 0x495838, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251568
 $$251568:
-	.incbin "baserom.dol", 0x49B840, 0x4
+	.4byte 0x3F800000
 .global $$251569
 $$251569:
-	.incbin "baserom.dol", 0x49B844, 0x4
+	.4byte 0
 .global $$251570
 $$251570:
-	.incbin "baserom.dol", 0x49B848, 0x4
+	.4byte 0x40800000
 .global $$251616
 $$251616:
-	.incbin "baserom.dol", 0x49B84C, 0x4
+	.4byte 0x4222F983
 .global $$251617
 $$251617:
-	.incbin "baserom.dol", 0x49B850, 0x8
+	.4byte 0x3FC90FDB
+	.4byte 0
 .global $$251620
 $$251620:
-	.incbin "baserom.dol", 0x49B858, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$251639
 $$251639:
-	.incbin "baserom.dol", 0x49B860, 0x8
+	.4byte 0xBF800000
+	.4byte 0

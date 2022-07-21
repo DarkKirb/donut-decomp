@@ -1581,31 +1581,66 @@ __dt__Q34info8sequence11CommandWaitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255949
 $$255949:
-	.incbin "baserom.dol", 0x4532E8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A67CC  ;# ptr
 .global __vt__Q34info8sequence11CommandWait
 __vt__Q34info8sequence11CommandWait:
-	.incbin "baserom.dol", 0x4532F4, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A7018  ;# ptr
+	.4byte 0x801A696C  ;# ptr
+	.4byte 0x801A6924  ;# ptr
 .global __vt__Q34info8sequence11CommandProc
 __vt__Q34info8sequence11CommandProc:
-	.incbin "baserom.dol", 0x453308, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A6FAC  ;# ptr
+	.4byte 0x801A6914  ;# ptr
+	.4byte 0x801A6974  ;# ptr
 .global __vt__Q34info8sequence15CommandInterval
 __vt__Q34info8sequence15CommandInterval:
-	.incbin "baserom.dol", 0x45331C, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A6F34  ;# ptr
+	.4byte 0x801A6ACC  ;# ptr
+	.4byte 0x801A6A00  ;# ptr
 .global __vt__Q34info8sequence11CommandCall
 __vt__Q34info8sequence11CommandCall:
-	.incbin "baserom.dol", 0x453330, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A6EC8  ;# ptr
+	.4byte 0x801A6B24  ;# ptr
+	.4byte 0x801A5C68  ;# ptr
 .global __vt__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeap
 __vt__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeap:
-	.incbin "baserom.dol", 0x453344, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A649C  ;# ptr
+	.4byte 0x801A6C08  ;# ptr
+	.4byte 0x801A6C10  ;# ptr
 .global __vt__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeap
 __vt__Q34util17Delegate$$0Fv_b$$464$$112DelegateHeap:
-	.incbin "baserom.dol", 0x453358, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A6080  ;# ptr
+	.4byte 0x801A6C14  ;# ptr
+	.4byte 0x801A6C18  ;# ptr
 .global __vt__Q34info8sequence11CommandAnim
 __vt__Q34info8sequence11CommandAnim:
-	.incbin "baserom.dol", 0x45336C, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A6BAC  ;# ptr
+	.4byte 0x801A6B9C  ;# ptr
+	.4byte 0x801A6B5C  ;# ptr
 .global __vt__Q34info8sequence7Command
 __vt__Q34info8sequence7Command:
-	.incbin "baserom.dol", 0x453380, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801A5DAC  ;# ptr
+	.4byte 0x801A6914  ;# ptr
+	.4byte 0x801A5C68  ;# ptr
 .global $$256161
 $$256161:
-	.incbin "baserom.dol", 0x453394, 0x14
+	.asciz "bad_function_call"
+	.balign 4

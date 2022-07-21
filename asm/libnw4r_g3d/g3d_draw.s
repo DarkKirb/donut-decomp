@@ -2167,18 +2167,19 @@ lbl_800E5AD8:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4PFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4PFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x492DE8, 0x4
+	.4byte 0xFFFFFFFC
 .global $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4RPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZRPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4RPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZRPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x492DEC, 0x4
+	.4byte 0xFFFFFFFC
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214861
 $$214861:
-	.incbin "baserom.dol", 0x499B70, 0x4
+	.4byte 0
 .global $$214862
 $$214862:
-	.incbin "baserom.dol", 0x499B74, 0x4
+	.4byte 0xC0000000
 .global $$214863
 $$214863:
-	.incbin "baserom.dol", 0x499B78, 0x8
+	.4byte 0x3F800000
+	.4byte 0

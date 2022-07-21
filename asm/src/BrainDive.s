@@ -206,15 +206,29 @@ __dt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateB
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como9StateBack$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471AB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6F14  ;# ptr
+	.4byte 0x802A6ED4  ;# ptr
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4como12StateCutFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471AC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6F10  ;# ptr
+	.4byte 0x802A6EF0  ;# ptr
 .global __vt__Q53scn4step5enemy4como9BrainDive
 __vt__Q53scn4step5enemy4como9BrainDive:
-	.incbin "baserom.dol", 0x471AD0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A6F0C  ;# ptr
+	.4byte 0x802A6CC4  ;# ptr
+	.4byte 0x802A6DE8  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255290
 $$255290:
-	.incbin "baserom.dol", 0x49C0A0, 0x8
+	.4byte 0
+	.4byte 0

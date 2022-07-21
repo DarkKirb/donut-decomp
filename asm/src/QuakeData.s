@@ -854,82 +854,83 @@ offset__Q43scn4step6camera9QuakeDataCFQ43scn4step6camera9QuakeKindUl:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250464
 $$250464:
-	.incbin "baserom.dol", 0x49B698, 0x4
+	.4byte 0
 .global $$250465
 $$250465:
-	.incbin "baserom.dol", 0x49B69C, 0x4
+	.4byte 0x3CF5C28F
 .global $$250466
 $$250466:
-	.incbin "baserom.dol", 0x49B6A0, 0x4
+	.4byte 0xBCF5C28F
 .global $$250467
 $$250467:
-	.incbin "baserom.dol", 0x49B6A4, 0x4
+	.4byte 0x3D4CCCCD
 .global $$250468
 $$250468:
-	.incbin "baserom.dol", 0x49B6A8, 0x4
+	.4byte 0xBD4CCCCD
 .global $$250469
 $$250469:
-	.incbin "baserom.dol", 0x49B6AC, 0x4
+	.4byte 0x3D8F5C29
 .global $$250470
 $$250470:
-	.incbin "baserom.dol", 0x49B6B0, 0x4
+	.4byte 0xBD8F5C29
 .global $$250471
 $$250471:
-	.incbin "baserom.dol", 0x49B6B4, 0x4
+	.4byte 0x3D75C28F
 .global $$250472
 $$250472:
-	.incbin "baserom.dol", 0x49B6B8, 0x4
+	.4byte 0xBD75C28F
 .global $$250473
 $$250473:
-	.incbin "baserom.dol", 0x49B6BC, 0x4
+	.4byte 0x3DF5C28F
 .global $$250474
 $$250474:
-	.incbin "baserom.dol", 0x49B6C0, 0x4
+	.4byte 0xBDF5C28F
 .global $$250475
 $$250475:
-	.incbin "baserom.dol", 0x49B6C4, 0x4
+	.4byte 0x3DCCCCCD
 .global $$250476
 $$250476:
-	.incbin "baserom.dol", 0x49B6C8, 0x4
+	.4byte 0xBDCCCCCD
 .global $$250477
 $$250477:
-	.incbin "baserom.dol", 0x49B6CC, 0x4
+	.4byte 0x3E4CCCCD
 .global $$250478
 $$250478:
-	.incbin "baserom.dol", 0x49B6D0, 0x4
+	.4byte 0xBE4CCCCD
 .global $$250479
 $$250479:
-	.incbin "baserom.dol", 0x49B6D4, 0x4
+	.4byte 0x3DA3D70A
 .global $$250480
 $$250480:
-	.incbin "baserom.dol", 0x49B6D8, 0x4
+	.4byte 0xBDA3D70A
 .global $$250481
 $$250481:
-	.incbin "baserom.dol", 0x49B6DC, 0x4
+	.4byte 0x3E23D70A
 .global $$250482
 $$250482:
-	.incbin "baserom.dol", 0x49B6E0, 0x4
+	.4byte 0xBE23D70A
 .global $$250483
 $$250483:
-	.incbin "baserom.dol", 0x49B6E4, 0x4
+	.4byte 0x3E75C28F
 .global $$250484
 $$250484:
-	.incbin "baserom.dol", 0x49B6E8, 0x4
+	.4byte 0xBE75C28F
 .global $$250485
 $$250485:
-	.incbin "baserom.dol", 0x49B6EC, 0x4
+	.4byte 0x3E99999A
 .global $$250486
 $$250486:
-	.incbin "baserom.dol", 0x49B6F0, 0x4
+	.4byte 0xBE99999A
 .global $$250487
 $$250487:
-	.incbin "baserom.dol", 0x49B6F4, 0x4
+	.4byte 0x3ECCCCCD
 .global $$250488
 $$250488:
-	.incbin "baserom.dol", 0x49B6F8, 0x4
+	.4byte 0xBECCCCCD
 .global $$250489
 $$250489:
-	.incbin "baserom.dol", 0x49B6FC, 0x4
+	.4byte 0xBF000000
 .global $$250490
 $$250490:
-	.incbin "baserom.dol", 0x49B700, 0x8
+	.4byte 0x3F000000
+	.4byte 0

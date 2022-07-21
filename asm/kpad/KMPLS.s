@@ -2310,84 +2310,110 @@ KMPLSSetSamplingCallback:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global mpls_assign_deg
 mpls_assign_deg:
-	.incbin "baserom.dol", 0x4360C8, 0x24
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
+	.4byte 0x00000640
 .global mpls_assign_ct
 mpls_assign_ct:
-	.incbin "baserom.dol", 0x4360EC, 0x24
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
+	.4byte 0x007FFFFF
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22647
 $$22647:
-	.incbin "baserom.dol", 0x4993B0, 0x4
+	.4byte 0
 .global $$22648
 $$22648:
-	.incbin "baserom.dol", 0x4993B4, 0x4
+	.4byte 0x3F800000
 .global $$22649
 $$22649:
-	.incbin "baserom.dol", 0x4993B8, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0
 .global $$22679
 $$22679:
-	.incbin "baserom.dol", 0x4993C0, 0x8
+	.4byte 0
+	.4byte 0
 .global $$22680
 $$22680:
-	.incbin "baserom.dol", 0x4993C8, 0x8
+	.4byte 0x3FF00000
+	.4byte 0
 .global $$22681
 $$22681:
-	.incbin "baserom.dol", 0x4993D0, 0x8
+	.4byte 0x40768000
+	.4byte 0
 .global $$22685
 $$22685:
-	.incbin "baserom.dol", 0x4993D8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$22757
 $$22757:
-	.incbin "baserom.dol", 0x4993E0, 0x4
+	.4byte 0x3F000000
 .global $$22758
 $$22758:
-	.incbin "baserom.dol", 0x4993E4, 0x4
+	.4byte 0x3CF5C28F
 .global $$22817
 $$22817:
-	.incbin "baserom.dol", 0x4993E8, 0x4
+	.4byte 0xBF800000
 .global $$23075
 $$23075:
-	.incbin "baserom.dol", 0x4993EC, 0x4
+	.4byte 0xBE4CCCCD
 .global $$23076
 $$23076:
-	.incbin "baserom.dol", 0x4993F0, 0x4
+	.4byte 0x3E4CCCCD
 .global $$23077
 $$23077:
-	.incbin "baserom.dol", 0x4993F4, 0x4
+	.4byte 0x3F400000
 .global $$23168
 $$23168:
-	.incbin "baserom.dol", 0x4993F8, 0x4
+	.4byte 0x3A83126F
 .global $$23197
 $$23197:
-	.incbin "baserom.dol", 0x4993FC, 0x4
+	.4byte 0x403FEF9E
 .global $$23230
 $$23230:
-	.incbin "baserom.dol", 0x499400, 0x4
+	.4byte 0x3EC489D2
 .global $$23248
 $$23248:
-	.incbin "baserom.dol", 0x499404, 0x4
+	.4byte 0x38D1B717
 .global $$23259
 $$23259:
-	.incbin "baserom.dol", 0x499408, 0x8
+	.4byte 0x40490000
+	.4byte 0
 .global $$23260
 $$23260:
-	.incbin "baserom.dol", 0x499410, 0x8
+	.4byte 0x3FB99999
+	.4byte 0x9999999A
 .global $$23261
 $$23261:
-	.incbin "baserom.dol", 0x499418, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$23463
 $$23463:
-	.incbin "baserom.dol", 0x499420, 0x4
+	.4byte 0x44BB8000
 .global $$23464
 $$23464:
-	.incbin "baserom.dol", 0x499424, 0x4
+	.4byte 0x3F666666
 .global $$23492
 $$23492:
-	.incbin "baserom.dol", 0x499428, 0x8
+	.4byte 0x40B47AE1
+	.4byte 0x1EB851EC
 .global $$23563
 $$23563:
-	.incbin "baserom.dol", 0x499430, 0x8
+	.4byte 0x401921FB
+	.4byte 0x54442D18
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global kmpls

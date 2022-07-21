@@ -242,30 +242,61 @@ lbl_8014BC50:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.incbin "baserom.dol", 0x442D58, 0x30
+	.4byte 0x80556A98
+	.4byte 0
+	.4byte 0x8014BC00  ;# ptr
+	.4byte 0x8014B9E8  ;# ptr
+	.4byte 0x8014B9EC  ;# ptr
+	.4byte 0x8014B9F4  ;# ptr
+	.4byte 0x8014B9FC  ;# ptr
+	.4byte 0x8014BA04  ;# ptr
+	.4byte 0x8014BA0C  ;# ptr
+	.4byte 0x8014BA14  ;# ptr
+	.4byte 0x8014BA1C  ;# ptr
+	.4byte 0x8014BB34  ;# ptr
 .global $$22500
 $$22500:
-	.incbin "baserom.dol", 0x442D88, 0x28
+	.asciz "nrel::devkit::heapmap::ExpHeapMapUser"
+	.balign 4
 .global $$22501
 $$22501:
-	.incbin "baserom.dol", 0x442DB0, 0x10
+	.4byte 0x80556AA0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q44nrel6devkit7heapmap12IHeapMapUser
 __vt__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.incbin "baserom.dol", 0x442DC0, 0x30
+	.4byte 0x80556AA0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$22502
 $$22502:
-	.incbin "baserom.dol", 0x442DF0, 0x28
+	.asciz "nrel::devkit::heapmap::IHeapMapUser"
+	.4byte 0
 .global $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv$$20
 $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv$$20:
-	.incbin "baserom.dol", 0x442E18, 0x20
+	.asciz "NW4R:Failed assertion hasNext()"
 .global $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv
 $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv:
-	.incbin "baserom.dol", 0x442E38, 0x20
+	.asciz "ExpHeapBlockIterator.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser:
-	.incbin "baserom.dol", 0x492E78, 0x8
+	.4byte 0x80446C88
+	.4byte 0x80446CB0
 .global __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser:
-	.incbin "baserom.dol", 0x492E80, 0x8
+	.4byte 0x80446CF0
+	.4byte 0

@@ -558,87 +558,204 @@ lbl_803A0D04:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global STONEBODY_TABLE_0__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_TABLE_0__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
-	.incbin "baserom.dol", 0x41BE18, 0x40
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x00000019
+	.4byte 0x00000019
+	.4byte 0x00000019
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global STONEBODY_TABLE_1__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_TABLE_1__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
-	.incbin "baserom.dol", 0x41BE58, 0x40
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000064
+	.4byte 0x00000064
+	.4byte 0x00000064
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global STONEBODY_TABLE_2__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_TABLE_2__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
-	.incbin "baserom.dol", 0x41BE98, 0x40
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x00000064
+	.4byte 0x00000064
+	.4byte 0x00000064
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0x0000002D
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x0000001E
+	.4byte 0x0000001E
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255926
 $$255926:
-	.incbin "baserom.dol", 0x48A7E0, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Stone.brres.cmpbin"
+	.balign 4
 .global $$255927
 $$255927:
-	.incbin "baserom.dol", 0x48A820, 0x48
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/StarBlock.brres.cmpbin"
+	.balign 4
+	.4byte 0
 .global $$255928
 $$255928:
-	.incbin "baserom.dol", 0x48A868, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/HachiTon.brres.cmpbin"
 .global $$255929
 $$255929:
-	.incbin "baserom.dol", 0x48A8A8, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Kirby.brres.cmpbin"
+	.balign 4
 .global $$255930
 $$255930:
-	.incbin "baserom.dol", 0x48A8E8, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Glove.brres.cmpbin"
+	.balign 4
 .global $$255931
 $$255931:
-	.incbin "baserom.dol", 0x48A928, 0x3C
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/MMan.brres.cmpbin"
 .global $$255932
 $$255932:
-	.incbin "baserom.dol", 0x48A964, 0x44
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/HoshiBlock.brres.cmpbin"
+	.balign 4
 .global $$255933
 $$255933:
-	.incbin "baserom.dol", 0x48A9A8, 0x44
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/RickKineCoo.brres.cmpbin"
+	.balign 4
 .global $$255934
 $$255934:
-	.incbin "baserom.dol", 0x48A9EC, 0x3C
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Marc.brres.cmpbin"
 .global $$255935
 $$255935:
-	.incbin "baserom.dol", 0x48AA28, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Wambam.brres.cmpbin"
+	.balign 4
 .global $$255936
 $$255936:
-	.incbin "baserom.dol", 0x48AA68, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/FujiHAL.brres.cmpbin"
+	.balign 4
 .global $$255937
 $$255937:
-	.incbin "baserom.dol", 0x48AAA8, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Dragoon.brres.cmpbin"
+	.balign 4
 .global $$255938
 $$255938:
-	.incbin "baserom.dol", 0x48AAE8, 0x40
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/DogEgg.brres.cmpbin"
+	.balign 4
 .global $$255939
 $$255939:
-	.incbin "baserom.dol", 0x48AB28, 0x44
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/FirstDedede.brres.cmpbin"
+	.balign 4
 .global $$255940
 $$255940:
-	.incbin "baserom.dol", 0x48AB6C, 0x48
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/FirstKirby20th.brres.cmpbin"
+	.balign 4
 .global $$255941
 $$255941:
-	.incbin "baserom.dol", 0x48ABB4, 0x44
+	.asciz "g3d/step/chara/hero/kirby/stone/stonebody/Mahoroa.brres.cmpbin"
+	.balign 4
+	.4byte 0
 .global STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
-	.incbin "baserom.dol", 0x48ABF8, 0x40
+	.4byte 0x8048E6E0
+	.4byte 0x8048E720
+	.4byte 0x8048E768
+	.4byte 0x8048E7A8
+	.4byte 0x8048E7E8
+	.4byte 0x8048E828
+	.4byte 0x8048E864
+	.4byte 0x8048E8A8
+	.4byte 0x8048E8EC
+	.4byte 0x8048E928
+	.4byte 0x8048E968
+	.4byte 0x8048E9A8
+	.4byte 0x8048E9E8
+	.4byte 0x8048EA28
+	.4byte 0x8048EA6C
+	.4byte 0x8048EAB4
 .global $$257442
 $$257442:
-	.incbin "baserom.dol", 0x48AC38, 0x10
+	.asciz "HrStoneBody"
+	.4byte 0
 .global $$257566
 $$257566:
-	.incbin "baserom.dol", 0x48AC48, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$257567
 $$257567:
-	.incbin "baserom.dol", 0x48AC68, 0x24
+	.asciz "step/chara/hero/kirby/hammer/Motion"
 .global $$257568
 $$257568:
-	.incbin "baserom.dol", 0x48AC8C, 0x28
+	.asciz "step/chara/hero/kirby/fighter/Motion"
+	.balign 4
 .global $$257569
 $$257569:
-	.incbin "baserom.dol", 0x48ACB4, 0x24
+	.asciz "step/chara/hero/kirby/cutter/Motion"
 .global $$257570
 $$257570:
-	.incbin "baserom.dol", 0x48ACD8, 0x24
+	.asciz "step/chara/hero/kirby/fire/Motion"
+	.balign 4
 .global $$257571
 $$257571:
-	.incbin "baserom.dol", 0x48ACFC, 0x44
+	.asciz "step/chara/hero/kirby/stone/Motion"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q53scn4step4hero5smash5Smash
 __vt__Q53scn4step4hero5smash5Smash:
-	.incbin "baserom.dol", 0x48AD40, 0xC8
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A05BC
+	.4byte 0x803A06CC
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x803A0864
+	.4byte 0x803A09C8
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8032B7DC
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
+	.asciz "g3d_resfile_ac.h"
+	.balign 4

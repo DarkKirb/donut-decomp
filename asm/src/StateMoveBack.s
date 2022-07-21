@@ -83,4 +83,11 @@ procFixPos__Q53scn4step4boss6common13StateMoveBackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common13StateMoveBack
 __vt__Q53scn4step4boss6common13StateMoveBack:
-	.incbin "baserom.dol", 0x462550, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802474D4  ;# ptr
+	.4byte 0x802474D8  ;# ptr
+	.4byte 0x802474DC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80247538  ;# ptr
+	.4byte 0x80234504  ;# ptr

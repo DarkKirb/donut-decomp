@@ -1962,36 +1962,46 @@ btm_inq_rmt_name_failed:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22304
 $$22304:
-	.incbin "baserom.dol", 0x437E30, 0x5C
+	.asciz "BTM_SetDiscoverability: mode %d [NonDisc-0, Lim-1, Gen-2], window 0x%04x, interval 0x%04x"
+	.balign 4
 .global $$22377
 $$22377:
-	.incbin "baserom.dol", 0x437E8C, 0x54
+	.asciz "BTM_SetConnectability: mode %d [NonConn-0, Conn-1], window 0x%04x, interval 0x%04x"
+	.balign 4
 .global $$22396
 $$22396:
-	.incbin "baserom.dol", 0x437EE0, 0x1C
+	.asciz "BTM_CancelInquiry called"
+	.balign 4
 .global $$22415
 $$22415:
-	.incbin "baserom.dol", 0x437EFC, 0x38
+	.asciz "BTM_StartInquiry: mode: %d, dur: %d, rsps: %d, flt: %d"
+	.balign 4
 .global $$22426
 $$22426:
-	.incbin "baserom.dol", 0x437F34, 0x40
+	.asciz "BTM_ReadRemoteDeviceName: bd addr [%02x%02x%02x%02x%02x%02x]"
+	.balign 4
 .global $$22433
 $$22433:
-	.incbin "baserom.dol", 0x437F74, 0x20
+	.asciz "BTM_CancelRemoteDeviceName()"
+	.balign 4
 .global $$22457
 $$22457:
-	.incbin "baserom.dol", 0x437F94, 0x34
+	.asciz "BTM_InqDbRead: bd addr [%02x%02x%02x%02x%02x%02x]"
+	.balign 4
 .global $$22602
 $$22602:
-	.incbin "baserom.dol", 0x437FC8, 0x3C
+	.asciz "BTM Warning: Set Event Filter Failed (HCI returned 0x%x)"
+	.balign 4
 .global $$22672
 $$22672:
-	.incbin "baserom.dol", 0x438004, 0x3C
+	.asciz "BTM Inq Compl Callback: status 0x%02x, num results %d"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global general_inq_lap
 general_inq_lap:
-	.incbin "baserom.dol", 0x499480, 0x4
+	.4byte 0x9E8B3300
 .global limited_inq_lap
 limited_inq_lap:
-	.incbin "baserom.dol", 0x499484, 0x4
+	.4byte 0x9E8B0000

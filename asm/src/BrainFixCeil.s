@@ -139,18 +139,25 @@ __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6shotzo12BrainFixCeil
 __vt__Q53scn4step5enemy6shotzo12BrainFixCeil:
-	.incbin "baserom.dol", 0x4780F8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E00D4  ;# ptr
+	.4byte 0x802DFF3C  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255186
 $$255186:
-	.incbin "baserom.dol", 0x49CD80, 0x4
+	.4byte 0
 .global $$255187
 $$255187:
-	.incbin "baserom.dol", 0x49CD84, 0x4
+	.4byte 0x4222F983
 .global $$255188
 $$255188:
-	.incbin "baserom.dol", 0x49CD88, 0x4
+	.4byte 0x3C8EFA35
 .global $$255189
 $$255189:
-	.incbin "baserom.dol", 0x49CD8C, 0x4
+	.4byte 0x3FB40000

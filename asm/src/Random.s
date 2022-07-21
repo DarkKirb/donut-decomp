@@ -416,16 +416,17 @@ randCoreF32__Q33hel4math6RandomFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249032
 $$249032:
-	.incbin "baserom.dol", 0x49A390, 0x4
+	.4byte 0
 .global $$249057
 $$249057:
-	.incbin "baserom.dol", 0x49A394, 0x4
+	.4byte 0xBF800000
 .global $$249058
 $$249058:
-	.incbin "baserom.dol", 0x49A398, 0x4
+	.4byte 0x40000000
 .global $$249069
 $$249069:
-	.incbin "baserom.dol", 0x49A39C, 0x4
+	.4byte 0x47800000
 .global $$249072
 $$249072:
-	.incbin "baserom.dol", 0x49A3A0, 0x8
+	.4byte 0x43300000
+	.4byte 0

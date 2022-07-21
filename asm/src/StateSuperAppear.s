@@ -360,12 +360,19 @@ procFixPos__Q53scn4step5enemy6common16StateSuperAppearFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common16StateSuperAppear
 __vt__Q53scn4step5enemy6common16StateSuperAppear:
-	.incbin "baserom.dol", 0x46F3B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029458C  ;# ptr
+	.4byte 0x80294710  ;# ptr
+	.4byte 0x80294870  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80294874  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257491
 $$257491:
-	.incbin "baserom.dol", 0x49BC08, 0x4
+	.4byte 0x40F00000
 .global $$257492
 $$257492:
-	.incbin "baserom.dol", 0x49BC0C, 0x4
+	.4byte 0x3D4CCCCD

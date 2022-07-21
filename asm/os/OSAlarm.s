@@ -635,7 +635,10 @@ lbl_8001C01C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.incbin "baserom.dol", 0x41E2E8, 0x10
+	.4byte 0x8001BF00  ;# ptr
+	.4byte 0xFFFFFFFF
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global AlarmQueue

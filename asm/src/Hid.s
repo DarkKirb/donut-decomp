@@ -461,12 +461,31 @@ isEnableInputs__Q43scn4step4hero3HidCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BUTTONCONVDATA_WR__17$$2unnamed$$2Hid_cpp$$2
 T_BUTTONCONVDATA_WR__17$$2unnamed$$2Hid_cpp$$2:
-	.incbin "baserom.dol", 0x415E50, 0x50
+	.4byte 0x00000008
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000100
+	.4byte 0x00000010
+	.4byte 0x00000200
+	.4byte 0x00000020
+	.4byte 0x00000800
+	.4byte 0x00000080
+	.4byte 0x00000800
+	.4byte 0x00000040
+	.4byte 0x00000400
+	.4byte 0x00000200
+	.4byte 0x00001000
+	.4byte 0x00000100
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253822
 $$253822:
-	.incbin "baserom.dol", 0x49D740, 0x4
+	.4byte 0
 .global $$253823
 $$253823:
-	.incbin "baserom.dol", 0x49D744, 0x4
+	.4byte 0x3ECCCCCD

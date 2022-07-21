@@ -106,4 +106,11 @@ procFixPos__Q53scn4step4boss7bonkers13StateSwingEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss7bonkers13StateSwingEnd
 __vt__Q53scn4step4boss7bonkers13StateSwingEnd:
-	.incbin "baserom.dol", 0x4613B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80239484  ;# ptr
+	.4byte 0x80239488  ;# ptr
+	.4byte 0x80239520  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80239574  ;# ptr
+	.4byte 0x80234504  ;# ptr

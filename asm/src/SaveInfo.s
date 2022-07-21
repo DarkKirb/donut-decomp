@@ -426,36 +426,50 @@ requestSave__Q23app8SaveInfoFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252513
 $$252513:
-	.incbin "baserom.dol", 0x44F168, 0x10
+	.asciz "resident/Main"
+	.balign 4
 .global $$252514
 $$252514:
-	.incbin "baserom.dol", 0x44F178, 0x10
+	.asciz "SaveInfoBase"
+	.balign 4
 .global $$252515
 $$252515:
-	.incbin "baserom.dol", 0x44F188, 0xC
+	.asciz "SaveInfo"
+	.balign 4
 .global $$252517
 $$252517:
-	.incbin "baserom.dol", 0x44F194, 0xC
+	.asciz "TextSave"
+	.balign 4
 .global $$252518
 $$252518:
-	.incbin "baserom.dol", 0x44F1A0, 0x14
+	.asciz "SaveInfoNowSaving"
+	.balign 4
 .global $$252582
 $$252582:
-	.incbin "baserom.dol", 0x44F1B4, 0xC
+	.asciz "SaveBase1N"
+	.balign 4
 .global $$252583
 $$252583:
-	.incbin "baserom.dol", 0x44F1C0, 0x40
+	.asciz "SaveBase2N"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252516
 $$252516:
-	.incbin "baserom.dol", 0x4930A0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252584
 $$252584:
-	.incbin "baserom.dol", 0x4930A8, 0x4
+	.4byte 0
 .global $$252585
 $$252585:
-	.incbin "baserom.dol", 0x4930AC, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252621
 $$252621:
-	.incbin "baserom.dol", 0x4930B4, 0x4
+	.4byte 0x456E6400

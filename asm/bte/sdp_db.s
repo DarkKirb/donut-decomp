@@ -936,10 +936,12 @@ lbl_8009E2AC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21330
 $$21330:
-	.incbin "baserom.dol", 0x43BAA0, 0x3C
+	.asciz "SDP_AddAttribute: attr_len:%d too long. truncate to (%d)"
+	.balign 4
 .global $$21369
 $$21369:
-	.incbin "baserom.dol", 0x43BADC, 0x34
+	.asciz "SDP_AddUuidSequence - too long, add %d uuids of %d"
+	.balign 4
 .global $$21451
 $$21451:
-	.incbin "baserom.dol", 0x43BB10, 0x28
+	.asciz "Deleting attr_id 0x%04x for handle 0x%x"

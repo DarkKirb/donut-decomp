@@ -2245,217 +2245,402 @@ logoScrollOutTime__Q33scn11staffcredit9StaffRollCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2
 POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
-	.incbin "baserom.dol", 0x41CE08, 0x220
+	.4byte 0x80496048
+	.4byte 0
+	.4byte 0x80496054
+	.4byte 0
+	.4byte 0x80496068
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80496080
+	.4byte 0
+	.4byte 0x80496090
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8049609C
+	.4byte 0
+	.4byte 0x8055C628
+	.4byte 0x00000001
+	.4byte 0x804960AC
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0x804960B8
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055C630
+	.4byte 0x00000001
+	.4byte 0x804960CC
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804960D8
+	.4byte 0x00000001
+	.4byte 0x804960E8
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804960FC
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80496108
+	.4byte 0x00000001
+	.4byte 0x8055C638
+	.4byte 0x00000001
+	.4byte 0x80496118
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0x8055C640
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80496128
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8049613C
+	.4byte 0
+	.4byte 0x80496158
+	.4byte 0x00000001
+	.4byte 0x80496168
+	.4byte 0
+	.4byte 0x80496180
+	.4byte 0x00000001
+	.4byte 0x8049618C
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8049619C
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804961B0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804961C4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804961D0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804961E0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251814
 $$251814:
-	.incbin "baserom.dol", 0x492148, 0xC
+	.asciz "Director"
+	.balign 4
 .global $$251815
 $$251815:
-	.incbin "baserom.dol", 0x492154, 0x14
+	.asciz "AssistantDirector"
+	.balign 4
 .global $$251816
 $$251816:
-	.incbin "baserom.dol", 0x492168, 0x18
+	.asciz "LevelDesignPlanner"
+	.balign 4
+	.4byte 0
 .global $$251817
 $$251817:
-	.incbin "baserom.dol", 0x492180, 0x10
+	.asciz "ProgramDirector"
 .global $$251818
 $$251818:
-	.incbin "baserom.dol", 0x492190, 0xC
+	.asciz "Programming"
 .global $$251819
 $$251819:
-	.incbin "baserom.dol", 0x49219C, 0x10
+	.asciz "DesignDirector"
+	.balign 4
 .global $$251821
 $$251821:
-	.incbin "baserom.dol", 0x4921AC, 0xC
+	.asciz "MotifDesign"
 .global $$251822
 $$251822:
-	.incbin "baserom.dol", 0x4921B8, 0x14
+	.asciz "LevelDesignAdviser"
+	.balign 4
 .global $$251824
 $$251824:
-	.incbin "baserom.dol", 0x4921CC, 0xC
+	.asciz "VoiceActor"
+	.balign 4
 .global $$251825
 $$251825:
-	.incbin "baserom.dol", 0x4921D8, 0x10
+	.asciz "HistoryMovie"
+	.balign 4
 .global $$251826
 $$251826:
-	.incbin "baserom.dol", 0x4921E8, 0x14
+	.asciz "HistoryMoviePlay"
+	.balign 4
 .global $$251827
 $$251827:
-	.incbin "baserom.dol", 0x4921FC, 0xC
+	.asciz "TeamSupport"
 .global $$251828
 $$251828:
-	.incbin "baserom.dol", 0x492208, 0x10
+	.asciz "PublicRelations"
 .global $$251830
 $$251830:
-	.incbin "baserom.dol", 0x492218, 0x10
+	.asciz "ManualEditor"
+	.balign 4
 .global $$251832
 $$251832:
-	.incbin "baserom.dol", 0x492228, 0x14
+	.asciz "TechnicalSupport"
+	.balign 4
 .global $$251833
 $$251833:
-	.incbin "baserom.dol", 0x49223C, 0x1C
+	.asciz "NOALocalizationManagement"
+	.balign 4
 .global $$251834
 $$251834:
-	.incbin "baserom.dol", 0x492258, 0x10
+	.asciz "NOALocalization"
 .global $$251835
 $$251835:
-	.incbin "baserom.dol", 0x492268, 0x18
+	.asciz "NOATestingManagement"
+	.balign 4
 .global $$251836
 $$251836:
-	.incbin "baserom.dol", 0x492280, 0xC
+	.asciz "NOATesting"
+	.balign 4
 .global $$251837
 $$251837:
-	.incbin "baserom.dol", 0x49228C, 0x10
+	.asciz "SpecialThanks"
+	.balign 4
 .global $$251838
 $$251838:
-	.incbin "baserom.dol", 0x49229C, 0x14
+	.asciz "ManagingDirector"
+	.balign 4
 .global $$251839
 $$251839:
-	.incbin "baserom.dol", 0x4922B0, 0x14
+	.asciz "ProjectManagement"
+	.balign 4
 .global $$251840
 $$251840:
-	.incbin "baserom.dol", 0x4922C4, 0xC
+	.asciz "Producer"
+	.balign 4
 .global $$251841
 $$251841:
-	.incbin "baserom.dol", 0x4922D0, 0x10
+	.asciz "GeneralProducer"
 .global $$251842
 $$251842:
-	.incbin "baserom.dol", 0x4922E0, 0x14
+	.asciz "ExecutiveProducer"
+	.balign 4
 .global $$255268
 $$255268:
-	.incbin "baserom.dol", 0x4922F4, 0x14
+	.asciz "staffcredits/Main"
+	.balign 4
 .global $$255269
 $$255269:
-	.incbin "baserom.dol", 0x492308, 0xC
+	.asciz "TextBase"
+	.balign 4
 .global $$255270
 $$255270:
-	.incbin "baserom.dol", 0x492314, 0xC
+	.asciz "Copyright"
+	.balign 4
 .global $$255271
 $$255271:
-	.incbin "baserom.dol", 0x492320, 0xC
+	.asciz "CompanyLogo"
 .global $$255275
 $$255275:
-	.incbin "baserom.dol", 0x49232C, 0x14
+	.asciz "FirstPositionText"
+	.balign 4
 .global $$255276
 $$255276:
-	.incbin "baserom.dol", 0x492340, 0x10
+	.asciz "StaffCenterN"
+	.balign 4
 .global $$255278
 $$255278:
-	.incbin "baserom.dol", 0x492350, 0x10
+	.asciz "PositionText1"
+	.balign 4
 .global $$255279
 $$255279:
-	.incbin "baserom.dol", 0x492360, 0xC
+	.asciz "UnderLine"
+	.balign 4
 .global $$255280
 $$255280:
-	.incbin "baserom.dol", 0x49236C, 0xC
+	.asciz "UnderLine1N"
 .global $$255285
 $$255285:
-	.incbin "baserom.dol", 0x492378, 0x10
+	.asciz "PositionText2"
+	.balign 4
 .global $$255286
 $$255286:
-	.incbin "baserom.dol", 0x492388, 0xC
+	.asciz "UnderLine2N"
 .global $$255287
 $$255287:
-	.incbin "baserom.dol", 0x492394, 0x10
+	.asciz "IntervalFirstN"
+	.balign 4
 .global $$255288
 $$255288:
-	.incbin "baserom.dol", 0x4923A4, 0x10
+	.asciz "PositionText"
+	.balign 4
 .global $$255289
 $$255289:
-	.incbin "baserom.dol", 0x4923B4, 0xC
+	.asciz "PositonN"
+	.balign 4
 .global $$255290
 $$255290:
-	.incbin "baserom.dol", 0x4923C0, 0xC
+	.asciz "UnderLineN"
+	.balign 4
 .global $$255291
 $$255291:
-	.incbin "baserom.dol", 0x4923CC, 0xC
+	.asciz "IntervalN"
+	.balign 4
 .global $$255292
 $$255292:
-	.incbin "baserom.dol", 0x4923D8, 0x10
+	.asciz "IntervalStaff2N"
 .global $$255293
 $$255293:
-	.incbin "baserom.dol", 0x4923E8, 0x10
+	.asciz "IntervalStaffN"
+	.balign 4
 .global $$255296
 $$255296:
-	.incbin "baserom.dol", 0x4923F8, 0xC
+	.asciz "StaffText"
+	.balign 4
 .global $$255299
 $$255299:
-	.incbin "baserom.dol", 0x492404, 0x10
+	.asciz "IntervalPosiN"
+	.balign 4
 .global $$255300
 $$255300:
-	.incbin "baserom.dol", 0x492414, 0x10
+	.asciz "IntervalPostN"
+	.balign 4
 .global $$255301
 $$255301:
-	.incbin "baserom.dol", 0x492424, 0x10
+	.asciz "IntervalCopyN"
+	.balign 4
 .global $$255302
 $$255302:
-	.incbin "baserom.dol", 0x492434, 0x44
+	.asciz "CopyrightText"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251820
 $$251820:
-	.incbin "baserom.dol", 0x498A08, 0x8
+	.asciz "Design"
+	.balign 4
 .global $$251823
 $$251823:
-	.incbin "baserom.dol", 0x498A10, 0x8
+	.asciz "Sound"
+	.balign 4
 .global $$251829
 $$251829:
-	.incbin "baserom.dol", 0x498A18, 0x8
+	.asciz "Artwork"
 .global $$251831
 $$251831:
-	.incbin "baserom.dol", 0x498A20, 0x8
+	.asciz "Testing"
 .global $$255277
 $$255277:
-	.incbin "baserom.dol", 0x498A28, 0x8
+	.asciz "Staff"
+	.balign 4
 .global $$255281
 $$255281:
-	.incbin "baserom.dol", 0x498A30, 0x8
+	.asciz "CenterN"
 .global $$255283
 $$255283:
-	.incbin "baserom.dol", 0x498A38, 0x4
+	.4byte 0x524E0000
 .global $$255284
 $$255284:
-	.incbin "baserom.dol", 0x498A3C, 0xC
+	.asciz "Staff2"
+	.balign 4
+	.4byte 0
 .global $$255294
 $$255294:
-	.incbin "baserom.dol", 0x498A48, 0x8
+	.asciz "%s_%02u"
 .global $$255295
 $$255295:
-	.incbin "baserom.dol", 0x498A50, 0x8
+	.4byte 0
+	.4byte 0
 .global $$255297
 $$255297:
-	.incbin "baserom.dol", 0x498A58, 0x8
+	.asciz "Staff1N"
 .global $$255298
 $$255298:
-	.incbin "baserom.dol", 0x498A60, 0x8
+	.asciz "Staff2N"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255272
 $$255272:
-	.incbin "baserom.dol", 0x49EDB8, 0x4
+	.4byte 0x41F00000
 .global $$255273
 $$255273:
-	.incbin "baserom.dol", 0x49EDBC, 0x4
+	.4byte 0x3F000000
 .global $$255274
 $$255274:
-	.incbin "baserom.dol", 0x49EDC0, 0x4
+	.4byte 0
 .global $$255282
 $$255282:
-	.incbin "baserom.dol", 0x49EDC4, 0x4
+	.4byte 0x3E800000
 .global $$255307
 $$255307:
-	.incbin "baserom.dol", 0x49EDC8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$255444
 $$255444:
-	.incbin "baserom.dol", 0x49EDD0, 0x4
+	.4byte 0x41200000
 .global $$255520
 $$255520:
-	.incbin "baserom.dol", 0x49EDD4, 0x4
+	.4byte 0x43C80000
 .global $$255534
 $$255534:
-	.incbin "baserom.dol", 0x49EDD8, 0x4
+	.4byte 0x3F400000
 .global $$255537
 $$255537:
-	.incbin "baserom.dol", 0x49EDDC, 0x4
+	.4byte 0x3F200000

@@ -1039,22 +1039,27 @@ lbl_8018567C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22
 $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22:
-	.incbin "baserom.dol", 0x44F520, 0x128
+	.asciz "NW4R:Failed assertion pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_ACTIVE || pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_WAIT || pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_CLOSING"
+	.balign 4
 .global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$21
 $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$21:
-	.incbin "baserom.dol", 0x44F648, 0x14
+	.asciz "memorymanagertmp.h"
+	.balign 4
 .global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$20
 $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$20:
-	.incbin "baserom.dol", 0x44F65C, 0x30
+	.asciz "NW4R:Failed assertion pp->GetRefCount() == 0"
+	.balign 4
 .global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv
 $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv:
-	.incbin "baserom.dol", 0x44F68C, 0x14
+	.asciz "memorymanagertmp.h"
+	.balign 4
 .global $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20
 $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20:
-	.incbin "baserom.dol", 0x44F6A0, 0x34
+	.asciz "NW4R:Pointer Error\nmData(=%p) is not valid pointer."
 .global $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv
 $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv:
-	.incbin "baserom.dol", 0x44F6D4, 0x14
+	.asciz "res_emitter_ac.h"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global isExist___Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1

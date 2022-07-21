@@ -299,45 +299,61 @@ lbl_803F7FC0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251655
 $$251655:
-	.incbin "baserom.dol", 0x491C90, 0xC
+	.asciz "OnePersons"
+	.balign 4
 .global $$251656
 $$251656:
-	.incbin "baserom.dol", 0x491C9C, 0x14
+	.asciz "One_TwoPersons"
+	.balign 4
+	.4byte 0
 .global $$251657
 $$251657:
-	.incbin "baserom.dol", 0x491CB0, 0x10
+	.asciz "One_FourPersons"
 .global t_getTextLabel__Q43scn9grandmenu4menu26$$2unnamed$$2PlayerWindow_cpp$$2
 t_getTextLabel__Q43scn9grandmenu4menu26$$2unnamed$$2PlayerWindow_cpp$$2:
-	.incbin "baserom.dol", 0x491CC0, 0xC
+	.4byte 0x80495B90
+	.4byte 0x80495B9C
+	.4byte 0x80495BB0
 .global $$252109
 $$252109:
-	.incbin "baserom.dol", 0x491CCC, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 .global $$252110
 $$252110:
-	.incbin "baserom.dol", 0x491CDC, 0xC
+	.asciz "ModeButton"
+	.balign 4
 .global $$252111
 $$252111:
-	.incbin "baserom.dol", 0x491CE8, 0x10
+	.asciz "PlayerWindow"
+	.balign 4
 .global $$252112
 $$252112:
-	.incbin "baserom.dol", 0x491CF8, 0x40
+	.asciz "ModeButtonN"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252113
 $$252113:
-	.incbin "baserom.dol", 0x4989D8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252114
 $$252114:
-	.incbin "baserom.dol", 0x4989E0, 0x8
+	.asciz "PlayerT"
 .global $$252162
 $$252162:
-	.incbin "baserom.dol", 0x4989E8, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$252165
 $$252165:
-	.incbin "baserom.dol", 0x4989F0, 0x4
+	.4byte 0x496E0000
 .global $$252168
 $$252168:
-	.incbin "baserom.dol", 0x4989F4, 0x4
+	.4byte 0x4F757400
 .global $$252172
 $$252172:
-	.incbin "baserom.dol", 0x4989F8, 0x8
+	.asciz "Close"
+	.balign 4

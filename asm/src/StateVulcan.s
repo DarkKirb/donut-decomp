@@ -579,40 +579,75 @@ __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14State
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe11StateVulcan
 __vt__Q53scn4step5enemy10knucklejoe11StateVulcan:
-	.incbin "baserom.dol", 0x474AB0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C0B74  ;# ptr
+	.4byte 0x802C0C1C  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C0CA8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$4b$$1:
-	.incbin "baserom.dol", 0x48A780, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A03E0
+	.4byte 0x803A03C0
 .global __vt__Q53scn4step4hero7fighter11StateVulcan
 __vt__Q53scn4step4hero7fighter11StateVulcan:
-	.incbin "baserom.dol", 0x48A790, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A0160
+	.4byte 0x803A0164
+	.4byte 0x803A032C
+	.4byte 0x8035550C
+	.4byte 0x803A0330
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48B000, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2B94
+	.4byte 0x803A2B58
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash11StateVulcan$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash11StateVulcan$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48B010, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2B90
+	.4byte 0x803A2B74
 .global __vt__Q53scn4step4hero5smash11StateVulcan
 __vt__Q53scn4step4hero5smash11StateVulcan:
-	.incbin "baserom.dol", 0x48B020, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A2A00
+	.4byte 0x803A2A04
+	.4byte 0x803A2B50
+	.4byte 0x8035550C
+	.4byte 0x803A2B54
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255822
 $$255822:
-	.incbin "baserom.dol", 0x49C760, 0x4
+	.4byte 0
 .global $$255823
 $$255823:
-	.incbin "baserom.dol", 0x49C764, 0x4
+	.4byte 0x42B40000
 .global $$255824
 $$255824:
-	.incbin "baserom.dol", 0x49C768, 0x4
+	.4byte 0x3E800000
 .global $$255832
 $$255832:
-	.incbin "baserom.dol", 0x49C76C, 0x4
+	.4byte 0x3DCCCCCD
 .global $$255837
 $$255837:
-	.incbin "baserom.dol", 0x49C770, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -1156,40 +1156,70 @@ lbl_8038DC18:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248824
 $$248824:
-	.incbin "baserom.dol", 0x487510, 0x20
+	.asciz "step/chara/hero/kirby/spark/Hat"
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x487530, 0x10
+	.asciz "PtcPointL"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$259457
 $$259457:
-	.incbin "baserom.dol", 0x489860, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$259458
 $$259458:
-	.incbin "baserom.dol", 0x489880, 0x24
+	.asciz "step/chara/hero/kirby/spark/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero5spark5Spark
 __vt__Q53scn4step4hero5spark5Spark:
-	.incbin "baserom.dol", 0x4898A4, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038CE2C
+	.4byte 0x8038CEDC
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x8038D02C
+	.4byte 0x8038D3B8
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8038D138
+	.4byte 0x8038D13C
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8038D140
+	.4byte 0x8032B7E0
+	.4byte 0x8038D328
+	.4byte 0x8032B7E8
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x497658, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21
 $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2names$$21:
-	.incbin "baserom.dol", 0x497660, 0x8
+	.4byte 0x8055B278
+	.4byte 0x8048B430
 .global $$248831
 $$248831:
-	.incbin "baserom.dol", 0x497668, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x497670, 0x8
+	.asciz "Main"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22:
-	.incbin "baserom.dol", 0x49DAF8, 0x8
+	.4byte 0x8055B290
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2HatModel__Q53scn4step4hero9modeldesc5SparkFv$$2desc

@@ -247,7 +247,8 @@ lbl_8001C368:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSCurrHeap
 __OSCurrHeap:
-	.incbin "baserom.dol", 0x492898, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global ArenaEnd

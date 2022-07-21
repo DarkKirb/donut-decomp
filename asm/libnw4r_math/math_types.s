@@ -311,13 +311,15 @@ MTX44Copy__Q24nw4r4mathFPQ34nw4r4math5MTX44PCQ34nw4r4math5MTX44:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24187
 $$24187:
-	.incbin "baserom.dol", 0x499D58, 0x4
+	.4byte 0
 .global $$24190
 $$24190:
-	.incbin "baserom.dol", 0x499D5C, 0x4
+	.4byte 0x3F800000
 .global $$24265
 $$24265:
-	.incbin "baserom.dol", 0x499D60, 0x8
+	.4byte 0x3CC90FDB
+	.4byte 0
 .global $$24279
 $$24279:
-	.incbin "baserom.dol", 0x499D68, 0x8
+	.4byte 0x47800000
+	.4byte 0x47800000

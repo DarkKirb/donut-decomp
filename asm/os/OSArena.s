@@ -98,10 +98,10 @@ OSAllocFromMEM2ArenaLo:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSArenaLo
 __OSArenaLo:
-	.incbin "baserom.dol", 0x4928A0, 0x4
+	.4byte 0xFFFFFFFF
 .global s_mem2ArenaLo
 s_mem2ArenaLo:
-	.incbin "baserom.dol", 0x4928A4, 0x4
+	.4byte 0xFFFFFFFF
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __OSArenaHi

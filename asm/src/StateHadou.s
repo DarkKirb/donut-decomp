@@ -149,21 +149,29 @@ procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe10StateHadou
 __vt__Q53scn4step5enemy10knucklejoe10StateHadou:
-	.incbin "baserom.dol", 0x474A50, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C024C  ;# ptr
+	.4byte 0x802C02F4  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C0380  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255822
 $$255822:
-	.incbin "baserom.dol", 0x49C718, 0x4
+	.4byte 0
 .global $$255823
 $$255823:
-	.incbin "baserom.dol", 0x49C71C, 0x4
+	.4byte 0x42B40000
 .global $$255824
 $$255824:
-	.incbin "baserom.dol", 0x49C720, 0x4
+	.4byte 0x3E800000
 .global $$255832
 $$255832:
-	.incbin "baserom.dol", 0x49C724, 0x4
+	.4byte 0x3DCCCCCD
 .global $$255837
 $$255837:
-	.incbin "baserom.dol", 0x49C728, 0x8
+	.4byte 0x3F800000
+	.4byte 0

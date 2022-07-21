@@ -148,10 +148,13 @@ lbl_8019341C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249003
 $$249003:
-	.incbin "baserom.dol", 0x450918, 0x14
+	.asciz "g3d/%s.brres.cmp"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r3g3d7ResFileFPv$$20
 $$2STRING$$2__ct__Q34nw4r3g3d7ResFileFPv$$20:
-	.incbin "baserom.dol", 0x45092C, 0x28
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r3g3d7ResFileFPv
 $$2STRING$$2__ct__Q34nw4r3g3d7ResFileFPv:
-	.incbin "baserom.dol", 0x450954, 0x14
+	.asciz "g3d_resfile_ac.h"
+	.balign 4

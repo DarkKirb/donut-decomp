@@ -111,33 +111,47 @@ execute__Q43scn4step6camera9ZoomQuakeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251535
 $$251535:
-	.incbin "baserom.dol", 0x467240, 0x10
+	.asciz "Invalid.Exec()"
+	.balign 4
 .global $$251536
 $$251536:
-	.incbin "baserom.dol", 0x467250, 0x18
+	.asciz "SuperCopyKime.Exec()"
+	.balign 4
 .global $$251537
 $$251537:
-	.incbin "baserom.dol", 0x467268, 0x1C
+	.asciz "SuperSwordCameraOut.Exec()"
+	.balign 4
 .global $$251538
 $$251538:
-	.incbin "baserom.dol", 0x467284, 0x1C
+	.asciz "SuperHammerCameraOut.Exec()"
 .global $$251539
 $$251539:
-	.incbin "baserom.dol", 0x4672A0, 0x20
+	.asciz "BossPowerfulAttack.ExecLong()"
+	.balign 4
 .global $$251540
 $$251540:
-	.incbin "baserom.dol", 0x4672C0, 0x20
+	.asciz "BossPowerfulAttack.ExecShort()"
+	.balign 4
 .global $$251541
 $$251541:
-	.incbin "baserom.dol", 0x4672E0, 0x20
+	.asciz "BossPowerfulAttackCharge.Exec()"
 .global T_QUAKE_NAME_TABLE__Q43scn4step6camera23$$2unnamed$$2ZoomQuake_cpp$$2
 T_QUAKE_NAME_TABLE__Q43scn4step6camera23$$2unnamed$$2ZoomQuake_cpp$$2:
-	.incbin "baserom.dol", 0x467300, 0x1C
+	.4byte 0x8046B140
+	.4byte 0x8046B150
+	.4byte 0x8046B168
+	.4byte 0x8046B184
+	.4byte 0x8046B1A0
+	.4byte 0x8046B1C0
+	.4byte 0x8046B1E0
 .global $$251699
 $$251699:
-	.incbin "baserom.dol", 0x46731C, 0x24
+	.asciz "Scn.Step.Camera.ZoomQuake.%s"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251687
 $$251687:
-	.incbin "baserom.dol", 0x49B728, 0x8
+	.4byte 0
+	.4byte 0

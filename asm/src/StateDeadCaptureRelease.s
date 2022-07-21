@@ -210,21 +210,29 @@ lbl_802AA50C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage23StateDeadCaptureRelease
 __vt__Q53scn4step5enemy6damage23StateDeadCaptureRelease:
-	.incbin "baserom.dol", 0x471DE0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AA470  ;# ptr
+	.4byte 0x802AA474  ;# ptr
+	.4byte 0x802AA484  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802AA4C0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256713
 $$256713:
-	.incbin "baserom.dol", 0x49C1A8, 0x4
+	.4byte 0x42480000
 .global $$256714
 $$256714:
-	.incbin "baserom.dol", 0x49C1AC, 0x4
+	.4byte 0x41200000
 .global $$256715
 $$256715:
-	.incbin "baserom.dol", 0x49C1B0, 0x4
+	.4byte 0x3C8EFA35
 .global $$256716
 $$256716:
-	.incbin "baserom.dol", 0x49C1B4, 0x4
+	.4byte 0x3DCCCCCD
 .global $$256717
 $$256717:
-	.incbin "baserom.dol", 0x49C1B8, 0x8
+	.4byte 0
+	.4byte 0

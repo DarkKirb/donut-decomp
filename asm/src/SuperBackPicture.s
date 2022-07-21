@@ -795,32 +795,43 @@ onStopPowerfulFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253740
 $$253740:
-	.incbin "baserom.dol", 0x48EDE8, 0x14
+	.asciz "SuperBackPicture"
+	.balign 4
 .global $$253741
 $$253741:
-	.incbin "baserom.dol", 0x48EDFC, 0x24
+	.asciz "step/weapon/common/EffectLocator"
+	.balign 4
 .global __vt__Q43scn4step3sfx16SuperBackPicture
 __vt__Q43scn4step3sfx16SuperBackPicture:
-	.incbin "baserom.dol", 0x48EE20, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803CFF94
+	.4byte 0x803D0798
+	.4byte 0x803D079C
+	.4byte 0x803D07A0
+	.4byte 0x803D07D8
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253742
 $$253742:
-	.incbin "baserom.dol", 0x498408, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$253852
 $$253852:
-	.incbin "baserom.dol", 0x498410, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253791
 $$253791:
-	.incbin "baserom.dol", 0x49E7E0, 0x4
+	.4byte 0x3727C5AC
 .global $$253792
 $$253792:
-	.incbin "baserom.dol", 0x49E7E4, 0x4
+	.4byte 0x3F800000
 .global $$253793
 $$253793:
-	.incbin "baserom.dol", 0x49E7E8, 0x4
+	.4byte 0xBF800000
 .global $$253794
 $$253794:
-	.incbin "baserom.dol", 0x49E7EC, 0x4
+	.4byte 0x41300000

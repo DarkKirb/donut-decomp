@@ -3293,303 +3293,382 @@ lbl_803B991C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global NAMES__Q34info6common24$$2unnamed$$2TotalScore_cpp$$2
 NAMES__Q34info6common24$$2unnamed$$2TotalScore_cpp$$2:
-	.incbin "baserom.dol", 0x453740, 0x18
+	.4byte 0x805570D0
+	.4byte 0x805570D0
+	.4byte 0x805570D8
+	.4byte 0x805570E0
+	.4byte 0x805570E8
+	.4byte 0x805570E8
 .global $$252626
 $$252626:
-	.incbin "baserom.dol", 0x453758, 0xC
+	.asciz "common/Main"
 .global $$252627
 $$252627:
-	.incbin "baserom.dol", 0x453764, 0x10
+	.asciz "TotalScoreBase"
+	.balign 4
 .global $$252628
 $$252628:
-	.incbin "baserom.dol", 0x453774, 0x14
+	.asciz "TotalScoreNumber"
+	.balign 4
 .global $$252629
 $$252629:
-	.incbin "baserom.dol", 0x453788, 0xC
+	.asciz "Number%dN"
+	.balign 4
 .global $$252630
 $$252630:
-	.incbin "baserom.dol", 0x453794, 0x3C
+	.asciz "ScoreCommaN"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256054
 $$256054:
-	.incbin "baserom.dol", 0x45B840, 0x18
+	.asciz "challengeresult/Main"
+	.balign 4
 .global $$256055
 $$256055:
-	.incbin "baserom.dol", 0x45B858, 0xC
+	.asciz "BonusMove"
+	.balign 4
 .global $$256056
 $$256056:
-	.incbin "baserom.dol", 0x45B864, 0xC
+	.asciz "ResultParts"
 .global $$256063
 $$256063:
-	.incbin "baserom.dol", 0x45B870, 0xC
+	.asciz "BonusMoveN"
+	.balign 4
 .global $$256109
 $$256109:
-	.incbin "baserom.dol", 0x45B87C, 0xC
+	.asciz "BonusText"
+	.balign 4
 .global $$256110
 $$256110:
-	.incbin "baserom.dol", 0x45B888, 0xC
+	.asciz "TimeText"
+	.balign 4
 .global $$256111
 $$256111:
-	.incbin "baserom.dol", 0x45B894, 0x10
+	.asciz "BonusScoreText"
+	.balign 4
 .global $$256112
 $$256112:
-	.incbin "baserom.dol", 0x45B8A4, 0xC
+	.4byte 0x002B0025
+	.4byte 0x006C0073
+	.4byte 0
 .global $$256158
 $$256158:
-	.incbin "baserom.dol", 0x45B8B0, 0xC
+	.asciz "Score%02dN"
+	.balign 4
 .global $$256159
 $$256159:
-	.incbin "baserom.dol", 0x45B8BC, 0xC
+	.asciz "ScoreCommaN"
 .global $$256160
 $$256160:
-	.incbin "baserom.dol", 0x45B8C8, 0xC
+	.asciz "ScoreNow"
+	.balign 4
 .global $$256161
 $$256161:
-	.incbin "baserom.dol", 0x45B8D4, 0xC
+	.asciz "ScoreRoa"
+	.balign 4
 .global $$256162
 $$256162:
-	.incbin "baserom.dol", 0x45B8E0, 0xC
+	.asciz "ScoreKirby"
+	.balign 4
 .global $$256163
 $$256163:
-	.incbin "baserom.dol", 0x45B8EC, 0xC
+	.asciz "NewRecord"
+	.balign 4
 .global $$256164
 $$256164:
-	.incbin "baserom.dol", 0x45B8F8, 0xC
+	.asciz "NewRecordN"
+	.balign 4
 .global $$256524
 $$256524:
-	.incbin "baserom.dol", 0x45B904, 0xC
+	.asciz "Score%s%d"
+	.balign 4
 .global $$256525
 $$256525:
-	.incbin "baserom.dol", 0x45B910, 0x10
+	.asciz "Score%sminus"
+	.balign 4
 .global $$256526
 $$256526:
-	.incbin "baserom.dol", 0x45B920, 0x10
+	.asciz "Score%sComma"
+	.balign 4
 .global $$256527
 $$256527:
-	.incbin "baserom.dol", 0x45B930, 0xC
+	.asciz "ScoreScaleN"
 .global $$256530
 $$256530:
-	.incbin "baserom.dol", 0x45B93C, 0x4C
+	.asciz "ScoreNminus"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256014
 $$256014:
-	.incbin "baserom.dol", 0x48CE70, 0x14
+	.asciz "masterresult/Main"
+	.balign 4
 .global $$256015
 $$256015:
-	.incbin "baserom.dol", 0x48CE84, 0xC
+	.asciz "BonusMove"
+	.balign 4
 .global $$256016
 $$256016:
-	.incbin "baserom.dol", 0x48CE90, 0xC
+	.asciz "ResultParts"
 .global $$256023
 $$256023:
-	.incbin "baserom.dol", 0x48CE9C, 0xC
+	.asciz "BonusMoveN"
+	.balign 4
 .global $$256069
 $$256069:
-	.incbin "baserom.dol", 0x48CEA8, 0xC
+	.asciz "BonusText"
+	.balign 4
 .global $$256070
 $$256070:
-	.incbin "baserom.dol", 0x48CEB4, 0xC
+	.asciz "TimeText"
+	.balign 4
 .global $$256071
 $$256071:
-	.incbin "baserom.dol", 0x48CEC0, 0x10
+	.asciz "BonusScoreText"
+	.balign 4
 .global $$256072
 $$256072:
-	.incbin "baserom.dol", 0x48CED0, 0xC
+	.4byte 0x002B0025
+	.4byte 0x006C0073
+	.4byte 0
 .global $$256118
 $$256118:
-	.incbin "baserom.dol", 0x48CEDC, 0xC
+	.asciz "Score%02dN"
+	.balign 4
 .global $$256119
 $$256119:
-	.incbin "baserom.dol", 0x48CEE8, 0xC
+	.asciz "ScoreCommaN"
 .global $$256120
 $$256120:
-	.incbin "baserom.dol", 0x48CEF4, 0xC
+	.asciz "ScoreNow"
+	.balign 4
 .global $$256121
 $$256121:
-	.incbin "baserom.dol", 0x48CF00, 0xC
+	.asciz "ScoreRoa"
+	.balign 4
 .global $$256122
 $$256122:
-	.incbin "baserom.dol", 0x48CF0C, 0xC
+	.asciz "ScoreKirby"
+	.balign 4
 .global $$256123
 $$256123:
-	.incbin "baserom.dol", 0x48CF18, 0xC
+	.asciz "NewRecord"
+	.balign 4
 .global $$256124
 $$256124:
-	.incbin "baserom.dol", 0x48CF24, 0xC
+	.asciz "NewRecordN"
+	.balign 4
 .global $$256437
 $$256437:
-	.incbin "baserom.dol", 0x48CF30, 0xC
+	.asciz "Score%s%d"
+	.balign 4
 .global $$256438
 $$256438:
-	.incbin "baserom.dol", 0x48CF3C, 0x10
+	.asciz "Score%sminus"
+	.balign 4
 .global $$256439
 $$256439:
-	.incbin "baserom.dol", 0x48CF4C, 0x10
+	.asciz "Score%sComma"
+	.balign 4
 .global $$256440
 $$256440:
-	.incbin "baserom.dol", 0x48CF5C, 0xC
+	.asciz "ScoreScaleN"
 .global $$256443
 $$256443:
-	.incbin "baserom.dol", 0x48CF68, 0x40
+	.asciz "ScoreNminus"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251545
 $$251545:
-	.incbin "baserom.dol", 0x4934B0, 0x8
+	.asciz "Bronze"
+	.balign 4
 .global $$251546
 $$251546:
-	.incbin "baserom.dol", 0x4934B8, 0x8
+	.asciz "Silver"
+	.balign 4
 .global $$251547
 $$251547:
-	.incbin "baserom.dol", 0x4934C0, 0x8
+	.asciz "Gold"
+	.balign 4
 .global $$251548
 $$251548:
-	.incbin "baserom.dol", 0x4934C8, 0x8
+	.asciz "Platina"
 .global $$252572
 $$252572:
-	.incbin "baserom.dol", 0x4934D0, 0x8
+	.asciz "%s%d"
+	.balign 4
 .global $$252573
 $$252573:
-	.incbin "baserom.dol", 0x4934D8, 0x8
+	.asciz "%sComma"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256057
 $$256057:
-	.incbin "baserom.dol", 0x494388, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$256058
 $$256058:
-	.incbin "baserom.dol", 0x494390, 0x8
+	.asciz "ScoreS"
+	.balign 4
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x494398, 0x8
+	.asciz "ScoreN"
+	.balign 4
 .global $$256060
 $$256060:
-	.incbin "baserom.dol", 0x4943A0, 0x8
+	.asciz "Score"
+	.balign 4
 .global $$256061
 $$256061:
-	.incbin "baserom.dol", 0x4943A8, 0x8
+	.asciz "ScoreP"
+	.balign 4
 .global $$256062
 $$256062:
-	.incbin "baserom.dol", 0x4943B0, 0x8
+	.asciz "BonusN"
+	.balign 4
 .global $$256113
 $$256113:
-	.incbin "baserom.dol", 0x4943B8, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$256511
 $$256511:
-	.incbin "baserom.dol", 0x4943C0, 0x4
+	.4byte 0x50000000
 .global $$256513
 $$256513:
-	.incbin "baserom.dol", 0x4943C4, 0x4
+	.4byte 0
 .global $$256515
 $$256515:
-	.incbin "baserom.dol", 0x4943C8, 0x4
+	.4byte 0x53000000
 .global $$256517
 $$256517:
-	.incbin "baserom.dol", 0x4943CC, 0x4
+	.4byte 0x4E000000
 .global $$256522
 $$256522:
-	.incbin "baserom.dol", 0x4943D0, 0x8
+	.4byte 0x25356400
+	.4byte 0
 .global $$256523
 $$256523:
-	.incbin "baserom.dol", 0x4943D8, 0x8
+	.asciz "Score%s"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256017
 $$256017:
-	.incbin "baserom.dol", 0x497DD0, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$256018
 $$256018:
-	.incbin "baserom.dol", 0x497DD8, 0x8
+	.asciz "ScoreS"
+	.balign 4
 .global $$256019
 $$256019:
-	.incbin "baserom.dol", 0x497DE0, 0x8
+	.asciz "ScoreN"
+	.balign 4
 .global $$256020
 $$256020:
-	.incbin "baserom.dol", 0x497DE8, 0x8
+	.asciz "Score"
+	.balign 4
 .global $$256021
 $$256021:
-	.incbin "baserom.dol", 0x497DF0, 0x8
+	.asciz "ScoreP"
+	.balign 4
 .global $$256022
 $$256022:
-	.incbin "baserom.dol", 0x497DF8, 0x8
+	.asciz "BonusN"
+	.balign 4
 .global $$256073
 $$256073:
-	.incbin "baserom.dol", 0x497E00, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$256424
 $$256424:
-	.incbin "baserom.dol", 0x497E08, 0x4
+	.4byte 0x50000000
 .global $$256426
 $$256426:
-	.incbin "baserom.dol", 0x497E0C, 0x4
+	.4byte 0
 .global $$256428
 $$256428:
-	.incbin "baserom.dol", 0x497E10, 0x4
+	.4byte 0x53000000
 .global $$256430
 $$256430:
-	.incbin "baserom.dol", 0x497E14, 0x4
+	.4byte 0x4E000000
 .global $$256435
 $$256435:
-	.incbin "baserom.dol", 0x497E18, 0x8
+	.4byte 0x25356400
+	.4byte 0
 .global $$256436
 $$256436:
-	.incbin "baserom.dol", 0x497E20, 0x8
+	.asciz "Score%s"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256157
 $$256157:
-	.incbin "baserom.dol", 0x49A9B0, 0x4
+	.4byte 0x3F19999A
 .global $$256510
 $$256510:
-	.incbin "baserom.dol", 0x49A9B4, 0x4
+	.4byte 0x3F99999A
 .global $$256512
 $$256512:
-	.incbin "baserom.dol", 0x49A9B8, 0x4
+	.4byte 0x3F8CCCCD
 .global $$256514
 $$256514:
-	.incbin "baserom.dol", 0x49A9BC, 0x4
+	.4byte 0x3F800000
 .global $$256516
 $$256516:
-	.incbin "baserom.dol", 0x49A9C0, 0x4
+	.4byte 0x3F666666
 .global $$256518
 $$256518:
-	.incbin "baserom.dol", 0x49A9C4, 0x4
+	.4byte 0x3F4CCCCD
 .global $$256519
 $$256519:
-	.incbin "baserom.dol", 0x49A9C8, 0x4
+	.4byte 0x3F333333
 .global $$256520
 $$256520:
-	.incbin "baserom.dol", 0x49A9CC, 0x4
+	.4byte 0x3D4CCCCD
 .global $$256521
 $$256521:
-	.incbin "baserom.dol", 0x49A9D0, 0x8
+	.4byte 0x3CCCCCCD
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256117
 $$256117:
-	.incbin "baserom.dol", 0x49E4A8, 0x4
+	.4byte 0x3F19999A
 .global $$256423
 $$256423:
-	.incbin "baserom.dol", 0x49E4AC, 0x4
+	.4byte 0x3F99999A
 .global $$256425
 $$256425:
-	.incbin "baserom.dol", 0x49E4B0, 0x4
+	.4byte 0x3F8CCCCD
 .global $$256427
 $$256427:
-	.incbin "baserom.dol", 0x49E4B4, 0x4
+	.4byte 0x3F800000
 .global $$256429
 $$256429:
-	.incbin "baserom.dol", 0x49E4B8, 0x4
+	.4byte 0x3F666666
 .global $$256431
 $$256431:
-	.incbin "baserom.dol", 0x49E4BC, 0x4
+	.4byte 0x3F4CCCCD
 .global $$256432
 $$256432:
-	.incbin "baserom.dol", 0x49E4C0, 0x4
+	.4byte 0x3F333333
 .global $$256433
 $$256433:
-	.incbin "baserom.dol", 0x49E4C4, 0x4
+	.4byte 0x3D4CCCCD
 .global $$256434
 $$256434:
-	.incbin "baserom.dol", 0x49E4C8, 0x8
+	.4byte 0x3CCCCCCD
+	.4byte 0

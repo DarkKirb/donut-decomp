@@ -381,21 +381,29 @@ __sinit_$$3Product_cpp:
 /* 8021A3F0 00216230  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40246C, 0x4
+	.4byte 0x8021A024  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$249032
 $$249032:
-	.incbin "baserom.dol", 0x412158, 0xC
+	.4byte 0x01010100
+	.4byte 0
+	.4byte 0
 .global $$249039
 $$249039:
-	.incbin "baserom.dol", 0x412164, 0xC
+	.4byte 0x01010000
+	.4byte 0
+	.4byte 0
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x412170, 0xC
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
 .global $$249050
 $$249050:
-	.incbin "baserom.dol", 0x41217C, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000101
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global PRODUCT_INFO_TABLE__Q43scn7history6detail21$$2unnamed$$2Product_cpp$$2

@@ -133,20 +133,24 @@ lbl_80200A20:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251541
 $$251541:
-	.incbin "baserom.dol", 0x45C568, 0x10
+	.asciz "grandtitle/Main"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251954
 $$251954:
-	.incbin "baserom.dol", 0x4946F8, 0x4
+	.4byte 0x42470000
 .global $$251993
 $$251993:
-	.incbin "baserom.dol", 0x4946FC, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$251999
 $$251999:
-	.incbin "baserom.dol", 0x494704, 0xC
+	.asciz "Wait"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2:
-	.incbin "baserom.dol", 0x49AA68, 0x8
+	.4byte 0x80460468
+	.4byte 0

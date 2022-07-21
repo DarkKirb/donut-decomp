@@ -107,12 +107,15 @@ lbl_8025C7A8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_TARGET_NODE__Q53scn4step4boss6whispy25$$2unnamed$$2FaceRotCtrl_cpp$$2
 T_TARGET_NODE__Q53scn4step4boss6whispy25$$2unnamed$$2FaceRotCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x4136A8, 0x10
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x0000000B
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254989
 $$254989:
-	.incbin "baserom.dol", 0x49B518, 0x4
+	.4byte 0x43B40000
 .global $$254990
 $$254990:
-	.incbin "baserom.dol", 0x49B51C, 0x4
+	.4byte 0

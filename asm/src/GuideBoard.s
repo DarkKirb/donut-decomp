@@ -993,23 +993,24 @@ lbl_80312B48:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255157
 $$255157:
-	.incbin "baserom.dol", 0x47D688, 0x18
+	.asciz "step/gimmick/GuideBoard"
 .global $$255422
 $$255422:
-	.incbin "baserom.dol", 0x47D6A0, 0x18
+	.asciz "step/gimmick/SwordBoard"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255290
 $$255290:
-	.incbin "baserom.dol", 0x496B80, 0x8
+	.asciz "EffectL"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255276
 $$255276:
-	.incbin "baserom.dol", 0x49D430, 0x4
+	.4byte 0x3FC00000
 .global $$255277
 $$255277:
-	.incbin "baserom.dol", 0x49D434, 0x4
+	.4byte 0
 .global $$255339
 $$255339:
-	.incbin "baserom.dol", 0x49D438, 0x8
+	.4byte 0x3F000000
+	.4byte 0

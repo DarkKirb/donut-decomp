@@ -269,13 +269,21 @@ lbl_801521CC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22532
 $$22532:
-	.incbin "baserom.dol", 0x4442F8, 0x1C
+	.asciz "[AudioDecoder] Destroying\n"
+	.balign 4
 .global $$22549
 $$22549:
-	.incbin "baserom.dol", 0x444314, 0x1C
+	.asciz "[AudioDecoder] Decode error"
 .global $$22550
 $$22550:
-	.incbin "baserom.dol", 0x444330, 0x24
+	.asciz "[audioDecoder] Inconsistent size"
+	.balign 4
 .global __vt__17MoSdkAudioDecoder
 __vt__17MoSdkAudioDecoder:
-	.incbin "baserom.dol", 0x444354, 0x1C
+	.4byte 0x80556AD0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80152050  ;# ptr
+	.4byte 0x801520C0  ;# ptr
+	.4byte 0x8014F970  ;# ptr

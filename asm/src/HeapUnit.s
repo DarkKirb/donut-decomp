@@ -244,4 +244,13 @@ heapDump__Q23mem8HeapUnitCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem8HeapUnit
 __vt__Q23mem8HeapUnit:
-	.incbin "baserom.dol", 0x455E48, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BF06C  ;# ptr
+	.4byte 0x801BF190  ;# ptr
+	.4byte 0x801BF194  ;# ptr
+	.4byte 0x801BF198  ;# ptr
+	.4byte 0x801BF19C  ;# ptr
+	.4byte 0x801BF1AC  ;# ptr
+	.4byte 0x801BF1B0  ;# ptr
+	.4byte 0

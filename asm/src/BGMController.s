@@ -465,18 +465,19 @@ __ct__Q53scn4step4core13BGMController4MemoFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249495
 $$249495:
-	.incbin "baserom.dol", 0x495848, 0x4
+	.4byte 0
 .global $$249496
 $$249496:
-	.incbin "baserom.dol", 0x49584C, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249732
 $$249732:
-	.incbin "baserom.dol", 0x49B8D0, 0x4
+	.4byte 0x3F800000
 .global $$249780
 $$249780:
-	.incbin "baserom.dol", 0x49B8D4, 0x4
+	.4byte 0x42F00000
 .global $$249783
 $$249783:
-	.incbin "baserom.dol", 0x49B8D8, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -430,31 +430,47 @@ procFixPos__Q53scn4step5enemy9waddledee15StateSmashedEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld15StateSmashedEnd
 __vt__Q53scn4step5enemy5sheld15StateSmashedEnd:
-	.incbin "baserom.dol", 0x477F90, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DF964  ;# ptr
+	.4byte 0x802DF9F4  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledee15StateSmashedEnd
 __vt__Q53scn4step5enemy9waddledee15StateSmashedEnd:
-	.incbin "baserom.dol", 0x47A398, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EE82C  ;# ptr
+	.4byte 0x802EE8BC  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802EEA04  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256208
 $$256208:
-	.incbin "baserom.dol", 0x49CD70, 0x4
+	.4byte 0x3F800000
 .global $$256209
 $$256209:
-	.incbin "baserom.dol", 0x49CD74, 0x4
+	.4byte 0
 .global $$256210
 $$256210:
-	.incbin "baserom.dol", 0x49CD78, 0x8
+	.4byte 0x3E99999A
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256918
 $$256918:
-	.incbin "baserom.dol", 0x49D020, 0x4
+	.4byte 0x3F800000
 .global $$256919
 $$256919:
-	.incbin "baserom.dol", 0x49D024, 0x4
+	.4byte 0
 .global $$256920
 $$256920:
-	.incbin "baserom.dol", 0x49D028, 0x8
+	.4byte 0x3E99999A
+	.4byte 0

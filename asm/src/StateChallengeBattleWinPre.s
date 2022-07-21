@@ -935,38 +935,55 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23St
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateChallengeBattleWin$$4PQ43scn4step4hero4Hero$$4b$$1:
-	.incbin "baserom.dol", 0x4889A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037B4C4
+	.4byte 0x8037B480
 .global __vt__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1
 __vt__Q24util167StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick26StateChallengeBattleWinPre$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase$$1:
-	.incbin "baserom.dol", 0x4889B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037B4C0
+	.4byte 0x8037B4A0
 .global __vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre
 __vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre:
-	.incbin "baserom.dol", 0x4889C8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037AD88
+	.4byte 0x8037AE40
+	.4byte 0x8037B004
+	.4byte 0x8035550C
+	.4byte 0x8037B104
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248855
 $$248855:
-	.incbin "baserom.dol", 0x497720, 0x4
+	.4byte 0
 .global $$248856
 $$248856:
-	.incbin "baserom.dol", 0x497724, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260505
 $$260505:
-	.incbin "baserom.dol", 0x49DF10, 0x4
+	.4byte 0
 .global $$260506
 $$260506:
-	.incbin "baserom.dol", 0x49DF14, 0x4
+	.4byte 0x3DCCCCCD
 .global $$260507
 $$260507:
-	.incbin "baserom.dol", 0x49DF18, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$260511
 $$260511:
-	.incbin "baserom.dol", 0x49DF20, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$260561
 $$260561:
-	.incbin "baserom.dol", 0x49DF28, 0x4
+	.4byte 0x3727C5AC
 .global $$260595
 $$260595:
-	.incbin "baserom.dol", 0x49DF2C, 0x4
+	.4byte 0x3D4CCCCD

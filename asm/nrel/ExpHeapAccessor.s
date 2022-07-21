@@ -681,122 +681,156 @@ headerPtr__Q34nrel3mem5BlockCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2882
 $$2882:
-	.incbin "baserom.dol", 0x443100, 0x14
+	.asciz "ExpHeapAccessor.cpp"
 .global $$2883
 $$2883:
-	.incbin "baserom.dol", 0x443114, 0x38
+	.asciz "NW4R:Failed assertion MEMIsExpHeap( aHandle ) == TRUE"
+	.balign 4
 .global $$21037
 $$21037:
-	.incbin "baserom.dol", 0x44314C, 0x4C
+	.asciz "NW4R:Failed assertion DumpStyle_Begin <= aStyle && aStyle < DumpStyle_End"
+	.balign 4
 .global $$21038
 $$21038:
-	.incbin "baserom.dol", 0x443198, 0x1C
+	.asciz "[debug::memory HeapDump]\n"
+	.balign 4
 .global $$21039
 $$21039:
-	.incbin "baserom.dol", 0x4431B4, 0xC
+	.asciz "<Abstract>\n"
 .global $$21040
 $$21040:
-	.incbin "baserom.dol", 0x4431C0, 0x1C
+	.asciz "  Heap Range   : %8x - %8x\n"
 .global $$21041
 $$21041:
-	.incbin "baserom.dol", 0x4431DC, 0x1C
+	.asciz "  Usable Range : %8x - %8x\n"
 .global $$21042
 $$21042:
-	.incbin "baserom.dol", 0x4431F8, 0x1C
+	.asciz "  Total Size   : %9d bytes\n"
 .global $$21043
 $$21043:
-	.incbin "baserom.dol", 0x443214, 0x24
+	.asciz "  Used Size    : %9d bytes (%f%)\n"
+	.balign 4
 .global $$21045
 $$21045:
-	.incbin "baserom.dol", 0x443238, 0x24
+	.asciz "  Free Size    : %9d bytes (%f%)\n"
+	.balign 4
 .global $$21046
 $$21046:
-	.incbin "baserom.dol", 0x44325C, 0x18
+	.asciz "  Used Blocks  : %d\n"
+	.balign 4
 .global $$21047
 $$21047:
-	.incbin "baserom.dol", 0x443274, 0x18
+	.asciz "  Free Blocks  : %d\n"
+	.balign 4
 .global $$21048
 $$21048:
-	.incbin "baserom.dol", 0x44328C, 0x10
+	.asciz "<Used Blocks>\n"
+	.balign 4
 .global $$21049
 $$21049:
-	.incbin "baserom.dol", 0x44329C, 0x54
+	.asciz "  BeginAddr EndAddr   Group Align HeadAddr  DataAddr  DataSize  PrevAddr  NextAddr\n"
 .global $$21050
 $$21050:
-	.incbin "baserom.dol", 0x4432F0, 0x50
+	.asciz "BeginAddr,EndAddr,Group,Align,HeadAddr,DataAddr,DataSize,PrevAddr,NextAddr,\n"
+	.balign 4
 .global $$21051
 $$21051:
-	.incbin "baserom.dol", 0x443340, 0x3C
+	.asciz "  %08x  %08x  0x%02x  0x%02x  %08x  %08x  %8d  %08x  %08x\n"
+	.balign 4
 .global $$21052
 $$21052:
-	.incbin "baserom.dol", 0x44337C, 0x34
+	.asciz "%08x,%08x,0x%02x,0x%02x,%08x,%08x,%d,%08x,%08x,\n"
+	.balign 4
 .global $$21053
 $$21053:
-	.incbin "baserom.dol", 0x4433B0, 0xC
+	.asciz "  Nothing\n"
+	.balign 4
 .global $$21054
 $$21054:
-	.incbin "baserom.dol", 0x4433BC, 0x10
+	.asciz "<Free Blocks>\n"
+	.balign 4
 .global $$21055
 $$21055:
-	.incbin "baserom.dol", 0x4433CC, 0x1C
+	.asciz "  BeginAddr EndAddr   Size\n"
 .global $$21056
 $$21056:
-	.incbin "baserom.dol", 0x4433E8, 0x1C
+	.asciz "BeginAddr,EndAddr,Size,\n"
+	.balign 4
 .global $$21057
 $$21057:
-	.incbin "baserom.dol", 0x443404, 0x10
+	.asciz "  %x  %x  %8d\n"
+	.balign 4
 .global $$21058
 $$21058:
-	.incbin "baserom.dol", 0x443414, 0xC
+	.asciz "%x,%x,%d,\n"
+	.balign 4
 .global $$21104
 $$21104:
-	.incbin "baserom.dol", 0x443420, 0x38
+	.asciz "NW4R:Pointer Error\nhandle_(=%p) is not valid pointer."
+	.balign 4
 .global $$21216
 $$21216:
-	.incbin "baserom.dol", 0x443458, 0x30
+	.asciz "NW4R:Failed assertion head->pMBHeadPrev == 0"
+	.balign 4
 .global $$21217
 $$21217:
-	.incbin "baserom.dol", 0x443488, 0x1C
+	.asciz "NW4R:Failed assertion head"
+	.balign 4
 .global $$21218
 $$21218:
-	.incbin "baserom.dol", 0x4434A4, 0x34
+	.asciz "Invalid Signature As Used MemBlock At %08X (%X)\n"
+	.balign 4
 .global $$21219
 $$21219:
-	.incbin "baserom.dol", 0x4434D8, 0x38
+	.asciz "Invalid Signature As Free MemBlock At %08X (%X)\n"
+	.balign 4
+	.4byte 0
 .global $$21220
 $$21220:
-	.incbin "baserom.dol", 0x443510, 0x40
+	.asciz "NW4R:Pointer Error\nhead->pMBHeadNext(=%p) is not valid pointer."
 .global $$21221
 $$21221:
-	.incbin "baserom.dol", 0x443550, 0x40
+	.asciz "NW4R:Failed assertion head->pMBHeadNext->pMBHeadPrev == head"
+	.balign 4
 .global $$21222
 $$21222:
-	.incbin "baserom.dol", 0x443590, 0x40
+	.asciz "NW4R:Pointer Error\nhead->pMBHeadPrev(=%p) is not valid pointer."
 .global $$21223
 $$21223:
-	.incbin "baserom.dol", 0x4435D0, 0x7C
+	.asciz "NW4R:Failed assertion head->pMBHeadPrev->pMBHeadNext == head"
+	.balign 4
+	.asciz "NW4R:Failed assertion hasNext()"
+	.asciz "ExpHeapBlockIterator.hpp"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$22
 $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$22:
-	.incbin "baserom.dol", 0x44364C, 0x2C
+	.asciz "NW4R:Failed assertion ptr->pMBHeadPrev == 0"
 .global $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$21
 $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$21:
-	.incbin "baserom.dol", 0x443678, 0x1C
+	.asciz "ExpHeapBlockIterator.hpp"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$20
 $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead$$20:
-	.incbin "baserom.dol", 0x443694, 0x34
+	.asciz "NW4R:Pointer Error\nptr(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead
 $$2STRING$$2__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead:
-	.incbin "baserom.dol", 0x4436C8, 0x20
+	.asciz "ExpHeapBlockIterator.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21059
 $$21059:
-	.incbin "baserom.dol", 0x492E88, 0x8
+	.4byte 0x0A000000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21044
 $$21044:
-	.incbin "baserom.dol", 0x49A0C0, 0x8
+	.4byte 0x42C80000
+	.4byte 0
 .global $$21063
 $$21063:
-	.incbin "baserom.dol", 0x49A0C8, 0x8
+	.4byte 0x43300000
+	.4byte 0

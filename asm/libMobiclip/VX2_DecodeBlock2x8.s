@@ -859,10 +859,43 @@ lbl_8015ABA8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VX2CommandTable2x8
 VX2CommandTable2x8:
-	.incbin "baserom.dol", 0x40AED8, 0x28
+	.4byte 0x80159EF0  ;# ptr
+	.4byte 0x8015A020  ;# ptr
+	.4byte 0x8015A240  ;# ptr
+	.4byte 0x8015A460  ;# ptr
+	.4byte 0x8015A680  ;# ptr
+	.4byte 0x8015A8A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8015AAC0  ;# ptr
+	.4byte 0
 .global $$2LOCAL$$2VX2DecodeBlockInter2x8__FR14VX2DecoderData$$2command
 $$2LOCAL$$2VX2DecodeBlockInter2x8__FR14VX2DecoderData$$2command:
-	.incbin "baserom.dol", 0x40AF00, 0x40
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00000005
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0x00000003
 .global $$2LOCAL$$2VX2DecodeBlockInter2x8__FR14VX2DecoderData$$2size$$20
 $$2LOCAL$$2VX2DecodeBlockInter2x8__FR14VX2DecoderData$$2size$$20:
-	.incbin "baserom.dol", 0x40AF40, 0x28
+	.4byte 0x00000003
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000004
+	.4byte 0xFFFFFFFF

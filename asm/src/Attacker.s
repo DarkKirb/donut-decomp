@@ -1853,13 +1853,13 @@ vacuumedPri__Q43scn4step6vacuum8AttackerCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254544
 $$254544:
-	.incbin "baserom.dol", 0x49E810, 0x4
+	.4byte 0
 .global $$255010
 $$255010:
-	.incbin "baserom.dol", 0x49E814, 0x4
+	.4byte 0x3F400000
 .global $$255011
 $$255011:
-	.incbin "baserom.dol", 0x49E818, 0x4
+	.4byte 0xBF400000
 .global $$255012
 $$255012:
-	.incbin "baserom.dol", 0x49E81C, 0x4
+	.4byte 0xBFC00000

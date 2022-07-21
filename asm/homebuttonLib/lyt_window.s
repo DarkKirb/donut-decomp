@@ -2569,35 +2569,87 @@ __sinit_$$3lyt_window_cpp:
 /* 8013FB1C 0013B95C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023D4, 0x4
+	.4byte 0x8013FB00  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29107
 $$29107:
-	.incbin "baserom.dol", 0x40A370, 0x8
+	.4byte 0
+	.4byte 0
 .global $$29114
 $$29114:
-	.incbin "baserom.dol", 0x40A378, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$29115
 $$29115:
-	.incbin "baserom.dol", 0x40A380, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GetTexutreFlipInfo__24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos
 $$2LOCAL$$2GetTexutreFlipInfo__24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos:
-	.incbin "baserom.dol", 0x440368, 0x3C
+	.4byte 0x00000100
+	.4byte 0x00010101
+	.4byte 0x00010100
+	.4byte 0x00000101
+	.4byte 0x00010001
+	.4byte 0x00010101
+	.4byte 0x00000100
+	.4byte 0x00010001
+	.4byte 0x00000101
+	.4byte 0x01000100
+	.4byte 0x01010001
+	.4byte 0x01000000
+	.4byte 0x00010100
+	.4byte 0x01010000
+	.4byte 0x00010100
 .global __vt__Q36nw4hbm3lyt6Window
 __vt__Q36nw4hbm3lyt6Window:
-	.incbin "baserom.dol", 0x4403A4, 0x7C
+	.4byte 0x80444348
+	.4byte 0
+	.4byte 0x8013D700  ;# ptr
+	.4byte 0x8013FAF0  ;# ptr
+	.4byte 0x8013B0A0  ;# ptr
+	.4byte 0x8013B3A0  ;# ptr
+	.4byte 0x8013DB30  ;# ptr
+	.4byte 0x8013B580  ;# ptr
+	.4byte 0x8013DD10  ;# ptr
+	.4byte 0x8013DAA0  ;# ptr
+	.4byte 0x8013DAC0  ;# ptr
+	.4byte 0x8013AEB0  ;# ptr
+	.4byte 0x8013AEE0  ;# ptr
+	.4byte 0x8013DAF0  ;# ptr
+	.4byte 0x8013DB10  ;# ptr
+	.4byte 0x8013AF30  ;# ptr
+	.4byte 0x8013D850  ;# ptr
+	.4byte 0x8013B6D0  ;# ptr
+	.4byte 0x8013B6F0  ;# ptr
+	.4byte 0x8013B700  ;# ptr
+	.4byte 0x8013DDA0  ;# ptr
+	.4byte 0x8013D950  ;# ptr
+	.4byte 0x8013DA00  ;# ptr
+	.4byte 0x8013BB20  ;# ptr
+	.4byte 0x8013B930  ;# ptr
+	.4byte 0x8013FAE0  ;# ptr
+	.4byte 0x8013FAB0  ;# ptr
+	.4byte 0x8013DE30  ;# ptr
+	.4byte 0x8013DF40  ;# ptr
+	.4byte 0x8013E570  ;# ptr
+	.4byte 0x8013ECA0  ;# ptr
 .global $$28272
 $$28272:
-	.incbin "baserom.dol", 0x440420, 0x14
+	.asciz "nw4hbm::lyt::Window"
 .global $$28273
 $$28273:
-	.incbin "baserom.dol", 0x440434, 0x14
+	.4byte 0x80443F60
+	.4byte 0
+	.4byte 0x80443F38
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt6Window
 __RTTI__Q36nw4hbm3lyt6Window:
-	.incbin "baserom.dol", 0x440448, 0x8
+	.4byte 0x80444320
+	.4byte 0x80444334
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt6Window

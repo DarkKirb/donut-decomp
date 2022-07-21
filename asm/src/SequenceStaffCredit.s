@@ -131,4 +131,13 @@ GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq19SequenceStaffCredit
 __vt__Q23seq19SequenceStaffCredit:
-	.incbin "baserom.dol", 0x4925F0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FFDA8
+	.4byte 0x803FFCD4
+	.4byte 0x803FFCD8
+	.4byte 0x803FFD08
+	.4byte 0x803FFD0C
+	.4byte 0x803FFD10
+	.4byte 0x803FFD90
+	.4byte 0

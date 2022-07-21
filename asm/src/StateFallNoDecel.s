@@ -69,15 +69,23 @@ procFixPos__Q53scn4step5enemy6common16StateFallNoDecelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common16StateFallNoDecel
 __vt__Q53scn4step5enemy6common16StateFallNoDecel:
-	.incbin "baserom.dol", 0x46F138, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291CD8  ;# ptr
+	.4byte 0x80291CDC  ;# ptr
+	.4byte 0x80291CE0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80291D3C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255747
 $$255747:
-	.incbin "baserom.dol", 0x49BB10, 0x4
+	.4byte 0x3E19999A
 .global $$255748
 $$255748:
-	.incbin "baserom.dol", 0x49BB14, 0x4
+	.4byte 0x3BC49BA6
 .global $$255749
 $$255749:
-	.incbin "baserom.dol", 0x49BB18, 0x8
+	.4byte 0x3BA3D70A
+	.4byte 0

@@ -324,7 +324,7 @@ volumeFade__Q23snd9BgmPlayerFfi:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249146
 $$249146:
-	.incbin "baserom.dol", 0x49EE98, 0x4
+	.4byte 0x3F800000
 .global $$249208
 $$249208:
-	.incbin "baserom.dol", 0x49EE9C, 0x4
+	.4byte 0x3ECCCCCD

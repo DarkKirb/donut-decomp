@@ -356,7 +356,16 @@ GetRuntimeTypeInfo__Q23seq17SequenceGrandMenuCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq17SequenceGrandMenu
 __vt__Q23seq17SequenceGrandMenu:
-	.incbin "baserom.dol", 0x492528, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FE74C
+	.4byte 0x803FE418
+	.4byte 0x803FE41C
+	.4byte 0x803FE460
+	.4byte 0x803FE538
+	.4byte 0x803FE544
+	.4byte 0x803FE614
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q23seq17SequenceGrandMenu$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

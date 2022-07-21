@@ -747,33 +747,35 @@ __vc__Q33hel6common75MutableArray$$0Q63scn4step7gimmick11areamapdemo10CameraCtrl
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252141
 $$252141:
-	.incbin "baserom.dol", 0x49AB58, 0x4
+	.4byte 0xBF402FF9
 .global $$252142
 $$252142:
-	.incbin "baserom.dol", 0x49AB5C, 0x4
+	.4byte 0x3FD9999A
 .global $$252143
 $$252143:
-	.incbin "baserom.dol", 0x49AB60, 0x4
+	.4byte 0xBF221102
 .global $$252144
 $$252144:
-	.incbin "baserom.dol", 0x49AB64, 0x4
+	.4byte 0
 .global $$252145
 $$252145:
-	.incbin "baserom.dol", 0x49AB68, 0x4
+	.4byte 0xBF3358E5
 .global $$252146
 $$252146:
-	.incbin "baserom.dol", 0x49AB6C, 0x4
+	.4byte 0x40C00000
 .global $$252147
 $$252147:
-	.incbin "baserom.dol", 0x49AB70, 0x8
+	.4byte 0x42480000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254595
 $$254595:
-	.incbin "baserom.dol", 0x49D130, 0x4
+	.4byte 0
 .global $$254619
 $$254619:
-	.incbin "baserom.dol", 0x49D134, 0x4
+	.4byte 0x3F800000
 .global $$254691
 $$254691:
-	.incbin "baserom.dol", 0x49D138, 0x8
+	.4byte 0x3F000000
+	.4byte 0

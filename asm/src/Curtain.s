@@ -219,24 +219,30 @@ isOpening__Q43scn9grandmenu4menu7CurtainCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251703
 $$251703:
-	.incbin "baserom.dol", 0x4918A0, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251704
 $$251704:
-	.incbin "baserom.dol", 0x4988A0, 0x8
+	.asciz "Curtain"
 .global $$251718
 $$251718:
-	.incbin "baserom.dol", 0x4988A8, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$251723
 $$251723:
-	.incbin "baserom.dol", 0x4988B0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$251728
 $$251728:
-	.incbin "baserom.dol", 0x4988B8, 0x4
+	.4byte 0x456E6400
 .global $$251733
 $$251733:
-	.incbin "baserom.dol", 0x4988BC, 0x8
+	.asciz "Start2"
+	.balign 4
 .global $$251738
 $$251738:
-	.incbin "baserom.dol", 0x4988C4, 0xC
+	.asciz "End2"
+	.balign 4
+	.4byte 0

@@ -312,10 +312,25 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateSkyKickHit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateSkyKickHit$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A638, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039EA6C
+	.4byte 0x8039EA30
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter12StateSkyKick$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A648, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039EA68
+	.4byte 0x8039EA4C
 .global __vt__Q53scn4step4hero7fighter12StateSkyKick
 __vt__Q53scn4step4hero7fighter12StateSkyKick:
-	.incbin "baserom.dol", 0x48A658, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039E820
+	.4byte 0x8039E824
+	.4byte 0x8039E8E8
+	.4byte 0x8035550C
+	.4byte 0x8039E944
+	.4byte 0x8039E990
+	.4byte 0x80355518
+	.4byte 0

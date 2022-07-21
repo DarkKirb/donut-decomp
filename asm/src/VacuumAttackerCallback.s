@@ -196,14 +196,35 @@ onReceivedCure__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8At
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global SOUND_TABLE__36$$2unnamed$$2VacuumAttackerCallback_cpp$$2
 SOUND_TABLE__36$$2unnamed$$2VacuumAttackerCallback_cpp$$2:
-	.incbin "baserom.dol", 0x416428, 0x38
+	.4byte 0x0000011F
+	.4byte 0x0000011F
+	.4byte 0x00000120
+	.4byte 0x00000121
+	.4byte 0x00000122
+	.4byte 0x00000123
+	.4byte 0x00000124
+	.4byte 0x00000125
+	.4byte 0x00000126
+	.4byte 0x00000127
+	.4byte 0x00000128
+	.4byte 0x00000129
+	.4byte 0x0000012A
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero22VacuumAttackerCallback
 __vt__Q43scn4step4hero22VacuumAttackerCallback:
-	.incbin "baserom.dol", 0x481758, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80358918
+	.4byte 0x80358974
+	.4byte 0x80358A80
+	.4byte 0x80358AE0
+	.4byte 0x80358B2C
+	.4byte 0x80358B64
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256925
 $$256925:
-	.incbin "baserom.dol", 0x49DA40, 0x8
+	.4byte 0x41500000
+	.4byte 0

@@ -562,52 +562,634 @@ lbl_803D6590:
 /* 803D65A4 003D23E4  4E 80 04 20 */	bctr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4024B8, 0x4
+	.4byte 0x80288B18  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C920, 0x210
+	.4byte 0x803DC230
+	.4byte 0
+	.4byte 0x803DCAA8
+	.4byte 0
+	.4byte 0x803DD184
+	.4byte 0
+	.4byte 0x803DB1B8
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803DE400
+	.4byte 0x803DE534
+	.4byte 0x803E2278
+	.4byte 0
+	.4byte 0x803E77F4
+	.4byte 0
+	.4byte 0x803E7290
+	.4byte 0
+	.4byte 0x803DF078
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803E3F64
+	.4byte 0
+	.4byte 0x803E5350
+	.4byte 0
+	.4byte 0x803E5AF4
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803E2A0C
+	.4byte 0
+	.4byte 0x803E3668
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803E02B8
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803E8040
+	.4byte 0
+	.4byte 0x803E84A4
+	.4byte 0
+	.4byte 0x803E87F4
+	.4byte 0
+	.4byte 0x803E9494
+	.4byte 0
+	.4byte 0x803E98C8
+	.4byte 0
+	.4byte 0x803E0378
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803E0438
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803EA768
+	.4byte 0
+	.4byte 0x803EACAC
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803EBE30
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803EC79C
+	.4byte 0
+	.4byte 0x803ECF88
+	.4byte 0
+	.4byte 0x803EE568
+	.4byte 0
+	.4byte 0x803EE628
+	.4byte 0
+	.4byte 0x803EE6E8
+	.4byte 0
+	.4byte 0x803EE7A8
+	.4byte 0
+	.4byte 0x803EE868
+	.4byte 0
+	.4byte 0x803EE928
+	.4byte 0
+	.4byte 0x803EE9E8
+	.4byte 0
+	.4byte 0x803EEAA8
+	.4byte 0
+	.4byte 0x803EEB68
+	.4byte 0
+	.4byte 0x803EEC28
+	.4byte 0
+	.4byte 0x803EECE8
+	.4byte 0
+	.4byte 0x803EEDA8
+	.4byte 0
+	.4byte 0x803E88B4
+	.4byte 0
+	.4byte 0x803EF5EC
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
+	.4byte 0x803D6350
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.incbin "baserom.dol", 0x46E018, 0x700
+	.4byte 0x802E16E4  ;# ptr
+	.4byte 0x802E12DC  ;# ptr
+	.4byte 0
+	.4byte 0x8029F364  ;# ptr
+	.4byte 0x8029F2DC  ;# ptr
+	.4byte 0
+	.4byte 0x802ED6F4  ;# ptr
+	.4byte 0x802ED670  ;# ptr
+	.4byte 0
+	.4byte 0x802972CC  ;# ptr
+	.4byte 0x80296F2C  ;# ptr
+	.4byte 0
+	.4byte 0x802A2DA4  ;# ptr
+	.4byte 0x802A2704  ;# ptr
+	.4byte 0
+	.4byte 0x802BA66C  ;# ptr
+	.4byte 0x802BA260  ;# ptr
+	.4byte 0
+	.4byte 0x802BF8C0  ;# ptr
+	.4byte 0x802BF2C8  ;# ptr
+	.4byte 0
+	.4byte 0x802D3318  ;# ptr
+	.4byte 0x802D3198  ;# ptr
+	.4byte 0
+	.4byte 0x8029662C  ;# ptr
+	.4byte 0x8029638C  ;# ptr
+	.4byte 0
+	.4byte 0x802A7470  ;# ptr
+	.4byte 0x802A7238  ;# ptr
+	.4byte 0
+	.4byte 0x802B9058  ;# ptr
+	.4byte 0x802B8D28  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F0804  ;# ptr
+	.4byte 0x802F077C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E0740  ;# ptr
+	.4byte 0x802E01E0  ;# ptr
+	.4byte 0
+	.4byte 0x802C3564  ;# ptr
+	.4byte 0x802C34E4  ;# ptr
+	.4byte 0
+	.4byte 0x802EFB34  ;# ptr
+	.4byte 0x802EFA68  ;# ptr
+	.4byte 0
+	.4byte 0x8029D1D4  ;# ptr
+	.4byte 0x8029D098  ;# ptr
+	.4byte 0
+	.4byte 0x802E6E78  ;# ptr
+	.4byte 0x802E6CB8  ;# ptr
+	.4byte 0
+	.4byte 0x802C6204  ;# ptr
+	.4byte 0x802C5D1C  ;# ptr
+	.4byte 0
+	.4byte 0x802A0EE8  ;# ptr
+	.4byte 0x802A0E60  ;# ptr
+	.4byte 0
+	.4byte 0x802D9D58  ;# ptr
+	.4byte 0x802D9A00  ;# ptr
+	.4byte 0
+	.4byte 0x802C7E00  ;# ptr
+	.4byte 0x802C7A68  ;# ptr
+	.4byte 0
+	.4byte 0x802B22D8  ;# ptr
+	.4byte 0x802B2168  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F01BC  ;# ptr
+	.4byte 0x802F0134  ;# ptr
+	.4byte 0
+	.4byte 0x802D3A88  ;# ptr
+	.4byte 0x802D3928  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D1D28  ;# ptr
+	.4byte 0x802D167C  ;# ptr
+	.4byte 0
+	.4byte 0x802C732C  ;# ptr
+	.4byte 0x802C72B0  ;# ptr
+	.4byte 0
+	.4byte 0x802A5580  ;# ptr
+	.4byte 0x802A54F8  ;# ptr
+	.4byte 0
+	.4byte 0x80299398  ;# ptr
+	.4byte 0x80298E8C  ;# ptr
+	.4byte 0
+	.4byte 0x802B76B8  ;# ptr
+	.4byte 0x802B6AA8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E2AF4  ;# ptr
+	.4byte 0x802E2890  ;# ptr
+	.4byte 0
+	.4byte 0x802D662C  ;# ptr
+	.4byte 0x802D6170  ;# ptr
+	.4byte 0
+	.4byte 0x802C5000  ;# ptr
+	.4byte 0x802C4DB4  ;# ptr
+	.4byte 0
+	.4byte 0x802ED6F4  ;# ptr
+	.4byte 0x802CBA74  ;# ptr
+	.4byte 0
+	.4byte 0x802BCDC8  ;# ptr
+	.4byte 0x802BCBEC  ;# ptr
+	.4byte 0
+	.4byte 0x802EFB34  ;# ptr
+	.4byte 0x802CDBA0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B49C8  ;# ptr
+	.4byte 0x802B449C  ;# ptr
+	.4byte 0
+	.4byte 0x802BB7A0  ;# ptr
+	.4byte 0x802BB270  ;# ptr
+	.4byte 0
+	.4byte 0x8029E788  ;# ptr
+	.4byte 0x8029E30C  ;# ptr
+	.4byte 0
+	.4byte 0x802C9F18  ;# ptr
+	.4byte 0x802C9D68  ;# ptr
+	.4byte 0
+	.4byte 0x802AD344  ;# ptr
+	.4byte 0x802AD218  ;# ptr
+	.4byte 0
+	.4byte 0x802DD8F8  ;# ptr
+	.4byte 0x802DCE78  ;# ptr
+	.4byte 0
+	.4byte 0x802C2188  ;# ptr
+	.4byte 0x802C1EE4  ;# ptr
+	.4byte 0
+	.4byte 0x802A62E4  ;# ptr
+	.4byte 0x802A61E4  ;# ptr
+	.4byte 0
+	.4byte 0x802EAFFC  ;# ptr
+	.4byte 0x802EA6F8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B61AC  ;# ptr
+	.4byte 0x802B5840  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B7768  ;# ptr
+	.4byte 0x802B6AA8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CFB3C  ;# ptr
+	.4byte 0x802CF890  ;# ptr
+	.4byte 0
+	.4byte 0x802DBDF0  ;# ptr
+	.4byte 0x802DBB80  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AFC40  ;# ptr
+	.4byte 0x802AFA00  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E53D0  ;# ptr
+	.4byte 0x802E4C3C  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E3840  ;# ptr
+	.4byte 0x802E36A4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ED7AC  ;# ptr
+	.4byte 0x802ED670  ;# ptr
+	.4byte 0
+	.4byte 0x802B7818  ;# ptr
+	.4byte 0x802B6AA8  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802ED6F4  ;# ptr
+	.4byte 0x802E9CD4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029F414  ;# ptr
+	.4byte 0x8029F2DC  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D9188  ;# ptr
+	.4byte 0x802D87F8  ;# ptr
+	.4byte 0
+	.4byte 0x802ED7AC  ;# ptr
+	.4byte 0x802CBA74  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029E838  ;# ptr
+	.4byte 0x8029E30C  ;# ptr
+	.4byte 0
+	.4byte 0x802E8C44  ;# ptr
+	.4byte 0x802E87B4  ;# ptr
+	.4byte 0
+	.4byte 0x802E8C44  ;# ptr
+	.4byte 0x802E87B4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D66DC  ;# ptr
+	.4byte 0x802D6170  ;# ptr
+	.4byte 0
+	.4byte 0x802ED864  ;# ptr
+	.4byte 0x802ED674  ;# ptr
+	.4byte 0
+	.4byte 0x802E7E84  ;# ptr
+	.4byte 0x802E79A8  ;# ptr
+	.4byte 0
+	.4byte 0x802A3D14  ;# ptr
+	.4byte 0x802A3918  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F10A8  ;# ptr
+	.4byte 0x802F0C94  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB104  ;# ptr
+	.4byte 0x802CAAF8  ;# ptr
+	.4byte 0
+	.4byte 0x802AE194  ;# ptr
+	.4byte 0x802ADFB8  ;# ptr
+	.4byte 0x802AE2A0  ;# ptr
+	.4byte 0x802D2C0C  ;# ptr
+	.4byte 0x802D2830  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F2570  ;# ptr
+	.4byte 0x802F22D4  ;# ptr
+	.4byte 0
+	.4byte 0x8029C0E0  ;# ptr
+	.4byte 0x8029BB80  ;# ptr
+	.4byte 0
+	.4byte 0x802AEE80  ;# ptr
+	.4byte 0x802AEC08  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C4698  ;# ptr
+	.4byte 0x802C4154  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A2DA4  ;# ptr
+	.4byte 0x802A27B0  ;# ptr
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252523
 $$252523:
-	.incbin "baserom.dol", 0x480DD0, 0x1C
+	.asciz "step/hero/nodeattach/Meta"
+	.balign 4
 .global $$252524
 $$252524:
-	.incbin "baserom.dol", 0x480DEC, 0x1C
+	.asciz "step/hero/nodeattach/Dedede"
 .global $$252525
 $$252525:
-	.incbin "baserom.dol", 0x480E08, 0x20
+	.asciz "step/hero/nodeattach/Dee"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.incbin "baserom.dol", 0x49B9E0, 0x4
+	.4byte 0x802ED6F4  ;# ptr
 .global T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
-	.incbin "baserom.dol", 0x49B9E4, 0x4
+	.4byte 0x8029174C  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252509
 $$252509:
-	.incbin "baserom.dol", 0x49D750, 0x4
+	.4byte 0x3F000000
 .global $$252510
 $$252510:
-	.incbin "baserom.dol", 0x49D754, 0x4
+	.4byte 0x3F400000
 .global $$252516
 $$252516:
-	.incbin "baserom.dol", 0x49D758, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250317
 $$250317:
-	.incbin "baserom.dol", 0x49E528, 0x4
+	.4byte 0x3F000000
 .global $$250325
 $$250325:
-	.incbin "baserom.dol", 0x49E52C, 0x4
+	.4byte 0

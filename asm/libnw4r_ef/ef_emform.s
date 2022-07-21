@@ -72,12 +72,15 @@ __sinit_$$3ef_emform_cpp:
 /* 800B4BAC 000B09EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402374, 0x4
+	.4byte 0x800B4B50  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef15EmitFormBuilder
 __vt__Q34nw4r2ef15EmitFormBuilder:
-	.incbin "baserom.dol", 0x43C468, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800B4AD0  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gEmitterFormDisc__Q24nw4r2ef

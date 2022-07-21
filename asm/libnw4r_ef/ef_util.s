@@ -1102,48 +1102,57 @@ MTXColLen__Q24nw4r2efFPCQ34nw4r4math5MTX34i:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global sPS_Three_Half__Q24nw4r2ef
 sPS_Three_Half__Q24nw4r2ef:
-	.incbin "baserom.dol", 0x492D40, 0x20
+	.4byte 0x40400000
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26727
 $$26727:
-	.incbin "baserom.dol", 0x499600, 0x8
+	.4byte 0x47800000
+	.4byte 0x47800000
 .global $$26728
 $$26728:
-	.incbin "baserom.dol", 0x499608, 0x4
+	.4byte 0x4222F983
 .global $$26743
 $$26743:
-	.incbin "baserom.dol", 0x49960C, 0x4
+	.4byte 0x3F800000
 .global $$26744
 $$26744:
-	.incbin "baserom.dol", 0x499610, 0x4
+	.4byte 0x34000000
 .global $$26745
 $$26745:
-	.incbin "baserom.dol", 0x499614, 0x4
+	.4byte 0
 .global $$26793
 $$26793:
-	.incbin "baserom.dol", 0x499618, 0x4
+	.4byte 0x00800000
 .global $$26794
 $$26794:
-	.incbin "baserom.dol", 0x49961C, 0x4
+	.4byte 0xBF800000
 .global $$26866
 $$26866:
-	.incbin "baserom.dol", 0x499620, 0x8
+	.4byte 0xBFF00000
+	.4byte 0
 .global $$26871
 $$26871:
-	.incbin "baserom.dol", 0x499628, 0x4
+	.4byte 0x3F000000
 .global $$26872
 $$26872:
-	.incbin "baserom.dol", 0x49962C, 0x4
+	.4byte 0x40400000
 .global $$26879
 $$26879:
-	.incbin "baserom.dol", 0x499630, 0x4
+	.4byte 0x47800000
 .global $$26916
 $$26916:
-	.incbin "baserom.dol", 0x499634, 0x4
+	.4byte 0x3727C5AC
 .global $$26934
 $$26934:
-	.incbin "baserom.dol", 0x499638, 0x4
+	.4byte 0x47C35000
 .global EMITTER_ZERO_SCALE__Q24nw4r2ef
 EMITTER_ZERO_SCALE__Q24nw4r2ef:
-	.incbin "baserom.dol", 0x49963C, 0x4
+	.4byte 0x3727C5AC

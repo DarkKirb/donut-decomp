@@ -639,42 +639,45 @@ lbl_803CF8B8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251067
 $$251067:
-	.incbin "baserom.dol", 0x48EDB0, 0x18
+	.asciz "step/sfx/SpiralScreen"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251068
 $$251068:
-	.incbin "baserom.dol", 0x49E7A8, 0x4
+	.4byte 0x3D23D70A
 .global $$251069
 $$251069:
-	.incbin "baserom.dol", 0x49E7AC, 0x4
+	.4byte 0x3B83126F
 .global $$251070
 $$251070:
-	.incbin "baserom.dol", 0x49E7B0, 0x4
+	.4byte 0x3F000000
 .global $$251099
 $$251099:
-	.incbin "baserom.dol", 0x49E7B4, 0x4
+	.4byte 0
 .global $$251134
 $$251134:
-	.incbin "baserom.dol", 0x49E7B8, 0x4
+	.4byte 0x3727C5AC
 .global $$251135
 $$251135:
-	.incbin "baserom.dol", 0x49E7BC, 0x4
+	.4byte 0xB727C5AC
 .global $$251136
 $$251136:
-	.incbin "baserom.dol", 0x49E7C0, 0x4
+	.4byte 0x3C8EFA35
 .global $$251137
 $$251137:
-	.incbin "baserom.dol", 0x49E7C4, 0x4
+	.4byte 0x41100000
 .global $$251140
 $$251140:
-	.incbin "baserom.dol", 0x49E7C8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$251170
 $$251170:
-	.incbin "baserom.dol", 0x49E7D0, 0x4
+	.4byte 0x40000000
 .global $$251171
 $$251171:
-	.incbin "baserom.dol", 0x49E7D4, 0x4
+	.4byte 0x3F800000
 .global $$251172
 $$251172:
-	.incbin "baserom.dol", 0x49E7D8, 0x8
+	.4byte 0xBF000000
+	.4byte 0

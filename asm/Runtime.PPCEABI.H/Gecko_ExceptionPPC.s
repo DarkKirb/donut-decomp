@@ -1656,72 +1656,152 @@ what__Q23std13bad_exceptionCFv:
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2283
 $$2283:
-	.incbin "baserom.dol", 0x4020E8, 0x8
+	.4byte 0x10080000
+	.4byte 0
 .global $$2367
 $$2367:
-	.incbin "baserom.dol", 0x4020F0, 0x8
+	.4byte 0x10080000
+	.4byte 0
 .global $$2557
 $$2557:
-	.incbin "baserom.dol", 0x4020F8, 0x8
+	.4byte 0x280A0000
+	.4byte 0
 .global $$2861
 $$2861:
-	.incbin "baserom.dol", 0x402100, 0x14
+	.4byte 0x50080000
+	.4byte 0x00000054
+	.4byte 0x01250010
+	.4byte 0
+	.4byte 0x8E000000
 .global $$2952
 $$2952:
-	.incbin "baserom.dol", 0x402114, 0x2C
+	.4byte 0x28180000
+	.4byte 0x00000020
+	.4byte 0x00000018
+	.4byte 0x00000044
+	.4byte 0x004F0028
+	.4byte 0
+	.4byte 0x90000000
+	.4byte 0
+	.4byte 0x00000024
+	.4byte 0x00000020
+	.4byte 0x8D000020
 .global $$21130
 $$21130:
-	.incbin "baserom.dol", 0x402140, 0x14
+	.4byte 0x28080000
+	.4byte 0x00000274
+	.4byte 0x000F0010
+	.4byte 0
+	.4byte 0x8E000000
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2284
 $$2284:
-	.incbin "baserom.dol", 0x40227C, 0xC
+	.4byte 0x80007B78  ;# ptr
+	.4byte 0x000001B0
+	.4byte 0x80006788  ;# ptr
 .global $$2368
 $$2368:
-	.incbin "baserom.dol", 0x402288, 0xC
+	.4byte 0x80007D28  ;# ptr
+	.4byte 0x000001B0
+	.4byte 0x80006790  ;# ptr
 .global $$2558
 $$2558:
-	.incbin "baserom.dol", 0x402294, 0xC
+	.4byte 0x80007ED8  ;# ptr
+	.4byte 0x00000554
+	.4byte 0x80006798  ;# ptr
 .global $$2862
 $$2862:
-	.incbin "baserom.dol", 0x4022A0, 0xC
+	.4byte 0x8000842C  ;# ptr
+	.4byte 0x0000050C
+	.4byte 0x800067A0  ;# ptr
 .global $$2953
 $$2953:
-	.incbin "baserom.dol", 0x4022AC, 0xC
+	.4byte 0x80008938  ;# ptr
+	.4byte 0x000001B8
+	.4byte 0x800067B4  ;# ptr
 .global $$21131
 $$21131:
-	.incbin "baserom.dol", 0x4022B8, 0xC
+	.4byte 0x80008BF8  ;# ptr
+	.4byte 0x00000408
+	.4byte 0x800067E0  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21152
 $$21152:
-	.incbin "baserom.dol", 0x402698, 0x14
+	.asciz "std::bad_exception"
+	.balign 4
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x4026AC, 0x54
+	.asciz "!bad_exception!!"
+	.byte 0x21, 0x73, 0x74
+	.asciz "d::exception!!std::bad_exception!!"
+	.byte 0x21
+	.asciz "std::bad_exception!!"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2366
 $$2366:
-	.incbin "baserom.dol", 0x41D140, 0x44
+	.4byte 0x80007E90  ;# ptr
+	.4byte 0x80007E90  ;# ptr
+	.4byte 0x80007DE8  ;# ptr
+	.4byte 0x80007DF4  ;# ptr
+	.4byte 0x80007E00  ;# ptr
+	.4byte 0x80007E0C  ;# ptr
+	.4byte 0x80007E18  ;# ptr
+	.4byte 0x80007E18  ;# ptr
+	.4byte 0x80007E24  ;# ptr
+	.4byte 0x80007E30  ;# ptr
+	.4byte 0x80007E3C  ;# ptr
+	.4byte 0x80007E48  ;# ptr
+	.4byte 0x80007E54  ;# ptr
+	.4byte 0x80007E6C  ;# ptr
+	.4byte 0x80007E90  ;# ptr
+	.4byte 0x80007E78  ;# ptr
+	.4byte 0x80007E60  ;# ptr
 .global $$2860
 $$2860:
-	.incbin "baserom.dol", 0x41D184, 0x44
+	.4byte 0x80008910  ;# ptr
+	.4byte 0x800084C8  ;# ptr
+	.4byte 0x800084DC  ;# ptr
+	.4byte 0x80008508  ;# ptr
+	.4byte 0x8000856C  ;# ptr
+	.4byte 0x800085B8  ;# ptr
+	.4byte 0x8000860C  ;# ptr
+	.4byte 0x80008660  ;# ptr
+	.4byte 0x800086B4  ;# ptr
+	.4byte 0x8000873C  ;# ptr
+	.4byte 0x800087B8  ;# ptr
+	.4byte 0x80008800  ;# ptr
+	.4byte 0x8000887C  ;# ptr
+	.4byte 0x800088A4  ;# ptr
+	.4byte 0x80008910  ;# ptr
+	.4byte 0x800088F0  ;# ptr
+	.4byte 0x80008890  ;# ptr
 .global __vt__Q23std13bad_exception
 __vt__Q23std13bad_exception:
-	.incbin "baserom.dol", 0x41D1C8, 0x10
+	.4byte 0x80556438
+	.4byte 0
+	.4byte 0x80008AF0  ;# ptr
+	.4byte 0x80009170  ;# ptr
 .global $$21153
 $$21153:
-	.incbin "baserom.dol", 0x41D1D8, 0xC
+	.4byte 0x80556420
+	.4byte 0
+	.4byte 0
 .global $$2STRING$$2what__Q23std13bad_exceptionCFv
 $$2STRING$$2what__Q23std13bad_exceptionCFv:
-	.incbin "baserom.dol", 0x41D1E4, 0x14
+	.asciz "bad_exception"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std13bad_exception
 __RTTI__Q23std13bad_exception:
-	.incbin "baserom.dol", 0x492818, 0x8
+	.4byte 0x80406598
+	.4byte 0x804210D8
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global fragmentinfo

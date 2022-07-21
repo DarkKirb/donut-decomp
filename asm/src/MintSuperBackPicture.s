@@ -150,7 +150,7 @@ __sinit_$$3MintSuperBackPicture_cpp:
 /* 803CDCD8 003C9B18  4B D0 F7 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025DC, 0x4
+	.4byte 0x803CDCD4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step3sfx34$$2unnamed$$2MintSuperBackPicture_cpp$$2

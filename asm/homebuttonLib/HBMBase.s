@@ -9692,702 +9692,1203 @@ lbl_80134CE0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29436
 $$29436:
-	.incbin "baserom.dol", 0x409F40, 0x8
+	.4byte 0x000000FF
+	.4byte 0
 .global scAnmTable__10homebutton
 scAnmTable__10homebutton:
-	.incbin "baserom.dol", 0x409F48, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000005
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000006
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000007
+	.4byte 0x00000001
 .global scGroupAnmTable__10homebutton
 scGroupAnmTable__10homebutton:
-	.incbin "baserom.dol", 0x409FA8, 0x250
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0x00000003
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000013
+	.4byte 0x00000005
+	.4byte 0x00000003
+	.4byte 0x00000005
+	.4byte 0x00000014
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000004
+	.4byte 0x00000007
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x00000004
+	.4byte 0x00000009
+	.4byte 0x00000007
+	.4byte 0x0000000A
+	.4byte 0x00000004
+	.4byte 0x0000000A
+	.4byte 0x00000007
+	.4byte 0x0000000B
+	.4byte 0x00000005
+	.4byte 0x0000000C
+	.4byte 0x00000005
+	.4byte 0x0000000D
+	.4byte 0x00000006
+	.4byte 0x0000000D
+	.4byte 0x00000008
+	.4byte 0x0000000E
+	.4byte 0x0000000E
+	.4byte 0x0000000E
+	.4byte 0x00000006
+	.4byte 0x0000000E
+	.4byte 0x00000008
+	.4byte 0x0000000F
+	.4byte 0x00000005
+	.4byte 0x00000010
+	.4byte 0x00000006
+	.4byte 0x00000010
+	.4byte 0x0000000E
+	.4byte 0x00000011
+	.4byte 0x0000000B
+	.4byte 0x00000011
+	.4byte 0x0000000C
+	.4byte 0x00000012
+	.4byte 0x0000000B
+	.4byte 0x00000012
+	.4byte 0x0000000C
+	.4byte 0x00000013
+	.4byte 0x0000000D
+	.4byte 0x00000014
+	.4byte 0x0000000D
+	.4byte 0x00000015
+	.4byte 0x00000009
+	.4byte 0x00000015
+	.4byte 0x0000000A
+	.4byte 0x00000016
+	.4byte 0x00000009
+	.4byte 0x00000016
+	.4byte 0x0000000A
+	.4byte 0x00000017
+	.4byte 0x00000009
+	.4byte 0x00000017
+	.4byte 0x0000000A
+	.4byte 0x00000018
+	.4byte 0x00000009
+	.4byte 0x00000018
+	.4byte 0x0000000A
+	.4byte 0x00000019
+	.4byte 0x00000009
+	.4byte 0x00000019
+	.4byte 0x0000000A
+	.4byte 0x0000001A
+	.4byte 0x00000009
+	.4byte 0x0000001A
+	.4byte 0x0000000A
+	.4byte 0x0000001B
+	.4byte 0x00000009
+	.4byte 0x0000001B
+	.4byte 0x0000000A
+	.4byte 0x0000001C
+	.4byte 0x00000009
+	.4byte 0x0000001C
+	.4byte 0x0000000A
+	.4byte 0x0000001D
+	.4byte 0x00000009
+	.4byte 0x0000001D
+	.4byte 0x0000000A
+	.4byte 0x0000001E
+	.4byte 0x00000009
+	.4byte 0x0000001E
+	.4byte 0x0000000A
+	.4byte 0x0000001F
+	.4byte 0x0000000F
+	.4byte 0x0000001F
+	.4byte 0x00000010
+	.4byte 0x0000001F
+	.4byte 0x00000011
+	.4byte 0x0000001F
+	.4byte 0x00000012
+	.4byte 0x0000001F
+	.4byte 0x00000015
+	.4byte 0x00000020
+	.4byte 0x0000000F
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0x00000020
+	.4byte 0x00000011
+	.4byte 0x00000020
+	.4byte 0x00000012
+	.4byte 0x00000020
+	.4byte 0x00000015
+	.4byte 0x00000021
+	.4byte 0x0000000F
+	.4byte 0x00000021
+	.4byte 0x00000010
+	.4byte 0x00000021
+	.4byte 0x00000011
+	.4byte 0x00000021
+	.4byte 0x00000012
+	.4byte 0x00000021
+	.4byte 0x00000015
+	.4byte 0x00000022
+	.4byte 0x0000000F
+	.4byte 0x00000022
+	.4byte 0x00000010
+	.4byte 0x00000022
+	.4byte 0x00000011
+	.4byte 0x00000022
+	.4byte 0x00000012
+	.4byte 0x00000022
+	.4byte 0x00000015
 .global scReConnectTime__Q210homebutton10HomeButton
 scReConnectTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A1F8, 0x4
+	.4byte 0x00000E10
 .global scReConnectTime2__Q210homebutton10HomeButton
 scReConnectTime2__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A1FC, 0x4
+	.4byte 0x00000DF2
 .global scPadDrawWaitTime__Q210homebutton10HomeButton
 scPadDrawWaitTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A200, 0x4
+	.4byte 0x00000005
 .global scGetPadInfoTime__Q210homebutton10HomeButton
 scGetPadInfoTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A204, 0x4
+	.4byte 0x00000064
 .global scForcusSEWaitTime__Q210homebutton10HomeButton
 scForcusSEWaitTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A208, 0x4
+	.4byte 0x00000002
 .global scOnPaneVibTime__Q210homebutton10HomeButton
 scOnPaneVibTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A20C, 0x4
+	.4byte 0x40400000
 .global scOnPaneVibWaitTime__Q210homebutton10HomeButton
 scOnPaneVibWaitTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A210, 0x4
+	.4byte 0x41100000
 .global scWaitStopMotorTime__Q210homebutton10HomeButton
 scWaitStopMotorTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A214, 0x4
+	.4byte 0x0000001E
 .global scWaitDisConnectTime__Q210homebutton10HomeButton
 scWaitDisConnectTime__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A218, 0x4
+	.4byte 0x000000B4
 .global $$216080
 $$216080:
-	.incbin "baserom.dol", 0x40A21C, 0x4
+	.4byte 0x3FC00000
 .global $$216081
 $$216081:
-	.incbin "baserom.dol", 0x40A220, 0x4
+	.4byte 0x3F800000
 .global $$216084
 $$216084:
-	.incbin "baserom.dol", 0x40A224, 0x4
+	.4byte 0
 .global $$216087
 $$216087:
-	.incbin "baserom.dol", 0x40A228, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$216249
 $$216249:
-	.incbin "baserom.dol", 0x40A230, 0x4
+	.4byte 0x45610000
 .global $$216250
 $$216250:
-	.incbin "baserom.dol", 0x40A234, 0x4
+	.4byte 0x455F2000
 .global $$216251
 $$216251:
-	.incbin "baserom.dol", 0x40A238, 0x4
+	.4byte 0xC47A0000
 .global $$216252
 $$216252:
-	.incbin "baserom.dol", 0x40A23C, 0x4
+	.4byte 0xC61C4000
 .global $$216256
 $$216256:
-	.incbin "baserom.dol", 0x40A240, 0x4
+	.4byte 0x41F00000
 .global $$216331
 $$216331:
-	.incbin "baserom.dol", 0x40A244, 0x4
+	.4byte 0x3F666666
 .global $$216332
 $$216332:
-	.incbin "baserom.dol", 0x40A248, 0x4
+	.4byte 0x3DA14285
 .global $$216333
 $$216333:
-	.incbin "baserom.dol", 0x40A24C, 0x4
+	.4byte 0x41200000
 .global $$216337
 $$216337:
-	.incbin "baserom.dol", 0x40A250, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$216383
 $$216383:
-	.incbin "baserom.dol", 0x40A258, 0x4
+	.4byte 0x40200000
 .global $$216384
 $$216384:
-	.incbin "baserom.dol", 0x40A25C, 0x4
+	.4byte 0x3F000000
 .global $$216995
 $$216995:
-	.incbin "baserom.dol", 0x40A260, 0x4
+	.4byte 0x41100000
 .global $$216996
 $$216996:
-	.incbin "baserom.dol", 0x40A264, 0x4
+	.4byte 0x43340000
 .global $$216997
 $$216997:
-	.incbin "baserom.dol", 0x40A268, 0x4
+	.4byte 0x47000000
 .global $$216998
 $$216998:
-	.incbin "baserom.dol", 0x40A26C, 0x4
+	.4byte 0x414B3333
 .global $$217102
 $$217102:
-	.incbin "baserom.dol", 0x40A270, 0x4
+	.4byte 0x000000FF
 .global $$217105
 $$217105:
-	.incbin "baserom.dol", 0x40A274, 0x4
+	.4byte 0x000000FF
 .global $$217108
 $$217108:
-	.incbin "baserom.dol", 0x40A278, 0x4
+	.4byte 0x000000FF
 .global $$217135
 $$217135:
-	.incbin "baserom.dol", 0x40A27C, 0x4
+	.4byte 0xC3FA0000
 .global $$217136
 $$217136:
-	.incbin "baserom.dol", 0x40A280, 0x4
+	.4byte 0x43640000
 .global $$217137
 $$217137:
-	.incbin "baserom.dol", 0x40A284, 0x4
+	.4byte 0x43FA0000
 .global $$217138
 $$217138:
-	.incbin "baserom.dol", 0x40A288, 0x4
+	.4byte 0xC3640000
 .global $$217139
 $$217139:
-	.incbin "baserom.dol", 0x40A28C, 0x4
+	.4byte 0x447A0000
 .global $$217381
 $$217381:
-	.incbin "baserom.dol", 0x40A290, 0x4
+	.4byte 0x40A00000
 .global $$217382
 $$217382:
-	.incbin "baserom.dol", 0x40A294, 0x4
+	.4byte 0x41700000
 .global $$217383
 $$217383:
-	.incbin "baserom.dol", 0x40A298, 0x4
+	.4byte 0x3FB40000
 .global $$217566
 $$217566:
-	.incbin "baserom.dol", 0x40A29C, 0x4
+	.4byte 0x44180000
 .global $$217567
 $$217567:
-	.incbin "baserom.dol", 0x40A2A0, 0x4
+	.4byte 0x43E40000
 .global $$217568
 $$217568:
-	.incbin "baserom.dol", 0x40A2A4, 0x4
+	.4byte 0xC3340000
 .global $$217948
 $$217948:
-	.incbin "baserom.dol", 0x40A2A8, 0x4
+	.4byte 0x40400000
 .global scSoundHeapSize_but2__Q210homebutton10HomeButton
 scSoundHeapSize_but2__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A2AC, 0x4
+	.4byte 0x00060000
 .global scSoundHeapSize_but3__Q210homebutton10HomeButton
 scSoundHeapSize_but3__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A2B0, 0x4
+	.4byte 0x0006F800
 .global scSoundThreadPrio__Q210homebutton10HomeButton
 scSoundThreadPrio__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A2B4, 0x4
+	.4byte 0x00000004
 .global scDvdThreadPrio__Q210homebutton10HomeButton
 scDvdThreadPrio__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x40A2B8, 0x8
+	.4byte 0x00000003
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29521
 $$29521:
-	.incbin "baserom.dol", 0x43F168, 0x10
+	.asciz "P1_Def.brlyt"
+	.balign 4
 .global $$29522
 $$29522:
-	.incbin "baserom.dol", 0x43F178, 0x10
+	.asciz "P2_Def.brlyt"
+	.balign 4
 .global $$29523
 $$29523:
-	.incbin "baserom.dol", 0x43F188, 0x10
+	.asciz "P3_Def.brlyt"
+	.balign 4
 .global $$29524
 $$29524:
-	.incbin "baserom.dol", 0x43F198, 0x10
+	.asciz "P4_Def.brlyt"
+	.balign 4
 .global scCursorLytName__Q210homebutton10HomeButton
 scCursorLytName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F1A8, 0x10
+	.4byte 0x80443068
+	.4byte 0x80443078
+	.4byte 0x80443088
+	.4byte 0x80443098
 .global $$29525
 $$29525:
-	.incbin "baserom.dol", 0x43F1B8, 0x8
+	.asciz "N_Trans"
 .global scCursorPaneName__Q210homebutton10HomeButton
 scCursorPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F1C0, 0x4
+	.4byte 0x804430B8
 .global $$29526
 $$29526:
-	.incbin "baserom.dol", 0x43F1C4, 0x8
+	.asciz "N_Rot"
+	.balign 4
 .global scCursorRotPaneName__Q210homebutton10HomeButton
 scCursorRotPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F1CC, 0x4
+	.4byte 0x804430C4
 .global $$29527
 $$29527:
-	.incbin "baserom.dol", 0x43F1D0, 0x8
+	.asciz "N_SRot"
+	.balign 4
 .global scCursorSRotPaneName__Q210homebutton10HomeButton
 scCursorSRotPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F1D8, 0x4
+	.4byte 0x804430D0
 .global $$29528
 $$29528:
-	.incbin "baserom.dol", 0x43F1DC, 0xC
+	.asciz "B_btnL_00"
+	.balign 4
 .global $$29529
 $$29529:
-	.incbin "baserom.dol", 0x43F1E8, 0xC
+	.asciz "B_btnL_01"
+	.balign 4
 .global $$29530
 $$29530:
-	.incbin "baserom.dol", 0x43F1F4, 0xC
+	.asciz "B_btnL_10"
+	.balign 4
 .global scBtnName__Q210homebutton10HomeButton
 scBtnName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F200, 0x10
+	.4byte 0x804430DC
+	.4byte 0x804430E8
+	.4byte 0x804430F4
+	.4byte 0
 .global $$29531
 $$29531:
-	.incbin "baserom.dol", 0x43F210, 0xC
+	.asciz "T_btnL_00"
+	.balign 4
 .global $$29532
 $$29532:
-	.incbin "baserom.dol", 0x43F21C, 0xC
+	.asciz "T_btnL_01"
+	.balign 4
 .global $$29533
 $$29533:
-	.incbin "baserom.dol", 0x43F228, 0x10
+	.asciz "T_btnL_10"
+	.balign 4
+	.4byte 0
 .global scTxtName__Q210homebutton10HomeButton
 scTxtName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F238, 0x10
+	.4byte 0x80443110
+	.4byte 0x8044311C
+	.4byte 0x80443128
+	.4byte 0
 .global $$29534
 $$29534:
-	.incbin "baserom.dol", 0x43F248, 0x10
+	.asciz "btnL_00_inOut"
+	.balign 4
 .global $$29535
 $$29535:
-	.incbin "baserom.dol", 0x43F258, 0x10
+	.asciz "btnL_01_inOut"
+	.balign 4
 .global $$29536
 $$29536:
-	.incbin "baserom.dol", 0x43F268, 0x10
+	.asciz "btnL_10_inOut"
+	.balign 4
 .global $$29537
 $$29537:
-	.incbin "baserom.dol", 0x43F278, 0x10
+	.asciz "btnL_11_inOut"
+	.balign 4
 .global $$29538
 $$29538:
-	.incbin "baserom.dol", 0x43F288, 0xC
+	.asciz "btnL_00_psh"
 .global $$29539
 $$29539:
-	.incbin "baserom.dol", 0x43F294, 0xC
+	.asciz "btnL_01_psh"
 .global $$29540
 $$29540:
-	.incbin "baserom.dol", 0x43F2A0, 0xC
+	.asciz "btnL_10_psh"
 .global $$29541
 $$29541:
-	.incbin "baserom.dol", 0x43F2AC, 0xC
+	.asciz "btnL_11_psh"
 .global scGrName__Q210homebutton10HomeButton
 scGrName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F2B8, 0x20
+	.4byte 0x80443148
+	.4byte 0x80443158
+	.4byte 0x80443168
+	.4byte 0x80443178
+	.4byte 0x80443188
+	.4byte 0x80443194
+	.4byte 0x804431A0
+	.4byte 0x804431AC
 .global $$29542
 $$29542:
-	.incbin "baserom.dol", 0x43F2D8, 0x14
+	.asciz "_cntBtn_in.brlan"
+	.balign 4
 .global $$29543
 $$29543:
-	.incbin "baserom.dol", 0x43F2EC, 0x14
+	.asciz "_cntBtn_psh.brlan"
+	.balign 4
 .global $$29544
 $$29544:
-	.incbin "baserom.dol", 0x43F300, 0x14
+	.asciz "_cntBtn_out.brlan"
+	.balign 4
 .global scAnimName__Q210homebutton10HomeButton
 scAnimName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F314, 0xC
+	.4byte 0x804431D8
+	.4byte 0x804431EC
+	.4byte 0x80443200
 .global $$29545
 $$29545:
-	.incbin "baserom.dol", 0x43F320, 0x14
+	.asciz "_ltrIcn_on.brlan"
+	.balign 4
 .global $$29546
 $$29546:
-	.incbin "baserom.dol", 0x43F334, 0x14
+	.asciz "_optn_bar_psh.brlan"
 .global $$29547
 $$29547:
-	.incbin "baserom.dol", 0x43F348, 0x18
+	.asciz "_close_bar_psh.brlan"
+	.balign 4
 .global $$29548
 $$29548:
-	.incbin "baserom.dol", 0x43F360, 0x18
+	.asciz "_hmMenu_bar_in.brlan"
+	.balign 4
 .global $$29549
 $$29549:
-	.incbin "baserom.dol", 0x43F378, 0x18
+	.asciz "_hmMenu_bar_psh.brlan"
+	.balign 4
 .global $$29550
 $$29550:
-	.incbin "baserom.dol", 0x43F390, 0x14
+	.asciz "_link_msg_in.brlan"
+	.balign 4
 .global $$29551
 $$29551:
-	.incbin "baserom.dol", 0x43F3A4, 0x14
+	.asciz "_link_msg_out.brlan"
 .global $$29552
 $$29552:
-	.incbin "baserom.dol", 0x43F3B8, 0x14
+	.asciz "_cmn_msg_in.brlan"
+	.balign 4
 .global $$29553
 $$29553:
-	.incbin "baserom.dol", 0x43F3CC, 0x14
+	.asciz "_cmn_msg_out.brlan"
+	.balign 4
 .global $$29554
 $$29554:
-	.incbin "baserom.dol", 0x43F3E0, 0x10
+	.asciz "_cntrl_up.brlan"
 .global $$29555
 $$29555:
-	.incbin "baserom.dol", 0x43F3F0, 0x18
+	.asciz "_cntrl_wndw_opn.brlan"
+	.balign 4
 .global $$29556
 $$29556:
-	.incbin "baserom.dol", 0x43F408, 0x14
+	.asciz "_cntrl_dwn.brlan"
+	.balign 4
 .global $$29557
 $$29557:
-	.incbin "baserom.dol", 0x43F41C, 0x18
+	.asciz "_hmMenu_bar_out.brlan"
+	.balign 4
 .global $$29558
 $$29558:
-	.incbin "baserom.dol", 0x43F434, 0x14
+	.asciz "_cmn_msg_rtrn.brlan"
 .global $$29559
 $$29559:
-	.incbin "baserom.dol", 0x43F448, 0x10
+	.asciz "_12btn_on.brlan"
 .global scPairGroupAnimName__Q210homebutton10HomeButton
 scPairGroupAnimName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F458, 0x3C
+	.4byte 0x80443220
+	.4byte 0x80443234
+	.4byte 0x80443248
+	.4byte 0x80443260
+	.4byte 0x80443278
+	.4byte 0x80443290
+	.4byte 0x804432A4
+	.4byte 0x804432B8
+	.4byte 0x804432CC
+	.4byte 0x804432E0
+	.4byte 0x804432F0
+	.4byte 0x80443308
+	.4byte 0x8044331C
+	.4byte 0x80443334
+	.4byte 0x80443348
 .global $$29560
 $$29560:
-	.incbin "baserom.dol", 0x43F494, 0xC
+	.asciz "ltrIcn_on"
+	.balign 4
 .global $$29561
 $$29561:
-	.incbin "baserom.dol", 0x43F4A0, 0x10
+	.asciz "optn_bar_psh"
+	.balign 4
 .global $$29562
 $$29562:
-	.incbin "baserom.dol", 0x43F4B0, 0x10
+	.asciz "close_bar_psh"
+	.balign 4
 .global $$29563
 $$29563:
-	.incbin "baserom.dol", 0x43F4C0, 0x10
+	.asciz "hmMenu_bar_in"
+	.balign 4
 .global $$29564
 $$29564:
-	.incbin "baserom.dol", 0x43F4D0, 0x10
+	.asciz "hmMenu_bar_psh"
+	.balign 4
 .global $$29565
 $$29565:
-	.incbin "baserom.dol", 0x43F4E0, 0xC
+	.asciz "link_msg_in"
 .global $$29566
 $$29566:
-	.incbin "baserom.dol", 0x43F4EC, 0x10
+	.asciz "link_msg_out"
+	.balign 4
 .global $$29567
 $$29567:
-	.incbin "baserom.dol", 0x43F4FC, 0xC
+	.asciz "cmn_msg_in"
+	.balign 4
 .global $$29568
 $$29568:
-	.incbin "baserom.dol", 0x43F508, 0xC
+	.asciz "cmn_msg_out"
 .global $$29569
 $$29569:
-	.incbin "baserom.dol", 0x43F514, 0xC
+	.asciz "cntrl_up"
+	.balign 4
 .global $$29570
 $$29570:
-	.incbin "baserom.dol", 0x43F520, 0x10
+	.asciz "cntrl_wndw_opn"
+	.balign 4
 .global $$29571
 $$29571:
-	.incbin "baserom.dol", 0x43F530, 0xC
+	.asciz "cntrl_dwn"
+	.balign 4
 .global $$29572
 $$29572:
-	.incbin "baserom.dol", 0x43F53C, 0x10
+	.asciz "hmMenu_bar_out"
+	.balign 4
 .global $$29573
 $$29573:
-	.incbin "baserom.dol", 0x43F54C, 0x10
+	.asciz "cmn_msg_rtrn"
+	.balign 4
 .global $$29574
 $$29574:
-	.incbin "baserom.dol", 0x43F55C, 0xC
+	.asciz "12btn_on"
+	.balign 4
 .global scPairGroupName__Q210homebutton10HomeButton
 scPairGroupName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F568, 0x3C
+	.4byte 0x80443394
+	.4byte 0x804433A0
+	.4byte 0x804433B0
+	.4byte 0x804433C0
+	.4byte 0x804433D0
+	.4byte 0x804433E0
+	.4byte 0x804433EC
+	.4byte 0x804433FC
+	.4byte 0x80443408
+	.4byte 0x80443414
+	.4byte 0x80443420
+	.4byte 0x80443430
+	.4byte 0x8044343C
+	.4byte 0x8044344C
+	.4byte 0x8044345C
 .global $$29575
 $$29575:
-	.incbin "baserom.dol", 0x43F5A4, 0x14
+	.asciz "_hmMenu_strt.brlan"
+	.balign 4
 .global $$29576
 $$29576:
-	.incbin "baserom.dol", 0x43F5B8, 0x14
+	.asciz "_hmMenu_fnsh.brlan"
+	.balign 4
 .global $$29577
 $$29577:
-	.incbin "baserom.dol", 0x43F5CC, 0x14
+	.asciz "_optn_bar_in.brlan"
+	.balign 4
 .global $$29578
 $$29578:
-	.incbin "baserom.dol", 0x43F5E0, 0x14
+	.asciz "_optn_bar_out.brlan"
 .global $$29579
 $$29579:
-	.incbin "baserom.dol", 0x43F5F4, 0x14
+	.asciz "_optn_btn_in.brlan"
+	.balign 4
 .global $$29580
 $$29580:
-	.incbin "baserom.dol", 0x43F608, 0x14
+	.asciz "_optn_btn_psh.brlan"
 .global $$29581
 $$29581:
-	.incbin "baserom.dol", 0x43F61C, 0x18
+	.asciz "_vb_btn_wht_psh.brlan"
+	.balign 4
 .global $$29582
 $$29582:
-	.incbin "baserom.dol", 0x43F634, 0x14
+	.asciz "_optn_btn_out.brlan"
 .global $$29583
 $$29583:
-	.incbin "baserom.dol", 0x43F648, 0x18
+	.asciz "_vb_btn_ylw_psh.brlan"
+	.balign 4
 .global $$29584
 $$29584:
-	.incbin "baserom.dol", 0x43F660, 0x14
+	.asciz "_sound_gry.brlan"
+	.balign 4
 .global $$29585
 $$29585:
-	.incbin "baserom.dol", 0x43F674, 0x14
+	.asciz "_sound_ylw.brlan"
+	.balign 4
 .global $$29586
 $$29586:
-	.incbin "baserom.dol", 0x43F688, 0x18
+	.asciz "_cmn_msg_btn_in.brlan"
+	.balign 4
 .global $$29587
 $$29587:
-	.incbin "baserom.dol", 0x43F6A0, 0x18
+	.asciz "_cmn_msg_btn_out.brlan"
+	.balign 4
 .global $$29588
 $$29588:
-	.incbin "baserom.dol", 0x43F6B8, 0x18
+	.asciz "_cmn_msg_btn_psh.brlan"
+	.balign 4
 .global $$29589
 $$29589:
-	.incbin "baserom.dol", 0x43F6D0, 0x18
+	.asciz "_vb_btn_ylw_ylw.brlan"
+	.balign 4
 .global $$29590
 $$29590:
-	.incbin "baserom.dol", 0x43F6E8, 0x18
+	.asciz "_btry_wink.brlan"
+	.balign 4
+	.4byte 0
 .global $$29591
 $$29591:
-	.incbin "baserom.dol", 0x43F700, 0x10
+	.asciz "_btry_gry.brlan"
 .global $$29592
 $$29592:
-	.incbin "baserom.dol", 0x43F710, 0x10
+	.asciz "_btry_wht.brlan"
 .global $$29593
 $$29593:
-	.incbin "baserom.dol", 0x43F720, 0x18
+	.asciz "_btry_wink_gry.brlan"
+	.balign 4
 .global $$29594
 $$29594:
-	.incbin "baserom.dol", 0x43F738, 0x14
+	.asciz "_close_bar_in.brlan"
 .global $$29595
 $$29595:
-	.incbin "baserom.dol", 0x43F74C, 0x1C
+	.asciz "_close_bar_out.brlan"
+	.balign 4
+	.4byte 0
 .global $$29596
 $$29596:
-	.incbin "baserom.dol", 0x43F768, 0x10
+	.asciz "_btry_red.brlan"
 .global scGroupAnimName__Q210homebutton10HomeButton
 scGroupAnimName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F778, 0x58
+	.4byte 0x804434A4
+	.4byte 0x804434B8
+	.4byte 0x804434CC
+	.4byte 0x804434E0
+	.4byte 0x804434F4
+	.4byte 0x80443508
+	.4byte 0x8044351C
+	.4byte 0x80443534
+	.4byte 0x80443548
+	.4byte 0x80443560
+	.4byte 0x80443574
+	.4byte 0x80443588
+	.4byte 0x804435A0
+	.4byte 0x804435B8
+	.4byte 0x804435D0
+	.4byte 0x804435E8
+	.4byte 0x80443600
+	.4byte 0x80443610
+	.4byte 0x80443620
+	.4byte 0x80443638
+	.4byte 0x8044364C
+	.4byte 0x80443668
 .global $$29597
 $$29597:
-	.incbin "baserom.dol", 0x43F7D0, 0xC
+	.asciz "hmMenu_strt"
 .global $$29598
 $$29598:
-	.incbin "baserom.dol", 0x43F7DC, 0xC
+	.asciz "hmMenu_fnsh"
 .global $$29599
 $$29599:
-	.incbin "baserom.dol", 0x43F7E8, 0x10
+	.asciz "hmMenuBck_strt"
+	.balign 4
 .global $$29600
 $$29600:
-	.incbin "baserom.dol", 0x43F7F8, 0x10
+	.asciz "hmMenuBck_fnsh"
+	.balign 4
 .global $$29601
 $$29601:
-	.incbin "baserom.dol", 0x43F808, 0xC
+	.asciz "optn_bar_in"
 .global $$29602
 $$29602:
-	.incbin "baserom.dol", 0x43F814, 0x10
+	.asciz "optn_bar_out"
+	.balign 4
 .global $$29603
 $$29603:
-	.incbin "baserom.dol", 0x43F824, 0x14
+	.asciz "optnBtn_00_inOut"
+	.balign 4
 .global $$29604
 $$29604:
-	.incbin "baserom.dol", 0x43F838, 0x14
+	.asciz "optnBtn_01_inOut"
+	.balign 4
 .global $$29605
 $$29605:
-	.incbin "baserom.dol", 0x43F84C, 0x14
+	.asciz "optnBtn_10_inOut"
+	.balign 4
 .global $$29606
 $$29606:
-	.incbin "baserom.dol", 0x43F860, 0x14
+	.asciz "optnBtn_11_inOut"
+	.balign 4
 .global $$29607
 $$29607:
-	.incbin "baserom.dol", 0x43F874, 0x14
+	.asciz "optnBtn_20_inOut"
+	.balign 4
 .global $$29608
 $$29608:
-	.incbin "baserom.dol", 0x43F888, 0x10
+	.asciz "optnBtn_00_psh"
+	.balign 4
 .global $$29609
 $$29609:
-	.incbin "baserom.dol", 0x43F898, 0x10
+	.asciz "optnBtn_01_psh"
+	.balign 4
 .global $$29610
 $$29610:
-	.incbin "baserom.dol", 0x43F8A8, 0x10
+	.asciz "optnBtn_10_psh"
+	.balign 4
 .global $$29611
 $$29611:
-	.incbin "baserom.dol", 0x43F8B8, 0x10
+	.asciz "optnBtn_11_psh"
+	.balign 4
 .global $$29612
 $$29612:
-	.incbin "baserom.dol", 0x43F8C8, 0x10
+	.asciz "optnBtn_20_psh"
+	.balign 4
 .global $$29613
 $$29613:
-	.incbin "baserom.dol", 0x43F8D8, 0x18
+	.asciz "optnBtn_10_cntrl"
+	.balign 4
+	.4byte 0
 .global $$29614
 $$29614:
-	.incbin "baserom.dol", 0x43F8F0, 0x10
+	.asciz "msgBtn_00_inOut"
 .global $$29615
 $$29615:
-	.incbin "baserom.dol", 0x43F900, 0x10
+	.asciz "msgBtn_01_inOut"
 .global $$29616
 $$29616:
-	.incbin "baserom.dol", 0x43F910, 0x10
+	.asciz "msgBtn_00_psh"
+	.balign 4
 .global $$29617
 $$29617:
-	.incbin "baserom.dol", 0x43F920, 0x10
+	.asciz "msgBtn_01_psh"
+	.balign 4
 .global $$29618
 $$29618:
-	.incbin "baserom.dol", 0x43F930, 0x8
+	.asciz "vol_00"
+	.balign 4
 .global $$29619
 $$29619:
-	.incbin "baserom.dol", 0x43F938, 0x8
+	.asciz "vol_01"
+	.balign 4
 .global $$29620
 $$29620:
-	.incbin "baserom.dol", 0x43F940, 0x8
+	.asciz "vol_02"
+	.balign 4
 .global $$29621
 $$29621:
-	.incbin "baserom.dol", 0x43F948, 0x8
+	.asciz "vol_03"
+	.balign 4
 .global $$29622
 $$29622:
-	.incbin "baserom.dol", 0x43F950, 0x8
+	.asciz "vol_04"
+	.balign 4
 .global $$29623
 $$29623:
-	.incbin "baserom.dol", 0x43F958, 0x8
+	.asciz "vol_05"
+	.balign 4
 .global $$29624
 $$29624:
-	.incbin "baserom.dol", 0x43F960, 0x8
+	.asciz "vol_06"
+	.balign 4
 .global $$29625
 $$29625:
-	.incbin "baserom.dol", 0x43F968, 0x8
+	.asciz "vol_07"
+	.balign 4
 .global $$29626
 $$29626:
-	.incbin "baserom.dol", 0x43F970, 0x8
+	.asciz "vol_08"
+	.balign 4
 .global $$29627
 $$29627:
-	.incbin "baserom.dol", 0x43F978, 0x8
+	.asciz "vol_09"
+	.balign 4
 .global $$29628
 $$29628:
-	.incbin "baserom.dol", 0x43F980, 0x8
+	.asciz "plyr_00"
 .global $$29629
 $$29629:
-	.incbin "baserom.dol", 0x43F988, 0x8
+	.asciz "plyr_01"
 .global $$29630
 $$29630:
-	.incbin "baserom.dol", 0x43F990, 0x8
+	.asciz "plyr_02"
 .global $$29631
 $$29631:
-	.incbin "baserom.dol", 0x43F998, 0x8
+	.asciz "plyr_03"
 .global scGroupName__Q210homebutton10HomeButton
 scGroupName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43F9A0, 0x8C
+	.4byte 0x804436D0
+	.4byte 0x804436DC
+	.4byte 0x804436E8
+	.4byte 0x804436F8
+	.4byte 0x80443708
+	.4byte 0x80443714
+	.4byte 0x80443724
+	.4byte 0x80443738
+	.4byte 0x8044374C
+	.4byte 0x80443760
+	.4byte 0x80443774
+	.4byte 0x80443788
+	.4byte 0x80443798
+	.4byte 0x804437A8
+	.4byte 0x804437B8
+	.4byte 0x804437C8
+	.4byte 0x804437D8
+	.4byte 0x804437F0
+	.4byte 0x80443800
+	.4byte 0x80443810
+	.4byte 0x80443820
+	.4byte 0x80443830
+	.4byte 0x80443838
+	.4byte 0x80443840
+	.4byte 0x80443848
+	.4byte 0x80443850
+	.4byte 0x80443858
+	.4byte 0x80443860
+	.4byte 0x80443868
+	.4byte 0x80443870
+	.4byte 0x80443878
+	.4byte 0x80443880
+	.4byte 0x80443888
+	.4byte 0x80443890
+	.4byte 0x80443898
 .global $$29632
 $$29632:
-	.incbin "baserom.dol", 0x43FA2C, 0xC
+	.asciz "let_icn_00"
+	.balign 4
 .global $$29633
 $$29633:
-	.incbin "baserom.dol", 0x43FA38, 0xC
+	.asciz "N_plyr_00"
+	.balign 4
 .global $$29634
 $$29634:
-	.incbin "baserom.dol", 0x43FA44, 0xC
+	.asciz "N_plyr_01"
+	.balign 4
 .global $$29635
 $$29635:
-	.incbin "baserom.dol", 0x43FA50, 0xC
+	.asciz "N_plyr_02"
+	.balign 4
 .global $$29636
 $$29636:
-	.incbin "baserom.dol", 0x43FA5C, 0xC
+	.asciz "N_plyr_03"
+	.balign 4
 .global scFuncPaneName__Q210homebutton10HomeButton
 scFuncPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43FA68, 0x14
+	.4byte 0x8044392C
+	.4byte 0x80443938
+	.4byte 0x80443944
+	.4byte 0x80443950
+	.4byte 0x8044395C
 .global $$29637
 $$29637:
-	.incbin "baserom.dol", 0x43FA7C, 0xC
+	.asciz "B_btn_00"
+	.balign 4
 .global $$29638
 $$29638:
-	.incbin "baserom.dol", 0x43FA88, 0xC
+	.asciz "B_bar_10"
+	.balign 4
 .global $$29639
 $$29639:
-	.incbin "baserom.dol", 0x43FA94, 0x10
+	.asciz "B_optnBtn_00"
+	.balign 4
 .global $$29640
 $$29640:
-	.incbin "baserom.dol", 0x43FAA4, 0x10
+	.asciz "B_optnBtn_01"
+	.balign 4
 .global $$29641
 $$29641:
-	.incbin "baserom.dol", 0x43FAB4, 0x10
+	.asciz "B_optnBtn_10"
+	.balign 4
 .global $$29642
 $$29642:
-	.incbin "baserom.dol", 0x43FAC4, 0x10
+	.asciz "B_optnBtn_11"
+	.balign 4
 .global $$29643
 $$29643:
-	.incbin "baserom.dol", 0x43FAD4, 0x10
+	.asciz "B_optnBtn_20"
+	.balign 4
 .global $$29644
 $$29644:
-	.incbin "baserom.dol", 0x43FAE4, 0x8
+	.asciz "B_BtnA"
+	.balign 4
 .global $$29645
 $$29645:
-	.incbin "baserom.dol", 0x43FAEC, 0x8
+	.asciz "B_BtnB"
+	.balign 4
 .global $$29646
 $$29646:
-	.incbin "baserom.dol", 0x43FAF4, 0xC
+	.asciz "cntrl_00"
+	.balign 4
 .global scFuncTouchPaneName__Q210homebutton10HomeButton
 scFuncTouchPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43FB00, 0x28
+	.4byte 0x8044397C
+	.4byte 0x80443988
+	.4byte 0x80443994
+	.4byte 0x804439A4
+	.4byte 0x804439B4
+	.4byte 0x804439C4
+	.4byte 0x804439D4
+	.4byte 0x804439E4
+	.4byte 0x804439EC
+	.4byte 0x804439F4
 .global $$29647
 $$29647:
-	.incbin "baserom.dol", 0x43FB28, 0xC
+	.asciz "T_msg_00"
+	.balign 4
 .global $$29648
 $$29648:
-	.incbin "baserom.dol", 0x43FB34, 0xC
+	.asciz "T_msg_01"
+	.balign 4
 .global $$29649
 $$29649:
-	.incbin "baserom.dol", 0x43FB40, 0xC
+	.asciz "T_Dialog"
+	.balign 4
 .global scFuncTextPaneName__Q210homebutton10HomeButton
 scFuncTextPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43FB4C, 0xC
+	.4byte 0x80443A28
+	.4byte 0x80443A34
+	.4byte 0x80443A40
 .global $$29650
 $$29650:
-	.incbin "baserom.dol", 0x43FB58, 0x10
+	.asciz "btryPwr_00_0"
+	.balign 4
 .global $$29651
 $$29651:
-	.incbin "baserom.dol", 0x43FB68, 0x10
+	.asciz "btryPwr_00_1"
+	.balign 4
 .global $$29652
 $$29652:
-	.incbin "baserom.dol", 0x43FB78, 0x10
+	.asciz "btryPwr_00_2"
+	.balign 4
 .global $$29653
 $$29653:
-	.incbin "baserom.dol", 0x43FB88, 0x10
+	.asciz "btryPwr_00_3"
+	.balign 4
 .global $$29654
 $$29654:
-	.incbin "baserom.dol", 0x43FB98, 0x10
+	.asciz "btryPwr_01_0"
+	.balign 4
 .global $$29655
 $$29655:
-	.incbin "baserom.dol", 0x43FBA8, 0x10
+	.asciz "btryPwr_01_1"
+	.balign 4
 .global $$29656
 $$29656:
-	.incbin "baserom.dol", 0x43FBB8, 0x10
+	.asciz "btryPwr_01_2"
+	.balign 4
 .global $$29657
 $$29657:
-	.incbin "baserom.dol", 0x43FBC8, 0x10
+	.asciz "btryPwr_01_3"
+	.balign 4
 .global $$29658
 $$29658:
-	.incbin "baserom.dol", 0x43FBD8, 0x10
+	.asciz "btryPwr_02_0"
+	.balign 4
 .global $$29659
 $$29659:
-	.incbin "baserom.dol", 0x43FBE8, 0x10
+	.asciz "btryPwr_02_1"
+	.balign 4
 .global $$29660
 $$29660:
-	.incbin "baserom.dol", 0x43FBF8, 0x10
+	.asciz "btryPwr_02_2"
+	.balign 4
 .global $$29661
 $$29661:
-	.incbin "baserom.dol", 0x43FC08, 0x10
+	.asciz "btryPwr_02_3"
+	.balign 4
 .global $$29662
 $$29662:
-	.incbin "baserom.dol", 0x43FC18, 0x10
+	.asciz "btryPwr_03_0"
+	.balign 4
 .global $$29663
 $$29663:
-	.incbin "baserom.dol", 0x43FC28, 0x10
+	.asciz "btryPwr_03_1"
+	.balign 4
 .global $$29664
 $$29664:
-	.incbin "baserom.dol", 0x43FC38, 0x10
+	.asciz "btryPwr_03_2"
+	.balign 4
 .global $$29665
 $$29665:
-	.incbin "baserom.dol", 0x43FC48, 0x10
+	.asciz "btryPwr_03_3"
+	.balign 4
 .global scBatteryPaneName__Q210homebutton10HomeButton
 scBatteryPaneName__Q210homebutton10HomeButton:
-	.incbin "baserom.dol", 0x43FC58, 0x40
+	.4byte 0x80443A58
+	.4byte 0x80443A68
+	.4byte 0x80443A78
+	.4byte 0x80443A88
+	.4byte 0x80443A98
+	.4byte 0x80443AA8
+	.4byte 0x80443AB8
+	.4byte 0x80443AC8
+	.4byte 0x80443AD8
+	.4byte 0x80443AE8
+	.4byte 0x80443AF8
+	.4byte 0x80443B08
+	.4byte 0x80443B18
+	.4byte 0x80443B28
+	.4byte 0x80443B38
+	.4byte 0x80443B48
 .global $$216076
 $$216076:
-	.incbin "baserom.dol", 0x43FC98, 0x8
+	.4byte 0x61726300
+	.4byte 0
 .global $$216077
 $$216077:
-	.incbin "baserom.dol", 0x43FCA0, 0x8
+	.asciz "back_00"
 .global $$216078
 $$216078:
-	.incbin "baserom.dol", 0x43FCA8, 0x8
+	.asciz "back_01"
 .global $$216079
 $$216079:
-	.incbin "baserom.dol", 0x43FCB0, 0x8
+	.asciz "back_02"
 .global $$216082
 $$216082:
-	.incbin "baserom.dol", 0x43FCB8, 0xC
+	.asciz "bar_line_00"
 .global $$216083
 $$216083:
-	.incbin "baserom.dol", 0x43FCC4, 0xC
+	.asciz "bar_line_10"
 .global $$216253
 $$216253:
-	.incbin "baserom.dol", 0x43FCD0, 0xC
+	.asciz "N_cntrl_01"
+	.balign 4
 .global $$216254
 $$216254:
-	.incbin "baserom.dol", 0x43FCDC, 0x8
+	.asciz "bar_00"
+	.balign 4
 .global $$216255
 $$216255:
-	.incbin "baserom.dol", 0x43FCE4, 0x8
+	.asciz "bar_10"
+	.balign 4
 .global $$217003
 $$217003:
-	.incbin "baserom.dol", 0x43FCEC, 0x50
+	.4byte 0x8012E23C  ;# ptr
+	.4byte 0x8012E420  ;# ptr
+	.4byte 0x8012FA44  ;# ptr
+	.4byte 0x8012E690  ;# ptr
+	.4byte 0x8012E788  ;# ptr
+	.4byte 0x8012E8A4  ;# ptr
+	.4byte 0x8012E8A4  ;# ptr
+	.4byte 0x8012EB70  ;# ptr
+	.4byte 0x8012EC34  ;# ptr
+	.4byte 0x8012EDEC  ;# ptr
+	.4byte 0x8012EE40  ;# ptr
+	.4byte 0x8012EF64  ;# ptr
+	.4byte 0x8012EFA8  ;# ptr
+	.4byte 0x8012EFE0  ;# ptr
+	.4byte 0x8012F0D8  ;# ptr
+	.4byte 0x8012F26C  ;# ptr
+	.4byte 0x8012F2F0  ;# ptr
+	.4byte 0x8012F3A8  ;# ptr
+	.4byte 0x8012F62C  ;# ptr
+	.4byte 0x8012F638  ;# ptr
 .global $$217952
 $$217952:
-	.incbin "baserom.dol", 0x43FD3C, 0x28
+	.4byte 0x80131B54  ;# ptr
+	.4byte 0x80131C14  ;# ptr
+	.4byte 0x801321C8  ;# ptr
+	.4byte 0x80132298  ;# ptr
+	.4byte 0x80132368  ;# ptr
+	.4byte 0x80132438  ;# ptr
+	.4byte 0x80132508  ;# ptr
+	.4byte 0x801325D8  ;# ptr
+	.4byte 0x801326A8  ;# ptr
+	.4byte 0x80131C14  ;# ptr
 .global $$218150
 $$218150:
-	.incbin "baserom.dol", 0x43FD64, 0x28
+	.4byte 0x801329A4  ;# ptr
+	.4byte 0x80132A18  ;# ptr
+	.4byte 0x80132F4C  ;# ptr
+	.4byte 0x80132FD4  ;# ptr
+	.4byte 0x8013305C  ;# ptr
+	.4byte 0x801330E4  ;# ptr
+	.4byte 0x8013316C  ;# ptr
+	.4byte 0x801331F4  ;# ptr
+	.4byte 0x8013327C  ;# ptr
+	.4byte 0x80132A18  ;# ptr
 .global $$218596
 $$218596:
-	.incbin "baserom.dol", 0x43FD8C, 0x2C
+	.4byte 0x80133610  ;# ptr
+	.4byte 0x801336A4  ;# ptr
+	.4byte 0x80133828  ;# ptr
+	.4byte 0x80133AF4  ;# ptr
+	.4byte 0x80133DC4  ;# ptr
+	.4byte 0x80133FF8  ;# ptr
+	.4byte 0x80134184  ;# ptr
+	.4byte 0x80134344  ;# ptr
+	.4byte 0x801344B0  ;# ptr
+	.4byte 0x801336A4  ;# ptr
+	.4byte 0
 .global __vt__Q210homebutton22HomeButtonEventHandler
 __vt__Q210homebutton22HomeButtonEventHandler:
-	.incbin "baserom.dol", 0x43FDB8, 0x10
+	.4byte 0x80443CF8
+	.4byte 0
+	.4byte 0x80134A10  ;# ptr
+	.4byte 0x80129FF0  ;# ptr
 .global $$211453
 $$211453:
-	.incbin "baserom.dol", 0x43FDC8, 0x24
+	.asciz "homebutton::HomeButtonEventHandler"
+	.balign 4
 .global $$211454
 $$211454:
-	.incbin "baserom.dol", 0x43FDEC, 0xC
+	.4byte 0x80443D30
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q210homebutton22HomeButtonEventHandler
 __RTTI__Q210homebutton22HomeButtonEventHandler:
-	.incbin "baserom.dol", 0x43FDF8, 0x8
+	.4byte 0x80443CC8
+	.4byte 0x80443CEC
 .global __vt__Q310homebutton3gui12EventHandler
 __vt__Q310homebutton3gui12EventHandler:
-	.incbin "baserom.dol", 0x43FE00, 0x10
+	.4byte 0x80443D30
+	.4byte 0
+	.4byte 0x80128C90  ;# ptr
+	.4byte 0x80129FF0  ;# ptr
 .global $$211456
 $$211456:
-	.incbin "baserom.dol", 0x43FE10, 0x20
+	.asciz "homebutton::gui::EventHandler"
+	.balign 4
 .global __RTTI__Q310homebutton3gui12EventHandler
 __RTTI__Q310homebutton3gui12EventHandler:
-	.incbin "baserom.dol", 0x43FE30, 0x28
+	.4byte 0x80443D10
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$211457
 $$211457:
-	.incbin "baserom.dol", 0x43FE58, 0x28
+	.asciz "homebutton::gui::Interface"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global spHomeButtonObj__Q210homebutton10HomeButton

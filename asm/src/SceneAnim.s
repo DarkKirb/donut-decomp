@@ -289,23 +289,30 @@ lbl_801949D4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv:
-	.incbin "baserom.dol", 0x450A50, 0xC
+	.asciz "ResAnmScn"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20:
-	.incbin "baserom.dol", 0x450A5C, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv:
-	.incbin "baserom.dol", 0x450A78, 0x18
+	.asciz "g3d_resanmscn_ac.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __FUNCTION__$36033
 __FUNCTION__$36033:
-	.incbin "baserom.dol", 0x4931D8, 0x8
+	.4byte 0x72656600
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249337
 $$249337:
-	.incbin "baserom.dol", 0x49A1F8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$249406
 $$249406:
-	.incbin "baserom.dol", 0x49A200, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

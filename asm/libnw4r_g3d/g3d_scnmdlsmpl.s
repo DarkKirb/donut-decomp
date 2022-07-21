@@ -2238,28 +2238,51 @@ GetTypeObj__Q34nw4r3g3d12ScnMdlSimpleCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12ScnMdlSimple
 TYPE_NAME__Q34nw4r3g3d12ScnMdlSimple:
-	.incbin "baserom.dol", 0x404FD0, 0x18
+	.4byte 0x0000000D
+	.asciz "ScnMdlSimple"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$214160
 $$214160:
-	.incbin "baserom.dol", 0x43D1B0, 0x10
+	.asciz "NodeTree"
+	.balign 4
+	.4byte 0
 .global __vt__Q34nw4r3g3d12ScnMdlSimple
 __vt__Q34nw4r3g3d12ScnMdlSimple:
-	.incbin "baserom.dol", 0x43D1C0, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x800EE1B0  ;# ptr
+	.4byte 0x800EC9B0  ;# ptr
+	.4byte 0x800EE090  ;# ptr
+	.4byte 0x800EE230  ;# ptr
+	.4byte 0x800EE220  ;# ptr
+	.4byte 0x800E9830  ;# ptr
+	.4byte 0x800ED240  ;# ptr
+	.4byte 0x800ED280  ;# ptr
+	.4byte 0x800E96A0  ;# ptr
+	.4byte 0x800E96B0  ;# ptr
+	.4byte 0x800E9900  ;# ptr
+	.4byte 0x800ED3A0  ;# ptr
+	.4byte 0x800ED9B0  ;# ptr
+	.4byte 0x800EDB30  ;# ptr
+	.4byte 0x800EDC10  ;# ptr
+	.4byte 0x800EDC70  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$214161
 $$214161:
-	.incbin "baserom.dol", 0x492E00, 0x8
+	.asciz "NodeMix"
 .global $$214162
 $$214162:
-	.incbin "baserom.dol", 0x492E08, 0x8
+	.asciz "DrawOpa"
 .global $$214163
 $$214163:
-	.incbin "baserom.dol", 0x492E10, 0x8
+	.asciz "DrawXlu"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214252
 $$214252:
-	.incbin "baserom.dol", 0x499C10, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -223,30 +223,39 @@ procFixPos__Q53scn4step4hero6damage10StateSpineFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6damage10StateSpine
 __vt__Q53scn4step4hero6damage10StateSpine:
-	.incbin "baserom.dol", 0x4888A8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80378144
+	.4byte 0x80378200
+	.4byte 0x80378204
+	.4byte 0x8035550C
+	.4byte 0x8037826C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256844
 $$256844:
-	.incbin "baserom.dol", 0x49DEB8, 0x4
+	.4byte 0
 .global $$256845
 $$256845:
-	.incbin "baserom.dol", 0x49DEBC, 0x4
+	.4byte 0x3F000000
 .global $$256846
 $$256846:
-	.incbin "baserom.dol", 0x49DEC0, 0x4
+	.4byte 0x42700000
 .global $$256847
 $$256847:
-	.incbin "baserom.dol", 0x49DEC4, 0x4
+	.4byte 0x41200000
 .global $$256848
 $$256848:
-	.incbin "baserom.dol", 0x49DEC8, 0x4
+	.4byte 0x3C8EFA35
 .global $$256849
 $$256849:
-	.incbin "baserom.dol", 0x49DECC, 0x4
+	.4byte 0xBF800000
 .global $$256850
 $$256850:
-	.incbin "baserom.dol", 0x49DED0, 0x4
+	.4byte 0x3E000000
 .global $$256873
 $$256873:
-	.incbin "baserom.dol", 0x49DED4, 0x4
+	.4byte 0x38D1B717

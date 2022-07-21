@@ -168,13 +168,20 @@ lbl_801CD1B8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26mintvm14VMFunctionList
 __vt__Q26mintvm14VMFunctionList:
-	.incbin "baserom.dol", 0x458C68, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA37C  ;# ptr
 .global __vt__Q26mintvm10VMFunction
 __vt__Q26mintvm10VMFunction:
-	.incbin "baserom.dol", 0x458C74, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA504  ;# ptr
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction$$20
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction$$20:
-	.incbin "baserom.dol", 0x458C80, 0xC
+	.asciz "mMax = %d\n"
+	.balign 4
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMFunction$$1FPQ26mintvm10VMFunction:
-	.incbin "baserom.dol", 0x458C8C, 0x14
+	.asciz "MPtrArray.hpp"
+	.balign 4
+	.4byte 0

@@ -261,10 +261,25 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17StateCapturedWhip$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8captured17StateCapturedWhip$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x489528, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038A76C
+	.4byte 0x8038A730
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero4whip14StateWhipCatch$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489538, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038A768
+	.4byte 0x8038A74C
 .global __vt__Q53scn4step4hero4whip16StateWhipCapture
 __vt__Q53scn4step4hero4whip16StateWhipCapture:
-	.incbin "baserom.dol", 0x489548, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038A484
+	.4byte 0x8038A534
+	.4byte 0x8038A5E8
+	.4byte 0x8038A5EC
+	.4byte 0x8038A660
+	.4byte 0x8038A664
+	.4byte 0x80355518
+	.4byte 0

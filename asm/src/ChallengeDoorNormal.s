@@ -176,44 +176,79 @@ kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormalCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254974
 $$254974:
-	.incbin "baserom.dol", 0x47D0C8, 0x18
+	.asciz "SwordDoorAppearance00"
+	.balign 4
 .global $$254975
 $$254975:
-	.incbin "baserom.dol", 0x47D0E0, 0x18
+	.asciz "ParasolDoorAppearance00"
 .global $$254976
 $$254976:
-	.incbin "baserom.dol", 0x47D0F8, 0x18
+	.asciz "SparkDoorAppearance00"
+	.balign 4
 .global $$254977
 $$254977:
-	.incbin "baserom.dol", 0x47D110, 0x18
+	.asciz "WhipDoorAppearance00"
+	.balign 4
 .global $$254978
 $$254978:
-	.incbin "baserom.dol", 0x47D128, 0x18
+	.asciz "WingDoorAppearance00"
+	.balign 4
 .global $$254979
 $$254979:
-	.incbin "baserom.dol", 0x47D140, 0x18
+	.asciz "NormalDoorAppearance00"
+	.balign 4
 .global $$254986
 $$254986:
-	.incbin "baserom.dol", 0x47D158, 0x1C
+	.asciz "step/gimmick/ChallengeBoard"
 .global $$254987
 $$254987:
-	.incbin "baserom.dol", 0x47D174, 0x1C
+	.asciz "step/gimmick/ChallengeIcon"
+	.balign 4
 .global $$254988
 $$254988:
-	.incbin "baserom.dol", 0x47D190, 0x1C
+	.asciz "step/gimmick/DoorChallenge"
+	.balign 4
 .global $$255043
 $$255043:
-	.incbin "baserom.dol", 0x47D1AC, 0x34
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Unlock.UnlockDoor"
+	.balign 4
 .global __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormal
 __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormal:
-	.incbin "baserom.dol", 0x47D1E0, 0x88
+	.4byte 0
+	.4byte 0
+	.4byte 0x803099D4
+	.4byte 0x80309AF8
+	.4byte 0x803099D8
+	.4byte 0x80306D6C
+	.4byte 0x80306D70
+	.4byte 0x80306D74
+	.4byte 0x80306D78
+	.4byte 0x80309A58
+	.4byte 0x80309A9C
+	.4byte 0x803076D8
+	.4byte 0x80309AA0
+	.4byte 0x803076E0
+	.4byte 0x80309AF4
+	.4byte 0x80307C68
+	.4byte 0x80307BA0
+	.4byte 0x80307BC8
+	.4byte 0x80307C24
+	.4byte 0x803079C0
+	.4byte 0x803079CC
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254980
 $$254980:
-	.incbin "baserom.dol", 0x496A50, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255038
 $$255038:
-	.incbin "baserom.dol", 0x49D310, 0x8
+	.4byte 0
+	.4byte 0

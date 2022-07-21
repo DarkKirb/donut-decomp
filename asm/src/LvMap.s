@@ -457,15 +457,19 @@ frameControl__Q53scn4step4info5lvmap5LvMapFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254826
 $$254826:
-	.incbin "baserom.dol", 0x48D900, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$254828
 $$254828:
-	.incbin "baserom.dol", 0x48D910, 0x10
+	.asciz "LvMapFrameN"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254825
 $$254825:
-	.incbin "baserom.dol", 0x498000, 0x8
+	.asciz "LvMap"
+	.balign 4
 .global $$254827
 $$254827:
-	.incbin "baserom.dol", 0x498008, 0x8
+	.asciz "Base"
+	.balign 4

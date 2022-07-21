@@ -223,7 +223,17 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah1
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateWaitFar$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateWaitFar$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x463308, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C38C  ;# ptr
+	.4byte 0x8024C370  ;# ptr
 .global __vt__Q53scn4step4boss10creditroah12StateWaitFar
 __vt__Q53scn4step4boss10creditroah12StateWaitFar:
-	.incbin "baserom.dol", 0x463318, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024C274  ;# ptr
+	.4byte 0x8024C2F0  ;# ptr
+	.4byte 0x8024C318  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024C36C  ;# ptr
+	.4byte 0x80234504  ;# ptr

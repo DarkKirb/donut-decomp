@@ -788,65 +788,85 @@ lbl_801A9DB8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252873
 $$252873:
-	.incbin "baserom.dol", 0x453618, 0xC
+	.asciz "common/Main"
 .global $$252875
 $$252875:
-	.incbin "baserom.dol", 0x453624, 0xC
+	.asciz "Button01N"
+	.balign 4
 .global $$252876
 $$252876:
-	.incbin "baserom.dol", 0x453630, 0xC
+	.asciz "Button02N"
+	.balign 4
 .global $$252877
 $$252877:
-	.incbin "baserom.dol", 0x45363C, 0xC
+	.asciz "Button03N"
+	.balign 4
 .global $$252879
 $$252879:
-	.incbin "baserom.dol", 0x453648, 0xC
+	.asciz "ConfirmText"
 .global $$252881
 $$252881:
-	.incbin "baserom.dol", 0x453654, 0xC
+	.asciz "ConfirmYes"
+	.balign 4
 .global $$252882
 $$252882:
-	.incbin "baserom.dol", 0x453660, 0xC
+	.asciz "ConfirmNo"
+	.balign 4
 .global $$252883
 $$252883:
-	.incbin "baserom.dol", 0x45366C, 0xC
+	.asciz "Paturn01"
+	.balign 4
 .global $$252884
 $$252884:
-	.incbin "baserom.dol", 0x453678, 0xC
+	.asciz "Paturn03"
+	.balign 4
 .global $$252885
 $$252885:
-	.incbin "baserom.dol", 0x453684, 0xC
+	.asciz "Paturn02"
+	.balign 4
 .global $$252886
 $$252886:
-	.incbin "baserom.dol", 0x453690, 0x40
+	.asciz "Paturn05"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252874
 $$252874:
-	.incbin "baserom.dol", 0x493440, 0x8
+	.asciz "Confirm"
 .global $$252878
 $$252878:
-	.incbin "baserom.dol", 0x493448, 0x8
+	.asciz "WinN"
+	.balign 4
 .global $$252880
 $$252880:
-	.incbin "baserom.dol", 0x493450, 0x4
+	.4byte 0
 .global $$252887
 $$252887:
-	.incbin "baserom.dol", 0x493454, 0x4
+	.4byte 0x42470000
 .global $$252977
 $$252977:
-	.incbin "baserom.dol", 0x493458, 0x8
+	.asciz "Open2"
+	.balign 4
 .global $$252978
 $$252978:
-	.incbin "baserom.dol", 0x493460, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$253036
 $$253036:
-	.incbin "baserom.dol", 0x493468, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$253048
 $$253048:
-	.incbin "baserom.dol", 0x493470, 0x8
+	.asciz "Close2"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253005
 $$253005:
-	.incbin "baserom.dol", 0x49A490, 0x8
+	.4byte 0x40800000
+	.4byte 0

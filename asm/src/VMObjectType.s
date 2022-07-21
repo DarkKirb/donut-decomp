@@ -262,22 +262,32 @@ lbl_801CD758:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26mintvm12VMObjectType
 __vt__Q26mintvm12VMObjectType:
-	.incbin "baserom.dol", 0x458CC8, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA304  ;# ptr
 .global __vt__Q26mintvm14VMVariableList
 __vt__Q26mintvm14VMVariableList:
-	.incbin "baserom.dol", 0x458CD4, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA560  ;# ptr
 .global __vt__Q26mintvm10VMVariable
 __vt__Q26mintvm10VMVariable:
-	.incbin "baserom.dol", 0x458CE0, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA6E8  ;# ptr
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable$$20
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable$$20:
-	.incbin "baserom.dol", 0x458CEC, 0xC
+	.asciz "mMax = %d\n"
+	.balign 4
 .global $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable
 $$2STRING$$2addPtr__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1FPQ26mintvm10VMVariable:
-	.incbin "baserom.dol", 0x458CF8, 0x10
+	.asciz "MPtrArray.hpp"
+	.balign 4
 .global $$2STRING$$2at__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1CFUl$$20
 $$2STRING$$2at__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1CFUl$$20:
-	.incbin "baserom.dol", 0x458D08, 0xC
+	.asciz "count = %d\n"
 .global $$2STRING$$2at__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1CFUl
 $$2STRING$$2at__Q26mintvm32MPtrArray$$0Q26mintvm10VMVariable$$1CFUl:
-	.incbin "baserom.dol", 0x458D14, 0x14
+	.asciz "MPtrArray.hpp"
+	.balign 4
+	.4byte 0

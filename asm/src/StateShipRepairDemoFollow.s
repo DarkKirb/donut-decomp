@@ -429,20 +429,33 @@ procFixPos__Q53scn4step4hero6common25StateShipRepairDemoFollowFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ROT_LIST__39$$2unnamed$$2StateShipRepairDemoFollow_cpp$$2
 ROT_LIST__39$$2unnamed$$2StateShipRepairDemoFollow_cpp$$2:
-	.incbin "baserom.dol", 0x41BCE8, 0x10
+	.4byte 0
+	.4byte 0x430C0000
+	.4byte 0x42F00000
+	.4byte 0x42F00000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common25StateShipRepairDemoFollow
 __vt__Q53scn4step4hero6common25StateShipRepairDemoFollow:
-	.incbin "baserom.dol", 0x488128, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80369D4C
+	.4byte 0x80369E4C
+	.4byte 0x8036A028
+	.4byte 0x8035550C
+	.4byte 0x8036A0CC
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259892
 $$259892:
-	.incbin "baserom.dol", 0x49DC10, 0x4
+	.4byte 0
 .global $$259893
 $$259893:
-	.incbin "baserom.dol", 0x49DC14, 0x4
+	.4byte 0xC0400000
 .global $$259963
 $$259963:
-	.incbin "baserom.dol", 0x49DC18, 0x8
+	.4byte 0x42B40000
+	.4byte 0

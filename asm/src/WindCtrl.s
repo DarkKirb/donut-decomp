@@ -164,21 +164,29 @@ clear__Q53scn4step4boss6whispy8WindCtrlFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_AREA_RATE__Q53scn4step4boss6whispy22$$2unnamed$$2WindCtrl_cpp$$2
 T_AREA_RATE__Q53scn4step4boss6whispy22$$2unnamed$$2WindCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x4137E0, 0x20
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F8CCCCD
+	.4byte 0x3FA00000
+	.4byte 0x3FB33333
+	.4byte 0x3FC00000
+	.4byte 0x3FCCCCCD
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250595
 $$250595:
-	.incbin "baserom.dol", 0x49B578, 0x4
+	.4byte 0
 .global $$250596
 $$250596:
-	.incbin "baserom.dol", 0x49B57C, 0x4
+	.4byte 0x41100000
 .global $$250597
 $$250597:
-	.incbin "baserom.dol", 0x49B580, 0x4
+	.4byte 0xC0000000
 .global $$250598
 $$250598:
-	.incbin "baserom.dol", 0x49B584, 0x4
+	.4byte 0xC0400000
 .global $$250599
 $$250599:
-	.incbin "baserom.dol", 0x49B588, 0x8
+	.4byte 0x40000000
+	.4byte 0

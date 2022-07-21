@@ -862,32 +862,67 @@ lbl_80260D4C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_OBVERSE_TABLE__Q53scn4step4boss6whispy23$$2unnamed$$2EnemyCtrl_cpp$$2
 T_OBVERSE_TABLE__Q53scn4step4boss6whispy23$$2unnamed$$2EnemyCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x413650, 0x58
+	.4byte 0x00000002
+	.4byte 0x00000155
+	.4byte 0x40D80000
+	.4byte 0x00000001
+	.4byte 0x00000156
+	.4byte 0x40D80000
+	.4byte 0x00000009
+	.4byte 0x00000157
+	.4byte 0x40F00000
+	.4byte 0x0000000A
+	.4byte 0x00000158
+	.4byte 0x40980000
+	.4byte 0x0000006C
+	.4byte 0x00000001
+	.4byte 0x40980000
+	.4byte 0x0000006D
+	.4byte 0x00000001
+	.4byte 0x40980000
+	.4byte 0x00000015
+	.4byte 0x00000159
+	.4byte 0x40D80000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util133StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter13StateStraight$$4PQ43scn4step5enemy5Enemy$$4Q43scn4step4boss8Accessor$$1
 __vt__Q24util133StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter13StateStraight$$4PQ43scn4step5enemy5Enemy$$4Q43scn4step4boss8Accessor$$1:
-	.incbin "baserom.dol", 0x466C80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260CFC  ;# ptr
+	.4byte 0x80260C78  ;# ptr
 .global __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter11StateCircle$$4PQ43scn4step5enemy5Enemy$$4b$$1
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter11StateCircle$$4PQ43scn4step5enemy5Enemy$$4b$$1:
-	.incbin "baserom.dol", 0x466C90, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260CF8  ;# ptr
+	.4byte 0x80260C98  ;# ptr
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter15StateBackCircle$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter15StateBackCircle$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x466CA0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260CF4  ;# ptr
+	.4byte 0x80260CB8  ;# ptr
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter10StateSlant$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter10StateSlant$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x466CB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80260CF0  ;# ptr
+	.4byte 0x80260CD4  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252522
 $$252522:
-	.incbin "baserom.dol", 0x49B500, 0x4
+	.4byte 0x40D80000
 .global $$252577
 $$252577:
-	.incbin "baserom.dol", 0x49B504, 0x4
+	.4byte 0x3FC00000
 .global $$252578
 $$252578:
-	.incbin "baserom.dol", 0x49B508, 0x8
+	.4byte 0x41280000
+	.4byte 0
 .global $$252581
 $$252581:
-	.incbin "baserom.dol", 0x49B510, 0x8
+	.4byte 0x43300000
+	.4byte 0

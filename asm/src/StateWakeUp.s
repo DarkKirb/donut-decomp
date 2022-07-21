@@ -124,4 +124,13 @@ procFixPos__Q53scn4step4hero6common11StateWakeUpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common11StateWakeUp
 __vt__Q53scn4step4hero6common11StateWakeUp:
-	.incbin "baserom.dol", 0x4883C0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036E0F0
+	.4byte 0x8036E18C
+	.4byte 0x8036E1D4
+	.4byte 0x8035550C
+	.4byte 0x8036E1D8
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

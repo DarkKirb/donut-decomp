@@ -895,16 +895,16 @@ clrBatteryFlag__Q210homebutton10ControllerFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29283
 $$29283:
-	.incbin "baserom.dol", 0x409EF8, 0x4
+	.4byte 0x3F800000
 .global $$29341
 $$29341:
-	.incbin "baserom.dol", 0x409EFC, 0x4
+	.4byte 0xC61C4000
 .global $$29342
 $$29342:
-	.incbin "baserom.dol", 0x409F00, 0x4
+	.4byte 0xC66A6000
 .global $$29369
 $$29369:
-	.incbin "baserom.dol", 0x409F04, 0x4
+	.4byte 0x41200000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sBatteryFlag__Q210homebutton10Controller

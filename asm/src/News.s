@@ -592,67 +592,98 @@ lbl_8020D2BC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global IS_LARGE__Q33scn7history18$$2unnamed$$2News_cpp$$2
 IS_LARGE__Q33scn7history18$$2unnamed$$2News_cpp$$2:
-	.incbin "baserom.dol", 0x411C88, 0x18
+	.4byte 0x01000000
+	.4byte 0x01010001
+	.4byte 0x00000100
+	.4byte 0x01010101
+	.4byte 0x00010001
+	.4byte 0x01010000
 .global SHOW_DECORATION__Q33scn7history18$$2unnamed$$2News_cpp$$2
 SHOW_DECORATION__Q33scn7history18$$2unnamed$$2News_cpp$$2:
-	.incbin "baserom.dol", 0x411CA0, 0x18
+	.4byte 0
+	.4byte 0x01000001
+	.4byte 0
+	.4byte 0x01010000
+	.4byte 0x00000001
+	.4byte 0x01010000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253381
 $$253381:
-	.incbin "baserom.dol", 0x45D460, 0x10
+	.asciz "history/Main"
+	.balign 4
 .global $$253383
 $$253383:
-	.incbin "baserom.dol", 0x45D470, 0x14
+	.asciz "history/NewsIcon"
+	.balign 4
 .global $$253385
 $$253385:
-	.incbin "baserom.dol", 0x45D484, 0xC
+	.asciz "HardPicture"
 .global $$253386
 $$253386:
-	.incbin "baserom.dol", 0x45D490, 0xC
+	.asciz "HardPicN"
+	.balign 4
 .global $$253508
 $$253508:
-	.incbin "baserom.dol", 0x45D49C, 0x10
+	.asciz "PictureSmall"
+	.balign 4
 .global $$253509
 $$253509:
-	.incbin "baserom.dol", 0x45D4AC, 0x10
+	.asciz "PictureLarge"
+	.balign 4
 .global $$253513
 $$253513:
-	.incbin "baserom.dol", 0x45D4BC, 0x14
+	.asciz "NewsTitleBefore1991"
 .global $$253514
 $$253514:
-	.incbin "baserom.dol", 0x45D4D0, 0xC
+	.asciz "NewsTitle"
+	.balign 4
 .global $$253516
 $$253516:
-	.incbin "baserom.dol", 0x45D4DC, 0x44
+	.asciz "Title_Shadow"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253382
 $$253382:
-	.incbin "baserom.dol", 0x494990, 0x8
+	.asciz "News"
+	.balign 4
 .global $$253384
 $$253384:
-	.incbin "baserom.dol", 0x494998, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253510
 $$253510:
-	.incbin "baserom.dol", 0x4949A0, 0x8
+	.asciz "StarN"
+	.balign 4
 .global $$253511
 $$253511:
-	.incbin "baserom.dol", 0x4949A8, 0x8
+	.asciz "Text01"
+	.balign 4
 .global $$253512
 $$253512:
-	.incbin "baserom.dol", 0x4949B0, 0x8
+	.asciz "News%d"
+	.balign 4
 .global $$253515
 $$253515:
-	.incbin "baserom.dol", 0x4949B8, 0x8
+	.asciz "Title"
+	.balign 4
 .global $$253528
 $$253528:
-	.incbin "baserom.dol", 0x4949C0, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253532
 $$253532:
-	.incbin "baserom.dol", 0x4949C8, 0x8
+	.4byte 0x456E6400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253533
 $$253533:
-	.incbin "baserom.dol", 0x49AC18, 0x8
+	.4byte 0x3F800000
+	.4byte 0

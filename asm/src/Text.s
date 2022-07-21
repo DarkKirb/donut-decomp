@@ -782,275 +782,480 @@ hideAllText__Q43scn7history6detail4TextFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global COPYRIGHT_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 COPYRIGHT_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.incbin "baserom.dol", 0x412188, 0xE8
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0x00000001
+	.4byte 0x804631B0
+	.4byte 0x00000001
+	.4byte 0x804631C0
+	.4byte 0x00000001
+	.4byte 0x804631D8
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0x00000001
+	.4byte 0x804631F0
+	.4byte 0x00000001
+	.4byte 0x80463204
+	.4byte 0x00000001
+	.4byte 0x80463218
+	.4byte 0x00000001
+	.4byte 0x80463228
+	.4byte 0x00000001
+	.4byte 0x80463240
+	.4byte 0x00000001
+	.4byte 0x80463254
+	.4byte 0x00000001
+	.4byte 0x80463270
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0x00000001
+	.4byte 0x80463280
+	.4byte 0x00000001
+	.4byte 0x80463294
+	.4byte 0x00000001
+	.4byte 0x804632AC
+	.4byte 0x00000001
+	.4byte 0x804632C8
+	.4byte 0x00000001
+	.4byte 0x804632E0
+	.4byte 0x00000001
+	.4byte 0x804632F8
+	.4byte 0x00000001
+	.4byte 0x80463310
+	.4byte 0x00000001
+	.4byte 0x80463324
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0x00000001
+	.4byte 0x8046333C
+	.4byte 0
+	.4byte 0x80558D10
+	.4byte 0x00000001
+	.4byte 0x80463350
+	.4byte 0x00000001
+	.4byte 0x80463368
+	.4byte 0x00000001
+	.4byte 0x80463384
+	.4byte 0x00000001
+	.4byte 0x80463398
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251808
 $$251808:
-	.incbin "baserom.dol", 0x45F0E8, 0xC
+	.asciz "KAvalancheN"
 .global $$251809
 $$251809:
-	.incbin "baserom.dol", 0x45F0F4, 0xC
+	.asciz "KPinballN"
+	.balign 4
 .global $$251812
 $$251812:
-	.incbin "baserom.dol", 0x45F100, 0xC
+	.asciz "KAirRideN"
+	.balign 4
 .global $$251816
 $$251816:
-	.incbin "baserom.dol", 0x45F10C, 0xC
+	.asciz "KDreamDXN"
+	.balign 4
 .global $$251817
 $$251817:
-	.incbin "baserom.dol", 0x45F118, 0xC
+	.asciz "KMirrorN"
+	.balign 4
 .global $$251820
 $$251820:
-	.incbin "baserom.dol", 0x45F124, 0xC
+	.asciz "KAtsumeteN"
+	.balign 4
 .global PANES__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 PANES__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.incbin "baserom.dol", 0x45F130, 0x5C
+	.4byte 0x80558C08
+	.4byte 0x80558C10
+	.4byte 0x80558C18
+	.4byte 0x80558C1C
+	.4byte 0x80558C20
+	.4byte 0x80558C24
+	.4byte 0x80558C30
+	.4byte 0x80558C38
+	.4byte 0x80462FE8
+	.4byte 0x80462FF4
+	.4byte 0x80558C40
+	.4byte 0x80558C48
+	.4byte 0x80463000
+	.4byte 0x80558C50
+	.4byte 0x80558C58
+	.4byte 0x80558C60
+	.4byte 0x8046300C
+	.4byte 0x80463018
+	.4byte 0x80558C68
+	.4byte 0x80558C70
+	.4byte 0x80463024
+	.4byte 0x80558C78
+	.4byte 0x80558C80
 .global TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.incbin "baserom.dol", 0x45F18C, 0x74
+	.4byte 0x80558C88
+	.4byte 0x80558C18
+	.4byte 0x80558C30
+	.4byte 0x80462FF4
+	.4byte 0x80558C88
+	.4byte 0x80558C38
+	.4byte 0x80462FE8
+	.4byte 0x80558C1C
+	.4byte 0x80558C10
+	.4byte 0x80558C08
+	.4byte 0x80558C40
+	.4byte 0x80558C20
+	.4byte 0x80558C88
+	.4byte 0x80558C88
+	.4byte 0x80558C24
+	.4byte 0x80558C48
+	.4byte 0x8046300C
+	.4byte 0x80558C78
+	.4byte 0x80463000
+	.4byte 0x80463018
+	.4byte 0x80558C60
+	.4byte 0x80558C68
+	.4byte 0x80558C88
+	.4byte 0x80558C58
+	.4byte 0x80558C88
+	.4byte 0x80558C70
+	.4byte 0x80463024
+	.4byte 0x80558C50
+	.4byte 0x80558C80
 .global $$251827
 $$251827:
-	.incbin "baserom.dol", 0x45F200, 0xC
+	.asciz "KPinball"
+	.balign 4
 .global $$251829
 $$251829:
-	.incbin "baserom.dol", 0x45F20C, 0xC
+	.asciz "KAvalanche"
+	.balign 4
 .global $$251837
 $$251837:
-	.incbin "baserom.dol", 0x45F218, 0xC
+	.asciz "KDreamDX"
+	.balign 4
 .global $$251839
 $$251839:
-	.incbin "baserom.dol", 0x45F224, 0xC
+	.asciz "KAirRide"
+	.balign 4
 .global $$251845
 $$251845:
-	.incbin "baserom.dol", 0x45F230, 0xC
+	.asciz "KAtumete"
+	.balign 4
 .global PICTUREPANE_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2
 PICTUREPANE_TABLE__Q43scn7history6detail18$$2unnamed$$2Text_cpp$$2:
-	.incbin "baserom.dol", 0x45F23C, 0x74
+	.4byte 0x80558C88
+	.4byte 0x80558C90
+	.4byte 0x80558C94
+	.4byte 0x80463100
+	.4byte 0x80558C88
+	.4byte 0x80558C9C
+	.4byte 0x8046310C
+	.4byte 0x80558CA4
+	.4byte 0x80558CA8
+	.4byte 0x80558CAC
+	.4byte 0x80558CB4
+	.4byte 0x80558CBC
+	.4byte 0x80558C88
+	.4byte 0x80558C88
+	.4byte 0x80558CC0
+	.4byte 0x80558CC4
+	.4byte 0x80463118
+	.4byte 0x80558CCC
+	.4byte 0x80463124
+	.4byte 0x80558CD8
+	.4byte 0x80558CE0
+	.4byte 0x80558CE8
+	.4byte 0x80558C88
+	.4byte 0x80558CF0
+	.4byte 0x80558C88
+	.4byte 0x80558CF8
+	.4byte 0x80463130
+	.4byte 0x80558D00
+	.4byte 0x80558D08
 .global $$251850
 $$251850:
-	.incbin "baserom.dol", 0x45F2B0, 0x10
+	.asciz "CopyrightKirby1"
 .global $$251851
 $$251851:
-	.incbin "baserom.dol", 0x45F2C0, 0x18
+	.asciz "CopyrightKirbyDreamLand"
 .global $$251852
 $$251852:
-	.incbin "baserom.dol", 0x45F2D8, 0x18
+	.asciz "CopyrightKirbyPinBall"
+	.balign 4
 .global $$251853
 $$251853:
-	.incbin "baserom.dol", 0x45F2F0, 0x14
+	.asciz "CopyrightKirbyBall"
+	.balign 4
 .global $$251854
 $$251854:
-	.incbin "baserom.dol", 0x45F304, 0x14
+	.asciz "CopyrightAvalanche"
+	.balign 4
 .global $$251855
 $$251855:
-	.incbin "baserom.dol", 0x45F318, 0x10
+	.asciz "CopyrightKirby2"
 .global $$251856
 $$251856:
-	.incbin "baserom.dol", 0x45F328, 0x18
+	.asciz "CopyrightKirbyBlockBall"
 .global $$251857
 $$251857:
-	.incbin "baserom.dol", 0x45F340, 0x14
+	.asciz "CopyrightKirbySDX"
+	.balign 4
 .global $$251858
 $$251858:
-	.incbin "baserom.dol", 0x45F354, 0x1C
+	.asciz "CopyrightKirbyKidsGB"
+	.balign 4
+	.4byte 0
 .global $$251859
 $$251859:
-	.incbin "baserom.dol", 0x45F370, 0x10
+	.asciz "CopyrightKirby3"
 .global $$251860
 $$251860:
-	.incbin "baserom.dol", 0x45F380, 0x14
+	.asciz "CopyrightKirby64"
+	.balign 4
 .global $$251861
 $$251861:
-	.incbin "baserom.dol", 0x45F394, 0x18
+	.asciz "CopyrightKirbyKoroKoro"
+	.balign 4
 .global $$251862
 $$251862:
-	.incbin "baserom.dol", 0x45F3AC, 0x1C
+	.asciz "CopyrightKirbyDreamLandDX"
+	.balign 4
 .global $$251863
 $$251863:
-	.incbin "baserom.dol", 0x45F3C8, 0x18
+	.asciz "CopyrightKirbyAnime1"
+	.balign 4
 .global $$251864
 $$251864:
-	.incbin "baserom.dol", 0x45F3E0, 0x18
+	.asciz "CopyrightKirbyAirRide"
+	.balign 4
 .global $$251865
 $$251865:
-	.incbin "baserom.dol", 0x45F3F8, 0x18
+	.asciz "CopyrightKirbyMirror"
+	.balign 4
 .global $$251866
 $$251866:
-	.incbin "baserom.dol", 0x45F410, 0x14
+	.asciz "CopyrightKirbyTouch"
 .global $$251867
 $$251867:
-	.incbin "baserom.dol", 0x45F424, 0x18
+	.asciz "CopyrightKirbyDoroche"
+	.balign 4
 .global $$251868
 $$251868:
-	.incbin "baserom.dol", 0x45F43C, 0x14
+	.asciz "CopyrightKirbyDDX"
+	.balign 4
 .global $$251869
 $$251869:
-	.incbin "baserom.dol", 0x45F450, 0x18
+	.asciz "CopyrightKirbyEpicYarn"
+	.balign 4
 .global $$251870
 $$251870:
-	.incbin "baserom.dol", 0x45F468, 0x1C
+	.asciz "CopyrightKirbyMassAttack"
+	.balign 4
 .global $$251871
 $$251871:
-	.incbin "baserom.dol", 0x45F484, 0x14
+	.asciz "CopyrightKirbyWii"
+	.balign 4
 .global $$251872
 $$251872:
-	.incbin "baserom.dol", 0x45F498, 0x14
+	.asciz "CopyrightKirby20"
+	.balign 4
 .global $$253072
 $$253072:
-	.incbin "baserom.dol", 0x45F4AC, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$253073
 $$253073:
-	.incbin "baserom.dol", 0x45F4BC, 0xC
+	.asciz "ProductText"
 .global $$253155
 $$253155:
-	.incbin "baserom.dol", 0x45F4C8, 0x10
+	.asciz "CopyrightOtherT"
 .global $$253156
 $$253156:
-	.incbin "baserom.dol", 0x45F4D8, 0x3C
+	.asciz "CopyrightT"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetTexture__Q34nw4r3lyt8MaterialCFUc$$20
 $$2STRING$$2GetTexture__Q34nw4r3lyt8MaterialCFUc$$20:
-	.incbin "baserom.dol", 0x45F514, 0x34
+	.asciz "NW4R:Failed assertion texMapIdx < mGXMemNum.texMap"
+	.balign 4
 .global $$2STRING$$2GetTexture__Q34nw4r3lyt8MaterialCFUc
 $$2STRING$$2GetTexture__Q34nw4r3lyt8MaterialCFUc:
-	.incbin "baserom.dol", 0x45F548, 0xC
+	.asciz "material.h"
+	.balign 4
 .global $$2STRING$$2SetTexture__Q34nw4r3lyt8MaterialFUcRCQ34nw4r3lyt6TexMap$$20
 $$2STRING$$2SetTexture__Q34nw4r3lyt8MaterialFUcRCQ34nw4r3lyt6TexMap$$20:
-	.incbin "baserom.dol", 0x45F554, 0x34
+	.asciz "NW4R:Failed assertion texMapIdx < mGXMemNum.texMap"
+	.balign 4
 .global $$2STRING$$2SetTexture__Q34nw4r3lyt8MaterialFUcRCQ34nw4r3lyt6TexMap
 $$2STRING$$2SetTexture__Q34nw4r3lyt8MaterialFUcRCQ34nw4r3lyt6TexMap:
-	.incbin "baserom.dol", 0x45F588, 0xC
+	.asciz "material.h"
+	.balign 4
 .global $$2STRING$$2GetTexSRT__Q34nw4r3lyt8MaterialCFUl$$20
 $$2STRING$$2GetTexSRT__Q34nw4r3lyt8MaterialCFUl$$20:
-	.incbin "baserom.dol", 0x45F594, 0x34
+	.asciz "NW4R:Failed assertion texSRTIdx < mGXMemNum.texSRT"
+	.balign 4
 .global $$2STRING$$2GetTexSRT__Q34nw4r3lyt8MaterialCFUl
 $$2STRING$$2GetTexSRT__Q34nw4r3lyt8MaterialCFUl:
-	.incbin "baserom.dol", 0x45F5C8, 0xC
+	.asciz "material.h"
+	.balign 4
 .global $$2STRING$$2SetTexSRT__Q34nw4r3lyt8MaterialFUlRCQ34nw4r3lyt6TexSRT$$20
 $$2STRING$$2SetTexSRT__Q34nw4r3lyt8MaterialFUlRCQ34nw4r3lyt6TexSRT$$20:
-	.incbin "baserom.dol", 0x45F5D4, 0x34
+	.asciz "NW4R:Failed assertion texSRTIdx < mGXMemNum.texSRT"
+	.balign 4
 .global $$2STRING$$2SetTexSRT__Q34nw4r3lyt8MaterialFUlRCQ34nw4r3lyt6TexSRT
 $$2STRING$$2SetTexSRT__Q34nw4r3lyt8MaterialFUlRCQ34nw4r3lyt6TexSRT:
-	.incbin "baserom.dol", 0x45F608, 0x10
+	.asciz "material.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251800
 $$251800:
-	.incbin "baserom.dol", 0x494FE8, 0x8
+	.asciz "KSDXN"
+	.balign 4
 .global $$251801
 $$251801:
-	.incbin "baserom.dol", 0x494FF0, 0x8
+	.asciz "KBBN"
+	.balign 4
 .global $$251802
 $$251802:
-	.incbin "baserom.dol", 0x494FF8, 0x4
+	.4byte 0x4B314E00
 .global $$251803
 $$251803:
-	.incbin "baserom.dol", 0x494FFC, 0x4
+	.4byte 0x4B324E00
 .global $$251804
 $$251804:
-	.incbin "baserom.dol", 0x495000, 0x4
+	.4byte 0x4B334E00
 .global $$251805
 $$251805:
-	.incbin "baserom.dol", 0x495004, 0xC
+	.asciz "K64N"
+	.balign 4
+	.4byte 0
 .global $$251806
 $$251806:
-	.incbin "baserom.dol", 0x495010, 0x8
+	.asciz "KDreamN"
 .global $$251807
 $$251807:
-	.incbin "baserom.dol", 0x495018, 0x8
+	.asciz "KBallN"
+	.balign 4
 .global $$251810
 $$251810:
-	.incbin "baserom.dol", 0x495020, 0x8
+	.asciz "KKiraN"
+	.balign 4
 .global $$251811
 $$251811:
-	.incbin "baserom.dol", 0x495028, 0x8
+	.asciz "KCoroN"
+	.balign 4
 .global $$251813
 $$251813:
-	.incbin "baserom.dol", 0x495030, 0x8
+	.asciz "KWiiN"
+	.balign 4
 .global $$251814
 $$251814:
-	.incbin "baserom.dol", 0x495038, 0x8
+	.asciz "KUSDXN"
+	.balign 4
 .global $$251815
 $$251815:
-	.incbin "baserom.dol", 0x495040, 0x8
+	.asciz "KTouchN"
 .global $$251818
 $$251818:
-	.incbin "baserom.dol", 0x495048, 0x8
+	.asciz "KDoroN"
+	.balign 4
 .global $$251819
 $$251819:
-	.incbin "baserom.dol", 0x495050, 0x8
+	.asciz "KWoolN"
+	.balign 4
 .global $$251821
 $$251821:
-	.incbin "baserom.dol", 0x495058, 0x8
+	.asciz "KanimeN"
 .global $$251822
 $$251822:
-	.incbin "baserom.dol", 0x495060, 0x8
+	.asciz "KDonutN"
 .global $$251823
 $$251823:
-	.incbin "baserom.dol", 0x495068, 0x8
+	.asciz "Dummy"
+	.balign 4
 .global $$251825
 $$251825:
-	.incbin "baserom.dol", 0x495070, 0x4
+	.4byte 0x4B310000
 .global $$251826
 $$251826:
-	.incbin "baserom.dol", 0x495074, 0x8
+	.asciz "KDream"
+	.balign 4
 .global $$251828
 $$251828:
-	.incbin "baserom.dol", 0x49507C, 0x8
+	.asciz "KBall"
+	.balign 4
 .global $$251830
 $$251830:
-	.incbin "baserom.dol", 0x495084, 0x4
+	.4byte 0x4B320000
 .global $$251831
 $$251831:
-	.incbin "baserom.dol", 0x495088, 0x4
+	.4byte 0x4B424200
 .global $$251832
 $$251832:
-	.incbin "baserom.dol", 0x49508C, 0x8
+	.asciz "KSDX"
+	.balign 4
 .global $$251833
 $$251833:
-	.incbin "baserom.dol", 0x495094, 0x8
+	.asciz "KKira"
+	.balign 4
 .global $$251834
 $$251834:
-	.incbin "baserom.dol", 0x49509C, 0x4
+	.4byte 0x4B330000
 .global $$251835
 $$251835:
-	.incbin "baserom.dol", 0x4950A0, 0x4
+	.4byte 0x4B363400
 .global $$251836
 $$251836:
-	.incbin "baserom.dol", 0x4950A4, 0x8
+	.asciz "KCoro"
+	.balign 4
 .global $$251838
 $$251838:
-	.incbin "baserom.dol", 0x4950AC, 0xC
+	.asciz "Kanime"
+	.balign 4
+	.4byte 0
 .global $$251840
 $$251840:
-	.incbin "baserom.dol", 0x4950B8, 0x8
+	.asciz "KMirror"
 .global $$251841
 $$251841:
-	.incbin "baserom.dol", 0x4950C0, 0x8
+	.asciz "Touch"
+	.balign 4
 .global $$251842
 $$251842:
-	.incbin "baserom.dol", 0x4950C8, 0x8
+	.asciz "KDoro"
+	.balign 4
 .global $$251843
 $$251843:
-	.incbin "baserom.dol", 0x4950D0, 0x8
+	.asciz "KUSDX"
+	.balign 4
 .global $$251844
 $$251844:
-	.incbin "baserom.dol", 0x4950D8, 0x8
+	.asciz "KWool"
+	.balign 4
 .global $$251846
 $$251846:
-	.incbin "baserom.dol", 0x4950E0, 0x8
+	.asciz "KWii"
+	.balign 4
 .global $$251847
 $$251847:
-	.incbin "baserom.dol", 0x4950E8, 0x8
+	.asciz "KDonut"
+	.balign 4
 .global $$251849
 $$251849:
-	.incbin "baserom.dol", 0x4950F0, 0x4
+	.4byte 0
 .global $$253152
 $$253152:
-	.incbin "baserom.dol", 0x4950F4, 0x8
+	.asciz "Text"
+	.balign 4
 .global $$253153
 $$253153:
-	.incbin "baserom.dol", 0x4950FC, 0x8
+	.asciz "TextN"
+	.balign 4
 .global $$253154
 $$253154:
-	.incbin "baserom.dol", 0x495104, 0x4
+	.4byte 0

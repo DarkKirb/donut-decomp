@@ -400,46 +400,61 @@ __dt__Q53scn4step5enemy11broomhatter15StateCreditWalkFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common15StateCreditWalk
 __vt__Q53scn4step5enemy6common15StateCreditWalk:
-	.incbin "baserom.dol", 0x46F0E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802919B8  ;# ptr
+	.4byte 0x80291A14  ;# ptr
+	.4byte 0x80291A18  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80291A70  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11broomhatter15StateCreditWalk
 __vt__Q53scn4step5enemy11broomhatter15StateCreditWalk:
-	.incbin "baserom.dol", 0x470F98, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A131C  ;# ptr
+	.4byte 0x802A1100  ;# ptr
+	.4byte 0x802A12D0  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A1318  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256619
 $$256619:
-	.incbin "baserom.dol", 0x49BAF0, 0x4
+	.4byte 0x3CA3D70A
 .global $$256620
 $$256620:
-	.incbin "baserom.dol", 0x49BAF4, 0x4
+	.4byte 0x3A83126F
 .global $$256621
 $$256621:
-	.incbin "baserom.dol", 0x49BAF8, 0x4
+	.4byte 0x3CF5C28F
 .global $$256622
 $$256622:
-	.incbin "baserom.dol", 0x49BAFC, 0x4
+	.4byte 0x3B03126F
 .global $$256623
 $$256623:
-	.incbin "baserom.dol", 0x49BB00, 0x4
+	.4byte 0x3D23D70A
 .global $$256624
 $$256624:
-	.incbin "baserom.dol", 0x49BB04, 0x4
+	.4byte 0x3B449BA6
 .global $$256625
 $$256625:
-	.incbin "baserom.dol", 0x49BB08, 0x4
+	.4byte 0x3D75C28F
 .global $$256626
 $$256626:
-	.incbin "baserom.dol", 0x49BB0C, 0x4
+	.4byte 0x3B83126F
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256990
 $$256990:
-	.incbin "baserom.dol", 0x49BF50, 0x4
+	.4byte 0
 .global $$256991
 $$256991:
-	.incbin "baserom.dol", 0x49BF54, 0x4
+	.4byte 0x40000000
 .global $$256995
 $$256995:
-	.incbin "baserom.dol", 0x49BF58, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -1077,30 +1077,149 @@ GXSetNumTexGens:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23194
 $$23194:
-	.incbin "baserom.dol", 0x42CB70, 0x68
+	.4byte 0x800337C0  ;# ptr
+	.4byte 0x800337D4  ;# ptr
+	.4byte 0x800337E8  ;# ptr
+	.4byte 0x800337FC  ;# ptr
+	.4byte 0x80033810  ;# ptr
+	.4byte 0x80033824  ;# ptr
+	.4byte 0x80033838  ;# ptr
+	.4byte 0x8003384C  ;# ptr
+	.4byte 0x80033860  ;# ptr
+	.4byte 0x80033874  ;# ptr
+	.4byte 0x80033888  ;# ptr
+	.4byte 0x800338F0  ;# ptr
+	.4byte 0x80033904  ;# ptr
+	.4byte 0x80033918  ;# ptr
+	.4byte 0x8003392C  ;# ptr
+	.4byte 0x80033940  ;# ptr
+	.4byte 0x80033954  ;# ptr
+	.4byte 0x80033968  ;# ptr
+	.4byte 0x8003397C  ;# ptr
+	.4byte 0x80033990  ;# ptr
+	.4byte 0x800339A4  ;# ptr
+	.4byte 0x800339B4  ;# ptr
+	.4byte 0x800339B4  ;# ptr
+	.4byte 0x800339B4  ;# ptr
+	.4byte 0x800339B4  ;# ptr
+	.4byte 0x800338BC  ;# ptr
 .global $$23337
 $$23337:
-	.incbin "baserom.dol", 0x42CBD8, 0x68
+	.4byte 0x80033C10  ;# ptr
+	.4byte 0x80033C20  ;# ptr
+	.4byte 0x80033C30  ;# ptr
+	.4byte 0x80033C40  ;# ptr
+	.4byte 0x80033C50  ;# ptr
+	.4byte 0x80033C60  ;# ptr
+	.4byte 0x80033C70  ;# ptr
+	.4byte 0x80033C80  ;# ptr
+	.4byte 0x80033C90  ;# ptr
+	.4byte 0x80033CA0  ;# ptr
+	.4byte 0x80033CB0  ;# ptr
+	.4byte 0x80033CF8  ;# ptr
+	.4byte 0x80033D08  ;# ptr
+	.4byte 0x80033D18  ;# ptr
+	.4byte 0x80033D28  ;# ptr
+	.4byte 0x80033D38  ;# ptr
+	.4byte 0x80033D48  ;# ptr
+	.4byte 0x80033D58  ;# ptr
+	.4byte 0x80033D68  ;# ptr
+	.4byte 0x80033D78  ;# ptr
+	.4byte 0x80033D88  ;# ptr
+	.4byte 0x80033D98  ;# ptr
+	.4byte 0x80033D98  ;# ptr
+	.4byte 0x80033D98  ;# ptr
+	.4byte 0x80033D98  ;# ptr
+	.4byte 0x80033CD4  ;# ptr
 .global $$23383
 $$23383:
-	.incbin "baserom.dol", 0x42CC40, 0x44
+	.4byte 0x80033E20  ;# ptr
+	.4byte 0x80033E38  ;# ptr
+	.4byte 0x80033E74  ;# ptr
+	.4byte 0x80033E88  ;# ptr
+	.4byte 0x80033E9C  ;# ptr
+	.4byte 0x80033EB4  ;# ptr
+	.4byte 0x80033ECC  ;# ptr
+	.4byte 0x80033EE4  ;# ptr
+	.4byte 0x80033EFC  ;# ptr
+	.4byte 0x80033F1C  ;# ptr
+	.4byte 0x80033F34  ;# ptr
+	.4byte 0x80033F4C  ;# ptr
+	.4byte 0x80033F60  ;# ptr
+	.4byte 0x80033F60  ;# ptr
+	.4byte 0x80033F60  ;# ptr
+	.4byte 0x80033F60  ;# ptr
+	.4byte 0x80033E38  ;# ptr
 .global $$23413
 $$23413:
-	.incbin "baserom.dol", 0x42CC84, 0x44
+	.4byte 0x80033FD8  ;# ptr
+	.4byte 0x80033FF0  ;# ptr
+	.4byte 0x8003402C  ;# ptr
+	.4byte 0x80034040  ;# ptr
+	.4byte 0x80034054  ;# ptr
+	.4byte 0x8003406C  ;# ptr
+	.4byte 0x80034084  ;# ptr
+	.4byte 0x8003409C  ;# ptr
+	.4byte 0x800340B4  ;# ptr
+	.4byte 0x800340D4  ;# ptr
+	.4byte 0x800340EC  ;# ptr
+	.4byte 0x80034104  ;# ptr
+	.4byte 0x80034118  ;# ptr
+	.4byte 0x80034118  ;# ptr
+	.4byte 0x80034118  ;# ptr
+	.4byte 0x80034118  ;# ptr
+	.4byte 0x80033FF0  ;# ptr
 .global $$23456
 $$23456:
-	.incbin "baserom.dol", 0x42CCC8, 0x44
+	.4byte 0x80034210  ;# ptr
+	.4byte 0x80034238  ;# ptr
+	.4byte 0x8003429C  ;# ptr
+	.4byte 0x800342C0  ;# ptr
+	.4byte 0x800342E4  ;# ptr
+	.4byte 0x8003430C  ;# ptr
+	.4byte 0x80034334  ;# ptr
+	.4byte 0x8003435C  ;# ptr
+	.4byte 0x80034384  ;# ptr
+	.4byte 0x800343AC  ;# ptr
+	.4byte 0x800343D4  ;# ptr
+	.4byte 0x800343FC  ;# ptr
+	.4byte 0x80034424  ;# ptr
+	.4byte 0x80034424  ;# ptr
+	.4byte 0x80034424  ;# ptr
+	.4byte 0x80034424  ;# ptr
+	.4byte 0x80034238  ;# ptr
 .global $$23589
 $$23589:
-	.incbin "baserom.dol", 0x42CD0C, 0x54
+	.4byte 0x800344BC  ;# ptr
+	.4byte 0x800344C8  ;# ptr
+	.4byte 0x800344D4  ;# ptr
+	.4byte 0x800344E0  ;# ptr
+	.4byte 0x800344FC  ;# ptr
+	.4byte 0x80034504  ;# ptr
+	.4byte 0x8003450C  ;# ptr
+	.4byte 0x80034514  ;# ptr
+	.4byte 0x8003451C  ;# ptr
+	.4byte 0x80034524  ;# ptr
+	.4byte 0x8003452C  ;# ptr
+	.4byte 0x80034534  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x80034538  ;# ptr
+	.4byte 0x800344EC  ;# ptr
+	.4byte 0x800344F4  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl1
 $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl1:
-	.incbin "baserom.dol", 0x492950, 0x4
+	.4byte 0x00040102
 .global $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl2$$20
 $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl2$$20:
-	.incbin "baserom.dol", 0x492954, 0x4
+	.4byte 0x00080102
 .global $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl3$$21
 $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl3$$21:
-	.incbin "baserom.dol", 0x492958, 0x8
+	.4byte 0x000C0102
+	.4byte 0

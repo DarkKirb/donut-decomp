@@ -136,24 +136,28 @@ set__Q53scn4step4info9challenge4TimeFUl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252024
 $$252024:
-	.incbin "baserom.dol", 0x48C998, 0x14
+	.asciz "step/challenge/Main"
 .global $$252084
 $$252084:
-	.incbin "baserom.dol", 0x48C9AC, 0xC
+	.asciz "FrameText"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252025
 $$252025:
-	.incbin "baserom.dol", 0x497C90, 0x8
+	.asciz "Time"
+	.balign 4
 .global $$252080
 $$252080:
-	.incbin "baserom.dol", 0x497C98, 0x8
+	.asciz "MinText"
 .global $$252081
 $$252081:
-	.incbin "baserom.dol", 0x497CA0, 0x8
+	.4byte 0x25750000
+	.4byte 0
 .global $$252082
 $$252082:
-	.incbin "baserom.dol", 0x497CA8, 0x8
+	.asciz "SecText"
 .global $$252083
 $$252083:
-	.incbin "baserom.dol", 0x497CB0, 0x8
+	.asciz "%02u"
+	.balign 4

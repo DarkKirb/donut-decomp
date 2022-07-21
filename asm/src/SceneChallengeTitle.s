@@ -459,31 +459,57 @@ GetRuntimeTypeInfo__Q33scn14challengetitle19SceneChallengeTitleCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252713
 $$252713:
-	.incbin "baserom.dol", 0x45AE78, 0x18
+	.asciz "ChallengeTitleCommon.dn"
 .global $$252714
 $$252714:
-	.incbin "baserom.dol", 0x45AE90, 0x10
+	.asciz "StepCommon.dn"
+	.balign 4
 .global $$252715
 $$252715:
-	.incbin "baserom.dol", 0x45AEA0, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$252716
 $$252716:
-	.incbin "baserom.dol", 0x45AEB4, 0x10
+	.asciz "StepHrKirby.dn"
+	.balign 4
 .global $$252717
 $$252717:
-	.incbin "baserom.dol", 0x45AEC4, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$252718
 $$252718:
-	.incbin "baserom.dol", 0x45AED8, 0x14
+	.asciz "StepFirstDemo.dn"
+	.balign 4
 .global $$252719
 $$252719:
-	.incbin "baserom.dol", 0x45AEEC, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$252720
 $$252720:
-	.incbin "baserom.dol", 0x45AF00, 0x10
+	.asciz "StaffCredit.dn"
+	.balign 4
 .global __vt__Q33scn14challengetitle19SceneChallengeTitle
 __vt__Q33scn14challengetitle19SceneChallengeTitle:
-	.incbin "baserom.dol", 0x45AF10, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x801EFBBC  ;# ptr
+	.4byte 0x801EFA0C  ;# ptr
+	.4byte 0x801EFAA0  ;# ptr
+	.4byte 0x801EFA78  ;# ptr
+	.4byte 0x801EFAF4  ;# ptr
+	.4byte 0x801EFB1C  ;# ptr
+	.4byte 0x801EFB44  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn14challengetitle19SceneChallengeTitle$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

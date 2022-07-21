@@ -584,43 +584,44 @@ lbl_802A8E30:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258039
 $$258039:
-	.incbin "baserom.dol", 0x49C118, 0x4
+	.4byte 0
 .global $$258040
 $$258040:
-	.incbin "baserom.dol", 0x49C11C, 0x4
+	.4byte 0x41200000
 .global $$258041
 $$258041:
-	.incbin "baserom.dol", 0x49C120, 0x4
+	.4byte 0x3C23D70A
 .global $$258042
 $$258042:
-	.incbin "baserom.dol", 0x49C124, 0x4
+	.4byte 0xBE99999A
 .global $$258043
 $$258043:
-	.incbin "baserom.dol", 0x49C128, 0x4
+	.4byte 0x3FA66666
 .global $$258044
 $$258044:
-	.incbin "baserom.dol", 0x49C12C, 0x4
+	.4byte 0x3F800000
 .global $$258048
 $$258048:
-	.incbin "baserom.dol", 0x49C130, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$258168
 $$258168:
-	.incbin "baserom.dol", 0x49C138, 0x4
+	.4byte 0x3E800000
 .global $$258172
 $$258172:
-	.incbin "baserom.dol", 0x49C13C, 0x4
+	.4byte 0x3DCCCCCD
 .global $$258173
 $$258173:
-	.incbin "baserom.dol", 0x49C140, 0x4
+	.4byte 0x3F8CCCCD
 .global $$258174
 $$258174:
-	.incbin "baserom.dol", 0x49C144, 0x4
+	.4byte 0x3F733333
 .global $$258175
 $$258175:
-	.incbin "baserom.dol", 0x49C148, 0x4
+	.4byte 0x3F99999A
 .global $$258216
 $$258216:
-	.incbin "baserom.dol", 0x49C14C, 0x4
+	.4byte 0x400CCCCD
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q53scn4step6weapon10comothread6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

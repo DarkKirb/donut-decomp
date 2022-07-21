@@ -253,32 +253,61 @@ kind__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254958
 $$254958:
-	.incbin "baserom.dol", 0x47CE30, 0x18
+	.asciz "FighterDoorAppearance00"
 .global $$254959
 $$254959:
-	.incbin "baserom.dol", 0x47CE48, 0x1C
+	.asciz "SumaburaDoorAppearance00"
+	.balign 4
 .global $$254966
 $$254966:
-	.incbin "baserom.dol", 0x47CE64, 0x24
+	.asciz "step/gimmick/ChallengeMusouBoard"
+	.balign 4
 .global $$254967
 $$254967:
-	.incbin "baserom.dol", 0x47CE88, 0x20
+	.asciz "step/gimmick/ChallengeMusouIcon"
 .global $$254968
 $$254968:
-	.incbin "baserom.dol", 0x47CEA8, 0x20
+	.asciz "step/gimmick/DoorChallengeMusou"
 .global $$255023
 $$255023:
-	.incbin "baserom.dol", 0x47CEC8, 0x34
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Unlock.UnlockDoor"
+	.balign 4
 .global __vt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusou
 __vt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusou:
-	.incbin "baserom.dol", 0x47CEFC, 0x84
+	.4byte 0
+	.4byte 0
+	.4byte 0x8030918C
+	.4byte 0x80309410
+	.4byte 0x803091F8
+	.4byte 0x80306D6C
+	.4byte 0x80306D70
+	.4byte 0x80306D74
+	.4byte 0x80306D78
+	.4byte 0x80309278
+	.4byte 0x803092BC
+	.4byte 0x803076D8
+	.4byte 0x80309300
+	.4byte 0x803076E0
+	.4byte 0x80309354
+	.4byte 0x80307C68
+	.4byte 0x80307BA0
+	.4byte 0x80307BC8
+	.4byte 0x80307C24
+	.4byte 0x803079C0
+	.4byte 0x803079CC
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254960
 $$254960:
-	.incbin "baserom.dol", 0x496A28, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255018
 $$255018:
-	.incbin "baserom.dol", 0x49D308, 0x8
+	.4byte 0
+	.4byte 0

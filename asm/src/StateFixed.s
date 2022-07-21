@@ -63,4 +63,9 @@ __dt__Q53scn4step4item5state10StateFixedFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state10StateFixed
 __vt__Q53scn4step4item5state10StateFixed:
-	.incbin "baserom.dol", 0x48E6C0, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C7E08
+	.4byte 0x803C51FC
+	.4byte 0x803C7D98
+	.4byte 0x803C5204

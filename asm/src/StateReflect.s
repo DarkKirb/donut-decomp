@@ -667,37 +667,55 @@ procObjCollReact__Q53scn4step6weapon8deespear12StateReflectFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10spearspear12StateReflect
 __vt__Q53scn4step6weapon10spearspear12StateReflect:
-	.incbin "baserom.dol", 0x4907E0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803E471C
+	.4byte 0x803E47C8
+	.4byte 0x803E48C0
+	.4byte 0x803D895C
+	.4byte 0x803E48C4
+	.4byte 0x803E4AF4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear12StateReflect
 __vt__Q53scn4step6weapon8deespear12StateReflect:
-	.incbin "baserom.dol", 0x4910A8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803ED730
+	.4byte 0x803ED7DC
+	.4byte 0x803ED8D4
+	.4byte 0x803D895C
+	.4byte 0x803ED8D8
+	.4byte 0x803EDB08
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257330
 $$257330:
-	.incbin "baserom.dol", 0x49EA58, 0x8
+	.4byte 0
+	.4byte 0
 .global $$257334
 $$257334:
-	.incbin "baserom.dol", 0x49EA60, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$257379
 $$257379:
-	.incbin "baserom.dol", 0x49EA68, 0x4
+	.4byte 0x43B40000
 .global $$257391
 $$257391:
-	.incbin "baserom.dol", 0x49EA6C, 0x4
+	.4byte 0xBDCCCCCD
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257330
 $$257330:
-	.incbin "baserom.dol", 0x49EC40, 0x8
+	.4byte 0
+	.4byte 0
 .global $$257334
 $$257334:
-	.incbin "baserom.dol", 0x49EC48, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$257379
 $$257379:
-	.incbin "baserom.dol", 0x49EC50, 0x4
+	.4byte 0x43B40000
 .global $$257391
 $$257391:
-	.incbin "baserom.dol", 0x49EC54, 0x4
+	.4byte 0xBDCCCCCD

@@ -442,115 +442,204 @@ lbl_8038CCC0:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21
 $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21:
-	.incbin "baserom.dol", 0x41BB70, 0x90
+	.4byte 0x8055B2E8
+	.4byte 0
+	.4byte 0x8048B698
+	.4byte 0
+	.4byte 0x8048B6A8
+	.4byte 0
+	.4byte 0x8055B2F0
+	.4byte 0
+	.4byte 0x8048B6B8
+	.4byte 0
+	.4byte 0x8048B6C8
+	.4byte 0
+	.4byte 0x8055B2F8
+	.4byte 0
+	.4byte 0x8055B300
+	.4byte 0
+	.4byte 0x8048B6D8
+	.4byte 0
+	.4byte 0x8048B6E8
+	.4byte 0
+	.4byte 0x8048B6F4
+	.4byte 0
+	.4byte 0x8048B700
+	.4byte 0
+	.4byte 0x8055B308
+	.4byte 0
+	.4byte 0x8048B70C
+	.4byte 0
+	.4byte 0x8048B71C
+	.4byte 0
+	.4byte 0x8048B72C
+	.4byte 0
+	.4byte 0x8048B738
+	.4byte 0
+	.4byte 0x8048B748
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248821
 $$248821:
-	.incbin "baserom.dol", 0x4876D8, 0x20
+	.asciz "step/chara/hero/kirby/whip/Hat"
+	.balign 4
 .global $$248823
 $$248823:
-	.incbin "baserom.dol", 0x4876F8, 0x20
+	.asciz "step/chara/hero/kirby/whip/Whip"
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x487718, 0xC
+	.asciz "WhipHandM"
+	.balign 4
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x487724, 0xC
+	.asciz "WhipWhipM"
+	.balign 4
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x487730, 0xC
+	.asciz "WhipWhip7DJ"
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x48773C, 0xC
+	.asciz "WhipWhip5DJ"
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x487748, 0xC
+	.asciz "WhipWhip3DJ"
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x487754, 0xC
+	.asciz "WhipWhip1DJ"
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x487760, 0x10
+	.asciz "WhipWhip9DJ"
+	.4byte 0
 .global $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21
 $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2names$$21:
-	.incbin "baserom.dol", 0x487770, 0x28
+	.4byte 0x8055B2D0
+	.4byte 0x8055B2D8
+	.4byte 0x8048B618
+	.4byte 0x8048B624
+	.4byte 0x8055B2E0
+	.4byte 0x8048B630
+	.4byte 0x8048B63C
+	.4byte 0x8048B648
+	.4byte 0x8048B654
+	.4byte 0x8048B660
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x487798, 0x10
+	.asciz "WhipCatchStart"
+	.balign 4
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x4877A8, 0x10
+	.asciz "WhipCatchCharge"
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x4877B8, 0x10
+	.asciz "WhipCatchWait"
+	.balign 4
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x4877C8, 0x10
+	.asciz "WhipCatchEnd"
+	.balign 4
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x4877D8, 0x10
+	.asciz "WhipRushStart"
+	.balign 4
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x4877E8, 0xC
+	.asciz "WhipRush"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x4877F4, 0xC
+	.asciz "WhipRushEnd"
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x487800, 0xC
+	.asciz "GazerSpiral"
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x48780C, 0x10
+	.asciz "WhipSlamFront"
+	.balign 4
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x48781C, 0x10
+	.asciz "WhipSlamBack"
+	.balign 4
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x48782C, 0xC
+	.asciz "WhipSlamUp"
+	.balign 4
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x487838, 0x10
+	.asciz "WhipSlamDown"
+	.balign 4
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x487848, 0x10
+	.asciz "WhipReset"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256579
 $$256579:
-	.incbin "baserom.dol", 0x4897B0, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$256580
 $$256580:
-	.incbin "baserom.dol", 0x4897D0, 0x24
+	.asciz "step/chara/hero/kirby/whip/Motion"
+	.balign 4
 .global __vt__Q53scn4step4hero4whip4Whip
 __vt__Q53scn4step4hero4whip4Whip:
-	.incbin "baserom.dol", 0x4897F4, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038C804
+	.4byte 0x8038C8A4
+	.4byte 0x8032B7A0
+	.4byte 0x8032B7A4
+	.4byte 0x8032B7A8
+	.4byte 0x8038C9C4
+	.4byte 0x8038CC64
+	.4byte 0x8032B7B4
+	.4byte 0x8032B7B8
+	.4byte 0x8032B7BC
+	.4byte 0x8032B7C0
+	.4byte 0x8032B7C4
+	.4byte 0x8032B7C8
+	.4byte 0x8032B7CC
+	.4byte 0x8032B7D0
+	.4byte 0x8032B7D4
+	.4byte 0x8032B7D8
+	.4byte 0x8038CB28
+	.4byte 0x8032B7E0
+	.4byte 0x8032B7E4
+	.4byte 0x8032B7E8
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x4976B0, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x4976B8, 0x8
+	.asciz "AllL"
+	.balign 4
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x4976C0, 0x8
+	.asciz "ConstL"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x4976C8, 0x8
+	.asciz "Carry"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x4976D0, 0x8
+	.asciz "Whip"
+	.balign 4
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x4976D8, 0x8
+	.asciz "WhipUp"
+	.balign 4
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x4976E0, 0x8
+	.asciz "WhipAir"
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x4976E8, 0x8
+	.asciz "Drill"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2WhipModel__Q53scn4step4hero9modeldesc4WhipFv$$2desc

@@ -942,111 +942,155 @@ decide__Q33app17NANDErrorMenuImpl6ButtonFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251882
 $$251882:
-	.incbin "baserom.dol", 0x44EFE0, 0x10
+	.asciz "resident/Main"
+	.balign 4
 .global $$253133
 $$253133:
-	.incbin "baserom.dol", 0x44EFF0, 0xC
+	.asciz "NANDError"
+	.balign 4
 .global $$253141
 $$253141:
-	.incbin "baserom.dol", 0x44EFFC, 0x10
+	.asciz "NANDErrorMenu"
+	.balign 4
 .global $$253194
 $$253194:
-	.incbin "baserom.dol", 0x44F00C, 0x10
+	.asciz "SaveCheckBase"
+	.balign 4
 .global $$253195
 $$253195:
-	.incbin "baserom.dol", 0x44F01C, 0xC
+	.asciz "SaveCheck"
+	.balign 4
 .global $$253196
 $$253196:
-	.incbin "baserom.dol", 0x44F028, 0xC
+	.asciz "Button01N"
+	.balign 4
 .global $$253197
 $$253197:
-	.incbin "baserom.dol", 0x44F034, 0xC
+	.asciz "Button02N"
+	.balign 4
 .global $$253303
 $$253303:
-	.incbin "baserom.dol", 0x44F040, 0x10
+	.asciz "ReturnToMenu"
+	.balign 4
 .global $$253307
 $$253307:
-	.incbin "baserom.dol", 0x44F050, 0xC
+	.asciz "NoSaveLoad"
+	.balign 4
 .global $$253308
 $$253308:
-	.incbin "baserom.dol", 0x44F05C, 0xC
+	.asciz "DeleteFile"
+	.balign 4
 .global $$253313
 $$253313:
-	.incbin "baserom.dol", 0x44F068, 0xC
+	.asciz "EmptyBlock"
+	.balign 4
 .global $$253314
 $$253314:
-	.incbin "baserom.dol", 0x44F074, 0xC
+	.asciz "EmptyINode"
+	.balign 4
 .global $$253315
 $$253315:
-	.incbin "baserom.dol", 0x44F080, 0xC
+	.asciz "BrokenWarn"
+	.balign 4
 .global $$253319
 $$253319:
-	.incbin "baserom.dol", 0x44F08C, 0x10
+	.asciz "WinSelectText"
+	.balign 4
 .global $$253323
 $$253323:
-	.incbin "baserom.dol", 0x44F09C, 0x2C
+	.4byte 0x8017A0E8  ;# ptr
+	.4byte 0x8017A074  ;# ptr
+	.4byte 0x8017A080  ;# ptr
+	.4byte 0x8017A08C  ;# ptr
+	.4byte 0x8017A098  ;# ptr
+	.4byte 0x8017A0AC  ;# ptr
+	.4byte 0x8017A0C0  ;# ptr
+	.4byte 0x8017A0AC  ;# ptr
+	.4byte 0x8017A0D4  ;# ptr
+	.4byte 0x8017A0E8  ;# ptr
+	.4byte 0x8017A0AC  ;# ptr
 .global $$253362
 $$253362:
-	.incbin "baserom.dol", 0x44F0C8, 0x10
+	.asciz "SaveCheckButton"
 .global $$253374
 $$253374:
-	.incbin "baserom.dol", 0x44F0D8, 0xC
+	.asciz "NoChoice"
+	.balign 4
 .global $$253377
 $$253377:
-	.incbin "baserom.dol", 0x44F0E4, 0x3C
+	.asciz "ButtonText"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2
 T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2:
-	.incbin "baserom.dol", 0x493010, 0x4
+	.4byte 0x80452EE0
 .global $$253132
 $$253132:
-	.incbin "baserom.dol", 0x493014, 0x8
+	.asciz "%s%s%s"
+	.balign 4
 .global $$253198
 $$253198:
-	.incbin "baserom.dol", 0x49301C, 0x8
+	.asciz "WinN"
+	.balign 4
 .global $$253304
 $$253304:
-	.incbin "baserom.dol", 0x493024, 0x8
+	.asciz "NoSave"
+	.balign 4
 .global $$253305
 $$253305:
-	.incbin "baserom.dol", 0x49302C, 0x4
+	.4byte 0x59657300
 .global $$253306
 $$253306:
-	.incbin "baserom.dol", 0x493030, 0x8
+	.asciz "Cancel"
+	.balign 4
 .global $$253309
 $$253309:
-	.incbin "baserom.dol", 0x493038, 0x4
+	.4byte 0
 .global $$253310
 $$253310:
-	.incbin "baserom.dol", 0x49303C, 0x8
+	.asciz "Error"
+	.balign 4
 .global $$253311
 $$253311:
-	.incbin "baserom.dol", 0x493044, 0xC
+	.asciz "Failed"
+	.balign 4
+	.4byte 0
 .global $$253312
 $$253312:
-	.incbin "baserom.dol", 0x493050, 0x8
+	.asciz "Corrupt"
 .global $$253316
 $$253316:
-	.incbin "baserom.dol", 0x493058, 0x8
+	.asciz "Wait02"
+	.balign 4
 .global $$253317
 $$253317:
-	.incbin "baserom.dol", 0x493060, 0x8
+	.asciz "WinText"
 .global $$253318
 $$253318:
-	.incbin "baserom.dol", 0x493068, 0x8
+	.asciz "Wait01"
+	.balign 4
 .global $$253320
 $$253320:
-	.incbin "baserom.dol", 0x493070, 0x8
+	.asciz "Item"
+	.balign 4
 .global $$253321
 $$253321:
-	.incbin "baserom.dol", 0x493078, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$253359
 $$253359:
-	.incbin "baserom.dol", 0x493080, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$253373
 $$253373:
-	.incbin "baserom.dol", 0x493088, 0x8
+	.asciz "Choice"
+	.balign 4
 .global $$253381
 $$253381:
-	.incbin "baserom.dol", 0x493090, 0x8
+	.asciz "Decide"
+	.balign 4

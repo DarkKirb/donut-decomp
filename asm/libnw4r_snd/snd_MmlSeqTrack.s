@@ -62,4 +62,7 @@ lbl_8010B11C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail11MmlSeqTrack
 __vt__Q44nw4r3snd6detail11MmlSeqTrack:
-	.incbin "baserom.dol", 0x43E440, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010B0E0  ;# ptr
+	.4byte 0x8010B0C0  ;# ptr

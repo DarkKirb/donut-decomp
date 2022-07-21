@@ -12,34 +12,52 @@ FDNName__Q43scn4step3map20BinCarryItemKindUtilFQ43scn4step3map16BinCarryItemKind
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248723
 $$248723:
-	.incbin "baserom.dol", 0x48E770, 0x18
+	.asciz "StepItAbilityStar.dn"
+	.balign 4
 .global $$248724
 $$248724:
-	.incbin "baserom.dol", 0x48E788, 0x14
+	.asciz "StepItLockKey.dn"
+	.balign 4
 .global $$248725
 $$248725:
-	.incbin "baserom.dol", 0x48E79C, 0x14
+	.asciz "StepItMTomatoBox.dn"
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x48E7B0, 0x10
+	.asciz "StepItCandle.dn"
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x48E7C0, 0x18
+	.asciz "StepItCracker.dn"
+	.balign 4
+	.4byte 0
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x48E7D8, 0x18
+	.asciz "StepItInvisibleStone.dn"
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x48E7F0, 0x18
+	.asciz "StepItBalloonBomb.dn"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x48E808, 0x14
+	.asciz "StepItStepShoe.dn"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x48E81C, 0x18
+	.asciz "StepItPrismShield.dn"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x48E834, 0x18
+	.asciz "StepItRepairParts.dn"
+	.balign 4
 .global T_FDN_NAME_TABLE__Q43scn4step3map34$$2unnamed$$2BinCarryItemKindUtil_cpp$$2
 T_FDN_NAME_TABLE__Q43scn4step3map34$$2unnamed$$2BinCarryItemKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x48E84C, 0x2C
+	.4byte 0x80492670
+	.4byte 0x80492688
+	.4byte 0x8049269C
+	.4byte 0x804926B0
+	.4byte 0x804926C0
+	.4byte 0x804926D8
+	.4byte 0x804926F0
+	.4byte 0x80492708
+	.4byte 0x8049271C
+	.4byte 0x8049269C
+	.4byte 0x80492734

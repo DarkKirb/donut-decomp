@@ -819,16 +819,18 @@ endAABottomHalf__Q23gfx13RenderSettingFPv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248878
 $$248878:
-	.incbin "baserom.dol", 0x49A260, 0x4
+	.4byte 0x000000FF
 .global $$249375
 $$249375:
-	.incbin "baserom.dol", 0x49A264, 0x4
+	.4byte 0
 .global $$249379
 $$249379:
-	.incbin "baserom.dol", 0x49A268, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$249423
 $$249423:
-	.incbin "baserom.dol", 0x49A270, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global garbage__27$$2unnamed$$2RenderSetting_cpp$$2

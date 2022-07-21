@@ -43,4 +43,11 @@ __dt__Q53scn4step5enemy6chilly15StateLookAroundFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6chilly15StateLookAround
 __vt__Q53scn4step5enemy6chilly15StateLookAround:
-	.incbin "baserom.dol", 0x471A30, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A68EC  ;# ptr
+	.4byte 0x802A68E4  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A68E8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

@@ -333,10 +333,10 @@ btu_stop_timer:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global btu_count
 btu_count:
-	.incbin "baserom.dol", 0x492CD0, 0x4
+	.4byte 0x01000000
 .global execute_btu
 execute_btu:
-	.incbin "baserom.dol", 0x492CD4, 0x4
+	.4byte 0x00000001
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global btu_cb

@@ -1861,56 +1861,77 @@ lbl_80353788:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$261676
 $$261676:
-	.incbin "baserom.dol", 0x4815A0, 0x50
+	.4byte 0x80352B68
+	.4byte 0x80352AE4
+	.4byte 0x80352B3C
+	.4byte 0x80352B68
+	.4byte 0x80352AE4
+	.4byte 0x80352B10
+	.4byte 0x80352B68
+	.4byte 0x80352B68
+	.4byte 0x80352AE4
+	.4byte 0x80352AE4
+	.4byte 0x80352B68
+	.4byte 0x80352B3C
+	.4byte 0x80352B68
+	.4byte 0x80352B68
+	.4byte 0x80352B68
+	.4byte 0x80352B68
+	.4byte 0x80352B68
+	.4byte 0x80352B10
+	.4byte 0x80352B68
+	.4byte 0x80352B10
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258605
 $$258605:
-	.incbin "baserom.dol", 0x496E08, 0x4
+	.4byte 0xBF800000
 .global $$258606
 $$258606:
-	.incbin "baserom.dol", 0x496E0C, 0x4
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$261280
 $$261280:
-	.incbin "baserom.dol", 0x49D910, 0x4
+	.4byte 0
 .global $$261281
 $$261281:
-	.incbin "baserom.dol", 0x49D914, 0x4
+	.4byte 0x3F800000
 .global $$261379
 $$261379:
-	.incbin "baserom.dol", 0x49D918, 0x4
+	.4byte 0xB727C5AC
 .global $$261380
 $$261380:
-	.incbin "baserom.dol", 0x49D91C, 0x4
+	.4byte 0x3727C5AC
 .global $$261455
 $$261455:
-	.incbin "baserom.dol", 0x49D920, 0x4
+	.4byte 0x42480000
 .global $$261456
 $$261456:
-	.incbin "baserom.dol", 0x49D924, 0x4
+	.4byte 0x43020000
 .global $$261457
 $$261457:
-	.incbin "baserom.dol", 0x49D928, 0x4
+	.4byte 0x3DCCCCCD
 .global $$261458
 $$261458:
-	.incbin "baserom.dol", 0x49D92C, 0x4
+	.4byte 0x3E800000
 .global $$261459
 $$261459:
-	.incbin "baserom.dol", 0x49D930, 0x8
+	.4byte 0x3E4CCCCD
+	.4byte 0
 .global $$261462
 $$261462:
-	.incbin "baserom.dol", 0x49D938, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$261573
 $$261573:
-	.incbin "baserom.dol", 0x49D940, 0x4
+	.4byte 0x3F000000
 .global $$261672
 $$261672:
-	.incbin "baserom.dol", 0x49D944, 0x4
+	.4byte 0xBF800000
 .global $$261673
 $$261673:
-	.incbin "baserom.dol", 0x49D948, 0x4
+	.4byte 0x43340000
 .global $$261778
 $$261778:
-	.incbin "baserom.dol", 0x49D94C, 0x4
+	.4byte 0x3E99999A

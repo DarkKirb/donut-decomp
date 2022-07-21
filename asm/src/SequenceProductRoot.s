@@ -402,7 +402,16 @@ __dt__Q23seq19SequenceProductRootFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq19SequenceProductRoot
 __vt__Q23seq19SequenceProductRoot:
-	.incbin "baserom.dol", 0x4925A0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FF964
+	.4byte 0x803FF968
+	.4byte 0x803FF554
+	.4byte 0x803FF584
+	.4byte 0x803FF5E8
+	.4byte 0x803FF604
+	.4byte 0x803FF7D8
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q23seq19SequenceProductRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

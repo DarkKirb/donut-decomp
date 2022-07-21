@@ -239,32 +239,47 @@ procFixPos__Q53scn4step4boss9moundeath16StateMoveForwardFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common16StateMoveForward
 __vt__Q53scn4step4boss6common16StateMoveForward:
-	.incbin "baserom.dol", 0x462570, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802475D4  ;# ptr
+	.4byte 0x802475D8  ;# ptr
+	.4byte 0x802475DC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80247634  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath16StateMoveForward
 __vt__Q53scn4step4boss9moundeath16StateMoveForward:
-	.incbin "baserom.dol", 0x4651A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80255E64  ;# ptr
+	.4byte 0x80255E68  ;# ptr
+	.4byte 0x80255ECC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80256018  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254872
 $$254872:
-	.incbin "baserom.dol", 0x49B408, 0x4
+	.4byte 0x428C0000
 .global $$254873
 $$254873:
-	.incbin "baserom.dol", 0x49B40C, 0x4
+	.4byte 0x44340000
 .global $$254874
 $$254874:
-	.incbin "baserom.dol", 0x49B410, 0x4
+	.4byte 0x4222F983
 .global $$254875
 $$254875:
-	.incbin "baserom.dol", 0x49B414, 0x4
+	.4byte 0x3C8EFA35
 .global $$254876
 $$254876:
-	.incbin "baserom.dol", 0x49B418, 0x4
+	.4byte 0x3F000000
 .global $$254877
 $$254877:
-	.incbin "baserom.dol", 0x49B41C, 0x4
+	.4byte 0x3F800000
 .global $$254880
 $$254880:
-	.incbin "baserom.dol", 0x49B420, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

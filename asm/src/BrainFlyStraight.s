@@ -34,4 +34,11 @@ __dt__Q53scn4step5enemy6owgulf16BrainFlyStraightFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6owgulf16BrainFlyStraight
 __vt__Q53scn4step5enemy6owgulf16BrainFlyStraight:
-	.incbin "baserom.dol", 0x475C70, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C9D1C  ;# ptr
+	.4byte 0x802C9D14  ;# ptr
+	.4byte 0x802C9D18  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

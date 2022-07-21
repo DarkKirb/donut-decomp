@@ -291,24 +291,32 @@ isPushEnd__Q43scn9grandmenu4menu10BackButtonCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252290
 $$252290:
-	.incbin "baserom.dol", 0x491838, 0x10
+	.asciz "grandmenu/Main"
+	.balign 4
 .global $$252291
 $$252291:
-	.incbin "baserom.dol", 0x491848, 0xC
+	.asciz "ModeButton"
+	.balign 4
 .global $$252292
 $$252292:
-	.incbin "baserom.dol", 0x491854, 0x3C
+	.asciz "ModeButtonN"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252293
 $$252293:
-	.incbin "baserom.dol", 0x498870, 0x8
+	.asciz "Back"
+	.balign 4
 .global $$252294
 $$252294:
-	.incbin "baserom.dol", 0x498878, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252371
 $$252371:
-	.incbin "baserom.dol", 0x498880, 0x4
+	.4byte 0x496E0000
 .global $$252374
 $$252374:
-	.incbin "baserom.dol", 0x498884, 0x4
+	.4byte 0x4F757400

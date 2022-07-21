@@ -261,18 +261,30 @@ lbl_80152780:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22578
 $$22578:
-	.incbin "baserom.dol", 0x444370, 0x24
+	.asciz "[AudioDecoder] Wrong packet size!\n"
+	.balign 4
 .global __vt__21MoSdkFastAudioDecoder
 __vt__21MoSdkFastAudioDecoder:
-	.incbin "baserom.dol", 0x444394, 0x1C
+	.4byte 0x80556AD8
+	.4byte 0
+	.4byte 0x801525A0  ;# ptr
+	.4byte 0x80152540  ;# ptr
+	.4byte 0x801524E0  ;# ptr
+	.4byte 0x801520C0  ;# ptr
+	.4byte 0x8014F970  ;# ptr
 .global $$22542
 $$22542:
-	.incbin "baserom.dol", 0x4443B0, 0x18
+	.asciz "MoSdkFastAudioDecoder"
+	.balign 4
 .global $$22543
 $$22543:
-	.incbin "baserom.dol", 0x4443C8, 0x10
+	.4byte 0x80556AD0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__21MoSdkFastAudioDecoder
 __RTTI__21MoSdkFastAudioDecoder:
-	.incbin "baserom.dol", 0x492EB8, 0x8
+	.4byte 0x804482B0
+	.4byte 0x804482C8

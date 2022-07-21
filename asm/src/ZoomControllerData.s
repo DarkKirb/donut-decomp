@@ -59,4 +59,5 @@ __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomController
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249761
 $$249761:
-	.incbin "baserom.dol", 0x49B720, 0x8
+	.4byte 0
+	.4byte 0

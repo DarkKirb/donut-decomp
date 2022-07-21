@@ -151,4 +151,6 @@ lbl_800279E4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21058
 $$21058:
-	.incbin "baserom.dol", 0x42BBE0, 0x20
+	.asciz "/shared2/sys/NANDBOOTINFO"
+	.balign 4
+	.4byte 0

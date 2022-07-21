@@ -544,7 +544,63 @@ GXClearGPMetric:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23023
 $$23023:
-	.incbin "baserom.dol", 0x42D110, 0x58
+	.4byte 0x80039600  ;# ptr
+	.4byte 0x8003961C  ;# ptr
+	.4byte 0x80039638  ;# ptr
+	.4byte 0x80039654  ;# ptr
+	.4byte 0x800396A8  ;# ptr
+	.4byte 0x800396C4  ;# ptr
+	.4byte 0x800396E0  ;# ptr
+	.4byte 0x800396FC  ;# ptr
+	.4byte 0x80039670  ;# ptr
+	.4byte 0x80039718  ;# ptr
+	.4byte 0x80039748  ;# ptr
+	.4byte 0x80039778  ;# ptr
+	.4byte 0x800397A8  ;# ptr
+	.4byte 0x800397D8  ;# ptr
+	.4byte 0x80039808  ;# ptr
+	.4byte 0x80039838  ;# ptr
+	.4byte 0x80039868  ;# ptr
+	.4byte 0x80039894  ;# ptr
+	.4byte 0x800398A4  ;# ptr
+	.4byte 0x800398B4  ;# ptr
+	.4byte 0x800398C4  ;# ptr
+	.4byte 0x8003968C  ;# ptr
 .global $$23022
 $$23022:
-	.incbin "baserom.dol", 0x42D168, 0x90
+	.4byte 0x800391DC  ;# ptr
+	.4byte 0x800391FC  ;# ptr
+	.4byte 0x8003921C  ;# ptr
+	.4byte 0x8003923C  ;# ptr
+	.4byte 0x8003925C  ;# ptr
+	.4byte 0x8003927C  ;# ptr
+	.4byte 0x8003929C  ;# ptr
+	.4byte 0x800392BC  ;# ptr
+	.4byte 0x800392DC  ;# ptr
+	.4byte 0x800392FC  ;# ptr
+	.4byte 0x8003933C  ;# ptr
+	.4byte 0x8003935C  ;# ptr
+	.4byte 0x80039378  ;# ptr
+	.4byte 0x80039394  ;# ptr
+	.4byte 0x800393B0  ;# ptr
+	.4byte 0x800393CC  ;# ptr
+	.4byte 0x800393E8  ;# ptr
+	.4byte 0x80039404  ;# ptr
+	.4byte 0x80039420  ;# ptr
+	.4byte 0x8003943C  ;# ptr
+	.4byte 0x80039458  ;# ptr
+	.4byte 0x80039474  ;# ptr
+	.4byte 0x80039490  ;# ptr
+	.4byte 0x800394AC  ;# ptr
+	.4byte 0x800394C8  ;# ptr
+	.4byte 0x800394E4  ;# ptr
+	.4byte 0x80039500  ;# ptr
+	.4byte 0x8003951C  ;# ptr
+	.4byte 0x80039538  ;# ptr
+	.4byte 0x80039554  ;# ptr
+	.4byte 0x80039570  ;# ptr
+	.4byte 0x8003958C  ;# ptr
+	.4byte 0x800395A8  ;# ptr
+	.4byte 0x800395C4  ;# ptr
+	.4byte 0x8003931C  ;# ptr
+	.4byte 0

@@ -612,76 +612,91 @@ lbl_802D0F9C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common16StateFlySinCurve
 __vt__Q53scn4step5enemy6common16StateFlySinCurve:
-	.incbin "baserom.dol", 0x46F1C8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802922C4  ;# ptr
+	.4byte 0x802922C8  ;# ptr
+	.4byte 0x802922CC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802923D0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6pierce16StateFlySinCurve
 __vt__Q53scn4step5enemy6pierce16StateFlySinCurve:
-	.incbin "baserom.dol", 0x476670, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D0BC8  ;# ptr
+	.4byte 0x802D0BCC  ;# ptr
+	.4byte 0x802D0D98  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802D0EB0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255895
 $$255895:
-	.incbin "baserom.dol", 0x49BB48, 0x4
+	.4byte 0
 .global $$255896
 $$255896:
-	.incbin "baserom.dol", 0x49BB4C, 0x4
+	.4byte 0x3F800000
 .global $$255897
 $$255897:
-	.incbin "baserom.dol", 0x49BB50, 0x4
+	.4byte 0xBF800000
 .global $$255898
 $$255898:
-	.incbin "baserom.dol", 0x49BB54, 0x4
+	.4byte 0x3D23D70A
 .global $$255916
 $$255916:
-	.incbin "baserom.dol", 0x49BB58, 0x4
+	.4byte 0x3CA3D70A
 .global $$255917
 $$255917:
-	.incbin "baserom.dol", 0x49BB5C, 0x4
+	.4byte 0x40200000
 .global $$255918
 $$255918:
-	.incbin "baserom.dol", 0x49BB60, 0x4
+	.4byte 0x43B40000
 .global $$255919
 $$255919:
-	.incbin "baserom.dol", 0x49BB64, 0x4
+	.4byte 0x4222F983
 .global $$255920
 $$255920:
-	.incbin "baserom.dol", 0x49BB68, 0x4
+	.4byte 0x3C8EFA35
 .global $$255921
 $$255921:
-	.incbin "baserom.dol", 0x49BB6C, 0x4
+	.4byte 0x3FC00000
 .global $$255940
 $$255940:
-	.incbin "baserom.dol", 0x49BB70, 0x4
+	.4byte 0x40000000
 .global $$255941
 $$255941:
-	.incbin "baserom.dol", 0x49BB74, 0x4
+	.4byte 0x42B40000
 .global $$255942
 $$255942:
-	.incbin "baserom.dol", 0x49BB78, 0x8
+	.4byte 0x43870000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256166
 $$256166:
-	.incbin "baserom.dol", 0x49CA70, 0x4
+	.4byte 0
 .global $$256167
 $$256167:
-	.incbin "baserom.dol", 0x49CA74, 0x4
+	.4byte 0x3F800000
 .global $$256168
 $$256168:
-	.incbin "baserom.dol", 0x49CA78, 0x4
+	.4byte 0xBF800000
 .global $$256210
 $$256210:
-	.incbin "baserom.dol", 0x49CA7C, 0x4
+	.4byte 0x43B40000
 .global $$256211
 $$256211:
-	.incbin "baserom.dol", 0x49CA80, 0x4
+	.4byte 0x4222F983
 .global $$256212
 $$256212:
-	.incbin "baserom.dol", 0x49CA84, 0x4
+	.4byte 0x3C8EFA35
 .global $$256226
 $$256226:
-	.incbin "baserom.dol", 0x49CA88, 0x4
+	.4byte 0x42B40000
 .global $$256227
 $$256227:
-	.incbin "baserom.dol", 0x49CA8C, 0x4
+	.4byte 0x43870000

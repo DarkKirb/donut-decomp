@@ -768,82 +768,110 @@ isTargetScoreEnd__Q53scn4step4info5lvmap5FrameCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251962
 $$251962:
-	.incbin "baserom.dol", 0x45A300, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$251964
 $$251964:
-	.incbin "baserom.dol", 0x45A31C, 0x10
+	.asciz "BackButton02N"
+	.balign 4
 .global $$251965
 $$251965:
-	.incbin "baserom.dol", 0x45A32C, 0xC
+	.asciz "FileSelect"
+	.balign 4
 .global $$251966
 $$251966:
-	.incbin "baserom.dol", 0x45A338, 0x40
+	.asciz "FileSelectBG"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253212
 $$253212:
-	.incbin "baserom.dol", 0x48D810, 0x18
+	.asciz "step/lvmap/Cutinanime"
+	.balign 4
 .global $$253214
 $$253214:
-	.incbin "baserom.dol", 0x48D828, 0xC
+	.asciz "TotalScoreN"
 .global $$253215
 $$253215:
-	.incbin "baserom.dol", 0x48D834, 0x14
+	.asciz "TargetScoreBaseN"
+	.balign 4
 .global $$253216
 $$253216:
-	.incbin "baserom.dol", 0x48D848, 0xC
+	.asciz "Lv%dTextN"
+	.balign 4
 .global $$253217
 $$253217:
-	.incbin "baserom.dol", 0x48D854, 0xC
+	.asciz "TitleText"
+	.balign 4
 .global $$253218
 $$253218:
-	.incbin "baserom.dol", 0x48D860, 0xC
+	.asciz "Lv%dTitle"
+	.balign 4
 .global $$253219
 $$253219:
-	.incbin "baserom.dol", 0x48D86C, 0xC
+	.asciz "TitleTextSh"
 .global $$253220
 $$253220:
-	.incbin "baserom.dol", 0x48D878, 0x10
+	.asciz "Lv%dAreaText"
+	.balign 4
 .global $$253222
 $$253222:
-	.incbin "baserom.dol", 0x48D888, 0x10
+	.asciz "Lv%dAreaTextSh"
+	.balign 4
 .global $$253223
 $$253223:
-	.incbin "baserom.dol", 0x48D898, 0x10
+	.asciz "Lv%dMapNameText"
 .global $$253224
 $$253224:
-	.incbin "baserom.dol", 0x48D8A8, 0x14
+	.asciz "Lv%dTitleMain_00"
+	.balign 4
 .global $$253225
 $$253225:
-	.incbin "baserom.dol", 0x48D8BC, 0x44
+	.asciz "Lv%dMapNameTextSh"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251963
 $$251963:
-	.incbin "baserom.dol", 0x493F28, 0x8
+	.asciz "Frame"
+	.balign 4
 .global $$252008
 $$252008:
-	.incbin "baserom.dol", 0x493F30, 0x8
+	.asciz "Start"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253213
 $$253213:
-	.incbin "baserom.dol", 0x497FD0, 0x8
+	.asciz "Frame"
+	.balign 4
 .global $$253221
 $$253221:
-	.incbin "baserom.dol", 0x497FD8, 0x8
+	.asciz "Lv%d"
+	.balign 4
 .global $$253310
 $$253310:
-	.incbin "baserom.dol", 0x497FE0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253322
 $$253322:
-	.incbin "baserom.dol", 0x497FE8, 0x4
+	.4byte 0x496E0000
 .global $$253330
 $$253330:
-	.incbin "baserom.dol", 0x497FEC, 0x4
+	.4byte 0x496E5300
 .global $$253337
 $$253337:
-	.incbin "baserom.dol", 0x497FF0, 0x4
+	.4byte 0x4F757400
 .global $$253344
 $$253344:
-	.incbin "baserom.dol", 0x497FF4, 0xC
+	.asciz "OutS"
+	.balign 4
+	.4byte 0

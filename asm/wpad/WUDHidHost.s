@@ -311,7 +311,10 @@ bta_hh_co_data:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21502
 $$21502:
-	.incbin "baserom.dol", 0x435FC0, 0x14
+	.asciz "Nintendo RVL-CNT"
+	.balign 4
 .global $$21503
 $$21503:
-	.incbin "baserom.dol", 0x435FD4, 0x2C
+	.asciz "WARNING: link num count is modified.\n"
+	.balign 4
+	.4byte 0

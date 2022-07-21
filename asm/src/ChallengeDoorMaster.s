@@ -861,133 +861,201 @@ kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$255380
 $$255380:
-	.incbin "baserom.dol", 0x415AA8, 0x34
+	.4byte 0x80480A34
+	.4byte 0x80480A40
+	.4byte 0x80480A4C
+	.4byte 0x80480A58
+	.4byte 0x80480A64
+	.4byte 0x80480A70
+	.4byte 0x80480A7C
+	.4byte 0x80480A8C
+	.4byte 0x80480A98
+	.4byte 0x80480AA4
+	.4byte 0x80480AB0
+	.4byte 0x80480ABC
+	.4byte 0x80480AC8
 .global $$255490
 $$255490:
-	.incbin "baserom.dol", 0x415ADC, 0xC
+	.4byte 0x8055A60C
+	.4byte 0x8055A614
+	.4byte 0x8055A61C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256036
 $$256036:
-	.incbin "baserom.dol", 0x47CAA8, 0x24
+	.asciz "step/gimmick/ChallengeMasterBoard"
+	.balign 4
 .global $$256038
 $$256038:
-	.incbin "baserom.dol", 0x47CACC, 0x24
+	.asciz "step/gimmick/DoorChallengeMaster"
+	.balign 4
 .global $$256159
 $$256159:
-	.incbin "baserom.dol", 0x47CAF0, 0x38
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Unlock.UnlockMasterDoor"
+	.balign 4
 .global $$256193
 $$256193:
-	.incbin "baserom.dol", 0x47CB28, 0xC
+	.asciz "ChainBlake"
+	.balign 4
 .global $$255367
 $$255367:
-	.incbin "baserom.dol", 0x47CB34, 0xC
+	.asciz "Chain00L"
+	.balign 4
 .global $$255368
 $$255368:
-	.incbin "baserom.dol", 0x47CB40, 0xC
+	.asciz "Chain01L"
+	.balign 4
 .global $$255369
 $$255369:
-	.incbin "baserom.dol", 0x47CB4C, 0xC
+	.asciz "Chain02L"
+	.balign 4
 .global $$255370
 $$255370:
-	.incbin "baserom.dol", 0x47CB58, 0xC
+	.asciz "Chain03L"
+	.balign 4
 .global $$255371
 $$255371:
-	.incbin "baserom.dol", 0x47CB64, 0xC
+	.asciz "Chain04L"
+	.balign 4
 .global $$255372
 $$255372:
-	.incbin "baserom.dol", 0x47CB70, 0xC
+	.asciz "Chain05L"
+	.balign 4
 .global $$255373
 $$255373:
-	.incbin "baserom.dol", 0x47CB7C, 0x10
+	.asciz "Chain06Lcenter"
+	.balign 4
 .global $$255374
 $$255374:
-	.incbin "baserom.dol", 0x47CB8C, 0xC
+	.asciz "Chain07L"
+	.balign 4
 .global $$255375
 $$255375:
-	.incbin "baserom.dol", 0x47CB98, 0xC
+	.asciz "Chain08L"
+	.balign 4
 .global $$255376
 $$255376:
-	.incbin "baserom.dol", 0x47CBA4, 0xC
+	.asciz "Chain09L"
+	.balign 4
 .global $$255377
 $$255377:
-	.incbin "baserom.dol", 0x47CBB0, 0xC
+	.asciz "Chain10L"
+	.balign 4
 .global $$255378
 $$255378:
-	.incbin "baserom.dol", 0x47CBBC, 0xC
+	.asciz "Chain11L"
+	.balign 4
 .global $$255379
 $$255379:
-	.incbin "baserom.dol", 0x47CBC8, 0xC
+	.asciz "Chain12L"
+	.balign 4
 .global $$256269
 $$256269:
-	.incbin "baserom.dol", 0x47CBD4, 0xC
+	.asciz "LockWait03"
+	.balign 4
 .global $$256270
 $$256270:
-	.incbin "baserom.dol", 0x47CBE0, 0xC
+	.asciz "LockWait04"
+	.balign 4
 .global $$256271
 $$256271:
-	.incbin "baserom.dol", 0x47CBEC, 0x10
+	.asciz "NormalWait00"
+	.balign 4
 .global $$256272
 $$256272:
-	.incbin "baserom.dol", 0x47CBFC, 0xC
+	.asciz "LockWait00"
+	.balign 4
 .global $$256273
 $$256273:
-	.incbin "baserom.dol", 0x47CC08, 0xC
+	.asciz "LockWait01"
+	.balign 4
 .global $$256274
 $$256274:
-	.incbin "baserom.dol", 0x47CC14, 0xC
+	.asciz "LockWait02"
+	.balign 4
 .global $$256295
 $$256295:
-	.incbin "baserom.dol", 0x47CC20, 0xC
+	.asciz "LockBlake03"
 .global $$256296
 $$256296:
-	.incbin "baserom.dol", 0x47CC2C, 0xC
+	.asciz "LockBlake04"
 .global $$256297
 $$256297:
-	.incbin "baserom.dol", 0x47CC38, 0xC
+	.asciz "LockBlake00"
 .global $$256298
 $$256298:
-	.incbin "baserom.dol", 0x47CC44, 0xC
+	.asciz "LockBlake01"
 .global $$256299
 $$256299:
-	.incbin "baserom.dol", 0x47CC50, 0xC
+	.asciz "LockBlake02"
 .global __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMaster
 __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMaster:
-	.incbin "baserom.dol", 0x47CC5C, 0x84
+	.4byte 0
+	.4byte 0
+	.4byte 0x80308064
+	.4byte 0x80308A50
+	.4byte 0x803080E8
+	.4byte 0x8030811C
+	.4byte 0x80308130
+	.4byte 0x80308144
+	.4byte 0x80308198
+	.4byte 0x80308234
+	.4byte 0x80308348
+	.4byte 0x803083A8
+	.4byte 0x80308440
+	.4byte 0x803083F8
+	.4byte 0x80308450
+	.4byte 0x80307C68
+	.4byte 0x803086D0
+	.4byte 0x803086F8
+	.4byte 0x80307C24
+	.4byte 0x80308720
+	.4byte 0x80308724
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256037
 $$256037:
-	.incbin "baserom.dol", 0x4969D8, 0x4
+	.4byte 0
 .global $$255478
 $$255478:
-	.incbin "baserom.dol", 0x4969DC, 0x8
+	.asciz "Lock4L"
+	.balign 4
 .global $$255479
 $$255479:
-	.incbin "baserom.dol", 0x4969E4, 0x8
+	.asciz "Lock5L"
+	.balign 4
 .global $$255487
 $$255487:
-	.incbin "baserom.dol", 0x4969EC, 0x8
+	.asciz "Lock1L"
+	.balign 4
 .global $$255488
 $$255488:
-	.incbin "baserom.dol", 0x4969F4, 0x8
+	.asciz "Lock2L"
+	.balign 4
 .global $$255489
 $$255489:
-	.incbin "baserom.dol", 0x4969FC, 0xC
+	.asciz "Lock3L"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256039
 $$256039:
-	.incbin "baserom.dol", 0x49D2F0, 0x4
+	.4byte 0
 .global $$256157
 $$256157:
-	.incbin "baserom.dol", 0x49D2F4, 0x4
+	.4byte 0x40400000
 .global $$256158
 $$256158:
-	.incbin "baserom.dol", 0x49D2F8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$255480
 $$255480:
-	.incbin "baserom.dol", 0x49D300, 0x4
+	.4byte 0x8055A5FC
 .global lbl_805627C4
 lbl_805627C4:
-	.incbin "baserom.dol", 0x49D304, 0x4
+	.4byte 0x8055A604

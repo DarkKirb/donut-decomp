@@ -396,13 +396,39 @@ lbl_804047DC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global UseMaster1AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 UseMaster1AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
-	.incbin "baserom.dol", 0x41D0C8, 0xC
+	.4byte 0x00000001
+	.4byte 0x0000000B
+	.4byte 0x00000008
 .global UseMaster2AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 UseMaster2AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
-	.incbin "baserom.dol", 0x41D0D4, 0xC
+	.4byte 0x00000004
+	.4byte 0x00000015
+	.4byte 0x00000013
 .global UseMaster3AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 UseMaster3AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
-	.incbin "baserom.dol", 0x41D0E0, 0x20
+	.4byte 0x00000001
+	.4byte 0x0000000B
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000015
+	.4byte 0x00000013
+	.4byte 0x00000018
+	.4byte 0
 .global challengeMasterDataTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 challengeMasterDataTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
-	.incbin "baserom.dol", 0x41D100, 0x40
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x80420FC8
+	.4byte 0x00000007
+	.4byte 0x00000003
+	.4byte 0x80420FD4
+	.4byte 0x0000000A
+	.4byte 0x00000007
+	.4byte 0x80420FE0
+	.4byte 0x0000000B
+	.4byte 0x00000007
+	.4byte 0x80420FE0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

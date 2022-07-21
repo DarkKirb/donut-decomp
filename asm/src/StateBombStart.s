@@ -66,4 +66,11 @@ procFixPos__Q53scn4step4boss7bonkers14StateBombStartFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss7bonkers14StateBombStart
 __vt__Q53scn4step4boss7bonkers14StateBombStart:
-	.incbin "baserom.dol", 0x4612A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802381AC  ;# ptr
+	.4byte 0x802381B0  ;# ptr
+	.4byte 0x802381FC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80238200  ;# ptr
+	.4byte 0x80234504  ;# ptr

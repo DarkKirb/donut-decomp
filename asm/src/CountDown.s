@@ -186,27 +186,37 @@ lbl_803B1FE4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252118
 $$252118:
-	.incbin "baserom.dol", 0x48C3D8, 0x14
+	.asciz "step/challenge/Main"
 .global $$252119
 $$252119:
-	.incbin "baserom.dol", 0x48C3EC, 0xC
+	.asciz "CountDown"
+	.balign 4
 .global $$252120
 $$252120:
-	.incbin "baserom.dol", 0x48C3F8, 0x10
+	.asciz "RemainingTime"
+	.balign 4
 .global $$252122
 $$252122:
-	.incbin "baserom.dol", 0x48C408, 0x10
+	.asciz "TimeAlert_60"
+	.balign 4
 .global $$252124
 $$252124:
-	.incbin "baserom.dol", 0x48C418, 0x40
+	.asciz "TimeAlert_30"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252121
 $$252121:
-	.incbin "baserom.dol", 0x497B48, 0x8
+	.asciz "Rest1S"
+	.balign 4
 .global $$252123
 $$252123:
-	.incbin "baserom.dol", 0x497B50, 0x8
+	.asciz "Rest30M"
 .global $$252167
 $$252167:
-	.incbin "baserom.dol", 0x497B58, 0x8
+	.4byte 0x25640000
+	.4byte 0

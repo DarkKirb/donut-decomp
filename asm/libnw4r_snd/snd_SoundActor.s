@@ -225,12 +225,19 @@ detail_ConvertLabelStringToSoundId__Q34nw4r3snd18SoundArchivePlayerFPCc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd10SoundActor
 __vt__Q34nw4r3snd10SoundActor:
-	.incbin "baserom.dol", 0x43E540, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8010F470  ;# ptr
+	.4byte 0x8010F630  ;# ptr
+	.4byte 0x8010F670  ;# ptr
+	.4byte 0x8010F5F0  ;# ptr
+	.4byte 0x8010F610  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211717
 $$211717:
-	.incbin "baserom.dol", 0x499F00, 0x4
+	.4byte 0x3F800000
 .global $$211718
 $$211718:
-	.incbin "baserom.dol", 0x499F04, 0x4
+	.4byte 0

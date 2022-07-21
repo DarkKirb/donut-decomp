@@ -95,4 +95,5 @@ update__Q25ocoll13SearchHitNodeFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251952
 $$251952:
-	.incbin "baserom.dol", 0x49A7E8, 0x8
+	.4byte 0x00FF0020
+	.4byte 0

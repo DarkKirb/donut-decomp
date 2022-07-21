@@ -71,14 +71,19 @@ TestAnmFlag__Q34nw4r3g3d6AnmObjCFQ44nw4r3g3d6AnmObj7AnmFlag:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6AnmObj
 TYPE_NAME__Q34nw4r3g3d6AnmObj:
-	.incbin "baserom.dol", 0x4046F8, 0x10
+	.4byte 0x00000007
+	.asciz "AnmObj"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global smBaseUpdateRate__Q34nw4r3g3d9FrameCtrl
 smBaseUpdateRate__Q34nw4r3g3d9FrameCtrl:
-	.incbin "baserom.dol", 0x492DD0, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$25234
 $$25234:
-	.incbin "baserom.dol", 0x499AE8, 0x8
+	.4byte 0
+	.4byte 0

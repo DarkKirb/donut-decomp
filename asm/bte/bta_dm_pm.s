@@ -733,10 +733,13 @@ bta_dm_pm_timer:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2951
 $$2951:
-	.incbin "baserom.dol", 0x436C98, 0x2C
+	.asciz "bta_dm_act no more connected service cbs"
+	.balign 4
 .global $$21226
 $$21226:
-	.incbin "baserom.dol", 0x436CC4, 0x24
+	.asciz "bta_dm_act no more pm timers"
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_dm_conn_srvcs

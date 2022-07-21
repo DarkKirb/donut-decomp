@@ -70,12 +70,41 @@ __sinit_$$3lyt_bounding_cpp:
 /* 800F911C 000F4F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402390, 0x4
+	.4byte 0x800F9110  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt8Bounding
 __vt__Q34nw4r3lyt8Bounding:
-	.incbin "baserom.dol", 0x43D570, 0x78
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F9090  ;# ptr
+	.4byte 0x800F9100  ;# ptr
+	.4byte 0x800F30D0  ;# ptr
+	.4byte 0x800F33D0  ;# ptr
+	.4byte 0x800F90F0  ;# ptr
+	.4byte 0x800F3470  ;# ptr
+	.4byte 0x800F3500  ;# ptr
+	.4byte 0x800F2EA0  ;# ptr
+	.4byte 0x800F2EB0  ;# ptr
+	.4byte 0x800F2EC0  ;# ptr
+	.4byte 0x800F2EF0  ;# ptr
+	.4byte 0x800F2F20  ;# ptr
+	.4byte 0x800F2F30  ;# ptr
+	.4byte 0x800F2F40  ;# ptr
+	.4byte 0x800F3000  ;# ptr
+	.4byte 0x800F35C0  ;# ptr
+	.4byte 0x800F35E0  ;# ptr
+	.4byte 0x800F3670  ;# ptr
+	.4byte 0x800F3690  ;# ptr
+	.4byte 0x800F3730  ;# ptr
+	.4byte 0x800F3740  ;# ptr
+	.4byte 0x800F3750  ;# ptr
+	.4byte 0x800F3850  ;# ptr
+	.4byte 0x800F3A80  ;# ptr
+	.4byte 0x800F3AA0  ;# ptr
+	.4byte 0x800F3AB0  ;# ptr
+	.4byte 0x800F3950  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r3lyt8Bounding

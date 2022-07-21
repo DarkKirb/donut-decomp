@@ -196,30 +196,37 @@ __dt__Q53scn4step4item5state11StateGatherFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state11StateGather
 __vt__Q53scn4step4item5state11StateGather:
-	.incbin "baserom.dol", 0x48E6D8, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C80D4
+	.4byte 0x803C7F10
+	.4byte 0x803C7FD4
+	.4byte 0x803C5204
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255059
 $$255059:
-	.incbin "baserom.dol", 0x49E5D8, 0x4
+	.4byte 0
 .global $$255060
 $$255060:
-	.incbin "baserom.dol", 0x49E5DC, 0x4
+	.4byte 0x3F000000
 .global $$255072
 $$255072:
-	.incbin "baserom.dol", 0x49E5E0, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$255075
 $$255075:
-	.incbin "baserom.dol", 0x49E5E8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$255079
 $$255079:
-	.incbin "baserom.dol", 0x49E5F0, 0x4
+	.4byte 0x41A00000
 .global $$255080
 $$255080:
-	.incbin "baserom.dol", 0x49E5F4, 0x4
+	.4byte 0x4222F983
 .global $$255081
 $$255081:
-	.incbin "baserom.dol", 0x49E5F8, 0x4
+	.4byte 0x3C8EFA35
 .global $$255082
 $$255082:
-	.incbin "baserom.dol", 0x49E5FC, 0x4
+	.4byte 0x43340000

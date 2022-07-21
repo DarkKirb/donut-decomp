@@ -215,7 +215,7 @@ __ct__Q63scn4step7gimmick5block19BlockEffRequestInfo4InfoFUlfRCQ33hel4math4Vec3U
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250372
 $$250372:
-	.incbin "baserom.dol", 0x49D1F0, 0x4
+	.4byte 0x3F800000
 .global $$250373
 $$250373:
-	.incbin "baserom.dol", 0x49D1F4, 0x4
+	.4byte 0

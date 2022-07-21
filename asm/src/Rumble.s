@@ -96,27 +96,43 @@ __dt__Q33scn19challengefileselect6RumbleFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251963
 $$251963:
-	.incbin "baserom.dol", 0x45A378, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$252003
 $$252003:
-	.incbin "baserom.dol", 0x45A394, 0xC
+	.asciz "OpenSmall"
+	.balign 4
 .global __vt__Q33scn19challengefileselect6Rumble
 __vt__Q33scn19challengefileselect6Rumble:
-	.incbin "baserom.dol", 0x45A3A0, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x801E43F0  ;# ptr
+	.4byte 0x801E43A0  ;# ptr
+	.4byte 0x801E43A4  ;# ptr
+	.4byte 0x801E43B4  ;# ptr
+	.4byte 0x801E43C0  ;# ptr
+	.4byte 0x801E43CC  ;# ptr
+	.4byte 0x801E43D8  ;# ptr
+	.4byte 0x801E43DC  ;# ptr
+	.4byte 0x801E43E4  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251964
 $$251964:
-	.incbin "baserom.dol", 0x493F38, 0x8
+	.asciz "Rumble"
+	.balign 4
 .global $$252006
 $$252006:
-	.incbin "baserom.dol", 0x493F40, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252009
 $$252009:
-	.incbin "baserom.dol", 0x493F48, 0x8
+	.asciz "UnFocus"
 .global $$252012
 $$252012:
-	.incbin "baserom.dol", 0x493F50, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$252018
 $$252018:
-	.incbin "baserom.dol", 0x493F58, 0x8
+	.asciz "CursorN"

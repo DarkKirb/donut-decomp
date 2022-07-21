@@ -767,4 +767,13 @@ lbl_80382BAC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick13StateWarpStar
 __vt__Q53scn4step4hero7gimmick13StateWarpStar:
-	.incbin "baserom.dol", 0x488D20, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803827B8
+	.4byte 0x803827BC
+	.4byte 0x80382B3C
+	.4byte 0x80382B40
+	.4byte 0x80355510
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

@@ -901,79 +901,179 @@ __dt__Q53scn4step5enemy6sodory8BrainFlyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common8BrainFly
 __vt__Q53scn4step5enemy6common8BrainFly:
-	.incbin "baserom.dol", 0x46F008, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291338  ;# ptr
+	.4byte 0x80291280  ;# ptr
+	.4byte 0x80291330  ;# ptr
+	.4byte 0x80291334  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5bowby8BrainFly
 __vt__Q53scn4step5enemy5bowby8BrainFly:
-	.incbin "baserom.dol", 0x470698, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029E308  ;# ptr
+	.4byte 0x8029E280  ;# ptr
+	.4byte 0x8029E304  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470910, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029EDE8  ;# ptr
+	.4byte 0x8029EDC8  ;# ptr
 .global __vt__Q53scn4step5enemy10brontoburt8BrainFly
 __vt__Q53scn4step5enemy10brontoburt8BrainFly:
-	.incbin "baserom.dol", 0x470920, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029EDE4  ;# ptr
+	.4byte 0x8029ED40  ;# ptr
+	.4byte 0x8029EDC4  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8cerulean8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8cerulean8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x471578, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A54F4  ;# ptr
+	.4byte 0x802A54D4  ;# ptr
 .global __vt__Q53scn4step5enemy8cerulean8BrainFly
 __vt__Q53scn4step5enemy8cerulean8BrainFly:
-	.incbin "baserom.dol", 0x471588, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A54F0  ;# ptr
+	.4byte 0x802A544C  ;# ptr
+	.4byte 0x802A54D0  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6juckle8BrainFly
 __vt__Q53scn4step5enemy6juckle8BrainFly:
-	.incbin "baserom.dol", 0x473C68, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BB168  ;# ptr
+	.4byte 0x802BB160  ;# ptr
+	.4byte 0x802BB164  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce12StateFlyWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce12StateFlyWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4763F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CF88C  ;# ptr
+	.4byte 0x802CF80C  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce14StateFlyAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce14StateFlyAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476408, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CF888  ;# ptr
+	.4byte 0x802CF828  ;# ptr
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce15StateFlyPursuit$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce15StateFlyPursuit$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476418, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CF884  ;# ptr
+	.4byte 0x802CF844  ;# ptr
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce16StateFlySinCurve$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6pierce16StateFlySinCurve$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476428, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CF880  ;# ptr
+	.4byte 0x802CF860  ;# ptr
 .global __vt__Q53scn4step5enemy6pierce8BrainFly
 __vt__Q53scn4step5enemy6pierce8BrainFly:
-	.incbin "baserom.dol", 0x476438, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CF87C  ;# ptr
+	.4byte 0x802CF678  ;# ptr
+	.4byte 0x802CF808  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy8BrainFly
 __vt__Q53scn4step5enemy6scarfy8BrainFly:
-	.incbin "baserom.dol", 0x477488, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D9744  ;# ptr
+	.4byte 0x802D973C  ;# ptr
+	.4byte 0x802D9740  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches8StateFly$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches8StateFly$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4777D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DBB7C  ;# ptr
+	.4byte 0x802DBB3C  ;# ptr
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches9StateMove$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches9StateMove$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4777E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DBB78  ;# ptr
+	.4byte 0x802DBB58  ;# ptr
 .global __vt__Q53scn4step5enemy8searches8BrainFly
 __vt__Q53scn4step5enemy8searches8BrainFly:
-	.incbin "baserom.dol", 0x4777F8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DBB74  ;# ptr
+	.4byte 0x802DBA54  ;# ptr
+	.4byte 0x802DBB38  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5snowl16StateFlyStraight$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5snowl16StateFlyStraight$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478AC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E36A0  ;# ptr
+	.4byte 0x802E3660  ;# ptr
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5snowl14StateFlyAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5snowl14StateFlyAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478AD0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E369C  ;# ptr
+	.4byte 0x802E367C  ;# ptr
 .global __vt__Q53scn4step5enemy5snowl8BrainFly
 __vt__Q53scn4step5enemy5snowl8BrainFly:
-	.incbin "baserom.dol", 0x478AE0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E3698  ;# ptr
+	.4byte 0x802E357C  ;# ptr
+	.4byte 0x802E365C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory8BrainFly
 __vt__Q53scn4step5enemy6sodory8BrainFly:
-	.incbin "baserom.dol", 0x478D90, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E4958  ;# ptr
+	.4byte 0x802E484C  ;# ptr
+	.4byte 0x802E4954  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

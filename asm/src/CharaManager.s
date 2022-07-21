@@ -1501,53 +1501,69 @@ block__Q33scn10grandtitle12CharaManagerFUl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253270
 $$253270:
-	.incbin "baserom.dol", 0x45AC78, 0x20
+	.asciz "challengetitle/TitleScene"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254349
 $$254349:
-	.incbin "baserom.dol", 0x45C9C0, 0x18
+	.asciz "grandtitle/TitleScene"
+	.balign 4
 .global $$254457
 $$254457:
-	.incbin "baserom.dol", 0x45C9D8, 0x10
+	.asciz "BgEffectL"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253271
 $$253271:
-	.incbin "baserom.dol", 0x4940D8, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$253363
 $$253363:
-	.incbin "baserom.dol", 0x4940E0, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$253364
 $$253364:
-	.incbin "baserom.dol", 0x4940E8, 0x8
+	.asciz "Wait3"
+	.balign 4
 .global $$253365
 $$253365:
-	.incbin "baserom.dol", 0x4940F0, 0x8
+	.asciz "Wait4"
+	.balign 4
 .global $$253384
 $$253384:
-	.incbin "baserom.dol", 0x4940F8, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$253385
 $$253385:
-	.incbin "baserom.dol", 0x494100, 0x8
+	.asciz "WaitA"
+	.balign 4
 .global $$253386
 $$253386:
-	.incbin "baserom.dol", 0x494108, 0x8
+	.asciz "WaitB"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254350
 $$254350:
-	.incbin "baserom.dol", 0x4947E8, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253326
 $$253326:
-	.incbin "baserom.dol", 0x49A8F8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$253366
 $$253366:
-	.incbin "baserom.dol", 0x49A900, 0x8
+	.4byte 0x41400000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254420
 $$254420:
-	.incbin "baserom.dol", 0x49AAC0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

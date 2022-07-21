@@ -147,12 +147,21 @@ procFixPos__Q53scn4step4boss6whispy15StateRootAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy15StateRootAttack
 __vt__Q53scn4step4boss6whispy15StateRootAttack:
-	.incbin "baserom.dol", 0x466758, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025DD48  ;# ptr
+	.4byte 0x8025DD4C  ;# ptr
+	.4byte 0x8025DEE0  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025DEE4  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256375
 $$256375:
-	.incbin "baserom.dol", 0x49B550, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$256378
 $$256378:
-	.incbin "baserom.dol", 0x49B558, 0x8
+	.4byte 0x43300000
+	.4byte 0

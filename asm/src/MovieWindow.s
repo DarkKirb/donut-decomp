@@ -1867,199 +1867,310 @@ lbl_802174CC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251646
 $$251646:
-	.incbin "baserom.dol", 0x4120C0, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0xC2C80000
 .global $$251648
 $$251648:
-	.incbin "baserom.dol", 0x4120CC, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x42C80000
 .global $$251650
 $$251650:
-	.incbin "baserom.dol", 0x4120D8, 0xC
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0
 .global MOVIE_KIND_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2
 MOVIE_KIND_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2:
-	.incbin "baserom.dol", 0x4120E4, 0x74
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0x00000003
+	.4byte 0x00000015
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000000A
+	.4byte 0x0000000B
+	.4byte 0x0000000C
+	.4byte 0
+	.4byte 0x0000000D
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000011
+	.4byte 0
+	.4byte 0x00000012
+	.4byte 0x00000013
+	.4byte 0x00000014
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252430
 $$252430:
-	.incbin "baserom.dol", 0x45E710, 0x10
+	.asciz "PlayMovieKirby1"
 .global $$252431
 $$252431:
-	.incbin "baserom.dol", 0x45E720, 0x18
+	.asciz "PlayMovieKirbyDreamLand"
 .global $$252432
 $$252432:
-	.incbin "baserom.dol", 0x45E738, 0x18
+	.asciz "PlayMovieKirbyPinBall"
+	.balign 4
 .global $$252433
 $$252433:
-	.incbin "baserom.dol", 0x45E750, 0x18
+	.asciz "PlayMovieKirbyBall"
+	.balign 4
+	.4byte 0
 .global $$252434
 $$252434:
-	.incbin "baserom.dol", 0x45E768, 0x18
+	.asciz "PlayMovieKirbyAvalanche"
 .global $$252435
 $$252435:
-	.incbin "baserom.dol", 0x45E780, 0x10
+	.asciz "PlayMovieKirby2"
 .global $$252436
 $$252436:
-	.incbin "baserom.dol", 0x45E790, 0x18
+	.asciz "PlayMovieKirbyBlockBall"
 .global $$252437
 $$252437:
-	.incbin "baserom.dol", 0x45E7A8, 0x14
+	.asciz "PlayMovieKirbySDX"
+	.balign 4
 .global $$252438
 $$252438:
-	.incbin "baserom.dol", 0x45E7BC, 0x1C
+	.asciz "PlayMovieKirbyKidsGB"
+	.balign 4
+	.4byte 0
 .global $$252439
 $$252439:
-	.incbin "baserom.dol", 0x45E7D8, 0x10
+	.asciz "PlayMovieKirby3"
 .global $$252440
 $$252440:
-	.incbin "baserom.dol", 0x45E7E8, 0x14
+	.asciz "PlayMovieKirby64"
+	.balign 4
 .global $$252441
 $$252441:
-	.incbin "baserom.dol", 0x45E7FC, 0x18
+	.asciz "PlayMovieKirbyKoroKoro"
+	.balign 4
 .global $$252442
 $$252442:
-	.incbin "baserom.dol", 0x45E814, 0x1C
+	.asciz "PlayMovieKirbyDreamLandDX"
+	.balign 4
 .global $$252443
 $$252443:
-	.incbin "baserom.dol", 0x45E830, 0x18
+	.asciz "PlayMovieKirbyAirRide"
+	.balign 4
 .global $$252444
 $$252444:
-	.incbin "baserom.dol", 0x45E848, 0x18
+	.asciz "PlayMovieKirbyMirror"
+	.balign 4
 .global $$252445
 $$252445:
-	.incbin "baserom.dol", 0x45E860, 0x14
+	.asciz "PlayMovieKirbyTouch"
 .global $$252446
 $$252446:
-	.incbin "baserom.dol", 0x45E874, 0x18
+	.asciz "PlayMovieKirbyDoroche"
+	.balign 4
 .global $$252447
 $$252447:
-	.incbin "baserom.dol", 0x45E88C, 0x14
+	.asciz "PlayMovieKirbyDDX"
+	.balign 4
 .global $$252448
 $$252448:
-	.incbin "baserom.dol", 0x45E8A0, 0x18
+	.asciz "PlayMovieKirbyEpicYarn"
+	.balign 4
 .global $$252449
 $$252449:
-	.incbin "baserom.dol", 0x45E8B8, 0x1C
+	.asciz "PlayMovieKirbyMassAttack"
+	.balign 4
 .global $$252450
 $$252450:
-	.incbin "baserom.dol", 0x45E8D4, 0x14
+	.asciz "PlayMovieKirbyWii"
+	.balign 4
 .global MSG_LABEL_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2
 MSG_LABEL_TABLE__Q43scn7history6detail25$$2unnamed$$2MovieWindow_cpp$$2:
-	.incbin "baserom.dol", 0x45E8E8, 0x74
+	.4byte 0x80558910
+	.4byte 0x80462610
+	.4byte 0x80462620
+	.4byte 0x80462638
+	.4byte 0x80558910
+	.4byte 0x80462650
+	.4byte 0x80462668
+	.4byte 0x80462680
+	.4byte 0x80462690
+	.4byte 0x804626A8
+	.4byte 0x804626BC
+	.4byte 0x804626D8
+	.4byte 0x80558910
+	.4byte 0x80558910
+	.4byte 0x804626E8
+	.4byte 0x804626FC
+	.4byte 0x80462714
+	.4byte 0x80558910
+	.4byte 0x80462730
+	.4byte 0x80462748
+	.4byte 0x80462760
+	.4byte 0x80462774
+	.4byte 0x80558910
+	.4byte 0x8046278C
+	.4byte 0x80558910
+	.4byte 0x804627A0
+	.4byte 0x804627B8
+	.4byte 0x804627D4
+	.4byte 0x80558910
 .global $$254931
 $$254931:
-	.incbin "baserom.dol", 0x45E95C, 0xC
+	.asciz "MovieWindow"
 .global $$254932
 $$254932:
-	.incbin "baserom.dol", 0x45E968, 0x10
+	.asciz "history/Detail"
+	.balign 4
 .global $$254933
 $$254933:
-	.incbin "baserom.dol", 0x45E978, 0xC
+	.asciz "WiiButtonN"
+	.balign 4
 .global $$254934
 $$254934:
-	.incbin "baserom.dol", 0x45E984, 0x10
+	.asciz "ReWindButton"
+	.balign 4
 .global $$254935
 $$254935:
-	.incbin "baserom.dol", 0x45E994, 0x14
+	.asciz "AnimeButtonCursor"
+	.balign 4
 .global $$254936
 $$254936:
-	.incbin "baserom.dol", 0x45E9A8, 0xC
+	.asciz "PlayButton"
+	.balign 4
 .global $$254937
 $$254937:
-	.incbin "baserom.dol", 0x45E9B4, 0x10
+	.asciz "ForwardButton"
+	.balign 4
 .global $$254938
 $$254938:
-	.incbin "baserom.dol", 0x45E9C4, 0xC
+	.asciz "ExplainText"
 .global $$254939
 $$254939:
-	.incbin "baserom.dol", 0x45E9D0, 0xC
+	.asciz "ExplainBG"
+	.balign 4
 .global $$254940
 $$254940:
-	.incbin "baserom.dol", 0x45E9DC, 0x1C
+	.asciz "history/detail/MovieWindow"
+	.balign 4
 .global $$254943
 $$254943:
-	.incbin "baserom.dol", 0x45E9F8, 0xC
+	.asciz "PlayButtonN"
 .global $$254944
 $$254944:
-	.incbin "baserom.dol", 0x45EA04, 0xC
+	.asciz "ForwardN"
+	.balign 4
 .global $$254946
 $$254946:
-	.incbin "baserom.dol", 0x45EA10, 0xC
+	.asciz "TabCursor"
+	.balign 4
 .global $$255209
 $$255209:
-	.incbin "baserom.dol", 0x45EA1C, 0xC
+	.asciz "CurrentMinT"
 .global $$255211
 $$255211:
-	.incbin "baserom.dol", 0x45EA28, 0x10
+	.asciz "CurrentSecondT"
+	.balign 4
 .global $$255212
 $$255212:
-	.incbin "baserom.dol", 0x45EA38, 0xC
+	.asciz "TotalMinT"
+	.balign 4
 .global $$255213
 $$255213:
-	.incbin "baserom.dol", 0x45EA44, 0x10
+	.asciz "TotalSecondT"
+	.balign 4
 .global $$255335
 $$255335:
-	.incbin "baserom.dol", 0x45EA54, 0x3C
+	.asciz "NotSelect"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252429
 $$252429:
-	.incbin "baserom.dol", 0x494CF0, 0x8
+	.4byte 0
+	.4byte 0
 .global $$254941
 $$254941:
-	.incbin "baserom.dol", 0x494CF8, 0x8
+	.asciz "RewindN"
 .global $$254942
 $$254942:
-	.incbin "baserom.dol", 0x494D00, 0x8
+	.asciz "CursorN"
 .global $$254945
 $$254945:
-	.incbin "baserom.dol", 0x494D08, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254947
 $$254947:
-	.incbin "baserom.dol", 0x494D10, 0x8
+	.asciz "Wait1"
+	.balign 4
 .global $$254948
 $$254948:
-	.incbin "baserom.dol", 0x494D18, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$255047
 $$255047:
-	.incbin "baserom.dol", 0x494D20, 0x8
+	.asciz "Release"
 .global $$255087
 $$255087:
-	.incbin "baserom.dol", 0x494D28, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$255088
 $$255088:
-	.incbin "baserom.dol", 0x494D30, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$255210
 $$255210:
-	.incbin "baserom.dol", 0x494D38, 0x8
+	.asciz "%02u"
+	.balign 4
 .global $$255214
 $$255214:
-	.incbin "baserom.dol", 0x494D40, 0x8
+	.asciz "Push2"
+	.balign 4
 .global $$255215
 $$255215:
-	.incbin "baserom.dol", 0x494D48, 0x8
+	.asciz "Push1"
+	.balign 4
 .global $$255216
 $$255216:
-	.incbin "baserom.dol", 0x494D50, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$255332
 $$255332:
-	.incbin "baserom.dol", 0x494D58, 0x8
+	.asciz "Select"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251657
 $$251657:
-	.incbin "baserom.dol", 0x49ACC0, 0x4
+	.4byte 0x64000080
 .global $$255217
 $$255217:
-	.incbin "baserom.dol", 0x49ACC4, 0x4
+	.4byte 0x40000000
 .global $$255218
 $$255218:
-	.incbin "baserom.dol", 0x49ACC8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$255221
 $$255221:
-	.incbin "baserom.dol", 0x49ACD0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$255269
 $$255269:
-	.incbin "baserom.dol", 0x49ACD8, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$255273
 $$255273:
-	.incbin "baserom.dol", 0x49ACE0, 0x8
+	.4byte 0x43300000
+	.4byte 0

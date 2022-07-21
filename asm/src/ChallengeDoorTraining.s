@@ -172,18 +172,42 @@ kind__Q53scn4step7gimmick13challengedoor21ChallengeDoorTrainingCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254623
 $$254623:
-	.incbin "baserom.dol", 0x47D268, 0x24
+	.asciz "step/gimmick/DoorChallengeTraining"
+	.balign 4
 .global $$254636
 $$254636:
-	.incbin "baserom.dol", 0x47D28C, 0x34
+	.asciz "Scn.Step.Gimmick.ChallengeDoor.Unlock.UnlockDoor"
+	.balign 4
 .global $$254641
 $$254641:
-	.incbin "baserom.dol", 0x47D2C0, 0x14
+	.asciz "DoorAppearance00"
+	.balign 4
 .global __vt__Q53scn4step7gimmick13challengedoor21ChallengeDoorTraining
 __vt__Q53scn4step7gimmick13challengedoor21ChallengeDoorTraining:
-	.incbin "baserom.dol", 0x47D2D4, 0x54
+	.4byte 0
+	.4byte 0
+	.4byte 0x80309B6C
+	.4byte 0x80309D08
+	.4byte 0x80309BC8
+	.4byte 0x80306D6C
+	.4byte 0x80306D70
+	.4byte 0x80306D74
+	.4byte 0x80306D78
+	.4byte 0x80309C1C
+	.4byte 0x80309C60
+	.4byte 0x803076D8
+	.4byte 0x80309C64
+	.4byte 0x803076E0
+	.4byte 0x80309CB0
+	.4byte 0x80309D04
+	.4byte 0x80309CB4
+	.4byte 0x80309CDC
+	.4byte 0x80307C24
+	.4byte 0x803079C0
+	.4byte 0x803079CC
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254622
 $$254622:
-	.incbin "baserom.dol", 0x496A58, 0x8
+	.4byte 0
+	.4byte 0

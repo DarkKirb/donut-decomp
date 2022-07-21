@@ -270,7 +270,15 @@ onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp
 __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp:
-	.incbin "baserom.dol", 0x453EB8, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801B0104  ;# ptr
+	.4byte 0x801B00F4  ;# ptr
+	.4byte 0x801B00C0  ;# ptr
 .global __vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp
 __vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp:
-	.incbin "baserom.dol", 0x453ECC, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801B0128  ;# ptr
+	.4byte 0x801B0118  ;# ptr
+	.4byte 0x801B0108  ;# ptr

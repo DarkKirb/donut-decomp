@@ -275,4 +275,5 @@ setLevelKind__Q27storage13VolatileData2FQ33scn4step9LevelKind:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249921
 $$249921:
-	.incbin "baserom.dol", 0x49EEB0, 0x8
+	.4byte 0
+	.4byte 0

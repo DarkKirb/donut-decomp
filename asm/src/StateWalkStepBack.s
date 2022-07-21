@@ -424,12 +424,19 @@ lbl_802C1718:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe17StateWalkStepBack
 __vt__Q53scn4step5enemy10knucklejoe17StateWalkStepBack:
-	.incbin "baserom.dol", 0x474AF0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1280  ;# ptr
+	.4byte 0x802C12FC  ;# ptr
+	.4byte 0x802C1484  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C1570  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256282
 $$256282:
-	.incbin "baserom.dol", 0x49C788, 0x4
+	.4byte 0
 .global $$256321
 $$256321:
-	.incbin "baserom.dol", 0x49C78C, 0x4
+	.4byte 0x3F800000

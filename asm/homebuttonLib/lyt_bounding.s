@@ -106,36 +106,72 @@ __sinit_$$3lyt_bounding_cpp:
 /* 80135C7C 00131ABC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023C4, 0x4
+	.4byte 0x80135C60  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt8Bounding
 __vt__Q36nw4hbm3lyt8Bounding:
-	.incbin "baserom.dol", 0x43FF80, 0x64
+	.4byte 0x80443F10
+	.4byte 0
+	.4byte 0x80135B70  ;# ptr
+	.4byte 0x80135C50  ;# ptr
+	.4byte 0x8013B0A0  ;# ptr
+	.4byte 0x8013B3A0  ;# ptr
+	.4byte 0x80135BD0  ;# ptr
+	.4byte 0x8013B580  ;# ptr
+	.4byte 0x8013B610  ;# ptr
+	.4byte 0x8013AE90  ;# ptr
+	.4byte 0x8013AEA0  ;# ptr
+	.4byte 0x8013AEB0  ;# ptr
+	.4byte 0x8013AEE0  ;# ptr
+	.4byte 0x8013AF10  ;# ptr
+	.4byte 0x8013AF20  ;# ptr
+	.4byte 0x8013AF30  ;# ptr
+	.4byte 0x8013AFE0  ;# ptr
+	.4byte 0x8013B6D0  ;# ptr
+	.4byte 0x8013B6F0  ;# ptr
+	.4byte 0x8013B700  ;# ptr
+	.4byte 0x8013B710  ;# ptr
+	.4byte 0x8013B7F0  ;# ptr
+	.4byte 0x8013B870  ;# ptr
+	.4byte 0x8013BB20  ;# ptr
+	.4byte 0x8013B930  ;# ptr
 .global $$27465
 $$27465:
-	.incbin "baserom.dol", 0x43FFE4, 0x18
+	.asciz "nw4hbm::lyt::Bounding"
+	.balign 4
 .global $$27466
 $$27466:
-	.incbin "baserom.dol", 0x43FFFC, 0x14
+	.4byte 0x80443F60
+	.4byte 0
+	.4byte 0x80443F38
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt8Bounding
 __RTTI__Q36nw4hbm3lyt8Bounding:
-	.incbin "baserom.dol", 0x440010, 0x8
+	.4byte 0x80443EE4
+	.4byte 0x80443EFC
 .global $$27467
 $$27467:
-	.incbin "baserom.dol", 0x440018, 0x14
+	.asciz "nw4hbm::lyt::Pane"
+	.balign 4
 .global $$27468
 $$27468:
-	.incbin "baserom.dol", 0x44002C, 0xC
+	.4byte 0x80443F60
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt4Pane
 __RTTI__Q36nw4hbm3lyt4Pane:
-	.incbin "baserom.dol", 0x440038, 0x8
+	.4byte 0x80443F18
+	.4byte 0x80443F2C
 .global $$27469
 $$27469:
-	.incbin "baserom.dol", 0x440040, 0x20
+	.asciz "nw4hbm::lyt::detail::PaneBase"
+	.balign 4
 .global __RTTI__Q46nw4hbm3lyt6detail8PaneBase
 __RTTI__Q46nw4hbm3lyt6detail8PaneBase:
-	.incbin "baserom.dol", 0x440060, 0x8
+	.4byte 0x80443F40
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt8Bounding

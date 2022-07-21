@@ -1027,4 +1027,11 @@ lbl_803AB77C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255923
 $$255923:
-	.incbin "baserom.dol", 0x48BD88, 0x20
+	.4byte 0x803AAA48
+	.4byte 0x803AAA54
+	.4byte 0x803AAB5C
+	.4byte 0x803AAB80
+	.4byte 0x803AAB8C
+	.4byte 0x803AABE8
+	.4byte 0x803AABF4
+	.4byte 0x803AAC30

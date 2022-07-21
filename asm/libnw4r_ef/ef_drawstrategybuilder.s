@@ -127,7 +127,10 @@ lbl_800B8B3C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef19DrawStrategyBuilder
 __vt__Q34nw4r2ef19DrawStrategyBuilder:
-	.incbin "baserom.dol", 0x43C4E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800B89B0  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2Create__Q34nw4r2ef19DrawStrategyBuilderFUl$$2billboardStrategy

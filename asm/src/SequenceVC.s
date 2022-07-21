@@ -81,4 +81,13 @@ __dt__Q23seq10SequenceVCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq10SequenceVC
 __vt__Q23seq10SequenceVC:
-	.incbin "baserom.dol", 0x492640, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80400508
+	.4byte 0x8040050C
+	.4byte 0x80400460
+	.4byte 0x80400478
+	.4byte 0x8040047C
+	.4byte 0x80400480
+	.4byte 0x804004FC
+	.4byte 0

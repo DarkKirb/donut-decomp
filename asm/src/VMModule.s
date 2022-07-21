@@ -141,10 +141,17 @@ lbl_801CD3AC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26mintvm8VMModule
 __vt__Q26mintvm8VMModule:
-	.incbin "baserom.dol", 0x458CA0, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA0F8  ;# ptr
 .global __vt__Q26mintvm13VMSymbolTable
 __vt__Q26mintvm13VMSymbolTable:
-	.incbin "baserom.dol", 0x458CAC, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA6EC  ;# ptr
 .global __vt__Q26mintvm15VMConstantTable
 __vt__Q26mintvm15VMConstantTable:
-	.incbin "baserom.dol", 0x458CB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA758  ;# ptr
+	.4byte 0

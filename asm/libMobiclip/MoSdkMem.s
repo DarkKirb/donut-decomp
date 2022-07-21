@@ -97,7 +97,8 @@ lbl_801537F4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22435
 $$22435:
-	.incbin "baserom.dol", 0x444598, 0x18
+	.asciz "Heap not initialized\n"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global MOiAllocator

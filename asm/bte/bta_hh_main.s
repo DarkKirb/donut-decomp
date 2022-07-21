@@ -403,102 +403,166 @@ lbl_8007DA30:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_hh_action
 bta_hh_action:
-	.incbin "baserom.dol", 0x404170, 0x30
+	.4byte 0x8007C118  ;# ptr
+	.4byte 0x8007C2A8  ;# ptr
+	.4byte 0x8007C818  ;# ptr
+	.4byte 0x8007C360  ;# ptr
+	.4byte 0x8007C620  ;# ptr
+	.4byte 0x8007C3B8  ;# ptr
+	.4byte 0x8007BE1C  ;# ptr
+	.4byte 0x8007BFB0  ;# ptr
+	.4byte 0x8007CCB4  ;# ptr
+	.4byte 0x8007CA18  ;# ptr
+	.4byte 0x8007CA34  ;# ptr
+	.4byte 0x8007C180  ;# ptr
 .global bta_hh_st_idle
 bta_hh_st_idle:
-	.incbin "baserom.dol", 0x4041A0, 0x18
+	.4byte 0x06020C01
+	.4byte 0x01020201
+	.4byte 0x0C010C01
+	.4byte 0x0C010C01
+	.4byte 0x0C010C01
+	.4byte 0x0A010C01
 .global bta_hh_st_w4_conn
 bta_hh_st_w4_conn:
-	.incbin "baserom.dol", 0x4041B8, 0x18
+	.4byte 0x0C020C01
+	.4byte 0x01020201
+	.4byte 0x0C020C02
+	.4byte 0x0C020702
+	.4byte 0x0C020C02
+	.4byte 0x0A010B03
 .global bta_hh_st_connected
 bta_hh_st_connected:
-	.incbin "baserom.dol", 0x4041D0, 0x18
+	.4byte 0x0C030003
+	.4byte 0x01030201
+	.4byte 0x03030403
+	.4byte 0x05030C03
+	.4byte 0x08030903
+	.4byte 0x0A030C03
 .global bta_hh_st_tbl
 bta_hh_st_tbl:
-	.incbin "baserom.dol", 0x4041E8, 0x10
+	.4byte 0x804080A0
+	.4byte 0x804080B8
+	.4byte 0x804080D0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2811
 $$2811:
-	.incbin "baserom.dol", 0x437210, 0x1C
+	.asciz "wrong device handle: [%d]"
+	.balign 4
 .global $$2812
 $$2812:
-	.incbin "baserom.dol", 0x43722C, 0x10
+	.asciz "BTA_HH_NULL_ST"
+	.balign 4
 .global $$2813
 $$2813:
-	.incbin "baserom.dol", 0x43723C, 0x10
+	.asciz "BTA_HH_IDLE_ST"
+	.balign 4
 .global $$2814
 $$2814:
-	.incbin "baserom.dol", 0x43724C, 0x14
+	.asciz "BTA_HH_W4_CONN_ST"
+	.balign 4
 .global $$2815
 $$2815:
-	.incbin "baserom.dol", 0x437260, 0x10
+	.asciz "BTA_HH_CONN_ST"
+	.balign 4
 .global $$2816
 $$2816:
-	.incbin "baserom.dol", 0x437270, 0x18
+	.asciz "unknown HID Host state"
+	.balign 4
 .global $$2817
 $$2817:
-	.incbin "baserom.dol", 0x437288, 0x34
+	.asciz "bta_hh_sm_execute: State 0x%02x [%s], Event [%s]"
+	.balign 4
 .global $$2818
 $$2818:
-	.incbin "baserom.dol", 0x4372BC, 0x30
+	.asciz "HH State Change: [%s] -> [%s] after Event [%s]"
+	.balign 4
 .global $$2840
 $$2840:
-	.incbin "baserom.dol", 0x4372EC, 0x2C
+	.asciz "bta_hh_hdl_event:: handle = %d dev_cb[%d] "
+	.balign 4
 .global $$2860
 $$2860:
-	.incbin "baserom.dol", 0x437318, 0x18
+	.asciz "BTA_HH_API_DISABLE_EVT"
+	.balign 4
 .global $$2861
 $$2861:
-	.incbin "baserom.dol", 0x437330, 0x18
+	.asciz "BTA_HH_API_ENABLE_EVT"
+	.balign 4
 .global $$2862
 $$2862:
-	.incbin "baserom.dol", 0x437348, 0x14
+	.asciz "BTA_HH_API_OPEN_EVT"
 .global $$2863
 $$2863:
-	.incbin "baserom.dol", 0x43735C, 0x18
+	.asciz "BTA_HH_API_CLOSE_EVT"
+	.balign 4
 .global $$2864
 $$2864:
-	.incbin "baserom.dol", 0x437374, 0x14
+	.asciz "BTA_HH_INT_OPEN_EVT"
 .global $$2865
 $$2865:
-	.incbin "baserom.dol", 0x437388, 0x18
+	.asciz "BTA_HH_INT_CLOSE_EVT"
+	.balign 4
 .global $$2866
 $$2866:
-	.incbin "baserom.dol", 0x4373A0, 0x18
+	.asciz "BTA_HH_INT_HANDSK_EVT"
+	.balign 4
 .global $$2867
 $$2867:
-	.incbin "baserom.dol", 0x4373B8, 0x14
+	.asciz "BTA_HH_INT_DATA_EVT"
 .global $$2868
 $$2868:
-	.incbin "baserom.dol", 0x4373CC, 0x18
+	.asciz "BTA_HH_INT_CTRL_DATA"
+	.balign 4
 .global $$2869
 $$2869:
-	.incbin "baserom.dol", 0x4373E4, 0x1C
+	.asciz "BTA_HH_API_WRITE_DEV_EVT"
+	.balign 4
 .global $$2870
 $$2870:
-	.incbin "baserom.dol", 0x437400, 0x14
+	.asciz "BTA_HH_SDP_CMPL_EVT"
 .global $$2871
 $$2871:
-	.incbin "baserom.dol", 0x437414, 0x18
+	.asciz "BTA_HH_DISC_CMPL_EVT"
+	.balign 4
 .global $$2872
 $$2872:
-	.incbin "baserom.dol", 0x43742C, 0x1C
+	.asciz "BTA_HH_API_MAINT_DEV_EVT"
+	.balign 4
 .global $$2873
 $$2873:
-	.incbin "baserom.dol", 0x437448, 0x18
+	.asciz "BTA_HH_API_GET_DSCP_EVT"
 .global $$2874
 $$2874:
-	.incbin "baserom.dol", 0x437460, 0x18
+	.asciz "BTA_HH_OPEN_CMPL_EVT"
+	.balign 4
 .global $$2875
 $$2875:
-	.incbin "baserom.dol", 0x437478, 0x1C
+	.asciz "BTA_HH_API_GET_ACL_Q_EVT"
+	.balign 4
 .global $$2876
 $$2876:
-	.incbin "baserom.dol", 0x437494, 0x1C
+	.asciz "unknown HID Host event code"
 .global $$2877
 $$2877:
-	.incbin "baserom.dol", 0x4374B0, 0x40
+	.4byte 0x8007D9C0  ;# ptr
+	.4byte 0x8007D9C8  ;# ptr
+	.4byte 0x8007D9D0  ;# ptr
+	.4byte 0x8007D9D8  ;# ptr
+	.4byte 0x8007D9E8  ;# ptr
+	.4byte 0x8007D9F0  ;# ptr
+	.4byte 0x8007D9E0  ;# ptr
+	.4byte 0x8007DA00  ;# ptr
+	.4byte 0x8007D9F8  ;# ptr
+	.4byte 0x8007DA18  ;# ptr
+	.4byte 0x8007DA10  ;# ptr
+	.4byte 0x8007DA20  ;# ptr
+	.4byte 0x8007D9B8  ;# ptr
+	.4byte 0x8007D9B0  ;# ptr
+	.4byte 0x8007DA28  ;# ptr
+	.4byte 0x8007DA08  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global bta_hh_cb

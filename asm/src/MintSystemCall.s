@@ -119,4 +119,6 @@ lbl_801C611C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249097
 $$249097:
-	.incbin "baserom.dol", 0x457DA0, 0x28
+	.asciz "[Mint_Panic] file \"%s\" : line %d.\n"
+	.balign 4
+	.4byte 0

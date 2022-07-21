@@ -1174,27 +1174,53 @@ $$2192$$2__dt__Q44nw4r3snd6detail9WsdPlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9WsdPlayer
 __vt__Q44nw4r3snd6detail9WsdPlayer:
-	.incbin "baserom.dol", 0x43E780, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011E420  ;# ptr
+	.4byte 0x8011EDE0  ;# ptr
+	.4byte 0x8011EDF0  ;# ptr
+	.4byte 0x8011EF20  ;# ptr
+	.4byte 0x8011FAC0  ;# ptr
+	.4byte 0x8011FAA0  ;# ptr
+	.4byte 0x8011FA80  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011FB00  ;# ptr
+	.4byte 0x8011FAF0  ;# ptr
+	.4byte 0x8011FAE0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x8011FB30  ;# ptr
+	.4byte 0x8011FB20  ;# ptr
+	.4byte 0x80109E20  ;# ptr
+	.4byte 0x8011FB10  ;# ptr
+	.4byte 0x8011F000  ;# ptr
+	.4byte 0x8011FA70  ;# ptr
+	.4byte 0x8011FA50  ;# ptr
+	.4byte 0x8011FA60  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210015
 $$210015:
-	.incbin "baserom.dol", 0x499FF8, 0x4
+	.4byte 0x3F800000
 .global $$210428
 $$210428:
-	.incbin "baserom.dol", 0x499FFC, 0x4
+	.4byte 0
 .global $$210429
 $$210429:
-	.incbin "baserom.dol", 0x49A000, 0x4
+	.4byte 0x427C0000
 .global $$210430
 $$210430:
-	.incbin "baserom.dol", 0x49A004, 0x4
+	.4byte 0x3C800000
 .global $$210431
 $$210431:
-	.incbin "baserom.dol", 0x49A008, 0x8
+	.4byte 0x42FE0000
+	.4byte 0
 .global $$210435
 $$210435:
-	.incbin "baserom.dol", 0x49A010, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$210436
 $$210436:
-	.incbin "baserom.dol", 0x49A018, 0x8
+	.4byte 0x43300000
+	.4byte 0

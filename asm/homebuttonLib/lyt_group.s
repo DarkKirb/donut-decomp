@@ -247,10 +247,14 @@ lbl_80136BFC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt5Group
 __vt__Q36nw4hbm3lyt5Group:
-	.incbin "baserom.dol", 0x440098, 0xC
+	.4byte 0x80443FB8
+	.4byte 0
+	.4byte 0x801369E0  ;# ptr
 .global $$27939
 $$27939:
-	.incbin "baserom.dol", 0x4400A4, 0x14
+	.asciz "nw4hbm::lyt::Group"
+	.balign 4
 .global __RTTI__Q36nw4hbm3lyt5Group
 __RTTI__Q36nw4hbm3lyt5Group:
-	.incbin "baserom.dol", 0x4400B8, 0x8
+	.4byte 0x80443FA4
+	.4byte 0

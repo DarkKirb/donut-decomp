@@ -447,35 +447,45 @@ lbl_801F765C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252276
 $$252276:
-	.incbin "baserom.dol", 0x45BAB0, 0x18
+	.asciz "challengeability/Main"
+	.balign 4
 .global $$252277
 $$252277:
-	.incbin "baserom.dol", 0x45BAC8, 0x10
+	.asciz "CursorBase"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252278
 $$252278:
-	.incbin "baserom.dol", 0x4943E0, 0x8
+	.asciz "Cursor"
+	.balign 4
 .global $$252279
 $$252279:
-	.incbin "baserom.dol", 0x4943E8, 0x8
+	.asciz "CursorN"
 .global $$252280
 $$252280:
-	.incbin "baserom.dol", 0x4943F0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252282
 $$252282:
-	.incbin "baserom.dol", 0x4943F8, 0x8
+	.asciz "Focus"
+	.balign 4
 .global $$252323
 $$252323:
-	.incbin "baserom.dol", 0x494400, 0x8
+	.asciz "MoveL"
+	.balign 4
 .global $$252326
 $$252326:
-	.incbin "baserom.dol", 0x494408, 0x8
+	.asciz "MoveR"
+	.balign 4
 .global $$252329
 $$252329:
-	.incbin "baserom.dol", 0x494410, 0x8
+	.asciz "Decide"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252281
 $$252281:
-	.incbin "baserom.dol", 0x49AA00, 0x8
+	.4byte 0x3F800000
+	.4byte 0

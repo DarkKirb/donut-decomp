@@ -925,7 +925,8 @@ lbl_800A0DA0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21040
 $$21040:
-	.incbin "baserom.dol", 0x43BFF8, 0x24
+	.asciz "SDP - server got unknown PDU: 0x%x"
+	.balign 4
 .global $$21122
 $$21122:
-	.incbin "baserom.dol", 0x43C01C, 0x1C
+	.asciz "SDP - no buf for search rsp"

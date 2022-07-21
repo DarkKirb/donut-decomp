@@ -669,30 +669,64 @@ HBMSEQSetVolume:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21048
 $$21048:
-	.incbin "baserom.dol", 0x40A428, 0x4
+	.4byte 0x47800000
 .global $$21049
 $$21049:
-	.incbin "baserom.dol", 0x40A42C, 0x4
+	.4byte 0x42C00000
 .global $$21050
 $$21050:
-	.incbin "baserom.dol", 0x40A430, 0x8
+	.4byte 0x467A0000
+	.4byte 0
 .global $$21054
 $$21054:
-	.incbin "baserom.dol", 0x40A438, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$21185
 $$21185:
-	.incbin "baserom.dol", 0x40A440, 0x4
+	.4byte 0x49742400
 .global $$21186
 $$21186:
-	.incbin "baserom.dol", 0x40A444, 0x4
+	.4byte 0x46FA0000
 .global $$21188
 $$21188:
-	.incbin "baserom.dol", 0x40A448, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMSEQMidiEventLength
 __HBMSEQMidiEventLength:
-	.incbin "baserom.dol", 0x442CD8, 0x80
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x01010101
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x02020202
+	.4byte 0x00000201
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __HBMSEQSequenceList

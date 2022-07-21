@@ -111,4 +111,5 @@ __vc__Q33hel6common67MutableArray$$0Q53scn4step4boss13DamagePrevent17PreventTarg
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250316
 $$250316:
-	.incbin "baserom.dol", 0x49AE58, 0x8
+	.4byte 0x43300000
+	.4byte 0

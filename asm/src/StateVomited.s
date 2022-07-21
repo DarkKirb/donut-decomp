@@ -808,42 +808,52 @@ lbl_8037555C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference12StateVomited
 __vt__Q53scn4step4hero12interference12StateVomited:
-	.incbin "baserom.dol", 0x4886A8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80374D70
+	.4byte 0x80374F58
+	.4byte 0x80375014
+	.4byte 0x80375018
+	.4byte 0x80375224
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260568
 $$260568:
-	.incbin "baserom.dol", 0x49DDB0, 0x4
+	.4byte 0xBD75C28F
 .global $$260569
 $$260569:
-	.incbin "baserom.dol", 0x49DDB4, 0x4
+	.4byte 0x3DCCCCCD
 .global $$260570
 $$260570:
-	.incbin "baserom.dol", 0x49DDB8, 0x4
+	.4byte 0
 .global $$260609
 $$260609:
-	.incbin "baserom.dol", 0x49DDBC, 0x4
+	.4byte 0xBF000000
 .global $$260610
 $$260610:
-	.incbin "baserom.dol", 0x49DDC0, 0x4
+	.4byte 0x3F800000
 .global $$260611
 $$260611:
-	.incbin "baserom.dol", 0x49DDC4, 0x4
+	.4byte 0x3F4CCCCD
 .global $$260704
 $$260704:
-	.incbin "baserom.dol", 0x49DDC8, 0x4
+	.4byte 0x3D4CCCCD
 .global $$260705
 $$260705:
-	.incbin "baserom.dol", 0x49DDCC, 0x4
+	.4byte 0x3F19999A
 .global $$260706
 $$260706:
-	.incbin "baserom.dol", 0x49DDD0, 0x4
+	.4byte 0x3F000000
 .global $$260707
 $$260707:
-	.incbin "baserom.dol", 0x49DDD4, 0x4
+	.4byte 0x3F8CCCCD
 .global $$260708
 $$260708:
-	.incbin "baserom.dol", 0x49DDD8, 0x8
+	.4byte 0x3ECCCCCD
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q53scn4step6weapon11starshotlv16Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

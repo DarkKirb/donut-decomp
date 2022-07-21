@@ -317,4 +317,11 @@ lbl_802A3900:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5cappy12StateSkinned
 __vt__Q53scn4step5enemy5cappy12StateSkinned:
-	.incbin "baserom.dol", 0x471378, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A36A4  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802A371C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A3774  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

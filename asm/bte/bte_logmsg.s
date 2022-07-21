@@ -67,7 +67,8 @@ LogMsg_0:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22252
 $$22252:
-	.incbin "baserom.dol", 0x492CC0, 0x8
+	.4byte 0x25730A00
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2LogMsg__FUlPCce$$2tmp

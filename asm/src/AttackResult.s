@@ -271,4 +271,5 @@ __vc__Q33hel6common45MutableArray$$0Q35ocoll12AttackResult5Datum$$410$$1FUl:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250282
 $$250282:
-	.incbin "baserom.dol", 0x49A7B8, 0x8
+	.4byte 0
+	.4byte 0

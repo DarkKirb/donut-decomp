@@ -248,9 +248,19 @@ procFixPos__Q53scn4step4hero6common14StateSuperJumpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common14StateSuperJump
 __vt__Q53scn4step4hero6common14StateSuperJump:
-	.incbin "baserom.dol", 0x488290, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036BC14
+	.4byte 0x8036BCA4
+	.4byte 0x8036BD10
+	.4byte 0x8035550C
+	.4byte 0x8036BE40
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256442
 $$256442:
-	.incbin "baserom.dol", 0x49DC58, 0x8
+	.4byte 0
+	.4byte 0

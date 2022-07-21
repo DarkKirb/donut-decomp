@@ -347,32 +347,41 @@ startDisappearAnim__Q43scn4step4info9HelpShakeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252130
 $$252130:
-	.incbin "baserom.dol", 0x48B768, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$252131
 $$252131:
-	.incbin "baserom.dol", 0x48B778, 0x10
+	.asciz "HelpShake"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252133
 $$252133:
-	.incbin "baserom.dol", 0x4978F0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252212
 $$252212:
-	.incbin "baserom.dol", 0x4978F8, 0x8
+	.asciz "Shake"
+	.balign 4
 .global $$252215
 $$252215:
-	.incbin "baserom.dol", 0x497900, 0x8
+	.asciz "Success"
 .global $$252231
 $$252231:
-	.incbin "baserom.dol", 0x497908, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$252234
 $$252234:
-	.incbin "baserom.dol", 0x497910, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252237
 $$252237:
-	.incbin "baserom.dol", 0x497918, 0x8
+	.4byte 0x456E6400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252132
 $$252132:
-	.incbin "baserom.dol", 0x49E3F8, 0x8
+	.4byte 0
+	.4byte 0

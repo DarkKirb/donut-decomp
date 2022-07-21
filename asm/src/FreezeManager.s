@@ -494,15 +494,18 @@ VReport__Q26freeze13FreezeManagerFPCcP16__va_list_struct:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249629
 $$249629:
-	.incbin "baserom.dol", 0x44FFE8, 0x18
+	.asciz "%s in %s on line %d.\n"
+	.balign 4
 .global $$249630
 $$249630:
-	.incbin "baserom.dol", 0x450000, 0x20
+	.asciz "not construct FreezeManager\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global doSerialReport
 doSerialReport:
-	.incbin "baserom.dol", 0x493148, 0x8
+	.4byte 0x01000000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global debug_context

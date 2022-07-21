@@ -613,4 +613,7 @@ onDirty__Q23g3d10CharaModelFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23g3d10CharaModel
 __vt__Q23g3d10CharaModel:
-	.incbin "baserom.dol", 0x450480, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8018D060  ;# ptr
+	.4byte 0x8018D648  ;# ptr

@@ -799,16 +799,41 @@ lbl_800D33D8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ResNameData_LightSet__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_LightSet__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
-	.incbin "baserom.dol", 0x43C760, 0x20
+	.4byte 0x0000000E
+	.asciz "LightSet(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AmbLights__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_AmbLights__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
-	.incbin "baserom.dol", 0x43C780, 0x20
+	.4byte 0x0000000F
+	.asciz "AmbLights(NW4R)"
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Lights__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_Lights__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
-	.incbin "baserom.dol", 0x43C7A0, 0x20
+	.4byte 0x0000000C
+	.asciz "Lights(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Fogs__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_Fogs__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
-	.incbin "baserom.dol", 0x43C7C0, 0x20
+	.4byte 0x0000000A
+	.asciz "Fogs(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Cameras__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_Cameras__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
-	.incbin "baserom.dol", 0x43C7E0, 0x20
+	.4byte 0x0000000D
+	.asciz "Cameras(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0

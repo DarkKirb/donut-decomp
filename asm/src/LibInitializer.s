@@ -158,19 +158,20 @@ lbl_801A3A40:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249040
 $$249040:
-	.incbin "baserom.dol", 0x49A458, 0x4
+	.4byte 0x3DCCCCCD
 .global $$249041
 $$249041:
-	.incbin "baserom.dol", 0x49A45C, 0x4
+	.4byte 0x3F000000
 .global $$249042
 $$249042:
-	.incbin "baserom.dol", 0x49A460, 0x4
+	.4byte 0x3E4CCCCD
 .global $$249043
 $$249043:
-	.incbin "baserom.dol", 0x49A464, 0x4
+	.4byte 0x3D8F5C29
 .global $$249044
 $$249044:
-	.incbin "baserom.dol", 0x49A468, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global isExist___Q33hel6common40PrivateSingleton$$0Q23hid14LibInitializer$$1

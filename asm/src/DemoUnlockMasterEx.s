@@ -135,12 +135,24 @@ isMasterDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo18DemoUnlockMasterExC
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254711
 $$254711:
-	.incbin "baserom.dol", 0x47B960, 0x38
+	.asciz "Scn.Step.Gimmick.AreaMapDemo.Unlock.UnlockMasterEx"
+	.balign 4
+	.4byte 0
 .global __vt__Q53scn4step7gimmick11areamapdemo18DemoUnlockMasterEx
 __vt__Q53scn4step7gimmick11areamapdemo18DemoUnlockMasterEx:
-	.incbin "baserom.dol", 0x47B998, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x802FCCB8
+	.4byte 0x802FAE04
+	.4byte 0x802FAE08
+	.4byte 0x802FCCBC
+	.4byte 0x802FCCCC
+	.4byte 0x802FCCD0
+	.4byte 0x802FCCD4
+	.4byte 0x802FAE90
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254729
 $$254729:
-	.incbin "baserom.dol", 0x49D1B0, 0x8
+	.4byte 0
+	.4byte 0

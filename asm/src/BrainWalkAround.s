@@ -398,27 +398,65 @@ __dt__Q53scn4step5enemy9waddledoo15BrainWalkAroundFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common15BrainWalkAround
 __vt__Q53scn4step5enemy6common15BrainWalkAround:
-	.incbin "baserom.dol", 0x46F088, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029162C  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802915A8  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter15StateWalkAround$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470D80, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0E5C  ;# ptr
+	.4byte 0x802A0E3C  ;# ptr
 .global __vt__Q53scn4step5enemy11broomhatter15BrainWalkAround
 __vt__Q53scn4step5enemy11broomhatter15BrainWalkAround:
-	.incbin "baserom.dol", 0x470D90, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0E58  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802A0DB8  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6lanzer15BrainWalkAround
 __vt__Q53scn4step5enemy6lanzer15BrainWalkAround:
-	.incbin "baserom.dol", 0x474C48, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C1EE0  ;# ptr
+	.4byte 0x802C1D68  ;# ptr
+	.4byte 0x802C1E9C  ;# ptr
+	.4byte 0x802C1E98  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory15BrainWalkAround
 __vt__Q53scn4step5enemy6sodory15BrainWalkAround:
-	.incbin "baserom.dol", 0x478DD0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E4C38  ;# ptr
+	.4byte 0x802E4B44  ;# ptr
+	.4byte 0x802E4BEC  ;# ptr
+	.4byte 0x802E4BE8  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledoo15BrainWalkAround
 __vt__Q53scn4step5enemy9waddledoo15BrainWalkAround:
-	.incbin "baserom.dol", 0x47A510, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EFA1C  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802EFA14  ;# ptr
+	.4byte 0x802EFA18  ;# ptr
+	.4byte 0

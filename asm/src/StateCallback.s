@@ -374,24 +374,39 @@ __dt__Q43scn4step6weapon13StateCallbackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss13StateCallback
 __vt__Q43scn4step4boss13StateCallback:
-	.incbin "baserom.dol", 0x460948, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8022BF84  ;# ptr
+	.4byte 0x80234580  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13StateCallback
 __vt__Q43scn4step5enemy13StateCallback:
-	.incbin "baserom.dol", 0x46ED50, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80286D4C  ;# ptr
+	.4byte 0x8028DE5C  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero13StateCallback
 __vt__Q43scn4step4hero13StateCallback:
-	.incbin "baserom.dol", 0x481618, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8033C720
+	.4byte 0x8035558C
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item13StateCallback
 __vt__Q43scn4step4item13StateCallback:
-	.incbin "baserom.dol", 0x48E020, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C1C90
+	.4byte 0x803C5278
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon13StateCallback
 __vt__Q43scn4step6weapon13StateCallback:
-	.incbin "baserom.dol", 0x48FEB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D8A00
+	.4byte 0x803D89D8

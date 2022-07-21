@@ -313,35 +313,46 @@ setTransTopRight__Q34info6common8SkipHelpFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252391
 $$252391:
-	.incbin "baserom.dol", 0x4536E8, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$252393
 $$252393:
-	.incbin "baserom.dol", 0x4536F8, 0xC
+	.asciz "SkipText"
+	.balign 4
 .global $$252394
 $$252394:
-	.incbin "baserom.dol", 0x453704, 0x3C
+	.asciz "SkipTextSdw"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252392
 $$252392:
-	.incbin "baserom.dol", 0x493490, 0x8
+	.asciz "Skip"
+	.balign 4
 .global $$252438
 $$252438:
-	.incbin "baserom.dol", 0x493498, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252439
 $$252439:
-	.incbin "baserom.dol", 0x4934A0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252440
 $$252440:
-	.incbin "baserom.dol", 0x4934A8, 0x8
+	.4byte 0x456E6400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252465
 $$252465:
-	.incbin "baserom.dol", 0x49A498, 0x4
+	.4byte 0x3F51EB85
 .global $$252466
 $$252466:
-	.incbin "baserom.dol", 0x49A49C, 0x4
+	.4byte 0
 .global $$252469
 $$252469:
-	.incbin "baserom.dol", 0x49A4A0, 0x8
+	.4byte 0x43300000
+	.4byte 0

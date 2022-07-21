@@ -352,18 +352,25 @@ reqWeapon__Q53scn4step5enemy7hothead15StateAttackShotFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7hothead15StateAttackShot
 __vt__Q53scn4step5enemy7hothead15StateAttackShot:
-	.incbin "baserom.dol", 0x473B38, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BA9E8  ;# ptr
+	.4byte 0x802BAA64  ;# ptr
+	.4byte 0x802BABA4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802BABA8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257616
 $$257616:
-	.incbin "baserom.dol", 0x49C5D8, 0x4
+	.4byte 0
 .global $$257617
 $$257617:
-	.incbin "baserom.dol", 0x49C5DC, 0x4
+	.4byte 0x42B40000
 .global $$257677
 $$257677:
-	.incbin "baserom.dol", 0x49C5E0, 0x4
+	.4byte 0x42652EE1
 .global $$257678
 $$257678:
-	.incbin "baserom.dol", 0x49C5E4, 0x4
+	.4byte 0x3C8EFA35

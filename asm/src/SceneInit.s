@@ -593,68 +593,120 @@ GetRuntimeTypeInfo__Q33scn4init9SceneInitCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253204
 $$253204:
-	.incbin "baserom.dol", 0x45F7C8, 0x10
+	.asciz "common/savedata"
 .global $$253205
 $$253205:
-	.incbin "baserom.dol", 0x45F7D8, 0xC
+	.asciz "Savedata"
+	.balign 4
 .global $$253206
 $$253206:
-	.incbin "baserom.dol", 0x45F7E4, 0xC
+	.asciz "OKButton"
+	.balign 4
 .global $$253208
 $$253208:
-	.incbin "baserom.dol", 0x45F7F0, 0xC
+	.asciz "SaveFile"
+	.balign 4
 .global $$253209
 $$253209:
-	.incbin "baserom.dol", 0x45F7FC, 0xC
+	.asciz "OKButtonN"
+	.balign 4
 .global $$253210
 $$253210:
-	.incbin "baserom.dol", 0x45F808, 0xC
+	.asciz "ButtonText"
+	.balign 4
 .global $$253211
 $$253211:
-	.incbin "baserom.dol", 0x45F814, 0xC
+	.asciz "ConfirmOK"
+	.balign 4
 .global $$253294
 $$253294:
-	.incbin "baserom.dol", 0x45F820, 0xC
+	.asciz "SavingFile"
+	.balign 4
 .global $$253295
 $$253295:
-	.incbin "baserom.dol", 0x45F82C, 0xC
+	.asciz "SavedFile"
+	.balign 4
 .global $$253298
 $$253298:
-	.incbin "baserom.dol", 0x45F838, 0x3C
+	.4byte 0x8021BAE0  ;# ptr
+	.4byte 0x8021BB0C  ;# ptr
+	.4byte 0x8021BBB0  ;# ptr
+	.4byte 0x8021BC20  ;# ptr
+	.4byte 0x8021BC8C  ;# ptr
+	.4byte 0x8021BCD0  ;# ptr
+	.4byte 0x8021BD28  ;# ptr
+	.4byte 0x8021BDA0  ;# ptr
+	.4byte 0x8021BDC8  ;# ptr
+	.4byte 0x8021BDFC  ;# ptr
+	.4byte 0x8021BE9C  ;# ptr
+	.4byte 0x8021BEE0  ;# ptr
+	.4byte 0x8021BF38  ;# ptr
+	.4byte 0x8021BF7C  ;# ptr
+	.4byte 0x8021BF98  ;# ptr
 .global __vt__Q33scn4init9SceneInit
 __vt__Q33scn4init9SceneInit:
-	.incbin "baserom.dol", 0x45F874, 0x8C
+	.4byte 0
+	.4byte 0
+	.4byte 0x8021C058  ;# ptr
+	.4byte 0x8021B9E0  ;# ptr
+	.4byte 0x8021BA98  ;# ptr
+	.4byte 0x8021BA94  ;# ptr
+	.4byte 0x8021BFBC  ;# ptr
+	.4byte 0x8021BFC0  ;# ptr
+	.4byte 0x8021C004  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "no name class"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253207
 $$253207:
-	.incbin "baserom.dol", 0x495128, 0x8
+	.asciz "Text01"
+	.balign 4
 .global $$253289
 $$253289:
-	.incbin "baserom.dol", 0x495130, 0x4
+	.4byte 0x496E0000
 .global $$253290
 $$253290:
-	.incbin "baserom.dol", 0x495134, 0x8
+	.asciz "TextIn"
+	.balign 4
 .global $$253291
 $$253291:
-	.incbin "baserom.dol", 0x49513C, 0xC
+	.asciz "Choice"
+	.balign 4
+	.4byte 0
 .global $$253292
 $$253292:
-	.incbin "baserom.dol", 0x495148, 0x8
+	.asciz "TextOut"
 .global $$253293
 $$253293:
-	.incbin "baserom.dol", 0x495150, 0x8
+	.asciz "Decide"
+	.balign 4
 .global $$253296
 $$253296:
-	.incbin "baserom.dol", 0x495158, 0x8
+	.4byte 0x4F757400
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252157
 $$252157:
-	.incbin "baserom.dol", 0x49AD38, 0x4
+	.4byte 0x000000FF
 .global $$252160
 $$252160:
-	.incbin "baserom.dol", 0x49AD3C, 0x4
+	.4byte 0xFFFFFFFF
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn4init9SceneInit$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

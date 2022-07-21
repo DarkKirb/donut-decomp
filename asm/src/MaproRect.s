@@ -54,7 +54,9 @@ toWorldRect__Q33scn4step9MaproRectCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249776
 $$249776:
-	.incbin "baserom.dol", 0x49AD58, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$249777
 $$249777:
-	.incbin "baserom.dol", 0x49AD60, 0x8
+	.4byte 0x43300000
+	.4byte 0

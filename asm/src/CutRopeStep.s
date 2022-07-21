@@ -1969,98 +1969,113 @@ lbl_8030D4B0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256444
 $$256444:
-	.incbin "baserom.dol", 0x47D370, 0x1C
+	.asciz "step/gimmick/CutRopeLand"
+	.balign 4
 .global $$256445
 $$256445:
-	.incbin "baserom.dol", 0x47D38C, 0x20
+	.asciz "step/gimmick/CutRopeLandHard"
+	.balign 4
 .global $$259529
 $$259529:
-	.incbin "baserom.dol", 0x47D3AC, 0x1C
+	.asciz "step/gimmick/CutRopeStep"
+	.balign 4
 .global $$259530
 $$259530:
-	.incbin "baserom.dol", 0x47D3C8, 0x18
+	.asciz "step/gimmick/CutRope"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256456
 $$256456:
-	.incbin "baserom.dol", 0x496A80, 0x8
+	.asciz "TopL1"
+	.balign 4
 .global $$256457
 $$256457:
-	.incbin "baserom.dol", 0x496A88, 0x8
+	.asciz "TopL2"
+	.balign 4
 .global $$256472
 $$256472:
-	.incbin "baserom.dol", 0x496A90, 0x8
+	.asciz "Wait1"
+	.balign 4
 .global $$256473
 $$256473:
-	.incbin "baserom.dol", 0x496A98, 0x8
+	.asciz "Wait2"
+	.balign 4
 .global $$256484
 $$256484:
-	.incbin "baserom.dol", 0x496AA0, 0x8
+	.asciz "Crush1"
+	.balign 4
 .global $$256485
 $$256485:
-	.incbin "baserom.dol", 0x496AA8, 0x8
+	.asciz "Crush2"
+	.balign 4
 .global $$259531
 $$259531:
-	.incbin "baserom.dol", 0x496AB0, 0x8
+	.asciz "TopL1"
+	.balign 4
 .global $$259853
 $$259853:
-	.incbin "baserom.dol", 0x496AB8, 0x8
+	.asciz "TopL2"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259467
 $$259467:
-	.incbin "baserom.dol", 0x49D358, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$259471
 $$259471:
-	.incbin "baserom.dol", 0x49D360, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$259480
 $$259480:
-	.incbin "baserom.dol", 0x49D368, 0x8
+	.4byte 0x43340000
+	.4byte 0
 .global $$256446
 $$256446:
-	.incbin "baserom.dol", 0x49D370, 0x4
+	.4byte 0x80481270
 .global lbl_80562834
 lbl_80562834:
-	.incbin "baserom.dol", 0x49D374, 0x4
+	.4byte 0x8048128C
 .global $$256458
 $$256458:
-	.incbin "baserom.dol", 0x49D378, 0x4
+	.4byte 0x8055A6A0
 .global lbl_8056283C
 lbl_8056283C:
-	.incbin "baserom.dol", 0x49D37C, 0x4
+	.4byte 0x8055A6A8
 .global $$256474
 $$256474:
-	.incbin "baserom.dol", 0x49D380, 0x4
+	.4byte 0x8055A6B0
 .global lbl_80562844
 lbl_80562844:
-	.incbin "baserom.dol", 0x49D384, 0x4
+	.4byte 0x8055A6B8
 .global $$256486
 $$256486:
-	.incbin "baserom.dol", 0x49D388, 0x4
+	.4byte 0x8055A6C0
 .global lbl_8056284C
 lbl_8056284C:
-	.incbin "baserom.dol", 0x49D38C, 0x4
+	.4byte 0x8055A6C8
 .global $$259707
 $$259707:
-	.incbin "baserom.dol", 0x49D390, 0x4
+	.4byte 0x3F000000
 .global $$259708
 $$259708:
-	.incbin "baserom.dol", 0x49D394, 0x4
+	.4byte 0
 .global $$259798
 $$259798:
-	.incbin "baserom.dol", 0x49D398, 0x4
+	.4byte 0x41A00000
 .global $$259854
 $$259854:
-	.incbin "baserom.dol", 0x49D39C, 0x4
+	.4byte 0x40400000
 .global $$259855
 $$259855:
-	.incbin "baserom.dol", 0x49D3A0, 0x4
+	.4byte 0x40A00000
 .global $$259856
 $$259856:
-	.incbin "baserom.dol", 0x49D3A4, 0x4
+	.4byte 0x3E800000
 .global $$259857
 $$259857:
-	.incbin "baserom.dol", 0x49D3A8, 0x4
+	.4byte 0xBF800000
 .global $$259935
 $$259935:
-	.incbin "baserom.dol", 0x49D3AC, 0x4
+	.4byte 0x42B40000

@@ -396,15 +396,23 @@ lbl_80239B08:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss7bonkers17StateSwingPursuit
 __vt__Q53scn4step4boss7bonkers17StateSwingPursuit:
-	.incbin "baserom.dol", 0x4613D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80239608  ;# ptr
+	.4byte 0x80239684  ;# ptr
+	.4byte 0x802397B4  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80239954  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256457
 $$256457:
-	.incbin "baserom.dol", 0x49AF98, 0x4
+	.4byte 0x3F800000
 .global $$256458
 $$256458:
-	.incbin "baserom.dol", 0x49AF9C, 0x4
+	.4byte 0xBF800000
 .global $$256459
 $$256459:
-	.incbin "baserom.dol", 0x49AFA0, 0x8
+	.4byte 0
+	.4byte 0

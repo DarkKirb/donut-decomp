@@ -125,4 +125,13 @@ procFixPos__Q53scn4step4hero7gimmick16StateChangeGradeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick16StateChangeGrade
 __vt__Q53scn4step4hero7gimmick16StateChangeGrade:
-	.incbin "baserom.dol", 0x488A50, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037C2D4
+	.4byte 0x8037C364
+	.4byte 0x8037C368
+	.4byte 0x8035550C
+	.4byte 0x8037C36C
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

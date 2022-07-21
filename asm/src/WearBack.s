@@ -229,4 +229,39 @@ lbl_8035B840:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255703
 $$255703:
-	.incbin "baserom.dol", 0x481810, 0x90
+	.4byte 0x8035B71C
+	.4byte 0x8035B6C4
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B6C4
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B6C4
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B6E0
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B6C4
+	.4byte 0x8035B6E0
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B71C
+	.4byte 0x8035B710
+	.4byte 0x8035B710
+	.4byte 0x8035B710

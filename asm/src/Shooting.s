@@ -42,4 +42,7 @@ __dt__Q53scn4step7gimmick8shooting8ShootingFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8shooting8Shooting
 __vt__Q53scn4step7gimmick8shooting8Shooting:
-	.incbin "baserom.dol", 0x47E510, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8032303C
+	.4byte 0

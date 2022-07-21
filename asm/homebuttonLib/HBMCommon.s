@@ -283,13 +283,14 @@ HBMUpdateSound:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29367
 $$29367:
-	.incbin "baserom.dol", 0x43F118, 0x48
+	.asciz "<< RVL_SDK - HBM \trelease build: Jul 30 2010 15:28:44 (0x4302_145) >>"
+	.balign 4
 .global __HBMVersion
 __HBMVersion:
-	.incbin "baserom.dol", 0x43F160, 0x4
+	.4byte 0x80443018
 .global spAllocator
 spAllocator:
-	.incbin "baserom.dol", 0x43F164, 0x4
+	.4byte 0x805436B0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sAllocator

@@ -1423,212 +1423,337 @@ __dt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257129
 $$257129:
-	.incbin "baserom.dol", 0x48B200, 0xC
+	.asciz "Guard%dN"
+	.balign 4
 .global $$257130
 $$257130:
-	.incbin "baserom.dol", 0x48B20C, 0xC
+	.asciz "Guard%dMaN"
+	.balign 4
 .global $$257147
 $$257147:
-	.incbin "baserom.dol", 0x48B218, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x80402CD4
 .global $$257172
 $$257172:
-	.incbin "baserom.dol", 0x48B224, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$257173
 $$257173:
-	.incbin "baserom.dol", 0x48B234, 0xC
+	.asciz "BossPanel"
+	.balign 4
 .global $$257174
 $$257174:
-	.incbin "baserom.dol", 0x48B240, 0x10
+	.asciz "BossPanelGuard"
+	.balign 4
 .global $$257177
 $$257177:
-	.incbin "baserom.dol", 0x48B250, 0x14
+	.asciz "BossPanelGuardParts"
 .global $$257179
 $$257179:
-	.incbin "baserom.dol", 0x48B264, 0xC
+	.asciz "LifeBarEx"
+	.balign 4
 .global $$257291
 $$257291:
-	.incbin "baserom.dol", 0x48B270, 0x10
+	.asciz "TransformWait"
+	.balign 4
 .global $$257296
 $$257296:
-	.incbin "baserom.dol", 0x48B280, 0xC
+	.asciz "Transform"
+	.balign 4
 .global $$257322
 $$257322:
-	.incbin "baserom.dol", 0x48B28C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803A6380
 .global $$257433
 $$257433:
-	.incbin "baserom.dol", 0x48B298, 0xC
+	.asciz "PartsExN"
+	.balign 4
 .global $$257434
 $$257434:
-	.incbin "baserom.dol", 0x48B2A4, 0xC
+	.asciz "PartsMaN"
+	.balign 4
 .global $$257435
 $$257435:
-	.incbin "baserom.dol", 0x48B2B0, 0xC
+	.asciz "PartsMaExN"
+	.balign 4
 .global $$257436
 $$257436:
-	.incbin "baserom.dol", 0x48B2BC, 0xC
+	.asciz "Parts%sN"
+	.balign 4
 .global $$257438
 $$257438:
-	.incbin "baserom.dol", 0x48B2C8, 0xC
+	.asciz "Center%sN"
+	.balign 4
 .global $$257439
 $$257439:
-	.incbin "baserom.dol", 0x48B2D4, 0xC
+	.asciz "Right%sN"
+	.balign 4
 .global $$257458
 $$257458:
-	.incbin "baserom.dol", 0x48B2E0, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803A6414
 .global $$257542
 $$257542:
-	.incbin "baserom.dol", 0x48B2EC, 0xC
+	.asciz "CharaWhispy"
 .global $$257543
 $$257543:
-	.incbin "baserom.dol", 0x48B2F8, 0x10
+	.asciz "CharaGigantEdge"
 .global $$257544
 $$257544:
-	.incbin "baserom.dol", 0x48B308, 0x14
+	.asciz "CharaExGigantEdge"
+	.balign 4
 .global $$257545
 $$257545:
-	.incbin "baserom.dol", 0x48B31C, 0x14
+	.asciz "CharaWaterGalboros"
+	.balign 4
 .global $$257546
 $$257546:
-	.incbin "baserom.dol", 0x48B330, 0x18
+	.asciz "CharaExWaterGalboros"
+	.balign 4
 .global $$257547
 $$257547:
-	.incbin "baserom.dol", 0x48B348, 0x10
+	.asciz "CharaKingsDoo"
+	.balign 4
 .global $$257548
 $$257548:
-	.incbin "baserom.dol", 0x48B358, 0x10
+	.asciz "CharaExKingsDoo"
 .global $$257549
 $$257549:
-	.incbin "baserom.dol", 0x48B368, 0x10
+	.asciz "CharaZankibble"
+	.balign 4
 .global $$257550
 $$257550:
-	.incbin "baserom.dol", 0x48B378, 0x14
+	.asciz "CharaExZankibble"
+	.balign 4
 .global $$257551
 $$257551:
-	.incbin "baserom.dol", 0x48B38C, 0x10
+	.asciz "CharaBonkers"
+	.balign 4
 .global $$257552
 $$257552:
-	.incbin "baserom.dol", 0x48B39C, 0x10
+	.asciz "CharaExBonkers"
+	.balign 4
 .global $$257553
 $$257553:
-	.incbin "baserom.dol", 0x48B3AC, 0xC
+	.asciz "CharaDobior"
 .global $$257554
 $$257554:
-	.incbin "baserom.dol", 0x48B3B8, 0x10
+	.asciz "CharaExDobior"
+	.balign 4
 .global $$257555
 $$257555:
-	.incbin "baserom.dol", 0x48B3C8, 0x10
+	.asciz "CharaMoundeath"
+	.balign 4
 .global $$257556
 $$257556:
-	.incbin "baserom.dol", 0x48B3D8, 0x14
+	.asciz "CharaExMoundeath"
+	.balign 4
 .global $$257557
 $$257557:
-	.incbin "baserom.dol", 0x48B3EC, 0x10
+	.asciz "CharaSPBonkers"
+	.balign 4
 .global $$257558
 $$257558:
-	.incbin "baserom.dol", 0x48B3FC, 0x14
+	.asciz "CharaExSPBonkers"
+	.balign 4
 .global $$257559
 $$257559:
-	.incbin "baserom.dol", 0x48B410, 0x14
+	.asciz "CharaMahoroaBattle1"
 .global $$257560
 $$257560:
-	.incbin "baserom.dol", 0x48B424, 0x1C
+	.asciz "CharaKingsDoo_GigantEdge"
+	.balign 4
 .global $$257561
 $$257561:
-	.incbin "baserom.dol", 0x48B440, 0x20
+	.asciz "CharaExKingsDoo_ExGigantEdge"
+	.balign 4
 .global $$257562
 $$257562:
-	.incbin "baserom.dol", 0x48B460, 0x1C
+	.asciz "CharaZankibble_GigantEdge"
+	.balign 4
 .global $$257563
 $$257563:
-	.incbin "baserom.dol", 0x48B47C, 0x20
+	.asciz "CharaExZankibble_ExGigantEdge"
+	.balign 4
 .global $$257564
 $$257564:
-	.incbin "baserom.dol", 0x48B49C, 0x1C
+	.asciz "CharaZankibble_Moundeath"
+	.balign 4
 .global $$257565
 $$257565:
-	.incbin "baserom.dol", 0x48B4B8, 0x20
+	.asciz "CharaExZankibble_ExMoundeath"
+	.balign 4
 .global $$257566
 $$257566:
-	.incbin "baserom.dol", 0x48B4D8, 0x18
+	.asciz "CharaKingsDoo_Moundeath"
 .global $$257567
 $$257567:
-	.incbin "baserom.dol", 0x48B4F0, 0x1C
+	.asciz "CharaExKingsDoo_ExMoundeath"
 .global $$257568
 $$257568:
-	.incbin "baserom.dol", 0x48B50C, 0x1C
+	.asciz "CharaSPBonkers_Moundeath"
+	.balign 4
 .global $$257569
 $$257569:
-	.incbin "baserom.dol", 0x48B528, 0x20
+	.asciz "CharaExSPBonkers_ExMoundeath"
+	.balign 4
 .global $$257570
 $$257570:
-	.incbin "baserom.dol", 0x48B548, 0x1C
+	.asciz "CharaExKingsDoo_ExBonkers"
+	.balign 4
 .global $$257571
 $$257571:
-	.incbin "baserom.dol", 0x48B564, 0x20
+	.asciz "CharaExWaterGalboros_ExDobior"
+	.balign 4
 .global $$257574
 $$257574:
-	.incbin "baserom.dol", 0x48B584, 0x10
+	.asciz "PanelLength01"
+	.balign 4
 .global $$257575
 $$257575:
-	.incbin "baserom.dol", 0x48B594, 0x10
+	.asciz "PanelLength02"
+	.balign 4
 .global $$257576
 $$257576:
-	.incbin "baserom.dol", 0x48B5A4, 0xC
+	.asciz "PanelBase"
+	.balign 4
 .global $$257578
 $$257578:
-	.incbin "baserom.dol", 0x48B5B0, 0x90
+	.4byte 0x803A6138
+	.4byte 0x803A6140
+	.4byte 0x803A6148
+	.4byte 0x803A6150
+	.4byte 0x803A6158
+	.4byte 0x803A6160
+	.4byte 0x803A6168
+	.4byte 0x803A6170
+	.4byte 0x803A6178
+	.4byte 0x803A6180
+	.4byte 0x803A6188
+	.4byte 0x803A6190
+	.4byte 0x803A6198
+	.4byte 0x803A61A0
+	.4byte 0x803A61A8
+	.4byte 0x803A6224
+	.4byte 0x803A61B0
+	.4byte 0x803A61B8
+	.4byte 0x803A61C0
+	.4byte 0x803A6224
+	.4byte 0x803A6224
+	.4byte 0x803A6224
+	.4byte 0x803A6224
+	.4byte 0x803A61C8
+	.4byte 0x803A61D0
+	.4byte 0x803A61D8
+	.4byte 0x803A61E0
+	.4byte 0x803A61E8
+	.4byte 0x803A61F0
+	.4byte 0x803A61F8
+	.4byte 0x803A6200
+	.4byte 0x803A6208
+	.4byte 0x803A6210
+	.4byte 0x803A6218
+	.4byte 0x803A6220
+	.4byte 0
 .global __vt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail289function_imp$$0PFv_v$$4Q43std3tr16detail245bound_func$$0v$$4Q43std3tr16detail41mem_fn_1$$0v$$4Q43scn4step4info9BossPanel$$4Ul$$1$$4Q33std3tr1157tuple$$0PQ43scn4step4info9BossPanel$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48B640, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A691C
+	.4byte 0x803A6728
+	.4byte 0x803A6768
+	.4byte 0x803A6784
 .global __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail38mem_fn_0$$0b$$4Q43scn4step4info9BossPanel$$1$$4Q33std3tr1169tuple$$0PQ43scn4step4info9BossPanel$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48B658, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A6918
+	.4byte 0x803A6788
+	.4byte 0x803A67C8
+	.4byte 0x803A67E4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$$0v$$4Q43std3tr16detail34mem_fn_1$$0v$$4Q23snd11SERequestor$$4Ul$$1$$4Q33std3tr1150tuple$$0PQ23snd11SERequestor$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48B688, 0xA0
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A6914
+	.4byte 0x803A67E8
+	.4byte 0x803A6828
+	.4byte 0x803A6844
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "NW4R:Failed assertion texSRTIdx < mGXMemNum.texSRT"
+	.balign 4
+	.asciz "material.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257131
 $$257131:
-	.incbin "baserom.dol", 0x497878, 0x4
+	.4byte 0
 .global $$257176
 $$257176:
-	.incbin "baserom.dol", 0x49787C, 0x8
+	.asciz "TopN"
+	.balign 4
 .global $$257178
 $$257178:
-	.incbin "baserom.dol", 0x497884, 0xC
+	.asciz "Wait"
+	.balign 4
+	.4byte 0
 .global $$257180
 $$257180:
-	.incbin "baserom.dol", 0x497890, 0x8
+	.asciz "LifeBar"
 .global $$257278
 $$257278:
-	.incbin "baserom.dol", 0x497898, 0x8
+	.asciz "Appear"
+	.balign 4
 .global $$257290
 $$257290:
-	.incbin "baserom.dol", 0x4978A0, 0x8
+	.asciz "Damage"
+	.balign 4
 .global $$257488
 $$257488:
-	.incbin "baserom.dol", 0x4978A8, 0x8
+	.asciz "Dead"
+	.balign 4
 .global $$257572
 $$257572:
-	.incbin "baserom.dol", 0x4978B0, 0x8
+	.asciz "0B0B0B"
+	.balign 4
 .global $$257573
 $$257573:
-	.incbin "baserom.dol", 0x4978B8, 0x8
+	.asciz "Name"
+	.balign 4
 .global $$257588
 $$257588:
-	.incbin "baserom.dol", 0x4978C0, 0x8
+	.asciz "Start"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257175
 $$257175:
-	.incbin "baserom.dol", 0x49E3D0, 0x4
+	.4byte 0
 .global $$257277
 $$257277:
-	.incbin "baserom.dol", 0x49E3D4, 0x4
+	.4byte 0x3F800000
 .global $$257623
 $$257623:
-	.incbin "baserom.dol", 0x49E3D8, 0x4
+	.4byte 0x3C03126F
 .global $$257641
 $$257641:
-	.incbin "baserom.dol", 0x49E3DC, 0x4
+	.4byte 0x3B83126F

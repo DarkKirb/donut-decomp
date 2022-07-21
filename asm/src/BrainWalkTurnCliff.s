@@ -30,4 +30,11 @@ __dt__Q53scn4step5enemy6common18BrainWalkTurnCliffFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common18BrainWalkTurnCliff
 __vt__Q53scn4step5enemy6common18BrainWalkTurnCliff:
-	.incbin "baserom.dol", 0x46F0C8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291748  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x80291744  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

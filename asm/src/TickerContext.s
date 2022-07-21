@@ -45,4 +45,5 @@ __ct__Q34info6ticker13TickerContextFQ23lyt12PaneAccessorQ23lyt12PaneAccessorfUlU
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252069
 $$252069:
-	.incbin "baserom.dol", 0x49A4B8, 0x8
+	.4byte 0x3FC00000
+	.4byte 0

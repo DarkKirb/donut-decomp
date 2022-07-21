@@ -508,19 +508,20 @@ lbl_80194608:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252516
 $$252516:
-	.incbin "baserom.dol", 0x49A1E0, 0x4
+	.4byte 0x3FE38E39
 .global $$252517
 $$252517:
-	.incbin "baserom.dol", 0x49A1E4, 0x4
+	.4byte 0xC0000000
 .global $$252518
 $$252518:
-	.incbin "baserom.dol", 0x49A1E8, 0x4
+	.4byte 0xC0800000
 .global $$252519
 $$252519:
-	.incbin "baserom.dol", 0x49A1EC, 0x4
+	.4byte 0xBF800000
 .global $$252520
 $$252520:
-	.incbin "baserom.dol", 0x49A1F0, 0x8
+	.4byte 0x41800000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1

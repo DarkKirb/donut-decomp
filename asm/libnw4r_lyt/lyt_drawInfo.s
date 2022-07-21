@@ -46,12 +46,15 @@ __dt__Q34nw4r3lyt8DrawInfoFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt8DrawInfo
 __vt__Q34nw4r3lyt8DrawInfo:
-	.incbin "baserom.dol", 0x43D658, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800FC260  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$25034
 $$25034:
-	.incbin "baserom.dol", 0x499CE8, 0x4
+	.4byte 0
 .global $$25035
 $$25035:
-	.incbin "baserom.dol", 0x499CEC, 0x4
+	.4byte 0x3F800000

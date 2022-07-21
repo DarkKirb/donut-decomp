@@ -309,36 +309,73 @@ lbl_803C13EC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x41C308, 0x44
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000005
+	.4byte 0x0000000A
+	.4byte 0x0000000F
+	.4byte 0x00000014
+	.4byte 0x00000019
+	.4byte 0x0000001E
+	.4byte 0x00000023
+	.4byte 0x00000028
+	.4byte 0x0000002D
+	.4byte 0x00000032
+	.4byte 0x00000064
 .global T_ODDS_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDS_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x41C34C, 0x34
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000000A
+	.4byte 0x00000014
+	.4byte 0x0000001E
+	.4byte 0x00000028
+	.4byte 0x00000032
+	.4byte 0x0000003C
+	.4byte 0x00000046
+	.4byte 0x00000050
+	.4byte 0x0000005A
+	.4byte 0x00000064
 .global T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x41C380, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0x00000041
+	.4byte 0x00000064
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x49E4F8, 0x8
+	.4byte 0x00000011
+	.4byte 0x80420208
 .global T_ODDSTABLE_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x49E500, 0x8
+	.4byte 0x0000000D
+	.4byte 0x8042024C
 .global T_ODDSTABLE_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
-	.incbin "baserom.dol", 0x49E508, 0x8
+	.4byte 0x00000005
+	.4byte 0x80420280
 .global $$254118
 $$254118:
-	.incbin "baserom.dol", 0x49E510, 0x4
+	.4byte 0x3E99999A
 .global $$254119
 $$254119:
-	.incbin "baserom.dol", 0x49E514, 0x4
+	.4byte 0x3F19999A
 .global $$254139
 $$254139:
-	.incbin "baserom.dol", 0x49E518, 0x4
+	.4byte 0
 .global $$254140
 $$254140:
-	.incbin "baserom.dol", 0x49E51C, 0x4
+	.4byte 0x3F800000
 .global $$254143
 $$254143:
-	.incbin "baserom.dol", 0x49E520, 0x8
+	.4byte 0x43300000
+	.4byte 0

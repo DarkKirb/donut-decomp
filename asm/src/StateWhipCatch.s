@@ -238,12 +238,21 @@ procObjCollReact__Q53scn4step4hero4whip14StateWhipCatchFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero4whip14StateWhipCatch
 __vt__Q53scn4step4hero4whip14StateWhipCatch:
-	.incbin "baserom.dol", 0x489598, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038A958
+	.4byte 0x8038A9F4
+	.4byte 0x8038AA98
+	.4byte 0x8038AA9C
+	.4byte 0x8038AAA0
+	.4byte 0x8038ABC0
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258486
 $$258486:
-	.incbin "baserom.dol", 0x49E0C0, 0x4
+	.4byte 0
 .global $$258563
 $$258563:
-	.incbin "baserom.dol", 0x49E0C4, 0x4
+	.4byte 0x3F666666

@@ -33,9 +33,15 @@ lbl_8022F3EC:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4boss23$$2unnamed$$2DeadFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss23$$2unnamed$$2DeadFlash_cpp$$2:
-	.incbin "baserom.dol", 0x4124B8, 0x18
+	.4byte 0x50607080
+	.4byte 0x78706860
+	.4byte 0x58504030
+	.4byte 0x18000000
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248801
 $$248801:
-	.incbin "baserom.dol", 0x49AE60, 0x8
+	.4byte 0xC0C0C000
+	.4byte 0

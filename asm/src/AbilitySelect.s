@@ -1693,112 +1693,198 @@ lbl_801F94E8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global area1Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 area1Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x411A48, 0x38
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x0000000B
+	.4byte 0x00000003
+	.4byte 0x00000008
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
 .global area2Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 area2Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x411A80, 0x38
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000006
+	.4byte 0x00000015
+	.4byte 0x00000005
+	.4byte 0x00000013
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
+	.4byte 0x00000007
+	.4byte 0x00000024
 .global area3Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 area3Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x411AB8, 0x38
+	.4byte 0
+	.4byte 0x00000018
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x0000000B
+	.4byte 0x00000003
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000006
+	.4byte 0x00000015
+	.4byte 0x00000005
+	.4byte 0x00000013
 .global abilityNumTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 abilityNumTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x411AF0, 0xC
+	.4byte 0x00000003
+	.4byte 0x00000003
+	.4byte 0x00000007
 .global panelOffsTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 panelOffsTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x411AFC, 0x1C
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFF
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x45BC58, 0x1C
+	.4byte 0x805580F0
+	.4byte 0x805580F8
+	.4byte 0x80558100
+	.4byte 0x80558108
+	.4byte 0x80558110
+	.4byte 0x80558118
+	.4byte 0x80558120
 .global $$251757
 $$251757:
-	.incbin "baserom.dol", 0x45BC74, 0x10
+	.asciz "CursorBase1N"
+	.balign 4
 .global $$251758
 $$251758:
-	.incbin "baserom.dol", 0x45BC84, 0x10
+	.asciz "CursorBase2N"
+	.balign 4
 .global $$251759
 $$251759:
-	.incbin "baserom.dol", 0x45BC94, 0x10
+	.asciz "CursorBase3N"
+	.balign 4
 .global cursorPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 cursorPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x45BCA4, 0xC
+	.4byte 0x8045FB74
+	.4byte 0x8045FB84
+	.4byte 0x8045FB94
 .global areaPanelTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 areaPanelTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
-	.incbin "baserom.dol", 0x45BCB0, 0xC
+	.4byte 0x80415948
+	.4byte 0x80415980
+	.4byte 0x804159B8
 .global $$253883
 $$253883:
-	.incbin "baserom.dol", 0x45BCBC, 0x18
+	.asciz "challengeability/Main"
+	.balign 4
 .global $$253884
 $$253884:
-	.incbin "baserom.dol", 0x45BCD4, 0xC
+	.asciz "PanelBase"
+	.balign 4
 .global $$253885
 $$253885:
-	.incbin "baserom.dol", 0x45BCE0, 0x10
+	.asciz "pause/Main"
+	.balign 4
+	.4byte 0
 .global $$253886
 $$253886:
-	.incbin "baserom.dol", 0x45BCF0, 0x10
+	.asciz "PauseCursorBase"
 .global $$253887
 $$253887:
-	.incbin "baserom.dol", 0x45BD00, 0xC
+	.asciz "CursorLN"
+	.balign 4
 .global $$253888
 $$253888:
-	.incbin "baserom.dol", 0x45BD0C, 0x10
+	.asciz "PauseCursorL"
+	.balign 4
 .global $$253889
 $$253889:
-	.incbin "baserom.dol", 0x45BD1C, 0xC
+	.asciz "CursorRN"
+	.balign 4
 .global $$253890
 $$253890:
-	.incbin "baserom.dol", 0x45BD28, 0x10
+	.asciz "PauseCursorR"
+	.balign 4
 .global $$253891
 $$253891:
-	.incbin "baserom.dol", 0x45BD38, 0xC
+	.asciz "PanelBaseN"
+	.balign 4
 .global $$254084
 $$254084:
-	.incbin "baserom.dol", 0x45BD44, 0x54
+	.4byte 0x801F86E4  ;# ptr
+	.4byte 0x801F8688  ;# ptr
+	.4byte 0x801F8694  ;# ptr
+	.4byte 0x801F86A0  ;# ptr
+	.4byte 0x801F86AC  ;# ptr
+	.4byte 0x801F86B8  ;# ptr
+	.4byte 0x801F86C4  ;# ptr
+	.4byte 0x801F86D0  ;# ptr
+	.4byte 0x801F86DC  ;# ptr
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251749
 $$251749:
-	.incbin "baserom.dol", 0x4944D0, 0x8
+	.asciz "Panel1N"
 .global $$251750
 $$251750:
-	.incbin "baserom.dol", 0x4944D8, 0x8
+	.asciz "Panel2N"
 .global $$251751
 $$251751:
-	.incbin "baserom.dol", 0x4944E0, 0x8
+	.asciz "Panel3N"
 .global $$251752
 $$251752:
-	.incbin "baserom.dol", 0x4944E8, 0x8
+	.asciz "Panel4N"
 .global $$251753
 $$251753:
-	.incbin "baserom.dol", 0x4944F0, 0x8
+	.asciz "Panel5N"
 .global $$251754
 $$251754:
-	.incbin "baserom.dol", 0x4944F8, 0x8
+	.asciz "Panel6N"
 .global $$251755
 $$251755:
-	.incbin "baserom.dol", 0x494500, 0x8
+	.asciz "Panel7N"
 .global $$253892
 $$253892:
-	.incbin "baserom.dol", 0x494508, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254013
 $$254013:
-	.incbin "baserom.dol", 0x494510, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$254082
 $$254082:
-	.incbin "baserom.dol", 0x494518, 0x4
+	.4byte 0x456E6400
 .global $$254128
 $$254128:
-	.incbin "baserom.dol", 0x49451C, 0x8
+	.asciz "MoveR"
+	.balign 4
 .global $$254157
 $$254157:
-	.incbin "baserom.dol", 0x494524, 0xC
+	.asciz "MoveL"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254129
 $$254129:
-	.incbin "baserom.dol", 0x49AA08, 0x4
+	.4byte 0x3F000000
 .global $$254130
 $$254130:
-	.incbin "baserom.dol", 0x49AA0C, 0x4
+	.4byte 0x3F800000

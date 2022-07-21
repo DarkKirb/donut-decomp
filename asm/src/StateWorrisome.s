@@ -539,18 +539,31 @@ __dt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster8StateFly$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss15challengemaster8StateFly12TurnWaitType$$1
 __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster8StateFly$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss15challengemaster8StateFly12TurnWaitType$$1:
-	.incbin "baserom.dol", 0x462168, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802442F4  ;# ptr
+	.4byte 0x802442B0  ;# ptr
 .global __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateWorrisome$$4PQ43scn4step4boss4Boss$$4f$$1
 __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster14StateWorrisome$$4PQ43scn4step4boss4Boss$$4f$$1:
-	.incbin "baserom.dol", 0x462178, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802442F0  ;# ptr
+	.4byte 0x802442D0  ;# ptr
 .global __vt__Q53scn4step4boss15challengemaster14StateWorrisome
 __vt__Q53scn4step4boss15challengemaster14StateWorrisome:
-	.incbin "baserom.dol", 0x462188, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80243D68  ;# ptr
+	.4byte 0x80243E38  ;# ptr
+	.4byte 0x80243FB4  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80243FB8  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256482
 $$256482:
-	.incbin "baserom.dol", 0x49B100, 0x4
+	.4byte 0
 .global $$256612
 $$256612:
-	.incbin "baserom.dol", 0x49B104, 0x4
+	.4byte 0x42652EE1

@@ -2037,24 +2037,33 @@ lbl_800D1F10:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2
 gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2:
-	.incbin "baserom.dol", 0x404480, 0x20
+	.4byte 0x800D1790  ;# ptr
+	.4byte 0x800D18B0  ;# ptr
+	.4byte 0x800D1840  ;# ptr
+	.4byte 0x800D19A0  ;# ptr
+	.4byte 0x800D17B0  ;# ptr
+	.4byte 0x800D1A40  ;# ptr
+	.4byte 0x800D18F0  ;# ptr
+	.4byte 0x800D1AE0  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28848
 $$28848:
-	.incbin "baserom.dol", 0x4999F0, 0x4
+	.4byte 0
 .global $$28950
 $$28950:
-	.incbin "baserom.dol", 0x4999F4, 0x4
+	.4byte 0x3F800000
 .global $$28951
 $$28951:
-	.incbin "baserom.dol", 0x4999F8, 0x4
+	.4byte 0x40000000
 .global $$28952
 $$28952:
-	.incbin "baserom.dol", 0x4999FC, 0x4
+	.4byte 0x40400000
 .global $$29482
 $$29482:
-	.incbin "baserom.dol", 0x499A00, 0x8
+	.4byte 0x3F360B61
+	.4byte 0
 .global $$29490
 $$29490:
-	.incbin "baserom.dol", 0x499A08, 0x8
+	.4byte 0x43300000
+	.4byte 0

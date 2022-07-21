@@ -446,10 +446,11 @@ scrollWindowWidth__Q34info6ticker6TickerFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252326
 $$252326:
-	.incbin "baserom.dol", 0x49A4A8, 0x4
+	.4byte 0
 .global $$252327
 $$252327:
-	.incbin "baserom.dol", 0x49A4AC, 0x4
+	.4byte 0x461C3C00
 .global $$252423
 $$252423:
-	.incbin "baserom.dol", 0x49A4B0, 0x8
+	.4byte 0x43300000
+	.4byte 0

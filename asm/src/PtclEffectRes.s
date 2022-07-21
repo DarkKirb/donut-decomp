@@ -423,7 +423,7 @@ lbl_80186B60:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250371
 $$250371:
-	.incbin "baserom.dol", 0x44F8B8, 0x14
+	.asciz "effect/%s.breff.cmp"
 .global $$250372
 $$250372:
-	.incbin "baserom.dol", 0x44F8CC, 0x14
+	.asciz "effect/%s.breft.cmp"

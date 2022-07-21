@@ -1804,72 +1804,183 @@ setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29996
 $$29996:
-	.incbin "baserom.dol", 0x409EE8, 0x4
+	.4byte 0
 .global $$29409
 $$29409:
-	.incbin "baserom.dol", 0x409EEC, 0x4
+	.4byte 0xFF0000FF
 .global $$210512
 $$210512:
-	.incbin "baserom.dol", 0x409EF0, 0x4
+	.4byte 0x3F000000
 .global $$2LOCAL$$2drawLine___Q210homebutton3guiFfffffUcR8_GXColor$$2cubeScale
 $$2LOCAL$$2drawLine___Q210homebutton3guiFfffffUcR8_GXColor$$2cubeScale:
-	.incbin "baserom.dol", 0x409EF4, 0x4
+	.4byte 0x3F800000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q310homebutton3gui13PaneComponent
 __vt__Q310homebutton3gui13PaneComponent:
-	.incbin "baserom.dol", 0x43EB28, 0x68
+	.4byte 0x80442AC8
+	.4byte 0
+	.4byte 0x80129F70  ;# ptr
+	.4byte 0x80128E10  ;# ptr
+	.4byte 0x80129250  ;# ptr
+	.4byte 0x80129F60  ;# ptr
+	.4byte 0x80129BD0  ;# ptr
+	.4byte 0x801294D0  ;# ptr
+	.4byte 0x80128CA0  ;# ptr
+	.4byte 0x80128C50  ;# ptr
+	.4byte 0x80128CB0  ;# ptr
+	.4byte 0x80128CC0  ;# ptr
+	.4byte 0x80128CD0  ;# ptr
+	.4byte 0x80129FA0  ;# ptr
+	.4byte 0x80128C60  ;# ptr
+	.4byte 0x801291B0  ;# ptr
+	.4byte 0x80129F90  ;# ptr
+	.4byte 0x80129F80  ;# ptr
+	.4byte 0x80128A30  ;# ptr
+	.4byte 0x801291A0  ;# ptr
+	.4byte 0x80129360  ;# ptr
+	.4byte 0x80128F10  ;# ptr
+	.4byte 0x80129E80  ;# ptr
+	.4byte 0x80129A90  ;# ptr
+	.4byte 0x801297E0  ;# ptr
+	.4byte 0x80129FB0  ;# ptr
 .global $$29429
 $$29429:
-	.incbin "baserom.dol", 0x43EB90, 0x20
+	.asciz "homebutton::gui::PaneComponent"
+	.balign 4
 .global $$29430
 $$29430:
-	.incbin "baserom.dol", 0x43EBB0, 0x18
+	.4byte 0x80442C90
+	.4byte 0
+	.4byte 0x80442C68
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q310homebutton3gui13PaneComponent
 __RTTI__Q310homebutton3gui13PaneComponent:
-	.incbin "baserom.dol", 0x43EBC8, 0x8
+	.4byte 0x80442A90
+	.4byte 0x80442AB0
 .global __vt__Q310homebutton3gui11PaneManager
 __vt__Q310homebutton3gui11PaneManager:
-	.incbin "baserom.dol", 0x43EBD0, 0x64
+	.4byte 0x80442B68
+	.4byte 0
+	.4byte 0x80129F70  ;# ptr
+	.4byte 0x80128DA0  ;# ptr
+	.4byte 0x801291E0  ;# ptr
+	.4byte 0x80129F60  ;# ptr
+	.4byte 0x80129260  ;# ptr
+	.4byte 0x80129370  ;# ptr
+	.4byte 0x80128E40  ;# ptr
+	.4byte 0x80128F20  ;# ptr
+	.4byte 0x80128FC0  ;# ptr
+	.4byte 0x8012A000  ;# ptr
+	.4byte 0x80128FF0  ;# ptr
+	.4byte 0x80128C70  ;# ptr
+	.4byte 0x801292E0  ;# ptr
+	.4byte 0x80129FC0  ;# ptr
+	.4byte 0x801294F0  ;# ptr
+	.4byte 0x80129520  ;# ptr
+	.4byte 0x80129800  ;# ptr
+	.4byte 0x80129940  ;# ptr
+	.4byte 0x80129BC0  ;# ptr
+	.4byte 0x8012A010  ;# ptr
+	.4byte 0x801299C0  ;# ptr
+	.4byte 0x80129540  ;# ptr
+	.4byte 0x80129820  ;# ptr
 .global $$29431
 $$29431:
-	.incbin "baserom.dol", 0x43EC34, 0x20
+	.asciz "homebutton::gui::PaneManager"
+	.balign 4
 .global $$29432
 $$29432:
-	.incbin "baserom.dol", 0x43EC54, 0x14
+	.4byte 0x80442C90
+	.4byte 0
+	.4byte 0x80442BD8
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q310homebutton3gui11PaneManager
 __RTTI__Q310homebutton3gui11PaneManager:
-	.incbin "baserom.dol", 0x43EC68, 0x8
+	.4byte 0x80442B34
+	.4byte 0x80442B54
 .global __vt__Q310homebutton3gui7Manager
 __vt__Q310homebutton3gui7Manager:
-	.incbin "baserom.dol", 0x43EC70, 0x40
+	.4byte 0x80442BD8
+	.4byte 0
+	.4byte 0x80129F70  ;# ptr
+	.4byte 0x80128DA0  ;# ptr
+	.4byte 0x801291E0  ;# ptr
+	.4byte 0x80129F60  ;# ptr
+	.4byte 0x80129260  ;# ptr
+	.4byte 0x80128CE0  ;# ptr
+	.4byte 0x80128E40  ;# ptr
+	.4byte 0x80128F20  ;# ptr
+	.4byte 0x80128FC0  ;# ptr
+	.4byte 0x8012A000  ;# ptr
+	.4byte 0x80128FF0  ;# ptr
+	.4byte 0x80128C70  ;# ptr
+	.4byte 0x801292E0  ;# ptr
+	.4byte 0x80129FC0  ;# ptr
 .global $$29433
 $$29433:
-	.incbin "baserom.dol", 0x43ECB0, 0x1C
+	.asciz "homebutton::gui::Manager"
+	.balign 4
 .global $$29434
 $$29434:
-	.incbin "baserom.dol", 0x43ECCC, 0xC
+	.4byte 0x80442C90
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q310homebutton3gui7Manager
 __RTTI__Q310homebutton3gui7Manager:
-	.incbin "baserom.dol", 0x43ECD8, 0x8
+	.4byte 0x80442BB0
+	.4byte 0x80442BCC
 .global __vt__Q310homebutton3gui9Component
 __vt__Q310homebutton3gui9Component:
-	.incbin "baserom.dol", 0x43ECE0, 0x60
+	.4byte 0x80442C68
+	.4byte 0
+	.4byte 0x80129F70  ;# ptr
+	.4byte 0x80128E10  ;# ptr
+	.4byte 0x80129250  ;# ptr
+	.4byte 0x80129F60  ;# ptr
+	.4byte 0x801292D0  ;# ptr
+	.4byte 0x801294E0  ;# ptr
+	.4byte 0x80128CA0  ;# ptr
+	.4byte 0x80128C50  ;# ptr
+	.4byte 0x80128CB0  ;# ptr
+	.4byte 0x80128CC0  ;# ptr
+	.4byte 0x80128CD0  ;# ptr
+	.4byte 0x80129FA0  ;# ptr
+	.4byte 0x80128C60  ;# ptr
+	.4byte 0x801291B0  ;# ptr
+	.4byte 0x80129F90  ;# ptr
+	.4byte 0x80129F80  ;# ptr
+	.4byte 0x80128A30  ;# ptr
+	.4byte 0x801291A0  ;# ptr
+	.4byte 0x80129360  ;# ptr
+	.4byte 0x80128F10  ;# ptr
+	.4byte 0x80128C40  ;# ptr
+	.4byte 0
 .global $$29435
 $$29435:
-	.incbin "baserom.dol", 0x43ED40, 0x1C
+	.asciz "homebutton::gui::Component"
+	.balign 4
 .global $$29436
 $$29436:
-	.incbin "baserom.dol", 0x43ED5C, 0xC
+	.4byte 0x80442C90
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q310homebutton3gui9Component
 __RTTI__Q310homebutton3gui9Component:
-	.incbin "baserom.dol", 0x43ED68, 0x8
+	.4byte 0x80442C40
+	.4byte 0x80442C5C
 .global $$29437
 $$29437:
-	.incbin "baserom.dol", 0x43ED70, 0x20
+	.asciz "homebutton::gui::Interface"
+	.balign 4
+	.4byte 0
 .global __RTTI__Q310homebutton3gui9Interface
 __RTTI__Q310homebutton3gui9Interface:
-	.incbin "baserom.dol", 0x43ED90, 0x8
+	.4byte 0x80442C70
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global suIDCounter__Q310homebutton3gui11PaneManager

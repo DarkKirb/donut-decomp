@@ -408,33 +408,47 @@ lbl_801E4994:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252673
 $$252673:
-	.incbin "baserom.dol", 0x45A3D0, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$252674
 $$252674:
-	.incbin "baserom.dol", 0x45A3EC, 0x10
+	.asciz "RumbleWindow"
+	.balign 4
 .global $$252675
 $$252675:
-	.incbin "baserom.dol", 0x45A3FC, 0xC
+	.asciz "Button01N"
+	.balign 4
 .global $$252676
 $$252676:
-	.incbin "baserom.dol", 0x45A408, 0xC
+	.asciz "Button02N"
+	.balign 4
 .global $$252677
 $$252677:
-	.incbin "baserom.dol", 0x45A414, 0x10
+	.asciz "RumbleConfirm"
+	.balign 4
 .global $$252678
 $$252678:
-	.incbin "baserom.dol", 0x45A424, 0xC
+	.asciz "RumbleTxt"
+	.balign 4
 .global $$252679
 $$252679:
-	.incbin "baserom.dol", 0x45A430, 0xC
+	.asciz "RumbleTxtOn"
 .global $$252680
 $$252680:
-	.incbin "baserom.dol", 0x45A43C, 0x44
+	.asciz "RumbleTxtOff"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252745
 $$252745:
-	.incbin "baserom.dol", 0x493F60, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$252748
 $$252748:
-	.incbin "baserom.dol", 0x493F68, 0x8
+	.asciz "Close"
+	.balign 4

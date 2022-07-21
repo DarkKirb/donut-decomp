@@ -405,28 +405,49 @@ __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4elec15BrainMoveAttack
 __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
-	.incbin "baserom.dol", 0x472668, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AF9FC  ;# ptr
+	.4byte 0x802AF7E4  ;# ptr
+	.4byte 0x802AF8C4  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x802AF978  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6flamer15BrainMoveAttack
 __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
-	.incbin "baserom.dol", 0x472B58, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B2164  ;# ptr
+	.4byte 0x802B1F8C  ;# ptr
+	.4byte 0x802B206C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack
 __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack:
-	.incbin "baserom.dol", 0x4767E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D1630  ;# ptr
+	.4byte 0x802D15A8  ;# ptr
+	.4byte 0x802D162C  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255142
 $$255142:
-	.incbin "baserom.dol", 0x49C338, 0x4
+	.4byte 0x41000000
 .global $$255143
 $$255143:
-	.incbin "baserom.dol", 0x49C33C, 0x4
+	.4byte 0xC1000000
 .global $$255144
 $$255144:
-	.incbin "baserom.dol", 0x49C340, 0x4
+	.4byte 0xC0400000
 .global $$255145
 $$255145:
-	.incbin "baserom.dol", 0x49C344, 0x4
+	.4byte 0x40400000

@@ -164,82 +164,215 @@ __sinit_$$3BlockResFiles_cpp:
 /* 80302E60 002FECA0  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025A0, 0x4
+	.4byte 0x80302E30
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x47C088, 0x18
+	.asciz "step/gimmick/BlockStar"
+	.balign 4
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x47C0A0, 0x18
+	.asciz "step/gimmick/BlockHeavy"
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x47C0B8, 0x18
+	.asciz "step/gimmick/BlockBomb"
+	.balign 4
 .global $$248780
 $$248780:
-	.incbin "baserom.dol", 0x47C0D0, 0x20
+	.asciz "step/gimmick/BlockChainBreak"
+	.balign 4
 .global $$248781
 $$248781:
-	.incbin "baserom.dol", 0x47C0F0, 0x20
+	.asciz "step/gimmick/BlockChainGenerate"
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x47C110, 0xC
+	.asciz "TopLA1x2x1"
+	.balign 4
 .global $$248784
 $$248784:
-	.incbin "baserom.dol", 0x47C11C, 0xC
+	.asciz "TopLB1x2x1"
+	.balign 4
 .global $$248785
 $$248785:
-	.incbin "baserom.dol", 0x47C128, 0xC
+	.asciz "TopL1x2x3"
+	.balign 4
 .global $$248788
 $$248788:
-	.incbin "baserom.dol", 0x47C134, 0xC
+	.asciz "TopL2x4x4x2"
 .global $$248789
 $$248789:
-	.incbin "baserom.dol", 0x47C140, 0x18
+	.asciz "step/gimmick/BlockChip"
+	.balign 4
 .global $$248790
 $$248790:
-	.incbin "baserom.dol", 0x47C158, 0xC
+	.asciz "TopL3x2x1"
+	.balign 4
 .global $$248791
 $$248791:
-	.incbin "baserom.dol", 0x47C164, 0x18
+	.asciz "step/gimmick/BlockFire"
+	.balign 4
 .global $$248792
 $$248792:
-	.incbin "baserom.dol", 0x47C17C, 0x1C
+	.asciz "step/gimmick/BlockCrumble"
+	.balign 4
 .global $$248793
 $$248793:
-	.incbin "baserom.dol", 0x47C198, 0x18
+	.asciz "step/gimmick/BlockHard"
+	.balign 4
 .global T_CONTEXT_TABLE__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2
 T_CONTEXT_TABLE__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
-	.incbin "baserom.dol", 0x47C1B0, 0x1E0
+	.4byte 0x8047FF88
+	.4byte 0
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8047FFA0
+	.4byte 0x8055A580
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8047FFA0
+	.4byte 0x8055A588
+	.4byte 0x8047FFA0
+	.4byte 0x8055A590
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8047FFB8
+	.4byte 0
+	.4byte 0x8047FFD0
+	.4byte 0
+	.4byte 0x8047FFD0
+	.4byte 0
+	.4byte 0x8047FFF0
+	.4byte 0
+	.4byte 0x8047FFA0
+	.4byte 0x8055A598
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8047FFA0
+	.4byte 0x80480010
+	.4byte 0x8047FFA0
+	.4byte 0x8048001C
+	.4byte 0x8047FFA0
+	.4byte 0x80480028
+	.4byte 0x8047FFA0
+	.4byte 0x8055A5A0
+	.4byte 0x8047FFA0
+	.4byte 0x8055A5A8
+	.4byte 0x8047FFA0
+	.4byte 0x80480034
+	.4byte 0x80480040
+	.4byte 0
+	.4byte 0x8047FFA0
+	.4byte 0x80480058
+	.4byte 0x80480064
+	.4byte 0
+	.4byte 0x8048007C
+	.4byte 0
+	.4byte 0x80480098
+	.4byte 0
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
+	.4byte 0x8055A578
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x496950, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x496958, 0x8
+	.4byte 0
+	.4byte 0
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x496960, 0x8
+	.asciz "TopL2x2"
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x496968, 0x8
+	.asciz "TopL1x1"
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x496970, 0x8
+	.asciz "TopL3x3"
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x496978, 0x8
+	.asciz "TopL4x4"
 .global $$248786
 $$248786:
-	.incbin "baserom.dol", 0x496980, 0x8
+	.asciz "TopL1x3"
 .global $$248787
 $$248787:
-	.incbin "baserom.dol", 0x496988, 0x8
+	.asciz "TopL3x1"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2
 T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
-	.incbin "baserom.dol", 0x49D238, 0x8
+	.4byte 0x8055A570
+	.4byte 0

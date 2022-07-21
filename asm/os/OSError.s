@@ -432,57 +432,68 @@ lbl_8001DF74:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2641
 $$2641:
-	.incbin "baserom.dol", 0x41E6B8, 0x18
+	.asciz " in \"%s\" on line %d.\n"
+	.balign 4
 .global $$2642
 $$2642:
-	.incbin "baserom.dol", 0x41E6D0, 0x28
+	.asciz "\nAddress:      Back Chain    LR Save\n"
+	.balign 4
 .global $$2643
 $$2643:
-	.incbin "baserom.dol", 0x41E6F8, 0x1C
+	.asciz "0x%08x:   0x%08x    0x%08x\n"
 .global $$2701
 $$2701:
-	.incbin "baserom.dol", 0x41E714, 0x20
+	.asciz "Non-recoverable Exception %d"
+	.balign 4
 .global $$2702
 $$2702:
-	.incbin "baserom.dol", 0x41E734, 0x18
+	.asciz "Unhandled Exception %d"
+	.balign 4
 .global $$2704
 $$2704:
-	.incbin "baserom.dol", 0x41E74C, 0x34
+	.asciz "\nDSISR = 0x%08x                   DAR  = 0x%08x\n"
+	.balign 4
 .global $$2705
 $$2705:
-	.incbin "baserom.dol", 0x41E780, 0x10
+	.asciz "TB = 0x%016llx\n"
 .global $$2706
 $$2706:
-	.incbin "baserom.dol", 0x41E790, 0x60
+	.asciz "\nInstruction at 0x%x (read from SRR0) attempted to access invalid address 0x%x (read from DAR)\n"
 .global $$2707
 $$2707:
-	.incbin "baserom.dol", 0x41E7F0, 0x4C
+	.asciz "\nAttempted to fetch instruction from invalid address 0x%x (read from SRR0)\n"
 .global $$2708
 $$2708:
-	.incbin "baserom.dol", 0x41E83C, 0x64
+	.asciz "\nInstruction at 0x%x (read from SRR0) attempted to access unaligned address 0x%x (read from DAR)\n"
+	.balign 4
 .global $$2709
 $$2709:
-	.incbin "baserom.dol", 0x41E8A0, 0x60
+	.asciz "\nProgram exception : Possible illegal instruction/operation at or around 0x%x (read from SRR0)\n"
 .global $$2710
 $$2710:
-	.incbin "baserom.dol", 0x41E900, 0x20
+	.asciz "AI DMA Address =   0x%04x%04x\n"
+	.balign 4
 .global $$2711
 $$2711:
-	.incbin "baserom.dol", 0x41E920, 0x20
+	.asciz "ARAM DMA Address = 0x%04x%04x\n"
+	.balign 4
 .global $$2712
 $$2712:
-	.incbin "baserom.dol", 0x41E940, 0x1C
+	.asciz "DI DMA Address =   0x%08x\n"
+	.balign 4
 .global $$2713
 $$2713:
-	.incbin "baserom.dol", 0x41E95C, 0x3C
+	.asciz "\nLast interrupt (%d): SRR0 = 0x%08x  TB = 0x%016llx\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSFpscrEnableBits
 __OSFpscrEnableBits:
-	.incbin "baserom.dol", 0x4928A8, 0x4
+	.4byte 0x000000F8
 .global $$2703
 $$2703:
-	.incbin "baserom.dol", 0x4928AC, 0x4
+	.4byte 0x0A000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __OSErrorTable

@@ -151,21 +151,29 @@ procFixPos__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve
 __vt__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve:
-	.incbin "baserom.dol", 0x470BA8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029F9B0  ;# ptr
+	.4byte 0x8029F9B4  ;# ptr
+	.4byte 0x8029F9B8  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029FA78  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256604
 $$256604:
-	.incbin "baserom.dol", 0x49BEE8, 0x4
+	.4byte 0
 .global $$256605
 $$256605:
-	.incbin "baserom.dol", 0x49BEEC, 0x4
+	.4byte 0x3C8EFA35
 .global $$256606
 $$256606:
-	.incbin "baserom.dol", 0x49BEF0, 0x4
+	.4byte 0x41700000
 .global $$256624
 $$256624:
-	.incbin "baserom.dol", 0x49BEF4, 0x4
+	.4byte 0x43B40000
 .global $$256625
 $$256625:
-	.incbin "baserom.dol", 0x49BEF8, 0x8
+	.4byte 0x4222F983
+	.4byte 0

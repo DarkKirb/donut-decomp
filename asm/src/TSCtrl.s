@@ -112,9 +112,15 @@ setBaseScale__Q53scn4step4boss6whispy6TSCtrlFRCQ33hel4math7Vector3:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_TRUNKNODE_TABLE__Q53scn4step4boss6whispy20$$2unnamed$$2TSCtrl_cpp$$2
 T_TRUNKNODE_TABLE__Q53scn4step4boss6whispy20$$2unnamed$$2TSCtrl_cpp$$2:
-	.incbin "baserom.dol", 0x4137C8, 0x18
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254977
 $$254977:
-	.incbin "baserom.dol", 0x49B570, 0x8
+	.4byte 0x3F800000
+	.4byte 0

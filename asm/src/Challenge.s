@@ -979,84 +979,107 @@ masterResult__Q53scn4step4info9challenge9ChallengeFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253888
 $$253888:
-	.incbin "baserom.dol", 0x48C260, 0x14
+	.asciz "step/challenge/Main"
 .global $$253890
 $$253890:
-	.incbin "baserom.dol", 0x48C274, 0x10
+	.asciz "MasterScoreN"
+	.balign 4
 .global $$253893
 $$253893:
-	.incbin "baserom.dol", 0x48C284, 0xC
+	.asciz "IntervalN"
+	.balign 4
 .global $$253894
 $$253894:
-	.incbin "baserom.dol", 0x48C290, 0x10
+	.asciz "ScreenOutBase2N"
 .global $$253895
 $$253895:
-	.incbin "baserom.dol", 0x48C2A0, 0x10
+	.asciz "ScreenOutBaseN"
+	.balign 4
 .global $$253896
 $$253896:
-	.incbin "baserom.dol", 0x48C2B0, 0x10
+	.asciz "PassageTimeN"
+	.balign 4
 .global $$253897
 $$253897:
-	.incbin "baserom.dol", 0x48C2C0, 0xC
+	.asciz "GameOver"
+	.balign 4
 .global $$253898
 $$253898:
-	.incbin "baserom.dol", 0x48C2CC, 0x10
+	.asciz "GameOver_Yes"
+	.balign 4
 .global $$253899
 $$253899:
-	.incbin "baserom.dol", 0x48C2DC, 0xC
+	.asciz "GameOver_No"
 .global $$253900
 $$253900:
-	.incbin "baserom.dol", 0x48C2E8, 0x10
+	.asciz "ResultMenu_Hint"
 .global $$253901
 $$253901:
-	.incbin "baserom.dol", 0x48C2F8, 0xC
+	.asciz "common/Main"
 .global $$253902
 $$253902:
-	.incbin "baserom.dol", 0x48C304, 0x10
+	.asciz "ConfirmWindow"
+	.balign 4
 .global $$253904
 $$253904:
-	.incbin "baserom.dol", 0x48C314, 0xC
+	.asciz "TimeScoreN"
+	.balign 4
 .global $$253905
 $$253905:
-	.incbin "baserom.dol", 0x48C320, 0x18
+	.asciz "step/challenge/Master"
+	.balign 4
 .global $$253906
 $$253906:
-	.incbin "baserom.dol", 0x48C338, 0x10
+	.asciz "TimeScoreMaster"
 .global $$253907
 $$253907:
-	.incbin "baserom.dol", 0x48C348, 0x18
+	.asciz "step/challenge/Musou"
+	.balign 4
 .global $$253908
 $$253908:
-	.incbin "baserom.dol", 0x48C360, 0x10
+	.asciz "TimeScoreMusou"
+	.balign 4
 .global $$253909
 $$253909:
-	.incbin "baserom.dol", 0x48C370, 0x18
+	.asciz "step/challenge/Normal"
+	.balign 4
 .global $$253910
 $$253910:
-	.incbin "baserom.dol", 0x48C388, 0x14
+	.asciz "TimeScoreChallenge"
+	.balign 4
 .global $$253911
 $$253911:
-	.incbin "baserom.dol", 0x48C39C, 0x3C
+	.asciz "PictureN"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253889
 $$253889:
-	.incbin "baserom.dol", 0x497B18, 0x8
+	.asciz "Base"
+	.balign 4
 .global $$253891
 $$253891:
-	.incbin "baserom.dol", 0x497B20, 0x8
+	.asciz "ScoreN"
+	.balign 4
 .global $$253892
 $$253892:
-	.incbin "baserom.dol", 0x497B28, 0x8
+	.asciz "TimeN"
+	.balign 4
 .global $$253903
 $$253903:
-	.incbin "baserom.dol", 0x497B30, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$254058
 $$254058:
-	.incbin "baserom.dol", 0x497B38, 0x4
+	.4byte 0x4F757400
 .global $$254061
 $$254061:
-	.incbin "baserom.dol", 0x497B3C, 0x4
+	.4byte 0x496E0000
 .global $$254064
 $$254064:
-	.incbin "baserom.dol", 0x497B40, 0x8
+	.asciz "OutS"
+	.balign 4

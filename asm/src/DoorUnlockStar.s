@@ -611,50 +611,56 @@ mfSetupEffect__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256175
 $$256175:
-	.incbin "baserom.dol", 0x47D328, 0x18
+	.asciz "step/gimmick/Starlvmap2"
 .global $$256289
 $$256289:
-	.incbin "baserom.dol", 0x47D340, 0x10
+	.asciz "BigStarL"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256176
 $$256176:
-	.incbin "baserom.dol", 0x496A60, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$256286
 $$256286:
-	.incbin "baserom.dol", 0x496A68, 0x8
+	.4byte 0x466C7900
+	.4byte 0
 .global $$256288
 $$256288:
-	.incbin "baserom.dol", 0x496A70, 0x8
+	.asciz "Destroy"
 .global $$256309
 $$256309:
-	.incbin "baserom.dol", 0x496A78, 0x8
+	.asciz "Start"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256174
 $$256174:
-	.incbin "baserom.dol", 0x49D318, 0x4
+	.4byte 0
 .global $$256177
 $$256177:
-	.incbin "baserom.dol", 0x49D31C, 0x4
+	.4byte 0x41000000
 .global $$256178
 $$256178:
-	.incbin "baserom.dol", 0x49D320, 0x4
+	.4byte 0x41100000
 .global $$256246
 $$256246:
-	.incbin "baserom.dol", 0x49D324, 0x4
+	.4byte 0xBF800000
 .global $$256247
 $$256247:
-	.incbin "baserom.dol", 0x49D328, 0x4
+	.4byte 0x40400000
 .global $$256248
 $$256248:
-	.incbin "baserom.dol", 0x49D32C, 0x4
+	.4byte 0x40000000
 .global $$256287
 $$256287:
-	.incbin "baserom.dol", 0x49D330, 0x4
+	.4byte 0x3F800000
 .global $$256325
 $$256325:
-	.incbin "baserom.dol", 0x49D334, 0x4
+	.4byte 0x44E4C000
 .global $$256327
 $$256327:
-	.incbin "baserom.dol", 0x49D338, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

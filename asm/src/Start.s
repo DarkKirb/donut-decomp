@@ -254,18 +254,27 @@ lbl_803B5874:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253747
 $$253747:
-	.incbin "baserom.dol", 0x48C910, 0x18
+	.asciz "step/challenge/Master"
+	.balign 4
 .global $$253748
 $$253748:
-	.incbin "baserom.dol", 0x48C928, 0xC
+	.asciz "StartMaster"
 .global $$253749
 $$253749:
-	.incbin "baserom.dol", 0x48C934, 0x18
+	.asciz "step/challenge/Musou"
+	.balign 4
 .global $$253751
 $$253751:
-	.incbin "baserom.dol", 0x48C94C, 0x4C
+	.asciz "step/challenge/Normal"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253750
 $$253750:
-	.incbin "baserom.dol", 0x497C88, 0x8
+	.asciz "Start"
+	.balign 4

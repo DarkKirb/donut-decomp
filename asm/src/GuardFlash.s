@@ -32,7 +32,7 @@ lbl_802304F8:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ALPHA_TABLE__Q43scn4step4boss24$$2unnamed$$2GuardFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss24$$2unnamed$$2GuardFlash_cpp$$2:
-	.incbin "baserom.dol", 0x49AE80, 0x4
+	.4byte 0x00006464
 .global $$249319
 $$249319:
-	.incbin "baserom.dol", 0x49AE84, 0x4
+	.4byte 0xC0C0C000

@@ -1017,80 +1017,123 @@ lbl_80329AB8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253974
 $$253974:
-	.incbin "baserom.dol", 0x47E6A0, 0xC
+	.asciz "ArenaWait1"
+	.balign 4
 .global $$253975
 $$253975:
-	.incbin "baserom.dol", 0x47E6AC, 0xC
+	.asciz "ArenaWait2"
+	.balign 4
 .global $$253976
 $$253976:
-	.incbin "baserom.dol", 0x47E6B8, 0xC
+	.asciz "ArenaWait3"
+	.balign 4
 .global $$253998
 $$253998:
-	.incbin "baserom.dol", 0x47E6C4, 0x18
+	.asciz "step/gimmick/WarpStar"
+	.balign 4
 .global $$253999
 $$253999:
-	.incbin "baserom.dol", 0x47E6DC, 0x1C
+	.asciz "step/gimmick/WarpStarDemo"
+	.balign 4
 .global $$254004
 $$254004:
-	.incbin "baserom.dol", 0x47E6F8, 0xC
+	.asciz "Main%02d"
+	.balign 4
 .global $$254005
 $$254005:
-	.incbin "baserom.dol", 0x47E704, 0xC
+	.asciz "StarConstL"
+	.balign 4
 .global $$254118
 $$254118:
-	.incbin "baserom.dol", 0x47E710, 0x34
+	.4byte 0x803293E8
+	.4byte 0x80329390
+	.4byte 0x80329398
+	.4byte 0x803293A0
+	.4byte 0x803293A8
+	.4byte 0x803293B0
+	.4byte 0x803293B8
+	.4byte 0x803293C0
+	.4byte 0x803293E8
+	.4byte 0x803293C8
+	.4byte 0x803293D0
+	.4byte 0x803293D8
+	.4byte 0x803293E0
 .global $$254130
 $$254130:
-	.incbin "baserom.dol", 0x47E744, 0xC
+	.asciz "FlashIn1"
+	.balign 4
 .global $$254131
 $$254131:
-	.incbin "baserom.dol", 0x47E750, 0xC
+	.asciz "FlashIn2"
+	.balign 4
 .global $$254132
 $$254132:
-	.incbin "baserom.dol", 0x47E75C, 0x74
+	.asciz "FlashIn3"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.asciz "FSqrt: Input is out of the domain."
+	.balign 4
+	.asciz "arithmetic.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253966
 $$253966:
-	.incbin "baserom.dol", 0x496D70, 0x8
+	.asciz "Start1"
+	.balign 4
 .global $$253967
 $$253967:
-	.incbin "baserom.dol", 0x496D78, 0x8
+	.asciz "Start2"
+	.balign 4
 .global $$253968
 $$253968:
-	.incbin "baserom.dol", 0x496D80, 0x8
+	.asciz "Start3"
+	.balign 4
 .global $$254000
 $$254000:
-	.incbin "baserom.dol", 0x496D88, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$254001
 $$254001:
-	.incbin "baserom.dol", 0x496D90, 0x8
+	.asciz "TopL1"
+	.balign 4
 .global $$254002
 $$254002:
-	.incbin "baserom.dol", 0x496D98, 0x8
+	.asciz "TopL2"
+	.balign 4
 .global $$254003
 $$254003:
-	.incbin "baserom.dol", 0x496DA0, 0x8
+	.asciz "TopL3"
+	.balign 4
 .global $$254006
 $$254006:
-	.incbin "baserom.dol", 0x496DA8, 0x8
+	.asciz "AnimL"
+	.balign 4
 .global $$254112
 $$254112:
-	.incbin "baserom.dol", 0x496DB0, 0x8
+	.asciz "Move1"
+	.balign 4
 .global $$254113
 $$254113:
-	.incbin "baserom.dol", 0x496DB8, 0x8
+	.asciz "Move2"
+	.balign 4
 .global $$254114
 $$254114:
-	.incbin "baserom.dol", 0x496DC0, 0x8
+	.asciz "Move3"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254115
 $$254115:
-	.incbin "baserom.dol", 0x49D5E8, 0x4
+	.4byte 0x41400000
 .global $$254116
 $$254116:
-	.incbin "baserom.dol", 0x49D5EC, 0x4
+	.4byte 0x43520000
 .global $$254163
 $$254163:
-	.incbin "baserom.dol", 0x49D5F0, 0x8
+	.4byte 0
+	.4byte 0

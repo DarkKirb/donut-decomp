@@ -444,24 +444,35 @@ procFixPos__Q53scn4step4hero12interference16StateKissReceiveFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference16StateKissReceive
 __vt__Q53scn4step4hero12interference16StateKissReceive:
-	.incbin "baserom.dol", 0x488608, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80372B6C
+	.4byte 0x80372CA8
+	.4byte 0x80373034
+	.4byte 0x8035550C
+	.4byte 0x80373038
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258092
 $$258092:
-	.incbin "baserom.dol", 0x49DD60, 0x4
+	.4byte 0x3F000000
 .global $$258093
 $$258093:
-	.incbin "baserom.dol", 0x49DD64, 0x4
+	.4byte 0x4222F983
 .global $$258094
 $$258094:
-	.incbin "baserom.dol", 0x49DD68, 0x4
+	.4byte 0x3C8EFA35
 .global $$258095
 $$258095:
-	.incbin "baserom.dol", 0x49DD6C, 0x4
+	.4byte 0x43340000
 .global $$258096
 $$258096:
-	.incbin "baserom.dol", 0x49DD70, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$258100
 $$258100:
-	.incbin "baserom.dol", 0x49DD78, 0x8
+	.4byte 0x43300000
+	.4byte 0

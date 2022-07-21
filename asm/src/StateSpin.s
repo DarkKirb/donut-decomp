@@ -713,37 +713,61 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe9StateSpin
 __vt__Q53scn4step5enemy10knucklejoe9StateSpin:
-	.incbin "baserom.dol", 0x474A90, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C0838  ;# ptr
+	.4byte 0x802C08E0  ;# ptr
+	.4byte 0x802C0A1C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C0AA0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10StateThrow$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10StateThrow$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489FB0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80396F28
+	.4byte 0x80396F08
 .global __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6hammer9StateSpin$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6hammer9StateSpin$$4PQ43scn4step4hero4Hero$$4b$$1:
-	.incbin "baserom.dol", 0x489FC0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80396F24
+	.4byte 0x80396EE8
 .global __vt__Q53scn4step4hero6hammer9StateSpin
 __vt__Q53scn4step4hero6hammer9StateSpin:
-	.incbin "baserom.dol", 0x489FD0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80396A7C
+	.4byte 0x80396B14
+	.4byte 0x80396C64
+	.4byte 0x8035550C
+	.4byte 0x80396D20
+	.4byte 0x80396D24
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255929
 $$255929:
-	.incbin "baserom.dol", 0x49C748, 0x4
+	.4byte 0
 .global $$255930
 $$255930:
-	.incbin "baserom.dol", 0x49C74C, 0x4
+	.4byte 0x42B40000
 .global $$255931
 $$255931:
-	.incbin "baserom.dol", 0x49C750, 0x4
+	.4byte 0x3E800000
 .global $$255939
 $$255939:
-	.incbin "baserom.dol", 0x49C754, 0x4
+	.4byte 0x3DCCCCCD
 .global $$255947
 $$255947:
-	.incbin "baserom.dol", 0x49C758, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258565
 $$258565:
-	.incbin "baserom.dol", 0x49E208, 0x8
+	.4byte 0xBF800000
+	.4byte 0

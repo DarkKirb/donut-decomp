@@ -115,4 +115,13 @@ procFixPos__Q53scn4step4hero5sword23StateSwordMeteorLandingFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5sword23StateSwordMeteorLanding
 __vt__Q53scn4step4hero5sword23StateSwordMeteorLanding:
-	.incbin "baserom.dol", 0x4891A8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80388460
+	.4byte 0x80388464
+	.4byte 0x8038850C
+	.4byte 0x8035550C
+	.4byte 0x80388510
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

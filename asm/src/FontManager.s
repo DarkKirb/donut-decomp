@@ -127,4 +127,5 @@ font__Q24font11FontManagerFQ24font8FontKind:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249284
 $$249284:
-	.incbin "baserom.dol", 0x493110, 0x8
+	.asciz "Font"
+	.balign 4

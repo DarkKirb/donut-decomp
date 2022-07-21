@@ -677,28 +677,35 @@ rfc_save_lcid_mcb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2712
 $$2712:
-	.incbin "baserom.dol", 0x43B1C8, 0x1C
+	.asciz "rfc_find_lcid_mcb LCID:0x%x"
 .global $$2713
 $$2713:
-	.incbin "baserom.dol", 0x43B1E4, 0x38
+	.asciz "rfc_find_lcid_mcb LCID reused LCID:0x%x current:0x%x"
+	.balign 4
 .global $$2714
 $$2714:
-	.incbin "baserom.dol", 0x43B21C, 0x1C
+	.asciz "RFCOMM_ConnectCnf LCID:0x%x"
 .global $$2728
 $$2728:
-	.incbin "baserom.dol", 0x43B238, 0x1C
+	.asciz "RFCOMM_ConfigInd LCID:0x%x"
+	.balign 4
 .global $$2743
 $$2743:
-	.incbin "baserom.dol", 0x43B254, 0x1C
+	.asciz "RFCOMM_ConfigCnf LCID:0x%x"
+	.balign 4
 .global $$2760
 $$2760:
-	.incbin "baserom.dol", 0x43B270, 0x20
+	.asciz "RFCOMM_DisconnectInd LCID:0x%x"
+	.balign 4
 .global $$2796
 $$2796:
-	.incbin "baserom.dol", 0x43B290, 0x1C
+	.asciz "RFCOMM_BufDataInd LCID:0x%x"
 .global $$2812
 $$2812:
-	.incbin "baserom.dol", 0x43B2AC, 0x30
+	.asciz "RFCOMM_CongestionStatusInd dropped LCID:0x%x"
+	.balign 4
 .global $$2813
 $$2813:
-	.incbin "baserom.dol", 0x43B2DC, 0x2C
+	.asciz "RFCOMM_CongestionStatusInd LCID:0x%x"
+	.balign 4
+	.4byte 0

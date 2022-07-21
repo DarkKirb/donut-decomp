@@ -107,13 +107,13 @@ setViewportSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender15Viewpor
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2795
 $$2795:
-	.incbin "baserom.dol", 0x49A0A8, 0x4
+	.4byte 0
 .global $$2796
 $$2796:
-	.incbin "baserom.dol", 0x49A0AC, 0x4
+	.4byte 0x44200000
 .global $$2797
 $$2797:
-	.incbin "baserom.dol", 0x49A0B0, 0x4
+	.4byte 0x43F00000
 .global $$2798
 $$2798:
-	.incbin "baserom.dol", 0x49A0B4, 0x4
+	.4byte 0x3F800000

@@ -823,44 +823,55 @@ GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254440
 $$254440:
-	.incbin "baserom.dol", 0x45B0F0, 0x14
+	.asciz "Challengeresult.dn"
+	.balign 4
 .global __vt__Q33scn15challengeresult20SceneChallengeResult
 __vt__Q33scn15challengeresult20SceneChallengeResult:
-	.incbin "baserom.dol", 0x45B104, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x801F10BC  ;# ptr
+	.4byte 0x801F0D5C  ;# ptr
+	.4byte 0x801F0F24  ;# ptr
+	.4byte 0x801F0F20  ;# ptr
+	.4byte 0x801F1028  ;# ptr
+	.4byte 0x801F102C  ;# ptr
+	.4byte 0x801F107C  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254439
 $$254439:
-	.incbin "baserom.dol", 0x4941C8, 0x8
+	.asciz "Effect"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253533
 $$253533:
-	.incbin "baserom.dol", 0x49A968, 0x4
+	.4byte 0x000000FF
 .global $$254497
 $$254497:
-	.incbin "baserom.dol", 0x49A96C, 0x4
+	.4byte 0xBF800000
 .global $$254498
 $$254498:
-	.incbin "baserom.dol", 0x49A970, 0x4
+	.4byte 0
 .global $$254499
 $$254499:
-	.incbin "baserom.dol", 0x49A974, 0x4
+	.4byte 0x42200000
 .global $$254500
 $$254500:
-	.incbin "baserom.dol", 0x49A978, 0x4
+	.4byte 0x42700000
 .global $$254501
 $$254501:
-	.incbin "baserom.dol", 0x49A97C, 0x4
+	.4byte 0x3FE38E39
 .global $$254502
 $$254502:
-	.incbin "baserom.dol", 0x49A980, 0x4
+	.4byte 0x3DCCCCCD
 .global $$254503
 $$254503:
-	.incbin "baserom.dol", 0x49A984, 0x4
+	.4byte 0x447A0000
 .global $$253899
 $$253899:
-	.incbin "baserom.dol", 0x49A988, 0x8
+	.4byte 0x000000FF
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn15challengeresult20SceneChallengeResult$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

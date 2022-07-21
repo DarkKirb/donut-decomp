@@ -254,18 +254,21 @@ start__Q34info6common10LowBatteryFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252080
 $$252080:
-	.incbin "baserom.dol", 0x4536D0, 0xC
+	.asciz "common/Main"
 .global $$252081
 $$252081:
-	.incbin "baserom.dol", 0x4536DC, 0xC
+	.asciz "BatteryInfo"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252134
 $$252134:
-	.incbin "baserom.dol", 0x493478, 0x4
+	.4byte 0x456E6400
 .global $$252135
 $$252135:
-	.incbin "baserom.dol", 0x49347C, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252157
 $$252157:
-	.incbin "baserom.dol", 0x493484, 0xC
+	.asciz "Start"
+	.balign 4
+	.4byte 0

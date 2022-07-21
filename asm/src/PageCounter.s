@@ -118,15 +118,18 @@ lbl_8020030C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249044
 $$249044:
-	.incbin "baserom.dol", 0x45C428, 0x10
+	.asciz "lyt/%s.arc.cmp"
+	.balign 4
 .global $$249046
 $$249046:
-	.incbin "baserom.dol", 0x45C438, 0x10
+	.asciz "Page%02d.brlyt"
+	.balign 4
 .global $$249047
 $$249047:
-	.incbin "baserom.dol", 0x45C448, 0x10
+	.asciz "PageS%02d.brlyt"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249045
 $$249045:
-	.incbin "baserom.dol", 0x4946F0, 0x8
+	.asciz "root"
+	.balign 4

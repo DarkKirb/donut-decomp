@@ -340,43 +340,57 @@ lbl_802DB3CC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common14StateFlyUpDown
 __vt__Q53scn4step5enemy6common14StateFlyUpDown:
-	.incbin "baserom.dol", 0x46F1E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80292668  ;# ptr
+	.4byte 0x8029266C  ;# ptr
+	.4byte 0x80292670  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029271C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy14StateFlyUpDown
 __vt__Q53scn4step5enemy6scarfy14StateFlyUpDown:
-	.incbin "baserom.dol", 0x477778, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DB218  ;# ptr
+	.4byte 0x802DB21C  ;# ptr
+	.4byte 0x802DB220  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802DB2E4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255699
 $$255699:
-	.incbin "baserom.dol", 0x49BB80, 0x4
+	.4byte 0
 .global $$255711
 $$255711:
-	.incbin "baserom.dol", 0x49BB84, 0x4
+	.4byte 0x3FC00000
 .global $$255712
 $$255712:
-	.incbin "baserom.dol", 0x49BB88, 0x4
+	.4byte 0x43B40000
 .global $$255713
 $$255713:
-	.incbin "baserom.dol", 0x49BB8C, 0x4
+	.4byte 0x3FE00000
 .global $$255727
 $$255727:
-	.incbin "baserom.dol", 0x49BB90, 0x4
+	.4byte 0x42B40000
 .global $$255728
 $$255728:
-	.incbin "baserom.dol", 0x49BB94, 0x4
+	.4byte 0x43870000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255730
 $$255730:
-	.incbin "baserom.dol", 0x49CC78, 0x4
+	.4byte 0
 .global $$255743
 $$255743:
-	.incbin "baserom.dol", 0x49CC7C, 0x4
+	.4byte 0x43B40000
 .global $$255757
 $$255757:
-	.incbin "baserom.dol", 0x49CC80, 0x4
+	.4byte 0x42B40000
 .global $$255758
 $$255758:
-	.incbin "baserom.dol", 0x49CC84, 0x4
+	.4byte 0x43870000

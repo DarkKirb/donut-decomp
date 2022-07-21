@@ -99,9 +99,23 @@ __dt__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common17BrainWalkStraight
 __vt__Q53scn4step5enemy6common17BrainWalkStraight:
-	.incbin "baserom.dol", 0x46F0A8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291704  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x80291680  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledoo17BrainWalkStraight
 __vt__Q53scn4step5enemy9waddledoo17BrainWalkStraight:
-	.incbin "baserom.dol", 0x47A530, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EFA64  ;# ptr
+	.4byte 0x8027EE28  ;# ptr
+	.4byte 0x8027EE2C  ;# ptr
+	.4byte 0x802EFA5C  ;# ptr
+	.4byte 0x802EFA60  ;# ptr
+	.4byte 0

@@ -558,27 +558,55 @@ __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateStamp$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateStamp$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A400, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C660
+	.4byte 0x8039C5C0
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateVulcan$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateVulcan$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A410, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C65C
+	.4byte 0x8039C5DC
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateDoubleKick$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter15StateDoubleKick$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A420, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C658
+	.4byte 0x8039C5F8
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateSmash$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter10StateSmash$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A430, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C654
+	.4byte 0x8039C614
 .global __vt__Q24util128StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter9StateShot$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero7fighter11ChargeLevel$$1
 __vt__Q24util128StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter9StateShot$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero7fighter11ChargeLevel$$1:
-	.incbin "baserom.dol", 0x48A440, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C650
+	.4byte 0x8039C5A0
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateCharge$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero7fighter11StateCharge$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48A450, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C64C
+	.4byte 0x8039C630
 .global __vt__Q53scn4step4hero7fighter11StateCharge
 __vt__Q53scn4step4hero7fighter11StateCharge:
-	.incbin "baserom.dol", 0x48A460, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039C054
+	.4byte 0x8039C0F4
+	.4byte 0x8039C278
+	.4byte 0x8035550C
+	.4byte 0x8039C2B4
+	.4byte 0x8039C2B8
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258418
 $$258418:
-	.incbin "baserom.dol", 0x49E2D8, 0x8
+	.4byte 0x40800000
+	.4byte 0

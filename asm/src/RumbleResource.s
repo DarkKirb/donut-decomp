@@ -76,12 +76,15 @@ lbl_801A4250:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x453040, 0x1C
+	.asciz "hid/rumble/Rumble.dat.cmp"
+	.balign 4
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x45305C, 0x24
+	.asciz "hid/rumble/subgame/Rumble.dat.cmp"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2
 T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2:
-	.incbin "baserom.dol", 0x493280, 0x8
+	.4byte 0x80456F40
+	.4byte 0x80456F5C

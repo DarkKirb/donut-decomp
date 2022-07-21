@@ -334,24 +334,33 @@ lbl_80376AEC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6damage12StateFireLv2
 __vt__Q53scn4step4hero6damage12StateFireLv2:
-	.incbin "baserom.dol", 0x488790, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037671C
+	.4byte 0x803767D8
+	.4byte 0x80376964
+	.4byte 0x8035550C
+	.4byte 0x803769CC
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256845
 $$256845:
-	.incbin "baserom.dol", 0x49DE40, 0x4
+	.4byte 0
 .global $$256892
 $$256892:
-	.incbin "baserom.dol", 0x49DE44, 0x4
+	.4byte 0x41A00000
 .global $$256893
 $$256893:
-	.incbin "baserom.dol", 0x49DE48, 0x4
+	.4byte 0x43B40000
 .global $$256894
 $$256894:
-	.incbin "baserom.dol", 0x49DE4C, 0x4
+	.4byte 0x42652EE1
 .global $$256895
 $$256895:
-	.incbin "baserom.dol", 0x49DE50, 0x4
+	.4byte 0x42480000
 .global $$256900
 $$256900:
-	.incbin "baserom.dol", 0x49DE54, 0x4
+	.4byte 0x38D1B717

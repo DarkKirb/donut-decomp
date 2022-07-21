@@ -879,9 +879,17 @@ lbl_800A4648:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef6Effect
 __vt__Q34nw4r2ef6Effect:
-	.incbin "baserom.dol", 0x43C178, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x800A3C80  ;# ptr
+	.4byte 0x800A3C90  ;# ptr
+	.4byte 0x800A3B40  ;# ptr
+	.4byte 0x800A4570  ;# ptr
+	.4byte 0x800A40A0  ;# ptr
+	.4byte 0x800A44D0  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28467
 $$28467:
-	.incbin "baserom.dol", 0x4994B0, 0x8
+	.4byte 0
+	.4byte 0

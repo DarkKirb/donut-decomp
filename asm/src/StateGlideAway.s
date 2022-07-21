@@ -494,39 +494,47 @@ lbl_8024AB84:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditmeta14StateGlideAway
 __vt__Q53scn4step4boss10creditmeta14StateGlideAway:
-	.incbin "baserom.dol", 0x463000, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8024A5BC  ;# ptr
+	.4byte 0x8024A668  ;# ptr
+	.4byte 0x8024A714  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8024A924  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256059
 $$256059:
-	.incbin "baserom.dol", 0x49B1E8, 0x4
+	.4byte 0
 .global $$256126
 $$256126:
-	.incbin "baserom.dol", 0x49B1EC, 0x4
+	.4byte 0x3DCCCCCD
 .global $$256127
 $$256127:
-	.incbin "baserom.dol", 0x49B1F0, 0x4
+	.4byte 0x43340000
 .global $$256128
 $$256128:
-	.incbin "baserom.dol", 0x49B1F4, 0x4
+	.4byte 0x3F800000
 .global $$256129
 $$256129:
-	.incbin "baserom.dol", 0x49B1F8, 0x4
+	.4byte 0x42B40000
 .global $$256130
 $$256130:
-	.incbin "baserom.dol", 0x49B1FC, 0x4
+	.4byte 0x43B40000
 .global $$256133
 $$256133:
-	.incbin "baserom.dol", 0x49B200, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256139
 $$256139:
-	.incbin "baserom.dol", 0x49B208, 0x4
+	.4byte 0x3C8EFA35
 .global $$256160
 $$256160:
-	.incbin "baserom.dol", 0x49B20C, 0x4
+	.4byte 0x43610000
 .global $$256161
 $$256161:
-	.incbin "baserom.dol", 0x49B210, 0x4
+	.4byte 0x3D99999A
 .global $$256162
 $$256162:
-	.incbin "baserom.dol", 0x49B214, 0x4
+	.4byte 0x3727C5AC

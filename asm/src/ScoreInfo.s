@@ -79,7 +79,9 @@ isAlive__Q43scn4step9challenge9ScoreInfoCFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251676
 $$251676:
-	.incbin "baserom.dol", 0x495820, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$251677
 $$251677:
-	.incbin "baserom.dol", 0x495828, 0x8
+	.asciz "Main"
+	.balign 4

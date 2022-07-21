@@ -148,26 +148,31 @@ viewShip__Q53scn4step7gimmick7monitor7MonitorFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251935
 $$251935:
-	.incbin "baserom.dol", 0x47DC38, 0xC
+	.asciz "screen00"
+	.balign 4
 .global $$251936
 $$251936:
-	.incbin "baserom.dol", 0x47DC44, 0xC
+	.asciz "screen03"
+	.balign 4
 .global $$252077
 $$252077:
-	.incbin "baserom.dol", 0x47DC50, 0x18
+	.asciz "step/gimmick/Monitor05"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252078
 $$252078:
-	.incbin "baserom.dol", 0x496C20, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251937
 $$251937:
-	.incbin "baserom.dol", 0x49D4F0, 0x4
+	.4byte 0x80481B38
 .global lbl_805629B4
 lbl_805629B4:
-	.incbin "baserom.dol", 0x49D4F4, 0x4
+	.4byte 0x80481B44
 .global $$252079
 $$252079:
-	.incbin "baserom.dol", 0x49D4F8, 0x8
+	.4byte 0
+	.4byte 0

@@ -521,15 +521,63 @@ lbl_80121B88:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2943
 $$2943:
-	.incbin "baserom.dol", 0x43E908, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8011FF30  ;# ptr
 .global __vt__Q34nw4r2ut7RomFont
 __vt__Q34nw4r2ut7RomFont:
-	.incbin "baserom.dol", 0x43E914, 0x5C
+	.4byte 0
+	.4byte 0
+	.4byte 0x80121580  ;# ptr
+	.4byte 0x801216E0  ;# ptr
+	.4byte 0x801216F0  ;# ptr
+	.4byte 0x80121750  ;# ptr
+	.4byte 0x80121760  ;# ptr
+	.4byte 0x80121770  ;# ptr
+	.4byte 0x80121780  ;# ptr
+	.4byte 0x80121790  ;# ptr
+	.4byte 0x801217A0  ;# ptr
+	.4byte 0x801217B0  ;# ptr
+	.4byte 0x801217C0  ;# ptr
+	.4byte 0x801217D0  ;# ptr
+	.4byte 0x801217E0  ;# ptr
+	.4byte 0x80121800  ;# ptr
+	.4byte 0x80121820  ;# ptr
+	.4byte 0x801218B0  ;# ptr
+	.4byte 0x801218C0  ;# ptr
+	.4byte 0x80121950  ;# ptr
+	.4byte 0x801219A0  ;# ptr
+	.4byte 0x80121AA0  ;# ptr
+	.4byte 0x80121B60  ;# ptr
 .global __vt__Q34nw4r2ut4Font
 __vt__Q34nw4r2ut4Font:
-	.incbin "baserom.dol", 0x43E970, 0x60
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F6560  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global mFontEncode__Q34nw4r2ut7RomFont
 mFontEncode__Q34nw4r2ut7RomFont:
-	.incbin "baserom.dol", 0x492E58, 0x8
+	.4byte 0xFFFF0000
+	.4byte 0

@@ -299,10 +299,25 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword23Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword23StateSwordMeteorLanding$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword23StateSwordMeteorLanding$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489160, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80388398
+	.4byte 0x8038835C
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword16StateSwordMeteor$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword16StateSwordMeteor$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x489170, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80388394
+	.4byte 0x80388378
 .global __vt__Q53scn4step4hero5sword16StateSwordMeteor
 __vt__Q53scn4step4hero5sword16StateSwordMeteor:
-	.incbin "baserom.dol", 0x489180, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80388190
+	.4byte 0x80388194
+	.4byte 0x80388198
+	.4byte 0x8035550C
+	.4byte 0x80388234
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

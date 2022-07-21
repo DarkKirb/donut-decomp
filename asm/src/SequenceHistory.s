@@ -366,4 +366,13 @@ __dt__Q23seq15SequenceHistoryFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq15SequenceHistory
 __vt__Q23seq15SequenceHistory:
-	.incbin "baserom.dol", 0x492550, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803FEC18
+	.4byte 0x803FEC1C
+	.4byte 0x803FE7C0
+	.4byte 0x803FE808
+	.4byte 0x803FE86C
+	.4byte 0x803FE870
+	.4byte 0x803FEA34
+	.4byte 0

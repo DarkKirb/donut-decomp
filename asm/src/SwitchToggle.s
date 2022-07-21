@@ -115,9 +115,19 @@ onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchToggleFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8switch_n12SwitchToggle
 __vt__Q53scn4step7gimmick8switch_n12SwitchToggle:
-	.incbin "baserom.dol", 0x47E678, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80328548
+	.4byte 0x8032854C
+	.4byte 0x80328550
+	.4byte 0x80328640
+	.4byte 0x80328644
+	.4byte 0x80327B60
+	.4byte 0x80328648
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252602
 $$252602:
-	.incbin "baserom.dol", 0x496D68, 0x8
+	.asciz "Toggle"
+	.balign 4

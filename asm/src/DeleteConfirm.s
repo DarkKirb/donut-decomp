@@ -460,54 +460,72 @@ lbl_801E39D0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252625
 $$252625:
-	.incbin "baserom.dol", 0x45A0C8, 0x1C
+	.asciz "challengefileselect/Main"
+	.balign 4
 .global $$252626
 $$252626:
-	.incbin "baserom.dol", 0x45A0E4, 0x14
+	.asciz "DeleteConfirmWindow"
 .global $$252627
 $$252627:
-	.incbin "baserom.dol", 0x45A0F8, 0xC
+	.asciz "Button01N"
+	.balign 4
 .global $$252628
 $$252628:
-	.incbin "baserom.dol", 0x45A104, 0xC
+	.asciz "Button02N"
+	.balign 4
 .global $$252690
 $$252690:
-	.incbin "baserom.dol", 0x45A110, 0x10
+	.asciz "ConfirmTitle"
+	.balign 4
 .global $$252691
 $$252691:
-	.incbin "baserom.dol", 0x45A120, 0xC
+	.asciz "CautionN"
+	.balign 4
 .global $$252692
 $$252692:
-	.incbin "baserom.dol", 0x45A12C, 0xC
+	.asciz "ConfirmYes"
+	.balign 4
 .global $$252693
 $$252693:
-	.incbin "baserom.dol", 0x45A138, 0xC
+	.asciz "ConfirmNo"
+	.balign 4
 .global $$252696
 $$252696:
-	.incbin "baserom.dol", 0x45A144, 0x10
+	.asciz "ReConfirmTitle"
+	.balign 4
 .global $$252697
 $$252697:
-	.incbin "baserom.dol", 0x45A154, 0x10
+	.asciz "ReConfirmYes"
+	.balign 4
 .global $$252698
 $$252698:
-	.incbin "baserom.dol", 0x45A164, 0xC
+	.asciz "ReConfirmNo"
 .global $$252701
 $$252701:
-	.incbin "baserom.dol", 0x45A170, 0x18
+	.asciz "FinalConfirmTitle"
+	.balign 4
+	.4byte 0
 .global $$252702
 $$252702:
-	.incbin "baserom.dol", 0x45A188, 0x10
+	.asciz "FinalConfirmYes"
 .global $$252703
 $$252703:
-	.incbin "baserom.dol", 0x45A198, 0x40
+	.asciz "FinalConfirmNo"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252689
 $$252689:
-	.incbin "baserom.dol", 0x493E78, 0x8
+	.asciz "Confirm"
 .global $$252708
 $$252708:
-	.incbin "baserom.dol", 0x493E80, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$252711
 $$252711:
-	.incbin "baserom.dol", 0x493E88, 0x8
+	.asciz "Close"
+	.balign 4

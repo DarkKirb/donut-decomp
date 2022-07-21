@@ -850,84 +850,182 @@ lbl_80151AE8:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23186
 $$23186:
-	.incbin "baserom.dol", 0x443FC8, 0x1C
+	.asciz "[Sdk Open] Movie not found\n"
 .global $$23187
 $$23187:
-	.incbin "baserom.dol", 0x443FE4, 0xC
+	.asciz "SDK_CLOSED"
+	.balign 4
 .global $$23188
 $$23188:
-	.incbin "baserom.dol", 0x443FF0, 0xC
+	.asciz "SDK_OPENING"
 .global $$23189
 $$23189:
-	.incbin "baserom.dol", 0x443FFC, 0xC
+	.asciz "SDK_OPENED"
+	.balign 4
 .global $$23190
 $$23190:
-	.incbin "baserom.dol", 0x444008, 0x14
+	.asciz "SDK_READING_HEADERS"
 .global $$23191
 $$23191:
-	.incbin "baserom.dol", 0x44401C, 0xC
+	.asciz "SDK_READY"
+	.balign 4
 .global $$23192
 $$23192:
-	.incbin "baserom.dol", 0x444028, 0xC
+	.asciz "SDK_SEEKING"
 .global $$23193
 $$23193:
-	.incbin "baserom.dol", 0x444034, 0x10
+	.asciz "SDK_COMPLETE"
+	.balign 4
 .global $$23194
 $$23194:
-	.incbin "baserom.dol", 0x444044, 0xC
+	.asciz "SDK_ERROR"
+	.balign 4
 .global $$23195
 $$23195:
-	.incbin "baserom.dol", 0x444050, 0x10
+	.asciz "unknown state"
+	.balign 4
 .global $$23197
 $$23197:
-	.incbin "baserom.dol", 0x444060, 0x10
+	.asciz "[SDK] %s -> %s\n"
 .global $$23198
 $$23198:
-	.incbin "baserom.dol", 0x444070, 0x30
+	.asciz "[Sdk Open] Bad State after opening, cancelling\n"
 .global $$23199
 $$23199:
-	.incbin "baserom.dol", 0x4440A0, 0x20
+	.asciz "[Sdk Open] Not enough memory\n"
+	.balign 4
 .global $$23200
 $$23200:
-	.incbin "baserom.dol", 0x4440C0, 0x18
+	.asciz "[Sdk Open] Fatal error\n"
 .global $$23205
 $$23205:
-	.incbin "baserom.dol", 0x4440D8, 0x24
+	.4byte 0x801512B4  ;# ptr
+	.4byte 0x801512BC  ;# ptr
+	.4byte 0x801512C4  ;# ptr
+	.4byte 0x801512CC  ;# ptr
+	.4byte 0x801512D4  ;# ptr
+	.4byte 0x801512DC  ;# ptr
+	.4byte 0x801512E4  ;# ptr
+	.4byte 0x801512F4  ;# ptr
+	.4byte 0x801512EC  ;# ptr
 .global $$23204
 $$23204:
-	.incbin "baserom.dol", 0x4440FC, 0x24
+	.4byte 0x80151154  ;# ptr
+	.4byte 0x8015115C  ;# ptr
+	.4byte 0x80151164  ;# ptr
+	.4byte 0x8015116C  ;# ptr
+	.4byte 0x80151174  ;# ptr
+	.4byte 0x8015117C  ;# ptr
+	.4byte 0x80151184  ;# ptr
+	.4byte 0x80151194  ;# ptr
+	.4byte 0x8015118C  ;# ptr
 .global $$23203
 $$23203:
-	.incbin "baserom.dol", 0x444120, 0x24
+	.4byte 0x801510BC  ;# ptr
+	.4byte 0x801510C4  ;# ptr
+	.4byte 0x801510CC  ;# ptr
+	.4byte 0x801510D4  ;# ptr
+	.4byte 0x801510DC  ;# ptr
+	.4byte 0x801510E4  ;# ptr
+	.4byte 0x801510EC  ;# ptr
+	.4byte 0x801510FC  ;# ptr
+	.4byte 0x801510F4  ;# ptr
 .global $$23242
 $$23242:
-	.incbin "baserom.dol", 0x444144, 0x24
+	.4byte 0x801514E0  ;# ptr
+	.4byte 0x801514E8  ;# ptr
+	.4byte 0x801514F0  ;# ptr
+	.4byte 0x801514F8  ;# ptr
+	.4byte 0x80151500  ;# ptr
+	.4byte 0x80151508  ;# ptr
+	.4byte 0x80151510  ;# ptr
+	.4byte 0x80151520  ;# ptr
+	.4byte 0x80151518  ;# ptr
 .global $$23241
 $$23241:
-	.incbin "baserom.dol", 0x444168, 0x24
+	.4byte 0x8015143C  ;# ptr
+	.4byte 0x80151444  ;# ptr
+	.4byte 0x8015144C  ;# ptr
+	.4byte 0x80151454  ;# ptr
+	.4byte 0x8015145C  ;# ptr
+	.4byte 0x80151464  ;# ptr
+	.4byte 0x8015146C  ;# ptr
+	.4byte 0x8015147C  ;# ptr
+	.4byte 0x80151474  ;# ptr
 .global $$23271
 $$23271:
-	.incbin "baserom.dol", 0x44418C, 0x24
+	.4byte 0x801516A0  ;# ptr
+	.4byte 0x801516A8  ;# ptr
+	.4byte 0x801516B0  ;# ptr
+	.4byte 0x801516B8  ;# ptr
+	.4byte 0x801516C0  ;# ptr
+	.4byte 0x801516C8  ;# ptr
+	.4byte 0x801516D0  ;# ptr
+	.4byte 0x801516E0  ;# ptr
+	.4byte 0x801516D8  ;# ptr
 .global $$23270
 $$23270:
-	.incbin "baserom.dol", 0x4441B0, 0x24
+	.4byte 0x801515FC  ;# ptr
+	.4byte 0x80151604  ;# ptr
+	.4byte 0x8015160C  ;# ptr
+	.4byte 0x80151614  ;# ptr
+	.4byte 0x8015161C  ;# ptr
+	.4byte 0x80151624  ;# ptr
+	.4byte 0x8015162C  ;# ptr
+	.4byte 0x8015163C  ;# ptr
+	.4byte 0x80151634  ;# ptr
 .global $$23315
 $$23315:
-	.incbin "baserom.dol", 0x4441D4, 0x18
+	.asciz "[Sdk Close] Closing\n"
+	.balign 4
 .global $$23317
 $$23317:
-	.incbin "baserom.dol", 0x4441EC, 0x24
+	.4byte 0x8015189C  ;# ptr
+	.4byte 0x801518A4  ;# ptr
+	.4byte 0x801518AC  ;# ptr
+	.4byte 0x801518B4  ;# ptr
+	.4byte 0x801518BC  ;# ptr
+	.4byte 0x801518C4  ;# ptr
+	.4byte 0x801518CC  ;# ptr
+	.4byte 0x801518DC  ;# ptr
+	.4byte 0x801518D4  ;# ptr
 .global $$23329
 $$23329:
-	.incbin "baserom.dol", 0x444210, 0x24
+	.4byte 0x80151964  ;# ptr
+	.4byte 0x8015196C  ;# ptr
+	.4byte 0x80151974  ;# ptr
+	.4byte 0x8015197C  ;# ptr
+	.4byte 0x80151984  ;# ptr
+	.4byte 0x8015198C  ;# ptr
+	.4byte 0x80151994  ;# ptr
+	.4byte 0x801519A4  ;# ptr
+	.4byte 0x8015199C  ;# ptr
 .global $$23353
 $$23353:
-	.incbin "baserom.dol", 0x444234, 0x24
+	.4byte 0x80151A94  ;# ptr
+	.4byte 0x80151A9C  ;# ptr
+	.4byte 0x80151AA4  ;# ptr
+	.4byte 0x80151AAC  ;# ptr
+	.4byte 0x80151AB4  ;# ptr
+	.4byte 0x80151ABC  ;# ptr
+	.4byte 0x80151AC4  ;# ptr
+	.4byte 0x80151AD4  ;# ptr
+	.4byte 0x80151ACC  ;# ptr
 .global $$23352
 $$23352:
-	.incbin "baserom.dol", 0x444258, 0x28
+	.4byte 0x80151A20  ;# ptr
+	.4byte 0x80151A28  ;# ptr
+	.4byte 0x80151A30  ;# ptr
+	.4byte 0x80151A38  ;# ptr
+	.4byte 0x80151A40  ;# ptr
+	.4byte 0x80151A48  ;# ptr
+	.4byte 0x80151A50  ;# ptr
+	.4byte 0x80151A60  ;# ptr
+	.4byte 0x80151A58  ;# ptr
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23196
 $$23196:
-	.incbin "baserom.dol", 0x492EA0, 0x8
+	.asciz "????"
+	.balign 4

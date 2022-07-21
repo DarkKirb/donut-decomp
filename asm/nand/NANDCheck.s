@@ -139,36 +139,49 @@ lbl_8004AABC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22294
 $$22294:
-	.incbin "baserom.dol", 0x4325D0, 0x10
+	.asciz "/title/00010000"
 .global $$22295
 $$22295:
-	.incbin "baserom.dol", 0x4325E0, 0x10
+	.asciz "/title/00010001"
 .global $$22296
 $$22296:
-	.incbin "baserom.dol", 0x4325F0, 0x10
+	.asciz "/title/00010003"
 .global $$22297
 $$22297:
-	.incbin "baserom.dol", 0x432600, 0x10
+	.asciz "/title/00010004"
 .global $$22298
 $$22298:
-	.incbin "baserom.dol", 0x432610, 0x10
+	.asciz "/title/00010005"
 .global $$22299
 $$22299:
-	.incbin "baserom.dol", 0x432620, 0x10
+	.asciz "/title/00010006"
 .global $$22300
 $$22300:
-	.incbin "baserom.dol", 0x432630, 0x10
+	.asciz "/title/00010007"
 .global $$22301
 $$22301:
-	.incbin "baserom.dol", 0x432640, 0x10
+	.asciz "/shared2/title"
+	.balign 4
 .global USER_DIR_LIST
 USER_DIR_LIST:
-	.incbin "baserom.dol", 0x432650, 0x30
+	.4byte 0x80556660
+	.4byte 0x80556668
+	.4byte 0x804364D0
+	.4byte 0x804364E0
+	.4byte 0x804364F0
+	.4byte 0x80436500
+	.4byte 0x80436510
+	.4byte 0x80436520
+	.4byte 0x80436530
+	.4byte 0x80436540
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22292
 $$22292:
-	.incbin "baserom.dol", 0x492A40, 0x8
+	.asciz "/meta"
+	.balign 4
 .global $$22293
 $$22293:
-	.incbin "baserom.dol", 0x492A48, 0x8
+	.asciz "/ticket"

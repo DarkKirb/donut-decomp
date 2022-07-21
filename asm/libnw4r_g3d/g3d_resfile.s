@@ -1765,34 +1765,88 @@ lbl_800CA6D4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global ResNameData_Models__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_Models__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C5E0, 0x20
+	.4byte 0x0000000E
+	.asciz "3DModels(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Pltts__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_Pltts__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C600, 0x20
+	.4byte 0x0000000E
+	.asciz "Palettes(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Textures__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_Textures__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C620, 0x20
+	.4byte 0x0000000E
+	.asciz "Textures(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmChr__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmChr__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C640, 0x20
+	.4byte 0x0000000C
+	.asciz "AnmChr(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmVis__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmVis__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C660, 0x20
+	.4byte 0x0000000C
+	.asciz "AnmVis(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmClr__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmClr__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C680, 0x20
+	.4byte 0x0000000C
+	.asciz "AnmClr(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmTexPat__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmTexPat__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C6A0, 0x20
+	.4byte 0x0000000F
+	.asciz "AnmTexPat(NW4R)"
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmTexSrt__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmTexSrt__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C6C0, 0x20
+	.4byte 0x0000000F
+	.asciz "AnmTexSrt(NW4R)"
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmShp__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmShp__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C6E0, 0x20
+	.4byte 0x0000000C
+	.asciz "AnmShp(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_AnmScn__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_AnmScn__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C700, 0x20
+	.4byte 0x0000000C
+	.asciz "AnmScn(NW4R)"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global ResNameData_Ext__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_Ext__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
-	.incbin "baserom.dol", 0x43C720, 0x20
+	.4byte 0x00000008
+	.asciz "External"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

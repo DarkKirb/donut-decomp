@@ -515,4 +515,7 @@ getCollidedAttackTargetGimmick__Q25ocoll12SearchAttackCFUl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q25ocoll12SearchAttack
 __vt__Q25ocoll12SearchAttack:
-	.incbin "baserom.dol", 0x4594E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x801D8548  ;# ptr
+	.4byte 0

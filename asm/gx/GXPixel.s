@@ -563,42 +563,57 @@ GXSetFieldMode:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GXSetPixelFmt__F11_GXPixelFmt9_GXZFmt16$$2p2f
 $$2LOCAL$$2GXSetPixelFmt__F11_GXPixelFmt9_GXZFmt16$$2p2f:
-	.incbin "baserom.dol", 0x42D0F0, 0x20
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000005
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22990
 $$22990:
-	.incbin "baserom.dol", 0x499170, 0x4
+	.4byte 0
 .global $$22991
 $$22991:
-	.incbin "baserom.dol", 0x499174, 0x4
+	.4byte 0x3F800000
 .global $$22992
 $$22992:
-	.incbin "baserom.dol", 0x499178, 0x8
+	.4byte 0x3F000000
+	.4byte 0
 .global $$22993
 $$22993:
-	.incbin "baserom.dol", 0x499180, 0x8
+	.4byte 0x3FF00000
+	.4byte 0
 .global $$22994
 $$22994:
-	.incbin "baserom.dol", 0x499188, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$22995
 $$22995:
-	.incbin "baserom.dol", 0x499190, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$22996
 $$22996:
-	.incbin "baserom.dol", 0x499198, 0x8
+	.4byte 0x4B00001E
+	.4byte 0
 .global $$22999
 $$22999:
-	.incbin "baserom.dol", 0x4991A0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$23011
 $$23011:
-	.incbin "baserom.dol", 0x4991A8, 0x8
+	.4byte 0
+	.4byte 0
 .global $$23012
 $$23012:
-	.incbin "baserom.dol", 0x4991B0, 0x4
+	.4byte 0x3FDDB3D0
 .global $$23013
 $$23013:
-	.incbin "baserom.dol", 0x4991B4, 0x4
+	.4byte 0x43800000
 .global $$23017
 $$23017:
-	.incbin "baserom.dol", 0x4991B8, 0x8
+	.4byte 0x43300000
+	.4byte 0

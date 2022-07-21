@@ -51,4 +51,5 @@ normalized__Q23hid5StickCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249704
 $$249704:
-	.incbin "baserom.dol", 0x49A470, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

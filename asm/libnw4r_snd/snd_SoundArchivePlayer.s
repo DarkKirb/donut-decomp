@@ -2989,18 +2989,37 @@ $$212$$2__dt__Q34nw4r3snd18SoundArchivePlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd18SoundArchivePlayer
 __vt__Q34nw4r3snd18SoundArchivePlayer:
-	.incbin "baserom.dol", 0x43E580, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x80111500  ;# ptr
+	.4byte 0x801137F0  ;# ptr
+	.4byte 0x801138A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0x80113BA0  ;# ptr
+	.4byte 0x80113B90  ;# ptr
+	.4byte 0x80113B80  ;# ptr
+	.4byte 0x8010F690  ;# ptr
+	.4byte 0x801125C0  ;# ptr
 .global __vt__Q44nw4r3snd18SoundArchivePlayer11WsdCallback
 __vt__Q44nw4r3snd18SoundArchivePlayer11WsdCallback:
-	.incbin "baserom.dol", 0x43E5B0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80111490  ;# ptr
+	.4byte 0x80113A80  ;# ptr
 .global __vt__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallback
 __vt__Q44nw4r3snd18SoundArchivePlayer17SeqNoteOnCallback:
-	.incbin "baserom.dol", 0x43E5C0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80111480  ;# ptr
+	.4byte 0x80113950  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$218172
 $$218172:
-	.incbin "baserom.dol", 0x499F08, 0x8
+	.4byte 0x42FE0000
+	.4byte 0
 .global $$218180
 $$218180:
-	.incbin "baserom.dol", 0x499F10, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

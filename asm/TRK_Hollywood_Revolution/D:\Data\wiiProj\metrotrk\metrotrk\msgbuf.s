@@ -617,7 +617,7 @@ lbl_8001775C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DE00, 0x28
+	.asciz "MetroTRK - ERROR : No buffer available\n"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gTRKMsgBufs

@@ -368,12 +368,69 @@ lbl_80356188:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256381
 $$256381:
-	.incbin "baserom.dol", 0x481638, 0xE8
+	.4byte 0x80356090
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x803560C4
+	.4byte 0x80356098
+	.4byte 0x803560AC
+	.4byte 0x803560B4
+	.4byte 0x803560BC
+	.4byte 0x803560CC
+	.4byte 0x803560D4
+	.4byte 0x803560DC
+	.4byte 0x803560E4
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x803560EC
+	.4byte 0x803560EC
+	.4byte 0x803560EC
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x803560A0
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x8035610C
+	.4byte 0x80356108
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256378
 $$256378:
-	.incbin "baserom.dol", 0x49D9F0, 0x4
+	.4byte 0x3F800000
 .global $$256379
 $$256379:
-	.incbin "baserom.dol", 0x49D9F4, 0x4
+	.4byte 0

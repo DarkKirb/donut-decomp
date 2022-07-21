@@ -88,4 +88,7 @@ request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36effect6detail22G3DAutoReqAnimCallback
 __vt__Q36effect6detail22G3DAutoReqAnimCallback:
-	.incbin "baserom.dol", 0x44F4E0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8017E9D0  ;# ptr
+	.4byte 0x801813B4  ;# ptr

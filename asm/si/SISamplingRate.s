@@ -75,13 +75,37 @@ SIRefreshSamplingRate:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global XYNTSC
 XYNTSC:
-	.incbin "baserom.dol", 0x42BCF8, 0x30
+	.4byte 0x00F60200
+	.4byte 0x000E1300
+	.4byte 0x001E0900
+	.4byte 0x002C0600
+	.4byte 0x00340500
+	.4byte 0x00410400
+	.4byte 0x00570300
+	.4byte 0x00570300
+	.4byte 0x00570300
+	.4byte 0x00830200
+	.4byte 0x00830200
+	.4byte 0x00830200
 .global XYPAL
 XYPAL:
-	.incbin "baserom.dol", 0x42BD28, 0x30
+	.4byte 0x01280200
+	.4byte 0x000F1500
+	.4byte 0x001D0B00
+	.4byte 0x002D0700
+	.4byte 0x00340600
+	.4byte 0x003F0500
+	.4byte 0x004E0400
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x009C0200
 .global $$2536
 $$2536:
-	.incbin "baserom.dol", 0x42BD58, 0x38
+	.asciz "SISetSamplingRate: unknown TV format. Use default."
+	.balign 4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global SamplingRate

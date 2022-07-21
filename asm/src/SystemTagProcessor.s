@@ -1647,111 +1647,143 @@ applyScale__Q23lyt18SystemTagProcessorCFPQ34nw4r2ut15PrintContext$$0w$$1Us:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23lyt18SystemTagProcessor
 __vt__Q23lyt18SystemTagProcessor:
-	.incbin "baserom.dol", 0x453B00, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801AC810  ;# ptr
+	.4byte 0x801AE550  ;# ptr
+	.4byte 0x801AFA44  ;# ptr
 .global $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20
 $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20:
-	.incbin "baserom.dol", 0x453B14, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff
 $$2STRING$$2SetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1Ff:
-	.incbin "baserom.dol", 0x453B48, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1FUl$$20
 $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1FUl$$20:
-	.incbin "baserom.dol", 0x453B5C, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1FUl
 $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1FUl:
-	.incbin "baserom.dol", 0x453B90, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2GetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20
 $$2STRING$$2GetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20:
-	.incbin "baserom.dol", 0x453BA4, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1CFv
 $$2STRING$$2GetDrawFlag__Q34nw4r2ut17TextWriterBase$$0w$$1CFv:
-	.incbin "baserom.dol", 0x453BD8, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2GetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20
 $$2STRING$$2GetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20:
-	.incbin "baserom.dol", 0x453BEC, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1CFv
 $$2STRING$$2GetCharSpace__Q34nw4r2ut17TextWriterBase$$0w$$1CFv:
-	.incbin "baserom.dol", 0x453C20, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2GetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20
 $$2STRING$$2GetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1CFv$$20:
-	.incbin "baserom.dol", 0x453C34, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1CFv
 $$2STRING$$2GetWidthLimit__Q34nw4r2ut17TextWriterBase$$0w$$1CFv:
-	.incbin "baserom.dol", 0x453C68, 0x14
+	.asciz "TextWriterBase.h"
+	.balign 4
 .global $$2STRING$$2GetFont__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetFont__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453C7C, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetFont__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetFont__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453CB0, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetTextColor__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetTextColor__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453CC0, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetTextColor__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetTextColor__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453CF4, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2SetScale__Q34nw4r2ut10CharWriterFff$$20
 $$2STRING$$2SetScale__Q34nw4r2ut10CharWriterFff$$20:
-	.incbin "baserom.dol", 0x453D04, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2SetScale__Q34nw4r2ut10CharWriterFff
 $$2STRING$$2SetScale__Q34nw4r2ut10CharWriterFff:
-	.incbin "baserom.dol", 0x453D38, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetScaleH__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetScaleH__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453D48, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetScaleH__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetScaleH__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453D7C, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetScaleV__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetScaleV__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453D8C, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetScaleV__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetScaleV__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453DC0, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2MoveCursorX__Q34nw4r2ut10CharWriterFf$$20
 $$2STRING$$2MoveCursorX__Q34nw4r2ut10CharWriterFf$$20:
-	.incbin "baserom.dol", 0x453DD0, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2MoveCursorX__Q34nw4r2ut10CharWriterFf
 $$2STRING$$2MoveCursorX__Q34nw4r2ut10CharWriterFf:
-	.incbin "baserom.dol", 0x453E04, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetCursorX__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetCursorX__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453E14, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetCursorX__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetCursorX__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453E48, 0x10
+	.asciz "CharWriter.h"
+	.balign 4
 .global $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv$$20
 $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv$$20:
-	.incbin "baserom.dol", 0x453E58, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv
 $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv:
-	.incbin "baserom.dol", 0x453E8C, 0x14
+	.asciz "CharWriter.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250358
 $$250358:
-	.incbin "baserom.dol", 0x49A4D8, 0x4
+	.4byte 0x3F19999A
 .global $$250359
 $$250359:
-	.incbin "baserom.dol", 0x49A4DC, 0x4
+	.4byte 0xC0400000
 .global $$250360
 $$250360:
-	.incbin "baserom.dol", 0x49A4E0, 0x4
+	.4byte 0
 .global $$250361
 $$250361:
-	.incbin "baserom.dol", 0x49A4E4, 0x4
+	.4byte 0x3F000000
 .global $$250362
 $$250362:
-	.incbin "baserom.dol", 0x49A4E8, 0x4
+	.4byte 0xC1300000
 .global $$250363
 $$250363:
-	.incbin "baserom.dol", 0x49A4EC, 0x4
+	.4byte 0xC0E00000
 .global $$250513
 $$250513:
-	.incbin "baserom.dol", 0x49A4F0, 0x4
+	.4byte 0x7F7FFFFF
 .global $$250652
 $$250652:
-	.incbin "baserom.dol", 0x49A4F4, 0x4
+	.4byte 0x42C80000
 .global $$250656
 $$250656:
-	.incbin "baserom.dol", 0x49A4F8, 0x8
+	.4byte 0x43300000
+	.4byte 0

@@ -24,19 +24,24 @@ lbl_80006BF8:
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2190
 $$2190:
-	.incbin "baserom.dol", 0x4020A0, 0x8
+	.4byte 0x08080000
+	.4byte 0
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2191
 $$2191:
-	.incbin "baserom.dol", 0x402240, 0xC
+	.4byte 0x80006BD0  ;# ptr
+	.4byte 0x00000040
+	.4byte 0x80006740  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2278
 $$2278:
-	.incbin "baserom.dol", 0x402660, 0x10
+	.asciz "std::exception"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std9exception
 __RTTI__Q23std9exception:
-	.incbin "baserom.dol", 0x492800, 0x8
+	.4byte 0x80406560
+	.4byte 0

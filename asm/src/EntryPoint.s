@@ -185,10 +185,12 @@ lbl_80177920:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249240
 $$249240:
-	.incbin "baserom.dol", 0x44EDF8, 0x10
+	.asciz "HBM_RESET"
+	.balign 4
+	.4byte 0
 .global $$249241
 $$249241:
-	.incbin "baserom.dol", 0x44EE08, 0x10
+	.asciz "WIISYSTEM_RESET"
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global isExist___Q33hel6common31PrivateSingleton$$0Q23app6System$$1

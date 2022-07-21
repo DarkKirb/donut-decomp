@@ -12,7 +12,7 @@ __sinit_$$3MintMonitor_cpp:
 /* 80319808 00315648  4B DC 3B D8 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025B4, 0x4
+	.4byte 0x80319804
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q53scn4step7gimmick7monitor25$$2unnamed$$2MintMonitor_cpp$$2

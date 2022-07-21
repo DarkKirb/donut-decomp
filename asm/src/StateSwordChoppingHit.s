@@ -198,24 +198,33 @@ procFixPos__Q53scn4step4hero5sword21StateSwordChoppingHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5sword21StateSwordChoppingHit
 __vt__Q53scn4step4hero5sword21StateSwordChoppingHit:
-	.incbin "baserom.dol", 0x489100, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80387870
+	.4byte 0x80387874
+	.4byte 0x80387960
+	.4byte 0x8035550C
+	.4byte 0x80387A48
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258007
 $$258007:
-	.incbin "baserom.dol", 0x49E088, 0x4
+	.4byte 0xBF800000
 .global $$258008
 $$258008:
-	.incbin "baserom.dol", 0x49E08C, 0x4
+	.4byte 0x3F800000
 .global $$258009
 $$258009:
-	.incbin "baserom.dol", 0x49E090, 0x4
+	.4byte 0x3D4CCCCD
 .global $$258010
 $$258010:
-	.incbin "baserom.dol", 0x49E094, 0x4
+	.4byte 0x3E8CCCCD
 .global $$258011
 $$258011:
-	.incbin "baserom.dol", 0x49E098, 0x4
+	.4byte 0
 .global $$258039
 $$258039:
-	.incbin "baserom.dol", 0x49E09C, 0x4
+	.4byte 0x3A83126F

@@ -384,15 +384,23 @@ lbl_802F309C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy15zankibblecutter11StateCircle
 __vt__Q53scn4step5enemy15zankibblecutter11StateCircle:
-	.incbin "baserom.dol", 0x47AFF8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802F2CDC  ;# ptr
+	.4byte 0x802F2CE0  ;# ptr
+	.4byte 0x802F2CE4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802F2E0C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257063
 $$257063:
-	.incbin "baserom.dol", 0x49D0E8, 0x4
+	.4byte 0xBF800000
 .global $$257064
 $$257064:
-	.incbin "baserom.dol", 0x49D0EC, 0x4
+	.4byte 0x3F800000
 .global $$257094
 $$257094:
-	.incbin "baserom.dol", 0x49D0F0, 0x8
+	.4byte 0
+	.4byte 0

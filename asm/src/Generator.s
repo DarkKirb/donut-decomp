@@ -1128,28 +1128,29 @@ isInRoomGuarder__Q43scn4step4ogen9GeneratorCFRCQ33hel4math7Vector2:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global HALF_HEIGHT__Q43scn4step4ogen9Generator
 HALF_HEIGHT__Q43scn4step4ogen9Generator:
-	.incbin "baserom.dol", 0x49E670, 0x4
+	.4byte 0x40B00000
 .global $$257153
 $$257153:
-	.incbin "baserom.dol", 0x49E674, 0x4
+	.4byte 0x40B00000
 .global $$257154
 $$257154:
-	.incbin "baserom.dol", 0x49E678, 0x4
+	.4byte 0xC0B00000
 .global $$257155
 $$257155:
-	.incbin "baserom.dol", 0x49E67C, 0x4
+	.4byte 0x40000000
 .global $$257156
 $$257156:
-	.incbin "baserom.dol", 0x49E680, 0x4
+	.4byte 0xC0000000
 .global $$257322
 $$257322:
-	.incbin "baserom.dol", 0x49E684, 0x4
+	.4byte 0x3F000000
 .global $$257323
 $$257323:
-	.incbin "baserom.dol", 0x49E688, 0x4
+	.4byte 0
 .global $$257441
 $$257441:
-	.incbin "baserom.dol", 0x49E68C, 0x4
+	.4byte 0x3F800000
 .global $$257448
 $$257448:
-	.incbin "baserom.dol", 0x49E690, 0x8
+	.4byte 0x40400000
+	.4byte 0

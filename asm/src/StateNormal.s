@@ -102,9 +102,17 @@ lbl_803D8B34:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon11StateNormal
 __vt__Q43scn4step6weapon11StateNormal:
-	.incbin "baserom.dol", 0x48FEC0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803D8A40
+	.4byte 0x803D8A9C
+	.4byte 0x803D8AA0
+	.4byte 0x803D895C
+	.4byte 0x803D8B00
+	.4byte 0x803D8964
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256141
 $$256141:
-	.incbin "baserom.dol", 0x49E860, 0x8
+	.4byte 0
+	.4byte 0

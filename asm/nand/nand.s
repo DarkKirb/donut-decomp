@@ -1498,12 +1498,14 @@ lbl_8004927C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$23188
 $$23188:
-	.incbin "baserom.dol", 0x4039A8, 0x48
+	.asciz "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_./"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23665
 $$23665:
-	.incbin "baserom.dol", 0x492A18, 0x4
+	.4byte 0x2F000000
 .global $$23666
 $$23666:
-	.incbin "baserom.dol", 0x492A1C, 0x4
+	.4byte 0x2F257300

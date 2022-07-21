@@ -2041,97 +2041,144 @@ mfReleaseWaitEffect__Q53scn4step7gimmick7shutter7ShutterFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$254624
 $$254624:
-	.incbin "baserom.dol", 0x415C50, 0x14
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
 .global $$254627
 $$254627:
-	.incbin "baserom.dol", 0x415C64, 0x14
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
 .global $$254630
 $$254630:
-	.incbin "baserom.dol", 0x415C78, 0x14
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFFB
 .global $$254633
 $$254633:
-	.incbin "baserom.dol", 0x415C8C, 0x14
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFFB
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2
 SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2:
-	.incbin "baserom.dol", 0x47E520, 0x10
+	.4byte 0x8055A8F0
+	.4byte 0x8055A8F4
+	.4byte 0x8055A8FC
+	.4byte 0x8055A904
 .global $$256118
 $$256118:
-	.incbin "baserom.dol", 0x47E530, 0x18
+	.asciz "step/gimmick/Shutter"
+	.balign 4
 .global $$256218
 $$256218:
-	.incbin "baserom.dol", 0x47E548, 0x20
+	.4byte 0x80323B04
+	.4byte 0x80323B24
+	.4byte 0x80323B44
+	.4byte 0x80323B64
+	.4byte 0x80323B84
+	.4byte 0x80323BA4
+	.4byte 0x80323BC4
+	.4byte 0x80323BE4
 .global __vt__Q53scn4step7gimmick7shutter7Shutter
 __vt__Q53scn4step7gimmick7shutter7Shutter:
-	.incbin "baserom.dol", 0x47E568, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80323894
+	.4byte 0x80323E08
+	.4byte 0x80323E20
+	.4byte 0x80323E38
+	.4byte 0x80323E84
+	.4byte 0x80323EC0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253500
 $$253500:
-	.incbin "baserom.dol", 0x496CD0, 0x4
+	.4byte 0x55700000
 .global $$253501
 $$253501:
-	.incbin "baserom.dol", 0x496CD4, 0x8
+	.asciz "Right"
+	.balign 4
 .global $$253502
 $$253502:
-	.incbin "baserom.dol", 0x496CDC, 0x8
+	.asciz "Left"
+	.balign 4
 .global $$253503
 $$253503:
-	.incbin "baserom.dol", 0x496CE4, 0x8
+	.asciz "Under"
+	.balign 4
 .global $$256074
 $$256074:
-	.incbin "baserom.dol", 0x496CEC, 0x8
+	.asciz "%s%s"
+	.balign 4
 .global $$256119
 $$256119:
-	.incbin "baserom.dol", 0x496CF4, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$256121
 $$256121:
-	.incbin "baserom.dol", 0x496CFC, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$256287
 $$256287:
-	.incbin "baserom.dol", 0x496D04, 0x8
+	.asciz "Open"
+	.balign 4
 .global $$256352
 $$256352:
-	.incbin "baserom.dol", 0x496D0C, 0xC
+	.asciz "Close"
+	.balign 4
+	.4byte 0
 .global $$256570
 $$256570:
-	.incbin "baserom.dol", 0x496D18, 0x8
+	.asciz "EffectL"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256120
 $$256120:
-	.incbin "baserom.dol", 0x49D578, 0x4
+	.4byte 0
 .global $$256191
 $$256191:
-	.incbin "baserom.dol", 0x49D57C, 0x4
+	.4byte 0x40A00000
 .global $$256265
 $$256265:
-	.incbin "baserom.dol", 0x49D580, 0x4
+	.4byte 0x3FC00000
 .global $$256266
 $$256266:
-	.incbin "baserom.dol", 0x49D584, 0x4
+	.4byte 0x40200000
 .global $$256290
 $$256290:
-	.incbin "baserom.dol", 0x49D588, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$256312
 $$256312:
-	.incbin "baserom.dol", 0x49D590, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$256318
 $$256318:
-	.incbin "baserom.dol", 0x49D598, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256495
 $$256495:
-	.incbin "baserom.dol", 0x49D5A0, 0x4
+	.4byte 0x40400000
 .global $$256496
 $$256496:
-	.incbin "baserom.dol", 0x49D5A4, 0x4
+	.4byte 0xBF000000
 .global $$256497
 $$256497:
-	.incbin "baserom.dol", 0x49D5A8, 0x4
+	.4byte 0x3F000000
 .global $$256498
 $$256498:
-	.incbin "baserom.dol", 0x49D5AC, 0x4
+	.4byte 0xC0400000
 .global $$256499
 $$256499:
-	.incbin "baserom.dol", 0x49D5B0, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0

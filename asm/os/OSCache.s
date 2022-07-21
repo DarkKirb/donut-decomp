@@ -497,28 +497,36 @@ lbl_8001CF64:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2909
 $$2909:
-	.incbin "baserom.dol", 0x41E378, 0x18
+	.asciz "Machine check received\n"
 .global $$2910
 $$2910:
-	.incbin "baserom.dol", 0x41E390, 0x20
+	.asciz "HID2 = 0x%x   SRR1 = 0x%x\n"
+	.balign 4
+	.4byte 0
 .global $$2911
 $$2911:
-	.incbin "baserom.dol", 0x41E3B0, 0x30
+	.asciz "Machine check was not DMA/locked cache related\n"
 .global $$2912
 $$2912:
-	.incbin "baserom.dol", 0x41E3E0, 0x3C
+	.asciz "DMAErrorHandler(): An error occurred while processing DMA.\n"
 .global $$2913
 $$2913:
-	.incbin "baserom.dol", 0x41E41C, 0x38
+	.asciz "The following errors have been detected and cleared :\n"
+	.balign 4
 .global $$2914
 $$2914:
-	.incbin "baserom.dol", 0x41E454, 0x40
+	.asciz "\t- Requested a locked cache tag that was already in the cache\n"
+	.balign 4
 .global $$2915
 $$2915:
-	.incbin "baserom.dol", 0x41E494, 0x2C
+	.asciz "\t- DMA attempted to access normal cache\n"
+	.balign 4
 .global $$2916
 $$2916:
-	.incbin "baserom.dol", 0x41E4C0, 0x20
+	.asciz "\t- DMA missed in data cache\n"
+	.balign 4
 .global $$2917
 $$2917:
-	.incbin "baserom.dol", 0x41E4E0, 0x20
+	.asciz "\t- DMA queue overflowed\n"
+	.balign 4
+	.4byte 0

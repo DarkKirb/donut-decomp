@@ -1860,51 +1860,65 @@ btm_report_device_status:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22107
 $$22107:
-	.incbin "baserom.dol", 0x437BD0, 0x30
+	.asciz "BTM_SetAfhChannels first: %d (%d) last: %d (%d)"
 .global $$22174
 $$22174:
-	.incbin "baserom.dol", 0x437C00, 0x14
+	.asciz "btm_reset_complete"
+	.balign 4
 .global $$22250
 $$22250:
-	.incbin "baserom.dol", 0x437C14, 0x2C
+	.asciz "Local supported ACL packet types: 0x%04x"
+	.balign 4
 .global $$22251
 $$22251:
-	.incbin "baserom.dol", 0x437C40, 0x2C
+	.asciz "Local supported SCO packet types: 0x%04x"
+	.balign 4
 .global $$22316
 $$22316:
-	.incbin "baserom.dol", 0x437C6C, 0x40
+	.asciz "BTM: BTM_VendorSpecificCommand: Opcode: 0x%04X, ParamLen: %i."
+	.balign 4
 .global $$22317
 $$22317:
-	.incbin "baserom.dol", 0x437CAC, 0x44
+	.asciz "BTM: Unable to send vendor specific command (controller is busy)."
+	.balign 4
 .global $$22332
 $$22332:
-	.incbin "baserom.dol", 0x437CF0, 0x40
+	.asciz "BTM Event: Received a vendor specific event from controller"
+	.4byte 0
 .global $$22337
 $$22337:
-	.incbin "baserom.dol", 0x437D30, 0x28
+	.asciz "BTM: BTM_WritePageTimeout: Timeout: %d."
 .global $$22341
 $$22341:
-	.incbin "baserom.dol", 0x437D58, 0x30
+	.asciz "BTM: BTM_WriteVoiceSettings: Settings: 0x%04x."
+	.balign 4
 .global $$22351
 $$22351:
-	.incbin "baserom.dol", 0x437D88, 0x18
+	.asciz "BTM: BTM_EnableTestMode"
 .global $$22362
 $$22362:
-	.incbin "baserom.dol", 0x437DA0, 0x2C
+	.asciz "BTM: BTM_ReadStoredLinkKey: Read_All: %s"
+	.balign 4
 .global $$22372
 $$22372:
-	.incbin "baserom.dol", 0x437DCC, 0x2C
+	.asciz "BTM: BTM_WriteStoredLinkKey: num_keys: %d"
+	.balign 4
 .global $$22385
 $$22385:
-	.incbin "baserom.dol", 0x437DF8, 0x38
+	.asciz "BTM: BTM_DeleteStoredLinkKey: delete_all_flag: %s"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22067
 $$22067:
-	.incbin "baserom.dol", 0x492CE0, 0x4
+	.4byte 0x001F0000
 .global $$22363
 $$22363:
-	.incbin "baserom.dol", 0x492CE4, 0x8
+	.asciz "TRUE"
+	.balign 4
 .global $$22364
 $$22364:
-	.incbin "baserom.dol", 0x492CEC, 0xC
+	.asciz "FALSE"
+	.balign 4
+	.4byte 0

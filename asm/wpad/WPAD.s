@@ -12052,79 +12052,210 @@ lbl_8005EC6C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global certn
 certn:
-	.incbin "baserom.dol", 0x403DE8, 0x48
+	.4byte 0x00000010
+	.4byte 0xA3DC5F11
+	.4byte 0x1B2EC797
+	.4byte 0xAC9657B8
+	.4byte 0xCBEB788D
+	.4byte 0x991EF8B8
+	.4byte 0x70CAA54E
+	.4byte 0x071CE896
+	.4byte 0x63252CD0
+	.4byte 0xFD8B6316
+	.4byte 0x9E835020
+	.4byte 0xBF9ED1EF
+	.4byte 0x0F870932
+	.4byte 0xBC88B819
+	.4byte 0xAF2C02E5
+	.4byte 0x657BBFB9
+	.4byte 0x81194F1C
+	.4byte 0
 .global certv
 certv:
-	.incbin "baserom.dol", 0x403E30, 0x48
+	.4byte 0x00000010
+	.4byte 0x99D2071A
+	.4byte 0x8D823A01
+	.4byte 0x4C50A978
+	.4byte 0xD8A5BFFF
+	.4byte 0x4CAF5CE8
+	.4byte 0x13A71CBA
+	.4byte 0x6FCFF21B
+	.4byte 0x8C5399BF
+	.4byte 0x8896982D
+	.4byte 0xCB6EC891
+	.4byte 0x6BA136DA
+	.4byte 0x25B8F224
+	.4byte 0x8F0F42C0
+	.4byte 0x15EA9941
+	.4byte 0xFDD1903E
+	.4byte 0x1AF308B6
+	.4byte 0
 .global $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg1
 $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg1:
-	.incbin "baserom.dol", 0x403E78, 0x30
+	.4byte 0x02000071
+	.4byte 0x01006400
+	.4byte 0xFE020000
+	.4byte 0x71010096
+	.4byte 0x00B40200
+	.4byte 0x00710100
+	.4byte 0xAA006402
+	.4byte 0x00007101
+	.4byte 0x00C80036
+	.4byte 0x07000071
+	.4byte 0x01007200
+	.4byte 0x20000000
 .global $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg2$$20
 $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg2$$20:
-	.incbin "baserom.dol", 0x403EA8, 0x10
+	.4byte 0xFD05B304
+	.4byte 0x63033503
+	.4byte 0x1F030000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21504
 $$21504:
-	.incbin "baserom.dol", 0x434688, 0x48
+	.asciz "<< RVL_SDK - WPAD \trelease build: Aug 23 2010 19:49:06 (0x4302_145) >>"
+	.balign 4
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
-	.incbin "baserom.dol", 0x4346D0, 0x10
+	.4byte 0x80053EA0  ;# ptr
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
 .global $$26806
 $$26806:
-	.incbin "baserom.dol", 0x4346E0, 0x48
+	.4byte 0x80054354  ;# ptr
+	.4byte 0x80054354  ;# ptr
+	.4byte 0x80054354  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x8005438C  ;# ptr
+	.4byte 0x8005436C  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x8005437C  ;# ptr
+	.4byte 0x80054384  ;# ptr
+	.4byte 0x8005439C  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x80054394  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x8005435C  ;# ptr
+	.4byte 0x80054364  ;# ptr
+	.4byte 0x80054374  ;# ptr
 .global $$27538
 $$27538:
-	.incbin "baserom.dol", 0x434728, 0x48
+	.4byte 0x80054734  ;# ptr
+	.4byte 0x80054734  ;# ptr
+	.4byte 0x80054734  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x800550CC  ;# ptr
+	.4byte 0x80054A48  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x80054B48  ;# ptr
+	.4byte 0x80054C84  ;# ptr
+	.4byte 0x800550CC  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x80054CA8  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x800548AC  ;# ptr
+	.4byte 0x800550CC  ;# ptr
+	.4byte 0x80054AC0  ;# ptr
 .global $$28163
 $$28163:
-	.incbin "baserom.dol", 0x434770, 0x14
+	.asciz "Nintendo RVL-WBC"
+	.balign 4
 .global $$28218
 $$28218:
-	.incbin "baserom.dol", 0x434784, 0x14
+	.asciz "Nintendo RVL-CNT"
+	.balign 4
 .global $$28277
 $$28277:
-	.incbin "baserom.dol", 0x434798, 0x34
+	.asciz "WARNING: Overwritten the callback needed by KPAD.\n"
+	.balign 4
 .global $$28278
 $$28278:
-	.incbin "baserom.dol", 0x4347CC, 0x54
+	.asciz "         Please call KPADSetSamplingCallback instead of WPADSetSamplingCallback.\n"
+	.balign 4
 .global $$28284
 $$28284:
-	.incbin "baserom.dol", 0x434820, 0x50
+	.asciz "         Please call KPADSetConnectCallback instead of WPADSetConnectCallback.\n"
 .global $$29104
 $$29104:
-	.incbin "baserom.dol", 0x434870, 0x24
+	.4byte 0x8005C91C  ;# ptr
+	.4byte 0x8005B864  ;# ptr
+	.4byte 0x8005C1B0  ;# ptr
+	.4byte 0x8005C394  ;# ptr
+	.4byte 0x8005C554  ;# ptr
+	.4byte 0x8005C570  ;# ptr
+	.4byte 0x8005C754  ;# ptr
+	.4byte 0x8005C910  ;# ptr
+	.4byte 0x8005C914  ;# ptr
 .global $$29220
 $$29220:
-	.incbin "baserom.dol", 0x434894, 0x54
+	.4byte 0x8005CE38  ;# ptr
+	.4byte 0x8005CE44  ;# ptr
+	.4byte 0x8005CE50  ;# ptr
+	.4byte 0x8005CE5C  ;# ptr
+	.4byte 0x8005CE68  ;# ptr
+	.4byte 0x8005CE74  ;# ptr
+	.4byte 0x8005CE80  ;# ptr
+	.4byte 0x8005CE8C  ;# ptr
+	.4byte 0x8005CE98  ;# ptr
+	.4byte 0x8005CEA4  ;# ptr
+	.4byte 0x8005CEB0  ;# ptr
+	.4byte 0x8005CEBC  ;# ptr
+	.4byte 0x8005CEF8  ;# ptr
+	.4byte 0x8005CF04  ;# ptr
+	.4byte 0x8005CF24  ;# ptr
+	.4byte 0x8005CEC8  ;# ptr
+	.4byte 0x8005CF1C  ;# ptr
+	.4byte 0x8005CF10  ;# ptr
+	.4byte 0x8005CED4  ;# ptr
+	.4byte 0x8005CEE0  ;# ptr
+	.4byte 0x8005CEEC  ;# ptr
 .global $$29559
 $$29559:
-	.incbin "baserom.dol", 0x4348E8, 0x30
+	.4byte 0x8005E01C  ;# ptr
+	.4byte 0x8005E1A0  ;# ptr
+	.4byte 0x8005E3AC  ;# ptr
+	.4byte 0x8005E5F0  ;# ptr
+	.4byte 0x8005E77C  ;# ptr
+	.4byte 0x8005E900  ;# ptr
+	.4byte 0x8005EB74  ;# ptr
+	.4byte 0x8005EB7C  ;# ptr
+	.4byte 0x8005EBCC  ;# ptr
+	.4byte 0x8005EBD4  ;# ptr
+	.4byte 0x8005EC00  ;# ptr
+	.4byte 0x8005EC08  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __WPADVersion
 __WPADVersion:
-	.incbin "baserom.dol", 0x492BC0, 0x4
+	.4byte 0x80438588
 .global _wpadOnReconnect
 _wpadOnReconnect:
-	.incbin "baserom.dol", 0x492BC4, 0x4
+	.4byte 0xFFFFFFFF
 .global _wpad_diff_count_threshold
 _wpad_diff_count_threshold:
-	.incbin "baserom.dol", 0x492BC8, 0x8
+	.4byte 0x00060004
+	.4byte 0x0006000C
 .global _wpad_hyst_count_threshold
 _wpad_hyst_count_threshold:
-	.incbin "baserom.dol", 0x492BD0, 0x8
+	.4byte 0x001E001E
+	.4byte 0x001E001E
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22723
 $$22723:
-	.incbin "baserom.dol", 0x499288, 0x4
+	.4byte 0x0000D007
 .global lbl_8055E74C
 lbl_8055E74C:
-	.incbin "baserom.dol", 0x49928C, 0x2
+	.byte 0x40, 0x0C
 .global lbl_8055E74E
 lbl_8055E74E:
-	.incbin "baserom.dol", 0x49928E, 0x2
+	.byte 0x0E, 0x00
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global _wpadManageAlarm

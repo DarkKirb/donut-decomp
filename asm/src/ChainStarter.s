@@ -92,4 +92,11 @@ onSwitchOn__Q53scn4step7gimmick12chainstarter12ChainStarterFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick12chainstarter12ChainStarter
 __vt__Q53scn4step7gimmick12chainstarter12ChainStarter:
-	.incbin "baserom.dol", 0x47C5C0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803057FC
+	.4byte 0x80305858
+	.4byte 0x802F7CFC
+	.4byte 0x802F7CF8
+	.4byte 0x802F7CF4
+	.4byte 0x802F7CF0

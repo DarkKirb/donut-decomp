@@ -152,9 +152,19 @@ procFixPos__Q53scn4step4hero6common15StateSlidingHitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common15StateSlidingHit
 __vt__Q53scn4step4hero6common15StateSlidingHit:
-	.incbin "baserom.dol", 0x4881C0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036AAB8
+	.4byte 0x8036AABC
+	.4byte 0x8036AB64
+	.4byte 0x8035550C
+	.4byte 0x8036ABD0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255746
 $$255746:
-	.incbin "baserom.dol", 0x49DC30, 0x8
+	.4byte 0
+	.4byte 0

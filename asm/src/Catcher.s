@@ -545,24 +545,31 @@ setIsOwnerHero__Q43scn4step4item7CatcherFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x48DDB8, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x48DDDC, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x48DDE8, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x48DE0C, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x48DE18, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x48DE3C, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251966
 $$251966:
-	.incbin "baserom.dol", 0x49E4E8, 0x8
+	.4byte 0
+	.4byte 0

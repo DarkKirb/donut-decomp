@@ -363,30 +363,37 @@ procObjCollReact__Q53scn4step5enemy6damage19StateParasolReleaseFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage19StateParasolRelease
 __vt__Q53scn4step5enemy6damage19StateParasolRelease:
-	.incbin "baserom.dol", 0x471E60, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802AB7E0  ;# ptr
+	.4byte 0x802AB898  ;# ptr
+	.4byte 0x802AB964  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802AB9E4  ;# ptr
+	.4byte 0x802ABB34  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257646
 $$257646:
-	.incbin "baserom.dol", 0x49C250, 0x4
+	.4byte 0
 .global $$257647
 $$257647:
-	.incbin "baserom.dol", 0x49C254, 0x4
+	.4byte 0x3F800000
 .global $$257686
 $$257686:
-	.incbin "baserom.dol", 0x49C258, 0x4
+	.4byte 0x41A00000
 .global $$257687
 $$257687:
-	.incbin "baserom.dol", 0x49C25C, 0x4
+	.4byte 0x43B40000
 .global $$257690
 $$257690:
-	.incbin "baserom.dol", 0x49C260, 0x4
+	.4byte 0x38D1B717
 .global $$257691
 $$257691:
-	.incbin "baserom.dol", 0x49C264, 0x4
+	.4byte 0x3E4CCCCD
 .global $$257692
 $$257692:
-	.incbin "baserom.dol", 0x49C268, 0x4
+	.4byte 0x3C23D70A
 .global $$257693
 $$257693:
-	.incbin "baserom.dol", 0x49C26C, 0x4
+	.4byte 0x3BA3D70A

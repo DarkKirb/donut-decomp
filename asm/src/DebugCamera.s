@@ -463,10 +463,11 @@ getBGFovy__Q43scn4step6camera11DebugCameraCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253482
 $$253482:
-	.incbin "baserom.dol", 0x49B640, 0x4
+	.4byte 0
 .global $$253734
 $$253734:
-	.incbin "baserom.dol", 0x49B644, 0x4
+	.4byte 0x3C8EFA35
 .global $$253831
 $$253831:
-	.incbin "baserom.dol", 0x49B648, 0x8
+	.4byte 0x3FB40000
+	.4byte 0

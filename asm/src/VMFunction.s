@@ -108,10 +108,21 @@ lbl_801CCF78:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250536
 $$250536:
-	.incbin "baserom.dol", 0x458BD0, 0x1C
+	.asciz "' (ex. 'void Assert(int)')"
+	.balign 4
 .global $$250537
 $$250537:
-	.incbin "baserom.dol", 0x458BEC, 0x18
+	.asciz "Not Found ReturnType '"
+	.balign 4
 .global $$250538
 $$250538:
-	.incbin "baserom.dol", 0x458C04, 0x64
+	.asciz "VMFunction::parseName fail"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "TmpSymbol.hpp"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "TmpSymbol.hpp"
+	.balign 4

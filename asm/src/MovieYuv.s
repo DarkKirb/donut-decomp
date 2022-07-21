@@ -621,24 +621,31 @@ getImage__Q23mov8MovieYuvFPv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mov8MovieYuv
 __vt__Q23mov8MovieYuv:
-	.incbin "baserom.dol", 0x4591E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x801D0670  ;# ptr
+	.4byte 0x801D0DEC  ;# ptr
+	.4byte 0x801D0DB8  ;# ptr
+	.4byte 0x801D0AC0  ;# ptr
+	.4byte 0x801D0B7C  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249275
 $$249275:
-	.incbin "baserom.dol", 0x49A780, 0x4
+	.4byte 0xFFA60000
 .global lbl_8055FC44
 lbl_8055FC44:
-	.incbin "baserom.dol", 0x49A784, 0x4
+	.4byte 0xFF8E0087
 .global $$249278
 $$249278:
-	.incbin "baserom.dol", 0x49A788, 0x4
+	.4byte 0x0000E258
 .global $$249281
 $$249281:
-	.incbin "baserom.dol", 0x49A78C, 0x4
+	.4byte 0xB30000B6
 .global $$249284
 $$249284:
-	.incbin "baserom.dol", 0x49A790, 0x4
+	.4byte 0xFF00FF40
 .global $$249305
 $$249305:
-	.incbin "baserom.dol", 0x49A794, 0x4
+	.4byte 0

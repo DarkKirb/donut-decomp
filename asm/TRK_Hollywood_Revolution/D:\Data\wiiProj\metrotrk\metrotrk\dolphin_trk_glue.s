@@ -275,12 +275,26 @@ InitializeProgramEndTrap:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x41DC68, 0xE8
+	.asciz "Devkit set to : %ld\n"
+	.byte 0x4D, 0x65, 0x74
+	.asciz "roTRK : Sizeof Reply - %ld bytes\n"
+	.byte 0x4D, 0x65
+	.asciz "troTRK : Set to NDEV hardware\n"
+	.byte 0x4D
+	.asciz "etroTRK : Set to UNKNOWN hardware. (%ld)\n"
+	.byte 0x4D, 0x65
+	.asciz "troTRK : Invalid hardware ID passed from OS\n"
+	.byte 0x4D, 0x65, 0x74
+	.asciz "roTRK : Defaulting to GDEV Hardware\n"
+	.byte 0x25, 0x73, 0x0A
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global EndofProgramInstruction$631
 EndofProgramInstruction$631:
-	.incbin "baserom.dol", 0x499000, 0x8
+	.4byte 0x00454E44
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global gDBCommTable

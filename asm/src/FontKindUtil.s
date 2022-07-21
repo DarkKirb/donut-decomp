@@ -62,41 +62,67 @@ Name__Q24font12FontKindUtilFQ24font8FontKind:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2
 T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2:
-	.incbin "baserom.dol", 0x410628, 0x48
+	.4byte 0x80556D28
+	.4byte 0x804537F0
+	.4byte 0x80556D28
+	.4byte 0x80453800
+	.4byte 0x80556D28
+	.4byte 0x80453814
+	.4byte 0x80556D28
+	.4byte 0x80453828
+	.4byte 0x80556D28
+	.4byte 0x80453840
+	.4byte 0x80556D28
+	.4byte 0x8045384C
+	.4byte 0x80556D28
+	.4byte 0x80453860
+	.4byte 0x80556D28
+	.4byte 0x80453874
+	.4byte 0x80556D28
+	.4byte 0x80453888
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248724
 $$248724:
-	.incbin "baserom.dol", 0x44F8F0, 0x10
+	.asciz "CommonEB.brfnt"
+	.balign 4
 .global $$248725
 $$248725:
-	.incbin "baserom.dol", 0x44F900, 0x14
+	.asciz "CommonEBFixed.brfnt"
 .global $$248726
 $$248726:
-	.incbin "baserom.dol", 0x44F914, 0x14
+	.asciz "CommonEBOL.brfnt"
+	.balign 4
 .global $$248727
 $$248727:
-	.incbin "baserom.dol", 0x44F928, 0x18
+	.asciz "CommonEBOLFixed.brfnt"
+	.balign 4
 .global $$248728
 $$248728:
-	.incbin "baserom.dol", 0x44F940, 0xC
+	.asciz "Skip.brfnt"
+	.balign 4
 .global $$248729
 $$248729:
-	.incbin "baserom.dol", 0x44F94C, 0x14
+	.asciz "SkipOutline.brfnt"
+	.balign 4
 .global $$248730
 $$248730:
-	.incbin "baserom.dol", 0x44F960, 0x14
+	.asciz "ExternalChar.brfnt"
+	.balign 4
 .global $$248731
 $$248731:
-	.incbin "baserom.dol", 0x44F974, 0x14
+	.asciz "StaffCredits.brfnt"
+	.balign 4
 .global $$248732
 $$248732:
-	.incbin "baserom.dol", 0x44F988, 0xC
+	.asciz "Arare.brfnt"
 .global $$248861
 $$248861:
-	.incbin "baserom.dol", 0x44F994, 0xC
+	.asciz "font/%s%s"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248723
 $$248723:
-	.incbin "baserom.dol", 0x493108, 0x8
+	.4byte 0x6A702F00
+	.4byte 0

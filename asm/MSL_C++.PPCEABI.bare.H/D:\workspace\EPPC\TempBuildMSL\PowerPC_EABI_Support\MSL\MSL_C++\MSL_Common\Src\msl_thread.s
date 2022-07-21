@@ -88,15 +88,26 @@ __dt__Q43std3tr16detail20function_base$$0PFv_v$$1Fv:
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$28323
 $$28323:
-	.incbin "baserom.dol", 0x40221C, 0x8
+	.4byte 0x08080000
+	.4byte 0
 .global $$28430
 $$28430:
-	.incbin "baserom.dol", 0x402224, 0x1C
+	.4byte 0x10080000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$28324
 $$28324:
-	.incbin "baserom.dol", 0x40230C, 0xC
+	.4byte 0x80014F18  ;# ptr
+	.4byte 0x00000078
+	.4byte 0x800068BC  ;# ptr
 .global $$28431
 $$28431:
-	.incbin "baserom.dol", 0x402318, 0xC
+	.4byte 0x80014F90  ;# ptr
+	.4byte 0x000000A0
+	.4byte 0x800068C4  ;# ptr

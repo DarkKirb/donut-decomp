@@ -301,19 +301,21 @@ lbl_8026DAD4:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256037
 $$256037:
-	.incbin "baserom.dol", 0x49B778, 0x8
+	.4byte 0
+	.4byte 0
 .global $$256041
 $$256041:
-	.incbin "baserom.dol", 0x49B780, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$256053
 $$256053:
-	.incbin "baserom.dol", 0x49B788, 0x4
+	.4byte 0x3F000000
 .global $$256054
 $$256054:
-	.incbin "baserom.dol", 0x49B78C, 0x4
+	.4byte 0xBF000000
 .global $$256055
 $$256055:
-	.incbin "baserom.dol", 0x49B790, 0x4
+	.4byte 0x40400000
 .global $$256056
 $$256056:
-	.incbin "baserom.dol", 0x49B794, 0x4
+	.4byte 0xC0400000

@@ -57,4 +57,13 @@ procFixPos__Q53scn4step4hero4whip15StateWhipAttackFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero4whip15StateWhipAttack
 __vt__Q53scn4step4hero4whip15StateWhipAttack:
-	.incbin "baserom.dol", 0x489490, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8038A0A4
+	.4byte 0x8038A0A8
+	.4byte 0x8038A0AC
+	.4byte 0x8035550C
+	.4byte 0x8038A0D0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

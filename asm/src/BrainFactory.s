@@ -2203,384 +2203,1339 @@ ScriptPath__Q43scn4step5enemy12BrainFactoryFRQ43scn4step5enemy5Enemy:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SCRIPT_PATHS__Q43scn4step5enemy26$$2unnamed$$2BrainFactory_cpp$$2
 T_SCRIPT_PATHS__Q43scn4step5enemy26$$2unnamed$$2BrainFactory_cpp$$2:
-	.incbin "baserom.dol", 0x413DD8, 0x6A8
+	.4byte 0x80470C1C
+	.4byte 0x80470C34
+	.4byte 0x80470C54
+	.4byte 0x80470C54
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C90
+	.4byte 0x80470CA8
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470CC0
+	.4byte 0x80470C74
+	.4byte 0x80470CDC
+	.4byte 0x80470CFC
+	.4byte 0x80470D18
+	.4byte 0x80470D34
+	.4byte 0x80470D4C
+	.4byte 0x80470D64
+	.4byte 0x80470D7C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470D98
+	.4byte 0x80470DC0
+	.4byte 0x80470DE0
+	.4byte 0x80470E04
+	.4byte 0x80470E1C
+	.4byte 0x80470E38
+	.4byte 0x80470E50
+	.4byte 0x80470C74
+	.4byte 0x80470E68
+	.4byte 0x80470C74
+	.4byte 0x80470E80
+	.4byte 0x80470C74
+	.4byte 0x80470E98
+	.4byte 0x80470EB4
+	.4byte 0x80470ED0
+	.4byte 0x80470EF0
+	.4byte 0x80470F10
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470F2C
+	.4byte 0x80470F44
+	.4byte 0x80470F5C
+	.4byte 0x80470F7C
+	.4byte 0x80470F98
+	.4byte 0x80470F98
+	.4byte 0x80470F98
+	.4byte 0x80470FB0
+	.4byte 0x80470FCC
+	.4byte 0x80470FEC
+	.4byte 0x80470FCC
+	.4byte 0x8047100C
+	.4byte 0x80471028
+	.4byte 0x80471040
+	.4byte 0x8047105C
+	.4byte 0x80471078
+	.4byte 0x80471094
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804710B4
+	.4byte 0x804710D0
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804710E8
+	.4byte 0x80471104
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471124
+	.4byte 0x80471144
+	.4byte 0x80471168
+	.4byte 0x8047118C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804711B0
+	.4byte 0x804711D4
+	.4byte 0x804711F8
+	.4byte 0x80470C74
+	.4byte 0x8047121C
+	.4byte 0x8047121C
+	.4byte 0x80470C74
+	.4byte 0x8047123C
+	.4byte 0x80471258
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471270
+	.4byte 0x8047128C
+	.4byte 0x804712AC
+	.4byte 0x804712C4
+	.4byte 0x804712DC
+	.4byte 0x804712F4
+	.4byte 0x80471310
+	.4byte 0x8047132C
+	.4byte 0x8047134C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471368
+	.4byte 0x80471380
+	.4byte 0x80471398
+	.4byte 0x804713B0
+	.4byte 0x804713C8
+	.4byte 0x804713E0
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804713F8
+	.4byte 0x804713F8
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471410
+	.4byte 0x8047142C
+	.4byte 0x80471448
+	.4byte 0x80471464
+	.4byte 0x80471480
+	.4byte 0x80471498
+	.4byte 0x804714B0
+	.4byte 0x804714C8
+	.4byte 0x804714E8
+	.4byte 0x80471500
+	.4byte 0x80471518
+	.4byte 0x80471040
+	.4byte 0x80471124
+	.4byte 0x804710E8
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80471530
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x8047154C
+	.4byte 0x80471564
+	.4byte 0x80471584
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470D64
+	.4byte 0x8047159C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471040
+	.4byte 0x80471124
+	.4byte 0x804710E8
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471104
+	.4byte 0x80471144
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471368
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804715C0
+	.4byte 0x80470C74
+	.4byte 0x804715E0
+	.4byte 0x80471600
+	.4byte 0x80471620
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470D64
+	.4byte 0x80470C74
+	.4byte 0x80470C54
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C54
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C1C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471644
+	.4byte 0x80471644
+	.4byte 0x80471644
+	.4byte 0x80471664
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C54
+	.4byte 0x80470C54
+	.4byte 0x80471688
+	.4byte 0x80470C74
+	.4byte 0x804716A0
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804716C0
+	.4byte 0x804716E0
+	.4byte 0x80471704
+	.4byte 0x80471724
+	.4byte 0x80471744
+	.4byte 0x80471768
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x8047178C
+	.4byte 0x804717B0
+	.4byte 0x804717D4
+	.4byte 0x804717F4
+	.4byte 0x80471818
+	.4byte 0x80471838
+	.4byte 0x80471854
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471878
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80471898
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804718B8
+	.4byte 0x804718D8
+	.4byte 0x804718F4
+	.4byte 0x80471910
+	.4byte 0x8047192C
+	.4byte 0x8047194C
+	.4byte 0x80471968
+	.4byte 0x8047198C
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804719B0
+	.4byte 0x804719CC
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x80470C74
+	.4byte 0x804719E8
+	.4byte 0x80471A10
+	.4byte 0x80471A38
+	.4byte 0x80471A60
+	.4byte 0x80470C74
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257656
 $$257656:
-	.incbin "baserom.dol", 0x46C678, 0x6A4
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F16C  ;# ptr
+	.4byte 0x8027F1A8  ;# ptr
+	.4byte 0x8027F130  ;# ptr
+	.4byte 0x8027F1E4  ;# ptr
+	.4byte 0x8027F220  ;# ptr
+	.4byte 0x8027F25C  ;# ptr
+	.4byte 0x8027F298  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FEBC  ;# ptr
+	.4byte 0x8027FFAC  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FC64  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FCA0  ;# ptr
+	.4byte 0x8027F8E0  ;# ptr
+	.4byte 0x8027F91C  ;# ptr
+	.4byte 0x8027FD90  ;# ptr
+	.4byte 0x8027FDCC  ;# ptr
+	.4byte 0x8027F958  ;# ptr
+	.4byte 0x8027F868  ;# ptr
+	.4byte 0x8027F868  ;# ptr
+	.4byte 0x8027FA84  ;# ptr
+	.4byte 0x8027FAC0  ;# ptr
+	.4byte 0x8027FAFC  ;# ptr
+	.4byte 0x8027F46C  ;# ptr
+	.4byte 0x8027F46C  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F4A8  ;# ptr
+	.4byte 0x8027F82C  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F82C  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FD18  ;# ptr
+	.4byte 0x8027FD18  ;# ptr
+	.4byte 0x8027FD54  ;# ptr
+	.4byte 0x8027FD54  ;# ptr
+	.4byte 0x8027FCDC  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F994  ;# ptr
+	.4byte 0x8027F9D0  ;# ptr
+	.4byte 0x8027FB38  ;# ptr
+	.4byte 0x8027F73C  ;# ptr
+	.4byte 0x8027F55C  ;# ptr
+	.4byte 0x8027F55C  ;# ptr
+	.4byte 0x8027F55C  ;# ptr
+	.4byte 0x8027FBEC  ;# ptr
+	.4byte 0x8027FBEC  ;# ptr
+	.4byte 0x8027FBEC  ;# ptr
+	.4byte 0x8027FBEC  ;# ptr
+	.4byte 0x8027FB74  ;# ptr
+	.4byte 0x8027FBB0  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027FA0C  ;# ptr
+	.4byte 0x8027FA48  ;# ptr
+	.4byte 0x8027FA48  ;# ptr
+	.4byte 0x8027F520  ;# ptr
+	.4byte 0x8027F4E4  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FE80  ;# ptr
+	.4byte 0x8027F778  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027F32C  ;# ptr
+	.4byte 0x8027F310  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027FEF8  ;# ptr
+	.4byte 0x8027FF34  ;# ptr
+	.4byte 0x8027F3A0  ;# ptr
+	.4byte 0x8027F364  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F6C4  ;# ptr
+	.4byte 0x8027F6C4  ;# ptr
+	.4byte 0x8027F700  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F598  ;# ptr
+	.4byte 0x8027F598  ;# ptr
+	.4byte 0x8027FF70  ;# ptr
+	.4byte 0x8027F5D4  ;# ptr
+	.4byte 0x8027F610  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F64C  ;# ptr
+	.4byte 0x8027F688  ;# ptr
+	.4byte 0x8027FFE8  ;# ptr
+	.4byte 0x80280024  ;# ptr
+	.4byte 0x80280060  ;# ptr
+	.4byte 0x8028009C  ;# ptr
+	.4byte 0x802800D8  ;# ptr
+	.4byte 0x80280114  ;# ptr
+	.4byte 0x80280150  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8028018C  ;# ptr
+	.4byte 0x802806F0  ;# ptr
+	.4byte 0x8028072C  ;# ptr
+	.4byte 0x80280768  ;# ptr
+	.4byte 0x802801C8  ;# ptr
+	.4byte 0x80280204  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280240  ;# ptr
+	.4byte 0x8028027C  ;# ptr
+	.4byte 0x802802B8  ;# ptr
+	.4byte 0x802802F4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280330  ;# ptr
+	.4byte 0x80280330  ;# ptr
+	.4byte 0x8028036C  ;# ptr
+	.4byte 0x802803A8  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x802803E4  ;# ptr
+	.4byte 0x80280420  ;# ptr
+	.4byte 0x8028045C  ;# ptr
+	.4byte 0x802807A4  ;# ptr
+	.4byte 0x802807A4  ;# ptr
+	.4byte 0x802807A4  ;# ptr
+	.4byte 0x802807E0  ;# ptr
+	.4byte 0x8028081C  ;# ptr
+	.4byte 0x80280858  ;# ptr
+	.4byte 0x80280858  ;# ptr
+	.4byte 0x80280858  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027FC28  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280894  ;# ptr
+	.4byte 0x802808D0  ;# ptr
+	.4byte 0x8028090C  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x802804D4  ;# ptr
+	.4byte 0x802804D4  ;# ptr
+	.4byte 0x802804D4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280510  ;# ptr
+	.4byte 0x80280510  ;# ptr
+	.4byte 0x80280510  ;# ptr
+	.4byte 0x80280510  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FE08  ;# ptr
+	.4byte 0x8027FE44  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280588  ;# ptr
+	.4byte 0x80280588  ;# ptr
+	.4byte 0x802805C4  ;# ptr
+	.4byte 0x802805C4  ;# ptr
+	.4byte 0x8028054C  ;# ptr
+	.4byte 0x80280600  ;# ptr
+	.4byte 0x80280600  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280240  ;# ptr
+	.4byte 0x80280330  ;# ptr
+	.4byte 0x80280330  ;# ptr
+	.4byte 0x8028036C  ;# ptr
+	.4byte 0x802803A8  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027F434  ;# ptr
+	.4byte 0x8027F418  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8028018C  ;# ptr
+	.4byte 0x8027F450  ;# ptr
+	.4byte 0x8027F348  ;# ptr
+	.4byte 0x8027F3DC  ;# ptr
+	.4byte 0x80280678  ;# ptr
+	.4byte 0x8028063C  ;# ptr
+	.4byte 0x8027FCA0  ;# ptr
+	.4byte 0x8027FCA0  ;# ptr
+	.4byte 0x8027FCA0  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x802806B4  ;# ptr
+	.4byte 0x8027F8A4  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027FE08  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8027F1A8  ;# ptr
+	.4byte 0x8028063C  ;# ptr
+	.4byte 0x8028063C  ;# ptr
+	.4byte 0x8027F1E4  ;# ptr
+	.4byte 0x8027F1E4  ;# ptr
+	.4byte 0x80280240  ;# ptr
+	.4byte 0x8027F1A8  ;# ptr
+	.4byte 0x8027FF70  ;# ptr
+	.4byte 0x8027F4A8  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x8028063C  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x80280498  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x8027F2D4  ;# ptr
+	.4byte 0x8027F7B4  ;# ptr
+	.4byte 0x8027F7F0  ;# ptr
+	.4byte 0x80280984  ;# ptr
+	.4byte 0x802809C0  ;# ptr
+	.4byte 0x802809FC  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280948  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280A38  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280A74  ;# ptr
+	.4byte 0x80280AB0  ;# ptr
+	.4byte 0x80280AEC  ;# ptr
+	.4byte 0x80280B28  ;# ptr
+	.4byte 0x80280B64  ;# ptr
+	.4byte 0x80280BA0  ;# ptr
+	.4byte 0x80280BDC  ;# ptr
+	.4byte 0x80280C18  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280C54  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280C90  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280F60  ;# ptr
+	.4byte 0x80280CCC  ;# ptr
+	.4byte 0x80280D08  ;# ptr
+	.4byte 0x80280D44  ;# ptr
+	.4byte 0x80280D80  ;# ptr
+	.4byte 0x80280DBC  ;# ptr
+	.4byte 0x80280DF8  ;# ptr
+	.4byte 0x80280E34  ;# ptr
+	.4byte 0x80280E70  ;# ptr
+	.4byte 0x80280EAC  ;# ptr
+	.4byte 0x80280EE8  ;# ptr
+	.4byte 0x80280F24  ;# ptr
 .global $$253027
 $$253027:
-	.incbin "baserom.dol", 0x46CD1C, 0x18
+	.asciz "Common.Brain.Wait.Exec"
+	.balign 4
 .global $$253028
 $$253028:
-	.incbin "baserom.dol", 0x46CD34, 0x20
+	.asciz "Common.Brain.WalkStraight.Exec"
+	.balign 4
 .global $$253029
 $$253029:
-	.incbin "baserom.dol", 0x46CD54, 0x20
+	.asciz "Common.Brain.WalkAround.Exec"
+	.balign 4
 .global $$253030
 $$253030:
-	.incbin "baserom.dol", 0x46CD74, 0x1C
+	.asciz "Common.Brain.DoNothing.Exec"
 .global $$253031
 $$253031:
-	.incbin "baserom.dol", 0x46CD90, 0x18
+	.asciz "Cappy.Brain.Attack.Exec"
 .global $$253032
 $$253032:
-	.incbin "baserom.dol", 0x46CDA8, 0x18
+	.asciz "Como.Brain.Dive.Exec"
+	.balign 4
 .global $$253033
 $$253033:
-	.incbin "baserom.dol", 0x46CDC0, 0x1C
+	.asciz "Whippy.Brain.Attack.Exec"
+	.balign 4
 .global $$253034
 $$253034:
-	.incbin "baserom.dol", 0x46CDDC, 0x20
+	.asciz "BladeKnight.Brain.Attack.Exec"
+	.balign 4
 .global $$253035
 $$253035:
-	.incbin "baserom.dol", 0x46CDFC, 0x1C
+	.asciz "SirKibble.Brain.Attack.Exec"
 .global $$253036
 $$253036:
-	.incbin "baserom.dol", 0x46CE18, 0x1C
+	.asciz "HotHead.Brain.Attack.Exec"
+	.balign 4
 .global $$253037
 $$253037:
-	.incbin "baserom.dol", 0x46CE34, 0x18
+	.asciz "Bouncy.Brain.Wait.Exec"
+	.balign 4
 .global $$253038
 $$253038:
-	.incbin "baserom.dol", 0x46CE4C, 0x18
+	.asciz "Bouncy.Brain.Move.Exec"
+	.balign 4
 .global $$253039
 $$253039:
-	.incbin "baserom.dol", 0x46CE64, 0x18
+	.asciz "Shotzo.Brain.Fix.Exec"
+	.balign 4
 .global $$253040
 $$253040:
-	.incbin "baserom.dol", 0x46CE7C, 0x1C
+	.asciz "Shotzo.Brain.Pursuit.Exec"
+	.balign 4
 .global $$253041
 $$253041:
-	.incbin "baserom.dol", 0x46CE98, 0x28
+	.asciz "WaddleDoo.Brain.WalkStraight.Exec"
+	.balign 4
+	.4byte 0
 .global $$253042
 $$253042:
-	.incbin "baserom.dol", 0x46CEC0, 0x20
+	.asciz "WaddleDoo.Brain.WalkAround.Exec"
 .global $$253043
 $$253043:
-	.incbin "baserom.dol", 0x46CEE0, 0x24
+	.asciz "WaddleDoo.Brain.JumpOrAttack.Exec"
+	.balign 4
 .global $$253044
 $$253044:
-	.incbin "baserom.dol", 0x46CF04, 0x18
+	.asciz "Leafan.Brain.Jump.Exec"
+	.balign 4
 .global $$253045
 $$253045:
-	.incbin "baserom.dol", 0x46CF1C, 0x1C
+	.asciz "Leafan.Brain.Attack.Exec"
+	.balign 4
 .global $$253046
 $$253046:
-	.incbin "baserom.dol", 0x46CF38, 0x18
+	.asciz "Sparky.Brain.Wait.Exec"
+	.balign 4
 .global $$253047
 $$253047:
-	.incbin "baserom.dol", 0x46CF50, 0x18
+	.asciz "Sparky.Brain.Move.Exec"
+	.balign 4
 .global $$253048
 $$253048:
-	.incbin "baserom.dol", 0x46CF68, 0x18
+	.asciz "Nruff.Brain.Move.Exec"
+	.balign 4
 .global $$253049
 $$253049:
-	.incbin "baserom.dol", 0x46CF80, 0x18
+	.asciz "Nruff.Brain.Run.Exec"
+	.balign 4
 .global $$253050
 $$253050:
-	.incbin "baserom.dol", 0x46CF98, 0x1C
+	.asciz "Flamer.Brain.MoveCWR.Exec"
+	.balign 4
 .global $$253051
 $$253051:
-	.incbin "baserom.dol", 0x46CFB4, 0x1C
+	.asciz "Flamer.Brain.MoveCCW.Exec"
+	.balign 4
 .global $$253052
 $$253052:
-	.incbin "baserom.dol", 0x46CFD0, 0x20
+	.asciz "Flamer.Brain.MoveCWRAttack.Exec"
 .global $$253053
 $$253053:
-	.incbin "baserom.dol", 0x46CFF0, 0x20
+	.asciz "Flamer.Brain.MoveCCWAttack.Exec"
 .global $$253054
 $$253054:
-	.incbin "baserom.dol", 0x46D010, 0x1C
+	.asciz "Flamer.Brain.Attack.Exec"
+	.balign 4
 .global $$253055
 $$253055:
-	.incbin "baserom.dol", 0x46D02C, 0x18
+	.asciz "Rocky.Brain.Move.Exec"
+	.balign 4
 .global $$253056
 $$253056:
-	.incbin "baserom.dol", 0x46D044, 0x18
+	.asciz "Rocky.Brain.Walk.Exec"
+	.balign 4
 .global $$253057
 $$253057:
-	.incbin "baserom.dol", 0x46D05C, 0x20
+	.asciz "WaterGalbo.Brain.Attack.Exec"
+	.balign 4
 .global $$253058
 $$253058:
-	.incbin "baserom.dol", 0x46D07C, 0x1C
+	.asciz "Noddy.Brain.Walk.Exec"
+	.balign 4
+	.4byte 0
 .global $$253059
 $$253059:
-	.incbin "baserom.dol", 0x46D098, 0x18
+	.asciz "Cerulean.Brain.Fly.Exec"
 .global $$253060
 $$253060:
-	.incbin "baserom.dol", 0x46D0B0, 0x1C
+	.asciz "Blipper.Brain.MoveUD.Exec"
+	.balign 4
 .global $$253061
 $$253061:
-	.incbin "baserom.dol", 0x46D0CC, 0x20
+	.asciz "Blipper.Brain.MoveLRWall.Exec"
+	.balign 4
 .global $$253062
 $$253062:
-	.incbin "baserom.dol", 0x46D0EC, 0x20
+	.asciz "Blipper.Brain.MoveUDWall.Exec"
+	.balign 4
 .global $$253063
 $$253063:
-	.incbin "baserom.dol", 0x46D10C, 0x1C
+	.asciz "Blipper.Brain.Chase.Exec"
+	.balign 4
 .global $$253064
 $$253064:
-	.incbin "baserom.dol", 0x46D128, 0x18
+	.asciz "Blipper.Brain.Jump.Exec"
 .global $$253065
 $$253065:
-	.incbin "baserom.dol", 0x46D140, 0x1C
+	.asciz "Gigatzo.Brain.Attack.Exec"
+	.balign 4
 .global $$253066
 $$253066:
-	.incbin "baserom.dol", 0x46D15C, 0x1C
+	.asciz "SisterBound.Brain.Wait.Exec"
 .global $$253067
 $$253067:
-	.incbin "baserom.dol", 0x46D178, 0x1C
+	.asciz "SisterBound.Brain.Move.Exec"
 .global $$253068
 $$253068:
-	.incbin "baserom.dol", 0x46D194, 0x20
+	.asciz "SisterBound.Brain.Pursuit.Exec"
+	.balign 4
 .global $$253069
 $$253069:
-	.incbin "baserom.dol", 0x46D1B4, 0x1C
+	.asciz "Mumbies.Brain.Chase.Exec"
+	.balign 4
 .global $$253070
 $$253070:
-	.incbin "baserom.dol", 0x46D1D0, 0x18
+	.asciz "Noddy.Brain.Wait.Exec"
+	.balign 4
 .global $$253071
 $$253071:
-	.incbin "baserom.dol", 0x46D1E8, 0x1C
+	.asciz "Gigatzo.Brain.Pursuit.Exec"
+	.balign 4
 .global $$253072
 $$253072:
-	.incbin "baserom.dol", 0x46D204, 0x20
+	.asciz "Gigatzo.Brain.BackAttack.Exec"
+	.balign 4
 .global $$253073
 $$253073:
-	.incbin "baserom.dol", 0x46D224, 0x20
+	.asciz "Gigatzo.Brain.AttackMore.Exec"
+	.balign 4
 .global $$253074
 $$253074:
-	.incbin "baserom.dol", 0x46D244, 0x24
+	.asciz "Gigatzo.Brain.BackAttackMore.Exec"
+	.balign 4
 .global $$253075
 $$253075:
-	.incbin "baserom.dol", 0x46D268, 0x24
+	.asciz "PoppyBroJr.Brain.WaitAttack.Exec"
+	.balign 4
 .global $$253076
 $$253076:
-	.incbin "baserom.dol", 0x46D28C, 0x24
+	.asciz "PoppyBroJr.Brain.MoveAttack.Exec"
+	.balign 4
 .global $$253077
 $$253077:
-	.incbin "baserom.dol", 0x46D2B0, 0x24
+	.asciz "KnuckleJoe.Brain.WalkStraight.Exec"
+	.balign 4
 .global $$253078
 $$253078:
-	.incbin "baserom.dol", 0x46D2D4, 0x24
+	.asciz "KnuckleJoe.Brain.WalkAround.Exec"
+	.balign 4
 .global $$253079
 $$253079:
-	.incbin "baserom.dol", 0x46D2F8, 0x24
+	.asciz "KnuckleJoe.Brain.WalkStepBack.Exec"
+	.balign 4
 .global $$253080
 $$253080:
-	.incbin "baserom.dol", 0x46D31C, 0x20
+	.asciz "Kabu.Brain.MoveStraight.Exec"
+	.balign 4
 .global $$253081
 $$253081:
-	.incbin "baserom.dol", 0x46D33C, 0x1C
+	.asciz "Kabu.Brain.MoveAround.Exec"
+	.balign 4
 .global $$253082
 $$253082:
-	.incbin "baserom.dol", 0x46D358, 0x18
+	.asciz "Kabu.Brain.Jump.Exec"
+	.balign 4
 .global $$253083
 $$253083:
-	.incbin "baserom.dol", 0x46D370, 0x1C
+	.asciz "Kabu.Brain.Teleport.Exec"
+	.balign 4
 .global $$253084
 $$253084:
-	.incbin "baserom.dol", 0x46D38C, 0x20
+	.asciz "Kabu.Brain.TeleportRepeat.Exec"
+	.balign 4
 .global $$253085
 $$253085:
-	.incbin "baserom.dol", 0x46D3AC, 0x18
+	.asciz "Foley.Brain.Wait.Exec"
+	.balign 4
 .global $$253086
 $$253086:
-	.incbin "baserom.dol", 0x46D3C4, 0x18
+	.asciz "Foley.Brain.Move.Exec"
+	.balign 4
 .global $$253087
 $$253087:
-	.incbin "baserom.dol", 0x46D3DC, 0x18
+	.asciz "Juckle.Brain.Fly.Exec"
+	.balign 4
 .global $$253088
 $$253088:
-	.incbin "baserom.dol", 0x46D3F4, 0x1C
+	.asciz "Juckle.Brain.Follow.Exec"
+	.balign 4
 .global $$253089
 $$253089:
-	.incbin "baserom.dol", 0x46D410, 0x1C
+	.asciz "Owgulf.Brain.FlyWait.Exec"
+	.balign 4
 .global $$253090
 $$253090:
-	.incbin "baserom.dol", 0x46D42C, 0x20
+	.asciz "Owgulf.Brain.FlyStraight.Exec"
+	.balign 4
 .global $$253091
 $$253091:
-	.incbin "baserom.dol", 0x46D44C, 0x1C
+	.asciz "Owgulf.Brain.FlyAround.Exec"
 .global $$253092
 $$253092:
-	.incbin "baserom.dol", 0x46D468, 0x18
+	.asciz "Bowby.Brain.Fly.Exec"
+	.balign 4
 .global $$253093
 $$253093:
-	.incbin "baserom.dol", 0x46D480, 0x18
+	.asciz "Sheld.Brain.Dash.Exec"
+	.balign 4
 .global $$253094
 $$253094:
-	.incbin "baserom.dol", 0x46D498, 0x18
+	.asciz "Sheld.Brain.Chase.Exec"
+	.balign 4
 .global $$253095
 $$253095:
-	.incbin "baserom.dol", 0x46D4B0, 0x18
+	.asciz "Sheld.Brain.Escape.Exec"
 .global $$253096
 $$253096:
-	.incbin "baserom.dol", 0x46D4C8, 0x18
+	.asciz "Chilly.Brain.Wait.Exec"
+	.balign 4
 .global $$253097
 $$253097:
-	.incbin "baserom.dol", 0x46D4E0, 0x18
+	.asciz "Chilly.Brain.Move.Exec"
+	.balign 4
 .global $$253098
 $$253098:
-	.incbin "baserom.dol", 0x46D4F8, 0x18
+	.asciz "Degout.Brain.Chase.Exec"
 .global $$253099
 $$253099:
-	.incbin "baserom.dol", 0x46D510, 0x1C
+	.asciz "Tsukikage.Brain.Ground.Exec"
 .global $$253100
 $$253100:
-	.incbin "baserom.dol", 0x46D52C, 0x1C
+	.asciz "Tsukikage.Brain.Smoke.Exec"
+	.balign 4
 .global $$253101
 $$253101:
-	.incbin "baserom.dol", 0x46D548, 0x1C
+	.asciz "Tsukikage.Brain.Wall.Exec"
+	.balign 4
 .global $$253102
 $$253102:
-	.incbin "baserom.dol", 0x46D564, 0x1C
+	.asciz "Lanzer.Brain.Wait.Exec"
+	.balign 4
+	.4byte 0
 .global $$253103
 $$253103:
-	.incbin "baserom.dol", 0x46D580, 0x18
+	.asciz "Lanzer.Brain.WaitL.Exec"
 .global $$253104
 $$253104:
-	.incbin "baserom.dol", 0x46D598, 0x18
+	.asciz "Lanzer.Brain.WaitR.Exec"
 .global $$253105
 $$253105:
-	.incbin "baserom.dol", 0x46D5B0, 0x18
+	.asciz "Lanzer.Brain.Walk.Exec"
+	.balign 4
 .global $$253106
 $$253106:
-	.incbin "baserom.dol", 0x46D5C8, 0x20
+	.asciz "Lanzer.Brain.WalkAround.Exec"
+	.balign 4
 .global $$253107
 $$253107:
-	.incbin "baserom.dol", 0x46D5E8, 0x18
+	.asciz "Gemra.Brain.Wait.Exec"
+	.balign 4
 .global $$253108
 $$253108:
-	.incbin "baserom.dol", 0x46D600, 0x18
+	.asciz "Gemra.Brain.MoveUD.Exec"
 .global $$253109
 $$253109:
-	.incbin "baserom.dol", 0x46D618, 0x18
+	.asciz "Gemra.Brain.MoveLR.Exec"
 .global $$253110
 $$253110:
-	.incbin "baserom.dol", 0x46D630, 0x1C
+	.asciz "BladeKnight.Brain.Walk.Exec"
 .global $$253111
 $$253111:
-	.incbin "baserom.dol", 0x46D64C, 0x18
+	.asciz "Sodory.Brain.Wait.Exec"
+	.balign 4
 .global $$253112
 $$253112:
-	.incbin "baserom.dol", 0x46D664, 0x20
+	.asciz "Sodory.Brain.WalkAround.Exec"
+	.balign 4
 .global $$253113
 $$253113:
-	.incbin "baserom.dol", 0x46D684, 0x18
+	.asciz "Sodory.Brain.Fly.Exec"
+	.balign 4
 .global $$253114
 $$253114:
-	.incbin "baserom.dol", 0x46D69C, 0x24
+	.asciz "Shotzo.Brain.PursuitCeil.Exec"
+	.balign 4
+	.4byte 0
 .global $$253115
 $$253115:
-	.incbin "baserom.dol", 0x46D6C0, 0x20
+	.asciz "SirKibble.Brain.JumpAttack.Exec"
 .global $$253116
 $$253116:
-	.incbin "baserom.dol", 0x46D6E0, 0x20
+	.asciz "HotHead.Brain.AttackShot.Exec"
+	.balign 4
 .global $$253117
 $$253117:
-	.incbin "baserom.dol", 0x46D700, 0x20
+	.asciz "HotHead.Brain.WalkAttack.Exec"
+	.balign 4
 .global $$253118
 $$253118:
-	.incbin "baserom.dol", 0x46D720, 0x24
+	.asciz "HotHead.Brain.WalkAttackShot.Exec"
+	.balign 4
 .global $$253119
 $$253119:
-	.incbin "baserom.dol", 0x46D744, 0x20
+	.asciz "Gigatzo.Brain.AttackAir.Exec"
+	.balign 4
 .global $$253120
 $$253120:
-	.incbin "baserom.dol", 0x46D764, 0x24
+	.asciz "Gigatzo.Brain.AttackMoreAir.Exec"
+	.balign 4
 .global $$253121
 $$253121:
-	.incbin "baserom.dol", 0x46D788, 0x18
+	.asciz "Como.Brain.Whispy.Exec"
+	.balign 4
 .global $$253122
 $$253122:
-	.incbin "baserom.dol", 0x46D7A0, 0x20
+	.asciz "Scarfy.Brain.Whispy.Exec"
+	.balign 4
+	.4byte 0
 .global $$253123
 $$253123:
-	.incbin "baserom.dol", 0x46D7C0, 0x20
+	.asciz "DubiorJr.Brain.Zigzag.ExecFirst"
 .global $$253124
 $$253124:
-	.incbin "baserom.dol", 0x46D7E0, 0x24
+	.asciz "DubiorJr.Brain.Zigzag.ExecSecond"
+	.balign 4
 .global $$253125
 $$253125:
-	.incbin "baserom.dol", 0x46D804, 0x20
+	.asciz "DubiorJr.Brain.Cross.ExecOver"
+	.balign 4
 .global $$253126
 $$253126:
-	.incbin "baserom.dol", 0x46D824, 0x20
+	.asciz "DubiorJr.Brain.Cross.ExecUnder"
+	.balign 4
 .global $$253127
 $$253127:
-	.incbin "baserom.dol", 0x46D844, 0x24
+	.asciz "DubiorJr.Brain.Straight.ExecOver"
+	.balign 4
 .global $$253128
 $$253128:
-	.incbin "baserom.dol", 0x46D868, 0x24
+	.asciz "DubiorJr.Brain.Straight.ExecUnder"
+	.balign 4
 .global $$253129
 $$253129:
-	.incbin "baserom.dol", 0x46D88C, 0x24
+	.asciz "WaddleDee.Brain.GrandLowper.Exec"
+	.balign 4
 .global $$253130
 $$253130:
-	.incbin "baserom.dol", 0x46D8B0, 0x24
+	.asciz "BladeKnight.Brain.GrandLowper.Exec"
+	.balign 4
 .global $$253131
 $$253131:
-	.incbin "baserom.dol", 0x46D8D4, 0x20
+	.asciz "Bouncy.Brain.GrandLowper.Exec"
+	.balign 4
 .global $$253132
 $$253132:
-	.incbin "baserom.dol", 0x46D8F4, 0x24
+	.asciz "BroomHatter.Brain.GrandLowper.Exec"
+	.balign 4
 .global $$253133
 $$253133:
-	.incbin "baserom.dol", 0x46D918, 0x20
+	.asciz "Nruff.Brain.GrandLowper.Exec"
+	.balign 4
 .global $$253134
 $$253134:
-	.incbin "baserom.dol", 0x46D938, 0x1C
+	.asciz "Kabu.Brain.GrandLowper.Exec"
 .global $$253135
 $$253135:
-	.incbin "baserom.dol", 0x46D954, 0x24
+	.asciz "Sheld.Brain.GrandLowper.Exec"
+	.balign 4
+	.4byte 0
 .global $$253136
 $$253136:
-	.incbin "baserom.dol", 0x46D978, 0x20
+	.asciz "ArmorDee.Brain.GrandLowper.Exec"
 .global $$253137
 $$253137:
-	.incbin "baserom.dol", 0x46D998, 0x20
+	.asciz "Blipper.Brain.FattyBuffer.Exec"
+	.balign 4
 .global $$253138
 $$253138:
-	.incbin "baserom.dol", 0x46D9B8, 0x20
+	.asciz "BladeKnight.Brain.Mahoroa1.Exec"
 .global $$253139
 $$253139:
-	.incbin "baserom.dol", 0x46D9D8, 0x1C
+	.asciz "Sodory.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253140
 $$253140:
-	.incbin "baserom.dol", 0x46D9F4, 0x1C
+	.asciz "HotHead.Brain.Mahoroa1.Exec"
 .global $$253141
 $$253141:
-	.incbin "baserom.dol", 0x46DA10, 0x1C
+	.asciz "Flamer.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253142
 $$253142:
-	.incbin "baserom.dol", 0x46DA2C, 0x20
+	.asciz "WaddleDoo.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253143
 $$253143:
-	.incbin "baserom.dol", 0x46DA4C, 0x1C
+	.asciz "Lanzer.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253144
 $$253144:
-	.incbin "baserom.dol", 0x46DA68, 0x24
+	.asciz "HalcandleDee.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253145
 $$253145:
-	.incbin "baserom.dol", 0x46DA8C, 0x24
+	.asciz "FattyBufferJr.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253146
 $$253146:
-	.incbin "baserom.dol", 0x46DAB0, 0x1C
+	.asciz "Gemra.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253147
 $$253147:
-	.incbin "baserom.dol", 0x46DACC, 0x1C
+	.asciz "Chilly.Brain.Mahoroa1.Exec"
+	.balign 4
 .global $$253148
 $$253148:
-	.incbin "baserom.dol", 0x46DAE8, 0x28
+	.asciz "Chilly.Brain.CreditWalkToPraise.Exec"
+	.balign 4
 .global $$253149
 $$253149:
-	.incbin "baserom.dol", 0x46DB10, 0x28
+	.asciz "Rocky.Brain.CreditFallToGoodbye.Exec"
+	.balign 4
 .global $$253150
 $$253150:
-	.incbin "baserom.dol", 0x46DB38, 0x28
+	.asciz "WaddleDee.Brain.CreditWalkToPraise.Exec"
 .global $$253151
 $$253151:
-	.incbin "baserom.dol", 0x46DB60, 0x30
+	.asciz "BroomHatter.Brain.CreditWalkToPraise.Exec"
+	.balign 4
+	.4byte 0

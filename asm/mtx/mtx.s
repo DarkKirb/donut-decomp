@@ -838,27 +838,29 @@ C_MTXLightOrtho:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global Unit01
 Unit01:
-	.incbin "baserom.dol", 0x492940, 0x8
+	.4byte 0
+	.4byte 0x3F800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21635
 $$21635:
-	.incbin "baserom.dol", 0x499070, 0x4
+	.4byte 0x3F800000
 .global $$21636
 $$21636:
-	.incbin "baserom.dol", 0x499074, 0x4
+	.4byte 0
 .global $$21729
 $$21729:
-	.incbin "baserom.dol", 0x499078, 0x4
+	.4byte 0x3F000000
 .global $$21730
 $$21730:
-	.incbin "baserom.dol", 0x49907C, 0x4
+	.4byte 0x40400000
 .global $$21756
 $$21756:
-	.incbin "baserom.dol", 0x499080, 0x4
+	.4byte 0x40000000
 .global $$21779
 $$21779:
-	.incbin "baserom.dol", 0x499084, 0x4
+	.4byte 0xBF800000
 .global $$21786
 $$21786:
-	.incbin "baserom.dol", 0x499088, 0x8
+	.4byte 0x3C8EFA35
+	.4byte 0

@@ -322,16 +322,23 @@ lbl_801CDBBC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250880
 $$250880:
-	.incbin "baserom.dol", 0x458D28, 0x18
+	.asciz "VMObjectTypeList.cpp"
+	.balign 4
 .global $$250881
 $$250881:
-	.incbin "baserom.dol", 0x458D40, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global __vt__Q26mintvm16VMObjectTypeList
 __vt__Q26mintvm16VMObjectTypeList:
-	.incbin "baserom.dol", 0x458D54, 0xC
+	.4byte 0
+	.4byte 0
+	.4byte 0x801CA17C  ;# ptr
 .global $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType$$20
 $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType$$20:
-	.incbin "baserom.dol", 0x458D60, 0xC
+	.asciz "mMax = %d\n"
+	.balign 4
 .global $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType
 $$2STRING$$2addPtr__Q26mintvm34MPtrArray$$0Q26mintvm12VMObjectType$$1FPQ26mintvm12VMObjectType:
-	.incbin "baserom.dol", 0x458D6C, 0x14
+	.asciz "MPtrArray.hpp"
+	.balign 4
+	.4byte 0

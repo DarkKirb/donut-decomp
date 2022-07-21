@@ -912,39 +912,90 @@ lbl_8018CC6C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249791
 $$249791:
-	.incbin "baserom.dol", 0x450298, 0x18
+	.asciz "CharaAnimBlender.cpp"
+	.balign 4
 .global $$249792
 $$249792:
-	.incbin "baserom.dol", 0x4502B0, 0x34
+	.asciz "NW4R:Pointer Error\npHeap(=%p) is not valid pointer."
 .global $$249793
 $$249793:
-	.incbin "baserom.dol", 0x4502E4, 0x34
+	.asciz "NW4R:Pointer Error\nbuf(=%p) is not valid pointer."
+	.balign 4
 .global $$249794
 $$249794:
-	.incbin "baserom.dol", 0x450318, 0x44
+	.asciz "NW4R:Alignment Error(0x%x)\nbuf must be aligned to 4 bytes boundary."
 .global $$249903
 $$249903:
-	.incbin "baserom.dol", 0x45035C, 0x60
+	.4byte 0x4E573452
+	.4byte 0x20496E74
+	.4byte 0x65726E61
+	.4byte 0x6C206572
+	.4byte 0x726F720A
+	.4byte 0x83828366
+	.4byte 0x838B8366
+	.4byte 0x815B835E
+	.4byte 0x82F08E67
+	.4byte 0x977082B5
+	.4byte 0x82BD834C
+	.4byte 0x83838389
+	.4byte 0x834E835E
+	.4byte 0x8341836A
+	.4byte 0x8381815B
+	.4byte 0x83568387
+	.4byte 0x839382CC
+	.4byte 0x8375838C
+	.4byte 0x83938368
+	.4byte 0x8F88979D
+	.4byte 0x82CD96A2
+	.4byte 0x8EC09195
+	.4byte 0x82C582B7
+	.4byte 0x81420000
 .global $$249981
 $$249981:
-	.incbin "baserom.dol", 0x4503BC, 0x34
+	.asciz "NW4R:Pointer Error\nthis(=%p) is not valid pointer."
+	.balign 4
 .global __vt__Q23g3d16CharaAnimBlender
 __vt__Q23g3d16CharaAnimBlender:
-	.incbin "baserom.dol", 0x4503F0, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x800D9600  ;# ptr
+	.4byte 0x800D8380  ;# ptr
+	.4byte 0x8018CC24  ;# ptr
+	.4byte 0x800D9710  ;# ptr
+	.4byte 0x800D9700  ;# ptr
+	.4byte 0x800D8020  ;# ptr
+	.4byte 0x800D8030  ;# ptr
+	.4byte 0x800D8010  ;# ptr
+	.4byte 0x800D8090  ;# ptr
+	.4byte 0x800D80A0  ;# ptr
+	.4byte 0x8018C94C  ;# ptr
+	.4byte 0x800D8220  ;# ptr
+	.4byte 0x8018C2B4  ;# ptr
+	.4byte 0x800D7FE0  ;# ptr
+	.4byte 0x800D7FF0  ;# ptr
+	.4byte 0x800D8000  ;# ptr
+	.4byte 0x800D7E70  ;# ptr
+	.4byte 0x800D7E80  ;# ptr
+	.4byte 0x800D8110  ;# ptr
+	.4byte 0x800D8230  ;# ptr
 .global $$2STRING$$2FLog__Q24nw4r4mathFf$$20
 $$2STRING$$2FLog__Q24nw4r4mathFf$$20:
-	.incbin "baserom.dol", 0x450448, 0x24
+	.asciz "FLog: Input is out of the domain."
+	.balign 4
 .global $$2STRING$$2FLog__Q24nw4r4mathFf
 $$2STRING$$2FLog__Q24nw4r4mathFf:
-	.incbin "baserom.dol", 0x45046C, 0x14
+	.asciz "arithmetic.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249901
 $$249901:
-	.incbin "baserom.dol", 0x49A1B0, 0x4
+	.4byte 0
 .global $$249902
 $$249902:
-	.incbin "baserom.dol", 0x49A1B4, 0x4
+	.4byte 0x3F800000
 .global $$249917
 $$249917:
-	.incbin "baserom.dol", 0x49A1B8, 0x8
+	.4byte 0x7FC00000
+	.4byte 0

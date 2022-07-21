@@ -1428,38 +1428,75 @@ __sinit_$$3lyt_textBox_cpp:
 /* 8013D4EC 0013932C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023D0, 0x4
+	.4byte 0x8013D4D0  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29376
 $$29376:
-	.incbin "baserom.dol", 0x40A358, 0x8
+	.4byte 0
+	.4byte 0
 .global $$29414
 $$29414:
-	.incbin "baserom.dol", 0x40A360, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$29671
 $$29671:
-	.incbin "baserom.dol", 0x40A368, 0x4
+	.4byte 0x3F000000
 .global $$29672
 $$29672:
-	.incbin "baserom.dol", 0x40A36C, 0x4
+	.4byte 0x3F800000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29987
 $$29987:
-	.incbin "baserom.dol", 0x4402B8, 0x4
+	.4byte 0x000A0000
 .global __vt__Q36nw4hbm3lyt7TextBox
 __vt__Q36nw4hbm3lyt7TextBox:
-	.incbin "baserom.dol", 0x4402BC, 0x74
+	.4byte 0x80444260
+	.4byte 0
+	.4byte 0x8013C390  ;# ptr
+	.4byte 0x8013D4C0  ;# ptr
+	.4byte 0x8013B0A0  ;# ptr
+	.4byte 0x8013B3A0  ;# ptr
+	.4byte 0x8013C5C0  ;# ptr
+	.4byte 0x8013B580  ;# ptr
+	.4byte 0x8013B610  ;# ptr
+	.4byte 0x8013C520  ;# ptr
+	.4byte 0x8013C540  ;# ptr
+	.4byte 0x8013AEB0  ;# ptr
+	.4byte 0x8013AEE0  ;# ptr
+	.4byte 0x8013C580  ;# ptr
+	.4byte 0x8013C5A0  ;# ptr
+	.4byte 0x8013AF30  ;# ptr
+	.4byte 0x8013AFE0  ;# ptr
+	.4byte 0x8013B6D0  ;# ptr
+	.4byte 0x8013B6F0  ;# ptr
+	.4byte 0x8013B700  ;# ptr
+	.4byte 0x8013B710  ;# ptr
+	.4byte 0x8013B7F0  ;# ptr
+	.4byte 0x8013B870  ;# ptr
+	.4byte 0x8013BB20  ;# ptr
+	.4byte 0x8013B930  ;# ptr
+	.4byte 0x8013D130  ;# ptr
+	.4byte 0x8013D1B0  ;# ptr
+	.4byte 0x8013D200  ;# ptr
+	.4byte 0x8013D270  ;# ptr
 .global $$28641
 $$28641:
-	.incbin "baserom.dol", 0x440330, 0x18
+	.asciz "nw4hbm::lyt::TextBox"
+	.balign 4
 .global $$28642
 $$28642:
-	.incbin "baserom.dol", 0x440348, 0x18
+	.4byte 0x80443F60
+	.4byte 0
+	.4byte 0x80443F38
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt7TextBox
 __RTTI__Q36nw4hbm3lyt7TextBox:
-	.incbin "baserom.dol", 0x440360, 0x8
+	.4byte 0x80444230
+	.4byte 0x80444248
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q36nw4hbm3lyt7TextBox

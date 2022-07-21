@@ -805,10 +805,10 @@ lbl_80128328:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$28595
 $$28595:
-	.incbin "baserom.dol", 0x492E68, 0x4
+	.4byte 0x25730A00
 .global $$28712
 $$28712:
-	.incbin "baserom.dol", 0x492E6C, 0x4
+	.4byte 0x25730000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sMutex__Q24nw4r2db

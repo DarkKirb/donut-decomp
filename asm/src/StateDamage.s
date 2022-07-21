@@ -166,4 +166,11 @@ __dt__Q53scn4step5enemy8rollball11StateDamageFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8rollball11StateDamage
 __vt__Q53scn4step5enemy8rollball11StateDamage:
-	.incbin "baserom.dol", 0x477200, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D69E8  ;# ptr
+	.4byte 0x802D69A0  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

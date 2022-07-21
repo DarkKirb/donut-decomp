@@ -128,30 +128,44 @@ lbl_803C7218:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250366
 $$250366:
-	.incbin "baserom.dol", 0x48E5F8, 0xC
+	.asciz "ScoreCoinS"
+	.balign 4
 .global $$250367
 $$250367:
-	.incbin "baserom.dol", 0x48E604, 0x18
+	.asciz "step/item/ScoreCoinS"
+	.balign 4
 .global $$250369
 $$250369:
-	.incbin "baserom.dol", 0x48E61C, 0x18
+	.asciz "step/item/ScoreCoinB"
+	.balign 4
 .global $$250370
 $$250370:
-	.incbin "baserom.dol", 0x48E634, 0xC
+	.asciz "ScoreCoinB"
+	.balign 4
 .global $$250371
 $$250371:
-	.incbin "baserom.dol", 0x48E640, 0x20
+	.4byte 0x803C7100
+	.4byte 0x803C7114
+	.4byte 0x803C7100
+	.4byte 0x803C7114
+	.4byte 0x803C7100
+	.4byte 0x803C7114
+	.4byte 0x803C7100
+	.4byte 0x803C7114
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250368
 $$250368:
-	.incbin "baserom.dol", 0x4982C8, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$09$$40$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$09$$40$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982D0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$09$$41$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$09$$41$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982D8, 0x8
+	.asciz "Model"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2CreateTmpl$$09$$41$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc$$2desc

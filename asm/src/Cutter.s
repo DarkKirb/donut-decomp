@@ -10,4 +10,5 @@ CutterPath__Q53scn4step4hero9modeldesc6CutterFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248792
 $$248792:
-	.incbin "baserom.dol", 0x484DD0, 0x28
+	.asciz "step/chara/hero/kirby/cutter/Cutter"
+	.4byte 0

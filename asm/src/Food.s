@@ -1382,327 +1382,451 @@ lbl_803C7050:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252580
 $$252580:
-	.incbin "baserom.dol", 0x48E0A0, 0xC
+	.asciz "FdCherry"
+	.balign 4
 .global $$252581
 $$252581:
-	.incbin "baserom.dol", 0x48E0AC, 0x18
+	.asciz "step/item/food/Cherry"
+	.balign 4
 .global $$252583
 $$252583:
-	.incbin "baserom.dol", 0x48E0C4, 0x1C
+	.asciz "step/item/food/Humburger"
+	.balign 4
 .global $$252584
 $$252584:
-	.incbin "baserom.dol", 0x48E0E0, 0xC
+	.asciz "FdHumburger"
 .global $$252585
 $$252585:
-	.incbin "baserom.dol", 0x48E0EC, 0x18
+	.asciz "step/item/food/Juice"
+	.balign 4
 .global $$252587
 $$252587:
-	.incbin "baserom.dol", 0x48E104, 0x14
+	.asciz "step/item/food/Meat"
 .global $$252589
 $$252589:
-	.incbin "baserom.dol", 0x48E118, 0x18
+	.asciz "step/item/food/Potato"
+	.balign 4
 .global $$252590
 $$252590:
-	.incbin "baserom.dol", 0x48E130, 0xC
+	.asciz "FdPoteto"
+	.balign 4
 .global $$252591
 $$252591:
-	.incbin "baserom.dol", 0x48E13C, 0x18
+	.asciz "step/item/food/Banana"
+	.balign 4
 .global $$252592
 $$252592:
-	.incbin "baserom.dol", 0x48E154, 0xC
+	.asciz "FdBanana"
+	.balign 4
 .global $$252593
 $$252593:
-	.incbin "baserom.dol", 0x48E160, 0x18
+	.asciz "step/item/food/Grape"
+	.balign 4
 .global $$252595
 $$252595:
-	.incbin "baserom.dol", 0x48E178, 0x1C
+	.asciz "step/item/food/Pineapple"
+	.balign 4
 .global $$252596
 $$252596:
-	.incbin "baserom.dol", 0x48E194, 0xC
+	.asciz "FdPineapple"
 .global $$252597
 $$252597:
-	.incbin "baserom.dol", 0x48E1A0, 0x18
+	.asciz "step/item/food/Doughnut"
 .global $$252598
 $$252598:
-	.incbin "baserom.dol", 0x48E1B8, 0xC
+	.asciz "FdDoughnut"
+	.balign 4
 .global $$252599
 $$252599:
-	.incbin "baserom.dol", 0x48E1C4, 0x18
+	.asciz "step/item/food/Hotdog"
+	.balign 4
 .global $$252600
 $$252600:
-	.incbin "baserom.dol", 0x48E1DC, 0xC
+	.asciz "FdHotdog"
+	.balign 4
 .global $$252601
 $$252601:
-	.incbin "baserom.dol", 0x48E1E8, 0x18
+	.asciz "step/item/food/Pudding"
+	.balign 4
 .global $$252602
 $$252602:
-	.incbin "baserom.dol", 0x48E200, 0xC
+	.asciz "FdPudding"
+	.balign 4
 .global $$252603
 $$252603:
-	.incbin "baserom.dol", 0x48E20C, 0x18
+	.asciz "step/item/food/Tomato"
+	.balign 4
 .global $$252604
 $$252604:
-	.incbin "baserom.dol", 0x48E224, 0xC
+	.asciz "FdTomato"
+	.balign 4
 .global $$252605
 $$252605:
-	.incbin "baserom.dol", 0x48E230, 0x18
+	.asciz "step/item/food/Candy"
+	.balign 4
 .global $$252607
 $$252607:
-	.incbin "baserom.dol", 0x48E248, 0x20
+	.asciz "step/item/food/ChineseNoodles"
+	.balign 4
 .global $$252608
 $$252608:
-	.incbin "baserom.dol", 0x48E268, 0x14
+	.asciz "FdChinesenoodles"
+	.balign 4
 .global $$252609
 $$252609:
-	.incbin "baserom.dol", 0x48E27C, 0x1C
+	.asciz "step/item/food/ChocoCake"
+	.balign 4
 .global $$252610
 $$252610:
-	.incbin "baserom.dol", 0x48E298, 0xC
+	.asciz "FdChococake"
 .global $$252611
 $$252611:
-	.incbin "baserom.dol", 0x48E2A4, 0x18
+	.asciz "step/item/food/Curry"
+	.balign 4
 .global $$252613
 $$252613:
-	.incbin "baserom.dol", 0x48E2BC, 0x1C
+	.asciz "step/item/food/LemonJuice"
+	.balign 4
 .global $$252614
 $$252614:
-	.incbin "baserom.dol", 0x48E2D8, 0x10
+	.asciz "FdLemonjuice"
+	.balign 4
 .global $$252615
 $$252615:
-	.incbin "baserom.dol", 0x48E2E8, 0x18
+	.asciz "step/item/food/Omelet"
+	.balign 4
 .global $$252616
 $$252616:
-	.incbin "baserom.dol", 0x48E300, 0xC
+	.asciz "FdOmelet"
+	.balign 4
 .global $$252617
 $$252617:
-	.incbin "baserom.dol", 0x48E30C, 0x1C
+	.asciz "step/item/food/Pizza"
+	.balign 4
+	.4byte 0
 .global $$252619
 $$252619:
-	.incbin "baserom.dol", 0x48E328, 0x18
+	.asciz "step/item/food/Sandwich"
 .global $$252620
 $$252620:
-	.incbin "baserom.dol", 0x48E340, 0xC
+	.asciz "FdSandwich"
+	.balign 4
 .global $$252621
 $$252621:
-	.incbin "baserom.dol", 0x48E34C, 0x1C
+	.asciz "step/item/food/ShortCake"
+	.balign 4
 .global $$252622
 $$252622:
-	.incbin "baserom.dol", 0x48E368, 0xC
+	.asciz "FdShortcake"
 .global $$252623
 $$252623:
-	.incbin "baserom.dol", 0x48E374, 0x1C
+	.asciz "step/item/food/SoftCream"
+	.balign 4
 .global $$252624
 $$252624:
-	.incbin "baserom.dol", 0x48E390, 0x10
+	.asciz "FdSoftcreeam"
+	.balign 4
 .global $$252625
 $$252625:
-	.incbin "baserom.dol", 0x48E3A0, 0x1C
+	.asciz "step/item/food/FriedRice"
+	.balign 4
 .global $$252626
 $$252626:
-	.incbin "baserom.dol", 0x48E3BC, 0xC
+	.asciz "FdFriedrice"
 .global $$252627
 $$252627:
-	.incbin "baserom.dol", 0x48E3C8, 0x18
+	.asciz "step/item/food/Gyoza"
+	.balign 4
 .global $$252629
 $$252629:
-	.incbin "baserom.dol", 0x48E3E0, 0x1C
+	.asciz "step/item/food/Spaghetti"
+	.balign 4
 .global $$252630
 $$252630:
-	.incbin "baserom.dol", 0x48E3FC, 0xC
+	.asciz "FdSpaghetti"
 .global $$252631
 $$252631:
-	.incbin "baserom.dol", 0x48E408, 0x18
+	.asciz "step/item/food/CupCake"
+	.balign 4
 .global $$252632
 $$252632:
-	.incbin "baserom.dol", 0x48E420, 0xC
+	.asciz "FdCupcake"
+	.balign 4
 .global $$252633
 $$252633:
-	.incbin "baserom.dol", 0x48E42C, 0x1C
+	.asciz "step/item/food/DoughnutPink"
 .global $$252634
 $$252634:
-	.incbin "baserom.dol", 0x48E448, 0x10
+	.asciz "FdDoughnutpink"
+	.balign 4
 .global $$252635
 $$252635:
-	.incbin "baserom.dol", 0x48E458, 0x18
+	.asciz "step/item/food/HotCake"
+	.balign 4
 .global $$252636
 $$252636:
-	.incbin "baserom.dol", 0x48E470, 0x10
+	.asciz "FdHotcake"
+	.balign 4
+	.4byte 0
 .global $$252637
 $$252637:
-	.incbin "baserom.dol", 0x48E480, 0x18
+	.asciz "step/item/food/Icecream"
 .global $$252638
 $$252638:
-	.incbin "baserom.dol", 0x48E498, 0xC
+	.asciz "FdIcecream"
+	.balign 4
 .global $$252639
 $$252639:
-	.incbin "baserom.dol", 0x48E4A4, 0x18
+	.asciz "step/item/food/Parfait"
+	.balign 4
 .global $$252640
 $$252640:
-	.incbin "baserom.dol", 0x48E4BC, 0xC
+	.asciz "FdParfait"
+	.balign 4
 .global $$252641
 $$252641:
-	.incbin "baserom.dol", 0x48E4C8, 0x18
+	.asciz "step/item/food/Sousage"
+	.balign 4
 .global $$252642
 $$252642:
-	.incbin "baserom.dol", 0x48E4E0, 0xC
+	.asciz "FdSousage"
+	.balign 4
 .global $$252643
 $$252643:
-	.incbin "baserom.dol", 0x48E4EC, 0x14
+	.asciz "step/item/food/Tea"
+	.balign 4
 .global $$252645
 $$252645:
-	.incbin "baserom.dol", 0x48E500, 0x18
+	.asciz "step/item/food/Nikuman"
+	.balign 4
 .global $$252646
 $$252646:
-	.incbin "baserom.dol", 0x48E518, 0xC
+	.asciz "FdNikuman"
+	.balign 4
 .global $$252647
 $$252647:
-	.incbin "baserom.dol", 0x48E524, 0x14
+	.asciz "step/item/food/Milk"
 .global $$252649
 $$252649:
-	.incbin "baserom.dol", 0x48E538, 0x20
+	.asciz "step/item/food/SoftCreamPink"
+	.balign 4
 .global $$252650
 $$252650:
-	.incbin "baserom.dol", 0x48E558, 0x10
+	.asciz "FdSoftcreampink"
 .global $$252651
 $$252651:
-	.incbin "baserom.dol", 0x48E568, 0x90
+	.4byte 0x803C5C24
+	.4byte 0x803C5C38
+	.4byte 0x803C5CCC
+	.4byte 0x803C5D60
+	.4byte 0x803C5DF4
+	.4byte 0x803C5E88
+	.4byte 0x803C5F1C
+	.4byte 0x803C5FB0
+	.4byte 0x803C6044
+	.4byte 0x803C60D8
+	.4byte 0x803C616C
+	.4byte 0x803C6200
+	.4byte 0x803C6294
+	.4byte 0x803C6328
+	.4byte 0x803C63BC
+	.4byte 0x803C6450
+	.4byte 0x803C64E4
+	.4byte 0x803C6578
+	.4byte 0x803C660C
+	.4byte 0x803C66A0
+	.4byte 0x803C6734
+	.4byte 0x803C67C8
+	.4byte 0x803C685C
+	.4byte 0x803C68F0
+	.4byte 0x803C6984
+	.4byte 0x803C6A18
+	.4byte 0x803C6AAC
+	.4byte 0x803C6B40
+	.4byte 0x803C6BD4
+	.4byte 0x803C6C68
+	.4byte 0x803C6CFC
+	.4byte 0x803C6D90
+	.4byte 0x803C6E24
+	.4byte 0x803C6EB8
+	.4byte 0x803C6F4C
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252582
 $$252582:
-	.incbin "baserom.dol", 0x498160, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$252586
 $$252586:
-	.incbin "baserom.dol", 0x498168, 0x8
+	.asciz "FdJuice"
 .global $$252588
 $$252588:
-	.incbin "baserom.dol", 0x498170, 0x8
+	.asciz "FdMeat"
+	.balign 4
 .global $$252594
 $$252594:
-	.incbin "baserom.dol", 0x498178, 0x8
+	.asciz "FdGrape"
 .global $$252606
 $$252606:
-	.incbin "baserom.dol", 0x498180, 0x8
+	.asciz "FdCandy"
 .global $$252612
 $$252612:
-	.incbin "baserom.dol", 0x498188, 0x8
+	.asciz "FdCurry"
 .global $$252618
 $$252618:
-	.incbin "baserom.dol", 0x498190, 0x8
+	.asciz "FdPizza"
 .global $$252628
 $$252628:
-	.incbin "baserom.dol", 0x498198, 0x8
+	.asciz "FdGyoza"
 .global $$252644
 $$252644:
-	.incbin "baserom.dol", 0x4981A0, 0x8
+	.asciz "FdTea"
+	.balign 4
 .global $$252648
 $$252648:
-	.incbin "baserom.dol", 0x4981A8, 0x8
+	.asciz "FdMilk"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$40$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$40$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981B0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$41$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$41$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981B8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$42$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$42$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981C0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$43$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$43$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981C8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$44$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$44$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981D0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$45$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$45$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981D8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$46$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$46$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981E0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$47$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$47$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981E8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$48$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$48$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981F0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$49$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$49$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4981F8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$410$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$410$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498200, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$411$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$411$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498208, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$412$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$412$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498210, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$413$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$413$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498218, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$414$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$414$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498220, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$415$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$415$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498228, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$416$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$416$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498230, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$417$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$417$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498238, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$418$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$418$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498240, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$419$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$419$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498248, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$420$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$420$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498250, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$421$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$421$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498258, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$422$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$422$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498260, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$423$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$423$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498268, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$424$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$424$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498270, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$425$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$425$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498278, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$426$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$426$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498280, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$427$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$427$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498288, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$428$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$428$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498290, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$429$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$429$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x498298, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$430$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$430$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982A0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$431$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$431$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982A8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$432$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$432$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982B0, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$433$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$433$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982B8, 0x8
+	.asciz "Model"
+	.balign 4
 .global $$2STRING$$2CreateGeneral$$03$$434$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc
 $$2STRING$$2CreateGeneral$$03$$434$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc:
-	.incbin "baserom.dol", 0x4982C0, 0x8
+	.asciz "Model"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2CreateTmpl$$03$$434$$1__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc$$2desc

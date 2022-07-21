@@ -1480,213 +1480,265 @@ IUSB_WriteCtrlMsgAsync:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22524
 $$22524:
-	.incbin "baserom.dol", 0x436138, 0xC
+	.asciz "USB ERR: "
+	.balign 4
 .global $$22540
 $$22540:
-	.incbin "baserom.dol", 0x436144, 0x30
+	.asciz "Library is already initialized. Heap Id = %d\n"
+	.balign 4
 .global $$22541
 $$22541:
-	.incbin "baserom.dol", 0x436174, 0x20
+	.asciz "iusb size: %d lo: %x hi: %x\n"
+	.balign 4
 .global $$22542
 $$22542:
-	.incbin "baserom.dol", 0x436194, 0x18
+	.asciz "Not enough IPC arena\n"
+	.balign 4
 .global $$22543
 $$22543:
-	.incbin "baserom.dol", 0x4361AC, 0x14
+	.asciz "Not enough heaps\n"
+	.balign 4
 .global $$22563
 $$22563:
-	.incbin "baserom.dol", 0x4361C0, 0x20
+	.asciz "_intrBlkCtrlIsoCb returned: %d\n"
 .global $$22564
 $$22564:
-	.incbin "baserom.dol", 0x4361E0, 0x20
+	.asciz "_intrBlkCtrlIsoCb: nclean = %d\n"
 .global $$22565
 $$22565:
-	.incbin "baserom.dol", 0x436200, 0x28
+	.asciz "__intrBlkCtrlIsoCb: got invalid nclean\n"
 .global $$22566
 $$22566:
-	.incbin "baserom.dol", 0x436228, 0x18
+	.asciz "Freeing clean[%d] = %x\n"
 .global $$22567
 $$22567:
-	.incbin "baserom.dol", 0x436240, 0x20
+	.asciz "iosFree(%d, 0x%x) failed: %d\n"
+	.balign 4
 .global $$22568
 $$22568:
-	.incbin "baserom.dol", 0x436260, 0x14
+	.asciz "cb = %x cbArg = %x\n"
 .global $$22569
 $$22569:
-	.incbin "baserom.dol", 0x436274, 0x18
+	.asciz "calling iso callback\n"
+	.balign 4
 .global $$22577
 $$22577:
-	.incbin "baserom.dol", 0x43628C, 0x24
+	.asciz "iosAllocAligned(%d, %u) failed: %d\n"
 .global $$22578
 $$22578:
-	.incbin "baserom.dol", 0x4362B0, 0x24
+	.asciz "OpenDeviceIds: Not enough memory\n"
+	.balign 4
 .global $$22579
 $$22579:
-	.incbin "baserom.dol", 0x4362D4, 0x14
+	.asciz "/dev/usb/%s/%x/%x"
+	.balign 4
 .global $$22580
 $$22580:
-	.incbin "baserom.dol", 0x4362E8, 0x14
+	.asciz "OpenDevice - %s\n"
+	.balign 4
 .global $$22581
 $$22581:
-	.incbin "baserom.dol", 0x4362FC, 0x1C
+	.asciz "OpenDevice returned: %d\n"
+	.balign 4
 .global $$22590
 $$22590:
-	.incbin "baserom.dol", 0x436318, 0xC
+	.asciz "OpenDevice\n"
 .global $$22591
 $$22591:
-	.incbin "baserom.dol", 0x436324, 0x28
+	.asciz "OpenDeviceIdsAsync: Not enough memory\n"
+	.balign 4
 .global $$22596
 $$22596:
-	.incbin "baserom.dol", 0x43634C, 0x10
+	.asciz "CloseDevice\n"
+	.balign 4
 .global $$22597
 $$22597:
-	.incbin "baserom.dol", 0x43635C, 0x1C
+	.asciz "CloseDevice returned: %d\n"
+	.balign 4
 .global $$22604
 $$22604:
-	.incbin "baserom.dol", 0x436378, 0x28
+	.asciz "CloseDeviceAsync: Not enough memory\n"
+	.balign 4
 .global $$22627
 $$22627:
-	.incbin "baserom.dol", 0x4363A0, 0x20
+	.asciz "openDevice: Not enough memory\n"
+	.balign 4
 .global $$22628
 $$22628:
-	.incbin "baserom.dol", 0x4363C0, 0x28
+	.asciz "getDeviceList: Not enough memory\n"
+	.balign 4
+	.4byte 0
 .global __FUNCTION__$914
 __FUNCTION__$914:
-	.incbin "baserom.dol", 0x4363E8, 0x10
+	.asciz "__LongBlkMsgInt"
 .global $$22647
 $$22647:
-	.incbin "baserom.dol", 0x4363F8, 0x24
+	.asciz "__LongBlkMsgInt: Not enough memory\n"
 .global $$22648
 $$22648:
-	.incbin "baserom.dol", 0x43641C, 0x20
+	.asciz "Long bulk ioctl returned: %d\n"
+	.balign 4
 .global $$22649
 $$22649:
-	.incbin "baserom.dol", 0x43643C, 0x2C
+	.asciz "LongBlkMsgInt (async): Not enough memory\n"
+	.balign 4
 .global $$22650
 $$22650:
-	.incbin "baserom.dol", 0x436468, 0x24
+	.asciz "longblkmsg: cb = 0x%x cbArg = 0x%x\n"
 .global $$22651
 $$22651:
-	.incbin "baserom.dol", 0x43648C, 0x24
+	.asciz "%s: IoctlvAsync returned error %d\n"
+	.balign 4
 .global __FUNCTION__$945
 __FUNCTION__$945:
-	.incbin "baserom.dol", 0x4364B0, 0x10
+	.asciz "__IntrBlkMsgInt"
 .global $$22670
 $$22670:
-	.incbin "baserom.dol", 0x4364C0, 0x24
+	.asciz "__IntrBlkMsgInt: Not enough memory\n"
 .global $$22671
 $$22671:
-	.incbin "baserom.dol", 0x4364E4, 0x20
+	.asciz "intr/blk ioctl returned: %d\n"
+	.balign 4
 .global $$22672
 $$22672:
-	.incbin "baserom.dol", 0x436504, 0x2C
+	.asciz "IntBlkMsgInt (async): Not enough memory\n"
+	.balign 4
 .global $$22673
 $$22673:
-	.incbin "baserom.dol", 0x436530, 0x24
+	.asciz "intrblkmsg: cb = 0x%x cbArg = 0x%x\n"
 .global $$22692
 $$22692:
-	.incbin "baserom.dol", 0x436554, 0x38
+	.asciz "calling short blk transfer fn: buflen = %u limit = %u\n"
+	.balign 4
 .global $$22693
 $$22693:
-	.incbin "baserom.dol", 0x43658C, 0x38
+	.asciz "calling long blk transfer fn: buflen = %u limit = %u\n"
+	.balign 4
 .global $$22736
 $$22736:
-	.incbin "baserom.dol", 0x4365C4, 0x1C
+	.asciz "ctrlmsg: bad data buffer\n"
+	.balign 4
 .global $$22737
 $$22737:
-	.incbin "baserom.dol", 0x4365E0, 0x20
+	.asciz "Ctrl Msg: Not enough memory\n"
+	.balign 4
 .global $$22738
 $$22738:
-	.incbin "baserom.dol", 0x436600, 0x28
+	.asciz "CtrlMsgInt (async): Not enough memory\n"
+	.balign 4
 .global $$22739
 $$22739:
-	.incbin "baserom.dol", 0x436628, 0x24
+	.asciz "ctrlmsgint: cb = 0x%x cbArg = 0x%x\n"
 .global $$22740
 $$22740:
-	.incbin "baserom.dol", 0x43664C, 0x20
+	.asciz "Ctrl Msg async returned: %d\n"
+	.balign 4
 .global $$22775
 $$22775:
-	.incbin "baserom.dol", 0x43666C, 0x18
+	.asciz "GetStrCb returned: %d\n"
+	.balign 4
 .global $$22776
 $$22776:
-	.incbin "baserom.dol", 0x436684, 0x24
+	.asciz "GetStrCb: buf = 0x%x buflen = %u\n"
+	.balign 4
 .global $$22777
 $$22777:
-	.incbin "baserom.dol", 0x4366A8, 0x30
+	.asciz "Failed to convert buffer from unicode 2 ascii\n"
+	.balign 4
 .global $$22778
 $$22778:
-	.incbin "baserom.dol", 0x4366D8, 0x20
+	.asciz "calling cb 0x%x with arg 0x%x\n"
+	.balign 4
 .global $$22786
 $$22786:
-	.incbin "baserom.dol", 0x4366F8, 0x18
+	.asciz "Failed __CtrlMsg: %d"
+	.balign 4
 .global $$22787
 $$22787:
-	.incbin "baserom.dol", 0x436710, 0x24
+	.asciz "Failed to convert unicode 2 ascii\n"
+	.balign 4
 .global $$22795
 $$22795:
-	.incbin "baserom.dol", 0x436734, 0x14
+	.asciz "GetStr - _GetStrCb\n"
 .global $$22796
 $$22796:
-	.incbin "baserom.dol", 0x436748, 0x28
+	.asciz " GetAsciiStrAsync: Not enough memory\n"
+	.balign 4
 .global $$22797
 $$22797:
-	.incbin "baserom.dol", 0x436770, 0x18
+	.asciz "__CtrlMsgInt failed %d\n"
 .global $$22807
 $$22807:
-	.incbin "baserom.dol", 0x436788, 0x1C
+	.asciz "GetDescrCb returned: %d\n"
+	.balign 4
 .global $$22815
 $$22815:
-	.incbin "baserom.dol", 0x4367A4, 0x14
+	.asciz "GetDevDescr\n"
+	.balign 4
+	.4byte 0
 .global $$22816
 $$22816:
-	.incbin "baserom.dol", 0x4367B8, 0x20
+	.asciz "GetDevDescr: Not enough memory\n"
 .global $$22817
 $$22817:
-	.incbin "baserom.dol", 0x4367D8, 0x14
+	.asciz "GetDevDescr: %d\n"
+	.balign 4
 .global $$22829
 $$22829:
-	.incbin "baserom.dol", 0x4367EC, 0x1C
+	.asciz "GetDevDescr - _GetDescrCb\n"
+	.balign 4
 .global $$22830
 $$22830:
-	.incbin "baserom.dol", 0x436808, 0x28
+	.asciz "GetDevDescrAsync: Not enough memory\n"
+	.balign 4
 .global $$22874
 $$22874:
-	.incbin "baserom.dol", 0x436830, 0x1C
+	.asciz "DeviceRemovalNotifyAsync\n"
+	.balign 4
 .global $$22892
 $$22892:
-	.incbin "baserom.dol", 0x43684C, 0x18
+	.asciz "packet %u too big: %u\n"
+	.balign 4
 .global $$22912
 $$22912:
-	.incbin "baserom.dol", 0x436864, 0x30
+	.asciz "Invalid parameters for ISO transfer request\n"
+	.balign 4
 .global $$22913
 $$22913:
-	.incbin "baserom.dol", 0x436894, 0x28
+	.asciz "IUSB_IsoMsgAsync: Not enough memory\n"
+	.balign 4
 .global $$22933
 $$22933:
-	.incbin "baserom.dol", 0x4368BC, 0x14
+	.asciz "Open(%s) failed\n"
+	.balign 4
 .global $$22964
 $$22964:
-	.incbin "baserom.dol", 0x4368D0, 0x40
+	.asciz "Invalid path or devClass in insertion notification call\n"
+	.balign 4
+	.4byte 0
 .global __FUNCTION__$1488
 __FUNCTION__$1488:
-	.incbin "baserom.dol", 0x436910, 0x28
+	.asciz "IUSB_RegisterInsertionNotifyWithIdAsync"
 .global $$23004
 $$23004:
-	.incbin "baserom.dol", 0x436938, 0x18
+	.asciz "%s: Not enough memory\n"
+	.balign 4
 .global $$23016
 $$23016:
-	.incbin "baserom.dol", 0x436950, 0x18
+	.asciz "Failed to open %s: %d\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global hId
 hId:
-	.incbin "baserom.dol", 0x492C70, 0x4
+	.4byte 0xFFFFFFFF
 .global s_usb_err
 s_usb_err:
-	.incbin "baserom.dol", 0x492C74, 0x4
+	.4byte 0x01000000
 .global $$22519
 $$22519:
-	.incbin "baserom.dol", 0x492C78, 0x8
+	.asciz "USB: "
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global lo

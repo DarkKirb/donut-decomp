@@ -3436,42 +3436,71 @@ lbl_8013AA5C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DefaultBlackColor
 DefaultBlackColor:
-	.incbin "baserom.dol", 0x40A300, 0x8
+	.4byte 0
+	.4byte 0
 .global DefaultWhiteColor
 DefaultWhiteColor:
-	.incbin "baserom.dol", 0x40A308, 0x8
+	.4byte 0x00FF00FF
+	.4byte 0x00FF00FF
 .global $$29520
 $$29520:
-	.incbin "baserom.dol", 0x40A310, 0x4
+	.4byte 0x3F000000
 .global $$29521
 $$29521:
-	.incbin "baserom.dol", 0x40A314, 0x4
+	.4byte 0x3F360B61
 .global $$29522
 $$29522:
-	.incbin "baserom.dol", 0x40A318, 0x4
+	.4byte 0
 .global $$29523
 $$29523:
-	.incbin "baserom.dol", 0x40A31C, 0x4
+	.4byte 0x3F800000
 .global $$29536
 $$29536:
-	.incbin "baserom.dol", 0x40A320, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$211974
 $$211974:
-	.incbin "baserom.dol", 0x40A328, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kColSels
 $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kColSels:
-	.incbin "baserom.dol", 0x440110, 0x20
+	.4byte 0x0000001F
+	.4byte 0x0000001B
+	.4byte 0x00000017
+	.4byte 0x00000013
+	.4byte 0x0000001E
+	.4byte 0x0000001A
+	.4byte 0x00000016
+	.4byte 0x00000012
 .global $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kAlpSels$$20
 $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kAlpSels$$20:
-	.incbin "baserom.dol", 0x440130, 0x20
+	.4byte 0x0000001F
+	.4byte 0x0000001B
+	.4byte 0x00000017
+	.4byte 0x00000013
+	.4byte 0x0000001E
+	.4byte 0x0000001A
+	.4byte 0x00000016
+	.4byte 0x00000012
 .global __vt__Q36nw4hbm3lyt8Material
 __vt__Q36nw4hbm3lyt8Material:
-	.incbin "baserom.dol", 0x440150, 0x28
+	.4byte 0x80444090
+	.4byte 0
+	.4byte 0x80138D40  ;# ptr
+	.4byte 0x801399D0  ;# ptr
+	.4byte 0x8013A7F0  ;# ptr
+	.4byte 0x8013A800  ;# ptr
+	.4byte 0x8013A880  ;# ptr
+	.4byte 0x8013A890  ;# ptr
+	.4byte 0x8013A950  ;# ptr
+	.4byte 0x8013A960  ;# ptr
 .global $$28504
 $$28504:
-	.incbin "baserom.dol", 0x440178, 0x18
+	.asciz "nw4hbm::lyt::Material"
+	.balign 4
 .global __RTTI__Q36nw4hbm3lyt8Material
 __RTTI__Q36nw4hbm3lyt8Material:
-	.incbin "baserom.dol", 0x440190, 0x8
+	.4byte 0x80444078
+	.4byte 0

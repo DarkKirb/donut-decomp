@@ -197,7 +197,7 @@ getCurrentScale__Q43scn4step4hero6SquashCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255361
 $$255361:
-	.incbin "baserom.dol", 0x49D9C0, 0x4
+	.4byte 0x3F800000
 .global $$255385
 $$255385:
-	.incbin "baserom.dol", 0x49D9C4, 0x4
+	.4byte 0x3727C5AC

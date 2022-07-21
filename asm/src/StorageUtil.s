@@ -161,4 +161,5 @@ hasAllPlatinumMedal__Q27storage11StorageUtilCFi:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249178
 $$249178:
-	.incbin "baserom.dol", 0x4927D0, 0x10
+	.asciz "storage/Param"
+	.balign 4

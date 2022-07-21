@@ -758,18 +758,30 @@ lbl_803FCB08:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257488
 $$257488:
-	.incbin "baserom.dol", 0x492478, 0x14
+	.asciz "staffcredits/Main"
+	.balign 4
 .global $$257586
 $$257586:
-	.incbin "baserom.dol", 0x49248C, 0x24
+	.4byte 0x803FC56C
+	.4byte 0x803FC578
+	.4byte 0x803FC584
+	.4byte 0x803FC590
+	.4byte 0x803FC59C
+	.4byte 0x803FC5A8
+	.4byte 0x803FC5B4
+	.4byte 0x803FC5C0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257489
 $$257489:
-	.incbin "baserom.dol", 0x498A68, 0x4
+	.4byte 0x456E6400
 .global $$257600
 $$257600:
-	.incbin "baserom.dol", 0x498A6C, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$257601
 $$257601:
-	.incbin "baserom.dol", 0x498A74, 0xC
+	.asciz "Wait"
+	.balign 4
+	.4byte 0

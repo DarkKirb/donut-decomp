@@ -183,7 +183,9 @@ lbl_8018A538:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20
 $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20:
-	.incbin "baserom.dol", 0x44FFB8, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb
 $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb:
-	.incbin "baserom.dol", 0x44FFDC, 0xC
+	.asciz "console.h"
+	.balign 4

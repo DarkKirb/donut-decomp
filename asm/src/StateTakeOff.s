@@ -164,12 +164,21 @@ __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt12StateTakeOff
 __vt__Q53scn4step5enemy10brontoburt12StateTakeOff:
-	.incbin "baserom.dol", 0x470BE8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A030C  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802A0140  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255068
 $$255068:
-	.incbin "baserom.dol", 0x49BF10, 0x8
+	.4byte 0x40C00000
+	.4byte 0
 .global $$255071
 $$255071:
-	.incbin "baserom.dol", 0x49BF18, 0x8
+	.4byte 0x43300000
+	.4byte 0

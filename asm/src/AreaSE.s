@@ -222,15 +222,17 @@ lbl_802FE0B8:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SE_LABEL_TABLE__Q53scn4step7gimmick6arease20$$2unnamed$$2AreaSE_cpp$$2
 SE_LABEL_TABLE__Q53scn4step7gimmick6arease20$$2unnamed$$2AreaSE_cpp$$2:
-	.incbin "baserom.dol", 0x496900, 0x8
+	.4byte 0x00000262
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251649
 $$251649:
-	.incbin "baserom.dol", 0x49D1C8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$251670
 $$251670:
-	.incbin "baserom.dol", 0x49D1D0, 0x4
+	.4byte 0x3F800000
 .global $$251671
 $$251671:
-	.incbin "baserom.dol", 0x49D1D4, 0x4
+	.4byte 0

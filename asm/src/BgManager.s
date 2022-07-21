@@ -259,12 +259,81 @@ lbl_803F8AD8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BG_DATA_TABLE__Q33scn11staffcredit23$$2unnamed$$2BgManager_cpp$$2
 T_BG_DATA_TABLE__Q33scn11staffcredit23$$2unnamed$$2BgManager_cpp$$2:
-	.incbin "baserom.dol", 0x41CCF0, 0x118
+	.4byte 0x00000019
+	.4byte 0x3FD9999A
+	.4byte 0x42D3947B
+	.4byte 0xC35EBAE1
+	.4byte 0xBFC00000
+	.4byte 0xC1867AE1
+	.4byte 0x41675C29
+	.4byte 0x4236CCCD
+	.4byte 0x3DCCCCCD
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3E4CCCCD
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0x4431347B
+	.4byte 0x4249AE14
+	.4byte 0x438175C3
+	.4byte 0xC0EF5C29
+	.4byte 0x41BD3333
+	.4byte 0
+	.4byte 0x41A80000
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0x0000001C
+	.4byte 0x436CAB85
+	.4byte 0x40E4CCCD
+	.4byte 0x4295CCCD
+	.4byte 0xC0E1999A
+	.4byte 0x4047AE14
+	.4byte 0
+	.4byte 0x41D4CCCD
+	.asciz "?333"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.4byte 0x3ECCCCCD
+	.4byte 0
+	.4byte 0x0000001B
+	.4byte 0x42746666
+	.4byte 0x4171C28F
+	.4byte 0x4271AE14
+	.4byte 0xC0F75C29
+	.4byte 0x40A570A4
+	.4byte 0
+	.4byte 0x4201999A
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0xBE4CCCCD
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x0000001D
+	.4byte 0x42DD051F
+	.4byte 0x42590000
+	.4byte 0x434FD70A
+	.4byte 0xC11A6666
+	.4byte 0x40047AE1
+	.4byte 0
+	.4byte 0x4199999A
+	.4byte 0x3F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252626
 $$252626:
-	.incbin "baserom.dol", 0x49ED88, 0x4
+	.4byte 0xFFFFFFFF
 .global $$252672
 $$252672:
-	.incbin "baserom.dol", 0x49ED8C, 0x4
+	.4byte 0xFFFFFFFF

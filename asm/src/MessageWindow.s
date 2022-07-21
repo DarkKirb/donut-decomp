@@ -2057,81 +2057,148 @@ __dt__Q43std3tr16detail367function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail318bound_
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257430
 $$257430:
-	.incbin "baserom.dol", 0x48BF10, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$257431
 $$257431:
-	.incbin "baserom.dol", 0x48BF20, 0x10
+	.asciz "MessageWindow"
+	.balign 4
 .global $$257432
 $$257432:
-	.incbin "baserom.dol", 0x48BF30, 0xC
+	.asciz "WiiButtonN"
+	.balign 4
 .global $$257579
 $$257579:
-	.incbin "baserom.dol", 0x48BF3C, 0xC
+	.asciz "MessageText"
 .global $$257580
 $$257580:
-	.incbin "baserom.dol", 0x48BF48, 0x10
+	.asciz "MessageText_Sh"
+	.balign 4
 .global $$257614
 $$257614:
-	.incbin "baserom.dol", 0x48BF58, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803AEDE0
 .global $$257687
 $$257687:
-	.incbin "baserom.dol", 0x48BF64, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803AEDE0
 .global $$257688
 $$257688:
-	.incbin "baserom.dol", 0x48BF70, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803AEDE0
 .global $$257731
 $$257731:
-	.incbin "baserom.dol", 0x48BF7C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x803AF1FC
 .global $$257820
 $$257820:
-	.incbin "baserom.dol", 0x48BF88, 0xC
+	.asciz "MahoroaName"
 .global $$257831
 $$257831:
-	.incbin "baserom.dol", 0x48BF94, 0x14
+	.asciz "bad_function_call"
+	.balign 4
 .global __vt__Q43std3tr16detail367function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail318bound_func$$0v$$4Q43std3tr16detail51mem_fn_2$$0v$$4Q43scn4step4info13MessageWindow$$4PCc$$4PCc$$1$$4Q33std3tr1220tuple$$0PQ43scn4step4info13MessageWindow$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1
 __vt__Q43std3tr16detail367function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail318bound_func$$0v$$4Q43std3tr16detail51mem_fn_2$$0v$$4Q43scn4step4info13MessageWindow$$4PCc$$4PCc$$1$$4Q33std3tr1220tuple$$0PQ43scn4step4info13MessageWindow$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1:
-	.incbin "baserom.dol", 0x48BFA8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x803AF644
+	.4byte 0x803AF30C
+	.4byte 0x803AF34C
+	.4byte 0x803AF368
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q43std3tr16detail298function_imp$$0PFv_v$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1161tuple$$0PQ43scn4step4info13MessageWindow$$4i$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail298function_imp$$0PFv_v$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1161tuple$$0PQ43scn4step4info13MessageWindow$$4i$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48BFD8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0x803AF640
+	.4byte 0x803AF36C
+	.4byte 0x803AF3AC
+	.4byte 0x803AF3C8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1161tuple$$0PQ43scn4step4info13MessageWindow$$4i$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1161tuple$$0PQ43scn4step4info13MessageWindow$$4i$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48C008, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803AF63C
+	.4byte 0x803AF3D0
+	.4byte 0x803AF410
+	.4byte 0x803AF42C
 .global __vt__Q43std3tr16detail299function_imp$$0PFv_b$$4Q43std3tr16detail255bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1162tuple$$0PQ43scn4step4info13MessageWindow$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1
 __vt__Q43std3tr16detail299function_imp$$0PFv_b$$4Q43std3tr16detail255bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1162tuple$$0PQ43scn4step4info13MessageWindow$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
-	.incbin "baserom.dol", 0x48C020, 0x78
+	.4byte 0
+	.4byte 0
+	.4byte 0x803AF638
+	.4byte 0x803AF458
+	.4byte 0x803AF498
+	.4byte 0x803AF4B4
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257581
 $$257581:
-	.incbin "baserom.dol", 0x497A10, 0x8
+	.asciz "Name"
+	.balign 4
 .global $$257582
 $$257582:
-	.incbin "baserom.dol", 0x497A18, 0x8
+	.asciz "Name_Sh"
 .global $$257583
 $$257583:
-	.incbin "baserom.dol", 0x497A20, 0x8
+	.asciz "Exit"
+	.balign 4
 .global $$257584
 $$257584:
-	.incbin "baserom.dol", 0x497A28, 0x8
+	.asciz "Exit_Sh"
 .global $$257585
 $$257585:
-	.incbin "baserom.dol", 0x497A30, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$257590
 $$257590:
-	.incbin "baserom.dol", 0x497A38, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$257596
 $$257596:
-	.incbin "baserom.dol", 0x497A40, 0x4
+	.4byte 0x456E6400
 .global $$257634
 $$257634:
-	.incbin "baserom.dol", 0x497A44, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$257635
 $$257635:
-	.incbin "baserom.dol", 0x497A4C, 0x8
+	.asciz "Next"
+	.balign 4
 .global $$257702
 $$257702:
-	.incbin "baserom.dol", 0x497A54, 0x4
+	.4byte 0
 .global $$257830
 $$257830:
-	.incbin "baserom.dol", 0x497A58, 0x8
+	.asciz "Suspend"

@@ -356,96 +356,131 @@ lbl_801C5F7C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249262
 $$249262:
-	.incbin "baserom.dol", 0x457B30, 0x10
+	.asciz "MintSetting.cpp"
 .global $$249263
 $$249263:
-	.incbin "baserom.dol", 0x457B40, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$249278
 $$249278:
-	.incbin "baserom.dol", 0x457B54, 0x18
+	.asciz "--- MintSetting ---\n"
+	.balign 4
 .global $$249279
 $$249279:
-	.incbin "baserom.dol", 0x457B6C, 0x24
+	.asciz "[vmAllocator]  alloc: %x, free: %x\n"
 .global $$249280
 $$249280:
-	.incbin "baserom.dol", 0x457B90, 0x24
+	.asciz "[runAllocator] alloc: %x, free: %x\n"
 .global $$249283
 $$249283:
-	.incbin "baserom.dol", 0x457BB4, 0x34
+	.asciz "*************************************************\n"
+	.balign 4
 .global $$249284
 $$249284:
-	.incbin "baserom.dol", 0x457BE8, 0x14
+	.asciz "* [Mint][%s] %s\n"
+	.balign 4
 .global $$249285
 $$249285:
-	.incbin "baserom.dol", 0x457BFC, 0x1C
+	.asciz "* ----------------------\n"
+	.balign 4
 .global $$2LOCAL$$2messageKindString__Q26mintvm11MintSettingFQ26mintvm11MintMsgKind$$2table
 $$2LOCAL$$2messageKindString__Q26mintvm11MintSettingFQ26mintvm11MintMsgKind$$2table:
-	.incbin "baserom.dol", 0x457C18, 0xC
+	.4byte 0x80557530
+	.4byte 0x80557538
+	.4byte 0x80557540
 .global __vt__Q26mintvm13MintAllocator
 __vt__Q26mintvm13MintAllocator:
-	.incbin "baserom.dol", 0x457C24, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801C5C54  ;# ptr
+	.4byte 0x801C5F38  ;# ptr
+	.4byte 0x801C5ECC  ;# ptr
 .global __vt__Q26mintvm10IAllocator
 __vt__Q26mintvm10IAllocator:
-	.incbin "baserom.dol", 0x457C38, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801C5BB8  ;# ptr
+	.4byte 0
+	.4byte 0
 .global $$2STRING$$2UnsetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20
 $$2STRING$$2UnsetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20:
-	.incbin "baserom.dol", 0x457C4C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2UnsetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv
 $$2STRING$$2UnsetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv:
-	.incbin "baserom.dol", 0x457C60, 0x18
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 .global $$2STRING$$2SetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1FRQ26mintvm11MintSetting$$20
 $$2STRING$$2SetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1FRQ26mintvm11MintSetting$$20:
-	.incbin "baserom.dol", 0x457C78, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2SetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1FRQ26mintvm11MintSetting
 $$2STRING$$2SetInstance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1FRQ26mintvm11MintSetting:
-	.incbin "baserom.dol", 0x457C8C, 0x18
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 .global $$2STRING$$2__dt__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20
 $$2STRING$$2__dt__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20:
-	.incbin "baserom.dol", 0x457CA4, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2__dt__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv
 $$2STRING$$2__dt__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv:
-	.incbin "baserom.dol", 0x457CB8, 0x18
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 .global $$2STRING$$2__ct__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20
 $$2STRING$$2__ct__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20:
-	.incbin "baserom.dol", 0x457CD0, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2__ct__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv
 $$2STRING$$2__ct__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv:
-	.incbin "baserom.dol", 0x457CE4, 0x18
+	.asciz "ExplicitSingleton.hpp"
+	.balign 4
 .global $$2STRING$$2mintAlloc__Q26mintvm13MintAllocatorFUl$$20
 $$2STRING$$2mintAlloc__Q26mintvm13MintAllocatorFUl$$20:
-	.incbin "baserom.dol", 0x457CFC, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2mintAlloc__Q26mintvm13MintAllocatorFUl
 $$2STRING$$2mintAlloc__Q26mintvm13MintAllocatorFUl:
-	.incbin "baserom.dol", 0x457D10, 0x14
+	.asciz "MintAllocator.hpp"
+	.balign 4
 .global $$2STRING$$2mintFree__Q26mintvm13MintAllocatorFPv$$20
 $$2STRING$$2mintFree__Q26mintvm13MintAllocatorFPv$$20:
-	.incbin "baserom.dol", 0x457D24, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2mintFree__Q26mintvm13MintAllocatorFPv
 $$2STRING$$2mintFree__Q26mintvm13MintAllocatorFPv:
-	.incbin "baserom.dol", 0x457D38, 0x14
+	.asciz "MintAllocator.hpp"
+	.balign 4
 .global $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$22
 $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$22:
-	.incbin "baserom.dol", 0x457D4C, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$21
 $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$21:
-	.incbin "baserom.dol", 0x457D60, 0x14
+	.asciz "MintAllocator.hpp"
+	.balign 4
 .global $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$20
 $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$20:
-	.incbin "baserom.dol", 0x457D74, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2verify__Q26mintvm13MintAllocatorFv
 $$2STRING$$2verify__Q26mintvm13MintAllocatorFv:
-	.incbin "baserom.dol", 0x457D88, 0x18
+	.asciz "MintAllocator.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249286
 $$249286:
-	.incbin "baserom.dol", 0x493908, 0x8
+	.asciz "* %s\n"
+	.balign 4
 .global $$249078
 $$249078:
-	.incbin "baserom.dol", 0x493910, 0x8
+	.asciz "Warning"
 .global $$249079
 $$249079:
-	.incbin "baserom.dol", 0x493918, 0x8
+	.asciz "Error"
+	.balign 4
 .global $$249080
 $$249080:
-	.incbin "baserom.dol", 0x493920, 0x8
+	.asciz "Fatal"
+	.balign 4

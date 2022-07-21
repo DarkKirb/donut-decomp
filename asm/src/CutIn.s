@@ -728,99 +728,135 @@ lbl_803B255C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252354
 $$252354:
-	.incbin "baserom.dol", 0x453868, 0x18
+	.asciz "step/lvmap/Cutinanime"
+	.balign 4
 .global $$252355
 $$252355:
-	.incbin "baserom.dol", 0x453880, 0xC
+	.asciz "CutinAnime"
+	.balign 4
 .global $$252356
 $$252356:
-	.incbin "baserom.dol", 0x45388C, 0xC
+	.asciz "Lv%dTextN"
+	.balign 4
 .global $$252439
 $$252439:
-	.incbin "baserom.dol", 0x453898, 0xC
+	.asciz "TitleText"
+	.balign 4
 .global $$252440
 $$252440:
-	.incbin "baserom.dol", 0x4538A4, 0xC
+	.asciz "Lv%dTitle"
+	.balign 4
 .global $$252441
 $$252441:
-	.incbin "baserom.dol", 0x4538B0, 0x10
+	.asciz "TitleTextSh"
+	.4byte 0
 .global $$252442
 $$252442:
-	.incbin "baserom.dol", 0x4538C0, 0x10
+	.asciz "Lv%dMapNameText"
 .global $$252443
 $$252443:
-	.incbin "baserom.dol", 0x4538D0, 0x14
+	.asciz "Lv%dTitleMain_00"
+	.balign 4
 .global $$252444
 $$252444:
-	.incbin "baserom.dol", 0x4538E4, 0x14
+	.asciz "Lv%dMapNameTextSh"
+	.balign 4
 .global $$252445
 $$252445:
-	.incbin "baserom.dol", 0x4538F8, 0x18
+	.asciz "Lv%dMapNameText2"
+	.balign 4
+	.4byte 0
 .global $$252446
 $$252446:
-	.incbin "baserom.dol", 0x453910, 0x10
+	.asciz "Lv%dTitleSub_00"
 .global $$252447
 $$252447:
-	.incbin "baserom.dol", 0x453920, 0x10
+	.asciz "Lv%dAreaText"
+	.balign 4
 .global $$252449
 $$252449:
-	.incbin "baserom.dol", 0x453930, 0x40
+	.asciz "Lv%dAreaTextSh"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252734
 $$252734:
-	.incbin "baserom.dol", 0x48C458, 0x14
+	.asciz "step/challenge/Main"
 .global $$252735
 $$252735:
-	.incbin "baserom.dol", 0x48C46C, 0x10
+	.asciz "TutorialBase"
+	.balign 4
 .global $$252737
 $$252737:
-	.incbin "baserom.dol", 0x48C47C, 0x18
+	.asciz "step/challenge/Master"
+	.balign 4
 .global $$252738
 $$252738:
-	.incbin "baserom.dol", 0x48C494, 0xC
+	.asciz "BoardMaster"
 .global $$252739
 $$252739:
-	.incbin "baserom.dol", 0x48C4A0, 0x18
+	.asciz "step/challenge/Musou"
+	.balign 4
 .global $$252740
 $$252740:
-	.incbin "baserom.dol", 0x48C4B8, 0xC
+	.asciz "BoardMusou"
+	.balign 4
 .global $$252741
 $$252741:
-	.incbin "baserom.dol", 0x48C4C4, 0x18
+	.asciz "step/challenge/Normal"
+	.balign 4
 .global $$252742
 $$252742:
-	.incbin "baserom.dol", 0x48C4DC, 0x44
+	.asciz "BoardChallenge"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252448
 $$252448:
-	.incbin "baserom.dol", 0x493518, 0x8
+	.asciz "Lv%d"
+	.balign 4
 .global $$252452
 $$252452:
-	.incbin "baserom.dol", 0x493520, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252455
 $$252455:
-	.incbin "baserom.dol", 0x493528, 0x4
+	.4byte 0x456E6400
 .global $$252458
 $$252458:
-	.incbin "baserom.dol", 0x49352C, 0xC
+	.asciz "Wait"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252736
 $$252736:
-	.incbin "baserom.dol", 0x497B60, 0x8
+	.asciz "TitleN"
+	.balign 4
 .global $$252743
 $$252743:
-	.incbin "baserom.dol", 0x497B68, 0x8
+	.asciz "BoardN"
+	.balign 4
 .global $$252744
 $$252744:
-	.incbin "baserom.dol", 0x497B70, 0x8
+	.asciz "Close"
+	.balign 4
 .global $$252745
 $$252745:
-	.incbin "baserom.dol", 0x497B78, 0x8
+	.asciz "close"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251802
 $$251802:
-	.incbin "baserom.dol", 0x49E458, 0x8
+	.4byte 0x000000FF
+	.4byte 0

@@ -277,37 +277,67 @@ GetRuntimeTypeInfo__Q33scn5comic10SceneComicCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251709
 $$251709:
-	.incbin "baserom.dol", 0x45C458, 0x10
+	.asciz "ComicSakuma.dn"
+	.balign 4
 .global $$251710
 $$251710:
-	.incbin "baserom.dol", 0x45C468, 0x10
+	.asciz "ComicHikawa.dn"
+	.balign 4
 .global $$251711
 $$251711:
-	.incbin "baserom.dol", 0x45C478, 0x14
+	.asciz "ComicTaniguchi.dn"
+	.balign 4
 .global T_COMIC_DN_TABLE__Q33scn5comic24$$2unnamed$$2SceneComic_cpp$$2
 T_COMIC_DN_TABLE__Q33scn5comic24$$2unnamed$$2SceneComic_cpp$$2:
-	.incbin "baserom.dol", 0x45C48C, 0xC
+	.4byte 0x80460358
+	.4byte 0x80460368
+	.4byte 0x80460378
 .global $$252094
 $$252094:
-	.incbin "baserom.dol", 0x45C498, 0x10
+	.asciz "ComicCommon.dn"
+	.balign 4
 .global $$252095
 $$252095:
-	.incbin "baserom.dol", 0x45C4A8, 0x18
+	.asciz "HistoryLayoutDetail.dn"
+	.balign 4
 .global $$252096
 $$252096:
-	.incbin "baserom.dol", 0x45C4C0, 0x14
+	.asciz "HistoryPackage1.dn"
+	.balign 4
 .global $$252097
 $$252097:
-	.incbin "baserom.dol", 0x45C4D4, 0x14
+	.asciz "HistoryPackage2.dn"
+	.balign 4
 .global $$252098
 $$252098:
-	.incbin "baserom.dol", 0x45C4E8, 0x14
+	.asciz "HistoryPackage3.dn"
+	.balign 4
 .global $$252099
 $$252099:
-	.incbin "baserom.dol", 0x45C4FC, 0x14
+	.asciz "HistoryCommon.dn"
+	.balign 4
 .global __vt__Q33scn5comic10SceneComic
 __vt__Q33scn5comic10SceneComic:
-	.incbin "baserom.dol", 0x45C510, 0x58
+	.4byte 0
+	.4byte 0
+	.4byte 0x802006DC  ;# ptr
+	.4byte 0x80200598  ;# ptr
+	.4byte 0x8020062C  ;# ptr
+	.4byte 0x80200604  ;# ptr
+	.4byte 0x80200654  ;# ptr
+	.4byte 0x8020067C  ;# ptr
+	.4byte 0x802006B4  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.asciz "no name class"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q33scn5comic10SceneComic$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti

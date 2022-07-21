@@ -749,12 +749,16 @@ lbl_8004E720:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21127
 $$21127:
-	.incbin "baserom.dol", 0x434598, 0x24
+	.asciz "ARCInitHandle: bad archive format"
+	.balign 4
 .global $$21189
 $$21189:
-	.incbin "baserom.dol", 0x4345BC, 0x4C
+	.asciz "Warning: ARCOpen(): file '%s' was not found under %s in the archive.\n"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21126
 $$21126:
-	.incbin "baserom.dol", 0x492B80, 0x8
+	.asciz "arc.c"
+	.balign 4

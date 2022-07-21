@@ -442,71 +442,105 @@ lbl_803B00E8:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252167
 $$252167:
-	.incbin "baserom.dol", 0x41BEF8, 0x18
+	.4byte 0x8055B6F8
+	.4byte 0x8055B6FC
+	.4byte 0x8055B704
+	.4byte 0x8055B70C
+	.4byte 0x80490058
+	.4byte 0x8055B714
 .global $$252187
 $$252187:
-	.incbin "baserom.dol", 0x41BF10, 0x18
+	.4byte 0x8055B6F8
+	.4byte 0x80490064
+	.4byte 0x80490070
+	.4byte 0x8049007C
+	.4byte 0x80490088
+	.4byte 0x80490098
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252619
 $$252619:
-	.incbin "baserom.dol", 0x48C0F8, 0x20
+	.asciz "step/info/TotalScorePanel"
+	.balign 4
+	.4byte 0
 .global $$252620
 $$252620:
-	.incbin "baserom.dol", 0x48C118, 0x10
+	.asciz "step/lvmap/Main"
 .global $$252621
 $$252621:
-	.incbin "baserom.dol", 0x48C128, 0x10
+	.asciz "TotalScore"
+	.balign 4
+	.4byte 0
 .global $$252622
 $$252622:
-	.incbin "baserom.dol", 0x48C138, 0x10
+	.asciz "TotalScoreMedal"
 .global $$252623
 $$252623:
-	.incbin "baserom.dol", 0x48C148, 0x10
+	.asciz "TotalScoreBaseN"
 .global $$252165
 $$252165:
-	.incbin "baserom.dol", 0x48C158, 0xC
+	.asciz "Platinum"
+	.balign 4
 .global $$252182
 $$252182:
-	.incbin "baserom.dol", 0x48C164, 0xC
+	.asciz "BronzeWait"
+	.balign 4
 .global $$252183
 $$252183:
-	.incbin "baserom.dol", 0x48C170, 0xC
+	.asciz "SilverWait"
+	.balign 4
 .global $$252184
 $$252184:
-	.incbin "baserom.dol", 0x48C17C, 0xC
+	.asciz "GoldWait"
+	.balign 4
 .global $$252185
 $$252185:
-	.incbin "baserom.dol", 0x48C188, 0x10
+	.asciz "PlatinumWait"
+	.balign 4
 .global $$252186
 $$252186:
-	.incbin "baserom.dol", 0x48C198, 0x40
+	.asciz "KingWait"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252624
 $$252624:
-	.incbin "baserom.dol", 0x497AB8, 0x8
+	.asciz "Title"
+	.balign 4
 .global $$252625
 $$252625:
-	.incbin "baserom.dol", 0x497AC0, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$252626
 $$252626:
-	.incbin "baserom.dol", 0x497AC8, 0x8
+	.asciz "MedalN"
+	.balign 4
 .global $$252695
 $$252695:
-	.incbin "baserom.dol", 0x497AD0, 0x8
+	.asciz "RankUp"
+	.balign 4
 .global $$252161
 $$252161:
-	.incbin "baserom.dol", 0x497AD8, 0x4
+	.4byte 0
 .global $$252162
 $$252162:
-	.incbin "baserom.dol", 0x497ADC, 0x8
+	.asciz "Bronze"
+	.balign 4
 .global $$252163
 $$252163:
-	.incbin "baserom.dol", 0x497AE4, 0x8
+	.asciz "Silver"
+	.balign 4
 .global $$252164
 $$252164:
-	.incbin "baserom.dol", 0x497AEC, 0x8
+	.asciz "Gold"
+	.balign 4
 .global $$252166
 $$252166:
-	.incbin "baserom.dol", 0x497AF4, 0xC
+	.asciz "King"
+	.balign 4
+	.4byte 0

@@ -62,12 +62,15 @@ __ct__Q25pause11WindowPanelFRQ25pause9ComponentRCQ23lyt12PaneAccessorb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252028
 $$252028:
-	.incbin "baserom.dol", 0x459C70, 0xC
+	.asciz "Pattern01N"
+	.balign 4
 .global $$252029
 $$252029:
-	.incbin "baserom.dol", 0x459C7C, 0xC
+	.asciz "Pattern02N"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252027
 $$252027:
-	.incbin "baserom.dol", 0x493D08, 0x8
+	.asciz "Window"
+	.balign 4

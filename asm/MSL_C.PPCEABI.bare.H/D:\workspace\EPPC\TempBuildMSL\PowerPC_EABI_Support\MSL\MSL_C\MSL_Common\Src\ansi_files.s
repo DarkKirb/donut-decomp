@@ -85,7 +85,86 @@ lbl_80009834:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __files
 __files:
-	.incbin "baserom.dol", 0x41D1F8, 0x140
+	.4byte 0
+	.4byte 0x0A800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80496AB8
+	.4byte 0x00000100
+	.4byte 0x80496AB8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x800186F8  ;# ptr
+	.4byte 0x80010454  ;# ptr
+	.4byte 0x80010524  ;# ptr
+	.4byte 0
+	.4byte 0x80421148
+	.4byte 0x00000001
+	.4byte 0x12800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804969B8
+	.4byte 0x00000100
+	.4byte 0x804969B8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x800186F8  ;# ptr
+	.4byte 0x80010454  ;# ptr
+	.4byte 0x80010524  ;# ptr
+	.4byte 0
+	.4byte 0x80421198
+	.4byte 0x00000002
+	.4byte 0x10800000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x804968B8
+	.4byte 0x00000100
+	.4byte 0x804968B8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x800186F8  ;# ptr
+	.4byte 0x80010454  ;# ptr
+	.4byte 0x80010524  ;# ptr
+	.4byte 0
+	.4byte 0x804211E8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global stderr_buff

@@ -307,9 +307,17 @@ procFixPos__Q53scn4step4boss15challengemaster14StateSCPursuitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss15challengemaster14StateSCPursuit
 __vt__Q53scn4step4boss15challengemaster14StateSCPursuit:
-	.incbin "baserom.dol", 0x462088, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80242C60  ;# ptr
+	.4byte 0x80242C64  ;# ptr
+	.4byte 0x80242CAC  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80242ECC  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256097
 $$256097:
-	.incbin "baserom.dol", 0x49B0D0, 0x8
+	.4byte 0
+	.4byte 0

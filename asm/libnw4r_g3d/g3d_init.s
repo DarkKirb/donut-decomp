@@ -75,9 +75,11 @@ lbl_800F1788:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$28056
 $$28056:
-	.incbin "baserom.dol", 0x43D290, 0x48
+	.asciz "<< NW4R    - G3D \tfinal   build: Apr 28 2011 11:05:58 (0x4302_188) >>"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_G3D_Version___22$$2unnamed$$2g3d_init_cpp$$2
 NW4R_G3D_Version___22$$2unnamed$$2g3d_init_cpp$$2:
-	.incbin "baserom.dol", 0x492E20, 0x8
+	.4byte 0x80441190
+	.4byte 0

@@ -395,38 +395,53 @@ run__Q26freeze12FreezeThreadFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$248997
 $$248997:
-	.incbin "baserom.dol", 0x410670, 0x28
+	.4byte 0x00000C00
+	.4byte 0x00000100
+	.4byte 0x00000002
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0x00001000
+	.4byte 0x00000008
+	.4byte 0x00000200
+	.4byte 0x00000004
+	.4byte 0x00000100
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249333
 $$249333:
-	.incbin "baserom.dol", 0x450020, 0x20
+	.asciz "Address   BackChain LR save\n"
+	.balign 4
 .global $$249334
 $$249334:
-	.incbin "baserom.dol", 0x450040, 0x14
+	.asciz "%08X  %08X  %08X "
+	.balign 4
 .global $$249432
 $$249432:
-	.incbin "baserom.dol", 0x450054, 0x1C
+	.asciz "[ originate exception ]\n"
+	.balign 4
 .global $$249433
 $$249433:
-	.incbin "baserom.dol", 0x450070, 0x20
+	.asciz "--OSThread=%p con=%p pri=%2d--\n"
 .global $$249434
 $$249434:
-	.incbin "baserom.dol", 0x450090, 0x24
+	.asciz "--debug context (from OSPanic)--\n"
+	.balign 4
 .global $$249435
 $$249435:
-	.incbin "baserom.dol", 0x4500B4, 0x2C
+	.asciz "==---------------------------------------\n\n"
 .global $$249436
 $$249436:
-	.incbin "baserom.dol", 0x4500E0, 0x2C
+	.asciz "-----------------------------------------\n"
+	.balign 4
 .global $$249437
 $$249437:
-	.incbin "baserom.dol", 0x45010C, 0x2C
+	.asciz "--- Thread list end (thread num %d) ---\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249335
 $$249335:
-	.incbin "baserom.dol", 0x493150, 0x4
+	.4byte 0x25730A00
 .global $$249336
 $$249336:
-	.incbin "baserom.dol", 0x493154, 0x4
+	.4byte 0x0A000000

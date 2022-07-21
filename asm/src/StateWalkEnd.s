@@ -91,9 +91,17 @@ lbl_802D5F54:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5rocky12StateWalkEnd
 __vt__Q53scn4step5enemy5rocky12StateWalkEnd:
-	.incbin "baserom.dol", 0x477048, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D5EC0  ;# ptr
+	.4byte 0x802D5EC4  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802D5EC8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255720
 $$255720:
-	.incbin "baserom.dol", 0x49CB70, 0x8
+	.4byte 0x3F800000
+	.4byte 0

@@ -5734,200 +5734,244 @@ lbl_80070368:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21614
 $$21614:
-	.incbin "baserom.dol", 0x436000, 0x48
+	.asciz "<< RVL_SDK - KPAD \trelease build: Aug 23 2010 19:48:23 (0x4302_145) >>"
+	.balign 4
 .global $$24805
 $$24805:
-	.incbin "baserom.dol", 0x436048, 0x54
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBDC  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
+	.4byte 0x8006BBE0  ;# ptr
 .global $$2LOCAL$$2KPADiSamplingCallback__Fl$$2table
 $$2LOCAL$$2KPADiSamplingCallback__Fl$$2table:
-	.incbin "baserom.dol", 0x43609C, 0x2C
+	.4byte 0x00010302
+	.4byte 0x00040105
+	.4byte 0x00070108
+	.4byte 0x000B010B
+	.4byte 0x000F010F
+	.4byte 0x000C000C
+	.4byte 0x000A000A
+	.4byte 0x00110111
+	.4byte 0x00100110
+	.4byte 0x00130013
+	.4byte 0x00140014
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __KPADVersion
 __KPADVersion:
-	.incbin "baserom.dol", 0x492BE8, 0x4
+	.4byte 0x80439F00
 .global idist_org
 idist_org:
-	.incbin "baserom.dol", 0x492BEC, 0x4
+	.4byte 0x3F800000
 .global iaccXY_nrm_hori
 iaccXY_nrm_hori:
-	.incbin "baserom.dol", 0x492BF0, 0x4
+	.4byte 0
 .global lbl_80556814
 lbl_80556814:
-	.incbin "baserom.dol", 0x492BF4, 0x4
+	.4byte 0xBF800000
 .global isec_nrm_hori
 isec_nrm_hori:
-	.incbin "baserom.dol", 0x492BF8, 0x4
+	.4byte 0x3F800000
 .global lbl_8055681C
 lbl_8055681C:
-	.incbin "baserom.dol", 0x492BFC, 0x4
+	.4byte 0
 .global kp_obj_interval
 kp_obj_interval:
-	.incbin "baserom.dol", 0x492C00, 0x4
+	.4byte 0x3E4CCCCD
 .global kp_acc_horizon_pw
 kp_acc_horizon_pw:
-	.incbin "baserom.dol", 0x492C04, 0x4
+	.4byte 0x3D4CCCCD
 .global kp_ah_circle_radius
 kp_ah_circle_radius:
-	.incbin "baserom.dol", 0x492C08, 0x4
+	.4byte 0x3D8F5C29
 .global kp_ah_circle_pw
 kp_ah_circle_pw:
-	.incbin "baserom.dol", 0x492C0C, 0x4
+	.4byte 0x3D75C28F
 .global kp_ah_circle_ct
 kp_ah_circle_ct:
-	.incbin "baserom.dol", 0x492C10, 0x4
+	.4byte 0x00640000
 .global kp_err_outside_frame
 kp_err_outside_frame:
-	.incbin "baserom.dol", 0x492C14, 0x4
+	.4byte 0x3D4CCCCD
 .global kp_err_dist_max
 kp_err_dist_max:
-	.incbin "baserom.dol", 0x492C18, 0x4
+	.4byte 0x40400000
 .global kp_err_dist_speed
 kp_err_dist_speed:
-	.incbin "baserom.dol", 0x492C1C, 0x4
+	.4byte 0x3D23D70A
 .global kp_err_first_inpr
 kp_err_first_inpr:
-	.incbin "baserom.dol", 0x492C20, 0x4
+	.4byte 0x3F666666
 .global kp_err_next_inpr
 kp_err_next_inpr:
-	.incbin "baserom.dol", 0x492C24, 0x4
+	.4byte 0x3F666666
 .global kp_err_acc_inpr
 kp_err_acc_inpr:
-	.incbin "baserom.dol", 0x492C28, 0x4
+	.4byte 0x3F666666
 .global kp_err_up_inpr
 kp_err_up_inpr:
-	.incbin "baserom.dol", 0x492C2C, 0x4
+	.4byte 0x3F333333
 .global kp_err_near_pos
 kp_err_near_pos:
-	.incbin "baserom.dol", 0x492C30, 0x4
+	.4byte 0x3DCCCCCD
 .global kp_fs_fstick_min
 kp_fs_fstick_min:
-	.incbin "baserom.dol", 0x492C34, 0x4
+	.4byte 0x0000000F
 .global kp_fs_fstick_max
 kp_fs_fstick_max:
-	.incbin "baserom.dol", 0x492C38, 0x4
+	.4byte 0x00000047
 .global kp_cl_stick_min
 kp_cl_stick_min:
-	.incbin "baserom.dol", 0x492C3C, 0x4
+	.4byte 0x0000003C
 .global kp_cl_stick_max
 kp_cl_stick_max:
-	.incbin "baserom.dol", 0x492C40, 0x4
+	.4byte 0x00000134
 .global kp_cl_trigger_min
 kp_cl_trigger_min:
-	.incbin "baserom.dol", 0x492C44, 0x4
+	.4byte 0x0000001E
 .global kp_cl_trigger_max
 kp_cl_trigger_max:
-	.incbin "baserom.dol", 0x492C48, 0x4
+	.4byte 0x000000B4
 .global kp_rm_acc_max
 kp_rm_acc_max:
-	.incbin "baserom.dol", 0x492C4C, 0x4
+	.4byte 0x4059999A
 .global kp_fs_acc_max
 kp_fs_acc_max:
-	.incbin "baserom.dol", 0x492C50, 0x4
+	.4byte 0x40066666
 .global kp_ex_trigger_max
 kp_ex_trigger_max:
-	.incbin "baserom.dol", 0x492C54, 0x4
+	.4byte 0x00000100
 .global kp_ex_analog_max
 kp_ex_analog_max:
-	.incbin "baserom.dol", 0x492C58, 0x4
+	.4byte 0x00000400
 .global kp_wbc_ave_count
 kp_wbc_ave_count:
-	.incbin "baserom.dol", 0x492C5C, 0x4
+	.4byte 0x43C80000
 .global kp_wbc_calib_count
 kp_wbc_calib_count:
-	.incbin "baserom.dol", 0x492C60, 0x4
+	.4byte 0xC8000000
 .global kp_wbc_stable_count
 kp_wbc_stable_count:
-	.incbin "baserom.dol", 0x492C64, 0x8
+	.4byte 0x02020305
+	.4byte 0x05050000
 .global kp_fs_revise_deg
 kp_fs_revise_deg:
-	.incbin "baserom.dol", 0x492C6C, 0x4
+	.4byte 0x41C00000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24535
 $$24535:
-	.incbin "baserom.dol", 0x499310, 0x4
+	.4byte 0
 .global $$24536
 $$24536:
-	.incbin "baserom.dol", 0x499314, 0x4
+	.4byte 0x3F000000
 .global $$24537
 $$24537:
-	.incbin "baserom.dol", 0x499318, 0x4
+	.4byte 0x43480000
 .global $$24580
 $$24580:
-	.incbin "baserom.dol", 0x49931C, 0x4
+	.4byte 0xBF800000
 .global $$24581
 $$24581:
-	.incbin "baserom.dol", 0x499320, 0x4
+	.4byte 0x3F800000
 .global $$24582
 $$24582:
-	.incbin "baserom.dol", 0x499324, 0x4
+	.4byte 0xBF400000
 .global $$24583
 $$24583:
-	.incbin "baserom.dol", 0x499328, 0x4
+	.4byte 0x3F400000
 .global $$24712
 $$24712:
-	.incbin "baserom.dol", 0x49932C, 0x4
+	.4byte 0x40000000
 .global $$24806
 $$24806:
-	.incbin "baserom.dol", 0x499330, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$25024
 $$25024:
-	.incbin "baserom.dol", 0x499338, 0x4
+	.4byte 0x3B000000
 .global $$25025
 $$25025:
-	.incbin "baserom.dol", 0x49933C, 0x4
+	.4byte 0x3F7FC000
 .global $$25026
 $$25026:
-	.incbin "baserom.dol", 0x499340, 0x8
+	.4byte 0x3F3FC000
+	.4byte 0
 .global $$25391
 $$25391:
-	.incbin "baserom.dol", 0x499348, 0x8
+	.4byte 0x4062C000
+	.4byte 0
 .global $$25392
 $$25392:
-	.incbin "baserom.dol", 0x499350, 0x8
+	.4byte 0x3E4CCCCD
+	.4byte 0
 .global $$25393
 $$25393:
-	.incbin "baserom.dol", 0x499358, 0x8
+	.4byte 0x40410000
+	.4byte 0
 .global $$25394
 $$25394:
-	.incbin "baserom.dol", 0x499360, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$25395
 $$25395:
-	.incbin "baserom.dol", 0x499368, 0x8
+	.4byte 0
+	.4byte 0
 .global $$25396
 $$25396:
-	.incbin "baserom.dol", 0x499370, 0x8
+	.4byte 0xBFF00000
+	.4byte 0
 .global $$25397
 $$25397:
-	.incbin "baserom.dol", 0x499378, 0x8
+	.4byte 0x3FE00000
+	.4byte 0
 .global $$25403
 $$25403:
-	.incbin "baserom.dol", 0x499380, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$25550
 $$25550:
-	.incbin "baserom.dol", 0x499388, 0x8
+	.4byte 0x3FD33333
+	.4byte 0x33333333
 .global $$25613
 $$25613:
-	.incbin "baserom.dol", 0x499390, 0x4
+	.4byte 0x3EC489D2
 .global $$25614
 $$25614:
-	.incbin "baserom.dol", 0x499394, 0x4
+	.4byte 0x3C8EFA35
 .global $$25799
 $$25799:
-	.incbin "baserom.dol", 0x499398, 0x4
+	.4byte 0x3BA3D70A
 .global $$25800
 $$25800:
-	.incbin "baserom.dol", 0x49939C, 0x4
+	.4byte 0x3C23D70A
 .global $$23159
 $$23159:
-	.incbin "baserom.dol", 0x4993A0, 0x4
+	.4byte 0x00010001
 .global lbl_8055E864
 lbl_8055E864:
-	.incbin "baserom.dol", 0x4993A4, 0x4
+	.4byte 0x00010000
 .global $$26007
 $$26007:
-	.incbin "baserom.dol", 0x4993A8, 0x8
+	.4byte 0xBE4CCCCD
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global inside_kpads

@@ -998,30 +998,66 @@ AXGetMaxVoices:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __AXMixCycles
 __AXMixCycles:
-	.incbin "baserom.dol", 0x42F0D0, 0x80
+	.4byte 0x00000002
+	.4byte 0x00000198
+	.4byte 0x00000198
+	.4byte 0x0000032A
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x00000198
+	.4byte 0x00000330
+	.4byte 0x00000330
+	.4byte 0x000004C2
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
 .global __AXRmtMixCycles
 __AXRmtMixCycles:
-	.incbin "baserom.dol", 0x42F150, 0x10
+	.4byte 0x00000004
+	.4byte 0x00000056
+	.4byte 0x00000097
+	.4byte 0x00000097
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23525
 $$23525:
-	.incbin "baserom.dol", 0x4991E8, 0x4
+	.4byte 0x40000000
 .global $$23526
 $$23526:
-	.incbin "baserom.dol", 0x4991EC, 0x4
+	.4byte 0x40C90FDB
 .global $$23527
 $$23527:
-	.incbin "baserom.dol", 0x4991F0, 0x4
+	.4byte 0x46FA0000
 .global $$23528
 $$23528:
-	.incbin "baserom.dol", 0x4991F4, 0x4
+	.4byte 0x3F800000
 .global $$23529
 $$23529:
-	.incbin "baserom.dol", 0x4991F8, 0x8
+	.4byte 0x47000000
+	.4byte 0
 .global $$23533
 $$23533:
-	.incbin "baserom.dol", 0x499200, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __s_AXPB

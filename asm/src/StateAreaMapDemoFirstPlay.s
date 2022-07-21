@@ -160,4 +160,13 @@ procFixPos__Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlayFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay
 __vt__Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay:
-	.incbin "baserom.dol", 0x488930, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80378D74
+	.4byte 0x80378E04
+	.4byte 0x80378ED0
+	.4byte 0x8035550C
+	.4byte 0x80378ED4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

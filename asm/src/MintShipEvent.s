@@ -23,7 +23,7 @@ __sinit_$$3MintShipEvent_cpp:
 /* 8031F7C0 0031B600  4B DB DC 20 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025B8, 0x4
+	.4byte 0x8031F7BC
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q53scn4step7gimmick9shipevent27$$2unnamed$$2MintShipEvent_cpp$$2

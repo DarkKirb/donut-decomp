@@ -242,4 +242,11 @@ lbl_80298394:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11bladeknight13StateStepBack
 __vt__Q53scn4step5enemy11bladeknight13StateStepBack:
-	.incbin "baserom.dol", 0x46FB88, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029813C  ;# ptr
+	.4byte 0x80298140  ;# ptr
+	.4byte 0x8029818C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x80298224  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

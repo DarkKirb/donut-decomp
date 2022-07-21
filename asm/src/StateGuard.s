@@ -853,25 +853,57 @@ procFixPos__Q53scn4step4hero6damage10StateGuardFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10gigantedge10StateGuard
 __vt__Q53scn4step4boss10gigantedge10StateGuard:
-	.incbin "baserom.dol", 0x464110, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80252424  ;# ptr
+	.4byte 0x802524C8  ;# ptr
+	.4byte 0x80252570  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x802525C4  ;# ptr
+	.4byte 0x802525C8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util118StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$4Q43scn4step4hero10ScriptKind$$1
 __vt__Q24util118StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$4Q43scn4step4hero10ScriptKind$$1:
-	.incbin "baserom.dol", 0x487D58, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80363840
+	.4byte 0x803637FC
 .global __vt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateGuard$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util93StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateGuard$$4PQ43scn4step4hero4Hero$$4b$$1:
-	.incbin "baserom.dol", 0x487D68, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036383C
+	.4byte 0x8036381C
 .global __vt__Q53scn4step4hero6common10StateGuard
 __vt__Q53scn4step4hero6common10StateGuard:
-	.incbin "baserom.dol", 0x487D78, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803634A4
+	.4byte 0x80363520
+	.4byte 0x8036369C
+	.4byte 0x8035550C
+	.4byte 0x803636C0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6damage10StateGuard
 __vt__Q53scn4step4hero6damage10StateGuard:
-	.incbin "baserom.dol", 0x4887E0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8037712C
+	.4byte 0x803771A8
+	.4byte 0x8037721C
+	.4byte 0x8035550C
+	.4byte 0x80377240
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256790
 $$256790:
-	.incbin "baserom.dol", 0x49DE70, 0x8
+	.4byte 0x3E4CCCCD
+	.4byte 0

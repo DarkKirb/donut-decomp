@@ -34,7 +34,7 @@ __ct__Q35mcoll6detail14CollidedActionFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248848
 $$248848:
-	.incbin "baserom.dol", 0x49A578, 0x4
+	.4byte 0
 .global $$248852
 $$248852:
-	.incbin "baserom.dol", 0x49A57C, 0x4
+	.4byte 0x3F800000

@@ -1326,31 +1326,48 @@ lbl_8009F524:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21493
 $$21493:
-	.incbin "baserom.dol", 0x43BB38, 0x28
+	.asciz "SDP - Unexp. PDU: %d in state: %d"
+	.balign 4
+	.4byte 0
 .global $$21510
 $$21510:
-	.incbin "baserom.dol", 0x43BB60, 0x28
+	.asciz "SDP - Rcvd ServiceSearchRsp, no matches"
 .global $$21585
 $$21585:
-	.incbin "baserom.dol", 0x43BB88, 0x28
+	.asciz "SDP - Wrong type: 0x%02x in attr_rsp"
+	.balign 4
 .global $$21610
 $$21610:
-	.incbin "baserom.dol", 0x43BBB0, 0x20
+	.asciz "SDP - Bad len in attr_rsp %d"
+	.balign 4
 .global $$21611
 $$21611:
-	.incbin "baserom.dol", 0x43BBD0, 0x10
+	.asciz "SDP - DB full"
+	.balign 4
 .global $$21612
 $$21612:
-	.incbin "baserom.dol", 0x43BBE0, 0x30
+	.asciz "SDP - Bad type: 0x%02x or len: %d in attr_rsp"
+	.balign 4
 .global $$21716
 $$21716:
-	.incbin "baserom.dol", 0x43BC10, 0x1C
+	.asciz "SDP - attr nesting too deep"
 .global $$21717
 $$21717:
-	.incbin "baserom.dol", 0x43BC2C, 0x20
+	.asciz "SDP - bad len in UUID attr: %d"
+	.balign 4
 .global $$21718
 $$21718:
-	.incbin "baserom.dol", 0x43BC4C, 0x24
+	.asciz "SDP - bad len in boolean attr: %d"
+	.balign 4
 .global $$21723
 $$21723:
-	.incbin "baserom.dol", 0x43BC70, 0x28
+	.4byte 0x8009F4A4  ;# ptr
+	.4byte 0x8009F070  ;# ptr
+	.4byte 0x8009F120  ;# ptr
+	.4byte 0x8009F1DC  ;# ptr
+	.4byte 0x8009F424  ;# ptr
+	.4byte 0x8009F454  ;# ptr
+	.4byte 0x8009F370  ;# ptr
+	.4byte 0x8009F370  ;# ptr
+	.4byte 0x8009F424  ;# ptr
+	.4byte 0

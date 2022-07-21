@@ -256,4 +256,5 @@ polyModelPrefixRef__Q36effect6detail10GenContextCFv:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249006
 $$249006:
-	.incbin "baserom.dol", 0x4930B8, 0x8
+	.4byte 0x25730000
+	.4byte 0

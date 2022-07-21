@@ -3078,128 +3078,154 @@ requestEfConfetti__Q33scn11staffcredit9CommanderFv:
 /* 803F95DC 003F541C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40244C, 0x8
+	.4byte 0x801EC444  ;# ptr
+	.4byte 0x80203844  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_RETRY_HP_RATE_TABLE__Q43scn4step4boss23$$2unnamed$$2Commander_cpp$$2
 T_RETRY_HP_RATE_TABLE__Q43scn4step4boss23$$2unnamed$$2Commander_cpp$$2:
-	.incbin "baserom.dol", 0x412488, 0x20
+	.4byte 0x3F800000
+	.4byte 0x3F7851EC
+	.4byte 0x3F68F5C3
+	.4byte 0x3F6147AE
+	.4byte 0x3F51EB85
+	.4byte 0x3F3D70A4
+	.4byte 0x3F1EB852
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255882
 $$255882:
-	.incbin "baserom.dol", 0x45ACA8, 0x1C
+	.asciz "challengetitle/TitleScene"
+	.balign 4
 .global $$255883
 $$255883:
-	.incbin "baserom.dol", 0x45ACC4, 0xC
+	.asciz "SceneAnim"
+	.balign 4
 .global $$255884
 $$255884:
-	.incbin "baserom.dol", 0x45ACD0, 0x20
+	.asciz "Scn.ChallengeTitle.Script.Start"
 .global $$255900
 $$255900:
-	.incbin "baserom.dol", 0x45ACF0, 0x20
+	.asciz "Scn.ChallengeTitle.Script.Skip"
+	.balign 4
 .global $$255901
 $$255901:
-	.incbin "baserom.dol", 0x45AD10, 0x20
+	.asciz "Scn.ChallengeTitle.Script.Loop"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255960
 $$255960:
-	.incbin "baserom.dol", 0x45CA00, 0x18
+	.asciz "grandtitle/TitleScene"
+	.balign 4
 .global $$255961
 $$255961:
-	.incbin "baserom.dol", 0x45CA18, 0xC
+	.asciz "SceneAnim"
+	.balign 4
 .global $$255962
 $$255962:
-	.incbin "baserom.dol", 0x45CA24, 0x1C
+	.asciz "Scn.GrandTitle.Script.Start"
 .global $$255977
 $$255977:
-	.incbin "baserom.dol", 0x45CA40, 0x1C
+	.asciz "Scn.GrandTitle.Script.Skip"
+	.balign 4
 .global $$255978
 $$255978:
-	.incbin "baserom.dol", 0x45CA5C, 0x1C
+	.asciz "Scn.GrandTitle.Script.Loop"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256622
 $$256622:
-	.incbin "baserom.dol", 0x492020, 0x20
+	.asciz "Scn.StaffCredit.Script.Exec"
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255800
 $$255800:
-	.incbin "baserom.dol", 0x49A908, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255828
 $$255828:
-	.incbin "baserom.dol", 0x49AAC8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259289
 $$259289:
-	.incbin "baserom.dol", 0x49ADE8, 0x4
+	.4byte 0
 .global $$259455
 $$259455:
-	.incbin "baserom.dol", 0x49ADEC, 0x4
+	.4byte 0xBF800000
 .global $$259456
 $$259456:
-	.incbin "baserom.dol", 0x49ADF0, 0x8
+	.4byte 0x3F400000
+	.4byte 0
 .global $$259460
 $$259460:
-	.incbin "baserom.dol", 0x49ADF8, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$259461
 $$259461:
-	.incbin "baserom.dol", 0x49AE00, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$259547
 $$259547:
-	.incbin "baserom.dol", 0x49AE08, 0x4
+	.4byte 0x41A00000
 .global $$259548
 $$259548:
-	.incbin "baserom.dol", 0x49AE0C, 0x4
+	.4byte 0xC0A00000
 .global $$259549
 $$259549:
-	.incbin "baserom.dol", 0x49AE10, 0x4
+	.4byte 0xC1A00000
 .global $$259550
 $$259550:
-	.incbin "baserom.dol", 0x49AE14, 0x4
+	.4byte 0x41700000
 .global $$259551
 $$259551:
-	.incbin "baserom.dol", 0x49AE18, 0x4
+	.4byte 0xC0000000
 .global $$259552
 $$259552:
-	.incbin "baserom.dol", 0x49AE1C, 0x4
+	.4byte 0x40000000
 .global $$259556
 $$259556:
-	.incbin "baserom.dol", 0x49AE20, 0x4
+	.4byte 0x40E00000
 .global $$259557
 $$259557:
-	.incbin "baserom.dol", 0x49AE24, 0x4
+	.4byte 0xC1000000
 .global $$259558
 $$259558:
-	.incbin "baserom.dol", 0x49AE28, 0x4
+	.4byte 0x41000000
 .global $$259613
 $$259613:
-	.incbin "baserom.dol", 0x49AE2C, 0x4
+	.4byte 0x40A00000
 .global $$259625
 $$259625:
-	.incbin "baserom.dol", 0x49AE30, 0x8
+	.4byte 0x40400000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256621
 $$256621:
-	.incbin "baserom.dol", 0x49ED98, 0x4
+	.4byte 0
 .global $$256647
 $$256647:
-	.incbin "baserom.dol", 0x49ED9C, 0x4
+	.4byte 0x3CCCCCCD
 .global $$256648
 $$256648:
-	.incbin "baserom.dol", 0x49EDA0, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$256652
 $$256652:
-	.incbin "baserom.dol", 0x49EDA8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$256774
 $$256774:
-	.incbin "baserom.dol", 0x49EDB0, 0x8
+	.4byte 0x40400000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q33scn14challengetitle23$$2unnamed$$2Commander_cpp$$2

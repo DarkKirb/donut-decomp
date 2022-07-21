@@ -66,45 +66,60 @@ __dt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$
 .section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$210911
 $$210911:
-	.incbin "baserom.dol", 0x402154, 0x8
+	.4byte 0x08080000
+	.4byte 0
 .global $$210953
 $$210953:
-	.incbin "baserom.dol", 0x40215C, 0x8
+	.4byte 0x10080000
+	.4byte 0
 
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$210912
 $$210912:
-	.incbin "baserom.dol", 0x4022C4, 0xC
+	.4byte 0x8001488C  ;# ptr
+	.4byte 0x0000004C
+	.4byte 0x800067F4  ;# ptr
 .global $$210954
 $$210954:
-	.incbin "baserom.dol", 0x4022D0, 0xC
+	.4byte 0x800148E0  ;# ptr
+	.4byte 0x00000060
+	.4byte 0x800067FC  ;# ptr
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29022
 $$29022:
-	.incbin "baserom.dol", 0x4036B8, 0x50
+	.asciz "std::tr1::detail::shared_ptr_deleter<char, std::detail::default_delete<char[]>>"
 .global $$29050
 $$29050:
-	.incbin "baserom.dol", 0x403708, 0x2C
+	.asciz "std::tr1::detail::shared_ptr_deleter_common"
 .global $$29165
 $$29165:
-	.incbin "baserom.dol", 0x403734, 0x24
+	.asciz "std::detail::default_delete<char[]>"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1
 __vt__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1:
-	.incbin "baserom.dol", 0x41DB28, 0x14
+	.4byte 0x80556450
+	.4byte 0
+	.4byte 0x80014940  ;# ptr
+	.4byte 0x8001488C  ;# ptr
+	.4byte 0x800148D8  ;# ptr
 .global $$29023
 $$29023:
-	.incbin "baserom.dol", 0x41DB3C, 0xC
+	.4byte 0x80556458
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1
 __RTTI__Q43std3tr16detail57shared_ptr_deleter$$0c$$4Q33std6detail20default_delete$$0A0_c$$1$$1:
-	.incbin "baserom.dol", 0x492830, 0x8
+	.4byte 0x804075B8
+	.4byte 0x80421A3C
 .global __RTTI__Q43std3tr16detail25shared_ptr_deleter_common
 __RTTI__Q43std3tr16detail25shared_ptr_deleter_common:
-	.incbin "baserom.dol", 0x492838, 0x8
+	.4byte 0x80407608
+	.4byte 0
 .global __RTTI__Q33std6detail20default_delete$$0A0_c$$1
 __RTTI__Q33std6detail20default_delete$$0A0_c$$1:
-	.incbin "baserom.dol", 0x492840, 0x8
+	.4byte 0x80407634
+	.4byte 0

@@ -55,13 +55,21 @@ lbl_80141854:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$298
 $$298:
-	.incbin "baserom.dol", 0x441568, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8013FDD0  ;# ptr
 .global $$299
 $$299:
-	.incbin "baserom.dol", 0x441574, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8013FDE0  ;# ptr
 .global $$2100
 $$2100:
-	.incbin "baserom.dol", 0x441580, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8013FE00  ;# ptr
 .global $$2101
 $$2101:
-	.incbin "baserom.dol", 0x44158C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8013FDF0  ;# ptr

@@ -277,4 +277,6 @@ onLanding__Q43scn4step5enemy9BrainCtrlFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253447
 $$253447:
-	.incbin "baserom.dol", 0x46C660, 0x18
+	.asciz "Scn.Step.Enemy.%s"
+	.balign 4
+	.4byte 0

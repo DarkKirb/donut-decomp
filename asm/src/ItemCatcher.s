@@ -382,20 +382,21 @@ __sinit_$$3ItemCatcher_cpp:
 /* 80342C6C 0033EAAC  4B E5 C7 3C */	b set__Q33hel4math7Vector2Fff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025BC, 0x4
+	.4byte 0x80342C60
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254426
 $$254426:
-	.incbin "baserom.dol", 0x49B008, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253107
 $$253107:
-	.incbin "baserom.dol", 0x49D770, 0x4
+	.4byte 0
 .global $$253162
 $$253162:
-	.incbin "baserom.dol", 0x49D774, 0x4
+	.4byte 0x3F000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global T_DEFAULT_OFFSET__Q43scn4step4hero25$$2unnamed$$2ItemCatcher_cpp$$2

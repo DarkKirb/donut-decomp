@@ -91,10 +91,10 @@ __sinit_$$3MintModel_cpp:
 /* 8026FDCC 0026BC0C  4B E6 D6 14 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402400, 0x4
+	.4byte 0x8019AE84  ;# ptr
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4024A0, 0x4
+	.4byte 0x8026FDC8  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q24gobj23$$2unnamed$$2MintModel_cpp$$2

@@ -23,7 +23,7 @@ __sinit_$$3ut_IOStream_cpp:
 /* 8012065C 0011C49C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023AC, 0x4
+	.4byte 0x80120650  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r2ut8IOStream

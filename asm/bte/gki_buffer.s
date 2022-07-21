@@ -1492,40 +1492,50 @@ lbl_80075C10:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2749
 $$2749:
-	.incbin "baserom.dol", 0x436968, 0x18
+	.asciz "getbuf: Size is zero"
+	.balign 4
 .global $$2750
 $$2750:
-	.incbin "baserom.dol", 0x436980, 0x18
+	.asciz "getbuf: Size is too big"
 .global $$2783
 $$2783:
-	.incbin "baserom.dol", 0x436998, 0x18
+	.asciz "Free - Buf Corrupted"
+	.balign 4
 .global $$2784
 $$2784:
-	.incbin "baserom.dol", 0x4369B0, 0x14
+	.asciz "Freeing Linked Buf"
+	.balign 4
 .global $$2785
 $$2785:
-	.incbin "baserom.dol", 0x4369C4, 0xC
+	.asciz "Bad Buf QId"
 .global $$2831
 $$2831:
-	.incbin "baserom.dol", 0x4369D0, 0x18
+	.asciz "Sending to unknown dest"
 .global $$2832
 $$2832:
-	.incbin "baserom.dol", 0x4369E8, 0x18
+	.asciz "Send - Buffer corrupted"
 .global $$2833
 $$2833:
-	.incbin "baserom.dol", 0x436A00, 0x18
+	.asciz "Send - buffer linked"
+	.balign 4
 .global $$2880
 $$2880:
-	.incbin "baserom.dol", 0x436A18, 0x1C
+	.asciz "Enqueue - Buffer corrupted"
+	.balign 4
 .global $$2881
 $$2881:
-	.incbin "baserom.dol", 0x436A34, 0x20
+	.asciz "Eneueue - buf already linked"
+	.balign 4
 .global $$2901
 $$2901:
-	.incbin "baserom.dol", 0x436A54, 0x24
+	.asciz "Eneueue head - buf already linked"
+	.balign 4
 .global $$2955
 $$2955:
-	.incbin "baserom.dol", 0x436A78, 0x20
+	.asciz "GKI_get_buf_start:: bad addr"
+	.balign 4
 .global $$21054
 $$21054:
-	.incbin "baserom.dol", 0x436A98, 0x18
+	.asciz "Deleting bad pool"
+	.balign 4
+	.4byte 0

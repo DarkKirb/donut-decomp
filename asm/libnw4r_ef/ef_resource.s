@@ -852,7 +852,7 @@ __sinit_$$3ef_resource_cpp:
 /* 800B30AC 000AEEEC  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402370, 0x4
+	.4byte 0x800B3060  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mResource__Q34nw4r2ef8Resource

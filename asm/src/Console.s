@@ -262,31 +262,41 @@ lbl_80189954:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20
 $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20:
-	.incbin "baserom.dol", 0x44F9A0, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead
 $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead:
-	.incbin "baserom.dol", 0x44F9C4, 0xC
+	.asciz "console.h"
+	.balign 4
 .global $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl$$20
 $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl$$20:
-	.incbin "baserom.dol", 0x44F9D0, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl
 $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl:
-	.incbin "baserom.dol", 0x44F9F4, 0xC
+	.asciz "console.h"
+	.balign 4
 .global $$2STRING$$2Console_GetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20
 $$2STRING$$2Console_GetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20:
-	.incbin "baserom.dol", 0x44FA00, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_GetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead
 $$2STRING$$2Console_GetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead:
-	.incbin "baserom.dol", 0x44FA24, 0xC
+	.asciz "console.h"
+	.balign 4
 .global $$2STRING$$2Console_SetPosition__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadll$$20
 $$2STRING$$2Console_SetPosition__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadll$$20:
-	.incbin "baserom.dol", 0x44FA30, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_SetPosition__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadll
 $$2STRING$$2Console_SetPosition__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadll:
-	.incbin "baserom.dol", 0x44FA54, 0xC
+	.asciz "console.h"
+	.balign 4
 .global $$2STRING$$2Console_GetViewHeight__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20
 $$2STRING$$2Console_GetViewHeight__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20:
-	.incbin "baserom.dol", 0x44FA60, 0x24
+	.asciz "Pointer must not be NULL (console)"
+	.balign 4
 .global $$2STRING$$2Console_GetViewHeight__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead
 $$2STRING$$2Console_GetViewHeight__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead:
-	.incbin "baserom.dol", 0x44FA84, 0xC
+	.asciz "console.h"
+	.balign 4

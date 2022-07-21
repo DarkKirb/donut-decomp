@@ -540,12 +540,37 @@ __sinit_$$3ut_DvdFileStream_cpp:
 /* 80120E9C 0011CCDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023B4, 0x4
+	.4byte 0x80120E90  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut13DvdFileStream
 __vt__Q34nw4r2ut13DvdFileStream:
-	.incbin "baserom.dol", 0x43E808, 0x68
+	.4byte 0
+	.4byte 0
+	.4byte 0x80120E80  ;# ptr
+	.4byte 0x80120A10  ;# ptr
+	.4byte 0x80120B30  ;# ptr
+	.4byte 0x80120B80  ;# ptr
+	.4byte 0x80120C10  ;# ptr
+	.4byte 0x80120630  ;# ptr
+	.4byte 0x80120640  ;# ptr
+	.4byte 0x80108A40  ;# ptr
+	.4byte 0x80120E50  ;# ptr
+	.4byte 0x80108A20  ;# ptr
+	.4byte 0x80108A10  ;# ptr
+	.4byte 0x801089F0  ;# ptr
+	.4byte 0x801089E0  ;# ptr
+	.4byte 0x801089D0  ;# ptr
+	.4byte 0x80120E60  ;# ptr
+	.4byte 0x80120DD0  ;# ptr
+	.4byte 0x80120DE0  ;# ptr
+	.4byte 0x80120DF0  ;# ptr
+	.4byte 0x80108A30  ;# ptr
+	.4byte 0x80108A00  ;# ptr
+	.4byte 0x80120E70  ;# ptr
+	.4byte 0x80120D10  ;# ptr
+	.4byte 0x80120D50  ;# ptr
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r2ut13DvdFileStream

@@ -271,7 +271,19 @@ __dt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash23Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash23StateFinalCutterLanding$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash23StateFinalCutterLanding$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x48AE40, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A1364
+	.4byte 0x803A1348
 .global __vt__Q53scn4step4hero5smash20StateFinalCutterDrop
 __vt__Q53scn4step4hero5smash20StateFinalCutterDrop:
-	.incbin "baserom.dol", 0x48AE50, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A10AC
+	.4byte 0x803A1128
+	.4byte 0x803A112C
+	.4byte 0x8035550C
+	.4byte 0x803A1208
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

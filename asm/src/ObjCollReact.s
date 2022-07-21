@@ -2921,150 +2921,327 @@ lbl_803D7C2C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x4124F0, 0x64
+	.4byte 0x00000072
+	.4byte 0x00000071
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007B
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007C
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000076
 .global T_HITSE_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITSE_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x412554, 0x3C
+	.4byte 0x000001E5
+	.4byte 0x000001E5
+	.4byte 0x000001EB
+	.4byte 0x000001E9
+	.4byte 0x000001E8
+	.4byte 0x000001E7
+	.4byte 0x0000016F
+	.4byte 0x000001A4
+	.4byte 0x000001A4
+	.4byte 0x000001EA
+	.4byte 0x000001D8
+	.4byte 0x000001E8
+	.4byte 0x000001A5
+	.4byte 0x00000257
+	.4byte 0x000001E3
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x414480, 0x64
+	.4byte 0x00000072
+	.4byte 0x00000071
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007B
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007C
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000076
 .global T_HITSE_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITSE_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x4144E4, 0x3C
+	.4byte 0x000001E5
+	.4byte 0x000001E5
+	.4byte 0x000001EB
+	.4byte 0x000001E9
+	.4byte 0x000001E8
+	.4byte 0x000001E7
+	.4byte 0x0000016F
+	.4byte 0x000001A4
+	.4byte 0x000001A4
+	.4byte 0x000001EA
+	.4byte 0x000001D8
+	.4byte 0x000001D9
+	.4byte 0x000001A5
+	.4byte 0x00000257
+	.4byte 0x000001E3
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x416288, 0x64
+	.4byte 0x00000077
+	.4byte 0x00000071
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x0000007B
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x00000077
+	.4byte 0x0000007C
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000077
+	.4byte 0x00000076
 .global T_HITSE_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITSE_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x4162EC, 0x3C
+	.4byte 0x000000A2
+	.4byte 0x000000A2
+	.4byte 0x000001EB
+	.4byte 0x000000A5
+	.4byte 0x000000A4
+	.4byte 0x000000A3
+	.4byte 0x0000016F
+	.4byte 0x000001A4
+	.4byte 0x000001A4
+	.4byte 0x000000A6
+	.4byte 0x000001D8
+	.4byte 0x000000A4
+	.4byte 0x000001A5
+	.4byte 0x000000A2
+	.4byte 0x000000AC
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x460770, 0x18
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F4CCCCD
+	.4byte 0x3F400000
+	.asciz "?333"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1
 __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1:
-	.incbin "baserom.dol", 0x46E768, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C028  ;# ptr
+	.4byte 0x8028BF88  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46E778, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C024  ;# ptr
+	.4byte 0x8028BFA8  ;# ptr
 .global __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46E788, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C020  ;# ptr
+	.4byte 0x8028BFC4  ;# ptr
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46E798, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C01C  ;# ptr
+	.4byte 0x8028BFE0  ;# ptr
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46E7A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8028C018  ;# ptr
+	.4byte 0x8028BFFC  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x481258, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350838
+	.4byte 0x803506F4
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateGuard$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x481268, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350834
+	.4byte 0x80350710
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateHover$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x481278, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350830
+	.4byte 0x8035072C
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x481288, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8035082C
+	.4byte 0x80350748
 .global __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1
 __vt__Q24util144StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6damage12StateExtreme$$4PQ43scn4step4hero4Hero$$4Q63scn4step4hero6damage12StateExtreme11DamageLevel$$1:
-	.incbin "baserom.dol", 0x481298, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350828
+	.4byte 0x803506D4
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv2$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350824
+	.4byte 0x80350768
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv1$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812B8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350820
+	.4byte 0x80350784
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateBodyHit$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812C8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8035081C
+	.4byte 0x803507A0
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv2$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350818
+	.4byte 0x803507BC
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12StateFireLv3$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812E8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350814
+	.4byte 0x803507D8
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1:
-	.incbin "baserom.dol", 0x4812F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80350810
+	.4byte 0x803507F4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAMAGERATE_BY_PILE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_DAMAGERATE_BY_PILE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
-	.incbin "baserom.dol", 0x4952C0, 0x8
+	.4byte 0x3F800000
+	.4byte 0x3F400000
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256339
 $$256339:
-	.incbin "baserom.dol", 0x495A10, 0x8
+	.4byte 0x00000001
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257720
 $$257720:
-	.incbin "baserom.dol", 0x49AEB0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$257778
 $$257778:
-	.incbin "baserom.dol", 0x49AEB8, 0x4
+	.4byte 0
 .global $$257779
 $$257779:
-	.incbin "baserom.dol", 0x49AEBC, 0x4
+	.4byte 0x3727C5AC
 .global $$257780
 $$257780:
-	.incbin "baserom.dol", 0x49AEC0, 0x8
+	.4byte 0x3F400000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258198
 $$258198:
-	.incbin "baserom.dol", 0x49BA18, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$258310
 $$258310:
-	.incbin "baserom.dol", 0x49BA20, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$258416
 $$258416:
-	.incbin "baserom.dol", 0x49BA28, 0x4
+	.4byte 0x3727C5AC
 .global $$258417
 $$258417:
-	.incbin "baserom.dol", 0x49BA2C, 0x4
+	.4byte 0x3F666666
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260300
 $$260300:
-	.incbin "baserom.dol", 0x49D8D8, 0x4
+	.4byte 0x3F800000
 .global $$260301
 $$260301:
-	.incbin "baserom.dol", 0x49D8DC, 0x4
+	.4byte 0x3727C5AC
 .global $$260302
 $$260302:
-	.incbin "baserom.dol", 0x49D8E0, 0x4
+	.4byte 0
 .global $$260303
 $$260303:
-	.incbin "baserom.dol", 0x49D8E4, 0x4
+	.4byte 0xBE800000
 .global $$260304
 $$260304:
-	.incbin "baserom.dol", 0x49D8E8, 0x8
+	.4byte 0xBDCCCCCD
+	.4byte 0
 .global $$260307
 $$260307:
-	.incbin "baserom.dol", 0x49D8F0, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$260308
 $$260308:
-	.incbin "baserom.dol", 0x49D8F8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$260390
 $$260390:
-	.incbin "baserom.dol", 0x49D900, 0x4
+	.4byte 0x3F000000
 .global $$260391
 $$260391:
-	.incbin "baserom.dol", 0x49D904, 0x4
+	.4byte 0x3A83126F
 .global $$260392
 $$260392:
-	.incbin "baserom.dol", 0x49D908, 0x8
+	.4byte 0x3ECCCCCD
+	.4byte 0

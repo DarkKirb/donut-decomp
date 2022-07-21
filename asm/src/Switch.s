@@ -947,32 +947,47 @@ lbl_803281E0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255943
 $$255943:
-	.incbin "baserom.dol", 0x47E5F0, 0x14
+	.asciz "step/gimmick/Switch"
 .global __vt__Q53scn4step7gimmick8switch_n6Switch
 __vt__Q53scn4step7gimmick8switch_n6Switch:
-	.incbin "baserom.dol", 0x47E604, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x80327854
+	.4byte 0x80327B50
+	.4byte 0x80327B5C
+	.4byte 0x80327B54
+	.4byte 0x80327B58
+	.4byte 0x80327B60
+	.4byte 0x80327B64
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255903
 $$255903:
-	.incbin "baserom.dol", 0x496D28, 0x8
+	.asciz "%s%s"
+	.balign 4
 .global $$255919
 $$255919:
-	.incbin "baserom.dol", 0x496D30, 0x8
+	.asciz "%s%s%s"
+	.balign 4
 .global $$255944
 $$255944:
-	.incbin "baserom.dol", 0x496D38, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$255945
 $$255945:
-	.incbin "baserom.dol", 0x496D40, 0x8
+	.asciz "Wait"
+	.balign 4
 .global $$256040
 $$256040:
-	.incbin "baserom.dol", 0x496D48, 0x8
+	.asciz "Push"
+	.balign 4
 .global $$256041
 $$256041:
-	.incbin "baserom.dol", 0x496D50, 0x8
+	.4byte 0x55700000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256104
 $$256104:
-	.incbin "baserom.dol", 0x49D5E0, 0x8
+	.4byte 0
+	.4byte 0

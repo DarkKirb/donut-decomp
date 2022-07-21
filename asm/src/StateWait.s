@@ -2618,135 +2618,285 @@ __dt__Q53scn4step6weapon19challengemastershot9StateWaitFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common9StateWait
 __vt__Q53scn4step4boss6common9StateWait:
-	.incbin "baserom.dol", 0x4625D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80247A98  ;# ptr
+	.4byte 0x80247A9C  ;# ptr
+	.4byte 0x80247AC0  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80247B08  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior9StateWait
 __vt__Q53scn4step4boss6dubior9StateWait:
-	.incbin "baserom.dol", 0x4639F0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80250E90  ;# ptr
+	.4byte 0x80250E94  ;# ptr
+	.4byte 0x80250E98  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80250E9C  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy9StateWait
 __vt__Q53scn4step4boss6whispy9StateWait:
-	.incbin "baserom.dol", 0x4668C8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025F12C  ;# ptr
+	.4byte 0x8025F130  ;# ptr
+	.4byte 0x8025F180  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025F184  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common9StateWait
 __vt__Q53scn4step5enemy6common9StateWait:
-	.incbin "baserom.dol", 0x46F468, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80295820  ;# ptr
+	.4byte 0x80295824  ;# ptr
+	.4byte 0x80295828  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029582C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StateTakeOff$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt12StateTakeOff$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470C08, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0484  ;# ptr
+	.4byte 0x802A0464  ;# ptr
 .global __vt__Q53scn4step5enemy10brontoburt9StateWait
 __vt__Q53scn4step5enemy10brontoburt9StateWait:
-	.incbin "baserom.dol", 0x470C18, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A0480  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A037C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5foley9StateWait
 __vt__Q53scn4step5enemy5foley9StateWait:
-	.incbin "baserom.dol", 0x472FD0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B5344  ;# ptr
+	.4byte 0x802B5348  ;# ptr
+	.4byte 0x802B54AC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7gigatzo9StateWait
 __vt__Q53scn4step5enemy7gigatzo9StateWait:
-	.incbin "baserom.dol", 0x4735C8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802B891C  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802B8998  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802B899C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6lanzer9StateWait
 __vt__Q53scn4step5enemy6lanzer9StateWait:
-	.incbin "baserom.dol", 0x474E50, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C2740  ;# ptr
+	.4byte 0x802C2744  ;# ptr
+	.4byte 0x802C2748  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C274C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6leafan9StateWait
 __vt__Q53scn4step5enemy6leafan9StateWait:
-	.incbin "baserom.dol", 0x4750C8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C4090  ;# ptr
+	.4byte 0x802C4094  ;# ptr
+	.4byte 0x802C4098  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C409C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy14poppybrojrbomb9StateWait
 __vt__Q53scn4step5enemy14poppybrojrbomb9StateWait:
-	.incbin "baserom.dol", 0x476A88, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802D3194  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6shotzo9StateWait
 __vt__Q53scn4step5enemy6shotzo9StateWait:
-	.incbin "baserom.dol", 0x4782B0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E0EEC  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802E0EE4  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802E0EE8  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble10StateCatch$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9sirkibble10StateCatch$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x478700, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E22C0  ;# ptr
+	.4byte 0x802E22A4  ;# ptr
 .global __vt__Q53scn4step5enemy9sirkibble9StateWait
 __vt__Q53scn4step5enemy9sirkibble9StateWait:
-	.incbin "baserom.dol", 0x478710, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E20CC  ;# ptr
+	.4byte 0x802E20D0  ;# ptr
+	.4byte 0x802E229C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802E22A0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory9StateWait
 __vt__Q53scn4step5enemy6sodory9StateWait:
-	.incbin "baserom.dol", 0x479038, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802E6490  ;# ptr
+	.4byte 0x802E6494  ;# ptr
+	.4byte 0x802E6498  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802E649C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage9StateWait
 __vt__Q53scn4step5enemy9tsukikage9StateWait:
-	.incbin "baserom.dol", 0x479B00, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EC258  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x802EC25C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802EC260  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledee9StateWait
 __vt__Q53scn4step5enemy9waddledee9StateWait:
-	.incbin "baserom.dol", 0x47A3B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EECDC  ;# ptr
+	.4byte 0x802EEB80  ;# ptr
+	.4byte 0x802EEC68  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802EEC6C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common9StateWait
 __vt__Q53scn4step4hero6common9StateWait:
-	.incbin "baserom.dol", 0x488398, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8036DB68
+	.4byte 0x8036DBEC
+	.4byte 0x8036DED8
+	.4byte 0x8035550C
+	.4byte 0x8036DEDC
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5stone9StateWait
 __vt__Q53scn4step4hero5stone9StateWait:
-	.incbin "baserom.dol", 0x489C10, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8039194C
+	.4byte 0x803919D4
+	.4byte 0x803919FC
+	.4byte 0x8035550C
+	.4byte 0x80391A00
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateWalk$$4PQ43scn4step4hero4Hero$$4Q43scn4step4hero10ScriptKind$$1
 __vt__Q24util124StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateWalk$$4PQ43scn4step4hero4Hero$$4Q43scn4step4hero10ScriptKind$$1:
-	.incbin "baserom.dol", 0x48B1A0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A5114
+	.4byte 0x803A50F4
 .global __vt__Q53scn4step4hero11staffcredit9StateWait
 __vt__Q53scn4step4hero11staffcredit9StateWait:
-	.incbin "baserom.dol", 0x48B1B0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803A4F04
+	.4byte 0x803A4FDC
+	.4byte 0x803A50EC
+	.4byte 0x8035550C
+	.4byte 0x803A50F0
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon19challengemastershot9StateWait
 __vt__Q53scn4step6weapon19challengemastershot9StateWait:
-	.incbin "baserom.dol", 0x4914D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x803F11DC
+	.4byte 0x803F11D0
+	.4byte 0x803F11D4
+	.4byte 0x803D895C
+	.4byte 0x803F11D8
+	.4byte 0x803D8964
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254787
 $$254787:
-	.incbin "baserom.dol", 0x49B188, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255734
 $$255734:
-	.incbin "baserom.dol", 0x49BF20, 0x4
+	.4byte 0x41000000
 .global $$255735
 $$255735:
-	.incbin "baserom.dol", 0x49BF24, 0x4
+	.4byte 0xC1000000
 .global $$255736
 $$255736:
-	.incbin "baserom.dol", 0x49BF28, 0x4
+	.4byte 0xC0F00000
 .global $$255737
 $$255737:
-	.incbin "baserom.dol", 0x49BF2C, 0x4
+	.4byte 0x40F00000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255120
 $$255120:
-	.incbin "baserom.dol", 0x49C4C8, 0x4
+	.4byte 0x40000000
 .global $$255121
 $$255121:
-	.incbin "baserom.dol", 0x49C4CC, 0x4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255732
 $$255732:
-	.incbin "baserom.dol", 0x49C7B0, 0x8
+	.4byte 0x3E800000
+	.4byte 0

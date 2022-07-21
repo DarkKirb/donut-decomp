@@ -776,99 +776,153 @@ lbl_801C231C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254029
 $$254029:
-	.incbin "baserom.dol", 0x4562C0, 0x14
+	.asciz "HEL.Math.Vector2"
+	.balign 4
 .global $$254032
 $$254032:
-	.incbin "baserom.dol", 0x4562D4, 0x18
+	.asciz "void this(float,float)"
+	.balign 4
 .global $$254033
 $$254033:
-	.incbin "baserom.dol", 0x4562EC, 0x18
+	.asciz "void set(float,float)"
+	.balign 4
 .global $$254034
 $$254034:
-	.incbin "baserom.dol", 0x456304, 0x20
+	.asciz "bool isZeroLoose(float)const"
+	.balign 4
 .global $$254035
 $$254035:
-	.incbin "baserom.dol", 0x456324, 0x1C
+	.asciz "bool isZeroStrict()const"
+	.balign 4
 .global $$254036
 $$254036:
-	.incbin "baserom.dol", 0x456340, 0x14
+	.asciz "bool isZero()const"
+	.balign 4
 .global $$254037
 $$254037:
-	.incbin "baserom.dol", 0x456354, 0x30
+	.asciz "void opAddAssign(const ref HEL.Math.Vector2)"
+	.balign 4
 .global $$254038
 $$254038:
-	.incbin "baserom.dol", 0x456384, 0x34
+	.asciz "void opSubAssign(const ref HEL.Math.Vector2)"
+	.balign 4
+	.4byte 0
 .global $$254039
 $$254039:
-	.incbin "baserom.dol", 0x4563B8, 0x18
+	.asciz "void opMulAssign(float)"
 .global $$254040
 $$254040:
-	.incbin "baserom.dol", 0x4563D0, 0x18
+	.asciz "void opDivAssign(float)"
 .global $$254041
 $$254041:
-	.incbin "baserom.dol", 0x4563E8, 0x38
+	.asciz "HEL.Math.Vector2 opAdd(const ref HEL.Math.Vector2)const"
 .global $$254042
 $$254042:
-	.incbin "baserom.dol", 0x456420, 0x38
+	.asciz "HEL.Math.Vector2 opSub(const ref HEL.Math.Vector2)const"
 .global $$254043
 $$254043:
-	.incbin "baserom.dol", 0x456458, 0x24
+	.asciz "HEL.Math.Vector2 opMul(float)const"
+	.balign 4
 .global $$254044
 $$254044:
-	.incbin "baserom.dol", 0x45647C, 0x24
+	.asciz "HEL.Math.Vector2 opDiv(float)const"
+	.balign 4
 .global $$254045
 $$254045:
-	.incbin "baserom.dol", 0x4564A0, 0x24
+	.asciz "HEL.Math.Vector3 toVector3()const"
+	.balign 4
 .global $$254046
 $$254046:
-	.incbin "baserom.dol", 0x4564C4, 0x28
+	.asciz "HEL.Math.Vector3 toVector3XOY()const"
+	.balign 4
 .global $$254048
 $$254048:
-	.incbin "baserom.dol", 0x4564EC, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F46C  ;# ptr
 .global $$254109
 $$254109:
-	.incbin "baserom.dol", 0x4564F8, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F45C  ;# ptr
 .global $$254114
 $$254114:
-	.incbin "baserom.dol", 0x456504, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801C1BB4  ;# ptr
 .global $$254145
 $$254145:
-	.incbin "baserom.dol", 0x456510, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F3B4  ;# ptr
 .global $$254153
 $$254153:
-	.incbin "baserom.dol", 0x45651C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A01FC  ;# ptr
 .global $$254175
 $$254175:
-	.incbin "baserom.dol", 0x456528, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A0590  ;# ptr
 .global $$254187
 $$254187:
-	.incbin "baserom.dol", 0x456534, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F0F8  ;# ptr
 .global $$254195
 $$254195:
-	.incbin "baserom.dol", 0x456540, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F000  ;# ptr
 .global $$254200
 $$254200:
-	.incbin "baserom.dol", 0x45654C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F48C  ;# ptr
 .global $$254208
 $$254208:
-	.incbin "baserom.dol", 0x456558, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F438  ;# ptr
 .global $$254213
 $$254213:
-	.incbin "baserom.dol", 0x456564, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801B8E30  ;# ptr
 .global $$254239
 $$254239:
-	.incbin "baserom.dol", 0x456570, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801A08C0  ;# ptr
 .global $$254244
 $$254244:
-	.incbin "baserom.dol", 0x45657C, 0xC
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x801B58AC  ;# ptr
 .global $$254265
 $$254265:
-	.incbin "baserom.dol", 0x456588, 0x88
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x8019F3A8  ;# ptr
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254030
 $$254030:
-	.incbin "baserom.dol", 0x4936C0, 0x4
+	.4byte 0x78000000
 .global $$254031
 $$254031:
-	.incbin "baserom.dol", 0x4936C4, 0x4
+	.4byte 0x79000000

@@ -5697,95 +5697,172 @@ __a1_unused_report:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global _cExtInvalidData
 _cExtInvalidData:
-	.incbin "baserom.dol", 0x403EB8, 0x18
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF000000
 .global _cExtInvalidData2
 _cExtInvalidData2:
-	.incbin "baserom.dol", 0x403ED0, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __a1_input_reports_array
 __a1_input_reports_array:
-	.incbin "baserom.dol", 0x434918, 0x80
+	.4byte 0x80060FF0  ;# ptr
+	.4byte 0x80061430  ;# ptr
+	.4byte 0x800617A0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063650  ;# ptr
+	.4byte 0x80063690  ;# ptr
+	.4byte 0x80063760  ;# ptr
+	.4byte 0x800637B0  ;# ptr
+	.4byte 0x800638C0  ;# ptr
+	.4byte 0x80063910  ;# ptr
+	.4byte 0x800639F0  ;# ptr
+	.4byte 0x80063AA0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063EF0  ;# ptr
+	.4byte 0x80063BF0  ;# ptr
+	.4byte 0x80063C20  ;# ptr
+	.4byte 0x80063D90  ;# ptr
 .global $$25371
 $$25371:
-	.incbin "baserom.dol", 0x434998, 0x30
+	.4byte 0x80060704  ;# ptr
+	.4byte 0x80060728  ;# ptr
+	.4byte 0x80060890  ;# ptr
+	.4byte 0x8006074C  ;# ptr
+	.4byte 0x80060770  ;# ptr
+	.4byte 0x80060794  ;# ptr
+	.4byte 0x800607B8  ;# ptr
+	.4byte 0x800607DC  ;# ptr
+	.4byte 0x80060800  ;# ptr
+	.4byte 0x80060824  ;# ptr
+	.4byte 0x80060848  ;# ptr
+	.4byte 0x8006086C  ;# ptr
 .global $$25370
 $$25370:
-	.incbin "baserom.dol", 0x4349C8, 0x50
+	.4byte 0x800605FC  ;# ptr
+	.4byte 0x80060610  ;# ptr
+	.4byte 0x80060624  ;# ptr
+	.4byte 0x800606B4  ;# ptr
+	.4byte 0x800608A4  ;# ptr
+	.4byte 0x800608DC  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x8006094C  ;# ptr
+	.4byte 0x80060648  ;# ptr
+	.4byte 0x8006066C  ;# ptr
+	.4byte 0x80060690  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23033
 $$23033:
-	.incbin "baserom.dol", 0x499290, 0x4
+	.4byte 0x007F0380
 .global lbl_8055E754
 lbl_8055E754:
-	.incbin "baserom.dol", 0x499294, 0x4
+	.4byte 0x0380007F
 .global $$23035
 $$23035:
-	.incbin "baserom.dol", 0x499298, 0x4
+	.4byte 0x005D005D
 .global lbl_8055E75C
 lbl_8055E75C:
-	.incbin "baserom.dol", 0x49929C, 0x4
+	.4byte 0x02A202A2
 .global $$25025
 $$25025:
-	.incbin "baserom.dol", 0x4992A0, 0x4
+	.4byte 0
 .global $$25026
 $$25026:
-	.incbin "baserom.dol", 0x4992A4, 0x4
+	.4byte 0x3E800000
 .global $$25027
 $$25027:
-	.incbin "baserom.dol", 0x4992A8, 0x4
+	.4byte 0x42FD0000
 .global $$25028
 $$25028:
-	.incbin "baserom.dol", 0x4992AC, 0x4
+	.4byte 0x44A69000
 .global $$25029
 $$25029:
-	.incbin "baserom.dol", 0x4992B0, 0x8
+	.4byte 0x3FB84D9D
+	.4byte 0xE0000000
 .global $$25030
 $$25030:
-	.incbin "baserom.dol", 0x4992B8, 0x4
+	.4byte 0x42BA0000
 .global $$25031
 $$25031:
-	.incbin "baserom.dol", 0x4992BC, 0x4
+	.4byte 0x44A72CCD
 .global $$25032
 $$25032:
-	.incbin "baserom.dol", 0x4992C0, 0x8
+	.4byte 0x3FB1CD3C
+	.4byte 0x80000000
 .global $$25033
 $$25033:
-	.incbin "baserom.dol", 0x4992C8, 0x4
+	.4byte 0xBF800000
 .global $$25034
 $$25034:
-	.incbin "baserom.dol", 0x4992CC, 0x4
+	.4byte 0x43BFC000
 .global $$25035
 $$25035:
-	.incbin "baserom.dol", 0x4992D0, 0x8
+	.4byte 0x43FFC000
+	.4byte 0
 .global $$25038
 $$25038:
-	.incbin "baserom.dol", 0x4992D8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$25149
 $$25149:
-	.incbin "baserom.dol", 0x4992E0, 0x4
+	.4byte 0x46000000
 .global $$25150
 $$25150:
-	.incbin "baserom.dol", 0x4992E4, 0x4
+	.4byte 0x45A6A800
 .global $$25151
 $$25151:
-	.incbin "baserom.dol", 0x4992E8, 0x4
+	.4byte 0x45A8C000
 .global $$25152
 $$25152:
-	.incbin "baserom.dol", 0x4992EC, 0x4
+	.4byte 0x459C4000
 .global $$25153
 $$25153:
-	.incbin "baserom.dol", 0x4992F0, 0x4
+	.4byte 0x41200000
 .global $$25154
 $$25154:
-	.incbin "baserom.dol", 0x4992F4, 0x4
+	.4byte 0x457A0000
 .global $$25731
 $$25731:
-	.incbin "baserom.dol", 0x4992F8, 0x8
+	.4byte 0x40490FD8
+	.4byte 0
 .global $$25736
 $$25736:
-	.incbin "baserom.dol", 0x499300, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global _wpadCalibrationX

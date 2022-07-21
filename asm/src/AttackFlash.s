@@ -136,36 +136,37 @@ setEnd__Q43scn4step4boss11AttackFlashF8_GXColor:
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249258
 $$249258:
-	.incbin "baserom.dol", 0x4952B0, 0x4
+	.4byte 0
 .global $$249259
 $$249259:
-	.incbin "baserom.dol", 0x4952B4, 0x4
+	.4byte 0x000000FF
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249397
 $$249397:
-	.incbin "baserom.dol", 0x49ADA8, 0x4
+	.4byte 0xFFFFFF00
 .global $$249403
 $$249403:
-	.incbin "baserom.dol", 0x49ADAC, 0x4
+	.4byte 0
 .global $$249404
 $$249404:
-	.incbin "baserom.dol", 0x49ADB0, 0x4
+	.4byte 0x40000000
 .global $$249427
 $$249427:
-	.incbin "baserom.dol", 0x49ADB4, 0x4
+	.4byte 0x42B40000
 .global $$249428
 $$249428:
-	.incbin "baserom.dol", 0x49ADB8, 0x4
+	.4byte 0x43B40000
 .global $$249429
 $$249429:
-	.incbin "baserom.dol", 0x49ADBC, 0x4
+	.4byte 0x43480000
 .global $$249430
 $$249430:
-	.incbin "baserom.dol", 0x49ADC0, 0x4
+	.4byte 0x4222F983
 .global $$249431
 $$249431:
-	.incbin "baserom.dol", 0x49ADC4, 0x4
+	.4byte 0x3C8EFA35
 .global $$249432
 $$249432:
-	.incbin "baserom.dol", 0x49ADC8, 0x8
+	.4byte 0x42200000
+	.4byte 0

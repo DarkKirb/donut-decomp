@@ -9,12 +9,13 @@ __sinit_$$3Point2_cpp:
 /* 8019EC78 0019AAB8  48 00 07 30 */	b set__Q33hel4math7Vector2Fff
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x40241C, 0x4
+	.4byte 0x8019EC6C  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249826
 $$249826:
-	.incbin "baserom.dol", 0x49A388, 0x8
+	.4byte 0
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global ORIGIN__Q33hel4math6Point2

@@ -1598,32 +1598,110 @@ GetTypeObj__Q34nw4r3g3d6AnmScnCFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6AnmScn
 TYPE_NAME__Q34nw4r3g3d6AnmScn:
-	.incbin "baserom.dol", 0x4046C8, 0x10
+	.4byte 0x00000007
+	.asciz "AnmScn"
+	.balign 4
+	.4byte 0
 .global TYPE_NAME__Q34nw4r3g3d9AnmScnRes
 TYPE_NAME__Q34nw4r3g3d9AnmScnRes:
-	.incbin "baserom.dol", 0x4046D8, 0x10
+	.4byte 0x0000000A
+	.asciz "AnmScnRes"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d9AnmScnRes
 __vt__Q34nw4r3g3d9AnmScnRes:
-	.incbin "baserom.dol", 0x43CF10, 0x90
+	.4byte 0
+	.4byte 0
+	.4byte 0x800DBC40  ;# ptr
+	.4byte 0x800DB250  ;# ptr
+	.4byte 0x800DB110  ;# ptr
+	.4byte 0x800DBCE0  ;# ptr
+	.4byte 0x800DBCD0  ;# ptr
+	.4byte 0x800DB120  ;# ptr
+	.4byte 0x800DB180  ;# ptr
+	.4byte 0x800DB190  ;# ptr
+	.4byte 0x800DB1C0  ;# ptr
+	.4byte 0x800DB1D0  ;# ptr
+	.4byte 0x800DAD60  ;# ptr
+	.4byte 0x800DAD70  ;# ptr
+	.4byte 0x800DADC0  ;# ptr
+	.4byte 0x800DADD0  ;# ptr
+	.4byte 0x800DADE0  ;# ptr
+	.4byte 0x800DADF0  ;# ptr
+	.4byte 0x800DAE00  ;# ptr
+	.4byte 0x800DAE10  ;# ptr
+	.4byte 0x800DAE20  ;# ptr
+	.4byte 0x800DAE30  ;# ptr
+	.4byte 0x800DAE40  ;# ptr
+	.4byte 0x800DAE50  ;# ptr
+	.4byte 0x800DAE60  ;# ptr
+	.4byte 0x800DB2A0  ;# ptr
+	.4byte 0x800DB3E0  ;# ptr
+	.4byte 0x800DB450  ;# ptr
+	.4byte 0x800DB5D0  ;# ptr
+	.4byte 0x800DB680  ;# ptr
+	.4byte 0x800DBA30  ;# ptr
+	.4byte 0x800DBA70  ;# ptr
+	.4byte 0x800DB7E0  ;# ptr
+	.4byte 0x800DB880  ;# ptr
+	.4byte 0x800DB910  ;# ptr
+	.4byte 0x800DB9A0  ;# ptr
 .global __vt__Q34nw4r3g3d6AnmScn
 __vt__Q34nw4r3g3d6AnmScn:
-	.incbin "baserom.dol", 0x43CFA0, 0x90
+	.4byte 0
+	.4byte 0
+	.4byte 0x800DBC90  ;# ptr
+	.4byte 0
+	.4byte 0x800DAD80  ;# ptr
+	.4byte 0x800DBD00  ;# ptr
+	.4byte 0x800DBCF0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x800DAD60  ;# ptr
+	.4byte 0x800DAD70  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$213876
 $$213876:
-	.incbin "baserom.dol", 0x499AC8, 0x4
+	.4byte 0
 .global $$213877
 $$213877:
-	.incbin "baserom.dol", 0x499ACC, 0x4
+	.4byte 0xD01502F9
 .global $$213878
 $$213878:
-	.incbin "baserom.dol", 0x499AD0, 0x8
+	.4byte 0x3F800000
+	.4byte 0
 .global $$214573
 $$214573:
-	.incbin "baserom.dol", 0x499AD8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$214811
 $$214811:
-	.incbin "baserom.dol", 0x499AE0, 0x8
+	.4byte 0x3F000000
+	.4byte 0

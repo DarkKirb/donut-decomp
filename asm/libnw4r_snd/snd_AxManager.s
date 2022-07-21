@@ -1264,21 +1264,23 @@ __sinit_$$3snd_AxManager_cpp:
 /* 80100FCC 000FCE0C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402394, 0x4
+	.4byte 0x80100F90  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24786
 $$24786:
-	.incbin "baserom.dol", 0x499D80, 0x4
+	.4byte 0
 .global $$24787
 $$24787:
-	.incbin "baserom.dol", 0x499D84, 0x4
+	.4byte 0x3F800000
 .global $$24852
 $$24852:
-	.incbin "baserom.dol", 0x499D88, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global $$24955
 $$24955:
-	.incbin "baserom.dol", 0x499D90, 0x8
+	.4byte 0x47000000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sZeroBuffer__Q44nw4r3snd6detail9AxManager

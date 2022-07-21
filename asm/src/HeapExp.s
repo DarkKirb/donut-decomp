@@ -296,7 +296,19 @@ allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem7HeapExp
 __vt__Q23mem7HeapExp:
-	.incbin "baserom.dol", 0x455E10, 0x24
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BE458  ;# ptr
+	.4byte 0x801BE5B4  ;# ptr
+	.4byte 0x801BE5B8  ;# ptr
+	.4byte 0x801BE5BC  ;# ptr
+	.4byte 0x801BE5C0  ;# ptr
+	.4byte 0x801BE5D0  ;# ptr
+	.4byte 0x801BE5D4  ;# ptr
 .global __vt__Q33mem7HeapExp22AllocFromTailAllocator
 __vt__Q33mem7HeapExp22AllocFromTailAllocator:
-	.incbin "baserom.dol", 0x455E34, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0x801BE3A4  ;# ptr
+	.4byte 0x801BE62C  ;# ptr
+	.4byte 0x801BE638  ;# ptr

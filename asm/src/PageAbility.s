@@ -211,27 +211,45 @@ lbl_801DC718:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252590
 $$252590:
-	.incbin "baserom.dol", 0x459868, 0x10
+	.asciz "AbilityWindow"
+	.balign 4
 .global $$252591
 $$252591:
-	.incbin "baserom.dol", 0x459878, 0x14
+	.asciz "lyt/%s.arc.cmpbin"
+	.balign 4
 .global $$252592
 $$252592:
-	.incbin "baserom.dol", 0x45988C, 0x14
+	.asciz "lyt/%s.arc.cmp"
+	.balign 4
+	.4byte 0
 .global __vt__Q25pause11PageAbility
 __vt__Q25pause11PageAbility:
-	.incbin "baserom.dol", 0x4598A0, 0x50
+	.4byte 0
+	.4byte 0
+	.4byte 0x801DC6BC  ;# ptr
+	.4byte 0x801DC64C  ;# ptr
+	.4byte 0x801DC6A8  ;# ptr
+	.4byte 0x801DC6AC  ;# ptr
+	.4byte 0x801DC6B4  ;# ptr
+	.4byte 0x801DC6B8  ;# ptr
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252593
 $$252593:
-	.incbin "baserom.dol", 0x493C78, 0x8
+	.asciz "AbImage"
 .global $$252594
 $$252594:
-	.incbin "baserom.dol", 0x493C80, 0x8
+	.asciz "ImageN"
+	.balign 4
 .global $$252595
 $$252595:
-	.incbin "baserom.dol", 0x493C88, 0x8
+	.asciz "AbText"
+	.balign 4
 .global $$252654
 $$252654:
-	.incbin "baserom.dol", 0x493C90, 0x8
+	.4byte 0x25733000
+	.4byte 0

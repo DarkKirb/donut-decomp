@@ -108,15 +108,26 @@ lbl_80153980:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__26MoSdkPcmPassthroughDecoder
 __vt__26MoSdkPcmPassthroughDecoder:
-	.incbin "baserom.dol", 0x4445B0, 0x1C
+	.4byte 0x80556AE8
+	.4byte 0
+	.4byte 0x80153890  ;# ptr
+	.4byte 0x80153880  ;# ptr
+	.4byte 0x80153870  ;# ptr
+	.4byte 0x801520C0  ;# ptr
+	.4byte 0x8014F970  ;# ptr
 .global $$22523
 $$22523:
-	.incbin "baserom.dol", 0x4445CC, 0x1C
+	.asciz "MoSdkPcmPassthroughDecoder"
+	.balign 4
 .global $$22524
 $$22524:
-	.incbin "baserom.dol", 0x4445E8, 0x10
+	.4byte 0x80556AD0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__26MoSdkPcmPassthroughDecoder
 __RTTI__26MoSdkPcmPassthroughDecoder:
-	.incbin "baserom.dol", 0x492EC8, 0x8
+	.4byte 0x804484CC
+	.4byte 0x804484E8

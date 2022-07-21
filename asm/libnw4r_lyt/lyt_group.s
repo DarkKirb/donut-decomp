@@ -252,4 +252,7 @@ lbl_800F3E2C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt5Group
 __vt__Q34nw4r3lyt5Group:
-	.incbin "baserom.dol", 0x43D358, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F3C10  ;# ptr
+	.4byte 0

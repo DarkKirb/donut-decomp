@@ -822,10 +822,10 @@ lbl_800FE888:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28721
 $$28721:
-	.incbin "baserom.dol", 0x499D10, 0x4
+	.4byte 0
 .global $$28722
 $$28722:
-	.incbin "baserom.dol", 0x499D14, 0x4
+	.4byte 0x3F800000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc$$2texCoords

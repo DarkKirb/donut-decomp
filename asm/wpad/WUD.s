@@ -6337,65 +6337,204 @@ WUDiSetNotAckNumForHandle:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global _wudWiiRemoteDescriptor
 _wudWiiRemoteDescriptor:
-	.incbin "baserom.dol", 0x435C78, 0xDC
+	.4byte 0x05010905
+	.4byte 0xA1018510
+	.4byte 0x150026FF
+	.4byte 0x00750895
+	.4byte 0x010600FF
+	.4byte 0x09019100
+	.4byte 0x85119501
+	.4byte 0x09019100
+	.4byte 0x85129502
+	.4byte 0x09019100
+	.4byte 0x85139501
+	.4byte 0x09019100
+	.4byte 0x85149501
+	.4byte 0x09019100
+	.4byte 0x85159501
+	.4byte 0x09019100
+	.4byte 0x85169515
+	.4byte 0x09019100
+	.4byte 0x85179506
+	.4byte 0x09019100
+	.4byte 0x85189515
+	.4byte 0x09019100
+	.4byte 0x85199501
+	.4byte 0x09019100
+	.4byte 0x851A9501
+	.4byte 0x09019100
+	.4byte 0x85209506
+	.4byte 0x09018100
+	.4byte 0x85219515
+	.4byte 0x09018100
+	.4byte 0x85229504
+	.4byte 0x09018100
+	.4byte 0x85309502
+	.4byte 0x09018100
+	.4byte 0x85319505
+	.4byte 0x09018100
+	.4byte 0x8532950A
+	.4byte 0x09018100
+	.4byte 0x85339511
+	.4byte 0x09018100
+	.4byte 0x85349515
+	.4byte 0x09018100
+	.4byte 0x85359515
+	.4byte 0x09018100
+	.4byte 0x85369515
+	.4byte 0x09018100
+	.4byte 0x85379515
+	.4byte 0x09018100
+	.4byte 0x853D9515
+	.4byte 0x09018100
+	.4byte 0x853E9515
+	.4byte 0x09018100
+	.4byte 0x853F9515
+	.4byte 0x09018100
+	.4byte 0xC0000000
 .global _wudSuperPeekPokeCmd
 _wudSuperPeekPokeCmd:
-	.incbin "baserom.dol", 0x435D54, 0xC
+	.4byte 0x05009A0E
+	.4byte 0x00010000
+	.4byte 0
 .global _wudPatchData
 _wudPatchData:
-	.incbin "baserom.dol", 0x435D60, 0xBC
+	.4byte 0x70990800
+	.4byte 0xB4000000
+	.4byte 0x8843D107
+	.4byte 0x090C0843
+	.4byte 0xA0621923
+	.4byte 0xDB013380
+	.4byte 0x7CF788F8
+	.4byte 0x287680F7
+	.4byte 0x17FF4378
+	.4byte 0xEB701923
+	.4byte 0xDB013387
+	.4byte 0x7CF7BCFB
+	.4byte 0x0B60A37B
+	.4byte 0x01490B60
+	.4byte 0x90F796FB
+	.4byte 0xD81D0800
+	.4byte 0x00F004F8
+	.4byte 0x002379F7
+	.4byte 0xE3FA0000
+	.4byte 0x00B50023
+	.4byte 0x11490B60
+	.4byte 0x1D21C903
+	.4byte 0x0B607D20
+	.4byte 0x80010138  ;# ptr
+	.4byte 0xFDD10E4B
+	.4byte 0x0E4A1360
+	.4byte 0x47200021
+	.4byte 0x96F796FF
+	.4byte 0x46200021
+	.4byte 0x96F792FF
+	.4byte 0x0A4A1368
+	.4byte 0x0A480340
+	.4byte 0x13600A4A
+	.4byte 0x13680A48
+	.4byte 0x03401360
+	.4byte 0x094A1368
+	.4byte 0x09480340
+	.4byte 0x136000BD
+	.4byte 0x24800E00
+	.4byte 0x81030FFE
+	.4byte 0x5C000F00
+	.4byte 0x60FC0E00
+	.4byte 0xFEFF0000
+	.4byte 0xFCFC0E00
+	.4byte 0xFF9F0000
+	.4byte 0x30FC0E00
+	.4byte 0x7FFF0000
 .global _wudPatchInstallCmd
 _wudPatchInstallCmd:
-	.incbin "baserom.dol", 0x435E1C, 0x5C
+	.4byte 0x0720BC65
+	.4byte 0x01008442
+	.4byte 0x09D28442
+	.4byte 0x09D12184
+	.4byte 0x5A000083
+	.4byte 0xF074FF09
+	.4byte 0x0C084322
+	.4byte 0x00610000
+	.4byte 0x83F040FC
+	.4byte 0
+	.4byte 0x23CC9F01
+	.4byte 0x006FF0E4
+	.4byte 0xFC03287D
+	.4byte 0xD1243C62
+	.4byte 0x01002820
+	.4byte 0x00E0608D
+	.4byte 0x23682504
+	.4byte 0x12010020
+	.4byte 0x1C201C24
+	.4byte 0xE0B02126
+	.4byte 0x742F0000
+	.4byte 0x86F018FD
+	.4byte 0x214F3B60
 .global _wudResetAuthCountCmd
 _wudResetAuthCountCmd:
-	.incbin "baserom.dol", 0x435E78, 0x1C
+	.4byte 0x30360800
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global $$26246
 $$26246:
-	.incbin "baserom.dol", 0x435E94, 0x14
+	.asciz "Nintendo RVL-CNT"
+	.balign 4
 .global $$26247
 $$26247:
-	.incbin "baserom.dol", 0x435EA8, 0x14
+	.asciz "Nintendo RVL-WBC"
+	.balign 4
 .global $$26546
 $$26546:
-	.incbin "baserom.dol", 0x435EBC, 0x2C
+	.asciz "/title/00010004/52464e4a/data/RPHealth.dat"
+	.balign 4
 .global $$26740
 $$26740:
-	.incbin "baserom.dol", 0x435EE8, 0x14
+	.asciz "Nintendo RVL-CNT-01"
 .global $$26792
 $$26792:
-	.incbin "baserom.dol", 0x435EFC, 0x54
+	.asciz "Error: the workarea for synchronizing WBC pairing information is not allocated.\n"
+	.balign 4
 .global $$27511
 $$27511:
-	.incbin "baserom.dol", 0x435F50, 0x24
+	.asciz "WARNING: link num count is reset.\n"
+	.balign 4
 .global $$27554
 $$27554:
-	.incbin "baserom.dol", 0x435F74, 0x14
+	.asciz "MODULE FATAL ERROR\n"
 .global $$27558
 $$27558:
-	.incbin "baserom.dol", 0x435F88, 0x28
+	.asciz "---- WARNING: USB FATAL ERROR! ----\n"
+	.balign 4
 .global $$27592
 $$27592:
-	.incbin "baserom.dol", 0x435FB0, 0x10
+	.asciz "Unknown event\n"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$26790
 $$26790:
-	.incbin "baserom.dol", 0x492BD8, 0x8
+	.asciz "RFNJ"
+	.balign 4
 .global $$26791
 $$26791:
-	.incbin "baserom.dol", 0x492BE0, 0x8
+	.asciz "WUD.c"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23808
 $$23808:
-	.incbin "baserom.dol", 0x499308, 0x4
+	.4byte 0x57696900
 .global $$23810
 $$23810:
-	.incbin "baserom.dol", 0x49930C, 0x2
+	.byte 0x00, 0x04
 .global lbl_8055E7CE
 lbl_8055E7CE:
-	.incbin "baserom.dol", 0x49930E, 0x2
+	.byte 0x48, 0x00
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global __rvl_wudcb

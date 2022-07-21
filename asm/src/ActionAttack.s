@@ -281,20 +281,40 @@ isInitState__Q53scn4step7gimmick10guideboard6ActionCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252816
 $$252816:
-	.incbin "baserom.dol", 0x47D428, 0xC
+	.asciz "GChange1"
+	.balign 4
 .global __vt__Q53scn4step7gimmick10guideboard12ActionAttack
 __vt__Q53scn4step7gimmick10guideboard12ActionAttack:
-	.incbin "baserom.dol", 0x47D434, 0x44
+	.4byte 0
+	.4byte 0
+	.4byte 0x8031027C
+	.4byte 0x80310284
+	.4byte 0x80310294
+	.4byte 0x80310318
+	.4byte 0x80310340
+	.4byte 0x80310570
+	.4byte 0x8031056C
+	.4byte 0x80310568
+	.4byte 0x80310564
+	.4byte 0x80310560
+	.4byte 0x8031055C
+	.4byte 0x80310558
+	.4byte 0x80310554
+	.4byte 0x80310550
+	.4byte 0x803103C8
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252801
 $$252801:
-	.incbin "baserom.dol", 0x496AF8, 0x8
+	.asciz "GTopL"
+	.balign 4
 .global $$252805
 $$252805:
-	.incbin "baserom.dol", 0x496B00, 0x8
+	.asciz "GWait1"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252848
 $$252848:
-	.incbin "baserom.dol", 0x49D408, 0x8
+	.4byte 0
+	.4byte 0

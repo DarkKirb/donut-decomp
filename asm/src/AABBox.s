@@ -9,4 +9,5 @@ __mi__Q33hel4math7Vector3CFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252182
 $$252182:
-	.incbin "baserom.dol", 0x49A3E0, 0x8
+	.4byte 0xBF800000
+	.4byte 0

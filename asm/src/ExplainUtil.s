@@ -191,203 +191,362 @@ MedalToGrade__Q53scn4step4info5lvmap11ExplainUtilFQ33scn4step18ChallengeMedalKin
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global explainDataTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 explainDataTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C028, 0x140
+	.4byte 0x804914A0
+	.4byte 0x804914AC
+	.4byte 0x804914B8
+	.4byte 0x8055BB70
+	.4byte 0x8055BB70
+	.4byte 0x804914C4
+	.4byte 0x804914D4
+	.4byte 0x804914E0
+	.4byte 0x8055BB78
+	.4byte 0x8055BB78
+	.4byte 0x804914EC
+	.4byte 0x804914F8
+	.4byte 0x80491504
+	.4byte 0x8055BB80
+	.4byte 0x8055BB80
+	.4byte 0x80491510
+	.4byte 0x80491520
+	.4byte 0x8049152C
+	.4byte 0x8055BB88
+	.4byte 0x8055BB88
+	.4byte 0x80491538
+	.4byte 0x80491544
+	.4byte 0x80491550
+	.4byte 0x8055BB90
+	.4byte 0x8055BB90
+	.4byte 0x8049155C
+	.4byte 0x8049156C
+	.4byte 0x80491578
+	.4byte 0x8055BB98
+	.4byte 0x8055BB98
+	.4byte 0x80491584
+	.4byte 0x80491590
+	.4byte 0x8049159C
+	.4byte 0x8055BBA0
+	.4byte 0x8055BBA0
+	.4byte 0x80491510
+	.4byte 0x80491520
+	.4byte 0x804915A8
+	.4byte 0x8055BBA8
+	.4byte 0x8055BBA8
+	.4byte 0x804915B4
+	.4byte 0x804915C0
+	.4byte 0x804915CC
+	.4byte 0x8055BBB0
+	.4byte 0x8055BBB0
+	.4byte 0x804915D8
+	.4byte 0x804915E8
+	.4byte 0x804915F4
+	.4byte 0x8055BBB8
+	.4byte 0x8055BBB8
+	.4byte 0x80491510
+	.4byte 0x80491520
+	.4byte 0x80491600
+	.4byte 0x8055BBC0
+	.4byte 0x8055BBC0
+	.4byte 0x80491510
+	.4byte 0x80491520
+	.4byte 0x8049160C
+	.4byte 0x8055BBC0
+	.4byte 0x8055BBC8
+	.4byte 0x804915B4
+	.4byte 0x804915C0
+	.4byte 0x804915CC
+	.4byte 0x8055BBB0
+	.4byte 0x8055BBD0
+	.4byte 0x80491618
+	.4byte 0x80491628
+	.4byte 0x80491638
+	.4byte 0x80491648
+	.4byte 0x80491648
+	.4byte 0x80491618
+	.4byte 0x80491628
+	.4byte 0x80491654
+	.4byte 0x80491664
+	.4byte 0x80491664
+	.4byte 0x80491618
+	.4byte 0x80491628
+	.4byte 0x80491670
+	.4byte 0x80491680
+	.4byte 0x80491680
 .global explainPathTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 explainPathTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C168, 0x80
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBE8
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBD8
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBE4
+	.4byte 0x8055BBDC
+	.4byte 0x8055BBE8
 .global medalToGradeTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 medalToGradeTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
-	.incbin "baserom.dol", 0x41C1E8, 0x18
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248733
 $$248733:
-	.incbin "baserom.dol", 0x48D5A0, 0xC
+	.asciz "BGStarSword"
 .global $$248734
 $$248734:
-	.incbin "baserom.dol", 0x48D5AC, 0xC
+	.asciz "StarSword"
+	.balign 4
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x48D5B8, 0xC
+	.asciz "ShotSword"
+	.balign 4
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x48D5C4, 0x10
+	.asciz "BGStarParasol"
+	.balign 4
 .global $$248738
 $$248738:
-	.incbin "baserom.dol", 0x48D5D4, 0xC
+	.asciz "StarParasol"
 .global $$248739
 $$248739:
-	.incbin "baserom.dol", 0x48D5E0, 0xC
+	.asciz "ShotParasol"
 .global $$248741
 $$248741:
-	.incbin "baserom.dol", 0x48D5EC, 0xC
+	.asciz "BGStarSpark"
 .global $$248742
 $$248742:
-	.incbin "baserom.dol", 0x48D5F8, 0xC
+	.asciz "StarSpark"
+	.balign 4
 .global $$248743
 $$248743:
-	.incbin "baserom.dol", 0x48D604, 0xC
+	.asciz "ShotSpark"
+	.balign 4
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x48D610, 0x10
+	.asciz "BGStarMaster"
+	.balign 4
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x48D620, 0xC
+	.asciz "StarMaster"
+	.balign 4
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x48D62C, 0xC
+	.asciz "ShotMaster1"
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x48D638, 0xC
+	.asciz "BGStarWhip"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x48D644, 0xC
+	.asciz "StarWhip"
+	.balign 4
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x48D650, 0xC
+	.asciz "ShotWhip"
+	.balign 4
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x48D65C, 0x10
+	.asciz "BGStarFighter"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x48D66C, 0xC
+	.asciz "StarFighter"
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x48D678, 0xC
+	.asciz "ShotFighter"
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x48D684, 0xC
+	.asciz "BGStarWing"
+	.balign 4
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x48D690, 0xC
+	.asciz "StarWing"
+	.balign 4
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x48D69C, 0xC
+	.asciz "ShotWing"
+	.balign 4
 .global $$248761
 $$248761:
-	.incbin "baserom.dol", 0x48D6A8, 0xC
+	.asciz "ShotMaster2"
 .global $$248763
 $$248763:
-	.incbin "baserom.dol", 0x48D6B4, 0xC
+	.asciz "BGStarSmash"
 .global $$248764
 $$248764:
-	.incbin "baserom.dol", 0x48D6C0, 0xC
+	.asciz "StarSmash"
+	.balign 4
 .global $$248765
 $$248765:
-	.incbin "baserom.dol", 0x48D6CC, 0xC
+	.asciz "ShotSmash"
+	.balign 4
 .global $$248767
 $$248767:
-	.incbin "baserom.dol", 0x48D6D8, 0x10
+	.asciz "BGStarNormal"
+	.balign 4
 .global $$248768
 $$248768:
-	.incbin "baserom.dol", 0x48D6E8, 0xC
+	.asciz "StarNormal"
+	.balign 4
 .global $$248769
 $$248769:
-	.incbin "baserom.dol", 0x48D6F4, 0xC
+	.asciz "ShotNormal"
+	.balign 4
 .global $$248771
 $$248771:
-	.incbin "baserom.dol", 0x48D700, 0xC
+	.asciz "ShotMaster3"
 .global $$248773
 $$248773:
-	.incbin "baserom.dol", 0x48D70C, 0xC
+	.asciz "ShotMaster4"
 .global $$248776
 $$248776:
-	.incbin "baserom.dol", 0x48D718, 0x10
+	.asciz "BGStarAbility"
+	.balign 4
 .global $$248777
 $$248777:
-	.incbin "baserom.dol", 0x48D728, 0x10
+	.asciz "StarTraining"
+	.balign 4
 .global $$248778
 $$248778:
-	.incbin "baserom.dol", 0x48D738, 0x10
+	.asciz "ShotAbility1"
+	.balign 4
 .global $$248779
 $$248779:
-	.incbin "baserom.dol", 0x48D748, 0xC
+	.asciz "Ability1"
+	.balign 4
 .global $$248780
 $$248780:
-	.incbin "baserom.dol", 0x48D754, 0x10
+	.asciz "ShotAbility2"
+	.balign 4
 .global $$248781
 $$248781:
-	.incbin "baserom.dol", 0x48D764, 0xC
+	.asciz "Ability2"
+	.balign 4
 .global $$248782
 $$248782:
-	.incbin "baserom.dol", 0x48D770, 0x10
+	.asciz "ShotAbility3"
+	.balign 4
 .global $$248783
 $$248783:
-	.incbin "baserom.dol", 0x48D780, 0x10
+	.asciz "Ability3"
+	.balign 4
+	.4byte 0
 .global $$248807
 $$248807:
-	.incbin "baserom.dol", 0x48D790, 0x18
+	.asciz "step/challengeship/Main"
 .global $$248808
 $$248808:
-	.incbin "baserom.dol", 0x48D7A8, 0x10
+	.asciz "MedalBronzeS"
+	.balign 4
 .global $$248809
 $$248809:
-	.incbin "baserom.dol", 0x48D7B8, 0x10
+	.asciz "MedalSilverS"
+	.balign 4
 .global $$248810
 $$248810:
-	.incbin "baserom.dol", 0x48D7C8, 0xC
+	.asciz "MedalGoldS"
+	.balign 4
 .global $$248811
 $$248811:
-	.incbin "baserom.dol", 0x48D7D4, 0x10
+	.asciz "MedalPlatinumS"
+	.balign 4
 .global medalNameTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 medalNameTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
-	.incbin "baserom.dol", 0x48D7E4, 0x14
+	.4byte 0x804916A8
+	.4byte 0x804916A8
+	.4byte 0x804916B8
+	.4byte 0x804916C8
+	.4byte 0x804916D4
 .global $$249054
 $$249054:
-	.incbin "baserom.dol", 0x48D7F8, 0x18
+	.asciz "step/challengeship/%s"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x497F50, 0x8
+	.asciz "Sword"
+	.balign 4
 .global $$248740
 $$248740:
-	.incbin "baserom.dol", 0x497F58, 0x8
+	.asciz "Parasol"
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x497F60, 0x8
+	.asciz "Spark"
+	.balign 4
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x497F68, 0x8
+	.asciz "Master1"
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x497F70, 0x8
+	.asciz "Whip"
+	.balign 4
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x497F78, 0x8
+	.asciz "Fighter"
 .global $$248760
 $$248760:
-	.incbin "baserom.dol", 0x497F80, 0x8
+	.asciz "Wing"
+	.balign 4
 .global $$248762
 $$248762:
-	.incbin "baserom.dol", 0x497F88, 0x8
+	.asciz "Master2"
 .global $$248766
 $$248766:
-	.incbin "baserom.dol", 0x497F90, 0x8
+	.asciz "Smash"
+	.balign 4
 .global $$248770
 $$248770:
-	.incbin "baserom.dol", 0x497F98, 0x8
+	.asciz "Normal"
+	.balign 4
 .global $$248772
 $$248772:
-	.incbin "baserom.dol", 0x497FA0, 0x8
+	.asciz "Master3"
 .global $$248774
 $$248774:
-	.incbin "baserom.dol", 0x497FA8, 0x8
+	.asciz "Master4"
 .global $$248775
 $$248775:
-	.incbin "baserom.dol", 0x497FB0, 0x8
+	.asciz "SmashEx"
 .global $$248794
 $$248794:
-	.incbin "baserom.dol", 0x497FB8, 0x4
+	.4byte 0x4C763100
 .global $$248795
 $$248795:
-	.incbin "baserom.dol", 0x497FBC, 0x8
+	.asciz "Main"
+	.balign 4
 .global $$248796
 $$248796:
-	.incbin "baserom.dol", 0x497FC4, 0x4
+	.4byte 0x4C763200
 .global $$248797
 $$248797:
-	.incbin "baserom.dol", 0x497FC8, 0x4
+	.4byte 0x4C763300
 .global explainCommonPath__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 explainCommonPath__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
-	.incbin "baserom.dol", 0x497FCC, 0x4
+	.4byte 0x80491690

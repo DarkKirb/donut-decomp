@@ -318,21 +318,27 @@ preLoadStage__Q43scn17challengetutorial4info12ChoseAbilityFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253002
 $$253002:
-	.incbin "baserom.dol", 0x45BD98, 0x18
+	.asciz "challengeability/Main"
+	.balign 4
 .global $$253003
 $$253003:
-	.incbin "baserom.dol", 0x45BDB0, 0x10
+	.asciz "AbilityFrame"
+	.balign 4
 .global $$253105
 $$253105:
-	.incbin "baserom.dol", 0x45BDC0, 0x10
+	.asciz "CloseShadow"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253004
 $$253004:
-	.incbin "baserom.dol", 0x494530, 0x8
+	.asciz "FrameN"
+	.balign 4
 .global $$253086
 $$253086:
-	.incbin "baserom.dol", 0x494538, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$253104
 $$253104:
-	.incbin "baserom.dol", 0x494540, 0x8
+	.4byte 0x456E6400
+	.4byte 0

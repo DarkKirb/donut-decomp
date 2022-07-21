@@ -407,7 +407,22 @@ lbl_803033F0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251420
 $$251420:
-	.incbin "baserom.dol", 0x47C390, 0x18
+	.asciz "step/gimmick/CameraLock"
 .global $$251424
 $$251424:
-	.incbin "baserom.dol", 0x47C3A8, 0x40
+	.4byte 0x80302F04
+	.4byte 0x80302F1C
+	.4byte 0x80302F34
+	.4byte 0x80302F5C
+	.4byte 0x80302F5C
+	.4byte 0x80302F5C
+	.4byte 0x80302F5C
+	.4byte 0x80302F5C
+	.4byte 0x80302F88
+	.4byte 0x8030301C
+	.4byte 0x80303034
+	.4byte 0x8030304C
+	.4byte 0x803030E4
+	.4byte 0x8030310C
+	.4byte 0x80303134
+	.4byte 0x8030315C

@@ -74,30 +74,65 @@ lbl_80272E54:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x413A88, 0x10
+	.4byte 0xBD99999A
+	.4byte 0x3D99999A
+	.4byte 0xBCA3D70A
+	.4byte 0x3CA3D70A
 .global T_SHAKE_OFFS_TABLE_M__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_M__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x413A98, 0x10
+	.4byte 0xBDF5C28F
+	.4byte 0x3DF5C28F
+	.4byte 0xBDCCCCCD
+	.4byte 0x3DCCCCCD
 .global T_SHAKE_OFFS_TABLE_L__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_L__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x413AA8, 0x18
+	.4byte 0xBE051EB8
+	.4byte 0x3E051EB8
+	.4byte 0xBDF5C28F
+	.4byte 0x3DF5C28F
+	.4byte 0xBDCCCCCD
+	.4byte 0x3DCCCCCD
 .global T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x413AC0, 0x30
+	.4byte 0xBE051EB8
+	.4byte 0x3E051EB8
+	.4byte 0xBE051EB8
+	.4byte 0x3E051EB8
+	.4byte 0xBE051EB8
+	.4byte 0x3E051EB8
+	.4byte 0xBE051EB8
+	.4byte 0x3E051EB8
+	.4byte 0xBDF5C28F
+	.4byte 0x3DF5C28F
+	.4byte 0xBDCCCCCD
+	.4byte 0x3DCCCCCD
 .global T_TABLE__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_TABLE__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x413AF0, 0x30
+	.4byte 0x00000002
+	.4byte 0x80560D48
+	.4byte 0x00000002
+	.4byte 0x80560D50
+	.4byte 0x00000004
+	.4byte 0x80417988
+	.4byte 0x00000004
+	.4byte 0x80417998
+	.4byte 0x00000006
+	.4byte 0x804179A8
+	.4byte 0x0000000C
+	.4byte 0x804179C0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x49B888, 0x8
+	.4byte 0xBCA3D70A
+	.4byte 0x3CA3D70A
 .global T_SHAKE_OFFS_TABLE_SS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_SS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
-	.incbin "baserom.dol", 0x49B890, 0x8
+	.4byte 0xBD4CCCCD
+	.4byte 0x3D4CCCCD
 .global $$249717
 $$249717:
-	.incbin "baserom.dol", 0x49B898, 0x4
+	.4byte 0
 .global $$249718
 $$249718:
-	.incbin "baserom.dol", 0x49B89C, 0x4
+	.4byte 0x3F400000

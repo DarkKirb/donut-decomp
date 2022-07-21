@@ -231,15 +231,35 @@ __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldo
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4760D8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB9AC  ;# ptr
+	.4byte 0x802CB98C  ;# ptr
 .global __vt__Q53scn4step5enemy10parasoldee12BrainRelease
 __vt__Q53scn4step5enemy10parasoldee12BrainRelease:
-	.incbin "baserom.dol", 0x4760E8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CB9A8  ;# ptr
+	.4byte 0x802CB898  ;# ptr
+	.4byte 0x802CB984  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x802CB988  ;# ptr
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo16StateParasolFall$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x476288, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CDAD8  ;# ptr
+	.4byte 0x802CDAB8  ;# ptr
 .global __vt__Q53scn4step5enemy10parasoldoo12BrainRelease
 __vt__Q53scn4step5enemy10parasoldoo12BrainRelease:
-	.incbin "baserom.dol", 0x476298, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802CDAD4  ;# ptr
+	.4byte 0x802CD9C4  ;# ptr
+	.4byte 0x802CDAB0  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x802CDAB4  ;# ptr
+	.4byte 0

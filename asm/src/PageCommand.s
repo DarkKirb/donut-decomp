@@ -509,54 +509,75 @@ lbl_801DCE4C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252946
 $$252946:
-	.incbin "baserom.dol", 0x4598F0, 0x10
+	.asciz "CommandWindow"
+	.balign 4
 .global $$252947
 $$252947:
-	.incbin "baserom.dol", 0x459900, 0xC
+	.asciz "FrameUpN"
+	.balign 4
 .global $$252948
 $$252948:
-	.incbin "baserom.dol", 0x45990C, 0xC
+	.asciz "FrameDownN"
+	.balign 4
 .global $$252949
 $$252949:
-	.incbin "baserom.dol", 0x459918, 0xC
+	.asciz "CommandText"
 .global $$252950
 $$252950:
-	.incbin "baserom.dol", 0x459924, 0x14
+	.asciz "Command%lu%luN"
+	.balign 4
+	.4byte 0
 .global $$252952
 $$252952:
-	.incbin "baserom.dol", 0x459938, 0x10
+	.asciz "SkillNameTextL4"
 .global $$252953
 $$252953:
-	.incbin "baserom.dol", 0x459948, 0x10
+	.asciz "CommandTextL4"
+	.balign 4
 .global $$252956
 $$252956:
-	.incbin "baserom.dol", 0x459958, 0x10
+	.asciz "CommentText"
+	.4byte 0
 .global $$252958
 $$252958:
-	.incbin "baserom.dol", 0x459968, 0x10
+	.asciz "SkillNameTextL2"
 .global $$252959
 $$252959:
-	.incbin "baserom.dol", 0x459978, 0x10
+	.asciz "CommandTextL1"
+	.balign 4
 .global $$252960
 $$252960:
-	.incbin "baserom.dol", 0x459988, 0x10
+	.asciz "CommandTextL2"
+	.balign 4
 .global __vt__Q25pause11PageCommand
 __vt__Q25pause11PageCommand:
-	.incbin "baserom.dol", 0x459998, 0x50
+	.4byte 0
+	.4byte 0
+	.4byte 0x801DCDF0  ;# ptr
+	.4byte 0x801DCD28  ;# ptr
+	.4byte 0x801DCD80  ;# ptr
+	.4byte 0x801DCD88  ;# ptr
+	.4byte 0x801DCDE8  ;# ptr
+	.4byte 0x801DCDEC  ;# ptr
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252951
 $$252951:
-	.incbin "baserom.dol", 0x493C98, 0x4
+	.4byte 0x4C324E00
 .global $$252954
 $$252954:
-	.incbin "baserom.dol", 0x493C9C, 0x4
+	.4byte 0x4C344E00
 .global $$252955
 $$252955:
-	.incbin "baserom.dol", 0x493CA0, 0x8
+	.asciz "Group1N"
 .global $$252957
 $$252957:
-	.incbin "baserom.dol", 0x493CA8, 0x8
+	.asciz "Group2N"
 .global $$253024
 $$253024:
-	.incbin "baserom.dol", 0x493CB0, 0x8
+	.asciz "%s%d"
+	.balign 4

@@ -5316,215 +5316,327 @@ onObjStopFinished__Q43scn4step4hero5ModelFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$258142
 $$258142:
-	.incbin "baserom.dol", 0x4161A0, 0x1C
+	.4byte 0x8035C6B4
+	.4byte 0x8035C6B4
+	.4byte 0x8035C6B4
+	.4byte 0x8035C6B4
+	.4byte 0x8035C7D4
+	.4byte 0x8035BC10
+	.4byte 0x8035BE24
 .global $$258152
 $$258152:
-	.incbin "baserom.dol", 0x4161BC, 0x1C
+	.4byte 0x8035C634
+	.4byte 0x8035C634
+	.4byte 0x8035C634
+	.4byte 0x8035C634
+	.4byte 0x8035C77C
+	.4byte 0x8035BBE4
+	.4byte 0x8035BDCC
 .global $$258162
 $$258162:
-	.incbin "baserom.dol", 0x4161D8, 0x1C
+	.4byte 0x8035C65C
+	.4byte 0x8035C65C
+	.4byte 0x8035C65C
+	.4byte 0x8035C65C
+	.4byte 0x8035C7A4
+	.4byte 0x8035BC0C
+	.4byte 0x8035BDF4
 .global $$258172
 $$258172:
-	.incbin "baserom.dol", 0x4161F4, 0x1C
+	.4byte 0x8035C778
+	.4byte 0x8035C778
+	.4byte 0x8035C778
+	.4byte 0x8035C778
+	.4byte 0x8035C8A8
+	.4byte 0x8035BCE4
+	.4byte 0x8035BEF8
 .global $$258190
 $$258190:
-	.incbin "baserom.dol", 0x416210, 0x1C
+	.4byte 0x80484E28
+	.4byte 0x80484E48
+	.4byte 0x80484E70
+	.4byte 0x80484E90
+	.4byte 0x80484EB4
+	.4byte 0x80484ED8
+	.4byte 0x80484EFC
 .global $$258207
 $$258207:
-	.incbin "baserom.dol", 0x41622C, 0x1C
+	.4byte 0x80484F20
+	.4byte 0x80484F20
+	.4byte 0x80484F20
+	.4byte 0x80484F20
+	.4byte 0x80484F44
+	.4byte 0x80484F68
+	.4byte 0x80484F90
 .global $$258220
 $$258220:
-	.incbin "baserom.dol", 0x416248, 0x20
+	.4byte 0x80484FB4
+	.4byte 0x80484FB4
+	.4byte 0x80484FB4
+	.4byte 0x80484FB4
+	.4byte 0x80484FDC
+	.4byte 0x80485000
+	.4byte 0x80485028
+	.4byte 0
 .global $$258964
 $$258964:
-	.incbin "baserom.dol", 0x416268, 0x10
+	.4byte 0x8055AA08
+	.4byte 0x804850E0
+	.4byte 0x804850EC
+	.4byte 0x804850F8
 .global $$258967
 $$258967:
-	.incbin "baserom.dol", 0x416278, 0x10
+	.4byte 0x8055AA08
+	.4byte 0x8055AA08
+	.4byte 0x8055AA08
+	.4byte 0x8055AA08
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256416
 $$256416:
-	.incbin "baserom.dol", 0x450610, 0x18
+	.asciz "vector length error"
+	.4byte 0
 .global __vt__Q33g3d5Model14ScnObjCallback
 __vt__Q33g3d5Model14ScnObjCallback:
-	.incbin "baserom.dol", 0x450628, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80190270  ;# ptr
+	.4byte 0x801903A4  ;# ptr
+	.4byte 0x800E9D20  ;# ptr
+	.4byte 0x801904C4  ;# ptr
+	.4byte 0x800EC990  ;# ptr
+	.4byte 0x800EC9A0  ;# ptr
 .global __vt__Q33g3d5Model17CalcWorldCallback
 __vt__Q33g3d5Model17CalcWorldCallback:
-	.incbin "baserom.dol", 0x450648, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x8018FFB0  ;# ptr
+	.4byte 0x80190024  ;# ptr
+	.4byte 0x800E3740  ;# ptr
+	.4byte 0x800E3750  ;# ptr
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
-	.incbin "baserom.dol", 0x450660, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode:
-	.incbin "baserom.dol", 0x450684, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20
 $$2STRING$$2__ml__Q44nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv$$20:
-	.incbin "baserom.dol", 0x450690, 0x24
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
 .global $$2STRING$$2__ml__Q44nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv
 $$2STRING$$2__ml__Q44nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$18IteratorCFv:
-	.incbin "baserom.dol", 0x4506B4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20
 $$2STRING$$2GetBack__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1Fv$$20:
-	.incbin "baserom.dol", 0x4506C0, 0x24
+	.asciz "NW4R:Failed assertion !IsEmpty()"
+	.balign 4
 .global $$2STRING$$2GetBack__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1Fv
 $$2STRING$$2GetBack__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
-	.incbin "baserom.dol", 0x4506E4, 0xC
+	.asciz "LinkList.h"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMatCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d6ResMatCFv$$20:
-	.incbin "baserom.dol", 0x4506F0, 0x20
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMatCFv
 $$2STRING$$2ref__Q34nw4r3g3d6ResMatCFv:
-	.incbin "baserom.dol", 0x450710, 0x10
+	.asciz "g3d_resmat_ac.h"
 .global $$2STRING$$2__ct__Q34nw4r3g3d7ResNodeFPv$$20
 $$2STRING$$2__ct__Q34nw4r3g3d7ResNodeFPv$$20:
-	.incbin "baserom.dol", 0x450720, 0x28
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r3g3d7ResNodeFPv
 $$2STRING$$2__ct__Q34nw4r3g3d7ResNodeFPv:
-	.incbin "baserom.dol", 0x450748, 0x14
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv$$20:
-	.incbin "baserom.dol", 0x45075C, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv
 $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv:
-	.incbin "baserom.dol", 0x450778, 0x18
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24gobj5Model
 __vt__Q24gobj5Model:
-	.incbin "baserom.dol", 0x451130, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8019B11C  ;# ptr
+	.4byte 0x8019B194  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5chara5Model
 __vt__Q43scn4step5chara5Model:
-	.incbin "baserom.dol", 0x468788, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x80270C60  ;# ptr
+	.4byte 0x802710AC  ;# ptr
+	.4byte 0x802710CC  ;# ptr
+	.4byte 0x80271124  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258183
 $$258183:
-	.incbin "baserom.dol", 0x480F28, 0x20
+	.asciz "step/chara/hero/kirby/base/Pink"
 .global $$258184
 $$258184:
-	.incbin "baserom.dol", 0x480F48, 0x28
+	.asciz "step/chara/hero/kirby/base/Yellow"
+	.balign 4
+	.4byte 0
 .global $$258185
 $$258185:
-	.incbin "baserom.dol", 0x480F70, 0x20
+	.asciz "step/chara/hero/kirby/base/Blue"
 .global $$258186
 $$258186:
-	.incbin "baserom.dol", 0x480F90, 0x24
+	.asciz "step/chara/hero/kirby/base/Green"
+	.balign 4
 .global $$258187
 $$258187:
-	.incbin "baserom.dol", 0x480FB4, 0x24
+	.asciz "step/chara/hero/meta/base/Default"
+	.balign 4
 .global $$258188
 $$258188:
-	.incbin "baserom.dol", 0x480FD8, 0x24
+	.asciz "step/chara/hero/dedede/base/Default"
 .global $$258189
 $$258189:
-	.incbin "baserom.dol", 0x480FFC, 0x24
+	.asciz "step/chara/hero/dee/base/Default"
+	.balign 4
 .global $$258203
 $$258203:
-	.incbin "baserom.dol", 0x481020, 0x24
+	.asciz "step/chara/hero/kirby/normal/Goggle"
 .global $$258204
 $$258204:
-	.incbin "baserom.dol", 0x481044, 0x24
+	.asciz "step/chara/hero/meta/normal/Goggle"
+	.balign 4
 .global $$258205
 $$258205:
-	.incbin "baserom.dol", 0x481068, 0x28
+	.asciz "step/chara/hero/dedede/normal/Goggle"
+	.balign 4
 .global $$258206
 $$258206:
-	.incbin "baserom.dol", 0x481090, 0x24
+	.asciz "step/chara/hero/dee/normal/Goggle"
+	.balign 4
 .global $$258216
 $$258216:
-	.incbin "baserom.dol", 0x4810B4, 0x28
+	.asciz "step/chara/hero/kirby/normal/Floater"
+	.balign 4
 .global $$258217
 $$258217:
-	.incbin "baserom.dol", 0x4810DC, 0x24
+	.asciz "step/chara/hero/meta/normal/Floater"
 .global $$258218
 $$258218:
-	.incbin "baserom.dol", 0x481100, 0x28
+	.asciz "step/chara/hero/dedede/normal/Floater"
+	.balign 4
 .global $$258219
 $$258219:
-	.incbin "baserom.dol", 0x481128, 0x24
+	.asciz "step/chara/hero/dee/normal/Floater"
+	.balign 4
 .global $$260285
 $$260285:
-	.incbin "baserom.dol", 0x48114C, 0x24
+	.asciz "step/chara/hero/kirby/normal/Motion"
 .global $$260286
 $$260286:
-	.incbin "baserom.dol", 0x481170, 0x24
+	.asciz "step/chara/hero/meta/normal/Motion"
+	.balign 4
 .global $$260287
 $$260287:
-	.incbin "baserom.dol", 0x481194, 0x28
+	.asciz "step/chara/hero/dedede/normal/Motion"
+	.balign 4
 .global $$260288
 $$260288:
-	.incbin "baserom.dol", 0x4811BC, 0x24
+	.asciz "step/chara/hero/dee/normal/Motion"
+	.balign 4
 .global $$258961
 $$258961:
-	.incbin "baserom.dol", 0x4811E0, 0xC
+	.asciz "GoggleBigM"
+	.balign 4
 .global $$258962
 $$258962:
-	.incbin "baserom.dol", 0x4811EC, 0xC
+	.asciz "GoggleBig2M"
 .global $$258963
 $$258963:
-	.incbin "baserom.dol", 0x4811F8, 0xC
+	.asciz "GoggleBig3M"
 .global $$258997
 $$258997:
-	.incbin "baserom.dol", 0x481204, 0xC
+	.asciz "FloaterM"
+	.balign 4
 .global __vt__Q43scn4step4hero5Model
 __vt__Q43scn4step4hero5Model:
-	.incbin "baserom.dol", 0x481210, 0x48
+	.4byte 0
+	.4byte 0
+	.4byte 0x8034D120
+	.4byte 0x8034D83C
+	.4byte 0x8034D9F4
+	.4byte 0x8034DADC
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMatFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMatFv:
-	.incbin "baserom.dol", 0x493170, 0x8
+	.asciz "ResMat"
+	.balign 4
 .global __FUNCTION__$34959
 __FUNCTION__$34959:
-	.incbin "baserom.dol", 0x493178, 0x8
+	.4byte 0x72656600
+	.4byte 0
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d7ResNodeFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d7ResNodeFv:
-	.incbin "baserom.dol", 0x493180, 0x8
+	.asciz "ResNode"
 .global __FUNCTION__$30538
 __FUNCTION__$30538:
-	.incbin "baserom.dol", 0x493188, 0x8
+	.4byte 0x72656600
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258960
 $$258960:
-	.incbin "baserom.dol", 0x496DE8, 0x8
+	.asciz "GoggleM"
 .global $$258993
 $$258993:
-	.incbin "baserom.dol", 0x496DF0, 0x8
+	.asciz "TopL"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257702
 $$257702:
-	.incbin "baserom.dol", 0x49B810, 0x4
+	.4byte 0x3727C5AC
 .global $$257703
 $$257703:
-	.incbin "baserom.dol", 0x49B814, 0x4
+	.4byte 0xBF800000
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260284
 $$260284:
-	.incbin "baserom.dol", 0x49D858, 0x4
+	.4byte 0
 .global $$260389
 $$260389:
-	.incbin "baserom.dol", 0x49D85C, 0x4
+	.4byte 0x3F000000
 .global $$260416
 $$260416:
-	.incbin "baserom.dol", 0x49D860, 0x4
+	.4byte 0x3F800000
 .global $$260417
 $$260417:
-	.incbin "baserom.dol", 0x49D864, 0x4
+	.4byte 0xBF800000
 .global $$258994
 $$258994:
-	.incbin "baserom.dol", 0x49D868, 0x4
+	.4byte 0x8055AA10
 .global $$258998
 $$258998:
-	.incbin "baserom.dol", 0x49D86C, 0x4
+	.4byte 0x80485104
 .global $$260515
 $$260515:
-	.incbin "baserom.dol", 0x49D870, 0x4
+	.4byte 0xBE99999A
 .global $$260516
 $$260516:
-	.incbin "baserom.dol", 0x49D874, 0x4
+	.4byte 0x3F147AE1

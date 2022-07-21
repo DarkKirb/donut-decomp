@@ -418,23 +418,29 @@ __dt__Q34nw4r2ef16DrawLineStrategyFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef16DrawLineStrategy
 __vt__Q34nw4r2ef16DrawLineStrategy:
-	.incbin "baserom.dol", 0x43C568, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800BFF50  ;# ptr
+	.4byte 0x800BF9A0  ;# ptr
+	.4byte 0x800BA740  ;# ptr
+	.4byte 0x800BA760  ;# ptr
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$211461
 $$211461:
-	.incbin "baserom.dol", 0x492DA8, 0x8
+	.4byte 0x422A0000
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211851
 $$211851:
-	.incbin "baserom.dol", 0x4998D8, 0x4
+	.4byte 0
 .global $$211852
 $$211852:
-	.incbin "baserom.dol", 0x4998DC, 0x4
+	.4byte 0x34000000
 .global $$211853
 $$211853:
-	.incbin "baserom.dol", 0x4998E0, 0x4
+	.4byte 0x40C00000
 .global $$211854
 $$211854:
-	.incbin "baserom.dol", 0x4998E4, 0x4
+	.4byte 0x3F800000

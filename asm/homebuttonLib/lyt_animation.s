@@ -828,45 +828,59 @@ lbl_8013582C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$28495
 $$28495:
-	.incbin "baserom.dol", 0x40A2C0, 0x4
+	.4byte 0xBA83126F
 .global $$28496
 $$28496:
-	.incbin "baserom.dol", 0x40A2C4, 0x4
+	.4byte 0x3A83126F
 .global $$28520
 $$28520:
-	.incbin "baserom.dol", 0x40A2C8, 0x4
+	.4byte 0x3F800000
 .global $$28521
 $$28521:
-	.incbin "baserom.dol", 0x40A2CC, 0x4
+	.4byte 0x40000000
 .global $$28522
 $$28522:
-	.incbin "baserom.dol", 0x40A2D0, 0x4
+	.4byte 0x40400000
 .global $$28523
 $$28523:
-	.incbin "baserom.dol", 0x40A2D4, 0x4
+	.4byte 0xC0000000
 .global $$28528
 $$28528:
-	.incbin "baserom.dol", 0x40A2D8, 0x4
+	.4byte 0
 .global $$28717
 $$28717:
-	.incbin "baserom.dol", 0x40A2DC, 0x4
+	.4byte 0x3F000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt18AnimTransformBasic
 __vt__Q36nw4hbm3lyt18AnimTransformBasic:
-	.incbin "baserom.dol", 0x43FE80, 0x20
+	.4byte 0x80443DD0
+	.4byte 0
+	.4byte 0x80135010  ;# ptr
+	.4byte 0x801350A0  ;# ptr
+	.4byte 0x801351F0  ;# ptr
+	.4byte 0x801352F0  ;# ptr
+	.4byte 0x801353B0  ;# ptr
+	.4byte 0x80135590  ;# ptr
 .global $$28016
 $$28016:
-	.incbin "baserom.dol", 0x43FEA0, 0x20
+	.asciz "nw4hbm::lyt::AnimTransformBasic"
 .global $$28017
 $$28017:
-	.incbin "baserom.dol", 0x43FEC0, 0x10
+	.4byte 0x80443DF8
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt18AnimTransformBasic
 __RTTI__Q36nw4hbm3lyt18AnimTransformBasic:
-	.incbin "baserom.dol", 0x43FED0, 0x8
+	.4byte 0x80443DA0
+	.4byte 0x80443DC0
 .global $$28018
 $$28018:
-	.incbin "baserom.dol", 0x43FED8, 0x20
+	.asciz "nw4hbm::lyt::AnimTransform"
+	.balign 4
+	.4byte 0
 .global __RTTI__Q36nw4hbm3lyt13AnimTransform
 __RTTI__Q36nw4hbm3lyt13AnimTransform:
-	.incbin "baserom.dol", 0x43FEF8, 0x8
+	.4byte 0x80443DD8
+	.4byte 0

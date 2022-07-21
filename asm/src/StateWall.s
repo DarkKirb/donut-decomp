@@ -141,9 +141,17 @@ lbl_802EC4E0:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage9StateWall
 __vt__Q53scn4step5enemy9tsukikage9StateWall:
-	.incbin "baserom.dol", 0x479B20, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EC47C  ;# ptr
+	.4byte 0x8028DDD8  ;# ptr
+	.4byte 0x8028DDDC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255060
 $$255060:
-	.incbin "baserom.dol", 0x49CFC0, 0x8
+	.4byte 0x42B40000
+	.4byte 0

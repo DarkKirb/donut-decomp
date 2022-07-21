@@ -118,18 +118,23 @@ lbl_801C62A4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2setRet_s32__Q26mintvm13MintFuncProxyFi$$20
 $$2STRING$$2setRet_s32__Q26mintvm13MintFuncProxyFi$$20:
-	.incbin "baserom.dol", 0x457DC8, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2setRet_s32__Q26mintvm13MintFuncProxyFi
 $$2STRING$$2setRet_s32__Q26mintvm13MintFuncProxyFi:
-	.incbin "baserom.dol", 0x457DDC, 0x14
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
 .global $$2STRING$$2setRet_f32__Q26mintvm13MintFuncProxyFf$$20
 $$2STRING$$2setRet_f32__Q26mintvm13MintFuncProxyFf$$20:
-	.incbin "baserom.dol", 0x457DF0, 0x14
+	.asciz "Assertion failed.\n"
+	.balign 4
 .global $$2STRING$$2setRet_f32__Q26mintvm13MintFuncProxyFf
 $$2STRING$$2setRet_f32__Q26mintvm13MintFuncProxyFf:
-	.incbin "baserom.dol", 0x457E04, 0x14
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249893
 $$249893:
-	.incbin "baserom.dol", 0x49A718, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

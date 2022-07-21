@@ -375,47 +375,60 @@ lbl_803B537C:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252323
 $$252323:
-	.incbin "baserom.dol", 0x48C810, 0x14
+	.asciz "step/challenge/Main"
 .global $$252324
 $$252324:
-	.incbin "baserom.dol", 0x48C824, 0xC
+	.asciz "Interval"
+	.balign 4
 .global $$252325
 $$252325:
-	.incbin "baserom.dol", 0x48C830, 0xC
+	.asciz "KirbyIconN"
+	.balign 4
 .global $$252326
 $$252326:
-	.incbin "baserom.dol", 0x48C83C, 0x10
+	.asciz "MahoroaIconN"
+	.balign 4
 .global $$252329
 $$252329:
-	.incbin "baserom.dol", 0x48C84C, 0xC
+	.asciz "Radar_Start"
 .global $$252331
 $$252331:
-	.incbin "baserom.dol", 0x48C858, 0x40
+	.asciz "Radar_Goal"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252328
 $$252328:
-	.incbin "baserom.dol", 0x497C60, 0x8
+	.asciz "Start"
+	.balign 4
 .global $$252330
 $$252330:
-	.incbin "baserom.dol", 0x497C68, 0x8
+	.asciz "Goal"
+	.balign 4
 .global $$252332
 $$252332:
-	.incbin "baserom.dol", 0x497C70, 0x8
+	.asciz "StartN"
+	.balign 4
 .global $$252333
 $$252333:
-	.incbin "baserom.dol", 0x497C78, 0x8
+	.asciz "GoalN"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252327
 $$252327:
-	.incbin "baserom.dol", 0x49E490, 0x4
+	.4byte 0
 .global $$252401
 $$252401:
-	.incbin "baserom.dol", 0x49E494, 0x4
+	.4byte 0x3F800000
 .global $$252436
 $$252436:
-	.incbin "baserom.dol", 0x49E498, 0x4
+	.4byte 0x40000000
 .global $$252437
 $$252437:
-	.incbin "baserom.dol", 0x49E49C, 0x4
+	.4byte 0x3E800000

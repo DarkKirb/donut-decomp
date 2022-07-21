@@ -158,20 +158,23 @@ onObjStopChanged__Q43scn4step4info11HelpPushAllFb:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252048
 $$252048:
-	.incbin "baserom.dol", 0x48B728, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$252049
 $$252049:
-	.incbin "baserom.dol", 0x48B738, 0x10
+	.asciz "HelpPushAll"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252111
 $$252111:
-	.incbin "baserom.dol", 0x4978C8, 0x8
+	.asciz "TopN"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252106
 $$252106:
-	.incbin "baserom.dol", 0x49E3E0, 0x4
+	.4byte 0
 .global $$252107
 $$252107:
-	.incbin "baserom.dol", 0x49E3E4, 0x4
+	.4byte 0x42F00000

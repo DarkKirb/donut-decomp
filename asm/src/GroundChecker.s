@@ -287,13 +287,13 @@ getFloorPosVector3__Q43scn4step5chara13GroundCheckerCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253931
 $$253931:
-	.incbin "baserom.dol", 0x49B7B8, 0x4
+	.4byte 0
 .global $$253995
 $$253995:
-	.incbin "baserom.dol", 0x49B7BC, 0x4
+	.4byte 0x3727C5AC
 .global $$253996
 $$253996:
-	.incbin "baserom.dol", 0x49B7C0, 0x4
+	.4byte 0x3C23D70A
 .global $$253997
 $$253997:
-	.incbin "baserom.dol", 0x49B7C4, 0x4
+	.4byte 0xC1400000

@@ -332,12 +332,19 @@ lbl_80253D54:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss8kingsdoo17StateChargeAttack
 __vt__Q53scn4step4boss8kingsdoo17StateChargeAttack:
-	.incbin "baserom.dol", 0x464838, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802539CC  ;# ptr
+	.4byte 0x802539D0  ;# ptr
+	.4byte 0x80253A8C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80253AE0  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256691
 $$256691:
-	.incbin "baserom.dol", 0x49B3B0, 0x4
+	.4byte 0x3727C5AC
 .global $$256692
 $$256692:
-	.incbin "baserom.dol", 0x49B3B4, 0x4
+	.4byte 0x3C8EFA35

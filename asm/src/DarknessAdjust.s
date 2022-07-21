@@ -123,15 +123,16 @@ draw__Q43scn4step3sfx14DarknessAdjustFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252031
 $$252031:
-	.incbin "baserom.dol", 0x48ED38, 0x18
+	.asciz "step/sfx/DarknessAdjust"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252071
 $$252071:
-	.incbin "baserom.dol", 0x49E6C0, 0x4
+	.4byte 0x3F800000
 .global $$252072
 $$252072:
-	.incbin "baserom.dol", 0x49E6C4, 0x4
+	.4byte 0xBF800000
 .global $$252073
 $$252073:
-	.incbin "baserom.dol", 0x49E6C8, 0x8
+	.4byte 0
+	.4byte 0

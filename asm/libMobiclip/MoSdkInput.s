@@ -359,19 +359,24 @@ jumpTo__10MoSdkInputFUl:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22549
 $$22549:
-	.incbin "baserom.dol", 0x444500, 0x1C
+	.asciz "%s line %d : %s failed!\n"
+	.balign 4
 .global $$22550
 $$22550:
-	.incbin "baserom.dol", 0x44451C, 0x14
+	.asciz "MoSdkInput.cpp"
+	.balign 4
+	.4byte 0
 .global $$22551
 $$22551:
-	.incbin "baserom.dol", 0x444530, 0x18
+	.asciz "indexWrite-indexRead>=4"
 .global $$22555
 $$22555:
-	.incbin "baserom.dol", 0x444548, 0x18
+	.asciz "indexWrite-indexRead>=2"
 .global $$22559
 $$22559:
-	.incbin "baserom.dol", 0x444560, 0x18
+	.asciz "indexWrite-indexRead>=1"
 .global $$22563
 $$22563:
-	.incbin "baserom.dol", 0x444578, 0x20
+	.asciz "indexWrite-indexRead>=len"
+	.balign 4
+	.4byte 0

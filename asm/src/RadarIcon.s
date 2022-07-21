@@ -60,10 +60,16 @@ appear__Q53scn4step4info9challenge9RadarIconFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251919
 $$251919:
-	.incbin "baserom.dol", 0x48C898, 0x14
+	.asciz "step/challenge/Main"
 .global $$251920
 $$251920:
-	.incbin "baserom.dol", 0x48C8AC, 0xC
+	.asciz "MahoroaIcon"
 .global $$251921
 $$251921:
-	.incbin "baserom.dol", 0x48C8B8, 0x40
+	.asciz "KirbyIcon"
+	.balign 4
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0

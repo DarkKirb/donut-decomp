@@ -754,85 +754,155 @@ __sinit_$$3VariationDemo_cpp:
 /* 8030422C 0030006C  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4025A4, 0x4
+	.4byte 0x803040A4
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$254361
 $$254361:
-	.incbin "baserom.dol", 0x4159F8, 0xC
+	.4byte 0x00020000
+	.4byte 0
+	.4byte 0
 .global $$254373
 $$254373:
-	.incbin "baserom.dol", 0x415A04, 0xC
+	.4byte 0x00030000
+	.4byte 0
+	.4byte 0
 .global $$254385
 $$254385:
-	.incbin "baserom.dol", 0x415A10, 0xC
+	.4byte 0x00040000
+	.4byte 0
+	.4byte 0
 .global $$254397
 $$254397:
-	.incbin "baserom.dol", 0x415A1C, 0xC
+	.4byte 0x00050000
+	.4byte 0
+	.4byte 0
 .global $$254469
 $$254469:
-	.incbin "baserom.dol", 0x415A28, 0xC
+	.4byte 0x000B0000
+	.4byte 0
+	.4byte 0
 .global $$254508
 $$254508:
-	.incbin "baserom.dol", 0x415A34, 0xC
+	.4byte 0x000E0000
+	.4byte 0
+	.4byte 0
 .global $$254552
 $$254552:
-	.incbin "baserom.dol", 0x415A40, 0xC
+	.4byte 0x00120000
+	.4byte 0
+	.4byte 0
 .global $$254563
 $$254563:
-	.incbin "baserom.dol", 0x415A4C, 0xC
+	.4byte 0x00130000
+	.4byte 0
+	.4byte 0
 .global $$254574
 $$254574:
-	.incbin "baserom.dol", 0x415A58, 0x10
+	.4byte 0x00140000
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global datTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
 datTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2:
-	.incbin "baserom.dol", 0x47C3E8, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x80552588
 .global datSizeTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
 datSizeTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2:
-	.incbin "baserom.dol", 0x47C418, 0x30
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000009
 .global $$255233
 $$255233:
-	.incbin "baserom.dol", 0x47C448, 0x58
+	.4byte 0x80303D60
+	.4byte 0x80303D60
+	.4byte 0x80303BD4
+	.4byte 0x80303BE4
+	.4byte 0x80303BF4
+	.4byte 0x80303C04
+	.4byte 0x80303C14
+	.4byte 0x80303C24
+	.4byte 0x80303C34
+	.4byte 0x80303C44
+	.4byte 0x80303C54
+	.4byte 0x80303C60
+	.4byte 0x80303C6C
+	.4byte 0x80303C84
+	.4byte 0x80303C9C
+	.4byte 0x80303CB4
+	.4byte 0x80303CC4
+	.4byte 0x80303CDC
+	.4byte 0x80303D08
+	.4byte 0x80303D10
+	.4byte 0x80303D18
+	.4byte 0x80303D20
 .global __vt__Q53scn4step7gimmick10cameralock13VariationDemo
 __vt__Q53scn4step7gimmick10cameralock13VariationDemo:
-	.incbin "baserom.dol", 0x47C4A0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80303B1C
+	.4byte 0x80303DCC
+	.4byte 0x80303DD8
+	.4byte 0x80303DDC
+	.4byte 0x803040A0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255183
 $$255183:
-	.incbin "baserom.dol", 0x49D240, 0x4
+	.4byte 0
 .global $$255184
 $$255184:
-	.incbin "baserom.dol", 0x49D244, 0x4
+	.4byte 0x3F800000
 .global $$255250
 $$255250:
-	.incbin "baserom.dol", 0x49D248, 0x4
+	.4byte 0x3F000000
 .global $$255251
 $$255251:
-	.incbin "baserom.dol", 0x49D24C, 0x4
+	.4byte 0xBF000000
 .global $$255291
 $$255291:
-	.incbin "baserom.dol", 0x49D250, 0x4
+	.4byte 0x41500000
 .global $$255292
 $$255292:
-	.incbin "baserom.dol", 0x49D254, 0x4
+	.4byte 0x41400000
 .global $$255293
 $$255293:
-	.incbin "baserom.dol", 0x49D258, 0x4
+	.4byte 0x41B00000
 .global $$255294
 $$255294:
-	.incbin "baserom.dol", 0x49D25C, 0x4
+	.4byte 0x40A00000
 .global $$255295
 $$255295:
-	.incbin "baserom.dol", 0x49D260, 0x4
+	.4byte 0xC20C0000
 .global $$255296
 $$255296:
-	.incbin "baserom.dol", 0x49D264, 0x4
+	.4byte 0x41300000
 .global $$255297
 $$255297:
-	.incbin "baserom.dol", 0x49D268, 0x8
+	.4byte 0xBD1374BC
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2

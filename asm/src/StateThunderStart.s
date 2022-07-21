@@ -393,27 +393,39 @@ __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12Stat
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1:
-	.incbin "baserom.dol", 0x4639C0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80250E0C  ;# ptr
+	.4byte 0x80250DF0  ;# ptr
 .global __vt__Q53scn4step4boss6dubior17StateThunderStart
 __vt__Q53scn4step4boss6dubior17StateThunderStart:
-	.incbin "baserom.dol", 0x4639D0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80250BA8  ;# ptr
+	.4byte 0x80250C30  ;# ptr
+	.4byte 0x80250D38  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80250DEC  ;# ptr
+	.4byte 0x80234504  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global WaitFrameTable__Q53scn4step4boss6dubior31$$2unnamed$$2StateThunderStart_cpp$$2
 WaitFrameTable__Q53scn4step4boss6dubior31$$2unnamed$$2StateThunderStart_cpp$$2:
-	.incbin "baserom.dol", 0x49B360, 0x8
+	.4byte 0x0000000A
+	.4byte 0x0000000A
 .global $$256087
 $$256087:
-	.incbin "baserom.dol", 0x49B368, 0x4
+	.4byte 0
 .global $$256088
 $$256088:
-	.incbin "baserom.dol", 0x49B36C, 0x4
+	.4byte 0xBF800000
 .global $$256089
 $$256089:
-	.incbin "baserom.dol", 0x49B370, 0x4
+	.4byte 0x3F000000
 .global $$256090
 $$256090:
-	.incbin "baserom.dol", 0x49B374, 0x4
+	.4byte 0x3F800000
 .global $$256094
 $$256094:
-	.incbin "baserom.dol", 0x49B378, 0x8
+	.4byte 0x43300000
+	.4byte 0

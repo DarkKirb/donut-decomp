@@ -1658,30 +1658,39 @@ lbl_800FD854:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt18AnimTransformBasic
 __vt__Q34nw4r3lyt18AnimTransformBasic:
-	.incbin "baserom.dol", 0x43D668, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x800FC590  ;# ptr
+	.4byte 0x800FC660  ;# ptr
+	.4byte 0x800FC680  ;# ptr
+	.4byte 0x800FC800  ;# ptr
+	.4byte 0x800FC9D0  ;# ptr
+	.4byte 0x800FCAF0  ;# ptr
+	.4byte 0x800FCCD0  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210121
 $$210121:
-	.incbin "baserom.dol", 0x499CF0, 0x4
+	.4byte 0xBA83126F
 .global $$210122
 $$210122:
-	.incbin "baserom.dol", 0x499CF4, 0x4
+	.4byte 0x3A83126F
 .global $$210146
 $$210146:
-	.incbin "baserom.dol", 0x499CF8, 0x4
+	.4byte 0x3F800000
 .global $$210147
 $$210147:
-	.incbin "baserom.dol", 0x499CFC, 0x4
+	.4byte 0x40000000
 .global $$210148
 $$210148:
-	.incbin "baserom.dol", 0x499D00, 0x4
+	.4byte 0x40400000
 .global $$210149
 $$210149:
-	.incbin "baserom.dol", 0x499D04, 0x4
+	.4byte 0xC0000000
 .global $$210154
 $$210154:
-	.incbin "baserom.dol", 0x499D08, 0x4
+	.4byte 0
 .global $$210434
 $$210434:
-	.incbin "baserom.dol", 0x499D0C, 0x4
+	.4byte 0x3F000000

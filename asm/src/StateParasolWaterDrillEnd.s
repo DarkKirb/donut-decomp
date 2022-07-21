@@ -196,4 +196,13 @@ procFixPos__Q53scn4step4hero7parasol25StateParasolWaterDrillEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol25StateParasolWaterDrillEnd
 __vt__Q53scn4step4hero7parasol25StateParasolWaterDrillEnd:
-	.incbin "baserom.dol", 0x489F88, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x803966B0
+	.4byte 0x8039676C
+	.4byte 0x8039682C
+	.4byte 0x8035550C
+	.4byte 0x80396894
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0

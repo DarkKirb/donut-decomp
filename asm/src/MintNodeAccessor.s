@@ -117,7 +117,7 @@ __sinit_$$3MintNodeAccessor_cpp:
 /* 8018EB48 0018A988  4E 80 00 20 */	blr 
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4023E4, 0x4
+	.4byte 0x8018EB04  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$253785

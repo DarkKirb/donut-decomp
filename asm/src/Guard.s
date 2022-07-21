@@ -133,20 +133,47 @@ lbl_80338690:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19$$2unnamed$$2Guard_cpp$$2
 T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19$$2unnamed$$2Guard_cpp$$2:
-	.incbin "baserom.dol", 0x4124D0, 0x20
+	.4byte 0x3F800000
+	.asciz "?333?"
+	.balign 4
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E99999A
+	.4byte 0x3E4CCCCD
+	.4byte 0
+	.4byte 0
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__19$$2unnamed$$2Guard_cpp$$2
 T_ALPHA_TABLE__19$$2unnamed$$2Guard_cpp$$2:
-	.incbin "baserom.dol", 0x415E00, 0x50
+	.4byte 0x000000C0
+	.4byte 0x000000C0
+	.4byte 0x000000A0
+	.4byte 0x00000090
+	.4byte 0x00000080
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249320
 $$249320:
-	.incbin "baserom.dol", 0x49AE70, 0x4
+	.4byte 0x3727C5AC
 .global $$249321
 $$249321:
-	.incbin "baserom.dol", 0x49AE74, 0x4
+	.4byte 0xB727C5AC
 .global $$249324
 $$249324:
-	.incbin "baserom.dol", 0x49AE78, 0x8
+	.4byte 0x43300000
+	.4byte 0

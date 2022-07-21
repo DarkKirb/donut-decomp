@@ -124,10 +124,23 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12Sta
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common12StatePursuit$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EFC8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291240  ;# ptr
+	.4byte 0x80291200  ;# ptr
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlushWait$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46EFD8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029123C  ;# ptr
+	.4byte 0x8029121C  ;# ptr
 .global __vt__Q53scn4step5enemy6common17BrainFlushPursuit
 __vt__Q53scn4step5enemy6common17BrainFlushPursuit:
-	.incbin "baserom.dol", 0x46EFE8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80291238  ;# ptr
+	.4byte 0x80291108  ;# ptr
+	.4byte 0x80291184  ;# ptr
+	.4byte 0x8027EE30  ;# ptr
+	.4byte 0x8027EE34  ;# ptr
+	.4byte 0

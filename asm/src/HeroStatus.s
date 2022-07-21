@@ -743,59 +743,79 @@ lbl_803A9DB4:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254295
 $$254295:
-	.incbin "baserom.dol", 0x48B8B8, 0x10
+	.asciz "step/game/Main"
+	.balign 4
 .global $$254296
 $$254296:
-	.incbin "baserom.dol", 0x48B8C8, 0x14
+	.asciz "ChallengeHeroPanel"
+	.balign 4
 .global $$254297
 $$254297:
-	.incbin "baserom.dol", 0x48B8DC, 0x14
+	.asciz "HeroGAEffect"
+	.balign 4
+	.4byte 0
 .global $$254298
 $$254298:
-	.incbin "baserom.dol", 0x48B8F0, 0x10
+	.asciz "HeroStatusIconN"
 .global $$254300
 $$254300:
-	.incbin "baserom.dol", 0x48B900, 0x10
+	.asciz "HeroLifeBarN"
+	.balign 4
 .global $$254302
 $$254302:
-	.incbin "baserom.dol", 0x48B910, 0xC
+	.asciz "Bounding"
+	.balign 4
 .global $$254305
 $$254305:
-	.incbin "baserom.dol", 0x48B91C, 0x10
+	.asciz "TransparencyN"
+	.balign 4
 .global $$254306
 $$254306:
-	.incbin "baserom.dol", 0x48B92C, 0x10
+	.asciz "HeroGAEffectN"
+	.balign 4
 .global $$254307
 $$254307:
-	.incbin "baserom.dol", 0x48B93C, 0xC
+	.asciz "GetAbility"
+	.balign 4
 .global $$254308
 $$254308:
-	.incbin "baserom.dol", 0x48B948, 0x10
+	.asciz "HeroPanelMaster"
 .global $$254309
 $$254309:
-	.incbin "baserom.dol", 0x48B958, 0x10
+	.asciz "HeroPanelMusou"
+	.balign 4
 .global $$254310
 $$254310:
-	.incbin "baserom.dol", 0x48B968, 0x14
+	.asciz "HeroPanelChallenge"
+	.balign 4
 .global $$254311
 $$254311:
-	.incbin "baserom.dol", 0x48B97C, 0xC
+	.asciz "HeroPanelN"
+	.balign 4
 .global $$254460
 $$254460:
-	.incbin "baserom.dol", 0x48B988, 0x40
+	.asciz "HeroEffectN"
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+	.asciz "LinkList.h"
+	.balign 4
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254299
 $$254299:
-	.incbin "baserom.dol", 0x497948, 0x8
+	.asciz "AbGageN"
 .global $$254303
 $$254303:
-	.incbin "baserom.dol", 0x497950, 0x8
+	.asciz "Ita02N"
+	.balign 4
 .global $$254304
 $$254304:
-	.incbin "baserom.dol", 0x497958, 0x8
+	.asciz "ItaN"
+	.balign 4
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254301
 $$254301:
-	.incbin "baserom.dol", 0x49E428, 0x8
+	.4byte 0
+	.4byte 0

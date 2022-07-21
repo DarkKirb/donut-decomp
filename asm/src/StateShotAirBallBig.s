@@ -216,4 +216,13 @@ __dt__Q53scn4step4boss6whispy19StateShotAirBallBigFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy19StateShotAirBallBig
 __vt__Q53scn4step4boss6whispy19StateShotAirBallBig:
-	.incbin "baserom.dol", 0x4667C8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x8025E6A0  ;# ptr
+	.4byte 0x8025E210  ;# ptr
+	.4byte 0x8025E37C  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x8025E380  ;# ptr
+	.4byte 0x80234504  ;# ptr
+	.4byte 0x8025E3C0  ;# ptr
+	.4byte 0

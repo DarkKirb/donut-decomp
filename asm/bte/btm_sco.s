@@ -1044,45 +1044,60 @@ lbl_8008524C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global btm_esco_defaults
 btm_esco_defaults:
-	.incbin "baserom.dol", 0x404208, 0x10
+	.4byte 0x00001F40
+	.4byte 0x00001F40
+	.4byte 0x000A0060
+	.4byte 0x003F0100
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21903
 $$21903:
-	.incbin "baserom.dol", 0x438080, 0x24
+	.asciz "btm_esco_conn_rsp -> No Resources"
+	.balign 4
 .global $$21911
 $$21911:
-	.incbin "baserom.dol", 0x4380A4, 0x24
+	.asciz "TCS accept SCO: Packet Types 0x%04x"
 .global $$21973
 $$21973:
-	.incbin "baserom.dol", 0x4380C8, 0x44
+	.asciz "BTM_CreateSco -> (e)SCO Link for ACL handle 0x%04x, Desired Type %d"
 .global $$21974
 $$21974:
-	.incbin "baserom.dol", 0x43810C, 0x50
+	.asciz "      txbw 0x%x, rxbw 0x%x, lat 0x%x, voice 0x%x, retrans 0x%02x, pkt 0x%04x"
+	.balign 4
 .global $$21995
 $$21995:
-	.incbin "baserom.dol", 0x43815C, 0x50
+	.asciz "btm_sco_chk_pend_unpark -> (e)SCO Link for ACL handle 0x%04x, Desired Type %d"
+	.balign 4
 .global $$22023
 $$22023:
-	.incbin "baserom.dol", 0x4381AC, 0x44
+	.asciz "btm_sco_conn_req: No one wants this SCO connection; rejecting it"
+	.balign 4
 .global $$22105
 $$22105:
-	.incbin "baserom.dol", 0x4381F0, 0x1C
+	.asciz "BTM_SetEScoMode -> mode %d"
+	.balign 4
 .global $$22106
 $$22106:
-	.incbin "baserom.dol", 0x43820C, 0x34
+	.asciz "BTM_SetEScoMode -> mode SCO (eSCO not supported)"
+	.balign 4
 .global $$22107
 $$22107:
-	.incbin "baserom.dol", 0x438240, 0x60
+	.asciz "    txbw 0x%08x, rxbw 0x%08x, max_lat 0x%04x, voice 0x%04x, pkt 0x%04x, rtx effort 0x%02x"
+	.balign 4
+	.4byte 0
 .global $$22120
 $$22120:
-	.incbin "baserom.dol", 0x4382A0, 0x28
+	.asciz "BTM_ReadEScoLinkParms -> sco_inx 0x%04x"
 .global $$22139
 $$22139:
-	.incbin "baserom.dol", 0x4382C8, 0x44
+	.asciz "BTM_ChangeEScoLinkParms -> SCO Link for handle 0x%04x, pkt 0x%04x"
+	.balign 4
 .global $$22140
 $$22140:
-	.incbin "baserom.dol", 0x43830C, 0x38
+	.asciz "BTM_ChangeEScoLinkParms -> eSCO Link for handle 0x%04x"
+	.balign 4
 .global $$22157
 $$22157:
-	.incbin "baserom.dol", 0x438344, 0x3C
+	.asciz "btm_esco_proc_conn_chg -> handle 0x%04x, status 0x%02x"
+	.balign 4
+	.4byte 0

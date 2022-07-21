@@ -947,21 +947,34 @@ lbl_80137858:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29387
 $$29387:
-	.incbin "baserom.dol", 0x40A2F8, 0x4
+	.4byte 0
 .global $$29664
 $$29664:
-	.incbin "baserom.dol", 0x40A2FC, 0x4
+	.4byte 0x3F000000
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt6Layout
 __vt__Q36nw4hbm3lyt6Layout:
-	.incbin "baserom.dol", 0x4400C0, 0x34
+	.4byte 0x80444008
+	.4byte 0
+	.4byte 0x80136E00  ;# ptr
+	.4byte 0x80136F30  ;# ptr
+	.4byte 0x80137240  ;# ptr
+	.4byte 0x80137390  ;# ptr
+	.4byte 0x801373C0  ;# ptr
+	.4byte 0x801373D0  ;# ptr
+	.4byte 0x801373F0  ;# ptr
+	.4byte 0x80137420  ;# ptr
+	.4byte 0x80137430  ;# ptr
+	.4byte 0x80137440  ;# ptr
+	.4byte 0x801374C0  ;# ptr
 .global $$28461
 $$28461:
-	.incbin "baserom.dol", 0x4400F4, 0x14
+	.asciz "nw4hbm::lyt::Layout"
 .global __RTTI__Q36nw4hbm3lyt6Layout
 __RTTI__Q36nw4hbm3lyt6Layout:
-	.incbin "baserom.dol", 0x440108, 0x8
+	.4byte 0x80443FF4
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global mspAllocator__Q36nw4hbm3lyt6Layout

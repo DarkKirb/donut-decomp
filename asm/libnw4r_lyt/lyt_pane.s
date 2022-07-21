@@ -1150,35 +1150,66 @@ __sinit_$$3lyt_pane_cpp:
 /* 800F3AEC 000EF92C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x402380, 0x4
+	.4byte 0x800F3AE0  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$210224
 $$210224:
-	.incbin "baserom.dol", 0x43D2D8, 0xC
+	.asciz "RootPane"
+	.balign 4
 .global __vt__Q34nw4r3lyt4Pane
 __vt__Q34nw4r3lyt4Pane:
-	.incbin "baserom.dol", 0x43D2E4, 0x74
+	.4byte 0
+	.4byte 0
+	.4byte 0x800F2CD0  ;# ptr
+	.4byte 0x800F3AD0  ;# ptr
+	.4byte 0x800F30D0  ;# ptr
+	.4byte 0x800F33D0  ;# ptr
+	.4byte 0x800F3460  ;# ptr
+	.4byte 0x800F3470  ;# ptr
+	.4byte 0x800F3500  ;# ptr
+	.4byte 0x800F2EA0  ;# ptr
+	.4byte 0x800F2EB0  ;# ptr
+	.4byte 0x800F2EC0  ;# ptr
+	.4byte 0x800F2EF0  ;# ptr
+	.4byte 0x800F2F20  ;# ptr
+	.4byte 0x800F2F30  ;# ptr
+	.4byte 0x800F2F40  ;# ptr
+	.4byte 0x800F3000  ;# ptr
+	.4byte 0x800F35C0  ;# ptr
+	.4byte 0x800F35E0  ;# ptr
+	.4byte 0x800F3670  ;# ptr
+	.4byte 0x800F3690  ;# ptr
+	.4byte 0x800F3730  ;# ptr
+	.4byte 0x800F3740  ;# ptr
+	.4byte 0x800F3750  ;# ptr
+	.4byte 0x800F3850  ;# ptr
+	.4byte 0x800F3A80  ;# ptr
+	.4byte 0x800F3AA0  ;# ptr
+	.4byte 0x800F3AB0  ;# ptr
+	.4byte 0x800F3950  ;# ptr
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29820
 $$29820:
-	.incbin "baserom.dol", 0x499C58, 0x4
+	.4byte 0
 .global $$29821
 $$29821:
-	.incbin "baserom.dol", 0x499C5C, 0x4
+	.4byte 0x3F800000
 .global $$210109
 $$210109:
-	.incbin "baserom.dol", 0x499C60, 0x4
+	.4byte 0x3F000000
 .global $$210419
 $$210419:
-	.incbin "baserom.dol", 0x499C64, 0x4
+	.4byte 0x3C8EFA35
 .global $$210420
 $$210420:
-	.incbin "baserom.dol", 0x499C68, 0x8
+	.4byte 0x3B808081
+	.4byte 0
 .global $$210424
 $$210424:
-	.incbin "baserom.dol", 0x499C70, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global typeInfo__Q34nw4r3lyt4Pane

@@ -73,13 +73,21 @@ lbl_80128838:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q210homebutton18GroupAnmController
 __vt__Q210homebutton18GroupAnmController:
-	.incbin "baserom.dol", 0x43EAE0, 0x10
+	.4byte 0x80442A20
+	.4byte 0
+	.4byte 0x801287A0  ;# ptr
+	.4byte 0x80128630  ;# ptr
 .global $$28022
 $$28022:
-	.incbin "baserom.dol", 0x43EAF0, 0x20
+	.asciz "homebutton::GroupAnmController"
+	.balign 4
 .global $$28023
 $$28023:
-	.incbin "baserom.dol", 0x43EB10, 0x10
+	.4byte 0x804429D8
+	.4byte 0
+	.4byte 0
+	.4byte 0
 .global __RTTI__Q210homebutton18GroupAnmController
 __RTTI__Q210homebutton18GroupAnmController:
-	.incbin "baserom.dol", 0x43EB20, 0x8
+	.4byte 0x804429F0
+	.4byte 0x80442A10

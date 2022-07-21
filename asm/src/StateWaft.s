@@ -171,33 +171,39 @@ __dt__Q53scn4step4item5state9StateWaftFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255349
 $$255349:
-	.incbin "baserom.dol", 0x48E748, 0x10
+	.asciz "RotControlL"
+	.4byte 0
 .global __vt__Q53scn4step4item5state9StateWaft
 __vt__Q53scn4step4item5state9StateWaft:
-	.incbin "baserom.dol", 0x48E758, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x803C8E44
+	.4byte 0x803C8D24
+	.4byte 0x803C8D84
+	.4byte 0x803C5204
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255346
 $$255346:
-	.incbin "baserom.dol", 0x49E640, 0x4
+	.4byte 0
 .global $$255347
 $$255347:
-	.incbin "baserom.dol", 0x49E644, 0x4
+	.4byte 0x3DCCCCCD
 .global $$255348
 $$255348:
-	.incbin "baserom.dol", 0x49E648, 0x4
+	.4byte 0x43340000
 .global $$255390
 $$255390:
-	.incbin "baserom.dol", 0x49E64C, 0x4
+	.4byte 0x40000000
 .global $$255391
 $$255391:
-	.incbin "baserom.dol", 0x49E650, 0x4
+	.4byte 0x43B40000
 .global $$255398
 $$255398:
-	.incbin "baserom.dol", 0x49E654, 0x4
+	.4byte 0x4222F983
 .global $$255399
 $$255399:
-	.incbin "baserom.dol", 0x49E658, 0x4
+	.4byte 0x3C8EFA35
 .global $$255400
 $$255400:
-	.incbin "baserom.dol", 0x49E65C, 0x4
+	.4byte 0x3E4CCCCD

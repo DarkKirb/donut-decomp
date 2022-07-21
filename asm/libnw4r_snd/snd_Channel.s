@@ -1250,25 +1250,28 @@ FreeChannel__Q44nw4r3snd6detail7ChannelFPQ44nw4r3snd6detail7Channel:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210013
 $$210013:
-	.incbin "baserom.dol", 0x499E10, 0x4
+	.4byte 0
 .global $$210140
 $$210140:
-	.incbin "baserom.dol", 0x499E14, 0x4
+	.4byte 0x3F800000
 .global $$210293
 $$210293:
-	.incbin "baserom.dol", 0x499E18, 0x4
+	.4byte 0x437F0000
 .global $$210294
 $$210294:
-	.incbin "baserom.dol", 0x499E1C, 0x4
+	.4byte 0x40C00000
 .global $$210295
 $$210295:
-	.incbin "baserom.dol", 0x499E20, 0x8
+	.4byte 0x43800000
+	.4byte 0
 .global $$210299
 $$210299:
-	.incbin "baserom.dol", 0x499E28, 0x8
+	.4byte 0x43300000
+	.4byte 0
 .global $$210300
 $$210300:
-	.incbin "baserom.dol", 0x499E30, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$28748

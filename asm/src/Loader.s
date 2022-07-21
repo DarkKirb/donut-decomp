@@ -31,22 +31,33 @@ load__Q33scn2vc6LoaderFQ33scn2vc11ContentKind:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250070
 $$250070:
-	.incbin "baserom.dol", 0x491648, 0x18
+	.asciz "vc/GB_kby1/GB_kby1.dol"
+	.balign 4
 .global $$250071
 $$250071:
-	.incbin "baserom.dol", 0x491660, 0x18
+	.asciz "vc/FC_yume/FC_yume.dol"
+	.balign 4
 .global $$250072
 $$250072:
-	.incbin "baserom.dol", 0x491678, 0x18
+	.asciz "vc/GB_kby2/GB_kby2.dol"
+	.balign 4
 .global $$250073
 $$250073:
-	.incbin "baserom.dol", 0x491690, 0x18
+	.asciz "vc/SF_kby3/SF_kby3.dol"
+	.balign 4
 .global $$250074
 $$250074:
-	.incbin "baserom.dol", 0x4916A8, 0x18
+	.asciz "vc/SF_sdx/SF_sdx.dol"
+	.balign 4
 .global $$250075
 $$250075:
-	.incbin "baserom.dol", 0x4916C0, 0x18
+	.asciz "vc/64_k64/64_k64.dol"
+	.balign 4
 .global tFILENAME_TABLE__Q33scn2vc20$$2unnamed$$2Loader_cpp$$2
 tFILENAME_TABLE__Q33scn2vc20$$2unnamed$$2Loader_cpp$$2:
-	.incbin "baserom.dol", 0x4916D8, 0x18
+	.4byte 0x80495548
+	.4byte 0x80495560
+	.4byte 0x80495578
+	.4byte 0x80495590
+	.4byte 0x804955A8
+	.4byte 0x804955C0

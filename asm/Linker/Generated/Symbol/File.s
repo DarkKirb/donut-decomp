@@ -57,14 +57,37 @@ _bss_init_info:
 .section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global _eti_init_info
 _eti_init_info:
-	.incbin "baserom.dol", 0x402324, 0x3C
+	.4byte 0x800068E0  ;# ptr
+	.4byte 0x800069C4  ;# ptr
+	.4byte 0x80006BD0  ;# ptr
+	.4byte 0x0000E460
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
 .global _ctors$99
 _ctors$99:
-	.incbin "baserom.dol", 0x40262C, 0x14
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .dtors, "wa"  # 0x80406540 - 0x80406560
 .global _dtors$99
 _dtors$99:
-	.incbin "baserom.dol", 0x402648, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

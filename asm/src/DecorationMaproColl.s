@@ -3604,80 +3604,88 @@ gridHeight__Q43scn4step2bg7ResPartCFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResVtxPosFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResVtxPosFv:
-	.incbin "baserom.dol", 0x45FDD0, 0xC
+	.asciz "ResVtxPos"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResVtxPosCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d9ResVtxPosCFv$$20:
-	.incbin "baserom.dol", 0x45FDDC, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d9ResVtxPosCFv
 $$2STRING$$2ref__Q34nw4r3g3d9ResVtxPosCFv:
-	.incbin "baserom.dol", 0x45FDF8, 0x10
+	.asciz "g3d_resvtx_ac.h"
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMdlFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d6ResMdlFv$$20:
-	.incbin "baserom.dol", 0x45FE08, 0x20
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
 .global $$2STRING$$2ref__Q34nw4r3g3d6ResMdlFv
 $$2STRING$$2ref__Q34nw4r3g3d6ResMdlFv:
-	.incbin "baserom.dol", 0x45FE28, 0x10
+	.asciz "g3d_resmdl_ac.h"
 .global $$2STRING$$2__ct__Q34nw4r3g3d10ResMdlInfoFPv$$20
 $$2STRING$$2__ct__Q34nw4r3g3d10ResMdlInfoFPv$$20:
-	.incbin "baserom.dol", 0x45FE38, 0x28
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
 .global $$2STRING$$2__ct__Q34nw4r3g3d10ResMdlInfoFPv
 $$2STRING$$2__ct__Q34nw4r3g3d10ResMdlInfoFPv:
-	.incbin "baserom.dol", 0x45FE60, 0x10
+	.asciz "g3d_resmdl_ac.h"
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d10ResMdlInfoFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d10ResMdlInfoFv:
-	.incbin "baserom.dol", 0x45FE70, 0xC
+	.asciz "ResMdlInfo"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv$$20
 $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv$$20:
-	.incbin "baserom.dol", 0x45FE7C, 0x1C
+	.asciz "%s::%s: Object not valid."
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv
 $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv:
-	.incbin "baserom.dol", 0x45FE98, 0x10
+	.asciz "g3d_resmdl_ac.h"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253352
 $$253352:
-	.incbin "baserom.dol", 0x495278, 0x4
+	.4byte 0
 .global $$253355
 $$253355:
-	.incbin "baserom.dol", 0x49527C, 0x4
+	.4byte 0
 .global $$258266
 $$258266:
-	.incbin "baserom.dol", 0x495280, 0x8
+	.asciz "%s%04lu"
 .global $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4Q53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4Q53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x495288, 0x4
+	.4byte 0xFFFFFFFC
 .global $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4RQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4RQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortXlu_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x49528C, 0x4
+	.4byte 0xFFFFFFFC
 .global $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4Q53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4Q53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x495290, 0x4
+	.4byte 0xFFFFFFFC
 .global $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4RQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ43scn4step2bg16DrawEntryWrapper$$4RQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa$$1__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$29T_SortOpa_v$$2shuffle$$20:
-	.incbin "baserom.dol", 0x495294, 0x4
+	.4byte 0xFFFFFFFC
 .global __FUNCTION__$34959
 __FUNCTION__$34959:
-	.incbin "baserom.dol", 0x495298, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$32217
 __FUNCTION__$32217:
-	.incbin "baserom.dol", 0x49529C, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$31454
 __FUNCTION__$31454:
-	.incbin "baserom.dol", 0x4952A0, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$31183
 __FUNCTION__$31183:
-	.incbin "baserom.dol", 0x4952A4, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$30538
 __FUNCTION__$30538:
-	.incbin "baserom.dol", 0x4952A8, 0x4
+	.4byte 0x72656600
 .global __FUNCTION__$30525
 __FUNCTION__$30525:
-	.incbin "baserom.dol", 0x4952AC, 0x4
+	.4byte 0x72656600
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257830
 $$257830:
-	.incbin "baserom.dol", 0x49AD98, 0x8
+	.4byte 0x43300000
+	.4byte 0
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2next__Q43scn4step2bg14DrawEntryReposFb$$2dummyObj

@@ -821,108 +821,160 @@ SetSoundMode__10homebuttonFUl:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global WT_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2
 WT_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2:
-	.incbin "baserom.dol", 0x409F08, 0x14
+	.asciz "wt\\HomeButtonSe.wt"
+	.balign 4
 .global PCM_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2
 PCM_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2:
-	.incbin "baserom.dol", 0x409F1C, 0x14
+	.asciz "wt\\HomeButtonSe.pcm"
 .global $$27517
 $$27517:
-	.incbin "baserom.dol", 0x409F30, 0x4
+	.4byte 0
 .global $$27518
 $$27518:
-	.incbin "baserom.dol", 0x409F34, 0x4
+	.4byte 0x41200000
 .global $$27519
 $$27519:
-	.incbin "baserom.dol", 0x409F38, 0x8
+	.4byte 0x41A00000
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$26775
 $$26775:
-	.incbin "baserom.dol", 0x43EDC8, 0x18
+	.asciz "midi\\00_home_button.mid"
 .global $$26776
 $$26776:
-	.incbin "baserom.dol", 0x43EDE0, 0x18
+	.asciz "midi\\01_return_app.mid"
+	.balign 4
 .global $$26777
 $$26777:
-	.incbin "baserom.dol", 0x43EDF8, 0x18
+	.asciz "midi\\02_goto_menu.mid"
+	.balign 4
 .global $$26778
 $$26778:
-	.incbin "baserom.dol", 0x43EE10, 0x18
+	.asciz "midi\\03_reset_app.mid"
+	.balign 4
 .global $$26779
 $$26779:
-	.incbin "baserom.dol", 0x43EE28, 0x14
+	.asciz "midi\\04_focus.mid"
+	.balign 4
 .global $$26780
 $$26780:
-	.incbin "baserom.dol", 0x43EE3C, 0x14
+	.asciz "midi\\05_select.mid"
+	.balign 4
 .global $$26781
 $$26781:
-	.incbin "baserom.dol", 0x43EE50, 0x14
+	.asciz "midi\\06_cancel.mid"
+	.balign 4
 .global $$26782
 $$26782:
-	.incbin "baserom.dol", 0x43EE64, 0x1C
+	.asciz "midi\\07_open_controller.mid"
 .global $$26783
 $$26783:
-	.incbin "baserom.dol", 0x43EE80, 0x20
+	.asciz "midi\\08_close_controller.mid"
+	.balign 4
 .global $$26784
 $$26784:
-	.incbin "baserom.dol", 0x43EEA0, 0x18
+	.asciz "midi\\09_volume_plus.mid"
 .global $$26785
 $$26785:
-	.incbin "baserom.dol", 0x43EEB8, 0x1C
+	.asciz "midi\\10_volume_minus.mid"
+	.balign 4
 .global $$26786
 $$26786:
-	.incbin "baserom.dol", 0x43EED4, 0x20
+	.asciz "midi\\11_volume_plus_limit.mid"
+	.balign 4
 .global $$26787
 $$26787:
-	.incbin "baserom.dol", 0x43EEF4, 0x20
+	.asciz "midi\\12_volume_minus_limit.mid"
+	.balign 4
 .global $$26788
 $$26788:
-	.incbin "baserom.dol", 0x43EF14, 0x1C
+	.asciz "midi\\13_nothing_done.mid"
+	.balign 4
 .global $$26789
 $$26789:
-	.incbin "baserom.dol", 0x43EF30, 0x14
+	.asciz "midi\\14_vibe_on.mid"
 .global $$26790
 $$26790:
-	.incbin "baserom.dol", 0x43EF44, 0x18
+	.asciz "midi\\15_vibe_off.mid"
+	.balign 4
 .global $$26791
 $$26791:
-	.incbin "baserom.dol", 0x43EF5C, 0x24
+	.asciz "midi\\16_start_connect_window.mid"
+	.balign 4
 .global $$26792
 $$26792:
-	.incbin "baserom.dol", 0x43EF80, 0x18
+	.asciz "midi\\17_connected1.mid"
+	.balign 4
 .global $$26793
 $$26793:
-	.incbin "baserom.dol", 0x43EF98, 0x18
+	.asciz "midi\\18_connected2.mid"
+	.balign 4
 .global $$26794
 $$26794:
-	.incbin "baserom.dol", 0x43EFB0, 0x18
+	.asciz "midi\\19_connected3.mid"
+	.balign 4
 .global $$26795
 $$26795:
-	.incbin "baserom.dol", 0x43EFC8, 0x18
+	.asciz "midi\\20_connected4.mid"
+	.balign 4
 .global $$26796
 $$26796:
-	.incbin "baserom.dol", 0x43EFE0, 0x20
+	.asciz "midi\\21_end_connect_window.mid"
+	.balign 4
 .global $$26797
 $$26797:
-	.incbin "baserom.dol", 0x43F000, 0x18
+	.asciz "midi\\22_manual_open.mid"
 .global $$26798
 $$26798:
-	.incbin "baserom.dol", 0x43F018, 0x1C
+	.asciz "midi\\23_manual_focus.mid"
+	.balign 4
 .global $$26799
 $$26799:
-	.incbin "baserom.dol", 0x43F034, 0x1C
+	.asciz "midi\\24_manual_select.mid"
+	.balign 4
 .global $$26800
 $$26800:
-	.incbin "baserom.dol", 0x43F050, 0x1C
+	.asciz "midi\\25_manual_scroll.mid"
+	.balign 4
 .global $$26801
 $$26801:
-	.incbin "baserom.dol", 0x43F06C, 0x1C
+	.asciz "midi\\26_manual_cancel.mid"
+	.balign 4
 .global $$26802
 $$26802:
-	.incbin "baserom.dol", 0x43F088, 0x20
+	.asciz "midi\\27_manual_return_app.mid"
+	.balign 4
 .global $$2LOCAL$$2GetMidiDataFromArc__24$$2unnamed$$2HBMAxSound_cpp$$2Fi$$2SOUND_FILENAME
 $$2LOCAL$$2GetMidiDataFromArc__24$$2unnamed$$2HBMAxSound_cpp$$2Fi$$2SOUND_FILENAME:
-	.incbin "baserom.dol", 0x43F0A8, 0x70
+	.4byte 0x80442CC8
+	.4byte 0x80442CE0
+	.4byte 0x80442CF8
+	.4byte 0x80442D10
+	.4byte 0x80442D28
+	.4byte 0x80442D3C
+	.4byte 0x80442D50
+	.4byte 0x80442D64
+	.4byte 0x80442D80
+	.4byte 0x80442DA0
+	.4byte 0x80442DB8
+	.4byte 0x80442DD4
+	.4byte 0x80442DF4
+	.4byte 0x80442E14
+	.4byte 0x80442E30
+	.4byte 0x80442E44
+	.4byte 0x80442E5C
+	.4byte 0x80442E80
+	.4byte 0x80442E98
+	.4byte 0x80442EB0
+	.4byte 0x80442EC8
+	.4byte 0x80442EE0
+	.4byte 0x80442F00
+	.4byte 0x80442F18
+	.4byte 0x80442F34
+	.4byte 0x80442F50
+	.4byte 0x80442F6C
+	.4byte 0x80442F88
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global sWork__24$$2unnamed$$2HBMAxSound_cpp$$2

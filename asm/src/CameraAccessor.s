@@ -605,20 +605,25 @@ toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv$$20
 $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv$$20:
-	.incbin "baserom.dol", 0x450258, 0x28
+	.asciz "NW4R:Pointer must not be NULL (mpData)"
+	.balign 4
 .global $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv
 $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv:
-	.incbin "baserom.dol", 0x450280, 0x18
+	.asciz "g3d_rescommon_ac.h"
+	.balign 4
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2__ct__Q43scn4step6camera13ParamAccessorFv
 $$2STRING$$2__ct__Q43scn4step6camera13ParamAccessorFv:
-	.incbin "baserom.dol", 0x467228, 0x18
+	.asciz "step/camera/Camera"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252507
 $$252507:
-	.incbin "baserom.dol", 0x49B5F8, 0x4
+	.4byte 0
 .global $$252508
 $$252508:
-	.incbin "baserom.dol", 0x49B5FC, 0x4
+	.4byte 0x42C80000

@@ -61,74 +61,121 @@ HammerAnim__Q53scn4step4hero9modeldesc6HammerFv:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21
 $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21:
-	.incbin "baserom.dol", 0x419D50, 0x80
+	.4byte 0x8055ADE0
+	.4byte 0
+	.4byte 0x80489A28
+	.4byte 0
+	.4byte 0x80489A40
+	.4byte 0
+	.4byte 0x80489A54
+	.4byte 0
+	.4byte 0x80489A68
+	.4byte 0
+	.4byte 0x80489A78
+	.4byte 0
+	.4byte 0x80489A8C
+	.4byte 0
+	.4byte 0x80489AA0
+	.4byte 0
+	.4byte 0x80489AB4
+	.4byte 0
+	.4byte 0x80489AC8
+	.4byte 0
+	.4byte 0x80489AE0
+	.4byte 0
+	.4byte 0x80489AF0
+	.4byte 0
+	.4byte 0x80489AFC
+	.4byte 0
+	.4byte 0x80489B08
+	.4byte 0
+	.4byte 0x80489B20
+	.4byte 0
+	.4byte 0x80489B30
+	.4byte 0
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248814
 $$248814:
-	.incbin "baserom.dol", 0x485AE8, 0x24
+	.asciz "step/chara/hero/kirby/hammer/Hammer"
 .global $$248737
 $$248737:
-	.incbin "baserom.dol", 0x485B0C, 0xC
+	.asciz "HammerheadJ"
 .global $$2LOCAL$$2HammerModel__Q53scn4step4hero9modeldesc6HammerFv$$2names$$21
 $$2LOCAL$$2HammerModel__Q53scn4step4hero9modeldesc6HammerFv$$2names$$21:
-	.incbin "baserom.dol", 0x485B18, 0x10
+	.4byte 0x8055ADD0
+	.4byte 0x8055ADD8
+	.4byte 0x80489A0C
+	.4byte 0
 .global $$248745
 $$248745:
-	.incbin "baserom.dol", 0x485B28, 0x18
+	.asciz "HammerAttackChargeStart"
 .global $$248746
 $$248746:
-	.incbin "baserom.dol", 0x485B40, 0x14
+	.asciz "HammerAttackCharge"
+	.balign 4
 .global $$248747
 $$248747:
-	.incbin "baserom.dol", 0x485B54, 0x14
+	.asciz "HammerAttack"
+	.balign 4
+	.4byte 0
 .global $$248748
 $$248748:
-	.incbin "baserom.dol", 0x485B68, 0x10
+	.asciz "HammerAttackHit"
 .global $$248749
 $$248749:
-	.incbin "baserom.dol", 0x485B78, 0x14
+	.asciz "HammerAttackMiss"
+	.balign 4
 .global $$248750
 $$248750:
-	.incbin "baserom.dol", 0x485B8C, 0x14
+	.asciz "TripleHammerAttack1"
 .global $$248751
 $$248751:
-	.incbin "baserom.dol", 0x485BA0, 0x14
+	.asciz "TripleHammerAttack2"
 .global $$248752
 $$248752:
-	.incbin "baserom.dol", 0x485BB4, 0x14
+	.asciz "TripleHammerAttack3"
 .global $$248753
 $$248753:
-	.incbin "baserom.dol", 0x485BC8, 0x18
+	.asciz "TripleHammerAttack3Hit"
+	.balign 4
 .global $$248754
 $$248754:
-	.incbin "baserom.dol", 0x485BE0, 0x10
+	.asciz "GuriguriHammer"
+	.balign 4
 .global $$248755
 $$248755:
-	.incbin "baserom.dol", 0x485BF0, 0xC
+	.asciz "GiantSwing"
+	.balign 4
 .global $$248756
 $$248756:
-	.incbin "baserom.dol", 0x485BFC, 0xC
+	.asciz "WheelHammer"
 .global $$248757
 $$248757:
-	.incbin "baserom.dol", 0x485C08, 0x18
+	.asciz "StrongWheelHammer"
+	.balign 4
+	.4byte 0
 .global $$248758
 $$248758:
-	.incbin "baserom.dol", 0x485C20, 0x10
+	.asciz "OnigorosiHammer"
 .global $$248759
 $$248759:
-	.incbin "baserom.dol", 0x485C30, 0x10
+	.asciz "HammerThrow"
+	.4byte 0
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735
 $$248735:
-	.incbin "baserom.dol", 0x4971B0, 0x8
+	.asciz "TopL"
+	.balign 4
 .global $$248736
 $$248736:
-	.incbin "baserom.dol", 0x4971B8, 0x8
+	.asciz "AllL"
+	.balign 4
 .global $$248744
 $$248744:
-	.incbin "baserom.dol", 0x4971C0, 0x8
+	.asciz "Carry"
+	.balign 4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global $$2LOCAL$$2HammerModel__Q53scn4step4hero9modeldesc6HammerFv$$2desc

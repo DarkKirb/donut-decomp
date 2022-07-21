@@ -246,4 +246,11 @@ lbl_802DB160:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy15StateFaceChange
 __vt__Q53scn4step5enemy6scarfy15StateFaceChange:
-	.incbin "baserom.dol", 0x477758, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DAE88  ;# ptr
+	.4byte 0x802DAE8C  ;# ptr
+	.4byte 0x802DB044  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8028DDE4  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

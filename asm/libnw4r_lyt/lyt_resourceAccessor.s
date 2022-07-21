@@ -25,4 +25,9 @@ GetFont__Q34nw4r3lyt16ResourceAccessorFPCc:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt16ResourceAccessor
 __vt__Q34nw4r3lyt16ResourceAccessor:
-	.incbin "baserom.dol", 0x43D690, 0x18
+	.4byte 0
+	.4byte 0
+	.4byte 0x800FD880  ;# ptr
+	.4byte 0
+	.4byte 0x800FD8A0  ;# ptr
+	.4byte 0

@@ -710,55 +710,125 @@ __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee2
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x46FB58, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029806C  ;# ptr
+	.4byte 0x80298050  ;# ptr
 .global __vt__Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x46FB68, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80297FAC  ;# ptr
+	.4byte 0x80297FB0  ;# ptr
+	.4byte 0x80298048  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029804C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4704F8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029D88C  ;# ptr
+	.4byte 0x8029D870  ;# ptr
 .global __vt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x470508, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x8029D7CC  ;# ptr
+	.4byte 0x8029D7D0  ;# ptr
+	.4byte 0x8029D868  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x8029D86C  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x470FF8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A1854  ;# ptr
+	.4byte 0x802A1838  ;# ptr
 .global __vt__Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x471008, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802A1794  ;# ptr
+	.4byte 0x802A1798  ;# ptr
+	.4byte 0x802A1830  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802A1834  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x4742A8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BD6B4  ;# ptr
+	.4byte 0x802BD698  ;# ptr
 .global __vt__Q53scn4step5enemy4kabu27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy4kabu27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x4742B8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802BD5F4  ;# ptr
+	.4byte 0x802BD5F8  ;# ptr
+	.4byte 0x802BD690  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802BD694  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x475AB8, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C890C  ;# ptr
+	.4byte 0x802C88F0  ;# ptr
 .global __vt__Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x475AC8, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802C884C  ;# ptr
+	.4byte 0x802C8850  ;# ptr
+	.4byte 0x802C88E8  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802C88EC  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x477ED0, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DEC90  ;# ptr
+	.4byte 0x802DEC74  ;# ptr
 .global __vt__Q53scn4step5enemy5sheld27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy5sheld27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x477EE0, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802DEBD0  ;# ptr
+	.4byte 0x802DEBD4  ;# ptr
+	.4byte 0x802DEC6C  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802DEC70  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
-	.incbin "baserom.dol", 0x47A318, 0x10
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EDFD0  ;# ptr
+	.4byte 0x802EDFB4  ;# ptr
 .global __vt__Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStart
 __vt__Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStart:
-	.incbin "baserom.dol", 0x47A328, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x802EDF10  ;# ptr
+	.4byte 0x802EDF14  ;# ptr
+	.4byte 0x802EDFAC  ;# ptr
+	.4byte 0x8028DDE0  ;# ptr
+	.4byte 0x802EDFB0  ;# ptr
+	.4byte 0x8028DDE8  ;# ptr

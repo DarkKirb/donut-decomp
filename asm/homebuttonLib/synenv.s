@@ -276,16 +276,19 @@ lbl_8014A52C:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21811
 $$21811:
-	.incbin "baserom.dol", 0x40A3F0, 0x8
+	.4byte 0x40000000
+	.4byte 0
 .global $$21812
 $$21812:
-	.incbin "baserom.dol", 0x40A3F8, 0x4
+	.4byte 0x4C960000
 .global $$21813
 $$21813:
-	.incbin "baserom.dol", 0x40A3FC, 0x4
+	.4byte 0x447A0000
 .global $$21814
 $$21814:
-	.incbin "baserom.dol", 0x40A400, 0x8
+	.4byte 0x4C95FF6A
+	.4byte 0
 .global $$21816
 $$21816:
-	.incbin "baserom.dol", 0x40A408, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

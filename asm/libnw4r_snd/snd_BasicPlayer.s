@@ -168,12 +168,21 @@ __dt__Q44nw4r3snd6detail11BasicPlayerFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail11BasicPlayer
 __vt__Q44nw4r3snd6detail11BasicPlayer:
-	.incbin "baserom.dol", 0x43E0D8, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x801054A0  ;# ptr
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22618
 $$22618:
-	.incbin "baserom.dol", 0x499DE8, 0x4
+	.4byte 0x3F800000
 .global $$22619
 $$22619:
-	.incbin "baserom.dol", 0x499DEC, 0x4
+	.4byte 0

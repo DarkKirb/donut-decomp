@@ -749,14 +749,112 @@ lbl_8000A2B4:
 .section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2stringBase0
 $$2stringBase0:
-	.incbin "baserom.dol", 0x402788, 0xE0
+	.asciz "542101086242752217003726400434970855712890625"
+	.byte 0x31, 0x31
+	.asciz "102230246251565404236316680908203125"
+	.byte 0x32, 0x33, 0x32
+	.asciz "83064365386962890625"
+	.byte 0x31, 0x35, 0x32
+	.asciz "587890625"
+	.byte 0x33, 0x39
+	.asciz "0625"
+	.byte 0x37, 0x38, 0x31
+	.4byte 0x32350031
+	.asciz "5625"
+	.byte 0x33, 0x31, 0x32
+	.4byte 0x35003632
+	.4byte 0x35003132
+	.4byte 0x35003235
+	.4byte 0x00350031
+	.4byte 0x00320034
+	.4byte 0x00380031
+	.4byte 0x36003332
+	.4byte 0x00363400
+	.4byte 0x31323800
+	.4byte 0x32353600
+	.asciz "179769313486231580793728714053034151"
+	.balign 4
 
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21232
 $$21232:
-	.incbin "baserom.dol", 0x41D338, 0x128
+	.4byte 0x80009CE8  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009CFC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009D14  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009D2C  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009EDC  ;# ptr
+	.4byte 0x80009D44  ;# ptr
+	.4byte 0x80009D5C  ;# ptr
+	.4byte 0x80009D74  ;# ptr
+	.4byte 0x80009D8C  ;# ptr
+	.4byte 0x80009DA4  ;# ptr
+	.4byte 0x80009DBC  ;# ptr
+	.4byte 0x80009DD4  ;# ptr
+	.4byte 0x80009DEC  ;# ptr
+	.4byte 0x80009E04  ;# ptr
+	.4byte 0x80009E1C  ;# ptr
+	.4byte 0x80009E34  ;# ptr
+	.4byte 0x80009E4C  ;# ptr
+	.4byte 0x80009E64  ;# ptr
+	.4byte 0x80009E7C  ;# ptr
+	.4byte 0x80009E94  ;# ptr
+	.4byte 0x80009EAC  ;# ptr
+	.4byte 0x80009EC4  ;# ptr
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21377
 $$21377:
-	.incbin "baserom.dol", 0x498AC0, 0x8
+	.4byte 0
+	.4byte 0

@@ -312,9 +312,19 @@ lbl_803946FC:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol25StateParasolParachuteFall
 __vt__Q53scn4step4hero7parasol25StateParasolParachuteFall:
-	.incbin "baserom.dol", 0x489E18, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80394374
+	.4byte 0x80394418
+	.4byte 0x803946C0
+	.4byte 0x8035550C
+	.4byte 0x803946C4
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258542
 $$258542:
-	.incbin "baserom.dol", 0x49E1B8, 0x8
+	.4byte 0
+	.4byte 0

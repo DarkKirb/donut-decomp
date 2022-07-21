@@ -72,10 +72,11 @@ draw__Q23gfx15FullScreenPlateCFv:
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249012
 $$249012:
-	.incbin "baserom.dol", 0x49A250, 0x4
+	.4byte 0x3F800000
 .global $$249023
 $$249023:
-	.incbin "baserom.dol", 0x49A254, 0x4
+	.4byte 0
 .global $$249026
 $$249026:
-	.incbin "baserom.dol", 0x49A258, 0x8
+	.4byte 0x43300000
+	.4byte 0

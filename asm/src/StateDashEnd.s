@@ -66,4 +66,11 @@ procFixPos__Q53scn4step4boss6common12StateDashEndFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common12StateDashEnd
 __vt__Q53scn4step4boss6common12StateDashEnd:
-	.incbin "baserom.dol", 0x462400, 0x20
+	.4byte 0
+	.4byte 0
+	.4byte 0x80245700  ;# ptr
+	.4byte 0x80245704  ;# ptr
+	.4byte 0x80245708  ;# ptr
+	.4byte 0x802344FC  ;# ptr
+	.4byte 0x80245744  ;# ptr
+	.4byte 0x80234504  ;# ptr

@@ -24,7 +24,7 @@ __sinit_$$3MintScriptTrigger_cpp:
 /* 802706B0 0026C4F0  4B E6 CD 30 */	b __ct__Q34nw4r3g3d8LightObjFv
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540
-	.incbin "baserom.dol", 0x4024AC, 0x4
+	.4byte 0x802706AC  ;# ptr
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC
 .global t_obj__Q43scn4step5chara31$$2unnamed$$2MintScriptTrigger_cpp$$2

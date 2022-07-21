@@ -224,42 +224,60 @@ Func__Q43hel4mint13AddOnMathMath37Mint_SinRadF_0$52440AddOnMathMath_cppFRQ26mint
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252822
 $$252822:
-	.incbin "baserom.dol", 0x452F38, 0x10
+	.asciz "HEL.Math.Math"
+	.balign 4
 .global $$252823
 $$252823:
-	.incbin "baserom.dol", 0x452F48, 0x18
+	.asciz "float SinRadF(float)"
+	.balign 4
 .global $$252824
 $$252824:
-	.incbin "baserom.dol", 0x452F60, 0x18
+	.asciz "float CosRadF(float)"
+	.balign 4
 .global $$252825
 $$252825:
-	.incbin "baserom.dol", 0x452F78, 0x18
+	.asciz "float TanRadF(float)"
+	.balign 4
 .global $$252826
 $$252826:
-	.incbin "baserom.dol", 0x452F90, 0x18
+	.asciz "float SinDegF(float)"
+	.balign 4
 .global $$252827
 $$252827:
-	.incbin "baserom.dol", 0x452FA8, 0x18
+	.asciz "float CosDegF(float)"
+	.balign 4
 .global $$252828
 $$252828:
-	.incbin "baserom.dol", 0x452FC0, 0x18
+	.asciz "float TanDegF(float)"
+	.balign 4
 .global $$252829
 $$252829:
-	.incbin "baserom.dol", 0x452FD8, 0x68
+	.asciz "bool EqZero(float)"
+	.balign 4
+	.asciz "Assertion failed.\n"
+	.balign 4
+	.asciz "MintFuncProxy.hpp"
+	.balign 4
+	.4byte 0
+	.asciz "index = %d, count = %d\n"
+	.asciz "MArray.hpp"
+	.balign 4
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252792
 $$252792:
-	.incbin "baserom.dol", 0x49A428, 0x4
+	.4byte 0x4222F983
 .global $$252805
 $$252805:
-	.incbin "baserom.dol", 0x49A42C, 0x4
+	.4byte 0x3CC90FDB
 .global $$252809
 $$252809:
-	.incbin "baserom.dol", 0x49A430, 0x4
+	.4byte 0x3C8EFA35
 .global $$252819
 $$252819:
-	.incbin "baserom.dol", 0x49A434, 0x4
+	.4byte 0x3727C5AC
 .global $$252820
 $$252820:
-	.incbin "baserom.dol", 0x49A438, 0x8
+	.4byte 0xB727C5AC
+	.4byte 0

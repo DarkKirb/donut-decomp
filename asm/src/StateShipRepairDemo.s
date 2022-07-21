@@ -393,12 +393,21 @@ procFixPos__Q53scn4step4hero6common19StateShipRepairDemoFv:
 .section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common19StateShipRepairDemo
 __vt__Q53scn4step4hero6common19StateShipRepairDemo:
-	.incbin "baserom.dol", 0x4880B0, 0x28
+	.4byte 0
+	.4byte 0
+	.4byte 0x80368D04
+	.4byte 0x80368DF4
+	.4byte 0x8036907C
+	.4byte 0x8035550C
+	.4byte 0x80369120
+	.4byte 0x80355514
+	.4byte 0x80355518
+	.4byte 0
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259942
 $$259942:
-	.incbin "baserom.dol", 0x49DBE8, 0x4
+	.4byte 0x42F00000
 .global $$259943
 $$259943:
-	.incbin "baserom.dol", 0x49DBEC, 0x4
+	.4byte 0x42B40000

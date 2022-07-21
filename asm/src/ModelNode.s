@@ -1,0 +1,1168 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q28dynamics9ModelNodeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
+__ct__Q28dynamics9ModelNodeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl:
+/* 8017C2A8 001780E8  94 21 FF 20 */	stwu r1, -0xe0(r1)
+/* 8017C2AC 001780EC  7C 08 02 A6 */	mflr r0
+/* 8017C2B0 001780F0  90 01 00 E4 */	stw r0, 0xe4(r1)
+/* 8017C2B4 001780F4  39 61 00 E0 */	addi r11, r1, 0xe0
+/* 8017C2B8 001780F8  4B E8 B0 85 */	bl func_8000733C
+/* 8017C2BC 001780FC  7C 7B 1B 78 */	mr r27, r3
+/* 8017C2C0 00178100  7C 9F 23 78 */	mr r31, r4
+/* 8017C2C4 00178104  7C BC 2B 78 */	mr r28, r5
+/* 8017C2C8 00178108  7C DD 33 78 */	mr r29, r6
+/* 8017C2CC 0017810C  7C FE 3B 78 */	mr r30, r7
+/* 8017C2D0 00178110  4B EB 42 11 */	bl PSMTXIdentity
+/* 8017C2D4 00178114  38 7B 00 30 */	addi r3, r27, 0x30
+/* 8017C2D8 00178118  48 01 43 5D */	bl __ct__Q23g3d13ModelAccessorFv
+/* 8017C2DC 0017811C  38 7B 00 40 */	addi r3, r27, 0x40
+/* 8017C2E0 00178120  48 01 7A 59 */	bl __ct__Q23g3d7ResNodeFv
+/* 8017C2E4 00178124  38 7B 00 48 */	addi r3, r27, 0x48
+/* 8017C2E8 00178128  48 00 02 0D */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017C2EC 0017812C  38 7B 00 54 */	addi r3, r27, 0x54
+/* 8017C2F0 00178130  48 00 02 05 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017C2F4 00178134  38 7B 00 60 */	addi r3, r27, 0x60
+/* 8017C2F8 00178138  48 00 01 FD */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017C2FC 0017813C  38 7B 00 6C */	addi r3, r27, 0x6c
+/* 8017C300 00178140  48 00 01 F5 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017C304 00178144  38 7B 00 30 */	addi r3, r27, 0x30
+/* 8017C308 00178148  48 00 02 DD */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 8017C30C 0017814C  2C 03 00 00 */	cmpwi r3, 0
+/* 8017C310 00178150  41 82 00 0C */	beq lbl_8017C31C
+/* 8017C314 00178154  38 7B 00 30 */	addi r3, r27, 0x30
+/* 8017C318 00178158  48 00 02 DD */	bl unlink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1Fv
+lbl_8017C31C:
+/* 8017C31C 0017815C  38 00 00 00 */	li r0, 0
+/* 8017C320 00178160  90 1B 00 3C */	stw r0, 0x3c(r27)
+/* 8017C324 00178164  80 1F 00 0C */	lwz r0, 0xc(r31)
+/* 8017C328 00178168  2C 00 00 00 */	cmpwi r0, 0
+/* 8017C32C 0017816C  41 82 00 08 */	beq lbl_8017C334
+/* 8017C330 00178170  90 1B 00 3C */	stw r0, 0x3c(r27)
+lbl_8017C334:
+/* 8017C334 00178174  7F E3 FB 78 */	mr r3, r31
+/* 8017C338 00178178  48 00 02 AD */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 8017C33C 0017817C  2C 03 00 00 */	cmpwi r3, 0
+/* 8017C340 00178180  41 82 00 2C */	beq lbl_8017C36C
+/* 8017C344 00178184  83 FF 00 08 */	lwz r31, 8(r31)
+/* 8017C348 00178188  93 FB 00 38 */	stw r31, 0x38(r27)
+/* 8017C34C 0017818C  38 1F 00 04 */	addi r0, r31, 4
+/* 8017C350 00178190  90 01 00 08 */	stw r0, 8(r1)
+/* 8017C354 00178194  38 7B 00 30 */	addi r3, r27, 0x30
+/* 8017C358 00178198  48 00 02 E9 */	bl GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1
+/* 8017C35C 0017819C  7C 65 1B 78 */	mr r5, r3
+/* 8017C360 001781A0  7F E3 FB 78 */	mr r3, r31
+/* 8017C364 001781A4  38 81 00 08 */	addi r4, r1, 8
+/* 8017C368 001781A8  4B FA 3A 49 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
+lbl_8017C36C:
+/* 8017C36C 001781AC  80 1C 00 00 */	lwz r0, 0(r28)
+/* 8017C370 001781B0  90 1B 00 40 */	stw r0, 0x40(r27)
+/* 8017C374 001781B4  3B E0 00 00 */	li r31, 0
+/* 8017C378 001781B8  93 FB 00 44 */	stw r31, 0x44(r27)
+/* 8017C37C 001781BC  38 61 00 54 */	addi r3, r1, 0x54
+/* 8017C380 001781C0  38 9B 00 30 */	addi r4, r27, 0x30
+/* 8017C384 001781C4  38 BB 00 40 */	addi r5, r27, 0x40
+/* 8017C388 001781C8  48 01 43 A1 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017C38C 001781CC  38 61 00 68 */	addi r3, r1, 0x68
+/* 8017C390 001781D0  38 81 00 54 */	addi r4, r1, 0x54
+/* 8017C394 001781D4  48 01 6A 99 */	bl worldMtx__Q23g3d12NodeAccessorCFv
+/* 8017C398 001781D8  7F 63 DB 78 */	mr r3, r27
+/* 8017C39C 001781DC  38 81 00 68 */	addi r4, r1, 0x68
+/* 8017C3A0 001781E0  48 00 01 69 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017C3A4 001781E4  38 61 00 54 */	addi r3, r1, 0x54
+/* 8017C3A8 001781E8  38 80 FF FF */	li r4, -1
+/* 8017C3AC 001781EC  48 00 02 E5 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017C3B0 001781F0  38 61 00 34 */	addi r3, r1, 0x34
+/* 8017C3B4 001781F4  7F 64 DB 78 */	mr r4, r27
+/* 8017C3B8 001781F8  48 00 05 01 */	bl GlobalPos__Q28dynamics9ModelNodeFv
+/* 8017C3BC 001781FC  38 7B 00 60 */	addi r3, r27, 0x60
+/* 8017C3C0 00178200  38 81 00 34 */	addi r4, r1, 0x34
+/* 8017C3C4 00178204  48 00 01 89 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C3C8 00178208  38 61 00 28 */	addi r3, r1, 0x28
+/* 8017C3CC 0017820C  38 9B 00 40 */	addi r4, r27, 0x40
+/* 8017C3D0 00178210  48 01 7B 2D */	bl translate__Q23g3d7ResNodeCFv
+/* 8017C3D4 00178214  38 7B 00 48 */	addi r3, r27, 0x48
+/* 8017C3D8 00178218  38 81 00 28 */	addi r4, r1, 0x28
+/* 8017C3DC 0017821C  48 00 01 71 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C3E0 00178220  38 61 00 10 */	addi r3, r1, 0x10
+/* 8017C3E4 00178224  38 9B 00 40 */	addi r4, r27, 0x40
+/* 8017C3E8 00178228  48 01 7B 51 */	bl rotate__Q23g3d7ResNodeCFv
+/* 8017C3EC 0017822C  38 61 00 1C */	addi r3, r1, 0x1c
+/* 8017C3F0 00178230  38 81 00 10 */	addi r4, r1, 0x10
+/* 8017C3F4 00178234  C0 22 96 70 */	lfs f1, $$253498-_SDA2_BASE_(r2)
+/* 8017C3F8 00178238  48 00 01 71 */	bl __ml__Q33hel4math7Vector3CFf
+/* 8017C3FC 0017823C  38 7B 00 54 */	addi r3, r27, 0x54
+/* 8017C400 00178240  38 81 00 1C */	addi r4, r1, 0x1c
+/* 8017C404 00178244  48 00 01 49 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C408 00178248  38 7B 00 6C */	addi r3, r27, 0x6c
+/* 8017C40C 0017824C  3C 80 80 54 */	lis r4, BASIS_X__Q33hel4math7Vector3@ha
+/* 8017C410 00178250  38 84 52 E8 */	addi r4, r4, BASIS_X__Q33hel4math7Vector3@l
+/* 8017C414 00178254  48 00 01 39 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C418 00178258  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C41C 0017825C  D0 1B 00 78 */	stfs f0, 0x78(r27)
+/* 8017C420 00178260  D0 1B 00 80 */	stfs f0, 0x80(r27)
+/* 8017C424 00178264  D0 1B 00 7C */	stfs f0, 0x7c(r27)
+/* 8017C428 00178268  9B FB 00 84 */	stb r31, 0x84(r27)
+/* 8017C42C 0017826C  7F C3 F3 78 */	mr r3, r30
+/* 8017C430 00178270  38 80 00 05 */	li r4, 5
+/* 8017C434 00178274  4B EA 80 6D */	bl DefaultSwitchThreadCallback
+/* 8017C438 00178278  1C 1E 00 24 */	mulli r0, r30, 0x24
+/* 8017C43C 0017827C  7C 7D 02 14 */	add r3, r29, r0
+/* 8017C440 00178280  C0 03 00 30 */	lfs f0, 0x30(r3)
+/* 8017C444 00178284  D0 1B 00 88 */	stfs f0, 0x88(r27)
+/* 8017C448 00178288  C0 03 00 34 */	lfs f0, 0x34(r3)
+/* 8017C44C 0017828C  D0 1B 00 8C */	stfs f0, 0x8c(r27)
+/* 8017C450 00178290  C0 03 00 38 */	lfs f0, 0x38(r3)
+/* 8017C454 00178294  D0 1B 00 90 */	stfs f0, 0x90(r27)
+/* 8017C458 00178298  C0 03 00 3C */	lfs f0, 0x3c(r3)
+/* 8017C45C 0017829C  D0 1B 00 94 */	stfs f0, 0x94(r27)
+/* 8017C460 001782A0  C0 03 00 40 */	lfs f0, 0x40(r3)
+/* 8017C464 001782A4  D0 1B 00 98 */	stfs f0, 0x98(r27)
+/* 8017C468 001782A8  C0 03 00 44 */	lfs f0, 0x44(r3)
+/* 8017C46C 001782AC  D0 1B 00 9C */	stfs f0, 0x9c(r27)
+/* 8017C470 001782B0  C0 03 00 48 */	lfs f0, 0x48(r3)
+/* 8017C474 001782B4  D0 1B 00 A0 */	stfs f0, 0xa0(r27)
+/* 8017C478 001782B8  C0 03 00 4C */	lfs f0, 0x4c(r3)
+/* 8017C47C 001782BC  D0 1B 00 A4 */	stfs f0, 0xa4(r27)
+/* 8017C480 001782C0  C0 03 00 50 */	lfs f0, 0x50(r3)
+/* 8017C484 001782C4  D0 1B 00 A8 */	stfs f0, 0xa8(r27)
+/* 8017C488 001782C8  38 61 00 98 */	addi r3, r1, 0x98
+/* 8017C48C 001782CC  38 9B 00 48 */	addi r4, r27, 0x48
+/* 8017C490 001782D0  38 BB 00 54 */	addi r5, r27, 0x54
+/* 8017C494 001782D4  48 00 16 C9 */	bl CreateRTMtx__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017C498 001782D8  38 61 00 40 */	addi r3, r1, 0x40
+/* 8017C49C 001782DC  38 9B 00 30 */	addi r4, r27, 0x30
+/* 8017C4A0 001782E0  38 BB 00 40 */	addi r5, r27, 0x40
+/* 8017C4A4 001782E4  48 01 42 85 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017C4A8 001782E8  38 61 00 40 */	addi r3, r1, 0x40
+/* 8017C4AC 001782EC  48 01 6B C9 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017C4B0 001782F0  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8017C4B4 001782F4  38 61 00 40 */	addi r3, r1, 0x40
+/* 8017C4B8 001782F8  38 80 FF FF */	li r4, -1
+/* 8017C4BC 001782FC  48 00 01 D5 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017C4C0 00178300  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C4C4 00178304  38 81 00 98 */	addi r4, r1, 0x98
+/* 8017C4C8 00178308  48 01 6D 51 */	bl setRTMtx__Q23g3d20NodeLocalMtxAccessorCFRCQ33hel4math8Matrix34
+/* 8017C4CC 0017830C  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C4D0 00178310  38 80 00 01 */	li r4, 1
+/* 8017C4D4 00178314  48 01 6D 55 */	bl setCalcOp__Q23g3d20NodeLocalMtxAccessorCFQ23g3d18NodeLocalMtxCalcOp
+/* 8017C4D8 00178318  7F 63 DB 78 */	mr r3, r27
+/* 8017C4DC 0017831C  39 61 00 E0 */	addi r11, r1, 0xe0
+/* 8017C4E0 00178320  4B E8 AE A9 */	bl func_80007388
+/* 8017C4E4 00178324  80 01 00 E4 */	lwz r0, 0xe4(r1)
+/* 8017C4E8 00178328  7C 08 03 A6 */	mtlr r0
+/* 8017C4EC 0017832C  38 21 00 E0 */	addi r1, r1, 0xe0
+/* 8017C4F0 00178330  4E 80 00 20 */	blr 
+
+.global __ct__Q33hel4math7Vector3Fv
+__ct__Q33hel4math7Vector3Fv:
+/* 8017C4F4 00178334  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C4F8 00178338  D0 03 00 08 */	stfs f0, 8(r3)
+/* 8017C4FC 0017833C  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8017C500 00178340  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8017C504 00178344  4E 80 00 20 */	blr 
+
+.global __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+__as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34:
+/* 8017C508 00178348  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017C50C 0017834C  7C 08 02 A6 */	mflr r0
+/* 8017C510 00178350  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017C514 00178354  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017C518 00178358  7C 7F 1B 78 */	mr r31, r3
+/* 8017C51C 0017835C  7C 03 20 40 */	cmplw r3, r4
+/* 8017C520 00178360  40 82 00 08 */	bne lbl_8017C528
+/* 8017C524 00178364  48 00 00 14 */	b lbl_8017C538
+lbl_8017C528:
+/* 8017C528 00178368  7C 83 23 78 */	mr r3, r4
+/* 8017C52C 0017836C  7F E4 FB 78 */	mr r4, r31
+/* 8017C530 00178370  4B EB 3F E1 */	bl PSMTXCopy
+/* 8017C534 00178374  7F E3 FB 78 */	mr r3, r31
+lbl_8017C538:
+/* 8017C538 00178378  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017C53C 0017837C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017C540 00178380  7C 08 03 A6 */	mtlr r0
+/* 8017C544 00178384  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017C548 00178388  4E 80 00 20 */	blr 
+
+.global __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+__as__Q33hel4math7Vector3FRCQ33hel4math7Vector3:
+/* 8017C54C 0017838C  C0 04 00 00 */	lfs f0, 0(r4)
+/* 8017C550 00178390  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8017C554 00178394  C0 04 00 04 */	lfs f0, 4(r4)
+/* 8017C558 00178398  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8017C55C 0017839C  C0 04 00 08 */	lfs f0, 8(r4)
+/* 8017C560 001783A0  D0 03 00 08 */	stfs f0, 8(r3)
+/* 8017C564 001783A4  4E 80 00 20 */	blr 
+
+.global __ml__Q33hel4math7Vector3CFf
+__ml__Q33hel4math7Vector3CFf:
+/* 8017C568 001783A8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8017C56C 001783AC  7C 08 02 A6 */	mflr r0
+/* 8017C570 001783B0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8017C574 001783B4  80 A4 00 00 */	lwz r5, 0(r4)
+/* 8017C578 001783B8  80 04 00 04 */	lwz r0, 4(r4)
+/* 8017C57C 001783BC  90 A1 00 08 */	stw r5, 8(r1)
+/* 8017C580 001783C0  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8017C584 001783C4  80 04 00 08 */	lwz r0, 8(r4)
+/* 8017C588 001783C8  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8017C58C 001783CC  C0 01 00 08 */	lfs f0, 8(r1)
+/* 8017C590 001783D0  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8017C594 001783D4  D0 01 00 08 */	stfs f0, 8(r1)
+/* 8017C598 001783D8  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 8017C59C 001783DC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8017C5A0 001783E0  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 8017C5A4 001783E4  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 8017C5A8 001783E8  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8017C5AC 001783EC  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 8017C5B0 001783F0  38 81 00 08 */	addi r4, r1, 8
+/* 8017C5B4 001783F4  48 00 00 15 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C5B8 001783F8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8017C5BC 001783FC  7C 08 03 A6 */	mtlr r0
+/* 8017C5C0 00178400  38 21 00 20 */	addi r1, r1, 0x20
+/* 8017C5C4 00178404  4E 80 00 20 */	blr 
+
+.global __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+__ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3:
+/* 8017C5C8 00178408  80 A4 00 00 */	lwz r5, 0(r4)
+/* 8017C5CC 0017840C  80 04 00 04 */	lwz r0, 4(r4)
+/* 8017C5D0 00178410  90 A3 00 00 */	stw r5, 0(r3)
+/* 8017C5D4 00178414  90 03 00 04 */	stw r0, 4(r3)
+/* 8017C5D8 00178418  80 04 00 08 */	lwz r0, 8(r4)
+/* 8017C5DC 0017841C  90 03 00 08 */	stw r0, 8(r3)
+/* 8017C5E0 00178420  4E 80 00 20 */	blr 
+
+.global isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv:
+/* 8017C5E4 00178424  80 63 00 08 */	lwz r3, 8(r3)
+/* 8017C5E8 00178428  30 03 FF FF */	addic r0, r3, -1
+/* 8017C5EC 0017842C  7C 60 19 10 */	subfe r3, r0, r3
+/* 8017C5F0 00178430  4E 80 00 20 */	blr 
+
+.global unlink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1Fv
+unlink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1Fv:
+/* 8017C5F4 00178434  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017C5F8 00178438  7C 08 02 A6 */	mflr r0
+/* 8017C5FC 0017843C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017C600 00178440  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017C604 00178444  93 C1 00 08 */	stw r30, 8(r1)
+/* 8017C608 00178448  7C 7E 1B 78 */	mr r30, r3
+/* 8017C60C 0017844C  83 E3 00 08 */	lwz r31, 8(r3)
+/* 8017C610 00178450  48 00 00 31 */	bl GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1
+/* 8017C614 00178454  7C 64 1B 78 */	mr r4, r3
+/* 8017C618 00178458  7F E3 FB 78 */	mr r3, r31
+/* 8017C61C 0017845C  4B FA 37 C5 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
+/* 8017C620 00178460  38 00 00 00 */	li r0, 0
+/* 8017C624 00178464  90 1E 00 08 */	stw r0, 8(r30)
+/* 8017C628 00178468  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017C62C 0017846C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8017C630 00178470  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017C634 00178474  7C 08 03 A6 */	mtlr r0
+/* 8017C638 00178478  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017C63C 0017847C  4E 80 00 20 */	blr 
+
+.global GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1
+GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1:
+/* 8017C640 00178480  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017C644 00178484  7C 08 02 A6 */	mflr r0
+/* 8017C648 00178488  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017C64C 0017848C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017C650 00178490  7C 7F 1B 78 */	mr r31, r3
+/* 8017C654 00178494  2C 03 00 00 */	cmpwi r3, 0
+/* 8017C658 00178498  40 82 00 20 */	bne lbl_8017C678
+/* 8017C65C 0017849C  3C 60 80 45 */	lis r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1@ha
+/* 8017C660 001784A0  38 63 31 24 */	addi r3, r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1@l
+/* 8017C664 001784A4  38 80 02 33 */	li r4, 0x233
+/* 8017C668 001784A8  3C A0 80 45 */	lis r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$20@ha
+/* 8017C66C 001784AC  38 A5 31 00 */	addi r5, r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$20@l
+/* 8017C670 001784B0  4C C6 31 82 */	crclr 6
+/* 8017C674 001784B4  4B FA BC DD */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_8017C678:
+/* 8017C678 001784B8  7F E3 FB 78 */	mr r3, r31
+/* 8017C67C 001784BC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017C680 001784C0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017C684 001784C4  7C 08 03 A6 */	mtlr r0
+/* 8017C688 001784C8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017C68C 001784CC  4E 80 00 20 */	blr 
+
+.global __dt__Q23g3d12NodeAccessorFv
+__dt__Q23g3d12NodeAccessorFv:
+/* 8017C690 001784D0  4B FF F8 B8 */	b __dt__Q23g3d13ModelAccessorFv
+
+.global __dt__Q28dynamics9ModelNodeFv
+__dt__Q28dynamics9ModelNodeFv:
+/* 8017C694 001784D4  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8017C698 001784D8  7C 08 02 A6 */	mflr r0
+/* 8017C69C 001784DC  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8017C6A0 001784E0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8017C6A4 001784E4  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8017C6A8 001784E8  7C 7E 1B 78 */	mr r30, r3
+/* 8017C6AC 001784EC  7C 9F 23 78 */	mr r31, r4
+/* 8017C6B0 001784F0  2C 03 00 00 */	cmpwi r3, 0
+/* 8017C6B4 001784F4  41 82 00 54 */	beq lbl_8017C708
+/* 8017C6B8 001784F8  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C6BC 001784FC  38 9E 00 30 */	addi r4, r30, 0x30
+/* 8017C6C0 00178500  38 BE 00 40 */	addi r5, r30, 0x40
+/* 8017C6C4 00178504  48 01 40 65 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017C6C8 00178508  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C6CC 0017850C  48 01 69 A9 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017C6D0 00178510  90 61 00 08 */	stw r3, 8(r1)
+/* 8017C6D4 00178514  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C6D8 00178518  38 80 FF FF */	li r4, -1
+/* 8017C6DC 0017851C  4B FF FF B5 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017C6E0 00178520  38 61 00 08 */	addi r3, r1, 8
+/* 8017C6E4 00178524  48 01 6B 25 */	bl reset__Q23g3d20NodeLocalMtxAccessorCFv
+/* 8017C6E8 00178528  38 7E 00 30 */	addi r3, r30, 0x30
+/* 8017C6EC 0017852C  38 80 FF FF */	li r4, -1
+/* 8017C6F0 00178530  4B FF F8 59 */	bl __dt__Q23g3d13ModelAccessorFv
+/* 8017C6F4 00178534  7F E0 07 34 */	extsh r0, r31
+/* 8017C6F8 00178538  2C 00 00 00 */	cmpwi r0, 0
+/* 8017C6FC 0017853C  40 81 00 0C */	ble lbl_8017C708
+/* 8017C700 00178540  7F C3 F3 78 */	mr r3, r30
+/* 8017C704 00178544  48 04 30 11 */	bl __dl__FPv
+lbl_8017C708:
+/* 8017C708 00178548  7F C3 F3 78 */	mr r3, r30
+/* 8017C70C 0017854C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8017C710 00178550  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8017C714 00178554  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8017C718 00178558  7C 08 03 A6 */	mtlr r0
+/* 8017C71C 0017855C  38 21 00 30 */	addi r1, r1, 0x30
+/* 8017C720 00178560  4E 80 00 20 */	blr 
+
+.global SetChild__Q28dynamics9ModelNodeFRQ28dynamics9ModelNodeRCQ28dynamics4Desc
+SetChild__Q28dynamics9ModelNodeFRQ28dynamics9ModelNodeRCQ28dynamics4Desc:
+/* 8017C724 00178564  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8017C728 00178568  7C 08 02 A6 */	mflr r0
+/* 8017C72C 0017856C  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8017C730 00178570  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 8017C734 00178574  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 8017C738 00178578  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8017C73C 0017857C  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8017C740 00178580  7C 7E 1B 78 */	mr r30, r3
+/* 8017C744 00178584  7C BF 2B 78 */	mr r31, r5
+/* 8017C748 00178588  90 83 00 44 */	stw r4, 0x44(r3)
+/* 8017C74C 0017858C  38 64 00 40 */	addi r3, r4, 0x40
+/* 8017C750 00178590  4B FC F3 5D */	bl hasNext__Q34nrel3mem20ExpHeapBlockIteratorCFv
+/* 8017C754 00178594  2C 03 00 00 */	cmpwi r3, 0
+/* 8017C758 00178598  41 82 00 C4 */	beq lbl_8017C81C
+/* 8017C75C 0017859C  38 61 00 08 */	addi r3, r1, 8
+/* 8017C760 001785A0  80 9E 00 44 */	lwz r4, 0x44(r30)
+/* 8017C764 001785A4  38 84 00 60 */	addi r4, r4, 0x60
+/* 8017C768 001785A8  38 BE 00 60 */	addi r5, r30, 0x60
+/* 8017C76C 001785AC  48 00 00 E1 */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017C770 001785B0  80 61 00 08 */	lwz r3, 8(r1)
+/* 8017C774 001785B4  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 8017C778 001785B8  90 61 00 14 */	stw r3, 0x14(r1)
+/* 8017C77C 001785BC  90 01 00 18 */	stw r0, 0x18(r1)
+/* 8017C780 001785C0  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 8017C784 001785C4  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 8017C788 001785C8  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 8017C78C 001785CC  EC 20 00 32 */	fmuls f1, f0, f0
+/* 8017C790 001785D0  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8017C794 001785D4  EC 20 08 3A */	fmadds f1, f0, f0, f1
+/* 8017C798 001785D8  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 8017C79C 001785DC  EF E0 08 3A */	fmadds f31, f0, f0, f1
+/* 8017C7A0 001785E0  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C7A4 001785E4  FC 1F 00 40 */	fcmpo cr0, f31, f0
+/* 8017C7A8 001785E8  4C 41 13 82 */	cror 2, 1, 2
+/* 8017C7AC 001785EC  41 82 00 20 */	beq lbl_8017C7CC
+/* 8017C7B0 001785F0  3C 60 80 45 */	lis r3, $$2STRING$$2FSqrt__Q24nw4r4mathFf@ha
+/* 8017C7B4 001785F4  38 63 31 54 */	addi r3, r3, $$2STRING$$2FSqrt__Q24nw4r4mathFf@l
+/* 8017C7B8 001785F8  38 80 02 73 */	li r4, 0x273
+/* 8017C7BC 001785FC  3C A0 80 45 */	lis r5, $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20@ha
+/* 8017C7C0 00178600  38 A5 31 30 */	addi r5, r5, $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20@l
+/* 8017C7C4 00178604  4C C6 31 82 */	crclr 6
+/* 8017C7C8 00178608  4B FA BC 29 */	bl Warning__Q24nw4r2dbFPCciPCce
+lbl_8017C7CC:
+/* 8017C7CC 0017860C  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C7D0 00178610  FC 1F 00 40 */	fcmpo cr0, f31, f0
+/* 8017C7D4 00178614  4C 40 13 82 */	cror 2, 0, 2
+/* 8017C7D8 00178618  40 82 00 08 */	bne lbl_8017C7E0
+/* 8017C7DC 0017861C  48 00 00 10 */	b lbl_8017C7EC
+lbl_8017C7E0:
+/* 8017C7E0 00178620  FC 20 F8 90 */	fmr f1, f31
+/* 8017C7E4 00178624  4B F8 22 8D */	bl FrSqrt__Q24nw4r4mathFf
+/* 8017C7E8 00178628  EC 1F 00 72 */	fmuls f0, f31, f1
+lbl_8017C7EC:
+/* 8017C7EC 0017862C  D0 1E 00 78 */	stfs f0, 0x78(r30)
+/* 8017C7F0 00178630  FC 20 00 18 */	frsp f1, f0
+/* 8017C7F4 00178634  C0 02 96 78 */	lfs f0, $$253589-_SDA2_BASE_(r2)
+/* 8017C7F8 00178638  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017C7FC 0017863C  40 80 00 10 */	bge lbl_8017C80C
+/* 8017C800 00178640  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C804 00178644  D0 1E 00 7C */	stfs f0, 0x7c(r30)
+/* 8017C808 00178648  48 00 00 20 */	b lbl_8017C828
+lbl_8017C80C:
+/* 8017C80C 0017864C  C0 1F 00 00 */	lfs f0, 0(r31)
+/* 8017C810 00178650  EC 00 08 24 */	fdivs f0, f0, f1
+/* 8017C814 00178654  D0 1E 00 7C */	stfs f0, 0x7c(r30)
+/* 8017C818 00178658  48 00 00 10 */	b lbl_8017C828
+lbl_8017C81C:
+/* 8017C81C 0017865C  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017C820 00178660  D0 1E 00 7C */	stfs f0, 0x7c(r30)
+/* 8017C824 00178664  D0 1E 00 78 */	stfs f0, 0x78(r30)
+lbl_8017C828:
+/* 8017C828 00178668  38 00 00 38 */	li r0, 0x38
+/* 8017C82C 0017866C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8017C830 00178670  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 8017C834 00178674  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8017C838 00178678  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8017C83C 0017867C  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8017C840 00178680  7C 08 03 A6 */	mtlr r0
+/* 8017C844 00178684  38 21 00 40 */	addi r1, r1, 0x40
+/* 8017C848 00178688  4E 80 00 20 */	blr 
+
+.global __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+__mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
+/* 8017C84C 0017868C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8017C850 00178690  7C 08 02 A6 */	mflr r0
+/* 8017C854 00178694  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8017C858 00178698  80 C4 00 00 */	lwz r6, 0(r4)
+/* 8017C85C 0017869C  80 04 00 04 */	lwz r0, 4(r4)
+/* 8017C860 001786A0  90 C1 00 08 */	stw r6, 8(r1)
+/* 8017C864 001786A4  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8017C868 001786A8  80 04 00 08 */	lwz r0, 8(r4)
+/* 8017C86C 001786AC  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8017C870 001786B0  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8017C874 001786B4  C0 05 00 00 */	lfs f0, 0(r5)
+/* 8017C878 001786B8  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8017C87C 001786BC  D0 01 00 08 */	stfs f0, 8(r1)
+/* 8017C880 001786C0  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 8017C884 001786C4  C0 05 00 04 */	lfs f0, 4(r5)
+/* 8017C888 001786C8  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8017C88C 001786CC  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 8017C890 001786D0  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 8017C894 001786D4  C0 05 00 08 */	lfs f0, 8(r5)
+/* 8017C898 001786D8  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8017C89C 001786DC  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 8017C8A0 001786E0  38 81 00 08 */	addi r4, r1, 8
+/* 8017C8A4 001786E4  4B FF FD 25 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017C8A8 001786E8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8017C8AC 001786EC  7C 08 03 A6 */	mtlr r0
+/* 8017C8B0 001786F0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8017C8B4 001786F4  4E 80 00 20 */	blr 
+
+.global GlobalPos__Q28dynamics9ModelNodeFv
+GlobalPos__Q28dynamics9ModelNodeFv:
+/* 8017C8B8 001786F8  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 8017C8BC 001786FC  7C 08 02 A6 */	mflr r0
+/* 8017C8C0 00178700  90 01 00 94 */	stw r0, 0x94(r1)
+/* 8017C8C4 00178704  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 8017C8C8 00178708  93 C1 00 88 */	stw r30, 0x88(r1)
+/* 8017C8CC 0017870C  7C 7E 1B 78 */	mr r30, r3
+/* 8017C8D0 00178710  7C 9F 23 78 */	mr r31, r4
+/* 8017C8D4 00178714  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C8D8 00178718  38 84 00 30 */	addi r4, r4, 0x30
+/* 8017C8DC 0017871C  38 BF 00 40 */	addi r5, r31, 0x40
+/* 8017C8E0 00178720  48 01 3E 49 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017C8E4 00178724  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C8E8 00178728  48 01 67 8D */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017C8EC 0017872C  90 61 00 08 */	stw r3, 8(r1)
+/* 8017C8F0 00178730  38 61 00 20 */	addi r3, r1, 0x20
+/* 8017C8F4 00178734  38 81 00 08 */	addi r4, r1, 8
+/* 8017C8F8 00178738  48 01 69 19 */	bl rtMtx__Q23g3d20NodeLocalMtxAccessorCFv
+/* 8017C8FC 0017873C  38 61 00 50 */	addi r3, r1, 0x50
+/* 8017C900 00178740  7F E4 FB 78 */	mr r4, r31
+/* 8017C904 00178744  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8017C908 00178748  48 00 00 35 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8017C90C 0017874C  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C910 00178750  38 80 FF FF */	li r4, -1
+/* 8017C914 00178754  4B FF FD 7D */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017C918 00178758  7F C3 F3 78 */	mr r3, r30
+/* 8017C91C 0017875C  38 81 00 50 */	addi r4, r1, 0x50
+/* 8017C920 00178760  48 00 00 69 */	bl getPos__Q33hel4math8Matrix34CFv
+/* 8017C924 00178764  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 8017C928 00178768  83 C1 00 88 */	lwz r30, 0x88(r1)
+/* 8017C92C 0017876C  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 8017C930 00178770  7C 08 03 A6 */	mtlr r0
+/* 8017C934 00178774  38 21 00 90 */	addi r1, r1, 0x90
+/* 8017C938 00178778  4E 80 00 20 */	blr 
+
+.global __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+__ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34:
+/* 8017C93C 0017877C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8017C940 00178780  7C 08 02 A6 */	mflr r0
+/* 8017C944 00178784  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8017C948 00178788  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017C94C 0017878C  4B E8 A9 F9 */	bl func_80007344
+/* 8017C950 00178790  7C 7D 1B 78 */	mr r29, r3
+/* 8017C954 00178794  7C 9E 23 78 */	mr r30, r4
+/* 8017C958 00178798  7C BF 2B 78 */	mr r31, r5
+/* 8017C95C 0017879C  4B EB 3B 85 */	bl PSMTXIdentity
+/* 8017C960 001787A0  7F C3 F3 78 */	mr r3, r30
+/* 8017C964 001787A4  7F E4 FB 78 */	mr r4, r31
+/* 8017C968 001787A8  7F A5 EB 78 */	mr r5, r29
+/* 8017C96C 001787AC  4B EB 3B E5 */	bl PSMTXConcat
+/* 8017C970 001787B0  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017C974 001787B4  4B E8 AA 1D */	bl func_80007390
+/* 8017C978 001787B8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8017C97C 001787BC  7C 08 03 A6 */	mtlr r0
+/* 8017C980 001787C0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8017C984 001787C4  4E 80 00 20 */	blr 
+
+.global getPos__Q33hel4math8Matrix34CFv
+getPos__Q33hel4math8Matrix34CFv:
+/* 8017C988 001787C8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017C98C 001787CC  7C 08 02 A6 */	mflr r0
+/* 8017C990 001787D0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017C994 001787D4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017C998 001787D8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8017C99C 001787DC  7C 7E 1B 78 */	mr r30, r3
+/* 8017C9A0 001787E0  7C 9F 23 78 */	mr r31, r4
+/* 8017C9A4 001787E4  4B FF FB 51 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017C9A8 001787E8  C0 1F 00 0C */	lfs f0, 0xc(r31)
+/* 8017C9AC 001787EC  D0 1E 00 00 */	stfs f0, 0(r30)
+/* 8017C9B0 001787F0  C0 1F 00 1C */	lfs f0, 0x1c(r31)
+/* 8017C9B4 001787F4  D0 1E 00 04 */	stfs f0, 4(r30)
+/* 8017C9B8 001787F8  C0 1F 00 2C */	lfs f0, 0x2c(r31)
+/* 8017C9BC 001787FC  D0 1E 00 08 */	stfs f0, 8(r30)
+/* 8017C9C0 00178800  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017C9C4 00178804  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8017C9C8 00178808  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017C9CC 0017880C  7C 08 03 A6 */	mtlr r0
+/* 8017C9D0 00178810  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017C9D4 00178814  4E 80 00 20 */	blr 
+
+.global Translate__Q28dynamics9ModelNodeFv
+Translate__Q28dynamics9ModelNodeFv:
+/* 8017C9D8 00178818  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 8017C9DC 0017881C  7C 08 02 A6 */	mflr r0
+/* 8017C9E0 00178820  90 01 00 64 */	stw r0, 0x64(r1)
+/* 8017C9E4 00178824  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 8017C9E8 00178828  93 C1 00 58 */	stw r30, 0x58(r1)
+/* 8017C9EC 0017882C  7C 7E 1B 78 */	mr r30, r3
+/* 8017C9F0 00178830  7C 9F 23 78 */	mr r31, r4
+/* 8017C9F4 00178834  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017C9F8 00178838  38 84 00 30 */	addi r4, r4, 0x30
+/* 8017C9FC 0017883C  38 BF 00 40 */	addi r5, r31, 0x40
+/* 8017CA00 00178840  48 01 3D 29 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017CA04 00178844  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017CA08 00178848  48 01 66 6D */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017CA0C 0017884C  90 61 00 08 */	stw r3, 8(r1)
+/* 8017CA10 00178850  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017CA14 00178854  38 80 FF FF */	li r4, -1
+/* 8017CA18 00178858  4B FF FC 79 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017CA1C 0017885C  38 61 00 08 */	addi r3, r1, 8
+/* 8017CA20 00178860  4B FC F0 8D */	bl hasNext__Q34nrel3mem20ExpHeapBlockIteratorCFv
+/* 8017CA24 00178864  2C 03 00 00 */	cmpwi r3, 0
+/* 8017CA28 00178868  41 82 00 20 */	beq lbl_8017CA48
+/* 8017CA2C 0017886C  38 61 00 20 */	addi r3, r1, 0x20
+/* 8017CA30 00178870  38 81 00 08 */	addi r4, r1, 8
+/* 8017CA34 00178874  48 01 67 DD */	bl rtMtx__Q23g3d20NodeLocalMtxAccessorCFv
+/* 8017CA38 00178878  7F C3 F3 78 */	mr r3, r30
+/* 8017CA3C 0017887C  38 81 00 20 */	addi r4, r1, 0x20
+/* 8017CA40 00178880  4B FF FF 49 */	bl getPos__Q33hel4math8Matrix34CFv
+/* 8017CA44 00178884  48 00 00 10 */	b lbl_8017CA54
+lbl_8017CA48:
+/* 8017CA48 00178888  7F C3 F3 78 */	mr r3, r30
+/* 8017CA4C 0017888C  38 9F 00 40 */	addi r4, r31, 0x40
+/* 8017CA50 00178890  48 01 74 AD */	bl translate__Q23g3d7ResNodeCFv
+lbl_8017CA54:
+/* 8017CA54 00178894  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 8017CA58 00178898  83 C1 00 58 */	lwz r30, 0x58(r1)
+/* 8017CA5C 0017889C  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 8017CA60 001788A0  7C 08 03 A6 */	mtlr r0
+/* 8017CA64 001788A4  38 21 00 60 */	addi r1, r1, 0x60
+/* 8017CA68 001788A8  4E 80 00 20 */	blr 
+
+.global Rotate__Q28dynamics9ModelNodeFv
+Rotate__Q28dynamics9ModelNodeFv:
+/* 8017CA6C 001788AC  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 8017CA70 001788B0  7C 08 02 A6 */	mflr r0
+/* 8017CA74 001788B4  90 01 00 74 */	stw r0, 0x74(r1)
+/* 8017CA78 001788B8  93 E1 00 6C */	stw r31, 0x6c(r1)
+/* 8017CA7C 001788BC  93 C1 00 68 */	stw r30, 0x68(r1)
+/* 8017CA80 001788C0  7C 7E 1B 78 */	mr r30, r3
+/* 8017CA84 001788C4  7C 9F 23 78 */	mr r31, r4
+/* 8017CA88 001788C8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8017CA8C 001788CC  38 84 00 30 */	addi r4, r4, 0x30
+/* 8017CA90 001788D0  38 BF 00 40 */	addi r5, r31, 0x40
+/* 8017CA94 001788D4  48 01 3C 95 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017CA98 001788D8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8017CA9C 001788DC  48 01 65 D9 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017CAA0 001788E0  90 61 00 08 */	stw r3, 8(r1)
+/* 8017CAA4 001788E4  38 61 00 18 */	addi r3, r1, 0x18
+/* 8017CAA8 001788E8  38 80 FF FF */	li r4, -1
+/* 8017CAAC 001788EC  4B FF FB E5 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017CAB0 001788F0  38 61 00 08 */	addi r3, r1, 8
+/* 8017CAB4 001788F4  4B FC EF F9 */	bl hasNext__Q34nrel3mem20ExpHeapBlockIteratorCFv
+/* 8017CAB8 001788F8  2C 03 00 00 */	cmpwi r3, 0
+/* 8017CABC 001788FC  41 82 00 20 */	beq lbl_8017CADC
+/* 8017CAC0 00178900  38 61 00 30 */	addi r3, r1, 0x30
+/* 8017CAC4 00178904  38 81 00 08 */	addi r4, r1, 8
+/* 8017CAC8 00178908  48 01 67 49 */	bl rtMtx__Q23g3d20NodeLocalMtxAccessorCFv
+/* 8017CACC 0017890C  7F C3 F3 78 */	mr r3, r30
+/* 8017CAD0 00178910  38 81 00 30 */	addi r4, r1, 0x30
+/* 8017CAD4 00178914  48 00 10 DD */	bl MtxGetRotation__8dynamicsFRQ33hel4math8Matrix34
+/* 8017CAD8 00178918  48 00 00 20 */	b lbl_8017CAF8
+lbl_8017CADC:
+/* 8017CADC 0017891C  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017CAE0 00178920  38 9F 00 40 */	addi r4, r31, 0x40
+/* 8017CAE4 00178924  48 01 74 55 */	bl rotate__Q23g3d7ResNodeCFv
+/* 8017CAE8 00178928  7F C3 F3 78 */	mr r3, r30
+/* 8017CAEC 0017892C  38 81 00 0C */	addi r4, r1, 0xc
+/* 8017CAF0 00178930  C0 22 96 70 */	lfs f1, $$253498-_SDA2_BASE_(r2)
+/* 8017CAF4 00178934  4B FF FA 75 */	bl __ml__Q33hel4math7Vector3CFf
+lbl_8017CAF8:
+/* 8017CAF8 00178938  83 E1 00 6C */	lwz r31, 0x6c(r1)
+/* 8017CAFC 0017893C  83 C1 00 68 */	lwz r30, 0x68(r1)
+/* 8017CB00 00178940  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 8017CB04 00178944  7C 08 03 A6 */	mtlr r0
+/* 8017CB08 00178948  38 21 00 70 */	addi r1, r1, 0x70
+/* 8017CB0C 0017894C  4E 80 00 20 */	blr 
+
+.global update__Q28dynamics9ModelNodeFRQ33hel4math8Matrix34
+update__Q28dynamics9ModelNodeFRQ33hel4math8Matrix34:
+/* 8017CB10 00178950  94 21 FB 40 */	stwu r1, -0x4c0(r1)
+/* 8017CB14 00178954  7C 08 02 A6 */	mflr r0
+/* 8017CB18 00178958  90 01 04 C4 */	stw r0, 0x4c4(r1)
+/* 8017CB1C 0017895C  DB E1 04 B0 */	stfd f31, 0x4b0(r1)
+/* 8017CB20 00178960  F3 E1 04 B8 */	psq_st f31, 1208(r1), 0, qr0
+/* 8017CB24 00178964  39 61 04 B0 */	addi r11, r1, 0x4b0
+/* 8017CB28 00178968  4B E8 A8 1D */	bl func_80007344
+/* 8017CB2C 0017896C  7C 7D 1B 78 */	mr r29, r3
+/* 8017CB30 00178970  7C 9E 23 78 */	mr r30, r4
+/* 8017CB34 00178974  7C BF 2B 78 */	mr r31, r5
+/* 8017CB38 00178978  7F C3 F3 78 */	mr r3, r30
+/* 8017CB3C 0017897C  7F E4 FB 78 */	mr r4, r31
+/* 8017CB40 00178980  4B FF F9 C9 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017CB44 00178984  80 1E 00 44 */	lwz r0, 0x44(r30)
+/* 8017CB48 00178988  2C 00 00 00 */	cmpwi r0, 0
+/* 8017CB4C 0017898C  40 82 00 2C */	bne lbl_8017CB78
+/* 8017CB50 00178990  38 61 01 74 */	addi r3, r1, 0x174
+/* 8017CB54 00178994  7F C4 F3 78 */	mr r4, r30
+/* 8017CB58 00178998  4B FF FD 61 */	bl GlobalPos__Q28dynamics9ModelNodeFv
+/* 8017CB5C 0017899C  38 7E 00 60 */	addi r3, r30, 0x60
+/* 8017CB60 001789A0  38 81 01 74 */	addi r4, r1, 0x174
+/* 8017CB64 001789A4  4B FF F9 E9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CB68 001789A8  7F C3 F3 78 */	mr r3, r30
+/* 8017CB6C 001789AC  7F A4 EB 78 */	mr r4, r29
+/* 8017CB70 001789B0  4B EB 39 A1 */	bl PSMTXCopy
+/* 8017CB74 001789B4  48 00 06 C8 */	b lbl_8017D23C
+lbl_8017CB78:
+/* 8017CB78 001789B8  C0 3E 00 78 */	lfs f1, 0x78(r30)
+/* 8017CB7C 001789BC  C0 02 96 78 */	lfs f0, $$253589-_SDA2_BASE_(r2)
+/* 8017CB80 001789C0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CB84 001789C4  40 80 00 14 */	bge lbl_8017CB98
+/* 8017CB88 001789C8  7F C3 F3 78 */	mr r3, r30
+/* 8017CB8C 001789CC  7F A4 EB 78 */	mr r4, r29
+/* 8017CB90 001789D0  4B EB 39 81 */	bl PSMTXCopy
+/* 8017CB94 001789D4  48 00 06 A8 */	b lbl_8017D23C
+lbl_8017CB98:
+/* 8017CB98 001789D8  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CB9C 001789DC  4B FF F9 59 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBA0 001789E0  38 61 02 1C */	addi r3, r1, 0x21c
+/* 8017CBA4 001789E4  4B FF F9 51 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBA8 001789E8  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CBAC 001789EC  4B FF F9 49 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBB0 001789F0  38 61 02 04 */	addi r3, r1, 0x204
+/* 8017CBB4 001789F4  4B FF F9 41 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBB8 001789F8  38 61 01 F8 */	addi r3, r1, 0x1f8
+/* 8017CBBC 001789FC  4B FF F9 39 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBC0 00178A00  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017CBC4 00178A04  4B FF F9 31 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBC8 00178A08  38 61 01 E0 */	addi r3, r1, 0x1e0
+/* 8017CBCC 00178A0C  4B FF F9 29 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CBD0 00178A10  38 61 04 70 */	addi r3, r1, 0x470
+/* 8017CBD4 00178A14  4B EB 39 0D */	bl PSMTXIdentity
+/* 8017CBD8 00178A18  38 61 04 40 */	addi r3, r1, 0x440
+/* 8017CBDC 00178A1C  4B EB 39 05 */	bl PSMTXIdentity
+/* 8017CBE0 00178A20  38 61 04 10 */	addi r3, r1, 0x410
+/* 8017CBE4 00178A24  4B EB 38 FD */	bl PSMTXIdentity
+/* 8017CBE8 00178A28  38 61 03 E0 */	addi r3, r1, 0x3e0
+/* 8017CBEC 00178A2C  4B EB 38 F5 */	bl PSMTXIdentity
+/* 8017CBF0 00178A30  38 61 01 68 */	addi r3, r1, 0x168
+/* 8017CBF4 00178A34  7F C4 F3 78 */	mr r4, r30
+/* 8017CBF8 00178A38  4B FF FD E1 */	bl Translate__Q28dynamics9ModelNodeFv
+/* 8017CBFC 00178A3C  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017CC00 00178A40  38 81 01 68 */	addi r4, r1, 0x168
+/* 8017CC04 00178A44  4B FF F9 49 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CC08 00178A48  38 61 01 5C */	addi r3, r1, 0x15c
+/* 8017CC0C 00178A4C  7F C4 F3 78 */	mr r4, r30
+/* 8017CC10 00178A50  4B FF FE 5D */	bl Rotate__Q28dynamics9ModelNodeFv
+/* 8017CC14 00178A54  38 61 01 E0 */	addi r3, r1, 0x1e0
+/* 8017CC18 00178A58  38 81 01 5C */	addi r4, r1, 0x15c
+/* 8017CC1C 00178A5C  4B FF F9 31 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CC20 00178A60  38 61 03 80 */	addi r3, r1, 0x380
+/* 8017CC24 00178A64  38 81 01 EC */	addi r4, r1, 0x1ec
+/* 8017CC28 00178A68  38 A1 01 E0 */	addi r5, r1, 0x1e0
+/* 8017CC2C 00178A6C  48 00 0F 31 */	bl CreateRTMtx__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CC30 00178A70  38 61 03 B0 */	addi r3, r1, 0x3b0
+/* 8017CC34 00178A74  7F E4 FB 78 */	mr r4, r31
+/* 8017CC38 00178A78  38 A1 03 80 */	addi r5, r1, 0x380
+/* 8017CC3C 00178A7C  4B FF FD 01 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8017CC40 00178A80  38 61 04 70 */	addi r3, r1, 0x470
+/* 8017CC44 00178A84  38 81 03 B0 */	addi r4, r1, 0x3b0
+/* 8017CC48 00178A88  4B FF F8 C1 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017CC4C 00178A8C  38 61 03 20 */	addi r3, r1, 0x320
+/* 8017CC50 00178A90  38 81 01 EC */	addi r4, r1, 0x1ec
+/* 8017CC54 00178A94  38 BE 00 54 */	addi r5, r30, 0x54
+/* 8017CC58 00178A98  48 00 0F 05 */	bl CreateRTMtx__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CC5C 00178A9C  38 61 03 50 */	addi r3, r1, 0x350
+/* 8017CC60 00178AA0  7F E4 FB 78 */	mr r4, r31
+/* 8017CC64 00178AA4  38 A1 03 20 */	addi r5, r1, 0x320
+/* 8017CC68 00178AA8  4B FF FC D5 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8017CC6C 00178AAC  38 61 04 40 */	addi r3, r1, 0x440
+/* 8017CC70 00178AB0  38 81 03 50 */	addi r4, r1, 0x350
+/* 8017CC74 00178AB4  4B FF F8 95 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017CC78 00178AB8  38 61 01 50 */	addi r3, r1, 0x150
+/* 8017CC7C 00178ABC  7F C4 F3 78 */	mr r4, r30
+/* 8017CC80 00178AC0  4B FF FC 39 */	bl GlobalPos__Q28dynamics9ModelNodeFv
+/* 8017CC84 00178AC4  38 7E 00 60 */	addi r3, r30, 0x60
+/* 8017CC88 00178AC8  38 81 01 50 */	addi r4, r1, 0x150
+/* 8017CC8C 00178ACC  4B FF F8 C1 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CC90 00178AD0  38 61 01 44 */	addi r3, r1, 0x144
+/* 8017CC94 00178AD4  80 9E 00 44 */	lwz r4, 0x44(r30)
+/* 8017CC98 00178AD8  4B FF FD 41 */	bl Translate__Q28dynamics9ModelNodeFv
+/* 8017CC9C 00178ADC  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017CCA0 00178AE0  38 81 01 44 */	addi r4, r1, 0x144
+/* 8017CCA4 00178AE4  4B FF F8 A9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CCA8 00178AE8  38 61 01 38 */	addi r3, r1, 0x138
+/* 8017CCAC 00178AEC  38 81 04 40 */	addi r4, r1, 0x440
+/* 8017CCB0 00178AF0  38 A1 01 EC */	addi r5, r1, 0x1ec
+/* 8017CCB4 00178AF4  48 00 05 AD */	bl mul__Q33hel4math8Matrix34CFRCQ33hel4math7Vector3
+/* 8017CCB8 00178AF8  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CCBC 00178AFC  38 81 01 38 */	addi r4, r1, 0x138
+/* 8017CCC0 00178B00  4B FF F8 8D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CCC4 00178B04  38 61 01 2C */	addi r3, r1, 0x12c
+/* 8017CCC8 00178B08  38 81 02 10 */	addi r4, r1, 0x210
+/* 8017CCCC 00178B0C  38 BE 00 60 */	addi r5, r30, 0x60
+/* 8017CCD0 00178B10  4B FF FB 7D */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CCD4 00178B14  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CCD8 00178B18  38 81 01 2C */	addi r4, r1, 0x12c
+/* 8017CCDC 00178B1C  4B FF F8 71 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CCE0 00178B20  38 61 01 20 */	addi r3, r1, 0x120
+/* 8017CCE4 00178B24  38 81 04 70 */	addi r4, r1, 0x470
+/* 8017CCE8 00178B28  38 A1 01 EC */	addi r5, r1, 0x1ec
+/* 8017CCEC 00178B2C  48 00 05 75 */	bl mul__Q33hel4math8Matrix34CFRCQ33hel4math7Vector3
+/* 8017CCF0 00178B30  38 61 02 04 */	addi r3, r1, 0x204
+/* 8017CCF4 00178B34  38 81 01 20 */	addi r4, r1, 0x120
+/* 8017CCF8 00178B38  4B FF F8 55 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CCFC 00178B3C  38 61 01 14 */	addi r3, r1, 0x114
+/* 8017CD00 00178B40  38 81 02 04 */	addi r4, r1, 0x204
+/* 8017CD04 00178B44  38 BE 00 60 */	addi r5, r30, 0x60
+/* 8017CD08 00178B48  4B FF FB 45 */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CD0C 00178B4C  38 61 02 04 */	addi r3, r1, 0x204
+/* 8017CD10 00178B50  38 81 01 14 */	addi r4, r1, 0x114
+/* 8017CD14 00178B54  4B FF F8 39 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD18 00178B58  38 61 01 08 */	addi r3, r1, 0x108
+/* 8017CD1C 00178B5C  80 9E 00 44 */	lwz r4, 0x44(r30)
+/* 8017CD20 00178B60  38 84 00 60 */	addi r4, r4, 0x60
+/* 8017CD24 00178B64  38 BE 00 60 */	addi r5, r30, 0x60
+/* 8017CD28 00178B68  4B FF FB 25 */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CD2C 00178B6C  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CD30 00178B70  38 81 01 08 */	addi r4, r1, 0x108
+/* 8017CD34 00178B74  4B FF F8 19 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD38 00178B78  38 61 00 FC */	addi r3, r1, 0xfc
+/* 8017CD3C 00178B7C  38 81 02 10 */	addi r4, r1, 0x210
+/* 8017CD40 00178B80  48 00 0B 41 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CD44 00178B84  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CD48 00178B88  38 81 00 FC */	addi r4, r1, 0xfc
+/* 8017CD4C 00178B8C  4B FF F8 01 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD50 00178B90  38 61 00 F0 */	addi r3, r1, 0xf0
+/* 8017CD54 00178B94  38 81 02 04 */	addi r4, r1, 0x204
+/* 8017CD58 00178B98  48 00 0B 29 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CD5C 00178B9C  38 61 02 04 */	addi r3, r1, 0x204
+/* 8017CD60 00178BA0  38 81 00 F0 */	addi r4, r1, 0xf0
+/* 8017CD64 00178BA4  4B FF F7 E9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD68 00178BA8  38 61 00 E4 */	addi r3, r1, 0xe4
+/* 8017CD6C 00178BAC  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CD70 00178BB0  48 00 0B 11 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CD74 00178BB4  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CD78 00178BB8  38 81 00 E4 */	addi r4, r1, 0xe4
+/* 8017CD7C 00178BBC  4B FF F7 D1 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD80 00178BC0  38 61 02 1C */	addi r3, r1, 0x21c
+/* 8017CD84 00178BC4  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CD88 00178BC8  4B FF F7 C5 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CD8C 00178BCC  38 61 01 D4 */	addi r3, r1, 0x1d4
+/* 8017CD90 00178BD0  3C 80 80 54 */	lis r4, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8017CD94 00178BD4  38 84 52 F4 */	addi r4, r4, BASIS_Y__Q33hel4math7Vector3@l
+/* 8017CD98 00178BD8  C0 22 96 7C */	lfs f1, $$253675-_SDA2_BASE_(r2)
+/* 8017CD9C 00178BDC  4B FF F7 CD */	bl __ml__Q33hel4math7Vector3CFf
+/* 8017CDA0 00178BE0  38 61 01 C8 */	addi r3, r1, 0x1c8
+/* 8017CDA4 00178BE4  4B FF F7 51 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CDA8 00178BE8  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CDAC 00178BEC  38 81 01 D4 */	addi r4, r1, 0x1d4
+/* 8017CDB0 00178BF0  48 00 0D 39 */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CDB4 00178BF4  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CDB8 00178BF8  FC 00 08 00 */	fcmpu cr0, f0, f1
+/* 8017CDBC 00178BFC  41 82 00 64 */	beq lbl_8017CE20
+/* 8017CDC0 00178C00  C0 02 96 80 */	lfs f0, $$253676-_SDA2_BASE_(r2)
+/* 8017CDC4 00178C04  EC 20 00 72 */	fmuls f1, f0, f1
+/* 8017CDC8 00178C08  4B F8 1C D9 */	bl SinFIdx__Q24nw4r4mathFf
+/* 8017CDCC 00178C0C  C0 1E 00 7C */	lfs f0, 0x7c(r30)
+/* 8017CDD0 00178C10  EF E0 00 72 */	fmuls f31, f0, f1
+/* 8017CDD4 00178C14  EC 3F 00 32 */	fmuls f1, f31, f0
+/* 8017CDD8 00178C18  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CDDC 00178C1C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CDE0 00178C20  40 80 00 08 */	bge lbl_8017CDE8
+/* 8017CDE4 00178C24  FF E0 F8 50 */	fneg f31, f31
+lbl_8017CDE8:
+/* 8017CDE8 00178C28  38 61 00 CC */	addi r3, r1, 0xcc
+/* 8017CDEC 00178C2C  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CDF0 00178C30  38 A1 01 D4 */	addi r5, r1, 0x1d4
+/* 8017CDF4 00178C34  48 00 04 B9 */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CDF8 00178C38  38 61 00 D8 */	addi r3, r1, 0xd8
+/* 8017CDFC 00178C3C  38 81 00 CC */	addi r4, r1, 0xcc
+/* 8017CE00 00178C40  48 00 0A 81 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CE04 00178C44  38 61 01 C8 */	addi r3, r1, 0x1c8
+/* 8017CE08 00178C48  38 81 00 D8 */	addi r4, r1, 0xd8
+/* 8017CE0C 00178C4C  4B FF F7 41 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CE10 00178C50  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CE14 00178C54  38 81 01 C8 */	addi r4, r1, 0x1c8
+/* 8017CE18 00178C58  FC 20 F8 90 */	fmr f1, f31
+/* 8017CE1C 00178C5C  48 02 2A 71 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+lbl_8017CE20:
+/* 8017CE20 00178C60  C0 22 96 74 */	lfs f1, $$253499-_SDA2_BASE_(r2)
+/* 8017CE24 00178C64  C0 1E 00 80 */	lfs f0, 0x80(r30)
+/* 8017CE28 00178C68  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 8017CE2C 00178C6C  41 82 00 94 */	beq lbl_8017CEC0
+/* 8017CE30 00178C70  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 8017CE34 00178C74  40 81 00 3C */	ble lbl_8017CE70
+/* 8017CE38 00178C78  88 1E 00 84 */	lbz r0, 0x84(r30)
+/* 8017CE3C 00178C7C  2C 00 00 00 */	cmpwi r0, 0
+/* 8017CE40 00178C80  41 82 00 0C */	beq lbl_8017CE4C
+/* 8017CE44 00178C84  C0 3E 00 9C */	lfs f1, 0x9c(r30)
+/* 8017CE48 00178C88  48 00 00 08 */	b lbl_8017CE50
+lbl_8017CE4C:
+/* 8017CE4C 00178C8C  C0 3E 00 98 */	lfs f1, 0x98(r30)
+lbl_8017CE50:
+/* 8017CE50 00178C90  C0 1E 00 80 */	lfs f0, 0x80(r30)
+/* 8017CE54 00178C94  EC 20 08 28 */	fsubs f1, f0, f1
+/* 8017CE58 00178C98  D0 3E 00 80 */	stfs f1, 0x80(r30)
+/* 8017CE5C 00178C9C  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CE60 00178CA0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CE64 00178CA4  40 80 00 40 */	bge lbl_8017CEA4
+/* 8017CE68 00178CA8  D0 1E 00 80 */	stfs f0, 0x80(r30)
+/* 8017CE6C 00178CAC  48 00 00 38 */	b lbl_8017CEA4
+lbl_8017CE70:
+/* 8017CE70 00178CB0  88 1E 00 84 */	lbz r0, 0x84(r30)
+/* 8017CE74 00178CB4  2C 00 00 00 */	cmpwi r0, 0
+/* 8017CE78 00178CB8  41 82 00 0C */	beq lbl_8017CE84
+/* 8017CE7C 00178CBC  C0 3E 00 9C */	lfs f1, 0x9c(r30)
+/* 8017CE80 00178CC0  48 00 00 08 */	b lbl_8017CE88
+lbl_8017CE84:
+/* 8017CE84 00178CC4  C0 3E 00 98 */	lfs f1, 0x98(r30)
+lbl_8017CE88:
+/* 8017CE88 00178CC8  C0 1E 00 80 */	lfs f0, 0x80(r30)
+/* 8017CE8C 00178CCC  EC 20 08 2A */	fadds f1, f0, f1
+/* 8017CE90 00178CD0  D0 3E 00 80 */	stfs f1, 0x80(r30)
+/* 8017CE94 00178CD4  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CE98 00178CD8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CE9C 00178CDC  40 81 00 08 */	ble lbl_8017CEA4
+/* 8017CEA0 00178CE0  D0 1E 00 80 */	stfs f0, 0x80(r30)
+lbl_8017CEA4:
+/* 8017CEA4 00178CE4  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CEA8 00178CE8  C0 3E 00 80 */	lfs f1, 0x80(r30)
+/* 8017CEAC 00178CEC  FC 00 08 00 */	fcmpu cr0, f0, f1
+/* 8017CEB0 00178CF0  41 82 00 10 */	beq lbl_8017CEC0
+/* 8017CEB4 00178CF4  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CEB8 00178CF8  38 9E 00 6C */	addi r4, r30, 0x6c
+/* 8017CEBC 00178CFC  48 02 29 D1 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+lbl_8017CEC0:
+/* 8017CEC0 00178D00  38 61 01 BC */	addi r3, r1, 0x1bc
+/* 8017CEC4 00178D04  4B FF F6 31 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CEC8 00178D08  38 61 01 B0 */	addi r3, r1, 0x1b0
+/* 8017CECC 00178D0C  4B FF F6 29 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017CED0 00178D10  C3 FE 00 A0 */	lfs f31, 0xa0(r30)
+/* 8017CED4 00178D14  38 61 01 BC */	addi r3, r1, 0x1bc
+/* 8017CED8 00178D18  38 81 02 1C */	addi r4, r1, 0x21c
+/* 8017CEDC 00178D1C  4B FF F6 71 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CEE0 00178D20  38 61 01 BC */	addi r3, r1, 0x1bc
+/* 8017CEE4 00178D24  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CEE8 00178D28  48 00 0C 01 */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CEEC 00178D2C  FC 01 F8 40 */	fcmpo cr0, f1, f31
+/* 8017CEF0 00178D30  40 81 00 48 */	ble lbl_8017CF38
+/* 8017CEF4 00178D34  38 61 00 B4 */	addi r3, r1, 0xb4
+/* 8017CEF8 00178D38  38 81 01 BC */	addi r4, r1, 0x1bc
+/* 8017CEFC 00178D3C  38 A1 02 28 */	addi r5, r1, 0x228
+/* 8017CF00 00178D40  48 00 03 AD */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CF04 00178D44  38 61 00 C0 */	addi r3, r1, 0xc0
+/* 8017CF08 00178D48  38 81 00 B4 */	addi r4, r1, 0xb4
+/* 8017CF0C 00178D4C  48 00 09 75 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CF10 00178D50  38 61 01 B0 */	addi r3, r1, 0x1b0
+/* 8017CF14 00178D54  38 81 00 C0 */	addi r4, r1, 0xc0
+/* 8017CF18 00178D58  4B FF F6 35 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CF1C 00178D5C  38 61 01 BC */	addi r3, r1, 0x1bc
+/* 8017CF20 00178D60  38 81 01 B0 */	addi r4, r1, 0x1b0
+/* 8017CF24 00178D64  FC 20 F8 90 */	fmr f1, f31
+/* 8017CF28 00178D68  48 02 29 65 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+/* 8017CF2C 00178D6C  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CF30 00178D70  38 81 01 BC */	addi r4, r1, 0x1bc
+/* 8017CF34 00178D74  4B FF F6 19 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_8017CF38:
+/* 8017CF38 00178D78  C0 3E 00 90 */	lfs f1, 0x90(r30)
+/* 8017CF3C 00178D7C  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017CF40 00178D80  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CF44 00178D84  40 81 00 64 */	ble lbl_8017CFA8
+/* 8017CF48 00178D88  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CF4C 00178D8C  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CF50 00178D90  48 00 0B 99 */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CF54 00178D94  C0 1E 00 90 */	lfs f0, 0x90(r30)
+/* 8017CF58 00178D98  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CF5C 00178D9C  40 80 00 14 */	bge lbl_8017CF70
+/* 8017CF60 00178DA0  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CF64 00178DA4  38 81 02 10 */	addi r4, r1, 0x210
+/* 8017CF68 00178DA8  4B FF F5 E5 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CF6C 00178DAC  48 00 00 3C */	b lbl_8017CFA8
+lbl_8017CF70:
+/* 8017CF70 00178DB0  38 61 00 9C */	addi r3, r1, 0x9c
+/* 8017CF74 00178DB4  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CF78 00178DB8  38 A1 02 10 */	addi r5, r1, 0x210
+/* 8017CF7C 00178DBC  48 00 03 31 */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CF80 00178DC0  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 8017CF84 00178DC4  38 81 00 9C */	addi r4, r1, 0x9c
+/* 8017CF88 00178DC8  48 00 08 F9 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CF8C 00178DCC  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017CF90 00178DD0  38 81 00 A8 */	addi r4, r1, 0xa8
+/* 8017CF94 00178DD4  4B FF F5 B9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CF98 00178DD8  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CF9C 00178DDC  38 81 01 EC */	addi r4, r1, 0x1ec
+/* 8017CFA0 00178DE0  C0 3E 00 90 */	lfs f1, 0x90(r30)
+/* 8017CFA4 00178DE4  48 02 28 E9 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+lbl_8017CFA8:
+/* 8017CFA8 00178DE8  38 61 02 10 */	addi r3, r1, 0x210
+/* 8017CFAC 00178DEC  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017CFB0 00178DF0  48 00 0B 39 */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017CFB4 00178DF4  C0 1E 00 A4 */	lfs f0, 0xa4(r30)
+/* 8017CFB8 00178DF8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8017CFBC 00178DFC  40 81 00 48 */	ble lbl_8017D004
+/* 8017CFC0 00178E00  38 61 00 84 */	addi r3, r1, 0x84
+/* 8017CFC4 00178E04  38 81 02 10 */	addi r4, r1, 0x210
+/* 8017CFC8 00178E08  38 A1 02 28 */	addi r5, r1, 0x228
+/* 8017CFCC 00178E0C  48 00 02 E1 */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017CFD0 00178E10  38 61 00 90 */	addi r3, r1, 0x90
+/* 8017CFD4 00178E14  38 81 00 84 */	addi r4, r1, 0x84
+/* 8017CFD8 00178E18  48 00 08 A9 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017CFDC 00178E1C  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017CFE0 00178E20  38 81 00 90 */	addi r4, r1, 0x90
+/* 8017CFE4 00178E24  4B FF F5 69 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CFE8 00178E28  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CFEC 00178E2C  38 81 02 10 */	addi r4, r1, 0x210
+/* 8017CFF0 00178E30  4B FF F5 5D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017CFF4 00178E34  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017CFF8 00178E38  38 81 01 EC */	addi r4, r1, 0x1ec
+/* 8017CFFC 00178E3C  C0 3E 00 A4 */	lfs f1, 0xa4(r30)
+/* 8017D000 00178E40  48 02 28 8D */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+lbl_8017D004:
+/* 8017D004 00178E44  38 61 02 04 */	addi r3, r1, 0x204
+/* 8017D008 00178E48  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017D00C 00178E4C  48 00 0A DD */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017D010 00178E50  C0 1E 00 88 */	lfs f0, 0x88(r30)
+/* 8017D014 00178E54  EF E1 00 32 */	fmuls f31, f1, f0
+/* 8017D018 00178E58  38 61 00 6C */	addi r3, r1, 0x6c
+/* 8017D01C 00178E5C  38 81 02 04 */	addi r4, r1, 0x204
+/* 8017D020 00178E60  38 A1 02 28 */	addi r5, r1, 0x228
+/* 8017D024 00178E64  48 00 02 89 */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017D028 00178E68  38 61 00 78 */	addi r3, r1, 0x78
+/* 8017D02C 00178E6C  38 81 00 6C */	addi r4, r1, 0x6c
+/* 8017D030 00178E70  48 00 08 51 */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017D034 00178E74  38 61 01 F8 */	addi r3, r1, 0x1f8
+/* 8017D038 00178E78  38 81 00 78 */	addi r4, r1, 0x78
+/* 8017D03C 00178E7C  4B FF F5 11 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017D040 00178E80  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017D044 00178E84  38 81 02 04 */	addi r4, r1, 0x204
+/* 8017D048 00178E88  4B FF F5 05 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017D04C 00178E8C  38 61 02 28 */	addi r3, r1, 0x228
+/* 8017D050 00178E90  38 81 01 F8 */	addi r4, r1, 0x1f8
+/* 8017D054 00178E94  FC 20 F8 90 */	fmr f1, f31
+/* 8017D058 00178E98  48 02 28 35 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+/* 8017D05C 00178E9C  38 61 00 54 */	addi r3, r1, 0x54
+/* 8017D060 00178EA0  38 81 02 1C */	addi r4, r1, 0x21c
+/* 8017D064 00178EA4  38 A1 02 28 */	addi r5, r1, 0x228
+/* 8017D068 00178EA8  48 00 02 45 */	bl __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8017D06C 00178EAC  38 61 00 60 */	addi r3, r1, 0x60
+/* 8017D070 00178EB0  38 81 00 54 */	addi r4, r1, 0x54
+/* 8017D074 00178EB4  48 00 08 0D */	bl Normalized__8dynamicsFRCQ33hel4math7Vector3
+/* 8017D078 00178EB8  38 7E 00 6C */	addi r3, r30, 0x6c
+/* 8017D07C 00178EBC  38 81 00 60 */	addi r4, r1, 0x60
+/* 8017D080 00178EC0  4B FF F4 CD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017D084 00178EC4  38 61 02 1C */	addi r3, r1, 0x21c
+/* 8017D088 00178EC8  38 81 02 28 */	addi r4, r1, 0x228
+/* 8017D08C 00178ECC  48 00 0A 5D */	bl AngleFast__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017D090 00178ED0  D0 3E 00 80 */	stfs f1, 0x80(r30)
+/* 8017D094 00178ED4  C0 02 96 74 */	lfs f0, $$253499-_SDA2_BASE_(r2)
+/* 8017D098 00178ED8  FC 00 F8 00 */	fcmpu cr0, f0, f31
+/* 8017D09C 00178EDC  41 82 00 E0 */	beq lbl_8017D17C
+/* 8017D0A0 00178EE0  38 61 02 F0 */	addi r3, r1, 0x2f0
+/* 8017D0A4 00178EE4  4B EB 34 3D */	bl PSMTXIdentity
+/* 8017D0A8 00178EE8  7F E3 FB 78 */	mr r3, r31
+/* 8017D0AC 00178EEC  38 81 02 F0 */	addi r4, r1, 0x2f0
+/* 8017D0B0 00178EF0  4B EB 37 01 */	bl PSMTXTranspose
+/* 8017D0B4 00178EF4  38 61 04 10 */	addi r3, r1, 0x410
+/* 8017D0B8 00178EF8  38 81 02 F0 */	addi r4, r1, 0x2f0
+/* 8017D0BC 00178EFC  4B FF F4 4D */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017D0C0 00178F00  38 61 00 48 */	addi r3, r1, 0x48
+/* 8017D0C4 00178F04  38 81 04 10 */	addi r4, r1, 0x410
+/* 8017D0C8 00178F08  38 A1 01 F8 */	addi r5, r1, 0x1f8
+/* 8017D0CC 00178F0C  48 00 01 95 */	bl mul__Q33hel4math8Matrix34CFRCQ33hel4math7Vector3
+/* 8017D0D0 00178F10  38 61 01 EC */	addi r3, r1, 0x1ec
+/* 8017D0D4 00178F14  38 81 00 48 */	addi r4, r1, 0x48
+/* 8017D0D8 00178F18  4B FF F4 75 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017D0DC 00178F1C  38 61 00 38 */	addi r3, r1, 0x38
+/* 8017D0E0 00178F20  38 81 01 EC */	addi r4, r1, 0x1ec
+/* 8017D0E4 00178F24  FC 20 F8 90 */	fmr f1, f31
+/* 8017D0E8 00178F28  48 00 08 F5 */	bl QuatRotAxis__8dynamicsFRCQ33hel4math7Vector3f
+/* 8017D0EC 00178F2C  C0 01 00 38 */	lfs f0, 0x38(r1)
+/* 8017D0F0 00178F30  D0 01 01 A0 */	stfs f0, 0x1a0(r1)
+/* 8017D0F4 00178F34  C0 01 00 3C */	lfs f0, 0x3c(r1)
+/* 8017D0F8 00178F38  D0 01 01 A4 */	stfs f0, 0x1a4(r1)
+/* 8017D0FC 00178F3C  C0 01 00 40 */	lfs f0, 0x40(r1)
+/* 8017D100 00178F40  D0 01 01 A8 */	stfs f0, 0x1a8(r1)
+/* 8017D104 00178F44  C0 01 00 44 */	lfs f0, 0x44(r1)
+/* 8017D108 00178F48  D0 01 01 AC */	stfs f0, 0x1ac(r1)
+/* 8017D10C 00178F4C  38 61 00 28 */	addi r3, r1, 0x28
+/* 8017D110 00178F50  7F C4 F3 78 */	mr r4, r30
+/* 8017D114 00178F54  4B FF F9 59 */	bl Rotate__Q28dynamics9ModelNodeFv
+/* 8017D118 00178F58  38 61 01 E0 */	addi r3, r1, 0x1e0
+/* 8017D11C 00178F5C  38 81 00 28 */	addi r4, r1, 0x28
+/* 8017D120 00178F60  4B FF F4 2D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8017D124 00178F64  38 61 02 C0 */	addi r3, r1, 0x2c0
+/* 8017D128 00178F68  38 81 01 E0 */	addi r4, r1, 0x1e0
+/* 8017D12C 00178F6C  48 02 15 CD */	bl CreateRotXYZRad__Q33hel4math8Matrix34FRCQ33hel4math7Vector3
+/* 8017D130 00178F70  38 61 04 10 */	addi r3, r1, 0x410
+/* 8017D134 00178F74  38 81 02 C0 */	addi r4, r1, 0x2c0
+/* 8017D138 00178F78  4B FF F3 D1 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017D13C 00178F7C  38 61 01 90 */	addi r3, r1, 0x190
+/* 8017D140 00178F80  38 81 04 10 */	addi r4, r1, 0x410
+/* 8017D144 00178F84  4B EB 47 6D */	bl C_QUATMtx
+/* 8017D148 00178F88  38 61 01 A0 */	addi r3, r1, 0x1a0
+/* 8017D14C 00178F8C  38 81 01 90 */	addi r4, r1, 0x190
+/* 8017D150 00178F90  38 A1 01 80 */	addi r5, r1, 0x180
+/* 8017D154 00178F94  4B EB 46 5D */	bl PSQUATMultiply
+/* 8017D158 00178F98  38 61 04 10 */	addi r3, r1, 0x410
+/* 8017D15C 00178F9C  38 81 01 80 */	addi r4, r1, 0x180
+/* 8017D160 00178FA0  4B EB 3B 21 */	bl PSMTXQuat
+/* 8017D164 00178FA4  38 61 00 1C */	addi r3, r1, 0x1c
+/* 8017D168 00178FA8  38 81 04 10 */	addi r4, r1, 0x410
+/* 8017D16C 00178FAC  48 00 0A 45 */	bl MtxGetRotation__8dynamicsFRQ33hel4math8Matrix34
+/* 8017D170 00178FB0  38 61 01 E0 */	addi r3, r1, 0x1e0
+/* 8017D174 00178FB4  38 81 00 1C */	addi r4, r1, 0x1c
+/* 8017D178 00178FB8  4B FF F3 D5 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_8017D17C:
+/* 8017D17C 00178FBC  C0 02 96 84 */	lfs f0, $$253677-_SDA2_BASE_(r2)
+/* 8017D180 00178FC0  C0 3E 00 94 */	lfs f1, 0x94(r30)
+/* 8017D184 00178FC4  EC 40 08 28 */	fsubs f2, f0, f1
+/* 8017D188 00178FC8  C0 1E 00 54 */	lfs f0, 0x54(r30)
+/* 8017D18C 00178FCC  EC 20 00 72 */	fmuls f1, f0, f1
+/* 8017D190 00178FD0  C0 01 01 E0 */	lfs f0, 0x1e0(r1)
+/* 8017D194 00178FD4  EC 00 08 BA */	fmadds f0, f0, f2, f1
+/* 8017D198 00178FD8  D0 01 01 E0 */	stfs f0, 0x1e0(r1)
+/* 8017D19C 00178FDC  38 61 00 10 */	addi r3, r1, 0x10
+/* 8017D1A0 00178FE0  7F C4 F3 78 */	mr r4, r30
+/* 8017D1A4 00178FE4  4B FF F8 35 */	bl Translate__Q28dynamics9ModelNodeFv
+/* 8017D1A8 00178FE8  38 61 02 90 */	addi r3, r1, 0x290
+/* 8017D1AC 00178FEC  38 81 00 10 */	addi r4, r1, 0x10
+/* 8017D1B0 00178FF0  38 A1 01 E0 */	addi r5, r1, 0x1e0
+/* 8017D1B4 00178FF4  48 00 09 A9 */	bl CreateRTMtx__8dynamicsFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8017D1B8 00178FF8  38 61 04 10 */	addi r3, r1, 0x410
+/* 8017D1BC 00178FFC  38 81 02 90 */	addi r4, r1, 0x290
+/* 8017D1C0 00179000  4B FF F3 49 */	bl __as__Q33hel4math8Matrix34FRCQ33hel4math8Matrix34
+/* 8017D1C4 00179004  38 61 02 48 */	addi r3, r1, 0x248
+/* 8017D1C8 00179008  38 9E 00 30 */	addi r4, r30, 0x30
+/* 8017D1CC 0017900C  38 BE 00 40 */	addi r5, r30, 0x40
+/* 8017D1D0 00179010  48 01 35 59 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017D1D4 00179014  38 61 02 48 */	addi r3, r1, 0x248
+/* 8017D1D8 00179018  48 01 5E 9D */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017D1DC 0017901C  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8017D1E0 00179020  38 61 00 0C */	addi r3, r1, 0xc
+/* 8017D1E4 00179024  38 81 04 10 */	addi r4, r1, 0x410
+/* 8017D1E8 00179028  48 01 60 31 */	bl setRTMtx__Q23g3d20NodeLocalMtxAccessorCFRCQ33hel4math8Matrix34
+/* 8017D1EC 0017902C  38 61 02 48 */	addi r3, r1, 0x248
+/* 8017D1F0 00179030  38 80 FF FF */	li r4, -1
+/* 8017D1F4 00179034  4B FF F4 9D */	bl __dt__Q23g3d12NodeAccessorFv
+/* 8017D1F8 00179038  38 61 02 34 */	addi r3, r1, 0x234
+/* 8017D1FC 0017903C  38 9E 00 30 */	addi r4, r30, 0x30
+/* 8017D200 00179040  38 BE 00 40 */	addi r5, r30, 0x40
+/* 8017D204 00179044  48 01 35 25 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
+/* 8017D208 00179048  38 61 02 34 */	addi r3, r1, 0x234
+/* 8017D20C 0017904C  48 01 5E 69 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 8017D210 00179050  90 61 00 08 */	stw r3, 8(r1)
+/* 8017D214 00179054  38 61 02 60 */	addi r3, r1, 0x260
+/* 8017D218 00179058  38 81 00 08 */	addi r4, r1, 8
+/* 8017D21C 0017905C  48 01 5F F5 */	bl rtMtx__Q23g3d20NodeLocalMtxAccessorCFv
+/* 8017D220 00179060  7F A3 EB 78 */	mr r3, r29
+/* 8017D224 00179064  7F C4 F3 78 */	mr r4, r30
+/* 8017D228 00179068  38 A1 02 60 */	addi r5, r1, 0x260
+/* 8017D22C 0017906C  4B FF F7 11 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8017D230 00179070  38 61 02 34 */	addi r3, r1, 0x234
+/* 8017D234 00179074  38 80 FF FF */	li r4, -1
+/* 8017D238 00179078  4B FF F4 59 */	bl __dt__Q23g3d12NodeAccessorFv
+lbl_8017D23C:
+/* 8017D23C 0017907C  38 00 04 B8 */	li r0, 0x4b8
+/* 8017D240 00179080  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8017D244 00179084  CB E1 04 B0 */	lfd f31, 0x4b0(r1)
+/* 8017D248 00179088  39 61 04 B0 */	addi r11, r1, 0x4b0
+/* 8017D24C 0017908C  4B E8 A1 45 */	bl func_80007390
+/* 8017D250 00179090  80 01 04 C4 */	lwz r0, 0x4c4(r1)
+/* 8017D254 00179094  7C 08 03 A6 */	mtlr r0
+/* 8017D258 00179098  38 21 04 C0 */	addi r1, r1, 0x4c0
+/* 8017D25C 0017909C  4E 80 00 20 */	blr 
+
+.global mul__Q33hel4math8Matrix34CFRCQ33hel4math7Vector3
+mul__Q33hel4math8Matrix34CFRCQ33hel4math7Vector3:
+/* 8017D260 001790A0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8017D264 001790A4  7C 08 02 A6 */	mflr r0
+/* 8017D268 001790A8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8017D26C 001790AC  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017D270 001790B0  4B E8 A0 D5 */	bl func_80007344
+/* 8017D274 001790B4  7C 7D 1B 78 */	mr r29, r3
+/* 8017D278 001790B8  7C 9E 23 78 */	mr r30, r4
+/* 8017D27C 001790BC  7C BF 2B 78 */	mr r31, r5
+/* 8017D280 001790C0  4B FF F2 75 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8017D284 001790C4  7F C3 F3 78 */	mr r3, r30
+/* 8017D288 001790C8  7F E4 FB 78 */	mr r4, r31
+/* 8017D28C 001790CC  7F A5 EB 78 */	mr r5, r29
+/* 8017D290 001790D0  4B EB 3E 61 */	bl PSMTXMultVec
+/* 8017D294 001790D4  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017D298 001790D8  4B E8 A0 F9 */	bl func_80007390
+/* 8017D29C 001790DC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8017D2A0 001790E0  7C 08 03 A6 */	mtlr r0
+/* 8017D2A4 001790E4  38 21 00 20 */	addi r1, r1, 0x20
+/* 8017D2A8 001790E8  4E 80 00 20 */	blr 
+
+.global __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+__md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
+/* 8017D2AC 001790EC  C0 A4 00 04 */	lfs f5, 4(r4)
+/* 8017D2B0 001790F0  C0 85 00 00 */	lfs f4, 0(r5)
+/* 8017D2B4 001790F4  EC 25 01 32 */	fmuls f1, f5, f4
+/* 8017D2B8 001790F8  C0 04 00 00 */	lfs f0, 0(r4)
+/* 8017D2BC 001790FC  C0 65 00 04 */	lfs f3, 4(r5)
+/* 8017D2C0 00179100  EC C0 08 F8 */	fmsubs f6, f0, f3, f1
+/* 8017D2C4 00179104  C0 45 00 08 */	lfs f2, 8(r5)
+/* 8017D2C8 00179108  EC 20 00 B2 */	fmuls f1, f0, f2
+/* 8017D2CC 0017910C  C0 04 00 08 */	lfs f0, 8(r4)
+/* 8017D2D0 00179110  EC 20 09 38 */	fmsubs f1, f0, f4, f1
+/* 8017D2D4 00179114  EC 00 00 F2 */	fmuls f0, f0, f3
+/* 8017D2D8 00179118  EC 05 00 B8 */	fmsubs f0, f5, f2, f0
+/* 8017D2DC 0017911C  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8017D2E0 00179120  D0 23 00 04 */	stfs f1, 4(r3)
+/* 8017D2E4 00179124  D0 C3 00 08 */	stfs f6, 8(r3)
+/* 8017D2E8 00179128  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20
+$$2STRING$$2FSqrt__Q24nw4r4mathFf$$20:
+	.incbin "baserom.dol", 0x44F230, 0x24
+.global $$2STRING$$2FSqrt__Q24nw4r4mathFf
+$$2STRING$$2FSqrt__Q24nw4r4mathFf:
+	.incbin "baserom.dol", 0x44F254, 0x14
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253498
+$$253498:
+	.incbin "baserom.dol", 0x49A130, 0x4
+.global $$253499
+$$253499:
+	.incbin "baserom.dol", 0x49A134, 0x4
+.global $$253589
+$$253589:
+	.incbin "baserom.dol", 0x49A138, 0x4
+.global $$253675
+$$253675:
+	.incbin "baserom.dol", 0x49A13C, 0x4
+.global $$253676
+$$253676:
+	.incbin "baserom.dol", 0x49A140, 0x4
+.global $$253677
+$$253677:
+	.incbin "baserom.dol", 0x49A144, 0x4

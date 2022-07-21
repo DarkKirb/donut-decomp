@@ -1,0 +1,124 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q23app6SystemFv
+__ct__Q23app6SystemFv:
+/* 8017BBDC 00177A1C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017BBE0 00177A20  7C 08 02 A6 */	mflr r0
+/* 8017BBE4 00177A24  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017BBE8 00177A28  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017BBEC 00177A2C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8017BBF0 00177A30  7C 7E 1B 78 */	mr r30, r3
+/* 8017BBF4 00177A34  38 00 00 01 */	li r0, 1
+/* 8017BBF8 00177A38  98 0D ED 20 */	stb r0, isExist___Q33hel6common31PrivateSingleton$$0Q23app6System$$1-_SDA_BASE_(r13)
+/* 8017BBFC 00177A3C  48 00 00 BD */	bl __ct__Q33app6System14SDKInitializerFv
+/* 8017BC00 00177A40  48 04 36 51 */	bl SetupIfNotSetup__Q23mem6MemoryFv
+/* 8017BC04 00177A44  38 7E 00 04 */	addi r3, r30, 4
+/* 8017BC08 00177A48  3C 80 00 10 */	lis r4, 0x10
+/* 8017BC0C 00177A4C  38 A0 00 00 */	li r5, 0
+/* 8017BC10 00177A50  48 01 A4 6D */	bl __ct__Q23gfx19GXFifoMemoryManagerFUlUl
+/* 8017BC14 00177A54  38 7E 00 2C */	addi r3, r30, 0x2c
+/* 8017BC18 00177A58  38 9E 00 04 */	addi r4, r30, 4
+/* 8017BC1C 00177A5C  48 00 01 11 */	bl __ct__Q33app6System13GXInitializerFRQ23gfx19GXFifoMemoryManager
+/* 8017BC20 00177A60  38 7E 00 30 */	addi r3, r30, 0x30
+/* 8017BC24 00177A64  48 01 BD 89 */	bl __ct__Q23gfx9VISettingFv
+/* 8017BC28 00177A68  38 7E 00 44 */	addi r3, r30, 0x44
+/* 8017BC2C 00177A6C  38 9E 00 30 */	addi r4, r30, 0x30
+/* 8017BC30 00177A70  48 01 C1 21 */	bl __ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting
+/* 8017BC34 00177A74  38 7E 00 60 */	addi r3, r30, 0x60
+/* 8017BC38 00177A78  48 01 A6 A5 */	bl __ct__Q23gfx13RenderSettingFv
+/* 8017BC3C 00177A7C  38 7E 00 44 */	addi r3, r30, 0x44
+/* 8017BC40 00177A80  48 01 C2 81 */	bl target2__Q23gfx10XFBManagerFv
+/* 8017BC44 00177A84  7C 7F 1B 78 */	mr r31, r3
+/* 8017BC48 00177A88  38 7E 00 44 */	addi r3, r30, 0x44
+/* 8017BC4C 00177A8C  48 01 C2 41 */	bl target1__Q23gfx10XFBManagerFv
+/* 8017BC50 00177A90  7C 64 1B 78 */	mr r4, r3
+/* 8017BC54 00177A94  38 7E 00 94 */	addi r3, r30, 0x94
+/* 8017BC58 00177A98  7F E5 FB 78 */	mr r5, r31
+/* 8017BC5C 00177A9C  48 00 EC A5 */	bl __ct__Q26freeze13FreezeManagerFPUcPUc
+/* 8017BC60 00177AA0  38 7E 00 A4 */	addi r3, r30, 0xa4
+/* 8017BC64 00177AA4  48 02 7C 4D */	bl __ct__Q23hid14LibInitializerFv
+/* 8017BC68 00177AA8  38 7E 00 A8 */	addi r3, r30, 0xa8
+/* 8017BC6C 00177AAC  48 28 72 7D */	bl __ct__Q23snd12SoundManagerFv
+/* 8017BC70 00177AB0  38 7E 00 30 */	addi r3, r30, 0x30
+/* 8017BC74 00177AB4  38 80 00 0E */	li r4, 0xe
+/* 8017BC78 00177AB8  48 01 BF 19 */	bl set__Q23gfx9VISettingFUl
+/* 8017BC7C 00177ABC  38 60 00 01 */	li r3, 1
+/* 8017BC80 00177AC0  4B F7 5A 31 */	bl G3dInit__Q24nw4r3g3dFb
+/* 8017BC84 00177AC4  38 60 00 01 */	li r3, 1
+/* 8017BC88 00177AC8  4B F6 07 E9 */	bl SetTMemLayout__Q34nw4r3g3d4tmemFQ44nw4r3g3d4tmem10TMemLayout
+/* 8017BC8C 00177ACC  7F C3 F3 78 */	mr r3, r30
+/* 8017BC90 00177AD0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017BC94 00177AD4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8017BC98 00177AD8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017BC9C 00177ADC  7C 08 03 A6 */	mtlr r0
+/* 8017BCA0 00177AE0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017BCA4 00177AE4  4E 80 00 20 */	blr 
+
+.global renderSetting__Q23app6SystemFv
+renderSetting__Q23app6SystemFv:
+/* 8017BCA8 00177AE8  38 63 00 60 */	addi r3, r3, 0x60
+/* 8017BCAC 00177AEC  4E 80 00 20 */	blr 
+
+.global xfbManager__Q23app6SystemFv
+xfbManager__Q23app6SystemFv:
+/* 8017BCB0 00177AF0  38 63 00 44 */	addi r3, r3, 0x44
+/* 8017BCB4 00177AF4  4E 80 00 20 */	blr 
+
+.global __ct__Q33app6System14SDKInitializerFv
+__ct__Q33app6System14SDKInitializerFv:
+/* 8017BCB8 00177AF8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8017BCBC 00177AFC  7C 08 02 A6 */	mflr r0
+/* 8017BCC0 00177B00  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8017BCC4 00177B04  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8017BCC8 00177B08  7C 7F 1B 78 */	mr r31, r3
+/* 8017BCCC 00177B0C  4B EC F7 65 */	bl SCInit
+/* 8017BCD0 00177B10  4B EB E5 41 */	bl DVDInit
+/* 8017BCD4 00177B14  38 60 00 04 */	li r3, 4
+/* 8017BCD8 00177B18  64 63 00 04 */	oris r3, r3, 4
+/* 8017BCDC 00177B1C  7C 72 E3 A6 */	mtspr 0x392, r3
+/* 8017BCE0 00177B20  38 60 00 05 */	li r3, 5
+/* 8017BCE4 00177B24  64 63 00 05 */	oris r3, r3, 5
+/* 8017BCE8 00177B28  7C 73 E3 A6 */	mtspr 0x393, r3
+/* 8017BCEC 00177B2C  38 60 00 06 */	li r3, 6
+/* 8017BCF0 00177B30  64 63 00 06 */	oris r3, r3, 6
+/* 8017BCF4 00177B34  7C 74 E3 A6 */	mtspr 0x394, r3
+/* 8017BCF8 00177B38  38 60 00 07 */	li r3, 7
+/* 8017BCFC 00177B3C  64 63 00 07 */	oris r3, r3, 7
+/* 8017BD00 00177B40  7C 75 E3 A6 */	mtspr 0x395, r3
+/* 8017BD04 00177B44  4B EB 0B 3D */	bl VIInit
+/* 8017BD08 00177B48  38 60 00 00 */	li r3, 0
+/* 8017BD0C 00177B4C  4B EC 6C 95 */	bl AIInit
+/* 8017BD10 00177B50  4B EC 71 01 */	bl AXInit
+/* 8017BD14 00177B54  7F E3 FB 78 */	mr r3, r31
+/* 8017BD18 00177B58  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8017BD1C 00177B5C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8017BD20 00177B60  7C 08 03 A6 */	mtlr r0
+/* 8017BD24 00177B64  38 21 00 10 */	addi r1, r1, 0x10
+/* 8017BD28 00177B68  4E 80 00 20 */	blr 
+
+.global __ct__Q33app6System13GXInitializerFRQ23gfx19GXFifoMemoryManager
+__ct__Q33app6System13GXInitializerFRQ23gfx19GXFifoMemoryManager:
+/* 8017BD2C 00177B6C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8017BD30 00177B70  7C 08 02 A6 */	mflr r0
+/* 8017BD34 00177B74  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8017BD38 00177B78  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017BD3C 00177B7C  4B E8 B6 09 */	bl func_80007344
+/* 8017BD40 00177B80  7C 7D 1B 78 */	mr r29, r3
+/* 8017BD44 00177B84  7C 9E 23 78 */	mr r30, r4
+/* 8017BD48 00177B88  7F C3 F3 78 */	mr r3, r30
+/* 8017BD4C 00177B8C  4B EF 99 E5 */	bl GKI_getfirst
+/* 8017BD50 00177B90  7C 7F 1B 78 */	mr r31, r3
+/* 8017BD54 00177B94  7F C3 F3 78 */	mr r3, r30
+/* 8017BD58 00177B98  48 01 A4 89 */	bl data__Q23gfx19GXFifoMemoryManagerFv
+/* 8017BD5C 00177B9C  7F E4 FB 78 */	mr r4, r31
+/* 8017BD60 00177BA0  4B EB 62 81 */	bl GXInit
+/* 8017BD64 00177BA4  38 60 00 00 */	li r3, 0
+/* 8017BD68 00177BA8  4B EB CB D9 */	bl GXSetDither
+/* 8017BD6C 00177BAC  7F A3 EB 78 */	mr r3, r29
+/* 8017BD70 00177BB0  39 61 00 20 */	addi r11, r1, 0x20
+/* 8017BD74 00177BB4  4B E8 B6 1D */	bl func_80007390
+/* 8017BD78 00177BB8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8017BD7C 00177BBC  7C 08 03 A6 */	mtlr r0
+/* 8017BD80 00177BC0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8017BD84 00177BC4  4E 80 00 20 */	blr 

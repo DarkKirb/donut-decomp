@@ -1,0 +1,242 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global lowCallback
+lowCallback:
+/* 8003FF50 0003BD90  90 6D E6 F0 */	stw r3, lowIntType-_SDA_BASE_(r13)
+/* 8003FF54 0003BD94  38 00 00 01 */	li r0, 1
+/* 8003FF58 0003BD98  90 0D 81 D8 */	stw r0, lowDone-_SDA_BASE_(r13)
+/* 8003FF5C 0003BD9C  4E 80 00 20 */	blr 
+
+.global __DVDCheckDevice
+__DVDCheckDevice:
+/* 8003FF60 0003BDA0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8003FF64 0003BDA4  7C 08 02 A6 */	mflr r0
+/* 8003FF68 0003BDA8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8003FF6C 0003BDAC  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8003FF70 0003BDB0  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8003FF74 0003BDB4  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 8003FF78 0003BDB8  3F A0 46 0A */	lis r29, 0x460a
+/* 8003FF7C 0003BDBC  4B FE 23 75 */	bl OSGetPhysicalMem2Size
+/* 8003FF80 0003BDC0  3C 03 F8 00 */	addis r0, r3, 0xf800
+/* 8003FF84 0003BDC4  28 00 00 00 */	cmplwi r0, 0
+/* 8003FF88 0003BDC8  40 82 00 0C */	bne lbl_8003FF94
+/* 8003FF8C 0003BDCC  38 60 00 01 */	li r3, 1
+/* 8003FF90 0003BDD0  48 00 02 30 */	b lbl_800401C0
+lbl_8003FF94:
+/* 8003FF94 0003BDD4  38 61 00 10 */	addi r3, r1, 0x10
+/* 8003FF98 0003BDD8  4B FD A4 59 */	bl __OSGetIOSRev
+/* 8003FF9C 0003BDDC  88 01 00 11 */	lbz r0, 0x11(r1)
+/* 8003FFA0 0003BDE0  28 00 00 1E */	cmplwi r0, 0x1e
+/* 8003FFA4 0003BDE4  41 80 00 0C */	blt lbl_8003FFB0
+/* 8003FFA8 0003BDE8  28 00 00 FE */	cmplwi r0, 0xfe
+/* 8003FFAC 0003BDEC  41 80 00 0C */	blt lbl_8003FFB8
+lbl_8003FFB0:
+/* 8003FFB0 0003BDF0  38 60 00 01 */	li r3, 1
+/* 8003FFB4 0003BDF4  48 00 02 0C */	b lbl_800401C0
+lbl_8003FFB8:
+/* 8003FFB8 0003BDF8  3C 60 80 00 */	lis r3, 0x8000319C@ha
+/* 8003FFBC 0003BDFC  88 03 31 9C */	lbz r0, 0x8000319C@l(r3)
+/* 8003FFC0 0003BE00  28 00 00 81 */	cmplwi r0, 0x81
+/* 8003FFC4 0003BE04  40 82 00 08 */	bne lbl_8003FFCC
+/* 8003FFC8 0003BE08  3F A0 7E D4 */	lis r29, 0x7ed4
+lbl_8003FFCC:
+/* 8003FFCC 0003BE0C  38 00 00 00 */	li r0, 0
+/* 8003FFD0 0003BE10  3C 60 80 4A */	lis r3, CheckBuffer@ha
+/* 8003FFD4 0003BE14  3C C0 80 04 */	lis r6, lowCallback@ha
+/* 8003FFD8 0003BE18  90 0D 81 D8 */	stw r0, lowDone-_SDA_BASE_(r13)
+/* 8003FFDC 0003BE1C  7F A5 EB 78 */	mr r5, r29
+/* 8003FFE0 0003BE20  38 63 FD 40 */	addi r3, r3, CheckBuffer@l
+/* 8003FFE4 0003BE24  38 C6 FF 50 */	addi r6, r6, lowCallback@l
+/* 8003FFE8 0003BE28  38 80 00 20 */	li r4, 0x20
+/* 8003FFEC 0003BE2C  48 00 12 C5 */	bl DVDLowUnencryptedRead
+lbl_8003FFF0:
+/* 8003FFF0 0003BE30  80 0D 81 D8 */	lwz r0, lowDone-_SDA_BASE_(r13)
+/* 8003FFF4 0003BE34  2C 00 00 00 */	cmpwi r0, 0
+/* 8003FFF8 0003BE38  41 82 FF F8 */	beq lbl_8003FFF0
+/* 8003FFFC 0003BE3C  80 0D E6 F0 */	lwz r0, lowIntType-_SDA_BASE_(r13)
+/* 80040000 0003BE40  2C 00 00 02 */	cmpwi r0, 2
+/* 80040004 0003BE44  41 82 00 14 */	beq lbl_80040018
+/* 80040008 0003BE48  40 80 01 B0 */	bge lbl_800401B8
+/* 8004000C 0003BE4C  2C 00 00 01 */	cmpwi r0, 1
+/* 80040010 0003BE50  40 80 01 30 */	bge lbl_80040140
+/* 80040014 0003BE54  48 00 01 A4 */	b lbl_800401B8
+lbl_80040018:
+/* 80040018 0003BE58  38 00 00 00 */	li r0, 0
+/* 8004001C 0003BE5C  3C 60 80 04 */	lis r3, lowCallback@ha
+/* 80040020 0003BE60  90 0D 81 D8 */	stw r0, lowDone-_SDA_BASE_(r13)
+/* 80040024 0003BE64  38 63 FF 50 */	addi r3, r3, lowCallback@l
+/* 80040028 0003BE68  48 00 17 39 */	bl DVDLowRequestError
+/* 8004002C 0003BE6C  60 00 00 00 */	nop 
+lbl_80040030:
+/* 80040030 0003BE70  80 0D 81 D8 */	lwz r0, lowDone-_SDA_BASE_(r13)
+/* 80040034 0003BE74  2C 00 00 00 */	cmpwi r0, 0
+/* 80040038 0003BE78  41 82 FF F8 */	beq lbl_80040030
+/* 8004003C 0003BE7C  48 00 26 A5 */	bl DVDLowGetImmBufferReg
+/* 80040040 0003BE80  80 0D E6 F0 */	lwz r0, lowIntType-_SDA_BASE_(r13)
+/* 80040044 0003BE84  2C 00 00 01 */	cmpwi r0, 1
+/* 80040048 0003BE88  41 82 00 08 */	beq lbl_80040050
+/* 8004004C 0003BE8C  48 00 01 6C */	b lbl_800401B8
+lbl_80040050:
+/* 80040050 0003BE90  48 00 26 91 */	bl DVDLowGetImmBufferReg
+/* 80040054 0003BE94  54 60 00 0F */	rlwinm. r0, r3, 0, 0, 7
+/* 80040058 0003BE98  40 82 01 58 */	bne lbl_800401B0
+/* 8004005C 0003BE9C  48 00 26 85 */	bl DVDLowGetImmBufferReg
+/* 80040060 0003BEA0  3C 80 00 05 */	lis r4, 0x00052100@ha
+/* 80040064 0003BEA4  54 63 02 3E */	clrlwi r3, r3, 8
+/* 80040068 0003BEA8  38 04 21 00 */	addi r0, r4, 0x00052100@l
+/* 8004006C 0003BEAC  7C 03 00 00 */	cmpw r3, r0
+/* 80040070 0003BEB0  41 82 00 08 */	beq lbl_80040078
+/* 80040074 0003BEB4  48 00 00 CC */	b lbl_80040140
+lbl_80040078:
+/* 80040078 0003BEB8  38 00 00 00 */	li r0, 0
+/* 8004007C 0003BEBC  3C 60 80 4A */	lis r3, CheckBuffer@ha
+/* 80040080 0003BEC0  3C C0 80 04 */	lis r6, lowCallback@ha
+/* 80040084 0003BEC4  90 0D 81 D8 */	stw r0, lowDone-_SDA_BASE_(r13)
+/* 80040088 0003BEC8  38 63 FD 40 */	addi r3, r3, CheckBuffer@l
+/* 8004008C 0003BECC  3C 80 00 04 */	lis r4, 4
+/* 80040090 0003BED0  38 C6 FF 50 */	addi r6, r6, lowCallback@l
+/* 80040094 0003BED4  38 A0 00 00 */	li r5, 0
+/* 80040098 0003BED8  48 00 1B 69 */	bl DVDLowReportKey
+/* 8004009C 0003BEDC  60 00 00 00 */	nop 
+lbl_800400A0:
+/* 800400A0 0003BEE0  80 0D 81 D8 */	lwz r0, lowDone-_SDA_BASE_(r13)
+/* 800400A4 0003BEE4  2C 00 00 00 */	cmpwi r0, 0
+/* 800400A8 0003BEE8  41 82 FF F8 */	beq lbl_800400A0
+/* 800400AC 0003BEEC  80 0D E6 F0 */	lwz r0, lowIntType-_SDA_BASE_(r13)
+/* 800400B0 0003BEF0  2C 00 00 02 */	cmpwi r0, 2
+/* 800400B4 0003BEF4  41 82 00 14 */	beq lbl_800400C8
+/* 800400B8 0003BEF8  40 80 01 00 */	bge lbl_800401B8
+/* 800400BC 0003BEFC  2C 00 00 01 */	cmpwi r0, 1
+/* 800400C0 0003BF00  40 80 00 80 */	bge lbl_80040140
+/* 800400C4 0003BF04  48 00 00 F4 */	b lbl_800401B8
+lbl_800400C8:
+/* 800400C8 0003BF08  38 00 00 00 */	li r0, 0
+/* 800400CC 0003BF0C  3C 60 80 04 */	lis r3, lowCallback@ha
+/* 800400D0 0003BF10  90 0D 81 D8 */	stw r0, lowDone-_SDA_BASE_(r13)
+/* 800400D4 0003BF14  38 63 FF 50 */	addi r3, r3, lowCallback@l
+/* 800400D8 0003BF18  48 00 16 89 */	bl DVDLowRequestError
+/* 800400DC 0003BF1C  60 00 00 00 */	nop 
+lbl_800400E0:
+/* 800400E0 0003BF20  80 0D 81 D8 */	lwz r0, lowDone-_SDA_BASE_(r13)
+/* 800400E4 0003BF24  2C 00 00 00 */	cmpwi r0, 0
+/* 800400E8 0003BF28  41 82 FF F8 */	beq lbl_800400E0
+/* 800400EC 0003BF2C  48 00 25 F5 */	bl DVDLowGetImmBufferReg
+/* 800400F0 0003BF30  80 0D E6 F0 */	lwz r0, lowIntType-_SDA_BASE_(r13)
+/* 800400F4 0003BF34  2C 00 00 01 */	cmpwi r0, 1
+/* 800400F8 0003BF38  41 82 00 08 */	beq lbl_80040100
+/* 800400FC 0003BF3C  48 00 00 BC */	b lbl_800401B8
+lbl_80040100:
+/* 80040100 0003BF40  48 00 25 E1 */	bl DVDLowGetImmBufferReg
+/* 80040104 0003BF44  54 60 00 0F */	rlwinm. r0, r3, 0, 0, 7
+/* 80040108 0003BF48  40 82 00 A8 */	bne lbl_800401B0
+/* 8004010C 0003BF4C  48 00 25 D5 */	bl DVDLowGetImmBufferReg
+/* 80040110 0003BF50  3C 80 00 05 */	lis r4, 0x00053100@ha
+/* 80040114 0003BF54  54 63 02 3E */	clrlwi r3, r3, 8
+/* 80040118 0003BF58  38 04 31 00 */	addi r0, r4, 0x00053100@l
+/* 8004011C 0003BF5C  7C 03 00 00 */	cmpw r3, r0
+/* 80040120 0003BF60  41 82 00 18 */	beq lbl_80040138
+/* 80040124 0003BF64  40 80 00 1C */	bge lbl_80040140
+/* 80040128 0003BF68  38 04 20 00 */	addi r0, r4, 0x2000
+/* 8004012C 0003BF6C  7C 03 00 00 */	cmpw r3, r0
+/* 80040130 0003BF70  41 82 00 08 */	beq lbl_80040138
+/* 80040134 0003BF74  48 00 00 0C */	b lbl_80040140
+lbl_80040138:
+/* 80040138 0003BF78  38 60 00 01 */	li r3, 1
+/* 8004013C 0003BF7C  48 00 00 84 */	b lbl_800401C0
+lbl_80040140:
+/* 80040140 0003BF80  83 C2 87 20 */	lwz r30, $$2850-_SDA2_BASE_(r2)
+/* 80040144 0003BF84  3B E0 00 00 */	li r31, 0
+/* 80040148 0003BF88  48 00 CC E9 */	bl SCGetLanguage
+/* 8004014C 0003BF8C  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 80040150 0003BF90  40 82 00 10 */	bne lbl_80040160
+/* 80040154 0003BF94  38 60 00 01 */	li r3, 1
+/* 80040158 0003BF98  4B FE 06 79 */	bl OSSetFontEncode
+/* 8004015C 0003BF9C  48 00 00 0C */	b lbl_80040168
+lbl_80040160:
+/* 80040160 0003BFA0  38 60 00 00 */	li r3, 0
+/* 80040164 0003BFA4  4B FE 06 6D */	bl OSSetFontEncode
+lbl_80040168:
+/* 80040168 0003BFA8  3F A0 80 40 */	lis r29, __DVDDeviceErrorMessage@ha
+/* 8004016C 0003BFAC  3B BD 78 88 */	addi r29, r29, __DVDDeviceErrorMessage@l
+/* 80040170 0003BFB0  48 00 CC C1 */	bl SCGetLanguage
+/* 80040174 0003BFB4  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 80040178 0003BFB8  28 00 00 06 */	cmplwi r0, 6
+/* 8004017C 0003BFBC  40 81 00 0C */	ble lbl_80040188
+/* 80040180 0003BFC0  80 BD 00 04 */	lwz r5, 4(r29)
+/* 80040184 0003BFC4  48 00 00 10 */	b lbl_80040194
+lbl_80040188:
+/* 80040188 0003BFC8  48 00 CC A9 */	bl SCGetLanguage
+/* 8004018C 0003BFCC  54 60 15 BA */	rlwinm r0, r3, 2, 0x16, 0x1d
+/* 80040190 0003BFD0  7C BD 00 2E */	lwzx r5, r29, r0
+lbl_80040194:
+/* 80040194 0003BFD4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80040198 0003BFD8  38 81 00 0C */	addi r4, r1, 0xc
+/* 8004019C 0003BFDC  38 61 00 08 */	addi r3, r1, 8
+/* 800401A0 0003BFE0  93 C1 00 08 */	stw r30, 8(r1)
+/* 800401A4 0003BFE4  4B FD FB 0D */	bl OSFatal
+/* 800401A8 0003BFE8  38 60 00 00 */	li r3, 0
+/* 800401AC 0003BFEC  48 00 00 14 */	b lbl_800401C0
+lbl_800401B0:
+/* 800401B0 0003BFF0  38 60 00 00 */	li r3, 0
+/* 800401B4 0003BFF4  48 00 00 0C */	b lbl_800401C0
+lbl_800401B8:
+/* 800401B8 0003BFF8  4B FF FC 29 */	bl __DVDShowFatalMessage
+/* 800401BC 0003BFFC  38 60 00 00 */	li r3, 0
+lbl_800401C0:
+/* 800401C0 0003C000  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 800401C4 0003C004  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 800401C8 0003C008  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 800401CC 0003C00C  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 800401D0 0003C010  7C 08 03 A6 */	mtlr r0
+/* 800401D4 0003C014  38 21 00 30 */	addi r1, r1, 0x30
+/* 800401D8 0003C018  4E 80 00 20 */	blr 
+/* 800401DC 0003C01C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.section .data4, "wa"  # 0x80406560 - 0x80421040
+.global __DVDDeviceErrorMessage
+__DVDDeviceErrorMessage:
+	.incbin "baserom.dol", 0x403988, 0x20
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2835
+$$2835:
+	.incbin "baserom.dol", 0x42DFA0, 0x3C
+.global $$2836
+$$2836:
+	.incbin "baserom.dol", 0x42DFDC, 0x38
+.global $$2837
+$$2837:
+	.incbin "baserom.dol", 0x42E014, 0x40
+.global $$2838
+$$2838:
+	.incbin "baserom.dol", 0x42E054, 0x3C
+.global $$2839
+$$2839:
+	.incbin "baserom.dol", 0x42E090, 0x3C
+.global $$2840
+$$2840:
+	.incbin "baserom.dol", 0x42E0CC, 0x3C
+.global $$2841
+$$2841:
+	.incbin "baserom.dol", 0x42E108, 0x30
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global lowDone
+lowDone:
+	.incbin "baserom.dol", 0x4929D8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$2850
+$$2850:
+	.incbin "baserom.dol", 0x4991E0, 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global CheckBuffer
+CheckBuffer:
+	.skip 0x20
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global lowIntType
+lowIntType:
+	.skip 0x8

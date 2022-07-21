@@ -1,0 +1,132 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Count__Q33scn5comic11PageCounterFPCc
+Count__Q33scn5comic11PageCounterFPCc:
+/* 80200180 001FBFC0  94 21 FD D0 */	stwu r1, -0x230(r1)
+/* 80200184 001FBFC4  7C 08 02 A6 */	mflr r0
+/* 80200188 001FBFC8  90 01 02 34 */	stw r0, 0x234(r1)
+/* 8020018C 001FBFCC  39 61 02 30 */	addi r11, r1, 0x230
+/* 80200190 001FBFD0  4B E0 71 B1 */	bl func_80007340
+/* 80200194 001FBFD4  7C 65 1B 78 */	mr r5, r3
+/* 80200198 001FBFD8  3C 60 80 46 */	lis r3, $$249044@ha
+/* 8020019C 001FBFDC  3B C3 03 28 */	addi r30, r3, $$249044@l
+/* 802001A0 001FBFE0  38 61 01 18 */	addi r3, r1, 0x118
+/* 802001A4 001FBFE4  38 9E 00 00 */	addi r4, r30, 0
+/* 802001A8 001FBFE8  4C C6 31 82 */	crclr 6
+/* 802001AC 001FBFEC  4B F8 69 75 */	bl FromFormat__Q33hel6common19FixedStringIN$$0c$$480$$1FPCce
+/* 802001B0 001FBFF0  38 81 01 18 */	addi r4, r1, 0x118
+/* 802001B4 001FBFF4  38 61 00 08 */	addi r3, r1, 8
+/* 802001B8 001FBFF8  38 A0 00 01 */	li r5, 1
+/* 802001BC 001FBFFC  4B F8 78 95 */	bl __ct__Q24file12FileAccessorFPCcb
+/* 802001C0 001FC000  38 61 01 68 */	addi r3, r1, 0x168
+/* 802001C4 001FC004  4B EF D9 5D */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
+/* 802001C8 001FC008  38 61 00 08 */	addi r3, r1, 8
+/* 802001CC 001FC00C  4B F8 79 0D */	bl block__Q24file12FileAccessorCFv
+/* 802001D0 001FC010  90 81 00 14 */	stw r4, 0x14(r1)
+/* 802001D4 001FC014  90 61 00 10 */	stw r3, 0x10(r1)
+/* 802001D8 001FC018  38 61 01 68 */	addi r3, r1, 0x168
+/* 802001DC 001FC01C  38 AD 9E F0 */	addi r5, r13, $$249045-_SDA_BASE_
+/* 802001E0 001FC020  4B EF D9 A1 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
+/* 802001E4 001FC024  3B A0 00 01 */	li r29, 1
+/* 802001E8 001FC028  3B E0 00 08 */	li r31, 8
+lbl_802001EC:
+/* 802001EC 001FC02C  38 61 00 58 */	addi r3, r1, 0x58
+/* 802001F0 001FC030  38 9E 00 10 */	addi r4, r30, 0x10
+/* 802001F4 001FC034  7F A5 EB 78 */	mr r5, r29
+/* 802001F8 001FC038  4C C6 31 82 */	crclr 6
+/* 802001FC 001FC03C  4B FA D2 91 */	bl FromFormat__Q33hel6common19FixedStringIN$$0c$$464$$1FPCce
+/* 80200200 001FC040  38 A1 00 D4 */	addi r5, r1, 0xd4
+/* 80200204 001FC044  38 81 00 54 */	addi r4, r1, 0x54
+/* 80200208 001FC048  7F E9 03 A6 */	mtctr r31
+lbl_8020020C:
+/* 8020020C 001FC04C  80 64 00 04 */	lwz r3, 4(r4)
+/* 80200210 001FC050  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80200214 001FC054  90 65 00 04 */	stw r3, 4(r5)
+/* 80200218 001FC058  94 05 00 08 */	stwu r0, 8(r5)
+/* 8020021C 001FC05C  42 00 FF F0 */	bdnz lbl_8020020C
+/* 80200220 001FC060  38 61 01 68 */	addi r3, r1, 0x168
+/* 80200224 001FC064  38 80 00 00 */	li r4, 0
+/* 80200228 001FC068  38 A1 00 D8 */	addi r5, r1, 0xd8
+/* 8020022C 001FC06C  38 C0 00 00 */	li r6, 0
+/* 80200230 001FC070  4B EF D9 D1 */	bl GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl
+/* 80200234 001FC074  30 03 FF FF */	addic r0, r3, -1
+/* 80200238 001FC078  7F 80 19 10 */	subfe r28, r0, r3
+/* 8020023C 001FC07C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80200240 001FC080  38 9E 00 20 */	addi r4, r30, 0x20
+/* 80200244 001FC084  7F A5 EB 78 */	mr r5, r29
+/* 80200248 001FC088  4C C6 31 82 */	crclr 6
+/* 8020024C 001FC08C  4B FA D2 41 */	bl FromFormat__Q33hel6common19FixedStringIN$$0c$$464$$1FPCce
+/* 80200250 001FC090  38 A1 00 94 */	addi r5, r1, 0x94
+/* 80200254 001FC094  38 81 00 14 */	addi r4, r1, 0x14
+/* 80200258 001FC098  7F E9 03 A6 */	mtctr r31
+lbl_8020025C:
+/* 8020025C 001FC09C  80 64 00 04 */	lwz r3, 4(r4)
+/* 80200260 001FC0A0  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80200264 001FC0A4  90 65 00 04 */	stw r3, 4(r5)
+/* 80200268 001FC0A8  94 05 00 08 */	stwu r0, 8(r5)
+/* 8020026C 001FC0AC  42 00 FF F0 */	bdnz lbl_8020025C
+/* 80200270 001FC0B0  38 61 01 68 */	addi r3, r1, 0x168
+/* 80200274 001FC0B4  38 80 00 00 */	li r4, 0
+/* 80200278 001FC0B8  38 A1 00 98 */	addi r5, r1, 0x98
+/* 8020027C 001FC0BC  38 C0 00 00 */	li r6, 0
+/* 80200280 001FC0C0  4B EF D9 81 */	bl GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl
+/* 80200284 001FC0C4  30 03 FF FF */	addic r0, r3, -1
+/* 80200288 001FC0C8  7C 00 19 10 */	subfe r0, r0, r3
+/* 8020028C 001FC0CC  7C 1C 00 40 */	cmplw r28, r0
+/* 80200290 001FC0D0  41 82 00 24 */	beq lbl_802002B4
+/* 80200294 001FC0D4  38 61 01 68 */	addi r3, r1, 0x168
+/* 80200298 001FC0D8  38 80 FF FF */	li r4, -1
+/* 8020029C 001FC0DC  4B EF DA 35 */	bl __dt__Q34nw4r3lyt19ArcResourceAccessorFv
+/* 802002A0 001FC0E0  38 61 00 08 */	addi r3, r1, 8
+/* 802002A4 001FC0E4  38 80 FF FF */	li r4, -1
+/* 802002A8 001FC0E8  4B F7 4D 5D */	bl __dt__Q33hel6common31ExplicitSingleton$$0Q23app5Reset$$1Fv
+/* 802002AC 001FC0EC  38 7D FF FF */	addi r3, r29, -1
+/* 802002B0 001FC0F0  48 00 00 5C */	b lbl_8020030C
+lbl_802002B4:
+/* 802002B4 001FC0F4  2C 1C 00 00 */	cmpwi r28, 0
+/* 802002B8 001FC0F8  40 82 00 2C */	bne lbl_802002E4
+/* 802002BC 001FC0FC  2C 00 00 00 */	cmpwi r0, 0
+/* 802002C0 001FC100  40 82 00 24 */	bne lbl_802002E4
+/* 802002C4 001FC104  38 61 01 68 */	addi r3, r1, 0x168
+/* 802002C8 001FC108  38 80 FF FF */	li r4, -1
+/* 802002CC 001FC10C  4B EF DA 05 */	bl __dt__Q34nw4r3lyt19ArcResourceAccessorFv
+/* 802002D0 001FC110  38 61 00 08 */	addi r3, r1, 8
+/* 802002D4 001FC114  38 80 FF FF */	li r4, -1
+/* 802002D8 001FC118  4B F7 4D 2D */	bl __dt__Q33hel6common31ExplicitSingleton$$0Q23app5Reset$$1Fv
+/* 802002DC 001FC11C  38 7D FF FF */	addi r3, r29, -1
+/* 802002E0 001FC120  48 00 00 2C */	b lbl_8020030C
+lbl_802002E4:
+/* 802002E4 001FC124  3B BD 00 01 */	addi r29, r29, 1
+/* 802002E8 001FC128  2C 1D 00 64 */	cmpwi r29, 0x64
+/* 802002EC 001FC12C  41 80 FF 00 */	blt lbl_802001EC
+/* 802002F0 001FC130  38 61 01 68 */	addi r3, r1, 0x168
+/* 802002F4 001FC134  38 80 FF FF */	li r4, -1
+/* 802002F8 001FC138  4B EF D9 D9 */	bl __dt__Q34nw4r3lyt19ArcResourceAccessorFv
+/* 802002FC 001FC13C  38 61 00 08 */	addi r3, r1, 8
+/* 80200300 001FC140  38 80 FF FF */	li r4, -1
+/* 80200304 001FC144  4B F7 4D 01 */	bl __dt__Q33hel6common31ExplicitSingleton$$0Q23app5Reset$$1Fv
+/* 80200308 001FC148  38 60 00 64 */	li r3, 0x64
+lbl_8020030C:
+/* 8020030C 001FC14C  39 61 02 30 */	addi r11, r1, 0x230
+/* 80200310 001FC150  4B E0 70 7D */	bl func_8000738C
+/* 80200314 001FC154  80 01 02 34 */	lwz r0, 0x234(r1)
+/* 80200318 001FC158  7C 08 03 A6 */	mtlr r0
+/* 8020031C 001FC15C  38 21 02 30 */	addi r1, r1, 0x230
+/* 80200320 001FC160  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$249044
+$$249044:
+	.incbin "baserom.dol", 0x45C428, 0x10
+.global $$249046
+$$249046:
+	.incbin "baserom.dol", 0x45C438, 0x10
+.global $$249047
+$$249047:
+	.incbin "baserom.dol", 0x45C448, 0x10
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$249045
+$$249045:
+	.incbin "baserom.dol", 0x4946F0, 0x8

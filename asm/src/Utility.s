@@ -1,0 +1,11339 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc
+t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc:
+/* 80188BF4 00184A34  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 80188BF8 00184A38  7C 08 02 A6 */	mflr r0
+/* 80188BFC 00184A3C  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 80188C00 00184A40  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 80188C04 00184A44  4B E7 E7 3D */	bl func_80007340
+/* 80188C08 00184A48  7C 7C 1B 78 */	mr r28, r3
+/* 80188C0C 00184A4C  7C 9D 23 78 */	mr r29, r4
+/* 80188C10 00184A50  3B C0 00 00 */	li r30, 0
+/* 80188C14 00184A54  48 00 00 1C */	b lbl_80188C30
+lbl_80188C18:
+/* 80188C18 00184A58  7C 60 07 74 */	extsb r0, r3
+/* 80188C1C 00184A5C  2C 00 00 2E */	cmpwi r0, 0x2e
+/* 80188C20 00184A60  40 82 00 08 */	bne lbl_80188C28
+/* 80188C24 00184A64  48 00 00 20 */	b lbl_80188C44
+lbl_80188C28:
+/* 80188C28 00184A68  3B DE 00 01 */	addi r30, r30, 1
+/* 80188C2C 00184A6C  38 84 00 01 */	addi r4, r4, 1
+lbl_80188C30:
+/* 80188C30 00184A70  88 64 00 00 */	lbz r3, 0(r4)
+/* 80188C34 00184A74  7C 60 07 74 */	extsb r0, r3
+/* 80188C38 00184A78  2C 00 00 00 */	cmpwi r0, 0
+/* 80188C3C 00184A7C  40 82 FF DC */	bne lbl_80188C18
+/* 80188C40 00184A80  3B C0 FF FF */	li r30, -1
+lbl_80188C44:
+/* 80188C44 00184A84  2C 1E 00 00 */	cmpwi r30, 0
+/* 80188C48 00184A88  40 80 00 14 */	bge lbl_80188C5C
+/* 80188C4C 00184A8C  7F 83 E3 78 */	mr r3, r28
+/* 80188C50 00184A90  7F A4 EB 78 */	mr r4, r29
+/* 80188C54 00184A94  4B FF AF 5D */	bl __ct__Q33hel6common15FixedString$$080$$1FPCc
+/* 80188C58 00184A98  48 00 00 A4 */	b lbl_80188CFC
+lbl_80188C5C:
+/* 80188C5C 00184A9C  38 61 00 58 */	addi r3, r1, 0x58
+/* 80188C60 00184AA0  7F A4 EB 78 */	mr r4, r29
+/* 80188C64 00184AA4  4B FF AF 4D */	bl __ct__Q33hel6common15FixedString$$080$$1FPCc
+/* 80188C68 00184AA8  38 00 00 00 */	li r0, 0
+/* 80188C6C 00184AAC  3B E1 00 58 */	addi r31, r1, 0x58
+/* 80188C70 00184AB0  7C 1F F1 AE */	stbx r0, r31, r30
+/* 80188C74 00184AB4  4B FF 07 39 */	bl FilePostfix__Q23app6LocaleFv
+/* 80188C78 00184AB8  7C 66 1B 78 */	mr r6, r3
+/* 80188C7C 00184ABC  38 61 00 08 */	addi r3, r1, 8
+/* 80188C80 00184AC0  38 8D 89 00 */	addi r4, r13, $$249660-_SDA_BASE_
+/* 80188C84 00184AC4  7F E5 FB 78 */	mr r5, r31
+/* 80188C88 00184AC8  7C FD F2 14 */	add r7, r29, r30
+/* 80188C8C 00184ACC  4C C6 31 82 */	crclr 6
+/* 80188C90 00184AD0  4B FF DE 91 */	bl FromFormat__Q33hel6common19FixedStringIN$$0c$$480$$1FPCce
+/* 80188C94 00184AD4  38 A1 00 54 */	addi r5, r1, 0x54
+/* 80188C98 00184AD8  38 81 00 04 */	addi r4, r1, 4
+/* 80188C9C 00184ADC  38 00 00 0A */	li r0, 0xa
+/* 80188CA0 00184AE0  7C 09 03 A6 */	mtctr r0
+lbl_80188CA4:
+/* 80188CA4 00184AE4  80 64 00 04 */	lwz r3, 4(r4)
+/* 80188CA8 00184AE8  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80188CAC 00184AEC  90 65 00 04 */	stw r3, 4(r5)
+/* 80188CB0 00184AF0  94 05 00 08 */	stwu r0, 8(r5)
+/* 80188CB4 00184AF4  42 00 FF F0 */	bdnz lbl_80188CA4
+/* 80188CB8 00184AF8  38 61 00 58 */	addi r3, r1, 0x58
+/* 80188CBC 00184AFC  4B EB 0C 65 */	bl DVDConvertPathToEntrynum
+/* 80188CC0 00184B00  2C 03 00 00 */	cmpwi r3, 0
+/* 80188CC4 00184B04  40 80 00 14 */	bge lbl_80188CD8
+/* 80188CC8 00184B08  7F 83 E3 78 */	mr r3, r28
+/* 80188CCC 00184B0C  7F A4 EB 78 */	mr r4, r29
+/* 80188CD0 00184B10  4B FF AE E1 */	bl __ct__Q33hel6common15FixedString$$080$$1FPCc
+/* 80188CD4 00184B14  48 00 00 28 */	b lbl_80188CFC
+lbl_80188CD8:
+/* 80188CD8 00184B18  38 BC FF FC */	addi r5, r28, -4
+/* 80188CDC 00184B1C  38 81 00 54 */	addi r4, r1, 0x54
+/* 80188CE0 00184B20  38 00 00 0A */	li r0, 0xa
+/* 80188CE4 00184B24  7C 09 03 A6 */	mtctr r0
+lbl_80188CE8:
+/* 80188CE8 00184B28  80 64 00 04 */	lwz r3, 4(r4)
+/* 80188CEC 00184B2C  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80188CF0 00184B30  90 65 00 04 */	stw r3, 4(r5)
+/* 80188CF4 00184B34  94 05 00 08 */	stwu r0, 8(r5)
+/* 80188CF8 00184B38  42 00 FF F0 */	bdnz lbl_80188CE8
+lbl_80188CFC:
+/* 80188CFC 00184B3C  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 80188D00 00184B40  4B E7 E6 8D */	bl func_8000738C
+/* 80188D04 00184B44  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 80188D08 00184B48  7C 08 03 A6 */	mtlr r0
+/* 80188D0C 00184B4C  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 80188D10 00184B50  4E 80 00 20 */	blr 
+
+.global LoadFromUsbOrDvd__Q24file7UtilityFPCcRQ23mem10IAllocator
+LoadFromUsbOrDvd__Q24file7UtilityFPCcRQ23mem10IAllocator:
+/* 80188D14 00184B54  48 00 00 04 */	b LoadFromDvd__Q24file7UtilityFPCcRQ23mem10IAllocator
+
+.global LoadFromDvd__Q24file7UtilityFPCcRQ23mem10IAllocator
+LoadFromDvd__Q24file7UtilityFPCcRQ23mem10IAllocator:
+/* 80188D18 00184B58  94 21 FF 00 */	stwu r1, -0x100(r1)
+/* 80188D1C 00184B5C  7C 08 02 A6 */	mflr r0
+/* 80188D20 00184B60  90 01 01 04 */	stw r0, 0x104(r1)
+/* 80188D24 00184B64  39 61 01 00 */	addi r11, r1, 0x100
+/* 80188D28 00184B68  4B E7 E6 01 */	bl func_80007328
+/* 80188D2C 00184B6C  7C 77 1B 78 */	mr r23, r3
+/* 80188D30 00184B70  7C 96 23 78 */	mr r22, r4
+/* 80188D34 00184B74  38 61 00 68 */	addi r3, r1, 0x68
+/* 80188D38 00184B78  4B F9 7A 99 */	bl __ct__Q34nw4r2ut13DvdFileStreamFv
+/* 80188D3C 00184B7C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80188D40 00184B80  7E E4 BB 78 */	mr r4, r23
+/* 80188D44 00184B84  4B FF FE B1 */	bl t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc
+/* 80188D48 00184B88  38 61 00 68 */	addi r3, r1, 0x68
+/* 80188D4C 00184B8C  38 81 00 18 */	addi r4, r1, 0x18
+/* 80188D50 00184B90  4B F9 7D 41 */	bl Open__Q34nw4r2ut13DvdFileStreamFPCc
+/* 80188D54 00184B94  83 A1 00 7C */	lwz r29, 0x7c(r1)
+/* 80188D58 00184B98  38 1D 00 1F */	addi r0, r29, 0x1f
+/* 80188D5C 00184B9C  54 1C 00 34 */	rlwinm r28, r0, 0, 0, 0x1a
+/* 80188D60 00184BA0  7E C3 B3 78 */	mr r3, r22
+/* 80188D64 00184BA4  7F 84 E3 78 */	mr r4, r28
+/* 80188D68 00184BA8  38 A0 00 20 */	li r5, 0x20
+/* 80188D6C 00184BAC  81 83 00 00 */	lwz r12, 0(r3)
+/* 80188D70 00184BB0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 80188D74 00184BB4  7D 89 03 A6 */	mtctr r12
+/* 80188D78 00184BB8  4E 80 04 21 */	bctrl 
+/* 80188D7C 00184BBC  7C 78 1B 78 */	mr r24, r3
+/* 80188D80 00184BC0  48 27 D1 95 */	bl GetCurrentThreadPriority__Q24util6ThreadFv
+/* 80188D84 00184BC4  38 03 FF F0 */	addi r0, r3, -16
+/* 80188D88 00184BC8  7C 00 00 34 */	cntlzw r0, r0
+/* 80188D8C 00184BCC  54 17 D9 7E */	srwi r23, r0, 5
+/* 80188D90 00184BD0  2C 17 00 00 */	cmpwi r23, 0
+/* 80188D94 00184BD4  3F 60 00 02 */	lis r27, 2
+/* 80188D98 00184BD8  41 82 00 08 */	beq lbl_80188DA0
+/* 80188D9C 00184BDC  7F 9B E3 78 */	mr r27, r28
+lbl_80188DA0:
+/* 80188DA0 00184BE0  3A C0 00 00 */	li r22, 0
+/* 80188DA4 00184BE4  3F C0 80 00 */	lis r30, 0x8000
+/* 80188DA8 00184BE8  3B E0 03 E8 */	li r31, 0x3e8
+/* 80188DAC 00184BEC  48 00 00 8C */	b lbl_80188E38
+lbl_80188DB0:
+/* 80188DB0 00184BF0  2C 17 00 00 */	cmpwi r23, 0
+/* 80188DB4 00184BF4  40 82 00 28 */	bne lbl_80188DDC
+/* 80188DB8 00184BF8  48 00 00 18 */	b lbl_80188DD0
+lbl_80188DBC:
+/* 80188DBC 00184BFC  80 1E 00 F8 */	lwz r0, 0xf8(r30)
+/* 80188DC0 00184C00  54 00 F0 BE */	srwi r0, r0, 2
+/* 80188DC4 00184C04  7C 80 FB 96 */	divwu r4, r0, r31
+/* 80188DC8 00184C08  38 60 00 00 */	li r3, 0
+/* 80188DCC 00184C0C  4B E9 CC C5 */	bl OSSleepTicks
+lbl_80188DD0:
+/* 80188DD0 00184C10  4B EB 56 71 */	bl DVDGetDriveStatus
+/* 80188DD4 00184C14  2C 03 00 00 */	cmpwi r3, 0
+/* 80188DD8 00184C18  40 82 FF E4 */	bne lbl_80188DBC
+lbl_80188DDC:
+/* 80188DDC 00184C1C  7C 16 DA 14 */	add r0, r22, r27
+/* 80188DE0 00184C20  7C 1C 00 40 */	cmplw r28, r0
+/* 80188DE4 00184C24  7F 7A DB 78 */	mr r26, r27
+/* 80188DE8 00184C28  40 80 00 08 */	bge lbl_80188DF0
+/* 80188DEC 00184C2C  7F 56 E0 50 */	subf r26, r22, r28
+lbl_80188DF0:
+/* 80188DF0 00184C30  7F 38 B2 14 */	add r25, r24, r22
+lbl_80188DF4:
+/* 80188DF4 00184C34  38 61 00 68 */	addi r3, r1, 0x68
+/* 80188DF8 00184C38  7F 24 CB 78 */	mr r4, r25
+/* 80188DFC 00184C3C  7F 45 D3 78 */	mr r5, r26
+/* 80188E00 00184C40  4B F9 7D 81 */	bl Read__Q34nw4r2ut13DvdFileStreamFPvUl
+/* 80188E04 00184C44  2C 03 00 00 */	cmpwi r3, 0
+/* 80188E08 00184C48  40 80 00 2C */	bge lbl_80188E34
+/* 80188E0C 00184C4C  48 00 00 18 */	b lbl_80188E24
+lbl_80188E10:
+/* 80188E10 00184C50  80 1E 00 F8 */	lwz r0, 0xf8(r30)
+/* 80188E14 00184C54  54 00 F0 BE */	srwi r0, r0, 2
+/* 80188E18 00184C58  7C 80 FB 96 */	divwu r4, r0, r31
+/* 80188E1C 00184C5C  38 60 00 00 */	li r3, 0
+/* 80188E20 00184C60  4B E9 CC 71 */	bl OSSleepTicks
+lbl_80188E24:
+/* 80188E24 00184C64  4B EB 56 1D */	bl DVDGetDriveStatus
+/* 80188E28 00184C68  2C 03 00 00 */	cmpwi r3, 0
+/* 80188E2C 00184C6C  40 82 FF E4 */	bne lbl_80188E10
+/* 80188E30 00184C70  4B FF FF C4 */	b lbl_80188DF4
+lbl_80188E34:
+/* 80188E34 00184C74  7E D6 DA 14 */	add r22, r22, r27
+lbl_80188E38:
+/* 80188E38 00184C78  7C 16 E8 40 */	cmplw r22, r29
+/* 80188E3C 00184C7C  41 80 FF 74 */	blt lbl_80188DB0
+/* 80188E40 00184C80  38 61 00 68 */	addi r3, r1, 0x68
+/* 80188E44 00184C84  4B F9 7C ED */	bl Close__Q34nw4r2ut13DvdFileStreamFv
+/* 80188E48 00184C88  38 61 00 08 */	addi r3, r1, 8
+/* 80188E4C 00184C8C  7F 04 C3 78 */	mr r4, r24
+/* 80188E50 00184C90  7F A5 EB 78 */	mr r5, r29
+/* 80188E54 00184C94  48 03 63 99 */	bl __ct__Q23mem8MemBlockFPvUl
+/* 80188E58 00184C98  80 83 00 00 */	lwz r4, 0(r3)
+/* 80188E5C 00184C9C  80 03 00 04 */	lwz r0, 4(r3)
+/* 80188E60 00184CA0  90 81 00 10 */	stw r4, 0x10(r1)
+/* 80188E64 00184CA4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80188E68 00184CA8  38 61 00 68 */	addi r3, r1, 0x68
+/* 80188E6C 00184CAC  38 80 FF FF */	li r4, -1
+/* 80188E70 00184CB0  4B F9 7B A1 */	bl __dt__Q34nw4r2ut13DvdFileStreamFv
+/* 80188E74 00184CB4  80 61 00 10 */	lwz r3, 0x10(r1)
+/* 80188E78 00184CB8  80 81 00 14 */	lwz r4, 0x14(r1)
+/* 80188E7C 00184CBC  39 61 01 00 */	addi r11, r1, 0x100
+/* 80188E80 00184CC0  4B E7 E4 F5 */	bl func_80007374
+/* 80188E84 00184CC4  80 01 01 04 */	lwz r0, 0x104(r1)
+/* 80188E88 00184CC8  7C 08 03 A6 */	mtlr r0
+/* 80188E8C 00184CCC  38 21 01 00 */	addi r1, r1, 0x100
+/* 80188E90 00184CD0  4E 80 00 20 */	blr 
+
+.global IsExistFileOnUsbOrDvd__Q24file7UtilityFPCc
+IsExistFileOnUsbOrDvd__Q24file7UtilityFPCc:
+/* 80188E94 00184CD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80188E98 00184CD8  7C 08 02 A6 */	mflr r0
+/* 80188E9C 00184CDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80188EA0 00184CE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80188EA4 00184CE4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80188EA8 00184CE8  7C 7E 1B 78 */	mr r30, r3
+/* 80188EAC 00184CEC  3B E0 00 00 */	li r31, 0
+/* 80188EB0 00184CF0  48 00 00 69 */	bl IsExistFileOnDvd__Q24file7UtilityFPCc
+/* 80188EB4 00184CF4  2C 03 00 00 */	cmpwi r3, 0
+/* 80188EB8 00184CF8  40 82 00 14 */	bne lbl_80188ECC
+/* 80188EBC 00184CFC  7F C3 F3 78 */	mr r3, r30
+/* 80188EC0 00184D00  48 00 00 2D */	bl IsExistFileOnUsb__Q24file7UtilityFPCc
+/* 80188EC4 00184D04  2C 03 00 00 */	cmpwi r3, 0
+/* 80188EC8 00184D08  41 82 00 08 */	beq lbl_80188ED0
+lbl_80188ECC:
+/* 80188ECC 00184D0C  3B E0 00 01 */	li r31, 1
+lbl_80188ED0:
+/* 80188ED0 00184D10  7F E3 FB 78 */	mr r3, r31
+/* 80188ED4 00184D14  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80188ED8 00184D18  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80188EDC 00184D1C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80188EE0 00184D20  7C 08 03 A6 */	mtlr r0
+/* 80188EE4 00184D24  38 21 00 10 */	addi r1, r1, 0x10
+/* 80188EE8 00184D28  4E 80 00 20 */	blr 
+
+.global IsExistFileOnUsb__Q24file7UtilityFPCc
+IsExistFileOnUsb__Q24file7UtilityFPCc:
+/* 80188EEC 00184D2C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80188EF0 00184D30  7C 08 02 A6 */	mflr r0
+/* 80188EF4 00184D34  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80188EF8 00184D38  38 80 00 01 */	li r4, 1
+/* 80188EFC 00184D3C  4B EC AE F5 */	bl __wpadNoAlloc
+/* 80188F00 00184D40  30 03 FF FF */	addic r0, r3, -1
+/* 80188F04 00184D44  7C 60 19 10 */	subfe r3, r0, r3
+/* 80188F08 00184D48  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80188F0C 00184D4C  7C 08 03 A6 */	mtlr r0
+/* 80188F10 00184D50  38 21 00 10 */	addi r1, r1, 0x10
+/* 80188F14 00184D54  4E 80 00 20 */	blr 
+
+.global IsExistFileOnDvd__Q24file7UtilityFPCc
+IsExistFileOnDvd__Q24file7UtilityFPCc:
+/* 80188F18 00184D58  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 80188F1C 00184D5C  7C 08 02 A6 */	mflr r0
+/* 80188F20 00184D60  90 01 00 64 */	stw r0, 0x64(r1)
+/* 80188F24 00184D64  7C 64 1B 78 */	mr r4, r3
+/* 80188F28 00184D68  38 61 00 08 */	addi r3, r1, 8
+/* 80188F2C 00184D6C  4B FF FC C9 */	bl t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc
+/* 80188F30 00184D70  38 61 00 08 */	addi r3, r1, 8
+/* 80188F34 00184D74  4B EB 09 ED */	bl DVDConvertPathToEntrynum
+/* 80188F38 00184D78  38 63 00 01 */	addi r3, r3, 1
+/* 80188F3C 00184D7C  30 03 FF FF */	addic r0, r3, -1
+/* 80188F40 00184D80  7C 60 19 10 */	subfe r3, r0, r3
+/* 80188F44 00184D84  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 80188F48 00184D88  7C 08 03 A6 */	mtlr r0
+/* 80188F4C 00184D8C  38 21 00 60 */	addi r1, r1, 0x60
+/* 80188F50 00184D90  4E 80 00 20 */	blr 
+
+.global IsFileLoadWarningEnable__Q24file7UtilityFv
+IsFileLoadWarningEnable__Q24file7UtilityFv:
+/* 80188F54 00184D94  88 6D ED 60 */	lbz r3, t_isFileLoadWarningEnable__Q24file21$$2unnamed$$2Utility_cpp$$2-_SDA_BASE_(r13)
+/* 80188F58 00184D98  4E 80 00 20 */	blr 
+
+.global SetIsFileLoadWarningEnable__Q24file7UtilityFb
+SetIsFileLoadWarningEnable__Q24file7UtilityFb:
+/* 80188F5C 00184D9C  98 6D ED 60 */	stb r3, t_isFileLoadWarningEnable__Q24file21$$2unnamed$$2Utility_cpp$$2-_SDA_BASE_(r13)
+/* 80188F60 00184DA0  4E 80 00 20 */	blr 
+
+.global DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1b
+DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1b:
+/* 80188F64 00184DA4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80188F68 00184DA8  7C 08 02 A6 */	mflr r0
+/* 80188F6C 00184DAC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80188F70 00184DB0  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80188F74 00184DB4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80188F78 00184DB8  7C 7E 1B 78 */	mr r30, r3
+/* 80188F7C 00184DBC  7C 9F 23 78 */	mr r31, r4
+/* 80188F80 00184DC0  38 61 00 08 */	addi r3, r1, 8
+/* 80188F84 00184DC4  4B FF E5 B5 */	bl __ct__Q24file8DNOptionFv
+/* 80188F88 00184DC8  7C 64 1B 78 */	mr r4, r3
+/* 80188F8C 00184DCC  7F C3 F3 78 */	mr r3, r30
+/* 80188F90 00184DD0  7F E5 FB 78 */	mr r5, r31
+/* 80188F94 00184DD4  48 00 00 1D */	bl DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1RCQ24file8DNOptionb
+/* 80188F98 00184DD8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80188F9C 00184DDC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80188FA0 00184DE0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80188FA4 00184DE4  7C 08 03 A6 */	mtlr r0
+/* 80188FA8 00184DE8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80188FAC 00184DEC  4E 80 00 20 */	blr 
+
+.global DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1RCQ24file8DNOptionb
+DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1RCQ24file8DNOptionb:
+/* 80188FB0 00184DF0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80188FB4 00184DF4  7C 08 02 A6 */	mflr r0
+/* 80188FB8 00184DF8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80188FBC 00184DFC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80188FC0 00184E00  4B E7 E3 7D */	bl func_8000733C
+/* 80188FC4 00184E04  7C 7B 1B 78 */	mr r27, r3
+/* 80188FC8 00184E08  7C 9C 23 78 */	mr r28, r4
+/* 80188FCC 00184E0C  7C BD 2B 78 */	mr r29, r5
+/* 80188FD0 00184E10  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 80188FD4 00184E14  4B FE D4 91 */	bl fdgManager__Q23app11ApplicationFv
+/* 80188FD8 00184E18  7C 7F 1B 78 */	mr r31, r3
+/* 80188FDC 00184E1C  3B C0 00 00 */	li r30, 0
+/* 80188FE0 00184E20  48 00 00 24 */	b lbl_80189004
+lbl_80188FE4:
+/* 80188FE4 00184E24  7F 63 DB 78 */	mr r3, r27
+/* 80188FE8 00184E28  7F C4 F3 78 */	mr r4, r30
+/* 80188FEC 00184E2C  48 00 00 A9 */	bl __vc__Q33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1CFUl
+/* 80188FF0 00184E30  7C 64 1B 78 */	mr r4, r3
+/* 80188FF4 00184E34  7F E3 FB 78 */	mr r3, r31
+/* 80188FF8 00184E38  7F 85 E3 78 */	mr r5, r28
+/* 80188FFC 00184E3C  4B FF E8 A5 */	bl keep__Q24file10FDGManagerFPCcRCQ24file8DNOption
+/* 80189000 00184E40  3B DE 00 01 */	addi r30, r30, 1
+lbl_80189004:
+/* 80189004 00184E44  80 1B 00 00 */	lwz r0, 0(r27)
+/* 80189008 00184E48  7C 1E 00 40 */	cmplw r30, r0
+/* 8018900C 00184E4C  41 80 FF D8 */	blt lbl_80188FE4
+/* 80189010 00184E50  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 80189014 00184E54  4B FE D4 75 */	bl fileManager__Q23app11ApplicationFv
+/* 80189018 00184E58  4B FF F2 8D */	bl clearFiles__Q24file11FileManagerFv
+/* 8018901C 00184E5C  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
+/* 80189020 00184E60  48 03 65 E1 */	bl externalHeap__Q23mem6MemoryFv
+/* 80189024 00184E64  48 03 47 99 */	bl compaction__Q23mem14HeapCompactionFv
+/* 80189028 00184E68  3B C0 00 00 */	li r30, 0
+/* 8018902C 00184E6C  48 00 00 24 */	b lbl_80189050
+lbl_80189030:
+/* 80189030 00184E70  7F 63 DB 78 */	mr r3, r27
+/* 80189034 00184E74  7F C4 F3 78 */	mr r4, r30
+/* 80189038 00184E78  48 00 00 5D */	bl __vc__Q33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1CFUl
+/* 8018903C 00184E7C  7C 64 1B 78 */	mr r4, r3
+/* 80189040 00184E80  7F E3 FB 78 */	mr r3, r31
+/* 80189044 00184E84  7F 85 E3 78 */	mr r5, r28
+/* 80189048 00184E88  4B FF E7 E9 */	bl load__Q24file10FDGManagerFPCcRCQ24file8DNOption
+/* 8018904C 00184E8C  3B DE 00 01 */	addi r30, r30, 1
+lbl_80189050:
+/* 80189050 00184E90  80 1B 00 00 */	lwz r0, 0(r27)
+/* 80189054 00184E94  7C 1E 00 40 */	cmplw r30, r0
+/* 80189058 00184E98  41 80 FF D8 */	blt lbl_80189030
+/* 8018905C 00184E9C  2C 1D 00 00 */	cmpwi r29, 0
+/* 80189060 00184EA0  41 82 00 1C */	beq lbl_8018907C
+/* 80189064 00184EA4  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 80189068 00184EA8  4B FE D5 C9 */	bl preLoadManager__Q23app11ApplicationFv
+/* 8018906C 00184EAC  48 05 64 E5 */	bl reset__Q27preload14PreLoadManagerFv
+/* 80189070 00184EB0  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
+/* 80189074 00184EB4  48 03 65 8D */	bl externalHeap__Q23mem6MemoryFv
+/* 80189078 00184EB8  48 03 47 45 */	bl compaction__Q23mem14HeapCompactionFv
+lbl_8018907C:
+/* 8018907C 00184EBC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80189080 00184EC0  4B E7 E3 09 */	bl func_80007388
+/* 80189084 00184EC4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80189088 00184EC8  7C 08 03 A6 */	mtlr r0
+/* 8018908C 00184ECC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80189090 00184ED0  4E 80 00 20 */	blr 
+
+.global __vc__Q33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1CFUl
+__vc__Q33hel6common47MutableArray$$0Q33hel6common15FixedString$$064$$1$$424$$1CFUl:
+/* 80189094 00184ED4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80189098 00184ED8  7C 08 02 A6 */	mflr r0
+/* 8018909C 00184EDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801890A0 00184EE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801890A4 00184EE4  93 C1 00 08 */	stw r30, 8(r1)
+/* 801890A8 00184EE8  7C 7E 1B 78 */	mr r30, r3
+/* 801890AC 00184EEC  7C 9F 23 78 */	mr r31, r4
+/* 801890B0 00184EF0  7F E3 FB 78 */	mr r3, r31
+/* 801890B4 00184EF4  80 9E 00 00 */	lwz r4, 0(r30)
+/* 801890B8 00184EF8  4B E9 B3 E9 */	bl DefaultSwitchThreadCallback
+/* 801890BC 00184EFC  7F E3 FB 78 */	mr r3, r31
+/* 801890C0 00184F00  38 80 00 18 */	li r4, 0x18
+/* 801890C4 00184F04  4B E9 B3 DD */	bl DefaultSwitchThreadCallback
+/* 801890C8 00184F08  57 E0 30 32 */	slwi r0, r31, 6
+/* 801890CC 00184F0C  7C 7E 02 14 */	add r3, r30, r0
+/* 801890D0 00184F10  38 63 00 04 */	addi r3, r3, 4
+/* 801890D4 00184F14  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801890D8 00184F18  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801890DC 00184F1C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801890E0 00184F20  7C 08 03 A6 */	mtlr r0
+/* 801890E4 00184F24  38 21 00 10 */	addi r1, r1, 0x10
+/* 801890E8 00184F28  4E 80 00 20 */	blr 
+
+.global UncompressedFile__Q24file7UtilityFRCQ23mem8MemBlockRQ23mem10IAllocator
+UncompressedFile__Q24file7UtilityFRCQ23mem8MemBlockRQ23mem10IAllocator:
+/* 801890EC 00184F2C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801890F0 00184F30  7C 08 02 A6 */	mflr r0
+/* 801890F4 00184F34  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801890F8 00184F38  39 61 00 20 */	addi r11, r1, 0x20
+/* 801890FC 00184F3C  4B E7 E2 49 */	bl func_80007344
+/* 80189100 00184F40  7C 7D 1B 78 */	mr r29, r3
+/* 80189104 00184F44  7C 9E 23 78 */	mr r30, r4
+/* 80189108 00184F48  80 63 00 04 */	lwz r3, 4(r3)
+/* 8018910C 00184F4C  4B EB DF 85 */	bl CXGetUncompressedSize
+/* 80189110 00184F50  7C 7F 1B 78 */	mr r31, r3
+/* 80189114 00184F54  7F C3 F3 78 */	mr r3, r30
+/* 80189118 00184F58  7F E4 FB 78 */	mr r4, r31
+/* 8018911C 00184F5C  38 A0 00 20 */	li r5, 0x20
+/* 80189120 00184F60  81 83 00 00 */	lwz r12, 0(r3)
+/* 80189124 00184F64  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 80189128 00184F68  7D 89 03 A6 */	mtctr r12
+/* 8018912C 00184F6C  4E 80 04 21 */	bctrl 
+/* 80189130 00184F70  7C 64 1B 78 */	mr r4, r3
+/* 80189134 00184F74  38 61 00 08 */	addi r3, r1, 8
+/* 80189138 00184F78  7F E5 FB 78 */	mr r5, r31
+/* 8018913C 00184F7C  48 03 60 B1 */	bl __ct__Q23mem8MemBlockFPvUl
+/* 80189140 00184F80  80 7D 00 04 */	lwz r3, 4(r29)
+/* 80189144 00184F84  80 9D 00 00 */	lwz r4, 0(r29)
+/* 80189148 00184F88  80 A1 00 0C */	lwz r5, 0xc(r1)
+/* 8018914C 00184F8C  4B EB DF 85 */	bl CXSecureUncompressLZ
+/* 80189150 00184F90  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 80189154 00184F94  80 81 00 08 */	lwz r4, 8(r1)
+/* 80189158 00184F98  4B E9 38 B9 */	bl DCStoreRangeNoSync
+/* 8018915C 00184F9C  80 61 00 08 */	lwz r3, 8(r1)
+/* 80189160 00184FA0  80 81 00 0C */	lwz r4, 0xc(r1)
+/* 80189164 00184FA4  39 61 00 20 */	addi r11, r1, 0x20
+/* 80189168 00184FA8  4B E7 E2 29 */	bl func_80007390
+/* 8018916C 00184FAC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80189170 00184FB0  7C 08 03 A6 */	mtlr r0
+/* 80189174 00184FB4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80189178 00184FB8  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global SetupGXForLayout2D__Q23gfx7UtilityFff
+SetupGXForLayout2D__Q23gfx7UtilityFff:
+/* 801974C0 00193300  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 801974C4 00193304  7C 08 02 A6 */	mflr r0
+/* 801974C8 00193308  90 01 00 54 */	stw r0, 0x54(r1)
+/* 801974CC 0019330C  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 801974D0 00193310  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 801974D4 00193314  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 801974D8 00193318  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 801974DC 0019331C  DB A1 00 20 */	stfd f29, 0x20(r1)
+/* 801974E0 00193320  F3 A1 00 28 */	psq_st f29, 40(r1), 0, qr0
+/* 801974E4 00193324  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 801974E8 00193328  FF A0 08 90 */	fmr f29, f1
+/* 801974EC 0019332C  FF C0 10 90 */	fmr f30, f2
+/* 801974F0 00193330  48 00 02 A1 */	bl CurrentGameHeight__Q23gfx7UtilityFv
+/* 801974F4 00193334  C8 22 97 D8 */	lfd f1, $$251743-_SDA2_BASE_(r2)
+/* 801974F8 00193338  90 61 00 0C */	stw r3, 0xc(r1)
+/* 801974FC 0019333C  3F E0 43 30 */	lis r31, 0x4330
+/* 80197500 00193340  93 E1 00 08 */	stw r31, 8(r1)
+/* 80197504 00193344  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80197508 00193348  EF E0 08 28 */	fsubs f31, f0, f1
+/* 8019750C 0019334C  48 00 02 59 */	bl CurrentGameWidth__Q23gfx7UtilityFv
+/* 80197510 00193350  C8 22 97 D8 */	lfd f1, $$251743-_SDA2_BASE_(r2)
+/* 80197514 00193354  90 61 00 14 */	stw r3, 0x14(r1)
+/* 80197518 00193358  93 E1 00 10 */	stw r31, 0x10(r1)
+/* 8019751C 0019335C  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80197520 00193360  EC 20 08 28 */	fsubs f1, f0, f1
+/* 80197524 00193364  FC 40 F8 90 */	fmr f2, f31
+/* 80197528 00193368  FC 60 E8 90 */	fmr f3, f29
+/* 8019752C 0019336C  FC 80 F0 90 */	fmr f4, f30
+/* 80197530 00193370  48 00 00 3D */	bl SetupGXForLayout2D__Q23gfx7UtilityFffff
+/* 80197534 00193374  38 00 00 48 */	li r0, 0x48
+/* 80197538 00193378  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8019753C 0019337C  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 80197540 00193380  38 00 00 38 */	li r0, 0x38
+/* 80197544 00193384  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80197548 00193388  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 8019754C 0019338C  38 00 00 28 */	li r0, 0x28
+/* 80197550 00193390  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 80197554 00193394  CB A1 00 20 */	lfd f29, 0x20(r1)
+/* 80197558 00193398  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8019755C 0019339C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80197560 001933A0  7C 08 03 A6 */	mtlr r0
+/* 80197564 001933A4  38 21 00 50 */	addi r1, r1, 0x50
+/* 80197568 001933A8  4E 80 00 20 */	blr 
+
+.global SetupGXForLayout2D__Q23gfx7UtilityFffff
+SetupGXForLayout2D__Q23gfx7UtilityFffff:
+/* 8019756C 001933AC  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 80197570 001933B0  7C 08 02 A6 */	mflr r0
+/* 80197574 001933B4  90 01 00 84 */	stw r0, 0x84(r1)
+/* 80197578 001933B8  FC A0 18 90 */	fmr f5, f3
+/* 8019757C 001933BC  FC C0 20 90 */	fmr f6, f4
+/* 80197580 001933C0  C0 02 97 E0 */	lfs f0, $$251748-_SDA2_BASE_(r2)
+/* 80197584 001933C4  EC 60 00 72 */	fmuls f3, f0, f1
+/* 80197588 001933C8  EC 40 00 B2 */	fmuls f2, f0, f2
+/* 8019758C 001933CC  38 61 00 20 */	addi r3, r1, 0x20
+/* 80197590 001933D0  FC 20 18 50 */	fneg f1, f3
+/* 80197594 001933D4  FC 80 10 50 */	fneg f4, f2
+/* 80197598 001933D8  4B FB 4E A9 */	bl create__Q34nrel8ezrender18OrthoCameraSettingFffffff
+/* 8019759C 001933DC  38 A1 00 34 */	addi r5, r1, 0x34
+/* 801975A0 001933E0  38 81 00 1C */	addi r4, r1, 0x1c
+/* 801975A4 001933E4  38 00 00 03 */	li r0, 3
+/* 801975A8 001933E8  7C 09 03 A6 */	mtctr r0
+lbl_801975AC:
+/* 801975AC 001933EC  80 64 00 04 */	lwz r3, 4(r4)
+/* 801975B0 001933F0  84 04 00 08 */	lwzu r0, 8(r4)
+/* 801975B4 001933F4  90 65 00 04 */	stw r3, 4(r5)
+/* 801975B8 001933F8  94 05 00 08 */	stwu r0, 8(r5)
+/* 801975BC 001933FC  42 00 FF F0 */	bdnz lbl_801975AC
+/* 801975C0 00193400  38 61 00 50 */	addi r3, r1, 0x50
+/* 801975C4 00193404  4B FB 4D 39 */	bl __ct__Q34nrel8ezrender14GXSettingFor2DFv
+/* 801975C8 00193408  38 61 00 50 */	addi r3, r1, 0x50
+/* 801975CC 0019340C  38 81 00 38 */	addi r4, r1, 0x38
+/* 801975D0 00193410  4B FB 4E 09 */	bl setOrthoCameraSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender18OrthoCameraSetting
+/* 801975D4 00193414  38 61 00 08 */	addi r3, r1, 8
+/* 801975D8 00193418  80 8D ED 90 */	lwz r4, object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1-_SDA_BASE_(r13)
+/* 801975DC 0019341C  4B FF F4 35 */	bl nrelViewportSetting__Q23gfx13RenderSettingCFv
+/* 801975E0 00193420  38 61 00 50 */	addi r3, r1, 0x50
+/* 801975E4 00193424  38 81 00 08 */	addi r4, r1, 8
+/* 801975E8 00193428  4B FB 4E 51 */	bl setViewportSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender15ViewportSetting
+/* 801975EC 0019342C  38 61 00 50 */	addi r3, r1, 0x50
+/* 801975F0 00193430  4B FB 4E BD */	bl setupGX__Q34nrel8ezrender8Render2DFRCQ34nrel8ezrender14GXSettingFor2D
+/* 801975F4 00193434  38 61 00 50 */	addi r3, r1, 0x50
+/* 801975F8 00193438  38 80 FF FF */	li r4, -1
+/* 801975FC 0019343C  4B FD E5 6D */	bl __dt__Q23scn6ISceneFv
+/* 80197600 00193440  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 80197604 00193444  7C 08 03 A6 */	mtlr r0
+/* 80197608 00193448  38 21 00 80 */	addi r1, r1, 0x80
+/* 8019760C 0019344C  4E 80 00 20 */	blr 
+
+.global SetupGXForScreen2D__Q23gfx7UtilityFff
+SetupGXForScreen2D__Q23gfx7UtilityFff:
+/* 80197610 00193450  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80197614 00193454  7C 08 02 A6 */	mflr r0
+/* 80197618 00193458  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8019761C 0019345C  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 80197620 00193460  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 80197624 00193464  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 80197628 00193468  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 8019762C 0019346C  DB A1 00 20 */	stfd f29, 0x20(r1)
+/* 80197630 00193470  F3 A1 00 28 */	psq_st f29, 40(r1), 0, qr0
+/* 80197634 00193474  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80197638 00193478  FF A0 08 90 */	fmr f29, f1
+/* 8019763C 0019347C  FF C0 10 90 */	fmr f30, f2
+/* 80197640 00193480  48 00 01 51 */	bl CurrentGameHeight__Q23gfx7UtilityFv
+/* 80197644 00193484  C8 22 97 D8 */	lfd f1, $$251743-_SDA2_BASE_(r2)
+/* 80197648 00193488  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8019764C 0019348C  3F E0 43 30 */	lis r31, 0x4330
+/* 80197650 00193490  93 E1 00 08 */	stw r31, 8(r1)
+/* 80197654 00193494  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80197658 00193498  EF E0 08 28 */	fsubs f31, f0, f1
+/* 8019765C 0019349C  48 00 01 09 */	bl CurrentGameWidth__Q23gfx7UtilityFv
+/* 80197660 001934A0  C8 22 97 D8 */	lfd f1, $$251743-_SDA2_BASE_(r2)
+/* 80197664 001934A4  90 61 00 14 */	stw r3, 0x14(r1)
+/* 80197668 001934A8  93 E1 00 10 */	stw r31, 0x10(r1)
+/* 8019766C 001934AC  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80197670 001934B0  EC 20 08 28 */	fsubs f1, f0, f1
+/* 80197674 001934B4  FC 40 F8 90 */	fmr f2, f31
+/* 80197678 001934B8  FC 60 E8 90 */	fmr f3, f29
+/* 8019767C 001934BC  FC 80 F0 90 */	fmr f4, f30
+/* 80197680 001934C0  48 00 00 3D */	bl SetupGXForScreen2D__Q23gfx7UtilityFffff
+/* 80197684 001934C4  38 00 00 48 */	li r0, 0x48
+/* 80197688 001934C8  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8019768C 001934CC  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 80197690 001934D0  38 00 00 38 */	li r0, 0x38
+/* 80197694 001934D4  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80197698 001934D8  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 8019769C 001934DC  38 00 00 28 */	li r0, 0x28
+/* 801976A0 001934E0  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 801976A4 001934E4  CB A1 00 20 */	lfd f29, 0x20(r1)
+/* 801976A8 001934E8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801976AC 001934EC  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 801976B0 001934F0  7C 08 03 A6 */	mtlr r0
+/* 801976B4 001934F4  38 21 00 50 */	addi r1, r1, 0x50
+/* 801976B8 001934F8  4E 80 00 20 */	blr 
+
+.global SetupGXForScreen2D__Q23gfx7UtilityFffff
+SetupGXForScreen2D__Q23gfx7UtilityFffff:
+/* 801976BC 001934FC  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 801976C0 00193500  7C 08 02 A6 */	mflr r0
+/* 801976C4 00193504  90 01 00 84 */	stw r0, 0x84(r1)
+/* 801976C8 00193508  FC A0 18 90 */	fmr f5, f3
+/* 801976CC 0019350C  FC C0 20 90 */	fmr f6, f4
+/* 801976D0 00193510  FC 60 08 90 */	fmr f3, f1
+/* 801976D4 00193514  FC 80 10 90 */	fmr f4, f2
+/* 801976D8 00193518  38 61 00 20 */	addi r3, r1, 0x20
+/* 801976DC 0019351C  C0 22 97 E4 */	lfs f1, $$251755-_SDA2_BASE_(r2)
+/* 801976E0 00193520  FC 40 08 90 */	fmr f2, f1
+/* 801976E4 00193524  4B FB 4D 5D */	bl create__Q34nrel8ezrender18OrthoCameraSettingFffffff
+/* 801976E8 00193528  38 A1 00 34 */	addi r5, r1, 0x34
+/* 801976EC 0019352C  38 81 00 1C */	addi r4, r1, 0x1c
+/* 801976F0 00193530  38 00 00 03 */	li r0, 3
+/* 801976F4 00193534  7C 09 03 A6 */	mtctr r0
+lbl_801976F8:
+/* 801976F8 00193538  80 64 00 04 */	lwz r3, 4(r4)
+/* 801976FC 0019353C  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80197700 00193540  90 65 00 04 */	stw r3, 4(r5)
+/* 80197704 00193544  94 05 00 08 */	stwu r0, 8(r5)
+/* 80197708 00193548  42 00 FF F0 */	bdnz lbl_801976F8
+/* 8019770C 0019354C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80197710 00193550  4B FB 4B ED */	bl __ct__Q34nrel8ezrender14GXSettingFor2DFv
+/* 80197714 00193554  38 61 00 50 */	addi r3, r1, 0x50
+/* 80197718 00193558  38 81 00 38 */	addi r4, r1, 0x38
+/* 8019771C 0019355C  4B FB 4C BD */	bl setOrthoCameraSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender18OrthoCameraSetting
+/* 80197720 00193560  38 61 00 08 */	addi r3, r1, 8
+/* 80197724 00193564  80 8D ED 90 */	lwz r4, object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1-_SDA_BASE_(r13)
+/* 80197728 00193568  4B FF F2 E9 */	bl nrelViewportSetting__Q23gfx13RenderSettingCFv
+/* 8019772C 0019356C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80197730 00193570  38 81 00 08 */	addi r4, r1, 8
+/* 80197734 00193574  4B FB 4D 05 */	bl setViewportSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender15ViewportSetting
+/* 80197738 00193578  38 61 00 50 */	addi r3, r1, 0x50
+/* 8019773C 0019357C  4B FB 4D 71 */	bl setupGX__Q34nrel8ezrender8Render2DFRCQ34nrel8ezrender14GXSettingFor2D
+/* 80197740 00193580  38 61 00 50 */	addi r3, r1, 0x50
+/* 80197744 00193584  38 80 FF FF */	li r4, -1
+/* 80197748 00193588  4B FD E4 21 */	bl __dt__Q23scn6ISceneFv
+/* 8019774C 0019358C  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 80197750 00193590  7C 08 03 A6 */	mtlr r0
+/* 80197754 00193594  38 21 00 80 */	addi r1, r1, 0x80
+/* 80197758 00193598  4E 80 00 20 */	blr 
+
+.global SetViewPort__Q23gfx7UtilityFffff
+SetViewPort__Q23gfx7UtilityFffff:
+/* 8019775C 0019359C  80 6D ED 90 */	lwz r3, object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1-_SDA_BASE_(r13)
+/* 80197760 001935A0  4B FF F2 00 */	b setViewportValue__Q23gfx13RenderSettingFffff
+
+.global CurrentGameWidth__Q23gfx7UtilityFv
+CurrentGameWidth__Q23gfx7UtilityFv:
+/* 80197764 001935A4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80197768 001935A8  7C 08 02 A6 */	mflr r0
+/* 8019776C 001935AC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80197770 001935B0  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 80197774 001935B4  4B FD ED 89 */	bl gameScreen__Q23app11ApplicationFv
+/* 80197778 001935B8  4B FF E8 E5 */	bl gameWidth__Q23gfx10GameScreenCFv
+/* 8019777C 001935BC  54 63 04 3E */	clrlwi r3, r3, 0x10
+/* 80197780 001935C0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80197784 001935C4  7C 08 03 A6 */	mtlr r0
+/* 80197788 001935C8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8019778C 001935CC  4E 80 00 20 */	blr 
+
+.global CurrentGameHeight__Q23gfx7UtilityFv
+CurrentGameHeight__Q23gfx7UtilityFv:
+/* 80197790 001935D0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80197794 001935D4  7C 08 02 A6 */	mflr r0
+/* 80197798 001935D8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8019779C 001935DC  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 801977A0 001935E0  4B FD ED 5D */	bl gameScreen__Q23app11ApplicationFv
+/* 801977A4 001935E4  4B FF E8 D1 */	bl gameHeight__Q23gfx10GameScreenCFv
+/* 801977A8 001935E8  54 63 04 3E */	clrlwi r3, r3, 0x10
+/* 801977AC 001935EC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801977B0 001935F0  7C 08 03 A6 */	mtlr r0
+/* 801977B4 001935F4  38 21 00 10 */	addi r1, r1, 0x10
+/* 801977B8 001935F8  4E 80 00 20 */	blr 
+
+.global SetZBufferRange__Q23gfx7UtilityFff
+SetZBufferRange__Q23gfx7UtilityFff:
+/* 801977BC 001935FC  FC 00 08 90 */	fmr f0, f1
+/* 801977C0 00193600  EC 22 08 28 */	fsubs f1, f2, f1
+/* 801977C4 00193604  FC 40 00 90 */	fmr f2, f0
+/* 801977C8 00193608  4B EA 17 58 */	b GXSetZScaleOffset
+
+.global ClearZBuffer__Q23gfx7UtilityFf
+ClearZBuffer__Q23gfx7UtilityFf:
+/* 801977CC 0019360C  94 21 FE F0 */	stwu r1, -0x110(r1)
+/* 801977D0 00193610  7C 08 02 A6 */	mflr r0
+/* 801977D4 00193614  90 01 01 14 */	stw r0, 0x114(r1)
+/* 801977D8 00193618  DB E1 01 00 */	stfd f31, 0x100(r1)
+/* 801977DC 0019361C  F3 E1 01 08 */	xsmaddadp f31, f1, f0
+/* 801977E0 00193620  39 61 01 00 */	addi r11, r1, 0x100
+/* 801977E4 00193624  4B E6 FB 61 */	bl func_80007344
+/* 801977E8 00193628  FF E0 08 90 */	fmr f31, f1
+/* 801977EC 0019362C  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 801977F0 00193630  C0 22 97 E8 */	lfs f1, $$251796-_SDA2_BASE_(r2)
+/* 801977F4 00193634  C0 42 97 EC */	lfs f2, $$251797-_SDA2_BASE_(r2)
+/* 801977F8 00193638  FC 60 10 90 */	fmr f3, f2
+/* 801977FC 0019363C  FC 80 08 90 */	fmr f4, f1
+/* 80197800 00193640  C0 A2 97 E4 */	lfs f5, $$251755-_SDA2_BASE_(r2)
+/* 80197804 00193644  FC C0 08 90 */	fmr f6, f1
+/* 80197808 00193648  48 00 73 21 */	bl CreateOrtho__Q33hel4math8Matrix44Fffffff
+/* 8019780C 0019364C  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 80197810 00193650  38 80 00 00 */	li r4, 0
+/* 80197814 00193654  4B FF D8 41 */	bl SetupGX__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix44b
+/* 80197818 00193658  3C 60 80 54 */	lis r3, BASIS_Z__Q33hel4math7Vector3@ha
+/* 8019781C 0019365C  38 83 53 00 */	addi r4, r3, BASIS_Z__Q33hel4math7Vector3@l
+/* 80197820 00193660  80 64 00 00 */	lwz r3, 0(r4)
+/* 80197824 00193664  80 04 00 04 */	lwz r0, 4(r4)
+/* 80197828 00193668  90 61 00 08 */	stw r3, 8(r1)
+/* 8019782C 0019366C  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80197830 00193670  80 04 00 08 */	lwz r0, 8(r4)
+/* 80197834 00193674  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80197838 00193678  C0 01 00 08 */	lfs f0, 8(r1)
+/* 8019783C 0019367C  C0 22 97 EC */	lfs f1, $$251797-_SDA2_BASE_(r2)
+/* 80197840 00193680  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80197844 00193684  D0 01 00 08 */	stfs f0, 8(r1)
+/* 80197848 00193688  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 8019784C 0019368C  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80197850 00193690  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 80197854 00193694  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80197858 00193698  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8019785C 0019369C  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 80197860 001936A0  80 61 00 08 */	lwz r3, 8(r1)
+/* 80197864 001936A4  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 80197868 001936A8  90 61 00 44 */	stw r3, 0x44(r1)
+/* 8019786C 001936AC  90 01 00 48 */	stw r0, 0x48(r1)
+/* 80197870 001936B0  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 80197874 001936B4  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 80197878 001936B8  38 61 00 80 */	addi r3, r1, 0x80
+/* 8019787C 001936BC  3C 80 80 54 */	lis r4, ZERO__Q33hel4math7Vector3@ha
+/* 80197880 001936C0  38 84 52 D0 */	addi r4, r4, ZERO__Q33hel4math7Vector3@l
+/* 80197884 001936C4  3C A0 80 54 */	lis r5, BASIS_Y__Q33hel4math7Vector3@ha
+/* 80197888 001936C8  38 A5 52 F4 */	addi r5, r5, BASIS_Y__Q33hel4math7Vector3@l
+/* 8019788C 001936CC  38 C1 00 44 */	addi r6, r1, 0x44
+/* 80197890 001936D0  48 00 6F 21 */	bl CreateLookAt__Q33hel4math8Matrix34FRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 80197894 001936D4  38 61 00 80 */	addi r3, r1, 0x80
+/* 80197898 001936D8  4B FF DA 7D */	bl SetViewMtx__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34
+/* 8019789C 001936DC  C0 22 97 E8 */	lfs f1, $$251796-_SDA2_BASE_(r2)
+/* 801978A0 001936E0  C0 42 97 E4 */	lfs f2, $$251755-_SDA2_BASE_(r2)
+/* 801978A4 001936E4  4B EA 16 7D */	bl GXSetZScaleOffset
+/* 801978A8 001936E8  38 60 00 01 */	li r3, 1
+/* 801978AC 001936EC  38 80 00 07 */	li r4, 7
+/* 801978B0 001936F0  38 A0 00 01 */	li r5, 1
+/* 801978B4 001936F4  4B EA 0F 6D */	bl GXSetZMode
+/* 801978B8 001936F8  38 60 00 00 */	li r3, 0
+/* 801978BC 001936FC  4B EA 0E C5 */	bl GXSetColorUpdate
+/* 801978C0 00193700  38 61 00 50 */	addi r3, r1, 0x50
+/* 801978C4 00193704  4B E9 8C 1D */	bl PSMTXIdentity
+/* 801978C8 00193708  38 61 00 14 */	addi r3, r1, 0x14
+/* 801978CC 0019370C  C0 22 97 EC */	lfs f1, $$251797-_SDA2_BASE_(r2)
+/* 801978D0 00193710  FC 40 08 90 */	fmr f2, f1
+/* 801978D4 00193714  FC 60 F8 50 */	fneg f3, f31
+/* 801978D8 00193718  4B F2 67 E9 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 801978DC 0019371C  7C 7D 1B 78 */	mr r29, r3
+/* 801978E0 00193720  38 61 00 20 */	addi r3, r1, 0x20
+/* 801978E4 00193724  C0 22 97 E8 */	lfs f1, $$251796-_SDA2_BASE_(r2)
+/* 801978E8 00193728  C0 42 97 EC */	lfs f2, $$251797-_SDA2_BASE_(r2)
+/* 801978EC 0019372C  FC 60 F8 50 */	fneg f3, f31
+/* 801978F0 00193730  4B F2 67 D1 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 801978F4 00193734  7C 7E 1B 78 */	mr r30, r3
+/* 801978F8 00193738  38 61 00 2C */	addi r3, r1, 0x2c
+/* 801978FC 0019373C  C0 22 97 E8 */	lfs f1, $$251796-_SDA2_BASE_(r2)
+/* 80197900 00193740  FC 40 08 90 */	fmr f2, f1
+/* 80197904 00193744  FC 60 F8 50 */	fneg f3, f31
+/* 80197908 00193748  4B F2 67 B9 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 8019790C 0019374C  7C 7F 1B 78 */	mr r31, r3
+/* 80197910 00193750  38 61 00 38 */	addi r3, r1, 0x38
+/* 80197914 00193754  C0 22 97 EC */	lfs f1, $$251797-_SDA2_BASE_(r2)
+/* 80197918 00193758  C0 42 97 E8 */	lfs f2, $$251796-_SDA2_BASE_(r2)
+/* 8019791C 0019375C  FC 60 F8 50 */	fneg f3, f31
+/* 80197920 00193760  4B F2 67 A1 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 80197924 00193764  7C 64 1B 78 */	mr r4, r3
+/* 80197928 00193768  38 61 00 50 */	addi r3, r1, 0x50
+/* 8019792C 0019376C  7F E5 FB 78 */	mr r5, r31
+/* 80197930 00193770  7F C6 F3 78 */	mr r6, r30
+/* 80197934 00193774  7F A7 EB 78 */	mr r7, r29
+/* 80197938 00193778  4B FF DC 2D */	bl DrawQuadFill__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 8019793C 0019377C  38 60 00 01 */	li r3, 1
+/* 80197940 00193780  4B EA 0E 41 */	bl GXSetColorUpdate
+/* 80197944 00193784  38 00 01 08 */	li r0, 0x108
+/* 80197948 00193788  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8019794C 0019378C  CB E1 01 00 */	lfd f31, 0x100(r1)
+/* 80197950 00193790  39 61 01 00 */	addi r11, r1, 0x100
+/* 80197954 00193794  4B E6 FA 3D */	bl func_80007390
+/* 80197958 00193798  80 01 01 14 */	lwz r0, 0x114(r1)
+/* 8019795C 0019379C  7C 08 03 A6 */	mtlr r0
+/* 80197960 001937A0  38 21 01 10 */	addi r1, r1, 0x110
+/* 80197964 001937A4  4E 80 00 20 */	blr 
+
+.global SetGXStateDirty__Q23gfx7UtilityFv
+SetGXStateDirty__Q23gfx7UtilityFv:
+/* 80197968 001937A8  38 60 07 FF */	li r3, 0x7ff
+/* 8019796C 001937AC  4B F4 7F 94 */	b Invalidate__Q34nw4r3g3d8G3DStateFUl
+
+.global SetDimmingEnable__Q23gfx7UtilityFb
+SetDimmingEnable__Q23gfx7UtilityFb:
+/* 80197970 001937B0  7C 64 1B 78 */	mr r4, r3
+/* 80197974 001937B4  80 6D ED 08 */	lwz r3, object___Q33hel6common35ExplicitSingleton$$0Q23gfx9VISetting$$1-_SDA_BASE_(r13)
+/* 80197978 001937B8  48 00 03 C4 */	b setDimming__Q23gfx9VISettingFb
+
+.global SetRenderType__Q23gfx7UtilityFQ33gfx13RenderSetting4Type
+SetRenderType__Q23gfx7UtilityFQ33gfx13RenderSetting4Type:
+/* 8019797C 001937BC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80197980 001937C0  7C 08 02 A6 */	mflr r0
+/* 80197984 001937C4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80197988 001937C8  7C 64 1B 78 */	mr r4, r3
+/* 8019798C 001937CC  80 6D ED 90 */	lwz r3, object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1-_SDA_BASE_(r13)
+/* 80197990 001937D0  4B FF ED E5 */	bl type__Q23gfx13RenderSettingFQ33gfx13RenderSetting4Type
+/* 80197994 001937D4  80 6D ED 90 */	lwz r3, object___Q33hel6common40ExplicitSingleton$$0Q23gfx13RenderSetting$$1-_SDA_BASE_(r13)
+/* 80197998 001937D8  4B FF E8 59 */	bl setWriteEnable__Q23gfx19GXFifoMemoryManagerFv
+/* 8019799C 001937DC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801979A0 001937E0  7C 08 03 A6 */	mtlr r0
+/* 801979A4 001937E4  38 21 00 10 */	addi r1, r1, 0x10
+/* 801979A8 001937E8  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Near__Q23lyt7UtilityFv
+Near__Q23lyt7UtilityFv:
+/* 801B11D8 001AD018  C0 22 9A 40 */	lfs f1, $$251538-_SDA2_BASE_(r2)
+/* 801B11DC 001AD01C  4E 80 00 20 */	blr 
+
+.global Far__Q23lyt7UtilityFv
+Far__Q23lyt7UtilityFv:
+/* 801B11E0 001AD020  C0 22 9A 44 */	lfs f1, $$251540-_SDA2_BASE_(r2)
+/* 801B11E4 001AD024  4E 80 00 20 */	blr 
+
+.global ScreenHalfWidth__Q23lyt7UtilityFv
+ScreenHalfWidth__Q23lyt7UtilityFv:
+/* 801B11E8 001AD028  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801B11EC 001AD02C  7C 08 02 A6 */	mflr r0
+/* 801B11F0 001AD030  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801B11F4 001AD034  4B FE 65 71 */	bl CurrentGameWidth__Q23gfx7UtilityFv
+/* 801B11F8 001AD038  C8 22 9A 50 */	lfd f1, $$251544-_SDA2_BASE_(r2)
+/* 801B11FC 001AD03C  90 61 00 0C */	stw r3, 0xc(r1)
+/* 801B1200 001AD040  3C 00 43 30 */	lis r0, 0x4330
+/* 801B1204 001AD044  90 01 00 08 */	stw r0, 8(r1)
+/* 801B1208 001AD048  C8 01 00 08 */	lfd f0, 8(r1)
+/* 801B120C 001AD04C  EC 20 08 28 */	fsubs f1, f0, f1
+/* 801B1210 001AD050  C0 02 9A 48 */	lfs f0, $$251542-_SDA2_BASE_(r2)
+/* 801B1214 001AD054  EC 20 00 72 */	fmuls f1, f0, f1
+/* 801B1218 001AD058  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801B121C 001AD05C  7C 08 03 A6 */	mtlr r0
+/* 801B1220 001AD060  38 21 00 10 */	addi r1, r1, 0x10
+/* 801B1224 001AD064  4E 80 00 20 */	blr 
+
+.global ScreenHalfHeight__Q23lyt7UtilityFv
+ScreenHalfHeight__Q23lyt7UtilityFv:
+/* 801B1228 001AD068  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801B122C 001AD06C  7C 08 02 A6 */	mflr r0
+/* 801B1230 001AD070  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801B1234 001AD074  4B FE 65 5D */	bl CurrentGameHeight__Q23gfx7UtilityFv
+/* 801B1238 001AD078  C8 22 9A 50 */	lfd f1, $$251544-_SDA2_BASE_(r2)
+/* 801B123C 001AD07C  90 61 00 0C */	stw r3, 0xc(r1)
+/* 801B1240 001AD080  3C 00 43 30 */	lis r0, 0x4330
+/* 801B1244 001AD084  90 01 00 08 */	stw r0, 8(r1)
+/* 801B1248 001AD088  C8 01 00 08 */	lfd f0, 8(r1)
+/* 801B124C 001AD08C  EC 20 08 28 */	fsubs f1, f0, f1
+/* 801B1250 001AD090  C0 02 9A 48 */	lfs f0, $$251542-_SDA2_BASE_(r2)
+/* 801B1254 001AD094  EC 20 00 72 */	fmuls f1, f0, f1
+/* 801B1258 001AD098  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801B125C 001AD09C  7C 08 03 A6 */	mtlr r0
+/* 801B1260 001AD0A0  38 21 00 10 */	addi r1, r1, 0x10
+/* 801B1264 001AD0A4  4E 80 00 20 */	blr 
+
+.global ViewEyePos__Q23lyt7UtilityFv
+ViewEyePos__Q23lyt7UtilityFv:
+/* 801B1268 001AD0A8  C0 02 9A 58 */	lfs f0, $$251552-_SDA2_BASE_(r2)
+/* 801B126C 001AD0AC  D0 03 00 00 */	stfs f0, 0(r3)
+/* 801B1270 001AD0B0  D0 03 00 04 */	stfs f0, 4(r3)
+/* 801B1274 001AD0B4  C0 02 9A 5C */	lfs f0, $$251553-_SDA2_BASE_(r2)
+/* 801B1278 001AD0B8  D0 03 00 08 */	stfs f0, 8(r3)
+/* 801B127C 001AD0BC  4E 80 00 20 */	blr 
+
+.global ViewMtx__Q23lyt7UtilityFv
+ViewMtx__Q23lyt7UtilityFv:
+/* 801B1280 001AD0C0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801B1284 001AD0C4  7C 08 02 A6 */	mflr r0
+/* 801B1288 001AD0C8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801B128C 001AD0CC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 801B1290 001AD0D0  7C 7F 1B 78 */	mr r31, r3
+/* 801B1294 001AD0D4  38 61 00 08 */	addi r3, r1, 8
+/* 801B1298 001AD0D8  4B FF FF D1 */	bl ViewEyePos__Q23lyt7UtilityFv
+/* 801B129C 001AD0DC  7F E3 FB 78 */	mr r3, r31
+/* 801B12A0 001AD0E0  38 81 00 08 */	addi r4, r1, 8
+/* 801B12A4 001AD0E4  3C A0 80 54 */	lis r5, BASIS_Y__Q33hel4math7Vector3@ha
+/* 801B12A8 001AD0E8  38 A5 52 F4 */	addi r5, r5, BASIS_Y__Q33hel4math7Vector3@l
+/* 801B12AC 001AD0EC  3C C0 80 54 */	lis r6, ZERO__Q33hel4math7Vector3@ha
+/* 801B12B0 001AD0F0  38 C6 52 D0 */	addi r6, r6, ZERO__Q33hel4math7Vector3@l
+/* 801B12B4 001AD0F4  4B FE D4 FD */	bl CreateLookAt__Q33hel4math8Matrix34FRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 801B12B8 001AD0F8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801B12BC 001AD0FC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801B12C0 001AD100  7C 08 03 A6 */	mtlr r0
+/* 801B12C4 001AD104  38 21 00 20 */	addi r1, r1, 0x20
+/* 801B12C8 001AD108  4E 80 00 20 */	blr 
+
+.global ToLayoutPos__Q23lyt7UtilityFRCQ33hel4math7Vector3RCQ33hel4math8Matrix44
+ToLayoutPos__Q23lyt7UtilityFRCQ33hel4math7Vector3RCQ33hel4math8Matrix44:
+/* 801B12CC 001AD10C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801B12D0 001AD110  7C 08 02 A6 */	mflr r0
+/* 801B12D4 001AD114  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801B12D8 001AD118  DB E1 00 20 */	stfd f31, 0x20(r1)
+/* 801B12DC 001AD11C  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
+/* 801B12E0 001AD120  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 801B12E4 001AD124  7C 7F 1B 78 */	mr r31, r3
+/* 801B12E8 001AD128  7C 80 23 78 */	mr r0, r4
+/* 801B12EC 001AD12C  38 61 00 08 */	addi r3, r1, 8
+/* 801B12F0 001AD130  7C A4 2B 78 */	mr r4, r5
+/* 801B12F4 001AD134  7C 05 03 78 */	mr r5, r0
+/* 801B12F8 001AD138  4B FE D9 19 */	bl mulVec__Q33hel4math8Matrix44CFRCQ33hel4math7Vector3
+/* 801B12FC 001AD13C  4B FF FF 2D */	bl ScreenHalfHeight__Q23lyt7UtilityFv
+/* 801B1300 001AD140  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 801B1304 001AD144  EF E0 00 72 */	fmuls f31, f0, f1
+/* 801B1308 001AD148  4B FF FE E1 */	bl ScreenHalfWidth__Q23lyt7UtilityFv
+/* 801B130C 001AD14C  C0 01 00 08 */	lfs f0, 8(r1)
+/* 801B1310 001AD150  EC 00 00 72 */	fmuls f0, f0, f1
+/* 801B1314 001AD154  D0 1F 00 00 */	stfs f0, 0(r31)
+/* 801B1318 001AD158  D3 FF 00 04 */	stfs f31, 4(r31)
+/* 801B131C 001AD15C  38 00 00 28 */	li r0, 0x28
+/* 801B1320 001AD160  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 801B1324 001AD164  CB E1 00 20 */	lfd f31, 0x20(r1)
+/* 801B1328 001AD168  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801B132C 001AD16C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801B1330 001AD170  7C 08 03 A6 */	mtlr r0
+/* 801B1334 001AD174  38 21 00 30 */	addi r1, r1, 0x30
+/* 801B1338 001AD178  4E 80 00 20 */	blr 
+
+.global SetupGX__Q23lyt7UtilityFv
+SetupGX__Q23lyt7UtilityFv:
+/* 801B133C 001AD17C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 801B1340 001AD180  7C 08 02 A6 */	mflr r0
+/* 801B1344 001AD184  90 01 00 64 */	stw r0, 0x64(r1)
+/* 801B1348 001AD188  DB E1 00 50 */	stfd f31, 0x50(r1)
+/* 801B134C 001AD18C  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
+/* 801B1350 001AD190  4B FF FE 99 */	bl ScreenHalfWidth__Q23lyt7UtilityFv
+/* 801B1354 001AD194  FF E0 08 90 */	fmr f31, f1
+/* 801B1358 001AD198  4B FF FE D1 */	bl ScreenHalfHeight__Q23lyt7UtilityFv
+/* 801B135C 001AD19C  38 61 00 08 */	addi r3, r1, 8
+/* 801B1360 001AD1A0  FC 40 08 50 */	fneg f2, f1
+/* 801B1364 001AD1A4  FC 60 F8 50 */	fneg f3, f31
+/* 801B1368 001AD1A8  FC 80 F8 90 */	fmr f4, f31
+/* 801B136C 001AD1AC  C0 A2 9A 40 */	lfs f5, $$251538-_SDA2_BASE_(r2)
+/* 801B1370 001AD1B0  C0 C2 9A 44 */	lfs f6, $$251540-_SDA2_BASE_(r2)
+/* 801B1374 001AD1B4  4B FE D7 B5 */	bl CreateOrtho__Q33hel4math8Matrix44Fffffff
+/* 801B1378 001AD1B8  38 61 00 08 */	addi r3, r1, 8
+/* 801B137C 001AD1BC  38 80 00 00 */	li r4, 0
+/* 801B1380 001AD1C0  4B FE 3C D5 */	bl SetupGX__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix44b
+/* 801B1384 001AD1C4  38 60 00 00 */	li r3, 0
+/* 801B1388 001AD1C8  38 80 00 07 */	li r4, 7
+/* 801B138C 001AD1CC  38 A0 00 00 */	li r5, 0
+/* 801B1390 001AD1D0  4B E8 74 91 */	bl GXSetZMode
+/* 801B1394 001AD1D4  38 00 00 58 */	li r0, 0x58
+/* 801B1398 001AD1D8  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 801B139C 001AD1DC  CB E1 00 50 */	lfd f31, 0x50(r1)
+/* 801B13A0 001AD1E0  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 801B13A4 001AD1E4  7C 08 03 A6 */	mtlr r0
+/* 801B13A8 001AD1E8  38 21 00 60 */	addi r1, r1, 0x60
+/* 801B13AC 001AD1EC  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl
+MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl:
+/* 801BFA30 001BB870  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801BFA34 001BB874  90 81 00 08 */	stw r4, 8(r1)
+/* 801BFA38 001BB878  80 C3 00 04 */	lwz r6, 4(r3)
+/* 801BFA3C 001BB87C  80 03 00 00 */	lwz r0, 0(r3)
+/* 801BFA40 001BB880  54 00 F0 BE */	srwi r0, r0, 2
+/* 801BFA44 001BB884  38 E0 00 00 */	li r7, 0
+/* 801BFA48 001BB888  38 A0 00 00 */	li r5, 0
+/* 801BFA4C 001BB88C  7C 09 03 A6 */	mtctr r0
+/* 801BFA50 001BB890  28 00 00 00 */	cmplwi r0, 0
+/* 801BFA54 001BB894  40 81 00 14 */	ble lbl_801BFA68
+lbl_801BFA58:
+/* 801BFA58 001BB898  7C 86 29 2E */	stwx r4, r6, r5
+/* 801BFA5C 001BB89C  38 E7 00 01 */	addi r7, r7, 1
+/* 801BFA60 001BB8A0  38 A5 00 04 */	addi r5, r5, 4
+/* 801BFA64 001BB8A4  42 00 FF F4 */	bdnz lbl_801BFA58
+lbl_801BFA68:
+/* 801BFA68 001BB8A8  54 E0 10 3A */	slwi r0, r7, 2
+/* 801BFA6C 001BB8AC  7C 86 02 14 */	add r4, r6, r0
+/* 801BFA70 001BB8B0  80 03 00 00 */	lwz r0, 0(r3)
+/* 801BFA74 001BB8B4  54 00 07 BE */	clrlwi r0, r0, 0x1e
+/* 801BFA78 001BB8B8  28 00 00 03 */	cmplwi r0, 3
+/* 801BFA7C 001BB8BC  41 82 00 18 */	beq lbl_801BFA94
+/* 801BFA80 001BB8C0  28 00 00 02 */	cmplwi r0, 2
+/* 801BFA84 001BB8C4  41 82 00 2C */	beq lbl_801BFAB0
+/* 801BFA88 001BB8C8  28 00 00 01 */	cmplwi r0, 1
+/* 801BFA8C 001BB8CC  41 82 00 38 */	beq lbl_801BFAC4
+/* 801BFA90 001BB8D0  48 00 00 3C */	b lbl_801BFACC
+lbl_801BFA94:
+/* 801BFA94 001BB8D4  88 01 00 0A */	lbz r0, 0xa(r1)
+/* 801BFA98 001BB8D8  98 04 00 02 */	stb r0, 2(r4)
+/* 801BFA9C 001BB8DC  88 01 00 09 */	lbz r0, 9(r1)
+/* 801BFAA0 001BB8E0  98 04 00 01 */	stb r0, 1(r4)
+/* 801BFAA4 001BB8E4  88 01 00 08 */	lbz r0, 8(r1)
+/* 801BFAA8 001BB8E8  98 04 00 00 */	stb r0, 0(r4)
+/* 801BFAAC 001BB8EC  48 00 00 20 */	b lbl_801BFACC
+lbl_801BFAB0:
+/* 801BFAB0 001BB8F0  88 01 00 09 */	lbz r0, 9(r1)
+/* 801BFAB4 001BB8F4  98 04 00 01 */	stb r0, 1(r4)
+/* 801BFAB8 001BB8F8  88 01 00 08 */	lbz r0, 8(r1)
+/* 801BFABC 001BB8FC  98 04 00 00 */	stb r0, 0(r4)
+/* 801BFAC0 001BB900  48 00 00 0C */	b lbl_801BFACC
+lbl_801BFAC4:
+/* 801BFAC4 001BB904  88 01 00 08 */	lbz r0, 8(r1)
+/* 801BFAC8 001BB908  98 04 00 00 */	stb r0, 0(r4)
+lbl_801BFACC:
+/* 801BFACC 001BB90C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801BFAD0 001BB910  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
+RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
+/* 80234818 00230658  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8023481C 0023065C  7C 08 02 A6 */	mflr r0
+/* 80234820 00230660  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80234824 00230664  88 0D F0 E0 */	lbz r0, $$2GUARD$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti-_SDA_BASE_(r13)
+/* 80234828 00230668  7C 00 07 74 */	extsb r0, r0
+/* 8023482C 0023066C  2C 00 00 00 */	cmpwi r0, 0
+/* 80234830 00230670  40 82 00 20 */	bne lbl_80234850
+/* 80234834 00230674  38 6D F0 E8 */	addi r3, r13, $$2LOCAL$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti-_SDA_BASE_
+/* 80234838 00230678  38 80 00 00 */	li r4, 0
+/* 8023483C 0023067C  3C A0 80 45 */	lis r5, $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv@ha
+/* 80234840 00230680  38 A5 2B 1C */	addi r5, r5, $$2STRING$$2NoName__Q33hel6common15RuntimeTypeInfoFv@l
+/* 80234844 00230684  4B F4 04 F5 */	bl __ct__Q33hel6common15RuntimeTypeInfoFPCQ33hel6common15RuntimeTypeInfoPCc
+/* 80234848 00230688  38 00 00 01 */	li r0, 1
+/* 8023484C 0023068C  98 0D F0 E0 */	stb r0, $$2GUARD$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti-_SDA_BASE_(r13)
+lbl_80234850:
+/* 80234850 00230690  38 6D F0 E8 */	addi r3, r13, $$2LOCAL$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti-_SDA_BASE_
+/* 80234854 00230694  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80234858 00230698  7C 08 03 A6 */	mtlr r0
+/* 8023485C 0023069C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80234860 002306A0  4E 80 00 20 */	blr 
+
+.global MintRegister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+MintRegister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234864 002306A4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80234868 002306A8  7C 08 02 A6 */	mflr r0
+/* 8023486C 002306AC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80234870 002306B0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80234874 002306B4  7C 7F 1B 78 */	mr r31, r3
+/* 80234878 002306B8  4B FF E1 39 */	bl Register__Q43scn4step4boss8MintBossFRQ43scn4step4boss4Boss
+/* 8023487C 002306BC  7F E3 FB 78 */	mr r3, r31
+/* 80234880 002306C0  4B FF 87 09 */	bl objColl__Q43scn4step4boss4BossFv
+/* 80234884 002306C4  48 03 B6 0D */	bl Register__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl
+/* 80234888 002306C8  7F E3 FB 78 */	mr r3, r31
+/* 8023488C 002306CC  4B FF 86 8D */	bl target__Q43scn4step4boss4BossFv
+/* 80234890 002306D0  4B F6 66 D9 */	bl Register__Q24gobj10MintTargetFRQ24gobj6Target
+/* 80234894 002306D4  7F E3 FB 78 */	mr r3, r31
+/* 80234898 002306D8  4B FF 86 91 */	bl location__Q43scn4step4boss4BossCFv
+/* 8023489C 002306DC  4B DE FC 05 */	bl DefaultSwitchThreadCallback
+/* 802348A0 002306E0  4B F6 64 95 */	bl Register__Q24gobj12MintLocationFRQ24gobj8Location
+/* 802348A4 002306E4  7F E3 FB 78 */	mr r3, r31
+/* 802348A8 002306E8  4B FF 86 99 */	bl scriptTrigger__Q43scn4step4boss4BossFv
+/* 802348AC 002306EC  48 03 BD E1 */	bl Register__Q43scn4step5chara17MintScriptTriggerFRQ43scn4step5chara13ScriptTrigger
+/* 802348B0 002306F0  7F E3 FB 78 */	mr r3, r31
+/* 802348B4 002306F4  4B FF 86 85 */	bl model__Q43scn4step4boss4BossFv
+/* 802348B8 002306F8  48 03 CC 51 */	bl shake__Q43scn4step5chara5ModelFv
+/* 802348BC 002306FC  48 03 BD F9 */	bl Register__Q43scn4step5chara9MintShakeFRQ43scn4step5chara5Shake
+/* 802348C0 00230700  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802348C4 00230704  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802348C8 00230708  7C 08 03 A6 */	mtlr r0
+/* 802348CC 0023070C  38 21 00 10 */	addi r1, r1, 0x10
+/* 802348D0 00230710  4E 80 00 20 */	blr 
+
+.global MintUnregister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+MintUnregister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 802348D4 00230714  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802348D8 00230718  7C 08 02 A6 */	mflr r0
+/* 802348DC 0023071C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802348E0 00230720  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802348E4 00230724  7C 7F 1B 78 */	mr r31, r3
+/* 802348E8 00230728  4B FF 86 51 */	bl model__Q43scn4step4boss4BossFv
+/* 802348EC 0023072C  48 03 CC 1D */	bl shake__Q43scn4step5chara5ModelFv
+/* 802348F0 00230730  48 03 BD CD */	bl Unregister__Q43scn4step5chara9MintShakeFRQ43scn4step5chara5Shake
+/* 802348F4 00230734  7F E3 FB 78 */	mr r3, r31
+/* 802348F8 00230738  4B FF 86 49 */	bl scriptTrigger__Q43scn4step4boss4BossFv
+/* 802348FC 0023073C  48 03 BD 99 */	bl Unregister__Q43scn4step5chara17MintScriptTriggerFRQ43scn4step5chara13ScriptTrigger
+/* 80234900 00230740  7F E3 FB 78 */	mr r3, r31
+/* 80234904 00230744  4B FF 86 25 */	bl location__Q43scn4step4boss4BossCFv
+/* 80234908 00230748  4B DE FB 99 */	bl DefaultSwitchThreadCallback
+/* 8023490C 0023074C  4B F6 64 31 */	bl Unregister__Q24gobj12MintLocationFRQ24gobj8Location
+/* 80234910 00230750  7F E3 FB 78 */	mr r3, r31
+/* 80234914 00230754  4B FF 86 05 */	bl target__Q43scn4step4boss4BossFv
+/* 80234918 00230758  4B F6 66 59 */	bl Unregister__Q24gobj10MintTargetFRQ24gobj6Target
+/* 8023491C 0023075C  7F E3 FB 78 */	mr r3, r31
+/* 80234920 00230760  4B FF 86 69 */	bl objColl__Q43scn4step4boss4BossFv
+/* 80234924 00230764  48 03 B5 75 */	bl Unregister__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl
+/* 80234928 00230768  7F E3 FB 78 */	mr r3, r31
+/* 8023492C 0023076C  4B FF E0 8D */	bl Unregister__Q43scn4step4boss8MintBossFRQ43scn4step4boss4Boss
+/* 80234930 00230770  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80234934 00230774  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80234938 00230778  7C 08 03 A6 */	mtlr r0
+/* 8023493C 0023077C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80234940 00230780  4E 80 00 20 */	blr 
+
+.global TurnMainHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+TurnMainHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234944 00230784  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80234948 00230788  7C 08 02 A6 */	mflr r0
+/* 8023494C 0023078C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80234950 00230790  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80234954 00230794  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80234958 00230798  7C 7E 1B 78 */	mr r30, r3
+/* 8023495C 0023079C  4B FF 85 CD */	bl location__Q43scn4step4boss4BossCFv
+/* 80234960 002307A0  7C 64 1B 78 */	mr r4, r3
+/* 80234964 002307A4  38 61 00 14 */	addi r3, r1, 0x14
+/* 80234968 002307A8  48 03 AD 4D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8023496C 002307AC  7F C3 F3 78 */	mr r3, r30
+/* 80234970 002307B0  4B E4 0D C1 */	bl GKI_getfirst
+/* 80234974 002307B4  4B FE C4 85 */	bl heroManager__Q33scn4step9ComponentFv
+/* 80234978 002307B8  7C 64 1B 78 */	mr r4, r3
+/* 8023497C 002307BC  38 61 00 08 */	addi r3, r1, 8
+/* 80234980 002307C0  48 11 21 91 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 80234984 002307C4  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80234988 002307C8  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8023498C 002307CC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80234990 002307D0  7F E0 00 26 */	mfcr r31
+/* 80234994 002307D4  57 FF 17 FE */	rlwinm r31, r31, 2, 0x1f, 0x1f
+/* 80234998 002307D8  7F C3 F3 78 */	mr r3, r30
+/* 8023499C 002307DC  4B FF 85 7D */	bl target__Q43scn4step4boss4BossFv
+/* 802349A0 002307E0  7F E4 FB 78 */	mr r4, r31
+/* 802349A4 002307E4  4B F6 3C DD */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 802349A8 002307E8  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 802349AC 002307EC  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 802349B0 002307F0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 802349B4 002307F4  7C 08 03 A6 */	mtlr r0
+/* 802349B8 002307F8  38 21 00 30 */	addi r1, r1, 0x30
+/* 802349BC 002307FC  4E 80 00 20 */	blr 
+
+.global TurnHatedHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+TurnHatedHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 802349C0 00230800  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 802349C4 00230804  7C 08 02 A6 */	mflr r0
+/* 802349C8 00230808  90 01 00 44 */	stw r0, 0x44(r1)
+/* 802349CC 0023080C  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 802349D0 00230810  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 802349D4 00230814  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 802349D8 00230818  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 802349DC 0023081C  7C 7E 1B 78 */	mr r30, r3
+/* 802349E0 00230820  4B FF 85 49 */	bl location__Q43scn4step4boss4BossCFv
+/* 802349E4 00230824  7C 64 1B 78 */	mr r4, r3
+/* 802349E8 00230828  38 61 00 08 */	addi r3, r1, 8
+/* 802349EC 0023082C  48 03 AC C9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802349F0 00230830  C3 E1 00 08 */	lfs f31, 8(r1)
+/* 802349F4 00230834  38 61 00 14 */	addi r3, r1, 0x14
+/* 802349F8 00230838  7F C4 F3 78 */	mr r4, r30
+/* 802349FC 0023083C  48 00 00 49 */	bl GetHatedHeroPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+/* 80234A00 00230840  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 80234A04 00230844  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 80234A08 00230848  7F E0 00 26 */	mfcr r31
+/* 80234A0C 0023084C  57 FF 17 FE */	rlwinm r31, r31, 2, 0x1f, 0x1f
+/* 80234A10 00230850  7F C3 F3 78 */	mr r3, r30
+/* 80234A14 00230854  4B FF 85 05 */	bl target__Q43scn4step4boss4BossFv
+/* 80234A18 00230858  7F E4 FB 78 */	mr r4, r31
+/* 80234A1C 0023085C  4B F6 3C 65 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 80234A20 00230860  38 00 00 38 */	li r0, 0x38
+/* 80234A24 00230864  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80234A28 00230868  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 80234A2C 0023086C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80234A30 00230870  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80234A34 00230874  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80234A38 00230878  7C 08 03 A6 */	mtlr r0
+/* 80234A3C 0023087C  38 21 00 40 */	addi r1, r1, 0x40
+/* 80234A40 00230880  4E 80 00 20 */	blr 
+
+.global GetHatedHeroPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+GetHatedHeroPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234A44 00230884  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80234A48 00230888  7C 08 02 A6 */	mflr r0
+/* 80234A4C 0023088C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80234A50 00230890  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 80234A54 00230894  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 80234A58 00230898  7C 7E 1B 78 */	mr r30, r3
+/* 80234A5C 0023089C  7C 9F 23 78 */	mr r31, r4
+/* 80234A60 002308A0  7F E3 FB 78 */	mr r3, r31
+/* 80234A64 002308A4  4B FF 85 9D */	bl hateCtrl__Q43scn4step4boss4BossFv
+/* 80234A68 002308A8  7C 64 1B 78 */	mr r4, r3
+/* 80234A6C 002308AC  38 61 00 30 */	addi r3, r1, 0x30
+/* 80234A70 002308B0  4B FF BF 25 */	bl getMostHatedHero__Q43scn4step4boss8HateCtrlFv
+/* 80234A74 002308B4  38 61 00 30 */	addi r3, r1, 0x30
+/* 80234A78 002308B8  4B F5 3C 51 */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80234A7C 002308BC  7C 60 00 34 */	cntlzw r0, r3
+/* 80234A80 002308C0  54 00 D9 7E */	srwi r0, r0, 5
+/* 80234A84 002308C4  2C 00 00 00 */	cmpwi r0, 0
+/* 80234A88 002308C8  41 82 00 94 */	beq lbl_80234B1C
+/* 80234A8C 002308CC  7F E3 FB 78 */	mr r3, r31
+/* 80234A90 002308D0  4B FF 84 89 */	bl target__Q43scn4step4boss4BossFv
+/* 80234A94 002308D4  4B F6 76 0D */	bl getSign__Q24gobj6TargetCFv
+/* 80234A98 002308D8  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 80234A9C 002308DC  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
+/* 80234AA0 002308E0  80 64 00 00 */	lwz r3, 0(r4)
+/* 80234AA4 002308E4  80 04 00 04 */	lwz r0, 4(r4)
+/* 80234AA8 002308E8  90 61 00 08 */	stw r3, 8(r1)
+/* 80234AAC 002308EC  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80234AB0 002308F0  80 04 00 08 */	lwz r0, 8(r4)
+/* 80234AB4 002308F4  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80234AB8 002308F8  C0 01 00 08 */	lfs f0, 8(r1)
+/* 80234ABC 002308FC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80234AC0 00230900  D0 01 00 08 */	stfs f0, 8(r1)
+/* 80234AC4 00230904  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 80234AC8 00230908  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80234ACC 0023090C  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 80234AD0 00230910  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80234AD4 00230914  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80234AD8 00230918  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 80234ADC 0023091C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80234AE0 00230920  38 81 00 08 */	addi r4, r1, 8
+/* 80234AE4 00230924  4B F4 7A E5 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80234AE8 00230928  7F E3 FB 78 */	mr r3, r31
+/* 80234AEC 0023092C  4B FF 84 3D */	bl location__Q43scn4step4boss4BossCFv
+/* 80234AF0 00230930  7C 64 1B 78 */	mr r4, r3
+/* 80234AF4 00230934  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234AF8 00230938  48 03 AB BD */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80234AFC 0023093C  7F C3 F3 78 */	mr r3, r30
+/* 80234B00 00230940  38 81 00 20 */	addi r4, r1, 0x20
+/* 80234B04 00230944  38 A1 00 14 */	addi r5, r1, 0x14
+/* 80234B08 00230948  4B F6 09 D9 */	bl __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 80234B0C 0023094C  38 61 00 30 */	addi r3, r1, 0x30
+/* 80234B10 00230950  38 80 FF FF */	li r4, -1
+/* 80234B14 00230954  4B FF BB B5 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 80234B18 00230958  48 00 00 24 */	b lbl_80234B3C
+lbl_80234B1C:
+/* 80234B1C 0023095C  80 61 00 3C */	lwz r3, 0x3c(r1)
+/* 80234B20 00230960  48 10 B7 E5 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80234B24 00230964  7C 64 1B 78 */	mr r4, r3
+/* 80234B28 00230968  7F C3 F3 78 */	mr r3, r30
+/* 80234B2C 0023096C  48 03 AB 89 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80234B30 00230970  38 61 00 30 */	addi r3, r1, 0x30
+/* 80234B34 00230974  38 80 FF FF */	li r4, -1
+/* 80234B38 00230978  4B FF BB 91 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+lbl_80234B3C:
+/* 80234B3C 0023097C  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 80234B40 00230980  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 80234B44 00230984  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80234B48 00230988  7C 08 03 A6 */	mtlr r0
+/* 80234B4C 0023098C  38 21 00 50 */	addi r1, r1, 0x50
+/* 80234B50 00230990  4E 80 00 20 */	blr 
+
+.global IsHeroInRange__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossffff
+IsHeroInRange__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossffff:
+/* 80234B54 00230994  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80234B58 00230998  7C 08 02 A6 */	mflr r0
+/* 80234B5C 0023099C  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80234B60 002309A0  DB E1 00 80 */	stfd f31, 0x80(r1)
+/* 80234B64 002309A4  F3 E1 00 88 */	psq_st f31, 136(r1), 0, qr0
+/* 80234B68 002309A8  DB C1 00 70 */	stfd f30, 0x70(r1)
+/* 80234B6C 002309AC  F3 C1 00 78 */	psq_st f30, 120(r1), 0, qr0
+/* 80234B70 002309B0  DB A1 00 60 */	stfd f29, 0x60(r1)
+/* 80234B74 002309B4  F3 A1 00 68 */	psq_st f29, 104(r1), 0, qr0
+/* 80234B78 002309B8  DB 81 00 50 */	stfd f28, 0x50(r1)
+/* 80234B7C 002309BC  F3 81 00 58 */	psq_st f28, 88(r1), 0, qr0
+/* 80234B80 002309C0  DB 61 00 40 */	stfd f27, 0x40(r1)
+/* 80234B84 002309C4  F3 61 00 48 */	psq_st f27, 72(r1), 0, qr0
+/* 80234B88 002309C8  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80234B8C 002309CC  7C 7F 1B 78 */	mr r31, r3
+/* 80234B90 002309D0  FF 60 08 90 */	fmr f27, f1
+/* 80234B94 002309D4  FF 80 10 90 */	fmr f28, f2
+/* 80234B98 002309D8  FF A0 18 90 */	fmr f29, f3
+/* 80234B9C 002309DC  FF C0 20 90 */	fmr f30, f4
+/* 80234BA0 002309E0  4B FF 83 79 */	bl target__Q43scn4step4boss4BossFv
+/* 80234BA4 002309E4  4B F4 CB 31 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80234BA8 002309E8  2C 03 00 00 */	cmpwi r3, 0
+/* 80234BAC 002309EC  41 82 00 0C */	beq lbl_80234BB8
+/* 80234BB0 002309F0  FF E0 D8 90 */	fmr f31, f27
+/* 80234BB4 002309F4  48 00 00 08 */	b lbl_80234BBC
+lbl_80234BB8:
+/* 80234BB8 002309F8  FF E0 E0 50 */	fneg f31, f28
+lbl_80234BBC:
+/* 80234BBC 002309FC  7F E3 FB 78 */	mr r3, r31
+/* 80234BC0 00230A00  4B FF 83 59 */	bl target__Q43scn4step4boss4BossFv
+/* 80234BC4 00230A04  4B F4 CB 11 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80234BC8 00230A08  2C 03 00 00 */	cmpwi r3, 0
+/* 80234BCC 00230A0C  41 82 00 08 */	beq lbl_80234BD4
+/* 80234BD0 00230A10  48 00 00 08 */	b lbl_80234BD8
+lbl_80234BD4:
+/* 80234BD4 00230A14  FF 80 D8 50 */	fneg f28, f27
+lbl_80234BD8:
+/* 80234BD8 00230A18  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234BDC 00230A1C  FC 20 E8 90 */	fmr f1, f29
+/* 80234BE0 00230A20  FC 40 F0 90 */	fmr f2, f30
+/* 80234BE4 00230A24  FC 60 F8 90 */	fmr f3, f31
+/* 80234BE8 00230A28  FC 80 E0 90 */	fmr f4, f28
+/* 80234BEC 00230A2C  4B F6 B1 B9 */	bl __ct__Q33hel3geo4RectFffff
+/* 80234BF0 00230A30  7F E3 FB 78 */	mr r3, r31
+/* 80234BF4 00230A34  4B FF 83 35 */	bl location__Q43scn4step4boss4BossCFv
+/* 80234BF8 00230A38  7C 64 1B 78 */	mr r4, r3
+/* 80234BFC 00230A3C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80234C00 00230A40  48 03 AA B5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80234C04 00230A44  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234C08 00230A48  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 80234C0C 00230A4C  C0 41 00 18 */	lfs f2, 0x18(r1)
+/* 80234C10 00230A50  4B F6 B2 31 */	bl trans__Q33hel3geo4RectFff
+/* 80234C14 00230A54  7F E3 FB 78 */	mr r3, r31
+/* 80234C18 00230A58  4B E4 0B 19 */	bl GKI_getfirst
+/* 80234C1C 00230A5C  4B FE C1 DD */	bl heroManager__Q33scn4step9ComponentFv
+/* 80234C20 00230A60  7C 64 1B 78 */	mr r4, r3
+/* 80234C24 00230A64  38 61 00 08 */	addi r3, r1, 8
+/* 80234C28 00230A68  38 A1 00 14 */	addi r5, r1, 0x14
+/* 80234C2C 00230A6C  48 11 1F 25 */	bl getNearestPlayerPos__Q43scn4step4hero7ManagerCFRCQ33hel4math7Vector3
+/* 80234C30 00230A70  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234C34 00230A74  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80234C38 00230A78  C0 41 00 0C */	lfs f2, 0xc(r1)
+/* 80234C3C 00230A7C  4B F6 B2 9D */	bl isInclude__Q33hel3geo4RectCFff
+/* 80234C40 00230A80  7C 7F 1B 78 */	mr r31, r3
+/* 80234C44 00230A84  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234C48 00230A88  38 80 FF FF */	li r4, -1
+/* 80234C4C 00230A8C  4B F6 B1 F1 */	bl __dt__Q33hel3geo4RectFv
+/* 80234C50 00230A90  7F E3 FB 78 */	mr r3, r31
+/* 80234C54 00230A94  38 00 00 88 */	li r0, 0x88
+/* 80234C58 00230A98  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80234C5C 00230A9C  CB E1 00 80 */	lfd f31, 0x80(r1)
+/* 80234C60 00230AA0  38 00 00 78 */	li r0, 0x78
+/* 80234C64 00230AA4  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80234C68 00230AA8  CB C1 00 70 */	lfd f30, 0x70(r1)
+/* 80234C6C 00230AAC  38 00 00 68 */	li r0, 0x68
+/* 80234C70 00230AB0  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 80234C74 00230AB4  CB A1 00 60 */	lfd f29, 0x60(r1)
+/* 80234C78 00230AB8  38 00 00 58 */	li r0, 0x58
+/* 80234C7C 00230ABC  13 81 00 0C */	psq_lx f28, (r1 + r0), 0, qr0
+/* 80234C80 00230AC0  CB 81 00 50 */	lfd f28, 0x50(r1)
+/* 80234C84 00230AC4  38 00 00 48 */	li r0, 0x48
+/* 80234C88 00230AC8  13 61 00 0C */	psq_lx f27, (r1 + r0), 0, qr0
+/* 80234C8C 00230ACC  CB 61 00 40 */	lfd f27, 0x40(r1)
+/* 80234C90 00230AD0  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80234C94 00230AD4  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 80234C98 00230AD8  7C 08 03 A6 */	mtlr r0
+/* 80234C9C 00230ADC  38 21 00 90 */	addi r1, r1, 0x90
+/* 80234CA0 00230AE0  4E 80 00 20 */	blr 
+
+.global IsHatedHeroInRange__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossffff
+IsHatedHeroInRange__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossffff:
+/* 80234CA4 00230AE4  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80234CA8 00230AE8  7C 08 02 A6 */	mflr r0
+/* 80234CAC 00230AEC  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80234CB0 00230AF0  DB E1 00 80 */	stfd f31, 0x80(r1)
+/* 80234CB4 00230AF4  F3 E1 00 88 */	psq_st f31, 136(r1), 0, qr0
+/* 80234CB8 00230AF8  DB C1 00 70 */	stfd f30, 0x70(r1)
+/* 80234CBC 00230AFC  F3 C1 00 78 */	psq_st f30, 120(r1), 0, qr0
+/* 80234CC0 00230B00  DB A1 00 60 */	stfd f29, 0x60(r1)
+/* 80234CC4 00230B04  F3 A1 00 68 */	psq_st f29, 104(r1), 0, qr0
+/* 80234CC8 00230B08  DB 81 00 50 */	stfd f28, 0x50(r1)
+/* 80234CCC 00230B0C  F3 81 00 58 */	psq_st f28, 88(r1), 0, qr0
+/* 80234CD0 00230B10  DB 61 00 40 */	stfd f27, 0x40(r1)
+/* 80234CD4 00230B14  F3 61 00 48 */	psq_st f27, 72(r1), 0, qr0
+/* 80234CD8 00230B18  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80234CDC 00230B1C  7C 7F 1B 78 */	mr r31, r3
+/* 80234CE0 00230B20  FF 60 08 90 */	fmr f27, f1
+/* 80234CE4 00230B24  FF 80 10 90 */	fmr f28, f2
+/* 80234CE8 00230B28  FF A0 18 90 */	fmr f29, f3
+/* 80234CEC 00230B2C  FF C0 20 90 */	fmr f30, f4
+/* 80234CF0 00230B30  4B FF 82 29 */	bl target__Q43scn4step4boss4BossFv
+/* 80234CF4 00230B34  4B F4 C9 E1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80234CF8 00230B38  2C 03 00 00 */	cmpwi r3, 0
+/* 80234CFC 00230B3C  41 82 00 0C */	beq lbl_80234D08
+/* 80234D00 00230B40  FF E0 D8 90 */	fmr f31, f27
+/* 80234D04 00230B44  48 00 00 08 */	b lbl_80234D0C
+lbl_80234D08:
+/* 80234D08 00230B48  FF E0 E0 50 */	fneg f31, f28
+lbl_80234D0C:
+/* 80234D0C 00230B4C  7F E3 FB 78 */	mr r3, r31
+/* 80234D10 00230B50  4B FF 82 09 */	bl target__Q43scn4step4boss4BossFv
+/* 80234D14 00230B54  4B F4 C9 C1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80234D18 00230B58  2C 03 00 00 */	cmpwi r3, 0
+/* 80234D1C 00230B5C  41 82 00 08 */	beq lbl_80234D24
+/* 80234D20 00230B60  48 00 00 08 */	b lbl_80234D28
+lbl_80234D24:
+/* 80234D24 00230B64  FF 80 D8 50 */	fneg f28, f27
+lbl_80234D28:
+/* 80234D28 00230B68  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234D2C 00230B6C  FC 20 E8 90 */	fmr f1, f29
+/* 80234D30 00230B70  FC 40 F0 90 */	fmr f2, f30
+/* 80234D34 00230B74  FC 60 F8 90 */	fmr f3, f31
+/* 80234D38 00230B78  FC 80 E0 90 */	fmr f4, f28
+/* 80234D3C 00230B7C  4B F6 B0 69 */	bl __ct__Q33hel3geo4RectFffff
+/* 80234D40 00230B80  7F E3 FB 78 */	mr r3, r31
+/* 80234D44 00230B84  4B FF 81 E5 */	bl location__Q43scn4step4boss4BossCFv
+/* 80234D48 00230B88  7C 64 1B 78 */	mr r4, r3
+/* 80234D4C 00230B8C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80234D50 00230B90  48 03 A9 65 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80234D54 00230B94  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234D58 00230B98  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 80234D5C 00230B9C  C0 41 00 18 */	lfs f2, 0x18(r1)
+/* 80234D60 00230BA0  4B F6 B0 E1 */	bl trans__Q33hel3geo4RectFff
+/* 80234D64 00230BA4  38 61 00 08 */	addi r3, r1, 8
+/* 80234D68 00230BA8  7F E4 FB 78 */	mr r4, r31
+/* 80234D6C 00230BAC  4B FF FC D9 */	bl GetHatedHeroPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+/* 80234D70 00230BB0  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234D74 00230BB4  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80234D78 00230BB8  C0 41 00 0C */	lfs f2, 0xc(r1)
+/* 80234D7C 00230BBC  4B F6 B1 5D */	bl isInclude__Q33hel3geo4RectCFff
+/* 80234D80 00230BC0  7C 7F 1B 78 */	mr r31, r3
+/* 80234D84 00230BC4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80234D88 00230BC8  38 80 FF FF */	li r4, -1
+/* 80234D8C 00230BCC  4B F6 B0 B1 */	bl __dt__Q33hel3geo4RectFv
+/* 80234D90 00230BD0  7F E3 FB 78 */	mr r3, r31
+/* 80234D94 00230BD4  38 00 00 88 */	li r0, 0x88
+/* 80234D98 00230BD8  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80234D9C 00230BDC  CB E1 00 80 */	lfd f31, 0x80(r1)
+/* 80234DA0 00230BE0  38 00 00 78 */	li r0, 0x78
+/* 80234DA4 00230BE4  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80234DA8 00230BE8  CB C1 00 70 */	lfd f30, 0x70(r1)
+/* 80234DAC 00230BEC  38 00 00 68 */	li r0, 0x68
+/* 80234DB0 00230BF0  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 80234DB4 00230BF4  CB A1 00 60 */	lfd f29, 0x60(r1)
+/* 80234DB8 00230BF8  38 00 00 58 */	li r0, 0x58
+/* 80234DBC 00230BFC  13 81 00 0C */	psq_lx f28, (r1 + r0), 0, qr0
+/* 80234DC0 00230C00  CB 81 00 50 */	lfd f28, 0x50(r1)
+/* 80234DC4 00230C04  38 00 00 48 */	li r0, 0x48
+/* 80234DC8 00230C08  13 61 00 0C */	psq_lx f27, (r1 + r0), 0, qr0
+/* 80234DCC 00230C0C  CB 61 00 40 */	lfd f27, 0x40(r1)
+/* 80234DD0 00230C10  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80234DD4 00230C14  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 80234DD8 00230C18  7C 08 03 A6 */	mtlr r0
+/* 80234DDC 00230C1C  38 21 00 90 */	addi r1, r1, 0x90
+/* 80234DE0 00230C20  4E 80 00 20 */	blr 
+
+.global IsHeroUpper__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossf
+IsHeroUpper__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossf:
+/* 80234DE4 00230C24  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80234DE8 00230C28  7C 08 02 A6 */	mflr r0
+/* 80234DEC 00230C2C  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80234DF0 00230C30  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 80234DF4 00230C34  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 80234DF8 00230C38  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80234DFC 00230C3C  7C 7F 1B 78 */	mr r31, r3
+/* 80234E00 00230C40  FF E0 08 90 */	fmr f31, f1
+/* 80234E04 00230C44  4B FF 81 25 */	bl location__Q43scn4step4boss4BossCFv
+/* 80234E08 00230C48  7C 64 1B 78 */	mr r4, r3
+/* 80234E0C 00230C4C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80234E10 00230C50  48 03 A8 A5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80234E14 00230C54  7F E3 FB 78 */	mr r3, r31
+/* 80234E18 00230C58  4B E4 09 19 */	bl GKI_getfirst
+/* 80234E1C 00230C5C  4B FE BF DD */	bl heroManager__Q33scn4step9ComponentFv
+/* 80234E20 00230C60  7C 64 1B 78 */	mr r4, r3
+/* 80234E24 00230C64  38 61 00 08 */	addi r3, r1, 8
+/* 80234E28 00230C68  38 A1 00 14 */	addi r5, r1, 0x14
+/* 80234E2C 00230C6C  48 11 1D 25 */	bl getNearestPlayerPos__Q43scn4step4hero7ManagerCFRCQ33hel4math7Vector3
+/* 80234E30 00230C70  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 80234E34 00230C74  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 80234E38 00230C78  EC 00 F8 2A */	fadds f0, f0, f31
+/* 80234E3C 00230C7C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80234E40 00230C80  4C 41 13 82 */	cror 2, 1, 2
+/* 80234E44 00230C84  7C 60 00 26 */	mfcr r3
+/* 80234E48 00230C88  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
+/* 80234E4C 00230C8C  38 00 00 38 */	li r0, 0x38
+/* 80234E50 00230C90  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80234E54 00230C94  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 80234E58 00230C98  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80234E5C 00230C9C  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80234E60 00230CA0  7C 08 03 A6 */	mtlr r0
+/* 80234E64 00230CA4  38 21 00 40 */	addi r1, r1, 0x40
+/* 80234E68 00230CA8  4E 80 00 20 */	blr 
+
+.global IsHitWallFront__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsHitWallFront__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234E6C 00230CAC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80234E70 00230CB0  7C 08 02 A6 */	mflr r0
+/* 80234E74 00230CB4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80234E78 00230CB8  4B FF 80 E1 */	bl mapColl__Q43scn4step4boss4BossFv
+/* 80234E7C 00230CBC  7C 64 1B 78 */	mr r4, r3
+/* 80234E80 00230CC0  38 61 00 08 */	addi r3, r1, 8
+/* 80234E84 00230CC4  4B FF D9 6D */	bl result__Q43scn4step4boss7MapCollCFv
+/* 80234E88 00230CC8  88 61 00 0A */	lbz r3, 0xa(r1)
+/* 80234E8C 00230CCC  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80234E90 00230CD0  7C 08 03 A6 */	mtlr r0
+/* 80234E94 00230CD4  38 21 00 40 */	addi r1, r1, 0x40
+/* 80234E98 00230CD8  4E 80 00 20 */	blr 
+
+.global IsHitWallBack__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsHitWallBack__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234E9C 00230CDC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80234EA0 00230CE0  7C 08 02 A6 */	mflr r0
+/* 80234EA4 00230CE4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80234EA8 00230CE8  4B FF 80 B1 */	bl mapColl__Q43scn4step4boss4BossFv
+/* 80234EAC 00230CEC  7C 64 1B 78 */	mr r4, r3
+/* 80234EB0 00230CF0  38 61 00 08 */	addi r3, r1, 8
+/* 80234EB4 00230CF4  4B FF D9 3D */	bl result__Q43scn4step4boss7MapCollCFv
+/* 80234EB8 00230CF8  88 61 00 0B */	lbz r3, 0xb(r1)
+/* 80234EBC 00230CFC  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80234EC0 00230D00  7C 08 03 A6 */	mtlr r0
+/* 80234EC4 00230D04  38 21 00 40 */	addi r1, r1, 0x40
+/* 80234EC8 00230D08  4E 80 00 20 */	blr 
+
+.global IsFootStateGround__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsFootStateGround__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234ECC 00230D0C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80234ED0 00230D10  7C 08 02 A6 */	mflr r0
+/* 80234ED4 00230D14  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80234ED8 00230D18  4B FF 80 49 */	bl footState__Q43scn4step4boss4BossFv
+/* 80234EDC 00230D1C  4B F4 C7 F9 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80234EE0 00230D20  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80234EE4 00230D24  7C 08 03 A6 */	mtlr r0
+/* 80234EE8 00230D28  38 21 00 10 */	addi r1, r1, 0x10
+/* 80234EEC 00230D2C  4E 80 00 20 */	blr 
+
+.global IsHeroDeadStop__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsHeroDeadStop__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234EF0 00230D30  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80234EF4 00230D34  7C 08 02 A6 */	mflr r0
+/* 80234EF8 00230D38  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80234EFC 00230D3C  4B E4 08 35 */	bl GKI_getfirst
+/* 80234F00 00230D40  4B FE BE F9 */	bl heroManager__Q33scn4step9ComponentFv
+/* 80234F04 00230D44  7C 64 1B 78 */	mr r4, r3
+/* 80234F08 00230D48  38 61 00 08 */	addi r3, r1, 8
+/* 80234F0C 00230D4C  38 A0 00 00 */	li r5, 0
+/* 80234F10 00230D50  48 11 1A 49 */	bl searchHeroFromPadChan__Q43scn4step4hero7ManagerFUl
+/* 80234F14 00230D54  38 61 00 08 */	addi r3, r1, 8
+/* 80234F18 00230D58  4B F5 37 B1 */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80234F1C 00230D5C  2C 03 00 00 */	cmpwi r3, 0
+/* 80234F20 00230D60  41 82 00 2C */	beq lbl_80234F4C
+/* 80234F24 00230D64  80 61 00 14 */	lwz r3, 0x14(r1)
+/* 80234F28 00230D68  48 10 B4 55 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80234F2C 00230D6C  88 03 00 3B */	lbz r0, 0x3b(r3)
+/* 80234F30 00230D70  2C 00 00 00 */	cmpwi r0, 0
+/* 80234F34 00230D74  41 82 00 18 */	beq lbl_80234F4C
+/* 80234F38 00230D78  38 61 00 08 */	addi r3, r1, 8
+/* 80234F3C 00230D7C  38 80 FF FF */	li r4, -1
+/* 80234F40 00230D80  4B FF B7 89 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 80234F44 00230D84  38 60 00 01 */	li r3, 1
+/* 80234F48 00230D88  48 00 00 14 */	b lbl_80234F5C
+lbl_80234F4C:
+/* 80234F4C 00230D8C  38 61 00 08 */	addi r3, r1, 8
+/* 80234F50 00230D90  38 80 FF FF */	li r4, -1
+/* 80234F54 00230D94  4B FF B7 75 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 80234F58 00230D98  38 60 00 00 */	li r3, 0
+lbl_80234F5C:
+/* 80234F5C 00230D9C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80234F60 00230DA0  7C 08 03 A6 */	mtlr r0
+/* 80234F64 00230DA4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80234F68 00230DA8  4E 80 00 20 */	blr 
+
+.global GetHitPointRate__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+GetHitPointRate__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234F6C 00230DAC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80234F70 00230DB0  7C 08 02 A6 */	mflr r0
+/* 80234F74 00230DB4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80234F78 00230DB8  4B FF 80 01 */	bl hitPoint__Q43scn4step4boss4BossFv
+/* 80234F7C 00230DBC  48 03 9D 2D */	bl rate__Q43scn4step5chara8HitPointCFv
+/* 80234F80 00230DC0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80234F84 00230DC4  7C 08 03 A6 */	mtlr r0
+/* 80234F88 00230DC8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80234F8C 00230DCC  4E 80 00 20 */	blr 
+
+.global GetLevel__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+GetLevel__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234F90 00230DD0  4B EE BE E0 */	b Tell__Q34nw4r2ut13DvdFileStreamCFv
+
+.global IsVariationExtra__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsVariationExtra__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234F94 00230DD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80234F98 00230DD8  7C 08 02 A6 */	mflr r0
+/* 80234F9C 00230DDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80234FA0 00230DE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80234FA4 00230DE4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80234FA8 00230DE8  7C 7E 1B 78 */	mr r30, r3
+/* 80234FAC 00230DEC  3B E0 00 00 */	li r31, 0
+/* 80234FB0 00230DF0  4B EE BE B1 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
+/* 80234FB4 00230DF4  2C 03 00 01 */	cmpwi r3, 1
+/* 80234FB8 00230DF8  40 82 00 08 */	bne lbl_80234FC0
+/* 80234FBC 00230DFC  3B E0 00 01 */	li r31, 1
+lbl_80234FC0:
+/* 80234FC0 00230E00  7F C3 F3 78 */	mr r3, r30
+/* 80234FC4 00230E04  4B E4 07 6D */	bl GKI_getfirst
+/* 80234FC8 00230E08  4B F4 13 F9 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 80234FCC 00230E0C  38 63 04 A0 */	addi r3, r3, 0x4a0
+/* 80234FD0 00230E10  4B FE C4 7D */	bl isExtraMode__Q33scn4step11ContextModeCFv
+/* 80234FD4 00230E14  2C 03 00 00 */	cmpwi r3, 0
+/* 80234FD8 00230E18  41 82 00 08 */	beq lbl_80234FE0
+/* 80234FDC 00230E1C  3B E0 00 01 */	li r31, 1
+lbl_80234FE0:
+/* 80234FE0 00230E20  7F E3 FB 78 */	mr r3, r31
+/* 80234FE4 00230E24  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80234FE8 00230E28  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80234FEC 00230E2C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80234FF0 00230E30  7C 08 03 A6 */	mtlr r0
+/* 80234FF4 00230E34  38 21 00 10 */	addi r1, r1, 0x10
+/* 80234FF8 00230E38  4E 80 00 20 */	blr 
+
+.global IsVariationBossRush__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsVariationBossRush__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80234FFC 00230E3C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80235000 00230E40  7C 08 02 A6 */	mflr r0
+/* 80235004 00230E44  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235008 00230E48  4B EE BE 59 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
+/* 8023500C 00230E4C  38 03 FF FE */	addi r0, r3, -2
+/* 80235010 00230E50  7C 00 00 34 */	cntlzw r0, r0
+/* 80235014 00230E54  54 03 D9 7E */	srwi r3, r0, 5
+/* 80235018 00230E58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8023501C 00230E5C  7C 08 03 A6 */	mtlr r0
+/* 80235020 00230E60  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235024 00230E64  4E 80 00 20 */	blr 
+
+.global IsArena__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsArena__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80235028 00230E68  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8023502C 00230E6C  7C 08 02 A6 */	mflr r0
+/* 80235030 00230E70  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235034 00230E74  4B E4 06 FD */	bl GKI_getfirst
+/* 80235038 00230E78  48 00 00 15 */	bl IsArena__Q43scn4step4boss7UtilityFRQ33scn4step9Component
+/* 8023503C 00230E7C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80235040 00230E80  7C 08 03 A6 */	mtlr r0
+/* 80235044 00230E84  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235048 00230E88  4E 80 00 20 */	blr 
+
+.global IsArena__Q43scn4step4boss7UtilityFRQ33scn4step9Component
+IsArena__Q43scn4step4boss7UtilityFRQ33scn4step9Component:
+/* 8023504C 00230E8C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80235050 00230E90  7C 08 02 A6 */	mflr r0
+/* 80235054 00230E94  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235058 00230E98  4B F4 13 69 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 8023505C 00230E9C  80 63 04 9C */	lwz r3, 0x49c(r3)
+/* 80235060 00230EA0  4B E1 ED 91 */	bl __wpadNoAlloc
+/* 80235064 00230EA4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80235068 00230EA8  7C 08 03 A6 */	mtlr r0
+/* 8023506C 00230EAC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235070 00230EB0  4E 80 00 20 */	blr 
+
+.global IsChallenge__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+IsChallenge__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80235074 00230EB4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80235078 00230EB8  7C 08 02 A6 */	mflr r0
+/* 8023507C 00230EBC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235080 00230EC0  4B E4 06 B1 */	bl GKI_getfirst
+/* 80235084 00230EC4  48 00 00 15 */	bl IsChallenge__Q43scn4step4boss7UtilityFRQ33scn4step9Component
+/* 80235088 00230EC8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8023508C 00230ECC  7C 08 03 A6 */	mtlr r0
+/* 80235090 00230ED0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235094 00230ED4  4E 80 00 20 */	blr 
+
+.global IsChallenge__Q43scn4step4boss7UtilityFRQ33scn4step9Component
+IsChallenge__Q43scn4step4boss7UtilityFRQ33scn4step9Component:
+/* 80235098 00230ED8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8023509C 00230EDC  7C 08 02 A6 */	mflr r0
+/* 802350A0 00230EE0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802350A4 00230EE4  4B F4 13 1D */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 802350A8 00230EE8  80 63 04 9C */	lwz r3, 0x49c(r3)
+/* 802350AC 00230EEC  48 19 54 71 */	bl IsChallengeStage__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
+/* 802350B0 00230EF0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802350B4 00230EF4  7C 08 03 A6 */	mtlr r0
+/* 802350B8 00230EF8  38 21 00 10 */	addi r1, r1, 0x10
+/* 802350BC 00230EFC  4E 80 00 20 */	blr 
+
+.global GetRetryCount__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+GetRetryCount__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 802350C0 00230F00  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802350C4 00230F04  7C 08 02 A6 */	mflr r0
+/* 802350C8 00230F08  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802350CC 00230F0C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802350D0 00230F10  93 C1 00 08 */	stw r30, 8(r1)
+/* 802350D4 00230F14  7C 7E 1B 78 */	mr r30, r3
+/* 802350D8 00230F18  4B E0 1A 89 */	bl GXGetTexObjUserData
+/* 802350DC 00230F1C  7C 7F 1B 78 */	mr r31, r3
+/* 802350E0 00230F20  7F C3 F3 78 */	mr r3, r30
+/* 802350E4 00230F24  4B E4 06 4D */	bl GKI_getfirst
+/* 802350E8 00230F28  4B FE BD 81 */	bl bossManager__Q33scn4step9ComponentFv
+/* 802350EC 00230F2C  7F E4 FB 78 */	mr r4, r31
+/* 802350F0 00230F30  4B FF CA B1 */	bl getRetryBossCount__Q43scn4step4boss7ManagerFQ43scn4step3map11BinBossKind
+/* 802350F4 00230F34  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802350F8 00230F38  83 C1 00 08 */	lwz r30, 8(r1)
+/* 802350FC 00230F3C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80235100 00230F40  7C 08 03 A6 */	mtlr r0
+/* 80235104 00230F44  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235108 00230F48  4E 80 00 20 */	blr 
+
+.global GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
+GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation:
+/* 8023510C 00230F4C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80235110 00230F50  7C 08 02 A6 */	mflr r0
+/* 80235114 00230F54  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80235118 00230F58  39 61 00 30 */	addi r11, r1, 0x30
+/* 8023511C 00230F5C  4B DD 22 25 */	bl func_80007340
+/* 80235120 00230F60  7C 7C 1B 78 */	mr r28, r3
+/* 80235124 00230F64  7C 9D 23 78 */	mr r29, r4
+/* 80235128 00230F68  7C BE 2B 78 */	mr r30, r5
+/* 8023512C 00230F6C  7C DF 33 78 */	mr r31, r6
+/* 80235130 00230F70  4B FF 7D F9 */	bl location__Q43scn4step4boss4BossCFv
+/* 80235134 00230F74  7C 64 1B 78 */	mr r4, r3
+/* 80235138 00230F78  38 61 00 10 */	addi r3, r1, 0x10
+/* 8023513C 00230F7C  48 03 A5 79 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80235140 00230F80  38 61 00 08 */	addi r3, r1, 8
+/* 80235144 00230F84  38 81 00 10 */	addi r4, r1, 0x10
+/* 80235148 00230F88  4B F8 DA 85 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8023514C 00230F8C  7F 83 E3 78 */	mr r3, r28
+/* 80235150 00230F90  38 81 00 08 */	addi r4, r1, 8
+/* 80235154 00230F94  7F A5 EB 78 */	mr r5, r29
+/* 80235158 00230F98  7F C6 F3 78 */	mr r6, r30
+/* 8023515C 00230F9C  7F E7 FB 78 */	mr r7, r31
+/* 80235160 00230FA0  48 00 00 95 */	bl GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
+/* 80235164 00230FA4  39 61 00 30 */	addi r11, r1, 0x30
+/* 80235168 00230FA8  4B DD 22 25 */	bl func_8000738C
+/* 8023516C 00230FAC  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80235170 00230FB0  7C 08 03 A6 */	mtlr r0
+/* 80235174 00230FB4  38 21 00 30 */	addi r1, r1, 0x30
+/* 80235178 00230FB8  4E 80 00 20 */	blr 
+
+.global GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl:
+/* 8023517C 00230FBC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80235180 00230FC0  7C 08 02 A6 */	mflr r0
+/* 80235184 00230FC4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80235188 00230FC8  39 61 00 40 */	addi r11, r1, 0x40
+/* 8023518C 00230FCC  4B DD 21 B1 */	bl func_8000733C
+/* 80235190 00230FD0  7C 7B 1B 78 */	mr r27, r3
+/* 80235194 00230FD4  7C 9C 23 78 */	mr r28, r4
+/* 80235198 00230FD8  7C BD 2B 78 */	mr r29, r5
+/* 8023519C 00230FDC  7C DE 33 78 */	mr r30, r6
+/* 802351A0 00230FE0  7C FF 3B 78 */	mr r31, r7
+/* 802351A4 00230FE4  4B FF 7D 85 */	bl location__Q43scn4step4boss4BossCFv
+/* 802351A8 00230FE8  7C 64 1B 78 */	mr r4, r3
+/* 802351AC 00230FEC  38 61 00 10 */	addi r3, r1, 0x10
+/* 802351B0 00230FF0  48 03 A5 05 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802351B4 00230FF4  38 61 00 08 */	addi r3, r1, 8
+/* 802351B8 00230FF8  38 81 00 10 */	addi r4, r1, 0x10
+/* 802351BC 00230FFC  4B F8 DA 11 */	bl getXY__Q33hel4math7Vector3CFv
+/* 802351C0 00231000  7F 63 DB 78 */	mr r3, r27
+/* 802351C4 00231004  38 81 00 08 */	addi r4, r1, 8
+/* 802351C8 00231008  7F 85 E3 78 */	mr r5, r28
+/* 802351CC 0023100C  7F A6 EB 78 */	mr r6, r29
+/* 802351D0 00231010  7F C7 F3 78 */	mr r7, r30
+/* 802351D4 00231014  7F E8 FB 78 */	mr r8, r31
+/* 802351D8 00231018  48 00 00 25 */	bl GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+/* 802351DC 0023101C  39 61 00 40 */	addi r11, r1, 0x40
+/* 802351E0 00231020  4B DD 21 A9 */	bl func_80007388
+/* 802351E4 00231024  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 802351E8 00231028  7C 08 03 A6 */	mtlr r0
+/* 802351EC 0023102C  38 21 00 40 */	addi r1, r1, 0x40
+/* 802351F0 00231030  4E 80 00 20 */	blr 
+
+.global GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
+GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation:
+/* 802351F4 00231034  39 00 00 00 */	li r8, 0
+/* 802351F8 00231038  48 00 00 04 */	b GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+
+.global GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+GenerateStarEffect__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl:
+/* 802351FC 0023103C  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80235200 00231040  7C 08 02 A6 */	mflr r0
+/* 80235204 00231044  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80235208 00231048  39 61 00 90 */	addi r11, r1, 0x90
+/* 8023520C 0023104C  4B DD 21 2D */	bl func_80007338
+/* 80235210 00231050  7C 7A 1B 78 */	mr r26, r3
+/* 80235214 00231054  7C 9B 23 78 */	mr r27, r4
+/* 80235218 00231058  7C BC 2B 78 */	mr r28, r5
+/* 8023521C 0023105C  7C DD 33 78 */	mr r29, r6
+/* 80235220 00231060  7C FE 3B 78 */	mr r30, r7
+/* 80235224 00231064  7D 1F 43 78 */	mr r31, r8
+/* 80235228 00231068  38 61 00 10 */	addi r3, r1, 0x10
+/* 8023522C 0023106C  4B F1 67 3D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80235230 00231070  7C 64 1B 78 */	mr r4, r3
+/* 80235234 00231074  C0 23 00 00 */	lfs f1, 0(r3)
+/* 80235238 00231078  C0 1C 00 00 */	lfs f0, 0(r28)
+/* 8023523C 0023107C  EC 01 00 2A */	fadds f0, f1, f0
+/* 80235240 00231080  D0 03 00 00 */	stfs f0, 0(r3)
+/* 80235244 00231084  C0 23 00 04 */	lfs f1, 4(r3)
+/* 80235248 00231088  C0 1C 00 04 */	lfs f0, 4(r28)
+/* 8023524C 0023108C  EC 01 00 2A */	fadds f0, f1, f0
+/* 80235250 00231090  D0 03 00 04 */	stfs f0, 4(r3)
+/* 80235254 00231094  38 61 00 18 */	addi r3, r1, 0x18
+/* 80235258 00231098  4B F1 67 11 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8023525C 0023109C  38 01 00 18 */	addi r0, r1, 0x18
+/* 80235260 002310A0  90 01 00 08 */	stw r0, 8(r1)
+/* 80235264 002310A4  38 61 00 40 */	addi r3, r1, 0x40
+/* 80235268 002310A8  38 80 00 66 */	li r4, 0x66
+/* 8023526C 002310AC  7F C5 F3 78 */	mr r5, r30
+/* 80235270 002310B0  7F E6 FB 78 */	mr r6, r31
+/* 80235274 002310B4  38 E0 00 00 */	li r7, 0
+/* 80235278 002310B8  39 00 00 00 */	li r8, 0
+/* 8023527C 002310BC  39 20 00 00 */	li r9, 0
+/* 80235280 002310C0  39 40 00 00 */	li r10, 0
+/* 80235284 002310C4  48 04 F3 E1 */	bl __ct__Q43scn4step5enemy4DescFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariationUlQ43scn4step3map15BinEnemyDirTypeQ43scn4step3map12BinEnemySizebbRCQ33hel4math7Vector2
+/* 80235288 002310C8  38 00 00 01 */	li r0, 1
+/* 8023528C 002310CC  98 01 00 68 */	stb r0, 0x68(r1)
+/* 80235290 002310D0  C0 1B 00 00 */	lfs f0, 0(r27)
+/* 80235294 002310D4  D0 01 00 60 */	stfs f0, 0x60(r1)
+/* 80235298 002310D8  C0 1B 00 04 */	lfs f0, 4(r27)
+/* 8023529C 002310DC  D0 01 00 64 */	stfs f0, 0x64(r1)
+/* 802352A0 002310E0  7F 43 D3 78 */	mr r3, r26
+/* 802352A4 002310E4  4B E4 04 8D */	bl GKI_getfirst
+/* 802352A8 002310E8  4B FE BB 8D */	bl enemyManager__Q33scn4step9ComponentFv
+/* 802352AC 002310EC  7C 64 1B 78 */	mr r4, r3
+/* 802352B0 002310F0  38 61 00 30 */	addi r3, r1, 0x30
+/* 802352B4 002310F4  38 A1 00 40 */	addi r5, r1, 0x40
+/* 802352B8 002310F8  48 05 40 39 */	bl request__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy4Desc
+/* 802352BC 002310FC  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 802352C0 00231100  2C 1F 00 00 */	cmpwi r31, 0
+/* 802352C4 00231104  41 82 00 20 */	beq lbl_802352E4
+/* 802352C8 00231108  38 61 00 20 */	addi r3, r1, 0x20
+/* 802352CC 0023110C  7F A4 EB 78 */	mr r4, r29
+/* 802352D0 00231110  4B F6 A1 8D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 802352D4 00231114  7F E3 FB 78 */	mr r3, r31
+/* 802352D8 00231118  48 05 2D ED */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802352DC 0023111C  38 81 00 20 */	addi r4, r1, 0x20
+/* 802352E0 00231120  4B F6 60 99 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+lbl_802352E4:
+/* 802352E4 00231124  38 61 00 30 */	addi r3, r1, 0x30
+/* 802352E8 00231128  38 80 FF FF */	li r4, -1
+/* 802352EC 0023112C  48 00 00 1D */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 802352F0 00231130  39 61 00 90 */	addi r11, r1, 0x90
+/* 802352F4 00231134  4B DD 20 91 */	bl func_80007384
+/* 802352F8 00231138  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 802352FC 0023113C  7C 08 03 A6 */	mtlr r0
+/* 80235300 00231140  38 21 00 90 */	addi r1, r1, 0x90
+/* 80235304 00231144  4E 80 00 20 */	blr 
+
+.global __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+__dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv:
+/* 80235308 00231148  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8023530C 0023114C  7C 08 02 A6 */	mflr r0
+/* 80235310 00231150  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235314 00231154  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80235318 00231158  93 C1 00 08 */	stw r30, 8(r1)
+/* 8023531C 0023115C  7C 7E 1B 78 */	mr r30, r3
+/* 80235320 00231160  7C 9F 23 78 */	mr r31, r4
+/* 80235324 00231164  2C 03 00 00 */	cmpwi r3, 0
+/* 80235328 00231168  41 82 00 20 */	beq lbl_80235348
+/* 8023532C 0023116C  38 80 FF FF */	li r4, -1
+/* 80235330 00231170  48 00 00 35 */	bl __dt__Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1Fv
+/* 80235334 00231174  7F E0 07 34 */	extsh r0, r31
+/* 80235338 00231178  2C 00 00 00 */	cmpwi r0, 0
+/* 8023533C 0023117C  40 81 00 0C */	ble lbl_80235348
+/* 80235340 00231180  7F C3 F3 78 */	mr r3, r30
+/* 80235344 00231184  4B F8 A3 D1 */	bl __dl__FPv
+lbl_80235348:
+/* 80235348 00231188  7F C3 F3 78 */	mr r3, r30
+/* 8023534C 0023118C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80235350 00231190  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80235354 00231194  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80235358 00231198  7C 08 03 A6 */	mtlr r0
+/* 8023535C 0023119C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235360 002311A0  4E 80 00 20 */	blr 
+
+.global __dt__Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1Fv
+__dt__Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1Fv:
+/* 80235364 002311A4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80235368 002311A8  7C 08 02 A6 */	mflr r0
+/* 8023536C 002311AC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80235370 002311B0  39 61 00 20 */	addi r11, r1, 0x20
+/* 80235374 002311B4  4B DD 1F D1 */	bl func_80007344
+/* 80235378 002311B8  7C 7D 1B 78 */	mr r29, r3
+/* 8023537C 002311BC  7C 9E 23 78 */	mr r30, r4
+/* 80235380 002311C0  2F 03 00 00 */	cmpwi cr6, r3, 0
+/* 80235384 002311C4  41 9A 00 5C */	beq cr6, lbl_802353E0
+/* 80235388 002311C8  80 03 00 08 */	lwz r0, 8(r3)
+/* 8023538C 002311CC  2C 00 00 00 */	cmpwi r0, 0
+/* 80235390 002311D0  41 82 00 3C */	beq lbl_802353CC
+/* 80235394 002311D4  83 E3 00 08 */	lwz r31, 8(r3)
+/* 80235398 002311D8  40 9A 00 20 */	bne cr6, lbl_802353B8
+/* 8023539C 002311DC  3C 60 80 46 */	lis r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1@ha
+/* 802353A0 002311E0  38 63 48 C4 */	addi r3, r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1@l
+/* 802353A4 002311E4  38 80 02 33 */	li r4, 0x233
+/* 802353A8 002311E8  3C A0 80 46 */	lis r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$20@ha
+/* 802353AC 002311EC  38 A5 48 A0 */	addi r5, r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$20@l
+/* 802353B0 002311F0  4C C6 31 82 */	crclr 6
+/* 802353B4 002311F4  4B EF 2F 9D */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_802353B8:
+/* 802353B8 002311F8  7F E3 FB 78 */	mr r3, r31
+/* 802353BC 002311FC  7F A4 EB 78 */	mr r4, r29
+/* 802353C0 00231200  4B EE AA 21 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
+/* 802353C4 00231204  38 00 00 00 */	li r0, 0
+/* 802353C8 00231208  90 1D 00 08 */	stw r0, 8(r29)
+lbl_802353CC:
+/* 802353CC 0023120C  7F C0 07 34 */	extsh r0, r30
+/* 802353D0 00231210  2C 00 00 00 */	cmpwi r0, 0
+/* 802353D4 00231214  40 81 00 0C */	ble lbl_802353E0
+/* 802353D8 00231218  7F A3 EB 78 */	mr r3, r29
+/* 802353DC 0023121C  4B F8 A3 39 */	bl __dl__FPv
+lbl_802353E0:
+/* 802353E0 00231220  7F A3 EB 78 */	mr r3, r29
+/* 802353E4 00231224  39 61 00 20 */	addi r11, r1, 0x20
+/* 802353E8 00231228  4B DD 1F A9 */	bl func_80007390
+/* 802353EC 0023122C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802353F0 00231230  7C 08 03 A6 */	mtlr r0
+/* 802353F4 00231234  38 21 00 20 */	addi r1, r1, 0x20
+/* 802353F8 00231238  4E 80 00 20 */	blr 
+
+.global __dt__Q24util35ObjRefHandle$$0Q43scn4step4item4Item$$1Fv
+__dt__Q24util35ObjRefHandle$$0Q43scn4step4item4Item$$1Fv:
+/* 802353FC 0023123C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80235400 00231240  7C 08 02 A6 */	mflr r0
+/* 80235404 00231244  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235408 00231248  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8023540C 0023124C  93 C1 00 08 */	stw r30, 8(r1)
+/* 80235410 00231250  7C 7E 1B 78 */	mr r30, r3
+/* 80235414 00231254  7C 9F 23 78 */	mr r31, r4
+/* 80235418 00231258  2C 03 00 00 */	cmpwi r3, 0
+/* 8023541C 0023125C  41 82 00 20 */	beq lbl_8023543C
+/* 80235420 00231260  38 80 FF FF */	li r4, -1
+/* 80235424 00231264  48 00 00 35 */	bl __dt__Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1Fv
+/* 80235428 00231268  7F E0 07 34 */	extsh r0, r31
+/* 8023542C 0023126C  2C 00 00 00 */	cmpwi r0, 0
+/* 80235430 00231270  40 81 00 0C */	ble lbl_8023543C
+/* 80235434 00231274  7F C3 F3 78 */	mr r3, r30
+/* 80235438 00231278  4B F8 A2 DD */	bl __dl__FPv
+lbl_8023543C:
+/* 8023543C 0023127C  7F C3 F3 78 */	mr r3, r30
+/* 80235440 00231280  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80235444 00231284  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80235448 00231288  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8023544C 0023128C  7C 08 03 A6 */	mtlr r0
+/* 80235450 00231290  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235454 00231294  4E 80 00 20 */	blr 
+
+.global __dt__Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1Fv
+__dt__Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1Fv:
+/* 80235458 00231298  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8023545C 0023129C  7C 08 02 A6 */	mflr r0
+/* 80235460 002312A0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80235464 002312A4  39 61 00 20 */	addi r11, r1, 0x20
+/* 80235468 002312A8  4B DD 1E DD */	bl func_80007344
+/* 8023546C 002312AC  7C 7D 1B 78 */	mr r29, r3
+/* 80235470 002312B0  7C 9E 23 78 */	mr r30, r4
+/* 80235474 002312B4  2F 03 00 00 */	cmpwi cr6, r3, 0
+/* 80235478 002312B8  41 9A 00 5C */	beq cr6, lbl_802354D4
+/* 8023547C 002312BC  80 03 00 08 */	lwz r0, 8(r3)
+/* 80235480 002312C0  2C 00 00 00 */	cmpwi r0, 0
+/* 80235484 002312C4  41 82 00 3C */	beq lbl_802354C0
+/* 80235488 002312C8  83 E3 00 08 */	lwz r31, 8(r3)
+/* 8023548C 002312CC  40 9A 00 20 */	bne cr6, lbl_802354AC
+/* 80235490 002312D0  3C 60 80 46 */	lis r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1@ha
+/* 80235494 002312D4  38 63 48 94 */	addi r3, r3, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1@l
+/* 80235498 002312D8  38 80 02 33 */	li r4, 0x233
+/* 8023549C 002312DC  3C A0 80 46 */	lis r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20@ha
+/* 802354A0 002312E0  38 A5 48 70 */	addi r5, r5, $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20@l
+/* 802354A4 002312E4  4C C6 31 82 */	crclr 6
+/* 802354A8 002312E8  4B EF 2E A9 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_802354AC:
+/* 802354AC 002312EC  7F E3 FB 78 */	mr r3, r31
+/* 802354B0 002312F0  7F A4 EB 78 */	mr r4, r29
+/* 802354B4 002312F4  4B EE A9 2D */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
+/* 802354B8 002312F8  38 00 00 00 */	li r0, 0
+/* 802354BC 002312FC  90 1D 00 08 */	stw r0, 8(r29)
+lbl_802354C0:
+/* 802354C0 00231300  7F C0 07 34 */	extsh r0, r30
+/* 802354C4 00231304  2C 00 00 00 */	cmpwi r0, 0
+/* 802354C8 00231308  40 81 00 0C */	ble lbl_802354D4
+/* 802354CC 0023130C  7F A3 EB 78 */	mr r3, r29
+/* 802354D0 00231310  4B F8 A2 45 */	bl __dl__FPv
+lbl_802354D4:
+/* 802354D4 00231314  7F A3 EB 78 */	mr r3, r29
+/* 802354D8 00231318  39 61 00 20 */	addi r11, r1, 0x20
+/* 802354DC 0023131C  4B DD 1E B5 */	bl func_80007390
+/* 802354E0 00231320  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802354E4 00231324  7C 08 03 A6 */	mtlr r0
+/* 802354E8 00231328  38 21 00 20 */	addi r1, r1, 0x20
+/* 802354EC 0023132C  4E 80 00 20 */	blr 
+
+.global StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3
+StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3:
+/* 802354F0 00231330  38 A0 02 41 */	li r5, 0x241
+/* 802354F4 00231334  48 00 00 04 */	b StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ul
+
+.global StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ul
+StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ul:
+/* 802354F8 00231338  38 C0 00 00 */	li r6, 0
+/* 802354FC 0023133C  48 00 00 04 */	b StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ulb
+
+.global StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ulb
+StagingBossDead__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3Ulb:
+/* 80235500 00231340  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80235504 00231344  7C 08 02 A6 */	mflr r0
+/* 80235508 00231348  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8023550C 0023134C  39 61 00 40 */	addi r11, r1, 0x40
+/* 80235510 00231350  4B DD 1E 2D */	bl func_8000733C
+/* 80235514 00231354  7C 7B 1B 78 */	mr r27, r3
+/* 80235518 00231358  7C 9C 23 78 */	mr r28, r4
+/* 8023551C 0023135C  7C BD 2B 78 */	mr r29, r5
+/* 80235520 00231360  7C DE 33 78 */	mr r30, r6
+/* 80235524 00231364  4B FF FB 51 */	bl IsChallenge__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+/* 80235528 00231368  2C 03 00 00 */	cmpwi r3, 0
+/* 8023552C 0023136C  40 82 00 10 */	bne lbl_8023553C
+/* 80235530 00231370  7F 63 DB 78 */	mr r3, r27
+/* 80235534 00231374  4B FF 7A C5 */	bl bgmCtrl__Q43scn4step4boss4BossFv
+/* 80235538 00231378  4B FF 40 A5 */	bl startBossDead__Q43scn4step4boss7BGMCtrlFv
+lbl_8023553C:
+/* 8023553C 0023137C  7F 63 DB 78 */	mr r3, r27
+/* 80235540 00231380  4B FF 7A 71 */	bl flash__Q43scn4step4boss4BossFv
+/* 80235544 00231384  4B F8 13 5D */	bl collideTarget__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 80235548 00231388  4B ED 12 39 */	bl DetachPlayerHeap__Q44nw4r3snd6detail10BasicSoundFPQ44nw4r3snd6detail10PlayerHeap
+/* 8023554C 0023138C  7F 63 DB 78 */	mr r3, r27
+/* 80235550 00231390  4B E4 01 E1 */	bl GKI_getfirst
+/* 80235554 00231394  4B FB 99 7D */	bl commander__Q33scn14challengetitle9ComponentFv
+/* 80235558 00231398  38 80 00 3C */	li r4, 0x3c
+/* 8023555C 0023139C  48 19 57 C5 */	bl requestStopPowerful__Q43scn4step5ostop7ManagerFUl
+/* 80235560 002313A0  80 02 A4 10 */	lwz r0, $$259635-_SDA2_BASE_(r2)
+/* 80235564 002313A4  90 01 00 08 */	stw r0, 8(r1)
+/* 80235568 002313A8  7F 63 DB 78 */	mr r3, r27
+/* 8023556C 002313AC  4B E4 01 C5 */	bl GKI_getfirst
+/* 80235570 002313B0  4B FE B2 D9 */	bl screenFade__Q33scn4step9ComponentFv
+/* 80235574 002313B4  38 81 00 08 */	addi r4, r1, 8
+/* 80235578 002313B8  48 19 77 9D */	bl setColor__Q43scn4step3sfx6BGFadeFRC8_GXColor
+/* 8023557C 002313BC  7F 63 DB 78 */	mr r3, r27
+/* 80235580 002313C0  4B E4 01 B1 */	bl GKI_getfirst
+/* 80235584 002313C4  4B FE B2 C5 */	bl screenFade__Q33scn4step9ComponentFv
+/* 80235588 002313C8  38 80 00 3C */	li r4, 0x3c
+/* 8023558C 002313CC  48 19 77 7D */	bl setFadeIn__Q43scn4step3sfx6BGFadeFUl
+/* 80235590 002313D0  7F 63 DB 78 */	mr r3, r27
+/* 80235594 002313D4  4B E4 01 9D */	bl GKI_getfirst
+/* 80235598 002313D8  4B FE B5 21 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8023559C 002313DC  38 80 00 09 */	li r4, 9
+/* 802355A0 002313E0  48 02 E6 99 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 802355A4 002313E4  7F 63 DB 78 */	mr r3, r27
+/* 802355A8 002313E8  4B E4 01 89 */	bl GKI_getfirst
+/* 802355AC 002313EC  4B FD 00 1D */	bl commander__Q33scn10grandtitle9ComponentFv
+/* 802355B0 002313F0  7C 7F 1B 78 */	mr r31, r3
+/* 802355B4 002313F4  7F 63 DB 78 */	mr r3, r27
+/* 802355B8 002313F8  4B FF 79 71 */	bl location__Q43scn4step4boss4BossCFv
+/* 802355BC 002313FC  7C 64 1B 78 */	mr r4, r3
+/* 802355C0 00231400  38 61 00 0C */	addi r3, r1, 0xc
+/* 802355C4 00231404  48 03 A0 F1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802355C8 00231408  38 61 00 18 */	addi r3, r1, 0x18
+/* 802355CC 0023140C  38 81 00 0C */	addi r4, r1, 0xc
+/* 802355D0 00231410  7F 85 E3 78 */	mr r5, r28
+/* 802355D4 00231414  4B F5 FF 0D */	bl __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 802355D8 00231418  38 7F 00 D0 */	addi r3, r31, 0xd0
+/* 802355DC 0023141C  38 80 00 3D */	li r4, 0x3d
+/* 802355E0 00231420  38 A1 00 18 */	addi r5, r1, 0x18
+/* 802355E4 00231424  48 04 29 A1 */	bl requestCharaFrontP__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+/* 802355E8 00231428  7F 63 DB 78 */	mr r3, r27
+/* 802355EC 0023142C  4B FF 79 65 */	bl soundSE__Q43scn4step4boss4BossFv
+/* 802355F0 00231430  4B FB 7C 41 */	bl groupLYTBG__Q33scn14challengetitle13EffectManagerFv
+/* 802355F4 00231434  7F A4 EB 78 */	mr r4, r29
+/* 802355F8 00231438  48 1C D6 DD */	bl start__Q23snd11SERequestorFUl
+/* 802355FC 0023143C  7F 63 DB 78 */	mr r3, r27
+/* 80235600 00231440  4B E4 01 31 */	bl GKI_getfirst
+/* 80235604 00231444  4B FE B8 65 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80235608 00231448  4B FF C6 A9 */	bl arenaCtrl__Q43scn4step4boss7ManagerFv
+/* 8023560C 0023144C  4B DE EE 95 */	bl DefaultSwitchThreadCallback
+/* 80235610 00231450  2C 1E 00 00 */	cmpwi r30, 0
+/* 80235614 00231454  40 82 00 14 */	bne lbl_80235628
+/* 80235618 00231458  7F 63 DB 78 */	mr r3, r27
+/* 8023561C 0023145C  4B E4 01 15 */	bl GKI_getfirst
+/* 80235620 00231460  4B FE B7 D9 */	bl heroManager__Q33scn4step9ComponentFv
+/* 80235624 00231464  48 11 2B 49 */	bl setPreventDamage__Q43scn4step4hero7ManagerFv
+lbl_80235628:
+/* 80235628 00231468  39 61 00 40 */	addi r11, r1, 0x40
+/* 8023562C 0023146C  4B DD 1D 5D */	bl func_80007388
+/* 80235630 00231470  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80235634 00231474  7C 08 03 A6 */	mtlr r0
+/* 80235638 00231478  38 21 00 40 */	addi r1, r1, 0x40
+/* 8023563C 0023147C  4E 80 00 20 */	blr 
+
+.global StagingBossDamageL__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+StagingBossDamageL__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 80235640 00231480  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80235644 00231484  7C 08 02 A6 */	mflr r0
+/* 80235648 00231488  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8023564C 0023148C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80235650 00231490  7C 7F 1B 78 */	mr r31, r3
+/* 80235654 00231494  80 02 A4 14 */	lwz r0, $$259696-_SDA2_BASE_(r2)
+/* 80235658 00231498  90 01 00 08 */	stw r0, 8(r1)
+/* 8023565C 0023149C  4B E4 00 D5 */	bl GKI_getfirst
+/* 80235660 002314A0  4B FE B1 E9 */	bl screenFade__Q33scn4step9ComponentFv
+/* 80235664 002314A4  38 81 00 08 */	addi r4, r1, 8
+/* 80235668 002314A8  48 19 76 AD */	bl setColor__Q43scn4step3sfx6BGFadeFRC8_GXColor
+/* 8023566C 002314AC  7F E3 FB 78 */	mr r3, r31
+/* 80235670 002314B0  4B E4 00 C1 */	bl GKI_getfirst
+/* 80235674 002314B4  4B FE B1 D5 */	bl screenFade__Q33scn4step9ComponentFv
+/* 80235678 002314B8  38 80 00 14 */	li r4, 0x14
+/* 8023567C 002314BC  48 19 76 8D */	bl setFadeIn__Q43scn4step3sfx6BGFadeFUl
+/* 80235680 002314C0  7F E3 FB 78 */	mr r3, r31
+/* 80235684 002314C4  4B E4 00 AD */	bl GKI_getfirst
+/* 80235688 002314C8  4B FE B4 31 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8023568C 002314CC  38 80 00 07 */	li r4, 7
+/* 80235690 002314D0  48 02 E5 A9 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 80235694 002314D4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80235698 002314D8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8023569C 002314DC  7C 08 03 A6 */	mtlr r0
+/* 802356A0 002314E0  38 21 00 20 */	addi r1, r1, 0x20
+/* 802356A4 002314E4  4E 80 00 20 */	blr 
+
+.global IsInScreen__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossf
+IsInScreen__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossf:
+/* 802356A8 002314E8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 802356AC 002314EC  7C 08 02 A6 */	mflr r0
+/* 802356B0 002314F0  90 01 00 54 */	stw r0, 0x54(r1)
+/* 802356B4 002314F4  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 802356B8 002314F8  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 802356BC 002314FC  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 802356C0 00231500  7C 7F 1B 78 */	mr r31, r3
+/* 802356C4 00231504  FF E0 08 90 */	fmr f31, f1
+/* 802356C8 00231508  4B FF 78 61 */	bl location__Q43scn4step4boss4BossCFv
+/* 802356CC 0023150C  7C 64 1B 78 */	mr r4, r3
+/* 802356D0 00231510  38 61 00 10 */	addi r3, r1, 0x10
+/* 802356D4 00231514  48 03 9F E1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802356D8 00231518  38 61 00 08 */	addi r3, r1, 8
+/* 802356DC 0023151C  38 81 00 10 */	addi r4, r1, 0x10
+/* 802356E0 00231520  4B F8 D4 ED */	bl getXY__Q33hel4math7Vector3CFv
+/* 802356E4 00231524  7F E3 FB 78 */	mr r3, r31
+/* 802356E8 00231528  4B E4 00 49 */	bl GKI_getfirst
+/* 802356EC 0023152C  4B FE B4 9D */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 802356F0 00231530  7C 64 1B 78 */	mr r4, r3
+/* 802356F4 00231534  38 61 00 20 */	addi r3, r1, 0x20
+/* 802356F8 00231538  48 03 0A 4D */	bl getViewRect__Q43scn4step6camera10MainCameraCFv
+/* 802356FC 0023153C  C0 01 00 28 */	lfs f0, 0x28(r1)
+/* 80235700 00231540  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 80235704 00231544  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 80235708 00231548  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 8023570C 0023154C  EC 00 F8 2A */	fadds f0, f0, f31
+/* 80235710 00231550  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 80235714 00231554  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 80235718 00231558  EC 00 F8 2A */	fadds f0, f0, f31
+/* 8023571C 0023155C  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 80235720 00231560  C0 01 00 24 */	lfs f0, 0x24(r1)
+/* 80235724 00231564  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 80235728 00231568  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 8023572C 0023156C  38 61 00 20 */	addi r3, r1, 0x20
+/* 80235730 00231570  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80235734 00231574  C0 41 00 0C */	lfs f2, 0xc(r1)
+/* 80235738 00231578  4B F6 A7 A1 */	bl isInclude__Q33hel3geo4RectCFff
+/* 8023573C 0023157C  7C 7F 1B 78 */	mr r31, r3
+/* 80235740 00231580  38 61 00 20 */	addi r3, r1, 0x20
+/* 80235744 00231584  38 80 FF FF */	li r4, -1
+/* 80235748 00231588  4B F6 A6 F5 */	bl __dt__Q33hel3geo4RectFv
+/* 8023574C 0023158C  7F E3 FB 78 */	mr r3, r31
+/* 80235750 00231590  38 00 00 48 */	li r0, 0x48
+/* 80235754 00231594  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80235758 00231598  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 8023575C 0023159C  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80235760 002315A0  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80235764 002315A4  7C 08 03 A6 */	mtlr r0
+/* 80235768 002315A8  38 21 00 50 */	addi r1, r1, 0x50
+/* 8023576C 002315AC  4E 80 00 20 */	blr 
+
+.global IsBossMBoss__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind
+IsBossMBoss__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind:
+/* 80235770 002315B0  38 03 FF FC */	addi r0, r3, -4
+/* 80235774 002315B4  28 00 00 04 */	cmplwi r0, 4
+/* 80235778 002315B8  40 81 00 14 */	ble lbl_8023578C
+/* 8023577C 002315BC  2C 03 00 02 */	cmpwi r3, 2
+/* 80235780 002315C0  41 82 00 0C */	beq lbl_8023578C
+/* 80235784 002315C4  2C 03 00 0A */	cmpwi r3, 0xa
+/* 80235788 002315C8  40 82 00 0C */	bne lbl_80235794
+lbl_8023578C:
+/* 8023578C 002315CC  38 60 00 01 */	li r3, 1
+/* 80235790 002315D0  4E 80 00 20 */	blr 
+lbl_80235794:
+/* 80235794 002315D4  38 60 00 00 */	li r3, 0
+/* 80235798 002315D8  4E 80 00 20 */	blr 
+
+.global GetInfoBossName__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind
+GetInfoBossName__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind:
+/* 8023579C 002315DC  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 802357A0 002315E0  38 C1 00 04 */	addi r6, r1, 4
+/* 802357A4 002315E4  3C 80 80 41 */	lis r4, $$259919@ha
+/* 802357A8 002315E8  38 84 64 90 */	addi r4, r4, $$259919@l
+/* 802357AC 002315EC  38 A4 FF FC */	addi r5, r4, -4
+/* 802357B0 002315F0  38 00 00 0D */	li r0, 0xd
+/* 802357B4 002315F4  7C 09 03 A6 */	mtctr r0
+lbl_802357B8:
+/* 802357B8 002315F8  80 85 00 04 */	lwz r4, 4(r5)
+/* 802357BC 002315FC  84 05 00 08 */	lwzu r0, 8(r5)
+/* 802357C0 00231600  90 86 00 04 */	stw r4, 4(r6)
+/* 802357C4 00231604  94 06 00 08 */	stwu r0, 8(r6)
+/* 802357C8 00231608  42 00 FF F0 */	bdnz lbl_802357B8
+/* 802357CC 0023160C  80 05 00 04 */	lwz r0, 4(r5)
+/* 802357D0 00231610  90 06 00 04 */	stw r0, 4(r6)
+/* 802357D4 00231614  54 60 10 3A */	slwi r0, r3, 2
+/* 802357D8 00231618  38 61 00 08 */	addi r3, r1, 8
+/* 802357DC 0023161C  7C 63 00 2E */	lwzx r3, r3, r0
+/* 802357E0 00231620  38 21 00 80 */	addi r1, r1, 0x80
+/* 802357E4 00231624  4E 80 00 20 */	blr 
+
+.global GetInfoBossName__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKindQ43scn4step3map11BinBossKind
+GetInfoBossName__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKindQ43scn4step3map11BinBossKind:
+/* 802357E8 00231628  38 00 00 01 */	li r0, 1
+/* 802357EC 0023162C  7C 03 18 30 */	slw r3, r0, r3
+/* 802357F0 00231630  7C 00 20 30 */	slw r0, r0, r4
+/* 802357F4 00231634  7C 60 03 78 */	or r0, r3, r0
+/* 802357F8 00231638  28 00 00 24 */	cmplwi r0, 0x24
+/* 802357FC 0023163C  40 82 00 0C */	bne lbl_80235808
+/* 80235800 00231640  38 60 00 17 */	li r3, 0x17
+/* 80235804 00231644  4E 80 00 20 */	blr 
+lbl_80235808:
+/* 80235808 00231648  28 00 00 44 */	cmplwi r0, 0x44
+/* 8023580C 0023164C  40 82 00 0C */	bne lbl_80235818
+/* 80235810 00231650  38 60 00 19 */	li r3, 0x19
+/* 80235814 00231654  4E 80 00 20 */	blr 
+lbl_80235818:
+/* 80235818 00231658  28 00 04 40 */	cmplwi r0, 0x440
+/* 8023581C 0023165C  40 82 00 0C */	bne lbl_80235828
+/* 80235820 00231660  38 60 00 1B */	li r3, 0x1b
+/* 80235824 00231664  4E 80 00 20 */	blr 
+lbl_80235828:
+/* 80235828 00231668  28 00 04 20 */	cmplwi r0, 0x420
+/* 8023582C 0023166C  40 82 00 0C */	bne lbl_80235838
+/* 80235830 00231670  38 60 00 1D */	li r3, 0x1d
+/* 80235834 00231674  4E 80 00 20 */	blr 
+lbl_80235838:
+/* 80235838 00231678  28 00 04 80 */	cmplwi r0, 0x480
+/* 8023583C 0023167C  38 60 00 23 */	li r3, 0x23
+/* 80235840 00231680  4C 82 00 20 */	bnelr 
+/* 80235844 00231684  38 60 00 1F */	li r3, 0x1f
+/* 80235848 00231688  4E 80 00 20 */	blr 
+
+.global GetInfoBossNameEx__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind
+GetInfoBossNameEx__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKind:
+/* 8023584C 0023168C  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 80235850 00231690  38 C1 00 04 */	addi r6, r1, 4
+/* 80235854 00231694  3C 80 80 41 */	lis r4, $$259947@ha
+/* 80235858 00231698  38 84 64 FC */	addi r4, r4, $$259947@l
+/* 8023585C 0023169C  38 A4 FF FC */	addi r5, r4, -4
+/* 80235860 002316A0  38 00 00 0D */	li r0, 0xd
+/* 80235864 002316A4  7C 09 03 A6 */	mtctr r0
+lbl_80235868:
+/* 80235868 002316A8  80 85 00 04 */	lwz r4, 4(r5)
+/* 8023586C 002316AC  84 05 00 08 */	lwzu r0, 8(r5)
+/* 80235870 002316B0  90 86 00 04 */	stw r4, 4(r6)
+/* 80235874 002316B4  94 06 00 08 */	stwu r0, 8(r6)
+/* 80235878 002316B8  42 00 FF F0 */	bdnz lbl_80235868
+/* 8023587C 002316BC  80 05 00 04 */	lwz r0, 4(r5)
+/* 80235880 002316C0  90 06 00 04 */	stw r0, 4(r6)
+/* 80235884 002316C4  54 60 10 3A */	slwi r0, r3, 2
+/* 80235888 002316C8  38 61 00 08 */	addi r3, r1, 8
+/* 8023588C 002316CC  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80235890 002316D0  38 21 00 80 */	addi r1, r1, 0x80
+/* 80235894 002316D4  4E 80 00 20 */	blr 
+
+.global GetInfoBossNameEx__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKindQ43scn4step3map11BinBossKind
+GetInfoBossNameEx__Q43scn4step4boss7UtilityFQ43scn4step3map11BinBossKindQ43scn4step3map11BinBossKind:
+/* 80235898 002316D8  38 00 00 01 */	li r0, 1
+/* 8023589C 002316DC  7C 03 18 30 */	slw r3, r0, r3
+/* 802358A0 002316E0  7C 00 20 30 */	slw r0, r0, r4
+/* 802358A4 002316E4  7C 60 03 78 */	or r0, r3, r0
+/* 802358A8 002316E8  28 00 00 24 */	cmplwi r0, 0x24
+/* 802358AC 002316EC  40 82 00 0C */	bne lbl_802358B8
+/* 802358B0 002316F0  38 60 00 18 */	li r3, 0x18
+/* 802358B4 002316F4  4E 80 00 20 */	blr 
+lbl_802358B8:
+/* 802358B8 002316F8  28 00 00 44 */	cmplwi r0, 0x44
+/* 802358BC 002316FC  40 82 00 0C */	bne lbl_802358C8
+/* 802358C0 00231700  38 60 00 1A */	li r3, 0x1a
+/* 802358C4 00231704  4E 80 00 20 */	blr 
+lbl_802358C8:
+/* 802358C8 00231708  28 00 04 40 */	cmplwi r0, 0x440
+/* 802358CC 0023170C  40 82 00 0C */	bne lbl_802358D8
+/* 802358D0 00231710  38 60 00 1C */	li r3, 0x1c
+/* 802358D4 00231714  4E 80 00 20 */	blr 
+lbl_802358D8:
+/* 802358D8 00231718  28 00 04 20 */	cmplwi r0, 0x420
+/* 802358DC 0023171C  40 82 00 0C */	bne lbl_802358E8
+/* 802358E0 00231720  38 60 00 1E */	li r3, 0x1e
+/* 802358E4 00231724  4E 80 00 20 */	blr 
+lbl_802358E8:
+/* 802358E8 00231728  28 00 04 80 */	cmplwi r0, 0x480
+/* 802358EC 0023172C  40 82 00 0C */	bne lbl_802358F8
+/* 802358F0 00231730  38 60 00 20 */	li r3, 0x20
+/* 802358F4 00231734  4E 80 00 20 */	blr 
+lbl_802358F8:
+/* 802358F8 00231738  28 00 00 A0 */	cmplwi r0, 0xa0
+/* 802358FC 0023173C  40 82 00 0C */	bne lbl_80235908
+/* 80235900 00231740  38 60 00 21 */	li r3, 0x21
+/* 80235904 00231744  4E 80 00 20 */	blr 
+lbl_80235908:
+/* 80235908 00231748  28 00 01 10 */	cmplwi r0, 0x110
+/* 8023590C 0023174C  38 60 00 23 */	li r3, 0x23
+/* 80235910 00231750  4C 82 00 20 */	bnelr 
+/* 80235914 00231754  38 60 00 22 */	li r3, 0x22
+/* 80235918 00231758  4E 80 00 20 */	blr 
+
+.global ControlHateOnAction__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+ControlHateOnAction__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 8023591C 0023175C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80235920 00231760  7C 08 02 A6 */	mflr r0
+/* 80235924 00231764  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80235928 00231768  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8023592C 0023176C  7C 7F 1B 78 */	mr r31, r3
+/* 80235930 00231770  4B FF 76 D1 */	bl hateCtrl__Q43scn4step4boss4BossFv
+/* 80235934 00231774  38 80 00 18 */	li r4, 0x18
+/* 80235938 00231778  4B FF AF 01 */	bl subTop__Q43scn4step4boss8HateCtrlFUl
+/* 8023593C 0023177C  7F E3 FB 78 */	mr r3, r31
+/* 80235940 00231780  4B FF 76 C1 */	bl hateCtrl__Q43scn4step4boss4BossFv
+/* 80235944 00231784  4B FF AF DD */	bl shiftSearchTop__Q43scn4step4boss8HateCtrlFv
+/* 80235948 00231788  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8023594C 0023178C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80235950 00231790  7C 08 03 A6 */	mtlr r0
+/* 80235954 00231794  38 21 00 10 */	addi r1, r1, 0x10
+/* 80235958 00231798  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToMainPlayer__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+SetRotHTargetToMainPlayer__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 8023595C 0023179C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80235960 002317A0  7C 08 02 A6 */	mflr r0
+/* 80235964 002317A4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80235968 002317A8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8023596C 002317AC  7C 7F 1B 78 */	mr r31, r3
+/* 80235970 002317B0  4B E3 FD C1 */	bl GKI_getfirst
+/* 80235974 002317B4  4B FE B4 85 */	bl heroManager__Q33scn4step9ComponentFv
+/* 80235978 002317B8  7C 64 1B 78 */	mr r4, r3
+/* 8023597C 002317BC  38 61 00 08 */	addi r3, r1, 8
+/* 80235980 002317C0  48 11 11 91 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 80235984 002317C4  7F E3 FB 78 */	mr r3, r31
+/* 80235988 002317C8  38 81 00 08 */	addi r4, r1, 8
+/* 8023598C 002317CC  48 00 00 7D */	bl SetRotHTargetToPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3
+/* 80235990 002317D0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80235994 002317D4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80235998 002317D8  7C 08 03 A6 */	mtlr r0
+/* 8023599C 002317DC  38 21 00 20 */	addi r1, r1, 0x20
+/* 802359A0 002317E0  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToCamera__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
+SetRotHTargetToCamera__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss:
+/* 802359A4 002317E4  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 802359A8 002317E8  7C 08 02 A6 */	mflr r0
+/* 802359AC 002317EC  90 01 00 34 */	stw r0, 0x34(r1)
+/* 802359B0 002317F0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 802359B4 002317F4  7C 7F 1B 78 */	mr r31, r3
+/* 802359B8 002317F8  4B E3 FD 79 */	bl GKI_getfirst
+/* 802359BC 002317FC  4B FE B1 CD */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 802359C0 00231800  7C 64 1B 78 */	mr r4, r3
+/* 802359C4 00231804  38 61 00 08 */	addi r3, r1, 8
+/* 802359C8 00231808  48 03 02 A1 */	bl getCenter__Q43scn4step6camera10MainCameraCFv
+/* 802359CC 0023180C  38 61 00 10 */	addi r3, r1, 0x10
+/* 802359D0 00231810  38 81 00 08 */	addi r4, r1, 8
+/* 802359D4 00231814  4B F6 9A 89 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 802359D8 00231818  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 802359DC 0023181C  C0 02 A4 1C */	lfs f0, $$261476-_SDA2_BASE_(r2)
+/* 802359E0 00231820  EC 01 00 2A */	fadds f0, f1, f0
+/* 802359E4 00231824  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 802359E8 00231828  7F E3 FB 78 */	mr r3, r31
+/* 802359EC 0023182C  38 81 00 10 */	addi r4, r1, 0x10
+/* 802359F0 00231830  48 00 00 19 */	bl SetRotHTargetToPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3
+/* 802359F4 00231834  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 802359F8 00231838  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 802359FC 0023183C  7C 08 03 A6 */	mtlr r0
+/* 80235A00 00231840  38 21 00 30 */	addi r1, r1, 0x30
+/* 80235A04 00231844  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3
+SetRotHTargetToPos__Q43scn4step4boss7UtilityFRQ43scn4step4boss4BossRCQ33hel4math7Vector3:
+/* 80235A08 00231848  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 80235A0C 0023184C  7C 08 02 A6 */	mflr r0
+/* 80235A10 00231850  90 01 00 74 */	stw r0, 0x74(r1)
+/* 80235A14 00231854  DB E1 00 60 */	stfd f31, 0x60(r1)
+/* 80235A18 00231858  F3 E1 00 68 */	psq_st f31, 104(r1), 0, qr0
+/* 80235A1C 0023185C  DB C1 00 50 */	stfd f30, 0x50(r1)
+/* 80235A20 00231860  F3 C1 00 58 */	psq_st f30, 88(r1), 0, qr0
+/* 80235A24 00231864  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 80235A28 00231868  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 80235A2C 0023186C  7C 7E 1B 78 */	mr r30, r3
+/* 80235A30 00231870  7C 9F 23 78 */	mr r31, r4
+/* 80235A34 00231874  4B FF 74 F5 */	bl location__Q43scn4step4boss4BossCFv
+/* 80235A38 00231878  7C 64 1B 78 */	mr r4, r3
+/* 80235A3C 0023187C  38 61 00 2C */	addi r3, r1, 0x2c
+/* 80235A40 00231880  48 03 9C 75 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80235A44 00231884  80 7F 00 00 */	lwz r3, 0(r31)
+/* 80235A48 00231888  80 1F 00 04 */	lwz r0, 4(r31)
+/* 80235A4C 0023188C  90 61 00 20 */	stw r3, 0x20(r1)
+/* 80235A50 00231890  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80235A54 00231894  80 1F 00 08 */	lwz r0, 8(r31)
+/* 80235A58 00231898  90 01 00 28 */	stw r0, 0x28(r1)
+/* 80235A5C 0023189C  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 80235A60 002318A0  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80235A64 002318A4  EC 01 00 28 */	fsubs f0, f1, f0
+/* 80235A68 002318A8  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 80235A6C 002318AC  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 80235A70 002318B0  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 80235A74 002318B4  EC 01 00 28 */	fsubs f0, f1, f0
+/* 80235A78 002318B8  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 80235A7C 002318BC  C0 21 00 28 */	lfs f1, 0x28(r1)
+/* 80235A80 002318C0  C0 01 00 34 */	lfs f0, 0x34(r1)
+/* 80235A84 002318C4  EC 01 00 28 */	fsubs f0, f1, f0
+/* 80235A88 002318C8  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 80235A8C 002318CC  38 61 00 38 */	addi r3, r1, 0x38
+/* 80235A90 002318D0  38 81 00 20 */	addi r4, r1, 0x20
+/* 80235A94 002318D4  4B F4 6B 35 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80235A98 002318D8  C0 21 00 40 */	lfs f1, 0x40(r1)
+/* 80235A9C 002318DC  C0 02 A4 18 */	lfs f0, $$261417-_SDA2_BASE_(r2)
+/* 80235AA0 002318E0  EC 41 00 32 */	fmuls f2, f1, f0
+/* 80235AA4 002318E4  D0 41 00 40 */	stfs f2, 0x40(r1)
+/* 80235AA8 002318E8  38 61 00 18 */	addi r3, r1, 0x18
+/* 80235AAC 002318EC  C0 21 00 38 */	lfs f1, 0x38(r1)
+/* 80235AB0 002318F0  4B F6 98 F9 */	bl set__Q33hel4math7Vector2Fff
+/* 80235AB4 002318F4  3B E0 00 00 */	li r31, 0
+/* 80235AB8 002318F8  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 80235ABC 002318FC  C0 4D EE 28 */	lfs f2, ZERO__Q33hel4math7Vector2-_SDA_BASE_(r13)
+/* 80235AC0 00231900  C0 62 A4 20 */	lfs f3, $$261507-_SDA2_BASE_(r2)
+/* 80235AC4 00231904  4B F7 FE 71 */	bl Equals__Q33hel4math4MathFfff
+/* 80235AC8 00231908  2C 03 00 00 */	cmpwi r3, 0
+/* 80235ACC 0023190C  41 82 00 24 */	beq lbl_80235AF0
+/* 80235AD0 00231910  C0 21 00 1C */	lfs f1, 0x1c(r1)
+/* 80235AD4 00231914  38 6D EE 28 */	addi r3, r13, ZERO__Q33hel4math7Vector2-_SDA_BASE_
+/* 80235AD8 00231918  C0 43 00 04 */	lfs f2, 4(r3)
+/* 80235ADC 0023191C  C0 62 A4 20 */	lfs f3, $$261507-_SDA2_BASE_(r2)
+/* 80235AE0 00231920  4B F7 FE 55 */	bl Equals__Q33hel4math4MathFfff
+/* 80235AE4 00231924  2C 03 00 00 */	cmpwi r3, 0
+/* 80235AE8 00231928  41 82 00 08 */	beq lbl_80235AF0
+/* 80235AEC 0023192C  3B E0 00 01 */	li r31, 1
+lbl_80235AF0:
+/* 80235AF0 00231930  2C 1F 00 00 */	cmpwi r31, 0
+/* 80235AF4 00231934  40 82 01 34 */	bne lbl_80235C28
+/* 80235AF8 00231938  7F C3 F3 78 */	mr r3, r30
+/* 80235AFC 0023193C  4B FF 74 1D */	bl target__Q43scn4step4boss4BossFv
+/* 80235B00 00231940  4B F6 65 A1 */	bl getSign__Q24gobj6TargetCFv
+/* 80235B04 00231944  FF E0 08 90 */	fmr f31, f1
+/* 80235B08 00231948  38 61 00 08 */	addi r3, r1, 8
+/* 80235B0C 0023194C  38 8D EE 38 */	addi r4, r13, BASIS_X__Q33hel4math7Vector2-_SDA_BASE_
+/* 80235B10 00231950  4B F1 5E 59 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80235B14 00231954  7C 64 1B 78 */	mr r4, r3
+/* 80235B18 00231958  C0 03 00 00 */	lfs f0, 0(r3)
+/* 80235B1C 0023195C  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 80235B20 00231960  D0 03 00 00 */	stfs f0, 0(r3)
+/* 80235B24 00231964  C0 03 00 04 */	lfs f0, 4(r3)
+/* 80235B28 00231968  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 80235B2C 0023196C  D0 03 00 04 */	stfs f0, 4(r3)
+/* 80235B30 00231970  38 61 00 10 */	addi r3, r1, 0x10
+/* 80235B34 00231974  4B F1 5E 35 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80235B38 00231978  38 61 00 10 */	addi r3, r1, 0x10
+/* 80235B3C 0023197C  38 81 00 18 */	addi r4, r1, 0x18
+/* 80235B40 00231980  4B F6 96 F1 */	bl signedAngle__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 80235B44 00231984  FF E0 08 90 */	fmr f31, f1
+/* 80235B48 00231988  7F C3 F3 78 */	mr r3, r30
+/* 80235B4C 0023198C  4B FF 73 CD */	bl target__Q43scn4step4boss4BossFv
+/* 80235B50 00231990  4B F6 65 51 */	bl getSign__Q24gobj6TargetCFv
+/* 80235B54 00231994  FC 00 08 50 */	fneg f0, f1
+/* 80235B58 00231998  EC 3F 00 32 */	fmuls f1, f31, f0
+/* 80235B5C 0023199C  C0 02 A4 24 */	lfs f0, $$261509-_SDA2_BASE_(r2)
+/* 80235B60 002319A0  EC 20 00 72 */	fmuls f1, f0, f1
+/* 80235B64 002319A4  C0 02 A4 2C */	lfs f0, $$261511-_SDA2_BASE_(r2)
+/* 80235B68 002319A8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80235B6C 002319AC  40 81 00 1C */	ble lbl_80235B88
+/* 80235B70 002319B0  38 6D AA D0 */	addi r3, r13, $$260100-_SDA_BASE_
+/* 80235B74 002319B4  38 8D AA D4 */	addi r4, r13, $$260101-_SDA_BASE_
+/* 80235B78 002319B8  C0 02 A4 28 */	lfs f0, $$261510-_SDA2_BASE_(r2)
+/* 80235B7C 002319BC  EC 21 00 24 */	fdivs f1, f1, f0
+/* 80235B80 002319C0  4B FC 8E 3D */	bl LinearInterpolation$$0f$$1__Q33hel4math4MathFRCfRCff_Cf
+/* 80235B84 002319C4  48 00 00 1C */	b lbl_80235BA0
+lbl_80235B88:
+/* 80235B88 002319C8  38 6D AA D8 */	addi r3, r13, $$260103-_SDA_BASE_
+/* 80235B8C 002319CC  38 8D AA DC */	addi r4, r13, $$260104-_SDA_BASE_
+/* 80235B90 002319D0  FC 20 08 50 */	fneg f1, f1
+/* 80235B94 002319D4  C0 02 A4 28 */	lfs f0, $$261510-_SDA2_BASE_(r2)
+/* 80235B98 002319D8  EC 21 00 24 */	fdivs f1, f1, f0
+/* 80235B9C 002319DC  4B FC 8E 21 */	bl LinearInterpolation$$0f$$1__Q33hel4math4MathFRCfRCff_Cf
+lbl_80235BA0:
+/* 80235BA0 002319E0  FF C0 08 90 */	fmr f30, f1
+/* 80235BA4 002319E4  7F C3 F3 78 */	mr r3, r30
+/* 80235BA8 002319E8  4B FF 73 71 */	bl target__Q43scn4step4boss4BossFv
+/* 80235BAC 002319EC  4B F6 64 F5 */	bl getSign__Q24gobj6TargetCFv
+/* 80235BB0 002319F0  FF E0 08 90 */	fmr f31, f1
+/* 80235BB4 002319F4  7F C3 F3 78 */	mr r3, r30
+/* 80235BB8 002319F8  4B FF 73 81 */	bl model__Q43scn4step4boss4BossFv
+/* 80235BBC 002319FC  48 03 06 51 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 80235BC0 00231A00  4B F8 73 35 */	bl getToLeftDist__Q35mcoll6detail19ShapeDiamondContextCFv
+/* 80235BC4 00231A04  EC 61 07 F2 */	fmuls f3, f1, f31
+/* 80235BC8 00231A08  C0 42 A4 30 */	lfs f2, $$261512-_SDA2_BASE_(r2)
+/* 80235BCC 00231A0C  C0 02 A4 34 */	lfs f0, $$261513-_SDA2_BASE_(r2)
+/* 80235BD0 00231A10  48 00 00 08 */	b lbl_80235BD8
+lbl_80235BD4:
+/* 80235BD4 00231A14  EF DE 10 2A */	fadds f30, f30, f2
+lbl_80235BD8:
+/* 80235BD8 00231A18  EC 3E 18 28 */	fsubs f1, f30, f3
+/* 80235BDC 00231A1C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80235BE0 00231A20  41 81 FF F4 */	bgt lbl_80235BD4
+/* 80235BE4 00231A24  C0 42 A4 38 */	lfs f2, $$261514-_SDA2_BASE_(r2)
+/* 80235BE8 00231A28  C0 02 A4 3C */	lfs f0, $$261515-_SDA2_BASE_(r2)
+/* 80235BEC 00231A2C  48 00 00 08 */	b lbl_80235BF4
+lbl_80235BF0:
+/* 80235BF0 00231A30  EF DE 10 2A */	fadds f30, f30, f2
+lbl_80235BF4:
+/* 80235BF4 00231A34  EC 3E 18 28 */	fsubs f1, f30, f3
+/* 80235BF8 00231A38  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80235BFC 00231A3C  41 80 FF F4 */	blt lbl_80235BF0
+/* 80235C00 00231A40  7F C3 F3 78 */	mr r3, r30
+/* 80235C04 00231A44  4B FF 73 35 */	bl model__Q43scn4step4boss4BossFv
+/* 80235C08 00231A48  48 03 06 05 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 80235C0C 00231A4C  C0 22 A4 40 */	lfs f1, $$261516-_SDA2_BASE_(r2)
+/* 80235C10 00231A50  4B F6 57 B1 */	bl setMoveRate__Q24gobj4MoveFf
+/* 80235C14 00231A54  7F C3 F3 78 */	mr r3, r30
+/* 80235C18 00231A58  4B FF 73 21 */	bl model__Q43scn4step4boss4BossFv
+/* 80235C1C 00231A5C  48 03 05 F1 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 80235C20 00231A60  FC 20 F0 90 */	fmr f1, f30
+/* 80235C24 00231A64  4B F6 57 65 */	bl setSpeedD__Q24gobj4MoveFf
+lbl_80235C28:
+/* 80235C28 00231A68  38 00 00 68 */	li r0, 0x68
+/* 80235C2C 00231A6C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80235C30 00231A70  CB E1 00 60 */	lfd f31, 0x60(r1)
+/* 80235C34 00231A74  38 00 00 58 */	li r0, 0x58
+/* 80235C38 00231A78  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80235C3C 00231A7C  CB C1 00 50 */	lfd f30, 0x50(r1)
+/* 80235C40 00231A80  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 80235C44 00231A84  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 80235C48 00231A88  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 80235C4C 00231A8C  7C 08 03 A6 */	mtlr r0
+/* 80235C50 00231A90  38 21 00 70 */	addi r1, r1, 0x70
+/* 80235C54 00231A94  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E0D4 00289F14  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028E0D8 00289F18  7C 08 02 A6 */	mflr r0
+/* 8028E0DC 00289F1C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028E0E0 00289F20  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 8028E0E4 00289F24  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 8028E0E8 00289F28  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E0EC 00289F2C  7C 7F 1B 78 */	mr r31, r3
+/* 8028E0F0 00289F30  C3 E2 AF 78 */	lfs f31, $$261487-_SDA2_BASE_(r2)
+/* 8028E0F4 00289F34  4B E9 AB AD */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E0F8 00289F38  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E0FC 00289F3C  41 82 00 28 */	beq lbl_8028E124
+/* 8028E100 00289F40  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E104 00289F44  41 82 00 28 */	beq lbl_8028E12C
+/* 8028E108 00289F48  2C 03 00 03 */	cmpwi r3, 3
+/* 8028E10C 00289F4C  41 82 00 28 */	beq lbl_8028E134
+/* 8028E110 00289F50  2C 03 00 04 */	cmpwi r3, 4
+/* 8028E114 00289F54  41 82 00 28 */	beq lbl_8028E13C
+/* 8028E118 00289F58  2C 03 00 05 */	cmpwi r3, 5
+/* 8028E11C 00289F5C  41 82 00 28 */	beq lbl_8028E144
+/* 8028E120 00289F60  48 00 00 28 */	b lbl_8028E148
+lbl_8028E124:
+/* 8028E124 00289F64  C3 E2 AF 7C */	lfs f31, $$261488-_SDA2_BASE_(r2)
+/* 8028E128 00289F68  48 00 00 20 */	b lbl_8028E148
+lbl_8028E12C:
+/* 8028E12C 00289F6C  C3 E2 AF 80 */	lfs f31, $$261489-_SDA2_BASE_(r2)
+/* 8028E130 00289F70  48 00 00 18 */	b lbl_8028E148
+lbl_8028E134:
+/* 8028E134 00289F74  C3 E2 AF 84 */	lfs f31, $$261490-_SDA2_BASE_(r2)
+/* 8028E138 00289F78  48 00 00 10 */	b lbl_8028E148
+lbl_8028E13C:
+/* 8028E13C 00289F7C  C3 E2 AF 88 */	lfs f31, $$261491-_SDA2_BASE_(r2)
+/* 8028E140 00289F80  48 00 00 08 */	b lbl_8028E148
+lbl_8028E144:
+/* 8028E144 00289F84  C3 E2 AF 8C */	lfs f31, $$261492-_SDA2_BASE_(r2)
+lbl_8028E148:
+/* 8028E148 00289F88  7F E3 FB 78 */	mr r3, r31
+/* 8028E14C 00289F8C  4B E9 B0 55 */	bl isTriggerTarger__Q310homebutton3gui9ComponentFv
+/* 8028E150 00289F90  2C 03 00 00 */	cmpwi r3, 0
+/* 8028E154 00289F94  41 82 00 0C */	beq lbl_8028E160
+/* 8028E158 00289F98  C0 02 AF 90 */	lfs f0, $$261493-_SDA2_BASE_(r2)
+/* 8028E15C 00289F9C  EF FF 00 32 */	fmuls f31, f31, f0
+lbl_8028E160:
+/* 8028E160 00289FA0  7F E3 FB 78 */	mr r3, r31
+/* 8028E164 00289FA4  4B DA 89 FD */	bl GXGetTexObjUserData
+/* 8028E168 00289FA8  2C 03 00 60 */	cmpwi r3, 0x60
+/* 8028E16C 00289FAC  41 82 00 14 */	beq lbl_8028E180
+/* 8028E170 00289FB0  7F E3 FB 78 */	mr r3, r31
+/* 8028E174 00289FB4  4B DA 89 ED */	bl GXGetTexObjUserData
+/* 8028E178 00289FB8  2C 03 00 61 */	cmpwi r3, 0x61
+/* 8028E17C 00289FBC  40 82 00 08 */	bne lbl_8028E184
+lbl_8028E180:
+/* 8028E180 00289FC0  C3 E2 AF 78 */	lfs f31, $$261487-_SDA2_BASE_(r2)
+lbl_8028E184:
+/* 8028E184 00289FC4  FC 20 F8 90 */	fmr f1, f31
+/* 8028E188 00289FC8  38 00 00 18 */	li r0, 0x18
+/* 8028E18C 00289FCC  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028E190 00289FD0  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 8028E194 00289FD4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E198 00289FD8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028E19C 00289FDC  7C 08 03 A6 */	mtlr r0
+/* 8028E1A0 00289FE0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028E1A4 00289FE4  4E 80 00 20 */	blr 
+
+.global GetHpRateBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetHpRateBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E1A8 00289FE8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028E1AC 00289FEC  7C 08 02 A6 */	mflr r0
+/* 8028E1B0 00289FF0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028E1B4 00289FF4  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 8028E1B8 00289FF8  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 8028E1BC 00289FFC  C3 E2 AF 78 */	lfs f31, $$261487-_SDA2_BASE_(r2)
+/* 8028E1C0 0028A000  4B E9 AA E1 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E1C4 0028A004  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E1C8 0028A008  41 82 00 28 */	beq lbl_8028E1F0
+/* 8028E1CC 0028A00C  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E1D0 0028A010  41 82 00 28 */	beq lbl_8028E1F8
+/* 8028E1D4 0028A014  2C 03 00 03 */	cmpwi r3, 3
+/* 8028E1D8 0028A018  41 82 00 28 */	beq lbl_8028E200
+/* 8028E1DC 0028A01C  2C 03 00 04 */	cmpwi r3, 4
+/* 8028E1E0 0028A020  41 82 00 28 */	beq lbl_8028E208
+/* 8028E1E4 0028A024  2C 03 00 05 */	cmpwi r3, 5
+/* 8028E1E8 0028A028  41 82 00 28 */	beq lbl_8028E210
+/* 8028E1EC 0028A02C  48 00 00 28 */	b lbl_8028E214
+lbl_8028E1F0:
+/* 8028E1F0 0028A030  C3 E2 AF 7C */	lfs f31, $$261488-_SDA2_BASE_(r2)
+/* 8028E1F4 0028A034  48 00 00 20 */	b lbl_8028E214
+lbl_8028E1F8:
+/* 8028E1F8 0028A038  C3 E2 AF 94 */	lfs f31, $$261504-_SDA2_BASE_(r2)
+/* 8028E1FC 0028A03C  48 00 00 18 */	b lbl_8028E214
+lbl_8028E200:
+/* 8028E200 0028A040  C3 E2 AF 84 */	lfs f31, $$261490-_SDA2_BASE_(r2)
+/* 8028E204 0028A044  48 00 00 10 */	b lbl_8028E214
+lbl_8028E208:
+/* 8028E208 0028A048  C3 E2 AF 98 */	lfs f31, $$261505-_SDA2_BASE_(r2)
+/* 8028E20C 0028A04C  48 00 00 08 */	b lbl_8028E214
+lbl_8028E210:
+/* 8028E210 0028A050  C3 E2 AF 9C */	lfs f31, $$261506-_SDA2_BASE_(r2)
+lbl_8028E214:
+/* 8028E214 0028A054  FC 20 F8 90 */	fmr f1, f31
+/* 8028E218 0028A058  38 00 00 18 */	li r0, 0x18
+/* 8028E21C 0028A05C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028E220 0028A060  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 8028E224 0028A064  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028E228 0028A068  7C 08 03 A6 */	mtlr r0
+/* 8028E22C 0028A06C  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028E230 0028A070  4E 80 00 20 */	blr 
+
+.global GetObjCollType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetObjCollType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E234 0028A074  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E238 0028A078  7C 08 02 A6 */	mflr r0
+/* 8028E23C 0028A07C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E240 0028A080  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E244 0028A084  7C 7F 1B 78 */	mr r31, r3
+/* 8028E248 0028A088  4B DA 89 19 */	bl GXGetTexObjUserData
+/* 8028E24C 0028A08C  2C 03 00 60 */	cmpwi r3, 0x60
+/* 8028E250 0028A090  41 82 00 14 */	beq lbl_8028E264
+/* 8028E254 0028A094  7F E3 FB 78 */	mr r3, r31
+/* 8028E258 0028A098  4B DA 89 09 */	bl GXGetTexObjUserData
+/* 8028E25C 0028A09C  2C 03 00 61 */	cmpwi r3, 0x61
+/* 8028E260 0028A0A0  40 82 00 44 */	bne lbl_8028E2A4
+lbl_8028E264:
+/* 8028E264 0028A0A4  7F E3 FB 78 */	mr r3, r31
+/* 8028E268 0028A0A8  4B E9 AA 39 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E26C 0028A0AC  2C 03 00 00 */	cmpwi r3, 0
+/* 8028E270 0028A0B0  41 82 00 24 */	beq lbl_8028E294
+/* 8028E274 0028A0B4  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E278 0028A0B8  41 82 00 24 */	beq lbl_8028E29C
+/* 8028E27C 0028A0BC  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E280 0028A0C0  40 82 00 0C */	bne lbl_8028E28C
+/* 8028E284 0028A0C4  C0 22 AF A0 */	lfs f1, $$261527-_SDA2_BASE_(r2)
+/* 8028E288 0028A0C8  48 00 00 60 */	b lbl_8028E2E8
+lbl_8028E28C:
+/* 8028E28C 0028A0CC  C0 22 AF 78 */	lfs f1, $$261487-_SDA2_BASE_(r2)
+/* 8028E290 0028A0D0  48 00 00 58 */	b lbl_8028E2E8
+lbl_8028E294:
+/* 8028E294 0028A0D4  C0 22 AF 94 */	lfs f1, $$261504-_SDA2_BASE_(r2)
+/* 8028E298 0028A0D8  48 00 00 50 */	b lbl_8028E2E8
+lbl_8028E29C:
+/* 8028E29C 0028A0DC  C0 22 AF A4 */	lfs f1, $$261528-_SDA2_BASE_(r2)
+/* 8028E2A0 0028A0E0  48 00 00 48 */	b lbl_8028E2E8
+lbl_8028E2A4:
+/* 8028E2A4 0028A0E4  7F E3 FB 78 */	mr r3, r31
+/* 8028E2A8 0028A0E8  4B E9 2B B9 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
+/* 8028E2AC 0028A0EC  38 03 FE AD */	addi r0, r3, -339
+/* 8028E2B0 0028A0F0  28 00 00 01 */	cmplwi r0, 1
+/* 8028E2B4 0028A0F4  40 81 00 20 */	ble lbl_8028E2D4
+/* 8028E2B8 0028A0F8  2C 03 00 BD */	cmpwi r3, 0xbd
+/* 8028E2BC 0028A0FC  41 82 00 18 */	beq lbl_8028E2D4
+/* 8028E2C0 0028A100  2C 03 00 BC */	cmpwi r3, 0xbc
+/* 8028E2C4 0028A104  41 82 00 18 */	beq lbl_8028E2DC
+/* 8028E2C8 0028A108  2C 03 01 52 */	cmpwi r3, 0x152
+/* 8028E2CC 0028A10C  41 82 00 10 */	beq lbl_8028E2DC
+/* 8028E2D0 0028A110  48 00 00 14 */	b lbl_8028E2E4
+lbl_8028E2D4:
+/* 8028E2D4 0028A114  C0 22 AF A4 */	lfs f1, $$261528-_SDA2_BASE_(r2)
+/* 8028E2D8 0028A118  48 00 00 10 */	b lbl_8028E2E8
+lbl_8028E2DC:
+/* 8028E2DC 0028A11C  C0 22 AF 94 */	lfs f1, $$261504-_SDA2_BASE_(r2)
+/* 8028E2E0 0028A120  48 00 00 08 */	b lbl_8028E2E8
+lbl_8028E2E4:
+/* 8028E2E4 0028A124  C0 22 AF 78 */	lfs f1, $$261487-_SDA2_BASE_(r2)
+lbl_8028E2E8:
+/* 8028E2E8 0028A128  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E2EC 0028A12C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E2F0 0028A130  7C 08 03 A6 */	mtlr r0
+/* 8028E2F4 0028A134  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E2F8 0028A138  4E 80 00 20 */	blr 
+
+.global GetAdditionalVacuumFrameBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetAdditionalVacuumFrameBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E2FC 0028A13C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E300 0028A140  7C 08 02 A6 */	mflr r0
+/* 8028E304 0028A144  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E308 0028A148  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E30C 0028A14C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028E310 0028A150  7C 7E 1B 78 */	mr r30, r3
+/* 8028E314 0028A154  3B E0 00 00 */	li r31, 0
+/* 8028E318 0028A158  4B E9 A9 89 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E31C 0028A15C  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E320 0028A160  41 82 00 28 */	beq lbl_8028E348
+/* 8028E324 0028A164  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E328 0028A168  41 82 00 28 */	beq lbl_8028E350
+/* 8028E32C 0028A16C  2C 03 00 03 */	cmpwi r3, 3
+/* 8028E330 0028A170  41 82 00 28 */	beq lbl_8028E358
+/* 8028E334 0028A174  2C 03 00 04 */	cmpwi r3, 4
+/* 8028E338 0028A178  41 82 00 28 */	beq lbl_8028E360
+/* 8028E33C 0028A17C  2C 03 00 05 */	cmpwi r3, 5
+/* 8028E340 0028A180  41 82 00 28 */	beq lbl_8028E368
+/* 8028E344 0028A184  48 00 00 28 */	b lbl_8028E36C
+lbl_8028E348:
+/* 8028E348 0028A188  3B E0 00 0A */	li r31, 0xa
+/* 8028E34C 0028A18C  48 00 00 20 */	b lbl_8028E36C
+lbl_8028E350:
+/* 8028E350 0028A190  3B E0 00 1E */	li r31, 0x1e
+/* 8028E354 0028A194  48 00 00 18 */	b lbl_8028E36C
+lbl_8028E358:
+/* 8028E358 0028A198  3B E0 00 00 */	li r31, 0
+/* 8028E35C 0028A19C  48 00 00 10 */	b lbl_8028E36C
+lbl_8028E360:
+/* 8028E360 0028A1A0  3B E0 00 00 */	li r31, 0
+/* 8028E364 0028A1A4  48 00 00 08 */	b lbl_8028E36C
+lbl_8028E368:
+/* 8028E368 0028A1A8  3B E0 00 05 */	li r31, 5
+lbl_8028E36C:
+/* 8028E36C 0028A1AC  7F C3 F3 78 */	mr r3, r30
+/* 8028E370 0028A1B0  4B DA 87 F1 */	bl GXGetTexObjUserData
+/* 8028E374 0028A1B4  2C 03 00 5C */	cmpwi r3, 0x5c
+/* 8028E378 0028A1B8  40 82 00 18 */	bne lbl_8028E390
+/* 8028E37C 0028A1BC  7F C3 F3 78 */	mr r3, r30
+/* 8028E380 0028A1C0  4B E9 A9 21 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E384 0028A1C4  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E388 0028A1C8  40 82 00 08 */	bne lbl_8028E390
+/* 8028E38C 0028A1CC  3B E0 00 1E */	li r31, 0x1e
+lbl_8028E390:
+/* 8028E390 0028A1D0  7F E3 FB 78 */	mr r3, r31
+/* 8028E394 0028A1D4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E398 0028A1D8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028E39C 0028A1DC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E3A0 0028A1E0  7C 08 03 A6 */	mtlr r0
+/* 8028E3A4 0028A1E4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E3A8 0028A1E8  4E 80 00 20 */	blr 
+
+.global GetAdditionalVacuumCountBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetAdditionalVacuumCountBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E3AC 0028A1EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E3B0 0028A1F0  7C 08 02 A6 */	mflr r0
+/* 8028E3B4 0028A1F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E3B8 0028A1F8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E3BC 0028A1FC  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028E3C0 0028A200  7C 7E 1B 78 */	mr r30, r3
+/* 8028E3C4 0028A204  3B E0 00 00 */	li r31, 0
+/* 8028E3C8 0028A208  4B E9 A8 D9 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E3CC 0028A20C  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E3D0 0028A210  41 82 00 28 */	beq lbl_8028E3F8
+/* 8028E3D4 0028A214  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E3D8 0028A218  41 82 00 28 */	beq lbl_8028E400
+/* 8028E3DC 0028A21C  2C 03 00 03 */	cmpwi r3, 3
+/* 8028E3E0 0028A220  41 82 00 28 */	beq lbl_8028E408
+/* 8028E3E4 0028A224  2C 03 00 04 */	cmpwi r3, 4
+/* 8028E3E8 0028A228  41 82 00 28 */	beq lbl_8028E410
+/* 8028E3EC 0028A22C  2C 03 00 05 */	cmpwi r3, 5
+/* 8028E3F0 0028A230  41 82 00 28 */	beq lbl_8028E418
+/* 8028E3F4 0028A234  48 00 00 28 */	b lbl_8028E41C
+lbl_8028E3F8:
+/* 8028E3F8 0028A238  3B E0 00 00 */	li r31, 0
+/* 8028E3FC 0028A23C  48 00 00 20 */	b lbl_8028E41C
+lbl_8028E400:
+/* 8028E400 0028A240  3B E0 00 02 */	li r31, 2
+/* 8028E404 0028A244  48 00 00 18 */	b lbl_8028E41C
+lbl_8028E408:
+/* 8028E408 0028A248  3B E0 00 00 */	li r31, 0
+/* 8028E40C 0028A24C  48 00 00 10 */	b lbl_8028E41C
+lbl_8028E410:
+/* 8028E410 0028A250  3B E0 00 00 */	li r31, 0
+/* 8028E414 0028A254  48 00 00 08 */	b lbl_8028E41C
+lbl_8028E418:
+/* 8028E418 0028A258  3B E0 00 00 */	li r31, 0
+lbl_8028E41C:
+/* 8028E41C 0028A25C  7F C3 F3 78 */	mr r3, r30
+/* 8028E420 0028A260  4B DA 87 41 */	bl GXGetTexObjUserData
+/* 8028E424 0028A264  2C 03 00 5C */	cmpwi r3, 0x5c
+/* 8028E428 0028A268  40 82 00 18 */	bne lbl_8028E440
+/* 8028E42C 0028A26C  7F C3 F3 78 */	mr r3, r30
+/* 8028E430 0028A270  4B E9 A8 71 */	bl getID__Q310homebutton3gui9ComponentFv
+/* 8028E434 0028A274  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E438 0028A278  40 82 00 08 */	bne lbl_8028E440
+/* 8028E43C 0028A27C  3B E0 00 02 */	li r31, 2
+lbl_8028E440:
+/* 8028E440 0028A280  7F E3 FB 78 */	mr r3, r31
+/* 8028E444 0028A284  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E448 0028A288  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028E44C 0028A28C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E450 0028A290  7C 08 03 A6 */	mtlr r0
+/* 8028E454 0028A294  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E458 0028A298  4E 80 00 20 */	blr 
+
+.global GetDefaultCenterOffset__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetDefaultCenterOffset__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E45C 0028A29C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8028E460 0028A2A0  7C 08 02 A6 */	mflr r0
+/* 8028E464 0028A2A4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8028E468 0028A2A8  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 8028E46C 0028A2AC  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 8028E470 0028A2B0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8028E474 0028A2B4  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8028E478 0028A2B8  7C 7E 1B 78 */	mr r30, r3
+/* 8028E47C 0028A2BC  7C 9F 23 78 */	mr r31, r4
+/* 8028E480 0028A2C0  7F E3 FB 78 */	mr r3, r31
+/* 8028E484 0028A2C4  4B FF 9B F1 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 8028E488 0028A2C8  C0 03 00 04 */	lfs f0, 4(r3)
+/* 8028E48C 0028A2CC  D0 01 00 08 */	stfs f0, 8(r1)
+/* 8028E490 0028A2D0  C0 03 00 08 */	lfs f0, 8(r3)
+/* 8028E494 0028A2D4  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 8028E498 0028A2D8  7F E3 FB 78 */	mr r3, r31
+/* 8028E49C 0028A2DC  4B FF FC 39 */	bl GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+/* 8028E4A0 0028A2E0  FF E0 08 90 */	fmr f31, f1
+/* 8028E4A4 0028A2E4  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028E4A8 0028A2E8  38 81 00 08 */	addi r4, r1, 8
+/* 8028E4AC 0028A2EC  4B F1 0F B1 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8028E4B0 0028A2F0  7F C3 F3 78 */	mr r3, r30
+/* 8028E4B4 0028A2F4  38 81 00 10 */	addi r4, r1, 0x10
+/* 8028E4B8 0028A2F8  FC 20 F8 90 */	fmr f1, f31
+/* 8028E4BC 0028A2FC  4B EE E0 AD */	bl __ml__Q33hel4math7Vector3CFf
+/* 8028E4C0 0028A300  38 00 00 38 */	li r0, 0x38
+/* 8028E4C4 0028A304  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028E4C8 0028A308  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 8028E4CC 0028A30C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8028E4D0 0028A310  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8028E4D4 0028A314  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8028E4D8 0028A318  7C 08 03 A6 */	mtlr r0
+/* 8028E4DC 0028A31C  38 21 00 40 */	addi r1, r1, 0x40
+/* 8028E4E0 0028A320  4E 80 00 20 */	blr 
+
+.global GetCenterPos__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+GetCenterPos__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028E4E4 0028A324  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E4E8 0028A328  7C 08 02 A6 */	mflr r0
+/* 8028E4EC 0028A32C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E4F0 0028A330  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E4F4 0028A334  7C 7F 1B 78 */	mr r31, r3
+/* 8028E4F8 0028A338  7C 83 23 78 */	mr r3, r4
+/* 8028E4FC 0028A33C  4B FF 9B C1 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E500 0028A340  7C 64 1B 78 */	mr r4, r3
+/* 8028E504 0028A344  7F E3 FB 78 */	mr r3, r31
+/* 8028E508 0028A348  4B FE 11 BD */	bl centerPos__Q43scn4step5chara8LocationCFv
+/* 8028E50C 0028A34C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E510 0028A350  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E514 0028A354  7C 08 03 A6 */	mtlr r0
+/* 8028E518 0028A358  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E51C 0028A35C  4E 80 00 20 */	blr 
+
+.global SetCustomMtxRotate__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3
+SetCustomMtxRotate__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3:
+/* 8028E520 0028A360  94 21 FE E0 */	stwu r1, -0x120(r1)
+/* 8028E524 0028A364  7C 08 02 A6 */	mflr r0
+/* 8028E528 0028A368  90 01 01 24 */	stw r0, 0x124(r1)
+/* 8028E52C 0028A36C  93 E1 01 1C */	stw r31, 0x11c(r1)
+/* 8028E530 0028A370  93 C1 01 18 */	stw r30, 0x118(r1)
+/* 8028E534 0028A374  7C 7E 1B 78 */	mr r30, r3
+/* 8028E538 0028A378  7C 9F 23 78 */	mr r31, r4
+/* 8028E53C 0028A37C  4B FF 9B 81 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E540 0028A380  7C 64 1B 78 */	mr r4, r3
+/* 8028E544 0028A384  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028E548 0028A388  4B FE 11 C9 */	bl toCenter__Q43scn4step5chara8LocationCFv
+/* 8028E54C 0028A38C  38 61 00 08 */	addi r3, r1, 8
+/* 8028E550 0028A390  38 81 00 14 */	addi r4, r1, 0x14
+/* 8028E554 0028A394  C0 22 AF A8 */	lfs f1, $$261600-_SDA2_BASE_(r2)
+/* 8028E558 0028A398  4B EE E0 11 */	bl __ml__Q33hel4math7Vector3CFf
+/* 8028E55C 0028A39C  38 61 00 E0 */	addi r3, r1, 0xe0
+/* 8028E560 0028A3A0  38 81 00 08 */	addi r4, r1, 8
+/* 8028E564 0028A3A4  4B F1 00 2D */	bl CreateTrans__Q33hel4math8Matrix34FRCQ33hel4math7Vector3
+/* 8028E568 0028A3A8  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 8028E56C 0028A3AC  38 81 00 14 */	addi r4, r1, 0x14
+/* 8028E570 0028A3B0  4B F1 00 21 */	bl CreateTrans__Q33hel4math8Matrix34FRCQ33hel4math7Vector3
+/* 8028E574 0028A3B4  38 61 00 80 */	addi r3, r1, 0x80
+/* 8028E578 0028A3B8  7F E4 FB 78 */	mr r4, r31
+/* 8028E57C 0028A3BC  4B F1 01 D9 */	bl CreateRotXYZDeg__Q33hel4math8Matrix34FRCQ33hel4math7Vector3
+/* 8028E580 0028A3C0  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028E584 0028A3C4  38 81 00 80 */	addi r4, r1, 0x80
+/* 8028E588 0028A3C8  38 A1 00 E0 */	addi r5, r1, 0xe0
+/* 8028E58C 0028A3CC  4B EE E3 B1 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8028E590 0028A3D0  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028E594 0028A3D4  38 81 00 B0 */	addi r4, r1, 0xb0
+/* 8028E598 0028A3D8  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8028E59C 0028A3DC  4B EE E3 A1 */	bl __ml__Q33hel4math8Matrix34CFRCQ33hel4math8Matrix34
+/* 8028E5A0 0028A3E0  7F C3 F3 78 */	mr r3, r30
+/* 8028E5A4 0028A3E4  4B FF 9B 29 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028E5A8 0028A3E8  38 81 00 50 */	addi r4, r1, 0x50
+/* 8028E5AC 0028A3EC  4B FE 2D 6D */	bl setCustomMtx__Q43scn4step5chara5ModelFRCQ33hel4math8Matrix34
+/* 8028E5B0 0028A3F0  83 E1 01 1C */	lwz r31, 0x11c(r1)
+/* 8028E5B4 0028A3F4  83 C1 01 18 */	lwz r30, 0x118(r1)
+/* 8028E5B8 0028A3F8  80 01 01 24 */	lwz r0, 0x124(r1)
+/* 8028E5BC 0028A3FC  7C 08 03 A6 */	mtlr r0
+/* 8028E5C0 0028A400  38 21 01 20 */	addi r1, r1, 0x120
+/* 8028E5C4 0028A404  4E 80 00 20 */	blr 
+
+.global MintRegister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb
+MintRegister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb:
+/* 8028E5C8 0028A408  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E5CC 0028A40C  7C 08 02 A6 */	mflr r0
+/* 8028E5D0 0028A410  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E5D4 0028A414  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E5D8 0028A418  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028E5DC 0028A41C  7C 7E 1B 78 */	mr r30, r3
+/* 8028E5E0 0028A420  7C 9F 23 78 */	mr r31, r4
+/* 8028E5E4 0028A424  4B FE 12 85 */	bl Unregister__Q43scn4step5chara10MintEffectFv
+/* 8028E5E8 0028A428  48 17 44 5D */	bl Unregister__Q23snd15MintSERequestorFv
+/* 8028E5EC 0028A42C  2C 1F 00 00 */	cmpwi r31, 0
+/* 8028E5F0 0028A430  41 82 00 10 */	beq lbl_8028E600
+/* 8028E5F4 0028A434  7F C3 F3 78 */	mr r3, r30
+/* 8028E5F8 0028A438  4B FF 9A D5 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028E5FC 0028A43C  4B FE 2B 75 */	bl mintRegister__Q43scn4step5chara5ModelFv
+lbl_8028E600:
+/* 8028E600 0028A440  7F C3 F3 78 */	mr r3, r30
+/* 8028E604 0028A444  4B FF C7 B5 */	bl Register__Q43scn4step5enemy9MintEnemyFRQ43scn4step5enemy5Enemy
+/* 8028E608 0028A448  7F C3 F3 78 */	mr r3, r30
+/* 8028E60C 0028A44C  4B FF 9B 11 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 8028E610 0028A450  4B FE 18 81 */	bl Register__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl
+/* 8028E614 0028A454  7F C3 F3 78 */	mr r3, r30
+/* 8028E618 0028A458  4B FF 9A 95 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E61C 0028A45C  4B F0 C9 4D */	bl Register__Q24gobj10MintTargetFRQ24gobj6Target
+/* 8028E620 0028A460  7F C3 F3 78 */	mr r3, r30
+/* 8028E624 0028A464  4B FF 9A 99 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E628 0028A468  4B D9 5E 79 */	bl DefaultSwitchThreadCallback
+/* 8028E62C 0028A46C  4B F0 C7 09 */	bl Register__Q24gobj12MintLocationFRQ24gobj8Location
+/* 8028E630 0028A470  7F C3 F3 78 */	mr r3, r30
+/* 8028E634 0028A474  4B FF 9A 81 */	bl footState__Q43scn4step5enemy5EnemyFv
+/* 8028E638 0028A478  4B F0 C6 31 */	bl Register__Q24gobj13MintFootStateFRQ24gobj9FootState
+/* 8028E63C 0028A47C  7F C3 F3 78 */	mr r3, r30
+/* 8028E640 0028A480  4B FF 9A 85 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 8028E644 0028A484  4B F0 C8 49 */	bl Register__Q24gobj8MintMoveFRQ24gobj4Move
+/* 8028E648 0028A488  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E64C 0028A48C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028E650 0028A490  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E654 0028A494  7C 08 03 A6 */	mtlr r0
+/* 8028E658 0028A498  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E65C 0028A49C  4E 80 00 20 */	blr 
+
+.global MintUnregister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb
+MintUnregister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb:
+/* 8028E660 0028A4A0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028E664 0028A4A4  7C 08 02 A6 */	mflr r0
+/* 8028E668 0028A4A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028E66C 0028A4AC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028E670 0028A4B0  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028E674 0028A4B4  7C 7E 1B 78 */	mr r30, r3
+/* 8028E678 0028A4B8  7C 9F 23 78 */	mr r31, r4
+/* 8028E67C 0028A4BC  4B FF 9A 49 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 8028E680 0028A4C0  4B F0 C8 15 */	bl Unregister__Q24gobj8MintMoveFRQ24gobj4Move
+/* 8028E684 0028A4C4  7F C3 F3 78 */	mr r3, r30
+/* 8028E688 0028A4C8  4B FF 9A 2D */	bl footState__Q43scn4step5enemy5EnemyFv
+/* 8028E68C 0028A4CC  4B F0 C5 E5 */	bl Unregister__Q24gobj13MintFootStateFRQ24gobj9FootState
+/* 8028E690 0028A4D0  7F C3 F3 78 */	mr r3, r30
+/* 8028E694 0028A4D4  4B FF 9A 29 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E698 0028A4D8  4B D9 5E 09 */	bl DefaultSwitchThreadCallback
+/* 8028E69C 0028A4DC  4B F0 C6 A1 */	bl Unregister__Q24gobj12MintLocationFRQ24gobj8Location
+/* 8028E6A0 0028A4E0  7F C3 F3 78 */	mr r3, r30
+/* 8028E6A4 0028A4E4  4B FF 9A 09 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E6A8 0028A4E8  4B F0 C8 C9 */	bl Unregister__Q24gobj10MintTargetFRQ24gobj6Target
+/* 8028E6AC 0028A4EC  7F C3 F3 78 */	mr r3, r30
+/* 8028E6B0 0028A4F0  4B FF 9A 6D */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 8028E6B4 0028A4F4  4B FE 17 E5 */	bl Unregister__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl
+/* 8028E6B8 0028A4F8  7F C3 F3 78 */	mr r3, r30
+/* 8028E6BC 0028A4FC  4B FF C7 05 */	bl Unregister__Q43scn4step5enemy9MintEnemyFRQ43scn4step5enemy5Enemy
+/* 8028E6C0 0028A500  2C 1F 00 00 */	cmpwi r31, 0
+/* 8028E6C4 0028A504  41 82 00 10 */	beq lbl_8028E6D4
+/* 8028E6C8 0028A508  7F C3 F3 78 */	mr r3, r30
+/* 8028E6CC 0028A50C  4B FF 9A 01 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028E6D0 0028A510  4B FE 2B 19 */	bl mintUnregister__Q43scn4step5chara5ModelFv
+lbl_8028E6D4:
+/* 8028E6D4 0028A514  4B FE 11 95 */	bl Unregister__Q43scn4step5chara10MintEffectFv
+/* 8028E6D8 0028A518  48 17 43 6D */	bl Unregister__Q23snd15MintSERequestorFv
+/* 8028E6DC 0028A51C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028E6E0 0028A520  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028E6E4 0028A524  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028E6E8 0028A528  7C 08 03 A6 */	mtlr r0
+/* 8028E6EC 0028A52C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028E6F0 0028A530  4E 80 00 20 */	blr 
+
+.global IsNearestPlayerRight__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsNearestPlayerRight__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028E6F4 0028A534  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8028E6F8 0028A538  7C 08 02 A6 */	mflr r0
+/* 8028E6FC 0028A53C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8028E700 0028A540  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8028E704 0028A544  7C 7F 1B 78 */	mr r31, r3
+/* 8028E708 0028A548  4B FF 99 B5 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E70C 0028A54C  7C 64 1B 78 */	mr r4, r3
+/* 8028E710 0028A550  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028E714 0028A554  4B FE 0F A1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028E718 0028A558  7F E3 FB 78 */	mr r3, r31
+/* 8028E71C 0028A55C  4B DE 70 15 */	bl GKI_getfirst
+/* 8028E720 0028A560  4B F9 26 D9 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028E724 0028A564  7C 64 1B 78 */	mr r4, r3
+/* 8028E728 0028A568  38 61 00 08 */	addi r3, r1, 8
+/* 8028E72C 0028A56C  38 A1 00 14 */	addi r5, r1, 0x14
+/* 8028E730 0028A570  48 0B 84 21 */	bl getNearestPlayerPos__Q43scn4step4hero7ManagerCFRCQ33hel4math7Vector3
+/* 8028E734 0028A574  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 8028E738 0028A578  C0 01 00 08 */	lfs f0, 8(r1)
+/* 8028E73C 0028A57C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028E740 0028A580  7C 60 00 26 */	mfcr r3
+/* 8028E744 0028A584  54 63 0F FE */	srwi r3, r3, 0x1f
+/* 8028E748 0028A588  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8028E74C 0028A58C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8028E750 0028A590  7C 08 03 A6 */	mtlr r0
+/* 8028E754 0028A594  38 21 00 30 */	addi r1, r1, 0x30
+/* 8028E758 0028A598  4E 80 00 20 */	blr 
+
+.global SetTargetByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+SetTargetByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028E75C 0028A59C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8028E760 0028A5A0  7C 08 02 A6 */	mflr r0
+/* 8028E764 0028A5A4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8028E768 0028A5A8  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 8028E76C 0028A5AC  93 C1 00 38 */	stw r30, 0x38(r1)
+/* 8028E770 0028A5B0  7C 7E 1B 78 */	mr r30, r3
+/* 8028E774 0028A5B4  4B F2 8C ED */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8028E778 0028A5B8  2C 03 00 01 */	cmpwi r3, 1
+/* 8028E77C 0028A5BC  41 82 00 38 */	beq lbl_8028E7B4
+/* 8028E780 0028A5C0  2C 03 00 02 */	cmpwi r3, 2
+/* 8028E784 0028A5C4  41 82 00 84 */	beq lbl_8028E808
+/* 8028E788 0028A5C8  2C 03 00 06 */	cmpwi r3, 6
+/* 8028E78C 0028A5CC  41 82 00 7C */	beq lbl_8028E808
+/* 8028E790 0028A5D0  2C 03 00 08 */	cmpwi r3, 8
+/* 8028E794 0028A5D4  41 82 00 74 */	beq lbl_8028E808
+/* 8028E798 0028A5D8  2C 03 00 03 */	cmpwi r3, 3
+/* 8028E79C 0028A5DC  41 82 00 80 */	beq lbl_8028E81C
+/* 8028E7A0 0028A5E0  2C 03 00 07 */	cmpwi r3, 7
+/* 8028E7A4 0028A5E4  41 82 00 78 */	beq lbl_8028E81C
+/* 8028E7A8 0028A5E8  2C 03 00 09 */	cmpwi r3, 9
+/* 8028E7AC 0028A5EC  41 82 00 70 */	beq lbl_8028E81C
+/* 8028E7B0 0028A5F0  48 00 00 80 */	b lbl_8028E830
+lbl_8028E7B4:
+/* 8028E7B4 0028A5F4  7F C3 F3 78 */	mr r3, r30
+/* 8028E7B8 0028A5F8  4B DE 6F 79 */	bl GKI_getfirst
+/* 8028E7BC 0028A5FC  4B F9 26 3D */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028E7C0 0028A600  7C 64 1B 78 */	mr r4, r3
+/* 8028E7C4 0028A604  38 61 00 2C */	addi r3, r1, 0x2c
+/* 8028E7C8 0028A608  48 0B 83 49 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 8028E7CC 0028A60C  7F C3 F3 78 */	mr r3, r30
+/* 8028E7D0 0028A610  4B FF 98 ED */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E7D4 0028A614  7C 64 1B 78 */	mr r4, r3
+/* 8028E7D8 0028A618  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028E7DC 0028A61C  4B FE 0E D9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028E7E0 0028A620  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 8028E7E4 0028A624  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 8028E7E8 0028A628  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 8028E7EC 0028A62C  7F E0 00 26 */	mfcr r31
+/* 8028E7F0 0028A630  57 FF 0F FE */	srwi r31, r31, 0x1f
+/* 8028E7F4 0028A634  7F C3 F3 78 */	mr r3, r30
+/* 8028E7F8 0028A638  4B FF 98 B5 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E7FC 0028A63C  7F E4 FB 78 */	mr r4, r31
+/* 8028E800 0028A640  4B F0 9E 81 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 8028E804 0028A644  48 00 00 7C */	b lbl_8028E880
+lbl_8028E808:
+/* 8028E808 0028A648  7F C3 F3 78 */	mr r3, r30
+/* 8028E80C 0028A64C  4B FF 98 A1 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E810 0028A650  38 80 00 00 */	li r4, 0
+/* 8028E814 0028A654  4B F0 9E 6D */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 8028E818 0028A658  48 00 00 68 */	b lbl_8028E880
+lbl_8028E81C:
+/* 8028E81C 0028A65C  7F C3 F3 78 */	mr r3, r30
+/* 8028E820 0028A660  4B FF 98 8D */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E824 0028A664  38 80 00 01 */	li r4, 1
+/* 8028E828 0028A668  4B F0 9E 59 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 8028E82C 0028A66C  48 00 00 54 */	b lbl_8028E880
+lbl_8028E830:
+/* 8028E830 0028A670  7F C3 F3 78 */	mr r3, r30
+/* 8028E834 0028A674  4B DE 6E FD */	bl GKI_getfirst
+/* 8028E838 0028A678  4B F9 25 C1 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028E83C 0028A67C  7C 64 1B 78 */	mr r4, r3
+/* 8028E840 0028A680  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028E844 0028A684  48 0B 82 CD */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 8028E848 0028A688  7F C3 F3 78 */	mr r3, r30
+/* 8028E84C 0028A68C  4B FF 98 71 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E850 0028A690  7C 64 1B 78 */	mr r4, r3
+/* 8028E854 0028A694  38 61 00 08 */	addi r3, r1, 8
+/* 8028E858 0028A698  4B FE 0E 5D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028E85C 0028A69C  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028E860 0028A6A0  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 8028E864 0028A6A4  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 8028E868 0028A6A8  7F E0 00 26 */	mfcr r31
+/* 8028E86C 0028A6AC  57 FF 17 FE */	rlwinm r31, r31, 2, 0x1f, 0x1f
+/* 8028E870 0028A6B0  7F C3 F3 78 */	mr r3, r30
+/* 8028E874 0028A6B4  4B FF 98 39 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028E878 0028A6B8  7F E4 FB 78 */	mr r4, r31
+/* 8028E87C 0028A6BC  4B F0 9E 05 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_8028E880:
+/* 8028E880 0028A6C0  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 8028E884 0028A6C4  83 C1 00 38 */	lwz r30, 0x38(r1)
+/* 8028E888 0028A6C8  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8028E88C 0028A6CC  7C 08 03 A6 */	mtlr r0
+/* 8028E890 0028A6D0  38 21 00 40 */	addi r1, r1, 0x40
+/* 8028E894 0028A6D4  4E 80 00 20 */	blr 
+
+.global GetRotByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+GetRotByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028E898 0028A6D8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028E89C 0028A6DC  7C 08 02 A6 */	mflr r0
+/* 8028E8A0 0028A6E0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028E8A4 0028A6E4  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 8028E8A8 0028A6E8  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 8028E8AC 0028A6EC  C3 E2 AF AC */	lfs f31, $$261640-_SDA2_BASE_(r2)
+/* 8028E8B0 0028A6F0  4B F2 8B B1 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8028E8B4 0028A6F4  28 03 00 09 */	cmplwi r3, 9
+/* 8028E8B8 0028A6F8  41 81 00 58 */	bgt lbl_8028E910
+/* 8028E8BC 0028A6FC  3C 80 80 47 */	lis r4, $$261649@ha
+/* 8028E8C0 0028A700  38 84 2C 78 */	addi r4, r4, $$261649@l
+/* 8028E8C4 0028A704  54 60 10 3A */	slwi r0, r3, 2
+/* 8028E8C8 0028A708  7C 84 00 2E */	lwzx r4, r4, r0
+/* 8028E8CC 0028A70C  7C 89 03 A6 */	mtctr r4
+/* 8028E8D0 0028A710  4E 80 04 20 */	bctr 
+/* 8028E8D4 0028A714  C3 E2 AF AC */	lfs f31, $$261640-_SDA2_BASE_(r2)
+/* 8028E8D8 0028A718  48 00 00 38 */	b lbl_8028E910
+/* 8028E8DC 0028A71C  C3 E2 AF B0 */	lfs f31, $$261641-_SDA2_BASE_(r2)
+/* 8028E8E0 0028A720  48 00 00 30 */	b lbl_8028E910
+/* 8028E8E4 0028A724  C3 E2 AF B4 */	lfs f31, $$261642-_SDA2_BASE_(r2)
+/* 8028E8E8 0028A728  48 00 00 28 */	b lbl_8028E910
+/* 8028E8EC 0028A72C  C3 E2 AF B8 */	lfs f31, $$261643-_SDA2_BASE_(r2)
+/* 8028E8F0 0028A730  48 00 00 20 */	b lbl_8028E910
+/* 8028E8F4 0028A734  C3 E2 AF BC */	lfs f31, $$261644-_SDA2_BASE_(r2)
+/* 8028E8F8 0028A738  48 00 00 18 */	b lbl_8028E910
+/* 8028E8FC 0028A73C  C3 E2 AF C0 */	lfs f31, $$261645-_SDA2_BASE_(r2)
+/* 8028E900 0028A740  48 00 00 10 */	b lbl_8028E910
+/* 8028E904 0028A744  C3 E2 AF C4 */	lfs f31, $$261646-_SDA2_BASE_(r2)
+/* 8028E908 0028A748  48 00 00 08 */	b lbl_8028E910
+/* 8028E90C 0028A74C  C3 E2 AF C8 */	lfs f31, $$261647-_SDA2_BASE_(r2)
+lbl_8028E910:
+/* 8028E910 0028A750  FC 20 F8 90 */	fmr f1, f31
+/* 8028E914 0028A754  38 00 00 18 */	li r0, 0x18
+/* 8028E918 0028A758  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028E91C 0028A75C  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 8028E920 0028A760  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028E924 0028A764  7C 08 03 A6 */	mtlr r0
+/* 8028E928 0028A768  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028E92C 0028A76C  4E 80 00 20 */	blr 
+
+.global GetDirVecByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+GetDirVecByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028E930 0028A770  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 8028E934 0028A774  7C 08 02 A6 */	mflr r0
+/* 8028E938 0028A778  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 8028E93C 0028A77C  93 E1 00 BC */	stw r31, 0xbc(r1)
+/* 8028E940 0028A780  93 C1 00 B8 */	stw r30, 0xb8(r1)
+/* 8028E944 0028A784  7C 7E 1B 78 */	mr r30, r3
+/* 8028E948 0028A788  7C 9F 23 78 */	mr r31, r4
+/* 8028E94C 0028A78C  4B EE DB A9 */	bl __ct__Q33hel4math7Vector3Fv
+/* 8028E950 0028A790  7F E3 FB 78 */	mr r3, r31
+/* 8028E954 0028A794  4B F2 8B 0D */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8028E958 0028A798  28 03 00 09 */	cmplwi r3, 9
+/* 8028E95C 0028A79C  41 81 01 AC */	bgt lbl_8028EB08
+/* 8028E960 0028A7A0  3C 80 80 47 */	lis r4, $$261690@ha
+/* 8028E964 0028A7A4  38 84 2C A0 */	addi r4, r4, $$261690@l
+/* 8028E968 0028A7A8  54 60 10 3A */	slwi r0, r3, 2
+/* 8028E96C 0028A7AC  7C 84 00 2E */	lwzx r4, r4, r0
+/* 8028E970 0028A7B0  7C 89 03 A6 */	mtctr r4
+/* 8028E974 0028A7B4  4E 80 04 20 */	bctr 
+/* 8028E978 0028A7B8  7F E3 FB 78 */	mr r3, r31
+/* 8028E97C 0028A7BC  4B DE 6D B5 */	bl GKI_getfirst
+/* 8028E980 0028A7C0  4B F9 24 79 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028E984 0028A7C4  7C 64 1B 78 */	mr r4, r3
+/* 8028E988 0028A7C8  38 61 00 A4 */	addi r3, r1, 0xa4
+/* 8028E98C 0028A7CC  48 0B 81 85 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 8028E990 0028A7D0  7F E3 FB 78 */	mr r3, r31
+/* 8028E994 0028A7D4  4B FF 97 29 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028E998 0028A7D8  7C 64 1B 78 */	mr r4, r3
+/* 8028E99C 0028A7DC  38 61 00 80 */	addi r3, r1, 0x80
+/* 8028E9A0 0028A7E0  4B FE 0D 15 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028E9A4 0028A7E4  C0 21 00 80 */	lfs f1, 0x80(r1)
+/* 8028E9A8 0028A7E8  C0 01 00 A4 */	lfs f0, 0xa4(r1)
+/* 8028E9AC 0028A7EC  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 8028E9B0 0028A7F0  40 80 00 0C */	bge lbl_8028E9BC
+/* 8028E9B4 0028A7F4  C0 22 AF 78 */	lfs f1, $$261487-_SDA2_BASE_(r2)
+/* 8028E9B8 0028A7F8  48 00 00 08 */	b lbl_8028E9C0
+lbl_8028E9BC:
+/* 8028E9BC 0028A7FC  C0 22 AF A8 */	lfs f1, $$261600-_SDA2_BASE_(r2)
+lbl_8028E9C0:
+/* 8028E9C0 0028A800  38 61 00 8C */	addi r3, r1, 0x8c
+/* 8028E9C4 0028A804  C0 42 AF AC */	lfs f2, $$261640-_SDA2_BASE_(r2)
+/* 8028E9C8 0028A808  FC 60 10 90 */	fmr f3, f2
+/* 8028E9CC 0028A80C  4B E2 F6 F5 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 8028E9D0 0028A810  7C 64 1B 78 */	mr r4, r3
+/* 8028E9D4 0028A814  7F C3 F3 78 */	mr r3, r30
+/* 8028E9D8 0028A818  4B EE DB 75 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028E9DC 0028A81C  48 00 01 90 */	b lbl_8028EB6C
+/* 8028E9E0 0028A820  C0 02 AF A8 */	lfs f0, $$261600-_SDA2_BASE_(r2)
+/* 8028E9E4 0028A824  D0 01 00 74 */	stfs f0, 0x74(r1)
+/* 8028E9E8 0028A828  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028E9EC 0028A82C  D0 01 00 78 */	stfs f0, 0x78(r1)
+/* 8028E9F0 0028A830  D0 01 00 7C */	stfs f0, 0x7c(r1)
+/* 8028E9F4 0028A834  7F C3 F3 78 */	mr r3, r30
+/* 8028E9F8 0028A838  38 81 00 74 */	addi r4, r1, 0x74
+/* 8028E9FC 0028A83C  4B EE DB 51 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EA00 0028A840  48 00 01 6C */	b lbl_8028EB6C
+/* 8028EA04 0028A844  C0 02 AF 78 */	lfs f0, $$261487-_SDA2_BASE_(r2)
+/* 8028EA08 0028A848  D0 01 00 68 */	stfs f0, 0x68(r1)
+/* 8028EA0C 0028A84C  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EA10 0028A850  D0 01 00 6C */	stfs f0, 0x6c(r1)
+/* 8028EA14 0028A854  D0 01 00 70 */	stfs f0, 0x70(r1)
+/* 8028EA18 0028A858  7F C3 F3 78 */	mr r3, r30
+/* 8028EA1C 0028A85C  38 81 00 68 */	addi r4, r1, 0x68
+/* 8028EA20 0028A860  4B EE DB 2D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EA24 0028A864  48 00 01 48 */	b lbl_8028EB6C
+/* 8028EA28 0028A868  C0 22 AF AC */	lfs f1, $$261640-_SDA2_BASE_(r2)
+/* 8028EA2C 0028A86C  D0 21 00 5C */	stfs f1, 0x5c(r1)
+/* 8028EA30 0028A870  C0 02 AF 78 */	lfs f0, $$261487-_SDA2_BASE_(r2)
+/* 8028EA34 0028A874  D0 01 00 60 */	stfs f0, 0x60(r1)
+/* 8028EA38 0028A878  D0 21 00 64 */	stfs f1, 0x64(r1)
+/* 8028EA3C 0028A87C  7F C3 F3 78 */	mr r3, r30
+/* 8028EA40 0028A880  38 81 00 5C */	addi r4, r1, 0x5c
+/* 8028EA44 0028A884  4B EE DB 09 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EA48 0028A888  48 00 01 24 */	b lbl_8028EB6C
+/* 8028EA4C 0028A88C  C0 22 AF AC */	lfs f1, $$261640-_SDA2_BASE_(r2)
+/* 8028EA50 0028A890  D0 21 00 50 */	stfs f1, 0x50(r1)
+/* 8028EA54 0028A894  C0 02 AF A8 */	lfs f0, $$261600-_SDA2_BASE_(r2)
+/* 8028EA58 0028A898  D0 01 00 54 */	stfs f0, 0x54(r1)
+/* 8028EA5C 0028A89C  D0 21 00 58 */	stfs f1, 0x58(r1)
+/* 8028EA60 0028A8A0  7F C3 F3 78 */	mr r3, r30
+/* 8028EA64 0028A8A4  38 81 00 50 */	addi r4, r1, 0x50
+/* 8028EA68 0028A8A8  4B EE DA E5 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EA6C 0028A8AC  48 00 01 00 */	b lbl_8028EB6C
+/* 8028EA70 0028A8B0  C0 02 AF CC */	lfs f0, $$261686-_SDA2_BASE_(r2)
+/* 8028EA74 0028A8B4  D0 01 00 44 */	stfs f0, 0x44(r1)
+/* 8028EA78 0028A8B8  C0 02 AF D0 */	lfs f0, $$261687-_SDA2_BASE_(r2)
+/* 8028EA7C 0028A8BC  D0 01 00 48 */	stfs f0, 0x48(r1)
+/* 8028EA80 0028A8C0  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EA84 0028A8C4  D0 01 00 4C */	stfs f0, 0x4c(r1)
+/* 8028EA88 0028A8C8  7F C3 F3 78 */	mr r3, r30
+/* 8028EA8C 0028A8CC  38 81 00 44 */	addi r4, r1, 0x44
+/* 8028EA90 0028A8D0  4B EE DA BD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EA94 0028A8D4  48 00 00 D8 */	b lbl_8028EB6C
+/* 8028EA98 0028A8D8  C0 02 AF D0 */	lfs f0, $$261687-_SDA2_BASE_(r2)
+/* 8028EA9C 0028A8DC  D0 01 00 38 */	stfs f0, 0x38(r1)
+/* 8028EAA0 0028A8E0  D0 01 00 3C */	stfs f0, 0x3c(r1)
+/* 8028EAA4 0028A8E4  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EAA8 0028A8E8  D0 01 00 40 */	stfs f0, 0x40(r1)
+/* 8028EAAC 0028A8EC  7F C3 F3 78 */	mr r3, r30
+/* 8028EAB0 0028A8F0  38 81 00 38 */	addi r4, r1, 0x38
+/* 8028EAB4 0028A8F4  4B EE DA 99 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EAB8 0028A8F8  48 00 00 B4 */	b lbl_8028EB6C
+/* 8028EABC 0028A8FC  C0 02 AF CC */	lfs f0, $$261686-_SDA2_BASE_(r2)
+/* 8028EAC0 0028A900  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8028EAC4 0028A904  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 8028EAC8 0028A908  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EACC 0028A90C  D0 01 00 34 */	stfs f0, 0x34(r1)
+/* 8028EAD0 0028A910  7F C3 F3 78 */	mr r3, r30
+/* 8028EAD4 0028A914  38 81 00 2C */	addi r4, r1, 0x2c
+/* 8028EAD8 0028A918  4B EE DA 75 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EADC 0028A91C  48 00 00 90 */	b lbl_8028EB6C
+/* 8028EAE0 0028A920  C0 02 AF D0 */	lfs f0, $$261687-_SDA2_BASE_(r2)
+/* 8028EAE4 0028A924  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 8028EAE8 0028A928  C0 02 AF CC */	lfs f0, $$261686-_SDA2_BASE_(r2)
+/* 8028EAEC 0028A92C  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 8028EAF0 0028A930  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EAF4 0028A934  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 8028EAF8 0028A938  7F C3 F3 78 */	mr r3, r30
+/* 8028EAFC 0028A93C  38 81 00 20 */	addi r4, r1, 0x20
+/* 8028EB00 0028A940  4B EE DA 4D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028EB04 0028A944  48 00 00 68 */	b lbl_8028EB6C
+lbl_8028EB08:
+/* 8028EB08 0028A948  7F E3 FB 78 */	mr r3, r31
+/* 8028EB0C 0028A94C  4B DE 6C 25 */	bl GKI_getfirst
+/* 8028EB10 0028A950  4B F9 22 E9 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028EB14 0028A954  7C 64 1B 78 */	mr r4, r3
+/* 8028EB18 0028A958  38 61 00 98 */	addi r3, r1, 0x98
+/* 8028EB1C 0028A95C  48 0B 7F F5 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 8028EB20 0028A960  7F E3 FB 78 */	mr r3, r31
+/* 8028EB24 0028A964  4B FF 95 99 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028EB28 0028A968  7C 64 1B 78 */	mr r4, r3
+/* 8028EB2C 0028A96C  38 61 00 08 */	addi r3, r1, 8
+/* 8028EB30 0028A970  4B FE 0B 85 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028EB34 0028A974  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028EB38 0028A978  C0 01 00 98 */	lfs f0, 0x98(r1)
+/* 8028EB3C 0028A97C  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 8028EB40 0028A980  40 81 00 0C */	ble lbl_8028EB4C
+/* 8028EB44 0028A984  C0 22 AF 78 */	lfs f1, $$261487-_SDA2_BASE_(r2)
+/* 8028EB48 0028A988  48 00 00 08 */	b lbl_8028EB50
+lbl_8028EB4C:
+/* 8028EB4C 0028A98C  C0 22 AF A8 */	lfs f1, $$261600-_SDA2_BASE_(r2)
+lbl_8028EB50:
+/* 8028EB50 0028A990  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028EB54 0028A994  C0 42 AF AC */	lfs f2, $$261640-_SDA2_BASE_(r2)
+/* 8028EB58 0028A998  FC 60 10 90 */	fmr f3, f2
+/* 8028EB5C 0028A99C  4B E2 F5 65 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 8028EB60 0028A9A0  7C 64 1B 78 */	mr r4, r3
+/* 8028EB64 0028A9A4  7F C3 F3 78 */	mr r3, r30
+/* 8028EB68 0028A9A8  4B EE D9 E5 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_8028EB6C:
+/* 8028EB6C 0028A9AC  83 E1 00 BC */	lwz r31, 0xbc(r1)
+/* 8028EB70 0028A9B0  83 C1 00 B8 */	lwz r30, 0xb8(r1)
+/* 8028EB74 0028A9B4  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 8028EB78 0028A9B8  7C 08 03 A6 */	mtlr r0
+/* 8028EB7C 0028A9BC  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 8028EB80 0028A9C0  4E 80 00 20 */	blr 
+
+.global IsFixDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsFixDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EB84 0028A9C4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028EB88 0028A9C8  7C 08 02 A6 */	mflr r0
+/* 8028EB8C 0028A9CC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028EB90 0028A9D0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028EB94 0028A9D4  3B E0 00 00 */	li r31, 0
+/* 8028EB98 0028A9D8  4B F2 88 C9 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8028EB9C 0028A9DC  38 03 FF FF */	addi r0, r3, -1
+/* 8028EBA0 0028A9E0  28 00 00 08 */	cmplwi r0, 8
+/* 8028EBA4 0028A9E4  41 81 00 08 */	bgt lbl_8028EBAC
+/* 8028EBA8 0028A9E8  3B E0 00 01 */	li r31, 1
+lbl_8028EBAC:
+/* 8028EBAC 0028A9EC  7F E3 FB 78 */	mr r3, r31
+/* 8028EBB0 0028A9F0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028EBB4 0028A9F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028EBB8 0028A9F8  7C 08 03 A6 */	mtlr r0
+/* 8028EBBC 0028A9FC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028EBC0 0028AA00  4E 80 00 20 */	blr 
+
+.global IsCameraOut__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsCameraOut__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EBC4 0028AA04  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8028EBC8 0028AA08  7C 08 02 A6 */	mflr r0
+/* 8028EBCC 0028AA0C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8028EBD0 0028AA10  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 8028EBD4 0028AA14  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 8028EBD8 0028AA18  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 8028EBDC 0028AA1C  7C 7F 1B 78 */	mr r31, r3
+/* 8028EBE0 0028AA20  4B DE 6B 51 */	bl GKI_getfirst
+/* 8028EBE4 0028AA24  4B F9 1F A5 */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 8028EBE8 0028AA28  7C 64 1B 78 */	mr r4, r3
+/* 8028EBEC 0028AA2C  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028EBF0 0028AA30  4B FD 75 55 */	bl getViewRect__Q43scn4step6camera10MainCameraCFv
+/* 8028EBF4 0028AA34  7F E3 FB 78 */	mr r3, r31
+/* 8028EBF8 0028AA38  4B FF 94 7D */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 8028EBFC 0028AA3C  C3 E3 00 2C */	lfs f31, 0x2c(r3)
+/* 8028EC00 0028AA40  7F E3 FB 78 */	mr r3, r31
+/* 8028EC04 0028AA44  4B FF F4 D1 */	bl GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+/* 8028EC08 0028AA48  C0 02 AF D4 */	lfs f0, $$261717-_SDA2_BASE_(r2)
+/* 8028EC0C 0028AA4C  EC 21 07 FA */	fmadds f1, f1, f31, f0
+/* 8028EC10 0028AA50  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 8028EC14 0028AA54  EC 00 08 2A */	fadds f0, f0, f1
+/* 8028EC18 0028AA58  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 8028EC1C 0028AA5C  C0 01 00 28 */	lfs f0, 0x28(r1)
+/* 8028EC20 0028AA60  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8028EC24 0028AA64  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 8028EC28 0028AA68  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 8028EC2C 0028AA6C  EC 00 08 2A */	fadds f0, f0, f1
+/* 8028EC30 0028AA70  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8028EC34 0028AA74  C0 01 00 24 */	lfs f0, 0x24(r1)
+/* 8028EC38 0028AA78  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8028EC3C 0028AA7C  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 8028EC40 0028AA80  7F E3 FB 78 */	mr r3, r31
+/* 8028EC44 0028AA84  4B FF 94 79 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028EC48 0028AA88  7C 64 1B 78 */	mr r4, r3
+/* 8028EC4C 0028AA8C  38 61 00 08 */	addi r3, r1, 8
+/* 8028EC50 0028AA90  4B FE 0A 75 */	bl centerPos__Q43scn4step5chara8LocationCFv
+/* 8028EC54 0028AA94  C3 E1 00 0C */	lfs f31, 0xc(r1)
+/* 8028EC58 0028AA98  7F E3 FB 78 */	mr r3, r31
+/* 8028EC5C 0028AA9C  4B FF 94 61 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028EC60 0028AAA0  7C 64 1B 78 */	mr r4, r3
+/* 8028EC64 0028AAA4  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028EC68 0028AAA8  4B FE 0A 5D */	bl centerPos__Q43scn4step5chara8LocationCFv
+/* 8028EC6C 0028AAAC  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 8028EC70 0028AAB0  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028EC74 0028AAB4  FC 40 F8 90 */	fmr f2, f31
+/* 8028EC78 0028AAB8  4B F1 12 61 */	bl isInclude__Q33hel3geo4RectCFff
+/* 8028EC7C 0028AABC  2C 03 00 00 */	cmpwi r3, 0
+/* 8028EC80 0028AAC0  40 82 00 18 */	bne lbl_8028EC98
+/* 8028EC84 0028AAC4  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028EC88 0028AAC8  38 80 FF FF */	li r4, -1
+/* 8028EC8C 0028AACC  4B F1 11 B1 */	bl __dt__Q33hel3geo4RectFv
+/* 8028EC90 0028AAD0  38 60 00 01 */	li r3, 1
+/* 8028EC94 0028AAD4  48 00 00 14 */	b lbl_8028ECA8
+lbl_8028EC98:
+/* 8028EC98 0028AAD8  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028EC9C 0028AADC  38 80 FF FF */	li r4, -1
+/* 8028ECA0 0028AAE0  4B F1 11 9D */	bl __dt__Q33hel3geo4RectFv
+/* 8028ECA4 0028AAE4  38 60 00 00 */	li r3, 0
+lbl_8028ECA8:
+/* 8028ECA8 0028AAE8  38 00 00 48 */	li r0, 0x48
+/* 8028ECAC 0028AAEC  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028ECB0 0028AAF0  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 8028ECB4 0028AAF4  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 8028ECB8 0028AAF8  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8028ECBC 0028AAFC  7C 08 03 A6 */	mtlr r0
+/* 8028ECC0 0028AB00  38 21 00 50 */	addi r1, r1, 0x50
+/* 8028ECC4 0028AB04  4E 80 00 20 */	blr 
+
+.global HitFloorCheck__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+HitFloorCheck__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028ECC8 0028AB08  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8028ECCC 0028AB0C  7C 08 02 A6 */	mflr r0
+/* 8028ECD0 0028AB10  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8028ECD4 0028AB14  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028ECD8 0028AB18  4B D7 86 6D */	bl func_80007344
+/* 8028ECDC 0028AB1C  7C 7D 1B 78 */	mr r29, r3
+/* 8028ECE0 0028AB20  4B FF 94 1D */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 8028ECE4 0028AB24  7C 64 1B 78 */	mr r4, r3
+/* 8028ECE8 0028AB28  38 61 00 08 */	addi r3, r1, 8
+/* 8028ECEC 0028AB2C  4B FF BF AD */	bl result__Q43scn4step5enemy7MapCollCFv
+/* 8028ECF0 0028AB30  88 01 00 08 */	lbz r0, 8(r1)
+/* 8028ECF4 0028AB34  2C 00 00 00 */	cmpwi r0, 0
+/* 8028ECF8 0028AB38  40 82 00 40 */	bne lbl_8028ED38
+/* 8028ECFC 0028AB3C  7F A3 EB 78 */	mr r3, r29
+/* 8028ED00 0028AB40  4B FF 94 A5 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028ED04 0028AB44  7C 7F 1B 78 */	mr r31, r3
+/* 8028ED08 0028AB48  48 17 71 F9 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8028ED0C 0028AB4C  3B DF 00 10 */	addi r30, r31, 0x10
+/* 8028ED10 0028AB50  2C 1E 00 00 */	cmpwi r30, 0
+/* 8028ED14 0028AB54  41 82 00 20 */	beq lbl_8028ED34
+/* 8028ED18 0028AB58  7F C3 F3 78 */	mr r3, r30
+/* 8028ED1C 0028AB5C  38 9F 00 90 */	addi r4, r31, 0x90
+/* 8028ED20 0028AB60  4B FA 7B 49 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8028ED24 0028AB64  3C 60 80 47 */	lis r3, __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1@ha
+/* 8028ED28 0028AB68  38 03 1E 40 */	addi r0, r3, __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common9StateFall$$4PQ43scn4step5enemy5Enemy$$1@l
+/* 8028ED2C 0028AB6C  90 1E 00 00 */	stw r0, 0(r30)
+/* 8028ED30 0028AB70  93 BE 00 08 */	stw r29, 8(r30)
+lbl_8028ED34:
+/* 8028ED34 0028AB74  93 DF 00 0C */	stw r30, 0xc(r31)
+lbl_8028ED38:
+/* 8028ED38 0028AB78  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028ED3C 0028AB7C  4B D7 86 55 */	bl func_80007390
+/* 8028ED40 0028AB80  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8028ED44 0028AB84  7C 08 03 A6 */	mtlr r0
+/* 8028ED48 0028AB88  38 21 00 50 */	addi r1, r1, 0x50
+/* 8028ED4C 0028AB8C  4E 80 00 20 */	blr 
+
+.global IsPlayerExist__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsPlayerExist__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028ED50 0028AB90  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028ED54 0028AB94  7C 08 02 A6 */	mflr r0
+/* 8028ED58 0028AB98  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028ED5C 0028AB9C  4B DE 69 D5 */	bl GKI_getfirst
+/* 8028ED60 0028ABA0  4B F9 20 99 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028ED64 0028ABA4  48 0B 83 A9 */	bl getVisiblePlayerCount__Q43scn4step4hero7ManagerCFv
+/* 8028ED68 0028ABA8  30 03 FF FF */	addic r0, r3, -1
+/* 8028ED6C 0028ABAC  7C 60 19 10 */	subfe r3, r0, r3
+/* 8028ED70 0028ABB0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028ED74 0028ABB4  7C 08 03 A6 */	mtlr r0
+/* 8028ED78 0028ABB8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028ED7C 0028ABBC  4E 80 00 20 */	blr 
+
+.global GetNearestPlayerPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+GetNearestPlayerPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028ED80 0028ABC0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8028ED84 0028ABC4  7C 08 02 A6 */	mflr r0
+/* 8028ED88 0028ABC8  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8028ED8C 0028ABCC  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 8028ED90 0028ABD0  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 8028ED94 0028ABD4  7C 7E 1B 78 */	mr r30, r3
+/* 8028ED98 0028ABD8  7C 9F 23 78 */	mr r31, r4
+/* 8028ED9C 0028ABDC  7F E3 FB 78 */	mr r3, r31
+/* 8028EDA0 0028ABE0  4B FF 93 1D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028EDA4 0028ABE4  7C 64 1B 78 */	mr r4, r3
+/* 8028EDA8 0028ABE8  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028EDAC 0028ABEC  4B FE 09 09 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028EDB0 0028ABF0  7F E3 FB 78 */	mr r3, r31
+/* 8028EDB4 0028ABF4  4B DE 69 7D */	bl GKI_getfirst
+/* 8028EDB8 0028ABF8  4B F9 20 41 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028EDBC 0028ABFC  7C 64 1B 78 */	mr r4, r3
+/* 8028EDC0 0028AC00  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028EDC4 0028AC04  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8028EDC8 0028AC08  48 0B 86 E9 */	bl getNearestVisiblePlayer__Q43scn4step4hero7ManagerFRCQ33hel4math7Vector3
+/* 8028EDCC 0028AC0C  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028EDD0 0028AC10  4B FA 1A ED */	bl isNull__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1CFv
+/* 8028EDD4 0028AC14  2C 03 00 00 */	cmpwi r3, 0
+/* 8028EDD8 0028AC18  41 82 00 34 */	beq lbl_8028EE0C
+/* 8028EDDC 0028AC1C  7F E3 FB 78 */	mr r3, r31
+/* 8028EDE0 0028AC20  4B FF 92 DD */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028EDE4 0028AC24  7C 64 1B 78 */	mr r4, r3
+/* 8028EDE8 0028AC28  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028EDEC 0028AC2C  4B FE 08 C9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028EDF0 0028AC30  7F C3 F3 78 */	mr r3, r30
+/* 8028EDF4 0028AC34  38 81 00 14 */	addi r4, r1, 0x14
+/* 8028EDF8 0028AC38  4B F3 3D D5 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028EDFC 0028AC3C  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028EE00 0028AC40  38 80 FF FF */	li r4, -1
+/* 8028EE04 0028AC44  4B FA 18 C5 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 8028EE08 0028AC48  48 00 00 30 */	b lbl_8028EE38
+lbl_8028EE0C:
+/* 8028EE0C 0028AC4C  80 61 00 3C */	lwz r3, 0x3c(r1)
+/* 8028EE10 0028AC50  48 0B 14 F5 */	bl location__Q43scn4step4hero4HeroCFv
+/* 8028EE14 0028AC54  7C 64 1B 78 */	mr r4, r3
+/* 8028EE18 0028AC58  38 61 00 08 */	addi r3, r1, 8
+/* 8028EE1C 0028AC5C  4B FE 08 99 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028EE20 0028AC60  7F C3 F3 78 */	mr r3, r30
+/* 8028EE24 0028AC64  38 81 00 08 */	addi r4, r1, 8
+/* 8028EE28 0028AC68  4B F3 3D A5 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028EE2C 0028AC6C  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028EE30 0028AC70  38 80 FF FF */	li r4, -1
+/* 8028EE34 0028AC74  4B FA 18 95 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+lbl_8028EE38:
+/* 8028EE38 0028AC78  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 8028EE3C 0028AC7C  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 8028EE40 0028AC80  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8028EE44 0028AC84  7C 08 03 A6 */	mtlr r0
+/* 8028EE48 0028AC88  38 21 00 50 */	addi r1, r1, 0x50
+/* 8028EE4C 0028AC8C  4E 80 00 20 */	blr 
+
+.global Turn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+Turn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EE50 0028AC90  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028EE54 0028AC94  7C 08 02 A6 */	mflr r0
+/* 8028EE58 0028AC98  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028EE5C 0028AC9C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028EE60 0028ACA0  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028EE64 0028ACA4  7C 7E 1B 78 */	mr r30, r3
+/* 8028EE68 0028ACA8  4B FF 92 45 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028EE6C 0028ACAC  4B EF 28 69 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8028EE70 0028ACB0  7C 60 00 34 */	cntlzw r0, r3
+/* 8028EE74 0028ACB4  54 1F D9 7E */	srwi r31, r0, 5
+/* 8028EE78 0028ACB8  7F C3 F3 78 */	mr r3, r30
+/* 8028EE7C 0028ACBC  4B FF 92 31 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028EE80 0028ACC0  7F E4 FB 78 */	mr r4, r31
+/* 8028EE84 0028ACC4  4B F0 97 FD */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+/* 8028EE88 0028ACC8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028EE8C 0028ACCC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028EE90 0028ACD0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028EE94 0028ACD4  7C 08 03 A6 */	mtlr r0
+/* 8028EE98 0028ACD8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028EE9C 0028ACDC  4E 80 00 20 */	blr 
+
+.global ChkCliff__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+ChkCliff__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EEA0 0028ACE0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028EEA4 0028ACE4  7C 08 02 A6 */	mflr r0
+/* 8028EEA8 0028ACE8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028EEAC 0028ACEC  4B FF 92 B9 */	bl cliffChecker__Q43scn4step5enemy5EnemyFv
+/* 8028EEB0 0028ACF0  4B FD E8 69 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 8028EEB4 0028ACF4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028EEB8 0028ACF8  7C 08 03 A6 */	mtlr r0
+/* 8028EEBC 0028ACFC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028EEC0 0028AD00  4E 80 00 20 */	blr 
+
+.global ChkCliffTurn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+ChkCliffTurn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EEC4 0028AD04  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028EEC8 0028AD08  7C 08 02 A6 */	mflr r0
+/* 8028EECC 0028AD0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028EED0 0028AD10  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028EED4 0028AD14  7C 7F 1B 78 */	mr r31, r3
+/* 8028EED8 0028AD18  4B FF 92 8D */	bl cliffChecker__Q43scn4step5enemy5EnemyFv
+/* 8028EEDC 0028AD1C  4B FD E8 3D */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 8028EEE0 0028AD20  2C 03 00 00 */	cmpwi r3, 0
+/* 8028EEE4 0028AD24  41 82 00 0C */	beq lbl_8028EEF0
+/* 8028EEE8 0028AD28  7F E3 FB 78 */	mr r3, r31
+/* 8028EEEC 0028AD2C  4B FF FF 65 */	bl Turn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+lbl_8028EEF0:
+/* 8028EEF0 0028AD30  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028EEF4 0028AD34  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028EEF8 0028AD38  7C 08 03 A6 */	mtlr r0
+/* 8028EEFC 0028AD3C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028EF00 0028AD40  4E 80 00 20 */	blr 
+
+.global ChkNururiByDir__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyf
+ChkNururiByDir__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyf:
+/* 8028EF04 0028AD44  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8028EF08 0028AD48  7C 08 02 A6 */	mflr r0
+/* 8028EF0C 0028AD4C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8028EF10 0028AD50  DB E1 00 20 */	stfd f31, 0x20(r1)
+/* 8028EF14 0028AD54  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
+/* 8028EF18 0028AD58  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8028EF1C 0028AD5C  7C 7F 1B 78 */	mr r31, r3
+/* 8028EF20 0028AD60  FF E0 08 90 */	fmr f31, f1
+/* 8028EF24 0028AD64  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028EF28 0028AD68  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028EF2C 0028AD6C  40 80 00 0C */	bge lbl_8028EF38
+/* 8028EF30 0028AD70  C0 02 AF A8 */	lfs f0, $$261600-_SDA2_BASE_(r2)
+/* 8028EF34 0028AD74  EF E1 00 32 */	fmuls f31, f1, f0
+lbl_8028EF38:
+/* 8028EF38 0028AD78  7F E3 FB 78 */	mr r3, r31
+/* 8028EF3C 0028AD7C  4B FF 92 19 */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 8028EF40 0028AD80  7C 64 1B 78 */	mr r4, r3
+/* 8028EF44 0028AD84  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028EF48 0028AD88  4B FF C1 DD */	bl getNururiDir__Q43scn4step5enemy6NururiCFv
+/* 8028EF4C 0028AD8C  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 8028EF50 0028AD90  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 8028EF54 0028AD94  40 81 00 18 */	ble lbl_8028EF6C
+/* 8028EF58 0028AD98  7F E3 FB 78 */	mr r3, r31
+/* 8028EF5C 0028AD9C  4B FF 91 51 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028EF60 0028ADA0  4B EF 27 75 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8028EF64 0028ADA4  2C 03 00 00 */	cmpwi r3, 0
+/* 8028EF68 0028ADA8  41 82 00 3C */	beq lbl_8028EFA4
+lbl_8028EF6C:
+/* 8028EF6C 0028ADAC  7F E3 FB 78 */	mr r3, r31
+/* 8028EF70 0028ADB0  4B FF 91 E5 */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 8028EF74 0028ADB4  7C 64 1B 78 */	mr r4, r3
+/* 8028EF78 0028ADB8  38 61 00 08 */	addi r3, r1, 8
+/* 8028EF7C 0028ADBC  4B FF C1 A9 */	bl getNururiDir__Q43scn4step5enemy6NururiCFv
+/* 8028EF80 0028ADC0  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028EF84 0028ADC4  FC 00 F8 50 */	fneg f0, f31
+/* 8028EF88 0028ADC8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028EF8C 0028ADCC  40 80 00 20 */	bge lbl_8028EFAC
+/* 8028EF90 0028ADD0  7F E3 FB 78 */	mr r3, r31
+/* 8028EF94 0028ADD4  4B FF 91 19 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028EF98 0028ADD8  4B EF 27 3D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8028EF9C 0028ADDC  2C 03 00 00 */	cmpwi r3, 0
+/* 8028EFA0 0028ADE0  41 82 00 0C */	beq lbl_8028EFAC
+lbl_8028EFA4:
+/* 8028EFA4 0028ADE4  38 60 00 01 */	li r3, 1
+/* 8028EFA8 0028ADE8  48 00 00 08 */	b lbl_8028EFB0
+lbl_8028EFAC:
+/* 8028EFAC 0028ADEC  38 60 00 00 */	li r3, 0
+lbl_8028EFB0:
+/* 8028EFB0 0028ADF0  38 00 00 28 */	li r0, 0x28
+/* 8028EFB4 0028ADF4  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028EFB8 0028ADF8  CB E1 00 20 */	lfd f31, 0x20(r1)
+/* 8028EFBC 0028ADFC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8028EFC0 0028AE00  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8028EFC4 0028AE04  7C 08 03 A6 */	mtlr r0
+/* 8028EFC8 0028AE08  38 21 00 30 */	addi r1, r1, 0x30
+/* 8028EFCC 0028AE0C  4E 80 00 20 */	blr 
+
+.global ChkNururiTurn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+ChkNururiTurn__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028EFD0 0028AE10  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028EFD4 0028AE14  7C 08 02 A6 */	mflr r0
+/* 8028EFD8 0028AE18  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028EFDC 0028AE1C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8028EFE0 0028AE20  7C 7F 1B 78 */	mr r31, r3
+/* 8028EFE4 0028AE24  4B FF 91 71 */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 8028EFE8 0028AE28  7C 64 1B 78 */	mr r4, r3
+/* 8028EFEC 0028AE2C  38 61 00 08 */	addi r3, r1, 8
+/* 8028EFF0 0028AE30  4B FF C1 35 */	bl getNururiDir__Q43scn4step5enemy6NururiCFv
+/* 8028EFF4 0028AE34  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028EFF8 0028AE38  4B F1 0E BD */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 8028EFFC 0028AE3C  C0 02 AF D8 */	lfs f0, $$261792-_SDA2_BASE_(r2)
+/* 8028F000 0028AE40  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F004 0028AE44  41 80 00 24 */	blt lbl_8028F028
+/* 8028F008 0028AE48  7F E3 FB 78 */	mr r3, r31
+/* 8028F00C 0028AE4C  4B FF 90 A1 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028F010 0028AE50  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028F014 0028AE54  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028F018 0028AE58  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F01C 0028AE5C  7C 80 00 26 */	mfcr r4
+/* 8028F020 0028AE60  54 84 17 FE */	rlwinm r4, r4, 2, 0x1f, 0x1f
+/* 8028F024 0028AE64  4B F0 96 5D */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_8028F028:
+/* 8028F028 0028AE68  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8028F02C 0028AE6C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028F030 0028AE70  7C 08 03 A6 */	mtlr r0
+/* 8028F034 0028AE74  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028F038 0028AE78  4E 80 00 20 */	blr 
+
+.global TurnHero__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+TurnHero__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028F03C 0028AE7C  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 8028F040 0028AE80  7C 08 02 A6 */	mflr r0
+/* 8028F044 0028AE84  90 01 00 64 */	stw r0, 0x64(r1)
+/* 8028F048 0028AE88  DB E1 00 50 */	stfd f31, 0x50(r1)
+/* 8028F04C 0028AE8C  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
+/* 8028F050 0028AE90  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 8028F054 0028AE94  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 8028F058 0028AE98  7C 7E 1B 78 */	mr r30, r3
+/* 8028F05C 0028AE9C  4B FF 90 61 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F060 0028AEA0  7C 64 1B 78 */	mr r4, r3
+/* 8028F064 0028AEA4  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028F068 0028AEA8  4B FE 06 4D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F06C 0028AEAC  7F C3 F3 78 */	mr r3, r30
+/* 8028F070 0028AEB0  4B DE 66 C1 */	bl GKI_getfirst
+/* 8028F074 0028AEB4  4B F9 1D 85 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F078 0028AEB8  7C 64 1B 78 */	mr r4, r3
+/* 8028F07C 0028AEBC  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028F080 0028AEC0  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8028F084 0028AEC4  48 0B 84 2D */	bl getNearestVisiblePlayer__Q43scn4step4hero7ManagerFRCQ33hel4math7Vector3
+/* 8028F088 0028AEC8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028F08C 0028AECC  4B EF 96 3D */	bl wasSetParent__Q24file8FileTreeCFv
+/* 8028F090 0028AED0  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F094 0028AED4  41 82 00 54 */	beq lbl_8028F0E8
+/* 8028F098 0028AED8  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 8028F09C 0028AEDC  7F C3 F3 78 */	mr r3, r30
+/* 8028F0A0 0028AEE0  4B FF 90 1D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F0A4 0028AEE4  7C 64 1B 78 */	mr r4, r3
+/* 8028F0A8 0028AEE8  38 61 00 08 */	addi r3, r1, 8
+/* 8028F0AC 0028AEEC  4B FE 06 09 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F0B0 0028AEF0  C3 E1 00 08 */	lfs f31, 8(r1)
+/* 8028F0B4 0028AEF4  7F E3 FB 78 */	mr r3, r31
+/* 8028F0B8 0028AEF8  48 0B 12 4D */	bl location__Q43scn4step4hero4HeroCFv
+/* 8028F0BC 0028AEFC  7C 64 1B 78 */	mr r4, r3
+/* 8028F0C0 0028AF00  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028F0C4 0028AF04  4B FE 05 F1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F0C8 0028AF08  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8028F0CC 0028AF0C  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 8028F0D0 0028AF10  7F E0 00 26 */	mfcr r31
+/* 8028F0D4 0028AF14  57 FF 17 FE */	rlwinm r31, r31, 2, 0x1f, 0x1f
+/* 8028F0D8 0028AF18  7F C3 F3 78 */	mr r3, r30
+/* 8028F0DC 0028AF1C  4B FF 8F D1 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028F0E0 0028AF20  7F E4 FB 78 */	mr r4, r31
+/* 8028F0E4 0028AF24  4B F0 95 9D */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_8028F0E8:
+/* 8028F0E8 0028AF28  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028F0EC 0028AF2C  38 80 FF FF */	li r4, -1
+/* 8028F0F0 0028AF30  4B FA 15 D9 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 8028F0F4 0028AF34  38 00 00 58 */	li r0, 0x58
+/* 8028F0F8 0028AF38  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028F0FC 0028AF3C  CB E1 00 50 */	lfd f31, 0x50(r1)
+/* 8028F100 0028AF40  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 8028F104 0028AF44  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 8028F108 0028AF48  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 8028F10C 0028AF4C  7C 08 03 A6 */	mtlr r0
+/* 8028F110 0028AF50  38 21 00 60 */	addi r1, r1, 0x60
+/* 8028F114 0028AF54  4E 80 00 20 */	blr 
+
+.global Suicide__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+Suicide__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028F118 0028AF58  4B FF 8A 54 */	b dead__Q43scn4step5enemy5EnemyFv
+
+.global IsHeroInRange__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyffff
+IsHeroInRange__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyffff:
+/* 8028F11C 0028AF5C  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 8028F120 0028AF60  7C 08 02 A6 */	mflr r0
+/* 8028F124 0028AF64  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 8028F128 0028AF68  DB E1 00 A0 */	stfd f31, 0xa0(r1)
+/* 8028F12C 0028AF6C  F3 E1 00 A8 */	psq_st f31, 168(r1), 0, qr0
+/* 8028F130 0028AF70  DB C1 00 90 */	stfd f30, 0x90(r1)
+/* 8028F134 0028AF74  F3 C1 00 98 */	psq_st f30, 152(r1), 0, qr0
+/* 8028F138 0028AF78  DB A1 00 80 */	stfd f29, 0x80(r1)
+/* 8028F13C 0028AF7C  F3 A1 00 88 */	psq_st f29, 136(r1), 0, qr0
+/* 8028F140 0028AF80  DB 81 00 70 */	stfd f28, 0x70(r1)
+/* 8028F144 0028AF84  F3 81 00 78 */	psq_st f28, 120(r1), 0, qr0
+/* 8028F148 0028AF88  93 E1 00 6C */	stw r31, 0x6c(r1)
+/* 8028F14C 0028AF8C  7C 7F 1B 78 */	mr r31, r3
+/* 8028F150 0028AF90  FF 80 08 90 */	fmr f28, f1
+/* 8028F154 0028AF94  FF A0 10 90 */	fmr f29, f2
+/* 8028F158 0028AF98  FF C0 18 90 */	fmr f30, f3
+/* 8028F15C 0028AF9C  FF E0 20 90 */	fmr f31, f4
+/* 8028F160 0028AFA0  4B FF 8F 5D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F164 0028AFA4  7C 64 1B 78 */	mr r4, r3
+/* 8028F168 0028AFA8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028F16C 0028AFAC  4B FE 05 49 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F170 0028AFB0  7F E3 FB 78 */	mr r3, r31
+/* 8028F174 0028AFB4  4B DE 65 BD */	bl GKI_getfirst
+/* 8028F178 0028AFB8  4B F9 1C 81 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F17C 0028AFBC  7C 64 1B 78 */	mr r4, r3
+/* 8028F180 0028AFC0  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028F184 0028AFC4  38 A1 00 30 */	addi r5, r1, 0x30
+/* 8028F188 0028AFC8  48 0B 83 29 */	bl getNearestVisiblePlayer__Q43scn4step4hero7ManagerFRCQ33hel4math7Vector3
+/* 8028F18C 0028AFCC  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028F190 0028AFD0  4B FA 17 2D */	bl isNull__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1CFv
+/* 8028F194 0028AFD4  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F198 0028AFD8  41 82 00 18 */	beq lbl_8028F1B0
+/* 8028F19C 0028AFDC  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028F1A0 0028AFE0  38 80 FF FF */	li r4, -1
+/* 8028F1A4 0028AFE4  4B FA 15 25 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 8028F1A8 0028AFE8  38 60 00 00 */	li r3, 0
+/* 8028F1AC 0028AFEC  48 00 01 18 */	b lbl_8028F2C4
+lbl_8028F1B0:
+/* 8028F1B0 0028AFF0  7F E3 FB 78 */	mr r3, r31
+/* 8028F1B4 0028AFF4  4B FF 8F 09 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F1B8 0028AFF8  7C 64 1B 78 */	mr r4, r3
+/* 8028F1BC 0028AFFC  38 61 00 24 */	addi r3, r1, 0x24
+/* 8028F1C0 0028B000  4B FE 04 F5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F1C4 0028B004  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028F1C8 0028B008  38 81 00 24 */	addi r4, r1, 0x24
+/* 8028F1CC 0028B00C  4B F3 3A 01 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028F1D0 0028B010  80 61 00 5C */	lwz r3, 0x5c(r1)
+/* 8028F1D4 0028B014  48 0B 11 31 */	bl location__Q43scn4step4hero4HeroCFv
+/* 8028F1D8 0028B018  7C 64 1B 78 */	mr r4, r3
+/* 8028F1DC 0028B01C  38 61 00 18 */	addi r3, r1, 0x18
+/* 8028F1E0 0028B020  4B FE 04 D5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F1E4 0028B024  38 61 00 08 */	addi r3, r1, 8
+/* 8028F1E8 0028B028  38 81 00 18 */	addi r4, r1, 0x18
+/* 8028F1EC 0028B02C  4B F3 39 E1 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028F1F0 0028B030  7F E3 FB 78 */	mr r3, r31
+/* 8028F1F4 0028B034  4B FF 8E B9 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028F1F8 0028B038  4B F0 CE A9 */	bl getSign__Q24gobj6TargetCFv
+/* 8028F1FC 0028B03C  FC 00 08 90 */	fmr f0, f1
+/* 8028F200 0028B040  38 61 00 40 */	addi r3, r1, 0x40
+/* 8028F204 0028B044  FC 20 E0 90 */	fmr f1, f28
+/* 8028F208 0028B048  FC 40 E8 90 */	fmr f2, f29
+/* 8028F20C 0028B04C  EC 60 07 B2 */	fmuls f3, f0, f30
+/* 8028F210 0028B050  EC 80 07 F2 */	fmuls f4, f0, f31
+/* 8028F214 0028B054  4B F1 0B 91 */	bl __ct__Q33hel3geo4RectFffff
+/* 8028F218 0028B058  C0 21 00 48 */	lfs f1, 0x48(r1)
+/* 8028F21C 0028B05C  C0 01 00 4C */	lfs f0, 0x4c(r1)
+/* 8028F220 0028B060  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F224 0028B064  40 81 00 0C */	ble lbl_8028F230
+/* 8028F228 0028B068  D0 01 00 48 */	stfs f0, 0x48(r1)
+/* 8028F22C 0028B06C  D0 21 00 4C */	stfs f1, 0x4c(r1)
+lbl_8028F230:
+/* 8028F230 0028B070  38 61 00 40 */	addi r3, r1, 0x40
+/* 8028F234 0028B074  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 8028F238 0028B078  C0 41 00 14 */	lfs f2, 0x14(r1)
+/* 8028F23C 0028B07C  4B F1 0C 05 */	bl trans__Q33hel3geo4RectFff
+/* 8028F240 0028B080  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8028F244 0028B084  C0 01 00 48 */	lfs f0, 0x48(r1)
+/* 8028F248 0028B088  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F24C 0028B08C  4C 41 13 82 */	cror 2, 1, 2
+/* 8028F250 0028B090  40 82 00 58 */	bne lbl_8028F2A8
+/* 8028F254 0028B094  C0 01 00 4C */	lfs f0, 0x4c(r1)
+/* 8028F258 0028B098  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F25C 0028B09C  4C 40 13 82 */	cror 2, 0, 2
+/* 8028F260 0028B0A0  40 82 00 48 */	bne lbl_8028F2A8
+/* 8028F264 0028B0A4  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 8028F268 0028B0A8  C0 01 00 44 */	lfs f0, 0x44(r1)
+/* 8028F26C 0028B0AC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F270 0028B0B0  4C 41 13 82 */	cror 2, 1, 2
+/* 8028F274 0028B0B4  40 82 00 34 */	bne lbl_8028F2A8
+/* 8028F278 0028B0B8  C0 01 00 40 */	lfs f0, 0x40(r1)
+/* 8028F27C 0028B0BC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028F280 0028B0C0  4C 40 13 82 */	cror 2, 0, 2
+/* 8028F284 0028B0C4  40 82 00 24 */	bne lbl_8028F2A8
+/* 8028F288 0028B0C8  38 61 00 40 */	addi r3, r1, 0x40
+/* 8028F28C 0028B0CC  38 80 FF FF */	li r4, -1
+/* 8028F290 0028B0D0  4B F1 0B AD */	bl __dt__Q33hel3geo4RectFv
+/* 8028F294 0028B0D4  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028F298 0028B0D8  38 80 FF FF */	li r4, -1
+/* 8028F29C 0028B0DC  4B FA 14 2D */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 8028F2A0 0028B0E0  38 60 00 01 */	li r3, 1
+/* 8028F2A4 0028B0E4  48 00 00 20 */	b lbl_8028F2C4
+lbl_8028F2A8:
+/* 8028F2A8 0028B0E8  38 61 00 40 */	addi r3, r1, 0x40
+/* 8028F2AC 0028B0EC  38 80 FF FF */	li r4, -1
+/* 8028F2B0 0028B0F0  4B F1 0B 8D */	bl __dt__Q33hel3geo4RectFv
+/* 8028F2B4 0028B0F4  38 61 00 50 */	addi r3, r1, 0x50
+/* 8028F2B8 0028B0F8  38 80 FF FF */	li r4, -1
+/* 8028F2BC 0028B0FC  4B FA 14 0D */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Fv
+/* 8028F2C0 0028B100  38 60 00 00 */	li r3, 0
+lbl_8028F2C4:
+/* 8028F2C4 0028B104  38 00 00 A8 */	li r0, 0xa8
+/* 8028F2C8 0028B108  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028F2CC 0028B10C  CB E1 00 A0 */	lfd f31, 0xa0(r1)
+/* 8028F2D0 0028B110  38 00 00 98 */	li r0, 0x98
+/* 8028F2D4 0028B114  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8028F2D8 0028B118  CB C1 00 90 */	lfd f30, 0x90(r1)
+/* 8028F2DC 0028B11C  38 00 00 88 */	li r0, 0x88
+/* 8028F2E0 0028B120  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 8028F2E4 0028B124  CB A1 00 80 */	lfd f29, 0x80(r1)
+/* 8028F2E8 0028B128  38 00 00 78 */	li r0, 0x78
+/* 8028F2EC 0028B12C  13 81 00 0C */	psq_lx f28, (r1 + r0), 0, qr0
+/* 8028F2F0 0028B130  CB 81 00 70 */	lfd f28, 0x70(r1)
+/* 8028F2F4 0028B134  83 E1 00 6C */	lwz r31, 0x6c(r1)
+/* 8028F2F8 0028B138  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 8028F2FC 0028B13C  7C 08 03 A6 */	mtlr r0
+/* 8028F300 0028B140  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 8028F304 0028B144  4E 80 00 20 */	blr 
+
+.global IsHeroInRangeByDir__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyffff
+IsHeroInRangeByDir__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyffff:
+/* 8028F308 0028B148  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 8028F30C 0028B14C  7C 08 02 A6 */	mflr r0
+/* 8028F310 0028B150  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 8028F314 0028B154  DB E1 00 A0 */	stfd f31, 0xa0(r1)
+/* 8028F318 0028B158  F3 E1 00 A8 */	psq_st f31, 168(r1), 0, qr0
+/* 8028F31C 0028B15C  DB C1 00 90 */	stfd f30, 0x90(r1)
+/* 8028F320 0028B160  F3 C1 00 98 */	psq_st f30, 152(r1), 0, qr0
+/* 8028F324 0028B164  DB A1 00 80 */	stfd f29, 0x80(r1)
+/* 8028F328 0028B168  F3 A1 00 88 */	psq_st f29, 136(r1), 0, qr0
+/* 8028F32C 0028B16C  39 61 00 80 */	addi r11, r1, 0x80
+/* 8028F330 0028B170  4B D7 80 11 */	bl func_80007340
+/* 8028F334 0028B174  7C 7C 1B 78 */	mr r28, r3
+/* 8028F338 0028B178  FF A0 08 90 */	fmr f29, f1
+/* 8028F33C 0028B17C  FF C0 10 90 */	fmr f30, f2
+/* 8028F340 0028B180  FF E0 18 90 */	fmr f31, f3
+/* 8028F344 0028B184  38 61 00 38 */	addi r3, r1, 0x38
+/* 8028F348 0028B188  3C 80 80 54 */	lis r4, BASIS_Z__Q33hel4math7Vector3@ha
+/* 8028F34C 0028B18C  38 84 53 00 */	addi r4, r4, BASIS_Z__Q33hel4math7Vector3@l
+/* 8028F350 0028B190  FC 20 20 90 */	fmr f1, f4
+/* 8028F354 0028B194  4B F0 F3 41 */	bl CreateRotAxisDeg__Q33hel4math8Matrix34FRCQ33hel4math7Vector3f
+/* 8028F358 0028B198  7F 83 E3 78 */	mr r3, r28
+/* 8028F35C 0028B19C  4B DE 63 D5 */	bl GKI_getfirst
+/* 8028F360 0028B1A0  4B F9 1A 99 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F364 0028B1A4  48 0B 7D 99 */	bl getPlayerCount__Q43scn4step4hero7ManagerCFv
+/* 8028F368 0028B1A8  7C 7F 1B 78 */	mr r31, r3
+/* 8028F36C 0028B1AC  3B C0 00 00 */	li r30, 0
+/* 8028F370 0028B1B0  48 00 00 B0 */	b lbl_8028F420
+lbl_8028F374:
+/* 8028F374 0028B1B4  7F 83 E3 78 */	mr r3, r28
+/* 8028F378 0028B1B8  4B DE 63 B9 */	bl GKI_getfirst
+/* 8028F37C 0028B1BC  4B F9 1A 7D */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F380 0028B1C0  7F C4 F3 78 */	mr r4, r30
+/* 8028F384 0028B1C4  48 0B 7D AD */	bl getPlayerByIndex__Q43scn4step4hero7ManagerFUl
+/* 8028F388 0028B1C8  7C 7D 1B 78 */	mr r29, r3
+/* 8028F38C 0028B1CC  7F 83 E3 78 */	mr r3, r28
+/* 8028F390 0028B1D0  4B FF 8D 2D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F394 0028B1D4  7C 64 1B 78 */	mr r4, r3
+/* 8028F398 0028B1D8  38 61 00 14 */	addi r3, r1, 0x14
+/* 8028F39C 0028B1DC  4B FE 03 19 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F3A0 0028B1E0  7F A3 EB 78 */	mr r3, r29
+/* 8028F3A4 0028B1E4  48 0B 0F 61 */	bl location__Q43scn4step4hero4HeroCFv
+/* 8028F3A8 0028B1E8  7C 64 1B 78 */	mr r4, r3
+/* 8028F3AC 0028B1EC  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028F3B0 0028B1F0  4B FE 03 05 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F3B4 0028B1F4  38 61 00 2C */	addi r3, r1, 0x2c
+/* 8028F3B8 0028B1F8  38 81 00 20 */	addi r4, r1, 0x20
+/* 8028F3BC 0028B1FC  38 A1 00 14 */	addi r5, r1, 0x14
+/* 8028F3C0 0028B200  4B EE D4 8D */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8028F3C4 0028B204  38 61 00 08 */	addi r3, r1, 8
+/* 8028F3C8 0028B208  4B EE D1 2D */	bl __ct__Q33hel4math7Vector3Fv
+/* 8028F3CC 0028B20C  38 61 00 38 */	addi r3, r1, 0x38
+/* 8028F3D0 0028B210  38 81 00 2C */	addi r4, r1, 0x2c
+/* 8028F3D4 0028B214  38 A1 00 08 */	addi r5, r1, 8
+/* 8028F3D8 0028B218  4B DA 1D 19 */	bl PSMTXMultVec
+/* 8028F3DC 0028B21C  38 61 00 2C */	addi r3, r1, 0x2c
+/* 8028F3E0 0028B220  38 81 00 08 */	addi r4, r1, 8
+/* 8028F3E4 0028B224  4B EE D1 69 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8028F3E8 0028B228  C0 21 00 2C */	lfs f1, 0x2c(r1)
+/* 8028F3EC 0028B22C  4B F1 0A C9 */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 8028F3F0 0028B230  FC 01 E8 40 */	fcmpo cr0, f1, f29
+/* 8028F3F4 0028B234  40 80 00 28 */	bge lbl_8028F41C
+/* 8028F3F8 0028B238  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 8028F3FC 0028B23C  FC 1E 00 40 */	fcmpo cr0, f30, f0
+/* 8028F400 0028B240  4C 40 13 82 */	cror 2, 0, 2
+/* 8028F404 0028B244  40 82 00 18 */	bne lbl_8028F41C
+/* 8028F408 0028B248  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 8028F40C 0028B24C  4C 40 13 82 */	cror 2, 0, 2
+/* 8028F410 0028B250  40 82 00 0C */	bne lbl_8028F41C
+/* 8028F414 0028B254  38 60 00 01 */	li r3, 1
+/* 8028F418 0028B258  48 00 00 14 */	b lbl_8028F42C
+lbl_8028F41C:
+/* 8028F41C 0028B25C  3B DE 00 01 */	addi r30, r30, 1
+lbl_8028F420:
+/* 8028F420 0028B260  7C 1E F8 40 */	cmplw r30, r31
+/* 8028F424 0028B264  41 80 FF 50 */	blt lbl_8028F374
+/* 8028F428 0028B268  38 60 00 00 */	li r3, 0
+lbl_8028F42C:
+/* 8028F42C 0028B26C  38 00 00 A8 */	li r0, 0xa8
+/* 8028F430 0028B270  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028F434 0028B274  CB E1 00 A0 */	lfd f31, 0xa0(r1)
+/* 8028F438 0028B278  38 00 00 98 */	li r0, 0x98
+/* 8028F43C 0028B27C  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8028F440 0028B280  CB C1 00 90 */	lfd f30, 0x90(r1)
+/* 8028F444 0028B284  38 00 00 88 */	li r0, 0x88
+/* 8028F448 0028B288  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 8028F44C 0028B28C  CB A1 00 80 */	lfd f29, 0x80(r1)
+/* 8028F450 0028B290  39 61 00 80 */	addi r11, r1, 0x80
+/* 8028F454 0028B294  4B D7 7F 39 */	bl func_8000738C
+/* 8028F458 0028B298  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 8028F45C 0028B29C  7C 08 03 A6 */	mtlr r0
+/* 8028F460 0028B2A0  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 8028F464 0028B2A4  4E 80 00 20 */	blr 
+
+.global IsHeroDeadCurrentFrame__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsHeroDeadCurrentFrame__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028F468 0028B2A8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028F46C 0028B2AC  7C 08 02 A6 */	mflr r0
+/* 8028F470 0028B2B0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028F474 0028B2B4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8028F478 0028B2B8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8028F47C 0028B2BC  7C 7E 1B 78 */	mr r30, r3
+/* 8028F480 0028B2C0  3B E0 00 00 */	li r31, 0
+/* 8028F484 0028B2C4  48 00 00 34 */	b lbl_8028F4B8
+lbl_8028F488:
+/* 8028F488 0028B2C8  7F C3 F3 78 */	mr r3, r30
+/* 8028F48C 0028B2CC  4B DE 62 A5 */	bl GKI_getfirst
+/* 8028F490 0028B2D0  4B F9 19 69 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F494 0028B2D4  7F E4 FB 78 */	mr r4, r31
+/* 8028F498 0028B2D8  48 0B 7C 99 */	bl getPlayerByIndex__Q43scn4step4hero7ManagerFUl
+/* 8028F49C 0028B2DC  48 0B 0F 01 */	bl dead__Q43scn4step4hero4HeroFv
+/* 8028F4A0 0028B2E0  4B F4 B2 55 */	bl isDecideAnimEnd__Q25pause11ButtonPanelCFv
+/* 8028F4A4 0028B2E4  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F4A8 0028B2E8  41 82 00 0C */	beq lbl_8028F4B4
+/* 8028F4AC 0028B2EC  38 60 00 01 */	li r3, 1
+/* 8028F4B0 0028B2F0  48 00 00 24 */	b lbl_8028F4D4
+lbl_8028F4B4:
+/* 8028F4B4 0028B2F4  3B FF 00 01 */	addi r31, r31, 1
+lbl_8028F4B8:
+/* 8028F4B8 0028B2F8  7F C3 F3 78 */	mr r3, r30
+/* 8028F4BC 0028B2FC  4B DE 62 75 */	bl GKI_getfirst
+/* 8028F4C0 0028B300  4B F9 19 39 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F4C4 0028B304  48 0B 7C 39 */	bl getPlayerCount__Q43scn4step4hero7ManagerCFv
+/* 8028F4C8 0028B308  7C 1F 18 40 */	cmplw r31, r3
+/* 8028F4CC 0028B30C  41 80 FF BC */	blt lbl_8028F488
+/* 8028F4D0 0028B310  38 60 00 00 */	li r3, 0
+lbl_8028F4D4:
+/* 8028F4D4 0028B314  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8028F4D8 0028B318  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8028F4DC 0028B31C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028F4E0 0028B320  7C 08 03 A6 */	mtlr r0
+/* 8028F4E4 0028B324  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028F4E8 0028B328  4E 80 00 20 */	blr 
+
+.global IsExistLand__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyff
+IsExistLand__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyff:
+/* 8028F4EC 0028B32C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028F4F0 0028B330  7C 08 02 A6 */	mflr r0
+/* 8028F4F4 0028B334  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028F4F8 0028B338  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8028F4FC 0028B33C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8028F500 0028B340  7C 7E 1B 78 */	mr r30, r3
+/* 8028F504 0028B344  38 61 00 08 */	addi r3, r1, 8
+/* 8028F508 0028B348  4B F0 FE A1 */	bl set__Q33hel4math7Vector2Fff
+/* 8028F50C 0028B34C  7C 7F 1B 78 */	mr r31, r3
+/* 8028F510 0028B350  7F C3 F3 78 */	mr r3, r30
+/* 8028F514 0028B354  4B DE 62 1D */	bl GKI_getfirst
+/* 8028F518 0028B358  4B F9 17 DD */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 8028F51C 0028B35C  4B D9 4F 85 */	bl DefaultSwitchThreadCallback
+/* 8028F520 0028B360  7F E4 FB 78 */	mr r4, r31
+/* 8028F524 0028B364  4B F2 2A 2D */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8028F528 0028B368  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8028F52C 0028B36C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8028F530 0028B370  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028F534 0028B374  7C 08 03 A6 */	mtlr r0
+/* 8028F538 0028B378  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028F53C 0028B37C  4E 80 00 20 */	blr 
+
+.global IsWaterGrid__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyff
+IsWaterGrid__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyff:
+/* 8028F540 0028B380  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028F544 0028B384  7C 08 02 A6 */	mflr r0
+/* 8028F548 0028B388  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028F54C 0028B38C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8028F550 0028B390  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8028F554 0028B394  7C 7E 1B 78 */	mr r30, r3
+/* 8028F558 0028B398  38 61 00 08 */	addi r3, r1, 8
+/* 8028F55C 0028B39C  4B F0 FE 4D */	bl set__Q33hel4math7Vector2Fff
+/* 8028F560 0028B3A0  7C 7F 1B 78 */	mr r31, r3
+/* 8028F564 0028B3A4  7F C3 F3 78 */	mr r3, r30
+/* 8028F568 0028B3A8  4B DE 61 C9 */	bl GKI_getfirst
+/* 8028F56C 0028B3AC  4B F9 17 89 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 8028F570 0028B3B0  4B D9 4F 31 */	bl DefaultSwitchThreadCallback
+/* 8028F574 0028B3B4  7F E4 FB 78 */	mr r4, r31
+/* 8028F578 0028B3B8  4B F2 29 81 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8028F57C 0028B3BC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8028F580 0028B3C0  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8028F584 0028B3C4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028F588 0028B3C8  7C 08 03 A6 */	mtlr r0
+/* 8028F58C 0028B3CC  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028F590 0028B3D0  4E 80 00 20 */	blr 
+
+.global IsExistKeyCarryingHero__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+IsExistKeyCarryingHero__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028F594 0028B3D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028F598 0028B3D8  7C 08 02 A6 */	mflr r0
+/* 8028F59C 0028B3DC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028F5A0 0028B3E0  4B DE 61 91 */	bl GKI_getfirst
+/* 8028F5A4 0028B3E4  4B F9 18 55 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028F5A8 0028B3E8  4B DC 48 49 */	bl __wpadNoAlloc
+/* 8028F5AC 0028B3EC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028F5B0 0028B3F0  7C 08 03 A6 */	mtlr r0
+/* 8028F5B4 0028B3F4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028F5B8 0028B3F8  4E 80 00 20 */	blr 
+
+.global ChangeStateOnDamage__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb
+ChangeStateOnDamage__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb:
+/* 8028F5BC 0028B3FC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8028F5C0 0028B400  7C 08 02 A6 */	mflr r0
+/* 8028F5C4 0028B404  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8028F5C8 0028B408  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028F5CC 0028B40C  4B D7 7D 79 */	bl func_80007344
+/* 8028F5D0 0028B410  7C 7F 1B 78 */	mr r31, r3
+/* 8028F5D4 0028B414  7C 9E 23 78 */	mr r30, r4
+/* 8028F5D8 0028B418  4B FF 8B 35 */	bl hitPoint__Q43scn4step5enemy5EnemyFv
+/* 8028F5DC 0028B41C  7C 7D 1B 78 */	mr r29, r3
+/* 8028F5E0 0028B420  7F E3 FB 78 */	mr r3, r31
+/* 8028F5E4 0028B424  4B FF 8B 19 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 8028F5E8 0028B428  7C 64 1B 78 */	mr r4, r3
+/* 8028F5EC 0028B42C  38 61 00 08 */	addi r3, r1, 8
+/* 8028F5F0 0028B430  4B FF B6 A9 */	bl result__Q43scn4step5enemy7MapCollCFv
+/* 8028F5F4 0028B434  88 01 00 11 */	lbz r0, 0x11(r1)
+/* 8028F5F8 0028B438  2C 00 00 00 */	cmpwi r0, 0
+/* 8028F5FC 0028B43C  41 82 00 24 */	beq lbl_8028F620
+/* 8028F600 0028B440  7F E3 FB 78 */	mr r3, r31
+/* 8028F604 0028B444  4B FF 87 01 */	bl deadWithEffectNoItem__Q43scn4step5enemy5EnemyFv
+/* 8028F608 0028B448  7F E3 FB 78 */	mr r3, r31
+/* 8028F60C 0028B44C  4B DE 61 25 */	bl GKI_getfirst
+/* 8028F610 0028B450  4B F9 14 A9 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8028F614 0028B454  38 80 00 03 */	li r4, 3
+/* 8028F618 0028B458  4B FD 46 21 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 8028F61C 0028B45C  48 00 02 60 */	b lbl_8028F87C
+lbl_8028F620:
+/* 8028F620 0028B460  7F A3 EB 78 */	mr r3, r29
+/* 8028F624 0028B464  4B F4 22 01 */	bl isOK__Q24nand11NandManagerFv
+/* 8028F628 0028B468  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F62C 0028B46C  41 82 01 70 */	beq lbl_8028F79C
+/* 8028F630 0028B470  7F E3 FB 78 */	mr r3, r31
+/* 8028F634 0028B474  4B FF 8B 61 */	bl custom__Q43scn4step5enemy5EnemyFv
+/* 8028F638 0028B478  81 83 00 00 */	lwz r12, 0(r3)
+/* 8028F63C 0028B47C  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 8028F640 0028B480  7D 89 03 A6 */	mtctr r12
+/* 8028F644 0028B484  4E 80 04 21 */	bctrl 
+/* 8028F648 0028B488  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F64C 0028B48C  40 82 02 30 */	bne lbl_8028F87C
+/* 8028F650 0028B490  2C 1E 00 00 */	cmpwi r30, 0
+/* 8028F654 0028B494  41 82 01 34 */	beq lbl_8028F788
+/* 8028F658 0028B498  7F E3 FB 78 */	mr r3, r31
+/* 8028F65C 0028B49C  4B FF 8A B9 */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 8028F660 0028B4A0  48 00 02 35 */	bl smashType__Q43scn4step5chara10DamageInfoCFv
+/* 8028F664 0028B4A4  38 03 FF FA */	addi r0, r3, -6
+/* 8028F668 0028B4A8  28 00 00 01 */	cmplwi r0, 1
+/* 8028F66C 0028B4AC  40 81 00 18 */	ble lbl_8028F684
+/* 8028F670 0028B4B0  2C 03 00 08 */	cmpwi r3, 8
+/* 8028F674 0028B4B4  41 82 00 6C */	beq lbl_8028F6E0
+/* 8028F678 0028B4B8  2C 03 00 09 */	cmpwi r3, 9
+/* 8028F67C 0028B4BC  41 82 00 B8 */	beq lbl_8028F734
+/* 8028F680 0028B4C0  48 00 00 F4 */	b lbl_8028F774
+lbl_8028F684:
+/* 8028F684 0028B4C4  7F E3 FB 78 */	mr r3, r31
+/* 8028F688 0028B4C8  4B DE 60 A9 */	bl GKI_getfirst
+/* 8028F68C 0028B4CC  4B F9 14 2D */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8028F690 0028B4D0  38 80 00 01 */	li r4, 1
+/* 8028F694 0028B4D4  4B FD 45 A5 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 8028F698 0028B4D8  7F E3 FB 78 */	mr r3, r31
+/* 8028F69C 0028B4DC  4B FF 8B 09 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F6A0 0028B4E0  7C 7E 1B 78 */	mr r30, r3
+/* 8028F6A4 0028B4E4  48 17 68 5D */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8028F6A8 0028B4E8  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8028F6AC 0028B4EC  2C 1D 00 00 */	cmpwi r29, 0
+/* 8028F6B0 0028B4F0  41 82 00 28 */	beq lbl_8028F6D8
+/* 8028F6B4 0028B4F4  7F A3 EB 78 */	mr r3, r29
+/* 8028F6B8 0028B4F8  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8028F6BC 0028B4FC  4B FA 71 AD */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8028F6C0 0028B500  3C 60 80 47 */	lis r3, __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1@ha
+/* 8028F6C4 0028B504  38 03 26 68 */	addi r0, r3, __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1@l
+/* 8028F6C8 0028B508  90 1D 00 00 */	stw r0, 0(r29)
+/* 8028F6CC 0028B50C  93 FD 00 08 */	stw r31, 8(r29)
+/* 8028F6D0 0028B510  38 00 00 01 */	li r0, 1
+/* 8028F6D4 0028B514  90 1D 00 0C */	stw r0, 0xc(r29)
+lbl_8028F6D8:
+/* 8028F6D8 0028B518  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8028F6DC 0028B51C  48 00 01 A0 */	b lbl_8028F87C
+lbl_8028F6E0:
+/* 8028F6E0 0028B520  7F E3 FB 78 */	mr r3, r31
+/* 8028F6E4 0028B524  4B DE 60 4D */	bl GKI_getfirst
+/* 8028F6E8 0028B528  4B F9 13 D1 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8028F6EC 0028B52C  38 80 00 03 */	li r4, 3
+/* 8028F6F0 0028B530  4B FD 45 49 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 8028F6F4 0028B534  7F E3 FB 78 */	mr r3, r31
+/* 8028F6F8 0028B538  4B FF 8A AD */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F6FC 0028B53C  7C 7E 1B 78 */	mr r30, r3
+/* 8028F700 0028B540  48 17 68 01 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8028F704 0028B544  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8028F708 0028B548  2C 1D 00 00 */	cmpwi r29, 0
+/* 8028F70C 0028B54C  41 82 00 20 */	beq lbl_8028F72C
+/* 8028F710 0028B550  7F A3 EB 78 */	mr r3, r29
+/* 8028F714 0028B554  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8028F718 0028B558  4B FA 71 51 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8028F71C 0028B55C  3C 60 80 47 */	lis r3, __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1@ha
+/* 8028F720 0028B560  38 03 26 78 */	addi r0, r3, __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14StateDeadSuper$$4PQ43scn4step5enemy5Enemy$$1@l
+/* 8028F724 0028B564  90 1D 00 00 */	stw r0, 0(r29)
+/* 8028F728 0028B568  93 FD 00 08 */	stw r31, 8(r29)
+lbl_8028F72C:
+/* 8028F72C 0028B56C  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8028F730 0028B570  48 00 01 4C */	b lbl_8028F87C
+lbl_8028F734:
+/* 8028F734 0028B574  7F E3 FB 78 */	mr r3, r31
+/* 8028F738 0028B578  4B FF 8A 6D */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F73C 0028B57C  7C 7E 1B 78 */	mr r30, r3
+/* 8028F740 0028B580  48 17 67 C1 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8028F744 0028B584  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8028F748 0028B588  2C 1D 00 00 */	cmpwi r29, 0
+/* 8028F74C 0028B58C  41 82 00 20 */	beq lbl_8028F76C
+/* 8028F750 0028B590  7F A3 EB 78 */	mr r3, r29
+/* 8028F754 0028B594  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8028F758 0028B598  4B FA 71 11 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8028F75C 0028B59C  3C 60 80 47 */	lis r3, __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1@ha
+/* 8028F760 0028B5A0  38 03 26 88 */	addi r0, r3, __vt__Q24util103StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage19StateDamageWingToss$$4PQ43scn4step5enemy5Enemy$$1@l
+/* 8028F764 0028B5A4  90 1D 00 00 */	stw r0, 0(r29)
+/* 8028F768 0028B5A8  93 FD 00 08 */	stw r31, 8(r29)
+lbl_8028F76C:
+/* 8028F76C 0028B5AC  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8028F770 0028B5B0  48 00 01 0C */	b lbl_8028F87C
+lbl_8028F774:
+/* 8028F774 0028B5B4  7F E3 FB 78 */	mr r3, r31
+/* 8028F778 0028B5B8  4B FF 8A 2D */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F77C 0028B5BC  7F E4 FB 78 */	mr r4, r31
+/* 8028F780 0028B5C0  4B FF C2 09 */	bl setNextState$$0Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1FPQ43scn4step5enemy5Enemy_v
+/* 8028F784 0028B5C4  48 00 00 F8 */	b lbl_8028F87C
+lbl_8028F788:
+/* 8028F788 0028B5C8  7F E3 FB 78 */	mr r3, r31
+/* 8028F78C 0028B5CC  4B FF 8A 19 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F790 0028B5D0  7F E4 FB 78 */	mr r4, r31
+/* 8028F794 0028B5D4  4B FF C1 F5 */	bl setNextState$$0Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1FPQ43scn4step5enemy5Enemy_v
+/* 8028F798 0028B5D8  48 00 00 E4 */	b lbl_8028F87C
+lbl_8028F79C:
+/* 8028F79C 0028B5DC  7F E3 FB 78 */	mr r3, r31
+/* 8028F7A0 0028B5E0  4B FF 89 F5 */	bl custom__Q43scn4step5enemy5EnemyFv
+/* 8028F7A4 0028B5E4  81 83 00 00 */	lwz r12, 0(r3)
+/* 8028F7A8 0028B5E8  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 8028F7AC 0028B5EC  7D 89 03 A6 */	mtctr r12
+/* 8028F7B0 0028B5F0  4E 80 04 21 */	bctrl 
+/* 8028F7B4 0028B5F4  2C 03 00 00 */	cmpwi r3, 0
+/* 8028F7B8 0028B5F8  40 82 00 C4 */	bne lbl_8028F87C
+/* 8028F7BC 0028B5FC  2C 1E 00 00 */	cmpwi r30, 0
+/* 8028F7C0 0028B600  41 82 00 AC */	beq lbl_8028F86C
+/* 8028F7C4 0028B604  7F E3 FB 78 */	mr r3, r31
+/* 8028F7C8 0028B608  4B FF 89 4D */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 8028F7CC 0028B60C  48 00 00 C9 */	bl smashType__Q43scn4step5chara10DamageInfoCFv
+/* 8028F7D0 0028B610  38 03 FF FA */	addi r0, r3, -6
+/* 8028F7D4 0028B614  28 00 00 02 */	cmplwi r0, 2
+/* 8028F7D8 0028B618  41 81 00 80 */	bgt lbl_8028F858
+/* 8028F7DC 0028B61C  7F E3 FB 78 */	mr r3, r31
+/* 8028F7E0 0028B620  4B DE 5F 51 */	bl GKI_getfirst
+/* 8028F7E4 0028B624  4B F9 12 D5 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 8028F7E8 0028B628  38 80 00 04 */	li r4, 4
+/* 8028F7EC 0028B62C  4B FD 44 4D */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 8028F7F0 0028B630  7F E3 FB 78 */	mr r3, r31
+/* 8028F7F4 0028B634  4B FF 88 81 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 8028F7F8 0028B638  88 03 00 45 */	lbz r0, 0x45(r3)
+/* 8028F7FC 0028B63C  2C 00 00 00 */	cmpwi r0, 0
+/* 8028F800 0028B640  41 82 00 18 */	beq lbl_8028F818
+/* 8028F804 0028B644  7F E3 FB 78 */	mr r3, r31
+/* 8028F808 0028B648  4B FF 89 9D */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F80C 0028B64C  7F E4 FB 78 */	mr r4, r31
+/* 8028F810 0028B650  4B FF C1 79 */	bl setNextState$$0Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1FPQ43scn4step5enemy5Enemy_v
+/* 8028F814 0028B654  48 00 00 68 */	b lbl_8028F87C
+lbl_8028F818:
+/* 8028F818 0028B658  7F E3 FB 78 */	mr r3, r31
+/* 8028F81C 0028B65C  4B FF 89 89 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F820 0028B660  7C 7E 1B 78 */	mr r30, r3
+/* 8028F824 0028B664  48 17 66 DD */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8028F828 0028B668  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8028F82C 0028B66C  2C 1D 00 00 */	cmpwi r29, 0
+/* 8028F830 0028B670  41 82 00 20 */	beq lbl_8028F850
+/* 8028F834 0028B674  7F A3 EB 78 */	mr r3, r29
+/* 8028F838 0028B678  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8028F83C 0028B67C  4B FA 70 2D */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8028F840 0028B680  3C 60 80 47 */	lis r3, __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1@ha
+/* 8028F844 0028B684  38 03 26 A8 */	addi r0, r3, __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1@l
+/* 8028F848 0028B688  90 1D 00 00 */	stw r0, 0(r29)
+/* 8028F84C 0028B68C  93 FD 00 08 */	stw r31, 8(r29)
+lbl_8028F850:
+/* 8028F850 0028B690  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8028F854 0028B694  48 00 00 28 */	b lbl_8028F87C
+lbl_8028F858:
+/* 8028F858 0028B698  7F E3 FB 78 */	mr r3, r31
+/* 8028F85C 0028B69C  4B FF 89 49 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F860 0028B6A0  7F E4 FB 78 */	mr r4, r31
+/* 8028F864 0028B6A4  4B FF C1 25 */	bl setNextState$$0Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1FPQ43scn4step5enemy5Enemy_v
+/* 8028F868 0028B6A8  48 00 00 14 */	b lbl_8028F87C
+lbl_8028F86C:
+/* 8028F86C 0028B6AC  7F E3 FB 78 */	mr r3, r31
+/* 8028F870 0028B6B0  4B FF 89 35 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 8028F874 0028B6B4  7F E4 FB 78 */	mr r4, r31
+/* 8028F878 0028B6B8  4B FF C1 11 */	bl setNextState$$0Q53scn4step5enemy6damage17StateDamageNormal$$4PQ43scn4step5enemy5Enemy$$1__Q24util42StateChanger$$0Q43scn4step5enemy6IState$$4256$$1FPQ43scn4step5enemy5Enemy_v
+lbl_8028F87C:
+/* 8028F87C 0028B6BC  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028F880 0028B6C0  4B D7 7B 11 */	bl func_80007390
+/* 8028F884 0028B6C4  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8028F888 0028B6C8  7C 08 03 A6 */	mtlr r0
+/* 8028F88C 0028B6CC  38 21 00 50 */	addi r1, r1, 0x50
+/* 8028F890 0028B6D0  4E 80 00 20 */	blr 
+
+.global smashType__Q43scn4step5chara10DamageInfoCFv
+smashType__Q43scn4step5chara10DamageInfoCFv:
+/* 8028F894 0028B6D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028F898 0028B6D8  7C 08 02 A6 */	mflr r0
+/* 8028F89C 0028B6DC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028F8A0 0028B6E0  4B F2 E3 B9 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 8028F8A4 0028B6E4  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8028F8A8 0028B6E8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028F8AC 0028B6EC  7C 08 03 A6 */	mtlr r0
+/* 8028F8B0 0028B6F0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028F8B4 0028B6F4  4E 80 00 20 */	blr 
+
+.global IsExtra__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+IsExtra__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
+/* 8028F8B8 0028B6F8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8028F8BC 0028B6FC  7C 08 02 A6 */	mflr r0
+/* 8028F8C0 0028B700  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8028F8C4 0028B704  4B DE 5E 6D */	bl GKI_getfirst
+/* 8028F8C8 0028B708  4B EE 6A F9 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 8028F8CC 0028B70C  38 63 04 A0 */	addi r3, r3, 0x4a0
+/* 8028F8D0 0028B710  4B F9 1B 7D */	bl isExtraMode__Q33scn4step11ContextModeCFv
+/* 8028F8D4 0028B714  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8028F8D8 0028B718  7C 08 03 A6 */	mtlr r0
+/* 8028F8DC 0028B71C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8028F8E0 0028B720  4E 80 00 20 */	blr 
+
+.global GetEnemyNewRequestCount__Q43scn4step5enemy7UtilityFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariation
+GetEnemyNewRequestCount__Q43scn4step5enemy7UtilityFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariation:
+/* 8028F8E4 0028B724  2C 03 00 2A */	cmpwi r3, 0x2a
+/* 8028F8E8 0028B728  41 82 00 60 */	beq lbl_8028F948
+/* 8028F8EC 0028B72C  40 80 00 30 */	bge lbl_8028F91C
+/* 8028F8F0 0028B730  2C 03 00 09 */	cmpwi r3, 9
+/* 8028F8F4 0028B734  40 80 00 1C */	bge lbl_8028F910
+/* 8028F8F8 0028B738  2C 03 00 04 */	cmpwi r3, 4
+/* 8028F8FC 0028B73C  41 82 00 4C */	beq lbl_8028F948
+/* 8028F900 0028B740  41 80 00 6C */	blt lbl_8028F96C
+/* 8028F904 0028B744  2C 03 00 07 */	cmpwi r3, 7
+/* 8028F908 0028B748  40 80 00 38 */	bge lbl_8028F940
+/* 8028F90C 0028B74C  48 00 00 60 */	b lbl_8028F96C
+lbl_8028F910:
+/* 8028F910 0028B750  2C 03 00 28 */	cmpwi r3, 0x28
+/* 8028F914 0028B754  41 82 00 34 */	beq lbl_8028F948
+/* 8028F918 0028B758  48 00 00 54 */	b lbl_8028F96C
+lbl_8028F91C:
+/* 8028F91C 0028B75C  2C 03 00 5D */	cmpwi r3, 0x5d
+/* 8028F920 0028B760  41 82 00 28 */	beq lbl_8028F948
+/* 8028F924 0028B764  40 80 00 10 */	bge lbl_8028F934
+/* 8028F928 0028B768  2C 03 00 31 */	cmpwi r3, 0x31
+/* 8028F92C 0028B76C  41 82 00 2C */	beq lbl_8028F958
+/* 8028F930 0028B770  48 00 00 3C */	b lbl_8028F96C
+lbl_8028F934:
+/* 8028F934 0028B774  2C 03 00 73 */	cmpwi r3, 0x73
+/* 8028F938 0028B778  41 82 00 18 */	beq lbl_8028F950
+/* 8028F93C 0028B77C  48 00 00 30 */	b lbl_8028F96C
+lbl_8028F940:
+/* 8028F940 0028B780  38 60 00 04 */	li r3, 4
+/* 8028F944 0028B784  4E 80 00 20 */	blr 
+lbl_8028F948:
+/* 8028F948 0028B788  38 60 00 02 */	li r3, 2
+/* 8028F94C 0028B78C  4E 80 00 20 */	blr 
+lbl_8028F950:
+/* 8028F950 0028B790  38 60 00 00 */	li r3, 0
+/* 8028F954 0028B794  4E 80 00 20 */	blr 
+lbl_8028F958:
+/* 8028F958 0028B798  38 04 FF 88 */	addi r0, r4, -120
+/* 8028F95C 0028B79C  30 00 FF FF */	addic r0, r0, -1
+/* 8028F960 0028B7A0  7C 60 01 10 */	subfe r3, r0, r0
+/* 8028F964 0028B7A4  38 63 00 02 */	addi r3, r3, 2
+/* 8028F968 0028B7A8  4E 80 00 20 */	blr 
+lbl_8028F96C:
+/* 8028F96C 0028B7AC  38 60 00 01 */	li r3, 1
+/* 8028F970 0028B7B0  4E 80 00 20 */	blr 
+
+.global IsUpdateShakeWhileObjStop__Q43scn4step5enemy7UtilityFQ43scn4step3map12BinEnemyKind
+IsUpdateShakeWhileObjStop__Q43scn4step5enemy7UtilityFQ43scn4step3map12BinEnemyKind:
+/* 8028F974 0028B7B4  38 03 FF 75 */	addi r0, r3, -139
+/* 8028F978 0028B7B8  7C 00 00 34 */	cntlzw r0, r0
+/* 8028F97C 0028B7BC  54 03 D9 7E */	srwi r3, r0, 5
+/* 8028F980 0028B7C0  4E 80 00 20 */	blr 
+
+.global GenerateStarEffect__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
+GenerateStarEffect__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation:
+/* 8028F984 0028B7C4  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 8028F988 0028B7C8  7C 08 02 A6 */	mflr r0
+/* 8028F98C 0028B7CC  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 8028F990 0028B7D0  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 8028F994 0028B7D4  4B D7 79 AD */	bl func_80007340
+/* 8028F998 0028B7D8  7C 7C 1B 78 */	mr r28, r3
+/* 8028F99C 0028B7DC  7C 9D 23 78 */	mr r29, r4
+/* 8028F9A0 0028B7E0  7C BE 2B 78 */	mr r30, r5
+/* 8028F9A4 0028B7E4  7C DF 33 78 */	mr r31, r6
+/* 8028F9A8 0028B7E8  4B FF 87 15 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028F9AC 0028B7EC  7C 64 1B 78 */	mr r4, r3
+/* 8028F9B0 0028B7F0  38 61 00 48 */	addi r3, r1, 0x48
+/* 8028F9B4 0028B7F4  4B FD FD 01 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028F9B8 0028B7F8  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028F9BC 0028B7FC  38 81 00 48 */	addi r4, r1, 0x48
+/* 8028F9C0 0028B800  4B F3 32 0D */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028F9C4 0028B804  38 81 00 20 */	addi r4, r1, 0x20
+/* 8028F9C8 0028B808  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028F9CC 0028B80C  4B EB BF 9D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8028F9D0 0028B810  7C 64 1B 78 */	mr r4, r3
+/* 8028F9D4 0028B814  C0 23 00 00 */	lfs f1, 0(r3)
+/* 8028F9D8 0028B818  C0 1D 00 00 */	lfs f0, 0(r29)
+/* 8028F9DC 0028B81C  EC 01 00 2A */	fadds f0, f1, f0
+/* 8028F9E0 0028B820  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8028F9E4 0028B824  C0 23 00 04 */	lfs f1, 4(r3)
+/* 8028F9E8 0028B828  C0 1D 00 04 */	lfs f0, 4(r29)
+/* 8028F9EC 0028B82C  EC 01 00 2A */	fadds f0, f1, f0
+/* 8028F9F0 0028B830  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8028F9F4 0028B834  38 61 00 28 */	addi r3, r1, 0x28
+/* 8028F9F8 0028B838  4B EB BF 71 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8028F9FC 0028B83C  38 01 00 28 */	addi r0, r1, 0x28
+/* 8028FA00 0028B840  90 01 00 08 */	stw r0, 8(r1)
+/* 8028FA04 0028B844  38 61 00 68 */	addi r3, r1, 0x68
+/* 8028FA08 0028B848  38 80 00 66 */	li r4, 0x66
+/* 8028FA0C 0028B84C  7F E5 FB 78 */	mr r5, r31
+/* 8028FA10 0028B850  38 C0 00 00 */	li r6, 0
+/* 8028FA14 0028B854  38 E0 00 00 */	li r7, 0
+/* 8028FA18 0028B858  39 00 00 00 */	li r8, 0
+/* 8028FA1C 0028B85C  39 20 00 00 */	li r9, 0
+/* 8028FA20 0028B860  39 40 00 00 */	li r10, 0
+/* 8028FA24 0028B864  4B FF 4C 41 */	bl __ct__Q43scn4step5enemy4DescFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariationUlQ43scn4step3map15BinEnemyDirTypeQ43scn4step3map12BinEnemySizebbRCQ33hel4math7Vector2
+/* 8028FA28 0028B868  38 00 00 01 */	li r0, 1
+/* 8028FA2C 0028B86C  98 01 00 90 */	stb r0, 0x90(r1)
+/* 8028FA30 0028B870  7F 83 E3 78 */	mr r3, r28
+/* 8028FA34 0028B874  4B FF 86 89 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028FA38 0028B878  7C 64 1B 78 */	mr r4, r3
+/* 8028FA3C 0028B87C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 8028FA40 0028B880  4B FD FC 75 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028FA44 0028B884  38 61 00 18 */	addi r3, r1, 0x18
+/* 8028FA48 0028B888  38 81 00 3C */	addi r4, r1, 0x3c
+/* 8028FA4C 0028B88C  4B F3 31 81 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8028FA50 0028B890  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 8028FA54 0028B894  D0 01 00 88 */	stfs f0, 0x88(r1)
+/* 8028FA58 0028B898  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 8028FA5C 0028B89C  D0 01 00 8C */	stfs f0, 0x8c(r1)
+/* 8028FA60 0028B8A0  7F 83 E3 78 */	mr r3, r28
+/* 8028FA64 0028B8A4  4B DE 5C CD */	bl GKI_getfirst
+/* 8028FA68 0028B8A8  4B F9 13 CD */	bl enemyManager__Q33scn4step9ComponentFv
+/* 8028FA6C 0028B8AC  7C 64 1B 78 */	mr r4, r3
+/* 8028FA70 0028B8B0  38 61 00 58 */	addi r3, r1, 0x58
+/* 8028FA74 0028B8B4  38 A1 00 68 */	addi r5, r1, 0x68
+/* 8028FA78 0028B8B8  4B FF 98 79 */	bl request__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy4Desc
+/* 8028FA7C 0028B8BC  83 E1 00 64 */	lwz r31, 0x64(r1)
+/* 8028FA80 0028B8C0  2C 1F 00 00 */	cmpwi r31, 0
+/* 8028FA84 0028B8C4  41 82 00 20 */	beq lbl_8028FAA4
+/* 8028FA88 0028B8C8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8028FA8C 0028B8CC  7F C4 F3 78 */	mr r4, r30
+/* 8028FA90 0028B8D0  4B F0 F9 CD */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8028FA94 0028B8D4  7F E3 FB 78 */	mr r3, r31
+/* 8028FA98 0028B8D8  4B FF 86 2D */	bl move__Q43scn4step5enemy5EnemyFv
+/* 8028FA9C 0028B8DC  38 81 00 30 */	addi r4, r1, 0x30
+/* 8028FAA0 0028B8E0  4B F0 B8 D9 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+lbl_8028FAA4:
+/* 8028FAA4 0028B8E4  38 61 00 58 */	addi r3, r1, 0x58
+/* 8028FAA8 0028B8E8  38 80 FF FF */	li r4, -1
+/* 8028FAAC 0028B8EC  4B FA 58 5D */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 8028FAB0 0028B8F0  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 8028FAB4 0028B8F4  4B D7 78 D9 */	bl func_8000738C
+/* 8028FAB8 0028B8F8  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 8028FABC 0028B8FC  7C 08 03 A6 */	mtlr r0
+/* 8028FAC0 0028B900  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 8028FAC4 0028B904  4E 80 00 20 */	blr 
+
+.global CheckExcludeSize__Q43scn4step5enemy7UtilityFRCQ33scn4step9ComponentRCQ43scn4step3map13BinEnemyEntry
+CheckExcludeSize__Q43scn4step5enemy7UtilityFRCQ33scn4step9ComponentRCQ43scn4step3map13BinEnemyEntry:
+/* 8028FAC8 0028B908  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028FACC 0028B90C  7C 08 02 A6 */	mflr r0
+/* 8028FAD0 0028B910  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028FAD4 0028B914  39 61 00 20 */	addi r11, r1, 0x20
+/* 8028FAD8 0028B918  4B D7 78 69 */	bl func_80007340
+/* 8028FADC 0028B91C  7C 7C 1B 78 */	mr r28, r3
+/* 8028FAE0 0028B920  7C 9D 23 78 */	mr r29, r4
+/* 8028FAE4 0028B924  4B EE 68 DD */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 8028FAE8 0028B928  38 63 04 A0 */	addi r3, r3, 0x4a0
+/* 8028FAEC 0028B92C  4B F9 19 61 */	bl isExtraMode__Q33scn4step11ContextModeCFv
+/* 8028FAF0 0028B930  7C 7E 1B 78 */	mr r30, r3
+/* 8028FAF4 0028B934  7F 83 E3 78 */	mr r3, r28
+/* 8028FAF8 0028B938  4B F5 AE F9 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 8028FAFC 0028B93C  48 13 9F 9D */	bl accessor__Q43scn4step3map8DataFileCFv
+/* 8028FB00 0028B940  90 61 00 08 */	stw r3, 8(r1)
+/* 8028FB04 0028B944  38 61 00 08 */	addi r3, r1, 8
+/* 8028FB08 0028B948  48 13 9E 91 */	bl isEnableSFXMonotone__Q43scn4step3map12DataAccessorCFv
+/* 8028FB0C 0028B94C  7C 7F 1B 78 */	mr r31, r3
+/* 8028FB10 0028B950  38 00 00 00 */	li r0, 0
+/* 8028FB14 0028B954  2C 1E 00 00 */	cmpwi r30, 0
+/* 8028FB18 0028B958  41 82 00 10 */	beq lbl_8028FB28
+/* 8028FB1C 0028B95C  2C 03 00 00 */	cmpwi r3, 0
+/* 8028FB20 0028B960  40 82 00 08 */	bne lbl_8028FB28
+/* 8028FB24 0028B964  38 00 00 01 */	li r0, 1
+lbl_8028FB28:
+/* 8028FB28 0028B968  2C 00 00 00 */	cmpwi r0, 0
+/* 8028FB2C 0028B96C  41 82 00 0C */	beq lbl_8028FB38
+/* 8028FB30 0028B970  83 DD 00 14 */	lwz r30, 0x14(r29)
+/* 8028FB34 0028B974  48 00 00 08 */	b lbl_8028FB3C
+lbl_8028FB38:
+/* 8028FB38 0028B978  83 DD 00 10 */	lwz r30, 0x10(r29)
+lbl_8028FB3C:
+/* 8028FB3C 0028B97C  7F 83 E3 78 */	mr r3, r28
+/* 8028FB40 0028B980  4B EE 68 81 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 8028FB44 0028B984  38 63 04 A0 */	addi r3, r3, 0x4a0
+/* 8028FB48 0028B988  4B F9 19 05 */	bl isExtraMode__Q33scn4step11ContextModeCFv
+/* 8028FB4C 0028B98C  2C 03 00 00 */	cmpwi r3, 0
+/* 8028FB50 0028B990  40 82 00 30 */	bne lbl_8028FB80
+/* 8028FB54 0028B994  7F 83 E3 78 */	mr r3, r28
+/* 8028FB58 0028B998  4B EE 68 69 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 8028FB5C 0028B99C  80 63 04 9C */	lwz r3, 0x49c(r3)
+/* 8028FB60 0028B9A0  48 13 A9 BD */	bl IsChallengeStage__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
+/* 8028FB64 0028B9A4  2C 03 00 00 */	cmpwi r3, 0
+/* 8028FB68 0028B9A8  40 82 00 18 */	bne lbl_8028FB80
+/* 8028FB6C 0028B9AC  2C 1F 00 00 */	cmpwi r31, 0
+/* 8028FB70 0028B9B0  40 82 00 10 */	bne lbl_8028FB80
+/* 8028FB74 0028B9B4  2C 1E 00 00 */	cmpwi r30, 0
+/* 8028FB78 0028B9B8  41 82 00 08 */	beq lbl_8028FB80
+/* 8028FB7C 0028B9BC  3B C0 00 00 */	li r30, 0
+lbl_8028FB80:
+/* 8028FB80 0028B9C0  7F C3 F3 78 */	mr r3, r30
+/* 8028FB84 0028B9C4  39 61 00 20 */	addi r11, r1, 0x20
+/* 8028FB88 0028B9C8  4B D7 78 05 */	bl func_8000738C
+/* 8028FB8C 0028B9CC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028FB90 0028B9D0  7C 08 03 A6 */	mtlr r0
+/* 8028FB94 0028B9D4  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028FB98 0028B9D8  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToMainPlayer__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+SetRotHTargetToMainPlayer__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028FB9C 0028B9DC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8028FBA0 0028B9E0  7C 08 02 A6 */	mflr r0
+/* 8028FBA4 0028B9E4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8028FBA8 0028B9E8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8028FBAC 0028B9EC  7C 7F 1B 78 */	mr r31, r3
+/* 8028FBB0 0028B9F0  4B DE 5B 81 */	bl GKI_getfirst
+/* 8028FBB4 0028B9F4  4B F9 12 45 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8028FBB8 0028B9F8  7C 64 1B 78 */	mr r4, r3
+/* 8028FBBC 0028B9FC  38 61 00 08 */	addi r3, r1, 8
+/* 8028FBC0 0028BA00  48 0B 6F 51 */	bl getMainPlayerPos__Q43scn4step4hero7ManagerCFv
+/* 8028FBC4 0028BA04  7F E3 FB 78 */	mr r3, r31
+/* 8028FBC8 0028BA08  38 81 00 08 */	addi r4, r1, 8
+/* 8028FBCC 0028BA0C  48 00 00 7D */	bl SetRotHTargetToPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3
+/* 8028FBD0 0028BA10  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8028FBD4 0028BA14  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8028FBD8 0028BA18  7C 08 03 A6 */	mtlr r0
+/* 8028FBDC 0028BA1C  38 21 00 20 */	addi r1, r1, 0x20
+/* 8028FBE0 0028BA20  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToCamera__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+SetRotHTargetToCamera__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy:
+/* 8028FBE4 0028BA24  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8028FBE8 0028BA28  7C 08 02 A6 */	mflr r0
+/* 8028FBEC 0028BA2C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8028FBF0 0028BA30  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8028FBF4 0028BA34  7C 7F 1B 78 */	mr r31, r3
+/* 8028FBF8 0028BA38  4B DE 5B 39 */	bl GKI_getfirst
+/* 8028FBFC 0028BA3C  4B F9 0F 8D */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 8028FC00 0028BA40  7C 64 1B 78 */	mr r4, r3
+/* 8028FC04 0028BA44  38 61 00 08 */	addi r3, r1, 8
+/* 8028FC08 0028BA48  4B FD 60 61 */	bl getCenter__Q43scn4step6camera10MainCameraCFv
+/* 8028FC0C 0028BA4C  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028FC10 0028BA50  38 81 00 08 */	addi r4, r1, 8
+/* 8028FC14 0028BA54  4B F0 F8 49 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8028FC18 0028BA58  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 8028FC1C 0028BA5C  C0 02 AF E0 */	lfs f0, $$261977-_SDA2_BASE_(r2)
+/* 8028FC20 0028BA60  EC 01 00 2A */	fadds f0, f1, f0
+/* 8028FC24 0028BA64  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 8028FC28 0028BA68  7F E3 FB 78 */	mr r3, r31
+/* 8028FC2C 0028BA6C  38 81 00 10 */	addi r4, r1, 0x10
+/* 8028FC30 0028BA70  48 00 00 19 */	bl SetRotHTargetToPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3
+/* 8028FC34 0028BA74  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8028FC38 0028BA78  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8028FC3C 0028BA7C  7C 08 03 A6 */	mtlr r0
+/* 8028FC40 0028BA80  38 21 00 30 */	addi r1, r1, 0x30
+/* 8028FC44 0028BA84  4E 80 00 20 */	blr 
+
+.global SetRotHTargetToPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3
+SetRotHTargetToPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5EnemyRCQ33hel4math7Vector3:
+/* 8028FC48 0028BA88  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 8028FC4C 0028BA8C  7C 08 02 A6 */	mflr r0
+/* 8028FC50 0028BA90  90 01 00 64 */	stw r0, 0x64(r1)
+/* 8028FC54 0028BA94  DB E1 00 50 */	stfd f31, 0x50(r1)
+/* 8028FC58 0028BA98  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
+/* 8028FC5C 0028BA9C  DB C1 00 40 */	stfd f30, 0x40(r1)
+/* 8028FC60 0028BAA0  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
+/* 8028FC64 0028BAA4  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 8028FC68 0028BAA8  93 C1 00 38 */	stw r30, 0x38(r1)
+/* 8028FC6C 0028BAAC  7C 7E 1B 78 */	mr r30, r3
+/* 8028FC70 0028BAB0  7C 9F 23 78 */	mr r31, r4
+/* 8028FC74 0028BAB4  4B FF 84 49 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 8028FC78 0028BAB8  7C 64 1B 78 */	mr r4, r3
+/* 8028FC7C 0028BABC  38 61 00 20 */	addi r3, r1, 0x20
+/* 8028FC80 0028BAC0  4B FD FA 35 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8028FC84 0028BAC4  38 61 00 2C */	addi r3, r1, 0x2c
+/* 8028FC88 0028BAC8  7F E4 FB 78 */	mr r4, r31
+/* 8028FC8C 0028BACC  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8028FC90 0028BAD0  4B EE CB BD */	bl __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8028FC94 0028BAD4  C0 21 00 34 */	lfs f1, 0x34(r1)
+/* 8028FC98 0028BAD8  C0 02 AF E4 */	lfs f0, $$262002-_SDA2_BASE_(r2)
+/* 8028FC9C 0028BADC  EC 41 00 32 */	fmuls f2, f1, f0
+/* 8028FCA0 0028BAE0  D0 41 00 34 */	stfs f2, 0x34(r1)
+/* 8028FCA4 0028BAE4  38 61 00 18 */	addi r3, r1, 0x18
+/* 8028FCA8 0028BAE8  C0 21 00 2C */	lfs f1, 0x2c(r1)
+/* 8028FCAC 0028BAEC  4B F0 F6 FD */	bl set__Q33hel4math7Vector2Fff
+/* 8028FCB0 0028BAF0  3B E0 00 00 */	li r31, 0
+/* 8028FCB4 0028BAF4  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 8028FCB8 0028BAF8  C0 4D EE 28 */	lfs f2, ZERO__Q33hel4math7Vector2-_SDA_BASE_(r13)
+/* 8028FCBC 0028BAFC  C0 62 AF DC */	lfs f3, $$261954-_SDA2_BASE_(r2)
+/* 8028FCC0 0028BB00  4B F2 5C 75 */	bl Equals__Q33hel4math4MathFfff
+/* 8028FCC4 0028BB04  2C 03 00 00 */	cmpwi r3, 0
+/* 8028FCC8 0028BB08  41 82 00 24 */	beq lbl_8028FCEC
+/* 8028FCCC 0028BB0C  C0 21 00 1C */	lfs f1, 0x1c(r1)
+/* 8028FCD0 0028BB10  38 6D EE 28 */	addi r3, r13, ZERO__Q33hel4math7Vector2-_SDA_BASE_
+/* 8028FCD4 0028BB14  C0 43 00 04 */	lfs f2, 4(r3)
+/* 8028FCD8 0028BB18  C0 62 AF DC */	lfs f3, $$261954-_SDA2_BASE_(r2)
+/* 8028FCDC 0028BB1C  4B F2 5C 59 */	bl Equals__Q33hel4math4MathFfff
+/* 8028FCE0 0028BB20  2C 03 00 00 */	cmpwi r3, 0
+/* 8028FCE4 0028BB24  41 82 00 08 */	beq lbl_8028FCEC
+/* 8028FCE8 0028BB28  3B E0 00 01 */	li r31, 1
+lbl_8028FCEC:
+/* 8028FCEC 0028BB2C  2C 1F 00 00 */	cmpwi r31, 0
+/* 8028FCF0 0028BB30  40 82 01 34 */	bne lbl_8028FE24
+/* 8028FCF4 0028BB34  7F C3 F3 78 */	mr r3, r30
+/* 8028FCF8 0028BB38  4B FF 83 B5 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028FCFC 0028BB3C  4B F0 C3 A5 */	bl getSign__Q24gobj6TargetCFv
+/* 8028FD00 0028BB40  FF E0 08 90 */	fmr f31, f1
+/* 8028FD04 0028BB44  38 61 00 08 */	addi r3, r1, 8
+/* 8028FD08 0028BB48  38 8D EE 38 */	addi r4, r13, BASIS_X__Q33hel4math7Vector2-_SDA_BASE_
+/* 8028FD0C 0028BB4C  4B EB BC 5D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8028FD10 0028BB50  7C 64 1B 78 */	mr r4, r3
+/* 8028FD14 0028BB54  C0 03 00 00 */	lfs f0, 0(r3)
+/* 8028FD18 0028BB58  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 8028FD1C 0028BB5C  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8028FD20 0028BB60  C0 03 00 04 */	lfs f0, 4(r3)
+/* 8028FD24 0028BB64  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 8028FD28 0028BB68  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8028FD2C 0028BB6C  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028FD30 0028BB70  4B EB BC 39 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8028FD34 0028BB74  38 61 00 10 */	addi r3, r1, 0x10
+/* 8028FD38 0028BB78  38 81 00 18 */	addi r4, r1, 0x18
+/* 8028FD3C 0028BB7C  4B F0 F4 F5 */	bl signedAngle__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8028FD40 0028BB80  FF E0 08 90 */	fmr f31, f1
+/* 8028FD44 0028BB84  7F C3 F3 78 */	mr r3, r30
+/* 8028FD48 0028BB88  4B FF 83 65 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028FD4C 0028BB8C  4B F0 C3 55 */	bl getSign__Q24gobj6TargetCFv
+/* 8028FD50 0028BB90  FC 00 08 50 */	fneg f0, f1
+/* 8028FD54 0028BB94  EC 3F 00 32 */	fmuls f1, f31, f0
+/* 8028FD58 0028BB98  C0 02 AF E8 */	lfs f0, $$262004-_SDA2_BASE_(r2)
+/* 8028FD5C 0028BB9C  EC 20 00 72 */	fmuls f1, f0, f1
+/* 8028FD60 0028BBA0  C0 02 AF AC */	lfs f0, $$261640-_SDA2_BASE_(r2)
+/* 8028FD64 0028BBA4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028FD68 0028BBA8  40 81 00 1C */	ble lbl_8028FD84
+/* 8028FD6C 0028BBAC  38 6D B2 18 */	addi r3, r13, $$259859-_SDA_BASE_
+/* 8028FD70 0028BBB0  38 8D B2 1C */	addi r4, r13, $$259860-_SDA_BASE_
+/* 8028FD74 0028BBB4  C0 02 AF B4 */	lfs f0, $$261642-_SDA2_BASE_(r2)
+/* 8028FD78 0028BBB8  EC 21 00 24 */	fdivs f1, f1, f0
+/* 8028FD7C 0028BBBC  4B F6 EC 41 */	bl LinearInterpolation$$0f$$1__Q33hel4math4MathFRCfRCff_Cf
+/* 8028FD80 0028BBC0  48 00 00 1C */	b lbl_8028FD9C
+lbl_8028FD84:
+/* 8028FD84 0028BBC4  38 6D B2 20 */	addi r3, r13, $$259862-_SDA_BASE_
+/* 8028FD88 0028BBC8  38 8D B2 24 */	addi r4, r13, $$259863-_SDA_BASE_
+/* 8028FD8C 0028BBCC  FC 20 08 50 */	fneg f1, f1
+/* 8028FD90 0028BBD0  C0 02 AF B4 */	lfs f0, $$261642-_SDA2_BASE_(r2)
+/* 8028FD94 0028BBD4  EC 21 00 24 */	fdivs f1, f1, f0
+/* 8028FD98 0028BBD8  4B F6 EC 25 */	bl LinearInterpolation$$0f$$1__Q33hel4math4MathFRCfRCff_Cf
+lbl_8028FD9C:
+/* 8028FD9C 0028BBDC  FF C0 08 90 */	fmr f30, f1
+/* 8028FDA0 0028BBE0  7F C3 F3 78 */	mr r3, r30
+/* 8028FDA4 0028BBE4  4B FF 83 09 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 8028FDA8 0028BBE8  4B F0 C2 F9 */	bl getSign__Q24gobj6TargetCFv
+/* 8028FDAC 0028BBEC  FF E0 08 90 */	fmr f31, f1
+/* 8028FDB0 0028BBF0  7F C3 F3 78 */	mr r3, r30
+/* 8028FDB4 0028BBF4  4B FF 83 19 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028FDB8 0028BBF8  4B FD 64 55 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 8028FDBC 0028BBFC  4B F2 D1 39 */	bl getToLeftDist__Q35mcoll6detail19ShapeDiamondContextCFv
+/* 8028FDC0 0028BC00  EC 61 07 F2 */	fmuls f3, f1, f31
+/* 8028FDC4 0028BC04  C0 42 AF EC */	lfs f2, $$262005-_SDA2_BASE_(r2)
+/* 8028FDC8 0028BC08  C0 02 AF BC */	lfs f0, $$261644-_SDA2_BASE_(r2)
+/* 8028FDCC 0028BC0C  48 00 00 08 */	b lbl_8028FDD4
+lbl_8028FDD0:
+/* 8028FDD0 0028BC10  EF DE 10 2A */	fadds f30, f30, f2
+lbl_8028FDD4:
+/* 8028FDD4 0028BC14  EC 3E 18 28 */	fsubs f1, f30, f3
+/* 8028FDD8 0028BC18  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028FDDC 0028BC1C  41 81 FF F4 */	bgt lbl_8028FDD0
+/* 8028FDE0 0028BC20  C0 42 AF F0 */	lfs f2, $$262006-_SDA2_BASE_(r2)
+/* 8028FDE4 0028BC24  C0 02 AF F4 */	lfs f0, $$262007-_SDA2_BASE_(r2)
+/* 8028FDE8 0028BC28  48 00 00 08 */	b lbl_8028FDF0
+lbl_8028FDEC:
+/* 8028FDEC 0028BC2C  EF DE 10 2A */	fadds f30, f30, f2
+lbl_8028FDF0:
+/* 8028FDF0 0028BC30  EC 3E 18 28 */	fsubs f1, f30, f3
+/* 8028FDF4 0028BC34  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8028FDF8 0028BC38  41 80 FF F4 */	blt lbl_8028FDEC
+/* 8028FDFC 0028BC3C  7F C3 F3 78 */	mr r3, r30
+/* 8028FE00 0028BC40  4B FF 82 CD */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028FE04 0028BC44  4B FD 64 09 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 8028FE08 0028BC48  C0 22 AF F8 */	lfs f1, $$262008-_SDA2_BASE_(r2)
+/* 8028FE0C 0028BC4C  4B F0 B5 B5 */	bl setMoveRate__Q24gobj4MoveFf
+/* 8028FE10 0028BC50  7F C3 F3 78 */	mr r3, r30
+/* 8028FE14 0028BC54  4B FF 82 B9 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 8028FE18 0028BC58  4B FD 63 F5 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 8028FE1C 0028BC5C  FC 20 F0 90 */	fmr f1, f30
+/* 8028FE20 0028BC60  4B F0 B5 69 */	bl setSpeedD__Q24gobj4MoveFf
+lbl_8028FE24:
+/* 8028FE24 0028BC64  38 00 00 58 */	li r0, 0x58
+/* 8028FE28 0028BC68  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8028FE2C 0028BC6C  CB E1 00 50 */	lfd f31, 0x50(r1)
+/* 8028FE30 0028BC70  38 00 00 48 */	li r0, 0x48
+/* 8028FE34 0028BC74  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8028FE38 0028BC78  CB C1 00 40 */	lfd f30, 0x40(r1)
+/* 8028FE3C 0028BC7C  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 8028FE40 0028BC80  83 C1 00 38 */	lwz r30, 0x38(r1)
+/* 8028FE44 0028BC84  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 8028FE48 0028BC88  7C 08 03 A6 */	mtlr r0
+/* 8028FE4C 0028BC8C  38 21 00 60 */	addi r1, r1, 0x60
+/* 8028FE50 0028BC90  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global OnCapturedStart__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy
+OnCapturedStart__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802A5068 002A0EA8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802A506C 002A0EAC  7C 08 02 A6 */	mflr r0
+/* 802A5070 002A0EB0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802A5074 002A0EB4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802A5078 002A0EB8  7C 7F 1B 78 */	mr r31, r3
+/* 802A507C 002A0EBC  4B FE 30 39 */	bl footState__Q43scn4step5enemy5EnemyFv
+/* 802A5080 002A0EC0  4B EE 24 B9 */	bl __ct__Q24file8DNOptionFv
+/* 802A5084 002A0EC4  7F E3 FB 78 */	mr r3, r31
+/* 802A5088 002A0EC8  4B FE 30 CD */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802A508C 002A0ECC  38 80 00 00 */	li r4, 0
+/* 802A5090 002A0ED0  4B FE 60 9D */	bl setCanNururi__Q43scn4step5enemy6NururiFb
+/* 802A5094 002A0ED4  7F E3 FB 78 */	mr r3, r31
+/* 802A5098 002A0ED8  4B FE 30 BD */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802A509C 002A0EDC  38 80 00 00 */	li r4, 0
+/* 802A50A0 002A0EE0  4B FE 60 95 */	bl setValid__Q43scn4step5enemy6NururiFb
+/* 802A50A4 002A0EE4  7F E3 FB 78 */	mr r3, r31
+/* 802A50A8 002A0EE8  4B FE 30 75 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802A50AC 002A0EEC  4B F8 7E 65 */	bl param__Q43scn4step4boss4BossCFv
+/* 802A50B0 002A0EF0  4B FC 7F C5 */	bl setStateXlu__Q43scn4step5chara8BodyCollFv
+/* 802A50B4 002A0EF4  7F E3 FB 78 */	mr r3, r31
+/* 802A50B8 002A0EF8  4B FE 30 6D */	bl objCollReact__Q43scn4step5enemy5EnemyFv
+/* 802A50BC 002A0EFC  4B F0 18 5D */	bl finish__Q34info8sequence7CommandFv
+/* 802A50C0 002A0F00  7F E3 FB 78 */	mr r3, r31
+/* 802A50C4 002A0F04  4B FE 30 79 */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802A50C8 002A0F08  38 80 00 00 */	li r4, 0
+/* 802A50CC 002A0F0C  4B FC E4 05 */	bl setUseCallback__Q43scn4step5chara5WaterFb
+/* 802A50D0 002A0F10  7F E3 FB 78 */	mr r3, r31
+/* 802A50D4 002A0F14  4B FE 30 B9 */	bl interruptStateChanger__Q43scn4step5enemy5EnemyFv
+/* 802A50D8 002A0F18  4B F0 18 41 */	bl finish__Q34info8sequence7CommandFv
+/* 802A50DC 002A0F1C  7F E3 FB 78 */	mr r3, r31
+/* 802A50E0 002A0F20  4B FE 30 4D */	bl vacuumReceiver__Q43scn4step5enemy5EnemyFv
+/* 802A50E4 002A0F24  38 80 00 00 */	li r4, 0
+/* 802A50E8 002A0F28  4B FE AE D1 */	bl setIsValid__Q43scn4step5enemy14VacuumReceiverFb
+/* 802A50EC 002A0F2C  7F E3 FB 78 */	mr r3, r31
+/* 802A50F0 002A0F30  4B FE 2F D5 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802A50F4 002A0F34  4B EF 62 9D */	bl resetVelocity__Q24gobj4MoveFv
+/* 802A50F8 002A0F38  7F E3 FB 78 */	mr r3, r31
+/* 802A50FC 002A0F3C  4B FE 30 01 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A5100 002A0F40  38 80 00 00 */	li r4, 0
+/* 802A5104 002A0F44  4B FE 5A 15 */	bl setValid__Q43scn4step5enemy7MapCollFb
+/* 802A5108 002A0F48  7F E3 FB 78 */	mr r3, r31
+/* 802A510C 002A0F4C  4B FE 30 A1 */	bl stateChecker__Q43scn4step5enemy5EnemyFv
+/* 802A5110 002A0F50  38 80 00 01 */	li r4, 1
+/* 802A5114 002A0F54  4B FE 8D D1 */	bl setForbidDeadForMBoss__Q43scn4step5enemy12StateCheckerFb
+/* 802A5118 002A0F58  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802A511C 002A0F5C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802A5120 002A0F60  7C 08 03 A6 */	mtlr r0
+/* 802A5124 002A0F64  38 21 00 10 */	addi r1, r1, 0x10
+/* 802A5128 002A0F68  4E 80 00 20 */	blr 
+
+.global OnCapturedEnd__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy
+OnCapturedEnd__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802A512C 002A0F6C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 802A5130 002A0F70  7C 08 02 A6 */	mflr r0
+/* 802A5134 002A0F74  90 01 00 34 */	stw r0, 0x34(r1)
+/* 802A5138 002A0F78  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 802A513C 002A0F7C  7C 7F 1B 78 */	mr r31, r3
+/* 802A5140 002A0F80  4B FE 30 15 */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802A5144 002A0F84  38 80 00 01 */	li r4, 1
+/* 802A5148 002A0F88  4B FE 5F E5 */	bl setCanNururi__Q43scn4step5enemy6NururiFb
+/* 802A514C 002A0F8C  7F E3 FB 78 */	mr r3, r31
+/* 802A5150 002A0F90  4B FE 30 05 */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802A5154 002A0F94  38 80 00 01 */	li r4, 1
+/* 802A5158 002A0F98  4B FE 5F DD */	bl setValid__Q43scn4step5enemy6NururiFb
+/* 802A515C 002A0F9C  7F E3 FB 78 */	mr r3, r31
+/* 802A5160 002A0FA0  4B FE 2F BD */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802A5164 002A0FA4  4B F8 7D AD */	bl param__Q43scn4step4boss4BossCFv
+/* 802A5168 002A0FA8  4B FC 7E 8D */	bl setStateNormal__Q43scn4step5chara8BodyCollFv
+/* 802A516C 002A0FAC  7F E3 FB 78 */	mr r3, r31
+/* 802A5170 002A0FB0  4B FE 2F CD */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802A5174 002A0FB4  38 80 00 01 */	li r4, 1
+/* 802A5178 002A0FB8  4B FC E3 59 */	bl setUseCallback__Q43scn4step5chara5WaterFb
+/* 802A517C 002A0FBC  7F E3 FB 78 */	mr r3, r31
+/* 802A5180 002A0FC0  4B FE 30 0D */	bl interruptStateChanger__Q43scn4step5enemy5EnemyFv
+/* 802A5184 002A0FC4  4B F0 16 49 */	bl reset__Q34info8sequence7CommandFv
+/* 802A5188 002A0FC8  7F E3 FB 78 */	mr r3, r31
+/* 802A518C 002A0FCC  4B FE 2F A1 */	bl vacuumReceiver__Q43scn4step5enemy5EnemyFv
+/* 802A5190 002A0FD0  38 80 00 01 */	li r4, 1
+/* 802A5194 002A0FD4  4B FE AE 25 */	bl setIsValid__Q43scn4step5enemy14VacuumReceiverFb
+/* 802A5198 002A0FD8  7F E3 FB 78 */	mr r3, r31
+/* 802A519C 002A0FDC  4B FE 2F 61 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A51A0 002A0FE0  4B FE 2E 49 */	bl isChallengeAddScore__Q43scn4step5enemy5EnemyCFv
+/* 802A51A4 002A0FE4  2C 03 00 00 */	cmpwi r3, 0
+/* 802A51A8 002A0FE8  40 82 00 74 */	bne lbl_802A521C
+/* 802A51AC 002A0FEC  7F E3 FB 78 */	mr r3, r31
+/* 802A51B0 002A0FF0  4B FE 2F 0D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802A51B4 002A0FF4  7C 64 1B 78 */	mr r4, r3
+/* 802A51B8 002A0FF8  38 61 00 14 */	addi r3, r1, 0x14
+/* 802A51BC 002A0FFC  4B FC A4 F9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802A51C0 002A1000  7F E3 FB 78 */	mr r3, r31
+/* 802A51C4 002A1004  4B FE 2F 89 */	bl captureReceiver__Q43scn4step5enemy5EnemyFv
+/* 802A51C8 002A1008  7C 64 1B 78 */	mr r4, r3
+/* 802A51CC 002A100C  38 61 00 08 */	addi r3, r1, 8
+/* 802A51D0 002A1010  4B EE DF DD */	bl scale__Q23g3d12NodeLocalMtxCFv
+/* 802A51D4 002A1014  7F E3 FB 78 */	mr r3, r31
+/* 802A51D8 002A1018  4B FE 2E E5 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802A51DC 002A101C  38 81 00 08 */	addi r4, r1, 8
+/* 802A51E0 002A1020  4B FC A4 DD */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+/* 802A51E4 002A1024  7F E3 FB 78 */	mr r3, r31
+/* 802A51E8 002A1028  4B FE 2F 15 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A51EC 002A102C  38 80 00 01 */	li r4, 1
+/* 802A51F0 002A1030  4B FE 59 29 */	bl setValid__Q43scn4step5enemy7MapCollFb
+/* 802A51F4 002A1034  7F E3 FB 78 */	mr r3, r31
+/* 802A51F8 002A1038  4B FE 2F 05 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A51FC 002A103C  4B FE 59 6D */	bl reset__Q43scn4step5enemy7MapCollFv
+/* 802A5200 002A1040  7F E3 FB 78 */	mr r3, r31
+/* 802A5204 002A1044  4B FE 2E B9 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802A5208 002A1048  38 81 00 14 */	addi r4, r1, 0x14
+/* 802A520C 002A104C  4B FC A4 B1 */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+/* 802A5210 002A1050  7F E3 FB 78 */	mr r3, r31
+/* 802A5214 002A1054  4B FE 2E E9 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A5218 002A1058  4B FE 52 21 */	bl procMapColl__Q43scn4step5enemy7MapCollFv
+lbl_802A521C:
+/* 802A521C 002A105C  7F E3 FB 78 */	mr r3, r31
+/* 802A5220 002A1060  4B FE 2F 8D */	bl stateChecker__Q43scn4step5enemy5EnemyFv
+/* 802A5224 002A1064  38 80 00 00 */	li r4, 0
+/* 802A5228 002A1068  4B FE 8C BD */	bl setForbidDeadForMBoss__Q43scn4step5enemy12StateCheckerFb
+/* 802A522C 002A106C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 802A5230 002A1070  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 802A5234 002A1074  7C 08 03 A6 */	mtlr r0
+/* 802A5238 002A1078  38 21 00 30 */	addi r1, r1, 0x30
+/* 802A523C 002A107C  4E 80 00 20 */	blr 
+
+.global getConstraintOffset__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy
+getConstraintOffset__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802A5240 002A1080  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802A5244 002A1084  7C 08 02 A6 */	mflr r0
+/* 802A5248 002A1088  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802A524C 002A108C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 802A5250 002A1090  7C 7F 1B 78 */	mr r31, r3
+/* 802A5254 002A1094  3C A0 80 54 */	lis r5, ZERO__Q33hel4math7Vector3@ha
+/* 802A5258 002A1098  38 C5 52 D0 */	addi r6, r5, ZERO__Q33hel4math7Vector3@l
+/* 802A525C 002A109C  80 A6 00 00 */	lwz r5, 0(r6)
+/* 802A5260 002A10A0  80 06 00 04 */	lwz r0, 4(r6)
+/* 802A5264 002A10A4  90 A3 00 00 */	stw r5, 0(r3)
+/* 802A5268 002A10A8  90 03 00 04 */	stw r0, 4(r3)
+/* 802A526C 002A10AC  80 06 00 08 */	lwz r0, 8(r6)
+/* 802A5270 002A10B0  90 03 00 08 */	stw r0, 8(r3)
+/* 802A5274 002A10B4  7C 83 23 78 */	mr r3, r4
+/* 802A5278 002A10B8  4B D9 18 E9 */	bl GXGetTexObjUserData
+/* 802A527C 002A10BC  2C 03 00 67 */	cmpwi r3, 0x67
+/* 802A5280 002A10C0  40 82 00 24 */	bne lbl_802A52A4
+/* 802A5284 002A10C4  C0 22 B5 98 */	lfs f1, $$256724-_SDA2_BASE_(r2)
+/* 802A5288 002A10C8  D0 21 00 08 */	stfs f1, 8(r1)
+/* 802A528C 002A10CC  C0 02 B5 9C */	lfs f0, $$256725-_SDA2_BASE_(r2)
+/* 802A5290 002A10D0  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 802A5294 002A10D4  D0 21 00 10 */	stfs f1, 0x10(r1)
+/* 802A5298 002A10D8  D0 3F 00 00 */	stfs f1, 0(r31)
+/* 802A529C 002A10DC  D0 1F 00 04 */	stfs f0, 4(r31)
+/* 802A52A0 002A10E0  D0 3F 00 08 */	stfs f1, 8(r31)
+lbl_802A52A4:
+/* 802A52A4 002A10E4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 802A52A8 002A10E8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802A52AC 002A10EC  7C 08 03 A6 */	mtlr r0
+/* 802A52B0 002A10F0  38 21 00 20 */	addi r1, r1, 0x20
+/* 802A52B4 002A10F4  4E 80 00 20 */	blr 
+
+.global ConstraintPos__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemyf
+ConstraintPos__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemyf:
+/* 802A52B8 002A10F8  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 802A52BC 002A10FC  7C 08 02 A6 */	mflr r0
+/* 802A52C0 002A1100  90 01 00 A4 */	stw r0, 0xa4(r1)
+/* 802A52C4 002A1104  DB E1 00 90 */	stfd f31, 0x90(r1)
+/* 802A52C8 002A1108  F3 E1 00 98 */	psq_st f31, 152(r1), 0, qr0
+/* 802A52CC 002A110C  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 802A52D0 002A1110  7C 7F 1B 78 */	mr r31, r3
+/* 802A52D4 002A1114  FF E0 08 90 */	fmr f31, f1
+/* 802A52D8 002A1118  4B FE 2E 75 */	bl captureReceiver__Q43scn4step5enemy5EnemyFv
+/* 802A52DC 002A111C  7C 64 1B 78 */	mr r4, r3
+/* 802A52E0 002A1120  38 61 00 74 */	addi r3, r1, 0x74
+/* 802A52E4 002A1124  4B FD C4 91 */	bl getConstrainPos__Q43scn4step5enemy15CaptureReceiverCFv
+/* 802A52E8 002A1128  38 61 00 5C */	addi r3, r1, 0x5c
+/* 802A52EC 002A112C  7F E4 FB 78 */	mr r4, r31
+/* 802A52F0 002A1130  4B FE 91 6D */	bl GetDefaultCenterOffset__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+/* 802A52F4 002A1134  38 61 00 74 */	addi r3, r1, 0x74
+/* 802A52F8 002A1138  38 81 00 5C */	addi r4, r1, 0x5c
+/* 802A52FC 002A113C  4B EF A9 8D */	bl __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A5300 002A1140  38 61 00 50 */	addi r3, r1, 0x50
+/* 802A5304 002A1144  7F E4 FB 78 */	mr r4, r31
+/* 802A5308 002A1148  4B FF FF 39 */	bl getConstraintOffset__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy
+/* 802A530C 002A114C  38 61 00 74 */	addi r3, r1, 0x74
+/* 802A5310 002A1150  38 81 00 50 */	addi r4, r1, 0x50
+/* 802A5314 002A1154  4B ED D6 99 */	bl __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A5318 002A1158  7F E3 FB 78 */	mr r3, r31
+/* 802A531C 002A115C  4B FE 2D A1 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802A5320 002A1160  7C 64 1B 78 */	mr r4, r3
+/* 802A5324 002A1164  38 61 00 44 */	addi r3, r1, 0x44
+/* 802A5328 002A1168  4B FC A3 8D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802A532C 002A116C  80 61 00 74 */	lwz r3, 0x74(r1)
+/* 802A5330 002A1170  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 802A5334 002A1174  90 61 00 20 */	stw r3, 0x20(r1)
+/* 802A5338 002A1178  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802A533C 002A117C  80 01 00 7C */	lwz r0, 0x7c(r1)
+/* 802A5340 002A1180  90 01 00 28 */	stw r0, 0x28(r1)
+/* 802A5344 002A1184  38 61 00 20 */	addi r3, r1, 0x20
+/* 802A5348 002A1188  38 81 00 44 */	addi r4, r1, 0x44
+/* 802A534C 002A118C  4B EF A9 3D */	bl __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A5350 002A1190  7C 64 1B 78 */	mr r4, r3
+/* 802A5354 002A1194  38 61 00 14 */	addi r3, r1, 0x14
+/* 802A5358 002A1198  4B ED 72 71 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A535C 002A119C  80 61 00 14 */	lwz r3, 0x14(r1)
+/* 802A5360 002A11A0  80 01 00 18 */	lwz r0, 0x18(r1)
+/* 802A5364 002A11A4  90 61 00 2C */	stw r3, 0x2c(r1)
+/* 802A5368 002A11A8  90 01 00 30 */	stw r0, 0x30(r1)
+/* 802A536C 002A11AC  80 01 00 1C */	lwz r0, 0x1c(r1)
+/* 802A5370 002A11B0  90 01 00 34 */	stw r0, 0x34(r1)
+/* 802A5374 002A11B4  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 802A5378 002A11B8  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 802A537C 002A11BC  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 802A5380 002A11C0  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 802A5384 002A11C4  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 802A5388 002A11C8  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 802A538C 002A11CC  C0 01 00 34 */	lfs f0, 0x34(r1)
+/* 802A5390 002A11D0  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 802A5394 002A11D4  D0 01 00 34 */	stfs f0, 0x34(r1)
+/* 802A5398 002A11D8  38 61 00 08 */	addi r3, r1, 8
+/* 802A539C 002A11DC  38 81 00 2C */	addi r4, r1, 0x2c
+/* 802A53A0 002A11E0  4B ED 72 29 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A53A4 002A11E4  80 61 00 08 */	lwz r3, 8(r1)
+/* 802A53A8 002A11E8  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 802A53AC 002A11EC  90 61 00 38 */	stw r3, 0x38(r1)
+/* 802A53B0 002A11F0  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 802A53B4 002A11F4  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 802A53B8 002A11F8  90 01 00 40 */	stw r0, 0x40(r1)
+/* 802A53BC 002A11FC  38 61 00 38 */	addi r3, r1, 0x38
+/* 802A53C0 002A1200  38 81 00 44 */	addi r4, r1, 0x44
+/* 802A53C4 002A1204  4B ED D5 E9 */	bl __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A53C8 002A1208  7C 64 1B 78 */	mr r4, r3
+/* 802A53CC 002A120C  38 61 00 68 */	addi r3, r1, 0x68
+/* 802A53D0 002A1210  4B ED 71 F9 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802A53D4 002A1214  7F E3 FB 78 */	mr r3, r31
+/* 802A53D8 002A1218  4B FE 2C E5 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802A53DC 002A121C  38 81 00 68 */	addi r4, r1, 0x68
+/* 802A53E0 002A1220  4B FC A2 DD */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+/* 802A53E4 002A1224  7F E3 FB 78 */	mr r3, r31
+/* 802A53E8 002A1228  4B FE 2D 15 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802A53EC 002A122C  4B FE 50 4D */	bl procMapColl__Q43scn4step5enemy7MapCollFv
+/* 802A53F0 002A1230  38 00 00 98 */	li r0, 0x98
+/* 802A53F4 002A1234  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802A53F8 002A1238  CB E1 00 90 */	lfd f31, 0x90(r1)
+/* 802A53FC 002A123C  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 802A5400 002A1240  80 01 00 A4 */	lwz r0, 0xa4(r1)
+/* 802A5404 002A1244  7C 08 03 A6 */	mtlr r0
+/* 802A5408 002A1248  38 21 00 A0 */	addi r1, r1, 0xa0
+/* 802A540C 002A124C  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global EmDamageUtility_InitTarget__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+EmDamageUtility_InitTarget__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC250 002A8090  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 802AC254 002A8094  7C 08 02 A6 */	mflr r0
+/* 802AC258 002A8098  90 01 00 34 */	stw r0, 0x34(r1)
+/* 802AC25C 002A809C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 802AC260 002A80A0  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 802AC264 002A80A4  7C 7E 1B 78 */	mr r30, r3
+/* 802AC268 002A80A8  4B FD BE B5 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802AC26C 002A80AC  4B F8 0C A5 */	bl param__Q43scn4step4boss4BossCFv
+/* 802AC270 002A80B0  4B FC 11 3D */	bl isCollide__Q43scn4step5chara8BodyCollCFv
+/* 802AC274 002A80B4  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC278 002A80B8  41 82 00 58 */	beq lbl_802AC2D0
+/* 802AC27C 002A80BC  7F C3 F3 78 */	mr r3, r30
+/* 802AC280 002A80C0  4B FD BE 95 */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 802AC284 002A80C4  4B F1 19 D5 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802AC288 002A80C8  7C 64 1B 78 */	mr r4, r3
+/* 802AC28C 002A80CC  38 61 00 08 */	addi r3, r1, 8
+/* 802AC290 002A80D0  38 84 00 14 */	addi r4, r4, 0x14
+/* 802AC294 002A80D4  4B E9 F6 D5 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802AC298 002A80D8  7F C3 F3 78 */	mr r3, r30
+/* 802AC29C 002A80DC  4B FD BE 21 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802AC2A0 002A80E0  7C 64 1B 78 */	mr r4, r3
+/* 802AC2A4 002A80E4  38 61 00 10 */	addi r3, r1, 0x10
+/* 802AC2A8 002A80E8  4B FC 34 0D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802AC2AC 002A80EC  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 802AC2B0 002A80F0  C0 01 00 08 */	lfs f0, 8(r1)
+/* 802AC2B4 002A80F4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 802AC2B8 002A80F8  7F E0 00 26 */	mfcr r31
+/* 802AC2BC 002A80FC  57 FF 0F FE */	srwi r31, r31, 0x1f
+/* 802AC2C0 002A8100  7F C3 F3 78 */	mr r3, r30
+/* 802AC2C4 002A8104  4B FD BD E9 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 802AC2C8 002A8108  7F E4 FB 78 */	mr r4, r31
+/* 802AC2CC 002A810C  4B EE C3 B5 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_802AC2D0:
+/* 802AC2D0 002A8110  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 802AC2D4 002A8114  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 802AC2D8 002A8118  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 802AC2DC 002A811C  7C 08 03 A6 */	mtlr r0
+/* 802AC2E0 002A8120  38 21 00 30 */	addi r1, r1, 0x30
+/* 802AC2E4 002A8124  4E 80 00 20 */	blr 
+
+.global EmDamageUtility_InitVelocity__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+EmDamageUtility_InitVelocity__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC2E8 002A8128  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 802AC2EC 002A812C  7C 08 02 A6 */	mflr r0
+/* 802AC2F0 002A8130  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 802AC2F4 002A8134  DB E1 00 B0 */	stfd f31, 0xb0(r1)
+/* 802AC2F8 002A8138  F3 E1 00 B8 */	psq_st f31, 184(r1), 0, qr0
+/* 802AC2FC 002A813C  DB C1 00 A0 */	stfd f30, 0xa0(r1)
+/* 802AC300 002A8140  F3 C1 00 A8 */	psq_st f30, 168(r1), 0, qr0
+/* 802AC304 002A8144  DB A1 00 90 */	stfd f29, 0x90(r1)
+/* 802AC308 002A8148  F3 A1 00 98 */	psq_st f29, 152(r1), 0, qr0
+/* 802AC30C 002A814C  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 802AC310 002A8150  93 C1 00 88 */	stw r30, 0x88(r1)
+/* 802AC314 002A8154  7C 7E 1B 78 */	mr r30, r3
+/* 802AC318 002A8158  4B FD BE 05 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802AC31C 002A815C  4B F8 0B F5 */	bl param__Q43scn4step4boss4BossCFv
+/* 802AC320 002A8160  4B FC 10 8D */	bl isCollide__Q43scn4step5chara8BodyCollCFv
+/* 802AC324 002A8164  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC328 002A8168  41 82 01 B8 */	beq lbl_802AC4E0
+/* 802AC32C 002A816C  7F C3 F3 78 */	mr r3, r30
+/* 802AC330 002A8170  4B FD BD DD */	bl hitPoint__Q43scn4step5enemy5EnemyFv
+/* 802AC334 002A8174  4B F2 54 F1 */	bl isOK__Q24nand11NandManagerFv
+/* 802AC338 002A8178  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC33C 002A817C  40 82 00 18 */	bne lbl_802AC354
+/* 802AC340 002A8180  7F C3 F3 78 */	mr r3, r30
+/* 802AC344 002A8184  4B FD BD 31 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 802AC348 002A8188  88 03 00 45 */	lbz r0, 0x45(r3)
+/* 802AC34C 002A818C  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC350 002A8190  40 82 01 90 */	bne lbl_802AC4E0
+lbl_802AC354:
+/* 802AC354 002A8194  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 802AC358 002A8198  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
+/* 802AC35C 002A819C  80 64 00 00 */	lwz r3, 0(r4)
+/* 802AC360 002A81A0  80 04 00 04 */	lwz r0, 4(r4)
+/* 802AC364 002A81A4  90 61 00 08 */	stw r3, 8(r1)
+/* 802AC368 002A81A8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 802AC36C 002A81AC  80 04 00 08 */	lwz r0, 8(r4)
+/* 802AC370 002A81B0  90 01 00 10 */	stw r0, 0x10(r1)
+/* 802AC374 002A81B4  7F C3 F3 78 */	mr r3, r30
+/* 802AC378 002A81B8  4B FD BD 9D */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 802AC37C 002A81BC  7C 7F 1B 78 */	mr r31, r3
+/* 802AC380 002A81C0  88 03 00 00 */	lbz r0, 0(r3)
+/* 802AC384 002A81C4  98 01 00 18 */	stb r0, 0x18(r1)
+/* 802AC388 002A81C8  38 61 00 20 */	addi r3, r1, 0x20
+/* 802AC38C 002A81CC  38 9F 00 08 */	addi r4, r31, 8
+/* 802AC390 002A81D0  4B E9 F5 D9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802AC394 002A81D4  80 1F 00 10 */	lwz r0, 0x10(r31)
+/* 802AC398 002A81D8  90 01 00 28 */	stw r0, 0x28(r1)
+/* 802AC39C 002A81DC  38 61 00 2C */	addi r3, r1, 0x2c
+/* 802AC3A0 002A81E0  38 9F 00 14 */	addi r4, r31, 0x14
+/* 802AC3A4 002A81E4  4B E9 F5 C5 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802AC3A8 002A81E8  38 61 00 34 */	addi r3, r1, 0x34
+/* 802AC3AC 002A81EC  38 9F 00 1C */	addi r4, r31, 0x1c
+/* 802AC3B0 002A81F0  4B E9 F5 B9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802AC3B4 002A81F4  80 1F 00 24 */	lwz r0, 0x24(r31)
+/* 802AC3B8 002A81F8  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 802AC3BC 002A81FC  80 1F 00 28 */	lwz r0, 0x28(r31)
+/* 802AC3C0 002A8200  90 01 00 40 */	stw r0, 0x40(r1)
+/* 802AC3C4 002A8204  80 1F 00 2C */	lwz r0, 0x2c(r31)
+/* 802AC3C8 002A8208  90 01 00 44 */	stw r0, 0x44(r1)
+/* 802AC3CC 002A820C  80 1F 00 30 */	lwz r0, 0x30(r31)
+/* 802AC3D0 002A8210  90 01 00 48 */	stw r0, 0x48(r1)
+/* 802AC3D4 002A8214  80 1F 00 34 */	lwz r0, 0x34(r31)
+/* 802AC3D8 002A8218  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 802AC3DC 002A821C  80 1F 00 38 */	lwz r0, 0x38(r31)
+/* 802AC3E0 002A8220  90 01 00 50 */	stw r0, 0x50(r1)
+/* 802AC3E4 002A8224  C0 1F 00 3C */	lfs f0, 0x3c(r31)
+/* 802AC3E8 002A8228  D0 01 00 54 */	stfs f0, 0x54(r1)
+/* 802AC3EC 002A822C  C0 1F 00 40 */	lfs f0, 0x40(r31)
+/* 802AC3F0 002A8230  D0 01 00 58 */	stfs f0, 0x58(r1)
+/* 802AC3F4 002A8234  C0 1F 00 44 */	lfs f0, 0x44(r31)
+/* 802AC3F8 002A8238  D0 01 00 5C */	stfs f0, 0x5c(r1)
+/* 802AC3FC 002A823C  C0 1F 00 48 */	lfs f0, 0x48(r31)
+/* 802AC400 002A8240  D0 01 00 60 */	stfs f0, 0x60(r1)
+/* 802AC404 002A8244  80 1F 00 4C */	lwz r0, 0x4c(r31)
+/* 802AC408 002A8248  90 01 00 64 */	stw r0, 0x64(r1)
+/* 802AC40C 002A824C  88 1F 00 50 */	lbz r0, 0x50(r31)
+/* 802AC410 002A8250  98 01 00 68 */	stb r0, 0x68(r1)
+/* 802AC414 002A8254  88 1F 00 51 */	lbz r0, 0x51(r31)
+/* 802AC418 002A8258  98 01 00 69 */	stb r0, 0x69(r1)
+/* 802AC41C 002A825C  80 1F 00 54 */	lwz r0, 0x54(r31)
+/* 802AC420 002A8260  90 01 00 6C */	stw r0, 0x6c(r1)
+/* 802AC424 002A8264  80 1F 00 58 */	lwz r0, 0x58(r31)
+/* 802AC428 002A8268  90 01 00 70 */	stw r0, 0x70(r1)
+/* 802AC42C 002A826C  80 1F 00 60 */	lwz r0, 0x60(r31)
+/* 802AC430 002A8270  80 7F 00 64 */	lwz r3, 0x64(r31)
+/* 802AC434 002A8274  90 61 00 7C */	stw r3, 0x7c(r1)
+/* 802AC438 002A8278  90 01 00 78 */	stw r0, 0x78(r1)
+/* 802AC43C 002A827C  80 1F 00 68 */	lwz r0, 0x68(r31)
+/* 802AC440 002A8280  80 7F 00 6C */	lwz r3, 0x6c(r31)
+/* 802AC444 002A8284  90 61 00 84 */	stw r3, 0x84(r1)
+/* 802AC448 002A8288  90 01 00 80 */	stw r0, 0x80(r1)
+/* 802AC44C 002A828C  38 61 00 18 */	addi r3, r1, 0x18
+/* 802AC450 002A8290  4B F1 18 09 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802AC454 002A8294  C3 E3 00 34 */	lfs f31, 0x34(r3)
+/* 802AC458 002A8298  38 61 00 18 */	addi r3, r1, 0x18
+/* 802AC45C 002A829C  4B F1 17 FD */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802AC460 002A82A0  C3 C3 00 38 */	lfs f30, 0x38(r3)
+/* 802AC464 002A82A4  38 61 00 18 */	addi r3, r1, 0x18
+/* 802AC468 002A82A8  4B F1 17 F1 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802AC46C 002A82AC  C3 A3 00 3C */	lfs f29, 0x3c(r3)
+/* 802AC470 002A82B0  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 802AC474 002A82B4  4B EC A1 E1 */	bl random__Q23app11ApplicationFv
+/* 802AC478 002A82B8  4B EF 2A 2D */	bl randAF__Q33hel4math6RandomFv
+/* 802AC47C 002A82BC  EC 3E F8 7A */	fmadds f1, f30, f1, f31
+/* 802AC480 002A82C0  38 61 00 08 */	addi r3, r1, 8
+/* 802AC484 002A82C4  3C 80 80 54 */	lis r4, BASIS_Z__Q33hel4math7Vector3@ha
+/* 802AC488 002A82C8  38 84 53 00 */	addi r4, r4, BASIS_Z__Q33hel4math7Vector3@l
+/* 802AC48C 002A82CC  C0 02 B7 D8 */	lfs f0, $$258292-_SDA2_BASE_(r2)
+/* 802AC490 002A82D0  EC 20 00 72 */	fmuls f1, f0, f1
+/* 802AC494 002A82D4  4B EF 33 F9 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+/* 802AC498 002A82D8  7F C3 F3 78 */	mr r3, r30
+/* 802AC49C 002A82DC  4B FD BC 11 */	bl target__Q43scn4step5enemy5EnemyFv
+/* 802AC4A0 002A82E0  4B EE FC 01 */	bl getSign__Q24gobj6TargetCFv
+/* 802AC4A4 002A82E4  C0 02 B7 DC */	lfs f0, $$258293-_SDA2_BASE_(r2)
+/* 802AC4A8 002A82E8  EC 20 00 72 */	fmuls f1, f0, f1
+/* 802AC4AC 002A82EC  C0 01 00 08 */	lfs f0, 8(r1)
+/* 802AC4B0 002A82F0  EC 00 00 72 */	fmuls f0, f0, f1
+/* 802AC4B4 002A82F4  D0 01 00 08 */	stfs f0, 8(r1)
+/* 802AC4B8 002A82F8  7F C3 F3 78 */	mr r3, r30
+/* 802AC4BC 002A82FC  38 81 00 18 */	addi r4, r1, 0x18
+/* 802AC4C0 002A8300  48 00 06 05 */	bl EmDamageUtility_GetInitVelocityRate__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5EnemyRCQ43scn4step5chara10DamageInfo
+/* 802AC4C4 002A8304  EC 3D 00 72 */	fmuls f1, f29, f1
+/* 802AC4C8 002A8308  38 61 00 08 */	addi r3, r1, 8
+/* 802AC4CC 002A830C  4B EF 32 65 */	bl __amu__Q33hel4math7Vector3Ff
+/* 802AC4D0 002A8310  7F C3 F3 78 */	mr r3, r30
+/* 802AC4D4 002A8314  4B FD BB F1 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC4D8 002A8318  38 81 00 08 */	addi r4, r1, 8
+/* 802AC4DC 002A831C  4B EE EE 9D */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+lbl_802AC4E0:
+/* 802AC4E0 002A8320  38 00 00 B8 */	li r0, 0xb8
+/* 802AC4E4 002A8324  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802AC4E8 002A8328  CB E1 00 B0 */	lfd f31, 0xb0(r1)
+/* 802AC4EC 002A832C  38 00 00 A8 */	li r0, 0xa8
+/* 802AC4F0 002A8330  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 802AC4F4 002A8334  CB C1 00 A0 */	lfd f30, 0xa0(r1)
+/* 802AC4F8 002A8338  38 00 00 98 */	li r0, 0x98
+/* 802AC4FC 002A833C  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 802AC500 002A8340  CB A1 00 90 */	lfd f29, 0x90(r1)
+/* 802AC504 002A8344  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 802AC508 002A8348  83 C1 00 88 */	lwz r30, 0x88(r1)
+/* 802AC50C 002A834C  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 802AC510 002A8350  7C 08 03 A6 */	mtlr r0
+/* 802AC514 002A8354  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 802AC518 002A8358  4E 80 00 20 */	blr 
+
+.global EmDamageUtility_Move__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+EmDamageUtility_Move__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC51C 002A835C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 802AC520 002A8360  7C 08 02 A6 */	mflr r0
+/* 802AC524 002A8364  90 01 00 54 */	stw r0, 0x54(r1)
+/* 802AC528 002A8368  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 802AC52C 002A836C  7C 7F 1B 78 */	mr r31, r3
+/* 802AC530 002A8370  C0 22 B7 E0 */	lfs f1, $$258300-_SDA2_BASE_(r2)
+/* 802AC534 002A8374  4B EE F4 C9 */	bl Create__Q24gobj14MoveParamDecelFf
+/* 802AC538 002A8378  90 61 00 08 */	stw r3, 8(r1)
+/* 802AC53C 002A837C  38 61 00 24 */	addi r3, r1, 0x24
+/* 802AC540 002A8380  C0 22 B7 E4 */	lfs f1, $$258301-_SDA2_BASE_(r2)
+/* 802AC544 002A8384  C0 42 B7 E8 */	lfs f2, $$258302-_SDA2_BASE_(r2)
+/* 802AC548 002A8388  C0 62 B7 EC */	lfs f3, $$258303-_SDA2_BASE_(r2)
+/* 802AC54C 002A838C  4B EE F4 69 */	bl Create__Q24gobj14MoveParamAccelFfff
+/* 802AC550 002A8390  80 61 00 24 */	lwz r3, 0x24(r1)
+/* 802AC554 002A8394  80 01 00 28 */	lwz r0, 0x28(r1)
+/* 802AC558 002A8398  90 61 00 30 */	stw r3, 0x30(r1)
+/* 802AC55C 002A839C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 802AC560 002A83A0  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 802AC564 002A83A4  90 01 00 38 */	stw r0, 0x38(r1)
+/* 802AC568 002A83A8  7F E3 FB 78 */	mr r3, r31
+/* 802AC56C 002A83AC  4B FD BB A1 */	bl hitPoint__Q43scn4step5enemy5EnemyFv
+/* 802AC570 002A83B0  4B F2 52 B5 */	bl isOK__Q24nand11NandManagerFv
+/* 802AC574 002A83B4  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC578 002A83B8  40 82 00 2C */	bne lbl_802AC5A4
+/* 802AC57C 002A83BC  7F E3 FB 78 */	mr r3, r31
+/* 802AC580 002A83C0  4B FD BA F5 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 802AC584 002A83C4  88 03 00 45 */	lbz r0, 0x45(r3)
+/* 802AC588 002A83C8  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC58C 002A83CC  41 82 00 18 */	beq lbl_802AC5A4
+/* 802AC590 002A83D0  38 61 00 18 */	addi r3, r1, 0x18
+/* 802AC594 002A83D4  4B EE F4 7D */	bl Zero__Q24gobj13MoveParamFallFv
+/* 802AC598 002A83D8  38 61 00 30 */	addi r3, r1, 0x30
+/* 802AC59C 002A83DC  38 81 00 18 */	addi r4, r1, 0x18
+/* 802AC5A0 002A83E0  4B EC FF AD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_802AC5A4:
+/* 802AC5A4 002A83E4  7F E3 FB 78 */	mr r3, r31
+/* 802AC5A8 002A83E8  4B FD BB 95 */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802AC5AC 002A83EC  4B F2 EC 89 */	bl isReqClose__Q25pause9ComponentCFv
+/* 802AC5B0 002A83F0  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC5B4 002A83F4  41 82 00 24 */	beq lbl_802AC5D8
+/* 802AC5B8 002A83F8  38 61 00 0C */	addi r3, r1, 0xc
+/* 802AC5BC 002A83FC  C0 22 B7 F0 */	lfs f1, $$258304-_SDA2_BASE_(r2)
+/* 802AC5C0 002A8400  C0 42 B7 F4 */	lfs f2, $$258305-_SDA2_BASE_(r2)
+/* 802AC5C4 002A8404  C0 62 B7 F8 */	lfs f3, $$258306-_SDA2_BASE_(r2)
+/* 802AC5C8 002A8408  4B EE F3 ED */	bl Create__Q24gobj14MoveParamAccelFfff
+/* 802AC5CC 002A840C  38 61 00 30 */	addi r3, r1, 0x30
+/* 802AC5D0 002A8410  38 81 00 0C */	addi r4, r1, 0xc
+/* 802AC5D4 002A8414  4B EC FF 79 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_802AC5D8:
+/* 802AC5D8 002A8418  7F E3 FB 78 */	mr r3, r31
+/* 802AC5DC 002A841C  4B FD BA E9 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC5E0 002A8420  38 81 00 08 */	addi r4, r1, 8
+/* 802AC5E4 002A8424  38 A1 00 30 */	addi r5, r1, 0x30
+/* 802AC5E8 002A8428  4B EE EF 41 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+/* 802AC5EC 002A842C  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 802AC5F0 002A8430  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 802AC5F4 002A8434  7C 08 03 A6 */	mtlr r0
+/* 802AC5F8 002A8438  38 21 00 50 */	addi r1, r1, 0x50
+/* 802AC5FC 002A843C  4E 80 00 20 */	blr 
+
+.global EmDamageUtility_ReflectWall__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+EmDamageUtility_ReflectWall__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC600 002A8440  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 802AC604 002A8444  7C 08 02 A6 */	mflr r0
+/* 802AC608 002A8448  90 01 00 A4 */	stw r0, 0xa4(r1)
+/* 802AC60C 002A844C  DB E1 00 90 */	stfd f31, 0x90(r1)
+/* 802AC610 002A8450  F3 E1 00 98 */	psq_st f31, 152(r1), 0, qr0
+/* 802AC614 002A8454  39 61 00 90 */	addi r11, r1, 0x90
+/* 802AC618 002A8458  4B D5 AD 25 */	bl func_8000733C
+/* 802AC61C 002A845C  7C 7B 1B 78 */	mr r27, r3
+/* 802AC620 002A8460  4B FD BA DD */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802AC624 002A8464  7C 64 1B 78 */	mr r4, r3
+/* 802AC628 002A8468  38 61 00 40 */	addi r3, r1, 0x40
+/* 802AC62C 002A846C  4B FD E6 6D */	bl result__Q43scn4step5enemy7MapCollCFv
+/* 802AC630 002A8470  7F 63 DB 78 */	mr r3, r27
+/* 802AC634 002A8474  4B DC 90 FD */	bl GKI_getfirst
+/* 802AC638 002A8478  4B F7 45 51 */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 802AC63C 002A847C  7C 64 1B 78 */	mr r4, r3
+/* 802AC640 002A8480  38 61 00 30 */	addi r3, r1, 0x30
+/* 802AC644 002A8484  4B FB 9B 01 */	bl getViewRect__Q43scn4step6camera10MainCameraCFv
+/* 802AC648 002A8488  7F 63 DB 78 */	mr r3, r27
+/* 802AC64C 002A848C  4B FD BA 79 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC650 002A8490  7C 64 1B 78 */	mr r4, r3
+/* 802AC654 002A8494  38 61 00 20 */	addi r3, r1, 0x20
+/* 802AC658 002A8498  4B EE ED 05 */	bl velocity__Q24gobj4MoveCFv
+/* 802AC65C 002A849C  7F 63 DB 78 */	mr r3, r27
+/* 802AC660 002A84A0  4B FD BA 5D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802AC664 002A84A4  7C 64 1B 78 */	mr r4, r3
+/* 802AC668 002A84A8  38 61 00 14 */	addi r3, r1, 0x14
+/* 802AC66C 002A84AC  4B FC 30 59 */	bl centerPos__Q43scn4step5chara8LocationCFv
+/* 802AC670 002A84B0  7F 63 DB 78 */	mr r3, r27
+/* 802AC674 002A84B4  4B FD BA 01 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 802AC678 002A84B8  C0 23 00 2C */	lfs f1, 0x2c(r3)
+/* 802AC67C 002A84BC  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 802AC680 002A84C0  EC 00 08 28 */	fsubs f0, f0, f1
+/* 802AC684 002A84C4  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 802AC688 002A84C8  C0 01 00 34 */	lfs f0, 0x34(r1)
+/* 802AC68C 002A84CC  EC 00 08 2A */	fadds f0, f0, f1
+/* 802AC690 002A84D0  D0 01 00 34 */	stfs f0, 0x34(r1)
+/* 802AC694 002A84D4  C0 01 00 38 */	lfs f0, 0x38(r1)
+/* 802AC698 002A84D8  EC 00 08 2A */	fadds f0, f0, f1
+/* 802AC69C 002A84DC  D0 01 00 38 */	stfs f0, 0x38(r1)
+/* 802AC6A0 002A84E0  C0 01 00 3C */	lfs f0, 0x3c(r1)
+/* 802AC6A4 002A84E4  EC 00 08 28 */	fsubs f0, f0, f1
+/* 802AC6A8 002A84E8  D0 01 00 3C */	stfs f0, 0x3c(r1)
+/* 802AC6AC 002A84EC  3B E0 00 00 */	li r31, 0
+/* 802AC6B0 002A84F0  3B C0 00 00 */	li r30, 0
+/* 802AC6B4 002A84F4  3B A0 00 00 */	li r29, 0
+/* 802AC6B8 002A84F8  3B 80 00 00 */	li r28, 0
+/* 802AC6BC 002A84FC  88 01 00 40 */	lbz r0, 0x40(r1)
+/* 802AC6C0 002A8500  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC6C4 002A8504  41 82 00 2C */	beq lbl_802AC6F0
+/* 802AC6C8 002A8508  7F 63 DB 78 */	mr r3, r27
+/* 802AC6CC 002A850C  4B FD B9 F9 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC6D0 002A8510  7C 64 1B 78 */	mr r4, r3
+/* 802AC6D4 002A8514  38 61 00 08 */	addi r3, r1, 8
+/* 802AC6D8 002A8518  4B EE EC 85 */	bl velocity__Q24gobj4MoveCFv
+/* 802AC6DC 002A851C  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 802AC6E0 002A8520  C0 02 B7 FC */	lfs f0, $$258339-_SDA2_BASE_(r2)
+/* 802AC6E4 002A8524  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 802AC6E8 002A8528  40 80 00 08 */	bge lbl_802AC6F0
+/* 802AC6EC 002A852C  3B C0 00 01 */	li r30, 1
+lbl_802AC6F0:
+/* 802AC6F0 002A8530  88 01 00 41 */	lbz r0, 0x41(r1)
+/* 802AC6F4 002A8534  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC6F8 002A8538  41 82 00 08 */	beq lbl_802AC700
+/* 802AC6FC 002A853C  3B E0 00 01 */	li r31, 1
+lbl_802AC700:
+/* 802AC700 002A8540  88 01 00 42 */	lbz r0, 0x42(r1)
+/* 802AC704 002A8544  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC708 002A8548  41 82 00 28 */	beq lbl_802AC730
+/* 802AC70C 002A854C  7F 63 DB 78 */	mr r3, r27
+/* 802AC710 002A8550  4B FD B9 9D */	bl target__Q43scn4step5enemy5EnemyFv
+/* 802AC714 002A8554  4B ED 4F C1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 802AC718 002A8558  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC71C 002A855C  41 82 00 08 */	beq lbl_802AC724
+/* 802AC720 002A8560  3B 80 00 01 */	li r28, 1
+lbl_802AC724:
+/* 802AC724 002A8564  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC728 002A8568  40 82 00 08 */	bne lbl_802AC730
+/* 802AC72C 002A856C  3B A0 00 01 */	li r29, 1
+lbl_802AC730:
+/* 802AC730 002A8570  88 01 00 43 */	lbz r0, 0x43(r1)
+/* 802AC734 002A8574  2C 00 00 00 */	cmpwi r0, 0
+/* 802AC738 002A8578  41 82 00 28 */	beq lbl_802AC760
+/* 802AC73C 002A857C  7F 63 DB 78 */	mr r3, r27
+/* 802AC740 002A8580  4B FD B9 6D */	bl target__Q43scn4step5enemy5EnemyFv
+/* 802AC744 002A8584  4B ED 4F 91 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 802AC748 002A8588  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC74C 002A858C  41 82 00 08 */	beq lbl_802AC754
+/* 802AC750 002A8590  3B A0 00 01 */	li r29, 1
+lbl_802AC754:
+/* 802AC754 002A8594  2C 03 00 00 */	cmpwi r3, 0
+/* 802AC758 002A8598  40 82 00 08 */	bne lbl_802AC760
+/* 802AC75C 002A859C  3B 80 00 01 */	li r28, 1
+lbl_802AC760:
+/* 802AC760 002A85A0  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 802AC764 002A85A4  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 802AC768 002A85A8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 802AC76C 002A85AC  40 81 00 08 */	ble lbl_802AC774
+/* 802AC770 002A85B0  3B E0 00 01 */	li r31, 1
+lbl_802AC774:
+/* 802AC774 002A85B4  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 802AC778 002A85B8  C0 01 00 38 */	lfs f0, 0x38(r1)
+/* 802AC77C 002A85BC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 802AC780 002A85C0  40 80 00 08 */	bge lbl_802AC788
+/* 802AC784 002A85C4  3B A0 00 01 */	li r29, 1
+lbl_802AC788:
+/* 802AC788 002A85C8  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 802AC78C 002A85CC  C0 01 00 3C */	lfs f0, 0x3c(r1)
+/* 802AC790 002A85D0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 802AC794 002A85D4  40 81 00 08 */	ble lbl_802AC79C
+/* 802AC798 002A85D8  3B 80 00 01 */	li r28, 1
+lbl_802AC79C:
+/* 802AC79C 002A85DC  2C 1F 00 00 */	cmpwi r31, 0
+/* 802AC7A0 002A85E0  41 82 00 24 */	beq lbl_802AC7C4
+/* 802AC7A4 002A85E4  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 802AC7A8 002A85E8  4B EF 37 0D */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 802AC7AC 002A85EC  C0 02 B7 DC */	lfs f0, $$258293-_SDA2_BASE_(r2)
+/* 802AC7B0 002A85F0  EF E0 00 72 */	fmuls f31, f0, f1
+/* 802AC7B4 002A85F4  7F 63 DB 78 */	mr r3, r27
+/* 802AC7B8 002A85F8  4B FD B9 0D */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC7BC 002A85FC  FC 20 F8 90 */	fmr f1, f31
+/* 802AC7C0 002A8600  4B EE EB C1 */	bl setSpeedV__Q24gobj4MoveFf
+lbl_802AC7C4:
+/* 802AC7C4 002A8604  2C 1E 00 00 */	cmpwi r30, 0
+/* 802AC7C8 002A8608  41 82 00 24 */	beq lbl_802AC7EC
+/* 802AC7CC 002A860C  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 802AC7D0 002A8610  4B EF 36 E5 */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 802AC7D4 002A8614  C0 02 B8 00 */	lfs f0, $$258340-_SDA2_BASE_(r2)
+/* 802AC7D8 002A8618  EF E0 00 72 */	fmuls f31, f0, f1
+/* 802AC7DC 002A861C  7F 63 DB 78 */	mr r3, r27
+/* 802AC7E0 002A8620  4B FD B8 E5 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC7E4 002A8624  FC 20 F8 90 */	fmr f1, f31
+/* 802AC7E8 002A8628  4B EE EB 99 */	bl setSpeedV__Q24gobj4MoveFf
+lbl_802AC7EC:
+/* 802AC7EC 002A862C  2C 1D 00 00 */	cmpwi r29, 0
+/* 802AC7F0 002A8630  41 82 00 24 */	beq lbl_802AC814
+/* 802AC7F4 002A8634  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 802AC7F8 002A8638  4B EF 36 BD */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 802AC7FC 002A863C  C0 02 B8 00 */	lfs f0, $$258340-_SDA2_BASE_(r2)
+/* 802AC800 002A8640  EF E0 00 72 */	fmuls f31, f0, f1
+/* 802AC804 002A8644  7F 63 DB 78 */	mr r3, r27
+/* 802AC808 002A8648  4B FD B8 BD */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC80C 002A864C  FC 20 F8 90 */	fmr f1, f31
+/* 802AC810 002A8650  4B E7 DE F1 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+lbl_802AC814:
+/* 802AC814 002A8654  2C 1C 00 00 */	cmpwi r28, 0
+/* 802AC818 002A8658  41 82 00 24 */	beq lbl_802AC83C
+/* 802AC81C 002A865C  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 802AC820 002A8660  4B EF 36 95 */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 802AC824 002A8664  C0 02 B8 04 */	lfs f0, $$258341-_SDA2_BASE_(r2)
+/* 802AC828 002A8668  EF E0 00 72 */	fmuls f31, f0, f1
+/* 802AC82C 002A866C  7F 63 DB 78 */	mr r3, r27
+/* 802AC830 002A8670  4B FD B8 95 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802AC834 002A8674  FC 20 F8 90 */	fmr f1, f31
+/* 802AC838 002A8678  4B E7 DE C9 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+lbl_802AC83C:
+/* 802AC83C 002A867C  38 61 00 30 */	addi r3, r1, 0x30
+/* 802AC840 002A8680  38 80 FF FF */	li r4, -1
+/* 802AC844 002A8684  4B EF 35 F9 */	bl __dt__Q33hel3geo4RectFv
+/* 802AC848 002A8688  7F 83 F3 78 */	or r3, r28, r30
+/* 802AC84C 002A868C  7F A0 FB 78 */	or r0, r29, r31
+/* 802AC850 002A8690  7C 63 03 78 */	or r3, r3, r0
+/* 802AC854 002A8694  30 03 FF FF */	addic r0, r3, -1
+/* 802AC858 002A8698  7C 60 19 10 */	subfe r3, r0, r3
+/* 802AC85C 002A869C  38 00 00 98 */	li r0, 0x98
+/* 802AC860 002A86A0  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802AC864 002A86A4  CB E1 00 90 */	lfd f31, 0x90(r1)
+/* 802AC868 002A86A8  39 61 00 90 */	addi r11, r1, 0x90
+/* 802AC86C 002A86AC  4B D5 AB 1D */	bl func_80007388
+/* 802AC870 002A86B0  80 01 00 A4 */	lwz r0, 0xa4(r1)
+/* 802AC874 002A86B4  7C 08 03 A6 */	mtlr r0
+/* 802AC878 002A86B8  38 21 00 A0 */	addi r1, r1, 0xa0
+/* 802AC87C 002A86BC  4E 80 00 20 */	blr 
+
+.global EmDamageUtility_ReqEffectHP0__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+EmDamageUtility_ReqEffectHP0__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC880 002A86C0  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 802AC884 002A86C4  7C 08 02 A6 */	mflr r0
+/* 802AC888 002A86C8  90 01 00 74 */	stw r0, 0x74(r1)
+/* 802AC88C 002A86CC  39 61 00 70 */	addi r11, r1, 0x70
+/* 802AC890 002A86D0  4B D5 AA B1 */	bl func_80007340
+/* 802AC894 002A86D4  7C 7C 1B 78 */	mr r28, r3
+/* 802AC898 002A86D8  4B FD B7 DD */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 802AC89C 002A86DC  C0 03 00 04 */	lfs f0, 4(r3)
+/* 802AC8A0 002A86E0  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 802AC8A4 002A86E4  C0 03 00 08 */	lfs f0, 8(r3)
+/* 802AC8A8 002A86E8  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 802AC8AC 002A86EC  7F 83 E3 78 */	mr r3, r28
+/* 802AC8B0 002A86F0  4B FD B8 0D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802AC8B4 002A86F4  7C 64 1B 78 */	mr r4, r3
+/* 802AC8B8 002A86F8  38 61 00 3C */	addi r3, r1, 0x3c
+/* 802AC8BC 002A86FC  4B FC 2D F9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802AC8C0 002A8700  38 61 00 10 */	addi r3, r1, 0x10
+/* 802AC8C4 002A8704  38 81 00 3C */	addi r4, r1, 0x3c
+/* 802AC8C8 002A8708  4B F1 63 05 */	bl getXY__Q33hel4math7Vector3CFv
+/* 802AC8CC 002A870C  38 61 00 20 */	addi r3, r1, 0x20
+/* 802AC8D0 002A8710  38 81 00 10 */	addi r4, r1, 0x10
+/* 802AC8D4 002A8714  38 A1 00 28 */	addi r5, r1, 0x28
+/* 802AC8D8 002A8718  4B EF 3C B9 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 802AC8DC 002A871C  7F 83 E3 78 */	mr r3, r28
+/* 802AC8E0 002A8720  4B FD B7 DD */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802AC8E4 002A8724  7C 64 1B 78 */	mr r4, r3
+/* 802AC8E8 002A8728  38 61 00 30 */	addi r3, r1, 0x30
+/* 802AC8EC 002A872C  4B FC 2D CD */	bl prevPos__Q43scn4step5chara8LocationCFv
+/* 802AC8F0 002A8730  38 61 00 08 */	addi r3, r1, 8
+/* 802AC8F4 002A8734  38 81 00 30 */	addi r4, r1, 0x30
+/* 802AC8F8 002A8738  4B F1 62 D5 */	bl getXY__Q33hel4math7Vector3CFv
+/* 802AC8FC 002A873C  38 61 00 18 */	addi r3, r1, 0x18
+/* 802AC900 002A8740  38 81 00 08 */	addi r4, r1, 8
+/* 802AC904 002A8744  38 A1 00 28 */	addi r5, r1, 0x28
+/* 802AC908 002A8748  4B EF 3C 89 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 802AC90C 002A874C  7F 83 E3 78 */	mr r3, r28
+/* 802AC910 002A8750  4B DC 8E 21 */	bl GKI_getfirst
+/* 802AC914 002A8754  4B F7 43 E1 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802AC918 002A8758  4B D7 7B 89 */	bl DefaultSwitchThreadCallback
+/* 802AC91C 002A875C  38 81 00 20 */	addi r4, r1, 0x20
+/* 802AC920 002A8760  4B F0 55 D9 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802AC924 002A8764  7C 7E 1B 78 */	mr r30, r3
+/* 802AC928 002A8768  7F 83 E3 78 */	mr r3, r28
+/* 802AC92C 002A876C  4B DC 8E 05 */	bl GKI_getfirst
+/* 802AC930 002A8770  4B F7 43 C5 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802AC934 002A8774  4B D7 7B 6D */	bl DefaultSwitchThreadCallback
+/* 802AC938 002A8778  38 81 00 18 */	addi r4, r1, 0x18
+/* 802AC93C 002A877C  4B F0 55 BD */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802AC940 002A8780  7C 7F 1B 78 */	mr r31, r3
+/* 802AC944 002A8784  38 61 00 48 */	addi r3, r1, 0x48
+/* 802AC948 002A8788  38 81 00 28 */	addi r4, r1, 0x28
+/* 802AC94C 002A878C  4B EF 2B 11 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 802AC950 002A8790  7F 83 E3 78 */	mr r3, r28
+/* 802AC954 002A8794  4B FE 17 81 */	bl GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
+/* 802AC958 002A8798  38 61 00 48 */	addi r3, r1, 0x48
+/* 802AC95C 002A879C  4B EF 2D D5 */	bl __amu__Q33hel4math7Vector3Ff
+/* 802AC960 002A87A0  7C 1E F8 40 */	cmplw r30, r31
+/* 802AC964 002A87A4  41 82 00 4C */	beq lbl_802AC9B0
+/* 802AC968 002A87A8  7F 83 E3 78 */	mr r3, r28
+/* 802AC96C 002A87AC  4B FD B7 69 */	bl effect__Q43scn4step5enemy5EnemyFv
+/* 802AC970 002A87B0  4B F0 9F 49 */	bl intersectPos__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 802AC974 002A87B4  4B FC 19 B5 */	bl release__Q43scn4step5chara6EffectFv
+/* 802AC978 002A87B8  3B A0 00 97 */	li r29, 0x97
+/* 802AC97C 002A87BC  2C 1E 00 00 */	cmpwi r30, 0
+/* 802AC980 002A87C0  41 82 00 08 */	beq lbl_802AC988
+/* 802AC984 002A87C4  3B A0 00 A1 */	li r29, 0xa1
+lbl_802AC988:
+/* 802AC988 002A87C8  7F 83 E3 78 */	mr r3, r28
+/* 802AC98C 002A87CC  4B FD B6 E9 */	bl charaParam__Q43scn4step5enemy5EnemyCFv
+/* 802AC990 002A87D0  7C 7F 1B 78 */	mr r31, r3
+/* 802AC994 002A87D4  7F 83 E3 78 */	mr r3, r28
+/* 802AC998 002A87D8  4B FD B7 3D */	bl effect__Q43scn4step5enemy5EnemyFv
+/* 802AC99C 002A87DC  4B F0 9F 1D */	bl intersectPos__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 802AC9A0 002A87E0  7F A4 EB 78 */	mr r4, r29
+/* 802AC9A4 002A87E4  80 BF 00 38 */	lwz r5, 0x38(r31)
+/* 802AC9A8 002A87E8  38 C1 00 48 */	addi r6, r1, 0x48
+/* 802AC9AC 002A87EC  4B FC 16 95 */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math7Vector3
+lbl_802AC9B0:
+/* 802AC9B0 002A87F0  39 61 00 70 */	addi r11, r1, 0x70
+/* 802AC9B4 002A87F4  4B D5 A9 D9 */	bl func_8000738C
+/* 802AC9B8 002A87F8  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 802AC9BC 002A87FC  7C 08 03 A6 */	mtlr r0
+/* 802AC9C0 002A8800  38 21 00 70 */	addi r1, r1, 0x70
+/* 802AC9C4 002A8804  4E 80 00 20 */	blr 
+
+.global OnDamageStart__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+OnDamageStart__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802AC9C8 002A8808  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802AC9CC 002A880C  7C 08 02 A6 */	mflr r0
+/* 802AC9D0 002A8810  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802AC9D4 002A8814  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802AC9D8 002A8818  7C 7F 1B 78 */	mr r31, r3
+/* 802AC9DC 002A881C  4B FD B6 D9 */	bl footState__Q43scn4step5enemy5EnemyFv
+/* 802AC9E0 002A8820  4B ED AB 59 */	bl __ct__Q24file8DNOptionFv
+/* 802AC9E4 002A8824  7F E3 FB 78 */	mr r3, r31
+/* 802AC9E8 002A8828  4B FD B7 6D */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802AC9EC 002A882C  38 80 00 00 */	li r4, 0
+/* 802AC9F0 002A8830  4B FD E7 3D */	bl setCanNururi__Q43scn4step5enemy6NururiFb
+/* 802AC9F4 002A8834  7F E3 FB 78 */	mr r3, r31
+/* 802AC9F8 002A8838  4B FD B7 5D */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802AC9FC 002A883C  38 80 00 00 */	li r4, 0
+/* 802ACA00 002A8840  4B FD E7 35 */	bl setValid__Q43scn4step5enemy6NururiFb
+/* 802ACA04 002A8844  7F E3 FB 78 */	mr r3, r31
+/* 802ACA08 002A8848  4B FD B6 F5 */	bl mapColl__Q43scn4step5enemy5EnemyFv
+/* 802ACA0C 002A884C  38 80 00 00 */	li r4, 0
+/* 802ACA10 002A8850  4B FD E2 71 */	bl setPassThroughLandState__Q43scn4step5enemy7MapCollFb
+/* 802ACA14 002A8854  7F E3 FB 78 */	mr r3, r31
+/* 802ACA18 002A8858  4B FD B7 05 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802ACA1C 002A885C  4B F8 04 F5 */	bl param__Q43scn4step4boss4BossCFv
+/* 802ACA20 002A8860  4B FC 06 95 */	bl setStateHitOnly__Q43scn4step5chara8BodyCollFv
+/* 802ACA24 002A8864  7F E3 FB 78 */	mr r3, r31
+/* 802ACA28 002A8868  4B FD B6 FD */	bl objCollReact__Q43scn4step5enemy5EnemyFv
+/* 802ACA2C 002A886C  4B EF 9E ED */	bl finish__Q34info8sequence7CommandFv
+/* 802ACA30 002A8870  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802ACA34 002A8874  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802ACA38 002A8878  7C 08 03 A6 */	mtlr r0
+/* 802ACA3C 002A887C  38 21 00 10 */	addi r1, r1, 0x10
+/* 802ACA40 002A8880  4E 80 00 20 */	blr 
+
+.global OnDamageEnd__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+OnDamageEnd__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802ACA44 002A8884  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802ACA48 002A8888  7C 08 02 A6 */	mflr r0
+/* 802ACA4C 002A888C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802ACA50 002A8890  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802ACA54 002A8894  7C 7F 1B 78 */	mr r31, r3
+/* 802ACA58 002A8898  4B FD B6 FD */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802ACA5C 002A889C  38 80 00 01 */	li r4, 1
+/* 802ACA60 002A88A0  4B FD E6 CD */	bl setCanNururi__Q43scn4step5enemy6NururiFb
+/* 802ACA64 002A88A4  7F E3 FB 78 */	mr r3, r31
+/* 802ACA68 002A88A8  4B FD B6 ED */	bl nururi__Q43scn4step5enemy5EnemyFv
+/* 802ACA6C 002A88AC  38 80 00 01 */	li r4, 1
+/* 802ACA70 002A88B0  4B FD E6 C5 */	bl setValid__Q43scn4step5enemy6NururiFb
+/* 802ACA74 002A88B4  7F E3 FB 78 */	mr r3, r31
+/* 802ACA78 002A88B8  4B FD B6 A5 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802ACA7C 002A88BC  4B F8 04 95 */	bl param__Q43scn4step4boss4BossCFv
+/* 802ACA80 002A88C0  4B FC 05 75 */	bl setStateNormal__Q43scn4step5chara8BodyCollFv
+/* 802ACA84 002A88C4  7F E3 FB 78 */	mr r3, r31
+/* 802ACA88 002A88C8  4B FD B6 45 */	bl model__Q43scn4step5enemy5EnemyFv
+/* 802ACA8C 002A88CC  4B FC 4A 65 */	bl anim__Q43scn4step5chara5ModelFv
+/* 802ACA90 002A88D0  C0 22 B8 08 */	lfs f1, $$258370-_SDA2_BASE_(r2)
+/* 802ACA94 002A88D4  4B EE CC 7D */	bl setFrameRate__Q24gobj4AnimFf
+/* 802ACA98 002A88D8  7F E3 FB 78 */	mr r3, r31
+/* 802ACA9C 002A88DC  4B FD B6 D9 */	bl damageFlash__Q43scn4step5enemy5EnemyFv
+/* 802ACAA0 002A88E0  4B EF 9D 2D */	bl reset__Q34info8sequence7CommandFv
+/* 802ACAA4 002A88E4  7F E3 FB 78 */	mr r3, r31
+/* 802ACAA8 002A88E8  4B FD B6 1D */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802ACAAC 002A88EC  4B EE E9 1D */	bl resetMoveRate__Q24gobj4MoveFv
+/* 802ACAB0 002A88F0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802ACAB4 002A88F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802ACAB8 002A88F8  7C 08 03 A6 */	mtlr r0
+/* 802ACABC 002A88FC  38 21 00 10 */	addi r1, r1, 0x10
+/* 802ACAC0 002A8900  4E 80 00 20 */	blr 
+
+.global EmDamageUtility_GetInitVelocityRate__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5EnemyRCQ43scn4step5chara10DamageInfo
+EmDamageUtility_GetInitVelocityRate__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5EnemyRCQ43scn4step5chara10DamageInfo:
+/* 802ACAC4 002A8904  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802ACAC8 002A8908  7C 08 02 A6 */	mflr r0
+/* 802ACACC 002A890C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802ACAD0 002A8910  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 802ACAD4 002A8914  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 802ACAD8 002A8918  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802ACADC 002A891C  93 C1 00 08 */	stw r30, 8(r1)
+/* 802ACAE0 002A8920  7C 7F 1B 78 */	mr r31, r3
+/* 802ACAE4 002A8924  7C 9E 23 78 */	mr r30, r4
+/* 802ACAE8 002A8928  C3 E2 B8 08 */	lfs f31, $$258370-_SDA2_BASE_(r2)
+/* 802ACAEC 002A892C  7F C3 F3 78 */	mr r3, r30
+/* 802ACAF0 002A8930  4B F1 11 69 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802ACAF4 002A8934  88 03 00 48 */	lbz r0, 0x48(r3)
+/* 802ACAF8 002A8938  2C 00 00 00 */	cmpwi r0, 0
+/* 802ACAFC 002A893C  41 82 00 0C */	beq lbl_802ACB08
+/* 802ACB00 002A8940  FC 20 F8 90 */	fmr f1, f31
+/* 802ACB04 002A8944  48 00 01 0C */	b lbl_802ACC10
+lbl_802ACB08:
+/* 802ACB08 002A8948  7F E3 FB 78 */	mr r3, r31
+/* 802ACB0C 002A894C  4B E7 C6 95 */	bl isTriggerTarger__Q310homebutton3gui9ComponentFv
+/* 802ACB10 002A8950  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACB14 002A8954  41 82 00 0C */	beq lbl_802ACB20
+/* 802ACB18 002A8958  C0 02 B8 00 */	lfs f0, $$258340-_SDA2_BASE_(r2)
+/* 802ACB1C 002A895C  EF FF 00 32 */	fmuls f31, f31, f0
+lbl_802ACB20:
+/* 802ACB20 002A8960  7F E3 FB 78 */	mr r3, r31
+/* 802ACB24 002A8964  4B FD B6 19 */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802ACB28 002A8968  4B F2 E7 0D */	bl isReqClose__Q25pause9ComponentCFv
+/* 802ACB2C 002A896C  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACB30 002A8970  41 82 00 38 */	beq lbl_802ACB68
+/* 802ACB34 002A8974  7F C3 F3 78 */	mr r3, r30
+/* 802ACB38 002A8978  4B FE 2D 5D */	bl smashType__Q43scn4step5chara10DamageInfoCFv
+/* 802ACB3C 002A897C  2C 03 00 06 */	cmpwi r3, 6
+/* 802ACB40 002A8980  41 82 00 14 */	beq lbl_802ACB54
+/* 802ACB44 002A8984  7F C3 F3 78 */	mr r3, r30
+/* 802ACB48 002A8988  4B FE 2D 4D */	bl smashType__Q43scn4step5chara10DamageInfoCFv
+/* 802ACB4C 002A898C  2C 03 00 07 */	cmpwi r3, 7
+/* 802ACB50 002A8990  40 82 00 10 */	bne lbl_802ACB60
+lbl_802ACB54:
+/* 802ACB54 002A8994  C0 02 B8 0C */	lfs f0, $$258394-_SDA2_BASE_(r2)
+/* 802ACB58 002A8998  EF FF 00 32 */	fmuls f31, f31, f0
+/* 802ACB5C 002A899C  48 00 00 0C */	b lbl_802ACB68
+lbl_802ACB60:
+/* 802ACB60 002A89A0  C0 02 B8 10 */	lfs f0, $$258395-_SDA2_BASE_(r2)
+/* 802ACB64 002A89A4  EF FF 00 32 */	fmuls f31, f31, f0
+lbl_802ACB68:
+/* 802ACB68 002A89A8  7F E3 FB 78 */	mr r3, r31
+/* 802ACB6C 002A89AC  4B D8 9F F5 */	bl GXGetTexObjUserData
+/* 802ACB70 002A89B0  2C 03 00 1A */	cmpwi r3, 0x1a
+/* 802ACB74 002A89B4  40 82 00 0C */	bne lbl_802ACB80
+/* 802ACB78 002A89B8  C0 02 B8 00 */	lfs f0, $$258340-_SDA2_BASE_(r2)
+/* 802ACB7C 002A89BC  EF FF 00 32 */	fmuls f31, f31, f0
+lbl_802ACB80:
+/* 802ACB80 002A89C0  7F E3 FB 78 */	mr r3, r31
+/* 802ACB84 002A89C4  4B D8 9F DD */	bl GXGetTexObjUserData
+/* 802ACB88 002A89C8  2C 03 00 31 */	cmpwi r3, 0x31
+/* 802ACB8C 002A89CC  40 82 00 80 */	bne lbl_802ACC0C
+/* 802ACB90 002A89D0  7F E3 FB 78 */	mr r3, r31
+/* 802ACB94 002A89D4  4B FD B6 01 */	bl custom__Q43scn4step5enemy5EnemyFv
+/* 802ACB98 002A89D8  7C 7E 1B 78 */	mr r30, r3
+/* 802ACB9C 002A89DC  4B FD 63 71 */	bl RuntimeTypeInfoImpl$$0Q53scn4step5enemy5sheld6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
+/* 802ACBA0 002A89E0  7C 7F 1B 78 */	mr r31, r3
+/* 802ACBA4 002A89E4  2C 1E 00 00 */	cmpwi r30, 0
+/* 802ACBA8 002A89E8  41 82 00 48 */	beq lbl_802ACBF0
+/* 802ACBAC 002A89EC  7F C3 F3 78 */	mr r3, r30
+/* 802ACBB0 002A89F0  81 83 00 00 */	lwz r12, 0(r3)
+/* 802ACBB4 002A89F4  81 8C 00 08 */	lwz r12, 8(r12)
+/* 802ACBB8 002A89F8  7D 89 03 A6 */	mtctr r12
+/* 802ACBBC 002A89FC  4E 80 04 21 */	bctrl 
+/* 802ACBC0 002A8A00  48 00 00 18 */	b lbl_802ACBD8
+lbl_802ACBC4:
+/* 802ACBC4 002A8A04  7C 03 F8 40 */	cmplw r3, r31
+/* 802ACBC8 002A8A08  40 82 00 0C */	bne lbl_802ACBD4
+/* 802ACBCC 002A8A0C  38 00 00 01 */	li r0, 1
+/* 802ACBD0 002A8A10  48 00 00 14 */	b lbl_802ACBE4
+lbl_802ACBD4:
+/* 802ACBD4 002A8A14  80 63 00 00 */	lwz r3, 0(r3)
+lbl_802ACBD8:
+/* 802ACBD8 002A8A18  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACBDC 002A8A1C  40 82 FF E8 */	bne lbl_802ACBC4
+/* 802ACBE0 002A8A20  38 00 00 00 */	li r0, 0
+lbl_802ACBE4:
+/* 802ACBE4 002A8A24  2C 00 00 00 */	cmpwi r0, 0
+/* 802ACBE8 002A8A28  41 82 00 08 */	beq lbl_802ACBF0
+/* 802ACBEC 002A8A2C  48 00 00 08 */	b lbl_802ACBF4
+lbl_802ACBF0:
+/* 802ACBF0 002A8A30  3B C0 00 00 */	li r30, 0
+lbl_802ACBF4:
+/* 802ACBF4 002A8A34  7F C3 F3 78 */	mr r3, r30
+/* 802ACBF8 002A8A38  4B EC F9 ED */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 802ACBFC 002A8A3C  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACC00 002A8A40  40 82 00 0C */	bne lbl_802ACC0C
+/* 802ACC04 002A8A44  C0 02 B8 00 */	lfs f0, $$258340-_SDA2_BASE_(r2)
+/* 802ACC08 002A8A48  EF FF 00 32 */	fmuls f31, f31, f0
+lbl_802ACC0C:
+/* 802ACC0C 002A8A4C  FC 20 F8 90 */	fmr f1, f31
+lbl_802ACC10:
+/* 802ACC10 002A8A50  38 00 00 18 */	li r0, 0x18
+/* 802ACC14 002A8A54  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802ACC18 002A8A58  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 802ACC1C 002A8A5C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802ACC20 002A8A60  83 C1 00 08 */	lwz r30, 8(r1)
+/* 802ACC24 002A8A64  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802ACC28 002A8A68  7C 08 03 A6 */	mtlr r0
+/* 802ACC2C 002A8A6C  38 21 00 20 */	addi r1, r1, 0x20
+/* 802ACC30 002A8A70  4E 80 00 20 */	blr 
+
+.global UpdateMoveRate__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+UpdateMoveRate__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802ACC34 002A8A74  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802ACC38 002A8A78  7C 08 02 A6 */	mflr r0
+/* 802ACC3C 002A8A7C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802ACC40 002A8A80  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 802ACC44 002A8A84  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 802ACC48 002A8A88  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802ACC4C 002A8A8C  7C 7F 1B 78 */	mr r31, r3
+/* 802ACC50 002A8A90  4B FD B4 ED */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802ACC54 002A8A94  4B F2 E5 E1 */	bl isReqClose__Q25pause9ComponentCFv
+/* 802ACC58 002A8A98  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACC5C 002A8A9C  41 82 00 0C */	beq lbl_802ACC68
+/* 802ACC60 002A8AA0  C3 E2 B8 10 */	lfs f31, $$258395-_SDA2_BASE_(r2)
+/* 802ACC64 002A8AA4  48 00 00 08 */	b lbl_802ACC6C
+lbl_802ACC68:
+/* 802ACC68 002A8AA8  C3 E2 B8 08 */	lfs f31, $$258370-_SDA2_BASE_(r2)
+lbl_802ACC6C:
+/* 802ACC6C 002A8AAC  7F E3 FB 78 */	mr r3, r31
+/* 802ACC70 002A8AB0  4B FD B4 55 */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802ACC74 002A8AB4  FC 20 F8 90 */	fmr f1, f31
+/* 802ACC78 002A8AB8  4B EE E7 49 */	bl setMoveRate__Q24gobj4MoveFf
+/* 802ACC7C 002A8ABC  38 00 00 18 */	li r0, 0x18
+/* 802ACC80 002A8AC0  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802ACC84 002A8AC4  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 802ACC88 002A8AC8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802ACC8C 002A8ACC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802ACC90 002A8AD0  7C 08 03 A6 */	mtlr r0
+/* 802ACC94 002A8AD4  38 21 00 20 */	addi r1, r1, 0x20
+/* 802ACC98 002A8AD8  4E 80 00 20 */	blr 
+
+.global UpdateMoveRateExtreme__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
+UpdateMoveRateExtreme__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
+/* 802ACC9C 002A8ADC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802ACCA0 002A8AE0  7C 08 02 A6 */	mflr r0
+/* 802ACCA4 002A8AE4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802ACCA8 002A8AE8  DB E1 00 10 */	stfd f31, 0x10(r1)
+/* 802ACCAC 002A8AEC  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
+/* 802ACCB0 002A8AF0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802ACCB4 002A8AF4  7C 7F 1B 78 */	mr r31, r3
+/* 802ACCB8 002A8AF8  4B FD B4 85 */	bl water__Q43scn4step5enemy5EnemyFv
+/* 802ACCBC 002A8AFC  4B F2 E5 79 */	bl isReqClose__Q25pause9ComponentCFv
+/* 802ACCC0 002A8B00  2C 03 00 00 */	cmpwi r3, 0
+/* 802ACCC4 002A8B04  41 82 00 0C */	beq lbl_802ACCD0
+/* 802ACCC8 002A8B08  C3 E2 B8 14 */	lfs f31, $$258481-_SDA2_BASE_(r2)
+/* 802ACCCC 002A8B0C  48 00 00 08 */	b lbl_802ACCD4
+lbl_802ACCD0:
+/* 802ACCD0 002A8B10  C3 E2 B8 08 */	lfs f31, $$258370-_SDA2_BASE_(r2)
+lbl_802ACCD4:
+/* 802ACCD4 002A8B14  7F E3 FB 78 */	mr r3, r31
+/* 802ACCD8 002A8B18  4B FD B3 ED */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802ACCDC 002A8B1C  FC 20 F8 90 */	fmr f1, f31
+/* 802ACCE0 002A8B20  4B EE E6 E1 */	bl setMoveRate__Q24gobj4MoveFf
+/* 802ACCE4 002A8B24  38 00 00 18 */	li r0, 0x18
+/* 802ACCE8 002A8B28  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802ACCEC 002A8B2C  CB E1 00 10 */	lfd f31, 0x10(r1)
+/* 802ACCF0 002A8B30  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802ACCF4 002A8B34  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802ACCF8 002A8B38  7C 08 03 A6 */	mtlr r0
+/* 802ACCFC 002A8B3C  38 21 00 20 */	addi r1, r1, 0x20
+/* 802ACD00 002A8B40  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Generate3Waddledee__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation
+Generate3Waddledee__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation:
+/* 802EF2C4 002EB104  94 21 FE C0 */	stwu r1, -0x140(r1)
+/* 802EF2C8 002EB108  7C 08 02 A6 */	mflr r0
+/* 802EF2CC 002EB10C  90 01 01 44 */	stw r0, 0x144(r1)
+/* 802EF2D0 002EB110  DB E1 01 30 */	stfd f31, 0x130(r1)
+/* 802EF2D4 002EB114  F3 E1 01 38 */	psq_st f31, 312(r1), 0, qr0
+/* 802EF2D8 002EB118  DB C1 01 20 */	stfd f30, 0x120(r1)
+/* 802EF2DC 002EB11C  F3 C1 01 28 */	psq_st f30, 296(r1), 0, qr0
+/* 802EF2E0 002EB120  39 61 01 20 */	addi r11, r1, 0x120
+/* 802EF2E4 002EB124  4B D1 80 45 */	bl func_80007328
+/* 802EF2E8 002EB128  7C 7C 1B 78 */	mr r28, r3
+/* 802EF2EC 002EB12C  7C 98 23 78 */	mr r24, r4
+/* 802EF2F0 002EB130  7C B9 2B 78 */	mr r25, r5
+/* 802EF2F4 002EB134  4B F9 8D 91 */	bl param__Q43scn4step5enemy5EnemyCFv
+/* 802EF2F8 002EB138  4B F9 D3 81 */	bl waddledee__Q43scn4step5enemy5ParamCFv
+/* 802EF2FC 002EB13C  7C 77 1B 78 */	mr r23, r3
+/* 802EF300 002EB140  38 61 00 C4 */	addi r3, r1, 0xc4
+/* 802EF304 002EB144  C0 37 00 34 */	lfs f1, 0x34(r23)
+/* 802EF308 002EB148  C0 57 00 38 */	lfs f2, 0x38(r23)
+/* 802EF30C 002EB14C  C0 77 00 3C */	lfs f3, 0x3c(r23)
+/* 802EF310 002EB150  4B DC ED B1 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 802EF314 002EB154  38 61 00 D0 */	addi r3, r1, 0xd0
+/* 802EF318 002EB158  C0 37 00 40 */	lfs f1, 0x40(r23)
+/* 802EF31C 002EB15C  C0 57 00 44 */	lfs f2, 0x44(r23)
+/* 802EF320 002EB160  C0 77 00 48 */	lfs f3, 0x48(r23)
+/* 802EF324 002EB164  4B DC ED 9D */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 802EF328 002EB168  38 61 00 DC */	addi r3, r1, 0xdc
+/* 802EF32C 002EB16C  C0 37 00 4C */	lfs f1, 0x4c(r23)
+/* 802EF330 002EB170  C0 57 00 50 */	lfs f2, 0x50(r23)
+/* 802EF334 002EB174  C0 77 00 54 */	lfs f3, 0x54(r23)
+/* 802EF338 002EB178  4B DC ED 89 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 802EF33C 002EB17C  83 F7 00 58 */	lwz r31, 0x58(r23)
+/* 802EF340 002EB180  2C 19 00 00 */	cmpwi r25, 0
+/* 802EF344 002EB184  40 82 00 08 */	bne lbl_802EF34C
+/* 802EF348 002EB188  3B 20 00 02 */	li r25, 2
+lbl_802EF34C:
+/* 802EF34C 002EB18C  3A C0 00 02 */	li r22, 2
+/* 802EF350 002EB190  2C 18 00 00 */	cmpwi r24, 0
+/* 802EF354 002EB194  40 82 00 08 */	bne lbl_802EF35C
+/* 802EF358 002EB198  3A C0 00 48 */	li r22, 0x48
+lbl_802EF35C:
+/* 802EF35C 002EB19C  7F 83 E3 78 */	mr r3, r28
+/* 802EF360 002EB1A0  4B F9 8D 5D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802EF364 002EB1A4  7C 64 1B 78 */	mr r4, r3
+/* 802EF368 002EB1A8  38 61 00 68 */	addi r3, r1, 0x68
+/* 802EF36C 002EB1AC  4B F8 03 49 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802EF370 002EB1B0  C0 01 00 6C */	lfs f0, 0x6c(r1)
+/* 802EF374 002EB1B4  C0 21 00 68 */	lfs f1, 0x68(r1)
+/* 802EF378 002EB1B8  D0 21 00 10 */	stfs f1, 0x10(r1)
+/* 802EF37C 002EB1BC  D0 01 00 14 */	stfs f0, 0x14(r1)
+/* 802EF380 002EB1C0  7F 83 E3 78 */	mr r3, r28
+/* 802EF384 002EB1C4  4B E3 99 1D */	bl getID__Q310homebutton3gui9ComponentFv
+/* 802EF388 002EB1C8  7C 78 1B 78 */	mr r24, r3
+/* 802EF38C 002EB1CC  7F 83 E3 78 */	mr r3, r28
+/* 802EF390 002EB1D0  4B EC 80 D1 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 802EF394 002EB1D4  7C 77 1B 78 */	mr r23, r3
+/* 802EF398 002EB1D8  7F 83 E3 78 */	mr r3, r28
+/* 802EF39C 002EB1DC  4B E3 1A D5 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 802EF3A0 002EB1E0  7C 66 1B 78 */	mr r6, r3
+/* 802EF3A4 002EB1E4  38 01 00 10 */	addi r0, r1, 0x10
+/* 802EF3A8 002EB1E8  90 01 00 08 */	stw r0, 8(r1)
+/* 802EF3AC 002EB1EC  38 61 00 90 */	addi r3, r1, 0x90
+/* 802EF3B0 002EB1F0  7E C4 B3 78 */	mr r4, r22
+/* 802EF3B4 002EB1F4  7F 25 CB 78 */	mr r5, r25
+/* 802EF3B8 002EB1F8  7E E7 BB 78 */	mr r7, r23
+/* 802EF3BC 002EB1FC  7F 08 C3 78 */	mr r8, r24
+/* 802EF3C0 002EB200  39 20 00 00 */	li r9, 0
+/* 802EF3C4 002EB204  39 40 00 00 */	li r10, 0
+/* 802EF3C8 002EB208  4B F9 52 9D */	bl __ct__Q43scn4step5enemy4DescFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariationUlQ43scn4step3map15BinEnemyDirTypeQ43scn4step3map12BinEnemySizebbRCQ33hel4math7Vector2
+/* 802EF3CC 002EB20C  38 61 00 18 */	addi r3, r1, 0x18
+/* 802EF3D0 002EB210  7F 84 E3 78 */	mr r4, r28
+/* 802EF3D4 002EB214  4B F9 F9 AD */	bl GetNearestPlayerPos__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
+/* 802EF3D8 002EB218  7F 83 E3 78 */	mr r3, r28
+/* 802EF3DC 002EB21C  4B F9 8C E1 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802EF3E0 002EB220  7C 64 1B 78 */	mr r4, r3
+/* 802EF3E4 002EB224  38 61 00 5C */	addi r3, r1, 0x5c
+/* 802EF3E8 002EB228  4B F8 02 CD */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802EF3EC 002EB22C  C0 21 00 5C */	lfs f1, 0x5c(r1)
+/* 802EF3F0 002EB230  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 802EF3F4 002EB234  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 802EF3F8 002EB238  7F C0 00 26 */	mfcr r30
+/* 802EF3FC 002EB23C  57 DE 17 FE */	rlwinm r30, r30, 2, 0x1f, 0x1f
+/* 802EF400 002EB240  3B A0 00 00 */	li r29, 0
+/* 802EF404 002EB244  3B 60 00 00 */	li r27, 0
+/* 802EF408 002EB248  CB C2 C5 A0 */	lfd f30, $$257110-_SDA2_BASE_(r2)
+/* 802EF40C 002EB24C  3E E0 43 30 */	lis r23, 0x4330
+/* 802EF410 002EB250  C3 E2 C5 98 */	lfs f31, $$257106-_SDA2_BASE_(r2)
+/* 802EF414 002EB254  3C 60 80 46 */	lis r3, __vt__Q24util28StateFactory$$0Q24util6IState$$1@ha
+/* 802EF418 002EB258  3B 23 44 78 */	addi r25, r3, __vt__Q24util28StateFactory$$0Q24util6IState$$1@l
+/* 802EF41C 002EB25C  3C 60 80 48 */	lis r3, __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1@ha
+/* 802EF420 002EB260  3B 43 E3 58 */	addi r26, r3, __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1@l
+/* 802EF424 002EB264  48 00 01 84 */	b lbl_802EF5A8
+lbl_802EF428:
+/* 802EF428 002EB268  7F 83 E3 78 */	mr r3, r28
+/* 802EF42C 002EB26C  4B D8 63 05 */	bl GKI_getfirst
+/* 802EF430 002EB270  4B F3 1A 05 */	bl enemyManager__Q33scn4step9ComponentFv
+/* 802EF434 002EB274  7C 64 1B 78 */	mr r4, r3
+/* 802EF438 002EB278  38 61 00 80 */	addi r3, r1, 0x80
+/* 802EF43C 002EB27C  38 A1 00 90 */	addi r5, r1, 0x90
+/* 802EF440 002EB280  4B F9 9E B1 */	bl request__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy4Desc
+/* 802EF444 002EB284  80 01 00 8C */	lwz r0, 0x8c(r1)
+/* 802EF448 002EB288  2C 00 00 00 */	cmpwi r0, 0
+/* 802EF44C 002EB28C  41 82 01 48 */	beq lbl_802EF594
+/* 802EF450 002EB290  7F 83 E3 78 */	mr r3, r28
+/* 802EF454 002EB294  4B F9 8C 09 */	bl isRoomGuarderAppear__Q43scn4step5enemy5EnemyCFv
+/* 802EF458 002EB298  2C 03 00 00 */	cmpwi r3, 0
+/* 802EF45C 002EB29C  41 82 00 28 */	beq lbl_802EF484
+/* 802EF460 002EB2A0  80 61 00 8C */	lwz r3, 0x8c(r1)
+/* 802EF464 002EB2A4  38 80 00 01 */	li r4, 1
+/* 802EF468 002EB2A8  4B F9 8B FD */	bl setRoomGuarderAppear__Q43scn4step5enemy5EnemyFb
+/* 802EF46C 002EB2AC  83 01 00 8C */	lwz r24, 0x8c(r1)
+/* 802EF470 002EB2B0  7F 83 E3 78 */	mr r3, r28
+/* 802EF474 002EB2B4  4B EC 74 35 */	bl collideTargetGroup__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 802EF478 002EB2B8  7C 64 1B 78 */	mr r4, r3
+/* 802EF47C 002EB2BC  7F 03 C3 78 */	mr r3, r24
+/* 802EF480 002EB2C0  4B F9 8B ED */	bl setRGEnemyID__Q43scn4step5enemy5EnemyFUl
+lbl_802EF484:
+/* 802EF484 002EB2C4  7F 83 E3 78 */	mr r3, r28
+/* 802EF488 002EB2C8  4B EC 74 29 */	bl collideTargetIndex__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 802EF48C 002EB2CC  2C 03 00 00 */	cmpwi r3, 0
+/* 802EF490 002EB2D0  41 82 00 18 */	beq lbl_802EF4A8
+/* 802EF494 002EB2D4  7F 83 E3 78 */	mr r3, r28
+/* 802EF498 002EB2D8  4B EC 74 19 */	bl collideTargetIndex__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 802EF49C 002EB2DC  7C 64 1B 78 */	mr r4, r3
+/* 802EF4A0 002EB2E0  80 61 00 8C */	lwz r3, 0x8c(r1)
+/* 802EF4A4 002EB2E4  4B F9 8A 75 */	bl setObjGenerator__Q43scn4step5enemy5EnemyFRQ43scn4step4ogen9Generator
+lbl_802EF4A8:
+/* 802EF4A8 002EB2E8  80 61 00 8C */	lwz r3, 0x8c(r1)
+/* 802EF4AC 002EB2EC  4B F9 8C 09 */	bl footState__Q43scn4step5enemy5EnemyFv
+/* 802EF4B0 002EB2F0  4B E9 80 89 */	bl __ct__Q24file8DNOptionFv
+/* 802EF4B4 002EB2F4  2C 1E 00 00 */	cmpwi r30, 0
+/* 802EF4B8 002EB2F8  41 82 00 18 */	beq lbl_802EF4D0
+/* 802EF4BC 002EB2FC  38 81 00 C4 */	addi r4, r1, 0xc4
+/* 802EF4C0 002EB300  7C 84 DA 14 */	add r4, r4, r27
+/* 802EF4C4 002EB304  C0 04 00 00 */	lfs f0, 0(r4)
+/* 802EF4C8 002EB308  FC 20 00 50 */	fneg f1, f0
+/* 802EF4CC 002EB30C  48 00 00 10 */	b lbl_802EF4DC
+lbl_802EF4D0:
+/* 802EF4D0 002EB310  38 81 00 C4 */	addi r4, r1, 0xc4
+/* 802EF4D4 002EB314  7C 84 DA 14 */	add r4, r4, r27
+/* 802EF4D8 002EB318  C0 24 00 00 */	lfs f1, 0(r4)
+lbl_802EF4DC:
+/* 802EF4DC 002EB31C  82 C1 00 8C */	lwz r22, 0x8c(r1)
+/* 802EF4E0 002EB320  38 61 00 50 */	addi r3, r1, 0x50
+/* 802EF4E4 002EB324  C0 44 00 04 */	lfs f2, 4(r4)
+/* 802EF4E8 002EB328  C0 64 00 08 */	lfs f3, 8(r4)
+/* 802EF4EC 002EB32C  4B DC EB D5 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 802EF4F0 002EB330  7C 78 1B 78 */	mr r24, r3
+/* 802EF4F4 002EB334  7E C3 B3 78 */	mr r3, r22
+/* 802EF4F8 002EB338  4B F9 8B CD */	bl move__Q43scn4step5enemy5EnemyFv
+/* 802EF4FC 002EB33C  7F 04 C3 78 */	mr r4, r24
+/* 802EF500 002EB340  4B EA BE 79 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+/* 802EF504 002EB344  80 61 00 8C */	lwz r3, 0x8c(r1)
+/* 802EF508 002EB348  4B F9 8B B5 */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802EF50C 002EB34C  7C 64 1B 78 */	mr r4, r3
+/* 802EF510 002EB350  38 61 00 74 */	addi r3, r1, 0x74
+/* 802EF514 002EB354  4B F8 01 A1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802EF518 002EB358  2C 1E 00 00 */	cmpwi r30, 0
+/* 802EF51C 002EB35C  41 82 00 0C */	beq lbl_802EF528
+/* 802EF520 002EB360  C0 22 C5 90 */	lfs f1, $$257104-_SDA2_BASE_(r2)
+/* 802EF524 002EB364  48 00 00 08 */	b lbl_802EF52C
+lbl_802EF528:
+/* 802EF528 002EB368  C0 22 C5 94 */	lfs f1, $$257105-_SDA2_BASE_(r2)
+lbl_802EF52C:
+/* 802EF52C 002EB36C  93 A1 00 EC */	stw r29, 0xec(r1)
+/* 802EF530 002EB370  92 E1 00 E8 */	stw r23, 0xe8(r1)
+/* 802EF534 002EB374  C8 01 00 E8 */	lfd f0, 0xe8(r1)
+/* 802EF538 002EB378  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 802EF53C 002EB37C  EC 20 00 72 */	fmuls f1, f0, f1
+/* 802EF540 002EB380  C0 01 00 74 */	lfs f0, 0x74(r1)
+/* 802EF544 002EB384  EC 1F 00 7C */	fnmsubs f0, f31, f1, f0
+/* 802EF548 002EB388  D0 01 00 74 */	stfs f0, 0x74(r1)
+/* 802EF54C 002EB38C  80 61 00 8C */	lwz r3, 0x8c(r1)
+/* 802EF550 002EB390  4B F9 8B 6D */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802EF554 002EB394  38 81 00 74 */	addi r4, r1, 0x74
+/* 802EF558 002EB398  4B F8 01 65 */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+/* 802EF55C 002EB39C  82 C1 00 8C */	lwz r22, 0x8c(r1)
+/* 802EF560 002EB3A0  7E C3 B3 78 */	mr r3, r22
+/* 802EF564 002EB3A4  4B F9 8C 41 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
+/* 802EF568 002EB3A8  7C 78 1B 78 */	mr r24, r3
+/* 802EF56C 002EB3AC  48 11 69 95 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 802EF570 002EB3B0  38 78 00 10 */	addi r3, r24, 0x10
+/* 802EF574 002EB3B4  2C 03 00 00 */	cmpwi r3, 0
+/* 802EF578 002EB3B8  41 82 00 18 */	beq lbl_802EF590
+/* 802EF57C 002EB3BC  93 23 00 00 */	stw r25, 0(r3)
+/* 802EF580 002EB3C0  38 18 00 90 */	addi r0, r24, 0x90
+/* 802EF584 002EB3C4  90 03 00 04 */	stw r0, 4(r3)
+/* 802EF588 002EB3C8  93 43 00 00 */	stw r26, 0(r3)
+/* 802EF58C 002EB3CC  92 C3 00 08 */	stw r22, 8(r3)
+lbl_802EF590:
+/* 802EF590 002EB3D0  90 78 00 0C */	stw r3, 0xc(r24)
+lbl_802EF594:
+/* 802EF594 002EB3D4  38 61 00 80 */	addi r3, r1, 0x80
+/* 802EF598 002EB3D8  38 80 FF FF */	li r4, -1
+/* 802EF59C 002EB3DC  4B F4 5D 6D */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 802EF5A0 002EB3E0  3B BD 00 01 */	addi r29, r29, 1
+/* 802EF5A4 002EB3E4  3B 7B 00 0C */	addi r27, r27, 0xc
+lbl_802EF5A8:
+/* 802EF5A8 002EB3E8  7C 1D F8 40 */	cmplw r29, r31
+/* 802EF5AC 002EB3EC  41 80 FE 7C */	blt lbl_802EF428
+/* 802EF5B0 002EB3F0  7F 83 E3 78 */	mr r3, r28
+/* 802EF5B4 002EB3F4  4B D4 75 AD */	bl GXGetTexObjUserData
+/* 802EF5B8 002EB3F8  2C 03 00 08 */	cmpwi r3, 8
+/* 802EF5BC 002EB3FC  3B 60 01 85 */	li r27, 0x185
+/* 802EF5C0 002EB400  40 82 00 08 */	bne lbl_802EF5C8
+/* 802EF5C4 002EB404  3B 60 00 00 */	li r27, 0
+lbl_802EF5C8:
+/* 802EF5C8 002EB408  C0 22 C5 9C */	lfs f1, $$257107-_SDA2_BASE_(r2)
+/* 802EF5CC 002EB40C  D0 21 00 2C */	stfs f1, 0x2c(r1)
+/* 802EF5D0 002EB410  C0 02 C5 90 */	lfs f0, $$257104-_SDA2_BASE_(r2)
+/* 802EF5D4 002EB414  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 802EF5D8 002EB418  D0 21 00 34 */	stfs f1, 0x34(r1)
+/* 802EF5DC 002EB41C  7F 83 E3 78 */	mr r3, r28
+/* 802EF5E0 002EB420  4B F9 8A DD */	bl location__Q43scn4step5enemy5EnemyCFv
+/* 802EF5E4 002EB424  7C 64 1B 78 */	mr r4, r3
+/* 802EF5E8 002EB428  38 61 00 38 */	addi r3, r1, 0x38
+/* 802EF5EC 002EB42C  4B F8 00 C9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 802EF5F0 002EB430  80 61 00 38 */	lwz r3, 0x38(r1)
+/* 802EF5F4 002EB434  80 01 00 3C */	lwz r0, 0x3c(r1)
+/* 802EF5F8 002EB438  90 61 00 20 */	stw r3, 0x20(r1)
+/* 802EF5FC 002EB43C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802EF600 002EB440  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 802EF604 002EB444  90 01 00 28 */	stw r0, 0x28(r1)
+/* 802EF608 002EB448  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 802EF60C 002EB44C  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 802EF610 002EB450  EC 01 00 2A */	fadds f0, f1, f0
+/* 802EF614 002EB454  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 802EF618 002EB458  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 802EF61C 002EB45C  C0 01 00 30 */	lfs f0, 0x30(r1)
+/* 802EF620 002EB460  EC 01 00 2A */	fadds f0, f1, f0
+/* 802EF624 002EB464  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 802EF628 002EB468  C0 21 00 28 */	lfs f1, 0x28(r1)
+/* 802EF62C 002EB46C  C0 01 00 34 */	lfs f0, 0x34(r1)
+/* 802EF630 002EB470  EC 01 00 2A */	fadds f0, f1, f0
+/* 802EF634 002EB474  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 802EF638 002EB478  80 61 00 20 */	lwz r3, 0x20(r1)
+/* 802EF63C 002EB47C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802EF640 002EB480  90 61 00 44 */	stw r3, 0x44(r1)
+/* 802EF644 002EB484  90 01 00 48 */	stw r0, 0x48(r1)
+/* 802EF648 002EB488  80 01 00 28 */	lwz r0, 0x28(r1)
+/* 802EF64C 002EB48C  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 802EF650 002EB490  7F 83 E3 78 */	mr r3, r28
+/* 802EF654 002EB494  4B D8 60 DD */	bl GKI_getfirst
+/* 802EF658 002EB498  4B F1 5F 71 */	bl commander__Q33scn10grandtitle9ComponentFv
+/* 802EF65C 002EB49C  38 63 00 08 */	addi r3, r3, 8
+/* 802EF660 002EB4A0  7F 64 DB 78 */	mr r4, r27
+/* 802EF664 002EB4A4  38 A1 00 44 */	addi r5, r1, 0x44
+/* 802EF668 002EB4A8  4B F8 89 0D */	bl requestP__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+/* 802EF66C 002EB4AC  38 00 01 38 */	li r0, 0x138
+/* 802EF670 002EB4B0  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 802EF674 002EB4B4  CB E1 01 30 */	lfd f31, 0x130(r1)
+/* 802EF678 002EB4B8  38 00 01 28 */	li r0, 0x128
+/* 802EF67C 002EB4BC  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 802EF680 002EB4C0  CB C1 01 20 */	lfd f30, 0x120(r1)
+/* 802EF684 002EB4C4  39 61 01 20 */	addi r11, r1, 0x120
+/* 802EF688 002EB4C8  4B D1 7C ED */	bl func_80007374
+/* 802EF68C 002EB4CC  80 01 01 44 */	lwz r0, 0x144(r1)
+/* 802EF690 002EB4D0  7C 08 03 A6 */	mtlr r0
+/* 802EF694 002EB4D4  38 21 01 40 */	addi r1, r1, 0x140
+/* 802EF698 002EB4D8  4E 80 00 20 */	blr 
+
+.global CommonBehaviorOnHitPointIsZero__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation
+CommonBehaviorOnHitPointIsZero__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation:
+/* 802EF69C 002EB4DC  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 802EF6A0 002EB4E0  7C 08 02 A6 */	mflr r0
+/* 802EF6A4 002EB4E4  90 01 00 94 */	stw r0, 0x94(r1)
+/* 802EF6A8 002EB4E8  39 61 00 90 */	addi r11, r1, 0x90
+/* 802EF6AC 002EB4EC  4B D1 7C 99 */	bl func_80007344
+/* 802EF6B0 002EB4F0  7C 7D 1B 78 */	mr r29, r3
+/* 802EF6B4 002EB4F4  7C 9E 23 78 */	mr r30, r4
+/* 802EF6B8 002EB4F8  7C BF 2B 78 */	mr r31, r5
+/* 802EF6BC 002EB4FC  4B F9 8A 59 */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 802EF6C0 002EB500  4B EC E5 99 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802EF6C4 002EB504  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 802EF6C8 002EB508  2C 00 00 12 */	cmpwi r0, 0x12
+/* 802EF6CC 002EB50C  40 82 00 18 */	bne lbl_802EF6E4
+/* 802EF6D0 002EB510  7F A3 EB 78 */	mr r3, r29
+/* 802EF6D4 002EB514  38 80 00 01 */	li r4, 1
+/* 802EF6D8 002EB518  4B F9 89 09 */	bl setPotentialCount__Q43scn4step5enemy5EnemyFUl
+/* 802EF6DC 002EB51C  38 60 00 00 */	li r3, 0
+/* 802EF6E0 002EB520  48 00 00 B4 */	b lbl_802EF794
+lbl_802EF6E4:
+/* 802EF6E4 002EB524  7F A3 EB 78 */	mr r3, r29
+/* 802EF6E8 002EB528  4B F9 8A 2D */	bl damageInfo__Q43scn4step5enemy5EnemyFv
+/* 802EF6EC 002EB52C  4B EC E5 6D */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802EF6F0 002EB530  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 802EF6F4 002EB534  2C 00 00 08 */	cmpwi r0, 8
+/* 802EF6F8 002EB538  40 82 00 2C */	bne lbl_802EF724
+/* 802EF6FC 002EB53C  7F A3 EB 78 */	mr r3, r29
+/* 802EF700 002EB540  38 80 00 01 */	li r4, 1
+/* 802EF704 002EB544  4B F9 88 DD */	bl setPotentialCount__Q43scn4step5enemy5EnemyFUl
+/* 802EF708 002EB548  7F A3 EB 78 */	mr r3, r29
+/* 802EF70C 002EB54C  4B D8 60 25 */	bl GKI_getfirst
+/* 802EF710 002EB550  4B F3 13 A9 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 802EF714 002EB554  38 80 00 03 */	li r4, 3
+/* 802EF718 002EB558  4B F7 45 21 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
+/* 802EF71C 002EB55C  38 60 00 00 */	li r3, 0
+/* 802EF720 002EB560  48 00 00 74 */	b lbl_802EF794
+lbl_802EF724:
+/* 802EF724 002EB564  7F A3 EB 78 */	mr r3, r29
+/* 802EF728 002EB568  4B F9 89 F5 */	bl objColl__Q43scn4step5enemy5EnemyFv
+/* 802EF72C 002EB56C  4B F3 D7 E5 */	bl param__Q43scn4step4boss4BossCFv
+/* 802EF730 002EB570  7C 64 1B 78 */	mr r4, r3
+/* 802EF734 002EB574  38 61 00 08 */	addi r3, r1, 8
+/* 802EF738 002EB578  4B F7 DA A9 */	bl damageInfo__Q43scn4step5chara8BodyCollCFv
+/* 802EF73C 002EB57C  38 61 00 08 */	addi r3, r1, 8
+/* 802EF740 002EB580  4B EC E5 19 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 802EF744 002EB584  80 03 00 2C */	lwz r0, 0x2c(r3)
+/* 802EF748 002EB588  2C 00 00 03 */	cmpwi r0, 3
+/* 802EF74C 002EB58C  40 82 00 18 */	bne lbl_802EF764
+/* 802EF750 002EB590  7F A3 EB 78 */	mr r3, r29
+/* 802EF754 002EB594  38 80 00 01 */	li r4, 1
+/* 802EF758 002EB598  4B F9 88 89 */	bl setPotentialCount__Q43scn4step5enemy5EnemyFUl
+/* 802EF75C 002EB59C  38 60 00 00 */	li r3, 0
+/* 802EF760 002EB5A0  48 00 00 34 */	b lbl_802EF794
+lbl_802EF764:
+/* 802EF764 002EB5A4  7F A3 EB 78 */	mr r3, r29
+/* 802EF768 002EB5A8  4B F9 84 05 */	bl dead__Q43scn4step5enemy5EnemyFv
+/* 802EF76C 002EB5AC  7F A3 EB 78 */	mr r3, r29
+/* 802EF770 002EB5B0  7F C4 F3 78 */	mr r4, r30
+/* 802EF774 002EB5B4  7F E5 FB 78 */	mr r5, r31
+/* 802EF778 002EB5B8  4B FF FB 4D */	bl Generate3Waddledee__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation
+/* 802EF77C 002EB5BC  7F A3 EB 78 */	mr r3, r29
+/* 802EF780 002EB5C0  4B D8 5F B1 */	bl GKI_getfirst
+/* 802EF784 002EB5C4  4B EF C8 D5 */	bl cinemaScope__Q33scn14challengetitle9ComponentFv
+/* 802EF788 002EB5C8  38 80 02 00 */	li r4, 0x200
+/* 802EF78C 002EB5CC  4B F8 8C 29 */	bl start__Q43scn4step4core11PermSoundSEFUl
+/* 802EF790 002EB5D0  38 60 00 01 */	li r3, 1
+lbl_802EF794:
+/* 802EF794 002EB5D4  39 61 00 90 */	addi r11, r1, 0x90
+/* 802EF798 002EB5D8  4B D1 7B F9 */	bl func_80007390
+/* 802EF79C 002EB5DC  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 802EF7A0 002EB5E0  7C 08 03 A6 */	mtlr r0
+/* 802EF7A4 002EB5E4  38 21 00 90 */	addi r1, r1, 0x90
+/* 802EF7A8 002EB5E8  4E 80 00 20 */	blr 
+
+.global create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
+create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv:
+/* 802EF7AC 002EB5EC  7C 64 1B 78 */	mr r4, r3
+/* 802EF7B0 002EB5F0  80 63 00 04 */	lwz r3, 4(r3)
+/* 802EF7B4 002EB5F4  2C 03 00 00 */	cmpwi r3, 0
+/* 802EF7B8 002EB5F8  4D 82 00 20 */	beqlr 
+/* 802EF7BC 002EB5FC  80 84 00 08 */	lwz r4, 8(r4)
+/* 802EF7C0 002EB600  4B FF E9 28 */	b __ct__Q53scn4step5enemy9waddledee12StateSmashedFPQ43scn4step5enemy5Enemy
+/* 802EF7C4 002EB604  4E 80 00 20 */	blr 
+
+.global __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv
+__dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv:
+/* 802EF7C8 002EB608  4B F3 EE D8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global SceneChangeDead__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+SceneChangeDead__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803561AC 00351FEC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803561B0 00351FF0  7C 08 02 A6 */	mflr r0
+/* 803561B4 00351FF4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803561B8 00351FF8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803561BC 00351FFC  93 C1 00 08 */	stw r30, 8(r1)
+/* 803561C0 00352000  7C 7E 1B 78 */	mr r30, r3
+/* 803561C4 00352004  4B D1 F5 6D */	bl GKI_getfirst
+/* 803561C8 00352008  4B EC AC 31 */	bl heroManager__Q33scn4step9ComponentFv
+/* 803561CC 0035200C  4B FE F9 A1 */	bl getShareData__Q43scn4step4hero7ManagerFv
+/* 803561D0 00352010  83 E3 00 04 */	lwz r31, 4(r3)
+/* 803561D4 00352014  7F C3 F3 78 */	mr r3, r30
+/* 803561D8 00352018  4B D1 F5 59 */	bl GKI_getfirst
+/* 803561DC 0035201C  4B EC AC 1D */	bl heroManager__Q33scn4step9ComponentFv
+/* 803561E0 00352020  4B FE F9 8D */	bl getShareData__Q43scn4step4hero7ManagerFv
+/* 803561E4 00352024  4B FF E9 D5 */	bl decRestPlayer__Q43scn4step4hero9ShareDataFv
+/* 803561E8 00352028  7F C3 F3 78 */	mr r3, r30
+/* 803561EC 0035202C  4B D1 F5 45 */	bl GKI_getfirst
+/* 803561F0 00352030  4B EC A5 C9 */	bl sceneChanger__Q33scn4step9ComponentFv
+/* 803561F4 00352034  7F E0 00 34 */	cntlzw r0, r31
+/* 803561F8 00352038  54 04 D9 7E */	srwi r4, r0, 5
+/* 803561FC 0035203C  4B F2 23 C1 */	bl changeDead__Q43scn4step4core12SceneChangerFb
+/* 80356200 00352040  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356204 00352044  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80356208 00352048  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035620C 0035204C  7C 08 03 A6 */	mtlr r0
+/* 80356210 00352050  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356214 00352054  4E 80 00 20 */	blr 
+
+.global IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356218 00352058  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035621C 0035205C  7C 08 02 A6 */	mflr r0
+/* 80356220 00352060  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356224 00352064  4B FE A1 29 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80356228 00352068  38 80 00 03 */	li r4, 3
+/* 8035622C 0035206C  4B E4 C0 29 */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80356230 00352070  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356234 00352074  7C 08 03 A6 */	mtlr r0
+/* 80356238 00352078  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035623C 0035207C  4E 80 00 20 */	blr 
+
+.global IsPressHDirKeySameTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsPressHDirKeySameTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356240 00352080  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356244 00352084  7C 08 02 A6 */	mflr r0
+/* 80356248 00352088  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035624C 0035208C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356250 00352090  7C 7F 1B 78 */	mr r31, r3
+/* 80356254 00352094  4B FE A0 A1 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356258 00352098  4B E2 B4 7D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035625C 0035209C  2C 03 00 00 */	cmpwi r3, 0
+/* 80356260 003520A0  41 82 00 18 */	beq lbl_80356278
+/* 80356264 003520A4  7F E3 FB 78 */	mr r3, r31
+/* 80356268 003520A8  4B FE A0 E5 */	bl hid__Q43scn4step4hero4HeroFv
+/* 8035626C 003520AC  38 80 00 02 */	li r4, 2
+/* 80356270 003520B0  4B E4 BF E5 */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80356274 003520B4  48 00 00 14 */	b lbl_80356288
+lbl_80356278:
+/* 80356278 003520B8  7F E3 FB 78 */	mr r3, r31
+/* 8035627C 003520BC  4B FE A0 D1 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80356280 003520C0  38 80 00 01 */	li r4, 1
+/* 80356284 003520C4  4B E4 BF D1 */	bl isTrigger__Q23hid6ButtonCFUl
+lbl_80356288:
+/* 80356288 003520C8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035628C 003520CC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356290 003520D0  7C 08 03 A6 */	mtlr r0
+/* 80356294 003520D4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356298 003520D8  4E 80 00 20 */	blr 
+
+.global IsTriggerHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsTriggerHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 8035629C 003520DC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803562A0 003520E0  7C 08 02 A6 */	mflr r0
+/* 803562A4 003520E4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803562A8 003520E8  4B FE A0 A5 */	bl hid__Q43scn4step4hero4HeroFv
+/* 803562AC 003520EC  38 80 00 03 */	li r4, 3
+/* 803562B0 003520F0  4B FE AB 3D */	bl isTrigger__Q43scn4step4hero3HidCFUl
+/* 803562B4 003520F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803562B8 003520F8  7C 08 03 A6 */	mtlr r0
+/* 803562BC 003520FC  38 21 00 10 */	addi r1, r1, 0x10
+/* 803562C0 00352100  4E 80 00 20 */	blr 
+
+.global ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803562C4 00352104  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803562C8 00352108  7C 08 02 A6 */	mflr r0
+/* 803562CC 0035210C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803562D0 00352110  39 61 00 20 */	addi r11, r1, 0x20
+/* 803562D4 00352114  4B CB 10 71 */	bl func_80007344
+/* 803562D8 00352118  7C 7D 1B 78 */	mr r29, r3
+/* 803562DC 0035211C  4B FE A1 29 */	bl water__Q43scn4step4hero4HeroFv
+/* 803562E0 00352120  4B E8 43 51 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 803562E4 00352124  2C 03 00 00 */	cmpwi r3, 0
+/* 803562E8 00352128  41 82 00 98 */	beq lbl_80356380
+/* 803562EC 0035212C  7F A3 EB 78 */	mr r3, r29
+/* 803562F0 00352130  4B FE A0 0D */	bl footState__Q43scn4step4hero4HeroFv
+/* 803562F4 00352134  4B E2 B3 E1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803562F8 00352138  2C 03 00 00 */	cmpwi r3, 0
+/* 803562FC 0035213C  41 82 00 44 */	beq lbl_80356340
+/* 80356300 00352140  7F A3 EB 78 */	mr r3, r29
+/* 80356304 00352144  4B FE A0 11 */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 80356308 00352148  7C 7F 1B 78 */	mr r31, r3
+/* 8035630C 0035214C  48 0A FB F5 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 80356310 00352150  3B DF 00 10 */	addi r30, r31, 0x10
+/* 80356314 00352154  2C 1E 00 00 */	cmpwi r30, 0
+/* 80356318 00352158  41 82 00 20 */	beq lbl_80356338
+/* 8035631C 0035215C  7F C3 F3 78 */	mr r3, r30
+/* 80356320 00352160  38 9F 00 90 */	addi r4, r31, 0x90
+/* 80356324 00352164  4B EE 05 45 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 80356328 00352168  3C 60 80 48 */	lis r3, __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1@ha
+/* 8035632C 0035216C  38 03 3F E8 */	addi r0, r3, __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common14StateWaterWait$$4PQ43scn4step4hero4Hero$$1@l
+/* 80356330 00352170  90 1E 00 00 */	stw r0, 0(r30)
+/* 80356334 00352174  93 BE 00 08 */	stw r29, 8(r30)
+lbl_80356338:
+/* 80356338 00352178  93 DF 00 0C */	stw r30, 0xc(r31)
+/* 8035633C 0035217C  48 00 00 A8 */	b lbl_803563E4
+lbl_80356340:
+/* 80356340 00352180  7F A3 EB 78 */	mr r3, r29
+/* 80356344 00352184  4B FE 9F D1 */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 80356348 00352188  7C 7F 1B 78 */	mr r31, r3
+/* 8035634C 0035218C  48 0A FB B5 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 80356350 00352190  3B DF 00 10 */	addi r30, r31, 0x10
+/* 80356354 00352194  2C 1E 00 00 */	cmpwi r30, 0
+/* 80356358 00352198  41 82 00 20 */	beq lbl_80356378
+/* 8035635C 0035219C  7F C3 F3 78 */	mr r3, r30
+/* 80356360 003521A0  38 9F 00 90 */	addi r4, r31, 0x90
+/* 80356364 003521A4  4B EE 05 05 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 80356368 003521A8  3C 60 80 48 */	lis r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1@ha
+/* 8035636C 003521AC  38 03 56 48 */	addi r0, r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1@l
+/* 80356370 003521B0  90 1E 00 00 */	stw r0, 0(r30)
+/* 80356374 003521B4  93 BE 00 08 */	stw r29, 8(r30)
+lbl_80356378:
+/* 80356378 003521B8  93 DF 00 0C */	stw r30, 0xc(r31)
+/* 8035637C 003521BC  48 00 00 68 */	b lbl_803563E4
+lbl_80356380:
+/* 80356380 003521C0  7F A3 EB 78 */	mr r3, r29
+/* 80356384 003521C4  4B FE 9F 79 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356388 003521C8  4B E2 B3 4D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035638C 003521CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80356390 003521D0  41 82 00 44 */	beq lbl_803563D4
+/* 80356394 003521D4  7F A3 EB 78 */	mr r3, r29
+/* 80356398 003521D8  4B FE 9F 7D */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 8035639C 003521DC  7C 7F 1B 78 */	mr r31, r3
+/* 803563A0 003521E0  48 0A FB 61 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 803563A4 003521E4  3B DF 00 10 */	addi r30, r31, 0x10
+/* 803563A8 003521E8  2C 1E 00 00 */	cmpwi r30, 0
+/* 803563AC 003521EC  41 82 00 20 */	beq lbl_803563CC
+/* 803563B0 003521F0  7F C3 F3 78 */	mr r3, r30
+/* 803563B4 003521F4  38 9F 00 90 */	addi r4, r31, 0x90
+/* 803563B8 003521F8  4B EE 04 B1 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 803563BC 003521FC  3C 60 80 48 */	lis r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1@ha
+/* 803563C0 00352200  38 03 3F F8 */	addi r0, r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1@l
+/* 803563C4 00352204  90 1E 00 00 */	stw r0, 0(r30)
+/* 803563C8 00352208  93 BE 00 08 */	stw r29, 8(r30)
+lbl_803563CC:
+/* 803563CC 0035220C  93 DF 00 0C */	stw r30, 0xc(r31)
+/* 803563D0 00352210  48 00 00 14 */	b lbl_803563E4
+lbl_803563D4:
+/* 803563D4 00352214  7F A3 EB 78 */	mr r3, r29
+/* 803563D8 00352218  4B FE 9F 3D */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 803563DC 0035221C  7F A4 EB 78 */	mr r4, r29
+/* 803563E0 00352220  48 00 00 1D */	bl setNextState$$0Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Hero_v
+lbl_803563E4:
+/* 803563E4 00352224  39 61 00 20 */	addi r11, r1, 0x20
+/* 803563E8 00352228  4B CB 0F A9 */	bl func_80007390
+/* 803563EC 0035222C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803563F0 00352230  7C 08 03 A6 */	mtlr r0
+/* 803563F4 00352234  38 21 00 20 */	addi r1, r1, 0x20
+/* 803563F8 00352238  4E 80 00 20 */	blr 
+
+.global setNextState$$0Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Hero_v
+setNextState$$0Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Hero_v:
+/* 803563FC 0035223C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80356400 00352240  7C 08 02 A6 */	mflr r0
+/* 80356404 00352244  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80356408 00352248  39 61 00 20 */	addi r11, r1, 0x20
+/* 8035640C 0035224C  4B CB 0F 39 */	bl func_80007344
+/* 80356410 00352250  7C 7D 1B 78 */	mr r29, r3
+/* 80356414 00352254  7C 9E 23 78 */	mr r30, r4
+/* 80356418 00352258  48 0A FA E9 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8035641C 0035225C  3B FD 00 10 */	addi r31, r29, 0x10
+/* 80356420 00352260  2C 1F 00 00 */	cmpwi r31, 0
+/* 80356424 00352264  41 82 00 20 */	beq lbl_80356444
+/* 80356428 00352268  7F E3 FB 78 */	mr r3, r31
+/* 8035642C 0035226C  38 9D 00 90 */	addi r4, r29, 0x90
+/* 80356430 00352270  4B EE 04 39 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 80356434 00352274  3C 60 80 48 */	lis r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1@ha
+/* 80356438 00352278  38 03 29 D0 */	addi r0, r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1@l
+/* 8035643C 0035227C  90 1F 00 00 */	stw r0, 0(r31)
+/* 80356440 00352280  93 DF 00 08 */	stw r30, 8(r31)
+lbl_80356444:
+/* 80356444 00352284  93 FD 00 0C */	stw r31, 0xc(r29)
+/* 80356448 00352288  39 61 00 20 */	addi r11, r1, 0x20
+/* 8035644C 0035228C  4B CB 0F 45 */	bl func_80007390
+/* 80356450 00352290  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80356454 00352294  7C 08 03 A6 */	mtlr r0
+/* 80356458 00352298  38 21 00 20 */	addi r1, r1, 0x20
+/* 8035645C 0035229C  4E 80 00 20 */	blr 
+
+.global MoveDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356460 003522A0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356464 003522A4  7C 08 02 A6 */	mflr r0
+/* 80356468 003522A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035646C 003522AC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356470 003522B0  7C 7F 1B 78 */	mr r31, r3
+/* 80356474 003522B4  4B FE 9E 89 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356478 003522B8  4B E2 B2 5D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035647C 003522BC  2C 03 00 00 */	cmpwi r3, 0
+/* 80356480 003522C0  41 82 00 10 */	beq lbl_80356490
+/* 80356484 003522C4  7F E3 FB 78 */	mr r3, r31
+/* 80356488 003522C8  48 00 00 75 */	bl MoveDefaultBrake__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 8035648C 003522CC  48 00 00 0C */	b lbl_80356498
+lbl_80356490:
+/* 80356490 003522D0  7F E3 FB 78 */	mr r3, r31
+/* 80356494 003522D4  48 00 00 19 */	bl MoveDefault__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_80356498:
+/* 80356498 003522D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035649C 003522DC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803564A0 003522E0  7C 08 03 A6 */	mtlr r0
+/* 803564A4 003522E4  38 21 00 10 */	addi r1, r1, 0x10
+/* 803564A8 003522E8  4E 80 00 20 */	blr 
+
+.global MoveDefault__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefault__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803564AC 003522EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803564B0 003522F0  7C 08 02 A6 */	mflr r0
+/* 803564B4 003522F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803564B8 003522F8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803564BC 003522FC  7C 7F 1B 78 */	mr r31, r3
+/* 803564C0 00352300  4B FF FD 59 */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 803564C4 00352304  2C 03 00 00 */	cmpwi r3, 0
+/* 803564C8 00352308  41 82 00 18 */	beq lbl_803564E0
+/* 803564CC 0035230C  7F E3 FB 78 */	mr r3, r31
+/* 803564D0 00352310  48 00 09 D5 */	bl UpdateMoveTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 803564D4 00352314  7F E3 FB 78 */	mr r3, r31
+/* 803564D8 00352318  48 00 02 55 */	bl MoveDefaultAccel__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 803564DC 0035231C  48 00 00 0C */	b lbl_803564E8
+lbl_803564E0:
+/* 803564E0 00352320  7F E3 FB 78 */	mr r3, r31
+/* 803564E4 00352324  48 00 00 19 */	bl MoveDefaultBrake__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_803564E8:
+/* 803564E8 00352328  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803564EC 0035232C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803564F0 00352330  7C 08 03 A6 */	mtlr r0
+/* 803564F4 00352334  38 21 00 10 */	addi r1, r1, 0x10
+/* 803564F8 00352338  4E 80 00 20 */	blr 
+
+.global MoveDefaultBrake__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultBrake__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803564FC 0035233C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356500 00352340  7C 08 02 A6 */	mflr r0
+/* 80356504 00352344  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356508 00352348  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035650C 0035234C  7C 7F 1B 78 */	mr r31, r3
+/* 80356510 00352350  4B FE 9E F5 */	bl water__Q43scn4step4hero4HeroFv
+/* 80356514 00352354  4B E8 41 1D */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356518 00352358  2C 03 00 00 */	cmpwi r3, 0
+/* 8035651C 0035235C  41 82 00 10 */	beq lbl_8035652C
+/* 80356520 00352360  7F E3 FB 78 */	mr r3, r31
+/* 80356524 00352364  48 00 00 29 */	bl MoveDefaultBrakeInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356528 00352368  48 00 00 10 */	b lbl_80356538
+lbl_8035652C:
+/* 8035652C 0035236C  7F E3 FB 78 */	mr r3, r31
+/* 80356530 00352370  38 80 00 01 */	li r4, 1
+/* 80356534 00352374  48 00 00 B1 */	bl MoveDefaultBrakeOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+lbl_80356538:
+/* 80356538 00352378  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035653C 0035237C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356540 00352380  7C 08 03 A6 */	mtlr r0
+/* 80356544 00352384  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356548 00352388  4E 80 00 20 */	blr 
+
+.global MoveDefaultBrakeInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultBrakeInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 8035654C 0035238C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80356550 00352390  7C 08 02 A6 */	mflr r0
+/* 80356554 00352394  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80356558 00352398  39 61 00 20 */	addi r11, r1, 0x20
+/* 8035655C 0035239C  4B CB 0D E9 */	bl func_80007344
+/* 80356560 003523A0  7C 7D 1B 78 */	mr r29, r3
+/* 80356564 003523A4  4B FE 9D 99 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356568 003523A8  4B E2 B1 6D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035656C 003523AC  2C 03 00 00 */	cmpwi r3, 0
+/* 80356570 003523B0  41 82 00 28 */	beq lbl_80356598
+/* 80356574 003523B4  7F A3 EB 78 */	mr r3, r29
+/* 80356578 003523B8  4B FE 9D 65 */	bl param__Q43scn4step4hero4HeroFv
+/* 8035657C 003523BC  4B FF AA E5 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356580 003523C0  7C 7E 1B 78 */	mr r30, r3
+/* 80356584 003523C4  7F A3 EB 78 */	mr r3, r29
+/* 80356588 003523C8  4B FE 9D 85 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035658C 003523CC  38 9E 00 A8 */	addi r4, r30, 0xa8
+/* 80356590 003523D0  4B E4 4F 19 */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80356594 003523D4  48 00 00 38 */	b lbl_803565CC
+lbl_80356598:
+/* 80356598 003523D8  7F A3 EB 78 */	mr r3, r29
+/* 8035659C 003523DC  4B FE 9D 41 */	bl param__Q43scn4step4hero4HeroFv
+/* 803565A0 003523E0  4B FF AA C1 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803565A4 003523E4  7C 7E 1B 78 */	mr r30, r3
+/* 803565A8 003523E8  7F A3 EB 78 */	mr r3, r29
+/* 803565AC 003523EC  4B FE 9D 31 */	bl param__Q43scn4step4hero4HeroFv
+/* 803565B0 003523F0  4B FF AA B1 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803565B4 003523F4  7C 7F 1B 78 */	mr r31, r3
+/* 803565B8 003523F8  7F A3 EB 78 */	mr r3, r29
+/* 803565BC 003523FC  4B FE 9D 51 */	bl move__Q43scn4step4hero4HeroFv
+/* 803565C0 00352400  38 9F 00 B8 */	addi r4, r31, 0xb8
+/* 803565C4 00352404  38 BE 00 D4 */	addi r5, r30, 0xd4
+/* 803565C8 00352408  4B E4 4F 61 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+lbl_803565CC:
+/* 803565CC 0035240C  39 61 00 20 */	addi r11, r1, 0x20
+/* 803565D0 00352410  4B CB 0D C1 */	bl func_80007390
+/* 803565D4 00352414  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803565D8 00352418  7C 08 03 A6 */	mtlr r0
+/* 803565DC 0035241C  38 21 00 20 */	addi r1, r1, 0x20
+/* 803565E0 00352420  4E 80 00 20 */	blr 
+
+.global MoveDefaultBrakeOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+MoveDefaultBrakeOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
+/* 803565E4 00352424  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803565E8 00352428  7C 08 02 A6 */	mflr r0
+/* 803565EC 0035242C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803565F0 00352430  39 61 00 50 */	addi r11, r1, 0x50
+/* 803565F4 00352434  4B CB 0D 51 */	bl func_80007344
+/* 803565F8 00352438  7C 7D 1B 78 */	mr r29, r3
+/* 803565FC 0035243C  7C 9F 23 78 */	mr r31, r4
+/* 80356600 00352440  4B FE 9C FD */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356604 00352444  4B E2 B0 D1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356608 00352448  2C 03 00 00 */	cmpwi r3, 0
+/* 8035660C 0035244C  41 82 00 AC */	beq lbl_803566B8
+/* 80356610 00352450  3B C0 00 00 */	li r30, 0
+/* 80356614 00352454  2C 1F 00 00 */	cmpwi r31, 0
+/* 80356618 00352458  41 82 00 18 */	beq lbl_80356630
+/* 8035661C 0035245C  7F A3 EB 78 */	mr r3, r29
+/* 80356620 00352460  48 00 08 E5 */	bl IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356624 00352464  2C 03 00 00 */	cmpwi r3, 0
+/* 80356628 00352468  41 82 00 08 */	beq lbl_80356630
+/* 8035662C 0035246C  3B C0 00 01 */	li r30, 1
+lbl_80356630:
+/* 80356630 00352470  2C 1E 00 00 */	cmpwi r30, 0
+/* 80356634 00352474  41 82 00 60 */	beq lbl_80356694
+/* 80356638 00352478  7F A3 EB 78 */	mr r3, r29
+/* 8035663C 0035247C  4B FE 9D 01 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356640 00352480  7C 64 1B 78 */	mr r4, r3
+/* 80356644 00352484  38 61 00 08 */	addi r3, r1, 8
+/* 80356648 00352488  4B FD E9 29 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 8035664C 0035248C  38 61 00 08 */	addi r3, r1, 8
+/* 80356650 00352490  48 00 00 B5 */	bl isHitWall__Q43scn4step5chara13MapCollResultCFv
+/* 80356654 00352494  2C 03 00 00 */	cmpwi r3, 0
+/* 80356658 00352498  40 82 00 3C */	bne lbl_80356694
+/* 8035665C 0035249C  7F A3 EB 78 */	mr r3, r29
+/* 80356660 003524A0  4B FE 9C DD */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356664 003524A4  4B FF 32 E9 */	bl isCollidedInvisibleLand__Q43scn4step4hero7MapCollCFv
+/* 80356668 003524A8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035666C 003524AC  40 82 00 28 */	bne lbl_80356694
+/* 80356670 003524B0  7F A3 EB 78 */	mr r3, r29
+/* 80356674 003524B4  4B FE 9C 69 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356678 003524B8  4B FF A9 E9 */	bl common__Q43scn4step4hero5ParamCFv
+/* 8035667C 003524BC  7C 7E 1B 78 */	mr r30, r3
+/* 80356680 003524C0  7F A3 EB 78 */	mr r3, r29
+/* 80356684 003524C4  4B FE 9C 89 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356688 003524C8  38 9E 00 48 */	addi r4, r30, 0x48
+/* 8035668C 003524CC  4B E4 4E 1D */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80356690 003524D0  48 00 00 5C */	b lbl_803566EC
+lbl_80356694:
+/* 80356694 003524D4  7F A3 EB 78 */	mr r3, r29
+/* 80356698 003524D8  4B FE 9C 45 */	bl param__Q43scn4step4hero4HeroFv
+/* 8035669C 003524DC  4B FF A9 C5 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803566A0 003524E0  7C 7E 1B 78 */	mr r30, r3
+/* 803566A4 003524E4  7F A3 EB 78 */	mr r3, r29
+/* 803566A8 003524E8  4B FE 9C 65 */	bl move__Q43scn4step4hero4HeroFv
+/* 803566AC 003524EC  38 9E 00 2C */	addi r4, r30, 0x2c
+/* 803566B0 003524F0  4B E4 4D F9 */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 803566B4 003524F4  48 00 00 38 */	b lbl_803566EC
+lbl_803566B8:
+/* 803566B8 003524F8  7F A3 EB 78 */	mr r3, r29
+/* 803566BC 003524FC  4B FE 9C 21 */	bl param__Q43scn4step4hero4HeroFv
+/* 803566C0 00352500  4B FF A9 A1 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803566C4 00352504  7C 7E 1B 78 */	mr r30, r3
+/* 803566C8 00352508  7F A3 EB 78 */	mr r3, r29
+/* 803566CC 0035250C  4B FE 9C 11 */	bl param__Q43scn4step4hero4HeroFv
+/* 803566D0 00352510  4B FF A9 91 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803566D4 00352514  7C 7F 1B 78 */	mr r31, r3
+/* 803566D8 00352518  7F A3 EB 78 */	mr r3, r29
+/* 803566DC 0035251C  4B FE 9C 31 */	bl move__Q43scn4step4hero4HeroFv
+/* 803566E0 00352520  38 9F 00 74 */	addi r4, r31, 0x74
+/* 803566E4 00352524  38 BE 00 90 */	addi r5, r30, 0x90
+/* 803566E8 00352528  4B E4 4E 41 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+lbl_803566EC:
+/* 803566EC 0035252C  39 61 00 50 */	addi r11, r1, 0x50
+/* 803566F0 00352530  4B CB 0C A1 */	bl func_80007390
+/* 803566F4 00352534  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 803566F8 00352538  7C 08 03 A6 */	mtlr r0
+/* 803566FC 0035253C  38 21 00 50 */	addi r1, r1, 0x50
+/* 80356700 00352540  4E 80 00 20 */	blr 
+
+.global isHitWall__Q43scn4step5chara13MapCollResultCFv
+isHitWall__Q43scn4step5chara13MapCollResultCFv:
+/* 80356704 00352544  38 80 00 00 */	li r4, 0
+/* 80356708 00352548  88 03 00 02 */	lbz r0, 2(r3)
+/* 8035670C 0035254C  2C 00 00 00 */	cmpwi r0, 0
+/* 80356710 00352550  40 82 00 10 */	bne lbl_80356720
+/* 80356714 00352554  88 03 00 03 */	lbz r0, 3(r3)
+/* 80356718 00352558  2C 00 00 00 */	cmpwi r0, 0
+/* 8035671C 0035255C  41 82 00 08 */	beq lbl_80356724
+lbl_80356720:
+/* 80356720 00352560  38 80 00 01 */	li r4, 1
+lbl_80356724:
+/* 80356724 00352564  7C 83 23 78 */	mr r3, r4
+/* 80356728 00352568  4E 80 00 20 */	blr 
+
+.global MoveDefaultAccel__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultAccel__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 8035672C 0035256C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356730 00352570  7C 08 02 A6 */	mflr r0
+/* 80356734 00352574  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356738 00352578  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035673C 0035257C  7C 7F 1B 78 */	mr r31, r3
+/* 80356740 00352580  4B FE 9C C5 */	bl water__Q43scn4step4hero4HeroFv
+/* 80356744 00352584  4B E8 3E ED */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356748 00352588  2C 03 00 00 */	cmpwi r3, 0
+/* 8035674C 0035258C  41 82 00 10 */	beq lbl_8035675C
+/* 80356750 00352590  7F E3 FB 78 */	mr r3, r31
+/* 80356754 00352594  48 00 00 29 */	bl MoveDefaultAccelInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356758 00352598  48 00 00 10 */	b lbl_80356768
+lbl_8035675C:
+/* 8035675C 0035259C  7F E3 FB 78 */	mr r3, r31
+/* 80356760 003525A0  38 80 00 01 */	li r4, 1
+/* 80356764 003525A4  48 00 00 D9 */	bl MoveDefaultAccelOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+lbl_80356768:
+/* 80356768 003525A8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035676C 003525AC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356770 003525B0  7C 08 03 A6 */	mtlr r0
+/* 80356774 003525B4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356778 003525B8  4E 80 00 20 */	blr 
+
+.global MoveDefaultAccelInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultAccelInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 8035677C 003525BC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80356780 003525C0  7C 08 02 A6 */	mflr r0
+/* 80356784 003525C4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80356788 003525C8  39 61 00 20 */	addi r11, r1, 0x20
+/* 8035678C 003525CC  4B CB 0B B5 */	bl func_80007340
+/* 80356790 003525D0  7C 7C 1B 78 */	mr r28, r3
+/* 80356794 003525D4  4B FE 9B 69 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356798 003525D8  4B E2 AF 3D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035679C 003525DC  2C 03 00 00 */	cmpwi r3, 0
+/* 803567A0 003525E0  41 82 00 3C */	beq lbl_803567DC
+/* 803567A4 003525E4  7F 83 E3 78 */	mr r3, r28
+/* 803567A8 003525E8  4B FE 9B 35 */	bl param__Q43scn4step4hero4HeroFv
+/* 803567AC 003525EC  4B FF A8 B5 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803567B0 003525F0  7C 7E 1B 78 */	mr r30, r3
+/* 803567B4 003525F4  7F 83 E3 78 */	mr r3, r28
+/* 803567B8 003525F8  4B FE 9B 3D */	bl target__Q43scn4step4hero4HeroFv
+/* 803567BC 003525FC  4B E2 AF 19 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803567C0 00352600  7C 7D 1B 78 */	mr r29, r3
+/* 803567C4 00352604  7F 83 E3 78 */	mr r3, r28
+/* 803567C8 00352608  4B FE 9B 45 */	bl move__Q43scn4step4hero4HeroFv
+/* 803567CC 0035260C  7F A4 EB 78 */	mr r4, r29
+/* 803567D0 00352610  38 BE 00 AC */	addi r5, r30, 0xac
+/* 803567D4 00352614  4B E4 4C A1 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
+/* 803567D8 00352618  48 00 00 4C */	b lbl_80356824
+lbl_803567DC:
+/* 803567DC 0035261C  7F 83 E3 78 */	mr r3, r28
+/* 803567E0 00352620  4B FE 9A FD */	bl param__Q43scn4step4hero4HeroFv
+/* 803567E4 00352624  4B FF A8 7D */	bl common__Q43scn4step4hero5ParamCFv
+/* 803567E8 00352628  7C 7D 1B 78 */	mr r29, r3
+/* 803567EC 0035262C  7F 83 E3 78 */	mr r3, r28
+/* 803567F0 00352630  4B FE 9A ED */	bl param__Q43scn4step4hero4HeroFv
+/* 803567F4 00352634  4B FF A8 6D */	bl common__Q43scn4step4hero5ParamCFv
+/* 803567F8 00352638  7C 7E 1B 78 */	mr r30, r3
+/* 803567FC 0035263C  7F 83 E3 78 */	mr r3, r28
+/* 80356800 00352640  4B FE 9A F5 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356804 00352644  4B E2 AE D1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356808 00352648  7C 7F 1B 78 */	mr r31, r3
+/* 8035680C 0035264C  7F 83 E3 78 */	mr r3, r28
+/* 80356810 00352650  4B FE 9A FD */	bl move__Q43scn4step4hero4HeroFv
+/* 80356814 00352654  7F E4 FB 78 */	mr r4, r31
+/* 80356818 00352658  38 BE 00 BC */	addi r5, r30, 0xbc
+/* 8035681C 0035265C  38 DD 00 D4 */	addi r6, r29, 0xd4
+/* 80356820 00352660  4B E4 4C BD */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
+lbl_80356824:
+/* 80356824 00352664  39 61 00 20 */	addi r11, r1, 0x20
+/* 80356828 00352668  4B CB 0B 65 */	bl func_8000738C
+/* 8035682C 0035266C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80356830 00352670  7C 08 03 A6 */	mtlr r0
+/* 80356834 00352674  38 21 00 20 */	addi r1, r1, 0x20
+/* 80356838 00352678  4E 80 00 20 */	blr 
+
+.global MoveDefaultAccelOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+MoveDefaultAccelOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
+/* 8035683C 0035267C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80356840 00352680  7C 08 02 A6 */	mflr r0
+/* 80356844 00352684  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80356848 00352688  39 61 00 50 */	addi r11, r1, 0x50
+/* 8035684C 0035268C  4B CB 0A F5 */	bl func_80007340
+/* 80356850 00352690  7C 7C 1B 78 */	mr r28, r3
+/* 80356854 00352694  7C 9E 23 78 */	mr r30, r4
+/* 80356858 00352698  4B FE 9A A5 */	bl footState__Q43scn4step4hero4HeroFv
+/* 8035685C 0035269C  4B E2 AE 79 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356860 003526A0  2C 03 00 00 */	cmpwi r3, 0
+/* 80356864 003526A4  41 82 01 24 */	beq lbl_80356988
+/* 80356868 003526A8  3B A0 00 00 */	li r29, 0
+/* 8035686C 003526AC  2C 1E 00 00 */	cmpwi r30, 0
+/* 80356870 003526B0  41 82 00 18 */	beq lbl_80356888
+/* 80356874 003526B4  7F 83 E3 78 */	mr r3, r28
+/* 80356878 003526B8  48 00 06 8D */	bl IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 8035687C 003526BC  2C 03 00 00 */	cmpwi r3, 0
+/* 80356880 003526C0  41 82 00 08 */	beq lbl_80356888
+/* 80356884 003526C4  3B A0 00 01 */	li r29, 1
+lbl_80356888:
+/* 80356888 003526C8  2C 1D 00 00 */	cmpwi r29, 0
+/* 8035688C 003526CC  41 82 00 9C */	beq lbl_80356928
+/* 80356890 003526D0  7F 83 E3 78 */	mr r3, r28
+/* 80356894 003526D4  4B FE 9A A9 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356898 003526D8  7C 64 1B 78 */	mr r4, r3
+/* 8035689C 003526DC  38 61 00 08 */	addi r3, r1, 8
+/* 803568A0 003526E0  4B FD E6 D1 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 803568A4 003526E4  38 61 00 08 */	addi r3, r1, 8
+/* 803568A8 003526E8  4B FF FE 5D */	bl isHitWall__Q43scn4step5chara13MapCollResultCFv
+/* 803568AC 003526EC  2C 03 00 00 */	cmpwi r3, 0
+/* 803568B0 003526F0  40 82 00 78 */	bne lbl_80356928
+/* 803568B4 003526F4  7F 83 E3 78 */	mr r3, r28
+/* 803568B8 003526F8  4B FE 9A 85 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 803568BC 003526FC  4B FF 30 91 */	bl isCollidedInvisibleLand__Q43scn4step4hero7MapCollCFv
+/* 803568C0 00352700  2C 03 00 00 */	cmpwi r3, 0
+/* 803568C4 00352704  40 82 00 64 */	bne lbl_80356928
+/* 803568C8 00352708  7F 83 E3 78 */	mr r3, r28
+/* 803568CC 0035270C  4B FE 9A B1 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 803568D0 00352710  4B E7 CD F5 */	bl isValid__Q26nururi6NururiCFv
+/* 803568D4 00352714  2C 03 00 00 */	cmpwi r3, 0
+/* 803568D8 00352718  41 82 00 18 */	beq lbl_803568F0
+/* 803568DC 0035271C  7F 83 E3 78 */	mr r3, r28
+/* 803568E0 00352720  4B FE 99 FD */	bl param__Q43scn4step4hero4HeroFv
+/* 803568E4 00352724  4B FF A7 7D */	bl common__Q43scn4step4hero5ParamCFv
+/* 803568E8 00352728  3B C3 00 58 */	addi r30, r3, 0x58
+/* 803568EC 0035272C  48 00 00 14 */	b lbl_80356900
+lbl_803568F0:
+/* 803568F0 00352730  7F 83 E3 78 */	mr r3, r28
+/* 803568F4 00352734  4B FE 99 E9 */	bl param__Q43scn4step4hero4HeroFv
+/* 803568F8 00352738  4B FF A7 69 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803568FC 0035273C  3B C3 00 4C */	addi r30, r3, 0x4c
+lbl_80356900:
+/* 80356900 00352740  7F 83 E3 78 */	mr r3, r28
+/* 80356904 00352744  4B FE 99 F1 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356908 00352748  4B E2 AD CD */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035690C 0035274C  7C 7D 1B 78 */	mr r29, r3
+/* 80356910 00352750  7F 83 E3 78 */	mr r3, r28
+/* 80356914 00352754  4B FE 99 F9 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356918 00352758  7F A4 EB 78 */	mr r4, r29
+/* 8035691C 0035275C  7F C5 F3 78 */	mr r5, r30
+/* 80356920 00352760  4B E4 4B 55 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
+/* 80356924 00352764  48 00 00 D4 */	b lbl_803569F8
+lbl_80356928:
+/* 80356928 00352768  7F 83 E3 78 */	mr r3, r28
+/* 8035692C 0035276C  4B FE 9A 51 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80356930 00352770  4B E7 CD 95 */	bl isValid__Q26nururi6NururiCFv
+/* 80356934 00352774  2C 03 00 00 */	cmpwi r3, 0
+/* 80356938 00352778  41 82 00 18 */	beq lbl_80356950
+/* 8035693C 0035277C  7F 83 E3 78 */	mr r3, r28
+/* 80356940 00352780  4B FE 99 9D */	bl param__Q43scn4step4hero4HeroFv
+/* 80356944 00352784  4B FF A7 1D */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356948 00352788  3B C3 00 3C */	addi r30, r3, 0x3c
+/* 8035694C 0035278C  48 00 00 14 */	b lbl_80356960
+lbl_80356950:
+/* 80356950 00352790  7F 83 E3 78 */	mr r3, r28
+/* 80356954 00352794  4B FE 99 89 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356958 00352798  4B FF A7 09 */	bl common__Q43scn4step4hero5ParamCFv
+/* 8035695C 0035279C  3B C3 00 30 */	addi r30, r3, 0x30
+lbl_80356960:
+/* 80356960 003527A0  7F 83 E3 78 */	mr r3, r28
+/* 80356964 003527A4  4B FE 99 91 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356968 003527A8  4B E2 AD 6D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035696C 003527AC  7C 7D 1B 78 */	mr r29, r3
+/* 80356970 003527B0  7F 83 E3 78 */	mr r3, r28
+/* 80356974 003527B4  4B FE 99 99 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356978 003527B8  7F A4 EB 78 */	mr r4, r29
+/* 8035697C 003527BC  7F C5 F3 78 */	mr r5, r30
+/* 80356980 003527C0  4B E4 4A F5 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
+/* 80356984 003527C4  48 00 00 74 */	b lbl_803569F8
+lbl_80356988:
+/* 80356988 003527C8  7F 83 E3 78 */	mr r3, r28
+/* 8035698C 003527CC  4B FE 99 F1 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80356990 003527D0  4B E7 CD 35 */	bl isValid__Q26nururi6NururiCFv
+/* 80356994 003527D4  2C 03 00 00 */	cmpwi r3, 0
+/* 80356998 003527D8  41 82 00 18 */	beq lbl_803569B0
+/* 8035699C 003527DC  7F 83 E3 78 */	mr r3, r28
+/* 803569A0 003527E0  4B FE 99 3D */	bl param__Q43scn4step4hero4HeroFv
+/* 803569A4 003527E4  4B FF A6 BD */	bl common__Q43scn4step4hero5ParamCFv
+/* 803569A8 003527E8  3B A3 00 84 */	addi r29, r3, 0x84
+/* 803569AC 003527EC  48 00 00 14 */	b lbl_803569C0
+lbl_803569B0:
+/* 803569B0 003527F0  7F 83 E3 78 */	mr r3, r28
+/* 803569B4 003527F4  4B FE 99 29 */	bl param__Q43scn4step4hero4HeroFv
+/* 803569B8 003527F8  4B FF A6 A9 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803569BC 003527FC  3B A3 00 78 */	addi r29, r3, 0x78
+lbl_803569C0:
+/* 803569C0 00352800  7F 83 E3 78 */	mr r3, r28
+/* 803569C4 00352804  4B FE 99 19 */	bl param__Q43scn4step4hero4HeroFv
+/* 803569C8 00352808  4B FF A6 99 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803569CC 0035280C  7C 7E 1B 78 */	mr r30, r3
+/* 803569D0 00352810  7F 83 E3 78 */	mr r3, r28
+/* 803569D4 00352814  4B FE 99 21 */	bl target__Q43scn4step4hero4HeroFv
+/* 803569D8 00352818  4B E2 AC FD */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803569DC 0035281C  7C 7F 1B 78 */	mr r31, r3
+/* 803569E0 00352820  7F 83 E3 78 */	mr r3, r28
+/* 803569E4 00352824  4B FE 99 29 */	bl move__Q43scn4step4hero4HeroFv
+/* 803569E8 00352828  7F E4 FB 78 */	mr r4, r31
+/* 803569EC 0035282C  7F A5 EB 78 */	mr r5, r29
+/* 803569F0 00352830  38 DE 00 90 */	addi r6, r30, 0x90
+/* 803569F4 00352834  4B E4 4A E9 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
+lbl_803569F8:
+/* 803569F8 00352838  39 61 00 50 */	addi r11, r1, 0x50
+/* 803569FC 0035283C  4B CB 09 91 */	bl func_8000738C
+/* 80356A00 00352840  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80356A04 00352844  7C 08 03 A6 */	mtlr r0
+/* 80356A08 00352848  38 21 00 50 */	addi r1, r1, 0x50
+/* 80356A0C 0035284C  4E 80 00 20 */	blr 
+
+.global MoveDefaultActionNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultActionNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356A10 00352850  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356A14 00352854  7C 08 02 A6 */	mflr r0
+/* 80356A18 00352858  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356A1C 0035285C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356A20 00352860  7C 7F 1B 78 */	mr r31, r3
+/* 80356A24 00352864  4B FE 98 D9 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356A28 00352868  4B E2 AC AD */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356A2C 0035286C  2C 03 00 00 */	cmpwi r3, 0
+/* 80356A30 00352870  41 82 00 10 */	beq lbl_80356A40
+/* 80356A34 00352874  7F E3 FB 78 */	mr r3, r31
+/* 80356A38 00352878  48 00 01 BD */	bl MoveDefaultBrakeNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356A3C 0035287C  48 00 00 0C */	b lbl_80356A48
+lbl_80356A40:
+/* 80356A40 00352880  7F E3 FB 78 */	mr r3, r31
+/* 80356A44 00352884  48 00 00 19 */	bl MoveDefaultNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_80356A48:
+/* 80356A48 00352888  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356A4C 0035288C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356A50 00352890  7C 08 03 A6 */	mtlr r0
+/* 80356A54 00352894  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356A58 00352898  4E 80 00 20 */	blr 
+
+.global MoveDefaultNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356A5C 0035289C  94 21 FF 20 */	stwu r1, -0xe0(r1)
+/* 80356A60 003528A0  7C 08 02 A6 */	mflr r0
+/* 80356A64 003528A4  90 01 00 E4 */	stw r0, 0xe4(r1)
+/* 80356A68 003528A8  93 E1 00 DC */	stw r31, 0xdc(r1)
+/* 80356A6C 003528AC  7C 7F 1B 78 */	mr r31, r3
+/* 80356A70 003528B0  4B FF F7 A9 */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356A74 003528B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80356A78 003528B8  41 82 01 60 */	beq lbl_80356BD8
+/* 80356A7C 003528BC  7F E3 FB 78 */	mr r3, r31
+/* 80356A80 003528C0  4B FE 98 7D */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356A84 003528C4  4B E4 34 35 */	bl isAir__Q24gobj9FootStateCFv
+/* 80356A88 003528C8  2C 03 00 00 */	cmpwi r3, 0
+/* 80356A8C 003528CC  41 82 01 38 */	beq lbl_80356BC4
+/* 80356A90 003528D0  7F E3 FB 78 */	mr r3, r31
+/* 80356A94 003528D4  4B FE 98 79 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356A98 003528D8  7C 64 1B 78 */	mr r4, r3
+/* 80356A9C 003528DC  38 61 00 14 */	addi r3, r1, 0x14
+/* 80356AA0 003528E0  4B E4 48 BD */	bl velocity__Q24gobj4MoveCFv
+/* 80356AA4 003528E4  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 80356AA8 003528E8  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80356AAC 003528EC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80356AB0 003528F0  40 81 00 38 */	ble lbl_80356AE8
+/* 80356AB4 003528F4  7F E3 FB 78 */	mr r3, r31
+/* 80356AB8 003528F8  4B FE 98 85 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356ABC 003528FC  7C 64 1B 78 */	mr r4, r3
+/* 80356AC0 00352900  38 61 00 A4 */	addi r3, r1, 0xa4
+/* 80356AC4 00352904  4B FD E4 AD */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356AC8 00352908  38 61 00 A4 */	addi r3, r1, 0xa4
+/* 80356ACC 0035290C  4B E8 3C 29 */	bl isDecideAnimEnd__Q25pause11ButtonPanelCFv
+/* 80356AD0 00352910  2C 03 00 00 */	cmpwi r3, 0
+/* 80356AD4 00352914  41 82 00 14 */	beq lbl_80356AE8
+/* 80356AD8 00352918  7F E3 FB 78 */	mr r3, r31
+/* 80356ADC 0035291C  4B FE 98 31 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356AE0 00352920  C0 22 CF 40 */	lfs f1, $$264296-_SDA2_BASE_(r2)
+/* 80356AE4 00352924  4B DD 3C 1D */	bl setSpeakerVol__Q210homebutton10ControllerFf
+lbl_80356AE8:
+/* 80356AE8 00352928  7F E3 FB 78 */	mr r3, r31
+/* 80356AEC 0035292C  4B FE 98 21 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356AF0 00352930  7C 64 1B 78 */	mr r4, r3
+/* 80356AF4 00352934  38 61 00 08 */	addi r3, r1, 8
+/* 80356AF8 00352938  4B E4 48 65 */	bl velocity__Q24gobj4MoveCFv
+/* 80356AFC 0035293C  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80356B00 00352940  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80356B04 00352944  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80356B08 00352948  40 80 00 38 */	bge lbl_80356B40
+/* 80356B0C 0035294C  7F E3 FB 78 */	mr r3, r31
+/* 80356B10 00352950  4B FE 98 2D */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356B14 00352954  7C 64 1B 78 */	mr r4, r3
+/* 80356B18 00352958  38 61 00 78 */	addi r3, r1, 0x78
+/* 80356B1C 0035295C  4B FD E4 55 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356B20 00352960  38 61 00 78 */	addi r3, r1, 0x78
+/* 80356B24 00352964  4B E8 3B 0D */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356B28 00352968  2C 03 00 00 */	cmpwi r3, 0
+/* 80356B2C 0035296C  41 82 00 14 */	beq lbl_80356B40
+/* 80356B30 00352970  7F E3 FB 78 */	mr r3, r31
+/* 80356B34 00352974  4B FE 97 D9 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356B38 00352978  C0 22 CF 40 */	lfs f1, $$264296-_SDA2_BASE_(r2)
+/* 80356B3C 0035297C  4B DD 3B C5 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+lbl_80356B40:
+/* 80356B40 00352980  7F E3 FB 78 */	mr r3, r31
+/* 80356B44 00352984  4B FE 98 09 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80356B48 00352988  38 80 00 02 */	li r4, 2
+/* 80356B4C 0035298C  4B E4 B7 09 */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80356B50 00352990  2C 03 00 00 */	cmpwi r3, 0
+/* 80356B54 00352994  41 82 00 28 */	beq lbl_80356B7C
+/* 80356B58 00352998  7F E3 FB 78 */	mr r3, r31
+/* 80356B5C 0035299C  4B FE 97 E1 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356B60 003529A0  7C 64 1B 78 */	mr r4, r3
+/* 80356B64 003529A4  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80356B68 003529A8  4B FD E4 09 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356B6C 003529AC  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80356B70 003529B0  4B E8 3B 85 */	bl isDecideAnimEnd__Q25pause11ButtonPanelCFv
+/* 80356B74 003529B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80356B78 003529B8  40 82 00 40 */	bne lbl_80356BB8
+lbl_80356B7C:
+/* 80356B7C 003529BC  7F E3 FB 78 */	mr r3, r31
+/* 80356B80 003529C0  4B FE 97 CD */	bl hid__Q43scn4step4hero4HeroFv
+/* 80356B84 003529C4  38 80 00 01 */	li r4, 1
+/* 80356B88 003529C8  4B E4 B6 CD */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80356B8C 003529CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80356B90 003529D0  41 82 00 34 */	beq lbl_80356BC4
+/* 80356B94 003529D4  7F E3 FB 78 */	mr r3, r31
+/* 80356B98 003529D8  4B FE 97 A5 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356B9C 003529DC  7C 64 1B 78 */	mr r4, r3
+/* 80356BA0 003529E0  38 61 00 20 */	addi r3, r1, 0x20
+/* 80356BA4 003529E4  4B FD E3 CD */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356BA8 003529E8  38 61 00 20 */	addi r3, r1, 0x20
+/* 80356BAC 003529EC  4B E8 3A 85 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356BB0 003529F0  2C 03 00 00 */	cmpwi r3, 0
+/* 80356BB4 003529F4  41 82 00 10 */	beq lbl_80356BC4
+lbl_80356BB8:
+/* 80356BB8 003529F8  7F E3 FB 78 */	mr r3, r31
+/* 80356BBC 003529FC  48 00 00 39 */	bl MoveDefaultBrakeNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356BC0 00352A00  48 00 00 20 */	b lbl_80356BE0
+lbl_80356BC4:
+/* 80356BC4 00352A04  7F E3 FB 78 */	mr r3, r31
+/* 80356BC8 00352A08  48 00 02 DD */	bl UpdateMoveTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356BCC 00352A0C  7F E3 FB 78 */	mr r3, r31
+/* 80356BD0 00352A10  48 00 00 75 */	bl MoveDefaultAccelNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356BD4 00352A14  48 00 00 0C */	b lbl_80356BE0
+lbl_80356BD8:
+/* 80356BD8 00352A18  7F E3 FB 78 */	mr r3, r31
+/* 80356BDC 00352A1C  48 00 00 19 */	bl MoveDefaultBrakeNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_80356BE0:
+/* 80356BE0 00352A20  83 E1 00 DC */	lwz r31, 0xdc(r1)
+/* 80356BE4 00352A24  80 01 00 E4 */	lwz r0, 0xe4(r1)
+/* 80356BE8 00352A28  7C 08 03 A6 */	mtlr r0
+/* 80356BEC 00352A2C  38 21 00 E0 */	addi r1, r1, 0xe0
+/* 80356BF0 00352A30  4E 80 00 20 */	blr 
+
+.global MoveDefaultBrakeNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultBrakeNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356BF4 00352A34  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356BF8 00352A38  7C 08 02 A6 */	mflr r0
+/* 80356BFC 00352A3C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356C00 00352A40  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356C04 00352A44  7C 7F 1B 78 */	mr r31, r3
+/* 80356C08 00352A48  4B FE 97 FD */	bl water__Q43scn4step4hero4HeroFv
+/* 80356C0C 00352A4C  4B E8 3A 25 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356C10 00352A50  2C 03 00 00 */	cmpwi r3, 0
+/* 80356C14 00352A54  41 82 00 10 */	beq lbl_80356C24
+/* 80356C18 00352A58  7F E3 FB 78 */	mr r3, r31
+/* 80356C1C 00352A5C  4B FF F9 31 */	bl MoveDefaultBrakeInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356C20 00352A60  48 00 00 10 */	b lbl_80356C30
+lbl_80356C24:
+/* 80356C24 00352A64  7F E3 FB 78 */	mr r3, r31
+/* 80356C28 00352A68  38 80 00 00 */	li r4, 0
+/* 80356C2C 00352A6C  4B FF F9 B9 */	bl MoveDefaultBrakeOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+lbl_80356C30:
+/* 80356C30 00352A70  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356C34 00352A74  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356C38 00352A78  7C 08 03 A6 */	mtlr r0
+/* 80356C3C 00352A7C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356C40 00352A80  4E 80 00 20 */	blr 
+
+.global MoveDefaultAccelNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveDefaultAccelNoOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356C44 00352A84  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356C48 00352A88  7C 08 02 A6 */	mflr r0
+/* 80356C4C 00352A8C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356C50 00352A90  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356C54 00352A94  7C 7F 1B 78 */	mr r31, r3
+/* 80356C58 00352A98  4B FE 97 AD */	bl water__Q43scn4step4hero4HeroFv
+/* 80356C5C 00352A9C  4B E8 39 D5 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80356C60 00352AA0  2C 03 00 00 */	cmpwi r3, 0
+/* 80356C64 00352AA4  41 82 00 10 */	beq lbl_80356C74
+/* 80356C68 00352AA8  7F E3 FB 78 */	mr r3, r31
+/* 80356C6C 00352AAC  4B FF FB 11 */	bl MoveDefaultAccelInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356C70 00352AB0  48 00 00 10 */	b lbl_80356C80
+lbl_80356C74:
+/* 80356C74 00352AB4  7F E3 FB 78 */	mr r3, r31
+/* 80356C78 00352AB8  38 80 00 00 */	li r4, 0
+/* 80356C7C 00352ABC  4B FF FB C1 */	bl MoveDefaultAccelOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+lbl_80356C80:
+/* 80356C80 00352AC0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356C84 00352AC4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356C88 00352AC8  7C 08 03 A6 */	mtlr r0
+/* 80356C8C 00352ACC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356C90 00352AD0  4E 80 00 20 */	blr 
+
+.global MoveGuard__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveGuard__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356C94 00352AD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356C98 00352AD8  7C 08 02 A6 */	mflr r0
+/* 80356C9C 00352ADC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356CA0 00352AE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356CA4 00352AE4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80356CA8 00352AE8  7C 7E 1B 78 */	mr r30, r3
+/* 80356CAC 00352AEC  48 00 02 59 */	bl IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356CB0 00352AF0  2C 03 00 00 */	cmpwi r3, 0
+/* 80356CB4 00352AF4  41 82 00 18 */	beq lbl_80356CCC
+/* 80356CB8 00352AF8  7F C3 F3 78 */	mr r3, r30
+/* 80356CBC 00352AFC  4B FE 96 21 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356CC0 00352B00  4B FF A3 A1 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356CC4 00352B04  3B E3 00 68 */	addi r31, r3, 0x68
+/* 80356CC8 00352B08  48 00 00 14 */	b lbl_80356CDC
+lbl_80356CCC:
+/* 80356CCC 00352B0C  7F C3 F3 78 */	mr r3, r30
+/* 80356CD0 00352B10  4B FE 96 0D */	bl param__Q43scn4step4hero4HeroFv
+/* 80356CD4 00352B14  4B FF A3 8D */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356CD8 00352B18  3B E3 00 64 */	addi r31, r3, 0x64
+lbl_80356CDC:
+/* 80356CDC 00352B1C  7F C3 F3 78 */	mr r3, r30
+/* 80356CE0 00352B20  4B FE 96 2D */	bl move__Q43scn4step4hero4HeroFv
+/* 80356CE4 00352B24  7F E4 FB 78 */	mr r4, r31
+/* 80356CE8 00352B28  4B E4 47 C1 */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80356CEC 00352B2C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356CF0 00352B30  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80356CF4 00352B34  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356CF8 00352B38  7C 08 03 A6 */	mtlr r0
+/* 80356CFC 00352B3C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356D00 00352B40  4E 80 00 20 */	blr 
+
+.global MoveGuardDamage__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MoveGuardDamage__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356D04 00352B44  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80356D08 00352B48  7C 08 02 A6 */	mflr r0
+/* 80356D0C 00352B4C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80356D10 00352B50  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80356D14 00352B54  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80356D18 00352B58  7C 7E 1B 78 */	mr r30, r3
+/* 80356D1C 00352B5C  3C 80 80 35 */	lis r4, IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero@ha
+/* 80356D20 00352B60  38 04 6F 04 */	addi r0, r4, IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero@l
+/* 80356D24 00352B64  2C 00 00 00 */	cmpwi r0, 0
+/* 80356D28 00352B68  41 82 00 14 */	beq lbl_80356D3C
+/* 80356D2C 00352B6C  4B FE 95 B1 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356D30 00352B70  4B FF A3 31 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356D34 00352B74  80 03 00 70 */	lwz r0, 0x70(r3)
+/* 80356D38 00352B78  48 00 00 10 */	b lbl_80356D48
+lbl_80356D3C:
+/* 80356D3C 00352B7C  4B FE 95 A1 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356D40 00352B80  4B FF A3 21 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356D44 00352B84  80 03 00 6C */	lwz r0, 0x6c(r3)
+lbl_80356D48:
+/* 80356D48 00352B88  90 01 00 08 */	stw r0, 8(r1)
+/* 80356D4C 00352B8C  7F C3 F3 78 */	mr r3, r30
+/* 80356D50 00352B90  4B FE 95 AD */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356D54 00352B94  4B E2 A9 81 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356D58 00352B98  2C 03 00 00 */	cmpwi r3, 0
+/* 80356D5C 00352B9C  41 82 00 18 */	beq lbl_80356D74
+/* 80356D60 00352BA0  7F C3 F3 78 */	mr r3, r30
+/* 80356D64 00352BA4  4B FE 95 A9 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356D68 00352BA8  38 81 00 08 */	addi r4, r1, 8
+/* 80356D6C 00352BAC  4B E4 47 3D */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80356D70 00352BB0  48 00 00 28 */	b lbl_80356D98
+lbl_80356D74:
+/* 80356D74 00352BB4  7F C3 F3 78 */	mr r3, r30
+/* 80356D78 00352BB8  4B FE 95 65 */	bl param__Q43scn4step4hero4HeroFv
+/* 80356D7C 00352BBC  4B FF A2 E5 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80356D80 00352BC0  7C 7F 1B 78 */	mr r31, r3
+/* 80356D84 00352BC4  7F C3 F3 78 */	mr r3, r30
+/* 80356D88 00352BC8  4B FE 95 85 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356D8C 00352BCC  38 81 00 08 */	addi r4, r1, 8
+/* 80356D90 00352BD0  38 BF 00 90 */	addi r5, r31, 0x90
+/* 80356D94 00352BD4  4B E4 47 95 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+lbl_80356D98:
+/* 80356D98 00352BD8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80356D9C 00352BDC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80356DA0 00352BE0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80356DA4 00352BE4  7C 08 03 A6 */	mtlr r0
+/* 80356DA8 00352BE8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80356DAC 00352BEC  4E 80 00 20 */	blr 
+
+.global MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall:
+/* 80356DB0 00352BF0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80356DB4 00352BF4  7C 08 02 A6 */	mflr r0
+/* 80356DB8 00352BF8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80356DBC 00352BFC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80356DC0 00352C00  4B CB 05 81 */	bl func_80007340
+/* 80356DC4 00352C04  7C 7C 1B 78 */	mr r28, r3
+/* 80356DC8 00352C08  7C 9D 23 78 */	mr r29, r4
+/* 80356DCC 00352C0C  7C BF 2B 78 */	mr r31, r5
+/* 80356DD0 00352C10  7C DE 33 78 */	mr r30, r6
+/* 80356DD4 00352C14  4B FF F4 45 */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356DD8 00352C18  2C 03 00 00 */	cmpwi r3, 0
+/* 80356DDC 00352C1C  41 82 00 74 */	beq lbl_80356E50
+/* 80356DE0 00352C20  7F 83 E3 78 */	mr r3, r28
+/* 80356DE4 00352C24  48 00 00 C1 */	bl UpdateMoveTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356DE8 00352C28  7F 83 E3 78 */	mr r3, r28
+/* 80356DEC 00352C2C  4B FE 95 11 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356DF0 00352C30  4B E2 A8 E5 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356DF4 00352C34  2C 03 00 00 */	cmpwi r3, 0
+/* 80356DF8 00352C38  41 82 00 2C */	beq lbl_80356E24
+/* 80356DFC 00352C3C  7F 83 E3 78 */	mr r3, r28
+/* 80356E00 00352C40  4B FE 94 F5 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356E04 00352C44  4B E2 A8 D1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356E08 00352C48  7C 7F 1B 78 */	mr r31, r3
+/* 80356E0C 00352C4C  7F 83 E3 78 */	mr r3, r28
+/* 80356E10 00352C50  4B FE 94 FD */	bl move__Q43scn4step4hero4HeroFv
+/* 80356E14 00352C54  7F E4 FB 78 */	mr r4, r31
+/* 80356E18 00352C58  7F A5 EB 78 */	mr r5, r29
+/* 80356E1C 00352C5C  4B E4 46 59 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
+/* 80356E20 00352C60  48 00 00 6C */	b lbl_80356E8C
+lbl_80356E24:
+/* 80356E24 00352C64  7F 83 E3 78 */	mr r3, r28
+/* 80356E28 00352C68  4B FE 94 CD */	bl target__Q43scn4step4hero4HeroFv
+/* 80356E2C 00352C6C  4B E2 A8 A9 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356E30 00352C70  7C 7F 1B 78 */	mr r31, r3
+/* 80356E34 00352C74  7F 83 E3 78 */	mr r3, r28
+/* 80356E38 00352C78  4B FE 94 D5 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356E3C 00352C7C  7F E4 FB 78 */	mr r4, r31
+/* 80356E40 00352C80  7F A5 EB 78 */	mr r5, r29
+/* 80356E44 00352C84  7F C6 F3 78 */	mr r6, r30
+/* 80356E48 00352C88  4B E4 46 95 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
+/* 80356E4C 00352C8C  48 00 00 40 */	b lbl_80356E8C
+lbl_80356E50:
+/* 80356E50 00352C90  7F 83 E3 78 */	mr r3, r28
+/* 80356E54 00352C94  4B FE 94 A9 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356E58 00352C98  4B E2 A8 7D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80356E5C 00352C9C  2C 03 00 00 */	cmpwi r3, 0
+/* 80356E60 00352CA0  41 82 00 18 */	beq lbl_80356E78
+/* 80356E64 00352CA4  7F 83 E3 78 */	mr r3, r28
+/* 80356E68 00352CA8  4B FE 94 A5 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356E6C 00352CAC  7F E4 FB 78 */	mr r4, r31
+/* 80356E70 00352CB0  4B E4 46 39 */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80356E74 00352CB4  48 00 00 18 */	b lbl_80356E8C
+lbl_80356E78:
+/* 80356E78 00352CB8  7F 83 E3 78 */	mr r3, r28
+/* 80356E7C 00352CBC  4B FE 94 91 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356E80 00352CC0  7F E4 FB 78 */	mr r4, r31
+/* 80356E84 00352CC4  7F C5 F3 78 */	mr r5, r30
+/* 80356E88 00352CC8  4B E4 46 A1 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
+lbl_80356E8C:
+/* 80356E8C 00352CCC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80356E90 00352CD0  4B CB 04 FD */	bl func_8000738C
+/* 80356E94 00352CD4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80356E98 00352CD8  7C 08 03 A6 */	mtlr r0
+/* 80356E9C 00352CDC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80356EA0 00352CE0  4E 80 00 20 */	blr 
+
+.global UpdateMoveTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+UpdateMoveTarget__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356EA4 00352CE4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80356EA8 00352CE8  7C 08 02 A6 */	mflr r0
+/* 80356EAC 00352CEC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80356EB0 00352CF0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80356EB4 00352CF4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80356EB8 00352CF8  7C 7E 1B 78 */	mr r30, r3
+/* 80356EBC 00352CFC  4B FF F3 5D */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80356EC0 00352D00  2C 03 00 00 */	cmpwi r3, 0
+/* 80356EC4 00352D04  41 82 00 28 */	beq lbl_80356EEC
+/* 80356EC8 00352D08  7F C3 F3 78 */	mr r3, r30
+/* 80356ECC 00352D0C  4B FE 94 81 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80356ED0 00352D10  38 80 00 02 */	li r4, 2
+/* 80356ED4 00352D14  4B E4 B3 81 */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80356ED8 00352D18  7C 7F 1B 78 */	mr r31, r3
+/* 80356EDC 00352D1C  7F C3 F3 78 */	mr r3, r30
+/* 80356EE0 00352D20  4B FE 94 15 */	bl target__Q43scn4step4hero4HeroFv
+/* 80356EE4 00352D24  7F E4 FB 78 */	mr r4, r31
+/* 80356EE8 00352D28  4B E4 17 99 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_80356EEC:
+/* 80356EEC 00352D2C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80356EF0 00352D30  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80356EF4 00352D34  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80356EF8 00352D38  7C 08 03 A6 */	mtlr r0
+/* 80356EFC 00352D3C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80356F00 00352D40  4E 80 00 20 */	blr 
+
+.global IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsOnIce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356F04 00352D44  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80356F08 00352D48  7C 08 02 A6 */	mflr r0
+/* 80356F0C 00352D4C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80356F10 00352D50  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 80356F14 00352D54  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 80356F18 00352D58  7C 7E 1B 78 */	mr r30, r3
+/* 80356F1C 00352D5C  3B E0 00 01 */	li r31, 1
+/* 80356F20 00352D60  4B FE 94 1D */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356F24 00352D64  7C 64 1B 78 */	mr r4, r3
+/* 80356F28 00352D68  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80356F2C 00352D6C  4B FD E0 45 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356F30 00352D70  88 01 00 24 */	lbz r0, 0x24(r1)
+/* 80356F34 00352D74  2C 00 00 00 */	cmpwi r0, 0
+/* 80356F38 00352D78  40 82 00 44 */	bne lbl_80356F7C
+/* 80356F3C 00352D7C  7F C3 F3 78 */	mr r3, r30
+/* 80356F40 00352D80  4B FE 93 C5 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80356F44 00352D84  7C 64 1B 78 */	mr r4, r3
+/* 80356F48 00352D88  38 61 00 10 */	addi r3, r1, 0x10
+/* 80356F4C 00352D8C  4B F1 87 69 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80356F50 00352D90  38 61 00 08 */	addi r3, r1, 8
+/* 80356F54 00352D94  38 81 00 10 */	addi r4, r1, 0x10
+/* 80356F58 00352D98  4B E6 BC 75 */	bl getXY__Q33hel4math7Vector3CFv
+/* 80356F5C 00352D9C  7F C3 F3 78 */	mr r3, r30
+/* 80356F60 00352DA0  4B D1 E7 D1 */	bl GKI_getfirst
+/* 80356F64 00352DA4  4B E9 50 1D */	bl titleInfo__Q33scn14challengetitle9ComponentFv
+/* 80356F68 00352DA8  38 81 00 08 */	addi r4, r1, 8
+/* 80356F6C 00352DAC  4B F1 D5 E9 */	bl isInFrozenArea__Q43scn4step4core13AreaOperationCFRCQ33hel4math7Vector2
+/* 80356F70 00352DB0  2C 03 00 00 */	cmpwi r3, 0
+/* 80356F74 00352DB4  40 82 00 08 */	bne lbl_80356F7C
+/* 80356F78 00352DB8  3B E0 00 00 */	li r31, 0
+lbl_80356F7C:
+/* 80356F7C 00352DBC  7F E3 FB 78 */	mr r3, r31
+/* 80356F80 00352DC0  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 80356F84 00352DC4  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 80356F88 00352DC8  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80356F8C 00352DCC  7C 08 03 A6 */	mtlr r0
+/* 80356F90 00352DD0  38 21 00 50 */	addi r1, r1, 0x50
+/* 80356F94 00352DD4  4E 80 00 20 */	blr 
+
+.global MapCollReactDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+MapCollReactDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80356F98 00352DD8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80356F9C 00352DDC  7C 08 02 A6 */	mflr r0
+/* 80356FA0 00352DE0  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80356FA4 00352DE4  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 80356FA8 00352DE8  7C 7F 1B 78 */	mr r31, r3
+/* 80356FAC 00352DEC  4B FE 93 91 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80356FB0 00352DF0  7C 64 1B 78 */	mr r4, r3
+/* 80356FB4 00352DF4  38 61 00 14 */	addi r3, r1, 0x14
+/* 80356FB8 00352DF8  4B FD DF B9 */	bl result__Q43scn4step4hero7MapCollCFv
+/* 80356FBC 00352DFC  88 01 00 14 */	lbz r0, 0x14(r1)
+/* 80356FC0 00352E00  2C 00 00 00 */	cmpwi r0, 0
+/* 80356FC4 00352E04  41 82 00 48 */	beq lbl_8035700C
+/* 80356FC8 00352E08  7F E3 FB 78 */	mr r3, r31
+/* 80356FCC 00352E0C  4B FE 93 41 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356FD0 00352E10  7C 64 1B 78 */	mr r4, r3
+/* 80356FD4 00352E14  38 61 00 08 */	addi r3, r1, 8
+/* 80356FD8 00352E18  4B E4 43 85 */	bl velocity__Q24gobj4MoveCFv
+/* 80356FDC 00352E1C  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 80356FE0 00352E20  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80356FE4 00352E24  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80356FE8 00352E28  4C 40 13 82 */	cror 2, 0, 2
+/* 80356FEC 00352E2C  40 82 00 20 */	bne lbl_8035700C
+/* 80356FF0 00352E30  7F E3 FB 78 */	mr r3, r31
+/* 80356FF4 00352E34  4B FE 93 19 */	bl move__Q43scn4step4hero4HeroFv
+/* 80356FF8 00352E38  4B E4 43 B1 */	bl resetSpeedV__Q24gobj4MoveFv
+/* 80356FFC 00352E3C  7F E3 FB 78 */	mr r3, r31
+/* 80357000 00352E40  4B FE 92 FD */	bl footState__Q43scn4step4hero4HeroFv
+/* 80357004 00352E44  4B E4 2E C5 */	bl setGround__Q24gobj9FootStateFv
+/* 80357008 00352E48  48 00 00 10 */	b lbl_80357018
+lbl_8035700C:
+/* 8035700C 00352E4C  7F E3 FB 78 */	mr r3, r31
+/* 80357010 00352E50  4B FE 92 ED */	bl footState__Q43scn4step4hero4HeroFv
+/* 80357014 00352E54  4B E3 05 25 */	bl __ct__Q24file8DNOptionFv
+lbl_80357018:
+/* 80357018 00352E58  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 8035701C 00352E5C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80357020 00352E60  7C 08 03 A6 */	mtlr r0
+/* 80357024 00352E64  38 21 00 50 */	addi r1, r1, 0x50
+/* 80357028 00352E68  4E 80 00 20 */	blr 
+
+.global AirActionInitSpeedV__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+AirActionInitSpeedV__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 8035702C 00352E6C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80357030 00352E70  7C 08 02 A6 */	mflr r0
+/* 80357034 00352E74  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80357038 00352E78  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 8035703C 00352E7C  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 80357040 00352E80  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80357044 00352E84  7C 7F 1B 78 */	mr r31, r3
+/* 80357048 00352E88  4B FE 92 B5 */	bl footState__Q43scn4step4hero4HeroFv
+/* 8035704C 00352E8C  4B E2 A6 89 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80357050 00352E90  2C 03 00 00 */	cmpwi r3, 0
+/* 80357054 00352E94  40 82 00 70 */	bne lbl_803570C4
+/* 80357058 00352E98  7F E3 FB 78 */	mr r3, r31
+/* 8035705C 00352E9C  4B FE 93 A9 */	bl water__Q43scn4step4hero4HeroFv
+/* 80357060 00352EA0  4B E8 35 D1 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80357064 00352EA4  2C 03 00 00 */	cmpwi r3, 0
+/* 80357068 00352EA8  40 82 00 5C */	bne lbl_803570C4
+/* 8035706C 00352EAC  7F E3 FB 78 */	mr r3, r31
+/* 80357070 00352EB0  4B FE 92 9D */	bl move__Q43scn4step4hero4HeroFv
+/* 80357074 00352EB4  7C 64 1B 78 */	mr r4, r3
+/* 80357078 00352EB8  38 61 00 14 */	addi r3, r1, 0x14
+/* 8035707C 00352EBC  4B E4 42 E1 */	bl velocity__Q24gobj4MoveCFv
+/* 80357080 00352EC0  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 80357084 00352EC4  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80357088 00352EC8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8035708C 00352ECC  4C 41 13 82 */	cror 2, 1, 2
+/* 80357090 00352ED0  40 82 00 34 */	bne lbl_803570C4
+/* 80357094 00352ED4  7F E3 FB 78 */	mr r3, r31
+/* 80357098 00352ED8  4B FE 92 75 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035709C 00352EDC  7C 64 1B 78 */	mr r4, r3
+/* 803570A0 00352EE0  38 61 00 08 */	addi r3, r1, 8
+/* 803570A4 00352EE4  4B E4 42 B9 */	bl velocity__Q24gobj4MoveCFv
+/* 803570A8 00352EE8  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 803570AC 00352EEC  C0 02 CF 44 */	lfs f0, $$264442-_SDA2_BASE_(r2)
+/* 803570B0 00352EF0  EF E0 00 72 */	fmuls f31, f0, f1
+/* 803570B4 00352EF4  7F E3 FB 78 */	mr r3, r31
+/* 803570B8 00352EF8  4B FE 92 55 */	bl move__Q43scn4step4hero4HeroFv
+/* 803570BC 00352EFC  FC 20 F8 90 */	fmr f1, f31
+/* 803570C0 00352F00  4B E4 42 C1 */	bl setSpeedV__Q24gobj4MoveFf
+lbl_803570C4:
+/* 803570C4 00352F04  38 00 00 38 */	li r0, 0x38
+/* 803570C8 00352F08  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803570CC 00352F0C  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 803570D0 00352F10  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803570D4 00352F14  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 803570D8 00352F18  7C 08 03 A6 */	mtlr r0
+/* 803570DC 00352F1C  38 21 00 40 */	addi r1, r1, 0x40
+/* 803570E0 00352F20  4E 80 00 20 */	blr 
+
+.global AirAttackInitSpeedV__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+AirAttackInitSpeedV__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803570E4 00352F24  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803570E8 00352F28  7C 08 02 A6 */	mflr r0
+/* 803570EC 00352F2C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803570F0 00352F30  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 803570F4 00352F34  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 803570F8 00352F38  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 803570FC 00352F3C  93 C1 00 38 */	stw r30, 0x38(r1)
+/* 80357100 00352F40  7C 7E 1B 78 */	mr r30, r3
+/* 80357104 00352F44  4B FE 91 F9 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80357108 00352F48  4B E2 A5 CD */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035710C 00352F4C  2C 03 00 00 */	cmpwi r3, 0
+/* 80357110 00352F50  40 82 01 18 */	bne lbl_80357228
+/* 80357114 00352F54  7F C3 F3 78 */	mr r3, r30
+/* 80357118 00352F58  4B FE 92 ED */	bl water__Q43scn4step4hero4HeroFv
+/* 8035711C 00352F5C  4B E8 35 15 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80357120 00352F60  2C 03 00 00 */	cmpwi r3, 0
+/* 80357124 00352F64  40 82 01 04 */	bne lbl_80357228
+/* 80357128 00352F68  3B E0 00 01 */	li r31, 1
+/* 8035712C 00352F6C  7F C3 F3 78 */	mr r3, r30
+/* 80357130 00352F70  4B FE 92 4D */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80357134 00352F74  80 03 00 58 */	lwz r0, 0x58(r3)
+/* 80357138 00352F78  2C 00 00 00 */	cmpwi r0, 0
+/* 8035713C 00352F7C  40 82 00 7C */	bne lbl_803571B8
+/* 80357140 00352F80  7F C3 F3 78 */	mr r3, r30
+/* 80357144 00352F84  4B FE 92 39 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80357148 00352F88  80 03 00 40 */	lwz r0, 0x40(r3)
+/* 8035714C 00352F8C  2C 00 00 00 */	cmpwi r0, 0
+/* 80357150 00352F90  41 82 00 34 */	beq lbl_80357184
+/* 80357154 00352F94  7F C3 F3 78 */	mr r3, r30
+/* 80357158 00352F98  4B FE 91 B5 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035715C 00352F9C  7C 64 1B 78 */	mr r4, r3
+/* 80357160 00352FA0  38 61 00 2C */	addi r3, r1, 0x2c
+/* 80357164 00352FA4  4B E4 41 F9 */	bl velocity__Q24gobj4MoveCFv
+/* 80357168 00352FA8  C0 21 00 30 */	lfs f1, 0x30(r1)
+/* 8035716C 00352FAC  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80357170 00352FB0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80357174 00352FB4  4C 41 13 82 */	cror 2, 1, 2
+/* 80357178 00352FB8  7C 00 00 26 */	mfcr r0
+/* 8035717C 00352FBC  54 00 1F FE */	rlwinm r0, r0, 3, 0x1f, 0x1f
+/* 80357180 00352FC0  48 00 00 2C */	b lbl_803571AC
+lbl_80357184:
+/* 80357184 00352FC4  7F C3 F3 78 */	mr r3, r30
+/* 80357188 00352FC8  4B FE 91 85 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035718C 00352FCC  7C 64 1B 78 */	mr r4, r3
+/* 80357190 00352FD0  38 61 00 20 */	addi r3, r1, 0x20
+/* 80357194 00352FD4  4B E4 41 C9 */	bl velocity__Q24gobj4MoveCFv
+/* 80357198 00352FD8  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 8035719C 00352FDC  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 803571A0 00352FE0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803571A4 00352FE4  7C 00 00 26 */	mfcr r0
+/* 803571A8 00352FE8  54 00 17 FE */	rlwinm r0, r0, 2, 0x1f, 0x1f
+lbl_803571AC:
+/* 803571AC 00352FEC  2C 00 00 00 */	cmpwi r0, 0
+/* 803571B0 00352FF0  40 82 00 08 */	bne lbl_803571B8
+/* 803571B4 00352FF4  3B E0 00 00 */	li r31, 0
+lbl_803571B8:
+/* 803571B8 00352FF8  2C 1F 00 00 */	cmpwi r31, 0
+/* 803571BC 00352FFC  41 82 00 6C */	beq lbl_80357228
+/* 803571C0 00353000  7F C3 F3 78 */	mr r3, r30
+/* 803571C4 00353004  4B FE 91 49 */	bl move__Q43scn4step4hero4HeroFv
+/* 803571C8 00353008  7C 64 1B 78 */	mr r4, r3
+/* 803571CC 0035300C  38 61 00 14 */	addi r3, r1, 0x14
+/* 803571D0 00353010  4B E4 41 8D */	bl velocity__Q24gobj4MoveCFv
+/* 803571D4 00353014  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 803571D8 00353018  C0 02 CF 48 */	lfs f0, $$264465-_SDA2_BASE_(r2)
+/* 803571DC 0035301C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803571E0 00353020  40 81 00 38 */	ble lbl_80357218
+/* 803571E4 00353024  7F C3 F3 78 */	mr r3, r30
+/* 803571E8 00353028  4B FE 91 25 */	bl move__Q43scn4step4hero4HeroFv
+/* 803571EC 0035302C  7C 64 1B 78 */	mr r4, r3
+/* 803571F0 00353030  38 61 00 08 */	addi r3, r1, 8
+/* 803571F4 00353034  4B E4 41 69 */	bl velocity__Q24gobj4MoveCFv
+/* 803571F8 00353038  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 803571FC 0035303C  C0 02 CF 44 */	lfs f0, $$264442-_SDA2_BASE_(r2)
+/* 80357200 00353040  EF E0 00 72 */	fmuls f31, f0, f1
+/* 80357204 00353044  7F C3 F3 78 */	mr r3, r30
+/* 80357208 00353048  4B FE 91 05 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035720C 0035304C  FC 20 F8 90 */	fmr f1, f31
+/* 80357210 00353050  4B E4 41 71 */	bl setSpeedV__Q24gobj4MoveFf
+/* 80357214 00353054  48 00 00 14 */	b lbl_80357228
+lbl_80357218:
+/* 80357218 00353058  7F C3 F3 78 */	mr r3, r30
+/* 8035721C 0035305C  4B FE 90 F1 */	bl move__Q43scn4step4hero4HeroFv
+/* 80357220 00353060  C0 22 CF 4C */	lfs f1, $$264466-_SDA2_BASE_(r2)
+/* 80357224 00353064  4B E4 41 5D */	bl setSpeedV__Q24gobj4MoveFf
+lbl_80357228:
+/* 80357228 00353068  38 00 00 48 */	li r0, 0x48
+/* 8035722C 0035306C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80357230 00353070  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 80357234 00353074  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80357238 00353078  83 C1 00 38 */	lwz r30, 0x38(r1)
+/* 8035723C 0035307C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80357240 00353080  7C 08 03 A6 */	mtlr r0
+/* 80357244 00353084  38 21 00 50 */	addi r1, r1, 0x50
+/* 80357248 00353088  4E 80 00 20 */	blr 
+
+.global CreateAirBall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+CreateAirBall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
+/* 8035724C 0035308C  94 21 FF 30 */	stwu r1, -0xd0(r1)
+/* 80357250 00353090  7C 08 02 A6 */	mflr r0
+/* 80357254 00353094  90 01 00 D4 */	stw r0, 0xd4(r1)
+/* 80357258 00353098  DB E1 00 C0 */	stfd f31, 0xc0(r1)
+/* 8035725C 0035309C  F3 E1 00 C8 */	psq_st f31, 200(r1), 0, qr0
+/* 80357260 003530A0  DB C1 00 B0 */	stfd f30, 0xb0(r1)
+/* 80357264 003530A4  F3 C1 00 B8 */	psq_st f30, 184(r1), 0, qr0
+/* 80357268 003530A8  DB A1 00 A0 */	stfd f29, 0xa0(r1)
+/* 8035726C 003530AC  F3 A1 00 A8 */	psq_st f29, 168(r1), 0, qr0
+/* 80357270 003530B0  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 80357274 003530B4  4B CB 00 D1 */	bl func_80007344
+/* 80357278 003530B8  7C 7D 1B 78 */	mr r29, r3
+/* 8035727C 003530BC  7C 9E 23 78 */	mr r30, r4
+/* 80357280 003530C0  4B FE 91 85 */	bl water__Q43scn4step4hero4HeroFv
+/* 80357284 003530C4  4B E8 33 AD */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80357288 003530C8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035728C 003530CC  41 82 00 44 */	beq lbl_803572D0
+/* 80357290 003530D0  7F A3 EB 78 */	mr r3, r29
+/* 80357294 003530D4  4B FE 90 89 */	bl model__Q43scn4step4hero4HeroFv
+/* 80357298 003530D8  4B FF 69 15 */	bl isRightDir__Q43scn4step4hero5ModelCFv
+/* 8035729C 003530DC  2C 03 00 00 */	cmpwi r3, 0
+/* 803572A0 003530E0  41 82 00 0C */	beq lbl_803572AC
+/* 803572A4 003530E4  C0 22 CF 50 */	lfs f1, $$264495-_SDA2_BASE_(r2)
+/* 803572A8 003530E8  48 00 00 08 */	b lbl_803572B0
+lbl_803572AC:
+/* 803572AC 003530EC  C0 22 CF 54 */	lfs f1, $$264496-_SDA2_BASE_(r2)
+lbl_803572B0:
+/* 803572B0 003530F0  38 61 00 10 */	addi r3, r1, 0x10
+/* 803572B4 003530F4  C0 42 CF 40 */	lfs f2, $$264296-_SDA2_BASE_(r2)
+/* 803572B8 003530F8  4B E4 80 F1 */	bl set__Q33hel4math7Vector2Fff
+/* 803572BC 003530FC  7C 64 1B 78 */	mr r4, r3
+/* 803572C0 00353100  7F A3 EB 78 */	mr r3, r29
+/* 803572C4 00353104  7F C5 F3 78 */	mr r5, r30
+/* 803572C8 00353108  48 00 01 9D */	bl CreateWaterPistol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2b
+/* 803572CC 0035310C  48 00 01 5C */	b lbl_80357428
+lbl_803572D0:
+/* 803572D0 00353110  7F A3 EB 78 */	mr r3, r29
+/* 803572D4 00353114  4B FE A5 D1 */	bl Param__Q43scn4step4hero10IndiviUtilFRCQ43scn4step4hero4Hero
+/* 803572D8 00353118  C3 E3 00 64 */	lfs f31, 0x64(r3)
+/* 803572DC 0035311C  C3 C3 00 68 */	lfs f30, 0x68(r3)
+/* 803572E0 00353120  C3 A3 00 6C */	lfs f29, 0x6c(r3)
+/* 803572E4 00353124  7F A3 EB 78 */	mr r3, r29
+/* 803572E8 00353128  4B FE 90 1D */	bl location__Q43scn4step4hero4HeroCFv
+/* 803572EC 0035312C  7C 64 1B 78 */	mr r4, r3
+/* 803572F0 00353130  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803572F4 00353134  4B F1 83 C1 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803572F8 00353138  38 61 00 28 */	addi r3, r1, 0x28
+/* 803572FC 0035313C  38 81 00 3C */	addi r4, r1, 0x3c
+/* 80357300 00353140  4B E6 B8 CD */	bl getXY__Q33hel4math7Vector3CFv
+/* 80357304 00353144  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80357308 00353148  EC 00 F0 2A */	fadds f0, f0, f30
+/* 8035730C 0035314C  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 80357310 00353150  38 61 00 20 */	addi r3, r1, 0x20
+/* 80357314 00353154  38 81 00 28 */	addi r4, r1, 0x28
+/* 80357318 00353158  4B DF 46 51 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035731C 0035315C  7F A3 EB 78 */	mr r3, r29
+/* 80357320 00353160  4B FE 8F FD */	bl model__Q43scn4step4hero4HeroFv
+/* 80357324 00353164  4B FF 68 89 */	bl isRightDir__Q43scn4step4hero5ModelCFv
+/* 80357328 00353168  2C 03 00 00 */	cmpwi r3, 0
+/* 8035732C 0035316C  41 82 00 0C */	beq lbl_80357338
+/* 80357330 00353170  C0 22 CF 50 */	lfs f1, $$264495-_SDA2_BASE_(r2)
+/* 80357334 00353174  48 00 00 08 */	b lbl_8035733C
+lbl_80357338:
+/* 80357338 00353178  C0 22 CF 54 */	lfs f1, $$264496-_SDA2_BASE_(r2)
+lbl_8035733C:
+/* 8035733C 0035317C  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 80357340 00353180  EC 1F 00 7A */	fmadds f0, f31, f1, f0
+/* 80357344 00353184  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 80357348 00353188  7F A3 EB 78 */	mr r3, r29
+/* 8035734C 0035318C  4B FE 8F D1 */	bl model__Q43scn4step4hero4HeroFv
+/* 80357350 00353190  4B FF 68 5D */	bl isRightDir__Q43scn4step4hero5ModelCFv
+/* 80357354 00353194  2C 03 00 00 */	cmpwi r3, 0
+/* 80357358 00353198  41 82 00 0C */	beq lbl_80357364
+/* 8035735C 0035319C  C0 02 CF 50 */	lfs f0, $$264495-_SDA2_BASE_(r2)
+/* 80357360 003531A0  48 00 00 08 */	b lbl_80357368
+lbl_80357364:
+/* 80357364 003531A4  C0 02 CF 54 */	lfs f0, $$264496-_SDA2_BASE_(r2)
+lbl_80357368:
+/* 80357368 003531A8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8035736C 003531AC  EC 3D 00 32 */	fmuls f1, f29, f0
+/* 80357370 003531B0  C0 42 CF 40 */	lfs f2, $$264296-_SDA2_BASE_(r2)
+/* 80357374 003531B4  4B E4 80 35 */	bl set__Q33hel4math7Vector2Fff
+/* 80357378 003531B8  7F A3 EB 78 */	mr r3, r29
+/* 8035737C 003531BC  4B FE 8F E1 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80357380 003531C0  38 63 00 08 */	addi r3, r3, 8
+/* 80357384 003531C4  4B E6 68 D5 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 80357388 003531C8  7C 7F 1B 78 */	mr r31, r3
+/* 8035738C 003531CC  7F A3 EB 78 */	mr r3, r29
+/* 80357390 003531D0  4B FE 8F 75 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80357394 003531D4  7C 64 1B 78 */	mr r4, r3
+/* 80357398 003531D8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8035739C 003531DC  4B F1 83 19 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803573A0 003531E0  38 61 00 08 */	addi r3, r1, 8
+/* 803573A4 003531E4  38 81 00 30 */	addi r4, r1, 0x30
+/* 803573A8 003531E8  4B E6 B8 25 */	bl getXY__Q33hel4math7Vector3CFv
+/* 803573AC 003531EC  38 61 00 58 */	addi r3, r1, 0x58
+/* 803573B0 003531F0  38 80 00 03 */	li r4, 3
+/* 803573B4 003531F4  38 A0 00 00 */	li r5, 0
+/* 803573B8 003531F8  38 C0 00 01 */	li r6, 1
+/* 803573BC 003531FC  38 E1 00 20 */	addi r7, r1, 0x20
+/* 803573C0 00353200  39 01 00 08 */	addi r8, r1, 8
+/* 803573C4 00353204  39 21 00 18 */	addi r9, r1, 0x18
+/* 803573C8 00353208  7F EA FB 78 */	mr r10, r31
+/* 803573CC 0035320C  48 07 ED C5 */	bl __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2RQ25ocoll5Owner
+/* 803573D0 00353210  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803573D4 00353214  38 81 00 28 */	addi r4, r1, 0x28
+/* 803573D8 00353218  4B DF 45 91 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 803573DC 0035321C  7F A3 EB 78 */	mr r3, r29
+/* 803573E0 00353220  4B D1 E3 51 */	bl GKI_getfirst
+/* 803573E4 00353224  4B EC 99 E1 */	bl weaponManager__Q33scn4step9ComponentFv
+/* 803573E8 00353228  7C 64 1B 78 */	mr r4, r3
+/* 803573EC 0035322C  38 61 00 48 */	addi r3, r1, 0x48
+/* 803573F0 00353230  38 A1 00 58 */	addi r5, r1, 0x58
+/* 803573F4 00353234  48 07 F6 91 */	bl request__Q43scn4step6weapon7ManagerFRCQ43scn4step6weapon4Desc
+/* 803573F8 00353238  38 61 00 48 */	addi r3, r1, 0x48
+/* 803573FC 0035323C  4B E3 12 CD */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80357400 00353240  2C 03 00 00 */	cmpwi r3, 0
+/* 80357404 00353244  41 82 00 18 */	beq lbl_8035741C
+/* 80357408 00353248  2C 1E 00 00 */	cmpwi r30, 0
+/* 8035740C 0035324C  41 82 00 10 */	beq lbl_8035741C
+/* 80357410 00353250  80 61 00 54 */	lwz r3, 0x54(r1)
+/* 80357414 00353254  48 08 3D 25 */	bl objStop__Q43scn4step6weapon6WeaponFv
+/* 80357418 00353258  4B ED C4 49 */	bl setSpecial__Q43scn4step4boss7ObjStopFv
+lbl_8035741C:
+/* 8035741C 0035325C  38 61 00 48 */	addi r3, r1, 0x48
+/* 80357420 00353260  38 80 FF FF */	li r4, -1
+/* 80357424 00353264  4B EE 2C 8D */	bl __dt__Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1Fv
+lbl_80357428:
+/* 80357428 00353268  38 00 00 C8 */	li r0, 0xc8
+/* 8035742C 0035326C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80357430 00353270  CB E1 00 C0 */	lfd f31, 0xc0(r1)
+/* 80357434 00353274  38 00 00 B8 */	li r0, 0xb8
+/* 80357438 00353278  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8035743C 0035327C  CB C1 00 B0 */	lfd f30, 0xb0(r1)
+/* 80357440 00353280  38 00 00 A8 */	li r0, 0xa8
+/* 80357444 00353284  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 80357448 00353288  CB A1 00 A0 */	lfd f29, 0xa0(r1)
+/* 8035744C 0035328C  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 80357450 00353290  4B CA FF 41 */	bl func_80007390
+/* 80357454 00353294  80 01 00 D4 */	lwz r0, 0xd4(r1)
+/* 80357458 00353298  7C 08 03 A6 */	mtlr r0
+/* 8035745C 0035329C  38 21 00 D0 */	addi r1, r1, 0xd0
+/* 80357460 003532A0  4E 80 00 20 */	blr 
+
+.global CreateWaterPistol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2b
+CreateWaterPistol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2b:
+/* 80357464 003532A4  94 21 FF 10 */	stwu r1, -0xf0(r1)
+/* 80357468 003532A8  7C 08 02 A6 */	mflr r0
+/* 8035746C 003532AC  90 01 00 F4 */	stw r0, 0xf4(r1)
+/* 80357470 003532B0  DB E1 00 E0 */	stfd f31, 0xe0(r1)
+/* 80357474 003532B4  F3 E1 00 E8 */	psq_st f31, 232(r1), 0, qr0
+/* 80357478 003532B8  DB C1 00 D0 */	stfd f30, 0xd0(r1)
+/* 8035747C 003532BC  F3 C1 00 D8 */	psq_st f30, 216(r1), 0, qr0
+/* 80357480 003532C0  DB A1 00 C0 */	stfd f29, 0xc0(r1)
+/* 80357484 003532C4  F3 A1 00 C8 */	psq_st f29, 200(r1), 0, qr0
+/* 80357488 003532C8  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 8035748C 003532CC  4B CA FE A9 */	bl func_80007334
+/* 80357490 003532D0  7C 79 1B 78 */	mr r25, r3
+/* 80357494 003532D4  7C 9B 23 78 */	mr r27, r4
+/* 80357498 003532D8  7C BA 2B 78 */	mr r26, r5
+/* 8035749C 003532DC  4B FE 8E D9 */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 803574A0 003532E0  4B DC 99 D1 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 803574A4 003532E4  38 03 FF F4 */	addi r0, r3, -12
+/* 803574A8 003532E8  7C 00 00 34 */	cntlzw r0, r0
+/* 803574AC 003532EC  54 1D D9 7E */	srwi r29, r0, 5
+/* 803574B0 003532F0  7F 23 CB 78 */	mr r3, r25
+/* 803574B4 003532F4  4B FE 8E 29 */	bl param__Q43scn4step4hero4HeroFv
+/* 803574B8 003532F8  4B FF 9B A9 */	bl common__Q43scn4step4hero5ParamCFv
+/* 803574BC 003532FC  C3 E3 01 F4 */	lfs f31, 0x1f4(r3)
+/* 803574C0 00353300  C3 C3 01 F8 */	lfs f30, 0x1f8(r3)
+/* 803574C4 00353304  2C 1D 00 00 */	cmpwi r29, 0
+/* 803574C8 00353308  41 82 00 0C */	beq lbl_803574D4
+/* 803574CC 0035330C  C3 A3 02 00 */	lfs f29, 0x200(r3)
+/* 803574D0 00353310  48 00 00 08 */	b lbl_803574D8
+lbl_803574D4:
+/* 803574D4 00353314  C3 A3 01 FC */	lfs f29, 0x1fc(r3)
+lbl_803574D8:
+/* 803574D8 00353318  38 61 00 30 */	addi r3, r1, 0x30
+/* 803574DC 0035331C  7F 64 DB 78 */	mr r4, r27
+/* 803574E0 00353320  4B DF 44 89 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 803574E4 00353324  38 00 00 00 */	li r0, 0
+/* 803574E8 00353328  C0 21 00 30 */	lfs f1, 0x30(r1)
+/* 803574EC 0035332C  C0 0D EE 28 */	lfs f0, ZERO__Q33hel4math7Vector2-_SDA_BASE_(r13)
+/* 803574F0 00353330  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 803574F4 00353334  40 82 00 1C */	bne lbl_80357510
+/* 803574F8 00353338  C0 21 00 34 */	lfs f1, 0x34(r1)
+/* 803574FC 0035333C  38 6D EE 28 */	addi r3, r13, ZERO__Q33hel4math7Vector2-_SDA_BASE_
+/* 80357500 00353340  C0 03 00 04 */	lfs f0, 4(r3)
+/* 80357504 00353344  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 80357508 00353348  40 82 00 08 */	bne lbl_80357510
+/* 8035750C 0035334C  38 00 00 01 */	li r0, 1
+lbl_80357510:
+/* 80357510 00353350  2C 00 00 00 */	cmpwi r0, 0
+/* 80357514 00353354  40 82 00 0C */	bne lbl_80357520
+/* 80357518 00353358  38 61 00 30 */	addi r3, r1, 0x30
+/* 8035751C 0035335C  4B E4 7B 01 */	bl normalize__Q33hel4math7Vector2Fv
+lbl_80357520:
+/* 80357520 00353360  7F 23 CB 78 */	mr r3, r25
+/* 80357524 00353364  4B FE 8D E1 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80357528 00353368  7C 64 1B 78 */	mr r4, r3
+/* 8035752C 0035336C  38 61 00 44 */	addi r3, r1, 0x44
+/* 80357530 00353370  4B F1 81 85 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80357534 00353374  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357538 00353378  38 81 00 44 */	addi r4, r1, 0x44
+/* 8035753C 0035337C  4B E6 B6 91 */	bl getXY__Q33hel4math7Vector3CFv
+/* 80357540 00353380  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80357544 00353384  EC 00 F0 2A */	fadds f0, f0, f30
+/* 80357548 00353388  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8035754C 0035338C  38 61 00 20 */	addi r3, r1, 0x20
+/* 80357550 00353390  38 81 00 28 */	addi r4, r1, 0x28
+/* 80357554 00353394  4B DF 44 15 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80357558 00353398  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035755C 0035339C  38 81 00 30 */	addi r4, r1, 0x30
+/* 80357560 003533A0  FC 20 F8 90 */	fmr f1, f31
+/* 80357564 003533A4  4B E4 7E 51 */	bl __ml__Q33hel4math7Vector2CFf
+/* 80357568 003533A8  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035756C 003533AC  38 81 00 10 */	addi r4, r1, 0x10
+/* 80357570 003533B0  4B E4 7E C9 */	bl __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
+/* 80357574 003533B4  38 61 00 18 */	addi r3, r1, 0x18
+/* 80357578 003533B8  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035757C 003533BC  FC 20 E8 90 */	fmr f1, f29
+/* 80357580 003533C0  4B E4 7E 35 */	bl __ml__Q33hel4math7Vector2CFf
+/* 80357584 003533C4  2C 1D 00 00 */	cmpwi r29, 0
+/* 80357588 003533C8  3B 82 E4 78 */	addi r28, r2, T_WATERPISTOL_VARIATION_TABLE_NORMAL__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2-_SDA2_BASE_
+/* 8035758C 003533CC  41 82 00 08 */	beq lbl_80357594
+/* 80357590 003533D0  3B 82 CF 38 */	addi r28, r2, T_WATERPISTOL_VARIATION_TABLE_STRONG__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2-_SDA2_BASE_
+lbl_80357594:
+/* 80357594 003533D4  30 1D FF FF */	addic r0, r29, -1
+/* 80357598 003533D8  7C 60 E9 10 */	subfe r3, r0, r29
+/* 8035759C 003533DC  3B A3 00 01 */	addi r29, r3, 1
+/* 803575A0 003533E0  3B 60 00 00 */	li r27, 0
+/* 803575A4 003533E4  3B E0 00 00 */	li r31, 0
+/* 803575A8 003533E8  48 00 00 BC */	b lbl_80357664
+lbl_803575AC:
+/* 803575AC 003533EC  7F 23 CB 78 */	mr r3, r25
+/* 803575B0 003533F0  4B FE 8D AD */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803575B4 003533F4  38 63 00 08 */	addi r3, r3, 8
+/* 803575B8 003533F8  4B E6 66 A1 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 803575BC 003533FC  7C 7E 1B 78 */	mr r30, r3
+/* 803575C0 00353400  7F 23 CB 78 */	mr r3, r25
+/* 803575C4 00353404  4B FE 8D 41 */	bl location__Q43scn4step4hero4HeroCFv
+/* 803575C8 00353408  7C 64 1B 78 */	mr r4, r3
+/* 803575CC 0035340C  38 61 00 38 */	addi r3, r1, 0x38
+/* 803575D0 00353410  4B F1 80 E5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803575D4 00353414  38 61 00 08 */	addi r3, r1, 8
+/* 803575D8 00353418  38 81 00 38 */	addi r4, r1, 0x38
+/* 803575DC 0035341C  4B E6 B5 F1 */	bl getXY__Q33hel4math7Vector3CFv
+/* 803575E0 00353420  38 61 00 60 */	addi r3, r1, 0x60
+/* 803575E4 00353424  38 80 00 04 */	li r4, 4
+/* 803575E8 00353428  7C BC F8 2E */	lwzx r5, r28, r31
+/* 803575EC 0035342C  38 C0 00 01 */	li r6, 1
+/* 803575F0 00353430  38 E1 00 20 */	addi r7, r1, 0x20
+/* 803575F4 00353434  39 01 00 08 */	addi r8, r1, 8
+/* 803575F8 00353438  39 21 00 18 */	addi r9, r1, 0x18
+/* 803575FC 0035343C  7F CA F3 78 */	mr r10, r30
+/* 80357600 00353440  48 07 EB 91 */	bl __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2RQ25ocoll5Owner
+/* 80357604 00353444  38 61 00 74 */	addi r3, r1, 0x74
+/* 80357608 00353448  38 81 00 28 */	addi r4, r1, 0x28
+/* 8035760C 0035344C  4B DF 43 5D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80357610 00353450  7F 23 CB 78 */	mr r3, r25
+/* 80357614 00353454  4B D1 E1 1D */	bl GKI_getfirst
+/* 80357618 00353458  4B EC 97 AD */	bl weaponManager__Q33scn4step9ComponentFv
+/* 8035761C 0035345C  7C 64 1B 78 */	mr r4, r3
+/* 80357620 00353460  38 61 00 50 */	addi r3, r1, 0x50
+/* 80357624 00353464  38 A1 00 60 */	addi r5, r1, 0x60
+/* 80357628 00353468  48 07 F4 5D */	bl request__Q43scn4step6weapon7ManagerFRCQ43scn4step6weapon4Desc
+/* 8035762C 0035346C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80357630 00353470  4B E3 10 99 */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80357634 00353474  2C 03 00 00 */	cmpwi r3, 0
+/* 80357638 00353478  41 82 00 18 */	beq lbl_80357650
+/* 8035763C 0035347C  2C 1A 00 00 */	cmpwi r26, 0
+/* 80357640 00353480  41 82 00 10 */	beq lbl_80357650
+/* 80357644 00353484  80 61 00 5C */	lwz r3, 0x5c(r1)
+/* 80357648 00353488  48 08 3A F1 */	bl objStop__Q43scn4step6weapon6WeaponFv
+/* 8035764C 0035348C  4B ED C2 15 */	bl setSpecial__Q43scn4step4boss7ObjStopFv
+lbl_80357650:
+/* 80357650 00353490  38 61 00 50 */	addi r3, r1, 0x50
+/* 80357654 00353494  38 80 FF FF */	li r4, -1
+/* 80357658 00353498  4B EE 2A 59 */	bl __dt__Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1Fv
+/* 8035765C 0035349C  3B 7B 00 01 */	addi r27, r27, 1
+/* 80357660 003534A0  3B FF 00 04 */	addi r31, r31, 4
+lbl_80357664:
+/* 80357664 003534A4  7C 1B E8 40 */	cmplw r27, r29
+/* 80357668 003534A8  41 80 FF 44 */	blt lbl_803575AC
+/* 8035766C 003534AC  38 00 00 E8 */	li r0, 0xe8
+/* 80357670 003534B0  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80357674 003534B4  CB E1 00 E0 */	lfd f31, 0xe0(r1)
+/* 80357678 003534B8  38 00 00 D8 */	li r0, 0xd8
+/* 8035767C 003534BC  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 80357680 003534C0  CB C1 00 D0 */	lfd f30, 0xd0(r1)
+/* 80357684 003534C4  38 00 00 C8 */	li r0, 0xc8
+/* 80357688 003534C8  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 8035768C 003534CC  CB A1 00 C0 */	lfd f29, 0xc0(r1)
+/* 80357690 003534D0  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 80357694 003534D4  4B CA FC ED */	bl func_80007380
+/* 80357698 003534D8  80 01 00 F4 */	lwz r0, 0xf4(r1)
+/* 8035769C 003534DC  7C 08 03 A6 */	mtlr r0
+/* 803576A0 003534E0  38 21 00 F0 */	addi r1, r1, 0xf0
+/* 803576A4 003534E4  4E 80 00 20 */	blr 
+
+.global CreateStarShot__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CreateStarShot__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803576A8 003534E8  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 803576AC 003534EC  7C 08 02 A6 */	mflr r0
+/* 803576B0 003534F0  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 803576B4 003534F4  DB E1 00 A0 */	stfd f31, 0xa0(r1)
+/* 803576B8 003534F8  F3 E1 00 A8 */	psq_st f31, 168(r1), 0, qr0
+/* 803576BC 003534FC  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 803576C0 00353500  4B CA FC 79 */	bl func_80007338
+/* 803576C4 00353504  7C 7A 1B 78 */	mr r26, r3
+/* 803576C8 00353508  7C 9B 23 78 */	mr r27, r4
+/* 803576CC 0035350C  7F 63 DB 78 */	mr r3, r27
+/* 803576D0 00353510  4B FE 8C 0D */	bl param__Q43scn4step4hero4HeroFv
+/* 803576D4 00353514  4B FF 99 8D */	bl common__Q43scn4step4hero5ParamCFv
+/* 803576D8 00353518  7C 7F 1B 78 */	mr r31, r3
+/* 803576DC 0035351C  7F 63 DB 78 */	mr r3, r27
+/* 803576E0 00353520  4B FE 8C 8D */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 803576E4 00353524  4B DC 97 8D */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 803576E8 00353528  7C 7E 1B 78 */	mr r30, r3
+/* 803576EC 0035352C  3B A0 00 00 */	li r29, 0
+/* 803576F0 00353530  28 03 00 03 */	cmplwi r3, 3
+/* 803576F4 00353534  41 80 00 0C */	blt lbl_80357700
+/* 803576F8 00353538  3B A0 00 02 */	li r29, 2
+/* 803576FC 0035353C  48 00 00 10 */	b lbl_8035770C
+lbl_80357700:
+/* 80357700 00353540  28 03 00 02 */	cmplwi r3, 2
+/* 80357704 00353544  41 80 00 08 */	blt lbl_8035770C
+/* 80357708 00353548  3B A0 00 01 */	li r29, 1
+lbl_8035770C:
+/* 8035770C 0035354C  C3 FF 02 04 */	lfs f31, 0x204(r31)
+/* 80357710 00353550  28 03 00 03 */	cmplwi r3, 3
+/* 80357714 00353554  41 80 00 0C */	blt lbl_80357720
+/* 80357718 00353558  C3 FF 02 1C */	lfs f31, 0x21c(r31)
+/* 8035771C 0035355C  48 00 00 10 */	b lbl_8035772C
+lbl_80357720:
+/* 80357720 00353560  28 03 00 02 */	cmplwi r3, 2
+/* 80357724 00353564  41 80 00 08 */	blt lbl_8035772C
+/* 80357728 00353568  C3 FF 02 10 */	lfs f31, 0x210(r31)
+lbl_8035772C:
+/* 8035772C 0035356C  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80357730 00353570  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 80357734 00353574  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 80357738 00353578  28 03 00 03 */	cmplwi r3, 3
+/* 8035773C 0035357C  41 80 00 28 */	blt lbl_80357764
+/* 80357740 00353580  7F 63 DB 78 */	mr r3, r27
+/* 80357744 00353584  4B FE 8B B1 */	bl target__Q43scn4step4hero4HeroFv
+/* 80357748 00353588  4B E4 49 59 */	bl getSign__Q24gobj6TargetCFv
+/* 8035774C 0035358C  C0 1F 02 20 */	lfs f0, 0x220(r31)
+/* 80357750 00353590  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80357754 00353594  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 80357758 00353598  C0 1F 02 24 */	lfs f0, 0x224(r31)
+/* 8035775C 0035359C  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 80357760 003535A0  48 00 00 50 */	b lbl_803577B0
+lbl_80357764:
+/* 80357764 003535A4  28 03 00 02 */	cmplwi r3, 2
+/* 80357768 003535A8  41 80 00 28 */	blt lbl_80357790
+/* 8035776C 003535AC  7F 63 DB 78 */	mr r3, r27
+/* 80357770 003535B0  4B FE 8B 85 */	bl target__Q43scn4step4hero4HeroFv
+/* 80357774 003535B4  4B E4 49 2D */	bl getSign__Q24gobj6TargetCFv
+/* 80357778 003535B8  C0 1F 02 14 */	lfs f0, 0x214(r31)
+/* 8035777C 003535BC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80357780 003535C0  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 80357784 003535C4  C0 1F 02 18 */	lfs f0, 0x218(r31)
+/* 80357788 003535C8  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8035778C 003535CC  48 00 00 24 */	b lbl_803577B0
+lbl_80357790:
+/* 80357790 003535D0  7F 63 DB 78 */	mr r3, r27
+/* 80357794 003535D4  4B FE 8B 61 */	bl target__Q43scn4step4hero4HeroFv
+/* 80357798 003535D8  4B E4 49 09 */	bl getSign__Q24gobj6TargetCFv
+/* 8035779C 003535DC  C0 1F 02 08 */	lfs f0, 0x208(r31)
+/* 803577A0 003535E0  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803577A4 003535E4  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 803577A8 003535E8  C0 1F 02 0C */	lfs f0, 0x20c(r31)
+/* 803577AC 003535EC  D0 01 00 2C */	stfs f0, 0x2c(r1)
+lbl_803577B0:
+/* 803577B0 003535F0  7F 63 DB 78 */	mr r3, r27
+/* 803577B4 003535F4  4B FE 8B C9 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 803577B8 003535F8  4B E7 BF 0D */	bl isValid__Q26nururi6NururiCFv
+/* 803577BC 003535FC  7C 7F 1B 78 */	mr r31, r3
+/* 803577C0 00353600  28 1E 00 03 */	cmplwi r30, 3
+/* 803577C4 00353604  41 80 01 28 */	blt lbl_803578EC
+/* 803577C8 00353608  3B 9E FF FD */	addi r28, r30, -3
+/* 803577CC 0035360C  28 1C 00 09 */	cmplwi r28, 9
+/* 803577D0 00353610  41 81 00 DC */	bgt lbl_803578AC
+/* 803577D4 00353614  3C 80 80 48 */	lis r4, $$264675@ha
+/* 803577D8 00353618  38 84 56 20 */	addi r4, r4, $$264675@l
+/* 803577DC 0035361C  57 80 10 3A */	slwi r0, r28, 2
+/* 803577E0 00353620  7C 84 00 2E */	lwzx r4, r4, r0
+/* 803577E4 00353624  7C 89 03 A6 */	mtctr r4
+/* 803577E8 00353628  4E 80 04 20 */	bctr 
+/* 803577EC 0035362C  30 03 FF FF */	addic r0, r3, -1
+/* 803577F0 00353630  7F C0 19 10 */	subfe r30, r0, r3
+/* 803577F4 00353634  48 00 00 C8 */	b lbl_803578BC
+/* 803577F8 00353638  2C 03 00 00 */	cmpwi r3, 0
+/* 803577FC 0035363C  3B C0 00 02 */	li r30, 2
+/* 80357800 00353640  41 82 00 BC */	beq lbl_803578BC
+/* 80357804 00353644  3B C0 00 03 */	li r30, 3
+/* 80357808 00353648  48 00 00 B4 */	b lbl_803578BC
+/* 8035780C 0035364C  2C 03 00 00 */	cmpwi r3, 0
+/* 80357810 00353650  3B C0 00 04 */	li r30, 4
+/* 80357814 00353654  41 82 00 A8 */	beq lbl_803578BC
+/* 80357818 00353658  3B C0 00 05 */	li r30, 5
+/* 8035781C 0035365C  48 00 00 A0 */	b lbl_803578BC
+/* 80357820 00353660  2C 03 00 00 */	cmpwi r3, 0
+/* 80357824 00353664  3B C0 00 06 */	li r30, 6
+/* 80357828 00353668  41 82 00 94 */	beq lbl_803578BC
+/* 8035782C 0035366C  3B C0 00 07 */	li r30, 7
+/* 80357830 00353670  48 00 00 8C */	b lbl_803578BC
+/* 80357834 00353674  2C 03 00 00 */	cmpwi r3, 0
+/* 80357838 00353678  3B C0 00 08 */	li r30, 8
+/* 8035783C 0035367C  41 82 00 80 */	beq lbl_803578BC
+/* 80357840 00353680  3B C0 00 09 */	li r30, 9
+/* 80357844 00353684  48 00 00 78 */	b lbl_803578BC
+/* 80357848 00353688  2C 03 00 00 */	cmpwi r3, 0
+/* 8035784C 0035368C  3B C0 00 0A */	li r30, 0xa
+/* 80357850 00353690  41 82 00 6C */	beq lbl_803578BC
+/* 80357854 00353694  3B C0 00 0B */	li r30, 0xb
+/* 80357858 00353698  48 00 00 64 */	b lbl_803578BC
+/* 8035785C 0035369C  2C 03 00 00 */	cmpwi r3, 0
+/* 80357860 003536A0  3B C0 00 0C */	li r30, 0xc
+/* 80357864 003536A4  41 82 00 58 */	beq lbl_803578BC
+/* 80357868 003536A8  3B C0 00 0D */	li r30, 0xd
+/* 8035786C 003536AC  48 00 00 50 */	b lbl_803578BC
+/* 80357870 003536B0  2C 03 00 00 */	cmpwi r3, 0
+/* 80357874 003536B4  3B C0 00 0E */	li r30, 0xe
+/* 80357878 003536B8  41 82 00 44 */	beq lbl_803578BC
+/* 8035787C 003536BC  3B C0 00 0F */	li r30, 0xf
+/* 80357880 003536C0  48 00 00 3C */	b lbl_803578BC
+/* 80357884 003536C4  2C 03 00 00 */	cmpwi r3, 0
+/* 80357888 003536C8  3B C0 00 10 */	li r30, 0x10
+/* 8035788C 003536CC  41 82 00 30 */	beq lbl_803578BC
+/* 80357890 003536D0  3B C0 00 11 */	li r30, 0x11
+/* 80357894 003536D4  48 00 00 28 */	b lbl_803578BC
+/* 80357898 003536D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035789C 003536DC  3B C0 00 12 */	li r30, 0x12
+/* 803578A0 003536E0  41 82 00 1C */	beq lbl_803578BC
+/* 803578A4 003536E4  3B C0 00 13 */	li r30, 0x13
+/* 803578A8 003536E8  48 00 00 14 */	b lbl_803578BC
+lbl_803578AC:
+/* 803578AC 003536EC  2C 03 00 00 */	cmpwi r3, 0
+/* 803578B0 003536F0  3B C0 00 12 */	li r30, 0x12
+/* 803578B4 003536F4  41 82 00 08 */	beq lbl_803578BC
+/* 803578B8 003536F8  3B C0 00 13 */	li r30, 0x13
+lbl_803578BC:
+/* 803578BC 003536FC  7F 63 DB 78 */	mr r3, r27
+/* 803578C0 00353700  4B FE 8A AD */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 803578C4 00353704  48 07 9E 81 */	bl vacuumHoldCount__Q43scn4step6vacuum8AttackerFv
+/* 803578C8 00353708  28 03 00 03 */	cmplwi r3, 3
+/* 803578CC 0035370C  40 82 00 84 */	bne lbl_80357950
+/* 803578D0 00353710  2C 1C 00 00 */	cmpwi r28, 0
+/* 803578D4 00353714  40 82 00 7C */	bne lbl_80357950
+/* 803578D8 00353718  2C 1F 00 00 */	cmpwi r31, 0
+/* 803578DC 0035371C  3B C0 00 14 */	li r30, 0x14
+/* 803578E0 00353720  41 82 00 70 */	beq lbl_80357950
+/* 803578E4 00353724  3B C0 00 15 */	li r30, 0x15
+/* 803578E8 00353728  48 00 00 68 */	b lbl_80357950
+lbl_803578EC:
+/* 803578EC 0035372C  28 1E 00 02 */	cmplwi r30, 2
+/* 803578F0 00353730  41 80 00 34 */	blt lbl_80357924
+/* 803578F4 00353734  30 03 FF FF */	addic r0, r3, -1
+/* 803578F8 00353738  7F C0 19 10 */	subfe r30, r0, r3
+/* 803578FC 0035373C  7F 63 DB 78 */	mr r3, r27
+/* 80357900 00353740  4B FE 8A 6D */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357904 00353744  48 07 9E 41 */	bl vacuumHoldCount__Q43scn4step6vacuum8AttackerFv
+/* 80357908 00353748  28 03 00 02 */	cmplwi r3, 2
+/* 8035790C 0035374C  40 82 00 44 */	bne lbl_80357950
+/* 80357910 00353750  2C 1F 00 00 */	cmpwi r31, 0
+/* 80357914 00353754  3B C0 00 02 */	li r30, 2
+/* 80357918 00353758  41 82 00 38 */	beq lbl_80357950
+/* 8035791C 0035375C  3B C0 00 03 */	li r30, 3
+/* 80357920 00353760  48 00 00 30 */	b lbl_80357950
+lbl_80357924:
+/* 80357924 00353764  30 03 FF FF */	addic r0, r3, -1
+/* 80357928 00353768  7F C0 19 10 */	subfe r30, r0, r3
+/* 8035792C 0035376C  7F 63 DB 78 */	mr r3, r27
+/* 80357930 00353770  4B FE 8A 3D */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357934 00353774  48 07 9E 11 */	bl vacuumHoldCount__Q43scn4step6vacuum8AttackerFv
+/* 80357938 00353778  28 03 00 01 */	cmplwi r3, 1
+/* 8035793C 0035377C  40 82 00 14 */	bne lbl_80357950
+/* 80357940 00353780  2C 1F 00 00 */	cmpwi r31, 0
+/* 80357944 00353784  3B C0 00 02 */	li r30, 2
+/* 80357948 00353788  41 82 00 08 */	beq lbl_80357950
+/* 8035794C 0035378C  3B C0 00 03 */	li r30, 3
+lbl_80357950:
+/* 80357950 00353790  7F 63 DB 78 */	mr r3, r27
+/* 80357954 00353794  4B FE 89 B1 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80357958 00353798  7C 64 1B 78 */	mr r4, r3
+/* 8035795C 0035379C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80357960 003537A0  4B F1 7D 55 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80357964 003537A4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80357968 003537A8  38 81 00 3C */	addi r4, r1, 0x3c
+/* 8035796C 003537AC  4B E6 B2 61 */	bl getXY__Q33hel4math7Vector3CFv
+/* 80357970 003537B0  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 80357974 003537B4  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80357978 003537B8  EC 01 00 2A */	fadds f0, f1, f0
+/* 8035797C 003537BC  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 80357980 003537C0  38 61 00 18 */	addi r3, r1, 0x18
+/* 80357984 003537C4  38 81 00 20 */	addi r4, r1, 0x20
+/* 80357988 003537C8  4B DF 3F E1 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035798C 003537CC  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 80357990 003537D0  C0 01 00 28 */	lfs f0, 0x28(r1)
+/* 80357994 003537D4  EC 01 00 2A */	fadds f0, f1, f0
+/* 80357998 003537D8  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 8035799C 003537DC  7F 63 DB 78 */	mr r3, r27
+/* 803579A0 003537E0  4B FE 89 55 */	bl target__Q43scn4step4hero4HeroFv
+/* 803579A4 003537E4  4B E4 46 FD */	bl getSign__Q24gobj6TargetCFv
+/* 803579A8 003537E8  EC 3F 00 72 */	fmuls f1, f31, f1
+/* 803579AC 003537EC  38 61 00 10 */	addi r3, r1, 0x10
+/* 803579B0 003537F0  C0 42 CF 40 */	lfs f2, $$264296-_SDA2_BASE_(r2)
+/* 803579B4 003537F4  4B E4 79 F5 */	bl set__Q33hel4math7Vector2Fff
+/* 803579B8 003537F8  7F 63 DB 78 */	mr r3, r27
+/* 803579BC 003537FC  4B FE 89 A1 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803579C0 00353800  38 63 00 08 */	addi r3, r3, 8
+/* 803579C4 00353804  4B E6 62 95 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 803579C8 00353808  7C 7F 1B 78 */	mr r31, r3
+/* 803579CC 0035380C  7F 63 DB 78 */	mr r3, r27
+/* 803579D0 00353810  4B FE 89 35 */	bl location__Q43scn4step4hero4HeroCFv
+/* 803579D4 00353814  7C 64 1B 78 */	mr r4, r3
+/* 803579D8 00353818  38 61 00 30 */	addi r3, r1, 0x30
+/* 803579DC 0035381C  4B F1 7C D9 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803579E0 00353820  38 61 00 08 */	addi r3, r1, 8
+/* 803579E4 00353824  38 81 00 30 */	addi r4, r1, 0x30
+/* 803579E8 00353828  4B E6 B1 E5 */	bl getXY__Q33hel4math7Vector3CFv
+/* 803579EC 0035382C  38 61 00 48 */	addi r3, r1, 0x48
+/* 803579F0 00353830  7F A4 EB 78 */	mr r4, r29
+/* 803579F4 00353834  7F C5 F3 78 */	mr r5, r30
+/* 803579F8 00353838  38 C0 00 01 */	li r6, 1
+/* 803579FC 0035383C  38 E1 00 18 */	addi r7, r1, 0x18
+/* 80357A00 00353840  39 01 00 08 */	addi r8, r1, 8
+/* 80357A04 00353844  39 21 00 10 */	addi r9, r1, 0x10
+/* 80357A08 00353848  7F EA FB 78 */	mr r10, r31
+/* 80357A0C 0035384C  48 07 E7 85 */	bl __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2RQ25ocoll5Owner
+/* 80357A10 00353850  7F 63 DB 78 */	mr r3, r27
+/* 80357A14 00353854  4B D1 DD 1D */	bl GKI_getfirst
+/* 80357A18 00353858  4B EC 93 AD */	bl weaponManager__Q33scn4step9ComponentFv
+/* 80357A1C 0035385C  7C 64 1B 78 */	mr r4, r3
+/* 80357A20 00353860  7F 43 D3 78 */	mr r3, r26
+/* 80357A24 00353864  38 A1 00 48 */	addi r5, r1, 0x48
+/* 80357A28 00353868  48 07 F0 5D */	bl request__Q43scn4step6weapon7ManagerFRCQ43scn4step6weapon4Desc
+/* 80357A2C 0035386C  38 00 00 A8 */	li r0, 0xa8
+/* 80357A30 00353870  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80357A34 00353874  CB E1 00 A0 */	lfd f31, 0xa0(r1)
+/* 80357A38 00353878  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 80357A3C 0035387C  4B CA F9 49 */	bl func_80007384
+/* 80357A40 00353880  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 80357A44 00353884  7C 08 03 A6 */	mtlr r0
+/* 80357A48 00353888  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 80357A4C 0035388C  4E 80 00 20 */	blr 
+
+.global Vomit__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+Vomit__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
+/* 80357A50 00353890  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80357A54 00353894  7C 08 02 A6 */	mflr r0
+/* 80357A58 00353898  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80357A5C 0035389C  39 61 00 50 */	addi r11, r1, 0x50
+/* 80357A60 003538A0  4B CA F8 E5 */	bl func_80007344
+/* 80357A64 003538A4  7C 7D 1B 78 */	mr r29, r3
+/* 80357A68 003538A8  7C 9E 23 78 */	mr r30, r4
+/* 80357A6C 003538AC  4B FE 89 01 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357A70 003538B0  4B DC 94 01 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 80357A74 003538B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80357A78 003538B8  40 82 00 30 */	bne lbl_80357AA8
+/* 80357A7C 003538BC  7F A3 EB 78 */	mr r3, r29
+/* 80357A80 003538C0  4B FE 88 9D */	bl model__Q43scn4step4hero4HeroFv
+/* 80357A84 003538C4  38 63 02 24 */	addi r3, r3, 0x224
+/* 80357A88 003538C8  4B E4 45 FD */	bl currentScriptIndex__Q24gobj6ScriptCFv
+/* 80357A8C 003538CC  38 03 FF F2 */	addi r0, r3, -14
+/* 80357A90 003538D0  28 00 00 01 */	cmplwi r0, 1
+/* 80357A94 003538D4  41 81 01 74 */	bgt lbl_80357C08
+/* 80357A98 003538D8  7F A3 EB 78 */	mr r3, r29
+/* 80357A9C 003538DC  7F C4 F3 78 */	mr r4, r30
+/* 80357AA0 003538E0  4B FF F7 AD */	bl CreateAirBall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+/* 80357AA4 003538E4  48 00 01 64 */	b lbl_80357C08
+lbl_80357AA8:
+/* 80357AA8 003538E8  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357AAC 003538EC  7F A4 EB 78 */	mr r4, r29
+/* 80357AB0 003538F0  4B FF FB F9 */	bl CreateStarShot__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80357AB4 003538F4  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357AB8 003538F8  4B E3 0C 11 */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80357ABC 003538FC  2C 03 00 00 */	cmpwi r3, 0
+/* 80357AC0 00353900  41 82 00 C4 */	beq lbl_80357B84
+/* 80357AC4 00353904  2C 1E 00 00 */	cmpwi r30, 0
+/* 80357AC8 00353908  41 82 00 10 */	beq lbl_80357AD8
+/* 80357ACC 0035390C  80 61 00 34 */	lwz r3, 0x34(r1)
+/* 80357AD0 00353910  48 08 36 69 */	bl objStop__Q43scn4step6weapon6WeaponFv
+/* 80357AD4 00353914  4B ED BD 8D */	bl setSpecial__Q43scn4step4boss7ObjStopFv
+lbl_80357AD8:
+/* 80357AD8 00353918  3B E1 00 18 */	addi r31, r1, 0x18
+/* 80357ADC 0035391C  38 00 00 00 */	li r0, 0
+/* 80357AE0 00353920  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80357AE4 00353924  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80357AE8 00353928  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80357AEC 0035392C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357AF0 00353930  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80357AF4 00353934  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80357AF8 00353938  7F E3 FB 78 */	mr r3, r31
+/* 80357AFC 0035393C  4B E2 4A E9 */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 80357B00 00353940  2C 03 00 00 */	cmpwi r3, 0
+/* 80357B04 00353944  41 82 00 0C */	beq lbl_80357B10
+/* 80357B08 00353948  7F E3 FB 78 */	mr r3, r31
+/* 80357B0C 0035394C  4B EE 25 09 */	bl unlink__Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1Fv
+lbl_80357B10:
+/* 80357B10 00353950  38 00 00 00 */	li r0, 0
+/* 80357B14 00353954  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80357B18 00353958  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357B1C 0035395C  4B E3 0B AD */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80357B20 00353960  2C 03 00 00 */	cmpwi r3, 0
+/* 80357B24 00353964  41 82 00 0C */	beq lbl_80357B30
+/* 80357B28 00353968  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80357B2C 0035396C  90 01 00 24 */	stw r0, 0x24(r1)
+lbl_80357B30:
+/* 80357B30 00353970  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357B34 00353974  4B E2 4A B1 */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 80357B38 00353978  2C 03 00 00 */	cmpwi r3, 0
+/* 80357B3C 0035397C  41 82 00 2C */	beq lbl_80357B68
+/* 80357B40 00353980  83 C1 00 30 */	lwz r30, 0x30(r1)
+/* 80357B44 00353984  93 C1 00 20 */	stw r30, 0x20(r1)
+/* 80357B48 00353988  38 1E 00 04 */	addi r0, r30, 4
+/* 80357B4C 0035398C  90 01 00 08 */	stw r0, 8(r1)
+/* 80357B50 00353990  7F E3 FB 78 */	mr r3, r31
+/* 80357B54 00353994  4B EE 25 0D */	bl GetNodeFromPointer__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1
+/* 80357B58 00353998  7C 65 1B 78 */	mr r5, r3
+/* 80357B5C 0035399C  7F C3 F3 78 */	mr r3, r30
+/* 80357B60 003539A0  38 81 00 08 */	addi r4, r1, 8
+/* 80357B64 003539A4  4B DC 82 4D */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
+lbl_80357B68:
+/* 80357B68 003539A8  7F A3 EB 78 */	mr r3, r29
+/* 80357B6C 003539AC  4B FE 88 01 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357B70 003539B0  38 81 00 18 */	addi r4, r1, 0x18
+/* 80357B74 003539B4  48 07 9E 45 */	bl setConstraintWeapon__Q43scn4step6vacuum8AttackerFQ24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1
+/* 80357B78 003539B8  38 61 00 18 */	addi r3, r1, 0x18
+/* 80357B7C 003539BC  38 80 FF FF */	li r4, -1
+/* 80357B80 003539C0  4B EE 25 31 */	bl __dt__Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1Fv
+lbl_80357B84:
+/* 80357B84 003539C4  7F A3 EB 78 */	mr r3, r29
+/* 80357B88 003539C8  4B FE 87 E5 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357B8C 003539CC  4B DC 92 E5 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 80357B90 003539D0  28 03 00 05 */	cmplwi r3, 5
+/* 80357B94 003539D4  41 80 00 1C */	blt lbl_80357BB0
+/* 80357B98 003539D8  7F A3 EB 78 */	mr r3, r29
+/* 80357B9C 003539DC  4B FE 88 09 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 80357BA0 003539E0  38 63 00 04 */	addi r3, r3, 4
+/* 80357BA4 003539E4  38 80 00 E2 */	li r4, 0xe2
+/* 80357BA8 003539E8  48 0A B1 2D */	bl start__Q23snd11SERequestorFUl
+/* 80357BAC 003539EC  48 00 00 38 */	b lbl_80357BE4
+lbl_80357BB0:
+/* 80357BB0 003539F0  28 03 00 02 */	cmplwi r3, 2
+/* 80357BB4 003539F4  41 80 00 1C */	blt lbl_80357BD0
+/* 80357BB8 003539F8  7F A3 EB 78 */	mr r3, r29
+/* 80357BBC 003539FC  4B FE 87 E9 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 80357BC0 00353A00  38 63 00 04 */	addi r3, r3, 4
+/* 80357BC4 00353A04  38 80 00 E1 */	li r4, 0xe1
+/* 80357BC8 00353A08  48 0A B1 0D */	bl start__Q23snd11SERequestorFUl
+/* 80357BCC 00353A0C  48 00 00 18 */	b lbl_80357BE4
+lbl_80357BD0:
+/* 80357BD0 00353A10  7F A3 EB 78 */	mr r3, r29
+/* 80357BD4 00353A14  4B FE 87 D1 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 80357BD8 00353A18  38 63 00 04 */	addi r3, r3, 4
+/* 80357BDC 00353A1C  38 80 00 E0 */	li r4, 0xe0
+/* 80357BE0 00353A20  48 0A B0 F5 */	bl start__Q23snd11SERequestorFUl
+lbl_80357BE4:
+/* 80357BE4 00353A24  7F A3 EB 78 */	mr r3, r29
+/* 80357BE8 00353A28  4B FE 87 85 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357BEC 00353A2C  48 07 96 19 */	bl resetVacuumCount__Q43scn4step6vacuum8AttackerFv
+/* 80357BF0 00353A30  7F A3 EB 78 */	mr r3, r29
+/* 80357BF4 00353A34  4B FE 87 79 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357BF8 00353A38  48 07 9C 9D */	bl resetVacuumHold__Q43scn4step6vacuum8AttackerFv
+/* 80357BFC 00353A3C  38 61 00 28 */	addi r3, r1, 0x28
+/* 80357C00 00353A40  38 80 FF FF */	li r4, -1
+/* 80357C04 00353A44  4B EE 24 AD */	bl __dt__Q24util39ObjRefHandle$$0Q43scn4step6weapon6Weapon$$1Fv
+lbl_80357C08:
+/* 80357C08 00353A48  39 61 00 50 */	addi r11, r1, 0x50
+/* 80357C0C 00353A4C  4B CA F7 85 */	bl func_80007390
+/* 80357C10 00353A50  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80357C14 00353A54  7C 08 03 A6 */	mtlr r0
+/* 80357C18 00353A58  38 21 00 50 */	addi r1, r1, 0x50
+/* 80357C1C 00353A5C  4E 80 00 20 */	blr 
+
+.global SwitchBombDangerMotionInit__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroQ43scn4step4hero10ScriptKind
+SwitchBombDangerMotionInit__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroQ43scn4step4hero10ScriptKind:
+/* 80357C20 00353A60  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80357C24 00353A64  7C 08 02 A6 */	mflr r0
+/* 80357C28 00353A68  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357C2C 00353A6C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80357C30 00353A70  7C 9F 23 78 */	mr r31, r4
+/* 80357C34 00353A74  4B FE 86 E9 */	bl model__Q43scn4step4hero4HeroFv
+/* 80357C38 00353A78  38 63 02 24 */	addi r3, r3, 0x224
+/* 80357C3C 00353A7C  7F E4 FB 78 */	mr r4, r31
+/* 80357C40 00353A80  4B E4 41 B9 */	bl start__Q24gobj6ScriptFUl
+/* 80357C44 00353A84  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80357C48 00353A88  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80357C4C 00353A8C  7C 08 03 A6 */	mtlr r0
+/* 80357C50 00353A90  38 21 00 10 */	addi r1, r1, 0x10
+/* 80357C54 00353A94  4E 80 00 20 */	blr 
+
+.global TryToPassThroughLandOnBombDanger__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+TryToPassThroughLandOnBombDanger__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80357C58 00353A98  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80357C5C 00353A9C  7C 08 02 A6 */	mflr r0
+/* 80357C60 00353AA0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357C64 00353AA4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80357C68 00353AA8  93 C1 00 08 */	stw r30, 8(r1)
+/* 80357C6C 00353AAC  7C 7E 1B 78 */	mr r30, r3
+/* 80357C70 00353AB0  4B FE 86 8D */	bl footState__Q43scn4step4hero4HeroFv
+/* 80357C74 00353AB4  4B E4 22 45 */	bl isAir__Q24gobj9FootStateCFv
+/* 80357C78 00353AB8  2C 03 00 00 */	cmpwi r3, 0
+/* 80357C7C 00353ABC  41 82 00 0C */	beq lbl_80357C88
+/* 80357C80 00353AC0  38 60 00 00 */	li r3, 0
+/* 80357C84 00353AC4  48 00 00 C8 */	b lbl_80357D4C
+lbl_80357C88:
+/* 80357C88 00353AC8  7F C3 F3 78 */	mr r3, r30
+/* 80357C8C 00353ACC  4B FE 86 F1 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80357C90 00353AD0  38 80 00 00 */	li r4, 0
+/* 80357C94 00353AD4  88 03 00 1E */	lbz r0, 0x1e(r3)
+/* 80357C98 00353AD8  2C 00 00 00 */	cmpwi r0, 0
+/* 80357C9C 00353ADC  40 82 00 10 */	bne lbl_80357CAC
+/* 80357CA0 00353AE0  88 03 00 1F */	lbz r0, 0x1f(r3)
+/* 80357CA4 00353AE4  2C 00 00 00 */	cmpwi r0, 0
+/* 80357CA8 00353AE8  41 82 00 08 */	beq lbl_80357CB0
+lbl_80357CAC:
+/* 80357CAC 00353AEC  38 80 00 01 */	li r4, 1
+lbl_80357CB0:
+/* 80357CB0 00353AF0  2C 04 00 00 */	cmpwi r4, 0
+/* 80357CB4 00353AF4  40 82 00 0C */	bne lbl_80357CC0
+/* 80357CB8 00353AF8  38 60 00 00 */	li r3, 0
+/* 80357CBC 00353AFC  48 00 00 90 */	b lbl_80357D4C
+lbl_80357CC0:
+/* 80357CC0 00353B00  7F C3 F3 78 */	mr r3, r30
+/* 80357CC4 00353B04  4B FE 86 89 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80357CC8 00353B08  38 80 00 04 */	li r4, 4
+/* 80357CCC 00353B0C  4B E4 A5 89 */	bl isTrigger__Q23hid6ButtonCFUl
+/* 80357CD0 00353B10  2C 03 00 00 */	cmpwi r3, 0
+/* 80357CD4 00353B14  40 82 00 0C */	bne lbl_80357CE0
+/* 80357CD8 00353B18  38 60 00 00 */	li r3, 0
+/* 80357CDC 00353B1C  48 00 00 70 */	b lbl_80357D4C
+lbl_80357CE0:
+/* 80357CE0 00353B20  7F C3 F3 78 */	mr r3, r30
+/* 80357CE4 00353B24  4B FE 85 F9 */	bl param__Q43scn4step4hero4HeroFv
+/* 80357CE8 00353B28  4B FF 93 79 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80357CEC 00353B2C  83 E3 00 18 */	lwz r31, 0x18(r3)
+/* 80357CF0 00353B30  7F C3 F3 78 */	mr r3, r30
+/* 80357CF4 00353B34  4B FE 87 99 */	bl commandManager__Q43scn4step4hero4HeroFv
+/* 80357CF8 00353B38  38 80 00 04 */	li r4, 4
+/* 80357CFC 00353B3C  4B FD C7 C9 */	bl getHoldFrame__Q43scn4step4hero14CommandManagerCFQ43scn4step4hero10ButtonMask
+/* 80357D00 00353B40  7C 03 F8 40 */	cmplw r3, r31
+/* 80357D04 00353B44  40 80 00 0C */	bge lbl_80357D10
+/* 80357D08 00353B48  38 60 00 00 */	li r3, 0
+/* 80357D0C 00353B4C  48 00 00 40 */	b lbl_80357D4C
+lbl_80357D10:
+/* 80357D10 00353B50  7F C3 F3 78 */	mr r3, r30
+/* 80357D14 00353B54  4B FE 86 29 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80357D18 00353B58  88 03 00 86 */	lbz r0, 0x86(r3)
+/* 80357D1C 00353B5C  2C 00 00 00 */	cmpwi r0, 0
+/* 80357D20 00353B60  40 82 00 0C */	bne lbl_80357D2C
+/* 80357D24 00353B64  38 60 00 00 */	li r3, 0
+/* 80357D28 00353B68  48 00 00 24 */	b lbl_80357D4C
+lbl_80357D2C:
+/* 80357D2C 00353B6C  7F C3 F3 78 */	mr r3, r30
+/* 80357D30 00353B70  4B FE 86 0D */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80357D34 00353B74  4B FF 14 B1 */	bl setTriggerPassThroughLand__Q43scn4step4hero7MapCollFv
+/* 80357D38 00353B78  7F C3 F3 78 */	mr r3, r30
+/* 80357D3C 00353B7C  4B FE 85 D9 */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 80357D40 00353B80  7F C4 F3 78 */	mr r4, r30
+/* 80357D44 00353B84  4B FF E6 B9 */	bl setNextState$$0Q53scn4step4hero6common9StateFall$$4PQ43scn4step4hero4Hero$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Hero_v
+/* 80357D48 00353B88  38 60 00 01 */	li r3, 1
+lbl_80357D4C:
+/* 80357D4C 00353B8C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80357D50 00353B90  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80357D54 00353B94  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80357D58 00353B98  7C 08 03 A6 */	mtlr r0
+/* 80357D5C 00353B9C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80357D60 00353BA0  4E 80 00 20 */	blr 
+
+.global SetSecondMoveIsValid__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+SetSecondMoveIsValid__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
+/* 80357D64 00353BA4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80357D68 00353BA8  7C 08 02 A6 */	mflr r0
+/* 80357D6C 00353BAC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357D70 00353BB0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80357D74 00353BB4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80357D78 00353BB8  7C 7E 1B 78 */	mr r30, r3
+/* 80357D7C 00353BBC  7C 9F 23 78 */	mr r31, r4
+/* 80357D80 00353BC0  4B FE 86 65 */	bl additionalMove__Q43scn4step4hero4HeroFv
+/* 80357D84 00353BC4  7F E4 FB 78 */	mr r4, r31
+/* 80357D88 00353BC8  4B FD 4E D5 */	bl setValid__Q43scn4step4hero14AdditionalMoveFb
+/* 80357D8C 00353BCC  2C 1F 00 00 */	cmpwi r31, 0
+/* 80357D90 00353BD0  41 82 00 14 */	beq lbl_80357DA4
+/* 80357D94 00353BD4  7F C3 F3 78 */	mr r3, r30
+/* 80357D98 00353BD8  4B FE 85 9D */	bl landConstraint__Q43scn4step4hero4HeroFv
+/* 80357D9C 00353BDC  4B F1 73 F1 */	bl resetMode__Q43scn4step5chara14LandConstraintFv
+/* 80357DA0 00353BE0  48 00 00 20 */	b lbl_80357DC0
+lbl_80357DA4:
+/* 80357DA4 00353BE4  7F C3 F3 78 */	mr r3, r30
+/* 80357DA8 00353BE8  4B FE 86 F5 */	bl inertialMove__Q43scn4step4hero4HeroFv
+/* 80357DAC 00353BEC  4B FE 9F B1 */	bl resetVelocity__Q43scn4step4hero12InertialMoveFv
+/* 80357DB0 00353BF0  7F C3 F3 78 */	mr r3, r30
+/* 80357DB4 00353BF4  4B FE 85 81 */	bl landConstraint__Q43scn4step4hero4HeroFv
+/* 80357DB8 00353BF8  38 80 00 00 */	li r4, 0
+/* 80357DBC 00353BFC  4B F1 73 D9 */	bl setMode__Q43scn4step5chara14LandConstraintFQ53scn4step5chara14LandConstraint4Mode
+lbl_80357DC0:
+/* 80357DC0 00353C00  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80357DC4 00353C04  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80357DC8 00353C08  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80357DCC 00353C0C  7C 08 03 A6 */	mtlr r0
+/* 80357DD0 00353C10  38 21 00 10 */	addi r1, r1, 0x10
+/* 80357DD4 00353C14  4E 80 00 20 */	blr 
+
+.global CloseGearParasol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CloseGearParasol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80357DD8 00353C18  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80357DDC 00353C1C  7C 08 02 A6 */	mflr r0
+/* 80357DE0 00353C20  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357DE4 00353C24  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80357DE8 00353C28  7C 7F 1B 78 */	mr r31, r3
+/* 80357DEC 00353C2C  4B FE 85 89 */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 80357DF0 00353C30  4B DC 90 81 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 80357DF4 00353C34  2C 03 00 0B */	cmpwi r3, 0xb
+/* 80357DF8 00353C38  40 82 00 20 */	bne lbl_80357E18
+/* 80357DFC 00353C3C  7F E3 FB 78 */	mr r3, r31
+/* 80357E00 00353C40  4B FE 85 1D */	bl model__Q43scn4step4hero4HeroFv
+/* 80357E04 00353C44  38 63 0C F0 */	addi r3, r3, 0xcf0
+/* 80357E08 00353C48  4B FE 05 69 */	bl anim__Q43scn4step4hero4GearFv
+/* 80357E0C 00353C4C  38 80 00 0F */	li r4, 0xf
+/* 80357E10 00353C50  38 A0 00 01 */	li r5, 1
+/* 80357E14 00353C54  4B E4 25 01 */	bl start__Q24gobj8GearAnimFUlb
+lbl_80357E18:
+/* 80357E18 00353C58  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80357E1C 00353C5C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80357E20 00353C60  7C 08 03 A6 */	mtlr r0
+/* 80357E24 00353C64  38 21 00 10 */	addi r1, r1, 0x10
+/* 80357E28 00353C68  4E 80 00 20 */	blr 
+
+.global ReqLandingStar__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ReqLandingStar__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80357E2C 00353C6C  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80357E30 00353C70  7C 08 02 A6 */	mflr r0
+/* 80357E34 00353C74  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80357E38 00353C78  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 80357E3C 00353C7C  93 C1 00 88 */	stw r30, 0x88(r1)
+/* 80357E40 00353C80  7C 7E 1B 78 */	mr r30, r3
+/* 80357E44 00353C84  4B FE 84 B1 */	bl target__Q43scn4step4hero4HeroFv
+/* 80357E48 00353C88  7C 64 1B 78 */	mr r4, r3
+/* 80357E4C 00353C8C  38 61 00 60 */	addi r3, r1, 0x60
+/* 80357E50 00353C90  4B E4 42 6D */	bl getDirection3__Q24gobj6TargetCFv
+/* 80357E54 00353C94  7F C3 F3 78 */	mr r3, r30
+/* 80357E58 00353C98  4B FE 84 E5 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80357E5C 00353C9C  7C 64 1B 78 */	mr r4, r3
+/* 80357E60 00353CA0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80357E64 00353CA4  38 84 00 74 */	addi r4, r4, 0x74
+/* 80357E68 00353CA8  4B DF 3B 01 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80357E6C 00353CAC  38 61 00 54 */	addi r3, r1, 0x54
+/* 80357E70 00353CB0  38 81 00 10 */	addi r4, r1, 0x10
+/* 80357E74 00353CB4  4B E4 75 E9 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 80357E78 00353CB8  38 61 00 6C */	addi r3, r1, 0x6c
+/* 80357E7C 00353CBC  38 81 00 54 */	addi r4, r1, 0x54
+/* 80357E80 00353CC0  4B E2 46 CD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80357E84 00353CC4  38 A1 00 60 */	addi r5, r1, 0x60
+/* 80357E88 00353CC8  90 A1 00 0C */	stw r5, 0xc(r1)
+/* 80357E8C 00353CCC  90 A1 00 08 */	stw r5, 8(r1)
+/* 80357E90 00353CD0  38 61 00 24 */	addi r3, r1, 0x24
+/* 80357E94 00353CD4  38 85 00 18 */	addi r4, r5, 0x18
+/* 80357E98 00353CD8  38 A5 00 0C */	addi r5, r5, 0xc
+/* 80357E9C 00353CDC  4B E4 76 A5 */	bl permittedNormalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 80357EA0 00353CE0  38 61 00 24 */	addi r3, r1, 0x24
+/* 80357EA4 00353CE4  4B E4 63 19 */	bl isZero__Q33hel4math7Vector3CFv
+/* 80357EA8 00353CE8  2C 03 00 00 */	cmpwi r3, 0
+/* 80357EAC 00353CEC  41 82 00 0C */	beq lbl_80357EB8
+/* 80357EB0 00353CF0  38 00 00 00 */	li r0, 0
+/* 80357EB4 00353CF4  48 00 00 14 */	b lbl_80357EC8
+lbl_80357EB8:
+/* 80357EB8 00353CF8  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 80357EBC 00353CFC  38 81 00 24 */	addi r4, r1, 0x24
+/* 80357EC0 00353D00  4B E2 46 8D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80357EC4 00353D04  38 00 00 01 */	li r0, 1
+lbl_80357EC8:
+/* 80357EC8 00353D08  2C 00 00 00 */	cmpwi r0, 0
+/* 80357ECC 00353D0C  41 82 00 10 */	beq lbl_80357EDC
+/* 80357ED0 00353D10  38 61 00 08 */	addi r3, r1, 8
+/* 80357ED4 00353D14  4B E4 63 79 */	bl restruct__Q43hel4math10Direction34LeftFv
+/* 80357ED8 00353D18  48 00 00 14 */	b lbl_80357EEC
+lbl_80357EDC:
+/* 80357EDC 00353D1C  38 61 00 08 */	addi r3, r1, 8
+/* 80357EE0 00353D20  4B E4 63 6D */	bl restruct__Q43hel4math10Direction34LeftFv
+/* 80357EE4 00353D24  38 61 00 0C */	addi r3, r1, 0xc
+/* 80357EE8 00353D28  4B E4 64 11 */	bl restruct__Q43hel4math10Direction35FrontFv
+lbl_80357EEC:
+/* 80357EEC 00353D2C  80 61 00 6C */	lwz r3, 0x6c(r1)
+/* 80357EF0 00353D30  80 01 00 70 */	lwz r0, 0x70(r1)
+/* 80357EF4 00353D34  90 61 00 18 */	stw r3, 0x18(r1)
+/* 80357EF8 00353D38  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80357EFC 00353D3C  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 80357F00 00353D40  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80357F04 00353D44  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 80357F08 00353D48  C0 22 CF 4C */	lfs f1, $$264466-_SDA2_BASE_(r2)
+/* 80357F0C 00353D4C  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80357F10 00353D50  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 80357F14 00353D54  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 80357F18 00353D58  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80357F1C 00353D5C  D0 01 00 1C */	stfs f0, 0x1c(r1)
+/* 80357F20 00353D60  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 80357F24 00353D64  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80357F28 00353D68  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 80357F2C 00353D6C  38 61 00 48 */	addi r3, r1, 0x48
+/* 80357F30 00353D70  38 81 00 18 */	addi r4, r1, 0x18
+/* 80357F34 00353D74  4B E2 46 95 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80357F38 00353D78  C0 21 00 50 */	lfs f1, 0x50(r1)
+/* 80357F3C 00353D7C  C0 02 CF 58 */	lfs f0, $$264812-_SDA2_BASE_(r2)
+/* 80357F40 00353D80  EC 01 00 2A */	fadds f0, f1, f0
+/* 80357F44 00353D84  D0 01 00 50 */	stfs f0, 0x50(r1)
+/* 80357F48 00353D88  7F C3 F3 78 */	mr r3, r30
+/* 80357F4C 00353D8C  4B D1 D7 E5 */	bl GKI_getfirst
+/* 80357F50 00353D90  4B EA D6 79 */	bl commander__Q33scn10grandtitle9ComponentFv
+/* 80357F54 00353D94  7C 7F 1B 78 */	mr r31, r3
+/* 80357F58 00353D98  7F C3 F3 78 */	mr r3, r30
+/* 80357F5C 00353D9C  4B FE 83 A9 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80357F60 00353DA0  7C 64 1B 78 */	mr r4, r3
+/* 80357F64 00353DA4  38 61 00 30 */	addi r3, r1, 0x30
+/* 80357F68 00353DA8  4B F1 77 4D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80357F6C 00353DAC  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80357F70 00353DB0  38 81 00 30 */	addi r4, r1, 0x30
+/* 80357F74 00353DB4  38 A1 00 48 */	addi r5, r1, 0x48
+/* 80357F78 00353DB8  4B E3 D5 69 */	bl __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 80357F7C 00353DBC  38 7F 00 08 */	addi r3, r31, 8
+/* 80357F80 00353DC0  38 80 00 4C */	li r4, 0x4c
+/* 80357F84 00353DC4  38 A1 00 3C */	addi r5, r1, 0x3c
+/* 80357F88 00353DC8  38 C1 00 60 */	addi r6, r1, 0x60
+/* 80357F8C 00353DCC  4B F1 FF F1 */	bl requestPD__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 80357F90 00353DD0  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 80357F94 00353DD4  83 C1 00 88 */	lwz r30, 0x88(r1)
+/* 80357F98 00353DD8  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 80357F9C 00353DDC  7C 08 03 A6 */	mtlr r0
+/* 80357FA0 00353DE0  38 21 00 90 */	addi r1, r1, 0x90
+/* 80357FA4 00353DE4  4E 80 00 20 */	blr 
+
+.global ReqNakigoe__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ReqNakigoe__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80357FA8 00353DE8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80357FAC 00353DEC  7C 08 02 A6 */	mflr r0
+/* 80357FB0 00353DF0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80357FB4 00353DF4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80357FB8 00353DF8  7C 7F 1B 78 */	mr r31, r3
+/* 80357FBC 00353DFC  4B FE 83 B1 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 80357FC0 00353E00  4B DC 8E B1 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 80357FC4 00353E04  2C 03 00 00 */	cmpwi r3, 0
+/* 80357FC8 00353E08  40 82 00 24 */	bne lbl_80357FEC
+/* 80357FCC 00353E0C  7F E3 FB 78 */	mr r3, r31
+/* 80357FD0 00353E10  4B FE 83 AD */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80357FD4 00353E14  88 03 00 20 */	lbz r0, 0x20(r3)
+/* 80357FD8 00353E18  2C 00 00 00 */	cmpwi r0, 0
+/* 80357FDC 00353E1C  40 82 00 10 */	bne lbl_80357FEC
+/* 80357FE0 00353E20  7F E3 FB 78 */	mr r3, r31
+/* 80357FE4 00353E24  4B FE 84 E1 */	bl cry__Q43scn4step4hero4HeroFv
+/* 80357FE8 00353E28  4B FD C7 BD */	bl requestCry__Q43scn4step4hero3CryFv
+lbl_80357FEC:
+/* 80357FEC 00353E2C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80357FF0 00353E30  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80357FF4 00353E34  7C 08 03 A6 */	mtlr r0
+/* 80357FF8 00353E38  38 21 00 10 */	addi r1, r1, 0x10
+/* 80357FFC 00353E3C  4E 80 00 20 */	blr 
+
+.global ReqKakegoe__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ReqKakegoe__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80358000 00353E40  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80358004 00353E44  7C 08 02 A6 */	mflr r0
+/* 80358008 00353E48  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035800C 00353E4C  4B FE 84 B9 */	bl cry__Q43scn4step4hero4HeroFv
+/* 80358010 00353E50  4B FD C8 05 */	bl requestShout__Q43scn4step4hero3CryFv
+/* 80358014 00353E54  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80358018 00353E58  7C 08 03 A6 */	mtlr r0
+/* 8035801C 00353E5C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80358020 00353E60  4E 80 00 20 */	blr 
+
+.global CreateEffectLocator__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CreateEffectLocator__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80358024 00353E64  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 80358028 00353E68  7C 08 02 A6 */	mflr r0
+/* 8035802C 00353E6C  90 01 00 74 */	stw r0, 0x74(r1)
+/* 80358030 00353E70  39 61 00 70 */	addi r11, r1, 0x70
+/* 80358034 00353E74  4B CA F3 11 */	bl func_80007344
+/* 80358038 00353E78  7C 7D 1B 78 */	mr r29, r3
+/* 8035803C 00353E7C  7C 9E 23 78 */	mr r30, r4
+/* 80358040 00353E80  7F C3 F3 78 */	mr r3, r30
+/* 80358044 00353E84  4B FE 83 19 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80358048 00353E88  38 63 00 08 */	addi r3, r3, 8
+/* 8035804C 00353E8C  4B E6 5C 0D */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 80358050 00353E90  7C 7F 1B 78 */	mr r31, r3
+/* 80358054 00353E94  7F C3 F3 78 */	mr r3, r30
+/* 80358058 00353E98  4B FE 82 AD */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035805C 00353E9C  7C 64 1B 78 */	mr r4, r3
+/* 80358060 00353EA0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80358064 00353EA4  4B F1 76 51 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80358068 00353EA8  38 61 00 08 */	addi r3, r1, 8
+/* 8035806C 00353EAC  38 81 00 10 */	addi r4, r1, 0x10
+/* 80358070 00353EB0  4B E6 AB 5D */	bl getXY__Q33hel4math7Vector3CFv
+/* 80358074 00353EB4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80358078 00353EB8  38 80 00 26 */	li r4, 0x26
+/* 8035807C 00353EBC  38 A0 00 00 */	li r5, 0
+/* 80358080 00353EC0  38 C0 00 01 */	li r6, 1
+/* 80358084 00353EC4  38 E1 00 08 */	addi r7, r1, 8
+/* 80358088 00353EC8  39 0D EE 28 */	addi r8, r13, ZERO__Q33hel4math7Vector2-_SDA_BASE_
+/* 8035808C 00353ECC  7F E9 FB 78 */	mr r9, r31
+/* 80358090 00353ED0  48 07 E0 65 */	bl __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ33hel4math7Vector2RCQ33hel4math7Vector2RQ25ocoll5Owner
+/* 80358094 00353ED4  7F C3 F3 78 */	mr r3, r30
+/* 80358098 00353ED8  4B D1 D6 99 */	bl GKI_getfirst
+/* 8035809C 00353EDC  4B EC 8D 29 */	bl weaponManager__Q33scn4step9ComponentFv
+/* 803580A0 00353EE0  7C 64 1B 78 */	mr r4, r3
+/* 803580A4 00353EE4  7F A3 EB 78 */	mr r3, r29
+/* 803580A8 00353EE8  38 A1 00 20 */	addi r5, r1, 0x20
+/* 803580AC 00353EEC  48 07 E9 D9 */	bl request__Q43scn4step6weapon7ManagerFRCQ43scn4step6weapon4Desc
+/* 803580B0 00353EF0  39 61 00 70 */	addi r11, r1, 0x70
+/* 803580B4 00353EF4  4B CA F2 DD */	bl func_80007390
+/* 803580B8 00353EF8  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 803580BC 00353EFC  7C 08 03 A6 */	mtlr r0
+/* 803580C0 00353F00  38 21 00 70 */	addi r1, r1, 0x70
+/* 803580C4 00353F04  4E 80 00 20 */	blr 
+
+.global CanWaterLanding__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CanWaterLanding__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803580C8 00353F08  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803580CC 00353F0C  7C 08 02 A6 */	mflr r0
+/* 803580D0 00353F10  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803580D4 00353F14  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803580D8 00353F18  7C 7F 1B 78 */	mr r31, r3
+/* 803580DC 00353F1C  4B FE 82 91 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 803580E0 00353F20  4B DC 8D 91 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 803580E4 00353F24  2C 03 00 00 */	cmpwi r3, 0
+/* 803580E8 00353F28  40 82 00 B0 */	bne lbl_80358198
+/* 803580EC 00353F2C  7F E3 FB 78 */	mr r3, r31
+/* 803580F0 00353F30  4B FE 82 F5 */	bl additionalMove__Q43scn4step4hero4HeroFv
+/* 803580F4 00353F34  4B E5 E7 9D */	bl queryVelocity__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 803580F8 00353F38  7C 64 1B 78 */	mr r4, r3
+/* 803580FC 00353F3C  38 61 00 08 */	addi r3, r1, 8
+/* 80358100 00353F40  4B DF 38 69 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80358104 00353F44  3B E0 00 00 */	li r31, 0
+/* 80358108 00353F48  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8035810C 00353F4C  C0 4D EE 28 */	lfs f2, ZERO__Q33hel4math7Vector2-_SDA_BASE_(r13)
+/* 80358110 00353F50  C0 62 CF 5C */	lfs f3, $$264893-_SDA2_BASE_(r2)
+/* 80358114 00353F54  4B E5 D8 21 */	bl Equals__Q33hel4math4MathFfff
+/* 80358118 00353F58  2C 03 00 00 */	cmpwi r3, 0
+/* 8035811C 00353F5C  41 82 00 24 */	beq lbl_80358140
+/* 80358120 00353F60  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 80358124 00353F64  38 6D EE 28 */	addi r3, r13, ZERO__Q33hel4math7Vector2-_SDA_BASE_
+/* 80358128 00353F68  C0 43 00 04 */	lfs f2, 4(r3)
+/* 8035812C 00353F6C  C0 62 CF 5C */	lfs f3, $$264893-_SDA2_BASE_(r2)
+/* 80358130 00353F70  4B E5 D8 05 */	bl Equals__Q33hel4math4MathFfff
+/* 80358134 00353F74  2C 03 00 00 */	cmpwi r3, 0
+/* 80358138 00353F78  41 82 00 08 */	beq lbl_80358140
+/* 8035813C 00353F7C  3B E0 00 01 */	li r31, 1
+lbl_80358140:
+/* 80358140 00353F80  2C 1F 00 00 */	cmpwi r31, 0
+/* 80358144 00353F84  40 82 00 54 */	bne lbl_80358198
+/* 80358148 00353F88  C0 21 00 08 */	lfs f1, 8(r1)
+/* 8035814C 00353F8C  C0 02 CF 5C */	lfs f0, $$264893-_SDA2_BASE_(r2)
+/* 80358150 00353F90  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80358154 00353F94  40 80 00 18 */	bge lbl_8035816C
+/* 80358158 00353F98  C0 02 CF 60 */	lfs f0, $$264894-_SDA2_BASE_(r2)
+/* 8035815C 00353F9C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80358160 00353FA0  40 81 00 0C */	ble lbl_8035816C
+/* 80358164 00353FA4  38 00 00 01 */	li r0, 1
+/* 80358168 00353FA8  48 00 00 08 */	b lbl_80358170
+lbl_8035816C:
+/* 8035816C 00353FAC  38 00 00 00 */	li r0, 0
+lbl_80358170:
+/* 80358170 00353FB0  2C 00 00 00 */	cmpwi r0, 0
+/* 80358174 00353FB4  41 82 00 1C */	beq lbl_80358190
+/* 80358178 00353FB8  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 8035817C 00353FBC  C0 02 CF 60 */	lfs f0, $$264894-_SDA2_BASE_(r2)
+/* 80358180 00353FC0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80358184 00353FC4  40 80 00 0C */	bge lbl_80358190
+/* 80358188 00353FC8  38 60 00 01 */	li r3, 1
+/* 8035818C 00353FCC  48 00 00 10 */	b lbl_8035819C
+lbl_80358190:
+/* 80358190 00353FD0  38 60 00 00 */	li r3, 0
+/* 80358194 00353FD4  48 00 00 08 */	b lbl_8035819C
+lbl_80358198:
+/* 80358198 00353FD8  38 60 00 01 */	li r3, 1
+lbl_8035819C:
+/* 8035819C 00353FDC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803581A0 00353FE0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803581A4 00353FE4  7C 08 03 A6 */	mtlr r0
+/* 803581A8 00353FE8  38 21 00 20 */	addi r1, r1, 0x20
+/* 803581AC 00353FEC  4E 80 00 20 */	blr 
+
+.global IsSearchCollideNoStarEffect__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsSearchCollideNoStarEffect__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803581B0 00353FF0  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803581B4 00353FF4  7C 08 02 A6 */	mflr r0
+/* 803581B8 00353FF8  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803581BC 00353FFC  39 61 00 40 */	addi r11, r1, 0x40
+/* 803581C0 00354000  4B CA F1 79 */	bl func_80007338
+/* 803581C4 00354004  7C 7A 1B 78 */	mr r26, r3
+/* 803581C8 00354008  4B FE 81 95 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803581CC 0035400C  38 63 00 08 */	addi r3, r3, 8
+/* 803581D0 00354010  4B F1 A1 81 */	bl searchHit__Q43scn4step5chara7ObjCollFv
+/* 803581D4 00354014  7C 7E 1B 78 */	mr r30, r3
+/* 803581D8 00354018  4B E8 11 C9 */	bl isCollide__Q25ocoll9SearchHitCFv
+/* 803581DC 0035401C  2C 03 00 00 */	cmpwi r3, 0
+/* 803581E0 00354020  40 82 00 0C */	bne lbl_803581EC
+/* 803581E4 00354024  38 60 00 00 */	li r3, 0
+/* 803581E8 00354028  48 00 00 F0 */	b lbl_803582D8
+lbl_803581EC:
+/* 803581EC 0035402C  3B A0 00 00 */	li r29, 0
+/* 803581F0 00354030  48 00 00 D4 */	b lbl_803582C4
+lbl_803581F4:
+/* 803581F4 00354034  7F C3 F3 78 */	mr r3, r30
+/* 803581F8 00354038  7F A4 EB 78 */	mr r4, r29
+/* 803581FC 0035403C  4B E8 11 B5 */	bl getCollidedHitOwnerUid__Q25ocoll9SearchHitCFUl
+/* 80358200 00354040  7C 9C 23 78 */	mr r28, r4
+/* 80358204 00354044  7C 7F 1B 78 */	mr r31, r3
+/* 80358208 00354048  3B 60 00 00 */	li r27, 0
+/* 8035820C 0035404C  7F 43 D3 78 */	mr r3, r26
+/* 80358210 00354050  4B D1 D5 21 */	bl GKI_getfirst
+/* 80358214 00354054  4B EC 8C 21 */	bl enemyManager__Q33scn4step9ComponentFv
+/* 80358218 00354058  7C 64 1B 78 */	mr r4, r3
+/* 8035821C 0035405C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80358220 00354060  7F 86 E3 78 */	mr r6, r28
+/* 80358224 00354064  7F E5 FB 78 */	mr r5, r31
+/* 80358228 00354068  4B F3 18 01 */	bl getEnemyByOCollOwnerUID__Q43scn4step5enemy7ManagerFUx
+/* 8035822C 0035406C  80 61 00 24 */	lwz r3, 0x24(r1)
+/* 80358230 00354070  2C 03 00 00 */	cmpwi r3, 0
+/* 80358234 00354074  41 82 00 24 */	beq lbl_80358258
+/* 80358238 00354078  4B CD E9 29 */	bl GXGetTexObjUserData
+/* 8035823C 0035407C  2C 03 00 66 */	cmpwi r3, 0x66
+/* 80358240 00354080  41 82 00 0C */	beq lbl_8035824C
+/* 80358244 00354084  2C 03 00 77 */	cmpwi r3, 0x77
+/* 80358248 00354088  40 82 00 0C */	bne lbl_80358254
+lbl_8035824C:
+/* 8035824C 0035408C  3B 60 00 00 */	li r27, 0
+/* 80358250 00354090  48 00 00 08 */	b lbl_80358258
+lbl_80358254:
+/* 80358254 00354094  3B 60 00 01 */	li r27, 1
+lbl_80358258:
+/* 80358258 00354098  7F 43 D3 78 */	mr r3, r26
+/* 8035825C 0035409C  4B D1 D4 D5 */	bl GKI_getfirst
+/* 80358260 003540A0  4B EC 8C 09 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80358264 003540A4  7C 64 1B 78 */	mr r4, r3
+/* 80358268 003540A8  38 61 00 08 */	addi r3, r1, 8
+/* 8035826C 003540AC  7F 86 E3 78 */	mr r6, r28
+/* 80358270 003540B0  7F E5 FB 78 */	mr r5, r31
+/* 80358274 003540B4  4B ED 96 89 */	bl getBossByObjCollOwnerID__Q43scn4step4boss7ManagerFUx
+/* 80358278 003540B8  38 61 00 08 */	addi r3, r1, 8
+/* 8035827C 003540BC  4B E3 04 4D */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80358280 003540C0  7C 7F 1B 78 */	mr r31, r3
+/* 80358284 003540C4  38 61 00 08 */	addi r3, r1, 8
+/* 80358288 003540C8  38 80 FF FF */	li r4, -1
+/* 8035828C 003540CC  4B EC F5 B5 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4boss4Boss$$1Fv
+/* 80358290 003540D0  2C 1B 00 00 */	cmpwi r27, 0
+/* 80358294 003540D4  40 82 00 0C */	bne lbl_803582A0
+/* 80358298 003540D8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8035829C 003540DC  41 82 00 18 */	beq lbl_803582B4
+lbl_803582A0:
+/* 803582A0 003540E0  38 61 00 18 */	addi r3, r1, 0x18
+/* 803582A4 003540E4  38 80 FF FF */	li r4, -1
+/* 803582A8 003540E8  4B ED D0 61 */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 803582AC 003540EC  38 60 00 01 */	li r3, 1
+/* 803582B0 003540F0  48 00 00 28 */	b lbl_803582D8
+lbl_803582B4:
+/* 803582B4 003540F4  38 61 00 18 */	addi r3, r1, 0x18
+/* 803582B8 003540F8  38 80 FF FF */	li r4, -1
+/* 803582BC 003540FC  4B ED D0 4D */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 803582C0 00354100  3B BD 00 01 */	addi r29, r29, 1
+lbl_803582C4:
+/* 803582C4 00354104  7F C3 F3 78 */	mr r3, r30
+/* 803582C8 00354108  4B E8 10 E1 */	bl getCollidedNum__Q25ocoll9SearchHitCFv
+/* 803582CC 0035410C  7C 1D 18 40 */	cmplw r29, r3
+/* 803582D0 00354110  41 80 FF 24 */	blt lbl_803581F4
+/* 803582D4 00354114  38 60 00 00 */	li r3, 0
+lbl_803582D8:
+/* 803582D8 00354118  39 61 00 40 */	addi r11, r1, 0x40
+/* 803582DC 0035411C  4B CA F0 A9 */	bl func_80007384
+/* 803582E0 00354120  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 803582E4 00354124  7C 08 03 A6 */	mtlr r0
+/* 803582E8 00354128  38 21 00 40 */	addi r1, r1, 0x40
+/* 803582EC 0035412C  4E 80 00 20 */	blr 
+
+.global SetupInfo__Q43scn4step4hero7UtilityFRQ43scn4step4info9HeroPanelQ43scn4step4hero4KindQ43scn4step4hero11AbilityKindbbb
+SetupInfo__Q43scn4step4hero7UtilityFRQ43scn4step4info9HeroPanelQ43scn4step4hero4KindQ43scn4step4hero11AbilityKindbbb:
+/* 803582F0 00354130  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803582F4 00354134  7C 08 02 A6 */	mflr r0
+/* 803582F8 00354138  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803582FC 0035413C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80358300 00354140  93 C1 00 08 */	stw r30, 8(r1)
+/* 80358304 00354144  7C 7E 1B 78 */	mr r30, r3
+/* 80358308 00354148  7D 1F 43 78 */	mr r31, r8
+/* 8035830C 0035414C  7C E6 3B 78 */	mr r6, r7
+/* 80358310 00354150  48 05 04 A1 */	bl appear__Q43scn4step4info9HeroPanelFQ43scn4step4hero4KindQ43scn4step4hero11AbilityKindb
+/* 80358314 00354154  7F C3 F3 78 */	mr r3, r30
+/* 80358318 00354158  2C 1F 00 00 */	cmpwi r31, 0
+/* 8035831C 0035415C  41 82 00 0C */	beq lbl_80358328
+/* 80358320 00354160  C0 22 CC 04 */	lfs f1, LIFE_BAR_LENGTH_EXTRA__Q43scn4step4hero8Constant-_SDA2_BASE_(r2)
+/* 80358324 00354164  48 00 00 08 */	b lbl_8035832C
+lbl_80358328:
+/* 80358328 00354168  C0 22 CC 00 */	lfs f1, LIFE_BAR_LENGTH_MAIN__Q43scn4step4hero8Constant-_SDA2_BASE_(r2)
+lbl_8035832C:
+/* 8035832C 0035416C  48 05 06 E1 */	bl lifeSetLength__Q43scn4step4info9HeroPanelFf
+/* 80358330 00354170  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80358334 00354174  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80358338 00354178  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035833C 0035417C  7C 08 03 A6 */	mtlr r0
+/* 80358340 00354180  38 21 00 10 */	addi r1, r1, 0x10
+/* 80358344 00354184  4E 80 00 20 */	blr 
+
+.global CanSceneChange__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CanSceneChange__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80358348 00354188  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035834C 0035418C  7C 08 02 A6 */	mflr r0
+/* 80358350 00354190  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80358354 00354194  4B D1 D3 DD */	bl GKI_getfirst
+/* 80358358 00354198  4B EC 8A A1 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8035835C 0035419C  4B FE FB CD */	bl isAnyOneAnyWhereInWaiting__Q43scn4step4hero7ManagerCFv
+/* 80358360 003541A0  7C 60 00 34 */	cntlzw r0, r3
+/* 80358364 003541A4  54 03 D9 7E */	srwi r3, r0, 5
+/* 80358368 003541A8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035836C 003541AC  7C 08 03 A6 */	mtlr r0
+/* 80358370 003541B0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80358374 003541B4  4E 80 00 20 */	blr 
+
+.global RequestBubbleRollAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroUl
+RequestBubbleRollAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroUl:
+/* 80358378 003541B8  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 8035837C 003541BC  7C 08 02 A6 */	mflr r0
+/* 80358380 003541C0  90 01 00 84 */	stw r0, 0x84(r1)
+/* 80358384 003541C4  DB E1 00 70 */	stfd f31, 0x70(r1)
+/* 80358388 003541C8  F3 E1 00 78 */	psq_st f31, 120(r1), 0, qr0
+/* 8035838C 003541CC  DB C1 00 60 */	stfd f30, 0x60(r1)
+/* 80358390 003541D0  F3 C1 00 68 */	psq_st f30, 104(r1), 0, qr0
+/* 80358394 003541D4  DB A1 00 50 */	stfd f29, 0x50(r1)
+/* 80358398 003541D8  F3 A1 00 58 */	psq_st f29, 88(r1), 0, qr0
+/* 8035839C 003541DC  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 803583A0 003541E0  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 803583A4 003541E4  7C 7E 1B 78 */	mr r30, r3
+/* 803583A8 003541E8  7C 9F 23 78 */	mr r31, r4
+/* 803583AC 003541EC  54 80 07 FE */	clrlwi r0, r4, 0x1f
+/* 803583B0 003541F0  2C 00 00 00 */	cmpwi r0, 0
+/* 803583B4 003541F4  40 82 01 00 */	bne lbl_803584B4
+/* 803583B8 003541F8  4B FE 7F 4D */	bl location__Q43scn4step4hero4HeroCFv
+/* 803583BC 003541FC  7C 64 1B 78 */	mr r4, r3
+/* 803583C0 00354200  38 61 00 30 */	addi r3, r1, 0x30
+/* 803583C4 00354204  4B F1 73 01 */	bl centerPos__Q43scn4step5chara8LocationCFv
+/* 803583C8 00354208  38 61 00 28 */	addi r3, r1, 0x28
+/* 803583CC 0035420C  38 81 00 30 */	addi r4, r1, 0x30
+/* 803583D0 00354210  4B E6 A7 FD */	bl getXY__Q33hel4math7Vector3CFv
+/* 803583D4 00354214  7F C3 F3 78 */	mr r3, r30
+/* 803583D8 00354218  4B FE 7F 1D */	bl target__Q43scn4step4hero4HeroFv
+/* 803583DC 0035421C  4B E4 3C C5 */	bl getSign__Q24gobj6TargetCFv
+/* 803583E0 00354220  57 E0 F8 7E */	srwi r0, r31, 1
+/* 803583E4 00354224  C8 42 CF 78 */	lfd f2, $$265003-_SDA2_BASE_(r2)
+/* 803583E8 00354228  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803583EC 0035422C  3C 00 43 30 */	lis r0, 0x4330
+/* 803583F0 00354230  90 01 00 40 */	stw r0, 0x40(r1)
+/* 803583F4 00354234  C8 01 00 40 */	lfd f0, 0x40(r1)
+/* 803583F8 00354238  EC 40 10 28 */	fsubs f2, f0, f2
+/* 803583FC 0035423C  C0 02 CF 68 */	lfs f0, $$264998-_SDA2_BASE_(r2)
+/* 80358400 00354240  EC 00 00 B2 */	fmuls f0, f0, f2
+/* 80358404 00354244  FC 00 00 50 */	fneg f0, f0
+/* 80358408 00354248  EF A0 00 72 */	fmuls f29, f0, f1
+/* 8035840C 0035424C  7F C3 F3 78 */	mr r3, r30
+/* 80358410 00354250  4B FE 7E E5 */	bl target__Q43scn4step4hero4HeroFv
+/* 80358414 00354254  4B E2 92 C1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80358418 00354258  2C 03 00 00 */	cmpwi r3, 0
+/* 8035841C 0035425C  40 82 00 0C */	bne lbl_80358428
+/* 80358420 00354260  C0 02 CF 6C */	lfs f0, $$264999-_SDA2_BASE_(r2)
+/* 80358424 00354264  EF BD 00 2A */	fadds f29, f29, f0
+lbl_80358428:
+/* 80358428 00354268  C0 22 CF 50 */	lfs f1, $$264495-_SDA2_BASE_(r2)
+/* 8035842C 0035426C  C0 42 CF 58 */	lfs f2, $$264812-_SDA2_BASE_(r2)
+/* 80358430 00354270  4B E2 26 59 */	bl RandF__Q23app6RandomFff
+/* 80358434 00354274  FF C0 08 90 */	fmr f30, f1
+/* 80358438 00354278  C0 02 CF 70 */	lfs f0, $$265000-_SDA2_BASE_(r2)
+/* 8035843C 0035427C  EC 20 07 72 */	fmuls f1, f0, f29
+/* 80358440 00354280  4B DA 66 61 */	bl SinFIdx__Q24nw4r4mathFf
+/* 80358444 00354284  FF E0 08 90 */	fmr f31, f1
+/* 80358448 00354288  C0 02 CF 70 */	lfs f0, $$265000-_SDA2_BASE_(r2)
+/* 8035844C 0035428C  EC 20 07 72 */	fmuls f1, f0, f29
+/* 80358450 00354290  4B DA 66 D1 */	bl CosFIdx__Q24nw4r4mathFf
+/* 80358454 00354294  38 61 00 20 */	addi r3, r1, 0x20
+/* 80358458 00354298  EC 3E 00 72 */	fmuls f1, f30, f1
+/* 8035845C 0035429C  EC 5E 07 F2 */	fmuls f2, f30, f31
+/* 80358460 003542A0  4B E4 6F 49 */	bl set__Q33hel4math7Vector2Fff
+/* 80358464 003542A4  80 02 CF 64 */	lwz r0, $$261260-_SDA2_BASE_(r2)
+/* 80358468 003542A8  90 01 00 08 */	stw r0, 8(r1)
+/* 8035846C 003542AC  38 61 00 18 */	addi r3, r1, 0x18
+/* 80358470 003542B0  38 81 00 28 */	addi r4, r1, 0x28
+/* 80358474 003542B4  38 A1 00 20 */	addi r5, r1, 0x20
+/* 80358478 003542B8  4B E4 81 19 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035847C 003542BC  7F C3 F3 78 */	mr r3, r30
+/* 80358480 003542C0  4B D1 D2 B1 */	bl GKI_getfirst
+/* 80358484 003542C4  4B EC 8A 81 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 80358488 003542C8  38 81 00 18 */	addi r4, r1, 0x18
+/* 8035848C 003542CC  38 A1 00 08 */	addi r5, r1, 8
+/* 80358490 003542D0  4B F2 23 3D */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RC8_GXColor
+/* 80358494 003542D4  38 61 00 10 */	addi r3, r1, 0x10
+/* 80358498 003542D8  38 81 00 28 */	addi r4, r1, 0x28
+/* 8035849C 003542DC  38 A1 00 20 */	addi r5, r1, 0x20
+/* 803584A0 003542E0  4B E4 80 F1 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 803584A4 003542E4  7F C3 F3 78 */	mr r3, r30
+/* 803584A8 003542E8  4B FE 7F 5D */	bl water__Q43scn4step4hero4HeroFv
+/* 803584AC 003542EC  38 81 00 10 */	addi r4, r1, 0x10
+/* 803584B0 003542F0  48 00 29 25 */	bl requestBubble__Q43scn4step4hero5WaterFRCQ33hel4math7Vector2
+lbl_803584B4:
+/* 803584B4 003542F4  38 00 00 78 */	li r0, 0x78
+/* 803584B8 003542F8  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803584BC 003542FC  CB E1 00 70 */	lfd f31, 0x70(r1)
+/* 803584C0 00354300  38 00 00 68 */	li r0, 0x68
+/* 803584C4 00354304  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 803584C8 00354308  CB C1 00 60 */	lfd f30, 0x60(r1)
+/* 803584CC 0035430C  38 00 00 58 */	li r0, 0x58
+/* 803584D0 00354310  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 803584D4 00354314  CB A1 00 50 */	lfd f29, 0x50(r1)
+/* 803584D8 00354318  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 803584DC 0035431C  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 803584E0 00354320  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 803584E4 00354324  7C 08 03 A6 */	mtlr r0
+/* 803584E8 00354328  38 21 00 80 */	addi r1, r1, 0x80
+/* 803584EC 0035432C  4E 80 00 20 */	blr 
+
+.global ChkDiscardSleep__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ChkDiscardSleep__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803584F0 00354330  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803584F4 00354334  7C 08 02 A6 */	mflr r0
+/* 803584F8 00354338  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803584FC 0035433C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80358500 00354340  7C 7F 1B 78 */	mr r31, r3
+/* 80358504 00354344  4B FE 7E 71 */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 80358508 00354348  4B DC 89 69 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 8035850C 0035434C  2C 03 00 0A */	cmpwi r3, 0xa
+/* 80358510 00354350  40 82 00 10 */	bne lbl_80358520
+/* 80358514 00354354  7F E3 FB 78 */	mr r3, r31
+/* 80358518 00354358  4B FE 7E 5D */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 8035851C 0035435C  4B CC BF 85 */	bl DefaultSwitchThreadCallback
+lbl_80358520:
+/* 80358520 00354360  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80358524 00354364  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80358528 00354368  7C 08 03 A6 */	mtlr r0
+/* 8035852C 0035436C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80358530 00354370  4E 80 00 20 */	blr 
+
+.global ChkLogoutForce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ChkLogoutForce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80358534 00354374  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80358538 00354378  7C 08 02 A6 */	mflr r0
+/* 8035853C 0035437C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80358540 00354380  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80358544 00354384  7C 7F 1B 78 */	mr r31, r3
+/* 80358548 00354388  4B FE 7E D5 */	bl logoutController__Q43scn4step4hero4HeroFv
+/* 8035854C 0035438C  4B FE C8 61 */	bl isLogoutForce__Q43scn4step4hero16LogoutControllerCFv
+/* 80358550 00354390  2C 03 00 00 */	cmpwi r3, 0
+/* 80358554 00354394  41 82 00 14 */	beq lbl_80358568
+/* 80358558 00354398  7F E3 FB 78 */	mr r3, r31
+/* 8035855C 0035439C  4B FF DD 69 */	bl ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80358560 003543A0  38 60 00 01 */	li r3, 1
+/* 80358564 003543A4  48 00 00 08 */	b lbl_8035856C
+lbl_80358568:
+/* 80358568 003543A8  38 60 00 00 */	li r3, 0
+lbl_8035856C:
+/* 8035856C 003543AC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80358570 003543B0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80358574 003543B4  7C 08 03 A6 */	mtlr r0
+/* 80358578 003543B8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035857C 003543BC  4E 80 00 20 */	blr 
+
+.global IsSeparateProcessMyTurn__Q43scn4step4hero7UtilityFRCQ43scn4step4hero4Hero
+IsSeparateProcessMyTurn__Q43scn4step4hero7UtilityFRCQ43scn4step4hero4Hero:
+/* 80358580 003543C0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80358584 003543C4  7C 08 02 A6 */	mflr r0
+/* 80358588 003543C8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035858C 003543CC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80358590 003543D0  7C 7F 1B 78 */	mr r31, r3
+/* 80358594 003543D4  4B D1 D1 9D */	bl GKI_getfirst
+/* 80358598 003543D8  4B EC 88 61 */	bl heroManager__Q33scn4step9ComponentFv
+/* 8035859C 003543DC  4B FE FB 69 */	bl processSeparator__Q43scn4step4hero7ManagerCFv
+/* 803585A0 003543E0  7F E4 FB 78 */	mr r4, r31
+/* 803585A4 003543E4  4B FF BB 05 */	bl isMyTurn__Q43scn4step4hero16ProcessSeparatorCFRCQ43scn4step4hero4Hero
+/* 803585A8 003543E8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803585AC 003543EC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803585B0 003543F0  7C 08 03 A6 */	mtlr r0
+/* 803585B4 003543F4  38 21 00 10 */	addi r1, r1, 0x10
+/* 803585B8 003543F8  4E 80 00 20 */	blr 
+
+.global CanBoundByCheapAttack__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+CanBoundByCheapAttack__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803585BC 003543FC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803585C0 00354400  7C 08 02 A6 */	mflr r0
+/* 803585C4 00354404  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803585C8 00354408  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 803585CC 0035440C  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 803585D0 00354410  39 61 00 40 */	addi r11, r1, 0x40
+/* 803585D4 00354414  4B CA ED 71 */	bl func_80007344
+/* 803585D8 00354418  7C 7D 1B 78 */	mr r29, r3
+/* 803585DC 0035441C  4B FE 7D 81 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803585E0 00354420  38 63 00 08 */	addi r3, r3, 8
+/* 803585E4 00354424  4B F1 9D 65 */	bl attack__Q43scn4step5chara7ObjCollFv
+/* 803585E8 00354428  4B E7 BD C5 */	bl getCollidedHitResistLv__Q25ocoll6AttackCFv
+/* 803585EC 0035442C  28 03 00 02 */	cmplwi r3, 2
+/* 803585F0 00354430  40 80 00 0C */	bge lbl_803585FC
+/* 803585F4 00354434  38 60 00 00 */	li r3, 0
+/* 803585F8 00354438  48 00 00 C8 */	b lbl_803586C0
+lbl_803585FC:
+/* 803585FC 0035443C  7F A3 EB 78 */	mr r3, r29
+/* 80358600 00354440  4B FE 7D 5D */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80358604 00354444  38 63 00 08 */	addi r3, r3, 8
+/* 80358608 00354448  4B F1 9D 41 */	bl attack__Q43scn4step5chara7ObjCollFv
+/* 8035860C 0035444C  4B E7 BE 25 */	bl getCollidedHitOwnerUidResisted__Q25ocoll6AttackCFv
+/* 80358610 00354450  7C 9E 23 78 */	mr r30, r4
+/* 80358614 00354454  7C 7F 1B 78 */	mr r31, r3
+/* 80358618 00354458  7F A3 EB 78 */	mr r3, r29
+/* 8035861C 0035445C  4B D1 D1 15 */	bl GKI_getfirst
+/* 80358620 00354460  4B EC 88 49 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80358624 00354464  7C 64 1B 78 */	mr r4, r3
+/* 80358628 00354468  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035862C 0035446C  7F C6 F3 78 */	mr r6, r30
+/* 80358630 00354470  7F E5 FB 78 */	mr r5, r31
+/* 80358634 00354474  4B ED 92 C9 */	bl getBossByObjCollOwnerID__Q43scn4step4boss7ManagerFUx
+/* 80358638 00354478  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035863C 0035447C  4B E3 00 8D */	bl wasSetParent__Q24file8FileTreeCFv
+/* 80358640 00354480  2C 03 00 00 */	cmpwi r3, 0
+/* 80358644 00354484  41 82 00 6C */	beq lbl_803586B0
+/* 80358648 00354488  83 C1 00 2C */	lwz r30, 0x2c(r1)
+/* 8035864C 0035448C  7F A3 EB 78 */	mr r3, r29
+/* 80358650 00354490  4B FE 7C B5 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80358654 00354494  7C 64 1B 78 */	mr r4, r3
+/* 80358658 00354498  38 61 00 08 */	addi r3, r1, 8
+/* 8035865C 0035449C  4B F1 70 59 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80358660 003544A0  C3 E1 00 08 */	lfs f31, 8(r1)
+/* 80358664 003544A4  7F C3 F3 78 */	mr r3, r30
+/* 80358668 003544A8  4B ED 48 C1 */	bl location__Q43scn4step4boss4BossCFv
+/* 8035866C 003544AC  7C 64 1B 78 */	mr r4, r3
+/* 80358670 003544B0  38 61 00 14 */	addi r3, r1, 0x14
+/* 80358674 003544B4  4B F1 70 41 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80358678 003544B8  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8035867C 003544BC  EF E0 F8 28 */	fsubs f31, f0, f31
+/* 80358680 003544C0  7F A3 EB 78 */	mr r3, r29
+/* 80358684 003544C4  4B FE 7C 71 */	bl target__Q43scn4step4hero4HeroFv
+/* 80358688 003544C8  4B E4 3A 19 */	bl getSign__Q24gobj6TargetCFv
+/* 8035868C 003544CC  EC 21 07 F2 */	fmuls f1, f1, f31
+/* 80358690 003544D0  C0 02 CF 40 */	lfs f0, $$264296-_SDA2_BASE_(r2)
+/* 80358694 003544D4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80358698 003544D8  40 80 00 18 */	bge lbl_803586B0
+/* 8035869C 003544DC  38 61 00 20 */	addi r3, r1, 0x20
+/* 803586A0 003544E0  38 80 FF FF */	li r4, -1
+/* 803586A4 003544E4  4B EC F1 9D */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4boss4Boss$$1Fv
+/* 803586A8 003544E8  38 60 00 00 */	li r3, 0
+/* 803586AC 003544EC  48 00 00 14 */	b lbl_803586C0
+lbl_803586B0:
+/* 803586B0 003544F0  38 61 00 20 */	addi r3, r1, 0x20
+/* 803586B4 003544F4  38 80 FF FF */	li r4, -1
+/* 803586B8 003544F8  4B EC F1 89 */	bl __dt__Q24util35ObjRefHandle$$0Q43scn4step4boss4Boss$$1Fv
+/* 803586BC 003544FC  38 60 00 01 */	li r3, 1
+lbl_803586C0:
+/* 803586C0 00354500  38 00 00 48 */	li r0, 0x48
+/* 803586C4 00354504  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803586C8 00354508  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 803586CC 0035450C  39 61 00 40 */	addi r11, r1, 0x40
+/* 803586D0 00354510  4B CA EC C1 */	bl func_80007390
+/* 803586D4 00354514  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 803586D8 00354518  7C 08 03 A6 */	mtlr r0
+/* 803586DC 0035451C  38 21 00 50 */	addi r1, r1, 0x50
+/* 803586E0 00354520  4E 80 00 20 */	blr 
+
+.global IsCollideCapturedEnemy__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+IsCollideCapturedEnemy__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 803586E4 00354524  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803586E8 00354528  7C 08 02 A6 */	mflr r0
+/* 803586EC 0035452C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803586F0 00354530  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803586F4 00354534  7C 7F 1B 78 */	mr r31, r3
+/* 803586F8 00354538  4B FE 7C 65 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803586FC 0035453C  38 63 00 08 */	addi r3, r3, 8
+/* 80358700 00354540  4B F1 9A 09 */	bl isAttackCollide__Q43scn4step5chara7ObjCollCFv
+/* 80358704 00354544  2C 03 00 00 */	cmpwi r3, 0
+/* 80358708 00354548  41 82 00 60 */	beq lbl_80358768
+/* 8035870C 0035454C  7F E3 FB 78 */	mr r3, r31
+/* 80358710 00354550  4B FE 7C B5 */	bl captureAttacker__Q43scn4step4hero4HeroFv
+/* 80358714 00354554  4B FD 98 49 */	bl isCapture__Q43scn4step4hero15CaptureAttackerCFv
+/* 80358718 00354558  2C 03 00 00 */	cmpwi r3, 0
+/* 8035871C 0035455C  41 82 00 2C */	beq lbl_80358748
+/* 80358720 00354560  7F E3 FB 78 */	mr r3, r31
+/* 80358724 00354564  4B FE 7C A1 */	bl captureAttacker__Q43scn4step4hero4HeroFv
+/* 80358728 00354568  38 80 03 E8 */	li r4, 0x3e8
+/* 8035872C 0035456C  4B FD 98 C1 */	bl decHp__Q43scn4step4hero15CaptureAttackerFUl
+/* 80358730 00354570  7F E3 FB 78 */	mr r3, r31
+/* 80358734 00354574  4B FE 7C 91 */	bl captureAttacker__Q43scn4step4hero4HeroFv
+/* 80358738 00354578  4B FD 9B 01 */	bl setDeadRelease__Q43scn4step4hero15CaptureAttackerFv
+/* 8035873C 0035457C  7F E3 FB 78 */	mr r3, r31
+/* 80358740 00354580  4B FE 7C 85 */	bl captureAttacker__Q43scn4step4hero4HeroFv
+/* 80358744 00354584  4B FD 97 B1 */	bl clearCapture__Q43scn4step4hero15CaptureAttackerFv
+lbl_80358748:
+/* 80358748 00354588  7F E3 FB 78 */	mr r3, r31
+/* 8035874C 0035458C  4B FE 7C 39 */	bl invincible__Q43scn4step4hero4HeroFv
+/* 80358750 00354590  38 80 00 3C */	li r4, 0x3c
+/* 80358754 00354594  4B FE 9C A9 */	bl set__Q43scn4step4hero10InvincibleFUl
+/* 80358758 00354598  7F E3 FB 78 */	mr r3, r31
+/* 8035875C 0035459C  4B FF DB 69 */	bl ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+/* 80358760 003545A0  38 60 00 01 */	li r3, 1
+/* 80358764 003545A4  48 00 00 08 */	b lbl_8035876C
+lbl_80358768:
+/* 80358768 003545A8  38 60 00 00 */	li r3, 0
+lbl_8035876C:
+/* 8035876C 003545AC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80358770 003545B0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80358774 003545B4  7C 08 03 A6 */	mtlr r0
+/* 80358778 003545B8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035877C 003545BC  4E 80 00 20 */	blr 
+
+.global ReqWaterFloatOutProduce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+ReqWaterFloatOutProduce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
+/* 80358780 003545C0  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 80358784 003545C4  7C 08 02 A6 */	mflr r0
+/* 80358788 003545C8  90 01 00 74 */	stw r0, 0x74(r1)
+/* 8035878C 003545CC  93 E1 00 6C */	stw r31, 0x6c(r1)
+/* 80358790 003545D0  93 C1 00 68 */	stw r30, 0x68(r1)
+/* 80358794 003545D4  7C 7E 1B 78 */	mr r30, r3
+/* 80358798 003545D8  4B FE 7B 6D */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035879C 003545DC  7C 64 1B 78 */	mr r4, r3
+/* 803587A0 003545E0  38 61 00 30 */	addi r3, r1, 0x30
+/* 803587A4 003545E4  4B F1 6F 11 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803587A8 003545E8  C0 21 00 34 */	lfs f1, 0x34(r1)
+/* 803587AC 003545EC  C0 02 CF 44 */	lfs f0, $$264442-_SDA2_BASE_(r2)
+/* 803587B0 003545F0  EC 01 00 2A */	fadds f0, f1, f0
+/* 803587B4 003545F4  D0 01 00 34 */	stfs f0, 0x34(r1)
+/* 803587B8 003545F8  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803587BC 003545FC  4B E2 3D 39 */	bl __ct__Q33hel4math7Vector3Fv
+/* 803587C0 00354600  38 61 00 48 */	addi r3, r1, 0x48
+/* 803587C4 00354604  4B E2 3D 31 */	bl __ct__Q33hel4math7Vector3Fv
+/* 803587C8 00354608  38 61 00 54 */	addi r3, r1, 0x54
+/* 803587CC 0035460C  4B E2 3D 29 */	bl __ct__Q33hel4math7Vector3Fv
+/* 803587D0 00354610  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803587D4 00354614  3C 80 80 54 */	lis r4, BASIS__Q33hel4math10Direction3@ha
+/* 803587D8 00354618  3B E4 52 60 */	addi r31, r4, BASIS__Q33hel4math10Direction3@l
+/* 803587DC 0035461C  7C 03 F8 40 */	cmplw r3, r31
+/* 803587E0 00354620  41 82 00 24 */	beq lbl_80358804
+/* 803587E4 00354624  7F E4 FB 78 */	mr r4, r31
+/* 803587E8 00354628  4B E2 3D 65 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803587EC 0035462C  38 61 00 48 */	addi r3, r1, 0x48
+/* 803587F0 00354630  38 9F 00 0C */	addi r4, r31, 0xc
+/* 803587F4 00354634  4B E2 3D 59 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803587F8 00354638  38 61 00 54 */	addi r3, r1, 0x54
+/* 803587FC 0035463C  38 9F 00 18 */	addi r4, r31, 0x18
+/* 80358800 00354640  4B E2 3D 4D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_80358804:
+/* 80358804 00354644  38 61 00 10 */	addi r3, r1, 0x10
+/* 80358808 00354648  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035880C 0035464C  4B E6 A3 C1 */	bl getXY__Q33hel4math7Vector3CFv
+/* 80358810 00354650  7F C3 F3 78 */	mr r3, r30
+/* 80358814 00354654  4B FE 7B F1 */	bl water__Q43scn4step4hero4HeroFv
+/* 80358818 00354658  7C 64 1B 78 */	mr r4, r3
+/* 8035881C 0035465C  38 61 00 24 */	addi r3, r1, 0x24
+/* 80358820 00354660  38 A1 00 10 */	addi r5, r1, 0x10
+/* 80358824 00354664  48 00 22 81 */	bl getSurfaceUpVec__Q43scn4step4hero5WaterCFRCQ33hel4math7Vector2
+/* 80358828 00354668  38 61 00 48 */	addi r3, r1, 0x48
+/* 8035882C 0035466C  38 81 00 24 */	addi r4, r1, 0x24
+/* 80358830 00354670  4B E2 3D 1D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80358834 00354674  38 A1 00 3C */	addi r5, r1, 0x3c
+/* 80358838 00354678  90 A1 00 0C */	stw r5, 0xc(r1)
+/* 8035883C 0035467C  90 A1 00 08 */	stw r5, 8(r1)
+/* 80358840 00354680  38 61 00 18 */	addi r3, r1, 0x18
+/* 80358844 00354684  38 85 00 0C */	addi r4, r5, 0xc
+/* 80358848 00354688  4B E4 6C F9 */	bl permittedNormalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 8035884C 0035468C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80358850 00354690  4B E4 59 6D */	bl isZero__Q33hel4math7Vector3CFv
+/* 80358854 00354694  2C 03 00 00 */	cmpwi r3, 0
+/* 80358858 00354698  41 82 00 0C */	beq lbl_80358864
+/* 8035885C 0035469C  38 00 00 00 */	li r0, 0
+/* 80358860 003546A0  48 00 00 18 */	b lbl_80358878
+lbl_80358864:
+/* 80358864 003546A4  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 80358868 003546A8  38 63 00 18 */	addi r3, r3, 0x18
+/* 8035886C 003546AC  38 81 00 18 */	addi r4, r1, 0x18
+/* 80358870 003546B0  4B E2 3C DD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80358874 003546B4  38 00 00 01 */	li r0, 1
+lbl_80358878:
+/* 80358878 003546B8  2C 00 00 00 */	cmpwi r0, 0
+/* 8035887C 003546BC  41 82 00 10 */	beq lbl_8035888C
+/* 80358880 003546C0  38 61 00 08 */	addi r3, r1, 8
+/* 80358884 003546C4  4B E4 5A 75 */	bl restruct__Q43hel4math10Direction35FrontFv
+/* 80358888 003546C8  48 00 00 14 */	b lbl_8035889C
+lbl_8035888C:
+/* 8035888C 003546CC  38 61 00 08 */	addi r3, r1, 8
+/* 80358890 003546D0  4B E4 5A 69 */	bl restruct__Q43hel4math10Direction35FrontFv
+/* 80358894 003546D4  38 61 00 0C */	addi r3, r1, 0xc
+/* 80358898 003546D8  4B E4 59 B5 */	bl restruct__Q43hel4math10Direction34LeftFv
+lbl_8035889C:
+/* 8035889C 003546DC  7F C3 F3 78 */	mr r3, r30
+/* 803588A0 003546E0  4B FE 7A 85 */	bl effect__Q43scn4step4hero4HeroFv
+/* 803588A4 003546E4  38 63 01 48 */	addi r3, r3, 0x148
+/* 803588A8 003546E8  38 80 00 45 */	li r4, 0x45
+/* 803588AC 003546EC  38 A1 00 30 */	addi r5, r1, 0x30
+/* 803588B0 003546F0  38 C1 00 3C */	addi r6, r1, 0x3c
+/* 803588B4 003546F4  4B F1 56 B5 */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 803588B8 003546F8  7F C3 F3 78 */	mr r3, r30
+/* 803588BC 003546FC  4B FE 7A E9 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 803588C0 00354700  38 63 00 04 */	addi r3, r3, 4
+/* 803588C4 00354704  38 80 00 F3 */	li r4, 0xf3
+/* 803588C8 00354708  48 0A A4 0D */	bl start__Q23snd11SERequestorFUl
+/* 803588CC 0035470C  83 E1 00 6C */	lwz r31, 0x6c(r1)
+/* 803588D0 00354710  83 C1 00 68 */	lwz r30, 0x68(r1)
+/* 803588D4 00354714  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 803588D8 00354718  7C 08 03 A6 */	mtlr r0
+/* 803588DC 0035471C  38 21 00 70 */	addi r1, r1, 0x70
+/* 803588E0 00354720  4E 80 00 20 */	blr 
+
+.global create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
+create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv:
+/* 803588E4 00354724  7C 64 1B 78 */	mr r4, r3
+/* 803588E8 00354728  80 63 00 04 */	lwz r3, 4(r3)
+/* 803588EC 0035472C  2C 03 00 00 */	cmpwi r3, 0
+/* 803588F0 00354730  4D 82 00 20 */	beqlr 
+/* 803588F4 00354734  80 84 00 08 */	lwz r4, 8(r4)
+/* 803588F8 00354738  48 01 36 E4 */	b __ct__Q53scn4step4hero6common9StateSwimFPQ43scn4step4hero4Hero
+/* 803588FC 0035473C  4E 80 00 20 */	blr 
+
+.global __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv
+__dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv:
+/* 80358900 00354740  4B ED 5D A0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global ChkCannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero
+ChkCannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero:
+/* 8035E2B4 0035A0F4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8035E2B8 0035A0F8  7C 08 02 A6 */	mflr r0
+/* 8035E2BC 0035A0FC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8035E2C0 0035A100  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8035E2C4 0035A104  7C 7F 1B 78 */	mr r31, r3
+/* 8035E2C8 0035A108  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
+/* 8035E2CC 0035A10C  80 9F 00 3C */	lwz r4, 0x3c(r31)
+/* 8035E2D0 0035A110  4B E4 52 A9 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 8035E2D4 0035A114  7C 64 1B 78 */	mr r4, r3
+/* 8035E2D8 0035A118  38 61 00 08 */	addi r3, r1, 8
+/* 8035E2DC 0035A11C  4B E4 45 1D */	bl button__Q23hid11HIDAccessorCFv
+/* 8035E2E0 0035A120  38 61 00 08 */	addi r3, r1, 8
+/* 8035E2E4 0035A124  38 80 1F 1F */	li r4, 0x1f1f
+/* 8035E2E8 0035A128  4B E4 3F 6D */	bl isTrigger__Q23hid6ButtonCFUl
+/* 8035E2EC 0035A12C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035E2F0 0035A130  41 82 00 14 */	beq lbl_8035E304
+/* 8035E2F4 0035A134  7F E3 FB 78 */	mr r3, r31
+/* 8035E2F8 0035A138  48 00 00 25 */	bl CannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero
+/* 8035E2FC 0035A13C  38 60 00 01 */	li r3, 1
+/* 8035E300 0035A140  48 00 00 08 */	b lbl_8035E308
+lbl_8035E304:
+/* 8035E304 0035A144  38 60 00 00 */	li r3, 0
+lbl_8035E308:
+/* 8035E308 0035A148  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8035E30C 0035A14C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8035E310 0035A150  7C 08 03 A6 */	mtlr r0
+/* 8035E314 0035A154  38 21 00 20 */	addi r1, r1, 0x20
+/* 8035E318 0035A158  4E 80 00 20 */	blr 
+
+.global CannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero
+CannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero:
+/* 8035E31C 0035A15C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035E320 0035A160  7C 08 02 A6 */	mflr r0
+/* 8035E324 0035A164  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035E328 0035A168  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035E32C 0035A16C  7C 7F 1B 78 */	mr r31, r3
+/* 8035E330 0035A170  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035E334 0035A174  4B EC 2B 9D */	bl challengeManager__Q33scn4step9ComponentFv
+/* 8035E338 0035A178  88 03 02 5C */	lbz r0, 0x25c(r3)
+/* 8035E33C 0035A17C  2C 00 00 00 */	cmpwi r0, 0
+/* 8035E340 0035A180  40 82 00 40 */	bne lbl_8035E380
+/* 8035E344 0035A184  7F E3 FB 78 */	mr r3, r31
+/* 8035E348 0035A188  4B FC 34 51 */	bl talkManager__Q43scn4step7gimmick7ManagerFv
+/* 8035E34C 0035A18C  4B E4 5C 51 */	bl stop__Q23hid15RumbleRequestorFv
+/* 8035E350 0035A190  7F E3 FB 78 */	mr r3, r31
+/* 8035E354 0035A194  4B FC 34 45 */	bl talkManager__Q43scn4step7gimmick7ManagerFv
+/* 8035E358 0035A198  38 80 00 04 */	li r4, 4
+/* 8035E35C 0035A19C  4B E4 5B B9 */	bl start__Q23hid15RumbleRequestorFUl
+/* 8035E360 0035A1A0  38 7F 00 14 */	addi r3, r31, 0x14
+/* 8035E364 0035A1A4  4B E1 98 89 */	bl __rf__Q23mem43ExplicitScopedPtr$$0Q23app16HIDErrorMenuImpl$$1CFv
+/* 8035E368 0035A1A8  38 80 01 DC */	li r4, 0x1dc
+/* 8035E36C 0035A1AC  48 0A 49 69 */	bl start__Q23snd11SERequestorFUl
+/* 8035E370 0035A1B0  38 7F 00 1C */	addi r3, r31, 0x1c
+/* 8035E374 0035A1B4  4B E1 98 79 */	bl __rf__Q23mem43ExplicitScopedPtr$$0Q23app16HIDErrorMenuImpl$$1CFv
+/* 8035E378 0035A1B8  38 80 01 DD */	li r4, 0x1dd
+/* 8035E37C 0035A1BC  48 0A 49 59 */	bl start__Q23snd11SERequestorFUl
+lbl_8035E380:
+/* 8035E380 0035A1C0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035E384 0035A1C4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035E388 0035A1C8  7C 08 03 A6 */	mtlr r0
+/* 8035E38C 0035A1CC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035E390 0035A1D0  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global InitTarget__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
+InitTarget__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero:
+/* 803784F8 00374338  94 21 FF 60 */	stwu r1, -0xa0(r1)
+/* 803784FC 0037433C  7C 08 02 A6 */	mflr r0
+/* 80378500 00374340  90 01 00 A4 */	stw r0, 0xa4(r1)
+/* 80378504 00374344  93 E1 00 9C */	stw r31, 0x9c(r1)
+/* 80378508 00374348  93 C1 00 98 */	stw r30, 0x98(r1)
+/* 8037850C 0037434C  7C 7E 1B 78 */	mr r30, r3
+/* 80378510 00374350  4B FC 7E 4D */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80378514 00374354  38 63 00 08 */	addi r3, r3, 8
+/* 80378518 00374358  4B EB 49 F9 */	bl param__Q43scn4step4boss4BossCFv
+/* 8037851C 0037435C  4B EF 4E 91 */	bl isCollide__Q43scn4step5chara8BodyCollCFv
+/* 80378520 00374360  2C 03 00 00 */	cmpwi r3, 0
+/* 80378524 00374364  41 82 00 70 */	beq lbl_80378594
+/* 80378528 00374368  7F C3 F3 78 */	mr r3, r30
+/* 8037852C 0037436C  4B FC 7E 31 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80378530 00374370  38 63 00 08 */	addi r3, r3, 8
+/* 80378534 00374374  4B EB 49 DD */	bl param__Q43scn4step4boss4BossCFv
+/* 80378538 00374378  7C 64 1B 78 */	mr r4, r3
+/* 8037853C 0037437C  38 61 00 20 */	addi r3, r1, 0x20
+/* 80378540 00374380  4B EF 4C A1 */	bl damageInfo__Q43scn4step5chara8BodyCollCFv
+/* 80378544 00374384  38 61 00 20 */	addi r3, r1, 0x20
+/* 80378548 00374388  4B E4 57 11 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 8037854C 0037438C  7C 64 1B 78 */	mr r4, r3
+/* 80378550 00374390  38 61 00 08 */	addi r3, r1, 8
+/* 80378554 00374394  38 84 00 14 */	addi r4, r4, 0x14
+/* 80378558 00374398  4B DD 34 11 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8037855C 0037439C  7F C3 F3 78 */	mr r3, r30
+/* 80378560 003743A0  4B FC 7D A5 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80378564 003743A4  7C 64 1B 78 */	mr r4, r3
+/* 80378568 003743A8  38 61 00 10 */	addi r3, r1, 0x10
+/* 8037856C 003743AC  4B EF 71 49 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80378570 003743B0  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 80378574 003743B4  C0 01 00 08 */	lfs f0, 8(r1)
+/* 80378578 003743B8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8037857C 003743BC  7F E0 00 26 */	mfcr r31
+/* 80378580 003743C0  57 FF 0F FE */	srwi r31, r31, 0x1f
+/* 80378584 003743C4  7F C3 F3 78 */	mr r3, r30
+/* 80378588 003743C8  4B FC 7D 6D */	bl target__Q43scn4step4hero4HeroFv
+/* 8037858C 003743CC  7F E4 FB 78 */	mr r4, r31
+/* 80378590 003743D0  4B E2 00 F1 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_80378594:
+/* 80378594 003743D4  83 E1 00 9C */	lwz r31, 0x9c(r1)
+/* 80378598 003743D8  83 C1 00 98 */	lwz r30, 0x98(r1)
+/* 8037859C 003743DC  80 01 00 A4 */	lwz r0, 0xa4(r1)
+/* 803785A0 003743E0  7C 08 03 A6 */	mtlr r0
+/* 803785A4 003743E4  38 21 00 A0 */	addi r1, r1, 0xa0
+/* 803785A8 003743E8  4E 80 00 20 */	blr 
+
+.global InitVelocity__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
+InitVelocity__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero:
+/* 803785AC 003743EC  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 803785B0 003743F0  7C 08 02 A6 */	mflr r0
+/* 803785B4 003743F4  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 803785B8 003743F8  DB E1 00 B0 */	stfd f31, 0xb0(r1)
+/* 803785BC 003743FC  F3 E1 00 B8 */	psq_st f31, 184(r1), 0, qr0
+/* 803785C0 00374400  DB C1 00 A0 */	stfd f30, 0xa0(r1)
+/* 803785C4 00374404  F3 C1 00 A8 */	psq_st f30, 168(r1), 0, qr0
+/* 803785C8 00374408  DB A1 00 90 */	stfd f29, 0x90(r1)
+/* 803785CC 0037440C  F3 A1 00 98 */	psq_st f29, 152(r1), 0, qr0
+/* 803785D0 00374410  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 803785D4 00374414  7C 7F 1B 78 */	mr r31, r3
+/* 803785D8 00374418  4B FC 7D 85 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 803785DC 0037441C  38 63 00 08 */	addi r3, r3, 8
+/* 803785E0 00374420  4B EB 49 31 */	bl param__Q43scn4step4boss4BossCFv
+/* 803785E4 00374424  4B EF 4D C9 */	bl isCollide__Q43scn4step5chara8BodyCollCFv
+/* 803785E8 00374428  2C 03 00 00 */	cmpwi r3, 0
+/* 803785EC 0037442C  41 82 00 D0 */	beq lbl_803786BC
+/* 803785F0 00374430  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 803785F4 00374434  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
+/* 803785F8 00374438  80 64 00 00 */	lwz r3, 0(r4)
+/* 803785FC 0037443C  80 04 00 04 */	lwz r0, 4(r4)
+/* 80378600 00374440  90 61 00 08 */	stw r3, 8(r1)
+/* 80378604 00374444  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80378608 00374448  80 04 00 08 */	lwz r0, 8(r4)
+/* 8037860C 0037444C  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80378610 00374450  7F E3 FB 78 */	mr r3, r31
+/* 80378614 00374454  4B FC 7D 49 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80378618 00374458  38 63 00 08 */	addi r3, r3, 8
+/* 8037861C 0037445C  4B EB 48 F5 */	bl param__Q43scn4step4boss4BossCFv
+/* 80378620 00374460  7C 64 1B 78 */	mr r4, r3
+/* 80378624 00374464  38 61 00 18 */	addi r3, r1, 0x18
+/* 80378628 00374468  4B EF 4B B9 */	bl damageInfo__Q43scn4step5chara8BodyCollCFv
+/* 8037862C 0037446C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80378630 00374470  4B E4 56 29 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 80378634 00374474  C3 E3 00 34 */	lfs f31, 0x34(r3)
+/* 80378638 00374478  38 61 00 18 */	addi r3, r1, 0x18
+/* 8037863C 0037447C  4B E4 56 1D */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 80378640 00374480  C3 C3 00 38 */	lfs f30, 0x38(r3)
+/* 80378644 00374484  38 61 00 18 */	addi r3, r1, 0x18
+/* 80378648 00374488  4B E4 56 11 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 8037864C 0037448C  C3 A3 00 3C */	lfs f29, 0x3c(r3)
+/* 80378650 00374490  4B E0 25 5D */	bl RandAF__Q23app6RandomFv
+/* 80378654 00374494  EC 3E F8 7A */	fmadds f1, f30, f1, f31
+/* 80378658 00374498  38 61 00 08 */	addi r3, r1, 8
+/* 8037865C 0037449C  3C 80 80 54 */	lis r4, BASIS_Z__Q33hel4math7Vector3@ha
+/* 80378660 003744A0  38 84 53 00 */	addi r4, r4, BASIS_Z__Q33hel4math7Vector3@l
+/* 80378664 003744A4  C0 02 D4 20 */	lfs f0, $$253894-_SDA2_BASE_(r2)
+/* 80378668 003744A8  EC 20 00 72 */	fmuls f1, f0, f1
+/* 8037866C 003744AC  4B E2 72 21 */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
+/* 80378670 003744B0  7F E3 FB 78 */	mr r3, r31
+/* 80378674 003744B4  4B FC 7C 81 */	bl target__Q43scn4step4hero4HeroFv
+/* 80378678 003744B8  4B E2 3A 29 */	bl getSign__Q24gobj6TargetCFv
+/* 8037867C 003744BC  C0 02 D4 24 */	lfs f0, $$253895-_SDA2_BASE_(r2)
+/* 80378680 003744C0  EC 20 00 72 */	fmuls f1, f0, f1
+/* 80378684 003744C4  C0 01 00 08 */	lfs f0, 8(r1)
+/* 80378688 003744C8  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8037868C 003744CC  EC 00 07 72 */	fmuls f0, f0, f29
+/* 80378690 003744D0  D0 01 00 08 */	stfs f0, 8(r1)
+/* 80378694 003744D4  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 80378698 003744D8  EC 00 07 72 */	fmuls f0, f0, f29
+/* 8037869C 003744DC  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803786A0 003744E0  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 803786A4 003744E4  EC 00 07 72 */	fmuls f0, f0, f29
+/* 803786A8 003744E8  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 803786AC 003744EC  7F E3 FB 78 */	mr r3, r31
+/* 803786B0 003744F0  4B FC 7C 5D */	bl move__Q43scn4step4hero4HeroFv
+/* 803786B4 003744F4  38 81 00 08 */	addi r4, r1, 8
+/* 803786B8 003744F8  4B E2 2C C1 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+lbl_803786BC:
+/* 803786BC 003744FC  38 00 00 B8 */	li r0, 0xb8
+/* 803786C0 00374500  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803786C4 00374504  CB E1 00 B0 */	lfd f31, 0xb0(r1)
+/* 803786C8 00374508  38 00 00 A8 */	li r0, 0xa8
+/* 803786CC 0037450C  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 803786D0 00374510  CB C1 00 A0 */	lfd f30, 0xa0(r1)
+/* 803786D4 00374514  38 00 00 98 */	li r0, 0x98
+/* 803786D8 00374518  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 803786DC 0037451C  CB A1 00 90 */	lfd f29, 0x90(r1)
+/* 803786E0 00374520  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 803786E4 00374524  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 803786E8 00374528  7C 08 03 A6 */	mtlr r0
+/* 803786EC 0037452C  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 803786F0 00374530  4E 80 00 20 */	blr 
+
+.global ReflectWallL__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
+ReflectWallL__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero:
+/* 803786F4 00374534  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803786F8 00374538  7C 08 02 A6 */	mflr r0
+/* 803786FC 0037453C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80378700 00374540  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80378704 00374544  7C 7F 1B 78 */	mr r31, r3
+/* 80378708 00374548  4B FC 7B D5 */	bl param__Q43scn4step4hero4HeroFv
+/* 8037870C 0037454C  4B FD 89 55 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80378710 00374550  7C 64 1B 78 */	mr r4, r3
+/* 80378714 00374554  7F E3 FB 78 */	mr r3, r31
+/* 80378718 00374558  38 84 04 7C */	addi r4, r4, 0x47c
+/* 8037871C 0037455C  48 00 00 59 */	bl ReflectWall__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4HeroRCQ53scn4step4hero6common16ParamReflectWall
+/* 80378720 00374560  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80378724 00374564  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80378728 00374568  7C 08 03 A6 */	mtlr r0
+/* 8037872C 0037456C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80378730 00374570  4E 80 00 20 */	blr 
+
+.global ReflectWallS__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
+ReflectWallS__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero:
+/* 80378734 00374574  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80378738 00374578  7C 08 02 A6 */	mflr r0
+/* 8037873C 0037457C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80378740 00374580  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80378744 00374584  7C 7F 1B 78 */	mr r31, r3
+/* 80378748 00374588  4B FC 7B 95 */	bl param__Q43scn4step4hero4HeroFv
+/* 8037874C 0037458C  4B FD 89 15 */	bl common__Q43scn4step4hero5ParamCFv
+/* 80378750 00374590  7C 64 1B 78 */	mr r4, r3
+/* 80378754 00374594  7F E3 FB 78 */	mr r3, r31
+/* 80378758 00374598  38 84 04 90 */	addi r4, r4, 0x490
+/* 8037875C 0037459C  48 00 00 19 */	bl ReflectWall__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4HeroRCQ53scn4step4hero6common16ParamReflectWall
+/* 80378760 003745A0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80378764 003745A4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80378768 003745A8  7C 08 03 A6 */	mtlr r0
+/* 8037876C 003745AC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80378770 003745B0  4E 80 00 20 */	blr 
+
+.global ReflectWall__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4HeroRCQ53scn4step4hero6common16ParamReflectWall
+ReflectWall__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4HeroRCQ53scn4step4hero6common16ParamReflectWall:
+/* 80378774 003745B4  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 80378778 003745B8  7C 08 02 A6 */	mflr r0
+/* 8037877C 003745BC  90 01 00 74 */	stw r0, 0x74(r1)
+/* 80378780 003745C0  39 61 00 70 */	addi r11, r1, 0x70
+/* 80378784 003745C4  4B C8 EB C1 */	bl func_80007344
+/* 80378788 003745C8  7C 7E 1B 78 */	mr r30, r3
+/* 8037878C 003745CC  7C 9F 23 78 */	mr r31, r4
+/* 80378790 003745D0  4B FC 7B AD */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80378794 003745D4  7C 7D 1B 78 */	mr r29, r3
+/* 80378798 003745D8  88 03 00 48 */	lbz r0, 0x48(r3)
+/* 8037879C 003745DC  98 01 00 30 */	stb r0, 0x30(r1)
+/* 803787A0 003745E0  88 03 00 49 */	lbz r0, 0x49(r3)
+/* 803787A4 003745E4  98 01 00 31 */	stb r0, 0x31(r1)
+/* 803787A8 003745E8  88 03 00 4A */	lbz r0, 0x4a(r3)
+/* 803787AC 003745EC  98 01 00 32 */	stb r0, 0x32(r1)
+/* 803787B0 003745F0  88 03 00 4B */	lbz r0, 0x4b(r3)
+/* 803787B4 003745F4  98 01 00 33 */	stb r0, 0x33(r1)
+/* 803787B8 003745F8  88 03 00 4C */	lbz r0, 0x4c(r3)
+/* 803787BC 003745FC  98 01 00 34 */	stb r0, 0x34(r1)
+/* 803787C0 00374600  88 03 00 4D */	lbz r0, 0x4d(r3)
+/* 803787C4 00374604  98 01 00 35 */	stb r0, 0x35(r1)
+/* 803787C8 00374608  88 03 00 4E */	lbz r0, 0x4e(r3)
+/* 803787CC 0037460C  98 01 00 36 */	stb r0, 0x36(r1)
+/* 803787D0 00374610  88 03 00 4F */	lbz r0, 0x4f(r3)
+/* 803787D4 00374614  98 01 00 37 */	stb r0, 0x37(r1)
+/* 803787D8 00374618  88 03 00 50 */	lbz r0, 0x50(r3)
+/* 803787DC 0037461C  98 01 00 38 */	stb r0, 0x38(r1)
+/* 803787E0 00374620  88 03 00 51 */	lbz r0, 0x51(r3)
+/* 803787E4 00374624  98 01 00 39 */	stb r0, 0x39(r1)
+/* 803787E8 00374628  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803787EC 0037462C  38 9D 00 54 */	addi r4, r29, 0x54
+/* 803787F0 00374630  4B DD 31 79 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 803787F4 00374634  38 61 00 44 */	addi r3, r1, 0x44
+/* 803787F8 00374638  38 9D 00 5C */	addi r4, r29, 0x5c
+/* 803787FC 0037463C  4B DD 31 6D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80378800 00374640  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80378804 00374644  38 9D 00 64 */	addi r4, r29, 0x64
+/* 80378808 00374648  4B DD 38 55 */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
+/* 8037880C 0037464C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80378810 00374650  38 9D 00 68 */	addi r4, r29, 0x68
+/* 80378814 00374654  4B DD 38 49 */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
+/* 80378818 00374658  38 61 00 54 */	addi r3, r1, 0x54
+/* 8037881C 0037465C  38 9D 00 6C */	addi r4, r29, 0x6c
+/* 80378820 00374660  4B DD 38 3D */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
+/* 80378824 00374664  88 1D 00 70 */	lbz r0, 0x70(r29)
+/* 80378828 00374668  98 01 00 58 */	stb r0, 0x58(r1)
+/* 8037882C 0037466C  7F C3 F3 78 */	mr r3, r30
+/* 80378830 00374670  4B CF CF 01 */	bl GKI_getfirst
+/* 80378834 00374674  4B EA 83 55 */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 80378838 00374678  7C 64 1B 78 */	mr r4, r3
+/* 8037883C 0037467C  38 61 00 20 */	addi r3, r1, 0x20
+/* 80378840 00374680  4B EE D9 05 */	bl getViewRect__Q43scn4step6camera10MainCameraCFv
+/* 80378844 00374684  7F C3 F3 78 */	mr r3, r30
+/* 80378848 00374688  4B FC 7A C5 */	bl move__Q43scn4step4hero4HeroFv
+/* 8037884C 0037468C  7C 64 1B 78 */	mr r4, r3
+/* 80378850 00374690  38 61 00 14 */	addi r3, r1, 0x14
+/* 80378854 00374694  4B E2 2B 09 */	bl velocity__Q24gobj4MoveCFv
+/* 80378858 00374698  7F C3 F3 78 */	mr r3, r30
+/* 8037885C 0037469C  4B FC 7A A9 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80378860 003746A0  7C 64 1B 78 */	mr r4, r3
+/* 80378864 003746A4  38 61 00 08 */	addi r3, r1, 8
+/* 80378868 003746A8  4B EF 6E 4D */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8037886C 003746AC  3B A0 00 00 */	li r29, 0
+/* 80378870 003746B0  88 01 00 30 */	lbz r0, 0x30(r1)
+/* 80378874 003746B4  2C 00 00 00 */	cmpwi r0, 0
+/* 80378878 003746B8  41 82 00 24 */	beq lbl_8037889C
+/* 8037887C 003746BC  7F C3 F3 78 */	mr r3, r30
+/* 80378880 003746C0  4B FC 7A 8D */	bl move__Q43scn4step4hero4HeroFv
+/* 80378884 003746C4  C0 1F 00 00 */	lfs f0, 0(r31)
+/* 80378888 003746C8  FC 20 00 50 */	fneg f1, f0
+/* 8037888C 003746CC  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 80378890 003746D0  EC 21 00 32 */	fmuls f1, f1, f0
+/* 80378894 003746D4  4B E2 2A ED */	bl setSpeedV__Q24gobj4MoveFf
+/* 80378898 003746D8  3B A0 00 01 */	li r29, 1
+lbl_8037889C:
+/* 8037889C 003746DC  88 01 00 31 */	lbz r0, 0x31(r1)
+/* 803788A0 003746E0  2C 00 00 00 */	cmpwi r0, 0
+/* 803788A4 003746E4  41 82 00 24 */	beq lbl_803788C8
+/* 803788A8 003746E8  7F C3 F3 78 */	mr r3, r30
+/* 803788AC 003746EC  4B FC 7A 61 */	bl move__Q43scn4step4hero4HeroFv
+/* 803788B0 003746F0  C0 1F 00 04 */	lfs f0, 4(r31)
+/* 803788B4 003746F4  FC 20 00 50 */	fneg f1, f0
+/* 803788B8 003746F8  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 803788BC 003746FC  EC 21 00 32 */	fmuls f1, f1, f0
+/* 803788C0 00374700  4B E2 2A C1 */	bl setSpeedV__Q24gobj4MoveFf
+/* 803788C4 00374704  3B A0 00 01 */	li r29, 1
+lbl_803788C8:
+/* 803788C8 00374708  38 60 00 00 */	li r3, 0
+/* 803788CC 0037470C  88 01 00 32 */	lbz r0, 0x32(r1)
+/* 803788D0 00374710  2C 00 00 00 */	cmpwi r0, 0
+/* 803788D4 00374714  40 82 00 10 */	bne lbl_803788E4
+/* 803788D8 00374718  88 01 00 33 */	lbz r0, 0x33(r1)
+/* 803788DC 0037471C  2C 00 00 00 */	cmpwi r0, 0
+/* 803788E0 00374720  41 82 00 08 */	beq lbl_803788E8
+lbl_803788E4:
+/* 803788E4 00374724  38 60 00 01 */	li r3, 1
+lbl_803788E8:
+/* 803788E8 00374728  2C 03 00 00 */	cmpwi r3, 0
+/* 803788EC 0037472C  41 82 00 24 */	beq lbl_80378910
+/* 803788F0 00374730  7F C3 F3 78 */	mr r3, r30
+/* 803788F4 00374734  4B FC 7A 19 */	bl move__Q43scn4step4hero4HeroFv
+/* 803788F8 00374738  C0 1F 00 08 */	lfs f0, 8(r31)
+/* 803788FC 0037473C  FC 20 00 50 */	fneg f1, f0
+/* 80378900 00374740  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 80378904 00374744  EC 21 00 32 */	fmuls f1, f1, f0
+/* 80378908 00374748  4B DB 1D F9 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+/* 8037890C 0037474C  3B A0 00 01 */	li r29, 1
+lbl_80378910:
+/* 80378910 00374750  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 80378914 00374754  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 80378918 00374758  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8037891C 0037475C  40 81 00 24 */	ble lbl_80378940
+/* 80378920 00374760  7F C3 F3 78 */	mr r3, r30
+/* 80378924 00374764  4B FC 79 E9 */	bl move__Q43scn4step4hero4HeroFv
+/* 80378928 00374768  C0 1F 00 0C */	lfs f0, 0xc(r31)
+/* 8037892C 0037476C  FC 20 00 50 */	fneg f1, f0
+/* 80378930 00374770  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 80378934 00374774  EC 21 00 32 */	fmuls f1, f1, f0
+/* 80378938 00374778  4B E2 2A 49 */	bl setSpeedV__Q24gobj4MoveFf
+/* 8037893C 0037477C  3B A0 00 01 */	li r29, 1
+lbl_80378940:
+/* 80378940 00374780  C0 21 00 08 */	lfs f1, 8(r1)
+/* 80378944 00374784  C0 01 00 28 */	lfs f0, 0x28(r1)
+/* 80378948 00374788  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8037894C 0037478C  41 80 00 10 */	blt lbl_8037895C
+/* 80378950 00374790  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80378954 00374794  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80378958 00374798  40 81 00 24 */	ble lbl_8037897C
+lbl_8037895C:
+/* 8037895C 0037479C  7F C3 F3 78 */	mr r3, r30
+/* 80378960 003747A0  4B FC 79 AD */	bl move__Q43scn4step4hero4HeroFv
+/* 80378964 003747A4  C0 1F 00 10 */	lfs f0, 0x10(r31)
+/* 80378968 003747A8  FC 20 00 50 */	fneg f1, f0
+/* 8037896C 003747AC  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 80378970 003747B0  EC 21 00 32 */	fmuls f1, f1, f0
+/* 80378974 003747B4  4B DB 1D 8D */	bl setSpeakerVol__Q210homebutton10ControllerFf
+/* 80378978 003747B8  3B A0 00 01 */	li r29, 1
+lbl_8037897C:
+/* 8037897C 003747BC  38 61 00 20 */	addi r3, r1, 0x20
+/* 80378980 003747C0  38 80 FF FF */	li r4, -1
+/* 80378984 003747C4  4B E2 74 B9 */	bl __dt__Q33hel3geo4RectFv
+/* 80378988 003747C8  7F A3 EB 78 */	mr r3, r29
+/* 8037898C 003747CC  39 61 00 70 */	addi r11, r1, 0x70
+/* 80378990 003747D0  4B C8 EA 01 */	bl func_80007390
+/* 80378994 003747D4  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 80378998 003747D8  7C 08 03 A6 */	mtlr r0
+/* 8037899C 003747DC  38 21 00 70 */	addi r1, r1, 0x70
+/* 803789A0 003747E0  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global LeaveDoor__Q53scn4step4hero7gimmick7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ24util12FrameCounter
+LeaveDoor__Q53scn4step4hero7gimmick7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ24util12FrameCounter:
+/* 80383CD8 0037FB18  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80383CDC 0037FB1C  7C 08 02 A6 */	mflr r0
+/* 80383CE0 0037FB20  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80383CE4 0037FB24  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 80383CE8 0037FB28  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 80383CEC 0037FB2C  39 61 00 40 */	addi r11, r1, 0x40
+/* 80383CF0 0037FB30  4B C8 36 51 */	bl func_80007340
+/* 80383CF4 0037FB34  7C 7C 1B 78 */	mr r28, r3
+/* 80383CF8 0037FB38  7C 9D 23 78 */	mr r29, r4
+/* 80383CFC 0037FB3C  7C BF 2B 78 */	mr r31, r5
+/* 80383D00 0037FB40  7C DE 33 78 */	mr r30, r6
+/* 80383D04 0037FB44  3C 00 43 30 */	lis r0, 0x4330
+/* 80383D08 0037FB48  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80383D0C 0037FB4C  3C 00 43 30 */	lis r0, 0x4330
+/* 80383D10 0037FB50  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80383D14 0037FB54  4B FB C5 F1 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80383D18 0037FB58  7C 64 1B 78 */	mr r4, r3
+/* 80383D1C 0037FB5C  38 61 00 08 */	addi r3, r1, 8
+/* 80383D20 0037FB60  4B EE B9 95 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 80383D24 0037FB64  7F C3 F3 78 */	mr r3, r30
+/* 80383D28 0037FB68  4B CF 1A 09 */	bl GKI_getfirst
+/* 80383D2C 0037FB6C  C8 22 D5 70 */	lfd f1, $$250549-_SDA2_BASE_(r2)
+/* 80383D30 0037FB70  90 61 00 1C */	stw r3, 0x1c(r1)
+/* 80383D34 0037FB74  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 80383D38 0037FB78  EF E0 08 28 */	fsubs f31, f0, f1
+/* 80383D3C 0037FB7C  7F C3 F3 78 */	mr r3, r30
+/* 80383D40 0037FB80  4B D7 CA A1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80383D44 0037FB84  C8 22 D5 70 */	lfd f1, $$250549-_SDA2_BASE_(r2)
+/* 80383D48 0037FB88  90 61 00 24 */	stw r3, 0x24(r1)
+/* 80383D4C 0037FB8C  C8 01 00 20 */	lfd f0, 0x20(r1)
+/* 80383D50 0037FB90  EC 00 08 28 */	fsubs f0, f0, f1
+/* 80383D54 0037FB94  EC 80 F8 24 */	fdivs f4, f0, f31
+/* 80383D58 0037FB98  C0 42 D5 5C */	lfs f2, $$250539-_SDA2_BASE_(r2)
+/* 80383D5C 0037FB9C  C0 02 D5 58 */	lfs f0, $$250538-_SDA2_BASE_(r2)
+/* 80383D60 0037FBA0  38 00 00 03 */	li r0, 3
+/* 80383D64 0037FBA4  7C 09 03 A6 */	mtctr r0
+lbl_80383D68:
+/* 80383D68 0037FBA8  EC 64 01 32 */	fmuls f3, f4, f4
+/* 80383D6C 0037FBAC  EC 22 01 32 */	fmuls f1, f2, f4
+/* 80383D70 0037FBB0  EC 21 00 F2 */	fmuls f1, f1, f3
+/* 80383D74 0037FBB4  EC 80 08 F8 */	fmsubs f4, f0, f3, f1
+/* 80383D78 0037FBB8  42 00 FF F0 */	bdnz lbl_80383D68
+/* 80383D7C 0037FBBC  C0 02 D5 60 */	lfs f0, $$250540-_SDA2_BASE_(r2)
+/* 80383D80 0037FBC0  EC 20 20 28 */	fsubs f1, f0, f4
+/* 80383D84 0037FBC4  C0 1F 00 00 */	lfs f0, 0(r31)
+/* 80383D88 0037FBC8  EC 20 00 72 */	fmuls f1, f0, f1
+/* 80383D8C 0037FBCC  C0 1D 00 00 */	lfs f0, 0(r29)
+/* 80383D90 0037FBD0  EC 00 09 3A */	fmadds f0, f0, f4, f1
+/* 80383D94 0037FBD4  D0 01 00 08 */	stfs f0, 8(r1)
+/* 80383D98 0037FBD8  7F 83 E3 78 */	mr r3, r28
+/* 80383D9C 0037FBDC  4B E1 82 F1 */	bl prevScriptIndex__Q24gobj6ScriptCFv
+/* 80383DA0 0037FBE0  C8 22 D5 70 */	lfd f1, $$250549-_SDA2_BASE_(r2)
+/* 80383DA4 0037FBE4  90 61 00 1C */	stw r3, 0x1c(r1)
+/* 80383DA8 0037FBE8  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 80383DAC 0037FBEC  EC 40 08 28 */	fsubs f2, f0, f1
+/* 80383DB0 0037FBF0  C0 22 D5 68 */	lfs f1, $$250542-_SDA2_BASE_(r2)
+/* 80383DB4 0037FBF4  C0 02 D5 64 */	lfs f0, $$250541-_SDA2_BASE_(r2)
+/* 80383DB8 0037FBF8  EF E1 00 BA */	fmadds f31, f1, f2, f0
+/* 80383DBC 0037FBFC  7F C3 F3 78 */	mr r3, r30
+/* 80383DC0 0037FC00  4B CF 19 71 */	bl GKI_getfirst
+/* 80383DC4 0037FC04  3B E3 FF FF */	addi r31, r3, -1
+/* 80383DC8 0037FC08  7F C3 F3 78 */	mr r3, r30
+/* 80383DCC 0037FC0C  4B D7 CA 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80383DD0 0037FC10  7C 03 F8 50 */	subf r0, r3, r31
+/* 80383DD4 0037FC14  C8 22 D5 70 */	lfd f1, $$250549-_SDA2_BASE_(r2)
+/* 80383DD8 0037FC18  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80383DDC 0037FC1C  C8 01 00 20 */	lfd f0, 0x20(r1)
+/* 80383DE0 0037FC20  EC 20 08 28 */	fsubs f1, f0, f1
+/* 80383DE4 0037FC24  C0 1D 00 08 */	lfs f0, 8(r29)
+/* 80383DE8 0037FC28  EC 1F 00 7C */	fnmsubs f0, f31, f1, f0
+/* 80383DEC 0037FC2C  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 80383DF0 0037FC30  7F 83 E3 78 */	mr r3, r28
+/* 80383DF4 0037FC34  4B FB C5 11 */	bl location__Q43scn4step4hero4HeroCFv
+/* 80383DF8 0037FC38  38 81 00 08 */	addi r4, r1, 8
+/* 80383DFC 0037FC3C  4B EE B8 C1 */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+/* 80383E00 0037FC40  38 00 00 48 */	li r0, 0x48
+/* 80383E04 0037FC44  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80383E08 0037FC48  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 80383E0C 0037FC4C  39 61 00 40 */	addi r11, r1, 0x40
+/* 80383E10 0037FC50  4B C8 35 7D */	bl func_8000738C
+/* 80383E14 0037FC54  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80383E18 0037FC58  7C 08 03 A6 */	mtlr r0
+/* 80383E1C 0037FC5C  38 21 00 50 */	addi r1, r1, 0x50
+/* 80383E20 0037FC60  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2
+CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2:
+/* 8038F54C 0038B38C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8038F550 0038B390  7C 08 02 A6 */	mflr r0
+/* 8038F554 0038B394  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8038F558 0038B398  39 61 00 40 */	addi r11, r1, 0x40
+/* 8038F55C 0038B39C  4B C7 7D E5 */	bl func_80007340
+/* 8038F560 0038B3A0  7C 7C 1B 78 */	mr r28, r3
+/* 8038F564 0038B3A4  7C 9D 23 78 */	mr r29, r4
+/* 8038F568 0038B3A8  7C BE 2B 78 */	mr r30, r5
+/* 8038F56C 0038B3AC  7C DF 33 78 */	mr r31, r6
+/* 8038F570 0038B3B0  38 61 00 18 */	addi r3, r1, 0x18
+/* 8038F574 0038B3B4  4B E2 7C 51 */	bl __ct__Q35mcoll6detail9DetectArgFv
+/* 8038F578 0038B3B8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8038F57C 0038B3BC  7F E4 FB 78 */	mr r4, r31
+/* 8038F580 0038B3C0  4B DB C3 E9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8038F584 0038B3C4  7F A3 EB 78 */	mr r3, r29
+/* 8038F588 0038B3C8  4B CE 61 A9 */	bl GKI_getfirst
+/* 8038F58C 0038B3CC  4B E9 17 69 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 8038F590 0038B3D0  4B C9 4F 11 */	bl DefaultSwitchThreadCallback
+/* 8038F594 0038B3D4  7C 64 1B 78 */	mr r4, r3
+/* 8038F598 0038B3D8  7F 83 E3 78 */	mr r3, r28
+/* 8038F59C 0038B3DC  7F C5 F3 78 */	mr r5, r30
+/* 8038F5A0 0038B3E0  38 C1 00 18 */	addi r6, r1, 0x18
+/* 8038F5A4 0038B3E4  4B E2 2E 29 */	bl rayCheck__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2RCQ35mcoll6detail9DetectArg
+/* 8038F5A8 0038B3E8  38 61 00 08 */	addi r3, r1, 8
+/* 8038F5AC 0038B3EC  7F C4 F3 78 */	mr r4, r30
+/* 8038F5B0 0038B3F0  4B DB C3 B9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8038F5B4 0038B3F4  7C 64 1B 78 */	mr r4, r3
+/* 8038F5B8 0038B3F8  C0 23 00 00 */	lfs f1, 0(r3)
+/* 8038F5BC 0038B3FC  C0 1F 00 00 */	lfs f0, 0(r31)
+/* 8038F5C0 0038B400  EC 01 00 2A */	fadds f0, f1, f0
+/* 8038F5C4 0038B404  D0 03 00 00 */	stfs f0, 0(r3)
+/* 8038F5C8 0038B408  C0 23 00 04 */	lfs f1, 4(r3)
+/* 8038F5CC 0038B40C  C0 1F 00 04 */	lfs f0, 4(r31)
+/* 8038F5D0 0038B410  EC 01 00 2A */	fadds f0, f1, f0
+/* 8038F5D4 0038B414  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8038F5D8 0038B418  38 61 00 10 */	addi r3, r1, 0x10
+/* 8038F5DC 0038B41C  4B DB C3 8D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8038F5E0 0038B420  7F A3 EB 78 */	mr r3, r29
+/* 8038F5E4 0038B424  4B CE 61 4D */	bl GKI_getfirst
+/* 8038F5E8 0038B428  4B E9 19 1D */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8038F5EC 0038B42C  7F C4 F3 78 */	mr r4, r30
+/* 8038F5F0 0038B430  38 A1 00 10 */	addi r5, r1, 0x10
+/* 8038F5F4 0038B434  4B EE B2 81 */	bl addArrow__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RCQ33hel4math7Vector2
+/* 8038F5F8 0038B438  39 61 00 40 */	addi r11, r1, 0x40
+/* 8038F5FC 0038B43C  4B C7 7D 91 */	bl func_8000738C
+/* 8038F600 0038B440  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8038F604 0038B444  7C 08 03 A6 */	mtlr r0
+/* 8038F608 0038B448  38 21 00 40 */	addi r1, r1, 0x40
+/* 8038F60C 0038B44C  4E 80 00 20 */	blr 
+
+.global CheckFloorHit__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step6effect4Kind
+CheckFloorHit__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step6effect4Kind:
+/* 8038F610 0038B450  94 21 F9 00 */	stwu r1, -0x700(r1)
+/* 8038F614 0038B454  7C 08 02 A6 */	mflr r0
+/* 8038F618 0038B458  90 01 07 04 */	stw r0, 0x704(r1)
+/* 8038F61C 0038B45C  DB E1 06 F0 */	stfd f31, 0x6f0(r1)
+/* 8038F620 0038B460  F3 E1 06 F8 */	psq_st f31, 1784(r1), 0, qr0
+/* 8038F624 0038B464  DB C1 06 E0 */	stfd f30, 0x6e0(r1)
+/* 8038F628 0038B468  F3 C1 06 E8 */	psq_st f30, 1768(r1), 0, qr0
+/* 8038F62C 0038B46C  DB A1 06 D0 */	stfd f29, 0x6d0(r1)
+/* 8038F630 0038B470  F3 A1 06 D8 */	psq_st f29, 1752(r1), 0, qr0
+/* 8038F634 0038B474  39 61 06 D0 */	addi r11, r1, 0x6d0
+/* 8038F638 0038B478  4B C7 7D 05 */	bl func_8000733C
+/* 8038F63C 0038B47C  7C 7B 1B 78 */	mr r27, r3
+/* 8038F640 0038B480  7C BC 2B 78 */	mr r28, r5
+/* 8038F644 0038B484  7C DD 33 78 */	mr r29, r6
+/* 8038F648 0038B488  38 61 00 18 */	addi r3, r1, 0x18
+/* 8038F64C 0038B48C  4B DB C3 1D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8038F650 0038B490  C3 C2 D6 34 */	lfs f30, $$253723-_SDA2_BASE_(r2)
+/* 8038F654 0038B494  C3 A2 D6 30 */	lfs f29, $$253722-_SDA2_BASE_(r2)
+/* 8038F658 0038B498  C3 E2 D6 38 */	lfs f31, $$253724-_SDA2_BASE_(r2)
+/* 8038F65C 0038B49C  48 00 01 00 */	b lbl_8038F75C
+lbl_8038F660:
+/* 8038F660 0038B4A0  38 61 00 10 */	addi r3, r1, 0x10
+/* 8038F664 0038B4A4  C0 22 D6 30 */	lfs f1, $$253722-_SDA2_BASE_(r2)
+/* 8038F668 0038B4A8  C0 5C 00 04 */	lfs f2, 4(r28)
+/* 8038F66C 0038B4AC  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 8038F670 0038B4B0  EC 42 00 28 */	fsubs f2, f2, f0
+/* 8038F674 0038B4B4  4B E0 FD 35 */	bl set__Q33hel4math7Vector2Fff
+/* 8038F678 0038B4B8  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F67C 0038B4BC  7F 64 DB 78 */	mr r4, r27
+/* 8038F680 0038B4C0  38 A1 00 18 */	addi r5, r1, 0x18
+/* 8038F684 0038B4C4  38 C1 00 10 */	addi r6, r1, 0x10
+/* 8038F688 0038B4C8  4B FF FE C5 */	bl CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2
+/* 8038F68C 0038B4CC  3B E0 00 00 */	li r31, 0
+/* 8038F690 0038B4D0  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F694 0038B4D4  4B E2 7D CD */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8038F698 0038B4D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038F69C 0038B4DC  41 82 00 B8 */	beq lbl_8038F754
+/* 8038F6A0 0038B4E0  3B C0 00 00 */	li r30, 0
+/* 8038F6A4 0038B4E4  48 00 00 A0 */	b lbl_8038F744
+lbl_8038F6A8:
+/* 8038F6A8 0038B4E8  38 61 00 68 */	addi r3, r1, 0x68
+/* 8038F6AC 0038B4EC  38 81 01 10 */	addi r4, r1, 0x110
+/* 8038F6B0 0038B4F0  7F C5 F3 78 */	mr r5, r30
+/* 8038F6B4 0038B4F4  4B E2 7D B5 */	bl collidedLog__Q35mcoll6detail12DetectResultCFUl
+/* 8038F6B8 0038B4F8  38 61 00 C0 */	addi r3, r1, 0xc0
+/* 8038F6BC 0038B4FC  38 81 00 68 */	addi r4, r1, 0x68
+/* 8038F6C0 0038B500  4B E2 75 BD */	bl info__Q35mcoll6detail11CollidedLogCFv
+/* 8038F6C4 0038B504  38 61 00 30 */	addi r3, r1, 0x30
+/* 8038F6C8 0038B508  38 81 00 C0 */	addi r4, r1, 0xc0
+/* 8038F6CC 0038B50C  4B E2 74 21 */	bl collideTarget__Q35mcoll6detail12CollidedInfoCFv
+/* 8038F6D0 0038B510  38 61 00 50 */	addi r3, r1, 0x50
+/* 8038F6D4 0038B514  38 81 00 30 */	addi r4, r1, 0x30
+/* 8038F6D8 0038B518  4B EA 2F 95 */	bl edge__Q35mcoll6detail13CollideTargetCFv
+/* 8038F6DC 0038B51C  C0 01 00 64 */	lfs f0, 0x64(r1)
+/* 8038F6E0 0038B520  FC 00 E8 40 */	fcmpo cr0, f0, f29
+/* 8038F6E4 0038B524  40 81 00 5C */	ble lbl_8038F740
+/* 8038F6E8 0038B528  38 61 00 08 */	addi r3, r1, 8
+/* 8038F6EC 0038B52C  38 81 00 C0 */	addi r4, r1, 0xc0
+/* 8038F6F0 0038B530  4B E2 74 05 */	bl intersectPos__Q35mcoll6detail12CollidedInfoCFv
+/* 8038F6F4 0038B534  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 8038F6F8 0038B538  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 8038F6FC 0038B53C  D0 01 00 1C */	stfs f0, 0x1c(r1)
+/* 8038F700 0038B540  7F 63 DB 78 */	mr r3, r27
+/* 8038F704 0038B544  4B CE 60 2D */	bl GKI_getfirst
+/* 8038F708 0038B548  4B E9 17 FD */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8038F70C 0038B54C  38 81 00 08 */	addi r4, r1, 8
+/* 8038F710 0038B550  4B EE B0 B5 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2
+/* 8038F714 0038B554  7F 63 DB 78 */	mr r3, r27
+/* 8038F718 0038B558  4B FB 0C 0D */	bl effect__Q43scn4step4hero4HeroFv
+/* 8038F71C 0038B55C  7C 7F 1B 78 */	mr r31, r3
+/* 8038F720 0038B560  38 61 00 20 */	addi r3, r1, 0x20
+/* 8038F724 0038B564  38 81 00 08 */	addi r4, r1, 8
+/* 8038F728 0038B568  4B E0 FD 35 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8038F72C 0038B56C  38 7F 00 08 */	addi r3, r31, 8
+/* 8038F730 0038B570  7F A4 EB 78 */	mr r4, r29
+/* 8038F734 0038B574  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8038F738 0038B578  4B ED E8 21 */	bl requestP__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+/* 8038F73C 0038B57C  3B E0 00 01 */	li r31, 1
+lbl_8038F740:
+/* 8038F740 0038B580  3B DE 00 01 */	addi r30, r30, 1
+lbl_8038F744:
+/* 8038F744 0038B584  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F748 0038B588  4B E2 7D 19 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8038F74C 0038B58C  7C 1E 18 40 */	cmplw r30, r3
+/* 8038F750 0038B590  41 80 FF 58 */	blt lbl_8038F6A8
+lbl_8038F754:
+/* 8038F754 0038B594  2C 1F 00 00 */	cmpwi r31, 0
+/* 8038F758 0038B598  41 82 00 18 */	beq lbl_8038F770
+lbl_8038F75C:
+/* 8038F75C 0038B59C  C0 21 00 1C */	lfs f1, 0x1c(r1)
+/* 8038F760 0038B5A0  C0 1C 00 04 */	lfs f0, 4(r28)
+/* 8038F764 0038B5A4  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8038F768 0038B5A8  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 8038F76C 0038B5AC  41 81 FE F4 */	bgt lbl_8038F660
+lbl_8038F770:
+/* 8038F770 0038B5B0  38 00 06 F8 */	li r0, 0x6f8
+/* 8038F774 0038B5B4  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8038F778 0038B5B8  CB E1 06 F0 */	lfd f31, 0x6f0(r1)
+/* 8038F77C 0038B5BC  38 00 06 E8 */	li r0, 0x6e8
+/* 8038F780 0038B5C0  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8038F784 0038B5C4  CB C1 06 E0 */	lfd f30, 0x6e0(r1)
+/* 8038F788 0038B5C8  38 00 06 D8 */	li r0, 0x6d8
+/* 8038F78C 0038B5CC  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 8038F790 0038B5D0  CB A1 06 D0 */	lfd f29, 0x6d0(r1)
+/* 8038F794 0038B5D4  39 61 06 D0 */	addi r11, r1, 0x6d0
+/* 8038F798 0038B5D8  4B C7 7B F1 */	bl func_80007388
+/* 8038F79C 0038B5DC  80 01 07 04 */	lwz r0, 0x704(r1)
+/* 8038F7A0 0038B5E0  7C 08 03 A6 */	mtlr r0
+/* 8038F7A4 0038B5E4  38 21 07 00 */	addi r1, r1, 0x700
+/* 8038F7A8 0038B5E8  4E 80 00 20 */	blr 
+
+.global CheckRoofHit__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step6effect4Kind
+CheckRoofHit__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step6effect4Kind:
+/* 8038F7AC 0038B5EC  94 21 F9 00 */	stwu r1, -0x700(r1)
+/* 8038F7B0 0038B5F0  7C 08 02 A6 */	mflr r0
+/* 8038F7B4 0038B5F4  90 01 07 04 */	stw r0, 0x704(r1)
+/* 8038F7B8 0038B5F8  DB E1 06 F0 */	stfd f31, 0x6f0(r1)
+/* 8038F7BC 0038B5FC  F3 E1 06 F8 */	psq_st f31, 1784(r1), 0, qr0
+/* 8038F7C0 0038B600  DB C1 06 E0 */	stfd f30, 0x6e0(r1)
+/* 8038F7C4 0038B604  F3 C1 06 E8 */	psq_st f30, 1768(r1), 0, qr0
+/* 8038F7C8 0038B608  DB A1 06 D0 */	stfd f29, 0x6d0(r1)
+/* 8038F7CC 0038B60C  F3 A1 06 D8 */	psq_st f29, 1752(r1), 0, qr0
+/* 8038F7D0 0038B610  39 61 06 D0 */	addi r11, r1, 0x6d0
+/* 8038F7D4 0038B614  4B C7 7B 69 */	bl func_8000733C
+/* 8038F7D8 0038B618  7C 7B 1B 78 */	mr r27, r3
+/* 8038F7DC 0038B61C  7C BC 2B 78 */	mr r28, r5
+/* 8038F7E0 0038B620  7C DD 33 78 */	mr r29, r6
+/* 8038F7E4 0038B624  38 61 00 18 */	addi r3, r1, 0x18
+/* 8038F7E8 0038B628  4B DB C1 81 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8038F7EC 0038B62C  C3 C2 D6 34 */	lfs f30, $$253723-_SDA2_BASE_(r2)
+/* 8038F7F0 0038B630  C3 A2 D6 30 */	lfs f29, $$253722-_SDA2_BASE_(r2)
+/* 8038F7F4 0038B634  C3 E2 D6 38 */	lfs f31, $$253724-_SDA2_BASE_(r2)
+/* 8038F7F8 0038B638  48 00 01 00 */	b lbl_8038F8F8
+lbl_8038F7FC:
+/* 8038F7FC 0038B63C  38 61 00 10 */	addi r3, r1, 0x10
+/* 8038F800 0038B640  C0 22 D6 30 */	lfs f1, $$253722-_SDA2_BASE_(r2)
+/* 8038F804 0038B644  C0 5C 00 04 */	lfs f2, 4(r28)
+/* 8038F808 0038B648  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 8038F80C 0038B64C  EC 42 00 28 */	fsubs f2, f2, f0
+/* 8038F810 0038B650  4B E0 FB 99 */	bl set__Q33hel4math7Vector2Fff
+/* 8038F814 0038B654  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F818 0038B658  7F 64 DB 78 */	mr r4, r27
+/* 8038F81C 0038B65C  38 A1 00 18 */	addi r5, r1, 0x18
+/* 8038F820 0038B660  38 C1 00 10 */	addi r6, r1, 0x10
+/* 8038F824 0038B664  4B FF FD 29 */	bl CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2
+/* 8038F828 0038B668  3B E0 00 00 */	li r31, 0
+/* 8038F82C 0038B66C  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F830 0038B670  4B E2 7C 31 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8038F834 0038B674  2C 03 00 00 */	cmpwi r3, 0
+/* 8038F838 0038B678  41 82 00 B8 */	beq lbl_8038F8F0
+/* 8038F83C 0038B67C  3B C0 00 00 */	li r30, 0
+/* 8038F840 0038B680  48 00 00 A0 */	b lbl_8038F8E0
+lbl_8038F844:
+/* 8038F844 0038B684  38 61 00 68 */	addi r3, r1, 0x68
+/* 8038F848 0038B688  38 81 01 10 */	addi r4, r1, 0x110
+/* 8038F84C 0038B68C  7F C5 F3 78 */	mr r5, r30
+/* 8038F850 0038B690  4B E2 7C 19 */	bl collidedLog__Q35mcoll6detail12DetectResultCFUl
+/* 8038F854 0038B694  38 61 00 C0 */	addi r3, r1, 0xc0
+/* 8038F858 0038B698  38 81 00 68 */	addi r4, r1, 0x68
+/* 8038F85C 0038B69C  4B E2 74 21 */	bl info__Q35mcoll6detail11CollidedLogCFv
+/* 8038F860 0038B6A0  38 61 00 30 */	addi r3, r1, 0x30
+/* 8038F864 0038B6A4  38 81 00 C0 */	addi r4, r1, 0xc0
+/* 8038F868 0038B6A8  4B E2 72 85 */	bl collideTarget__Q35mcoll6detail12CollidedInfoCFv
+/* 8038F86C 0038B6AC  38 61 00 50 */	addi r3, r1, 0x50
+/* 8038F870 0038B6B0  38 81 00 30 */	addi r4, r1, 0x30
+/* 8038F874 0038B6B4  4B EA 2D F9 */	bl edge__Q35mcoll6detail13CollideTargetCFv
+/* 8038F878 0038B6B8  C0 01 00 64 */	lfs f0, 0x64(r1)
+/* 8038F87C 0038B6BC  FC 00 E8 40 */	fcmpo cr0, f0, f29
+/* 8038F880 0038B6C0  40 80 00 5C */	bge lbl_8038F8DC
+/* 8038F884 0038B6C4  38 61 00 08 */	addi r3, r1, 8
+/* 8038F888 0038B6C8  38 81 00 C0 */	addi r4, r1, 0xc0
+/* 8038F88C 0038B6CC  4B E2 72 69 */	bl intersectPos__Q35mcoll6detail12CollidedInfoCFv
+/* 8038F890 0038B6D0  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 8038F894 0038B6D4  EC 1E 00 2A */	fadds f0, f30, f0
+/* 8038F898 0038B6D8  D0 01 00 1C */	stfs f0, 0x1c(r1)
+/* 8038F89C 0038B6DC  7F 63 DB 78 */	mr r3, r27
+/* 8038F8A0 0038B6E0  4B CE 5E 91 */	bl GKI_getfirst
+/* 8038F8A4 0038B6E4  4B E9 16 61 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8038F8A8 0038B6E8  38 81 00 08 */	addi r4, r1, 8
+/* 8038F8AC 0038B6EC  4B EE AF 19 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2
+/* 8038F8B0 0038B6F0  7F 63 DB 78 */	mr r3, r27
+/* 8038F8B4 0038B6F4  4B FB 0A 71 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8038F8B8 0038B6F8  7C 7F 1B 78 */	mr r31, r3
+/* 8038F8BC 0038B6FC  38 61 00 20 */	addi r3, r1, 0x20
+/* 8038F8C0 0038B700  38 81 00 08 */	addi r4, r1, 8
+/* 8038F8C4 0038B704  4B E0 FB 99 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8038F8C8 0038B708  38 7F 00 08 */	addi r3, r31, 8
+/* 8038F8CC 0038B70C  7F A4 EB 78 */	mr r4, r29
+/* 8038F8D0 0038B710  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8038F8D4 0038B714  4B ED E6 85 */	bl requestP__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+/* 8038F8D8 0038B718  3B E0 00 01 */	li r31, 1
+lbl_8038F8DC:
+/* 8038F8DC 0038B71C  3B DE 00 01 */	addi r30, r30, 1
+lbl_8038F8E0:
+/* 8038F8E0 0038B720  38 61 01 10 */	addi r3, r1, 0x110
+/* 8038F8E4 0038B724  4B E2 7B 7D */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
+/* 8038F8E8 0038B728  7C 1E 18 40 */	cmplw r30, r3
+/* 8038F8EC 0038B72C  41 80 FF 58 */	blt lbl_8038F844
+lbl_8038F8F0:
+/* 8038F8F0 0038B730  2C 1F 00 00 */	cmpwi r31, 0
+/* 8038F8F4 0038B734  41 82 00 18 */	beq lbl_8038F90C
+lbl_8038F8F8:
+/* 8038F8F8 0038B738  C0 3C 00 04 */	lfs f1, 4(r28)
+/* 8038F8FC 0038B73C  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 8038F900 0038B740  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8038F904 0038B744  FC 00 F8 40 */	fcmpo cr0, f0, f31
+/* 8038F908 0038B748  41 81 FE F4 */	bgt lbl_8038F7FC
+lbl_8038F90C:
+/* 8038F90C 0038B74C  38 00 06 F8 */	li r0, 0x6f8
+/* 8038F910 0038B750  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8038F914 0038B754  CB E1 06 F0 */	lfd f31, 0x6f0(r1)
+/* 8038F918 0038B758  38 00 06 E8 */	li r0, 0x6e8
+/* 8038F91C 0038B75C  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8038F920 0038B760  CB C1 06 E0 */	lfd f30, 0x6e0(r1)
+/* 8038F924 0038B764  38 00 06 D8 */	li r0, 0x6d8
+/* 8038F928 0038B768  13 A1 00 0C */	psq_lx f29, (r1 + r0), 0, qr0
+/* 8038F92C 0038B76C  CB A1 06 D0 */	lfd f29, 0x6d0(r1)
+/* 8038F930 0038B770  39 61 06 D0 */	addi r11, r1, 0x6d0
+/* 8038F934 0038B774  4B C7 7A 55 */	bl func_80007388
+/* 8038F938 0038B778  80 01 07 04 */	lwz r0, 0x704(r1)
+/* 8038F93C 0038B77C  7C 08 03 A6 */	mtlr r0
+/* 8038F940 0038B780  38 21 07 00 */	addi r1, r1, 0x700
+/* 8038F944 0038B784  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context:
+/* 80391B5C 0038D99C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80391B60 0038D9A0  7C 08 02 A6 */	mflr r0
+/* 80391B64 0038D9A4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80391B68 0038D9A8  39 61 00 20 */	addi r11, r1, 0x20
+/* 80391B6C 0038D9AC  4B C7 57 D5 */	bl func_80007340
+/* 80391B70 0038D9B0  7C 7C 1B 78 */	mr r28, r3
+/* 80391B74 0038D9B4  7C 9D 23 78 */	mr r29, r4
+/* 80391B78 0038D9B8  4B FA E7 A5 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391B7C 0038D9BC  7C 7F 1B 78 */	mr r31, r3
+/* 80391B80 0038D9C0  7F 83 E3 78 */	mr r3, r28
+/* 80391B84 0038D9C4  4B FA E7 99 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391B88 0038D9C8  7C 7E 1B 78 */	mr r30, r3
+/* 80391B8C 0038D9CC  38 7F 16 68 */	addi r3, r31, 0x1668
+/* 80391B90 0038D9D0  4B FA 67 15 */	bl defaultParentNodeIndex__Q43scn4step4hero4GearCFv
+/* 80391B94 0038D9D4  7C 7F 1B 78 */	mr r31, r3
+/* 80391B98 0038D9D8  38 7E 16 68 */	addi r3, r30, 0x1668
+/* 80391B9C 0038D9DC  4B FA 67 B1 */	bl model__Q43scn4step4hero4GearFv
+/* 80391BA0 0038D9E0  7F E4 FB 78 */	mr r4, r31
+/* 80391BA4 0038D9E4  4B E0 8C 3D */	bl changeParentNode__Q24gobj9GearModelFUl
+/* 80391BA8 0038D9E8  7F 83 E3 78 */	mr r3, r28
+/* 80391BAC 0038D9EC  7F A4 EB 78 */	mr r4, r29
+/* 80391BB0 0038D9F0  48 00 00 E9 */	bl InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+/* 80391BB4 0038D9F4  7F 83 E3 78 */	mr r3, r28
+/* 80391BB8 0038D9F8  4B FA E7 A5 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80391BBC 0038D9FC  4B FB DC 61 */	bl setXlu__Q43scn4step4hero7ObjCollFv
+/* 80391BC0 0038DA00  7F 83 E3 78 */	mr r3, r28
+/* 80391BC4 0038DA04  4B FA E8 41 */	bl water__Q43scn4step4hero4HeroFv
+/* 80391BC8 0038DA08  38 80 00 01 */	li r4, 1
+/* 80391BCC 0038DA0C  4B E2 56 49 */	bl setIsPassThroughLand__Q35mcoll6detail9DetectArgFb
+/* 80391BD0 0038DA10  7F 83 E3 78 */	mr r3, r28
+/* 80391BD4 0038DA14  4B FA E8 01 */	bl nururi__Q43scn4step4hero4HeroFv
+/* 80391BD8 0038DA18  38 80 00 00 */	li r4, 0
+/* 80391BDC 0038DA1C  4B FB D6 4D */	bl setCanNururi__Q43scn4step4hero6NururiFb
+/* 80391BE0 0038DA20  7F 83 E3 78 */	mr r3, r28
+/* 80391BE4 0038DA24  4B CE 3B 4D */	bl GKI_getfirst
+/* 80391BE8 0038DA28  4B DE 47 D9 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 80391BEC 0038DA2C  80 63 04 9C */	lwz r3, 0x49c(r3)
+/* 80391BF0 0038DA30  4B CC 22 01 */	bl __wpadNoAlloc
+/* 80391BF4 0038DA34  2C 03 00 00 */	cmpwi r3, 0
+/* 80391BF8 0038DA38  40 82 00 1C */	bne lbl_80391C14
+/* 80391BFC 0038DA3C  7F 83 E3 78 */	mr r3, r28
+/* 80391C00 0038DA40  38 80 00 00 */	li r4, 0
+/* 80391C04 0038DA44  4B FC 61 61 */	bl SetSecondMoveIsValid__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+/* 80391C08 0038DA48  7F 83 E3 78 */	mr r3, r28
+/* 80391C0C 0038DA4C  4B FA E7 29 */	bl landConstraint__Q43scn4step4hero4HeroFv
+/* 80391C10 0038DA50  4B ED D5 7D */	bl resetMode__Q43scn4step5chara14LandConstraintFv
+lbl_80391C14:
+/* 80391C14 0038DA54  39 61 00 20 */	addi r11, r1, 0x20
+/* 80391C18 0038DA58  4B C7 57 75 */	bl func_8000738C
+/* 80391C1C 0038DA5C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80391C20 0038DA60  7C 08 03 A6 */	mtlr r0
+/* 80391C24 0038DA64  38 21 00 20 */	addi r1, r1, 0x20
+/* 80391C28 0038DA68  4E 80 00 20 */	blr 
+
+.global OnStateEndChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero
+OnStateEndChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero:
+/* 80391C2C 0038DA6C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80391C30 0038DA70  7C 08 02 A6 */	mflr r0
+/* 80391C34 0038DA74  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80391C38 0038DA78  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80391C3C 0038DA7C  7C 7F 1B 78 */	mr r31, r3
+/* 80391C40 0038DA80  4B FA E6 DD */	bl model__Q43scn4step4hero4HeroFv
+/* 80391C44 0038DA84  38 63 16 68 */	addi r3, r3, 0x1668
+/* 80391C48 0038DA88  4B FA 67 05 */	bl model__Q43scn4step4hero4GearFv
+/* 80391C4C 0038DA8C  4B E0 8C 15 */	bl removeParentNode__Q24gobj9GearModelFv
+/* 80391C50 0038DA90  7F E3 FB 78 */	mr r3, r31
+/* 80391C54 0038DA94  4B FA E7 09 */	bl objColl__Q43scn4step4hero4HeroFv
+/* 80391C58 0038DA98  4B FB DC 29 */	bl unsetXlu__Q43scn4step4hero7ObjCollFv
+/* 80391C5C 0038DA9C  7F E3 FB 78 */	mr r3, r31
+/* 80391C60 0038DAA0  4B FA E7 A5 */	bl water__Q43scn4step4hero4HeroFv
+/* 80391C64 0038DAA4  38 80 00 00 */	li r4, 0
+/* 80391C68 0038DAA8  4B E2 55 AD */	bl setIsPassThroughLand__Q35mcoll6detail9DetectArgFb
+/* 80391C6C 0038DAAC  7F E3 FB 78 */	mr r3, r31
+/* 80391C70 0038DAB0  4B FA E6 9D */	bl move__Q43scn4step4hero4HeroFv
+/* 80391C74 0038DAB4  4B E0 97 55 */	bl resetMoveRate__Q24gobj4MoveFv
+/* 80391C78 0038DAB8  7F E3 FB 78 */	mr r3, r31
+/* 80391C7C 0038DABC  38 80 00 01 */	li r4, 1
+/* 80391C80 0038DAC0  4B FC 60 E5 */	bl SetSecondMoveIsValid__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob
+/* 80391C84 0038DAC4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80391C88 0038DAC8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80391C8C 0038DACC  7C 08 03 A6 */	mtlr r0
+/* 80391C90 0038DAD0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80391C94 0038DAD4  4E 80 00 20 */	blr 
+
+.global InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context:
+/* 80391C98 0038DAD8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80391C9C 0038DADC  7C 08 02 A6 */	mflr r0
+/* 80391CA0 0038DAE0  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80391CA4 0038DAE4  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 80391CA8 0038DAE8  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 80391CAC 0038DAEC  39 61 00 30 */	addi r11, r1, 0x30
+/* 80391CB0 0038DAF0  4B C7 56 95 */	bl func_80007344
+/* 80391CB4 0038DAF4  7C 7D 1B 78 */	mr r29, r3
+/* 80391CB8 0038DAF8  7C 9E 23 78 */	mr r30, r4
+/* 80391CBC 0038DAFC  4B FA E6 61 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391CC0 0038DB00  7C 64 1B 78 */	mr r4, r3
+/* 80391CC4 0038DB04  38 61 00 08 */	addi r3, r1, 8
+/* 80391CC8 0038DB08  38 84 00 0C */	addi r4, r4, 0xc
+/* 80391CCC 0038DB0C  81 84 00 00 */	lwz r12, 0(r4)
+/* 80391CD0 0038DB10  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 80391CD4 0038DB14  7D 89 03 A6 */	mtctr r12
+/* 80391CD8 0038DB18  4E 80 04 21 */	bctrl 
+/* 80391CDC 0038DB1C  38 61 00 08 */	addi r3, r1, 8
+/* 80391CE0 0038DB20  4B DF EA 59 */	bl isVisible__Q23g3d13ModelAccessorCFv
+/* 80391CE4 0038DB24  7C 7F 1B 78 */	mr r31, r3
+/* 80391CE8 0038DB28  38 61 00 08 */	addi r3, r1, 8
+/* 80391CEC 0038DB2C  38 80 FF FF */	li r4, -1
+/* 80391CF0 0038DB30  4B DE A2 59 */	bl __dt__Q23g3d13ModelAccessorFv
+/* 80391CF4 0038DB34  2C 1F 00 00 */	cmpwi r31, 0
+/* 80391CF8 0038DB38  41 82 00 24 */	beq lbl_80391D1C
+/* 80391CFC 0038DB3C  7F A3 EB 78 */	mr r3, r29
+/* 80391D00 0038DB40  4B FA E6 1D */	bl model__Q43scn4step4hero4HeroFv
+/* 80391D04 0038DB44  7C 7F 1B 78 */	mr r31, r3
+/* 80391D08 0038DB48  7F C3 F3 78 */	mr r3, r30
+/* 80391D0C 0038DB4C  4B D4 94 B5 */	bl GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+/* 80391D10 0038DB50  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391D14 0038DB54  4B ED F9 F5 */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
+/* 80391D18 0038DB58  48 00 01 18 */	b lbl_80391E30
+lbl_80391D1C:
+/* 80391D1C 0038DB5C  7F C3 F3 78 */	mr r3, r30
+/* 80391D20 0038DB60  4B CE 3A 11 */	bl GKI_getfirst
+/* 80391D24 0038DB64  4B D6 EA BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80391D28 0038DB68  28 03 00 02 */	cmplwi r3, 2
+/* 80391D2C 0038DB6C  40 81 00 2C */	ble lbl_80391D58
+/* 80391D30 0038DB70  38 03 FF F7 */	addi r0, r3, -9
+/* 80391D34 0038DB74  28 00 00 01 */	cmplwi r0, 1
+/* 80391D38 0038DB78  40 81 00 20 */	ble lbl_80391D58
+/* 80391D3C 0038DB7C  28 03 00 0C */	cmplwi r3, 0xc
+/* 80391D40 0038DB80  41 82 00 18 */	beq lbl_80391D58
+/* 80391D44 0038DB84  28 03 00 06 */	cmplwi r3, 6
+/* 80391D48 0038DB88  41 82 00 10 */	beq lbl_80391D58
+/* 80391D4C 0038DB8C  28 03 00 0F */	cmplwi r3, 0xf
+/* 80391D50 0038DB90  41 82 00 28 */	beq lbl_80391D78
+/* 80391D54 0038DB94  48 00 00 84 */	b lbl_80391DD8
+lbl_80391D58:
+/* 80391D58 0038DB98  7F A3 EB 78 */	mr r3, r29
+/* 80391D5C 0038DB9C  4B FA E5 C1 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391D60 0038DBA0  7C 7F 1B 78 */	mr r31, r3
+/* 80391D64 0038DBA4  7F C3 F3 78 */	mr r3, r30
+/* 80391D68 0038DBA8  4B D4 94 59 */	bl GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+/* 80391D6C 0038DBAC  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391D70 0038DBB0  4B ED F9 99 */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
+/* 80391D74 0038DBB4  48 00 00 BC */	b lbl_80391E30
+lbl_80391D78:
+/* 80391D78 0038DBB8  7F A3 EB 78 */	mr r3, r29
+/* 80391D7C 0038DBBC  4B FA E5 A1 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391D80 0038DBC0  7C 7F 1B 78 */	mr r31, r3
+/* 80391D84 0038DBC4  7F C3 F3 78 */	mr r3, r30
+/* 80391D88 0038DBC8  4B D4 94 39 */	bl GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+/* 80391D8C 0038DBCC  FF E0 08 90 */	fmr f31, f1
+/* 80391D90 0038DBD0  7F A3 EB 78 */	mr r3, r29
+/* 80391D94 0038DBD4  4B FA E5 49 */	bl param__Q43scn4step4hero4HeroFv
+/* 80391D98 0038DBD8  4B FB F4 1D */	bl stone__Q43scn4step4hero5ParamCFv
+/* 80391D9C 0038DBDC  C0 23 00 00 */	lfs f1, 0(r3)
+/* 80391DA0 0038DBE0  C0 02 D6 68 */	lfs f0, $$258122-_SDA2_BASE_(r2)
+/* 80391DA4 0038DBE4  EC 20 F8 7A */	fmadds f1, f0, f1, f31
+/* 80391DA8 0038DBE8  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391DAC 0038DBEC  4B ED F9 5D */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
+/* 80391DB0 0038DBF0  7F A3 EB 78 */	mr r3, r29
+/* 80391DB4 0038DBF4  4B FA E5 69 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391DB8 0038DBF8  7C 7F 1B 78 */	mr r31, r3
+/* 80391DBC 0038DBFC  7F A3 EB 78 */	mr r3, r29
+/* 80391DC0 0038DC00  4B FA E5 1D */	bl param__Q43scn4step4hero4HeroFv
+/* 80391DC4 0038DC04  4B FB F3 F1 */	bl stone__Q43scn4step4hero5ParamCFv
+/* 80391DC8 0038DC08  C0 23 00 04 */	lfs f1, 4(r3)
+/* 80391DCC 0038DC0C  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391DD0 0038DC10  4B E0 95 F1 */	bl setMoveRate__Q24gobj4MoveFf
+/* 80391DD4 0038DC14  48 00 00 5C */	b lbl_80391E30
+lbl_80391DD8:
+/* 80391DD8 0038DC18  7F A3 EB 78 */	mr r3, r29
+/* 80391DDC 0038DC1C  4B FA E5 41 */	bl model__Q43scn4step4hero4HeroFv
+/* 80391DE0 0038DC20  7C 7F 1B 78 */	mr r31, r3
+/* 80391DE4 0038DC24  7F C3 F3 78 */	mr r3, r30
+/* 80391DE8 0038DC28  4B D4 93 D9 */	bl GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+/* 80391DEC 0038DC2C  FF E0 08 90 */	fmr f31, f1
+/* 80391DF0 0038DC30  7F A3 EB 78 */	mr r3, r29
+/* 80391DF4 0038DC34  4B FA E4 E9 */	bl param__Q43scn4step4hero4HeroFv
+/* 80391DF8 0038DC38  4B FB F3 BD */	bl stone__Q43scn4step4hero5ParamCFv
+/* 80391DFC 0038DC3C  C0 03 00 00 */	lfs f0, 0(r3)
+/* 80391E00 0038DC40  EC 20 F8 2A */	fadds f1, f0, f31
+/* 80391E04 0038DC44  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391E08 0038DC48  4B ED F9 01 */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
+/* 80391E0C 0038DC4C  7F A3 EB 78 */	mr r3, r29
+/* 80391E10 0038DC50  4B FA E5 0D */	bl model__Q43scn4step4hero4HeroFv
+/* 80391E14 0038DC54  7C 7F 1B 78 */	mr r31, r3
+/* 80391E18 0038DC58  7F A3 EB 78 */	mr r3, r29
+/* 80391E1C 0038DC5C  4B FA E4 C1 */	bl param__Q43scn4step4hero4HeroFv
+/* 80391E20 0038DC60  4B FB F3 95 */	bl stone__Q43scn4step4hero5ParamCFv
+/* 80391E24 0038DC64  C0 23 00 04 */	lfs f1, 4(r3)
+/* 80391E28 0038DC68  38 7F 02 90 */	addi r3, r31, 0x290
+/* 80391E2C 0038DC6C  4B E0 95 95 */	bl setMoveRate__Q24gobj4MoveFf
+lbl_80391E30:
+/* 80391E30 0038DC70  38 00 00 38 */	li r0, 0x38
+/* 80391E34 0038DC74  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 80391E38 0038DC78  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 80391E3C 0038DC7C  39 61 00 30 */	addi r11, r1, 0x30
+/* 80391E40 0038DC80  4B C7 55 51 */	bl func_80007390
+/* 80391E44 0038DC84  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80391E48 0038DC88  7C 08 03 A6 */	mtlr r0
+/* 80391E4C 0038DC8C  38 21 00 40 */	addi r1, r1, 0x40
+/* 80391E50 0038DC90  4E 80 00 20 */	blr 
+
+.global UpdateSlipRolling__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+UpdateSlipRolling__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context:
+/* 80391E54 0038DC94  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80391E58 0038DC98  7C 08 02 A6 */	mflr r0
+/* 80391E5C 0038DC9C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80391E60 0038DCA0  39 61 00 30 */	addi r11, r1, 0x30
+/* 80391E64 0038DCA4  4B C7 54 DD */	bl func_80007340
+/* 80391E68 0038DCA8  7C 7C 1B 78 */	mr r28, r3
+/* 80391E6C 0038DCAC  7C 9D 23 78 */	mr r29, r4
+/* 80391E70 0038DCB0  7F A3 EB 78 */	mr r3, r29
+/* 80391E74 0038DCB4  4B ED B8 A5 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 80391E78 0038DCB8  2C 03 00 00 */	cmpwi r3, 0
+/* 80391E7C 0038DCBC  41 82 00 A4 */	beq lbl_80391F20
+/* 80391E80 0038DCC0  7F 83 E3 78 */	mr r3, r28
+/* 80391E84 0038DCC4  4B FA E4 59 */	bl param__Q43scn4step4hero4HeroFv
+/* 80391E88 0038DCC8  4B FB F3 2D */	bl stone__Q43scn4step4hero5ParamCFv
+/* 80391E8C 0038DCCC  7C 7E 1B 78 */	mr r30, r3
+/* 80391E90 0038DCD0  7F A3 EB 78 */	mr r3, r29
+/* 80391E94 0038DCD4  4B D9 7F DD */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 80391E98 0038DCD8  7C 7F 1B 78 */	mr r31, r3
+/* 80391E9C 0038DCDC  7F A3 EB 78 */	mr r3, r29
+/* 80391EA0 0038DCE0  4B CB C6 E1 */	bl ARCGetLength
+/* 80391EA4 0038DCE4  7C 03 F8 40 */	cmplw r3, r31
+/* 80391EA8 0038DCE8  40 80 00 6C */	bge lbl_80391F14
+/* 80391EAC 0038DCEC  7F A3 EB 78 */	mr r3, r29
+/* 80391EB0 0038DCF0  4B CB C6 D1 */	bl ARCGetLength
+/* 80391EB4 0038DCF4  C8 42 D6 78 */	lfd f2, $$258168-_SDA2_BASE_(r2)
+/* 80391EB8 0038DCF8  90 61 00 0C */	stw r3, 0xc(r1)
+/* 80391EBC 0038DCFC  3C 00 43 30 */	lis r0, 0x4330
+/* 80391EC0 0038DD00  90 01 00 08 */	stw r0, 8(r1)
+/* 80391EC4 0038DD04  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80391EC8 0038DD08  EC 20 10 28 */	fsubs f1, f0, f2
+/* 80391ECC 0038DD0C  93 E1 00 14 */	stw r31, 0x14(r1)
+/* 80391ED0 0038DD10  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80391ED4 0038DD14  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80391ED8 0038DD18  EC 00 10 28 */	fsubs f0, f0, f2
+/* 80391EDC 0038DD1C  EC 41 00 24 */	fdivs f2, f1, f0
+/* 80391EE0 0038DD20  C0 02 D6 70 */	lfs f0, $$258163-_SDA2_BASE_(r2)
+/* 80391EE4 0038DD24  EC 00 00 B2 */	fmuls f0, f0, f2
+/* 80391EE8 0038DD28  EC 00 00 B2 */	fmuls f0, f0, f2
+/* 80391EEC 0038DD2C  EC 22 00 32 */	fmuls f1, f2, f0
+/* 80391EF0 0038DD30  C0 02 D6 6C */	lfs f0, $$258162-_SDA2_BASE_(r2)
+/* 80391EF4 0038DD34  EC 20 08 BA */	fmadds f1, f0, f2, f1
+/* 80391EF8 0038DD38  C0 1E 00 10 */	lfs f0, 0x10(r30)
+/* 80391EFC 0038DD3C  EC 21 00 32 */	fmuls f1, f1, f0
+/* 80391F00 0038DD40  7F A3 EB 78 */	mr r3, r29
+/* 80391F04 0038DD44  4B E0 94 BD */	bl setMoveRate__Q24gobj4MoveFf
+/* 80391F08 0038DD48  7F A3 EB 78 */	mr r3, r29
+/* 80391F0C 0038DD4C  4B F1 85 69 */	bl procAnim__Q53scn4step5enemy6damage23StateDeadCaptureReleaseFv
+/* 80391F10 0038DD50  48 00 00 10 */	b lbl_80391F20
+lbl_80391F14:
+/* 80391F14 0038DD54  7F A3 EB 78 */	mr r3, r29
+/* 80391F18 0038DD58  C0 22 D6 74 */	lfs f1, $$258164-_SDA2_BASE_(r2)
+/* 80391F1C 0038DD5C  4B E0 94 A5 */	bl setMoveRate__Q24gobj4MoveFf
+lbl_80391F20:
+/* 80391F20 0038DD60  7F 83 E3 78 */	mr r3, r28
+/* 80391F24 0038DD64  7F A4 EB 78 */	mr r4, r29
+/* 80391F28 0038DD68  4B FF FD 71 */	bl InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+/* 80391F2C 0038DD6C  39 61 00 30 */	addi r11, r1, 0x30
+/* 80391F30 0038DD70  4B C7 54 5D */	bl func_8000738C
+/* 80391F34 0038DD74  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80391F38 0038DD78  7C 08 03 A6 */	mtlr r0
+/* 80391F3C 0038DD7C  38 21 00 30 */	addi r1, r1, 0x30
+/* 80391F40 0038DD80  4E 80 00 20 */	blr 
+
+.global ProcMoveChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero
+ProcMoveChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero:
+/* 80391F44 0038DD84  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80391F48 0038DD88  7C 08 02 A6 */	mflr r0
+/* 80391F4C 0038DD8C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80391F50 0038DD90  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80391F54 0038DD94  7C 7F 1B 78 */	mr r31, r3
+/* 80391F58 0038DD98  4B FA E4 AD */	bl water__Q43scn4step4hero4HeroFv
+/* 80391F5C 0038DD9C  4B E4 86 D5 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 80391F60 0038DDA0  2C 03 00 00 */	cmpwi r3, 0
+/* 80391F64 0038DDA4  41 82 00 18 */	beq lbl_80391F7C
+/* 80391F68 0038DDA8  7F E3 FB 78 */	mr r3, r31
+/* 80391F6C 0038DDAC  4B FA E3 A1 */	bl move__Q43scn4step4hero4HeroFv
+/* 80391F70 0038DDB0  C0 22 D6 80 */	lfs f1, $$258173-_SDA2_BASE_(r2)
+/* 80391F74 0038DDB4  4B E0 94 4D */	bl setMoveRate__Q24gobj4MoveFf
+/* 80391F78 0038DDB8  48 00 00 10 */	b lbl_80391F88
+lbl_80391F7C:
+/* 80391F7C 0038DDBC  7F E3 FB 78 */	mr r3, r31
+/* 80391F80 0038DDC0  4B FA E3 8D */	bl move__Q43scn4step4hero4HeroFv
+/* 80391F84 0038DDC4  4B E0 94 45 */	bl resetMoveRate__Q24gobj4MoveFv
+lbl_80391F88:
+/* 80391F88 0038DDC8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80391F8C 0038DDCC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80391F90 0038DDD0  7C 08 03 A6 */	mtlr r0
+/* 80391F94 0038DDD4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80391F98 0038DDD8  4E 80 00 20 */	blr 
+
+.global MoveGround__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
+MoveGround__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context:
+/* 80391F9C 0038DDDC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80391FA0 0038DDE0  7C 08 02 A6 */	mflr r0
+/* 80391FA4 0038DDE4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80391FA8 0038DDE8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80391FAC 0038DDEC  7C 7F 1B 78 */	mr r31, r3
+/* 80391FB0 0038DDF0  7C 83 23 78 */	mr r3, r4
+/* 80391FB4 0038DDF4  4B E4 87 41 */	bl isDecideAnimEnd__Q25pause11ButtonPanelCFv
+/* 80391FB8 0038DDF8  2C 03 00 00 */	cmpwi r3, 0
+/* 80391FBC 0038DDFC  41 82 00 24 */	beq lbl_80391FE0
+/* 80391FC0 0038DE00  C0 22 D6 84 */	lfs f1, $$258180-_SDA2_BASE_(r2)
+/* 80391FC4 0038DE04  4B E0 9A 39 */	bl Create__Q24gobj14MoveParamDecelFf
+/* 80391FC8 0038DE08  90 61 00 08 */	stw r3, 8(r1)
+/* 80391FCC 0038DE0C  7F E3 FB 78 */	mr r3, r31
+/* 80391FD0 0038DE10  4B FA E3 3D */	bl move__Q43scn4step4hero4HeroFv
+/* 80391FD4 0038DE14  38 81 00 08 */	addi r4, r1, 8
+/* 80391FD8 0038DE18  4B E0 94 D1 */	bl groundDecel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
+/* 80391FDC 0038DE1C  48 00 00 0C */	b lbl_80391FE8
+lbl_80391FE0:
+/* 80391FE0 0038DE20  7F E3 FB 78 */	mr r3, r31
+/* 80391FE4 0038DE24  4B FC 45 19 */	bl MoveDefaultBrake__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_80391FE8:
+/* 80391FE8 0038DE28  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80391FEC 0038DE2C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80391FF0 0038DE30  7C 08 03 A6 */	mtlr r0
+/* 80391FF4 0038DE34  38 21 00 20 */	addi r1, r1, 0x20
+/* 80391FF8 0038DE38  4E 80 00 20 */	blr 
+
+.global IsSlope__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero
+IsSlope__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero:
+/* 80391FFC 0038DE3C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80392000 0038DE40  7C 08 02 A6 */	mflr r0
+/* 80392004 0038DE44  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80392008 0038DE48  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8039200C 0038DE4C  7C 7F 1B 78 */	mr r31, r3
+/* 80392010 0038DE50  4B FA E2 ED */	bl footState__Q43scn4step4hero4HeroFv
+/* 80392014 0038DE54  4B DE F6 C1 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 80392018 0038DE58  2C 03 00 00 */	cmpwi r3, 0
+/* 8039201C 0038DE5C  41 82 00 40 */	beq lbl_8039205C
+/* 80392020 0038DE60  7F E3 FB 78 */	mr r3, r31
+/* 80392024 0038DE64  4B FA E3 19 */	bl mapColl__Q43scn4step4hero4HeroFv
+/* 80392028 0038DE68  C0 23 00 74 */	lfs f1, 0x74(r3)
+/* 8039202C 0038DE6C  D0 21 00 08 */	stfs f1, 8(r1)
+/* 80392030 0038DE70  C0 03 00 78 */	lfs f0, 0x78(r3)
+/* 80392034 0038DE74  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 80392038 0038DE78  C0 02 D6 74 */	lfs f0, $$258164-_SDA2_BASE_(r2)
+/* 8039203C 0038DE7C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80392040 0038DE80  40 80 00 08 */	bge lbl_80392048
+/* 80392044 0038DE84  FC 20 08 50 */	fneg f1, f1
+lbl_80392048:
+/* 80392048 0038DE88  C0 02 D6 88 */	lfs f0, $$258198-_SDA2_BASE_(r2)
+/* 8039204C 0038DE8C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80392050 0038DE90  40 81 00 0C */	ble lbl_8039205C
+/* 80392054 0038DE94  38 60 00 01 */	li r3, 1
+/* 80392058 0038DE98  48 00 00 08 */	b lbl_80392060
+lbl_8039205C:
+/* 8039205C 0038DE9C  38 60 00 00 */	li r3, 0
+lbl_80392060:
+/* 80392060 0038DEA0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80392064 0038DEA4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80392068 0038DEA8  7C 08 03 A6 */	mtlr r0
+/* 8039206C 0038DEAC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80392070 0038DEB0  4E 80 00 20 */	blr 
+
+.global ChkCancel__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero
+ChkCancel__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4Hero:
+/* 80392074 0038DEB4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80392078 0038DEB8  7C 08 02 A6 */	mflr r0
+/* 8039207C 0038DEBC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80392080 0038DEC0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80392084 0038DEC4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80392088 0038DEC8  7C 7E 1B 78 */	mr r30, r3
+/* 8039208C 0038DECC  4B FA E2 C1 */	bl hid__Q43scn4step4hero4HeroFv
+/* 80392090 0038DED0  38 80 00 20 */	li r4, 0x20
+/* 80392094 0038DED4  4B FA ED 59 */	bl isTrigger__Q43scn4step4hero3HidCFUl
+/* 80392098 0038DED8  2C 03 00 00 */	cmpwi r3, 0
+/* 8039209C 0038DEDC  40 82 00 18 */	bne lbl_803920B4
+/* 803920A0 0038DEE0  7F C3 F3 78 */	mr r3, r30
+/* 803920A4 0038DEE4  4B FA E3 79 */	bl logoutController__Q43scn4step4hero4HeroFv
+/* 803920A8 0038DEE8  4B FB 2D 05 */	bl isLogoutForce__Q43scn4step4hero16LogoutControllerCFv
+/* 803920AC 0038DEEC  2C 03 00 00 */	cmpwi r3, 0
+/* 803920B0 0038DEF0  41 82 00 50 */	beq lbl_80392100
+lbl_803920B4:
+/* 803920B4 0038DEF4  7F C3 F3 78 */	mr r3, r30
+/* 803920B8 0038DEF8  4B FA E2 5D */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 803920BC 0038DEFC  7C 7F 1B 78 */	mr r31, r3
+/* 803920C0 0038DF00  48 07 3E 41 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 803920C4 0038DF04  38 9F 00 10 */	addi r4, r31, 0x10
+/* 803920C8 0038DF08  2C 04 00 00 */	cmpwi r4, 0
+/* 803920CC 0038DF0C  41 82 00 28 */	beq lbl_803920F4
+/* 803920D0 0038DF10  3C 60 80 46 */	lis r3, __vt__Q24util28StateFactory$$0Q24util6IState$$1@ha
+/* 803920D4 0038DF14  38 03 44 78 */	addi r0, r3, __vt__Q24util28StateFactory$$0Q24util6IState$$1@l
+/* 803920D8 0038DF18  90 04 00 00 */	stw r0, 0(r4)
+/* 803920DC 0038DF1C  38 1F 00 90 */	addi r0, r31, 0x90
+/* 803920E0 0038DF20  90 04 00 04 */	stw r0, 4(r4)
+/* 803920E4 0038DF24  3C 60 80 49 */	lis r3, __vt__Q24util87StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5stone8StateEnd$$4PQ43scn4step4hero4Hero$$1@ha
+/* 803920E8 0038DF28  38 03 DA 28 */	addi r0, r3, __vt__Q24util87StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5stone8StateEnd$$4PQ43scn4step4hero4Hero$$1@l
+/* 803920EC 0038DF2C  90 04 00 00 */	stw r0, 0(r4)
+/* 803920F0 0038DF30  93 C4 00 08 */	stw r30, 8(r4)
+lbl_803920F4:
+/* 803920F4 0038DF34  90 9F 00 0C */	stw r4, 0xc(r31)
+/* 803920F8 0038DF38  38 60 00 01 */	li r3, 1
+/* 803920FC 0038DF3C  48 00 00 08 */	b lbl_80392104
+lbl_80392100:
+/* 80392100 0038DF40  38 60 00 00 */	li r3, 0
+lbl_80392104:
+/* 80392104 0038DF44  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80392108 0038DF48  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8039210C 0038DF4C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80392110 0038DF50  7C 08 03 A6 */	mtlr r0
+/* 80392114 0038DF54  38 21 00 10 */	addi r1, r1, 0x10
+/* 80392118 0038DF58  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global IsInLand__Q43scn4step4item7UtilityFRQ43scn4step4item4Item
+IsInLand__Q43scn4step4item7UtilityFRQ43scn4step4item4Item:
+/* 803C5430 003C1270  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803C5434 003C1274  7C 08 02 A6 */	mflr r0
+/* 803C5438 003C1278  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803C543C 003C127C  39 61 00 60 */	addi r11, r1, 0x60
+/* 803C5440 003C1280  4B C4 1F 05 */	bl func_80007344
+/* 803C5444 003C1284  7C 7D 1B 78 */	mr r29, r3
+/* 803C5448 003C1288  4B FF D7 45 */	bl getRadius__Q43scn4step4item4ItemCFv
+/* 803C544C 003C128C  C0 02 DA D0 */	lfs f0, $$253795-_SDA2_BASE_(r2)
+/* 803C5450 003C1290  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 803C5454 003C1294  D0 21 00 1C */	stfs f1, 0x1c(r1)
+/* 803C5458 003C1298  7F A3 EB 78 */	mr r3, r29
+/* 803C545C 003C129C  4B FF D8 7D */	bl location__Q43scn4step4item4ItemFv
+/* 803C5460 003C12A0  7C 64 1B 78 */	mr r4, r3
+/* 803C5464 003C12A4  38 61 00 30 */	addi r3, r1, 0x30
+/* 803C5468 003C12A8  4B DB 71 61 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803C546C 003C12AC  38 61 00 20 */	addi r3, r1, 0x20
+/* 803C5470 003C12B0  38 81 00 30 */	addi r4, r1, 0x30
+/* 803C5474 003C12B4  4B DF D7 59 */	bl getXY__Q33hel4math7Vector3CFv
+/* 803C5478 003C12B8  38 81 00 20 */	addi r4, r1, 0x20
+/* 803C547C 003C12BC  38 61 00 10 */	addi r3, r1, 0x10
+/* 803C5480 003C12C0  4B D8 64 E9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 803C5484 003C12C4  7C 64 1B 78 */	mr r4, r3
+/* 803C5488 003C12C8  C0 23 00 00 */	lfs f1, 0(r3)
+/* 803C548C 003C12CC  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 803C5490 003C12D0  EC 01 00 2A */	fadds f0, f1, f0
+/* 803C5494 003C12D4  D0 03 00 00 */	stfs f0, 0(r3)
+/* 803C5498 003C12D8  C0 23 00 04 */	lfs f1, 4(r3)
+/* 803C549C 003C12DC  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 803C54A0 003C12E0  EC 01 00 2A */	fadds f0, f1, f0
+/* 803C54A4 003C12E4  D0 03 00 04 */	stfs f0, 4(r3)
+/* 803C54A8 003C12E8  38 61 00 28 */	addi r3, r1, 0x28
+/* 803C54AC 003C12EC  4B D8 64 BD */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 803C54B0 003C12F0  7F A3 EB 78 */	mr r3, r29
+/* 803C54B4 003C12F4  4B CB 02 7D */	bl GKI_getfirst
+/* 803C54B8 003C12F8  4B E5 B8 3D */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 803C54BC 003C12FC  4B C5 EF E5 */	bl DefaultSwitchThreadCallback
+/* 803C54C0 003C1300  7C 64 1B 78 */	mr r4, r3
+/* 803C54C4 003C1304  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803C54C8 003C1308  38 A1 00 28 */	addi r5, r1, 0x28
+/* 803C54CC 003C130C  4B DE C7 5D */	bl getLandGridData__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 803C54D0 003C1310  3B C0 00 00 */	li r30, 0
+/* 803C54D4 003C1314  3B E0 00 00 */	li r31, 0
+/* 803C54D8 003C1318  7F A3 EB 78 */	mr r3, r29
+/* 803C54DC 003C131C  4B CB 02 55 */	bl GKI_getfirst
+/* 803C54E0 003C1320  4B E5 B8 15 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 803C54E4 003C1324  4B C5 EF BD */	bl DefaultSwitchThreadCallback
+/* 803C54E8 003C1328  38 81 00 28 */	addi r4, r1, 0x28
+/* 803C54EC 003C132C  4B DE CA 65 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 803C54F0 003C1330  2C 03 00 00 */	cmpwi r3, 0
+/* 803C54F4 003C1334  40 82 00 24 */	bne lbl_803C5518
+/* 803C54F8 003C1338  7F A3 EB 78 */	mr r3, r29
+/* 803C54FC 003C133C  4B CB 02 35 */	bl GKI_getfirst
+/* 803C5500 003C1340  4B E5 B7 F5 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 803C5504 003C1344  4B C5 EF 9D */	bl DefaultSwitchThreadCallback
+/* 803C5508 003C1348  38 81 00 28 */	addi r4, r1, 0x28
+/* 803C550C 003C134C  4B DE CA F1 */	bl isExistMoveLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 803C5510 003C1350  2C 03 00 00 */	cmpwi r3, 0
+/* 803C5514 003C1354  41 82 00 08 */	beq lbl_803C551C
+lbl_803C5518:
+/* 803C5518 003C1358  3B E0 00 01 */	li r31, 1
+lbl_803C551C:
+/* 803C551C 003C135C  2C 1F 00 00 */	cmpwi r31, 0
+/* 803C5520 003C1360  41 82 00 48 */	beq lbl_803C5568
+/* 803C5524 003C1364  3B E0 00 00 */	li r31, 0
+/* 803C5528 003C1368  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803C552C 003C136C  38 80 00 00 */	li r4, 0
+/* 803C5530 003C1370  4B DF 26 95 */	bl shapeKind__Q35mcoll6detail8LandGridCFb
+/* 803C5534 003C1374  2C 03 00 01 */	cmpwi r3, 1
+/* 803C5538 003C1378  40 82 00 24 */	bne lbl_803C555C
+/* 803C553C 003C137C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803C5540 003C1380  4B CB 01 F1 */	bl GKI_getfirst
+/* 803C5544 003C1384  90 61 00 08 */	stw r3, 8(r1)
+/* 803C5548 003C1388  88 01 00 09 */	lbz r0, 9(r1)
+/* 803C554C 003C138C  54 00 07 7A */	rlwinm r0, r0, 0, 0x1d, 0x1d
+/* 803C5550 003C1390  2C 00 00 00 */	cmpwi r0, 0
+/* 803C5554 003C1394  40 82 00 08 */	bne lbl_803C555C
+/* 803C5558 003C1398  3B E0 00 01 */	li r31, 1
+lbl_803C555C:
+/* 803C555C 003C139C  2C 1F 00 00 */	cmpwi r31, 0
+/* 803C5560 003C13A0  41 82 00 08 */	beq lbl_803C5568
+/* 803C5564 003C13A4  3B C0 00 01 */	li r30, 1
+lbl_803C5568:
+/* 803C5568 003C13A8  7F C3 F3 78 */	mr r3, r30
+/* 803C556C 003C13AC  39 61 00 60 */	addi r11, r1, 0x60
+/* 803C5570 003C13B0  4B C4 1E 21 */	bl func_80007390
+/* 803C5574 003C13B4  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803C5578 003C13B8  7C 08 03 A6 */	mtlr r0
+/* 803C557C 003C13BC  38 21 00 60 */	addi r1, r1, 0x60
+/* 803C5580 003C13C0  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global ReqInterruptEffect__Q43scn4step6vacuum7UtilityFRQ43scn4step4core10PermEffectQ24util41ObjRefHandle$$0Q43scn4step6vacuum8Attacker$$1RCQ33hel4math7Vector3Ul
+ReqInterruptEffect__Q43scn4step6vacuum7UtilityFRQ43scn4step4core10PermEffectQ24util41ObjRefHandle$$0Q43scn4step6vacuum8Attacker$$1RCQ33hel4math7Vector3Ul:
+/* 803D342C 003CF26C  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 803D3430 003CF270  7C 08 02 A6 */	mflr r0
+/* 803D3434 003CF274  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 803D3438 003CF278  DB E1 00 A0 */	stfd f31, 0xa0(r1)
+/* 803D343C 003CF27C  F3 E1 00 A8 */	psq_st f31, 168(r1), 0, qr0
+/* 803D3440 003CF280  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 803D3444 003CF284  4B C3 3F 01 */	bl func_80007344
+/* 803D3448 003CF288  7C 7F 1B 78 */	mr r31, r3
+/* 803D344C 003CF28C  7C DD 33 78 */	mr r29, r6
+/* 803D3450 003CF290  80 04 00 0C */	lwz r0, 0xc(r4)
+/* 803D3454 003CF294  2C 00 00 00 */	cmpwi r0, 0
+/* 803D3458 003CF298  41 82 02 34 */	beq lbl_803D368C
+/* 803D345C 003CF29C  80 65 00 00 */	lwz r3, 0(r5)
+/* 803D3460 003CF2A0  80 05 00 04 */	lwz r0, 4(r5)
+/* 803D3464 003CF2A4  90 61 00 54 */	stw r3, 0x54(r1)
+/* 803D3468 003CF2A8  90 01 00 58 */	stw r0, 0x58(r1)
+/* 803D346C 003CF2AC  80 05 00 08 */	lwz r0, 8(r5)
+/* 803D3470 003CF2B0  90 01 00 5C */	stw r0, 0x5c(r1)
+/* 803D3474 003CF2B4  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D3478 003CF2B8  80 84 00 0C */	lwz r4, 0xc(r4)
+/* 803D347C 003CF2BC  4B FF EA FD */	bl pos__Q43scn4step6vacuum8AttackerCFv
+/* 803D3480 003CF2C0  38 61 00 48 */	addi r3, r1, 0x48
+/* 803D3484 003CF2C4  38 81 00 10 */	addi r4, r1, 0x10
+/* 803D3488 003CF2C8  4B DC BF D5 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803D348C 003CF2CC  3B C0 00 00 */	li r30, 0
+/* 803D3490 003CF2D0  C0 21 00 54 */	lfs f1, 0x54(r1)
+/* 803D3494 003CF2D4  C0 41 00 48 */	lfs f2, 0x48(r1)
+/* 803D3498 003CF2D8  C0 62 DD 68 */	lfs f3, $$251819-_SDA2_BASE_(r2)
+/* 803D349C 003CF2DC  4B DE 24 99 */	bl Equals__Q33hel4math4MathFfff
+/* 803D34A0 003CF2E0  2C 03 00 00 */	cmpwi r3, 0
+/* 803D34A4 003CF2E4  41 82 00 38 */	beq lbl_803D34DC
+/* 803D34A8 003CF2E8  C0 21 00 58 */	lfs f1, 0x58(r1)
+/* 803D34AC 003CF2EC  C0 41 00 4C */	lfs f2, 0x4c(r1)
+/* 803D34B0 003CF2F0  C0 62 DD 68 */	lfs f3, $$251819-_SDA2_BASE_(r2)
+/* 803D34B4 003CF2F4  4B DE 24 81 */	bl Equals__Q33hel4math4MathFfff
+/* 803D34B8 003CF2F8  2C 03 00 00 */	cmpwi r3, 0
+/* 803D34BC 003CF2FC  41 82 00 20 */	beq lbl_803D34DC
+/* 803D34C0 003CF300  C0 21 00 5C */	lfs f1, 0x5c(r1)
+/* 803D34C4 003CF304  C0 41 00 50 */	lfs f2, 0x50(r1)
+/* 803D34C8 003CF308  C0 62 DD 68 */	lfs f3, $$251819-_SDA2_BASE_(r2)
+/* 803D34CC 003CF30C  4B DE 24 69 */	bl Equals__Q33hel4math4MathFfff
+/* 803D34D0 003CF310  2C 03 00 00 */	cmpwi r3, 0
+/* 803D34D4 003CF314  41 82 00 08 */	beq lbl_803D34DC
+/* 803D34D8 003CF318  3B C0 00 01 */	li r30, 1
+lbl_803D34DC:
+/* 803D34DC 003CF31C  2C 1E 00 00 */	cmpwi r30, 0
+/* 803D34E0 003CF320  40 82 01 AC */	bne lbl_803D368C
+/* 803D34E4 003CF324  C3 E2 DD 6C */	lfs f31, $$251820-_SDA2_BASE_(r2)
+/* 803D34E8 003CF328  28 1D 00 01 */	cmplwi r29, 1
+/* 803D34EC 003CF32C  40 81 00 28 */	ble lbl_803D3514
+/* 803D34F0 003CF330  38 1D FF FF */	addi r0, r29, -1
+/* 803D34F4 003CF334  C8 22 DD 78 */	lfd f1, $$251826-_SDA2_BASE_(r2)
+/* 803D34F8 003CF338  90 01 00 8C */	stw r0, 0x8c(r1)
+/* 803D34FC 003CF33C  3C 00 43 30 */	lis r0, 0x4330
+/* 803D3500 003CF340  90 01 00 88 */	stw r0, 0x88(r1)
+/* 803D3504 003CF344  C8 01 00 88 */	lfd f0, 0x88(r1)
+/* 803D3508 003CF348  EC 20 08 28 */	fsubs f1, f0, f1
+/* 803D350C 003CF34C  C0 02 DD 70 */	lfs f0, $$251821-_SDA2_BASE_(r2)
+/* 803D3510 003CF350  EF E0 F8 7A */	fmadds f31, f0, f1, f31
+lbl_803D3514:
+/* 803D3514 003CF354  80 61 00 54 */	lwz r3, 0x54(r1)
+/* 803D3518 003CF358  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 803D351C 003CF35C  90 61 00 30 */	stw r3, 0x30(r1)
+/* 803D3520 003CF360  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803D3524 003CF364  80 01 00 5C */	lwz r0, 0x5c(r1)
+/* 803D3528 003CF368  90 01 00 38 */	stw r0, 0x38(r1)
+/* 803D352C 003CF36C  C0 21 00 30 */	lfs f1, 0x30(r1)
+/* 803D3530 003CF370  C0 01 00 48 */	lfs f0, 0x48(r1)
+/* 803D3534 003CF374  EC 01 00 28 */	fsubs f0, f1, f0
+/* 803D3538 003CF378  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 803D353C 003CF37C  C0 21 00 34 */	lfs f1, 0x34(r1)
+/* 803D3540 003CF380  C0 01 00 4C */	lfs f0, 0x4c(r1)
+/* 803D3544 003CF384  EC 01 00 28 */	fsubs f0, f1, f0
+/* 803D3548 003CF388  D0 01 00 34 */	stfs f0, 0x34(r1)
+/* 803D354C 003CF38C  C0 21 00 38 */	lfs f1, 0x38(r1)
+/* 803D3550 003CF390  C0 01 00 50 */	lfs f0, 0x50(r1)
+/* 803D3554 003CF394  EC 01 00 28 */	fsubs f0, f1, f0
+/* 803D3558 003CF398  D0 01 00 38 */	stfs f0, 0x38(r1)
+/* 803D355C 003CF39C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803D3560 003CF3A0  38 81 00 30 */	addi r4, r1, 0x30
+/* 803D3564 003CF3A4  4B DA 90 65 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D3568 003CF3A8  38 61 00 3C */	addi r3, r1, 0x3c
+/* 803D356C 003CF3AC  4B DC C0 89 */	bl normalize__Q33hel4math7Vector3Fv
+/* 803D3570 003CF3B0  3C 60 80 54 */	lis r3, BASIS__Q33hel4math10Direction3@ha
+/* 803D3574 003CF3B4  3B C3 52 60 */	addi r30, r3, BASIS__Q33hel4math10Direction3@l
+/* 803D3578 003CF3B8  80 7E 00 00 */	lwz r3, 0(r30)
+/* 803D357C 003CF3BC  80 1E 00 04 */	lwz r0, 4(r30)
+/* 803D3580 003CF3C0  90 61 00 60 */	stw r3, 0x60(r1)
+/* 803D3584 003CF3C4  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803D3588 003CF3C8  80 1E 00 08 */	lwz r0, 8(r30)
+/* 803D358C 003CF3CC  90 01 00 68 */	stw r0, 0x68(r1)
+/* 803D3590 003CF3D0  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803D3594 003CF3D4  38 9E 00 0C */	addi r4, r30, 0xc
+/* 803D3598 003CF3D8  4B DA 90 31 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D359C 003CF3DC  38 61 00 78 */	addi r3, r1, 0x78
+/* 803D35A0 003CF3E0  38 9E 00 18 */	addi r4, r30, 0x18
+/* 803D35A4 003CF3E4  4B DA 90 25 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D35A8 003CF3E8  38 61 00 60 */	addi r3, r1, 0x60
+/* 803D35AC 003CF3EC  38 81 00 3C */	addi r4, r1, 0x3c
+/* 803D35B0 003CF3F0  4B DA 8F 9D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D35B4 003CF3F4  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803D35B8 003CF3F8  3C 80 80 54 */	lis r4, BASIS_Z__Q33hel4math7Vector3@ha
+/* 803D35BC 003CF3FC  38 84 53 00 */	addi r4, r4, BASIS_Z__Q33hel4math7Vector3@l
+/* 803D35C0 003CF400  4B DA 8F 8D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D35C4 003CF404  3B C1 00 60 */	addi r30, r1, 0x60
+/* 803D35C8 003CF408  93 C1 00 08 */	stw r30, 8(r1)
+/* 803D35CC 003CF40C  38 61 00 24 */	addi r3, r1, 0x24
+/* 803D35D0 003CF410  38 81 00 6C */	addi r4, r1, 0x6c
+/* 803D35D4 003CF414  7F C5 F3 78 */	mr r5, r30
+/* 803D35D8 003CF418  4B DC BF 69 */	bl permittedNormalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 803D35DC 003CF41C  38 00 00 00 */	li r0, 0
+/* 803D35E0 003CF420  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 803D35E4 003CF424  3C 60 80 54 */	lis r3, ZERO__Q33hel4math7Vector3@ha
+/* 803D35E8 003CF428  C0 03 52 D0 */	lfs f0, ZERO__Q33hel4math7Vector3@l(r3)
+/* 803D35EC 003CF42C  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 803D35F0 003CF430  40 82 00 2C */	bne lbl_803D361C
+/* 803D35F4 003CF434  C0 21 00 28 */	lfs f1, 0x28(r1)
+/* 803D35F8 003CF438  38 63 52 D0 */	addi r3, r3, 0x52d0
+/* 803D35FC 003CF43C  C0 03 00 04 */	lfs f0, 4(r3)
+/* 803D3600 003CF440  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 803D3604 003CF444  40 82 00 18 */	bne lbl_803D361C
+/* 803D3608 003CF448  C0 21 00 2C */	lfs f1, 0x2c(r1)
+/* 803D360C 003CF44C  C0 03 00 08 */	lfs f0, 8(r3)
+/* 803D3610 003CF450  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 803D3614 003CF454  40 82 00 08 */	bne lbl_803D361C
+/* 803D3618 003CF458  38 00 00 01 */	li r0, 1
+lbl_803D361C:
+/* 803D361C 003CF45C  2C 00 00 00 */	cmpwi r0, 0
+/* 803D3620 003CF460  41 82 00 0C */	beq lbl_803D362C
+/* 803D3624 003CF464  38 00 00 00 */	li r0, 0
+/* 803D3628 003CF468  48 00 00 14 */	b lbl_803D363C
+lbl_803D362C:
+/* 803D362C 003CF46C  38 7E 00 18 */	addi r3, r30, 0x18
+/* 803D3630 003CF470  38 81 00 24 */	addi r4, r1, 0x24
+/* 803D3634 003CF474  4B DA 8F 19 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803D3638 003CF478  38 00 00 01 */	li r0, 1
+lbl_803D363C:
+/* 803D363C 003CF47C  2C 00 00 00 */	cmpwi r0, 0
+/* 803D3640 003CF480  41 82 00 10 */	beq lbl_803D3650
+/* 803D3644 003CF484  38 61 00 08 */	addi r3, r1, 8
+/* 803D3648 003CF488  4B DC AB BD */	bl restruct__Q43hel4math10Direction32UpFv
+/* 803D364C 003CF48C  48 00 00 28 */	b lbl_803D3674
+lbl_803D3650:
+/* 803D3650 003CF490  38 61 00 08 */	addi r3, r1, 8
+/* 803D3654 003CF494  4B DC AB B1 */	bl restruct__Q43hel4math10Direction32UpFv
+/* 803D3658 003CF498  38 61 00 18 */	addi r3, r1, 0x18
+/* 803D365C 003CF49C  38 9E 00 0C */	addi r4, r30, 0xc
+/* 803D3660 003CF4A0  7F C5 F3 78 */	mr r5, r30
+/* 803D3664 003CF4A4  4B DC BE A9 */	bl normalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+/* 803D3668 003CF4A8  38 7E 00 18 */	addi r3, r30, 0x18
+/* 803D366C 003CF4AC  38 81 00 18 */	addi r4, r1, 0x18
+/* 803D3670 003CF4B0  4B DA 8E DD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_803D3674:
+/* 803D3674 003CF4B4  38 7F 00 08 */	addi r3, r31, 8
+/* 803D3678 003CF4B8  38 80 01 74 */	li r4, 0x174
+/* 803D367C 003CF4BC  38 A1 00 54 */	addi r5, r1, 0x54
+/* 803D3680 003CF4C0  38 C1 00 60 */	addi r6, r1, 0x60
+/* 803D3684 003CF4C4  FC 20 F8 90 */	fmr f1, f31
+/* 803D3688 003CF4C8  4B EA 48 F9 */	bl requestPD__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3f
+lbl_803D368C:
+/* 803D368C 003CF4CC  38 00 00 A8 */	li r0, 0xa8
+/* 803D3690 003CF4D0  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803D3694 003CF4D4  CB E1 00 A0 */	lfd f31, 0xa0(r1)
+/* 803D3698 003CF4D8  39 61 00 A0 */	addi r11, r1, 0xa0
+/* 803D369C 003CF4DC  4B C3 3C F5 */	bl func_80007390
+/* 803D36A0 003CF4E0  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 803D36A4 003CF4E4  7C 08 03 A6 */	mtlr r0
+/* 803D36A8 003CF4E8  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 803D36AC 003CF4EC  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
+GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation:
+/* 803D9004 003D4E44  38 E0 00 00 */	li r7, 0
+/* 803D9008 003D4E48  48 00 00 04 */	b GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+
+.global GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl:
+/* 803D900C 003D4E4C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803D9010 003D4E50  7C 08 02 A6 */	mflr r0
+/* 803D9014 003D4E54  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803D9018 003D4E58  39 61 00 40 */	addi r11, r1, 0x40
+/* 803D901C 003D4E5C  4B C2 E3 21 */	bl func_8000733C
+/* 803D9020 003D4E60  7C 7B 1B 78 */	mr r27, r3
+/* 803D9024 003D4E64  7C 9C 23 78 */	mr r28, r4
+/* 803D9028 003D4E68  7C BD 2B 78 */	mr r29, r5
+/* 803D902C 003D4E6C  7C DE 33 78 */	mr r30, r6
+/* 803D9030 003D4E70  7C FF 3B 78 */	mr r31, r7
+/* 803D9034 003D4E74  48 00 20 D5 */	bl location__Q43scn4step6weapon6WeaponCFv
+/* 803D9038 003D4E78  7C 64 1B 78 */	mr r4, r3
+/* 803D903C 003D4E7C  38 61 00 18 */	addi r3, r1, 0x18
+/* 803D9040 003D4E80  4B E9 66 75 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803D9044 003D4E84  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 803D9048 003D4E88  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 803D904C 003D4E8C  D0 21 00 08 */	stfs f1, 8(r1)
+/* 803D9050 003D4E90  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803D9054 003D4E94  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D9058 003D4E98  38 81 00 08 */	addi r4, r1, 8
+/* 803D905C 003D4E9C  7F 85 E3 78 */	mr r5, r28
+/* 803D9060 003D4EA0  4B DC 75 31 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 803D9064 003D4EA4  7F 63 DB 78 */	mr r3, r27
+/* 803D9068 003D4EA8  38 81 00 10 */	addi r4, r1, 0x10
+/* 803D906C 003D4EAC  7F A5 EB 78 */	mr r5, r29
+/* 803D9070 003D4EB0  7F C6 F3 78 */	mr r6, r30
+/* 803D9074 003D4EB4  7F E7 FB 78 */	mr r7, r31
+/* 803D9078 003D4EB8  48 00 00 1D */	bl GenerateStarEffectByPos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+/* 803D907C 003D4EBC  39 61 00 40 */	addi r11, r1, 0x40
+/* 803D9080 003D4EC0  4B C2 E3 09 */	bl func_80007388
+/* 803D9084 003D4EC4  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 803D9088 003D4EC8  7C 08 03 A6 */	mtlr r0
+/* 803D908C 003D4ECC  38 21 00 40 */	addi r1, r1, 0x40
+/* 803D9090 003D4ED0  4E 80 00 20 */	blr 
+
+.global GenerateStarEffectByPos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
+GenerateStarEffectByPos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl:
+/* 803D9094 003D4ED4  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 803D9098 003D4ED8  7C 08 02 A6 */	mflr r0
+/* 803D909C 003D4EDC  90 01 00 74 */	stw r0, 0x74(r1)
+/* 803D90A0 003D4EE0  93 E1 00 6C */	stw r31, 0x6c(r1)
+/* 803D90A4 003D4EE4  93 C1 00 68 */	stw r30, 0x68(r1)
+/* 803D90A8 003D4EE8  7C 7F 1B 78 */	mr r31, r3
+/* 803D90AC 003D4EEC  7C BE 2B 78 */	mr r30, r5
+/* 803D90B0 003D4EF0  90 81 00 08 */	stw r4, 8(r1)
+/* 803D90B4 003D4EF4  38 61 00 30 */	addi r3, r1, 0x30
+/* 803D90B8 003D4EF8  38 80 00 66 */	li r4, 0x66
+/* 803D90BC 003D4EFC  7C C5 33 78 */	mr r5, r6
+/* 803D90C0 003D4F00  7C E6 3B 78 */	mr r6, r7
+/* 803D90C4 003D4F04  38 E0 00 00 */	li r7, 0
+/* 803D90C8 003D4F08  39 00 00 00 */	li r8, 0
+/* 803D90CC 003D4F0C  39 20 00 00 */	li r9, 0
+/* 803D90D0 003D4F10  39 40 00 00 */	li r10, 0
+/* 803D90D4 003D4F14  4B EA B5 91 */	bl __ct__Q43scn4step5enemy4DescFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEnemyVariationUlQ43scn4step3map15BinEnemyDirTypeQ43scn4step3map12BinEnemySizebbRCQ33hel4math7Vector2
+/* 803D90D8 003D4F18  7F E3 FB 78 */	mr r3, r31
+/* 803D90DC 003D4F1C  4B C9 C6 55 */	bl GKI_getfirst
+/* 803D90E0 003D4F20  4B E4 7D 55 */	bl enemyManager__Q33scn4step9ComponentFv
+/* 803D90E4 003D4F24  7C 64 1B 78 */	mr r4, r3
+/* 803D90E8 003D4F28  38 61 00 20 */	addi r3, r1, 0x20
+/* 803D90EC 003D4F2C  38 A1 00 30 */	addi r5, r1, 0x30
+/* 803D90F0 003D4F30  4B EB 02 01 */	bl request__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy4Desc
+/* 803D90F4 003D4F34  38 61 00 20 */	addi r3, r1, 0x20
+/* 803D90F8 003D4F38  4B DA F5 D1 */	bl wasSetParent__Q24file8FileTreeCFv
+/* 803D90FC 003D4F3C  2C 03 00 00 */	cmpwi r3, 0
+/* 803D9100 003D4F40  41 82 00 24 */	beq lbl_803D9124
+/* 803D9104 003D4F44  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803D9108 003D4F48  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D910C 003D4F4C  7F C4 F3 78 */	mr r4, r30
+/* 803D9110 003D4F50  4B DC 63 4D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803D9114 003D4F54  7F E3 FB 78 */	mr r3, r31
+/* 803D9118 003D4F58  4B EA EF AD */	bl move__Q43scn4step5enemy5EnemyFv
+/* 803D911C 003D4F5C  38 81 00 10 */	addi r4, r1, 0x10
+/* 803D9120 003D4F60  4B DC 22 59 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+lbl_803D9124:
+/* 803D9124 003D4F64  38 61 00 20 */	addi r3, r1, 0x20
+/* 803D9128 003D4F68  38 80 FF FF */	li r4, -1
+/* 803D912C 003D4F6C  4B E5 C1 DD */	bl __dt__Q24util37ObjRefHandle$$0Q43scn4step5enemy5Enemy$$1Fv
+/* 803D9130 003D4F70  83 E1 00 6C */	lwz r31, 0x6c(r1)
+/* 803D9134 003D4F74  83 C1 00 68 */	lwz r30, 0x68(r1)
+/* 803D9138 003D4F78  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 803D913C 003D4F7C  7C 08 03 A6 */	mtlr r0
+/* 803D9140 003D4F80  38 21 00 70 */	addi r1, r1, 0x70
+/* 803D9144 003D4F84  4E 80 00 20 */	blr 
+
+.global SetFollowerPos__Q43scn4step6weapon7UtilityFRCQ43scn4step6weapon6WeaponRQ43scn4step6weapon6Weapon
+SetFollowerPos__Q43scn4step6weapon7UtilityFRCQ43scn4step6weapon6WeaponRQ43scn4step6weapon6Weapon:
+/* 803D9148 003D4F88  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803D914C 003D4F8C  7C 08 02 A6 */	mflr r0
+/* 803D9150 003D4F90  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803D9154 003D4F94  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803D9158 003D4F98  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803D915C 003D4F9C  7C 7E 1B 78 */	mr r30, r3
+/* 803D9160 003D4FA0  7C 9F 23 78 */	mr r31, r4
+/* 803D9164 003D4FA4  7F E3 FB 78 */	mr r3, r31
+/* 803D9168 003D4FA8  4B E9 45 B1 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 803D916C 003D4FAC  2C 03 00 00 */	cmpwi r3, 0
+/* 803D9170 003D4FB0  40 82 00 28 */	bne lbl_803D9198
+/* 803D9174 003D4FB4  7F C3 F3 78 */	mr r3, r30
+/* 803D9178 003D4FB8  48 00 1F 91 */	bl location__Q43scn4step6weapon6WeaponCFv
+/* 803D917C 003D4FBC  7C 64 1B 78 */	mr r4, r3
+/* 803D9180 003D4FC0  38 61 00 08 */	addi r3, r1, 8
+/* 803D9184 003D4FC4  4B E9 65 31 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 803D9188 003D4FC8  7F E3 FB 78 */	mr r3, r31
+/* 803D918C 003D4FCC  48 00 1F 7D */	bl location__Q43scn4step6weapon6WeaponCFv
+/* 803D9190 003D4FD0  38 81 00 08 */	addi r4, r1, 8
+/* 803D9194 003D4FD4  4B E9 65 29 */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
+lbl_803D9198:
+/* 803D9198 003D4FD8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803D919C 003D4FDC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 803D91A0 003D4FE0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803D91A4 003D4FE4  7C 08 03 A6 */	mtlr r0
+/* 803D91A8 003D4FE8  38 21 00 20 */	addi r1, r1, 0x20
+/* 803D91AC 003D4FEC  4E 80 00 20 */	blr 
+
+.global SetFollowerNodePos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRQ43scn4step6weapon6WeaponUl
+SetFollowerNodePos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRQ43scn4step6weapon6WeaponUl:
+/* 803D91B0 003D4FF0  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 803D91B4 003D4FF4  7C 08 02 A6 */	mflr r0
+/* 803D91B8 003D4FF8  90 01 00 84 */	stw r0, 0x84(r1)
+/* 803D91BC 003D4FFC  39 61 00 80 */	addi r11, r1, 0x80
+/* 803D91C0 003D5000  4B C2 E1 81 */	bl func_80007340
+/* 803D91C4 003D5004  7C 7C 1B 78 */	mr r28, r3
+/* 803D91C8 003D5008  7C 9D 23 78 */	mr r29, r4
+/* 803D91CC 003D500C  7C BE 2B 78 */	mr r30, r5
+/* 803D91D0 003D5010  7F A3 EB 78 */	mr r3, r29
+/* 803D91D4 003D5014  4B E9 45 45 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 803D91D8 003D5018  2C 03 00 00 */	cmpwi r3, 0
+/* 803D91DC 003D501C  40 82 00 A0 */	bne lbl_803D927C
+/* 803D91E0 003D5020  3B E0 00 00 */	li r31, 0
+/* 803D91E4 003D5024  48 00 00 90 */	b lbl_803D9274
+lbl_803D91E8:
+/* 803D91E8 003D5028  7F 83 E3 78 */	mr r3, r28
+/* 803D91EC 003D502C  48 00 1F 2D */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803D91F0 003D5030  4B E9 82 F9 */	bl model__Q43scn4step5chara5ModelFv
+/* 803D91F4 003D5034  4B DC 15 DD */	bl nodes__Q24gobj9GearModelCFv
+/* 803D91F8 003D5038  7C 64 1B 78 */	mr r4, r3
+/* 803D91FC 003D503C  38 61 00 24 */	addi r3, r1, 0x24
+/* 803D9200 003D5040  7F E5 FB 78 */	mr r5, r31
+/* 803D9204 003D5044  4B DC 2A C9 */	bl at__Q24gobj9NodeReposCFUl
+/* 803D9208 003D5048  38 61 00 24 */	addi r3, r1, 0x24
+/* 803D920C 003D504C  4B DB 9E 69 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 803D9210 003D5050  90 61 00 08 */	stw r3, 8(r1)
+/* 803D9214 003D5054  38 61 00 38 */	addi r3, r1, 0x38
+/* 803D9218 003D5058  38 81 00 08 */	addi r4, r1, 8
+/* 803D921C 003D505C  4B DB 9F F5 */	bl rtMtx__Q23g3d20NodeLocalMtxAccessorCFv
+/* 803D9220 003D5060  38 61 00 24 */	addi r3, r1, 0x24
+/* 803D9224 003D5064  38 80 FF FF */	li r4, -1
+/* 803D9228 003D5068  4B DA 34 69 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 803D922C 003D506C  7F A3 EB 78 */	mr r3, r29
+/* 803D9230 003D5070  48 00 1E E9 */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803D9234 003D5074  4B E9 82 B5 */	bl model__Q43scn4step5chara5ModelFv
+/* 803D9238 003D5078  4B DC 15 99 */	bl nodes__Q24gobj9GearModelCFv
+/* 803D923C 003D507C  7C 64 1B 78 */	mr r4, r3
+/* 803D9240 003D5080  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D9244 003D5084  7F E5 FB 78 */	mr r5, r31
+/* 803D9248 003D5088  4B DC 2A 85 */	bl at__Q24gobj9NodeReposCFUl
+/* 803D924C 003D508C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D9250 003D5090  4B DB 9E 25 */	bl localMtx__Q23g3d12NodeAccessorCFv
+/* 803D9254 003D5094  90 61 00 0C */	stw r3, 0xc(r1)
+/* 803D9258 003D5098  38 61 00 10 */	addi r3, r1, 0x10
+/* 803D925C 003D509C  38 80 FF FF */	li r4, -1
+/* 803D9260 003D50A0  4B DA 34 31 */	bl __dt__Q23g3d12NodeAccessorFv
+/* 803D9264 003D50A4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803D9268 003D50A8  38 81 00 38 */	addi r4, r1, 0x38
+/* 803D926C 003D50AC  4B DB 9F AD */	bl setRTMtx__Q23g3d20NodeLocalMtxAccessorCFRCQ33hel4math8Matrix34
+/* 803D9270 003D50B0  3B FF 00 01 */	addi r31, r31, 1
+lbl_803D9274:
+/* 803D9274 003D50B4  7C 1F F0 40 */	cmplw r31, r30
+/* 803D9278 003D50B8  41 80 FF 70 */	blt lbl_803D91E8
+lbl_803D927C:
+/* 803D927C 003D50BC  39 61 00 80 */	addi r11, r1, 0x80
+/* 803D9280 003D50C0  4B C2 E1 0D */	bl func_8000738C
+/* 803D9284 003D50C4  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 803D9288 003D50C8  7C 08 03 A6 */	mtlr r0
+/* 803D928C 003D50CC  38 21 00 80 */	addi r1, r1, 0x80
+/* 803D9290 003D50D0  4E 80 00 20 */	blr 
+
+.global SetFollowerTarget__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRQ43scn4step6weapon6Weapon
+SetFollowerTarget__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRQ43scn4step6weapon6Weapon:
+/* 803D9294 003D50D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803D9298 003D50D8  7C 08 02 A6 */	mflr r0
+/* 803D929C 003D50DC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803D92A0 003D50E0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803D92A4 003D50E4  93 C1 00 08 */	stw r30, 8(r1)
+/* 803D92A8 003D50E8  7C 7F 1B 78 */	mr r31, r3
+/* 803D92AC 003D50EC  7C 9E 23 78 */	mr r30, r4
+/* 803D92B0 003D50F0  7F C3 F3 78 */	mr r3, r30
+/* 803D92B4 003D50F4  4B E9 44 65 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 803D92B8 003D50F8  2C 03 00 00 */	cmpwi r3, 0
+/* 803D92BC 003D50FC  40 82 00 24 */	bne lbl_803D92E0
+/* 803D92C0 003D5100  7F E3 FB 78 */	mr r3, r31
+/* 803D92C4 003D5104  48 00 1E 3D */	bl target__Q43scn4step6weapon6WeaponFv
+/* 803D92C8 003D5108  4B DA 84 0D */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803D92CC 003D510C  7C 7F 1B 78 */	mr r31, r3
+/* 803D92D0 003D5110  7F C3 F3 78 */	mr r3, r30
+/* 803D92D4 003D5114  48 00 1E 2D */	bl target__Q43scn4step6weapon6WeaponFv
+/* 803D92D8 003D5118  7F E4 FB 78 */	mr r4, r31
+/* 803D92DC 003D511C  4B DB F3 A5 */	bl __ct__25mint_wrapNative_helper$$0b$$1Fb
+lbl_803D92E0:
+/* 803D92E0 003D5120  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803D92E4 003D5124  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803D92E8 003D5128  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803D92EC 003D512C  7C 08 03 A6 */	mtlr r0
+/* 803D92F0 003D5130  38 21 00 10 */	addi r1, r1, 0x10
+/* 803D92F4 003D5134  4E 80 00 20 */	blr 
+
+.global PenetrationWeaponMapCollHit__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6Weapon
+PenetrationWeaponMapCollHit__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803D92F8 003D5138  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803D92FC 003D513C  7C 08 02 A6 */	mflr r0
+/* 803D9300 003D5140  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803D9304 003D5144  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803D9308 003D5148  7C 7F 1B 78 */	mr r31, r3
+/* 803D930C 003D514C  48 00 1E 25 */	bl objColl__Q43scn4step6weapon6WeaponFv
+/* 803D9310 003D5150  80 63 04 88 */	lwz r3, 0x488(r3)
+/* 803D9314 003D5154  4B DF B1 B5 */	bl isCollideGimmick__Q25ocoll6AttackCFv
+/* 803D9318 003D5158  2C 03 00 00 */	cmpwi r3, 0
+/* 803D931C 003D515C  40 82 00 20 */	bne lbl_803D933C
+/* 803D9320 003D5160  7F E3 FB 78 */	mr r3, r31
+/* 803D9324 003D5164  48 00 1E 25 */	bl mapColl__Q43scn4step6weapon6WeaponFv
+/* 803D9328 003D5168  4B FE B7 ED */	bl isHit__Q43scn4step4item7MapCollCFv
+/* 803D932C 003D516C  2C 03 00 00 */	cmpwi r3, 0
+/* 803D9330 003D5170  41 82 00 0C */	beq lbl_803D933C
+/* 803D9334 003D5174  38 60 00 01 */	li r3, 1
+/* 803D9338 003D5178  48 00 00 08 */	b lbl_803D9340
+lbl_803D933C:
+/* 803D933C 003D517C  38 60 00 00 */	li r3, 0
+lbl_803D9340:
+/* 803D9340 003D5180  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803D9344 003D5184  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803D9348 003D5188  7C 08 03 A6 */	mtlr r0
+/* 803D934C 003D518C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803D9350 003D5190  4E 80 00 20 */	blr 
+
+.global IsExtra__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6Weapon
+IsExtra__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803D9354 003D5194  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803D9358 003D5198  7C 08 02 A6 */	mflr r0
+/* 803D935C 003D519C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803D9360 003D51A0  4B C9 C3 D1 */	bl GKI_getfirst
+/* 803D9364 003D51A4  4B D9 D0 5D */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 803D9368 003D51A8  38 63 04 A0 */	addi r3, r3, 0x4a0
+/* 803D936C 003D51AC  4B E4 80 E1 */	bl isExtraMode__Q33scn4step11ContextModeCFv
+/* 803D9370 003D51B0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803D9374 003D51B4  7C 08 03 A6 */	mtlr r0
+/* 803D9378 003D51B8  38 21 00 10 */	addi r1, r1, 0x10
+/* 803D937C 003D51BC  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Rotate__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon
+Rotate__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803E5244 003E1084  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803E5248 003E1088  7C 08 02 A6 */	mflr r0
+/* 803E524C 003E108C  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803E5250 003E1090  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 803E5254 003E1094  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 803E5258 003E1098  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803E525C 003E109C  7C 7F 1B 78 */	mr r31, r3
+/* 803E5260 003E10A0  4B FF 5E B1 */	bl move__Q43scn4step6weapon6WeaponFv
+/* 803E5264 003E10A4  7C 64 1B 78 */	mr r4, r3
+/* 803E5268 003E10A8  38 61 00 10 */	addi r3, r1, 0x10
+/* 803E526C 003E10AC  4B DB 60 F1 */	bl velocity__Q24gobj4MoveCFv
+/* 803E5270 003E10B0  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 803E5274 003E10B4  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 803E5278 003E10B8  D0 21 00 08 */	stfs f1, 8(r1)
+/* 803E527C 003E10BC  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803E5280 003E10C0  38 61 00 08 */	addi r3, r1, 8
+/* 803E5284 003E10C4  38 8D EE 38 */	addi r4, r13, BASIS_X__Q33hel4math7Vector2-_SDA_BASE_
+/* 803E5288 003E10C8  4B DB 9F A9 */	bl signedAngle__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 803E528C 003E10CC  C0 02 DF C8 */	lfs f0, $$255686-_SDA2_BASE_(r2)
+/* 803E5290 003E10D0  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803E5294 003E10D4  FF E0 00 50 */	fneg f31, f0
+/* 803E5298 003E10D8  7F E3 FB 78 */	mr r3, r31
+/* 803E529C 003E10DC  4B FF 5E 65 */	bl target__Q43scn4step6weapon6WeaponFv
+/* 803E52A0 003E10E0  4B D9 C4 35 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803E52A4 003E10E4  2C 03 00 00 */	cmpwi r3, 0
+/* 803E52A8 003E10E8  40 82 00 0C */	bne lbl_803E52B4
+/* 803E52AC 003E10EC  C0 02 DF CC */	lfs f0, $$255687-_SDA2_BASE_(r2)
+/* 803E52B0 003E10F0  EF FF 00 2A */	fadds f31, f31, f0
+lbl_803E52B4:
+/* 803E52B4 003E10F4  7F E3 FB 78 */	mr r3, r31
+/* 803E52B8 003E10F8  4B FF 5E 61 */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803E52BC 003E10FC  4B E8 0F 51 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 803E52C0 003E1100  FC 20 F8 90 */	fmr f1, f31
+/* 803E52C4 003E1104  4B E7 F6 B9 */	bl setCameraHeightMax__Q43scn4step6camera16CameraControllerFf
+/* 803E52C8 003E1108  38 00 00 38 */	li r0, 0x38
+/* 803E52CC 003E110C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803E52D0 003E1110  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 803E52D4 003E1114  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803E52D8 003E1118  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 803E52DC 003E111C  7C 08 03 A6 */	mtlr r0
+/* 803E52E0 003E1120  38 21 00 40 */	addi r1, r1, 0x40
+/* 803E52E4 003E1124  4E 80 00 20 */	blr 
+
+.global Vanish__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon
+Vanish__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803E52E8 003E1128  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803E52EC 003E112C  7C 08 02 A6 */	mflr r0
+/* 803E52F0 003E1130  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803E52F4 003E1134  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803E52F8 003E1138  7C 7F 1B 78 */	mr r31, r3
+/* 803E52FC 003E113C  4B E8 84 1D */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 803E5300 003E1140  2C 03 00 00 */	cmpwi r3, 0
+/* 803E5304 003E1144  40 82 00 38 */	bne lbl_803E533C
+/* 803E5308 003E1148  7F E3 FB 78 */	mr r3, r31
+/* 803E530C 003E114C  4B FF 5E 0D */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803E5310 003E1150  38 80 00 00 */	li r4, 0
+/* 803E5314 003E1154  4B E8 C0 E9 */	bl setVisibility__Q43scn4step5chara5ModelFb
+/* 803E5318 003E1158  7F E3 FB 78 */	mr r3, r31
+/* 803E531C 003E115C  4B FF 5E 15 */	bl objColl__Q43scn4step6weapon6WeaponFv
+/* 803E5320 003E1160  4B E8 D4 15 */	bl clearAttack__Q43scn4step5chara11ObjCollLiteFv
+/* 803E5324 003E1164  7F E3 FB 78 */	mr r3, r31
+/* 803E5328 003E1168  4B FF 5D F9 */	bl effect__Q43scn4step6weapon6WeaponFv
+/* 803E532C 003E116C  4B DC 18 DD */	bl allocatorAlloc__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeapFUll
+/* 803E5330 003E1170  38 80 02 33 */	li r4, 0x233
+/* 803E5334 003E1174  38 A0 00 00 */	li r5, 0
+/* 803E5338 003E1178  4B E8 8C 41 */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUl
+lbl_803E533C:
+/* 803E533C 003E117C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803E5340 003E1180  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803E5344 003E1184  7C 08 03 A6 */	mtlr r0
+/* 803E5348 003E1188  38 21 00 10 */	addi r1, r1, 0x10
+/* 803E534C 003E118C  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Rotate__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon
+Rotate__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803EE190 003E9FD0  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803EE194 003E9FD4  7C 08 02 A6 */	mflr r0
+/* 803EE198 003E9FD8  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803EE19C 003E9FDC  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 803EE1A0 003E9FE0  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 803EE1A4 003E9FE4  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803EE1A8 003E9FE8  7C 7F 1B 78 */	mr r31, r3
+/* 803EE1AC 003E9FEC  4B FE CF 65 */	bl move__Q43scn4step6weapon6WeaponFv
+/* 803EE1B0 003E9FF0  7C 64 1B 78 */	mr r4, r3
+/* 803EE1B4 003E9FF4  38 61 00 10 */	addi r3, r1, 0x10
+/* 803EE1B8 003E9FF8  4B DA D1 A5 */	bl velocity__Q24gobj4MoveCFv
+/* 803EE1BC 003E9FFC  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 803EE1C0 003EA000  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 803EE1C4 003EA004  D0 21 00 08 */	stfs f1, 8(r1)
+/* 803EE1C8 003EA008  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803EE1CC 003EA00C  38 61 00 08 */	addi r3, r1, 8
+/* 803EE1D0 003EA010  38 8D EE 38 */	addi r4, r13, BASIS_X__Q33hel4math7Vector2-_SDA_BASE_
+/* 803EE1D4 003EA014  4B DB 10 5D */	bl signedAngle__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 803EE1D8 003EA018  C0 02 E1 B0 */	lfs f0, $$255686-_SDA2_BASE_(r2)
+/* 803EE1DC 003EA01C  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803EE1E0 003EA020  FF E0 00 50 */	fneg f31, f0
+/* 803EE1E4 003EA024  7F E3 FB 78 */	mr r3, r31
+/* 803EE1E8 003EA028  4B FE CF 19 */	bl target__Q43scn4step6weapon6WeaponFv
+/* 803EE1EC 003EA02C  4B D9 34 E9 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 803EE1F0 003EA030  2C 03 00 00 */	cmpwi r3, 0
+/* 803EE1F4 003EA034  40 82 00 0C */	bne lbl_803EE200
+/* 803EE1F8 003EA038  C0 02 E1 B4 */	lfs f0, $$255687-_SDA2_BASE_(r2)
+/* 803EE1FC 003EA03C  EF FF 00 2A */	fadds f31, f31, f0
+lbl_803EE200:
+/* 803EE200 003EA040  7F E3 FB 78 */	mr r3, r31
+/* 803EE204 003EA044  4B FE CF 15 */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803EE208 003EA048  4B E7 80 05 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 803EE20C 003EA04C  FC 20 F8 90 */	fmr f1, f31
+/* 803EE210 003EA050  4B E7 67 6D */	bl setCameraHeightMax__Q43scn4step6camera16CameraControllerFf
+/* 803EE214 003EA054  38 00 00 38 */	li r0, 0x38
+/* 803EE218 003EA058  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803EE21C 003EA05C  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 803EE220 003EA060  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803EE224 003EA064  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 803EE228 003EA068  7C 08 03 A6 */	mtlr r0
+/* 803EE22C 003EA06C  38 21 00 40 */	addi r1, r1, 0x40
+/* 803EE230 003EA070  4E 80 00 20 */	blr 
+
+.global Vanish__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon
+Vanish__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon:
+/* 803EE234 003EA074  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803EE238 003EA078  7C 08 02 A6 */	mflr r0
+/* 803EE23C 003EA07C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803EE240 003EA080  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803EE244 003EA084  7C 7F 1B 78 */	mr r31, r3
+/* 803EE248 003EA088  4B E7 F4 D1 */	bl isCliff__Q43scn4step5chara12CliffCheckerCFv
+/* 803EE24C 003EA08C  2C 03 00 00 */	cmpwi r3, 0
+/* 803EE250 003EA090  40 82 00 38 */	bne lbl_803EE288
+/* 803EE254 003EA094  7F E3 FB 78 */	mr r3, r31
+/* 803EE258 003EA098  4B FE CE C1 */	bl model__Q43scn4step6weapon6WeaponFv
+/* 803EE25C 003EA09C  38 80 00 00 */	li r4, 0
+/* 803EE260 003EA0A0  4B E8 31 9D */	bl setVisibility__Q43scn4step5chara5ModelFb
+/* 803EE264 003EA0A4  7F E3 FB 78 */	mr r3, r31
+/* 803EE268 003EA0A8  4B FE CE C9 */	bl objColl__Q43scn4step6weapon6WeaponFv
+/* 803EE26C 003EA0AC  4B E8 44 C9 */	bl clearAttack__Q43scn4step5chara11ObjCollLiteFv
+/* 803EE270 003EA0B0  7F E3 FB 78 */	mr r3, r31
+/* 803EE274 003EA0B4  4B FE CE AD */	bl effect__Q43scn4step6weapon6WeaponFv
+/* 803EE278 003EA0B8  4B DB 89 91 */	bl allocatorAlloc__Q34util17Delegate$$0Fv_v$$464$$112DelegateHeapFUll
+/* 803EE27C 003EA0BC  38 80 02 0F */	li r4, 0x20f
+/* 803EE280 003EA0C0  38 A0 00 00 */	li r5, 0
+/* 803EE284 003EA0C4  4B E7 FC F5 */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUl
+lbl_803EE288:
+/* 803EE288 003EA0C8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803EE28C 003EA0CC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803EE290 003EA0D0  7C 08 03 A6 */	mtlr r0
+/* 803EE294 003EA0D4  38 21 00 10 */	addi r1, r1, 0x10
+/* 803EE298 003EA0D8  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global CaptureEFB__Q23sfx7UtilityFRQ23gfx9TexBuffer9_GXTexFmtb
+CaptureEFB__Q23sfx7UtilityFRQ23gfx9TexBuffer9_GXTexFmtb:
+/* 80401A64 003FD8A4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80401A68 003FD8A8  7C 08 02 A6 */	mflr r0
+/* 80401A6C 003FD8AC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80401A70 003FD8B0  39 61 00 20 */	addi r11, r1, 0x20
+/* 80401A74 003FD8B4  4B C0 58 CD */	bl func_80007340
+/* 80401A78 003FD8B8  7C 7C 1B 78 */	mr r28, r3
+/* 80401A7C 003FD8BC  7C 9D 23 78 */	mr r29, r4
+/* 80401A80 003FD8C0  7C BE 2B 78 */	mr r30, r5
+/* 80401A84 003FD8C4  4B D9 54 AD */	bl height__Q23gfx9TexBufferCFv
+/* 80401A88 003FD8C8  7C 7F 1B 78 */	mr r31, r3
+/* 80401A8C 003FD8CC  7F 83 E3 78 */	mr r3, r28
+/* 80401A90 003FD8D0  4B D8 46 81 */	bl GetNumFreeObject__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1CFv
+/* 80401A94 003FD8D4  7C 60 1B 78 */	mr r0, r3
+/* 80401A98 003FD8D8  38 60 00 00 */	li r3, 0
+/* 80401A9C 003FD8DC  38 80 00 00 */	li r4, 0
+/* 80401AA0 003FD8E0  54 05 04 3E */	clrlwi r5, r0, 0x10
+/* 80401AA4 003FD8E4  57 E6 04 3E */	clrlwi r6, r31, 0x10
+/* 80401AA8 003FD8E8  4B C3 3B 99 */	bl GXSetTexCopySrc
+/* 80401AAC 003FD8EC  7F 83 E3 78 */	mr r3, r28
+/* 80401AB0 003FD8F0  4B D9 54 81 */	bl height__Q23gfx9TexBufferCFv
+/* 80401AB4 003FD8F4  7C 7F 1B 78 */	mr r31, r3
+/* 80401AB8 003FD8F8  7F 83 E3 78 */	mr r3, r28
+/* 80401ABC 003FD8FC  4B D8 46 55 */	bl GetNumFreeObject__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1CFv
+/* 80401AC0 003FD900  54 63 04 3E */	clrlwi r3, r3, 0x10
+/* 80401AC4 003FD904  57 E4 04 3E */	clrlwi r4, r31, 0x10
+/* 80401AC8 003FD908  7F A5 EB 78 */	mr r5, r29
+/* 80401ACC 003FD90C  38 C0 00 00 */	li r6, 0
+/* 80401AD0 003FD910  4B C3 3B E1 */	bl GXSetTexCopyDst
+/* 80401AD4 003FD914  4B C3 55 5D */	bl GXInvalidateTexAll
+/* 80401AD8 003FD918  57 DF 06 3E */	clrlwi r31, r30, 0x18
+/* 80401ADC 003FD91C  7F 83 E3 78 */	mr r3, r28
+/* 80401AE0 003FD920  4B D8 16 59 */	bl block__Q23mem9DataBlockCFv
+/* 80401AE4 003FD924  90 81 00 0C */	stw r4, 0xc(r1)
+/* 80401AE8 003FD928  90 61 00 08 */	stw r3, 8(r1)
+/* 80401AEC 003FD92C  7C 83 23 78 */	mr r3, r4
+/* 80401AF0 003FD930  7F E4 FB 78 */	mr r4, r31
+/* 80401AF4 003FD934  4B C3 41 BD */	bl GXCopyTex
+/* 80401AF8 003FD938  39 61 00 20 */	addi r11, r1, 0x20
+/* 80401AFC 003FD93C  4B C0 58 91 */	bl func_8000738C
+/* 80401B00 003FD940  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80401B04 003FD944  7C 08 03 A6 */	mtlr r0
+/* 80401B08 003FD948  38 21 00 20 */	addi r1, r1, 0x20
+/* 80401B0C 003FD94C  4E 80 00 20 */	blr 
+
+.global FullScreenPlateSetupGX__Q23sfx7UtilityFv
+FullScreenPlateSetupGX__Q23sfx7UtilityFv:
+/* 80401B10 003FD950  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80401B14 003FD954  7C 08 02 A6 */	mflr r0
+/* 80401B18 003FD958  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80401B1C 003FD95C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80401B20 003FD960  C0 22 E3 98 */	lfs f1, $$251502-_SDA2_BASE_(r2)
+/* 80401B24 003FD964  C0 42 E3 9C */	lfs f2, $$251503-_SDA2_BASE_(r2)
+/* 80401B28 003FD968  FC 60 10 90 */	fmr f3, f2
+/* 80401B2C 003FD96C  FC 80 08 90 */	fmr f4, f1
+/* 80401B30 003FD970  C0 A2 E3 A0 */	lfs f5, $$251504-_SDA2_BASE_(r2)
+/* 80401B34 003FD974  FC C0 08 90 */	fmr f6, f1
+/* 80401B38 003FD978  4B D9 CF F1 */	bl CreateOrtho__Q33hel4math8Matrix44Fffffff
+/* 80401B3C 003FD97C  38 61 00 50 */	addi r3, r1, 0x50
+/* 80401B40 003FD980  38 80 00 00 */	li r4, 0
+/* 80401B44 003FD984  4B D9 35 11 */	bl SetupGX__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix44b
+/* 80401B48 003FD988  3C 60 80 54 */	lis r3, BASIS_Z__Q33hel4math7Vector3@ha
+/* 80401B4C 003FD98C  38 83 53 00 */	addi r4, r3, BASIS_Z__Q33hel4math7Vector3@l
+/* 80401B50 003FD990  80 64 00 00 */	lwz r3, 0(r4)
+/* 80401B54 003FD994  80 04 00 04 */	lwz r0, 4(r4)
+/* 80401B58 003FD998  90 61 00 08 */	stw r3, 8(r1)
+/* 80401B5C 003FD99C  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80401B60 003FD9A0  80 04 00 08 */	lwz r0, 8(r4)
+/* 80401B64 003FD9A4  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80401B68 003FD9A8  C0 01 00 08 */	lfs f0, 8(r1)
+/* 80401B6C 003FD9AC  C0 22 E3 9C */	lfs f1, $$251503-_SDA2_BASE_(r2)
+/* 80401B70 003FD9B0  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80401B74 003FD9B4  D0 01 00 08 */	stfs f0, 8(r1)
+/* 80401B78 003FD9B8  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 80401B7C 003FD9BC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80401B80 003FD9C0  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 80401B84 003FD9C4  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80401B88 003FD9C8  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80401B8C 003FD9CC  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 80401B90 003FD9D0  80 61 00 08 */	lwz r3, 8(r1)
+/* 80401B94 003FD9D4  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 80401B98 003FD9D8  90 61 00 14 */	stw r3, 0x14(r1)
+/* 80401B9C 003FD9DC  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80401BA0 003FD9E0  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 80401BA4 003FD9E4  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80401BA8 003FD9E8  38 61 00 20 */	addi r3, r1, 0x20
+/* 80401BAC 003FD9EC  3C 80 80 54 */	lis r4, ZERO__Q33hel4math7Vector3@ha
+/* 80401BB0 003FD9F0  38 84 52 D0 */	addi r4, r4, ZERO__Q33hel4math7Vector3@l
+/* 80401BB4 003FD9F4  3C A0 80 54 */	lis r5, BASIS_Y__Q33hel4math7Vector3@ha
+/* 80401BB8 003FD9F8  38 A5 52 F4 */	addi r5, r5, BASIS_Y__Q33hel4math7Vector3@l
+/* 80401BBC 003FD9FC  38 C1 00 14 */	addi r6, r1, 0x14
+/* 80401BC0 003FDA00  4B D9 CB F1 */	bl CreateLookAt__Q33hel4math8Matrix34FRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 80401BC4 003FDA04  38 61 00 20 */	addi r3, r1, 0x20
+/* 80401BC8 003FDA08  4B D9 37 4D */	bl SetViewMtx__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34
+/* 80401BCC 003FDA0C  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 80401BD0 003FDA10  7C 08 03 A6 */	mtlr r0
+/* 80401BD4 003FDA14  38 21 00 90 */	addi r1, r1, 0x90
+/* 80401BD8 003FDA18  4E 80 00 20 */	blr 
+
+.global FullScreenPlateDraw__Q23sfx7UtilityFb
+FullScreenPlateDraw__Q23sfx7UtilityFb:
+/* 80401BDC 003FDA1C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80401BE0 003FDA20  7C 08 02 A6 */	mflr r0
+/* 80401BE4 003FDA24  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80401BE8 003FDA28  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80401BEC 003FDA2C  7C 7F 1B 78 */	mr r31, r3
+/* 80401BF0 003FDA30  4B C3 21 C1 */	bl GXClearVtxDesc
+/* 80401BF4 003FDA34  38 60 00 00 */	li r3, 0
+/* 80401BF8 003FDA38  38 80 00 09 */	li r4, 9
+/* 80401BFC 003FDA3C  38 A0 00 01 */	li r5, 1
+/* 80401C00 003FDA40  38 C0 00 04 */	li r6, 4
+/* 80401C04 003FDA44  38 E0 00 00 */	li r7, 0
+/* 80401C08 003FDA48  4B C3 21 E9 */	bl GXSetVtxAttrFmt
+/* 80401C0C 003FDA4C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401C10 003FDA50  41 82 00 1C */	beq lbl_80401C2C
+/* 80401C14 003FDA54  38 60 00 00 */	li r3, 0
+/* 80401C18 003FDA58  38 80 00 0D */	li r4, 0xd
+/* 80401C1C 003FDA5C  38 A0 00 01 */	li r5, 1
+/* 80401C20 003FDA60  38 C0 00 04 */	li r6, 4
+/* 80401C24 003FDA64  38 E0 00 00 */	li r7, 0
+/* 80401C28 003FDA68  4B C3 21 C9 */	bl GXSetVtxAttrFmt
+lbl_80401C2C:
+/* 80401C2C 003FDA6C  38 60 00 09 */	li r3, 9
+/* 80401C30 003FDA70  38 80 00 01 */	li r4, 1
+/* 80401C34 003FDA74  4B C3 1B 6D */	bl GXSetVtxDesc
+/* 80401C38 003FDA78  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401C3C 003FDA7C  41 82 00 10 */	beq lbl_80401C4C
+/* 80401C40 003FDA80  38 60 00 0D */	li r3, 0xd
+/* 80401C44 003FDA84  38 80 00 01 */	li r4, 1
+/* 80401C48 003FDA88  4B C3 1B 59 */	bl GXSetVtxDesc
+lbl_80401C4C:
+/* 80401C4C 003FDA8C  38 61 00 08 */	addi r3, r1, 8
+/* 80401C50 003FDA90  4B C2 E8 91 */	bl PSMTXIdentity
+/* 80401C54 003FDA94  38 61 00 08 */	addi r3, r1, 8
+/* 80401C58 003FDA98  38 80 00 00 */	li r4, 0
+/* 80401C5C 003FDA9C  4B C3 6F C5 */	bl GXLoadPosMtxImm
+/* 80401C60 003FDAA0  38 60 00 00 */	li r3, 0
+/* 80401C64 003FDAA4  4B C3 70 DD */	bl GXSetCurrentMtx
+/* 80401C68 003FDAA8  38 60 00 98 */	li r3, 0x98
+/* 80401C6C 003FDAAC  38 80 00 00 */	li r4, 0
+/* 80401C70 003FDAB0  38 A0 00 05 */	li r5, 5
+/* 80401C74 003FDAB4  4B C3 35 FD */	bl GXBegin
+/* 80401C78 003FDAB8  C0 02 E3 9C */	lfs f0, $$251503-_SDA2_BASE_(r2)
+/* 80401C7C 003FDABC  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 80401C80 003FDAC0  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
+/* 80401C84 003FDAC4  C0 02 E3 9C */	lfs f0, $$251503-_SDA2_BASE_(r2)
+/* 80401C88 003FDAC8  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401C8C 003FDACC  C0 02 E3 A4 */	lfs f0, $$251519-_SDA2_BASE_(r2)
+/* 80401C90 003FDAD0  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401C94 003FDAD4  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401C98 003FDAD8  41 82 00 14 */	beq lbl_80401CAC
+/* 80401C9C 003FDADC  C0 02 E3 A0 */	lfs f0, $$251504-_SDA2_BASE_(r2)
+/* 80401CA0 003FDAE0  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CA4 003FDAE4  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401CA8 003FDAE8  D0 03 80 00 */	stfs f0, -0x8000(r3)
+lbl_80401CAC:
+/* 80401CAC 003FDAEC  C0 02 E3 9C */	lfs f0, $$251503-_SDA2_BASE_(r2)
+/* 80401CB0 003FDAF0  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 80401CB4 003FDAF4  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
+/* 80401CB8 003FDAF8  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401CBC 003FDAFC  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CC0 003FDB00  C0 02 E3 A4 */	lfs f0, $$251519-_SDA2_BASE_(r2)
+/* 80401CC4 003FDB04  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CC8 003FDB08  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401CCC 003FDB0C  41 82 00 14 */	beq lbl_80401CE0
+/* 80401CD0 003FDB10  C0 02 E3 A0 */	lfs f0, $$251504-_SDA2_BASE_(r2)
+/* 80401CD4 003FDB14  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CD8 003FDB18  C0 02 E3 A0 */	lfs f0, $$251504-_SDA2_BASE_(r2)
+/* 80401CDC 003FDB1C  D0 03 80 00 */	stfs f0, -0x8000(r3)
+lbl_80401CE0:
+/* 80401CE0 003FDB20  C0 02 E3 A0 */	lfs f0, $$251504-_SDA2_BASE_(r2)
+/* 80401CE4 003FDB24  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 80401CE8 003FDB28  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
+/* 80401CEC 003FDB2C  C0 02 E3 9C */	lfs f0, $$251503-_SDA2_BASE_(r2)
+/* 80401CF0 003FDB30  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CF4 003FDB34  C0 02 E3 A4 */	lfs f0, $$251519-_SDA2_BASE_(r2)
+/* 80401CF8 003FDB38  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401CFC 003FDB3C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401D00 003FDB40  41 82 00 14 */	beq lbl_80401D14
+/* 80401D04 003FDB44  C0 02 E3 A8 */	lfs f0, $$251520-_SDA2_BASE_(r2)
+/* 80401D08 003FDB48  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D0C 003FDB4C  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D10 003FDB50  D0 03 80 00 */	stfs f0, -0x8000(r3)
+lbl_80401D14:
+/* 80401D14 003FDB54  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D18 003FDB58  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 80401D1C 003FDB5C  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
+/* 80401D20 003FDB60  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D24 003FDB64  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D28 003FDB68  C0 02 E3 A4 */	lfs f0, $$251519-_SDA2_BASE_(r2)
+/* 80401D2C 003FDB6C  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D30 003FDB70  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401D34 003FDB74  41 82 00 14 */	beq lbl_80401D48
+/* 80401D38 003FDB78  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D3C 003FDB7C  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D40 003FDB80  C0 02 E3 A0 */	lfs f0, $$251504-_SDA2_BASE_(r2)
+/* 80401D44 003FDB84  D0 03 80 00 */	stfs f0, -0x8000(r3)
+lbl_80401D48:
+/* 80401D48 003FDB88  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D4C 003FDB8C  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 80401D50 003FDB90  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
+/* 80401D54 003FDB94  C0 02 E3 9C */	lfs f0, $$251503-_SDA2_BASE_(r2)
+/* 80401D58 003FDB98  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D5C 003FDB9C  C0 02 E3 A4 */	lfs f0, $$251519-_SDA2_BASE_(r2)
+/* 80401D60 003FDBA0  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D64 003FDBA4  2C 1F 00 00 */	cmpwi r31, 0
+/* 80401D68 003FDBA8  41 82 00 14 */	beq lbl_80401D7C
+/* 80401D6C 003FDBAC  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D70 003FDBB0  D0 03 80 00 */	stfs f0, -0x8000(r3)
+/* 80401D74 003FDBB4  C0 02 E3 98 */	lfs f0, $$251502-_SDA2_BASE_(r2)
+/* 80401D78 003FDBB8  D0 03 80 00 */	stfs f0, -0x8000(r3)
+lbl_80401D7C:
+/* 80401D7C 003FDBBC  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80401D80 003FDBC0  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80401D84 003FDBC4  7C 08 03 A6 */	mtlr r0
+/* 80401D88 003FDBC8  38 21 00 40 */	addi r1, r1, 0x40
+/* 80401D8C 003FDBCC  4E 80 00 20 */	blr 
+
+.section .data4, "wa"  # 0x80406560 - 0x80421040
+.global $$259919
+$$259919:
+	.incbin "baserom.dol", 0x412590, 0x6C
+.global $$259947
+$$259947:
+	.incbin "baserom.dol", 0x4125FC, 0x6C
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20
+$$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20:
+	.incbin "baserom.dol", 0x460970, 0x24
+.global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1
+$$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1:
+	.incbin "baserom.dol", 0x460994, 0xC
+.global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$20
+$$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$20:
+	.incbin "baserom.dol", 0x4609A0, 0x24
+.global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1
+$$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1:
+	.incbin "baserom.dol", 0x4609C4, 0xC
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$261649
+$$261649:
+	.incbin "baserom.dol", 0x46ED78, 0x28
+.global $$261690
+$$261690:
+	.incbin "baserom.dol", 0x46EDA0, 0x28
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1
+__vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1:
+	.incbin "baserom.dol", 0x47A458, 0x10
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$264675
+$$264675:
+	.incbin "baserom.dol", 0x481720, 0x28
+.global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1
+__vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1:
+	.incbin "baserom.dol", 0x481748, 0x10
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$249660
+$$249660:
+	.incbin "baserom.dol", 0x493100, 0x8
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$260100
+$$260100:
+	.incbin "baserom.dol", 0x4952D0, 0x4
+.global $$260101
+$$260101:
+	.incbin "baserom.dol", 0x4952D4, 0x4
+.global $$260103
+$$260103:
+	.incbin "baserom.dol", 0x4952D8, 0x4
+.global $$260104
+$$260104:
+	.incbin "baserom.dol", 0x4952DC, 0x4
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$259859
+$$259859:
+	.incbin "baserom.dol", 0x495A18, 0x4
+.global $$259860
+$$259860:
+	.incbin "baserom.dol", 0x495A1C, 0x4
+.global $$259862
+$$259862:
+	.incbin "baserom.dol", 0x495A20, 0x4
+.global $$259863
+$$259863:
+	.incbin "baserom.dol", 0x495A24, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$251743
+$$251743:
+	.incbin "baserom.dol", 0x49A298, 0x8
+.global $$251748
+$$251748:
+	.incbin "baserom.dol", 0x49A2A0, 0x4
+.global $$251755
+$$251755:
+	.incbin "baserom.dol", 0x49A2A4, 0x4
+.global $$251796
+$$251796:
+	.incbin "baserom.dol", 0x49A2A8, 0x4
+.global $$251797
+$$251797:
+	.incbin "baserom.dol", 0x49A2AC, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$251538
+$$251538:
+	.incbin "baserom.dol", 0x49A500, 0x4
+.global $$251540
+$$251540:
+	.incbin "baserom.dol", 0x49A504, 0x4
+.global $$251542
+$$251542:
+	.incbin "baserom.dol", 0x49A508, 0x8
+.global $$251544
+$$251544:
+	.incbin "baserom.dol", 0x49A510, 0x8
+.global $$251552
+$$251552:
+	.incbin "baserom.dol", 0x49A518, 0x4
+.global $$251553
+$$251553:
+	.incbin "baserom.dol", 0x49A51C, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$259635
+$$259635:
+	.incbin "baserom.dol", 0x49AED0, 0x4
+.global $$259696
+$$259696:
+	.incbin "baserom.dol", 0x49AED4, 0x4
+.global $$261417
+$$261417:
+	.incbin "baserom.dol", 0x49AED8, 0x4
+.global $$261476
+$$261476:
+	.incbin "baserom.dol", 0x49AEDC, 0x4
+.global $$261507
+$$261507:
+	.incbin "baserom.dol", 0x49AEE0, 0x4
+.global $$261509
+$$261509:
+	.incbin "baserom.dol", 0x49AEE4, 0x4
+.global $$261510
+$$261510:
+	.incbin "baserom.dol", 0x49AEE8, 0x4
+.global $$261511
+$$261511:
+	.incbin "baserom.dol", 0x49AEEC, 0x4
+.global $$261512
+$$261512:
+	.incbin "baserom.dol", 0x49AEF0, 0x4
+.global $$261513
+$$261513:
+	.incbin "baserom.dol", 0x49AEF4, 0x4
+.global $$261514
+$$261514:
+	.incbin "baserom.dol", 0x49AEF8, 0x4
+.global $$261515
+$$261515:
+	.incbin "baserom.dol", 0x49AEFC, 0x4
+.global $$261516
+$$261516:
+	.incbin "baserom.dol", 0x49AF00, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$261487
+$$261487:
+	.incbin "baserom.dol", 0x49BA38, 0x4
+.global $$261488
+$$261488:
+	.incbin "baserom.dol", 0x49BA3C, 0x4
+.global $$261489
+$$261489:
+	.incbin "baserom.dol", 0x49BA40, 0x4
+.global $$261490
+$$261490:
+	.incbin "baserom.dol", 0x49BA44, 0x4
+.global $$261491
+$$261491:
+	.incbin "baserom.dol", 0x49BA48, 0x4
+.global $$261492
+$$261492:
+	.incbin "baserom.dol", 0x49BA4C, 0x4
+.global $$261493
+$$261493:
+	.incbin "baserom.dol", 0x49BA50, 0x4
+.global $$261504
+$$261504:
+	.incbin "baserom.dol", 0x49BA54, 0x4
+.global $$261505
+$$261505:
+	.incbin "baserom.dol", 0x49BA58, 0x4
+.global $$261506
+$$261506:
+	.incbin "baserom.dol", 0x49BA5C, 0x4
+.global $$261527
+$$261527:
+	.incbin "baserom.dol", 0x49BA60, 0x4
+.global $$261528
+$$261528:
+	.incbin "baserom.dol", 0x49BA64, 0x4
+.global $$261600
+$$261600:
+	.incbin "baserom.dol", 0x49BA68, 0x4
+.global $$261640
+$$261640:
+	.incbin "baserom.dol", 0x49BA6C, 0x4
+.global $$261641
+$$261641:
+	.incbin "baserom.dol", 0x49BA70, 0x4
+.global $$261642
+$$261642:
+	.incbin "baserom.dol", 0x49BA74, 0x4
+.global $$261643
+$$261643:
+	.incbin "baserom.dol", 0x49BA78, 0x4
+.global $$261644
+$$261644:
+	.incbin "baserom.dol", 0x49BA7C, 0x4
+.global $$261645
+$$261645:
+	.incbin "baserom.dol", 0x49BA80, 0x4
+.global $$261646
+$$261646:
+	.incbin "baserom.dol", 0x49BA84, 0x4
+.global $$261647
+$$261647:
+	.incbin "baserom.dol", 0x49BA88, 0x4
+.global $$261686
+$$261686:
+	.incbin "baserom.dol", 0x49BA8C, 0x4
+.global $$261687
+$$261687:
+	.incbin "baserom.dol", 0x49BA90, 0x4
+.global $$261717
+$$261717:
+	.incbin "baserom.dol", 0x49BA94, 0x4
+.global $$261792
+$$261792:
+	.incbin "baserom.dol", 0x49BA98, 0x4
+.global $$261954
+$$261954:
+	.incbin "baserom.dol", 0x49BA9C, 0x4
+.global $$261977
+$$261977:
+	.incbin "baserom.dol", 0x49BAA0, 0x4
+.global $$262002
+$$262002:
+	.incbin "baserom.dol", 0x49BAA4, 0x4
+.global $$262004
+$$262004:
+	.incbin "baserom.dol", 0x49BAA8, 0x4
+.global $$262005
+$$262005:
+	.incbin "baserom.dol", 0x49BAAC, 0x4
+.global $$262006
+$$262006:
+	.incbin "baserom.dol", 0x49BAB0, 0x4
+.global $$262007
+$$262007:
+	.incbin "baserom.dol", 0x49BAB4, 0x4
+.global $$262008
+$$262008:
+	.incbin "baserom.dol", 0x49BAB8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$256724
+$$256724:
+	.incbin "baserom.dol", 0x49C058, 0x4
+.global $$256725
+$$256725:
+	.incbin "baserom.dol", 0x49C05C, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$258292
+$$258292:
+	.incbin "baserom.dol", 0x49C298, 0x4
+.global $$258293
+$$258293:
+	.incbin "baserom.dol", 0x49C29C, 0x4
+.global $$258300
+$$258300:
+	.incbin "baserom.dol", 0x49C2A0, 0x4
+.global $$258301
+$$258301:
+	.incbin "baserom.dol", 0x49C2A4, 0x4
+.global $$258302
+$$258302:
+	.incbin "baserom.dol", 0x49C2A8, 0x4
+.global $$258303
+$$258303:
+	.incbin "baserom.dol", 0x49C2AC, 0x4
+.global $$258304
+$$258304:
+	.incbin "baserom.dol", 0x49C2B0, 0x4
+.global $$258305
+$$258305:
+	.incbin "baserom.dol", 0x49C2B4, 0x4
+.global $$258306
+$$258306:
+	.incbin "baserom.dol", 0x49C2B8, 0x4
+.global $$258339
+$$258339:
+	.incbin "baserom.dol", 0x49C2BC, 0x4
+.global $$258340
+$$258340:
+	.incbin "baserom.dol", 0x49C2C0, 0x4
+.global $$258341
+$$258341:
+	.incbin "baserom.dol", 0x49C2C4, 0x4
+.global $$258370
+$$258370:
+	.incbin "baserom.dol", 0x49C2C8, 0x4
+.global $$258394
+$$258394:
+	.incbin "baserom.dol", 0x49C2CC, 0x4
+.global $$258395
+$$258395:
+	.incbin "baserom.dol", 0x49C2D0, 0x4
+.global $$258481
+$$258481:
+	.incbin "baserom.dol", 0x49C2D4, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$257104
+$$257104:
+	.incbin "baserom.dol", 0x49D050, 0x4
+.global $$257105
+$$257105:
+	.incbin "baserom.dol", 0x49D054, 0x4
+.global $$257106
+$$257106:
+	.incbin "baserom.dol", 0x49D058, 0x4
+.global $$257107
+$$257107:
+	.incbin "baserom.dol", 0x49D05C, 0x4
+.global $$257110
+$$257110:
+	.incbin "baserom.dol", 0x49D060, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global T_WATERPISTOL_VARIATION_TABLE_STRONG__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2
+T_WATERPISTOL_VARIATION_TABLE_STRONG__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2:
+	.incbin "baserom.dol", 0x49D9F8, 0x8
+.global $$264296
+$$264296:
+	.incbin "baserom.dol", 0x49DA00, 0x4
+.global $$264442
+$$264442:
+	.incbin "baserom.dol", 0x49DA04, 0x4
+.global $$264465
+$$264465:
+	.incbin "baserom.dol", 0x49DA08, 0x4
+.global $$264466
+$$264466:
+	.incbin "baserom.dol", 0x49DA0C, 0x4
+.global $$264495
+$$264495:
+	.incbin "baserom.dol", 0x49DA10, 0x4
+.global $$264496
+$$264496:
+	.incbin "baserom.dol", 0x49DA14, 0x4
+.global $$264812
+$$264812:
+	.incbin "baserom.dol", 0x49DA18, 0x4
+.global $$264893
+$$264893:
+	.incbin "baserom.dol", 0x49DA1C, 0x4
+.global $$264894
+$$264894:
+	.incbin "baserom.dol", 0x49DA20, 0x4
+.global $$261260
+$$261260:
+	.incbin "baserom.dol", 0x49DA24, 0x4
+.global $$264998
+$$264998:
+	.incbin "baserom.dol", 0x49DA28, 0x4
+.global $$264999
+$$264999:
+	.incbin "baserom.dol", 0x49DA2C, 0x4
+.global $$265000
+$$265000:
+	.incbin "baserom.dol", 0x49DA30, 0x8
+.global $$265003
+$$265003:
+	.incbin "baserom.dol", 0x49DA38, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253894
+$$253894:
+	.incbin "baserom.dol", 0x49DEE0, 0x4
+.global $$253895
+$$253895:
+	.incbin "baserom.dol", 0x49DEE4, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$250538
+$$250538:
+	.incbin "baserom.dol", 0x49E018, 0x4
+.global $$250539
+$$250539:
+	.incbin "baserom.dol", 0x49E01C, 0x4
+.global $$250540
+$$250540:
+	.incbin "baserom.dol", 0x49E020, 0x4
+.global $$250541
+$$250541:
+	.incbin "baserom.dol", 0x49E024, 0x4
+.global $$250542
+$$250542:
+	.incbin "baserom.dol", 0x49E028, 0x8
+.global $$250549
+$$250549:
+	.incbin "baserom.dol", 0x49E030, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253722
+$$253722:
+	.incbin "baserom.dol", 0x49E0F0, 0x4
+.global $$253723
+$$253723:
+	.incbin "baserom.dol", 0x49E0F4, 0x4
+.global $$253724
+$$253724:
+	.incbin "baserom.dol", 0x49E0F8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$258122
+$$258122:
+	.incbin "baserom.dol", 0x49E128, 0x4
+.global $$258162
+$$258162:
+	.incbin "baserom.dol", 0x49E12C, 0x4
+.global $$258163
+$$258163:
+	.incbin "baserom.dol", 0x49E130, 0x4
+.global $$258164
+$$258164:
+	.incbin "baserom.dol", 0x49E134, 0x4
+.global $$258168
+$$258168:
+	.incbin "baserom.dol", 0x49E138, 0x8
+.global $$258173
+$$258173:
+	.incbin "baserom.dol", 0x49E140, 0x4
+.global $$258180
+$$258180:
+	.incbin "baserom.dol", 0x49E144, 0x4
+.global $$258198
+$$258198:
+	.incbin "baserom.dol", 0x49E148, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253795
+$$253795:
+	.incbin "baserom.dol", 0x49E590, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$251819
+$$251819:
+	.incbin "baserom.dol", 0x49E828, 0x4
+.global $$251820
+$$251820:
+	.incbin "baserom.dol", 0x49E82C, 0x4
+.global $$251821
+$$251821:
+	.incbin "baserom.dol", 0x49E830, 0x8
+.global $$251826
+$$251826:
+	.incbin "baserom.dol", 0x49E838, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$255686
+$$255686:
+	.incbin "baserom.dol", 0x49EA88, 0x4
+.global $$255687
+$$255687:
+	.incbin "baserom.dol", 0x49EA8C, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$255686
+$$255686:
+	.incbin "baserom.dol", 0x49EC70, 0x4
+.global $$255687
+$$255687:
+	.incbin "baserom.dol", 0x49EC74, 0x4
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$251502
+$$251502:
+	.incbin "baserom.dol", 0x49EE58, 0x4
+.global $$251503
+$$251503:
+	.incbin "baserom.dol", 0x49EE5C, 0x4
+.global $$251504
+$$251504:
+	.incbin "baserom.dol", 0x49EE60, 0x4
+.global $$251519
+$$251519:
+	.incbin "baserom.dol", 0x49EE64, 0x4
+.global $$251520
+$$251520:
+	.incbin "baserom.dol", 0x49EE68, 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global t_isFileLoadWarningEnable__Q24file21$$2unnamed$$2Utility_cpp$$2
+t_isFileLoadWarningEnable__Q24file21$$2unnamed$$2Utility_cpp$$2:
+	.skip 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global $$2GUARD$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti
+$$2GUARD$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti:
+	.skip 0x8
+.global $$2LOCAL$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti
+$$2LOCAL$$2RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti:
+	.skip 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global T_WATERPISTOL_VARIATION_TABLE_NORMAL__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2
+T_WATERPISTOL_VARIATION_TABLE_NORMAL__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2:
+	.skip 0x4

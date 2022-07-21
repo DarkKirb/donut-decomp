@@ -1,0 +1,460 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q25ocoll10AttackRootFRQ25ocoll6AttackUl
+__ct__Q25ocoll10AttackRootFRQ25ocoll6AttackUl:
+/* 801D51CC 001D100C  90 83 00 00 */	stw r4, 0(r3)
+/* 801D51D0 001D1010  80 84 00 04 */	lwz r4, 4(r4)
+/* 801D51D4 001D1014  80 04 00 04 */	lwz r0, 4(r4)
+/* 801D51D8 001D1018  90 03 00 04 */	stw r0, 4(r3)
+/* 801D51DC 001D101C  38 C0 00 00 */	li r6, 0
+/* 801D51E0 001D1020  90 C3 00 08 */	stw r6, 8(r3)
+/* 801D51E4 001D1024  38 83 00 08 */	addi r4, r3, 8
+/* 801D51E8 001D1028  38 00 00 05 */	li r0, 5
+/* 801D51EC 001D102C  7C 09 03 A6 */	mtctr r0
+lbl_801D51F0:
+/* 801D51F0 001D1030  90 C4 00 04 */	stw r6, 4(r4)
+/* 801D51F4 001D1034  94 C4 00 08 */	stwu r6, 8(r4)
+/* 801D51F8 001D1038  42 00 FF F8 */	bdnz lbl_801D51F0
+/* 801D51FC 001D103C  90 A3 00 34 */	stw r5, 0x34(r3)
+/* 801D5200 001D1040  38 00 00 00 */	li r0, 0
+/* 801D5204 001D1044  90 03 00 38 */	stw r0, 0x38(r3)
+/* 801D5208 001D1048  4E 80 00 20 */	blr 
+
+.global __dt__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv
+__dt__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv:
+/* 801D520C 001D104C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D5210 001D1050  7C 08 02 A6 */	mflr r0
+/* 801D5214 001D1054  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D5218 001D1058  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D521C 001D105C  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D5220 001D1060  7C 7E 1B 78 */	mr r30, r3
+/* 801D5224 001D1064  7C 9F 23 78 */	mr r31, r4
+/* 801D5228 001D1068  2C 03 00 00 */	cmpwi r3, 0
+/* 801D522C 001D106C  41 82 00 28 */	beq lbl_801D5254
+/* 801D5230 001D1070  48 00 00 41 */	bl clear__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv
+/* 801D5234 001D1074  7F C3 F3 78 */	mr r3, r30
+/* 801D5238 001D1078  38 80 00 00 */	li r4, 0
+/* 801D523C 001D107C  4B FA 09 2D */	bl __dt__Q23scn6ISceneFv
+/* 801D5240 001D1080  7F E0 07 34 */	extsh r0, r31
+/* 801D5244 001D1084  2C 00 00 00 */	cmpwi r0, 0
+/* 801D5248 001D1088  40 81 00 0C */	ble lbl_801D5254
+/* 801D524C 001D108C  7F C3 F3 78 */	mr r3, r30
+/* 801D5250 001D1090  4B FE A4 C5 */	bl __dl__FPv
+lbl_801D5254:
+/* 801D5254 001D1094  7F C3 F3 78 */	mr r3, r30
+/* 801D5258 001D1098  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D525C 001D109C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D5260 001D10A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D5264 001D10A4  7C 08 03 A6 */	mtlr r0
+/* 801D5268 001D10A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D526C 001D10AC  4E 80 00 20 */	blr 
+
+.global clear__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv
+clear__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv:
+/* 801D5270 001D10B0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801D5274 001D10B4  7C 08 02 A6 */	mflr r0
+/* 801D5278 001D10B8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801D527C 001D10BC  39 61 00 20 */	addi r11, r1, 0x20
+/* 801D5280 001D10C0  4B E3 20 C1 */	bl func_80007340
+/* 801D5284 001D10C4  7C 7C 1B 78 */	mr r28, r3
+/* 801D5288 001D10C8  3B E0 00 00 */	li r31, 0
+/* 801D528C 001D10CC  48 00 00 58 */	b lbl_801D52E4
+lbl_801D5290:
+/* 801D5290 001D10D0  3B C3 FF FF */	addi r30, r3, -1
+/* 801D5294 001D10D4  38 7C 00 08 */	addi r3, r28, 8
+/* 801D5298 001D10D8  7F C4 F3 78 */	mr r4, r30
+/* 801D529C 001D10DC  48 00 00 6D */	bl __vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl
+/* 801D52A0 001D10E0  83 A3 00 00 */	lwz r29, 0(r3)
+/* 801D52A4 001D10E4  38 7C 00 08 */	addi r3, r28, 8
+/* 801D52A8 001D10E8  7F C4 F3 78 */	mr r4, r30
+/* 801D52AC 001D10EC  48 00 00 5D */	bl __vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl
+/* 801D52B0 001D10F0  93 E3 00 00 */	stw r31, 0(r3)
+/* 801D52B4 001D10F4  80 7C 00 04 */	lwz r3, 4(r28)
+/* 801D52B8 001D10F8  38 03 FF FF */	addi r0, r3, -1
+/* 801D52BC 001D10FC  90 1C 00 04 */	stw r0, 4(r28)
+/* 801D52C0 001D1100  7F A3 EB 78 */	mr r3, r29
+/* 801D52C4 001D1104  38 80 FF FF */	li r4, -1
+/* 801D52C8 001D1108  4B FF F8 A9 */	bl __dt__Q25ocoll10AttackNodeFv
+/* 801D52CC 001D110C  80 7C 00 00 */	lwz r3, 0(r28)
+/* 801D52D0 001D1110  7F A4 EB 78 */	mr r4, r29
+/* 801D52D4 001D1114  81 83 00 00 */	lwz r12, 0(r3)
+/* 801D52D8 001D1118  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 801D52DC 001D111C  7D 89 03 A6 */	mtctr r12
+/* 801D52E0 001D1120  4E 80 04 21 */	bctrl 
+lbl_801D52E4:
+/* 801D52E4 001D1124  80 7C 00 04 */	lwz r3, 4(r28)
+/* 801D52E8 001D1128  2C 03 00 00 */	cmpwi r3, 0
+/* 801D52EC 001D112C  40 82 FF A4 */	bne lbl_801D5290
+/* 801D52F0 001D1130  39 61 00 20 */	addi r11, r1, 0x20
+/* 801D52F4 001D1134  4B E3 20 99 */	bl func_8000738C
+/* 801D52F8 001D1138  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801D52FC 001D113C  7C 08 03 A6 */	mtlr r0
+/* 801D5300 001D1140  38 21 00 20 */	addi r1, r1, 0x20
+/* 801D5304 001D1144  4E 80 00 20 */	blr 
+
+.global __vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl
+__vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl:
+/* 801D5308 001D1148  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D530C 001D114C  7C 08 02 A6 */	mflr r0
+/* 801D5310 001D1150  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D5314 001D1154  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D5318 001D1158  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D531C 001D115C  7C 7E 1B 78 */	mr r30, r3
+/* 801D5320 001D1160  7C 9F 23 78 */	mr r31, r4
+/* 801D5324 001D1164  7F E3 FB 78 */	mr r3, r31
+/* 801D5328 001D1168  38 80 00 0A */	li r4, 0xa
+/* 801D532C 001D116C  4B E4 F1 75 */	bl DefaultSwitchThreadCallback
+/* 801D5330 001D1170  57 E0 10 3A */	slwi r0, r31, 2
+/* 801D5334 001D1174  7C 7E 02 14 */	add r3, r30, r0
+/* 801D5338 001D1178  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D533C 001D117C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D5340 001D1180  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D5344 001D1184  7C 08 03 A6 */	mtlr r0
+/* 801D5348 001D1188  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D534C 001D118C  4E 80 00 20 */	blr 
+
+.global __dt__Q25ocoll10AttackRootFv
+__dt__Q25ocoll10AttackRootFv:
+/* 801D5350 001D1190  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D5354 001D1194  7C 08 02 A6 */	mflr r0
+/* 801D5358 001D1198  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D535C 001D119C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D5360 001D11A0  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D5364 001D11A4  7C 7E 1B 78 */	mr r30, r3
+/* 801D5368 001D11A8  7C 9F 23 78 */	mr r31, r4
+/* 801D536C 001D11AC  2C 03 00 00 */	cmpwi r3, 0
+/* 801D5370 001D11B0  41 82 00 24 */	beq lbl_801D5394
+/* 801D5374 001D11B4  38 63 00 04 */	addi r3, r3, 4
+/* 801D5378 001D11B8  38 80 FF FF */	li r4, -1
+/* 801D537C 001D11BC  4B FF FE 91 */	bl __dt__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv
+/* 801D5380 001D11C0  7F E0 07 34 */	extsh r0, r31
+/* 801D5384 001D11C4  2C 00 00 00 */	cmpwi r0, 0
+/* 801D5388 001D11C8  40 81 00 0C */	ble lbl_801D5394
+/* 801D538C 001D11CC  7F C3 F3 78 */	mr r3, r30
+/* 801D5390 001D11D0  4B FE A3 85 */	bl __dl__FPv
+lbl_801D5394:
+/* 801D5394 001D11D4  7F C3 F3 78 */	mr r3, r30
+/* 801D5398 001D11D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D539C 001D11DC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D53A0 001D11E0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D53A4 001D11E4  7C 08 03 A6 */	mtlr r0
+/* 801D53A8 001D11E8  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D53AC 001D11EC  4E 80 00 20 */	blr 
+
+.global update__Q25ocoll10AttackRootFv
+update__Q25ocoll10AttackRootFv:
+/* 801D53B0 001D11F0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D53B4 001D11F4  7C 08 02 A6 */	mflr r0
+/* 801D53B8 001D11F8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D53BC 001D11FC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D53C0 001D1200  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D53C4 001D1204  7C 7E 1B 78 */	mr r30, r3
+/* 801D53C8 001D1208  3B E0 00 00 */	li r31, 0
+/* 801D53CC 001D120C  48 00 00 18 */	b lbl_801D53E4
+lbl_801D53D0:
+/* 801D53D0 001D1210  38 7E 00 04 */	addi r3, r30, 4
+/* 801D53D4 001D1214  7F E4 FB 78 */	mr r4, r31
+/* 801D53D8 001D1218  48 00 00 31 */	bl __vc__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1FUl
+/* 801D53DC 001D121C  4B FF F7 F5 */	bl update__Q25ocoll10AttackNodeFv
+/* 801D53E0 001D1220  3B FF 00 01 */	addi r31, r31, 1
+lbl_801D53E4:
+/* 801D53E4 001D1224  80 1E 00 08 */	lwz r0, 8(r30)
+/* 801D53E8 001D1228  7C 1F 00 40 */	cmplw r31, r0
+/* 801D53EC 001D122C  41 80 FF E4 */	blt lbl_801D53D0
+/* 801D53F0 001D1230  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D53F4 001D1234  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D53F8 001D1238  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D53FC 001D123C  7C 08 03 A6 */	mtlr r0
+/* 801D5400 001D1240  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D5404 001D1244  4E 80 00 20 */	blr 
+
+.global __vc__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1FUl
+__vc__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1FUl:
+/* 801D5408 001D1248  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D540C 001D124C  7C 08 02 A6 */	mflr r0
+/* 801D5410 001D1250  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D5414 001D1254  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D5418 001D1258  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D541C 001D125C  7C 7E 1B 78 */	mr r30, r3
+/* 801D5420 001D1260  7C 9F 23 78 */	mr r31, r4
+/* 801D5424 001D1264  7F E3 FB 78 */	mr r3, r31
+/* 801D5428 001D1268  80 9E 00 04 */	lwz r4, 4(r30)
+/* 801D542C 001D126C  4B E4 F0 75 */	bl DefaultSwitchThreadCallback
+/* 801D5430 001D1270  38 7E 00 08 */	addi r3, r30, 8
+/* 801D5434 001D1274  7F E4 FB 78 */	mr r4, r31
+/* 801D5438 001D1278  4B FF FE D1 */	bl __vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl
+/* 801D543C 001D127C  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D5440 001D1280  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D5444 001D1284  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D5448 001D1288  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D544C 001D128C  7C 08 03 A6 */	mtlr r0
+/* 801D5450 001D1290  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D5454 001D1294  4E 80 00 20 */	blr 
+
+.global addNode__Q25ocoll10AttackRootFRCQ25ocoll8NodeDesc
+addNode__Q25ocoll10AttackRootFRCQ25ocoll8NodeDesc:
+/* 801D5458 001D1298  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801D545C 001D129C  7C 08 02 A6 */	mflr r0
+/* 801D5460 001D12A0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801D5464 001D12A4  39 61 00 20 */	addi r11, r1, 0x20
+/* 801D5468 001D12A8  4B E3 1E DD */	bl func_80007344
+/* 801D546C 001D12AC  7C 7D 1B 78 */	mr r29, r3
+/* 801D5470 001D12B0  7C 9F 23 78 */	mr r31, r4
+/* 801D5474 001D12B4  38 60 00 48 */	li r3, 0x48
+/* 801D5478 001D12B8  80 9D 00 04 */	lwz r4, 4(r29)
+/* 801D547C 001D12BC  4B FE A2 91 */	bl __nw__FUlRQ23mem10IAllocator
+/* 801D5480 001D12C0  7C 7E 1B 78 */	mr r30, r3
+/* 801D5484 001D12C4  2C 03 00 00 */	cmpwi r3, 0
+/* 801D5488 001D12C8  41 82 00 10 */	beq lbl_801D5498
+/* 801D548C 001D12CC  7F E4 FB 78 */	mr r4, r31
+/* 801D5490 001D12D0  4B FF F5 A9 */	bl __ct__Q25ocoll10AttackNodeFRCQ25ocoll8NodeDesc
+/* 801D5494 001D12D4  7C 7E 1B 78 */	mr r30, r3
+lbl_801D5498:
+/* 801D5498 001D12D8  38 7D 00 0C */	addi r3, r29, 0xc
+/* 801D549C 001D12DC  80 9D 00 08 */	lwz r4, 8(r29)
+/* 801D54A0 001D12E0  4B FF FE 69 */	bl __vc__Q33hel6common31Array$$0PQ25ocoll10AttackNode$$410$$1FUl
+/* 801D54A4 001D12E4  93 C3 00 00 */	stw r30, 0(r3)
+/* 801D54A8 001D12E8  80 7D 00 08 */	lwz r3, 8(r29)
+/* 801D54AC 001D12EC  38 03 00 01 */	addi r0, r3, 1
+/* 801D54B0 001D12F0  90 1D 00 08 */	stw r0, 8(r29)
+/* 801D54B4 001D12F4  39 61 00 20 */	addi r11, r1, 0x20
+/* 801D54B8 001D12F8  4B E3 1E D9 */	bl func_80007390
+/* 801D54BC 001D12FC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801D54C0 001D1300  7C 08 03 A6 */	mtlr r0
+/* 801D54C4 001D1304  38 21 00 20 */	addi r1, r1, 0x20
+/* 801D54C8 001D1308  4E 80 00 20 */	blr 
+
+.global clearNode__Q25ocoll10AttackRootFv
+clearNode__Q25ocoll10AttackRootFv:
+/* 801D54CC 001D130C  38 63 00 04 */	addi r3, r3, 4
+/* 801D54D0 001D1310  4B FF FD A0 */	b clear__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1Fv
+
+.global node__Q25ocoll10AttackRootFUl
+node__Q25ocoll10AttackRootFUl:
+/* 801D54D4 001D1314  38 63 00 04 */	addi r3, r3, 4
+/* 801D54D8 001D1318  4B FF FF 30 */	b __vc__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1FUl
+
+.global setType__Q25ocoll10AttackRootFUl
+setType__Q25ocoll10AttackRootFUl:
+/* 801D54DC 001D131C  90 83 00 38 */	stw r4, 0x38(r3)
+/* 801D54E0 001D1320  4E 80 00 20 */	blr 
+
+.global chkCollide__Q25ocoll10AttackRootFRQ25ocoll3Hit
+chkCollide__Q25ocoll10AttackRootFRQ25ocoll3Hit:
+/* 801D54E4 001D1324  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 801D54E8 001D1328  7C 08 02 A6 */	mflr r0
+/* 801D54EC 001D132C  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 801D54F0 001D1330  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 801D54F4 001D1334  4B E3 1E 35 */	bl func_80007328
+/* 801D54F8 001D1338  7C 7E 1B 78 */	mr r30, r3
+/* 801D54FC 001D133C  7C 9F 23 78 */	mr r31, r4
+/* 801D5500 001D1340  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D5504 001D1344  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D5508 001D1348  4B FF ED E1 */	bl collDataTable__Q25ocoll7ManagerCFv
+/* 801D550C 001D134C  80 9E 00 38 */	lwz r4, 0x38(r30)
+/* 801D5510 001D1350  48 00 06 B9 */	bl getAttackData__Q25ocoll13CollDataTableCFUl
+/* 801D5514 001D1354  7C 7B 1B 78 */	mr r27, r3
+/* 801D5518 001D1358  88 03 00 29 */	lbz r0, 0x29(r3)
+/* 801D551C 001D135C  2C 00 00 00 */	cmpwi r0, 0
+/* 801D5520 001D1360  40 82 00 2C */	bne lbl_801D554C
+/* 801D5524 001D1364  83 3F 00 08 */	lwz r25, 8(r31)
+/* 801D5528 001D1368  80 7E 00 00 */	lwz r3, 0(r30)
+/* 801D552C 001D136C  4B F2 B2 B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801D5530 001D1370  48 00 2D 69 */	bl teamNo__Q25ocoll5OwnerCFv
+/* 801D5534 001D1374  7C 7A 1B 78 */	mr r26, r3
+/* 801D5538 001D1378  7F 23 CB 78 */	mr r3, r25
+/* 801D553C 001D137C  48 00 2D 5D */	bl teamNo__Q25ocoll5OwnerCFv
+/* 801D5540 001D1380  7C 03 D0 40 */	cmplw r3, r26
+/* 801D5544 001D1384  40 82 00 2C */	bne lbl_801D5570
+/* 801D5548 001D1388  48 00 01 FC */	b lbl_801D5744
+lbl_801D554C:
+/* 801D554C 001D138C  83 3F 00 08 */	lwz r25, 8(r31)
+/* 801D5550 001D1390  80 7E 00 00 */	lwz r3, 0(r30)
+/* 801D5554 001D1394  4B F2 B2 8D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801D5558 001D1398  48 00 2D 41 */	bl teamNo__Q25ocoll5OwnerCFv
+/* 801D555C 001D139C  7C 7A 1B 78 */	mr r26, r3
+/* 801D5560 001D13A0  7F 23 CB 78 */	mr r3, r25
+/* 801D5564 001D13A4  48 00 2D 35 */	bl teamNo__Q25ocoll5OwnerCFv
+/* 801D5568 001D13A8  7C 03 D0 40 */	cmplw r3, r26
+/* 801D556C 001D13AC  40 82 01 D8 */	bne lbl_801D5744
+lbl_801D5570:
+/* 801D5570 001D13B0  80 7B 00 20 */	lwz r3, 0x20(r27)
+/* 801D5574 001D13B4  80 1F 00 18 */	lwz r0, 0x18(r31)
+/* 801D5578 001D13B8  7C 60 00 38 */	and r0, r3, r0
+/* 801D557C 001D13BC  2C 00 00 00 */	cmpwi r0, 0
+/* 801D5580 001D13C0  40 82 01 C4 */	bne lbl_801D5744
+/* 801D5584 001D13C4  38 60 00 01 */	li r3, 1
+/* 801D5588 001D13C8  88 1B 00 04 */	lbz r0, 4(r27)
+/* 801D558C 001D13CC  7C 63 00 30 */	slw r3, r3, r0
+/* 801D5590 001D13D0  80 1F 00 1C */	lwz r0, 0x1c(r31)
+/* 801D5594 001D13D4  7C 60 00 38 */	and r0, r3, r0
+/* 801D5598 001D13D8  2C 00 00 00 */	cmpwi r0, 0
+/* 801D559C 001D13DC  40 82 01 A8 */	bne lbl_801D5744
+/* 801D55A0 001D13E0  83 3E 00 08 */	lwz r25, 8(r30)
+/* 801D55A4 001D13E4  7F E3 FB 78 */	mr r3, r31
+/* 801D55A8 001D13E8  4B F5 4A 09 */	bl getPane__Q310homebutton3gui13PaneComponentFv
+/* 801D55AC 001D13EC  7C 7A 1B 78 */	mr r26, r3
+/* 801D55B0 001D13F0  3B 80 00 00 */	li r28, 0
+/* 801D55B4 001D13F4  48 00 01 88 */	b lbl_801D573C
+lbl_801D55B8:
+/* 801D55B8 001D13F8  38 7E 00 04 */	addi r3, r30, 4
+/* 801D55BC 001D13FC  7F 84 E3 78 */	mr r4, r28
+/* 801D55C0 001D1400  4B FF FE 49 */	bl __vc__Q23mem48ExplicitAutoDeleteArray$$0Q25ocoll10AttackNode$$410$$1FUl
+/* 801D55C4 001D1404  7C 77 1B 78 */	mr r23, r3
+/* 801D55C8 001D1408  3A C0 00 00 */	li r22, 0
+/* 801D55CC 001D140C  48 00 01 64 */	b lbl_801D5730
+lbl_801D55D0:
+/* 801D55D0 001D1410  7F E3 FB 78 */	mr r3, r31
+/* 801D55D4 001D1414  7E C4 B3 78 */	mr r4, r22
+/* 801D55D8 001D1418  48 00 0E 71 */	bl node__Q25ocoll3HitFUl
+/* 801D55DC 001D141C  3B 03 00 08 */	addi r24, r3, 8
+/* 801D55E0 001D1420  7E E3 BB 78 */	mr r3, r23
+/* 801D55E4 001D1424  7F 04 C3 78 */	mr r4, r24
+/* 801D55E8 001D1428  48 00 40 CD */	bl chkCollide__Q25ocoll5ShapeFRQ25ocoll5Shape
+/* 801D55EC 001D142C  2C 03 00 00 */	cmpwi r3, 0
+/* 801D55F0 001D1430  41 82 01 3C */	beq lbl_801D572C
+/* 801D55F4 001D1434  7F C3 F3 78 */	mr r3, r30
+/* 801D55F8 001D1438  48 00 01 CD */	bl uid__Q25ocoll10AttackRootCFv
+/* 801D55FC 001D143C  7C 65 1B 78 */	mr r5, r3
+/* 801D5600 001D1440  38 7F 00 58 */	addi r3, r31, 0x58
+/* 801D5604 001D1444  7C 86 23 78 */	mr r6, r4
+/* 801D5608 001D1448  88 FB 00 0A */	lbz r7, 0xa(r27)
+/* 801D560C 001D144C  4B FF F3 21 */	bl add__Q25ocoll9AttackLogFUxUl
+/* 801D5610 001D1450  80 7E 00 00 */	lwz r3, 0(r30)
+/* 801D5614 001D1454  4B F2 B1 CD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801D5618 001D1458  48 00 2C 59 */	bl rootUid__Q25ocoll5OwnerCFv
+/* 801D561C 001D145C  7C 9A 23 78 */	mr r26, r4
+/* 801D5620 001D1460  7C 7D 1B 78 */	mr r29, r3
+/* 801D5624 001D1464  80 7E 00 00 */	lwz r3, 0(r30)
+/* 801D5628 001D1468  4B F2 B1 B9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801D562C 001D146C  48 00 2C 35 */	bl uid__Q25ocoll5OwnerCFv
+/* 801D5630 001D1470  7C 9C 23 78 */	mr r28, r4
+/* 801D5634 001D1474  7C 7B 1B 78 */	mr r27, r3
+/* 801D5638 001D1478  38 61 00 10 */	addi r3, r1, 0x10
+/* 801D563C 001D147C  80 9E 00 00 */	lwz r4, 0(r30)
+/* 801D5640 001D1480  38 84 02 44 */	addi r4, r4, 0x244
+/* 801D5644 001D1484  4B FF F0 FD */	bl getPos__Q25ocoll12AttackCenterCFv
+/* 801D5648 001D1488  38 61 00 18 */	addi r3, r1, 0x18
+/* 801D564C 001D148C  38 81 00 10 */	addi r4, r1, 0x10
+/* 801D5650 001D1490  4B F7 63 19 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 801D5654 001D1494  38 61 00 20 */	addi r3, r1, 0x20
+/* 801D5658 001D1498  7E E4 BB 78 */	mr r4, r23
+/* 801D565C 001D149C  48 00 40 F5 */	bl collidedPoint__Q25ocoll5ShapeCFv
+/* 801D5660 001D14A0  83 3E 00 38 */	lwz r25, 0x38(r30)
+/* 801D5664 001D14A4  38 61 00 28 */	addi r3, r1, 0x28
+/* 801D5668 001D14A8  7F 04 C3 78 */	mr r4, r24
+/* 801D566C 001D14AC  48 00 40 E5 */	bl collidedPoint__Q25ocoll5ShapeCFv
+/* 801D5670 001D14B0  38 61 00 58 */	addi r3, r1, 0x58
+/* 801D5674 001D14B4  38 81 00 28 */	addi r4, r1, 0x28
+/* 801D5678 001D14B8  4B F7 62 F1 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 801D567C 001D14BC  92 C1 00 60 */	stw r22, 0x60(r1)
+/* 801D5680 001D14C0  93 21 00 64 */	stw r25, 0x64(r1)
+/* 801D5684 001D14C4  38 61 00 68 */	addi r3, r1, 0x68
+/* 801D5688 001D14C8  38 81 00 20 */	addi r4, r1, 0x20
+/* 801D568C 001D14CC  4B FE C6 21 */	bl __ct__43mint_wrapNative_helper$$0Q33hel4math7Vector2$$1FQ33hel4math7Vector2
+/* 801D5690 001D14D0  38 61 00 70 */	addi r3, r1, 0x70
+/* 801D5694 001D14D4  38 81 00 18 */	addi r4, r1, 0x18
+/* 801D5698 001D14D8  4B FE C6 15 */	bl __ct__43mint_wrapNative_helper$$0Q33hel4math7Vector2$$1FQ33hel4math7Vector2
+/* 801D569C 001D14DC  93 81 00 7C */	stw r28, 0x7c(r1)
+/* 801D56A0 001D14E0  93 61 00 78 */	stw r27, 0x78(r1)
+/* 801D56A4 001D14E4  93 41 00 84 */	stw r26, 0x84(r1)
+/* 801D56A8 001D14E8  93 A1 00 80 */	stw r29, 0x80(r1)
+/* 801D56AC 001D14EC  38 7F 02 60 */	addi r3, r31, 0x260
+/* 801D56B0 001D14F0  38 81 00 58 */	addi r4, r1, 0x58
+/* 801D56B4 001D14F4  48 00 15 E9 */	bl add__Q25ocoll9HitResultFRCQ35ocoll9HitResult5Datum
+/* 801D56B8 001D14F8  83 3F 00 24 */	lwz r25, 0x24(r31)
+/* 801D56BC 001D14FC  80 7F 00 08 */	lwz r3, 8(r31)
+/* 801D56C0 001D1500  48 00 2B B1 */	bl rootUid__Q25ocoll5OwnerCFv
+/* 801D56C4 001D1504  7C 9B 23 78 */	mr r27, r4
+/* 801D56C8 001D1508  7C 7C 1B 78 */	mr r28, r3
+/* 801D56CC 001D150C  80 7F 00 08 */	lwz r3, 8(r31)
+/* 801D56D0 001D1510  48 00 2B 91 */	bl uid__Q25ocoll5OwnerCFv
+/* 801D56D4 001D1514  7C 9D 23 78 */	mr r29, r4
+/* 801D56D8 001D1518  7C 7F 1B 78 */	mr r31, r3
+/* 801D56DC 001D151C  38 61 00 08 */	addi r3, r1, 8
+/* 801D56E0 001D1520  7F 04 C3 78 */	mr r4, r24
+/* 801D56E4 001D1524  48 00 40 6D */	bl collidedPoint__Q25ocoll5ShapeCFv
+/* 801D56E8 001D1528  80 7E 00 38 */	lwz r3, 0x38(r30)
+/* 801D56EC 001D152C  80 1E 00 34 */	lwz r0, 0x34(r30)
+/* 801D56F0 001D1530  90 01 00 30 */	stw r0, 0x30(r1)
+/* 801D56F4 001D1534  90 61 00 34 */	stw r3, 0x34(r1)
+/* 801D56F8 001D1538  38 61 00 38 */	addi r3, r1, 0x38
+/* 801D56FC 001D153C  38 81 00 08 */	addi r4, r1, 8
+/* 801D5700 001D1540  4B FE C5 AD */	bl __ct__43mint_wrapNative_helper$$0Q33hel4math7Vector2$$1FQ33hel4math7Vector2
+/* 801D5704 001D1544  93 A1 00 44 */	stw r29, 0x44(r1)
+/* 801D5708 001D1548  93 E1 00 40 */	stw r31, 0x40(r1)
+/* 801D570C 001D154C  93 61 00 4C */	stw r27, 0x4c(r1)
+/* 801D5710 001D1550  93 81 00 48 */	stw r28, 0x48(r1)
+/* 801D5714 001D1554  93 21 00 50 */	stw r25, 0x50(r1)
+/* 801D5718 001D1558  80 7E 00 00 */	lwz r3, 0(r30)
+/* 801D571C 001D155C  38 63 00 30 */	addi r3, r3, 0x30
+/* 801D5720 001D1560  38 81 00 30 */	addi r4, r1, 0x30
+/* 801D5724 001D1564  4B FF F6 B1 */	bl add__Q25ocoll12AttackResultFRCQ35ocoll12AttackResult5Datum
+/* 801D5728 001D1568  48 00 00 1C */	b lbl_801D5744
+lbl_801D572C:
+/* 801D572C 001D156C  3A D6 00 01 */	addi r22, r22, 1
+lbl_801D5730:
+/* 801D5730 001D1570  7C 16 D0 40 */	cmplw r22, r26
+/* 801D5734 001D1574  41 80 FE 9C */	blt lbl_801D55D0
+/* 801D5738 001D1578  3B 9C 00 01 */	addi r28, r28, 1
+lbl_801D573C:
+/* 801D573C 001D157C  7C 1C C8 40 */	cmplw r28, r25
+/* 801D5740 001D1580  41 80 FE 78 */	blt lbl_801D55B8
+lbl_801D5744:
+/* 801D5744 001D1584  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 801D5748 001D1588  4B E3 1C 2D */	bl func_80007374
+/* 801D574C 001D158C  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 801D5750 001D1590  7C 08 03 A6 */	mtlr r0
+/* 801D5754 001D1594  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 801D5758 001D1598  4E 80 00 20 */	blr 
+
+.global chkCollideGimmick__Q25ocoll10AttackRootFRQ25ocoll7Gimmick
+chkCollideGimmick__Q25ocoll10AttackRootFRQ25ocoll7Gimmick:
+/* 801D575C 001D159C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D5760 001D15A0  7C 08 02 A6 */	mflr r0
+/* 801D5764 001D15A4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D5768 001D15A8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801D576C 001D15AC  93 C1 00 08 */	stw r30, 8(r1)
+/* 801D5770 001D15B0  7C 7E 1B 78 */	mr r30, r3
+/* 801D5774 001D15B4  7C 9F 23 78 */	mr r31, r4
+/* 801D5778 001D15B8  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D577C 001D15BC  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D5780 001D15C0  4B FF EB 69 */	bl collDataTable__Q25ocoll7ManagerCFv
+/* 801D5784 001D15C4  80 9E 00 38 */	lwz r4, 0x38(r30)
+/* 801D5788 001D15C8  48 00 04 41 */	bl getAttackData__Q25ocoll13CollDataTableCFUl
+/* 801D578C 001D15CC  88 03 00 24 */	lbz r0, 0x24(r3)
+/* 801D5790 001D15D0  2C 00 00 00 */	cmpwi r0, 0
+/* 801D5794 001D15D4  41 82 00 18 */	beq lbl_801D57AC
+/* 801D5798 001D15D8  7F E3 FB 78 */	mr r3, r31
+/* 801D579C 001D15DC  7F C4 F3 78 */	mr r4, r30
+/* 801D57A0 001D15E0  80 BE 00 00 */	lwz r5, 0(r30)
+/* 801D57A4 001D15E4  38 A5 01 C8 */	addi r5, r5, 0x1c8
+/* 801D57A8 001D15E8  48 00 04 91 */	bl chkCollide__Q25ocoll7GimmickFRQ25ocoll10AttackRootRQ25ocoll19AttackResultGimmick
+lbl_801D57AC:
+/* 801D57AC 001D15EC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801D57B0 001D15F0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801D57B4 001D15F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D57B8 001D15F8  7C 08 03 A6 */	mtlr r0
+/* 801D57BC 001D15FC  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D57C0 001D1600  4E 80 00 20 */	blr 
+
+.global uid__Q25ocoll10AttackRootCFv
+uid__Q25ocoll10AttackRootCFv:
+/* 801D57C4 001D1604  80 83 00 00 */	lwz r4, 0(r3)
+/* 801D57C8 001D1608  80 64 00 28 */	lwz r3, 0x28(r4)
+/* 801D57CC 001D160C  80 84 00 2C */	lwz r4, 0x2c(r4)
+/* 801D57D0 001D1610  4E 80 00 20 */	blr 
+
+.global ownerUid__Q25ocoll10AttackRootCFv
+ownerUid__Q25ocoll10AttackRootCFv:
+/* 801D57D4 001D1614  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801D57D8 001D1618  7C 08 02 A6 */	mflr r0
+/* 801D57DC 001D161C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801D57E0 001D1620  80 63 00 00 */	lwz r3, 0(r3)
+/* 801D57E4 001D1624  4B F2 AF FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801D57E8 001D1628  48 00 2A 89 */	bl rootUid__Q25ocoll5OwnerCFv
+/* 801D57EC 001D162C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801D57F0 001D1630  7C 08 03 A6 */	mtlr r0
+/* 801D57F4 001D1634  38 21 00 10 */	addi r1, r1, 0x10
+/* 801D57F8 001D1638  4E 80 00 20 */	blr 

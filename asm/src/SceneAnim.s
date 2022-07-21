@@ -1,0 +1,311 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q23g3d9SceneAnimFRCQ23g3d16SceneAnimContext
+__ct__Q23g3d9SceneAnimFRCQ23g3d16SceneAnimContext:
+/* 80194634 00190474  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80194638 00190478  7C 08 02 A6 */	mflr r0
+/* 8019463C 0019047C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80194640 00190480  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80194644 00190484  93 C1 00 08 */	stw r30, 8(r1)
+/* 80194648 00190488  7C 7E 1B 78 */	mr r30, r3
+/* 8019464C 0019048C  7C 9F 23 78 */	mr r31, r4
+/* 80194650 00190490  C0 22 97 38 */	lfs f1, $$249337-_SDA2_BASE_(r2)
+/* 80194654 00190494  48 27 10 6D */	bl __ct__Q24util14AnimControllerFf
+/* 80194658 00190498  38 7E 00 10 */	addi r3, r30, 0x10
+/* 8019465C 0019049C  80 9F 00 00 */	lwz r4, 0(r31)
+/* 80194660 001904A0  38 A0 00 04 */	li r5, 4
+/* 80194664 001904A4  48 02 B0 FD */	bl __ct__Q23mem12SDKAllocatorFRQ23mem10IAllocatori
+/* 80194668 001904A8  38 00 00 00 */	li r0, 0
+/* 8019466C 001904AC  90 1E 00 28 */	stw r0, 0x28(r30)
+/* 80194670 001904B0  7F C3 F3 78 */	mr r3, r30
+/* 80194674 001904B4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80194678 001904B8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8019467C 001904BC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80194680 001904C0  7C 08 03 A6 */	mtlr r0
+/* 80194684 001904C4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80194688 001904C8  4E 80 00 20 */	blr 
+
+.global __dt__Q23g3d9SceneAnimFv
+__dt__Q23g3d9SceneAnimFv:
+/* 8019468C 001904CC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80194690 001904D0  7C 08 02 A6 */	mflr r0
+/* 80194694 001904D4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80194698 001904D8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8019469C 001904DC  93 C1 00 08 */	stw r30, 8(r1)
+/* 801946A0 001904E0  7C 7E 1B 78 */	mr r30, r3
+/* 801946A4 001904E4  7C 9F 23 78 */	mr r31, r4
+/* 801946A8 001904E8  2C 03 00 00 */	cmpwi r3, 0
+/* 801946AC 001904EC  41 82 00 1C */	beq lbl_801946C8
+/* 801946B0 001904F0  48 00 02 05 */	bl clear__Q23g3d9SceneAnimFv
+/* 801946B4 001904F4  7F E0 07 34 */	extsh r0, r31
+/* 801946B8 001904F8  2C 00 00 00 */	cmpwi r0, 0
+/* 801946BC 001904FC  40 81 00 0C */	ble lbl_801946C8
+/* 801946C0 00190500  7F C3 F3 78 */	mr r3, r30
+/* 801946C4 00190504  48 02 B0 51 */	bl __dl__FPv
+lbl_801946C8:
+/* 801946C8 00190508  7F C3 F3 78 */	mr r3, r30
+/* 801946CC 0019050C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801946D0 00190510  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801946D4 00190514  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801946D8 00190518  7C 08 03 A6 */	mtlr r0
+/* 801946DC 0019051C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801946E0 00190520  4E 80 00 20 */	blr 
+
+.global reset__Q23g3d9SceneAnimFv
+reset__Q23g3d9SceneAnimFv:
+/* 801946E4 00190524  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801946E8 00190528  7C 08 02 A6 */	mflr r0
+/* 801946EC 0019052C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801946F0 00190530  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 801946F4 00190534  7C 7F 1B 78 */	mr r31, r3
+/* 801946F8 00190538  38 61 00 08 */	addi r3, r1, 8
+/* 801946FC 0019053C  C0 22 97 38 */	lfs f1, $$249337-_SDA2_BASE_(r2)
+/* 80194700 00190540  48 27 0F C1 */	bl __ct__Q24util14AnimControllerFf
+/* 80194704 00190544  C0 01 00 08 */	lfs f0, 8(r1)
+/* 80194708 00190548  D0 1F 00 00 */	stfs f0, 0(r31)
+/* 8019470C 0019054C  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 80194710 00190550  D0 1F 00 04 */	stfs f0, 4(r31)
+/* 80194714 00190554  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80194718 00190558  D0 1F 00 08 */	stfs f0, 8(r31)
+/* 8019471C 0019055C  88 01 00 14 */	lbz r0, 0x14(r1)
+/* 80194720 00190560  98 1F 00 0C */	stb r0, 0xc(r31)
+/* 80194724 00190564  88 01 00 15 */	lbz r0, 0x15(r1)
+/* 80194728 00190568  98 1F 00 0D */	stb r0, 0xd(r31)
+/* 8019472C 0019056C  88 01 00 16 */	lbz r0, 0x16(r1)
+/* 80194730 00190570  98 1F 00 0E */	stb r0, 0xe(r31)
+/* 80194734 00190574  7F E3 FB 78 */	mr r3, r31
+/* 80194738 00190578  48 00 01 7D */	bl clear__Q23g3d9SceneAnimFv
+/* 8019473C 0019057C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80194740 00190580  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80194744 00190584  7C 08 03 A6 */	mtlr r0
+/* 80194748 00190588  38 21 00 20 */	addi r1, r1, 0x20
+/* 8019474C 0019058C  4E 80 00 20 */	blr 
+
+.global frame__Q23g3d9SceneAnimCFv
+frame__Q23g3d9SceneAnimCFv:
+/* 80194750 00190590  4B FF 28 98 */	b scale__Q36effect6detail16RequestArgOptionCFv
+
+.global setFrame__Q23g3d9SceneAnimFf
+setFrame__Q23g3d9SceneAnimFf:
+/* 80194754 00190594  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80194758 00190598  7C 08 02 A6 */	mflr r0
+/* 8019475C 0019059C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80194760 001905A0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80194764 001905A4  7C 7F 1B 78 */	mr r31, r3
+/* 80194768 001905A8  4B F9 5F 99 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+/* 8019476C 001905AC  7F E3 FB 78 */	mr r3, r31
+/* 80194770 001905B0  48 00 00 21 */	bl reflectFrameToAnim__Q23g3d9SceneAnimFv
+/* 80194774 001905B4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80194778 001905B8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8019477C 001905BC  7C 08 03 A6 */	mtlr r0
+/* 80194780 001905C0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80194784 001905C4  4E 80 00 20 */	blr 
+
+.global updateFrame__Q23g3d9SceneAnimFv
+updateFrame__Q23g3d9SceneAnimFv:
+/* 80194788 001905C8  38 80 00 00 */	li r4, 0
+/* 8019478C 001905CC  48 00 01 6C */	b updateFrameIN__Q23g3d9SceneAnimFb
+
+.global reflectFrameToAnim__Q23g3d9SceneAnimFv
+reflectFrameToAnim__Q23g3d9SceneAnimFv:
+/* 80194790 001905D0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80194794 001905D4  7C 08 02 A6 */	mflr r0
+/* 80194798 001905D8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8019479C 001905DC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801947A0 001905E0  7C 7F 1B 78 */	mr r31, r3
+/* 801947A4 001905E4  4B FF 28 45 */	bl scale__Q36effect6detail16RequestArgOptionCFv
+/* 801947A8 001905E8  80 7F 00 28 */	lwz r3, 0x28(r31)
+/* 801947AC 001905EC  81 83 00 00 */	lwz r12, 0(r3)
+/* 801947B0 001905F0  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 801947B4 001905F4  7D 89 03 A6 */	mtctr r12
+/* 801947B8 001905F8  4E 80 04 21 */	bctrl 
+/* 801947BC 001905FC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801947C0 00190600  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801947C4 00190604  7C 08 03 A6 */	mtlr r0
+/* 801947C8 00190608  38 21 00 10 */	addi r1, r1, 0x10
+/* 801947CC 0019060C  4E 80 00 20 */	blr 
+
+.global start__Q23g3d9SceneAnimFb
+start__Q23g3d9SceneAnimFb:
+/* 801947D0 00190610  48 27 0F C8 */	b start__Q24util14AnimControllerFb
+
+.global stop__Q23g3d9SceneAnimFv
+stop__Q23g3d9SceneAnimFv:
+/* 801947D4 00190614  48 27 0F DC */	b stop__Q24util14AnimControllerFv
+
+.global create__Q23g3d9SceneAnimFRCQ23g3d15ResFileAccessorPCc
+create__Q23g3d9SceneAnimFRCQ23g3d15ResFileAccessorPCc:
+/* 801947D8 00190618  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801947DC 0019061C  7C 08 02 A6 */	mflr r0
+/* 801947E0 00190620  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801947E4 00190624  39 61 00 30 */	addi r11, r1, 0x30
+/* 801947E8 00190628  4B E7 2B 5D */	bl func_80007344
+/* 801947EC 0019062C  7C 7D 1B 78 */	mr r29, r3
+/* 801947F0 00190630  7C 9E 23 78 */	mr r30, r4
+/* 801947F4 00190634  7C BF 2B 78 */	mr r31, r5
+/* 801947F8 00190638  48 00 00 BD */	bl clear__Q23g3d9SceneAnimFv
+/* 801947FC 0019063C  7F C3 F3 78 */	mr r3, r30
+/* 80194800 00190640  7F E4 FB 78 */	mr r4, r31
+/* 80194804 00190644  4B FF ED 05 */	bl animScene__Q23g3d15ResFileAccessorCFPCc
+/* 80194808 00190648  90 61 00 10 */	stw r3, 0x10(r1)
+/* 8019480C 0019064C  2C 03 00 00 */	cmpwi r3, 0
+/* 80194810 00190650  40 82 00 0C */	bne lbl_8019481C
+/* 80194814 00190654  38 60 00 00 */	li r3, 0
+/* 80194818 00190658  48 00 00 84 */	b lbl_8019489C
+lbl_8019481C:
+/* 8019481C 0019065C  90 61 00 08 */	stw r3, 8(r1)
+/* 80194820 00190660  38 61 00 10 */	addi r3, r1, 0x10
+/* 80194824 00190664  38 81 00 08 */	addi r4, r1, 8
+/* 80194828 00190668  4B F3 EA 69 */	bl Bind__Q34nw4r3g3d9ResAnmScnFQ34nw4r3g3d9ResAnmScn
+/* 8019482C 0019066C  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 80194830 00190670  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80194834 00190674  38 7D 00 10 */	addi r3, r29, 0x10
+/* 80194838 00190678  48 02 94 21 */	bl heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+/* 8019483C 0019067C  38 80 00 00 */	li r4, 0
+/* 80194840 00190680  38 A1 00 0C */	addi r5, r1, 0xc
+/* 80194844 00190684  38 C0 00 01 */	li r6, 1
+/* 80194848 00190688  4B F4 66 29 */	bl Construct__Q34nw4r3g3d9AnmScnResFP12MEMAllocatorPUlQ34nw4r3g3d9ResAnmScnb
+/* 8019484C 0019068C  90 7D 00 28 */	stw r3, 0x28(r29)
+/* 80194850 00190690  7F A3 EB 78 */	mr r3, r29
+/* 80194854 00190694  4B FF 27 95 */	bl scale__Q36effect6detail16RequestArgOptionCFv
+/* 80194858 00190698  80 7D 00 28 */	lwz r3, 0x28(r29)
+/* 8019485C 0019069C  81 83 00 00 */	lwz r12, 0(r3)
+/* 80194860 001906A0  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 80194864 001906A4  7D 89 03 A6 */	mtctr r12
+/* 80194868 001906A8  4E 80 04 21 */	bctrl 
+/* 8019486C 001906AC  7F A3 EB 78 */	mr r3, r29
+/* 80194870 001906B0  48 00 00 E1 */	bl selectTotalFrame__Q23g3d9SceneAnimCFv
+/* 80194874 001906B4  C8 22 97 40 */	lfd f1, $$249406-_SDA2_BASE_(r2)
+/* 80194878 001906B8  6C 60 80 00 */	xoris r0, r3, 0x8000
+/* 8019487C 001906BC  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80194880 001906C0  3C 00 43 30 */	lis r0, 0x4330
+/* 80194884 001906C4  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80194888 001906C8  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 8019488C 001906CC  EC 20 08 28 */	fsubs f1, f0, f1
+/* 80194890 001906D0  7F A3 EB 78 */	mr r3, r29
+/* 80194894 001906D4  48 00 3D 2D */	bl __ct__25mint_wrapNative_helper$$0f$$1Ff
+/* 80194898 001906D8  38 60 00 01 */	li r3, 1
+lbl_8019489C:
+/* 8019489C 001906DC  39 61 00 30 */	addi r11, r1, 0x30
+/* 801948A0 001906E0  4B E7 2A F1 */	bl func_80007390
+/* 801948A4 001906E4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801948A8 001906E8  7C 08 03 A6 */	mtlr r0
+/* 801948AC 001906EC  38 21 00 30 */	addi r1, r1, 0x30
+/* 801948B0 001906F0  4E 80 00 20 */	blr 
+
+.global clear__Q23g3d9SceneAnimFv
+clear__Q23g3d9SceneAnimFv:
+/* 801948B4 001906F4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801948B8 001906F8  7C 08 02 A6 */	mflr r0
+/* 801948BC 001906FC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801948C0 00190700  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801948C4 00190704  7C 7F 1B 78 */	mr r31, r3
+/* 801948C8 00190708  48 27 0E E9 */	bl stop__Q24util14AnimControllerFv
+/* 801948CC 0019070C  80 7F 00 28 */	lwz r3, 0x28(r31)
+/* 801948D0 00190710  2C 03 00 00 */	cmpwi r3, 0
+/* 801948D4 00190714  41 82 00 10 */	beq lbl_801948E4
+/* 801948D8 00190718  4B F4 74 89 */	bl Destroy__Q34nw4r3g3d6G3dObjFv
+/* 801948DC 0019071C  38 00 00 00 */	li r0, 0
+/* 801948E0 00190720  90 1F 00 28 */	stw r0, 0x28(r31)
+lbl_801948E4:
+/* 801948E4 00190724  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801948E8 00190728  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801948EC 0019072C  7C 08 03 A6 */	mtlr r0
+/* 801948F0 00190730  38 21 00 10 */	addi r1, r1, 0x10
+/* 801948F4 00190734  4E 80 00 20 */	blr 
+
+.global updateFrameIN__Q23g3d9SceneAnimFb
+updateFrameIN__Q23g3d9SceneAnimFb:
+/* 801948F8 00190738  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801948FC 0019073C  7C 08 02 A6 */	mflr r0
+/* 80194900 00190740  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80194904 00190744  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80194908 00190748  93 C1 00 08 */	stw r30, 8(r1)
+/* 8019490C 0019074C  7C 7E 1B 78 */	mr r30, r3
+/* 80194910 00190750  7C 9F 23 78 */	mr r31, r4
+/* 80194914 00190754  48 04 50 6D */	bl isStoppedNormal__Q25ostop5ActorCFv
+/* 80194918 00190758  2C 03 00 00 */	cmpwi r3, 0
+/* 8019491C 0019075C  41 82 00 1C */	beq lbl_80194938
+/* 80194920 00190760  7F C3 F3 78 */	mr r3, r30
+/* 80194924 00190764  48 27 0D D9 */	bl updateFrame__Q24util14AnimControllerFv
+/* 80194928 00190768  2C 1F 00 00 */	cmpwi r31, 0
+/* 8019492C 0019076C  40 82 00 0C */	bne lbl_80194938
+/* 80194930 00190770  7F C3 F3 78 */	mr r3, r30
+/* 80194934 00190774  4B FF FE 5D */	bl reflectFrameToAnim__Q23g3d9SceneAnimFv
+lbl_80194938:
+/* 80194938 00190778  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8019493C 0019077C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80194940 00190780  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80194944 00190784  7C 08 03 A6 */	mtlr r0
+/* 80194948 00190788  38 21 00 10 */	addi r1, r1, 0x10
+/* 8019494C 0019078C  4E 80 00 20 */	blr 
+
+.global selectTotalFrame__Q23g3d9SceneAnimCFv
+selectTotalFrame__Q23g3d9SceneAnimCFv:
+/* 80194950 00190790  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80194954 00190794  7C 08 02 A6 */	mflr r0
+/* 80194958 00190798  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8019495C 0019079C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80194960 001907A0  7C 7F 1B 78 */	mr r31, r3
+/* 80194964 001907A4  38 00 00 00 */	li r0, 0
+/* 80194968 001907A8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8019496C 001907AC  4B FF B2 ED */	bl wasSetParent__Q23g3d5ModelCFv
+/* 80194970 001907B0  2C 03 00 00 */	cmpwi r3, 0
+/* 80194974 001907B4  41 82 00 60 */	beq lbl_801949D4
+/* 80194978 001907B8  80 7F 00 28 */	lwz r3, 0x28(r31)
+/* 8019497C 001907BC  83 E3 00 20 */	lwz r31, 0x20(r3)
+/* 80194980 001907C0  2C 1F 00 00 */	cmpwi r31, 0
+/* 80194984 001907C4  40 82 00 2C */	bne lbl_801949B0
+/* 80194988 001907C8  3C 60 80 45 */	lis r3, $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv@ha
+/* 8019498C 001907CC  38 63 49 78 */	addi r3, r3, $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv@l
+/* 80194990 001907D0  38 80 00 28 */	li r4, 0x28
+/* 80194994 001907D4  3C A0 80 45 */	lis r5, $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20@ha
+/* 80194998 001907D8  38 A5 49 5C */	addi r5, r5, $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20@l
+/* 8019499C 001907DC  3C C0 80 45 */	lis r6, $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv@ha
+/* 801949A0 001907E0  38 C6 49 50 */	addi r6, r6, $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv@l
+/* 801949A4 001907E4  38 ED 89 D8 */	addi r7, r13, __FUNCTION__$36033-_SDA_BASE_
+/* 801949A8 001907E8  4C C6 31 82 */	crclr 6
+/* 801949AC 001907EC  4B F9 39 A5 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_801949B0:
+/* 801949B0 001907F0  A0 7F 00 34 */	lhz r3, 0x34(r31)
+/* 801949B4 001907F4  90 61 00 08 */	stw r3, 8(r1)
+/* 801949B8 001907F8  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 801949BC 001907FC  7C 00 18 00 */	cmpw r0, r3
+/* 801949C0 00190800  38 61 00 0C */	addi r3, r1, 0xc
+/* 801949C4 00190804  40 80 00 08 */	bge lbl_801949CC
+/* 801949C8 00190808  38 61 00 08 */	addi r3, r1, 8
+lbl_801949CC:
+/* 801949CC 0019080C  80 03 00 00 */	lwz r0, 0(r3)
+/* 801949D0 00190810  90 01 00 0C */	stw r0, 0xc(r1)
+lbl_801949D4:
+/* 801949D4 00190814  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 801949D8 00190818  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801949DC 0019081C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801949E0 00190820  7C 08 03 A6 */	mtlr r0
+/* 801949E4 00190824  38 21 00 20 */	addi r1, r1, 0x20
+/* 801949E8 00190828  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv
+$$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmScnFv:
+	.incbin "baserom.dol", 0x450A50, 0xC
+.global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20
+$$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv$$20:
+	.incbin "baserom.dol", 0x450A5C, 0x1C
+.global $$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv
+$$2STRING$$2ref__Q34nw4r3g3d9ResAnmScnCFv:
+	.incbin "baserom.dol", 0x450A78, 0x18
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global __FUNCTION__$36033
+__FUNCTION__$36033:
+	.incbin "baserom.dol", 0x4931D8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$249337
+$$249337:
+	.incbin "baserom.dol", 0x49A1F8, 0x8
+.global $$249406
+$$249406:
+	.incbin "baserom.dol", 0x49A200, 0x8

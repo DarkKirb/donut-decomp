@@ -1,0 +1,397 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q53scn4step4info5lvmap14SphereCompleteFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component
+__ct__Q53scn4step4info5lvmap14SphereCompleteFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component:
+/* 803BF878 003BB6B8  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 803BF87C 003BB6BC  7C 08 02 A6 */	mflr r0
+/* 803BF880 003BB6C0  90 01 00 94 */	stw r0, 0x94(r1)
+/* 803BF884 003BB6C4  39 61 00 90 */	addi r11, r1, 0x90
+/* 803BF888 003BB6C8  4B C4 7A BD */	bl func_80007344
+/* 803BF88C 003BB6CC  7C 7D 1B 78 */	mr r29, r3
+/* 803BF890 003BB6D0  7C 80 23 78 */	mr r0, r4
+/* 803BF894 003BB6D4  7C BE 2B 78 */	mr r30, r5
+/* 803BF898 003BB6D8  90 C3 00 00 */	stw r6, 0(r3)
+/* 803BF89C 003BB6DC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803BF8A0 003BB6E0  3C 80 80 49 */	lis r4, $$253706@ha
+/* 803BF8A4 003BB6E4  38 84 1A B8 */	addi r4, r4, $$253706@l
+/* 803BF8A8 003BB6E8  3C A0 80 49 */	lis r5, $$253707@ha
+/* 803BF8AC 003BB6EC  38 A5 1A C8 */	addi r5, r5, $$253707@l
+/* 803BF8B0 003BB6F0  7C 06 03 78 */	mr r6, r0
+/* 803BF8B4 003BB6F4  4B DE E4 B1 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 803BF8B8 003BB6F8  7C 64 1B 78 */	mr r4, r3
+/* 803BF8BC 003BB6FC  38 7D 00 04 */	addi r3, r29, 4
+/* 803BF8C0 003BB700  4B DE C8 D1 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 803BF8C4 003BB704  C0 02 DA 20 */	lfs f0, $$253708-_SDA2_BASE_(r2)
+/* 803BF8C8 003BB708  D0 1D 01 DC */	stfs f0, 0x1dc(r29)
+/* 803BF8CC 003BB70C  D0 1D 01 D8 */	stfs f0, 0x1d8(r29)
+/* 803BF8D0 003BB710  D0 1D 01 D4 */	stfs f0, 0x1d4(r29)
+/* 803BF8D4 003BB714  3B E0 00 00 */	li r31, 0
+/* 803BF8D8 003BB718  9B FD 01 E0 */	stb r31, 0x1e0(r29)
+/* 803BF8DC 003BB71C  38 7D 01 E4 */	addi r3, r29, 0x1e4
+/* 803BF8E0 003BB720  48 04 31 8D */	bl __ct__Q23snd11SERequestorFv
+/* 803BF8E4 003BB724  93 FD 02 58 */	stw r31, 0x258(r29)
+/* 803BF8E8 003BB728  93 FD 02 5C */	stw r31, 0x25c(r29)
+/* 803BF8EC 003BB72C  38 7D 00 04 */	addi r3, r29, 4
+/* 803BF8F0 003BB730  7F C4 F3 78 */	mr r4, r30
+/* 803BF8F4 003BB734  4B DE D8 45 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 803BF8F8 003BB738  38 61 00 08 */	addi r3, r1, 8
+/* 803BF8FC 003BB73C  38 9D 00 04 */	addi r4, r29, 4
+/* 803BF900 003BB740  4B DE D4 C5 */	bl rootPane__Q23lyt6LayoutFv
+/* 803BF904 003BB744  38 61 00 08 */	addi r3, r1, 8
+/* 803BF908 003BB748  4B DE 82 21 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BF90C 003BB74C  38 61 00 08 */	addi r3, r1, 8
+/* 803BF910 003BB750  38 80 FF FF */	li r4, -1
+/* 803BF914 003BB754  4B DB 89 0D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BF918 003BB758  7F A3 EB 78 */	mr r3, r29
+/* 803BF91C 003BB75C  39 61 00 90 */	addi r11, r1, 0x90
+/* 803BF920 003BB760  4B C4 7A 71 */	bl func_80007390
+/* 803BF924 003BB764  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 803BF928 003BB768  7C 08 03 A6 */	mtlr r0
+/* 803BF92C 003BB76C  38 21 00 90 */	addi r1, r1, 0x90
+/* 803BF930 003BB770  4E 80 00 20 */	blr 
+
+.global appear__Q53scn4step4info5lvmap14SphereCompleteFQ27storage14ChallengeGradeQ33hel4math7Vector3
+appear__Q53scn4step4info5lvmap14SphereCompleteFQ27storage14ChallengeGradeQ33hel4math7Vector3:
+/* 803BF934 003BB774  94 21 FE F0 */	stwu r1, -0x110(r1)
+/* 803BF938 003BB778  7C 08 02 A6 */	mflr r0
+/* 803BF93C 003BB77C  90 01 01 14 */	stw r0, 0x114(r1)
+/* 803BF940 003BB780  39 61 01 10 */	addi r11, r1, 0x110
+/* 803BF944 003BB784  4B C4 79 FD */	bl func_80007340
+/* 803BF948 003BB788  7C 7C 1B 78 */	mr r28, r3
+/* 803BF94C 003BB78C  7C 9D 23 78 */	mr r29, r4
+/* 803BF950 003BB790  7C BE 2B 78 */	mr r30, r5
+/* 803BF954 003BB794  3C 60 80 49 */	lis r3, $$253706@ha
+/* 803BF958 003BB798  3B E3 1A B8 */	addi r31, r3, $$253706@l
+/* 803BF95C 003BB79C  38 61 00 E4 */	addi r3, r1, 0xe4
+/* 803BF960 003BB7A0  38 9C 00 04 */	addi r4, r28, 4
+/* 803BF964 003BB7A4  4B DE D4 61 */	bl rootPane__Q23lyt6LayoutFv
+/* 803BF968 003BB7A8  38 61 00 E4 */	addi r3, r1, 0xe4
+/* 803BF96C 003BB7AC  4B DE 82 A5 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BF970 003BB7B0  38 61 00 E4 */	addi r3, r1, 0xe4
+/* 803BF974 003BB7B4  38 80 FF FF */	li r4, -1
+/* 803BF978 003BB7B8  4B DB 88 A9 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BF97C 003BB7BC  38 7C 00 04 */	addi r3, r28, 4
+/* 803BF980 003BB7C0  38 8D D8 E8 */	addi r4, r13, $$253755-_SDA_BASE_
+/* 803BF984 003BB7C4  4B DE D6 11 */	bl play__Q23lyt6LayoutFPCc
+/* 803BF988 003BB7C8  38 00 00 0A */	li r0, 0xa
+/* 803BF98C 003BB7CC  90 1C 02 58 */	stw r0, 0x258(r28)
+/* 803BF990 003BB7D0  C0 1E 00 00 */	lfs f0, 0(r30)
+/* 803BF994 003BB7D4  D0 1C 01 D4 */	stfs f0, 0x1d4(r28)
+/* 803BF998 003BB7D8  C0 1E 00 04 */	lfs f0, 4(r30)
+/* 803BF99C 003BB7DC  D0 1C 01 D8 */	stfs f0, 0x1d8(r28)
+/* 803BF9A0 003BB7E0  C0 1E 00 08 */	lfs f0, 8(r30)
+/* 803BF9A4 003BB7E4  D0 1C 01 DC */	stfs f0, 0x1dc(r28)
+/* 803BF9A8 003BB7E8  38 61 00 D0 */	addi r3, r1, 0xd0
+/* 803BF9AC 003BB7EC  38 9C 00 04 */	addi r4, r28, 4
+/* 803BF9B0 003BB7F0  38 BF 00 20 */	addi r5, r31, 0x20
+/* 803BF9B4 003BB7F4  4B DE D4 5D */	bl pane__Q23lyt6LayoutFPCc
+/* 803BF9B8 003BB7F8  38 61 00 D0 */	addi r3, r1, 0xd0
+/* 803BF9BC 003BB7FC  4B DE 81 6D */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BF9C0 003BB800  38 61 00 D0 */	addi r3, r1, 0xd0
+/* 803BF9C4 003BB804  38 80 FF FF */	li r4, -1
+/* 803BF9C8 003BB808  4B DB 88 59 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BF9CC 003BB80C  38 61 00 BC */	addi r3, r1, 0xbc
+/* 803BF9D0 003BB810  38 9C 00 04 */	addi r4, r28, 4
+/* 803BF9D4 003BB814  38 BF 00 30 */	addi r5, r31, 0x30
+/* 803BF9D8 003BB818  4B DE D4 39 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BF9DC 003BB81C  38 61 00 BC */	addi r3, r1, 0xbc
+/* 803BF9E0 003BB820  4B DE 81 49 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BF9E4 003BB824  38 61 00 BC */	addi r3, r1, 0xbc
+/* 803BF9E8 003BB828  38 80 FF FF */	li r4, -1
+/* 803BF9EC 003BB82C  4B DB 88 35 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BF9F0 003BB830  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 803BF9F4 003BB834  38 9C 00 04 */	addi r4, r28, 4
+/* 803BF9F8 003BB838  38 BF 00 40 */	addi r5, r31, 0x40
+/* 803BF9FC 003BB83C  4B DE D4 15 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFA00 003BB840  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 803BFA04 003BB844  4B DE 81 25 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BFA08 003BB848  38 61 00 A8 */	addi r3, r1, 0xa8
+/* 803BFA0C 003BB84C  38 80 FF FF */	li r4, -1
+/* 803BFA10 003BB850  4B DB 88 11 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFA14 003BB854  38 61 00 94 */	addi r3, r1, 0x94
+/* 803BFA18 003BB858  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFA1C 003BB85C  38 BF 00 50 */	addi r5, r31, 0x50
+/* 803BFA20 003BB860  4B DE D3 F1 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFA24 003BB864  38 61 00 94 */	addi r3, r1, 0x94
+/* 803BFA28 003BB868  4B DE 81 01 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BFA2C 003BB86C  38 61 00 94 */	addi r3, r1, 0x94
+/* 803BFA30 003BB870  38 80 FF FF */	li r4, -1
+/* 803BFA34 003BB874  4B DB 87 ED */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFA38 003BB878  38 61 00 80 */	addi r3, r1, 0x80
+/* 803BFA3C 003BB87C  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFA40 003BB880  38 BF 00 60 */	addi r5, r31, 0x60
+/* 803BFA44 003BB884  4B DE D3 CD */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFA48 003BB888  38 61 00 80 */	addi r3, r1, 0x80
+/* 803BFA4C 003BB88C  4B DE 80 DD */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BFA50 003BB890  38 61 00 80 */	addi r3, r1, 0x80
+/* 803BFA54 003BB894  38 80 FF FF */	li r4, -1
+/* 803BFA58 003BB898  4B DB 87 C9 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFA5C 003BB89C  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803BFA60 003BB8A0  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFA64 003BB8A4  38 BF 00 6C */	addi r5, r31, 0x6c
+/* 803BFA68 003BB8A8  4B DE D3 A9 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFA6C 003BB8AC  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803BFA70 003BB8B0  4B DE 80 B9 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BFA74 003BB8B4  38 61 00 6C */	addi r3, r1, 0x6c
+/* 803BFA78 003BB8B8  38 80 FF FF */	li r4, -1
+/* 803BFA7C 003BB8BC  4B DB 87 A5 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFA80 003BB8C0  2C 1D 00 01 */	cmpwi r29, 1
+/* 803BFA84 003BB8C4  41 82 00 28 */	beq lbl_803BFAAC
+/* 803BFA88 003BB8C8  2C 1D 00 02 */	cmpwi r29, 2
+/* 803BFA8C 003BB8CC  41 82 00 48 */	beq lbl_803BFAD4
+/* 803BFA90 003BB8D0  2C 1D 00 03 */	cmpwi r29, 3
+/* 803BFA94 003BB8D4  41 82 00 68 */	beq lbl_803BFAFC
+/* 803BFA98 003BB8D8  2C 1D 00 04 */	cmpwi r29, 4
+/* 803BFA9C 003BB8DC  41 82 00 88 */	beq lbl_803BFB24
+/* 803BFAA0 003BB8E0  2C 1D 00 05 */	cmpwi r29, 5
+/* 803BFAA4 003BB8E4  41 82 00 A8 */	beq lbl_803BFB4C
+/* 803BFAA8 003BB8E8  48 00 00 C8 */	b lbl_803BFB70
+lbl_803BFAAC:
+/* 803BFAAC 003BB8EC  38 61 00 58 */	addi r3, r1, 0x58
+/* 803BFAB0 003BB8F0  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFAB4 003BB8F4  38 BF 00 20 */	addi r5, r31, 0x20
+/* 803BFAB8 003BB8F8  4B DE D3 59 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFABC 003BB8FC  38 61 00 58 */	addi r3, r1, 0x58
+/* 803BFAC0 003BB900  4B DE 81 51 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BFAC4 003BB904  38 61 00 58 */	addi r3, r1, 0x58
+/* 803BFAC8 003BB908  38 80 FF FF */	li r4, -1
+/* 803BFACC 003BB90C  4B DB 87 55 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFAD0 003BB910  48 00 00 A0 */	b lbl_803BFB70
+lbl_803BFAD4:
+/* 803BFAD4 003BB914  38 61 00 44 */	addi r3, r1, 0x44
+/* 803BFAD8 003BB918  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFADC 003BB91C  38 BF 00 30 */	addi r5, r31, 0x30
+/* 803BFAE0 003BB920  4B DE D3 31 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFAE4 003BB924  38 61 00 44 */	addi r3, r1, 0x44
+/* 803BFAE8 003BB928  4B DE 81 29 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BFAEC 003BB92C  38 61 00 44 */	addi r3, r1, 0x44
+/* 803BFAF0 003BB930  38 80 FF FF */	li r4, -1
+/* 803BFAF4 003BB934  4B DB 87 2D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFAF8 003BB938  48 00 00 78 */	b lbl_803BFB70
+lbl_803BFAFC:
+/* 803BFAFC 003BB93C  38 61 00 30 */	addi r3, r1, 0x30
+/* 803BFB00 003BB940  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFB04 003BB944  38 BF 00 40 */	addi r5, r31, 0x40
+/* 803BFB08 003BB948  4B DE D3 09 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFB0C 003BB94C  38 61 00 30 */	addi r3, r1, 0x30
+/* 803BFB10 003BB950  4B DE 81 01 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BFB14 003BB954  38 61 00 30 */	addi r3, r1, 0x30
+/* 803BFB18 003BB958  38 80 FF FF */	li r4, -1
+/* 803BFB1C 003BB95C  4B DB 87 05 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFB20 003BB960  48 00 00 50 */	b lbl_803BFB70
+lbl_803BFB24:
+/* 803BFB24 003BB964  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803BFB28 003BB968  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFB2C 003BB96C  38 BF 00 50 */	addi r5, r31, 0x50
+/* 803BFB30 003BB970  4B DE D2 E1 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFB34 003BB974  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803BFB38 003BB978  4B DE 80 D9 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BFB3C 003BB97C  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803BFB40 003BB980  38 80 FF FF */	li r4, -1
+/* 803BFB44 003BB984  4B DB 86 DD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFB48 003BB988  48 00 00 28 */	b lbl_803BFB70
+lbl_803BFB4C:
+/* 803BFB4C 003BB98C  38 61 00 08 */	addi r3, r1, 8
+/* 803BFB50 003BB990  38 9C 00 04 */	addi r4, r28, 4
+/* 803BFB54 003BB994  38 BF 00 60 */	addi r5, r31, 0x60
+/* 803BFB58 003BB998  4B DE D2 B9 */	bl pane__Q23lyt6LayoutFPCc
+/* 803BFB5C 003BB99C  38 61 00 08 */	addi r3, r1, 8
+/* 803BFB60 003BB9A0  4B DE 80 B1 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803BFB64 003BB9A4  38 61 00 08 */	addi r3, r1, 8
+/* 803BFB68 003BB9A8  38 80 FF FF */	li r4, -1
+/* 803BFB6C 003BB9AC  4B DB 86 B5 */	bl __dt__Q23lyt12PaneAccessorFv
+lbl_803BFB70:
+/* 803BFB70 003BB9B0  38 00 00 01 */	li r0, 1
+/* 803BFB74 003BB9B4  90 1C 02 5C */	stw r0, 0x25c(r28)
+/* 803BFB78 003BB9B8  39 61 01 10 */	addi r11, r1, 0x110
+/* 803BFB7C 003BB9BC  4B C4 78 11 */	bl func_8000738C
+/* 803BFB80 003BB9C0  80 01 01 14 */	lwz r0, 0x114(r1)
+/* 803BFB84 003BB9C4  7C 08 03 A6 */	mtlr r0
+/* 803BFB88 003BB9C8  38 21 01 10 */	addi r1, r1, 0x110
+/* 803BFB8C 003BB9CC  4E 80 00 20 */	blr 
+
+.global disappear__Q53scn4step4info5lvmap14SphereCompleteFv
+disappear__Q53scn4step4info5lvmap14SphereCompleteFv:
+/* 803BFB90 003BB9D0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803BFB94 003BB9D4  7C 08 02 A6 */	mflr r0
+/* 803BFB98 003BB9D8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803BFB9C 003BB9DC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803BFBA0 003BB9E0  7C 7F 1B 78 */	mr r31, r3
+/* 803BFBA4 003BB9E4  38 63 00 04 */	addi r3, r3, 4
+/* 803BFBA8 003BB9E8  3C 80 80 49 */	lis r4, $$253767@ha
+/* 803BFBAC 003BB9EC  38 84 1B 34 */	addi r4, r4, $$253767@l
+/* 803BFBB0 003BB9F0  4B DE D3 E5 */	bl play__Q23lyt6LayoutFPCc
+/* 803BFBB4 003BB9F4  38 00 00 03 */	li r0, 3
+/* 803BFBB8 003BB9F8  90 1F 02 5C */	stw r0, 0x25c(r31)
+/* 803BFBBC 003BB9FC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803BFBC0 003BBA00  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803BFBC4 003BBA04  7C 08 03 A6 */	mtlr r0
+/* 803BFBC8 003BBA08  38 21 00 10 */	addi r1, r1, 0x10
+/* 803BFBCC 003BBA0C  4E 80 00 20 */	blr 
+
+.global updateFrame__Q53scn4step4info5lvmap14SphereCompleteFv
+updateFrame__Q53scn4step4info5lvmap14SphereCompleteFv:
+/* 803BFBD0 003BBA10  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803BFBD4 003BBA14  7C 08 02 A6 */	mflr r0
+/* 803BFBD8 003BBA18  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803BFBDC 003BBA1C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803BFBE0 003BBA20  7C 7F 1B 78 */	mr r31, r3
+/* 803BFBE4 003BBA24  88 03 01 E0 */	lbz r0, 0x1e0(r3)
+/* 803BFBE8 003BBA28  2C 00 00 00 */	cmpwi r0, 0
+/* 803BFBEC 003BBA2C  40 82 00 0C */	bne lbl_803BFBF8
+/* 803BFBF0 003BBA30  38 00 00 01 */	li r0, 1
+/* 803BFBF4 003BBA34  98 03 01 E0 */	stb r0, 0x1e0(r3)
+lbl_803BFBF8:
+/* 803BFBF8 003BBA38  80 83 02 58 */	lwz r4, 0x258(r3)
+/* 803BFBFC 003BBA3C  2C 04 00 00 */	cmpwi r4, 0
+/* 803BFC00 003BBA40  41 82 00 0C */	beq lbl_803BFC0C
+/* 803BFC04 003BBA44  38 04 FF FF */	addi r0, r4, -1
+/* 803BFC08 003BBA48  90 03 02 58 */	stw r0, 0x258(r3)
+lbl_803BFC0C:
+/* 803BFC0C 003BBA4C  38 63 00 04 */	addi r3, r3, 4
+/* 803BFC10 003BBA50  4B DE D4 A9 */	bl updateFrame__Q23lyt6LayoutFv
+/* 803BFC14 003BBA54  80 1F 02 5C */	lwz r0, 0x25c(r31)
+/* 803BFC18 003BBA58  2C 00 00 01 */	cmpwi r0, 1
+/* 803BFC1C 003BBA5C  41 82 00 10 */	beq lbl_803BFC2C
+/* 803BFC20 003BBA60  2C 00 00 03 */	cmpwi r0, 3
+/* 803BFC24 003BBA64  41 82 00 30 */	beq lbl_803BFC54
+/* 803BFC28 003BBA68  48 00 00 64 */	b lbl_803BFC8C
+lbl_803BFC2C:
+/* 803BFC2C 003BBA6C  38 7F 00 04 */	addi r3, r31, 4
+/* 803BFC30 003BBA70  4B DE D4 E9 */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803BFC34 003BBA74  2C 03 00 00 */	cmpwi r3, 0
+/* 803BFC38 003BBA78  41 82 00 54 */	beq lbl_803BFC8C
+/* 803BFC3C 003BBA7C  38 7F 00 04 */	addi r3, r31, 4
+/* 803BFC40 003BBA80  38 8D D8 F0 */	addi r4, r13, $$253778-_SDA_BASE_
+/* 803BFC44 003BBA84  4B DE D3 51 */	bl play__Q23lyt6LayoutFPCc
+/* 803BFC48 003BBA88  38 00 00 02 */	li r0, 2
+/* 803BFC4C 003BBA8C  90 1F 02 5C */	stw r0, 0x25c(r31)
+/* 803BFC50 003BBA90  48 00 00 3C */	b lbl_803BFC8C
+lbl_803BFC54:
+/* 803BFC54 003BBA94  38 7F 00 04 */	addi r3, r31, 4
+/* 803BFC58 003BBA98  4B DE D4 C1 */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803BFC5C 003BBA9C  2C 03 00 00 */	cmpwi r3, 0
+/* 803BFC60 003BBAA0  41 82 00 2C */	beq lbl_803BFC8C
+/* 803BFC64 003BBAA4  38 61 00 08 */	addi r3, r1, 8
+/* 803BFC68 003BBAA8  38 9F 00 04 */	addi r4, r31, 4
+/* 803BFC6C 003BBAAC  4B DE D1 59 */	bl rootPane__Q23lyt6LayoutFv
+/* 803BFC70 003BBAB0  38 61 00 08 */	addi r3, r1, 8
+/* 803BFC74 003BBAB4  4B DE 7E B5 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803BFC78 003BBAB8  38 61 00 08 */	addi r3, r1, 8
+/* 803BFC7C 003BBABC  38 80 FF FF */	li r4, -1
+/* 803BFC80 003BBAC0  4B DB 85 A1 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFC84 003BBAC4  38 00 00 00 */	li r0, 0
+/* 803BFC88 003BBAC8  90 1F 02 5C */	stw r0, 0x25c(r31)
+lbl_803BFC8C:
+/* 803BFC8C 003BBACC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803BFC90 003BBAD0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803BFC94 003BBAD4  7C 08 03 A6 */	mtlr r0
+/* 803BFC98 003BBAD8  38 21 00 30 */	addi r1, r1, 0x30
+/* 803BFC9C 003BBADC  4E 80 00 20 */	blr 
+
+.global constraintPos__Q53scn4step4info5lvmap14SphereCompleteFv
+constraintPos__Q53scn4step4info5lvmap14SphereCompleteFv:
+/* 803BFCA0 003BBAE0  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803BFCA4 003BBAE4  7C 08 02 A6 */	mflr r0
+/* 803BFCA8 003BBAE8  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803BFCAC 003BBAEC  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 803BFCB0 003BBAF0  7C 7F 1B 78 */	mr r31, r3
+/* 803BFCB4 003BBAF4  80 63 00 00 */	lwz r3, 0(r3)
+/* 803BFCB8 003BBAF8  4B E6 0E 69 */	bl cameraAccessor__Q33scn4step9ComponentCFv
+/* 803BFCBC 003BBAFC  7C 64 1B 78 */	mr r4, r3
+/* 803BFCC0 003BBB00  38 61 00 08 */	addi r3, r1, 8
+/* 803BFCC4 003BBB04  38 A0 00 00 */	li r5, 0
+/* 803BFCC8 003BBB08  38 DF 01 D4 */	addi r6, r31, 0x1d4
+/* 803BFCCC 003BBB0C  4B EA 33 7D */	bl toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel4math7Vector3
+/* 803BFCD0 003BBB10  C0 22 DA 20 */	lfs f1, $$253708-_SDA2_BASE_(r2)
+/* 803BFCD4 003BBB14  D0 21 00 1C */	stfs f1, 0x1c(r1)
+/* 803BFCD8 003BBB18  C0 02 DA 24 */	lfs f0, $$253789-_SDA2_BASE_(r2)
+/* 803BFCDC 003BBB1C  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 803BFCE0 003BBB20  D0 21 00 24 */	stfs f1, 0x24(r1)
+/* 803BFCE4 003BBB24  38 61 00 28 */	addi r3, r1, 0x28
+/* 803BFCE8 003BBB28  38 81 00 08 */	addi r4, r1, 8
+/* 803BFCEC 003BBB2C  4B DD F7 71 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803BFCF0 003BBB30  80 61 00 28 */	lwz r3, 0x28(r1)
+/* 803BFCF4 003BBB34  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 803BFCF8 003BBB38  90 61 00 10 */	stw r3, 0x10(r1)
+/* 803BFCFC 003BBB3C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803BFD00 003BBB40  80 01 00 30 */	lwz r0, 0x30(r1)
+/* 803BFD04 003BBB44  90 01 00 18 */	stw r0, 0x18(r1)
+/* 803BFD08 003BBB48  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 803BFD0C 003BBB4C  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 803BFD10 003BBB50  EC 01 00 2A */	fadds f0, f1, f0
+/* 803BFD14 003BBB54  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 803BFD18 003BBB58  C0 21 00 14 */	lfs f1, 0x14(r1)
+/* 803BFD1C 003BBB5C  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 803BFD20 003BBB60  EC 01 00 2A */	fadds f0, f1, f0
+/* 803BFD24 003BBB64  D0 01 00 14 */	stfs f0, 0x14(r1)
+/* 803BFD28 003BBB68  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 803BFD2C 003BBB6C  C0 01 00 24 */	lfs f0, 0x24(r1)
+/* 803BFD30 003BBB70  EC 01 00 2A */	fadds f0, f1, f0
+/* 803BFD34 003BBB74  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 803BFD38 003BBB78  80 61 00 10 */	lwz r3, 0x10(r1)
+/* 803BFD3C 003BBB7C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803BFD40 003BBB80  90 61 00 34 */	stw r3, 0x34(r1)
+/* 803BFD44 003BBB84  90 01 00 38 */	stw r0, 0x38(r1)
+/* 803BFD48 003BBB88  80 01 00 18 */	lwz r0, 0x18(r1)
+/* 803BFD4C 003BBB8C  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 803BFD50 003BBB90  38 61 00 40 */	addi r3, r1, 0x40
+/* 803BFD54 003BBB94  38 9F 00 04 */	addi r4, r31, 4
+/* 803BFD58 003BBB98  4B DE D0 6D */	bl rootPane__Q23lyt6LayoutFv
+/* 803BFD5C 003BBB9C  38 61 00 40 */	addi r3, r1, 0x40
+/* 803BFD60 003BBBA0  38 81 00 34 */	addi r4, r1, 0x34
+/* 803BFD64 003BBBA4  4B DE E4 91 */	bl setTrans__Q23lyt12PaneAccessorCFRCQ33hel4math7Vector3
+/* 803BFD68 003BBBA8  38 61 00 40 */	addi r3, r1, 0x40
+/* 803BFD6C 003BBBAC  38 80 FF FF */	li r4, -1
+/* 803BFD70 003BBBB0  4B DB 84 B1 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803BFD74 003BBBB4  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 803BFD78 003BBBB8  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803BFD7C 003BBBBC  7C 08 03 A6 */	mtlr r0
+/* 803BFD80 003BBBC0  38 21 00 60 */	addi r1, r1, 0x60
+/* 803BFD84 003BBBC4  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$253706
+$$253706:
+	.incbin "baserom.dol", 0x48DBB8, 0x10
+.global $$253707
+$$253707:
+	.incbin "baserom.dol", 0x48DBC8, 0x10
+.global $$253756
+$$253756:
+	.incbin "baserom.dol", 0x48DBD8, 0x10
+.global $$253757
+$$253757:
+	.incbin "baserom.dol", 0x48DBE8, 0x10
+.global $$253758
+$$253758:
+	.incbin "baserom.dol", 0x48DBF8, 0x10
+.global $$253759
+$$253759:
+	.incbin "baserom.dol", 0x48DC08, 0x10
+.global $$253760
+$$253760:
+	.incbin "baserom.dol", 0x48DC18, 0xC
+.global $$253761
+$$253761:
+	.incbin "baserom.dol", 0x48DC24, 0x10
+.global $$253767
+$$253767:
+	.incbin "baserom.dol", 0x48DC34, 0x3C
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$253755
+$$253755:
+	.incbin "baserom.dol", 0x4980E8, 0x8
+.global $$253778
+$$253778:
+	.incbin "baserom.dol", 0x4980F0, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253708
+$$253708:
+	.incbin "baserom.dol", 0x49E4E0, 0x4
+.global $$253789
+$$253789:
+	.incbin "baserom.dol", 0x49E4E4, 0x4

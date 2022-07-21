@@ -1,0 +1,409 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global SCGetAspectRatio
+SCGetAspectRatio:
+/* 8004CCE0 00048B20  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CCE4 00048B24  7C 08 02 A6 */	mflr r0
+/* 8004CCE8 00048B28  38 80 00 01 */	li r4, 1
+/* 8004CCEC 00048B2C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CCF0 00048B30  38 61 00 08 */	addi r3, r1, 8
+/* 8004CCF4 00048B34  4B FF F7 AD */	bl SCFindU8Item
+/* 8004CCF8 00048B38  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CCFC 00048B3C  40 82 00 10 */	bne lbl_8004CD0C
+/* 8004CD00 00048B40  38 00 00 00 */	li r0, 0
+/* 8004CD04 00048B44  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CD08 00048B48  48 00 00 18 */	b lbl_8004CD20
+lbl_8004CD0C:
+/* 8004CD0C 00048B4C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CD10 00048B50  28 00 00 01 */	cmplwi r0, 1
+/* 8004CD14 00048B54  41 82 00 0C */	beq lbl_8004CD20
+/* 8004CD18 00048B58  38 00 00 00 */	li r0, 0
+/* 8004CD1C 00048B5C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CD20:
+/* 8004CD20 00048B60  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CD24 00048B64  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CD28 00048B68  7C 08 03 A6 */	mtlr r0
+/* 8004CD2C 00048B6C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CD30 00048B70  4E 80 00 20 */	blr 
+/* 8004CD34 00048B74  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CD38 00048B78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CD3C 00048B7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetDisplayOffsetH
+SCGetDisplayOffsetH:
+/* 8004CD40 00048B80  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CD44 00048B84  7C 08 02 A6 */	mflr r0
+/* 8004CD48 00048B88  38 80 00 05 */	li r4, 5
+/* 8004CD4C 00048B8C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CD50 00048B90  38 61 00 08 */	addi r3, r1, 8
+/* 8004CD54 00048B94  4B FF F7 4D */	bl SCFindU8Item
+/* 8004CD58 00048B98  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CD5C 00048B9C  40 82 00 10 */	bne lbl_8004CD6C
+/* 8004CD60 00048BA0  38 00 00 00 */	li r0, 0
+/* 8004CD64 00048BA4  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CD68 00048BA8  48 00 00 30 */	b lbl_8004CD98
+lbl_8004CD6C:
+/* 8004CD6C 00048BAC  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CD70 00048BB0  7C 00 07 74 */	extsb r0, r0
+/* 8004CD74 00048BB4  2C 00 FF E0 */	cmpwi r0, -32
+/* 8004CD78 00048BB8  40 80 00 10 */	bge lbl_8004CD88
+/* 8004CD7C 00048BBC  38 00 FF E0 */	li r0, -32
+/* 8004CD80 00048BC0  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CD84 00048BC4  48 00 00 14 */	b lbl_8004CD98
+lbl_8004CD88:
+/* 8004CD88 00048BC8  2C 00 00 20 */	cmpwi r0, 0x20
+/* 8004CD8C 00048BCC  40 81 00 0C */	ble lbl_8004CD98
+/* 8004CD90 00048BD0  38 00 00 20 */	li r0, 0x20
+/* 8004CD94 00048BD4  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CD98:
+/* 8004CD98 00048BD8  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CD9C 00048BDC  54 00 00 3C */	rlwinm r0, r0, 0, 0, 0x1e
+/* 8004CDA0 00048BE0  7C 03 07 74 */	extsb r3, r0
+/* 8004CDA4 00048BE4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CDA8 00048BE8  7C 08 03 A6 */	mtlr r0
+/* 8004CDAC 00048BEC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CDB0 00048BF0  4E 80 00 20 */	blr 
+/* 8004CDB4 00048BF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CDB8 00048BF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CDBC 00048BFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetEuRgb60Mode
+SCGetEuRgb60Mode:
+/* 8004CDC0 00048C00  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CDC4 00048C04  7C 08 02 A6 */	mflr r0
+/* 8004CDC8 00048C08  38 80 00 06 */	li r4, 6
+/* 8004CDCC 00048C0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CDD0 00048C10  38 61 00 08 */	addi r3, r1, 8
+/* 8004CDD4 00048C14  4B FF F6 CD */	bl SCFindU8Item
+/* 8004CDD8 00048C18  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CDDC 00048C1C  40 82 00 10 */	bne lbl_8004CDEC
+/* 8004CDE0 00048C20  38 00 00 00 */	li r0, 0
+/* 8004CDE4 00048C24  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CDE8 00048C28  48 00 00 18 */	b lbl_8004CE00
+lbl_8004CDEC:
+/* 8004CDEC 00048C2C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CDF0 00048C30  28 00 00 01 */	cmplwi r0, 1
+/* 8004CDF4 00048C34  41 82 00 0C */	beq lbl_8004CE00
+/* 8004CDF8 00048C38  38 00 00 00 */	li r0, 0
+/* 8004CDFC 00048C3C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CE00:
+/* 8004CE00 00048C40  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CE04 00048C44  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CE08 00048C48  7C 08 03 A6 */	mtlr r0
+/* 8004CE0C 00048C4C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CE10 00048C50  4E 80 00 20 */	blr 
+/* 8004CE14 00048C54  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CE18 00048C58  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CE1C 00048C5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetIdleMode
+SCGetIdleMode:
+/* 8004CE20 00048C60  38 80 00 02 */	li r4, 2
+/* 8004CE24 00048C64  38 A0 00 09 */	li r5, 9
+/* 8004CE28 00048C68  4B FF F4 68 */	b SCFindByteArrayItem
+/* 8004CE2C 00048C6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetLanguage
+SCGetLanguage:
+/* 8004CE30 00048C70  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CE34 00048C74  7C 08 02 A6 */	mflr r0
+/* 8004CE38 00048C78  38 80 00 0B */	li r4, 0xb
+/* 8004CE3C 00048C7C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CE40 00048C80  38 61 00 08 */	addi r3, r1, 8
+/* 8004CE44 00048C84  4B FF F6 5D */	bl SCFindU8Item
+/* 8004CE48 00048C88  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CE4C 00048C8C  40 82 00 28 */	bne lbl_8004CE74
+/* 8004CE50 00048C90  48 00 05 11 */	bl SCGetProductArea
+/* 8004CE54 00048C94  7C 60 07 75 */	extsb. r0, r3
+/* 8004CE58 00048C98  40 82 00 10 */	bne lbl_8004CE68
+/* 8004CE5C 00048C9C  38 00 00 00 */	li r0, 0
+/* 8004CE60 00048CA0  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CE64 00048CA4  48 00 00 24 */	b lbl_8004CE88
+lbl_8004CE68:
+/* 8004CE68 00048CA8  38 00 00 01 */	li r0, 1
+/* 8004CE6C 00048CAC  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CE70 00048CB0  48 00 00 18 */	b lbl_8004CE88
+lbl_8004CE74:
+/* 8004CE74 00048CB4  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CE78 00048CB8  28 00 00 09 */	cmplwi r0, 9
+/* 8004CE7C 00048CBC  40 81 00 0C */	ble lbl_8004CE88
+/* 8004CE80 00048CC0  38 00 00 01 */	li r0, 1
+/* 8004CE84 00048CC4  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CE88:
+/* 8004CE88 00048CC8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CE8C 00048CCC  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CE90 00048CD0  7C 08 03 A6 */	mtlr r0
+/* 8004CE94 00048CD4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CE98 00048CD8  4E 80 00 20 */	blr 
+/* 8004CE9C 00048CDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetProgressiveMode
+SCGetProgressiveMode:
+/* 8004CEA0 00048CE0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CEA4 00048CE4  7C 08 02 A6 */	mflr r0
+/* 8004CEA8 00048CE8  38 80 00 0E */	li r4, 0xe
+/* 8004CEAC 00048CEC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CEB0 00048CF0  38 61 00 08 */	addi r3, r1, 8
+/* 8004CEB4 00048CF4  4B FF F5 ED */	bl SCFindU8Item
+/* 8004CEB8 00048CF8  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CEBC 00048CFC  40 82 00 10 */	bne lbl_8004CECC
+/* 8004CEC0 00048D00  38 00 00 00 */	li r0, 0
+/* 8004CEC4 00048D04  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CEC8 00048D08  48 00 00 18 */	b lbl_8004CEE0
+lbl_8004CECC:
+/* 8004CECC 00048D0C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CED0 00048D10  28 00 00 01 */	cmplwi r0, 1
+/* 8004CED4 00048D14  41 82 00 0C */	beq lbl_8004CEE0
+/* 8004CED8 00048D18  38 00 00 00 */	li r0, 0
+/* 8004CEDC 00048D1C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CEE0:
+/* 8004CEE0 00048D20  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CEE4 00048D24  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CEE8 00048D28  7C 08 03 A6 */	mtlr r0
+/* 8004CEEC 00048D2C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CEF0 00048D30  4E 80 00 20 */	blr 
+/* 8004CEF4 00048D34  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CEF8 00048D38  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CEFC 00048D3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetScreenSaverMode
+SCGetScreenSaverMode:
+/* 8004CF00 00048D40  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CF04 00048D44  7C 08 02 A6 */	mflr r0
+/* 8004CF08 00048D48  38 80 00 0F */	li r4, 0xf
+/* 8004CF0C 00048D4C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CF10 00048D50  38 61 00 08 */	addi r3, r1, 8
+/* 8004CF14 00048D54  4B FF F5 8D */	bl SCFindU8Item
+/* 8004CF18 00048D58  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CF1C 00048D5C  40 82 00 10 */	bne lbl_8004CF2C
+/* 8004CF20 00048D60  38 00 00 01 */	li r0, 1
+/* 8004CF24 00048D64  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CF28 00048D68  48 00 00 18 */	b lbl_8004CF40
+lbl_8004CF2C:
+/* 8004CF2C 00048D6C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CF30 00048D70  28 00 00 01 */	cmplwi r0, 1
+/* 8004CF34 00048D74  41 82 00 0C */	beq lbl_8004CF40
+/* 8004CF38 00048D78  38 00 00 00 */	li r0, 0
+/* 8004CF3C 00048D7C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CF40:
+/* 8004CF40 00048D80  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CF44 00048D84  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CF48 00048D88  7C 08 03 A6 */	mtlr r0
+/* 8004CF4C 00048D8C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CF50 00048D90  4E 80 00 20 */	blr 
+/* 8004CF54 00048D94  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CF58 00048D98  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CF5C 00048D9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetSoundMode
+SCGetSoundMode:
+/* 8004CF60 00048DA0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CF64 00048DA4  7C 08 02 A6 */	mflr r0
+/* 8004CF68 00048DA8  38 80 00 11 */	li r4, 0x11
+/* 8004CF6C 00048DAC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CF70 00048DB0  38 61 00 08 */	addi r3, r1, 8
+/* 8004CF74 00048DB4  4B FF F5 2D */	bl SCFindU8Item
+/* 8004CF78 00048DB8  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CF7C 00048DBC  40 82 00 10 */	bne lbl_8004CF8C
+/* 8004CF80 00048DC0  38 00 00 01 */	li r0, 1
+/* 8004CF84 00048DC4  98 01 00 08 */	stb r0, 8(r1)
+/* 8004CF88 00048DC8  48 00 00 18 */	b lbl_8004CFA0
+lbl_8004CF8C:
+/* 8004CF8C 00048DCC  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004CF90 00048DD0  28 00 00 02 */	cmplwi r0, 2
+/* 8004CF94 00048DD4  40 81 00 0C */	ble lbl_8004CFA0
+/* 8004CF98 00048DD8  38 00 00 01 */	li r0, 1
+/* 8004CF9C 00048DDC  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004CFA0:
+/* 8004CFA0 00048DE0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CFA4 00048DE4  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004CFA8 00048DE8  7C 08 03 A6 */	mtlr r0
+/* 8004CFAC 00048DEC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CFB0 00048DF0  4E 80 00 20 */	blr 
+/* 8004CFB4 00048DF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CFB8 00048DF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004CFBC 00048DFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetCounterBias
+SCGetCounterBias:
+/* 8004CFC0 00048E00  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004CFC4 00048E04  7C 08 02 A6 */	mflr r0
+/* 8004CFC8 00048E08  38 80 00 00 */	li r4, 0
+/* 8004CFCC 00048E0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004CFD0 00048E10  38 61 00 08 */	addi r3, r1, 8
+/* 8004CFD4 00048E14  4B FF F5 AD */	bl SCFindU32Item
+/* 8004CFD8 00048E18  2C 03 00 00 */	cmpwi r3, 0
+/* 8004CFDC 00048E1C  40 82 00 10 */	bne lbl_8004CFEC
+/* 8004CFE0 00048E20  3C 60 0B 4A */	lis r3, 0x0B49D800@ha
+/* 8004CFE4 00048E24  38 03 D8 00 */	addi r0, r3, 0x0B49D800@l
+/* 8004CFE8 00048E28  90 01 00 08 */	stw r0, 8(r1)
+lbl_8004CFEC:
+/* 8004CFEC 00048E2C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004CFF0 00048E30  80 61 00 08 */	lwz r3, 8(r1)
+/* 8004CFF4 00048E34  7C 08 03 A6 */	mtlr r0
+/* 8004CFF8 00048E38  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004CFFC 00048E3C  4E 80 00 20 */	blr 
+
+.global SCGetBtDeviceInfoArray
+SCGetBtDeviceInfoArray:
+/* 8004D000 00048E40  38 80 04 61 */	li r4, 0x461
+/* 8004D004 00048E44  38 A0 00 1C */	li r5, 0x1c
+/* 8004D008 00048E48  4B FF F2 88 */	b SCFindByteArrayItem
+/* 8004D00C 00048E4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCSetBtDeviceInfoArray
+SCSetBtDeviceInfoArray:
+/* 8004D010 00048E50  38 80 04 61 */	li r4, 0x461
+/* 8004D014 00048E54  38 A0 00 1C */	li r5, 0x1c
+/* 8004D018 00048E58  4B FF F3 58 */	b SCReplaceByteArrayItem
+/* 8004D01C 00048E5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetBtCmpDevInfoArray
+SCGetBtCmpDevInfoArray:
+/* 8004D020 00048E60  38 80 02 05 */	li r4, 0x205
+/* 8004D024 00048E64  38 A0 00 1D */	li r5, 0x1d
+/* 8004D028 00048E68  4B FF F2 68 */	b SCFindByteArrayItem
+/* 8004D02C 00048E6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCSetBtCmpDevInfoArray
+SCSetBtCmpDevInfoArray:
+/* 8004D030 00048E70  38 80 02 05 */	li r4, 0x205
+/* 8004D034 00048E74  38 A0 00 1D */	li r5, 0x1d
+/* 8004D038 00048E78  4B FF F3 38 */	b SCReplaceByteArrayItem
+/* 8004D03C 00048E7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetBtDpdSensibility
+SCGetBtDpdSensibility:
+/* 8004D040 00048E80  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004D044 00048E84  7C 08 02 A6 */	mflr r0
+/* 8004D048 00048E88  38 80 00 1E */	li r4, 0x1e
+/* 8004D04C 00048E8C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004D050 00048E90  38 61 00 08 */	addi r3, r1, 8
+/* 8004D054 00048E94  4B FF F5 2D */	bl SCFindU32Item
+/* 8004D058 00048E98  2C 03 00 00 */	cmpwi r3, 0
+/* 8004D05C 00048E9C  40 82 00 10 */	bne lbl_8004D06C
+/* 8004D060 00048EA0  38 00 00 02 */	li r0, 2
+/* 8004D064 00048EA4  90 01 00 08 */	stw r0, 8(r1)
+/* 8004D068 00048EA8  48 00 00 2C */	b lbl_8004D094
+lbl_8004D06C:
+/* 8004D06C 00048EAC  80 01 00 08 */	lwz r0, 8(r1)
+/* 8004D070 00048EB0  28 00 00 01 */	cmplwi r0, 1
+/* 8004D074 00048EB4  40 80 00 10 */	bge lbl_8004D084
+/* 8004D078 00048EB8  38 00 00 01 */	li r0, 1
+/* 8004D07C 00048EBC  90 01 00 08 */	stw r0, 8(r1)
+/* 8004D080 00048EC0  48 00 00 14 */	b lbl_8004D094
+lbl_8004D084:
+/* 8004D084 00048EC4  28 00 00 05 */	cmplwi r0, 5
+/* 8004D088 00048EC8  40 81 00 0C */	ble lbl_8004D094
+/* 8004D08C 00048ECC  38 00 00 05 */	li r0, 5
+/* 8004D090 00048ED0  90 01 00 08 */	stw r0, 8(r1)
+lbl_8004D094:
+/* 8004D094 00048ED4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004D098 00048ED8  80 61 00 08 */	lwz r3, 8(r1)
+/* 8004D09C 00048EDC  7C 08 03 A6 */	mtlr r0
+/* 8004D0A0 00048EE0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004D0A4 00048EE4  4E 80 00 20 */	blr 
+/* 8004D0A8 00048EE8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D0AC 00048EEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetWpadMotorMode
+SCGetWpadMotorMode:
+/* 8004D0B0 00048EF0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004D0B4 00048EF4  7C 08 02 A6 */	mflr r0
+/* 8004D0B8 00048EF8  38 80 00 20 */	li r4, 0x20
+/* 8004D0BC 00048EFC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004D0C0 00048F00  38 61 00 08 */	addi r3, r1, 8
+/* 8004D0C4 00048F04  4B FF F3 DD */	bl SCFindU8Item
+/* 8004D0C8 00048F08  2C 03 00 00 */	cmpwi r3, 0
+/* 8004D0CC 00048F0C  40 82 00 10 */	bne lbl_8004D0DC
+/* 8004D0D0 00048F10  38 00 00 01 */	li r0, 1
+/* 8004D0D4 00048F14  98 01 00 08 */	stb r0, 8(r1)
+/* 8004D0D8 00048F18  48 00 00 18 */	b lbl_8004D0F0
+lbl_8004D0DC:
+/* 8004D0DC 00048F1C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004D0E0 00048F20  28 00 00 01 */	cmplwi r0, 1
+/* 8004D0E4 00048F24  41 82 00 0C */	beq lbl_8004D0F0
+/* 8004D0E8 00048F28  38 00 00 00 */	li r0, 0
+/* 8004D0EC 00048F2C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004D0F0:
+/* 8004D0F0 00048F30  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004D0F4 00048F34  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004D0F8 00048F38  7C 08 03 A6 */	mtlr r0
+/* 8004D0FC 00048F3C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004D100 00048F40  4E 80 00 20 */	blr 
+/* 8004D104 00048F44  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D108 00048F48  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D10C 00048F4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCSetWpadMotorMode
+SCSetWpadMotorMode:
+/* 8004D110 00048F50  38 80 00 20 */	li r4, 0x20
+/* 8004D114 00048F54  4B FF F5 4C */	b SCReplaceU8Item
+/* 8004D118 00048F58  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D11C 00048F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetWpadSensorBarPosition
+SCGetWpadSensorBarPosition:
+/* 8004D120 00048F60  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004D124 00048F64  7C 08 02 A6 */	mflr r0
+/* 8004D128 00048F68  38 80 00 21 */	li r4, 0x21
+/* 8004D12C 00048F6C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004D130 00048F70  38 61 00 08 */	addi r3, r1, 8
+/* 8004D134 00048F74  4B FF F3 6D */	bl SCFindU8Item
+/* 8004D138 00048F78  2C 03 00 00 */	cmpwi r3, 0
+/* 8004D13C 00048F7C  40 82 00 10 */	bne lbl_8004D14C
+/* 8004D140 00048F80  38 00 00 00 */	li r0, 0
+/* 8004D144 00048F84  98 01 00 08 */	stb r0, 8(r1)
+/* 8004D148 00048F88  48 00 00 18 */	b lbl_8004D160
+lbl_8004D14C:
+/* 8004D14C 00048F8C  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004D150 00048F90  28 00 00 01 */	cmplwi r0, 1
+/* 8004D154 00048F94  41 82 00 0C */	beq lbl_8004D160
+/* 8004D158 00048F98  38 00 00 00 */	li r0, 0
+/* 8004D15C 00048F9C  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004D160:
+/* 8004D160 00048FA0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004D164 00048FA4  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004D168 00048FA8  7C 08 03 A6 */	mtlr r0
+/* 8004D16C 00048FAC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004D170 00048FB0  4E 80 00 20 */	blr 
+/* 8004D174 00048FB4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D178 00048FB8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D17C 00048FBC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCGetWpadSpeakerVolume
+SCGetWpadSpeakerVolume:
+/* 8004D180 00048FC0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8004D184 00048FC4  7C 08 02 A6 */	mflr r0
+/* 8004D188 00048FC8  38 80 00 1F */	li r4, 0x1f
+/* 8004D18C 00048FCC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004D190 00048FD0  38 61 00 08 */	addi r3, r1, 8
+/* 8004D194 00048FD4  4B FF F3 0D */	bl SCFindU8Item
+/* 8004D198 00048FD8  2C 03 00 00 */	cmpwi r3, 0
+/* 8004D19C 00048FDC  40 82 00 10 */	bne lbl_8004D1AC
+/* 8004D1A0 00048FE0  38 00 00 59 */	li r0, 0x59
+/* 8004D1A4 00048FE4  98 01 00 08 */	stb r0, 8(r1)
+/* 8004D1A8 00048FE8  48 00 00 18 */	b lbl_8004D1C0
+lbl_8004D1AC:
+/* 8004D1AC 00048FEC  88 01 00 08 */	lbz r0, 8(r1)
+/* 8004D1B0 00048FF0  28 00 00 7F */	cmplwi r0, 0x7f
+/* 8004D1B4 00048FF4  40 81 00 0C */	ble lbl_8004D1C0
+/* 8004D1B8 00048FF8  38 00 00 7F */	li r0, 0x7f
+/* 8004D1BC 00048FFC  98 01 00 08 */	stb r0, 8(r1)
+lbl_8004D1C0:
+/* 8004D1C0 00049000  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8004D1C4 00049004  88 61 00 08 */	lbz r3, 8(r1)
+/* 8004D1C8 00049008  7C 08 03 A6 */	mtlr r0
+/* 8004D1CC 0004900C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8004D1D0 00049010  4E 80 00 20 */	blr 
+/* 8004D1D4 00049014  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D1D8 00049018  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D1DC 0004901C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global SCSetWpadSpeakerVolume
+SCSetWpadSpeakerVolume:
+/* 8004D1E0 00049020  38 80 00 1F */	li r4, 0x1f
+/* 8004D1E4 00049024  4B FF F4 7C */	b SCReplaceU8Item
+/* 8004D1E8 00049028  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004D1EC 0004902C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */

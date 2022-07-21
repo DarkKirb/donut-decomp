@@ -1,0 +1,1062 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q36effect6detail17PtclEffectManagerFRQ23mem10IAllocatorUlUlUlUlUlUl
+__ct__Q36effect6detail17PtclEffectManagerFRQ23mem10IAllocatorUlUlUlUlUlUl:
+/* 801848BC 001806FC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801848C0 00180700  7C 08 02 A6 */	mflr r0
+/* 801848C4 00180704  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801848C8 00180708  39 61 00 30 */	addi r11, r1, 0x30
+/* 801848CC 0018070C  4B E8 2A 6D */	bl func_80007338
+/* 801848D0 00180710  7C 7A 1B 78 */	mr r26, r3
+/* 801848D4 00180714  7C 9B 23 78 */	mr r27, r4
+/* 801848D8 00180718  7C BD 2B 78 */	mr r29, r5
+/* 801848DC 0018071C  7C DC 33 78 */	mr r28, r6
+/* 801848E0 00180720  38 00 00 01 */	li r0, 1
+/* 801848E4 00180724  98 0D ED 50 */	stb r0, isExist___Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1-_SDA_BASE_(r13)
+/* 801848E8 00180728  7F 85 E3 78 */	mr r5, r28
+/* 801848EC 0018072C  7C E6 3B 78 */	mr r6, r7
+/* 801848F0 00180730  7D 07 43 78 */	mr r7, r8
+/* 801848F4 00180734  7D 28 4B 78 */	mr r8, r9
+/* 801848F8 00180738  7D 49 53 78 */	mr r9, r10
+/* 801848FC 0018073C  48 00 0D 99 */	bl __ct__Q36effect6detail20PtclEffectMemManagerFRQ23mem10IAllocatorUlUlUlUlUl
+/* 80184900 00180740  3B DA 00 4C */	addi r30, r26, 0x4c
+/* 80184904 00180744  93 7E 00 00 */	stw r27, 0(r30)
+/* 80184908 00180748  93 BE 00 04 */	stw r29, 4(r30)
+/* 8018490C 0018074C  38 7E 00 08 */	addi r3, r30, 8
+/* 80184910 00180750  4B F5 8A D1 */	bl __ct__Q34nw4r3g3d8LightObjFv
+/* 80184914 00180754  80 1E 00 04 */	lwz r0, 4(r30)
+/* 80184918 00180758  2C 00 00 00 */	cmpwi r0, 0
+/* 8018491C 0018075C  41 82 00 5C */	beq lbl_80184978
+/* 80184920 00180760  7F 63 DB 78 */	mr r3, r27
+/* 80184924 00180764  4B E9 FB 7D */	bl DefaultSwitchThreadCallback
+/* 80184928 00180768  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8018492C 0018076C  38 7E 00 08 */	addi r3, r30, 8
+/* 80184930 00180770  57 A4 38 30 */	slwi r4, r29, 7
+/* 80184934 00180774  38 A0 00 04 */	li r5, 4
+/* 80184938 00180778  38 C1 00 0C */	addi r6, r1, 0xc
+/* 8018493C 0018077C  4B FF E7 69 */	bl construct$$0Ul$$4l$$4Q33std3tr137reference_wrapper$$0Q23mem10IAllocator$$1$$1__Q24util30PlacementNew$$0Q23mem9DataBlock$$1FUllQ33std3tr137reference_wrapper$$0Q23mem10IAllocator$$1_v
+/* 80184940 00180780  3B A0 00 00 */	li r29, 0
+/* 80184944 00180784  3B E0 00 00 */	li r31, 0
+/* 80184948 00180788  48 00 00 24 */	b lbl_8018496C
+lbl_8018494C:
+/* 8018494C 0018078C  7F C3 F3 78 */	mr r3, r30
+/* 80184950 00180790  4B FF E7 B5 */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 80184954 00180794  7C 63 FA 14 */	add r3, r3, r31
+/* 80184958 00180798  2C 03 00 00 */	cmpwi r3, 0
+/* 8018495C 0018079C  41 82 00 08 */	beq lbl_80184964
+/* 80184960 001807A0  48 00 1C BD */	bl __ct__Q36effect6detail13PtclEffectResFv
+lbl_80184964:
+/* 80184964 001807A4  3B BD 00 01 */	addi r29, r29, 1
+/* 80184968 001807A8  3B FF 00 80 */	addi r31, r31, 0x80
+lbl_8018496C:
+/* 8018496C 001807AC  80 1E 00 04 */	lwz r0, 4(r30)
+/* 80184970 001807B0  7C 1D 00 40 */	cmplw r29, r0
+/* 80184974 001807B4  41 80 FF D8 */	blt lbl_8018494C
+lbl_80184978:
+/* 80184978 001807B8  3B BA 00 64 */	addi r29, r26, 0x64
+/* 8018497C 001807BC  93 7D 00 00 */	stw r27, 0(r29)
+/* 80184980 001807C0  93 9D 00 04 */	stw r28, 4(r29)
+/* 80184984 001807C4  38 7D 00 08 */	addi r3, r29, 8
+/* 80184988 001807C8  4B F5 8A 59 */	bl __ct__Q34nw4r3g3d8LightObjFv
+/* 8018498C 001807CC  80 1D 00 04 */	lwz r0, 4(r29)
+/* 80184990 001807D0  2C 00 00 00 */	cmpwi r0, 0
+/* 80184994 001807D4  41 82 00 5C */	beq lbl_801849F0
+/* 80184998 001807D8  7F 63 DB 78 */	mr r3, r27
+/* 8018499C 001807DC  4B E9 FB 05 */	bl DefaultSwitchThreadCallback
+/* 801849A0 001807E0  90 61 00 08 */	stw r3, 8(r1)
+/* 801849A4 001807E4  38 7D 00 08 */	addi r3, r29, 8
+/* 801849A8 001807E8  1C 9C 00 74 */	mulli r4, r28, 0x74
+/* 801849AC 001807EC  38 A0 00 04 */	li r5, 4
+/* 801849B0 001807F0  38 C1 00 08 */	addi r6, r1, 8
+/* 801849B4 001807F4  4B FF E6 F1 */	bl construct$$0Ul$$4l$$4Q33std3tr137reference_wrapper$$0Q23mem10IAllocator$$1$$1__Q24util30PlacementNew$$0Q23mem9DataBlock$$1FUllQ33std3tr137reference_wrapper$$0Q23mem10IAllocator$$1_v
+/* 801849B8 001807F8  3B C0 00 00 */	li r30, 0
+/* 801849BC 001807FC  3B E0 00 00 */	li r31, 0
+/* 801849C0 00180800  48 00 00 24 */	b lbl_801849E4
+lbl_801849C4:
+/* 801849C4 00180804  7F A3 EB 78 */	mr r3, r29
+/* 801849C8 00180808  4B FF E7 3D */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 801849CC 0018080C  7C 63 FA 14 */	add r3, r3, r31
+/* 801849D0 00180810  2C 03 00 00 */	cmpwi r3, 0
+/* 801849D4 00180814  41 82 00 08 */	beq lbl_801849DC
+/* 801849D8 00180818  4B FF F2 F5 */	bl __ct__Q36effect6detail10PtclEffectFv
+lbl_801849DC:
+/* 801849DC 0018081C  3B DE 00 01 */	addi r30, r30, 1
+/* 801849E0 00180820  3B FF 00 74 */	addi r31, r31, 0x74
+lbl_801849E4:
+/* 801849E4 00180824  80 1D 00 04 */	lwz r0, 4(r29)
+/* 801849E8 00180828  7C 1E 00 40 */	cmplw r30, r0
+/* 801849EC 0018082C  41 80 FF D8 */	blt lbl_801849C4
+lbl_801849F0:
+/* 801849F0 00180830  7F 43 D3 78 */	mr r3, r26
+/* 801849F4 00180834  39 61 00 30 */	addi r11, r1, 0x30
+/* 801849F8 00180838  4B E8 29 8D */	bl func_80007384
+/* 801849FC 0018083C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80184A00 00180840  7C 08 03 A6 */	mtlr r0
+/* 80184A04 00180844  38 21 00 30 */	addi r1, r1, 0x30
+/* 80184A08 00180848  4E 80 00 20 */	blr 
+
+.global __dt__Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1Fv
+__dt__Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1Fv:
+/* 80184A0C 0018084C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184A10 00180850  7C 08 02 A6 */	mflr r0
+/* 80184A14 00180854  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184A18 00180858  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184A1C 0018085C  93 C1 00 08 */	stw r30, 8(r1)
+/* 80184A20 00180860  7C 7E 1B 78 */	mr r30, r3
+/* 80184A24 00180864  7C 9F 23 78 */	mr r31, r4
+/* 80184A28 00180868  2C 03 00 00 */	cmpwi r3, 0
+/* 80184A2C 0018086C  41 82 00 28 */	beq lbl_80184A54
+/* 80184A30 00180870  38 00 00 00 */	li r0, 0
+/* 80184A34 00180874  98 0D ED 50 */	stb r0, isExist___Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1-_SDA_BASE_(r13)
+/* 80184A38 00180878  38 80 00 00 */	li r4, 0
+/* 80184A3C 0018087C  4B FF 11 2D */	bl __dt__Q23scn6ISceneFv
+/* 80184A40 00180880  7F E0 07 34 */	extsh r0, r31
+/* 80184A44 00180884  2C 00 00 00 */	cmpwi r0, 0
+/* 80184A48 00180888  40 81 00 0C */	ble lbl_80184A54
+/* 80184A4C 0018088C  7F C3 F3 78 */	mr r3, r30
+/* 80184A50 00180890  48 03 AC C5 */	bl __dl__FPv
+lbl_80184A54:
+/* 80184A54 00180894  7F C3 F3 78 */	mr r3, r30
+/* 80184A58 00180898  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184A5C 0018089C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80184A60 001808A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184A64 001808A4  7C 08 03 A6 */	mtlr r0
+/* 80184A68 001808A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184A6C 001808AC  4E 80 00 20 */	blr 
+
+.global __dt__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1Fv
+__dt__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1Fv:
+/* 80184A70 001808B0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80184A74 001808B4  7C 08 02 A6 */	mflr r0
+/* 80184A78 001808B8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80184A7C 001808BC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184A80 001808C0  4B E8 28 C5 */	bl func_80007344
+/* 80184A84 001808C4  7C 7D 1B 78 */	mr r29, r3
+/* 80184A88 001808C8  7C 9E 23 78 */	mr r30, r4
+/* 80184A8C 001808CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80184A90 001808D0  41 82 00 64 */	beq lbl_80184AF4
+/* 80184A94 001808D4  83 E3 00 04 */	lwz r31, 4(r3)
+/* 80184A98 001808D8  2C 1F 00 00 */	cmpwi r31, 0
+/* 80184A9C 001808DC  41 82 00 38 */	beq lbl_80184AD4
+/* 80184AA0 001808E0  48 00 00 24 */	b lbl_80184AC4
+lbl_80184AA4:
+/* 80184AA4 001808E4  7F A3 EB 78 */	mr r3, r29
+/* 80184AA8 001808E8  4B FF E6 5D */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 80184AAC 001808EC  38 1F FF FF */	addi r0, r31, -1
+/* 80184AB0 001808F0  54 00 38 30 */	slwi r0, r0, 7
+/* 80184AB4 001808F4  7C 63 02 14 */	add r3, r3, r0
+/* 80184AB8 001808F8  38 80 FF FF */	li r4, -1
+/* 80184ABC 001808FC  48 00 1B F9 */	bl __dt__Q36effect6detail13PtclEffectResFv
+/* 80184AC0 00180900  3B FF FF FF */	addi r31, r31, -1
+lbl_80184AC4:
+/* 80184AC4 00180904  2C 1F 00 00 */	cmpwi r31, 0
+/* 80184AC8 00180908  40 82 FF DC */	bne lbl_80184AA4
+/* 80184ACC 0018090C  38 7D 00 08 */	addi r3, r29, 8
+/* 80184AD0 00180910  4B FF 96 29 */	bl destruct__Q24util30PlacementNew$$0Q23mem9DataBlock$$1Fv
+lbl_80184AD4:
+/* 80184AD4 00180914  38 7D 00 08 */	addi r3, r29, 8
+/* 80184AD8 00180918  38 80 FF FF */	li r4, -1
+/* 80184ADC 0018091C  4B FF 96 61 */	bl __dt__Q24util30PlacementNew$$0Q23mem9DataBlock$$1Fv
+/* 80184AE0 00180920  7F C0 07 34 */	extsh r0, r30
+/* 80184AE4 00180924  2C 00 00 00 */	cmpwi r0, 0
+/* 80184AE8 00180928  40 81 00 0C */	ble lbl_80184AF4
+/* 80184AEC 0018092C  7F A3 EB 78 */	mr r3, r29
+/* 80184AF0 00180930  48 03 AC 25 */	bl __dl__FPv
+lbl_80184AF4:
+/* 80184AF4 00180934  7F A3 EB 78 */	mr r3, r29
+/* 80184AF8 00180938  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184AFC 0018093C  4B E8 28 95 */	bl func_80007390
+/* 80184B00 00180940  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80184B04 00180944  7C 08 03 A6 */	mtlr r0
+/* 80184B08 00180948  38 21 00 20 */	addi r1, r1, 0x20
+/* 80184B0C 0018094C  4E 80 00 20 */	blr 
+
+.global __dt__Q23mem47RuntimeFixedArray$$0Q36effect6detail10PtclEffect$$1Fv
+__dt__Q23mem47RuntimeFixedArray$$0Q36effect6detail10PtclEffect$$1Fv:
+/* 80184B10 00180950  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80184B14 00180954  7C 08 02 A6 */	mflr r0
+/* 80184B18 00180958  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80184B1C 0018095C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184B20 00180960  4B E8 28 25 */	bl func_80007344
+/* 80184B24 00180964  7C 7D 1B 78 */	mr r29, r3
+/* 80184B28 00180968  7C 9E 23 78 */	mr r30, r4
+/* 80184B2C 0018096C  2C 03 00 00 */	cmpwi r3, 0
+/* 80184B30 00180970  41 82 00 64 */	beq lbl_80184B94
+/* 80184B34 00180974  83 E3 00 04 */	lwz r31, 4(r3)
+/* 80184B38 00180978  2C 1F 00 00 */	cmpwi r31, 0
+/* 80184B3C 0018097C  41 82 00 38 */	beq lbl_80184B74
+/* 80184B40 00180980  48 00 00 24 */	b lbl_80184B64
+lbl_80184B44:
+/* 80184B44 00180984  7F A3 EB 78 */	mr r3, r29
+/* 80184B48 00180988  4B FF E5 BD */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 80184B4C 0018098C  38 1F FF FF */	addi r0, r31, -1
+/* 80184B50 00180990  1C 00 00 74 */	mulli r0, r0, 0x74
+/* 80184B54 00180994  7C 63 02 14 */	add r3, r3, r0
+/* 80184B58 00180998  38 80 FF FF */	li r4, -1
+/* 80184B5C 0018099C  4B FF B0 C5 */	bl __dt__Q36effect6detail10PtclEffectFv
+/* 80184B60 001809A0  3B FF FF FF */	addi r31, r31, -1
+lbl_80184B64:
+/* 80184B64 001809A4  2C 1F 00 00 */	cmpwi r31, 0
+/* 80184B68 001809A8  40 82 FF DC */	bne lbl_80184B44
+/* 80184B6C 001809AC  38 7D 00 08 */	addi r3, r29, 8
+/* 80184B70 001809B0  4B FF 95 89 */	bl destruct__Q24util30PlacementNew$$0Q23mem9DataBlock$$1Fv
+lbl_80184B74:
+/* 80184B74 001809B4  38 7D 00 08 */	addi r3, r29, 8
+/* 80184B78 001809B8  38 80 FF FF */	li r4, -1
+/* 80184B7C 001809BC  4B FF 95 C1 */	bl __dt__Q24util30PlacementNew$$0Q23mem9DataBlock$$1Fv
+/* 80184B80 001809C0  7F C0 07 34 */	extsh r0, r30
+/* 80184B84 001809C4  2C 00 00 00 */	cmpwi r0, 0
+/* 80184B88 001809C8  40 81 00 0C */	ble lbl_80184B94
+/* 80184B8C 001809CC  7F A3 EB 78 */	mr r3, r29
+/* 80184B90 001809D0  48 03 AB 85 */	bl __dl__FPv
+lbl_80184B94:
+/* 80184B94 001809D4  7F A3 EB 78 */	mr r3, r29
+/* 80184B98 001809D8  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184B9C 001809DC  4B E8 27 F5 */	bl func_80007390
+/* 80184BA0 001809E0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80184BA4 001809E4  7C 08 03 A6 */	mtlr r0
+/* 80184BA8 001809E8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80184BAC 001809EC  4E 80 00 20 */	blr 
+
+.global __dt__Q36effect6detail17PtclEffectManagerFv
+__dt__Q36effect6detail17PtclEffectManagerFv:
+/* 80184BB0 001809F0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184BB4 001809F4  7C 08 02 A6 */	mflr r0
+/* 80184BB8 001809F8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184BBC 001809FC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184BC0 00180A00  93 C1 00 08 */	stw r30, 8(r1)
+/* 80184BC4 00180A04  7C 7E 1B 78 */	mr r30, r3
+/* 80184BC8 00180A08  7C 9F 23 78 */	mr r31, r4
+/* 80184BCC 00180A0C  2C 03 00 00 */	cmpwi r3, 0
+/* 80184BD0 00180A10  41 82 00 48 */	beq lbl_80184C18
+/* 80184BD4 00180A14  38 63 00 64 */	addi r3, r3, 0x64
+/* 80184BD8 00180A18  38 80 FF FF */	li r4, -1
+/* 80184BDC 00180A1C  4B FF FF 35 */	bl __dt__Q23mem47RuntimeFixedArray$$0Q36effect6detail10PtclEffect$$1Fv
+/* 80184BE0 00180A20  38 7E 00 4C */	addi r3, r30, 0x4c
+/* 80184BE4 00180A24  38 80 FF FF */	li r4, -1
+/* 80184BE8 00180A28  4B FF FE 89 */	bl __dt__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1Fv
+/* 80184BEC 00180A2C  7F C3 F3 78 */	mr r3, r30
+/* 80184BF0 00180A30  38 80 FF FF */	li r4, -1
+/* 80184BF4 00180A34  48 00 12 C5 */	bl __dt__Q36effect6detail20PtclEffectMemManagerFv
+/* 80184BF8 00180A38  7F C3 F3 78 */	mr r3, r30
+/* 80184BFC 00180A3C  38 80 00 00 */	li r4, 0
+/* 80184C00 00180A40  4B FF FE 0D */	bl __dt__Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1Fv
+/* 80184C04 00180A44  7F E0 07 34 */	extsh r0, r31
+/* 80184C08 00180A48  2C 00 00 00 */	cmpwi r0, 0
+/* 80184C0C 00180A4C  40 81 00 0C */	ble lbl_80184C18
+/* 80184C10 00180A50  7F C3 F3 78 */	mr r3, r30
+/* 80184C14 00180A54  48 03 AB 01 */	bl __dl__FPv
+lbl_80184C18:
+/* 80184C18 00180A58  7F C3 F3 78 */	mr r3, r30
+/* 80184C1C 00180A5C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184C20 00180A60  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80184C24 00180A64  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184C28 00180A68  7C 08 03 A6 */	mtlr r0
+/* 80184C2C 00180A6C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184C30 00180A70  4E 80 00 20 */	blr 
+
+.global setResourceCategoryNameAndPath__Q36effect6detail17PtclEffectManagerFUlPCcPCc
+setResourceCategoryNameAndPath__Q36effect6detail17PtclEffectManagerFUlPCcPCc:
+/* 80184C34 00180A74  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184C38 00180A78  7C 08 02 A6 */	mflr r0
+/* 80184C3C 00180A7C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184C40 00180A80  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184C44 00180A84  93 C1 00 08 */	stw r30, 8(r1)
+/* 80184C48 00180A88  7C BE 2B 78 */	mr r30, r5
+/* 80184C4C 00180A8C  7C DF 33 78 */	mr r31, r6
+/* 80184C50 00180A90  38 63 00 4C */	addi r3, r3, 0x4c
+/* 80184C54 00180A94  48 00 00 29 */	bl __vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl
+/* 80184C58 00180A98  7F C4 F3 78 */	mr r4, r30
+/* 80184C5C 00180A9C  7F E5 FB 78 */	mr r5, r31
+/* 80184C60 00180AA0  48 00 1B 3D */	bl setCategoryNameAndPath__Q36effect6detail13PtclEffectResFPCcPCc
+/* 80184C64 00180AA4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184C68 00180AA8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80184C6C 00180AAC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184C70 00180AB0  7C 08 03 A6 */	mtlr r0
+/* 80184C74 00180AB4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184C78 00180AB8  4E 80 00 20 */	blr 
+
+.global __vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl
+__vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl:
+/* 80184C7C 00180ABC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184C80 00180AC0  7C 08 02 A6 */	mflr r0
+/* 80184C84 00180AC4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184C88 00180AC8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184C8C 00180ACC  93 C1 00 08 */	stw r30, 8(r1)
+/* 80184C90 00180AD0  7C 7E 1B 78 */	mr r30, r3
+/* 80184C94 00180AD4  7C 9F 23 78 */	mr r31, r4
+/* 80184C98 00180AD8  7F E3 FB 78 */	mr r3, r31
+/* 80184C9C 00180ADC  80 9E 00 04 */	lwz r4, 4(r30)
+/* 80184CA0 00180AE0  4B E9 F8 01 */	bl DefaultSwitchThreadCallback
+/* 80184CA4 00180AE4  7F C3 F3 78 */	mr r3, r30
+/* 80184CA8 00180AE8  4B FF E4 5D */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 80184CAC 00180AEC  57 E0 38 30 */	slwi r0, r31, 7
+/* 80184CB0 00180AF0  7C 63 02 14 */	add r3, r3, r0
+/* 80184CB4 00180AF4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184CB8 00180AF8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80184CBC 00180AFC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184CC0 00180B00  7C 08 03 A6 */	mtlr r0
+/* 80184CC4 00180B04  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184CC8 00180B08  4E 80 00 20 */	blr 
+
+.global setupResourceIfResLoaded__Q36effect6detail17PtclEffectManagerFv
+setupResourceIfResLoaded__Q36effect6detail17PtclEffectManagerFv:
+/* 80184CCC 00180B0C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184CD0 00180B10  7C 08 02 A6 */	mflr r0
+/* 80184CD4 00180B14  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184CD8 00180B18  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184CDC 00180B1C  93 C1 00 08 */	stw r30, 8(r1)
+/* 80184CE0 00180B20  7C 7E 1B 78 */	mr r30, r3
+/* 80184CE4 00180B24  3B E0 00 00 */	li r31, 0
+/* 80184CE8 00180B28  48 00 00 20 */	b lbl_80184D08
+lbl_80184CEC:
+/* 80184CEC 00180B2C  38 7E 00 4C */	addi r3, r30, 0x4c
+/* 80184CF0 00180B30  7F E4 FB 78 */	mr r4, r31
+/* 80184CF4 00180B34  4B FF FF 89 */	bl __vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl
+/* 80184CF8 00180B38  7F C4 F3 78 */	mr r4, r30
+/* 80184CFC 00180B3C  38 A0 00 00 */	li r5, 0
+/* 80184D00 00180B40  48 00 1A 29 */	bl loadIfResLoaded__Q36effect6detail13PtclEffectResFRQ36effect6detail20PtclEffectMemManagerb
+/* 80184D04 00180B44  3B FF 00 01 */	addi r31, r31, 1
+lbl_80184D08:
+/* 80184D08 00180B48  80 1E 00 50 */	lwz r0, 0x50(r30)
+/* 80184D0C 00180B4C  7C 1F 00 40 */	cmplw r31, r0
+/* 80184D10 00180B50  41 80 FF DC */	blt lbl_80184CEC
+/* 80184D14 00180B54  7F C3 F3 78 */	mr r3, r30
+/* 80184D18 00180B58  48 00 12 2D */	bl resource__Q36effect6detail20PtclEffectMemManagerCFv
+/* 80184D1C 00180B5C  4B F2 DF C5 */	bl RelocateCommand__Q34nw4r2ef8ResourceFv
+/* 80184D20 00180B60  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184D24 00180B64  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80184D28 00180B68  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184D2C 00180B6C  7C 08 03 A6 */	mtlr r0
+/* 80184D30 00180B70  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184D34 00180B74  4E 80 00 20 */	blr 
+
+.global generate__Q36effect6detail17PtclEffectManagerFRCQ36effect6detail10GenContextRCQ36effect6detail16RequestArgOption
+generate__Q36effect6detail17PtclEffectManagerFRCQ36effect6detail10GenContextRCQ36effect6detail16RequestArgOption:
+/* 80184D38 00180B78  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80184D3C 00180B7C  7C 08 02 A6 */	mflr r0
+/* 80184D40 00180B80  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80184D44 00180B84  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184D48 00180B88  4B E8 25 F5 */	bl func_8000733C
+/* 80184D4C 00180B8C  7C 7B 1B 78 */	mr r27, r3
+/* 80184D50 00180B90  7C 9C 23 78 */	mr r28, r4
+/* 80184D54 00180B94  7C BD 2B 78 */	mr r29, r5
+/* 80184D58 00180B98  7F 83 E3 78 */	mr r3, r28
+/* 80184D5C 00180B9C  4B FF C9 A1 */	bl ptclNameRef__Q36effect6detail10GenContextCFv
+/* 80184D60 00180BA0  7C 7E 1B 78 */	mr r30, r3
+/* 80184D64 00180BA4  7F 83 E3 78 */	mr r3, r28
+/* 80184D68 00180BA8  4B FF C9 85 */	bl constraintType__Q36effect6detail10GenContextCFv
+/* 80184D6C 00180BAC  7C 7F 1B 78 */	mr r31, r3
+/* 80184D70 00180BB0  7F 83 E3 78 */	mr r3, r28
+/* 80184D74 00180BB4  4B FF C9 81 */	bl resSlotIndex__Q36effect6detail10GenContextCFv
+/* 80184D78 00180BB8  7C 64 1B 78 */	mr r4, r3
+/* 80184D7C 00180BBC  38 7B 00 4C */	addi r3, r27, 0x4c
+/* 80184D80 00180BC0  4B FF FE FD */	bl __vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl
+/* 80184D84 00180BC4  7C 64 1B 78 */	mr r4, r3
+/* 80184D88 00180BC8  7F 63 DB 78 */	mr r3, r27
+/* 80184D8C 00180BCC  7F C5 F3 78 */	mr r5, r30
+/* 80184D90 00180BD0  7F A6 EB 78 */	mr r6, r29
+/* 80184D94 00180BD4  7F E7 FB 78 */	mr r7, r31
+/* 80184D98 00180BD8  48 00 05 DD */	bl generateIN__Q36effect6detail17PtclEffectManagerFRQ36effect6detail13PtclEffectResPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType
+/* 80184D9C 00180BDC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80184DA0 00180BE0  4B E8 25 E9 */	bl func_80007388
+/* 80184DA4 00180BE4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80184DA8 00180BE8  7C 08 03 A6 */	mtlr r0
+/* 80184DAC 00180BEC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80184DB0 00180BF0  4E 80 00 20 */	blr 
+
+.global generateForAutoReq__Q36effect6detail17PtclEffectManagerFPCcPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType
+generateForAutoReq__Q36effect6detail17PtclEffectManagerFPCcPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType:
+/* 80184DB4 00180BF4  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80184DB8 00180BF8  7C 08 02 A6 */	mflr r0
+/* 80184DBC 00180BFC  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80184DC0 00180C00  39 61 00 30 */	addi r11, r1, 0x30
+/* 80184DC4 00180C04  4B E8 25 71 */	bl func_80007334
+/* 80184DC8 00180C08  7C 79 1B 78 */	mr r25, r3
+/* 80184DCC 00180C0C  7C 9A 23 78 */	mr r26, r4
+/* 80184DD0 00180C10  7C BB 2B 78 */	mr r27, r5
+/* 80184DD4 00180C14  7C DC 33 78 */	mr r28, r6
+/* 80184DD8 00180C18  7C FD 3B 78 */	mr r29, r7
+/* 80184DDC 00180C1C  3B E0 00 00 */	li r31, 0
+/* 80184DE0 00180C20  48 00 00 44 */	b lbl_80184E24
+lbl_80184DE4:
+/* 80184DE4 00180C24  38 79 00 4C */	addi r3, r25, 0x4c
+/* 80184DE8 00180C28  7F E4 FB 78 */	mr r4, r31
+/* 80184DEC 00180C2C  4B FF FE 91 */	bl __vc__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PtclEffectRes$$1FUl
+/* 80184DF0 00180C30  7C 7E 1B 78 */	mr r30, r3
+/* 80184DF4 00180C34  7F 44 D3 78 */	mr r4, r26
+/* 80184DF8 00180C38  48 00 1A 81 */	bl isCategoryNameEquals__Q36effect6detail13PtclEffectResCFPCc
+/* 80184DFC 00180C3C  2C 03 00 00 */	cmpwi r3, 0
+/* 80184E00 00180C40  41 82 00 20 */	beq lbl_80184E20
+/* 80184E04 00180C44  7F 23 CB 78 */	mr r3, r25
+/* 80184E08 00180C48  7F C4 F3 78 */	mr r4, r30
+/* 80184E0C 00180C4C  7F 65 DB 78 */	mr r5, r27
+/* 80184E10 00180C50  7F 86 E3 78 */	mr r6, r28
+/* 80184E14 00180C54  7F A7 EB 78 */	mr r7, r29
+/* 80184E18 00180C58  48 00 05 5D */	bl generateIN__Q36effect6detail17PtclEffectManagerFRQ36effect6detail13PtclEffectResPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType
+/* 80184E1C 00180C5C  48 00 00 18 */	b lbl_80184E34
+lbl_80184E20:
+/* 80184E20 00180C60  3B FF 00 01 */	addi r31, r31, 1
+lbl_80184E24:
+/* 80184E24 00180C64  80 19 00 50 */	lwz r0, 0x50(r25)
+/* 80184E28 00180C68  7C 1F 00 40 */	cmplw r31, r0
+/* 80184E2C 00180C6C  41 80 FF B8 */	blt lbl_80184DE4
+/* 80184E30 00180C70  38 60 00 00 */	li r3, 0
+lbl_80184E34:
+/* 80184E34 00180C74  39 61 00 30 */	addi r11, r1, 0x30
+/* 80184E38 00180C78  4B E8 25 49 */	bl func_80007380
+/* 80184E3C 00180C7C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80184E40 00180C80  7C 08 03 A6 */	mtlr r0
+/* 80184E44 00180C84  38 21 00 30 */	addi r1, r1, 0x30
+/* 80184E48 00180C88  4E 80 00 20 */	blr 
+
+.global reflectCameraInfo__Q36effect6detail17PtclEffectManagerFRCQ36effect6detail10CameraInfo
+reflectCameraInfo__Q36effect6detail17PtclEffectManagerFRCQ36effect6detail10CameraInfo:
+/* 80184E4C 00180C8C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184E50 00180C90  7C 08 02 A6 */	mflr r0
+/* 80184E54 00180C94  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184E58 00180C98  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80184E5C 00180C9C  7C 9F 23 78 */	mr r31, r4
+/* 80184E60 00180CA0  48 00 10 E1 */	bl system__Q36effect6detail20PtclEffectMemManagerCFv
+/* 80184E64 00180CA4  7F E4 FB 78 */	mr r4, r31
+/* 80184E68 00180CA8  38 BF 00 0C */	addi r5, r31, 0xc
+/* 80184E6C 00180CAC  C0 3F 00 3C */	lfs f1, 0x3c(r31)
+/* 80184E70 00180CB0  C0 5F 00 40 */	lfs f2, 0x40(r31)
+/* 80184E74 00180CB4  4B F1 FD 1D */	bl SetProcessCamera__Q34nw4r2ef12EffectSystemFRCQ34nw4r4math4VEC3RCQ34nw4r4math5MTX34ff
+/* 80184E78 00180CB8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80184E7C 00180CBC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184E80 00180CC0  7C 08 03 A6 */	mtlr r0
+/* 80184E84 00180CC4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184E88 00180CC8  4E 80 00 20 */	blr 
+
+.global execGarbageCollect__Q36effect6detail17PtclEffectManagerFv
+execGarbageCollect__Q36effect6detail17PtclEffectManagerFv:
+/* 80184E8C 00180CCC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80184E90 00180CD0  7C 08 02 A6 */	mflr r0
+/* 80184E94 00180CD4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80184E98 00180CD8  4B FF 67 9D */	bl font__Q23app14RomFontWrapperFv
+/* 80184E9C 00180CDC  81 83 00 00 */	lwz r12, 0(r3)
+/* 80184EA0 00180CE0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 80184EA4 00180CE4  7D 89 03 A6 */	mtctr r12
+/* 80184EA8 00180CE8  4E 80 04 21 */	bctrl 
+/* 80184EAC 00180CEC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80184EB0 00180CF0  7C 08 03 A6 */	mtlr r0
+/* 80184EB4 00180CF4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80184EB8 00180CF8  4E 80 00 20 */	blr 
+
+.global GarbageCollection__Q34nw4r2ef13MemoryManagerFv
+GarbageCollection__Q34nw4r2ef13MemoryManagerFv:
+/* 80184EBC 00180CFC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80184EC0 00180D00  7C 08 02 A6 */	mflr r0
+/* 80184EC4 00180D04  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80184EC8 00180D08  39 61 00 30 */	addi r11, r1, 0x30
+/* 80184ECC 00180D0C  4B E8 24 5D */	bl func_80007328
+/* 80184ED0 00180D10  7C 7F 1B 78 */	mr r31, r3
+/* 80184ED4 00180D14  80 63 00 18 */	lwz r3, 0x18(r3)
+/* 80184ED8 00180D18  38 63 00 10 */	addi r3, r3, 0x10
+/* 80184EDC 00180D1C  48 00 02 D9 */	bl List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List
+/* 80184EE0 00180D20  7C 79 1B 78 */	mr r25, r3
+/* 80184EE4 00180D24  3F 40 80 45 */	lis r26, 0x8045
+/* 80184EE8 00180D28  3F 60 80 45 */	lis r27, 0x8045
+/* 80184EEC 00180D2C  3F A0 80 45 */	lis r29, 0x8045
+/* 80184EF0 00180D30  3F C0 80 45 */	lis r30, 0x8045
+/* 80184EF4 00180D34  48 00 00 E0 */	b lbl_80184FD4
+lbl_80184EF8:
+/* 80184EF8 00180D38  80 7F 00 18 */	lwz r3, 0x18(r31)
+/* 80184EFC 00180D3C  38 63 00 10 */	addi r3, r3, 0x10
+/* 80184F00 00180D40  7F 24 CB 78 */	mr r4, r25
+/* 80184F04 00180D44  4B F1 EA 2D */	bl MEMGetNextListObject
+/* 80184F08 00180D48  7C 78 1B 78 */	mr r24, r3
+/* 80184F0C 00180D4C  82 F9 00 44 */	lwz r23, 0x44(r25)
+/* 80184F10 00180D50  48 00 00 B8 */	b lbl_80184FC8
+lbl_80184F14:
+/* 80184F14 00180D54  A0 19 00 4E */	lhz r0, 0x4e(r25)
+/* 80184F18 00180D58  7C 77 02 14 */	add r3, r23, r0
+/* 80184F1C 00180D5C  82 C3 00 04 */	lwz r22, 4(r3)
+/* 80184F20 00180D60  80 17 00 10 */	lwz r0, 0x10(r23)
+/* 80184F24 00180D64  2C 00 00 00 */	cmpwi r0, 0
+/* 80184F28 00180D68  41 82 00 18 */	beq lbl_80184F40
+/* 80184F2C 00180D6C  38 7A 35 8C */	addi r3, r26, 0x358c
+/* 80184F30 00180D70  38 80 01 7A */	li r4, 0x17a
+/* 80184F34 00180D74  38 BB 35 5C */	addi r5, r27, 0x355c
+/* 80184F38 00180D78  4C C6 31 82 */	crclr 6
+/* 80184F3C 00180D7C  4B FA 34 15 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_80184F40:
+/* 80184F40 00180D80  3B 80 00 00 */	li r28, 0
+/* 80184F44 00180D84  80 77 00 C8 */	lwz r3, 0xc8(r23)
+/* 80184F48 00180D88  4B FA 4F 29 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 80184F4C 00180D8C  2C 03 00 01 */	cmpwi r3, 1
+/* 80184F50 00180D90  41 82 00 24 */	beq lbl_80184F74
+/* 80184F54 00180D94  80 77 00 C8 */	lwz r3, 0xc8(r23)
+/* 80184F58 00180D98  4B FA 4F 19 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 80184F5C 00180D9C  2C 03 00 02 */	cmpwi r3, 2
+/* 80184F60 00180DA0  41 82 00 14 */	beq lbl_80184F74
+/* 80184F64 00180DA4  80 77 00 C8 */	lwz r3, 0xc8(r23)
+/* 80184F68 00180DA8  4B FA 4F 09 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 80184F6C 00180DAC  2C 03 00 03 */	cmpwi r3, 3
+/* 80184F70 00180DB0  40 82 00 08 */	bne lbl_80184F78
+lbl_80184F74:
+/* 80184F74 00180DB4  3B 80 00 01 */	li r28, 1
+lbl_80184F78:
+/* 80184F78 00180DB8  2C 1C 00 00 */	cmpwi r28, 0
+/* 80184F7C 00180DBC  40 82 00 18 */	bne lbl_80184F94
+/* 80184F80 00180DC0  38 7D 35 48 */	addi r3, r29, 0x3548
+/* 80184F84 00180DC4  38 80 01 7D */	li r4, 0x17d
+/* 80184F88 00180DC8  38 BE 34 20 */	addi r5, r30, 0x3420
+/* 80184F8C 00180DCC  4C C6 31 82 */	crclr 6
+/* 80184F90 00180DD0  4B FA 33 C1 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_80184F94:
+/* 80184F94 00180DD4  80 77 00 C8 */	lwz r3, 0xc8(r23)
+/* 80184F98 00180DD8  38 63 00 38 */	addi r3, r3, 0x38
+/* 80184F9C 00180DDC  7E E4 BB 78 */	mr r4, r23
+/* 80184FA0 00180DE0  48 00 02 1D */	bl ToFree__Q34nw4r2ef12ActivityListFPv
+/* 80184FA4 00180DE4  80 7F 00 20 */	lwz r3, 0x20(r31)
+/* 80184FA8 00180DE8  38 63 00 10 */	addi r3, r3, 0x10
+/* 80184FAC 00180DEC  7E E4 BB 78 */	mr r4, r23
+/* 80184FB0 00180DF0  4B F1 E9 11 */	bl MEMRemoveListObject
+/* 80184FB4 00180DF4  80 7F 00 20 */	lwz r3, 0x20(r31)
+/* 80184FB8 00180DF8  38 63 00 04 */	addi r3, r3, 4
+/* 80184FBC 00180DFC  7E E4 BB 78 */	mr r4, r23
+/* 80184FC0 00180E00  4B F1 E8 91 */	bl MEMAppendListObject
+/* 80184FC4 00180E04  7E D7 B3 78 */	mr r23, r22
+lbl_80184FC8:
+/* 80184FC8 00180E08  2C 17 00 00 */	cmpwi r23, 0
+/* 80184FCC 00180E0C  40 82 FF 48 */	bne lbl_80184F14
+/* 80184FD0 00180E10  7F 19 C3 78 */	mr r25, r24
+lbl_80184FD4:
+/* 80184FD4 00180E14  2C 19 00 00 */	cmpwi r25, 0
+/* 80184FD8 00180E18  40 82 FF 20 */	bne lbl_80184EF8
+/* 80184FDC 00180E1C  83 9F 00 18 */	lwz r28, 0x18(r31)
+/* 80184FE0 00180E20  2C 1C 00 00 */	cmpwi r28, 0
+/* 80184FE4 00180E24  41 82 00 88 */	beq lbl_8018506C
+/* 80184FE8 00180E28  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80184FEC 00180E2C  48 00 01 C9 */	bl List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List
+/* 80184FF0 00180E30  7C 7B 1B 78 */	mr r27, r3
+/* 80184FF4 00180E34  2C 03 00 00 */	cmpwi r3, 0
+/* 80184FF8 00180E38  41 82 00 74 */	beq lbl_8018506C
+/* 80184FFC 00180E3C  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80185000 00180E40  7F 64 DB 78 */	mr r4, r27
+/* 80185004 00180E44  4B F1 E9 2D */	bl MEMGetNextListObject
+/* 80185008 00180E48  7C 7A 1B 78 */	mr r26, r3
+/* 8018500C 00180E4C  48 00 00 58 */	b lbl_80185064
+lbl_80185010:
+/* 80185010 00180E50  80 1B 00 0C */	lwz r0, 0xc(r27)
+/* 80185014 00180E54  2C 00 00 03 */	cmpwi r0, 3
+/* 80185018 00180E58  40 82 00 38 */	bne lbl_80185050
+/* 8018501C 00180E5C  80 1B 00 10 */	lwz r0, 0x10(r27)
+/* 80185020 00180E60  2C 00 00 00 */	cmpwi r0, 0
+/* 80185024 00180E64  40 82 00 2C */	bne lbl_80185050
+/* 80185028 00180E68  80 7B 00 20 */	lwz r3, 0x20(r27)
+/* 8018502C 00180E6C  38 63 00 C0 */	addi r3, r3, 0xc0
+/* 80185030 00180E70  7F 64 DB 78 */	mr r4, r27
+/* 80185034 00180E74  48 00 01 89 */	bl ToFree__Q34nw4r2ef12ActivityListFPv
+/* 80185038 00180E78  38 7C 00 10 */	addi r3, r28, 0x10
+/* 8018503C 00180E7C  7F 64 DB 78 */	mr r4, r27
+/* 80185040 00180E80  4B F1 E8 81 */	bl MEMRemoveListObject
+/* 80185044 00180E84  38 7C 00 04 */	addi r3, r28, 4
+/* 80185048 00180E88  7F 64 DB 78 */	mr r4, r27
+/* 8018504C 00180E8C  4B F1 E8 05 */	bl MEMAppendListObject
+lbl_80185050:
+/* 80185050 00180E90  7F 5B D3 78 */	mr r27, r26
+/* 80185054 00180E94  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80185058 00180E98  7F 44 D3 78 */	mr r4, r26
+/* 8018505C 00180E9C  4B F1 E8 D5 */	bl MEMGetNextListObject
+/* 80185060 00180EA0  7C 7A 1B 78 */	mr r26, r3
+lbl_80185064:
+/* 80185064 00180EA4  2C 1B 00 00 */	cmpwi r27, 0
+/* 80185068 00180EA8  40 82 FF A8 */	bne lbl_80185010
+lbl_8018506C:
+/* 8018506C 00180EAC  83 9F 00 10 */	lwz r28, 0x10(r31)
+/* 80185070 00180EB0  2C 1C 00 00 */	cmpwi r28, 0
+/* 80185074 00180EB4  41 82 00 88 */	beq lbl_801850FC
+/* 80185078 00180EB8  38 7C 00 10 */	addi r3, r28, 0x10
+/* 8018507C 00180EBC  48 00 01 39 */	bl List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List
+/* 80185080 00180EC0  7C 7B 1B 78 */	mr r27, r3
+/* 80185084 00180EC4  2C 03 00 00 */	cmpwi r3, 0
+/* 80185088 00180EC8  41 82 00 74 */	beq lbl_801850FC
+/* 8018508C 00180ECC  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80185090 00180ED0  7F 64 DB 78 */	mr r4, r27
+/* 80185094 00180ED4  4B F1 E8 9D */	bl MEMGetNextListObject
+/* 80185098 00180ED8  7C 7A 1B 78 */	mr r26, r3
+/* 8018509C 00180EDC  48 00 00 58 */	b lbl_801850F4
+lbl_801850A0:
+/* 801850A0 00180EE0  80 1B 00 0C */	lwz r0, 0xc(r27)
+/* 801850A4 00180EE4  2C 00 00 03 */	cmpwi r0, 3
+/* 801850A8 00180EE8  40 82 00 38 */	bne lbl_801850E0
+/* 801850AC 00180EEC  80 1B 00 10 */	lwz r0, 0x10(r27)
+/* 801850B0 00180EF0  2C 00 00 00 */	cmpwi r0, 0
+/* 801850B4 00180EF4  40 82 00 2C */	bne lbl_801850E0
+/* 801850B8 00180EF8  80 7B 00 BC */	lwz r3, 0xbc(r27)
+/* 801850BC 00180EFC  38 63 00 24 */	addi r3, r3, 0x24
+/* 801850C0 00180F00  7F 64 DB 78 */	mr r4, r27
+/* 801850C4 00180F04  48 00 00 F9 */	bl ToFree__Q34nw4r2ef12ActivityListFPv
+/* 801850C8 00180F08  38 7C 00 10 */	addi r3, r28, 0x10
+/* 801850CC 00180F0C  7F 64 DB 78 */	mr r4, r27
+/* 801850D0 00180F10  4B F1 E7 F1 */	bl MEMRemoveListObject
+/* 801850D4 00180F14  38 7C 00 04 */	addi r3, r28, 4
+/* 801850D8 00180F18  7F 64 DB 78 */	mr r4, r27
+/* 801850DC 00180F1C  4B F1 E7 75 */	bl MEMAppendListObject
+lbl_801850E0:
+/* 801850E0 00180F20  7F 5B D3 78 */	mr r27, r26
+/* 801850E4 00180F24  38 7C 00 10 */	addi r3, r28, 0x10
+/* 801850E8 00180F28  7F 44 D3 78 */	mr r4, r26
+/* 801850EC 00180F2C  4B F1 E8 45 */	bl MEMGetNextListObject
+/* 801850F0 00180F30  7C 7A 1B 78 */	mr r26, r3
+lbl_801850F4:
+/* 801850F4 00180F34  2C 1B 00 00 */	cmpwi r27, 0
+/* 801850F8 00180F38  40 82 FF A8 */	bne lbl_801850A0
+lbl_801850FC:
+/* 801850FC 00180F3C  83 9F 00 08 */	lwz r28, 8(r31)
+/* 80185100 00180F40  2C 1C 00 00 */	cmpwi r28, 0
+/* 80185104 00180F44  41 82 00 98 */	beq lbl_8018519C
+/* 80185108 00180F48  38 7C 00 10 */	addi r3, r28, 0x10
+/* 8018510C 00180F4C  48 00 00 A9 */	bl List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List
+/* 80185110 00180F50  7C 7B 1B 78 */	mr r27, r3
+/* 80185114 00180F54  2C 03 00 00 */	cmpwi r3, 0
+/* 80185118 00180F58  41 82 00 84 */	beq lbl_8018519C
+/* 8018511C 00180F5C  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80185120 00180F60  7F 64 DB 78 */	mr r4, r27
+/* 80185124 00180F64  4B F1 E8 0D */	bl MEMGetNextListObject
+/* 80185128 00180F68  7C 7A 1B 78 */	mr r26, r3
+/* 8018512C 00180F6C  48 00 00 68 */	b lbl_80185194
+lbl_80185130:
+/* 80185130 00180F70  80 1B 00 0C */	lwz r0, 0xc(r27)
+/* 80185134 00180F74  2C 00 00 03 */	cmpwi r0, 3
+/* 80185138 00180F78  40 82 00 48 */	bne lbl_80185180
+/* 8018513C 00180F7C  80 1B 00 10 */	lwz r0, 0x10(r27)
+/* 80185140 00180F80  2C 00 00 00 */	cmpwi r0, 0
+/* 80185144 00180F84  40 82 00 3C */	bne lbl_80185180
+/* 80185148 00180F88  80 7B 00 20 */	lwz r3, 0x20(r27)
+/* 8018514C 00180F8C  3C 63 00 01 */	addis r3, r3, 1
+/* 80185150 00180F90  80 63 C0 18 */	lwz r3, -0x3fe8(r3)
+/* 80185154 00180F94  80 1B 00 40 */	lwz r0, 0x40(r27)
+/* 80185158 00180F98  1C 00 00 1C */	mulli r0, r0, 0x1c
+/* 8018515C 00180F9C  7C 63 02 14 */	add r3, r3, r0
+/* 80185160 00180FA0  7F 64 DB 78 */	mr r4, r27
+/* 80185164 00180FA4  48 00 00 59 */	bl ToFree__Q34nw4r2ef12ActivityListFPv
+/* 80185168 00180FA8  38 7C 00 10 */	addi r3, r28, 0x10
+/* 8018516C 00180FAC  7F 64 DB 78 */	mr r4, r27
+/* 80185170 00180FB0  4B F1 E7 51 */	bl MEMRemoveListObject
+/* 80185174 00180FB4  38 7C 00 04 */	addi r3, r28, 4
+/* 80185178 00180FB8  7F 64 DB 78 */	mr r4, r27
+/* 8018517C 00180FBC  4B F1 E6 D5 */	bl MEMAppendListObject
+lbl_80185180:
+/* 80185180 00180FC0  7F 5B D3 78 */	mr r27, r26
+/* 80185184 00180FC4  38 7C 00 10 */	addi r3, r28, 0x10
+/* 80185188 00180FC8  7F 44 D3 78 */	mr r4, r26
+/* 8018518C 00180FCC  4B F1 E7 A5 */	bl MEMGetNextListObject
+/* 80185190 00180FD0  7C 7A 1B 78 */	mr r26, r3
+lbl_80185194:
+/* 80185194 00180FD4  2C 1B 00 00 */	cmpwi r27, 0
+/* 80185198 00180FD8  40 82 FF 98 */	bne lbl_80185130
+lbl_8018519C:
+/* 8018519C 00180FDC  39 61 00 30 */	addi r11, r1, 0x30
+/* 801851A0 00180FE0  4B E8 21 D5 */	bl func_80007374
+/* 801851A4 00180FE4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801851A8 00180FE8  7C 08 03 A6 */	mtlr r0
+/* 801851AC 00180FEC  38 21 00 30 */	addi r1, r1, 0x30
+/* 801851B0 00180FF0  4E 80 00 20 */	blr 
+
+.global List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List
+List_GetFirst__Q24nw4r2utFPCQ34nw4r2ut4List:
+/* 801851B4 00180FF4  38 80 00 00 */	li r4, 0
+/* 801851B8 00180FF8  4B F1 E7 78 */	b MEMGetNextListObject
+
+.global ToFree__Q34nw4r2ef12ActivityListFPv
+ToFree__Q34nw4r2ef12ActivityListFPv:
+/* 801851BC 00180FFC  38 63 00 0C */	addi r3, r3, 0xc
+/* 801851C0 00181000  4B F1 E7 00 */	b MEMRemoveListObject
+
+.global drawAll__Q36effect6detail17PtclEffectManagerCFRCQ36effect6detail8DrawInfo
+drawAll__Q36effect6detail17PtclEffectManagerCFRCQ36effect6detail8DrawInfo:
+/* 801851C4 00181004  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801851C8 00181008  7C 08 02 A6 */	mflr r0
+/* 801851CC 0018100C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801851D0 00181010  39 61 00 20 */	addi r11, r1, 0x20
+/* 801851D4 00181014  4B E8 21 71 */	bl func_80007344
+/* 801851D8 00181018  7C 7D 1B 78 */	mr r29, r3
+/* 801851DC 0018101C  7C 9E 23 78 */	mr r30, r4
+/* 801851E0 00181020  3B E0 00 00 */	li r31, 0
+/* 801851E4 00181024  48 00 00 18 */	b lbl_801851FC
+lbl_801851E8:
+/* 801851E8 00181028  7F A3 EB 78 */	mr r3, r29
+/* 801851EC 0018102C  7F C4 F3 78 */	mr r4, r30
+/* 801851F0 00181030  7F E5 FB 78 */	mr r5, r31
+/* 801851F4 00181034  48 00 00 31 */	bl drawWithGroupID__Q36effect6detail17PtclEffectManagerCFRCQ36effect6detail8DrawInfoUl
+/* 801851F8 00181038  3B FF 00 01 */	addi r31, r31, 1
+lbl_801851FC:
+/* 801851FC 0018103C  7F A3 EB 78 */	mr r3, r29
+/* 80185200 00181040  4B FB AF B1 */	bl GetFont__Q36nw4hbm2ut10CharWriterCFv
+/* 80185204 00181044  7C 1F 18 40 */	cmplw r31, r3
+/* 80185208 00181048  41 80 FF E0 */	blt lbl_801851E8
+/* 8018520C 0018104C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80185210 00181050  4B E8 21 81 */	bl func_80007390
+/* 80185214 00181054  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80185218 00181058  7C 08 03 A6 */	mtlr r0
+/* 8018521C 0018105C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80185220 00181060  4E 80 00 20 */	blr 
+
+.global drawWithGroupID__Q36effect6detail17PtclEffectManagerCFRCQ36effect6detail8DrawInfoUl
+drawWithGroupID__Q36effect6detail17PtclEffectManagerCFRCQ36effect6detail8DrawInfoUl:
+/* 80185224 00181064  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 80185228 00181068  7C 08 02 A6 */	mflr r0
+/* 8018522C 0018106C  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 80185230 00181070  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 80185234 00181074  4B E8 21 11 */	bl func_80007344
+/* 80185238 00181078  7C 7D 1B 78 */	mr r29, r3
+/* 8018523C 0018107C  7C 9E 23 78 */	mr r30, r4
+/* 80185240 00181080  7C BF 2B 78 */	mr r31, r5
+/* 80185244 00181084  38 60 00 01 */	li r3, 1
+/* 80185248 00181088  38 80 00 08 */	li r4, 8
+/* 8018524C 0018108C  4B EA F4 C5 */	bl GXSetMisc
+/* 80185250 00181090  38 61 00 08 */	addi r3, r1, 8
+/* 80185254 00181094  7F C4 F3 78 */	mr r4, r30
+/* 80185258 00181098  4B FF A1 D5 */	bl obj__Q36effect6detail8DrawInfoCFv
+/* 8018525C 0018109C  7F A3 EB 78 */	mr r3, r29
+/* 80185260 001810A0  48 00 0C E1 */	bl system__Q36effect6detail20PtclEffectMemManagerCFv
+/* 80185264 001810A4  38 81 00 08 */	addi r4, r1, 8
+/* 80185268 001810A8  7F E5 FB 78 */	mr r5, r31
+/* 8018526C 001810AC  4B F1 F8 95 */	bl Draw__Q34nw4r2ef12EffectSystemFRCQ34nw4r2ef8DrawInfoUl
+/* 80185270 001810B0  38 60 00 01 */	li r3, 1
+/* 80185274 001810B4  38 80 00 00 */	li r4, 0
+/* 80185278 001810B8  4B EA F4 99 */	bl GXSetMisc
+/* 8018527C 001810BC  39 61 00 C0 */	addi r11, r1, 0xc0
+/* 80185280 001810C0  4B E8 21 11 */	bl func_80007390
+/* 80185284 001810C4  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 80185288 001810C8  7C 08 03 A6 */	mtlr r0
+/* 8018528C 001810CC  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 80185290 001810D0  4E 80 00 20 */	blr 
+
+.global GetNumActiveEffect__Q34nw4r2ef13MemoryManagerCFv
+GetNumActiveEffect__Q34nw4r2ef13MemoryManagerCFv:
+/* 80185294 001810D4  80 63 00 08 */	lwz r3, 8(r3)
+/* 80185298 001810D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8018529C 001810DC  40 82 00 0C */	bne lbl_801852A8
+/* 801852A0 001810E0  38 60 00 00 */	li r3, 0
+/* 801852A4 001810E4  4E 80 00 20 */	blr 
+lbl_801852A8:
+/* 801852A8 001810E8  A0 63 00 18 */	lhz r3, 0x18(r3)
+/* 801852AC 001810EC  4E 80 00 20 */	blr 
+
+.global GetNumActiveEmitter__Q34nw4r2ef13MemoryManagerCFv
+GetNumActiveEmitter__Q34nw4r2ef13MemoryManagerCFv:
+/* 801852B0 001810F0  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 801852B4 001810F4  2C 03 00 00 */	cmpwi r3, 0
+/* 801852B8 001810F8  40 82 00 0C */	bne lbl_801852C4
+/* 801852BC 001810FC  38 60 00 00 */	li r3, 0
+/* 801852C0 00181100  4E 80 00 20 */	blr 
+lbl_801852C4:
+/* 801852C4 00181104  A0 63 00 18 */	lhz r3, 0x18(r3)
+/* 801852C8 00181108  4E 80 00 20 */	blr 
+
+.global GetNumActiveParticleManager__Q34nw4r2ef13MemoryManagerCFv
+GetNumActiveParticleManager__Q34nw4r2ef13MemoryManagerCFv:
+/* 801852CC 0018110C  80 63 00 18 */	lwz r3, 0x18(r3)
+/* 801852D0 00181110  2C 03 00 00 */	cmpwi r3, 0
+/* 801852D4 00181114  40 82 00 0C */	bne lbl_801852E0
+/* 801852D8 00181118  38 60 00 00 */	li r3, 0
+/* 801852DC 0018111C  4E 80 00 20 */	blr 
+lbl_801852E0:
+/* 801852E0 00181120  A0 63 00 18 */	lhz r3, 0x18(r3)
+/* 801852E4 00181124  4E 80 00 20 */	blr 
+
+.global GetNumActiveParticle__Q34nw4r2ef13MemoryManagerCFv
+GetNumActiveParticle__Q34nw4r2ef13MemoryManagerCFv:
+/* 801852E8 00181128  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 801852EC 0018112C  2C 03 00 00 */	cmpwi r3, 0
+/* 801852F0 00181130  40 82 00 0C */	bne lbl_801852FC
+/* 801852F4 00181134  38 60 00 00 */	li r3, 0
+/* 801852F8 00181138  4E 80 00 20 */	blr 
+lbl_801852FC:
+/* 801852FC 0018113C  A0 63 00 18 */	lhz r3, 0x18(r3)
+/* 80185300 00181140  4E 80 00 20 */	blr 
+
+.global GetNumFreeEffect__Q34nw4r2ef13MemoryManagerCFv
+GetNumFreeEffect__Q34nw4r2ef13MemoryManagerCFv:
+/* 80185304 00181144  80 63 00 08 */	lwz r3, 8(r3)
+/* 80185308 00181148  2C 03 00 00 */	cmpwi r3, 0
+/* 8018530C 0018114C  40 82 00 0C */	bne lbl_80185318
+/* 80185310 00181150  38 60 00 00 */	li r3, 0
+/* 80185314 00181154  4E 80 00 20 */	blr 
+lbl_80185318:
+/* 80185318 00181158  A0 63 00 0C */	lhz r3, 0xc(r3)
+/* 8018531C 0018115C  4E 80 00 20 */	blr 
+
+.global GetNumFreeEmitter__Q34nw4r2ef13MemoryManagerCFv
+GetNumFreeEmitter__Q34nw4r2ef13MemoryManagerCFv:
+/* 80185320 00181160  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 80185324 00181164  2C 03 00 00 */	cmpwi r3, 0
+/* 80185328 00181168  40 82 00 0C */	bne lbl_80185334
+/* 8018532C 0018116C  38 60 00 00 */	li r3, 0
+/* 80185330 00181170  4E 80 00 20 */	blr 
+lbl_80185334:
+/* 80185334 00181174  A0 63 00 0C */	lhz r3, 0xc(r3)
+/* 80185338 00181178  4E 80 00 20 */	blr 
+
+.global GetNumFreeParticleManager__Q34nw4r2ef13MemoryManagerCFv
+GetNumFreeParticleManager__Q34nw4r2ef13MemoryManagerCFv:
+/* 8018533C 0018117C  80 63 00 18 */	lwz r3, 0x18(r3)
+/* 80185340 00181180  2C 03 00 00 */	cmpwi r3, 0
+/* 80185344 00181184  40 82 00 0C */	bne lbl_80185350
+/* 80185348 00181188  38 60 00 00 */	li r3, 0
+/* 8018534C 0018118C  4E 80 00 20 */	blr 
+lbl_80185350:
+/* 80185350 00181190  A0 63 00 0C */	lhz r3, 0xc(r3)
+/* 80185354 00181194  4E 80 00 20 */	blr 
+
+.global GetNumFreeParticle__Q34nw4r2ef13MemoryManagerCFv
+GetNumFreeParticle__Q34nw4r2ef13MemoryManagerCFv:
+/* 80185358 00181198  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8018535C 0018119C  2C 03 00 00 */	cmpwi r3, 0
+/* 80185360 001811A0  40 82 00 0C */	bne lbl_8018536C
+/* 80185364 001811A4  38 60 00 00 */	li r3, 0
+/* 80185368 001811A8  4E 80 00 20 */	blr 
+lbl_8018536C:
+/* 8018536C 001811AC  A0 63 00 0C */	lhz r3, 0xc(r3)
+/* 80185370 001811B0  4E 80 00 20 */	blr 
+
+.global generateIN__Q36effect6detail17PtclEffectManagerFRQ36effect6detail13PtclEffectResPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType
+generateIN__Q36effect6detail17PtclEffectManagerFRQ36effect6detail13PtclEffectResPCcRCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType:
+/* 80185374 001811B4  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 80185378 001811B8  7C 08 02 A6 */	mflr r0
+/* 8018537C 001811BC  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 80185380 001811C0  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80185384 001811C4  4B E8 1F B1 */	bl func_80007334
+/* 80185388 001811C8  7C 79 1B 78 */	mr r25, r3
+/* 8018538C 001811CC  7C A0 2B 78 */	mr r0, r5
+/* 80185390 001811D0  7C DA 33 78 */	mr r26, r6
+/* 80185394 001811D4  7C FB 3B 78 */	mr r27, r7
+/* 80185398 001811D8  38 61 00 0C */	addi r3, r1, 0xc
+/* 8018539C 001811DC  7F 25 CB 78 */	mr r5, r25
+/* 801853A0 001811E0  7C 06 03 78 */	mr r6, r0
+/* 801853A4 001811E4  48 00 14 FD */	bl find__Q36effect6detail13PtclEffectResFRQ36effect6detail20PtclEffectMemManagerPCc
+/* 801853A8 001811E8  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 801853AC 001811EC  2C 00 00 00 */	cmpwi r0, 0
+/* 801853B0 001811F0  40 82 00 0C */	bne lbl_801853BC
+/* 801853B4 001811F4  38 60 00 00 */	li r3, 0
+/* 801853B8 001811F8  48 00 02 C4 */	b lbl_8018567C
+lbl_801853BC:
+/* 801853BC 001811FC  3B 80 00 00 */	li r28, 0
+/* 801853C0 00181200  3B E0 00 00 */	li r31, 0
+/* 801853C4 00181204  3B A0 00 00 */	li r29, 0
+/* 801853C8 00181208  48 00 02 A4 */	b lbl_8018566C
+lbl_801853CC:
+/* 801853CC 0018120C  7F E3 FB 78 */	mr r3, r31
+/* 801853D0 00181210  80 99 00 68 */	lwz r4, 0x68(r25)
+/* 801853D4 00181214  4B E9 F0 CD */	bl DefaultSwitchThreadCallback
+/* 801853D8 00181218  38 79 00 64 */	addi r3, r25, 0x64
+/* 801853DC 0018121C  4B FF DD 29 */	bl head__Q23mem50RuntimeFixedArray$$0Q36effect6detail13PolyEffectRes$$1Fv
+/* 801853E0 00181220  7F C3 EA 14 */	add r30, r3, r29
+/* 801853E4 00181224  7F C3 F3 78 */	mr r3, r30
+/* 801853E8 00181228  4B FF EC A5 */	bl isValid__Q36effect6detail10PtclEffectCFv
+/* 801853EC 0018122C  2C 03 00 00 */	cmpwi r3, 0
+/* 801853F0 00181230  40 82 02 74 */	bne lbl_80185664
+/* 801853F4 00181234  83 A1 00 0C */	lwz r29, 0xc(r1)
+/* 801853F8 00181238  7F 23 CB 78 */	mr r3, r25
+/* 801853FC 0018123C  48 00 0B 45 */	bl system__Q36effect6detail20PtclEffectMemManagerCFv
+/* 80185400 00181240  7C 7F 1B 78 */	mr r31, r3
+/* 80185404 00181244  38 80 00 01 */	li r4, 1
+/* 80185408 00181248  38 A0 00 01 */	li r5, 1
+/* 8018540C 0018124C  38 C0 00 01 */	li r6, 1
+/* 80185410 00181250  38 E0 00 01 */	li r7, 1
+/* 80185414 00181254  39 00 00 01 */	li r8, 1
+/* 80185418 00181258  39 20 00 01 */	li r9, 1
+/* 8018541C 0018125C  57 AA 00 0E */	rlwinm r10, r29, 0, 0, 7
+/* 80185420 00181260  3C 0A 80 00 */	addis r0, r10, 0x8000
+/* 80185424 00181264  28 00 00 00 */	cmplwi r0, 0
+/* 80185428 00181268  41 82 00 18 */	beq lbl_80185440
+/* 8018542C 0018126C  57 A3 00 10 */	rlwinm r3, r29, 0, 0, 8
+/* 80185430 00181270  3C 03 7F 00 */	addis r0, r3, 0x7f00
+/* 80185434 00181274  28 00 00 00 */	cmplwi r0, 0
+/* 80185438 00181278  41 82 00 08 */	beq lbl_80185440
+/* 8018543C 0018127C  39 20 00 00 */	li r9, 0
+lbl_80185440:
+/* 80185440 00181280  2C 09 00 00 */	cmpwi r9, 0
+/* 80185444 00181284  40 82 00 18 */	bne lbl_8018545C
+/* 80185448 00181288  57 A3 00 08 */	rlwinm r3, r29, 0, 0, 4
+/* 8018544C 0018128C  3C 03 70 00 */	addis r0, r3, 0x7000
+/* 80185450 00181290  28 00 00 00 */	cmplwi r0, 0
+/* 80185454 00181294  41 82 00 08 */	beq lbl_8018545C
+/* 80185458 00181298  39 00 00 00 */	li r8, 0
+lbl_8018545C:
+/* 8018545C 0018129C  2C 08 00 00 */	cmpwi r8, 0
+/* 80185460 001812A0  40 82 00 14 */	bne lbl_80185474
+/* 80185464 001812A4  3C 0A 40 00 */	addis r0, r10, 0x4000
+/* 80185468 001812A8  28 00 00 00 */	cmplwi r0, 0
+/* 8018546C 001812AC  41 82 00 08 */	beq lbl_80185474
+/* 80185470 001812B0  38 E0 00 00 */	li r7, 0
+lbl_80185474:
+/* 80185474 001812B4  2C 07 00 00 */	cmpwi r7, 0
+/* 80185478 001812B8  40 82 00 18 */	bne lbl_80185490
+/* 8018547C 001812BC  57 A3 00 10 */	rlwinm r3, r29, 0, 0, 8
+/* 80185480 001812C0  3C 03 3F 00 */	addis r0, r3, 0x3f00
+/* 80185484 001812C4  28 00 00 00 */	cmplwi r0, 0
+/* 80185488 001812C8  41 82 00 08 */	beq lbl_80185490
+/* 8018548C 001812CC  38 C0 00 00 */	li r6, 0
+lbl_80185490:
+/* 80185490 001812D0  2C 06 00 00 */	cmpwi r6, 0
+/* 80185494 001812D4  40 82 00 18 */	bne lbl_801854AC
+/* 80185498 001812D8  57 A3 00 08 */	rlwinm r3, r29, 0, 0, 4
+/* 8018549C 001812DC  3C 03 30 00 */	addis r0, r3, 0x3000
+/* 801854A0 001812E0  28 00 00 00 */	cmplwi r0, 0
+/* 801854A4 001812E4  41 82 00 08 */	beq lbl_801854AC
+/* 801854A8 001812E8  38 A0 00 00 */	li r5, 0
+lbl_801854AC:
+/* 801854AC 001812EC  2C 05 00 00 */	cmpwi r5, 0
+/* 801854B0 001812F0  40 82 00 18 */	bne lbl_801854C8
+/* 801854B4 001812F4  57 A3 00 22 */	rlwinm r3, r29, 0, 0, 0x11
+/* 801854B8 001812F8  3C 03 20 00 */	addis r0, r3, 0x2000
+/* 801854BC 001812FC  28 00 00 00 */	cmplwi r0, 0
+/* 801854C0 00181300  41 82 00 08 */	beq lbl_801854C8
+/* 801854C4 00181304  38 80 00 00 */	li r4, 0
+lbl_801854C8:
+/* 801854C8 00181308  2C 04 00 00 */	cmpwi r4, 0
+/* 801854CC 0018130C  40 82 00 24 */	bne lbl_801854F0
+/* 801854D0 00181310  3C 60 80 45 */	lis r3, $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv@ha
+/* 801854D4 00181314  38 63 35 D4 */	addi r3, r3, $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv@l
+/* 801854D8 00181318  38 80 00 5F */	li r4, 0x5f
+/* 801854DC 0018131C  3C A0 80 45 */	lis r5, $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20@ha
+/* 801854E0 00181320  38 A5 35 A0 */	addi r5, r5, $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20@l
+/* 801854E4 00181324  7F A6 EB 78 */	mr r6, r29
+/* 801854E8 00181328  4C C6 31 82 */	crclr 6
+/* 801854EC 0018132C  4B FA 2E 65 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_801854F0:
+/* 801854F0 00181330  7F E3 FB 78 */	mr r3, r31
+/* 801854F4 00181334  7F A4 EB 78 */	mr r4, r29
+/* 801854F8 00181338  38 A0 00 00 */	li r5, 0
+/* 801854FC 0018133C  38 C0 00 00 */	li r6, 0
+/* 80185500 00181340  4B F1 F3 E1 */	bl CreateEffect__Q34nw4r2ef12EffectSystemFPQ34nw4r2ef15EmitterResourceUlUs
+/* 80185504 00181344  7C 64 1B 78 */	mr r4, r3
+/* 80185508 00181348  38 61 00 10 */	addi r3, r1, 0x10
+/* 8018550C 0018134C  4B F2 EB 45 */	bl __ct__Q34nw4r2ef10HandleBaseFPQ34nw4r2ef12LinkedObject
+/* 80185510 00181350  38 61 00 18 */	addi r3, r1, 0x18
+/* 80185514 00181354  38 81 00 10 */	addi r4, r1, 0x10
+/* 80185518 00181358  7F 45 D3 78 */	mr r5, r26
+/* 8018551C 0018135C  7F 66 DB 78 */	mr r6, r27
+/* 80185520 00181360  4B FF E8 05 */	bl __ct__Q36effect6detail10PtclEffectFRCQ34nw4r2ef25Handle$$0Q34nw4r2ef6Effect$$1RCQ36effect6detail16RequestArgOptionQ36effect6detail14ConstraintType
+/* 80185524 00181364  7F C3 F3 78 */	mr r3, r30
+/* 80185528 00181368  38 81 00 18 */	addi r4, r1, 0x18
+/* 8018552C 0018136C  4B F2 EB 05 */	bl __ct__Q34nw4r2ef10HandleBaseFRCQ34nw4r2ef10HandleBase
+/* 80185530 00181370  80 01 00 20 */	lwz r0, 0x20(r1)
+/* 80185534 00181374  90 1E 00 08 */	stw r0, 8(r30)
+/* 80185538 00181378  C0 01 00 24 */	lfs f0, 0x24(r1)
+/* 8018553C 0018137C  D0 1E 00 0C */	stfs f0, 0xc(r30)
+/* 80185540 00181380  80 61 00 28 */	lwz r3, 0x28(r1)
+/* 80185544 00181384  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 80185548 00181388  90 7E 00 10 */	stw r3, 0x10(r30)
+/* 8018554C 0018138C  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 80185550 00181390  80 01 00 30 */	lwz r0, 0x30(r1)
+/* 80185554 00181394  90 1E 00 18 */	stw r0, 0x18(r30)
+/* 80185558 00181398  80 61 00 34 */	lwz r3, 0x34(r1)
+/* 8018555C 0018139C  80 01 00 38 */	lwz r0, 0x38(r1)
+/* 80185560 001813A0  90 7E 00 1C */	stw r3, 0x1c(r30)
+/* 80185564 001813A4  90 1E 00 20 */	stw r0, 0x20(r30)
+/* 80185568 001813A8  80 01 00 3C */	lwz r0, 0x3c(r1)
+/* 8018556C 001813AC  90 1E 00 24 */	stw r0, 0x24(r30)
+/* 80185570 001813B0  3B 41 00 40 */	addi r26, r1, 0x40
+/* 80185574 001813B4  38 7E 00 28 */	addi r3, r30, 0x28
+/* 80185578 001813B8  7C 03 D0 40 */	cmplw r3, r26
+/* 8018557C 001813BC  41 82 00 24 */	beq lbl_801855A0
+/* 80185580 001813C0  7F 44 D3 78 */	mr r4, r26
+/* 80185584 001813C4  4B FF 6F C9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80185588 001813C8  38 7E 00 34 */	addi r3, r30, 0x34
+/* 8018558C 001813CC  38 9A 00 0C */	addi r4, r26, 0xc
+/* 80185590 001813D0  4B FF 6F BD */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80185594 001813D4  38 7E 00 40 */	addi r3, r30, 0x40
+/* 80185598 001813D8  38 9A 00 18 */	addi r4, r26, 0x18
+/* 8018559C 001813DC  4B FF 6F B1 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_801855A0:
+/* 801855A0 001813E0  38 7E 00 4C */	addi r3, r30, 0x4c
+/* 801855A4 001813E4  4B FF 70 41 */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 801855A8 001813E8  2C 03 00 00 */	cmpwi r3, 0
+/* 801855AC 001813EC  41 82 00 0C */	beq lbl_801855B8
+/* 801855B0 001813F0  38 7E 00 4C */	addi r3, r30, 0x4c
+/* 801855B4 001813F4  4B FF 70 41 */	bl unlink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1Fv
+lbl_801855B8:
+/* 801855B8 001813F8  38 00 00 00 */	li r0, 0
+/* 801855BC 001813FC  90 1E 00 58 */	stw r0, 0x58(r30)
+/* 801855C0 00181400  38 61 00 64 */	addi r3, r1, 0x64
+/* 801855C4 00181404  80 01 00 70 */	lwz r0, 0x70(r1)
+/* 801855C8 00181408  2C 00 00 00 */	cmpwi r0, 0
+/* 801855CC 0018140C  41 82 00 08 */	beq lbl_801855D4
+/* 801855D0 00181410  90 1E 00 58 */	stw r0, 0x58(r30)
+lbl_801855D4:
+/* 801855D4 00181414  4B FF 70 11 */	bl isLink__Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1CFv
+/* 801855D8 00181418  2C 03 00 00 */	cmpwi r3, 0
+/* 801855DC 0018141C  41 82 00 2C */	beq lbl_80185608
+/* 801855E0 00181420  83 41 00 6C */	lwz r26, 0x6c(r1)
+/* 801855E4 00181424  93 5E 00 54 */	stw r26, 0x54(r30)
+/* 801855E8 00181428  38 1A 00 04 */	addi r0, r26, 4
+/* 801855EC 0018142C  90 01 00 08 */	stw r0, 8(r1)
+/* 801855F0 00181430  38 7E 00 4C */	addi r3, r30, 0x4c
+/* 801855F4 00181434  4B FF 70 4D */	bl GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1
+/* 801855F8 00181438  7C 65 1B 78 */	mr r5, r3
+/* 801855FC 0018143C  7F 43 D3 78 */	mr r3, r26
+/* 80185600 00181440  38 81 00 08 */	addi r4, r1, 8
+/* 80185604 00181444  4B F9 A7 AD */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
+lbl_80185608:
+/* 80185608 00181448  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 8018560C 0018144C  90 1E 00 5C */	stw r0, 0x5c(r30)
+/* 80185610 00181450  80 01 00 78 */	lwz r0, 0x78(r1)
+/* 80185614 00181454  90 1E 00 60 */	stw r0, 0x60(r30)
+/* 80185618 00181458  80 61 00 7C */	lwz r3, 0x7c(r1)
+/* 8018561C 0018145C  80 01 00 80 */	lwz r0, 0x80(r1)
+/* 80185620 00181460  90 7E 00 64 */	stw r3, 0x64(r30)
+/* 80185624 00181464  90 1E 00 68 */	stw r0, 0x68(r30)
+/* 80185628 00181468  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 8018562C 0018146C  90 1E 00 6C */	stw r0, 0x6c(r30)
+/* 80185630 00181470  88 01 00 88 */	lbz r0, 0x88(r1)
+/* 80185634 00181474  98 1E 00 70 */	stb r0, 0x70(r30)
+/* 80185638 00181478  88 01 00 89 */	lbz r0, 0x89(r1)
+/* 8018563C 0018147C  98 1E 00 71 */	stb r0, 0x71(r30)
+/* 80185640 00181480  38 61 00 18 */	addi r3, r1, 0x18
+/* 80185644 00181484  38 80 FF FF */	li r4, -1
+/* 80185648 00181488  4B FF A5 D9 */	bl __dt__Q36effect6detail10PtclEffectFv
+/* 8018564C 0018148C  7F C3 F3 78 */	mr r3, r30
+/* 80185650 00181490  4B FF EA 3D */	bl isValid__Q36effect6detail10PtclEffectCFv
+/* 80185654 00181494  2C 03 00 00 */	cmpwi r3, 0
+/* 80185658 00181498  41 82 00 20 */	beq lbl_80185678
+/* 8018565C 0018149C  7F DC F3 78 */	mr r28, r30
+/* 80185660 001814A0  48 00 00 18 */	b lbl_80185678
+lbl_80185664:
+/* 80185664 001814A4  3B FF 00 01 */	addi r31, r31, 1
+/* 80185668 001814A8  3B BD 00 74 */	addi r29, r29, 0x74
+lbl_8018566C:
+/* 8018566C 001814AC  80 19 00 68 */	lwz r0, 0x68(r25)
+/* 80185670 001814B0  7C 1F 00 40 */	cmplw r31, r0
+/* 80185674 001814B4  41 80 FD 58 */	blt lbl_801853CC
+lbl_80185678:
+/* 80185678 001814B8  7F 83 E3 78 */	mr r3, r28
+lbl_8018567C:
+/* 8018567C 001814BC  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80185680 001814C0  4B E8 1D 01 */	bl func_80007380
+/* 80185684 001814C4  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 80185688 001814C8  7C 08 03 A6 */	mtlr r0
+/* 8018568C 001814CC  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 80185690 001814D0  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22
+$$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22:
+	.incbin "baserom.dol", 0x44F520, 0x128
+.global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$21
+$$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$21:
+	.incbin "baserom.dol", 0x44F648, 0x14
+.global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$20
+$$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$20:
+	.incbin "baserom.dol", 0x44F65C, 0x30
+.global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv
+$$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv:
+	.incbin "baserom.dol", 0x44F68C, 0x14
+.global $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20
+$$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv$$20:
+	.incbin "baserom.dol", 0x44F6A0, 0x34
+.global $$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv
+$$2STRING$$2ptr__Q34nw4r2ef10ResEmitterFv:
+	.incbin "baserom.dol", 0x44F6D4, 0x14
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global isExist___Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1
+isExist___Q33hel6common53PrivateSingleton$$0Q36effect6detail17PtclEffectManager$$1:
+	.skip 0x8

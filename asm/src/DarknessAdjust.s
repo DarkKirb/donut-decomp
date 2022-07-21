@@ -1,0 +1,137 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step3sfx14DarknessAdjustFRQ33scn4step9Component
+__ct__Q43scn4step3sfx14DarknessAdjustFRQ33scn4step9Component:
+/* 803CCDEC 003C8C2C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803CCDF0 003C8C30  7C 08 02 A6 */	mflr r0
+/* 803CCDF4 003C8C34  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803CCDF8 003C8C38  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803CCDFC 003C8C3C  93 C1 00 08 */	stw r30, 8(r1)
+/* 803CCE00 003C8C40  7C 7E 1B 78 */	mr r30, r3
+/* 803CCE04 003C8C44  7C 9F 23 78 */	mr r31, r4
+/* 803CCE08 003C8C48  3C 80 80 49 */	lis r4, $$252031@ha
+/* 803CCE0C 003C8C4C  38 84 2C 38 */	addi r4, r4, $$252031@l
+/* 803CCE10 003C8C50  4B E0 8E 19 */	bl __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
+/* 803CCE14 003C8C54  38 00 00 00 */	li r0, 0
+/* 803CCE18 003C8C58  98 1E 00 10 */	stb r0, 0x10(r30)
+/* 803CCE1C 003C8C5C  7F E3 FB 78 */	mr r3, r31
+/* 803CCE20 003C8C60  4B DA 95 A1 */	bl __rf__Q33hel6common25ScopedPtr$$0Q23app7AppImpl$$1CFv
+/* 803CCE24 003C8C64  80 03 04 9C */	lwz r0, 0x49c(r3)
+/* 803CCE28 003C8C68  2C 00 00 2F */	cmpwi r0, 0x2f
+/* 803CCE2C 003C8C6C  40 82 00 0C */	bne lbl_803CCE38
+/* 803CCE30 003C8C70  38 00 00 01 */	li r0, 1
+/* 803CCE34 003C8C74  98 1E 00 10 */	stb r0, 0x10(r30)
+lbl_803CCE38:
+/* 803CCE38 003C8C78  7F C3 F3 78 */	mr r3, r30
+/* 803CCE3C 003C8C7C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803CCE40 003C8C80  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803CCE44 003C8C84  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803CCE48 003C8C88  7C 08 03 A6 */	mtlr r0
+/* 803CCE4C 003C8C8C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803CCE50 003C8C90  4E 80 00 20 */	blr 
+
+.global draw__Q43scn4step3sfx14DarknessAdjustFv
+draw__Q43scn4step3sfx14DarknessAdjustFv:
+/* 803CCE54 003C8C94  94 21 FF 00 */	stwu r1, -0x100(r1)
+/* 803CCE58 003C8C98  7C 08 02 A6 */	mflr r0
+/* 803CCE5C 003C8C9C  90 01 01 04 */	stw r0, 0x104(r1)
+/* 803CCE60 003C8CA0  93 E1 00 FC */	stw r31, 0xfc(r1)
+/* 803CCE64 003C8CA4  7C 7F 1B 78 */	mr r31, r3
+/* 803CCE68 003C8CA8  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 803CCE6C 003C8CAC  C0 22 DC 00 */	lfs f1, $$252071-_SDA2_BASE_(r2)
+/* 803CCE70 003C8CB0  C0 42 DC 04 */	lfs f2, $$252072-_SDA2_BASE_(r2)
+/* 803CCE74 003C8CB4  FC 60 10 90 */	fmr f3, f2
+/* 803CCE78 003C8CB8  FC 80 08 90 */	fmr f4, f1
+/* 803CCE7C 003C8CBC  C0 A2 DC 08 */	lfs f5, $$252073-_SDA2_BASE_(r2)
+/* 803CCE80 003C8CC0  FC C0 08 90 */	fmr f6, f1
+/* 803CCE84 003C8CC4  4B DD 1C A5 */	bl CreateOrtho__Q33hel4math8Matrix44Fffffff
+/* 803CCE88 003C8CC8  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 803CCE8C 003C8CCC  38 80 00 00 */	li r4, 0
+/* 803CCE90 003C8CD0  4B DC 81 C5 */	bl SetupGX__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix44b
+/* 803CCE94 003C8CD4  3C 60 80 54 */	lis r3, BASIS_Z__Q33hel4math7Vector3@ha
+/* 803CCE98 003C8CD8  38 83 53 00 */	addi r4, r3, BASIS_Z__Q33hel4math7Vector3@l
+/* 803CCE9C 003C8CDC  80 64 00 00 */	lwz r3, 0(r4)
+/* 803CCEA0 003C8CE0  80 04 00 04 */	lwz r0, 4(r4)
+/* 803CCEA4 003C8CE4  90 61 00 08 */	stw r3, 8(r1)
+/* 803CCEA8 003C8CE8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 803CCEAC 003C8CEC  80 04 00 08 */	lwz r0, 8(r4)
+/* 803CCEB0 003C8CF0  90 01 00 10 */	stw r0, 0x10(r1)
+/* 803CCEB4 003C8CF4  C0 01 00 08 */	lfs f0, 8(r1)
+/* 803CCEB8 003C8CF8  C0 22 DC 04 */	lfs f1, $$252072-_SDA2_BASE_(r2)
+/* 803CCEBC 003C8CFC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803CCEC0 003C8D00  D0 01 00 08 */	stfs f0, 8(r1)
+/* 803CCEC4 003C8D04  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 803CCEC8 003C8D08  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803CCECC 003C8D0C  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803CCED0 003C8D10  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 803CCED4 003C8D14  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803CCED8 003C8D18  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 803CCEDC 003C8D1C  80 61 00 08 */	lwz r3, 8(r1)
+/* 803CCEE0 003C8D20  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 803CCEE4 003C8D24  90 61 00 44 */	stw r3, 0x44(r1)
+/* 803CCEE8 003C8D28  90 01 00 48 */	stw r0, 0x48(r1)
+/* 803CCEEC 003C8D2C  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 803CCEF0 003C8D30  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 803CCEF4 003C8D34  38 61 00 80 */	addi r3, r1, 0x80
+/* 803CCEF8 003C8D38  3C 80 80 54 */	lis r4, ZERO__Q33hel4math7Vector3@ha
+/* 803CCEFC 003C8D3C  38 84 52 D0 */	addi r4, r4, ZERO__Q33hel4math7Vector3@l
+/* 803CCF00 003C8D40  3C A0 80 54 */	lis r5, BASIS_Y__Q33hel4math7Vector3@ha
+/* 803CCF04 003C8D44  38 A5 52 F4 */	addi r5, r5, BASIS_Y__Q33hel4math7Vector3@l
+/* 803CCF08 003C8D48  38 C1 00 44 */	addi r6, r1, 0x44
+/* 803CCF0C 003C8D4C  4B DD 18 A5 */	bl CreateLookAt__Q33hel4math8Matrix34FRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 803CCF10 003C8D50  38 61 00 80 */	addi r3, r1, 0x80
+/* 803CCF14 003C8D54  4B DC 84 01 */	bl SetViewMtx__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34
+/* 803CCF18 003C8D58  7F E3 FB 78 */	mr r3, r31
+/* 803CCF1C 003C8D5C  4B F7 4C 31 */	bl data$$0Q43scn4step4hero15NodeAttachParam$$1__Q25param8JITParamCFv_RCQ43scn4step4hero15NodeAttachParam
+/* 803CCF20 003C8D60  4B DC 83 C5 */	bl SetColor__Q23gfx12EasyRender3DFRC8_GXColor
+/* 803CCF24 003C8D64  C0 22 DC 08 */	lfs f1, $$252073-_SDA2_BASE_(r2)
+/* 803CCF28 003C8D68  C0 42 DC 00 */	lfs f2, $$252071-_SDA2_BASE_(r2)
+/* 803CCF2C 003C8D6C  4B DC A8 91 */	bl SetZBufferRange__Q23gfx7UtilityFff
+/* 803CCF30 003C8D70  38 60 00 01 */	li r3, 1
+/* 803CCF34 003C8D74  38 80 00 05 */	li r4, 5
+/* 803CCF38 003C8D78  38 A0 00 00 */	li r5, 0
+/* 803CCF3C 003C8D7C  4B C6 B8 E5 */	bl GXSetZMode
+/* 803CCF40 003C8D80  C0 22 DC 04 */	lfs f1, $$252072-_SDA2_BASE_(r2)
+/* 803CCF44 003C8D84  D0 21 00 14 */	stfs f1, 0x14(r1)
+/* 803CCF48 003C8D88  D0 21 00 18 */	stfs f1, 0x18(r1)
+/* 803CCF4C 003C8D8C  D0 21 00 1C */	stfs f1, 0x1c(r1)
+/* 803CCF50 003C8D90  C0 02 DC 00 */	lfs f0, $$252071-_SDA2_BASE_(r2)
+/* 803CCF54 003C8D94  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 803CCF58 003C8D98  D0 21 00 24 */	stfs f1, 0x24(r1)
+/* 803CCF5C 003C8D9C  D0 21 00 28 */	stfs f1, 0x28(r1)
+/* 803CCF60 003C8DA0  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 803CCF64 003C8DA4  D0 01 00 30 */	stfs f0, 0x30(r1)
+/* 803CCF68 003C8DA8  D0 21 00 34 */	stfs f1, 0x34(r1)
+/* 803CCF6C 003C8DAC  D0 21 00 38 */	stfs f1, 0x38(r1)
+/* 803CCF70 003C8DB0  D0 01 00 3C */	stfs f0, 0x3c(r1)
+/* 803CCF74 003C8DB4  D0 21 00 40 */	stfs f1, 0x40(r1)
+/* 803CCF78 003C8DB8  38 61 00 50 */	addi r3, r1, 0x50
+/* 803CCF7C 003C8DBC  4B C6 35 65 */	bl PSMTXIdentity
+/* 803CCF80 003C8DC0  38 61 00 50 */	addi r3, r1, 0x50
+/* 803CCF84 003C8DC4  38 81 00 38 */	addi r4, r1, 0x38
+/* 803CCF88 003C8DC8  38 A1 00 2C */	addi r5, r1, 0x2c
+/* 803CCF8C 003C8DCC  38 C1 00 20 */	addi r6, r1, 0x20
+/* 803CCF90 003C8DD0  38 E1 00 14 */	addi r7, r1, 0x14
+/* 803CCF94 003C8DD4  4B DC 85 D1 */	bl DrawQuadFill__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
+/* 803CCF98 003C8DD8  83 E1 00 FC */	lwz r31, 0xfc(r1)
+/* 803CCF9C 003C8DDC  80 01 01 04 */	lwz r0, 0x104(r1)
+/* 803CCFA0 003C8DE0  7C 08 03 A6 */	mtlr r0
+/* 803CCFA4 003C8DE4  38 21 01 00 */	addi r1, r1, 0x100
+/* 803CCFA8 003C8DE8  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$252031
+$$252031:
+	.incbin "baserom.dol", 0x48ED38, 0x18
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$252071
+$$252071:
+	.incbin "baserom.dol", 0x49E6C0, 0x4
+.global $$252072
+$$252072:
+	.incbin "baserom.dol", 0x49E6C4, 0x4
+.global $$252073
+$$252073:
+	.incbin "baserom.dol", 0x49E6C8, 0x8

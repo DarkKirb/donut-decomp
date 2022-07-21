@@ -1,0 +1,1079 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q53scn4step4info9challenge10MasterIconFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
+__ct__Q53scn4step4info9challenge10MasterIconFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
+/* 803B38B8 003AF6F8  94 21 FD E0 */	stwu r1, -0x220(r1)
+/* 803B38BC 003AF6FC  7C 08 02 A6 */	mflr r0
+/* 803B38C0 003AF700  90 01 02 24 */	stw r0, 0x224(r1)
+/* 803B38C4 003AF704  39 61 02 20 */	addi r11, r1, 0x220
+/* 803B38C8 003AF708  4B C5 3A 79 */	bl func_80007340
+/* 803B38CC 003AF70C  7C 7C 1B 78 */	mr r28, r3
+/* 803B38D0 003AF710  7C BF 2B 78 */	mr r31, r5
+/* 803B38D4 003AF714  7C DD 33 78 */	mr r29, r6
+/* 803B38D8 003AF718  3C A0 80 49 */	lis r5, $$256921@ha
+/* 803B38DC 003AF71C  3B C5 05 30 */	addi r30, r5, $$256921@l
+/* 803B38E0 003AF720  90 83 00 00 */	stw r4, 0(r3)
+/* 803B38E4 003AF724  38 61 01 A0 */	addi r3, r1, 0x1a0
+/* 803B38E8 003AF728  38 9E 00 00 */	addi r4, r30, 0
+/* 803B38EC 003AF72C  38 BE 00 14 */	addi r5, r30, 0x14
+/* 803B38F0 003AF730  7F E6 FB 78 */	mr r6, r31
+/* 803B38F4 003AF734  4B DF A4 71 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 803B38F8 003AF738  7C 64 1B 78 */	mr r4, r3
+/* 803B38FC 003AF73C  38 7C 00 04 */	addi r3, r28, 4
+/* 803B3900 003AF740  4B DF 88 91 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 803B3904 003AF744  38 61 01 3C */	addi r3, r1, 0x13c
+/* 803B3908 003AF748  38 9E 00 00 */	addi r4, r30, 0
+/* 803B390C 003AF74C  38 BE 00 24 */	addi r5, r30, 0x24
+/* 803B3910 003AF750  7F E6 FB 78 */	mr r6, r31
+/* 803B3914 003AF754  4B DF A4 51 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 803B3918 003AF758  7C 64 1B 78 */	mr r4, r3
+/* 803B391C 003AF75C  38 7C 01 D4 */	addi r3, r28, 0x1d4
+/* 803B3920 003AF760  4B DF 88 71 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 803B3924 003AF764  38 61 00 D8 */	addi r3, r1, 0xd8
+/* 803B3928 003AF768  38 9E 00 00 */	addi r4, r30, 0
+/* 803B392C 003AF76C  38 BE 00 34 */	addi r5, r30, 0x34
+/* 803B3930 003AF770  7F E6 FB 78 */	mr r6, r31
+/* 803B3934 003AF774  4B DF A4 31 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 803B3938 003AF778  7C 64 1B 78 */	mr r4, r3
+/* 803B393C 003AF77C  38 7C 03 A4 */	addi r3, r28, 0x3a4
+/* 803B3940 003AF780  4B DF 88 51 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 803B3944 003AF784  38 7C 05 74 */	addi r3, r28, 0x574
+/* 803B3948 003AF788  3F E0 80 54 */	lis r31, ZERO__Q33hel4math7Vector3@ha
+/* 803B394C 003AF78C  38 9F 52 D0 */	addi r4, r31, ZERO__Q33hel4math7Vector3@l
+/* 803B3950 003AF790  4B DC 8C 79 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3954 003AF794  38 7C 05 80 */	addi r3, r28, 0x580
+/* 803B3958 003AF798  38 9F 52 D0 */	addi r4, r31, 0x52d0
+/* 803B395C 003AF79C  4B DC 8C 6D */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3960 003AF7A0  38 7C 05 8C */	addi r3, r28, 0x58c
+/* 803B3964 003AF7A4  38 9F 52 D0 */	addi r4, r31, 0x52d0
+/* 803B3968 003AF7A8  4B DC 8C 61 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B396C 003AF7AC  38 7C 05 98 */	addi r3, r28, 0x598
+/* 803B3970 003AF7B0  38 9F 52 D0 */	addi r4, r31, 0x52d0
+/* 803B3974 003AF7B4  4B DC 8C 55 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3978 003AF7B8  38 7C 05 A4 */	addi r3, r28, 0x5a4
+/* 803B397C 003AF7BC  38 9F 52 D0 */	addi r4, r31, 0x52d0
+/* 803B3980 003AF7C0  4B DC 8C 49 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3984 003AF7C4  38 7C 05 B0 */	addi r3, r28, 0x5b0
+/* 803B3988 003AF7C8  38 9F 52 D0 */	addi r4, r31, 0x52d0
+/* 803B398C 003AF7CC  4B DC 8C 3D */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3990 003AF7D0  38 00 00 01 */	li r0, 1
+/* 803B3994 003AF7D4  90 1C 05 BC */	stw r0, 0x5bc(r28)
+/* 803B3998 003AF7D8  38 00 00 00 */	li r0, 0
+/* 803B399C 003AF7DC  90 1C 05 C0 */	stw r0, 0x5c0(r28)
+/* 803B39A0 003AF7E0  90 1C 05 C4 */	stw r0, 0x5c4(r28)
+/* 803B39A4 003AF7E4  98 1C 05 C8 */	stb r0, 0x5c8(r28)
+/* 803B39A8 003AF7E8  38 7C 00 04 */	addi r3, r28, 4
+/* 803B39AC 003AF7EC  7F A4 EB 78 */	mr r4, r29
+/* 803B39B0 003AF7F0  4B DF 97 89 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 803B39B4 003AF7F4  38 61 00 C4 */	addi r3, r1, 0xc4
+/* 803B39B8 003AF7F8  38 9C 00 04 */	addi r4, r28, 4
+/* 803B39BC 003AF7FC  38 BE 00 44 */	addi r5, r30, 0x44
+/* 803B39C0 003AF800  4B DF 94 51 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B39C4 003AF804  38 7C 01 D4 */	addi r3, r28, 0x1d4
+/* 803B39C8 003AF808  38 81 00 C4 */	addi r4, r1, 0xc4
+/* 803B39CC 003AF80C  4B DF 97 6D */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 803B39D0 003AF810  38 61 00 C4 */	addi r3, r1, 0xc4
+/* 803B39D4 003AF814  38 80 FF FF */	li r4, -1
+/* 803B39D8 003AF818  4B DC 48 49 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B39DC 003AF81C  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 803B39E0 003AF820  38 9C 00 04 */	addi r4, r28, 4
+/* 803B39E4 003AF824  38 BE 00 58 */	addi r5, r30, 0x58
+/* 803B39E8 003AF828  4B DF 94 29 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B39EC 003AF82C  38 7C 03 A4 */	addi r3, r28, 0x3a4
+/* 803B39F0 003AF830  38 81 00 B0 */	addi r4, r1, 0xb0
+/* 803B39F4 003AF834  4B DF 97 45 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 803B39F8 003AF838  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 803B39FC 003AF83C  38 80 FF FF */	li r4, -1
+/* 803B3A00 003AF840  4B DC 48 21 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3A04 003AF844  38 7C 01 D4 */	addi r3, r28, 0x1d4
+/* 803B3A08 003AF848  38 8D D3 D8 */	addi r4, r13, $$256927-_SDA_BASE_
+/* 803B3A0C 003AF84C  4B DF 95 89 */	bl play__Q23lyt6LayoutFPCc
+/* 803B3A10 003AF850  38 7C 01 D4 */	addi r3, r28, 0x1d4
+/* 803B3A14 003AF854  38 80 00 01 */	li r4, 1
+/* 803B3A18 003AF858  4B DF 97 09 */	bl changeDoLoop__Q23lyt6LayoutFb
+/* 803B3A1C 003AF85C  38 7C 03 A4 */	addi r3, r28, 0x3a4
+/* 803B3A20 003AF860  38 8D D3 DC */	addi r4, r13, $$256928-_SDA_BASE_
+/* 803B3A24 003AF864  4B DF 95 71 */	bl play__Q23lyt6LayoutFPCc
+/* 803B3A28 003AF868  38 7C 03 A4 */	addi r3, r28, 0x3a4
+/* 803B3A2C 003AF86C  38 80 00 01 */	li r4, 1
+/* 803B3A30 003AF870  4B DF 96 F1 */	bl changeDoLoop__Q23lyt6LayoutFb
+/* 803B3A34 003AF874  38 61 00 9C */	addi r3, r1, 0x9c
+/* 803B3A38 003AF878  38 9C 00 04 */	addi r4, r28, 4
+/* 803B3A3C 003AF87C  4B DF 93 89 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B3A40 003AF880  38 61 00 9C */	addi r3, r1, 0x9c
+/* 803B3A44 003AF884  4B DF 40 E5 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803B3A48 003AF888  38 61 00 9C */	addi r3, r1, 0x9c
+/* 803B3A4C 003AF88C  38 80 FF FF */	li r4, -1
+/* 803B3A50 003AF890  4B DC 47 D1 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3A54 003AF894  38 61 00 88 */	addi r3, r1, 0x88
+/* 803B3A58 003AF898  38 9C 03 A4 */	addi r4, r28, 0x3a4
+/* 803B3A5C 003AF89C  38 BE 00 68 */	addi r5, r30, 0x68
+/* 803B3A60 003AF8A0  4B DF 93 B1 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B3A64 003AF8A4  38 61 00 88 */	addi r3, r1, 0x88
+/* 803B3A68 003AF8A8  4B DF 40 C1 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803B3A6C 003AF8AC  38 61 00 88 */	addi r3, r1, 0x88
+/* 803B3A70 003AF8B0  38 80 FF FF */	li r4, -1
+/* 803B3A74 003AF8B4  4B DC 47 AD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3A78 003AF8B8  38 7C 00 04 */	addi r3, r28, 4
+/* 803B3A7C 003AF8BC  4B DF 98 A5 */	bl updateMatrix__Q23lyt6LayoutFv
+/* 803B3A80 003AF8C0  38 61 00 74 */	addi r3, r1, 0x74
+/* 803B3A84 003AF8C4  38 9C 00 04 */	addi r4, r28, 4
+/* 803B3A88 003AF8C8  38 BE 00 74 */	addi r5, r30, 0x74
+/* 803B3A8C 003AF8CC  4B DF 93 85 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B3A90 003AF8D0  38 61 00 2C */	addi r3, r1, 0x2c
+/* 803B3A94 003AF8D4  38 81 00 74 */	addi r4, r1, 0x74
+/* 803B3A98 003AF8D8  4B DF A7 51 */	bl trans__Q23lyt12PaneAccessorCFv
+/* 803B3A9C 003AF8DC  38 7C 05 74 */	addi r3, r28, 0x574
+/* 803B3AA0 003AF8E0  38 81 00 2C */	addi r4, r1, 0x2c
+/* 803B3AA4 003AF8E4  4B DC 8A A9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3AA8 003AF8E8  38 61 00 74 */	addi r3, r1, 0x74
+/* 803B3AAC 003AF8EC  38 80 FF FF */	li r4, -1
+/* 803B3AB0 003AF8F0  4B DC 47 71 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3AB4 003AF8F4  38 61 00 60 */	addi r3, r1, 0x60
+/* 803B3AB8 003AF8F8  38 9C 00 04 */	addi r4, r28, 4
+/* 803B3ABC 003AF8FC  38 BE 00 80 */	addi r5, r30, 0x80
+/* 803B3AC0 003AF900  4B DF 93 51 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B3AC4 003AF904  38 61 00 20 */	addi r3, r1, 0x20
+/* 803B3AC8 003AF908  38 81 00 60 */	addi r4, r1, 0x60
+/* 803B3ACC 003AF90C  4B DF A7 1D */	bl trans__Q23lyt12PaneAccessorCFv
+/* 803B3AD0 003AF910  38 7C 05 80 */	addi r3, r28, 0x580
+/* 803B3AD4 003AF914  38 81 00 20 */	addi r4, r1, 0x20
+/* 803B3AD8 003AF918  4B DC 8A 75 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3ADC 003AF91C  38 61 00 60 */	addi r3, r1, 0x60
+/* 803B3AE0 003AF920  38 80 FF FF */	li r4, -1
+/* 803B3AE4 003AF924  4B DC 47 3D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3AE8 003AF928  38 61 00 4C */	addi r3, r1, 0x4c
+/* 803B3AEC 003AF92C  38 9C 00 04 */	addi r4, r28, 4
+/* 803B3AF0 003AF930  38 BE 00 8C */	addi r5, r30, 0x8c
+/* 803B3AF4 003AF934  4B DF 93 1D */	bl pane__Q23lyt6LayoutFPCc
+/* 803B3AF8 003AF938  38 61 00 14 */	addi r3, r1, 0x14
+/* 803B3AFC 003AF93C  38 81 00 4C */	addi r4, r1, 0x4c
+/* 803B3B00 003AF940  4B DF A6 E9 */	bl trans__Q23lyt12PaneAccessorCFv
+/* 803B3B04 003AF944  38 7C 05 8C */	addi r3, r28, 0x58c
+/* 803B3B08 003AF948  38 81 00 14 */	addi r4, r1, 0x14
+/* 803B3B0C 003AF94C  4B DC 8A 41 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3B10 003AF950  38 61 00 4C */	addi r3, r1, 0x4c
+/* 803B3B14 003AF954  38 80 FF FF */	li r4, -1
+/* 803B3B18 003AF958  4B DC 47 09 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3B1C 003AF95C  38 61 00 38 */	addi r3, r1, 0x38
+/* 803B3B20 003AF960  38 9C 00 04 */	addi r4, r28, 4
+/* 803B3B24 003AF964  38 BE 00 9C */	addi r5, r30, 0x9c
+/* 803B3B28 003AF968  4B DF 92 E9 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B3B2C 003AF96C  38 61 00 08 */	addi r3, r1, 8
+/* 803B3B30 003AF970  38 81 00 38 */	addi r4, r1, 0x38
+/* 803B3B34 003AF974  4B DF A6 B5 */	bl trans__Q23lyt12PaneAccessorCFv
+/* 803B3B38 003AF978  38 7C 05 98 */	addi r3, r28, 0x598
+/* 803B3B3C 003AF97C  38 81 00 08 */	addi r4, r1, 8
+/* 803B3B40 003AF980  4B DC 8A 0D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3B44 003AF984  38 61 00 38 */	addi r3, r1, 0x38
+/* 803B3B48 003AF988  38 80 FF FF */	li r4, -1
+/* 803B3B4C 003AF98C  4B DC 46 D5 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B3B50 003AF990  7F 83 E3 78 */	mr r3, r28
+/* 803B3B54 003AF994  39 61 02 20 */	addi r11, r1, 0x220
+/* 803B3B58 003AF998  4B C5 38 35 */	bl func_8000738C
+/* 803B3B5C 003AF99C  80 01 02 24 */	lwz r0, 0x224(r1)
+/* 803B3B60 003AF9A0  7C 08 03 A6 */	mtlr r0
+/* 803B3B64 003AF9A4  38 21 02 20 */	addi r1, r1, 0x220
+/* 803B3B68 003AF9A8  4E 80 00 20 */	blr 
+
+.global setMasterPos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3
+setMasterPos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3:
+/* 803B3B6C 003AF9AC  38 63 05 B0 */	addi r3, r3, 0x5b0
+/* 803B3B70 003AF9B0  4B DC 89 DC */	b __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+
+.global setMasterWin__Q53scn4step4info9challenge10MasterIconFv
+setMasterWin__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B3B74 003AF9B4  38 00 00 00 */	li r0, 0
+/* 803B3B78 003AF9B8  90 03 05 C0 */	stw r0, 0x5c0(r3)
+/* 803B3B7C 003AF9BC  4E 80 00 20 */	blr 
+
+.global setMasterLose__Q53scn4step4info9challenge10MasterIconFv
+setMasterLose__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B3B80 003AF9C0  38 00 00 01 */	li r0, 1
+/* 803B3B84 003AF9C4  90 03 05 C0 */	stw r0, 0x5c0(r3)
+/* 803B3B88 003AF9C8  4E 80 00 20 */	blr 
+
+.global updateFrame__Q53scn4step4info9challenge10MasterIconFv
+updateFrame__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B3B8C 003AF9CC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803B3B90 003AF9D0  7C 08 02 A6 */	mflr r0
+/* 803B3B94 003AF9D4  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803B3B98 003AF9D8  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 803B3B9C 003AF9DC  7C 7F 1B 78 */	mr r31, r3
+/* 803B3BA0 003AF9E0  80 63 00 00 */	lwz r3, 0(r3)
+/* 803B3BA4 003AF9E4  4B E6 CE AD */	bl infoManager__Q33scn4step9ComponentFv
+/* 803B3BA8 003AF9E8  4B FF 9A 1D */	bl isStop__Q43scn4step4info7ManagerCFv
+/* 803B3BAC 003AF9EC  2C 03 00 00 */	cmpwi r3, 0
+/* 803B3BB0 003AF9F0  41 82 00 0C */	beq lbl_803B3BBC
+/* 803B3BB4 003AF9F4  7F E3 FB 78 */	mr r3, r31
+/* 803B3BB8 003AF9F8  48 00 09 5D */	bl goal__Q53scn4step4info9challenge10MasterIconFv
+lbl_803B3BBC:
+/* 803B3BBC 003AF9FC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B3BC0 003AFA00  4B E6 CF C9 */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 803B3BC4 003AFA04  7C 64 1B 78 */	mr r4, r3
+/* 803B3BC8 003AFA08  38 61 00 18 */	addi r3, r1, 0x18
+/* 803B3BCC 003AFA0C  4B EB 20 9D */	bl getCenter__Q43scn4step6camera10MainCameraCFv
+/* 803B3BD0 003AFA10  38 61 00 2C */	addi r3, r1, 0x2c
+/* 803B3BD4 003AFA14  38 81 00 18 */	addi r4, r1, 0x18
+/* 803B3BD8 003AFA18  4B DE B8 85 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803B3BDC 003AFA1C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B3BE0 003AFA20  4B E6 CF 41 */	bl cameraAccessor__Q33scn4step9ComponentCFv
+/* 803B3BE4 003AFA24  7C 64 1B 78 */	mr r4, r3
+/* 803B3BE8 003AFA28  38 61 00 10 */	addi r3, r1, 0x10
+/* 803B3BEC 003AFA2C  38 A0 00 00 */	li r5, 0
+/* 803B3BF0 003AFA30  38 C1 00 2C */	addi r6, r1, 0x2c
+/* 803B3BF4 003AFA34  4B EA F4 55 */	bl toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel4math7Vector3
+/* 803B3BF8 003AFA38  38 61 00 44 */	addi r3, r1, 0x44
+/* 803B3BFC 003AFA3C  38 81 00 10 */	addi r4, r1, 0x10
+/* 803B3C00 003AFA40  4B DE B8 5D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803B3C04 003AFA44  38 7F 00 04 */	addi r3, r31, 4
+/* 803B3C08 003AFA48  4B DF 94 B1 */	bl updateFrame__Q23lyt6LayoutFv
+/* 803B3C0C 003AFA4C  38 7F 01 D4 */	addi r3, r31, 0x1d4
+/* 803B3C10 003AFA50  4B DF 94 A9 */	bl updateFrame__Q23lyt6LayoutFv
+/* 803B3C14 003AFA54  38 7F 03 A4 */	addi r3, r31, 0x3a4
+/* 803B3C18 003AFA58  4B DF 94 A1 */	bl updateFrame__Q23lyt6LayoutFv
+/* 803B3C1C 003AFA5C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B3C20 003AFA60  4B E6 CE 31 */	bl infoManager__Q33scn4step9ComponentFv
+/* 803B3C24 003AFA64  4B FF 99 F1 */	bl challenge__Q43scn4step4info7ManagerFv
+/* 803B3C28 003AFA68  38 63 10 7C */	addi r3, r3, 0x107c
+/* 803B3C2C 003AFA6C  48 00 15 79 */	bl isGoal__Q53scn4step4info9challenge5RadarFv
+/* 803B3C30 003AFA70  2C 03 00 00 */	cmpwi r3, 0
+/* 803B3C34 003AFA74  41 82 00 0C */	beq lbl_803B3C40
+/* 803B3C38 003AFA78  7F E3 FB 78 */	mr r3, r31
+/* 803B3C3C 003AFA7C  48 00 08 D9 */	bl goal__Q53scn4step4info9challenge10MasterIconFv
+lbl_803B3C40:
+/* 803B3C40 003AFA80  88 1F 05 C8 */	lbz r0, 0x5c8(r31)
+/* 803B3C44 003AFA84  2C 00 00 00 */	cmpwi r0, 0
+/* 803B3C48 003AFA88  41 82 00 28 */	beq lbl_803B3C70
+/* 803B3C4C 003AFA8C  38 7F 01 D4 */	addi r3, r31, 0x1d4
+/* 803B3C50 003AFA90  4B DF 94 C9 */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803B3C54 003AFA94  2C 03 00 00 */	cmpwi r3, 0
+/* 803B3C58 003AFA98  41 82 00 30 */	beq lbl_803B3C88
+/* 803B3C5C 003AFA9C  38 00 00 00 */	li r0, 0
+/* 803B3C60 003AFAA0  98 1F 05 C8 */	stb r0, 0x5c8(r31)
+/* 803B3C64 003AFAA4  7F E3 FB 78 */	mr r3, r31
+/* 803B3C68 003AFAA8  48 00 06 4D */	bl setFace__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3C6C 003AFAAC  48 00 00 1C */	b lbl_803B3C88
+lbl_803B3C70:
+/* 803B3C70 003AFAB0  80 7F 05 C4 */	lwz r3, 0x5c4(r31)
+/* 803B3C74 003AFAB4  80 1F 05 C0 */	lwz r0, 0x5c0(r31)
+/* 803B3C78 003AFAB8  7C 03 00 00 */	cmpw r3, r0
+/* 803B3C7C 003AFABC  41 82 00 0C */	beq lbl_803B3C88
+/* 803B3C80 003AFAC0  7F E3 FB 78 */	mr r3, r31
+/* 803B3C84 003AFAC4  48 00 06 31 */	bl setFace__Q53scn4step4info9challenge10MasterIconFv
+lbl_803B3C88:
+/* 803B3C88 003AFAC8  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B3C8C 003AFACC  4B E6 CE 95 */	bl cameraAccessor__Q33scn4step9ComponentCFv
+/* 803B3C90 003AFAD0  7C 64 1B 78 */	mr r4, r3
+/* 803B3C94 003AFAD4  38 61 00 08 */	addi r3, r1, 8
+/* 803B3C98 003AFAD8  38 A0 00 00 */	li r5, 0
+/* 803B3C9C 003AFADC  38 DF 05 B0 */	addi r6, r31, 0x5b0
+/* 803B3CA0 003AFAE0  4B EA F3 A9 */	bl toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel4math7Vector3
+/* 803B3CA4 003AFAE4  38 61 00 38 */	addi r3, r1, 0x38
+/* 803B3CA8 003AFAE8  38 81 00 08 */	addi r4, r1, 8
+/* 803B3CAC 003AFAEC  4B DE B7 B1 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803B3CB0 003AFAF0  38 61 00 38 */	addi r3, r1, 0x38
+/* 803B3CB4 003AFAF4  38 81 00 44 */	addi r4, r1, 0x44
+/* 803B3CB8 003AFAF8  4B DE BF D1 */	bl __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B3CBC 003AFAFC  C0 1F 05 74 */	lfs f0, 0x574(r31)
+/* 803B3CC0 003AFB00  C0 21 00 38 */	lfs f1, 0x38(r1)
+/* 803B3CC4 003AFB04  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 803B3CC8 003AFB08  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3CCC 003AFB0C  40 82 00 38 */	bne lbl_803B3D04
+/* 803B3CD0 003AFB10  C0 1F 05 80 */	lfs f0, 0x580(r31)
+/* 803B3CD4 003AFB14  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803B3CD8 003AFB18  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3CDC 003AFB1C  40 82 00 28 */	bne lbl_803B3D04
+/* 803B3CE0 003AFB20  C0 1F 05 84 */	lfs f0, 0x584(r31)
+/* 803B3CE4 003AFB24  C0 21 00 3C */	lfs f1, 0x3c(r1)
+/* 803B3CE8 003AFB28  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 803B3CEC 003AFB2C  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3CF0 003AFB30  40 82 00 14 */	bne lbl_803B3D04
+/* 803B3CF4 003AFB34  C0 1F 05 78 */	lfs f0, 0x578(r31)
+/* 803B3CF8 003AFB38  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803B3CFC 003AFB3C  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3D00 003AFB40  41 82 00 28 */	beq lbl_803B3D28
+lbl_803B3D04:
+/* 803B3D04 003AFB44  80 61 00 38 */	lwz r3, 0x38(r1)
+/* 803B3D08 003AFB48  80 01 00 3C */	lwz r0, 0x3c(r1)
+/* 803B3D0C 003AFB4C  90 61 00 20 */	stw r3, 0x20(r1)
+/* 803B3D10 003AFB50  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803B3D14 003AFB54  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 803B3D18 003AFB58  90 01 00 28 */	stw r0, 0x28(r1)
+/* 803B3D1C 003AFB5C  7F E3 FB 78 */	mr r3, r31
+/* 803B3D20 003AFB60  38 81 00 20 */	addi r4, r1, 0x20
+/* 803B3D24 003AFB64  48 00 01 DD */	bl setIcon__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3
+lbl_803B3D28:
+/* 803B3D28 003AFB68  C0 1F 05 8C */	lfs f0, 0x58c(r31)
+/* 803B3D2C 003AFB6C  C0 21 00 38 */	lfs f1, 0x38(r1)
+/* 803B3D30 003AFB70  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 803B3D34 003AFB74  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3D38 003AFB78  40 82 00 68 */	bne lbl_803B3DA0
+/* 803B3D3C 003AFB7C  C0 1F 05 98 */	lfs f0, 0x598(r31)
+/* 803B3D40 003AFB80  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803B3D44 003AFB84  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3D48 003AFB88  40 82 00 58 */	bne lbl_803B3DA0
+/* 803B3D4C 003AFB8C  C0 1F 05 9C */	lfs f0, 0x59c(r31)
+/* 803B3D50 003AFB90  C0 21 00 3C */	lfs f1, 0x3c(r1)
+/* 803B3D54 003AFB94  FC 00 08 40 */	fcmpo cr0, f0, f1
+/* 803B3D58 003AFB98  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3D5C 003AFB9C  40 82 00 44 */	bne lbl_803B3DA0
+/* 803B3D60 003AFBA0  C0 1F 05 90 */	lfs f0, 0x590(r31)
+/* 803B3D64 003AFBA4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803B3D68 003AFBA8  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3D6C 003AFBAC  40 82 00 34 */	bne lbl_803B3DA0
+/* 803B3D70 003AFBB0  80 1F 05 BC */	lwz r0, 0x5bc(r31)
+/* 803B3D74 003AFBB4  2C 00 00 02 */	cmpwi r0, 2
+/* 803B3D78 003AFBB8  41 82 00 10 */	beq lbl_803B3D88
+/* 803B3D7C 003AFBBC  2C 00 00 03 */	cmpwi r0, 3
+/* 803B3D80 003AFBC0  41 82 00 14 */	beq lbl_803B3D94
+/* 803B3D84 003AFBC4  48 00 00 48 */	b lbl_803B3DCC
+lbl_803B3D88:
+/* 803B3D88 003AFBC8  7F E3 FB 78 */	mr r3, r31
+/* 803B3D8C 003AFBCC  48 00 06 E1 */	bl disappear2__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3D90 003AFBD0  48 00 00 3C */	b lbl_803B3DCC
+lbl_803B3D94:
+/* 803B3D94 003AFBD4  7F E3 FB 78 */	mr r3, r31
+/* 803B3D98 003AFBD8  48 00 06 79 */	bl disappear__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3D9C 003AFBDC  48 00 00 30 */	b lbl_803B3DCC
+lbl_803B3DA0:
+/* 803B3DA0 003AFBE0  80 1F 05 BC */	lwz r0, 0x5bc(r31)
+/* 803B3DA4 003AFBE4  2C 00 00 00 */	cmpwi r0, 0
+/* 803B3DA8 003AFBE8  41 82 00 10 */	beq lbl_803B3DB8
+/* 803B3DAC 003AFBEC  2C 00 00 01 */	cmpwi r0, 1
+/* 803B3DB0 003AFBF0  41 82 00 14 */	beq lbl_803B3DC4
+/* 803B3DB4 003AFBF4  48 00 00 18 */	b lbl_803B3DCC
+lbl_803B3DB8:
+/* 803B3DB8 003AFBF8  7F E3 FB 78 */	mr r3, r31
+/* 803B3DBC 003AFBFC  48 00 05 AD */	bl appear2__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3DC0 003AFC00  48 00 00 0C */	b lbl_803B3DCC
+lbl_803B3DC4:
+/* 803B3DC4 003AFC04  7F E3 FB 78 */	mr r3, r31
+/* 803B3DC8 003AFC08  48 00 05 45 */	bl appear__Q53scn4step4info9challenge10MasterIconFv
+lbl_803B3DCC:
+/* 803B3DCC 003AFC0C  80 1F 05 BC */	lwz r0, 0x5bc(r31)
+/* 803B3DD0 003AFC10  2C 00 00 00 */	cmpwi r0, 0
+/* 803B3DD4 003AFC14  41 82 00 18 */	beq lbl_803B3DEC
+/* 803B3DD8 003AFC18  2C 00 00 02 */	cmpwi r0, 2
+/* 803B3DDC 003AFC1C  41 82 00 1C */	beq lbl_803B3DF8
+/* 803B3DE0 003AFC20  2C 00 00 04 */	cmpwi r0, 4
+/* 803B3DE4 003AFC24  41 82 00 20 */	beq lbl_803B3E04
+/* 803B3DE8 003AFC28  48 00 00 24 */	b lbl_803B3E0C
+lbl_803B3DEC:
+/* 803B3DEC 003AFC2C  7F E3 FB 78 */	mr r3, r31
+/* 803B3DF0 003AFC30  48 00 08 45 */	bl stateHide__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3DF4 003AFC34  48 00 00 18 */	b lbl_803B3E0C
+lbl_803B3DF8:
+/* 803B3DF8 003AFC38  7F E3 FB 78 */	mr r3, r31
+/* 803B3DFC 003AFC3C  48 00 08 99 */	bl stateShow__Q53scn4step4info9challenge10MasterIconFv
+/* 803B3E00 003AFC40  48 00 00 0C */	b lbl_803B3E0C
+lbl_803B3E04:
+/* 803B3E04 003AFC44  7F E3 FB 78 */	mr r3, r31
+/* 803B3E08 003AFC48  48 00 08 CD */	bl stateGoal__Q53scn4step4info9challenge10MasterIconFv
+lbl_803B3E0C:
+/* 803B3E0C 003AFC4C  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 803B3E10 003AFC50  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803B3E14 003AFC54  7C 08 03 A6 */	mtlr r0
+/* 803B3E18 003AFC58  38 21 00 60 */	addi r1, r1, 0x60
+/* 803B3E1C 003AFC5C  4E 80 00 20 */	blr 
+
+.global crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3
+crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3:
+/* 803B3E20 003AFC60  C0 05 00 00 */	lfs f0, 0(r5)
+/* 803B3E24 003AFC64  C1 04 00 00 */	lfs f8, 0(r4)
+/* 803B3E28 003AFC68  EC E0 40 28 */	fsubs f7, f0, f8
+/* 803B3E2C 003AFC6C  C0 C7 00 04 */	lfs f6, 4(r7)
+/* 803B3E30 003AFC70  C0 06 00 04 */	lfs f0, 4(r6)
+/* 803B3E34 003AFC74  EC A6 00 28 */	fsubs f5, f6, f0
+/* 803B3E38 003AFC78  C0 05 00 04 */	lfs f0, 4(r5)
+/* 803B3E3C 003AFC7C  C0 44 00 04 */	lfs f2, 4(r4)
+/* 803B3E40 003AFC80  EC 80 10 28 */	fsubs f4, f0, f2
+/* 803B3E44 003AFC84  C0 27 00 00 */	lfs f1, 0(r7)
+/* 803B3E48 003AFC88  C0 06 00 00 */	lfs f0, 0(r6)
+/* 803B3E4C 003AFC8C  EC 61 00 28 */	fsubs f3, f1, f0
+/* 803B3E50 003AFC90  EC 04 00 F2 */	fmuls f0, f4, f3
+/* 803B3E54 003AFC94  ED 27 01 78 */	fmsubs f9, f7, f5, f0
+/* 803B3E58 003AFC98  EC 46 10 28 */	fsubs f2, f6, f2
+/* 803B3E5C 003AFC9C  EC 21 40 28 */	fsubs f1, f1, f8
+/* 803B3E60 003AFCA0  EC 04 00 72 */	fmuls f0, f4, f1
+/* 803B3E64 003AFCA4  EC 87 00 B8 */	fmsubs f4, f7, f2, f0
+/* 803B3E68 003AFCA8  EC 03 00 B2 */	fmuls f0, f3, f2
+/* 803B3E6C 003AFCAC  EC 25 00 78 */	fmsubs f1, f5, f1, f0
+/* 803B3E70 003AFCB0  C0 02 D9 B8 */	lfs f0, $$257025-_SDA2_BASE_(r2)
+/* 803B3E74 003AFCB4  FC 09 00 40 */	fcmpo cr0, f9, f0
+/* 803B3E78 003AFCB8  4C 41 13 82 */	cror 2, 1, 2
+/* 803B3E7C 003AFCBC  40 82 00 7C */	bne lbl_803B3EF8
+/* 803B3E80 003AFCC0  EC 41 48 24 */	fdivs f2, f1, f9
+/* 803B3E84 003AFCC4  EC 64 48 24 */	fdivs f3, f4, f9
+/* 803B3E88 003AFCC8  C0 22 D9 BC */	lfs f1, $$257026-_SDA2_BASE_(r2)
+/* 803B3E8C 003AFCCC  FC 01 10 40 */	fcmpo cr0, f1, f2
+/* 803B3E90 003AFCD0  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3E94 003AFCD4  40 82 00 64 */	bne lbl_803B3EF8
+/* 803B3E98 003AFCD8  C0 02 D9 C0 */	lfs f0, $$257027-_SDA2_BASE_(r2)
+/* 803B3E9C 003AFCDC  FC 02 00 40 */	fcmpo cr0, f2, f0
+/* 803B3EA0 003AFCE0  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3EA4 003AFCE4  40 82 00 54 */	bne lbl_803B3EF8
+/* 803B3EA8 003AFCE8  FC 01 18 40 */	fcmpo cr0, f1, f3
+/* 803B3EAC 003AFCEC  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3EB0 003AFCF0  40 82 00 48 */	bne lbl_803B3EF8
+/* 803B3EB4 003AFCF4  FC 03 00 40 */	fcmpo cr0, f3, f0
+/* 803B3EB8 003AFCF8  4C 40 13 82 */	cror 2, 0, 2
+/* 803B3EBC 003AFCFC  40 82 00 3C */	bne lbl_803B3EF8
+/* 803B3EC0 003AFD00  EC 02 41 FA */	fmadds f0, f2, f7, f8
+/* 803B3EC4 003AFD04  D0 08 00 00 */	stfs f0, 0(r8)
+/* 803B3EC8 003AFD08  C0 05 00 04 */	lfs f0, 4(r5)
+/* 803B3ECC 003AFD0C  C0 24 00 04 */	lfs f1, 4(r4)
+/* 803B3ED0 003AFD10  EC 00 08 28 */	fsubs f0, f0, f1
+/* 803B3ED4 003AFD14  EC 02 08 3A */	fmadds f0, f2, f0, f1
+/* 803B3ED8 003AFD18  D0 08 00 04 */	stfs f0, 4(r8)
+/* 803B3EDC 003AFD1C  C0 05 00 08 */	lfs f0, 8(r5)
+/* 803B3EE0 003AFD20  C0 24 00 08 */	lfs f1, 8(r4)
+/* 803B3EE4 003AFD24  EC 00 08 28 */	fsubs f0, f0, f1
+/* 803B3EE8 003AFD28  EC 02 08 3A */	fmadds f0, f2, f0, f1
+/* 803B3EEC 003AFD2C  D0 08 00 08 */	stfs f0, 8(r8)
+/* 803B3EF0 003AFD30  38 60 00 01 */	li r3, 1
+/* 803B3EF4 003AFD34  4E 80 00 20 */	blr 
+lbl_803B3EF8:
+/* 803B3EF8 003AFD38  38 60 00 00 */	li r3, 0
+/* 803B3EFC 003AFD3C  4E 80 00 20 */	blr 
+
+.global setIcon__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3
+setIcon__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3:
+/* 803B3F00 003AFD40  94 21 FE 90 */	stwu r1, -0x170(r1)
+/* 803B3F04 003AFD44  7C 08 02 A6 */	mflr r0
+/* 803B3F08 003AFD48  90 01 01 74 */	stw r0, 0x174(r1)
+/* 803B3F0C 003AFD4C  93 E1 01 6C */	stw r31, 0x16c(r1)
+/* 803B3F10 003AFD50  93 C1 01 68 */	stw r30, 0x168(r1)
+/* 803B3F14 003AFD54  7C 7E 1B 78 */	mr r30, r3
+/* 803B3F18 003AFD58  7C 9F 23 78 */	mr r31, r4
+/* 803B3F1C 003AFD5C  80 83 05 74 */	lwz r4, 0x574(r3)
+/* 803B3F20 003AFD60  80 03 05 78 */	lwz r0, 0x578(r3)
+/* 803B3F24 003AFD64  90 81 01 34 */	stw r4, 0x134(r1)
+/* 803B3F28 003AFD68  90 01 01 38 */	stw r0, 0x138(r1)
+/* 803B3F2C 003AFD6C  80 03 05 7C */	lwz r0, 0x57c(r3)
+/* 803B3F30 003AFD70  90 01 01 3C */	stw r0, 0x13c(r1)
+/* 803B3F34 003AFD74  80 83 05 80 */	lwz r4, 0x580(r3)
+/* 803B3F38 003AFD78  80 03 05 84 */	lwz r0, 0x584(r3)
+/* 803B3F3C 003AFD7C  90 81 01 28 */	stw r4, 0x128(r1)
+/* 803B3F40 003AFD80  90 01 01 2C */	stw r0, 0x12c(r1)
+/* 803B3F44 003AFD84  80 03 05 88 */	lwz r0, 0x588(r3)
+/* 803B3F48 003AFD88  90 01 01 30 */	stw r0, 0x130(r1)
+/* 803B3F4C 003AFD8C  38 61 01 1C */	addi r3, r1, 0x11c
+/* 803B3F50 003AFD90  C0 3E 05 74 */	lfs f1, 0x574(r30)
+/* 803B3F54 003AFD94  C0 5E 05 84 */	lfs f2, 0x584(r30)
+/* 803B3F58 003AFD98  C0 7E 05 7C */	lfs f3, 0x57c(r30)
+/* 803B3F5C 003AFD9C  4B D0 A1 65 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 803B3F60 003AFDA0  38 61 01 10 */	addi r3, r1, 0x110
+/* 803B3F64 003AFDA4  C0 3E 05 80 */	lfs f1, 0x580(r30)
+/* 803B3F68 003AFDA8  C0 5E 05 78 */	lfs f2, 0x578(r30)
+/* 803B3F6C 003AFDAC  C0 7E 05 88 */	lfs f3, 0x588(r30)
+/* 803B3F70 003AFDB0  4B D0 A1 51 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 803B3F74 003AFDB4  3C 60 80 54 */	lis r3, ZERO__Q33hel4math7Vector3@ha
+/* 803B3F78 003AFDB8  38 63 52 D0 */	addi r3, r3, ZERO__Q33hel4math7Vector3@l
+/* 803B3F7C 003AFDBC  80 C3 00 00 */	lwz r6, 0(r3)
+/* 803B3F80 003AFDC0  80 A3 00 04 */	lwz r5, 4(r3)
+/* 803B3F84 003AFDC4  90 C1 00 08 */	stw r6, 8(r1)
+/* 803B3F88 003AFDC8  90 A1 00 0C */	stw r5, 0xc(r1)
+/* 803B3F8C 003AFDCC  80 83 00 08 */	lwz r4, 8(r3)
+/* 803B3F90 003AFDD0  90 81 00 10 */	stw r4, 0x10(r1)
+/* 803B3F94 003AFDD4  90 C1 01 04 */	stw r6, 0x104(r1)
+/* 803B3F98 003AFDD8  90 A1 01 08 */	stw r5, 0x108(r1)
+/* 803B3F9C 003AFDDC  90 81 01 0C */	stw r4, 0x10c(r1)
+/* 803B3FA0 003AFDE0  90 C1 00 F8 */	stw r6, 0xf8(r1)
+/* 803B3FA4 003AFDE4  90 A1 00 FC */	stw r5, 0xfc(r1)
+/* 803B3FA8 003AFDE8  90 81 01 00 */	stw r4, 0x100(r1)
+/* 803B3FAC 003AFDEC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B3FB0 003AFDF0  80 1F 00 04 */	lwz r0, 4(r31)
+/* 803B3FB4 003AFDF4  90 61 00 B0 */	stw r3, 0xb0(r1)
+/* 803B3FB8 003AFDF8  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 803B3FBC 003AFDFC  80 1F 00 08 */	lwz r0, 8(r31)
+/* 803B3FC0 003AFE00  90 01 00 B8 */	stw r0, 0xb8(r1)
+/* 803B3FC4 003AFE04  90 C1 00 BC */	stw r6, 0xbc(r1)
+/* 803B3FC8 003AFE08  90 A1 00 C0 */	stw r5, 0xc0(r1)
+/* 803B3FCC 003AFE0C  90 81 00 C4 */	stw r4, 0xc4(r1)
+/* 803B3FD0 003AFE10  80 61 01 10 */	lwz r3, 0x110(r1)
+/* 803B3FD4 003AFE14  80 01 01 14 */	lwz r0, 0x114(r1)
+/* 803B3FD8 003AFE18  90 61 00 C8 */	stw r3, 0xc8(r1)
+/* 803B3FDC 003AFE1C  90 01 00 CC */	stw r0, 0xcc(r1)
+/* 803B3FE0 003AFE20  80 01 01 18 */	lwz r0, 0x118(r1)
+/* 803B3FE4 003AFE24  90 01 00 D0 */	stw r0, 0xd0(r1)
+/* 803B3FE8 003AFE28  80 61 01 34 */	lwz r3, 0x134(r1)
+/* 803B3FEC 003AFE2C  80 01 01 38 */	lwz r0, 0x138(r1)
+/* 803B3FF0 003AFE30  90 61 00 D4 */	stw r3, 0xd4(r1)
+/* 803B3FF4 003AFE34  90 01 00 D8 */	stw r0, 0xd8(r1)
+/* 803B3FF8 003AFE38  80 01 01 3C */	lwz r0, 0x13c(r1)
+/* 803B3FFC 003AFE3C  90 01 00 DC */	stw r0, 0xdc(r1)
+/* 803B4000 003AFE40  7F C3 F3 78 */	mr r3, r30
+/* 803B4004 003AFE44  38 81 00 D4 */	addi r4, r1, 0xd4
+/* 803B4008 003AFE48  38 A1 00 C8 */	addi r5, r1, 0xc8
+/* 803B400C 003AFE4C  38 C1 00 BC */	addi r6, r1, 0xbc
+/* 803B4010 003AFE50  38 E1 00 B0 */	addi r7, r1, 0xb0
+/* 803B4014 003AFE54  39 01 00 F8 */	addi r8, r1, 0xf8
+/* 803B4018 003AFE58  4B FF FE 09 */	bl crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3
+/* 803B401C 003AFE5C  2C 03 00 00 */	cmpwi r3, 0
+/* 803B4020 003AFE60  41 82 00 14 */	beq lbl_803B4034
+/* 803B4024 003AFE64  38 7E 05 A4 */	addi r3, r30, 0x5a4
+/* 803B4028 003AFE68  38 81 00 F8 */	addi r4, r1, 0xf8
+/* 803B402C 003AFE6C  4B DC 85 21 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B4030 003AFE70  48 00 01 BC */	b lbl_803B41EC
+lbl_803B4034:
+/* 803B4034 003AFE74  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B4038 003AFE78  80 1F 00 04 */	lwz r0, 4(r31)
+/* 803B403C 003AFE7C  90 61 00 80 */	stw r3, 0x80(r1)
+/* 803B4040 003AFE80  90 01 00 84 */	stw r0, 0x84(r1)
+/* 803B4044 003AFE84  80 1F 00 08 */	lwz r0, 8(r31)
+/* 803B4048 003AFE88  90 01 00 88 */	stw r0, 0x88(r1)
+/* 803B404C 003AFE8C  80 61 01 04 */	lwz r3, 0x104(r1)
+/* 803B4050 003AFE90  80 01 01 08 */	lwz r0, 0x108(r1)
+/* 803B4054 003AFE94  90 61 00 8C */	stw r3, 0x8c(r1)
+/* 803B4058 003AFE98  90 01 00 90 */	stw r0, 0x90(r1)
+/* 803B405C 003AFE9C  80 01 01 0C */	lwz r0, 0x10c(r1)
+/* 803B4060 003AFEA0  90 01 00 94 */	stw r0, 0x94(r1)
+/* 803B4064 003AFEA4  80 61 01 28 */	lwz r3, 0x128(r1)
+/* 803B4068 003AFEA8  80 01 01 2C */	lwz r0, 0x12c(r1)
+/* 803B406C 003AFEAC  90 61 00 98 */	stw r3, 0x98(r1)
+/* 803B4070 003AFEB0  90 01 00 9C */	stw r0, 0x9c(r1)
+/* 803B4074 003AFEB4  80 01 01 30 */	lwz r0, 0x130(r1)
+/* 803B4078 003AFEB8  90 01 00 A0 */	stw r0, 0xa0(r1)
+/* 803B407C 003AFEBC  80 61 01 10 */	lwz r3, 0x110(r1)
+/* 803B4080 003AFEC0  80 01 01 14 */	lwz r0, 0x114(r1)
+/* 803B4084 003AFEC4  90 61 00 A4 */	stw r3, 0xa4(r1)
+/* 803B4088 003AFEC8  90 01 00 A8 */	stw r0, 0xa8(r1)
+/* 803B408C 003AFECC  80 01 01 18 */	lwz r0, 0x118(r1)
+/* 803B4090 003AFED0  90 01 00 AC */	stw r0, 0xac(r1)
+/* 803B4094 003AFED4  7F C3 F3 78 */	mr r3, r30
+/* 803B4098 003AFED8  38 81 00 A4 */	addi r4, r1, 0xa4
+/* 803B409C 003AFEDC  38 A1 00 98 */	addi r5, r1, 0x98
+/* 803B40A0 003AFEE0  38 C1 00 8C */	addi r6, r1, 0x8c
+/* 803B40A4 003AFEE4  38 E1 00 80 */	addi r7, r1, 0x80
+/* 803B40A8 003AFEE8  39 01 00 F8 */	addi r8, r1, 0xf8
+/* 803B40AC 003AFEEC  4B FF FD 75 */	bl crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3
+/* 803B40B0 003AFEF0  2C 03 00 00 */	cmpwi r3, 0
+/* 803B40B4 003AFEF4  41 82 00 14 */	beq lbl_803B40C8
+/* 803B40B8 003AFEF8  38 7E 05 A4 */	addi r3, r30, 0x5a4
+/* 803B40BC 003AFEFC  38 81 00 F8 */	addi r4, r1, 0xf8
+/* 803B40C0 003AFF00  4B DC 84 8D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B40C4 003AFF04  48 00 01 28 */	b lbl_803B41EC
+lbl_803B40C8:
+/* 803B40C8 003AFF08  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B40CC 003AFF0C  80 1F 00 04 */	lwz r0, 4(r31)
+/* 803B40D0 003AFF10  90 61 00 50 */	stw r3, 0x50(r1)
+/* 803B40D4 003AFF14  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803B40D8 003AFF18  80 1F 00 08 */	lwz r0, 8(r31)
+/* 803B40DC 003AFF1C  90 01 00 58 */	stw r0, 0x58(r1)
+/* 803B40E0 003AFF20  80 61 01 04 */	lwz r3, 0x104(r1)
+/* 803B40E4 003AFF24  80 01 01 08 */	lwz r0, 0x108(r1)
+/* 803B40E8 003AFF28  90 61 00 5C */	stw r3, 0x5c(r1)
+/* 803B40EC 003AFF2C  90 01 00 60 */	stw r0, 0x60(r1)
+/* 803B40F0 003AFF30  80 01 01 0C */	lwz r0, 0x10c(r1)
+/* 803B40F4 003AFF34  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803B40F8 003AFF38  80 61 01 1C */	lwz r3, 0x11c(r1)
+/* 803B40FC 003AFF3C  80 01 01 20 */	lwz r0, 0x120(r1)
+/* 803B4100 003AFF40  90 61 00 68 */	stw r3, 0x68(r1)
+/* 803B4104 003AFF44  90 01 00 6C */	stw r0, 0x6c(r1)
+/* 803B4108 003AFF48  80 01 01 24 */	lwz r0, 0x124(r1)
+/* 803B410C 003AFF4C  90 01 00 70 */	stw r0, 0x70(r1)
+/* 803B4110 003AFF50  80 61 01 28 */	lwz r3, 0x128(r1)
+/* 803B4114 003AFF54  80 01 01 2C */	lwz r0, 0x12c(r1)
+/* 803B4118 003AFF58  90 61 00 74 */	stw r3, 0x74(r1)
+/* 803B411C 003AFF5C  90 01 00 78 */	stw r0, 0x78(r1)
+/* 803B4120 003AFF60  80 01 01 30 */	lwz r0, 0x130(r1)
+/* 803B4124 003AFF64  90 01 00 7C */	stw r0, 0x7c(r1)
+/* 803B4128 003AFF68  7F C3 F3 78 */	mr r3, r30
+/* 803B412C 003AFF6C  38 81 00 74 */	addi r4, r1, 0x74
+/* 803B4130 003AFF70  38 A1 00 68 */	addi r5, r1, 0x68
+/* 803B4134 003AFF74  38 C1 00 5C */	addi r6, r1, 0x5c
+/* 803B4138 003AFF78  38 E1 00 50 */	addi r7, r1, 0x50
+/* 803B413C 003AFF7C  39 01 00 F8 */	addi r8, r1, 0xf8
+/* 803B4140 003AFF80  4B FF FC E1 */	bl crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3
+/* 803B4144 003AFF84  2C 03 00 00 */	cmpwi r3, 0
+/* 803B4148 003AFF88  41 82 00 14 */	beq lbl_803B415C
+/* 803B414C 003AFF8C  38 7E 05 A4 */	addi r3, r30, 0x5a4
+/* 803B4150 003AFF90  38 81 00 F8 */	addi r4, r1, 0xf8
+/* 803B4154 003AFF94  4B DC 83 F9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B4158 003AFF98  48 00 00 94 */	b lbl_803B41EC
+lbl_803B415C:
+/* 803B415C 003AFF9C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803B4160 003AFFA0  80 1F 00 04 */	lwz r0, 4(r31)
+/* 803B4164 003AFFA4  90 61 00 20 */	stw r3, 0x20(r1)
+/* 803B4168 003AFFA8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803B416C 003AFFAC  80 1F 00 08 */	lwz r0, 8(r31)
+/* 803B4170 003AFFB0  90 01 00 28 */	stw r0, 0x28(r1)
+/* 803B4174 003AFFB4  80 61 01 04 */	lwz r3, 0x104(r1)
+/* 803B4178 003AFFB8  80 01 01 08 */	lwz r0, 0x108(r1)
+/* 803B417C 003AFFBC  90 61 00 2C */	stw r3, 0x2c(r1)
+/* 803B4180 003AFFC0  90 01 00 30 */	stw r0, 0x30(r1)
+/* 803B4184 003AFFC4  80 01 01 0C */	lwz r0, 0x10c(r1)
+/* 803B4188 003AFFC8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803B418C 003AFFCC  80 61 01 34 */	lwz r3, 0x134(r1)
+/* 803B4190 003AFFD0  80 01 01 38 */	lwz r0, 0x138(r1)
+/* 803B4194 003AFFD4  90 61 00 38 */	stw r3, 0x38(r1)
+/* 803B4198 003AFFD8  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 803B419C 003AFFDC  80 01 01 3C */	lwz r0, 0x13c(r1)
+/* 803B41A0 003AFFE0  90 01 00 40 */	stw r0, 0x40(r1)
+/* 803B41A4 003AFFE4  80 61 01 1C */	lwz r3, 0x11c(r1)
+/* 803B41A8 003AFFE8  80 01 01 20 */	lwz r0, 0x120(r1)
+/* 803B41AC 003AFFEC  90 61 00 44 */	stw r3, 0x44(r1)
+/* 803B41B0 003AFFF0  90 01 00 48 */	stw r0, 0x48(r1)
+/* 803B41B4 003AFFF4  80 01 01 24 */	lwz r0, 0x124(r1)
+/* 803B41B8 003AFFF8  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 803B41BC 003AFFFC  7F C3 F3 78 */	mr r3, r30
+/* 803B41C0 003B0000  38 81 00 44 */	addi r4, r1, 0x44
+/* 803B41C4 003B0004  38 A1 00 38 */	addi r5, r1, 0x38
+/* 803B41C8 003B0008  38 C1 00 2C */	addi r6, r1, 0x2c
+/* 803B41CC 003B000C  38 E1 00 20 */	addi r7, r1, 0x20
+/* 803B41D0 003B0010  39 01 00 F8 */	addi r8, r1, 0xf8
+/* 803B41D4 003B0014  4B FF FC 4D */	bl crossLinePos__Q53scn4step4info9challenge10MasterIconFQ33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3Q33hel4math7Vector3RQ33hel4math7Vector3
+/* 803B41D8 003B0018  2C 03 00 00 */	cmpwi r3, 0
+/* 803B41DC 003B001C  41 82 00 10 */	beq lbl_803B41EC
+/* 803B41E0 003B0020  38 7E 05 A4 */	addi r3, r30, 0x5a4
+/* 803B41E4 003B0024  38 81 00 F8 */	addi r4, r1, 0xf8
+/* 803B41E8 003B0028  4B DC 83 65 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+lbl_803B41EC:
+/* 803B41EC 003B002C  38 61 01 54 */	addi r3, r1, 0x154
+/* 803B41F0 003B0030  38 9E 00 04 */	addi r4, r30, 4
+/* 803B41F4 003B0034  38 AD D3 E4 */	addi r5, r13, $$257083-_SDA_BASE_
+/* 803B41F8 003B0038  4B DF 8C 19 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B41FC 003B003C  38 61 01 54 */	addi r3, r1, 0x154
+/* 803B4200 003B0040  38 9E 05 A4 */	addi r4, r30, 0x5a4
+/* 803B4204 003B0044  4B DF 9F F1 */	bl setTrans__Q23lyt12PaneAccessorCFRCQ33hel4math7Vector3
+/* 803B4208 003B0048  38 61 01 54 */	addi r3, r1, 0x154
+/* 803B420C 003B004C  38 80 FF FF */	li r4, -1
+/* 803B4210 003B0050  4B DC 40 11 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B4214 003B0054  80 7E 05 A4 */	lwz r3, 0x5a4(r30)
+/* 803B4218 003B0058  80 1E 05 A8 */	lwz r0, 0x5a8(r30)
+/* 803B421C 003B005C  90 61 00 14 */	stw r3, 0x14(r1)
+/* 803B4220 003B0060  90 01 00 18 */	stw r0, 0x18(r1)
+/* 803B4224 003B0064  80 1E 05 AC */	lwz r0, 0x5ac(r30)
+/* 803B4228 003B0068  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 803B422C 003B006C  38 61 00 14 */	addi r3, r1, 0x14
+/* 803B4230 003B0070  38 81 01 04 */	addi r4, r1, 0x104
+/* 803B4234 003B0074  4B DE BA 55 */	bl __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B4238 003B0078  7C 64 1B 78 */	mr r4, r3
+/* 803B423C 003B007C  38 61 00 EC */	addi r3, r1, 0xec
+/* 803B4240 003B0080  4B DC 83 89 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803B4244 003B0084  C0 41 00 EC */	lfs f2, 0xec(r1)
+/* 803B4248 003B0088  C0 21 00 F0 */	lfs f1, 0xf0(r1)
+/* 803B424C 003B008C  4B D4 A9 B5 */	bl Atan2FIdx__Q24nw4r4mathFff
+/* 803B4250 003B0090  C0 02 D9 C4 */	lfs f0, $$257084-_SDA2_BASE_(r2)
+/* 803B4254 003B0094  EC 60 00 72 */	fmuls f3, f0, f1
+/* 803B4258 003B0098  38 61 00 E0 */	addi r3, r1, 0xe0
+/* 803B425C 003B009C  C0 22 D9 BC */	lfs f1, $$257026-_SDA2_BASE_(r2)
+/* 803B4260 003B00A0  FC 40 08 90 */	fmr f2, f1
+/* 803B4264 003B00A4  C0 02 D9 C8 */	lfs f0, $$257085-_SDA2_BASE_(r2)
+/* 803B4268 003B00A8  EC 60 00 F2 */	fmuls f3, f0, f3
+/* 803B426C 003B00AC  4B D0 9E 55 */	bl __ct__Q34nw4r4math4VEC3Ffff
+/* 803B4270 003B00B0  38 61 01 40 */	addi r3, r1, 0x140
+/* 803B4274 003B00B4  38 9E 00 04 */	addi r4, r30, 4
+/* 803B4278 003B00B8  3C A0 80 49 */	lis r5, $$256926@ha
+/* 803B427C 003B00BC  38 A5 05 88 */	addi r5, r5, $$256926@l
+/* 803B4280 003B00C0  4B DF 8B 91 */	bl pane__Q23lyt6LayoutFPCc
+/* 803B4284 003B00C4  38 61 01 40 */	addi r3, r1, 0x140
+/* 803B4288 003B00C8  38 81 00 E0 */	addi r4, r1, 0xe0
+/* 803B428C 003B00CC  4B DF 9F 75 */	bl setRotate__Q23lyt12PaneAccessorCFRCQ33hel4math7Vector3
+/* 803B4290 003B00D0  38 61 01 40 */	addi r3, r1, 0x140
+/* 803B4294 003B00D4  38 80 FF FF */	li r4, -1
+/* 803B4298 003B00D8  4B DC 3F 89 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B429C 003B00DC  83 E1 01 6C */	lwz r31, 0x16c(r1)
+/* 803B42A0 003B00E0  83 C1 01 68 */	lwz r30, 0x168(r1)
+/* 803B42A4 003B00E4  80 01 01 74 */	lwz r0, 0x174(r1)
+/* 803B42A8 003B00E8  7C 08 03 A6 */	mtlr r0
+/* 803B42AC 003B00EC  38 21 01 70 */	addi r1, r1, 0x170
+/* 803B42B0 003B00F0  4E 80 00 20 */	blr 
+
+.global setFace__Q53scn4step4info9challenge10MasterIconFv
+setFace__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B42B4 003B00F4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803B42B8 003B00F8  7C 08 02 A6 */	mflr r0
+/* 803B42BC 003B00FC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803B42C0 003B0100  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803B42C4 003B0104  7C 7F 1B 78 */	mr r31, r3
+/* 803B42C8 003B0108  38 63 01 D4 */	addi r3, r3, 0x1d4
+/* 803B42CC 003B010C  80 1F 05 C0 */	lwz r0, 0x5c0(r31)
+/* 803B42D0 003B0110  2C 00 00 00 */	cmpwi r0, 0
+/* 803B42D4 003B0114  38 8D D3 EC */	addi r4, r13, $$257095-_SDA_BASE_
+/* 803B42D8 003B0118  40 82 00 08 */	bne lbl_803B42E0
+/* 803B42DC 003B011C  38 8D D3 D8 */	addi r4, r13, $$256927-_SDA_BASE_
+lbl_803B42E0:
+/* 803B42E0 003B0120  4B DF 8C B5 */	bl play__Q23lyt6LayoutFPCc
+/* 803B42E4 003B0124  38 7F 01 D4 */	addi r3, r31, 0x1d4
+/* 803B42E8 003B0128  38 80 00 01 */	li r4, 1
+/* 803B42EC 003B012C  4B DF 8E 35 */	bl changeDoLoop__Q23lyt6LayoutFb
+/* 803B42F0 003B0130  80 1F 05 C0 */	lwz r0, 0x5c0(r31)
+/* 803B42F4 003B0134  90 1F 05 C4 */	stw r0, 0x5c4(r31)
+/* 803B42F8 003B0138  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803B42FC 003B013C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803B4300 003B0140  7C 08 03 A6 */	mtlr r0
+/* 803B4304 003B0144  38 21 00 10 */	addi r1, r1, 0x10
+/* 803B4308 003B0148  4E 80 00 20 */	blr 
+
+.global appear__Q53scn4step4info9challenge10MasterIconFv
+appear__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B430C 003B014C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803B4310 003B0150  7C 08 02 A6 */	mflr r0
+/* 803B4314 003B0154  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803B4318 003B0158  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B431C 003B015C  7C 7F 1B 78 */	mr r31, r3
+/* 803B4320 003B0160  38 61 00 08 */	addi r3, r1, 8
+/* 803B4324 003B0164  38 9F 00 04 */	addi r4, r31, 4
+/* 803B4328 003B0168  4B DF 8A 9D */	bl rootPane__Q23lyt6LayoutFv
+/* 803B432C 003B016C  38 61 00 08 */	addi r3, r1, 8
+/* 803B4330 003B0170  4B DF 38 E1 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B4334 003B0174  38 61 00 08 */	addi r3, r1, 8
+/* 803B4338 003B0178  38 80 FF FF */	li r4, -1
+/* 803B433C 003B017C  4B DC 3E E5 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B4340 003B0180  38 7F 00 04 */	addi r3, r31, 4
+/* 803B4344 003B0184  38 8D D3 F4 */	addi r4, r13, $$257098-_SDA_BASE_
+/* 803B4348 003B0188  4B DF 8C 4D */	bl play__Q23lyt6LayoutFPCc
+/* 803B434C 003B018C  38 00 00 02 */	li r0, 2
+/* 803B4350 003B0190  90 1F 05 BC */	stw r0, 0x5bc(r31)
+/* 803B4354 003B0194  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B4358 003B0198  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803B435C 003B019C  7C 08 03 A6 */	mtlr r0
+/* 803B4360 003B01A0  38 21 00 30 */	addi r1, r1, 0x30
+/* 803B4364 003B01A4  4E 80 00 20 */	blr 
+
+.global appear2__Q53scn4step4info9challenge10MasterIconFv
+appear2__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B4368 003B01A8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803B436C 003B01AC  7C 08 02 A6 */	mflr r0
+/* 803B4370 003B01B0  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803B4374 003B01B4  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 803B4378 003B01B8  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 803B437C 003B01BC  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 803B4380 003B01C0  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 803B4384 003B01C4  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B4388 003B01C8  7C 7F 1B 78 */	mr r31, r3
+/* 803B438C 003B01CC  38 63 00 04 */	addi r3, r3, 4
+/* 803B4390 003B01D0  4B DF 8C D5 */	bl totalFrame__Q23lyt6LayoutCFv
+/* 803B4394 003B01D4  FF C0 08 90 */	fmr f30, f1
+/* 803B4398 003B01D8  38 7F 00 04 */	addi r3, r31, 4
+/* 803B439C 003B01DC  4B DF 8C C1 */	bl frame__Q23lyt6LayoutCFv
+/* 803B43A0 003B01E0  FF E0 08 90 */	fmr f31, f1
+/* 803B43A4 003B01E4  38 61 00 08 */	addi r3, r1, 8
+/* 803B43A8 003B01E8  38 9F 00 04 */	addi r4, r31, 4
+/* 803B43AC 003B01EC  4B DF 8A 19 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B43B0 003B01F0  38 61 00 08 */	addi r3, r1, 8
+/* 803B43B4 003B01F4  4B DF 38 5D */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B43B8 003B01F8  38 61 00 08 */	addi r3, r1, 8
+/* 803B43BC 003B01FC  38 80 FF FF */	li r4, -1
+/* 803B43C0 003B0200  4B DC 3E 61 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B43C4 003B0204  38 7F 00 04 */	addi r3, r31, 4
+/* 803B43C8 003B0208  38 8D D3 F4 */	addi r4, r13, $$257098-_SDA_BASE_
+/* 803B43CC 003B020C  4B DF 8B C9 */	bl play__Q23lyt6LayoutFPCc
+/* 803B43D0 003B0210  38 7F 00 04 */	addi r3, r31, 4
+/* 803B43D4 003B0214  EC 3E F8 28 */	fsubs f1, f30, f31
+/* 803B43D8 003B0218  4B DF 8C 95 */	bl setFrame__Q23lyt6LayoutFf
+/* 803B43DC 003B021C  38 00 00 02 */	li r0, 2
+/* 803B43E0 003B0220  90 1F 05 BC */	stw r0, 0x5bc(r31)
+/* 803B43E4 003B0224  38 00 00 48 */	li r0, 0x48
+/* 803B43E8 003B0228  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803B43EC 003B022C  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 803B43F0 003B0230  38 00 00 38 */	li r0, 0x38
+/* 803B43F4 003B0234  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 803B43F8 003B0238  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 803B43FC 003B023C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B4400 003B0240  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 803B4404 003B0244  7C 08 03 A6 */	mtlr r0
+/* 803B4408 003B0248  38 21 00 50 */	addi r1, r1, 0x50
+/* 803B440C 003B024C  4E 80 00 20 */	blr 
+
+.global disappear__Q53scn4step4info9challenge10MasterIconFv
+disappear__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B4410 003B0250  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803B4414 003B0254  7C 08 02 A6 */	mflr r0
+/* 803B4418 003B0258  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803B441C 003B025C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B4420 003B0260  7C 7F 1B 78 */	mr r31, r3
+/* 803B4424 003B0264  38 61 00 08 */	addi r3, r1, 8
+/* 803B4428 003B0268  38 9F 00 04 */	addi r4, r31, 4
+/* 803B442C 003B026C  4B DF 89 99 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B4430 003B0270  38 61 00 08 */	addi r3, r1, 8
+/* 803B4434 003B0274  4B DF 37 DD */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B4438 003B0278  38 61 00 08 */	addi r3, r1, 8
+/* 803B443C 003B027C  38 80 FF FF */	li r4, -1
+/* 803B4440 003B0280  4B DC 3D E1 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B4444 003B0284  38 7F 00 04 */	addi r3, r31, 4
+/* 803B4448 003B0288  38 8D D3 F8 */	addi r4, r13, $$257105-_SDA_BASE_
+/* 803B444C 003B028C  4B DF 8B 49 */	bl play__Q23lyt6LayoutFPCc
+/* 803B4450 003B0290  38 00 00 00 */	li r0, 0
+/* 803B4454 003B0294  90 1F 05 BC */	stw r0, 0x5bc(r31)
+/* 803B4458 003B0298  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B445C 003B029C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803B4460 003B02A0  7C 08 03 A6 */	mtlr r0
+/* 803B4464 003B02A4  38 21 00 30 */	addi r1, r1, 0x30
+/* 803B4468 003B02A8  4E 80 00 20 */	blr 
+
+.global disappear2__Q53scn4step4info9challenge10MasterIconFv
+disappear2__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B446C 003B02AC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803B4470 003B02B0  7C 08 02 A6 */	mflr r0
+/* 803B4474 003B02B4  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803B4478 003B02B8  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 803B447C 003B02BC  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 803B4480 003B02C0  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 803B4484 003B02C4  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 803B4488 003B02C8  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B448C 003B02CC  7C 7F 1B 78 */	mr r31, r3
+/* 803B4490 003B02D0  38 63 00 04 */	addi r3, r3, 4
+/* 803B4494 003B02D4  4B DF 8B D1 */	bl totalFrame__Q23lyt6LayoutCFv
+/* 803B4498 003B02D8  FF C0 08 90 */	fmr f30, f1
+/* 803B449C 003B02DC  38 7F 00 04 */	addi r3, r31, 4
+/* 803B44A0 003B02E0  4B DF 8B BD */	bl frame__Q23lyt6LayoutCFv
+/* 803B44A4 003B02E4  FF E0 08 90 */	fmr f31, f1
+/* 803B44A8 003B02E8  38 61 00 08 */	addi r3, r1, 8
+/* 803B44AC 003B02EC  38 9F 00 04 */	addi r4, r31, 4
+/* 803B44B0 003B02F0  4B DF 89 15 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B44B4 003B02F4  38 61 00 08 */	addi r3, r1, 8
+/* 803B44B8 003B02F8  4B DF 37 59 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B44BC 003B02FC  38 61 00 08 */	addi r3, r1, 8
+/* 803B44C0 003B0300  38 80 FF FF */	li r4, -1
+/* 803B44C4 003B0304  4B DC 3D 5D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B44C8 003B0308  38 7F 00 04 */	addi r3, r31, 4
+/* 803B44CC 003B030C  38 8D D3 F8 */	addi r4, r13, $$257105-_SDA_BASE_
+/* 803B44D0 003B0310  4B DF 8A C5 */	bl play__Q23lyt6LayoutFPCc
+/* 803B44D4 003B0314  38 7F 00 04 */	addi r3, r31, 4
+/* 803B44D8 003B0318  EC 3E F8 28 */	fsubs f1, f30, f31
+/* 803B44DC 003B031C  4B DF 8B 91 */	bl setFrame__Q23lyt6LayoutFf
+/* 803B44E0 003B0320  38 00 00 00 */	li r0, 0
+/* 803B44E4 003B0324  90 1F 05 BC */	stw r0, 0x5bc(r31)
+/* 803B44E8 003B0328  38 00 00 48 */	li r0, 0x48
+/* 803B44EC 003B032C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803B44F0 003B0330  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 803B44F4 003B0334  38 00 00 38 */	li r0, 0x38
+/* 803B44F8 003B0338  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 803B44FC 003B033C  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 803B4500 003B0340  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B4504 003B0344  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 803B4508 003B0348  7C 08 03 A6 */	mtlr r0
+/* 803B450C 003B034C  38 21 00 50 */	addi r1, r1, 0x50
+/* 803B4510 003B0350  4E 80 00 20 */	blr 
+
+.global goal__Q53scn4step4info9challenge10MasterIconFv
+goal__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B4514 003B0354  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803B4518 003B0358  7C 08 02 A6 */	mflr r0
+/* 803B451C 003B035C  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803B4520 003B0360  DB E1 00 50 */	stfd f31, 0x50(r1)
+/* 803B4524 003B0364  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
+/* 803B4528 003B0368  DB C1 00 40 */	stfd f30, 0x40(r1)
+/* 803B452C 003B036C  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
+/* 803B4530 003B0370  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 803B4534 003B0374  7C 7F 1B 78 */	mr r31, r3
+/* 803B4538 003B0378  80 03 05 BC */	lwz r0, 0x5bc(r3)
+/* 803B453C 003B037C  2C 00 00 00 */	cmpwi r0, 0
+/* 803B4540 003B0380  41 82 00 20 */	beq lbl_803B4560
+/* 803B4544 003B0384  2C 00 00 01 */	cmpwi r0, 1
+/* 803B4548 003B0388  41 82 00 24 */	beq lbl_803B456C
+/* 803B454C 003B038C  2C 00 00 02 */	cmpwi r0, 2
+/* 803B4550 003B0390  41 82 00 28 */	beq lbl_803B4578
+/* 803B4554 003B0394  2C 00 00 03 */	cmpwi r0, 3
+/* 803B4558 003B0398  41 82 00 7C */	beq lbl_803B45D4
+/* 803B455C 003B039C  48 00 00 AC */	b lbl_803B4608
+lbl_803B4560:
+/* 803B4560 003B03A0  38 00 00 04 */	li r0, 4
+/* 803B4564 003B03A4  90 03 05 BC */	stw r0, 0x5bc(r3)
+/* 803B4568 003B03A8  48 00 00 A0 */	b lbl_803B4608
+lbl_803B456C:
+/* 803B456C 003B03AC  38 00 00 05 */	li r0, 5
+/* 803B4570 003B03B0  90 03 05 BC */	stw r0, 0x5bc(r3)
+/* 803B4574 003B03B4  48 00 00 94 */	b lbl_803B4608
+lbl_803B4578:
+/* 803B4578 003B03B8  38 63 00 04 */	addi r3, r3, 4
+/* 803B457C 003B03BC  4B DF 8A E9 */	bl totalFrame__Q23lyt6LayoutCFv
+/* 803B4580 003B03C0  FF C0 08 90 */	fmr f30, f1
+/* 803B4584 003B03C4  38 7F 00 04 */	addi r3, r31, 4
+/* 803B4588 003B03C8  4B DF 8A D5 */	bl frame__Q23lyt6LayoutCFv
+/* 803B458C 003B03CC  FF E0 08 90 */	fmr f31, f1
+/* 803B4590 003B03D0  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803B4594 003B03D4  38 9F 00 04 */	addi r4, r31, 4
+/* 803B4598 003B03D8  4B DF 88 2D */	bl rootPane__Q23lyt6LayoutFv
+/* 803B459C 003B03DC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803B45A0 003B03E0  4B DF 36 71 */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B45A4 003B03E4  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803B45A8 003B03E8  38 80 FF FF */	li r4, -1
+/* 803B45AC 003B03EC  4B DC 3C 75 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B45B0 003B03F0  38 7F 00 04 */	addi r3, r31, 4
+/* 803B45B4 003B03F4  38 8D D3 F8 */	addi r4, r13, $$257105-_SDA_BASE_
+/* 803B45B8 003B03F8  4B DF 89 DD */	bl play__Q23lyt6LayoutFPCc
+/* 803B45BC 003B03FC  38 7F 00 04 */	addi r3, r31, 4
+/* 803B45C0 003B0400  EC 3E F8 28 */	fsubs f1, f30, f31
+/* 803B45C4 003B0404  4B DF 8A A9 */	bl setFrame__Q23lyt6LayoutFf
+/* 803B45C8 003B0408  38 00 00 04 */	li r0, 4
+/* 803B45CC 003B040C  90 1F 05 BC */	stw r0, 0x5bc(r31)
+/* 803B45D0 003B0410  48 00 00 38 */	b lbl_803B4608
+lbl_803B45D4:
+/* 803B45D4 003B0414  38 61 00 08 */	addi r3, r1, 8
+/* 803B45D8 003B0418  38 9F 00 04 */	addi r4, r31, 4
+/* 803B45DC 003B041C  4B DF 87 E9 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B45E0 003B0420  38 61 00 08 */	addi r3, r1, 8
+/* 803B45E4 003B0424  4B DF 36 2D */	bl show__Q23lyt12PaneAccessorCFv
+/* 803B45E8 003B0428  38 61 00 08 */	addi r3, r1, 8
+/* 803B45EC 003B042C  38 80 FF FF */	li r4, -1
+/* 803B45F0 003B0430  4B DC 3C 31 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B45F4 003B0434  38 7F 00 04 */	addi r3, r31, 4
+/* 803B45F8 003B0438  38 8D D3 F8 */	addi r4, r13, $$257105-_SDA_BASE_
+/* 803B45FC 003B043C  4B DF 89 99 */	bl play__Q23lyt6LayoutFPCc
+/* 803B4600 003B0440  38 00 00 04 */	li r0, 4
+/* 803B4604 003B0444  90 1F 05 BC */	stw r0, 0x5bc(r31)
+lbl_803B4608:
+/* 803B4608 003B0448  38 00 00 58 */	li r0, 0x58
+/* 803B460C 003B044C  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803B4610 003B0450  CB E1 00 50 */	lfd f31, 0x50(r1)
+/* 803B4614 003B0454  38 00 00 48 */	li r0, 0x48
+/* 803B4618 003B0458  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 803B461C 003B045C  CB C1 00 40 */	lfd f30, 0x40(r1)
+/* 803B4620 003B0460  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 803B4624 003B0464  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803B4628 003B0468  7C 08 03 A6 */	mtlr r0
+/* 803B462C 003B046C  38 21 00 60 */	addi r1, r1, 0x60
+/* 803B4630 003B0470  4E 80 00 20 */	blr 
+
+.global stateHide__Q53scn4step4info9challenge10MasterIconFv
+stateHide__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B4634 003B0474  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803B4638 003B0478  7C 08 02 A6 */	mflr r0
+/* 803B463C 003B047C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803B4640 003B0480  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B4644 003B0484  7C 7F 1B 78 */	mr r31, r3
+/* 803B4648 003B0488  38 63 00 04 */	addi r3, r3, 4
+/* 803B464C 003B048C  4B DF 8A CD */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803B4650 003B0490  2C 03 00 00 */	cmpwi r3, 0
+/* 803B4654 003B0494  41 82 00 2C */	beq lbl_803B4680
+/* 803B4658 003B0498  38 61 00 08 */	addi r3, r1, 8
+/* 803B465C 003B049C  38 9F 00 04 */	addi r4, r31, 4
+/* 803B4660 003B04A0  4B DF 87 65 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B4664 003B04A4  38 61 00 08 */	addi r3, r1, 8
+/* 803B4668 003B04A8  4B DF 34 C1 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803B466C 003B04AC  38 61 00 08 */	addi r3, r1, 8
+/* 803B4670 003B04B0  38 80 FF FF */	li r4, -1
+/* 803B4674 003B04B4  4B DC 3B AD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B4678 003B04B8  38 00 00 01 */	li r0, 1
+/* 803B467C 003B04BC  90 1F 05 BC */	stw r0, 0x5bc(r31)
+lbl_803B4680:
+/* 803B4680 003B04C0  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B4684 003B04C4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803B4688 003B04C8  7C 08 03 A6 */	mtlr r0
+/* 803B468C 003B04CC  38 21 00 30 */	addi r1, r1, 0x30
+/* 803B4690 003B04D0  4E 80 00 20 */	blr 
+
+.global stateShow__Q53scn4step4info9challenge10MasterIconFv
+stateShow__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B4694 003B04D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803B4698 003B04D8  7C 08 02 A6 */	mflr r0
+/* 803B469C 003B04DC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803B46A0 003B04E0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803B46A4 003B04E4  7C 7F 1B 78 */	mr r31, r3
+/* 803B46A8 003B04E8  38 63 00 04 */	addi r3, r3, 4
+/* 803B46AC 003B04EC  4B DF 8A 6D */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803B46B0 003B04F0  2C 03 00 00 */	cmpwi r3, 0
+/* 803B46B4 003B04F4  41 82 00 0C */	beq lbl_803B46C0
+/* 803B46B8 003B04F8  38 00 00 03 */	li r0, 3
+/* 803B46BC 003B04FC  90 1F 05 BC */	stw r0, 0x5bc(r31)
+lbl_803B46C0:
+/* 803B46C0 003B0500  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803B46C4 003B0504  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803B46C8 003B0508  7C 08 03 A6 */	mtlr r0
+/* 803B46CC 003B050C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803B46D0 003B0510  4E 80 00 20 */	blr 
+
+.global stateGoal__Q53scn4step4info9challenge10MasterIconFv
+stateGoal__Q53scn4step4info9challenge10MasterIconFv:
+/* 803B46D4 003B0514  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803B46D8 003B0518  7C 08 02 A6 */	mflr r0
+/* 803B46DC 003B051C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803B46E0 003B0520  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803B46E4 003B0524  7C 7F 1B 78 */	mr r31, r3
+/* 803B46E8 003B0528  38 63 00 04 */	addi r3, r3, 4
+/* 803B46EC 003B052C  4B DF 8A 2D */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803B46F0 003B0530  2C 03 00 00 */	cmpwi r3, 0
+/* 803B46F4 003B0534  41 82 00 2C */	beq lbl_803B4720
+/* 803B46F8 003B0538  38 61 00 08 */	addi r3, r1, 8
+/* 803B46FC 003B053C  38 9F 00 04 */	addi r4, r31, 4
+/* 803B4700 003B0540  4B DF 86 C5 */	bl rootPane__Q23lyt6LayoutFv
+/* 803B4704 003B0544  38 61 00 08 */	addi r3, r1, 8
+/* 803B4708 003B0548  4B DF 34 21 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 803B470C 003B054C  38 61 00 08 */	addi r3, r1, 8
+/* 803B4710 003B0550  38 80 FF FF */	li r4, -1
+/* 803B4714 003B0554  4B DC 3B 0D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803B4718 003B0558  38 00 00 05 */	li r0, 5
+/* 803B471C 003B055C  90 1F 05 BC */	stw r0, 0x5bc(r31)
+lbl_803B4720:
+/* 803B4720 003B0560  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803B4724 003B0564  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803B4728 003B0568  7C 08 03 A6 */	mtlr r0
+/* 803B472C 003B056C  38 21 00 30 */	addi r1, r1, 0x30
+/* 803B4730 003B0570  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$256921
+$$256921:
+	.incbin "baserom.dol", 0x48C630, 0x14
+.global $$256922
+$$256922:
+	.incbin "baserom.dol", 0x48C644, 0x10
+.global $$256923
+$$256923:
+	.incbin "baserom.dol", 0x48C654, 0x10
+.global $$256924
+$$256924:
+	.incbin "baserom.dol", 0x48C664, 0x10
+.global $$256925
+$$256925:
+	.incbin "baserom.dol", 0x48C674, 0x14
+.global $$256926
+$$256926:
+	.incbin "baserom.dol", 0x48C688, 0x10
+.global $$256929
+$$256929:
+	.incbin "baserom.dol", 0x48C698, 0xC
+.global $$256930
+$$256930:
+	.incbin "baserom.dol", 0x48C6A4, 0xC
+.global $$256931
+$$256931:
+	.incbin "baserom.dol", 0x48C6B0, 0xC
+.global $$256932
+$$256932:
+	.incbin "baserom.dol", 0x48C6BC, 0x10
+.global $$256933
+$$256933:
+	.incbin "baserom.dol", 0x48C6CC, 0x44
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$256927
+$$256927:
+	.incbin "baserom.dol", 0x497BD8, 0x4
+.global $$256928
+$$256928:
+	.incbin "baserom.dol", 0x497BDC, 0x8
+.global $$257083
+$$257083:
+	.incbin "baserom.dol", 0x497BE4, 0x8
+.global $$257095
+$$257095:
+	.incbin "baserom.dol", 0x497BEC, 0x8
+.global $$257098
+$$257098:
+	.incbin "baserom.dol", 0x497BF4, 0x4
+.global $$257105
+$$257105:
+	.incbin "baserom.dol", 0x497BF8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$257025
+$$257025:
+	.incbin "baserom.dol", 0x49E478, 0x4
+.global $$257026
+$$257026:
+	.incbin "baserom.dol", 0x49E47C, 0x4
+.global $$257027
+$$257027:
+	.incbin "baserom.dol", 0x49E480, 0x4
+.global $$257084
+$$257084:
+	.incbin "baserom.dol", 0x49E484, 0x4
+.global $$257085
+$$257085:
+	.incbin "baserom.dol", 0x49E488, 0x8

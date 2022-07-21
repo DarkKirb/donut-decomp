@@ -1,0 +1,1653 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step5chara5WaterFRQ33scn4step9ComponentRQ24gobj8LocationRCQ33hel4math7Vector2
+__ct__Q43scn4step5chara5WaterFRQ33scn4step9ComponentRQ24gobj8LocationRCQ33hel4math7Vector2:
+/* 80272FC4 0026EE04  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80272FC8 0026EE08  7C 08 02 A6 */	mflr r0
+/* 80272FCC 0026EE0C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80272FD0 0026EE10  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80272FD4 0026EE14  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80272FD8 0026EE18  7C 7E 1B 78 */	mr r30, r3
+/* 80272FDC 0026EE1C  90 83 00 00 */	stw r4, 0(r3)
+/* 80272FE0 0026EE20  90 A3 00 04 */	stw r5, 4(r3)
+/* 80272FE4 0026EE24  38 63 00 08 */	addi r3, r3, 8
+/* 80272FE8 0026EE28  7C C4 33 78 */	mr r4, r6
+/* 80272FEC 0026EE2C  4B ED 89 7D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80272FF0 0026EE30  3B E0 00 00 */	li r31, 0
+/* 80272FF4 0026EE34  93 FE 00 10 */	stw r31, 0x10(r30)
+/* 80272FF8 0026EE38  38 61 00 18 */	addi r3, r1, 0x18
+/* 80272FFC 0026EE3C  80 9E 00 04 */	lwz r4, 4(r30)
+/* 80273000 0026EE40  4B F0 95 C9 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80273004 0026EE44  38 61 00 08 */	addi r3, r1, 8
+/* 80273008 0026EE48  38 81 00 18 */	addi r4, r1, 0x18
+/* 8027300C 0026EE4C  4B F4 FB C1 */	bl getXY__Q33hel4math7Vector3CFv
+/* 80273010 0026EE50  38 61 00 10 */	addi r3, r1, 0x10
+/* 80273014 0026EE54  38 81 00 08 */	addi r4, r1, 8
+/* 80273018 0026EE58  38 BE 00 08 */	addi r5, r30, 8
+/* 8027301C 0026EE5C  4B F2 D5 75 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 80273020 0026EE60  38 7E 00 14 */	addi r3, r30, 0x14
+/* 80273024 0026EE64  38 81 00 10 */	addi r4, r1, 0x10
+/* 80273028 0026EE68  4B ED 89 41 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8027302C 0026EE6C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80273030 0026EE70  4B FA DC C5 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 80273034 0026EE74  4B DB 14 6D */	bl DefaultSwitchThreadCallback
+/* 80273038 0026EE78  38 9E 00 14 */	addi r4, r30, 0x14
+/* 8027303C 0026EE7C  4B F3 EE BD */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 80273040 0026EE80  98 7E 00 1C */	stb r3, 0x1c(r30)
+/* 80273044 0026EE84  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80273048 0026EE88  4B FA DC AD */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 8027304C 0026EE8C  4B DB 14 55 */	bl DefaultSwitchThreadCallback
+/* 80273050 0026EE90  38 9E 00 14 */	addi r4, r30, 0x14
+/* 80273054 0026EE94  4B F3 EE FD */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 80273058 0026EE98  98 7E 00 1D */	stb r3, 0x1d(r30)
+/* 8027305C 0026EE9C  38 00 00 01 */	li r0, 1
+/* 80273060 0026EEA0  98 1E 00 1E */	stb r0, 0x1e(r30)
+/* 80273064 0026EEA4  9B FE 00 1F */	stb r31, 0x1f(r30)
+/* 80273068 0026EEA8  7F C3 F3 78 */	mr r3, r30
+/* 8027306C 0026EEAC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80273070 0026EEB0  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80273074 0026EEB4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80273078 0026EEB8  7C 08 03 A6 */	mtlr r0
+/* 8027307C 0026EEBC  38 21 00 30 */	addi r1, r1, 0x30
+/* 80273080 0026EEC0  4E 80 00 20 */	blr 
+
+.global update__Q43scn4step5chara5WaterFv
+update__Q43scn4step5chara5WaterFv:
+/* 80273084 0026EEC4  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 80273088 0026EEC8  7C 08 02 A6 */	mflr r0
+/* 8027308C 0026EECC  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 80273090 0026EED0  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80273094 0026EED4  4B D9 42 B1 */	bl func_80007344
+/* 80273098 0026EED8  7C 7D 1B 78 */	mr r29, r3
+/* 8027309C 0026EEDC  38 61 00 48 */	addi r3, r1, 0x48
+/* 802730A0 0026EEE0  80 9D 00 04 */	lwz r4, 4(r29)
+/* 802730A4 0026EEE4  4B F0 95 25 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802730A8 0026EEE8  38 61 00 08 */	addi r3, r1, 8
+/* 802730AC 0026EEEC  38 81 00 48 */	addi r4, r1, 0x48
+/* 802730B0 0026EEF0  4B F4 FB 1D */	bl getXY__Q33hel4math7Vector3CFv
+/* 802730B4 0026EEF4  38 61 00 10 */	addi r3, r1, 0x10
+/* 802730B8 0026EEF8  38 81 00 08 */	addi r4, r1, 8
+/* 802730BC 0026EEFC  38 BD 00 08 */	addi r5, r29, 8
+/* 802730C0 0026EF00  4B F2 D4 D1 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 802730C4 0026EF04  80 7D 00 00 */	lwz r3, 0(r29)
+/* 802730C8 0026EF08  4B FA DC 2D */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802730CC 0026EF0C  4B DB 13 D5 */	bl DefaultSwitchThreadCallback
+/* 802730D0 0026EF10  38 81 00 10 */	addi r4, r1, 0x10
+/* 802730D4 0026EF14  4B F3 EE 25 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802730D8 0026EF18  7C 7F 1B 78 */	mr r31, r3
+/* 802730DC 0026EF1C  80 7D 00 00 */	lwz r3, 0(r29)
+/* 802730E0 0026EF20  4B FA DC 15 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802730E4 0026EF24  4B DB 13 BD */	bl DefaultSwitchThreadCallback
+/* 802730E8 0026EF28  38 81 00 10 */	addi r4, r1, 0x10
+/* 802730EC 0026EF2C  4B F3 EE 65 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802730F0 0026EF30  7C 7E 1B 78 */	mr r30, r3
+/* 802730F4 0026EF34  88 1D 00 1C */	lbz r0, 0x1c(r29)
+/* 802730F8 0026EF38  7C 1F 00 40 */	cmplw r31, r0
+/* 802730FC 0026EF3C  41 82 01 44 */	beq lbl_80273240
+/* 80273100 0026EF40  9B FD 00 1C */	stb r31, 0x1c(r29)
+/* 80273104 0026EF44  57 E0 06 3E */	clrlwi r0, r31, 0x18
+/* 80273108 0026EF48  2C 00 00 00 */	cmpwi r0, 0
+/* 8027310C 0026EF4C  41 82 00 A0 */	beq lbl_802731AC
+/* 80273110 0026EF50  88 1D 00 1F */	lbz r0, 0x1f(r29)
+/* 80273114 0026EF54  2C 00 00 00 */	cmpwi r0, 0
+/* 80273118 0026EF58  40 82 00 68 */	bne lbl_80273180
+/* 8027311C 0026EF5C  88 1D 00 1D */	lbz r0, 0x1d(r29)
+/* 80273120 0026EF60  2C 00 00 00 */	cmpwi r0, 0
+/* 80273124 0026EF64  40 82 00 5C */	bne lbl_80273180
+/* 80273128 0026EF68  38 61 00 78 */	addi r3, r1, 0x78
+/* 8027312C 0026EF6C  4B F2 AF 0D */	bl __ct__Q33hel4math10Direction3Fv
+/* 80273130 0026EF70  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80273134 0026EF74  7F A4 EB 78 */	mr r4, r29
+/* 80273138 0026EF78  38 A1 00 10 */	addi r5, r1, 0x10
+/* 8027313C 0026EF7C  48 00 01 31 */	bl getSurfaceUpVec__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2
+/* 80273140 0026EF80  38 61 00 84 */	addi r3, r1, 0x84
+/* 80273144 0026EF84  38 81 00 3C */	addi r4, r1, 0x3c
+/* 80273148 0026EF88  4B F0 94 05 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8027314C 0026EF8C  38 61 00 78 */	addi r3, r1, 0x78
+/* 80273150 0026EF90  4B F2 E5 3D */	bl restructUpFront__Q33hel4math10Direction3Fv
+/* 80273154 0026EF94  80 7D 00 00 */	lwz r3, 0(r29)
+/* 80273158 0026EF98  4B F9 24 71 */	bl commander__Q33scn10grandtitle9ComponentFv
+/* 8027315C 0026EF9C  7C 7F 1B 78 */	mr r31, r3
+/* 80273160 0026EFA0  38 61 00 30 */	addi r3, r1, 0x30
+/* 80273164 0026EFA4  38 81 00 10 */	addi r4, r1, 0x10
+/* 80273168 0026EFA8  4B F2 C2 F5 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8027316C 0026EFAC  38 7F 00 08 */	addi r3, r31, 8
+/* 80273170 0026EFB0  38 80 00 45 */	li r4, 0x45
+/* 80273174 0026EFB4  38 A1 00 30 */	addi r5, r1, 0x30
+/* 80273178 0026EFB8  38 C1 00 78 */	addi r6, r1, 0x78
+/* 8027317C 0026EFBC  48 00 4E 11 */	bl requestCharaFrontPD__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+lbl_80273180:
+/* 80273180 0026EFC0  88 1D 00 1E */	lbz r0, 0x1e(r29)
+/* 80273184 0026EFC4  2C 00 00 00 */	cmpwi r0, 0
+/* 80273188 0026EFC8  41 82 00 B8 */	beq lbl_80273240
+/* 8027318C 0026EFCC  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 80273190 0026EFD0  2C 03 00 00 */	cmpwi r3, 0
+/* 80273194 0026EFD4  41 82 00 AC */	beq lbl_80273240
+/* 80273198 0026EFD8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8027319C 0026EFDC  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 802731A0 0026EFE0  7D 89 03 A6 */	mtctr r12
+/* 802731A4 0026EFE4  4E 80 04 21 */	bctrl 
+/* 802731A8 0026EFE8  48 00 00 98 */	b lbl_80273240
+lbl_802731AC:
+/* 802731AC 0026EFEC  88 1D 00 1F */	lbz r0, 0x1f(r29)
+/* 802731B0 0026EFF0  2C 00 00 00 */	cmpwi r0, 0
+/* 802731B4 0026EFF4  40 82 00 64 */	bne lbl_80273218
+/* 802731B8 0026EFF8  2C 03 00 00 */	cmpwi r3, 0
+/* 802731BC 0026EFFC  40 82 00 5C */	bne lbl_80273218
+/* 802731C0 0026F000  38 61 00 54 */	addi r3, r1, 0x54
+/* 802731C4 0026F004  4B F2 AE 75 */	bl __ct__Q33hel4math10Direction3Fv
+/* 802731C8 0026F008  38 61 00 24 */	addi r3, r1, 0x24
+/* 802731CC 0026F00C  7F A4 EB 78 */	mr r4, r29
+/* 802731D0 0026F010  38 BD 00 14 */	addi r5, r29, 0x14
+/* 802731D4 0026F014  48 00 00 99 */	bl getSurfaceUpVec__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2
+/* 802731D8 0026F018  38 61 00 60 */	addi r3, r1, 0x60
+/* 802731DC 0026F01C  38 81 00 24 */	addi r4, r1, 0x24
+/* 802731E0 0026F020  4B F0 93 6D */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 802731E4 0026F024  38 61 00 54 */	addi r3, r1, 0x54
+/* 802731E8 0026F028  4B F2 E4 A5 */	bl restructUpFront__Q33hel4math10Direction3Fv
+/* 802731EC 0026F02C  80 7D 00 00 */	lwz r3, 0(r29)
+/* 802731F0 0026F030  4B F9 23 D9 */	bl commander__Q33scn10grandtitle9ComponentFv
+/* 802731F4 0026F034  7C 7F 1B 78 */	mr r31, r3
+/* 802731F8 0026F038  38 61 00 18 */	addi r3, r1, 0x18
+/* 802731FC 0026F03C  38 9D 00 14 */	addi r4, r29, 0x14
+/* 80273200 0026F040  4B F2 C2 5D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 80273204 0026F044  38 7F 00 08 */	addi r3, r31, 8
+/* 80273208 0026F048  38 80 00 4F */	li r4, 0x4f
+/* 8027320C 0026F04C  38 A1 00 18 */	addi r5, r1, 0x18
+/* 80273210 0026F050  38 C1 00 54 */	addi r6, r1, 0x54
+/* 80273214 0026F054  48 00 4D 79 */	bl requestCharaFrontPD__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+lbl_80273218:
+/* 80273218 0026F058  88 1D 00 1E */	lbz r0, 0x1e(r29)
+/* 8027321C 0026F05C  2C 00 00 00 */	cmpwi r0, 0
+/* 80273220 0026F060  41 82 00 20 */	beq lbl_80273240
+/* 80273224 0026F064  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 80273228 0026F068  2C 03 00 00 */	cmpwi r3, 0
+/* 8027322C 0026F06C  41 82 00 14 */	beq lbl_80273240
+/* 80273230 0026F070  81 83 00 00 */	lwz r12, 0(r3)
+/* 80273234 0026F074  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 80273238 0026F078  7D 89 03 A6 */	mtctr r12
+/* 8027323C 0026F07C  4E 80 04 21 */	bctrl 
+lbl_80273240:
+/* 80273240 0026F080  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80273244 0026F084  D0 1D 00 14 */	stfs f0, 0x14(r29)
+/* 80273248 0026F088  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8027324C 0026F08C  D0 1D 00 18 */	stfs f0, 0x18(r29)
+/* 80273250 0026F090  9B DD 00 1D */	stb r30, 0x1d(r29)
+/* 80273254 0026F094  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80273258 0026F098  4B D9 41 39 */	bl func_80007390
+/* 8027325C 0026F09C  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 80273260 0026F0A0  7C 08 03 A6 */	mtlr r0
+/* 80273264 0026F0A4  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 80273268 0026F0A8  4E 80 00 20 */	blr 
+
+.global getSurfaceUpVec__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2
+getSurfaceUpVec__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2:
+/* 8027326C 0026F0AC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80273270 0026F0B0  7C 08 02 A6 */	mflr r0
+/* 80273274 0026F0B4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80273278 0026F0B8  39 61 00 40 */	addi r11, r1, 0x40
+/* 8027327C 0026F0BC  4B D9 40 C9 */	bl func_80007344
+/* 80273280 0026F0C0  7C 7F 1B 78 */	mr r31, r3
+/* 80273284 0026F0C4  7C BD 2B 78 */	mr r29, r5
+/* 80273288 0026F0C8  80 64 00 00 */	lwz r3, 0(r4)
+/* 8027328C 0026F0CC  4B FA DA 69 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 80273290 0026F0D0  4B DB 12 11 */	bl DefaultSwitchThreadCallback
+/* 80273294 0026F0D4  7C 7E 1B 78 */	mr r30, r3
+/* 80273298 0026F0D8  38 61 00 20 */	addi r3, r1, 0x20
+/* 8027329C 0026F0DC  7F A4 EB 78 */	mr r4, r29
+/* 802732A0 0026F0E0  4B ED 86 C9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802732A4 0026F0E4  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 802732A8 0026F0E8  C0 02 AD E8 */	lfs f0, $$253564-_SDA2_BASE_(r2)
+/* 802732AC 0026F0EC  EC 01 00 2A */	fadds f0, f1, f0
+/* 802732B0 0026F0F0  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 802732B4 0026F0F4  7F C3 F3 78 */	mr r3, r30
+/* 802732B8 0026F0F8  38 81 00 20 */	addi r4, r1, 0x20
+/* 802732BC 0026F0FC  4B F3 EC 3D */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802732C0 0026F100  2C 03 00 00 */	cmpwi r3, 0
+/* 802732C4 0026F104  40 82 00 3C */	bne lbl_80273300
+/* 802732C8 0026F108  7F C3 F3 78 */	mr r3, r30
+/* 802732CC 0026F10C  38 81 00 20 */	addi r4, r1, 0x20
+/* 802732D0 0026F110  4B F3 EC 81 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802732D4 0026F114  2C 03 00 00 */	cmpwi r3, 0
+/* 802732D8 0026F118  40 82 00 28 */	bne lbl_80273300
+/* 802732DC 0026F11C  3C 60 80 54 */	lis r3, BASIS_Y__Q33hel4math7Vector3@ha
+/* 802732E0 0026F120  38 83 52 F4 */	addi r4, r3, BASIS_Y__Q33hel4math7Vector3@l
+/* 802732E4 0026F124  80 64 00 00 */	lwz r3, 0(r4)
+/* 802732E8 0026F128  80 04 00 04 */	lwz r0, 4(r4)
+/* 802732EC 0026F12C  90 7F 00 00 */	stw r3, 0(r31)
+/* 802732F0 0026F130  90 1F 00 04 */	stw r0, 4(r31)
+/* 802732F4 0026F134  80 04 00 08 */	lwz r0, 8(r4)
+/* 802732F8 0026F138  90 1F 00 08 */	stw r0, 8(r31)
+/* 802732FC 0026F13C  48 00 01 3C */	b lbl_80273438
+lbl_80273300:
+/* 80273300 0026F140  38 61 00 18 */	addi r3, r1, 0x18
+/* 80273304 0026F144  7F A4 EB 78 */	mr r4, r29
+/* 80273308 0026F148  4B ED 86 61 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8027330C 0026F14C  C0 21 00 1C */	lfs f1, 0x1c(r1)
+/* 80273310 0026F150  C0 02 AD E8 */	lfs f0, $$253564-_SDA2_BASE_(r2)
+/* 80273314 0026F154  EC 01 00 28 */	fsubs f0, f1, f0
+/* 80273318 0026F158  D0 01 00 1C */	stfs f0, 0x1c(r1)
+/* 8027331C 0026F15C  7F C3 F3 78 */	mr r3, r30
+/* 80273320 0026F160  38 81 00 18 */	addi r4, r1, 0x18
+/* 80273324 0026F164  4B F3 EB D5 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 80273328 0026F168  2C 03 00 00 */	cmpwi r3, 0
+/* 8027332C 0026F16C  40 82 00 2C */	bne lbl_80273358
+/* 80273330 0026F170  7F C3 F3 78 */	mr r3, r30
+/* 80273334 0026F174  38 81 00 18 */	addi r4, r1, 0x18
+/* 80273338 0026F178  4B F3 EC 19 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8027333C 0026F17C  2C 03 00 00 */	cmpwi r3, 0
+/* 80273340 0026F180  40 82 00 18 */	bne lbl_80273358
+/* 80273344 0026F184  7F E3 FB 78 */	mr r3, r31
+/* 80273348 0026F188  3C 80 80 54 */	lis r4, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8027334C 0026F18C  38 84 52 F4 */	addi r4, r4, BASIS_Y__Q33hel4math7Vector3@l
+/* 80273350 0026F190  4B F2 C9 FD */	bl __mi__Q33hel4math7Vector3CFv
+/* 80273354 0026F194  48 00 00 E4 */	b lbl_80273438
+lbl_80273358:
+/* 80273358 0026F198  38 61 00 10 */	addi r3, r1, 0x10
+/* 8027335C 0026F19C  7F A4 EB 78 */	mr r4, r29
+/* 80273360 0026F1A0  4B ED 86 09 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80273364 0026F1A4  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 80273368 0026F1A8  C0 02 AD E8 */	lfs f0, $$253564-_SDA2_BASE_(r2)
+/* 8027336C 0026F1AC  EC 01 00 28 */	fsubs f0, f1, f0
+/* 80273370 0026F1B0  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 80273374 0026F1B4  7F C3 F3 78 */	mr r3, r30
+/* 80273378 0026F1B8  38 81 00 10 */	addi r4, r1, 0x10
+/* 8027337C 0026F1BC  4B F3 EB 7D */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 80273380 0026F1C0  2C 03 00 00 */	cmpwi r3, 0
+/* 80273384 0026F1C4  40 82 00 2C */	bne lbl_802733B0
+/* 80273388 0026F1C8  7F C3 F3 78 */	mr r3, r30
+/* 8027338C 0026F1CC  38 81 00 10 */	addi r4, r1, 0x10
+/* 80273390 0026F1D0  4B F3 EB C1 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 80273394 0026F1D4  2C 03 00 00 */	cmpwi r3, 0
+/* 80273398 0026F1D8  40 82 00 18 */	bne lbl_802733B0
+/* 8027339C 0026F1DC  7F E3 FB 78 */	mr r3, r31
+/* 802733A0 0026F1E0  3C 80 80 54 */	lis r4, BASIS_X__Q33hel4math7Vector3@ha
+/* 802733A4 0026F1E4  38 84 52 E8 */	addi r4, r4, BASIS_X__Q33hel4math7Vector3@l
+/* 802733A8 0026F1E8  4B F2 C9 A5 */	bl __mi__Q33hel4math7Vector3CFv
+/* 802733AC 0026F1EC  48 00 00 8C */	b lbl_80273438
+lbl_802733B0:
+/* 802733B0 0026F1F0  38 61 00 08 */	addi r3, r1, 8
+/* 802733B4 0026F1F4  7F A4 EB 78 */	mr r4, r29
+/* 802733B8 0026F1F8  4B ED 85 B1 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802733BC 0026F1FC  C0 21 00 08 */	lfs f1, 8(r1)
+/* 802733C0 0026F200  C0 02 AD E8 */	lfs f0, $$253564-_SDA2_BASE_(r2)
+/* 802733C4 0026F204  EC 01 00 2A */	fadds f0, f1, f0
+/* 802733C8 0026F208  D0 01 00 08 */	stfs f0, 8(r1)
+/* 802733CC 0026F20C  7F C3 F3 78 */	mr r3, r30
+/* 802733D0 0026F210  38 81 00 08 */	addi r4, r1, 8
+/* 802733D4 0026F214  4B F3 EB 25 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802733D8 0026F218  2C 03 00 00 */	cmpwi r3, 0
+/* 802733DC 0026F21C  40 82 00 3C */	bne lbl_80273418
+/* 802733E0 0026F220  7F C3 F3 78 */	mr r3, r30
+/* 802733E4 0026F224  38 81 00 08 */	addi r4, r1, 8
+/* 802733E8 0026F228  4B F3 EB 69 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802733EC 0026F22C  2C 03 00 00 */	cmpwi r3, 0
+/* 802733F0 0026F230  40 82 00 28 */	bne lbl_80273418
+/* 802733F4 0026F234  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 802733F8 0026F238  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
+/* 802733FC 0026F23C  80 64 00 00 */	lwz r3, 0(r4)
+/* 80273400 0026F240  80 04 00 04 */	lwz r0, 4(r4)
+/* 80273404 0026F244  90 7F 00 00 */	stw r3, 0(r31)
+/* 80273408 0026F248  90 1F 00 04 */	stw r0, 4(r31)
+/* 8027340C 0026F24C  80 04 00 08 */	lwz r0, 8(r4)
+/* 80273410 0026F250  90 1F 00 08 */	stw r0, 8(r31)
+/* 80273414 0026F254  48 00 00 24 */	b lbl_80273438
+lbl_80273418:
+/* 80273418 0026F258  3C 60 80 54 */	lis r3, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8027341C 0026F25C  38 83 52 F4 */	addi r4, r3, BASIS_Y__Q33hel4math7Vector3@l
+/* 80273420 0026F260  80 64 00 00 */	lwz r3, 0(r4)
+/* 80273424 0026F264  80 04 00 04 */	lwz r0, 4(r4)
+/* 80273428 0026F268  90 7F 00 00 */	stw r3, 0(r31)
+/* 8027342C 0026F26C  90 1F 00 04 */	stw r0, 4(r31)
+/* 80273430 0026F270  80 04 00 08 */	lwz r0, 8(r4)
+/* 80273434 0026F274  90 1F 00 08 */	stw r0, 8(r31)
+lbl_80273438:
+/* 80273438 0026F278  39 61 00 40 */	addi r11, r1, 0x40
+/* 8027343C 0026F27C  4B D9 3F 55 */	bl func_80007390
+/* 80273440 0026F280  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80273444 0026F284  7C 08 03 A6 */	mtlr r0
+/* 80273448 0026F288  38 21 00 40 */	addi r1, r1, 0x40
+/* 8027344C 0026F28C  4E 80 00 20 */	blr 
+
+.global isPosInWater__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2
+isPosInWater__Q43scn4step5chara5WaterCFRCQ33hel4math7Vector2:
+/* 80273450 0026F290  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80273454 0026F294  7C 08 02 A6 */	mflr r0
+/* 80273458 0026F298  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8027345C 0026F29C  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80273460 0026F2A0  93 C1 00 38 */	stw r30, 0x38(r1)
+/* 80273464 0026F2A4  7C 7E 1B 78 */	mr r30, r3
+/* 80273468 0026F2A8  7C 9F 23 78 */	mr r31, r4
+/* 8027346C 0026F2AC  38 61 00 20 */	addi r3, r1, 0x20
+/* 80273470 0026F2B0  80 9E 00 04 */	lwz r4, 4(r30)
+/* 80273474 0026F2B4  4B F0 91 55 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 80273478 0026F2B8  38 61 00 08 */	addi r3, r1, 8
+/* 8027347C 0026F2BC  38 81 00 20 */	addi r4, r1, 0x20
+/* 80273480 0026F2C0  4B F4 F7 4D */	bl getXY__Q33hel4math7Vector3CFv
+/* 80273484 0026F2C4  38 61 00 10 */	addi r3, r1, 0x10
+/* 80273488 0026F2C8  38 81 00 08 */	addi r4, r1, 8
+/* 8027348C 0026F2CC  38 BE 00 08 */	addi r5, r30, 8
+/* 80273490 0026F2D0  4B F2 D1 01 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 80273494 0026F2D4  38 61 00 18 */	addi r3, r1, 0x18
+/* 80273498 0026F2D8  38 81 00 10 */	addi r4, r1, 0x10
+/* 8027349C 0026F2DC  7F E5 FB 78 */	mr r5, r31
+/* 802734A0 0026F2E0  4B F2 D0 F1 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 802734A4 0026F2E4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 802734A8 0026F2E8  4B FA D8 4D */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802734AC 0026F2EC  4B DB 0F F5 */	bl DefaultSwitchThreadCallback
+/* 802734B0 0026F2F0  38 81 00 18 */	addi r4, r1, 0x18
+/* 802734B4 0026F2F4  4B F3 EA 45 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 802734B8 0026F2F8  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 802734BC 0026F2FC  83 C1 00 38 */	lwz r30, 0x38(r1)
+/* 802734C0 0026F300  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 802734C4 0026F304  7C 08 03 A6 */	mtlr r0
+/* 802734C8 0026F308  38 21 00 40 */	addi r1, r1, 0x40
+/* 802734CC 0026F30C  4E 80 00 20 */	blr 
+
+.global setUseCallback__Q43scn4step5chara5WaterFb
+setUseCallback__Q43scn4step5chara5WaterFb:
+/* 802734D0 0026F310  98 83 00 1E */	stb r4, 0x1e(r3)
+/* 802734D4 0026F314  4E 80 00 20 */	blr 
+
+.global setForbidEffect__Q43scn4step5chara5WaterFb
+setForbidEffect__Q43scn4step5chara5WaterFb:
+/* 802734D8 0026F318  98 83 00 1F */	stb r4, 0x1f(r3)
+/* 802734DC 0026F31C  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step4hero5WaterFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero5WaterFRQ43scn4step4hero4Hero:
+/* 8035A3A8 003561E8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8035A3AC 003561EC  7C 08 02 A6 */	mflr r0
+/* 8035A3B0 003561F0  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8035A3B4 003561F4  39 61 00 40 */	addi r11, r1, 0x40
+/* 8035A3B8 003561F8  4B CA CF 8D */	bl func_80007344
+/* 8035A3BC 003561FC  7C 7D 1B 78 */	mr r29, r3
+/* 8035A3C0 00356200  90 83 00 00 */	stw r4, 0(r3)
+/* 8035A3C4 00356204  3B C0 00 00 */	li r30, 0
+/* 8035A3C8 00356208  9B C3 00 04 */	stb r30, 4(r3)
+/* 8035A3CC 0035620C  9B C3 00 05 */	stb r30, 5(r3)
+/* 8035A3D0 00356210  C0 42 CF C0 */	lfs f2, $$259702-_SDA2_BASE_(r2)
+/* 8035A3D4 00356214  D0 43 00 08 */	stfs f2, 8(r3)
+/* 8035A3D8 00356218  9B C3 00 0C */	stb r30, 0xc(r3)
+/* 8035A3DC 0035621C  9B C3 00 0D */	stb r30, 0xd(r3)
+/* 8035A3E0 00356220  38 61 00 08 */	addi r3, r1, 8
+/* 8035A3E4 00356224  C0 22 CF C4 */	lfs f1, $$259703-_SDA2_BASE_(r2)
+/* 8035A3E8 00356228  4B E4 4F C1 */	bl set__Q33hel4math7Vector2Fff
+/* 8035A3EC 0035622C  7C 7F 1B 78 */	mr r31, r3
+/* 8035A3F0 00356230  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8035A3F4 00356234  4B FE 5F 11 */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035A3F8 00356238  7C 64 1B 78 */	mr r4, r3
+/* 8035A3FC 0035623C  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035A400 00356240  4B F1 52 B5 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8035A404 00356244  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035A408 00356248  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035A40C 0035624C  4B E6 87 C1 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8035A410 00356250  38 61 00 18 */	addi r3, r1, 0x18
+/* 8035A414 00356254  38 81 00 10 */	addi r4, r1, 0x10
+/* 8035A418 00356258  7F E5 FB 78 */	mr r5, r31
+/* 8035A41C 0035625C  4B E4 61 75 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035A420 00356260  38 7D 00 10 */	addi r3, r29, 0x10
+/* 8035A424 00356264  38 81 00 18 */	addi r4, r1, 0x18
+/* 8035A428 00356268  4B DF 15 41 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035A42C 0035626C  93 DD 00 18 */	stw r30, 0x18(r29)
+/* 8035A430 00356270  93 DD 00 1C */	stw r30, 0x1c(r29)
+/* 8035A434 00356274  9B DD 00 20 */	stb r30, 0x20(r29)
+/* 8035A438 00356278  7F A3 EB 78 */	mr r3, r29
+/* 8035A43C 0035627C  48 00 0C 51 */	bl chkInWater__Q43scn4step4hero5WaterCFv
+/* 8035A440 00356280  98 7D 00 04 */	stb r3, 4(r29)
+/* 8035A444 00356284  7F A3 EB 78 */	mr r3, r29
+/* 8035A448 00356288  39 61 00 40 */	addi r11, r1, 0x40
+/* 8035A44C 0035628C  4B CA CF 45 */	bl func_80007390
+/* 8035A450 00356290  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8035A454 00356294  7C 08 03 A6 */	mtlr r0
+/* 8035A458 00356298  38 21 00 40 */	addi r1, r1, 0x40
+/* 8035A45C 0035629C  4E 80 00 20 */	blr 
+
+.global update__Q43scn4step4hero5WaterFv
+update__Q43scn4step4hero5WaterFv:
+/* 8035A460 003562A0  94 21 FF 10 */	stwu r1, -0xf0(r1)
+/* 8035A464 003562A4  7C 08 02 A6 */	mflr r0
+/* 8035A468 003562A8  90 01 00 F4 */	stw r0, 0xf4(r1)
+/* 8035A46C 003562AC  DB E1 00 E0 */	stfd f31, 0xe0(r1)
+/* 8035A470 003562B0  F3 E1 00 E8 */	psq_st f31, 232(r1), 0, qr0
+/* 8035A474 003562B4  DB C1 00 D0 */	stfd f30, 0xd0(r1)
+/* 8035A478 003562B8  F3 C1 00 D8 */	psq_st f30, 216(r1), 0, qr0
+/* 8035A47C 003562BC  39 61 00 D0 */	addi r11, r1, 0xd0
+/* 8035A480 003562C0  4B CA CE C1 */	bl func_80007340
+/* 8035A484 003562C4  7C 7F 1B 78 */	mr r31, r3
+/* 8035A488 003562C8  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035A48C 003562CC  4B FE 5F 11 */	bl dead__Q43scn4step4hero4HeroFv
+/* 8035A490 003562D0  4B E8 01 A1 */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 8035A494 003562D4  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A498 003562D8  41 82 00 10 */	beq lbl_8035A4A8
+/* 8035A49C 003562DC  7F E3 FB 78 */	mr r3, r31
+/* 8035A4A0 003562E0  48 00 0C 89 */	bl releaseWarpEffect__Q43scn4step4hero5WaterFv
+/* 8035A4A4 003562E4  48 00 05 10 */	b lbl_8035A9B4
+lbl_8035A4A8:
+/* 8035A4A8 003562E8  80 7F 00 1C */	lwz r3, 0x1c(r31)
+/* 8035A4AC 003562EC  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A4B0 003562F0  41 82 00 0C */	beq lbl_8035A4BC
+/* 8035A4B4 003562F4  38 03 FF FF */	addi r0, r3, -1
+/* 8035A4B8 003562F8  90 1F 00 1C */	stw r0, 0x1c(r31)
+lbl_8035A4BC:
+/* 8035A4BC 003562FC  38 61 00 08 */	addi r3, r1, 8
+/* 8035A4C0 00356300  7F E4 FB 78 */	mr r4, r31
+/* 8035A4C4 00356304  48 00 0B 65 */	bl chkPos__Q43scn4step4hero5WaterCFv
+/* 8035A4C8 00356308  7F E3 FB 78 */	mr r3, r31
+/* 8035A4CC 0035630C  48 00 0B C1 */	bl chkInWater__Q43scn4step4hero5WaterCFv
+/* 8035A4D0 00356310  88 1F 00 04 */	lbz r0, 4(r31)
+/* 8035A4D4 00356314  7C 03 00 40 */	cmplw r3, r0
+/* 8035A4D8 00356318  41 82 04 6C */	beq lbl_8035A944
+/* 8035A4DC 0035631C  98 7F 00 04 */	stb r3, 4(r31)
+/* 8035A4E0 00356320  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 8035A4E4 00356324  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A4E8 00356328  41 82 01 9C */	beq lbl_8035A684
+/* 8035A4EC 0035632C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A4F0 00356330  4B FE 5D ED */	bl param__Q43scn4step4hero4HeroFv
+/* 8035A4F4 00356334  4B FF 6B 6D */	bl common__Q43scn4step4hero5ParamCFv
+/* 8035A4F8 00356338  C3 C3 00 EC */	lfs f30, 0xec(r3)
+/* 8035A4FC 0035633C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A500 00356340  4B FE 5E 0D */	bl move__Q43scn4step4hero4HeroFv
+/* 8035A504 00356344  7C 64 1B 78 */	mr r4, r3
+/* 8035A508 00356348  38 61 00 64 */	addi r3, r1, 0x64
+/* 8035A50C 0035634C  4B E4 0E 51 */	bl velocity__Q24gobj4MoveCFv
+/* 8035A510 00356350  C0 21 00 64 */	lfs f1, 0x64(r1)
+/* 8035A514 00356354  4B E4 59 A1 */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 8035A518 00356358  FC 01 F0 40 */	fcmpo cr0, f1, f30
+/* 8035A51C 0035635C  40 81 00 40 */	ble lbl_8035A55C
+/* 8035A520 00356360  38 61 00 64 */	addi r3, r1, 0x64
+/* 8035A524 00356364  4B ED 36 81 */	bl Sign$$0f$$1__Q33hel4math4MathFRCf_Sc
+/* 8035A528 00356368  7C 60 07 74 */	extsb r0, r3
+/* 8035A52C 0035636C  C8 22 CF D0 */	lfd f1, $$259810-_SDA2_BASE_(r2)
+/* 8035A530 00356370  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 8035A534 00356374  90 01 00 BC */	stw r0, 0xbc(r1)
+/* 8035A538 00356378  3C 00 43 30 */	lis r0, 0x4330
+/* 8035A53C 0035637C  90 01 00 B8 */	stw r0, 0xb8(r1)
+/* 8035A540 00356380  C8 01 00 B8 */	lfd f0, 0xb8(r1)
+/* 8035A544 00356384  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8035A548 00356388  EF FE 00 32 */	fmuls f31, f30, f0
+/* 8035A54C 0035638C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A550 00356390  4B FE 5D BD */	bl move__Q43scn4step4hero4HeroFv
+/* 8035A554 00356394  FC 20 F8 90 */	fmr f1, f31
+/* 8035A558 00356398  4B DD 01 A9 */	bl setSpeakerVol__Q210homebutton10ControllerFf
+lbl_8035A55C:
+/* 8035A55C 0035639C  C0 21 00 68 */	lfs f1, 0x68(r1)
+/* 8035A560 003563A0  4B E4 59 55 */	bl Abs$$0f$$1__Q33hel4math4MathFf_Cf
+/* 8035A564 003563A4  FC 01 F0 40 */	fcmpo cr0, f1, f30
+/* 8035A568 003563A8  40 81 00 40 */	ble lbl_8035A5A8
+/* 8035A56C 003563AC  38 61 00 68 */	addi r3, r1, 0x68
+/* 8035A570 003563B0  4B ED 36 35 */	bl Sign$$0f$$1__Q33hel4math4MathFRCf_Sc
+/* 8035A574 003563B4  7C 60 07 74 */	extsb r0, r3
+/* 8035A578 003563B8  C8 22 CF D0 */	lfd f1, $$259810-_SDA2_BASE_(r2)
+/* 8035A57C 003563BC  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 8035A580 003563C0  90 01 00 BC */	stw r0, 0xbc(r1)
+/* 8035A584 003563C4  3C 00 43 30 */	lis r0, 0x4330
+/* 8035A588 003563C8  90 01 00 B8 */	stw r0, 0xb8(r1)
+/* 8035A58C 003563CC  C8 01 00 B8 */	lfd f0, 0xb8(r1)
+/* 8035A590 003563D0  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8035A594 003563D4  EF FE 00 32 */	fmuls f31, f30, f0
+/* 8035A598 003563D8  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A59C 003563DC  4B FE 5D 71 */	bl move__Q43scn4step4hero4HeroFv
+/* 8035A5A0 003563E0  FC 20 F8 90 */	fmr f1, f31
+/* 8035A5A4 003563E4  4B E4 0D DD */	bl setSpeedV__Q24gobj4MoveFf
+lbl_8035A5A8:
+/* 8035A5A8 003563E8  7F E3 FB 78 */	mr r3, r31
+/* 8035A5AC 003563EC  48 00 0C 65 */	bl canEffect__Q43scn4step4hero5WaterCFv
+/* 8035A5B0 003563F0  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A5B4 003563F4  41 82 00 70 */	beq lbl_8035A624
+/* 8035A5B8 003563F8  38 61 00 94 */	addi r3, r1, 0x94
+/* 8035A5BC 003563FC  4B E4 3A 7D */	bl __ct__Q33hel4math10Direction3Fv
+/* 8035A5C0 00356400  38 61 00 58 */	addi r3, r1, 0x58
+/* 8035A5C4 00356404  7F E4 FB 78 */	mr r4, r31
+/* 8035A5C8 00356408  38 A1 00 08 */	addi r5, r1, 8
+/* 8035A5CC 0035640C  48 00 04 D9 */	bl getSurfaceUpVec__Q43scn4step4hero5WaterCFRCQ33hel4math7Vector2
+/* 8035A5D0 00356410  38 61 00 A0 */	addi r3, r1, 0xa0
+/* 8035A5D4 00356414  38 81 00 58 */	addi r4, r1, 0x58
+/* 8035A5D8 00356418  4B E2 1F 75 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8035A5DC 0035641C  38 61 00 94 */	addi r3, r1, 0x94
+/* 8035A5E0 00356420  4B E4 70 AD */	bl restructUpFront__Q33hel4math10Direction3Fv
+/* 8035A5E4 00356424  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A5E8 00356428  4B FE 5D 3D */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035A5EC 0035642C  7C 7E 1B 78 */	mr r30, r3
+/* 8035A5F0 00356430  38 61 00 4C */	addi r3, r1, 0x4c
+/* 8035A5F4 00356434  38 81 00 08 */	addi r4, r1, 8
+/* 8035A5F8 00356438  4B E4 4E 65 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035A5FC 0035643C  38 7E 01 48 */	addi r3, r30, 0x148
+/* 8035A600 00356440  38 80 00 45 */	li r4, 0x45
+/* 8035A604 00356444  38 A1 00 4C */	addi r5, r1, 0x4c
+/* 8035A608 00356448  38 C1 00 94 */	addi r6, r1, 0x94
+/* 8035A60C 0035644C  4B F1 39 5D */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 8035A610 00356450  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A614 00356454  4B FE 5D 91 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 8035A618 00356458  38 63 00 04 */	addi r3, r3, 4
+/* 8035A61C 0035645C  38 80 00 F2 */	li r4, 0xf2
+/* 8035A620 00356460  48 0A 86 B5 */	bl start__Q23snd11SERequestorFUl
+lbl_8035A624:
+/* 8035A624 00356464  7F E3 FB 78 */	mr r3, r31
+/* 8035A628 00356468  48 00 0B 79 */	bl canChangeState__Q43scn4step4hero5WaterCFv
+/* 8035A62C 0035646C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A630 00356470  41 82 03 0C */	beq lbl_8035A93C
+/* 8035A634 00356474  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A638 00356478  4B FE 5D 8D */	bl captureAttacker__Q43scn4step4hero4HeroFv
+/* 8035A63C 0035647C  4B FD 78 B9 */	bl clearCapture__Q43scn4step4hero15CaptureAttackerFv
+/* 8035A640 00356480  83 9F 00 00 */	lwz r28, 0(r31)
+/* 8035A644 00356484  7F 83 E3 78 */	mr r3, r28
+/* 8035A648 00356488  4B FE 5C CD */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 8035A64C 0035648C  7C 7E 1B 78 */	mr r30, r3
+/* 8035A650 00356490  48 0A B8 B1 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8035A654 00356494  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8035A658 00356498  2C 1D 00 00 */	cmpwi r29, 0
+/* 8035A65C 0035649C  41 82 00 20 */	beq lbl_8035A67C
+/* 8035A660 003564A0  7F A3 EB 78 */	mr r3, r29
+/* 8035A664 003564A4  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8035A668 003564A8  4B ED C2 01 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8035A66C 003564AC  3C 60 80 48 */	lis r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1@ha
+/* 8035A670 003564B0  38 03 56 48 */	addi r0, r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1@l
+/* 8035A674 003564B4  90 1D 00 00 */	stw r0, 0(r29)
+/* 8035A678 003564B8  93 9D 00 08 */	stw r28, 8(r29)
+lbl_8035A67C:
+/* 8035A67C 003564BC  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8035A680 003564C0  48 00 02 BC */	b lbl_8035A93C
+lbl_8035A684:
+/* 8035A684 003564C4  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035A688 003564C8  4B E4 39 B1 */	bl __ct__Q33hel4math10Direction3Fv
+/* 8035A68C 003564CC  38 61 00 40 */	addi r3, r1, 0x40
+/* 8035A690 003564D0  7F E4 FB 78 */	mr r4, r31
+/* 8035A694 003564D4  38 A1 00 08 */	addi r5, r1, 8
+/* 8035A698 003564D8  48 00 04 0D */	bl getSurfaceUpVec__Q43scn4step4hero5WaterCFRCQ33hel4math7Vector2
+/* 8035A69C 003564DC  38 61 00 7C */	addi r3, r1, 0x7c
+/* 8035A6A0 003564E0  38 81 00 40 */	addi r4, r1, 0x40
+/* 8035A6A4 003564E4  4B E2 1E A9 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8035A6A8 003564E8  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035A6AC 003564EC  4B E4 6F E1 */	bl restructUpFront__Q33hel4math10Direction3Fv
+/* 8035A6B0 003564F0  88 1F 00 0C */	lbz r0, 0xc(r31)
+/* 8035A6B4 003564F4  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A6B8 003564F8  41 82 00 58 */	beq lbl_8035A710
+/* 8035A6BC 003564FC  7F E3 FB 78 */	mr r3, r31
+/* 8035A6C0 00356500  48 00 0B 51 */	bl canEffect__Q43scn4step4hero5WaterCFv
+/* 8035A6C4 00356504  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A6C8 00356508  41 82 02 74 */	beq lbl_8035A93C
+/* 8035A6CC 0035650C  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A6D0 00356510  4B FE 5C 55 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035A6D4 00356514  7C 7E 1B 78 */	mr r30, r3
+/* 8035A6D8 00356518  38 61 00 34 */	addi r3, r1, 0x34
+/* 8035A6DC 0035651C  38 9F 00 10 */	addi r4, r31, 0x10
+/* 8035A6E0 00356520  4B E4 4D 7D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035A6E4 00356524  38 7E 01 48 */	addi r3, r30, 0x148
+/* 8035A6E8 00356528  38 80 00 4F */	li r4, 0x4f
+/* 8035A6EC 0035652C  38 A1 00 34 */	addi r5, r1, 0x34
+/* 8035A6F0 00356530  38 C1 00 70 */	addi r6, r1, 0x70
+/* 8035A6F4 00356534  4B F1 38 75 */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 8035A6F8 00356538  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A6FC 0035653C  4B FE 5C A9 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 8035A700 00356540  38 63 00 04 */	addi r3, r3, 4
+/* 8035A704 00356544  38 80 00 F3 */	li r4, 0xf3
+/* 8035A708 00356548  48 0A 85 CD */	bl start__Q23snd11SERequestorFUl
+/* 8035A70C 0035654C  48 00 02 30 */	b lbl_8035A93C
+lbl_8035A710:
+/* 8035A710 00356550  C0 21 00 80 */	lfs f1, 0x80(r1)
+/* 8035A714 00356554  C0 02 CF C8 */	lfs f0, $$259807-_SDA2_BASE_(r2)
+/* 8035A718 00356558  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8035A71C 0035655C  40 81 01 C8 */	ble lbl_8035A8E4
+/* 8035A720 00356560  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A724 00356564  4B FE 5C 49 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
+/* 8035A728 00356568  4B DC 67 49 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
+/* 8035A72C 0035656C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A730 00356570  40 82 00 2C */	bne lbl_8035A75C
+/* 8035A734 00356574  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A738 00356578  4B FE 5C 45 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 8035A73C 0035657C  88 03 00 1F */	lbz r0, 0x1f(r3)
+/* 8035A740 00356580  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A744 00356584  40 82 00 18 */	bne lbl_8035A75C
+/* 8035A748 00356588  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A74C 0035658C  4B FE 5B B1 */	bl footState__Q43scn4step4hero4HeroFv
+/* 8035A750 00356590  4B E2 6F 85 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035A754 00356594  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A758 00356598  41 82 00 F8 */	beq lbl_8035A850
+lbl_8035A75C:
+/* 8035A75C 0035659C  7F E3 FB 78 */	mr r3, r31
+/* 8035A760 003565A0  48 00 0A B1 */	bl canEffect__Q43scn4step4hero5WaterCFv
+/* 8035A764 003565A4  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A768 003565A8  41 82 00 44 */	beq lbl_8035A7AC
+/* 8035A76C 003565AC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A770 003565B0  4B FE 5B B5 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035A774 003565B4  7C 7E 1B 78 */	mr r30, r3
+/* 8035A778 003565B8  38 61 00 28 */	addi r3, r1, 0x28
+/* 8035A77C 003565BC  38 9F 00 10 */	addi r4, r31, 0x10
+/* 8035A780 003565C0  4B E4 4C DD */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035A784 003565C4  38 7E 01 48 */	addi r3, r30, 0x148
+/* 8035A788 003565C8  38 80 00 45 */	li r4, 0x45
+/* 8035A78C 003565CC  38 A1 00 28 */	addi r5, r1, 0x28
+/* 8035A790 003565D0  38 C1 00 70 */	addi r6, r1, 0x70
+/* 8035A794 003565D4  4B F1 37 D5 */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 8035A798 003565D8  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A79C 003565DC  4B FE 5C 09 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 8035A7A0 003565E0  38 63 00 04 */	addi r3, r3, 4
+/* 8035A7A4 003565E4  38 80 00 F3 */	li r4, 0xf3
+/* 8035A7A8 003565E8  48 0A 85 2D */	bl start__Q23snd11SERequestorFUl
+lbl_8035A7AC:
+/* 8035A7AC 003565EC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A7B0 003565F0  4B FE 5B 4D */	bl footState__Q43scn4step4hero4HeroFv
+/* 8035A7B4 003565F4  4B E2 6F 21 */	bl dataType__Q36effect6detail10GenContextCFv
+/* 8035A7B8 003565F8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A7BC 003565FC  41 82 00 48 */	beq lbl_8035A804
+/* 8035A7C0 00356600  83 9F 00 00 */	lwz r28, 0(r31)
+/* 8035A7C4 00356604  7F 83 E3 78 */	mr r3, r28
+/* 8035A7C8 00356608  4B FE 5B 4D */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 8035A7CC 0035660C  7C 7E 1B 78 */	mr r30, r3
+/* 8035A7D0 00356610  48 0A B7 31 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8035A7D4 00356614  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8035A7D8 00356618  2C 1D 00 00 */	cmpwi r29, 0
+/* 8035A7DC 0035661C  41 82 00 20 */	beq lbl_8035A7FC
+/* 8035A7E0 00356620  7F A3 EB 78 */	mr r3, r29
+/* 8035A7E4 00356624  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8035A7E8 00356628  4B ED C0 81 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8035A7EC 0035662C  3C 60 80 48 */	lis r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1@ha
+/* 8035A7F0 00356630  38 03 3F F8 */	addi r0, r3, __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateWait$$4PQ43scn4step4hero4Hero$$1@l
+/* 8035A7F4 00356634  90 1D 00 00 */	stw r0, 0(r29)
+/* 8035A7F8 00356638  93 9D 00 08 */	stw r28, 8(r29)
+lbl_8035A7FC:
+/* 8035A7FC 0035663C  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8035A800 00356640  48 00 01 3C */	b lbl_8035A93C
+lbl_8035A804:
+/* 8035A804 00356644  83 9F 00 00 */	lwz r28, 0(r31)
+/* 8035A808 00356648  7F 83 E3 78 */	mr r3, r28
+/* 8035A80C 0035664C  4B FE 5B 09 */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 8035A810 00356650  7C 7E 1B 78 */	mr r30, r3
+/* 8035A814 00356654  48 0A B6 ED */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8035A818 00356658  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8035A81C 0035665C  2C 1D 00 00 */	cmpwi r29, 0
+/* 8035A820 00356660  41 82 00 28 */	beq lbl_8035A848
+/* 8035A824 00356664  7F A3 EB 78 */	mr r3, r29
+/* 8035A828 00356668  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8035A82C 0035666C  4B ED C0 3D */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8035A830 00356670  3C 60 80 48 */	lis r3, __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1@ha
+/* 8035A834 00356674  38 03 56 F0 */	addi r0, r3, __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1@l
+/* 8035A838 00356678  90 1D 00 00 */	stw r0, 0(r29)
+/* 8035A83C 0035667C  93 9D 00 08 */	stw r28, 8(r29)
+/* 8035A840 00356680  38 00 00 0C */	li r0, 0xc
+/* 8035A844 00356684  90 1D 00 0C */	stw r0, 0xc(r29)
+lbl_8035A848:
+/* 8035A848 00356688  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8035A84C 0035668C  48 00 00 F0 */	b lbl_8035A93C
+lbl_8035A850:
+/* 8035A850 00356690  7F E3 FB 78 */	mr r3, r31
+/* 8035A854 00356694  48 00 09 BD */	bl canEffect__Q43scn4step4hero5WaterCFv
+/* 8035A858 00356698  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A85C 0035669C  41 82 00 44 */	beq lbl_8035A8A0
+/* 8035A860 003566A0  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A864 003566A4  4B FE 5A C1 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035A868 003566A8  7C 7E 1B 78 */	mr r30, r3
+/* 8035A86C 003566AC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 8035A870 003566B0  38 9F 00 10 */	addi r4, r31, 0x10
+/* 8035A874 003566B4  4B E4 4B E9 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035A878 003566B8  38 7E 01 48 */	addi r3, r30, 0x148
+/* 8035A87C 003566BC  38 80 00 4F */	li r4, 0x4f
+/* 8035A880 003566C0  38 A1 00 1C */	addi r5, r1, 0x1c
+/* 8035A884 003566C4  38 C1 00 70 */	addi r6, r1, 0x70
+/* 8035A888 003566C8  4B F1 36 E1 */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 8035A88C 003566CC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A890 003566D0  4B FE 5B 15 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 8035A894 003566D4  38 63 00 04 */	addi r3, r3, 4
+/* 8035A898 003566D8  38 80 00 F4 */	li r4, 0xf4
+/* 8035A89C 003566DC  48 0A 84 39 */	bl start__Q23snd11SERequestorFUl
+lbl_8035A8A0:
+/* 8035A8A0 003566E0  83 9F 00 00 */	lwz r28, 0(r31)
+/* 8035A8A4 003566E4  7F 83 E3 78 */	mr r3, r28
+/* 8035A8A8 003566E8  4B FE 5A 6D */	bl stateChanger__Q43scn4step4hero4HeroFv
+/* 8035A8AC 003566EC  7C 7E 1B 78 */	mr r30, r3
+/* 8035A8B0 003566F0  48 0A B6 51 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
+/* 8035A8B4 003566F4  3B BE 00 10 */	addi r29, r30, 0x10
+/* 8035A8B8 003566F8  2C 1D 00 00 */	cmpwi r29, 0
+/* 8035A8BC 003566FC  41 82 00 20 */	beq lbl_8035A8DC
+/* 8035A8C0 00356700  7F A3 EB 78 */	mr r3, r29
+/* 8035A8C4 00356704  38 9E 00 90 */	addi r4, r30, 0x90
+/* 8035A8C8 00356708  4B ED BF A1 */	bl __ct__Q24util28StateFactory$$0Q24util6IState$$1FPv
+/* 8035A8CC 0035670C  3C 60 80 48 */	lis r3, __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1@ha
+/* 8035A8D0 00356710  38 03 57 00 */	addi r0, r3, __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1@l
+/* 8035A8D4 00356714  90 1D 00 00 */	stw r0, 0(r29)
+/* 8035A8D8 00356718  93 9D 00 08 */	stw r28, 8(r29)
+lbl_8035A8DC:
+/* 8035A8DC 0035671C  93 BE 00 0C */	stw r29, 0xc(r30)
+/* 8035A8E0 00356720  48 00 00 5C */	b lbl_8035A93C
+lbl_8035A8E4:
+/* 8035A8E4 00356724  7F E3 FB 78 */	mr r3, r31
+/* 8035A8E8 00356728  48 00 09 29 */	bl canEffect__Q43scn4step4hero5WaterCFv
+/* 8035A8EC 0035672C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035A8F0 00356730  41 82 00 44 */	beq lbl_8035A934
+/* 8035A8F4 00356734  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A8F8 00356738  4B FE 5A 2D */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035A8FC 0035673C  7C 7E 1B 78 */	mr r30, r3
+/* 8035A900 00356740  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035A904 00356744  38 9F 00 10 */	addi r4, r31, 0x10
+/* 8035A908 00356748  4B E4 4B 55 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035A90C 0035674C  38 7E 01 48 */	addi r3, r30, 0x148
+/* 8035A910 00356750  38 80 00 4F */	li r4, 0x4f
+/* 8035A914 00356754  38 A1 00 10 */	addi r5, r1, 0x10
+/* 8035A918 00356758  38 C1 00 70 */	addi r6, r1, 0x70
+/* 8035A91C 0035675C  4B F1 36 4D */	bl requestPD__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+/* 8035A920 00356760  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A924 00356764  4B FE 5A 81 */	bl soundSE__Q43scn4step4hero4HeroFv
+/* 8035A928 00356768  38 63 00 04 */	addi r3, r3, 4
+/* 8035A92C 0035676C  38 80 00 F3 */	li r4, 0xf3
+/* 8035A930 00356770  48 0A 83 A5 */	bl start__Q23snd11SERequestorFUl
+lbl_8035A934:
+/* 8035A934 00356774  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035A938 00356778  4B FF B9 8D */	bl ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
+lbl_8035A93C:
+/* 8035A93C 0035677C  80 1F 00 18 */	lwz r0, 0x18(r31)
+/* 8035A940 00356780  90 1F 00 1C */	stw r0, 0x1c(r31)
+lbl_8035A944:
+/* 8035A944 00356784  7F E3 FB 78 */	mr r3, r31
+/* 8035A948 00356788  48 00 08 ED */	bl updateIsDeep__Q43scn4step4hero5WaterFv
+/* 8035A94C 0035678C  88 1F 00 04 */	lbz r0, 4(r31)
+/* 8035A950 00356790  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A954 00356794  41 82 00 40 */	beq lbl_8035A994
+/* 8035A958 00356798  88 1F 00 05 */	lbz r0, 5(r31)
+/* 8035A95C 0035679C  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A960 003567A0  41 82 00 1C */	beq lbl_8035A97C
+/* 8035A964 003567A4  88 1F 00 20 */	lbz r0, 0x20(r31)
+/* 8035A968 003567A8  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A96C 003567AC  40 82 00 3C */	bne lbl_8035A9A8
+/* 8035A970 003567B0  7F E3 FB 78 */	mr r3, r31
+/* 8035A974 003567B4  48 00 07 B5 */	bl releaseWarpEffect__Q43scn4step4hero5WaterFv
+/* 8035A978 003567B8  48 00 00 30 */	b lbl_8035A9A8
+lbl_8035A97C:
+/* 8035A97C 003567BC  88 1F 00 20 */	lbz r0, 0x20(r31)
+/* 8035A980 003567C0  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A984 003567C4  41 82 00 24 */	beq lbl_8035A9A8
+/* 8035A988 003567C8  7F E3 FB 78 */	mr r3, r31
+/* 8035A98C 003567CC  48 00 07 45 */	bl requestWarpEffect__Q43scn4step4hero5WaterFv
+/* 8035A990 003567D0  48 00 00 18 */	b lbl_8035A9A8
+lbl_8035A994:
+/* 8035A994 003567D4  88 1F 00 05 */	lbz r0, 5(r31)
+/* 8035A998 003567D8  2C 00 00 00 */	cmpwi r0, 0
+/* 8035A99C 003567DC  41 82 00 0C */	beq lbl_8035A9A8
+/* 8035A9A0 003567E0  7F E3 FB 78 */	mr r3, r31
+/* 8035A9A4 003567E4  48 00 07 85 */	bl releaseWarpEffect__Q43scn4step4hero5WaterFv
+lbl_8035A9A8:
+/* 8035A9A8 003567E8  38 7F 00 10 */	addi r3, r31, 0x10
+/* 8035A9AC 003567EC  38 81 00 08 */	addi r4, r1, 8
+/* 8035A9B0 003567F0  4B DF 0F B9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+lbl_8035A9B4:
+/* 8035A9B4 003567F4  38 00 00 E8 */	li r0, 0xe8
+/* 8035A9B8 003567F8  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 8035A9BC 003567FC  CB E1 00 E0 */	lfd f31, 0xe0(r1)
+/* 8035A9C0 00356800  38 00 00 D8 */	li r0, 0xd8
+/* 8035A9C4 00356804  13 C1 00 0C */	psq_lx f30, (r1 + r0), 0, qr0
+/* 8035A9C8 00356808  CB C1 00 D0 */	lfd f30, 0xd0(r1)
+/* 8035A9CC 0035680C  39 61 00 D0 */	addi r11, r1, 0xd0
+/* 8035A9D0 00356810  4B CA C9 BD */	bl func_8000738C
+/* 8035A9D4 00356814  80 01 00 F4 */	lwz r0, 0xf4(r1)
+/* 8035A9D8 00356818  7C 08 03 A6 */	mtlr r0
+/* 8035A9DC 0035681C  38 21 00 F0 */	addi r1, r1, 0xf0
+/* 8035A9E0 00356820  4E 80 00 20 */	blr 
+
+.global isOnSurface__Q43scn4step4hero5WaterCFv
+isOnSurface__Q43scn4step4hero5WaterCFv:
+/* 8035A9E4 00356824  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8035A9E8 00356828  7C 08 02 A6 */	mflr r0
+/* 8035A9EC 0035682C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8035A9F0 00356830  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8035A9F4 00356834  7C 7F 1B 78 */	mr r31, r3
+/* 8035A9F8 00356838  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035A9FC 0035683C  4B FE 59 09 */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035AA00 00356840  7C 64 1B 78 */	mr r4, r3
+/* 8035AA04 00356844  38 61 00 18 */	addi r3, r1, 0x18
+/* 8035AA08 00356848  4B F1 4C AD */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8035AA0C 0035684C  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035AA10 00356850  38 81 00 18 */	addi r4, r1, 0x18
+/* 8035AA14 00356854  4B E6 81 B9 */	bl getXY__Q33hel4math7Vector3CFv
+/* 8035AA18 00356858  38 61 00 08 */	addi r3, r1, 8
+/* 8035AA1C 0035685C  38 81 00 10 */	addi r4, r1, 0x10
+/* 8035AA20 00356860  4B DF 0F 49 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035AA24 00356864  C0 5F 00 08 */	lfs f2, 8(r31)
+/* 8035AA28 00356868  C0 02 CF D8 */	lfs f0, $$259867-_SDA2_BASE_(r2)
+/* 8035AA2C 0035686C  EC 22 00 28 */	fsubs f1, f2, f0
+/* 8035AA30 00356870  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8035AA34 00356874  EC 00 08 2A */	fadds f0, f0, f1
+/* 8035AA38 00356878  D0 01 00 14 */	stfs f0, 0x14(r1)
+/* 8035AA3C 0035687C  C0 01 00 0C */	lfs f0, 0xc(r1)
+/* 8035AA40 00356880  EC 00 10 2A */	fadds f0, f0, f2
+/* 8035AA44 00356884  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 8035AA48 00356888  7F E3 FB 78 */	mr r3, r31
+/* 8035AA4C 0035688C  48 00 07 29 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AA50 00356890  38 81 00 10 */	addi r4, r1, 0x10
+/* 8035AA54 00356894  4B E5 74 A5 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AA58 00356898  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AA5C 0035689C  41 82 00 24 */	beq lbl_8035AA80
+/* 8035AA60 003568A0  7F E3 FB 78 */	mr r3, r31
+/* 8035AA64 003568A4  48 00 07 11 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AA68 003568A8  38 81 00 08 */	addi r4, r1, 8
+/* 8035AA6C 003568AC  4B E5 74 8D */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AA70 003568B0  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AA74 003568B4  40 82 00 0C */	bne lbl_8035AA80
+/* 8035AA78 003568B8  38 60 00 01 */	li r3, 1
+/* 8035AA7C 003568BC  48 00 00 08 */	b lbl_8035AA84
+lbl_8035AA80:
+/* 8035AA80 003568C0  38 60 00 00 */	li r3, 0
+lbl_8035AA84:
+/* 8035AA84 003568C4  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8035AA88 003568C8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8035AA8C 003568CC  7C 08 03 A6 */	mtlr r0
+/* 8035AA90 003568D0  38 21 00 30 */	addi r1, r1, 0x30
+/* 8035AA94 003568D4  4E 80 00 20 */	blr 
+
+.global resetYOffs__Q43scn4step4hero5WaterFv
+resetYOffs__Q43scn4step4hero5WaterFv:
+/* 8035AA98 003568D8  C0 02 CF C0 */	lfs f0, $$259702-_SDA2_BASE_(r2)
+/* 8035AA9C 003568DC  D0 03 00 08 */	stfs f0, 8(r3)
+/* 8035AAA0 003568E0  4E 80 00 20 */	blr 
+
+.global getSurfaceUpVec__Q43scn4step4hero5WaterCFRCQ33hel4math7Vector2
+getSurfaceUpVec__Q43scn4step4hero5WaterCFRCQ33hel4math7Vector2:
+/* 8035AAA4 003568E4  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 8035AAA8 003568E8  7C 08 02 A6 */	mflr r0
+/* 8035AAAC 003568EC  90 01 00 94 */	stw r0, 0x94(r1)
+/* 8035AAB0 003568F0  39 61 00 90 */	addi r11, r1, 0x90
+/* 8035AAB4 003568F4  4B CA C8 91 */	bl func_80007344
+/* 8035AAB8 003568F8  7C 7F 1B 78 */	mr r31, r3
+/* 8035AABC 003568FC  7C 9D 23 78 */	mr r29, r4
+/* 8035AAC0 00356900  7C BE 2B 78 */	mr r30, r5
+/* 8035AAC4 00356904  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035AAC8 00356908  4B E4 49 B5 */	bl __ct__Q33hel4math7Vector2Fv
+/* 8035AACC 0035690C  38 61 00 68 */	addi r3, r1, 0x68
+/* 8035AAD0 00356910  4B E4 49 AD */	bl __ct__Q33hel4math7Vector2Fv
+/* 8035AAD4 00356914  7F A3 EB 78 */	mr r3, r29
+/* 8035AAD8 00356918  48 00 06 9D */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AADC 0035691C  7F C4 F3 78 */	mr r4, r30
+/* 8035AAE0 00356920  4B E5 74 19 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AAE4 00356924  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AAE8 00356928  41 82 00 20 */	beq lbl_8035AB08
+/* 8035AAEC 0035692C  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035AAF0 00356930  7F C4 F3 78 */	mr r4, r30
+/* 8035AAF4 00356934  4B DF 0E 75 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035AAF8 00356938  38 61 00 68 */	addi r3, r1, 0x68
+/* 8035AAFC 0035693C  38 9D 00 10 */	addi r4, r29, 0x10
+/* 8035AB00 00356940  4B DF 0E 69 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035AB04 00356944  48 00 00 1C */	b lbl_8035AB20
+lbl_8035AB08:
+/* 8035AB08 00356948  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035AB0C 0035694C  38 9D 00 10 */	addi r4, r29, 0x10
+/* 8035AB10 00356950  4B DF 0E 59 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035AB14 00356954  38 61 00 68 */	addi r3, r1, 0x68
+/* 8035AB18 00356958  7F C4 F3 78 */	mr r4, r30
+/* 8035AB1C 0035695C  4B DF 0E 4D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+lbl_8035AB20:
+/* 8035AB20 00356960  C0 42 CF C4 */	lfs f2, $$259703-_SDA2_BASE_(r2)
+/* 8035AB24 00356964  D0 41 00 60 */	stfs f2, 0x60(r1)
+/* 8035AB28 00356968  C0 22 CF DC */	lfs f1, $$259908-_SDA2_BASE_(r2)
+/* 8035AB2C 0035696C  D0 21 00 64 */	stfs f1, 0x64(r1)
+/* 8035AB30 00356970  D0 41 00 58 */	stfs f2, 0x58(r1)
+/* 8035AB34 00356974  C0 02 CF E0 */	lfs f0, $$259909-_SDA2_BASE_(r2)
+/* 8035AB38 00356978  D0 01 00 5C */	stfs f0, 0x5c(r1)
+/* 8035AB3C 0035697C  D0 01 00 50 */	stfs f0, 0x50(r1)
+/* 8035AB40 00356980  D0 41 00 54 */	stfs f2, 0x54(r1)
+/* 8035AB44 00356984  D0 21 00 48 */	stfs f1, 0x48(r1)
+/* 8035AB48 00356988  D0 41 00 4C */	stfs f2, 0x4c(r1)
+/* 8035AB4C 0035698C  38 61 00 40 */	addi r3, r1, 0x40
+/* 8035AB50 00356990  38 81 00 70 */	addi r4, r1, 0x70
+/* 8035AB54 00356994  38 A1 00 60 */	addi r5, r1, 0x60
+/* 8035AB58 00356998  4B E4 5A 39 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AB5C 0035699C  38 61 00 38 */	addi r3, r1, 0x38
+/* 8035AB60 003569A0  38 81 00 68 */	addi r4, r1, 0x68
+/* 8035AB64 003569A4  38 A1 00 58 */	addi r5, r1, 0x58
+/* 8035AB68 003569A8  4B E4 5A 29 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AB6C 003569AC  3B C0 00 00 */	li r30, 0
+/* 8035AB70 003569B0  7F A3 EB 78 */	mr r3, r29
+/* 8035AB74 003569B4  48 00 06 01 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AB78 003569B8  38 81 00 40 */	addi r4, r1, 0x40
+/* 8035AB7C 003569BC  4B E5 73 7D */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AB80 003569C0  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AB84 003569C4  40 82 00 20 */	bne lbl_8035ABA4
+/* 8035AB88 003569C8  7F A3 EB 78 */	mr r3, r29
+/* 8035AB8C 003569CC  48 00 05 E9 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AB90 003569D0  38 81 00 40 */	addi r4, r1, 0x40
+/* 8035AB94 003569D4  4B E5 73 BD */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AB98 003569D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AB9C 003569DC  40 82 00 08 */	bne lbl_8035ABA4
+/* 8035ABA0 003569E0  3B C0 00 01 */	li r30, 1
+lbl_8035ABA4:
+/* 8035ABA4 003569E4  7F A3 EB 78 */	mr r3, r29
+/* 8035ABA8 003569E8  48 00 05 CD */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035ABAC 003569EC  38 81 00 38 */	addi r4, r1, 0x38
+/* 8035ABB0 003569F0  4B E5 73 49 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035ABB4 003569F4  2C 1E 00 00 */	cmpwi r30, 0
+/* 8035ABB8 003569F8  41 82 00 30 */	beq lbl_8035ABE8
+/* 8035ABBC 003569FC  2C 03 00 00 */	cmpwi r3, 0
+/* 8035ABC0 00356A00  41 82 00 28 */	beq lbl_8035ABE8
+/* 8035ABC4 00356A04  3C 60 80 54 */	lis r3, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8035ABC8 00356A08  38 83 52 F4 */	addi r4, r3, BASIS_Y__Q33hel4math7Vector3@l
+/* 8035ABCC 00356A0C  80 64 00 00 */	lwz r3, 0(r4)
+/* 8035ABD0 00356A10  80 04 00 04 */	lwz r0, 4(r4)
+/* 8035ABD4 00356A14  90 7F 00 00 */	stw r3, 0(r31)
+/* 8035ABD8 00356A18  90 1F 00 04 */	stw r0, 4(r31)
+/* 8035ABDC 00356A1C  80 04 00 08 */	lwz r0, 8(r4)
+/* 8035ABE0 00356A20  90 1F 00 08 */	stw r0, 8(r31)
+/* 8035ABE4 00356A24  48 00 01 D8 */	b lbl_8035ADBC
+lbl_8035ABE8:
+/* 8035ABE8 00356A28  38 61 00 30 */	addi r3, r1, 0x30
+/* 8035ABEC 00356A2C  38 81 00 70 */	addi r4, r1, 0x70
+/* 8035ABF0 00356A30  38 A1 00 58 */	addi r5, r1, 0x58
+/* 8035ABF4 00356A34  4B E4 59 9D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035ABF8 00356A38  38 61 00 28 */	addi r3, r1, 0x28
+/* 8035ABFC 00356A3C  38 81 00 68 */	addi r4, r1, 0x68
+/* 8035AC00 00356A40  38 A1 00 60 */	addi r5, r1, 0x60
+/* 8035AC04 00356A44  4B E4 59 8D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AC08 00356A48  3B C0 00 00 */	li r30, 0
+/* 8035AC0C 00356A4C  7F A3 EB 78 */	mr r3, r29
+/* 8035AC10 00356A50  48 00 05 65 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AC14 00356A54  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035AC18 00356A58  4B E5 72 E1 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AC1C 00356A5C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AC20 00356A60  40 82 00 20 */	bne lbl_8035AC40
+/* 8035AC24 00356A64  7F A3 EB 78 */	mr r3, r29
+/* 8035AC28 00356A68  48 00 05 4D */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AC2C 00356A6C  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035AC30 00356A70  4B E5 73 21 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AC34 00356A74  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AC38 00356A78  40 82 00 08 */	bne lbl_8035AC40
+/* 8035AC3C 00356A7C  3B C0 00 01 */	li r30, 1
+lbl_8035AC40:
+/* 8035AC40 00356A80  7F A3 EB 78 */	mr r3, r29
+/* 8035AC44 00356A84  48 00 05 31 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AC48 00356A88  38 81 00 28 */	addi r4, r1, 0x28
+/* 8035AC4C 00356A8C  4B E5 72 AD */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AC50 00356A90  2C 1E 00 00 */	cmpwi r30, 0
+/* 8035AC54 00356A94  41 82 00 20 */	beq lbl_8035AC74
+/* 8035AC58 00356A98  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AC5C 00356A9C  41 82 00 18 */	beq lbl_8035AC74
+/* 8035AC60 00356AA0  7F E3 FB 78 */	mr r3, r31
+/* 8035AC64 00356AA4  3C 80 80 54 */	lis r4, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8035AC68 00356AA8  38 84 52 F4 */	addi r4, r4, BASIS_Y__Q33hel4math7Vector3@l
+/* 8035AC6C 00356AAC  4B E4 50 E1 */	bl __mi__Q33hel4math7Vector3CFv
+/* 8035AC70 00356AB0  48 00 01 4C */	b lbl_8035ADBC
+lbl_8035AC74:
+/* 8035AC74 00356AB4  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035AC78 00356AB8  38 81 00 70 */	addi r4, r1, 0x70
+/* 8035AC7C 00356ABC  38 A1 00 50 */	addi r5, r1, 0x50
+/* 8035AC80 00356AC0  4B E4 59 11 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AC84 00356AC4  38 61 00 18 */	addi r3, r1, 0x18
+/* 8035AC88 00356AC8  38 81 00 68 */	addi r4, r1, 0x68
+/* 8035AC8C 00356ACC  38 A1 00 48 */	addi r5, r1, 0x48
+/* 8035AC90 00356AD0  4B E4 59 01 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AC94 00356AD4  3B C0 00 00 */	li r30, 0
+/* 8035AC98 00356AD8  7F A3 EB 78 */	mr r3, r29
+/* 8035AC9C 00356ADC  48 00 04 D9 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035ACA0 00356AE0  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035ACA4 00356AE4  4B E5 72 55 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035ACA8 00356AE8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035ACAC 00356AEC  40 82 00 20 */	bne lbl_8035ACCC
+/* 8035ACB0 00356AF0  7F A3 EB 78 */	mr r3, r29
+/* 8035ACB4 00356AF4  48 00 04 C1 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035ACB8 00356AF8  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035ACBC 00356AFC  4B E5 72 95 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035ACC0 00356B00  2C 03 00 00 */	cmpwi r3, 0
+/* 8035ACC4 00356B04  40 82 00 08 */	bne lbl_8035ACCC
+/* 8035ACC8 00356B08  3B C0 00 01 */	li r30, 1
+lbl_8035ACCC:
+/* 8035ACCC 00356B0C  7F A3 EB 78 */	mr r3, r29
+/* 8035ACD0 00356B10  48 00 04 A5 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035ACD4 00356B14  38 81 00 18 */	addi r4, r1, 0x18
+/* 8035ACD8 00356B18  4B E5 72 21 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035ACDC 00356B1C  2C 1E 00 00 */	cmpwi r30, 0
+/* 8035ACE0 00356B20  41 82 00 20 */	beq lbl_8035AD00
+/* 8035ACE4 00356B24  2C 03 00 00 */	cmpwi r3, 0
+/* 8035ACE8 00356B28  41 82 00 18 */	beq lbl_8035AD00
+/* 8035ACEC 00356B2C  7F E3 FB 78 */	mr r3, r31
+/* 8035ACF0 00356B30  3C 80 80 54 */	lis r4, BASIS_X__Q33hel4math7Vector3@ha
+/* 8035ACF4 00356B34  38 84 52 E8 */	addi r4, r4, BASIS_X__Q33hel4math7Vector3@l
+/* 8035ACF8 00356B38  4B E4 50 55 */	bl __mi__Q33hel4math7Vector3CFv
+/* 8035ACFC 00356B3C  48 00 00 C0 */	b lbl_8035ADBC
+lbl_8035AD00:
+/* 8035AD00 00356B40  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035AD04 00356B44  38 81 00 70 */	addi r4, r1, 0x70
+/* 8035AD08 00356B48  38 A1 00 48 */	addi r5, r1, 0x48
+/* 8035AD0C 00356B4C  4B E4 58 85 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AD10 00356B50  38 61 00 08 */	addi r3, r1, 8
+/* 8035AD14 00356B54  38 81 00 68 */	addi r4, r1, 0x68
+/* 8035AD18 00356B58  38 A1 00 50 */	addi r5, r1, 0x50
+/* 8035AD1C 00356B5C  4B E4 58 75 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AD20 00356B60  3B C0 00 00 */	li r30, 0
+/* 8035AD24 00356B64  7F A3 EB 78 */	mr r3, r29
+/* 8035AD28 00356B68  48 00 04 4D */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AD2C 00356B6C  38 81 00 10 */	addi r4, r1, 0x10
+/* 8035AD30 00356B70  4B E5 71 C9 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AD34 00356B74  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AD38 00356B78  40 82 00 20 */	bne lbl_8035AD58
+/* 8035AD3C 00356B7C  7F A3 EB 78 */	mr r3, r29
+/* 8035AD40 00356B80  48 00 04 35 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AD44 00356B84  38 81 00 10 */	addi r4, r1, 0x10
+/* 8035AD48 00356B88  4B E5 72 09 */	bl isExistLand__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AD4C 00356B8C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AD50 00356B90  40 82 00 08 */	bne lbl_8035AD58
+/* 8035AD54 00356B94  3B C0 00 01 */	li r30, 1
+lbl_8035AD58:
+/* 8035AD58 00356B98  7F A3 EB 78 */	mr r3, r29
+/* 8035AD5C 00356B9C  48 00 04 19 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AD60 00356BA0  38 81 00 08 */	addi r4, r1, 8
+/* 8035AD64 00356BA4  4B E5 71 95 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AD68 00356BA8  2C 1E 00 00 */	cmpwi r30, 0
+/* 8035AD6C 00356BAC  41 82 00 30 */	beq lbl_8035AD9C
+/* 8035AD70 00356BB0  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AD74 00356BB4  41 82 00 28 */	beq lbl_8035AD9C
+/* 8035AD78 00356BB8  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 8035AD7C 00356BBC  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
+/* 8035AD80 00356BC0  80 64 00 00 */	lwz r3, 0(r4)
+/* 8035AD84 00356BC4  80 04 00 04 */	lwz r0, 4(r4)
+/* 8035AD88 00356BC8  90 7F 00 00 */	stw r3, 0(r31)
+/* 8035AD8C 00356BCC  90 1F 00 04 */	stw r0, 4(r31)
+/* 8035AD90 00356BD0  80 04 00 08 */	lwz r0, 8(r4)
+/* 8035AD94 00356BD4  90 1F 00 08 */	stw r0, 8(r31)
+/* 8035AD98 00356BD8  48 00 00 24 */	b lbl_8035ADBC
+lbl_8035AD9C:
+/* 8035AD9C 00356BDC  3C 60 80 54 */	lis r3, BASIS_Y__Q33hel4math7Vector3@ha
+/* 8035ADA0 00356BE0  38 83 52 F4 */	addi r4, r3, BASIS_Y__Q33hel4math7Vector3@l
+/* 8035ADA4 00356BE4  80 64 00 00 */	lwz r3, 0(r4)
+/* 8035ADA8 00356BE8  80 04 00 04 */	lwz r0, 4(r4)
+/* 8035ADAC 00356BEC  90 7F 00 00 */	stw r3, 0(r31)
+/* 8035ADB0 00356BF0  90 1F 00 04 */	stw r0, 4(r31)
+/* 8035ADB4 00356BF4  80 04 00 08 */	lwz r0, 8(r4)
+/* 8035ADB8 00356BF8  90 1F 00 08 */	stw r0, 8(r31)
+lbl_8035ADBC:
+/* 8035ADBC 00356BFC  39 61 00 90 */	addi r11, r1, 0x90
+/* 8035ADC0 00356C00  4B CA C5 D1 */	bl func_80007390
+/* 8035ADC4 00356C04  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 8035ADC8 00356C08  7C 08 03 A6 */	mtlr r0
+/* 8035ADCC 00356C0C  38 21 00 90 */	addi r1, r1, 0x90
+/* 8035ADD0 00356C10  4E 80 00 20 */	blr 
+
+.global requestBubble__Q43scn4step4hero5WaterFRCQ33hel4math7Vector2
+requestBubble__Q43scn4step4hero5WaterFRCQ33hel4math7Vector2:
+/* 8035ADD4 00356C14  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 8035ADD8 00356C18  7C 08 02 A6 */	mflr r0
+/* 8035ADDC 00356C1C  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 8035ADE0 00356C20  93 E1 00 AC */	stw r31, 0xac(r1)
+/* 8035ADE4 00356C24  93 C1 00 A8 */	stw r30, 0xa8(r1)
+/* 8035ADE8 00356C28  7C 7F 1B 78 */	mr r31, r3
+/* 8035ADEC 00356C2C  7C 9E 23 78 */	mr r30, r4
+/* 8035ADF0 00356C30  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035ADF4 00356C34  D0 01 00 88 */	stfs f0, 0x88(r1)
+/* 8035ADF8 00356C38  D0 01 00 8C */	stfs f0, 0x8c(r1)
+/* 8035ADFC 00356C3C  38 61 00 90 */	addi r3, r1, 0x90
+/* 8035AE00 00356C40  38 A1 00 88 */	addi r5, r1, 0x88
+/* 8035AE04 00356C44  4B E4 57 8D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AE08 00356C48  7F E3 FB 78 */	mr r3, r31
+/* 8035AE0C 00356C4C  48 00 03 69 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AE10 00356C50  38 81 00 90 */	addi r4, r1, 0x90
+/* 8035AE14 00356C54  4B E5 70 E5 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AE18 00356C58  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AE1C 00356C5C  41 82 01 C8 */	beq lbl_8035AFE4
+/* 8035AE20 00356C60  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AE24 00356C64  D0 01 00 78 */	stfs f0, 0x78(r1)
+/* 8035AE28 00356C68  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035AE2C 00356C6C  D0 01 00 7C */	stfs f0, 0x7c(r1)
+/* 8035AE30 00356C70  38 61 00 80 */	addi r3, r1, 0x80
+/* 8035AE34 00356C74  7F C4 F3 78 */	mr r4, r30
+/* 8035AE38 00356C78  38 A1 00 78 */	addi r5, r1, 0x78
+/* 8035AE3C 00356C7C  4B E4 57 55 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AE40 00356C80  7F E3 FB 78 */	mr r3, r31
+/* 8035AE44 00356C84  48 00 03 31 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AE48 00356C88  38 81 00 80 */	addi r4, r1, 0x80
+/* 8035AE4C 00356C8C  4B E5 70 AD */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AE50 00356C90  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AE54 00356C94  41 82 01 90 */	beq lbl_8035AFE4
+/* 8035AE58 00356C98  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035AE5C 00356C9C  D0 01 00 68 */	stfs f0, 0x68(r1)
+/* 8035AE60 00356CA0  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AE64 00356CA4  D0 01 00 6C */	stfs f0, 0x6c(r1)
+/* 8035AE68 00356CA8  38 61 00 70 */	addi r3, r1, 0x70
+/* 8035AE6C 00356CAC  7F C4 F3 78 */	mr r4, r30
+/* 8035AE70 00356CB0  38 A1 00 68 */	addi r5, r1, 0x68
+/* 8035AE74 00356CB4  4B E4 57 1D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AE78 00356CB8  7F E3 FB 78 */	mr r3, r31
+/* 8035AE7C 00356CBC  48 00 02 F9 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AE80 00356CC0  38 81 00 70 */	addi r4, r1, 0x70
+/* 8035AE84 00356CC4  4B E5 70 75 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AE88 00356CC8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AE8C 00356CCC  41 82 01 58 */	beq lbl_8035AFE4
+/* 8035AE90 00356CD0  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AE94 00356CD4  D0 01 00 58 */	stfs f0, 0x58(r1)
+/* 8035AE98 00356CD8  D0 01 00 5C */	stfs f0, 0x5c(r1)
+/* 8035AE9C 00356CDC  38 61 00 60 */	addi r3, r1, 0x60
+/* 8035AEA0 00356CE0  7F C4 F3 78 */	mr r4, r30
+/* 8035AEA4 00356CE4  38 A1 00 58 */	addi r5, r1, 0x58
+/* 8035AEA8 00356CE8  4B E4 56 E9 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AEAC 00356CEC  7F E3 FB 78 */	mr r3, r31
+/* 8035AEB0 00356CF0  48 00 02 C5 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035AEB4 00356CF4  38 81 00 60 */	addi r4, r1, 0x60
+/* 8035AEB8 00356CF8  4B E5 70 41 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035AEBC 00356CFC  2C 03 00 00 */	cmpwi r3, 0
+/* 8035AEC0 00356D00  41 82 01 24 */	beq lbl_8035AFE4
+/* 8035AEC4 00356D04  80 02 CF E4 */	lwz r0, $$258297-_SDA2_BASE_(r2)
+/* 8035AEC8 00356D08  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035AECC 00356D0C  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035AED0 00356D10  D0 01 00 48 */	stfs f0, 0x48(r1)
+/* 8035AED4 00356D14  D0 01 00 4C */	stfs f0, 0x4c(r1)
+/* 8035AED8 00356D18  38 61 00 50 */	addi r3, r1, 0x50
+/* 8035AEDC 00356D1C  7F C4 F3 78 */	mr r4, r30
+/* 8035AEE0 00356D20  38 A1 00 48 */	addi r5, r1, 0x48
+/* 8035AEE4 00356D24  4B E4 56 AD */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AEE8 00356D28  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035AEEC 00356D2C  4B D1 A8 45 */	bl GKI_getfirst
+/* 8035AEF0 00356D30  4B EC 60 15 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8035AEF4 00356D34  38 81 00 50 */	addi r4, r1, 0x50
+/* 8035AEF8 00356D38  38 A1 00 14 */	addi r5, r1, 0x14
+/* 8035AEFC 00356D3C  4B F1 F8 D1 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RC8_GXColor
+/* 8035AF00 00356D40  80 02 CF E8 */	lwz r0, $$258300-_SDA2_BASE_(r2)
+/* 8035AF04 00356D44  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8035AF08 00356D48  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AF0C 00356D4C  D0 01 00 38 */	stfs f0, 0x38(r1)
+/* 8035AF10 00356D50  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035AF14 00356D54  D0 01 00 3C */	stfs f0, 0x3c(r1)
+/* 8035AF18 00356D58  38 61 00 40 */	addi r3, r1, 0x40
+/* 8035AF1C 00356D5C  7F C4 F3 78 */	mr r4, r30
+/* 8035AF20 00356D60  38 A1 00 38 */	addi r5, r1, 0x38
+/* 8035AF24 00356D64  4B E4 56 6D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AF28 00356D68  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035AF2C 00356D6C  4B D1 A8 05 */	bl GKI_getfirst
+/* 8035AF30 00356D70  4B EC 5F D5 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8035AF34 00356D74  38 81 00 40 */	addi r4, r1, 0x40
+/* 8035AF38 00356D78  38 A1 00 10 */	addi r5, r1, 0x10
+/* 8035AF3C 00356D7C  4B F1 F8 91 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RC8_GXColor
+/* 8035AF40 00356D80  80 02 CF EC */	lwz r0, $$258303-_SDA2_BASE_(r2)
+/* 8035AF44 00356D84  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8035AF48 00356D88  C0 02 CF F4 */	lfs f0, $$259962-_SDA2_BASE_(r2)
+/* 8035AF4C 00356D8C  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 8035AF50 00356D90  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AF54 00356D94  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8035AF58 00356D98  38 61 00 30 */	addi r3, r1, 0x30
+/* 8035AF5C 00356D9C  7F C4 F3 78 */	mr r4, r30
+/* 8035AF60 00356DA0  38 A1 00 28 */	addi r5, r1, 0x28
+/* 8035AF64 00356DA4  4B E4 56 2D */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AF68 00356DA8  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035AF6C 00356DAC  4B D1 A7 C5 */	bl GKI_getfirst
+/* 8035AF70 00356DB0  4B EC 5F 95 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8035AF74 00356DB4  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035AF78 00356DB8  38 A1 00 0C */	addi r5, r1, 0xc
+/* 8035AF7C 00356DBC  4B F1 F8 51 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RC8_GXColor
+/* 8035AF80 00356DC0  80 02 CF F0 */	lwz r0, $$258306-_SDA2_BASE_(r2)
+/* 8035AF84 00356DC4  90 01 00 08 */	stw r0, 8(r1)
+/* 8035AF88 00356DC8  C0 02 CF F8 */	lfs f0, $$259963-_SDA2_BASE_(r2)
+/* 8035AF8C 00356DCC  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 8035AF90 00356DD0  D0 01 00 1C */	stfs f0, 0x1c(r1)
+/* 8035AF94 00356DD4  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035AF98 00356DD8  7F C4 F3 78 */	mr r4, r30
+/* 8035AF9C 00356DDC  38 A1 00 18 */	addi r5, r1, 0x18
+/* 8035AFA0 00356DE0  4B E4 55 F1 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035AFA4 00356DE4  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035AFA8 00356DE8  4B D1 A7 89 */	bl GKI_getfirst
+/* 8035AFAC 00356DEC  4B EC 5F 59 */	bl debugGeneralDrawer__Q33scn4step9ComponentFv
+/* 8035AFB0 00356DF0  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035AFB4 00356DF4  38 A1 00 08 */	addi r5, r1, 8
+/* 8035AFB8 00356DF8  4B F1 F8 15 */	bl addPoint__Q43scn4step5debug13GeneralDrawerFRCQ33hel4math7Vector2RC8_GXColor
+/* 8035AFBC 00356DFC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035AFC0 00356E00  4B FE 53 65 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035AFC4 00356E04  7C 7F 1B 78 */	mr r31, r3
+/* 8035AFC8 00356E08  38 61 00 98 */	addi r3, r1, 0x98
+/* 8035AFCC 00356E0C  7F C4 F3 78 */	mr r4, r30
+/* 8035AFD0 00356E10  4B E4 44 8D */	bl toVector3__Q33hel4math7Vector2CFv
+/* 8035AFD4 00356E14  38 7F 00 08 */	addi r3, r31, 8
+/* 8035AFD8 00356E18  38 80 01 08 */	li r4, 0x108
+/* 8035AFDC 00356E1C  38 A1 00 98 */	addi r5, r1, 0x98
+/* 8035AFE0 00356E20  4B F1 2F 79 */	bl requestP__Q43scn4step5chara6EffectFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+lbl_8035AFE4:
+/* 8035AFE4 00356E24  83 E1 00 AC */	lwz r31, 0xac(r1)
+/* 8035AFE8 00356E28  83 C1 00 A8 */	lwz r30, 0xa8(r1)
+/* 8035AFEC 00356E2C  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 8035AFF0 00356E30  7C 08 03 A6 */	mtlr r0
+/* 8035AFF4 00356E34  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 8035AFF8 00356E38  4E 80 00 20 */	blr 
+
+.global releaseWarpEffectForce__Q43scn4step4hero5WaterFv
+releaseWarpEffectForce__Q43scn4step4hero5WaterFv:
+/* 8035AFFC 00356E3C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B000 00356E40  7C 08 02 A6 */	mflr r0
+/* 8035B004 00356E44  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B008 00356E48  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035B00C 00356E4C  4B FE 53 19 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035B010 00356E50  38 63 01 98 */	addi r3, r3, 0x198
+/* 8035B014 00356E54  4B F1 33 1D */	bl releaseAndVanish__Q43scn4step5chara6EffectFv
+/* 8035B018 00356E58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B01C 00356E5C  7C 08 03 A6 */	mtlr r0
+/* 8035B020 00356E60  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B024 00356E64  4E 80 00 20 */	blr 
+
+.global chkPos__Q43scn4step4hero5WaterCFv
+chkPos__Q43scn4step4hero5WaterCFv:
+/* 8035B028 00356E68  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8035B02C 00356E6C  7C 08 02 A6 */	mflr r0
+/* 8035B030 00356E70  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8035B034 00356E74  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8035B038 00356E78  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8035B03C 00356E7C  7C 7E 1B 78 */	mr r30, r3
+/* 8035B040 00356E80  7C 9F 23 78 */	mr r31, r4
+/* 8035B044 00356E84  80 64 00 00 */	lwz r3, 0(r4)
+/* 8035B048 00356E88  4B FE 52 BD */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035B04C 00356E8C  7C 64 1B 78 */	mr r4, r3
+/* 8035B050 00356E90  38 61 00 08 */	addi r3, r1, 8
+/* 8035B054 00356E94  4B F1 46 61 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8035B058 00356E98  7F C3 F3 78 */	mr r3, r30
+/* 8035B05C 00356E9C  38 81 00 08 */	addi r4, r1, 8
+/* 8035B060 00356EA0  4B E6 7B 6D */	bl getXY__Q33hel4math7Vector3CFv
+/* 8035B064 00356EA4  C0 3E 00 04 */	lfs f1, 4(r30)
+/* 8035B068 00356EA8  C0 1F 00 08 */	lfs f0, 8(r31)
+/* 8035B06C 00356EAC  EC 01 00 2A */	fadds f0, f1, f0
+/* 8035B070 00356EB0  D0 1E 00 04 */	stfs f0, 4(r30)
+/* 8035B074 00356EB4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8035B078 00356EB8  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8035B07C 00356EBC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8035B080 00356EC0  7C 08 03 A6 */	mtlr r0
+/* 8035B084 00356EC4  38 21 00 20 */	addi r1, r1, 0x20
+/* 8035B088 00356EC8  4E 80 00 20 */	blr 
+
+.global chkInWater__Q43scn4step4hero5WaterCFv
+chkInWater__Q43scn4step4hero5WaterCFv:
+/* 8035B08C 00356ECC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8035B090 00356ED0  7C 08 02 A6 */	mflr r0
+/* 8035B094 00356ED4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8035B098 00356ED8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8035B09C 00356EDC  7C 7F 1B 78 */	mr r31, r3
+/* 8035B0A0 00356EE0  38 61 00 08 */	addi r3, r1, 8
+/* 8035B0A4 00356EE4  7F E4 FB 78 */	mr r4, r31
+/* 8035B0A8 00356EE8  4B FF FF 81 */	bl chkPos__Q43scn4step4hero5WaterCFv
+/* 8035B0AC 00356EEC  7F E3 FB 78 */	mr r3, r31
+/* 8035B0B0 00356EF0  48 00 00 C5 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035B0B4 00356EF4  38 81 00 08 */	addi r4, r1, 8
+/* 8035B0B8 00356EF8  4B E5 6E 41 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035B0BC 00356EFC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8035B0C0 00356F00  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8035B0C4 00356F04  7C 08 03 A6 */	mtlr r0
+/* 8035B0C8 00356F08  38 21 00 20 */	addi r1, r1, 0x20
+/* 8035B0CC 00356F0C  4E 80 00 20 */	blr 
+
+.global requestWarpEffect__Q43scn4step4hero5WaterFv
+requestWarpEffect__Q43scn4step4hero5WaterFv:
+/* 8035B0D0 00356F10  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B0D4 00356F14  7C 08 02 A6 */	mflr r0
+/* 8035B0D8 00356F18  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B0DC 00356F1C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035B0E0 00356F20  7C 7F 1B 78 */	mr r31, r3
+/* 8035B0E4 00356F24  88 03 00 05 */	lbz r0, 5(r3)
+/* 8035B0E8 00356F28  2C 00 00 00 */	cmpwi r0, 0
+/* 8035B0EC 00356F2C  40 82 00 28 */	bne lbl_8035B114
+/* 8035B0F0 00356F30  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035B0F4 00356F34  4B FE 52 31 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035B0F8 00356F38  38 63 01 98 */	addi r3, r3, 0x198
+/* 8035B0FC 00356F3C  38 80 00 59 */	li r4, 0x59
+/* 8035B100 00356F40  38 A0 00 02 */	li r5, 2
+/* 8035B104 00356F44  C0 22 CF C8 */	lfs f1, $$259807-_SDA2_BASE_(r2)
+/* 8035B108 00356F48  4B F1 2E CD */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlf
+/* 8035B10C 00356F4C  38 00 00 01 */	li r0, 1
+/* 8035B110 00356F50  98 1F 00 05 */	stb r0, 5(r31)
+lbl_8035B114:
+/* 8035B114 00356F54  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035B118 00356F58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B11C 00356F5C  7C 08 03 A6 */	mtlr r0
+/* 8035B120 00356F60  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B124 00356F64  4E 80 00 20 */	blr 
+
+.global releaseWarpEffect__Q43scn4step4hero5WaterFv
+releaseWarpEffect__Q43scn4step4hero5WaterFv:
+/* 8035B128 00356F68  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B12C 00356F6C  7C 08 02 A6 */	mflr r0
+/* 8035B130 00356F70  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B134 00356F74  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035B138 00356F78  7C 7F 1B 78 */	mr r31, r3
+/* 8035B13C 00356F7C  88 03 00 05 */	lbz r0, 5(r3)
+/* 8035B140 00356F80  2C 00 00 00 */	cmpwi r0, 0
+/* 8035B144 00356F84  41 82 00 1C */	beq lbl_8035B160
+/* 8035B148 00356F88  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035B14C 00356F8C  4B FE 51 D9 */	bl effect__Q43scn4step4hero4HeroFv
+/* 8035B150 00356F90  38 63 01 98 */	addi r3, r3, 0x198
+/* 8035B154 00356F94  4B F1 31 D5 */	bl release__Q43scn4step5chara6EffectFv
+/* 8035B158 00356F98  38 00 00 00 */	li r0, 0
+/* 8035B15C 00356F9C  98 1F 00 05 */	stb r0, 5(r31)
+lbl_8035B160:
+/* 8035B160 00356FA0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035B164 00356FA4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B168 00356FA8  7C 08 03 A6 */	mtlr r0
+/* 8035B16C 00356FAC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B170 00356FB0  4E 80 00 20 */	blr 
+
+.global landManager__Q43scn4step4hero5WaterCFv
+landManager__Q43scn4step4hero5WaterCFv:
+/* 8035B174 00356FB4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B178 00356FB8  7C 08 02 A6 */	mflr r0
+/* 8035B17C 00356FBC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B180 00356FC0  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035B184 00356FC4  4B D1 A5 AD */	bl GKI_getfirst
+/* 8035B188 00356FC8  4B EC 5B 6D */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 8035B18C 00356FCC  4B CC 93 15 */	bl DefaultSwitchThreadCallback
+/* 8035B190 00356FD0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B194 00356FD4  7C 08 03 A6 */	mtlr r0
+/* 8035B198 00356FD8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B19C 00356FDC  4E 80 00 20 */	blr 
+
+.global canChangeState__Q43scn4step4hero5WaterCFv
+canChangeState__Q43scn4step4hero5WaterCFv:
+/* 8035B1A0 00356FE0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B1A4 00356FE4  7C 08 02 A6 */	mflr r0
+/* 8035B1A8 00356FE8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B1AC 00356FEC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035B1B0 00356FF0  7C 7F 1B 78 */	mr r31, r3
+/* 8035B1B4 00356FF4  88 03 00 0C */	lbz r0, 0xc(r3)
+/* 8035B1B8 00356FF8  2C 00 00 00 */	cmpwi r0, 0
+/* 8035B1BC 00356FFC  41 82 00 0C */	beq lbl_8035B1C8
+/* 8035B1C0 00357000  38 60 00 00 */	li r3, 0
+/* 8035B1C4 00357004  48 00 00 38 */	b lbl_8035B1FC
+lbl_8035B1C8:
+/* 8035B1C8 00357008  80 63 00 00 */	lwz r3, 0(r3)
+/* 8035B1CC 0035700C  4B D1 A5 65 */	bl GKI_getfirst
+/* 8035B1D0 00357010  4B EC 55 F9 */	bl preLoadReq__Q33scn4step9ComponentFv
+/* 8035B1D4 00357014  4B E7 F4 5D */	bl isEnable__Q25pause11ButtonPanelCFv
+/* 8035B1D8 00357018  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B1DC 0035701C  41 82 00 0C */	beq lbl_8035B1E8
+/* 8035B1E0 00357020  38 60 00 00 */	li r3, 0
+/* 8035B1E4 00357024  48 00 00 18 */	b lbl_8035B1FC
+lbl_8035B1E8:
+/* 8035B1E8 00357028  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035B1EC 0035702C  4B FE 52 21 */	bl captureHeroReceiver__Q43scn4step4hero4HeroFv
+/* 8035B1F0 00357030  4B FD 87 B5 */	bl isCapture__Q43scn4step4hero19CaptureHeroReceiverCFv
+/* 8035B1F4 00357034  7C 60 00 34 */	cntlzw r0, r3
+/* 8035B1F8 00357038  54 03 D9 7E */	srwi r3, r0, 5
+lbl_8035B1FC:
+/* 8035B1FC 0035703C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035B200 00357040  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B204 00357044  7C 08 03 A6 */	mtlr r0
+/* 8035B208 00357048  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B20C 0035704C  4E 80 00 20 */	blr 
+
+.global canEffect__Q43scn4step4hero5WaterCFv
+canEffect__Q43scn4step4hero5WaterCFv:
+/* 8035B210 00357050  88 03 00 0D */	lbz r0, 0xd(r3)
+/* 8035B214 00357054  2C 00 00 00 */	cmpwi r0, 0
+/* 8035B218 00357058  41 82 00 0C */	beq lbl_8035B224
+/* 8035B21C 0035705C  38 60 00 00 */	li r3, 0
+/* 8035B220 00357060  4E 80 00 20 */	blr 
+lbl_8035B224:
+/* 8035B224 00357064  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 8035B228 00357068  7C 00 00 34 */	cntlzw r0, r0
+/* 8035B22C 0035706C  54 03 D9 7E */	srwi r3, r0, 5
+/* 8035B230 00357070  4E 80 00 20 */	blr 
+
+.global updateIsDeep__Q43scn4step4hero5WaterFv
+updateIsDeep__Q43scn4step4hero5WaterFv:
+/* 8035B234 00357074  94 21 FF 20 */	stwu r1, -0xe0(r1)
+/* 8035B238 00357078  7C 08 02 A6 */	mflr r0
+/* 8035B23C 0035707C  90 01 00 E4 */	stw r0, 0xe4(r1)
+/* 8035B240 00357080  39 61 00 E0 */	addi r11, r1, 0xe0
+/* 8035B244 00357084  4B CA C0 E5 */	bl func_80007328
+/* 8035B248 00357088  7C 7F 1B 78 */	mr r31, r3
+/* 8035B24C 0035708C  3B 60 00 00 */	li r27, 0
+/* 8035B250 00357090  9B 63 00 20 */	stb r27, 0x20(r3)
+/* 8035B254 00357094  88 03 00 04 */	lbz r0, 4(r3)
+/* 8035B258 00357098  2C 00 00 00 */	cmpwi r0, 0
+/* 8035B25C 0035709C  41 82 01 D4 */	beq lbl_8035B430
+/* 8035B260 003570A0  38 61 00 10 */	addi r3, r1, 0x10
+/* 8035B264 003570A4  C0 22 CF C4 */	lfs f1, $$259703-_SDA2_BASE_(r2)
+/* 8035B268 003570A8  C0 5F 00 08 */	lfs f2, 8(r31)
+/* 8035B26C 003570AC  4B E4 41 3D */	bl set__Q33hel4math7Vector2Fff
+/* 8035B270 003570B0  7C 7A 1B 78 */	mr r26, r3
+/* 8035B274 003570B4  80 7F 00 00 */	lwz r3, 0(r31)
+/* 8035B278 003570B8  4B FE 50 8D */	bl location__Q43scn4step4hero4HeroCFv
+/* 8035B27C 003570BC  7C 64 1B 78 */	mr r4, r3
+/* 8035B280 003570C0  38 61 00 30 */	addi r3, r1, 0x30
+/* 8035B284 003570C4  4B F1 44 31 */	bl pos__Q43scn4step5chara8LocationCFv
+/* 8035B288 003570C8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8035B28C 003570CC  38 81 00 30 */	addi r4, r1, 0x30
+/* 8035B290 003570D0  4B E6 79 3D */	bl getXY__Q33hel4math7Vector3CFv
+/* 8035B294 003570D4  38 61 00 28 */	addi r3, r1, 0x28
+/* 8035B298 003570D8  38 81 00 18 */	addi r4, r1, 0x18
+/* 8035B29C 003570DC  7F 45 D3 78 */	mr r5, r26
+/* 8035B2A0 003570E0  4B E4 52 F1 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035B2A4 003570E4  93 61 00 48 */	stw r27, 0x48(r1)
+/* 8035B2A8 003570E8  3B 61 00 4C */	addi r27, r1, 0x4c
+/* 8035B2AC 003570EC  3B 41 00 AC */	addi r26, r1, 0xac
+lbl_8035B2B0:
+/* 8035B2B0 003570F0  7F 63 DB 78 */	mr r3, r27
+/* 8035B2B4 003570F4  4B E4 41 C9 */	bl __ct__Q33hel4math7Vector2Fv
+/* 8035B2B8 003570F8  3B 7B 00 08 */	addi r27, r27, 8
+/* 8035B2BC 003570FC  7C 1B D0 40 */	cmplw r27, r26
+/* 8035B2C0 00357100  41 80 FF F0 */	blt lbl_8035B2B0
+/* 8035B2C4 00357104  3B 20 00 00 */	li r25, 0
+/* 8035B2C8 00357108  3B C0 00 00 */	li r30, 0
+/* 8035B2CC 0035710C  3C 60 80 42 */	lis r3, CHECK_DEEP_OFFS_ARRAY__19$$2unnamed$$2Water_cpp$$2@ha
+/* 8035B2D0 00357110  3B 43 A3 60 */	addi r26, r3, CHECK_DEEP_OFFS_ARRAY__19$$2unnamed$$2Water_cpp$$2@l
+/* 8035B2D4 00357114  3A C1 00 3C */	addi r22, r1, 0x3c
+lbl_8035B2D8:
+/* 8035B2D8 00357118  7C 7A F2 14 */	add r3, r26, r30
+/* 8035B2DC 0035711C  C0 23 00 00 */	lfs f1, 0(r3)
+/* 8035B2E0 00357120  C0 43 00 04 */	lfs f2, 4(r3)
+/* 8035B2E4 00357124  38 61 00 08 */	addi r3, r1, 8
+/* 8035B2E8 00357128  4B E4 40 C1 */	bl set__Q33hel4math7Vector2Fff
+/* 8035B2EC 0035712C  7C 65 1B 78 */	mr r5, r3
+/* 8035B2F0 00357130  38 61 00 20 */	addi r3, r1, 0x20
+/* 8035B2F4 00357134  38 81 00 28 */	addi r4, r1, 0x28
+/* 8035B2F8 00357138  4B E4 52 99 */	bl __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
+/* 8035B2FC 0035713C  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 8035B300 00357140  4B CA BF 15 */	bl __cvt_fp2unsigned
+/* 8035B304 00357144  7C 7B 1B 78 */	mr r27, r3
+/* 8035B308 00357148  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 8035B30C 0035714C  4B CA BF 09 */	bl __cvt_fp2unsigned
+/* 8035B310 00357150  7C 7C 1B 78 */	mr r28, r3
+/* 8035B314 00357154  3B 00 00 00 */	li r24, 0
+/* 8035B318 00357158  3A E0 00 00 */	li r23, 0
+/* 8035B31C 0035715C  48 00 00 4C */	b lbl_8035B368
+lbl_8035B320:
+/* 8035B320 00357160  38 61 00 48 */	addi r3, r1, 0x48
+/* 8035B324 00357164  7E E4 BB 78 */	mr r4, r23
+/* 8035B328 00357168  48 00 01 21 */	bl __vc__Q33hel6common36MutableArray$$0Q33hel4math7Vector2$$412$$1FUl
+/* 8035B32C 0035716C  C0 23 00 00 */	lfs f1, 0(r3)
+/* 8035B330 00357170  4B CA BE E5 */	bl __cvt_fp2unsigned
+/* 8035B334 00357174  7C 7D 1B 78 */	mr r29, r3
+/* 8035B338 00357178  38 61 00 48 */	addi r3, r1, 0x48
+/* 8035B33C 0035717C  7E E4 BB 78 */	mr r4, r23
+/* 8035B340 00357180  48 00 01 09 */	bl __vc__Q33hel6common36MutableArray$$0Q33hel4math7Vector2$$412$$1FUl
+/* 8035B344 00357184  C0 23 00 04 */	lfs f1, 4(r3)
+/* 8035B348 00357188  4B CA BE CD */	bl __cvt_fp2unsigned
+/* 8035B34C 0035718C  7C 1B E8 40 */	cmplw r27, r29
+/* 8035B350 00357190  40 82 00 14 */	bne lbl_8035B364
+/* 8035B354 00357194  7C 1C 18 40 */	cmplw r28, r3
+/* 8035B358 00357198  40 82 00 0C */	bne lbl_8035B364
+/* 8035B35C 0035719C  3B 00 00 01 */	li r24, 1
+/* 8035B360 003571A0  48 00 00 14 */	b lbl_8035B374
+lbl_8035B364:
+/* 8035B364 003571A4  3A F7 00 01 */	addi r23, r23, 1
+lbl_8035B368:
+/* 8035B368 003571A8  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 8035B36C 003571AC  7C 17 00 40 */	cmplw r23, r0
+/* 8035B370 003571B0  41 80 FF B0 */	blt lbl_8035B320
+lbl_8035B374:
+/* 8035B374 003571B4  2C 18 00 00 */	cmpwi r24, 0
+/* 8035B378 003571B8  40 82 00 94 */	bne lbl_8035B40C
+/* 8035B37C 003571BC  80 01 00 48 */	lwz r0, 0x48(r1)
+/* 8035B380 003571C0  28 00 00 0C */	cmplwi r0, 0xc
+/* 8035B384 003571C4  41 82 00 24 */	beq lbl_8035B3A8
+/* 8035B388 003571C8  38 61 00 4C */	addi r3, r1, 0x4c
+/* 8035B38C 003571CC  80 81 00 48 */	lwz r4, 0x48(r1)
+/* 8035B390 003571D0  48 00 01 05 */	bl __vc__Q33hel6common29Array$$0Q33hel4math7Vector2$$412$$1FUl
+/* 8035B394 003571D4  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035B398 003571D8  4B DF 05 D1 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 8035B39C 003571DC  80 61 00 48 */	lwz r3, 0x48(r1)
+/* 8035B3A0 003571E0  38 03 00 01 */	addi r0, r3, 1
+/* 8035B3A4 003571E4  90 01 00 48 */	stw r0, 0x48(r1)
+lbl_8035B3A8:
+/* 8035B3A8 003571E8  7F E3 FB 78 */	mr r3, r31
+/* 8035B3AC 003571EC  4B FF FD C9 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035B3B0 003571F0  38 81 00 20 */	addi r4, r1, 0x20
+/* 8035B3B4 003571F4  4B E5 6B 45 */	bl isWaterGrid__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035B3B8 003571F8  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B3BC 003571FC  40 82 00 50 */	bne lbl_8035B40C
+/* 8035B3C0 00357200  7F E3 FB 78 */	mr r3, r31
+/* 8035B3C4 00357204  4B FF FD B1 */	bl landManager__Q43scn4step4hero5WaterCFv
+/* 8035B3C8 00357208  7C 64 1B 78 */	mr r4, r3
+/* 8035B3CC 0035720C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 8035B3D0 00357210  38 A1 00 20 */	addi r5, r1, 0x20
+/* 8035B3D4 00357214  4B E5 68 55 */	bl getLandGridData__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2
+/* 8035B3D8 00357218  7E C3 B3 78 */	mr r3, r22
+/* 8035B3DC 0035721C  38 80 00 00 */	li r4, 0
+/* 8035B3E0 00357220  4B E5 C7 E5 */	bl shapeKind__Q35mcoll6detail8LandGridCFb
+/* 8035B3E4 00357224  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B3E8 00357228  41 82 00 14 */	beq lbl_8035B3FC
+/* 8035B3EC 0035722C  7E C3 B3 78 */	mr r3, r22
+/* 8035B3F0 00357230  4B E5 C8 B5 */	bl isThrough__Q35mcoll6detail8LandGridCFv
+/* 8035B3F4 00357234  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B3F8 00357238  41 82 00 14 */	beq lbl_8035B40C
+lbl_8035B3FC:
+/* 8035B3FC 0035723C  38 61 00 48 */	addi r3, r1, 0x48
+/* 8035B400 00357240  38 80 FF FF */	li r4, -1
+/* 8035B404 00357244  4B E1 A7 65 */	bl __dt__Q23scn6ISceneFv
+/* 8035B408 00357248  48 00 00 28 */	b lbl_8035B430
+lbl_8035B40C:
+/* 8035B40C 0035724C  3B 39 00 01 */	addi r25, r25, 1
+/* 8035B410 00357250  3B DE 00 08 */	addi r30, r30, 8
+/* 8035B414 00357254  28 19 00 0C */	cmplwi r25, 0xc
+/* 8035B418 00357258  41 80 FE C0 */	blt lbl_8035B2D8
+/* 8035B41C 0035725C  38 00 00 01 */	li r0, 1
+/* 8035B420 00357260  98 1F 00 20 */	stb r0, 0x20(r31)
+/* 8035B424 00357264  38 61 00 48 */	addi r3, r1, 0x48
+/* 8035B428 00357268  38 80 FF FF */	li r4, -1
+/* 8035B42C 0035726C  4B E1 A7 3D */	bl __dt__Q23scn6ISceneFv
+lbl_8035B430:
+/* 8035B430 00357270  39 61 00 E0 */	addi r11, r1, 0xe0
+/* 8035B434 00357274  4B CA BF 41 */	bl func_80007374
+/* 8035B438 00357278  80 01 00 E4 */	lwz r0, 0xe4(r1)
+/* 8035B43C 0035727C  7C 08 03 A6 */	mtlr r0
+/* 8035B440 00357280  38 21 00 E0 */	addi r1, r1, 0xe0
+/* 8035B444 00357284  4E 80 00 20 */	blr 
+
+.global __vc__Q33hel6common36MutableArray$$0Q33hel4math7Vector2$$412$$1FUl
+__vc__Q33hel6common36MutableArray$$0Q33hel4math7Vector2$$412$$1FUl:
+/* 8035B448 00357288  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B44C 0035728C  7C 08 02 A6 */	mflr r0
+/* 8035B450 00357290  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B454 00357294  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035B458 00357298  93 C1 00 08 */	stw r30, 8(r1)
+/* 8035B45C 0035729C  7C 7E 1B 78 */	mr r30, r3
+/* 8035B460 003572A0  7C 9F 23 78 */	mr r31, r4
+/* 8035B464 003572A4  7F E3 FB 78 */	mr r3, r31
+/* 8035B468 003572A8  80 9E 00 00 */	lwz r4, 0(r30)
+/* 8035B46C 003572AC  4B CC 90 35 */	bl DefaultSwitchThreadCallback
+/* 8035B470 003572B0  38 7E 00 04 */	addi r3, r30, 4
+/* 8035B474 003572B4  7F E4 FB 78 */	mr r4, r31
+/* 8035B478 003572B8  48 00 00 1D */	bl __vc__Q33hel6common29Array$$0Q33hel4math7Vector2$$412$$1FUl
+/* 8035B47C 003572BC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035B480 003572C0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8035B484 003572C4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B488 003572C8  7C 08 03 A6 */	mtlr r0
+/* 8035B48C 003572CC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B490 003572D0  4E 80 00 20 */	blr 
+
+.global __vc__Q33hel6common29Array$$0Q33hel4math7Vector2$$412$$1FUl
+__vc__Q33hel6common29Array$$0Q33hel4math7Vector2$$412$$1FUl:
+/* 8035B494 003572D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8035B498 003572D8  7C 08 02 A6 */	mflr r0
+/* 8035B49C 003572DC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8035B4A0 003572E0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8035B4A4 003572E4  93 C1 00 08 */	stw r30, 8(r1)
+/* 8035B4A8 003572E8  7C 7E 1B 78 */	mr r30, r3
+/* 8035B4AC 003572EC  7C 9F 23 78 */	mr r31, r4
+/* 8035B4B0 003572F0  7F E3 FB 78 */	mr r3, r31
+/* 8035B4B4 003572F4  38 80 00 0C */	li r4, 0xc
+/* 8035B4B8 003572F8  4B CC 8F E9 */	bl DefaultSwitchThreadCallback
+/* 8035B4BC 003572FC  57 E0 18 38 */	slwi r0, r31, 3
+/* 8035B4C0 00357300  7C 7E 02 14 */	add r3, r30, r0
+/* 8035B4C4 00357304  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8035B4C8 00357308  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8035B4CC 0035730C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8035B4D0 00357310  7C 08 03 A6 */	mtlr r0
+/* 8035B4D4 00357314  38 21 00 10 */	addi r1, r1, 0x10
+/* 8035B4D8 00357318  4E 80 00 20 */	blr 
+
+.global create__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+create__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv:
+/* 8035B4DC 0035731C  7C 65 1B 78 */	mr r5, r3
+/* 8035B4E0 00357320  80 63 00 04 */	lwz r3, 4(r3)
+/* 8035B4E4 00357324  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B4E8 00357328  4D 82 00 20 */	beqlr 
+/* 8035B4EC 0035732C  80 85 00 08 */	lwz r4, 8(r5)
+/* 8035B4F0 00357330  80 A5 00 0C */	lwz r5, 0xc(r5)
+/* 8035B4F4 00357334  38 C0 00 01 */	li r6, 1
+/* 8035B4F8 00357338  38 E0 00 00 */	li r7, 0
+/* 8035B4FC 0035733C  48 00 91 4C */	b __ct__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4HeroUlbb
+/* 8035B500 00357340  4E 80 00 20 */	blr 
+
+.global create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
+create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv:
+/* 8035B504 00357344  7C 64 1B 78 */	mr r4, r3
+/* 8035B508 00357348  80 63 00 04 */	lwz r3, 4(r3)
+/* 8035B50C 0035734C  2C 03 00 00 */	cmpwi r3, 0
+/* 8035B510 00357350  4D 82 00 20 */	beqlr 
+/* 8035B514 00357354  80 84 00 08 */	lwz r4, 8(r4)
+/* 8035B518 00357358  48 01 31 AC */	b __ct__Q53scn4step4hero6common15StateWaterFloatFPQ43scn4step4hero4Hero
+/* 8035B51C 0035735C  4E 80 00 20 */	blr 
+
+.global __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv
+__dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1Fv:
+/* 8035B520 00357360  4B ED 31 80 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+
+.global __dt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv
+__dt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv:
+/* 8035B524 00357364  4B ED 31 7C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
+
+.section .data4, "wa"  # 0x80406560 - 0x80421040
+.global CHECK_DEEP_OFFS_ARRAY__19$$2unnamed$$2Water_cpp$$2
+CHECK_DEEP_OFFS_ARRAY__19$$2unnamed$$2Water_cpp$$2:
+	.incbin "baserom.dol", 0x416460, 0x60
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global __vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1
+__vt__Q24util92StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateJump$$4PQ43scn4step4hero4Hero$$4Ul$$1:
+	.incbin "baserom.dol", 0x4817F0, 0x10
+.global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1
+__vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15StateWaterFloat$$4PQ43scn4step4hero4Hero$$1:
+	.incbin "baserom.dol", 0x481800, 0x10
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$253564
+$$253564:
+	.incbin "baserom.dol", 0x49B8A8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$259702
+$$259702:
+	.incbin "baserom.dol", 0x49DA80, 0x4
+.global $$259703
+$$259703:
+	.incbin "baserom.dol", 0x49DA84, 0x4
+.global $$259807
+$$259807:
+	.incbin "baserom.dol", 0x49DA88, 0x8
+.global $$259810
+$$259810:
+	.incbin "baserom.dol", 0x49DA90, 0x8
+.global $$259867
+$$259867:
+	.incbin "baserom.dol", 0x49DA98, 0x4
+.global $$259908
+$$259908:
+	.incbin "baserom.dol", 0x49DA9C, 0x4
+.global $$259909
+$$259909:
+	.incbin "baserom.dol", 0x49DAA0, 0x4
+.global $$258297
+$$258297:
+	.incbin "baserom.dol", 0x49DAA4, 0x4
+.global $$258300
+$$258300:
+	.incbin "baserom.dol", 0x49DAA8, 0x4
+.global $$258303
+$$258303:
+	.incbin "baserom.dol", 0x49DAAC, 0x4
+.global $$258306
+$$258306:
+	.incbin "baserom.dol", 0x49DAB0, 0x4
+.global $$259962
+$$259962:
+	.incbin "baserom.dol", 0x49DAB4, 0x4
+.global $$259963
+$$259963:
+	.incbin "baserom.dol", 0x49DAB8, 0x8

@@ -1,0 +1,41 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global SystemCallVector
+SystemCallVector:
+/* 80024420 00020260  7D 30 FA A6 */	mfspr r9, 0x3f0
+/* 80024424 00020264  61 2A 00 08 */	ori r10, r9, 8
+/* 80024428 00020268  7D 50 FB A6 */	mtspr 0x3f0, r10
+/* 8002442C 0002026C  4C 00 01 2C */	isync 
+/* 80024430 00020270  7C 00 04 AC */	sync 0
+/* 80024434 00020274  7D 30 FB A6 */	mtspr 0x3f0, r9
+/* 80024438 00020278  4C 00 00 64 */	rfi 
+lbl_8002443C:
+/* 8002443C 0002027C  60 00 00 00 */	nop 
+
+.global __OSInitSystemCall
+__OSInitSystemCall:
+/* 80024440 00020280  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80024444 00020284  7C 08 02 A6 */	mflr r0
+/* 80024448 00020288  3C 80 80 02 */	lis r4, SystemCallVector@ha
+/* 8002444C 0002028C  3C A0 80 02 */	lis r5, lbl_8002443C@ha
+/* 80024450 00020290  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80024454 00020294  38 84 44 20 */	addi r4, r4, SystemCallVector@l
+/* 80024458 00020298  38 A5 44 3C */	addi r5, r5, lbl_8002443C@l
+/* 8002445C 0002029C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80024460 000202A0  3F E0 80 00 */	lis r31, 0x80000C00@ha
+/* 80024464 000202A4  38 7F 0C 00 */	addi r3, r31, 0x80000C00@l
+/* 80024468 000202A8  7C A4 28 50 */	subf r5, r4, r5
+/* 8002446C 000202AC  4B FD FB 95 */	bl memcpy
+/* 80024470 000202B0  38 7F 0C 00 */	addi r3, r31, 0xc00
+/* 80024474 000202B4  38 80 01 00 */	li r4, 0x100
+/* 80024478 000202B8  4B FF 85 69 */	bl DCFlushRangeNoSync
+/* 8002447C 000202BC  7C 00 04 AC */	sync 0
+/* 80024480 000202C0  38 7F 0C 00 */	addi r3, r31, 0xc00
+/* 80024484 000202C4  38 80 01 00 */	li r4, 0x100
+/* 80024488 000202C8  4B FF 85 E9 */	bl ICInvalidateRange
+/* 8002448C 000202CC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80024490 000202D0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80024494 000202D4  7C 08 03 A6 */	mtlr r0
+/* 80024498 000202D8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8002449C 000202DC  4E 80 00 20 */	blr 

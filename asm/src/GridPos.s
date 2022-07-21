@@ -1,0 +1,130 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q33scn4step7GridPosFRCQ33hel4math7Vector2
+__ct__Q33scn4step7GridPosFRCQ33hel4math7Vector2:
+/* 802214BC 0021D2FC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802214C0 0021D300  7C 08 02 A6 */	mflr r0
+/* 802214C4 0021D304  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802214C8 0021D308  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 802214CC 0021D30C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 802214D0 0021D310  7C 7E 1B 78 */	mr r30, r3
+/* 802214D4 0021D314  7C 9F 23 78 */	mr r31, r4
+/* 802214D8 0021D318  C0 24 00 00 */	lfs f1, 0(r4)
+/* 802214DC 0021D31C  4B F9 9A F5 */	bl FloorF__Q33hel4math4MathFf
+/* 802214E0 0021D320  FC 00 08 1E */	fctiwz f0, f1
+/* 802214E4 0021D324  D8 01 00 08 */	stfd f0, 8(r1)
+/* 802214E8 0021D328  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 802214EC 0021D32C  90 1E 00 00 */	stw r0, 0(r30)
+/* 802214F0 0021D330  C0 3F 00 04 */	lfs f1, 4(r31)
+/* 802214F4 0021D334  4B F9 9A DD */	bl FloorF__Q33hel4math4MathFf
+/* 802214F8 0021D338  FC 00 08 1E */	fctiwz f0, f1
+/* 802214FC 0021D33C  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 80221500 0021D340  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80221504 0021D344  90 1E 00 04 */	stw r0, 4(r30)
+/* 80221508 0021D348  7F C3 F3 78 */	mr r3, r30
+/* 8022150C 0021D34C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80221510 0021D350  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80221514 0021D354  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80221518 0021D358  7C 08 03 A6 */	mtlr r0
+/* 8022151C 0021D35C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80221520 0021D360  4E 80 00 20 */	blr 
+
+.global toWorldPos__Q33scn4step7GridPosCFv
+toWorldPos__Q33scn4step7GridPosCFv:
+/* 80221524 0021D364  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80221528 0021D368  80 04 00 04 */	lwz r0, 4(r4)
+/* 8022152C 0021D36C  C8 22 A2 80 */	lfd f1, $$249743-_SDA2_BASE_(r2)
+/* 80221530 0021D370  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80221534 0021D374  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80221538 0021D378  3C A0 43 30 */	lis r5, 0x4330
+/* 8022153C 0021D37C  90 A1 00 08 */	stw r5, 8(r1)
+/* 80221540 0021D380  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80221544 0021D384  EC 40 08 28 */	fsubs f2, f0, f1
+/* 80221548 0021D388  80 04 00 00 */	lwz r0, 0(r4)
+/* 8022154C 0021D38C  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80221550 0021D390  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80221554 0021D394  90 A1 00 10 */	stw r5, 0x10(r1)
+/* 80221558 0021D398  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 8022155C 0021D39C  EC 00 08 28 */	fsubs f0, f0, f1
+/* 80221560 0021D3A0  D0 03 00 00 */	stfs f0, 0(r3)
+/* 80221564 0021D3A4  D0 43 00 04 */	stfs f2, 4(r3)
+/* 80221568 0021D3A8  38 21 00 20 */	addi r1, r1, 0x20
+/* 8022156C 0021D3AC  4E 80 00 20 */	blr 
+
+.global toWorldPosAtCenter__Q33scn4step7GridPosCFv
+toWorldPosAtCenter__Q33scn4step7GridPosCFv:
+/* 80221570 0021D3B0  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80221574 0021D3B4  7C 08 02 A6 */	mflr r0
+/* 80221578 0021D3B8  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8022157C 0021D3BC  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80221580 0021D3C0  93 C1 00 38 */	stw r30, 0x38(r1)
+/* 80221584 0021D3C4  7C 7E 1B 78 */	mr r30, r3
+/* 80221588 0021D3C8  7C 9F 23 78 */	mr r31, r4
+/* 8022158C 0021D3CC  38 61 00 18 */	addi r3, r1, 0x18
+/* 80221590 0021D3D0  80 84 00 00 */	lwz r4, 0(r4)
+/* 80221594 0021D3D4  38 84 00 01 */	addi r4, r4, 1
+/* 80221598 0021D3D8  80 BF 00 04 */	lwz r5, 4(r31)
+/* 8022159C 0021D3DC  38 A5 00 01 */	addi r5, r5, 1
+/* 802215A0 0021D3E0  4B F5 37 99 */	bl __ct__Q33hel6common15RuntimeTypeInfoFPCQ33hel6common15RuntimeTypeInfoPCc
+/* 802215A4 0021D3E4  7C 64 1B 78 */	mr r4, r3
+/* 802215A8 0021D3E8  38 61 00 20 */	addi r3, r1, 0x20
+/* 802215AC 0021D3EC  4B FF FF 79 */	bl toWorldPos__Q33scn4step7GridPosCFv
+/* 802215B0 0021D3F0  38 61 00 28 */	addi r3, r1, 0x28
+/* 802215B4 0021D3F4  7F E4 FB 78 */	mr r4, r31
+/* 802215B8 0021D3F8  4B FF FF 6D */	bl toWorldPos__Q33scn4step7GridPosCFv
+/* 802215BC 0021D3FC  38 81 00 28 */	addi r4, r1, 0x28
+/* 802215C0 0021D400  38 61 00 10 */	addi r3, r1, 0x10
+/* 802215C4 0021D404  4B F2 A3 A5 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802215C8 0021D408  7C 64 1B 78 */	mr r4, r3
+/* 802215CC 0021D40C  C0 23 00 00 */	lfs f1, 0(r3)
+/* 802215D0 0021D410  C0 01 00 20 */	lfs f0, 0x20(r1)
+/* 802215D4 0021D414  EC 01 00 2A */	fadds f0, f1, f0
+/* 802215D8 0021D418  D0 03 00 00 */	stfs f0, 0(r3)
+/* 802215DC 0021D41C  C0 23 00 04 */	lfs f1, 4(r3)
+/* 802215E0 0021D420  C0 01 00 24 */	lfs f0, 0x24(r1)
+/* 802215E4 0021D424  EC 01 00 2A */	fadds f0, f1, f0
+/* 802215E8 0021D428  D0 03 00 04 */	stfs f0, 4(r3)
+/* 802215EC 0021D42C  38 61 00 30 */	addi r3, r1, 0x30
+/* 802215F0 0021D430  4B F2 A3 79 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 802215F4 0021D434  38 61 00 08 */	addi r3, r1, 8
+/* 802215F8 0021D438  38 81 00 30 */	addi r4, r1, 0x30
+/* 802215FC 0021D43C  4B F2 A3 6D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80221600 0021D440  7C 64 1B 78 */	mr r4, r3
+/* 80221604 0021D444  C0 03 00 00 */	lfs f0, 0(r3)
+/* 80221608 0021D448  C0 22 A2 88 */	lfs f1, $$249758-_SDA2_BASE_(r2)
+/* 8022160C 0021D44C  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80221610 0021D450  D0 03 00 00 */	stfs f0, 0(r3)
+/* 80221614 0021D454  C0 03 00 04 */	lfs f0, 4(r3)
+/* 80221618 0021D458  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8022161C 0021D45C  D0 03 00 04 */	stfs f0, 4(r3)
+/* 80221620 0021D460  7F C3 F3 78 */	mr r3, r30
+/* 80221624 0021D464  4B F2 A3 45 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+/* 80221628 0021D468  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 8022162C 0021D46C  83 C1 00 38 */	lwz r30, 0x38(r1)
+/* 80221630 0021D470  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80221634 0021D474  7C 08 03 A6 */	mtlr r0
+/* 80221638 0021D478  38 21 00 40 */	addi r1, r1, 0x40
+/* 8022163C 0021D47C  4E 80 00 20 */	blr 
+
+.global isPositivePos__Q33scn4step7GridPosCFv
+isPositivePos__Q33scn4step7GridPosCFv:
+/* 80221640 0021D480  38 80 00 00 */	li r4, 0
+/* 80221644 0021D484  80 03 00 00 */	lwz r0, 0(r3)
+/* 80221648 0021D488  2C 00 00 00 */	cmpwi r0, 0
+/* 8022164C 0021D48C  41 80 00 14 */	blt lbl_80221660
+/* 80221650 0021D490  80 03 00 04 */	lwz r0, 4(r3)
+/* 80221654 0021D494  2C 00 00 00 */	cmpwi r0, 0
+/* 80221658 0021D498  41 80 00 08 */	blt lbl_80221660
+/* 8022165C 0021D49C  38 80 00 01 */	li r4, 1
+lbl_80221660:
+/* 80221660 0021D4A0  7C 83 23 78 */	mr r3, r4
+/* 80221664 0021D4A4  4E 80 00 20 */	blr 
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$249743
+$$249743:
+	.incbin "baserom.dol", 0x49AD40, 0x8
+.global $$249758
+$$249758:
+	.incbin "baserom.dol", 0x49AD48, 0x8

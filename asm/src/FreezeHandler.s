@@ -1,0 +1,189 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q26freeze13FreezeHandlerFRQ26freeze7ConsolePUcPUc
+__ct__Q26freeze13FreezeHandlerFRQ26freeze7ConsolePUcPUc:
+/* 8018A2D0 00186110  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8018A2D4 00186114  7C 08 02 A6 */	mflr r0
+/* 8018A2D8 00186118  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8018A2DC 0018611C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8018A2E0 00186120  93 C1 00 08 */	stw r30, 8(r1)
+/* 8018A2E4 00186124  7C 7E 1B 78 */	mr r30, r3
+/* 8018A2E8 00186128  90 83 00 00 */	stw r4, 0(r3)
+/* 8018A2EC 0018612C  3B E0 00 00 */	li r31, 0
+/* 8018A2F0 00186130  93 E3 00 04 */	stw r31, 4(r3)
+/* 8018A2F4 00186134  38 63 00 08 */	addi r3, r3, 8
+/* 8018A2F8 00186138  7C A4 2B 78 */	mr r4, r5
+/* 8018A2FC 0018613C  7C C5 33 78 */	mr r5, r6
+/* 8018A300 00186140  48 00 12 CD */	bl __ct__Q26freeze10XFBRestoreFPUcPUc
+/* 8018A304 00186144  9B FE 01 80 */	stb r31, 0x180(r30)
+/* 8018A308 00186148  93 FE 01 84 */	stw r31, 0x184(r30)
+/* 8018A30C 0018614C  7F C3 F3 78 */	mr r3, r30
+/* 8018A310 00186150  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8018A314 00186154  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8018A318 00186158  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8018A31C 0018615C  7C 08 03 A6 */	mtlr r0
+/* 8018A320 00186160  38 21 00 10 */	addi r1, r1, 0x10
+/* 8018A324 00186164  4E 80 00 20 */	blr 
+
+.global callback__Q26freeze13FreezeHandlerFb
+callback__Q26freeze13FreezeHandlerFb:
+/* 8018A328 00186168  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8018A32C 0018616C  7C 08 02 A6 */	mflr r0
+/* 8018A330 00186170  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8018A334 00186174  39 61 00 20 */	addi r11, r1, 0x20
+/* 8018A338 00186178  4B E7 D0 05 */	bl func_8000733C
+/* 8018A33C 0018617C  7C 7D 1B 78 */	mr r29, r3
+/* 8018A340 00186180  7C 9E 23 78 */	mr r30, r4
+/* 8018A344 00186184  80 83 00 04 */	lwz r4, 4(r3)
+/* 8018A348 00186188  2C 04 00 00 */	cmpwi r4, 0
+/* 8018A34C 0018618C  40 82 00 B4 */	bne lbl_8018A400
+/* 8018A350 00186190  38 04 00 01 */	addi r0, r4, 1
+/* 8018A354 00186194  90 03 00 04 */	stw r0, 4(r3)
+/* 8018A358 00186198  80 6D ED 08 */	lwz r3, object___Q33hel6common35ExplicitSingleton$$0Q23gfx9VISetting$$1-_SDA_BASE_(r13)
+/* 8018A35C 0018619C  80 63 00 00 */	lwz r3, 0(r3)
+/* 8018A360 001861A0  4B F9 D2 E1 */	bl DirectPrint_SetupFB__Q34nw4r2db6detailFPC16_GXRenderModeObj
+/* 8018A364 001861A4  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8018A368 001861A8  83 63 00 00 */	lwz r27, 0(r3)
+/* 8018A36C 001861AC  2C 1B 00 00 */	cmpwi r27, 0
+/* 8018A370 001861B0  40 82 00 20 */	bne lbl_8018A390
+/* 8018A374 001861B4  3C 60 80 45 */	lis r3, $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb@ha
+/* 8018A378 001861B8  38 63 3E DC */	addi r3, r3, $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb@l
+/* 8018A37C 001861BC  38 80 01 F0 */	li r4, 0x1f0
+/* 8018A380 001861C0  3C A0 80 45 */	lis r5, $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20@ha
+/* 8018A384 001861C4  38 A5 3E B8 */	addi r5, r5, $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20@l
+/* 8018A388 001861C8  4C C6 31 82 */	crclr 6
+/* 8018A38C 001861CC  4B F9 DF C5 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_8018A390:
+/* 8018A390 001861D0  38 00 00 01 */	li r0, 1
+/* 8018A394 001861D4  98 1B 00 22 */	stb r0, 0x22(r27)
+/* 8018A398 001861D8  38 7D 00 08 */	addi r3, r29, 8
+/* 8018A39C 001861DC  48 00 12 61 */	bl init__Q26freeze10XFBRestoreFv
+/* 8018A3A0 001861E0  3B 60 00 00 */	li r27, 0
+/* 8018A3A4 001861E4  3B 80 00 00 */	li r28, 0
+lbl_8018A3A8:
+/* 8018A3A8 001861E8  7F 63 DB 78 */	mr r3, r27
+/* 8018A3AC 001861EC  7C 9D E2 14 */	add r4, r29, r28
+/* 8018A3B0 001861F0  38 84 00 30 */	addi r4, r4, 0x30
+/* 8018A3B4 001861F4  4B EC E1 8D */	bl WPADRead
+/* 8018A3B8 001861F8  3B 7B 00 01 */	addi r27, r27, 1
+/* 8018A3BC 001861FC  3B 9C 00 2A */	addi r28, r28, 0x2a
+/* 8018A3C0 00186200  2C 1B 00 04 */	cmpwi r27, 4
+/* 8018A3C4 00186204  41 80 FF E4 */	blt lbl_8018A3A8
+/* 8018A3C8 00186208  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8018A3CC 0018620C  83 63 00 00 */	lwz r27, 0(r3)
+/* 8018A3D0 00186210  2C 1B 00 00 */	cmpwi r27, 0
+/* 8018A3D4 00186214  40 82 00 20 */	bne lbl_8018A3F4
+/* 8018A3D8 00186218  3C 60 80 45 */	lis r3, $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl@ha
+/* 8018A3DC 0018621C  38 63 38 F4 */	addi r3, r3, $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl@l
+/* 8018A3E0 00186220  38 80 02 2C */	li r4, 0x22c
+/* 8018A3E4 00186224  3C A0 80 45 */	lis r5, $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl$$20@ha
+/* 8018A3E8 00186228  38 A5 38 D0 */	addi r5, r5, $$2STRING$$2Console_SetViewBaseLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadl$$20@l
+/* 8018A3EC 0018622C  4C C6 31 82 */	crclr 6
+/* 8018A3F0 00186230  4B F9 DF 61 */	bl Panic__Q24nw4r2dbFPCciPCce
+lbl_8018A3F4:
+/* 8018A3F4 00186234  38 00 00 00 */	li r0, 0
+/* 8018A3F8 00186238  90 1B 00 18 */	stw r0, 0x18(r27)
+/* 8018A3FC 0018623C  3B C0 00 01 */	li r30, 1
+lbl_8018A400:
+/* 8018A400 00186240  3B E0 00 00 */	li r31, 0
+/* 8018A404 00186244  3B 80 00 00 */	li r28, 0
+/* 8018A408 00186248  3B 60 00 04 */	li r27, 4
+lbl_8018A40C:
+/* 8018A40C 0018624C  7C DD E2 14 */	add r6, r29, r28
+/* 8018A410 00186250  88 06 00 59 */	lbz r0, 0x59(r6)
+/* 8018A414 00186254  7C 00 07 74 */	extsb r0, r0
+/* 8018A418 00186258  2C 00 00 00 */	cmpwi r0, 0
+/* 8018A41C 0018625C  40 82 00 54 */	bne lbl_8018A470
+/* 8018A420 00186260  A0 06 00 30 */	lhz r0, 0x30(r6)
+/* 8018A424 00186264  B0 06 00 D8 */	sth r0, 0xd8(r6)
+/* 8018A428 00186268  A8 06 00 32 */	lha r0, 0x32(r6)
+/* 8018A42C 0018626C  B0 06 00 DA */	sth r0, 0xda(r6)
+/* 8018A430 00186270  A8 06 00 34 */	lha r0, 0x34(r6)
+/* 8018A434 00186274  B0 06 00 DC */	sth r0, 0xdc(r6)
+/* 8018A438 00186278  A8 06 00 36 */	lha r0, 0x36(r6)
+/* 8018A43C 0018627C  B0 06 00 DE */	sth r0, 0xde(r6)
+/* 8018A440 00186280  38 A6 00 DC */	addi r5, r6, 0xdc
+/* 8018A444 00186284  38 86 00 34 */	addi r4, r6, 0x34
+/* 8018A448 00186288  7F 69 03 A6 */	mtctr r27
+lbl_8018A44C:
+/* 8018A44C 0018628C  80 64 00 04 */	lwz r3, 4(r4)
+/* 8018A450 00186290  84 04 00 08 */	lwzu r0, 8(r4)
+/* 8018A454 00186294  90 65 00 04 */	stw r3, 4(r5)
+/* 8018A458 00186298  94 05 00 08 */	stwu r0, 8(r5)
+/* 8018A45C 0018629C  42 00 FF F0 */	bdnz lbl_8018A44C
+/* 8018A460 001862A0  88 06 00 58 */	lbz r0, 0x58(r6)
+/* 8018A464 001862A4  98 06 01 00 */	stb r0, 0x100(r6)
+/* 8018A468 001862A8  88 06 00 59 */	lbz r0, 0x59(r6)
+/* 8018A46C 001862AC  98 06 01 01 */	stb r0, 0x101(r6)
+lbl_8018A470:
+/* 8018A470 001862B0  7F E3 FB 78 */	mr r3, r31
+/* 8018A474 001862B4  7C 9D E2 14 */	add r4, r29, r28
+/* 8018A478 001862B8  38 84 00 30 */	addi r4, r4, 0x30
+/* 8018A47C 001862BC  4B EC E0 C5 */	bl WPADRead
+/* 8018A480 001862C0  3B FF 00 01 */	addi r31, r31, 1
+/* 8018A484 001862C4  3B 9C 00 2A */	addi r28, r28, 0x2a
+/* 8018A488 001862C8  2C 1F 00 04 */	cmpwi r31, 4
+/* 8018A48C 001862CC  41 80 FF 80 */	blt lbl_8018A40C
+/* 8018A490 001862D0  38 7D 00 30 */	addi r3, r29, 0x30
+/* 8018A494 001862D4  48 00 00 75 */	bl button__Q26freeze3PadCFv
+/* 8018A498 001862D8  54 60 04 3E */	clrlwi r0, r3, 0x10
+/* 8018A49C 001862DC  54 00 07 7A */	rlwinm r0, r0, 0, 0x1d, 0x1d
+/* 8018A4A0 001862E0  2C 00 00 00 */	cmpwi r0, 0
+/* 8018A4A4 001862E4  41 82 00 10 */	beq lbl_8018A4B4
+/* 8018A4A8 001862E8  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8018A4AC 001862EC  4B FF F3 D5 */	bl scrollDown__Q26freeze7ConsoleFv
+/* 8018A4B0 001862F0  3B C0 00 01 */	li r30, 1
+lbl_8018A4B4:
+/* 8018A4B4 001862F4  38 7D 00 30 */	addi r3, r29, 0x30
+/* 8018A4B8 001862F8  48 00 00 51 */	bl button__Q26freeze3PadCFv
+/* 8018A4BC 001862FC  54 60 04 3E */	clrlwi r0, r3, 0x10
+/* 8018A4C0 00186300  54 00 07 38 */	rlwinm r0, r0, 0, 0x1c, 0x1c
+/* 8018A4C4 00186304  2C 00 00 00 */	cmpwi r0, 0
+/* 8018A4C8 00186308  41 82 00 10 */	beq lbl_8018A4D8
+/* 8018A4CC 0018630C  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8018A4D0 00186310  4B FF F2 79 */	bl scrollUp__Q26freeze7ConsoleFv
+/* 8018A4D4 00186314  3B C0 00 01 */	li r30, 1
+lbl_8018A4D8:
+/* 8018A4D8 00186318  2C 1E 00 00 */	cmpwi r30, 0
+/* 8018A4DC 0018631C  41 82 00 10 */	beq lbl_8018A4EC
+/* 8018A4E0 00186320  80 7D 00 00 */	lwz r3, 0(r29)
+/* 8018A4E4 00186324  80 63 00 00 */	lwz r3, 0(r3)
+/* 8018A4E8 00186328  4B F9 D6 A9 */	bl Console_DrawDirect__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead
+lbl_8018A4EC:
+/* 8018A4EC 0018632C  38 60 00 01 */	li r3, 1
+/* 8018A4F0 00186330  39 61 00 20 */	addi r11, r1, 0x20
+/* 8018A4F4 00186334  4B E7 CE 95 */	bl func_80007388
+/* 8018A4F8 00186338  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8018A4FC 0018633C  7C 08 03 A6 */	mtlr r0
+/* 8018A500 00186340  38 21 00 20 */	addi r1, r1, 0x20
+/* 8018A504 00186344  4E 80 00 20 */	blr 
+
+.global button__Q26freeze3PadCFv
+button__Q26freeze3PadCFv:
+/* 8018A508 00186348  38 C0 00 00 */	li r6, 0
+/* 8018A50C 0018634C  38 80 00 00 */	li r4, 0
+/* 8018A510 00186350  38 00 00 04 */	li r0, 4
+/* 8018A514 00186354  7C 09 03 A6 */	mtctr r0
+lbl_8018A518:
+/* 8018A518 00186358  7C A3 22 14 */	add r5, r3, r4
+/* 8018A51C 0018635C  88 05 00 29 */	lbz r0, 0x29(r5)
+/* 8018A520 00186360  7C 00 07 74 */	extsb r0, r0
+/* 8018A524 00186364  2C 00 00 00 */	cmpwi r0, 0
+/* 8018A528 00186368  40 82 00 10 */	bne lbl_8018A538
+/* 8018A52C 0018636C  A0 05 00 00 */	lhz r0, 0(r5)
+/* 8018A530 00186370  7C C0 03 78 */	or r0, r6, r0
+/* 8018A534 00186374  54 06 04 3E */	clrlwi r6, r0, 0x10
+lbl_8018A538:
+/* 8018A538 00186378  38 84 00 2A */	addi r4, r4, 0x2a
+/* 8018A53C 0018637C  42 00 FF DC */	bdnz lbl_8018A518
+/* 8018A540 00186380  7C C3 33 78 */	mr r3, r6
+/* 8018A544 00186384  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20
+$$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20:
+	.incbin "baserom.dol", 0x44FFB8, 0x24
+.global $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb
+$$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb:
+	.incbin "baserom.dol", 0x44FFDC, 0xC

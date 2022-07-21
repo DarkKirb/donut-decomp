@@ -1,0 +1,127 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting
+__ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting:
+/* 80197D50 00193B90  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80197D54 00193B94  7C 08 02 A6 */	mflr r0
+/* 80197D58 00193B98  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80197D5C 00193B9C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80197D60 00193BA0  4B E6 F5 E5 */	bl func_80007344
+/* 80197D64 00193BA4  7C 7D 1B 78 */	mr r29, r3
+/* 80197D68 00193BA8  7C 9E 23 78 */	mr r30, r4
+/* 80197D6C 00193BAC  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
+/* 80197D70 00193BB0  48 02 78 89 */	bl mem2FixHeap__Q23mem6MemoryFv
+/* 80197D74 00193BB4  7C 7F 1B 78 */	mr r31, r3
+/* 80197D78 00193BB8  7F C3 F3 78 */	mr r3, r30
+/* 80197D7C 00193BBC  48 00 00 7D */	bl fbSize__Q23gfx9VISettingCFv
+/* 80197D80 00193BC0  7C 64 1B 78 */	mr r4, r3
+/* 80197D84 00193BC4  7F A3 EB 78 */	mr r3, r29
+/* 80197D88 00193BC8  38 A0 00 20 */	li r5, 0x20
+/* 80197D8C 00193BCC  7F E6 FB 78 */	mr r6, r31
+/* 80197D90 00193BD0  48 02 55 15 */	bl __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
+/* 80197D94 00193BD4  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
+/* 80197D98 00193BD8  48 02 78 61 */	bl mem2FixHeap__Q23mem6MemoryFv
+/* 80197D9C 00193BDC  7C 7F 1B 78 */	mr r31, r3
+/* 80197DA0 00193BE0  7F C3 F3 78 */	mr r3, r30
+/* 80197DA4 00193BE4  48 00 00 55 */	bl fbSize__Q23gfx9VISettingCFv
+/* 80197DA8 00193BE8  7C 64 1B 78 */	mr r4, r3
+/* 80197DAC 00193BEC  38 7D 00 0C */	addi r3, r29, 0xc
+/* 80197DB0 00193BF0  38 A0 00 20 */	li r5, 0x20
+/* 80197DB4 00193BF4  7F E6 FB 78 */	mr r6, r31
+/* 80197DB8 00193BF8  48 02 54 ED */	bl __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
+/* 80197DBC 00193BFC  38 00 00 00 */	li r0, 0
+/* 80197DC0 00193C00  98 1D 00 18 */	stb r0, 0x18(r29)
+/* 80197DC4 00193C04  7F A3 EB 78 */	mr r3, r29
+/* 80197DC8 00193C08  48 00 00 55 */	bl drawTargetXFB__Q23gfx10XFBManagerFv
+/* 80197DCC 00193C0C  4B E9 60 A5 */	bl VISetNextFrameBuffer
+/* 80197DD0 00193C10  4B E9 4F C1 */	bl VIWaitForRetrace
+/* 80197DD4 00193C14  7F A3 EB 78 */	mr r3, r29
+/* 80197DD8 00193C18  48 00 00 A1 */	bl changeDrawTargetXFB__Q23gfx10XFBManagerFv
+/* 80197DDC 00193C1C  7F A3 EB 78 */	mr r3, r29
+/* 80197DE0 00193C20  39 61 00 20 */	addi r11, r1, 0x20
+/* 80197DE4 00193C24  4B E6 F5 AD */	bl func_80007390
+/* 80197DE8 00193C28  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80197DEC 00193C2C  7C 08 03 A6 */	mtlr r0
+/* 80197DF0 00193C30  38 21 00 20 */	addi r1, r1, 0x20
+/* 80197DF4 00193C34  4E 80 00 20 */	blr 
+
+.global fbSize__Q23gfx9VISettingCFv
+fbSize__Q23gfx9VISettingCFv:
+/* 80197DF8 00193C38  80 83 00 00 */	lwz r4, 0(r3)
+/* 80197DFC 00193C3C  A0 64 00 04 */	lhz r3, 4(r4)
+/* 80197E00 00193C40  38 03 00 0F */	addi r0, r3, 0xf
+/* 80197E04 00193C44  54 00 00 36 */	rlwinm r0, r0, 0, 0, 0x1b
+/* 80197E08 00193C48  54 03 04 3E */	clrlwi r3, r0, 0x10
+/* 80197E0C 00193C4C  A0 04 00 08 */	lhz r0, 8(r4)
+/* 80197E10 00193C50  7C 03 01 D6 */	mullw r0, r3, r0
+/* 80197E14 00193C54  54 03 08 3C */	slwi r3, r0, 1
+/* 80197E18 00193C58  4E 80 00 20 */	blr 
+
+.global drawTargetXFB__Q23gfx10XFBManagerFv
+drawTargetXFB__Q23gfx10XFBManagerFv:
+/* 80197E1C 00193C5C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80197E20 00193C60  7C 08 02 A6 */	mflr r0
+/* 80197E24 00193C64  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80197E28 00193C68  88 03 00 18 */	lbz r0, 0x18(r3)
+/* 80197E2C 00193C6C  2C 00 00 00 */	cmpwi r0, 0
+/* 80197E30 00193C70  41 82 00 20 */	beq lbl_80197E50
+/* 80197E34 00193C74  80 83 00 04 */	lwz r4, 4(r3)
+/* 80197E38 00193C78  80 03 00 08 */	lwz r0, 8(r3)
+/* 80197E3C 00193C7C  90 81 00 10 */	stw r4, 0x10(r1)
+/* 80197E40 00193C80  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80197E44 00193C84  38 61 00 10 */	addi r3, r1, 0x10
+/* 80197E48 00193C88  4B F6 89 99 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80197E4C 00193C8C  48 00 00 1C */	b lbl_80197E68
+lbl_80197E50:
+/* 80197E50 00193C90  80 83 00 10 */	lwz r4, 0x10(r3)
+/* 80197E54 00193C94  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 80197E58 00193C98  90 81 00 08 */	stw r4, 8(r1)
+/* 80197E5C 00193C9C  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80197E60 00193CA0  38 61 00 08 */	addi r3, r1, 8
+/* 80197E64 00193CA4  4B F6 89 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+lbl_80197E68:
+/* 80197E68 00193CA8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80197E6C 00193CAC  7C 08 03 A6 */	mtlr r0
+/* 80197E70 00193CB0  38 21 00 20 */	addi r1, r1, 0x20
+/* 80197E74 00193CB4  4E 80 00 20 */	blr 
+
+.global changeDrawTargetXFB__Q23gfx10XFBManagerFv
+changeDrawTargetXFB__Q23gfx10XFBManagerFv:
+/* 80197E78 00193CB8  88 03 00 18 */	lbz r0, 0x18(r3)
+/* 80197E7C 00193CBC  7C 00 00 34 */	cntlzw r0, r0
+/* 80197E80 00193CC0  54 00 D9 7E */	srwi r0, r0, 5
+/* 80197E84 00193CC4  98 03 00 18 */	stb r0, 0x18(r3)
+/* 80197E88 00193CC8  4E 80 00 20 */	blr 
+
+.global target1__Q23gfx10XFBManagerFv
+target1__Q23gfx10XFBManagerFv:
+/* 80197E8C 00193CCC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80197E90 00193CD0  7C 08 02 A6 */	mflr r0
+/* 80197E94 00193CD4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80197E98 00193CD8  80 83 00 04 */	lwz r4, 4(r3)
+/* 80197E9C 00193CDC  80 03 00 08 */	lwz r0, 8(r3)
+/* 80197EA0 00193CE0  90 81 00 08 */	stw r4, 8(r1)
+/* 80197EA4 00193CE4  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80197EA8 00193CE8  38 61 00 08 */	addi r3, r1, 8
+/* 80197EAC 00193CEC  4B F6 89 35 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80197EB0 00193CF0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80197EB4 00193CF4  7C 08 03 A6 */	mtlr r0
+/* 80197EB8 00193CF8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80197EBC 00193CFC  4E 80 00 20 */	blr 
+
+.global target2__Q23gfx10XFBManagerFv
+target2__Q23gfx10XFBManagerFv:
+/* 80197EC0 00193D00  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80197EC4 00193D04  7C 08 02 A6 */	mflr r0
+/* 80197EC8 00193D08  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80197ECC 00193D0C  80 83 00 10 */	lwz r4, 0x10(r3)
+/* 80197ED0 00193D10  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 80197ED4 00193D14  90 81 00 08 */	stw r4, 8(r1)
+/* 80197ED8 00193D18  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80197EDC 00193D1C  38 61 00 08 */	addi r3, r1, 8
+/* 80197EE0 00193D20  4B F6 89 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80197EE4 00193D24  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80197EE8 00193D28  7C 08 03 A6 */	mtlr r0
+/* 80197EEC 00193D2C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80197EF0 00193D30  4E 80 00 20 */	blr 

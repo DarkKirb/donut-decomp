@@ -1,0 +1,1067 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q34info6common11CheckWindowFRQ23mem10IAllocator
+__ct__Q34info6common11CheckWindowFRQ23mem10IAllocator:
+/* 801A857C 001A43BC  94 21 FD 40 */	stwu r1, -0x2c0(r1)
+/* 801A8580 001A43C0  7C 08 02 A6 */	mflr r0
+/* 801A8584 001A43C4  90 01 02 C4 */	stw r0, 0x2c4(r1)
+/* 801A8588 001A43C8  39 61 02 C0 */	addi r11, r1, 0x2c0
+/* 801A858C 001A43CC  4B E5 ED B9 */	bl func_80007344
+/* 801A8590 001A43D0  7C 7D 1B 78 */	mr r29, r3
+/* 801A8594 001A43D4  7C 9E 23 78 */	mr r30, r4
+/* 801A8598 001A43D8  3C 60 80 45 */	lis r3, $$253274@ha
+/* 801A859C 001A43DC  3B E3 74 30 */	addi r31, r3, $$253274@l
+/* 801A85A0 001A43E0  38 61 01 78 */	addi r3, r1, 0x178
+/* 801A85A4 001A43E4  38 9F 00 00 */	addi r4, r31, 0
+/* 801A85A8 001A43E8  38 BF 00 14 */	addi r5, r31, 0x14
+/* 801A85AC 001A43EC  7F C6 F3 78 */	mr r6, r30
+/* 801A85B0 001A43F0  48 00 57 B5 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 801A85B4 001A43F4  7C 64 1B 78 */	mr r4, r3
+/* 801A85B8 001A43F8  7F A3 EB 78 */	mr r3, r29
+/* 801A85BC 001A43FC  48 00 3B D5 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 801A85C0 001A4400  38 61 01 14 */	addi r3, r1, 0x114
+/* 801A85C4 001A4404  38 9F 00 00 */	addi r4, r31, 0
+/* 801A85C8 001A4408  38 BF 00 24 */	addi r5, r31, 0x24
+/* 801A85CC 001A440C  7F C6 F3 78 */	mr r6, r30
+/* 801A85D0 001A4410  48 00 57 95 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 801A85D4 001A4414  7C 64 1B 78 */	mr r4, r3
+/* 801A85D8 001A4418  38 7D 01 D0 */	addi r3, r29, 0x1d0
+/* 801A85DC 001A441C  48 00 3B B5 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 801A85E0 001A4420  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A85E4 001A4424  7F C4 F3 78 */	mr r4, r30
+/* 801A85E8 001A4428  48 00 04 35 */	bl __ct__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FRQ23mem10IAllocator
+/* 801A85EC 001A442C  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A85F0 001A4430  7F C4 F3 78 */	mr r4, r30
+/* 801A85F4 001A4434  48 00 04 29 */	bl __ct__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FRQ23mem10IAllocator
+/* 801A85F8 001A4438  38 7D 03 C0 */	addi r3, r29, 0x3c0
+/* 801A85FC 001A443C  48 25 A4 71 */	bl __ct__Q23snd11SERequestorFv
+/* 801A8600 001A4440  38 00 00 00 */	li r0, 0
+/* 801A8604 001A4444  90 1D 04 34 */	stw r0, 0x434(r29)
+/* 801A8608 001A4448  90 1D 04 38 */	stw r0, 0x438(r29)
+/* 801A860C 001A444C  90 1D 04 3C */	stw r0, 0x43c(r29)
+/* 801A8610 001A4450  38 7D 04 40 */	addi r3, r29, 0x440
+/* 801A8614 001A4454  38 80 00 14 */	li r4, 0x14
+/* 801A8618 001A4458  48 02 D6 11 */	bl __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
+/* 801A861C 001A445C  38 7D 04 48 */	addi r3, r29, 0x448
+/* 801A8620 001A4460  38 80 00 14 */	li r4, 0x14
+/* 801A8624 001A4464  48 02 D6 05 */	bl __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
+/* 801A8628 001A4468  38 7D 04 50 */	addi r3, r29, 0x450
+/* 801A862C 001A446C  38 80 00 06 */	li r4, 6
+/* 801A8630 001A4470  48 02 D5 F9 */	bl __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
+/* 801A8634 001A4474  38 61 02 40 */	addi r3, r1, 0x240
+/* 801A8638 001A4478  38 9F 00 00 */	addi r4, r31, 0
+/* 801A863C 001A447C  38 BF 00 30 */	addi r5, r31, 0x30
+/* 801A8640 001A4480  7F C6 F3 78 */	mr r6, r30
+/* 801A8644 001A4484  48 00 57 21 */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 801A8648 001A4488  38 61 01 DC */	addi r3, r1, 0x1dc
+/* 801A864C 001A448C  38 9F 00 00 */	addi r4, r31, 0
+/* 801A8650 001A4490  38 BF 00 3C */	addi r5, r31, 0x3c
+/* 801A8654 001A4494  7F C6 F3 78 */	mr r6, r30
+/* 801A8658 001A4498  48 00 57 0D */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 801A865C 001A449C  3B C0 00 00 */	li r30, 0
+lbl_801A8660:
+/* 801A8660 001A44A0  38 61 02 40 */	addi r3, r1, 0x240
+/* 801A8664 001A44A4  4B E7 BE 3D */	bl DefaultSwitchThreadCallback
+/* 801A8668 001A44A8  90 61 00 0C */	stw r3, 0xc(r1)
+/* 801A866C 001A44AC  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A8670 001A44B0  38 81 00 0C */	addi r4, r1, 0xc
+/* 801A8674 001A44B4  48 00 02 ED */	bl add$$0Q33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1$$1__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FQ33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1_v
+/* 801A8678 001A44B8  38 61 01 DC */	addi r3, r1, 0x1dc
+/* 801A867C 001A44BC  4B E7 BE 25 */	bl DefaultSwitchThreadCallback
+/* 801A8680 001A44C0  90 61 00 08 */	stw r3, 8(r1)
+/* 801A8684 001A44C4  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A8688 001A44C8  38 81 00 08 */	addi r4, r1, 8
+/* 801A868C 001A44CC  48 00 02 D5 */	bl add$$0Q33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1$$1__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FQ33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1_v
+/* 801A8690 001A44D0  3B DE 00 01 */	addi r30, r30, 1
+/* 801A8694 001A44D4  2C 1E 00 02 */	cmpwi r30, 2
+/* 801A8698 001A44D8  41 80 FF C8 */	blt lbl_801A8660
+/* 801A869C 001A44DC  38 61 01 00 */	addi r3, r1, 0x100
+/* 801A86A0 001A44E0  7F A4 EB 78 */	mr r4, r29
+/* 801A86A4 001A44E4  38 BF 00 50 */	addi r5, r31, 0x50
+/* 801A86A8 001A44E8  48 00 47 69 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A86AC 001A44EC  38 7D 01 D0 */	addi r3, r29, 0x1d0
+/* 801A86B0 001A44F0  38 81 01 00 */	addi r4, r1, 0x100
+/* 801A86B4 001A44F4  48 00 4A 85 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 801A86B8 001A44F8  38 61 01 00 */	addi r3, r1, 0x100
+/* 801A86BC 001A44FC  38 80 FF FF */	li r4, -1
+/* 801A86C0 001A4500  4B FC FB 61 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A86C4 001A4504  38 61 00 EC */	addi r3, r1, 0xec
+/* 801A86C8 001A4508  38 9D 01 D0 */	addi r4, r29, 0x1d0
+/* 801A86CC 001A450C  38 AD 8B D0 */	addi r5, r13, $$253280-_SDA_BASE_
+/* 801A86D0 001A4510  48 00 47 41 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A86D4 001A4514  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A86D8 001A4518  38 80 00 00 */	li r4, 0
+/* 801A86DC 001A451C  48 00 04 21 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A86E0 001A4520  38 81 00 EC */	addi r4, r1, 0xec
+/* 801A86E4 001A4524  48 00 4A 55 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 801A86E8 001A4528  38 61 00 EC */	addi r3, r1, 0xec
+/* 801A86EC 001A452C  38 80 FF FF */	li r4, -1
+/* 801A86F0 001A4530  4B FC FB 31 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A86F4 001A4534  38 61 00 D8 */	addi r3, r1, 0xd8
+/* 801A86F8 001A4538  38 9D 01 D0 */	addi r4, r29, 0x1d0
+/* 801A86FC 001A453C  38 AD 8B D8 */	addi r5, r13, $$253281-_SDA_BASE_
+/* 801A8700 001A4540  48 00 47 11 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8704 001A4544  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A8708 001A4548  38 80 00 01 */	li r4, 1
+/* 801A870C 001A454C  48 00 03 F1 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8710 001A4550  38 81 00 D8 */	addi r4, r1, 0xd8
+/* 801A8714 001A4554  48 00 4A 25 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 801A8718 001A4558  38 61 00 D8 */	addi r3, r1, 0xd8
+/* 801A871C 001A455C  38 80 FF FF */	li r4, -1
+/* 801A8720 001A4560  4B FC FB 01 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8724 001A4564  3B C0 00 00 */	li r30, 0
+/* 801A8728 001A4568  48 00 00 44 */	b lbl_801A876C
+lbl_801A872C:
+/* 801A872C 001A456C  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A8730 001A4570  7F C4 F3 78 */	mr r4, r30
+/* 801A8734 001A4574  48 00 03 C9 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8738 001A4578  7C 64 1B 78 */	mr r4, r3
+/* 801A873C 001A457C  38 61 00 C4 */	addi r3, r1, 0xc4
+/* 801A8740 001A4580  38 AD 8B E0 */	addi r5, r13, $$253282-_SDA_BASE_
+/* 801A8744 001A4584  48 00 46 CD */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8748 001A4588  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A874C 001A458C  7F C4 F3 78 */	mr r4, r30
+/* 801A8750 001A4590  48 00 03 AD */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8754 001A4594  38 81 00 C4 */	addi r4, r1, 0xc4
+/* 801A8758 001A4598  48 00 49 E1 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 801A875C 001A459C  38 61 00 C4 */	addi r3, r1, 0xc4
+/* 801A8760 001A45A0  38 80 FF FF */	li r4, -1
+/* 801A8764 001A45A4  4B FC FA BD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8768 001A45A8  3B DE 00 01 */	addi r30, r30, 1
+lbl_801A876C:
+/* 801A876C 001A45AC  80 1D 03 B4 */	lwz r0, 0x3b4(r29)
+/* 801A8770 001A45B0  7C 1E 00 40 */	cmplw r30, r0
+/* 801A8774 001A45B4  41 80 FF B8 */	blt lbl_801A872C
+/* 801A8778 001A45B8  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A877C 001A45BC  38 80 00 00 */	li r4, 0
+/* 801A8780 001A45C0  48 00 03 7D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8784 001A45C4  7C 64 1B 78 */	mr r4, r3
+/* 801A8788 001A45C8  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 801A878C 001A45CC  38 BF 00 60 */	addi r5, r31, 0x60
+/* 801A8790 001A45D0  48 00 46 81 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8794 001A45D4  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 801A8798 001A45D8  4B FF F3 91 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A879C 001A45DC  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 801A87A0 001A45E0  38 80 FF FF */	li r4, -1
+/* 801A87A4 001A45E4  4B FC FA 7D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A87A8 001A45E8  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A87AC 001A45EC  38 80 00 00 */	li r4, 0
+/* 801A87B0 001A45F0  48 00 03 4D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A87B4 001A45F4  7C 64 1B 78 */	mr r4, r3
+/* 801A87B8 001A45F8  38 61 00 9C */	addi r3, r1, 0x9c
+/* 801A87BC 001A45FC  38 BF 00 70 */	addi r5, r31, 0x70
+/* 801A87C0 001A4600  48 00 46 51 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A87C4 001A4604  38 61 00 9C */	addi r3, r1, 0x9c
+/* 801A87C8 001A4608  4B FF F3 61 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A87CC 001A460C  38 61 00 9C */	addi r3, r1, 0x9c
+/* 801A87D0 001A4610  38 80 FF FF */	li r4, -1
+/* 801A87D4 001A4614  4B FC FA 4D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A87D8 001A4618  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A87DC 001A461C  38 80 00 01 */	li r4, 1
+/* 801A87E0 001A4620  48 00 03 1D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A87E4 001A4624  7C 64 1B 78 */	mr r4, r3
+/* 801A87E8 001A4628  38 61 00 88 */	addi r3, r1, 0x88
+/* 801A87EC 001A462C  38 BF 00 60 */	addi r5, r31, 0x60
+/* 801A87F0 001A4630  48 00 46 21 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A87F4 001A4634  38 61 00 88 */	addi r3, r1, 0x88
+/* 801A87F8 001A4638  4B FF F3 31 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A87FC 001A463C  38 61 00 88 */	addi r3, r1, 0x88
+/* 801A8800 001A4640  38 80 FF FF */	li r4, -1
+/* 801A8804 001A4644  4B FC FA 1D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8808 001A4648  38 7D 03 A0 */	addi r3, r29, 0x3a0
+/* 801A880C 001A464C  38 80 00 01 */	li r4, 1
+/* 801A8810 001A4650  48 00 02 ED */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8814 001A4654  7C 64 1B 78 */	mr r4, r3
+/* 801A8818 001A4658  38 61 00 74 */	addi r3, r1, 0x74
+/* 801A881C 001A465C  38 BF 00 70 */	addi r5, r31, 0x70
+/* 801A8820 001A4660  48 00 45 F1 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8824 001A4664  38 61 00 74 */	addi r3, r1, 0x74
+/* 801A8828 001A4668  4B FF F3 01 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A882C 001A466C  38 61 00 74 */	addi r3, r1, 0x74
+/* 801A8830 001A4670  38 80 FF FF */	li r4, -1
+/* 801A8834 001A4674  4B FC F9 ED */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8838 001A4678  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A883C 001A467C  38 80 00 00 */	li r4, 0
+/* 801A8840 001A4680  48 00 02 BD */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8844 001A4684  7C 64 1B 78 */	mr r4, r3
+/* 801A8848 001A4688  38 61 00 60 */	addi r3, r1, 0x60
+/* 801A884C 001A468C  38 BF 00 60 */	addi r5, r31, 0x60
+/* 801A8850 001A4690  48 00 45 C1 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8854 001A4694  38 61 00 60 */	addi r3, r1, 0x60
+/* 801A8858 001A4698  4B FF F2 D1 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A885C 001A469C  38 61 00 60 */	addi r3, r1, 0x60
+/* 801A8860 001A46A0  38 80 FF FF */	li r4, -1
+/* 801A8864 001A46A4  4B FC F9 BD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8868 001A46A8  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A886C 001A46AC  38 80 00 00 */	li r4, 0
+/* 801A8870 001A46B0  48 00 02 8D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8874 001A46B4  7C 64 1B 78 */	mr r4, r3
+/* 801A8878 001A46B8  38 61 00 4C */	addi r3, r1, 0x4c
+/* 801A887C 001A46BC  38 BF 00 70 */	addi r5, r31, 0x70
+/* 801A8880 001A46C0  48 00 45 91 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8884 001A46C4  38 61 00 4C */	addi r3, r1, 0x4c
+/* 801A8888 001A46C8  4B FF F2 A1 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A888C 001A46CC  38 61 00 4C */	addi r3, r1, 0x4c
+/* 801A8890 001A46D0  38 80 FF FF */	li r4, -1
+/* 801A8894 001A46D4  4B FC F9 8D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8898 001A46D8  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A889C 001A46DC  38 80 00 01 */	li r4, 1
+/* 801A88A0 001A46E0  48 00 02 5D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A88A4 001A46E4  7C 64 1B 78 */	mr r4, r3
+/* 801A88A8 001A46E8  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A88AC 001A46EC  38 BF 00 60 */	addi r5, r31, 0x60
+/* 801A88B0 001A46F0  48 00 45 61 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A88B4 001A46F4  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A88B8 001A46F8  4B FF F2 71 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A88BC 001A46FC  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A88C0 001A4700  38 80 FF FF */	li r4, -1
+/* 801A88C4 001A4704  4B FC F9 5D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A88C8 001A4708  38 7D 03 B0 */	addi r3, r29, 0x3b0
+/* 801A88CC 001A470C  38 80 00 01 */	li r4, 1
+/* 801A88D0 001A4710  48 00 02 2D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A88D4 001A4714  7C 64 1B 78 */	mr r4, r3
+/* 801A88D8 001A4718  38 61 00 24 */	addi r3, r1, 0x24
+/* 801A88DC 001A471C  38 BF 00 70 */	addi r5, r31, 0x70
+/* 801A88E0 001A4720  48 00 45 31 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A88E4 001A4724  38 61 00 24 */	addi r3, r1, 0x24
+/* 801A88E8 001A4728  4B FF F2 41 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A88EC 001A472C  38 61 00 24 */	addi r3, r1, 0x24
+/* 801A88F0 001A4730  38 80 FF FF */	li r4, -1
+/* 801A88F4 001A4734  4B FC F9 2D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A88F8 001A4738  38 7D 01 D0 */	addi r3, r29, 0x1d0
+/* 801A88FC 001A473C  38 8D 8B E8 */	addi r4, r13, $$253285-_SDA_BASE_
+/* 801A8900 001A4740  48 00 46 95 */	bl play__Q23lyt6LayoutFPCc
+/* 801A8904 001A4744  7F A3 EB 78 */	mr r3, r29
+/* 801A8908 001A4748  80 9D 04 3C */	lwz r4, 0x43c(r29)
+/* 801A890C 001A474C  38 A0 00 01 */	li r5, 1
+/* 801A8910 001A4750  48 00 09 4D */	bl setCursor__Q34info6common11CheckWindowFib
+/* 801A8914 001A4754  7F A3 EB 78 */	mr r3, r29
+/* 801A8918 001A4758  48 00 4A 09 */	bl updateMatrix__Q23lyt6LayoutFv
+/* 801A891C 001A475C  38 61 00 10 */	addi r3, r1, 0x10
+/* 801A8920 001A4760  7F A4 EB 78 */	mr r4, r29
+/* 801A8924 001A4764  48 00 44 A1 */	bl rootPane__Q23lyt6LayoutFv
+/* 801A8928 001A4768  38 61 00 10 */	addi r3, r1, 0x10
+/* 801A892C 001A476C  4B FF F1 FD */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A8930 001A4770  38 61 00 10 */	addi r3, r1, 0x10
+/* 801A8934 001A4774  38 80 FF FF */	li r4, -1
+/* 801A8938 001A4778  4B FC F8 E9 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A893C 001A477C  38 00 00 00 */	li r0, 0
+/* 801A8940 001A4780  90 1D 04 38 */	stw r0, 0x438(r29)
+/* 801A8944 001A4784  7F A3 EB 78 */	mr r3, r29
+/* 801A8948 001A4788  39 61 02 C0 */	addi r11, r1, 0x2c0
+/* 801A894C 001A478C  4B E5 EA 45 */	bl func_80007390
+/* 801A8950 001A4790  80 01 02 C4 */	lwz r0, 0x2c4(r1)
+/* 801A8954 001A4794  7C 08 03 A6 */	mtlr r0
+/* 801A8958 001A4798  38 21 02 C0 */	addi r1, r1, 0x2c0
+/* 801A895C 001A479C  4E 80 00 20 */	blr 
+
+.global add$$0Q33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1$$1__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FQ33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1_v
+add$$0Q33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1$$1__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FQ33std3tr141reference_wrapper$$0CQ23lyt13LayoutContext$$1_v:
+/* 801A8960 001A47A0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801A8964 001A47A4  7C 08 02 A6 */	mflr r0
+/* 801A8968 001A47A8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801A896C 001A47AC  39 61 00 20 */	addi r11, r1, 0x20
+/* 801A8970 001A47B0  4B E5 E9 D5 */	bl func_80007344
+/* 801A8974 001A47B4  7C 7D 1B 78 */	mr r29, r3
+/* 801A8978 001A47B8  7C 9E 23 78 */	mr r30, r4
+/* 801A897C 001A47BC  38 60 01 D0 */	li r3, 0x1d0
+/* 801A8980 001A47C0  80 9D 00 00 */	lwz r4, 0(r29)
+/* 801A8984 001A47C4  48 01 6D 89 */	bl __nw__FUlRQ23mem10IAllocator
+/* 801A8988 001A47C8  7C 7F 1B 78 */	mr r31, r3
+/* 801A898C 001A47CC  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8990 001A47D0  41 82 00 10 */	beq lbl_801A89A0
+/* 801A8994 001A47D4  80 9E 00 00 */	lwz r4, 0(r30)
+/* 801A8998 001A47D8  48 00 37 F9 */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 801A899C 001A47DC  7C 7F 1B 78 */	mr r31, r3
+lbl_801A89A0:
+/* 801A89A0 001A47E0  38 7D 00 08 */	addi r3, r29, 8
+/* 801A89A4 001A47E4  80 9D 00 04 */	lwz r4, 4(r29)
+/* 801A89A8 001A47E8  48 00 00 2D */	bl __vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl
+/* 801A89AC 001A47EC  93 E3 00 00 */	stw r31, 0(r3)
+/* 801A89B0 001A47F0  80 7D 00 04 */	lwz r3, 4(r29)
+/* 801A89B4 001A47F4  38 03 00 01 */	addi r0, r3, 1
+/* 801A89B8 001A47F8  90 1D 00 04 */	stw r0, 4(r29)
+/* 801A89BC 001A47FC  39 61 00 20 */	addi r11, r1, 0x20
+/* 801A89C0 001A4800  4B E5 E9 D1 */	bl func_80007390
+/* 801A89C4 001A4804  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801A89C8 001A4808  7C 08 03 A6 */	mtlr r0
+/* 801A89CC 001A480C  38 21 00 20 */	addi r1, r1, 0x20
+/* 801A89D0 001A4810  4E 80 00 20 */	blr 
+
+.global __vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl
+__vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl:
+/* 801A89D4 001A4814  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A89D8 001A4818  7C 08 02 A6 */	mflr r0
+/* 801A89DC 001A481C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A89E0 001A4820  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A89E4 001A4824  93 C1 00 08 */	stw r30, 8(r1)
+/* 801A89E8 001A4828  7C 7E 1B 78 */	mr r30, r3
+/* 801A89EC 001A482C  7C 9F 23 78 */	mr r31, r4
+/* 801A89F0 001A4830  7F E3 FB 78 */	mr r3, r31
+/* 801A89F4 001A4834  38 80 00 02 */	li r4, 2
+/* 801A89F8 001A4838  4B E7 BA A9 */	bl DefaultSwitchThreadCallback
+/* 801A89FC 001A483C  57 E0 10 3A */	slwi r0, r31, 2
+/* 801A8A00 001A4840  7C 7E 02 14 */	add r3, r30, r0
+/* 801A8A04 001A4844  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8A08 001A4848  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801A8A0C 001A484C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8A10 001A4850  7C 08 03 A6 */	mtlr r0
+/* 801A8A14 001A4854  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8A18 001A4858  4E 80 00 20 */	blr 
+
+.global __ct__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FRQ23mem10IAllocator
+__ct__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FRQ23mem10IAllocator:
+/* 801A8A1C 001A485C  90 83 00 00 */	stw r4, 0(r3)
+/* 801A8A20 001A4860  38 00 00 00 */	li r0, 0
+/* 801A8A24 001A4864  90 03 00 04 */	stw r0, 4(r3)
+/* 801A8A28 001A4868  90 03 00 08 */	stw r0, 8(r3)
+/* 801A8A2C 001A486C  90 03 00 0C */	stw r0, 0xc(r3)
+/* 801A8A30 001A4870  4E 80 00 20 */	blr 
+
+.global __dt__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1Fv
+__dt__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1Fv:
+/* 801A8A34 001A4874  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 801A8A38 001A4878  7C 08 02 A6 */	mflr r0
+/* 801A8A3C 001A487C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 801A8A40 001A4880  39 61 00 20 */	addi r11, r1, 0x20
+/* 801A8A44 001A4884  4B E5 E8 F9 */	bl func_8000733C
+/* 801A8A48 001A4888  7C 7B 1B 78 */	mr r27, r3
+/* 801A8A4C 001A488C  7C 9C 23 78 */	mr r28, r4
+/* 801A8A50 001A4890  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8A54 001A4894  41 82 00 8C */	beq lbl_801A8AE0
+/* 801A8A58 001A4898  3B E0 00 00 */	li r31, 0
+/* 801A8A5C 001A489C  48 00 00 58 */	b lbl_801A8AB4
+lbl_801A8A60:
+/* 801A8A60 001A48A0  3B A3 FF FF */	addi r29, r3, -1
+/* 801A8A64 001A48A4  38 7B 00 08 */	addi r3, r27, 8
+/* 801A8A68 001A48A8  7F A4 EB 78 */	mr r4, r29
+/* 801A8A6C 001A48AC  4B FF FF 69 */	bl __vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl
+/* 801A8A70 001A48B0  83 C3 00 00 */	lwz r30, 0(r3)
+/* 801A8A74 001A48B4  38 7B 00 08 */	addi r3, r27, 8
+/* 801A8A78 001A48B8  7F A4 EB 78 */	mr r4, r29
+/* 801A8A7C 001A48BC  4B FF FF 59 */	bl __vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl
+/* 801A8A80 001A48C0  93 E3 00 00 */	stw r31, 0(r3)
+/* 801A8A84 001A48C4  80 7B 00 04 */	lwz r3, 4(r27)
+/* 801A8A88 001A48C8  38 03 FF FF */	addi r0, r3, -1
+/* 801A8A8C 001A48CC  90 1B 00 04 */	stw r0, 4(r27)
+/* 801A8A90 001A48D0  7F C3 F3 78 */	mr r3, r30
+/* 801A8A94 001A48D4  38 80 FF FF */	li r4, -1
+/* 801A8A98 001A48D8  48 00 41 65 */	bl __dt__Q23lyt6LayoutFv
+/* 801A8A9C 001A48DC  80 7B 00 00 */	lwz r3, 0(r27)
+/* 801A8AA0 001A48E0  7F C4 F3 78 */	mr r4, r30
+/* 801A8AA4 001A48E4  81 83 00 00 */	lwz r12, 0(r3)
+/* 801A8AA8 001A48E8  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 801A8AAC 001A48EC  7D 89 03 A6 */	mtctr r12
+/* 801A8AB0 001A48F0  4E 80 04 21 */	bctrl 
+lbl_801A8AB4:
+/* 801A8AB4 001A48F4  80 7B 00 04 */	lwz r3, 4(r27)
+/* 801A8AB8 001A48F8  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8ABC 001A48FC  40 82 FF A4 */	bne lbl_801A8A60
+/* 801A8AC0 001A4900  7F 63 DB 78 */	mr r3, r27
+/* 801A8AC4 001A4904  38 80 00 00 */	li r4, 0
+/* 801A8AC8 001A4908  4B FC D0 A1 */	bl __dt__Q23scn6ISceneFv
+/* 801A8ACC 001A490C  7F 80 07 34 */	extsh r0, r28
+/* 801A8AD0 001A4910  2C 00 00 00 */	cmpwi r0, 0
+/* 801A8AD4 001A4914  40 81 00 0C */	ble lbl_801A8AE0
+/* 801A8AD8 001A4918  7F 63 DB 78 */	mr r3, r27
+/* 801A8ADC 001A491C  48 01 6C 39 */	bl __dl__FPv
+lbl_801A8AE0:
+/* 801A8AE0 001A4920  7F 63 DB 78 */	mr r3, r27
+/* 801A8AE4 001A4924  39 61 00 20 */	addi r11, r1, 0x20
+/* 801A8AE8 001A4928  4B E5 E8 A1 */	bl func_80007388
+/* 801A8AEC 001A492C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801A8AF0 001A4930  7C 08 03 A6 */	mtlr r0
+/* 801A8AF4 001A4934  38 21 00 20 */	addi r1, r1, 0x20
+/* 801A8AF8 001A4938  4E 80 00 20 */	blr 
+
+.global __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+__vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl:
+/* 801A8AFC 001A493C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A8B00 001A4940  7C 08 02 A6 */	mflr r0
+/* 801A8B04 001A4944  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A8B08 001A4948  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A8B0C 001A494C  93 C1 00 08 */	stw r30, 8(r1)
+/* 801A8B10 001A4950  7C 7E 1B 78 */	mr r30, r3
+/* 801A8B14 001A4954  7C 9F 23 78 */	mr r31, r4
+/* 801A8B18 001A4958  7F E3 FB 78 */	mr r3, r31
+/* 801A8B1C 001A495C  80 9E 00 04 */	lwz r4, 4(r30)
+/* 801A8B20 001A4960  4B E7 B9 81 */	bl DefaultSwitchThreadCallback
+/* 801A8B24 001A4964  38 7E 00 08 */	addi r3, r30, 8
+/* 801A8B28 001A4968  7F E4 FB 78 */	mr r4, r31
+/* 801A8B2C 001A496C  4B FF FE A9 */	bl __vc__Q33hel6common23Array$$0PQ23lyt6Layout$$42$$1FUl
+/* 801A8B30 001A4970  80 63 00 00 */	lwz r3, 0(r3)
+/* 801A8B34 001A4974  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8B38 001A4978  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801A8B3C 001A497C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8B40 001A4980  7C 08 03 A6 */	mtlr r0
+/* 801A8B44 001A4984  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8B48 001A4988  4E 80 00 20 */	blr 
+
+.global setParent__Q34info6common11CheckWindowFQ23lyt12PaneAccessor
+setParent__Q34info6common11CheckWindowFQ23lyt12PaneAccessor:
+/* 801A8B4C 001A498C  48 00 45 EC */	b setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+
+.global updateFrame__Q34info6common11CheckWindowFv
+updateFrame__Q34info6common11CheckWindowFv:
+/* 801A8B50 001A4990  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A8B54 001A4994  7C 08 02 A6 */	mflr r0
+/* 801A8B58 001A4998  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A8B5C 001A499C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A8B60 001A49A0  93 C1 00 08 */	stw r30, 8(r1)
+/* 801A8B64 001A49A4  7C 7E 1B 78 */	mr r30, r3
+/* 801A8B68 001A49A8  48 00 45 51 */	bl updateFrame__Q23lyt6LayoutFv
+/* 801A8B6C 001A49AC  38 7E 01 D0 */	addi r3, r30, 0x1d0
+/* 801A8B70 001A49B0  48 00 45 49 */	bl updateFrame__Q23lyt6LayoutFv
+/* 801A8B74 001A49B4  3B E0 00 00 */	li r31, 0
+/* 801A8B78 001A49B8  48 00 00 18 */	b lbl_801A8B90
+lbl_801A8B7C:
+/* 801A8B7C 001A49BC  38 7E 03 A0 */	addi r3, r30, 0x3a0
+/* 801A8B80 001A49C0  7F E4 FB 78 */	mr r4, r31
+/* 801A8B84 001A49C4  4B FF FF 79 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8B88 001A49C8  48 00 45 31 */	bl updateFrame__Q23lyt6LayoutFv
+/* 801A8B8C 001A49CC  3B FF 00 01 */	addi r31, r31, 1
+lbl_801A8B90:
+/* 801A8B90 001A49D0  80 1E 03 A4 */	lwz r0, 0x3a4(r30)
+/* 801A8B94 001A49D4  7C 1F 00 40 */	cmplw r31, r0
+/* 801A8B98 001A49D8  41 80 FF E4 */	blt lbl_801A8B7C
+/* 801A8B9C 001A49DC  3B E0 00 00 */	li r31, 0
+/* 801A8BA0 001A49E0  48 00 00 18 */	b lbl_801A8BB8
+lbl_801A8BA4:
+/* 801A8BA4 001A49E4  38 7E 03 B0 */	addi r3, r30, 0x3b0
+/* 801A8BA8 001A49E8  7F E4 FB 78 */	mr r4, r31
+/* 801A8BAC 001A49EC  4B FF FF 51 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8BB0 001A49F0  48 00 45 09 */	bl updateFrame__Q23lyt6LayoutFv
+/* 801A8BB4 001A49F4  3B FF 00 01 */	addi r31, r31, 1
+lbl_801A8BB8:
+/* 801A8BB8 001A49F8  80 1E 03 B4 */	lwz r0, 0x3b4(r30)
+/* 801A8BBC 001A49FC  7C 1F 00 40 */	cmplw r31, r0
+/* 801A8BC0 001A4A00  41 80 FF E4 */	blt lbl_801A8BA4
+/* 801A8BC4 001A4A04  80 1E 04 38 */	lwz r0, 0x438(r30)
+/* 801A8BC8 001A4A08  2C 00 00 01 */	cmpwi r0, 1
+/* 801A8BCC 001A4A0C  41 82 00 20 */	beq lbl_801A8BEC
+/* 801A8BD0 001A4A10  2C 00 00 02 */	cmpwi r0, 2
+/* 801A8BD4 001A4A14  41 82 00 24 */	beq lbl_801A8BF8
+/* 801A8BD8 001A4A18  2C 00 00 03 */	cmpwi r0, 3
+/* 801A8BDC 001A4A1C  41 82 00 28 */	beq lbl_801A8C04
+/* 801A8BE0 001A4A20  2C 00 00 04 */	cmpwi r0, 4
+/* 801A8BE4 001A4A24  41 82 00 2C */	beq lbl_801A8C10
+/* 801A8BE8 001A4A28  48 00 00 30 */	b lbl_801A8C18
+lbl_801A8BEC:
+/* 801A8BEC 001A4A2C  7F C3 F3 78 */	mr r3, r30
+/* 801A8BF0 001A4A30  48 00 02 FD */	bl updateStateOpen__Q34info6common11CheckWindowFv
+/* 801A8BF4 001A4A34  48 00 00 24 */	b lbl_801A8C18
+lbl_801A8BF8:
+/* 801A8BF8 001A4A38  7F C3 F3 78 */	mr r3, r30
+/* 801A8BFC 001A4A3C  48 00 03 39 */	bl updateStateMain__Q34info6common11CheckWindowFv
+/* 801A8C00 001A4A40  48 00 00 18 */	b lbl_801A8C18
+lbl_801A8C04:
+/* 801A8C04 001A4A44  7F C3 F3 78 */	mr r3, r30
+/* 801A8C08 001A4A48  48 00 05 8D */	bl updateStateDecide__Q34info6common11CheckWindowFv
+/* 801A8C0C 001A4A4C  48 00 00 0C */	b lbl_801A8C18
+lbl_801A8C10:
+/* 801A8C10 001A4A50  7F C3 F3 78 */	mr r3, r30
+/* 801A8C14 001A4A54  48 00 05 E1 */	bl updateStateClose__Q34info6common11CheckWindowFv
+lbl_801A8C18:
+/* 801A8C18 001A4A58  7F C3 F3 78 */	mr r3, r30
+/* 801A8C1C 001A4A5C  48 00 47 05 */	bl updateMatrix__Q23lyt6LayoutFv
+/* 801A8C20 001A4A60  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8C24 001A4A64  83 C1 00 08 */	lwz r30, 8(r1)
+/* 801A8C28 001A4A68  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8C2C 001A4A6C  7C 08 03 A6 */	mtlr r0
+/* 801A8C30 001A4A70  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8C34 001A4A74  4E 80 00 20 */	blr 
+
+.global draw__Q34info6common11CheckWindowFv
+draw__Q34info6common11CheckWindowFv:
+/* 801A8C38 001A4A78  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A8C3C 001A4A7C  7C 08 02 A6 */	mflr r0
+/* 801A8C40 001A4A80  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A8C44 001A4A84  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A8C48 001A4A88  7C 7F 1B 78 */	mr r31, r3
+/* 801A8C4C 001A4A8C  48 00 86 F1 */	bl SetupGX__Q23lyt7UtilityFv
+/* 801A8C50 001A4A90  7F E3 FB 78 */	mr r3, r31
+/* 801A8C54 001A4A94  48 00 47 25 */	bl draw__Q23lyt6LayoutCFv
+/* 801A8C58 001A4A98  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8C5C 001A4A9C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8C60 001A4AA0  7C 08 03 A6 */	mtlr r0
+/* 801A8C64 001A4AA4  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8C68 001A4AA8  4E 80 00 20 */	blr 
+
+.global setMainText__Q34info6common11CheckWindowFPCw
+setMainText__Q34info6common11CheckWindowFPCw:
+/* 801A8C6C 001A4AAC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 801A8C70 001A4AB0  7C 08 02 A6 */	mflr r0
+/* 801A8C74 001A4AB4  90 01 00 54 */	stw r0, 0x54(r1)
+/* 801A8C78 001A4AB8  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 801A8C7C 001A4ABC  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 801A8C80 001A4AC0  7C 7E 1B 78 */	mr r30, r3
+/* 801A8C84 001A4AC4  7C 9F 23 78 */	mr r31, r4
+/* 801A8C88 001A4AC8  38 61 00 30 */	addi r3, r1, 0x30
+/* 801A8C8C 001A4ACC  38 9E 01 D0 */	addi r4, r30, 0x1d0
+/* 801A8C90 001A4AD0  38 AD 8B F0 */	addi r5, r13, $$253379-_SDA_BASE_
+/* 801A8C94 001A4AD4  48 00 41 7D */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8C98 001A4AD8  38 61 00 30 */	addi r3, r1, 0x30
+/* 801A8C9C 001A4ADC  4B FF EE 8D */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A8CA0 001A4AE0  38 61 00 30 */	addi r3, r1, 0x30
+/* 801A8CA4 001A4AE4  38 80 FF FF */	li r4, -1
+/* 801A8CA8 001A4AE8  4B FC F5 79 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8CAC 001A4AEC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 801A8CB0 001A4AF0  38 9E 01 D0 */	addi r4, r30, 0x1d0
+/* 801A8CB4 001A4AF4  38 AD 8B F8 */	addi r5, r13, $$253380-_SDA_BASE_
+/* 801A8CB8 001A4AF8  48 00 41 59 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8CBC 001A4AFC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 801A8CC0 001A4B00  4B FF EF 51 */	bl show__Q23lyt12PaneAccessorCFv
+/* 801A8CC4 001A4B04  38 61 00 1C */	addi r3, r1, 0x1c
+/* 801A8CC8 001A4B08  38 80 FF FF */	li r4, -1
+/* 801A8CCC 001A4B0C  4B FC F5 55 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8CD0 001A4B10  38 61 00 08 */	addi r3, r1, 8
+/* 801A8CD4 001A4B14  38 9E 01 D0 */	addi r4, r30, 0x1d0
+/* 801A8CD8 001A4B18  38 AD 8B F8 */	addi r5, r13, $$253380-_SDA_BASE_
+/* 801A8CDC 001A4B1C  48 00 41 35 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8CE0 001A4B20  38 61 00 08 */	addi r3, r1, 8
+/* 801A8CE4 001A4B24  7F E4 FB 78 */	mr r4, r31
+/* 801A8CE8 001A4B28  48 00 56 7D */	bl setText__Q23lyt12PaneAccessorCFPCw
+/* 801A8CEC 001A4B2C  38 61 00 08 */	addi r3, r1, 8
+/* 801A8CF0 001A4B30  38 80 FF FF */	li r4, -1
+/* 801A8CF4 001A4B34  4B FC F5 2D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8CF8 001A4B38  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 801A8CFC 001A4B3C  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 801A8D00 001A4B40  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 801A8D04 001A4B44  7C 08 03 A6 */	mtlr r0
+/* 801A8D08 001A4B48  38 21 00 50 */	addi r1, r1, 0x50
+/* 801A8D0C 001A4B4C  4E 80 00 20 */	blr 
+
+.global setYesText__Q34info6common11CheckWindowFPCw
+setYesText__Q34info6common11CheckWindowFPCw:
+/* 801A8D10 001A4B50  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801A8D14 001A4B54  7C 08 02 A6 */	mflr r0
+/* 801A8D18 001A4B58  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801A8D1C 001A4B5C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 801A8D20 001A4B60  7C 9F 23 78 */	mr r31, r4
+/* 801A8D24 001A4B64  38 63 03 A0 */	addi r3, r3, 0x3a0
+/* 801A8D28 001A4B68  38 80 00 00 */	li r4, 0
+/* 801A8D2C 001A4B6C  4B FF FD D1 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8D30 001A4B70  7C 64 1B 78 */	mr r4, r3
+/* 801A8D34 001A4B74  38 61 00 08 */	addi r3, r1, 8
+/* 801A8D38 001A4B78  3C A0 80 45 */	lis r5, $$253392@ha
+/* 801A8D3C 001A4B7C  38 A5 74 C8 */	addi r5, r5, $$253392@l
+/* 801A8D40 001A4B80  48 00 40 D1 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8D44 001A4B84  38 61 00 08 */	addi r3, r1, 8
+/* 801A8D48 001A4B88  7F E4 FB 78 */	mr r4, r31
+/* 801A8D4C 001A4B8C  48 00 56 19 */	bl setText__Q23lyt12PaneAccessorCFPCw
+/* 801A8D50 001A4B90  38 61 00 08 */	addi r3, r1, 8
+/* 801A8D54 001A4B94  38 80 FF FF */	li r4, -1
+/* 801A8D58 001A4B98  4B FC F4 C9 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8D5C 001A4B9C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 801A8D60 001A4BA0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801A8D64 001A4BA4  7C 08 03 A6 */	mtlr r0
+/* 801A8D68 001A4BA8  38 21 00 30 */	addi r1, r1, 0x30
+/* 801A8D6C 001A4BAC  4E 80 00 20 */	blr 
+
+.global setNoText__Q34info6common11CheckWindowFPCw
+setNoText__Q34info6common11CheckWindowFPCw:
+/* 801A8D70 001A4BB0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801A8D74 001A4BB4  7C 08 02 A6 */	mflr r0
+/* 801A8D78 001A4BB8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801A8D7C 001A4BBC  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 801A8D80 001A4BC0  7C 9F 23 78 */	mr r31, r4
+/* 801A8D84 001A4BC4  38 63 03 A0 */	addi r3, r3, 0x3a0
+/* 801A8D88 001A4BC8  38 80 00 01 */	li r4, 1
+/* 801A8D8C 001A4BCC  4B FF FD 71 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8D90 001A4BD0  7C 64 1B 78 */	mr r4, r3
+/* 801A8D94 001A4BD4  38 61 00 08 */	addi r3, r1, 8
+/* 801A8D98 001A4BD8  3C A0 80 45 */	lis r5, $$253392@ha
+/* 801A8D9C 001A4BDC  38 A5 74 C8 */	addi r5, r5, $$253392@l
+/* 801A8DA0 001A4BE0  48 00 40 71 */	bl pane__Q23lyt6LayoutFPCc
+/* 801A8DA4 001A4BE4  38 61 00 08 */	addi r3, r1, 8
+/* 801A8DA8 001A4BE8  7F E4 FB 78 */	mr r4, r31
+/* 801A8DAC 001A4BEC  48 00 55 B9 */	bl setText__Q23lyt12PaneAccessorCFPCw
+/* 801A8DB0 001A4BF0  38 61 00 08 */	addi r3, r1, 8
+/* 801A8DB4 001A4BF4  38 80 FF FF */	li r4, -1
+/* 801A8DB8 001A4BF8  4B FC F4 69 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8DBC 001A4BFC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 801A8DC0 001A4C00  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801A8DC4 001A4C04  7C 08 03 A6 */	mtlr r0
+/* 801A8DC8 001A4C08  38 21 00 30 */	addi r1, r1, 0x30
+/* 801A8DCC 001A4C0C  4E 80 00 20 */	blr 
+
+.global open__Q34info6common11CheckWindowFv
+open__Q34info6common11CheckWindowFv:
+/* 801A8DD0 001A4C10  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801A8DD4 001A4C14  7C 08 02 A6 */	mflr r0
+/* 801A8DD8 001A4C18  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801A8DDC 001A4C1C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 801A8DE0 001A4C20  7C 7F 1B 78 */	mr r31, r3
+/* 801A8DE4 001A4C24  48 00 00 F1 */	bl isClosed__Q34info6common11CheckWindowCFv
+/* 801A8DE8 001A4C28  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8DEC 001A4C2C  41 82 00 84 */	beq lbl_801A8E70
+/* 801A8DF0 001A4C30  38 00 00 00 */	li r0, 0
+/* 801A8DF4 001A4C34  90 1F 04 34 */	stw r0, 0x434(r31)
+/* 801A8DF8 001A4C38  90 1F 04 3C */	stw r0, 0x43c(r31)
+/* 801A8DFC 001A4C3C  38 61 00 08 */	addi r3, r1, 8
+/* 801A8E00 001A4C40  7F E4 FB 78 */	mr r4, r31
+/* 801A8E04 001A4C44  48 00 3F C1 */	bl rootPane__Q23lyt6LayoutFv
+/* 801A8E08 001A4C48  38 61 00 08 */	addi r3, r1, 8
+/* 801A8E0C 001A4C4C  4B FF EE 05 */	bl show__Q23lyt12PaneAccessorCFv
+/* 801A8E10 001A4C50  38 61 00 08 */	addi r3, r1, 8
+/* 801A8E14 001A4C54  38 80 FF FF */	li r4, -1
+/* 801A8E18 001A4C58  4B FC F4 09 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A8E1C 001A4C5C  7F E3 FB 78 */	mr r3, r31
+/* 801A8E20 001A4C60  38 8D 8C 00 */	addi r4, r13, $$253400-_SDA_BASE_
+/* 801A8E24 001A4C64  38 AD 8B E8 */	addi r5, r13, $$253285-_SDA_BASE_
+/* 801A8E28 001A4C68  48 00 41 E5 */	bl play__Q23lyt6LayoutFPCcPCc
+/* 801A8E2C 001A4C6C  7F E3 FB 78 */	mr r3, r31
+/* 801A8E30 001A4C70  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A8E34 001A4C74  38 A0 00 01 */	li r5, 1
+/* 801A8E38 001A4C78  48 00 04 25 */	bl setCursor__Q34info6common11CheckWindowFib
+/* 801A8E3C 001A4C7C  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A8E40 001A4C80  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A8E44 001A4C84  4B FF FC B9 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8E48 001A4C88  38 8D 8C 08 */	addi r4, r13, $$253401-_SDA_BASE_
+/* 801A8E4C 001A4C8C  48 00 41 49 */	bl play__Q23lyt6LayoutFPCc
+/* 801A8E50 001A4C90  38 7F 04 50 */	addi r3, r31, 0x450
+/* 801A8E54 001A4C94  48 25 CB 89 */	bl setEnd__Q24util12FrameCounterFv
+/* 801A8E58 001A4C98  7F E3 FB 78 */	mr r3, r31
+/* 801A8E5C 001A4C9C  48 00 44 C5 */	bl updateMatrix__Q23lyt6LayoutFv
+/* 801A8E60 001A4CA0  38 7F 04 40 */	addi r3, r31, 0x440
+/* 801A8E64 001A4CA4  4B F5 D9 1D */	bl DetachPlayerHeap__Q44nw4r3snd6detail10BasicSoundFPQ44nw4r3snd6detail10PlayerHeap
+/* 801A8E68 001A4CA8  38 00 00 01 */	li r0, 1
+/* 801A8E6C 001A4CAC  90 1F 04 38 */	stw r0, 0x438(r31)
+lbl_801A8E70:
+/* 801A8E70 001A4CB0  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 801A8E74 001A4CB4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801A8E78 001A4CB8  7C 08 03 A6 */	mtlr r0
+/* 801A8E7C 001A4CBC  38 21 00 30 */	addi r1, r1, 0x30
+/* 801A8E80 001A4CC0  4E 80 00 20 */	blr 
+
+.global close__Q34info6common11CheckWindowFv
+close__Q34info6common11CheckWindowFv:
+/* 801A8E84 001A4CC4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A8E88 001A4CC8  7C 08 02 A6 */	mflr r0
+/* 801A8E8C 001A4CCC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A8E90 001A4CD0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A8E94 001A4CD4  7C 7F 1B 78 */	mr r31, r3
+/* 801A8E98 001A4CD8  48 00 00 3D */	bl isClosed__Q34info6common11CheckWindowCFv
+/* 801A8E9C 001A4CDC  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8EA0 001A4CE0  40 82 00 20 */	bne lbl_801A8EC0
+/* 801A8EA4 001A4CE4  7F E3 FB 78 */	mr r3, r31
+/* 801A8EA8 001A4CE8  38 8D 8C 10 */	addi r4, r13, $$253405-_SDA_BASE_
+/* 801A8EAC 001A4CEC  48 00 40 E9 */	bl play__Q23lyt6LayoutFPCc
+/* 801A8EB0 001A4CF0  38 7F 04 48 */	addi r3, r31, 0x448
+/* 801A8EB4 001A4CF4  4B F5 D8 CD */	bl DetachPlayerHeap__Q44nw4r3snd6detail10BasicSoundFPQ44nw4r3snd6detail10PlayerHeap
+/* 801A8EB8 001A4CF8  38 00 00 04 */	li r0, 4
+/* 801A8EBC 001A4CFC  90 1F 04 38 */	stw r0, 0x438(r31)
+lbl_801A8EC0:
+/* 801A8EC0 001A4D00  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8EC4 001A4D04  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8EC8 001A4D08  7C 08 03 A6 */	mtlr r0
+/* 801A8ECC 001A4D0C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8ED0 001A4D10  4E 80 00 20 */	blr 
+
+.global isClosed__Q34info6common11CheckWindowCFv
+isClosed__Q34info6common11CheckWindowCFv:
+/* 801A8ED4 001A4D14  80 03 04 38 */	lwz r0, 0x438(r3)
+/* 801A8ED8 001A4D18  7C 00 00 34 */	cntlzw r0, r0
+/* 801A8EDC 001A4D1C  54 03 D9 7E */	srwi r3, r0, 5
+/* 801A8EE0 001A4D20  4E 80 00 20 */	blr 
+
+.global result__Q34info6common11CheckWindowCFv
+result__Q34info6common11CheckWindowCFv:
+/* 801A8EE4 001A4D24  80 63 04 34 */	lwz r3, 0x434(r3)
+/* 801A8EE8 001A4D28  4E 80 00 20 */	blr 
+
+.global updateStateOpen__Q34info6common11CheckWindowFv
+updateStateOpen__Q34info6common11CheckWindowFv:
+/* 801A8EEC 001A4D2C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A8EF0 001A4D30  7C 08 02 A6 */	mflr r0
+/* 801A8EF4 001A4D34  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A8EF8 001A4D38  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A8EFC 001A4D3C  7C 7F 1B 78 */	mr r31, r3
+/* 801A8F00 001A4D40  38 63 04 40 */	addi r3, r3, 0x440
+/* 801A8F04 001A4D44  48 25 CA 9D */	bl advanceIfNotEnd__Q24util12FrameCounterFv
+/* 801A8F08 001A4D48  38 7F 04 40 */	addi r3, r31, 0x440
+/* 801A8F0C 001A4D4C  48 25 CA 7D */	bl isEnd__Q24util12FrameCounterCFv
+/* 801A8F10 001A4D50  2C 03 00 00 */	cmpwi r3, 0
+/* 801A8F14 001A4D54  41 82 00 0C */	beq lbl_801A8F20
+/* 801A8F18 001A4D58  38 00 00 02 */	li r0, 2
+/* 801A8F1C 001A4D5C  90 1F 04 38 */	stw r0, 0x438(r31)
+lbl_801A8F20:
+/* 801A8F20 001A4D60  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A8F24 001A4D64  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A8F28 001A4D68  7C 08 03 A6 */	mtlr r0
+/* 801A8F2C 001A4D6C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A8F30 001A4D70  4E 80 00 20 */	blr 
+
+.global updateStateMain__Q34info6common11CheckWindowFv
+updateStateMain__Q34info6common11CheckWindowFv:
+/* 801A8F34 001A4D74  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 801A8F38 001A4D78  7C 08 02 A6 */	mflr r0
+/* 801A8F3C 001A4D7C  90 01 00 64 */	stw r0, 0x64(r1)
+/* 801A8F40 001A4D80  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 801A8F44 001A4D84  7C 7F 1B 78 */	mr r31, r3
+/* 801A8F48 001A4D88  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
+/* 801A8F4C 001A4D8C  38 80 00 00 */	li r4, 0
+/* 801A8F50 001A4D90  4B FF A6 29 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 801A8F54 001A4D94  7C 64 1B 78 */	mr r4, r3
+/* 801A8F58 001A4D98  38 61 00 2C */	addi r3, r1, 0x2c
+/* 801A8F5C 001A4D9C  4B FF 98 9D */	bl button__Q23hid11HIDAccessorCFv
+/* 801A8F60 001A4DA0  38 61 00 2C */	addi r3, r1, 0x2c
+/* 801A8F64 001A4DA4  4B F5 78 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801A8F68 001A4DA8  54 60 05 EE */	rlwinm r0, r3, 0, 0x17, 0x17
+/* 801A8F6C 001A4DAC  2C 00 00 00 */	cmpwi r0, 0
+/* 801A8F70 001A4DB0  41 82 00 78 */	beq lbl_801A8FE8
+/* 801A8F74 001A4DB4  80 1F 04 3C */	lwz r0, 0x43c(r31)
+/* 801A8F78 001A4DB8  2C 00 00 00 */	cmpwi r0, 0
+/* 801A8F7C 001A4DBC  41 82 00 10 */	beq lbl_801A8F8C
+/* 801A8F80 001A4DC0  2C 00 00 01 */	cmpwi r0, 1
+/* 801A8F84 001A4DC4  41 82 00 14 */	beq lbl_801A8F98
+/* 801A8F88 001A4DC8  48 00 00 18 */	b lbl_801A8FA0
+lbl_801A8F8C:
+/* 801A8F8C 001A4DCC  38 00 00 01 */	li r0, 1
+/* 801A8F90 001A4DD0  90 1F 04 34 */	stw r0, 0x434(r31)
+/* 801A8F94 001A4DD4  48 00 00 0C */	b lbl_801A8FA0
+lbl_801A8F98:
+/* 801A8F98 001A4DD8  38 00 00 02 */	li r0, 2
+/* 801A8F9C 001A4DDC  90 1F 04 34 */	stw r0, 0x434(r31)
+lbl_801A8FA0:
+/* 801A8FA0 001A4DE0  80 1F 04 3C */	lwz r0, 0x43c(r31)
+/* 801A8FA4 001A4DE4  2C 00 00 00 */	cmpwi r0, 0
+/* 801A8FA8 001A4DE8  40 82 00 14 */	bne lbl_801A8FBC
+/* 801A8FAC 001A4DEC  38 7F 03 C0 */	addi r3, r31, 0x3c0
+/* 801A8FB0 001A4DF0  38 80 01 37 */	li r4, 0x137
+/* 801A8FB4 001A4DF4  48 25 9D 21 */	bl start__Q23snd11SERequestorFUl
+/* 801A8FB8 001A4DF8  48 00 00 10 */	b lbl_801A8FC8
+lbl_801A8FBC:
+/* 801A8FBC 001A4DFC  38 7F 03 C0 */	addi r3, r31, 0x3c0
+/* 801A8FC0 001A4E00  38 80 01 38 */	li r4, 0x138
+/* 801A8FC4 001A4E04  48 25 9D 11 */	bl start__Q23snd11SERequestorFUl
+lbl_801A8FC8:
+/* 801A8FC8 001A4E08  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A8FCC 001A4E0C  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A8FD0 001A4E10  4B FF FB 2D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A8FD4 001A4E14  38 8D 8C 18 */	addi r4, r13, $$253439-_SDA_BASE_
+/* 801A8FD8 001A4E18  48 00 3F BD */	bl play__Q23lyt6LayoutFPCc
+/* 801A8FDC 001A4E1C  38 00 00 03 */	li r0, 3
+/* 801A8FE0 001A4E20  90 1F 04 38 */	stw r0, 0x438(r31)
+/* 801A8FE4 001A4E24  48 00 01 9C */	b lbl_801A9180
+lbl_801A8FE8:
+/* 801A8FE8 001A4E28  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
+/* 801A8FEC 001A4E2C  38 80 00 00 */	li r4, 0
+/* 801A8FF0 001A4E30  4B FF A5 89 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 801A8FF4 001A4E34  7C 64 1B 78 */	mr r4, r3
+/* 801A8FF8 001A4E38  38 61 00 20 */	addi r3, r1, 0x20
+/* 801A8FFC 001A4E3C  4B FF 97 FD */	bl button__Q23hid11HIDAccessorCFv
+/* 801A9000 001A4E40  38 61 00 20 */	addi r3, r1, 0x20
+/* 801A9004 001A4E44  4B F5 77 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801A9008 001A4E48  54 60 05 AC */	rlwinm r0, r3, 0, 0x16, 0x16
+/* 801A900C 001A4E4C  2C 00 00 00 */	cmpwi r0, 0
+/* 801A9010 001A4E50  41 82 00 7C */	beq lbl_801A908C
+/* 801A9014 001A4E54  38 00 00 02 */	li r0, 2
+/* 801A9018 001A4E58  90 1F 04 34 */	stw r0, 0x434(r31)
+/* 801A901C 001A4E5C  38 7F 03 C0 */	addi r3, r31, 0x3c0
+/* 801A9020 001A4E60  38 80 01 38 */	li r4, 0x138
+/* 801A9024 001A4E64  48 25 9C B1 */	bl start__Q23snd11SERequestorFUl
+/* 801A9028 001A4E68  38 00 00 01 */	li r0, 1
+/* 801A902C 001A4E6C  90 1F 04 3C */	stw r0, 0x43c(r31)
+/* 801A9030 001A4E70  7F E3 FB 78 */	mr r3, r31
+/* 801A9034 001A4E74  38 80 00 01 */	li r4, 1
+/* 801A9038 001A4E78  38 A0 00 00 */	li r5, 0
+/* 801A903C 001A4E7C  48 00 02 21 */	bl setCursor__Q34info6common11CheckWindowFib
+/* 801A9040 001A4E80  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A9044 001A4E84  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A9048 001A4E88  4B FF FA B5 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A904C 001A4E8C  38 8D 8C 18 */	addi r4, r13, $$253439-_SDA_BASE_
+/* 801A9050 001A4E90  48 00 3F 45 */	bl play__Q23lyt6LayoutFPCc
+/* 801A9054 001A4E94  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A9058 001A4E98  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A905C 001A4E9C  4B FF FA A1 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A9060 001A4EA0  7C 64 1B 78 */	mr r4, r3
+/* 801A9064 001A4EA4  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A9068 001A4EA8  48 00 3D 5D */	bl rootPane__Q23lyt6LayoutFv
+/* 801A906C 001A4EAC  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A9070 001A4EB0  4B FF EA B9 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A9074 001A4EB4  38 61 00 38 */	addi r3, r1, 0x38
+/* 801A9078 001A4EB8  38 80 FF FF */	li r4, -1
+/* 801A907C 001A4EBC  4B FC F1 A5 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A9080 001A4EC0  38 00 00 03 */	li r0, 3
+/* 801A9084 001A4EC4  90 1F 04 38 */	stw r0, 0x438(r31)
+/* 801A9088 001A4EC8  48 00 00 F8 */	b lbl_801A9180
+lbl_801A908C:
+/* 801A908C 001A4ECC  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
+/* 801A9090 001A4ED0  38 80 00 00 */	li r4, 0
+/* 801A9094 001A4ED4  4B FF A4 E5 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 801A9098 001A4ED8  7C 64 1B 78 */	mr r4, r3
+/* 801A909C 001A4EDC  38 61 00 14 */	addi r3, r1, 0x14
+/* 801A90A0 001A4EE0  4B FF 97 59 */	bl button__Q23hid11HIDAccessorCFv
+/* 801A90A4 001A4EE4  38 61 00 14 */	addi r3, r1, 0x14
+/* 801A90A8 001A4EE8  4B F5 77 39 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801A90AC 001A4EEC  54 60 07 38 */	rlwinm r0, r3, 0, 0x1c, 0x1c
+/* 801A90B0 001A4EF0  2C 00 00 00 */	cmpwi r0, 0
+/* 801A90B4 001A4EF4  41 82 00 34 */	beq lbl_801A90E8
+/* 801A90B8 001A4EF8  80 7F 04 3C */	lwz r3, 0x43c(r31)
+/* 801A90BC 001A4EFC  2C 03 00 00 */	cmpwi r3, 0
+/* 801A90C0 001A4F00  40 81 00 C0 */	ble lbl_801A9180
+/* 801A90C4 001A4F04  38 83 FF FF */	addi r4, r3, -1
+/* 801A90C8 001A4F08  90 9F 04 3C */	stw r4, 0x43c(r31)
+/* 801A90CC 001A4F0C  7F E3 FB 78 */	mr r3, r31
+/* 801A90D0 001A4F10  38 A0 00 01 */	li r5, 1
+/* 801A90D4 001A4F14  48 00 01 89 */	bl setCursor__Q34info6common11CheckWindowFib
+/* 801A90D8 001A4F18  38 7F 03 C0 */	addi r3, r31, 0x3c0
+/* 801A90DC 001A4F1C  38 80 00 55 */	li r4, 0x55
+/* 801A90E0 001A4F20  48 25 9B F5 */	bl start__Q23snd11SERequestorFUl
+/* 801A90E4 001A4F24  48 00 00 9C */	b lbl_801A9180
+lbl_801A90E8:
+/* 801A90E8 001A4F28  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
+/* 801A90EC 001A4F2C  38 80 00 00 */	li r4, 0
+/* 801A90F0 001A4F30  4B FF A4 89 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 801A90F4 001A4F34  7C 64 1B 78 */	mr r4, r3
+/* 801A90F8 001A4F38  38 61 00 08 */	addi r3, r1, 8
+/* 801A90FC 001A4F3C  4B FF 96 FD */	bl button__Q23hid11HIDAccessorCFv
+/* 801A9100 001A4F40  38 61 00 08 */	addi r3, r1, 8
+/* 801A9104 001A4F44  4B F5 76 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 801A9108 001A4F48  54 60 07 7A */	rlwinm r0, r3, 0, 0x1d, 0x1d
+/* 801A910C 001A4F4C  2C 00 00 00 */	cmpwi r0, 0
+/* 801A9110 001A4F50  41 82 00 34 */	beq lbl_801A9144
+/* 801A9114 001A4F54  80 7F 04 3C */	lwz r3, 0x43c(r31)
+/* 801A9118 001A4F58  2C 03 00 01 */	cmpwi r3, 1
+/* 801A911C 001A4F5C  40 80 00 64 */	bge lbl_801A9180
+/* 801A9120 001A4F60  38 83 00 01 */	addi r4, r3, 1
+/* 801A9124 001A4F64  90 9F 04 3C */	stw r4, 0x43c(r31)
+/* 801A9128 001A4F68  7F E3 FB 78 */	mr r3, r31
+/* 801A912C 001A4F6C  38 A0 00 01 */	li r5, 1
+/* 801A9130 001A4F70  48 00 01 2D */	bl setCursor__Q34info6common11CheckWindowFib
+/* 801A9134 001A4F74  38 7F 03 C0 */	addi r3, r31, 0x3c0
+/* 801A9138 001A4F78  38 80 00 55 */	li r4, 0x55
+/* 801A913C 001A4F7C  48 25 9B 99 */	bl start__Q23snd11SERequestorFUl
+/* 801A9140 001A4F80  48 00 00 40 */	b lbl_801A9180
+lbl_801A9144:
+/* 801A9144 001A4F84  38 7F 04 50 */	addi r3, r31, 0x450
+/* 801A9148 001A4F88  48 25 C8 41 */	bl isEnd__Q24util12FrameCounterCFv
+/* 801A914C 001A4F8C  2C 03 00 00 */	cmpwi r3, 0
+/* 801A9150 001A4F90  40 82 00 30 */	bne lbl_801A9180
+/* 801A9154 001A4F94  38 7F 04 50 */	addi r3, r31, 0x450
+/* 801A9158 001A4F98  48 25 C8 49 */	bl advanceIfNotEnd__Q24util12FrameCounterFv
+/* 801A915C 001A4F9C  38 7F 04 50 */	addi r3, r31, 0x450
+/* 801A9160 001A4FA0  48 25 C8 29 */	bl isEnd__Q24util12FrameCounterCFv
+/* 801A9164 001A4FA4  2C 03 00 00 */	cmpwi r3, 0
+/* 801A9168 001A4FA8  41 82 00 18 */	beq lbl_801A9180
+/* 801A916C 001A4FAC  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A9170 001A4FB0  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A9174 001A4FB4  4B FF F9 89 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A9178 001A4FB8  38 8D 8C 08 */	addi r4, r13, $$253401-_SDA_BASE_
+/* 801A917C 001A4FBC  48 00 3E 19 */	bl play__Q23lyt6LayoutFPCc
+lbl_801A9180:
+/* 801A9180 001A4FC0  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 801A9184 001A4FC4  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 801A9188 001A4FC8  7C 08 03 A6 */	mtlr r0
+/* 801A918C 001A4FCC  38 21 00 60 */	addi r1, r1, 0x60
+/* 801A9190 001A4FD0  4E 80 00 20 */	blr 
+
+.global updateStateDecide__Q34info6common11CheckWindowFv
+updateStateDecide__Q34info6common11CheckWindowFv:
+/* 801A9194 001A4FD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801A9198 001A4FD8  7C 08 02 A6 */	mflr r0
+/* 801A919C 001A4FDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801A91A0 001A4FE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 801A91A4 001A4FE4  7C 7F 1B 78 */	mr r31, r3
+/* 801A91A8 001A4FE8  38 63 03 B0 */	addi r3, r3, 0x3b0
+/* 801A91AC 001A4FEC  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A91B0 001A4FF0  4B FF F9 4D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A91B4 001A4FF4  48 00 3D 31 */	bl wasSetAnim__Q23lyt6LayoutCFv
+/* 801A91B8 001A4FF8  2C 03 00 00 */	cmpwi r3, 0
+/* 801A91BC 001A4FFC  41 82 00 1C */	beq lbl_801A91D8
+/* 801A91C0 001A5000  38 7F 03 B0 */	addi r3, r31, 0x3b0
+/* 801A91C4 001A5004  80 9F 04 3C */	lwz r4, 0x43c(r31)
+/* 801A91C8 001A5008  4B FF F9 35 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A91CC 001A500C  48 00 3F 4D */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 801A91D0 001A5010  2C 03 00 00 */	cmpwi r3, 0
+/* 801A91D4 001A5014  41 82 00 0C */	beq lbl_801A91E0
+lbl_801A91D8:
+/* 801A91D8 001A5018  7F E3 FB 78 */	mr r3, r31
+/* 801A91DC 001A501C  4B FF FC A9 */	bl close__Q34info6common11CheckWindowFv
+lbl_801A91E0:
+/* 801A91E0 001A5020  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 801A91E4 001A5024  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801A91E8 001A5028  7C 08 03 A6 */	mtlr r0
+/* 801A91EC 001A502C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801A91F0 001A5030  4E 80 00 20 */	blr 
+
+.global updateStateClose__Q34info6common11CheckWindowFv
+updateStateClose__Q34info6common11CheckWindowFv:
+/* 801A91F4 001A5034  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 801A91F8 001A5038  7C 08 02 A6 */	mflr r0
+/* 801A91FC 001A503C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 801A9200 001A5040  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 801A9204 001A5044  7C 7F 1B 78 */	mr r31, r3
+/* 801A9208 001A5048  38 63 04 48 */	addi r3, r3, 0x448
+/* 801A920C 001A504C  48 25 C7 95 */	bl advanceIfNotEnd__Q24util12FrameCounterFv
+/* 801A9210 001A5050  38 7F 04 48 */	addi r3, r31, 0x448
+/* 801A9214 001A5054  48 25 C7 75 */	bl isEnd__Q24util12FrameCounterCFv
+/* 801A9218 001A5058  2C 03 00 00 */	cmpwi r3, 0
+/* 801A921C 001A505C  41 82 00 2C */	beq lbl_801A9248
+/* 801A9220 001A5060  38 61 00 08 */	addi r3, r1, 8
+/* 801A9224 001A5064  7F E4 FB 78 */	mr r4, r31
+/* 801A9228 001A5068  48 00 3B 9D */	bl rootPane__Q23lyt6LayoutFv
+/* 801A922C 001A506C  38 61 00 08 */	addi r3, r1, 8
+/* 801A9230 001A5070  4B FF E8 F9 */	bl hide__Q23lyt12PaneAccessorCFv
+/* 801A9234 001A5074  38 61 00 08 */	addi r3, r1, 8
+/* 801A9238 001A5078  38 80 FF FF */	li r4, -1
+/* 801A923C 001A507C  4B FC EF E5 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A9240 001A5080  38 00 00 00 */	li r0, 0
+/* 801A9244 001A5084  90 1F 04 38 */	stw r0, 0x438(r31)
+lbl_801A9248:
+/* 801A9248 001A5088  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 801A924C 001A508C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 801A9250 001A5090  7C 08 03 A6 */	mtlr r0
+/* 801A9254 001A5094  38 21 00 30 */	addi r1, r1, 0x30
+/* 801A9258 001A5098  4E 80 00 20 */	blr 
+
+.global setCursor__Q34info6common11CheckWindowFib
+setCursor__Q34info6common11CheckWindowFib:
+/* 801A925C 001A509C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 801A9260 001A50A0  7C 08 02 A6 */	mflr r0
+/* 801A9264 001A50A4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 801A9268 001A50A8  39 61 00 40 */	addi r11, r1, 0x40
+/* 801A926C 001A50AC  4B E5 E0 D1 */	bl func_8000733C
+/* 801A9270 001A50B0  7C 7B 1B 78 */	mr r27, r3
+/* 801A9274 001A50B4  7C 9C 23 78 */	mr r28, r4
+/* 801A9278 001A50B8  7C BD 2B 78 */	mr r29, r5
+/* 801A927C 001A50BC  3B C0 00 00 */	li r30, 0
+/* 801A9280 001A50C0  3F E0 80 45 */	lis r31, 0x8045
+/* 801A9284 001A50C4  48 00 00 48 */	b lbl_801A92CC
+lbl_801A9288:
+/* 801A9288 001A50C8  38 7B 03 B0 */	addi r3, r27, 0x3b0
+/* 801A928C 001A50CC  7F C4 F3 78 */	mr r4, r30
+/* 801A9290 001A50D0  4B FF F8 6D */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A9294 001A50D4  38 9F 74 D8 */	addi r4, r31, 0x74d8
+/* 801A9298 001A50D8  48 00 3C FD */	bl play__Q23lyt6LayoutFPCc
+/* 801A929C 001A50DC  38 7B 03 B0 */	addi r3, r27, 0x3b0
+/* 801A92A0 001A50E0  7F C4 F3 78 */	mr r4, r30
+/* 801A92A4 001A50E4  4B FF F8 59 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A92A8 001A50E8  7C 64 1B 78 */	mr r4, r3
+/* 801A92AC 001A50EC  38 61 00 08 */	addi r3, r1, 8
+/* 801A92B0 001A50F0  48 00 3B 15 */	bl rootPane__Q23lyt6LayoutFv
+/* 801A92B4 001A50F4  38 61 00 08 */	addi r3, r1, 8
+/* 801A92B8 001A50F8  4B FF E9 59 */	bl show__Q23lyt12PaneAccessorCFv
+/* 801A92BC 001A50FC  38 61 00 08 */	addi r3, r1, 8
+/* 801A92C0 001A5100  38 80 FF FF */	li r4, -1
+/* 801A92C4 001A5104  4B FC EF 5D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 801A92C8 001A5108  3B DE 00 01 */	addi r30, r30, 1
+lbl_801A92CC:
+/* 801A92CC 001A510C  80 1B 03 B4 */	lwz r0, 0x3b4(r27)
+/* 801A92D0 001A5110  7C 1E 00 40 */	cmplw r30, r0
+/* 801A92D4 001A5114  41 80 FF B4 */	blt lbl_801A9288
+/* 801A92D8 001A5118  38 7B 04 50 */	addi r3, r27, 0x450
+/* 801A92DC 001A511C  4B F5 D4 A5 */	bl DetachPlayerHeap__Q44nw4r3snd6detail10BasicSoundFPQ44nw4r3snd6detail10PlayerHeap
+/* 801A92E0 001A5120  2C 1D 00 00 */	cmpwi r29, 0
+/* 801A92E4 001A5124  41 82 00 4C */	beq lbl_801A9330
+/* 801A92E8 001A5128  3B C0 00 00 */	li r30, 0
+/* 801A92EC 001A512C  48 00 00 20 */	b lbl_801A930C
+lbl_801A92F0:
+/* 801A92F0 001A5130  38 7B 03 A0 */	addi r3, r27, 0x3a0
+/* 801A92F4 001A5134  7F C4 F3 78 */	mr r4, r30
+/* 801A92F8 001A5138  4B FF F8 05 */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A92FC 001A513C  38 8D 8C 20 */	addi r4, r13, $$253459-_SDA_BASE_
+/* 801A9300 001A5140  38 AD 8C 28 */	addi r5, r13, $$253460-_SDA_BASE_
+/* 801A9304 001A5144  48 00 3D 09 */	bl play__Q23lyt6LayoutFPCcPCc
+/* 801A9308 001A5148  3B DE 00 01 */	addi r30, r30, 1
+lbl_801A930C:
+/* 801A930C 001A514C  80 1B 03 A4 */	lwz r0, 0x3a4(r27)
+/* 801A9310 001A5150  7C 1E 00 40 */	cmplw r30, r0
+/* 801A9314 001A5154  41 80 FF DC */	blt lbl_801A92F0
+/* 801A9318 001A5158  38 7B 03 A0 */	addi r3, r27, 0x3a0
+/* 801A931C 001A515C  7F 84 E3 78 */	mr r4, r28
+/* 801A9320 001A5160  4B FF F7 DD */	bl __vc__Q23mem40ExplicitAutoDeleteArray$$0Q23lyt6Layout$$42$$1FUl
+/* 801A9324 001A5164  38 8D 8C 30 */	addi r4, r13, $$253461-_SDA_BASE_
+/* 801A9328 001A5168  38 AD 8C 38 */	addi r5, r13, $$253462-_SDA_BASE_
+/* 801A932C 001A516C  48 00 3C E1 */	bl play__Q23lyt6LayoutFPCcPCc
+lbl_801A9330:
+/* 801A9330 001A5170  39 61 00 40 */	addi r11, r1, 0x40
+/* 801A9334 001A5174  4B E5 E0 55 */	bl func_80007388
+/* 801A9338 001A5178  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 801A933C 001A517C  7C 08 03 A6 */	mtlr r0
+/* 801A9340 001A5180  38 21 00 40 */	addi r1, r1, 0x40
+/* 801A9344 001A5184  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$253274
+$$253274:
+	.incbin "baserom.dol", 0x453530, 0x14
+.global $$253275
+$$253275:
+	.incbin "baserom.dol", 0x453544, 0x10
+.global $$253276
+$$253276:
+	.incbin "baserom.dol", 0x453554, 0xC
+.global $$253277
+$$253277:
+	.incbin "baserom.dol", 0x453560, 0xC
+.global $$253278
+$$253278:
+	.incbin "baserom.dol", 0x45356C, 0x14
+.global $$253279
+$$253279:
+	.incbin "baserom.dol", 0x453580, 0x10
+.global $$253283
+$$253283:
+	.incbin "baserom.dol", 0x453590, 0x10
+.global $$253284
+$$253284:
+	.incbin "baserom.dol", 0x4535A0, 0x10
+.global $$253386
+$$253386:
+	.incbin "baserom.dol", 0x4535B0, 0xC
+.global $$253387
+$$253387:
+	.incbin "baserom.dol", 0x4535BC, 0xC
+.global $$253392
+$$253392:
+	.incbin "baserom.dol", 0x4535C8, 0x10
+.global $$253458
+$$253458:
+	.incbin "baserom.dol", 0x4535D8, 0x40
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$253280
+$$253280:
+	.incbin "baserom.dol", 0x4933D0, 0x8
+.global $$253281
+$$253281:
+	.incbin "baserom.dol", 0x4933D8, 0x8
+.global $$253282
+$$253282:
+	.incbin "baserom.dol", 0x4933E0, 0x8
+.global $$253285
+$$253285:
+	.incbin "baserom.dol", 0x4933E8, 0x8
+.global $$253379
+$$253379:
+	.incbin "baserom.dol", 0x4933F0, 0x8
+.global $$253380
+$$253380:
+	.incbin "baserom.dol", 0x4933F8, 0x8
+.global $$253400
+$$253400:
+	.incbin "baserom.dol", 0x493400, 0x8
+.global $$253401
+$$253401:
+	.incbin "baserom.dol", 0x493408, 0x8
+.global $$253405
+$$253405:
+	.incbin "baserom.dol", 0x493410, 0x8
+.global $$253439
+$$253439:
+	.incbin "baserom.dol", 0x493418, 0x8
+.global $$253459
+$$253459:
+	.incbin "baserom.dol", 0x493420, 0x8
+.global $$253460
+$$253460:
+	.incbin "baserom.dol", 0x493428, 0x8
+.global $$253461
+$$253461:
+	.incbin "baserom.dol", 0x493430, 0x8
+.global $$253462
+$$253462:
+	.incbin "baserom.dol", 0x493438, 0x8

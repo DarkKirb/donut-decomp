@@ -1,0 +1,385 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__17MoSdkVideoDecoderFPv
+__ct__17MoSdkVideoDecoderFPv:
+/* 80153F10 0014FD50  38 00 00 00 */	li r0, 0
+/* 80153F14 0014FD54  90 83 0F B4 */	stw r4, 0xfb4(r3)
+/* 80153F18 0014FD58  90 03 0F A4 */	stw r0, 0xfa4(r3)
+/* 80153F1C 0014FD5C  4E 80 00 20 */	blr 
+
+.global __dt__17MoSdkVideoDecoderFv
+__dt__17MoSdkVideoDecoderFv:
+/* 80153F20 0014FD60  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80153F24 0014FD64  7C 08 02 A6 */	mflr r0
+/* 80153F28 0014FD68  2C 03 00 00 */	cmpwi r3, 0
+/* 80153F2C 0014FD6C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80153F30 0014FD70  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80153F34 0014FD74  7C 9F 23 78 */	mr r31, r4
+/* 80153F38 0014FD78  93 C1 00 08 */	stw r30, 8(r1)
+/* 80153F3C 0014FD7C  7C 7E 1B 78 */	mr r30, r3
+/* 80153F40 0014FD80  41 82 00 48 */	beq lbl_80153F88
+/* 80153F44 0014FD84  3C 80 80 45 */	lis r4, $$22798@ha
+/* 80153F48 0014FD88  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 80153F4C 0014FD8C  38 84 84 F8 */	addi r4, r4, $$22798@l
+/* 80153F50 0014FD90  4C C6 31 82 */	crclr 6
+/* 80153F54 0014FD94  4B FF BA 2D */	bl MoLog
+/* 80153F58 0014FD98  80 7E 0F A4 */	lwz r3, 0xfa4(r30)
+/* 80153F5C 0014FD9C  2C 03 00 00 */	cmpwi r3, 0
+/* 80153F60 0014FDA0  41 82 00 08 */	beq lbl_80153F68
+/* 80153F64 0014FDA4  4B FF F8 6D */	bl MOiFree__FPv
+lbl_80153F68:
+/* 80153F68 0014FDA8  38 00 00 00 */	li r0, 0
+/* 80153F6C 0014FDAC  90 1E 0F A4 */	stw r0, 0xfa4(r30)
+/* 80153F70 0014FDB0  7F C3 F3 78 */	mr r3, r30
+/* 80153F74 0014FDB4  48 00 F7 CD */	bl VX2DecoderRelease__FR14VX2DecoderData
+/* 80153F78 0014FDB8  2C 1F 00 00 */	cmpwi r31, 0
+/* 80153F7C 0014FDBC  40 81 00 0C */	ble lbl_80153F88
+/* 80153F80 0014FDC0  7F C3 F3 78 */	mr r3, r30
+/* 80153F84 0014FDC4  4B FF F8 4D */	bl MOiFree__FPv
+lbl_80153F88:
+/* 80153F88 0014FDC8  7F C3 F3 78 */	mr r3, r30
+/* 80153F8C 0014FDCC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80153F90 0014FDD0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80153F94 0014FDD4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80153F98 0014FDD8  7C 08 03 A6 */	mtlr r0
+/* 80153F9C 0014FDDC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80153FA0 0014FDE0  4E 80 00 20 */	blr 
+/* 80153FA4 0014FDE4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80153FA8 0014FDE8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80153FAC 0014FDEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global initCodec__17MoSdkVideoDecoderFUlUlUl
+initCodec__17MoSdkVideoDecoderFUlUlUl:
+/* 80153FB0 0014FDF0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80153FB4 0014FDF4  7C 08 02 A6 */	mflr r0
+/* 80153FB8 0014FDF8  28 06 00 06 */	cmplwi r6, 6
+/* 80153FBC 0014FDFC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80153FC0 0014FE00  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80153FC4 0014FE04  7C BF 2B 78 */	mr r31, r5
+/* 80153FC8 0014FE08  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80153FCC 0014FE0C  7C 9E 23 78 */	mr r30, r4
+/* 80153FD0 0014FE10  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80153FD4 0014FE14  7C 7D 1B 78 */	mr r29, r3
+/* 80153FD8 0014FE18  90 C3 0F B0 */	stw r6, 0xfb0(r3)
+/* 80153FDC 0014FE1C  40 80 00 18 */	bge lbl_80153FF4
+/* 80153FE0 0014FE20  3C 80 80 45 */	lis r4, $$22814@ha
+/* 80153FE4 0014FE24  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 80153FE8 0014FE28  38 84 85 14 */	addi r4, r4, $$22814@l
+/* 80153FEC 0014FE2C  4C C6 31 82 */	crclr 6
+/* 80153FF0 0014FE30  4B FF BA 61 */	bl MoThrowError
+lbl_80153FF4:
+/* 80153FF4 0014FE34  80 1D 0F B0 */	lwz r0, 0xfb0(r29)
+/* 80153FF8 0014FE38  1C 60 00 34 */	mulli r3, r0, 0x34
+/* 80153FFC 0014FE3C  4B FF F7 25 */	bl MOiAlloc__FUi
+/* 80154000 0014FE40  2C 03 00 00 */	cmpwi r3, 0
+/* 80154004 0014FE44  90 7D 0F A4 */	stw r3, 0xfa4(r29)
+/* 80154008 0014FE48  40 82 00 0C */	bne lbl_80154014
+/* 8015400C 0014FE4C  38 60 00 00 */	li r3, 0
+/* 80154010 0014FE50  48 00 00 CC */	b lbl_801540DC
+lbl_80154014:
+/* 80154014 0014FE54  57 C6 F8 7E */	srwi r6, r30, 1
+/* 80154018 0014FE58  38 E0 00 00 */	li r7, 0
+/* 8015401C 0014FE5C  38 A0 00 00 */	li r5, 0
+/* 80154020 0014FE60  38 80 00 00 */	li r4, 0
+/* 80154024 0014FE64  48 00 00 68 */	b lbl_8015408C
+lbl_80154028:
+/* 80154028 0014FE68  80 7D 0F A4 */	lwz r3, 0xfa4(r29)
+/* 8015402C 0014FE6C  38 E7 00 01 */	addi r7, r7, 1
+/* 80154030 0014FE70  7C 83 29 2E */	stwx r4, r3, r5
+/* 80154034 0014FE74  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154038 0014FE78  7C 60 2A 14 */	add r3, r0, r5
+/* 8015403C 0014FE7C  90 83 00 04 */	stw r4, 4(r3)
+/* 80154040 0014FE80  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154044 0014FE84  7C 60 2A 14 */	add r3, r0, r5
+/* 80154048 0014FE88  90 83 00 08 */	stw r4, 8(r3)
+/* 8015404C 0014FE8C  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154050 0014FE90  7C 60 2A 14 */	add r3, r0, r5
+/* 80154054 0014FE94  93 C3 00 20 */	stw r30, 0x20(r3)
+/* 80154058 0014FE98  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 8015405C 0014FE9C  7C 60 2A 14 */	add r3, r0, r5
+/* 80154060 0014FEA0  93 E3 00 24 */	stw r31, 0x24(r3)
+/* 80154064 0014FEA4  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154068 0014FEA8  7C 60 2A 14 */	add r3, r0, r5
+/* 8015406C 0014FEAC  93 C3 00 0C */	stw r30, 0xc(r3)
+/* 80154070 0014FEB0  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154074 0014FEB4  7C 60 2A 14 */	add r3, r0, r5
+/* 80154078 0014FEB8  90 C3 00 10 */	stw r6, 0x10(r3)
+/* 8015407C 0014FEBC  80 1D 0F A4 */	lwz r0, 0xfa4(r29)
+/* 80154080 0014FEC0  7C 60 2A 14 */	add r3, r0, r5
+/* 80154084 0014FEC4  38 A5 00 34 */	addi r5, r5, 0x34
+/* 80154088 0014FEC8  90 C3 00 14 */	stw r6, 0x14(r3)
+lbl_8015408C:
+/* 8015408C 0014FECC  80 1D 0F B0 */	lwz r0, 0xfb0(r29)
+/* 80154090 0014FED0  7C 07 00 40 */	cmplw r7, r0
+/* 80154094 0014FED4  41 80 FF 94 */	blt lbl_80154028
+/* 80154098 0014FED8  38 00 00 00 */	li r0, 0
+/* 8015409C 0014FEDC  90 1D 0F AC */	stw r0, 0xfac(r29)
+/* 801540A0 0014FEE0  7F A3 EB 78 */	mr r3, r29
+/* 801540A4 0014FEE4  7F C4 F3 78 */	mr r4, r30
+/* 801540A8 0014FEE8  90 1D 0F A8 */	stw r0, 0xfa8(r29)
+/* 801540AC 0014FEEC  7F E5 FB 78 */	mr r5, r31
+/* 801540B0 0014FEF0  48 00 F2 91 */	bl VX2DecoderInit__FR14VX2DecoderDataii
+/* 801540B4 0014FEF4  28 03 00 01 */	cmplwi r3, 1
+/* 801540B8 0014FEF8  41 82 00 20 */	beq lbl_801540D8
+/* 801540BC 0014FEFC  3C 80 80 45 */	lis r4, $$22815@ha
+/* 801540C0 0014FF00  80 7D 0F B4 */	lwz r3, 0xfb4(r29)
+/* 801540C4 0014FF04  38 84 85 30 */	addi r4, r4, $$22815@l
+/* 801540C8 0014FF08  4C C6 31 82 */	crclr 6
+/* 801540CC 0014FF0C  4B FF B8 B5 */	bl MoLog
+/* 801540D0 0014FF10  38 60 00 00 */	li r3, 0
+/* 801540D4 0014FF14  48 00 00 08 */	b lbl_801540DC
+lbl_801540D8:
+/* 801540D8 0014FF18  38 60 00 01 */	li r3, 1
+lbl_801540DC:
+/* 801540DC 0014FF1C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801540E0 0014FF20  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801540E4 0014FF24  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 801540E8 0014FF28  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 801540EC 0014FF2C  7C 08 03 A6 */	mtlr r0
+/* 801540F0 0014FF30  38 21 00 20 */	addi r1, r1, 0x20
+/* 801540F4 0014FF34  4E 80 00 20 */	blr 
+/* 801540F8 0014FF38  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 801540FC 0014FF3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global decodeImage__17MoSdkVideoDecoderFPUcUlUl
+decodeImage__17MoSdkVideoDecoderFPUcUlUl:
+/* 80154100 0014FF40  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80154104 0014FF44  7C 08 02 A6 */	mflr r0
+/* 80154108 0014FF48  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8015410C 0014FF4C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80154110 0014FF50  7C DF 33 78 */	mr r31, r6
+/* 80154114 0014FF54  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80154118 0014FF58  7C 7E 1B 78 */	mr r30, r3
+/* 8015411C 0014FF5C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80154120 0014FF60  80 E3 0F AC */	lwz r7, 0xfac(r3)
+/* 80154124 0014FF64  80 03 0F A8 */	lwz r0, 0xfa8(r3)
+/* 80154128 0014FF68  80 C3 0F B0 */	lwz r6, 0xfb0(r3)
+/* 8015412C 0014FF6C  7C 00 38 50 */	subf r0, r0, r7
+/* 80154130 0014FF70  7C 00 30 40 */	cmplw r0, r6
+/* 80154134 0014FF74  40 81 00 20 */	ble lbl_80154154
+/* 80154138 0014FF78  3C 80 80 45 */	lis r4, $$22824@ha
+/* 8015413C 0014FF7C  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 80154140 0014FF80  38 84 85 58 */	addi r4, r4, $$22824@l
+/* 80154144 0014FF84  4C C6 31 82 */	crclr 6
+/* 80154148 0014FF88  4B FF B8 39 */	bl MoLog
+/* 8015414C 0014FF8C  38 60 00 00 */	li r3, 0
+/* 80154150 0014FF90  48 00 00 90 */	b lbl_801541E0
+lbl_80154154:
+/* 80154154 0014FF94  7C 07 33 96 */	divwu r0, r7, r6
+/* 80154158 0014FF98  80 A3 0F A4 */	lwz r5, 0xfa4(r3)
+/* 8015415C 0014FF9C  7C 00 31 D6 */	mullw r0, r0, r6
+/* 80154160 0014FFA0  7C 00 38 50 */	subf r0, r0, r7
+/* 80154164 0014FFA4  1C 00 00 34 */	mulli r0, r0, 0x34
+/* 80154168 0014FFA8  7F A5 02 14 */	add r29, r5, r0
+/* 8015416C 0014FFAC  48 00 F6 45 */	bl VX2DecoderUnpack__FR14VX2DecoderDataPCv
+/* 80154170 0014FFB0  2C 03 00 00 */	cmpwi r3, 0
+/* 80154174 0014FFB4  40 82 00 20 */	bne lbl_80154194
+/* 80154178 0014FFB8  3C 80 80 45 */	lis r4, $$22825@ha
+/* 8015417C 0014FFBC  80 7E 0F B4 */	lwz r3, 0xfb4(r30)
+/* 80154180 0014FFC0  38 84 85 7C */	addi r4, r4, $$22825@l
+/* 80154184 0014FFC4  4C C6 31 82 */	crclr 6
+/* 80154188 0014FFC8  4B FF B7 F9 */	bl MoLog
+/* 8015418C 0014FFCC  38 60 00 00 */	li r3, 0
+/* 80154190 0014FFD0  48 00 00 50 */	b lbl_801541E0
+lbl_80154194:
+/* 80154194 0014FFD4  80 9E 0F AC */	lwz r4, 0xfac(r30)
+/* 80154198 0014FFD8  38 04 00 01 */	addi r0, r4, 1
+/* 8015419C 0014FFDC  90 1E 0F AC */	stw r0, 0xfac(r30)
+/* 801541A0 0014FFE0  80 9D 00 20 */	lwz r4, 0x20(r29)
+/* 801541A4 0014FFE4  80 1D 00 24 */	lwz r0, 0x24(r29)
+/* 801541A8 0014FFE8  7C A4 01 D6 */	mullw r5, r4, r0
+/* 801541AC 0014FFEC  90 7D 00 00 */	stw r3, 0(r29)
+/* 801541B0 0014FFF0  54 A0 10 3A */	slwi r0, r5, 2
+/* 801541B4 0014FFF4  7C 83 2A 14 */	add r4, r3, r5
+/* 801541B8 0014FFF8  90 9D 00 04 */	stw r4, 4(r29)
+/* 801541BC 0014FFFC  7C 00 2A 14 */	add r0, r0, r5
+/* 801541C0 00150000  54 00 F0 BE */	srwi r0, r0, 2
+/* 801541C4 00150004  7C 03 02 14 */	add r0, r3, r0
+/* 801541C8 00150008  90 1D 00 08 */	stw r0, 8(r29)
+/* 801541CC 0015000C  7F C3 F3 78 */	mr r3, r30
+/* 801541D0 00150010  93 FD 00 1C */	stw r31, 0x1c(r29)
+/* 801541D4 00150014  48 00 FD 2D */	bl VX2DecoderGetQuantizer__FR14VX2DecoderData
+/* 801541D8 00150018  90 7D 00 18 */	stw r3, 0x18(r29)
+/* 801541DC 0015001C  38 60 00 01 */	li r3, 1
+lbl_801541E0:
+/* 801541E0 00150020  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 801541E4 00150024  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 801541E8 00150028  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 801541EC 0015002C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 801541F0 00150030  7C 08 03 A6 */	mtlr r0
+/* 801541F4 00150034  38 21 00 20 */	addi r1, r1, 0x20
+/* 801541F8 00150038  4E 80 00 20 */	blr 
+/* 801541FC 0015003C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global getDecodedImage__17MoSdkVideoDecoderFR10MoSdkImage
+getDecodedImage__17MoSdkVideoDecoderFR10MoSdkImage:
+/* 80154200 00150040  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80154204 00150044  7C 08 02 A6 */	mflr r0
+/* 80154208 00150048  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8015420C 0015004C  80 E3 0F A8 */	lwz r7, 0xfa8(r3)
+/* 80154210 00150050  80 03 0F AC */	lwz r0, 0xfac(r3)
+/* 80154214 00150054  7C 07 00 40 */	cmplw r7, r0
+/* 80154218 00150058  40 82 00 20 */	bne lbl_80154238
+/* 8015421C 0015005C  3C 80 80 45 */	lis r4, $$22834@ha
+/* 80154220 00150060  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 80154224 00150064  38 84 85 98 */	addi r4, r4, $$22834@l
+/* 80154228 00150068  4C C6 31 82 */	crclr 6
+/* 8015422C 0015006C  4B FF B7 55 */	bl MoLog
+/* 80154230 00150070  38 60 00 00 */	li r3, 0
+/* 80154234 00150074  48 00 00 88 */	b lbl_801542BC
+lbl_80154238:
+/* 80154238 00150078  80 A3 0F B0 */	lwz r5, 0xfb0(r3)
+/* 8015423C 0015007C  80 C3 0F A4 */	lwz r6, 0xfa4(r3)
+/* 80154240 00150080  38 60 00 01 */	li r3, 1
+/* 80154244 00150084  7C 07 2B 96 */	divwu r0, r7, r5
+/* 80154248 00150088  7C 00 29 D6 */	mullw r0, r0, r5
+/* 8015424C 0015008C  7C 00 38 50 */	subf r0, r0, r7
+/* 80154250 00150090  1C 00 00 34 */	mulli r0, r0, 0x34
+/* 80154254 00150094  7C A6 00 6E */	lwzux r5, r6, r0
+/* 80154258 00150098  80 06 00 04 */	lwz r0, 4(r6)
+/* 8015425C 0015009C  90 04 00 04 */	stw r0, 4(r4)
+/* 80154260 001500A0  90 A4 00 00 */	stw r5, 0(r4)
+/* 80154264 001500A4  80 06 00 08 */	lwz r0, 8(r6)
+/* 80154268 001500A8  90 04 00 08 */	stw r0, 8(r4)
+/* 8015426C 001500AC  80 A6 00 0C */	lwz r5, 0xc(r6)
+/* 80154270 001500B0  80 06 00 10 */	lwz r0, 0x10(r6)
+/* 80154274 001500B4  90 04 00 10 */	stw r0, 0x10(r4)
+/* 80154278 001500B8  90 A4 00 0C */	stw r5, 0xc(r4)
+/* 8015427C 001500BC  80 06 00 14 */	lwz r0, 0x14(r6)
+/* 80154280 001500C0  90 04 00 14 */	stw r0, 0x14(r4)
+/* 80154284 001500C4  80 06 00 18 */	lwz r0, 0x18(r6)
+/* 80154288 001500C8  90 04 00 18 */	stw r0, 0x18(r4)
+/* 8015428C 001500CC  80 06 00 1C */	lwz r0, 0x1c(r6)
+/* 80154290 001500D0  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 80154294 001500D4  80 06 00 20 */	lwz r0, 0x20(r6)
+/* 80154298 001500D8  90 04 00 20 */	stw r0, 0x20(r4)
+/* 8015429C 001500DC  80 06 00 24 */	lwz r0, 0x24(r6)
+/* 801542A0 001500E0  90 04 00 24 */	stw r0, 0x24(r4)
+/* 801542A4 001500E4  80 06 00 28 */	lwz r0, 0x28(r6)
+/* 801542A8 001500E8  90 04 00 28 */	stw r0, 0x28(r4)
+/* 801542AC 001500EC  80 06 00 2C */	lwz r0, 0x2c(r6)
+/* 801542B0 001500F0  90 04 00 2C */	stw r0, 0x2c(r4)
+/* 801542B4 001500F4  88 06 00 30 */	lbz r0, 0x30(r6)
+/* 801542B8 001500F8  98 04 00 30 */	stb r0, 0x30(r4)
+lbl_801542BC:
+/* 801542BC 001500FC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 801542C0 00150100  7C 08 03 A6 */	mtlr r0
+/* 801542C4 00150104  38 21 00 10 */	addi r1, r1, 0x10
+/* 801542C8 00150108  4E 80 00 20 */	blr 
+/* 801542CC 0015010C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global consumeImage__17MoSdkVideoDecoderFv
+consumeImage__17MoSdkVideoDecoderFv:
+/* 801542D0 00150110  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801542D4 00150114  7C 08 02 A6 */	mflr r0
+/* 801542D8 00150118  90 01 00 14 */	stw r0, 0x14(r1)
+/* 801542DC 0015011C  80 83 0F A8 */	lwz r4, 0xfa8(r3)
+/* 801542E0 00150120  80 03 0F AC */	lwz r0, 0xfac(r3)
+/* 801542E4 00150124  7C 04 00 40 */	cmplw r4, r0
+/* 801542E8 00150128  40 82 00 20 */	bne lbl_80154308
+/* 801542EC 0015012C  3C 80 80 45 */	lis r4, $$22834@ha
+/* 801542F0 00150130  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 801542F4 00150134  38 84 85 98 */	addi r4, r4, $$22834@l
+/* 801542F8 00150138  4C C6 31 82 */	crclr 6
+/* 801542FC 0015013C  4B FF B6 85 */	bl MoLog
+/* 80154300 00150140  38 60 00 00 */	li r3, 0
+/* 80154304 00150144  48 00 00 10 */	b lbl_80154314
+lbl_80154308:
+/* 80154308 00150148  38 04 00 01 */	addi r0, r4, 1
+/* 8015430C 0015014C  90 03 0F A8 */	stw r0, 0xfa8(r3)
+/* 80154310 00150150  38 60 00 01 */	li r3, 1
+lbl_80154314:
+/* 80154314 00150154  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80154318 00150158  7C 08 03 A6 */	mtlr r0
+/* 8015431C 0015015C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80154320 00150160  4E 80 00 20 */	blr 
+/* 80154324 00150164  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80154328 00150168  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8015432C 0015016C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global skipImage__17MoSdkVideoDecoderFv
+skipImage__17MoSdkVideoDecoderFv:
+/* 80154330 00150170  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80154334 00150174  7C 08 02 A6 */	mflr r0
+/* 80154338 00150178  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8015433C 0015017C  80 83 0F A8 */	lwz r4, 0xfa8(r3)
+/* 80154340 00150180  80 03 0F AC */	lwz r0, 0xfac(r3)
+/* 80154344 00150184  7C 04 00 40 */	cmplw r4, r0
+/* 80154348 00150188  40 82 00 20 */	bne lbl_80154368
+/* 8015434C 0015018C  3C 80 80 45 */	lis r4, $$22842@ha
+/* 80154350 00150190  80 63 0F B4 */	lwz r3, 0xfb4(r3)
+/* 80154354 00150194  38 84 85 B4 */	addi r4, r4, $$22842@l
+/* 80154358 00150198  4C C6 31 82 */	crclr 6
+/* 8015435C 0015019C  4B FF B6 25 */	bl MoLog
+/* 80154360 001501A0  38 60 00 00 */	li r3, 0
+/* 80154364 001501A4  48 00 00 10 */	b lbl_80154374
+lbl_80154368:
+/* 80154368 001501A8  38 04 00 01 */	addi r0, r4, 1
+/* 8015436C 001501AC  90 03 0F A8 */	stw r0, 0xfa8(r3)
+/* 80154370 001501B0  38 60 00 01 */	li r3, 1
+lbl_80154374:
+/* 80154374 001501B4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80154378 001501B8  7C 08 03 A6 */	mtlr r0
+/* 8015437C 001501BC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80154380 001501C0  4E 80 00 20 */	blr 
+/* 80154384 001501C4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80154388 001501C8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8015438C 001501CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global getQueueCount__17MoSdkVideoDecoderFv
+getQueueCount__17MoSdkVideoDecoderFv:
+/* 80154390 001501D0  80 83 0F A8 */	lwz r4, 0xfa8(r3)
+/* 80154394 001501D4  80 03 0F AC */	lwz r0, 0xfac(r3)
+/* 80154398 001501D8  7C 64 00 50 */	subf r3, r4, r0
+/* 8015439C 001501DC  4E 80 00 20 */	blr 
+
+.global getLastDisplayedFrame__17MoSdkVideoDecoderFv
+getLastDisplayedFrame__17MoSdkVideoDecoderFv:
+/* 801543A0 001501E0  80 03 0F A8 */	lwz r0, 0xfa8(r3)
+/* 801543A4 001501E4  2C 00 00 00 */	cmpwi r0, 0
+/* 801543A8 001501E8  40 82 00 0C */	bne lbl_801543B4
+/* 801543AC 001501EC  38 60 00 00 */	li r3, 0
+/* 801543B0 001501F0  4E 80 00 20 */	blr 
+lbl_801543B4:
+/* 801543B4 001501F4  80 A3 0F B0 */	lwz r5, 0xfb0(r3)
+/* 801543B8 001501F8  80 83 0F A4 */	lwz r4, 0xfa4(r3)
+/* 801543BC 001501FC  7C 60 2A 14 */	add r3, r0, r5
+/* 801543C0 00150200  38 63 FF FF */	addi r3, r3, -1
+/* 801543C4 00150204  7C 03 2B 96 */	divwu r0, r3, r5
+/* 801543C8 00150208  7C 00 29 D6 */	mullw r0, r0, r5
+/* 801543CC 0015020C  7C 00 18 50 */	subf r0, r0, r3
+/* 801543D0 00150210  1C 00 00 34 */	mulli r0, r0, 0x34
+/* 801543D4 00150214  7C 64 02 14 */	add r3, r4, r0
+/* 801543D8 00150218  80 63 00 1C */	lwz r3, 0x1c(r3)
+/* 801543DC 0015021C  4E 80 00 20 */	blr 
+
+.global VX2_Free__FPv
+VX2_Free__FPv:
+/* 801543E0 00150220  2C 03 00 00 */	cmpwi r3, 0
+/* 801543E4 00150224  4D 82 00 20 */	beqlr 
+/* 801543E8 00150228  4B FF F3 E8 */	b MOiFree__FPv
+/* 801543EC 0015022C  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$22798
+$$22798:
+	.incbin "baserom.dol", 0x4445F8, 0x1C
+.global $$22814
+$$22814:
+	.incbin "baserom.dol", 0x444614, 0x1C
+.global $$22815
+$$22815:
+	.incbin "baserom.dol", 0x444630, 0x28
+.global $$22824
+$$22824:
+	.incbin "baserom.dol", 0x444658, 0x24
+.global $$22825
+$$22825:
+	.incbin "baserom.dol", 0x44467C, 0x1C
+.global $$22834
+$$22834:
+	.incbin "baserom.dol", 0x444698, 0x1C
+.global $$22842
+$$22842:
+	.incbin "baserom.dol", 0x4446B4, 0x24

@@ -1,0 +1,264 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
+/* 8028ADDC 00286C1C  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8028ADE0 00286C20  7C 08 02 A6 */	mflr r0
+/* 8028ADE4 00286C24  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8028ADE8 00286C28  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028ADEC 00286C2C  4B D7 C5 41 */	bl func_8000732C
+/* 8028ADF0 00286C30  7C 7D 1B 78 */	mr r29, r3
+/* 8028ADF4 00286C34  7C 9E 23 78 */	mr r30, r4
+/* 8028ADF8 00286C38  7C BF 2B 78 */	mr r31, r5
+/* 8028ADFC 00286C3C  7D 17 43 78 */	mr r23, r8
+/* 8028AE00 00286C40  7D 38 4B 78 */	mr r24, r9
+/* 8028AE04 00286C44  7D 59 53 78 */	mr r25, r10
+/* 8028AE08 00286C48  83 41 00 58 */	lwz r26, 0x58(r1)
+/* 8028AE0C 00286C4C  83 61 00 5C */	lwz r27, 0x5c(r1)
+/* 8028AE10 00286C50  83 81 00 60 */	lwz r28, 0x60(r1)
+/* 8028AE14 00286C54  90 C3 00 00 */	stw r6, 0(r3)
+/* 8028AE18 00286C58  38 81 00 04 */	addi r4, r1, 4
+/* 8028AE1C 00286C5C  38 60 00 00 */	li r3, 0
+/* 8028AE20 00286C60  38 00 00 03 */	li r0, 3
+/* 8028AE24 00286C64  7C 09 03 A6 */	mtctr r0
+lbl_8028AE28:
+/* 8028AE28 00286C68  90 64 00 04 */	stw r3, 4(r4)
+/* 8028AE2C 00286C6C  94 64 00 08 */	stwu r3, 8(r4)
+/* 8028AE30 00286C70  42 00 FF F8 */	bdnz lbl_8028AE28
+/* 8028AE34 00286C74  38 61 00 08 */	addi r3, r1, 8
+/* 8028AE38 00286C78  7C E4 3B 78 */	mr r4, r7
+/* 8028AE3C 00286C7C  38 A0 00 18 */	li r5, 0x18
+/* 8028AE40 00286C80  4B F1 2B 7D */	bl Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
+/* 8028AE44 00286C84  38 BD 00 14 */	addi r5, r29, 0x14
+/* 8028AE48 00286C88  38 81 00 04 */	addi r4, r1, 4
+/* 8028AE4C 00286C8C  38 00 00 03 */	li r0, 3
+/* 8028AE50 00286C90  7C 09 03 A6 */	mtctr r0
+lbl_8028AE54:
+/* 8028AE54 00286C94  80 64 00 04 */	lwz r3, 4(r4)
+/* 8028AE58 00286C98  84 04 00 08 */	lwzu r0, 8(r4)
+/* 8028AE5C 00286C9C  90 65 00 04 */	stw r3, 4(r5)
+/* 8028AE60 00286CA0  94 05 00 08 */	stwu r0, 8(r5)
+/* 8028AE64 00286CA4  42 00 FF F0 */	bdnz lbl_8028AE54
+/* 8028AE68 00286CA8  92 FD 00 68 */	stw r23, 0x68(r29)
+/* 8028AE6C 00286CAC  93 1D 00 6C */	stw r24, 0x6c(r29)
+/* 8028AE70 00286CB0  38 00 00 01 */	li r0, 1
+/* 8028AE74 00286CB4  90 1E 00 00 */	stw r0, 0(r30)
+/* 8028AE78 00286CB8  93 3E 00 04 */	stw r25, 4(r30)
+/* 8028AE7C 00286CBC  93 5E 00 08 */	stw r26, 8(r30)
+/* 8028AE80 00286CC0  93 DD 00 70 */	stw r30, 0x70(r29)
+/* 8028AE84 00286CC4  3C 60 80 47 */	lis r3, $$250228@ha
+/* 8028AE88 00286CC8  38 03 26 58 */	addi r0, r3, $$250228@l
+/* 8028AE8C 00286CCC  90 1F 00 00 */	stw r0, 0(r31)
+/* 8028AE90 00286CD0  93 7F 00 04 */	stw r27, 4(r31)
+/* 8028AE94 00286CD4  93 9F 00 08 */	stw r28, 8(r31)
+/* 8028AE98 00286CD8  93 FD 00 74 */	stw r31, 0x74(r29)
+/* 8028AE9C 00286CDC  39 61 00 50 */	addi r11, r1, 0x50
+/* 8028AEA0 00286CE0  4B D7 C4 D9 */	bl func_80007378
+/* 8028AEA4 00286CE4  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8028AEA8 00286CE8  7C 08 03 A6 */	mtlr r0
+/* 8028AEAC 00286CEC  38 21 00 50 */	addi r1, r1, 0x50
+/* 8028AEB0 00286CF0  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
+/* 803C4CF0 003C0B30  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 803C4CF4 003C0B34  7C 08 02 A6 */	mflr r0
+/* 803C4CF8 003C0B38  90 01 00 74 */	stw r0, 0x74(r1)
+/* 803C4CFC 003C0B3C  39 61 00 70 */	addi r11, r1, 0x70
+/* 803C4D00 003C0B40  4B C4 26 31 */	bl func_80007330
+/* 803C4D04 003C0B44  7C 78 1B 78 */	mr r24, r3
+/* 803C4D08 003C0B48  7C 99 23 78 */	mr r25, r4
+/* 803C4D0C 003C0B4C  7C BA 2B 78 */	mr r26, r5
+/* 803C4D10 003C0B50  7D 1B 43 78 */	mr r27, r8
+/* 803C4D14 003C0B54  7D 3C 4B 78 */	mr r28, r9
+/* 803C4D18 003C0B58  7D 5D 53 78 */	mr r29, r10
+/* 803C4D1C 003C0B5C  83 C1 00 78 */	lwz r30, 0x78(r1)
+/* 803C4D20 003C0B60  83 E1 00 7C */	lwz r31, 0x7c(r1)
+/* 803C4D24 003C0B64  90 C3 00 00 */	stw r6, 0(r3)
+/* 803C4D28 003C0B68  38 81 00 04 */	addi r4, r1, 4
+/* 803C4D2C 003C0B6C  38 60 00 00 */	li r3, 0
+/* 803C4D30 003C0B70  38 00 00 03 */	li r0, 3
+/* 803C4D34 003C0B74  7C 09 03 A6 */	mtctr r0
+lbl_803C4D38:
+/* 803C4D38 003C0B78  90 64 00 04 */	stw r3, 4(r4)
+/* 803C4D3C 003C0B7C  94 64 00 08 */	stwu r3, 8(r4)
+/* 803C4D40 003C0B80  42 00 FF F8 */	bdnz lbl_803C4D38
+/* 803C4D44 003C0B84  38 61 00 08 */	addi r3, r1, 8
+/* 803C4D48 003C0B88  7C E4 3B 78 */	mr r4, r7
+/* 803C4D4C 003C0B8C  38 A0 00 18 */	li r5, 0x18
+/* 803C4D50 003C0B90  4B DD 8C 6D */	bl Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
+/* 803C4D54 003C0B94  38 B8 00 14 */	addi r5, r24, 0x14
+/* 803C4D58 003C0B98  38 81 00 04 */	addi r4, r1, 4
+/* 803C4D5C 003C0B9C  38 00 00 03 */	li r0, 3
+/* 803C4D60 003C0BA0  7C 09 03 A6 */	mtctr r0
+lbl_803C4D64:
+/* 803C4D64 003C0BA4  80 64 00 04 */	lwz r3, 4(r4)
+/* 803C4D68 003C0BA8  84 04 00 08 */	lwzu r0, 8(r4)
+/* 803C4D6C 003C0BAC  90 65 00 04 */	stw r3, 4(r5)
+/* 803C4D70 003C0BB0  94 05 00 08 */	stwu r0, 8(r5)
+/* 803C4D74 003C0BB4  42 00 FF F0 */	bdnz lbl_803C4D64
+/* 803C4D78 003C0BB8  38 81 00 1C */	addi r4, r1, 0x1c
+/* 803C4D7C 003C0BBC  38 60 00 00 */	li r3, 0
+/* 803C4D80 003C0BC0  38 00 00 05 */	li r0, 5
+/* 803C4D84 003C0BC4  7C 09 03 A6 */	mtctr r0
+lbl_803C4D88:
+/* 803C4D88 003C0BC8  90 64 00 04 */	stw r3, 4(r4)
+/* 803C4D8C 003C0BCC  94 64 00 08 */	stwu r3, 8(r4)
+/* 803C4D90 003C0BD0  42 00 FF F8 */	bdnz lbl_803C4D88
+/* 803C4D94 003C0BD4  38 61 00 20 */	addi r3, r1, 0x20
+/* 803C4D98 003C0BD8  7F 64 DB 78 */	mr r4, r27
+/* 803C4D9C 003C0BDC  38 A0 00 28 */	li r5, 0x28
+/* 803C4DA0 003C0BE0  4B DD 8C 1D */	bl Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
+/* 803C4DA4 003C0BE4  38 B8 00 2C */	addi r5, r24, 0x2c
+/* 803C4DA8 003C0BE8  38 81 00 1C */	addi r4, r1, 0x1c
+/* 803C4DAC 003C0BEC  38 00 00 05 */	li r0, 5
+/* 803C4DB0 003C0BF0  7C 09 03 A6 */	mtctr r0
+lbl_803C4DB4:
+/* 803C4DB4 003C0BF4  80 64 00 04 */	lwz r3, 4(r4)
+/* 803C4DB8 003C0BF8  84 04 00 08 */	lwzu r0, 8(r4)
+/* 803C4DBC 003C0BFC  90 65 00 04 */	stw r3, 4(r5)
+/* 803C4DC0 003C0C00  94 05 00 08 */	stwu r0, 8(r5)
+/* 803C4DC4 003C0C04  42 00 FF F0 */	bdnz lbl_803C4DB4
+/* 803C4DC8 003C0C08  38 60 00 00 */	li r3, 0
+/* 803C4DCC 003C0C0C  98 78 00 64 */	stb r3, 0x64(r24)
+/* 803C4DD0 003C0C10  38 00 01 00 */	li r0, 0x100
+/* 803C4DD4 003C0C14  90 18 00 5C */	stw r0, 0x5c(r24)
+/* 803C4DD8 003C0C18  98 78 00 65 */	stb r3, 0x65(r24)
+/* 803C4DDC 003C0C1C  38 60 00 01 */	li r3, 1
+/* 803C4DE0 003C0C20  90 78 00 68 */	stw r3, 0x68(r24)
+/* 803C4DE4 003C0C24  38 0D D9 5C */	addi r0, r13, $$2LOCAL$$2Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry$$2NODE_NAMES-_SDA_BASE_
+/* 803C4DE8 003C0C28  90 18 00 6C */	stw r0, 0x6c(r24)
+/* 803C4DEC 003C0C2C  90 79 00 00 */	stw r3, 0(r25)
+/* 803C4DF0 003C0C30  93 99 00 04 */	stw r28, 4(r25)
+/* 803C4DF4 003C0C34  93 B9 00 08 */	stw r29, 8(r25)
+/* 803C4DF8 003C0C38  93 38 00 70 */	stw r25, 0x70(r24)
+/* 803C4DFC 003C0C3C  3C 60 80 49 */	lis r3, $$250281@ha
+/* 803C4E00 003C0C40  38 03 1E D8 */	addi r0, r3, $$250281@l
+/* 803C4E04 003C0C44  90 1A 00 00 */	stw r0, 0(r26)
+/* 803C4E08 003C0C48  93 DA 00 04 */	stw r30, 4(r26)
+/* 803C4E0C 003C0C4C  93 FA 00 08 */	stw r31, 8(r26)
+/* 803C4E10 003C0C50  93 58 00 74 */	stw r26, 0x74(r24)
+/* 803C4E14 003C0C54  39 61 00 70 */	addi r11, r1, 0x70
+/* 803C4E18 003C0C58  4B C4 25 65 */	bl func_8000737C
+/* 803C4E1C 003C0C5C  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 803C4E20 003C0C60  7C 08 03 A6 */	mtlr r0
+/* 803C4E24 003C0C64  38 21 00 70 */	addi r1, r1, 0x70
+/* 803C4E28 003C0C68  4E 80 00 20 */	blr 
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
+/* 803D7A64 003D38A4  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 803D7A68 003D38A8  7C 08 02 A6 */	mflr r0
+/* 803D7A6C 003D38AC  90 01 00 74 */	stw r0, 0x74(r1)
+/* 803D7A70 003D38B0  39 61 00 70 */	addi r11, r1, 0x70
+/* 803D7A74 003D38B4  4B C2 F8 B9 */	bl func_8000732C
+/* 803D7A78 003D38B8  7C 77 1B 78 */	mr r23, r3
+/* 803D7A7C 003D38BC  7C 98 23 78 */	mr r24, r4
+/* 803D7A80 003D38C0  7C B9 2B 78 */	mr r25, r5
+/* 803D7A84 003D38C4  7D 1A 43 78 */	mr r26, r8
+/* 803D7A88 003D38C8  7D 3B 4B 78 */	mr r27, r9
+/* 803D7A8C 003D38CC  7D 5C 53 78 */	mr r28, r10
+/* 803D7A90 003D38D0  83 A1 00 78 */	lwz r29, 0x78(r1)
+/* 803D7A94 003D38D4  83 C1 00 7C */	lwz r30, 0x7c(r1)
+/* 803D7A98 003D38D8  83 E1 00 80 */	lwz r31, 0x80(r1)
+/* 803D7A9C 003D38DC  90 C3 00 00 */	stw r6, 0(r3)
+/* 803D7AA0 003D38E0  38 81 00 04 */	addi r4, r1, 4
+/* 803D7AA4 003D38E4  38 60 00 00 */	li r3, 0
+/* 803D7AA8 003D38E8  38 00 00 03 */	li r0, 3
+/* 803D7AAC 003D38EC  7C 09 03 A6 */	mtctr r0
+lbl_803D7AB0:
+/* 803D7AB0 003D38F0  90 64 00 04 */	stw r3, 4(r4)
+/* 803D7AB4 003D38F4  94 64 00 08 */	stwu r3, 8(r4)
+/* 803D7AB8 003D38F8  42 00 FF F8 */	bdnz lbl_803D7AB0
+/* 803D7ABC 003D38FC  38 61 00 08 */	addi r3, r1, 8
+/* 803D7AC0 003D3900  7C E4 3B 78 */	mr r4, r7
+/* 803D7AC4 003D3904  38 A0 00 18 */	li r5, 0x18
+/* 803D7AC8 003D3908  4B DC 5E F5 */	bl Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
+/* 803D7ACC 003D390C  38 B7 00 14 */	addi r5, r23, 0x14
+/* 803D7AD0 003D3910  38 81 00 04 */	addi r4, r1, 4
+/* 803D7AD4 003D3914  38 00 00 03 */	li r0, 3
+/* 803D7AD8 003D3918  7C 09 03 A6 */	mtctr r0
+lbl_803D7ADC:
+/* 803D7ADC 003D391C  80 64 00 04 */	lwz r3, 4(r4)
+/* 803D7AE0 003D3920  84 04 00 08 */	lwzu r0, 8(r4)
+/* 803D7AE4 003D3924  90 65 00 04 */	stw r3, 4(r5)
+/* 803D7AE8 003D3928  94 05 00 08 */	stwu r0, 8(r5)
+/* 803D7AEC 003D392C  42 00 FF F0 */	bdnz lbl_803D7ADC
+/* 803D7AF0 003D3930  4B DB C1 D9 */	bl DefaultEntryName__Q23g3d15ResModelContextFv
+/* 803D7AF4 003D3934  7C 64 1B 78 */	mr r4, r3
+/* 803D7AF8 003D3938  38 A1 00 1C */	addi r5, r1, 0x1c
+/* 803D7AFC 003D393C  38 60 00 00 */	li r3, 0
+/* 803D7B00 003D3940  38 00 00 05 */	li r0, 5
+/* 803D7B04 003D3944  7C 09 03 A6 */	mtctr r0
+lbl_803D7B08:
+/* 803D7B08 003D3948  90 65 00 04 */	stw r3, 4(r5)
+/* 803D7B0C 003D394C  94 65 00 08 */	stwu r3, 8(r5)
+/* 803D7B10 003D3950  42 00 FF F8 */	bdnz lbl_803D7B08
+/* 803D7B14 003D3954  38 61 00 20 */	addi r3, r1, 0x20
+/* 803D7B18 003D3958  38 A0 00 28 */	li r5, 0x28
+/* 803D7B1C 003D395C  4B DC 5E A1 */	bl Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
+/* 803D7B20 003D3960  38 B7 00 2C */	addi r5, r23, 0x2c
+/* 803D7B24 003D3964  38 81 00 1C */	addi r4, r1, 0x1c
+/* 803D7B28 003D3968  38 00 00 05 */	li r0, 5
+/* 803D7B2C 003D396C  7C 09 03 A6 */	mtctr r0
+lbl_803D7B30:
+/* 803D7B30 003D3970  80 64 00 04 */	lwz r3, 4(r4)
+/* 803D7B34 003D3974  84 04 00 08 */	lwzu r0, 8(r4)
+/* 803D7B38 003D3978  90 65 00 04 */	stw r3, 4(r5)
+/* 803D7B3C 003D397C  94 05 00 08 */	stwu r0, 8(r5)
+/* 803D7B40 003D3980  42 00 FF F0 */	bdnz lbl_803D7B30
+/* 803D7B44 003D3984  38 00 08 00 */	li r0, 0x800
+/* 803D7B48 003D3988  90 17 00 5C */	stw r0, 0x5c(r23)
+/* 803D7B4C 003D398C  93 57 00 68 */	stw r26, 0x68(r23)
+/* 803D7B50 003D3990  93 77 00 6C */	stw r27, 0x6c(r23)
+/* 803D7B54 003D3994  38 00 00 01 */	li r0, 1
+/* 803D7B58 003D3998  90 18 00 00 */	stw r0, 0(r24)
+/* 803D7B5C 003D399C  93 98 00 04 */	stw r28, 4(r24)
+/* 803D7B60 003D39A0  93 B8 00 08 */	stw r29, 8(r24)
+/* 803D7B64 003D39A4  93 17 00 70 */	stw r24, 0x70(r23)
+/* 803D7B68 003D39A8  3C 60 80 49 */	lis r3, $$250293@ha
+/* 803D7B6C 003D39AC  38 03 37 D8 */	addi r0, r3, $$250293@l
+/* 803D7B70 003D39B0  90 19 00 00 */	stw r0, 0(r25)
+/* 803D7B74 003D39B4  93 D9 00 04 */	stw r30, 4(r25)
+/* 803D7B78 003D39B8  93 F9 00 08 */	stw r31, 8(r25)
+/* 803D7B7C 003D39BC  93 37 00 74 */	stw r25, 0x74(r23)
+/* 803D7B80 003D39C0  39 61 00 70 */	addi r11, r1, 0x70
+/* 803D7B84 003D39C4  4B C2 F7 F5 */	bl func_80007378
+/* 803D7B88 003D39C8  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 803D7B8C 003D39CC  7C 08 03 A6 */	mtlr r0
+/* 803D7B90 003D39D0  38 21 00 70 */	addi r1, r1, 0x70
+/* 803D7B94 003D39D4  4E 80 00 20 */	blr 
+
+.section .data4, "wa"  # 0x80406560 - 0x80421040
+.global T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2
+T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2:
+	.incbin "baserom.dol", 0x41C398, 0x28
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$250228
+$$250228:
+	.incbin "baserom.dol", 0x46E758, 0x10
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$250281
+$$250281:
+	.incbin "baserom.dol", 0x48DFD8, 0x10
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$250293
+$$250293:
+	.incbin "baserom.dol", 0x48F8D8, 0x10
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil
+SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil:
+	.incbin "baserom.dol", 0x498150, 0x4
+.global $$250143
+$$250143:
+	.incbin "baserom.dol", 0x498154, 0x8
+.global $$2LOCAL$$2Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry$$2NODE_NAMES
+$$2LOCAL$$2Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry$$2NODE_NAMES:
+	.incbin "baserom.dol", 0x49815C, 0x4

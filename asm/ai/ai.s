@@ -1,0 +1,468 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global AIRegisterDMACallback
+AIRegisterDMACallback:
+/* 80042860 0003E6A0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80042864 0003E6A4  7C 08 02 A6 */	mflr r0
+/* 80042868 0003E6A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8004286C 0003E6AC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80042870 0003E6B0  93 C1 00 08 */	stw r30, 8(r1)
+/* 80042874 0003E6B4  7C 7E 1B 78 */	mr r30, r3
+/* 80042878 0003E6B8  83 ED E7 58 */	lwz r31, __AID_Callback-_SDA_BASE_(r13)
+/* 8004287C 0003E6BC  4B FD EF A5 */	bl OSDisableInterrupts
+/* 80042880 0003E6C0  93 CD E7 58 */	stw r30, __AID_Callback-_SDA_BASE_(r13)
+/* 80042884 0003E6C4  4B FD EF DD */	bl OSRestoreInterrupts
+/* 80042888 0003E6C8  7F E3 FB 78 */	mr r3, r31
+/* 8004288C 0003E6CC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80042890 0003E6D0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80042894 0003E6D4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80042898 0003E6D8  7C 08 03 A6 */	mtlr r0
+/* 8004289C 0003E6DC  38 21 00 10 */	addi r1, r1, 0x10
+/* 800428A0 0003E6E0  4E 80 00 20 */	blr 
+/* 800428A4 0003E6E4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 800428A8 0003E6E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 800428AC 0003E6EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global AIInitDMA
+AIInitDMA:
+/* 800428B0 0003E6F0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800428B4 0003E6F4  7C 08 02 A6 */	mflr r0
+/* 800428B8 0003E6F8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 800428BC 0003E6FC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 800428C0 0003E700  7C 9F 23 78 */	mr r31, r4
+/* 800428C4 0003E704  93 C1 00 08 */	stw r30, 8(r1)
+/* 800428C8 0003E708  7C 7E 1B 78 */	mr r30, r3
+/* 800428CC 0003E70C  4B FD EF 55 */	bl OSDisableInterrupts
+/* 800428D0 0003E710  3C E0 CC 00 */	lis r7, 0xCC005030@ha
+/* 800428D4 0003E714  57 C5 84 3E */	srwi r5, r30, 0x10
+/* 800428D8 0003E718  A0 C7 50 30 */	lhz r6, 0xCC005030@l(r7)
+/* 800428DC 0003E71C  57 C4 04 3E */	clrlwi r4, r30, 0x10
+/* 800428E0 0003E720  57 E0 DC 3E */	rlwinm r0, r31, 0x1b, 0x10, 0x1f
+/* 800428E4 0003E724  54 C6 00 24 */	rlwinm r6, r6, 0, 0, 0x12
+/* 800428E8 0003E728  7C C5 2B 78 */	or r5, r6, r5
+/* 800428EC 0003E72C  B0 A7 50 30 */	sth r5, 0x5030(r7)
+/* 800428F0 0003E730  A0 A7 50 32 */	lhz r5, 0x5032(r7)
+/* 800428F4 0003E734  54 A5 06 DE */	rlwinm r5, r5, 0, 0x1b, 0xf
+/* 800428F8 0003E738  7C A4 23 78 */	or r4, r5, r4
+/* 800428FC 0003E73C  B0 87 50 32 */	sth r4, 0x5032(r7)
+/* 80042900 0003E740  A0 87 50 36 */	lhz r4, 0x5036(r7)
+/* 80042904 0003E744  54 84 00 20 */	rlwinm r4, r4, 0, 0, 0x10
+/* 80042908 0003E748  7C 80 03 78 */	or r0, r4, r0
+/* 8004290C 0003E74C  B0 07 50 36 */	sth r0, 0x5036(r7)
+/* 80042910 0003E750  4B FD EF 51 */	bl OSRestoreInterrupts
+/* 80042914 0003E754  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80042918 0003E758  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8004291C 0003E75C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80042920 0003E760  7C 08 03 A6 */	mtlr r0
+/* 80042924 0003E764  38 21 00 10 */	addi r1, r1, 0x10
+/* 80042928 0003E768  4E 80 00 20 */	blr 
+/* 8004292C 0003E76C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global AIStartDMA
+AIStartDMA:
+/* 80042930 0003E770  3C 60 CC 00 */	lis r3, 0xCC005036@ha
+/* 80042934 0003E774  A0 03 50 36 */	lhz r0, 0xCC005036@l(r3)
+/* 80042938 0003E778  60 00 80 00 */	ori r0, r0, 0x8000
+/* 8004293C 0003E77C  B0 03 50 36 */	sth r0, 0x5036(r3)
+/* 80042940 0003E780  4E 80 00 20 */	blr 
+/* 80042944 0003E784  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80042948 0003E788  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004294C 0003E78C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global AIGetDMABytesLeft
+AIGetDMABytesLeft:
+/* 80042950 0003E790  3C 60 CC 00 */	lis r3, 0xCC00503A@ha
+/* 80042954 0003E794  A0 03 50 3A */	lhz r0, 0xCC00503A@l(r3)
+/* 80042958 0003E798  54 03 2B 34 */	rlwinm r3, r0, 5, 0xc, 0x1a
+/* 8004295C 0003E79C  4E 80 00 20 */	blr 
+
+.global AIGetDMAStartAddr
+AIGetDMAStartAddr:
+/* 80042960 0003E7A0  3C 60 CC 00 */	lis r3, 0xCC005030@ha
+/* 80042964 0003E7A4  A0 83 50 30 */	lhz r4, 0xCC005030@l(r3)
+/* 80042968 0003E7A8  A0 03 50 32 */	lhz r0, 0x5032(r3)
+/* 8004296C 0003E7AC  54 03 04 34 */	rlwinm r3, r0, 0, 0x10, 0x1a
+/* 80042970 0003E7B0  50 83 80 DE */	rlwimi r3, r4, 0x10, 3, 0xf
+/* 80042974 0003E7B4  4E 80 00 20 */	blr 
+/* 80042978 0003E7B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004297C 0003E7BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global AIGetDMALength
+AIGetDMALength:
+/* 80042980 0003E7C0  3C 60 CC 00 */	lis r3, 0xCC005036@ha
+/* 80042984 0003E7C4  A0 03 50 36 */	lhz r0, 0xCC005036@l(r3)
+/* 80042988 0003E7C8  54 03 2B 34 */	rlwinm r3, r0, 5, 0xc, 0x1a
+/* 8004298C 0003E7CC  4E 80 00 20 */	blr 
+
+.global AICheckInit
+AICheckInit:
+/* 80042990 0003E7D0  80 6D E7 20 */	lwz r3, __AI_init_flag-_SDA_BASE_(r13)
+/* 80042994 0003E7D4  4E 80 00 20 */	blr 
+/* 80042998 0003E7D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8004299C 0003E7DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global AIInit
+AIInit:
+/* 800429A0 0003E7E0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 800429A4 0003E7E4  7C 08 02 A6 */	mflr r0
+/* 800429A8 0003E7E8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 800429AC 0003E7EC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 800429B0 0003E7F0  7C 7F 1B 78 */	mr r31, r3
+/* 800429B4 0003E7F4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 800429B8 0003E7F8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 800429BC 0003E7FC  80 0D E7 20 */	lwz r0, __AI_init_flag-_SDA_BASE_(r13)
+/* 800429C0 0003E800  2C 00 00 01 */	cmpwi r0, 1
+/* 800429C4 0003E804  41 82 01 40 */	beq lbl_80042B04
+/* 800429C8 0003E808  80 6D 81 F0 */	lwz r3, __AIVersion-_SDA_BASE_(r13)
+/* 800429CC 0003E80C  4B FD 8D 15 */	bl OSRegisterVersion
+/* 800429D0 0003E810  3C 60 80 00 */	lis r3, 0x800000F8@ha
+/* 800429D4 0003E814  3C 80 43 1C */	lis r4, 0x431BDE83@ha
+/* 800429D8 0003E818  80 03 00 F8 */	lwz r0, 0x800000F8@l(r3)
+/* 800429DC 0003E81C  38 E0 00 00 */	li r7, 0
+/* 800429E0 0003E820  3C A0 10 62 */	lis r5, 0x10624DD3@ha
+/* 800429E4 0003E824  38 84 DE 83 */	addi r4, r4, 0x431BDE83@l
+/* 800429E8 0003E828  54 06 F0 BE */	srwi r6, r0, 2
+/* 800429EC 0003E82C  3C 60 00 01 */	lis r3, 0x0000A428@ha
+/* 800429F0 0003E830  7C C4 30 16 */	mulhwu r6, r4, r6
+/* 800429F4 0003E834  39 25 4D D3 */	addi r9, r5, 0x10624DD3@l
+/* 800429F8 0003E838  38 03 A4 28 */	addi r0, r3, 0x0000A428@l
+/* 800429FC 0003E83C  90 ED E7 48 */	stw r7, bound_32KHz-_SDA_BASE_(r13)
+/* 80042A00 0003E840  38 83 A4 10 */	addi r4, r3, -23536
+/* 80042A04 0003E844  38 63 F6 18 */	addi r3, r3, -2536
+/* 80042A08 0003E848  54 CA 8B FE */	srwi r10, r6, 0xf
+/* 80042A0C 0003E84C  90 ED E7 40 */	stw r7, bound_48KHz-_SDA_BASE_(r13)
+/* 80042A10 0003E850  7C CA 01 D6 */	mullw r6, r10, r0
+/* 80042A14 0003E854  3F C0 CD 00 */	lis r30, 0xCD006C00@ha
+/* 80042A18 0003E858  90 ED E7 38 */	stw r7, min_wait-_SDA_BASE_(r13)
+/* 80042A1C 0003E85C  38 00 FF EA */	li r0, -22
+/* 80042A20 0003E860  90 ED E7 30 */	stw r7, max_wait-_SDA_BASE_(r13)
+/* 80042A24 0003E864  7C AA 21 D6 */	mullw r5, r10, r4
+/* 80042A28 0003E868  90 ED E7 28 */	stw r7, buffer-_SDA_BASE_(r13)
+/* 80042A2C 0003E86C  7C 8A 19 D6 */	mullw r4, r10, r3
+/* 80042A30 0003E870  1D 0A 7B 24 */	mulli r8, r10, 0x7b24
+/* 80042A34 0003E874  1C 6A 0B B8 */	mulli r3, r10, 0xbb8
+/* 80042A38 0003E878  7D 09 40 16 */	mulhwu r8, r9, r8
+/* 80042A3C 0003E87C  7C C9 30 16 */	mulhwu r6, r9, r6
+/* 80042A40 0003E880  55 08 BA 7E */	srwi r8, r8, 9
+/* 80042A44 0003E884  91 0D E7 4C */	stw r8, lbl_8055CB6C-_SDA_BASE_(r13)
+/* 80042A48 0003E888  7C A9 28 16 */	mulhwu r5, r9, r5
+/* 80042A4C 0003E88C  54 C6 BA 7E */	srwi r6, r6, 9
+/* 80042A50 0003E890  90 CD E7 44 */	stw r6, lbl_8055CB64-_SDA_BASE_(r13)
+/* 80042A54 0003E894  7C 89 20 16 */	mulhwu r4, r9, r4
+/* 80042A58 0003E898  54 A5 BA 7E */	srwi r5, r5, 9
+/* 80042A5C 0003E89C  90 AD E7 3C */	stw r5, lbl_8055CB5C-_SDA_BASE_(r13)
+/* 80042A60 0003E8A0  7C 69 18 16 */	mulhwu r3, r9, r3
+/* 80042A64 0003E8A4  54 84 BA 7E */	srwi r4, r4, 9
+/* 80042A68 0003E8A8  90 8D E7 34 */	stw r4, lbl_8055CB54-_SDA_BASE_(r13)
+/* 80042A6C 0003E8AC  54 63 BA 7E */	srwi r3, r3, 9
+/* 80042A70 0003E8B0  90 6D E7 2C */	stw r3, lbl_8055CB4C-_SDA_BASE_(r13)
+/* 80042A74 0003E8B4  80 7E 6C 00 */	lwz r3, 0xCD006C00@l(r30)
+/* 80042A78 0003E8B8  7C 60 00 38 */	and r0, r3, r0
+/* 80042A7C 0003E8BC  90 1E 6C 00 */	stw r0, 0x6c00(r30)
+/* 80042A80 0003E8C0  90 FE 6C 04 */	stw r7, 0x6c04(r30)
+/* 80042A84 0003E8C4  90 FE 6C 0C */	stw r7, 0x6c0c(r30)
+/* 80042A88 0003E8C8  80 1E 6C 00 */	lwz r0, 0x6c00(r30)
+/* 80042A8C 0003E8CC  54 00 06 F2 */	rlwinm r0, r0, 0, 0x1b, 0x19
+/* 80042A90 0003E8D0  60 00 00 20 */	ori r0, r0, 0x20
+/* 80042A94 0003E8D4  90 1E 6C 00 */	stw r0, 0x6c00(r30)
+/* 80042A98 0003E8D8  80 1E 6C 00 */	lwz r0, 0x6c00(r30)
+/* 80042A9C 0003E8DC  54 00 D7 FE */	rlwinm r0, r0, 0x1a, 0x1f, 0x1f
+/* 80042AA0 0003E8E0  68 00 00 01 */	xori r0, r0, 1
+/* 80042AA4 0003E8E4  2C 00 00 00 */	cmpwi r0, 0
+/* 80042AA8 0003E8E8  41 82 00 30 */	beq lbl_80042AD8
+/* 80042AAC 0003E8EC  80 1E 6C 00 */	lwz r0, 0x6c00(r30)
+/* 80042AB0 0003E8F0  54 00 06 B0 */	rlwinm r0, r0, 0, 0x1a, 0x18
+/* 80042AB4 0003E8F4  90 1E 6C 00 */	stw r0, 0x6c00(r30)
+/* 80042AB8 0003E8F8  4B FD ED 69 */	bl OSDisableInterrupts
+/* 80042ABC 0003E8FC  7C 7D 1B 78 */	mr r29, r3
+/* 80042AC0 0003E900  48 00 01 81 */	bl __AI_SRC_INIT
+/* 80042AC4 0003E904  80 1E 6C 00 */	lwz r0, 0x6c00(r30)
+/* 80042AC8 0003E908  7F A3 EB 78 */	mr r3, r29
+/* 80042ACC 0003E90C  60 00 00 40 */	ori r0, r0, 0x40
+/* 80042AD0 0003E910  90 1E 6C 00 */	stw r0, 0x6c00(r30)
+/* 80042AD4 0003E914  4B FD ED 8D */	bl OSRestoreInterrupts
+lbl_80042AD8:
+/* 80042AD8 0003E918  38 00 00 00 */	li r0, 0
+/* 80042ADC 0003E91C  3C 80 80 04 */	lis r4, __AIDHandler@ha
+/* 80042AE0 0003E920  90 0D E7 58 */	stw r0, __AID_Callback-_SDA_BASE_(r13)
+/* 80042AE4 0003E924  38 84 2B 20 */	addi r4, r4, __AIDHandler@l
+/* 80042AE8 0003E928  38 60 00 05 */	li r3, 5
+/* 80042AEC 0003E92C  93 ED E7 54 */	stw r31, __CallbackStack-_SDA_BASE_(r13)
+/* 80042AF0 0003E930  4B FD ED A1 */	bl __OSSetInterruptHandler
+/* 80042AF4 0003E934  3C 60 04 00 */	lis r3, 0x400
+/* 80042AF8 0003E938  4B FD F1 79 */	bl __OSUnmaskInterrupts
+/* 80042AFC 0003E93C  38 00 00 01 */	li r0, 1
+/* 80042B00 0003E940  90 0D E7 20 */	stw r0, __AI_init_flag-_SDA_BASE_(r13)
+lbl_80042B04:
+/* 80042B04 0003E944  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80042B08 0003E948  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80042B0C 0003E94C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80042B10 0003E950  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80042B14 0003E954  7C 08 03 A6 */	mtlr r0
+/* 80042B18 0003E958  38 21 00 20 */	addi r1, r1, 0x20
+/* 80042B1C 0003E95C  4E 80 00 20 */	blr 
+
+.global __AIDHandler
+__AIDHandler:
+/* 80042B20 0003E960  94 21 FD 20 */	stwu r1, -0x2e0(r1)
+/* 80042B24 0003E964  7C 08 02 A6 */	mflr r0
+/* 80042B28 0003E968  3C C0 CC 00 */	lis r6, 0xCC00500A@ha
+/* 80042B2C 0003E96C  90 01 02 E4 */	stw r0, 0x2e4(r1)
+/* 80042B30 0003E970  38 00 FF 5F */	li r0, -161
+/* 80042B34 0003E974  38 61 00 08 */	addi r3, r1, 8
+/* 80042B38 0003E978  93 E1 02 DC */	stw r31, 0x2dc(r1)
+/* 80042B3C 0003E97C  7C 9F 23 78 */	mr r31, r4
+/* 80042B40 0003E980  A0 A6 50 0A */	lhz r5, 0xCC00500A@l(r6)
+/* 80042B44 0003E984  7C A0 00 38 */	and r0, r5, r0
+/* 80042B48 0003E988  60 00 00 08 */	ori r0, r0, 8
+/* 80042B4C 0003E98C  B0 06 50 0A */	sth r0, 0x500a(r6)
+/* 80042B50 0003E990  4B FD A8 F1 */	bl OSClearContext
+/* 80042B54 0003E994  38 61 00 08 */	addi r3, r1, 8
+/* 80042B58 0003E998  4B FD A6 A9 */	bl OSSetCurrentContext
+/* 80042B5C 0003E99C  80 6D E7 58 */	lwz r3, __AID_Callback-_SDA_BASE_(r13)
+/* 80042B60 0003E9A0  2C 03 00 00 */	cmpwi r3, 0
+/* 80042B64 0003E9A4  41 82 00 40 */	beq lbl_80042BA4
+/* 80042B68 0003E9A8  80 0D E7 24 */	lwz r0, __AID_Active-_SDA_BASE_(r13)
+/* 80042B6C 0003E9AC  2C 00 00 00 */	cmpwi r0, 0
+/* 80042B70 0003E9B0  40 82 00 34 */	bne lbl_80042BA4
+/* 80042B74 0003E9B4  80 0D E7 54 */	lwz r0, __CallbackStack-_SDA_BASE_(r13)
+/* 80042B78 0003E9B8  38 80 00 01 */	li r4, 1
+/* 80042B7C 0003E9BC  90 8D E7 24 */	stw r4, __AID_Active-_SDA_BASE_(r13)
+/* 80042B80 0003E9C0  2C 00 00 00 */	cmpwi r0, 0
+/* 80042B84 0003E9C4  41 82 00 0C */	beq lbl_80042B90
+/* 80042B88 0003E9C8  48 00 00 49 */	bl __AICallbackStackSwitch
+/* 80042B8C 0003E9CC  48 00 00 10 */	b lbl_80042B9C
+lbl_80042B90:
+/* 80042B90 0003E9D0  7C 6C 1B 78 */	mr r12, r3
+/* 80042B94 0003E9D4  7D 89 03 A6 */	mtctr r12
+/* 80042B98 0003E9D8  4E 80 04 21 */	bctrl 
+lbl_80042B9C:
+/* 80042B9C 0003E9DC  38 00 00 00 */	li r0, 0
+/* 80042BA0 0003E9E0  90 0D E7 24 */	stw r0, __AID_Active-_SDA_BASE_(r13)
+lbl_80042BA4:
+/* 80042BA4 0003E9E4  38 61 00 08 */	addi r3, r1, 8
+/* 80042BA8 0003E9E8  4B FD A8 99 */	bl OSClearContext
+/* 80042BAC 0003E9EC  7F E3 FB 78 */	mr r3, r31
+/* 80042BB0 0003E9F0  4B FD A6 51 */	bl OSSetCurrentContext
+/* 80042BB4 0003E9F4  80 01 02 E4 */	lwz r0, 0x2e4(r1)
+/* 80042BB8 0003E9F8  83 E1 02 DC */	lwz r31, 0x2dc(r1)
+/* 80042BBC 0003E9FC  7C 08 03 A6 */	mtlr r0
+/* 80042BC0 0003EA00  38 21 02 E0 */	addi r1, r1, 0x2e0
+/* 80042BC4 0003EA04  4E 80 00 20 */	blr 
+/* 80042BC8 0003EA08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80042BCC 0003EA0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global __AICallbackStackSwitch
+__AICallbackStackSwitch:
+/* 80042BD0 0003EA10  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80042BD4 0003EA14  7C 08 02 A6 */	mflr r0
+/* 80042BD8 0003EA18  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80042BDC 0003EA1C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80042BE0 0003EA20  7C 3F 0B 78 */	mr r31, r1
+/* 80042BE4 0003EA24  7C 7F 1B 78 */	mr r31, r3
+/* 80042BE8 0003EA28  3C A0 80 56 */	lis r5, __OldStack@ha
+/* 80042BEC 0003EA2C  38 A5 CB 70 */	addi r5, r5, __OldStack@l
+/* 80042BF0 0003EA30  90 25 00 00 */	stw r1, 0(r5)
+/* 80042BF4 0003EA34  3C A0 80 56 */	lis r5, __CallbackStack@ha
+/* 80042BF8 0003EA38  38 A5 CB 74 */	addi r5, r5, __CallbackStack@l
+/* 80042BFC 0003EA3C  80 25 00 00 */	lwz r1, 0(r5)
+/* 80042C00 0003EA40  38 21 FF F8 */	addi r1, r1, -8
+/* 80042C04 0003EA44  7F E8 03 A6 */	mtlr r31
+/* 80042C08 0003EA48  4E 80 00 21 */	blrl 
+/* 80042C0C 0003EA4C  3C A0 80 56 */	lis r5, __OldStack@ha
+/* 80042C10 0003EA50  38 A5 CB 70 */	addi r5, r5, __OldStack@l
+/* 80042C14 0003EA54  80 25 00 00 */	lwz r1, 0(r5)
+/* 80042C18 0003EA58  7C 2A 0B 78 */	mr r10, r1
+/* 80042C1C 0003EA5C  83 EA 00 0C */	lwz r31, 0xc(r10)
+/* 80042C20 0003EA60  81 41 00 00 */	lwz r10, 0(r1)
+/* 80042C24 0003EA64  80 0A 00 04 */	lwz r0, 4(r10)
+/* 80042C28 0003EA68  7D 41 53 78 */	mr r1, r10
+/* 80042C2C 0003EA6C  7C 08 03 A6 */	mtlr r0
+/* 80042C30 0003EA70  4E 80 00 20 */	blr 
+/* 80042C34 0003EA74  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80042C38 0003EA78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80042C3C 0003EA7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global __AI_SRC_INIT
+__AI_SRC_INIT:
+/* 80042C40 0003EA80  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80042C44 0003EA84  7C 08 02 A6 */	mflr r0
+/* 80042C48 0003EA88  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80042C4C 0003EA8C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80042C50 0003EA90  4B FC 46 ED */	bl func_8000733C
+/* 80042C54 0003EA94  38 80 00 00 */	li r4, 0
+/* 80042C58 0003EA98  38 60 00 00 */	li r3, 0
+/* 80042C5C 0003EA9C  38 00 00 00 */	li r0, 0
+/* 80042C60 0003EAA0  3B A0 00 00 */	li r29, 0
+/* 80042C64 0003EAA4  3B C0 00 00 */	li r30, 0
+/* 80042C68 0003EAA8  3F E0 CD 00 */	lis r31, 0xcd00
+/* 80042C6C 0003EAAC  48 00 01 58 */	b lbl_80042DC4
+lbl_80042C70:
+/* 80042C70 0003EAB0  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042C74 0003EAB4  54 00 06 F2 */	rlwinm r0, r0, 0, 0x1b, 0x19
+/* 80042C78 0003EAB8  60 00 00 20 */	ori r0, r0, 0x20
+/* 80042C7C 0003EABC  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042C80 0003EAC0  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042C84 0003EAC4  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
+/* 80042C88 0003EAC8  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042C8C 0003EACC  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042C90 0003EAD0  54 00 00 3C */	rlwinm r0, r0, 0, 0, 0x1e
+/* 80042C94 0003EAD4  60 00 00 01 */	ori r0, r0, 1
+/* 80042C98 0003EAD8  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042C9C 0003EADC  80 1F 6C 08 */	lwz r0, 0x6c08(r31)
+/* 80042CA0 0003EAE0  54 03 00 7E */	clrlwi r3, r0, 1
+/* 80042CA4 0003EAE4  60 00 00 00 */	nop 
+lbl_80042CA8:
+/* 80042CA8 0003EAE8  80 1F 6C 08 */	lwz r0, 0x6c08(r31)
+/* 80042CAC 0003EAEC  54 00 00 7E */	clrlwi r0, r0, 1
+/* 80042CB0 0003EAF0  7C 03 00 40 */	cmplw r3, r0
+/* 80042CB4 0003EAF4  41 82 FF F4 */	beq lbl_80042CA8
+/* 80042CB8 0003EAF8  4B FE 2E 89 */	bl OSGetTime
+/* 80042CBC 0003EAFC  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042CC0 0003EB00  7C 9B 23 78 */	mr r27, r4
+/* 80042CC4 0003EB04  7C 7C 1B 78 */	mr r28, r3
+/* 80042CC8 0003EB08  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
+/* 80042CCC 0003EB0C  60 00 00 02 */	ori r0, r0, 2
+/* 80042CD0 0003EB10  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042CD4 0003EB14  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042CD8 0003EB18  54 00 00 3C */	rlwinm r0, r0, 0, 0, 0x1e
+/* 80042CDC 0003EB1C  60 00 00 01 */	ori r0, r0, 1
+/* 80042CE0 0003EB20  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042CE4 0003EB24  80 1F 6C 08 */	lwz r0, 0x6c08(r31)
+/* 80042CE8 0003EB28  54 03 00 7E */	clrlwi r3, r0, 1
+/* 80042CEC 0003EB2C  60 00 00 00 */	nop 
+lbl_80042CF0:
+/* 80042CF0 0003EB30  80 1F 6C 08 */	lwz r0, 0x6c08(r31)
+/* 80042CF4 0003EB34  54 00 00 7E */	clrlwi r0, r0, 1
+/* 80042CF8 0003EB38  7C 03 00 40 */	cmplw r3, r0
+/* 80042CFC 0003EB3C  41 82 FF F4 */	beq lbl_80042CF0
+/* 80042D00 0003EB40  4B FE 2E 41 */	bl OSGetTime
+/* 80042D04 0003EB44  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042D08 0003EB48  7D 1B 20 10 */	subfc r8, r27, r4
+/* 80042D0C 0003EB4C  7C BC 19 10 */	subfe r5, r28, r3
+/* 80042D10 0003EB50  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
+/* 80042D14 0003EB54  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042D18 0003EB58  6C A7 80 00 */	xoris r7, r5, 0x8000
+/* 80042D1C 0003EB5C  80 1F 6C 00 */	lwz r0, 0x6c00(r31)
+/* 80042D20 0003EB60  54 00 00 3C */	rlwinm r0, r0, 0, 0, 0x1e
+/* 80042D24 0003EB64  90 1F 6C 00 */	stw r0, 0x6c00(r31)
+/* 80042D28 0003EB68  81 4D E7 2C */	lwz r10, lbl_8055CB4C-_SDA_BASE_(r13)
+/* 80042D2C 0003EB6C  81 8D E7 4C */	lwz r12, lbl_8055CB6C-_SDA_BASE_(r13)
+/* 80042D30 0003EB70  81 2D E7 28 */	lwz r9, buffer-_SDA_BASE_(r13)
+/* 80042D34 0003EB74  81 6D E7 48 */	lwz r11, bound_32KHz-_SDA_BASE_(r13)
+/* 80042D38 0003EB78  7C CA 60 10 */	subfc r6, r10, r12
+/* 80042D3C 0003EB7C  7C 09 59 10 */	subfe r0, r9, r11
+/* 80042D40 0003EB80  6C 05 80 00 */	xoris r5, r0, 0x8000
+/* 80042D44 0003EB84  7C 06 40 10 */	subfc r0, r6, r8
+/* 80042D48 0003EB88  7C A5 39 10 */	subfe r5, r5, r7
+/* 80042D4C 0003EB8C  7C A7 39 10 */	subfe r5, r7, r7
+/* 80042D50 0003EB90  7C A5 00 D1 */	neg. r5, r5
+/* 80042D54 0003EB94  41 82 00 14 */	beq lbl_80042D68
+/* 80042D58 0003EB98  83 CD E7 38 */	lwz r30, min_wait-_SDA_BASE_(r13)
+/* 80042D5C 0003EB9C  38 00 00 01 */	li r0, 1
+/* 80042D60 0003EBA0  83 AD E7 3C */	lwz r29, lbl_8055CB5C-_SDA_BASE_(r13)
+/* 80042D64 0003EBA4  48 00 00 60 */	b lbl_80042DC4
+lbl_80042D68:
+/* 80042D68 0003EBA8  7C CC 50 14 */	addc r6, r12, r10
+/* 80042D6C 0003EBAC  7C 0B 49 14 */	adde r0, r11, r9
+/* 80042D70 0003EBB0  6C 05 80 00 */	xoris r5, r0, 0x8000
+/* 80042D74 0003EBB4  7C 06 40 10 */	subfc r0, r6, r8
+/* 80042D78 0003EBB8  7C A5 39 10 */	subfe r5, r5, r7
+/* 80042D7C 0003EBBC  7C A7 39 10 */	subfe r5, r7, r7
+/* 80042D80 0003EBC0  7C A5 00 D1 */	neg. r5, r5
+/* 80042D84 0003EBC4  40 82 00 3C */	bne lbl_80042DC0
+/* 80042D88 0003EBC8  80 AD E7 44 */	lwz r5, lbl_8055CB64-_SDA_BASE_(r13)
+/* 80042D8C 0003EBCC  80 0D E7 40 */	lwz r0, bound_48KHz-_SDA_BASE_(r13)
+/* 80042D90 0003EBD0  7C CA 28 10 */	subfc r6, r10, r5
+/* 80042D94 0003EBD4  7C 09 01 10 */	subfe r0, r9, r0
+/* 80042D98 0003EBD8  6C 05 80 00 */	xoris r5, r0, 0x8000
+/* 80042D9C 0003EBDC  7C 06 40 10 */	subfc r0, r6, r8
+/* 80042DA0 0003EBE0  7C A5 39 10 */	subfe r5, r5, r7
+/* 80042DA4 0003EBE4  7C A7 39 10 */	subfe r5, r7, r7
+/* 80042DA8 0003EBE8  7C A5 00 D1 */	neg. r5, r5
+/* 80042DAC 0003EBEC  41 82 00 14 */	beq lbl_80042DC0
+/* 80042DB0 0003EBF0  83 CD E7 30 */	lwz r30, max_wait-_SDA_BASE_(r13)
+/* 80042DB4 0003EBF4  38 00 00 01 */	li r0, 1
+/* 80042DB8 0003EBF8  83 AD E7 34 */	lwz r29, lbl_8055CB54-_SDA_BASE_(r13)
+/* 80042DBC 0003EBFC  48 00 00 08 */	b lbl_80042DC4
+lbl_80042DC0:
+/* 80042DC0 0003EC00  38 00 00 00 */	li r0, 0
+lbl_80042DC4:
+/* 80042DC4 0003EC04  2C 00 00 00 */	cmpwi r0, 0
+/* 80042DC8 0003EC08  41 82 FE A8 */	beq lbl_80042C70
+/* 80042DCC 0003EC0C  7F E4 E8 14 */	addc r31, r4, r29
+/* 80042DD0 0003EC10  7F A3 F1 14 */	adde r29, r3, r30
+lbl_80042DD4:
+/* 80042DD4 0003EC14  4B FE 2D 6D */	bl OSGetTime
+/* 80042DD8 0003EC18  6C 60 80 00 */	xoris r0, r3, 0x8000
+/* 80042DDC 0003EC1C  6F A5 80 00 */	xoris r5, r29, 0x8000
+/* 80042DE0 0003EC20  7C 7F 20 10 */	subfc r3, r31, r4
+/* 80042DE4 0003EC24  7C A5 01 10 */	subfe r5, r5, r0
+/* 80042DE8 0003EC28  7C A0 01 10 */	subfe r5, r0, r0
+/* 80042DEC 0003EC2C  7C A5 00 D1 */	neg. r5, r5
+/* 80042DF0 0003EC30  40 82 FF E4 */	bne lbl_80042DD4
+/* 80042DF4 0003EC34  39 61 00 20 */	addi r11, r1, 0x20
+/* 80042DF8 0003EC38  4B FC 45 91 */	bl func_80007388
+/* 80042DFC 0003EC3C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80042E00 0003EC40  7C 08 03 A6 */	mtlr r0
+/* 80042E04 0003EC44  38 21 00 20 */	addi r1, r1, 0x20
+/* 80042E08 0003EC48  4E 80 00 20 */	blr 
+/* 80042E0C 0003EC4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$21
+$$21:
+	.incbin "baserom.dol", 0x42F040, 0x48
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global __AIVersion
+__AIVersion:
+	.incbin "baserom.dol", 0x4929F0, 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global __AI_init_flag
+__AI_init_flag:
+	.skip 0x4
+.global __AID_Active
+__AID_Active:
+	.skip 0x4
+.global buffer
+buffer:
+	.skip 0x4
+.global lbl_8055CB4C
+lbl_8055CB4C:
+	.skip 0x4
+.global max_wait
+max_wait:
+	.skip 0x4
+.global lbl_8055CB54
+lbl_8055CB54:
+	.skip 0x4
+.global min_wait
+min_wait:
+	.skip 0x4
+.global lbl_8055CB5C
+lbl_8055CB5C:
+	.skip 0x4
+.global bound_48KHz
+bound_48KHz:
+	.skip 0x4
+.global lbl_8055CB64
+lbl_8055CB64:
+	.skip 0x4
+.global bound_32KHz
+bound_32KHz:
+	.skip 0x4
+.global lbl_8055CB6C
+lbl_8055CB6C:
+	.skip 0x4
+.global __OldStack
+__OldStack:
+	.skip 0x4
+.global __CallbackStack
+__CallbackStack:
+	.skip 0x4
+.global __AID_Callback
+__AID_Callback:
+	.skip 0x8

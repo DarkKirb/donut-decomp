@@ -1,0 +1,136 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item
+__ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item:
+/* 803C5060 003C0EA0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803C5064 003C0EA4  7C 08 02 A6 */	mflr r0
+/* 803C5068 003C0EA8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803C506C 003C0EAC  DB E1 00 20 */	stfd f31, 0x20(r1)
+/* 803C5070 003C0EB0  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
+/* 803C5074 003C0EB4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803C5078 003C0EB8  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803C507C 003C0EBC  7C 7E 1B 78 */	mr r30, r3
+/* 803C5080 003C0EC0  7C 9F 23 78 */	mr r31, r4
+/* 803C5084 003C0EC4  90 83 00 00 */	stw r4, 0(r3)
+/* 803C5088 003C0EC8  38 00 00 00 */	li r0, 0
+/* 803C508C 003C0ECC  90 03 00 04 */	stw r0, 4(r3)
+/* 803C5090 003C0ED0  7F E3 FB 78 */	mr r3, r31
+/* 803C5094 003C0ED4  4B FF DC 45 */	bl location__Q43scn4step4item4ItemFv
+/* 803C5098 003C0ED8  7C 64 1B 78 */	mr r4, r3
+/* 803C509C 003C0EDC  38 61 00 08 */	addi r3, r1, 8
+/* 803C50A0 003C0EE0  4B DB 75 29 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 803C50A4 003C0EE4  C3 E1 00 08 */	lfs f31, 8(r1)
+/* 803C50A8 003C0EE8  7F E3 FB 78 */	mr r3, r31
+/* 803C50AC 003C0EEC  4B CB 06 85 */	bl GKI_getfirst
+/* 803C50B0 003C0EF0  4B E5 BD 51 */	bl itemManager__Q33scn4step9ComponentFv
+/* 803C50B4 003C0EF4  FC 20 F8 90 */	fmr f1, f31
+/* 803C50B8 003C0EF8  4B FF EF 11 */	bl getRotGlobal__Q43scn4step4item7ManagerCFf
+/* 803C50BC 003C0EFC  D0 3E 00 08 */	stfs f1, 8(r30)
+/* 803C50C0 003C0F00  38 00 00 01 */	li r0, 1
+/* 803C50C4 003C0F04  98 1E 00 0C */	stb r0, 0xc(r30)
+/* 803C50C8 003C0F08  7F C3 F3 78 */	mr r3, r30
+/* 803C50CC 003C0F0C  38 00 00 28 */	li r0, 0x28
+/* 803C50D0 003C0F10  13 E1 00 0C */	psq_lx f31, (r1 + r0), 0, qr0
+/* 803C50D4 003C0F14  CB E1 00 20 */	lfd f31, 0x20(r1)
+/* 803C50D8 003C0F18  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803C50DC 003C0F1C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 803C50E0 003C0F20  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803C50E4 003C0F24  7C 08 03 A6 */	mtlr r0
+/* 803C50E8 003C0F28  38 21 00 30 */	addi r1, r1, 0x30
+/* 803C50EC 003C0F2C  4E 80 00 20 */	blr 
+
+.global update__Q43scn4step4item7RotAnimFv
+update__Q43scn4step4item7RotAnimFv:
+/* 803C50F0 003C0F30  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803C50F4 003C0F34  7C 08 02 A6 */	mflr r0
+/* 803C50F8 003C0F38  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803C50FC 003C0F3C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803C5100 003C0F40  7C 7F 1B 78 */	mr r31, r3
+/* 803C5104 003C0F44  80 63 00 00 */	lwz r3, 0(r3)
+/* 803C5108 003C0F48  4B FF DA 55 */	bl isRequireRotAnim__Q43scn4step4item4ItemCFv
+/* 803C510C 003C0F4C  2C 03 00 00 */	cmpwi r3, 0
+/* 803C5110 003C0F50  41 82 00 84 */	beq lbl_803C5194
+/* 803C5114 003C0F54  88 1F 00 0C */	lbz r0, 0xc(r31)
+/* 803C5118 003C0F58  2C 00 00 00 */	cmpwi r0, 0
+/* 803C511C 003C0F5C  40 82 00 08 */	bne lbl_803C5124
+/* 803C5120 003C0F60  48 00 00 74 */	b lbl_803C5194
+lbl_803C5124:
+/* 803C5124 003C0F64  7F E3 FB 78 */	mr r3, r31
+/* 803C5128 003C0F68  48 00 00 81 */	bl currentSpeed__Q43scn4step4item7RotAnimCFv
+/* 803C512C 003C0F6C  C0 1F 00 08 */	lfs f0, 8(r31)
+/* 803C5130 003C0F70  EC 00 08 2A */	fadds f0, f0, f1
+/* 803C5134 003C0F74  D0 1F 00 08 */	stfs f0, 8(r31)
+/* 803C5138 003C0F78  C0 42 DA B8 */	lfs f2, $$254904-_SDA2_BASE_(r2)
+/* 803C513C 003C0F7C  C0 02 DA BC */	lfs f0, $$254905-_SDA2_BASE_(r2)
+/* 803C5140 003C0F80  48 00 00 10 */	b lbl_803C5150
+lbl_803C5144:
+/* 803C5144 003C0F84  C0 3F 00 08 */	lfs f1, 8(r31)
+/* 803C5148 003C0F88  EC 21 10 2A */	fadds f1, f1, f2
+/* 803C514C 003C0F8C  D0 3F 00 08 */	stfs f1, 8(r31)
+lbl_803C5150:
+/* 803C5150 003C0F90  C0 3F 00 08 */	lfs f1, 8(r31)
+/* 803C5154 003C0F94  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803C5158 003C0F98  41 80 FF EC */	blt lbl_803C5144
+/* 803C515C 003C0F9C  C0 22 DA B8 */	lfs f1, $$254904-_SDA2_BASE_(r2)
+/* 803C5160 003C0FA0  48 00 00 10 */	b lbl_803C5170
+lbl_803C5164:
+/* 803C5164 003C0FA4  C0 1F 00 08 */	lfs f0, 8(r31)
+/* 803C5168 003C0FA8  EC 00 08 28 */	fsubs f0, f0, f1
+/* 803C516C 003C0FAC  D0 1F 00 08 */	stfs f0, 8(r31)
+lbl_803C5170:
+/* 803C5170 003C0FB0  C0 1F 00 08 */	lfs f0, 8(r31)
+/* 803C5174 003C0FB4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 803C5178 003C0FB8  4C 40 13 82 */	cror 2, 0, 2
+/* 803C517C 003C0FBC  41 82 FF E8 */	beq lbl_803C5164
+/* 803C5180 003C0FC0  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803C5184 003C0FC4  4B FF DB 65 */	bl model__Q43scn4step4item4ItemFv
+/* 803C5188 003C0FC8  4B EA 10 85 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
+/* 803C518C 003C0FCC  C0 3F 00 08 */	lfs f1, 8(r31)
+/* 803C5190 003C0FD0  4B EA C5 79 */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
+lbl_803C5194:
+/* 803C5194 003C0FD4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803C5198 003C0FD8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803C519C 003C0FDC  7C 08 03 A6 */	mtlr r0
+/* 803C51A0 003C0FE0  38 21 00 10 */	addi r1, r1, 0x10
+/* 803C51A4 003C0FE4  4E 80 00 20 */	blr 
+
+.global currentSpeed__Q43scn4step4item7RotAnimCFv
+currentSpeed__Q43scn4step4item7RotAnimCFv:
+/* 803C51A8 003C0FE8  80 03 00 04 */	lwz r0, 4(r3)
+/* 803C51AC 003C0FEC  2C 00 00 00 */	cmpwi r0, 0
+/* 803C51B0 003C0FF0  41 82 00 18 */	beq lbl_803C51C8
+/* 803C51B4 003C0FF4  2C 00 00 01 */	cmpwi r0, 1
+/* 803C51B8 003C0FF8  41 82 00 18 */	beq lbl_803C51D0
+/* 803C51BC 003C0FFC  2C 00 00 02 */	cmpwi r0, 2
+/* 803C51C0 003C1000  41 82 00 18 */	beq lbl_803C51D8
+/* 803C51C4 003C1004  48 00 00 1C */	b lbl_803C51E0
+lbl_803C51C8:
+/* 803C51C8 003C1008  C0 22 DA C0 */	lfs f1, $$254920-_SDA2_BASE_(r2)
+/* 803C51CC 003C100C  4E 80 00 20 */	blr 
+lbl_803C51D0:
+/* 803C51D0 003C1010  C0 22 DA C4 */	lfs f1, $$254921-_SDA2_BASE_(r2)
+/* 803C51D4 003C1014  4E 80 00 20 */	blr 
+lbl_803C51D8:
+/* 803C51D8 003C1018  C0 22 DA C8 */	lfs f1, $$254922-_SDA2_BASE_(r2)
+/* 803C51DC 003C101C  4E 80 00 20 */	blr 
+lbl_803C51E0:
+/* 803C51E0 003C1020  C0 22 DA BC */	lfs f1, $$254905-_SDA2_BASE_(r2)
+/* 803C51E4 003C1024  4E 80 00 20 */	blr 
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global $$254904
+$$254904:
+	.incbin "baserom.dol", 0x49E578, 0x4
+.global $$254905
+$$254905:
+	.incbin "baserom.dol", 0x49E57C, 0x4
+.global $$254920
+$$254920:
+	.incbin "baserom.dol", 0x49E580, 0x4
+.global $$254921
+$$254921:
+	.incbin "baserom.dol", 0x49E584, 0x4
+.global $$254922
+$$254922:
+	.incbin "baserom.dol", 0x49E588, 0x8

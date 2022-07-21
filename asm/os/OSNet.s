@@ -1,0 +1,510 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __OSInitNet
+__OSInitNet:
+/* 80027250 00023090  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80027254 00023094  7C 08 02 A6 */	mflr r0
+/* 80027258 00023098  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8002725C 0002309C  38 61 00 08 */	addi r3, r1, 8
+/* 80027260 000230A0  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80027264 000230A4  3F E0 80 43 */	lis r31, $$21053@ha
+/* 80027268 000230A8  3B FF F9 78 */	addi r31, r31, $$21053@l
+/* 8002726C 000230AC  4B FF 31 85 */	bl __OSGetIOSRev
+/* 80027270 000230B0  88 01 00 09 */	lbz r0, 9(r1)
+/* 80027274 000230B4  28 00 00 04 */	cmplwi r0, 4
+/* 80027278 000230B8  40 81 00 78 */	ble lbl_800272F0
+/* 8002727C 000230BC  28 00 00 09 */	cmplwi r0, 9
+/* 80027280 000230C0  40 82 00 08 */	bne lbl_80027288
+/* 80027284 000230C4  48 00 00 6C */	b lbl_800272F0
+lbl_80027288:
+/* 80027288 000230C8  48 00 00 89 */	bl NWC24iPrepareShutdown
+/* 8002728C 000230CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80027290 000230D0  41 82 00 34 */	beq lbl_800272C4
+/* 80027294 000230D4  40 80 00 14 */	bge lbl_800272A8
+/* 80027298 000230D8  7C 64 1B 78 */	mr r4, r3
+/* 8002729C 000230DC  38 7F 00 00 */	addi r3, r31, 0
+/* 800272A0 000230E0  4C C6 31 82 */	crclr 6
+/* 800272A4 000230E4  4B FF 66 ED */	bl OSReport
+lbl_800272A8:
+/* 800272A8 000230E8  48 00 01 C9 */	bl NWC24SuspendScheduler
+/* 800272AC 000230EC  2C 03 00 00 */	cmpwi r3, 0
+/* 800272B0 000230F0  40 80 00 14 */	bge lbl_800272C4
+/* 800272B4 000230F4  7C 64 1B 78 */	mr r4, r3
+/* 800272B8 000230F8  38 7F 00 34 */	addi r3, r31, 0x34
+/* 800272BC 000230FC  4C C6 31 82 */	crclr 6
+/* 800272C0 00023100  4B FF 66 D1 */	bl OSReport
+lbl_800272C4:
+/* 800272C4 00023104  80 0D E3 58 */	lwz r0, __OSInIPL-_SDA_BASE_(r13)
+/* 800272C8 00023108  2C 00 00 00 */	cmpwi r0, 0
+/* 800272CC 0002310C  40 82 00 24 */	bne lbl_800272F0
+/* 800272D0 00023110  38 60 00 00 */	li r3, 0
+/* 800272D4 00023114  48 00 00 FD */	bl NWC24iSynchronizeRtcCounter
+/* 800272D8 00023118  2C 03 00 00 */	cmpwi r3, 0
+/* 800272DC 0002311C  41 82 00 14 */	beq lbl_800272F0
+/* 800272E0 00023120  7C 64 1B 78 */	mr r4, r3
+/* 800272E4 00023124  38 7F 00 68 */	addi r3, r31, 0x68
+/* 800272E8 00023128  4C C6 31 82 */	crclr 6
+/* 800272EC 0002312C  4B FF 66 A5 */	bl OSReport
+lbl_800272F0:
+/* 800272F0 00023130  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 800272F4 00023134  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 800272F8 00023138  7C 08 03 A6 */	mtlr r0
+/* 800272FC 0002313C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80027300 00023140  4E 80 00 20 */	blr 
+/* 80027304 00023144  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80027308 00023148  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8002730C 0002314C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global NWC24iPrepareShutdown
+NWC24iPrepareShutdown:
+/* 80027310 00023150  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80027314 00023154  7C 08 02 A6 */	mflr r0
+/* 80027318 00023158  3C 80 80 4A */	lis r4, ShutdownFuncInfo@ha
+/* 8002731C 0002315C  3C A0 80 02 */	lis r5, NWC24Shutdown_@ha
+/* 80027320 00023160  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80027324 00023164  38 64 A1 A0 */	addi r3, r4, ShutdownFuncInfo@l
+/* 80027328 00023168  38 00 00 6E */	li r0, 0x6e
+/* 8002732C 0002316C  38 A5 75 E0 */	addi r5, r5, NWC24Shutdown_@l
+/* 80027330 00023170  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80027334 00023174  3B E0 00 00 */	li r31, 0
+/* 80027338 00023178  90 A4 A1 A0 */	stw r5, -0x5e60(r4)
+/* 8002733C 0002317C  90 03 00 04 */	stw r0, 4(r3)
+/* 80027340 00023180  4B FF BB D1 */	bl OSRegisterShutdownFunction
+/* 80027344 00023184  80 0D 80 E8 */	lwz r0, nwc24ShtFd-_SDA_BASE_(r13)
+/* 80027348 00023188  2C 00 00 00 */	cmpwi r0, 0
+/* 8002734C 0002318C  40 80 00 50 */	bge lbl_8002739C
+/* 80027350 00023190  38 0D 80 E8 */	addi r0, r13, nwc24ShtFd-_SDA_BASE_
+/* 80027354 00023194  3C 60 80 43 */	lis r3, $$21069@ha
+/* 80027358 00023198  2C 00 00 00 */	cmpwi r0, 0
+/* 8002735C 0002319C  38 63 FA 38 */	addi r3, r3, $$21069@l
+/* 80027360 000231A0  40 82 00 0C */	bne lbl_8002736C
+/* 80027364 000231A4  3B E0 FF FD */	li r31, -3
+/* 80027368 000231A8  48 00 00 34 */	b lbl_8002739C
+lbl_8002736C:
+/* 8002736C 000231AC  38 80 00 01 */	li r4, 1
+/* 80027370 000231B0  48 02 7D D1 */	bl IOS_Open
+/* 80027374 000231B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80027378 000231B8  90 6D 80 E8 */	stw r3, nwc24ShtFd-_SDA_BASE_(r13)
+/* 8002737C 000231BC  40 80 00 1C */	bge lbl_80027398
+/* 80027380 000231C0  2C 03 FF FA */	cmpwi r3, -6
+/* 80027384 000231C4  40 82 00 0C */	bne lbl_80027390
+/* 80027388 000231C8  3B E0 FF E3 */	li r31, -29
+/* 8002738C 000231CC  48 00 00 10 */	b lbl_8002739C
+lbl_80027390:
+/* 80027390 000231D0  3B E0 FF D6 */	li r31, -42
+/* 80027394 000231D4  48 00 00 08 */	b lbl_8002739C
+lbl_80027398:
+/* 80027398 000231D8  3B E0 00 00 */	li r31, 0
+lbl_8002739C:
+/* 8002739C 000231DC  2C 1F 00 00 */	cmpwi r31, 0
+/* 800273A0 000231E0  38 00 00 05 */	li r0, 5
+/* 800273A4 000231E4  90 0D E4 80 */	stw r0, nwc24ShtRetryRest-_SDA_BASE_(r13)
+/* 800273A8 000231E8  40 82 00 08 */	bne lbl_800273B0
+/* 800273AC 000231EC  3B E0 00 01 */	li r31, 1
+lbl_800273B0:
+/* 800273B0 000231F0  7F E3 FB 78 */	mr r3, r31
+/* 800273B4 000231F4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 800273B8 000231F8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 800273BC 000231FC  7C 08 03 A6 */	mtlr r0
+/* 800273C0 00023200  38 21 00 10 */	addi r1, r1, 0x10
+/* 800273C4 00023204  4E 80 00 20 */	blr 
+/* 800273C8 00023208  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 800273CC 0002320C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global NWC24iSynchronizeRtcCounter
+NWC24iSynchronizeRtcCounter:
+/* 800273D0 00023210  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800273D4 00023214  7C 08 02 A6 */	mflr r0
+/* 800273D8 00023218  90 01 00 14 */	stw r0, 0x14(r1)
+/* 800273DC 0002321C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 800273E0 00023220  93 C1 00 08 */	stw r30, 8(r1)
+/* 800273E4 00023224  7C 7E 1B 78 */	mr r30, r3
+lbl_800273E8:
+/* 800273E8 00023228  48 02 40 E9 */	bl SCCheckStatus
+/* 800273EC 0002322C  28 03 00 02 */	cmplwi r3, 2
+/* 800273F0 00023230  40 82 00 0C */	bne lbl_800273FC
+/* 800273F4 00023234  38 60 FF FF */	li r3, -1
+/* 800273F8 00023238  48 00 00 34 */	b lbl_8002742C
+lbl_800273FC:
+/* 800273FC 0002323C  2C 03 00 00 */	cmpwi r3, 0
+/* 80027400 00023240  40 82 FF E8 */	bne lbl_800273E8
+/* 80027404 00023244  48 02 5B BD */	bl SCGetCounterBias
+/* 80027408 00023248  7C 7F 1B 78 */	mr r31, r3
+/* 8002740C 0002324C  4B FF E7 35 */	bl OSGetTime
+/* 80027410 00023250  3C C0 80 00 */	lis r6, 0x800000F8@ha
+/* 80027414 00023254  38 A0 00 00 */	li r5, 0
+/* 80027418 00023258  80 06 00 F8 */	lwz r0, 0x800000F8@l(r6)
+/* 8002741C 0002325C  54 06 F0 BE */	srwi r6, r0, 2
+/* 80027420 00023260  4B FE 00 6D */	bl __div2i
+/* 80027424 00023264  7F FF 20 10 */	subfc r31, r31, r4
+/* 80027428 00023268  38 60 00 00 */	li r3, 0
+lbl_8002742C:
+/* 8002742C 0002326C  2C 03 00 00 */	cmpwi r3, 0
+/* 80027430 00023270  41 82 00 08 */	beq lbl_80027438
+/* 80027434 00023274  48 00 00 18 */	b lbl_8002744C
+lbl_80027438:
+/* 80027438 00023278  7C 1E 00 D0 */	neg r0, r30
+/* 8002743C 0002327C  7F E3 FB 78 */	mr r3, r31
+/* 80027440 00023280  7C 00 F3 78 */	or r0, r0, r30
+/* 80027444 00023284  54 04 0F FE */	srwi r4, r0, 0x1f
+/* 80027448 00023288  48 00 02 59 */	bl NWC24iSetRtcCounter_
+lbl_8002744C:
+/* 8002744C 0002328C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80027450 00023290  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80027454 00023294  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80027458 00023298  7C 08 03 A6 */	mtlr r0
+/* 8002745C 0002329C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80027460 000232A0  4E 80 00 20 */	blr 
+/* 80027464 000232A4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 80027468 000232A8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8002746C 000232AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global NWC24SuspendScheduler
+NWC24SuspendScheduler:
+/* 80027470 000232B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80027474 000232B4  7C 08 02 A6 */	mflr r0
+/* 80027478 000232B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8002747C 000232BC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80027480 000232C0  93 C1 00 08 */	stw r30, 8(r1)
+/* 80027484 000232C4  4B FF D2 CD */	bl OSGetCurrentThread
+/* 80027488 000232C8  2C 03 00 00 */	cmpwi r3, 0
+/* 8002748C 000232CC  40 82 00 0C */	bne lbl_80027498
+/* 80027490 000232D0  38 60 FF FF */	li r3, -1
+/* 80027494 000232D4  48 00 00 08 */	b lbl_8002749C
+lbl_80027498:
+/* 80027498 000232D8  38 60 00 00 */	li r3, 0
+lbl_8002749C:
+/* 8002749C 000232DC  2C 03 00 00 */	cmpwi r3, 0
+/* 800274A0 000232E0  40 80 00 08 */	bge lbl_800274A8
+/* 800274A4 000232E4  48 00 00 B4 */	b lbl_80027558
+lbl_800274A8:
+/* 800274A8 000232E8  3C 60 80 43 */	lis r3, $$21069@ha
+/* 800274AC 000232EC  38 80 00 00 */	li r4, 0
+/* 800274B0 000232F0  38 63 FA 38 */	addi r3, r3, $$21069@l
+/* 800274B4 000232F4  48 02 7C 8D */	bl IOS_Open
+/* 800274B8 000232F8  2C 03 00 00 */	cmpwi r3, 0
+/* 800274BC 000232FC  7C 7E 1B 78 */	mr r30, r3
+/* 800274C0 00023300  40 80 00 1C */	bge lbl_800274DC
+/* 800274C4 00023304  2C 03 FF FA */	cmpwi r3, -6
+/* 800274C8 00023308  40 82 00 0C */	bne lbl_800274D4
+/* 800274CC 0002330C  3B E0 FF E3 */	li r31, -29
+/* 800274D0 00023310  48 00 00 10 */	b lbl_800274E0
+lbl_800274D4:
+/* 800274D4 00023314  3B E0 FF D6 */	li r31, -42
+/* 800274D8 00023318  48 00 00 08 */	b lbl_800274E0
+lbl_800274DC:
+/* 800274DC 0002331C  3B E0 00 00 */	li r31, 0
+lbl_800274E0:
+/* 800274E0 00023320  2C 1F 00 00 */	cmpwi r31, 0
+/* 800274E4 00023324  41 80 00 70 */	blt lbl_80027554
+/* 800274E8 00023328  3C E0 80 4A */	lis r7, $$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult@ha
+/* 800274EC 0002332C  7F C3 F3 78 */	mr r3, r30
+/* 800274F0 00023330  38 E7 A1 C0 */	addi r7, r7, $$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult@l
+/* 800274F4 00023334  38 80 00 01 */	li r4, 1
+/* 800274F8 00023338  38 A0 00 00 */	li r5, 0
+/* 800274FC 0002333C  38 C0 00 00 */	li r6, 0
+/* 80027500 00023340  39 00 00 20 */	li r8, 0x20
+/* 80027504 00023344  48 02 86 0D */	bl IOS_Ioctl
+/* 80027508 00023348  2C 03 00 00 */	cmpwi r3, 0
+/* 8002750C 0002334C  40 80 00 0C */	bge lbl_80027518
+/* 80027510 00023350  3B E0 FF D6 */	li r31, -42
+/* 80027514 00023354  48 00 00 08 */	b lbl_8002751C
+lbl_80027518:
+/* 80027518 00023358  3B E0 00 00 */	li r31, 0
+lbl_8002751C:
+/* 8002751C 0002335C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80027520 00023360  41 80 00 0C */	blt lbl_8002752C
+/* 80027524 00023364  3C 60 80 4A */	lis r3, $$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult@ha
+/* 80027528 00023368  83 E3 A1 C0 */	lwz r31, $$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult@l(r3)
+lbl_8002752C:
+/* 8002752C 0002336C  7F C3 F3 78 */	mr r3, r30
+/* 80027530 00023370  48 02 7E 01 */	bl IOS_Close
+/* 80027534 00023374  2C 03 00 00 */	cmpwi r3, 0
+/* 80027538 00023378  40 80 00 0C */	bge lbl_80027544
+/* 8002753C 0002337C  38 00 FF D6 */	li r0, -42
+/* 80027540 00023380  48 00 00 08 */	b lbl_80027548
+lbl_80027544:
+/* 80027544 00023384  38 00 00 00 */	li r0, 0
+lbl_80027548:
+/* 80027548 00023388  2C 00 00 00 */	cmpwi r0, 0
+/* 8002754C 0002338C  40 80 00 08 */	bge lbl_80027554
+/* 80027550 00023390  7C 1F 03 78 */	mr r31, r0
+lbl_80027554:
+/* 80027554 00023394  7F E3 FB 78 */	mr r3, r31
+lbl_80027558:
+/* 80027558 00023398  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8002755C 0002339C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80027560 000233A0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80027564 000233A4  7C 08 03 A6 */	mtlr r0
+/* 80027568 000233A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8002756C 000233AC  4E 80 00 20 */	blr 
+
+.global NWC24iRequestShutdown
+NWC24iRequestShutdown:
+/* 80027570 000233B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80027574 000233B4  7C 08 02 A6 */	mflr r0
+/* 80027578 000233B8  3C E0 80 4A */	lis r7, $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtResult$$20@ha
+/* 8002757C 000233BC  3D 20 80 02 */	lis r9, CallbackAsyncIpc@ha
+/* 80027580 000233C0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80027584 000233C4  3C A0 80 4A */	lis r5, $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtBuffer@ha
+/* 80027588 000233C8  7C 8A 23 78 */	mr r10, r4
+/* 8002758C 000233CC  38 E7 A2 00 */	addi r7, r7, $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtResult$$20@l
+/* 80027590 000233D0  90 65 A1 E0 */	stw r3, $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtBuffer@l(r5)
+/* 80027594 000233D4  38 A5 A1 E0 */	addi r5, r5, -24096
+/* 80027598 000233D8  80 6D 80 E8 */	lwz r3, nwc24ShtFd-_SDA_BASE_(r13)
+/* 8002759C 000233DC  39 29 77 D0 */	addi r9, r9, CallbackAsyncIpc@l
+/* 800275A0 000233E0  38 80 00 28 */	li r4, 0x28
+/* 800275A4 000233E4  38 C0 00 20 */	li r6, 0x20
+/* 800275A8 000233E8  39 00 00 20 */	li r8, 0x20
+/* 800275AC 000233EC  48 02 84 25 */	bl IOS_IoctlAsync
+/* 800275B0 000233F0  2C 03 00 00 */	cmpwi r3, 0
+/* 800275B4 000233F4  40 80 00 0C */	bge lbl_800275C0
+/* 800275B8 000233F8  38 60 FF D6 */	li r3, -42
+/* 800275BC 000233FC  48 00 00 10 */	b lbl_800275CC
+lbl_800275C0:
+/* 800275C0 00023400  38 00 00 01 */	li r0, 1
+/* 800275C4 00023404  90 0D E4 84 */	stw r0, NWC24iIsRequestPending-_SDA_BASE_(r13)
+/* 800275C8 00023408  38 60 00 00 */	li r3, 0
+lbl_800275CC:
+/* 800275CC 0002340C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 800275D0 00023410  7C 08 03 A6 */	mtlr r0
+/* 800275D4 00023414  38 21 00 10 */	addi r1, r1, 0x10
+/* 800275D8 00023418  4E 80 00 20 */	blr 
+/* 800275DC 0002341C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global NWC24Shutdown_
+NWC24Shutdown_:
+/* 800275E0 00023420  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800275E4 00023424  7C 08 02 A6 */	mflr r0
+/* 800275E8 00023428  2C 03 00 00 */	cmpwi r3, 0
+/* 800275EC 0002342C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 800275F0 00023430  41 82 00 0C */	beq lbl_800275FC
+/* 800275F4 00023434  38 60 00 01 */	li r3, 1
+/* 800275F8 00023438  48 00 00 90 */	b lbl_80027688
+lbl_800275FC:
+/* 800275FC 0002343C  80 0D E4 88 */	lwz r0, $$2LOCAL$$2NWC24Shutdown___FiUl$$2shuttingdown-_SDA_BASE_(r13)
+/* 80027600 00023440  2C 00 00 00 */	cmpwi r0, 0
+/* 80027604 00023444  41 82 00 64 */	beq lbl_80027668
+/* 80027608 00023448  80 0D E4 84 */	lwz r0, NWC24iIsRequestPending-_SDA_BASE_(r13)
+/* 8002760C 0002344C  2C 00 00 00 */	cmpwi r0, 0
+/* 80027610 00023450  41 82 00 0C */	beq lbl_8002761C
+/* 80027614 00023454  38 60 00 00 */	li r3, 0
+/* 80027618 00023458  48 00 00 70 */	b lbl_80027688
+lbl_8002761C:
+/* 8002761C 0002345C  80 0D E4 8C */	lwz r0, $$2LOCAL$$2NWC24Shutdown___FiUl$$2result$$20-_SDA_BASE_(r13)
+/* 80027620 00023460  2C 00 00 00 */	cmpwi r0, 0
+/* 80027624 00023464  41 80 00 0C */	blt lbl_80027630
+/* 80027628 00023468  38 60 00 01 */	li r3, 1
+/* 8002762C 0002346C  48 00 00 5C */	b lbl_80027688
+lbl_80027630:
+/* 80027630 00023470  80 6D E4 80 */	lwz r3, nwc24ShtRetryRest-_SDA_BASE_(r13)
+/* 80027634 00023474  2C 03 00 00 */	cmpwi r3, 0
+/* 80027638 00023478  40 81 00 18 */	ble lbl_80027650
+/* 8002763C 0002347C  38 03 FF FF */	addi r0, r3, -1
+/* 80027640 00023480  38 60 00 00 */	li r3, 0
+/* 80027644 00023484  90 6D E4 88 */	stw r3, $$2LOCAL$$2NWC24Shutdown___FiUl$$2shuttingdown-_SDA_BASE_(r13)
+/* 80027648 00023488  90 0D E4 80 */	stw r0, nwc24ShtRetryRest-_SDA_BASE_(r13)
+/* 8002764C 0002348C  48 00 00 38 */	b lbl_80027684
+lbl_80027650:
+/* 80027650 00023490  3C 60 80 43 */	lis r3, $$21122@ha
+/* 80027654 00023494  38 63 FA 94 */	addi r3, r3, $$21122@l
+/* 80027658 00023498  4C C6 31 82 */	crclr 6
+/* 8002765C 0002349C  4B FF 63 35 */	bl OSReport
+/* 80027660 000234A0  38 60 00 01 */	li r3, 1
+/* 80027664 000234A4  48 00 00 24 */	b lbl_80027688
+lbl_80027668:
+/* 80027668 000234A8  7C 83 23 78 */	mr r3, r4
+/* 8002766C 000234AC  38 8D E4 8C */	addi r4, r13, $$2LOCAL$$2NWC24Shutdown___FiUl$$2result$$20-_SDA_BASE_
+/* 80027670 000234B0  4B FF FF 01 */	bl NWC24iRequestShutdown
+/* 80027674 000234B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80027678 000234B8  41 80 00 0C */	blt lbl_80027684
+/* 8002767C 000234BC  38 00 00 01 */	li r0, 1
+/* 80027680 000234C0  90 0D E4 88 */	stw r0, $$2LOCAL$$2NWC24Shutdown___FiUl$$2shuttingdown-_SDA_BASE_(r13)
+lbl_80027684:
+/* 80027684 000234C4  38 60 00 00 */	li r3, 0
+lbl_80027688:
+/* 80027688 000234C8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8002768C 000234CC  7C 08 03 A6 */	mtlr r0
+/* 80027690 000234D0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80027694 000234D4  4E 80 00 20 */	blr 
+/* 80027698 000234D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8002769C 000234DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global NWC24iSetRtcCounter_
+NWC24iSetRtcCounter_:
+/* 800276A0 000234E0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 800276A4 000234E4  7C 08 02 A6 */	mflr r0
+/* 800276A8 000234E8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 800276AC 000234EC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 800276B0 000234F0  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 800276B4 000234F4  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 800276B8 000234F8  7C 9D 23 78 */	mr r29, r4
+/* 800276BC 000234FC  93 81 00 10 */	stw r28, 0x10(r1)
+/* 800276C0 00023500  7C 7C 1B 78 */	mr r28, r3
+/* 800276C4 00023504  4B FF D0 8D */	bl OSGetCurrentThread
+/* 800276C8 00023508  2C 03 00 00 */	cmpwi r3, 0
+/* 800276CC 0002350C  40 82 00 0C */	bne lbl_800276D8
+/* 800276D0 00023510  38 60 FF FF */	li r3, -1
+/* 800276D4 00023514  48 00 00 08 */	b lbl_800276DC
+lbl_800276D8:
+/* 800276D8 00023518  38 60 00 00 */	li r3, 0
+lbl_800276DC:
+/* 800276DC 0002351C  2C 03 00 00 */	cmpwi r3, 0
+/* 800276E0 00023520  40 80 00 08 */	bge lbl_800276E8
+/* 800276E4 00023524  48 00 00 C0 */	b lbl_800277A4
+lbl_800276E8:
+/* 800276E8 00023528  3C 60 80 43 */	lis r3, $$21137@ha
+/* 800276EC 0002352C  38 80 00 00 */	li r4, 0
+/* 800276F0 00023530  38 63 FA C8 */	addi r3, r3, $$21137@l
+/* 800276F4 00023534  48 02 7A 4D */	bl IOS_Open
+/* 800276F8 00023538  2C 03 00 00 */	cmpwi r3, 0
+/* 800276FC 0002353C  7C 7E 1B 78 */	mr r30, r3
+/* 80027700 00023540  40 80 00 1C */	bge lbl_8002771C
+/* 80027704 00023544  2C 03 FF FA */	cmpwi r3, -6
+/* 80027708 00023548  40 82 00 0C */	bne lbl_80027714
+/* 8002770C 0002354C  3B E0 FF E3 */	li r31, -29
+/* 80027710 00023550  48 00 00 10 */	b lbl_80027720
+lbl_80027714:
+/* 80027714 00023554  3B E0 FF D6 */	li r31, -42
+/* 80027718 00023558  48 00 00 08 */	b lbl_80027720
+lbl_8002771C:
+/* 8002771C 0002355C  3B E0 00 00 */	li r31, 0
+lbl_80027720:
+/* 80027720 00023560  2C 1F 00 00 */	cmpwi r31, 0
+/* 80027724 00023564  41 80 00 7C */	blt lbl_800277A0
+/* 80027728 00023568  3C 60 80 4A */	lis r3, nwc24TimeCommonBuffer@ha
+/* 8002772C 0002356C  3C E0 80 4A */	lis r7, nwc24TimeCommonResult@ha
+/* 80027730 00023570  38 A3 A2 20 */	addi r5, r3, nwc24TimeCommonBuffer@l
+/* 80027734 00023574  93 83 A2 20 */	stw r28, -0x5de0(r3)
+/* 80027738 00023578  7F C3 F3 78 */	mr r3, r30
+/* 8002773C 0002357C  38 E7 A2 40 */	addi r7, r7, nwc24TimeCommonResult@l
+/* 80027740 00023580  93 A5 00 04 */	stw r29, 4(r5)
+/* 80027744 00023584  38 80 00 17 */	li r4, 0x17
+/* 80027748 00023588  38 C0 00 20 */	li r6, 0x20
+/* 8002774C 0002358C  39 00 00 20 */	li r8, 0x20
+/* 80027750 00023590  48 02 83 C1 */	bl IOS_Ioctl
+/* 80027754 00023594  2C 03 00 00 */	cmpwi r3, 0
+/* 80027758 00023598  40 80 00 0C */	bge lbl_80027764
+/* 8002775C 0002359C  3B E0 FF D6 */	li r31, -42
+/* 80027760 000235A0  48 00 00 08 */	b lbl_80027768
+lbl_80027764:
+/* 80027764 000235A4  3B E0 00 00 */	li r31, 0
+lbl_80027768:
+/* 80027768 000235A8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8002776C 000235AC  41 80 00 0C */	blt lbl_80027778
+/* 80027770 000235B0  3C 60 80 4A */	lis r3, nwc24TimeCommonResult@ha
+/* 80027774 000235B4  83 E3 A2 40 */	lwz r31, nwc24TimeCommonResult@l(r3)
+lbl_80027778:
+/* 80027778 000235B8  7F C3 F3 78 */	mr r3, r30
+/* 8002777C 000235BC  48 02 7B B5 */	bl IOS_Close
+/* 80027780 000235C0  2C 03 00 00 */	cmpwi r3, 0
+/* 80027784 000235C4  40 80 00 0C */	bge lbl_80027790
+/* 80027788 000235C8  38 00 FF D6 */	li r0, -42
+/* 8002778C 000235CC  48 00 00 08 */	b lbl_80027794
+lbl_80027790:
+/* 80027790 000235D0  38 00 00 00 */	li r0, 0
+lbl_80027794:
+/* 80027794 000235D4  2C 1F 00 00 */	cmpwi r31, 0
+/* 80027798 000235D8  41 80 00 08 */	blt lbl_800277A0
+/* 8002779C 000235DC  7C 1F 03 78 */	mr r31, r0
+lbl_800277A0:
+/* 800277A0 000235E0  7F E3 FB 78 */	mr r3, r31
+lbl_800277A4:
+/* 800277A4 000235E4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 800277A8 000235E8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 800277AC 000235EC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 800277B0 000235F0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 800277B4 000235F4  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 800277B8 000235F8  7C 08 03 A6 */	mtlr r0
+/* 800277BC 000235FC  38 21 00 20 */	addi r1, r1, 0x20
+/* 800277C0 00023600  4E 80 00 20 */	blr 
+/* 800277C4 00023604  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 800277C8 00023608  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 800277CC 0002360C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global CallbackAsyncIpc
+CallbackAsyncIpc:
+/* 800277D0 00023610  2C 04 00 00 */	cmpwi r4, 0
+/* 800277D4 00023614  41 82 00 08 */	beq lbl_800277DC
+/* 800277D8 00023618  90 64 00 00 */	stw r3, 0(r4)
+lbl_800277DC:
+/* 800277DC 0002361C  38 00 00 00 */	li r0, 0
+/* 800277E0 00023620  90 0D E4 84 */	stw r0, NWC24iIsRequestPending-_SDA_BASE_(r13)
+/* 800277E4 00023624  38 60 00 00 */	li r3, 0
+/* 800277E8 00023628  4E 80 00 20 */	blr 
+/* 800277EC 0002362C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$21053
+$$21053:
+	.incbin "baserom.dol", 0x42BA78, 0x34
+.global $$21054
+$$21054:
+	.incbin "baserom.dol", 0x42BAAC, 0x34
+.global $$21055
+$$21055:
+	.incbin "baserom.dol", 0x42BAE0, 0x40
+.global __FUNCTION__$681
+__FUNCTION__$681:
+	.incbin "baserom.dol", 0x42BB20, 0x18
+.global $$21069
+$$21069:
+	.incbin "baserom.dol", 0x42BB38, 0x14
+.global __FUNCTION__$697
+__FUNCTION__$697:
+	.incbin "baserom.dol", 0x42BB4C, 0x18
+.global __FUNCTION__$711
+__FUNCTION__$711:
+	.incbin "baserom.dol", 0x42BB64, 0x18
+.global __FUNCTION__$727
+__FUNCTION__$727:
+	.incbin "baserom.dol", 0x42BB7C, 0x18
+.global $$21122
+$$21122:
+	.incbin "baserom.dol", 0x42BB94, 0x1C
+.global __FUNCTION__$756
+__FUNCTION__$756:
+	.incbin "baserom.dol", 0x42BBB0, 0x18
+.global $$21137
+$$21137:
+	.incbin "baserom.dol", 0x42BBC8, 0x18
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global nwc24ShtFd
+nwc24ShtFd:
+	.incbin "baserom.dol", 0x4928E8, 0x8
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global ShutdownFuncInfo
+ShutdownFuncInfo:
+	.skip 0x20
+.global $$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult
+$$2LOCAL$$2NWC24SuspendScheduler__Fv$$2susResult:
+	.skip 0x20
+.global $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtBuffer
+$$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtBuffer:
+	.skip 0x20
+.global $$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtResult$$20
+$$2LOCAL$$2NWC24iRequestShutdown__FUlPl$$2shtResult$$20:
+	.skip 0x20
+.global nwc24TimeCommonBuffer
+nwc24TimeCommonBuffer:
+	.skip 0x20
+.global nwc24TimeCommonResult
+nwc24TimeCommonResult:
+	.skip 0x20
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global nwc24ShtRetryRest
+nwc24ShtRetryRest:
+	.skip 0x4
+.global NWC24iIsRequestPending
+NWC24iIsRequestPending:
+	.skip 0x4
+.global $$2LOCAL$$2NWC24Shutdown___FiUl$$2shuttingdown
+$$2LOCAL$$2NWC24Shutdown___FiUl$$2shuttingdown:
+	.skip 0x4
+.global $$2LOCAL$$2NWC24Shutdown___FiUl$$2result$$20
+$$2LOCAL$$2NWC24Shutdown___FiUl$$2result$$20:
+	.skip 0x4

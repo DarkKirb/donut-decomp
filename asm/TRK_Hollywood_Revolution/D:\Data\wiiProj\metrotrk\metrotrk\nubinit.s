@@ -1,0 +1,116 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global TRK_InitializeNub
+TRK_InitializeNub:
+/* 800162FC 0001213C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80016300 00012140  7C 08 02 A6 */	mflr r0
+/* 80016304 00012144  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80016308 00012148  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8001630C 0001214C  93 C1 00 08 */	stw r30, 8(r1)
+/* 80016310 00012150  48 00 00 C9 */	bl TRK_InitializeEndian
+/* 80016314 00012154  2C 03 00 00 */	cmpwi r3, 0
+/* 80016318 00012158  7C 7F 1B 78 */	mr r31, r3
+/* 8001631C 0001215C  40 82 00 0C */	bne lbl_80016328
+/* 80016320 00012160  4B FF FE 41 */	bl TRKInitializeEventQueue
+/* 80016324 00012164  7C 7F 1B 78 */	mr r31, r3
+lbl_80016328:
+/* 80016328 00012168  2C 1F 00 00 */	cmpwi r31, 0
+/* 8001632C 0001216C  40 82 00 0C */	bne lbl_80016338
+/* 80016330 00012170  48 00 0C 39 */	bl TRK_InitializeMessageBuffers
+/* 80016334 00012174  7C 7F 1B 78 */	mr r31, r3
+lbl_80016338:
+/* 80016338 00012178  4B FF FD 45 */	bl InitializeProgramEndTrap
+/* 8001633C 0001217C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80016340 00012180  40 82 00 0C */	bne lbl_8001634C
+/* 80016344 00012184  48 03 DA AD */	bl __wpadNoAlloc
+/* 80016348 00012188  7C 7F 1B 78 */	mr r31, r3
+lbl_8001634C:
+/* 8001634C 0001218C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80016350 00012190  40 82 00 0C */	bne lbl_8001635C
+/* 80016354 00012194  4B FF F9 8D */	bl TRKInitializeTarget
+/* 80016358 00012198  7C 7F 1B 78 */	mr r31, r3
+lbl_8001635C:
+/* 8001635C 0001219C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80016360 000121A0  40 82 00 2C */	bne lbl_8001638C
+/* 80016364 000121A4  38 60 00 01 */	li r3, 1
+/* 80016368 000121A8  38 80 00 00 */	li r4, 0
+/* 8001636C 000121AC  38 AD E3 30 */	addi r5, r13, gTRKInputPendingPtr-_SDA_BASE_
+/* 80016370 000121B0  4B FF FB C1 */	bl TRK_InitializeIntDrivenUART
+/* 80016374 000121B4  7C 7E 1B 78 */	mr r30, r3
+/* 80016378 000121B8  80 6D E3 30 */	lwz r3, gTRKInputPendingPtr-_SDA_BASE_(r13)
+/* 8001637C 000121BC  48 00 3C 75 */	bl TRKTargetSetInputPendingPtr
+/* 80016380 000121C0  2C 1E 00 00 */	cmpwi r30, 0
+/* 80016384 000121C4  41 82 00 08 */	beq lbl_8001638C
+/* 80016388 000121C8  7F DF F3 78 */	mr r31, r30
+lbl_8001638C:
+/* 8001638C 000121CC  7F E3 FB 78 */	mr r3, r31
+/* 80016390 000121D0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80016394 000121D4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80016398 000121D8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8001639C 000121DC  7C 08 03 A6 */	mtlr r0
+/* 800163A0 000121E0  38 21 00 10 */	addi r1, r1, 0x10
+/* 800163A4 000121E4  4E 80 00 20 */	blr 
+
+.global TRK_TerminateNub
+TRK_TerminateNub:
+/* 800163A8 000121E8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800163AC 000121EC  7C 08 02 A6 */	mflr r0
+/* 800163B0 000121F0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 800163B4 000121F4  48 03 DA 3D */	bl __wpadNoAlloc
+/* 800163B8 000121F8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 800163BC 000121FC  38 60 00 00 */	li r3, 0
+/* 800163C0 00012200  7C 08 03 A6 */	mtlr r0
+/* 800163C4 00012204  38 21 00 10 */	addi r1, r1, 0x10
+/* 800163C8 00012208  4E 80 00 20 */	blr 
+
+.global TRK_NubWelcome
+TRK_NubWelcome:
+/* 800163CC 0001220C  3C 60 80 42 */	lis r3, $$2stringBase0@ha
+/* 800163D0 00012210  38 63 1C 70 */	addi r3, r3, $$2stringBase0@l
+/* 800163D4 00012214  4B FF FC 90 */	b TRK_board_display
+
+.global TRK_InitializeEndian
+TRK_InitializeEndian:
+/* 800163D8 00012218  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800163DC 0001221C  38 60 00 12 */	li r3, 0x12
+/* 800163E0 00012220  38 A0 00 34 */	li r5, 0x34
+/* 800163E4 00012224  38 80 00 56 */	li r4, 0x56
+/* 800163E8 00012228  38 00 00 78 */	li r0, 0x78
+/* 800163EC 0001222C  98 61 00 08 */	stb r3, 8(r1)
+/* 800163F0 00012230  38 C0 00 01 */	li r6, 1
+/* 800163F4 00012234  38 60 00 00 */	li r3, 0
+/* 800163F8 00012238  98 A1 00 09 */	stb r5, 9(r1)
+/* 800163FC 0001223C  98 81 00 0A */	stb r4, 0xa(r1)
+/* 80016400 00012240  98 01 00 0B */	stb r0, 0xb(r1)
+/* 80016404 00012244  80 81 00 08 */	lwz r4, 8(r1)
+/* 80016408 00012248  90 CD E3 28 */	stw r6, gTRKBigEndian-_SDA_BASE_(r13)
+/* 8001640C 0001224C  3C 04 ED CC */	addis r0, r4, 0xedcc
+/* 80016410 00012250  28 00 56 78 */	cmplwi r0, 0x5678
+/* 80016414 00012254  40 82 00 0C */	bne lbl_80016420
+/* 80016418 00012258  90 CD E3 28 */	stw r6, gTRKBigEndian-_SDA_BASE_(r13)
+/* 8001641C 0001225C  48 00 00 28 */	b lbl_80016444
+lbl_80016420:
+/* 80016420 00012260  3C 04 87 AA */	addis r0, r4, 0x87aa
+/* 80016424 00012264  28 00 34 12 */	cmplwi r0, 0x3412
+/* 80016428 00012268  40 82 00 0C */	bne lbl_80016434
+/* 8001642C 0001226C  38 00 00 00 */	li r0, 0
+/* 80016430 00012270  90 0D E3 28 */	stw r0, gTRKBigEndian-_SDA_BASE_(r13)
+lbl_80016434:
+/* 80016434 00012274  3C 04 87 AA */	addis r0, r4, 0x87aa
+/* 80016438 00012278  28 00 34 12 */	cmplwi r0, 0x3412
+/* 8001643C 0001227C  41 82 00 08 */	beq lbl_80016444
+/* 80016440 00012280  38 60 00 01 */	li r3, 1
+lbl_80016444:
+/* 80016444 00012284  38 21 00 10 */	addi r1, r1, 0x10
+/* 80016448 00012288  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$2stringBase0
+$$2stringBase0:
+	.incbin "baserom.dol", 0x41DD70, 0x20
+
+.section .bss, "wa"  # 0x80496700 - 0x805643FC
+.global gTRKBigEndian
+gTRKBigEndian:
+	.skip 0x8

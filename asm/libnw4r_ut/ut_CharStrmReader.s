@@ -1,0 +1,94 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv:
+/* 8011FE90 0011BCD0  80 E3 00 00 */	lwz r7, 0(r3)
+/* 8011FE94 0011BCD4  88 C7 00 00 */	lbz r6, 0(r7)
+/* 8011FE98 0011BCD8  54 C0 06 31 */	rlwinm. r0, r6, 0, 0x18, 0x18
+/* 8011FE9C 0011BCDC  40 82 00 14 */	bne lbl_8011FEB0
+/* 8011FEA0 0011BCE0  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FEA4 0011BCE4  38 04 00 01 */	addi r0, r4, 1
+/* 8011FEA8 0011BCE8  90 03 00 00 */	stw r0, 0(r3)
+/* 8011FEAC 0011BCEC  48 00 00 54 */	b lbl_8011FF00
+lbl_8011FEB0:
+/* 8011FEB0 0011BCF0  54 C0 06 34 */	rlwinm r0, r6, 0, 0x18, 0x1a
+/* 8011FEB4 0011BCF4  2C 00 00 C0 */	cmpwi r0, 0xc0
+/* 8011FEB8 0011BCF8  40 82 00 24 */	bne lbl_8011FEDC
+/* 8011FEBC 0011BCFC  88 07 00 01 */	lbz r0, 1(r7)
+/* 8011FEC0 0011BD00  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FEC4 0011BD04  54 05 06 BE */	clrlwi r5, r0, 0x1a
+/* 8011FEC8 0011BD08  50 C5 35 72 */	rlwimi r5, r6, 6, 0x15, 0x19
+/* 8011FECC 0011BD0C  38 04 00 02 */	addi r0, r4, 2
+/* 8011FED0 0011BD10  90 03 00 00 */	stw r0, 0(r3)
+/* 8011FED4 0011BD14  7C A6 2B 78 */	mr r6, r5
+/* 8011FED8 0011BD18  48 00 00 28 */	b lbl_8011FF00
+lbl_8011FEDC:
+/* 8011FEDC 0011BD1C  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FEE0 0011BD20  54 C5 63 E6 */	rlwinm r5, r6, 0xc, 0xf, 0x13
+/* 8011FEE4 0011BD24  88 C7 00 01 */	lbz r6, 1(r7)
+/* 8011FEE8 0011BD28  88 E7 00 02 */	lbz r7, 2(r7)
+/* 8011FEEC 0011BD2C  38 04 00 03 */	addi r0, r4, 3
+/* 8011FEF0 0011BD30  50 C5 35 32 */	rlwimi r5, r6, 6, 0x14, 0x19
+/* 8011FEF4 0011BD34  50 E5 06 BE */	rlwimi r5, r7, 0, 0x1a, 0x1f
+/* 8011FEF8 0011BD38  90 03 00 00 */	stw r0, 0(r3)
+/* 8011FEFC 0011BD3C  54 A6 04 3E */	clrlwi r6, r5, 0x10
+lbl_8011FF00:
+/* 8011FF00 0011BD40  7C C3 33 78 */	mr r3, r6
+/* 8011FF04 0011BD44  4E 80 00 20 */	blr 
+/* 8011FF08 0011BD48  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+/* 8011FF0C 0011BD4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv:
+/* 8011FF10 0011BD50  80 A3 00 00 */	lwz r5, 0(r3)
+/* 8011FF14 0011BD54  7C 66 1B 78 */	mr r6, r3
+/* 8011FF18 0011BD58  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FF1C 0011BD5C  A0 65 00 00 */	lhz r3, 0(r5)
+/* 8011FF20 0011BD60  38 04 00 02 */	addi r0, r4, 2
+/* 8011FF24 0011BD64  90 06 00 00 */	stw r0, 0(r6)
+/* 8011FF28 0011BD68  4E 80 00 20 */	blr 
+/* 8011FF2C 0011BD6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv:
+/* 8011FF30 0011BD70  80 A3 00 00 */	lwz r5, 0(r3)
+/* 8011FF34 0011BD74  7C 66 1B 78 */	mr r6, r3
+/* 8011FF38 0011BD78  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FF3C 0011BD7C  88 65 00 00 */	lbz r3, 0(r5)
+/* 8011FF40 0011BD80  38 04 00 01 */	addi r0, r4, 1
+/* 8011FF44 0011BD84  90 06 00 00 */	stw r0, 0(r6)
+/* 8011FF48 0011BD88  4E 80 00 20 */	blr 
+/* 8011FF4C 0011BD8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
+
+.global ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv:
+/* 8011FF50 0011BD90  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FF54 0011BD94  38 00 00 00 */	li r0, 0
+/* 8011FF58 0011BD98  88 A4 00 00 */	lbz r5, 0(r4)
+/* 8011FF5C 0011BD9C  28 05 00 81 */	cmplwi r5, 0x81
+/* 8011FF60 0011BDA0  41 80 00 0C */	blt lbl_8011FF6C
+/* 8011FF64 0011BDA4  28 05 00 A0 */	cmplwi r5, 0xa0
+/* 8011FF68 0011BDA8  41 80 00 0C */	blt lbl_8011FF74
+lbl_8011FF6C:
+/* 8011FF6C 0011BDAC  28 05 00 E0 */	cmplwi r5, 0xe0
+/* 8011FF70 0011BDB0  41 80 00 08 */	blt lbl_8011FF78
+lbl_8011FF74:
+/* 8011FF74 0011BDB4  38 00 00 01 */	li r0, 1
+lbl_8011FF78:
+/* 8011FF78 0011BDB8  2C 00 00 00 */	cmpwi r0, 0
+/* 8011FF7C 0011BDBC  41 82 00 1C */	beq lbl_8011FF98
+/* 8011FF80 0011BDC0  88 C4 00 01 */	lbz r6, 1(r4)
+/* 8011FF84 0011BDC4  50 A6 44 2E */	rlwimi r6, r5, 8, 0x10, 0x17
+/* 8011FF88 0011BDC8  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FF8C 0011BDCC  38 04 00 02 */	addi r0, r4, 2
+/* 8011FF90 0011BDD0  90 03 00 00 */	stw r0, 0(r3)
+/* 8011FF94 0011BDD4  48 00 00 14 */	b lbl_8011FFA8
+lbl_8011FF98:
+/* 8011FF98 0011BDD8  80 83 00 00 */	lwz r4, 0(r3)
+/* 8011FF9C 0011BDDC  7C A6 2B 78 */	mr r6, r5
+/* 8011FFA0 0011BDE0  38 04 00 01 */	addi r0, r4, 1
+/* 8011FFA4 0011BDE4  90 03 00 00 */	stw r0, 0(r3)
+lbl_8011FFA8:
+/* 8011FFA8 0011BDE8  7C C3 33 78 */	mr r3, r6
+/* 8011FFAC 0011BDEC  4E 80 00 20 */	blr 

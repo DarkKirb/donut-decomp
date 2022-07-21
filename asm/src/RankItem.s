@@ -1,0 +1,243 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step9challenge8RankItemFv
+__ct__Q43scn4step9challenge8RankItemFv:
+/* 80269658 00265498  38 00 00 00 */	li r0, 0
+/* 8026965C 0026549C  90 03 00 00 */	stw r0, 0(r3)
+/* 80269660 002654A0  90 03 00 04 */	stw r0, 4(r3)
+/* 80269664 002654A4  90 03 00 08 */	stw r0, 8(r3)
+/* 80269668 002654A8  98 03 00 0C */	stb r0, 0xc(r3)
+/* 8026966C 002654AC  4E 80 00 20 */	blr 
+
+.global __ct__Q43scn4step9challenge8RankItemFiiUlb
+__ct__Q43scn4step9challenge8RankItemFiiUlb:
+/* 80269670 002654B0  90 83 00 00 */	stw r4, 0(r3)
+/* 80269674 002654B4  90 A3 00 04 */	stw r5, 4(r3)
+/* 80269678 002654B8  90 C3 00 08 */	stw r6, 8(r3)
+/* 8026967C 002654BC  98 E3 00 0C */	stb r7, 0xc(r3)
+/* 80269680 002654C0  4E 80 00 20 */	blr 
+
+.global isDefaultScore__Q43scn4step9challenge8RankItemCFv
+isDefaultScore__Q43scn4step9challenge8RankItemCFv:
+/* 80269684 002654C4  80 63 00 08 */	lwz r3, 8(r3)
+/* 80269688 002654C8  38 03 00 01 */	addi r0, r3, 1
+/* 8026968C 002654CC  7C 00 00 34 */	cntlzw r0, r0
+/* 80269690 002654D0  54 03 D9 7E */	srwi r3, r0, 5
+/* 80269694 002654D4  4E 80 00 20 */	blr 
+
+.global Merge__Q43scn4step9challenge8RankItemFPQ43scn4step9challenge8RankItemPCiRCQ37storage15BackupFileData213ChallengeDataQ33scn4step13ChallengeKindbii
+Merge__Q43scn4step9challenge8RankItemFPQ43scn4step9challenge8RankItemPCiRCQ37storage15BackupFileData213ChallengeDataQ33scn4step13ChallengeKindbii:
+/* 80269698 002654D8  94 21 FE C0 */	stwu r1, -0x140(r1)
+/* 8026969C 002654DC  7C 08 02 A6 */	mflr r0
+/* 802696A0 002654E0  90 01 01 44 */	stw r0, 0x144(r1)
+/* 802696A4 002654E4  39 61 01 40 */	addi r11, r1, 0x140
+/* 802696A8 002654E8  4B D9 DC 79 */	bl func_80007320
+/* 802696AC 002654EC  7C 78 1B 78 */	mr r24, r3
+/* 802696B0 002654F0  7C 94 23 78 */	mr r20, r4
+/* 802696B4 002654F4  7C B9 2B 78 */	mr r25, r5
+/* 802696B8 002654F8  7C DA 33 78 */	mr r26, r6
+/* 802696BC 002654FC  7C FB 3B 78 */	mr r27, r7
+/* 802696C0 00265500  7D 1C 43 78 */	mr r28, r8
+/* 802696C4 00265504  7D 3D 4B 78 */	mr r29, r9
+/* 802696C8 00265508  3A E1 00 80 */	addi r23, r1, 0x80
+/* 802696CC 0026550C  3A C1 01 10 */	addi r22, r1, 0x110
+lbl_802696D0:
+/* 802696D0 00265510  7E E3 BB 78 */	mr r3, r23
+/* 802696D4 00265514  4B FF FF 85 */	bl __ct__Q43scn4step9challenge8RankItemFv
+/* 802696D8 00265518  3A F7 00 10 */	addi r23, r23, 0x10
+/* 802696DC 0026551C  7C 17 B0 40 */	cmplw r23, r22
+/* 802696E0 00265520  41 80 FF F0 */	blt lbl_802696D0
+/* 802696E4 00265524  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 802696E8 00265528  4B F0 CF DD */	bl storageManager__Q23app11ApplicationFv
+/* 802696EC 0026552C  48 19 B8 39 */	bl volatileData2__Q27storage14StorageManagerFv
+/* 802696F0 00265530  83 E3 00 08 */	lwz r31, 8(r3)
+/* 802696F4 00265534  3B C0 00 00 */	li r30, 0
+/* 802696F8 00265538  3A C0 00 00 */	li r22, 0
+/* 802696FC 0026553C  3A A0 00 00 */	li r21, 0
+/* 80269700 00265540  3A E0 00 00 */	li r23, 0
+lbl_80269704:
+/* 80269704 00265544  38 61 00 38 */	addi r3, r1, 0x38
+/* 80269708 00265548  7C 94 B8 2E */	lwzx r4, r20, r23
+/* 8026970C 0026554C  38 A0 00 24 */	li r5, 0x24
+/* 80269710 00265550  38 C0 FF FF */	li r6, -1
+/* 80269714 00265554  38 E0 00 00 */	li r7, 0
+/* 80269718 00265558  4B FF FF 59 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
+/* 8026971C 0026555C  7C 64 1B 78 */	mr r4, r3
+/* 80269720 00265560  38 61 00 80 */	addi r3, r1, 0x80
+/* 80269724 00265564  7C 63 B2 14 */	add r3, r3, r22
+/* 80269728 00265568  48 00 02 51 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 8026972C 0026556C  3B DE 00 01 */	addi r30, r30, 1
+/* 80269730 00265570  3A D6 00 10 */	addi r22, r22, 0x10
+/* 80269734 00265574  3A B5 00 01 */	addi r21, r21, 1
+/* 80269738 00265578  3A F7 00 04 */	addi r23, r23, 4
+/* 8026973C 0026557C  2C 15 00 03 */	cmpwi r21, 3
+/* 80269740 00265580  41 80 FF C4 */	blt lbl_80269704
+/* 80269744 00265584  3A A0 00 00 */	li r21, 0
+/* 80269748 00265588  3A C0 00 00 */	li r22, 0
+/* 8026974C 0026558C  57 D7 20 36 */	slwi r23, r30, 4
+/* 80269750 00265590  48 00 00 40 */	b lbl_80269790
+lbl_80269754:
+/* 80269754 00265594  7C B9 B2 14 */	add r5, r25, r22
+/* 80269758 00265598  38 61 00 28 */	addi r3, r1, 0x28
+/* 8026975C 0026559C  80 85 00 04 */	lwz r4, 4(r5)
+/* 80269760 002655A0  80 A5 00 10 */	lwz r5, 0x10(r5)
+/* 80269764 002655A4  7F E6 FB 78 */	mr r6, r31
+/* 80269768 002655A8  38 E0 00 00 */	li r7, 0
+/* 8026976C 002655AC  4B FF FF 05 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
+/* 80269770 002655B0  7C 64 1B 78 */	mr r4, r3
+/* 80269774 002655B4  38 61 00 80 */	addi r3, r1, 0x80
+/* 80269778 002655B8  7C 63 BA 14 */	add r3, r3, r23
+/* 8026977C 002655BC  48 00 01 FD */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 80269780 002655C0  3B DE 00 01 */	addi r30, r30, 1
+/* 80269784 002655C4  3A F7 00 10 */	addi r23, r23, 0x10
+/* 80269788 002655C8  3A B5 00 01 */	addi r21, r21, 1
+/* 8026978C 002655CC  3A D6 00 04 */	addi r22, r22, 4
+lbl_80269790:
+/* 80269790 002655D0  80 19 00 00 */	lwz r0, 0(r25)
+/* 80269794 002655D4  7C 15 00 00 */	cmpw r21, r0
+/* 80269798 002655D8  41 80 FF BC */	blt lbl_80269754
+/* 8026979C 002655DC  2C 1B 00 00 */	cmpwi r27, 0
+/* 802697A0 002655E0  41 82 00 34 */	beq lbl_802697D4
+/* 802697A4 002655E4  38 61 00 18 */	addi r3, r1, 0x18
+/* 802697A8 002655E8  7F 84 E3 78 */	mr r4, r28
+/* 802697AC 002655EC  7F A5 EB 78 */	mr r5, r29
+/* 802697B0 002655F0  7F E6 FB 78 */	mr r6, r31
+/* 802697B4 002655F4  38 E0 00 01 */	li r7, 1
+/* 802697B8 002655F8  4B FF FE B9 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
+/* 802697BC 002655FC  7C 64 1B 78 */	mr r4, r3
+/* 802697C0 00265600  57 C0 20 36 */	slwi r0, r30, 4
+/* 802697C4 00265604  38 61 00 80 */	addi r3, r1, 0x80
+/* 802697C8 00265608  7C 63 02 14 */	add r3, r3, r0
+/* 802697CC 0026560C  48 00 01 AD */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 802697D0 00265610  3B DE 00 01 */	addi r30, r30, 1
+lbl_802697D4:
+/* 802697D4 00265614  3A A0 00 00 */	li r21, 0
+/* 802697D8 00265618  3A C0 00 04 */	li r22, 4
+/* 802697DC 0026561C  57 D9 20 36 */	slwi r25, r30, 4
+lbl_802697E0:
+/* 802697E0 00265620  7C 15 F8 40 */	cmplw r21, r31
+/* 802697E4 00265624  41 82 00 80 */	beq lbl_80269864
+/* 802697E8 00265628  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
+/* 802697EC 0026562C  4B F0 CE D9 */	bl storageManager__Q23app11ApplicationFv
+/* 802697F0 00265630  7E A4 AB 78 */	mr r4, r21
+/* 802697F4 00265634  48 19 B6 E5 */	bl backupFileData2__Q27storage14StorageManagerFUl
+/* 802697F8 00265638  7F 44 D3 78 */	mr r4, r26
+/* 802697FC 0026563C  48 19 AB 75 */	bl challengeData__Q27storage15BackupFileData2FQ33scn4step13ChallengeKind
+/* 80269800 00265640  38 A1 00 54 */	addi r5, r1, 0x54
+/* 80269804 00265644  38 83 FF FC */	addi r4, r3, -4
+/* 80269808 00265648  7E C9 03 A6 */	mtctr r22
+lbl_8026980C:
+/* 8026980C 0026564C  80 64 00 04 */	lwz r3, 4(r4)
+/* 80269810 00265650  84 04 00 08 */	lwzu r0, 8(r4)
+/* 80269814 00265654  90 65 00 04 */	stw r3, 4(r5)
+/* 80269818 00265658  94 05 00 08 */	stwu r0, 8(r5)
+/* 8026981C 0026565C  42 00 FF F0 */	bdnz lbl_8026980C
+/* 80269820 00265660  80 04 00 04 */	lwz r0, 4(r4)
+/* 80269824 00265664  90 05 00 04 */	stw r0, 4(r5)
+/* 80269828 00265668  80 01 00 58 */	lwz r0, 0x58(r1)
+/* 8026982C 0026566C  2C 00 00 00 */	cmpwi r0, 0
+/* 80269830 00265670  40 81 00 34 */	ble lbl_80269864
+/* 80269834 00265674  38 61 00 08 */	addi r3, r1, 8
+/* 80269838 00265678  80 81 00 5C */	lwz r4, 0x5c(r1)
+/* 8026983C 0026567C  80 A1 00 68 */	lwz r5, 0x68(r1)
+/* 80269840 00265680  7E A6 AB 78 */	mr r6, r21
+/* 80269844 00265684  38 E0 00 00 */	li r7, 0
+/* 80269848 00265688  4B FF FE 29 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
+/* 8026984C 0026568C  7C 64 1B 78 */	mr r4, r3
+/* 80269850 00265690  38 61 00 80 */	addi r3, r1, 0x80
+/* 80269854 00265694  7C 63 CA 14 */	add r3, r3, r25
+/* 80269858 00265698  48 00 01 21 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 8026985C 0026569C  3B DE 00 01 */	addi r30, r30, 1
+/* 80269860 002656A0  3B 39 00 10 */	addi r25, r25, 0x10
+lbl_80269864:
+/* 80269864 002656A4  3A B5 00 01 */	addi r21, r21, 1
+/* 80269868 002656A8  28 15 00 03 */	cmplwi r21, 3
+/* 8026986C 002656AC  41 80 FF 74 */	blt lbl_802697E0
+/* 80269870 002656B0  3A BE FF FF */	addi r21, r30, -1
+/* 80269874 002656B4  48 00 00 80 */	b lbl_802698F4
+lbl_80269878:
+/* 80269878 002656B8  3A E0 00 00 */	li r23, 0
+/* 8026987C 002656BC  3B 20 00 00 */	li r25, 0
+/* 80269880 002656C0  48 00 00 68 */	b lbl_802698E8
+lbl_80269884:
+/* 80269884 002656C4  38 61 00 80 */	addi r3, r1, 0x80
+/* 80269888 002656C8  7C 63 CA 14 */	add r3, r3, r25
+/* 8026988C 002656CC  80 83 00 00 */	lwz r4, 0(r3)
+/* 80269890 002656D0  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 80269894 002656D4  7C 04 00 00 */	cmpw r4, r0
+/* 80269898 002656D8  40 80 00 48 */	bge lbl_802698E0
+/* 8026989C 002656DC  80 03 00 00 */	lwz r0, 0(r3)
+/* 802698A0 002656E0  90 01 00 48 */	stw r0, 0x48(r1)
+/* 802698A4 002656E4  80 03 00 04 */	lwz r0, 4(r3)
+/* 802698A8 002656E8  90 01 00 4C */	stw r0, 0x4c(r1)
+/* 802698AC 002656EC  80 03 00 08 */	lwz r0, 8(r3)
+/* 802698B0 002656F0  90 01 00 50 */	stw r0, 0x50(r1)
+/* 802698B4 002656F4  88 03 00 0C */	lbz r0, 0xc(r3)
+/* 802698B8 002656F8  98 01 00 54 */	stb r0, 0x54(r1)
+/* 802698BC 002656FC  38 17 00 01 */	addi r0, r23, 1
+/* 802698C0 00265700  54 00 20 36 */	slwi r0, r0, 4
+/* 802698C4 00265704  3A C1 00 80 */	addi r22, r1, 0x80
+/* 802698C8 00265708  7E D6 02 14 */	add r22, r22, r0
+/* 802698CC 0026570C  7E C4 B3 78 */	mr r4, r22
+/* 802698D0 00265710  48 00 00 A9 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 802698D4 00265714  7E C3 B3 78 */	mr r3, r22
+/* 802698D8 00265718  38 81 00 48 */	addi r4, r1, 0x48
+/* 802698DC 0026571C  48 00 00 9D */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+lbl_802698E0:
+/* 802698E0 00265720  3A F7 00 01 */	addi r23, r23, 1
+/* 802698E4 00265724  3B 39 00 10 */	addi r25, r25, 0x10
+lbl_802698E8:
+/* 802698E8 00265728  7C 17 A8 00 */	cmpw r23, r21
+/* 802698EC 0026572C  41 80 FF 98 */	blt lbl_80269884
+/* 802698F0 00265730  3A B5 FF FF */	addi r21, r21, -1
+lbl_802698F4:
+/* 802698F4 00265734  2C 15 00 00 */	cmpwi r21, 0
+/* 802698F8 00265738  41 81 FF 80 */	bgt lbl_80269878
+/* 802698FC 0026573C  38 60 00 40 */	li r3, 0x40
+/* 80269900 00265740  38 1E FF FC */	addi r0, r30, -4
+/* 80269904 00265744  7C 09 03 A6 */	mtctr r0
+/* 80269908 00265748  2C 1E 00 04 */	cmpwi r30, 4
+/* 8026990C 0026574C  40 81 00 2C */	ble lbl_80269938
+lbl_80269910:
+/* 80269910 00265750  38 81 00 80 */	addi r4, r1, 0x80
+/* 80269914 00265754  7C 84 1A 14 */	add r4, r4, r3
+/* 80269918 00265758  88 04 00 0C */	lbz r0, 0xc(r4)
+/* 8026991C 0026575C  2C 00 00 00 */	cmpwi r0, 0
+/* 80269920 00265760  41 82 00 10 */	beq lbl_80269930
+/* 80269924 00265764  38 61 00 B0 */	addi r3, r1, 0xb0
+/* 80269928 00265768  48 00 00 51 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 8026992C 0026576C  48 00 00 0C */	b lbl_80269938
+lbl_80269930:
+/* 80269930 00265770  38 63 00 10 */	addi r3, r3, 0x10
+/* 80269934 00265774  42 00 FF DC */	bdnz lbl_80269910
+lbl_80269938:
+/* 80269938 00265778  3A A0 00 00 */	li r21, 0
+/* 8026993C 0026577C  3B 20 00 00 */	li r25, 0
+lbl_80269940:
+/* 80269940 00265780  7C 78 CA 14 */	add r3, r24, r25
+/* 80269944 00265784  38 81 00 80 */	addi r4, r1, 0x80
+/* 80269948 00265788  7C 84 CA 14 */	add r4, r4, r25
+/* 8026994C 0026578C  48 00 00 2D */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+/* 80269950 00265790  3A B5 00 01 */	addi r21, r21, 1
+/* 80269954 00265794  3B 39 00 10 */	addi r25, r25, 0x10
+/* 80269958 00265798  2C 15 00 04 */	cmpwi r21, 4
+/* 8026995C 0026579C  41 80 FF E4 */	blt lbl_80269940
+/* 80269960 002657A0  39 61 01 40 */	addi r11, r1, 0x140
+/* 80269964 002657A4  4B D9 DA 09 */	bl func_8000736C
+/* 80269968 002657A8  80 01 01 44 */	lwz r0, 0x144(r1)
+/* 8026996C 002657AC  7C 08 03 A6 */	mtlr r0
+/* 80269970 002657B0  38 21 01 40 */	addi r1, r1, 0x140
+/* 80269974 002657B4  4E 80 00 20 */	blr 
+
+.global __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+__as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem:
+/* 80269978 002657B8  80 04 00 00 */	lwz r0, 0(r4)
+/* 8026997C 002657BC  90 03 00 00 */	stw r0, 0(r3)
+/* 80269980 002657C0  80 04 00 04 */	lwz r0, 4(r4)
+/* 80269984 002657C4  90 03 00 04 */	stw r0, 4(r3)
+/* 80269988 002657C8  80 04 00 08 */	lwz r0, 8(r4)
+/* 8026998C 002657CC  90 03 00 08 */	stw r0, 8(r3)
+/* 80269990 002657D0  88 04 00 0C */	lbz r0, 0xc(r4)
+/* 80269994 002657D4  98 03 00 0C */	stb r0, 0xc(r3)
+/* 80269998 002657D8  4E 80 00 20 */	blr 

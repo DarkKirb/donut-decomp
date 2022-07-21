@@ -1,0 +1,392 @@
+.include "macros.inc"
+
+.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.global __ct__Q43scn4step4info10HelpPushUpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component
+__ct__Q43scn4step4info10HelpPushUpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component:
+/* 803A6B54 003A2994  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 803A6B58 003A2998  7C 08 02 A6 */	mflr r0
+/* 803A6B5C 003A299C  90 01 00 94 */	stw r0, 0x94(r1)
+/* 803A6B60 003A29A0  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 803A6B64 003A29A4  93 C1 00 88 */	stw r30, 0x88(r1)
+/* 803A6B68 003A29A8  7C 7E 1B 78 */	mr r30, r3
+/* 803A6B6C 003A29AC  7C 86 23 78 */	mr r6, r4
+/* 803A6B70 003A29B0  7C BF 2B 78 */	mr r31, r5
+/* 803A6B74 003A29B4  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803A6B78 003A29B8  3C 80 80 49 */	lis r4, $$252107@ha
+/* 803A6B7C 003A29BC  38 84 F6 48 */	addi r4, r4, $$252107@l
+/* 803A6B80 003A29C0  3C A0 80 49 */	lis r5, $$252108@ha
+/* 803A6B84 003A29C4  38 A5 F6 58 */	addi r5, r5, $$252108@l
+/* 803A6B88 003A29C8  4B E0 71 DD */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+/* 803A6B8C 003A29CC  7C 64 1B 78 */	mr r4, r3
+/* 803A6B90 003A29D0  7F C3 F3 78 */	mr r3, r30
+/* 803A6B94 003A29D4  4B E0 55 FD */	bl __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
+/* 803A6B98 003A29D8  38 7E 01 D0 */	addi r3, r30, 0x1d0
+/* 803A6B9C 003A29DC  4B C7 4C 65 */	bl OSCreateAlarm
+/* 803A6BA0 003A29E0  38 00 00 00 */	li r0, 0
+/* 803A6BA4 003A29E4  90 1E 01 D8 */	stw r0, 0x1d8(r30)
+/* 803A6BA8 003A29E8  7F C3 F3 78 */	mr r3, r30
+/* 803A6BAC 003A29EC  7F E4 FB 78 */	mr r4, r31
+/* 803A6BB0 003A29F0  4B E0 65 89 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
+/* 803A6BB4 003A29F4  38 61 00 08 */	addi r3, r1, 8
+/* 803A6BB8 003A29F8  7F C4 F3 78 */	mr r4, r30
+/* 803A6BBC 003A29FC  4B E0 62 09 */	bl rootPane__Q23lyt6LayoutFv
+/* 803A6BC0 003A2A00  38 61 00 08 */	addi r3, r1, 8
+/* 803A6BC4 003A2A04  38 80 00 00 */	li r4, 0
+/* 803A6BC8 003A2A08  4B E0 76 E1 */	bl setVisibility__Q23lyt12PaneAccessorCFb
+/* 803A6BCC 003A2A0C  38 61 00 08 */	addi r3, r1, 8
+/* 803A6BD0 003A2A10  38 80 FF FF */	li r4, -1
+/* 803A6BD4 003A2A14  4B DD 16 4D */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6BD8 003A2A18  7F C3 F3 78 */	mr r3, r30
+/* 803A6BDC 003A2A1C  38 8D D0 D0 */	addi r4, r13, $$252109-_SDA_BASE_
+/* 803A6BE0 003A2A20  4B E0 63 75 */	bl setAnimByName__Q23lyt6LayoutFPCc
+/* 803A6BE4 003A2A24  7F C3 F3 78 */	mr r3, r30
+/* 803A6BE8 003A2A28  38 80 00 01 */	li r4, 1
+/* 803A6BEC 003A2A2C  4B E0 65 15 */	bl start__Q23lyt6LayoutFb
+/* 803A6BF0 003A2A30  7F C3 F3 78 */	mr r3, r30
+/* 803A6BF4 003A2A34  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 803A6BF8 003A2A38  83 C1 00 88 */	lwz r30, 0x88(r1)
+/* 803A6BFC 003A2A3C  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 803A6C00 003A2A40  7C 08 03 A6 */	mtlr r0
+/* 803A6C04 003A2A44  38 21 00 90 */	addi r1, r1, 0x90
+/* 803A6C08 003A2A48  4E 80 00 20 */	blr 
+
+.global updateFrame__Q43scn4step4info10HelpPushUpFb
+updateFrame__Q43scn4step4info10HelpPushUpFb:
+/* 803A6C0C 003A2A4C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803A6C10 003A2A50  7C 08 02 A6 */	mflr r0
+/* 803A6C14 003A2A54  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803A6C18 003A2A58  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803A6C1C 003A2A5C  7C 7F 1B 78 */	mr r31, r3
+/* 803A6C20 003A2A60  80 03 01 D8 */	lwz r0, 0x1d8(r3)
+/* 803A6C24 003A2A64  2C 00 00 05 */	cmpwi r0, 5
+/* 803A6C28 003A2A68  40 82 00 0C */	bne lbl_803A6C34
+/* 803A6C2C 003A2A6C  38 00 00 01 */	li r0, 1
+/* 803A6C30 003A2A70  48 00 00 0C */	b lbl_803A6C3C
+lbl_803A6C34:
+/* 803A6C34 003A2A74  7C 80 00 34 */	cntlzw r0, r4
+/* 803A6C38 003A2A78  54 00 D9 7E */	srwi r0, r0, 5
+lbl_803A6C3C:
+/* 803A6C3C 003A2A7C  2C 00 00 00 */	cmpwi r0, 0
+/* 803A6C40 003A2A80  41 82 00 14 */	beq lbl_803A6C54
+/* 803A6C44 003A2A84  7F E3 FB 78 */	mr r3, r31
+/* 803A6C48 003A2A88  4B E0 64 71 */	bl updateFrame__Q23lyt6LayoutFv
+/* 803A6C4C 003A2A8C  38 7F 01 D0 */	addi r3, r31, 0x1d0
+/* 803A6C50 003A2A90  48 05 ED 51 */	bl advanceIfNotEnd__Q24util12FrameCounterFv
+lbl_803A6C54:
+/* 803A6C54 003A2A94  80 1F 01 D8 */	lwz r0, 0x1d8(r31)
+/* 803A6C58 003A2A98  2C 00 00 01 */	cmpwi r0, 1
+/* 803A6C5C 003A2A9C  41 82 00 20 */	beq lbl_803A6C7C
+/* 803A6C60 003A2AA0  2C 00 00 02 */	cmpwi r0, 2
+/* 803A6C64 003A2AA4  41 82 00 34 */	beq lbl_803A6C98
+/* 803A6C68 003A2AA8  2C 00 00 03 */	cmpwi r0, 3
+/* 803A6C6C 003A2AAC  41 82 00 60 */	beq lbl_803A6CCC
+/* 803A6C70 003A2AB0  2C 00 00 05 */	cmpwi r0, 5
+/* 803A6C74 003A2AB4  41 82 00 74 */	beq lbl_803A6CE8
+/* 803A6C78 003A2AB8  48 00 00 AC */	b lbl_803A6D24
+lbl_803A6C7C:
+/* 803A6C7C 003A2ABC  38 7F 01 D0 */	addi r3, r31, 0x1d0
+/* 803A6C80 003A2AC0  48 05 ED 09 */	bl isEnd__Q24util12FrameCounterCFv
+/* 803A6C84 003A2AC4  2C 03 00 00 */	cmpwi r3, 0
+/* 803A6C88 003A2AC8  41 82 00 9C */	beq lbl_803A6D24
+/* 803A6C8C 003A2ACC  7F E3 FB 78 */	mr r3, r31
+/* 803A6C90 003A2AD0  48 00 02 FD */	bl startAppearAnim__Q43scn4step4info10HelpPushUpFv
+/* 803A6C94 003A2AD4  48 00 00 90 */	b lbl_803A6D24
+lbl_803A6C98:
+/* 803A6C98 003A2AD8  7F E3 FB 78 */	mr r3, r31
+/* 803A6C9C 003A2ADC  4B E0 64 7D */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803A6CA0 003A2AE0  2C 03 00 00 */	cmpwi r3, 0
+/* 803A6CA4 003A2AE4  41 82 00 80 */	beq lbl_803A6D24
+/* 803A6CA8 003A2AE8  7F E3 FB 78 */	mr r3, r31
+/* 803A6CAC 003A2AEC  38 8D D0 D0 */	addi r4, r13, $$252109-_SDA_BASE_
+/* 803A6CB0 003A2AF0  4B E0 62 A5 */	bl setAnimByName__Q23lyt6LayoutFPCc
+/* 803A6CB4 003A2AF4  7F E3 FB 78 */	mr r3, r31
+/* 803A6CB8 003A2AF8  38 80 00 01 */	li r4, 1
+/* 803A6CBC 003A2AFC  4B E0 64 45 */	bl start__Q23lyt6LayoutFb
+/* 803A6CC0 003A2B00  38 00 00 04 */	li r0, 4
+/* 803A6CC4 003A2B04  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+/* 803A6CC8 003A2B08  48 00 00 5C */	b lbl_803A6D24
+lbl_803A6CCC:
+/* 803A6CCC 003A2B0C  7F E3 FB 78 */	mr r3, r31
+/* 803A6CD0 003A2B10  4B E0 64 49 */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803A6CD4 003A2B14  2C 03 00 00 */	cmpwi r3, 0
+/* 803A6CD8 003A2B18  41 82 00 4C */	beq lbl_803A6D24
+/* 803A6CDC 003A2B1C  7F E3 FB 78 */	mr r3, r31
+/* 803A6CE0 003A2B20  48 00 03 19 */	bl startDisappearAnim__Q43scn4step4info10HelpPushUpFv
+/* 803A6CE4 003A2B24  48 00 00 40 */	b lbl_803A6D24
+lbl_803A6CE8:
+/* 803A6CE8 003A2B28  7F E3 FB 78 */	mr r3, r31
+/* 803A6CEC 003A2B2C  4B E0 64 2D */	bl isAnimEnd__Q23lyt6LayoutCFv
+/* 803A6CF0 003A2B30  2C 03 00 00 */	cmpwi r3, 0
+/* 803A6CF4 003A2B34  41 82 00 30 */	beq lbl_803A6D24
+/* 803A6CF8 003A2B38  38 61 00 08 */	addi r3, r1, 8
+/* 803A6CFC 003A2B3C  7F E4 FB 78 */	mr r4, r31
+/* 803A6D00 003A2B40  4B E0 60 C5 */	bl rootPane__Q23lyt6LayoutFv
+/* 803A6D04 003A2B44  38 61 00 08 */	addi r3, r1, 8
+/* 803A6D08 003A2B48  38 80 00 00 */	li r4, 0
+/* 803A6D0C 003A2B4C  4B E0 75 9D */	bl setVisibility__Q23lyt12PaneAccessorCFb
+/* 803A6D10 003A2B50  38 61 00 08 */	addi r3, r1, 8
+/* 803A6D14 003A2B54  38 80 FF FF */	li r4, -1
+/* 803A6D18 003A2B58  4B DD 15 09 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6D1C 003A2B5C  38 00 00 00 */	li r0, 0
+/* 803A6D20 003A2B60  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+lbl_803A6D24:
+/* 803A6D24 003A2B64  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803A6D28 003A2B68  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803A6D2C 003A2B6C  7C 08 03 A6 */	mtlr r0
+/* 803A6D30 003A2B70  38 21 00 30 */	addi r1, r1, 0x30
+/* 803A6D34 003A2B74  4E 80 00 20 */	blr 
+
+.global appear__Q43scn4step4info10HelpPushUpFUl
+appear__Q43scn4step4info10HelpPushUpFUl:
+/* 803A6D38 003A2B78  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803A6D3C 003A2B7C  7C 08 02 A6 */	mflr r0
+/* 803A6D40 003A2B80  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803A6D44 003A2B84  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803A6D48 003A2B88  7C 7F 1B 78 */	mr r31, r3
+/* 803A6D4C 003A2B8C  80 03 01 D8 */	lwz r0, 0x1d8(r3)
+/* 803A6D50 003A2B90  2C 00 00 03 */	cmpwi r0, 3
+/* 803A6D54 003A2B94  41 82 00 18 */	beq lbl_803A6D6C
+/* 803A6D58 003A2B98  2C 00 00 05 */	cmpwi r0, 5
+/* 803A6D5C 003A2B9C  41 82 00 1C */	beq lbl_803A6D78
+/* 803A6D60 003A2BA0  2C 00 00 00 */	cmpwi r0, 0
+/* 803A6D64 003A2BA4  41 82 00 1C */	beq lbl_803A6D80
+/* 803A6D68 003A2BA8  48 00 00 28 */	b lbl_803A6D90
+lbl_803A6D6C:
+/* 803A6D6C 003A2BAC  38 00 00 03 */	li r0, 3
+/* 803A6D70 003A2BB0  90 03 01 D8 */	stw r0, 0x1d8(r3)
+/* 803A6D74 003A2BB4  48 00 00 1C */	b lbl_803A6D90
+lbl_803A6D78:
+/* 803A6D78 003A2BB8  48 00 02 15 */	bl startAppearAnim__Q43scn4step4info10HelpPushUpFv
+/* 803A6D7C 003A2BBC  48 00 00 14 */	b lbl_803A6D90
+lbl_803A6D80:
+/* 803A6D80 003A2BC0  38 63 01 D0 */	addi r3, r3, 0x1d0
+/* 803A6D84 003A2BC4  48 05 EB FD */	bl reset__Q24util12FrameCounterFUl
+/* 803A6D88 003A2BC8  38 00 00 01 */	li r0, 1
+/* 803A6D8C 003A2BCC  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+lbl_803A6D90:
+/* 803A6D90 003A2BD0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803A6D94 003A2BD4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803A6D98 003A2BD8  7C 08 03 A6 */	mtlr r0
+/* 803A6D9C 003A2BDC  38 21 00 10 */	addi r1, r1, 0x10
+/* 803A6DA0 003A2BE0  4E 80 00 20 */	blr 
+
+.global disappear__Q43scn4step4info10HelpPushUpFv
+disappear__Q43scn4step4info10HelpPushUpFv:
+/* 803A6DA4 003A2BE4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803A6DA8 003A2BE8  7C 08 02 A6 */	mflr r0
+/* 803A6DAC 003A2BEC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803A6DB0 003A2BF0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803A6DB4 003A2BF4  7C 7F 1B 78 */	mr r31, r3
+/* 803A6DB8 003A2BF8  80 03 01 D8 */	lwz r0, 0x1d8(r3)
+/* 803A6DBC 003A2BFC  2C 00 00 01 */	cmpwi r0, 1
+/* 803A6DC0 003A2C00  41 82 00 18 */	beq lbl_803A6DD8
+/* 803A6DC4 003A2C04  2C 00 00 02 */	cmpwi r0, 2
+/* 803A6DC8 003A2C08  41 82 00 24 */	beq lbl_803A6DEC
+/* 803A6DCC 003A2C0C  2C 00 00 04 */	cmpwi r0, 4
+/* 803A6DD0 003A2C10  41 82 00 28 */	beq lbl_803A6DF8
+/* 803A6DD4 003A2C14  48 00 00 28 */	b lbl_803A6DFC
+lbl_803A6DD8:
+/* 803A6DD8 003A2C18  38 63 01 D0 */	addi r3, r3, 0x1d0
+/* 803A6DDC 003A2C1C  4B D5 F9 A5 */	bl DetachPlayerHeap__Q44nw4r3snd6detail10BasicSoundFPQ44nw4r3snd6detail10PlayerHeap
+/* 803A6DE0 003A2C20  38 00 00 00 */	li r0, 0
+/* 803A6DE4 003A2C24  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+/* 803A6DE8 003A2C28  48 00 00 14 */	b lbl_803A6DFC
+lbl_803A6DEC:
+/* 803A6DEC 003A2C2C  38 00 00 03 */	li r0, 3
+/* 803A6DF0 003A2C30  90 03 01 D8 */	stw r0, 0x1d8(r3)
+/* 803A6DF4 003A2C34  48 00 00 08 */	b lbl_803A6DFC
+lbl_803A6DF8:
+/* 803A6DF8 003A2C38  48 00 02 01 */	bl startDisappearAnim__Q43scn4step4info10HelpPushUpFv
+lbl_803A6DFC:
+/* 803A6DFC 003A2C3C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803A6E00 003A2C40  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803A6E04 003A2C44  7C 08 03 A6 */	mtlr r0
+/* 803A6E08 003A2C48  38 21 00 10 */	addi r1, r1, 0x10
+/* 803A6E0C 003A2C4C  4E 80 00 20 */	blr 
+
+.global disappearForce__Q43scn4step4info10HelpPushUpFv
+disappearForce__Q43scn4step4info10HelpPushUpFv:
+/* 803A6E10 003A2C50  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803A6E14 003A2C54  7C 08 02 A6 */	mflr r0
+/* 803A6E18 003A2C58  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803A6E1C 003A2C5C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803A6E20 003A2C60  7C 7F 1B 78 */	mr r31, r3
+/* 803A6E24 003A2C64  38 61 00 08 */	addi r3, r1, 8
+/* 803A6E28 003A2C68  7F E4 FB 78 */	mr r4, r31
+/* 803A6E2C 003A2C6C  4B E0 5F 99 */	bl rootPane__Q23lyt6LayoutFv
+/* 803A6E30 003A2C70  38 61 00 08 */	addi r3, r1, 8
+/* 803A6E34 003A2C74  38 80 00 00 */	li r4, 0
+/* 803A6E38 003A2C78  4B E0 74 71 */	bl setVisibility__Q23lyt12PaneAccessorCFb
+/* 803A6E3C 003A2C7C  38 61 00 08 */	addi r3, r1, 8
+/* 803A6E40 003A2C80  38 80 FF FF */	li r4, -1
+/* 803A6E44 003A2C84  4B DD 13 DD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6E48 003A2C88  38 00 00 00 */	li r0, 0
+/* 803A6E4C 003A2C8C  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+/* 803A6E50 003A2C90  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803A6E54 003A2C94  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803A6E58 003A2C98  7C 08 03 A6 */	mtlr r0
+/* 803A6E5C 003A2C9C  38 21 00 30 */	addi r1, r1, 0x30
+/* 803A6E60 003A2CA0  4E 80 00 20 */	blr 
+
+.global constraintPos__Q43scn4step4info10HelpPushUpFRCQ33hel4math7Vector2
+constraintPos__Q43scn4step4info10HelpPushUpFRCQ33hel4math7Vector2:
+/* 803A6E64 003A2CA4  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803A6E68 003A2CA8  7C 08 02 A6 */	mflr r0
+/* 803A6E6C 003A2CAC  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803A6E70 003A2CB0  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 803A6E74 003A2CB4  7C 60 1B 78 */	mr r0, r3
+/* 803A6E78 003A2CB8  7C 9F 23 78 */	mr r31, r4
+/* 803A6E7C 003A2CBC  38 61 00 38 */	addi r3, r1, 0x38
+/* 803A6E80 003A2CC0  7C 04 03 78 */	mr r4, r0
+/* 803A6E84 003A2CC4  4B E0 5F 41 */	bl rootPane__Q23lyt6LayoutFv
+/* 803A6E88 003A2CC8  C0 22 D9 2C */	lfs f1, $$252184-_SDA2_BASE_(r2)
+/* 803A6E8C 003A2CCC  D0 21 00 14 */	stfs f1, 0x14(r1)
+/* 803A6E90 003A2CD0  C0 02 D9 30 */	lfs f0, $$252185-_SDA2_BASE_(r2)
+/* 803A6E94 003A2CD4  D0 01 00 18 */	stfs f0, 0x18(r1)
+/* 803A6E98 003A2CD8  D0 21 00 1C */	stfs f1, 0x1c(r1)
+/* 803A6E9C 003A2CDC  38 61 00 20 */	addi r3, r1, 0x20
+/* 803A6EA0 003A2CE0  7F E4 FB 78 */	mr r4, r31
+/* 803A6EA4 003A2CE4  4B DF 85 B9 */	bl toVector3__Q33hel4math7Vector2CFv
+/* 803A6EA8 003A2CE8  80 61 00 20 */	lwz r3, 0x20(r1)
+/* 803A6EAC 003A2CEC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803A6EB0 003A2CF0  90 61 00 08 */	stw r3, 8(r1)
+/* 803A6EB4 003A2CF4  90 01 00 0C */	stw r0, 0xc(r1)
+/* 803A6EB8 003A2CF8  80 01 00 28 */	lwz r0, 0x28(r1)
+/* 803A6EBC 003A2CFC  90 01 00 10 */	stw r0, 0x10(r1)
+/* 803A6EC0 003A2D00  C0 21 00 08 */	lfs f1, 8(r1)
+/* 803A6EC4 003A2D04  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 803A6EC8 003A2D08  EC 01 00 2A */	fadds f0, f1, f0
+/* 803A6ECC 003A2D0C  D0 01 00 08 */	stfs f0, 8(r1)
+/* 803A6ED0 003A2D10  C0 21 00 0C */	lfs f1, 0xc(r1)
+/* 803A6ED4 003A2D14  C0 01 00 18 */	lfs f0, 0x18(r1)
+/* 803A6ED8 003A2D18  EC 01 00 2A */	fadds f0, f1, f0
+/* 803A6EDC 003A2D1C  D0 01 00 0C */	stfs f0, 0xc(r1)
+/* 803A6EE0 003A2D20  C0 21 00 10 */	lfs f1, 0x10(r1)
+/* 803A6EE4 003A2D24  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 803A6EE8 003A2D28  EC 01 00 2A */	fadds f0, f1, f0
+/* 803A6EEC 003A2D2C  D0 01 00 10 */	stfs f0, 0x10(r1)
+/* 803A6EF0 003A2D30  80 61 00 08 */	lwz r3, 8(r1)
+/* 803A6EF4 003A2D34  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 803A6EF8 003A2D38  90 61 00 2C */	stw r3, 0x2c(r1)
+/* 803A6EFC 003A2D3C  90 01 00 30 */	stw r0, 0x30(r1)
+/* 803A6F00 003A2D40  80 01 00 10 */	lwz r0, 0x10(r1)
+/* 803A6F04 003A2D44  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803A6F08 003A2D48  38 61 00 38 */	addi r3, r1, 0x38
+/* 803A6F0C 003A2D4C  38 81 00 2C */	addi r4, r1, 0x2c
+/* 803A6F10 003A2D50  4B E0 72 E5 */	bl setTrans__Q23lyt12PaneAccessorCFRCQ33hel4math7Vector3
+/* 803A6F14 003A2D54  38 61 00 38 */	addi r3, r1, 0x38
+/* 803A6F18 003A2D58  38 80 FF FF */	li r4, -1
+/* 803A6F1C 003A2D5C  4B DD 13 05 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6F20 003A2D60  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 803A6F24 003A2D64  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803A6F28 003A2D68  7C 08 03 A6 */	mtlr r0
+/* 803A6F2C 003A2D6C  38 21 00 60 */	addi r1, r1, 0x60
+/* 803A6F30 003A2D70  4E 80 00 20 */	blr 
+
+.global onObjStopChanged__Q43scn4step4info10HelpPushUpFb
+onObjStopChanged__Q43scn4step4info10HelpPushUpFb:
+/* 803A6F34 003A2D74  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803A6F38 003A2D78  7C 08 02 A6 */	mflr r0
+/* 803A6F3C 003A2D7C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803A6F40 003A2D80  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803A6F44 003A2D84  7C 60 1B 78 */	mr r0, r3
+/* 803A6F48 003A2D88  7C 9F 23 78 */	mr r31, r4
+/* 803A6F4C 003A2D8C  38 61 00 08 */	addi r3, r1, 8
+/* 803A6F50 003A2D90  7C 04 03 78 */	mr r4, r0
+/* 803A6F54 003A2D94  38 AD D0 D8 */	addi r5, r13, $$252189-_SDA_BASE_
+/* 803A6F58 003A2D98  4B E0 5E BD */	bl paneByName__Q23lyt6LayoutFPCc
+/* 803A6F5C 003A2D9C  38 61 00 08 */	addi r3, r1, 8
+/* 803A6F60 003A2DA0  7F E0 00 34 */	cntlzw r0, r31
+/* 803A6F64 003A2DA4  54 04 D9 7E */	srwi r4, r0, 5
+/* 803A6F68 003A2DA8  4B E0 73 41 */	bl setVisibility__Q23lyt12PaneAccessorCFb
+/* 803A6F6C 003A2DAC  38 61 00 08 */	addi r3, r1, 8
+/* 803A6F70 003A2DB0  38 80 FF FF */	li r4, -1
+/* 803A6F74 003A2DB4  4B DD 12 AD */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6F78 003A2DB8  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803A6F7C 003A2DBC  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803A6F80 003A2DC0  7C 08 03 A6 */	mtlr r0
+/* 803A6F84 003A2DC4  38 21 00 30 */	addi r1, r1, 0x30
+/* 803A6F88 003A2DC8  4E 80 00 20 */	blr 
+
+.global startAppearAnim__Q43scn4step4info10HelpPushUpFv
+startAppearAnim__Q43scn4step4info10HelpPushUpFv:
+/* 803A6F8C 003A2DCC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803A6F90 003A2DD0  7C 08 02 A6 */	mflr r0
+/* 803A6F94 003A2DD4  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803A6F98 003A2DD8  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803A6F9C 003A2DDC  7C 7F 1B 78 */	mr r31, r3
+/* 803A6FA0 003A2DE0  38 61 00 08 */	addi r3, r1, 8
+/* 803A6FA4 003A2DE4  7F E4 FB 78 */	mr r4, r31
+/* 803A6FA8 003A2DE8  4B E0 5E 1D */	bl rootPane__Q23lyt6LayoutFv
+/* 803A6FAC 003A2DEC  38 61 00 08 */	addi r3, r1, 8
+/* 803A6FB0 003A2DF0  38 80 00 01 */	li r4, 1
+/* 803A6FB4 003A2DF4  4B E0 72 F5 */	bl setVisibility__Q23lyt12PaneAccessorCFb
+/* 803A6FB8 003A2DF8  38 61 00 08 */	addi r3, r1, 8
+/* 803A6FBC 003A2DFC  38 80 FF FF */	li r4, -1
+/* 803A6FC0 003A2E00  4B DD 12 61 */	bl __dt__Q23lyt12PaneAccessorFv
+/* 803A6FC4 003A2E04  7F E3 FB 78 */	mr r3, r31
+/* 803A6FC8 003A2E08  38 8D D0 E0 */	addi r4, r13, $$252192-_SDA_BASE_
+/* 803A6FCC 003A2E0C  4B E0 5F 89 */	bl setAnimByName__Q23lyt6LayoutFPCc
+/* 803A6FD0 003A2E10  7F E3 FB 78 */	mr r3, r31
+/* 803A6FD4 003A2E14  38 80 00 00 */	li r4, 0
+/* 803A6FD8 003A2E18  4B E0 61 29 */	bl start__Q23lyt6LayoutFb
+/* 803A6FDC 003A2E1C  38 00 00 02 */	li r0, 2
+/* 803A6FE0 003A2E20  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+/* 803A6FE4 003A2E24  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803A6FE8 003A2E28  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803A6FEC 003A2E2C  7C 08 03 A6 */	mtlr r0
+/* 803A6FF0 003A2E30  38 21 00 30 */	addi r1, r1, 0x30
+/* 803A6FF4 003A2E34  4E 80 00 20 */	blr 
+
+.global startDisappearAnim__Q43scn4step4info10HelpPushUpFv
+startDisappearAnim__Q43scn4step4info10HelpPushUpFv:
+/* 803A6FF8 003A2E38  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803A6FFC 003A2E3C  7C 08 02 A6 */	mflr r0
+/* 803A7000 003A2E40  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803A7004 003A2E44  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803A7008 003A2E48  7C 7F 1B 78 */	mr r31, r3
+/* 803A700C 003A2E4C  38 8D D0 E8 */	addi r4, r13, $$252195-_SDA_BASE_
+/* 803A7010 003A2E50  4B E0 5F 45 */	bl setAnimByName__Q23lyt6LayoutFPCc
+/* 803A7014 003A2E54  7F E3 FB 78 */	mr r3, r31
+/* 803A7018 003A2E58  38 80 00 00 */	li r4, 0
+/* 803A701C 003A2E5C  4B E0 60 E5 */	bl start__Q23lyt6LayoutFb
+/* 803A7020 003A2E60  38 00 00 05 */	li r0, 5
+/* 803A7024 003A2E64  90 1F 01 D8 */	stw r0, 0x1d8(r31)
+/* 803A7028 003A2E68  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803A702C 003A2E6C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803A7030 003A2E70  7C 08 03 A6 */	mtlr r0
+/* 803A7034 003A2E74  38 21 00 10 */	addi r1, r1, 0x10
+/* 803A7038 003A2E78  4E 80 00 20 */	blr 
+
+.section .data5, "wa"  # 0x80421040 - 0x80496700
+.global $$252107
+$$252107:
+	.incbin "baserom.dol", 0x48B748, 0x10
+.global $$252108
+$$252108:
+	.incbin "baserom.dol", 0x48B758, 0x10
+
+.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.global $$252109
+$$252109:
+	.incbin "baserom.dol", 0x4978D0, 0x8
+.global $$252189
+$$252189:
+	.incbin "baserom.dol", 0x4978D8, 0x8
+.global $$252192
+$$252192:
+	.incbin "baserom.dol", 0x4978E0, 0x8
+.global $$252195
+$$252195:
+	.incbin "baserom.dol", 0x4978E8, 0x8
+
+.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.global APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp
+APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp:
+	.incbin "baserom.dol", 0x49E3E8, 0x4
+.global $$252184
+$$252184:
+	.incbin "baserom.dol", 0x49E3EC, 0x4
+.global $$252185
+$$252185:
+	.incbin "baserom.dol", 0x49E3F0, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 80297F3C 00293D7C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -101,7 +101,7 @@ create__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladekn
 __dt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 8029806C 00293EAC  4B F9 66 34 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 8029D75C 0029959C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -202,7 +202,7 @@ create__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22
 __dt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 8029D88C 002996CC  4B F9 0E 14 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 802A1724 0029D564  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -303,7 +303,7 @@ create__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomha
 __dt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802A1854 0029D694  4B F8 CE 4C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4kabu27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4kabu27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 802BD584 002B93C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -404,7 +404,7 @@ create__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22St
 __dt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802BD6B4 002B94F4  4B F7 0F EC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5nruff27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5nruff27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 802C87DC 002C461C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -505,7 +505,7 @@ create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22S
 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802C890C 002C474C  4B F6 5D 94 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5sheld27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5sheld27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 802DEB60 002DA9A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -606,7 +606,7 @@ create__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22S
 __dt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802DEC90 002DAAD0  4B F4 FA 10 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9waddledee27StateGrandLowperEscapeStartFPQ43scn4step5enemy5Enemy:
 /* 802EDEA0 002E9CE0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -707,7 +707,7 @@ create__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddlede
 __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802EDFD0 002E9E10  4B F4 06 D0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknight22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x46FB58, 0x10
@@ -715,7 +715,7 @@ __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11bladeknig
 __vt__Q53scn4step5enemy11bladeknight27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x46FB68, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x4704F8, 0x10
@@ -723,7 +723,7 @@ __vt__Q24util106StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6bouncy22St
 __vt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x470508, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatter22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x470FF8, 0x10
@@ -731,7 +731,7 @@ __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy11broomhatt
 __vt__Q53scn4step5enemy11broomhatter27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x471008, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x4742A8, 0x10
@@ -739,7 +739,7 @@ __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4kabu22Stat
 __vt__Q53scn4step5enemy4kabu27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x4742B8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x475AB8, 0x10
@@ -747,7 +747,7 @@ __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5nruff22Sta
 __vt__Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x475AC8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x477ED0, 0x10
@@ -755,7 +755,7 @@ __vt__Q24util105StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld22Sta
 __vt__Q53scn4step5enemy5sheld27StateGrandLowperEscapeStart:
 	.incbin "baserom.dol", 0x477EE0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee22StateGrandLowperEscape$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x47A318, 0x10

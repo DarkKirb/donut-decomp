@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss11AttackFlashFv
 __ct__Q43scn4step4boss11AttackFlashFv:
 /* 802290C0 00224F00  80 02 A2 E8 */	lwz r0, $$249397-_SDA2_BASE_(r2)
@@ -133,7 +133,7 @@ setEnd__Q43scn4step4boss11AttackFlashF8_GXColor:
 /* 80229268 002250A8  90 03 00 04 */	stw r0, 4(r3)
 /* 8022926C 002250AC  4B F2 26 A8 */	b __as__8_GXColorFRC8_GXColor
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249258
 $$249258:
 	.incbin "baserom.dol", 0x4952B0, 0x4
@@ -141,7 +141,7 @@ $$249258:
 $$249259:
 	.incbin "baserom.dol", 0x4952B4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249397
 $$249397:
 	.incbin "baserom.dol", 0x49ADA8, 0x4

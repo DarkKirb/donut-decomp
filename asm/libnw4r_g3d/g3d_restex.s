@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DCStore__Q34nw4r3g3d7ResPlttFb
 DCStore__Q34nw4r3g3d7ResPlttFb:
 /* 800CE610 000CA450  80 63 00 00 */	lwz r3, 0(r3)

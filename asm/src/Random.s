@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RandBool__Q23app6RandomFf
 RandBool__Q23app6RandomFf:
 /* 8017A9DC 0017681C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -182,7 +182,7 @@ Obj__Q23app6RandomFv:
 /* 8017AC24 00176A64  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
 /* 8017AC28 00176A68  4B FF BA 2C */	b random__Q23app11ApplicationFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Default__Q43hel4math6Random4SeedFv
 Default__Q43hel4math6Random4SeedFv:
 /* 8019EC7C 0019AABC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -413,7 +413,7 @@ randCoreF32__Q33hel4math6RandomFv:
 /* 8019EF50 0019AD90  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019EF54 0019AD94  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249032
 $$249032:
 	.incbin "baserom.dol", 0x49A390, 0x4

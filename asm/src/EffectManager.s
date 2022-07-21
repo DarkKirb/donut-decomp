@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail13EffectManagerFRCQ36effect6detail14ManagerContext
 __ct__Q36effect6detail13EffectManagerFRCQ36effect6detail14ManagerContext:
 /* 80180420 0017C260  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -886,7 +886,7 @@ drawPtclAll__Q36effect6detail13EffectManagerCFRCQ36effect6detail8DrawInfo:
 /* 80180FF0 0017CE30  38 21 00 10 */	addi r1, r1, 0x10
 /* 80180FF4 0017CE34  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_lytMatrix__Q33scn14challengetitle27$$2unnamed$$2EffectManager_cpp$$2Fv
 t_lytMatrix__Q33scn14challengetitle27$$2unnamed$$2EffectManager_cpp$$2Fv:
 /* 801ED0DC 001E8F1C  4B FC 41 A4 */	b ViewMtx__Q23lyt7UtilityFv
@@ -1157,7 +1157,7 @@ drawLYT__Q33scn14challengetitle13EffectManagerFv:
 /* 801ED498 001E92D8  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 801ED49C 001E92DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle13EffectManagerFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle13EffectManagerFRQ33scn10grandtitle9Component:
 /* 802043E4 00200224  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1560,7 +1560,7 @@ drawLYT__Q33scn10grandtitle13EffectManagerFv:
 /* 802049A4 002007E4  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 802049A8 002007E8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history13EffectManagerFRQ33scn7history9Component
 __ct__Q33scn7history13EffectManagerFRQ33scn7history9Component:
 /* 80207AB0 002038F0  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1873,7 +1873,7 @@ drawWarp__Q33scn7history13EffectManagerFv:
 /* 80207F34 00203D74  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 80207F38 00203D78  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn9grandmenu13EffectManagerFRQ33scn9grandmenu9Component
 __ct__Q33scn9grandmenu13EffectManagerFRQ33scn9grandmenu9Component:
 /* 803F3308 003EF148  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -2091,7 +2091,7 @@ drawLYT__Q33scn9grandmenu13EffectManagerFv:
 /* 803F3630 003EF470  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 803F3634 003EF474  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.incbin "baserom.dol", 0x44F450, 0x24
@@ -2111,7 +2111,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6det
 $$2STRING$$2GetBack__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x44F4D4, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253266
 $$253266:
 	.incbin "baserom.dol", 0x49A918, 0x4
@@ -2119,7 +2119,7 @@ $$253266:
 $$253267:
 	.incbin "baserom.dol", 0x49A91C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253568
 $$253568:
 	.incbin "baserom.dol", 0x49AAE0, 0x4
@@ -2127,7 +2127,7 @@ $$253568:
 $$253569:
 	.incbin "baserom.dol", 0x49AAE4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253274
 $$253274:
 	.incbin "baserom.dol", 0x49AB80, 0x4
@@ -2135,7 +2135,7 @@ $$253274:
 $$253275:
 	.incbin "baserom.dol", 0x49AB84, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253185
 $$253185:
 	.incbin "baserom.dol", 0x49ED60, 0x4

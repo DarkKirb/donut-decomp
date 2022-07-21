@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_createWRUpdateData__24$$2unnamed$$2HIDManager_cpp$$2FlRC10KPADStatusRCQ23hid12WRUpdateData
 t_createWRUpdateData__24$$2unnamed$$2HIDManager_cpp$$2FlRC10KPADStatusRCQ23hid12WRUpdateData:
 /* 801A2938 0019E778  94 21 FE 90 */	stwu r1, -0x170(r1)
@@ -1106,7 +1106,7 @@ __sinit_$$3HIDManager_cpp:
 /* 801A3834 0019F674  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A3838 0019F678  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402428, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

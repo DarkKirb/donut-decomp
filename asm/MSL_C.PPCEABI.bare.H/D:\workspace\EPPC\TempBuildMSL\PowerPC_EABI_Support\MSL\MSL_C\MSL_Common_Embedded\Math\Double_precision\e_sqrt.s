@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ieee754_sqrt
 __ieee754_sqrt:
 /* 800145A0 000103E0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -174,7 +174,7 @@ lbl_800147E0:
 /* 800147E0 00010620  38 21 00 20 */	addi r1, r1, 0x20
 /* 800147E4 00010624  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2562
 $$2562:
 	.incbin "baserom.dol", 0x498FF8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global square__Q24util12CurveUtilityFf
 square__Q24util12CurveUtilityFf:
 /* 80405948 00401788  EC 21 00 72 */	fmuls f1, f1, f1
@@ -21,7 +21,7 @@ invSquare__Q24util12CurveUtilityFf:
 /* 80405978 004017B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8040597C 004017BC  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249344
 $$249344:
 	.incbin "baserom.dol", 0x49EED0, 0x8

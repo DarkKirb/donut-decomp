@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11ChargeFlashFv
 __ct__Q43scn4step4hero11ChargeFlashFv:
 /* 80333E04 0032FC44  80 02 CB F8 */	lwz r0, $$249325-_SDA2_BASE_(r2)
@@ -51,12 +51,12 @@ lbl_80333E80:
 /* 80333E90 0032FCD0  98 03 00 03 */	stb r0, 3(r3)
 /* 80333E94 0032FCD4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4hero25$$2unnamed$$2ChargeFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4hero25$$2unnamed$$2ChargeFlash_cpp$$2:
 	.incbin "baserom.dol", 0x415D50, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249325
 $$249325:
 	.incbin "baserom.dol", 0x49D6B8, 0x8

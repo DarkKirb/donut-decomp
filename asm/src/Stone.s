@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global BodyModel__Q53scn4step4hero9modeldesc5StoneFv
 BodyModel__Q53scn4step4hero9modeldesc5StoneFv:
 /* 8035CA68 003588A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -25,7 +25,7 @@ lbl_8035CA98:
 /* 8035CAB0 003588F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035CAB4 003588F4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global create__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv
 create__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv:
 /* 80391B38 0038D978  7C 65 1B 78 */	mr r5, r3
@@ -41,7 +41,7 @@ create__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14St
 __dt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1Fv:
 /* 80391B58 0038D998  4B E9 CB 48 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1
 __vt__Q24util156StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5stone14StateStartJump$$4PQ43scn4step4hero4Hero$$4Q33std3tr149reference_wrapper$$0Q53scn4step4hero5stone7Context$$1$$1:
 	.incbin "baserom.dol", 0x489C38, 0x10

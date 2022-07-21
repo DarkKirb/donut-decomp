@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ieee754_atan2
 __ieee754_atan2:
 /* 80010B84 0000C9C4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -181,7 +181,7 @@ lbl_80010DC8:
 /* 80010DD4 0000CC14  38 21 00 30 */	addi r1, r1, 0x30
 /* 80010DD8 0000CC18  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2583
 $$2583:
 	.incbin "baserom.dol", 0x498C00, 0x8

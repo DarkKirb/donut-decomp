@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bte_hcisu_send
 bte_hcisu_send:
 /* 800777A0 000735E0  B0 83 00 00 */	sth r4, 0(r3)

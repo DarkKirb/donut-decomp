@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero17InactiveStateBaseFPQ43scn4step4hero12InactiveHero
 __ct__Q43scn4step4hero17InactiveStateBaseFPQ43scn4step4hero12InactiveHero:
 /* 80341818 0033D658  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero17InactiveStateBase@ha
@@ -40,7 +40,7 @@ lbl_80341870:
 /* 80341884 0033D6C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80341888 0033D6C8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero17InactiveStateBase
 __vt__Q43scn4step4hero17InactiveStateBase:
 	.incbin "baserom.dol", 0x480DB0, 0x10

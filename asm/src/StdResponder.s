@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail12StdResponderFRCQ35mcoll6detail9DetectArg
 __ct__Q35mcoll6detail12StdResponderFRCQ35mcoll6detail9DetectArg:
 /* 801BCF04 001B8D44  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -218,7 +218,7 @@ lbl_801BD1F0:
 /* 801BD1FC 001B903C  38 21 00 30 */	addi r1, r1, 0x30
 /* 801BD200 001B9040  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q35mcoll6detail12StdResponder
 __vt__Q35mcoll6detail12StdResponder:
 	.incbin "baserom.dol", 0x455D98, 0x18

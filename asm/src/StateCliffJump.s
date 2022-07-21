@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5rocky14StateCliffJumpFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5rocky14StateCliffJumpFPQ43scn4step5enemy5Enemy:
 /* 802D3F58 002CFD98  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -217,7 +217,7 @@ lbl_802D4238:
 procFixPos__Q53scn4step5enemy5rocky14StateCliffJumpFv:
 /* 802D4250 002D0090  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5rocky14StateCliffJump
 __vt__Q53scn4step5enemy5rocky14StateCliffJump:
 	.incbin "baserom.dol", 0x476F18, 0x20

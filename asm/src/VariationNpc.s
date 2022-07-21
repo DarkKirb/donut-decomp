@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_isEqualsLoose__26$$2unnamed$$2VariationNpc_cpp$$2Fff
 t_isEqualsLoose__26$$2unnamed$$2VariationNpc_cpp$$2Fff:
 /* 80314314 00310154  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1477,7 +1477,7 @@ lbl_8031572C:
 objCollRect__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa:
 /* 80315740 00311580  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258009
 $$258009:
 	.incbin "baserom.dol", 0x47D9B8, 0xC
@@ -1557,7 +1557,7 @@ __vt__Q53scn4step7gimmick7mahoroa12VariationNpc:
 __vt__Q53scn4step7gimmick7mahoroa10IVariation:
 	.incbin "baserom.dol", 0x47DB44, 0x1C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257896
 $$257896:
 	.incbin "baserom.dol", 0x49D458, 0x4

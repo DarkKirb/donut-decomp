@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23app12HIDErrorMenuFv
 __ct__Q23app12HIDErrorMenuFv:
 /* 8017793C 0017377C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1934,7 +1934,7 @@ lbl_801793A0:
 /* 801793A4 001751E4  38 80 00 01 */	li r4, 1
 /* 801793A8 001751E8  48 02 8E AC */	b isTrigger__Q23hid6ButtonCFUl
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252181
 $$252181:
 	.incbin "baserom.dol", 0x44EE18, 0x10
@@ -2014,7 +2014,7 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q2
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1:
 	.incbin "baserom.dol", 0x44EFD0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254615
 $$254615:
 	.incbin "baserom.dol", 0x492F60, 0x8

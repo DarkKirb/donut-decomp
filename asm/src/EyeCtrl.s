@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster7EyeCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss15challengemaster7EyeCtrlFRQ43scn4step4boss4Boss:
 /* 8023D5B4 002393F4  90 83 00 00 */	stw r4, 0(r3)
@@ -149,7 +149,7 @@ lbl_8023D794:
 /* 8023D79C 002395DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023D7A0 002395E0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21$$2unnamed$$2EyeCtrl_cpp$$2
 T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21$$2unnamed$$2EyeCtrl_cpp$$2:
 	.incbin "baserom.dol", 0x412898, 0x18

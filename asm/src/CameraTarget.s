@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero12CameraTargetFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2
 __ct__Q43scn4step4hero12CameraTargetFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2:
 /* 80330824 0032C664  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -978,7 +978,7 @@ lbl_803315C4:
 /* 803315F8 0032D438  38 21 00 40 */	addi r1, r1, 0x40
 /* 803315FC 0032D43C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon12CameraTargetFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon12CameraTargetFRQ43scn4step6weapon6Weapon:
 /* 803D36B0 003CF4F0  90 83 00 00 */	stw r4, 0(r3)
@@ -1026,7 +1026,7 @@ lbl_803D373C:
 /* 803D3748 003CF588  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D374C 003CF58C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256033
 $$256033:
 	.incbin "baserom.dol", 0x49D658, 0x4
@@ -1076,7 +1076,7 @@ $$256126:
 $$256203:
 	.incbin "baserom.dol", 0x49D694, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253235
 $$253235:
 	.incbin "baserom.dol", 0x49E840, 0x8

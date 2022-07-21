@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateAbort__Q35mcoll6detail14CollidedActionFv
 CreateAbort__Q35mcoll6detail14CollidedActionFv:
 /* 801B6698 001B24D8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -31,7 +31,7 @@ __ct__Q35mcoll6detail14CollidedActionFv:
 /* 801B66E4 001B2524  D0 03 00 04 */	stfs f0, 4(r3)
 /* 801B66E8 001B2528  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248848
 $$248848:
 	.incbin "baserom.dol", 0x49A578, 0x4

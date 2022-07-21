@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero14CommandManagerFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero14CommandManagerFRQ43scn4step4hero4Hero:
 /* 80334230 00330070  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -227,7 +227,7 @@ lbl_80334518:
 /* 80334538 00330378  38 21 00 20 */	addi r1, r1, 0x20
 /* 8033453C 0033037C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter14CommandManagerFRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7fighter14CommandManagerFRQ43scn4step4hero4Hero:
 /* 8039B2A4 003970E4  90 83 00 00 */	stw r4, 0(r3)

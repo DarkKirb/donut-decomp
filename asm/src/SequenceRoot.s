@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23seq12SequenceRootFbb
 __ct__Q23seq12SequenceRootFbb:
 /* 803FF96C 003FB7AC  3C C0 80 49 */	lis r6, __vt__Q23seq12SequenceRoot@ha
@@ -87,7 +87,7 @@ lbl_803FFA40:
 /* 803FFA54 003FB894  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FFA58 003FB898  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq12SequenceRoot
 __vt__Q23seq12SequenceRoot:
 	.incbin "baserom.dol", 0x4925C8, 0x28

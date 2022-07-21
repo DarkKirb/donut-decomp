@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Process__Q23lyt18SystemTagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
 Process__Q23lyt18SystemTagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1:
 /* 801AE550 001AA390  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -1644,7 +1644,7 @@ applyScale__Q23lyt18SystemTagProcessorCFPQ34nw4r2ut15PrintContext$$0w$$1Us:
 /* 801AFC68 001ABAA8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AFC6C 001ABAAC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23lyt18SystemTagProcessor
 __vt__Q23lyt18SystemTagProcessor:
 	.incbin "baserom.dol", 0x453B00, 0x14
@@ -1727,7 +1727,7 @@ $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv$$20:
 $$2STRING$$2GetCursorY__Q34nw4r2ut10CharWriterCFv:
 	.incbin "baserom.dol", 0x453E8C, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250358
 $$250358:
 	.incbin "baserom.dol", 0x49A4D8, 0x4

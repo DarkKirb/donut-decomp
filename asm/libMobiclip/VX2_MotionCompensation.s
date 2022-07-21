@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DecodeEscape__FR14VX2DecoderDataRiRiRi
 DecodeEscape__FR14VX2DecoderDataRiRiRi:
 /* 80170EA0 0016CCE0  80 E3 0A 04 */	lwz r7, 0xa04(r3)
@@ -732,7 +732,7 @@ lbl_80171910:
 /* 80171928 0016D768  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8017192C 0016D76C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global InvCbpTable
 InvCbpTable:
 	.incbin "baserom.dol", 0x4101F0, 0x200

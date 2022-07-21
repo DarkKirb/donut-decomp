@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4elec15BrainMoveAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4elec15BrainMoveAttackFRQ43scn4step5enemy5Enemy:
 /* 802AF7A0 002AB5E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -177,7 +177,7 @@ lbl_802AF9E4:
 __dt__Q53scn4step5enemy4elec15BrainMoveAttackFv:
 /* 802AF9FC 002AB83C  4B FE 16 70 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6flamer15BrainMoveAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6flamer15BrainMoveAttackFRQ43scn4step5enemy5Enemy:
 /* 802B1F38 002ADD78  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -338,7 +338,7 @@ lbl_802B213C:
 __dt__Q53scn4step5enemy6flamer15BrainMoveAttackFv:
 /* 802B2164 002ADFA4  4B FD EF 08 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFRQ43scn4step5enemy5Enemy:
 /* 802D156C 002CD3AC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -402,22 +402,22 @@ onRecover__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv:
 __dt__Q53scn4step5enemy10poppybrojr15BrainMoveAttackFv:
 /* 802D1630 002CD470  4B FB FA 3C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4elec15BrainMoveAttack
 __vt__Q53scn4step5enemy4elec15BrainMoveAttack:
 	.incbin "baserom.dol", 0x472668, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6flamer15BrainMoveAttack
 __vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 	.incbin "baserom.dol", 0x472B58, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack
 __vt__Q53scn4step5enemy10poppybrojr15BrainMoveAttack:
 	.incbin "baserom.dol", 0x4767E8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255142
 $$255142:
 	.incbin "baserom.dol", 0x49C338, 0x4

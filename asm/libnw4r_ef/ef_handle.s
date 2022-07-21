@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef10HandleBaseFRCQ34nw4r2ef10HandleBase
 __ct__Q34nw4r2ef10HandleBaseFRCQ34nw4r2ef10HandleBase:
 /* 800B4030 000AFE70  80 A4 00 00 */	lwz r5, 0(r4)

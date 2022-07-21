@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global hidh_conn_reg
 hidh_conn_reg:
 /* 8008E1A0 00089FE0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2308,12 +2308,12 @@ hidh_conn_dereg:
 /* 800901D8 0008C018  38 21 00 10 */	addi r1, r1, 0x10
 /* 800901DC 0008C01C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hst_reg_info
 hst_reg_info:
 	.incbin "baserom.dol", 0x404228, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21580
 $$21580:
 	.incbin "baserom.dol", 0x439348, 0x20

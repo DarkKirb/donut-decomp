@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global BTUInterruptHandler
 BTUInterruptHandler:
 /* 80077980 000737C0  3C 80 80 4F */	lis r4, __BTUInterruptHandlerStack@ha
@@ -110,7 +110,7 @@ lbl_80077AE0:
 /* 80077AE8 00073928  4E 80 04 20 */	bctr 
 /* 80077AEC 0007392C  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global bte_hcisu_h2_cfg
 bte_hcisu_h2_cfg:
 	.incbin "baserom.dol", 0x492CC8, 0x8

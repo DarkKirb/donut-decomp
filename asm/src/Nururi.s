@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26nururi6NururiFRQ26nururi7ManagerQ26nururi8Category
 __ct__Q26nururi6NururiFRQ26nururi7ManagerQ26nururi8Category:
 /* 801D347C 001CF2BC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -414,7 +414,7 @@ centerPos__Q26nururi6NururiCFv:
 /* 801D3A08 001CF848  EC 43 00 BA */	fmadds f2, f3, f2, f0
 /* 801D3A0C 001CF84C  4B FC B9 9C */	b set__Q33hel4math7Vector2Fff
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy6NururiFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy6NururiFRQ43scn4step5enemy5Enemy:
 /* 8028AEB4 00286CF4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -610,7 +610,7 @@ changeSetting__Q43scn4step5enemy6NururiFRCQ33hel4math7Vector2ffQ26nururi4Mode:
 /* 8028B154 00286F94  90 A3 00 4C */	stw r5, 0x4c(r3)
 /* 8028B158 00286F98  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero6NururiFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero6NururiFRQ43scn4step4hero4Hero:
 /* 8034EFB8 0034ADF8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -958,12 +958,12 @@ mode__Q43scn4step4hero6NururiFv:
 /* 8034F464 0034B2A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8034F468 0034B2A8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26nururi6Nururi
 __vt__Q26nururi6Nururi:
 	.incbin "baserom.dol", 0x4594C8, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249890
 $$249890:
 	.incbin "baserom.dol", 0x49A798, 0x4
@@ -980,7 +980,7 @@ $$249953:
 $$249988:
 	.incbin "baserom.dol", 0x49A7A8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250754
 $$250754:
 	.incbin "baserom.dol", 0x49BA08, 0x4
@@ -994,7 +994,7 @@ $$250789:
 $$250790:
 	.incbin "baserom.dol", 0x49BA14, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251445
 $$251445:
 	.incbin "baserom.dol", 0x49D890, 0x4

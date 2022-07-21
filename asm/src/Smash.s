@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero5smash5SmashFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero5smash5SmashFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 803A0508 0039C348  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -555,7 +555,7 @@ lbl_803A0D04:
 /* 803A0D10 0039CB50  38 21 00 20 */	addi r1, r1, 0x20
 /* 803A0D14 0039CB54  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global STONEBODY_TABLE_0__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2
 STONEBODY_TABLE_0__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
 	.incbin "baserom.dol", 0x41BE18, 0x40
@@ -566,7 +566,7 @@ STONEBODY_TABLE_1__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
 STONEBODY_TABLE_2__Q53scn4step4hero5smash19$$2unnamed$$2Smash_cpp$$2:
 	.incbin "baserom.dol", 0x41BE98, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255926
 $$255926:
 	.incbin "baserom.dol", 0x48A7E0, 0x40

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetInstance__Q34nw4r2ef8ResourceFv
 GetInstance__Q34nw4r2ef8ResourceFv:
 /* 800B2540 000AE380  3C 60 80 51 */	lis r3, mResource__Q34nw4r2ef8Resource@ha
@@ -851,7 +851,7 @@ __sinit_$$3ef_resource_cpp:
 /* 800B30A8 000AEEE8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B30AC 000AEEEC  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402370, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10spearspear12StateReflectFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon10spearspear12StateReflectFPQ43scn4step6weapon6Weapon:
 /* 803E4640 003E0480  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -332,7 +332,7 @@ lbl_803E4AD0:
 procObjCollReact__Q53scn4step6weapon10spearspear12StateReflectFv:
 /* 803E4AF4 003E0934  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon8deespear12StateReflectFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon8deespear12StateReflectFPQ43scn4step6weapon6Weapon:
 /* 803ED654 003E9494  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -664,17 +664,17 @@ lbl_803EDAE4:
 procObjCollReact__Q53scn4step6weapon8deespear12StateReflectFv:
 /* 803EDB08 003E9948  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10spearspear12StateReflect
 __vt__Q53scn4step6weapon10spearspear12StateReflect:
 	.incbin "baserom.dol", 0x4907E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear12StateReflect
 __vt__Q53scn4step6weapon8deespear12StateReflect:
 	.incbin "baserom.dol", 0x4910A8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257330
 $$257330:
 	.incbin "baserom.dol", 0x49EA58, 0x8
@@ -688,7 +688,7 @@ $$257379:
 $$257391:
 	.incbin "baserom.dol", 0x49EA6C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257330
 $$257330:
 	.incbin "baserom.dol", 0x49EC40, 0x8

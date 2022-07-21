@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q53scn4step7gimmick9shipevent13MintShipEventFRQ53scn4step7gimmick9shipevent9ShipEvent
 Register__Q53scn4step7gimmick9shipevent13MintShipEventFRQ53scn4step7gimmick9shipevent9ShipEvent:
 /* 8031F7A0 0031B5E0  90 6D F7 C0 */	stw r3, t_obj__Q53scn4step7gimmick9shipevent27$$2unnamed$$2MintShipEvent_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintShipEvent_cpp:
 /* 8031F7BC 0031B5FC  38 6D F7 C0 */	addi r3, r13, t_obj__Q53scn4step7gimmick9shipevent27$$2unnamed$$2MintShipEvent_cpp$$2-_SDA_BASE_
 /* 8031F7C0 0031B600  4B DB DC 20 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025B8, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

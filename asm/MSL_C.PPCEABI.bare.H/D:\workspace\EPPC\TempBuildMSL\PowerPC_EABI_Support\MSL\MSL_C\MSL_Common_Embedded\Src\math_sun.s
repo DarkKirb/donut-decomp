@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global scalbn
 scalbn:
 /* 800105E0 0000C420  94 21 FF E0 */	stwu r1, -0x20(r1)

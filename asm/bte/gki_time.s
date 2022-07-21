@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global gki_timers_init
 gki_timers_init:
 /* 80075C30 00071A70  3C 60 80 4D */	lis r3, gki_cb@ha

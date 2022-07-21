@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DirectPrint_IsActive__Q24nw4r2dbFv
 DirectPrint_IsActive__Q24nw4r2dbFv:
 /* 80126CE0 00122B20  80 0D EC 90 */	lwz r0, sInitialized__Q24nw4r2db-_SDA_BASE_(r13)
@@ -822,7 +822,7 @@ lbl_80127808:
 /* 80127828 00123668  4E 80 00 20 */	blr 
 /* 8012782C 0012366C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global sAsciiTable__Q24nw4r2db
 sAsciiTable__Q24nw4r2db:
 	.incbin "baserom.dol", 0x409C28, 0x80
@@ -833,12 +833,12 @@ sFontData__Q24nw4r2db:
 sFontData2__Q24nw4r2db:
 	.incbin "baserom.dol", 0x409DA8, 0x138
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2DrawCharToXfb___Q24nw4r2dbFiii$$2twiceBit
 $$2LOCAL$$2DrawCharToXfb___Q24nw4r2dbFiii$$2twiceBit:
 	.incbin "baserom.dol", 0x43EA98, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22741
 $$22741:
 	.incbin "baserom.dol", 0x49A060, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __init_cpp_exceptions
 __init_cpp_exceptions:
 /* 800079FC 0000383C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -37,12 +37,12 @@ lbl_80007A5C:
 /* 80007A64 000038A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80007A68 000038A8  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 .global __init_cpp_exceptions_reference
 __init_cpp_exceptions_reference:
 	.incbin "baserom.dol", 0x402360, 0x4
 
-.section .data3, "wa"  # 0x80406540 - 0x80406560
+.section .dtors, "wa"  # 0x80406540 - 0x80406560
 .global __destroy_global_chain_reference
 __destroy_global_chain_reference:
 	.incbin "baserom.dol", 0x402640, 0x4
@@ -50,7 +50,7 @@ __destroy_global_chain_reference:
 __fini_cpp_exceptions_reference:
 	.incbin "baserom.dol", 0x402644, 0x4
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global fragmentID
 fragmentID:
 	.incbin "baserom.dol", 0x492810, 0x8

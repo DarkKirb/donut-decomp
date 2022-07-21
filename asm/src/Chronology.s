@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Products__Q33scn7history10ChronologyFv
 Products__Q33scn7history10ChronologyFv:
 /* 80207464 002032A4  3C 60 80 46 */	lis r3, PRODUCTS__Q33scn7history24$$2unnamed$$2Chronology_cpp$$2@ha
@@ -118,7 +118,7 @@ lbl_802075C8:
 /* 802075D8 00203418  38 21 00 30 */	addi r1, r1, 0x30
 /* 802075DC 0020341C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248725
 $$248725:
 	.incbin "baserom.dol", 0x45CDD0, 0xC
@@ -153,7 +153,7 @@ $$248900:
 $$248904:
 	.incbin "baserom.dol", 0x45D088, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248724
 $$248724:
 	.incbin "baserom.dol", 0x494878, 0x4

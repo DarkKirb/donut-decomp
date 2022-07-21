@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetInstance__Q44nw4r3snd6detail14ChannelManagerFv
 GetInstance__Q44nw4r3snd6detail14ChannelManagerFv:
 /* 80106ED0 00102D10  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1247,7 +1247,7 @@ FreeChannel__Q44nw4r3snd6detail7ChannelFPQ44nw4r3snd6detail7Channel:
 /* 80108068 00103EA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8010806C 00103EAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210013
 $$210013:
 	.incbin "baserom.dol", 0x499E10, 0x4

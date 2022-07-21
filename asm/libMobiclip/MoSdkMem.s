@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MOiSetAllocator__FP12MEMAllocator
 MOiSetAllocator__FP12MEMAllocator:
 /* 80153700 0014F540  90 6D EC B8 */	stw r3, MOiAllocator-_SDA_BASE_(r13)
@@ -94,7 +94,7 @@ lbl_801537F4:
 /* 80153828 0014F668  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8015382C 0014F66C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22435
 $$22435:
 	.incbin "baserom.dol", 0x444598, 0x18

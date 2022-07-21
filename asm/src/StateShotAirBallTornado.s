@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy23StateShotAirBallTornadoFPQ43scn4step4boss4BossUlUlUl
 __ct__Q53scn4step4boss6whispy23StateShotAirBallTornadoFPQ43scn4step4boss4BossUlUlUl:
 /* 8025E6A4 0025A4E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -151,12 +151,12 @@ reqAirBall__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv:
 __dt__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv:
 /* 8025E8D4 0025A714  4B FF F8 58 */	b __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy23StateShotAirBallTornado
 __vt__Q53scn4step4boss6whispy23StateShotAirBallTornado:
 	.incbin "baserom.dol", 0x4667F0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253395
 $$253395:
 	.incbin "baserom.dol", 0x49B568, 0x8

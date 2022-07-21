@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __kernel_rem_pio2
 __kernel_rem_pio2:
 /* 800121CC 0000E00C  94 21 FC 90 */	stwu r1, -0x370(r1)
@@ -1584,7 +1584,7 @@ lbl_80013864:
 /* 8001387C 0000F6BC  38 21 03 70 */	addi r1, r1, 0x370
 /* 80013880 0000F6C0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global init_jk
 init_jk:
 	.incbin "baserom.dol", 0x403568, 0x10
@@ -1592,7 +1592,7 @@ init_jk:
 PIo2:
 	.incbin "baserom.dol", 0x403578, 0x40
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21235
 $$21235:
 	.incbin "baserom.dol", 0x498EB8, 0x8

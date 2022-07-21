@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step3sfx20MintSuperBackPictureFRQ43scn4step3sfx16SuperBackPicture
 Register__Q43scn4step3sfx20MintSuperBackPictureFRQ43scn4step3sfx16SuperBackPicture:
 /* 803CDB40 003C9980  90 6D F9 18 */	stw r3, t_obj__Q43scn4step3sfx34$$2unnamed$$2MintSuperBackPicture_cpp$$2-_SDA_BASE_(r13)
@@ -149,7 +149,7 @@ __sinit_$$3MintSuperBackPicture_cpp:
 /* 803CDCD4 003C9B14  38 6D F9 18 */	addi r3, r13, t_obj__Q43scn4step3sfx34$$2unnamed$$2MintSuperBackPicture_cpp$$2-_SDA_BASE_
 /* 803CDCD8 003C9B18  4B D0 F7 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025DC, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

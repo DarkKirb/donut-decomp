@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __prep_buffer
 __prep_buffer:
 /* 8000A2DC 0000611C  80 83 00 18 */	lwz r4, 0x18(r3)

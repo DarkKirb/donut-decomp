@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster11ItemCatcherFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss15challengemaster11ItemCatcherFRQ43scn4step4boss4Boss:
 /* 8023D7A4 002395E4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -231,7 +231,7 @@ lbl_8023DAA4:
 /* 8023DAC0 00239900  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023DAC4 00239904  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11ItemCatcherFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero11ItemCatcherFRQ43scn4step4hero4Hero:
 /* 80342AA0 0033E8E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -381,15 +381,15 @@ __sinit_$$3ItemCatcher_cpp:
 /* 80342C68 0033EAA8  C0 42 CC B4 */	lfs f2, $$253162-_SDA2_BASE_(r2)
 /* 80342C6C 0033EAAC  4B E5 C7 3C */	b set__Q33hel4math7Vector2Fff
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025BC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254426
 $$254426:
 	.incbin "baserom.dol", 0x49B008, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253107
 $$253107:
 	.incbin "baserom.dol", 0x49D770, 0x4

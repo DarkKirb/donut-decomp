@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step9challenge8RankItemFv
 __ct__Q43scn4step9challenge8RankItemFv:
 /* 80269658 00265498  38 00 00 00 */	li r0, 0

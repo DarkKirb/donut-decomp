@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero5smash14StateSmashKickFPQ43scn4step4hero4HeroQ53scn4step4hero5smash11ChargeLevel
 __ct__Q53scn4step4hero5smash14StateSmashKickFPQ43scn4step4hero4HeroQ53scn4step4hero5smash11ChargeLevel:
 /* 803A22CC 0039E10C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -215,7 +215,7 @@ lbl_803A25A8:
 procFixPos__Q53scn4step4hero5smash14StateSmashKickFv:
 /* 803A25C0 0039E400  4B FB E2 C0 */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5smash14StateSmashKick
 __vt__Q53scn4step4hero5smash14StateSmashKick:
 	.incbin "baserom.dol", 0x48AF90, 0x28

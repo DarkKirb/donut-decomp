@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global min$$0f$$1__3stdFRCfRCf_RCf
 min$$0f$$1__3stdFRCfRCf_RCf:
 /* 8014BC6C 00147AAC  C0 24 00 00 */	lfs f1, 0(r4)

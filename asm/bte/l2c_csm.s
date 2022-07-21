@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global l2c_csm_execute
 l2c_csm_execute:
 /* 80090DA8 0008CBE8  80 03 00 04 */	lwz r0, 4(r3)
@@ -1431,7 +1431,7 @@ lbl_80092264:
 /* 8009227C 0008E0BC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80092280 0008E0C0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21658
 $$21658:
 	.incbin "baserom.dol", 0x439EC0, 0x24

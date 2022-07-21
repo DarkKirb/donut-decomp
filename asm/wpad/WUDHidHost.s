@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WUDiHidHostEventCallback
 WUDiHidHostEventCallback:
 /* 8006AE40 00066C80  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -308,7 +308,7 @@ bta_hh_co_data:
 /* 8006B278 000670B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8006B27C 000670BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21502
 $$21502:
 	.incbin "baserom.dol", 0x435FC0, 0x14

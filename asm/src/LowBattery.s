@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6common10LowBatteryFRQ23mem10IAllocatorUl
 __ct__Q34info6common10LowBatteryFRQ23mem10IAllocatorUl:
 /* 801A9DC0 001A5C00  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -251,7 +251,7 @@ start__Q34info6common10LowBatteryFv:
 /* 801AA10C 001A5F4C  38 21 00 30 */	addi r1, r1, 0x30
 /* 801AA110 001A5F50  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252080
 $$252080:
 	.incbin "baserom.dol", 0x4536D0, 0xC
@@ -259,7 +259,7 @@ $$252080:
 $$252081:
 	.incbin "baserom.dol", 0x4536DC, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252134
 $$252134:
 	.incbin "baserom.dol", 0x493478, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue18HEL__Math__Vector2FRQ26mintvm6VMCore
 AddOn__Q28mintglue18HEL__Math__Vector2FRQ26mintvm6VMCore:
 /* 801C1868 001BD6A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -773,7 +773,7 @@ lbl_801C231C:
 /* 801C2338 001BE178  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C233C 001BE17C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254029
 $$254029:
 	.incbin "baserom.dol", 0x4562C0, 0x14
@@ -865,7 +865,7 @@ $$254244:
 $$254265:
 	.incbin "baserom.dol", 0x456588, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254030
 $$254030:
 	.incbin "baserom.dol", 0x4936C0, 0x4

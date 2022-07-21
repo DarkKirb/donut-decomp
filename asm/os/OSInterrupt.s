@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSDisableInterrupts
 OSDisableInterrupts:
 /* 80021820 0001D660  7C 60 00 A6 */	mfmsr r3
@@ -615,7 +615,7 @@ ExternalInterruptHandler:
 /* 80021FE8 0001DE28  94 21 FF F8 */	stwu r1, -8(r1)
 /* 80021FEC 0001DE2C  4B FF FD 04 */	b __OSDispatchInterrupt
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global InterruptPrioTable
 InterruptPrioTable:
 	.incbin "baserom.dol", 0x41F7F8, 0x30

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1Q27storage14ChallengeGrade
 __ct__Q53scn4step7gimmick11areamapdemo15DemoChangeGradeFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1Q27storage14ChallengeGrade:
 /* 802FB5F4 002F7434  94 21 FE 20 */	stwu r1, -0x1e0(r1)
@@ -675,7 +675,7 @@ lbl_802FBF78:
 /* 802FBF78 002F7DB8  38 60 00 00 */	li r3, 0
 /* 802FBF7C 002F7DBC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257294
 $$257294:
 	.incbin "baserom.dol", 0x47B700, 0x24
@@ -707,7 +707,7 @@ $$258879:
 __vt__Q53scn4step7gimmick11areamapdemo15DemoChangeGrade:
 	.incbin "baserom.dol", 0x47B828, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257293
 $$257293:
 	.incbin "baserom.dol", 0x4968D8, 0x4
@@ -724,7 +724,7 @@ $$258871:
 $$258872:
 	.incbin "baserom.dol", 0x4968F4, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258841
 $$258841:
 	.incbin "baserom.dol", 0x49D168, 0x4

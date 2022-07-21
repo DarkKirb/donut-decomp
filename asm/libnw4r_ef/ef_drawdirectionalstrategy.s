@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef23DrawDirectionalStrategyFv
 __ct__Q34nw4r2ef23DrawDirectionalStrategyFv:
 /* 800BCCC0 000B8B00  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2486,7 +2486,7 @@ __dt__Q34nw4r2ef23DrawDirectionalStrategyFv:
 /* 800BF098 000BAED8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800BF09C 000BAEDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2p
 $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2p:
 	.incbin "baserom.dol", 0x404360, 0x30
@@ -2494,17 +2494,17 @@ $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8Dra
 $$2LOCAL$$2DrawDirectional__Q34nw4r2ef23DrawDirectionalStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager$$2px$$20:
 	.incbin "baserom.dol", 0x404390, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef23DrawDirectionalStrategy
 __vt__Q34nw4r2ef23DrawDirectionalStrategy:
 	.incbin "baserom.dol", 0x43C530, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global directional_tex0_u8__Q24nw4r2ef
 directional_tex0_u8__Q24nw4r2ef:
 	.incbin "baserom.dol", 0x492D80, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$213563
 $$213563:
 	.incbin "baserom.dol", 0x499888, 0x4

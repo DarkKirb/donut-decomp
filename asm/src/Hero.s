@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero4HeroFRQ33scn4step9ComponentRQ23mem12HeapExpArrayUlRCQ33hel4math7Vector2RCQ33hel4math7Vector2bRCQ33scn4step17ContextHeroIndiviUl
 __ct__Q43scn4step4hero4HeroFRQ33scn4step9ComponentRQ23mem12HeapExpArrayUlRCQ33hel4math7Vector2RCQ33hel4math7Vector2bRCQ33scn4step17ContextHeroIndiviUl:
 /* 80338EE4 00334D24  94 21 FF 10 */	stwu r1, -0xf0(r1)
@@ -8863,7 +8863,7 @@ __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common15Stat
 __dt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference14StatePiggyback$$4PQ43scn4step4hero4Hero$$4b$$1Fv:
 /* 80340868 0033C6A8  4B EE DE 38 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$287026
 $$287026:
 	.incbin "baserom.dol", 0x47FFB0, 0x48
@@ -8961,7 +8961,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut87LinkList$$0Q24util66ObjListNode$$0Q43scn4step6v
 $$2STRING$$2GetBack__Q34nw4r2ut87LinkList$$0Q24util66ObjListNode$$0Q43scn4step6vacuum8Attacker$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x480238, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$284672
 $$284672:
 	.incbin "baserom.dol", 0x49D718, 0x4

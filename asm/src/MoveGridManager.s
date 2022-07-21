@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_CreateAddGridGroup__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2FUsUsQ35mcoll6detail15MoveGridAddType
 t_CreateAddGridGroup__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2FUsUsQ35mcoll6detail15MoveGridAddType:
 /* 801BBA84 001B78C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -772,7 +772,7 @@ lbl_801BC4FC:
 /* 801BC50C 001B834C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BC510 001B8350  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global addType_ConditionalStepM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
 addType_ConditionalStepM__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 	.incbin "baserom.dol", 0x410D48, 0xC
@@ -804,7 +804,7 @@ addType_ConditionalChallengeMasterExDoor__Q35mcoll6detail29$$2unnamed$$2MoveGrid
 addType_SIceVolcano__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 	.incbin "baserom.dol", 0x410DD8, 0xF8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global addType_Tbl__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
 addType_Tbl__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 	.incbin "baserom.dol", 0x455D38, 0x30
@@ -812,7 +812,7 @@ addType_Tbl__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 $$252675:
 	.incbin "baserom.dol", 0x455D68, 0x30
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global addType_ConditionalCreditOtachidai__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2
 addType_ConditionalCreditOtachidai__Q35mcoll6detail29$$2unnamed$$2MoveGridManager_cpp$$2:
 	.incbin "baserom.dol", 0x49A6D0, 0x8

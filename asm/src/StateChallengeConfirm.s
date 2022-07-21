@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4hero4HeroQ33scn4step13ChallengeKindPQ53scn4step7gimmick13challengedoor13ChallengeDoor
 TryToChangeState__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4hero4HeroQ33scn4step13ChallengeKindPQ53scn4step7gimmick13challengedoor13ChallengeDoor:
 /* 8037B4C8 00377308  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -322,7 +322,7 @@ create__Q24util181StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21
 __dt__Q24util181StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateChallengeConfirm$$4PQ43scn4step4hero4Hero$$4Q33scn4step13ChallengeKind$$4PQ53scn4step7gimmick13challengedoor13ChallengeDoor$$1Fv:
 /* 8037B938 00377778  4B EB 2D 68 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util181StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateChallengeConfirm$$4PQ43scn4step4hero4Hero$$4Q33scn4step13ChallengeKind$$4PQ53scn4step7gimmick13challengedoor13ChallengeDoor$$1
 __vt__Q24util181StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4hero7gimmick21StateChallengeConfirm$$4PQ43scn4step4hero4Hero$$4Q33scn4step13ChallengeKind$$4PQ53scn4step7gimmick13challengedoor13ChallengeDoor$$1:
 	.incbin "baserom.dol", 0x4889F0, 0x10

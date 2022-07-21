@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ReadCallback__FlP11DVDFileInfo
 ReadCallback__FlP11DVDFileInfo:
 /* 801CDF28 001C9D68  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -490,10 +490,10 @@ __sinit_$$3DvdControl_cpp:
 /* 801CE5BC 001CA3FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CE5C0 001CA400  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40243C, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249342
 $$249342:
 	.incbin "baserom.dol", 0x458DA8, 0x10

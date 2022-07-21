@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause9ComponentFRCQ25pause11ContextInitPQ25pause9ICallback
 __ct__Q25pause9ComponentFRCQ25pause11ContextInitPQ25pause9ICallback:
 /* 801DA8D0 001D6710  94 21 FE 40 */	stwu r1, -0x1c0(r1)
@@ -726,7 +726,7 @@ pageManager__Q25pause9ComponentFv:
 /* 801DB284 001D70C4  38 63 00 C0 */	addi r3, r3, 0xc0
 /* 801DB288 001D70C8  4B F9 C9 64 */	b __rf__Q23mem43ExplicitScopedPtr$$0Q23app16HIDErrorMenuImpl$$1CFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle9ComponentFv
 __ct__Q33scn14challengetitle9ComponentFv:
 /* 801EC44C 001E828C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1612,7 +1612,7 @@ lbl_801ED0C8:
 /* 801ED0D4 001E8F14  38 21 00 10 */	addi r1, r1, 0x10
 /* 801ED0D8 001E8F18  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle9ComponentFb
 __ct__Q33scn10grandtitle9ComponentFb:
 /* 8020384C 001FF68C  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -2415,7 +2415,7 @@ lbl_802043C8:
 /* 802043DC 0020021C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802043E0 00200220  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history9ComponentFv
 __ct__Q33scn7history9ComponentFv:
 /* 802075E0 00203420  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2699,7 +2699,7 @@ lbl_802079D8:
 /* 802079EC 0020382C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802079F0 00203830  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn4step9ComponentFRCQ33scn4step7Context
 __ct__Q33scn4step9ComponentFRCQ33scn4step7Context:
 /* 8021D0D4 00218F14  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -7187,7 +7187,7 @@ debugObjInfoRepos__Q33scn4step9ComponentFv:
 /* 80220F64 0021CDA4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80220F68 0021CDA8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn9grandmenu9ComponentFv
 __ct__Q33scn9grandmenu9ComponentFv:
 /* 803F2E80 003EECC0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -7504,7 +7504,7 @@ lbl_803F32EC:
 /* 803F3300 003EF140  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3304 003EF144  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn11staffcredit9ComponentFRCQ33scn4step7Context
 __ct__Q33scn11staffcredit9ComponentFRCQ33scn4step7Context:
 /* 803F95E0 003F5420  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -7887,17 +7887,17 @@ lbl_803F9B3C:
 /* 803F9B50 003F5990  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F9B54 003F5994  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257322
 $$257322:
 	.incbin "baserom.dol", 0x45AD30, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257925
 $$257925:
 	.incbin "baserom.dol", 0x45CA78, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255625
 $$255625:
 	.incbin "baserom.dol", 0x492040, 0x14
@@ -7908,7 +7908,7 @@ $$255626:
 $$255628:
 	.incbin "baserom.dol", 0x492068, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253837
 $$253837:
 	.incbin "baserom.dol", 0x493A50, 0x8
@@ -7922,12 +7922,12 @@ $$253839:
 $$253840:
 	.incbin "baserom.dol", 0x493A60, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255627
 $$255627:
 	.incbin "baserom.dol", 0x498A00, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256022
 $$256022:
 	.incbin "baserom.dol", 0x49A910, 0x4
@@ -7935,7 +7935,7 @@ $$256022:
 $$256026:
 	.incbin "baserom.dol", 0x49A914, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255954
 $$255954:
 	.incbin "baserom.dol", 0x49AAD0, 0x4
@@ -7946,7 +7946,7 @@ $$255959:
 $$255962:
 	.incbin "baserom.dol", 0x49AAD8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252828
 $$252828:
 	.incbin "baserom.dol", 0x49AB78, 0x4
@@ -7954,7 +7954,7 @@ $$252828:
 $$252833:
 	.incbin "baserom.dol", 0x49AB7C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252815
 $$252815:
 	.incbin "baserom.dol", 0x49ED58, 0x4

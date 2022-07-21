@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step4boss8MintBossFRQ43scn4step4boss4Boss
 Register__Q43scn4step4boss8MintBossFRQ43scn4step4boss4Boss:
 /* 802329B0 0022E7F0  90 6D F0 D8 */	stw r3, t_obj__Q43scn4step4boss22$$2unnamed$$2MintBoss_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintBoss_cpp:
 /* 802329CC 0022E80C  38 6D F0 D8 */	addi r3, r13, t_obj__Q43scn4step4boss22$$2unnamed$$2MintBoss_cpp$$2-_SDA_BASE_
 /* 802329D0 0022E810  4B EA AA 10 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402470, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

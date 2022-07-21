@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSYNSetupAdpcm__FP11HBMSYNVOICE
 __HBMSYNSetupAdpcm__FP11HBMSYNVOICE:
 /* 8014A900 00146740  80 C3 00 10 */	lwz r6, 0x10(r3)

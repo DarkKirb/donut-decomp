@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara26MoveAlgorithmVacuumReceiveFv
 __ct__Q43scn4step5chara26MoveAlgorithmVacuumReceiveFv:
 /* 802718C8 0026D708  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -310,12 +310,12 @@ lbl_80271D20:
 /* 80271D2C 0026DB6C  38 21 01 40 */	addi r1, r1, 0x140
 /* 80271D30 0026DB70  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251342
 $$251342:
 	.incbin "baserom.dol", 0x495838, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251568
 $$251568:
 	.incbin "baserom.dol", 0x49B840, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick8shooting8ShootingFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick8shooting8ShootingFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80322FC0 0031EE00  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -39,7 +39,7 @@ __ct__Q53scn4step7gimmick8shooting8ShootingFRCQ43scn4step3map18BinGmkGeneralEntr
 __dt__Q53scn4step7gimmick8shooting8ShootingFv:
 /* 8032303C 0031EE7C  4B E5 2B 2C */	b __dt__Q23scn6ISceneFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8shooting8Shooting
 __vt__Q53scn4step7gimmick8shooting8Shooting:
 	.incbin "baserom.dol", 0x47E510, 0x10

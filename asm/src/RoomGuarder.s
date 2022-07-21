@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11roomguarder11RoomGuarderFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick11roomguarder11RoomGuarderFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 8031B40C 0031724C  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1030,7 +1030,7 @@ lbl_8031C284:
 .global obj__Q43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11roomguarder5Param$$1CFv
 obj__Q43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11roomguarder5Param$$1CFv:
 /* 8031C298 003180D8  38 63 00 04 */	addi r3, r3, 4
-/* 8031C29C 003180DC  4B EF 1C E4 */	b dataHeadAddress__Q25xdata5XDataCFv
+/* 8031C29C 003180DC  4B EF 1C E4 */	b dataHeadAddress__Q25.dataXDataCFv
 
 .global procAnim__Q53scn4step7gimmick11roomguarder11RoomGuarderFv
 procAnim__Q53scn4step7gimmick11roomguarder11RoomGuarderFv:
@@ -3166,7 +3166,7 @@ lbl_8031E070:
 /* 8031E084 00319EC4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8031E088 00319EC8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$263446
 $$263446:
 	.incbin "baserom.dol", 0x47DCA8, 0x20
@@ -3174,7 +3174,7 @@ $$263446:
 $$263447:
 	.incbin "baserom.dol", 0x47DCC8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$263448
 $$263448:
 	.incbin "baserom.dol", 0x49D538, 0x4

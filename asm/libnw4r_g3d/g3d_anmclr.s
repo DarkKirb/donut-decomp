@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TestExistence__Q34nw4r3g3d12AnmObjMatClrCFUl
 TestExistence__Q34nw4r3g3d12AnmObjMatClrCFUl:
 /* 800D4A90 000D08D0  80 63 00 14 */	lwz r3, 0x14(r3)
@@ -1714,7 +1714,7 @@ GetTypeObj__Q34nw4r3g3d12AnmObjMatClrCFv:
 /* 800D6138 000D1F78  4E 80 00 20 */	blr 
 /* 800D613C 000D1F7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12AnmObjMatClr
 TYPE_NAME__Q34nw4r3g3d12AnmObjMatClr:
 	.incbin "baserom.dol", 0x4044F0, 0x18
@@ -1728,7 +1728,7 @@ TYPE_NAME__Q34nw4r3g3d20AnmObjMatClrOverride:
 TYPE_NAME__Q34nw4r3g3d15AnmObjMatClrRes:
 	.incbin "baserom.dol", 0x404540, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d15AnmObjMatClrRes
 __vt__Q34nw4r3g3d15AnmObjMatClrRes:
 	.incbin "baserom.dol", 0x43C910, 0x48
@@ -1742,7 +1742,7 @@ __vt__Q34nw4r3g3d16AnmObjMatClrNode:
 __vt__Q34nw4r3g3d12AnmObjMatClr:
 	.incbin "baserom.dol", 0x43C9E8, 0x48
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28993
 $$28993:
 	.incbin "baserom.dol", 0x499A60, 0x4

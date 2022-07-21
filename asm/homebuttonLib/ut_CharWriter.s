@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm2ut10CharWriterFv
 __ct__Q36nw4hbm2ut10CharWriterFv:
 /* 8013FE10 0013BC50  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1765,7 +1765,7 @@ lbl_80141510:
 /* 801417C8 0013D608  4E 80 00 20 */	blr 
 /* 801417CC 0013D60C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$26157
 $$26157:
 	.incbin "baserom.dol", 0x40A3B0, 0x4

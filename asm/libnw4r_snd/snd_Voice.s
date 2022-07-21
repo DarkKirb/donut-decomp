@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail5VoiceFv
 __ct__Q44nw4r3snd6detail5VoiceFv:
 /* 80119BE0 00115A20  38 C3 00 44 */	addi r6, r3, 0x44
@@ -3089,7 +3089,7 @@ InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv:
 /* 8011C4D8 00118318  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8011C4DC 0011831C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211607
 $$211607:
 	.incbin "baserom.dol", 0x43E6D8, 0x24
@@ -3097,7 +3097,7 @@ $$211607:
 __vt__Q44nw4r3snd6detail5Voice:
 	.incbin "baserom.dol", 0x43E6FC, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210576
 $$210576:
 	.incbin "baserom.dol", 0x499F58, 0x4

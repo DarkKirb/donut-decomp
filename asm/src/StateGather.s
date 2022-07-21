@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4item5state11StateGatherFPQ43scn4step4item4ItemRQ43scn4step4item7Catcher
 __ct__Q53scn4step4item5state11StateGatherFPQ43scn4step4item4ItemRQ43scn4step4item7Catcher:
 /* 803C7E0C 003C3C4C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -193,12 +193,12 @@ procMove__Q53scn4step4item5state11StateGatherFv:
 __dt__Q53scn4step4item5state11StateGatherFv:
 /* 803C80D4 003C3F14  4B FF F3 34 */	b __dt__Q53scn4step4item5state13StateApproachFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state11StateGather
 __vt__Q53scn4step4item5state11StateGather:
 	.incbin "baserom.dol", 0x48E6D8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255059
 $$255059:
 	.incbin "baserom.dol", 0x49E5D8, 0x4

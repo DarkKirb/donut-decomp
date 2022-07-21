@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11RoofCheckerFRQ33scn4step9ComponentRQ43scn4step5chara8Location
 __ct__Q43scn4step4hero11RoofCheckerFRQ33scn4step9ComponentRQ43scn4step5chara8Location:
 /* 803540E8 0034FF28  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -148,7 +148,7 @@ lbl_803542F0:
 /* 80354300 00350140  38 21 06 E0 */	addi r1, r1, 0x6e0
 /* 80354304 00350144  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252525
 $$252525:
 	.incbin "baserom.dol", 0x49D990, 0x4

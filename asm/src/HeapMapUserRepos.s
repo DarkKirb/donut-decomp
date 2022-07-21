@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q23mem16HeapMapUserReposFRQ44nrel6devkit7heapmap12IHeapMapUser
 Register__Q23mem16HeapMapUserReposFRQ44nrel6devkit7heapmap12IHeapMapUser:
 /* 801BECC0 001BAB00  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -154,7 +154,7 @@ lbl_801BEEA4:
 __dt__Q33hel6common55MutableArray$$0PQ44nrel6devkit7heapmap12IHeapMapUser$$4512$$1Fv:
 /* 801BEEB4 001BACF4  4B FB 6C B4 */	b __dt__Q23scn6ISceneFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402434, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

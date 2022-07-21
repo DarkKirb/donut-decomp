@@ -3,29 +3,29 @@ _SDA_BASE_ = 0x8055E420;
 _SDA2_BASE_ = 0x80565F80;
 PHDRS
 {
-    text0 PT_LOAD;
-    text1 PT_LOAD;
-    data0 PT_LOAD;
-    data1 PT_LOAD;
-    data2 PT_LOAD;
-    data3 PT_LOAD;
-    data4 PT_LOAD;
-    data5 PT_LOAD;
-    data6 PT_LOAD;
-    data7 PT_LOAD;
+   .init PT_LOAD;
+   .text PT_LOAD;
+   extab PT_LOAD;
+   extabindex PT_LOAD;
+   .ctors PT_LOAD;
+   .dtors PT_LOAD;
+   .rodata PT_LOAD;
+   .data PT_LOAD;
+   .sdata PT_LOAD;
+   .sdata2 PT_LOAD;
     bss PT_LOAD;
 }
 SECTIONS
 {
-    .text0 0x80004000 : { *(.text0) } : text0
-    .text1 0x80006A00 : { *(.text1) } : text1
-    .data0 0x80006740 : { *(.data0) } : data0
-    .data1 0x800068E0 : { *(.data1) } : data1
-    .data2 0x80406260 : { *(.data2) } : data2
-    .data3 0x80406540 : { *(.data3) } : data3
-    .data4 0x80406560 : { *(.data4) } : data4
-    .data5 0x80421040 : { *(.data5) } : data5
-    .data6 0x80556420 : { *(.data6) } : data6
-    .data7 0x8055DF80 : { *(.data7) } : data7
+    .init 0x80004000 : { *(.init) } :.init
+    .text 0x80006A00 : { *(.text) } :.text
+    extab 0x80006740 : { *(extab) } :extab
+    extabindex 0x800068E0 : { *(extabindex) } :extabindex
+    .ctors 0x80406260 : { *(.ctors) } :.ctors
+    .dtors 0x80406540 : { *(.dtors) } :.dtors
+    .rodata 0x80406560 : { *(.rodata) } :.rodata
+    .data 0x80421040 : { *(.data) } :.data
+    .sdata 0x80556420 : { *(.sdata) } :.sdata
+    .sdata2 0x8055DF80 : { *(.sdata2) } :.sdata2
     .bss 0x80496700 (NOLOAD) : { *(.bss) } : bss
 }

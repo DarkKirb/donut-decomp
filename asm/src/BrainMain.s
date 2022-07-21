@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8dubiorjr9BrainMainFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy8dubiorjr9BrainMainFRQ43scn4step5enemy5Enemy:
 /* 802ADEE8 002A9D28  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -66,12 +66,12 @@ onRecover__Q53scn4step5enemy8dubiorjr9BrainMainFv:
 __dt__Q53scn4step5enemy8dubiorjr9BrainMainFv:
 /* 802ADFB4 002A9DF4  4B FE 30 B8 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8dubiorjr9BrainMain
 __vt__Q53scn4step5enemy8dubiorjr9BrainMain:
 	.incbin "baserom.dol", 0x472290, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254871
 $$254871:
 	.incbin "baserom.dol", 0x49C2E8, 0x8

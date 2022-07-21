@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn9grandmenu4menu7CurtainFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q43scn9grandmenu4menu7CurtainFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 803F4B24 003F0964  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -216,12 +216,12 @@ isOpening__Q43scn9grandmenu4menu7CurtainCFv:
 /* 803F4DEC 003F0C2C  54 03 D9 7E */	srwi r3, r0, 5
 /* 803F4DF0 003F0C30  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251703
 $$251703:
 	.incbin "baserom.dol", 0x4918A0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251704
 $$251704:
 	.incbin "baserom.dol", 0x4988A0, 0x8

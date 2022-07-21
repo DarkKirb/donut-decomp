@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global C_MTXFrustum
 C_MTXFrustum:
 /* 800311B0 0002CFF0  EC 04 18 28 */	fsubs f0, f4, f3
@@ -221,7 +221,7 @@ PSMTX44Concat:
 /* 800314E8 0002D328  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800314EC 0002D32C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21671
 $$21671:
 	.incbin "baserom.dol", 0x499090, 0x4

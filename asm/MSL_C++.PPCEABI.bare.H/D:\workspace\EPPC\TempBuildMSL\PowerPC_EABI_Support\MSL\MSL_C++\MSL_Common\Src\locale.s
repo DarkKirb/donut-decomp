@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global what__Q23std11logic_errorCFv
 what__Q23std11logic_errorCFv:
 /* 80014944 00010784  48 0E BE 9C */	b GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -431,7 +431,7 @@ lbl_80014F00:
 /* 80014F10 00010D50  98 0D E3 03 */	stb r0, $$2GUARD$$2id__Q23std14codecvt$$0w$$4c$$4i$$1-_SDA_BASE_(r13)
 /* 80014F14 00010D54  4E 80 00 20 */	blr 
 
-.section .data0, "wa"  # 0x80006740 - 0x800068E0
+.section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$225556
 $$225556:
 	.incbin "baserom.dol", 0x402164, 0x28
@@ -445,7 +445,7 @@ $$227127:
 $$227197:
 	.incbin "baserom.dol", 0x4021F4, 0x28
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$225557
 $$225557:
 	.incbin "baserom.dol", 0x4022DC, 0xC
@@ -459,10 +459,10 @@ $$227128:
 $$227198:
 	.incbin "baserom.dol", 0x402300, 0xC
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402364, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210379
 $$210379:
 	.incbin "baserom.dol", 0x403758, 0x14
@@ -476,7 +476,7 @@ $$210387:
 $$2stringBase0:
 	.incbin "baserom.dol", 0x403794, 0xE4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23std12out_of_range
 __vt__Q23std12out_of_range:
 	.incbin "baserom.dol", 0x41DB48, 0x10
@@ -496,7 +496,7 @@ __vt__Q23std11logic_error:
 $$210388:
 	.incbin "baserom.dol", 0x41DBA8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std12out_of_range
 __RTTI__Q23std12out_of_range:
 	.incbin "baserom.dol", 0x492848, 0x8

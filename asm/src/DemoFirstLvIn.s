@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1RCQ33hel6common66MutableArray$$0PQ53scn4step7gimmick13challengedoor13ChallengeDoor$$43$$1
 __ct__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1RCQ33hel6common66MutableArray$$0PQ53scn4step7gimmick13challengedoor13ChallengeDoor$$43$$1:
 /* 802FBF80 002F7DC0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -328,7 +328,7 @@ lbl_802FC354:
 /* 802FC3F4 002F8234  38 21 00 50 */	addi r1, r1, 0x50
 /* 802FC3F8 002F8238  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255389
 $$255389:
 	.incbin "baserom.dol", 0x47B850, 0x30
@@ -336,7 +336,7 @@ $$255389:
 __vt__Q53scn4step7gimmick11areamapdemo13DemoFirstLvIn:
 	.incbin "baserom.dol", 0x47B880, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255356
 $$255356:
 	.incbin "baserom.dol", 0x49D178, 0x4

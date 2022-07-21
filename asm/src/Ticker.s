@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6ticker6TickerFRCQ34info6ticker13TickerContext
 __ct__Q34info6ticker6TickerFRCQ34info6ticker13TickerContext:
 /* 801ABA4C 001A788C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -443,7 +443,7 @@ scrollWindowWidth__Q34info6ticker6TickerFv:
 /* 801AC050 001A7E90  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AC054 001A7E94  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252326
 $$252326:
 	.incbin "baserom.dol", 0x49A4A8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ieee754_rem_pio2
 __ieee754_rem_pio2:
 /* 80011D38 0000DB78  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -244,7 +244,7 @@ lbl_800120A4:
 /* 800120B4 0000DEF4  38 21 00 60 */	addi r1, r1, 0x60
 /* 800120B8 0000DEF8  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global two_over_pi
 two_over_pi:
 	.incbin "baserom.dol", 0x4033E0, 0x108
@@ -252,7 +252,7 @@ two_over_pi:
 npio2_hw:
 	.incbin "baserom.dol", 0x4034E8, 0x80
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2594
 $$2594:
 	.incbin "baserom.dol", 0x498E18, 0x8

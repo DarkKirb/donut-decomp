@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Construct__Q34nw4r3g3d7ScnRootFP12MEMAllocatorPUlUlUlUlUl
 Construct__Q34nw4r3g3d7ScnRootFP12MEMAllocatorPUlUlUlUlUl:
 /* 800EA930 000E6770  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1932,12 +1932,12 @@ GetTypeObj__Q34nw4r3g3d7ScnRootCFv:
 /* 800EC398 000E81D8  4E 80 00 20 */	blr 
 /* 800EC39C 000E81DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d7ScnRoot
 TYPE_NAME__Q34nw4r3g3d7ScnRoot:
 	.incbin "baserom.dol", 0x404FC0, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d12ScnObjGather
 __vt__Q34nw4r3g3d12ScnObjGather:
 	.incbin "baserom.dol", 0x43D140, 0x30
@@ -1945,7 +1945,7 @@ __vt__Q34nw4r3g3d12ScnObjGather:
 __vt__Q34nw4r3g3d7ScnRoot:
 	.incbin "baserom.dol", 0x43D170, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$213447
 $$213447:
 	.incbin "baserom.dol", 0x492DF0, 0x4
@@ -1959,7 +1959,7 @@ $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4PFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6Scn
 $$2LOCAL$$2sort$$0PPQ34nw4r3g3d6ScnObj$$4RPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b$$1__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjRPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v$$2shuffle$$20:
 	.incbin "baserom.dol", 0x492DFC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214739
 $$214739:
 	.incbin "baserom.dol", 0x499C08, 0x8

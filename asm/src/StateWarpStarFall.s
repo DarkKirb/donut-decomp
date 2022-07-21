@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7gimmick17StateWarpStarFallFPQ43scn4step4hero4HeroUl
 __ct__Q53scn4step4hero7gimmick17StateWarpStarFallFPQ43scn4step4hero4HeroUl:
 /* 80382C40 0037EA80  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -476,10 +476,10 @@ __sinit_$$3StateWarpStarFall_cpp:
 /* 80383308 0037F148  FC 60 08 90 */	fmr f3, f1
 /* 8038330C 0037F14C  4B D3 AD B4 */	b __ct__Q34nw4r4math4VEC3Ffff
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025C8, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay$$4PQ43scn4step4hero4Hero$$4i$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay$$4PQ43scn4step4hero4Hero$$4i$$1:
 	.incbin "baserom.dol", 0x488D48, 0x10
@@ -487,7 +487,7 @@ __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7gimmick25St
 __vt__Q53scn4step4hero7gimmick17StateWarpStarFall:
 	.incbin "baserom.dol", 0x488D58, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260208
 $$260208:
 	.incbin "baserom.dol", 0x49DFE8, 0x4

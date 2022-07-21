@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3snd10SoundActorFRQ34nw4r3snd18SoundArchivePlayer
 __ct__Q34nw4r3snd10SoundActorFRQ34nw4r3snd18SoundArchivePlayer:
 /* 8010F3B0 0010B1F0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -222,12 +222,12 @@ detail_ConvertLabelStringToSoundId__Q34nw4r3snd18SoundArchivePlayerFPCc:
 /* 8010F698 0010B4D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8010F69C 0010B4DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd10SoundActor
 __vt__Q34nw4r3snd10SoundActor:
 	.incbin "baserom.dol", 0x43E540, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211717
 $$211717:
 	.incbin "baserom.dol", 0x499F00, 0x4

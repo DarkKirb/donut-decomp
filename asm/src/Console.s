@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global construct__Q26freeze7ConsoleFv
 construct__Q26freeze7ConsoleFv:
 /* 80189648 00185488  38 80 00 16 */	li r4, 0x16
@@ -259,7 +259,7 @@ lbl_80189954:
 /* 801899C8 00185808  38 21 00 90 */	addi r1, r1, 0x90
 /* 801899CC 0018580C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20
 $$2STRING$$2Console_GetBufferHeadLine__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead$$20:
 	.incbin "baserom.dol", 0x44F9A0, 0x24

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HSD_SaveContext__27$$2unnamed$$2FreezeManager_cpp$$2Fv
 HSD_SaveContext__27$$2unnamed$$2FreezeManager_cpp$$2Fv:
 /* 8018A548 00186388  7C 70 43 A6 */	mtspr 0x110, r3
@@ -491,7 +491,7 @@ VReport__Q26freeze13FreezeManagerFPCcP16__va_list_struct:
 /* 8018AC08 00186A48  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018AC0C 00186A4C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249629
 $$249629:
 	.incbin "baserom.dol", 0x44FFE8, 0x18
@@ -499,7 +499,7 @@ $$249629:
 $$249630:
 	.incbin "baserom.dol", 0x450000, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global doSerialReport
 doSerialReport:
 	.incbin "baserom.dol", 0x493148, 0x8

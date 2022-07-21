@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8captured20StateCapturedFighterFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy8captured20StateCapturedFighterFPQ43scn4step5enemy5Enemy:
 /* 802A4220 002A0060  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -298,7 +298,7 @@ __dt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23St
 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1Fv:
 /* 802A4634 002A0474  4B F8 A0 6C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateThrownFighter$$4PQ43scn4step5enemy5Enemy$$4Ux$$1:
 	.incbin "baserom.dol", 0x4714D8, 0x10
@@ -309,12 +309,12 @@ __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage23St
 __vt__Q53scn4step5enemy8captured20StateCapturedFighter:
 	.incbin "baserom.dol", 0x4714F8, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255917
 $$255917:
 	.incbin "baserom.dol", 0x495C50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256237
 $$256237:
 	.incbin "baserom.dol", 0x49C010, 0x8

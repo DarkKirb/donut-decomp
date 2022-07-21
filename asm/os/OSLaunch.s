@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSRelaunchTitle
 __OSRelaunchTitle:
 /* 80028320 00024160  54 2B 06 FE */	clrlwi r11, r1, 0x1b

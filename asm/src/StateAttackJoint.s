@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss13watergalboros16StateAttackJointFPQ43scn4step4boss4BossUl
 __ct__Q53scn4step4boss13watergalboros16StateAttackJointFPQ43scn4step4boss4BossUl:
 /* 8025A0B4 00255EF4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -47,7 +47,7 @@ procMove__Q53scn4step4boss13watergalboros16StateAttackJointFv:
 procFixPos__Q53scn4step4boss13watergalboros16StateAttackJointFv:
 /* 8025A12C 00255F6C  4B FD DE 94 */	b procFixPos__Q53scn4step4boss7bonkers9StateBombFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss13watergalboros16StateAttackJoint
 __vt__Q53scn4step4boss13watergalboros16StateAttackJoint:
 	.incbin "baserom.dol", 0x465B40, 0x20

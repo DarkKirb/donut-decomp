@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Release__Q34nw4r3g3d12AnmObjTexSrtFv
 Release__Q34nw4r3g3d12AnmObjTexSrtFv:
 /* 800D7000 000D2E40  4B FF C8 80 */	b Release__Q34nw4r3g3d9AnmObjVisFv
@@ -1114,7 +1114,7 @@ GetTypeObj__Q34nw4r3g3d12AnmObjTexSrtCFv:
 /* 800D7E18 000D3C58  4E 80 00 20 */	blr 
 /* 800D7E1C 000D3C5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12AnmObjTexSrt
 TYPE_NAME__Q34nw4r3g3d12AnmObjTexSrt:
 	.incbin "baserom.dol", 0x4045C0, 0x18
@@ -1128,7 +1128,7 @@ TYPE_NAME__Q34nw4r3g3d20AnmObjTexSrtOverride:
 TYPE_NAME__Q34nw4r3g3d15AnmObjTexSrtRes:
 	.incbin "baserom.dol", 0x404610, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d15AnmObjTexSrtRes
 __vt__Q34nw4r3g3d15AnmObjTexSrtRes:
 	.incbin "baserom.dol", 0x43CB50, 0x48
@@ -1142,7 +1142,7 @@ __vt__Q34nw4r3g3d16AnmObjTexSrtNode:
 __vt__Q34nw4r3g3d12AnmObjTexSrt:
 	.incbin "baserom.dol", 0x43CC28, 0x48
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29106
 $$29106:
 	.incbin "baserom.dol", 0x499A80, 0x4

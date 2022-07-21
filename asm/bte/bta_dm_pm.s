@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_dm_init_pm
 bta_dm_init_pm:
 /* 8007AFB0 00076DF0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -730,7 +730,7 @@ bta_dm_pm_timer:
 /* 8007B9C4 00077804  38 63 00 08 */	addi r3, r3, 8
 /* 8007B9C8 00077808  4B FF F9 E8 */	b bta_dm_pm_set_mode
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2951
 $$2951:
 	.incbin "baserom.dol", 0x436C98, 0x2C

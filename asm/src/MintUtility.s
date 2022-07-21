@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global IsMainPlayer__Q43scn4step4hero11MintUtilityFv
 IsMainPlayer__Q43scn4step4hero11MintUtilityFv:
 /* 8034BE58 00347C98  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -940,7 +940,7 @@ RequestEffectGearNodeNDOS__Q43scn4step4hero11MintUtilityFQ43scn4step6effect4Kind
 /* 8034CAE4 00348924  38 21 00 60 */	addi r1, r1, 0x60
 /* 8034CAE8 00348928  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259354
 $$259354:
 	.incbin "baserom.dol", 0x49D848, 0x4

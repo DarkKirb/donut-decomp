@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster8StateFlyFPQ43scn4step4boss4BossQ63scn4step4boss15challengemaster8StateFly12TurnWaitType
 __ct__Q53scn4step4boss15challengemaster8StateFlyFPQ43scn4step4boss4BossQ63scn4step4boss15challengemaster8StateFly12TurnWaitType:
 /* 8023FEA0 0023BCE0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -247,7 +247,7 @@ lbl_802401D4:
 /* 802401E4 0023C024  38 21 00 20 */	addi r1, r1, 0x20
 /* 802401E8 0023C028  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 80292078 0028DEB8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -364,7 +364,7 @@ lbl_802921E8:
 procFixPos__Q53scn4step5enemy6common8StateFlyFv:
 /* 80292200 0028E040  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10brontoburt8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10brontoburt8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 8029F4F0 0029B330  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -611,7 +611,7 @@ lbl_8029F838:
 __dt__Q53scn4step5enemy10brontoburt8StateFlyFv:
 /* 8029F86C 0029B6AC  4B FF 21 4C */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8cerulean8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy8cerulean8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 802A5668 002A14A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1044,7 +1044,7 @@ lbl_802A5C44:
 /* 802A5C74 002A1AB4  38 21 00 40 */	addi r1, r1, 0x40
 /* 802A5C78 002A1AB8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6degout8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6degout8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 802ADA58 002A9898  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1111,7 +1111,7 @@ lbl_802ADB20:
 __dt__Q53scn4step5enemy6degout8StateFlyFv:
 /* 802ADB34 002A9974  4B FE 3E 84 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8dubiorjr8StateFlyFPQ43scn4step5enemy5Enemyf
 __ct__Q53scn4step5enemy8dubiorjr8StateFlyFPQ43scn4step5enemy5Enemyf:
 /* 802AE5E4 002AA424  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1196,7 +1196,7 @@ procMove__Q53scn4step5enemy8dubiorjr8StateFlyFv:
 procFixPos__Q53scn4step5enemy8dubiorjr8StateFlyFv:
 /* 802AE6F4 002AA534  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5gemra8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5gemra8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 802B643C 002B227C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1345,7 +1345,7 @@ procFixPos__Q53scn4step5enemy5gemra8StateFlyFv:
 /* 802B661C 002B245C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802B6620 002B2460  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8searches8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy8searches8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 802DC114 002D7F54  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1464,7 +1464,7 @@ __dt__Q53scn4step5enemy8searches8StateFlyFv:
 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches11StateAttack$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802DC28C 002D80CC  4B F5 24 14 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6sodory8StateFlyFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6sodory8StateFlyFPQ43scn4step5enemy5Enemy:
 /* 802E6080 002E1EC0  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1622,42 +1622,42 @@ procFixPos__Q53scn4step5enemy6sodory8StateFlyFv:
 /* 802E62A8 002E20E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 802E62AC 002E20EC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss15challengemaster8StateFly
 __vt__Q53scn4step4boss15challengemaster8StateFly:
 	.incbin "baserom.dol", 0x461E98, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common8StateFly
 __vt__Q53scn4step5enemy6common8StateFly:
 	.incbin "baserom.dol", 0x46F1A8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt8StateFly
 __vt__Q53scn4step5enemy10brontoburt8StateFly:
 	.incbin "baserom.dol", 0x470B88, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8cerulean8StateFly
 __vt__Q53scn4step5enemy8cerulean8StateFly:
 	.incbin "baserom.dol", 0x4716B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6degout8StateFly
 __vt__Q53scn4step5enemy6degout8StateFly:
 	.incbin "baserom.dol", 0x472180, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8dubiorjr8StateFly
 __vt__Q53scn4step5enemy8dubiorjr8StateFly:
 	.incbin "baserom.dol", 0x472428, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5gemra8StateFly
 __vt__Q53scn4step5enemy5gemra8StateFly:
 	.incbin "baserom.dol", 0x473218, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches11StateAttack$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches11StateAttack$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x477980, 0x10
@@ -1665,17 +1665,17 @@ __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy8searches11S
 __vt__Q53scn4step5enemy8searches8StateFly:
 	.incbin "baserom.dol", 0x477990, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory8StateFly
 __vt__Q53scn4step5enemy6sodory8StateFly:
 	.incbin "baserom.dol", 0x478FF8, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255233
 $$255233:
 	.incbin "baserom.dol", 0x4953E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255684
 $$255684:
 	.incbin "baserom.dol", 0x49BB40, 0x4
@@ -1683,7 +1683,7 @@ $$255684:
 $$255685:
 	.incbin "baserom.dol", 0x49BB44, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255869
 $$255869:
 	.incbin "baserom.dol", 0x49BED8, 0x4
@@ -1694,12 +1694,12 @@ $$255884:
 $$255885:
 	.incbin "baserom.dol", 0x49BEE0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256042
 $$256042:
 	.incbin "baserom.dol", 0x49C068, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255787
 $$255787:
 	.incbin "baserom.dol", 0x49CEC8, 0x4

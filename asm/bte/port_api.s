@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RFCOMM_Init
 RFCOMM_Init:
 /* 80096304 00092144  94 21 FF F0 */	stwu r1, -0x10(r1)

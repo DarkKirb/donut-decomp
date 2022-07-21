@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMMIXSetPan__FP13HBMMIXChannel
 __HBMMIXSetPan__FP13HBMMIXChannel:
 /* 80147EB0 00143CF0  3C 80 80 54 */	lis r4, __HBMMIXSoundMode@ha
@@ -1860,7 +1860,7 @@ HBMFreeIndexByKey:
 /* 80149818 00145658  4E 80 00 20 */	blr 
 /* 8014981C 0014565C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMMIXVolumeTable
 __HBMMIXVolumeTable:
 	.incbin "baserom.dol", 0x4417C8, 0x790

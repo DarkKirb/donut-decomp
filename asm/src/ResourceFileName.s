@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetLayoutFileName__Q23hbm16ResourceFileNameFUc
 GetLayoutFileName__Q23hbm16ResourceFileNameFUc:
 /* 8019D834 00199674  54 60 06 3E */	clrlwi r0, r3, 0x18
@@ -34,7 +34,7 @@ lbl_8019D884:
 /* 8019D884 001996C4  80 6D 8A 34 */	lwz r3, MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2-_SDA_BASE_(r13)
 /* 8019D888 001996C8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
 $$248726:
 	.incbin "baserom.dol", 0x452A30, 0x14
@@ -60,7 +60,7 @@ $$248735:
 $$248736:
 	.incbin "baserom.dol", 0x452AB4, 0x1C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2
 LAYOUT_ENG_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
 	.incbin "baserom.dol", 0x493228, 0x4
@@ -77,7 +77,7 @@ MESSAGE_NORMAL_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
 MESSAGE_WARNING_FILENAME__Q23hbm30$$2unnamed$$2ResourceFileName_cpp$$2:
 	.incbin "baserom.dol", 0x493238, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global CONFIG_FILENAME__Q23hbm16ResourceFileName
 CONFIG_FILENAME__Q23hbm16ResourceFileName:
 	.incbin "baserom.dol", 0x49A358, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global dump__Q26mintvm8BCOpCodeFv
 dump__Q26mintvm8BCOpCodeFv:
 /* 801C55DC 001C141C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -356,7 +356,7 @@ getOpTypeName__Q26mintvm8BCOpCodeCFQ36mintvm8BCOpCode6OpType:
 /* 801C5AE8 001C1928  7C 63 00 2E */	lwzx r3, r3, r0
 /* 801C5AEC 001C192C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249613
 $$249613:
 	.incbin "baserom.dol", 0x457728, 0x10
@@ -442,7 +442,7 @@ $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv$$20:
 $$2STRING$$2getSTI__Q26mintvm8BCOpCodeCFv:
 	.incbin "baserom.dol", 0x457B20, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249614
 $$249614:
 	.incbin "baserom.dol", 0x4936F0, 0x8

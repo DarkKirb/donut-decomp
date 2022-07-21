@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera9QuakeDataFv
 __ct__Q43scn4step6camera9QuakeDataFv:
 /* 8026647C 002622BC  94 21 FD 60 */	stwu r1, -0x2a0(r1)
@@ -851,7 +851,7 @@ offset__Q43scn4step6camera9QuakeDataCFQ43scn4step6camera9QuakeKindUl:
 /* 8026716C 00262FAC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80267170 00262FB0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250464
 $$250464:
 	.incbin "baserom.dol", 0x49B698, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn15challengeresult4info10TimeStringFPCwiii
 __ct__Q43scn15challengeresult4info10TimeStringFPCwiii:
 /* 801F4FB4 001F0DF4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -214,7 +214,7 @@ onEndTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUs:
 onNormalChar__Q43scn15challengeresult4info10TimeStringFw:
 /* 801F52A8 001F10E8  4B FB 05 5C */	b onNormalChar__Q24info22Iterator$52705Util_cppFw
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249497
 $$249497:
 	.incbin "baserom.dol", 0x45B810, 0xC
@@ -225,7 +225,7 @@ $$249499:
 __vt__Q43scn15challengeresult4info10TimeString:
 	.incbin "baserom.dol", 0x45B828, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249495
 $$249495:
 	.incbin "baserom.dol", 0x494368, 0x8

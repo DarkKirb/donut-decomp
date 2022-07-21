@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn19challengefileselect5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q33scn19challengefileselect5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 801E41B0 001DFFF0  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -99,7 +99,7 @@ isBackEnd__Q33scn19challengefileselect5FrameCFv:
 /* 801E42F4 001E0134  38 63 01 D0 */	addi r3, r3, 0x1d0
 /* 801E42F8 001E0138  4B FC 41 AC */	b isPushEnd__Q34info6common10ButtonHelpCFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info5lvmap5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component
 __ct__Q53scn4step4info5lvmap5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component:
 /* 803BD588 003B93C8  94 21 EC 90 */	stwu r1, -0x1370(r1)
@@ -765,7 +765,7 @@ isTargetScoreEnd__Q53scn4step4info5lvmap5FrameCFv:
 /* 803BDF10 003B9D50  38 21 00 10 */	addi r1, r1, 0x10
 /* 803BDF14 003B9D54  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251962
 $$251962:
 	.incbin "baserom.dol", 0x45A300, 0x1C
@@ -779,7 +779,7 @@ $$251965:
 $$251966:
 	.incbin "baserom.dol", 0x45A338, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253212
 $$253212:
 	.incbin "baserom.dol", 0x48D810, 0x18
@@ -817,7 +817,7 @@ $$253224:
 $$253225:
 	.incbin "baserom.dol", 0x48D8BC, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251963
 $$251963:
 	.incbin "baserom.dol", 0x493F28, 0x8
@@ -825,7 +825,7 @@ $$251963:
 $$252008:
 	.incbin "baserom.dol", 0x493F30, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253213
 $$253213:
 	.incbin "baserom.dol", 0x497FD0, 0x8

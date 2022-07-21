@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 Create__Q43scn4step6weapon22EffectLocatorModelDescFv:
 /* 803D6350 003D2190  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -46,7 +46,7 @@ lbl_803D6398:
 /* 803D63EC 003D222C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D63F0 003D2230  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250196
 $$250196:
 	.incbin "baserom.dol", 0x48F878, 0x10
@@ -54,7 +54,7 @@ $$250196:
 $$250197:
 	.incbin "baserom.dol", 0x48F888, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498418, 0x8

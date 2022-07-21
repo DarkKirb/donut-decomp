@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail12CollidedInfoFv
 __ct__Q35mcoll6detail12CollidedInfoFv:
 /* 801B68C8 001B2708  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -173,7 +173,7 @@ landVelocity__Q35mcoll6detail12CollidedInfoCFv:
 /* 801B6B04 001B2944  38 84 00 48 */	addi r4, r4, 0x48
 /* 801B6B08 001B2948  4B F9 4E 60 */	b __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250421
 $$250421:
 	.incbin "baserom.dol", 0x49A580, 0x8

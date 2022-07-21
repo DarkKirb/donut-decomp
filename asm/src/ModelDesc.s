@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj9ModelDescFv
 __ct__Q24gobj9ModelDescFv:
 /* 8019B260 001970A0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -51,7 +51,7 @@ lbl_8019B2B4:
 /* 8019B30C 0019714C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019B310 00197150  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q43scn4step4boss9ModelDescFQ43scn4step3map11BinBossKindUlbb
 Create__Q43scn4step4boss9ModelDescFQ43scn4step3map11BinBossKindUlbb:
 /* 802329D4 0022E814  7C 60 1B 78 */	mr r0, r3
@@ -166,7 +166,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80232B64 0022E9A4  90 03 00 54 */	stw r0, 0x54(r3)
 /* 80232B68 0022E9A8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateNormal__Q53scn4step4boss7bonkers9ModelDescFUlb
 CreateNormal__Q53scn4step4boss7bonkers9ModelDescFUlb:
 /* 80237C08 00233A48  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -281,7 +281,7 @@ lbl_80237D74:
 /* 80237DA0 00233BE0  38 21 00 30 */	addi r1, r1, 0x30
 /* 80237DA4 00233BE4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss15challengemaster9ModelDescFUlb
 Create__Q53scn4step4boss15challengemaster9ModelDescFUlb:
 /* 8023DAC8 00239908  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -343,7 +343,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8023DB98 002399D8  90 03 00 50 */	stw r0, 0x50(r3)
 /* 8023DB9C 002399DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss12creditdedede9ModelDescFUlb
 Create__Q53scn4step4boss12creditdedede9ModelDescFUlb:
 /* 80247C58 00243A98  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -408,7 +408,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80247D34 00243B74  90 83 00 78 */	stw r4, 0x78(r3)
 /* 80247D38 00243B78  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss9creditdee9ModelDescFUlb
 Create__Q53scn4step4boss9creditdee9ModelDescFUlb:
 /* 802486A8 002444E8  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -580,7 +580,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80248914 00244754  90 83 00 3C */	stw r4, 0x3c(r3)
 /* 80248918 00244758  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss10creditmeta9ModelDescFUlb
 Create__Q53scn4step4boss10creditmeta9ModelDescFUlb:
 /* 80249D44 00245B84  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -644,7 +644,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80249E1C 00245C5C  90 83 00 C8 */	stw r4, 0xc8(r3)
 /* 80249E20 00245C60  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss10creditroah9ModelDescFUlb
 Create__Q53scn4step4boss10creditroah9ModelDescFUlb:
 /* 8024B6D4 00247514  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -727,7 +727,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8024B7F0 00247630  90 03 70 AC */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 8024B7F4 00247634  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss6dubior9ModelDescFUlb
 Create__Q53scn4step4boss6dubior9ModelDescFUlb:
 /* 8024D75C 0024959C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -785,7 +785,7 @@ lbl_8024D7F8:
 /* 8024D824 00249664  38 21 00 30 */	addi r1, r1, 0x30
 /* 8024D828 00249668  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss10gigantedge9ModelDescFUlb
 Create__Q53scn4step4boss10gigantedge9ModelDescFUlb:
 /* 802522B8 0024E0F8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -843,7 +843,7 @@ lbl_80252354:
 /* 80252380 0024E1C0  38 21 00 30 */	addi r1, r1, 0x30
 /* 80252384 0024E1C4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss8kingsdoo9ModelDescFUlb
 Create__Q53scn4step4boss8kingsdoo9ModelDescFUlb:
 /* 8025388C 0024F6CC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -900,7 +900,7 @@ lbl_80253924:
 /* 80253950 0024F790  38 21 00 30 */	addi r1, r1, 0x30
 /* 80253954 0024F794  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss9moundeath9ModelDescFUlb
 Create__Q53scn4step4boss9moundeath9ModelDescFUlb:
 /* 80255AC8 00251908  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -958,7 +958,7 @@ lbl_80255B64:
 /* 80255B90 002519D0  38 21 00 30 */	addi r1, r1, 0x30
 /* 80255B94 002519D4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss13watergalboros9ModelDescFUlb
 Create__Q53scn4step4boss13watergalboros9ModelDescFUlb:
 /* 80259DE4 00255C24  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1016,7 +1016,7 @@ lbl_80259E80:
 /* 80259EAC 00255CEC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80259EB0 00255CF0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss6whispy9ModelDescFUlb
 Create__Q53scn4step4boss6whispy9ModelDescFUlb:
 /* 8025C810 00258650  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1083,7 +1083,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8025C8F0 00258730  90 03 01 04 */	stw r0, 0x104(r3)
 /* 8025C8F4 00258734  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4boss9zankibble9ModelDescFUlb
 Create__Q53scn4step4boss9zankibble9ModelDescFUlb:
 /* 80260D68 0025CBA8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1141,7 +1141,7 @@ lbl_80260E04:
 /* 80260E30 0025CC70  38 21 00 30 */	addi r1, r1, 0x30
 /* 80260E34 0025CC74  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara9ModelDescFv
 __ct__Q43scn4step5chara9ModelDescFv:
 /* 80271510 0026D350  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1173,7 +1173,7 @@ __ct__Q43scn4step5chara9ModelDescFv:
 /* 80271578 0026D3B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027157C 0026D3BC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8armordee9ModelDescFv
 Create__Q53scn4step5enemy8armordee9ModelDescFv:
 /* 8029662C 0029246C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1236,7 +1236,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80296700 00292540  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 80296704 00292544  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global init__Q28dynamics8DescNodeFfffffffff
 init__Q28dynamics8DescNodeFfffffffff:
 /* 802971C4 00293004  C0 01 00 08 */	lfs f0, 8(r1)
@@ -1522,7 +1522,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802975DC 0029341C  90 03 01 18 */	stw r0, 0x118(r3)
 /* 802975E0 00293420  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7blipper9ModelDescFv
 Create__Q53scn4step5enemy7blipper9ModelDescFv:
 /* 80299398 002951D8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1591,7 +1591,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 80299484 002952C4  90 83 00 DC */	stw r4, 0xdc(r3)
 /* 80299488 002952C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv
 Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv:
 /* 8029C0E0 00297F20  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1640,7 +1640,7 @@ lbl_8029C12C:
 /* 8029C188 00297FC8  38 21 00 30 */	addi r1, r1, 0x30
 /* 8029C18C 00297FCC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6bouncy9ModelDescFv
 Create__Q53scn4step5enemy6bouncy9ModelDescFv:
 /* 8029D1D4 00299014  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1705,7 +1705,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8029D2B0 002990F0  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 8029D2B4 002990F4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5bowby9ModelDescFv
 Create__Q53scn4step5enemy5bowby9ModelDescFv:
 /* 8029E788 0029A5C8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1816,7 +1816,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8029E90C 0029A74C  90 83 00 A0 */	stw r4, 0xa0(r3)
 /* 8029E910 0029A750  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10brontoburt9ModelDescFv
 Create__Q53scn4step5enemy10brontoburt9ModelDescFv:
 /* 8029F364 0029B1A4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1927,7 +1927,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 8029F4E8 0029B328  90 03 00 78 */	stw r0, 0x78(r3)
 /* 8029F4EC 0029B32C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11broomhatter9ModelDescFv
 Create__Q53scn4step5enemy11broomhatter9ModelDescFv:
 /* 802A0EE8 0029CD28  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1991,7 +1991,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A0FC0 0029CE00  90 83 00 A0 */	stw r4, 0xa0(r3)
 /* 802A0FC4 0029CE04  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5cappy9ModelDescFv
 Create__Q53scn4step5enemy5cappy9ModelDescFv:
 /* 802A2DA4 0029EBE4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2058,7 +2058,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A2E88 0029ECC8  90 83 00 B4 */	stw r4, 0xb4(r3)
 /* 802A2E8C 0029ECCC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8cappyhat9ModelDescFv
 Create__Q53scn4step5enemy8cappyhat9ModelDescFv:
 /* 802A3D14 0029FB54  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2123,7 +2123,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A3DF0 0029FC30  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 802A3DF4 0029FC34  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8cerulean9ModelDescFv
 Create__Q53scn4step5enemy8cerulean9ModelDescFv:
 /* 802A5580 002A13C0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2189,7 +2189,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A5660 002A14A0  90 03 00 B4 */	stw r0, 0xb4(r3)
 /* 802A5664 002A14A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv
 CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv:
 /* 802A62E4 002A2124  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2258,7 +2258,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A63D0 002A2210  90 03 00 F0 */	stw r0, 0xf0(r3)
 /* 802A63D4 002A2214  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4como9ModelDescFv
 Create__Q53scn4step5enemy4como9ModelDescFv:
 /* 802A7470 002A32B0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2322,7 +2322,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802A7548 002A3388  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802A754C 002A338C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6degout9ModelDescFv
 Create__Q53scn4step5enemy6degout9ModelDescFv:
 /* 802AD344 002A9184  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2387,7 +2387,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802AD420 002A9260  90 03 00 DC */	stw r0, 0xdc(r3)
 /* 802AD424 002A9264  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8dubiorjr9ModelDescFv
 Create__Q53scn4step5enemy8dubiorjr9ModelDescFv:
 /* 802AE194 002A9FD4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2503,7 +2503,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802AE324 002AA164  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802AE328 002AA168  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11dubiorspark9ModelDescFv
 Create__Q53scn4step5enemy11dubiorspark9ModelDescFv:
 /* 802AEE80 002AACC0  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -2592,7 +2592,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802AEFB4 002AADF4  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 802AEFB8 002AADF8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4elec9ModelDescFv
 Create__Q53scn4step5enemy4elec9ModelDescFv:
 /* 802AFC40 002ABA80  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2658,7 +2658,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802AFD20 002ABB60  90 03 00 A0 */	stw r0, 0xa0(r3)
 /* 802AFD24 002ABB64  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6flamer9ModelDescFv
 Create__Q53scn4step5enemy6flamer9ModelDescFv:
 /* 802B22D8 002AE118  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2724,7 +2724,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802B23B8 002AE1F8  90 03 00 A0 */	stw r0, 0xa0(r3)
 /* 802B23BC 002AE1FC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5foley9ModelDescFv
 Create__Q53scn4step5enemy5foley9ModelDescFv:
 /* 802B49C8 002B0808  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2786,7 +2786,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802B4A98 002B08D8  90 83 00 A0 */	stw r4, 0xa0(r3)
 /* 802B4A9C 002B08DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5gemra9ModelDescFv
 Create__Q53scn4step5enemy5gemra9ModelDescFv:
 /* 802B61AC 002B1FEC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2850,7 +2850,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802B6284 002B20C4  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802B6288 002B20C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7gigatzo9ModelDescFv
 Create__Q53scn4step5enemy7gigatzo9ModelDescFv:
 /* 802B76B8 002B34F8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3011,7 +3011,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802B78F4 002B3734  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 802B78F8 002B3738  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5gordo9ModelDescFv
 Create__Q53scn4step5enemy5gordo9ModelDescFv:
 /* 802B9058 002B4E98  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3075,7 +3075,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802B9130 002B4F70  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802B9134 002B4F74  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateNormal__Q53scn4step5enemy7hothead9ModelDescFv
 CreateNormal__Q53scn4step5enemy7hothead9ModelDescFv:
 /* 802BA66C 002B64AC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3140,7 +3140,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802BA748 002B6588  90 83 00 B4 */	stw r4, 0xb4(r3)
 /* 802BA74C 002B658C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6juckle9ModelDescFv
 Create__Q53scn4step5enemy6juckle9ModelDescFv:
 /* 802BB7A0 002B75E0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3201,7 +3201,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802BB86C 002B76AC  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 802BB870 002B76B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4kabu9ModelDescFv
 Create__Q53scn4step5enemy4kabu9ModelDescFv:
 /* 802BCDC8 002B8C08  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3270,7 +3270,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802BCEB4 002B8CF4  90 83 00 DC */	stw r4, 0xdc(r3)
 /* 802BCEB8 002B8CF8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10knucklejoe9ModelDescFv
 Create__Q53scn4step5enemy10knucklejoe9ModelDescFv:
 /* 802BF8C0 002BB700  94 21 FE 90 */	stwu r1, -0x170(r1)
@@ -3511,7 +3511,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802BFC50 002BBA90  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802BFC54 002BBA94  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6lanzer9ModelDescFv
 Create__Q53scn4step5enemy6lanzer9ModelDescFv:
 /* 802C2188 002BDFC8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3575,7 +3575,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C2260 002BE0A0  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802C2264 002BE0A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6leafan9ModelDescFv
 Create__Q53scn4step5enemy6leafan9ModelDescFv:
 /* 802C3564 002BF3A4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3640,7 +3640,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C3640 002BF480  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 802C3644 002BF484  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9mbossdead9ModelDescFv
 Create__Q53scn4step5enemy9mbossdead9ModelDescFv:
 /* 802C4698 002C04D8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -3713,7 +3713,7 @@ lbl_802C476C:
 /* 802C4798 002C05D8  38 21 00 50 */	addi r1, r1, 0x50
 /* 802C479C 002C05DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7mumbies9ModelDescFv
 Create__Q53scn4step5enemy7mumbies9ModelDescFv:
 /* 802C5000 002C0E40  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3780,7 +3780,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C50E4 002C0F24  90 03 00 C8 */	stw r0, 0xc8(r3)
 /* 802C50E8 002C0F28  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8needlous9ModelDescFv
 Create__Q53scn4step5enemy8needlous9ModelDescFv:
 /* 802C6204 002C2044  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3843,7 +3843,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C62D8 002C2118  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802C62DC 002C211C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5noddy9ModelDescFv
 Create__Q53scn4step5enemy5noddy9ModelDescFv:
 /* 802C732C 002C316C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3907,7 +3907,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C7404 002C3244  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802C7408 002C3248  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5nruff9ModelDescFv
 Create__Q53scn4step5enemy5nruff9ModelDescFv:
 /* 802C7E00 002C3C40  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3972,7 +3972,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C7EDC 002C3D1C  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 802C7EE0 002C3D20  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6owgulf9ModelDescFv
 Create__Q53scn4step5enemy6owgulf9ModelDescFv:
 /* 802C9F18 002C5D58  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4039,7 +4039,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802C9FFC 002C5E3C  90 83 00 B4 */	stw r4, 0xb4(r3)
 /* 802CA000 002C5E40  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7parasol9ModelDescFv
 Create__Q53scn4step5enemy7parasol9ModelDescFv:
 /* 802CB104 002C6F44  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4107,7 +4107,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802CB1EC 002C702C  90 83 00 C8 */	stw r4, 0xc8(r3)
 /* 802CB1F0 002C7030  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6pierce9ModelDescFv
 Create__Q53scn4step5enemy6pierce9ModelDescFv:
 /* 802CFB3C 002CB97C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4173,7 +4173,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802CFC1C 002CBA5C  90 83 00 B4 */	stw r4, 0xb4(r3)
 /* 802CFC20 002CBA60  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10poppybrojr9ModelDescFv
 Create__Q53scn4step5enemy10poppybrojr9ModelDescFv:
 /* 802D1D28 002CDB68  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -4366,7 +4366,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D1FF0 002CDE30  90 03 00 A0 */	stw r0, 0xa0(r3)
 /* 802D1FF4 002CDE34  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy14poppybrojrbomb9ModelDescFv
 Create__Q53scn4step5enemy14poppybrojrbomb9ModelDescFv:
 /* 802D2C0C 002CEA4C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4415,7 +4415,7 @@ lbl_802D2C58:
 /* 802D2CB4 002CEAF4  38 21 00 30 */	addi r1, r1, 0x30
 /* 802D2CB8 002CEAF8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9puppetdee9ModelDescFv
 Create__Q53scn4step5enemy9puppetdee9ModelDescFv:
 /* 802D3318 002CF158  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4479,7 +4479,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D33F0 002CF230  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802D33F4 002CF234  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5rocky9ModelDescFv
 Create__Q53scn4step5enemy5rocky9ModelDescFv:
 /* 802D3A88 002CF8C8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4550,7 +4550,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D3B7C 002CF9BC  90 03 01 04 */	stw r0, 0x104(r3)
 /* 802D3B80 002CF9C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8rollball9ModelDescFv
 Create__Q53scn4step5enemy8rollball9ModelDescFv:
 /* 802D662C 002D246C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4660,7 +4660,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D67AC 002D25EC  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802D67B0 002D25F0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7sandbag9ModelDescFv
 Create__Q53scn4step5enemy7sandbag9ModelDescFv:
 /* 802D9188 002D4FC8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4724,7 +4724,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D9260 002D50A0  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802D9264 002D50A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6scarfy9ModelDescFv
 Create__Q53scn4step5enemy6scarfy9ModelDescFv:
 /* 802D9D58 002D5B98  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4803,7 +4803,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802D9E6C 002D5CAC  90 03 00 F0 */	stw r0, 0xf0(r3)
 /* 802D9E70 002D5CB0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8searches9ModelDescFv
 Create__Q53scn4step5enemy8searches9ModelDescFv:
 /* 802DBDF0 002D7C30  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4863,7 +4863,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802DBEB8 002D7CF8  90 83 00 78 */	stw r4, 0x78(r3)
 /* 802DBEBC 002D7CFC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5sheld9ModelDescFv
 Create__Q53scn4step5enemy5sheld9ModelDescFv:
 /* 802DD8F8 002D9738  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4930,7 +4930,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802DD9DC 002D981C  90 83 00 F0 */	stw r4, 0xf0(r3)
 /* 802DD9E0 002D9820  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6shotzo9ModelDescFv
 Create__Q53scn4step5enemy6shotzo9ModelDescFv:
 /* 802E0740 002DC580  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4995,7 +4995,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E081C 002DC65C  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 802E0820 002DC660  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9sirkibble9ModelDescFv
 Create__Q53scn4step5enemy9sirkibble9ModelDescFv:
 /* 802E16E4 002DD524  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5064,7 +5064,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E17D0 002DD610  90 03 00 F0 */	stw r0, 0xf0(r3)
 /* 802E17D4 002DD614  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11sisterbound9ModelDescFv
 Create__Q53scn4step5enemy11sisterbound9ModelDescFv:
 /* 802E2AF4 002DE934  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5128,7 +5128,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E2BCC 002DEA0C  90 83 00 8C */	stw r4, 0x8c(r3)
 /* 802E2BD0 002DEA10  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5snowl9ModelDescFv
 Create__Q53scn4step5enemy5snowl9ModelDescFv:
 /* 802E3840 002DF680  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5194,7 +5194,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E3920 002DF760  90 83 00 A0 */	stw r4, 0xa0(r3)
 /* 802E3924 002DF764  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6sodory9ModelDescFv
 Create__Q53scn4step5enemy6sodory9ModelDescFv:
 /* 802E53D0 002E1210  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5258,7 +5258,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E54A8 002E12E8  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802E54AC 002E12EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6sparky9ModelDescFv
 Create__Q53scn4step5enemy6sparky9ModelDescFv:
 /* 802E6E78 002E2CB8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5327,7 +5327,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E6F64 002E2DA4  90 83 00 DC */	stw r4, 0xdc(r3)
 /* 802E6F68 002E2DA8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10stareffect9ModelDescFv
 Create__Q53scn4step5enemy10stareffect9ModelDescFv:
 /* 802E7E84 002E3CC4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5376,7 +5376,7 @@ lbl_802E7ED0:
 /* 802E7F2C 002E3D6C  38 21 00 30 */	addi r1, r1, 0x30
 /* 802E7F30 002E3D70  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy3sun9ModelDescFv
 Create__Q53scn4step5enemy3sun9ModelDescFv:
 /* 802E8C44 002E4A84  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5441,7 +5441,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802E8D20 002E4B60  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 802E8D24 002E4B64  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9tsukikage9ModelDescFv
 Create__Q53scn4step5enemy9tsukikage9ModelDescFv:
 /* 802EAFFC 002E6E3C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5513,7 +5513,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802EB0F4 002E6F34  90 03 01 18 */	stw r0, 0x118(r3)
 /* 802EB0F8 002E6F38  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9waddledee9ModelDescFv
 Create__Q53scn4step5enemy9waddledee9ModelDescFv:
 /* 802ED6F4 002E9534  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5697,7 +5697,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802ED98C 002E97CC  90 83 02 80 */	stw r4, 0x280(r3)
 /* 802ED990 002E97D0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
 CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv:
 /* 802EFB34 002EB974  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5775,7 +5775,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802EFC44 002EBA84  90 03 01 90 */	stw r0, 0x190(r3)
 /* 802EFC48 002EBA88  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10watergalbo9ModelDescFv
 Create__Q53scn4step5enemy10watergalbo9ModelDescFv:
 /* 802F01BC 002EBFFC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5843,7 +5843,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802F02A4 002EC0E4  90 83 00 C8 */	stw r4, 0xc8(r3)
 /* 802F02A8 002EC0E8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6whippy9ModelDescFv
 Create__Q53scn4step5enemy6whippy9ModelDescFv:
 /* 802F0804 002EC644  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5907,7 +5907,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802F08DC 002EC71C  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802F08E0 002EC720  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11whispyapple9ModelDescFv
 Create__Q53scn4step5enemy11whispyapple9ModelDescFv:
 /* 802F10A8 002ECEE8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5973,7 +5973,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 802F1188 002ECFC8  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802F118C 002ECFCC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy15zankibblecutter9ModelDescFv
 Create__Q53scn4step5enemy15zankibblecutter9ModelDescFv:
 /* 802F2570 002EE3B0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -6022,7 +6022,7 @@ lbl_802F25B8:
 /* 802F2618 002EE458  38 21 00 30 */	addi r1, r1, 0x30
 /* 802F261C 002EE45C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon7airball9ModelDescFv
 Create__Q53scn4step6weapon7airball9ModelDescFv:
 /* 803DB1B8 003D6FF8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6102,7 +6102,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803DB2C8 003D7108  90 03 4A 50 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803DB2CC 003D710C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon11starshotlv19ModelDescFv
 Create__Q53scn4step6weapon11starshotlv19ModelDescFv:
 /* 803DC230 003D8070  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -6148,7 +6148,7 @@ lbl_803DC278:
 /* 803DC2CC 003D810C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803DC2D0 003D8110  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon11starshotlv29ModelDescFv
 Create__Q53scn4step6weapon11starshotlv29ModelDescFv:
 /* 803DCAA8 003D88E8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6229,7 +6229,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803DCBBC 003D89FC  90 03 4B 98 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803DCBC0 003D8A00  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon11starshotlv39ModelDescFv
 Create__Q53scn4step6weapon11starshotlv39ModelDescFv:
 /* 803DD184 003D8FC4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6310,7 +6310,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803DD298 003D90D8  90 03 4C 48 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803DD29C 003D90DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon13whispyairball9ModelDescFv
 Create__Q53scn4step6weapon13whispyairball9ModelDescFv:
 /* 803DE400 003DA240  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -6440,7 +6440,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803DE5C8 003DA408  90 03 00 14 */	stw r0, 0x14(r3)
 /* 803DE5CC 003DA40C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon12leafanpollen9ModelDescFv
 Create__Q53scn4step6weapon12leafanpollen9ModelDescFv:
 /* 803DF078 003DAEB8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6510,7 +6510,7 @@ lbl_803DF140:
 /* 803DF16C 003DAFAC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803DF170 003DAFB0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 Create__Q53scn4step6weapon13gigatzobullet9ModelDescFv:
 /* 803E02B8 003DC0F8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6667,7 +6667,7 @@ lbl_803E0480:
 /* 803E04F0 003DC330  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E04F4 003DC334  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon10comothread9ModelDescFv
 Create__Q53scn4step6weapon10comothread9ModelDescFv:
 /* 803E2278 003DE0B8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6737,7 +6737,7 @@ lbl_803E2340:
 /* 803E236C 003DE1AC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E2370 003DE1B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv
 Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv:
 /* 803E2A0C 003DE84C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6818,7 +6818,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E2B20 003DE960  90 03 50 88 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803E2B24 003DE964  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon20enemywaterbulletwarp9ModelDescFv
 Create__Q53scn4step6weapon20enemywaterbulletwarp9ModelDescFv:
 /* 803E3668 003DF4A8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6899,7 +6899,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E377C 003DF5BC  90 03 51 38 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803E3780 003DF5C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon10spearspear9ModelDescFv
 Create__Q53scn4step6weapon10spearspear9ModelDescFv:
 /* 803E3F64 003DFDA4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -6984,7 +6984,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E4088 003DFEC8  90 83 00 28 */	stw r4, 0x28(r3)
 /* 803E408C 003DFECC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon12hammerhammer9ModelDescFv
 Create__Q53scn4step6weapon12hammerhammer9ModelDescFv:
 /* 803E5350 003E1190  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7054,7 +7054,7 @@ lbl_803E5418:
 /* 803E5444 003E1284  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E5448 003E1288  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon8wingshot9ModelDescFv
 Create__Q53scn4step6weapon8wingshot9ModelDescFv:
 /* 803E5AF4 003E1934  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7135,7 +7135,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E5C08 003E1A48  90 03 53 18 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803E5C0C 003E1A4C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon12shotzobullet9ModelDescFv
 Create__Q53scn4step6weapon12shotzobullet9ModelDescFv:
 /* 803E7290 003E30D0  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7205,7 +7205,7 @@ lbl_803E7358:
 /* 803E7384 003E31C4  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E7388 003E31C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon15sirkibblecutter9ModelDescFv
 Create__Q53scn4step6weapon15sirkibblecutter9ModelDescFv:
 /* 803E77F4 003E3634  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7286,7 +7286,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E7908 003E3748  90 03 54 60 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803E790C 003E374C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon13owgulffeather9ModelDescFv
 Create__Q53scn4step6weapon13owgulffeather9ModelDescFv:
 /* 803E8040 003E3E80  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7356,7 +7356,7 @@ lbl_803E8108:
 /* 803E8134 003E3F74  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E8138 003E3F78  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon9foleyleaf9ModelDescFv
 Create__Q53scn4step6weapon9foleyleaf9ModelDescFv:
 /* 803E84A4 003E42E4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7440,7 +7440,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E85C4 003E4404  90 03 00 14 */	stw r0, 0x14(r3)
 /* 803E85C8 003E4408  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon10bowbyarrow9ModelDescFv
 Create__Q53scn4step6weapon10bowbyarrow9ModelDescFv:
 /* 803E87F4 003E4634  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7545,7 +7545,7 @@ lbl_803E88F8:
 /* 803E896C 003E47AC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E8970 003E47B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon12jucklecutter9ModelDescFv
 Create__Q53scn4step6weapon12jucklecutter9ModelDescFv:
 /* 803E9494 003E52D4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7615,7 +7615,7 @@ lbl_803E955C:
 /* 803E9588 003E53C8  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E958C 003E53CC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon17tsukikageshuriken9ModelDescFv
 Create__Q53scn4step6weapon17tsukikageshuriken9ModelDescFv:
 /* 803E98C8 003E5708  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7696,7 +7696,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803E99DC 003E581C  90 03 58 08 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803E99E0 003E5820  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon10whispyroot9ModelDescFv
 Create__Q53scn4step6weapon10whispyroot9ModelDescFv:
 /* 803EA768 003E65A8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7766,7 +7766,7 @@ lbl_803EA830:
 /* 803EA85C 003E669C  38 21 00 50 */	addi r1, r1, 0x50
 /* 803EA860 003E66A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon18combinationairball9ModelDescFv
 Create__Q53scn4step6weapon18combinationairball9ModelDescFv:
 /* 803EACAC 003E6AEC  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7847,7 +7847,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803EADC0 003E6C00  90 03 59 50 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803EADC4 003E6C04  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv
 Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv:
 /* 803EBE30 003E7C70  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7917,7 +7917,7 @@ lbl_803EBEF8:
 /* 803EBF24 003E7D64  38 21 00 50 */	addi r1, r1, 0x50
 /* 803EBF28 003E7D68  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon12dededehammer9ModelDescFv
 Create__Q53scn4step6weapon12dededehammer9ModelDescFv:
 /* 803EC79C 003E85DC  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -7987,7 +7987,7 @@ lbl_803EC864:
 /* 803EC890 003E86D0  38 21 00 50 */	addi r1, r1, 0x50
 /* 803EC894 003E86D4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon8deespear9ModelDescFv
 Create__Q53scn4step6weapon8deespear9ModelDescFv:
 /* 803ECF88 003E8DC8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -8072,7 +8072,7 @@ __sinit_$$3ModelDesc_cpp:
 /* 803ED0AC 003E8EEC  90 83 00 28 */	stw r4, 0x28(r3)
 /* 803ED0B0 003E8EF0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv:
 /* 803EE568 003EA3A8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -8697,7 +8697,7 @@ lbl_803EEDF0:
 /* 803EEE60 003EACA0  38 21 00 50 */	addi r1, r1, 0x50
 /* 803EEE64 003EACA4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step6weapon11hotheadfire9ModelDescFv
 Create__Q53scn4step6weapon11hotheadfire9ModelDescFv:
 /* 803EF5EC 003EB42C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -8778,19 +8778,19 @@ __sinit_$$3ModelDesc_cpp:
 /* 803EF700 003EB540  90 03 62 E8 */	stw r0, T_SCRIPT_ENTRIES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2@l(r3)
 /* 803EF704 003EB544  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402474, 0x8
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402480, 0x14
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024C0, 0xDC
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025E8, 0x38
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x412668, 0xC8
@@ -8798,7 +8798,7 @@ T_ANIM_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
 T_SCRIPT_ENTRIES__Q53scn4step4boss7bonkers23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x412730, 0x168
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss15challengemaster23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4128B0, 0x100
@@ -8821,7 +8821,7 @@ T_ANIM_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
 T_SCRIPT_ENTRIES__Q53scn4step4boss6dubior23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x412BC0, 0x108
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss10gigantedge23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x412CD8, 0xC8
@@ -8847,12 +8847,12 @@ T_ANIM_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2:
 T_SCRIPT_ENTRIES__Q53scn4step4boss13watergalboros23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4134C0, 0x190
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss6whispy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4136B8, 0x110
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x413800, 0xA8
@@ -8860,7 +8860,7 @@ T_ANIM_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
 T_SCRIPT_ENTRIES__Q53scn4step4boss9zankibble23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4138A8, 0x1B8
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy8armordee23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x414520, 0x30
@@ -8982,7 +8982,7 @@ T_ANIM_ENTRIES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2:
 T_ANIM_ENTRIES__Q53scn4step5enemy8rollball23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x414FF0, 0x18
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x415108, 0x30
@@ -9041,12 +9041,12 @@ T_ANIM_ENTRIES__Q53scn4step5enemy11whispyapple23$$2unnamed$$2ModelDesc_cpp$$2:
 T_SCRIPT_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4156E0, 0xC8
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x41CBB8, 0x10
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x41CBE0, 0x18
@@ -9054,12 +9054,12 @@ T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23$$2unnamed$$2ModelDesc_cpp$$2:
 T_ANIM_ENTRIES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x41CBF8, 0x10
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ANIM_ENTRIES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon8deespear23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x41CC28, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2
 T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4606F0, 0x6C
@@ -9067,7 +9067,7 @@ T_INDIVI_TABLE__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250315:
 	.incbin "baserom.dol", 0x46075C, 0x14
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250133
 $$250133:
 	.incbin "baserom.dol", 0x460E28, 0x10
@@ -9201,7 +9201,7 @@ $$250324:
 $$250325:
 	.incbin "baserom.dol", 0x461258, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250132
 $$250132:
 	.incbin "baserom.dol", 0x461750, 0xC
@@ -9335,7 +9335,7 @@ $$250286:
 $$250287:
 	.incbin "baserom.dol", 0x461E18, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x462658, 0xC
@@ -9376,7 +9376,7 @@ $$250231:
 $$250232:
 	.incbin "baserom.dol", 0x462818, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x462928, 0xC
@@ -9444,7 +9444,7 @@ $$250361:
 $$250362:
 	.incbin "baserom.dol", 0x462BEC, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x462D88, 0xC
@@ -9494,7 +9494,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x462FAC, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x463118, 0x10
@@ -9523,7 +9523,7 @@ $$250259:
 $$250260:
 	.incbin "baserom.dol", 0x463264, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250133
 $$250133:
 	.incbin "baserom.dol", 0x463678, 0xC
@@ -9585,7 +9585,7 @@ $$250247:
 $$250248:
 	.incbin "baserom.dol", 0x463840, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250133
 $$250133:
 	.incbin "baserom.dol", 0x463D58, 0x10
@@ -9695,7 +9695,7 @@ $$250269:
 $$250270:
 	.incbin "baserom.dol", 0x4640E8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step4boss8kingsdoo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4644D0, 0x14
@@ -9781,7 +9781,7 @@ $$250264:
 $$250265:
 	.incbin "baserom.dol", 0x464818, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250134
 $$250134:
 	.incbin "baserom.dol", 0x464C78, 0x14
@@ -9900,7 +9900,7 @@ $$250269:
 $$250270:
 	.incbin "baserom.dol", 0x46515C, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250136
 $$250136:
 	.incbin "baserom.dol", 0x4656F8, 0xC
@@ -10004,7 +10004,7 @@ $$250267:
 $$250268:
 	.incbin "baserom.dol", 0x465AF8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250134
 $$250134:
 	.incbin "baserom.dol", 0x465F90, 0xC
@@ -10159,7 +10159,7 @@ $$250292:
 $$250293:
 	.incbin "baserom.dol", 0x4665E8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x466CC0, 0xC
@@ -10266,7 +10266,7 @@ $$250266:
 $$250267:
 	.incbin "baserom.dol", 0x467068, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x46F578, 0xC
@@ -10286,7 +10286,7 @@ $$250208:
 $$250209:
 	.incbin "baserom.dol", 0x46F674, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x46F840, 0xC
@@ -10336,7 +10336,7 @@ $$250410:
 $$250422:
 	.incbin "baserom.dol", 0x46FAC8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x46FDE8, 0xC
@@ -10362,7 +10362,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7blipper23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250212:
 	.incbin "baserom.dol", 0x46FF20, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x4700B8, 0x24
@@ -10373,7 +10373,7 @@ $$250201:
 $$250202:
 	.incbin "baserom.dol", 0x4700E8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x470358, 0xC
@@ -10396,7 +10396,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6bouncy23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250210:
 	.incbin "baserom.dol", 0x4704A0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250127
 $$250127:
 	.incbin "baserom.dol", 0x470700, 0xC
@@ -10422,7 +10422,7 @@ $$250240:
 $$250241:
 	.incbin "baserom.dol", 0x47081C, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x470A20, 0xC
@@ -10457,7 +10457,7 @@ $$250240:
 $$250241:
 	.incbin "baserom.dol", 0x470B68, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250131
 $$250131:
 	.incbin "baserom.dol", 0x470DB0, 0xC
@@ -10489,7 +10489,7 @@ $$250214:
 $$250215:
 	.incbin "baserom.dol", 0x470F7C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x471200, 0x10
@@ -10512,7 +10512,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5cappy23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250212:
 	.incbin "baserom.dol", 0x471310, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x4713E0, 0x10
@@ -10526,7 +10526,7 @@ $$250201:
 $$250202:
 	.incbin "baserom.dol", 0x47149C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4715A8, 0xC
@@ -10543,7 +10543,7 @@ $$250207:
 $$250208:
 	.incbin "baserom.dol", 0x471694, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250127
 $$250127:
 	.incbin "baserom.dol", 0x471880, 0xC
@@ -10566,7 +10566,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6chilly23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250214:
 	.incbin "baserom.dol", 0x4719D8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x471B98, 0xC
@@ -10583,7 +10583,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy4como23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250206:
 	.incbin "baserom.dol", 0x471C48, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x472040, 0xC
@@ -10597,7 +10597,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6degout23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250210:
 	.incbin "baserom.dol", 0x472148, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250127
 $$250127:
 	.incbin "baserom.dol", 0x4722F8, 0xC
@@ -10617,7 +10617,7 @@ $$250212:
 $$250221:
 	.incbin "baserom.dol", 0x4723E0, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250238
 $$250238:
 	.incbin "baserom.dol", 0x4724C0, 0xC
@@ -10625,7 +10625,7 @@ $$250238:
 $$250239:
 	.incbin "baserom.dol", 0x4724CC, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4726D0, 0xC
@@ -10654,7 +10654,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy4elec23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250214:
 	.incbin "baserom.dol", 0x472820, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x472BC0, 0xC
@@ -10680,7 +10680,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6flamer23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250212:
 	.incbin "baserom.dol", 0x472D38, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x472E80, 0x14
@@ -10697,7 +10697,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5foley23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250210:
 	.incbin "baserom.dol", 0x472F64, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x4730D8, 0x10
@@ -10720,7 +10720,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5gemra23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250214:
 	.incbin "baserom.dol", 0x4731E0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x473418, 0x24
@@ -10746,7 +10746,7 @@ $$250270:
 $$250274:
 	.incbin "baserom.dol", 0x473568, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_SCRIPT_ENTRIES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x4736B0, 0x8C
@@ -10754,7 +10754,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5gordo23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250202:
 	.incbin "baserom.dol", 0x47373C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x473998, 0xC
@@ -10786,7 +10786,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7hothead23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250216:
 	.incbin "baserom.dol", 0x473AF8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x473D18, 0x10
@@ -10797,7 +10797,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6juckle23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250205:
 	.incbin "baserom.dol", 0x473DC8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x4740A8, 0xC
@@ -10817,7 +10817,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy4kabu23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250214:
 	.incbin "baserom.dol", 0x474230, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4744F8, 0xC
@@ -10951,7 +10951,7 @@ $$250481:
 $$250487:
 	.incbin "baserom.dol", 0x4749E0, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250125
 $$250125:
 	.incbin "baserom.dol", 0x474CB0, 0x10
@@ -10983,7 +10983,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6lanzer23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250217:
 	.incbin "baserom.dol", 0x474E18, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250128
 $$250128:
 	.incbin "baserom.dol", 0x474F60, 0x10
@@ -10994,7 +10994,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6leafan23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250207:
 	.incbin "baserom.dol", 0x475010, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250234
 $$250234:
 	.incbin "baserom.dol", 0x475140, 0xC
@@ -11002,7 +11002,7 @@ $$250234:
 $$250235:
 	.incbin "baserom.dol", 0x47514C, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x475250, 0xC
@@ -11022,7 +11022,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7mumbies23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250208:
 	.incbin "baserom.dol", 0x475360, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy8needlous23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x475438, 0xC
@@ -11051,7 +11051,7 @@ $$250213:
 $$250214:
 	.incbin "baserom.dol", 0x475554, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x475670, 0xC
@@ -11062,7 +11062,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5noddy23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250207:
 	.incbin "baserom.dol", 0x475708, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4758C8, 0xC
@@ -11091,7 +11091,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5nruff23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250212:
 	.incbin "baserom.dol", 0x475A30, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x475CF8, 0xC
@@ -11114,7 +11114,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6owgulf23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250209:
 	.incbin "baserom.dol", 0x475E00, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x475F10, 0xC
@@ -11137,7 +11137,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7parasol23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250209:
 	.incbin "baserom.dol", 0x47602C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4764A0, 0xC
@@ -11163,7 +11163,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6pierce23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250214:
 	.incbin "baserom.dol", 0x476618, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x476880, 0xC
@@ -11183,7 +11183,7 @@ $$250391:
 $$250402:
 	.incbin "baserom.dol", 0x476974, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250198
 $$250198:
 	.incbin "baserom.dol", 0x476A38, 0x10
@@ -11191,7 +11191,7 @@ $$250198:
 $$250199:
 	.incbin "baserom.dol", 0x476A48, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x476AF0, 0xC
@@ -11205,7 +11205,7 @@ $$250206:
 $$250207:
 	.incbin "baserom.dol", 0x476B94, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x476D18, 0xC
@@ -11240,7 +11240,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5rocky23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250216:
 	.incbin "baserom.dol", 0x476EA0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x477110, 0xC
@@ -11260,7 +11260,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x4771E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250128
 $$250128:
 	.incbin "baserom.dol", 0x477298, 0xC
@@ -11271,7 +11271,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy7sandbag23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250206:
 	.incbin "baserom.dol", 0x477330, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x477580, 0x10
@@ -11300,7 +11300,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250213:
 	.incbin "baserom.dol", 0x4776E0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x477860, 0xC
@@ -11320,7 +11320,7 @@ $$250207:
 $$250208:
 	.incbin "baserom.dol", 0x477944, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x477B88, 0xC
@@ -11361,7 +11361,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5sheld23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250222:
 	.incbin "baserom.dol", 0x477DD8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4781A0, 0xC
@@ -11375,7 +11375,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6shotzo23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250205:
 	.incbin "baserom.dol", 0x478258, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x478488, 0xC
@@ -11422,7 +11422,7 @@ $$250217:
 $$250218:
 	.incbin "baserom.dol", 0x478650, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4788F0, 0xC
@@ -11448,7 +11448,7 @@ $$250210:
 $$250211:
 	.incbin "baserom.dol", 0x478A20, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250125
 $$250125:
 	.incbin "baserom.dol", 0x478B48, 0xC
@@ -11459,7 +11459,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy5snowl23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250206:
 	.incbin "baserom.dol", 0x478C08, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250127
 $$250127:
 	.incbin "baserom.dol", 0x478E38, 0xC
@@ -11497,7 +11497,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6sodory23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250223:
 	.incbin "baserom.dol", 0x478FC0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x479160, 0xC
@@ -11532,7 +11532,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6sparky23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250215:
 	.incbin "baserom.dol", 0x4792F0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250198
 $$250198:
 	.incbin "baserom.dol", 0x479410, 0xC
@@ -11540,7 +11540,7 @@ $$250198:
 $$250199:
 	.incbin "baserom.dol", 0x47941C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x4794F0, 0x10
@@ -11554,7 +11554,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy3sun23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250205:
 	.incbin "baserom.dol", 0x4795B0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x479880, 0xC
@@ -11592,7 +11592,7 @@ $$250214:
 $$250215:
 	.incbin "baserom.dol", 0x479A34, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x479CD8, 0xC
@@ -11702,7 +11702,7 @@ $$250305:
 $$250306:
 	.incbin "baserom.dol", 0x47A2A8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x47A598, 0xC
@@ -11776,7 +11776,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x47A8B4, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250128
 $$250128:
 	.incbin "baserom.dol", 0x47A978, 0xC
@@ -11799,7 +11799,7 @@ $$250209:
 $$250210:
 	.incbin "baserom.dol", 0x47AA90, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x47AB30, 0x28
@@ -11822,7 +11822,7 @@ T_SCRIPT_ENTRIES__Q53scn4step5enemy6whippy23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250217:
 	.incbin "baserom.dol", 0x47AC40, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250126
 $$250126:
 	.incbin "baserom.dol", 0x47ACD0, 0xC
@@ -11848,7 +11848,7 @@ $$250237:
 $$250238:
 	.incbin "baserom.dol", 0x47AE08, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250127
 $$250127:
 	.incbin "baserom.dol", 0x47AF50, 0x2C
@@ -11862,12 +11862,12 @@ $$250202:
 $$250203:
 	.incbin "baserom.dol", 0x47AFB8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250239
 $$250239:
 	.incbin "baserom.dol", 0x48FFA8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490058, 0xC
@@ -11881,7 +11881,7 @@ $$250198:
 $$250199:
 	.incbin "baserom.dol", 0x490080, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4900B8, 0xC
@@ -11898,7 +11898,7 @@ $$250241:
 $$250242:
 	.incbin "baserom.dol", 0x4900EC, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490130, 0x10
@@ -11918,7 +11918,7 @@ $$250242:
 $$250243:
 	.incbin "baserom.dol", 0x490178, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x490200, 0x28
@@ -11935,7 +11935,7 @@ $$250258:
 $$250277:
 	.incbin "baserom.dol", 0x49027C, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x490310, 0xC
@@ -11946,7 +11946,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x490328, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x4903D8, 0x10
@@ -11972,7 +11972,7 @@ $$250307:
 $$250308:
 	.incbin "baserom.dol", 0x490460, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4904D0, 0xC
@@ -11989,7 +11989,7 @@ $$250235:
 $$250236:
 	.incbin "baserom.dol", 0x490500, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490558, 0xC
@@ -12012,7 +12012,7 @@ $$250242:
 $$250243:
 	.incbin "baserom.dol", 0x4905B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x4905F0, 0xC
@@ -12035,7 +12035,7 @@ $$250242:
 $$250243:
 	.incbin "baserom.dol", 0x490650, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250125
 $$250125:
 	.incbin "baserom.dol", 0x490710, 0xC
@@ -12049,7 +12049,7 @@ $$250241:
 $$250242:
 	.incbin "baserom.dol", 0x490768, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250124
 $$250124:
 	.incbin "baserom.dol", 0x490860, 0xC
@@ -12063,7 +12063,7 @@ $$250235:
 $$250236:
 	.incbin "baserom.dol", 0x490888, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250238
 $$250238:
 	.incbin "baserom.dol", 0x490900, 0xC
@@ -12071,7 +12071,7 @@ $$250238:
 $$250239:
 	.incbin "baserom.dol", 0x49090C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490A88, 0x10
@@ -12082,7 +12082,7 @@ $$250234:
 $$250235:
 	.incbin "baserom.dol", 0x490AA8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250239
 $$250239:
 	.incbin "baserom.dol", 0x490AE0, 0x10
@@ -12090,7 +12090,7 @@ $$250239:
 $$250240:
 	.incbin "baserom.dol", 0x490AF0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250233
 $$250233:
 	.incbin "baserom.dol", 0x490B30, 0x10
@@ -12098,7 +12098,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x490B40, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2
 T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x490B80, 0x28
@@ -12109,7 +12109,7 @@ $$250239:
 $$250240:
 	.incbin "baserom.dol", 0x490BB4, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250125
 $$250125:
 	.incbin "baserom.dol", 0x490BF0, 0xC
@@ -12123,7 +12123,7 @@ $$250261:
 $$250275:
 	.incbin "baserom.dol", 0x490C28, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490C68, 0xC
@@ -12134,7 +12134,7 @@ T_NODE_NAMES__Q53scn4step6weapon12jucklecutter23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250236:
 	.incbin "baserom.dol", 0x490C80, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250238
 $$250238:
 	.incbin "baserom.dol", 0x490CC0, 0xC
@@ -12142,7 +12142,7 @@ $$250238:
 $$250239:
 	.incbin "baserom.dol", 0x490CCC, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250233
 $$250233:
 	.incbin "baserom.dol", 0x490D90, 0x10
@@ -12150,7 +12150,7 @@ $$250233:
 $$250234:
 	.incbin "baserom.dol", 0x490DA0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250238
 $$250238:
 	.incbin "baserom.dol", 0x490DD8, 0x14
@@ -12158,7 +12158,7 @@ $$250238:
 $$250239:
 	.incbin "baserom.dol", 0x490DEC, 0x2C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23$$2unnamed$$2ModelDesc_cpp$$2
 T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x490EA8, 0xC
@@ -12169,7 +12169,7 @@ $$250235:
 $$250236:
 	.incbin "baserom.dol", 0x490EC8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250123
 $$250123:
 	.incbin "baserom.dol", 0x490F50, 0xC
@@ -12180,7 +12180,7 @@ $$250234:
 $$250235:
 	.incbin "baserom.dol", 0x490F6C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250125
 $$250125:
 	.incbin "baserom.dol", 0x490FD8, 0xC
@@ -12194,7 +12194,7 @@ $$250241:
 $$250242:
 	.incbin "baserom.dol", 0x49102C, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250568
 $$250568:
 	.incbin "baserom.dol", 0x491188, 0xC
@@ -12268,7 +12268,7 @@ $$250624:
 $$250625:
 	.incbin "baserom.dol", 0x4912F8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250238
 $$250238:
 	.incbin "baserom.dol", 0x4913A0, 0x10
@@ -12276,7 +12276,7 @@ $$250238:
 $$250239:
 	.incbin "baserom.dol", 0x4913B0, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248848
 $$248848:
 	.incbin "baserom.dol", 0x4931F8, 0x8
@@ -12284,7 +12284,7 @@ $$248848:
 $$248849:
 	.incbin "baserom.dol", 0x493200, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250132
 $$250132:
 	.incbin "baserom.dol", 0x4952E0, 0x8
@@ -12316,7 +12316,7 @@ $$250154:
 $$250314:
 	.incbin "baserom.dol", 0x495328, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250130
 $$250130:
 	.incbin "baserom.dol", 0x495338, 0x8
@@ -12378,7 +12378,7 @@ $$250161:
 $$250163:
 	.incbin "baserom.dol", 0x4953D0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250130
 $$250130:
 	.incbin "baserom.dol", 0x495408, 0x8
@@ -12476,7 +12476,7 @@ $$250141:
 $$250142:
 	.incbin "baserom.dol", 0x4954FC, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250130
 $$250130:
 	.incbin "baserom.dol", 0x495518, 0x8
@@ -12499,7 +12499,7 @@ $$250137:
 $$250261:
 	.incbin "baserom.dol", 0x495548, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250130
 $$250130:
 	.incbin "baserom.dol", 0x495560, 0x8
@@ -12723,7 +12723,7 @@ $$250175:
 $$250290:
 	.incbin "baserom.dol", 0x4957A8, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250130
 $$250130:
 	.incbin "baserom.dol", 0x4957C0, 0x8
@@ -12755,12 +12755,12 @@ $$250143:
 $$250151:
 	.incbin "baserom.dol", 0x495808, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250160
 $$250160:
 	.incbin "baserom.dol", 0x495830, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495A28, 0x8
@@ -12849,7 +12849,7 @@ $$250123:
 T_NODE_NAMES__Q53scn4step5enemy11bonkersbomb23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x495B08, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495B18, 0x8
@@ -12971,7 +12971,7 @@ T_NODE_NAMES__Q53scn4step5enemy8cappyhat23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250124:
 	.incbin "baserom.dol", 0x495C48, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495C58, 0x8
@@ -13039,7 +13039,7 @@ $$250127:
 $$250205:
 	.incbin "baserom.dol", 0x495D00, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495D10, 0x8
@@ -13083,7 +13083,7 @@ $$250125:
 $$250126:
 	.incbin "baserom.dol", 0x495D78, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495D88, 0x8
@@ -13256,7 +13256,7 @@ $$250124:
 $$250201:
 	.incbin "baserom.dol", 0x495F48, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x495F58, 0x8
@@ -13612,7 +13612,7 @@ $$250128:
 $$250130:
 	.incbin "baserom.dol", 0x496300, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x496368, 0x8
@@ -13773,7 +13773,7 @@ $$250138:
 $$250221:
 	.incbin "baserom.dol", 0x496508, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x496518, 0x8
@@ -13916,7 +13916,7 @@ $$250134:
 $$250214:
 	.incbin "baserom.dol", 0x496688, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x496698, 0x8
@@ -14128,7 +14128,7 @@ T_NODE_NAMES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
 $$250125:
 	.incbin "baserom.dol", 0x4968C0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498430, 0x8
@@ -14151,7 +14151,7 @@ $$250122:
 $$250124:
 	.incbin "baserom.dol", 0x498460, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498470, 0x8
@@ -14165,7 +14165,7 @@ $$250127:
 $$250243:
 	.incbin "baserom.dol", 0x498488, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498498, 0x8
@@ -14179,7 +14179,7 @@ $$250128:
 $$250244:
 	.incbin "baserom.dol", 0x4984B0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x4984C0, 0x8
@@ -14388,7 +14388,7 @@ $$250124:
 $$250240:
 	.incbin "baserom.dol", 0x4986DC, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498708, 0x8
@@ -14402,7 +14402,7 @@ $$250124:
 $$250237:
 	.incbin "baserom.dol", 0x498720, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250122
 $$250122:
 	.incbin "baserom.dol", 0x498738, 0x8
@@ -14521,7 +14521,7 @@ $$250124:
 $$250240:
 	.incbin "baserom.dol", 0x498854, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2
 T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49AEA0, 0x4
@@ -14532,7 +14532,7 @@ $$250316:
 $$250317:
 	.incbin "baserom.dol", 0x49AEA8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250363
 $$250363:
 	.incbin "baserom.dol", 0x49B1B0, 0x4
@@ -14540,17 +14540,17 @@ $$250363:
 $$250364:
 	.incbin "baserom.dol", 0x49B1B4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step4boss10creditroah23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49B248, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250161
 $$250161:
 	.incbin "baserom.dol", 0x49B818, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250411
 $$250411:
 	.incbin "baserom.dol", 0x49BD10, 0x4
@@ -14585,12 +14585,12 @@ $$250420:
 $$250421:
 	.incbin "baserom.dol", 0x49BD38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy11dubiorspark23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49C328, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250471
 $$250471:
 	.incbin "baserom.dol", 0x49C6D0, 0x4
@@ -14637,7 +14637,7 @@ $$250485:
 $$250486:
 	.incbin "baserom.dol", 0x49C708, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250392
 $$250392:
 	.incbin "baserom.dol", 0x49CAA8, 0x4
@@ -14669,62 +14669,62 @@ $$250400:
 $$250401:
 	.incbin "baserom.dol", 0x49CACC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MESHFLIP_NODE_TABLE__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2
 T_MESHFLIP_NODE_TABLE__Q53scn4step5enemy6scarfy23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49CC18, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step5enemy15zankibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49D0D0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon7airball23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49E890, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv223$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49E8E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11starshotlv323$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49E910, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EA18, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon20enemywaterbulletwarp23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EA40, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon8wingshot23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EAB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon15sirkibblecutter23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EB20, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EB88, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon18combinationairball23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EBE0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ANIM_ENTRIES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2
 T_ANIM_ENTRIES__Q53scn4step6weapon11hotheadfire23$$2unnamed$$2ModelDesc_cpp$$2:
 	.incbin "baserom.dol", 0x49EC78, 0x8

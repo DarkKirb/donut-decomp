@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss10creditmeta14StateGlideAwayFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss10creditmeta14StateGlideAwayFPQ43scn4step4boss4Boss:
 /* 8024A458 00246298  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -491,12 +491,12 @@ lbl_8024AB84:
 /* 8024ABA0 002469E0  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 8024ABA4 002469E4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditmeta14StateGlideAway
 __vt__Q53scn4step4boss10creditmeta14StateGlideAway:
 	.incbin "baserom.dol", 0x463000, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256059
 $$256059:
 	.incbin "baserom.dol", 0x49B1E8, 0x4

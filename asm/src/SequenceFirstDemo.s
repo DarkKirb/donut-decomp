@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23seq17SequenceFirstDemoFRCQ33seq17SequenceFirstDemo6Recipe
 __ct__Q23seq17SequenceFirstDemoFRCQ33seq17SequenceFirstDemo6Recipe:
 /* 803FE028 003F9E68  94 21 FC 30 */	stwu r1, -0x3d0(r1)
@@ -203,7 +203,7 @@ onSceneEnd__Q23seq17SequenceFirstDemoFRQ23scn6IScene:
 GetRuntimeTypeInfo__Q23seq17SequenceFirstDemoCFv:
 /* 803FE2C0 003FA100  4B FF F7 18 */	b RuntimeTypeInfoImpl$$0Q23seq17SequenceFirstDemo$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq17SequenceFirstDemo
 __vt__Q23seq17SequenceFirstDemo:
 	.incbin "baserom.dol", 0x492500, 0x28

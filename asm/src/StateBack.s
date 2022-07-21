@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4como9StateBackFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4como9StateBackFPQ43scn4step5enemy5Enemy:
 /* 802A77BC 002A35FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -194,7 +194,7 @@ lbl_802A7A40:
 __dt__Q53scn4step5enemy4como9StateBackFv:
 /* 802A7A58 002A3898  4B FE 9F 60 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8dubiorjr9StateBackFPQ43scn4step5enemy5Enemyf
 __ct__Q53scn4step5enemy8dubiorjr9StateBackFPQ43scn4step5enemy5Enemyf:
 /* 802AE32C 002AA16C  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -389,17 +389,17 @@ procMove__Q53scn4step5enemy8dubiorjr9StateBackFv:
 procFixPos__Q53scn4step5enemy8dubiorjr9StateBackFv:
 /* 802AE5E0 002AA420  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como9StateBack
 __vt__Q53scn4step5enemy4como9StateBack:
 	.incbin "baserom.dol", 0x471C80, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8dubiorjr9StateBack
 __vt__Q53scn4step5enemy8dubiorjr9StateBack:
 	.incbin "baserom.dol", 0x472408, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255315
 $$255315:
 	.incbin "baserom.dol", 0x49C0D8, 0x4
@@ -416,7 +416,7 @@ $$255318:
 $$255322:
 	.incbin "baserom.dol", 0x49C0E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255062
 $$255062:
 	.incbin "baserom.dol", 0x49C2F8, 0x8

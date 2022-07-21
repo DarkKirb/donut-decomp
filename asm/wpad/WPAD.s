@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __wpadNoAlloc
 __wpadNoAlloc:
 /* 80053DF0 0004FC30  38 60 00 00 */	li r3, 0
@@ -12049,7 +12049,7 @@ lbl_8005EC6C:
 /* 8005EC88 0005AAC8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8005EC8C 0005AACC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global certn
 certn:
 	.incbin "baserom.dol", 0x403DE8, 0x48
@@ -12063,7 +12063,7 @@ $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg1:
 $$2LOCAL$$2WPADControlDpd__FlUlPFll_v$$2cfg2$$20:
 	.incbin "baserom.dol", 0x403EA8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21504
 $$21504:
 	.incbin "baserom.dol", 0x434688, 0x48
@@ -12101,7 +12101,7 @@ $$29220:
 $$29559:
 	.incbin "baserom.dol", 0x4348E8, 0x30
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __WPADVersion
 __WPADVersion:
 	.incbin "baserom.dol", 0x492BC0, 0x4
@@ -12115,7 +12115,7 @@ _wpad_diff_count_threshold:
 _wpad_hyst_count_threshold:
 	.incbin "baserom.dol", 0x492BD0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22723
 $$22723:
 	.incbin "baserom.dol", 0x499288, 0x4

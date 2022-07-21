@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail16LandGatherOptionFv
 __ct__Q35mcoll6detail16LandGatherOptionFv:
 /* 801B7904 001B3744  38 00 00 00 */	li r0, 0

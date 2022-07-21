@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn11staffcredit9BgManagerFRQ33scn4step9Component
 __ct__Q33scn11staffcredit9BgManagerFRQ33scn4step9Component:
 /* 803F8874 003F46B4  90 83 00 00 */	stw r4, 0(r3)
@@ -256,12 +256,12 @@ lbl_803F8AD8:
 /* 803F8C0C 003F4A4C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 803F8C10 003F4A50  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BG_DATA_TABLE__Q33scn11staffcredit23$$2unnamed$$2BgManager_cpp$$2
 T_BG_DATA_TABLE__Q33scn11staffcredit23$$2unnamed$$2BgManager_cpp$$2:
 	.incbin "baserom.dol", 0x41CCF0, 0x118
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252626
 $$252626:
 	.incbin "baserom.dol", 0x49ED88, 0x4

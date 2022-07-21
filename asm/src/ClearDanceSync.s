@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero14ClearDanceSyncFRQ33scn4step9Component
 __ct__Q43scn4step4hero14ClearDanceSyncFRQ33scn4step9Component:
 /* 80333E98 0032FCD8  90 83 00 00 */	stw r4, 0(r3)
@@ -153,7 +153,7 @@ lbl_80334080:
 /* 80334090 0032FED0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80334094 0032FED4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ANIM_KIND_TABLE_A__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2
 ANIM_KIND_TABLE_A__Q43scn4step4hero28$$2unnamed$$2ClearDanceSync_cpp$$2:
 	.incbin "baserom.dol", 0x415D68, 0x10

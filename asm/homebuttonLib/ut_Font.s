@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding
 InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding:
 /* 801417D0 0013D610  2C 04 00 00 */	cmpwi r4, 0
@@ -52,7 +52,7 @@ lbl_80141854:
 /* 80141878 0013D6B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8014187C 0013D6BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$298
 $$298:
 	.incbin "baserom.dol", 0x441568, 0xC

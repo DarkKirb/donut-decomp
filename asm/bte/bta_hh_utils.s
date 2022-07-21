@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_hh_find_cb
 bta_hh_find_cb:
 /* 8007DA38 00079878  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -271,7 +271,7 @@ lbl_8007DDC8:
 /* 8007DDDC 00079C1C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8007DDE0 00079C20  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2865
 $$2865:
 	.incbin "baserom.dol", 0x4374F0, 0x24

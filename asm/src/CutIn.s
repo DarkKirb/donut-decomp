@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info5cutin5CutInFRQ23mem10IAllocatorQ33scn4step9LevelKind
 __ct__Q34info5cutin5CutInFRQ23mem10IAllocatorQ33scn4step9LevelKind:
 /* 801AB11C 001A6F5C  94 21 FC 40 */	stwu r1, -0x3c0(r1)
@@ -340,7 +340,7 @@ procReadyToRender__Q34info5cutin5CutInFv:
 draw__Q34info5cutin5CutInCFv:
 /* 801AB600 001A7440  48 00 1D 78 */	b draw__Q23lyt6LayoutCFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info9challenge5CutInFRQ33scn4step9ComponentRQ23mem10IAllocator
 __ct__Q53scn4step4info9challenge5CutInFRQ33scn4step9ComponentRQ23mem10IAllocator:
 /* 803B1FF8 003ADE38  94 21 FB 90 */	stwu r1, -0x470(r1)
@@ -725,7 +725,7 @@ lbl_803B255C:
 /* 803B2570 003AE3B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803B2574 003AE3B4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252354
 $$252354:
 	.incbin "baserom.dol", 0x453868, 0x18
@@ -766,7 +766,7 @@ $$252447:
 $$252449:
 	.incbin "baserom.dol", 0x453930, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252734
 $$252734:
 	.incbin "baserom.dol", 0x48C458, 0x14
@@ -792,7 +792,7 @@ $$252741:
 $$252742:
 	.incbin "baserom.dol", 0x48C4DC, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252448
 $$252448:
 	.incbin "baserom.dol", 0x493518, 0x8
@@ -806,7 +806,7 @@ $$252455:
 $$252458:
 	.incbin "baserom.dol", 0x49352C, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252736
 $$252736:
 	.incbin "baserom.dol", 0x497B60, 0x8
@@ -820,7 +820,7 @@ $$252744:
 $$252745:
 	.incbin "baserom.dol", 0x497B78, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251802
 $$251802:
 	.incbin "baserom.dol", 0x49E458, 0x8

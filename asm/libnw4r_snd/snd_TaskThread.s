@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail10TaskThreadFv
 __ct__Q44nw4r3snd6detail10TaskThreadFv:
 /* 801199B0 001157F0  38 00 00 00 */	li r0, 0

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __read_console
 __read_console:
 /* 800186F8 00014538  94 21 FF E0 */	stwu r1, -0x20(r1)

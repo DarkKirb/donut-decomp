@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Init__Q44nw4r3snd6detail14PlayerParamSetFv
 Init__Q44nw4r3snd6detail14PlayerParamSetFv:
 /* 801052A0 001010E0  C0 02 93 2C */	lfs f0, $$22619-_SDA2_BASE_(r2)
@@ -165,12 +165,12 @@ __dt__Q44nw4r3snd6detail11BasicPlayerFv:
 /* 801054A8 001012E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 801054AC 001012EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail11BasicPlayer
 __vt__Q44nw4r3snd6detail11BasicPlayer:
 	.incbin "baserom.dol", 0x43E0D8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22618
 $$22618:
 	.incbin "baserom.dol", 0x499DE8, 0x4

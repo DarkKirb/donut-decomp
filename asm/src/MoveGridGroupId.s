@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateWithIndex__Q35mcoll6detail15MoveGridGroupIdFUl
 CreateWithIndex__Q35mcoll6detail15MoveGridGroupIdFUl:
 /* 801BBA6C 001B78AC  4B E6 8A 34 */	b DefaultSwitchThreadCallback

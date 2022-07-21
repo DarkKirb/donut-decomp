@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ptmf_test
 __ptmf_test:
 /* 80007194 00002FD4  80 A3 00 00 */	lwz r5, 0(r3)
@@ -44,7 +44,7 @@ lbl_8000720C:
 /* 8000720C 0000304C  7D 89 03 A6 */	mtctr r12
 /* 80007210 00003050  4E 80 04 20 */	bctr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __ptmf_null
 __ptmf_null:
 	.incbin "baserom.dol", 0x402670, 0x10

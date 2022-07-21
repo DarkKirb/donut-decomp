@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateP__Q36effect6detail16RequestArgOptionFRCQ33hel4math7Vector3
 CreateP__Q36effect6detail16RequestArgOptionFRCQ33hel4math7Vector3:
 /* 80186DC8 00182C08  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -238,7 +238,7 @@ node__Q36effect6detail16RequestArgOptionCFv:
 /* 801870E4 00182F24  38 21 00 20 */	addi r1, r1, 0x20
 /* 801870E8 00182F28  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global DEFAULT_SCALE__Q36effect6detail16RequestArgOption
 DEFAULT_SCALE__Q36effect6detail16RequestArgOption:
 	.incbin "baserom.dol", 0x49A188, 0x4

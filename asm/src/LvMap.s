@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info5lvmap5LvMapFRQ33scn4step9ComponentRQ43scn4step4info14InfoGameStatusRQ23g3d4Root
 __ct__Q53scn4step4info5lvmap5LvMapFRQ33scn4step9ComponentRQ43scn4step4info14InfoGameStatusRQ23g3d4Root:
 /* 803BDFD8 003B9E18  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -454,7 +454,7 @@ frameControl__Q53scn4step4info5lvmap5LvMapFv:
 /* 803BE5F4 003BA434  38 63 04 18 */	addi r3, r3, 0x418
 /* 803BE5F8 003BA438  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254826
 $$254826:
 	.incbin "baserom.dol", 0x48D900, 0x10
@@ -462,7 +462,7 @@ $$254826:
 $$254828:
 	.incbin "baserom.dol", 0x48D910, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254825
 $$254825:
 	.incbin "baserom.dol", 0x498000, 0x8

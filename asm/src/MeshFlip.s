@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj8MeshFlipFRCQ24gobj12MeshFlipDescRQ24gobj5Model
 __ct__Q24gobj8MeshFlipFRCQ24gobj12MeshFlipDescRQ24gobj5Model:
 /* 8019AA1C 0019685C  94 21 FF C0 */	stwu r1, -0x40(r1)

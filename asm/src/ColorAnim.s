@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d9ColorAnimFRCQ23g3d16ColorAnimContext
 __ct__Q23g3d9ColorAnimFRCQ23g3d16ColorAnimContext:
 /* 8018D888 001896C8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -130,7 +130,7 @@ updateFlash__Q23g3d9ColorAnimFRCQ23g3d14ColorAnimFlash:
 /* 8018DA4C 0018988C  38 A5 00 60 */	addi r5, r5, 0x60
 /* 8018DA50 00189890  48 00 00 E4 */	b reflectToMaterial__Q23g3d14ColorAnimFlashCFRCQ23g3d16MaterialAccessorRCQ23g3d23ColorAnimMaterialTarget
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj9ColorAnimFRCQ24gobj13ColorAnimDescRQ23mem10IAllocatorRQ24gobj9IG3DModel
 __ct__Q24gobj9ColorAnimFRCQ24gobj13ColorAnimDescRQ23mem10IAllocatorRQ24gobj9IG3DModel:
 /* 80199914 00195754  94 21 F8 40 */	stwu r1, -0x7c0(r1)
@@ -551,7 +551,7 @@ setFlash__Q24gobj9ColorAnimFRCQ23g3d14ColorAnimFlash:
 /* 80199EB0 00195CF0  90 03 00 20 */	stw r0, 0x20(r3)
 /* 80199EB4 00195CF4  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251917
 $$251917:
 	.incbin "baserom.dol", 0x49A2C8, 0x8

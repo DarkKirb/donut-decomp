@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick4door4DoorFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick4door4DoorFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 8030D910 00309750  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -885,7 +885,7 @@ mfReleasePtclEffect__Q53scn4step7gimmick4door4DoorFv:
 /* 8030E548 0030A388  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030E54C 0030A38C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero4DoorFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero4DoorFRQ43scn4step4hero4Hero:
 /* 803356E4 00331524  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1465,12 +1465,12 @@ lbl_80335E7C:
 /* 80335E8C 00331CCC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80335E90 00331CD0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254039
 $$254039:
 	.incbin "baserom.dol", 0x47D3E0, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254159
 $$254159:
 	.incbin "baserom.dol", 0x49D3B0, 0x4

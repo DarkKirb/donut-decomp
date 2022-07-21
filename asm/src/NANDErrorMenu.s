@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tNANDManager__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2Fv
 tNANDManager__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2Fv:
 /* 801798A8 001756E8  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
@@ -939,7 +939,7 @@ decide__Q33app17NANDErrorMenuImpl6ButtonFv:
 /* 8017A580 001763C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017A584 001763C4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251882
 $$251882:
 	.incbin "baserom.dol", 0x44EFE0, 0x10
@@ -995,7 +995,7 @@ $$253374:
 $$253377:
 	.incbin "baserom.dol", 0x44F0E4, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2
 T_LYT_RES__Q23app27$$2unnamed$$2NANDErrorMenu_cpp$$2:
 	.incbin "baserom.dol", 0x493010, 0x4

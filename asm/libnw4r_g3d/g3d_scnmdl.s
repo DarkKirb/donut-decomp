@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetResGenMode__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 GetResGenMode__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb:
 /* 800EE240 000EA080  80 A3 00 00 */	lwz r5, 0(r3)
@@ -2978,12 +2978,12 @@ GetTypeObj__Q34nw4r3g3d6ScnMdlCFv:
 /* 800F0AA8 000EC8E8  4E 80 00 20 */	blr 
 /* 800F0AAC 000EC8EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6ScnMdl
 TYPE_NAME__Q34nw4r3g3d6ScnMdl:
 	.incbin "baserom.dol", 0x404FE8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d6ScnMdl
 __vt__Q34nw4r3g3d6ScnMdl:
 	.incbin "baserom.dol", 0x43D208, 0x48

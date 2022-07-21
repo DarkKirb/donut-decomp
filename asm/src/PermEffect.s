@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4core16PermEffectDetailFRQ33scn4step9Component
 __ct__Q43scn4step4core16PermEffectDetailFRQ33scn4step9Component:
 /* 80277EC4 00273D04  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -343,7 +343,7 @@ onStopPowerfulFinished__Q43scn4step4core10PermEffectFRCQ25ostop5Actor:
 /* 80278308 00274148  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027830C 0027414C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4core10PermEffect
 __vt__Q43scn4step4core10PermEffect:
 	.incbin "baserom.dol", 0x468958, 0x20

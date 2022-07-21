@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn5anime12ControlPanelFQ23lyt12PaneAccessorb
 __ct__Q33scn5anime12ControlPanelFQ23lyt12PaneAccessorb:
 /* 801E001C 001DBE5C  94 21 FB B0 */	stwu r1, -0x450(r1)
@@ -836,7 +836,7 @@ unselectAllCursor__Q33scn5anime12ControlPanelFv:
 /* 801E0BB8 001DC9F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801E0BBC 001DC9FC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252991
 $$252991:
 	.incbin "baserom.dol", 0x459D20, 0x14
@@ -886,7 +886,7 @@ $$253096:
 $$253145:
 	.incbin "baserom.dol", 0x459E04, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252999
 $$252999:
 	.incbin "baserom.dol", 0x493D38, 0x8
@@ -942,7 +942,7 @@ $$253121:
 $$253139:
 	.incbin "baserom.dol", 0x493DB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253102
 $$253102:
 	.incbin "baserom.dol", 0x49A820, 0x4

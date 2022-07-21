@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6damage17StateDamageNormalFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6damage17StateDamageNormalFPQ43scn4step5enemy5Enemy:
 /* 802A99D8 002A5818  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -284,12 +284,12 @@ procFixPos__Q53scn4step5enemy6damage17StateDamageNormalFv:
 /* 802A9DCC 002A5C0C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802A9DD0 002A5C10  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage17StateDamageNormal
 __vt__Q53scn4step5enemy6damage17StateDamageNormal:
 	.incbin "baserom.dol", 0x471DA0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256803
 $$256803:
 	.incbin "baserom.dol", 0x49C198, 0x4

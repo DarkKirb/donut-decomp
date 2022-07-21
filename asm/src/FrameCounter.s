@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global reset__Q24util12FrameCounterFUl
 reset__Q24util12FrameCounterFUl:
 /* 80405980 004017C0  90 83 00 00 */	stw r4, 0(r3)
@@ -97,7 +97,7 @@ inversedNormalizedFrame__Q24util12FrameCounterCFv:
 /* 80405A94 004018D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80405A98 004018D8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248873
 $$248873:
 	.incbin "baserom.dol", 0x49EED8, 0x8

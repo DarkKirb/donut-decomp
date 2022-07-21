@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Write__Q34nw4r2ut8IOStreamFPCvUl
 Write__Q34nw4r2ut8IOStreamFPCvUl:
 /* 80120630 0011C470  4B F3 37 C0 */	b __wpadNoAlloc
@@ -22,7 +22,7 @@ __sinit_$$3ut_IOStream_cpp:
 /* 80120658 0011C498  4E 80 00 20 */	blr 
 /* 8012065C 0011C49C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023AC, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

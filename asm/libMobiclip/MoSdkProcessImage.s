@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Tile__FPUcPUciii
 Tile__FPUcPUciii:
 /* 80153990 0014F7D0  94 21 FF E0 */	stwu r1, -0x20(r1)

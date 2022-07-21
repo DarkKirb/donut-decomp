@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info14InfoGameStatusFRQ33scn4step9ComponentRQ23mem10IAllocator
 __ct__Q43scn4step4info14InfoGameStatusFRQ33scn4step9ComponentRQ23mem10IAllocator:
 /* 803AB798 003A75D8  94 21 F9 20 */	stwu r1, -0x6e0(r1)
@@ -1200,7 +1200,7 @@ lbl_803AC7E4:
 safeboolFunc__Q24util45PlacementNew$$0Q43scn4step4info13WarpStarPanel$$1CFv:
 /* 803AC804 003A8644  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254554
 $$254554:
 	.incbin "baserom.dol", 0x48BDA8, 0x10
@@ -1241,7 +1241,7 @@ $$254566:
 $$254817:
 	.incbin "baserom.dol", 0x48BE68, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254555
 $$254555:
 	.incbin "baserom.dol", 0x4979D8, 0x8

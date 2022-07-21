@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history12PackageHelpsFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q33scn7history12PackageHelpsFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 8020E344 0020A184  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -232,12 +232,12 @@ lbl_8020E65C:
 /* 8020E65C 0020A49C  38 60 00 00 */	li r3, 0
 /* 8020E660 0020A4A0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252124
 $$252124:
 	.incbin "baserom.dol", 0x45D600, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252169
 $$252169:
 	.incbin "baserom.dol", 0x494A40, 0x8

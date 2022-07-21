@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Draw__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectRCQ34nw4r2ef8DrawInfo
 Draw__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectRCQ34nw4r2ef8DrawInfo:
 /* 800A3950 0009F790  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -87,7 +87,7 @@ Remove__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager:
 /* 800A3A68 0009F8A8  38 63 00 90 */	addi r3, r3, 0x90
 /* 800A3A6C 0009F8AC  4B FF FE 54 */	b MEMRemoveListObject
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef9DrawOrder
 __vt__Q34nw4r2ef9DrawOrder:
 	.incbin "baserom.dol", 0x43C160, 0x18

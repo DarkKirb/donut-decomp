@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue10App__AlertFRQ26mintvm6VMCore
 AddOn__Q28mintglue10App__AlertFRQ26mintvm6VMCore:
 /* 801C0C5C 001BCA9C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -667,7 +667,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53247App__Alert_cppFRQ26mintvm13Mint
 /* 801C15C0 001BD400  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C15C4 001BD404  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253984
 $$253984:
 	.incbin "baserom.dol", 0x455F28, 0xC

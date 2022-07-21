@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common16StateDashWallHitFPQ43scn4step4boss4BossRQ53scn4step4boss6common13StateDashDescUl
 __ct__Q53scn4step4boss6common16StateDashWallHitFPQ43scn4step4boss4BossRQ53scn4step4boss6common13StateDashDescUl:
 /* 80245748 00241588  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -263,7 +263,7 @@ lbl_80245AFC:
 /* 80245B0C 0024194C  38 21 00 80 */	addi r1, r1, 0x80
 /* 80245B10 00241950  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6dubior16StateDashWallHitFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6dubior16StateDashWallHitFPQ43scn4step4boss4Boss:
 /* 8024E3E4 0024A224  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -403,17 +403,17 @@ procMove__Q53scn4step4boss6dubior16StateDashWallHitFv:
 procFixPos__Q53scn4step4boss6dubior16StateDashWallHitFv:
 /* 8024E5CC 0024A40C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common16StateDashWallHit
 __vt__Q53scn4step4boss6common16StateDashWallHit:
 	.incbin "baserom.dol", 0x462420, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior16StateDashWallHit
 __vt__Q53scn4step4boss6dubior16StateDashWallHit:
 	.incbin "baserom.dol", 0x4638B0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255953
 $$255953:
 	.incbin "baserom.dol", 0x49B130, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_GetUnlockAnimName__33$$2unnamed$$2ChallengeDoorNormal_cpp$$2FQ33scn4step13ChallengeKind
 t_GetUnlockAnimName__33$$2unnamed$$2ChallengeDoorNormal_cpp$$2FQ33scn4step13ChallengeKind:
 /* 803098D8 00305718  3C 80 80 48 */	lis r4, $$254974@ha
@@ -173,7 +173,7 @@ canEnter__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormalCFv:
 kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormalCFv:
 /* 80309AF8 00305938  4B D4 A2 F8 */	b __wpadNoAlloc
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254974
 $$254974:
 	.incbin "baserom.dol", 0x47D0C8, 0x18
@@ -208,12 +208,12 @@ $$255043:
 __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorNormal:
 	.incbin "baserom.dol", 0x47D1E0, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254980
 $$254980:
 	.incbin "baserom.dol", 0x496A50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255038
 $$255038:
 	.incbin "baserom.dol", 0x49D310, 0x8

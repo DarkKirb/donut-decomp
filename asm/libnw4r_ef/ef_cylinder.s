@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global EmissionSub__Q34nw4r2ef19EmitterFormCylinderFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34fffffff
 EmissionSub__Q34nw4r2ef19EmitterFormCylinderFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34fffffff:
 /* 800B5FE0 000B1E20  94 21 FE 30 */	stwu r1, -0x1d0(r1)
@@ -526,12 +526,12 @@ lbl_800B6728:
 /* 800B6788 000B25C8  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 800B678C 000B25CC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef19EmitterFormCylinder
 __vt__Q34nw4r2ef19EmitterFormCylinder:
 	.incbin "baserom.dol", 0x43C4B8, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27773
 $$27773:
 	.incbin "baserom.dol", 0x499760, 0x4

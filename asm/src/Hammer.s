@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HammerPath__Q53scn4step4hero9modeldesc6HammerFv
 HammerPath__Q53scn4step4hero9modeldesc6HammerFv:
 /* 8035C578 003583B8  3C 60 80 49 */	lis r3, $$248814@ha
@@ -58,12 +58,12 @@ HammerAnim__Q53scn4step4hero9modeldesc6HammerFv:
 /* 8035C62C 0035846C  90 03 00 08 */	stw r0, 8(r3)
 /* 8035C630 00358470  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21
 $$2LOCAL$$2HammerAnim__Q53scn4step4hero9modeldesc6HammerFv$$2entries$$21:
 	.incbin "baserom.dol", 0x419D50, 0x80
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248814
 $$248814:
 	.incbin "baserom.dol", 0x485AE8, 0x24
@@ -119,7 +119,7 @@ $$248758:
 $$248759:
 	.incbin "baserom.dol", 0x485C30, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735
 $$248735:
 	.incbin "baserom.dol", 0x4971B0, 0x8

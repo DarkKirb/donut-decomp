@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q43scn4step4boss13DamagePreventFv
 __dt__Q43scn4step4boss13DamagePreventFv:
 /* 8022F240 0022B080  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -108,7 +108,7 @@ __vc__Q33hel6common67MutableArray$$0Q53scn4step4boss13DamagePrevent17PreventTarg
 /* 8022F3A4 0022B1E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022F3A8 0022B1E8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250316
 $$250316:
 	.incbin "baserom.dol", 0x49AE58, 0x8

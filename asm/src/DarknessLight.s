@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3sfx13DarknessLightFRQ33scn4step9ComponentbQ43scn4step3sfx21DarknessLightSizeKind
 __ct__Q43scn4step3sfx13DarknessLightFRQ33scn4step9ComponentbQ43scn4step3sfx21DarknessLightSizeKind:
 /* 803CCFAC 003C8DEC  94 21 FE 30 */	stwu r1, -0x1d0(r1)
@@ -387,7 +387,7 @@ lbl_803CD504:
 /* 803CD504 003C9344  C0 22 DC 10 */	lfs f1, $$252572-_SDA2_BASE_(r2)
 /* 803CD508 003C9348  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252574
 $$252574:
 	.incbin "baserom.dol", 0x48ED50, 0x18
@@ -395,7 +395,7 @@ $$252574:
 $$252694:
 	.incbin "baserom.dol", 0x48ED68, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252675
 $$252675:
 	.incbin "baserom.dol", 0x4983E0, 0x8
@@ -403,7 +403,7 @@ $$252675:
 $$252676:
 	.incbin "baserom.dol", 0x4983E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252572
 $$252572:
 	.incbin "baserom.dol", 0x49E6D0, 0x4

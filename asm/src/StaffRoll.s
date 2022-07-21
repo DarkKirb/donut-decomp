@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn11staffcredit9StaffRollFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q33scn11staffcredit9StaffRollFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 803F9FD8 003F5E18  94 21 EE 10 */	stwu r1, -0x11f0(r1)
@@ -2242,12 +2242,12 @@ logoScrollOutTime__Q33scn11staffcredit9StaffRollCFv:
 /* 803FC06C 003F7EAC  38 21 00 30 */	addi r1, r1, 0x30
 /* 803FC070 003F7EB0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2
 POSITIONS__Q33scn11staffcredit23$$2unnamed$$2StaffRoll_cpp$$2:
 	.incbin "baserom.dol", 0x41CE08, 0x220
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251814
 $$251814:
 	.incbin "baserom.dol", 0x492148, 0xC
@@ -2393,7 +2393,7 @@ $$255301:
 $$255302:
 	.incbin "baserom.dol", 0x492434, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251820
 $$251820:
 	.incbin "baserom.dol", 0x498A08, 0x8
@@ -2431,7 +2431,7 @@ $$255297:
 $$255298:
 	.incbin "baserom.dol", 0x498A60, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255272
 $$255272:
 	.incbin "baserom.dol", 0x49EDB8, 0x4

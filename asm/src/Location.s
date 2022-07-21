@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj8LocationFRCQ24gobj12LocationDesc
 __ct__Q24gobj8LocationFRCQ24gobj12LocationDesc:
 /* 8019A954 00196794  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -44,7 +44,7 @@ updatePrevPos__Q24gobj8LocationFv:
 /* 8019A9C8 00196808  38 63 00 0C */	addi r3, r3, 0xc
 /* 8019A9CC 0019680C  4B FE 1B 80 */	b __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3RCQ33hel4math7Vector3
 __ct__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3RCQ33hel4math7Vector3:
 /* 8026F65C 0026B49C  94 21 FF E0 */	stwu r1, -0x20(r1)

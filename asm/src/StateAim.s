@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7gigatzo8StateAimFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7gigatzo8StateAimFPQ43scn4step5enemy5Enemy:
 /* 802B78FC 002B373C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -322,7 +322,7 @@ roundAngle__Q53scn4step5enemy7gigatzo8StateAimFf:
 /* 802B7D7C 002B3BBC  38 21 00 10 */	addi r1, r1, 0x10
 /* 802B7D80 002B3BC0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6shotzo8StateAimFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6shotzo8StateAimFPQ43scn4step5enemy5Enemy:
 /* 802E0824 002DC664  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -510,17 +510,17 @@ roundAngle__Q53scn4step5enemy6shotzo8StateAimFf:
 __dt__Q53scn4step5enemy6shotzo8StateAimFv:
 /* 802E0AAC 002DC8EC  4B FB 0F 0C */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7gigatzo8StateAim
 __vt__Q53scn4step5enemy7gigatzo8StateAim:
 	.incbin "baserom.dol", 0x473588, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6shotzo8StateAim
 __vt__Q53scn4step5enemy6shotzo8StateAim:
 	.incbin "baserom.dol", 0x478270, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256000
 $$256000:
 	.incbin "baserom.dol", 0x49C540, 0x4
@@ -537,7 +537,7 @@ $$256036:
 $$256050:
 	.incbin "baserom.dol", 0x49C558, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255889
 $$255889:
 	.incbin "baserom.dol", 0x49CDD0, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm6RegsetFUlPQ26mintvm10IAllocator
 __ct__Q26mintvm6RegsetFUlPQ26mintvm10IAllocator:
 /* 801C6898 001C26D8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2238,7 +2238,7 @@ lbl_801C86FC:
 /* 801C8724 001C4564  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C8728 001C4568  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251070
 $$251070:
 	.incbin "baserom.dol", 0x457F98, 0xC
@@ -2309,7 +2309,7 @@ $$2STRING$$2spDec__Q26mintvm6RegsetFUi$$20:
 $$2STRING$$2spDec__Q26mintvm6RegsetFUi:
 	.incbin "baserom.dol", 0x458260, 0x38
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251259
 $$251259:
 	.incbin "baserom.dol", 0x493938, 0x8
@@ -2323,7 +2323,7 @@ $$251261:
 $$251262:
 	.incbin "baserom.dol", 0x493950, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251099
 $$251099:
 	.incbin "baserom.dol", 0x49A728, 0x8

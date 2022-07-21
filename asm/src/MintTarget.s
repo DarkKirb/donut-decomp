@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q24gobj10MintTargetFRQ24gobj6Target
 Register__Q24gobj10MintTargetFRQ24gobj6Target:
 /* 8019AF68 00196DA8  90 6D ED E0 */	stw r3, t_obj__Q24gobj24$$2unnamed$$2MintTarget_cpp$$2-_SDA_BASE_(r13)
@@ -53,7 +53,7 @@ __sinit_$$3MintTarget_cpp:
 /* 8019AFD0 00196E10  38 6D ED E0 */	addi r3, r13, t_obj__Q24gobj24$$2unnamed$$2MintTarget_cpp$$2-_SDA_BASE_
 /* 8019AFD4 00196E14  4B F4 24 0C */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40240C, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

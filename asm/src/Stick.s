@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hid5StickFi
 __ct__Q23hid5StickFi:
 /* 801A4778 001A05B8  90 83 00 00 */	stw r4, 0(r3)
@@ -48,7 +48,7 @@ normalized__Q23hid5StickCFv:
 /* 801A4808 001A0648  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A480C 001A064C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249704
 $$249704:
 	.incbin "baserom.dol", 0x49A470, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 8028ADDC 00286C1C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -60,7 +60,7 @@ lbl_8028AE54:
 /* 8028AEAC 00286CEC  38 21 00 50 */	addi r1, r1, 0x50
 /* 8028AEB0 00286CF0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 803C4CF0 003C0B30  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -147,7 +147,7 @@ lbl_803C4DB4:
 /* 803C4E24 003C0C64  38 21 00 70 */	addi r1, r1, 0x70
 /* 803C4E28 003C0C68  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 803D7A64 003D38A4  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -232,27 +232,27 @@ lbl_803D7B30:
 /* 803D7B90 003D39D0  38 21 00 70 */	addi r1, r1, 0x70
 /* 803D7B94 003D39D4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2
 T_SCRIPT_ENTRIES__Q43scn4step4item27$$2unnamed$$2ModelDescUtil_cpp$$2:
 	.incbin "baserom.dol", 0x41C398, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250228
 $$250228:
 	.incbin "baserom.dol", 0x46E758, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250281
 $$250281:
 	.incbin "baserom.dol", 0x48DFD8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250293
 $$250293:
 	.incbin "baserom.dol", 0x48F8D8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil
 SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil:
 	.incbin "baserom.dol", 0x498150, 0x4

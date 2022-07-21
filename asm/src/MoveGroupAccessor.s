@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global deltaSafe__Q43scn4step3map17MoveGroupAccessorCFUl
 deltaSafe__Q43scn4step3map17MoveGroupAccessorCFUl:
 /* 803CA780 003C65C0  94 21 FF E0 */	stwu r1, -0x20(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm6VMCoreFUi
 __ct__Q26mintvm6VMCoreFUi:
 /* 801C9D5C 001C5B9C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -3568,7 +3568,7 @@ deallocate__Q26mintvm215STLAllocator$$0Q33std187__tree_deleter$$0Q23std25pair$$0
 /* 801CCE28 001C8C68  7D 89 03 A6 */	mtctr r12
 /* 801CCE2C 001C8C6C  4E 80 04 20 */	bctr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258575
 $$258575:
 	.incbin "baserom.dol", 0x458680, 0x1C
@@ -3774,7 +3774,7 @@ $$2STRING$$2divide__Q26mintvm9TmpSymbolFi$$20:
 $$2STRING$$2divide__Q26mintvm9TmpSymbolFi:
 	.incbin "baserom.dol", 0x458B90, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258399
 $$258399:
 	.incbin "baserom.dol", 0x493958, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_request__Q43scn4step3sfx30$$2unnamed$$2SuperBackPicture_cpp$$2FRQ43scn4step6effect9RequestorQ43scn4step6effect4KindRCQ23g3d12NodeAccessor
 t_request__Q43scn4step3sfx30$$2unnamed$$2SuperBackPicture_cpp$$2FRQ43scn4step6effect9RequestorQ43scn4step6effect4KindRCQ23g3d12NodeAccessor:
 /* 803CFD08 003CBB48  94 21 FF 10 */	stwu r1, -0xf0(r1)
@@ -792,7 +792,7 @@ onStopPowerfulFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor:
 /* 803D0808 003CC648  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D080C 003CC64C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253740
 $$253740:
 	.incbin "baserom.dol", 0x48EDE8, 0x14
@@ -803,7 +803,7 @@ $$253741:
 __vt__Q43scn4step3sfx16SuperBackPicture:
 	.incbin "baserom.dol", 0x48EE20, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253742
 $$253742:
 	.incbin "baserom.dol", 0x498408, 0x8
@@ -811,7 +811,7 @@ $$253742:
 $$253852:
 	.incbin "baserom.dol", 0x498410, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253791
 $$253791:
 	.incbin "baserom.dol", 0x49E7E0, 0x4

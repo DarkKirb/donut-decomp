@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSReport
 OSReport:
 /* 8001D990 000197D0  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -429,7 +429,7 @@ lbl_8001DF74:
 /* 8001DFA8 00019DE8  4E 80 00 20 */	blr 
 /* 8001DFAC 00019DEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2641
 $$2641:
 	.incbin "baserom.dol", 0x41E6B8, 0x18
@@ -476,7 +476,7 @@ $$2712:
 $$2713:
 	.incbin "baserom.dol", 0x41E95C, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSFpscrEnableBits
 __OSFpscrEnableBits:
 	.incbin "baserom.dol", 0x4928A8, 0x4

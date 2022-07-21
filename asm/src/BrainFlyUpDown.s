@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common14BrainFlyUpDownFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common14BrainFlyUpDownFRQ43scn4step5enemy5Enemy:
 /* 80291454 0028D294  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -96,7 +96,7 @@ __dt__Q53scn4step5enemy6common14BrainFlyUpDownFv:
 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 80291568 0028D3A8  4B F9 D1 38 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6scarfy14BrainFlyUpDownFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6scarfy14BrainFlyUpDownFRQ43scn4step5enemy5Enemy:
 /* 802D9748 002D5588  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -172,7 +172,7 @@ __dt__Q53scn4step5enemy6scarfy14BrainFlyUpDownFv:
 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802D9824 002D5664  4B F5 4E 7C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x46F058, 0x10
@@ -180,7 +180,7 @@ __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common14Sta
 __vt__Q53scn4step5enemy6common14BrainFlyUpDown:
 	.incbin "baserom.dol", 0x46F068, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy14StateFlyUpDown$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x4774A8, 0x10

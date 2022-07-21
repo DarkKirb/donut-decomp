@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mov8MovieYuvF18MOVideoFrameFormatUlUl
 __ct__Q23mov8MovieYuvF18MOVideoFrameFormatUlUl:
 /* 801D055C 001CC39C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -618,12 +618,12 @@ getImage__Q23mov8MovieYuvFPv:
 /* 801D0E4C 001CCC8C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D0E50 001CCC90  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mov8MovieYuv
 __vt__Q23mov8MovieYuv:
 	.incbin "baserom.dol", 0x4591E8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249275
 $$249275:
 	.incbin "baserom.dol", 0x49A780, 0x4

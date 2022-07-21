@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero12interference14StateSpaceJumpFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero12interference14StateSpaceJumpFPQ43scn4step4hero4Hero:
 /* 80373594 0036F3D4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1044,12 +1044,12 @@ init__Q53scn4step4hero12interference14StateSpaceJumpFv:
 /* 80374498 003702D8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8037449C 003702DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference14StateSpaceJump
 __vt__Q53scn4step4hero12interference14StateSpaceJump:
 	.incbin "baserom.dol", 0x488658, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260789
 $$260789:
 	.incbin "baserom.dol", 0x49DD90, 0x4

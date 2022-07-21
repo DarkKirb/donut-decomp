@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__17MoSdkVideoDecoderFPv
 __ct__17MoSdkVideoDecoderFPv:
 /* 80153F10 0014FD50  38 00 00 00 */	li r0, 0
@@ -361,7 +361,7 @@ VX2_Free__FPv:
 /* 801543E8 00150228  4B FF F3 E8 */	b MOiFree__FPv
 /* 801543EC 0015022C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22798
 $$22798:
 	.incbin "baserom.dol", 0x4445F8, 0x1C

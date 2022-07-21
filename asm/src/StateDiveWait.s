@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4como13StateDiveWaitFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4como13StateDiveWaitFPQ43scn4step5enemy5Enemy:
 /* 802A8108 002A3F48  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -150,7 +150,7 @@ lbl_802A82D0:
 __dt__Q53scn4step5enemy4como13StateDiveWaitFv:
 /* 802A82E8 002A4128  4B FE 96 D0 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como13StateDiveWait
 __vt__Q53scn4step5enemy4como13StateDiveWait:
 	.incbin "baserom.dol", 0x471D20, 0x20

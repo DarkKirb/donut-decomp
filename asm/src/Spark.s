@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HatPath__Q53scn4step4hero9modeldesc5SparkFv
 HatPath__Q53scn4step4hero9modeldesc5SparkFv:
 /* 8035C964 003587A4  3C 60 80 49 */	lis r3, $$248824@ha
@@ -78,7 +78,7 @@ HatAnim__Q53scn4step4hero9modeldesc5SparkFv:
 /* 8035CA60 003588A0  90 03 00 08 */	stw r0, 8(r3)
 /* 8035CA64 003588A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero5spark5SparkFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero5spark5SparkFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8038CDA0 00388BE0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1153,7 +1153,7 @@ lbl_8038DC18:
 /* 8038DC28 00389A68  38 21 00 10 */	addi r1, r1, 0x10
 /* 8038DC2C 00389A6C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248824
 $$248824:
 	.incbin "baserom.dol", 0x487510, 0x20
@@ -1161,7 +1161,7 @@ $$248824:
 $$248733:
 	.incbin "baserom.dol", 0x487530, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$259457
 $$259457:
 	.incbin "baserom.dol", 0x489860, 0x20
@@ -1172,7 +1172,7 @@ $$259458:
 __vt__Q53scn4step4hero5spark5Spark:
 	.incbin "baserom.dol", 0x4898A4, 0x5C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
 	.incbin "baserom.dol", 0x497658, 0x8
@@ -1186,7 +1186,7 @@ $$248831:
 $$248766:
 	.incbin "baserom.dol", 0x497670, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc5SparkFv$$2entries$$22:
 	.incbin "baserom.dol", 0x49DAF8, 0x8

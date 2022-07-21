@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info14HeroStatusIconFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ43scn4step4hero4Kind
 __ct__Q43scn4step4info14HeroStatusIconFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ43scn4step4hero4Kind:
 /* 803A9DC8 003A5C08  94 21 FE 70 */	stwu r1, -0x190(r1)
@@ -608,7 +608,7 @@ lbl_803AA5D4:
 /* 803AA60C 003A644C  38 21 01 20 */	addi r1, r1, 0x120
 /* 803AA610 003A6450  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251660
 $$251660:
 	.incbin "baserom.dol", 0x48B9C8, 0x10
@@ -700,7 +700,7 @@ $$253210:
 $$253211:
 	.incbin "baserom.dol", 0x48BD48, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2
 T_ARC_PATH__Q43scn4step4info28$$2unnamed$$2HeroStatusIcon_cpp$$2:
 	.incbin "baserom.dol", 0x497960, 0x4

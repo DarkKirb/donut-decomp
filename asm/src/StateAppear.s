@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common11StateAppearFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6common11StateAppearFPQ43scn4step4boss4Boss:
 /* 80244578 002403B8  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -424,7 +424,7 @@ lbl_80244B78:
 /* 80244B84 002409C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80244B88 002409C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss10creditroah11StateAppearFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss10creditroah11StateAppearFPQ43scn4step4boss4Boss:
 /* 8024B7F8 00247638  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -610,7 +610,7 @@ create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroa
 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 8024BA6C 002478AC  4B FE 2C 34 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy11StateAppearFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6whispy11StateAppearFPQ43scn4step4boss4Boss:
 /* 8025C8F8 00258738  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -773,7 +773,7 @@ create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9Sta
 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 8025CAF8 00258938  4B FD 1B A8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4como11StateAppearFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4como11StateAppearFPQ43scn4step5enemy5Enemy:
 /* 802A7550 002A3390  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -953,7 +953,7 @@ procFixPos__Q53scn4step5enemy4como11StateAppearFv:
 __dt__Q53scn4step5enemy4como11StateAppearFv:
 /* 802A77B8 002A35F8  4B FE A2 00 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11whispyapple11StateAppearFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy11whispyapple11StateAppearFPQ43scn4step5enemy5Enemy:
 /* 802F1190 002ECFD0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1078,7 +1078,7 @@ procMove__Q53scn4step5enemy11whispyapple11StateAppearFv:
 procFixPos__Q53scn4step5enemy11whispyapple11StateAppearFv:
 /* 802F1334 002ED174  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257483
 $$257483:
 	.incbin "baserom.dol", 0x4621A8, 0x1D8
@@ -1086,7 +1086,7 @@ $$257483:
 __vt__Q53scn4step4boss6common11StateAppear:
 	.incbin "baserom.dol", 0x462380, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah11StateAppear$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x463288, 0x10
@@ -1094,7 +1094,7 @@ __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah1
 __vt__Q53scn4step4boss10creditroah11StateAppear:
 	.incbin "baserom.dol", 0x463298, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9StateWait$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x466608, 0x10
@@ -1102,17 +1102,17 @@ __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6whispy9State
 __vt__Q53scn4step4boss6whispy11StateAppear:
 	.incbin "baserom.dol", 0x466618, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como11StateAppear
 __vt__Q53scn4step5enemy4como11StateAppear:
 	.incbin "baserom.dol", 0x471C60, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11whispyapple11StateAppear
 __vt__Q53scn4step5enemy11whispyapple11StateAppear:
 	.incbin "baserom.dol", 0x47AE38, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257435
 $$257435:
 	.incbin "baserom.dol", 0x49B110, 0x8
@@ -1126,7 +1126,7 @@ $$257480:
 $$257481:
 	.incbin "baserom.dol", 0x49B124, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255225
 $$255225:
 	.incbin "baserom.dol", 0x49C0C0, 0x4

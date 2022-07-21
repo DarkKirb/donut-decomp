@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn19challengefileselect6CursorFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q33scn19challengefileselect6CursorFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 801E2F84 001DEDC4  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -177,7 +177,7 @@ decide__Q33scn19challengefileselect6CursorFRCQ23lyt12PaneAccessor:
 /* 801E31F8 001DF038  38 21 00 80 */	addi r1, r1, 0x80
 /* 801E31FC 001DF03C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail6CursorFRQ23mem10IAllocator
 __ct__Q43scn7history6detail6CursorFRQ23mem10IAllocator:
 /* 802114DC 0020D31C  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -392,12 +392,12 @@ playChoice__Q43scn7history6detail6CursorFv:
 /* 802117C8 0020D608  38 8D A2 C8 */	addi r4, r13, $$252560-_SDA_BASE_
 /* 802117CC 0020D60C  4B F9 B7 C8 */	b play__Q23lyt6LayoutFPCc
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251586
 $$251586:
 	.incbin "baserom.dol", 0x4115C8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251991
 $$251991:
 	.incbin "baserom.dol", 0x45A030, 0x1C
@@ -408,7 +408,7 @@ $$251582:
 __vt__Q33scn19challengefileselect6Cursor:
 	.incbin "baserom.dol", 0x45A058, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251547
 $$251547:
 	.incbin "baserom.dol", 0x45D9A0, 0x10
@@ -452,7 +452,7 @@ $$252454:
 $$252455:
 	.incbin "baserom.dol", 0x45DAC0, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251992
 $$251992:
 	.incbin "baserom.dol", 0x493DF8, 0x8
@@ -487,7 +487,7 @@ $$252034:
 $$252044:
 	.incbin "baserom.dol", 0x493E48, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252551
 $$252551:
 	.incbin "baserom.dol", 0x494AC0, 0x8

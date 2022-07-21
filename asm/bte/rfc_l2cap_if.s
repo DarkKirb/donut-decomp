@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global rfcomm_l2cap_if_init
 rfcomm_l2cap_if_init:
 /* 80097D28 00093B68  3C 60 80 09 */	lis r3, RFCOMM_ConnectInd@ha
@@ -674,7 +674,7 @@ rfc_save_lcid_mcb:
 /* 80098654 00094494  90 64 00 3C */	stw r3, 0x3c(r4)
 /* 80098658 00094498  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2712
 $$2712:
 	.incbin "baserom.dol", 0x43B1C8, 0x1C

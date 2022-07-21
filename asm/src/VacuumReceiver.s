@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss14VacuumReceiverFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss14VacuumReceiverFRQ43scn4step4boss4Boss:
 /* 80235C58 00231A98  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -722,7 +722,7 @@ create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18St
 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 80236588 002323C8  4B FF 81 18 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy14VacuumReceiverFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy14VacuumReceiverFRQ43scn4step5enemy5Enemy:
 /* 8028FE54 0028BC94  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1595,7 +1595,7 @@ create__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18
 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv:
 /* 80290A58 0028C898  4B F9 DC 48 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero14VacuumReceiverFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero14VacuumReceiverFRQ43scn4step4hero4Hero:
 /* 80358B9C 003549DC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2941,7 +2941,7 @@ lbl_80359E18:
 __dt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv:
 /* 80359E34 00355C74  4B ED 48 6C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item14VacuumReceiverFRQ43scn4step4item4Item
 __ct__Q43scn4step4item14VacuumReceiverFRQ43scn4step4item4Item:
 /* 803C5584 003C13C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3401,7 +3401,7 @@ create__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18St
 __dt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1Fv:
 /* 803C5BE4 003C1A24  4B E6 8A BC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFRQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFRQ43scn4step6weapon6Weapon:
 /* 803EF218 003EB058  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3686,7 +3686,7 @@ create__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuum
 __dt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1Fv:
 /* 803EF5E8 003EB428  4B E3 F0 B8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common18StateVacuumReceive$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x4609D0, 0x10
@@ -3706,7 +3706,7 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut87LinkList$$0Q24util66ObjListNode$$0Q4
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut87LinkList$$0Q24util66ObjListNode$$0Q43scn4step6vacuum8Attacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util66ObjListNode$$0Q43scn4step6vacuum8Attacker$$4Q24util16ObjListDummyType$$1:
 	.incbin "baserom.dol", 0x460A7C, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18StateVacuumReceive$$4PQ43scn4step5enemy5Enemy$$4Ul$$1:
 	.incbin "baserom.dol", 0x46EDC8, 0x10
@@ -3714,7 +3714,7 @@ __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common18St
 __vt__Q43scn4step5enemy14VacuumReceiver:
 	.incbin "baserom.dol", 0x46EDD8, 0x48
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1
 __vt__Q24util109StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero12interference18StateVacuumReceive$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.incbin "baserom.dol", 0x481778, 0x10
@@ -3728,7 +3728,7 @@ __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interferenc
 __vt__Q43scn4step4hero14VacuumReceiver:
 	.incbin "baserom.dol", 0x4817A8, 0x48
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1
 __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18StateVacuumReceive$$4PQ43scn4step4item4Item$$4Ul$$1:
 	.incbin "baserom.dol", 0x48E048, 0x10
@@ -3736,7 +3736,7 @@ __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4item5state18Stat
 __vt__Q43scn4step4item14VacuumReceiver:
 	.incbin "baserom.dol", 0x48E058, 0x48
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1
 __vt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumedblock18StateVacuumReceive$$4PQ43scn4step6weapon6Weapon$$4Ul$$1:
 	.incbin "baserom.dol", 0x491348, 0x10
@@ -3744,7 +3744,7 @@ __vt__Q24util116StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon13vacuumed
 __vt__Q53scn4step6weapon13vacuumedblock14VacuumReceiver:
 	.incbin "baserom.dol", 0x491358, 0x48
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256314
 $$256314:
 	.incbin "baserom.dol", 0x49AF08, 0x4
@@ -3758,7 +3758,7 @@ $$256316:
 $$256317:
 	.incbin "baserom.dol", 0x49AF14, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255809
 $$255809:
 	.incbin "baserom.dol", 0x49BAC0, 0x4
@@ -3778,7 +3778,7 @@ $$258167:
 $$258375:
 	.incbin "baserom.dol", 0x49BAD4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257113
 $$257113:
 	.incbin "baserom.dol", 0x49DA48, 0x4
@@ -3807,7 +3807,7 @@ $$259532:
 $$259533:
 	.incbin "baserom.dol", 0x49DA68, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255562
 $$255562:
 	.incbin "baserom.dol", 0x49E598, 0x4

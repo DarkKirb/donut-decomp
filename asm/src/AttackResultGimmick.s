@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll19AttackResultGimmickFv
 __ct__Q25ocoll19AttackResultGimmickFv:
 /* 801D5120 001D0F60  38 80 00 00 */	li r4, 0
@@ -52,7 +52,7 @@ lbl_801D51B4:
 /* 801D51C4 001D1004  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D51C8 001D1008  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250024
 $$250024:
 	.incbin "baserom.dol", 0x49A7C0, 0x8

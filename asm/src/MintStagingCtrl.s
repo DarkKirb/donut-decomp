@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_obj__Q43scn4step4hero29$$2unnamed$$2MintStagingCtrl_cpp$$2Fv
 t_obj__Q43scn4step4hero29$$2unnamed$$2MintStagingCtrl_cpp$$2Fv:
 /* 8034BC80 00347AC0  94 21 FF F0 */	stwu r1, -0x10(r1)

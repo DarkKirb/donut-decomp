@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global sdpu_find_ccb_by_cid
 sdpu_find_ccb_by_cid:
 /* 800A0DB8 0009CBF8  3C 80 80 50 */	lis r4, sdp_cb@ha
@@ -1183,12 +1183,12 @@ lbl_800A1DE8:
 /* 800A1DF8 0009DC38  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800A1DFC 0009DC3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global sdp_base_uuid
 sdp_base_uuid:
 	.incbin "baserom.dol", 0x404350, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21109
 $$21109:
 	.incbin "baserom.dol", 0x43C038, 0x44

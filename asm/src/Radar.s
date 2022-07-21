@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info9challenge5RadarFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q53scn4step4info9challenge5RadarFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 803B4E5C 003B0C9C  94 21 FE B0 */	stwu r1, -0x150(r1)
@@ -372,7 +372,7 @@ lbl_803B537C:
 /* 803B5388 003B11C8  FC 20 00 90 */	fmr f1, f0
 /* 803B538C 003B11CC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252323
 $$252323:
 	.incbin "baserom.dol", 0x48C810, 0x14
@@ -392,7 +392,7 @@ $$252329:
 $$252331:
 	.incbin "baserom.dol", 0x48C858, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252328
 $$252328:
 	.incbin "baserom.dol", 0x497C60, 0x8
@@ -406,7 +406,7 @@ $$252332:
 $$252333:
 	.incbin "baserom.dol", 0x497C78, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252327
 $$252327:
 	.incbin "baserom.dol", 0x49E490, 0x4

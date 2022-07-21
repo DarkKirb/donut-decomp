@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster12StateLoseFlyFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss15challengemaster12StateLoseFlyFPQ43scn4step4boss4Boss:
 /* 80241040 0023CE80  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -474,10 +474,10 @@ __sinit_$$3StateLoseFly_cpp:
 /* 802416DC 0023D51C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802416E0 0023D520  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40247C, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster9StateLose$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengemaster9StateLose$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x461F68, 0x10
@@ -485,12 +485,12 @@ __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss15challengema
 __vt__Q53scn4step4boss15challengemaster12StateLoseFly:
 	.incbin "baserom.dol", 0x461F78, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256401
 $$256401:
 	.incbin "baserom.dol", 0x4953F0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257754
 $$257754:
 	.incbin "baserom.dol", 0x49B090, 0x8

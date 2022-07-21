@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss12ObjCollReactFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss12ObjCollReactFRQ43scn4step4boss4Boss:
 /* 80232B6C 0022E9AC  90 83 00 00 */	stw r4, 0(r3)
@@ -727,7 +727,7 @@ lbl_80233590:
 /* 802335B8 0022F3F8  38 21 01 10 */	addi r1, r1, 0x110
 /* 802335BC 0022F3FC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy12ObjCollReactFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy12ObjCollReactFRQ43scn4step5enemy5Enemy:
 /* 8028B15C 00286F9C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1793,7 +1793,7 @@ __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage14Sta
 __dt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1Fv:
 /* 8028C028 00287E68  4B FA 26 78 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global procObjCollReact__Q43scn4step4hero12ObjCollReactFv
 procObjCollReact__Q43scn4step4hero12ObjCollReactFv:
 /* 8034F9BC 0034B7FC  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -2868,7 +2868,7 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10Stat
 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80350838 0034C678  4B ED DE 68 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global procObjCollReact__Q43scn4step6weapon12ObjCollReactFv
 procObjCollReact__Q43scn4step6weapon12ObjCollReactFv:
 /* 803D7B98 003D39D8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2918,7 +2918,7 @@ lbl_803D7C2C:
 /* 803D7C40 003D3A80  38 21 00 20 */	addi r1, r1, 0x20
 /* 803D7C44 003D3A84  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x4124F0, 0x64
@@ -2926,7 +2926,7 @@ T_HITEFFECT_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 T_HITSE_TABLE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x412554, 0x3C
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x414480, 0x64
@@ -2934,7 +2934,7 @@ T_HITEFFECT_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2:
 T_HITSE_TABLE__Q43scn4step5enemy26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x4144E4, 0x3C
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_HITEFFECT_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2
 T_HITEFFECT_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x416288, 0x64
@@ -2942,12 +2942,12 @@ T_HITEFFECT_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2:
 T_HITSE_TABLE__Q43scn4step4hero26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x4162EC, 0x3C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x460770, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1
 __vt__Q24util103StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadExtreme$$4PQ43scn4step5enemy5Enemy$$4Ul$$1:
 	.incbin "baserom.dol", 0x46E768, 0x10
@@ -2964,7 +2964,7 @@ __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage17St
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage18StateDamageExtreme$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x46E7A8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage20StateSuperTeamAttack$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x481258, 0x10
@@ -2999,17 +2999,17 @@ __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage12Stat
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage13StateSparkLv3$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x4812F8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAMAGERATE_BY_PILE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2
 T_DAMAGERATE_BY_PILE__Q43scn4step4boss26$$2unnamed$$2ObjCollReact_cpp$$2:
 	.incbin "baserom.dol", 0x4952C0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256339
 $$256339:
 	.incbin "baserom.dol", 0x495A10, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257720
 $$257720:
 	.incbin "baserom.dol", 0x49AEB0, 0x8
@@ -3023,7 +3023,7 @@ $$257779:
 $$257780:
 	.incbin "baserom.dol", 0x49AEC0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258198
 $$258198:
 	.incbin "baserom.dol", 0x49BA18, 0x8
@@ -3037,7 +3037,7 @@ $$258416:
 $$258417:
 	.incbin "baserom.dol", 0x49BA2C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260300
 $$260300:
 	.incbin "baserom.dol", 0x49D8D8, 0x4

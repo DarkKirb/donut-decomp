@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __NANDShowErrorMessage
 __NANDShowErrorMessage:
 /* 8004B130 00046F70  94 21 FC E0 */	stwu r1, -0x320(r1)
@@ -225,7 +225,7 @@ __NANDPrintErrorMessage:
 /* 8004B428 00047268  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004B42C 0004726C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __NANDMaxBlocksErrorMessageDefault
 __NANDMaxBlocksErrorMessageDefault:
 	.incbin "baserom.dol", 0x403B38, 0x1C
@@ -260,7 +260,7 @@ __NANDUnknownErrorMessageEurope:
 $$21868:
 	.incbin "baserom.dol", 0x403C50, 0x100
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21805
 $$21805:
 	.incbin "baserom.dol", 0x4326C8, 0x5C
@@ -430,7 +430,7 @@ $$21859:
 $$21860:
 	.incbin "baserom.dol", 0x434284, 0x74
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global __NANDMaxBlocksErrorMessageChinaKorea
 __NANDMaxBlocksErrorMessageChinaKorea:
 	.incbin "baserom.dol", 0x499250, 0x8

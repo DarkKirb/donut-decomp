@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global chkOnFire__Q43scn4step4hero15MapCollProducerFRCQ33hel4math7Vector2RCQ33hel4math7Vector2Ul
 chkOnFire__Q43scn4step4hero15MapCollProducerFRCQ33hel4math7Vector2RCQ33hel4math7Vector2Ul:
 /* 8034B028 00346E68  94 21 F9 30 */	stwu r1, -0x6d0(r1)

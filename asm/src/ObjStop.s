@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss7ObjStopFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss7ObjStopFRQ43scn4step4boss4Boss:
 /* 80233770 0022F5B0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -184,7 +184,7 @@ onStopPowerfulFinished__Q43scn4step4boss7ObjStopFRCQ25ostop5Actor:
 /* 802339D4 0022F814  38 21 00 10 */	addi r1, r1, 0x10
 /* 802339D8 0022F818  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy7ObjStopFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy7ObjStopFRQ43scn4step5enemy5Enemy:
 /* 8028C02C 00287E6C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -339,7 +339,7 @@ onStopPowerfulFinished__Q43scn4step5enemy7ObjStopFRCQ25ostop5Actor:
 /* 8028C240 00288080  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028C244 00288084  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero7ObjStopFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero7ObjStopFRQ43scn4step4hero4Hero:
 /* 80350ABC 0034C8FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -559,7 +559,7 @@ onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor:
 /* 80350D9C 0034CBDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80350DA0 0034CBE0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item7ObjStopFRQ43scn4step4item4Item
 __ct__Q43scn4step4item7ObjStopFRQ43scn4step4item4Item:
 /* 803C4E2C 003C0C6C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -720,7 +720,7 @@ onStopPowerfulFinished__Q43scn4step4item7ObjStopFRCQ25ostop5Actor:
 /* 803C5058 003C0E98  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C505C 003C0E9C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon7ObjStopFRQ43scn4step6weapon6WeaponQ43scn4step5ostop4Flag
 __ct__Q43scn4step6weapon7ObjStopFRQ43scn4step6weapon6WeaponQ43scn4step5ostop4Flag:
 /* 803D7C48 003D3A88  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -892,27 +892,27 @@ onStopPowerfulFinished__Q43scn4step6weapon7ObjStopFRCQ25ostop5Actor:
 /* 803D7E88 003D3CC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D7E8C 003D3CCC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss7ObjStop
 __vt__Q43scn4step4boss7ObjStop:
 	.incbin "baserom.dol", 0x4607B8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy7ObjStop
 __vt__Q43scn4step5enemy7ObjStop:
 	.incbin "baserom.dol", 0x46E7B8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero7ObjStop
 __vt__Q43scn4step4hero7ObjStop:
 	.incbin "baserom.dol", 0x481390, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item7ObjStop
 __vt__Q43scn4step4item7ObjStop:
 	.incbin "baserom.dol", 0x48DFE8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon7ObjStop
 __vt__Q43scn4step6weapon7ObjStop:
 	.incbin "baserom.dol", 0x48F8E8, 0x20

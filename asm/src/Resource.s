@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hbm8ResourceFRQ23mem7HeapExpb
 __ct__Q23hbm8ResourceFRQ23mem7HeapExpb:
 /* 8019D5D8 00199418  38 00 00 00 */	li r0, 0

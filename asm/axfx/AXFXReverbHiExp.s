@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AXFXReverbHiExpInit
 AXFXReverbHiExpInit:
 /* 80046210 00042050  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1003,7 +1003,7 @@ lbl_80047004:
 /* 80047038 00042E78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004703C 00042E7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __EarlySizeTable
 __EarlySizeTable:
 	.incbin "baserom.dol", 0x432120, 0x60
@@ -1014,7 +1014,7 @@ __EarlyCoefTable:
 __FilterSizeTable:
 	.incbin "baserom.dol", 0x4321E0, 0xE0
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23078
 $$23078:
 	.incbin "baserom.dol", 0x499210, 0x4

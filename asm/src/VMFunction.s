@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setup__Q26mintvm10VMFunctionFv
 setup__Q26mintvm10VMFunctionFv:
 /* 801CCE30 001C8C70  48 00 00 04 */	b parseName__Q26mintvm10VMFunctionFv
@@ -105,7 +105,7 @@ lbl_801CCF78:
 /* 801CCF88 001C8DC8  38 60 FF FF */	li r3, -1
 /* 801CCF8C 001C8DCC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250536
 $$250536:
 	.incbin "baserom.dol", 0x458BD0, 0x1C

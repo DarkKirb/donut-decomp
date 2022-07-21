@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text0, "ax"  # 0x80004000 - 0x80006740
+.section .init, "ax"  # 0x80004000 - 0x80006740
 .global _rom_copy_info
 _rom_copy_info:
 /* 80006684 00002784  80 00 40 00 */	lwz r0, 0x4000(0)
@@ -54,17 +54,17 @@ _bss_init_info:
 /* 80006738 00002838  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8000673C 0000283C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global _eti_init_info
 _eti_init_info:
 	.incbin "baserom.dol", 0x402324, 0x3C
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 .global _ctors$99
 _ctors$99:
 	.incbin "baserom.dol", 0x40262C, 0x14
 
-.section .data3, "wa"  # 0x80406540 - 0x80406560
+.section .dtors, "wa"  # 0x80406540 - 0x80406560
 .global _dtors$99
 _dtors$99:
 	.incbin "baserom.dol", 0x402648, 0x18

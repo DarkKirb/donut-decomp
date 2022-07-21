@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global l2c_init
 l2c_init:
 /* 80093410 0008F250  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1119,7 +1119,7 @@ lbl_80094428:
 /* 80094438 00090278  38 21 00 20 */	addi r1, r1, 0x20
 /* 8009443C 0009027C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21563
 $$21563:
 	.incbin "baserom.dol", 0x43A968, 0x24

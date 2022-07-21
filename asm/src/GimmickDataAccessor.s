@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global airFlowEntryCount__Q43scn4step3map19GimmickDataAccessorCFv
 airFlowEntryCount__Q43scn4step3map19GimmickDataAccessorCFv:
 /* 803C9D48 003C5B88  38 80 00 2A */	li r4, 0x2a

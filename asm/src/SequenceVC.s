@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23seq10SequenceVCFRCQ33seq10SequenceVC6Recipe
 __ct__Q23seq10SequenceVCFRCQ33seq10SequenceVC6Recipe:
 /* 80400440 003FC280  3C A0 80 49 */	lis r5, __vt__Q23seq10SequenceVC@ha
@@ -78,7 +78,7 @@ GetRuntimeTypeInfo__Q23seq10SequenceVCCFv:
 __dt__Q23seq10SequenceVCFv:
 /* 8040050C 003FC34C  4B FF F4 F4 */	b __dt__Q23seq12SequenceRootFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq10SequenceVC
 __vt__Q23seq10SequenceVC:
 	.incbin "baserom.dol", 0x492640, 0x28

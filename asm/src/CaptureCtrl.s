@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss13watergalboros11CaptureCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss13watergalboros11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 80259634 00255474  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -184,7 +184,7 @@ getResistPower__Q53scn4step4boss13watergalboros11CaptureCtrlCFv:
 /* 80259894 002556D4  38 63 00 04 */	addi r3, r3, 4
 /* 80259898 002556D8  48 0D 93 D8 */	b getResistPower__Q43scn4step4hero19CaptureHeroAttackerCFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy11CaptureCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6whispy11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 8025B8F0 00257730  94 21 FF D0 */	stwu r1, -0x30(r1)

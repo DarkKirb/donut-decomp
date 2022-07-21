@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d9ModelAnimFRCQ23g3d16ModelAnimContext
 __ct__Q23g3d9ModelAnimFRCQ23g3d16ModelAnimContext:
 /* 80190760 0018C5A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1633,7 +1633,7 @@ lbl_80191C68:
 /* 80191C88 0018DAC8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80191C8C 0018DACC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmShpFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResAnmShpFv:
 	.incbin "baserom.dol", 0x450790, 0xC
@@ -1689,7 +1689,7 @@ $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d9ResAnmChrCFv:
 	.incbin "baserom.dol", 0x4508F4, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __FUNCTION__$37026
 __FUNCTION__$37026:
 	.incbin "baserom.dol", 0x493190, 0x4
@@ -1709,7 +1709,7 @@ __FUNCTION__$29445:
 __FUNCTION__$29180:
 	.incbin "baserom.dol", 0x4931A4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253047
 $$253047:
 	.incbin "baserom.dol", 0x49A1C8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn9grandmenu9CameraSetFRQ33scn9grandmenu9Component
 __ct__Q33scn9grandmenu9CameraSetFRQ33scn9grandmenu9Component:
 /* 803F2CC4 003EEB04  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -129,7 +129,7 @@ camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind:
 /* 803F2E78 003EECB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F2E7C 003EECBC  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251461
 $$251461:
 	.incbin "baserom.dol", 0x49ED50, 0x4

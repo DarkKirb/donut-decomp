@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q28dynamics8DynamicsFRCQ23mem15AllocatorHandle
 __ct__Q28dynamics8DynamicsFRCQ23mem15AllocatorHandle:
 /* 8017BD88 00177BC8  38 C0 00 00 */	li r6, 0
@@ -387,7 +387,7 @@ freeModelTree__Q28dynamics8DynamicsFPQ28dynamics9ModelTree:
 /* 8017C2A0 001780E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017C2A4 001780E4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4step4hero9modeldesc8Dynamics9NodeParam
 SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4step4hero9modeldesc8Dynamics9NodeParam:
 /* 8035C0FC 00357F3C  C1 04 00 20 */	lfs f8, 0x20(r4)
@@ -416,7 +416,7 @@ SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4s
 /* 8035C158 00357F98  D1 03 00 20 */	stfs f8, 0x20(r3)
 /* 8035C15C 00357F9C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x44F200, 0x24
@@ -424,7 +424,7 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q2
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut72LinkList$$0Q24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util51ObjListNode$$0Q23g3d5Model$$4Q24util16ObjListDummyType$$1:
 	.incbin "baserom.dol", 0x44F224, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249488
 $$249488:
 	.incbin "baserom.dol", 0x49DAE8, 0x8

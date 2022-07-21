@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara5ShakeFv
 __ct__Q43scn4step5chara5ShakeFv:
 /* 80272D7C 0026EBBC  38 00 00 06 */	li r0, 6
@@ -71,7 +71,7 @@ lbl_80272E54:
 /* 80272E5C 0026EC9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80272E60 0026ECA0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_S__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 	.incbin "baserom.dol", 0x413A88, 0x10
@@ -88,7 +88,7 @@ T_SHAKE_OFFS_TABLE_LL__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 T_TABLE__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 	.incbin "baserom.dol", 0x413AF0, 0x30
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2
 T_SHAKE_OFFS_TABLE_SSS__Q43scn4step5chara19$$2unnamed$$2Shake_cpp$$2:
 	.incbin "baserom.dol", 0x49B888, 0x8

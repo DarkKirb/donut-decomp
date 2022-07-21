@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara17FreeRotControllerFv
 __ct__Q43scn4step5chara17FreeRotControllerFv:
 /* 8026E350 0026A190  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -235,7 +235,7 @@ lbl_8026E5EC:
 /* 8026E6B4 0026A4F4  38 21 01 40 */	addi r1, r1, 0x140
 /* 8026E6B8 0026A4F8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251588
 $$251588:
 	.incbin "baserom.dol", 0x49B7A0, 0x4

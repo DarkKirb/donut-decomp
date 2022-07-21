@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade
 Register__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade:
 /* 803CDCDC 003C9B1C  90 6D F9 20 */	stw r3, t_obj__Q43scn4step3sfx27$$2unnamed$$2MintSuperFade_cpp$$2-_SDA_BASE_(r13)
@@ -23,7 +23,7 @@ __sinit_$$3MintSuperFade_cpp:
 /* 803CDCFC 003C9B3C  38 6D F9 20 */	addi r3, r13, t_obj__Q43scn4step3sfx27$$2unnamed$$2MintSuperFade_cpp$$2-_SDA_BASE_
 /* 803CDD00 003C9B40  4B D0 F6 E0 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025E0, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera17RotControllerDataFv
 __ct__Q43scn4step6camera17RotControllerDataFv:
 /* 80267898 002636D8  38 00 00 00 */	li r0, 0
@@ -19,7 +19,7 @@ __ct__Q43scn4step6camera17RotControllerDataFUlffb:
 /* 802678C0 00263700  98 A3 00 0C */	stb r5, 0xc(r3)
 /* 802678C4 00263704  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249657
 $$249657:
 	.incbin "baserom.dol", 0x49B710, 0x8

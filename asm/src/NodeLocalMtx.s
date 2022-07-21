@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d12NodeLocalMtxFv
 __ct__Q23g3d12NodeLocalMtxFv:
 /* 801930BC 0018EEFC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -105,7 +105,7 @@ setCalcOp__Q23g3d12NodeLocalMtxFQ23g3d18NodeLocalMtxCalcOp:
 /* 80193200 0018F040  90 83 00 40 */	stw r4, 0x40(r3)
 /* 80193204 0018F044  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251380
 $$251380:
 	.incbin "baserom.dol", 0x49A1D8, 0x8

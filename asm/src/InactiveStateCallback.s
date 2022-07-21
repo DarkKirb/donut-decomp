@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero21InactiveStateCallbackFRQ43scn4step4hero12InactiveHero
 __ct__Q43scn4step4hero21InactiveStateCallbackFRQ43scn4step4hero12InactiveHero:
 /* 8034188C 0033D6CC  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero21InactiveStateCallback@ha
@@ -13,7 +13,7 @@ __ct__Q43scn4step4hero21InactiveStateCallbackFRQ43scn4step4hero12InactiveHero:
 onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger:
 /* 803418A0 0033D6E0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero21InactiveStateCallback
 __vt__Q43scn4step4hero21InactiveStateCallback:
 	.incbin "baserom.dol", 0x480DC0, 0x10

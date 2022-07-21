@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DetachSound__Q34nw4r3snd14SeqSoundHandleFv
 DetachSound__Q34nw4r3snd14SeqSoundHandleFv:
 /* 8010DF10 00109D50  80 83 00 00 */	lwz r4, 0(r3)

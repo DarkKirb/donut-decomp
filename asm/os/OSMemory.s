@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSGetPhysicalMem2Size
 OSGetPhysicalMem2Size:
 /* 800222F0 0001E130  3C 60 80 00 */	lis r3, 0x80003118@ha
@@ -603,7 +603,7 @@ lbl_80022B44:
 /* 80022B58 0001E998  4E 80 00 20 */	blr 
 /* 80022B5C 0001E99C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
 	.incbin "baserom.dol", 0x41F828, 0x10

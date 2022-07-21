@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global hcisu_h2_usb_cback
 hcisu_h2_usb_cback:
 /* 80076470 000722B0  2C 03 00 04 */	cmpwi r3, 4
@@ -489,12 +489,12 @@ hcisu_h2_handle_event:
 /* 80076B28 00072968  4E 80 00 20 */	blr 
 /* 80076B2C 0007296C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global hcisu_h2
 hcisu_h2:
 	.incbin "baserom.dol", 0x403EE8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2530
 $$2530:
 	.incbin "baserom.dol", 0x436AB0, 0x3C
@@ -502,7 +502,7 @@ $$2530:
 $$2531:
 	.incbin "baserom.dol", 0x436AEC, 0x34
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global hcisu_preamble_table
 hcisu_preamble_table:
 	.incbin "baserom.dol", 0x499448, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_entry__Q25pause24$$2unnamed$$2ManualData_cpp$$2FQ25pause10ManualKind
 t_entry__Q25pause24$$2unnamed$$2ManualData_cpp$$2FQ25pause10ManualKind:
 /* 801DBE24 001D7C64  1C C4 00 14 */	mulli r6, r4, 0x14
@@ -464,7 +464,7 @@ IsCommandLineDouble__Q25pause10ManualDataFQ25pause10ManualKindUlUl:
 /* 801DC450 001D8290  38 21 00 30 */	addi r1, r1, 0x30
 /* 801DC454 001D8294  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2
 T_CMD_NORMAL__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
 	.incbin "baserom.dol", 0x411180, 0x40
@@ -496,7 +496,7 @@ T_CMD_SMASH__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
 T_ENTRIES__Q25pause24$$2unnamed$$2ManualData_cpp$$2:
 	.incbin "baserom.dol", 0x411480, 0xB8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248734
 $$248734:
 	.incbin "baserom.dol", 0x459658, 0x10
@@ -615,7 +615,7 @@ $$249263:
 $$249272:
 	.incbin "baserom.dol", 0x45985C, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
 	.incbin "baserom.dol", 0x493AF0, 0x8

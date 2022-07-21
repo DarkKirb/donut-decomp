@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSWriteStateFlags
 __OSWriteStateFlags:
 /* 80027030 00022E70  94 21 FF 60 */	stwu r1, -0xa0(r1)
@@ -151,7 +151,7 @@ lbl_80027228:
 /* 80027248 00023088  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8002724C 0002308C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2709
 $$2709:
 	.incbin "baserom.dol", 0x42BA50, 0x28

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef16DrawStrategyImplFv
 __ct__Q34nw4r2ef16DrawStrategyImplFv:
 /* 800B8B50 000B4990  38 E3 00 34 */	addi r7, r3, 0x34
@@ -2307,15 +2307,15 @@ __sinit_$$3ef_drawstrategyimpl_cpp:
 /* 800BAB48 000B6988  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800BAB4C 000B698C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402378, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef16DrawStrategyImpl
 __vt__Q34nw4r2ef16DrawStrategyImpl:
 	.incbin "baserom.dol", 0x43C4F8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29915
 $$29915:
 	.incbin "baserom.dol", 0x499828, 0x4

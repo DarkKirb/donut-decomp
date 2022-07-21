@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global texObj__Q23gfx10TextureObjCFv
 texObj__Q23gfx10TextureObjCFv:
 /* 80196F38 00192D78  38 A3 FF FC */	addi r5, r3, -4
@@ -74,7 +74,7 @@ lbl_80196FFC:
 /* 8019701C 00192E5C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80197020 00192E60  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23gfx10TPLTexture
 __vt__Q23gfx10TPLTexture:
 	.incbin "baserom.dol", 0x450A90, 0xC

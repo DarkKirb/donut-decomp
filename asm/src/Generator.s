@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4ogen9GeneratorFRQ33scn4step9ComponentUlUlUlUlUlUlUlbbRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ35mcoll6detail15MoveGridGroupId
 __ct__Q43scn4step4ogen9GeneratorFRQ33scn4step9ComponentUlUlUlUlUlUlUlbbRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ35mcoll6detail15MoveGridGroupId:
 /* 803CAF38 003C6D78  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1125,7 +1125,7 @@ isInRoomGuarder__Q43scn4step4ogen9GeneratorCFRCQ33hel4math7Vector2:
 /* 803CBEE8 003C7D28  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CBEEC 003C7D2C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global HALF_HEIGHT__Q43scn4step4ogen9Generator
 HALF_HEIGHT__Q43scn4step4ogen9Generator:
 	.incbin "baserom.dol", 0x49E670, 0x4

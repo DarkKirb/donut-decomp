@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf:
 /* 800CF440 000CB280  A0 A3 00 00 */	lhz r5, 0(r3)
@@ -175,7 +175,7 @@ lbl_800CF694:
 /* 800CF6A8 000CB4E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800CF6AC 000CB4EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$25115
 $$25115:
 	.incbin "baserom.dol", 0x4999B0, 0x4

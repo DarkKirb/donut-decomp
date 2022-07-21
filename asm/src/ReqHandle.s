@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ostop9ReqHandleFv
 __ct__Q25ostop9ReqHandleFv:
 /* 801DA2DC 001D611C  38 00 00 00 */	li r0, 0

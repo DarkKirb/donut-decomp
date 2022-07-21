@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global IsPointerValid__Q33hel5debug6AssertFPCv
 IsPointerValid__Q33hel5debug6AssertFPCv:
 /* 8019DE24 00199C64  54 64 00 0E */	rlwinm r4, r3, 0, 0, 7

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global calcDamage__Q43scn4step4boss5GuardFUlf
 calcDamage__Q43scn4step4boss5GuardFUlf:
 /* 802303C8 0022C208  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -68,7 +68,7 @@ lbl_80230494:
 /* 802304B0 0022C2F0  38 21 00 40 */	addi r1, r1, 0x40
 /* 802304B4 0022C2F4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero5GuardFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero5GuardFRQ43scn4step4hero4Hero:
 /* 803385F8 00334438  90 83 00 00 */	stw r4, 0(r3)
@@ -130,17 +130,17 @@ lbl_80338690:
 /* 803386AC 003344EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803386B0 003344F0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19$$2unnamed$$2Guard_cpp$$2
 T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19$$2unnamed$$2Guard_cpp$$2:
 	.incbin "baserom.dol", 0x4124D0, 0x20
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__19$$2unnamed$$2Guard_cpp$$2
 T_ALPHA_TABLE__19$$2unnamed$$2Guard_cpp$$2:
 	.incbin "baserom.dol", 0x415E00, 0x50
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249320
 $$249320:
 	.incbin "baserom.dol", 0x49AE70, 0x4

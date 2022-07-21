@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__10MoSdkInputFPvUlP17MO_MEDIUM_CONTROLPv
 __ct__10MoSdkInputFPvUlP17MO_MEDIUM_CONTROLPv:
 /* 80153230 0014F070  38 00 00 00 */	li r0, 0
@@ -356,7 +356,7 @@ jumpTo__10MoSdkInputFUl:
 /* 801536F8 0014F538  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 801536FC 0014F53C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22549
 $$22549:
 	.incbin "baserom.dol", 0x444500, 0x1C

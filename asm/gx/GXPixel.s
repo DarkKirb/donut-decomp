@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetFog
 GXSetFog:
 /* 80038290 000340D0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -560,12 +560,12 @@ GXSetFieldMode:
 /* 80038A48 00034888  38 21 00 20 */	addi r1, r1, 0x20
 /* 80038A4C 0003488C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GXSetPixelFmt__F11_GXPixelFmt9_GXZFmt16$$2p2f
 $$2LOCAL$$2GXSetPixelFmt__F11_GXPixelFmt9_GXZFmt16$$2p2f:
 	.incbin "baserom.dol", 0x42D0F0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22990
 $$22990:
 	.incbin "baserom.dol", 0x499170, 0x4

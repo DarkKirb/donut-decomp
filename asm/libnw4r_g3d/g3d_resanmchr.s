@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetAnmScale__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r4math4VEC3PCQ34nw4r3g3d17ResAnmChrNodeDataPCQ44nw4r3g3d17ResAnmChrNodeData7AnmDataf
 GetAnmScale__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2FPQ34nw4r4math4VEC3PCQ34nw4r3g3d17ResAnmChrNodeDataPCQ44nw4r3g3d17ResAnmChrNodeData7AnmDataf:
 /* 800D02D0 000CC110  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -2034,12 +2034,12 @@ lbl_800D1F10:
 /* 800D1F38 000CDD78  4E 80 00 20 */	blr 
 /* 800D1F3C 000CDD7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2
 gGetAnmResultTable__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmchr_cpp$$2:
 	.incbin "baserom.dol", 0x404480, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28848
 $$28848:
 	.incbin "baserom.dol", 0x4999F0, 0x4

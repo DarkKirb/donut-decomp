@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss14ScriptCallbackFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss14ScriptCallbackFRQ43scn4step4boss4Boss:
 /* 80233F98 0022FDD8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -91,7 +91,7 @@ onScriptExecPost__Q43scn4step4boss14ScriptCallbackFRCQ24gobj6Script:
 /* 802340B8 0022FEF8  80 63 00 04 */	lwz r3, 4(r3)
 /* 802340BC 0022FEFC  48 00 08 18 */	b MintUnregister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy14ScriptCallbackFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy14ScriptCallbackFRQ43scn4step5enemy5Enemy:
 /* 8028DA10 00289850  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -175,7 +175,7 @@ onScriptExecPost__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script:
 /* 8028DB14 00289954  38 80 00 00 */	li r4, 0
 /* 8028DB18 00289958  48 00 0B 48 */	b MintUnregister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon14ScriptCallbackFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon14ScriptCallbackFRQ43scn4step6weapon6Weapon:
 /* 803D886C 003D46AC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -245,17 +245,17 @@ onScriptExecPre__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6Script:
 onScriptExecPost__Q43scn4step6weapon14ScriptCallbackFRCQ24gobj6Script:
 /* 803D893C 003D477C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss14ScriptCallback
 __vt__Q43scn4step4boss14ScriptCallback:
 	.incbin "baserom.dol", 0x460910, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy14ScriptCallback
 __vt__Q43scn4step5enemy14ScriptCallback:
 	.incbin "baserom.dol", 0x46ED18, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon14ScriptCallback
 __vt__Q43scn4step6weapon14ScriptCallback:
 	.incbin "baserom.dol", 0x48FE78, 0x18

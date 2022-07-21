@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q34nw4r3g3d6G3dObjFv
 __dt__Q34nw4r3g3d6G3dObjFv:
 /* 800DBD10 000D7B50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -115,12 +115,12 @@ GetTypeObj__Q34nw4r3g3d6G3dObjCFv:
 /* 800DBE78 000D7CB8  4E 80 00 20 */	blr 
 /* 800DBE7C 000D7CBC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6G3dObj
 TYPE_NAME__Q34nw4r3g3d6G3dObj:
 	.incbin "baserom.dol", 0x4046E8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d6G3dObj
 __vt__Q34nw4r3g3d6G3dObj:
 	.incbin "baserom.dol", 0x43D030, 0x20

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera10MainCameraFRQ33scn4step9Component
 __ct__Q43scn4step6camera10MainCameraFRQ33scn4step9Component:
 /* 8026561C 0026145C  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -942,7 +942,7 @@ lbl_80266268:
 /* 80266274 002620B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80266278 002620B8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252770
 $$252770:
 	.incbin "baserom.dol", 0x49B660, 0x4

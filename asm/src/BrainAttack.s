@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5cappy11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5cappy11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802A2408 0029E248  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -230,7 +230,7 @@ __dt__Q53scn4step5enemy5cappy11BrainAttackFv:
 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802A2700 0029E540  4B F8 BF A0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4elec11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4elec11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802AF3F4 002AB234  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -308,7 +308,7 @@ __dt__Q53scn4step5enemy4elec11BrainAttackFv:
 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802AF4D8 002AB318  4B F7 F1 C8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6flamer11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6flamer11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802B1BC0 002ADA00  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -465,7 +465,7 @@ lbl_802B1DAC:
 __dt__Q53scn4step5enemy6flamer11BrainAttackFv:
 /* 802B1DC8 002ADC08  4B FD F2 A4 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7gigatzo11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7gigatzo11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802B69C4 002B2804  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -539,7 +539,7 @@ __dt__Q53scn4step5enemy7gigatzo11BrainAttackFv:
 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802B6AA4 002B28E4  4B F7 7B FC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7hothead11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7hothead11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802BA100 002B5F40  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -652,7 +652,7 @@ lbl_802BA248:
 __dt__Q53scn4step5enemy7hothead11BrainAttackFv:
 /* 802BA25C 002B609C  4B FD 6E 10 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6leafan11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6leafan11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802C33FC 002BF23C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -730,7 +730,7 @@ __dt__Q53scn4step5enemy6leafan11BrainAttackFv:
 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802C34E0 002BF320  4B F6 B1 C0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10watergalbo11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10watergalbo11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802F0060 002EBEA0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -796,7 +796,7 @@ lbl_802F0118:
 __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv:
 /* 802F0130 002EBF70  4B FA 0F 3C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6whippy11BrainAttackFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6whippy11BrainAttackFRQ43scn4step5enemy5Enemy:
 /* 802F0738 002EC578  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -823,7 +823,7 @@ onStart__Q53scn4step5enemy6whippy11BrainAttackFv:
 __dt__Q53scn4step5enemy6whippy11BrainAttackFv:
 /* 802F0778 002EC5B8  4B FA 08 F4 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12StateLostHat$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x471178, 0x10
@@ -831,7 +831,7 @@ __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5cappy12Stat
 __vt__Q53scn4step5enemy5cappy11BrainAttack:
 	.incbin "baserom.dol", 0x471188, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10StateChase$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x4725B0, 0x10
@@ -839,12 +839,12 @@ __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy4elec10State
 __vt__Q53scn4step5enemy4elec11BrainAttack:
 	.incbin "baserom.dol", 0x4725C0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6flamer11BrainAttack
 __vt__Q53scn4step5enemy6flamer11BrainAttack:
 	.incbin "baserom.dol", 0x472B18, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9StateWait$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x4733A0, 0x10
@@ -852,12 +852,12 @@ __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7gigatzo9Sta
 __vt__Q53scn4step5enemy7gigatzo11BrainAttack:
 	.incbin "baserom.dol", 0x4733B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7hothead11BrainAttack
 __vt__Q53scn4step5enemy7hothead11BrainAttack:
 	.incbin "baserom.dol", 0x473930, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x474F30, 0x10
@@ -865,12 +865,12 @@ __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6leafan9Stat
 __vt__Q53scn4step5enemy6leafan11BrainAttack:
 	.incbin "baserom.dol", 0x474F40, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10watergalbo11BrainAttack
 __vt__Q53scn4step5enemy10watergalbo11BrainAttack:
 	.incbin "baserom.dol", 0x47A958, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6whippy11BrainAttack
 __vt__Q53scn4step5enemy6whippy11BrainAttack:
 	.incbin "baserom.dol", 0x47AB10, 0x20

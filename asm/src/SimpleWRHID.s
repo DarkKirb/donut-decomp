@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hid11SimpleWRHIDFv
 __ct__Q23hid11SimpleWRHIDFv:
 /* 801A4408 001A0248  94 21 FE B0 */	stwu r1, -0x150(r1)

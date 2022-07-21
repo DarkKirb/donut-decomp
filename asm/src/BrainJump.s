@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7blipper9BrainJumpFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7blipper9BrainJumpFRQ43scn4step5enemy5Enemy:
 /* 80298C3C 00294A7C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -91,7 +91,7 @@ onRecover__Q53scn4step5enemy7blipper9BrainJumpFv:
 __dt__Q53scn4step5enemy7blipper9BrainJumpFv:
 /* 80298D60 00294BA0  4B FF 83 0C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4kabu9BrainJumpFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4kabu9BrainJumpFRQ43scn4step5enemy5Enemy:
 /* 802BC708 002B8548  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -118,12 +118,12 @@ onStart__Q53scn4step5enemy4kabu9BrainJumpFv:
 __dt__Q53scn4step5enemy4kabu9BrainJumpFv:
 /* 802BC748 002B8588  4B FD 49 24 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper9BrainJump
 __vt__Q53scn4step5enemy7blipper9BrainJump:
 	.incbin "baserom.dol", 0x46FD60, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4kabu9BrainJump
 __vt__Q53scn4step5enemy4kabu9BrainJump:
 	.incbin "baserom.dol", 0x473FA0, 0x20

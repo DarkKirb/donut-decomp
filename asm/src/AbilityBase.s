@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11AbilityBaseFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero11AbilityBaseFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8032B780 003275C0  3C C0 80 48 */	lis r6, __vt__Q43scn4step4hero11AbilityBase@ha
@@ -94,7 +94,7 @@ procObjCollReact__Q43scn4step4hero11AbilityBaseFv:
 isDepleted__Q43scn4step4hero11AbilityBaseCFv:
 /* 8032B7E8 00327628  4B D2 86 08 */	b __wpadNoAlloc
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero11AbilityBase
 __vt__Q43scn4step4hero11AbilityBase:
 	.incbin "baserom.dol", 0x47E810, 0x60

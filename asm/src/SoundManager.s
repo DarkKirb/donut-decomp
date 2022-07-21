@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_dataHeap__26$$2unnamed$$2SoundManager_cpp$$2Fv
 t_dataHeap__26$$2unnamed$$2SoundManager_cpp$$2Fv:
 /* 80402EE0 003FED20  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
@@ -548,12 +548,12 @@ final__Q23snd12SoundManagerFv:
 /* 80403630 003FF470  38 21 00 10 */	addi r1, r1, 0x10
 /* 80403634 003FF474  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$249464
 $$249464:
 	.incbin "baserom.dol", 0x41D028, 0xA0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250548
 $$250548:
 	.incbin "baserom.dol", 0x492700, 0x18

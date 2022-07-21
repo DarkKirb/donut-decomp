@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv
 WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv:
 /* 80403D0C 003FFB4C  2C 03 00 00 */	cmpwi r3, 0
@@ -403,7 +403,7 @@ setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat:
 /* 80404294 004000D4  38 21 00 50 */	addi r1, r1, 0x50
 /* 80404298 004000D8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23snd10WaveHandle
 __vt__Q23snd10WaveHandle:
 	.incbin "baserom.dol", 0x4927B8, 0xC
@@ -411,7 +411,7 @@ __vt__Q23snd10WaveHandle:
 __vt__Q33snd10WaveHandle10WavePacket:
 	.incbin "baserom.dol", 0x4927C4, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249104
 $$249104:
 	.incbin "baserom.dol", 0x49EEA0, 0x8

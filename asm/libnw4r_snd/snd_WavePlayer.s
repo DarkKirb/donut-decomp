@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3snd10WavePlayerFv
 __ct__Q34nw4r3snd10WavePlayerFv:
 /* 8011D4D0 00119310  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1072,7 +1072,7 @@ __dt__Q44nw4r3snd10WavePlayer10WavePacketFv:
 /* 8011E3A8 0011A1E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8011E3AC 0011A1EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd10WavePlayer
 __vt__Q34nw4r3snd10WavePlayer:
 	.incbin "baserom.dol", 0x43E720, 0x18
@@ -1080,7 +1080,7 @@ __vt__Q34nw4r3snd10WavePlayer:
 __vt__Q44nw4r3snd10WavePlayer10WavePacket:
 	.incbin "baserom.dol", 0x43E738, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29744
 $$29744:
 	.incbin "baserom.dol", 0x499FC0, 0x4

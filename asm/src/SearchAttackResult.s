@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll18SearchAttackResultFv
 __ct__Q25ocoll18SearchAttackResultFv:
 /* 801D8CA4 001D4AE4  38 80 00 00 */	li r4, 0
@@ -89,7 +89,7 @@ getData__Q25ocoll18SearchAttackResultCFUl:
 /* 801D8DD0 001D4C10  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D8DD4 001D4C14  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250028
 $$250028:
 	.incbin "baserom.dol", 0x49A7E0, 0x8

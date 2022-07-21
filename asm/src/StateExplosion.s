@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12hammerhammer14StateExplosionFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12hammerhammer14StateExplosionFPQ43scn4step6weapon6Weapon:
 /* 803E544C 003E128C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -229,7 +229,7 @@ procObjCollReact__Q53scn4step6weapon12hammerhammer14StateExplosionFv:
 __dt__Q53scn4step6weapon12hammerhammer14StateExplosionFv:
 /* 803E5784 003E15C4  4B FF 32 BC */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon16fightersmashshot14StateExplosionFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon16fightersmashshot14StateExplosionFPQ43scn4step6weapon6Weapon:
 /* 803E6284 003E20C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -328,7 +328,7 @@ procFixPos__Q53scn4step6weapon16fightersmashshot14StateExplosionFv:
 procObjCollReact__Q53scn4step6weapon16fightersmashshot14StateExplosionFv:
 /* 803E63BC 003E21FC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon15fighterkickshot14StateExplosionFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon15fighterkickshot14StateExplosionFPQ43scn4step6weapon6Weapon:
 /* 803E669C 003E24DC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -427,7 +427,7 @@ procFixPos__Q53scn4step6weapon15fighterkickshot14StateExplosionFv:
 procObjCollReact__Q53scn4step6weapon15fighterkickshot14StateExplosionFv:
 /* 803E67D4 003E2614  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon16fighterhadoushot14StateExplosionFPQ43scn4step6weapon6WeaponQ53scn4step6weapon16fighterhadoushot9Variation
 __ct__Q53scn4step6weapon16fighterhadoushot14StateExplosionFPQ43scn4step6weapon6WeaponQ53scn4step6weapon16fighterhadoushot9Variation:
 /* 803E6C50 003E2A90  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -605,7 +605,7 @@ lbl_803E6E8C:
 /* 803E6E98 003E2CD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803E6E9C 003E2CDC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon23combinationdededebomber14StateExplosionFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon23combinationdededebomber14StateExplosionFPQ43scn4step6weapon6Weapon:
 /* 803EB86C 003E76AC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -776,7 +776,7 @@ lbl_803EBA84:
 /* 803EBA84 003E78C4  38 6D DE F4 */	addi r3, r13, $$256505-_SDA_BASE_
 /* 803EBA88 003E78C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12dededehammer14StateExplosionFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12dededehammer14StateExplosionFPQ43scn4step6weapon6Weapon:
 /* 803EC898 003E86D8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1005,37 +1005,37 @@ procObjCollReact__Q53scn4step6weapon12dededehammer14StateExplosionFv:
 __dt__Q53scn4step6weapon12dededehammer14StateExplosionFv:
 /* 803ECBD0 003E8A10  4B FE BE 70 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12hammerhammer14StateExplosion
 __vt__Q53scn4step6weapon12hammerhammer14StateExplosion:
 	.incbin "baserom.dol", 0x4908B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion
 __vt__Q53scn4step6weapon16fightersmashshot14StateExplosion:
 	.incbin "baserom.dol", 0x490968, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion
 __vt__Q53scn4step6weapon15fighterkickshot14StateExplosion:
 	.incbin "baserom.dol", 0x4909B8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion
 __vt__Q53scn4step6weapon16fighterhadoushot14StateExplosion:
 	.incbin "baserom.dol", 0x490A38, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion
 __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion:
 	.incbin "baserom.dol", 0x490E58, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12dededehammer14StateExplosion
 __vt__Q53scn4step6weapon12dededehammer14StateExplosion:
 	.incbin "baserom.dol", 0x490F88, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256495
 $$256495:
 	.incbin "baserom.dol", 0x4986E8, 0x4
@@ -1049,7 +1049,7 @@ $$256499:
 $$256505:
 	.incbin "baserom.dol", 0x4986F4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256953
 $$256953:
 	.incbin "baserom.dol", 0x49EA90, 0x4
@@ -1066,7 +1066,7 @@ $$256956:
 $$256960:
 	.incbin "baserom.dol", 0x49EAA0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256641
 $$256641:
 	.incbin "baserom.dol", 0x49EAF0, 0x4
@@ -1083,7 +1083,7 @@ $$256644:
 $$256647:
 	.incbin "baserom.dol", 0x49EB00, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256953
 $$256953:
 	.incbin "baserom.dol", 0x49EC10, 0x4

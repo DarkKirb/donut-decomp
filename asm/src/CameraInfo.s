@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail10CameraInfoFv
 __ct__Q36effect6detail10CameraInfoFv:
 /* 8017F338 0017B178  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -25,7 +25,7 @@ __ct__Q36effect6detail10CameraInfoFv:
 /* 8017F384 0017B1C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017F388 0017B1C8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251288
 $$251288:
 	.incbin "baserom.dol", 0x49A170, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global beginDrawWarpImage__Q23sfx4WarpFv
 beginDrawWarpImage__Q23sfx4WarpFv:
 /* 80401D90 003FDBD0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -325,7 +325,7 @@ setupDrawOriginal__Q23sfx4WarpFv:
 /* 80402240 003FE080  38 21 00 40 */	addi r1, r1, 0x40
 /* 80402244 003FE084  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251724
 $$251724:
 	.incbin "baserom.dol", 0x49EE70, 0x4

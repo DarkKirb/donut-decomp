@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetFontCode
 GetFontCode:
 /* 80020490 0001C2D0  28 03 00 01 */	cmplwi r3, 1
@@ -1403,7 +1403,7 @@ lbl_8002180C:
 /* 80021818 0001D658  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002181C 0001D65C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global HankakuToCode
 HankakuToCode:
 	.incbin "baserom.dol", 0x41ECE8, 0x180
@@ -1411,12 +1411,12 @@ HankakuToCode:
 Zenkaku2Code:
 	.incbin "baserom.dol", 0x41EE68, 0x990
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global FontEncode
 FontEncode:
 	.incbin "baserom.dol", 0x4928C8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21601
 $$21601:
 	.incbin "baserom.dol", 0x499050, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __SCF1
 __SCF1:
 /* 8004D1F0 00049030  3C C0 73 B6 */	lis r6, 0x73B5DBFA@ha
@@ -193,7 +193,7 @@ lbl_8004D45C:
 /* 8004D46C 000492AC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D470 000492B0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global ProductAreaAndStringTbl
 ProductAreaAndStringTbl:
 	.incbin "baserom.dol", 0x4344F0, 0x48
@@ -201,7 +201,7 @@ ProductAreaAndStringTbl:
 ProductGameRegionAndStringTbl:
 	.incbin "baserom.dol", 0x434538, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21016
 $$21016:
 	.incbin "baserom.dol", 0x492B68, 0x8

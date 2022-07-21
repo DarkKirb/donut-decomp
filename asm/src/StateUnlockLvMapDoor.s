@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFPQ43scn4step4hero4Heroi
 __ct__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFPQ43scn4step4hero4Heroi:
 /* 80381E20 0037DC60  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -230,7 +230,7 @@ procMove__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFv:
 procFixPos__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFv:
 /* 80382158 0037DF98  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick20StateUnlockLvMapDoor
 __vt__Q53scn4step4hero7gimmick20StateUnlockLvMapDoor:
 	.incbin "baserom.dol", 0x488CF8, 0x28

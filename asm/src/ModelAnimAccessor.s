@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global start__Q23g3d17ModelAnimAccessorCFb
 start__Q23g3d17ModelAnimAccessorCFb:
 /* 80191C90 0018DAD0  80 63 00 00 */	lwz r3, 0(r3)
@@ -213,7 +213,7 @@ lbl_80191ECC:
 onFrameChanged__Q23g3d34NullModelAnimAccessorEventReceiverFRCQ23g3d17ModelAnimAccessor:
 /* 80191EE8 0018DD28  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23g3d34NullModelAnimAccessorEventReceiver
 __vt__Q23g3d34NullModelAnimAccessorEventReceiver:
 	.incbin "baserom.dol", 0x450908, 0x10

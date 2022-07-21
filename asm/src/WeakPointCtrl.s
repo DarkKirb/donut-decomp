@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q43scn4step4boss13WeakPointCtrlFv
 __dt__Q43scn4step4boss13WeakPointCtrlFv:
 /* 8023658C 002323CC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -91,7 +91,7 @@ __vc__Q33hel6common62MutableArray$$0Q53scn4step4boss13WeakPointCtrl13WeakPointDa
 /* 802366B4 002324F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 802366B8 002324F8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249046
 $$249046:
 	.incbin "baserom.dol", 0x49AF18, 0x8

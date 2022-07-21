@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d5ModelFRCQ23g3d12ModelContext
 __ct__Q23g3d5ModelFRCQ23g3d12ModelContext:
 /* 8018EB4C 0018A98C  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1987,7 +1987,7 @@ lbl_80190618:
 /* 8019062C 0018C46C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80190630 0018C470  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj5ModelFRCQ24gobj9ModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRCQ24gobj8Location
 __ct__Q24gobj5ModelFRCQ24gobj9ModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRCQ24gobj8Location:
 /* 8019AFD8 00196E18  94 21 FE E0 */	stwu r1, -0x120(r1)
@@ -2175,7 +2175,7 @@ registerToRoot__Q24gobj5ModelFRQ23g3d4Root:
 /* 8019B258 00197098  38 63 00 04 */	addi r3, r3, 4
 /* 8019B25C 0019709C  4B FF 1E A0 */	b registerToRoot__Q23g3d10CharaModelFRQ23g3d4Root
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara5ModelFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ43scn4step5chara9ModelDescRCQ24gobj8LocationRCQ24gobj6TargetQ43scn4step6effect12DrawPriority
 __ct__Q43scn4step5chara5ModelFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ43scn4step5chara9ModelDescRCQ24gobj8LocationRCQ24gobj6TargetQ43scn4step6effect12DrawPriority:
 /* 802706DC 0026C51C  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -3263,7 +3263,7 @@ shake__Q43scn4step5chara5ModelFv:
 /* 80271508 0026D348  38 63 00 C8 */	addi r3, r3, 0xc8
 /* 8027150C 0026D34C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick5ModelFRQ33scn4step9ComponentPCcPCcbb
 __ct__Q43scn4step7gimmick5ModelFRQ33scn4step9ComponentPCcPCcbb:
 /* 802F70C8 002F2F08  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -3423,7 +3423,7 @@ updateWorldMtx__Q43scn4step7gimmick5ModelFv:
 /* 802F728C 002F30CC  38 63 00 08 */	addi r3, r3, 8
 /* 802F7290 002F30D0  4B E9 D9 68 */	b updateWorldMtx__Q23g3d8StdModelFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_modelResFile__Q43scn4step4hero19$$2unnamed$$2Model_cpp$$2FRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 t_modelResFile__Q43scn4step4hero19$$2unnamed$$2Model_cpp$$2FRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8034CAEC 0034892C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -5313,7 +5313,7 @@ onObjStopFinished__Q43scn4step4hero5ModelFv:
 /* 8034E5F4 0034A434  38 21 00 10 */	addi r1, r1, 0x10
 /* 8034E5F8 0034A438  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$258142
 $$258142:
 	.incbin "baserom.dol", 0x4161A0, 0x1C
@@ -5342,7 +5342,7 @@ $$258964:
 $$258967:
 	.incbin "baserom.dol", 0x416278, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256416
 $$256416:
 	.incbin "baserom.dol", 0x450610, 0x18
@@ -5389,17 +5389,17 @@ $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d7ResNodeFv:
 	.incbin "baserom.dol", 0x450778, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24gobj5Model
 __vt__Q24gobj5Model:
 	.incbin "baserom.dol", 0x451130, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5chara5Model
 __vt__Q43scn4step5chara5Model:
 	.incbin "baserom.dol", 0x468788, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258183
 $$258183:
 	.incbin "baserom.dol", 0x480F28, 0x20
@@ -5473,7 +5473,7 @@ $$258997:
 __vt__Q43scn4step4hero5Model:
 	.incbin "baserom.dol", 0x481210, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMatFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d6ResMatFv:
 	.incbin "baserom.dol", 0x493170, 0x8
@@ -5487,7 +5487,7 @@ $$2STRING$$2GetClassName__Q34nw4r3g3d7ResNodeFv:
 __FUNCTION__$30538:
 	.incbin "baserom.dol", 0x493188, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258960
 $$258960:
 	.incbin "baserom.dol", 0x496DE8, 0x8
@@ -5495,7 +5495,7 @@ $$258960:
 $$258993:
 	.incbin "baserom.dol", 0x496DF0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257702
 $$257702:
 	.incbin "baserom.dol", 0x49B810, 0x4
@@ -5503,7 +5503,7 @@ $$257702:
 $$257703:
 	.incbin "baserom.dol", 0x49B814, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260284
 $$260284:
 	.incbin "baserom.dol", 0x49D858, 0x4

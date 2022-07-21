@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item4ItemFRQ33scn4step9ComponentRQ23mem12HeapExpArrayRCQ43scn4step4item4DescUl
 __ct__Q43scn4step4item4ItemFRQ33scn4step9ComponentRQ23mem12HeapExpArrayRCQ43scn4step4item4DescUl:
 /* 803C1488 003BD2C8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2723,7 +2723,7 @@ __dt__Q24util90StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state10State
 __dt__Q24util88StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4item5state9StateFall$$4PQ43scn4step4item4Item$$1Fv:
 /* 803C3970 003BF7B0  4B E6 AD 30 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetParentPaneName__Q43scn9grandmenu4menu4ItemFQ43scn9grandmenu4menu8ItemKindb
 GetParentPaneName__Q43scn9grandmenu4menu4ItemFQ43scn9grandmenu4menu8ItemKindb:
 /* 803F5B24 003F1964  54 60 08 3C */	slwi r0, r3, 1
@@ -3177,7 +3177,7 @@ mfReqEffect__Q43scn9grandmenu4menu4ItemFQ43scn9grandmenu6effect4KindRCQ33hel4mat
 /* 803F6180 003F1FC0  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 803F6184 003F1FC4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$266370
 $$266370:
 	.incbin "baserom.dol", 0x48DE48, 0x20
@@ -3230,7 +3230,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4i
 $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x48DFA8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252783
 $$252783:
 	.incbin "baserom.dol", 0x4919E8, 0xC
@@ -3301,12 +3301,12 @@ $$253750:
 $$253828:
 	.incbin "baserom.dol", 0x491B48, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$266368
 $$266368:
 	.incbin "baserom.dol", 0x498140, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252776
 $$252776:
 	.incbin "baserom.dol", 0x498908, 0x8
@@ -3350,7 +3350,7 @@ $$253818:
 $$253827:
 	.incbin "baserom.dol", 0x498970, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$265701
 $$265701:
 	.incbin "baserom.dol", 0x49E530, 0x4

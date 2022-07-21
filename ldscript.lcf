@@ -2,15 +2,15 @@ _SDA_BASE_ = 0x8055E420;
 _SDA2_BASE_ = 0x80565F80;
 SECTIONS
 {
-    .text0 BIND(0x80004000) : { *(.text0) }
-    .text1 BIND(0x80006A00) : { *(.text1) }
-    .data0 BIND(0x80006740) : { *(.data0) }
-    .data1 BIND(0x800068E0) : { *(.data1) }
-    .data2 BIND(0x80406260) : { *(.data2) }
-    .data3 BIND(0x80406540) : { *(.data3) }
-    .data4 BIND(0x80406560) : { *(.data4) }
-    .data5 BIND(0x80421040) : { *(.data5) }
-    .data6 BIND(0x80556420) : { *(.data6) }
-    .data7 BIND(0x8055DF80) : { *(.data7) }
+    .init BIND(0x80004000) : { *(.init) }
+    .text BIND(0x80006A00) : { *(.text) }
+    extab BIND(0x80006740) : { *(extab) }
+    extabindex BIND(0x800068E0) : { *(extabindex) }
+    .ctors BIND(0x80406260) : { *(.ctors) }
+    .dtors BIND(0x80406540) : { *(.dtors) }
+    .rodata BIND(0x80406560) : { *(.rodata) }
+    .data BIND(0x80421040) : { *(.data) }
+    .sdata BIND(0x80556420) : { *(.sdata) }
+    .sdata2 BIND(0x8055DF80) : { *(.sdata2) }
     .bss BIND(0x80496700) : { *(.bss) }
 }

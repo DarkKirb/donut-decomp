@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_AssertFail__Q26mintvm26$$2unnamed$$2N_Mint_Debug_cpp$$2Fv
 t_AssertFail__Q26mintvm26$$2unnamed$$2N_Mint_Debug_cpp$$2Fv:
 /* 801C62CC 001C210C  38 60 00 00 */	li r3, 0
@@ -431,7 +431,7 @@ N_Mint_Debug_StackDump__6mintvmFRQ26mintvm13MintFuncProxy:
 /* 801C6890 001C26D0  80 63 00 00 */	lwz r3, 0(r3)
 /* 801C6894 001C26D4  48 00 1C 68 */	b dump__Q26mintvm6RegsetCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250074
 $$250074:
 	.incbin "baserom.dol", 0x457E18, 0xC
@@ -469,7 +469,7 @@ $$250134:
 $$250137:
 	.incbin "baserom.dol", 0x457F80, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250075
 $$250075:
 	.incbin "baserom.dol", 0x493928, 0x4
@@ -480,7 +480,7 @@ $$250140:
 $$250145:
 	.incbin "baserom.dol", 0x493930, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250114
 $$250114:
 	.incbin "baserom.dol", 0x49A720, 0x8

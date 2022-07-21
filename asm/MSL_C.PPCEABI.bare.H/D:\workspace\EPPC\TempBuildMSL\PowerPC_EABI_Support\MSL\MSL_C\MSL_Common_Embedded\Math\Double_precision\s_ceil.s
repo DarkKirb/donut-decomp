@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ceil
 ceil:
 /* 80013DC4 0000FC04  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -101,7 +101,7 @@ lbl_80013F08:
 /* 80013F08 0000FD48  38 21 00 10 */	addi r1, r1, 0x10
 /* 80013F0C 0000FD4C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2515
 $$2515:
 	.incbin "baserom.dol", 0x498F90, 0x8

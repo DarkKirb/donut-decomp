@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetIndMtxOp__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatQ34nw4r3g3d7ResNodeQ34nw4r3g3d6ResShp
 GetIndMtxOp__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatQ34nw4r3g3d7ResNodeQ34nw4r3g3d6ResShp:
 /* 800E3C50 000DFA90  94 21 FE D0 */	stwu r1, -0x130(r1)
@@ -2164,7 +2164,7 @@ lbl_800E5AD8:
 /* 800E5AE8 000E1928  38 21 00 50 */	addi r1, r1, 0x50
 /* 800E5AEC 000E192C  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4PFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20
 $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4PFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20:
 	.incbin "baserom.dol", 0x492DE8, 0x4
@@ -2172,7 +2172,7 @@ $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4PFRCQ54nw4r3g3d6detail7work
 $$2LOCAL$$2sort$$0PQ54nw4r3g3d6detail7workmem4MdlZ$$4RPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b$$1__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZRPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v$$2shuffle$$20:
 	.incbin "baserom.dol", 0x492DEC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214861
 $$214861:
 	.incbin "baserom.dol", 0x499B70, 0x4

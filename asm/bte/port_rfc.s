@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PORT_StartCnf
 PORT_StartCnf:
 /* 80096354 00092194  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1448,7 +1448,7 @@ lbl_80097730:
 /* 80097748 00093588  38 21 00 20 */	addi r1, r1, 0x20
 /* 8009774C 0009358C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21517
 $$21517:
 	.incbin "baserom.dol", 0x43AD50, 0x14

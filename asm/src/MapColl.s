@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss7MapCollFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss7MapCollFRQ43scn4step4boss4Boss:
 /* 80231F18 0022DD58  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -742,7 +742,7 @@ lbl_80232994:
 /* 802329A8 0022E7E8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802329AC 0022E7EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_updateDamageInfo__Q43scn4step5enemy21$$2unnamed$$2MapColl_cpp$$2FRQ43scn4step5chara13MapCollResultRCQ35mcoll6detail9ActorInfo
 t_updateDamageInfo__Q43scn4step5enemy21$$2unnamed$$2MapColl_cpp$$2FRQ43scn4step5chara13MapCollResultRCQ35mcoll6detail9ActorInfo:
 /* 8028A27C 002860BC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1540,7 +1540,7 @@ initActor__Q43scn4step5enemy7MapCollFv:
 /* 8028ADB0 00286BF0  38 21 00 30 */	addi r1, r1, 0x30
 /* 8028ADB4 00286BF4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero7MapCollFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero7MapCollFRQ43scn4step4hero4Hero:
 /* 80348E30 00344C70  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3935,7 +3935,7 @@ lbl_8034B014:
 /* 8034B020 00346E60  38 21 00 30 */	addi r1, r1, 0x30
 /* 8034B024 00346E64  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item7MapCollFRQ43scn4step4item4Item
 __ct__Q43scn4step4item7MapCollFRQ43scn4step4item4Item:
 /* 803C466C 003C04AC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -4388,7 +4388,7 @@ isDead__Q43scn4step4item7MapCollCFv:
 /* 803C4CE8 003C0B28  88 63 00 4C */	lbz r3, 0x4c(r3)
 /* 803C4CEC 003C0B2C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon7MapCollFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon7MapCollFRQ43scn4step6weapon6Weapon:
 /* 803D7058 003D2E98  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -5090,7 +5090,7 @@ initActor__Q43scn4step6weapon7MapCollFv:
 /* 803D7A5C 003D389C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D7A60 003D38A0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253609
 $$253609:
 	.incbin "baserom.dol", 0x49AE90, 0x4
@@ -5104,7 +5104,7 @@ $$253611:
 $$253678:
 	.incbin "baserom.dol", 0x49AE9C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253932
 $$253932:
 	.incbin "baserom.dol", 0x49B9F0, 0x4
@@ -5124,7 +5124,7 @@ $$254159:
 $$254160:
 	.incbin "baserom.dol", 0x49BA04, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259351
 $$259351:
 	.incbin "baserom.dol", 0x49D7F0, 0x4
@@ -5189,7 +5189,7 @@ $$260018:
 $$260019:
 	.incbin "baserom.dol", 0x49D840, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254075
 $$254075:
 	.incbin "baserom.dol", 0x49E560, 0x4
@@ -5206,7 +5206,7 @@ $$254229:
 $$254230:
 	.incbin "baserom.dol", 0x49E570, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253837
 $$253837:
 	.incbin "baserom.dol", 0x49E848, 0x4

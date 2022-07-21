@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Enable__Q34nw4r2ut2LCFv
 Enable__Q34nw4r2ut2LCFv:
 /* 80121290 0011D0D0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -155,7 +155,7 @@ __sinit_$$3ut_LockedCache_cpp:
 /* 80121468 0011D2A8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8012146C 0011D2AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023BC, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

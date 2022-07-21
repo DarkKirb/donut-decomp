@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail20PolyEffectMemManagerFRQ23mem10IAllocatorUl
 __ct__Q36effect6detail20PolyEffectMemManagerFRQ23mem10IAllocatorUl:
 /* 801834E0 0017F320  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -393,7 +393,7 @@ free__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 80183A08 0017F848  98 03 00 58 */	stb r0, 0x58(r3)
 /* 80183A0C 0017F84C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249795
 $$249795:
 	.incbin "baserom.dol", 0x44F508, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23app21PerformanceControllerFv
 __ct__Q23app21PerformanceControllerFv:
 /* 8017A588 001763C8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -340,10 +340,10 @@ __sinit_$$3PerformanceController_cpp:
 /* 8017A9D4 00176814  38 6D ED 28 */	addi r3, r13, t_instance__35$$2unnamed$$2PerformanceController_cpp$$2-_SDA_BASE_
 /* 8017A9D8 00176818  4B F6 2A 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023DC, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_DRAW_FRAME_INTERVAL_TABLE__35$$2unnamed$$2PerformanceController_cpp$$2
 T_DRAW_FRAME_INTERVAL_TABLE__35$$2unnamed$$2PerformanceController_cpp$$2:
 	.incbin "baserom.dol", 0x410600, 0x18

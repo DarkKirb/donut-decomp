@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_dm_enable
 bta_dm_enable:
 /* 800786C4 00074504  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2565,7 +2565,7 @@ lbl_8007A9C8:
 /* 8007A9DC 0007681C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8007A9E0 00076820  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_service_id_to_uuid_lkup_tbl
 bta_service_id_to_uuid_lkup_tbl:
 	.incbin "baserom.dol", 0x403FA0, 0x30
@@ -2576,7 +2576,7 @@ bta_service_id_to_btm_srv_id_lkup_tbl:
 bta_security:
 	.incbin "baserom.dol", 0x404030, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22277
 $$22277:
 	.incbin "baserom.dol", 0x436B58, 0x20
@@ -2599,7 +2599,7 @@ $$22689:
 $$22690:
 	.incbin "baserom.dol", 0x436C58, 0x40
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21489
 $$21489:
 	.incbin "baserom.dol", 0x499460, 0x2

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global abs
 abs:
 /* 8000A2CC 0000610C  7C 64 FE 70 */	srawi r4, r3, 0x1f

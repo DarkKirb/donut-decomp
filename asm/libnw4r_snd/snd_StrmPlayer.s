@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail10StrmPlayerFv
 __ct__Q44nw4r3snd6detail10StrmPlayerFv:
 /* 80115FA0 00111DE0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3148,7 +3148,7 @@ $$2180$$2__dt__Q44nw4r3snd6detail10StrmPlayerFv:
 /* 80118A68 001148A8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80118A6C 001148AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10StrmPlayer
 __vt__Q44nw4r3snd6detail10StrmPlayer:
 	.incbin "baserom.dol", 0x43E628, 0x48
@@ -3159,7 +3159,7 @@ __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask:
 __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask:
 	.incbin "baserom.dol", 0x43E688, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211788
 $$211788:
 	.incbin "baserom.dol", 0x499F20, 0x8

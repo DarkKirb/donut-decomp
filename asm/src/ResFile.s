@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d7ResFileFPCcb
 __ct__Q23g3d7ResFileFPCcb:
 /* 80193230 0018F070  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -145,7 +145,7 @@ lbl_8019341C:
 /* 80193430 0018F270  38 21 00 20 */	addi r1, r1, 0x20
 /* 80193434 0018F274  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249003
 $$249003:
 	.incbin "baserom.dol", 0x450918, 0x14

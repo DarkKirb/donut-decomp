@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn15challengeresult4info9ScoreLine6RecipeFQ53scn15challengeresult4info9ScoreLine4KindUli
 Create__Q53scn15challengeresult4info9ScoreLine6RecipeFQ53scn15challengeresult4info9ScoreLine4KindUli:
 /* 801F4594 001F03D4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -668,7 +668,7 @@ lbl_801F4F70:
 /* 801F4FAC 001F0DEC  38 21 18 50 */	addi r1, r1, 0x1850
 /* 801F4FB0 001F0DF0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253406
 $$253406:
 	.incbin "baserom.dol", 0x45B6F0, 0x14
@@ -715,7 +715,7 @@ $$253504:
 $$253505:
 	.incbin "baserom.dol", 0x45B7C0, 0x50
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253409
 $$253409:
 	.incbin "baserom.dol", 0x494340, 0x8

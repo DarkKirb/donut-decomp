@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFRQ43scn4step5enemy5Enemy:
 /* 8029F124 0029AF64  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -62,7 +62,7 @@ lbl_8029F1C0:
 __dt__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv:
 /* 8029F1E0 0029B020  4B FF 1E 8C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit
 __vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit:
 	.incbin "baserom.dol", 0x4709D0, 0x20

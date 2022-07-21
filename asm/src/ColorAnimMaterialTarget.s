@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d23ColorAnimMaterialTargetFv
 __ct__Q23g3d23ColorAnimMaterialTargetFv:
 /* 8018DD4C 00189B8C  38 00 00 00 */	li r0, 0
@@ -40,7 +40,7 @@ tevRegId2GXTevColorArgAlpha__Q23g3d23ColorAnimMaterialTargetCFv:
 /* 8018DDB0 00189BF0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8018DDB4 00189BF4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_TEV_REG_ID_2_TEV_COLOR_ARG__Q23g3d37$$2unnamed$$2ColorAnimMaterialTarget_cpp$$2
 T_TEV_REG_ID_2_TEV_COLOR_ARG__Q23g3d37$$2unnamed$$2ColorAnimMaterialTarget_cpp$$2:
 	.incbin "baserom.dol", 0x410698, 0x10

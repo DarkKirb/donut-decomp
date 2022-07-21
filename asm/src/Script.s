@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj6ScriptFRCQ24gobj10ScriptDescRQ23mem10IAllocatorRQ24mint6Engine
 __ct__Q24gobj6ScriptFRCQ24gobj10ScriptDescRQ23mem10IAllocatorRQ24mint6Engine:
 /* 8019BD40 00197B80  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -257,12 +257,12 @@ prevScriptIndex__Q24gobj6ScriptCFv:
 /* 8019C08C 00197ECC  80 63 00 58 */	lwz r3, 0x58(r3)
 /* 8019C090 00197ED0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251537
 $$251537:
 	.incbin "baserom.dol", 0x451140, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251536
 $$251536:
 	.incbin "baserom.dol", 0x493208, 0x8

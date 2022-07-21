@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn11staffcredit13CameraManagerFRQ33scn11staffcredit9Component
 __ct__Q33scn11staffcredit13CameraManagerFRQ33scn11staffcredit9Component:
 /* 803F8C14 003F4A54  90 83 00 00 */	stw r4, 0(r3)
@@ -342,7 +342,7 @@ lbl_803F90DC:
 /* 803F90E8 003F4F28  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F90EC 003F4F2C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254825
 $$254825:
 	.incbin "baserom.dol", 0x49ED90, 0x4

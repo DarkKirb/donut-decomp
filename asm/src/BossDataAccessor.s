@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global count__Q43scn4step3map16BossDataAccessorCFv
 count__Q43scn4step3map16BossDataAccessorCFv:
 /* 803C9030 003C4E70  80 63 00 00 */	lwz r3, 0(r3)

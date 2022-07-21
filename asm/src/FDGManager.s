@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_isStartOf__Q24file24$$2unnamed$$2FDGManager_cpp$$2FPCcPCc
 t_isStartOf__Q24file24$$2unnamed$$2FDGManager_cpp$$2FPCcPCc:
 /* 80187544 00183384  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -375,22 +375,22 @@ reset__Q24file10FDGManagerFv:
 /* 80187A48 00183888  38 21 00 20 */	addi r1, r1, 0x20
 /* 80187A4C 0018388C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PREFIX_EXFLAG__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_PREFIX_EXFLAG__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
 	.incbin "baserom.dol", 0x410618, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249254
 $$249254:
 	.incbin "baserom.dol", 0x44F8E0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_FILE_PATH__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
 	.incbin "baserom.dol", 0x4930F0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PREFIX_MSG__Q24file24$$2unnamed$$2FDGManager_cpp$$2
 T_PREFIX_MSG__Q24file24$$2unnamed$$2FDGManager_cpp$$2:
 	.incbin "baserom.dol", 0x49A190, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6vacuum8AttackerFRQ25ocoll5Owner
 __ct__Q43scn4step6vacuum8AttackerFRQ25ocoll5Owner:
 /* 803D0F4C 003CCD8C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1850,7 +1850,7 @@ vacuumedPri__Q43scn4step6vacuum8AttackerCFv:
 /* 803D2750 003CE590  80 63 09 44 */	lwz r3, 0x944(r3)
 /* 803D2754 003CE594  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254544
 $$254544:
 	.incbin "baserom.dol", 0x49E810, 0x4

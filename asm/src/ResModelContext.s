@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultEntryName__Q23g3d15ResModelContextFv
 DefaultEntryName__Q23g3d15ResModelContextFv:
 /* 80193CC8 0018FB08  38 6D 89 C0 */	addi r3, r13, $$249029-_SDA_BASE_
@@ -36,7 +36,7 @@ lbl_80193D0C:
 /* 80193D30 0018FB70  38 21 00 40 */	addi r1, r1, 0x40
 /* 80193D34 0018FB74  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249029
 $$249029:
 	.incbin "baserom.dol", 0x4931C0, 0x8

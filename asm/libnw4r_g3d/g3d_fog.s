@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Init__Q34nw4r3g3d3FogFv
 Init__Q34nw4r3g3d3FogFv:
 /* 800F17A0 000ED5E0  80 63 00 00 */	lwz r3, 0(r3)
@@ -104,7 +104,7 @@ lbl_800F18EC:
 /* 800F18F8 000ED738  38 21 00 20 */	addi r1, r1, 0x20
 /* 800F18FC 000ED73C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26809
 $$26809:
 	.incbin "baserom.dol", 0x499C18, 0x8

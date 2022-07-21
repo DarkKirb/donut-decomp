@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global block__Q23mem24HeapCompactionNodeHandleCFv
 block__Q23mem24HeapCompactionNodeHandleCFv:
 /* 801BE2A8 001BA0E8  80 63 00 00 */	lwz r3, 0(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HBMAllocMem__FUl
 HBMAllocMem__FUl:
 /* 8012C080 00127EC0  3C A0 80 44 */	lis r5, spAllocator@ha
@@ -280,7 +280,7 @@ HBMUpdateSound:
 /* 8012C408 00128248  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8012C40C 0012824C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29367
 $$29367:
 	.incbin "baserom.dol", 0x43F118, 0x48

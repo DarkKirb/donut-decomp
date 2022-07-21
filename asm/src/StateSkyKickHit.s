@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter15StateSkyKickHitFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7fighter15StateSkyKickHitFPQ43scn4step4hero4Hero:
 /* 8039EA70 0039A8B0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -267,12 +267,12 @@ lbl_8039EDDC:
 procFixPos__Q53scn4step4hero7fighter15StateSkyKickHitFv:
 /* 8039EE38 0039AC78  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter15StateSkyKickHit
 __vt__Q53scn4step4hero7fighter15StateSkyKickHit:
 	.incbin "baserom.dol", 0x48A680, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258356
 $$258356:
 	.incbin "baserom.dol", 0x49E318, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step5ocoll16MintOCollManagerFRQ25ocoll7Manager
 Register__Q43scn4step5ocoll16MintOCollManagerFRQ25ocoll7Manager:
 /* 803CAB98 003C69D8  90 6D F9 10 */	stw r3, t_manager__Q43scn4step5ocoll30$$2unnamed$$2MintOCollManager_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintOCollManager_cpp:
 /* 803CABB4 003C69F4  38 6D F9 10 */	addi r3, r13, t_manager__Q43scn4step5ocoll30$$2unnamed$$2MintOCollManager_cpp$$2-_SDA_BASE_
 /* 803CABB8 003C69F8  4B D1 28 28 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025D8, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

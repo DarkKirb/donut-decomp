@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q33scn4step16ContextChallengeFv
 Create__Q33scn4step16ContextChallengeFv:
 /* 80220F6C 0021CDAC  94 21 FF 60 */	stwu r1, -0xa0(r1)

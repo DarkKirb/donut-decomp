@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8armordee10CharaParamFv
 Create__Q53scn4step5enemy8armordee10CharaParamFv:
 /* 8029638C 002921CC  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -61,7 +61,7 @@ lbl_80296440:
 /* 80296460 002922A0  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 80296464 002922A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11bladeknight10CharaParamFv
 Create__Q53scn4step5enemy11bladeknight10CharaParamFv:
 /* 80296F2C 00292D6C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -101,7 +101,7 @@ lbl_80296F8C:
 /* 80296FAC 00292DEC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80296FB0 00292DF0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7blipper10CharaParamFv
 Create__Q53scn4step5enemy7blipper10CharaParamFv:
 /* 80298E8C 00294CCC  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -141,7 +141,7 @@ lbl_80298EEC:
 /* 80298F0C 00294D4C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80298F10 00294D50  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv
 Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv:
 /* 8029BB80 002979C0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -184,7 +184,7 @@ lbl_8029BBEC:
 /* 8029BC0C 00297A4C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8029BC10 00297A50  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6bouncy10CharaParamFv
 Create__Q53scn4step5enemy6bouncy10CharaParamFv:
 /* 8029D098 00298ED8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -222,7 +222,7 @@ lbl_8029D0F0:
 /* 8029D110 00298F50  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8029D114 00298F54  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5bowby10CharaParamFv
 Create__Q53scn4step5enemy5bowby10CharaParamFv:
 /* 8029E30C 0029A14C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -262,7 +262,7 @@ lbl_8029E36C:
 /* 8029E38C 0029A1CC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8029E390 0029A1D0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10brontoburt10CharaParamFv
 Create__Q53scn4step5enemy10brontoburt10CharaParamFv:
 /* 8029F2DC 0029B11C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -302,7 +302,7 @@ lbl_8029F33C:
 /* 8029F35C 0029B19C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8029F360 0029B1A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11broomhatter10CharaParamFv
 Create__Q53scn4step5enemy11broomhatter10CharaParamFv:
 /* 802A0E60 0029CCA0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -342,7 +342,7 @@ lbl_802A0EC0:
 /* 802A0EE0 0029CD20  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802A0EE4 0029CD24  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5cappy10CharaParamFv
 Create__Q53scn4step5enemy5cappy10CharaParamFv:
 /* 802A2704 0029E544  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -439,7 +439,7 @@ lbl_802A2834:
 /* 802A2854 0029E694  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802A2858 0029E698  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8cappyhat10CharaParamFv
 Create__Q53scn4step5enemy8cappyhat10CharaParamFv:
 /* 802A3918 0029F758  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -489,7 +489,7 @@ lbl_802A39A0:
 /* 802A39C0 0029F800  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802A39C4 0029F804  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8cerulean10CharaParamFv
 Create__Q53scn4step5enemy8cerulean10CharaParamFv:
 /* 802A54F8 002A1338  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -529,7 +529,7 @@ lbl_802A5558:
 /* 802A5578 002A13B8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802A557C 002A13BC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6chilly10CharaParamFv
 Create__Q53scn4step5enemy6chilly10CharaParamFv:
 /* 802A61E4 002A2024  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -569,7 +569,7 @@ lbl_802A6244:
 /* 802A6264 002A20A4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802A6268 002A20A8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4como10CharaParamFv
 Create__Q53scn4step5enemy4como10CharaParamFv:
 /* 802A7238 002A3078  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -623,7 +623,7 @@ lbl_802A72D0:
 /* 802A72F0 002A3130  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802A72F4 002A3134  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6degout10CharaParamFv
 Create__Q53scn4step5enemy6degout10CharaParamFv:
 /* 802AD218 002A9058  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -663,7 +663,7 @@ lbl_802AD278:
 /* 802AD298 002A90D8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802AD29C 002A90DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8dubiorjr10CharaParamFv
 Create__Q53scn4step5enemy8dubiorjr10CharaParamFv:
 /* 802ADFB8 002A9DF8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -710,7 +710,7 @@ lbl_802AE034:
 /* 802AE054 002A9E94  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802AE058 002A9E98  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11dubiorspark10CharaParamFv
 Create__Q53scn4step5enemy11dubiorspark10CharaParamFv:
 /* 802AEC08 002AAA48  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -762,7 +762,7 @@ lbl_802AEC98:
 /* 802AECB8 002AAAF8  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802AECBC 002AAAFC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4elec10CharaParamFv
 Create__Q53scn4step5enemy4elec10CharaParamFv:
 /* 802AFA00 002AB840  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -808,7 +808,7 @@ lbl_802AFA78:
 /* 802AFA98 002AB8D8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802AFA9C 002AB8DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6flamer10CharaParamFv
 Create__Q53scn4step5enemy6flamer10CharaParamFv:
 /* 802B2168 002ADFA8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -852,7 +852,7 @@ lbl_802B21D8:
 /* 802B21F8 002AE038  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802B21FC 002AE03C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5foley10CharaParamFv
 Create__Q53scn4step5enemy5foley10CharaParamFv:
 /* 802B449C 002B02DC  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -892,7 +892,7 @@ lbl_802B44FC:
 /* 802B451C 002B035C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802B4520 002B0360  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5gemra10CharaParamFv
 Create__Q53scn4step5enemy5gemra10CharaParamFv:
 /* 802B5840 002B1680  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -934,7 +934,7 @@ lbl_802B58A8:
 /* 802B58C8 002B1708  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802B58CC 002B170C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 Create__Q53scn4step5enemy7gigatzo10CharaParamFv:
 /* 802B6AA8 002B28E8  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -986,7 +986,7 @@ lbl_802B6B38:
 /* 802B6B58 002B2998  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802B6B5C 002B299C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5gordo10CharaParamFv
 Create__Q53scn4step5enemy5gordo10CharaParamFv:
 /* 802B8D28 002B4B68  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1034,7 +1034,7 @@ lbl_802B8DA8:
 /* 802B8DC8 002B4C08  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802B8DCC 002B4C0C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7hothead10CharaParamFv
 Create__Q53scn4step5enemy7hothead10CharaParamFv:
 /* 802BA260 002B60A0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1074,7 +1074,7 @@ lbl_802BA2C0:
 /* 802BA2E0 002B6120  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802BA2E4 002B6124  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6juckle10CharaParamFv
 Create__Q53scn4step5enemy6juckle10CharaParamFv:
 /* 802BB270 002B70B0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1120,7 +1120,7 @@ lbl_802BB2E8:
 /* 802BB308 002B7148  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802BB30C 002B714C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy4kabu10CharaParamFv
 Create__Q53scn4step5enemy4kabu10CharaParamFv:
 /* 802BCBEC 002B8A2C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1158,7 +1158,7 @@ lbl_802BCC44:
 /* 802BCC64 002B8AA4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802BCC68 002B8AA8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10knucklejoe10CharaParamFv
 Create__Q53scn4step5enemy10knucklejoe10CharaParamFv:
 /* 802BF2C8 002BB108  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1198,7 +1198,7 @@ lbl_802BF328:
 /* 802BF348 002BB188  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802BF34C 002BB18C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6lanzer10CharaParamFv
 Create__Q53scn4step5enemy6lanzer10CharaParamFv:
 /* 802C1EE4 002BDD24  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1238,7 +1238,7 @@ lbl_802C1F44:
 /* 802C1F64 002BDDA4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C1F68 002BDDA8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6leafan10CharaParamFv
 Create__Q53scn4step5enemy6leafan10CharaParamFv:
 /* 802C34E4 002BF324  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1276,7 +1276,7 @@ lbl_802C353C:
 /* 802C355C 002BF39C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C3560 002BF3A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9mbossdead10CharaParamFv
 Create__Q53scn4step5enemy9mbossdead10CharaParamFv:
 /* 802C4154 002BFF94  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -1339,7 +1339,7 @@ lbl_802C4210:
 /* 802C4230 002C0070  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802C4234 002C0074  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7mumbies10CharaParamFv
 Create__Q53scn4step5enemy7mumbies10CharaParamFv:
 /* 802C4DB4 002C0BF4  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1377,7 +1377,7 @@ lbl_802C4E0C:
 /* 802C4E2C 002C0C6C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C4E30 002C0C70  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8needlous10CharaParamFv
 Create__Q53scn4step5enemy8needlous10CharaParamFv:
 /* 802C5D1C 002C1B5C  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -1425,7 +1425,7 @@ lbl_802C5D9C:
 /* 802C5DBC 002C1BFC  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802C5DC0 002C1C00  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5noddy10CharaParamFv
 Create__Q53scn4step5enemy5noddy10CharaParamFv:
 /* 802C72B0 002C30F0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1462,7 +1462,7 @@ lbl_802C7304:
 /* 802C7324 002C3164  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C7328 002C3168  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5nruff10CharaParamFv
 Create__Q53scn4step5enemy5nruff10CharaParamFv:
 /* 802C7A68 002C38A8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1502,7 +1502,7 @@ lbl_802C7AC8:
 /* 802C7AE8 002C3928  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C7AEC 002C392C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6owgulf10CharaParamFv
 Create__Q53scn4step5enemy6owgulf10CharaParamFv:
 /* 802C9D68 002C5BA8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1544,7 +1544,7 @@ lbl_802C9DD0:
 /* 802C9DF0 002C5C30  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C9DF4 002C5C34  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7parasol10CharaParamFv
 Create__Q53scn4step5enemy7parasol10CharaParamFv:
 /* 802CAAF8 002C6938  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1587,7 +1587,7 @@ lbl_802CAB64:
 /* 802CAB84 002C69C4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802CAB88 002C69C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10parasoldee10CharaParamFv
 Create__Q53scn4step5enemy10parasoldee10CharaParamFv:
 /* 802CBA74 002C78B4  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1627,7 +1627,7 @@ lbl_802CBAD4:
 /* 802CBAF4 002C7934  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802CBAF8 002C7938  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10parasoldoo10CharaParamFv
 Create__Q53scn4step5enemy10parasoldoo10CharaParamFv:
 /* 802CDBA0 002C99E0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1668,7 +1668,7 @@ lbl_802CDC04:
 /* 802CDC24 002C9A64  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802CDC28 002C9A68  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6pierce10CharaParamFv
 Create__Q53scn4step5enemy6pierce10CharaParamFv:
 /* 802CF890 002CB6D0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1708,7 +1708,7 @@ lbl_802CF8F0:
 /* 802CF910 002CB750  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802CF914 002CB754  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10poppybrojr10CharaParamFv
 Create__Q53scn4step5enemy10poppybrojr10CharaParamFv:
 /* 802D167C 002CD4BC  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -1756,7 +1756,7 @@ lbl_802D16FC:
 /* 802D171C 002CD55C  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802D1720 002CD560  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy14poppybrojrbomb10CharaParamFv
 Create__Q53scn4step5enemy14poppybrojrbomb10CharaParamFv:
 /* 802D2830 002CE670  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1802,7 +1802,7 @@ lbl_802D28A8:
 /* 802D28C8 002CE708  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802D28CC 002CE70C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9puppetdee10CharaParamFv
 Create__Q53scn4step5enemy9puppetdee10CharaParamFv:
 /* 802D3198 002CEFD8  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -1862,7 +1862,7 @@ lbl_802D3248:
 /* 802D3268 002CF0A8  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802D326C 002CF0AC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5rocky10CharaParamFv
 Create__Q53scn4step5enemy5rocky10CharaParamFv:
 /* 802D3928 002CF768  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1902,7 +1902,7 @@ lbl_802D3988:
 /* 802D39A8 002CF7E8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802D39AC 002CF7EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8rollball10CharaParamFv
 Create__Q53scn4step5enemy8rollball10CharaParamFv:
 /* 802D6170 002D1FB0  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -1954,7 +1954,7 @@ lbl_802D6200:
 /* 802D6220 002D2060  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802D6224 002D2064  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy7sandbag10CharaParamFv
 Create__Q53scn4step5enemy7sandbag10CharaParamFv:
 /* 802D87F8 002D4638  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1994,7 +1994,7 @@ lbl_802D8858:
 /* 802D8878 002D46B8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802D887C 002D46BC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6scarfy10CharaParamFv
 Create__Q53scn4step5enemy6scarfy10CharaParamFv:
 /* 802D9A00 002D5840  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2034,7 +2034,7 @@ lbl_802D9A60:
 /* 802D9A80 002D58C0  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802D9A84 002D58C4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8searches10CharaParamFv
 Create__Q53scn4step5enemy8searches10CharaParamFv:
 /* 802DBB80 002D79C0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2076,7 +2076,7 @@ lbl_802DBBE8:
 /* 802DBC08 002D7A48  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802DBC0C 002D7A4C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5sheld10CharaParamFv
 Create__Q53scn4step5enemy5sheld10CharaParamFv:
 /* 802DCE78 002D8CB8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2118,7 +2118,7 @@ lbl_802DCEE0:
 /* 802DCF00 002D8D40  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802DCF04 002D8D44  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6shotzo10CharaParamFv
 Create__Q53scn4step5enemy6shotzo10CharaParamFv:
 /* 802E01E0 002DC020  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -2172,7 +2172,7 @@ lbl_802E0278:
 /* 802E0298 002DC0D8  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802E029C 002DC0DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9sirkibble10CharaParamFv
 Create__Q53scn4step5enemy9sirkibble10CharaParamFv:
 /* 802E12DC 002DD11C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2214,7 +2214,7 @@ lbl_802E1344:
 /* 802E1364 002DD1A4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E1368 002DD1A8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11sisterbound10CharaParamFv
 Create__Q53scn4step5enemy11sisterbound10CharaParamFv:
 /* 802E2890 002DE6D0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2260,7 +2260,7 @@ lbl_802E2908:
 /* 802E2928 002DE768  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E292C 002DE76C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy5snowl10CharaParamFv
 Create__Q53scn4step5enemy5snowl10CharaParamFv:
 /* 802E36A4 002DF4E4  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2300,7 +2300,7 @@ lbl_802E3704:
 /* 802E3724 002DF564  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E3728 002DF568  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6sodory10CharaParamFv
 Create__Q53scn4step5enemy6sodory10CharaParamFv:
 /* 802E4C3C 002E0A7C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2342,7 +2342,7 @@ lbl_802E4CA4:
 /* 802E4CC4 002E0B04  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E4CC8 002E0B08  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6sparky10CharaParamFv
 Create__Q53scn4step5enemy6sparky10CharaParamFv:
 /* 802E6CB8 002E2AF8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2384,7 +2384,7 @@ lbl_802E6D20:
 /* 802E6D40 002E2B80  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E6D44 002E2B84  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10stareffect10CharaParamFv
 Create__Q53scn4step5enemy10stareffect10CharaParamFv:
 /* 802E79A8 002E37E8  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -2435,7 +2435,7 @@ lbl_802E7A34:
 /* 802E7A54 002E3894  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802E7A58 002E3898  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy3sun10CharaParamFv
 Create__Q53scn4step5enemy3sun10CharaParamFv:
 /* 802E87B4 002E45F4  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -2490,7 +2490,7 @@ lbl_802E8850:
 /* 802E8870 002E46B0  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802E8874 002E46B4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy8toughdee10CharaParamFv
 Create__Q53scn4step5enemy8toughdee10CharaParamFv:
 /* 802E9CD4 002E5B14  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2528,7 +2528,7 @@ lbl_802E9D2C:
 /* 802E9D4C 002E5B8C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E9D50 002E5B90  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9tsukikage10CharaParamFv
 Create__Q53scn4step5enemy9tsukikage10CharaParamFv:
 /* 802EA6F8 002E6538  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2570,7 +2570,7 @@ lbl_802EA760:
 /* 802EA780 002E65C0  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802EA784 002E65C4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9waddledee10CharaParamFv
 Create__Q53scn4step5enemy9waddledee10CharaParamFv:
 /* 802ED670 002E94B0  4B FA FA 28 */	b Create__Q53scn4step5enemy6bouncy10CharaParamFv
@@ -2612,7 +2612,7 @@ lbl_802ED6CC:
 /* 802ED6EC 002E952C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802ED6F0 002E9530  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy9waddledoo10CharaParamFv
 Create__Q53scn4step5enemy9waddledoo10CharaParamFv:
 /* 802EFA68 002EB8A8  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2652,7 +2652,7 @@ lbl_802EFAC8:
 /* 802EFAE8 002EB928  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802EFAEC 002EB92C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy10watergalbo10CharaParamFv
 Create__Q53scn4step5enemy10watergalbo10CharaParamFv:
 /* 802F0134 002EBF74  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2692,7 +2692,7 @@ lbl_802F0194:
 /* 802F01B4 002EBFF4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802F01B8 002EBFF8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6whippy10CharaParamFv
 Create__Q53scn4step5enemy6whippy10CharaParamFv:
 /* 802F077C 002EC5BC  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2732,7 +2732,7 @@ lbl_802F07DC:
 /* 802F07FC 002EC63C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802F0800 002EC640  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy11whispyapple10CharaParamFv
 Create__Q53scn4step5enemy11whispyapple10CharaParamFv:
 /* 802F0C94 002ECAD4  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2781,7 +2781,7 @@ lbl_802F0D18:
 /* 802F0D38 002ECB78  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802F0D3C 002ECB7C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy15zankibblecutter10CharaParamFv
 Create__Q53scn4step5enemy15zankibblecutter10CharaParamFv:
 /* 802F22D4 002EE114  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -2831,7 +2831,7 @@ lbl_802F235C:
 /* 802F237C 002EE1BC  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802F2380 002EE1C0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49BCB8, 0x4
@@ -2848,32 +2848,32 @@ $$248790:
 $$248791:
 	.incbin "baserom.dol", 0x49BCC8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49BD68, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49BE50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49BE90, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49BED0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49BF48, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49BFA0, 0x4
@@ -2890,17 +2890,17 @@ $$248748:
 lbl_80561474:
 	.incbin "baserom.dol", 0x49BFB4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248789
 $$248789:
 	.incbin "baserom.dol", 0x49BFC0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C060, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49C0B0, 0x4
@@ -2914,17 +2914,17 @@ $$248789:
 $$248790:
 	.incbin "baserom.dol", 0x49C0BC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C2F0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248789
 $$248789:
 	.incbin "baserom.dol", 0x49C320, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C348, 0x4
@@ -2932,7 +2932,7 @@ $$248778:
 $$248779:
 	.incbin "baserom.dol", 0x49C34C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C3C8, 0x4
@@ -2940,7 +2940,7 @@ $$248778:
 $$248779:
 	.incbin "baserom.dol", 0x49C3CC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49C4F8, 0x4
@@ -2951,7 +2951,7 @@ lbl_805619BC:
 $$248789:
 	.incbin "baserom.dol", 0x49C500, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C588, 0x4
@@ -2959,7 +2959,7 @@ $$248778:
 $$248779:
 	.incbin "baserom.dol", 0x49C58C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C5E8, 0x4
@@ -2967,12 +2967,12 @@ $$248778:
 $$248779:
 	.incbin "baserom.dol", 0x49C5EC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C650, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49C7F0, 0x4
@@ -2989,7 +2989,7 @@ $$248790:
 $$248791:
 	.incbin "baserom.dol", 0x49C800, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49C850, 0x4
@@ -3000,17 +3000,17 @@ lbl_80561D14:
 $$248789:
 	.incbin "baserom.dol", 0x49C858, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C8B8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49C918, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49CA90, 0x4
@@ -3021,7 +3021,7 @@ lbl_80561F54:
 $$248789:
 	.incbin "baserom.dol", 0x49CA98, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49CB10, 0x4
@@ -3038,7 +3038,7 @@ $$248790:
 $$248791:
 	.incbin "baserom.dol", 0x49CB20, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49CB80, 0x4
@@ -3049,17 +3049,17 @@ lbl_80562044:
 $$248789:
 	.incbin "baserom.dol", 0x49CB88, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49CCB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49CCD8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49CD90, 0x4
@@ -3073,27 +3073,27 @@ $$248789:
 $$248790:
 	.incbin "baserom.dol", 0x49CD9C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49CDF8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49CE10, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49CE68, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248789
 $$248789:
 	.incbin "baserom.dol", 0x49CEF0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248730
 $$248730:
 	.incbin "baserom.dol", 0x49CF28, 0x4
@@ -3107,22 +3107,22 @@ $$248789:
 $$248790:
 	.incbin "baserom.dol", 0x49CF34, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248789
 $$248789:
 	.incbin "baserom.dol", 0x49CFF0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49D068, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248778
 $$248778:
 	.incbin "baserom.dol", 0x49D078, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248787
 $$248787:
 	.incbin "baserom.dol", 0x49D090, 0x4

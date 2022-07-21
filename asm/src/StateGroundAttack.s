@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6sodory17StateGroundAttackFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6sodory17StateGroundAttackFPQ43scn4step5enemy5Enemy:
 /* 802E62B0 002E20F0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -108,7 +108,7 @@ procAnim__Q53scn4step5enemy6sodory17StateGroundAttackFv:
 procMove__Q53scn4step5enemy6sodory17StateGroundAttackFv:
 /* 802E6424 002E2264  4B FA C5 88 */	b procMove__Q53scn4step5enemy6common12StateGoodbyeFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory17StateGroundAttack
 __vt__Q53scn4step5enemy6sodory17StateGroundAttack:
 	.incbin "baserom.dol", 0x479018, 0x20

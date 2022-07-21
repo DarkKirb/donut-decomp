@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl:
 /* 800E9110 000E4F50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1784,7 +1784,7 @@ GetTypeObj__Q34nw4r3g3d6ScnObjCFv:
 /* 800EA928 000E6768  4E 80 00 20 */	blr 
 /* 800EA92C 000E676C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6ScnObj
 TYPE_NAME__Q34nw4r3g3d6ScnObj:
 	.incbin "baserom.dol", 0x404F90, 0x10
@@ -1795,7 +1795,7 @@ TYPE_NAME__Q34nw4r3g3d7ScnLeaf:
 TYPE_NAME__Q34nw4r3g3d8ScnGroup:
 	.incbin "baserom.dol", 0x404FB0, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211622
 $$211622:
 	.incbin "baserom.dol", 0x43D078, 0x28
@@ -1809,7 +1809,7 @@ __vt__Q34nw4r3g3d8ScnGroup:
 __vt__Q34nw4r3g3d6ScnObj:
 	.incbin "baserom.dol", 0x43D108, 0x38
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211583
 $$211583:
 	.incbin "baserom.dol", 0x499C00, 0x4

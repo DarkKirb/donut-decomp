@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isAir__Q24gobj9FootStateCFv
 isAir__Q24gobj9FootStateCFv:
 /* 80199EB8 00195CF8  88 03 00 00 */	lbz r0, 0(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RegisterForce__Q43scn4step5chara10MintEffectFRQ43scn4step5chara6Effect
 RegisterForce__Q43scn4step5chara10MintEffectFRQ43scn4step5chara6Effect:
 /* 8026F860 0026B6A0  90 6D F1 B8 */	stw r3, t_obj__Q43scn4step5chara24$$2unnamed$$2MintEffect_cpp$$2-_SDA_BASE_(r13)
@@ -416,7 +416,7 @@ __sinit_$$3MintEffect_cpp:
 /* 8026FD78 0026BBB8  38 6D F1 B8 */	addi r3, r13, t_obj__Q43scn4step5chara24$$2unnamed$$2MintEffect_cpp$$2-_SDA_BASE_
 /* 8026FD7C 0026BBBC  4B E6 D6 64 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40249C, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

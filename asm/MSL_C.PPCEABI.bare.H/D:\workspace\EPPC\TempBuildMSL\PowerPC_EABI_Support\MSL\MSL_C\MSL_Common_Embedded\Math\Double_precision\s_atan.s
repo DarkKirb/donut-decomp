@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global atan
 atan:
 /* 80013B94 0000F9D4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -158,7 +158,7 @@ lbl_80013DBC:
 /* 80013DBC 0000FBFC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80013DC0 0000FC00  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global atanhi
 atanhi:
 	.incbin "baserom.dol", 0x403620, 0x20
@@ -169,7 +169,7 @@ atanlo:
 aT:
 	.incbin "baserom.dol", 0x403660, 0x58
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2532
 $$2532:
 	.incbin "baserom.dol", 0x498F68, 0x8

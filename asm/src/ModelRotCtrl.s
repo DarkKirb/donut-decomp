@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara12ModelRotCtrlFRCQ24gobj6Target
 __ct__Q43scn4step5chara12ModelRotCtrlFRCQ24gobj6Target:
 /* 80271580 0026D3C0  90 83 00 00 */	stw r4, 0(r3)
@@ -258,7 +258,7 @@ lbl_802718B0:
 /* 802718C0 0026D700  EC 21 00 2A */	fadds f1, f1, f0
 /* 802718C4 0026D704  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global ROT_H_TARGET__Q43scn4step5chara12ModelRotCtrl
 ROT_H_TARGET__Q43scn4step5chara12ModelRotCtrl:
 	.incbin "baserom.dol", 0x49B820, 0x4

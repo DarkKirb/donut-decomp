@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeader
 TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeader:
 /* 80135C80 00131AC0  A0 03 00 04 */	lhz r0, 4(r3)
@@ -820,7 +820,7 @@ lbl_801367CC:
 /* 80136838 00132678  38 21 00 30 */	addi r1, r1, 0x30
 /* 8013683C 0013267C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$27898
 $$27898:
 	.incbin "baserom.dol", 0x40A2E0, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global panic__Q26mintvm14MintSystemCallFPCciPCce
 panic__Q26mintvm14MintSystemCallFPCciPCce:
 /* 801C5FA4 001C1DE4  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -116,7 +116,7 @@ lbl_801C611C:
 /* 801C612C 001C1F6C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C6130 001C1F70  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249097
 $$249097:
 	.incbin "baserom.dol", 0x457DA0, 0x28

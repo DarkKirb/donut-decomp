@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global getConnectString__20$$2unnamed$$2Switch_cpp$$2FPCcPCc
 getConnectString__20$$2unnamed$$2Switch_cpp$$2FPCcPCc:
 /* 8032757C 003233BC  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -944,7 +944,7 @@ lbl_803281E0:
 /* 80328258 00324098  38 21 00 90 */	addi r1, r1, 0x90
 /* 8032825C 0032409C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255943
 $$255943:
 	.incbin "baserom.dol", 0x47E5F0, 0x14
@@ -952,7 +952,7 @@ $$255943:
 __vt__Q53scn4step7gimmick8switch_n6Switch:
 	.incbin "baserom.dol", 0x47E604, 0x24
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255903
 $$255903:
 	.incbin "baserom.dol", 0x496D28, 0x8
@@ -972,7 +972,7 @@ $$256040:
 $$256041:
 	.incbin "baserom.dol", 0x496D50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256104
 $$256104:
 	.incbin "baserom.dol", 0x49D5E0, 0x8

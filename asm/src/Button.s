@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global update__Q23hid6ButtonFUl
 update__Q23hid6ButtonFUl:
 /* 801A2224 0019E064  80 A3 00 00 */	lwz r5, 0(r3)
@@ -27,7 +27,7 @@ isTrigger__Q23hid6ButtonCFUl:
 /* 801A2260 0019E0A0  7C 60 19 10 */	subfe r3, r0, r3
 /* 801A2264 0019E0A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6common6ButtonFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorbb
 __ct__Q34info6common6ButtonFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorbb:
 /* 801A7DB0 001A3BF0  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -419,7 +419,7 @@ lbl_801A82F0:
 /* 801A8304 001A4144  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A8308 001A4148  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail6ButtonFRQ23mem10IAllocatorQ23lyt12PaneAccessorQ43scn7history6detail10ButtonKindb
 __ct__Q43scn7history6detail6ButtonFRQ23mem10IAllocatorQ23lyt12PaneAccessorQ43scn7history6detail10ButtonKindb:
 /* 80211260 0020D0A0  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -615,17 +615,17 @@ canCursorMoveRight__Q43scn7history6detail6ButtonCFv:
 /* 802114D4 0020D314  88 63 00 03 */	lbz r3, 3(r3)
 /* 802114D8 0020D318  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251957
 $$251957:
 	.incbin "baserom.dol", 0x410C60, 0x10
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MOVE_TABLE__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2
 MOVE_TABLE__Q43scn7history6detail20$$2unnamed$$2Button_cpp$$2:
 	.incbin "baserom.dol", 0x411D48, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252299
 $$252299:
 	.incbin "baserom.dol", 0x453440, 0xC
@@ -648,7 +648,7 @@ $$252361:
 $$252370:
 	.incbin "baserom.dol", 0x45348C, 0x3C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251572
 $$251572:
 	.incbin "baserom.dol", 0x45D7A0, 0x10
@@ -722,7 +722,7 @@ $$252203:
 $$252204:
 	.incbin "baserom.dol", 0x45D960, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252301
 $$252301:
 	.incbin "baserom.dol", 0x493378, 0x8
@@ -748,12 +748,12 @@ $$251956:
 $$251965:
 	.incbin "baserom.dol", 0x4933B0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252265
 $$252265:
 	.incbin "baserom.dol", 0x494AB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252388
 $$252388:
 	.incbin "baserom.dol", 0x49A488, 0x8

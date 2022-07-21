@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global lowCallback
 lowCallback:
 /* 8003FF50 0003BD90  90 6D E6 F0 */	stw r3, lowIntType-_SDA_BASE_(r13)
@@ -193,12 +193,12 @@ lbl_800401C0:
 /* 800401D8 0003C018  4E 80 00 20 */	blr 
 /* 800401DC 0003C01C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __DVDDeviceErrorMessage
 __DVDDeviceErrorMessage:
 	.incbin "baserom.dol", 0x403988, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2835
 $$2835:
 	.incbin "baserom.dol", 0x42DFA0, 0x3C
@@ -221,12 +221,12 @@ $$2840:
 $$2841:
 	.incbin "baserom.dol", 0x42E108, 0x30
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global lowDone
 lowDone:
 	.incbin "baserom.dol", 0x4929D8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2850
 $$2850:
 	.incbin "baserom.dol", 0x4991E0, 0x8

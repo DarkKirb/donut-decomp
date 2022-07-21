@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero12InactiveHeroFRQ33scn4step9ComponentRQ23mem12HeapExpArrayUlRCQ33scn4step17ContextHeroIndivi
 __ct__Q43scn4step4hero12InactiveHeroFRQ33scn4step9ComponentRQ23mem12HeapExpArrayUlRCQ33scn4step17ContextHeroIndivi:
 /* 80340F80 0033CDC0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -642,7 +642,7 @@ __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11S
 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1Fv:
 /* 80341814 0033D654  4B EE CE 8C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8inactive9StateInit$$4PQ43scn4step4hero12InactiveHero$$1:
 	.incbin "baserom.dol", 0x480D80, 0x10
@@ -653,7 +653,7 @@ __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero8inactive11S
 __vt__Q24util50StateChanger$$0Q43scn4step4hero14IInactiveState$$4256$$1:
 	.incbin "baserom.dol", 0x480DA0, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256074
 $$256074:
 	.incbin "baserom.dol", 0x49D748, 0x4

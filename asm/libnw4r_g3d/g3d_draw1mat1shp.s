@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global LoadMaterial__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatUlPQ34nw4r3g3d16Draw1Mat1ShpSwapPQ44nw4r3g3d8G3DState8IndMtxOpb
 LoadMaterial__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatUlPQ34nw4r3g3d16Draw1Mat1ShpSwapPQ44nw4r3g3d8G3DState8IndMtxOpb:
 /* 800E0070 000DBEB0  94 21 FE D0 */	stwu r1, -0x130(r1)
@@ -952,12 +952,12 @@ lbl_800E0D54:
 /* 800E0DB8 000DCBF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800E0DBC 000DCBFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$210241
 $$210241:
 	.incbin "baserom.dol", 0x404EB8, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211256
 $$211256:
 	.incbin "baserom.dol", 0x499B38, 0x8

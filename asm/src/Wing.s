@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global T_PARAM__Q53scn4step4hero9modeldesc18$$2unnamed$$2Wing_cpp$$2Fv
 T_PARAM__Q53scn4step4hero9modeldesc18$$2unnamed$$2Wing_cpp$$2Fv:
 /* 8035CF30 00358D70  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -238,7 +238,7 @@ lbl_8035D224:
 /* 8035D260 003590A0  38 21 00 60 */	addi r1, r1, 0x60
 /* 8035D264 003590A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero4wing4WingFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero4wing4WingFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8039AFD4 00396E14  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -441,12 +441,12 @@ lbl_8039B290:
 /* 8039B29C 003970DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8039B2A0 003970E0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21
 $$2LOCAL$$2HatAnim__Q53scn4step4hero9modeldesc4WingFv$$2entries$$21:
 	.incbin "baserom.dol", 0x41BC00, 0xC8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249847
 $$249847:
 	.incbin "baserom.dol", 0x487858, 0x1C
@@ -529,7 +529,7 @@ $$249562:
 $$249563:
 	.incbin "baserom.dol", 0x487A48, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256289
 $$256289:
 	.incbin "baserom.dol", 0x48A250, 0x20
@@ -540,7 +540,7 @@ $$256290:
 __vt__Q53scn4step4hero4wing4Wing:
 	.incbin "baserom.dol", 0x48A294, 0x5C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249532
 $$249532:
 	.incbin "baserom.dol", 0x4976F0, 0x8

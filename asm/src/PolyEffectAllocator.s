@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail19PolyEffectAllocatorFv
 __ct__Q36effect6detail19PolyEffectAllocatorFv:
 /* 80182EEC 0017ED2C  94 21 FF F0 */	stwu r1, -0x10(r1)

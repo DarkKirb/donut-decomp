@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRK_NubMainLoop
 TRK_NubMainLoop:
 /* 800155A4 000113E4  94 21 FF E0 */	stwu r1, -0x20(r1)

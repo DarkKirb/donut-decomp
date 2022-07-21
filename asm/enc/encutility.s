@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ENCiCheckParameters
 ENCiCheckParameters:
 /* 8004D750 00049590  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -174,12 +174,12 @@ lbl_8004D974:
 /* 8004D988 000497C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D98C 000497CC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2669
 $$2669:
 	.incbin "baserom.dol", 0x434550, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __ENCVersion
 __ENCVersion:
 	.incbin "baserom.dol", 0x492B78, 0x8

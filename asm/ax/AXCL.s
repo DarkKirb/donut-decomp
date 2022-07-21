@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __AXGetCommandListCycles
 __AXGetCommandListCycles:
 /* 80043C10 0003FA50  80 6D E7 CC */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)

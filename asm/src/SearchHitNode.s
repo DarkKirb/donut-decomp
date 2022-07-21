@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll13SearchHitNodeFRQ25ocoll9SearchHitRCQ25ocoll8NodeDesc
 __ct__Q25ocoll13SearchHitNodeFRQ25ocoll9SearchHitRCQ25ocoll8NodeDesc:
 /* 801D93E0 001D5220  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -92,7 +92,7 @@ lbl_801D9494:
 update__Q25ocoll13SearchHitNodeFv:
 /* 801D9524 001D5364  4B FF D5 40 */	b updateShape__Q25ocoll7HitNodeFv
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251952
 $$251952:
 	.incbin "baserom.dol", 0x49A7E8, 0x8

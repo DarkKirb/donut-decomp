@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PPCMfmsr
 PPCMfmsr:
 /* 8001A0B0 00015EF0  7C 60 00 A6 */	mfmsr r3
@@ -205,7 +205,7 @@ lbl_8001A2AC:
 /* 8001A2B8 000160F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8001A2BC 000160FC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22249
 $$22249:
 	.incbin "baserom.dol", 0x41DEA0, 0x38

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ44info6common9WiiButton4Kind
 __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ44info6common9WiiButton4Kind:
 /* 801A830C 001A414C  94 21 FF 60 */	stwu r1, -0xa0(r1)
@@ -181,7 +181,7 @@ init__Q34info6common10ButtonHelpFRCQ23lyt12PaneAccessor:
 /* 801A8574 001A43B4  38 21 00 30 */	addi r1, r1, 0x30
 /* 801A8578 001A43B8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252014
 $$252014:
 	.incbin "baserom.dol", 0x4534C8, 0xC
@@ -195,7 +195,7 @@ $$252016:
 $$252073:
 	.incbin "baserom.dol", 0x4534F0, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252060
 $$252060:
 	.incbin "baserom.dol", 0x4933B8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero4DeadFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero4DeadFRQ43scn4step4hero4Hero:
 /* 803351FC 0033103C  90 83 00 00 */	stw r4, 0(r3)
@@ -357,7 +357,7 @@ __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9State
 __dt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateDead$$4PQ43scn4step4hero4Hero$$4f$$1Fv:
 /* 803356E0 00331520  4B EF 8F C0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateDead$$4PQ43scn4step4hero4Hero$$4f$$1
 __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common9StateDead$$4PQ43scn4step4hero4Hero$$4f$$1:
 	.incbin "baserom.dol", 0x47FF80, 0x10

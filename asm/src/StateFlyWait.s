@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6pierce12StateFlyWaitFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6pierce12StateFlyWaitFPQ43scn4step5enemy5Enemy:
 /* 802D0FB0 002CCDF0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -164,7 +164,7 @@ procMove__Q53scn4step5enemy6pierce12StateFlyWaitFv:
 /* 802D11EC 002CD02C  38 21 00 20 */	addi r1, r1, 0x20
 /* 802D11F0 002CD030  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6pierce12StateFlyWait
 __vt__Q53scn4step5enemy6pierce12StateFlyWait:
 	.incbin "baserom.dol", 0x476690, 0x20

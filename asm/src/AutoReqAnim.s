@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d11AutoReqAnimFRCQ23g3d13ResAnmAutoReq
 __ct__Q23g3d11AutoReqAnimFRCQ23g3d13ResAnmAutoReq:
 /* 8018B910 00187750  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -173,7 +173,7 @@ headerRef__Q23g3d11AutoReqAnimCFv:
 /* 8018BB38 00187978  4B FF FF F1 */	bl xdata__Q23g3d11AutoReqAnimCFv
 /* 8018BB3C 0018797C  90 61 00 08 */	stw r3, 8(r1)
 /* 8018BB40 00187980  38 61 00 08 */	addi r3, r1, 8
-/* 8018BB44 00187984  4B FF B6 29 */	bl isValidData__Q25xdata5XDataCFv
+/* 8018BB44 00187984  4B FF B6 29 */	bl isValidData__Q25.dataXDataCFv
 /* 8018BB48 00187988  2C 03 00 00 */	cmpwi r3, 0
 /* 8018BB4C 0018798C  41 82 00 10 */	beq lbl_8018BB5C
 /* 8018BB50 00187990  80 61 00 08 */	lwz r3, 8(r1)
@@ -248,7 +248,7 @@ reference__Q23g3d11AutoReqAnimCFUi:
 /* 8018BC20 00187A60  4B FF FF 09 */	bl xdata__Q23g3d11AutoReqAnimCFv
 /* 8018BC24 00187A64  90 61 00 08 */	stw r3, 8(r1)
 /* 8018BC28 00187A68  38 61 00 08 */	addi r3, r1, 8
-/* 8018BC2C 00187A6C  4B FF B5 41 */	bl isValidData__Q25xdata5XDataCFv
+/* 8018BC2C 00187A6C  4B FF B5 41 */	bl isValidData__Q25.dataXDataCFv
 /* 8018BC30 00187A70  2C 03 00 00 */	cmpwi r3, 0
 /* 8018BC34 00187A74  40 82 00 0C */	bne lbl_8018BC40
 /* 8018BC38 00187A78  38 60 00 00 */	li r3, 0
@@ -394,7 +394,7 @@ lbl_8018BE04:
 /* 8018BE2C 00187C6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018BE30 00187C70  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249161
 $$249161:
 	.incbin "baserom.dol", 0x49A1A0, 0x8

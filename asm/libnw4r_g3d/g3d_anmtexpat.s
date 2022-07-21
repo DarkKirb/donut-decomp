@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Release__Q34nw4r3g3d12AnmObjTexPatFv
 Release__Q34nw4r3g3d12AnmObjTexPatFv:
 /* 800D6140 000D1F80  4B FF D7 40 */	b Release__Q34nw4r3g3d9AnmObjVisFv
@@ -1152,7 +1152,7 @@ GetTypeObj__Q34nw4r3g3d12AnmObjTexPatCFv:
 /* 800D6FF8 000D2E38  4E 80 00 20 */	blr 
 /* 800D6FFC 000D2E3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d12AnmObjTexPat
 TYPE_NAME__Q34nw4r3g3d12AnmObjTexPat:
 	.incbin "baserom.dol", 0x404558, 0x18
@@ -1166,7 +1166,7 @@ TYPE_NAME__Q34nw4r3g3d20AnmObjTexPatOverride:
 TYPE_NAME__Q34nw4r3g3d15AnmObjTexPatRes:
 	.incbin "baserom.dol", 0x4045A8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d15AnmObjTexPatRes
 __vt__Q34nw4r3g3d15AnmObjTexPatRes:
 	.incbin "baserom.dol", 0x43CA30, 0x48
@@ -1180,7 +1180,7 @@ __vt__Q34nw4r3g3d16AnmObjTexPatNode:
 __vt__Q34nw4r3g3d12AnmObjTexPat:
 	.incbin "baserom.dol", 0x43CB08, 0x48
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210745
 $$210745:
 	.incbin "baserom.dol", 0x499A70, 0x4

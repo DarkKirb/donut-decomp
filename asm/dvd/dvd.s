@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global StampCommand
 StampCommand:
 /* 8003A140 00035F80  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -5637,7 +5637,7 @@ lbl_8003F048:
 /* 8003F048 0003AE88  48 01 4D A8 */	b __wpadNoAlloc
 /* 8003F04C 0003AE8C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
 	.incbin "baserom.dol", 0x42D360, 0x48
@@ -5669,7 +5669,7 @@ $$25040:
 $$25139:
 	.incbin "baserom.dol", 0x42D76C, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DVDVersion
 __DVDVersion:
 	.incbin "baserom.dol", 0x4929B8, 0x4

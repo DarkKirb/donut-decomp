@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail9WaveSoundFPQ44nw4r3snd6detail50SoundInstanceManager$$0Q44nw4r3snd6detail9WaveSound$$1ii
 __ct__Q44nw4r3snd6detail9WaveSoundFPQ44nw4r3snd6detail50SoundInstanceManager$$0Q44nw4r3snd6detail9WaveSound$$1ii:
 /* 8011E3B0 0011A1F0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -273,10 +273,10 @@ __sinit_$$3snd_WaveSound_cpp:
 /* 8011E708 0011A548  4E 80 00 20 */	blr 
 /* 8011E70C 0011A54C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023A8, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9WaveSound
 __vt__Q44nw4r3snd6detail9WaveSound:
 	.incbin "baserom.dol", 0x43E748, 0x38

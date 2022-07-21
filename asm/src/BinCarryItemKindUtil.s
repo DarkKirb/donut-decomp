@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FDNName__Q43scn4step3map20BinCarryItemKindUtilFQ43scn4step3map16BinCarryItemKind
 FDNName__Q43scn4step3map20BinCarryItemKindUtilFQ43scn4step3map16BinCarryItemKind:
 /* 803C8E48 003C4C88  54 60 10 3A */	slwi r0, r3, 2
@@ -9,7 +9,7 @@ FDNName__Q43scn4step3map20BinCarryItemKindUtilFQ43scn4step3map16BinCarryItemKind
 /* 803C8E54 003C4C94  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803C8E58 003C4C98  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248723
 $$248723:
 	.incbin "baserom.dol", 0x48E770, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_context__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2FQ24font8FontKind
 t_context__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2FQ24font8FontKind:
 /* 8018933C 0018517C  54 64 18 38 */	slwi r4, r3, 3
@@ -59,12 +59,12 @@ Name__Q24font12FontKindUtilFQ24font8FontKind:
 /* 801893F4 00185234  38 21 00 10 */	addi r1, r1, 0x10
 /* 801893F8 00185238  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2
 T_FONT_CONTEXT_TABLE__Q24font26$$2unnamed$$2FontKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x410628, 0x48
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248724
 $$248724:
 	.incbin "baserom.dol", 0x44F8F0, 0x10
@@ -96,7 +96,7 @@ $$248732:
 $$248861:
 	.incbin "baserom.dol", 0x44F994, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248723
 $$248723:
 	.incbin "baserom.dol", 0x493108, 0x8

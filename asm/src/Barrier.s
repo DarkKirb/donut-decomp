@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetValid__Q53scn4step4hero7parasol7BarrierFRQ43scn4step4hero4Herob
 SetValid__Q53scn4step4hero7parasol7BarrierFRQ43scn4step4hero4Herob:
 /* 8039211C 0038DF5C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -228,7 +228,7 @@ lbl_8039240C:
 /* 80392464 0038E2A4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80392468 0038E2A8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259019
 $$259019:
 	.incbin "baserom.dol", 0x49E150, 0x8

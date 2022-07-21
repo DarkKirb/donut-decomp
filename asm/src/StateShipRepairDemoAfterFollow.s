@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFPQ43scn4step4hero4Hero:
 /* 803694F0 00365330  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -404,7 +404,7 @@ lbl_80369A9C:
 procFixPos__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv:
 /* 80369AB0 003658F0  4B FF F9 F8 */	b procFixPos__Q53scn4step4hero6common24StateShipRepairDemoAfterFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_DEPTH_LIST24__44$$2unnamed$$2StateShipRepairDemoAfterFollow_cpp$$2
 T_DEPTH_LIST24__44$$2unnamed$$2StateShipRepairDemoAfterFollow_cpp$$2:
 	.incbin "baserom.dol", 0x41BCC8, 0x10
@@ -412,12 +412,12 @@ T_DEPTH_LIST24__44$$2unnamed$$2StateShipRepairDemoAfterFollow_cpp$$2:
 T_DEPTH_LIST3__44$$2unnamed$$2StateShipRepairDemoAfterFollow_cpp$$2:
 	.incbin "baserom.dol", 0x41BCD8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow
 __vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow:
 	.incbin "baserom.dol", 0x488100, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259551
 $$259551:
 	.incbin "baserom.dol", 0x49DC00, 0x4

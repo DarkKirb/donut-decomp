@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global toSeLabel__Q53scn4step7gimmick13movegroupctrl9OrderUtilFUc
 toSeLabel__Q53scn4step7gimmick13movegroupctrl9OrderUtilFUc:
 /* 80319210 00315050  54 60 06 3E */	clrlwi r0, r3, 0x18
@@ -39,7 +39,7 @@ toMoveRate__Q53scn4step7gimmick13movegroupctrl9OrderUtilFUc:
 /* 80319270 003150B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80319274 003150B4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global t_SEList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2
 t_SEList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2:
 	.incbin "baserom.dol", 0x47DB80, 0x28
@@ -47,7 +47,7 @@ t_SEList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2:
 t_QuakeList__Q53scn4step7gimmick13movegroupctrl23$$2unnamed$$2OrderUtil_cpp$$2:
 	.incbin "baserom.dol", 0x47DBA8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248798
 $$248798:
 	.incbin "baserom.dol", 0x49D4E0, 0x8

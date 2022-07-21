@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause10FramePanelFRQ25pause9Component
 __ct__Q25pause10FramePanelFRQ25pause9Component:
 /* 801DB5D0 001D7410  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -525,7 +525,7 @@ lbl_801DBD2C:
 /* 801DBD38 001D7B78  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DBD3C 001D7B7C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251725
 $$251725:
 	.incbin "baserom.dol", 0x4595A8, 0xC
@@ -554,7 +554,7 @@ $$252853:
 $$252854:
 	.incbin "baserom.dol", 0x459618, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251724
 $$251724:
 	.incbin "baserom.dol", 0x493A80, 0x8
@@ -598,7 +598,7 @@ $$252850:
 $$252851:
 	.incbin "baserom.dol", 0x493AE8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2
 T_MOVE_NODE__Q25pause24$$2unnamed$$2FramePanel_cpp$$2:
 	.incbin "baserom.dol", 0x49A7F8, 0x4

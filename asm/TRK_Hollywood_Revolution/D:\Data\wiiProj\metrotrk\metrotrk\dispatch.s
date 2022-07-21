@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRK_DispatchMessage
 TRK_DispatchMessage:
 /* 800158F4 00011734  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -77,7 +77,7 @@ lbl_800159F8:
 /* 80015A0C 0001184C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80015A10 00011850  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2109
 $$2109:
 	.incbin "baserom.dol", 0x41DBB8, 0x70

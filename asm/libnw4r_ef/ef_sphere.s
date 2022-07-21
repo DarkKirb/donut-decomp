@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Emission__Q34nw4r2ef17EmitterFormSphereFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34
 Emission__Q34nw4r2ef17EmitterFormSphereFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleManageriUlPfUsfPCQ34nw4r4math5MTX34:
 /* 800B5780 000B15C0  94 21 FD E0 */	stwu r1, -0x220(r1)
@@ -567,12 +567,12 @@ lbl_800B5F2C:
 /* 800B5FD8 000B1E18  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800B5FDC 000B1E1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef17EmitterFormSphere
 __vt__Q34nw4r2ef17EmitterFormSphere:
 	.incbin "baserom.dol", 0x43C4A8, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27843
 $$27843:
 	.incbin "baserom.dol", 0x499710, 0x4

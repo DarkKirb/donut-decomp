@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q25pause11ContextInitFQ27storage9StoryModeQ25pause8ModeKind
 Create__Q25pause11ContextInitFQ27storage9StoryModeQ25pause8ModeKind:
 /* 801DB2AC 001D70EC  94 21 FF E0 */	stwu r1, -0x20(r1)

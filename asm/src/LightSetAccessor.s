@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isValid__Q23g3d16LightSetAccessorCFv
 isValid__Q23g3d16LightSetAccessorCFv:
 /* 8018E64C 0018A48C  38 80 00 00 */	li r4, 0

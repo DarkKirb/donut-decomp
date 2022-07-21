@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue11App__RandomFRQ26mintvm6VMCore
 AddOn__Q28mintglue11App__RandomFRQ26mintvm6VMCore:
 /* 801C15C8 001BD408  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -194,7 +194,7 @@ lbl_801C1850:
 /* 801C1860 001BD6A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C1864 001BD6A4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252401
 $$252401:
 	.incbin "baserom.dol", 0x4561E8, 0xC

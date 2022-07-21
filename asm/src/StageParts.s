@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history10StagePartsFRQ33scn7history9ComponentRQ23g3d4Rooti
 __ct__Q33scn7history10StagePartsFRQ33scn7history9ComponentRQ23g3d4Rooti:
 /* 80210A74 0020C8B4  94 21 FE B0 */	stwu r1, -0x150(r1)
@@ -550,7 +550,7 @@ decideEffect__Q33scn7history10StagePartsFv:
 /* 80211244 0020D084  38 21 00 40 */	addi r1, r1, 0x40
 /* 80211248 0020D088  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253814
 $$253814:
 	.incbin "baserom.dol", 0x45D6B8, 0x10
@@ -576,7 +576,7 @@ $$253966:
 $$253969:
 	.incbin "baserom.dol", 0x45D760, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253815
 $$253815:
 	.incbin "baserom.dol", 0x494A88, 0x8
@@ -596,7 +596,7 @@ $$253948:
 $$253959:
 	.incbin "baserom.dol", 0x494AB0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global WIDTH__Q33scn7history10StageParts
 WIDTH__Q33scn7history10StageParts:
 	.incbin "baserom.dol", 0x49AC98, 0x8

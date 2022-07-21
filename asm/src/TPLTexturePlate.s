@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23gfx15TPLTexturePlateFPv
 __ct__Q23gfx15TPLTexturePlateFPv:
 /* 80197024 00192E64  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -320,7 +320,7 @@ setPos__Q23gfx15TPLTexturePlateFRCQ33hel4math7Vector2:
 /* 801974B8 001932F8  C0 62 97 B8 */	lfs f3, $$250129-_SDA2_BASE_(r2)
 /* 801974BC 001932FC  4B E9 96 A4 */	b PSMTXTrans
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250129
 $$250129:
 	.incbin "baserom.dol", 0x49A278, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSCalcCRC32
 OSCalcCRC32:
 /* 800281E0 00024020  2C 04 00 00 */	cmpwi r4, 0
@@ -88,7 +88,7 @@ lbl_8002830C:
 /* 80028318 00024158  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8002831C 0002415C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2OSCalcCRC32__FPCvUl$$2crc32_table
 $$2LOCAL$$2OSCalcCRC32__FPCvUl$$2crc32_table:
 	.incbin "baserom.dol", 0x403900, 0x40

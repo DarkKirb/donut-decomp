@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7parasol18StateParasolShieldFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7parasol18StateParasolShieldFPQ43scn4step4hero4Hero:
 /* 80394710 00390550  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -125,7 +125,7 @@ procMove__Q53scn4step4hero7parasol18StateParasolShieldFv:
 procFixPos__Q53scn4step4hero7parasol18StateParasolShieldFv:
 /* 803948B4 003906F4  4B FC BF CC */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol18StateParasolShield
 __vt__Q53scn4step4hero7parasol18StateParasolShield:
 	.incbin "baserom.dol", 0x489E40, 0x28

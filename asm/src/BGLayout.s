@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle8BGLayoutFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle8BGLayoutFRQ33scn10grandtitle9Component:
 /* 80200874 001FC6B4  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -130,12 +130,12 @@ lbl_80200A20:
 /* 80200A2C 001FC86C  38 21 00 30 */	addi r1, r1, 0x30
 /* 80200A30 001FC870  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251541
 $$251541:
 	.incbin "baserom.dol", 0x45C568, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251954
 $$251954:
 	.incbin "baserom.dol", 0x4946F8, 0x4
@@ -146,7 +146,7 @@ $$251993:
 $$251999:
 	.incbin "baserom.dol", 0x494704, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle22$$2unnamed$$2BGLayout_cpp$$2:
 	.incbin "baserom.dol", 0x49AA68, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global gki_init_free_queue
 gki_init_free_queue:
 /* 80074790 000705D0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1489,7 +1489,7 @@ lbl_80075C10:
 /* 80075C28 00071A68  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80075C2C 00071A6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2749
 $$2749:
 	.incbin "baserom.dol", 0x436968, 0x18

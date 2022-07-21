@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PSMTXIdentity
 PSMTXIdentity:
 /* 800304E0 0002C320  C0 02 85 B4 */	lfs f0, $$21636-_SDA2_BASE_(r2)
@@ -835,12 +835,12 @@ C_MTXLightOrtho:
 /* 800310E8 0002CF28  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800310EC 0002CF2C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global Unit01
 Unit01:
 	.incbin "baserom.dol", 0x492940, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21635
 $$21635:
 	.incbin "baserom.dol", 0x499070, 0x4

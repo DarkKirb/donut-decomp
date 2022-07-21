@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setForbidDeadForMBoss__Q43scn4step5enemy12StateCheckerFb
 setForbidDeadForMBoss__Q43scn4step5enemy12StateCheckerFb:
 /* 8028DEE4 00289D24  7C 85 23 78 */	mr r5, r4
@@ -51,7 +51,7 @@ lbl_8028DF44:
 /* 8028DF4C 00289D8C  90 03 00 00 */	stw r0, 0(r3)
 /* 8028DF50 00289D90  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero12StateCheckerFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero12StateCheckerFRQ43scn4step4hero4Hero:
 /* 803558A0 003516E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -165,7 +165,7 @@ setForbidWarpStar__Q43scn4step4hero12StateCheckerFv:
 /* 80355A20 00351860  90 03 00 48 */	stw r0, 0x48(r3)
 /* 80355A24 00351864  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251026
 $$251026:
 	.incbin "baserom.dol", 0x49D9D8, 0x8

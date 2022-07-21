@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSGetTime
 OSGetTime:
 /* 80025B40 00021980  7C 6D 42 E6 */	mftbu r3
@@ -295,7 +295,7 @@ lbl_80025EC8:
 /* 80025F68 00021DA8  4E 80 00 20 */	blr 
 /* 80025F6C 00021DAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global YearDays
 YearDays:
 	.incbin "baserom.dol", 0x41FAA0, 0x30

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ParasolPath__Q53scn4step4hero9modeldesc7ParasolFv
 ParasolPath__Q53scn4step4hero9modeldesc7ParasolFv:
 /* 8035C8AC 003586EC  3C 60 80 49 */	lis r3, $$248808@ha
@@ -57,7 +57,7 @@ ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv:
 /* 8035C95C 0035879C  90 03 00 08 */	stw r0, 8(r3)
 /* 8035C960 003587A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7parasol7ParasolFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7parasol7ParasolFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 80392558 0038E398  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -322,12 +322,12 @@ lbl_803928E0:
 /* 803928F4 0038E734  38 21 00 10 */	addi r1, r1, 0x10
 /* 803928F8 0038E738  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21
 $$2LOCAL$$2ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv$$2entries$$21:
 	.incbin "baserom.dol", 0x41BA40, 0x80
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248808
 $$248808:
 	.incbin "baserom.dol", 0x487468, 0x28
@@ -359,7 +359,7 @@ $$248753:
 $$248754:
 	.incbin "baserom.dol", 0x487500, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257636
 $$257636:
 	.incbin "baserom.dol", 0x489C58, 0x20
@@ -370,7 +370,7 @@ $$257637:
 __vt__Q53scn4step4hero7parasol7Parasol:
 	.incbin "baserom.dol", 0x489CA0, 0x60
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248732
 $$248732:
 	.incbin "baserom.dol", 0x497608, 0x8

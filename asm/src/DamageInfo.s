@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara10DamageInfoFv
 __ct__Q43scn4step5chara10DamageInfoFv:
 /* 8026DB60 002699A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -220,7 +220,7 @@ __ct__Q53scn4step5chara10DamageInfo4DataFv:
 /* 8026DE9C 00269CDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8026DEA0 00269CE0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249900
 $$249900:
 	.incbin "baserom.dol", 0x49B798, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero12interference9StateKissFPQ43scn4step4hero4HeroQ33hel4math7Vector3Q33hel4math7Vector3Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Q43scn4step4hero11KissContext
 __ct__Q53scn4step4hero12interference9StateKissFPQ43scn4step4hero4HeroQ33hel4math7Vector3Q33hel4math7Vector3Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1Q43scn4step4hero11KissContext:
 /* 80371FF8 0036DE38  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -677,7 +677,7 @@ lbl_803729B4:
 __dt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference16StateKissReceive$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q43scn4step4hero11KissContext$$1Fv:
 /* 803729C8 0036E808  4B EB BC D8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference16StateKissReceive$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q43scn4step4hero11KissContext$$1
 __vt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interference16StateKissReceive$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q43scn4step4hero11KissContext$$1:
 	.incbin "baserom.dol", 0x4885D0, 0x10
@@ -685,7 +685,7 @@ __vt__Q24util174StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero12interferen
 __vt__Q53scn4step4hero12interference9StateKiss:
 	.incbin "baserom.dol", 0x4885E0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259088
 $$259088:
 	.incbin "baserom.dol", 0x49DD40, 0x4

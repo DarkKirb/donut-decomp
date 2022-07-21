@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q27storage14StorageManagerFv
 __ct__Q27storage14StorageManagerFv:
 /* 80404914 00400754  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -485,7 +485,7 @@ selectedBackupFileData2__Q27storage14StorageManagerFv:
 /* 80404F7C 00400DBC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80404F80 00400DC0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250677
 $$250677:
 	.incbin "baserom.dol", 0x49EEA8, 0x8

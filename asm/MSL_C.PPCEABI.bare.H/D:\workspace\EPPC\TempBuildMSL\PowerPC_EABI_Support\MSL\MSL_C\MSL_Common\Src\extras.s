@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global stricmp
 stricmp:
 /* 800147EC 0001062C  3C A0 80 42 */	lis r5, _current_locale@ha

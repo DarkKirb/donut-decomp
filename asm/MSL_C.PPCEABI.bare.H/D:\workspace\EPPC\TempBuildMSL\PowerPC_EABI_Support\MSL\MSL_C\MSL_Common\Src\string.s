@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global strcpy
 strcpy:
 /* 8000D9C0 00009800  54 60 07 BE */	clrlwi r0, r3, 0x1e

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3lyt5GroupFPCQ44nw4r3lyt3res5GroupPQ34nw4r3lyt4Pane
 __ct__Q34nw4r3lyt5GroupFPCQ44nw4r3lyt3res5GroupPQ34nw4r3lyt4Pane:
 /* 800F3AF0 000EF930  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -249,7 +249,7 @@ lbl_800F3E2C:
 /* 800F3E48 000EFC88  4E 80 00 20 */	blr 
 /* 800F3E4C 000EFC8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt5Group
 __vt__Q34nw4r3lyt5Group:
 	.incbin "baserom.dol", 0x43D358, 0x10

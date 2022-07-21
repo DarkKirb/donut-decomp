@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global btm_sco_init
 btm_sco_init:
 /* 80084430 00080270  3C 60 80 41 */	lis r3, lbl_80410004@ha
@@ -1041,12 +1041,12 @@ lbl_8008524C:
 /* 80085260 000810A0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80085264 000810A4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global btm_esco_defaults
 btm_esco_defaults:
 	.incbin "baserom.dol", 0x404208, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21903
 $$21903:
 	.incbin "baserom.dol", 0x438080, 0x24

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global VX2InverseQuantizationSet__FR14VX2DecoderDatai
 VX2InverseQuantizationSet__FR14VX2DecoderDatai:
 /* 80170C80 0016CAC0  3C A0 2A AB */	lis r5, 0x2AAAAAAB@ha
@@ -142,7 +142,7 @@ lbl_80170DB8:
 /* 80170E98 0016CCD8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80170E9C 0016CCDC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VX2InverseQuantizer4x4
 VX2InverseQuantizer4x4:
 	.incbin "baserom.dol", 0x40F930, 0x180

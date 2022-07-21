@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24file12FileAccessorFPCcb
 __ct__Q24file12FileAccessorFPCcb:
 /* 80187A50 00183890  94 21 FF F0 */	stwu r1, -0x10(r1)

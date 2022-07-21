@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss10creditroah12StateFlyAwayFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss10creditroah12StateFlyAwayFPQ43scn4step4boss4Boss:
 /* 8024BA70 002478B0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -348,7 +348,7 @@ create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroa
 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 8024BF58 00247D98  4B FE 27 48 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah12StateFlyAway$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x4632B8, 0x10
@@ -356,7 +356,7 @@ __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditroah1
 __vt__Q53scn4step4boss10creditroah12StateFlyAway:
 	.incbin "baserom.dol", 0x4632C8, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255018
 $$255018:
 	.incbin "baserom.dol", 0x495550, 0x4
@@ -370,7 +370,7 @@ $$255020:
 $$255071:
 	.incbin "baserom.dol", 0x49555C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255489
 $$255489:
 	.incbin "baserom.dol", 0x49B250, 0x4

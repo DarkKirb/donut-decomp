@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global rfc_port_sm_execute
 rfc_port_sm_execute:
 /* 800992A0 000950E0  2C 03 00 00 */	cmpwi r3, 0
@@ -1244,7 +1244,7 @@ lbl_8009A424:
 /* 8009A434 00096274  98 03 00 08 */	stb r0, 8(r3)
 /* 8009A438 00096278  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21372
 $$21372:
 	.incbin "baserom.dol", 0x43B5C0, 0x14

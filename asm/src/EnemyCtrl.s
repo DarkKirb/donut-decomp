@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6dubior9EnemyCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6dubior9EnemyCtrlFRQ43scn4step4boss4Boss:
 /* 8024D41C 0024925C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -236,7 +236,7 @@ lbl_8024D744:
 /* 8024D754 00249594  38 21 00 20 */	addi r1, r1, 0x20
 /* 8024D758 00249598  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy9EnemyCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6whispy9EnemyCtrlFRQ43scn4step4boss4Boss:
 /* 8025C25C 0025809C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -453,7 +453,7 @@ lbl_8025C50C:
 /* 8025C564 002583A4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8025C568 002583A8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss9zankibble9EnemyCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss9zankibble9EnemyCtrlFRQ43scn4step4boss4Boss:
 /* 80260810 0025C650  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -859,12 +859,12 @@ lbl_80260D4C:
 /* 80260D60 0025CBA0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80260D64 0025CBA4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_OBVERSE_TABLE__Q53scn4step4boss6whispy23$$2unnamed$$2EnemyCtrl_cpp$$2
 T_OBVERSE_TABLE__Q53scn4step4boss6whispy23$$2unnamed$$2EnemyCtrl_cpp$$2:
 	.incbin "baserom.dol", 0x413650, 0x58
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util133StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter13StateStraight$$4PQ43scn4step5enemy5Enemy$$4Q43scn4step4boss8Accessor$$1
 __vt__Q24util133StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter13StateStraight$$4PQ43scn4step5enemy5Enemy$$4Q43scn4step4boss8Accessor$$1:
 	.incbin "baserom.dol", 0x466C80, 0x10
@@ -878,7 +878,7 @@ __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibble
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy15zankibblecutter10StateSlant$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x466CB0, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252522
 $$252522:
 	.incbin "baserom.dol", 0x49B500, 0x4

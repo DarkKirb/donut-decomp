@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef7EmitterFv
 __ct__Q34nw4r2ef7EmitterFv:
 /* 800A4D50 000A0B90  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2348,12 +2348,12 @@ lbl_800A6ED8:
 /* 800A6EE8 000A2D28  38 21 00 20 */	addi r1, r1, 0x20
 /* 800A6EEC 000A2D2C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef7Emitter
 __vt__Q34nw4r2ef7Emitter:
 	.incbin "baserom.dol", 0x43C1E0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29108
 $$29108:
 	.incbin "baserom.dol", 0x4994C0, 0x4

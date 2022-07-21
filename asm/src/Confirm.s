@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6common7ConfirmFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorPCwPCwPCwPCwbbPCcPCc
 __ct__Q34info6common7ConfirmFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorPCwPCwPCwPCwbbPCcPCc:
 /* 801A9348 001A5188  94 21 FE 60 */	stwu r1, -0x1a0(r1)
@@ -785,7 +785,7 @@ lbl_801A9DB8:
 /* 801A9DB8 001A5BF8  38 63 03 A0 */	addi r3, r3, 0x3a0
 /* 801A9DBC 001A5BFC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252873
 $$252873:
 	.incbin "baserom.dol", 0x453618, 0xC
@@ -820,7 +820,7 @@ $$252885:
 $$252886:
 	.incbin "baserom.dol", 0x453690, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252874
 $$252874:
 	.incbin "baserom.dol", 0x493440, 0x8
@@ -846,7 +846,7 @@ $$253036:
 $$253048:
 	.incbin "baserom.dol", 0x493470, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253005
 $$253005:
 	.incbin "baserom.dol", 0x49A490, 0x8

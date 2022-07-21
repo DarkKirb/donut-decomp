@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HID_HostGetSDPRecord
 HID_HostGetSDPRecord:
 /* 8008D420 00089260  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -980,7 +980,7 @@ lbl_8008E184:
 /* 8008E198 00089FD8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8008E19C 00089FDC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21051
 $$21051:
 	.incbin "baserom.dol", 0x439230, 0x18

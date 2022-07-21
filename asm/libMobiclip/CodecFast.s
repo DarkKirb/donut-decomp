@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DecodeStream__FPCScPsPsPsPA21_s
 DecodeStream__FPCScPsPsPsPA21_s:
 /* 8014E090 00149ED0  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -529,7 +529,7 @@ lbl_8014E830:
 /* 8014E858 0014A698  4E 80 00 20 */	blr 
 /* 8014E85C 0014A69C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global Apcm
 Apcm:
 	.incbin "baserom.dol", 0x443728, 0x400

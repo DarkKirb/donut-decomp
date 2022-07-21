@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global requestFromEnemy__Q43scn4step4item15GenerateFromObjFRCQ33hel4math7Vector2
 requestFromEnemy__Q43scn4step4item15GenerateFromObjFRCQ33hel4math7Vector2:
 /* 803C0FDC 003BCE1C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -306,7 +306,7 @@ lbl_803C13EC:
 /* 803C13FC 003BD23C  38 21 00 60 */	addi r1, r1, 0x60
 /* 803C1400 003BD240  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDS_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.incbin "baserom.dol", 0x41C308, 0x44
@@ -317,7 +317,7 @@ T_ODDS_ENEMY_2__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 T_ODDS_ENEMY_3__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.incbin "baserom.dol", 0x41C380, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2
 T_ODDSTABLE_ENEMY_1__Q43scn4step4item29$$2unnamed$$2GenerateFromObj_cpp$$2:
 	.incbin "baserom.dol", 0x49E4F8, 0x8

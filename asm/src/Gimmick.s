@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
 __ct__Q25ocoll7GimmickFRQ25ocoll7Manager:
 /* 801D5C28 001D1A68  90 83 00 00 */	stw r4, 0(r3)
@@ -264,7 +264,7 @@ mfIsBreakGold__Q25ocoll7GimmickCFRCQ25ocoll10AttackData:
 /* 801D5FB0 001D1DF0  7C 60 19 10 */	subfe r3, r0, r3
 /* 801D5FB4 001D1DF4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BLOCK_CENTER_OFFS__21$$2unnamed$$2Gimmick_cpp$$2
 T_BLOCK_CENTER_OFFS__21$$2unnamed$$2Gimmick_cpp$$2:
 	.incbin "baserom.dol", 0x410F88, 0x1E0

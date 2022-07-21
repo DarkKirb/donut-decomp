@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle5FlashFRQ23g3d10CharaModel
 __ct__Q33scn14challengetitle5FlashFRQ23g3d10CharaModel:
 /* 801ED4A0 001E92E0  94 21 F8 80 */	stwu r1, -0x780(r1)
@@ -315,7 +315,7 @@ flashReset__Q33scn14challengetitle5FlashFv:
 /* 801ED8F8 001E9738  38 21 00 20 */	addi r1, r1, 0x20
 /* 801ED8FC 001E973C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle5FlashFRQ23g3d10CharaModelb
 __ct__Q33scn10grandtitle5FlashFRQ23g3d10CharaModelb:
 /* 802049AC 002007EC  94 21 F8 80 */	stwu r1, -0x780(r1)
@@ -785,7 +785,7 @@ flashReset__Q33scn10grandtitle5FlashFv:
 /* 80205018 00200E58  38 21 00 20 */	addi r1, r1, 0x20
 /* 8020501C 00200E5C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss5FlashFRQ43scn4step4boss4BossRQ23mem10IAllocator
 __ct__Q43scn4step4boss5FlashFRQ43scn4step4boss4BossRQ23mem10IAllocator:
 /* 8022F80C 0022B64C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1039,7 +1039,7 @@ custom__Q43scn4step4boss5FlashFv:
 /* 8022FB70 0022B9B0  38 63 00 68 */	addi r3, r3, 0x68
 /* 8022FB74 0022B9B4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy5FlashFRQ43scn4step5enemy5EnemyRQ23mem10IAllocatorb
 __ct__Q43scn4step5enemy5FlashFRQ43scn4step5enemy5EnemyRQ23mem10IAllocatorb:
 /* 80288214 00284054  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1333,7 +1333,7 @@ setEnfAlways__Q43scn4step5enemy5FlashFRC8_GXColorQ23g3d16ColorAnimFlashOp:
 /* 80288624 00284464  38 21 00 10 */	addi r1, r1, 0x10
 /* 80288628 00284468  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero5FlashFRQ43scn4step4hero4HeroRQ23mem10IAllocator
 __ct__Q43scn4step4hero5FlashFRQ43scn4step4hero4HeroRQ23mem10IAllocator:
 /* 803365A0 003323E0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1824,7 +1824,7 @@ lbl_80336C4C:
 /* 80336C68 00332AA8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80336C6C 00332AAC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon5FlashFRQ43scn4step6weapon6WeaponRQ23mem10IAllocatorb
 __ct__Q43scn4step6weapon5FlashFRQ43scn4step6weapon6WeaponRQ23mem10IAllocatorb:
 /* 803D63F4 003D2234  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1887,12 +1887,12 @@ updateUseGPU__Q43scn4step6weapon5FlashFv:
 /* 803D64C4 003D2304  4B DC 39 5C */	b updateUseGPU__Q24gobj9ColorAnimFv
 /* 803D64C8 003D2308  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global COLOR_TABLE__Q33scn14challengetitle19$$2unnamed$$2Flash_cpp$$2
 COLOR_TABLE__Q33scn14challengetitle19$$2unnamed$$2Flash_cpp$$2:
 	.incbin "baserom.dol", 0x411788, 0x240
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252135
 $$252135:
 	.incbin "baserom.dol", 0x49A920, 0x4
@@ -1909,7 +1909,7 @@ $$253769:
 $$252808:
 	.incbin "baserom.dol", 0x49A938, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252172
 $$252172:
 	.incbin "baserom.dol", 0x49AAE8, 0x4
@@ -1935,12 +1935,12 @@ $$253903:
 $$252931:
 	.incbin "baserom.dol", 0x49AB08, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255122
 $$255122:
 	.incbin "baserom.dol", 0x49AE68, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255211
 $$255211:
 	.incbin "baserom.dol", 0x49B9A8, 0x4
@@ -1978,7 +1978,7 @@ $$255697:
 $$255700:
 	.incbin "baserom.dol", 0x49B9D8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255587
 $$255587:
 	.incbin "baserom.dol", 0x49D6E8, 0x4

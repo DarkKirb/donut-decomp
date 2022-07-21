@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6vacuum12ReceiverBaseFv
 __ct__Q43scn4step6vacuum12ReceiverBaseFv:
 /* 803D30BC 003CEEFC  3C 80 80 49 */	lis r4, __vt__Q43scn4step6vacuum12ReceiverBase@ha
@@ -256,7 +256,7 @@ handle__Q34util42ObjRefHandle$$0Q43scn4step6vacuum9IReceiver$$15OwnerFv:
 /* 803D3424 003CF264  38 21 00 20 */	addi r1, r1, 0x20
 /* 803D3428 003CF268  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6vacuum12ReceiverBase
 __vt__Q43scn4step6vacuum12ReceiverBase:
 	.incbin "baserom.dol", 0x48EF40, 0x48

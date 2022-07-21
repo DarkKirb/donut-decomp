@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ScreenReport
 ScreenReport:
 /* 8001F860 0001B6A0  94 21 FE 80 */	stwu r1, -0x180(r1)
@@ -842,12 +842,12 @@ lbl_80020440:
 /* 80020488 0001C2C8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8002048C 0001C2CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22599
 $$22599:
 	.incbin "baserom.dol", 0x4928C0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22586
 $$22586:
 	.incbin "baserom.dol", 0x499010, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global floor
 floor:
 /* 80014004 0000FE44  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -102,7 +102,7 @@ lbl_8001414C:
 /* 8001414C 0000FF8C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80014150 0000FF90  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2515
 $$2515:
 	.incbin "baserom.dol", 0x498FA8, 0x8

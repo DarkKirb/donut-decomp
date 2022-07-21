@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss10InvincibleFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss10InvincibleFRQ43scn4step4boss4Boss:
 /* 80230BE4 0022CA24  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -108,7 +108,7 @@ lbl_80230D28:
 /* 80230D34 0022CB74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80230D38 0022CB78  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara10InvincibleFv
 __ct__Q43scn4step5chara10InvincibleFv:
 /* 8026EE48 0026AC88  38 00 00 00 */	li r0, 0
@@ -233,7 +233,7 @@ updateFrame__Q43scn4step5chara10InvincibleFv:
 /* 8026EFA0 0026ADE0  90 03 00 00 */	stw r0, 0(r3)
 /* 8026EFA4 0026ADE4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero10InvincibleFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero10InvincibleFRQ43scn4step4hero4Hero:
 /* 80342180 0033DFC0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -844,22 +844,22 @@ lbl_803429C0:
 /* 803429C8 0033E808  38 21 00 10 */	addi r1, r1, 0x10
 /* 803429CC 0033E80C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_ANIM_TABLE__Q43scn4step5chara24$$2unnamed$$2Invincible_cpp$$2
 T_ALPHA_ANIM_TABLE__Q43scn4step5chara24$$2unnamed$$2Invincible_cpp$$2:
 	.incbin "baserom.dol", 0x413A60, 0x28
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MIGHTY_COLOR_TABLE__24$$2unnamed$$2Invincible_cpp$$2
 MIGHTY_COLOR_TABLE__24$$2unnamed$$2Invincible_cpp$$2:
 	.incbin "baserom.dol", 0x415EA0, 0x240
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250018
 $$250018:
 	.incbin "baserom.dol", 0x49AE88, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253735
 $$253735:
 	.incbin "baserom.dol", 0x49D768, 0x8

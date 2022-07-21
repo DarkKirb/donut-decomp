@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10parasoldee13BrainNoseDiveFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10parasoldee13BrainNoseDiveFRQ43scn4step5enemy5Enemy:
 /* 802CB6E0 002C7520  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -125,7 +125,7 @@ __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasolde
 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802CB858 002C7698  4B F6 2E 48 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10parasoldoo13BrainNoseDiveFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10parasoldoo13BrainNoseDiveFRQ43scn4step5enemy5Enemy:
 /* 802CD80C 002C964C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -250,7 +250,7 @@ __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldo
 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo9StateFall$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802CD984 002C97C4  4B F6 0D 1C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldee9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x476098, 0x10
@@ -261,7 +261,7 @@ __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasolde
 __vt__Q53scn4step5enemy10parasoldee13BrainNoseDive:
 	.incbin "baserom.dol", 0x4760B8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo9StateFall$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10parasoldoo9StateFall$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x476248, 0x10

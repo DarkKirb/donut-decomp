@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SCInit
 SCInit:
 /* 8004B430 00047270  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1769,7 +1769,7 @@ lbl_8004CCC0:
 /* 8004CCD8 00048B18  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004CCDC 00048B1C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ConfDirName
 ConfDirName:
 	.incbin "baserom.dol", 0x403D50, 0x10
@@ -1780,7 +1780,7 @@ ConfFileName:
 ProductInfoFileName:
 	.incbin "baserom.dol", 0x403D78, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
 	.incbin "baserom.dol", 0x4342F8, 0x48
@@ -1812,7 +1812,7 @@ NameAndIDTbl:
 $$22788:
 	.incbin "baserom.dol", 0x4344C8, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __SCVersion
 __SCVersion:
 	.incbin "baserom.dol", 0x492A58, 0x4

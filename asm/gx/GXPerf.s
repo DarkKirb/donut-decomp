@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetGPMetric
 GXSetGPMetric:
 /* 800390C0 00034F00  80 A2 86 08 */	lwz r5, __GXData-_SDA2_BASE_(r2)
@@ -541,7 +541,7 @@ GXClearGPMetric:
 /* 800398E8 00035728  B0 03 00 04 */	sth r0, 4(r3)
 /* 800398EC 0003572C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23023
 $$23023:
 	.incbin "baserom.dol", 0x42D110, 0x58

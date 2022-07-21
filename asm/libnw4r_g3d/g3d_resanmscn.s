@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HasResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFv
 HasResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D29E0 000CE820  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -796,7 +796,7 @@ lbl_800D33D8:
 /* 800D33F8 000CF238  4E 80 00 20 */	blr 
 /* 800D33FC 000CF23C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global ResNameData_LightSet__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2
 ResNameData_LightSet__Q34nw4r3g3d27$$2unnamed$$2g3d_resanmscn_cpp$$2:
 	.incbin "baserom.dol", 0x43C760, 0x20

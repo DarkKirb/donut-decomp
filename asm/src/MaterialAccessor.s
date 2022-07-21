@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d16MaterialAccessorFv
 __ct__Q23g3d16MaterialAccessorFv:
 /* 8018E758 0018A598  38 A3 FF FC */	addi r5, r3, -4
@@ -151,7 +151,7 @@ matMiscEndEdit__Q23g3d16MaterialAccessorCFv:
 /* 8018E93C 0018A77C  38 80 00 00 */	li r4, 0
 /* 8018E940 0018A780  4B F5 F9 50 */	b GetResMatMisc__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23lyt16MaterialAccessorFRCQ23lyt12PaneAccessorRQ34nw4r3lyt8Material
 __ct__Q23lyt16MaterialAccessorFRCQ23lyt12PaneAccessorRQ34nw4r3lyt8Material:
 /* 801ADDF8 001A9C38  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -282,7 +282,7 @@ lbl_801ADF98:
 /* 801ADFC0 001A9E00  38 21 00 20 */	addi r1, r1, 0x20
 /* 801ADFC4 001A9E04  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10$$20
 $$2STRING$$2SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10$$20:
 	.incbin "baserom.dol", 0x453A88, 0x28

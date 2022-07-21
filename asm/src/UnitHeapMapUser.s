@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mem15UnitHeapMapUserFRCQ23mem8HeapUnit
 __ct__Q23mem15UnitHeapMapUserFRCQ23mem8HeapUnit:
 /* 801BF7AC 001BB5EC  3C A0 80 46 */	lis r5, __vt__Q23mem15UnitHeapMapUser@ha
@@ -192,12 +192,12 @@ drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nre
 drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer:
 /* 801BFA2C 001BB86C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem15UnitHeapMapUser
 __vt__Q23mem15UnitHeapMapUser:
 	.incbin "baserom.dol", 0x455E80, 0x30
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249027
 $$249027:
 	.incbin "baserom.dol", 0x49A700, 0x8

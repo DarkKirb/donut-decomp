@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PatchChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult
 PatchChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult:
 /* 800CE7F0 000CA630  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -945,7 +945,7 @@ lbl_800CF41C:
 /* 800CF438 000CB278  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800CF43C 000CB27C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27550
 $$27550:
 	.incbin "baserom.dol", 0x4999A0, 0x4

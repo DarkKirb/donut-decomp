@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick4StopFRQ33scn4step9Component
 __ct__Q43scn4step7gimmick4StopFRQ33scn4step9Component:
 /* 802F72C4 002F3104  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -536,7 +536,7 @@ lbl_802F79A8:
 /* 802F79C4 002F3804  38 21 00 10 */	addi r1, r1, 0x10
 /* 802F79C8 002F3808  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3sfx4StopFRQ33scn4step9Component
 __ct__Q43scn4step3sfx4StopFRQ33scn4step9Component:
 /* 803CF8CC 003CB70C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -852,12 +852,12 @@ lbl_803CFCE4:
 /* 803CFD00 003CBB40  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CFD04 003CBB44  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick4Stop
 __vt__Q43scn4step7gimmick4Stop:
 	.incbin "baserom.dol", 0x47B058, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step3sfx4Stop
 __vt__Q43scn4step3sfx4Stop:
 	.incbin "baserom.dol", 0x48EDC8, 0x20

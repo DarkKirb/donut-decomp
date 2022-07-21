@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Obj__Q24gobj12MintGearAnimFv
 Obj__Q24gobj12MintGearAnimFv:
 /* 8019AC94 00196AD4  80 6D ED B0 */	lwz r3, t_obj__Q24gobj26$$2unnamed$$2MintGearAnim_cpp$$2-_SDA_BASE_(r13)
@@ -86,7 +86,7 @@ __sinit_$$3MintGearAnim_cpp:
 /* 8019AD2C 00196B6C  38 6D ED B0 */	addi r3, r13, t_obj__Q24gobj26$$2unnamed$$2MintGearAnim_cpp$$2-_SDA_BASE_
 /* 8019AD30 00196B70  4B F4 26 B0 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023F4, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

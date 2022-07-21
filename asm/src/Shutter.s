@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global getConnectString__21$$2unnamed$$2Shutter_cpp$$2FPCcPCc
 getConnectString__21$$2unnamed$$2Shutter_cpp$$2FPCcPCc:
 /* 803234D0 0031F310  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -2038,7 +2038,7 @@ mfReleaseWaitEffect__Q53scn4step7gimmick7shutter7ShutterFv:
 /* 80325144 00320F84  38 63 02 90 */	addi r3, r3, 0x290
 /* 80325148 00320F88  4B FC ED DC */	b release__Q43scn4step7gimmick6EffectFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$254624
 $$254624:
 	.incbin "baserom.dol", 0x415C50, 0x14
@@ -2052,7 +2052,7 @@ $$254630:
 $$254633:
 	.incbin "baserom.dol", 0x415C8C, 0x14
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2
 SUB_KIND_POSTFIX__21$$2unnamed$$2Shutter_cpp$$2:
 	.incbin "baserom.dol", 0x47E520, 0x10
@@ -2066,7 +2066,7 @@ $$256218:
 __vt__Q53scn4step7gimmick7shutter7Shutter:
 	.incbin "baserom.dol", 0x47E568, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253500
 $$253500:
 	.incbin "baserom.dol", 0x496CD0, 0x4
@@ -2098,7 +2098,7 @@ $$256352:
 $$256570:
 	.incbin "baserom.dol", 0x496D18, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256120
 $$256120:
 	.incbin "baserom.dol", 0x49D578, 0x4

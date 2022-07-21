@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global sdp_init
 sdp_init:
 /* 8009F53C 0009B37C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -817,7 +817,7 @@ lbl_800A008C:
 /* 800A00A0 0009BEE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800A00A4 0009BEE4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21261
 $$21261:
 	.incbin "baserom.dol", 0x43BC98, 0x14

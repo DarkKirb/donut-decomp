@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global getRenderPosition__Q44nrel6devkit7heapmap18HeapMapBlockDrawerFUlUlUlf
 getRenderPosition__Q44nrel6devkit7heapmap18HeapMapBlockDrawerFUlUlUlf:
 /* 8014BCA8 00147AE8  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -269,7 +269,7 @@ lbl_8014C038:
 /* 8014C054 00147E94  38 21 00 40 */	addi r1, r1, 0x40
 /* 8014C058 00147E98  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$214354
 $$214354:
 	.incbin "baserom.dol", 0x442E58, 0x18
@@ -286,7 +286,7 @@ $$214463:
 $$214516:
 	.incbin "baserom.dol", 0x442F18, 0x50
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$214358
 $$214358:
 	.incbin "baserom.dol", 0x49A098, 0x8

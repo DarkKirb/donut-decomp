@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global hidd_proc_repage_timeout
 hidd_proc_repage_timeout:
 /* 8008CFDC 00088E1C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -58,7 +58,7 @@ lbl_8008D090:
 /* 8008D09C 00088EDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008D0A0 00088EE0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2651
 $$2651:
 	.incbin "baserom.dol", 0x439210, 0x20

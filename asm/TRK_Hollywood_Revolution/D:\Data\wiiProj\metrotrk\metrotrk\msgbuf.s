@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRK_InitializeMessageBuffers
 TRK_InitializeMessageBuffers:
 /* 80016F68 00012DA8  3C 60 80 49 */	lis r3, gTRKMsgBufs@ha
@@ -614,7 +614,7 @@ lbl_8001775C:
 /* 8001776C 000135AC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80017770 000135B0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
 	.incbin "baserom.dol", 0x41DE00, 0x28

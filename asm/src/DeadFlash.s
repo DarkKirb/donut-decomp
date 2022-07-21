@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss9DeadFlashFv
 __ct__Q43scn4step4boss9DeadFlashFv:
 /* 8022F3AC 0022B1EC  80 02 A3 A0 */	lwz r0, $$248801-_SDA2_BASE_(r2)
@@ -30,12 +30,12 @@ lbl_8022F3EC:
 /* 8022F3FC 0022B23C  98 03 00 03 */	stb r0, 3(r3)
 /* 8022F400 0022B240  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4boss23$$2unnamed$$2DeadFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss23$$2unnamed$$2DeadFlash_cpp$$2:
 	.incbin "baserom.dol", 0x4124B8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248801
 $$248801:
 	.incbin "baserom.dol", 0x49AE60, 0x8

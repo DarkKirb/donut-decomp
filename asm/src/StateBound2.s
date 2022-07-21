@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11whispyapple11StateBound2FPQ43scn4step5enemy5EnemyUlb
 __ct__Q53scn4step5enemy11whispyapple11StateBound2FPQ43scn4step5enemy5EnemyUlb:
 /* 802F17CC 002ED60C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -219,12 +219,12 @@ lbl_802F1AC4:
 /* 802F1AD4 002ED914  38 21 00 40 */	addi r1, r1, 0x40
 /* 802F1AD8 002ED918  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11whispyapple11StateBound2
 __vt__Q53scn4step5enemy11whispyapple11StateBound2:
 	.incbin "baserom.dol", 0x47AE98, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256621
 $$256621:
 	.incbin "baserom.dol", 0x49D0B8, 0x4

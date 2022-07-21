@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global set__Q43scn4step5chara13ScriptTriggerFUl
 set__Q43scn4step5chara13ScriptTriggerFUl:
 /* 80272A84 0026E8C4  28 04 00 20 */	cmplwi r4, 0x20

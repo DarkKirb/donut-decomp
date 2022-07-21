@@ -1,13 +1,13 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setType__Q35mcoll6detail13LandAttributeFQ35mcoll6detail17LandAttributeType
 setType__Q35mcoll6detail13LandAttributeFQ35mcoll6detail17LandAttributeType:
 /* 801B78F8 001B3738  54 80 06 3E */	clrlwi r0, r4, 0x18
 /* 801B78FC 001B373C  98 03 00 00 */	stb r0, 0(r3)
 /* 801B7900 001B3740  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero13LandAttributeFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero13LandAttributeFRQ43scn4step4hero4Hero:
 /* 80344394 003401D4  90 83 00 00 */	stw r4, 0(r3)
@@ -512,7 +512,7 @@ lbl_80344A7C:
 /* 80344A7C 003408BC  38 60 00 00 */	li r3, 0
 /* 80344A80 003408C0  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global EFFECT_TABLE_L__Q43scn4step4hero27$$2unnamed$$2LandAttribute_cpp$$2
 EFFECT_TABLE_L__Q43scn4step4hero27$$2unnamed$$2LandAttribute_cpp$$2:
 	.incbin "baserom.dol", 0x4160E0, 0x30
@@ -526,12 +526,12 @@ EFFECT_TABLE_LANDING__Q43scn4step4hero27$$2unnamed$$2LandAttribute_cpp$$2:
 SE_TABLE__Q43scn4step4hero27$$2unnamed$$2LandAttribute_cpp$$2:
 	.incbin "baserom.dol", 0x416170, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253793
 $$253793:
 	.incbin "baserom.dol", 0x480EB0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253684
 $$253684:
 	.incbin "baserom.dol", 0x49D798, 0x8

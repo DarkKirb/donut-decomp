@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10knucklejoe9StateSpinFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10knucklejoe9StateSpinFPQ43scn4step5enemy5Enemy:
 /* 802C0768 002BC5A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -228,7 +228,7 @@ lbl_802C0A88:
 procFixPos__Q53scn4step5enemy10knucklejoe9StateSpinFv:
 /* 802C0AA0 002BC8E0  4B FF FC 08 */	b procFixPos__Q53scn4step5enemy10knucklejoe11StateRisingFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setNextState$$0Q53scn4step4hero6hammer9StateSpin$$4PQ43scn4step4hero4Hero$$4b$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Herob_v
 setNextState$$0Q53scn4step4hero6hammer9StateSpin$$4PQ43scn4step4hero4Hero$$4b$$1__Q24util41StateChanger$$0Q43scn4step4hero6IState$$4256$$1FPQ43scn4step4hero4Herob_v:
 /* 80396898 003926D8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -710,12 +710,12 @@ __dt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6hammer9State
 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10StateThrow$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80396F28 00392D68  4B E9 77 78 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe9StateSpin
 __vt__Q53scn4step5enemy10knucklejoe9StateSpin:
 	.incbin "baserom.dol", 0x474A90, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10StateThrow$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6hammer10StateThrow$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x489FB0, 0x10
@@ -726,7 +726,7 @@ __vt__Q24util91StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6hammer9State
 __vt__Q53scn4step4hero6hammer9StateSpin:
 	.incbin "baserom.dol", 0x489FD0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255929
 $$255929:
 	.incbin "baserom.dol", 0x49C748, 0x4
@@ -743,7 +743,7 @@ $$255939:
 $$255947:
 	.incbin "baserom.dol", 0x49C758, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258565
 $$258565:
 	.incbin "baserom.dol", 0x49E208, 0x8

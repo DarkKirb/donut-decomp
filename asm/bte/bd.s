@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bdcpy
 bdcpy:
 /* 80077F34 00073D74  89 24 00 00 */	lbz r9, 0(r4)

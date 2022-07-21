@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail7AxVoiceFv
 __ct__Q44nw4r3snd6detail7AxVoiceFv:
 /* 80100FD0 000FCE10  3C 80 00 01 */	lis r4, 0x00008000@ha
@@ -3541,7 +3541,7 @@ lbl_80103F4C:
 /* 80103F68 000FFDA8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80103F6C 000FFDAC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212107
 $$212107:
 	.incbin "baserom.dol", 0x499D98, 0x4

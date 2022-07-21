@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_dstBit__25$$2unnamed$$2HIDAccessor_cpp$$2FRCQ225$$2unnamed$$2HIDAccessor_cpp$$214ButtonConvData
 t_dstBit__25$$2unnamed$$2HIDAccessor_cpp$$2FRCQ225$$2unnamed$$2HIDAccessor_cpp$$214ButtonConvData:
 /* 801A22EC 0019E12C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -462,7 +462,7 @@ checkInputSubStick__Q23hid11HIDAccessorCFRCQ33hel4math7Vector2f:
 /* 801A2930 0019E770  54 63 17 FE */	rlwinm r3, r3, 2, 0x1f, 0x1f
 /* 801A2934 0019E774  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BUTTON_CONVDATA_CL__25$$2unnamed$$2HIDAccessor_cpp$$2
 T_BUTTON_CONVDATA_CL__25$$2unnamed$$2HIDAccessor_cpp$$2:
 	.incbin "baserom.dol", 0x410A70, 0xF0
@@ -473,7 +473,7 @@ T_BUTTON_CONVDATA_GC__25$$2unnamed$$2HIDAccessor_cpp$$2:
 T_STICK_CONVDATA__25$$2unnamed$$2HIDAccessor_cpp$$2:
 	.incbin "baserom.dol", 0x410C20, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250596
 $$250596:
 	.incbin "baserom.dol", 0x49A450, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global update__Q43scn4step4boss15StaffCreditCtrlFv
 update__Q43scn4step4boss15StaffCreditCtrlFv:
 /* 80234238 00230078  80 83 00 04 */	lwz r4, 4(r3)
@@ -23,7 +23,7 @@ setSignal__Q43scn4step4boss15StaffCreditCtrlFQ43scn4step4boss21StaffCreditSignal
 /* 8023426C 002300AC  90 03 00 04 */	stw r0, 4(r3)
 /* 80234270 002300B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero15StaffCreditCtrlFv
 __ct__Q43scn4step4hero15StaffCreditCtrlFv:
 /* 803551EC 0035102C  38 00 00 00 */	li r0, 0

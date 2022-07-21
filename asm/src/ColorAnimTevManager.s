@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d19ColorAnimTevManagerFRCQ34nw4r3g3d6ResTev
 __ct__Q23g3d19ColorAnimTevManagerFRCQ34nw4r3g3d6ResTev:
 /* 8018DDB8 00189BF8  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -479,7 +479,7 @@ reserveWithTevRegID__Q23g3d19ColorAnimTevManagerF11_GXTevRegID:
 /* 8018E444 0018A284  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E448 0018A288  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249444
 $$249444:
 	.incbin "baserom.dol", 0x450490, 0x50
@@ -493,7 +493,7 @@ $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d6ResTevCFv:
 	.incbin "baserom.dol", 0x450540, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d6ResTevFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d6ResTevFv:
 	.incbin "baserom.dol", 0x493160, 0x8

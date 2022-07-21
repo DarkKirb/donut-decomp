@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global List_Insert__Q24nw4r2utFPQ34nw4r2ut4ListPvPv
 List_Insert__Q24nw4r2utFPQ34nw4r2ut4ListPvPv:
 /* 8011FB40 0011B980  2C 04 00 00 */	cmpwi r4, 0

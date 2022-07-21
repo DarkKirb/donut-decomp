@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle11CinemaScopeFRQ33scn14challengetitle9Component
 __ct__Q33scn14challengetitle11CinemaScopeFRQ33scn14challengetitle9Component:
 /* 801EBC64 001E7AA4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -54,7 +54,7 @@ hide__Q33scn14challengetitle11CinemaScopeFv:
 /* 801EBCE8 001E7B28  98 03 02 80 */	stb r0, 0x280(r3)
 /* 801EBCEC 001E7B2C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle11CinemaScopeFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle11CinemaScopeFRQ33scn10grandtitle9Component:
 /* 80202EC4 001FED04  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -83,7 +83,7 @@ startIn__Q33scn10grandtitle11CinemaScopeFv:
 /* 80202F14 001FED54  80 8D 9F F0 */	lwz r4, T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2-_SDA_BASE_(r13)
 /* 80202F18 001FED58  48 1F D6 A8 */	b requestIn__Q23sfx16CinemaScopeModelFPCc
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tCinemaScopeFilePath__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2FQ43scn4step3sfx15CinemaScopeKind
 tCinemaScopeFilePath__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2FQ43scn4step3sfx15CinemaScopeKind:
 /* 803CCD20 003C8B60  54 60 10 3A */	slwi r0, r3, 2
@@ -162,17 +162,17 @@ isNeedToDraw__Q43scn4step3sfx11CinemaScopeCFv:
 draw__Q43scn4step3sfx11CinemaScopeFv:
 /* 803CCDE8 003C8C28  48 03 39 8C */	b draw__Q23sfx16CinemaScopeModelFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251854
 $$251854:
 	.incbin "baserom.dol", 0x45AC98, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251791
 $$251791:
 	.incbin "baserom.dol", 0x45C9E8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251630
 $$251630:
 	.incbin "baserom.dol", 0x48ED10, 0x18
@@ -180,12 +180,12 @@ $$251630:
 $$251631:
 	.incbin "baserom.dol", 0x48ED28, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25$$2unnamed$$2CinemaScope_cpp$$2:
 	.incbin "baserom.dol", 0x4947F0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2
 T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25$$2unnamed$$2CinemaScope_cpp$$2:
 	.incbin "baserom.dol", 0x4983D8, 0x8

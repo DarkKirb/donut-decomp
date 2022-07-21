@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster11StateSummonFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss15challengemaster11StateSummonFPQ43scn4step4boss4Boss:
 /* 8024342C 0023F26C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -145,7 +145,7 @@ procMove__Q53scn4step4boss15challengemaster11StateSummonFv:
 procFixPos__Q53scn4step4boss15challengemaster11StateSummonFv:
 /* 80243610 0023F450  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss15challengemaster11StateSummon
 __vt__Q53scn4step4boss15challengemaster11StateSummon:
 	.incbin "baserom.dol", 0x4620F8, 0x20

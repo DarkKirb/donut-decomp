@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_isIncludeNode__Q43scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$2FRCQ34nw4r3g3d7ResNodeRCQ34nw4r3g3d7ResNode
 t_isIncludeNode__Q43scn4step2bg33$$2unnamed$$2DecorationMaproColl_cpp$$2FRCQ34nw4r3g3d7ResNodeRCQ34nw4r3g3d7ResNode:
 /* 80224104 0021FF44  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -3601,7 +3601,7 @@ gridHeight__Q43scn4step2bg7ResPartCFv:
 /* 80227258 00223098  88 63 00 1D */	lbz r3, 0x1d(r3)
 /* 8022725C 0022309C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetClassName__Q34nw4r3g3d9ResVtxPosFv
 $$2STRING$$2GetClassName__Q34nw4r3g3d9ResVtxPosFv:
 	.incbin "baserom.dol", 0x45FDD0, 0xC
@@ -3633,7 +3633,7 @@ $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d10ResMdlInfoCFv:
 	.incbin "baserom.dol", 0x45FE98, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253352
 $$253352:
 	.incbin "baserom.dol", 0x495278, 0x4
@@ -3674,7 +3674,7 @@ __FUNCTION__$30538:
 __FUNCTION__$30525:
 	.incbin "baserom.dol", 0x4952AC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257830
 $$257830:
 	.incbin "baserom.dol", 0x49AD98, 0x8

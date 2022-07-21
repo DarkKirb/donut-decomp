@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __AXGetNumVoices
 __AXGetNumVoices:
 /* 80045360 000411A0  80 6D E8 80 */	lwz r3, __AXNumVoices-_SDA_BASE_(r13)
@@ -995,7 +995,7 @@ AXGetMaxVoices:
 /* 80046118 00041F58  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004611C 00041F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __AXMixCycles
 __AXMixCycles:
 	.incbin "baserom.dol", 0x42F0D0, 0x80
@@ -1003,7 +1003,7 @@ __AXMixCycles:
 __AXRmtMixCycles:
 	.incbin "baserom.dol", 0x42F150, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23525
 $$23525:
 	.incbin "baserom.dol", 0x4991E8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global EPSILON__Q43scn4step5chara15MapCollConstant
 EPSILON__Q43scn4step5chara15MapCollConstant:
 	.incbin "baserom.dol", 0x49B7F8, 0x4

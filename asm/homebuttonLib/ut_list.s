@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs:
 /* 80141880 0013D6C0  38 C0 00 00 */	li r6, 0

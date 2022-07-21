@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q24gobj9MintModelFRQ24gobj5Model
 Register__Q24gobj9MintModelFRQ24gobj5Model:
 /* 8019ADE8 00196C28  90 6D ED C8 */	stw r3, t_obj__Q24gobj23$$2unnamed$$2MintModel_cpp$$2-_SDA_BASE_(r13)
@@ -57,7 +57,7 @@ __sinit_$$3MintModel_cpp:
 /* 8019AE84 00196CC4  38 6D ED C8 */	addi r3, r13, t_obj__Q24gobj23$$2unnamed$$2MintModel_cpp$$2-_SDA_BASE_
 /* 8019AE88 00196CC8  4B F4 25 58 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step5chara9MintModelFRQ43scn4step5chara5Model
 Register__Q43scn4step5chara9MintModelFRQ43scn4step5chara5Model:
 /* 8026FD80 0026BBC0  90 6D F1 C0 */	stw r3, t_obj__Q43scn4step5chara23$$2unnamed$$2MintModel_cpp$$2-_SDA_BASE_(r13)
@@ -90,10 +90,10 @@ __sinit_$$3MintModel_cpp:
 /* 8026FDC8 0026BC08  38 6D F1 C0 */	addi r3, r13, t_obj__Q43scn4step5chara23$$2unnamed$$2MintModel_cpp$$2-_SDA_BASE_
 /* 8026FDCC 0026BC0C  4B E6 D6 14 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402400, 0x4
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024A0, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

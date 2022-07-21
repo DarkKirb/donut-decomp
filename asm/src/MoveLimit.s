@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4core9MoveLimitFRQ33scn4step9Component
 __ct__Q43scn4step4core9MoveLimitFRQ33scn4step9Component:
 /* 802776C8 00273508  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -65,7 +65,7 @@ reset__Q43scn4step4core9MoveLimitFv:
 /* 802777A8 002735E8  38 21 00 30 */	addi r1, r1, 0x30
 /* 802777AC 002735EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero9MoveLimitFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero9MoveLimitFRQ43scn4step4hero4Hero:
 /* 8034E5FC 0034A43C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -398,7 +398,7 @@ lbl_8034EA74:
 /* 8034EA90 0034A8D0  38 21 00 80 */	addi r1, r1, 0x80
 /* 8034EA94 0034A8D4  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252312
 $$252312:
 	.incbin "baserom.dol", 0x49B908, 0x8
@@ -406,7 +406,7 @@ $$252312:
 $$252315:
 	.incbin "baserom.dol", 0x49B910, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252015
 $$252015:
 	.incbin "baserom.dol", 0x49D878, 0x4

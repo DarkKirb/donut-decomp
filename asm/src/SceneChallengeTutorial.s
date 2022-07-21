@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q33scn17challengetutorial22SceneChallengeTutorial$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q33scn17challengetutorial22SceneChallengeTutorial$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 801F6780 001F25C0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -633,7 +633,7 @@ isSceneEnd__Q33scn17challengetutorial22SceneChallengeTutorialCFv:
 GetRuntimeTypeInfo__Q33scn17challengetutorial22SceneChallengeTutorialCFv:
 /* 801F7044 001F2E84  4B FF F7 3C */	b RuntimeTypeInfoImpl$$0Q33scn17challengetutorial22SceneChallengeTutorial$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253516
 $$253516:
 	.incbin "baserom.dol", 0x45B988, 0x10
@@ -656,7 +656,7 @@ $$253523:
 __vt__Q33scn17challengetutorial22SceneChallengeTutorial:
 	.incbin "baserom.dol", 0x45BA54, 0x5C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252749
 $$252749:
 	.incbin "baserom.dol", 0x49A9D8, 0x4

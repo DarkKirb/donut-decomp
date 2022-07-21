@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_info__Q33scn4step31$$2unnamed$$2ChallengeKindUtil_cpp$$2FQ33scn4step13ChallengeKind
 t_info__Q33scn4step31$$2unnamed$$2ChallengeKindUtil_cpp$$2FQ33scn4step13ChallengeKind:
 /* 8021CD3C 00218B7C  54 86 28 34 */	slwi r6, r4, 5
@@ -274,12 +274,12 @@ TitleLayoutContext__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKindRQ2
 /* 8021D0CC 00218F0C  38 21 00 60 */	addi r1, r1, 0x60
 /* 8021D0D0 00218F10  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INFOS__Q33scn4step31$$2unnamed$$2ChallengeKindUtil_cpp$$2
 T_INFOS__Q33scn4step31$$2unnamed$$2ChallengeKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x412288, 0x200
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248772
 $$248772:
 	.incbin "baserom.dol", 0x45FAF8, 0xC
@@ -302,7 +302,7 @@ $$249157:
 $$249159:
 	.incbin "baserom.dol", 0x45FBF4, 0x1C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248746
 $$248746:
 	.incbin "baserom.dol", 0x495180, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global wpad_callback_func
 wpad_callback_func:
 /* 80070390 0006C1D0  80 AD EA 98 */	lwz r5, kmpls-_SDA_BASE_(r13)
@@ -2307,7 +2307,7 @@ KMPLSSetSamplingCallback:
 /* 800724B8 0006E2F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800724BC 0006E2FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global mpls_assign_deg
 mpls_assign_deg:
 	.incbin "baserom.dol", 0x4360C8, 0x24
@@ -2315,7 +2315,7 @@ mpls_assign_deg:
 mpls_assign_ct:
 	.incbin "baserom.dol", 0x4360EC, 0x24
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22647
 $$22647:
 	.incbin "baserom.dol", 0x4993B0, 0x4

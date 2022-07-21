@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text0, "ax"  # 0x80004000 - 0x80006740
+.section .init, "ax"  # 0x80004000 - 0x80006740
 .global memcpy
 memcpy:
 /* 80004000 00000100  28 85 00 00 */	cmplwi cr1, r5, 0
@@ -265,7 +265,7 @@ memset:
 /* 80004378 00000478  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000437C 0000047C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global strlen
 strlen:
 /* 80006A8C 000028CC  38 83 FF FF */	addi r4, r3, -1

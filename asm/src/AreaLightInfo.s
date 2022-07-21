@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4core13AreaLightInfoFv
 __ct__Q43scn4step4core13AreaLightInfoFv:
 /* 80273BC8 0026FA08  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -205,7 +205,7 @@ LinearInterpolation$$0Q33hel6common6ColorF$$1__Q33hel4math4MathFRCQ33hel6common6
 /* 80273ECC 0026FD0C  38 21 00 70 */	addi r1, r1, 0x70
 /* 80273ED0 0026FD10  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250391
 $$250391:
 	.incbin "baserom.dol", 0x49B8C0, 0x8

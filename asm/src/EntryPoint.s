@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Run__Q23app10EntryPointFbPCc
 Run__Q23app10EntryPointFbPCc:
 /* 801776BC 001734FC  94 21 FC 50 */	stwu r1, -0x3b0(r1)
@@ -182,7 +182,7 @@ lbl_80177920:
 /* 80177934 00173774  38 21 00 10 */	addi r1, r1, 0x10
 /* 80177938 00173778  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249240
 $$249240:
 	.incbin "baserom.dol", 0x44EDF8, 0x10

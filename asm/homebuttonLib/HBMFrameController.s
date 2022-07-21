@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global init__Q210homebutton15FrameControllerFifff
 init__Q210homebutton15FrameControllerFifff:
 /* 801285D0 00124410  2C 04 00 01 */	cmpwi r4, 1
@@ -127,12 +127,12 @@ lbl_8012874C:
 /* 80128778 001245B8  4E 80 00 20 */	blr 
 /* 8012877C 001245BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$22246
 $$22246:
 	.incbin "baserom.dol", 0x409EE0, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22206
 $$22206:
 	.incbin "baserom.dol", 0x43EAB8, 0x20

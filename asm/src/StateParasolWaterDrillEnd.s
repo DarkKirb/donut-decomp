@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7parasol25StateParasolWaterDrillEndFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7parasol25StateParasolWaterDrillEndFPQ43scn4step4hero4Hero:
 /* 803965F4 00392434  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -193,7 +193,7 @@ lbl_80396880:
 procFixPos__Q53scn4step4hero7parasol25StateParasolWaterDrillEndFv:
 /* 80396894 003926D4  4B FC 9F EC */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol25StateParasolWaterDrillEnd
 __vt__Q53scn4step4hero7parasol25StateParasolWaterDrillEnd:
 	.incbin "baserom.dol", 0x489F88, 0x28

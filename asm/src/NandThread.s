@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_StorageManager__Q24nand24$$2unnamed$$2NandThread_cpp$$2Fv
 t_StorageManager__Q24nand24$$2unnamed$$2NandThread_cpp$$2Fv:
 /* 801D1950 001CD790  80 6D ED 10 */	lwz r3, object___Q33hel6common38ExplicitSingleton$$0Q23app11Application$$1-_SDA_BASE_(r13)
@@ -1644,12 +1644,12 @@ lbl_801D3020:
 /* 801D3020 001CEE60  38 60 00 00 */	li r3, 0
 /* 801D3024 001CEE64  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global SaveFiles__4nand
 SaveFiles__4nand:
 	.incbin "baserom.dol", 0x410ED0, 0xB8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249991
 $$249991:
 	.incbin "baserom.dol", 0x4593B8, 0xC
@@ -1705,7 +1705,7 @@ $$251581:
 $$251582:
 	.incbin "baserom.dol", 0x4594B4, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249989
 $$249989:
 	.incbin "baserom.dol", 0x493A18, 0x8

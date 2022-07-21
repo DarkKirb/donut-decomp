@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss4BossFRQ33scn4step9ComponentRQ23mem12HeapExpArrayRCQ43scn4step4boss4Desc
 __ct__Q43scn4step4boss4BossFRQ33scn4step9ComponentRQ23mem12HeapExpArrayRCQ43scn4step4boss4Desc:
 /* 80229698 002254D8  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -4186,7 +4186,7 @@ stateChanger__Q43scn4step4boss4BossFv:
 /* 8022D018 00228E58  38 63 02 64 */	addi r3, r3, 0x264
 /* 8022D01C 00228E5C  4B F4 AB D0 */	b __rf__Q23mem43ExplicitScopedPtr$$0Q23app16HIDErrorMenuImpl$$1CFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util41StateChanger$$0Q43scn4step4boss6IState$$4256$$1
 __vt__Q24util41StateChanger$$0Q43scn4step4boss6IState$$4256$$1:
 	.incbin "baserom.dol", 0x4604C8, 0xC
@@ -4209,7 +4209,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4b
 $$2STRING$$2GetBack__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x460558, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$269815
 $$269815:
 	.incbin "baserom.dol", 0x49ADD0, 0x4

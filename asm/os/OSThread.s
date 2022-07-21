@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultSwitchThreadCallback
 DefaultSwitchThreadCallback:
 /* 800244A0 000202E0  4E 80 00 20 */	blr 
@@ -1692,7 +1692,7 @@ lbl_80025B18:
 /* 80025B38 00021978  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80025B3C 0002197C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SwitchThreadCallback
 SwitchThreadCallback:
 	.incbin "baserom.dol", 0x4928D0, 0x8

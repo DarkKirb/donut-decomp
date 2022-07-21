@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSYNSetupVolumeEnvelope
 __HBMSYNSetupVolumeEnvelope:
 /* 8014A160 00145FA0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -273,7 +273,7 @@ lbl_8014A52C:
 /* 8014A538 00146378  4E 80 00 20 */	blr 
 /* 8014A53C 0014637C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21811
 $$21811:
 	.incbin "baserom.dol", 0x40A3F0, 0x8

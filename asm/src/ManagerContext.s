@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultEffectObjCountMax__Q36effect6detail14ManagerContextFv
 DefaultEffectObjCountMax__Q36effect6detail14ManagerContextFv:
 /* 80181BA0 0017D9E0  38 60 00 64 */	li r3, 0x64

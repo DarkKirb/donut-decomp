@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6dubior17StateThunderStartFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6dubior17StateThunderStartFPQ43scn4step4boss4Boss:
 /* 8025087C 0024C6BC  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -390,7 +390,7 @@ create__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12St
 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 80250E0C 0024CC4C  4B FD D8 94 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12StateThunder$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x4639C0, 0x10
@@ -398,7 +398,7 @@ __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6dubior12Stat
 __vt__Q53scn4step4boss6dubior17StateThunderStart:
 	.incbin "baserom.dol", 0x4639D0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global WaitFrameTable__Q53scn4step4boss6dubior31$$2unnamed$$2StateThunderStart_cpp$$2
 WaitFrameTable__Q53scn4step4boss6dubior31$$2unnamed$$2StateThunderStart_cpp$$2:
 	.incbin "baserom.dol", 0x49B360, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Init__Q44nw4r3snd6detail8LfoParamFv
 Init__Q44nw4r3snd6detail8LfoParamFv:
 /* 80109BE0 00105A20  C0 22 93 A8 */	lfs f1, $$27641-_SDA2_BASE_(r2)
@@ -155,12 +155,12 @@ lbl_80109DE0:
 /* 80109DE8 00105C28  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80109DEC 00105C2C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2GetSinIdx__Q44nw4r3snd6detail3LfoFi$$2sinTable
 $$2LOCAL$$2GetSinIdx__Q44nw4r3snd6detail3LfoFi$$2sinTable:
 	.incbin "baserom.dol", 0x407758, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27641
 $$27641:
 	.incbin "baserom.dol", 0x499E68, 0x4

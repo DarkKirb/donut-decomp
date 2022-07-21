@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info13MessageWindowFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ27storage9StoryMode
 __ct__Q43scn4step4info13MessageWindowFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ27storage9StoryMode:
 /* 803ADA1C 003A985C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -2054,7 +2054,7 @@ __dt__Q43std3tr16detail298function_imp$$0PFv_v$$4Q43std3tr16detail254bound_func$
 __dt__Q43std3tr16detail367function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail318bound_func$$0v$$4Q43std3tr16detail51mem_fn_2$$0v$$4Q43scn4step4info13MessageWindow$$4PCc$$4PCc$$1$$4Q33std3tr1220tuple$$0PQ43scn4step4info13MessageWindow$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1Fv:
 /* 803AF644 003AB484  4B F7 36 34 */	b __dt__Q43std3tr16detail383function_imp$$0PFPCcPCc_v$$4Q43std3tr16detail334bound_func$$0v$$4Q43std3tr16detail59mem_fn_2$$0v$$4Q53scn4step7gimmick9shipevent9ShipEvent$$4PCc$$4PCc$$1$$4Q33std3tr1228tuple$$0PQ53scn4step7gimmick9shipevent9ShipEvent$$4Q53std3tr112placeholders6detail5ph$$01$$1$$4Q53std3tr112placeholders6detail5ph$$02$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$41$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257430
 $$257430:
 	.incbin "baserom.dol", 0x48BF10, 0x10
@@ -2101,7 +2101,7 @@ __vt__Q43std3tr16detail298function_imp$$0PFv_b$$4Q43std3tr16detail254bound_func$
 __vt__Q43std3tr16detail299function_imp$$0PFv_b$$4Q43std3tr16detail255bound_func$$0b$$4Q43std3tr16detail46mem_fn_1$$0b$$4Q43scn4step4info13MessageWindow$$4Ul$$1$$4Q33std3tr1162tuple$$0PQ43scn4step4info13MessageWindow$$4Ul$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.incbin "baserom.dol", 0x48C020, 0x78
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257581
 $$257581:
 	.incbin "baserom.dol", 0x497A10, 0x8

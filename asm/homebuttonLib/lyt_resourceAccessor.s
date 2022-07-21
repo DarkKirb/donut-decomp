@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q36nw4hbm3lyt16ResourceAccessorFv
 __dt__Q36nw4hbm3lyt16ResourceAccessorFv:
 /* 8013C0A0 00137EE0  4B F6 8D 10 */	b __dt__Q34nw4r2ef7EmitterFv
@@ -22,7 +22,7 @@ GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc:
 /* 8013C0C8 00137F08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8013C0CC 00137F0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt16ResourceAccessor
 __vt__Q36nw4hbm3lyt16ResourceAccessor:
 	.incbin "baserom.dol", 0x4402A0, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history5InputFv
 __ct__Q33scn7history5InputFv:
 /* 80208074 00203EB4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -198,7 +198,7 @@ lbl_8020830C:
 /* 80208338 00204178  38 21 00 40 */	addi r1, r1, 0x40
 /* 8020833C 0020417C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn9grandmenu4menu5InputFv
 __ct__Q43scn9grandmenu4menu5InputFv:
 /* 803F54B0 003F12F0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -676,7 +676,7 @@ isRight__Q43scn9grandmenu4menu5InputCFv:
 /* 803F5B1C 003F195C  7C 60 19 10 */	subfe r3, r0, r3
 /* 803F5B20 003F1960  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251081
 $$251081:
 	.incbin "baserom.dol", 0x4919D0, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ReadyToRestartOrShutdown__Q23app5ResetFv
 ReadyToRestartOrShutdown__Q23app5ResetFv:
 /* 8017AC2C 00176A6C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -466,7 +466,7 @@ dvdCheckDiskCallback__Q23app5ResetFlP15DVDCommandBlock:
 /* 8017B1F0 00177030  38 80 00 02 */	li r4, 2
 /* 8017B1F4 00177034  4B FF FF 10 */	b onCallback__Q23app5ResetFQ33app5Reset12CallbackKindl
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250602
 $$250602:
 	.incbin "baserom.dol", 0x493098, 0x4
@@ -474,7 +474,7 @@ $$250602:
 $$250603:
 	.incbin "baserom.dol", 0x49309C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251058
 $$251058:
 	.incbin "baserom.dol", 0x49A118, 0x8

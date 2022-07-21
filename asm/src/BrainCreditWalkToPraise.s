@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy:
 /* 802A0BD0 0029CA10  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -60,7 +60,7 @@ lbl_802A0C70:
 __dt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraiseFv:
 /* 802A0C90 0029CAD0  4B FF 03 DC */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6chilly23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6chilly23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy:
 /* 802A5F98 002A1DD8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -120,7 +120,7 @@ lbl_802A6038:
 __dt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraiseFv:
 /* 802A6058 002A1E98  4B FE B0 14 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraiseFRQ43scn4step5enemy5Enemy:
 /* 802ED1E0 002E9020  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -194,17 +194,17 @@ __dt__Q53scn4step5enemy9waddledee23BrainCreditWalkToPraiseFv:
 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802ED2C0 002E9100  4B F4 13 E0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy11broomhatter23BrainCreditWalkToPraise:
 	.incbin "baserom.dol", 0x470D30, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise
 __vt__Q53scn4step5enemy6chilly23BrainCreditWalkToPraise:
 	.incbin "baserom.dol", 0x4717D8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6common15StateCreditWalk$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x479C18, 0x10

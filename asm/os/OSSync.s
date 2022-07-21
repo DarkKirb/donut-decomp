@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SystemCallVector
 SystemCallVector:
 /* 80024420 00020260  7D 30 FA A6 */	mfspr r9, 0x3f0

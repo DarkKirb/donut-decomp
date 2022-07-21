@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero6SquashFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero6SquashFRQ43scn4step4hero4Hero:
 /* 80354F3C 00350D7C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -194,7 +194,7 @@ getCurrentScale__Q43scn4step4hero6SquashCFv:
 /* 803551E4 00351024  90 03 00 08 */	stw r0, 8(r3)
 /* 803551E8 00351028  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255361
 $$255361:
 	.incbin "baserom.dol", 0x49D9C0, 0x4

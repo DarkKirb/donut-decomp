@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail17PtclEffectManagerFRQ23mem10IAllocatorUlUlUlUlUlUl
 __ct__Q36effect6detail17PtclEffectManagerFRQ23mem10IAllocatorUlUlUlUlUlUl:
 /* 801848BC 001806FC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1036,7 +1036,7 @@ lbl_8018567C:
 /* 8018568C 001814CC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80185690 001814D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22
 $$2STRING$$2GarbageCollection__Q34nw4r2ef13MemoryManagerFv$$22:
 	.incbin "baserom.dol", 0x44F520, 0x128

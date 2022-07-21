@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FExp__Q34nw4r4math6detailFf
 FExp__Q34nw4r4math6detailFf:
 /* 800FE910 000FA750  C0 02 92 58 */	lfs f0, $$22456-_SDA2_BASE_(r2)
@@ -110,7 +110,7 @@ FrSqrt__Q24nw4r4mathFf:
 /* 800FEA98 000FA8D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800FEA9C 000FA8DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global sExpTbl__Q34nw4r4math29$$2unnamed$$2math_arithmetic_cpp$$2
 sExpTbl__Q34nw4r4math29$$2unnamed$$2math_arithmetic_cpp$$2:
 	.incbin "baserom.dol", 0x43D6C0, 0x108
@@ -118,7 +118,7 @@ sExpTbl__Q34nw4r4math29$$2unnamed$$2math_arithmetic_cpp$$2:
 sLogTbl__Q34nw4r4math29$$2unnamed$$2math_arithmetic_cpp$$2:
 	.incbin "baserom.dol", 0x43D7C8, 0x808
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22456
 $$22456:
 	.incbin "baserom.dol", 0x499D18, 0x4

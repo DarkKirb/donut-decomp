@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mem12SDKAllocatorFRQ23mem10IAllocatori
 __ct__Q23mem12SDKAllocatorFRQ23mem10IAllocatori:
 /* 801BF760 001BB5A0  90 83 00 00 */	stw r4, 0(r3)
@@ -29,7 +29,7 @@ Free__Q23mem12SDKAllocatorFP12MEMAllocatorPv:
 /* 801BF7A4 001BB5E4  7D 89 03 A6 */	mtctr r12
 /* 801BF7A8 001BB5E8  4E 80 04 20 */	bctr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global AllocatorFunc__Q23mem12SDKAllocator
 AllocatorFunc__Q23mem12SDKAllocator:
 	.incbin "baserom.dol", 0x49A6F8, 0x8

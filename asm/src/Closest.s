@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2:
 /* 801A01FC 0019C03C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -276,7 +276,7 @@ __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2:
 /* 801A05D8 0019C418  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A05DC 0019C41C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250353
 $$250353:
 	.incbin "baserom.dol", 0x49A3F8, 0x4

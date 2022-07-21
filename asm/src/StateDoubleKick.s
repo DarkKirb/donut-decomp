@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter15StateDoubleKickFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7fighter15StateDoubleKickFPQ43scn4step4hero4Hero:
 /* 8039C664 003984A4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -306,12 +306,12 @@ createWeapon__Q53scn4step4hero7fighter15StateDoubleKickFv:
 /* 8039CAB0 003988F0  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 8039CAB4 003988F4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter15StateDoubleKick
 __vt__Q53scn4step4hero7fighter15StateDoubleKick:
 	.incbin "baserom.dol", 0x48A488, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257941
 $$257941:
 	.incbin "baserom.dol", 0x49E2E0, 0x4

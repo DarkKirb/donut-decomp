@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick10guideboard12ActionAttackFRQ53scn4step7gimmick10guideboard10GuideBoard
 __ct__Q53scn4step7gimmick10guideboard12ActionAttackFRQ53scn4step7gimmick10guideboard10GuideBoard:
 /* 80310230 0030C070  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -278,7 +278,7 @@ onAttack__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3:
 isInitState__Q53scn4step7gimmick10guideboard6ActionCFv:
 /* 80310578 0030C3B8  4B DF 84 88 */	b CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252816
 $$252816:
 	.incbin "baserom.dol", 0x47D428, 0xC
@@ -286,7 +286,7 @@ $$252816:
 __vt__Q53scn4step7gimmick10guideboard12ActionAttack:
 	.incbin "baserom.dol", 0x47D434, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252801
 $$252801:
 	.incbin "baserom.dol", 0x496AF8, 0x8
@@ -294,7 +294,7 @@ $$252801:
 $$252805:
 	.incbin "baserom.dol", 0x496B00, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252848
 $$252848:
 	.incbin "baserom.dol", 0x49D408, 0x8

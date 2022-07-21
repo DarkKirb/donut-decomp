@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle10CarryBlockFRQ33scn10grandtitle9ComponentRQ23g3d10CharaModel
 __ct__Q33scn10grandtitle10CarryBlockFRQ33scn10grandtitle9ComponentRQ23g3d10CharaModel:
 /* 80200E30 001FCC70  94 21 FE E0 */	stwu r1, -0x120(r1)
@@ -108,7 +108,7 @@ update__Q33scn10grandtitle10CarryBlockFv:
 /* 80200FBC 001FCDFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80200FC0 001FCE00  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251790
 $$251790:
 	.incbin "baserom.dol", 0x45C790, 0x18
@@ -116,7 +116,7 @@ $$251790:
 $$252260:
 	.incbin "baserom.dol", 0x45C7A8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2:
 	.incbin "baserom.dol", 0x494780, 0x4
@@ -124,7 +124,7 @@ G3D_RES_FILE_PATH__Q33scn10grandtitle24$$2unnamed$$2CarryBlock_cpp$$2:
 $$252259:
 	.incbin "baserom.dol", 0x494784, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252261
 $$252261:
 	.incbin "baserom.dol", 0x49AA88, 0x4

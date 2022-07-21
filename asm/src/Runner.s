@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24mint6RunnerFRCQ24mint6Engine
 __ct__Q24mint6RunnerFRCQ24mint6Engine:
 /* 801C0778 001BC5B8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -274,7 +274,7 @@ lbl_801C0AD0:
 /* 801C0AF8 001BC938  38 21 00 30 */	addi r1, r1, 0x30
 /* 801C0AFC 001BC93C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm6RunnerFRCQ26mintvm6VMCoreUlPQ26mintvm10IAllocator
 __ct__Q26mintvm6RunnerFRCQ26mintvm6VMCoreUlPQ26mintvm10IAllocator:
 /* 801C872C 001C456C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1790,7 +1790,7 @@ lbl_801C9D44:
 /* 801C9D54 001C5B94  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C9D58 001C5B98  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20
 $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv$$20:
 	.incbin "baserom.dol", 0x455EE0, 0x14
@@ -1798,7 +1798,7 @@ $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv
 $$2STRING$$2Instance__Q26mintvm41ExplicitSingleton$$0Q26mintvm11MintSetting$$1Fv:
 	.incbin "baserom.dol", 0x455EF4, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252995
 $$252995:
 	.incbin "baserom.dol", 0x458298, 0xC

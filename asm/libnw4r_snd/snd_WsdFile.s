@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail13WsdFileReaderFPCv
 __ct__Q44nw4r3snd6detail13WsdFileReaderFPCv:
 /* 8011E750 0011A590  38 00 00 00 */	li r0, 0
@@ -272,7 +272,7 @@ lbl_8011EAF8:
 /* 8011EB18 0011A958  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8011EB1C 0011A95C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27814
 $$27814:
 	.incbin "baserom.dol", 0x499FF0, 0x8

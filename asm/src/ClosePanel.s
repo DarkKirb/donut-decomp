@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause10ClosePanelFRQ25pause9Component
 __ct__Q25pause10ClosePanelFRQ25pause9Component:
 /* 801DA754 001D6594  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -113,7 +113,7 @@ isDecideAnimating__Q25pause10ClosePanelCFv:
 /* 801DA8C8 001D6708  88 63 03 A8 */	lbz r3, 0x3a8(r3)
 /* 801DA8CC 001D670C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252084
 $$252084:
 	.incbin "baserom.dol", 0x459560, 0x10

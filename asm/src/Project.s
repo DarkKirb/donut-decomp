@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23msg7ProjectFRQ23mem10IAllocatorPCc
 __ct__Q23msg7ProjectFRQ23mem10IAllocatorPCc:
 /* 801D168C 001CD4CC  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -97,7 +97,7 @@ listItemName__Q23msg7ProjectCFUsUsUsUs:
 /* 801D17C4 001CD604  54 E7 04 3E */	clrlwi r7, r7, 0x10
 /* 801D17C8 001CD608  4B FA 30 F8 */	b LMS_GetTagListItemName
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249096
 $$249096:
 	.incbin "baserom.dol", 0x4593A8, 0x10

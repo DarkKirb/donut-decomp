@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q33scn19challengefileselect24SceneChallengeFileSelect$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q33scn19challengefileselect24SceneChallengeFileSelect$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 801E49BC 001E07FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -5072,12 +5072,12 @@ __dt__Q43std3tr16detail315function_imp$$0PFv_v$$4Q43std3tr16detail271bound_func$
 __dt__Q43std3tr16detail348function_imp$$0PFv_b$$4Q43std3tr16detail304bound_func$$0b$$4Q43std3tr16detail49mem_fn_0_c$$0b$$4Q33scn19challengefileselect7IButton$$1$$4Q33std3tr1208tuple$$0Q33std3tr154reference_wrapper$$0Q33scn19challengefileselect7IButton$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv:
 /* 801E91F0 001E5030  4B FF FF 34 */	b __dt__Q43std3tr16detail362function_imp$$0PFv_b$$4Q43std3tr16detail318bound_func$$0b$$4Q43std3tr16detail56mem_fn_0_c$$0b$$4Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr1215tuple$$0Q33std3tr161reference_wrapper$$0Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$258868
 $$258868:
 	.incbin "baserom.dol", 0x411608, 0xF0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$265146
 $$265146:
 	.incbin "baserom.dol", 0x45A480, 0x18
@@ -5223,7 +5223,7 @@ __vt__Q43std3tr16detail20function_base$$0PFv_v$$1:
 __vt__Q33scn19challengefileselect24SceneChallengeFileSelect:
 	.incbin "baserom.dol", 0x45A7F0, 0xB8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$265314
 $$265314:
 	.incbin "baserom.dol", 0x493F70, 0x8
@@ -5288,7 +5288,7 @@ $$265927:
 $$265928:
 	.incbin "baserom.dol", 0x49400C, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$265328
 $$265328:
 	.incbin "baserom.dol", 0x49A868, 0x4

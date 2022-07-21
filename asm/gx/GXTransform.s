@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __GXSetProjection
 __GXSetProjection:
 /* 80038AD0 00034910  3C 80 CC 01 */	lis r4, 0xCC008000@ha
@@ -449,7 +449,7 @@ lbl_800390AC:
 /* 800390B8 00034EF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800390BC 00034EFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22517
 $$22517:
 	.incbin "baserom.dol", 0x4991C0, 0x4

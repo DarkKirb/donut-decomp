@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss7SoundSEFv
 __ct__Q43scn4step4boss7SoundSEFv:
 /* 802340C0 0022FF00  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -117,7 +117,7 @@ onObjStopFinished__Q43scn4step4boss7SoundSEFv:
 /* 80234230 00230070  38 21 00 10 */	addi r1, r1, 0x10
 /* 80234234 00230074  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara7SoundSEFRQ33scn4step9ComponentRCQ24gobj8Location
 __ct__Q43scn4step5chara7SoundSEFRQ33scn4step9ComponentRCQ24gobj8Location:
 /* 80272E64 0026ECA4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -224,7 +224,7 @@ lbl_80272F94:
 /* 80272FBC 0026EDFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80272FC0 0026EE00  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero7SoundSEFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero7SoundSEFRQ43scn4step4hero4Hero:
 /* 80354D30 00350B70  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -369,7 +369,7 @@ onObjStopFinished__Q43scn4step4hero7SoundSEFv:
 /* 80354F34 00350D74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80354F38 00350D78  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251502
 $$251502:
 	.incbin "baserom.dol", 0x495840, 0x4
@@ -377,7 +377,7 @@ $$251502:
 $$251505:
 	.incbin "baserom.dol", 0x495844, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251607
 $$251607:
 	.incbin "baserom.dol", 0x49B8A0, 0x4

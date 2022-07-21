@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RegisterForce__Q23snd15MintSERequestorFRQ23snd11SERequestor
 RegisterForce__Q23snd15MintSERequestorFRQ23snd11SERequestor:
 /* 80402A3C 003FE87C  90 6D FB 38 */	stw r3, t_obj__Q23snd29$$2unnamed$$2MintSERequestor_cpp$$2-_SDA_BASE_(r13)
@@ -28,7 +28,7 @@ __sinit_$$3MintSERequestor_cpp:
 /* 80402A64 003FE8A4  38 6D FB 38 */	addi r3, r13, t_obj__Q23snd29$$2unnamed$$2MintSERequestor_cpp$$2-_SDA_BASE_
 /* 80402A68 003FE8A8  4B CD A9 78 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402624, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

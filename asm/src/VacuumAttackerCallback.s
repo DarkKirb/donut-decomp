@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero22VacuumAttackerCallbackFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero22VacuumAttackerCallbackFRQ43scn4step4hero4Hero:
 /* 80358904 00354744  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero22VacuumAttackerCallback@ha
@@ -193,17 +193,17 @@ onReceivedCure__Q43scn4step4hero22VacuumAttackerCallbackFRCQ43scn4step6vacuum8At
 /* 80358B94 003549D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80358B98 003549D8  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global SOUND_TABLE__36$$2unnamed$$2VacuumAttackerCallback_cpp$$2
 SOUND_TABLE__36$$2unnamed$$2VacuumAttackerCallback_cpp$$2:
 	.incbin "baserom.dol", 0x416428, 0x38
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero22VacuumAttackerCallback
 __vt__Q43scn4step4hero22VacuumAttackerCallback:
 	.incbin "baserom.dol", 0x481758, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256925
 $$256925:
 	.incbin "baserom.dol", 0x49DA40, 0x8

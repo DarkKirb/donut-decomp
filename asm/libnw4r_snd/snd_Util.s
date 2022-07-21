@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcPitchRatio__Q44nw4r3snd6detail4UtilFi
 CalcPitchRatio__Q44nw4r3snd6detail4UtilFi:
 /* 8011CC80 00118AC0  20 A3 0B FF */	subfic r5, r3, 0xbff
@@ -385,7 +385,7 @@ lbl_8011D140:
 /* 8011D158 00118F98  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8011D15C 00118F9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global NoteTable__Q44nw4r3snd6detail4Util
 NoteTable__Q44nw4r3snd6detail4Util:
 	.incbin "baserom.dol", 0x4077A8, 0x30
@@ -411,17 +411,17 @@ RemoteFilterCoefTable__Q44nw4r3snd6detail4Util:
 CalcLpfFreqTable__Q44nw4r3snd6detail4Util:
 	.incbin "baserom.dol", 0x409BF8, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global PanTableTable__Q44nw4r3snd6detail4Util
 PanTableTable__Q44nw4r3snd6detail4Util:
 	.incbin "baserom.dol", 0x43E710, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2CalcRandom__Q44nw4r3snd6detail4UtilFv$$2u
 $$2LOCAL$$2CalcRandom__Q44nw4r3snd6detail4UtilFv$$2u:
 	.incbin "baserom.dol", 0x492E50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27697
 $$27697:
 	.incbin "baserom.dol", 0x499F90, 0x4

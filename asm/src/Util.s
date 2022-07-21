@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Normalized__8dynamicsFRCQ33hel4math7Vector3
 Normalized__8dynamicsFRCQ33hel4math7Vector3:
 /* 8017D880 001796C0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -404,7 +404,7 @@ lbl_8017DDF8:
 /* 8017DE00 00179C40  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017DE04 00179C44  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global equals__18$$2unnamed$$2Util_cpp$$2FPCcPCc
 equals__18$$2unnamed$$2Util_cpp$$2FPCcPCc:
 /* 801A4810 001A0650  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1788,7 +1788,7 @@ lbl_801A5B40:
 /* 801A5B50 001A1990  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A5B54 001A1994  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InScreen__Q43scn4step7gimmick4UtilFRQ33scn4step9ComponentRCQ33hel4math7Vector2f
 InScreen__Q43scn4step7gimmick4UtilFRQ33scn4step9ComponentRCQ33hel4math7Vector2f:
 /* 802F8314 002F4154  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1833,12 +1833,12 @@ InScreen__Q43scn4step7gimmick4UtilFRQ33scn4step9ComponentRCQ33hel4math7Vector2f:
 /* 802F83B0 002F41F0  38 21 00 30 */	addi r1, r1, 0x30
 /* 802F83B4 002F41F4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251998
 $$251998:
 	.incbin "baserom.dol", 0x410C40, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2AsinRad__Q24nw4r4mathFf$$20
 $$2STRING$$2AsinRad__Q24nw4r4mathFf$$20:
 	.incbin "baserom.dol", 0x44F268, 0x28
@@ -1846,7 +1846,7 @@ $$2STRING$$2AsinRad__Q24nw4r4mathFf$$20:
 $$2STRING$$2AsinRad__Q24nw4r4mathFf:
 	.incbin "baserom.dol", 0x44F290, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2
 T_HERO_PANE_NAMES__18$$2unnamed$$2Util_cpp$$2:
 	.incbin "baserom.dol", 0x453080, 0x1C
@@ -1911,7 +1911,7 @@ $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff$$20:
 $$2STRING$$2SetLineSpace__Q34nw4r2ut17TextWriterBase$$0w$$1Ff:
 	.incbin "baserom.dol", 0x4532D4, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251913
 $$251913:
 	.incbin "baserom.dol", 0x493288, 0x8
@@ -1961,7 +1961,7 @@ $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc$$20:
 $$2STRING$$2onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc:
 	.incbin "baserom.dol", 0x493300, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251710
 $$251710:
 	.incbin "baserom.dol", 0x49A148, 0x4
@@ -1993,7 +1993,7 @@ $$251845:
 $$251853:
 	.incbin "baserom.dol", 0x49A16C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253983
 $$253983:
 	.incbin "baserom.dol", 0x49A478, 0x8

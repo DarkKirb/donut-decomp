@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25mcoll5ActorFRQ25mcoll11LandManagerRCQ35mcoll6detail19ActorDiamondContext
 __ct__Q25mcoll5ActorFRQ25mcoll11LandManagerRCQ35mcoll6detail19ActorDiamondContext:
 /* 801B13B0 001AD1F0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -235,7 +235,7 @@ shapeContext__Q25mcoll5ActorCFv:
 /* 801B16D0 001AD510  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B16D4 001AD514  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ostop5ActorFRQ25ostop7ManagerUl
 __ct__Q25ostop5ActorFRQ25ostop7ManagerUl:
 /* 801D98A4 001D56E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -464,7 +464,7 @@ lbl_801D9B8C:
 /* 801D9B9C 001D59DC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D9BA0 001D59E0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5ostop5ActorFRQ43scn4step5ostop7ManagerQ43scn4step5ostop4Flag
 __ct__Q43scn4step5ostop5ActorFRQ43scn4step5ostop7ManagerQ43scn4step5ostop4Flag:
 /* 803CABBC 003C69FC  94 21 FF F0 */	stwu r1, -0x10(r1)

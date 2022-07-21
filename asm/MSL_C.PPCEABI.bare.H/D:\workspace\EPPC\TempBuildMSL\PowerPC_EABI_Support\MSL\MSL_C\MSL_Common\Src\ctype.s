@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global toupper
 toupper:
 /* 8000A3BC 000061FC  28 03 00 FF */	cmplwi r3, 0xff
@@ -17,7 +17,7 @@ lbl_8000A3CC:
 /* 8000A3E4 00006224  7C 64 18 AE */	lbzx r3, r4, r3
 /* 8000A3E8 00006228  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __ctype_mapC
 __ctype_mapC:
 	.incbin "baserom.dol", 0x402868, 0x200

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn5anime6PlayerFQ23mov9MovieKind
 __ct__Q33scn5anime6PlayerFQ23mov9MovieKind:
 /* 801E1F44 001DDD84  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -737,7 +737,7 @@ getTotalTime__Q33scn5anime6PlayerCFv:
 /* 801E294C 001DE78C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801E2950 001DE790  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$251631
 $$251631:
 	.incbin "baserom.dol", 0x4115A0, 0xC
@@ -748,12 +748,12 @@ $$251633:
 $$251635:
 	.incbin "baserom.dol", 0x4115B8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253021
 $$253021:
 	.incbin "baserom.dol", 0x493DF0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251642
 $$251642:
 	.incbin "baserom.dol", 0x49A838, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global frexp
 frexp:
 /* 80014154 0000FF94  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -41,7 +41,7 @@ lbl_800141D4:
 /* 800141D4 00010014  38 21 00 10 */	addi r1, r1, 0x10
 /* 800141D8 00010018  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2468
 $$2468:
 	.incbin "baserom.dol", 0x498FB8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24util10UIntAABBoxFv
 __ct__Q24util10UIntAABBoxFv:
 /* 8040603C 00401E7C  38 00 FF FF */	li r0, -1
@@ -155,7 +155,7 @@ getContract__Q24util10UIntAABBoxCFRCQ24util10UIntAABBox:
 /* 80406258 00402098  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8040625C 0040209C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250237
 $$250237:
 	.incbin "baserom.dol", 0x49EEE8, 0x4

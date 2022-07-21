@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step5enemy6common9ParamBaseFv
 Create__Q53scn4step5enemy6common9ParamBaseFv:
 /* 8029174C 0028D58C  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -67,7 +67,7 @@ lbl_80291824:
 /* 80291838 0028D678  38 21 00 60 */	addi r1, r1, 0x60
 /* 8029183C 0028D67C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248731
 $$248731:
 	.incbin "baserom.dol", 0x49BAD8, 0x4

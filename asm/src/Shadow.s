@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle6ShadowFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModel
 __ct__Q33scn14challengetitle6ShadowFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModel:
 /* 801EFBC0 001EBA00  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -152,7 +152,7 @@ setVisibility__Q33scn14challengetitle6ShadowFb:
 /* 801EFDE0 001EBC20  38 21 00 20 */	addi r1, r1, 0x20
 /* 801EFDE4 001EBC24  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle6ShadowFRQ33scn10grandtitle9ComponentRQ23g3d10CharaModelQ33scn10grandtitle9CharaKindff
 __ct__Q33scn10grandtitle6ShadowFRQ33scn10grandtitle9ComponentRQ23g3d10CharaModelQ33scn10grandtitle9CharaKindff:
 /* 80206310 00202150  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -386,7 +386,7 @@ flash__Q33scn10grandtitle6ShadowFv:
 /* 80206650 00202490  80 63 01 B8 */	lwz r3, 0x1b8(r3)
 /* 80206654 00202494  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history6ShadowFRQ33scn7history9Component
 __ct__Q33scn7history6ShadowFRQ33scn7history9Component:
 /* 8020F2F0 0020B130  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -646,7 +646,7 @@ update__Q33scn7history6ShadowFRCQ33hel4math7Vector3:
 /* 8020F684 0020B4C4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8020F688 0020B4C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara6ShadowFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ24gobj8LocationRCQ43scn4step5chara13GroundCheckerf
 __ct__Q43scn4step5chara6ShadowFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ24gobj8LocationRCQ43scn4step5chara13GroundCheckerf:
 /* 80272AD0 0026E910  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -853,7 +853,7 @@ setHeightOffset__Q43scn4step5chara6ShadowFf:
 /* 80272D74 0026EBB4  D0 23 01 D4 */	stfs f1, 0x1d4(r3)
 /* 80272D78 0026EBB8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy6ShadowFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ24gobj8LocationRCQ43scn4step5chara13GroundCheckerf
 __ct__Q43scn4step5enemy6ShadowFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ24gobj8LocationRCQ43scn4step5chara13GroundCheckerf:
 /* 8028DB1C 0028995C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1053,17 +1053,17 @@ lbl_8028DDAC:
 /* 8028DDBC 00289BFC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8028DDC0 00289C00  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251778
 $$251778:
 	.incbin "baserom.dol", 0x45AF68, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252146
 $$252146:
 	.incbin "baserom.dol", 0x45CB78, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252296
 $$252296:
 	.incbin "baserom.dol", 0x45D668, 0x10
@@ -1074,7 +1074,7 @@ $$252348:
 $$252351:
 	.incbin "baserom.dol", 0x45D684, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn14challengetitle20$$2unnamed$$2Shadow_cpp$$2
 G3D_RES_FILE_PATH__Q33scn14challengetitle20$$2unnamed$$2Shadow_cpp$$2:
 	.incbin "baserom.dol", 0x494170, 0x4
@@ -1085,7 +1085,7 @@ $$252224:
 $$252232:
 	.incbin "baserom.dol", 0x49417C, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle20$$2unnamed$$2Shadow_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle20$$2unnamed$$2Shadow_cpp$$2:
 	.incbin "baserom.dol", 0x494810, 0x4
@@ -1096,12 +1096,12 @@ $$252859:
 $$252900:
 	.incbin "baserom.dol", 0x49481C, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252297
 $$252297:
 	.incbin "baserom.dol", 0x494A58, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252901
 $$252901:
 	.incbin "baserom.dol", 0x49AB20, 0x4
@@ -1115,7 +1115,7 @@ $$252903:
 $$252904:
 	.incbin "baserom.dol", 0x49AB2C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251517
 $$251517:
 	.incbin "baserom.dol", 0x49B868, 0x4
@@ -1135,7 +1135,7 @@ $$251770:
 $$251773:
 	.incbin "baserom.dol", 0x49B880, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252264
 $$252264:
 	.incbin "baserom.dol", 0x49BA30, 0x8

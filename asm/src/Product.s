@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GamePlayable__Q43scn7history6detail21$$2unnamed$$2Product_cpp$$2Fv
 GamePlayable__Q43scn7history6detail21$$2unnamed$$2Product_cpp$$2Fv:
 /* 80219EAC 00215CEC  3C 80 80 41 */	lis r4, $$249032@ha
@@ -380,10 +380,10 @@ __sinit_$$3Product_cpp:
 /* 8021A3EC 0021622C  38 21 01 70 */	addi r1, r1, 0x170
 /* 8021A3F0 00216230  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40246C, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$249032
 $$249032:
 	.incbin "baserom.dol", 0x412158, 0xC

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7blipper26StateFattyBufferAppearFallFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7blipper26StateFattyBufferAppearFallFPQ43scn4step5enemy5Enemy:
 /* 8029A740 00296580  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -183,12 +183,12 @@ procMove__Q53scn4step5enemy7blipper26StateFattyBufferAppearFallFv:
 procFixPos__Q53scn4step5enemy7blipper26StateFattyBufferAppearFallFv:
 /* 8029A9D4 00296814  4B FF 71 D0 */	b procFixPos__Q53scn4step5enemy6common9StateFallFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper26StateFattyBufferAppearFall
 __vt__Q53scn4step5enemy7blipper26StateFattyBufferAppearFall:
 	.incbin "baserom.dol", 0x46FFA0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256135
 $$256135:
 	.incbin "baserom.dol", 0x49BDF0, 0x8

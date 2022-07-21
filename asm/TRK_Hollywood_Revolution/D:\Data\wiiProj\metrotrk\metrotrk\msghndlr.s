@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetTRKConnected
 GetTRKConnected:
 /* 80017774 000135B4  80 6D E3 44 */	lwz r3, IsTRKConnected-_SDA_BASE_(r13)
@@ -1106,7 +1106,7 @@ lbl_80018694:
 /* 800186F0 00014530  38 21 00 50 */	addi r1, r1, 0x50
 /* 800186F4 00014534  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2781
 $$2781:
 	.incbin "baserom.dol", 0x41DE28, 0x1C

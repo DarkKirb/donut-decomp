@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CameraKind__Q43scn4step4core17DrawLayerKindUtilFQ43scn4step4core13DrawLayerKind
 CameraKind__Q43scn4step4core17DrawLayerKindUtilFQ43scn4step4core13DrawLayerKind:
 /* 80275F7C 00271DBC  1C 03 00 0C */	mulli r0, r3, 0xc
@@ -27,7 +27,7 @@ G3DLightSetCount__Q43scn4step4core17DrawLayerKindUtilFQ43scn4step4core13DrawLaye
 /* 80275FB8 00271DF8  80 63 00 08 */	lwz r3, 8(r3)
 /* 80275FBC 00271DFC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ENTRIES__Q43scn4step4core31$$2unnamed$$2DrawLayerKindUtil_cpp$$2
 T_ENTRIES__Q43scn4step4core31$$2unnamed$$2DrawLayerKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x413B60, 0xA0

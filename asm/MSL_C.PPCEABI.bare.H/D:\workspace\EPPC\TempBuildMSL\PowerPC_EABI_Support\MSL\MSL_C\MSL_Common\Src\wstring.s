@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global wcslen
 wcslen:
 /* 80010334 0000C174  38 83 FF FE */	addi r4, r3, -2

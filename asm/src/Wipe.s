@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tWipeFilePath__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2FQ43scn4step3sfx8WipeKind
 tWipeFilePath__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2FQ43scn4step3sfx8WipeKind:
 /* 803D090C 003CC74C  54 60 10 3A */	slwi r0, r3, 2
@@ -199,7 +199,7 @@ lbl_803D0B88:
 /* 803D0B94 003CC9D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D0B98 003CC9D8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23sfx4WipeFv
 __ct__Q23sfx4WipeFv:
 /* 80402248 003FE088  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -447,7 +447,7 @@ lbl_80402564:
 /* 80402574 003FE3B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80402578 003FE3B8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251702
 $$251702:
 	.incbin "baserom.dol", 0x48EE40, 0x14
@@ -461,7 +461,7 @@ $$251704:
 T_WIPE_FILE_PATH_TABLE__Q43scn4step3sfx18$$2unnamed$$2Wipe_cpp$$2:
 	.incbin "baserom.dol", 0x48EE80, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251793
 $$251793:
 	.incbin "baserom.dol", 0x498AA0, 0x8
@@ -469,12 +469,12 @@ $$251793:
 $$251832:
 	.incbin "baserom.dol", 0x498AA8, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251871
 $$251871:
 	.incbin "baserom.dol", 0x49E808, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251799
 $$251799:
 	.incbin "baserom.dol", 0x49EE88, 0x8

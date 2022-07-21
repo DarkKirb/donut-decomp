@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global VX2DecoderInit__FR14VX2DecoderDataii
 VX2DecoderInit__FR14VX2DecoderDataii:
 /* 80163340 0015F180  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -821,7 +821,7 @@ VX2DecoderGetQuantizer__FR14VX2DecoderData:
 /* 80163F08 0015FD48  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80163F0C 0015FD4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global InvVlc
 InvVlc:
 	.incbin "baserom.dol", 0x40B730, 0x9D4
@@ -835,7 +835,7 @@ MaxLevel:
 MaxRun:
 	.incbin "baserom.dol", 0x40F830, 0x100
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global VX2GolombCodeSigned
 VX2GolombCodeSigned:
 	.incbin "baserom.dol", 0x4446D8, 0x8000

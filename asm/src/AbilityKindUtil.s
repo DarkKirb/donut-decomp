@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global IsUseGear__Q33scn14challengetitle15AbilityKindUtilFQ33scn14challengetitle11AbilityKind
 IsUseGear__Q33scn14challengetitle15AbilityKindUtilFQ33scn14challengetitle11AbilityKind:
 /* 801EA168 001E5FA8  38 80 00 00 */	li r4, 0
@@ -334,7 +334,7 @@ __vc__Q33hel6common25Array$$0Q28dynamics4Desc$$42$$1FUl:
 /* 801EA594 001E63D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801EA598 001E63D8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FDNName__Q43scn4step4hero15AbilityKindUtilFQ43scn4step4hero11AbilityKind
 FDNName__Q43scn4step4hero15AbilityKindUtilFQ43scn4step4hero11AbilityKind:
 /* 8032B808 00327648  54 60 10 3A */	slwi r0, r3, 2
@@ -359,12 +359,12 @@ lbl_8032B844:
 /* 8032B844 00327684  38 60 00 01 */	li r3, 1
 /* 8032B848 00327688  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_MANUAL_KIND_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2
 T_MANUAL_KIND_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x415CC0, 0x90
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249295
 $$249295:
 	.incbin "baserom.dol", 0x45AA98, 0x28
@@ -390,7 +390,7 @@ $$249324:
 $$249325:
 	.incbin "baserom.dol", 0x45AB88, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248725
 $$248725:
 	.incbin "baserom.dol", 0x47E880, 0x18
@@ -440,7 +440,7 @@ $$248739:
 T_FDN_NAME_TABLE__Q43scn4step4hero29$$2unnamed$$2AbilityKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x47E9D8, 0x90
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249304
 $$249304:
 	.incbin "baserom.dol", 0x494078, 0x4
@@ -451,7 +451,7 @@ $$249305:
 $$249306:
 	.incbin "baserom.dol", 0x494084, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249353
 $$249353:
 	.incbin "baserom.dol", 0x49A8E0, 0x8

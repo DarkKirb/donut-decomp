@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q43scn4step4boss10CustomBase$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q43scn4step4boss10CustomBase$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 8022E4F0 0022A330  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -205,7 +205,7 @@ lbl_8022E6E0:
 /* 8022E6F4 0022A534  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022E6F8 0022A538  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q43scn4step5enemy10CustomBase$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q43scn4step5enemy10CustomBase$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80281E20 0027DC60  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -369,7 +369,7 @@ lbl_80281F9C:
 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 80281FB8 0027DDF8  4B FA C6 E8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon10CustomBaseFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon10CustomBaseFRQ43scn4step6weapon6Weapon:
 /* 803D3750 003CF590  3C A0 80 49 */	lis r5, __vt__Q43scn4step6weapon10CustomBase@ha
@@ -425,7 +425,7 @@ lbl_803D37C4:
 /* 803D37D8 003CF618  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D37DC 003CF61C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x460568, 0x10
@@ -436,7 +436,7 @@ __vt__Q24util28StateFactory$$0Q24util6IState$$1:
 __vt__Q43scn4step4boss10CustomBase:
 	.incbin "baserom.dol", 0x460588, 0x58
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16StateDeadInWater$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x46DC80, 0x10
@@ -444,12 +444,12 @@ __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6damage16St
 __vt__Q43scn4step5enemy10CustomBase:
 	.incbin "baserom.dol", 0x46DC90, 0x48
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon10CustomBase
 __vt__Q43scn4step6weapon10CustomBase:
 	.incbin "baserom.dol", 0x48F018, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250257
 $$250257:
 	.incbin "baserom.dol", 0x49AE38, 0x8

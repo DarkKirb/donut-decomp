@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon17StickObjAlgorithmFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon17StickObjAlgorithmFRQ43scn4step6weapon6Weapon:
 /* 803D8B48 003D4988  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -97,7 +97,7 @@ procMove__Q43scn4step6weapon17StickObjAlgorithmFv:
 /* 803D8CA0 003D4AE0  38 21 00 20 */	addi r1, r1, 0x20
 /* 803D8CA4 003D4AE4  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253717
 $$253717:
 	.incbin "baserom.dol", 0x49E868, 0x8

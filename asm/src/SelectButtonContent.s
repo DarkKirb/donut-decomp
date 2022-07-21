@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail19SelectButtonContentFRQ23mem10IAllocator
 __ct__Q43scn7history6detail19SelectButtonContentFRQ23mem10IAllocator:
 /* 8021A3F4 00216234  94 21 FE F0 */	stwu r1, -0x110(r1)
@@ -269,7 +269,7 @@ lbl_8021A7D0:
 /* 8021A7D0 00216610  38 8D A7 90 */	addi r4, r13, $$252351-_SDA_BASE_
 /* 8021A7D4 00216614  4B F9 27 C0 */	b play__Q23lyt6LayoutFPCc
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251551
 $$251551:
 	.incbin "baserom.dol", 0x45EEC8, 0xC
@@ -313,7 +313,7 @@ $$252349:
 $$252402:
 	.incbin "baserom.dol", 0x45F0AC, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251546
 $$251546:
 	.incbin "baserom.dol", 0x494ED0, 0x8

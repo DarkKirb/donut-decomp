@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history5KirbyFRQ33scn7history9Component
 __ct__Q33scn7history5KirbyFRQ33scn7history9Component:
 /* 80208340 00204180  94 21 FE 20 */	stwu r1, -0x1e0(r1)
@@ -1729,7 +1729,7 @@ __sinit_$$3Kirby_cpp:
 /* 80209C5C 00205A9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80209C60 00205AA0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Anim__Q53scn4step4hero9modeldesc5KirbyFv
 Anim__Q53scn4step4hero9modeldesc5KirbyFv:
 /* 8035C634 00358474  38 00 00 0F */	li r0, 0xf
@@ -1827,15 +1827,15 @@ lbl_8035C728:
 Script__Q53scn4step4hero9modeldesc5KirbyFv:
 /* 8035C778 003585B8  4B FF F4 34 */	b Script__Q53scn4step4hero9modeldesc6CommonFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402458, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc5KirbyFv$$2ENTRIES$$20
 $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc5KirbyFv$$2ENTRIES$$20:
 	.incbin "baserom.dol", 0x419DD0, 0xE38
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254770
 $$254770:
 	.incbin "baserom.dol", 0x45D098, 0x20
@@ -1870,7 +1870,7 @@ $$254953:
 $$255043:
 	.incbin "baserom.dol", 0x45D164, 0x3C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248734
 $$248734:
 	.incbin "baserom.dol", 0x485C40, 0xC
@@ -2673,7 +2673,7 @@ $$249086:
 $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc5KirbyFv$$2NAMES$$20:
 	.incbin "baserom.dol", 0x486D30, 0x78
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254931
 $$254931:
 	.incbin "baserom.dol", 0x4948F8, 0x8
@@ -2714,7 +2714,7 @@ $$254986:
 $$254995:
 	.incbin "baserom.dol", 0x494954, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248727
 $$248727:
 	.incbin "baserom.dol", 0x4971C8, 0x8
@@ -2971,7 +2971,7 @@ $$249080:
 $$249176:
 	.incbin "baserom.dol", 0x497460, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global PREV_ANGLE__Q33scn7history19$$2unnamed$$2Kirby_cpp$$2
 PREV_ANGLE__Q33scn7history19$$2unnamed$$2Kirby_cpp$$2:
 	.incbin "baserom.dol", 0x49AB88, 0x4

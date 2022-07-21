@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global drawBegin__Q23sfx11ScreenRemapFb
 drawBegin__Q23sfx11ScreenRemapFb:
 /* 80401708 003FD548  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -225,7 +225,7 @@ setupDrawOriginal__Q23sfx11ScreenRemapFv:
 /* 80401A5C 003FD89C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80401A60 003FD8A0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251565
 $$251565:
 	.incbin "baserom.dol", 0x49EE48, 0x4

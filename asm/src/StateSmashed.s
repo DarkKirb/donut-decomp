@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5sheld12StateSmashedFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5sheld12StateSmashedFPQ43scn4step5enemy5Enemy:
 /* 802DF2D8 002DB118  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -370,7 +370,7 @@ create__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15St
 __dt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802DF7FC 002DB63C  4B F4 EE A4 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9waddledee12StateSmashedFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9waddledee12StateSmashedFPQ43scn4step5enemy5Enemy:
 /* 802EE0E8 002E9F28  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -789,7 +789,7 @@ create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddlede
 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802EE6C4 002EA504  4B F3 FF DC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x477F60, 0x10
@@ -797,7 +797,7 @@ __vt__Q24util98StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy5sheld15Stat
 __vt__Q53scn4step5enemy5sheld12StateSmashed:
 	.incbin "baserom.dol", 0x477F70, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee15StateSmashedEnd$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x47A368, 0x10
@@ -805,7 +805,7 @@ __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee1
 __vt__Q53scn4step5enemy9waddledee12StateSmashed:
 	.incbin "baserom.dol", 0x47A378, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256802
 $$256802:
 	.incbin "baserom.dol", 0x49CD50, 0x4
@@ -828,7 +828,7 @@ $$256870:
 $$256871:
 	.incbin "baserom.dol", 0x49CD68, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256888
 $$256888:
 	.incbin "baserom.dol", 0x49D000, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetTevSwapMode__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTevSwapSel13_GXTevSwapSel
 GXSetTevSwapMode__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTevSwapSel13_GXTevSwapSel:
 /* 800CC0D0 000C7F10  54 89 0F FE */	srwi r9, r4, 0x1f
@@ -897,7 +897,7 @@ lbl_800CCD04:
 /* 800CCD08 000C8B48  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800CCD0C 000C8B4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2GXGetTevOrder__Q34nw4r3g3d6ResTevCF13_GXTevStageIDP13_GXTexCoordIDP11_GXTexMapIDP12_GXChannelID$$2r2c
 $$2LOCAL$$2GXGetTevOrder__Q34nw4r3g3d6ResTevCF13_GXTevStageIDP13_GXTexCoordIDP11_GXTexMapIDP12_GXChannelID$$2r2c:
 	.incbin "baserom.dol", 0x404420, 0x20
@@ -905,7 +905,7 @@ $$2LOCAL$$2GXGetTevOrder__Q34nw4r3g3d6ResTevCF13_GXTevStageIDP13_GXTexCoordIDP11
 $$2LOCAL$$2CallDisplayList__Q34nw4r3g3d6ResTevCFb$$2dlsize:
 	.incbin "baserom.dol", 0x404440, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GXSetTevOrder__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r
 $$2LOCAL$$2GXSetTevOrder__Q34nw4r3g3d6ResTevF13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID$$2c2r:
 	.incbin "baserom.dol", 0x43C740, 0x20

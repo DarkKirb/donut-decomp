@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm14VMFunctionListFRCQ25mintx5XDataPCQ26mintvm14BCFunctionList
 __ct__Q26mintvm14VMFunctionListFRCQ25mintx5XDataPCQ26mintvm14BCFunctionList:
 /* 801CCF90 001C8DD0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -165,7 +165,7 @@ lbl_801CD1B8:
 /* 801CD1D8 001C9018  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CD1DC 001C901C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26mintvm14VMFunctionList
 __vt__Q26mintvm14VMFunctionList:
 	.incbin "baserom.dol", 0x458C68, 0xC

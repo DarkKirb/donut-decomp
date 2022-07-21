@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global rfc_send_sabme
 rfc_send_sabme:
 /* 8009A968 000967A8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1588,7 +1588,7 @@ lbl_8009BF90:
 /* 8009BFA8 00097DE8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8009BFAC 00097DEC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21168
 $$21168:
 	.incbin "baserom.dol", 0x43B8E8, 0x10
@@ -1626,7 +1626,7 @@ $$21236:
 $$21237:
 	.incbin "baserom.dol", 0x43B9B0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21171
 $$21171:
 	.incbin "baserom.dol", 0x492D10, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history7PackageFQ33scn7history11ProductKindiRQ33scn7history9ComponentPCcPCcUl
 __ct__Q33scn7history7PackageFQ33scn7history11ProductKindiRQ33scn7history9ComponentPCcPCcUl:
 /* 8020D2C4 00209104  94 21 FA F0 */	stwu r1, -0x510(r1)
@@ -884,10 +884,10 @@ detachParent__Q33scn7history7PackageFv:
 .global packageScales__Q33scn7history7PackageCFv
 packageScales__Q33scn7history7PackageCFv:
 /* 8020DF78 00209DB8  38 63 05 24 */	addi r3, r3, 0x524
-/* 8020DF7C 00209DBC  48 00 00 04 */	b dataHeadAddress__Q25xdata5XDataCFv
+/* 8020DF7C 00209DBC  48 00 00 04 */	b dataHeadAddress__Q25.dataXDataCFv
 
-.global dataHeadAddress__Q25xdata5XDataCFv
-dataHeadAddress__Q25xdata5XDataCFv:
+.global dataHeadAddress__Q25.dataXDataCFv
+dataHeadAddress__Q25.dataXDataCFv:
 /* 8020DF80 00209DC0  38 80 00 00 */	li r4, 0
 /* 8020DF84 00209DC4  38 A0 00 00 */	li r5, 0
 /* 8020DF88 00209DC8  38 C0 00 00 */	li r6, 0
@@ -925,7 +925,7 @@ lbl_8020DFEC:
 .global shadowScales__Q33scn7history7PackageCFv
 shadowScales__Q33scn7history7PackageCFv:
 /* 8020DFF4 00209E34  38 63 05 2C */	addi r3, r3, 0x52c
-/* 8020DFF8 00209E38  4B FF FF 88 */	b dataHeadAddress__Q25xdata5XDataCFv
+/* 8020DFF8 00209E38  4B FF FF 88 */	b dataHeadAddress__Q25.dataXDataCFv
 
 .global __sinit_$$3Package_cpp
 __sinit_$$3Package_cpp:
@@ -936,10 +936,10 @@ __sinit_$$3Package_cpp:
 /* 8020E00C 00209E4C  C0 62 A1 78 */	lfs f3, $$253467-_SDA2_BASE_(r2)
 /* 8020E010 00209E50  4B EB 00 B0 */	b __ct__Q34nw4r4math4VEC3Ffff
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40245C, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253252
 $$253252:
 	.incbin "baserom.dol", 0x45D520, 0x10
@@ -956,7 +956,7 @@ $$253256:
 __vt__Q33scn7history7Package:
 	.incbin "baserom.dol", 0x45D570, 0x70
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253254
 $$253254:
 	.incbin "baserom.dol", 0x4949D0, 0x8
@@ -982,7 +982,7 @@ $$253383:
 $$253427:
 	.incbin "baserom.dol", 0x494A08, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253265
 $$253265:
 	.incbin "baserom.dol", 0x49AC20, 0x8

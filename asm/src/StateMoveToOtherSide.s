@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6dubior20StateMoveToOtherSideFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6dubior20StateMoveToOtherSideFPQ43scn4step4boss4Boss:
 /* 8024FD3C 0024BB7C  94 21 FF 00 */	stwu r1, -0x100(r1)
@@ -413,17 +413,17 @@ procMove__Q53scn4step4boss6dubior20StateMoveToOtherSideFv:
 procFixPos__Q53scn4step4boss6dubior20StateMoveToOtherSideFv:
 /* 80250330 0024C170  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global WaitFrameTable__Q53scn4step4boss6dubior34$$2unnamed$$2StateMoveToOtherSide_cpp$$2
 WaitFrameTable__Q53scn4step4boss6dubior34$$2unnamed$$2StateMoveToOtherSide_cpp$$2:
 	.incbin "baserom.dol", 0x412CC8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide
 __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide:
 	.incbin "baserom.dol", 0x463960, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256237
 $$256237:
 	.incbin "baserom.dol", 0x49B338, 0x4

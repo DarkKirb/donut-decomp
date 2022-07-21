@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global UpdateOrigin
 UpdateOrigin:
 /* 800524C0 0004E300  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1751,7 +1751,7 @@ lbl_80053DD0:
 /* 80053DE8 0004FC28  4E 80 00 20 */	blr 
 /* 80053DEC 0004FC2C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
 	.incbin "baserom.dol", 0x434630, 0x48
@@ -1759,7 +1759,7 @@ $$21:
 ShutdownFunctionInfo:
 	.incbin "baserom.dol", 0x434678, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __PADVersion
 __PADVersion:
 	.incbin "baserom.dol", 0x492BA0, 0x4

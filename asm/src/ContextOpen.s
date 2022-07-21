@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb
 Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb:
 /* 801DB318 001D7158  94 21 FF E0 */	stwu r1, -0x20(r1)

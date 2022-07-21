@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tAllocator__Q23app22$$2unnamed$$2SaveInfo_cpp$$2Fv
 tAllocator__Q23app22$$2unnamed$$2SaveInfo_cpp$$2Fv:
 /* 8017B63C 0017747C  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)
@@ -423,7 +423,7 @@ requestSave__Q23app8SaveInfoFv:
 /* 8017BBD4 00177A14  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017BBD8 00177A18  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252513
 $$252513:
 	.incbin "baserom.dol", 0x44F168, 0x10
@@ -446,7 +446,7 @@ $$252582:
 $$252583:
 	.incbin "baserom.dol", 0x44F1C0, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252516
 $$252516:
 	.incbin "baserom.dol", 0x4930A0, 0x8

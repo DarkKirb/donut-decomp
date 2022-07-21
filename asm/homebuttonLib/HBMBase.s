@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global initgx__10homebuttonFv
 initgx__10homebuttonFv:
 /* 8012C410 00128250  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -9689,7 +9689,7 @@ lbl_80134CE0:
 /* 80134D08 00130B48  38 21 00 10 */	addi r1, r1, 0x10
 /* 80134D0C 00130B4C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29436
 $$29436:
 	.incbin "baserom.dol", 0x409F40, 0x8
@@ -9841,7 +9841,7 @@ scSoundThreadPrio__Q210homebutton10HomeButton:
 scDvdThreadPrio__Q210homebutton10HomeButton:
 	.incbin "baserom.dol", 0x40A2B8, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29521
 $$29521:
 	.incbin "baserom.dol", 0x43F168, 0x10

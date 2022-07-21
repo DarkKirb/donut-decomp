@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero19CaptureHeroAttackerFRQ33scn4step9ComponentRQ25ocoll9SearchHit
 __ct__Q43scn4step4hero19CaptureHeroAttackerFRQ33scn4step9ComponentRQ25ocoll9SearchHit:
 /* 80332308 0032E148  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -780,7 +780,7 @@ lbl_80332D5C:
 /* 80332D6C 0032EBAC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80332D70 0032EBB0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroAttacker$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroAttacker$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x47FD60, 0x24

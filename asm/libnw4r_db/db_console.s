@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Console_Create__Q24nw4r2dbFPvUsUsUsUsUs
 Console_Create__Q24nw4r2dbFPvUsUsUsUsUs:
 /* 80127830 00123670  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -802,7 +802,7 @@ lbl_80128328:
 /* 80128348 00124188  4E 80 00 20 */	blr 
 /* 8012834C 0012418C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$28595
 $$28595:
 	.incbin "baserom.dol", 0x492E68, 0x4

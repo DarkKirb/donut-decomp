@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ldexp
 ldexp:
 /* 800141DC 0001001C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -105,7 +105,7 @@ lbl_80014330:
 /* 80014340 00010180  38 21 00 20 */	addi r1, r1, 0x20
 /* 80014344 00010184  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2488
 $$2488:
 	.incbin "baserom.dol", 0x498FC0, 0x8

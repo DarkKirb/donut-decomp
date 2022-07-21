@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail12EnvGeneratorFv
 __ct__Q44nw4r3snd6detail12EnvGeneratorFv:
 /* 80108B30 00104970  C0 22 93 78 */	lfs f1, VOLUME_INIT__Q44nw4r3snd6detail12EnvGenerator-_SDA2_BASE_(r2)
@@ -293,7 +293,7 @@ lbl_80108EF4:
 /* 80108EF8 00104D38  38 21 00 20 */	addi r1, r1, 0x20
 /* 80108EFC 00104D3C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator
 DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator:
 	.incbin "baserom.dol", 0x407458, 0x100
@@ -301,7 +301,7 @@ DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator:
 $$2LOCAL$$2SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi$$2attackTable:
 	.incbin "baserom.dol", 0x407558, 0x200
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global VOLUME_INIT__Q44nw4r3snd6detail12EnvGenerator
 VOLUME_INIT__Q44nw4r3snd6detail12EnvGenerator:
 	.incbin "baserom.dol", 0x499E38, 0x4

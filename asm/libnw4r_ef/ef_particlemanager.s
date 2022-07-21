@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef15ParticleManagerFv
 __ct__Q34nw4r2ef15ParticleManagerFv:
 /* 800B0260 000AC0A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2379,10 +2379,10 @@ __sinit_$$3ef_particlemanager_cpp:
 /* 800B2538 000AE378  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800B253C 000AE37C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40236C, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$211043
 $$211043:
 	.incbin "baserom.dol", 0x43C420, 0x28
@@ -2390,7 +2390,7 @@ $$211043:
 __vt__Q34nw4r2ef15ParticleManager:
 	.incbin "baserom.dol", 0x43C448, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210377
 $$210377:
 	.incbin "baserom.dol", 0x4995B8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10knucklejoe11StateVulcanFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10knucklejoe11StateVulcanFPQ43scn4step5enemy5Enemy:
 /* 802C0AA4 002BC8E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -146,7 +146,7 @@ lbl_802C0C94:
 procFixPos__Q53scn4step5enemy10knucklejoe11StateVulcanFv:
 /* 802C0CA8 002BCAE8  4B FE 0E 84 */	b procFixPos__Q53scn4step5enemy11broomhatter9StateWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter11StateVulcanFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7fighter11StateVulcanFPQ43scn4step4hero4Hero:
 /* 803A0100 0039BF40  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -369,7 +369,7 @@ create__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14S
 __dt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$4b$$1Fv:
 /* 803A03E0 0039C220  4B E8 E2 C0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero5smash11StateVulcanFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero5smash11StateVulcanFPQ43scn4step4hero4Hero:
 /* 803A2900 0039E740  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -576,12 +576,12 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash11State
 __dt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 803A2B94 0039E9D4  4B E8 BB 0C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10knucklejoe11StateVulcan
 __vt__Q53scn4step5enemy10knucklejoe11StateVulcan:
 	.incbin "baserom.dol", 0x474AB0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$4b$$1
 __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$4b$$1:
 	.incbin "baserom.dol", 0x48A780, 0x10
@@ -589,7 +589,7 @@ __vt__Q24util98StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero7fighter14Sta
 __vt__Q53scn4step4hero7fighter11StateVulcan:
 	.incbin "baserom.dol", 0x48A790, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash14StateVulcanEnd$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x48B000, 0x10
@@ -600,7 +600,7 @@ __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash11State
 __vt__Q53scn4step4hero5smash11StateVulcan:
 	.incbin "baserom.dol", 0x48B020, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255822
 $$255822:
 	.incbin "baserom.dol", 0x49C760, 0x4

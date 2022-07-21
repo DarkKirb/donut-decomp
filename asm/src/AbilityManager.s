@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q53scn4step4hero5spark6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q53scn4step4hero5spark6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 8032B84C 0032768C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1449,7 +1449,7 @@ lbl_8032CB2C:
 /* 8032CB3C 0032897C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032CB40 00328980  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$261578
 $$261578:
 	.incbin "baserom.dol", 0x47EA68, 0x68

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11areamapdemo17DemoAllStageClearFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1
 __ct__Q53scn4step7gimmick11areamapdemo17DemoAllStageClearFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1:
 /* 802FAE98 002F6CD8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -262,7 +262,7 @@ mfGetBasePos__Q53scn4step7gimmick11areamapdemo17DemoAllStageClearFv:
 /* 802FB220 002F7060  38 21 00 10 */	addi r1, r1, 0x10
 /* 802FB224 002F7064  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257907
 $$257907:
 	.incbin "baserom.dol", 0x47B640, 0x38
@@ -270,7 +270,7 @@ $$257907:
 __vt__Q53scn4step7gimmick11areamapdemo17DemoAllStageClear:
 	.incbin "baserom.dol", 0x47B678, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257905
 $$257905:
 	.incbin "baserom.dol", 0x49D148, 0x4

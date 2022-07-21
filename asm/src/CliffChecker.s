@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara12CliffCheckerFRQ33scn4step9ComponentRQ24gobj8LocationRQ24gobj9FootStateRQ24gobj6Targetf
 __ct__Q43scn4step5chara12CliffCheckerFRQ33scn4step9ComponentRQ24gobj8LocationRQ24gobj9FootStateRQ24gobj6Targetf:
 /* 8026D514 00269354  90 83 00 00 */	stw r4, 0(r3)
@@ -151,7 +151,7 @@ setValid__Q43scn4step5chara12CliffCheckerFb:
 /* 8026D720 00269560  98 83 00 15 */	stb r4, 0x15(r3)
 /* 8026D724 00269564  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252371
 $$252371:
 	.incbin "baserom.dol", 0x49B760, 0x4

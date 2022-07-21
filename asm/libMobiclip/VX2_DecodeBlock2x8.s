@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global VX2CommandSkip12x8__FR14VX2DecoderData
 VX2CommandSkip12x8__FR14VX2DecoderData:
 /* 80159EF0 00155D30  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -856,7 +856,7 @@ lbl_8015ABA8:
 /* 8015ABB8 001569F8  4E 80 04 20 */	bctr 
 /* 8015ABBC 001569FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global VX2CommandTable2x8
 VX2CommandTable2x8:
 	.incbin "baserom.dol", 0x40AED8, 0x28

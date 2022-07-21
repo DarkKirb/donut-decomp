@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext
 UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext:
 /* 8012AC40 00126A80  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -664,7 +664,7 @@ isPlayReady__Q210homebutton9RemoteSpkCFl:
 /* 8012B558 00127398  4E 80 00 20 */	blr 
 /* 8012B55C 0012739C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q210homebutton9RemoteSpk
 __vt__Q210homebutton9RemoteSpk:
 	.incbin "baserom.dol", 0x43ED98, 0xC

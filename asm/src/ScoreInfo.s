@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step9challenge9ScoreInfoFRQ33scn4step9ComponentRQ43scn4step9challenge7ManagerRQ23g3d15ResFileAccessorRQ33hel4math7Vector3
 __ct__Q43scn4step9challenge9ScoreInfoFRQ33scn4step9ComponentRQ43scn4step9challenge7ManagerRQ23g3d15ResFileAccessorRQ33hel4math7Vector3:
 /* 8026A048 00265E88  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -76,7 +76,7 @@ isAlive__Q43scn4step9challenge9ScoreInfoCFv:
 /* 8026A13C 00265F7C  38 63 00 08 */	addi r3, r3, 8
 /* 8026A140 00265F80  4B F2 AC CC */	b isAnimating__Q23g3d8StdModelCFv
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251676
 $$251676:
 	.incbin "baserom.dol", 0x495820, 0x8

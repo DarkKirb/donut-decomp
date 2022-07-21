@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info11InfoControlFRQ33scn4step9Component
 __ct__Q43scn4step4info11InfoControlFRQ33scn4step9Component:
 /* 803AA930 003A6770  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1024,7 +1024,7 @@ lbl_803AB77C:
 /* 803AB790 003A75D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803AB794 003A75D4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255923
 $$255923:
 	.incbin "baserom.dol", 0x48BD88, 0x20

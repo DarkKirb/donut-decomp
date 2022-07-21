@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WBT_ExtCreateRecord
 WBT_ExtCreateRecord:
 /* 80089500 00085340  94 21 FE E0 */	stwu r1, -0x120(r1)

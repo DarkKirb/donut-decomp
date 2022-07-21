@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __register_fragment
 __register_fragment:
 /* 80007A6C 000038AC  3C A0 80 49 */	lis r5, fragmentinfo@ha
@@ -1653,7 +1653,7 @@ what__Q23std13bad_exceptionCFv:
 /* 80009174 00004FB4  38 63 10 E4 */	addi r3, r3, $$2STRING$$2what__Q23std13bad_exceptionCFv@l
 /* 80009178 00004FB8  4E 80 00 20 */	blr 
 
-.section .data0, "wa"  # 0x80006740 - 0x800068E0
+.section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2283
 $$2283:
 	.incbin "baserom.dol", 0x4020E8, 0x8
@@ -1673,7 +1673,7 @@ $$2952:
 $$21130:
 	.incbin "baserom.dol", 0x402140, 0x14
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2284
 $$2284:
 	.incbin "baserom.dol", 0x40227C, 0xC
@@ -1693,7 +1693,7 @@ $$2953:
 $$21131:
 	.incbin "baserom.dol", 0x4022B8, 0xC
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21152
 $$21152:
 	.incbin "baserom.dol", 0x402698, 0x14
@@ -1701,7 +1701,7 @@ $$21152:
 $$2stringBase0:
 	.incbin "baserom.dol", 0x4026AC, 0x54
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2366
 $$2366:
 	.incbin "baserom.dol", 0x41D140, 0x44
@@ -1718,7 +1718,7 @@ $$21153:
 $$2STRING$$2what__Q23std13bad_exceptionCFv:
 	.incbin "baserom.dol", 0x41D1E4, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std13bad_exception
 __RTTI__Q23std13bad_exception:
 	.incbin "baserom.dol", 0x492818, 0x8

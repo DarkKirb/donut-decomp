@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss8HateCtrlFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss8HateCtrlFRQ43scn4step4boss4Boss:
 /* 8023050C 0022C34C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -412,7 +412,7 @@ lbl_80230A5C:
 /* 80230A8C 0022C8CC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80230A90 0022C8D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4hero4Hero$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x460688, 0x24

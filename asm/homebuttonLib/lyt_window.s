@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet
 __ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet:
 /* 8013D4F0 00139330  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2568,10 +2568,10 @@ __sinit_$$3lyt_window_cpp:
 /* 8013FB18 0013B958  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8013FB1C 0013B95C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023D4, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29107
 $$29107:
 	.incbin "baserom.dol", 0x40A370, 0x8
@@ -2582,7 +2582,7 @@ $$29114:
 $$29115:
 	.incbin "baserom.dol", 0x40A380, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2GetTexutreFlipInfo__24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos
 $$2LOCAL$$2GetTexutreFlipInfo__24$$2unnamed$$2lyt_window_cpp$$2FUc$$2flipInfos:
 	.incbin "baserom.dol", 0x440368, 0x3C

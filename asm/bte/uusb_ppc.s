@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global uusb_CloseDeviceCB
 uusb_CloseDeviceCB:
 /* 80076B30 00072970  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -882,7 +882,7 @@ UUSB_Unregister:
 /* 80077798 000735D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8007779C 000735DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global wait4hci
 wait4hci:
 	.incbin "baserom.dol", 0x492C80, 0x4

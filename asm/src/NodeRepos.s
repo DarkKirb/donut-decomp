@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj9NodeReposFRCQ24gobj13NodeReposDescRQ23mem10IAllocatorRCQ23g3d13ModelAccessor
 __ct__Q24gobj9NodeReposFRCQ24gobj13NodeReposDescRQ23mem10IAllocatorRCQ23g3d13ModelAccessor:
 /* 8019BA20 00197860  94 21 FF C0 */	stwu r1, -0x40(r1)

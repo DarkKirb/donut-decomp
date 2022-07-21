@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSLoadFPUContext
 __OSLoadFPUContext:
 /* 8001CF90 00018DD0  A0 A4 01 A2 */	lhz r5, 0x1a2(r4)
@@ -709,7 +709,7 @@ lbl_8001D988:
 /* 8001D988 000197C8  4E 80 00 20 */	blr 
 /* 8001D98C 000197CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2715
 $$2715:
 	.incbin "baserom.dol", 0x41E500, 0x48

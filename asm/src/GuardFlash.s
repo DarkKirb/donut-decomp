@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss10GuardFlashFv
 __ct__Q43scn4step4boss10GuardFlashFv:
 /* 802304B8 0022C2F8  80 02 A3 C4 */	lwz r0, $$249319-_SDA2_BASE_(r2)
@@ -29,7 +29,7 @@ lbl_802304F8:
 /* 80230504 0022C344  98 03 00 03 */	stb r0, 3(r3)
 /* 80230508 0022C348  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_ALPHA_TABLE__Q43scn4step4boss24$$2unnamed$$2GuardFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss24$$2unnamed$$2GuardFlash_cpp$$2:
 	.incbin "baserom.dol", 0x49AE80, 0x4

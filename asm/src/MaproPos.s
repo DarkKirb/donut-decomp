@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global toWorldPos__Q33scn4step8MaproPosCFv
 toWorldPos__Q33scn4step8MaproPosCFv:
 /* 8022169C 0021D4DC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -26,7 +26,7 @@ toWorldPos__Q33scn4step8MaproPosCFv:
 /* 802216EC 0021D52C  38 21 00 20 */	addi r1, r1, 0x20
 /* 802216F0 0021D530  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249677
 $$249677:
 	.incbin "baserom.dol", 0x49AD50, 0x8

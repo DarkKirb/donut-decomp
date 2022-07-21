@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ieee754_fmod
 __ieee754_fmod:
 /* 80010DDC 0000CC1C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -271,7 +271,7 @@ lbl_80011154:
 /* 80011154 0000CF94  38 21 00 20 */	addi r1, r1, 0x20
 /* 80011158 0000CF98  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global Zero
 Zero:
 	.incbin "baserom.dol", 0x4033A0, 0x10

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultHeapNamePrefix__Q23g3d21ModelMultiAnimContextFv
 DefaultHeapNamePrefix__Q23g3d21ModelMultiAnimContextFv:
 /* 80192C20 0018EA60  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -62,7 +62,7 @@ lbl_80192CC8:
 /* 80192CDC 0018EB1C  91 03 00 54 */	stw r8, 0x54(r3)
 /* 80192CE0 0018EB20  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248944
 $$248944:
 	.incbin "baserom.dol", 0x4931B0, 0x4

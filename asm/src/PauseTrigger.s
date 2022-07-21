@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4core12PauseTriggerFRQ33scn4step9Component
 __ct__Q43scn4step4core12PauseTriggerFRQ33scn4step9Component:
 /* 802779A0 002737E0  94 21 FF F0 */	stwu r1, -0x10(r1)

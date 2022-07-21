@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6damage16StateDeadInWaterFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6damage16StateDeadInWaterFPQ43scn4step5enemy5Enemy:
 /* 802AA9B4 002A67F4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -401,17 +401,17 @@ lbl_802AAE7C:
 /* 802AAF6C 002A6DAC  38 21 00 60 */	addi r1, r1, 0x60
 /* 802AAF70 002A6DB0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6damage16StateDeadInWater
 __vt__Q53scn4step5enemy6damage16StateDeadInWater:
 	.incbin "baserom.dol", 0x471E20, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256983
 $$256983:
 	.incbin "baserom.dol", 0x495D08, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257302
 $$257302:
 	.incbin "baserom.dol", 0x49C1D8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara7ObjCollFRQ33scn4step9ComponentRQ24gobj5ModelQ43scn4step5ocoll6TeamNoUlRQ23mem10IAllocator
 __ct__Q43scn4step5chara7ObjCollFRQ33scn4step9ComponentRQ24gobj5ModelQ43scn4step5ocoll6TeamNoUlRQ23mem10IAllocator:
 /* 80271D34 0026DB74  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -515,7 +515,7 @@ searchAttack__Q43scn4step5chara7ObjCollFv:
 /* 80272358 0026E198  38 63 08 10 */	addi r3, r3, 0x810
 /* 8027235C 0026E19C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero7ObjCollFRQ43scn4step4hero4HeroRQ23mem10IAllocator
 __ct__Q43scn4step4hero7ObjCollFRQ43scn4step4hero4HeroRQ23mem10IAllocator:
 /* 8034F46C 0034B2AC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -904,7 +904,7 @@ onObjStopFinished__Q43scn4step4hero7ObjCollFv:
 /* 8034F9B4 0034B7F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8034F9B8 0034B7F8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257554
 $$257554:
 	.incbin "baserom.dol", 0x49D8B8, 0x4

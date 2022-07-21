@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global gap_conn_init
 gap_conn_init:
 /* 80089640 00085480  3D 40 80 09 */	lis r10, gap_connect_ind@ha
@@ -827,7 +827,7 @@ lbl_8008A164:
 /* 8008A174 00085FB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008A178 00085FB8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21709
 $$21709:
 	.incbin "baserom.dol", 0x438E20, 0x44
@@ -841,7 +841,7 @@ $$21777:
 $$21798:
 	.incbin "baserom.dol", 0x438EB8, 0x38
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21708
 $$21708:
 	.incbin "baserom.dol", 0x492CF8, 0x8

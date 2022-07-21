@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global dthandler__3stdFv
 dthandler__3stdFv:
 /* 80006C10 00002A50  48 00 99 18 */	b abort
@@ -421,7 +421,7 @@ lbl_8000716C:
 /* 8000718C 00002FCC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80007190 00002FD0  4E 80 00 20 */	blr 
 
-.section .data0, "wa"  # 0x80006740 - 0x800068E0
+.section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2340
 $$2340:
 	.incbin "baserom.dol", 0x4020A8, 0x18
@@ -435,7 +435,7 @@ $$2383:
 $$2401:
 	.incbin "baserom.dol", 0x4020E0, 0x8
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2341
 $$2341:
 	.incbin "baserom.dol", 0x40224C, 0xC
@@ -449,7 +449,7 @@ $$2384:
 $$2402:
 	.incbin "baserom.dol", 0x402270, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global thandler__3std
 thandler__3std:
 	.incbin "baserom.dol", 0x492808, 0x4

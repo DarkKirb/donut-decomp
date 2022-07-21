@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1Q33scn4step9LevelKind
 __ct__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarFRQ33scn4step9ComponentRQ43scn4step7gimmick53ParamAccessor$$0Q53scn4step7gimmick11areamapdemo5Param$$1Q33scn4step9LevelKind:
 /* 802FB228 002F7068  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -278,7 +278,7 @@ endCameraMove__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarFif:
 /* 802FB5EC 002F742C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802FB5F0 002F7430  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256147
 $$256147:
 	.incbin "baserom.dol", 0x47B6A0, 0x38
@@ -286,7 +286,7 @@ $$256147:
 __vt__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStar:
 	.incbin "baserom.dol", 0x47B6D8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256125
 $$256125:
 	.incbin "baserom.dol", 0x49D158, 0x4

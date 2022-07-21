@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MakeDiffuseLightObj__Q34nw4r3g3d24$$2unnamed$$2g3d_anmscn_cpp$$2FPQ34nw4r3g3d8LightObjPCQ34nw4r3g3d14LightAnmResult
 MakeDiffuseLightObj__Q34nw4r3g3d24$$2unnamed$$2g3d_anmscn_cpp$$2FPQ34nw4r3g3d8LightObjPCQ34nw4r3g3d14LightAnmResult:
 /* 800DA7F0 000D6630  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1595,7 +1595,7 @@ GetTypeObj__Q34nw4r3g3d6AnmScnCFv:
 /* 800DBD08 000D7B48  4E 80 00 20 */	blr 
 /* 800DBD0C 000D7B4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6AnmScn
 TYPE_NAME__Q34nw4r3g3d6AnmScn:
 	.incbin "baserom.dol", 0x4046C8, 0x10
@@ -1603,7 +1603,7 @@ TYPE_NAME__Q34nw4r3g3d6AnmScn:
 TYPE_NAME__Q34nw4r3g3d9AnmScnRes:
 	.incbin "baserom.dol", 0x4046D8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d9AnmScnRes
 __vt__Q34nw4r3g3d9AnmScnRes:
 	.incbin "baserom.dol", 0x43CF10, 0x90
@@ -1611,7 +1611,7 @@ __vt__Q34nw4r3g3d9AnmScnRes:
 __vt__Q34nw4r3g3d6AnmScn:
 	.incbin "baserom.dol", 0x43CFA0, 0x90
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$213876
 $$213876:
 	.incbin "baserom.dol", 0x499AC8, 0x4

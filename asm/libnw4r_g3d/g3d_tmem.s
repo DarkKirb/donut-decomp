@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetTMemLayout__Q34nw4r3g3d4tmemFQ44nw4r3g3d4tmem10TMemLayout
 SetTMemLayout__Q34nw4r3g3d4tmemFQ44nw4r3g3d4tmem10TMemLayout:
 /* 800DC470 000D82B0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -241,7 +241,7 @@ lbl_800DC7B8:
 /* 800DC7C8 000D8608  38 21 00 30 */	addi r1, r1, 0x30
 /* 800DC7CC 000D860C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global scaaaTexRegionAddr
 scaaaTexRegionAddr:
 	.incbin "baserom.dol", 0x404708, 0x3C0

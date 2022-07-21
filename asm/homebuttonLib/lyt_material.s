@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcTextureMtx__26$$2unnamed$$2lyt_material_cpp$$2FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT
 CalcTextureMtx__26$$2unnamed$$2lyt_material_cpp$$2FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT:
 /* 80137870 001336B0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3433,7 +3433,7 @@ lbl_8013AA5C:
 /* 8013AA78 001368B8  38 21 00 60 */	addi r1, r1, 0x60
 /* 8013AA7C 001368BC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DefaultBlackColor
 DefaultBlackColor:
 	.incbin "baserom.dol", 0x40A300, 0x8
@@ -3459,7 +3459,7 @@ $$29536:
 $$211974:
 	.incbin "baserom.dol", 0x40A328, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kColSels
 $$2LOCAL$$2SetupGX__Q36nw4hbm3lyt8MaterialFbUc$$2kColSels:
 	.incbin "baserom.dol", 0x440110, 0x20

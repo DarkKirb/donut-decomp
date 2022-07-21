@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_sys_rm_register
 bta_sys_rm_register:
 /* 80078008 00073E48  3C 80 80 4F */	lis r4, bta_sys_cb@ha

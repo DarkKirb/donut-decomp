@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hid14RumbleResourceFQ23hid18RumbleResourceKind
 __ct__Q23hid14RumbleResourceFQ23hid18RumbleResourceKind:
 /* 801A4178 0019FFB8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -35,7 +35,7 @@ commandList__Q23hid14RumbleResourceCFUl:
 /* 801A41E0 001A0020  7C 7E 1B 78 */	mr r30, r3
 /* 801A41E4 001A0024  7C 9F 23 78 */	mr r31, r4
 /* 801A41E8 001A0028  38 63 00 04 */	addi r3, r3, 4
-/* 801A41EC 001A002C  4B FE 2F 81 */	bl isValidData__Q25xdata5XDataCFv
+/* 801A41EC 001A002C  4B FE 2F 81 */	bl isValidData__Q25.dataXDataCFv
 /* 801A41F0 001A0030  2C 03 00 00 */	cmpwi r3, 0
 /* 801A41F4 001A0034  41 82 00 10 */	beq lbl_801A4204
 /* 801A41F8 001A0038  80 7E 00 04 */	lwz r3, 4(r30)
@@ -48,7 +48,7 @@ lbl_801A4208:
 /* 801A420C 001A004C  7C 63 02 14 */	add r3, r3, r0
 /* 801A4210 001A0050  83 E3 00 04 */	lwz r31, 4(r3)
 /* 801A4214 001A0054  38 7E 00 04 */	addi r3, r30, 4
-/* 801A4218 001A0058  4B FE 2F 55 */	bl isValidData__Q25xdata5XDataCFv
+/* 801A4218 001A0058  4B FE 2F 55 */	bl isValidData__Q25.dataXDataCFv
 /* 801A421C 001A005C  2C 03 00 00 */	cmpwi r3, 0
 /* 801A4220 001A0060  40 82 00 0C */	bne lbl_801A422C
 /* 801A4224 001A0064  38 60 00 00 */	li r3, 0
@@ -73,7 +73,7 @@ lbl_801A4250:
 /* 801A4260 001A00A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4264 001A00A4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248751
 $$248751:
 	.incbin "baserom.dol", 0x453040, 0x1C
@@ -81,7 +81,7 @@ $$248751:
 $$248752:
 	.incbin "baserom.dol", 0x45305C, 0x24
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2
 T_DAT_PATH_TABLE__Q23hid28$$2unnamed$$2RumbleResource_cpp$$2:
 	.incbin "baserom.dol", 0x493280, 0x8

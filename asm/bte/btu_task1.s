@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global btu_task_init
 btu_task_init:
 /* 80077AF0 00073930  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -330,7 +330,7 @@ btu_stop_timer:
 /* 80077F2C 00073D6C  38 65 00 40 */	addi r3, r5, 0x40
 /* 80077F30 00073D70  4B FF E1 60 */	b GKI_remove_from_timer_list
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global btu_count
 btu_count:
 	.incbin "baserom.dol", 0x492CD0, 0x4

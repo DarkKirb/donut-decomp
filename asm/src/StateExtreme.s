@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero6damage12StateExtremeFPQ43scn4step4hero4HeroQ63scn4step4hero6damage12StateExtreme11DamageLevel
 __ct__Q53scn4step4hero6damage12StateExtremeFPQ43scn4step4hero4HeroQ63scn4step4hero6damage12StateExtreme11DamageLevel:
 /* 80375AD8 00371918  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -375,7 +375,7 @@ create__Q24util94StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10St
 __dt__Q24util94StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateFaint$$4PQ43scn4step4hero4Hero$$4Ul$$1Fv:
 /* 8037601C 00371E5C  4B EB 86 84 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util94StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateFaint$$4PQ43scn4step4hero4Hero$$4Ul$$1
 __vt__Q24util94StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10StateFaint$$4PQ43scn4step4hero4Hero$$4Ul$$1:
 	.incbin "baserom.dol", 0x488730, 0x10
@@ -383,7 +383,7 @@ __vt__Q24util94StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero6common10Stat
 __vt__Q53scn4step4hero6damage12StateExtreme:
 	.incbin "baserom.dol", 0x488740, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256907
 $$256907:
 	.incbin "baserom.dol", 0x49DDF8, 0x4

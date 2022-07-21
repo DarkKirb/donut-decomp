@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q24gobj10MintScriptFRQ24gobj6Script
 Register__Q24gobj10MintScriptFRQ24gobj6Script:
 /* 8019AF44 00196D84  90 6D ED D8 */	stw r3, t_obj__Q24gobj24$$2unnamed$$2MintScript_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintScript_cpp:
 /* 8019AF60 00196DA0  38 6D ED D8 */	addi r3, r13, t_obj__Q24gobj24$$2unnamed$$2MintScript_cpp$$2-_SDA_BASE_
 /* 8019AF64 00196DA4  4B F4 24 7C */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402408, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

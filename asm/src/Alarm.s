@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_handler__19$$2unnamed$$2Alarm_cpp$$2FP7OSAlarmP9OSContext
 t_handler__19$$2unnamed$$2Alarm_cpp$$2FP7OSAlarmP9OSContext:
 /* 80405514 00401354  4E 80 00 20 */	blr 
@@ -127,15 +127,15 @@ __sinit_$$3Alarm_cpp:
 /* 804056B8 004014F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 804056BC 004014FC  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402628, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util5Alarm
 __vt__Q24util5Alarm:
 	.incbin "baserom.dol", 0x4927E0, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248922
 $$248922:
 	.incbin "baserom.dol", 0x49EEB8, 0x8

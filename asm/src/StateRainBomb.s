@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss7bonkers13StateRainBombFPQ43scn4step4boss4BossQ63scn4step4boss7bonkers13StateRainBomb6Config
 __ct__Q53scn4step4boss7bonkers13StateRainBombFPQ43scn4step4boss4BossQ63scn4step4boss7bonkers13StateRainBomb6Config:
 /* 802387EC 0023462C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -323,7 +323,7 @@ create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9Sta
 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateFall$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 80238C3C 00234A7C  4B FF 5A 64 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateFall$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateFall$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x461320, 0x10
@@ -331,7 +331,7 @@ __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9State
 __vt__Q53scn4step4boss7bonkers13StateRainBomb:
 	.incbin "baserom.dol", 0x461330, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256362
 $$256362:
 	.incbin "baserom.dol", 0x49AF68, 0x4

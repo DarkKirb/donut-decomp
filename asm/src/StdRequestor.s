@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26effect12StdRequestorFRQ26effect7Manager
 __ct__Q26effect12StdRequestorFRQ26effect7Manager:
 /* 8017EEAC 0017ACEC  94 21 FF F0 */	stwu r1, -0x10(r1)

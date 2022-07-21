@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4item9modeldesc4FoodFUl
 Create__Q53scn4step4item9modeldesc4FoodFUl:
 /* 803C5BE8 003C1A28  94 21 FA 90 */	stwu r1, -0x570(r1)
@@ -1379,7 +1379,7 @@ lbl_803C7050:
 /* 803C70BC 003C2EFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803C70C0 003C2F00  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252580
 $$252580:
 	.incbin "baserom.dol", 0x48E0A0, 0xC
@@ -1567,7 +1567,7 @@ $$252650:
 $$252651:
 	.incbin "baserom.dol", 0x48E568, 0x90
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252582
 $$252582:
 	.incbin "baserom.dol", 0x498160, 0x8

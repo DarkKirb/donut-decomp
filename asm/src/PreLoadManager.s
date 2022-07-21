@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tHeap__Q27preload28$$2unnamed$$2PreLoadManager_cpp$$2Fv
 tHeap__Q27preload28$$2unnamed$$2PreLoadManager_cpp$$2Fv:
 /* 801DF3E0 001DB220  80 6D ED 00 */	lwz r3, object___Q33hel6common32ExplicitSingleton$$0Q23mem6Memory$$1-_SDA_BASE_(r13)

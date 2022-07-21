@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RegisterForce__Q23g3d17MintModelAccessorFRCQ23g3d13ModelAccessor
 RegisterForce__Q23g3d17MintModelAccessorFRCQ23g3d13ModelAccessor:
 /* 8018E944 0018A784  7C 64 1B 78 */	mr r4, r3
@@ -55,7 +55,7 @@ __sinit_$$3MintModelAccessor_cpp:
 /* 8018E9E4 0018A824  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E9E8 0018A828  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023E0, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

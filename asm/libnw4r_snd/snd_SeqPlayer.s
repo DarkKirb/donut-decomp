@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InitSeqPlayer__Q44nw4r3snd6detail9SeqPlayerFv
 InitSeqPlayer__Q44nw4r3snd6detail9SeqPlayerFv:
 /* 8010C1F0 00108030  3C 60 80 53 */	lis r3, mGlobalVariable__Q44nw4r3snd6detail9SeqPlayer@ha
@@ -1538,12 +1538,12 @@ $$2192$$2__dt__Q44nw4r3snd6detail9SeqPlayerFv:
 /* 8010D708 00109548  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8010D70C 0010954C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9SeqPlayer
 __vt__Q44nw4r3snd6detail9SeqPlayer:
 	.incbin "baserom.dol", 0x43E478, 0x68
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211283
 $$211283:
 	.incbin "baserom.dol", 0x499EB8, 0x4

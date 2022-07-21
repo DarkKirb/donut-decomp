@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_Velocity__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2FUcf
 t_Velocity__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2FUcf:
 /* 803175E0 00313420  C0 42 C9 E8 */	lfs f2, $$257160-_SDA2_BASE_(r2)
@@ -1968,17 +1968,17 @@ lbl_80319188:
 /* 80319190 00314FD0  B0 03 00 04 */	sth r0, 4(r3)
 /* 80319194 00314FD4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2
 t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27$$2unnamed$$2MoveGroupCtrl_cpp$$2:
 	.incbin "baserom.dol", 0x415BA0, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl
 __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl:
 	.incbin "baserom.dol", 0x47DB60, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257160
 $$257160:
 	.incbin "baserom.dol", 0x49D4A8, 0x4

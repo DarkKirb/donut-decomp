@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global update__Q43scn4step4boss11DamageFlashFv
 update__Q43scn4step4boss11DamageFlashFv:
 /* 8022EF14 0022AD54  80 83 00 04 */	lwz r4, 4(r3)
@@ -141,7 +141,7 @@ lbl_8022F0B8:
 /* 8022F0E4 0022AF24  38 21 00 30 */	addi r1, r1, 0x30
 /* 8022F0E8 0022AF28  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy11DamageFlashFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy11DamageFlashFRQ43scn4step5enemy5Enemy:
 /* 80284360 002801A0  90 83 00 00 */	stw r4, 0(r3)
@@ -330,7 +330,7 @@ getColor__Q43scn4step5enemy11DamageFlashCFv:
 /* 802845D8 00280418  80 63 00 06 */	lwz r3, 6(r3)
 /* 802845DC 0028041C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11DamageFlashFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero11DamageFlashFRQ43scn4step4hero4Hero:
 /* 80335078 00330EB8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -447,22 +447,22 @@ getColor__Q43scn4step4hero11DamageFlashCFv:
 /* 803351F4 00331034  80 63 00 05 */	lwz r3, 5(r3)
 /* 803351F8 00331038  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__Q43scn4step4boss25$$2unnamed$$2DamageFlash_cpp$$2
 T_ALPHA_TABLE__Q43scn4step4boss25$$2unnamed$$2DamageFlash_cpp$$2:
 	.incbin "baserom.dol", 0x4124A8, 0x10
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ALPHA_TABLE__25$$2unnamed$$2DamageFlash_cpp$$2
 T_ALPHA_TABLE__25$$2unnamed$$2DamageFlash_cpp$$2:
 	.incbin "baserom.dol", 0x415DE8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250026
 $$250026:
 	.incbin "baserom.dol", 0x495A00, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248757
 $$248757:
 	.incbin "baserom.dol", 0x49AE40, 0x4
@@ -479,7 +479,7 @@ $$248770:
 $$248775:
 	.incbin "baserom.dol", 0x49AE50, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_COLOR_TABLE__Q43scn4step5enemy25$$2unnamed$$2DamageFlash_cpp$$2
 T_COLOR_TABLE__Q43scn4step5enemy25$$2unnamed$$2DamageFlash_cpp$$2:
 	.incbin "baserom.dol", 0x49B948, 0x4

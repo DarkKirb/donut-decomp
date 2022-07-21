@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SDP_InitDiscoveryDb
 SDP_InitDiscoveryDb:
 /* 8009C790 000985D0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1037,7 +1037,7 @@ lbl_8009D5E8:
 /* 8009D5F0 00099430  88 63 46 30 */	lbz r3, 0x4630(r3)
 /* 8009D5F4 00099434  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21415
 $$21415:
 	.incbin "baserom.dol", 0x43BA50, 0x50

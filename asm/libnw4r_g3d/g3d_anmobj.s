@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PlayPolicy_Onetime__Q24nw4r3g3dFfff
 PlayPolicy_Onetime__Q24nw4r3g3dFfff:
 /* 800DBE80 000D7CC0  FC 20 18 90 */	fmr f1, f3
@@ -68,17 +68,17 @@ TestAnmFlag__Q34nw4r3g3d6AnmObjCFQ44nw4r3g3d6AnmObj7AnmFlag:
 /* 800DBF48 000D7D88  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800DBF4C 000D7D8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d6AnmObj
 TYPE_NAME__Q34nw4r3g3d6AnmObj:
 	.incbin "baserom.dol", 0x4046F8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global smBaseUpdateRate__Q34nw4r3g3d9FrameCtrl
 smBaseUpdateRate__Q34nw4r3g3d9FrameCtrl:
 	.incbin "baserom.dol", 0x492DD0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$25234
 $$25234:
 	.incbin "baserom.dol", 0x499AE8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3g3d6CameraFPQ34nw4r3g3d10CameraData
 __ct__Q34nw4r3g3d6CameraFPQ34nw4r3g3d10CameraData:
 /* 800E5AF0 000E1930  90 83 00 00 */	stw r4, 0(r3)
@@ -1082,7 +1082,7 @@ lbl_800E69E4:
 /* 800E6A08 000E2848  4E 80 00 20 */	blr 
 /* 800E6A0C 000E284C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28736
 $$28736:
 	.incbin "baserom.dol", 0x499B80, 0x4

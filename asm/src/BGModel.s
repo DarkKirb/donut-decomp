@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle7BGModelFRQ33scn14challengetitle9Component
 __ct__Q33scn14challengetitle7BGModelFRQ33scn14challengetitle9Component:
 /* 801EA59C 001E63DC  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -58,7 +58,7 @@ __ct__Q33scn14challengetitle7BGModelFRQ33scn14challengetitle9Component:
 /* 801EA66C 001E64AC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801EA670 001E64B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle7BGModelFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle7BGModelFRQ33scn10grandtitle9Component:
 /* 80200A34 001FC874  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -134,17 +134,17 @@ __ct__Q33scn10grandtitle7BGModelFRQ33scn10grandtitle9Component:
 update__Q33scn10grandtitle7BGModelFv:
 /* 80200B44 001FC984  4B F9 43 58 */	b updateFrame__Q23g3d8StdModelFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251709
 $$251709:
 	.incbin "baserom.dol", 0x45ABB0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251679
 $$251679:
 	.incbin "baserom.dol", 0x45C578, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2:
 	.incbin "baserom.dol", 0x494090, 0x4
@@ -152,7 +152,7 @@ G3D_RES_FILE_PATH__Q33scn14challengetitle21$$2unnamed$$2BGModel_cpp$$2:
 $$251840:
 	.incbin "baserom.dol", 0x494094, 0x4
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle21$$2unnamed$$2BGModel_cpp$$2:
 	.incbin "baserom.dol", 0x494710, 0x4

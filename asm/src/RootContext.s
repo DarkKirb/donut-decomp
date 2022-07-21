@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl
 __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl:
 /* 8019461C 0019045C  90 83 00 00 */	stw r4, 0(r3)

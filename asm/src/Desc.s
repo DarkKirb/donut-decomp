@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss4DescFv
 __ct__Q43scn4step4boss4DescFv:
 /* 8022F404 0022B244  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -61,7 +61,7 @@ __ct__Q43scn4step4boss4DescFQ43scn4step3map11BinBossKindQ43scn4step3map16BinBoss
 /* 8022F4D4 0022B314  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022F4D8 0022B318  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy4DescFv
 __ct__Q43scn4step5enemy4DescFv:
 /* 802845E0 00280420  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -136,7 +136,7 @@ __ct__Q43scn4step5enemy4DescFQ43scn4step3map12BinEnemyKindQ43scn4step3map17BinEn
 /* 802846E8 00280528  38 21 00 10 */	addi r1, r1, 0x10
 /* 802846EC 0028052C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item4DescFQ43scn4step3map11BinItemKindUlbQ43scn4step3map16BinItemVariationRCQ33hel4math7Vector2
 __ct__Q43scn4step4item4DescFQ43scn4step3map11BinItemKindUlbQ43scn4step3map16BinItemVariationRCQ33hel4math7Vector2:
 /* 803C0F2C 003BCD6C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -166,7 +166,7 @@ __ct__Q43scn4step4item4DescFQ43scn4step3map11BinItemKindUlbQ43scn4step3map16BinI
 /* 803C0F8C 003BCDCC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C0F90 003BCDD0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon4DescFv
 __ct__Q43scn4step6weapon4DescFv:
 /* 803D6064 003D1EA4  94 21 FF F0 */	stwu r1, -0x10(r1)

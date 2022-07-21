@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common15StateWalkAroundFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common15StateWalkAroundFPQ43scn4step5enemy5Enemy:
 /* 802958E4 00291724  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -251,7 +251,7 @@ lbl_80295C3C:
 /* 80295C58 00291A98  38 21 00 70 */	addi r1, r1, 0x70
 /* 80295C5C 00291A9C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy11broomhatter15StateWalkAroundFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy11broomhatter15StateWalkAroundFPQ43scn4step5enemy5Enemy:
 /* 802A1BD4 0029DA14  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -613,7 +613,7 @@ initBrush__Q53scn4step5enemy11broomhatter15StateWalkAroundFv:
 __dt__Q53scn4step5enemy11broomhatter15StateWalkAroundFv:
 /* 802A2100 0029DF40  4B FE F8 B8 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6lanzer15StateWalkAroundFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6lanzer15StateWalkAroundFPQ43scn4step5enemy5Enemy:
 /* 802C2C58 002BEA98  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1035,7 +1035,7 @@ lbl_802C324C:
 /* 802C3268 002BF0A8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802C326C 002BF0AC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6sodory15StateWalkAroundFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6sodory15StateWalkAroundFPQ43scn4step5enemy5Enemy:
 /* 802E6568 002E23A8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1384,27 +1384,27 @@ lbl_802E6A34:
 /* 802E6A58 002E2898  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802E6A5C 002E289C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common15StateWalkAround
 __vt__Q53scn4step5enemy6common15StateWalkAround:
 	.incbin "baserom.dol", 0x46F488, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy11broomhatter15StateWalkAround
 __vt__Q53scn4step5enemy11broomhatter15StateWalkAround:
 	.incbin "baserom.dol", 0x471048, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6lanzer15StateWalkAround
 __vt__Q53scn4step5enemy6lanzer15StateWalkAround:
 	.incbin "baserom.dol", 0x474E90, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sodory15StateWalkAround
 __vt__Q53scn4step5enemy6sodory15StateWalkAround:
 	.incbin "baserom.dol", 0x479058, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255928
 $$255928:
 	.incbin "baserom.dol", 0x49BC38, 0x4
@@ -1439,7 +1439,7 @@ $$255970:
 $$255971:
 	.incbin "baserom.dol", 0x49BC60, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256398
 $$256398:
 	.incbin "baserom.dol", 0x49BF88, 0x4
@@ -1453,7 +1453,7 @@ $$256403:
 $$256429:
 	.incbin "baserom.dol", 0x49BF98, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256373
 $$256373:
 	.incbin "baserom.dol", 0x49C7C0, 0x4
@@ -1470,7 +1470,7 @@ $$256409:
 $$256410:
 	.incbin "baserom.dol", 0x49C7D0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256319
 $$256319:
 	.incbin "baserom.dol", 0x49CED0, 0x4

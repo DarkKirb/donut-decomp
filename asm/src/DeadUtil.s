@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RequestDeadEffect__Q53scn4step4boss6common8DeadUtilFRQ43scn4step4boss4Bossb
 RequestDeadEffect__Q53scn4step4boss6common8DeadUtilFRQ43scn4step4boss4Bossb:
 /* 80244408 00240248  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -98,7 +98,7 @@ lbl_80244538:
 /* 80244570 002403B0  38 21 00 50 */	addi r1, r1, 0x50
 /* 80244574 002403B4  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254560
 $$254560:
 	.incbin "baserom.dol", 0x49B108, 0x4

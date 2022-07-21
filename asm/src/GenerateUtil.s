@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global otherObjRequest__Q53scn4step5enemy8generate12GenerateUtilFRQ43scn4step5enemy5Enemy
 otherObjRequest__Q53scn4step5enemy8generate12GenerateUtilFRQ43scn4step5enemy5Enemy:
 /* 8028862C 0028446C  94 21 FF F0 */	stwu r1, -0x10(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PSMTXMultVec
 PSMTXMultVec:
 /* 800310F0 0002CF30  E0 04 00 00 */	psq_l f0, 0(r4), 0, qr0

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global procObjCollReact__Q43scn4step5enemy16DamageFieldReactFv
 procObjCollReact__Q43scn4step5enemy16DamageFieldReactFv:
 /* 80283E30 0027FC70  94 21 FD A0 */	stwu r1, -0x260(r1)
@@ -354,7 +354,7 @@ attackPower__Q43scn4step5chara10DamageInfoCFv:
 /* 80284358 00280198  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028435C 0028019C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero16DamageFieldReactFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero16DamageFieldReactFRQ43scn4step4hero4Hero:
 /* 80334B34 00330974  90 83 00 00 */	stw r4, 0(r3)
@@ -737,7 +737,7 @@ __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10Stat
 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage14StateFireBlock$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80335074 00330EB4  4B EF 96 2C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage14StateFireBlock$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage14StateFireBlock$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x47FF60, 0x10
@@ -745,7 +745,7 @@ __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage14Stat
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6damage10StateSpine$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x47FF70, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256861
 $$256861:
 	.incbin "baserom.dol", 0x49B938, 0x4
@@ -756,7 +756,7 @@ $$256862:
 $$256863:
 	.incbin "baserom.dol", 0x49B940, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258791
 $$258791:
 	.incbin "baserom.dol", 0x49D6E0, 0x8

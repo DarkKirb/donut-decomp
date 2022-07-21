@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon19challengemastershot10StateReadyFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon19challengemastershot10StateReadyFPQ43scn4step6weapon6Weapon:
 /* 803F0788 003EC5C8  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -614,7 +614,7 @@ __dt__Q53scn4step6weapon19challengemastershot10StateReadyFv:
 __dt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803F1070 003ECEB0  4B E3 D6 30 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateMain$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challengemastershot9StateMain$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x4914A0, 0x10
@@ -622,7 +622,7 @@ __vt__Q24util109StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon19challeng
 __vt__Q53scn4step6weapon19challengemastershot10StateReady:
 	.incbin "baserom.dol", 0x4914B0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257357
 $$257357:
 	.incbin "baserom.dol", 0x49ECC0, 0x4

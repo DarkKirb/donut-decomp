@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreatePtcl__Q36effect6detail10GenContextFUlPCcQ36effect6detail14ConstraintType
 CreatePtcl__Q36effect6detail10GenContextFUlPCcQ36effect6detail14ConstraintType:
 /* 801813D4 0017D214  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -253,7 +253,7 @@ polyModelPrefixRef__Q36effect6detail10GenContextCFv:
 /* 80181704 0017D544  38 63 00 06 */	addi r3, r3, 6
 /* 80181708 0017D548  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249006
 $$249006:
 	.incbin "baserom.dol", 0x4930B8, 0x8

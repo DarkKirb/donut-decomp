@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step6vacuum12MintAttackerFRQ43scn4step6vacuum8Attacker
 Register__Q43scn4step6vacuum12MintAttackerFRQ43scn4step6vacuum8Attacker:
 /* 803D3098 003CEED8  90 6D F9 38 */	stw r3, t_obj__Q43scn4step6vacuum26$$2unnamed$$2MintAttacker_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintAttacker_cpp:
 /* 803D30B4 003CEEF4  38 6D F9 38 */	addi r3, r13, t_obj__Q43scn4step6vacuum26$$2unnamed$$2MintAttacker_cpp$$2-_SDA_BASE_
 /* 803D30B8 003CEEF8  4B D0 A3 28 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025E4, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

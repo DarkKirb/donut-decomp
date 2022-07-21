@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nrel8ezrender14GXSettingFor2DFv
 __ct__Q34nrel8ezrender14GXSettingFor2DFv:
 /* 8014C2FC 0014813C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -104,7 +104,7 @@ setViewportSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender15Viewpor
 /* 8014C438 00148278  38 63 00 18 */	addi r3, r3, 0x18
 /* 8014C43C 0014827C  4B FF FF A0 */	b __as__Q34nrel8ezrender18OrthoCameraSettingFRCQ34nrel8ezrender18OrthoCameraSetting
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2795
 $$2795:
 	.incbin "baserom.dol", 0x49A0A8, 0x4

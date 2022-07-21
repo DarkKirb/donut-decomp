@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero13FlowSoundCtrlFv
 __ct__Q43scn4step4hero13FlowSoundCtrlFv:
 /* 80336CD4 00332B14  94 21 FF F0 */	stwu r1, -0x10(r1)

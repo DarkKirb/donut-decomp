@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause5PauseFRCQ25pause11ContextInitPQ25pause9ICallback
 __ct__Q25pause5PauseFRCQ25pause11ContextInitPQ25pause9ICallback:
 /* 801DE914 001DA754  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -663,12 +663,12 @@ lbl_801DF1F0:
 /* 801DF1FC 001DB03C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DF200 001DB040  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253172
 $$253172:
 	.incbin "baserom.dol", 0x459C60, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253126
 $$253126:
 	.incbin "baserom.dol", 0x493D00, 0x8

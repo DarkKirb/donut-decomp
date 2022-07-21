@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSYNGetRelativePitch
 __HBMSYNGetRelativePitch:
 /* 8014A680 001464C0  80 63 00 28 */	lwz r3, 0x28(r3)
@@ -176,7 +176,7 @@ __HBMSYNUpdateSrc:
 /* 8014A8F8 00146738  4E 80 00 20 */	blr 
 /* 8014A8FC 0014673C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21762
 $$21762:
 	.incbin "baserom.dol", 0x40A410, 0x4
@@ -190,7 +190,7 @@ $$21768:
 $$21770:
 	.incbin "baserom.dol", 0x40A420, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMSYNCentsTable
 __HBMSYNCentsTable:
 	.incbin "baserom.dol", 0x4428E8, 0x190

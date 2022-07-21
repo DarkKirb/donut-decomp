@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common20StateJumpAttackStartFPQ43scn4step4boss4BossRQ53scn4step4boss6common19StateJumpAttackDescUlUl
 __ct__Q53scn4step4boss6common20StateJumpAttackStartFPQ43scn4step4boss4BossRQ53scn4step4boss6common19StateJumpAttackDescUlUl:
 /* 80246ED4 00242D14  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -155,7 +155,7 @@ create__Q24util144StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common15S
 __dt__Q24util144StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Ul$$1Fv:
 /* 802470D0 00242F10  4B FE 75 D0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss9zankibble20StateJumpAttackStartFPQ43scn4step4boss4BossQ63scn4step4boss9zankibble15StateJumpAttack6Config
 __ct__Q53scn4step4boss9zankibble20StateJumpAttackStartFPQ43scn4step4boss4BossQ63scn4step4boss9zankibble15StateJumpAttack6Config:
 /* 80261E10 0025DC50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -275,7 +275,7 @@ lbl_80261F74:
 __dt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble15StateJumpAttack6Config$$1Fv:
 /* 80261F88 0025DDC8  4B FC C7 18 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util144StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Ul$$1
 __vt__Q24util144StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss6common19StateJumpAttackDesc$$4Ul$$1:
 	.incbin "baserom.dol", 0x4624D0, 0x10
@@ -283,7 +283,7 @@ __vt__Q24util144StateFactoryArg3$$0Q24util6IState$$4Q53scn4step4boss6common15Sta
 __vt__Q53scn4step4boss6common20StateJumpAttackStart:
 	.incbin "baserom.dol", 0x4624E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble15StateJumpAttack6Config$$1
 __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble15StateJumpAttack$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss9zankibble15StateJumpAttack6Config$$1:
 	.incbin "baserom.dol", 0x467110, 0x10
@@ -291,7 +291,7 @@ __vt__Q24util150StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9zankibble15
 __vt__Q53scn4step4boss9zankibble20StateJumpAttackStart:
 	.incbin "baserom.dol", 0x467120, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254946
 $$254946:
 	.incbin "baserom.dol", 0x49B168, 0x8

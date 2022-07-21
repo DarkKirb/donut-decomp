@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q23std9exceptionFv
 __dt__Q23std9exceptionFv:
 /* 80006BD0 00002A10  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -21,22 +21,22 @@ lbl_80006BF8:
 /* 80006C08 00002A48  38 21 00 10 */	addi r1, r1, 0x10
 /* 80006C0C 00002A4C  4E 80 00 20 */	blr 
 
-.section .data0, "wa"  # 0x80006740 - 0x800068E0
+.section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$2190
 $$2190:
 	.incbin "baserom.dol", 0x4020A0, 0x8
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$2191
 $$2191:
 	.incbin "baserom.dol", 0x402240, 0xC
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2278
 $$2278:
 	.incbin "baserom.dol", 0x402660, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q23std9exception
 __RTTI__Q23std9exception:
 	.incbin "baserom.dol", 0x492800, 0x8

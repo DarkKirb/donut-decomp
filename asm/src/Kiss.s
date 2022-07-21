@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero4KissFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero4KissFRQ43scn4step4hero4Hero:
 /* 80343378 0033F1B8  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1167,12 +1167,12 @@ lbl_80344378:
 /* 8034438C 003401CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80344390 003401D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1
 __vt__Q24util211StateFactoryArg5$$0Q24util6IState$$4Q53scn4step4hero12interference9StateKiss$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector3$$4Q33hel4math7Vector3$$4Q24util35ObjRefHandle$$0Q43scn4step4hero4Hero$$1$$4Q43scn4step4hero11KissContext$$1:
 	.incbin "baserom.dol", 0x480EA0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256609
 $$256609:
 	.incbin "baserom.dol", 0x496DD8, 0x1
@@ -1180,7 +1180,7 @@ $$256609:
 $$256610:
 	.incbin "baserom.dol", 0x496DD9, 0x7
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258801
 $$258801:
 	.incbin "baserom.dol", 0x49D788, 0x4

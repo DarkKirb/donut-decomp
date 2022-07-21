@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q24util37PlacementNew$$0Q25param13ParamAccessor$$1Fv
 __dt__Q24util37PlacementNew$$0Q25param13ParamAccessor$$1Fv:
 /* 801DA2FC 001D613C  94 21 FF F0 */	stwu r1, -0x10(r1)

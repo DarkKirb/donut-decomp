@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global btm_cback
 btm_cback:
 /* 8008A17C 00085FBC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -443,7 +443,7 @@ lbl_8008A790:
 /* 8008A790 000865D0  38 60 01 14 */	li r3, 0x114
 /* 8008A794 000865D4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2882
 $$2882:
 	.incbin "baserom.dol", 0x438EF0, 0x3C

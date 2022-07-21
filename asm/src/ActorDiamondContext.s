@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail19ActorDiamondContextFRCQ33hel4math7Vector2RCQ35mcoll6detail19ShapeDiamondContext
 __ct__Q35mcoll6detail19ActorDiamondContextFRCQ33hel4math7Vector2RCQ35mcoll6detail19ShapeDiamondContext:
 /* 801B6530 001B2370  94 21 FF F0 */	stwu r1, -0x10(r1)

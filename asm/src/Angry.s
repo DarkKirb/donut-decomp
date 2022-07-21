@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss5AngryFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss5AngryFRQ43scn4step4boss4Boss:
 /* 80228EE0 00224D20  90 83 00 00 */	stw r4, 0(r3)
@@ -77,7 +77,7 @@ setChangeBrain__Q43scn4step4boss5AngryFPCc:
 /* 80228FCC 00224E0C  38 A0 00 80 */	li r5, 0x80
 /* 80228FD0 00224E10  4B F7 49 EC */	b Strncpy__Q33hel6common9Traits$$0c$$1FPcPCcUl
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252593
 $$252593:
 	.incbin "baserom.dol", 0x49ADA0, 0x8

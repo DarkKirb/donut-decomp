@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text0, "ax"  # 0x80004000 - 0x80006740
+.section .init, "ax"  # 0x80004000 - 0x80006740
 .global __check_pad3
 __check_pad3:
 /* 800062C0 000023C0  3C 60 80 00 */	lis r3, 0x800030E4@ha

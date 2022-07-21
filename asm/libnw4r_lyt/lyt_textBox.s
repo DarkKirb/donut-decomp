@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3lyt7TextBoxFPCQ44nw4r3lyt3res7TextBoxRCQ34nw4r3lyt11ResBlockSet
 __ct__Q34nw4r3lyt7TextBoxFPCQ44nw4r3lyt3res7TextBoxRCQ34nw4r3lyt11ResBlockSet:
 /* 800F5340 000F1180  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1679,20 +1679,20 @@ __sinit_$$3lyt_textBox_cpp:
 /* 800F6AA8 000F28E8  4E 80 00 20 */	blr 
 /* 800F6AAC 000F28EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402388, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt7TextBox
 __vt__Q34nw4r3lyt7TextBox:
 	.incbin "baserom.dol", 0x43D420, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$210917
 $$210917:
 	.incbin "baserom.dol", 0x492E28, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210401
 $$210401:
 	.incbin "baserom.dol", 0x499C88, 0x8

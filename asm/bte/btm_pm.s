@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global BTM_PmRegister
 BTM_PmRegister:
 /* 8008379C 0007F5DC  54 60 07 7B */	rlwinm. r0, r3, 0, 0x1d, 0x1d
@@ -918,17 +918,17 @@ lbl_80084418:
 /* 80084428 00080268  38 21 00 30 */	addi r1, r1, 0x30
 /* 8008442C 0008026C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global btm_pm_md_comp_matrix
 btm_pm_md_comp_matrix:
 	.incbin "baserom.dol", 0x4041F8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21775
 $$21775:
 	.incbin "baserom.dol", 0x438040, 0x40
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global btm_pm_mode_off
 btm_pm_mode_off:
 	.incbin "baserom.dol", 0x499488, 0x4

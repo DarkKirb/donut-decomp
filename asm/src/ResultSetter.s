@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause12ResultSetterFv
 __ct__Q25pause12ResultSetterFv:
 /* 801DF2E4 001DB124  38 00 00 09 */	li r0, 9

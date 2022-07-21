@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_I2F__Q33hel4mint23$$2unnamed$$2AddOnCast_cpp$$2Fi
 t_I2F__Q33hel4mint23$$2unnamed$$2AddOnCast_cpp$$2Fi:
 /* 801A0D9C 0019CBDC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -107,7 +107,7 @@ lbl_801A0EE8:
 /* 801A0EF8 0019CD38  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A0EFC 0019CD3C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252192
 $$252192:
 	.incbin "baserom.dol", 0x452AE0, 0xC
@@ -118,7 +118,7 @@ $$252193:
 $$252194:
 	.incbin "baserom.dol", 0x452AFC, 0x64
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252188
 $$252188:
 	.incbin "baserom.dol", 0x49A420, 0x8

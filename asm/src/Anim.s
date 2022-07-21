@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj4AnimFRCQ24gobj8AnimDescRQ23mem10IAllocatorRQ24gobj5ModelRQ26effect9Requestor
 __ct__Q24gobj4AnimFRCQ24gobj8AnimDescRQ23mem10IAllocatorRQ24gobj5ModelRQ26effect9Requestor:
 /* 80199324 00195164  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -452,7 +452,7 @@ mainAnim__Q24gobj4AnimCFv:
 /* 8019990C 0019574C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80199910 00195750  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252554
 $$252554:
 	.incbin "baserom.dol", 0x49A2C0, 0x8

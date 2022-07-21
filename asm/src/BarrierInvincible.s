@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss17BarrierInvincibleFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss17BarrierInvincibleFRQ43scn4step4boss4Boss:
 /* 80229270 002250B0  90 83 00 00 */	stw r4, 0(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global LMS_SetMemFuncs
 LMS_SetMemFuncs:
 /* 80174190 0016FFD0  90 6D EC C8 */	stw r3, g_pMalloc-_SDA_BASE_(r13)

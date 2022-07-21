@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step2bg12DecorationBGFRQ23mem10IAllocatorRQ26effect9RequestorQ43scn4step3map17BinDecorationKind
 __ct__Q43scn4step2bg12DecorationBGFRQ23mem10IAllocatorRQ26effect9RequestorQ43scn4step3map17BinDecorationKind:
 /* 802224A4 0021E2E4  94 21 FE E0 */	stwu r1, -0x120(r1)
@@ -335,7 +335,7 @@ registerToRoot__Q43scn4step2bg12DecorationBGFRQ23g3d4Root:
 /* 80222940 0021E780  38 21 00 10 */	addi r1, r1, 0x10
 /* 80222944 0021E784  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252617
 $$252617:
 	.incbin "baserom.dol", 0x45FD68, 0x10
@@ -349,7 +349,7 @@ $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d6ResMdlCFv:
 	.incbin "baserom.dol", 0x45FDA0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252618
 $$252618:
 	.incbin "baserom.dol", 0x495248, 0x8

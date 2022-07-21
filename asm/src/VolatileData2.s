@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global init__Q27storage13VolatileData2Fv
 init__Q27storage13VolatileData2Fv:
 /* 80405194 00400FD4  38 80 00 00 */	li r4, 0
@@ -272,7 +272,7 @@ setLevelKind__Q27storage13VolatileData2FQ33scn4step9LevelKind:
 /* 8040550C 0040134C  90 83 10 54 */	stw r4, 0x1054(r3)
 /* 80405510 00401350  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249921
 $$249921:
 	.incbin "baserom.dol", 0x49EEB0, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history10CameraCtrlFQ23g3d14CameraAccessor
 __ct__Q33scn7history10CameraCtrlFQ23g3d14CameraAccessor:
 /* 8020729C 002030DC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -121,7 +121,7 @@ update__Q33scn7history10CameraCtrlFRCQ33hel4math7Vector3:
 /* 8020745C 0020329C  38 21 00 90 */	addi r1, r1, 0x90
 /* 80207460 002032A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick11areamapdemo10CameraCtrlFRQ33scn4step9Componentff
 __ct__Q53scn4step7gimmick11areamapdemo10CameraCtrlFRQ33scn4step9Componentff:
 /* 802FA448 002F6288  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -744,7 +744,7 @@ __vc__Q33hel6common75MutableArray$$0Q63scn4step7gimmick11areamapdemo10CameraCtrl
 /* 802FACFC 002F6B3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802FAD00 002F6B40  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252141
 $$252141:
 	.incbin "baserom.dol", 0x49AB58, 0x4
@@ -767,7 +767,7 @@ $$252146:
 $$252147:
 	.incbin "baserom.dol", 0x49AB70, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254595
 $$254595:
 	.incbin "baserom.dol", 0x49D130, 0x4

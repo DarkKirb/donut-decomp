@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll5ShapeFv
 __ct__Q25ocoll5ShapeFv:
 /* 801D9634 001D5474  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -183,7 +183,7 @@ setDebugColor__Q25ocoll5ShapeFRC8_GXColor:
 /* 801D989C 001D56DC  38 63 00 1C */	addi r3, r3, 0x1c
 /* 801D98A0 001D56E0  4B F7 20 74 */	b __as__8_GXColorFRC8_GXColor
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252228
 $$252228:
 	.incbin "baserom.dol", 0x49A7F0, 0x4

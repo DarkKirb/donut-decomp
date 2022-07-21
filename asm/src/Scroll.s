@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history6ScrollFRQ33scn7history5Kirby
 __ct__Q33scn7history6ScrollFRQ33scn7history5Kirby:
 /* 8020EA84 0020A8C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -620,10 +620,10 @@ __sinit_$$3Scroll_cpp:
 /* 8020F2E8 0020B128  D0 0D EF 94 */	stfs f0, MAX_MOVE_SPEED__Q33scn7history20$$2unnamed$$2Scroll_cpp$$2-_SDA_BASE_(r13)
 /* 8020F2EC 0020B12C  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402460, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253103
 $$253103:
 	.incbin "baserom.dol", 0x49AC40, 0x4

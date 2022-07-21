@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue22Scn__GrandTitle__CharaFRQ26mintvm6VMCore
 AddOn__Q28mintglue22Scn__GrandTitle__CharaFRQ26mintvm6VMCore:
 /* 801C42DC 001C011C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -888,7 +888,7 @@ isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv:
 /* 801C4F04 001C0D44  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C4F08 001C0D48  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256054
 $$256054:
 	.incbin "baserom.dol", 0x4570E0, 0x18
@@ -980,12 +980,12 @@ $$256191:
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv:
 	.incbin "baserom.dol", 0x457330, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv$$20
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Chara$$1CFv$$20:
 	.incbin "baserom.dol", 0x4936E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256198
 $$256198:
 	.incbin "baserom.dol", 0x49A710, 0x8

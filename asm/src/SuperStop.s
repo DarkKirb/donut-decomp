@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss9SuperStopFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss9SuperStopFRQ43scn4step4boss4Boss:
 /* 80234648 00230488  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -142,7 +142,7 @@ lbl_80234804:
 /* 80234810 00230650  38 21 00 10 */	addi r1, r1, 0x10
 /* 80234814 00230654  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy9SuperStopFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy9SuperStopFRQ43scn4step5enemy5Enemy:
 /* 8028DF54 00289D94  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -257,7 +257,7 @@ lbl_8028E0C0:
 /* 8028E0CC 00289F0C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028E0D0 00289F10  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick9SuperStopFRQ33scn4step9ComponentRQ43scn4step5ostop5Actor
 __ct__Q43scn4step7gimmick9SuperStopFRQ33scn4step9ComponentRQ43scn4step5ostop5Actor:
 /* 802F79CC 002F380C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -408,7 +408,7 @@ lbl_802F7BA8:
 /* 802F7BB4 002F39F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 802F7BB8 002F39F8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item9SuperStopFRQ43scn4step4item4Item
 __ct__Q43scn4step4item9SuperStopFRQ43scn4step4item4Item:
 /* 803C52A0 003C10E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -524,7 +524,7 @@ lbl_803C541C:
 /* 803C5428 003C1268  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C542C 003C126C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon9SuperStopFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon9SuperStopFRQ43scn4step6weapon6Weapon:
 /* 803D8E14 003D4C54  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -668,27 +668,27 @@ lbl_803D8FF0:
 /* 803D8FFC 003D4E3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D9000 003D4E40  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss9SuperStop
 __vt__Q43scn4step4boss9SuperStop:
 	.incbin "baserom.dol", 0x460958, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy9SuperStop
 __vt__Q43scn4step5enemy9SuperStop:
 	.incbin "baserom.dol", 0x46ED60, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick9SuperStop
 __vt__Q43scn4step7gimmick9SuperStop:
 	.incbin "baserom.dol", 0x47B078, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item9SuperStop
 __vt__Q43scn4step4item9SuperStop:
 	.incbin "baserom.dol", 0x48E030, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon9SuperStop
 __vt__Q43scn4step6weapon9SuperStop:
 	.incbin "baserom.dol", 0x48FEE0, 0x18

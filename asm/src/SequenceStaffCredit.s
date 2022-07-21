@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23seq19SequenceStaffCreditFv
 __ct__Q23seq19SequenceStaffCreditFv:
 /* 803FFC30 003FBA70  94 21 FC 30 */	stwu r1, -0x3d0(r1)
@@ -128,7 +128,7 @@ onSceneEnd__Q23seq19SequenceStaffCreditFRQ23scn6IScene:
 GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv:
 /* 803FFDA8 003FBBE8  4B FF DC D0 */	b RuntimeTypeInfoImpl$$0Q23seq19SequenceStaffCredit$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq19SequenceStaffCredit
 __vt__Q23seq19SequenceStaffCredit:
 	.incbin "baserom.dol", 0x4925F0, 0x28

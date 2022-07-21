@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item7CatcherFRQ33scn4step9ComponentUl
 __ct__Q43scn4step4item7CatcherFRQ33scn4step9ComponentUl:
 /* 803C0740 003BC580  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -542,7 +542,7 @@ setIsOwnerHero__Q43scn4step4item7CatcherFb:
 /* 803C0E38 003BCC78  98 83 01 30 */	stb r4, 0x130(r3)
 /* 803C0E3C 003BCC7C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.incbin "baserom.dol", 0x48DDB8, 0x24
@@ -562,7 +562,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4i
 $$2STRING$$2GetBack__Q34nw4r2ut84LinkList$$0Q24util63ObjListNode$$0Q43scn4step4item7Catcher$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x48DE3C, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251966
 $$251966:
 	.incbin "baserom.dol", 0x49E4E8, 0x8

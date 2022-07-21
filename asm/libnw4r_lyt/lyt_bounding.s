@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3lyt8BoundingFPCQ44nw4r3lyt3res8BoundingRCQ34nw4r3lyt11ResBlockSet
 __ct__Q34nw4r3lyt8BoundingFPCQ44nw4r3lyt3res8BoundingRCQ34nw4r3lyt11ResBlockSet:
 /* 800F9050 000F4E90  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -69,10 +69,10 @@ __sinit_$$3lyt_bounding_cpp:
 /* 800F9118 000F4F58  4E 80 00 20 */	blr 
 /* 800F911C 000F4F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402390, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt8Bounding
 __vt__Q34nw4r3lyt8Bounding:
 	.incbin "baserom.dol", 0x43D570, 0x78

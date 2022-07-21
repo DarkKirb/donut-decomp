@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero5sword17StateSwordRaisingFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero5sword17StateSwordRaisingFPQ43scn4step4hero4Hero:
 /* 80388804 00384644  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -296,7 +296,7 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17State
 __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80388BF8 00384A38  4B EA 5A A8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword20StateSwordRaisingEnd$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x489208, 0x10
@@ -307,7 +307,7 @@ __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword17State
 __vt__Q53scn4step4hero5sword17StateSwordRaising:
 	.incbin "baserom.dol", 0x489228, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258972
 $$258972:
 	.incbin "baserom.dol", 0x49E0A8, 0x8

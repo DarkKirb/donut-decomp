@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss15challengemaster14StateWorrisomeFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss15challengemaster14StateWorrisomeFPQ43scn4step4boss4Boss:
 /* 80243B70 0023F9B0  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -536,7 +536,7 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __dt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster8StateFly$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss15challengemaster8StateFly12TurnWaitType$$1Fv:
 /* 802442F4 00240134  4B FE A3 AC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster8StateFly$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss15challengemaster8StateFly12TurnWaitType$$1
 __vt__Q24util155StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster8StateFly$$4PQ43scn4step4boss4Boss$$4Q63scn4step4boss15challengemaster8StateFly12TurnWaitType$$1:
 	.incbin "baserom.dol", 0x462168, 0x10
@@ -547,7 +547,7 @@ __vt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __vt__Q53scn4step4boss15challengemaster14StateWorrisome:
 	.incbin "baserom.dol", 0x462188, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256482
 $$256482:
 	.incbin "baserom.dol", 0x49B100, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common16StateMoveForwardFPQ43scn4step4boss4BossQ53scn4step4boss6common13StateMoveDescUl
 __ct__Q53scn4step4boss6common16StateMoveForwardFPQ43scn4step4boss4BossQ53scn4step4boss6common13StateMoveDescUl:
 /* 8024753C 0024337C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -79,7 +79,7 @@ procMove__Q53scn4step4boss6common16StateMoveForwardFv:
 procFixPos__Q53scn4step4boss6common16StateMoveForwardFv:
 /* 80247634 00243474  4B FF 09 8C */	b procFixPos__Q53scn4step4boss7bonkers9StateBombFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss9moundeath16StateMoveForwardFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss9moundeath16StateMoveForwardFPQ43scn4step4boss4Boss:
 /* 80255DEC 00251C2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -236,17 +236,17 @@ procMove__Q53scn4step4boss9moundeath16StateMoveForwardFv:
 procFixPos__Q53scn4step4boss9moundeath16StateMoveForwardFv:
 /* 80256018 00251E58  4B FE 1F A8 */	b procFixPos__Q53scn4step4boss7bonkers9StateBombFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common16StateMoveForward
 __vt__Q53scn4step4boss6common16StateMoveForward:
 	.incbin "baserom.dol", 0x462570, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9moundeath16StateMoveForward
 __vt__Q53scn4step4boss9moundeath16StateMoveForward:
 	.incbin "baserom.dol", 0x4651A0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254872
 $$254872:
 	.incbin "baserom.dol", 0x49B408, 0x4

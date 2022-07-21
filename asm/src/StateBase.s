@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss:
 /* 802344E0 00230320  3C A0 80 46 */	lis r5, __vt__Q43scn4step4boss9StateBase@ha
@@ -56,7 +56,7 @@ lbl_80234548:
 /* 8023455C 0023039C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80234560 002303A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy:
 /* 8028DDC4 00289C04  3C A0 80 47 */	lis r5, __vt__Q43scn4step5enemy9StateBase@ha
@@ -112,7 +112,7 @@ lbl_8028DE2C:
 /* 8028DE40 00289C80  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028DE44 00289C84  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero:
 /* 803554F0 00351330  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero9StateBase@ha
@@ -172,7 +172,7 @@ lbl_8035555C:
 /* 80355570 003513B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80355574 003513B4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item9StateBaseFPQ43scn4step4item4Item
 __ct__Q43scn4step4item9StateBaseFPQ43scn4step4item4Item:
 /* 803C51E8 003C1028  3C A0 80 49 */	lis r5, __vt__Q43scn4step4item9StateBase@ha
@@ -220,7 +220,7 @@ lbl_803C5248:
 /* 803C525C 003C109C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C5260 003C10A0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon:
 /* 803D8940 003D4780  3C A0 80 49 */	lis r5, __vt__Q43scn4step6weapon9StateBase@ha
@@ -276,27 +276,27 @@ lbl_803D89A8:
 /* 803D89BC 003D47FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D89C0 003D4800  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss9StateBase
 __vt__Q43scn4step4boss9StateBase:
 	.incbin "baserom.dol", 0x460928, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy9StateBase
 __vt__Q43scn4step5enemy9StateBase:
 	.incbin "baserom.dol", 0x46ED30, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero9StateBase
 __vt__Q43scn4step4hero9StateBase:
 	.incbin "baserom.dol", 0x4815F0, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item9StateBase
 __vt__Q43scn4step4item9StateBase:
 	.incbin "baserom.dol", 0x48E008, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon9StateBase
 __vt__Q43scn4step6weapon9StateBase:
 	.incbin "baserom.dol", 0x48FE90, 0x20

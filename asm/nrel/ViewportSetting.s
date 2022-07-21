@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global execute__Q34nrel8ezrender15ViewportSettingCFv
 execute__Q34nrel8ezrender15ViewportSettingCFv:
 /* 8014C6BC 001484FC  C0 23 00 00 */	lfs f1, 0(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q46nw4hbm2ut6detail11ResFontBaseFv
 __ct__Q46nw4hbm2ut6detail11ResFontBaseFv:
 /* 80141AC0 0013D900  3C 80 80 44 */	lis r4, __vt__Q36nw4hbm2ut4Font@ha
@@ -397,7 +397,7 @@ lbl_80141F20:
 /* 80141F78 0013DDB8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80141F7C 0013DDBC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2549
 $$2549:
 	.incbin "baserom.dol", 0x441678, 0x10

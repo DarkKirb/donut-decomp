@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common18StateVacuumReceiveFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6common18StateVacuumReceiveFPQ43scn4step4boss4Boss:
 /* 80247750 00243590  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -196,7 +196,7 @@ procFixPos__Q53scn4step4boss6common18StateVacuumReceiveFv:
 /* 80247A10 00243850  38 21 00 60 */	addi r1, r1, 0x60
 /* 80247A14 00243854  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common18StateVacuumReceiveFPQ43scn4step5enemy5EnemyUl
 __ct__Q53scn4step5enemy6common18StateVacuumReceiveFPQ43scn4step5enemy5EnemyUl:
 /* 80295368 002911A8  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -488,7 +488,7 @@ procFixPos__Q53scn4step5enemy6common18StateVacuumReceiveFv:
 /* 802957A8 002915E8  38 21 00 90 */	addi r1, r1, 0x90
 /* 802957AC 002915EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero12interference18StateVacuumReceiveFPQ43scn4step4hero4HeroUl
 __ct__Q53scn4step4hero12interference18StateVacuumReceiveFPQ43scn4step4hero4HeroUl:
 /* 803744A0 003702E0  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -857,7 +857,7 @@ procMove__Q53scn4step4hero12interference18StateVacuumReceiveFv:
 procFixPos__Q53scn4step4hero12interference18StateVacuumReceiveFv:
 /* 80374A0C 0037084C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4item5state18StateVacuumReceiveFPQ43scn4step4item4ItemUl
 __ct__Q53scn4step4item5state18StateVacuumReceiveFPQ43scn4step4item4ItemUl:
 /* 803C88CC 003C470C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1071,7 +1071,7 @@ procFixPos__Q53scn4step4item5state18StateVacuumReceiveFv:
 /* 803C8BE0 003C4A20  38 21 00 70 */	addi r1, r1, 0x70
 /* 803C8BE4 003C4A24  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFPQ43scn4step6weapon6WeaponUl
 __ct__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFPQ43scn4step6weapon6WeaponUl:
 /* 803EEEB4 003EACF4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1315,32 +1315,32 @@ procFixPos__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFv:
 /* 803EF210 003EB050  38 21 00 90 */	addi r1, r1, 0x90
 /* 803EF214 003EB054  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common18StateVacuumReceive
 __vt__Q53scn4step4boss6common18StateVacuumReceive:
 	.incbin "baserom.dol", 0x4625B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common18StateVacuumReceive
 __vt__Q53scn4step5enemy6common18StateVacuumReceive:
 	.incbin "baserom.dol", 0x46F448, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference18StateVacuumReceive
 __vt__Q53scn4step4hero12interference18StateVacuumReceive:
 	.incbin "baserom.dol", 0x488680, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4item5state18StateVacuumReceive
 __vt__Q53scn4step4item5state18StateVacuumReceive:
 	.incbin "baserom.dol", 0x48E730, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive
 __vt__Q53scn4step6weapon13vacuumedblock18StateVacuumReceive:
 	.incbin "baserom.dol", 0x491328, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256631
 $$256631:
 	.incbin "baserom.dol", 0x49B178, 0x4
@@ -1351,12 +1351,12 @@ $$256632:
 $$256633:
 	.incbin "baserom.dol", 0x49B180, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256844
 $$256844:
 	.incbin "baserom.dol", 0x49BC30, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258416
 $$258416:
 	.incbin "baserom.dol", 0x49DDA0, 0x4
@@ -1367,7 +1367,7 @@ $$258417:
 $$258418:
 	.incbin "baserom.dol", 0x49DDA8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255920
 $$255920:
 	.incbin "baserom.dol", 0x49E638, 0x8

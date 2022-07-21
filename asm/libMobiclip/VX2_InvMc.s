@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InvMc8x8_C__FPsPUci
 InvMc8x8_C__FPsPUci:
 /* 8016F3C0 0016B200  94 21 FF C0 */	stwu r1, -0x40(r1)

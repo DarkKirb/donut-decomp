@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7gimmick16StateChallengeInFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7gimmick16StateChallengeInFPQ43scn4step4hero4Hero:
 /* 8037B93C 0037777C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -592,12 +592,12 @@ lbl_8037C1C0:
 /* 8037C1CC 0037800C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8037C1D0 00378010  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick16StateChallengeIn
 __vt__Q53scn4step4hero7gimmick16StateChallengeIn:
 	.incbin "baserom.dol", 0x488A28, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260558
 $$260558:
 	.incbin "baserom.dol", 0x49DF30, 0x4

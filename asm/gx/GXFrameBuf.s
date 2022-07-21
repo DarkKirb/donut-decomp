@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetDispCopySrc
 GXSetDispCopySrc:
 /* 80035600 00031440  81 02 86 08 */	lwz r8, __GXData-_SDA2_BASE_(r2)
@@ -596,7 +596,7 @@ GXClearBoundingBox:
 /* 80035E48 00031C88  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80035E4C 00031C8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global GXNtsc480IntDf
 GXNtsc480IntDf:
 	.incbin "baserom.dol", 0x42CD60, 0x3C
@@ -610,7 +610,7 @@ GXPal528IntDf:
 GXEurgb60Hz480IntDf:
 	.incbin "baserom.dol", 0x42CE14, 0x3C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22195
 $$22195:
 	.incbin "baserom.dol", 0x4990F0, 0x8

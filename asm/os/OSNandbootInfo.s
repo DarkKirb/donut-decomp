@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSCreateNandbootInfo
 __OSCreateNandbootInfo:
 /* 800277F0 00023630  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -148,7 +148,7 @@ lbl_800279E4:
 /* 800279F8 00023838  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800279FC 0002383C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21058
 $$21058:
 	.incbin "baserom.dol", 0x42BBE0, 0x20

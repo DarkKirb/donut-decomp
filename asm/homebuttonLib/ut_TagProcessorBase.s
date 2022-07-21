@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm2ut19TagProcessorBase$$0c$$1Fv
 __ct__Q36nw4hbm2ut19TagProcessorBase$$0c$$1Fv:
 /* 80141F80 0013DDC0  3C 80 80 44 */	lis r4, __vt__Q36nw4hbm2ut19TagProcessorBase$$0c$$1@ha
@@ -761,12 +761,12 @@ lbl_80142A14:
 /* 80142A38 0013E878  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80142A3C 0013E87C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$24655
 $$24655:
 	.incbin "baserom.dol", 0x40A3D0, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1
 __vt__Q36nw4hbm2ut19TagProcessorBase$$0w$$1:
 	.incbin "baserom.dol", 0x441738, 0x14

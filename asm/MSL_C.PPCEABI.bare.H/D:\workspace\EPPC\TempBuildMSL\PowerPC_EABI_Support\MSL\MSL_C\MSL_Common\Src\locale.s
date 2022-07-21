@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2142
 $$2142:
 	.incbin "baserom.dol", 0x402C68, 0x10
@@ -17,7 +17,7 @@ $$2146:
 $$2147:
 	.incbin "baserom.dol", 0x402CE8, 0x88
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __lconv
 __lconv:
 	.incbin "baserom.dol", 0x41D460, 0x38
@@ -43,7 +43,7 @@ _loc_tim_C:
 _current_locale:
 	.incbin "baserom.dol", 0x41D610, 0x48
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2139
 $$2139:
 	.incbin "baserom.dol", 0x498AC8, 0x4

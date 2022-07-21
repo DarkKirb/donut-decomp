@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6scarfy15StateFaceChangeFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6scarfy15StateFaceChangeFPQ43scn4step5enemy5Enemy:
 /* 802DAE08 002D6C48  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -243,7 +243,7 @@ lbl_802DB160:
 /* 802DB170 002D6FB0  38 21 00 20 */	addi r1, r1, 0x20
 /* 802DB174 002D6FB4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy15StateFaceChange
 __vt__Q53scn4step5enemy6scarfy15StateFaceChange:
 	.incbin "baserom.dol", 0x477758, 0x20

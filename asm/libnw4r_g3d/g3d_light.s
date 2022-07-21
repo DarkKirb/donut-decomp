@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __as__Q34nw4r3g3d8LightObjFRCQ34nw4r3g3d8LightObj
 __as__Q34nw4r3g3d8LightObjFRCQ34nw4r3g3d8LightObj:
 /* 800F1900 000ED740  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -805,7 +805,7 @@ lbl_800F2400:
 /* 800F2408 000EE248  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800F240C 000EE24C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212220
 $$212220:
 	.incbin "baserom.dol", 0x499C20, 0x4

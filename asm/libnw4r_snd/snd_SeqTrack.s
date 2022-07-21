@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetPlayerTrackNo__Q44nw4r3snd6detail8SeqTrackFi
 SetPlayerTrackNo__Q44nw4r3snd6detail8SeqTrackFi:
 /* 8010DF50 00109D90  98 83 00 04 */	stb r4, 4(r3)
@@ -1462,17 +1462,17 @@ lbl_8010F390:
 /* 8010F3A8 0010B1E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8010F3AC 0010B1EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29834
 $$29834:
 	.incbin "baserom.dol", 0x407780, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail8SeqTrack
 __vt__Q44nw4r3snd6detail8SeqTrack:
 	.incbin "baserom.dol", 0x43E530, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210623
 $$210623:
 	.incbin "baserom.dol", 0x499ED0, 0x4

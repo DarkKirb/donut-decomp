@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail19DetectResultContextFv
 __ct__Q35mcoll6detail19DetectResultContextFv:
 /* 801B7558 001B3398  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -32,7 +32,7 @@ lbl_801B7594:
 /* 801B75BC 001B33FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B75C0 001B3400  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250294
 $$250294:
 	.incbin "baserom.dol", 0x49A590, 0x8

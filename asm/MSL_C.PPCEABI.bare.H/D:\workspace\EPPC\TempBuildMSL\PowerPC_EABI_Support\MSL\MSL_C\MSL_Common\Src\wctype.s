@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global __wctype_mapC
 __wctype_mapC:
 	.incbin "baserom.dol", 0x402D98, 0x200

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global port_select_mtu
 port_select_mtu:
 /* 80097750 00093590  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -432,7 +432,7 @@ lbl_80097D14:
 /* 80097D20 00093B60  38 21 00 10 */	addi r1, r1, 0x10
 /* 80097D24 00093B64  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21174
 $$21174:
 	.incbin "baserom.dol", 0x43B080, 0x20

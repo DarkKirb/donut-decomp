@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7parasol20StateParasolDrillEndFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7parasol20StateParasolDrillEndFPQ43scn4step4hero4Hero:
 /* 80393A6C 0038F8AC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -104,7 +104,7 @@ procMove__Q53scn4step4hero7parasol20StateParasolDrillEndFv:
 procFixPos__Q53scn4step4hero7parasol20StateParasolDrillEndFv:
 /* 80393BC0 0038FA00  4B FC CC C0 */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7parasol20StateParasolDrillEnd
 __vt__Q53scn4step4hero7parasol20StateParasolDrillEnd:
 	.incbin "baserom.dol", 0x489DB8, 0x28

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global utl_freebuf
 utl_freebuf:
 /* 80078680 000744C0  94 21 FF F0 */	stwu r1, -0x10(r1)

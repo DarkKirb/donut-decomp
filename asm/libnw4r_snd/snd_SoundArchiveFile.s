@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail22SoundArchiveFileReaderFv
 __ct__Q44nw4r3snd6detail22SoundArchiveFileReaderFv:
 /* 8010FD10 0010BB50  38 00 00 00 */	li r0, 0

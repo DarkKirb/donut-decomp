@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcTexMtx__Q24nw4r3g3dFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4FlagQ44nw4r3g3d13TexSrtTypedef13TexMatrixMode
 CalcTexMtx__Q24nw4r3g3dFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4FlagQ44nw4r3g3d13TexSrtTypedef13TexMatrixMode:
 /* 800E3060 000DEEA0  94 21 FF F0 */	stwu r1, -0x10(r1)

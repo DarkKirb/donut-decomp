@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AnimCurveExecuteU8__Q24nw4r2efFPUcPUcUlUsUl
 AnimCurveExecuteU8__Q24nw4r2efFPUcPUcUlUsUl:
 /* 800A6EF0 000A2D30  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -5667,7 +5667,7 @@ lbl_800ABDDC:
 /* 800ABDF8 000A7C38  4E 80 00 20 */	blr 
 /* 800ABDFC 000A7C3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global gCountStandBit__Q24nw4r2ef
 gCountStandBit__Q24nw4r2ef:
 	.incbin "baserom.dol", 0x43C208, 0x100
@@ -5675,7 +5675,7 @@ gCountStandBit__Q24nw4r2ef:
 gMSB__Q24nw4r2ef:
 	.incbin "baserom.dol", 0x43C308, 0x100
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211024
 $$211024:
 	.incbin "baserom.dol", 0x4994F8, 0x8

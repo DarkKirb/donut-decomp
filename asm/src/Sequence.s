@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info8sequence8SequenceFRQ23mem10IAllocator
 __ct__Q34info8sequence8SequenceFRQ23mem10IAllocator:
 /* 801A5B58 001A1998  90 83 00 00 */	stw r4, 0(r3)
@@ -1578,7 +1578,7 @@ lbl_801A6FFC:
 __dt__Q34info8sequence11CommandWaitFv:
 /* 801A7018 001A2E58  4B FF FB 94 */	b __dt__Q34info8sequence11CommandAnimFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255949
 $$255949:
 	.incbin "baserom.dol", 0x4532E8, 0xC

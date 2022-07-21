@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mem22GlobalNewDeleteChangerFRQ23mem10IAllocator
 __ct__Q23mem22GlobalNewDeleteChangerFRQ23mem10IAllocator:
 /* 801BD370 001B91B0  94 21 FF F0 */	stwu r1, -0x10(r1)

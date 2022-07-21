@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global copyXFB__24$$2unnamed$$2XFBRestore_cpp$$2FPUcPUcUl
 copyXFB__24$$2unnamed$$2XFBRestore_cpp$$2FPUcPUcUl:
 /* 8018B57C 001873BC  39 20 00 00 */	li r9, 0

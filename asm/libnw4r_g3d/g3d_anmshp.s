@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Release__Q34nw4r3g3d9AnmObjShpFv
 Release__Q34nw4r3g3d9AnmObjShpFv:
 /* 800D9740 000D5580  4B FF A1 40 */	b Release__Q34nw4r3g3d9AnmObjVisFv
@@ -1300,7 +1300,7 @@ GetTypeObj__Q34nw4r3g3d9AnmObjShpCFv:
 /* 800DA7E8 000D6628  4E 80 00 20 */	blr 
 /* 800DA7EC 000D662C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d9AnmObjShp
 TYPE_NAME__Q34nw4r3g3d9AnmObjShp:
 	.incbin "baserom.dol", 0x404678, 0x10
@@ -1314,7 +1314,7 @@ TYPE_NAME__Q34nw4r3g3d14AnmObjShpBlend:
 TYPE_NAME__Q34nw4r3g3d12AnmObjShpRes:
 	.incbin "baserom.dol", 0x4046B0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d12AnmObjShpRes
 __vt__Q34nw4r3g3d12AnmObjShpRes:
 	.incbin "baserom.dol", 0x43CDD0, 0x50
@@ -1328,7 +1328,7 @@ __vt__Q34nw4r3g3d13AnmObjShpNode:
 __vt__Q34nw4r3g3d9AnmObjShp:
 	.incbin "baserom.dol", 0x43CEC0, 0x50
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28380
 $$28380:
 	.incbin "baserom.dol", 0x499AB8, 0x4

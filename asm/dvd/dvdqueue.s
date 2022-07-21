@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __DVDClearWaitingQueue
 __DVDClearWaitingQueue:
 /* 8003F050 0003AE90  3C C0 80 4A */	lis r6, WaitingQueue@ha

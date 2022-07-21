@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MTX33Identity__Q24nw4r4mathFPQ34nw4r4math5MTX33
 MTX33Identity__Q24nw4r4mathFPQ34nw4r4math5MTX33:
 /* 800FEDC0 000FAC00  C0 02 92 98 */	lfs f0, $$24187-_SDA2_BASE_(r2)
@@ -308,7 +308,7 @@ MTX44Copy__Q24nw4r4mathFPQ34nw4r4math5MTX44PCQ34nw4r4math5MTX44:
 /* 800FF1E8 000FB028  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800FF1EC 000FB02C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24187
 $$24187:
 	.incbin "baserom.dol", 0x499D58, 0x4

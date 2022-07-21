@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3sfx14DarknessAdjustFRQ33scn4step9Component
 __ct__Q43scn4step3sfx14DarknessAdjustFRQ33scn4step9Component:
 /* 803CCDEC 003C8C2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -120,12 +120,12 @@ draw__Q43scn4step3sfx14DarknessAdjustFv:
 /* 803CCFA4 003C8DE4  38 21 01 00 */	addi r1, r1, 0x100
 /* 803CCFA8 003C8DE8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252031
 $$252031:
 	.incbin "baserom.dol", 0x48ED38, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252071
 $$252071:
 	.incbin "baserom.dol", 0x49E6C0, 0x4

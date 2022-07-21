@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24util10SIntAABBoxFv
 __ct__Q24util10SIntAABBoxFv:
 /* 80405B68 004019A8  3C 80 80 00 */	lis r4, 0x7FFFFFFF@ha

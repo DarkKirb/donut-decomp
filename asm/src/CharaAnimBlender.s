@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Construct__Q23g3d16CharaAnimBlenderFP12MEMAllocatorQ34nw4r3g3d6ResMdl
 Construct__Q23g3d16CharaAnimBlenderFP12MEMAllocatorQ34nw4r3g3d6ResMdl:
 /* 8018BFDC 00187E1C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -909,7 +909,7 @@ lbl_8018CC6C:
 /* 8018CC7C 00188ABC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018CC80 00188AC0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249791
 $$249791:
 	.incbin "baserom.dol", 0x450298, 0x18
@@ -938,7 +938,7 @@ $$2STRING$$2FLog__Q24nw4r4mathFf$$20:
 $$2STRING$$2FLog__Q24nw4r4mathFf:
 	.incbin "baserom.dol", 0x45046C, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249901
 $$249901:
 	.incbin "baserom.dol", 0x49A1B0, 0x4

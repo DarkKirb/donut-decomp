@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global update__Q43scn4step4hero16ProcessSeparatorFv
 update__Q43scn4step4hero16ProcessSeparatorFv:
 /* 80354088 0034FEC8  80 83 00 00 */	lwz r4, 0(r3)

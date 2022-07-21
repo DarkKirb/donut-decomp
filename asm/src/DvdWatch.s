@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global IsExist__Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1Fv
 IsExist__Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1Fv:
 /* 801768B4 001726F4  80 6D ED 18 */	lwz r3, object___Q33hel6common37ExplicitSingleton$$0Q23hid10HIDManager$$1-_SDA_BASE_(r13)
@@ -1006,7 +1006,7 @@ lbl_8017769C:
 /* 801776B4 001734F4  38 21 01 00 */	addi r1, r1, 0x100
 /* 801776B8 001734F8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl$$20
 $$2STRING$$2SetDrawFlag__Q34nw4r2ut17TextWriterBase$$0c$$1FUl$$20:
 	.incbin "baserom.dol", 0x44EC30, 0x34
@@ -1020,7 +1020,7 @@ $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff$$20:
 $$2STRING$$2SetCursor__Q34nw4r2ut10CharWriterFff:
 	.incbin "baserom.dol", 0x44ECAC, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253258
 $$253258:
 	.incbin "baserom.dol", 0x49A0E8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global HatPath__Q53scn4step4hero9modeldesc4WhipFv
 HatPath__Q53scn4step4hero9modeldesc4WhipFv:
 /* 8035CE68 00358CA8  3C 60 80 49 */	lis r3, $$248821@ha
@@ -64,7 +64,7 @@ WhipAnim__Q53scn4step4hero9modeldesc4WhipFv:
 /* 8035CF28 00358D68  90 03 00 08 */	stw r0, 8(r3)
 /* 8035CF2C 00358D6C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero4whip4WhipFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero4whip4WhipFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8038C79C 003885DC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -439,12 +439,12 @@ lbl_8038CCC0:
 /* 8038CCCC 00388B0C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8038CCD0 00388B10  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21
 $$2LOCAL$$2WhipAnim__Q53scn4step4hero9modeldesc4WhipFv$$2entries$$21:
 	.incbin "baserom.dol", 0x41BB70, 0x90
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248821
 $$248821:
 	.incbin "baserom.dol", 0x4876D8, 0x20
@@ -515,7 +515,7 @@ $$248767:
 $$248768:
 	.incbin "baserom.dol", 0x487848, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256579
 $$256579:
 	.incbin "baserom.dol", 0x4897B0, 0x20
@@ -526,7 +526,7 @@ $$256580:
 __vt__Q53scn4step4hero4whip4Whip:
 	.incbin "baserom.dol", 0x4897F4, 0x5C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248735
 $$248735:
 	.incbin "baserom.dol", 0x4976B0, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFRQ33scn4step9Component
 __ct__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFRQ33scn4step9Component:
 /* 80309D10 00305B50  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -608,7 +608,7 @@ mfSetupEffect__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFv:
 /* 8030A5B8 003063F8  38 21 00 40 */	addi r1, r1, 0x40
 /* 8030A5BC 003063FC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256175
 $$256175:
 	.incbin "baserom.dol", 0x47D328, 0x18
@@ -616,7 +616,7 @@ $$256175:
 $$256289:
 	.incbin "baserom.dol", 0x47D340, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256176
 $$256176:
 	.incbin "baserom.dol", 0x496A60, 0x8
@@ -630,7 +630,7 @@ $$256288:
 $$256309:
 	.incbin "baserom.dol", 0x496A78, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256174
 $$256174:
 	.incbin "baserom.dol", 0x49D318, 0x4

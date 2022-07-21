@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q34nw4r2ef15EmitFormBuilderFQ34nw4r2ef12EmitFormType
 Create__Q34nw4r2ef15EmitFormBuilderFQ34nw4r2ef12EmitFormType:
 /* 800B4AD0 000B0910  2C 04 00 00 */	cmpwi r4, 0
@@ -71,10 +71,10 @@ __sinit_$$3ef_emform_cpp:
 /* 800B4BA8 000B09E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800B4BAC 000B09EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402374, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef15EmitFormBuilder
 __vt__Q34nw4r2ef15EmitFormBuilder:
 	.incbin "baserom.dol", 0x43C468, 0x10

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item
 __ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item:
 /* 803C5060 003C0EA0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -118,7 +118,7 @@ lbl_803C51E0:
 /* 803C51E0 003C1020  C0 22 DA BC */	lfs f1, $$254905-_SDA2_BASE_(r2)
 /* 803C51E4 003C1024  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254904
 $$254904:
 	.incbin "baserom.dol", 0x49E578, 0x4

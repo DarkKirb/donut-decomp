@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global fwide
 fwide:
 /* 800103DC 0000C21C  2C 03 00 00 */	cmpwi r3, 0

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global toMaproRect__Q43scn4step3map12BinMaproRectCFv
 toMaproRect__Q43scn4step3map12BinMaproRectCFv:
 /* 803C9018 003C4E58  7C 87 23 78 */	mr r7, r4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q53scn4step4item9modeldesc9ScoreCoinFUl
 Create__Q53scn4step4item9modeldesc9ScoreCoinFUl:
 /* 803C70C4 003C2F04  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -125,7 +125,7 @@ lbl_803C7218:
 /* 803C7284 003C30C4  38 21 00 50 */	addi r1, r1, 0x50
 /* 803C7288 003C30C8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250366
 $$250366:
 	.incbin "baserom.dol", 0x48E5F8, 0xC
@@ -142,7 +142,7 @@ $$250370:
 $$250371:
 	.incbin "baserom.dol", 0x48E640, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250368
 $$250368:
 	.incbin "baserom.dol", 0x4982C8, 0x8

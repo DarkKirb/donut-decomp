@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info9challenge9CountDownFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q53scn4step4info9challenge9CountDownFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 803B1D58 003ADB98  94 21 FE D0 */	stwu r1, -0x130(r1)
@@ -183,7 +183,7 @@ lbl_803B1FE4:
 /* 803B1FF0 003ADE30  38 21 00 40 */	addi r1, r1, 0x40
 /* 803B1FF4 003ADE34  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252118
 $$252118:
 	.incbin "baserom.dol", 0x48C3D8, 0x14
@@ -200,7 +200,7 @@ $$252122:
 $$252124:
 	.incbin "baserom.dol", 0x48C418, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252121
 $$252121:
 	.incbin "baserom.dol", 0x497B48, 0x8

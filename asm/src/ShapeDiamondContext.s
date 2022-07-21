@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreateBaseBottom__Q35mcoll6detail19ShapeDiamondContextFfff
 CreateBaseBottom__Q35mcoll6detail19ShapeDiamondContextFfff:
 /* 801BCCE4 001B8B24  FC 80 08 90 */	fmr f4, f1
@@ -164,7 +164,7 @@ getToBottomDist__Q35mcoll6detail19ShapeDiamondContextCFv:
 /* 801BCEFC 001B8D3C  C0 23 00 14 */	lfs f1, 0x14(r3)
 /* 801BCF00 001B8D40  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249753
 $$249753:
 	.incbin "baserom.dol", 0x49A6F0, 0x8

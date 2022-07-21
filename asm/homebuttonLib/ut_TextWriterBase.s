@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm2ut17TextWriterBase$$0c$$1Fv
 __ct__Q36nw4hbm2ut17TextWriterBase$$0c$$1Fv:
 /* 80142A40 0013E880  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -5830,10 +5830,10 @@ lbl_80147E8C:
 /* 80147EA8 00143CE8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80147EAC 00143CEC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023D8, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$27999
 $$27999:
 	.incbin "baserom.dol", 0x40A3D8, 0x8
@@ -5844,7 +5844,7 @@ $$28011:
 $$29160:
 	.incbin "baserom.dol", 0x40A3E8, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0c$$1
 mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase$$0c$$1:
 	.incbin "baserom.dol", 0x4417C0, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d29CharaAnimInterpolationContextFRCQ23g3d15ResModelContextRQ23mem10IAllocator
 __ct__Q23g3d29CharaAnimInterpolationContextFRCQ23g3d15ResModelContextRQ23mem10IAllocator:
 /* 8018CF5C 00188D9C  80 04 00 00 */	lwz r0, 0(r4)

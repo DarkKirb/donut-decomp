@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global rfc_calc_fcs
 rfc_calc_fcs:
 /* 8009BFB0 00097DF0  3C A0 80 41 */	lis r5, rfc_crctable@ha
@@ -588,12 +588,12 @@ lbl_8009C77C:
 /* 8009C788 000985C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009C78C 000985CC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global rfc_crctable
 rfc_crctable:
 	.incbin "baserom.dol", 0x404250, 0x100
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2688
 $$2688:
 	.incbin "baserom.dol", 0x43B9C0, 0x10

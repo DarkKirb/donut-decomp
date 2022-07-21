@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q43scn4step5enemy12BrainFactoryFRQ43scn4step5enemy5EnemyRQ23mem43ExplicitScopedPtr$$0Q43scn4step5enemy6IBrain$$1
 Create__Q43scn4step5enemy12BrainFactoryFRQ43scn4step5enemy5EnemyRQ23mem43ExplicitScopedPtr$$0Q43scn4step5enemy6IBrain$$1:
 /* 8027F0F0 0027AF30  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2200,12 +2200,12 @@ ScriptPath__Q43scn4step5enemy12BrainFactoryFRQ43scn4step5enemy5Enemy:
 /* 802810F8 0027CF38  38 21 00 10 */	addi r1, r1, 0x10
 /* 802810FC 0027CF3C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_SCRIPT_PATHS__Q43scn4step5enemy26$$2unnamed$$2BrainFactory_cpp$$2
 T_SCRIPT_PATHS__Q43scn4step5enemy26$$2unnamed$$2BrainFactory_cpp$$2:
 	.incbin "baserom.dol", 0x413DD8, 0x6A8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257656
 $$257656:
 	.incbin "baserom.dol", 0x46C678, 0x6A4

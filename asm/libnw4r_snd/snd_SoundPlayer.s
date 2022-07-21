@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3snd11SoundPlayerFv
 __ct__Q34nw4r3snd11SoundPlayerFv:
 /* 80113E10 0010FC50  C0 22 94 58 */	lfs f1, $$25348-_SDA2_BASE_(r2)
@@ -822,7 +822,7 @@ lbl_80114904:
 /* 80114918 00110758  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011491C 0011075C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$25348
 $$25348:
 	.incbin "baserom.dol", 0x499F18, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetCoef__Q44nw4r3snd6detail15BiquadFilterLpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 GetCoef__Q44nw4r3snd6detail15BiquadFilterLpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef:
 /* 80106B80 001029C0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -253,7 +253,7 @@ __dt__Q44nw4r3snd6detail19BiquadFilterBpf2048Fv:
 /* 80106EC8 00102D08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80106ECC 00102D0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global coefTable__Q44nw4r3snd6detail15BiquadFilterLpf
 coefTable__Q44nw4r3snd6detail15BiquadFilterLpf:
 	.incbin "baserom.dol", 0x406020, 0x460
@@ -270,7 +270,7 @@ coefTable__Q44nw4r3snd6detail19BiquadFilterBpf1024:
 coefTable__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 	.incbin "baserom.dol", 0x4070B4, 0x3A4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail19BiquadFilterBpf2048
 __vt__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 	.incbin "baserom.dol", 0x43E138, 0x10
@@ -287,7 +287,7 @@ __vt__Q44nw4r3snd6detail15BiquadFilterHpf:
 __vt__Q44nw4r3snd6detail15BiquadFilterLpf:
 	.incbin "baserom.dol", 0x43E178, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2752
 $$2752:
 	.incbin "baserom.dol", 0x499E00, 0x8

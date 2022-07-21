@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRKInitializeEventQueue
 TRKInitializeEventQueue:
 /* 80016160 00011FA0  3C 60 80 49 */	lis r3, gTRKEventQueue@ha
@@ -124,7 +124,7 @@ TRKDestructEvent:
 /* 800162F4 00012134  80 63 00 08 */	lwz r3, 8(r3)
 /* 800162F8 00012138  48 00 0D 50 */	b TRK_ReleaseBuffer
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
 	.incbin "baserom.dol", 0x41DD50, 0x20

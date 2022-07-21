@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail19ExternalSoundPlayerFv
 __ct__Q44nw4r3snd6detail19ExternalSoundPlayerFv:
 /* 80108F00 00104D40  38 A3 00 04 */	addi r5, r3, 4

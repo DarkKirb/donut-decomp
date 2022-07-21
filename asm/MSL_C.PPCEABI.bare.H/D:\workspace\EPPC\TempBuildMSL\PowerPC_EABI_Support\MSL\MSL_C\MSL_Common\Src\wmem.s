@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global wmemcpy
 wmemcpy:
 /* 8000E20C 0000A04C  54 A5 08 3C */	slwi r5, r5, 1

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step5enemy6common15StateSuperFirstFPQ43scn4step5enemy5Enemyi
 TryToChangeState__Q53scn4step5enemy6common15StateSuperFirstFPQ43scn4step5enemy5Enemyi:
 /* 80294B28 00290968  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -595,7 +595,7 @@ __dt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common15St
 __dt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common19StateSuperAppearPre$$4PQ43scn4step5enemy5Enemy$$4i$$1Fv:
 /* 80295364 002911A4  4B F9 93 3C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common19StateSuperAppearPre$$4PQ43scn4step5enemy5Enemy$$4i$$1
 __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common19StateSuperAppearPre$$4PQ43scn4step5enemy5Enemy$$4i$$1:
 	.incbin "baserom.dol", 0x46F408, 0x10
@@ -606,7 +606,7 @@ __vt__Q24util101StateFactoryArg2$$0Q24util6IState$$4Q53scn4step5enemy6common15St
 __vt__Q53scn4step5enemy6common15StateSuperFirst:
 	.incbin "baserom.dol", 0x46F428, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258008
 $$258008:
 	.incbin "baserom.dol", 0x49BC10, 0x4

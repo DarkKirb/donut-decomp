@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ModelDesc__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindbb
 ModelDesc__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindbb:
 /* 80288AB8 002848F8  2C 05 00 00 */	cmpwi r5, 0
@@ -192,7 +192,7 @@ __sinit_$$3IndiviUtil_cpp:
 /* 80288D84 00284BC4  90 83 06 E8 */	stw r4, 0x6e8(r3)
 /* 80288D88 00284BC8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Param__Q43scn4step4hero10IndiviUtilFRCQ43scn4step4hero4Hero
 Param__Q43scn4step4hero10IndiviUtilFRCQ43scn4step4hero4Hero:
 /* 803418A4 0033D6E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -489,7 +489,7 @@ lbl_80341C60:
 /* 80341C6C 0033DAAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80341C70 0033DAB0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ModelDesc__Q43scn4step4item10IndiviUtilFRQ33scn4step9ComponentQ43scn4step3map11BinItemKindUl
 ModelDesc__Q43scn4step4item10IndiviUtilFRQ33scn4step9ComponentQ43scn4step3map11BinItemKindUl:
 /* 803C1418 003BD258  2C 04 00 03 */	cmpwi r4, 3
@@ -539,7 +539,7 @@ CenterOffs__Q43scn4step4item10IndiviUtilFQ43scn4step3map11BinItemKind:
 /* 803C1480 003BD2C0  D0 03 00 04 */	stfs f0, 4(r3)
 /* 803C1484 003BD2C4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ModelDesc__Q43scn4step6weapon10IndiviUtilFQ43scn4step6weapon4Kindb
 ModelDesc__Q43scn4step6weapon10IndiviUtilFQ43scn4step6weapon4Kindb:
 /* 803D6564 003D23A4  2C 04 00 00 */	cmpwi r4, 0
@@ -561,20 +561,20 @@ lbl_803D6590:
 /* 803D65A0 003D23E0  7D 89 03 A6 */	mtctr r12
 /* 803D65A4 003D23E4  4E 80 04 20 */	bctr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024B8, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step6weapon24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.incbin "baserom.dol", 0x41C920, 0x210
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_INDIVI_TABLE__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.incbin "baserom.dol", 0x46E018, 0x700
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252523
 $$252523:
 	.incbin "baserom.dol", 0x480DD0, 0x1C
@@ -585,7 +585,7 @@ $$252524:
 $$252525:
 	.incbin "baserom.dol", 0x480E08, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2
 T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.incbin "baserom.dol", 0x49B9E0, 0x4
@@ -593,7 +593,7 @@ T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24$$2unnamed$$2IndiviUtil_cpp$$2:
 	.incbin "baserom.dol", 0x49B9E4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252509
 $$252509:
 	.incbin "baserom.dol", 0x49D750, 0x4
@@ -604,7 +604,7 @@ $$252510:
 $$252516:
 	.incbin "baserom.dol", 0x49D758, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250317
 $$250317:
 	.incbin "baserom.dol", 0x49E528, 0x4

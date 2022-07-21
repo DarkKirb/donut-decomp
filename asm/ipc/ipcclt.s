@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global strnlen
 strnlen:
 /* 8004E820 0004A660  7C 65 1B 78 */	mr r5, r3
@@ -1926,7 +1926,7 @@ lbl_80050258:
 /* 80050278 0004C0B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8005027C 0004C0BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __mailboxAck
 __mailboxAck:
 	.incbin "baserom.dol", 0x492B88, 0x4

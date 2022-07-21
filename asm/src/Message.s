@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TextName__Q23app7MessageFPCc
 TextName__Q23app7MessageFPCc:
 /* 801793BC 001751FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -379,7 +379,7 @@ UnsafedTextStaffCredit__Q23app7MessageFPCc:
 /* 801798A0 001756E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801798A4 001756E4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26freeze7MessageFv
 __ct__Q26freeze7MessageFv:
 /* 8018B498 001872D8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -416,7 +416,7 @@ receive__Q26freeze7MessageFv:
 /* 8018B4FC 0018733C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018B500 00187340  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23msg7MessageFPCc
 __ct__Q23msg7MessageFPCc:
 /* 801D1404 001CD244  94 21 FE A0 */	stwu r1, -0x160(r1)
@@ -602,7 +602,7 @@ lbl_801D1674:
 /* 801D1684 001CD4C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D1688 001CD4C8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Title__Q43scn7history6detail7MessageFi
 Title__Q43scn7history6detail7MessageFi:
 /* 802157CC 0021160C  1C 03 00 1C */	mulli r0, r3, 0x1c
@@ -697,12 +697,12 @@ ListenConfirmMusic__Q43scn7history6detail7MessageFv:
 /* 802158C4 00211704  38 63 24 94 */	addi r3, r3, $$249035@l
 /* 802158C8 00211708  4B F6 3D 4C */	b TextHistory__Q23app7MessageFPCc
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global MSG_LABEL_ARRAY__Q43scn7history6detail21$$2unnamed$$2Message_cpp$$2
 MSG_LABEL_ARRAY__Q43scn7history6detail21$$2unnamed$$2Message_cpp$$2:
 	.incbin "baserom.dol", 0x411D90, 0x330
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248890
 $$248890:
 	.incbin "baserom.dol", 0x4592D0, 0xC
@@ -746,7 +746,7 @@ DIRS_JP__21$$2unnamed$$2Message_cpp$$2:
 $$249227:
 	.incbin "baserom.dol", 0x45939C, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248755
 $$248755:
 	.incbin "baserom.dol", 0x45DE60, 0x10
@@ -1045,7 +1045,7 @@ $$249027:
 $$249035:
 	.incbin "baserom.dol", 0x45E594, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249207
 $$249207:
 	.incbin "baserom.dol", 0x493A08, 0x8
@@ -1053,7 +1053,7 @@ $$249207:
 $$249208:
 	.incbin "baserom.dol", 0x493A10, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248753
 $$248753:
 	.incbin "baserom.dol", 0x494BE8, 0x8

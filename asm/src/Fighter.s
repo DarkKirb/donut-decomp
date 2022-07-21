@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global T_PARAM__Q53scn4step4hero9modeldesc21$$2unnamed$$2Fighter_cpp$$2Fv
 T_PARAM__Q53scn4step4hero9modeldesc21$$2unnamed$$2Fighter_cpp$$2Fv:
 /* 8035C160 00357FA0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -299,7 +299,7 @@ lbl_8035C534:
 /* 8035C570 003583B0  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8035C574 003583B4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter7FighterFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero7fighter7FighterFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8039B4C4 00397304  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -494,7 +494,7 @@ procAnim__Q53scn4step4hero7fighter7FighterFv:
 /* 8039B76C 003975AC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8039B770 003975B0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249834
 $$249834:
 	.incbin "baserom.dol", 0x485AA8, 0x1C
@@ -502,7 +502,7 @@ $$249834:
 $$249851:
 	.incbin "baserom.dol", 0x485AC4, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256343
 $$256343:
 	.incbin "baserom.dol", 0x48A300, 0x20
@@ -513,7 +513,7 @@ $$256344:
 __vt__Q53scn4step4hero7fighter7Fighter:
 	.incbin "baserom.dol", 0x48A348, 0x60
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249541
 $$249541:
 	.incbin "baserom.dol", 0x497188, 0x8
@@ -530,7 +530,7 @@ $$249857:
 $$249888:
 	.incbin "baserom.dol", 0x4971A8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249856
 $$249856:
 	.incbin "baserom.dol", 0x49DAF0, 0x8

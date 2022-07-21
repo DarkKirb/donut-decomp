@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global toPrivateChar__30$$2unnamed$$2UserTagProcessor_cpp$$2FPCcbbUl
 toPrivateChar__30$$2unnamed$$2UserTagProcessor_cpp$$2FPCcbbUl:
 /* 801B012C 001ABF6C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1174,7 +1174,7 @@ setUsePrivateCharButtonPushed__Q23lyt16UserTagProcessorFb:
 /* 801B11D0 001AD010  98 83 00 09 */	stb r4, 9(r3)
 /* 801B11D4 001AD014  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2
 RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2:
 	.incbin "baserom.dol", 0x410C70, 0x20
@@ -1182,7 +1182,7 @@ RANDOM_BUTTON_TABLE__30$$2unnamed$$2UserTagProcessor_cpp$$2:
 privateCharMap__30$$2unnamed$$2UserTagProcessor_cpp$$2:
 	.incbin "baserom.dol", 0x410C90, 0xA0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249204
 $$249204:
 	.incbin "baserom.dol", 0x453EE0, 0xC
@@ -1277,7 +1277,7 @@ $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv$$20:
 $$2STRING$$2GetGradationEndColor__Q34nw4r2ut10CharWriterCFv:
 	.incbin "baserom.dol", 0x454168, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249205
 $$249205:
 	.incbin "baserom.dol", 0x493550, 0x4

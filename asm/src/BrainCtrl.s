@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss9BrainCtrlFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss9BrainCtrlFRQ43scn4step4boss4Boss:
 /* 8022D020 00228E60  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -95,7 +95,7 @@ onExecPost__Q43scn4step4boss9BrainCtrlFv:
 /* 8022D12C 00228F6C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8022D130 00228F70  48 00 77 A4 */	b MintUnregister__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy9BrainCtrlFRQ43scn4step5enemy5EnemyRQ23mem10IAllocator
 __ct__Q43scn4step5enemy9BrainCtrlFRQ43scn4step5enemy5EnemyRQ23mem10IAllocator:
 /* 8027EE94 0027ACD4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -274,7 +274,7 @@ onLanding__Q43scn4step5enemy9BrainCtrlFv:
 /* 8027F0E8 0027AF28  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027F0EC 0027AF2C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253447
 $$253447:
 	.incbin "baserom.dol", 0x46C660, 0x18

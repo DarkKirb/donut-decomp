@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WPADiCreateKey
 WPADiCreateKey:
 /* 80063F00 0005FD40  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -960,7 +960,7 @@ lbl_80064D9C:
 /* 80064DB8 00060BF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80064DBC 00060BFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global base
 base:
 	.incbin "baserom.dol", 0x434A18, 0x30

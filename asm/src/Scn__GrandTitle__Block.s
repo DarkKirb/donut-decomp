@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue22Scn__GrandTitle__BlockFRQ26mintvm6VMCore
 AddOn__Q28mintglue22Scn__GrandTitle__BlockFRQ26mintvm6VMCore:
 /* 801C4098 001BFED8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -165,7 +165,7 @@ setVisibility__Q28mintglue22Scn__GrandTitle__BlockFb:
 /* 801C42D4 001C0114  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C42D8 001C0118  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254950
 $$254950:
 	.incbin "baserom.dol", 0x457018, 0x18
@@ -185,7 +185,7 @@ $$254989:
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv:
 	.incbin "baserom.dol", 0x457080, 0x60
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv$$20
 $$2STRING$$2ref__Q26mintvm33MintPtr$$0Q33scn10grandtitle5Block$$1CFv$$20:
 	.incbin "baserom.dol", 0x4936E0, 0x8

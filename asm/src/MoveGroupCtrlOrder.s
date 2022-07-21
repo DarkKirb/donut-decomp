@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrderFv
 __ct__Q53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrderFv:
 /* 80319198 00314FD8  94 21 FF C0 */	stwu r1, -0x40(r1)

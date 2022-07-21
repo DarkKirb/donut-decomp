@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm3lyt8DrawInfoFv
 __ct__Q36nw4hbm3lyt8DrawInfoFv:
 /* 80136840 00132680  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -43,7 +43,7 @@ __dt__Q36nw4hbm3lyt8DrawInfoFv:
 /* 801368C8 00132708  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 801368CC 0013270C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$25011
 $$25011:
 	.incbin "baserom.dol", 0x40A2F0, 0x4
@@ -51,7 +51,7 @@ $$25011:
 $$25012:
 	.incbin "baserom.dol", 0x40A2F4, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt8DrawInfo
 __vt__Q36nw4hbm3lyt8DrawInfo:
 	.incbin "baserom.dol", 0x440068, 0xC

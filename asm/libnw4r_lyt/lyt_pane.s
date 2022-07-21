@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3lyt4PaneFPCQ44nw4r3lyt3res4Pane
 __ct__Q34nw4r3lyt4PaneFPCQ44nw4r3lyt3res4Pane:
 /* 800F2BA0 000EE9E0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1149,10 +1149,10 @@ __sinit_$$3lyt_pane_cpp:
 /* 800F3AE8 000EF928  4E 80 00 20 */	blr 
 /* 800F3AEC 000EF92C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402380, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$210224
 $$210224:
 	.incbin "baserom.dol", 0x43D2D8, 0xC
@@ -1160,7 +1160,7 @@ $$210224:
 __vt__Q34nw4r3lyt4Pane:
 	.incbin "baserom.dol", 0x43D2E4, 0x74
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29820
 $$29820:
 	.incbin "baserom.dol", 0x499C58, 0x4

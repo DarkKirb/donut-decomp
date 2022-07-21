@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero8SlopeFitFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero8SlopeFitFRQ43scn4step4hero4Hero:
 /* 80354C60 00350AA0  90 83 00 00 */	stw r4, 0(r3)
@@ -63,7 +63,7 @@ reset__Q43scn4step4hero8SlopeFitFv:
 /* 80354D28 00350B68  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 80354D2C 00350B6C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250930
 $$250930:
 	.incbin "baserom.dol", 0x49D9B0, 0x4

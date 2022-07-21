@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q43scn4step4boss7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q43scn4step4boss7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 802276D4 00223514  88 0D EF D8 */	lbz r0, $$2GUARD$$2RuntimeTypeInfoImpl$$0Q43scn4step4boss7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo$$2ti-_SDA_BASE_(r13)
@@ -251,7 +251,7 @@ __ct__Q43scn4step4boss8AccessorFRCQ43scn4step4boss8Accessor:
 isValid__Q43scn4step4boss8AccessorCFv:
 /* 80227A10 00223850  4B F6 0C B8 */	b wasSetParent__Q24file8FileTreeCFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy8AccessorFv
 __ct__Q43scn4step5enemy8AccessorFv:
 /* 8027E25C 0027A09C  4B FB E9 B8 */	b __ct__Q63scn4step4boss15challengemaster15EnemySummonCtrl7ReqDataFv
@@ -305,7 +305,7 @@ lbl_8027E2DC:
 isValid__Q43scn4step5enemy8AccessorCFv:
 /* 8027E2F8 0027A138  4B F0 A3 D0 */	b wasSetParent__Q24file8FileTreeCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4boss4Boss$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x45FEC8, 0x24

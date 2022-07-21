@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mem8HeapUnitFRCQ33hel6common15FixedString$$032$$1RQ23mem10IAllocatorUlUli
 __ct__Q23mem8HeapUnitFRCQ33hel6common15FixedString$$032$$1RQ23mem10IAllocatorUlUli:
 /* 801BEEB8 001BACF8  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -241,7 +241,7 @@ heapUsingBlockCount__Q23mem8HeapUnitCFv:
 heapDump__Q23mem8HeapUnitCFv:
 /* 801BF1B0 001BAFF0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem8HeapUnit
 __vt__Q23mem8HeapUnit:
 	.incbin "baserom.dol", 0x455E48, 0x28

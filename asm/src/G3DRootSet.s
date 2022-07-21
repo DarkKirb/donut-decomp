@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle10G3DRootSetFRQ33scn14challengetitle9Component
 __ct__Q33scn14challengetitle10G3DRootSetFRQ33scn14challengetitle9Component:
 /* 801ED900 001E9740  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -420,7 +420,7 @@ setViewMtx__Q33scn14challengetitle10G3DRootSetFv:
 /* 801EDEA0 001E9CE0  38 21 00 50 */	addi r1, r1, 0x50
 /* 801EDEA4 001E9CE4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle10G3DRootSetFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle10G3DRootSetFRQ33scn10grandtitle9Component:
 /* 80205020 00200E60  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -756,7 +756,7 @@ lbl_8020547C:
 /* 80205498 002012D8  38 21 00 50 */	addi r1, r1, 0x50
 /* 8020549C 002012DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history10G3DRootSetFRQ33scn7history9Component
 __ct__Q33scn7history10G3DRootSetFRQ33scn7history9Component:
 /* 80207F3C 00203D7C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -845,7 +845,7 @@ lbl_80208050:
 /* 8020806C 00203EAC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80208070 00203EB0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4core10G3DRootSetFRQ33scn4step9Component
 __ct__Q43scn4step4core10G3DRootSetFRQ33scn4step9Component:
 /* 802760DC 00271F1C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1521,7 +1521,7 @@ lbl_802769F4:
 /* 80276A10 00272850  38 21 00 30 */	addi r1, r1, 0x30
 /* 80276A14 00272854  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn9grandmenu10G3DRootSetFRQ33scn9grandmenu9Component
 __ct__Q33scn9grandmenu10G3DRootSetFRQ33scn9grandmenu9Component:
 /* 803F3638 003EF478  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1797,12 +1797,12 @@ setViewMtx__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F39EC 003EF82C  38 21 00 50 */	addi r1, r1, 0x50
 /* 803F39F0 003EF830  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252374
 $$252374:
 	.incbin "baserom.dol", 0x495850, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253282
 $$253282:
 	.incbin "baserom.dol", 0x49B8F8, 0x8

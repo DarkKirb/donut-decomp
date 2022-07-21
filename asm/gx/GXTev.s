@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetTevOp
 GXSetTevOp:
 /* 80037BC0 00033A00  2C 03 00 00 */	cmpwi r3, 0
@@ -510,7 +510,7 @@ GXSetNumTevStages:
 /* 80038288 000340C8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8003828C 000340CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global TEVCOpTableST0
 TEVCOpTableST0:
 	.incbin "baserom.dol", 0x42D078, 0x14

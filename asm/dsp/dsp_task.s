@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __DSPHandler
 __DSPHandler:
 /* 800475A0 000433E0  94 21 FD 20 */	stwu r1, -0x2e0(r1)
@@ -637,7 +637,7 @@ lbl_80047E18:
 /* 80047E38 00043C78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80047E3C 00043C7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22654
 $$22654:
 	.incbin "baserom.dol", 0x432340, 0x20

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero6common9StateDemoFPQ43scn4step4hero4HeroQ43scn4step4hero10ScriptKindb
 __ct__Q53scn4step4hero6common9StateDemoFPQ43scn4step4hero4HeroQ43scn4step4hero10ScriptKindb:
 /* 80361E2C 0035DC6C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -221,7 +221,7 @@ lbl_80362130:
 /* 80362140 0035DF80  38 21 00 40 */	addi r1, r1, 0x40
 /* 80362144 0035DF84  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common9StateDemo
 __vt__Q53scn4step4hero6common9StateDemo:
 	.incbin "baserom.dol", 0x487C40, 0x28

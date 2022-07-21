@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InitMetroTRK
 InitMetroTRK:
 /* 80015A14 00011854  38 21 FF FC */	addi r1, r1, -4
@@ -235,7 +235,7 @@ __TRKreset:
 /* 80015D30 00011B70  38 A0 00 00 */	li r5, 0
 /* 80015D34 00011B74  48 00 DA EC */	b OSResetSystem
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global TRK_ISR_OFFSETS
 TRK_ISR_OFFSETS:
 	.incbin "baserom.dol", 0x41DC28, 0x40

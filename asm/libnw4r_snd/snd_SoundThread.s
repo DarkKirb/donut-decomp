@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetInstance__Q44nw4r3snd6detail11SoundThreadFv
 GetInstance__Q44nw4r3snd6detail11SoundThreadFv:
 /* 80114CE0 00110B20  94 21 FF F0 */	stwu r1, -0x10(r1)

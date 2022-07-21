@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q33scn5strap10SceneStrap$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q33scn5strap10SceneStrap$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 803F20EC 003EDF2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -513,7 +513,7 @@ isSceneEnd__Q33scn5strap10SceneStrapCFv:
 GetRuntimeTypeInfo__Q33scn5strap10SceneStrapCFv:
 /* 803F2830 003EE670  4B FF F8 BC */	b RuntimeTypeInfoImpl$$0Q33scn5strap10SceneStrap$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252931
 $$252931:
 	.incbin "baserom.dol", 0x491510, 0x14
@@ -554,7 +554,7 @@ $$253027:
 __vt__Q33scn5strap10SceneStrap:
 	.incbin "baserom.dol", 0x4915F0, 0x58
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252932
 $$252932:
 	.incbin "baserom.dol", 0x498860, 0x8
@@ -562,7 +562,7 @@ $$252932:
 $$253025:
 	.incbin "baserom.dol", 0x498868, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252128
 $$252128:
 	.incbin "baserom.dol", 0x49ED20, 0x4

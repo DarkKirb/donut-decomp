@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail4YearFRQ23mem10IAllocatorQ23lyt12PaneAccessori
 __ct__Q43scn7history6detail4YearFRQ23mem10IAllocatorQ23lyt12PaneAccessori:
 /* 8021B2E0 00217120  94 21 F9 20 */	stwu r1, -0x6e0(r1)
@@ -235,7 +235,7 @@ lbl_8021B600:
 /* 8021B640 00217480  38 21 03 80 */	addi r1, r1, 0x380
 /* 8021B644 00217484  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252314
 $$252314:
 	.incbin "baserom.dol", 0x45F618, 0x10

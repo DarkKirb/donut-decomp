@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23gfx9VISettingFv
 __ct__Q23gfx9VISettingFv:
 /* 801979AC 001937EC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -278,7 +278,7 @@ getDimming__Q23gfx9VISettingCFv:
 /* 80197D48 00193B88  88 63 00 10 */	lbz r3, 0x10(r3)
 /* 80197D4C 00193B8C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global NtscInt4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
 NtscInt4x3__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
 	.incbin "baserom.dol", 0x4106B8, 0x44
@@ -322,12 +322,12 @@ Pal60Int16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
 Pal60Prog16x9__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
 	.incbin "baserom.dol", 0x410A2C, 0x44
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global StandardRenderModeSets__Q23gfx23$$2unnamed$$2VISetting_cpp$$2
 StandardRenderModeSets__Q23gfx23$$2unnamed$$2VISetting_cpp$$2:
 	.incbin "baserom.dol", 0x450AA8, 0x38
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249284
 $$249284:
 	.incbin "baserom.dol", 0x49A2B0, 0x8

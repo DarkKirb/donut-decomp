@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10spearspear11StateVanishFPQ43scn4step6weapon6Weaponf
 __ct__Q53scn4step6weapon10spearspear11StateVanishFPQ43scn4step6weapon6Weaponf:
 /* 803E4FA4 003E0DE4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -193,7 +193,7 @@ procFixPos__Q53scn4step6weapon10spearspear11StateVanishFv:
 procObjCollReact__Q53scn4step6weapon10spearspear11StateVanishFv:
 /* 803E5240 003E1080  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon8deespear11StateVanishFPQ43scn4step6weapon6Weaponf
 __ct__Q53scn4step6weapon8deespear11StateVanishFPQ43scn4step6weapon6Weaponf:
 /* 803EDEF0 003E9D30  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -386,17 +386,17 @@ procFixPos__Q53scn4step6weapon8deespear11StateVanishFv:
 procObjCollReact__Q53scn4step6weapon8deespear11StateVanishFv:
 /* 803EE18C 003E9FCC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10spearspear11StateVanish
 __vt__Q53scn4step6weapon10spearspear11StateVanish:
 	.incbin "baserom.dol", 0x490840, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear11StateVanish
 __vt__Q53scn4step6weapon8deespear11StateVanish:
 	.incbin "baserom.dol", 0x491108, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256857
 $$256857:
 	.incbin "baserom.dol", 0x49EA80, 0x4
@@ -404,7 +404,7 @@ $$256857:
 $$256904:
 	.incbin "baserom.dol", 0x49EA84, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256857
 $$256857:
 	.incbin "baserom.dol", 0x49EC68, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23fdg11FDGAccessorFPCv
 __ct__Q23fdg11FDGAccessorFPCv:
 /* 801870EC 00182F2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -9,7 +9,7 @@ __ct__Q23fdg11FDGAccessorFPCv:
 /* 801870F8 00182F38  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801870FC 00182F3C  7C 7F 1B 78 */	mr r31, r3
 /* 80187100 00182F40  90 83 00 00 */	stw r4, 0(r3)
-/* 80187104 00182F44  48 00 00 69 */	bl isValidData__Q25xdata5XDataCFv
+/* 80187104 00182F44  48 00 00 69 */	bl isValidData__Q25.dataXDataCFv
 /* 80187108 00182F48  2C 03 00 00 */	cmpwi r3, 0
 /* 8018710C 00182F4C  40 82 00 14 */	bne lbl_80187120
 /* 80187110 00182F50  38 00 00 00 */	li r0, 0
@@ -40,8 +40,8 @@ lbl_80187158:
 /* 80187164 00182FA4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80187168 00182FA8  4E 80 00 20 */	blr 
 
-.global isValidData__Q25xdata5XDataCFv
-isValidData__Q25xdata5XDataCFv:
+.global isValidData__Q25.dataXDataCFv
+isValidData__Q25.dataXDataCFv:
 /* 8018716C 00182FAC  38 80 00 00 */	li r4, 0
 /* 80187170 00182FB0  38 A0 00 00 */	li r5, 0
 /* 80187174 00182FB4  38 C0 00 00 */	li r6, 0
@@ -145,7 +145,7 @@ header__Q23fdg11FDGAccessorCFv:
 /* 801872C4 00183104  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801872C8 00183108  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801872CC 0018310C  7C 7F 1B 78 */	mr r31, r3
-/* 801872D0 00183110  4B FF FE 9D */	bl isValidData__Q25xdata5XDataCFv
+/* 801872D0 00183110  4B FF FE 9D */	bl isValidData__Q25.dataXDataCFv
 /* 801872D4 00183114  2C 03 00 00 */	cmpwi r3, 0
 /* 801872D8 00183118  41 82 00 10 */	beq lbl_801872E8
 /* 801872DC 0018311C  80 7F 00 00 */	lwz r3, 0(r31)
@@ -173,7 +173,7 @@ nodeAtIndex__Q23fdg11FDGAccessorCFUl:
 /* 80187320 00183160  7C 64 1B 78 */	mr r4, r3
 /* 80187324 00183164  7F C3 F3 78 */	mr r3, r30
 /* 80187328 00183168  80 84 00 0C */	lwz r4, 0xc(r4)
-/* 8018732C 0018316C  48 00 00 29 */	bl labelAddressWithReference__Q25xdata5XDataCFUi
+/* 8018732C 0018316C  48 00 00 29 */	bl labelAddressWithReference__Q25.dataXDataCFUi
 /* 80187330 00183170  1C 1F 00 0C */	mulli r0, r31, 0xc
 /* 80187334 00183174  7C 63 02 14 */	add r3, r3, r0
 /* 80187338 00183178  38 63 00 04 */	addi r3, r3, 4
@@ -184,8 +184,8 @@ nodeAtIndex__Q23fdg11FDGAccessorCFUl:
 /* 8018734C 0018318C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80187350 00183190  4E 80 00 20 */	blr 
 
-.global labelAddressWithReference__Q25xdata5XDataCFUi
-labelAddressWithReference__Q25xdata5XDataCFUi:
+.global labelAddressWithReference__Q25.dataXDataCFUi
+labelAddressWithReference__Q25.dataXDataCFUi:
 /* 80187354 00183194  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80187358 00183198  7C 08 02 A6 */	mflr r0
 /* 8018735C 0018319C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -193,7 +193,7 @@ labelAddressWithReference__Q25xdata5XDataCFUi:
 /* 80187364 001831A4  93 C1 00 08 */	stw r30, 8(r1)
 /* 80187368 001831A8  7C 7E 1B 78 */	mr r30, r3
 /* 8018736C 001831AC  7C 9F 23 78 */	mr r31, r4
-/* 80187370 001831B0  4B FF FD FD */	bl isValidData__Q25xdata5XDataCFv
+/* 80187370 001831B0  4B FF FD FD */	bl isValidData__Q25.dataXDataCFv
 /* 80187374 001831B4  2C 03 00 00 */	cmpwi r3, 0
 /* 80187378 001831B8  40 82 00 0C */	bne lbl_80187384
 /* 8018737C 001831BC  38 60 00 00 */	li r3, 0
@@ -327,4 +327,4 @@ stringRef__Q23fdg11FDGAccessorCFUi:
 
 .global getRef__Q23fdg11FDGAccessorCFUi
 getRef__Q23fdg11FDGAccessorCFUi:
-/* 80187534 00183374  4B FF FE 20 */	b labelAddressWithReference__Q25xdata5XDataCFUi
+/* 80187534 00183374  4B FF FE 20 */	b labelAddressWithReference__Q25.dataXDataCFUi

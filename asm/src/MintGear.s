@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RegisterForce__Q43scn4step4hero8MintGearFRQ43scn4step4hero4Gear
 RegisterForce__Q43scn4step4hero8MintGearFRQ43scn4step4hero4Gear:
 /* 8034B520 00347360  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -122,7 +122,7 @@ __sinit_$$3MintGear_cpp:
 /* 8034B68C 003474CC  38 6D F8 00 */	addi r3, r13, t_obj__Q43scn4step4hero22$$2unnamed$$2MintGear_cpp$$2-_SDA_BASE_
 /* 8034B690 003474D0  4B D9 1D 50 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025C0, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle14AbilityGetFadeFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle14AbilityGetFadeFRQ33scn10grandtitle9Component:
 /* 802006E0 001FC520  90 83 00 00 */	stw r4, 0(r3)
@@ -117,7 +117,7 @@ lbl_80200860:
 /* 8020086C 001FC6AC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80200870 001FC6B0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3sfx14AbilityGetFadeFRQ33scn4step9Component
 __ct__Q43scn4step3sfx14AbilityGetFadeFRQ33scn4step9Component:
 /* 803CC8A4 003C86E4  90 83 00 00 */	stw r4, 0(r3)
@@ -262,7 +262,7 @@ lbl_803CCA98:
 /* 803CCAA4 003C88E4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 803CCAA8 003C88E8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251579
 $$251579:
 	.incbin "baserom.dol", 0x49AA48, 0x4
@@ -282,7 +282,7 @@ $$251603:
 $$251606:
 	.incbin "baserom.dol", 0x49AA60, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252679
 $$252679:
 	.incbin "baserom.dol", 0x49E6A0, 0x4

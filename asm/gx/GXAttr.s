@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXSetVtxDesc
 GXSetVtxDesc:
 /* 800337A0 0002F5E0  28 03 00 19 */	cmplwi r3, 0x19
@@ -1074,7 +1074,7 @@ GXSetNumTexGens:
 /* 80034708 00030548  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8003470C 0003054C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23194
 $$23194:
 	.incbin "baserom.dol", 0x42CB70, 0x68
@@ -1094,7 +1094,7 @@ $$23456:
 $$23589:
 	.incbin "baserom.dol", 0x42CD0C, 0x54
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl1
 $$2LOCAL$$2__GXCalculateVLim__Fv$$2tbl1:
 	.incbin "baserom.dol", 0x492950, 0x4

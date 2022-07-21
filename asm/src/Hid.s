@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero3HidFRQ43scn4step4hero4HeroQ43scn4step4hero7HidKind
 __ct__Q43scn4step4hero3HidFRQ43scn4step4hero4HeroQ43scn4step4hero7HidKind:
 /* 8034086C 0033C6AC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -458,12 +458,12 @@ isEnableInputs__Q43scn4step4hero3HidCFv:
 /* 80340EB4 0033CCF4  54 03 D9 7E */	srwi r3, r0, 5
 /* 80340EB8 0033CCF8  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_BUTTONCONVDATA_WR__17$$2unnamed$$2Hid_cpp$$2
 T_BUTTONCONVDATA_WR__17$$2unnamed$$2Hid_cpp$$2:
 	.incbin "baserom.dol", 0x415E50, 0x50
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253822
 $$253822:
 	.incbin "baserom.dol", 0x49D740, 0x4

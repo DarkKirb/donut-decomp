@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail9StrmSoundFPQ44nw4r3snd6detail50SoundInstanceManager$$0Q44nw4r3snd6detail9StrmSound$$1ii
 __ct__Q44nw4r3snd6detail9StrmSoundFPQ44nw4r3snd6detail50SoundInstanceManager$$0Q44nw4r3snd6detail9StrmSound$$1ii:
 /* 80118A70 001148B0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -502,15 +502,15 @@ __sinit_$$3snd_StrmSound_cpp:
 /* 80119118 00114F58  4E 80 00 20 */	blr 
 /* 8011911C 00114F5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023A4, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail9StrmSound
 __vt__Q44nw4r3snd6detail9StrmSound:
 	.incbin "baserom.dol", 0x43E6A0, 0x38
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210414
 $$210414:
 	.incbin "baserom.dol", 0x499F48, 0x4

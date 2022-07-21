@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global expHeapHead__Q34nrel3mem14ExpHeapSupportFP12MEMiHeapHead
 expHeapHead__Q34nrel3mem14ExpHeapSupportFP12MEMiHeapHead:
 /* 8014D06C 00148EAC  38 63 00 3C */	addi r3, r3, 0x3c
@@ -126,7 +126,7 @@ lbl_8014D1E4:
 /* 8014D1F8 00149038  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8014D1FC 0014903C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2789
 $$2789:
 	.incbin "baserom.dol", 0x4436E8, 0x14

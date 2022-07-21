@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q43scn4step5ocoll14ManagerCreatorFRQ33scn4step9Component
 Create__Q43scn4step5ocoll14ManagerCreatorFRQ33scn4step9Component:
 /* 803CAAE4 003C6924  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -50,7 +50,7 @@ lbl_803CAB30:
 /* 803CAB90 003C69D0  38 21 00 70 */	addi r1, r1, 0x70
 /* 803CAB94 003C69D4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251813
 $$251813:
 	.incbin "baserom.dol", 0x48EAF0, 0x30

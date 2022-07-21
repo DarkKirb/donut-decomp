@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DBIsDebuggerPresent
 DBIsDebuggerPresent:
 /* 8002BAB0 000278F0  80 6D E4 D8 */	lwz r3, __DBInterface-_SDA_BASE_(r13)

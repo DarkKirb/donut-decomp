@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __eq__Q34nw4r3g3d7ResNameCFQ34nw4r3g3d7ResName
 __eq__Q34nw4r3g3d7ResNameCFQ34nw4r3g3d7ResName:
 /* 800C8AE0 000C4920  94 21 FF F0 */	stwu r1, -0x10(r1)

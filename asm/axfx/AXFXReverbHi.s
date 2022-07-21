@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AXFXReverbHiInit
 AXFXReverbHiInit:
 /* 80046160 00041FA0  C0 E3 01 58 */	lfs f7, 0x158(r3)
@@ -54,7 +54,7 @@ AXFXReverbHiCallback:
 /* 80046208 00042048  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004620C 0004204C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22209
 $$22209:
 	.incbin "baserom.dol", 0x499208, 0x4

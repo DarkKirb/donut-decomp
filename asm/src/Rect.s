@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33hel3geo4RectFv
 __ct__Q33hel3geo4RectFv:
 /* 8019FD54 0019BB94  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -356,7 +356,7 @@ lbl_801A01E4:
 /* 801A01F4 0019C034  D0 23 00 00 */	stfs f1, 0(r3)
 /* 801A01F8 0019C038  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249898
 $$249898:
 	.incbin "baserom.dol", 0x49A3E8, 0x4

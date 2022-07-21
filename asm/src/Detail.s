@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __vc__Q33hel6common43MutableArray$$0Q33scn7history11ProductKind$$43$$1CFUl
 __vc__Q33hel6common43MutableArray$$0Q33scn7history11ProductKind$$43$$1CFUl:
 /* 802117D0 0020D610  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3607,7 +3607,7 @@ canRemove__Q43scn7history6detail6DetailFv:
 /* 80214B10 00210950  38 63 24 E0 */	addi r3, r3, 0x24e0
 /* 80214B14 00210954  48 00 29 A8 */	b canRemove__Q43scn7history6detail11MovieWindowFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252852
 $$252852:
 	.incbin "baserom.dol", 0x411D78, 0xC
@@ -3615,7 +3615,7 @@ $$252852:
 $$252854:
 	.incbin "baserom.dol", 0x411D84, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252845
 $$252845:
 	.incbin "baserom.dol", 0x45DB08, 0xC
@@ -3722,7 +3722,7 @@ $$259151:
 $$259152:
 	.incbin "baserom.dol", 0x45DD34, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258575
 $$258575:
 	.incbin "baserom.dol", 0x494AD0, 0x8
@@ -3796,7 +3796,7 @@ $$259187:
 $$259188:
 	.incbin "baserom.dol", 0x494B70, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252847
 $$252847:
 	.incbin "baserom.dol", 0x49ACB0, 0x4

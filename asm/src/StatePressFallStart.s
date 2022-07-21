@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss9moundeath19StatePressFallStartFPQ43scn4step4boss4BossQ53scn4step4boss9moundeath8JumpKind
 __ct__Q53scn4step4boss9moundeath19StatePressFallStartFPQ43scn4step4boss4BossQ53scn4step4boss9moundeath8JumpKind:
 /* 802564F0 00252330  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -200,7 +200,7 @@ create__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath
 __dt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressFall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1Fv:
 /* 80256794 002525D4  4B FD 7F 0C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressFall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1
 __vt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14StatePressFall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9moundeath8JumpKind$$1:
 	.incbin "baserom.dol", 0x4651E0, 0x10
@@ -208,7 +208,7 @@ __vt__Q24util134StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss9moundeath14
 __vt__Q53scn4step4boss9moundeath19StatePressFallStart:
 	.incbin "baserom.dol", 0x4651F0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256005
 $$256005:
 	.incbin "baserom.dol", 0x49B430, 0x8

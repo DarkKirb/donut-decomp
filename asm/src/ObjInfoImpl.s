@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss11ObjInfoImplFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss11ObjInfoImplFRQ43scn4step4boss4Boss:
 /* 802335C0 0022F400  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -141,7 +141,7 @@ state__Q43scn4step4boss11ObjInfoImplCFv:
 /* 80233768 0022F5A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023376C 0022F5AC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero11ObjInfoImplFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero11ObjInfoImplFRQ43scn4step4hero4Hero:
 /* 8035083C 0034C67C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -342,12 +342,12 @@ state__Q43scn4step4hero11ObjInfoImplCFv:
 /* 80350AB4 0034C8F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80350AB8 0034C8F8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss11ObjInfoImpl
 __vt__Q43scn4step4boss11ObjInfoImpl:
 	.incbin "baserom.dol", 0x460788, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255463
 $$255463:
 	.incbin "baserom.dol", 0x481308, 0x14
@@ -370,12 +370,12 @@ $$255469:
 __vt__Q43scn4step4hero11ObjInfoImpl:
 	.incbin "baserom.dol", 0x481364, 0x2C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254747
 $$254747:
 	.incbin "baserom.dol", 0x4952C8, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255468
 $$255468:
 	.incbin "baserom.dol", 0x496DF8, 0x8

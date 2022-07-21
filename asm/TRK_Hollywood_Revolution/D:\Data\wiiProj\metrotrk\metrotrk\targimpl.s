@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRKValidMemory32
 TRKValidMemory32:
 /* 80018884 000146C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1736,7 +1736,7 @@ lbl_8001A090:
 /* 8001A090 00015ED0  90 C3 00 00 */	stw r6, 0(r3)
 /* 8001A094 00015ED4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global gTRKMemMap
 gTRKMemMap:
 	.incbin "baserom.dol", 0x403878, 0x10
@@ -1750,7 +1750,7 @@ $$2999:
 $$21022:
 	.incbin "baserom.dol", 0x4038D8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global gTRKExceptionStatus
 gTRKExceptionStatus:
 	.incbin "baserom.dol", 0x41DE90, 0x10

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __KMPLS_f2i
 __KMPLS_f2i:
 /* 800724C0 0006E300  C0 02 89 7C */	lfs f0, $$22973-_SDA2_BASE_(r2)
@@ -669,12 +669,12 @@ __KMPLS_linear_Direction:
 /* 80072EC8 0006ED08  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80072ECC 0006ED0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global e_dir
 e_dir:
 	.incbin "baserom.dol", 0x436110, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22972
 $$22972:
 	.incbin "baserom.dol", 0x499438, 0x4

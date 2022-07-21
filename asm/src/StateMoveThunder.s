@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6dubior16StateMoveThunderFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6dubior16StateMoveThunderFPQ43scn4step4boss4Boss:
 /* 8024F2BC 0024B0FC  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -471,12 +471,12 @@ lbl_8024F910:
 procFixPos__Q53scn4step4boss6dubior16StateMoveThunderFv:
 /* 8024F978 0024B7B8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6dubior16StateMoveThunder
 __vt__Q53scn4step4boss6dubior16StateMoveThunder:
 	.incbin "baserom.dol", 0x463910, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257085
 $$257085:
 	.incbin "baserom.dol", 0x49B2F0, 0x4

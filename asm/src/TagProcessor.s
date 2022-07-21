@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1
 Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext$$0w$$1:
 /* 801AFC70 001ABAB0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -120,7 +120,7 @@ setUseButtonPushedChar__Q23lyt12TagProcessorFb:
 /* 801AFDEC 001ABC2C  38 63 00 14 */	addi r3, r3, 0x14
 /* 801AFDF0 001ABC30  48 00 13 E0 */	b setUsePrivateCharButtonPushed__Q23lyt16UserTagProcessorFb
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23lyt12TagProcessor
 __vt__Q23lyt12TagProcessor:
 	.incbin "baserom.dol", 0x453EA0, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSFPRInit
 __OSFPRInit:
 /* 8001A2C0 00016100  7C 60 00 A6 */	mfmsr r3
@@ -1520,7 +1520,7 @@ lbl_8001B794:
 /* 8001B798 000175D8  88 63 31 84 */	lbz r3, 0x80003184@l(r3)
 /* 8001B79C 000175DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
 	.incbin "baserom.dol", 0x41DED8, 0x48
@@ -1609,7 +1609,7 @@ $$21853:
 __OSExceptionLocations:
 	.incbin "baserom.dol", 0x41E2A8, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSVersion
 __OSVersion:
 	.incbin "baserom.dol", 0x492868, 0x4
@@ -1632,7 +1632,7 @@ $$21187:
 AppGameNameForSysMenu:
 	.incbin "baserom.dol", 0x492890, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21010
 $$21010:
 	.incbin "baserom.dol", 0x499008, 0x4

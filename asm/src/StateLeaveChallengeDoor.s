@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7gimmick23StateLeaveChallengeDoorFPQ43scn4step4hero4HeroRCQ33hel4math7Vector3
 __ct__Q53scn4step4hero7gimmick23StateLeaveChallengeDoorFPQ43scn4step4hero4HeroRCQ33hel4math7Vector3:
 /* 80380258 0037C098  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -412,12 +412,12 @@ lbl_8038081C:
 procFixPos__Q53scn4step4hero7gimmick23StateLeaveChallengeDoorFv:
 /* 80380830 0037C670  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7gimmick23StateLeaveChallengeDoor
 __vt__Q53scn4step4hero7gimmick23StateLeaveChallengeDoor:
 	.incbin "baserom.dol", 0x488C00, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260395
 $$260395:
 	.incbin "baserom.dol", 0x49DFA0, 0x8

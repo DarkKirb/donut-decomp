@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef8ParticleFv
 __ct__Q34nw4r2ef8ParticleFv:
 /* 800AF490 000AB2D0  3C 80 80 44 */	lis r4, __vt__Q34nw4r2ef8Particle@ha
@@ -945,12 +945,12 @@ lbl_800B023C:
 /* 800B0258 000AC098  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800B025C 000AC09C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef8Particle
 __vt__Q34nw4r2ef8Particle:
 	.incbin "baserom.dol", 0x43C408, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28602
 $$28602:
 	.incbin "baserom.dol", 0x499568, 0x4

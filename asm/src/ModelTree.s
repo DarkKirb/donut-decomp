@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q28dynamics9ModelTreeFRQ23mem15AllocatorHandleRCQ23g3d13ModelAccessorRCQ28dynamics4Desc
 __ct__Q28dynamics9ModelTreeFRQ23mem15AllocatorHandleRCQ23g3d13ModelAccessorRCQ28dynamics4Desc:
 /* 8017D2EC 0017912C  94 21 FF C0 */	stwu r1, -0x40(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36nw4hbm3lyt7PictureFPCQ46nw4hbm3lyt3res7PictureRCQ36nw4hbm3lyt11ResBlockSet
 __ct__Q36nw4hbm3lyt7PictureFPCQ46nw4hbm3lyt3res7PictureRCQ36nw4hbm3lyt11ResBlockSet:
 /* 8013BB40 00137980  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -391,15 +391,15 @@ __sinit_$$3lyt_picture_cpp:
 /* 8013C098 00137ED8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8013C09C 00137EDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023CC, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$28171
 $$28171:
 	.incbin "baserom.dol", 0x40A350, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt7Picture
 __vt__Q36nw4hbm3lyt7Picture:
 	.incbin "baserom.dol", 0x440200, 0x6C

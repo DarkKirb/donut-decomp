@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy4como9StateHangFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy4como9StateHangFPQ43scn4step5enemy5Enemy:
 /* 802A82EC 002A412C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -213,7 +213,7 @@ lbl_802A85DC:
 __dt__Q53scn4step5enemy4como9StateHangFv:
 /* 802A85F4 002A4434  4B FE 93 C4 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero12interference9StateHangFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero12interference9StateHangFPQ43scn4step4hero4Hero:
 /* 80371678 0036D4B8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -871,12 +871,12 @@ create__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interfere
 __dt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference9StateHang$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80371FF4 0036DE34  4B EB C6 AC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy4como9StateHang
 __vt__Q53scn4step5enemy4como9StateHang:
 	.incbin "baserom.dol", 0x471D40, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference9StateHang$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interference9StateHang$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x488598, 0x10
@@ -884,7 +884,7 @@ __vt__Q24util96StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero12interferenc
 __vt__Q53scn4step4hero12interference9StateHang:
 	.incbin "baserom.dol", 0x4885A8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256895
 $$256895:
 	.incbin "baserom.dol", 0x49C108, 0x4
@@ -898,7 +898,7 @@ $$256897:
 $$256898:
 	.incbin "baserom.dol", 0x49C114, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258465
 $$258465:
 	.incbin "baserom.dol", 0x49DD18, 0x4

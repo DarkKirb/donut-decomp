@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick8switch_n12SwitchToggleFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick8switch_n12SwitchToggleFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80328508 00324348  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -112,12 +112,12 @@ onChangeToOn__Q53scn4step7gimmick8switch_n12SwitchToggleFv:
 onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchToggleFv:
 /* 80328648 00324488  4B FF FE 8C */	b onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick8switch_n12SwitchToggle
 __vt__Q53scn4step7gimmick8switch_n12SwitchToggle:
 	.incbin "baserom.dol", 0x47E678, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252602
 $$252602:
 	.incbin "baserom.dol", 0x496D68, 0x8

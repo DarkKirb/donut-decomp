@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __kernel_cos
 __kernel_cos:
 /* 800120BC 0000DEFC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -77,7 +77,7 @@ lbl_800121C4:
 /* 800121C4 0000E004  38 21 00 20 */	addi r1, r1, 0x20
 /* 800121C8 0000E008  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2476
 $$2476:
 	.incbin "baserom.dol", 0x498E70, 0x8

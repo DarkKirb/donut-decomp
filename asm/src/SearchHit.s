@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll9SearchHitFRQ25ocoll7ManagerRQ25ocoll5Owner
 __ct__Q25ocoll9SearchHitFRQ25ocoll7ManagerRQ25ocoll5Owner:
 /* 801D8DD8 001D4C18  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -461,7 +461,7 @@ getCollidedHitOwnerUid__Q25ocoll9SearchHitCFUl:
 /* 801D93D8 001D5218  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D93DC 001D521C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q25ocoll9SearchHit
 __vt__Q25ocoll9SearchHit:
 	.incbin "baserom.dol", 0x4594F8, 0x10

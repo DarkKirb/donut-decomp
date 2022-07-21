@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera19IndiviCameraManagerFRQ33scn4step9Component
 __ct__Q43scn4step6camera19IndiviCameraManagerFRQ33scn4step9Component:
 /* 802654B8 002612F8  94 21 FF E0 */	stwu r1, -0x20(r1)

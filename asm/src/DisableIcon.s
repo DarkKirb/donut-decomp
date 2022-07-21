@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hbm11DisableIconFv
 __ct__Q23hbm11DisableIconFv:
 /* 8019C158 00197F98  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -169,10 +169,10 @@ __sinit_$$3DisableIcon_cpp:
 /* 8019C388 001981C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019C38C 001981CC  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402410, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250030
 $$250030:
 	.incbin "baserom.dol", 0x49A2F8, 0x4

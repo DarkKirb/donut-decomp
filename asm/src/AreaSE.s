@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick6arease6AreaSEFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick6arease6AreaSEFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 802FDDB8 002F9BF8  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -219,12 +219,12 @@ lbl_802FE0B8:
 /* 802FE0C4 002F9F04  38 21 00 40 */	addi r1, r1, 0x40
 /* 802FE0C8 002F9F08  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global SE_LABEL_TABLE__Q53scn4step7gimmick6arease20$$2unnamed$$2AreaSE_cpp$$2
 SE_LABEL_TABLE__Q53scn4step7gimmick6arease20$$2unnamed$$2AreaSE_cpp$$2:
 	.incbin "baserom.dol", 0x496900, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251649
 $$251649:
 	.incbin "baserom.dol", 0x49D1C8, 0x8

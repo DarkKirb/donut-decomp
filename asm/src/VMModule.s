@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm8VMModuleFPCv
 __ct__Q26mintvm8VMModuleFPCv:
 /* 801CD1E0 001C9020  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -138,7 +138,7 @@ lbl_801CD3AC:
 /* 801CD3CC 001C920C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CD3D0 001C9210  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q26mintvm8VMModule
 __vt__Q26mintvm8VMModule:
 	.incbin "baserom.dol", 0x458CA0, 0xC

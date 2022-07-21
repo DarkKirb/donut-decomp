@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick5stake5StakeFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick5stake5StakeFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80325534 00321374  94 21 FF 60 */	stwu r1, -0xa0(r1)
@@ -443,7 +443,7 @@ mfStartStrike__Q53scn4step7gimmick5stake5StakeFv:
 /* 80325B8C 003219CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80325B90 003219D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258060
 $$258060:
 	.incbin "baserom.dol", 0x47E588, 0x14
@@ -454,12 +454,12 @@ $$258062:
 $$258184:
 	.incbin "baserom.dol", 0x47E5AC, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258061
 $$258061:
 	.incbin "baserom.dol", 0x496D20, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258063
 $$258063:
 	.incbin "baserom.dol", 0x49D5B8, 0x4

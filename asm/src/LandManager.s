@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25mcoll11LandManagerFRQ23mem10IAllocator
 __ct__Q25mcoll11LandManagerFRQ23mem10IAllocator:
 /* 801B16D8 001AD518  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1257,7 +1257,7 @@ lbl_801B27D0:
 /* 801B27E0 001AE620  38 21 00 40 */	addi r1, r1, 0x40
 /* 801B27E4 001AE624  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3map11LandManagerFRQ23mem10IAllocatorRCQ43scn4step3map12DataAccessor
 __ct__Q43scn4step3map11LandManagerFRQ23mem10IAllocatorRCQ43scn4step3map12DataAccessor:
 /* 803CA68C 003C64CC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1303,7 +1303,7 @@ mgAccessor__Q43scn4step3map11LandManagerCFv:
 /* 803CA708 003C6548  38 63 02 2C */	addi r3, r3, 0x22c
 /* 803CA70C 003C654C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253368
 $$253368:
 	.incbin "baserom.dol", 0x49A520, 0x8

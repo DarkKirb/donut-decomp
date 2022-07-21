@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setLandingPosForGimmick__Q43scn4step4hero7LandingFv
 setLandingPosForGimmick__Q43scn4step4hero7LandingFv:
 /* 80344A84 003408C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -130,7 +130,7 @@ lbl_80344C24:
 /* 80344C3C 00340A7C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80344C40 00340A80  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252449
 $$252449:
 	.incbin "baserom.dol", 0x49D7A0, 0x4

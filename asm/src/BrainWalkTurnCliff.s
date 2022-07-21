@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common18BrainWalkTurnCliffFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common18BrainWalkTurnCliffFRQ43scn4step5enemy5Enemy:
 /* 80291708 0028D548  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -27,7 +27,7 @@ onLanding__Q53scn4step5enemy6common18BrainWalkTurnCliffFv:
 __dt__Q53scn4step5enemy6common18BrainWalkTurnCliffFv:
 /* 80291748 0028D588  4B FF F9 24 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common18BrainWalkTurnCliff
 __vt__Q53scn4step5enemy6common18BrainWalkTurnCliff:
 	.incbin "baserom.dol", 0x46F0C8, 0x20

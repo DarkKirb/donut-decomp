@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80309414 00305254  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -351,7 +351,7 @@ reqDoorCloseSE__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv:
 kind__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExCFv:
 /* 803098D4 00305714  4B DF F1 1C */	b GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256569
 $$256569:
 	.incbin "baserom.dol", 0x47CF80, 0x24
@@ -380,7 +380,7 @@ $$256697:
 __vt__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouEx:
 	.incbin "baserom.dol", 0x47D040, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256570
 $$256570:
 	.incbin "baserom.dol", 0x496A30, 0x8

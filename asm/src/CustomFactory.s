@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q53scn4step4boss7bonkers6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q53scn4step4boss7bonkers6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 8022E6FC 0022A53C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -563,7 +563,7 @@ lbl_8022EE90:
 /* 8022EEA0 0022ACE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022EEA4 0022ACE4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q53scn4step5enemy4kabu6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q53scn4step5enemy4kabu6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80281FBC 0027DDFC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2792,7 +2792,7 @@ lbl_80283E10:
 /* 80283E28 0027FC68  38 21 00 10 */	addi r1, r1, 0x10
 /* 80283E2C 0027FC6C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q53scn4step6weapon16fighterhadoushot6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q53scn4step6weapon16fighterhadoushot6Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 803D37E0 003CF620  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -6000,17 +6000,17 @@ __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear9S
 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon11hotheadfire9StateMain$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803D6060 003D1EA0  4B E5 86 40 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252639
 $$252639:
 	.incbin "baserom.dol", 0x4605E0, 0x70
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256431
 $$256431:
 	.incbin "baserom.dol", 0x46DCD8, 0x258
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$264044
 $$264044:
 	.incbin "baserom.dol", 0x48F038, 0x108

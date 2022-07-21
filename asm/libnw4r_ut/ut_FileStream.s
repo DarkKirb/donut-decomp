@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Skip__Q44nw4r2ut10FileStream12FilePositionFl
 Skip__Q44nw4r2ut10FileStream12FilePositionFl:
 /* 80120660 0011C4A0  2C 04 00 00 */	cmpwi r4, 0
@@ -88,7 +88,7 @@ __sinit_$$3ut_FileStream_cpp:
 /* 80120768 0011C5A8  4E 80 00 20 */	blr 
 /* 8012076C 0011C5AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023B0, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

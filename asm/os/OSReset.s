@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSRegisterShutdownFunction
 OSRegisterShutdownFunction:
 /* 80022F10 0001ED50  80 AD E4 18 */	lwz r5, ShutdownFunctionQueue-_SDA_BASE_(r13)
@@ -683,7 +683,7 @@ OSResetSystem:
 /* 80023838 0001F678  48 16 6F B8 */	b OSPanic
 /* 8002383C 0001F67C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22083
 $$22083:
 	.incbin "baserom.dol", 0x41F838, 0xC

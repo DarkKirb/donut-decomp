@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FindNameResource__37$$2unnamed$$2lyt_arcResourceAccessor_cpp$$2FP9ARCHandlePCc
 FindNameResource__37$$2unnamed$$2lyt_arcResourceAccessor_cpp$$2FP9ARCHandlePCc:
 /* 80135870 001316B0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -202,7 +202,7 @@ GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc:
 /* 80135B28 00131968  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80135B2C 0013196C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23471
 $$23471:
 	.incbin "baserom.dol", 0x43FF00, 0x4

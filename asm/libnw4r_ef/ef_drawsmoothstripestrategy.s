@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef24DrawSmoothStripeStrategyFv
 __ct__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
 /* 800C3A90 000BF8D0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -5473,12 +5473,12 @@ __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
 /* 800C8AD8 000C4918  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800C8ADC 000C491C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef24DrawSmoothStripeStrategy
 __vt__Q34nw4r2ef24DrawSmoothStripeStrategy:
 	.incbin "baserom.dol", 0x43C5B8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$215287
 $$215287:
 	.incbin "baserom.dol", 0x499930, 0x4

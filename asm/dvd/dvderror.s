@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global cbForNandClose
 cbForNandClose:
 /* 8003F2D0 0003B110  81 8D E6 E0 */	lwz r12, Callback-_SDA_BASE_(r13)
@@ -722,7 +722,7 @@ __DVDStoreErrorCode:
 /* 8003FCE8 0003BB28  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8003FCEC 0003BB2C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21459
 $$21459:
 	.incbin "baserom.dol", 0x42D7A8, 0x1C

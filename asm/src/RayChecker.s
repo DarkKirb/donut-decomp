@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Check__Q35mcoll6detail10RayCheckerFRCQ35mcoll6detail7LandSetRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ35mcoll6detail17ActorDetectOption
 Check__Q35mcoll6detail10RayCheckerFRCQ35mcoll6detail7LandSetRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ35mcoll6detail17ActorDetectOption:
 /* 801BC514 001B8354  94 21 F9 90 */	stwu r1, -0x670(r1)
@@ -541,7 +541,7 @@ lbl_801BCCCC:
 /* 801BCCDC 001B8B1C  42 00 FF F0 */	bdnz lbl_801BCCCC
 /* 801BCCE0 001B8B20  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251870
 $$251870:
 	.incbin "baserom.dol", 0x49A6E0, 0x4

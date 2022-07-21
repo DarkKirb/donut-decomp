@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __nw__5MoSdkFUl
 __nw__5MoSdkFUl:
 /* 80150F30 0014CD70  48 00 27 F0 */	b MOiAlloc__FUi
@@ -847,7 +847,7 @@ lbl_80151AE8:
 /* 80151B18 0014D958  38 21 00 20 */	addi r1, r1, 0x20
 /* 80151B1C 0014D95C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23186
 $$23186:
 	.incbin "baserom.dol", 0x443FC8, 0x1C
@@ -927,7 +927,7 @@ $$23353:
 $$23352:
 	.incbin "baserom.dol", 0x444258, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23196
 $$23196:
 	.incbin "baserom.dol", 0x492EA0, 0x8

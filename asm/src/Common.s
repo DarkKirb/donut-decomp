@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Script__Q53scn4step4hero9modeldesc6CommonFv
 Script__Q53scn4step4hero9modeldesc6CommonFv:
 /* 8035BBAC 003579EC  3C 60 80 49 */	lis r3, $$249133@ha
@@ -15,12 +15,12 @@ Script__Q53scn4step4hero9modeldesc6CommonFv:
 /* 8035BBD0 00357A10  90 03 00 08 */	stw r0, 8(r3)
 /* 8035BBD4 00357A14  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Script__Q53scn4step4hero9modeldesc6CommonFv$$2ENTRIES$$20
 $$2LOCAL$$2Script__Q53scn4step4hero9modeldesc6CommonFv$$2ENTRIES$$20:
 	.incbin "baserom.dol", 0x4164C0, 0x1C20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
 $$248726:
 	.incbin "baserom.dol", 0x4818A0, 0x20

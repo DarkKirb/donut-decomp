@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info10HeroStatusFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ43scn4step4hero4KindbbQ43scn4step4hero11AbilityKindRQ26effect7ManagerRQ26effect5GroupQ33scn4step13ChallengeKind
 __ct__Q43scn4step4info10HeroStatusFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ43scn4step4hero4KindbbQ43scn4step4hero11AbilityKindRQ26effect7ManagerRQ26effect5GroupQ33scn4step13ChallengeKind:
 /* 803A937C 003A51BC  94 21 FB E0 */	stwu r1, -0x420(r1)
@@ -740,7 +740,7 @@ lbl_803A9DB4:
 /* 803A9DC0 003A5C00  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A9DC4 003A5C04  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254295
 $$254295:
 	.incbin "baserom.dol", 0x48B8B8, 0x10
@@ -784,7 +784,7 @@ $$254311:
 $$254460:
 	.incbin "baserom.dol", 0x48B988, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254299
 $$254299:
 	.incbin "baserom.dol", 0x497948, 0x8
@@ -795,7 +795,7 @@ $$254303:
 $$254304:
 	.incbin "baserom.dol", 0x497958, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254301
 $$254301:
 	.incbin "baserom.dol", 0x49E428, 0x8

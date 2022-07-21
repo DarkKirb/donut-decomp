@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick9otachidai9OtachidaiFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick9otachidai9OtachidaiFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 8031A410 00316250  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -192,17 +192,17 @@ mfCreateMoveLand__Q53scn4step7gimmick9otachidai9OtachidaiFv:
 /* 8031A6B0 003164F0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8031A6B4 003164F4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253405
 $$253405:
 	.incbin "baserom.dol", 0x47DC90, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253406
 $$253406:
 	.incbin "baserom.dol", 0x496C38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253404
 $$253404:
 	.incbin "baserom.dol", 0x49D510, 0x4

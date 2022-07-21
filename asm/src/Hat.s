@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle3HatFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModelQ33scn14challengetitle11AbilityKind
 __ct__Q33scn14challengetitle3HatFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModelQ33scn14challengetitle11AbilityKind:
 /* 801EE1DC 001EA01C  94 21 FE 30 */	stwu r1, -0x1d0(r1)
@@ -357,7 +357,7 @@ procReadyToRender__Q33scn14challengetitle3HatFv:
 /* 801EE6F0 001EA530  4B F8 DA 88 */	b update__Q28dynamics8DynamicsFv
 /* 801EE6F4 001EA534  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setNormal__Q43scn4step4hero3HatFv
 setNormal__Q43scn4step4hero3HatFv:
 /* 80338CFC 00334B3C  38 80 00 00 */	li r4, 0
@@ -403,7 +403,7 @@ lbl_80338D70:
 /* 80338D80 00334BC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80338D84 00334BC4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253823
 $$253823:
 	.incbin "baserom.dol", 0x45AD58, 0xC
@@ -411,7 +411,7 @@ $$253823:
 $$253825:
 	.incbin "baserom.dol", 0x45AD64, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253819
 $$253819:
 	.incbin "baserom.dol", 0x494120, 0x4

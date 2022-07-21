@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global BTM_SecRegister
 BTM_SecRegister:
 /* 80085268 000810A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3422,7 +3422,7 @@ lbl_8008821C:
 /* 80088224 00084064  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088228 00084068  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22854
 $$22854:
 	.incbin "baserom.dol", 0x438380, 0x20
@@ -3574,7 +3574,7 @@ $$23492:
 $$23519:
 	.incbin "baserom.dol", 0x438D74, 0x1C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21779
 $$21779:
 	.incbin "baserom.dol", 0x499490, 0x1

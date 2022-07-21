@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q53scn4step6weapon11starshotlv16Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q53scn4step6weapon11starshotlv16Custom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80374A10 00370850  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -805,12 +805,12 @@ lbl_8037555C:
 /* 80375578 003713B8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8037557C 003713BC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference12StateVomited
 __vt__Q53scn4step4hero12interference12StateVomited:
 	.incbin "baserom.dol", 0x4886A8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260568
 $$260568:
 	.incbin "baserom.dol", 0x49DDB0, 0x4

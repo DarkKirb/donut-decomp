@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global at__Q43scn4step3map17EnemyDataAccessorCFUl
 at__Q43scn4step3map17EnemyDataAccessorCFUl:
 /* 803C9D34 003C5B74  80 63 00 00 */	lwz r3, 0(r3)

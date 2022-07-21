@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global reset__Q23g3d20NodeLocalMtxAccessorCFv
 reset__Q23g3d20NodeLocalMtxAccessorCFv:
 /* 80193208 0018F048  80 63 00 00 */	lwz r3, 0(r3)

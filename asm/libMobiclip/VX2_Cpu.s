@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetCaps_C__Fv
 GetCaps_C__Fv:
 /* 80154420 00150260  4B EF F9 D0 */	b __wpadNoAlloc

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24file11FileManagerFv
 __ct__Q24file11FileManagerFv:
 /* 80188204 00184044  94 21 FF E0 */	stwu r1, -0x20(r1)

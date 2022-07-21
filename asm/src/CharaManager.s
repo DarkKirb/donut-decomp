@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle12CharaManagerFRQ33scn14challengetitle9Component
 __ct__Q33scn14challengetitle12CharaManagerFRQ33scn14challengetitle9Component:
 /* 801EB280 001E70C0  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -736,7 +736,7 @@ mahoroa__Q33scn14challengetitle12CharaManagerFv:
 /* 801EBC5C 001E7A9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801EBC60 001E7AA0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle12CharaManagerFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle12CharaManagerFRQ33scn10grandtitle9Component:
 /* 80202454 001FE294  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -1498,12 +1498,12 @@ block__Q33scn10grandtitle12CharaManagerFUl:
 /* 80202EBC 001FECFC  38 63 01 F0 */	addi r3, r3, 0x1f0
 /* 80202EC0 001FED00  4B FF FC D4 */	b __vc__Q33hel6common44AutoDeleteArray$$0Q33scn10grandtitle5Block$$438$$1FUl
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253270
 $$253270:
 	.incbin "baserom.dol", 0x45AC78, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254349
 $$254349:
 	.incbin "baserom.dol", 0x45C9C0, 0x18
@@ -1511,7 +1511,7 @@ $$254349:
 $$254457:
 	.incbin "baserom.dol", 0x45C9D8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253271
 $$253271:
 	.incbin "baserom.dol", 0x4940D8, 0x8
@@ -1534,12 +1534,12 @@ $$253385:
 $$253386:
 	.incbin "baserom.dol", 0x494108, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254350
 $$254350:
 	.incbin "baserom.dol", 0x4947E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253326
 $$253326:
 	.incbin "baserom.dol", 0x49A8F8, 0x8
@@ -1547,7 +1547,7 @@ $$253326:
 $$253366:
 	.incbin "baserom.dol", 0x49A900, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254420
 $$254420:
 	.incbin "baserom.dol", 0x49AAC0, 0x8

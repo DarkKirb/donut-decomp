@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common12StatePursuitFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common12StatePursuitFPQ43scn4step5enemy5Enemy:
 /* 80293A28 0028F868  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -404,7 +404,7 @@ lbl_80293FA0:
 __dt__Q53scn4step5enemy6common12StatePursuitFv:
 /* 80294004 0028FE44  4B FF D9 B4 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10brontoburt12StatePursuitFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10brontoburt12StatePursuitFPQ43scn4step5enemy5Enemy:
 /* 8029FA7C 0029B8BC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -839,17 +839,17 @@ lbl_802A0064:
 __dt__Q53scn4step5enemy10brontoburt12StatePursuitFv:
 /* 802A00C8 0029BF08  4B FF 18 F0 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common12StatePursuit
 __vt__Q53scn4step5enemy6common12StatePursuit:
 	.incbin "baserom.dol", 0x46F378, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt12StatePursuit
 __vt__Q53scn4step5enemy10brontoburt12StatePursuit:
 	.incbin "baserom.dol", 0x470BC8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256157
 $$256157:
 	.incbin "baserom.dol", 0x49BBE0, 0x4
@@ -863,7 +863,7 @@ $$256211:
 $$256249:
 	.incbin "baserom.dol", 0x49BBEC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256193
 $$256193:
 	.incbin "baserom.dol", 0x49BF00, 0x4

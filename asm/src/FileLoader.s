@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24file10FileLoaderFv
 __ct__Q24file10FileLoaderFv:
 /* 80187C00 00183A40  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -440,7 +440,7 @@ lbl_801881EC:
 /* 801881FC 0018403C  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 80188200 00184040  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249818
 $$249818:
 	.incbin "baserom.dol", 0x4930F8, 0x8

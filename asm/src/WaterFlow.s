@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick9waterflow9WaterFlowFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRQ43scn4step7gimmick21FlowEffectManager$$032$$1
 __ct__Q53scn4step7gimmick9waterflow9WaterFlowFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRQ43scn4step7gimmick21FlowEffectManager$$032$$1:
 /* 8032A508 00326348  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -890,22 +890,22 @@ lbl_8032B1A8:
 /* 8032B1C8 00327008  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032B1CC 0032700C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global DIR_ROTATION__Q53scn4step7gimmick9waterflow23$$2unnamed$$2WaterFlow_cpp$$2
 DIR_ROTATION__Q53scn4step7gimmick9waterflow23$$2unnamed$$2WaterFlow_cpp$$2:
 	.incbin "baserom.dol", 0x415CA0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253562
 $$253562:
 	.incbin "baserom.dol", 0x47E7F8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253723
 $$253723:
 	.incbin "baserom.dol", 0x496DD0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253563
 $$253563:
 	.incbin "baserom.dol", 0x49D5F8, 0x4

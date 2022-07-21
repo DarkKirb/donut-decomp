@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail13PackageWindowFRQ33scn7history9ComponentRQ23mem10IAllocator
 __ct__Q43scn7history6detail13PackageWindowFRQ33scn7history9ComponentRQ23mem10IAllocator:
 /* 80218120 00213F60  94 21 FC 60 */	stwu r1, -0x3a0(r1)
@@ -2042,10 +2042,10 @@ __sinit_$$3PackageWindow_cpp:
 /* 80219EA4 00215CE4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80219EA8 00215CE8  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402468, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255641
 $$255641:
 	.incbin "baserom.dol", 0x45ECE0, 0x20
@@ -2095,7 +2095,7 @@ $$256102:
 __vt__Q43scn7history6detail13PackageWindow:
 	.incbin "baserom.dol", 0x45EE28, 0xA0
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255648
 $$255648:
 	.incbin "baserom.dol", 0x494E60, 0x8
@@ -2142,7 +2142,7 @@ $$253200:
 $$256045:
 	.incbin "baserom.dol", 0x494EC4, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255615
 $$255615:
 	.incbin "baserom.dol", 0x49ACE8, 0x4

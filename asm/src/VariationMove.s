@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick10cameralock13VariationMoveFf
 __ct__Q53scn4step7gimmick10cameralock13VariationMoveFf:
 /* 80304C0C 00300A4C  3C 80 80 48 */	lis r4, __vt__Q53scn4step7gimmick10cameralock13VariationMove@ha
@@ -54,7 +54,7 @@ updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationMoveFRQ53scn4step7g
 setIsPose__Q53scn4step7gimmick10cameralock13VariationMoveFb:
 /* 80304C94 00300AD4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step7gimmick10cameralock13VariationMove
 __vt__Q53scn4step7gimmick10cameralock13VariationMove:
 	.incbin "baserom.dol", 0x47C500, 0x20

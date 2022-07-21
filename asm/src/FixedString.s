@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FixedStringVPrintfFunc__Q23hel6commonFPcUlP16__va_list_structPCc
 FixedStringVPrintfFunc__Q23hel6commonFPcUlP16__va_list_structPCc:
 /* 8019D994 001997D4  7C A0 2B 78 */	mr r0, r5

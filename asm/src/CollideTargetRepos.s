@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail18CollideTargetReposFv
 __ct__Q35mcoll6detail18CollideTargetReposFv:
 /* 801B6D10 001B2B50  38 A0 00 00 */	li r5, 0

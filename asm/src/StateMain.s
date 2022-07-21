@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9mbossdead9StateMainFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9mbossdead9StateMainFPQ43scn4step5enemy5Enemy:
 /* 802C47A0 002C05E0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -326,7 +326,7 @@ lbl_802C4C20:
 /* 802C4C2C 002C0A6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802C4C30 002C0A70  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon7airball9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon7airball9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DB2D0 003D7110  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -980,7 +980,7 @@ lbl_803DBBF4:
 /* 803DBC00 003D7A40  38 21 00 10 */	addi r1, r1, 0x10
 /* 803DBC04 003D7A44  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon11starshotlv19StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon11starshotlv19StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DC2D4 003D8114  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1527,7 +1527,7 @@ deadWithEffect__Q53scn4step6weapon11starshotlv19StateMainFv:
 /* 803DCAA0 003D88E0  38 21 00 40 */	addi r1, r1, 0x40
 /* 803DCAA4 003D88E4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon11starshotlv29StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon11starshotlv29StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DCBC4 003D8A04  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -1936,7 +1936,7 @@ lbl_803DD16C:
 /* 803DD17C 003D8FBC  38 21 00 20 */	addi r1, r1, 0x20
 /* 803DD180 003D8FC0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon11starshotlv39StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon11starshotlv39StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DD2A0 003D90E0  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -3170,7 +3170,7 @@ lbl_803DE3E8:
 __dt__Q53scn4step6weapon9swordbeam9StateMainFv:
 /* 803DE3FC 003DA23C  4B FF A6 44 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13whispyairball9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon13whispyairball9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DE5D0 003DA410  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -3493,7 +3493,7 @@ lbl_803DEA28:
 __dt__Q53scn4step6weapon13whispyairball9StateMainFv:
 /* 803DEA3C 003DA87C  4B FF A0 04 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon7rollexp9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon7rollexp9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DEB40 003DA980  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -3886,7 +3886,7 @@ lbl_803DF058:
 __dt__Q53scn4step6weapon7rollexp9StateMainFv:
 /* 803DF074 003DAEB4  4B FF 99 CC */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12leafanpollen9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12leafanpollen9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DF174 003DAFB4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4994,7 +4994,7 @@ lbl_803E0158:
 __dt__Q53scn4step6weapon14gigantedgeshot9StateMainFv:
 /* 803E0170 003DBFB0  4B FF 88 D0 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13gigatzobullet9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon13gigatzobullet9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E04F8 003DC338  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -6834,7 +6834,7 @@ lbl_803E1F30:
 __dt__Q53scn4step6weapon13gigatzobullet9StateMainFv:
 /* 803E1F48 003DDD88  4B FF 6A F8 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10comothread9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon10comothread9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E2374 003DE1B4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -7311,7 +7311,7 @@ lbl_803E29F8:
 /* 803E2A04 003DE844  38 21 00 20 */	addi r1, r1, 0x20
 /* 803E2A08 003DE848  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon16enemywaterbullet9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon16enemywaterbullet9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E2B28 003DE968  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -8094,7 +8094,7 @@ lbl_803E34E0:
 /* 803E3660 003DF4A0  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 803E3664 003DF4A4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon20enemywaterbulletwarp9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon20enemywaterbulletwarp9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E3784 003DF5C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -8690,7 +8690,7 @@ procObjCollReact__Q53scn4step6weapon12sparkshotlv39StateMainFv:
 __dt__Q53scn4step6weapon12sparkshotlv39StateMainFv:
 /* 803E3F60 003DFDA0  4B FF 4A E0 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10spearspear9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon10spearspear9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E4090 003DFED0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -9110,7 +9110,7 @@ __dt__Q24util107StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon10spearspe
 __dt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10spearspear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803E463C 003E047C  4B E4 A0 64 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12hammerhammer9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12hammerhammer9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E5788 003E15C8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -9363,7 +9363,7 @@ create__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammer
 __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerhammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803E5AF0 003E1930  4B E4 8B B0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon8wingshot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon8wingshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E5C10 003E1A50  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -9824,7 +9824,7 @@ lbl_803E6270:
 /* 803E627C 003E20BC  38 21 00 20 */	addi r1, r1, 0x20
 /* 803E6280 003E20C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon16fightersmashshot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon16fightersmashshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E63C0 003E2200  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -10036,7 +10036,7 @@ create__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fighte
 __dt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fightersmashshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803E6698 003E24D8  4B E4 80 08 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon15fighterkickshot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon15fighterkickshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E67D8 003E2618  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -10248,7 +10248,7 @@ create__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighte
 __dt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterkickshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803E6AB0 003E28F0  4B E4 7B F0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon16fighterhadoushot9StateMainFPQ43scn4step6weapon6WeaponQ53scn4step6weapon16fighterhadoushot9Variation
 __ct__Q53scn4step6weapon16fighterhadoushot9StateMainFPQ43scn4step6weapon6WeaponQ53scn4step6weapon16fighterhadoushot9Variation:
 /* 803E6EA0 003E2CE0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -10546,7 +10546,7 @@ create__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighte
 __dt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1Fv:
 /* 803E728C 003E30CC  4B E4 74 14 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12shotzobullet9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12shotzobullet9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E738C 003E31CC  94 21 FF 60 */	stwu r1, -0xa0(r1)
@@ -10847,7 +10847,7 @@ lbl_803E77D8:
 __dt__Q53scn4step6weapon12shotzobullet9StateMainFv:
 /* 803E77F0 003E3630  4B FF 12 50 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon15sirkibblecutter9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon15sirkibblecutter9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E7910 003E3750  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -11335,7 +11335,7 @@ lbl_803E8028:
 /* 803E8038 003E3E78  38 21 00 40 */	addi r1, r1, 0x40
 /* 803E803C 003E3E7C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13owgulffeather9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon13owgulffeather9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E813C 003E3F7C  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -11583,7 +11583,7 @@ addObjColl__Q53scn4step6weapon13owgulffeather9StateMainFv:
 /* 803E849C 003E42DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803E84A0 003E42E0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon9foleyleaf9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon9foleyleaf9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E85CC 003E440C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -11735,7 +11735,7 @@ lbl_803E87DC:
 __dt__Q53scn4step6weapon9foleyleaf9StateMainFv:
 /* 803E87F0 003E4630  4B FF 02 50 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10bowbyarrow9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon10bowbyarrow9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E8974 003E47B4  94 21 FE B0 */	stwu r1, -0x150(r1)
@@ -12510,7 +12510,7 @@ lbl_803E9478:
 __dt__Q53scn4step6weapon10bowbyarrow9StateMainFv:
 /* 803E9490 003E52D0  4B FE F5 B0 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12jucklecutter9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12jucklecutter9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E9590 003E53D0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -12734,7 +12734,7 @@ lbl_803E98B0:
 __dt__Q53scn4step6weapon12jucklecutter9StateMainFv:
 /* 803E98C4 003E5704  4B FE F1 7C */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon17tsukikageshuriken9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon17tsukikageshuriken9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E99E4 003E5824  94 21 FD F0 */	stwu r1, -0x210(r1)
@@ -13700,7 +13700,7 @@ procFixPos__Q53scn4step6weapon13whispytornado9StateMainFv:
 __dt__Q53scn4step6weapon13whispytornado9StateMainFv:
 /* 803EA764 003E65A4  4B FE E2 DC */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10whispyroot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon10whispyroot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EA864 003E66A4  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -13995,7 +13995,7 @@ procFixPos__Q53scn4step6weapon10whispyroot9StateMainFv:
 __dt__Q53scn4step6weapon10whispyroot9StateMainFv:
 /* 803EACA8 003E6AE8  4B FE DD 98 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon18combinationairball9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon18combinationairball9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EADC8 003E6C08  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -14742,7 +14742,7 @@ lbl_803EB854:
 __dt__Q53scn4step6weapon19combinationmetabeam9StateMainFv:
 /* 803EB868 003E76A8  4B FE D1 D8 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon23combinationdededebomber9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon23combinationdededebomber9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EBA8C 003E78CC  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -15016,7 +15016,7 @@ create__Q24util119StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combin
 __dt__Q24util119StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinationdededebomber14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803EBE2C 003E7C6C  4B E4 28 74 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon18combinationdeeshot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon18combinationdeeshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EBF2C 003E7D6C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -15640,7 +15640,7 @@ lbl_803EC788:
 /* 803EC794 003E85D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 803EC798 003E85D8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon12dededehammer9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon12dededehammer9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803ECBD4 003E8A14  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -15913,7 +15913,7 @@ create__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dedede
 __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededehammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803ECF84 003E8DC4  4B E4 17 1C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon8deespear9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon8deespear9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803ED0B4 003E8EF4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -16329,7 +16329,7 @@ __dt__Q24util104StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon8deespear1
 __dt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1Fv:
 /* 803ED650 003E9490  4B E4 10 50 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon13vacuumedblock9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon13vacuumedblock9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EEE68 003EACA8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -16364,7 +16364,7 @@ procMove__Q53scn4step6weapon13vacuumedblock9StateMainFv:
 procFixPos__Q53scn4step6weapon13vacuumedblock9StateMainFv:
 /* 803EEEB0 003EACF0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon11hotheadfire9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon11hotheadfire9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EF708 003EB548  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -16546,7 +16546,7 @@ lbl_803EF970:
 __dt__Q53scn4step6weapon11hotheadfire9StateMainFv:
 /* 803EF988 003EB7C8  4B FE 90 B8 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon26challengemastersummonlight9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon26challengemastersummonlight9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EFA7C 003EB8BC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -17072,7 +17072,7 @@ lbl_803F01F0:
 __dt__Q53scn4step6weapon26challengemastersummonlight9StateMainFv:
 /* 803F0210 003EC050  4B FE 88 30 */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon19challengemastershot9StateMainFPQ43scn4step6weapon6Weapon
 __ct__Q53scn4step6weapon19challengemastershot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803F04DC 003EC31C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -17272,7 +17272,7 @@ procFixPos__Q53scn4step6weapon19challengemastershot9StateMainFv:
 __dt__Q53scn4step6weapon19challengemastershot9StateMainFv:
 /* 803F0784 003EC5C4  4B FE 82 BC */	b __dt__Q43scn4step6weapon11StateNormalFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global ATTACK_TYPE_TABLE__23$$2unnamed$$2StateMain_cpp$$2
 ATTACK_TYPE_TABLE__23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CB30, 0x10
@@ -17286,7 +17286,7 @@ ATTACK_TYPE_TABLE__23$$2unnamed$$2StateMain_cpp$$2:
 ATTACK_TYPE_TABLE__23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CB60, 0x58
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_WN_NODE_INTERVAL__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2StateMain_cpp$$2
 T_WN_NODE_INTERVAL__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CBC8, 0xC
@@ -17294,7 +17294,7 @@ T_WN_NODE_INTERVAL__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2StateMain
 T_WN_GRAVITY__Q53scn4step6weapon16enemywaterbullet23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CBD4, 0xC
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ROT_TABLE__Q53scn4step6weapon10whispyroot23$$2unnamed$$2StateMain_cpp$$2
 T_ROT_TABLE__Q53scn4step6weapon10whispyroot23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CC08, 0x10
@@ -17302,12 +17302,12 @@ T_ROT_TABLE__Q53scn4step6weapon10whispyroot23$$2unnamed$$2StateMain_cpp$$2:
 T_HOLD_FRAME__Q53scn4step6weapon10whispyroot23$$2unnamed$$2StateMain_cpp$$2:
 	.incbin "baserom.dol", 0x41CC18, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9mbossdead9StateMain
 __vt__Q53scn4step5enemy9mbossdead9StateMain:
 	.incbin "baserom.dol", 0x475170, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon7airball9StateMain
 __vt__Q53scn4step6weapon7airball9StateMain:
 	.incbin "baserom.dol", 0x48FFC8, 0x20
@@ -17315,17 +17315,17 @@ __vt__Q53scn4step6weapon7airball9StateMain:
 __vt__Q53scn4step6weapon17fireburningbullet9StateMain:
 	.incbin "baserom.dol", 0x48FFE8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon11starshotlv19StateMain
 __vt__Q53scn4step6weapon11starshotlv19StateMain:
 	.incbin "baserom.dol", 0x490098, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon11starshotlv29StateMain
 __vt__Q53scn4step6weapon11starshotlv29StateMain:
 	.incbin "baserom.dol", 0x490110, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon11starshotlv39StateMain
 __vt__Q53scn4step6weapon11starshotlv39StateMain:
 	.incbin "baserom.dol", 0x4901A0, 0x20
@@ -17336,17 +17336,17 @@ __vt__Q53scn4step6weapon11waterpistol9StateMain:
 __vt__Q53scn4step6weapon9swordbeam9StateMain:
 	.incbin "baserom.dol", 0x4901E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13whispyairball9StateMain
 __vt__Q53scn4step6weapon13whispyairball9StateMain:
 	.incbin "baserom.dol", 0x4902A0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon7rollexp9StateMain
 __vt__Q53scn4step6weapon7rollexp9StateMain:
 	.incbin "baserom.dol", 0x4902F0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12leafanpollen9StateMain
 __vt__Q53scn4step6weapon12leafanpollen9StateMain:
 	.incbin "baserom.dol", 0x490348, 0x20
@@ -17357,12 +17357,12 @@ __vt__Q53scn4step6weapon16kingsdoowaveshot9StateMain:
 __vt__Q53scn4step6weapon14gigantedgeshot9StateMain:
 	.incbin "baserom.dol", 0x490388, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13gigatzobullet9StateMain
 __vt__Q53scn4step6weapon13gigatzobullet9StateMain:
 	.incbin "baserom.dol", 0x490480, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10comothread9StateMain
 __vt__Q53scn4step6weapon10comothread9StateMain:
 	.incbin "baserom.dol", 0x490518, 0x20
@@ -17370,12 +17370,12 @@ __vt__Q53scn4step6weapon10comothread9StateMain:
 __vt__Q53scn4step6weapon18watergalboroswater9StateMain:
 	.incbin "baserom.dol", 0x490538, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon16enemywaterbullet9StateMain
 __vt__Q53scn4step6weapon16enemywaterbullet9StateMain:
 	.incbin "baserom.dol", 0x4905D0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain
 __vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain:
 	.incbin "baserom.dol", 0x490670, 0x20
@@ -17392,7 +17392,7 @@ __vt__Q53scn4step6weapon12sparkshotlv29StateMain:
 __vt__Q53scn4step6weapon12sparkshotlv39StateMain:
 	.incbin "baserom.dol", 0x4906F0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10spearspear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util104StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon10spearspear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x490780, 0x10
@@ -17409,7 +17409,7 @@ __vt__Q24util108StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon10spearspe
 __vt__Q53scn4step6weapon10spearspear9StateMain:
 	.incbin "baserom.dol", 0x4907C0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerhammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerhammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x4908D0, 0x10
@@ -17417,7 +17417,7 @@ __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12hammerha
 __vt__Q53scn4step6weapon12hammerhammer9StateMain:
 	.incbin "baserom.dol", 0x4908E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8wingshot9StateMain
 __vt__Q53scn4step6weapon8wingshot9StateMain:
 	.incbin "baserom.dol", 0x490928, 0x20
@@ -17425,7 +17425,7 @@ __vt__Q53scn4step6weapon8wingshot9StateMain:
 __vt__Q53scn4step6weapon13wingshockwave9StateMain:
 	.incbin "baserom.dol", 0x490948, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fightersmashshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fightersmashshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x490988, 0x10
@@ -17433,7 +17433,7 @@ __vt__Q24util112StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon16fighters
 __vt__Q53scn4step6weapon16fightersmashshot9StateMain:
 	.incbin "baserom.dol", 0x490998, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterkickshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterkickshot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x4909D8, 0x10
@@ -17441,7 +17441,7 @@ __vt__Q24util111StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon15fighterk
 __vt__Q53scn4step6weapon15fighterkickshot9StateMain:
 	.incbin "baserom.dol", 0x4909E8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1
 __vt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterhadoushot14StateExplosion$$4PQ43scn4step6weapon6Weapon$$4Q53scn4step6weapon16fighterhadoushot9Variation$$1:
 	.incbin "baserom.dol", 0x490A58, 0x10
@@ -17449,37 +17449,37 @@ __vt__Q24util159StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon16fighterh
 __vt__Q53scn4step6weapon16fighterhadoushot9StateMain:
 	.incbin "baserom.dol", 0x490A68, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12shotzobullet9StateMain
 __vt__Q53scn4step6weapon12shotzobullet9StateMain:
 	.incbin "baserom.dol", 0x490AC0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon15sirkibblecutter9StateMain
 __vt__Q53scn4step6weapon15sirkibblecutter9StateMain:
 	.incbin "baserom.dol", 0x490B10, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13owgulffeather9StateMain
 __vt__Q53scn4step6weapon13owgulffeather9StateMain:
 	.incbin "baserom.dol", 0x490B60, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon9foleyleaf9StateMain
 __vt__Q53scn4step6weapon9foleyleaf9StateMain:
 	.incbin "baserom.dol", 0x490BD0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10bowbyarrow9StateMain
 __vt__Q53scn4step6weapon10bowbyarrow9StateMain:
 	.incbin "baserom.dol", 0x490C48, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon12jucklecutter9StateMain
 __vt__Q53scn4step6weapon12jucklecutter9StateMain:
 	.incbin "baserom.dol", 0x490CA0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon17tsukikageshuriken9StateMain
 __vt__Q53scn4step6weapon17tsukikageshuriken9StateMain:
 	.incbin "baserom.dol", 0x490CF0, 0x20
@@ -17496,12 +17496,12 @@ __vt__Q53scn4step6weapon10floweffect9StateMain:
 __vt__Q53scn4step6weapon13whispytornado9StateMain:
 	.incbin "baserom.dol", 0x490D70, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10whispyroot9StateMain
 __vt__Q53scn4step6weapon10whispyroot9StateMain:
 	.incbin "baserom.dol", 0x490DB8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon18combinationairball9StateMain
 __vt__Q53scn4step6weapon18combinationairball9StateMain:
 	.incbin "baserom.dol", 0x490E18, 0x20
@@ -17509,7 +17509,7 @@ __vt__Q53scn4step6weapon18combinationairball9StateMain:
 __vt__Q53scn4step6weapon19combinationmetabeam9StateMain:
 	.incbin "baserom.dol", 0x490E38, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util119StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinationdededebomber14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util119StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinationdededebomber14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x490E78, 0x10
@@ -17517,7 +17517,7 @@ __vt__Q24util119StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon23combinat
 __vt__Q53scn4step6weapon23combinationdededebomber9StateMain:
 	.incbin "baserom.dol", 0x490E88, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon18combinationdeeshot9StateMain
 __vt__Q53scn4step6weapon18combinationdeeshot9StateMain:
 	.incbin "baserom.dol", 0x490EF0, 0x20
@@ -17528,7 +17528,7 @@ __vt__Q53scn4step6weapon8metabeam9StateMain:
 __vt__Q53scn4step6weapon13metashockwave9StateMain:
 	.incbin "baserom.dol", 0x490F30, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededehammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededehammer14StateExplosion$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x490FA8, 0x10
@@ -17536,7 +17536,7 @@ __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon12dededeha
 __vt__Q53scn4step6weapon12dededehammer9StateMain:
 	.incbin "baserom.dol", 0x490FB8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1
 __vt__Q24util101StateFactoryArg1$$0Q24util6IState$$4Q53scn4step6weapon8deespear12StateReflect$$4PQ43scn4step6weapon6Weapon$$1:
 	.incbin "baserom.dol", 0x491048, 0x10
@@ -17553,42 +17553,42 @@ __vt__Q24util105StateFactoryArg2$$0Q24util6IState$$4Q53scn4step6weapon8deespear1
 __vt__Q53scn4step6weapon8deespear9StateMain:
 	.incbin "baserom.dol", 0x491088, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon13vacuumedblock9StateMain
 __vt__Q53scn4step6weapon13vacuumedblock9StateMain:
 	.incbin "baserom.dol", 0x491308, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon11hotheadfire9StateMain
 __vt__Q53scn4step6weapon11hotheadfire9StateMain:
 	.incbin "baserom.dol", 0x4913D0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon26challengemastersummonlight9StateMain
 __vt__Q53scn4step6weapon26challengemastersummonlight9StateMain:
 	.incbin "baserom.dol", 0x491420, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon19challengemastershot9StateMain
 __vt__Q53scn4step6weapon19challengemastershot9StateMain:
 	.incbin "baserom.dol", 0x491480, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256519
 $$256519:
 	.incbin "baserom.dol", 0x498468, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256548
 $$256548:
 	.incbin "baserom.dol", 0x498490, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256804
 $$256804:
 	.incbin "baserom.dol", 0x4984B8, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256562
 $$256562:
 	.incbin "baserom.dol", 0x4986F8, 0x4
@@ -17602,7 +17602,7 @@ $$256566:
 $$256572:
 	.incbin "baserom.dol", 0x498704, 0x4
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256164
 $$256164:
 	.incbin "baserom.dol", 0x498728, 0x4
@@ -17616,7 +17616,7 @@ $$256168:
 $$256174:
 	.incbin "baserom.dol", 0x498734, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256978
 $$256978:
 	.incbin "baserom.dol", 0x49C818, 0x4
@@ -17627,7 +17627,7 @@ $$256979:
 $$256980:
 	.incbin "baserom.dol", 0x49C820, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257154
 $$257154:
 	.incbin "baserom.dol", 0x49E898, 0x4
@@ -17671,7 +17671,7 @@ $$257667:
 $$257720:
 	.incbin "baserom.dol", 0x49E8E0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257577
 $$257577:
 	.incbin "baserom.dol", 0x49E8F0, 0x4
@@ -17691,7 +17691,7 @@ $$257620:
 $$257623:
 	.incbin "baserom.dol", 0x49E908, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257870
 $$257870:
 	.incbin "baserom.dol", 0x49E918, 0x4
@@ -17756,7 +17756,7 @@ $$256513:
 $$256527:
 	.incbin "baserom.dol", 0x49E978, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257213
 $$257213:
 	.incbin "baserom.dol", 0x49E988, 0x8
@@ -17845,7 +17845,7 @@ $$257108:
 $$257109:
 	.incbin "baserom.dol", 0x49EA10, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258554
 $$258554:
 	.incbin "baserom.dol", 0x49EA20, 0x4
@@ -17865,7 +17865,7 @@ lbl_80563EF4:
 $$258712:
 	.incbin "baserom.dol", 0x49EA38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256720
 $$256720:
 	.incbin "baserom.dol", 0x49EA48, 0x4
@@ -17879,7 +17879,7 @@ $$257163:
 $$257164:
 	.incbin "baserom.dol", 0x49EA54, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256753
 $$256753:
 	.incbin "baserom.dol", 0x49EAA8, 0x4
@@ -17893,7 +17893,7 @@ $$256765:
 $$256766:
 	.incbin "baserom.dol", 0x49EAB4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256698
 $$256698:
 	.incbin "baserom.dol", 0x49EAC0, 0x4
@@ -17928,7 +17928,7 @@ $$256744:
 $$256765:
 	.incbin "baserom.dol", 0x49EAE8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256838
 $$256838:
 	.incbin "baserom.dol", 0x49EB08, 0x8
@@ -17942,7 +17942,7 @@ $$257037:
 $$257087:
 	.incbin "baserom.dol", 0x49EB18, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257342
 $$257342:
 	.incbin "baserom.dol", 0x49EB28, 0x4
@@ -18004,7 +18004,7 @@ $$256964:
 $$257016:
 	.incbin "baserom.dol", 0x49EB84, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257755
 $$257755:
 	.incbin "baserom.dol", 0x49EB90, 0x4
@@ -18057,7 +18057,7 @@ $$256976:
 $$256979:
 	.incbin "baserom.dol", 0x49EBD8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256687
 $$256687:
 	.incbin "baserom.dol", 0x49EBE8, 0x8
@@ -18083,7 +18083,7 @@ $$256666:
 $$256693:
 	.incbin "baserom.dol", 0x49EC0C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256767
 $$256767:
 	.incbin "baserom.dol", 0x49EC28, 0x4
@@ -18103,7 +18103,7 @@ $$257159:
 $$257160:
 	.incbin "baserom.dol", 0x49EC3C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256440
 $$256440:
 	.incbin "baserom.dol", 0x49EC80, 0x4

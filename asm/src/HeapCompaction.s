@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tLinkNext__Q23mem28$$2unnamed$$2HeapCompaction_cpp$$2FPQ23mem18HeapCompactionNodePQ23mem18HeapCompactionNode
 tLinkNext__Q23mem28$$2unnamed$$2HeapCompaction_cpp$$2FPQ23mem18HeapCompactionNodePQ23mem18HeapCompactionNode:
 /* 801BD404 001B9244  80 A3 00 0C */	lwz r5, 0xc(r3)
@@ -1069,7 +1069,7 @@ $$24$$2__dt__Q23mem14HeapCompactionFv:
 /* 801BE1F0 001BA030  38 63 FF FC */	addi r3, r3, -4
 /* 801BE1F4 001BA034  4B FF F5 2C */	b __dt__Q23mem14HeapCompactionFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem14HeapCompaction
 __vt__Q23mem14HeapCompaction:
 	.incbin "baserom.dol", 0x455DB0, 0x4C
@@ -1077,7 +1077,7 @@ __vt__Q23mem14HeapCompaction:
 __vt__Q33mem14HeapCompaction22AllocFromTailAllocator:
 	.incbin "baserom.dol", 0x455DFC, 0x14
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249358
 $$249358:
 	.incbin "baserom.dol", 0x493648, 0x8

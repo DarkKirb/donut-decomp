@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OnUpdateFrameSoundThread__Q44nw4r3snd6detail9SeqPlayerFv
 OnUpdateFrameSoundThread__Q44nw4r3snd6detail9SeqPlayerFv:
 /* 80109DF0 00105C30  48 00 32 A0 */	b Update__Q44nw4r3snd6detail9SeqPlayerFv

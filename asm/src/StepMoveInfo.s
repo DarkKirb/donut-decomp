@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isEqualsMapAndScene__Q43scn4step7gimmick12StepMoveInfoCFRCQ43scn4step7gimmick12StepMoveInfo
 isEqualsMapAndScene__Q43scn4step7gimmick12StepMoveInfoCFRCQ43scn4step7gimmick12StepMoveInfo:
 /* 802F7294 002F30D4  38 C0 00 00 */	li r6, 0

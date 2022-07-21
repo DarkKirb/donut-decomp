@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSYNSetupVolume
 __HBMSYNSetupVolume:
 /* 8014A540 00146380  88 03 00 0E */	lbz r0, 0xe(r3)
@@ -96,7 +96,7 @@ __HBMSYNUpdateMix:
 /* 8014A678 001464B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014A67C 001464BC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMSYNVolumeAttenuation
 __HBMSYNVolumeAttenuation:
 	.incbin "baserom.dol", 0x442558, 0x200

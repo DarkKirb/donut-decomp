@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef16DrawLineStrategyFv
 __ct__Q34nw4r2ef16DrawLineStrategyFv:
 /* 800BF960 000BB7A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -415,17 +415,17 @@ __dt__Q34nw4r2ef16DrawLineStrategyFv:
 /* 800BFF58 000BBD98  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800BFF5C 000BBD9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef16DrawLineStrategy
 __vt__Q34nw4r2ef16DrawLineStrategy:
 	.incbin "baserom.dol", 0x43C568, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$211461
 $$211461:
 	.incbin "baserom.dol", 0x492DA8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$211851
 $$211851:
 	.incbin "baserom.dol", 0x4998D8, 0x4

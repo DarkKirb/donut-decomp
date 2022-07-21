@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss13StateCallbackFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss13StateCallbackFRQ43scn4step4boss4Boss:
 /* 80234564 002303A4  3C A0 80 46 */	lis r5, __vt__Q43scn4step4boss13StateCallback@ha
@@ -65,7 +65,7 @@ lbl_802345AC:
 /* 80234640 00230480  38 21 00 10 */	addi r1, r1, 0x10
 /* 80234644 00230484  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy13StateCallbackFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy13StateCallbackFRQ43scn4step5enemy5Enemy:
 /* 8028DE48 00289C88  3C A0 80 47 */	lis r5, __vt__Q43scn4step5enemy13StateCallback@ha
@@ -111,7 +111,7 @@ onStateChanged__Q43scn4step5enemy13StateCallbackFRCQ24util13IStateChanger:
 /* 8028DEDC 00289D1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028DEE0 00289D20  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero13StateCallbackFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero13StateCallbackFRQ43scn4step4hero4Hero:
 /* 80355578 003513B8  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero13StateCallback@ha
@@ -323,7 +323,7 @@ lbl_8035587C:
 /* 80355898 003516D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035589C 003516DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item13StateCallbackFRQ43scn4step4item4Item
 __ct__Q43scn4step4item13StateCallbackFRQ43scn4step4item4Item:
 /* 803C5264 003C10A4  3C A0 80 49 */	lis r5, __vt__Q43scn4step4item13StateCallback@ha
@@ -345,7 +345,7 @@ onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger:
 /* 803C5298 003C10D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C529C 003C10DC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon13StateCallbackFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon13StateCallbackFRQ43scn4step6weapon6Weapon:
 /* 803D89C4 003D4804  3C A0 80 49 */	lis r5, __vt__Q43scn4step6weapon13StateCallback@ha
@@ -371,27 +371,27 @@ onStateChanged__Q43scn4step6weapon13StateCallbackFRCQ24util13IStateChanger:
 __dt__Q43scn4step6weapon13StateCallbackFv:
 /* 803D8A00 003D4840  4B E5 35 84 */	b __dt__Q43scn4step4boss13StateCallbackFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss13StateCallback
 __vt__Q43scn4step4boss13StateCallback:
 	.incbin "baserom.dol", 0x460948, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13StateCallback
 __vt__Q43scn4step5enemy13StateCallback:
 	.incbin "baserom.dol", 0x46ED50, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero13StateCallback
 __vt__Q43scn4step4hero13StateCallback:
 	.incbin "baserom.dol", 0x481618, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4item13StateCallback
 __vt__Q43scn4step4item13StateCallback:
 	.incbin "baserom.dol", 0x48E020, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon13StateCallback
 __vt__Q43scn4step6weapon13StateCallback:
 	.incbin "baserom.dol", 0x48FEB0, 0x10

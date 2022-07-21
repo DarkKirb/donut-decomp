@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv
 ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv:
 /* 8013FDD0 0013BC10  4B FE 00 C0 */	b ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv

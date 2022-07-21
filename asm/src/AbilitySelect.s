@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn17challengetutorial4info13AbilitySelectFRQ23snd11SERequestorRQ23mem10IAllocatorRQ23lyt6Layout
 __ct__Q43scn17challengetutorial4info13AbilitySelectFRQ23snd11SERequestorRQ23mem10IAllocatorRQ23lyt6Layout:
 /* 801F7D7C 001F3BBC  94 21 FE 00 */	stwu r1, -0x200(r1)
@@ -1690,7 +1690,7 @@ lbl_801F94E8:
 /* 801F94EC 001F532C  42 00 FF FC */	bdnz lbl_801F94E8
 /* 801F94F0 001F5330  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global area1Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 area1Panel__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
 	.incbin "baserom.dol", 0x411A48, 0x38
@@ -1707,7 +1707,7 @@ abilityNumTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 panelOffsTbl__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
 	.incbin "baserom.dol", 0x411AFC, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2
 panelPosName__Q43scn17challengetutorial4info27$$2unnamed$$2AbilitySelect_cpp$$2:
 	.incbin "baserom.dol", 0x45BC58, 0x1C
@@ -1757,7 +1757,7 @@ $$253891:
 $$254084:
 	.incbin "baserom.dol", 0x45BD44, 0x54
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251749
 $$251749:
 	.incbin "baserom.dol", 0x4944D0, 0x8
@@ -1795,7 +1795,7 @@ $$254128:
 $$254157:
 	.incbin "baserom.dol", 0x494524, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254129
 $$254129:
 	.incbin "baserom.dol", 0x49AA08, 0x4

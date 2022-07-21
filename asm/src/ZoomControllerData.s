@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera18ZoomControllerDataFv
 __ct__Q43scn4step6camera18ZoomControllerDataFv:
 /* 80267FF8 00263E38  38 00 00 00 */	li r0, 0
@@ -56,7 +56,7 @@ __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomController
 /* 802680B4 00263EF4  38 21 00 40 */	addi r1, r1, 0x40
 /* 802680B8 00263EF8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249761
 $$249761:
 	.incbin "baserom.dol", 0x49B720, 0x8

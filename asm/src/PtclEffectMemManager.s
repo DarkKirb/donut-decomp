@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail20PtclEffectMemManagerFRQ23mem10IAllocatorUlUlUlUlUl
 __ct__Q36effect6detail20PtclEffectMemManagerFRQ23mem10IAllocatorUlUlUlUlUl:
 /* 80185694 001814D4  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1160,7 +1160,7 @@ lbl_80186600:
 AssignObjectID__Q34nw4r2ef35MemoryManagerTmp$$0Q34nw4r2ef6Effect$$1FPv:
 /* 80186618 00182458  4B FF FC 40 */	b AssignObjectID__Q34nw4r2ef37MemoryManagerTmp$$0Q34nw4r2ef8Particle$$1FPv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef13MemoryManager
 __vt__Q34nw4r2ef13MemoryManager:
 	.incbin "baserom.dol", 0x44F6E8, 0x68

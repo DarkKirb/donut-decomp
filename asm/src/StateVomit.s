@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss13watergalboros10StateVomitFPQ43scn4step4boss4Bossb
 __ct__Q53scn4step4boss13watergalboros10StateVomitFPQ43scn4step4boss4Bossb:
 /* 8025AB28 00256968  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -134,7 +134,7 @@ procMove__Q53scn4step4boss13watergalboros10StateVomitFv:
 procFixPos__Q53scn4step4boss13watergalboros10StateVomitFv:
 /* 8025ACD4 00256B14  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy10StateVomitFPQ43scn4step4boss4Bossb
 __ct__Q53scn4step4boss6whispy10StateVomitFPQ43scn4step4boss4Bossb:
 /* 8025EF6C 0025ADAC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -248,7 +248,7 @@ procMove__Q53scn4step4boss6whispy10StateVomitFv:
 procFixPos__Q53scn4step4boss6whispy10StateVomitFv:
 /* 8025F0DC 0025AF1C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero6common10StateVomitFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero6common10StateVomitFPQ43scn4step4hero4Hero:
 /* 8036D5E0 00369420  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -501,17 +501,17 @@ create__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10St
 __dt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 8036D944 00369784  4B EC 0D 5C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss13watergalboros10StateVomit
 __vt__Q53scn4step4boss13watergalboros10StateVomit:
 	.incbin "baserom.dol", 0x465BE0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy10StateVomit
 __vt__Q53scn4step4boss6whispy10StateVomit:
 	.incbin "baserom.dol", 0x4668A8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util91StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common10StateVomit$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x488360, 0x10

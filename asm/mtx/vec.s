@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PSVECAdd
 PSVECAdd:
 /* 80031570 0002D3B0  E0 43 00 00 */	psq_l f2, 0(r3), 0, qr0
@@ -168,7 +168,7 @@ PSVECSquareDistance:
 /* 800317A8 0002D5E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800317AC 0002D5EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21414
 $$21414:
 	.incbin "baserom.dol", 0x4990A8, 0x4

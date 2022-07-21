@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global areaLightAmbientEntryCount__Q43scn4step3map22DecorationDataAccessorCFv
 areaLightAmbientEntryCount__Q43scn4step3map22DecorationDataAccessorCFv:
 /* 803C9BD8 003C5A18  38 80 00 02 */	li r4, 2

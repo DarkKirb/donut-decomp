@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetIndexPos__Q53scn4step7gimmick11cutropestep25$$2unnamed$$2CutRopeStep_cpp$$2FRCQ33hel4math7Vector2Ulf
 GetIndexPos__Q53scn4step7gimmick11cutropestep25$$2unnamed$$2CutRopeStep_cpp$$2FRCQ33hel4math7Vector2Ulf:
 /* 8030B888 003076C8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1966,7 +1966,7 @@ lbl_8030D4B0:
 /* 8030D4D8 00309318  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 8030D4DC 0030931C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256444
 $$256444:
 	.incbin "baserom.dol", 0x47D370, 0x1C
@@ -1980,7 +1980,7 @@ $$259529:
 $$259530:
 	.incbin "baserom.dol", 0x47D3C8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256456
 $$256456:
 	.incbin "baserom.dol", 0x496A80, 0x8
@@ -2006,7 +2006,7 @@ $$259531:
 $$259853:
 	.incbin "baserom.dol", 0x496AB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259467
 $$259467:
 	.incbin "baserom.dol", 0x49D358, 0x8

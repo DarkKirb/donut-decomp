@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23gfx15FullScreenPlateFRC8_GXColor
 __ct__Q23gfx15FullScreenPlateFRC8_GXColor:
 /* 80195F58 00191D98  80 04 00 00 */	lwz r0, 0(r4)
@@ -69,7 +69,7 @@ draw__Q23gfx15FullScreenPlateCFv:
 /* 80196048 00191E88  38 21 00 60 */	addi r1, r1, 0x60
 /* 8019604C 00191E8C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249012
 $$249012:
 	.incbin "baserom.dol", 0x49A250, 0x4

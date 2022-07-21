@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step2bg15DecorationMaproFRQ23mem10IAllocatorRCQ43scn4step3map12DataAccessor
 __ct__Q43scn4step2bg15DecorationMaproFRQ23mem10IAllocatorRCQ43scn4step3map12DataAccessor:
 /* 80223ACC 0021F90C  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -459,7 +459,7 @@ drawFrontXlu__Q43scn4step2bg15DecorationMaproCFv:
 /* 802240FC 0021FF3C  38 63 CF 9C */	addi r3, r3, -12388
 /* 80224100 0021FF40  48 00 15 C0 */	b drawXlu__Q43scn4step2bg19DecorationMaproCollCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252744
 $$252744:
 	.incbin "baserom.dol", 0x45FDB0, 0x14
@@ -467,7 +467,7 @@ $$252744:
 $$252770:
 	.incbin "baserom.dol", 0x45FDC4, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252745
 $$252745:
 	.incbin "baserom.dol", 0x495260, 0x8

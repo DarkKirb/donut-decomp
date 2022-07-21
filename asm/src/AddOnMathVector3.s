@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_obj__Q33hel4mint30$$2unnamed$$2AddOnMathVector3_cpp$$2Fv
 t_obj__Q33hel4mint30$$2unnamed$$2AddOnMathVector3_cpp$$2Fv:
 /* 801A1DB4 0019DBF4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -329,7 +329,7 @@ SlotSub__Q33hel4mint16AddOnMathVector3FUl:
 /* 801A21F4 0019E034  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A21F8 0019E038  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253590
 $$253590:
 	.incbin "baserom.dol", 0x49A440, 0x8

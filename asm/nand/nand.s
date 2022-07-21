@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global nandCreate
 nandCreate:
 /* 80047E40 00043C80  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1495,12 +1495,12 @@ lbl_8004927C:
 /* 80049298 000450D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004929C 000450DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$23188
 $$23188:
 	.incbin "baserom.dol", 0x4039A8, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23665
 $$23665:
 	.incbin "baserom.dol", 0x492A18, 0x4

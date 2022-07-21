@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy19StateShotAirBallBigFPQ43scn4step4boss4BossUlUlUl
 __ct__Q53scn4step4boss6whispy19StateShotAirBallBigFPQ43scn4step4boss4BossUlUlUl:
 /* 8025E384 0025A1C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -213,7 +213,7 @@ reqAirBallIN__Q53scn4step4boss6whispy19StateShotAirBallBigFRCQ33hel4math7Vector2
 __dt__Q53scn4step4boss6whispy19StateShotAirBallBigFv:
 /* 8025E6A0 0025A4E0  4B FF FA 8C */	b __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy19StateShotAirBallBig
 __vt__Q53scn4step4boss6whispy19StateShotAirBallBig:
 	.incbin "baserom.dol", 0x4667C8, 0x28

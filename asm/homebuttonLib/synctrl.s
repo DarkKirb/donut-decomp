@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSYNResetAllControllers
 __HBMSYNResetAllControllers:
 /* 80149CC0 00145B00  3C A0 80 44 */	lis r5, __HBMSYNVolumeAttenuation@ha
@@ -327,7 +327,7 @@ lbl_8014A12C:
 /* 8014A158 00145F98  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8014A15C 00145F9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMSYNn128
 __HBMSYNn128:
 	.incbin "baserom.dol", 0x442358, 0x200

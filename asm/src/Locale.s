@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FilePostfix__Q23app6LocaleFv
 FilePostfix__Q23app6LocaleFv:
 /* 801793AC 001751EC  3C 60 80 41 */	lis r3, T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2@ha
@@ -8,7 +8,7 @@ FilePostfix__Q23app6LocaleFv:
 /* 801793B4 001751F4  80 63 00 04 */	lwz r3, 4(r3)
 /* 801793B8 001751F8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global commify__Q33hel6common6LocaleFiQ43hel6common6Locale8Language
 commify__Q33hel6common6LocaleFiQ43hel6common6Locale8Language:
 /* 8019DA54 00199894  94 21 F6 B0 */	stwu r1, -0x950(r1)
@@ -287,17 +287,17 @@ lbl_8019DDFC:
 /* 8019DE1C 00199C5C  38 21 03 10 */	addi r1, r1, 0x310
 /* 8019DE20 00199C60  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2
 T_POSTS_US__Q23app20$$2unnamed$$2Locale_cpp$$2:
 	.incbin "baserom.dol", 0x4105E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249074
 $$249074:
 	.incbin "baserom.dol", 0x452AD0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250071
 $$250071:
 	.incbin "baserom.dol", 0x492FD8, 0x8
@@ -320,7 +320,7 @@ $$250076:
 $$250077:
 	.incbin "baserom.dol", 0x493008, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249050
 $$249050:
 	.incbin "baserom.dol", 0x493240, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero5smash20StateSmashKickChargeFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero5smash20StateSmashKickChargeFPQ43scn4step4hero4Hero:
 /* 803A25C4 0039E404  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -246,7 +246,7 @@ __dt__Q24util100StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5smash20Stat
 __dt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1Fv:
 /* 803A28FC 0039E73C  4B E8 BD A4 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1
 __vt__Q24util130StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero5smash14StateSmashKick$$4PQ43scn4step4hero4Hero$$4Q53scn4step4hero5smash11ChargeLevel$$1:
 	.incbin "baserom.dol", 0x48AFB8, 0x10

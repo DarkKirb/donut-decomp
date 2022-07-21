@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34info6common12AddWiiRemoteFRQ23mem10IAllocator
 __ct__Q34info6common12AddWiiRemoteFRQ23mem10IAllocator:
 /* 801A701C 001A2E5C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -979,7 +979,7 @@ setPhaseOn__Q44info6common12AddWiiRemote6RemoteFv:
 /* 801A7DA8 001A3BE8  38 21 00 40 */	addi r1, r1, 0x40
 /* 801A7DAC 001A3BEC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252041
 $$252041:
 	.incbin "baserom.dol", 0x4533A8, 0x10
@@ -1002,7 +1002,7 @@ $$253755:
 $$253756:
 	.incbin "baserom.dol", 0x453400, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2
 T_RES_PATH__Q34info6common26$$2unnamed$$2AddWiiRemote_cpp$$2:
 	.incbin "baserom.dol", 0x493308, 0x4
@@ -1052,7 +1052,7 @@ $$253807:
 $$253810:
 	.incbin "baserom.dol", 0x493370, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253693
 $$253693:
 	.incbin "baserom.dol", 0x49A480, 0x8

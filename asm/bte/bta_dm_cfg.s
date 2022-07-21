@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_dm_cfg
 bta_dm_cfg:
 	.incbin "baserom.dol", 0x403F00, 0xC
@@ -17,7 +17,7 @@ bta_dm_pm_spec:
 bta_dm_pm_md:
 	.incbin "baserom.dol", 0x403F78, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global p_bta_dm_rm_cfg
 p_bta_dm_rm_cfg:
 	.incbin "baserom.dol", 0x492C90, 0x4

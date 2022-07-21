@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll16SearchAttackNodeFRQ25ocoll12SearchAttackRCQ25ocoll8NodeDesc
 __ct__Q25ocoll16SearchAttackNodeFRQ25ocoll12SearchAttackRCQ25ocoll8NodeDesc:
 /* 801D89F0 001D4830  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -187,7 +187,7 @@ lbl_801D8C90:
 /* 801D8C9C 001D4ADC  38 21 01 50 */	addi r1, r1, 0x150
 /* 801D8CA0 001D4AE0  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251954
 $$251954:
 	.incbin "baserom.dol", 0x49A7D8, 0x8

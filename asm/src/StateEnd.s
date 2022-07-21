@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero5stone8StateEndFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero5stone8StateEndFPQ43scn4step4hero4Hero:
 /* 803900D4 0038BF14  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -142,12 +142,12 @@ procMove__Q53scn4step4hero5stone8StateEndFv:
 procFixPos__Q53scn4step4hero5stone8StateEndFv:
 /* 803902B0 0038C0F0  4B FD 05 D0 */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5stone8StateEnd
 __vt__Q53scn4step4hero5stone8StateEnd:
 	.incbin "baserom.dol", 0x489AF0, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256284
 $$256284:
 	.incbin "baserom.dol", 0x49E110, 0x4

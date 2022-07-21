@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSPlayTimeIsLimited
 OSPlayTimeIsLimited:
 /* 80027A00 00023840  80 0D E4 A0 */	lwz r0, __OSExpireTime-_SDA_BASE_(r13)
@@ -567,7 +567,7 @@ lbl_800281BC:
 /* 800281D8 00024018  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800281DC 0002401C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21461
 $$21461:
 	.incbin "baserom.dol", 0x42BC00, 0x14
@@ -578,12 +578,12 @@ $$21519:
 $$21521:
 	.incbin "baserom.dol", 0x42BC24, 0x1C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$21520
 $$21520:
 	.incbin "baserom.dol", 0x4928F0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21446
 $$21446:
 	.incbin "baserom.dol", 0x499058, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Bind__Q34nw4r3g3d11ResLightSetFQ34nw4r3g3d9ResAnmScn
 Bind__Q34nw4r3g3d11ResLightSetFQ34nw4r3g3d9ResAnmScn:
 /* 800D1F40 000CDD80  94 21 FF D0 */	stwu r1, -0x30(r1)

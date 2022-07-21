@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj9GearModelFRCQ24gobj13GearModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRQ24gobj5Model
 __ct__Q24gobj9GearModelFRCQ24gobj13GearModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRQ24gobj5Model:
 /* 8019A5F4 00196434  94 21 FE D0 */	stwu r1, -0x130(r1)
@@ -196,7 +196,7 @@ lbl_8019A88C:
 /* 8019A898 001966D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019A89C 001966DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24gobj9GearModel
 __vt__Q24gobj9GearModel:
 	.incbin "baserom.dol", 0x451120, 0x10

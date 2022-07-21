@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common9StateDeadFPQ43scn4step4boss4Bossi
 __ct__Q53scn4step4boss6common9StateDeadFPQ43scn4step4boss4Bossi:
 /* 80245B14 00241954  94 21 FE D0 */	stwu r1, -0x130(r1)
@@ -678,7 +678,7 @@ dead__Q53scn4step4boss6common9StateDeadFv:
 /* 802464E8 00242328  38 21 00 10 */	addi r1, r1, 0x10
 /* 802464EC 0024232C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy9StateDeadFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6whispy9StateDeadFPQ43scn4step4boss4Boss:
 /* 8025CFCC 00258E0C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1016,7 +1016,7 @@ lbl_8025D484:
 /* 8025D494 002592D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8025D498 002592D8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero6common9StateDeadFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero6common9StateDeadFPQ43scn4step4hero4Hero:
 /* 80360CA0 0035CAE0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2217,17 +2217,17 @@ create__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11St
 __dt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80361E28 0035DC68  4B EC C8 78 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6common9StateDead
 __vt__Q53scn4step4boss6common9StateDead:
 	.incbin "baserom.dol", 0x462440, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy9StateDead
 __vt__Q53scn4step4boss6whispy9StateDead:
 	.incbin "baserom.dol", 0x4666C8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11StateLogout$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x487C08, 0x10
@@ -2235,12 +2235,12 @@ __vt__Q24util92StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common11Stat
 __vt__Q53scn4step4hero6common9StateDead:
 	.incbin "baserom.dol", 0x487C18, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257422
 $$257422:
 	.incbin "baserom.dol", 0x4957B0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257797
 $$257797:
 	.incbin "baserom.dol", 0x49B138, 0x4
@@ -2257,7 +2257,7 @@ $$259229:
 $$259230:
 	.incbin "baserom.dol", 0x49B148, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258046
 $$258046:
 	.incbin "baserom.dol", 0x49B520, 0x4
@@ -2277,7 +2277,7 @@ $$258050:
 $$258053:
 	.incbin "baserom.dol", 0x49B538, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$262125
 $$262125:
 	.incbin "baserom.dol", 0x49DB50, 0x4

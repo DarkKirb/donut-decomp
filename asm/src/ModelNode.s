@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q28dynamics9ModelNodeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
 __ct__Q28dynamics9ModelNodeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl:
 /* 8017C2A8 001780E8  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -1139,7 +1139,7 @@ __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
 /* 8017D2E4 00179124  D0 C3 00 08 */	stfs f6, 8(r3)
 /* 8017D2E8 00179128  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20
 $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20:
 	.incbin "baserom.dol", 0x44F230, 0x24
@@ -1147,7 +1147,7 @@ $$2STRING$$2FSqrt__Q24nw4r4mathFf$$20:
 $$2STRING$$2FSqrt__Q24nw4r4mathFf:
 	.incbin "baserom.dol", 0x44F254, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253498
 $$253498:
 	.incbin "baserom.dol", 0x49A130, 0x4

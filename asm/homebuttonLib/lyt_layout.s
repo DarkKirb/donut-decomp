@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetTagProcessorImpl__24$$2unnamed$$2lyt_layout_cpp$$2FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase$$0w$$1
 SetTagProcessorImpl__24$$2unnamed$$2lyt_layout_cpp$$2FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase$$0w$$1:
 /* 80136C20 00132A60  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -944,7 +944,7 @@ lbl_80137858:
 /* 80137868 001336A8  4E 80 00 20 */	blr 
 /* 8013786C 001336AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29387
 $$29387:
 	.incbin "baserom.dol", 0x40A2F8, 0x4
@@ -952,7 +952,7 @@ $$29387:
 $$29664:
 	.incbin "baserom.dol", 0x40A2FC, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36nw4hbm3lyt6Layout
 __vt__Q36nw4hbm3lyt6Layout:
 	.incbin "baserom.dol", 0x4400C0, 0x34

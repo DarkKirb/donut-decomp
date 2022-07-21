@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Release__Q34nw4r3g3d9AnmObjVisFv
 Release__Q34nw4r3g3d9AnmObjVisFv:
 /* 800D3880 000CF6C0  3C 80 00 01 */	lis r4, 0x00008000@ha
@@ -1384,7 +1384,7 @@ GetTypeObj__Q34nw4r3g3d9AnmObjVisCFv:
 /* 800D4A88 000D08C8  4E 80 00 20 */	blr 
 /* 800D4A8C 000D08CC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global TYPE_NAME__Q34nw4r3g3d9AnmObjVis
 TYPE_NAME__Q34nw4r3g3d9AnmObjVis:
 	.incbin "baserom.dol", 0x4044A0, 0x10
@@ -1398,7 +1398,7 @@ TYPE_NAME__Q34nw4r3g3d11AnmObjVisOR:
 TYPE_NAME__Q34nw4r3g3d12AnmObjVisRes:
 	.incbin "baserom.dol", 0x4044D8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3g3d12AnmObjVisRes
 __vt__Q34nw4r3g3d12AnmObjVisRes:
 	.incbin "baserom.dol", 0x43C800, 0x44
@@ -1412,12 +1412,12 @@ __vt__Q34nw4r3g3d13AnmObjVisNode:
 __vt__Q34nw4r3g3d9AnmObjVis:
 	.incbin "baserom.dol", 0x43C8CC, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2LOCAL$$2GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy$$2policyTable
 $$2LOCAL$$2GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy$$2policyTable:
 	.incbin "baserom.dol", 0x492DC8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27650
 $$27650:
 	.incbin "baserom.dol", 0x499A50, 0x4

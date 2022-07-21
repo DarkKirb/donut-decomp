@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SearchFrame__Q34nw4r3g3d30$$2unnamed$$2g3d_resanmtexpat_cpp$$2FPCQ34nw4r3g3d19ResAnmTexPatAnmDataf
 SearchFrame__Q34nw4r3g3d30$$2unnamed$$2g3d_resanmtexpat_cpp$$2FPCQ34nw4r3g3d19ResAnmTexPatAnmDataf:
 /* 800CF940 000CB780  A0 A3 00 00 */	lhz r5, 0(r3)

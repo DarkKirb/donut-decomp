@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __HBMSEQInitTracks__FP15_HBMSEQSEQUENCEPUci
 __HBMSEQInitTracks__FP15_HBMSEQSEQUENCEPUci:
 /* 8014AF30 00146D70  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -666,7 +666,7 @@ HBMSEQSetVolume:
 /* 8014B840 00147680  38 63 00 14 */	addi r3, r3, 0x14
 /* 8014B844 00147684  4B FF E4 6C */	b HBMSYNSetMasterVolume
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21048
 $$21048:
 	.incbin "baserom.dol", 0x40A428, 0x4
@@ -689,7 +689,7 @@ $$21186:
 $$21188:
 	.incbin "baserom.dol", 0x40A448, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __HBMSEQMidiEventLength
 __HBMSEQMidiEventLength:
 	.incbin "baserom.dol", 0x442CD8, 0x80

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle5BlockFRQ33scn10grandtitle9ComponentRQ23g3d8StdModelUl
 __ct__Q33scn10grandtitle5BlockFRQ33scn10grandtitle9ComponentRQ23g3d8StdModelUl:
 /* 80200B48 001FC988  94 21 FF 10 */	stwu r1, -0xf0(r1)
@@ -198,7 +198,7 @@ setVacuumed__Q33scn10grandtitle5BlockFfi:
 /* 80200E28 001FCC68  98 03 01 D0 */	stb r0, 0x1d0(r3)
 /* 80200E2C 001FCC6C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick5block5BlockFRQ33scn4step9ComponentRQ23mem10IAllocatorRQ25mcoll11LandManagerRQ53scn4step7gimmick5block13BlockResFilesQ43scn4step3map15BinGmkBlockKindRCQ33scn4step7GridPosRQ43scn4step7gimmick6EffectRQ43scn4step7gimmick46ParamAccessor$$0Q53scn4step7gimmick5block5Param$$1
 __ct__Q53scn4step7gimmick5block5BlockFRQ33scn4step9ComponentRQ23mem10IAllocatorRQ25mcoll11LandManagerRQ53scn4step7gimmick5block13BlockResFilesQ43scn4step3map15BinGmkBlockKindRCQ33scn4step7GridPosRQ43scn4step7gimmick6EffectRQ43scn4step7gimmick46ParamAccessor$$0Q53scn4step7gimmick5block5Param$$1:
 /* 802FEE98 002FACD8  94 21 FE F0 */	stwu r1, -0x110(r1)
@@ -1617,7 +1617,7 @@ lbl_8030021C:
 /* 8030022C 002FC06C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80300230 002FC070  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251712
 $$251712:
 	.incbin "baserom.dol", 0x45C590, 0x18
@@ -1709,7 +1709,7 @@ $$251750:
 T_PARENT_NODE_NAME__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2:
 	.incbin "baserom.dol", 0x45C6F8, 0x98
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256431
 $$256431:
 	.incbin "baserom.dol", 0x47BB20, 0xF0
@@ -1741,7 +1741,7 @@ $$256695:
 $$256822:
 	.incbin "baserom.dol", 0x47BF80, 0xF0
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global G3D_RES_FILE_PATH__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2
 G3D_RES_FILE_PATH__Q33scn10grandtitle19$$2unnamed$$2Block_cpp$$2:
 	.incbin "baserom.dol", 0x494718, 0x8
@@ -1782,7 +1782,7 @@ $$252315:
 $$251987:
 	.incbin "baserom.dol", 0x494778, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256613
 $$256613:
 	.incbin "baserom.dol", 0x496930, 0x8
@@ -1793,7 +1793,7 @@ $$256658:
 $$256889:
 	.incbin "baserom.dol", 0x496940, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252316
 $$252316:
 	.incbin "baserom.dol", 0x49AA70, 0x4
@@ -1807,7 +1807,7 @@ $$252318:
 $$252369:
 	.incbin "baserom.dol", 0x49AA80, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256372
 $$256372:
 	.incbin "baserom.dol", 0x49D1E0, 0x8

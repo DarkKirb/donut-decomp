@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc24$$2unnamed$$2g3d_3dsmax_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc24$$2unnamed$$2g3d_3dsmax_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt:
 /* 800E8610 000E4450  C0 A4 00 00 */	lfs f5, 0(r4)
@@ -754,7 +754,7 @@ lbl_800E90F8:
 /* 800E9108 000E4F48  4E 80 00 20 */	blr 
 /* 800E910C 000E4F4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2CalcTexMtx_3dsmax__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable
 $$2LOCAL$$2CalcTexMtx_3dsmax__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable:
 	.incbin "baserom.dol", 0x404F58, 0x1C
@@ -762,7 +762,7 @@ $$2LOCAL$$2CalcTexMtx_3dsmax__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw
 $$2LOCAL$$2CalcTexMtx_3dsmax__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20:
 	.incbin "baserom.dol", 0x404F74, 0x1C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26188
 $$26188:
 	.incbin "baserom.dol", 0x499BE8, 0x4

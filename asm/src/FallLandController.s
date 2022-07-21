@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick18FallLandControllerFRQ33scn4step9ComponentRCQ35mcoll6detail15MoveGridGroupIdfb
 __ct__Q43scn4step7gimmick18FallLandControllerFRQ33scn4step9ComponentRCQ35mcoll6detail15MoveGridGroupIdfb:
 /* 802F4058 002EFE98  90 83 00 00 */	stw r4, 0(r3)
@@ -151,7 +151,7 @@ setInvalid__Q43scn4step7gimmick18FallLandControllerFv:
 /* 802F424C 002F008C  98 03 00 24 */	stb r0, 0x24(r3)
 /* 802F4250 002F0090  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253415
 $$253415:
 	.incbin "baserom.dol", 0x49D110, 0x8

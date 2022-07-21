@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail9DetectArgFv
 __ct__Q35mcoll6detail9DetectArgFv:
 /* 801B71C4 001B3004  C0 02 9A C8 */	lfs f0, $$249806-_SDA2_BASE_(r2)
@@ -103,7 +103,7 @@ toActorDetectOption__Q35mcoll6detail9DetectArgCFv:
 /* 801B72C4 001B3104  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B72C8 001B3108  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249806
 $$249806:
 	.incbin "baserom.dol", 0x49A588, 0x8

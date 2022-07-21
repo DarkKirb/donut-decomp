@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ENCConvertStringUtf8ToUtf16
 ENCConvertStringUtf8ToUtf16:
 /* 8004D990 000497D0  38 E0 00 00 */	li r7, 0

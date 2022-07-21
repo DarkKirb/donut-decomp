@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7parasol9BrainRiseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7parasol9BrainRiseFRQ43scn4step5enemy5Enemy:
 /* 802CAA14 002C6854  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -74,7 +74,7 @@ __dt__Q53scn4step5enemy7parasol9BrainRiseFv:
 __dt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802CAAF4 002C6934  4B F6 3B AC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util93StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy7parasol9StateLink$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x475E98, 0x10

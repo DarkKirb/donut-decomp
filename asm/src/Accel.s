@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hid5AccelFv
 __ct__Q23hid5AccelFv:
 /* 801A21FC 0019E03C  94 21 FF E0 */	stwu r1, -0x20(r1)

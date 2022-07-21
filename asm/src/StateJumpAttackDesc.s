@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common19StateJumpAttackDescFQ33hel4math7Vector2Q24gobj14MoveParamDecelQ24gobj13MoveParamFalli
 __ct__Q53scn4step4boss6common19StateJumpAttackDescFQ33hel4math7Vector2Q24gobj14MoveParamDecelQ24gobj13MoveParamFalli:
 /* 80246E9C 00242CDC  C0 04 00 00 */	lfs f0, 0(r4)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor6ResultFv
 __ct__Q53scn4step7gimmick13challengedoor6ResultFv:
 /* 8030B070 00306EB0  38 00 00 00 */	li r0, 0
@@ -14,7 +14,7 @@ __ct__Q53scn4step7gimmick13challengedoor6ResultFv:
 /* 8030B090 00306ED0  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8030B094 00306ED4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick4door6ResultFv
 __ct__Q53scn4step7gimmick4door6ResultFv:
 /* 8030EA10 0030A850  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -38,7 +38,7 @@ __ct__Q53scn4step7gimmick4door6ResultFv:
 /* 8030EA58 0030A898  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030EA5C 0030A89C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q63scn4step4info9challenge12masterresult6ResultFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 __ct__Q63scn4step4info9challenge12masterresult6ResultFRQ33scn4step9ComponentRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 803B5C00 003B1A40  94 21 F0 B0 */	stwu r1, -0xf50(r1)
@@ -2865,7 +2865,7 @@ hideIcons__Q63scn4step4info9challenge12masterresult6ResultFRQ23lyt6Layout:
 /* 803B84F0 003B4330  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 803B84F4 003B4334  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253563
 $$253563:
 	.incbin "baserom.dol", 0x48C9D0, 0x14
@@ -3050,7 +3050,7 @@ $$258060:
 $$258062:
 	.incbin "baserom.dol", 0x48CE30, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257487
 $$257487:
 	.incbin "baserom.dol", 0x497CD8, 0x8
@@ -3148,17 +3148,17 @@ $$258066:
 $$258067:
 	.incbin "baserom.dol", 0x497DC8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249649
 $$249649:
 	.incbin "baserom.dol", 0x49D340, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249653
 $$249653:
 	.incbin "baserom.dol", 0x49D3C8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257776
 $$257776:
 	.incbin "baserom.dol", 0x49E4A0, 0x8

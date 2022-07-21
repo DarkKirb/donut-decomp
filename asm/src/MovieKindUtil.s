@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_info__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2FQ23mov9MovieKind
 t_info__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2FQ23mov9MovieKind:
 /* 801CEC80 001CAAC0  1C A4 00 0C */	mulli r5, r4, 0xc
@@ -91,10 +91,10 @@ __sinit_$$3MovieKindUtil_cpp:
 /* 801CEDA4 001CABE4  90 03 01 34 */	stw r0, 0x134(r3)
 /* 801CEDA8 001CABE8  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402440, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248726
 $$248726:
 	.incbin "baserom.dol", 0x458DE8, 0x10
@@ -177,7 +177,7 @@ $$248751:
 MOVIE_INFO_TABLE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x458FE0, 0x138
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_WHITE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2
 T_WHITE__Q23mov27$$2unnamed$$2MovieKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x49A740, 0x4

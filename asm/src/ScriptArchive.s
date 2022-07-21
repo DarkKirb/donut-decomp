@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24mint13ScriptArchiveFv
 __ct__Q24mint13ScriptArchiveFv:
 /* 801C0B00 001BC940  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -26,7 +26,7 @@ lbl_801C0B40:
 /* 801C0B4C 001BC98C  90 61 00 08 */	stw r3, 8(r1)
 /* 801C0B50 001BC990  90 9F 00 04 */	stw r4, 4(r31)
 /* 801C0B54 001BC994  38 7F 00 04 */	addi r3, r31, 4
-/* 801C0B58 001BC998  4B FC 66 15 */	bl isValidData__Q25xdata5XDataCFv
+/* 801C0B58 001BC998  4B FC 66 15 */	bl isValidData__Q25.dataXDataCFv
 /* 801C0B5C 001BC99C  7F E3 FB 78 */	mr r3, r31
 lbl_801C0B60:
 /* 801C0B60 001BC9A0  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -63,14 +63,14 @@ at__Q24mint13ScriptArchiveCFUl:
 /* 801C0BC4 001BCA04  7C 83 FA 14 */	add r4, r3, r31
 /* 801C0BC8 001BCA08  38 7E 00 04 */	addi r3, r30, 4
 /* 801C0BCC 001BCA0C  80 84 00 04 */	lwz r4, 4(r4)
-/* 801C0BD0 001BCA10  4B FC 67 85 */	bl labelAddressWithReference__Q25xdata5XDataCFUi
+/* 801C0BD0 001BCA10  4B FC 67 85 */	bl labelAddressWithReference__Q25.dataXDataCFUi
 /* 801C0BD4 001BCA14  90 61 00 08 */	stw r3, 8(r1)
 /* 801C0BD8 001BCA18  7F C3 F3 78 */	mr r3, r30
 /* 801C0BDC 001BCA1C  48 00 00 39 */	bl header__Q24mint13ScriptArchiveCFv
 /* 801C0BE0 001BCA20  7C 83 FA 14 */	add r4, r3, r31
 /* 801C0BE4 001BCA24  38 7E 00 04 */	addi r3, r30, 4
 /* 801C0BE8 001BCA28  80 84 00 08 */	lwz r4, 8(r4)
-/* 801C0BEC 001BCA2C  4B FC 67 69 */	bl labelAddressWithReference__Q25xdata5XDataCFUi
+/* 801C0BEC 001BCA2C  4B FC 67 69 */	bl labelAddressWithReference__Q25.dataXDataCFUi
 /* 801C0BF0 001BCA30  7C 64 1B 78 */	mr r4, r3
 /* 801C0BF4 001BCA34  90 61 00 0C */	stw r3, 0xc(r1)
 /* 801C0BF8 001BCA38  80 61 00 08 */	lwz r3, 8(r1)
@@ -89,7 +89,7 @@ header__Q24mint13ScriptArchiveCFv:
 /* 801C0C20 001BCA60  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801C0C24 001BCA64  7C 7F 1B 78 */	mr r31, r3
 /* 801C0C28 001BCA68  38 63 00 04 */	addi r3, r3, 4
-/* 801C0C2C 001BCA6C  4B FC 65 41 */	bl isValidData__Q25xdata5XDataCFv
+/* 801C0C2C 001BCA6C  4B FC 65 41 */	bl isValidData__Q25.dataXDataCFv
 /* 801C0C30 001BCA70  2C 03 00 00 */	cmpwi r3, 0
 /* 801C0C34 001BCA74  41 82 00 10 */	beq lbl_801C0C44
 /* 801C0C38 001BCA78  80 7F 00 04 */	lwz r3, 4(r31)
@@ -104,12 +104,12 @@ lbl_801C0C48:
 /* 801C0C54 001BCA94  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C0C58 001BCA98  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248751
 $$248751:
 	.incbin "baserom.dol", 0x455F10, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2
 T_FILE_NAME__Q24mint27$$2unnamed$$2ScriptArchive_cpp$$2:
 	.incbin "baserom.dol", 0x4936B8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isChallengStage__Q53scn4step5enemy9challenge4UtilFRQ43scn4step5enemy5Enemy
 isChallengStage__Q53scn4step5enemy9challenge4UtilFRQ43scn4step5enemy5Enemy:
 /* 80281B54 0027D994  94 21 FF F0 */	stwu r1, -0x10(r1)

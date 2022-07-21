@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isValid__Q43scn4step3map12DataAccessorCFv
 isValid__Q43scn4step3map12DataAccessorCFv:
 /* 803C9050 003C4E90  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -741,7 +741,7 @@ header__Q43scn4step3map12DataAccessorCFv:
 /* 803C9A34 003C5874  80 63 00 00 */	lwz r3, 0(r3)
 /* 803C9A38 003C5878  4B DF 71 DC */	b header__Q24mint13ScriptArchiveCFv
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253264
 $$253264:
 	.incbin "baserom.dol", 0x49E668, 0x8

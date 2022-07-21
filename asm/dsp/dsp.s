@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DSPCheckMailToDSP
 DSPCheckMailToDSP:
 /* 800472F0 00043130  3C 60 CC 00 */	lis r3, 0xCC005000@ha
@@ -183,7 +183,7 @@ lbl_80047534:
 /* 80047548 00043388  4E 80 00 20 */	blr 
 /* 8004754C 0004338C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21
 $$21:
 	.incbin "baserom.dol", 0x4322C0, 0x48
@@ -197,7 +197,7 @@ $$22199:
 $$22200:
 	.incbin "baserom.dol", 0x432334, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __DSPVersion
 __DSPVersion:
 	.incbin "baserom.dol", 0x492A10, 0x8

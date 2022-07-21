@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5nruff12StateStopAirFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5nruff12StateStopAirFPQ43scn4step5enemy5Enemy:
 /* 802C8E34 002C4C74  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -219,12 +219,12 @@ lbl_802C9134:
 /* 802C9150 002C4F90  38 21 00 20 */	addi r1, r1, 0x20
 /* 802C9154 002C4F94  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5nruff12StateStopAir
 __vt__Q53scn4step5enemy5nruff12StateStopAir:
 	.incbin "baserom.dol", 0x475B28, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255952
 $$255952:
 	.incbin "baserom.dol", 0x49C8F8, 0x8

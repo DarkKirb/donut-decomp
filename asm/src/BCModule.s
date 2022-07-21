@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isValidData__Q25mintx5XDataCFv
 isValidData__Q25mintx5XDataCFv:
 /* 801C54D0 001C1310  38 80 00 00 */	li r4, 0

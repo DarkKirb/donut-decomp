@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info5lvmap13AllStageClearFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component
 __ct__Q53scn4step4info5lvmap13AllStageClearFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component:
 /* 803B9934 003B5774  94 21 FE F0 */	stwu r1, -0x110(r1)
@@ -320,7 +320,7 @@ constraintPos__Q53scn4step4info5lvmap13AllStageClearFv:
 /* 803B9DD4 003B5C14  38 21 00 60 */	addi r1, r1, 0x60
 /* 803B9DD8 003B5C18  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253621
 $$253621:
 	.incbin "baserom.dol", 0x48CFA8, 0x10
@@ -352,7 +352,7 @@ $$253672:
 $$253678:
 	.incbin "baserom.dol", 0x48D034, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253625
 $$253625:
 	.incbin "baserom.dol", 0x497E28, 0x8
@@ -363,7 +363,7 @@ $$253666:
 $$253691:
 	.incbin "baserom.dol", 0x497E38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253624
 $$253624:
 	.incbin "baserom.dol", 0x49E4D0, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor21ChallengeDoorTrainingFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick13challengedoor21ChallengeDoorTrainingFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80309AFC 0030593C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -169,7 +169,7 @@ kind__Q53scn4step7gimmick13challengedoor21ChallengeDoorTrainingCFv:
 /* 80309D08 00305B48  38 60 00 05 */	li r3, 5
 /* 80309D0C 00305B4C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254623
 $$254623:
 	.incbin "baserom.dol", 0x47D268, 0x24
@@ -183,7 +183,7 @@ $$254641:
 __vt__Q53scn4step7gimmick13challengedoor21ChallengeDoorTraining:
 	.incbin "baserom.dol", 0x47D2D4, 0x54
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254622
 $$254622:
 	.incbin "baserom.dol", 0x496A58, 0x8

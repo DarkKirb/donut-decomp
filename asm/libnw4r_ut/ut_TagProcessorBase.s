@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ut19TagProcessorBase$$0c$$1Fv
 __ct__Q34nw4r2ut19TagProcessorBase$$0c$$1Fv:
 /* 8011FFB0 0011BDF0  3C 80 80 44 */	lis r4, __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1@ha
@@ -469,7 +469,7 @@ lbl_801205FC:
 /* 80120628 0011C468  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8012062C 0011C46C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1
 __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1:
 	.incbin "baserom.dol", 0x43E7E0, 0x14
@@ -477,7 +477,7 @@ __vt__Q34nw4r2ut19TagProcessorBase$$0w$$1:
 __vt__Q34nw4r2ut19TagProcessorBase$$0c$$1:
 	.incbin "baserom.dol", 0x43E7F4, 0x14
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24919
 $$24919:
 	.incbin "baserom.dol", 0x49A020, 0x8

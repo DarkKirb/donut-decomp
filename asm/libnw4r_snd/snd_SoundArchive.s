@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3snd12SoundArchiveFv
 __ct__Q34nw4r3snd12SoundArchiveFv:
 /* 8010F6A0 0010B4E0  3C A0 80 44 */	lis r5, __vt__Q34nw4r3snd12SoundArchive@ha
@@ -511,7 +511,7 @@ lbl_8010FCD8:
 /* 8010FD08 0010BB48  4E 80 00 20 */	blr 
 /* 8010FD0C 0010BB4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3snd12SoundArchive
 __vt__Q34nw4r3snd12SoundArchive:
 	.incbin "baserom.dol", 0x43E560, 0x20

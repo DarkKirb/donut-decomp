@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global normalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 normalizedCross__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
 /* 8019F50C 0019B34C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -610,10 +610,10 @@ __sinit_$$3Vector3_cpp:
 /* 8019FD44 0019BB84  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019FD48 0019BB88  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402424, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251176
 $$251176:
 	.incbin "baserom.dol", 0x49A3C0, 0x4

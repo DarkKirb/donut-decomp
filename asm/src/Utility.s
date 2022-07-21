@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc
 t_path__Q24file21$$2unnamed$$2Utility_cpp$$2FPCc:
 /* 80188BF4 00184A34  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -418,7 +418,7 @@ UncompressedFile__Q24file7UtilityFRCQ23mem8MemBlockRQ23mem10IAllocator:
 /* 80189174 00184FB4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80189178 00184FB8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetupGXForLayout2D__Q23gfx7UtilityFff
 SetupGXForLayout2D__Q23gfx7UtilityFff:
 /* 801974C0 00193300  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -772,7 +772,7 @@ SetRenderType__Q23gfx7UtilityFQ33gfx13RenderSetting4Type:
 /* 801979A4 001937E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801979A8 001937E8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Near__Q23lyt7UtilityFv
 Near__Q23lyt7UtilityFv:
 /* 801B11D8 001AD018  C0 22 9A 40 */	lfs f1, $$251538-_SDA2_BASE_(r2)
@@ -915,7 +915,7 @@ SetupGX__Q23lyt7UtilityFv:
 /* 801B13A8 001AD1E8  38 21 00 60 */	addi r1, r1, 0x60
 /* 801B13AC 001AD1EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl
 MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl:
 /* 801BFA30 001BB870  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -966,7 +966,7 @@ lbl_801BFACC:
 /* 801BFACC 001BB90C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BFAD0 001BB910  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q43scn4step5enemy7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80234818 00230658  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2443,7 +2443,7 @@ lbl_80235C28:
 /* 80235C50 00231A90  38 21 00 70 */	addi r1, r1, 0x70
 /* 80235C54 00231A94  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy
 GetModelScaleBySizeType__Q43scn4step5enemy7UtilityFRCQ43scn4step5enemy5Enemy:
 /* 8028E0D4 00289F14  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -4573,7 +4573,7 @@ lbl_8028FE24:
 /* 8028FE4C 0028BC8C  38 21 00 60 */	addi r1, r1, 0x60
 /* 8028FE50 0028BC90  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OnCapturedStart__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy
 OnCapturedStart__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemy:
 /* 802A5068 002A0EA8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -4822,7 +4822,7 @@ ConstraintPos__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemyf:
 /* 802A5408 002A1248  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802A540C 002A124C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global EmDamageUtility_InitTarget__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy
 EmDamageUtility_InitTarget__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy5Enemy:
 /* 802AC250 002A8090  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -5576,7 +5576,7 @@ lbl_802ACCD4:
 /* 802ACCFC 002A8B3C  38 21 00 20 */	addi r1, r1, 0x20
 /* 802ACD00 002A8B40  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Generate3Waddledee__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation
 Generate3Waddledee__Q53scn4step5enemy9waddledee7UtilityFRQ43scn4step5enemy5EnemybQ43scn4step3map17BinEnemyVariation:
 /* 802EF2C4 002EB104  94 21 FE C0 */	stwu r1, -0x140(r1)
@@ -5928,7 +5928,7 @@ create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee
 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802EF7C8 002EB608  4B F3 EE D8 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SceneChangeDead__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 SceneChangeDead__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803561AC 00351FEC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -8762,7 +8762,7 @@ create__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9Sta
 __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80358900 00354740  4B ED 5D A0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ChkCannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero
 ChkCannotInProduce__Q53scn4step4hero8inactive7UtilityFRQ43scn4step4hero12InactiveHero:
 /* 8035E2B4 0035A0F4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -8828,7 +8828,7 @@ lbl_8035E380:
 /* 8035E38C 0035A1CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035E390 0035A1D0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global InitTarget__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
 InitTarget__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero:
 /* 803784F8 00374338  94 21 FF 60 */	stwu r1, -0xa0(r1)
@@ -9153,7 +9153,7 @@ lbl_8037897C:
 /* 8037899C 003747DC  38 21 00 70 */	addi r1, r1, 0x70
 /* 803789A0 003747E0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global LeaveDoor__Q53scn4step4hero7gimmick7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ24util12FrameCounter
 LeaveDoor__Q53scn4step4hero7gimmick7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ24util12FrameCounter:
 /* 80383CD8 0037FB18  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -9241,7 +9241,7 @@ lbl_80383D68:
 /* 80383E1C 0037FC5C  38 21 00 50 */	addi r1, r1, 0x50
 /* 80383E20 0037FC60  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2
 CheckMapColl__Q53scn4step4hero5spark7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2RCQ33hel4math7Vector2:
 /* 8038F54C 0038B38C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -9520,7 +9520,7 @@ lbl_8038F90C:
 /* 8038F940 0038B780  38 21 07 00 */	addi r1, r1, 0x700
 /* 8038F944 0038B784  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
 OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context:
 /* 80391B5C 0038D99C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -9932,7 +9932,7 @@ lbl_80392104:
 /* 80392114 0038DF54  38 21 00 10 */	addi r1, r1, 0x10
 /* 80392118 0038DF58  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global IsInLand__Q43scn4step4item7UtilityFRQ43scn4step4item4Item
 IsInLand__Q43scn4step4item7UtilityFRQ43scn4step4item4Item:
 /* 803C5430 003C1270  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -10025,7 +10025,7 @@ lbl_803C5568:
 /* 803C557C 003C13BC  38 21 00 60 */	addi r1, r1, 0x60
 /* 803C5580 003C13C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ReqInterruptEffect__Q43scn4step6vacuum7UtilityFRQ43scn4step4core10PermEffectQ24util41ObjRefHandle$$0Q43scn4step6vacuum8Attacker$$1RCQ33hel4math7Vector3Ul
 ReqInterruptEffect__Q43scn4step6vacuum7UtilityFRQ43scn4step4core10PermEffectQ24util41ObjRefHandle$$0Q43scn4step6vacuum8Attacker$$1RCQ33hel4math7Vector3Ul:
 /* 803D342C 003CF26C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -10198,7 +10198,7 @@ lbl_803D368C:
 /* 803D36A8 003CF4E8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 803D36AC 003CF4EC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation
 GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariation:
 /* 803D9004 003D4E44  38 E0 00 00 */	li r7, 0
@@ -10454,7 +10454,7 @@ IsExtra__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6Weapon:
 /* 803D9378 003D51B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D937C 003D51BC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Rotate__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon
 Rotate__Q53scn4step6weapon10spearspear7UtilityFRQ43scn4step6weapon6Weapon:
 /* 803E5244 003E1084  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -10530,7 +10530,7 @@ lbl_803E533C:
 /* 803E5348 003E1188  38 21 00 10 */	addi r1, r1, 0x10
 /* 803E534C 003E118C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Rotate__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon
 Rotate__Q53scn4step6weapon8deespear7UtilityFRQ43scn4step6weapon6Weapon:
 /* 803EE190 003E9FD0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -10606,7 +10606,7 @@ lbl_803EE288:
 /* 803EE294 003EA0D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803EE298 003EA0D8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CaptureEFB__Q23sfx7UtilityFRQ23gfx9TexBuffer9_GXTexFmtb
 CaptureEFB__Q23sfx7UtilityFRQ23gfx9TexBuffer9_GXTexFmtb:
 /* 80401A64 003FD8A4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -10826,7 +10826,7 @@ lbl_80401D7C:
 /* 80401D88 003FDBC8  38 21 00 40 */	addi r1, r1, 0x40
 /* 80401D8C 003FDBCC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$259919
 $$259919:
 	.incbin "baserom.dol", 0x412590, 0x6C
@@ -10834,7 +10834,7 @@ $$259919:
 $$259947:
 	.incbin "baserom.dol", 0x4125FC, 0x6C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut81LinkList$$0Q24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util60ObjListNode$$0Q43scn4step4item4Item$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x460970, 0x24
@@ -10848,7 +10848,7 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q4
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q43scn4step5enemy5Enemy$$4Q24util16ObjListDummyType$$1:
 	.incbin "baserom.dol", 0x4609C4, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$261649
 $$261649:
 	.incbin "baserom.dol", 0x46ED78, 0x28
@@ -10856,12 +10856,12 @@ $$261649:
 $$261690:
 	.incbin "baserom.dol", 0x46EDA0, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy9waddledee12StateSmashed$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x47A458, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$264675
 $$264675:
 	.incbin "baserom.dol", 0x481720, 0x28
@@ -10869,12 +10869,12 @@ $$264675:
 __vt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero6common9StateSwim$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x481748, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249660
 $$249660:
 	.incbin "baserom.dol", 0x493100, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$260100
 $$260100:
 	.incbin "baserom.dol", 0x4952D0, 0x4
@@ -10888,7 +10888,7 @@ $$260103:
 $$260104:
 	.incbin "baserom.dol", 0x4952DC, 0x4
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$259859
 $$259859:
 	.incbin "baserom.dol", 0x495A18, 0x4
@@ -10902,7 +10902,7 @@ $$259862:
 $$259863:
 	.incbin "baserom.dol", 0x495A24, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251743
 $$251743:
 	.incbin "baserom.dol", 0x49A298, 0x8
@@ -10919,7 +10919,7 @@ $$251796:
 $$251797:
 	.incbin "baserom.dol", 0x49A2AC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251538
 $$251538:
 	.incbin "baserom.dol", 0x49A500, 0x4
@@ -10939,7 +10939,7 @@ $$251552:
 $$251553:
 	.incbin "baserom.dol", 0x49A51C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259635
 $$259635:
 	.incbin "baserom.dol", 0x49AED0, 0x4
@@ -10980,7 +10980,7 @@ $$261515:
 $$261516:
 	.incbin "baserom.dol", 0x49AF00, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$261487
 $$261487:
 	.incbin "baserom.dol", 0x49BA38, 0x4
@@ -11081,7 +11081,7 @@ $$262007:
 $$262008:
 	.incbin "baserom.dol", 0x49BAB8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256724
 $$256724:
 	.incbin "baserom.dol", 0x49C058, 0x4
@@ -11089,7 +11089,7 @@ $$256724:
 $$256725:
 	.incbin "baserom.dol", 0x49C05C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258292
 $$258292:
 	.incbin "baserom.dol", 0x49C298, 0x4
@@ -11139,7 +11139,7 @@ $$258395:
 $$258481:
 	.incbin "baserom.dol", 0x49C2D4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257104
 $$257104:
 	.incbin "baserom.dol", 0x49D050, 0x4
@@ -11156,7 +11156,7 @@ $$257107:
 $$257110:
 	.incbin "baserom.dol", 0x49D060, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_WATERPISTOL_VARIATION_TABLE_STRONG__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2
 T_WATERPISTOL_VARIATION_TABLE_STRONG__Q43scn4step4hero21$$2unnamed$$2Utility_cpp$$2:
 	.incbin "baserom.dol", 0x49D9F8, 0x8
@@ -11203,7 +11203,7 @@ $$265000:
 $$265003:
 	.incbin "baserom.dol", 0x49DA38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253894
 $$253894:
 	.incbin "baserom.dol", 0x49DEE0, 0x4
@@ -11211,7 +11211,7 @@ $$253894:
 $$253895:
 	.incbin "baserom.dol", 0x49DEE4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250538
 $$250538:
 	.incbin "baserom.dol", 0x49E018, 0x4
@@ -11231,7 +11231,7 @@ $$250542:
 $$250549:
 	.incbin "baserom.dol", 0x49E030, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253722
 $$253722:
 	.incbin "baserom.dol", 0x49E0F0, 0x4
@@ -11242,7 +11242,7 @@ $$253723:
 $$253724:
 	.incbin "baserom.dol", 0x49E0F8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258122
 $$258122:
 	.incbin "baserom.dol", 0x49E128, 0x4
@@ -11268,12 +11268,12 @@ $$258180:
 $$258198:
 	.incbin "baserom.dol", 0x49E148, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253795
 $$253795:
 	.incbin "baserom.dol", 0x49E590, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251819
 $$251819:
 	.incbin "baserom.dol", 0x49E828, 0x4
@@ -11287,7 +11287,7 @@ $$251821:
 $$251826:
 	.incbin "baserom.dol", 0x49E838, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255686
 $$255686:
 	.incbin "baserom.dol", 0x49EA88, 0x4
@@ -11295,7 +11295,7 @@ $$255686:
 $$255687:
 	.incbin "baserom.dol", 0x49EA8C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255686
 $$255686:
 	.incbin "baserom.dol", 0x49EC70, 0x4
@@ -11303,7 +11303,7 @@ $$255686:
 $$255687:
 	.incbin "baserom.dol", 0x49EC74, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251502
 $$251502:
 	.incbin "baserom.dol", 0x49EE58, 0x4

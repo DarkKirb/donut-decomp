@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail22G3DAutoReqAnimCallbackFRQ36effect6detail13EffectManagerRCQ23g3d13ModelAccessorPQ26effect9RequestorPQ26effect5GroupSc
 __ct__Q36effect6detail22G3DAutoReqAnimCallbackFRQ36effect6detail13EffectManagerRCQ23g3d13ModelAccessorPQ26effect9RequestorPQ26effect5GroupSc:
 /* 801812B0 0017D0F0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -85,7 +85,7 @@ request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo:
 /* 801813CC 0017D20C  7C 08 07 74 */	extsb r8, r0
 /* 801813D0 0017D210  4B FF F6 E8 */	b autoRequest__Q36effect6detail13EffectManagerFRCQ23g3d18AutoReqAnimReqInfoRCQ23g3d13ModelAccessorPQ26effect9RequestorPQ26effect5GroupSc
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q36effect6detail22G3DAutoReqAnimCallback
 __vt__Q36effect6detail22G3DAutoReqAnimCallback:
 	.incbin "baserom.dol", 0x44F4E0, 0x10

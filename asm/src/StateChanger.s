@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24util16StateChangerBaseFRQ24util14IStateCallback
 __ct__Q24util16StateChangerBaseFRQ24util14IStateCallback:
 /* 80405CD0 00401B10  3C A0 80 49 */	lis r5, __vt__Q24util16StateChangerBase@ha
@@ -176,7 +176,7 @@ onSetNextStateFactory__Q24util16StateChangerBaseFv:
 /* 80405F0C 00401D4C  4B FF FF AC */	b releaseNextStateFactory__Q24util16StateChangerBaseFv
 /* 80405F10 00401D50  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util16StateChangerBase
 __vt__Q24util16StateChangerBase:
 	.incbin "baserom.dol", 0x4927F0, 0x10

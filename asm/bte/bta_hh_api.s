@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global BTA_HhEnable
 BTA_HhEnable:
 /* 8007D114 00078F54  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -278,12 +278,12 @@ lbl_8007D4D0:
 /* 8007D4DC 0007931C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8007D4E0 00079320  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2863
 $$2863:
 	.incbin "baserom.dol", 0x4371E0, 0x30
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global bta_hh_reg
 bta_hh_reg:
 	.incbin "baserom.dol", 0x499478, 0x8

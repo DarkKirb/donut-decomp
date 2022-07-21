@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23hid13RumbleManagerFQ23hid18RumbleResourceKind
 __ct__Q23hid13RumbleManagerFQ23hid18RumbleResourceKind:
 /* 801A3A5C 0019F89C  94 21 FF F0 */	stwu r1, -0x10(r1)

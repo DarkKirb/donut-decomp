@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q23seq21SequenceChallengeRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q23seq21SequenceChallengeRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 803FCC4C 003F8A8C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -975,7 +975,7 @@ lbl_803FD96C:
 GetRuntimeTypeInfo__Q23seq21SequenceChallengeRootCFv:
 /* 803FD984 003F97C4  4B FF F2 C8 */	b RuntimeTypeInfoImpl$$0Q23seq21SequenceChallengeRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq21SequenceChallengeRoot
 __vt__Q23seq21SequenceChallengeRoot:
 	.incbin "baserom.dol", 0x4924B0, 0x28

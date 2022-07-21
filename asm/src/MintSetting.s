@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm11MintSettingFv
 __ct__Q26mintvm11MintSettingFv:
 /* 801C5AF0 001C1930  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -353,7 +353,7 @@ lbl_801C5F7C:
 /* 801C5F9C 001C1DDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C5FA0 001C1DE0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249262
 $$249262:
 	.incbin "baserom.dol", 0x457B30, 0x10
@@ -436,7 +436,7 @@ $$2STRING$$2verify__Q26mintvm13MintAllocatorFv$$20:
 $$2STRING$$2verify__Q26mintvm13MintAllocatorFv:
 	.incbin "baserom.dol", 0x457D88, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$249286
 $$249286:
 	.incbin "baserom.dol", 0x493908, 0x8

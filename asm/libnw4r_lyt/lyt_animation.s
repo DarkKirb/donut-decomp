@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetStepCurveValue__Q34nw4r3lyt27$$2unnamed$$2lyt_animation_cpp$$2FfPCQ44nw4r3lyt3res7StepKeyUl
 GetStepCurveValue__Q34nw4r3lyt27$$2unnamed$$2lyt_animation_cpp$$2FfPCQ44nw4r3lyt3res7StepKeyUl:
 /* 800FC270 000F80B0  28 04 00 01 */	cmplwi r4, 1
@@ -1655,12 +1655,12 @@ lbl_800FD854:
 /* 800FD878 000F96B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800FD87C 000F96BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt18AnimTransformBasic
 __vt__Q34nw4r3lyt18AnimTransformBasic:
 	.incbin "baserom.dol", 0x43D668, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$210121
 $$210121:
 	.incbin "baserom.dol", 0x499CF0, 0x4

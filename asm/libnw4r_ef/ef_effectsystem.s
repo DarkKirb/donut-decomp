@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q34nw4r2ef12EffectSystemFv
 __dt__Q34nw4r2ef12EffectSystemFv:
 /* 800A4670 000A04B0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -488,20 +488,20 @@ lbl_800A4D04:
 /* 800A4D48 000A0B88  4E 80 00 20 */	blr 
 /* 800A4D4C 000A0B8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402368, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$27903
 $$27903:
 	.incbin "baserom.dol", 0x43C198, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2
 NW4R_EF_Version___29$$2unnamed$$2ef_effectsystem_cpp$$2:
 	.incbin "baserom.dol", 0x492D38, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28588
 $$28588:
 	.incbin "baserom.dol", 0x4994B8, 0x4

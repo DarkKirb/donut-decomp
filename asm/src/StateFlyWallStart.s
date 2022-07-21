@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss15challengemaster17StateFlyWallStartFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss15challengemaster17StateFlyWallStartFPQ43scn4step4boss4Boss:
 /* 80240984 0023C7C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -255,7 +255,7 @@ __dt__Q24util152StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengem
 __dt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster12StateFlyWall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss15challengemaster9AvoidType$$1Fv:
 /* 80240CD4 0023CB14  4B FE D9 CC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster12StateFlyWall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss15challengemaster9AvoidType$$1
 __vt__Q24util147StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss15challengemaster12StateFlyWall$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss15challengemaster9AvoidType$$1:
 	.incbin "baserom.dol", 0x461ED8, 0x10

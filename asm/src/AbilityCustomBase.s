@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero17AbilityCustomBaseFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero17AbilityCustomBaseFRQ43scn4step4hero4Hero:
 /* 8032B7EC 0032762C  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero17AbilityCustomBase@ha
@@ -17,7 +17,7 @@ __dt__Q43scn4step4hero17AbilityCustomBaseFv:
 GetRuntimeTypeInfo__Q43scn4step4hero17AbilityCustomBaseCFv:
 /* 8032B804 00327644  4B F0 55 94 */	b RuntimeTypeInfoImpl$$0Q43scn4step4hero17AbilityCustomBase$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero17AbilityCustomBase
 __vt__Q43scn4step4hero17AbilityCustomBase:
 	.incbin "baserom.dol", 0x47E870, 0x10

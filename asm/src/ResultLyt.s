@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn15challengeresult4info9ResultLytFRQ43scn15challengeresult4info7ManagerRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23lyt12PaneAccessor
 __ct__Q43scn15challengeresult4info9ResultLytFRQ43scn15challengeresult4info7ManagerRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23lyt12PaneAccessor:
 /* 801F1B2C 001ED96C  94 21 FC F0 */	stwu r1, -0x310(r1)
@@ -2912,7 +2912,7 @@ preLoadStage__Q43scn15challengeresult4info9ResultLytFv:
 /* 801F458C 001F03CC  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 801F4590 001F03D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253950
 $$253950:
 	.incbin "baserom.dol", 0x45B1F8, 0x14
@@ -3115,7 +3115,7 @@ $$258980:
 $$258981:
 	.incbin "baserom.dol", 0x45B6A0, 0x50
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258208
 $$258208:
 	.incbin "baserom.dol", 0x4941E8, 0x8
@@ -3252,7 +3252,7 @@ $$259089:
 $$259090:
 	.incbin "baserom.dol", 0x494338, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258808
 $$258808:
 	.incbin "baserom.dol", 0x49A9A8, 0x8

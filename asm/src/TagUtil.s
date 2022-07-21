@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global scan__Q33lyt7TagUtil14StringIteratorFPCw
 scan__Q33lyt7TagUtil14StringIteratorFPCw:
 /* 801AFDF4 001ABC34  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -267,7 +267,7 @@ onEndTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUs:
 onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc:
 /* 801B0128 001ABF68  4B FF FF F0 */	b onEndTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUs
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp
 __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp:
 	.incbin "baserom.dol", 0x453EB8, 0x14

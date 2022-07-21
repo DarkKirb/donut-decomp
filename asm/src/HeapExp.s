@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23mem7HeapExpFRCQ33hel6common15FixedString$$032$$1RCQ23mem8MemBlockbb
 __ct__Q23mem7HeapExpFRCQ33hel6common15FixedString$$032$$1RCQ23mem8MemBlockbb:
 /* 801BE2B0 001BA0F0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -293,7 +293,7 @@ allocatorFree__Q33mem7HeapExp22AllocFromTailAllocatorFPv:
 /* 801BE638 001BA478  80 63 00 04 */	lwz r3, 4(r3)
 /* 801BE63C 001BA47C  4B FF FF 64 */	b free__Q23mem7HeapExpFPv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23mem7HeapExp
 __vt__Q23mem7HeapExp:
 	.incbin "baserom.dol", 0x455E10, 0x24

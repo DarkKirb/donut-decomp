@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23lyt12PaneAccessorFv
 __ct__Q23lyt12PaneAccessorFv:
 /* 801ADFC8 001A9E08  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -446,7 +446,7 @@ lbl_801AE53C:
 /* 801AE548 001AA388  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AE54C 001AA38C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253421
 $$253421:
 	.incbin "baserom.dol", 0x49A4D0, 0x8

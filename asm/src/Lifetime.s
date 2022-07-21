@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara8LifetimeFv
 __ct__Q43scn4step5chara8LifetimeFv:
 /* 8026F618 0026B458  38 00 00 01 */	li r0, 1

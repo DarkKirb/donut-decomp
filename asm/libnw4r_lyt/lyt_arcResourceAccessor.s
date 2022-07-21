@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global FindNameResource__37$$2unnamed$$2lyt_arcResourceAccessor_cpp$$2FP9ARCHandlePCc
 FindNameResource__37$$2unnamed$$2lyt_arcResourceAccessor_cpp$$2FP9ARCHandlePCc:
 /* 800FD8B0 000F96F0  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -341,12 +341,12 @@ lbl_800FDD20:
 /* 800FDD38 000F9B78  4E 80 00 20 */	blr 
 /* 800FDD3C 000F9B7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt19ArcResourceAccessor
 __vt__Q34nw4r3lyt19ArcResourceAccessor:
 	.incbin "baserom.dol", 0x43D6A8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23486
 $$23486:
 	.incbin "baserom.dol", 0x492E30, 0x4

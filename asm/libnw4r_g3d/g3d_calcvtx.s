@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcVtx__Q24nw4r3g3dFQ34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjShpPPQ34nw4r3g3d13ResVtxPosDataPPQ34nw4r3g3d13ResVtxNrmDataPPQ34nw4r3g3d13ResVtxClrData
 CalcVtx__Q24nw4r3g3dFQ34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjShpPPQ34nw4r3g3d13ResVtxPosDataPPQ34nw4r3g3d13ResVtxNrmDataPPQ34nw4r3g3d13ResVtxClrData:
 /* 800F2410 000EE250  94 21 FA 60 */	stwu r1, -0x5a0(r1)
@@ -536,7 +536,7 @@ lbl_800F2B70:
 /* 800F2B98 000EE9D8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800F2B9C 000EE9DC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27801
 $$27801:
 	.incbin "baserom.dol", 0x499C50, 0x8

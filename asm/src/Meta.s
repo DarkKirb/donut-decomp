@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Anim__Q53scn4step4hero9modeldesc4MetaFv
 Anim__Q53scn4step4hero9modeldesc4MetaFv:
 /* 8035C77C 003585BC  38 00 00 0F */	li r0, 0xf
@@ -92,12 +92,12 @@ lbl_8035C848:
 Script__Q53scn4step4hero9modeldesc4MetaFv:
 /* 8035C8A8 003586E8  4B FF F3 04 */	b Script__Q53scn4step4hero9modeldesc6CommonFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20
 $$2LOCAL$$2Anim__Q53scn4step4hero9modeldesc4MetaFv$$2ENTRIES$$20:
 	.incbin "baserom.dol", 0x41AC08, 0xE38
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248734
 $$248734:
 	.incbin "baserom.dol", 0x486DA8, 0xC
@@ -408,7 +408,7 @@ $$248885:
 $$2LOCAL$$2Model__Q53scn4step4hero9modeldesc4MetaFv$$2NAMES$$20:
 	.incbin "baserom.dol", 0x4873F0, 0x78
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248727
 $$248727:
 	.incbin "baserom.dol", 0x497468, 0x8

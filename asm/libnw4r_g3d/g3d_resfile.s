@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetResMdl__Q34nw4r3g3d7ResFileCFPCc
 GetResMdl__Q34nw4r3g3d7ResFileCFPCc:
 /* 800C8F70 000C4DB0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1762,7 +1762,7 @@ lbl_800CA6D4:
 /* 800CA6E8 000C6528  4E 80 00 20 */	blr 
 /* 800CA6EC 000C652C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global ResNameData_Models__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2
 ResNameData_Models__Q34nw4r3g3d25$$2unnamed$$2g3d_resfile_cpp$$2:
 	.incbin "baserom.dol", 0x43C5E0, 0x20

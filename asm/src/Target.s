@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24gobj6TargetFRCQ24gobj10TargetDesc
 __ct__Q24gobj6TargetFRCQ24gobj10TargetDesc:
 /* 8019C094 00197ED4  88 04 00 00 */	lbz r0, 0(r4)
@@ -61,7 +61,7 @@ invert__Q24gobj6TargetFv:
 /* 8019C144 00197F84  98 03 00 00 */	stb r0, 0(r3)
 /* 8019C148 00197F88  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250757
 $$250757:
 	.incbin "baserom.dol", 0x49A2F0, 0x4

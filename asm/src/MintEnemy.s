@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step5enemy9MintEnemyFRQ43scn4step5enemy5Enemy
 Register__Q43scn4step5enemy9MintEnemyFRQ43scn4step5enemy5Enemy:
 /* 8028ADB8 00286BF8  90 6D F5 68 */	stw r3, t_obj__Q43scn4step5enemy23$$2unnamed$$2MintEnemy_cpp$$2-_SDA_BASE_(r13)
@@ -22,7 +22,7 @@ __sinit_$$3MintEnemy_cpp:
 /* 8028ADD4 00286C14  38 6D F5 68 */	addi r3, r13, t_obj__Q43scn4step5enemy23$$2unnamed$$2MintEnemy_cpp$$2-_SDA_BASE_
 /* 8028ADD8 00286C18  4B E5 26 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024BC, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail6EffectFv
 __ct__Q36effect6detail6EffectFv:
 /* 8017F550 0017B390  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1106,7 +1106,7 @@ lbl_801803FC:
 /* 80180408 0017C248  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018040C 0017C24C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss6EffectFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss6EffectFRQ43scn4step4boss4Boss:
 /* 8022F4DC 0022B31C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1341,7 +1341,7 @@ onObjStopStarted__Q43scn4step4boss6EffectFv:
 onObjStopFinished__Q43scn4step4boss6EffectFv:
 /* 8022F808 0022B648  4B FF FF 94 */	b onHitStopEnd__Q43scn4step4boss6EffectFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara6EffectFRQ33scn4step9ComponentQ43scn4step6effect12DrawPriority
 __ct__Q43scn4step5chara6EffectFRQ33scn4step9ComponentQ43scn4step6effect12DrawPriority:
 /* 8026DEA4 00269CE4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1728,7 +1728,7 @@ node__Q43scn4step5chara6EffectFUl:
 /* 8026E348 0026A188  80 84 00 04 */	lwz r4, 4(r4)
 /* 8026E34C 0026A18C  4B F2 D9 80 */	b at__Q24gobj9NodeReposCFUl
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy6EffectFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy6EffectFRQ43scn4step5enemy5Enemy:
 /* 802846F0 00280530  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1853,7 +1853,7 @@ onObjStopStarted__Q43scn4step5enemy6EffectFv:
 onObjStopFinished__Q43scn4step5enemy6EffectFv:
 /* 80284894 002806D4  4B FF FF B4 */	b onHitStopEnd__Q43scn4step5enemy6EffectFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick6EffectFRQ33scn4step9Component
 __ct__Q43scn4step7gimmick6EffectFRQ33scn4step9Component:
 /* 802F39A0 002EF7E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2341,7 +2341,7 @@ lbl_802F4044:
 /* 802F4050 002EFE90  38 21 00 10 */	addi r1, r1, 0x10
 /* 802F4054 002EFE94  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero6EffectFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero6EffectFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 80335E94 00331CD4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2774,7 +2774,7 @@ setViewOffsetTrans__Q43scn4step4hero6EffectFRCQ33hel4math7Vector3:
 /* 803364E8 00332328  38 21 00 10 */	addi r1, r1, 0x10
 /* 803364EC 0033232C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon6EffectFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon6EffectFRQ43scn4step6weapon6Weapon:
 /* 803D6230 003D2070  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2862,7 +2862,7 @@ onObjStopStarted__Q43scn4step6weapon6EffectFv:
 onObjStopFinished__Q43scn4step6weapon6EffectFv:
 /* 803D634C 003D218C  4B FF FF C4 */	b onHitStopEnd__Q43scn4step6weapon6EffectFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut83LinkList$$0Q24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x44F3F0, 0x24

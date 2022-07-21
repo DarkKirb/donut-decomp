@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn19challengefileselect6effect5TableFQ43scn19challengefileselect6effect4Kind
 GenContextAt__Q43scn19challengefileselect6effect5TableFQ43scn19challengefileselect6effect4Kind:
 /* 801EA0D0 001E5F10  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -49,7 +49,7 @@ PtclResPath__Q43scn19challengefileselect6effect5TableFQ43scn19challengefileselec
 /* 801EA160 001E5FA0  80 63 00 04 */	lwz r3, 4(r3)
 /* 801EA164 001E5FA4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn14challengetitle6effect5TableFQ43scn14challengetitle6effect4Kind
 GenContextAt__Q43scn14challengetitle6effect5TableFQ43scn14challengetitle6effect4Kind:
 /* 801F045C 001EC29C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -119,7 +119,7 @@ PtclResPath__Q43scn14challengetitle6effect5TableFQ43scn14challengetitle6effect11
 /* 801F0540 001EC380  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F0544 001EC384  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn15challengeresult6effect5TableFQ43scn15challengeresult6effect4Kind
 GenContextAt__Q43scn15challengeresult6effect5TableFQ43scn15challengeresult6effect4Kind:
 /* 801F1484 001ED2C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -194,7 +194,7 @@ PtclResPath__Q43scn15challengeresult6effect5TableFQ43scn15challengeresult6effect
 /* 801F157C 001ED3BC  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F1580 001ED3C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn10grandtitle6effect5TableFQ43scn10grandtitle6effect4Kind
 GenContextAt__Q43scn10grandtitle6effect5TableFQ43scn10grandtitle6effect4Kind:
 /* 80206D50 00202B90  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -335,7 +335,7 @@ PolyResPath__Q43scn10grandtitle6effect5TableFQ43scn10grandtitle6effect11PolyResS
 /* 80206F44 00202D84  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80206F48 00202D88  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn7history6effect5TableFQ43scn7history6effect4Kind
 GenContextAt__Q43scn7history6effect5TableFQ43scn7history6effect4Kind:
 /* 8021B648 00217488  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -448,7 +448,7 @@ PolyResPath__Q43scn7history6effect5TableFQ43scn7history6effect11PolyResSlot:
 /* 8021B7CC 0021760C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8021B7D0 00217610  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_genContextHeader__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2Fv
 t_genContextHeader__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2Fv:
 /* 8027B128 00276F68  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3614,7 +3614,7 @@ PolyResPath__Q43scn4step6effect5TableFQ43scn4step6effect11PolyResSlot:
 /* 8027E254 0027A094  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8027E258 0027A098  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GenContextAt__Q43scn9grandmenu6effect5TableFQ43scn9grandmenu6effect4Kind
 GenContextAt__Q43scn9grandmenu6effect5TableFQ43scn9grandmenu6effect4Kind:
 /* 803F454C 003F038C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -3672,7 +3672,7 @@ PtclResPath__Q43scn9grandmenu6effect5TableFQ43scn9grandmenu6effect11PtclResSlot:
 /* 803F4600 003F0440  80 63 00 04 */	lwz r3, 4(r3)
 /* 803F4604 003F0444  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x4119C8, 0x18
@@ -3680,17 +3680,17 @@ T_PTCL_INFOS__Q43scn14challengetitle6effect19$$2unnamed$$2Table_cpp$$2:
 T_PTCL_INFOS__Q43scn15challengeresult6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x4119E0, 0x10
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x412270, 0x18
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PTCL_INFOS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x413C00, 0x1D8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x45AA68, 0xC
@@ -3701,7 +3701,7 @@ $$248739:
 $$248839:
 	.incbin "baserom.dol", 0x45AA8C, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x45B038, 0x10
@@ -3727,7 +3727,7 @@ $$248855:
 $$248856:
 	.incbin "baserom.dol", 0x45B0DC, 0x14
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248739
 $$248739:
 	.incbin "baserom.dol", 0x45B128, 0x10
@@ -3750,7 +3750,7 @@ $$248851:
 $$248852:
 	.incbin "baserom.dol", 0x45B1BC, 0x24
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x45CC38, 0x10
@@ -3806,7 +3806,7 @@ $$248888:
 $$248889:
 	.incbin "baserom.dol", 0x45CDA8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248739
 $$248739:
 	.incbin "baserom.dol", 0x45F6A0, 0x18
@@ -3850,7 +3850,7 @@ $$248874:
 $$248875:
 	.incbin "baserom.dol", 0x45F7B0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250167
 $$250167:
 	.incbin "baserom.dol", 0x468990, 0x10
@@ -5793,7 +5793,7 @@ $$248907:
 T_POLY_RESPATHS__Q43scn4step6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x46C230, 0xD0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x4917F0, 0xC
@@ -5807,7 +5807,7 @@ $$248845:
 $$248846:
 	.incbin "baserom.dol", 0x491828, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248740
 $$248740:
 	.incbin "baserom.dol", 0x4941B8, 0x8
@@ -5815,12 +5815,12 @@ $$248740:
 $$248742:
 	.incbin "baserom.dol", 0x4941C0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x4941D0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global T_POLY_RESPATHS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2
 T_POLY_RESPATHS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x494858, 0x8
@@ -5828,7 +5828,7 @@ T_POLY_RESPATHS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2:
 $$248890:
 	.incbin "baserom.dol", 0x494860, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248738
 $$248738:
 	.incbin "baserom.dol", 0x495108, 0x8
@@ -5842,7 +5842,7 @@ T_POLY_RESPATHS__Q43scn7history6effect19$$2unnamed$$2Table_cpp$$2:
 $$248876:
 	.incbin "baserom.dol", 0x495120, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250606
 $$250606:
 	.incbin "baserom.dol", 0x495878, 0x4
@@ -6003,7 +6003,7 @@ $$248848:
 $$248854:
 	.incbin "baserom.dol", 0x4959F8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn19challengefileselect6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x49A8D0, 0x8
@@ -6014,7 +6014,7 @@ $$248833:
 lbl_8055FD9C:
 	.incbin "baserom.dol", 0x49A8DC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248847
 $$248847:
 	.incbin "baserom.dol", 0x49A960, 0x4
@@ -6022,7 +6022,7 @@ $$248847:
 lbl_8055FE24:
 	.incbin "baserom.dol", 0x49A964, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248842
 $$248842:
 	.incbin "baserom.dol", 0x49A9A0, 0x4
@@ -6030,7 +6030,7 @@ $$248842:
 lbl_8055FE64:
 	.incbin "baserom.dol", 0x49A9A4, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn10grandtitle6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x49AB38, 0x8
@@ -6041,7 +6041,7 @@ $$248870:
 lbl_80560004:
 	.incbin "baserom.dol", 0x49AB44, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248862
 $$248862:
 	.incbin "baserom.dol", 0x49AD30, 0x4
@@ -6049,7 +6049,7 @@ $$248862:
 lbl_805601F4:
 	.incbin "baserom.dol", 0x49AD34, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250163
 $$250163:
 	.incbin "baserom.dol", 0x49B928, 0x4
@@ -6057,7 +6057,7 @@ $$250163:
 lbl_80560DEC:
 	.incbin "baserom.dol", 0x49B92C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_PTCL_INFOS__Q43scn9grandmenu6effect19$$2unnamed$$2Table_cpp$$2
 T_PTCL_INFOS__Q43scn9grandmenu6effect19$$2unnamed$$2Table_cpp$$2:
 	.incbin "baserom.dol", 0x49ED70, 0x8

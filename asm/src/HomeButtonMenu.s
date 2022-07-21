@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isWideMode__28$$2unnamed$$2HomeButtonMenu_cpp$$2Fv
 isWideMode__28$$2unnamed$$2HomeButtonMenu_cpp$$2Fv:
 /* 8019C390 001981D0  80 6D ED 08 */	lwz r3, object___Q33hel6common35ExplicitSingleton$$0Q23gfx9VISetting$$1-_SDA_BASE_(r13)
@@ -1314,12 +1314,12 @@ lbl_8019D5C0:
 /* 8019D5D0 00199410  38 21 00 30 */	addi r1, r1, 0x30
 /* 8019D5D4 00199414  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252296
 $$252296:
 	.incbin "baserom.dol", 0x452A20, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250553
 $$250553:
 	.incbin "baserom.dol", 0x493210, 0x4
@@ -1339,7 +1339,7 @@ $$250606:
 $$250607:
 	.incbin "baserom.dol", 0x493224, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250642
 $$250642:
 	.incbin "baserom.dol", 0x49A320, 0x4

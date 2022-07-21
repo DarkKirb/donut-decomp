@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q23scn6IScene$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q23scn6IScene$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80174CEC 00170B2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1555,7 +1555,7 @@ $$24$$2__dt__Q23app7AppImplFv:
 /* 80176260 001720A0  38 63 FF FC */	addi r3, r3, -4
 /* 80176264 001720A4  4B FF F1 00 */	b __dt__Q23app7AppImplFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23app7AppImpl
 __vt__Q23app7AppImpl:
 	.incbin "baserom.dol", 0x44EC00, 0x1C

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global explainData__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2FQ33scn4step13ChallengeKind
 explainData__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2FQ33scn4step13ChallengeKind:
 /* 803BD338 003B9178  1C C4 00 14 */	mulli r6, r4, 0x14
@@ -188,7 +188,7 @@ MedalToGrade__Q53scn4step4info5lvmap11ExplainUtilFQ33scn4step18ChallengeMedalKin
 /* 803BD580 003B93C0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803BD584 003B93C4  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global explainDataTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2
 explainDataTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
 	.incbin "baserom.dol", 0x41C028, 0x140
@@ -199,7 +199,7 @@ explainPathTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
 medalToGradeTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
 	.incbin "baserom.dol", 0x41C1E8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248733
 $$248733:
 	.incbin "baserom.dol", 0x48D5A0, 0xC
@@ -336,7 +336,7 @@ medalNameTbl__Q53scn4step4info5lvmap25$$2unnamed$$2ExplainUtil_cpp$$2:
 $$249054:
 	.incbin "baserom.dol", 0x48D7F8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248736
 $$248736:
 	.incbin "baserom.dol", 0x497F50, 0x8

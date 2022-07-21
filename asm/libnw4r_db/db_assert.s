@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Panic__Q24nw4r2dbFPCciPCce
 Panic__Q24nw4r2dbFPCciPCce:
 /* 80128350 00124190  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -179,12 +179,12 @@ WarningAlarmFunc___Q24nw4r2dbFP7OSAlarmP9OSContext:
 /* 801285C8 00124408  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 801285CC 0012440C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$26682
 $$26682:
 	.incbin "baserom.dol", 0x43EAA8, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global sDispWarningAuto__Q24nw4r2db
 sDispWarningAuto__Q24nw4r2db:
 	.incbin "baserom.dol", 0x492E70, 0x4

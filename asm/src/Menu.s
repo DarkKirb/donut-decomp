@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn9grandmenu4menu4MenuFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorQ33scn9grandmenu8ModeKindb
 __ct__Q43scn9grandmenu4menu4MenuFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorQ33scn9grandmenu8ModeKindb:
 /* 803F6188 003F1FC8  94 21 FC B0 */	stwu r1, -0x350(r1)
@@ -1867,7 +1867,7 @@ lbl_803F7B84:
 /* 803F7B98 003F39D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F7B9C 003F39DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global t_ModeItemSetList__18$$2unnamed$$2Menu_cpp$$2
 t_ModeItemSetList__18$$2unnamed$$2Menu_cpp$$2:
 	.incbin "baserom.dol", 0x491B58, 0x10
@@ -1905,7 +1905,7 @@ $$255946:
 $$255947:
 	.incbin "baserom.dol", 0x491C4C, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255668
 $$255668:
 	.incbin "baserom.dol", 0x498978, 0x8
@@ -1946,7 +1946,7 @@ $$256101:
 $$256102:
 	.incbin "baserom.dol", 0x4989D0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256090
 $$256090:
 	.incbin "baserom.dol", 0x49ED80, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn7history6detail16MusicCheckWindowFRQ23mem10IAllocator
 __ct__Q43scn7history6detail16MusicCheckWindowFRQ23mem10IAllocator:
 /* 802174D4 00213314  94 21 FD 40 */	stwu r1, -0x2c0(r1)
@@ -758,7 +758,7 @@ lbl_80217F9C:
 /* 80217FAC 00213DEC  38 21 00 40 */	addi r1, r1, 0x40
 /* 80217FB0 00213DF0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253274
 $$253274:
 	.incbin "baserom.dol", 0x45EA90, 0x14
@@ -796,7 +796,7 @@ $$253392:
 $$253458:
 	.incbin "baserom.dol", 0x45EB38, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253280
 $$253280:
 	.incbin "baserom.dol", 0x494D60, 0x8

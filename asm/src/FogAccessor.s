@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d11FogAccessorFRCQ34nw4r3g3d3Fog
 __ct__Q23g3d11FogAccessorFRCQ34nw4r3g3d3Fog:
 /* 8018E44C 0018A28C  80 04 00 00 */	lwz r0, 0(r4)
@@ -148,7 +148,7 @@ lbl_8018E624:
 /* 8018E634 0018A474  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E638 0018A478  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType$$20
 $$2STRING$$2SetFogType__Q34nw4r3g3d3FogF10_GXFogType$$20:
 	.incbin "baserom.dol", 0x450550, 0x20

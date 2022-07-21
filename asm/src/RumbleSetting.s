@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn19challengefileselect13RumbleSettingFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ23hid13RumbleManager
 __ct__Q33scn19challengefileselect13RumbleSettingFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ23hid13RumbleManager:
 /* 801E43F4 001E0234  94 21 FF 20 */	stwu r1, -0xe0(r1)
@@ -405,7 +405,7 @@ lbl_801E4994:
 /* 801E49B4 001E07F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801E49B8 001E07F8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252673
 $$252673:
 	.incbin "baserom.dol", 0x45A3D0, 0x1C
@@ -431,7 +431,7 @@ $$252679:
 $$252680:
 	.incbin "baserom.dol", 0x45A43C, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252745
 $$252745:
 	.incbin "baserom.dol", 0x493F60, 0x8

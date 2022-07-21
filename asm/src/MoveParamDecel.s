@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Zero__Q24gobj14MoveParamDecelFv
 Zero__Q24gobj14MoveParamDecelFv:
 /* 8019B9F4 00197834  C0 22 98 20 */	lfs f1, $$248779-_SDA2_BASE_(r2)
@@ -14,7 +14,7 @@ Create__Q24gobj14MoveParamDecelFf:
 /* 8019BA08 00197848  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019BA0C 0019784C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248779
 $$248779:
 	.incbin "baserom.dol", 0x49A2E0, 0x8

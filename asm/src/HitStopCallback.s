@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss15HitStopCallbackFRQ43scn4step4boss4Boss
 __ct__Q43scn4step4boss15HitStopCallbackFRQ43scn4step4boss4Boss:
 /* 80230A94 0022C8D4  3C A0 80 46 */	lis r5, __vt__Q43scn4step4boss15HitStopCallback@ha
@@ -98,7 +98,7 @@ onEnd__Q43scn4step4boss15HitStopCallbackFv:
 /* 80230BDC 0022CA1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80230BE0 0022CA20  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy15HitStopCallbackFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy15HitStopCallbackFRQ43scn4step5enemy5Enemy:
 /* 80288A20 00284860  3C A0 80 47 */	lis r5, __vt__Q43scn4step5enemy15HitStopCallback@ha
@@ -149,7 +149,7 @@ onEnd__Q43scn4step5enemy15HitStopCallbackFv:
 /* 80288AB0 002848F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80288AB4 002848F4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero15HitStopCallbackFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero15HitStopCallbackFRQ43scn4step4hero4Hero:
 /* 80340ED0 0033CD10  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero15HitStopCallback@ha
@@ -206,7 +206,7 @@ onEnd__Q43scn4step4hero15HitStopCallbackFv:
 /* 80340F78 0033CDB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 80340F7C 0033CDBC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon15HitStopCallbackFRQ43scn4step6weapon6Weapon
 __ct__Q43scn4step6weapon15HitStopCallbackFRQ43scn4step6weapon6Weapon:
 /* 803D64CC 003D230C  3C A0 80 49 */	lis r5, __vt__Q43scn4step6weapon15HitStopCallback@ha
@@ -257,22 +257,22 @@ onEnd__Q43scn4step6weapon15HitStopCallbackFv:
 /* 803D655C 003D239C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D6560 003D23A0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4boss15HitStopCallback
 __vt__Q43scn4step4boss15HitStopCallback:
 	.incbin "baserom.dol", 0x4606B8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy15HitStopCallback
 __vt__Q43scn4step5enemy15HitStopCallback:
 	.incbin "baserom.dol", 0x46E000, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step4hero15HitStopCallback
 __vt__Q43scn4step4hero15HitStopCallback:
 	.incbin "baserom.dol", 0x480D68, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step6weapon15HitStopCallback
 __vt__Q43scn4step6weapon15HitStopCallback:
 	.incbin "baserom.dol", 0x48F8B0, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail10LadderInfoFv
 __ct__Q35mcoll6detail10LadderInfoFv:
 /* 801B789C 001B36DC  38 00 00 00 */	li r0, 0
@@ -33,7 +33,7 @@ leftBottomPos__Q35mcoll6detail10LadderInfoCFv:
 /* 801B78F0 001B3730  38 84 00 04 */	addi r4, r4, 4
 /* 801B78F4 001B3734  4B F9 40 74 */	b __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249664
 $$249664:
 	.incbin "baserom.dol", 0x49A5A0, 0x8

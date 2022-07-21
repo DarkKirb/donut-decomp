@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ORDER_SET_WIDEHEIGHT__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2FUsf
 ORDER_SET_WIDEHEIGHT__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2FUsf:
 /* 8030378C 002FF5CC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -753,10 +753,10 @@ __sinit_$$3VariationDemo_cpp:
 /* 80304228 00300068  38 21 00 80 */	addi r1, r1, 0x80
 /* 8030422C 0030006C  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025A4, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$254361
 $$254361:
 	.incbin "baserom.dol", 0x4159F8, 0xC
@@ -785,7 +785,7 @@ $$254563:
 $$254574:
 	.incbin "baserom.dol", 0x415A58, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global datTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2
 datTbl__Q53scn4step7gimmick10cameralock27$$2unnamed$$2VariationDemo_cpp$$2:
 	.incbin "baserom.dol", 0x47C3E8, 0x30
@@ -799,7 +799,7 @@ $$255233:
 __vt__Q53scn4step7gimmick10cameralock13VariationDemo:
 	.incbin "baserom.dol", 0x47C4A0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255183
 $$255183:
 	.incbin "baserom.dol", 0x49D240, 0x4

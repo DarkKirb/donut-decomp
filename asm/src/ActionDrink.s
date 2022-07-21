@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick10guideboard11ActionDrinkFRQ53scn4step7gimmick10guideboard10GuideBoard
 __ct__Q53scn4step7gimmick10guideboard11ActionDrinkFRQ53scn4step7gimmick10guideboard10GuideBoard:
 /* 8031057C 0030C3BC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -323,7 +323,7 @@ lbl_803109C0:
 /* 803109F4 0030C834  38 21 00 70 */	addi r1, r1, 0x70
 /* 803109F8 0030C838  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252912
 $$252912:
 	.incbin "baserom.dol", 0x47D478, 0xC
@@ -334,7 +334,7 @@ $$252932:
 __vt__Q53scn4step7gimmick10guideboard11ActionDrink:
 	.incbin "baserom.dol", 0x47D490, 0x48
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252894
 $$252894:
 	.incbin "baserom.dol", 0x496B08, 0x8

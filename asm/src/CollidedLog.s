@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q35mcoll6detail11CollidedLogFv
 __ct__Q35mcoll6detail11CollidedLogFv:
 /* 801B6B0C 001B294C  94 21 FF F0 */	stwu r1, -0x10(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23snd11SERequestorFv
 __ct__Q23snd11SERequestorFv:
 /* 80402A6C 003FE8AC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -348,7 +348,7 @@ updateOutput__Q23snd11SERequestorFv:
 /* 80402ED8 003FED18  4B D0 3A 28 */	b SetOutputLine__Q44nw4r3snd6detail10BasicSoundFi
 /* 80402EDC 003FED1C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut79LinkList$$0Q24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util58ObjListNode$$0Q23snd11SERequestor$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x4926D0, 0x24

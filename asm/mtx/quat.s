@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global PSQUATMultiply
 PSQUATMultiply:
 /* 800317B0 0002D5F0  E0 03 00 00 */	psq_l f0, 0(r3), 0, qr0
@@ -305,12 +305,12 @@ lbl_80031B80:
 /* 80031C18 0002DA58  4E 80 00 20 */	blr 
 /* 80031C1C 0002DA5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$21420
 $$21420:
 	.incbin "baserom.dol", 0x403940, 0x10
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21598
 $$21598:
 	.incbin "baserom.dol", 0x4990B8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nrel6devkit7heapmap14ExpHeapMapUserFP12MEMiHeapHeadPCc
 __ct__Q44nrel6devkit7heapmap14ExpHeapMapUserFP12MEMiHeapHeadPCc:
 /* 8014B97C 001477BC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -239,7 +239,7 @@ lbl_8014BC50:
 /* 8014BC64 00147AA4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014BC68 00147AA8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __vt__Q44nrel6devkit7heapmap14ExpHeapMapUser:
 	.incbin "baserom.dol", 0x442D58, 0x30
@@ -262,7 +262,7 @@ $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv$$20:
 $$2STRING$$2next__Q34nrel3mem20ExpHeapBlockIteratorCFv:
 	.incbin "baserom.dol", 0x442E38, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
 __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser:
 	.incbin "baserom.dol", 0x492E78, 0x8

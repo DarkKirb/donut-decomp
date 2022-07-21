@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss5ParamFv
 __ct__Q43scn4step4boss5ParamFv:
 /* 802339DC 0022F81C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -74,7 +74,7 @@ bonkers__Q43scn4step4boss5ParamCFv:
 /* 80233AE0 0022F920  4B FA 68 BD */	bl loadCheck__Q25param8JITParamCFv
 /* 80233AE4 0022F924  80 7F 00 08 */	lwz r3, 8(r31)
 /* 80233AE8 0022F928  38 63 00 04 */	addi r3, r3, 4
-/* 80233AEC 0022F92C  4B FD A4 95 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233AEC 0022F92C  4B FD A4 95 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233AF0 0022F930  7C 7F 1B 78 */	mr r31, r3
 /* 80233AF4 0022F934  80 63 00 EC */	lwz r3, 0xec(r3)
 /* 80233AF8 0022F938  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -100,7 +100,7 @@ challengemaster__Q43scn4step4boss5ParamCFv:
 /* 80233B38 0022F978  4B FA 68 65 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233B3C 0022F97C  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 80233B40 0022F980  38 63 00 04 */	addi r3, r3, 4
-/* 80233B44 0022F984  4B FD A4 3D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233B44 0022F984  4B FD A4 3D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233B48 0022F988  7C 7F 1B 78 */	mr r31, r3
 /* 80233B4C 0022F98C  80 63 01 9C */	lwz r3, 0x19c(r3)
 /* 80233B50 0022F990  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -126,7 +126,7 @@ common__Q43scn4step4boss5ParamCFv:
 /* 80233B90 0022F9D0  4B FA 68 0D */	bl loadCheck__Q25param8JITParamCFv
 /* 80233B94 0022F9D4  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 80233B98 0022F9D8  38 63 00 04 */	addi r3, r3, 4
-/* 80233B9C 0022F9DC  4B FD A3 E5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233B9C 0022F9DC  4B FD A3 E5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233BA0 0022F9E0  7C 7F 1B 78 */	mr r31, r3
 /* 80233BA4 0022F9E4  80 63 00 AC */	lwz r3, 0xac(r3)
 /* 80233BA8 0022F9E8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -152,7 +152,7 @@ creditdedede__Q43scn4step4boss5ParamCFv:
 /* 80233BE8 0022FA28  4B FA 67 B5 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233BEC 0022FA2C  80 7F 00 38 */	lwz r3, 0x38(r31)
 /* 80233BF0 0022FA30  38 63 00 04 */	addi r3, r3, 4
-/* 80233BF4 0022FA34  4B FD A3 8D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233BF4 0022FA34  4B FD A3 8D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233BF8 0022FA38  7C 7F 1B 78 */	mr r31, r3
 /* 80233BFC 0022FA3C  80 63 00 3C */	lwz r3, 0x3c(r3)
 /* 80233C00 0022FA40  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -178,7 +178,7 @@ creditdee__Q43scn4step4boss5ParamCFv:
 /* 80233C40 0022FA80  4B FA 67 5D */	bl loadCheck__Q25param8JITParamCFv
 /* 80233C44 0022FA84  80 7F 00 48 */	lwz r3, 0x48(r31)
 /* 80233C48 0022FA88  38 63 00 04 */	addi r3, r3, 4
-/* 80233C4C 0022FA8C  4B FD A3 35 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233C4C 0022FA8C  4B FD A3 35 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233C50 0022FA90  7C 7F 1B 78 */	mr r31, r3
 /* 80233C54 0022FA94  80 63 00 60 */	lwz r3, 0x60(r3)
 /* 80233C58 0022FA98  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -204,7 +204,7 @@ creditmeta__Q43scn4step4boss5ParamCFv:
 /* 80233C98 0022FAD8  4B FA 67 05 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233C9C 0022FADC  80 7F 00 58 */	lwz r3, 0x58(r31)
 /* 80233CA0 0022FAE0  38 63 00 04 */	addi r3, r3, 4
-/* 80233CA4 0022FAE4  4B FD A2 DD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233CA4 0022FAE4  4B FD A2 DD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233CA8 0022FAE8  7C 7F 1B 78 */	mr r31, r3
 /* 80233CAC 0022FAEC  80 63 00 84 */	lwz r3, 0x84(r3)
 /* 80233CB0 0022FAF0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -230,7 +230,7 @@ creditroah__Q43scn4step4boss5ParamCFv:
 /* 80233CF0 0022FB30  4B FA 66 AD */	bl loadCheck__Q25param8JITParamCFv
 /* 80233CF4 0022FB34  80 7F 00 68 */	lwz r3, 0x68(r31)
 /* 80233CF8 0022FB38  38 63 00 04 */	addi r3, r3, 4
-/* 80233CFC 0022FB3C  4B FD A2 85 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233CFC 0022FB3C  4B FD A2 85 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233D00 0022FB40  7C 7F 1B 78 */	mr r31, r3
 /* 80233D04 0022FB44  80 63 00 5C */	lwz r3, 0x5c(r3)
 /* 80233D08 0022FB48  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -256,7 +256,7 @@ dubior__Q43scn4step4boss5ParamCFv:
 /* 80233D48 0022FB88  4B FA 66 55 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233D4C 0022FB8C  80 7F 00 78 */	lwz r3, 0x78(r31)
 /* 80233D50 0022FB90  38 63 00 04 */	addi r3, r3, 4
-/* 80233D54 0022FB94  4B FD A2 2D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233D54 0022FB94  4B FD A2 2D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233D58 0022FB98  7C 7F 1B 78 */	mr r31, r3
 /* 80233D5C 0022FB9C  80 63 01 04 */	lwz r3, 0x104(r3)
 /* 80233D60 0022FBA0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -282,7 +282,7 @@ gigantedge__Q43scn4step4boss5ParamCFv:
 /* 80233DA0 0022FBE0  4B FA 65 FD */	bl loadCheck__Q25param8JITParamCFv
 /* 80233DA4 0022FBE4  80 7F 00 88 */	lwz r3, 0x88(r31)
 /* 80233DA8 0022FBE8  38 63 00 04 */	addi r3, r3, 4
-/* 80233DAC 0022FBEC  4B FD A1 D5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233DAC 0022FBEC  4B FD A1 D5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233DB0 0022FBF0  7C 7F 1B 78 */	mr r31, r3
 /* 80233DB4 0022FBF4  80 63 00 DC */	lwz r3, 0xdc(r3)
 /* 80233DB8 0022FBF8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -308,7 +308,7 @@ kingsdoo__Q43scn4step4boss5ParamCFv:
 /* 80233DF8 0022FC38  4B FA 65 A5 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233DFC 0022FC3C  80 7F 00 98 */	lwz r3, 0x98(r31)
 /* 80233E00 0022FC40  38 63 00 04 */	addi r3, r3, 4
-/* 80233E04 0022FC44  4B FD A1 7D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233E04 0022FC44  4B FD A1 7D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233E08 0022FC48  7C 7F 1B 78 */	mr r31, r3
 /* 80233E0C 0022FC4C  80 63 00 C0 */	lwz r3, 0xc0(r3)
 /* 80233E10 0022FC50  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -334,7 +334,7 @@ moundeath__Q43scn4step4boss5ParamCFv:
 /* 80233E50 0022FC90  4B FA 65 4D */	bl loadCheck__Q25param8JITParamCFv
 /* 80233E54 0022FC94  80 7F 00 A8 */	lwz r3, 0xa8(r31)
 /* 80233E58 0022FC98  38 63 00 04 */	addi r3, r3, 4
-/* 80233E5C 0022FC9C  4B FD A1 25 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233E5C 0022FC9C  4B FD A1 25 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233E60 0022FCA0  7C 7F 1B 78 */	mr r31, r3
 /* 80233E64 0022FCA4  80 63 01 70 */	lwz r3, 0x170(r3)
 /* 80233E68 0022FCA8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -360,7 +360,7 @@ watergalboros__Q43scn4step4boss5ParamCFv:
 /* 80233EA8 0022FCE8  4B FA 64 F5 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233EAC 0022FCEC  80 7F 00 B8 */	lwz r3, 0xb8(r31)
 /* 80233EB0 0022FCF0  38 63 00 04 */	addi r3, r3, 4
-/* 80233EB4 0022FCF4  4B FD A0 CD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233EB4 0022FCF4  4B FD A0 CD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233EB8 0022FCF8  7C 7F 1B 78 */	mr r31, r3
 /* 80233EBC 0022FCFC  80 63 00 EC */	lwz r3, 0xec(r3)
 /* 80233EC0 0022FD00  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -386,7 +386,7 @@ whispy__Q43scn4step4boss5ParamCFv:
 /* 80233F00 0022FD40  4B FA 64 9D */	bl loadCheck__Q25param8JITParamCFv
 /* 80233F04 0022FD44  80 7F 00 C8 */	lwz r3, 0xc8(r31)
 /* 80233F08 0022FD48  38 63 00 04 */	addi r3, r3, 4
-/* 80233F0C 0022FD4C  4B FD A0 75 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233F0C 0022FD4C  4B FD A0 75 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233F10 0022FD50  7C 7F 1B 78 */	mr r31, r3
 /* 80233F14 0022FD54  80 63 01 B4 */	lwz r3, 0x1b4(r3)
 /* 80233F18 0022FD58  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -412,7 +412,7 @@ zankibble__Q43scn4step4boss5ParamCFv:
 /* 80233F58 0022FD98  4B FA 64 45 */	bl loadCheck__Q25param8JITParamCFv
 /* 80233F5C 0022FD9C  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 80233F60 0022FDA0  38 63 00 04 */	addi r3, r3, 4
-/* 80233F64 0022FDA4  4B FD A0 1D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80233F64 0022FDA4  4B FD A0 1D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80233F68 0022FDA8  7C 7F 1B 78 */	mr r31, r3
 /* 80233F6C 0022FDAC  80 63 00 C8 */	lwz r3, 0xc8(r3)
 /* 80233F70 0022FDB0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -427,7 +427,7 @@ lbl_80233F80:
 /* 80233F90 0022FDD0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80233F94 0022FDD4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy5ParamFv
 __ct__Q43scn4step5enemy5ParamFv:
 /* 8028C248 00288088  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -644,7 +644,7 @@ common__Q43scn4step5enemy5ParamCFv:
 /* 8028C588 002883C8  4B F4 DE 15 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C58C 002883CC  80 7F 00 04 */	lwz r3, 4(r31)
 /* 8028C590 002883D0  38 63 00 04 */	addi r3, r3, 4
-/* 8028C594 002883D4  4B F8 19 ED */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C594 002883D4  4B F8 19 ED */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C598 002883D8  7C 7F 1B 78 */	mr r31, r3
 /* 8028C59C 002883DC  80 63 00 98 */	lwz r3, 0x98(r3)
 /* 8028C5A0 002883E0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -670,7 +670,7 @@ sirkibble__Q43scn4step5enemy5ParamCFv:
 /* 8028C5E0 00288420  4B F4 DD BD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C5E4 00288424  80 7F 00 14 */	lwz r3, 0x14(r31)
 /* 8028C5E8 00288428  38 63 00 04 */	addi r3, r3, 4
-/* 8028C5EC 0028842C  4B F8 19 95 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C5EC 0028842C  4B F8 19 95 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C5F0 00288430  7C 7F 1B 78 */	mr r31, r3
 /* 8028C5F4 00288434  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 8028C5F8 00288438  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -696,7 +696,7 @@ brontoburt__Q43scn4step5enemy5ParamCFv:
 /* 8028C638 00288478  4B F4 DD 65 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C63C 0028847C  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 8028C640 00288480  38 63 00 04 */	addi r3, r3, 4
-/* 8028C644 00288484  4B F8 19 3D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C644 00288484  4B F8 19 3D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C648 00288488  7C 7F 1B 78 */	mr r31, r3
 /* 8028C64C 0028848C  80 63 00 60 */	lwz r3, 0x60(r3)
 /* 8028C650 00288490  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -722,7 +722,7 @@ waddledee__Q43scn4step5enemy5ParamCFv:
 /* 8028C690 002884D0  4B F4 DD 0D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C694 002884D4  80 7F 00 34 */	lwz r3, 0x34(r31)
 /* 8028C698 002884D8  38 63 00 04 */	addi r3, r3, 4
-/* 8028C69C 002884DC  4B F8 18 E5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C69C 002884DC  4B F8 18 E5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C6A0 002884E0  7C 7F 1B 78 */	mr r31, r3
 /* 8028C6A4 002884E4  80 63 00 84 */	lwz r3, 0x84(r3)
 /* 8028C6A8 002884E8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -748,7 +748,7 @@ bladeknight__Q43scn4step5enemy5ParamCFv:
 /* 8028C6E8 00288528  4B F4 DC B5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C6EC 0028852C  80 7F 00 44 */	lwz r3, 0x44(r31)
 /* 8028C6F0 00288530  38 63 00 04 */	addi r3, r3, 4
-/* 8028C6F4 00288534  4B F8 18 8D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C6F4 00288534  4B F8 18 8D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C6F8 00288538  7C 7F 1B 78 */	mr r31, r3
 /* 8028C6FC 0028853C  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8028C700 00288540  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -774,7 +774,7 @@ cappy__Q43scn4step5enemy5ParamCFv:
 /* 8028C740 00288580  4B F4 DC 5D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C744 00288584  80 7F 00 54 */	lwz r3, 0x54(r31)
 /* 8028C748 00288588  38 63 00 04 */	addi r3, r3, 4
-/* 8028C74C 0028858C  4B F8 18 35 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C74C 0028858C  4B F8 18 35 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C750 00288590  7C 7F 1B 78 */	mr r31, r3
 /* 8028C754 00288594  80 63 00 38 */	lwz r3, 0x38(r3)
 /* 8028C758 00288598  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -800,7 +800,7 @@ hothead__Q43scn4step5enemy5ParamCFv:
 /* 8028C798 002885D8  4B F4 DC 05 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C79C 002885DC  80 7F 00 64 */	lwz r3, 0x64(r31)
 /* 8028C7A0 002885E0  38 63 00 04 */	addi r3, r3, 4
-/* 8028C7A4 002885E4  4B F8 17 DD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C7A4 002885E4  4B F8 17 DD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C7A8 002885E8  7C 7F 1B 78 */	mr r31, r3
 /* 8028C7AC 002885EC  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 8028C7B0 002885F0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -826,7 +826,7 @@ knucklejoe__Q43scn4step5enemy5ParamCFv:
 /* 8028C7F0 00288630  4B F4 DB AD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C7F4 00288634  80 7F 00 74 */	lwz r3, 0x74(r31)
 /* 8028C7F8 00288638  38 63 00 04 */	addi r3, r3, 4
-/* 8028C7FC 0028863C  4B F8 17 85 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C7FC 0028863C  4B F8 17 85 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C800 00288640  7C 7F 1B 78 */	mr r31, r3
 /* 8028C804 00288644  80 63 00 68 */	lwz r3, 0x68(r3)
 /* 8028C808 00288648  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -852,7 +852,7 @@ como__Q43scn4step5enemy5ParamCFv:
 /* 8028C848 00288688  4B F4 DB 55 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C84C 0028868C  80 7F 00 A4 */	lwz r3, 0xa4(r31)
 /* 8028C850 00288690  38 63 00 04 */	addi r3, r3, 4
-/* 8028C854 00288694  4B F8 17 2D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C854 00288694  4B F8 17 2D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C858 00288698  7C 7F 1B 78 */	mr r31, r3
 /* 8028C85C 0028869C  80 63 00 4C */	lwz r3, 0x4c(r3)
 /* 8028C860 002886A0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -878,7 +878,7 @@ gordo__Q43scn4step5enemy5ParamCFv:
 /* 8028C8A0 002886E0  4B F4 DA FD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C8A4 002886E4  80 7F 00 B4 */	lwz r3, 0xb4(r31)
 /* 8028C8A8 002886E8  38 63 00 04 */	addi r3, r3, 4
-/* 8028C8AC 002886EC  4B F8 16 D5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C8AC 002886EC  4B F8 16 D5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C8B0 002886F0  7C 7F 1B 78 */	mr r31, r3
 /* 8028C8B4 002886F4  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 8028C8B8 002886F8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -904,7 +904,7 @@ whippy__Q43scn4step5enemy5ParamCFv:
 /* 8028C8F8 00288738  4B F4 DA A5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C8FC 0028873C  80 7F 00 C4 */	lwz r3, 0xc4(r31)
 /* 8028C900 00288740  38 63 00 04 */	addi r3, r3, 4
-/* 8028C904 00288744  4B F8 16 7D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C904 00288744  4B F8 16 7D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C908 00288748  7C 7F 1B 78 */	mr r31, r3
 /* 8028C90C 0028874C  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8028C910 00288750  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -930,7 +930,7 @@ shotzo__Q43scn4step5enemy5ParamCFv:
 /* 8028C950 00288790  4B F4 DA 4D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C954 00288794  80 7F 00 D4 */	lwz r3, 0xd4(r31)
 /* 8028C958 00288798  38 63 00 04 */	addi r3, r3, 4
-/* 8028C95C 0028879C  4B F8 16 25 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C95C 0028879C  4B F8 16 25 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C960 002887A0  7C 7F 1B 78 */	mr r31, r3
 /* 8028C964 002887A4  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8028C968 002887A8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -956,7 +956,7 @@ leafan__Q43scn4step5enemy5ParamCFv:
 /* 8028C9A8 002887E8  4B F4 D9 F5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028C9AC 002887EC  80 7F 00 E4 */	lwz r3, 0xe4(r31)
 /* 8028C9B0 002887F0  38 63 00 04 */	addi r3, r3, 4
-/* 8028C9B4 002887F4  4B F8 15 CD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028C9B4 002887F4  4B F8 15 CD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028C9B8 002887F8  7C 7F 1B 78 */	mr r31, r3
 /* 8028C9BC 002887FC  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 8028C9C0 00288800  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -982,7 +982,7 @@ waddledoo__Q43scn4step5enemy5ParamCFv:
 /* 8028CA00 00288840  4B F4 D9 9D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CA04 00288844  80 7F 00 F4 */	lwz r3, 0xf4(r31)
 /* 8028CA08 00288848  38 63 00 04 */	addi r3, r3, 4
-/* 8028CA0C 0028884C  4B F8 15 75 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CA0C 0028884C  4B F8 15 75 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CA10 00288850  7C 7F 1B 78 */	mr r31, r3
 /* 8028CA14 00288854  80 63 00 1C */	lwz r3, 0x1c(r3)
 /* 8028CA18 00288858  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1008,7 +1008,7 @@ bouncy__Q43scn4step5enemy5ParamCFv:
 /* 8028CA58 00288898  4B F4 D9 45 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CA5C 0028889C  80 7F 01 04 */	lwz r3, 0x104(r31)
 /* 8028CA60 002888A0  38 63 00 04 */	addi r3, r3, 4
-/* 8028CA64 002888A4  4B F8 15 1D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CA64 002888A4  4B F8 15 1D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CA68 002888A8  7C 7F 1B 78 */	mr r31, r3
 /* 8028CA6C 002888AC  80 63 00 38 */	lwz r3, 0x38(r3)
 /* 8028CA70 002888B0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1034,7 +1034,7 @@ sparky__Q43scn4step5enemy5ParamCFv:
 /* 8028CAB0 002888F0  4B F4 D8 ED */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CAB4 002888F4  80 7F 01 14 */	lwz r3, 0x114(r31)
 /* 8028CAB8 002888F8  38 63 00 04 */	addi r3, r3, 4
-/* 8028CABC 002888FC  4B F8 14 C5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CABC 002888FC  4B F8 14 C5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CAC0 00288900  7C 7F 1B 78 */	mr r31, r3
 /* 8028CAC4 00288904  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 8028CAC8 00288908  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1060,7 +1060,7 @@ needlous__Q43scn4step5enemy5ParamCFv:
 /* 8028CB08 00288948  4B F4 D8 95 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CB0C 0028894C  80 7F 01 24 */	lwz r3, 0x124(r31)
 /* 8028CB10 00288950  38 63 00 04 */	addi r3, r3, 4
-/* 8028CB14 00288954  4B F8 14 6D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CB14 00288954  4B F8 14 6D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CB18 00288958  7C 7F 1B 78 */	mr r31, r3
 /* 8028CB1C 0028895C  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8028CB20 00288960  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1086,7 +1086,7 @@ broomhatter__Q43scn4step5enemy5ParamCFv:
 /* 8028CB60 002889A0  4B F4 D8 3D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CB64 002889A4  80 7F 01 34 */	lwz r3, 0x134(r31)
 /* 8028CB68 002889A8  38 63 00 04 */	addi r3, r3, 4
-/* 8028CB6C 002889AC  4B F8 14 15 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CB6C 002889AC  4B F8 14 15 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CB70 002889B0  7C 7F 1B 78 */	mr r31, r3
 /* 8028CB74 002889B4  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8028CB78 002889B8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1112,7 +1112,7 @@ scarfy__Q43scn4step5enemy5ParamCFv:
 /* 8028CBB8 002889F8  4B F4 D7 E5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CBBC 002889FC  80 7F 01 44 */	lwz r3, 0x144(r31)
 /* 8028CBC0 00288A00  38 63 00 04 */	addi r3, r3, 4
-/* 8028CBC4 00288A04  4B F8 13 BD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CBC4 00288A04  4B F8 13 BD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CBC8 00288A08  7C 7F 1B 78 */	mr r31, r3
 /* 8028CBCC 00288A0C  80 63 00 C8 */	lwz r3, 0xc8(r3)
 /* 8028CBD0 00288A10  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1138,7 +1138,7 @@ nruff__Q43scn4step5enemy5ParamCFv:
 /* 8028CC10 00288A50  4B F4 D7 8D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CC14 00288A54  80 7F 01 54 */	lwz r3, 0x154(r31)
 /* 8028CC18 00288A58  38 63 00 04 */	addi r3, r3, 4
-/* 8028CC1C 00288A5C  4B F8 13 65 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CC1C 00288A5C  4B F8 13 65 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CC20 00288A60  7C 7F 1B 78 */	mr r31, r3
 /* 8028CC24 00288A64  80 63 00 9C */	lwz r3, 0x9c(r3)
 /* 8028CC28 00288A68  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1164,7 +1164,7 @@ flamer__Q43scn4step5enemy5ParamCFv:
 /* 8028CC68 00288AA8  4B F4 D7 35 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CC6C 00288AAC  80 7F 01 64 */	lwz r3, 0x164(r31)
 /* 8028CC70 00288AB0  38 63 00 04 */	addi r3, r3, 4
-/* 8028CC74 00288AB4  4B F8 13 0D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CC74 00288AB4  4B F8 13 0D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CC78 00288AB8  7C 7F 1B 78 */	mr r31, r3
 /* 8028CC7C 00288ABC  80 63 00 88 */	lwz r3, 0x88(r3)
 /* 8028CC80 00288AC0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1190,7 +1190,7 @@ watergalbo__Q43scn4step5enemy5ParamCFv:
 /* 8028CCC0 00288B00  4B F4 D6 DD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CCC4 00288B04  80 7F 01 74 */	lwz r3, 0x174(r31)
 /* 8028CCC8 00288B08  38 63 00 04 */	addi r3, r3, 4
-/* 8028CCCC 00288B0C  4B F8 12 B5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CCCC 00288B0C  4B F8 12 B5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CCD0 00288B10  7C 7F 1B 78 */	mr r31, r3
 /* 8028CCD4 00288B14  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8028CCD8 00288B18  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1216,7 +1216,7 @@ rocky__Q43scn4step5enemy5ParamCFv:
 /* 8028CD18 00288B58  4B F4 D6 85 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CD1C 00288B5C  80 7F 01 84 */	lwz r3, 0x184(r31)
 /* 8028CD20 00288B60  38 63 00 04 */	addi r3, r3, 4
-/* 8028CD24 00288B64  4B F8 12 5D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CD24 00288B64  4B F8 12 5D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CD28 00288B68  7C 7F 1B 78 */	mr r31, r3
 /* 8028CD2C 00288B6C  80 63 00 C4 */	lwz r3, 0xc4(r3)
 /* 8028CD30 00288B70  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1242,7 +1242,7 @@ poppybrojr__Q43scn4step5enemy5ParamCFv:
 /* 8028CD70 00288BB0  4B F4 D6 2D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CD74 00288BB4  80 7F 01 94 */	lwz r3, 0x194(r31)
 /* 8028CD78 00288BB8  38 63 00 04 */	addi r3, r3, 4
-/* 8028CD7C 00288BBC  4B F8 12 05 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CD7C 00288BBC  4B F8 12 05 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CD80 00288BC0  7C 7F 1B 78 */	mr r31, r3
 /* 8028CD84 00288BC4  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 8028CD88 00288BC8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1268,7 +1268,7 @@ noddy__Q43scn4step5enemy5ParamCFv:
 /* 8028CDC8 00288C08  4B F4 D5 D5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CDCC 00288C0C  80 7F 01 A4 */	lwz r3, 0x1a4(r31)
 /* 8028CDD0 00288C10  38 63 00 04 */	addi r3, r3, 4
-/* 8028CDD4 00288C14  4B F8 11 AD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CDD4 00288C14  4B F8 11 AD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CDD8 00288C18  7C 7F 1B 78 */	mr r31, r3
 /* 8028CDDC 00288C1C  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8028CDE0 00288C20  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1294,7 +1294,7 @@ cerulean__Q43scn4step5enemy5ParamCFv:
 /* 8028CE20 00288C60  4B F4 D5 7D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CE24 00288C64  80 7F 01 B4 */	lwz r3, 0x1b4(r31)
 /* 8028CE28 00288C68  38 63 00 04 */	addi r3, r3, 4
-/* 8028CE2C 00288C6C  4B F8 11 55 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CE2C 00288C6C  4B F8 11 55 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CE30 00288C70  7C 7F 1B 78 */	mr r31, r3
 /* 8028CE34 00288C74  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8028CE38 00288C78  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1320,7 +1320,7 @@ blipper__Q43scn4step5enemy5ParamCFv:
 /* 8028CE78 00288CB8  4B F4 D5 25 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CE7C 00288CBC  80 7F 01 C4 */	lwz r3, 0x1c4(r31)
 /* 8028CE80 00288CC0  38 63 00 04 */	addi r3, r3, 4
-/* 8028CE84 00288CC4  4B F8 10 FD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CE84 00288CC4  4B F8 10 FD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CE88 00288CC8  7C 7F 1B 78 */	mr r31, r3
 /* 8028CE8C 00288CCC  80 63 00 64 */	lwz r3, 0x64(r3)
 /* 8028CE90 00288CD0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1346,7 +1346,7 @@ gigatzo__Q43scn4step5enemy5ParamCFv:
 /* 8028CED0 00288D10  4B F4 D4 CD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CED4 00288D14  80 7F 01 D4 */	lwz r3, 0x1d4(r31)
 /* 8028CED8 00288D18  38 63 00 04 */	addi r3, r3, 4
-/* 8028CEDC 00288D1C  4B F8 10 A5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CEDC 00288D1C  4B F8 10 A5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CEE0 00288D20  7C 7F 1B 78 */	mr r31, r3
 /* 8028CEE4 00288D24  80 63 00 84 */	lwz r3, 0x84(r3)
 /* 8028CEE8 00288D28  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1372,7 +1372,7 @@ sisterbound__Q43scn4step5enemy5ParamCFv:
 /* 8028CF28 00288D68  4B F4 D4 75 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CF2C 00288D6C  80 7F 01 E4 */	lwz r3, 0x1e4(r31)
 /* 8028CF30 00288D70  38 63 00 04 */	addi r3, r3, 4
-/* 8028CF34 00288D74  4B F8 10 4D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CF34 00288D74  4B F8 10 4D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CF38 00288D78  7C 7F 1B 78 */	mr r31, r3
 /* 8028CF3C 00288D7C  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8028CF40 00288D80  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1398,7 +1398,7 @@ rollball__Q43scn4step5enemy5ParamCFv:
 /* 8028CF80 00288DC0  4B F4 D4 1D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CF84 00288DC4  80 7F 01 F4 */	lwz r3, 0x1f4(r31)
 /* 8028CF88 00288DC8  38 63 00 04 */	addi r3, r3, 4
-/* 8028CF8C 00288DCC  4B F8 0F F5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CF8C 00288DCC  4B F8 0F F5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CF90 00288DD0  7C 7F 1B 78 */	mr r31, r3
 /* 8028CF94 00288DD4  80 63 00 70 */	lwz r3, 0x70(r3)
 /* 8028CF98 00288DD8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1424,7 +1424,7 @@ mumbies__Q43scn4step5enemy5ParamCFv:
 /* 8028CFD8 00288E18  4B F4 D3 C5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028CFDC 00288E1C  80 7F 02 04 */	lwz r3, 0x204(r31)
 /* 8028CFE0 00288E20  38 63 00 04 */	addi r3, r3, 4
-/* 8028CFE4 00288E24  4B F8 0F 9D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028CFE4 00288E24  4B F8 0F 9D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028CFE8 00288E28  7C 7F 1B 78 */	mr r31, r3
 /* 8028CFEC 00288E2C  80 63 00 20 */	lwz r3, 0x20(r3)
 /* 8028CFF0 00288E30  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1450,7 +1450,7 @@ parasoldee__Q43scn4step5enemy5ParamCFv:
 /* 8028D030 00288E70  4B F4 D3 6D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D034 00288E74  80 7F 02 14 */	lwz r3, 0x214(r31)
 /* 8028D038 00288E78  38 63 00 04 */	addi r3, r3, 4
-/* 8028D03C 00288E7C  4B F8 0F 45 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D03C 00288E7C  4B F8 0F 45 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D040 00288E80  7C 7F 1B 78 */	mr r31, r3
 /* 8028D044 00288E84  80 63 00 7C */	lwz r3, 0x7c(r3)
 /* 8028D048 00288E88  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1476,7 +1476,7 @@ kabu__Q43scn4step5enemy5ParamCFv:
 /* 8028D088 00288EC8  4B F4 D3 15 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D08C 00288ECC  80 7F 02 24 */	lwz r3, 0x224(r31)
 /* 8028D090 00288ED0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D094 00288ED4  4B F8 0E ED */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D094 00288ED4  4B F8 0E ED */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D098 00288ED8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D09C 00288EDC  80 63 00 B8 */	lwz r3, 0xb8(r3)
 /* 8028D0A0 00288EE0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1502,7 +1502,7 @@ parasoldoo__Q43scn4step5enemy5ParamCFv:
 /* 8028D0E0 00288F20  4B F4 D2 BD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D0E4 00288F24  80 7F 02 34 */	lwz r3, 0x234(r31)
 /* 8028D0E8 00288F28  38 63 00 04 */	addi r3, r3, 4
-/* 8028D0EC 00288F2C  4B F8 0E 95 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D0EC 00288F2C  4B F8 0E 95 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D0F0 00288F30  7C 7F 1B 78 */	mr r31, r3
 /* 8028D0F4 00288F34  80 63 00 6C */	lwz r3, 0x6c(r3)
 /* 8028D0F8 00288F38  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1528,7 +1528,7 @@ foley__Q43scn4step5enemy5ParamCFv:
 /* 8028D138 00288F78  4B F4 D2 65 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D13C 00288F7C  80 7F 02 44 */	lwz r3, 0x244(r31)
 /* 8028D140 00288F80  38 63 00 04 */	addi r3, r3, 4
-/* 8028D144 00288F84  4B F8 0E 3D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D144 00288F84  4B F8 0E 3D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D148 00288F88  7C 7F 1B 78 */	mr r31, r3
 /* 8028D14C 00288F8C  80 63 00 5C */	lwz r3, 0x5c(r3)
 /* 8028D150 00288F90  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1554,7 +1554,7 @@ juckle__Q43scn4step5enemy5ParamCFv:
 /* 8028D190 00288FD0  4B F4 D2 0D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D194 00288FD4  80 7F 02 54 */	lwz r3, 0x254(r31)
 /* 8028D198 00288FD8  38 63 00 04 */	addi r3, r3, 4
-/* 8028D19C 00288FDC  4B F8 0D E5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D19C 00288FDC  4B F8 0D E5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D1A0 00288FE0  7C 7F 1B 78 */	mr r31, r3
 /* 8028D1A4 00288FE4  80 63 00 54 */	lwz r3, 0x54(r3)
 /* 8028D1A8 00288FE8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1580,7 +1580,7 @@ bowby__Q43scn4step5enemy5ParamCFv:
 /* 8028D1E8 00289028  4B F4 D1 B5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D1EC 0028902C  80 7F 02 64 */	lwz r3, 0x264(r31)
 /* 8028D1F0 00289030  38 63 00 04 */	addi r3, r3, 4
-/* 8028D1F4 00289034  4B F8 0D 8D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D1F4 00289034  4B F8 0D 8D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D1F8 00289038  7C 7F 1B 78 */	mr r31, r3
 /* 8028D1FC 0028903C  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8028D200 00289040  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1606,7 +1606,7 @@ owgulf__Q43scn4step5enemy5ParamCFv:
 /* 8028D240 00289080  4B F4 D1 5D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D244 00289084  80 7F 02 74 */	lwz r3, 0x274(r31)
 /* 8028D248 00289088  38 63 00 04 */	addi r3, r3, 4
-/* 8028D24C 0028908C  4B F8 0D 35 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D24C 0028908C  4B F8 0D 35 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D250 00289090  7C 7F 1B 78 */	mr r31, r3
 /* 8028D254 00289094  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 8028D258 00289098  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1632,7 +1632,7 @@ degout__Q43scn4step5enemy5ParamCFv:
 /* 8028D298 002890D8  4B F4 D1 05 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D29C 002890DC  80 7F 02 84 */	lwz r3, 0x284(r31)
 /* 8028D2A0 002890E0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D2A4 002890E4  4B F8 0C DD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D2A4 002890E4  4B F8 0C DD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D2A8 002890E8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D2AC 002890EC  80 63 00 5C */	lwz r3, 0x5c(r3)
 /* 8028D2B0 002890F0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1658,7 +1658,7 @@ sheld__Q43scn4step5enemy5ParamCFv:
 /* 8028D2F0 00289130  4B F4 D0 AD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D2F4 00289134  80 7F 02 94 */	lwz r3, 0x294(r31)
 /* 8028D2F8 00289138  38 63 00 04 */	addi r3, r3, 4
-/* 8028D2FC 0028913C  4B F8 0C 85 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D2FC 0028913C  4B F8 0C 85 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D300 00289140  7C 7F 1B 78 */	mr r31, r3
 /* 8028D304 00289144  80 63 00 88 */	lwz r3, 0x88(r3)
 /* 8028D308 00289148  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1684,7 +1684,7 @@ lanzer__Q43scn4step5enemy5ParamCFv:
 /* 8028D348 00289188  4B F4 D0 55 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D34C 0028918C  80 7F 02 A4 */	lwz r3, 0x2a4(r31)
 /* 8028D350 00289190  38 63 00 04 */	addi r3, r3, 4
-/* 8028D354 00289194  4B F8 0C 2D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D354 00289194  4B F8 0C 2D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D358 00289198  7C 7F 1B 78 */	mr r31, r3
 /* 8028D35C 0028919C  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8028D360 002891A0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1710,7 +1710,7 @@ chilly__Q43scn4step5enemy5ParamCFv:
 /* 8028D3A0 002891E0  4B F4 CF FD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D3A4 002891E4  80 7F 02 B4 */	lwz r3, 0x2b4(r31)
 /* 8028D3A8 002891E8  38 63 00 04 */	addi r3, r3, 4
-/* 8028D3AC 002891EC  4B F8 0B D5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D3AC 002891EC  4B F8 0B D5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D3B0 002891F0  7C 7F 1B 78 */	mr r31, r3
 /* 8028D3B4 002891F4  80 63 00 2C */	lwz r3, 0x2c(r3)
 /* 8028D3B8 002891F8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1736,7 +1736,7 @@ tsukikage__Q43scn4step5enemy5ParamCFv:
 /* 8028D3F8 00289238  4B F4 CF A5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D3FC 0028923C  80 7F 02 C4 */	lwz r3, 0x2c4(r31)
 /* 8028D400 00289240  38 63 00 04 */	addi r3, r3, 4
-/* 8028D404 00289244  4B F8 0B 7D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D404 00289244  4B F8 0B 7D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D408 00289248  7C 7F 1B 78 */	mr r31, r3
 /* 8028D40C 0028924C  80 63 00 90 */	lwz r3, 0x90(r3)
 /* 8028D410 00289250  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1762,7 +1762,7 @@ gemra__Q43scn4step5enemy5ParamCFv:
 /* 8028D450 00289290  4B F4 CF 4D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D454 00289294  80 7F 02 D4 */	lwz r3, 0x2d4(r31)
 /* 8028D458 00289298  38 63 00 04 */	addi r3, r3, 4
-/* 8028D45C 0028929C  4B F8 0B 25 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D45C 0028929C  4B F8 0B 25 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D460 002892A0  7C 7F 1B 78 */	mr r31, r3
 /* 8028D464 002892A4  80 63 00 30 */	lwz r3, 0x30(r3)
 /* 8028D468 002892A8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1788,7 +1788,7 @@ sodory__Q43scn4step5enemy5ParamCFv:
 /* 8028D4A8 002892E8  4B F4 CE F5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D4AC 002892EC  80 7F 02 E4 */	lwz r3, 0x2e4(r31)
 /* 8028D4B0 002892F0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D4B4 002892F4  4B F8 0A CD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D4B4 002892F4  4B F8 0A CD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D4B8 002892F8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D4BC 002892FC  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8028D4C0 00289300  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1814,7 +1814,7 @@ searches__Q43scn4step5enemy5ParamCFv:
 /* 8028D500 00289340  4B F4 CE 9D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D504 00289344  80 7F 02 F4 */	lwz r3, 0x2f4(r31)
 /* 8028D508 00289348  38 63 00 04 */	addi r3, r3, 4
-/* 8028D50C 0028934C  4B F8 0A 75 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D50C 0028934C  4B F8 0A 75 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D510 00289350  7C 7F 1B 78 */	mr r31, r3
 /* 8028D514 00289354  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8028D518 00289358  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1840,7 +1840,7 @@ pierce__Q43scn4step5enemy5ParamCFv:
 /* 8028D558 00289398  4B F4 CE 45 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D55C 0028939C  80 7F 03 04 */	lwz r3, 0x304(r31)
 /* 8028D560 002893A0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D564 002893A4  4B F8 0A 1D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D564 002893A4  4B F8 0A 1D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D568 002893A8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D56C 002893AC  80 63 00 4C */	lwz r3, 0x4c(r3)
 /* 8028D570 002893B0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1866,7 +1866,7 @@ elec__Q43scn4step5enemy5ParamCFv:
 /* 8028D5B0 002893F0  4B F4 CD ED */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D5B4 002893F4  80 7F 03 14 */	lwz r3, 0x314(r31)
 /* 8028D5B8 002893F8  38 63 00 04 */	addi r3, r3, 4
-/* 8028D5BC 002893FC  4B F8 09 C5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D5BC 002893FC  4B F8 09 C5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D5C0 00289400  7C 7F 1B 78 */	mr r31, r3
 /* 8028D5C4 00289404  80 63 00 64 */	lwz r3, 0x64(r3)
 /* 8028D5C8 00289408  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1892,7 +1892,7 @@ snowl__Q43scn4step5enemy5ParamCFv:
 /* 8028D608 00289448  4B F4 CD 95 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D60C 0028944C  80 7F 03 24 */	lwz r3, 0x324(r31)
 /* 8028D610 00289450  38 63 00 04 */	addi r3, r3, 4
-/* 8028D614 00289454  4B F8 09 6D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D614 00289454  4B F8 09 6D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D618 00289458  7C 7F 1B 78 */	mr r31, r3
 /* 8028D61C 0028945C  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 8028D620 00289460  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1918,7 +1918,7 @@ sun__Q43scn4step5enemy5ParamCFv:
 /* 8028D660 002894A0  4B F4 CD 3D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D664 002894A4  80 7F 03 34 */	lwz r3, 0x334(r31)
 /* 8028D668 002894A8  38 63 00 04 */	addi r3, r3, 4
-/* 8028D66C 002894AC  4B F8 09 15 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D66C 002894AC  4B F8 09 15 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D670 002894B0  7C 7F 1B 78 */	mr r31, r3
 /* 8028D674 002894B4  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8028D678 002894B8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1944,7 +1944,7 @@ sandbag__Q43scn4step5enemy5ParamCFv:
 /* 8028D6B8 002894F8  4B F4 CC E5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D6BC 002894FC  80 7F 03 44 */	lwz r3, 0x344(r31)
 /* 8028D6C0 00289500  38 63 00 04 */	addi r3, r3, 4
-/* 8028D6C4 00289504  4B F8 08 BD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D6C4 00289504  4B F8 08 BD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D6C8 00289508  7C 7F 1B 78 */	mr r31, r3
 /* 8028D6CC 0028950C  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8028D6D0 00289510  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1970,7 +1970,7 @@ stareffect__Q43scn4step5enemy5ParamCFv:
 /* 8028D710 00289550  4B F4 CC 8D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D714 00289554  80 7F 03 54 */	lwz r3, 0x354(r31)
 /* 8028D718 00289558  38 63 00 04 */	addi r3, r3, 4
-/* 8028D71C 0028955C  4B F8 08 65 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D71C 0028955C  4B F8 08 65 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D720 00289560  7C 7F 1B 78 */	mr r31, r3
 /* 8028D724 00289564  80 63 00 40 */	lwz r3, 0x40(r3)
 /* 8028D728 00289568  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -1996,7 +1996,7 @@ whispyapple__Q43scn4step5enemy5ParamCFv:
 /* 8028D768 002895A8  4B F4 CC 35 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D76C 002895AC  80 7F 03 74 */	lwz r3, 0x374(r31)
 /* 8028D770 002895B0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D774 002895B4  4B F8 08 0D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D774 002895B4  4B F8 08 0D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D778 002895B8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D77C 002895BC  80 63 00 88 */	lwz r3, 0x88(r3)
 /* 8028D780 002895C0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2022,7 +2022,7 @@ parasol__Q43scn4step5enemy5ParamCFv:
 /* 8028D7C0 00289600  4B F4 CB DD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D7C4 00289604  80 7F 03 84 */	lwz r3, 0x384(r31)
 /* 8028D7C8 00289608  38 63 00 04 */	addi r3, r3, 4
-/* 8028D7CC 0028960C  4B F8 07 B5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D7CC 0028960C  4B F8 07 B5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D7D0 00289610  7C 7F 1B 78 */	mr r31, r3
 /* 8028D7D4 00289614  80 63 00 1C */	lwz r3, 0x1c(r3)
 /* 8028D7D8 00289618  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2048,7 +2048,7 @@ dubiorjr__Q43scn4step5enemy5ParamCFv:
 /* 8028D818 00289658  4B F4 CB 85 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D81C 0028965C  80 7F 03 94 */	lwz r3, 0x394(r31)
 /* 8028D820 00289660  38 63 00 04 */	addi r3, r3, 4
-/* 8028D824 00289664  4B F8 07 5D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D824 00289664  4B F8 07 5D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D828 00289668  7C 7F 1B 78 */	mr r31, r3
 /* 8028D82C 0028966C  80 63 00 1C */	lwz r3, 0x1c(r3)
 /* 8028D830 00289670  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2074,7 +2074,7 @@ poppybrojrbomb__Q43scn4step5enemy5ParamCFv:
 /* 8028D870 002896B0  4B F4 CB 2D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D874 002896B4  80 7F 03 A4 */	lwz r3, 0x3a4(r31)
 /* 8028D878 002896B8  38 63 00 04 */	addi r3, r3, 4
-/* 8028D87C 002896BC  4B F8 07 05 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D87C 002896BC  4B F8 07 05 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D880 002896C0  7C 7F 1B 78 */	mr r31, r3
 /* 8028D884 002896C4  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8028D888 002896C8  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2100,7 +2100,7 @@ zankibblecutter__Q43scn4step5enemy5ParamCFv:
 /* 8028D8C8 00289708  4B F4 CA D5 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D8CC 0028970C  80 7F 03 B4 */	lwz r3, 0x3b4(r31)
 /* 8028D8D0 00289710  38 63 00 04 */	addi r3, r3, 4
-/* 8028D8D4 00289714  4B F8 06 AD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D8D4 00289714  4B F8 06 AD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D8D8 00289718  7C 7F 1B 78 */	mr r31, r3
 /* 8028D8DC 0028971C  80 63 00 74 */	lwz r3, 0x74(r3)
 /* 8028D8E0 00289720  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2126,7 +2126,7 @@ bonkersbomb__Q43scn4step5enemy5ParamCFv:
 /* 8028D920 00289760  4B F4 CA 7D */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D924 00289764  80 7F 03 C4 */	lwz r3, 0x3c4(r31)
 /* 8028D928 00289768  38 63 00 04 */	addi r3, r3, 4
-/* 8028D92C 0028976C  4B F8 06 55 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D92C 0028976C  4B F8 06 55 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D930 00289770  7C 7F 1B 78 */	mr r31, r3
 /* 8028D934 00289774  80 63 00 60 */	lwz r3, 0x60(r3)
 /* 8028D938 00289778  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2152,7 +2152,7 @@ dubiorspark__Q43scn4step5enemy5ParamCFv:
 /* 8028D978 002897B8  4B F4 CA 25 */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D97C 002897BC  80 7F 03 D4 */	lwz r3, 0x3d4(r31)
 /* 8028D980 002897C0  38 63 00 04 */	addi r3, r3, 4
-/* 8028D984 002897C4  4B F8 05 FD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D984 002897C4  4B F8 05 FD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D988 002897C8  7C 7F 1B 78 */	mr r31, r3
 /* 8028D98C 002897CC  80 63 00 04 */	lwz r3, 4(r3)
 /* 8028D990 002897D0  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2178,7 +2178,7 @@ mbossdead__Q43scn4step5enemy5ParamCFv:
 /* 8028D9D0 00289810  4B F4 C9 CD */	bl loadCheck__Q25param8JITParamCFv
 /* 8028D9D4 00289814  80 7F 03 E4 */	lwz r3, 0x3e4(r31)
 /* 8028D9D8 00289818  38 63 00 04 */	addi r3, r3, 4
-/* 8028D9DC 0028981C  4B F8 05 A5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8028D9DC 0028981C  4B F8 05 A5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 8028D9E0 00289820  7C 7F 1B 78 */	mr r31, r3
 /* 8028D9E4 00289824  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 8028D9E8 00289828  3C 03 FF 44 */	addis r0, r3, 0xff44
@@ -2193,7 +2193,7 @@ lbl_8028D9F8:
 /* 8028DA08 00289848  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028DA0C 0028984C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero5ParamFv
 __ct__Q43scn4step4hero5ParamFv:
 /* 80350DA4 0034CBE4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2319,7 +2319,7 @@ get$$0Q53scn4step4hero6common5Param$$1__Q43scn4step4hero5ParamCFRCQ25param8JITPa
 /* 80350F74 0034CDB4  4B E8 94 29 */	bl loadCheck__Q25param8JITParamCFv
 /* 80350F78 0034CDB8  80 7F 00 04 */	lwz r3, 4(r31)
 /* 80350F7C 0034CDBC  38 63 00 04 */	addi r3, r3, 4
-/* 80350F80 0034CDC0  4B EB D0 01 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80350F80 0034CDC0  4B EB D0 01 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80350F84 0034CDC4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80350F88 0034CDC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80350F8C 0034CDCC  7C 08 03 A6 */	mtlr r0
@@ -2420,7 +2420,7 @@ interference__Q43scn4step4hero5ParamCFv:
 /* 803510A0 0034CEE0  4B E8 92 FD */	bl loadCheck__Q25param8JITParamCFv
 /* 803510A4 0034CEE4  80 7F 00 54 */	lwz r3, 0x54(r31)
 /* 803510A8 0034CEE8  38 63 00 04 */	addi r3, r3, 4
-/* 803510AC 0034CEEC  4B EB CE D5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803510AC 0034CEEC  4B EB CE D5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803510B0 0034CEF0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803510B4 0034CEF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803510B8 0034CEF8  7C 08 03 A6 */	mtlr r0
@@ -2438,7 +2438,7 @@ sword__Q43scn4step4hero5ParamCFv:
 /* 803510DC 0034CF1C  4B E8 92 C1 */	bl loadCheck__Q25param8JITParamCFv
 /* 803510E0 0034CF20  80 7F 00 64 */	lwz r3, 0x64(r31)
 /* 803510E4 0034CF24  38 63 00 04 */	addi r3, r3, 4
-/* 803510E8 0034CF28  4B EB CE 99 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803510E8 0034CF28  4B EB CE 99 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803510EC 0034CF2C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803510F0 0034CF30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803510F4 0034CF34  7C 08 03 A6 */	mtlr r0
@@ -2456,7 +2456,7 @@ cutter__Q43scn4step4hero5ParamCFv:
 /* 80351118 0034CF58  4B E8 92 85 */	bl loadCheck__Q25param8JITParamCFv
 /* 8035111C 0034CF5C  80 7F 00 74 */	lwz r3, 0x74(r31)
 /* 80351120 0034CF60  38 63 00 04 */	addi r3, r3, 4
-/* 80351124 0034CF64  4B EB CE 5D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351124 0034CF64  4B EB CE 5D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351128 0034CF68  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035112C 0034CF6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351130 0034CF70  7C 08 03 A6 */	mtlr r0
@@ -2474,7 +2474,7 @@ whip__Q43scn4step4hero5ParamCFv:
 /* 80351154 0034CF94  4B E8 92 49 */	bl loadCheck__Q25param8JITParamCFv
 /* 80351158 0034CF98  80 7F 00 84 */	lwz r3, 0x84(r31)
 /* 8035115C 0034CF9C  38 63 00 04 */	addi r3, r3, 4
-/* 80351160 0034CFA0  4B EB CE 21 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351160 0034CFA0  4B EB CE 21 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351164 0034CFA4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351168 0034CFA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035116C 0034CFAC  7C 08 03 A6 */	mtlr r0
@@ -2492,7 +2492,7 @@ spark__Q43scn4step4hero5ParamCFv:
 /* 80351190 0034CFD0  4B E8 92 0D */	bl loadCheck__Q25param8JITParamCFv
 /* 80351194 0034CFD4  80 7F 00 A4 */	lwz r3, 0xa4(r31)
 /* 80351198 0034CFD8  38 63 00 04 */	addi r3, r3, 4
-/* 8035119C 0034CFDC  4B EB CD E5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8035119C 0034CFDC  4B EB CD E5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803511A0 0034CFE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803511A4 0034CFE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803511A8 0034CFE8  7C 08 03 A6 */	mtlr r0
@@ -2510,7 +2510,7 @@ stone__Q43scn4step4hero5ParamCFv:
 /* 803511CC 0034D00C  4B E8 91 D1 */	bl loadCheck__Q25param8JITParamCFv
 /* 803511D0 0034D010  80 7F 00 B4 */	lwz r3, 0xb4(r31)
 /* 803511D4 0034D014  38 63 00 04 */	addi r3, r3, 4
-/* 803511D8 0034D018  4B EB CD A9 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803511D8 0034D018  4B EB CD A9 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803511DC 0034D01C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803511E0 0034D020  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803511E4 0034D024  7C 08 03 A6 */	mtlr r0
@@ -2528,7 +2528,7 @@ parasol__Q43scn4step4hero5ParamCFv:
 /* 80351208 0034D048  4B E8 91 95 */	bl loadCheck__Q25param8JITParamCFv
 /* 8035120C 0034D04C  80 7F 00 C4 */	lwz r3, 0xc4(r31)
 /* 80351210 0034D050  38 63 00 04 */	addi r3, r3, 4
-/* 80351214 0034D054  4B EB CD 6D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351214 0034D054  4B EB CD 6D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351218 0034D058  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035121C 0034D05C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351220 0034D060  7C 08 03 A6 */	mtlr r0
@@ -2546,7 +2546,7 @@ hammer__Q43scn4step4hero5ParamCFv:
 /* 80351244 0034D084  4B E8 91 59 */	bl loadCheck__Q25param8JITParamCFv
 /* 80351248 0034D088  80 7F 00 D4 */	lwz r3, 0xd4(r31)
 /* 8035124C 0034D08C  38 63 00 04 */	addi r3, r3, 4
-/* 80351250 0034D090  4B EB CD 31 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351250 0034D090  4B EB CD 31 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351254 0034D094  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351258 0034D098  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035125C 0034D09C  7C 08 03 A6 */	mtlr r0
@@ -2564,7 +2564,7 @@ wing__Q43scn4step4hero5ParamCFv:
 /* 80351280 0034D0C0  4B E8 91 1D */	bl loadCheck__Q25param8JITParamCFv
 /* 80351284 0034D0C4  80 7F 00 E4 */	lwz r3, 0xe4(r31)
 /* 80351288 0034D0C8  38 63 00 04 */	addi r3, r3, 4
-/* 8035128C 0034D0CC  4B EB CC F5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8035128C 0034D0CC  4B EB CC F5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351290 0034D0D0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351294 0034D0D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351298 0034D0D8  7C 08 03 A6 */	mtlr r0
@@ -2582,7 +2582,7 @@ fighter__Q43scn4step4hero5ParamCFv:
 /* 803512BC 0034D0FC  4B E8 90 E1 */	bl loadCheck__Q25param8JITParamCFv
 /* 803512C0 0034D100  80 7F 00 F4 */	lwz r3, 0xf4(r31)
 /* 803512C4 0034D104  38 63 00 04 */	addi r3, r3, 4
-/* 803512C8 0034D108  4B EB CC B9 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803512C8 0034D108  4B EB CC B9 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803512CC 0034D10C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803512D0 0034D110  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803512D4 0034D114  7C 08 03 A6 */	mtlr r0
@@ -2600,7 +2600,7 @@ smash__Q43scn4step4hero5ParamCFv:
 /* 803512F8 0034D138  4B E8 90 A5 */	bl loadCheck__Q25param8JITParamCFv
 /* 803512FC 0034D13C  80 7F 01 04 */	lwz r3, 0x104(r31)
 /* 80351300 0034D140  38 63 00 04 */	addi r3, r3, 4
-/* 80351304 0034D144  4B EB CC 7D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351304 0034D144  4B EB CC 7D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351308 0034D148  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035130C 0034D14C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351310 0034D150  7C 08 03 A6 */	mtlr r0
@@ -2618,7 +2618,7 @@ bossdemo__Q43scn4step4hero5ParamCFv:
 /* 80351334 0034D174  4B E8 90 69 */	bl loadCheck__Q25param8JITParamCFv
 /* 80351338 0034D178  80 7F 01 44 */	lwz r3, 0x144(r31)
 /* 8035133C 0034D17C  38 63 00 04 */	addi r3, r3, 4
-/* 80351340 0034D180  4B EB CC 41 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 80351340 0034D180  4B EB CC 41 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351344 0034D184  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351348 0034D188  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035134C 0034D18C  7C 08 03 A6 */	mtlr r0
@@ -2636,7 +2636,7 @@ staffcredit__Q43scn4step4hero5ParamCFv:
 /* 80351370 0034D1B0  4B E8 90 2D */	bl loadCheck__Q25param8JITParamCFv
 /* 80351374 0034D1B4  80 7F 01 54 */	lwz r3, 0x154(r31)
 /* 80351378 0034D1B8  38 63 00 04 */	addi r3, r3, 4
-/* 8035137C 0034D1BC  4B EB CC 05 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 8035137C 0034D1BC  4B EB CC 05 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 80351380 0034D1C0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351384 0034D1C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351388 0034D1C8  7C 08 03 A6 */	mtlr r0
@@ -2654,7 +2654,7 @@ capturedWhispy__Q43scn4step4hero5ParamCFv:
 /* 803513AC 0034D1EC  4B E8 8F F1 */	bl loadCheck__Q25param8JITParamCFv
 /* 803513B0 0034D1F0  80 7F 01 64 */	lwz r3, 0x164(r31)
 /* 803513B4 0034D1F4  38 63 00 04 */	addi r3, r3, 4
-/* 803513B8 0034D1F8  4B EB CB C9 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803513B8 0034D1F8  4B EB CB C9 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803513BC 0034D1FC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803513C0 0034D200  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803513C4 0034D204  7C 08 03 A6 */	mtlr r0
@@ -2672,7 +2672,7 @@ capturedWaterGalboros__Q43scn4step4hero5ParamCFv:
 /* 803513E8 0034D228  4B E8 8F B5 */	bl loadCheck__Q25param8JITParamCFv
 /* 803513EC 0034D22C  80 7F 01 74 */	lwz r3, 0x174(r31)
 /* 803513F0 0034D230  38 63 00 04 */	addi r3, r3, 4
-/* 803513F4 0034D234  4B EB CB 8D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803513F4 0034D234  4B EB CB 8D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803513F8 0034D238  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803513FC 0034D23C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80351400 0034D240  7C 08 03 A6 */	mtlr r0
@@ -3382,7 +3382,7 @@ createCommonReplIce__Q43scn4step4hero5ParamFv:
 /* 80351E24 0034DC64  38 21 00 10 */	addi r1, r1, 0x10
 /* 80351E28 0034DC68  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6weapon5ParamFv
 __ct__Q43scn4step6weapon5ParamFv:
 /* 803D7E90 003D3CD0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3557,7 +3557,7 @@ starShotLv1__Q43scn4step6weapon5ParamCFv:
 /* 803D8128 003D3F68  4B E0 22 75 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D812C 003D3F6C  80 7F 00 04 */	lwz r3, 4(r31)
 /* 803D8130 003D3F70  38 63 00 04 */	addi r3, r3, 4
-/* 803D8134 003D3F74  4B E3 5E 4D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8134 003D3F74  4B E3 5E 4D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8138 003D3F78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D813C 003D3F7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8140 003D3F80  7C 08 03 A6 */	mtlr r0
@@ -3575,7 +3575,7 @@ starShotLv2__Q43scn4step6weapon5ParamCFv:
 /* 803D8164 003D3FA4  4B E0 22 39 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8168 003D3FA8  80 7F 00 14 */	lwz r3, 0x14(r31)
 /* 803D816C 003D3FAC  38 63 00 04 */	addi r3, r3, 4
-/* 803D8170 003D3FB0  4B E3 5E 11 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8170 003D3FB0  4B E3 5E 11 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8174 003D3FB4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8178 003D3FB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D817C 003D3FBC  7C 08 03 A6 */	mtlr r0
@@ -3593,7 +3593,7 @@ starShotLv3__Q43scn4step6weapon5ParamCFv:
 /* 803D81A0 003D3FE0  4B E0 21 FD */	bl loadCheck__Q25param8JITParamCFv
 /* 803D81A4 003D3FE4  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 803D81A8 003D3FE8  38 63 00 04 */	addi r3, r3, 4
-/* 803D81AC 003D3FEC  4B E3 5D D5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D81AC 003D3FEC  4B E3 5D D5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D81B0 003D3FF0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D81B4 003D3FF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D81B8 003D3FF8  7C 08 03 A6 */	mtlr r0
@@ -3611,7 +3611,7 @@ airBall__Q43scn4step6weapon5ParamCFv:
 /* 803D81DC 003D401C  4B E0 21 C1 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D81E0 003D4020  80 7F 00 34 */	lwz r3, 0x34(r31)
 /* 803D81E4 003D4024  38 63 00 04 */	addi r3, r3, 4
-/* 803D81E8 003D4028  4B E3 5D 99 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D81E8 003D4028  4B E3 5D 99 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D81EC 003D402C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D81F0 003D4030  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D81F4 003D4034  7C 08 03 A6 */	mtlr r0
@@ -3629,7 +3629,7 @@ waterPistol__Q43scn4step6weapon5ParamCFv:
 /* 803D8218 003D4058  4B E0 21 85 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D821C 003D405C  80 7F 00 44 */	lwz r3, 0x44(r31)
 /* 803D8220 003D4060  38 63 00 04 */	addi r3, r3, 4
-/* 803D8224 003D4064  4B E3 5D 5D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8224 003D4064  4B E3 5D 5D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8228 003D4068  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D822C 003D406C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8230 003D4070  7C 08 03 A6 */	mtlr r0
@@ -3662,7 +3662,7 @@ waterGalborosWater__Q43scn4step6weapon5ParamCFv:
 /* 803D826C 003D40AC  4B E0 21 31 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8270 003D40B0  80 7F 01 14 */	lwz r3, 0x114(r31)
 /* 803D8274 003D40B4  38 63 00 04 */	addi r3, r3, 4
-/* 803D8278 003D40B8  4B E3 5D 09 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8278 003D40B8  4B E3 5D 09 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D827C 003D40BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8280 003D40C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8284 003D40C4  7C 08 03 A6 */	mtlr r0
@@ -3680,7 +3680,7 @@ spearSpear__Q43scn4step6weapon5ParamCFv:
 /* 803D82A8 003D40E8  4B E0 20 F5 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D82AC 003D40EC  80 7F 01 24 */	lwz r3, 0x124(r31)
 /* 803D82B0 003D40F0  38 63 00 04 */	addi r3, r3, 4
-/* 803D82B4 003D40F4  4B E3 5C CD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D82B4 003D40F4  4B E3 5C CD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D82B8 003D40F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D82BC 003D40FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D82C0 003D4100  7C 08 03 A6 */	mtlr r0
@@ -3698,7 +3698,7 @@ hammerHammer__Q43scn4step6weapon5ParamCFv:
 /* 803D82E4 003D4124  4B E0 20 B9 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D82E8 003D4128  80 7F 01 34 */	lwz r3, 0x134(r31)
 /* 803D82EC 003D412C  38 63 00 04 */	addi r3, r3, 4
-/* 803D82F0 003D4130  4B E3 5C 91 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D82F0 003D4130  4B E3 5C 91 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D82F4 003D4134  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D82F8 003D4138  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D82FC 003D413C  7C 08 03 A6 */	mtlr r0
@@ -3716,7 +3716,7 @@ fighterHadouShot__Q43scn4step6weapon5ParamCFv:
 /* 803D8320 003D4160  4B E0 20 7D */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8324 003D4164  80 7F 01 84 */	lwz r3, 0x184(r31)
 /* 803D8328 003D4168  38 63 00 04 */	addi r3, r3, 4
-/* 803D832C 003D416C  4B E3 5C 55 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D832C 003D416C  4B E3 5C 55 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8330 003D4170  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8334 003D4174  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8338 003D4178  7C 08 03 A6 */	mtlr r0
@@ -3734,7 +3734,7 @@ gigantEdgeShot__Q43scn4step6weapon5ParamCFv:
 /* 803D835C 003D419C  4B E0 20 41 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8360 003D41A0  80 7F 01 94 */	lwz r3, 0x194(r31)
 /* 803D8364 003D41A4  38 63 00 04 */	addi r3, r3, 4
-/* 803D8368 003D41A8  4B E3 5C 19 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8368 003D41A8  4B E3 5C 19 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D836C 003D41AC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8370 003D41B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8374 003D41B4  7C 08 03 A6 */	mtlr r0
@@ -3752,7 +3752,7 @@ enemyWaterBullet__Q43scn4step6weapon5ParamCFv:
 /* 803D8398 003D41D8  4B E0 20 05 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D839C 003D41DC  80 7F 01 A4 */	lwz r3, 0x1a4(r31)
 /* 803D83A0 003D41E0  38 63 00 04 */	addi r3, r3, 4
-/* 803D83A4 003D41E4  4B E3 5B DD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D83A4 003D41E4  4B E3 5B DD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D83A8 003D41E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D83AC 003D41EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D83B0 003D41F0  7C 08 03 A6 */	mtlr r0
@@ -3770,7 +3770,7 @@ rollExp__Q43scn4step6weapon5ParamCFv:
 /* 803D83D4 003D4214  4B E0 1F C9 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D83D8 003D4218  80 7F 01 B4 */	lwz r3, 0x1b4(r31)
 /* 803D83DC 003D421C  38 63 00 04 */	addi r3, r3, 4
-/* 803D83E0 003D4220  4B E3 5B A1 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D83E0 003D4220  4B E3 5B A1 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D83E4 003D4224  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D83E8 003D4228  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D83EC 003D422C  7C 08 03 A6 */	mtlr r0
@@ -3788,7 +3788,7 @@ gigatzoBullet__Q43scn4step6weapon5ParamCFv:
 /* 803D8410 003D4250  4B E0 1F 8D */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8414 003D4254  80 7F 01 C4 */	lwz r3, 0x1c4(r31)
 /* 803D8418 003D4258  38 63 00 04 */	addi r3, r3, 4
-/* 803D841C 003D425C  4B E3 5B 65 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D841C 003D425C  4B E3 5B 65 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8420 003D4260  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8424 003D4264  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8428 003D4268  7C 08 03 A6 */	mtlr r0
@@ -3806,7 +3806,7 @@ kingsDooWaveShot__Q43scn4step6weapon5ParamCFv:
 /* 803D844C 003D428C  4B E0 1F 51 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8450 003D4290  80 7F 01 D4 */	lwz r3, 0x1d4(r31)
 /* 803D8454 003D4294  38 63 00 04 */	addi r3, r3, 4
-/* 803D8458 003D4298  4B E3 5B 29 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8458 003D4298  4B E3 5B 29 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D845C 003D429C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8460 003D42A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8464 003D42A4  7C 08 03 A6 */	mtlr r0
@@ -3824,7 +3824,7 @@ foleyLeaf__Q43scn4step6weapon5ParamCFv:
 /* 803D8488 003D42C8  4B E0 1F 15 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D848C 003D42CC  80 7F 01 E4 */	lwz r3, 0x1e4(r31)
 /* 803D8490 003D42D0  38 63 00 04 */	addi r3, r3, 4
-/* 803D8494 003D42D4  4B E3 5A ED */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8494 003D42D4  4B E3 5A ED */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8498 003D42D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D849C 003D42DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D84A0 003D42E0  7C 08 03 A6 */	mtlr r0
@@ -3842,7 +3842,7 @@ bowbyArrow__Q43scn4step6weapon5ParamCFv:
 /* 803D84C4 003D4304  4B E0 1E D9 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D84C8 003D4308  80 7F 01 F4 */	lwz r3, 0x1f4(r31)
 /* 803D84CC 003D430C  38 63 00 04 */	addi r3, r3, 4
-/* 803D84D0 003D4310  4B E3 5A B1 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D84D0 003D4310  4B E3 5A B1 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D84D4 003D4314  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D84D8 003D4318  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D84DC 003D431C  7C 08 03 A6 */	mtlr r0
@@ -3860,7 +3860,7 @@ juckleCutter__Q43scn4step6weapon5ParamCFv:
 /* 803D8500 003D4340  4B E0 1E 9D */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8504 003D4344  80 7F 02 04 */	lwz r3, 0x204(r31)
 /* 803D8508 003D4348  38 63 00 04 */	addi r3, r3, 4
-/* 803D850C 003D434C  4B E3 5A 75 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D850C 003D434C  4B E3 5A 75 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8510 003D4350  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8514 003D4354  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8518 003D4358  7C 08 03 A6 */	mtlr r0
@@ -3878,7 +3878,7 @@ tsukikageshuriken__Q43scn4step6weapon5ParamCFv:
 /* 803D853C 003D437C  4B E0 1E 61 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8540 003D4380  80 7F 02 14 */	lwz r3, 0x214(r31)
 /* 803D8544 003D4384  38 63 00 04 */	addi r3, r3, 4
-/* 803D8548 003D4388  4B E3 5A 39 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8548 003D4388  4B E3 5A 39 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D854C 003D438C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8550 003D4390  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8554 003D4394  7C 08 03 A6 */	mtlr r0
@@ -3896,7 +3896,7 @@ knucklejoeHadou__Q43scn4step6weapon5ParamCFv:
 /* 803D8578 003D43B8  4B E0 1E 25 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D857C 003D43BC  80 7F 02 24 */	lwz r3, 0x224(r31)
 /* 803D8580 003D43C0  38 63 00 04 */	addi r3, r3, 4
-/* 803D8584 003D43C4  4B E3 59 FD */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8584 003D43C4  4B E3 59 FD */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8588 003D43C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D858C 003D43CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8590 003D43D0  7C 08 03 A6 */	mtlr r0
@@ -3914,7 +3914,7 @@ whispyTornado__Q43scn4step6weapon5ParamCFv:
 /* 803D85B4 003D43F4  4B E0 1D E9 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D85B8 003D43F8  80 7F 02 44 */	lwz r3, 0x244(r31)
 /* 803D85BC 003D43FC  38 63 00 04 */	addi r3, r3, 4
-/* 803D85C0 003D4400  4B E3 59 C1 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D85C0 003D4400  4B E3 59 C1 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D85C4 003D4404  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D85C8 003D4408  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D85CC 003D440C  7C 08 03 A6 */	mtlr r0
@@ -3932,7 +3932,7 @@ combinationAirBall__Q43scn4step6weapon5ParamCFv:
 /* 803D85F0 003D4430  4B E0 1D AD */	bl loadCheck__Q25param8JITParamCFv
 /* 803D85F4 003D4434  80 7F 02 64 */	lwz r3, 0x264(r31)
 /* 803D85F8 003D4438  38 63 00 04 */	addi r3, r3, 4
-/* 803D85FC 003D443C  4B E3 59 85 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D85FC 003D443C  4B E3 59 85 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8600 003D4440  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8604 003D4444  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8608 003D4448  7C 08 03 A6 */	mtlr r0
@@ -3950,7 +3950,7 @@ combinationMetaBeam__Q43scn4step6weapon5ParamCFv:
 /* 803D862C 003D446C  4B E0 1D 71 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8630 003D4470  80 7F 02 74 */	lwz r3, 0x274(r31)
 /* 803D8634 003D4474  38 63 00 04 */	addi r3, r3, 4
-/* 803D8638 003D4478  4B E3 59 49 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8638 003D4478  4B E3 59 49 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D863C 003D447C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8640 003D4480  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8644 003D4484  7C 08 03 A6 */	mtlr r0
@@ -3968,7 +3968,7 @@ combinationDededeBomber__Q43scn4step6weapon5ParamCFv:
 /* 803D8668 003D44A8  4B E0 1D 35 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D866C 003D44AC  80 7F 02 84 */	lwz r3, 0x284(r31)
 /* 803D8670 003D44B0  38 63 00 04 */	addi r3, r3, 4
-/* 803D8674 003D44B4  4B E3 59 0D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8674 003D44B4  4B E3 59 0D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8678 003D44B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D867C 003D44BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8680 003D44C0  7C 08 03 A6 */	mtlr r0
@@ -3986,7 +3986,7 @@ combinationDeeShot__Q43scn4step6weapon5ParamCFv:
 /* 803D86A4 003D44E4  4B E0 1C F9 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D86A8 003D44E8  80 7F 02 94 */	lwz r3, 0x294(r31)
 /* 803D86AC 003D44EC  38 63 00 04 */	addi r3, r3, 4
-/* 803D86B0 003D44F0  4B E3 58 D1 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D86B0 003D44F0  4B E3 58 D1 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D86B4 003D44F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D86B8 003D44F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D86BC 003D44FC  7C 08 03 A6 */	mtlr r0
@@ -4004,7 +4004,7 @@ metaBeam__Q43scn4step6weapon5ParamCFv:
 /* 803D86E0 003D4520  4B E0 1C BD */	bl loadCheck__Q25param8JITParamCFv
 /* 803D86E4 003D4524  80 7F 02 A4 */	lwz r3, 0x2a4(r31)
 /* 803D86E8 003D4528  38 63 00 04 */	addi r3, r3, 4
-/* 803D86EC 003D452C  4B E3 58 95 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D86EC 003D452C  4B E3 58 95 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D86F0 003D4530  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D86F4 003D4534  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D86F8 003D4538  7C 08 03 A6 */	mtlr r0
@@ -4022,7 +4022,7 @@ metaShockWave__Q43scn4step6weapon5ParamCFv:
 /* 803D871C 003D455C  4B E0 1C 81 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8720 003D4560  80 7F 02 B4 */	lwz r3, 0x2b4(r31)
 /* 803D8724 003D4564  38 63 00 04 */	addi r3, r3, 4
-/* 803D8728 003D4568  4B E3 58 59 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8728 003D4568  4B E3 58 59 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D872C 003D456C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8730 003D4570  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8734 003D4574  7C 08 03 A6 */	mtlr r0
@@ -4040,7 +4040,7 @@ dededeHammer__Q43scn4step6weapon5ParamCFv:
 /* 803D8758 003D4598  4B E0 1C 45 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D875C 003D459C  80 7F 02 C4 */	lwz r3, 0x2c4(r31)
 /* 803D8760 003D45A0  38 63 00 04 */	addi r3, r3, 4
-/* 803D8764 003D45A4  4B E3 58 1D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8764 003D45A4  4B E3 58 1D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8768 003D45A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D876C 003D45AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8770 003D45B0  7C 08 03 A6 */	mtlr r0
@@ -4058,7 +4058,7 @@ deeSpear__Q43scn4step6weapon5ParamCFv:
 /* 803D8794 003D45D4  4B E0 1C 09 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8798 003D45D8  80 7F 02 D4 */	lwz r3, 0x2d4(r31)
 /* 803D879C 003D45DC  38 63 00 04 */	addi r3, r3, 4
-/* 803D87A0 003D45E0  4B E3 57 E1 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D87A0 003D45E0  4B E3 57 E1 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D87A4 003D45E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D87A8 003D45E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D87AC 003D45EC  7C 08 03 A6 */	mtlr r0
@@ -4076,7 +4076,7 @@ vacuumedBlock__Q43scn4step6weapon5ParamCFv:
 /* 803D87D0 003D4610  4B E0 1B CD */	bl loadCheck__Q25param8JITParamCFv
 /* 803D87D4 003D4614  80 7F 02 E4 */	lwz r3, 0x2e4(r31)
 /* 803D87D8 003D4618  38 63 00 04 */	addi r3, r3, 4
-/* 803D87DC 003D461C  4B E3 57 A5 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D87DC 003D461C  4B E3 57 A5 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D87E0 003D4620  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D87E4 003D4624  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D87E8 003D4628  7C 08 03 A6 */	mtlr r0
@@ -4094,7 +4094,7 @@ challengeMasterSummonLight__Q43scn4step6weapon5ParamCFv:
 /* 803D880C 003D464C  4B E0 1B 91 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D8810 003D4650  80 7F 02 F4 */	lwz r3, 0x2f4(r31)
 /* 803D8814 003D4654  38 63 00 04 */	addi r3, r3, 4
-/* 803D8818 003D4658  4B E3 57 69 */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8818 003D4658  4B E3 57 69 */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D881C 003D465C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8820 003D4660  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8824 003D4664  7C 08 03 A6 */	mtlr r0
@@ -4112,14 +4112,14 @@ challengeMasterShot__Q43scn4step6weapon5ParamCFv:
 /* 803D8848 003D4688  4B E0 1B 55 */	bl loadCheck__Q25param8JITParamCFv
 /* 803D884C 003D468C  80 7F 03 04 */	lwz r3, 0x304(r31)
 /* 803D8850 003D4690  38 63 00 04 */	addi r3, r3, 4
-/* 803D8854 003D4694  4B E3 57 2D */	bl dataHeadAddress__Q25xdata5XDataCFv
+/* 803D8854 003D4694  4B E3 57 2D */	bl dataHeadAddress__Q25.dataXDataCFv
 /* 803D8858 003D4698  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D885C 003D469C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D8860 003D46A0  7C 08 03 A6 */	mtlr r0
 /* 803D8864 003D46A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D8868 003D46A8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249988
 $$249988:
 	.incbin "baserom.dol", 0x4607D8, 0x14
@@ -4163,7 +4163,7 @@ $$250000:
 $$250001:
 	.incbin "baserom.dol", 0x4608FC, 0x14
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254665
 $$254665:
 	.incbin "baserom.dol", 0x46E7D8, 0x14
@@ -4354,7 +4354,7 @@ $$254726:
 $$254727:
 	.incbin "baserom.dol", 0x46ECFC, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250654
 $$250654:
 	.incbin "baserom.dol", 0x4813B0, 0x14
@@ -4428,7 +4428,7 @@ $$250676:
 $$250677:
 	.incbin "baserom.dol", 0x481580, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253509
 $$253509:
 	.incbin "baserom.dol", 0x48F908, 0x18

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global release__Q43std3tr16detail25shared_ptr_deleter_commonFv
 release__Q43std3tr16detail25shared_ptr_deleter_commonFv:
 /* 80014F18 00010D58  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -85,7 +85,7 @@ lbl_80015014:
 __dt__Q43std3tr16detail20function_base$$0PFv_v$$1Fv:
 /* 80015030 00010E70  4B FF 1B A0 */	b __dt__Q23std9exceptionFv
 
-.section .data0, "wa"  # 0x80006740 - 0x800068E0
+.section extab, "wa"  # 0x80006740 - 0x800068E0
 .global $$28323
 $$28323:
 	.incbin "baserom.dol", 0x40221C, 0x8
@@ -93,7 +93,7 @@ $$28323:
 $$28430:
 	.incbin "baserom.dol", 0x402224, 0x1C
 
-.section .data1, "wa"  # 0x800068E0 - 0x80006A00
+.section extabindex, "wa"  # 0x800068E0 - 0x80006A00
 .global $$28324
 $$28324:
 	.incbin "baserom.dol", 0x40230C, 0xC

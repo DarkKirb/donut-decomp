@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn17challengetutorial4info8TutorialFRQ43scn17challengetutorial4info7ManagerRQ23mem10IAllocatorRQ23lyt6Layout
 __ct__Q43scn17challengetutorial4info8TutorialFRQ43scn17challengetutorial4info7ManagerRQ23mem10IAllocatorRQ23lyt6Layout:
 /* 801F9D28 001F5B68  94 21 FC D0 */	stwu r1, -0x330(r1)
@@ -3570,12 +3570,12 @@ lbl_801FD0B0:
 /* 801FD0C0 001F8F00  42 00 FF F0 */	bdnz lbl_801FD0B0
 /* 801FD0C4 001F8F04  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_PageDataNormal__Q33scn17challengetutorial4info
 T_PageDataNormal__Q33scn17challengetutorial4info:
 	.incbin "baserom.dol", 0x411B18, 0xC0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$258272
 $$258272:
 	.incbin "baserom.dol", 0x45BDF8, 0x18
@@ -3778,7 +3778,7 @@ $$259100:
 $$259119:
 	.incbin "baserom.dol", 0x45C298, 0x50
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$258281
 $$258281:
 	.incbin "baserom.dol", 0x494550, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25pause11CursorPanelFPCcRCQ23lyt6LayoutRCQ23lyt12PaneAccessorRQ23mem10IAllocator
 __ct__Q25pause11CursorPanelFPCcRCQ23lyt6LayoutRCQ23lyt12PaneAccessorRQ23mem10IAllocator:
 /* 801DB404 001D7244  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -132,7 +132,7 @@ lbl_801DB5BC:
 /* 801DB5C8 001D7408  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DB5CC 001D740C  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$251812
 $$251812:
 	.incbin "baserom.dol", 0x493A68, 0x8

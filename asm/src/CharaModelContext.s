@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultAllocator__Q23g3d17CharaModelContextFv
 DefaultAllocator__Q23g3d17CharaModelContextFv:
 /* 8018D760 001895A0  48 00 49 88 */	b DefaultAllocator__Q23g3d12ModelContextFv

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q25ocoll9HitResultFv
 __ct__Q25ocoll9HitResultFv:
 /* 801D6C1C 001D2A5C  94 21 FF E0 */	stwu r1, -0x20(r1)

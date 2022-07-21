@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss11CustomFlashFv
 __ct__Q43scn4step4boss11CustomFlashFv:
 /* 8022EEA8 0022ACE8  38 00 00 00 */	li r0, 0

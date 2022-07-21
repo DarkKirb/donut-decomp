@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetAnmResult__Q34nw4r3g3d12ResAnmTexSrtCFPQ34nw4r3g3d15TexSrtAnmResultUlf
 GetAnmResult__Q34nw4r3g3d12ResAnmTexSrtCFPQ34nw4r3g3d15TexSrtAnmResultUlf:
 /* 800CFEB0 000CBCF0  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -313,7 +313,7 @@ lbl_800D028C:
 /* 800D02C8 000CC108  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800D02CC 000CC10C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26218
 $$26218:
 	.incbin "baserom.dol", 0x4999E8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __msl_runtime_constraint_violation_s
 __msl_runtime_constraint_violation_s:
 /* 8001055C 0000C39C  81 8D E2 E8 */	lwz r12, __msl_constraint_handler-_SDA_BASE_(r13)

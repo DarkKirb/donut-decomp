@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5chara8HitPointFv
 __ct__Q43scn4step5chara8HitPointFv:
 /* 8026EAE0 0026A920  38 00 00 00 */	li r0, 0
@@ -168,7 +168,7 @@ rate__Q43scn4step5chara8HitPointCFv:
 /* 8026ECE0 0026AB20  38 21 00 20 */	addi r1, r1, 0x20
 /* 8026ECE4 0026AB24  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249001
 $$249001:
 	.incbin "baserom.dol", 0x49B7C8, 0x8

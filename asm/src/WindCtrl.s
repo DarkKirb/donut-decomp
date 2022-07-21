@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy8WindCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss6whispy8WindCtrlFRQ43scn4step4boss4Boss:
 /* 8025F310 0025B150  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -161,12 +161,12 @@ clear__Q53scn4step4boss6whispy8WindCtrlFv:
 /* 8025F538 0025B378  FC 60 08 90 */	fmr f3, f1
 /* 8025F53C 0025B37C  4B FF FF E4 */	b set__Q53scn4step4boss6whispy8WindCtrlFfff
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_AREA_RATE__Q53scn4step4boss6whispy22$$2unnamed$$2WindCtrl_cpp$$2
 T_AREA_RATE__Q53scn4step4boss6whispy22$$2unnamed$$2WindCtrl_cpp$$2:
 	.incbin "baserom.dol", 0x4137E0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250595
 $$250595:
 	.incbin "baserom.dol", 0x49B578, 0x4

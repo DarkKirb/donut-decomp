@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero19CaptureHeroReceiverFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero19CaptureHeroReceiverFRQ43scn4step4hero4Hero:
 /* 80332D74 0032EBB4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1030,7 +1030,7 @@ __dt__Q24util107StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured24S
 __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80333B0C 0032F94C  4B EF AB 94 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero8captured25StateCapturedWhispyVacuum$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x47FE50, 0x10
@@ -1068,7 +1068,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4h
 $$2STRING$$2GetBack__Q34nw4r2ut97LinkList$$0Q24util76ObjListNode$$0Q43scn4step4hero19CaptureHeroReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x47FF34, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259086
 $$259086:
 	.incbin "baserom.dol", 0x49D6A8, 0x4

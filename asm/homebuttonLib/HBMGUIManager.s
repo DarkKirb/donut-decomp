@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global drawLine___Q210homebutton3guiFfffffUcR8_GXColor
 drawLine___Q210homebutton3guiFfffffUcR8_GXColor:
 /* 80128860 001246A0  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -1801,7 +1801,7 @@ setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo:
 /* 8012A018 00125E58  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8012A01C 00125E5C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29996
 $$29996:
 	.incbin "baserom.dol", 0x409EE8, 0x4
@@ -1815,7 +1815,7 @@ $$210512:
 $$2LOCAL$$2drawLine___Q210homebutton3guiFfffffUcR8_GXColor$$2cubeScale:
 	.incbin "baserom.dol", 0x409EF4, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q310homebutton3gui13PaneComponent
 __vt__Q310homebutton3gui13PaneComponent:
 	.incbin "baserom.dol", 0x43EB28, 0x68

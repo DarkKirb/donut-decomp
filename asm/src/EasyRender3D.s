@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_loadPosMtx__26$$2unnamed$$2EasyRender3D_cpp$$2FRCQ33hel4math8Matrix34
 t_loadPosMtx__26$$2unnamed$$2EasyRender3D_cpp$$2FRCQ33hel4math8Matrix34:
 /* 80194FC4 00190E04  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -595,10 +595,10 @@ __sinit_$$3EasyRender3D_cpp:
 /* 8019584C 0019168C  38 63 48 28 */	addi r3, r3, t_viewMtx__26$$2unnamed$$2EasyRender3D_cpp$$2@l
 /* 80195850 00191690  4B FF F7 D4 */	b __ct__Q33hel4math8Matrix34Fv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023E8, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251446
 $$251446:
 	.incbin "baserom.dol", 0x49A208, 0x4

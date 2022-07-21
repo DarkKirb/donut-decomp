@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __OSInitAlarm
 __OSInitAlarm:
 /* 8001B7A0 000175E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -632,7 +632,7 @@ lbl_8001C01C:
 /* 8001C048 00017E88  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8001C04C 00017E8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global ShutdownFunctionInfo
 ShutdownFunctionInfo:
 	.incbin "baserom.dol", 0x41E2E8, 0x10

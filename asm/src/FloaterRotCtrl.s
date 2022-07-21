@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero14FloaterRotCtrlFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero14FloaterRotCtrlFRQ43scn4step4hero4Hero:
 /* 80336C70 00332AB0  90 83 00 00 */	stw r4, 0(r3)
@@ -41,7 +41,7 @@ resetRotVIntpRate__Q43scn4step4hero14FloaterRotCtrlFv:
 /* 80336CCC 00332B0C  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 80336CD0 00332B10  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250072
 $$250072:
 	.incbin "baserom.dol", 0x49D6F8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common17StateWalkStraightFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common17StateWalkStraightFPQ43scn4step5enemy5Enemy:
 /* 80295C60 00291AA0  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -206,7 +206,7 @@ lbl_80295F18:
 /* 80295F28 00291D68  38 21 00 40 */	addi r1, r1, 0x40
 /* 80295F2C 00291D6C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy8needlous17StateWalkStraightFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy8needlous17StateWalkStraightFPQ43scn4step5enemy5Enemy:
 /* 802C6C88 002C2AC8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -518,7 +518,7 @@ lbl_802C70D4:
 /* 802C70E4 002C2F24  38 21 00 50 */	addi r1, r1, 0x50
 /* 802C70E8 002C2F28  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10parasoldee17StateWalkStraightFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10parasoldee17StateWalkStraightFPQ43scn4step5enemy5Enemy:
 /* 802CD458 002C9298  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -785,7 +785,7 @@ lbl_802CD7E8:
 /* 802CD804 002C9644  38 21 00 60 */	addi r1, r1, 0x60
 /* 802CD808 002C9648  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10parasoldoo17StateWalkStraightFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10parasoldoo17StateWalkStraightFPQ43scn4step5enemy5Enemy:
 /* 802CF288 002CB0C8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1052,27 +1052,27 @@ lbl_802CF618:
 /* 802CF634 002CB474  38 21 00 60 */	addi r1, r1, 0x60
 /* 802CF638 002CB478  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common17StateWalkStraight
 __vt__Q53scn4step5enemy6common17StateWalkStraight:
 	.incbin "baserom.dol", 0x46F4A8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy8needlous17StateWalkStraight
 __vt__Q53scn4step5enemy8needlous17StateWalkStraight:
 	.incbin "baserom.dol", 0x4755D0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldee17StateWalkStraight
 __vt__Q53scn4step5enemy10parasoldee17StateWalkStraight:
 	.incbin "baserom.dol", 0x476228, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10parasoldoo17StateWalkStraight
 __vt__Q53scn4step5enemy10parasoldoo17StateWalkStraight:
 	.incbin "baserom.dol", 0x4763D8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255905
 $$255905:
 	.incbin "baserom.dol", 0x49BC68, 0x4
@@ -1104,7 +1104,7 @@ $$255913:
 $$255914:
 	.incbin "baserom.dol", 0x49BC8C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256319
 $$256319:
 	.incbin "baserom.dol", 0x49C898, 0x4
@@ -1124,12 +1124,12 @@ $$256323:
 $$256373:
 	.incbin "baserom.dol", 0x49C8AC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256414
 $$256414:
 	.incbin "baserom.dol", 0x49C9F0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256413
 $$256413:
 	.incbin "baserom.dol", 0x49CA40, 0x8

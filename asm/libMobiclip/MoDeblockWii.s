@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Tile__FPUcPCUciii
 Tile__FPUcPCUciii:
 /* 8014FB20 0014B960  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1362,7 +1362,7 @@ lbl_80150F10:
 /* 80150F28 0014CD68  4E 80 00 20 */	blr 
 /* 80150F2C 0014CD6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global clipTable
 clipTable:
 	.incbin "baserom.dol", 0x40A618, 0x180
@@ -1373,7 +1373,7 @@ Alpha:
 Beta:
 	.incbin "baserom.dol", 0x40A82C, 0x94
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global clip
 clip:
 	.incbin "baserom.dol", 0x492E98, 0x8

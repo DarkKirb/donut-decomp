@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WUDIsLinkedWBC
 WUDIsLinkedWBC:
 /* 80065740 00061580  80 6D EA 20 */	lwz r3, _linkedWBC-_SDA_BASE_(r13)
@@ -6334,7 +6334,7 @@ WUDiSetNotAckNumForHandle:
 /* 8006AE38 00066C78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8006AE3C 00066C7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global _wudWiiRemoteDescriptor
 _wudWiiRemoteDescriptor:
 	.incbin "baserom.dol", 0x435C78, 0xDC
@@ -6378,7 +6378,7 @@ $$27558:
 $$27592:
 	.incbin "baserom.dol", 0x435FB0, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$26790
 $$26790:
 	.incbin "baserom.dol", 0x492BD8, 0x8
@@ -6386,7 +6386,7 @@ $$26790:
 $$26791:
 	.incbin "baserom.dol", 0x492BE0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23808
 $$23808:
 	.incbin "baserom.dol", 0x499308, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_tryToAddCollideTarget__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2FRCQ35mcoll6detail9LandLayerRQ35mcoll6detail18CollideTargetReposQ35mcoll6detail17LandGridShapeKindRCQ45mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfoQ55mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfo8EdgeKindRCQ33hel4math7Vector2bUlUlRCQ33hel4math7Vector2Q55mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfo8EdgeKindRCQ35mcoll6detail12LandPropertyQ35mcoll6detail13LandAttributeRCQ35mcoll6detail16LandGatherOption
 t_tryToAddCollideTarget__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2FRCQ35mcoll6detail9LandLayerRQ35mcoll6detail18CollideTargetReposQ35mcoll6detail17LandGridShapeKindRCQ45mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfoQ55mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfo8EdgeKindRCQ33hel4math7Vector2bUlUlRCQ33hel4math7Vector2Q55mcoll6detail23$$2unnamed$$2LandLayer_cpp$$215T_GridShapeInfo8EdgeKindRCQ35mcoll6detail12LandPropertyQ35mcoll6detail13LandAttributeRCQ35mcoll6detail16LandGatherOption:
 /* 801B80D4 001B3F14  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -1788,15 +1788,15 @@ __sinit_$$3LandLayer_cpp:
 /* 801B9AC8 001B5908  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801B9ACC 001B590C  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40242C, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2
 T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2:
 	.incbin "baserom.dol", 0x454198, 0xDD0
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_NORMAL_WALL_L__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2
 T_NORMAL_WALL_L__Q35mcoll6detail23$$2unnamed$$2LandLayer_cpp$$2:
 	.incbin "baserom.dol", 0x49A5A8, 0x4

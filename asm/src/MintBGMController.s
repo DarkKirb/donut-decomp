@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step4core17MintBGMControllerFRQ43scn4step4core13BGMController
 Register__Q43scn4step4core17MintBGMControllerFRQ43scn4step4core13BGMController:
 /* 802775AC 002733EC  90 6D F1 E8 */	stw r3, t_obj__Q43scn4step4core31$$2unnamed$$2MintBGMController_cpp$$2-_SDA_BASE_(r13)
@@ -67,7 +67,7 @@ __sinit_$$3MintBGMController_cpp:
 /* 80277634 00273474  38 6D F1 E8 */	addi r3, r13, t_obj__Q43scn4step4core31$$2unnamed$$2MintBGMController_cpp$$2-_SDA_BASE_
 /* 80277638 00273478  4B E6 5D A8 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024B4, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

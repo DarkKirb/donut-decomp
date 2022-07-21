@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7blipper10BrainChaseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7blipper10BrainChaseFRQ43scn4step5enemy5Enemy:
 /* 80298A2C 0029486C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -91,7 +91,7 @@ onRecover__Q53scn4step5enemy7blipper10BrainChaseFv:
 __dt__Q53scn4step5enemy7blipper10BrainChaseFv:
 /* 80298B50 00294990  4B FF 85 1C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6degout10BrainChaseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6degout10BrainChaseFRQ43scn4step5enemy5Enemy:
 /* 802ACF3C 002A8D7C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -221,7 +221,7 @@ lbl_802AD0CC:
 __dt__Q53scn4step5enemy6degout10BrainChaseFv:
 /* 802AD0EC 002A8F2C  4B FE 3F 80 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7mumbies10BrainChaseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7mumbies10BrainChaseFRQ43scn4step5enemy5Enemy:
 /* 802C4CEC 002C0B2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -285,7 +285,7 @@ onRecover__Q53scn4step5enemy7mumbies10BrainChaseFv:
 __dt__Q53scn4step5enemy7mumbies10BrainChaseFv:
 /* 802C4DB0 002C0BF0  4B FC C2 BC */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6scarfy10BrainChaseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6scarfy10BrainChaseFRQ43scn4step5enemy5Enemy:
 /* 802D94A0 002D52E0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -479,7 +479,7 @@ __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15Sta
 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateAngerChase$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 802D96FC 002D553C  4B F5 4F A4 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5sheld10BrainChaseFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5sheld10BrainChaseFRQ43scn4step5enemy5Enemy:
 /* 802DC83C 002D867C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -616,22 +616,22 @@ lbl_802DC9E4:
 __dt__Q53scn4step5enemy5sheld10BrainChaseFv:
 /* 802DCA00 002D8840  4B FB 46 6C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7blipper10BrainChase
 __vt__Q53scn4step5enemy7blipper10BrainChase:
 	.incbin "baserom.dol", 0x46FD10, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6degout10BrainChase
 __vt__Q53scn4step5enemy6degout10BrainChase:
 	.incbin "baserom.dol", 0x471F88, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7mumbies10BrainChase
 __vt__Q53scn4step5enemy7mumbies10BrainChase:
 	.incbin "baserom.dol", 0x4751D8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateAngerChase$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy15StateAngerChase$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x477438, 0x10
@@ -645,7 +645,7 @@ __vt__Q24util94StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy6scarfy10Sta
 __vt__Q53scn4step5enemy6scarfy10BrainChase:
 	.incbin "baserom.dol", 0x477468, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld10BrainChase
 __vt__Q53scn4step5enemy5sheld10BrainChase:
 	.incbin "baserom.dol", 0x477AA0, 0x20

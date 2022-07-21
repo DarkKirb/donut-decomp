@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle9TitleInfoFRQ33scn14challengetitle9Component
 __ct__Q33scn14challengetitle9TitleInfoFRQ33scn14challengetitle9Component:
 /* 801EFDE8 001EBC28  94 21 FE 60 */	stwu r1, -0x1a0(r1)
@@ -457,7 +457,7 @@ lbl_801F03C8:
 /* 801F0454 001EC294  38 21 00 80 */	addi r1, r1, 0x80
 /* 801F0458 001EC298  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle9TitleInfoFRQ33scn10grandtitle9Component
 __ct__Q33scn10grandtitle9TitleInfoFRQ33scn10grandtitle9Component:
 /* 80206658 00202498  94 21 FE 80 */	stwu r1, -0x180(r1)
@@ -952,7 +952,7 @@ lbl_80206D3C:
 /* 80206D48 00202B88  38 21 00 10 */	addi r1, r1, 0x10
 /* 80206D4C 00202B8C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252920
 $$252920:
 	.incbin "baserom.dol", 0x45AF88, 0x14
@@ -981,7 +981,7 @@ $$253793:
 $$253794:
 	.incbin "baserom.dol", 0x45AFFC, 0x3C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252919
 $$252919:
 	.incbin "baserom.dol", 0x45CB98, 0x10
@@ -1007,7 +1007,7 @@ $$253844:
 $$253845:
 	.incbin "baserom.dol", 0x45CBFC, 0x3C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253700
 $$253700:
 	.incbin "baserom.dol", 0x494188, 0x8
@@ -1027,7 +1027,7 @@ $$253765:
 $$253795:
 	.incbin "baserom.dol", 0x4941B0, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253746
 $$253746:
 	.incbin "baserom.dol", 0x494828, 0x8
@@ -1047,7 +1047,7 @@ $$253812:
 $$253846:
 	.incbin "baserom.dol", 0x494850, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2:
 	.incbin "baserom.dol", 0x49A958, 0x4
@@ -1055,7 +1055,7 @@ T_LYT_RES_PATH__Q33scn14challengetitle23$$2unnamed$$2TitleInfo_cpp$$2:
 $$253755:
 	.incbin "baserom.dol", 0x49A95C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2
 T_LYT_RES_PATH__Q33scn10grandtitle23$$2unnamed$$2TitleInfo_cpp$$2:
 	.incbin "baserom.dol", 0x49AB30, 0x4

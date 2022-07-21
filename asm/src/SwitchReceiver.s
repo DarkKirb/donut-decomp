@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step7gimmick14SwitchReceiverFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManager
 __ct__Q43scn4step7gimmick14SwitchReceiverFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManager:
 /* 802F7BBC 002F39FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -110,7 +110,7 @@ onSwitchOff__Q43scn4step7gimmick14SwitchReceiverFv:
 onSwitchOn__Q43scn4step7gimmick14SwitchReceiverFv:
 /* 802F7D00 002F3B40  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step7gimmick14SwitchReceiver
 __vt__Q43scn4step7gimmick14SwitchReceiver:
 	.incbin "baserom.dol", 0x47B090, 0x20

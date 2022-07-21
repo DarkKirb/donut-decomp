@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step3map8DataFileFQ43scn4step3map4Kind
 __ct__Q43scn4step3map8DataFileFQ43scn4step3map4Kind:
 /* 803C9A3C 003C587C  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -28,7 +28,7 @@ __ct__Q43scn4step3map8DataFileFQ43scn4step3map4Kind:
 .global isValid__Q43scn4step3map8DataFileCFv
 isValid__Q43scn4step3map8DataFileCFv:
 /* 803C9A90 003C58D0  38 63 00 04 */	addi r3, r3, 4
-/* 803C9A94 003C58D4  4B DB D6 D8 */	b isValidData__Q25xdata5XDataCFv
+/* 803C9A94 003C58D4  4B DB D6 D8 */	b isValidData__Q25.dataXDataCFv
 
 .global accessor__Q43scn4step3map8DataFileCFv
 accessor__Q43scn4step3map8DataFileCFv:
@@ -54,7 +54,7 @@ reference__Q43scn4step3map8DataFileCFUi:
 /* 803C9AD8 003C5918  7C 7E 1B 78 */	mr r30, r3
 /* 803C9ADC 003C591C  7C 9F 23 78 */	mr r31, r4
 /* 803C9AE0 003C5920  38 63 00 04 */	addi r3, r3, 4
-/* 803C9AE4 003C5924  4B DB D6 89 */	bl isValidData__Q25xdata5XDataCFv
+/* 803C9AE4 003C5924  4B DB D6 89 */	bl isValidData__Q25.dataXDataCFv
 /* 803C9AE8 003C5928  2C 03 00 00 */	cmpwi r3, 0
 /* 803C9AEC 003C592C  40 82 00 0C */	bne lbl_803C9AF8
 /* 803C9AF0 003C5930  38 60 00 00 */	li r3, 0
@@ -98,7 +98,7 @@ construct__Q43scn4step3map8DataFileFv:
 /* 803C9B6C 003C59AC  38 81 00 0C */	addi r4, r1, 0xc
 /* 803C9B70 003C59B0  4B D8 24 ED */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
 /* 803C9B74 003C59B4  38 7F 00 04 */	addi r3, r31, 4
-/* 803C9B78 003C59B8  4B DB D5 F5 */	bl isValidData__Q25xdata5XDataCFv
+/* 803C9B78 003C59B8  4B DB D5 F5 */	bl isValidData__Q25.dataXDataCFv
 /* 803C9B7C 003C59BC  2C 03 00 00 */	cmpwi r3, 0
 /* 803C9B80 003C59C0  41 82 00 44 */	beq lbl_803C9BC4
 /* 803C9B84 003C59C4  7F E3 FB 78 */	mr r3, r31

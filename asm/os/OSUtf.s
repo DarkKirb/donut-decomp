@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSUTF8to32
 OSUTF8to32:
 /* 80025F70 00021DB0  88 C3 00 00 */	lbz r6, 0(r3)
@@ -188,7 +188,7 @@ lbl_800261B8:
 /* 800261B8 00021FF8  38 60 00 00 */	li r3, 0
 /* 800261BC 00021FFC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global UcsAnsiTable
 UcsAnsiTable:
 	.incbin "baserom.dol", 0x41FB00, 0x40

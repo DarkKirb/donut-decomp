@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global isDefaultPosKind__Q43scn4step4hero27$$2unnamed$$2FormationUtil_cpp$$2FQ43scn4step4hero4Kind
 isDefaultPosKind__Q43scn4step4hero27$$2unnamed$$2FormationUtil_cpp$$2FQ43scn4step4hero4Kind:
 /* 80336F48 00332D88  38 03 FF FC */	addi r0, r3, -4

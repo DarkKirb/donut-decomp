@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text0, "ax"  # 0x80004000 - 0x80006740
+.section .init, "ax"  # 0x80004000 - 0x80006740
 .global __init_hardware
 __init_hardware:
 /* 80006620 00002720  7C 00 00 A6 */	mfmsr r0
@@ -33,7 +33,7 @@ lbl_80006664:
 /* 8000667C 0000277C  4C 00 01 2C */	isync 
 /* 80006680 00002780  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __init_user
 __init_user:
 /* 80028530 00024370  94 21 FF F0 */	stwu r1, -0x10(r1)

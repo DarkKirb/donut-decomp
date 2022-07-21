@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl
 Register__Q43scn4step5chara11MintObjCollFRQ43scn4step5chara7ObjColl:
 /* 8026FE90 0026BCD0  90 6D F1 D0 */	stw r3, t_obj__Q43scn4step5chara25$$2unnamed$$2MintObjColl_cpp$$2-_SDA_BASE_(r13)
@@ -644,7 +644,7 @@ __sinit_$$3MintObjColl_cpp:
 /* 80270684 0026C4C4  38 6D F1 D0 */	addi r3, r13, t_obj__Q43scn4step5chara25$$2unnamed$$2MintObjColl_cpp$$2-_SDA_BASE_
 /* 80270688 0026C4C8  4B E6 CD 58 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_obj__Q43scn4step4hero25$$2unnamed$$2MintObjColl_cpp$$2Fv
 t_obj__Q43scn4step4hero25$$2unnamed$$2MintObjColl_cpp$$2Fv:
 /* 8034B9F0 00347830  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -705,7 +705,7 @@ SetBodyCollJump__Q43scn4step4hero11MintObjCollFv:
 /* 8034BA9C 003478DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8034BAA0 003478E0  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4024A8, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

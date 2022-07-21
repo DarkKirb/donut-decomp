@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global init__Q27storage15BackupFileData2Fv
 init__Q27storage15BackupFileData2Fv:
 /* 804042FC 0040013C  38 80 00 00 */	li r4, 0
@@ -393,7 +393,7 @@ lbl_804047DC:
 /* 804047DC 0040061C  38 21 00 20 */	addi r1, r1, 0x20
 /* 804047E0 00400620  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global UseMaster1AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2
 UseMaster1AbilityTbl__Q27storage29$$2unnamed$$2BackupFileData2_cpp$$2:
 	.incbin "baserom.dol", 0x41D0C8, 0xC

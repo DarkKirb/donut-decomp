@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global update__Q43scn4step4boss16DamageInvincibleFv
 update__Q43scn4step4boss16DamageInvincibleFv:
 /* 8022F0EC 0022AF2C  80 83 00 04 */	lwz r4, 4(r3)
@@ -106,7 +106,7 @@ lbl_8022F228:
 /* 8022F238 0022B078  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022F23C 0022B07C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30$$2unnamed$$2DamageInvincible_cpp$$2
 T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30$$2unnamed$$2DamageInvincible_cpp$$2:
 	.incbin "baserom.dol", 0x460650, 0x38

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddOn__Q28mintglue26Scn__GrandTitle__CommanderFRQ26mintvm6VMCore
 AddOn__Q28mintglue26Scn__GrandTitle__CommanderFRQ26mintvm6VMCore:
 /* 801C4F0C 001C0D4C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -470,7 +470,7 @@ lbl_801C54BC:
 /* 801C54C8 001C1308  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C54CC 001C130C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256032
 $$256032:
 	.incbin "baserom.dol", 0x4573B8, 0x1C

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_tryToAddCollideTarget__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2FRCQ35mcoll6detail13MoveGridGroupRQ35mcoll6detail18CollideTargetReposQ35mcoll6detail17LandGridShapeKindRCQ45mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfoQ55mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfo8EdgeKindRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q55mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfo8EdgeKindRCQ35mcoll6detail12LandPropertyQ35mcoll6detail13LandAttributeRCQ35mcoll6detail16LandGatherOption
 t_tryToAddCollideTarget__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2FRCQ35mcoll6detail13MoveGridGroupRQ35mcoll6detail18CollideTargetReposQ35mcoll6detail17LandGridShapeKindRCQ45mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfoQ55mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfo8EdgeKindRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2Q55mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$215T_GridShapeInfo8EdgeKindRCQ35mcoll6detail12LandPropertyQ35mcoll6detail13LandAttributeRCQ35mcoll6detail16LandGatherOption:
 /* 801B9D78 001B5BB8  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -2014,15 +2014,15 @@ __sinit_$$3MoveGridGroup_cpp:
 /* 801BBA64 001B78A4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801BBA68 001B78A8  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402430, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2
 T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2:
 	.incbin "baserom.dol", 0x454F68, 0xDD0
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253670
 $$253670:
 	.incbin "baserom.dol", 0x493640, 0x4
@@ -2030,7 +2030,7 @@ $$253670:
 $$253673:
 	.incbin "baserom.dol", 0x493644, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_NORMAL_WALL_L__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2
 T_NORMAL_WALL_L__Q35mcoll6detail27$$2unnamed$$2MoveGridGroup_cpp$$2:
 	.incbin "baserom.dol", 0x49A638, 0x4

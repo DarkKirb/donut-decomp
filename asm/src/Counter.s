@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero7CounterFUlUl
 __ct__Q43scn4step4hero7CounterFUlUl:
 /* 80334540 00330380  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -69,7 +69,7 @@ addPointStarCount__Q43scn4step4hero7CounterFUl:
 /* 80334624 00330464  38 21 00 20 */	addi r1, r1, 0x20
 /* 80334628 00330468  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_COUNT_MAX__Q43scn4step4hero21$$2unnamed$$2Counter_cpp$$2
 T_COUNT_MAX__Q43scn4step4hero21$$2unnamed$$2Counter_cpp$$2:
 	.incbin "baserom.dol", 0x49D6C8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global waitReady__Q23mov11MoviePlayerCFv
 waitReady__Q23mov11MoviePlayerCFv:
 /* 801CFA28 001CB868  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -824,7 +824,7 @@ lbl_801D0544:
 /* 801D0554 001CC394  38 21 00 50 */	addi r1, r1, 0x50
 /* 801D0558 001CC398  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$250121
 $$250121:
 	.incbin "baserom.dol", 0x459140, 0x30

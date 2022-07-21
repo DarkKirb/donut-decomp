@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_allocatorRef__31$$2unnamed$$2OperatorNewDelete_cpp$$2Fv
 t_allocatorRef__31$$2unnamed$$2OperatorNewDelete_cpp$$2Fv:
 /* 801BF618 001BB458  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -120,7 +120,7 @@ __sinit_$$3OperatorNewDelete_cpp:
 /* 801BF758 001BB598  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BF75C 001BB59C  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402438, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

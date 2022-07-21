@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d10CharaModelFRCQ23g3d17CharaModelContext
 __ct__Q23g3d10CharaModelFRCQ23g3d17CharaModelContext:
 /* 8018CF8C 00188DCC  94 21 FF 10 */	stwu r1, -0xf0(r1)
@@ -610,7 +610,7 @@ onDirty__Q23g3d10CharaModelFv:
 /* 8018D758 00189598  98 03 01 60 */	stb r0, 0x160(r3)
 /* 8018D75C 0018959C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23g3d10CharaModel
 __vt__Q23g3d10CharaModel:
 	.incbin "baserom.dol", 0x450480, 0x10

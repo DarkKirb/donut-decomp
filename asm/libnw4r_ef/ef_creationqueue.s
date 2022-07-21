@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global AddParticleCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3
 AddParticleCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3:
 /* 800B4690 000B04D0  94 21 FF D0 */	stwu r1, -0x30(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global nandOpen
 nandOpen:
 /* 800492A0 000450E0  94 21 FF A0 */	stwu r1, -0x60(r1)

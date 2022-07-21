@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXCPInterruptHandler
 GXCPInterruptHandler:
 /* 80032DB0 0002EBF0  94 21 FD 20 */	stwu r1, -0x2e0(r1)
@@ -692,7 +692,7 @@ GXResetOverflowCount:
 /* 80033798 0002F5D8  90 0D E5 DC */	stw r0, __GXOverflowCount-_SDA_BASE_(r13)
 /* 8003379C 0002F5DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21961
 $$21961:
 	.incbin "baserom.dol", 0x42CB40, 0x18

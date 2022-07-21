@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss12creditdedede9StateHideFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss12creditdedede9StateHideFPQ43scn4step4boss4Boss:
 /* 80247D3C 00243B7C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -108,7 +108,7 @@ procMove__Q53scn4step4boss12creditdedede9StateHideFv:
 procFixPos__Q53scn4step4boss12creditdedede9StateHideFv:
 /* 80247EA0 00243CE0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss9creditdee9StateHideFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss9creditdee9StateHideFPQ43scn4step4boss4Boss:
 /* 80248EE8 00244D28  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -340,7 +340,7 @@ requestDee__Q53scn4step4boss9creditdee9StateHideFv:
 /* 80249210 00245050  38 21 00 90 */	addi r1, r1, 0x90
 /* 80249214 00245054  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss10creditmeta9StateHideFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss10creditmeta9StateHideFPQ43scn4step4boss4Boss:
 /* 8024ABA8 002469E8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -448,7 +448,7 @@ procMove__Q53scn4step4boss10creditmeta9StateHideFv:
 procFixPos__Q53scn4step4boss10creditmeta9StateHideFv:
 /* 8024AD0C 00246B4C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss10creditroah9StateHideFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss10creditroah9StateHideFPQ43scn4step4boss4Boss:
 /* 8024BF5C 00247D9C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -552,22 +552,22 @@ procMove__Q53scn4step4boss10creditroah9StateHideFv:
 procFixPos__Q53scn4step4boss10creditroah9StateHideFv:
 /* 8024C0B4 00247EF4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss12creditdedede9StateHide
 __vt__Q53scn4step4boss12creditdedede9StateHide:
 	.incbin "baserom.dol", 0x462840, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss9creditdee9StateHide
 __vt__Q53scn4step4boss9creditdee9StateHide:
 	.incbin "baserom.dol", 0x462C40, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditmeta9StateHide
 __vt__Q53scn4step4boss10creditmeta9StateHide:
 	.incbin "baserom.dol", 0x463020, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss10creditroah9StateHide
 __vt__Q53scn4step4boss10creditroah9StateHide:
 	.incbin "baserom.dol", 0x4632E8, 0x20

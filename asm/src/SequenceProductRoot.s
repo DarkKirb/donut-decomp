@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q23seq19SequenceProductRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q23seq19SequenceProductRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 803FF424 003FB264  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -399,7 +399,7 @@ GetRuntimeTypeInfo__Q23seq19SequenceProductRootCFv:
 __dt__Q23seq19SequenceProductRootFv:
 /* 803FF968 003FB7A8  4B FF D5 64 */	b __dt__Q23seq21SequenceChallengeRootFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq19SequenceProductRoot
 __vt__Q23seq19SequenceProductRoot:
 	.incbin "baserom.dol", 0x4925A0, 0x28

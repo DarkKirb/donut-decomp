@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10brontoburt19BrainFlyFarSinCurveFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10brontoburt19BrainFlyFarSinCurveFRQ43scn4step5enemy5Enemy:
 /* 8029EDEC 0029AC2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -79,7 +79,7 @@ __dt__Q53scn4step5enemy10brontoburt19BrainFlyFarSinCurveFv:
 __dt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve$$4PQ43scn4step5enemy5Enemy$$1Fv:
 /* 8029EEE0 0029AD20  4B F8 F7 C0 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve$$4PQ43scn4step5enemy5Enemy$$1
 __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve$$4PQ43scn4step5enemy5Enemy$$1:
 	.incbin "baserom.dol", 0x470940, 0x10
@@ -87,7 +87,7 @@ __vt__Q24util108StateFactoryArg1$$0Q24util6IState$$4Q53scn4step5enemy10brontobur
 __vt__Q53scn4step5enemy10brontoburt19BrainFlyFarSinCurve:
 	.incbin "baserom.dol", 0x470950, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254881
 $$254881:
 	.incbin "baserom.dol", 0x49BEC8, 0x8

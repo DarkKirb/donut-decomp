@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetStartAnimName__Q53scn4step7gimmick8warpstar22$$2unnamed$$2WarpStar_cpp$$2FQ33scn4step9LevelKind
 GetStartAnimName__Q53scn4step7gimmick8warpstar22$$2unnamed$$2WarpStar_cpp$$2FQ33scn4step9LevelKind:
 /* 80328CA4 00324AE4  2C 03 00 00 */	cmpwi r3, 0
@@ -1014,7 +1014,7 @@ lbl_80329AB8:
 /* 80329AC4 00325904  38 21 00 10 */	addi r1, r1, 0x10
 /* 80329AC8 00325908  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253974
 $$253974:
 	.incbin "baserom.dol", 0x47E6A0, 0xC
@@ -1049,7 +1049,7 @@ $$254131:
 $$254132:
 	.incbin "baserom.dol", 0x47E75C, 0x74
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253966
 $$253966:
 	.incbin "baserom.dol", 0x496D70, 0x8
@@ -1084,7 +1084,7 @@ $$254113:
 $$254114:
 	.incbin "baserom.dol", 0x496DC0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254115
 $$254115:
 	.incbin "baserom.dol", 0x49D5E8, 0x4

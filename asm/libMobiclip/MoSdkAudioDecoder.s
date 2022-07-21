@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__20MoSdkAudioRepositoryFv
 __ct__20MoSdkAudioRepositoryFv:
 /* 80151E70 0014DCB0  38 00 00 00 */	li r0, 0
@@ -266,7 +266,7 @@ lbl_801521CC:
 /* 801521E8 0014E028  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 801521EC 0014E02C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22532
 $$22532:
 	.incbin "baserom.dol", 0x4442F8, 0x1C

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRKSaveExtended1Block
 TRKSaveExtended1Block:
 /* 80016BDC 00012A1C  3C 40 80 49 */	lis r2, gTRKCPUState@h

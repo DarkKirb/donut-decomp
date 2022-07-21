@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global VX2Intra8Mode2__FPUciUl
 VX2Intra8Mode2__FPUciUl:
 /* 801614C0 0015D300  81 05 0A 08 */	lwz r8, 0xa08(r5)
@@ -2084,7 +2084,7 @@ VX2InitIntra__FR14VX2DecoderData:
 /* 80163338 0015F178  4E 80 00 20 */	blr 
 /* 8016333C 0015F17C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global InvCbpTable
 InvCbpTable:
 	.incbin "baserom.dol", 0x40B4A8, 0x200

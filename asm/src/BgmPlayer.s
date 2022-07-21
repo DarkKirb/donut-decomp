@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23snd9BgmPlayerFRQ34nw4r3snd15DvdSoundArchiveRQ34nw4r3snd18SoundArchivePlayer
 __ct__Q23snd9BgmPlayerFRQ34nw4r3snd15DvdSoundArchiveRQ34nw4r3snd18SoundArchivePlayer:
 /* 80402654 003FE494  90 83 00 00 */	stw r4, 0(r3)
@@ -321,7 +321,7 @@ volumeFade__Q23snd9BgmPlayerFfi:
 /* 80402A34 003FE874  38 63 00 08 */	addi r3, r3, 8
 /* 80402A38 003FE878  4B FF FF D8 */	b SetVolume__Q34nw4r3snd11SoundHandleFfi
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249146
 $$249146:
 	.incbin "baserom.dol", 0x49EE98, 0x4

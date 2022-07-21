@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q24gobj10TargetDescFb
 Create__Q24gobj10TargetDescFb:
 /* 8019C14C 00197F8C  54 60 06 3E */	clrlwi r0, r3, 0x18

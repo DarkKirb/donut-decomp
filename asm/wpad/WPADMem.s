@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global WPADiClearMemBlock
 WPADiClearMemBlock:
 /* 80064DC0 00060C00  3C 80 80 4C */	lis r4, __rvl_p_wpadcb@ha

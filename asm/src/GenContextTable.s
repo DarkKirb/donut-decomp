@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail15GenContextTableFRQ23mem10IAllocatorUl
 __ct__Q36effect6detail15GenContextTableFRQ23mem10IAllocatorUl:
 /* 8018170C 0017D54C  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -341,7 +341,7 @@ lbl_80181B84:
 /* 80181B98 0017D9D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 80181B9C 0017D9DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$249762
 $$249762:
 	.incbin "baserom.dol", 0x44F4F0, 0x18

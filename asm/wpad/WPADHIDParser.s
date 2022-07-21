@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __wpadAbortInitExtension
 __wpadAbortInitExtension:
 /* 8005EC90 0005AAD0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -5694,7 +5694,7 @@ __a1_unused_report:
 /* 80063EF8 0005FD38  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80063EFC 0005FD3C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global _cExtInvalidData
 _cExtInvalidData:
 	.incbin "baserom.dol", 0x403EB8, 0x18
@@ -5702,7 +5702,7 @@ _cExtInvalidData:
 _cExtInvalidData2:
 	.incbin "baserom.dol", 0x403ED0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __a1_input_reports_array
 __a1_input_reports_array:
 	.incbin "baserom.dol", 0x434918, 0x80
@@ -5713,7 +5713,7 @@ $$25371:
 $$25370:
 	.incbin "baserom.dol", 0x4349C8, 0x50
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23033
 $$23033:
 	.incbin "baserom.dol", 0x499290, 0x4

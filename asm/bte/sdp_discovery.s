@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global sdpu_build_uuid_seq
 sdpu_build_uuid_seq:
 /* 8009E2C4 0009A104  38 00 00 35 */	li r0, 0x35
@@ -1323,7 +1323,7 @@ lbl_8009F524:
 /* 8009F534 0009B374  38 21 00 40 */	addi r1, r1, 0x40
 /* 8009F538 0009B378  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21493
 $$21493:
 	.incbin "baserom.dol", 0x43BB38, 0x28

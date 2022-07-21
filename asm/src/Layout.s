@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext
 __ct__Q23lyt6LayoutFRCQ23lyt13LayoutContext:
 /* 801AC190 001A7FD0  94 21 F9 E0 */	stwu r1, -0x620(r1)
@@ -2070,7 +2070,7 @@ lbl_801ADCD4:
 /* 801ADD5C 001A9B9C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801ADD60 001A9BA0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255792
 $$255792:
 	.incbin "baserom.dol", 0x453970, 0x10
@@ -2111,7 +2111,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout
 $$2STRING$$2GetBack__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q23lyt6Layout$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x453A7C, 0xC
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255793
 $$255793:
 	.incbin "baserom.dol", 0x493538, 0x4
@@ -2125,7 +2125,7 @@ $$256337:
 $$256338:
 	.incbin "baserom.dol", 0x493548, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256461
 $$256461:
 	.incbin "baserom.dol", 0x49A4C0, 0x8

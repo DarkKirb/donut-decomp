@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero3mix14ShuffleManagerFRQ33scn4step9Component
 __ct__Q53scn4step4hero3mix14ShuffleManagerFRQ33scn4step9Component:
 /* 80385AA4 003818E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -605,12 +605,12 @@ lbl_80386268:
 /* 803862A4 003820E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803862A8 003820E8  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_ABILITY_SET__Q53scn4step4hero3mix28$$2unnamed$$2ShuffleManager_cpp$$2
 T_ABILITY_SET__Q53scn4step4hero3mix28$$2unnamed$$2ShuffleManager_cpp$$2:
 	.incbin "baserom.dol", 0x41BD18, 0x100
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252304
 $$252304:
 	.incbin "baserom.dol", 0x488F30, 0xC
@@ -624,7 +624,7 @@ $$253467:
 $$253478:
 	.incbin "baserom.dol", 0x488F78, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252280
 $$252280:
 	.incbin "baserom.dol", 0x497738, 0x8

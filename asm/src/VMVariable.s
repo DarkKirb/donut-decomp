@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global sizeOf__Q26mintvm10VMVariableCFRCQ26mintvm6VMCore
 sizeOf__Q26mintvm10VMVariableCFRCQ26mintvm6VMCore:
 /* 801CDDA8 001C9BE8  7C 65 1B 78 */	mr r5, r3

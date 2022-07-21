@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero8inactive9StateInitFPQ43scn4step4hero12InactiveHero
 __ct__Q53scn4step4hero8inactive9StateInitFPQ43scn4step4hero12InactiveHero:
 /* 8035D268 003590A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -231,7 +231,7 @@ lbl_8035D578:
 /* 8035D588 003593C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035D58C 003593CC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero11staffcredit9StateInitFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero11staffcredit9StateInitFPQ43scn4step4hero4Hero:
 /* 803A3C74 0039FAB4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -380,17 +380,17 @@ procMove__Q53scn4step4hero11staffcredit9StateInitFv:
 procFixPos__Q53scn4step4hero11staffcredit9StateInitFv:
 /* 803A3E7C 0039FCBC  4B FB CA 04 */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero8inactive9StateInit
 __vt__Q53scn4step4hero8inactive9StateInit:
 	.incbin "baserom.dol", 0x487A58, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero11staffcredit9StateInit
 __vt__Q53scn4step4hero11staffcredit9StateInit:
 	.incbin "baserom.dol", 0x48B0E8, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259466
 $$259466:
 	.incbin "baserom.dol", 0x49E3A0, 0x8

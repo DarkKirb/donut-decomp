@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail13SeqFileReaderFPCv
 __ct__Q44nw4r3snd6detail13SeqFileReaderFPCv:
 /* 8010C0B0 00107EF0  38 00 00 00 */	li r0, 0

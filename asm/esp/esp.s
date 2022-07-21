@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ESP_InitLib
 ESP_InitLib:
 /* 800A2020 0009DE60  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -456,7 +456,7 @@ lbl_800A2628:
 /* 800A2638 0009E478  7D 41 53 78 */	mr r1, r10
 /* 800A263C 0009E47C  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __esFd
 __esFd:
 	.incbin "baserom.dol", 0x492D28, 0x8

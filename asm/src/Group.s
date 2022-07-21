@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26effect5GroupFRQ26effect7Manager
 __ct__Q26effect5GroupFRQ26effect7Manager:
 /* 8017DE08 00179C48  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -555,7 +555,7 @@ lbl_8017E518:
 /* 8017E534 0017A374  38 21 00 20 */	addi r1, r1, 0x20
 /* 8017E538 0017A378  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Empty__Q34nw4r3g3d8ScnGroupCFv
 Empty__Q34nw4r3g3d8ScnGroupCFv:
 /* 8018E63C 0018A47C  80 03 00 E4 */	lwz r0, 0xe4(r3)
@@ -563,7 +563,7 @@ Empty__Q34nw4r3g3d8ScnGroupCFv:
 /* 8018E644 0018A484  54 03 D9 7E */	srwi r3, r0, 5
 /* 8018E648 0018A488  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q36effect6detail6Effect$$4Q26effect5Group$$1$$40$$1FPQ24util52ObjListNode$$0Q36effect6detail6Effect$$4Q26effect5Group$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut73LinkList$$0Q24util52ObjListNode$$0Q36effect6detail6Effect$$4Q26effect5Group$$1$$40$$1FPQ24util52ObjListNode$$0Q36effect6detail6Effect$$4Q26effect5Group$$1$$20:
 	.incbin "baserom.dol", 0x44F2A0, 0x24

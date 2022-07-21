@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global l2cu_allocate_lcb
 l2cu_allocate_lcb:
 /* 80094440 00090280  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2210,7 +2210,7 @@ lbl_800962F4:
 /* 800962FC 0009213C  42 00 FF 3C */	bdnz lbl_80096238
 /* 80096300 00092140  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22062
 $$22062:
 	.incbin "baserom.dol", 0x43AC68, 0x1C
@@ -2230,7 +2230,7 @@ $$22327:
 $$22338:
 	.incbin "baserom.dol", 0x43AD28, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$22328
 $$22328:
 	.incbin "baserom.dol", 0x492D00, 0x8

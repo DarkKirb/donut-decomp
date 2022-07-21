@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global sdp_server_handle_client_req
 sdp_server_handle_client_req:
 /* 800A00A8 0009BEE8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -922,7 +922,7 @@ lbl_800A0DA0:
 /* 800A0DB0 0009CBF0  38 21 01 F0 */	addi r1, r1, 0x1f0
 /* 800A0DB4 0009CBF4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21040
 $$21040:
 	.incbin "baserom.dol", 0x43BFF8, 0x24

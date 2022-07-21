@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc
 EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc:
 /* 800DCA10 000D8850  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -3881,20 +3881,20 @@ lbl_800E0018:
 /* 800E0068 000DBEA8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800E006C 000DBEAC  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x40237C, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc$$2envMtx
 $$2LOCAL$$2EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc$$2envMtx:
 	.incbin "baserom.dol", 0x404E88, 0x30
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3g3d8G3DState11IndMtxOpStd
 __vt__Q44nw4r3g3d8G3DState11IndMtxOpStd:
 	.incbin "baserom.dol", 0x43D050, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$213345
 $$213345:
 	.incbin "baserom.dol", 0x492DD8, 0x4
@@ -3902,7 +3902,7 @@ $$213345:
 pG3DStateIndMtxOp__Q44nw4r3g3d8G3DState23$$2unnamed$$2g3d_state_cpp$$2:
 	.incbin "baserom.dol", 0x492DDC, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global cm2hw__Q34nw4r3g3d4fifo
 cm2hw__Q34nw4r3g3d4fifo:
 	.incbin "baserom.dol", 0x499B10, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero11staffcredit13StateLookBossFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero11staffcredit13StateLookBossFPQ43scn4step4hero4Hero:
 /* 803A4634 003A0474  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -539,7 +539,7 @@ __dt__Q24util129StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero11staffcredi
 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateWait$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 803A4D94 003A0BD4  4B E8 99 0C */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateWait$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero11staffcredit9StateWait$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x48B158, 0x10
@@ -550,7 +550,7 @@ __vt__Q24util129StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4hero11staffcredi
 __vt__Q53scn4step4hero11staffcredit13StateLookBoss:
 	.incbin "baserom.dol", 0x48B178, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257405
 $$257405:
 	.incbin "baserom.dol", 0x49E3B0, 0x4

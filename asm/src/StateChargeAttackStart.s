@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFPQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFPQ43scn4step4boss4Boss:
 /* 80253E10 0024FC50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -51,7 +51,7 @@ procMove__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv:
 procFixPos__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv:
 /* 80253E98 0024FCD8  4B FE 41 28 */	b procFixPos__Q53scn4step4boss7bonkers9StateBombFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart
 __vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart:
 	.incbin "baserom.dol", 0x464858, 0x20

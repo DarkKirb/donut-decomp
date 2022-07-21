@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt
 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21$$2unnamed$$2g3d_xsi_cpp$$2FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt:
 /* 800E79F0 000E3830  C0 24 00 04 */	lfs f1, 4(r4)
@@ -838,7 +838,7 @@ lbl_800E85EC:
 /* 800E8608 000E4448  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800E860C 000E444C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable:
 	.incbin "baserom.dol", 0x404F20, 0x1C
@@ -846,7 +846,7 @@ $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3
 $$2LOCAL$$2CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag$$2funcTable$$20:
 	.incbin "baserom.dol", 0x404F3C, 0x1C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$27161
 $$27161:
 	.incbin "baserom.dol", 0x499BD8, 0x4

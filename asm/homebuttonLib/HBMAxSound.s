@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetFreePlayer__24$$2unnamed$$2HBMAxSound_cpp$$2Fi
 GetFreePlayer__24$$2unnamed$$2HBMAxSound_cpp$$2Fi:
 /* 8012B560 001273A0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -818,7 +818,7 @@ SetSoundMode__10homebuttonFUl:
 /* 8012C078 00127EB8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8012C07C 00127EBC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global WT_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2
 WT_FILENAME__24$$2unnamed$$2HBMAxSound_cpp$$2:
 	.incbin "baserom.dol", 0x409F08, 0x14
@@ -835,7 +835,7 @@ $$27518:
 $$27519:
 	.incbin "baserom.dol", 0x409F38, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$26775
 $$26775:
 	.incbin "baserom.dol", 0x43EDC8, 0x18

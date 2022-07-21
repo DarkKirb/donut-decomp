@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Obj__Q53scn4step7gimmick7monitor11MintMonitorFv
 Obj__Q53scn4step7gimmick7monitor11MintMonitorFv:
 /* 803197FC 0031563C  80 6D F7 B8 */	lwz r3, t_obj__Q53scn4step7gimmick7monitor25$$2unnamed$$2MintMonitor_cpp$$2-_SDA_BASE_(r13)
@@ -11,7 +11,7 @@ __sinit_$$3MintMonitor_cpp:
 /* 80319804 00315644  38 6D F7 B8 */	addi r3, r13, t_obj__Q53scn4step7gimmick7monitor25$$2unnamed$$2MintMonitor_cpp$$2-_SDA_BASE_
 /* 80319808 00315648  4B DC 3B D8 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025B4, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

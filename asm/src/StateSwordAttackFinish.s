@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero5sword22StateSwordAttackFinishFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero5sword22StateSwordAttackFinishFPQ43scn4step4hero4Hero:
 /* 80386C08 00382A48  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -266,7 +266,7 @@ create__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword22St
 __dt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword22StateSwordAttackFinish$$4PQ43scn4step4hero4Hero$$1Fv:
 /* 80386FA4 00382DE4  4B EA 76 FC */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword22StateSwordAttackFinish$$4PQ43scn4step4hero4Hero$$1
 __vt__Q24util102StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4hero5sword22StateSwordAttackFinish$$4PQ43scn4step4hero4Hero$$1:
 	.incbin "baserom.dol", 0x489010, 0x10

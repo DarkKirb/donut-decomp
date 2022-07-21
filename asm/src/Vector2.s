@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global length__Q33hel4math7Vector2CFv
 length__Q33hel4math7Vector2CFv:
 /* 8019EF58 0019AD98  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -443,10 +443,10 @@ __sinit_$$3Vector2_cpp:
 /* 8019F504 0019B344  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019F508 0019B348  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402420, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250690
 $$250690:
 	.incbin "baserom.dol", 0x49A3A8, 0x4

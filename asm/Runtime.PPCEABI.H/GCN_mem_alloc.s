@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __sys_free
 __sys_free:
 /* 8000917C 00004FBC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -51,7 +51,7 @@ lbl_8000920C:
 /* 8000922C 0000506C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80009230 00005070  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2stringBase0
 $$2stringBase0:
 	.incbin "baserom.dol", 0x402700, 0x70

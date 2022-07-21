@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero15CaptureAttackerFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero15CaptureAttackerFRQ43scn4step4hero4Hero:
 /* 80331600 0032D440  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -957,7 +957,7 @@ setIgnoreMapColl__Q43scn4step4hero15CaptureAttackerFb:
 /* 80332300 0032E140  98 83 00 44 */	stb r4, 0x44(r3)
 /* 80332304 0032E144  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.incbin "baserom.dol", 0x47FCD0, 0x24
@@ -977,7 +977,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4h
 $$2STRING$$2GetBack__Q34nw4r2ut93LinkList$$0Q24util72ObjListNode$$0Q43scn4step4hero15CaptureAttacker$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x47FD54, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257629
 $$257629:
 	.incbin "baserom.dol", 0x49D698, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __AXFXAllocFunction
 __AXFXAllocFunction:
 /* 80047040 00042E80  7C 64 1B 78 */	mr r4, r3
@@ -33,7 +33,7 @@ AXFXGetHooks:
 /* 80047088 00042EC8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8004708C 00042ECC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __AXFXAlloc
 __AXFXAlloc:
 	.incbin "baserom.dol", 0x492A08, 0x4

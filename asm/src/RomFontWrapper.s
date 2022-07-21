@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23app14RomFontWrapperFv
 __ct__Q23app14RomFontWrapperFv:
 /* 8017B548 00177388  94 21 FF E0 */	stwu r1, -0x20(r1)

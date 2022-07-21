@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurveFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurveFPQ43scn4step5enemy5Enemy:
 /* 8029F870 0029B6B0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -148,12 +148,12 @@ lbl_8029FA08:
 procFixPos__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurveFv:
 /* 8029FA78 0029B8B8  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve
 __vt__Q53scn4step5enemy10brontoburt19StateFlyFarSinCurve:
 	.incbin "baserom.dol", 0x470BA8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256604
 $$256604:
 	.incbin "baserom.dol", 0x49BEE8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcViewNrmMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34
 CalcViewNrmMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34:
 /* 800D3570 000CF3B0  E0 04 80 00 */	psq_l f0, 0(r4), 1, qr0
@@ -210,7 +210,7 @@ lbl_800D37E8:
 /* 800D3878 000CF6B8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800D387C 000CF6BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global det_epsilon__Q34nw4r3g3d6detail
 det_epsilon__Q34nw4r3g3d6detail:
 	.incbin "baserom.dol", 0x499A48, 0x8

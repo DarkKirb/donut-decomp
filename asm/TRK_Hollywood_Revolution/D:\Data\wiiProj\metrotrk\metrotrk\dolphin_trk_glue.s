@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TRKLoadContext
 TRKLoadContext:
 /* 80015D38 00011B78  80 03 00 00 */	lwz r0, 0(r3)
@@ -272,12 +272,12 @@ InitializeProgramEndTrap:
 /* 800160C8 00011F08  38 21 00 10 */	addi r1, r1, 0x10
 /* 800160CC 00011F0C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2stringBase0
 $$2stringBase0:
 	.incbin "baserom.dol", 0x41DC68, 0xE8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global EndofProgramInstruction$631
 EndofProgramInstruction$631:
 	.incbin "baserom.dol", 0x499000, 0x8

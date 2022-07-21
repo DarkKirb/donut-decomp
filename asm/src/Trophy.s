@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn19challengefileselect6TrophyFRQ23mem10IAllocatorRQ23g3d17ResFileRepositoryRQ23g3d4RootUl
 __ct__Q33scn19challengefileselect6TrophyFRQ23mem10IAllocatorRQ23g3d17ResFileRepositoryRQ23g3d4RootUl:
 /* 801E9478 001E52B8  94 21 FB 80 */	stwu r1, -0x480(r1)
@@ -861,15 +861,15 @@ __sinit_$$3Trophy_cpp:
 /* 801EA0C8 001E5F08  C0 62 9E 08 */	lfs f3, $$254071-_SDA2_BASE_(r2)
 /* 801EA0CC 001E5F0C  4B ED 3F F4 */	b __ct__Q34nw4r4math4VEC3Ffff
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402448, 0x4
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$252758
 $$252758:
 	.incbin "baserom.dol", 0x4116F8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252317
 $$252317:
 	.incbin "baserom.dol", 0x45A978, 0x10
@@ -898,7 +898,7 @@ $$253903:
 $$253908:
 	.incbin "baserom.dol", 0x45AA1C, 0x4C
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253905
 $$253905:
 	.incbin "baserom.dol", 0x494060, 0x4
@@ -909,7 +909,7 @@ $$253906:
 $$253909:
 	.incbin "baserom.dol", 0x49406C, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global LAYER_DEPTH__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2
 LAYER_DEPTH__Q33scn19challengefileselect20$$2unnamed$$2Trophy_cpp$$2:
 	.incbin "baserom.dol", 0x49A898, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail10PlayerHeapFv
 __ct__Q44nw4r3snd6detail10PlayerHeapFv:
 /* 8010B260 001070A0  3C 80 80 44 */	lis r4, __vt__Q44nw4r3snd6detail10PlayerHeap@ha
@@ -150,7 +150,7 @@ GetFreeSize__Q44nw4r3snd6detail10PlayerHeapCFv:
 /* 8010B458 00107298  7C 64 00 50 */	subf r3, r4, r0
 /* 8010B45C 0010729C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10PlayerHeap
 __vt__Q44nw4r3snd6detail10PlayerHeap:
 	.incbin "baserom.dol", 0x43E468, 0x10

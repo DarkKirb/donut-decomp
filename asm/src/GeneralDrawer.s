@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5debug13GeneralDrawerFRQ33scn4step9Component
 __ct__Q43scn4step5debug13GeneralDrawerFRQ33scn4step9Component:
 /* 8027A5D0 00276410  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -286,7 +286,7 @@ lbl_8027A994:
 /* 8027A9A4 002767E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8027A9A8 002767E8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global DEFAULT_COLOR__Q43scn4step5debug27$$2unnamed$$2GeneralDrawer_cpp$$2
 DEFAULT_COLOR__Q43scn4step5debug27$$2unnamed$$2GeneralDrawer_cpp$$2:
 	.incbin "baserom.dol", 0x49B920, 0x4

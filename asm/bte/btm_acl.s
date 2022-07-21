@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global btm_acl_init
 btm_acl_init:
 /* 8007DDE4 00079C24  3C 60 80 4F */	lis r3, btm_cb@ha
@@ -2156,7 +2156,7 @@ lbl_8007FB10:
 /* 8007FB20 0007B960  38 21 00 40 */	addi r1, r1, 0x40
 /* 8007FB24 0007B964  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22591
 $$22591:
 	.incbin "baserom.dol", 0x4377B0, 0x40

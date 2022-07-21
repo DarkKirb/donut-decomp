@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q43scn4step6weapon7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q43scn4step6weapon7ICustom$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 80239E30 00235C70  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1171,7 +1171,7 @@ lbl_8023AE40:
 /* 8023AE50 00236C90  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023AE54 00236C94  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x461548, 0x24
@@ -1179,7 +1179,7 @@ $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q4
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut85LinkList$$0Q24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util64ObjListNode$$0Q43scn4step6weapon6Weapon$$4Q24util16ObjListDummyType$$1:
 	.incbin "baserom.dol", 0x46156C, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$259619
 $$259619:
 	.incbin "baserom.dol", 0x49AFA8, 0x4

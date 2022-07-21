@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TPLBind
 TPLBind:
 /* 800A1E00 0009DC40  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -151,17 +151,17 @@ TPLGetGXTexObjFromPalette:
 /* 800A2018 0009DE58  38 21 00 30 */	addi r1, r1, 0x30
 /* 800A201C 0009DE5C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2773
 $$2773:
 	.incbin "baserom.dol", 0x43C130, 0x30
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$2772
 $$2772:
 	.incbin "baserom.dol", 0x492D20, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$2795
 $$2795:
 	.incbin "baserom.dol", 0x4994A0, 0x8

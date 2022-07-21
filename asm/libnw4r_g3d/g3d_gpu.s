@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GDSetGenMode2__Q34nw4r3g3d4fifoFUcUcUcUc11_GXCullMode
 GDSetGenMode2__Q34nw4r3g3d4fifoFUcUcUcUc11_GXCullMode:
 /* 800DBF50 000D7D90  3D 40 CC 01 */	lis r10, 0xCC008000@ha
@@ -355,7 +355,7 @@ GDLoadTexMtxImm3x3__Q34nw4r3g3d4fifoFRCQ34nw4r4math5MTX33Ul:
 /* 800DC468 000D82A8  38 21 00 40 */	addi r1, r1, 0x40
 /* 800DC46C 000D82AC  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global cm2hw__Q34nw4r3g3d4fifo
 cm2hw__Q34nw4r3g3d4fifo:
 	.incbin "baserom.dol", 0x499AF0, 0x4

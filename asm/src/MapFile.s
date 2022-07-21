@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MapFile_Exists__6freezeFv
 MapFile_Exists__6freezeFv:
 /* 8018B16C 00186FAC  80 6D ED 80 */	lwz r3, sMapFileList__6freeze-_SDA_BASE_(r13)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26effect9RequestorFRQ26effect7Manager
 __ct__Q26effect9RequestorFRQ26effect7Manager:
 /* 8017E670 0017A4B0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -615,7 +615,7 @@ lbl_8017EE98:
 /* 8017EEA4 0017ACE4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017EEA8 0017ACE8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6effect9RequestorFRQ43scn4step6effect7ManagerQ43scn4step6effect12DrawPriority
 __ct__Q43scn4step6effect9RequestorFRQ43scn4step6effect7ManagerQ43scn4step6effect12DrawPriority:
 /* 8027AFEC 00276E2C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -758,7 +758,7 @@ native__Q43scn4step6effect9RequestorFv:
 /* 8027B120 00276F60  38 63 00 04 */	addi r3, r3, 4
 /* 8027B124 00276F64  4B DA 93 7C */	b DefaultSwitchThreadCallback
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5ostop9RequestorFRQ33scn4step9Component
 __ct__Q43scn4step5ostop9RequestorFRQ33scn4step9Component:
 /* 803CAD40 003C6B80  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -911,7 +911,7 @@ isActive__Q43scn4step5ostop9RequestorCFv:
 /* 803CAF30 003C6D70  38 63 00 04 */	addi r3, r3, 4
 /* 803CAF34 003C6D74  4B DB 67 A0 */	b dataType__Q36effect6detail10GenContextCFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20
 $$2STRING$$2GetPointerFromNode__Q34nw4r2ut77LinkList$$0Q24util56ObjListNode$$0Q36effect6detail6Effect$$4Q26effect9Requestor$$1$$40$$1FPQ34nw4r2ut12LinkListNode$$20:
 	.incbin "baserom.dol", 0x44F360, 0x24

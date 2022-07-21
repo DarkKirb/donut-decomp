@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26freeze13FreezeHandlerFRQ26freeze7ConsolePUcPUc
 __ct__Q26freeze13FreezeHandlerFRQ26freeze7ConsolePUcPUc:
 /* 8018A2D0 00186110  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -180,7 +180,7 @@ lbl_8018A538:
 /* 8018A540 00186380  7C C3 33 78 */	mr r3, r6
 /* 8018A544 00186384  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20
 $$2STRING$$2Console_SetVisible__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadb$$20:
 	.incbin "baserom.dol", 0x44FFB8, 0x24

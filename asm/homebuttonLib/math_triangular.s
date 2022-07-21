@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SinFIdx__Q26nw4hbm4mathFf
 SinFIdx__Q26nw4hbm4mathFf:
 /* 8013FB20 0013B960  3C 60 80 41 */	lis r3, $$22723@ha
@@ -198,7 +198,7 @@ lbl_8013FDC8:
 /* 8013FDC8 0013BC08  38 21 00 20 */	addi r1, r1, 0x20
 /* 8013FDCC 0013BC0C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$22723
 $$22723:
 	.incbin "baserom.dol", 0x40A388, 0x4
@@ -227,7 +227,7 @@ $$22776:
 $$22777:
 	.incbin "baserom.dol", 0x40A3A8, 0x8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global sSinCosTbl__Q36nw4hbm4math29$$2unnamed$$2math_triangular_cpp$$2
 sSinCosTbl__Q36nw4hbm4math29$$2unnamed$$2math_triangular_cpp$$2:
 	.incbin "baserom.dol", 0x440450, 0x1010

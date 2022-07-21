@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero15VacuumSoundCtrlFv
 __ct__Q43scn4step4hero15VacuumSoundCtrlFv:
 /* 80359E38 00355C78  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -407,12 +407,12 @@ lbl_8035A388:
 /* 8035A3A0 003561E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8035A3A4 003561E4  4E 80 00 20 */	blr 
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$250536
 $$250536:
 	.incbin "baserom.dol", 0x496E20, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251157
 $$251157:
 	.incbin "baserom.dol", 0x49DA70, 0x4

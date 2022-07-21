@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __va_arg
 __va_arg:
 /* 80006AA8 000028E8  88 E3 00 00 */	lbz r7, 0(r3)

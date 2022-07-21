@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_sys_init
 bta_sys_init:
 /* 8007825C 0007409C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -181,7 +181,7 @@ bta_sys_set_trace_level:
 /* 80078498 000742D8  98 6D EA F0 */	stb r3, appl_trace_level-_SDA_BASE_(r13)
 /* 8007849C 000742DC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2587
 $$2587:
 	.incbin "baserom.dol", 0x436B20, 0x14

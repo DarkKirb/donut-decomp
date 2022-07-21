@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global main
 main:
 /* 80174AD8 00170918  7C 60 1B 78 */	mr r0, r3
@@ -14,7 +14,7 @@ lbl_80174AF0:
 lbl_80174AF4:
 /* 80174AF4 00170934  48 00 2B C8 */	b Run__Q23app10EntryPointFbPCc
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn5anime4MainFQ23mov9MovieKind
 __ct__Q33scn5anime4MainFQ23mov9MovieKind:
 /* 801E0E84 001DCCC4  94 21 FE 10 */	stwu r1, -0x1f0(r1)
@@ -1230,7 +1230,7 @@ lbl_801E1F3C:
 /* 801E1F3C 001DDD7C  38 60 00 00 */	li r3, 0
 /* 801E1F40 001DDD80  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global tBGM__Q33scn14challengetitle18$$2unnamed$$2Main_cpp$$2Fv
 tBGM__Q33scn14challengetitle18$$2unnamed$$2Main_cpp$$2Fv:
 /* 801EEBD0 001EAA10  80 6D ED 04 */	lwz r3, object___Q33hel6common39ExplicitSingleton$$0Q23snd12SoundManager$$1-_SDA_BASE_(r13)
@@ -1847,7 +1847,7 @@ lbl_801EF448:
 /* 801EF47C 001EB2BC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801EF480 001EB2C0  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn5comic4MainFQ33scn5comic9ComicKind
 __ct__Q33scn5comic4MainFQ33scn5comic9ComicKind:
 /* 801FD0C8 001F8F08  94 21 F7 D0 */	stwu r1, -0x830(r1)
@@ -5233,7 +5233,7 @@ lbl_8020015C:
 /* 80200178 001FBFB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8020017C 001FBFBC  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn10grandtitle4MainFbb
 __ct__Q33scn10grandtitle4MainFbb:
 /* 802054A0 002012E0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -5801,7 +5801,7 @@ lbl_80205C8C:
 /* 80205CC0 00201B00  38 21 00 20 */	addi r1, r1, 0x20
 /* 80205CC4 00201B04  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history4MainFbbRCQ33scn7history7Memento
 __ct__Q33scn7history4MainFbbRCQ33scn7history7Memento:
 /* 80209C64 00205AA4  94 21 FE 20 */	stwu r1, -0x1e0(r1)
@@ -9025,7 +9025,7 @@ __dt__Q43std3tr16detail275function_imp$$0PFv_v$$4Q43std3tr16detail231bound_func$
 __dt__Q43std3tr16detail302function_imp$$0PFv_v$$4Q43std3tr16detail258bound_func$$0v$$4Q43std3tr16detail40mem_fn_0$$0v$$4Q33scn7history12PackageHelps$$1$$4Q33std3tr1171tuple$$0PQ33scn7history12PackageHelps$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv:
 /* 8020CA54 00208894  4B FD C7 2C */	b __dt__Q43std3tr16detail360function_imp$$0PFv_v$$4Q43std3tr16detail316bound_func$$0v$$4Q43std3tr16detail54mem_fn_0$$0v$$4Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr1215tuple$$0Q33std3tr161reference_wrapper$$0Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn11packagelist4MainFv
 __ct__Q33scn11packagelist4MainFv:
 /* 8021C05C 00217E9C  94 21 FF 50 */	stwu r1, -0xb0(r1)
@@ -9653,7 +9653,7 @@ __ct__Q43std3tr16detail330function_imp$$0PFv_b$$4Q43std3tr16detail286bound_func$
 __dt__Q43std3tr16detail330function_imp$$0PFv_b$$4Q43std3tr16detail286bound_func$$0b$$4Q43std3tr16detail40mem_fn_0_c$$0b$$4Q34info6common10ButtonHelp$$1$$4Q33std3tr1199tuple$$0Q33std3tr145reference_wrapper$$0Q34info6common10ButtonHelp$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv:
 /* 8021C950 00218790  4B FC C7 D4 */	b __dt__Q43std3tr16detail362function_imp$$0PFv_b$$4Q43std3tr16detail318bound_func$$0b$$4Q43std3tr16detail56mem_fn_0_c$$0b$$4Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr1215tuple$$0Q33std3tr161reference_wrapper$$0Q33scn19challengefileselect13DeleteConfirm$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __vc__Q33hel6common49MutableArray$$0Q43scn4step7gimmick12StepMoveInfo$$48$$1FUl
 __vc__Q33hel6common49MutableArray$$0Q43scn4step7gimmick12StepMoveInfo$$48$$1FUl:
 /* 80276A18 00272858  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -10484,7 +10484,7 @@ lbl_80277594:
 /* 802775A4 002733E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 802775A8 002733E8  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn2vc4MainFQ33scn2vc11ContentKind
 __ct__Q33scn2vc4MainFQ33scn2vc11ContentKind:
 /* 803F2894 003EE6D4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -10511,7 +10511,7 @@ __ct__Q33scn2vc4MainFQ33scn2vc11ContentKind:
 /* 803F28E8 003EE728  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F28EC 003EE72C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn9grandmenu4MainFQ33scn9grandmenu8ModeKindb
 __ct__Q33scn9grandmenu4MainFQ33scn9grandmenu8ModeKindb:
 /* 803F39F4 003EF834  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -10919,12 +10919,12 @@ lbl_803F3F7C:
 /* 803F3F88 003EFDC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3F8C 003EFDCC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global COMIC_INFO_TABLE__Q33scn5comic18$$2unnamed$$2Main_cpp$$2
 COMIC_INFO_TABLE__Q33scn5comic18$$2unnamed$$2Main_cpp$$2:
 	.incbin "baserom.dol", 0x411BD8, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254402
 $$254402:
 	.incbin "baserom.dol", 0x459E98, 0x10
@@ -10956,7 +10956,7 @@ $$254411:
 $$254412:
 	.incbin "baserom.dol", 0x459F20, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257307
 $$257307:
 	.incbin "baserom.dol", 0x45AE18, 0x14
@@ -10967,7 +10967,7 @@ $$257308:
 $$257309:
 	.incbin "baserom.dol", 0x45AE44, 0x1C
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251866
 $$251866:
 	.incbin "baserom.dol", 0x45C2E8, 0x10
@@ -11029,7 +11029,7 @@ $$258412:
 $$258413:
 	.incbin "baserom.dol", 0x45C3E8, 0x40
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$262253
 $$262253:
 	.incbin "baserom.dol", 0x45D1A0, 0x10
@@ -11130,7 +11130,7 @@ __vt__Q43std3tr16detail302function_imp$$0PFv_v$$4Q43std3tr16detail258bound_func$
 __vt__Q43std3tr16detail288function_imp$$0PFv_b$$4Q43std3tr16detail244bound_func$$0b$$4Q43std3tr16detail34mem_fn_0_c$$0b$$4Q33scn7history5Kirby$$1$$4Q33std3tr1163tuple$$0PQ33scn7history5Kirby$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.incbin "baserom.dol", 0x45D3A0, 0xC0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255596
 $$255596:
 	.incbin "baserom.dol", 0x45F900, 0x10
@@ -11156,7 +11156,7 @@ $$255659:
 __vt__Q43std3tr16detail330function_imp$$0PFv_b$$4Q43std3tr16detail286bound_func$$0b$$4Q43std3tr16detail40mem_fn_0_c$$0b$$4Q34info6common10ButtonHelp$$1$$4Q33std3tr1199tuple$$0Q33std3tr145reference_wrapper$$0Q34info6common10ButtonHelp$$1$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$4Q33std3tr13nat$$1$$1$$40$$40$$1:
 	.incbin "baserom.dol", 0x45F960, 0xC0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$255477
 $$255477:
 	.incbin "baserom.dol", 0x468888, 0x18
@@ -11182,12 +11182,12 @@ $$255529:
 $$255530:
 	.incbin "baserom.dol", 0x468910, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248781
 $$248781:
 	.incbin "baserom.dol", 0x492F50, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254408
 $$254408:
 	.incbin "baserom.dol", 0x493DE0, 0x4
@@ -11198,7 +11198,7 @@ $$254413:
 $$254414:
 	.incbin "baserom.dol", 0x493DE8, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$257643
 $$257643:
 	.incbin "baserom.dol", 0x494628, 0x8
@@ -11281,7 +11281,7 @@ $$258406:
 $$258419:
 	.incbin "baserom.dol", 0x4946E8, 0x8
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$262255
 $$262255:
 	.incbin "baserom.dol", 0x494960, 0x8
@@ -11304,7 +11304,7 @@ $$262269:
 $$262270:
 	.incbin "baserom.dol", 0x49498C, 0x4
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$255597
 $$255597:
 	.incbin "baserom.dol", 0x495160, 0x8
@@ -11318,7 +11318,7 @@ $$255599:
 $$255602:
 	.incbin "baserom.dol", 0x495178, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254657
 $$254657:
 	.incbin "baserom.dol", 0x49A830, 0x4
@@ -11326,12 +11326,12 @@ $$254657:
 $$254658:
 	.incbin "baserom.dol", 0x49A834, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256391
 $$256391:
 	.incbin "baserom.dol", 0x49A950, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251904
 $$251904:
 	.incbin "baserom.dol", 0x49AA10, 0x4
@@ -11363,7 +11363,7 @@ $$258106:
 $$258107:
 	.incbin "baserom.dol", 0x49AA40, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257239
 $$257239:
 	.incbin "baserom.dol", 0x49AB10, 0x4
@@ -11377,7 +11377,7 @@ $$257241:
 $$257242:
 	.incbin "baserom.dol", 0x49AB1C, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$262204
 $$262204:
 	.incbin "baserom.dol", 0x49AC00, 0x4
@@ -11397,7 +11397,7 @@ $$262264:
 $$262265:
 	.incbin "baserom.dol", 0x49AC14, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254093
 $$254093:
 	.incbin "baserom.dol", 0x49ED68, 0x4

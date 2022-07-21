@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6common15StateJumpAttackFPQ43scn4step4boss4BossRQ53scn4step4boss6common19StateJumpAttackDescUl
 __ct__Q53scn4step4boss6common15StateJumpAttackFPQ43scn4step4boss4BossRQ53scn4step4boss6common19StateJumpAttackDescUl:
 /* 80246BBC 002429FC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -217,7 +217,7 @@ create__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12St
 __dt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1Fv:
 /* 80246E98 00242CD8  4B FE 78 08 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss9zankibble15StateJumpAttackFPQ43scn4step4boss4BossQ63scn4step4boss9zankibble15StateJumpAttack6Config
 __ct__Q53scn4step4boss9zankibble15StateJumpAttackFPQ43scn4step4boss4BossQ63scn4step4boss9zankibble15StateJumpAttack6Config:
 /* 8026185C 0025D69C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -622,7 +622,7 @@ create__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12S
 __dt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1Fv:
 /* 80261E0C 0025DC4C  4B FC C8 94 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9sirkibble15StateJumpAttackFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9sirkibble15StateJumpAttackFPQ43scn4step5enemy5Enemy:
 /* 802E1E0C 002DDC4C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -788,7 +788,7 @@ lbl_802E2020:
 procFixPos__Q53scn4step5enemy9sirkibble15StateJumpAttackFv:
 /* 802E2038 002DDE78  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9tsukikage15StateJumpAttackFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9tsukikage15StateJumpAttackFPQ43scn4step5enemy5Enemy:
 /* 802EBA40 002E7880  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1164,7 +1164,7 @@ lbl_802EBF64:
 __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv:
 /* 802EBF7C 002E7DBC  4B FA 5A 3C */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1
 __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4i$$1:
 	.incbin "baserom.dol", 0x4624A0, 0x10
@@ -1172,7 +1172,7 @@ __vt__Q24util95StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12Stat
 __vt__Q53scn4step4boss6common15StateJumpAttack:
 	.incbin "baserom.dol", 0x4624B0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1
 __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12StateLanding$$4PQ43scn4step4boss4Boss$$4Q53scn4step4boss9zankibble10ScriptKind$$1:
 	.incbin "baserom.dol", 0x4670E0, 0x10
@@ -1180,17 +1180,17 @@ __vt__Q24util132StateFactoryArg2$$0Q24util6IState$$4Q53scn4step4boss6common12Sta
 __vt__Q53scn4step4boss9zankibble15StateJumpAttack:
 	.incbin "baserom.dol", 0x4670F0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9sirkibble15StateJumpAttack
 __vt__Q53scn4step5enemy9sirkibble15StateJumpAttack:
 	.incbin "baserom.dol", 0x4786E0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9tsukikage15StateJumpAttack
 __vt__Q53scn4step5enemy9tsukikage15StateJumpAttack:
 	.incbin "baserom.dol", 0x479AC0, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256369
 $$256369:
 	.incbin "baserom.dol", 0x49B5C0, 0x4
@@ -1204,7 +1204,7 @@ $$256415:
 $$256418:
 	.incbin "baserom.dol", 0x49B5D0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256445
 $$256445:
 	.incbin "baserom.dol", 0x49CFB8, 0x8

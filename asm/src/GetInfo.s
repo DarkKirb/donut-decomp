@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4item7GetInfoFv
 __ct__Q43scn4step4item7GetInfoFv:
 /* 803C1404 003BD244  38 00 00 0F */	li r0, 0xf

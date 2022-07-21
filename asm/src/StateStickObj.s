@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon10spearspear13StateStickObjFPQ43scn4step6weapon6Weaponf
 __ct__Q53scn4step6weapon10spearspear13StateStickObjFPQ43scn4step6weapon6Weaponf:
 /* 803E4AF8 003E0938  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -135,7 +135,7 @@ procMove__Q53scn4step6weapon10spearspear13StateStickObjFv:
 /* 803E4CCC 003E0B0C  38 63 00 08 */	addi r3, r3, 8
 /* 803E4CD0 003E0B10  4B FF 3F 98 */	b procMove__Q43scn4step6weapon17StickObjAlgorithmFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step6weapon8deespear13StateStickObjFPQ43scn4step6weapon6Weaponf
 __ct__Q53scn4step6weapon8deespear13StateStickObjFPQ43scn4step6weapon6Weaponf:
 /* 803EDB0C 003E994C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -242,12 +242,12 @@ lbl_803EDC64:
 procMove__Q53scn4step6weapon8deespear13StateStickObjFv:
 /* 803EDC78 003E9AB8  4B FF 70 54 */	b procMove__Q53scn4step6weapon10spearspear13StateStickObjFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon10spearspear13StateStickObj
 __vt__Q53scn4step6weapon10spearspear13StateStickObj:
 	.incbin "baserom.dol", 0x490800, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step6weapon8deespear13StateStickObj
 __vt__Q53scn4step6weapon8deespear13StateStickObj:
 	.incbin "baserom.dol", 0x4910C8, 0x20

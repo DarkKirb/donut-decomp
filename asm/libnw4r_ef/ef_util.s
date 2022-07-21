@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global UtlistToArray__Q24nw4r2efFPCQ34nw4r2ut4ListPPvi
 UtlistToArray__Q24nw4r2efFPCQ34nw4r2ut4ListPPvi:
 /* 800B30B0 000AEEF0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1099,12 +1099,12 @@ MTXColLen__Q24nw4r2efFPCQ34nw4r4math5MTX34i:
 /* 800B4028 000AFE68  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800B402C 000AFE6C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global sPS_Three_Half__Q24nw4r2ef
 sPS_Three_Half__Q24nw4r2ef:
 	.incbin "baserom.dol", 0x492D40, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$26727
 $$26727:
 	.incbin "baserom.dol", 0x499600, 0x8

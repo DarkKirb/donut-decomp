@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick5ghost5GhostFRQ33scn4step9Component
 __ct__Q53scn4step7gimmick5ghost5GhostFRQ33scn4step9Component:
 /* 8030F2D0 0030B110  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -610,15 +610,15 @@ __sinit_$$3Ghost_cpp:
 /* 8030FB94 0030B9D4  C0 62 C9 3C */	lfs f3, $$254588-_SDA2_BASE_(r2)
 /* 8030FB98 0030B9D8  4B DA E5 28 */	b __ct__Q34nw4r4math4VEC3Ffff
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025AC, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$254434
 $$254434:
 	.incbin "baserom.dol", 0x47D3F8, 0x18
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$254435
 $$254435:
 	.incbin "baserom.dol", 0x496AC0, 0x8
@@ -635,7 +635,7 @@ $$254506:
 $$254507:
 	.incbin "baserom.dol", 0x496AE0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$254436
 $$254436:
 	.incbin "baserom.dol", 0x49D3D0, 0x4

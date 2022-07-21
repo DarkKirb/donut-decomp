@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global max$$0f$$1__3stdFRCfRCf_RCf
 max$$0f$$1__3stdFRCfRCf_RCf:
 /* 8014B848 00147688  C0 23 00 00 */	lfs f1, 0(r3)
@@ -67,7 +67,7 @@ __msl_error__3stdFPCc:
 /* 8014B90C 0014774C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014B910 00147750  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$221840
 $$221840:
 	.incbin "baserom.dol", 0x49A090, 0x8

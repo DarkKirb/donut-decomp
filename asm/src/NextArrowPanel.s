@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetBasePaneName__Q43scn4step4info28$$2unnamed$$2NextArrowPanel_cpp$$2FQ43scn4step4info16NextArrowDirKind
 GetBasePaneName__Q43scn4step4info28$$2unnamed$$2NextArrowPanel_cpp$$2FQ43scn4step4info16NextArrowDirKind:
 /* 803AF648 003AB488  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -321,7 +321,7 @@ lbl_803AFACC:
 /* 803AFAD8 003AB918  38 21 00 10 */	addi r1, r1, 0x10
 /* 803AFADC 003AB91C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$253080
 $$253080:
 	.incbin "baserom.dol", 0x41BED8, 0x10
@@ -329,7 +329,7 @@ $$253080:
 $$253090:
 	.incbin "baserom.dol", 0x41BEE8, 0x10
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253551
 $$253551:
 	.incbin "baserom.dol", 0x48C098, 0x10
@@ -340,7 +340,7 @@ $$253552:
 $$253553:
 	.incbin "baserom.dol", 0x48C0B8, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253076
 $$253076:
 	.incbin "baserom.dol", 0x497A60, 0x8

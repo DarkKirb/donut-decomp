@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero7fighter14StateVulcanEndFPQ43scn4step4hero4Herob
 __ct__Q53scn4step4hero7fighter14StateVulcanEndFPQ43scn4step4hero4Herob:
 /* 803A03E4 0039C224  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -92,7 +92,7 @@ procMove__Q53scn4step4hero7fighter14StateVulcanEndFv:
 procFixPos__Q53scn4step4hero7fighter14StateVulcanEndFv:
 /* 803A0504 0039C344  4B FC 03 7C */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero5smash14StateVulcanEndFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero5smash14StateVulcanEndFPQ43scn4step4hero4Hero:
 /* 803A2B98 0039E9D8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -133,12 +133,12 @@ procMove__Q53scn4step4hero5smash14StateVulcanEndFv:
 procFixPos__Q53scn4step4hero5smash14StateVulcanEndFv:
 /* 803A2BF8 0039EA38  4B FB DC 88 */	b procFixPos__Q53scn4step4hero6common9StateCopyFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero7fighter14StateVulcanEnd
 __vt__Q53scn4step4hero7fighter14StateVulcanEnd:
 	.incbin "baserom.dol", 0x48A7B8, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero5smash14StateVulcanEnd
 __vt__Q53scn4step4hero5smash14StateVulcanEnd:
 	.incbin "baserom.dol", 0x48B048, 0x28

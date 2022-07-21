@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ut5ColorFv
 __ct__Q34nw4r2ut5ColorFv:
 /* 800F4DB0 000F0BF0  4B FF E0 F0 */	b GetVtxColor__Q34nw4r3lyt4PaneCFUl
@@ -404,15 +404,15 @@ __sinit_$$3lyt_picture_cpp:
 /* 800F5338 000F1178  4E 80 00 20 */	blr 
 /* 800F533C 000F117C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402384, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r3lyt7Picture
 __vt__Q34nw4r3lyt7Picture:
 	.incbin "baserom.dol", 0x43D3A8, 0x78
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$28804
 $$28804:
 	.incbin "baserom.dol", 0x499C80, 0x8

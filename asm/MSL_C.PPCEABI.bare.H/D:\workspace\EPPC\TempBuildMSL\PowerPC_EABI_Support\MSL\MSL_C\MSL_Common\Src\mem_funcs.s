@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __copy_longs_aligned
 __copy_longs_aligned:
 /* 8000AEBC 00006CFC  7C 03 00 D0 */	neg r0, r3

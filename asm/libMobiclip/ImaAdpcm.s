@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ImaAdpcmInit
 ImaAdpcmInit:
 /* 8014EB00 0014A940  38 C0 00 01 */	li r6, 1
@@ -162,7 +162,7 @@ lbl_8014ECF8:
 /* 8014ED08 0014AB48  4E 80 00 20 */	blr 
 /* 8014ED0C 0014AB4C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global g_Ima_Adpcm_StepTable
 g_Ima_Adpcm_StepTable:
 	.incbin "baserom.dol", 0x40A550, 0xB8

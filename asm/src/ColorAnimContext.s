@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23g3d16ColorAnimContextFRCQ23g3d16MaterialAccessorb
 __ct__Q23g3d16ColorAnimContextFRCQ23g3d16MaterialAccessorb:
 /* 8018DA54 00189894  39 03 FF FC */	addi r8, r3, -4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy15CaptureReceiverFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy15CaptureReceiverFRQ43scn4step5enemy5Enemy:
 /* 80281100 0027CF40  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -785,7 +785,7 @@ isIgnoredNonSuper__Q43scn4step5enemy15CaptureReceiverCFv:
 /* 80281B4C 0027D98C  88 63 00 2D */	lbz r3, 0x2d(r3)
 /* 80281B50 0027D990  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$20
 $$2STRING$$2GetNodeFromPointer__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1FPQ24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$20:
 	.incbin "baserom.dol", 0x46DB90, 0x24
@@ -817,7 +817,7 @@ $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5e
 $$2STRING$$2GetBack__Q34nw4r2ut94LinkList$$0Q24util73ObjListNode$$0Q43scn4step5enemy15CaptureReceiver$$4Q24util16ObjListDummyType$$1$$40$$1Fv:
 	.incbin "baserom.dol", 0x46DC74, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258668
 $$258668:
 	.incbin "baserom.dol", 0x49B930, 0x8

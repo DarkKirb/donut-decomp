@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global btu_hcif_process_event
 btu_hcif_process_event:
 /* 8008822C 0008406C  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1320,7 +1320,7 @@ btu_hcif_link_key_notification_evt:
 /* 80089480 000852C0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80089484 000852C4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22212
 $$22212:
 	.incbin "baserom.dol", 0x438D90, 0x18

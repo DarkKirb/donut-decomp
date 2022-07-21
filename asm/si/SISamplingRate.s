@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SISetSamplingRate
 SISetSamplingRate:
 /* 8002B9C0 00027800  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -72,7 +72,7 @@ SIRefreshSamplingRate:
 /* 8002BAA8 000278E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8002BAAC 000278EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global XYNTSC
 XYNTSC:
 	.incbin "baserom.dol", 0x42BCF8, 0x30

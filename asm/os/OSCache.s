@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DCEnable
 DCEnable:
 /* 8001C930 00018770  7C 00 04 AC */	sync 0
@@ -494,7 +494,7 @@ lbl_8001CF64:
 /* 8001CF88 00018DC8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8001CF8C 00018DCC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2909
 $$2909:
 	.incbin "baserom.dol", 0x41E378, 0x18

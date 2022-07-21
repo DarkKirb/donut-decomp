@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Register__Q24gobj12MintMeshFlipFRQ24gobj8MeshFlip
 Register__Q24gobj12MintMeshFlipFRQ24gobj8MeshFlip:
 /* 8019ADC0 00196C00  90 6D ED C0 */	stw r3, t_obj__Q24gobj26$$2unnamed$$2MintMeshFlip_cpp$$2-_SDA_BASE_(r13)
@@ -23,7 +23,7 @@ __sinit_$$3MintMeshFlip_cpp:
 /* 8019ADE0 00196C20  38 6D ED C0 */	addi r3, r13, t_obj__Q24gobj26$$2unnamed$$2MintMeshFlip_cpp$$2-_SDA_BASE_
 /* 8019ADE4 00196C24  4B F4 25 FC */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023FC, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

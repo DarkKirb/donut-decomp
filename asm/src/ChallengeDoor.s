@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRCQ53scn4step7gimmick13challengedoor20ChallengeDoorContext
 __ct__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRCQ53scn4step7gimmick13challengedoor20ChallengeDoorContext:
 /* 80306478 003022B8  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -1910,7 +1910,7 @@ create__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23
 __dt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23StateEnterChallengeDoor$$4PQ43scn4step4hero4Hero$$4Q33hel4math7Vector2$$4Q33scn4step13ChallengeKind$$4b$$1Fv:
 /* 80307ECC 00303D0C  4B F2 67 D4 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$257573
 $$257573:
 	.incbin "baserom.dol", 0x47C900, 0x10
@@ -1963,7 +1963,7 @@ __vt__Q24util154StateFactoryArg4$$0Q24util6IState$$4Q53scn4step4hero7gimmick23St
 __vt__Q53scn4step7gimmick13challengedoor13ChallengeDoor:
 	.incbin "baserom.dol", 0x47CA20, 0x88
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$260205
 $$260205:
 	.incbin "baserom.dol", 0x496990, 0x8
@@ -1992,7 +1992,7 @@ $$260503:
 $$260504:
 	.incbin "baserom.dol", 0x4969D0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$260317
 $$260317:
 	.incbin "baserom.dol", 0x49D2D0, 0x4

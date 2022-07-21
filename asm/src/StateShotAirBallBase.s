@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy20StateShotAirBallBaseFPQ43scn4step4boss4BossUlUlUl
 __ct__Q53scn4step4boss6whispy20StateShotAirBallBaseFPQ43scn4step4boss4BossUlUlUl:
 /* 8025E188 00259FC8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -149,7 +149,7 @@ procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv:
 procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv:
 /* 8025E380 0025A1C0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy20StateShotAirBallBase
 __vt__Q53scn4step4boss6whispy20StateShotAirBallBase:
 	.incbin "baserom.dol", 0x4667A0, 0x28

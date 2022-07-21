@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetZoom__Q43scn4step4hero14ClearDanceUtilFRQ43scn4step4hero4Hero
 SetZoom__Q43scn4step4hero14ClearDanceUtilFRQ43scn4step4hero4Hero:
 /* 80334098 0032FED8  94 21 FF D0 */	stwu r1, -0x30(r1)

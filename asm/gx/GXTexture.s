@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GXGetTexBufferSize
 GXGetTexBufferSize:
 /* 800365C0 00032400  28 05 00 3C */	cmplwi r5, 0x3c
@@ -1282,7 +1282,7 @@ lbl_80037760:
 /* 80037768 000335A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003776C 000335AC  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$22689
 $$22689:
 	.incbin "baserom.dol", 0x42CE50, 0xF4
@@ -1293,7 +1293,7 @@ $$22732:
 $$22762:
 	.incbin "baserom.dol", 0x42D038, 0x40
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global GXTexMode0Ids
 GXTexMode0Ids:
 	.incbin "baserom.dol", 0x492960, 0x8
@@ -1322,7 +1322,7 @@ GX2HWFiltConv:
 HW2GXFiltConv:
 	.incbin "baserom.dol", 0x4929A0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$22756
 $$22756:
 	.incbin "baserom.dol", 0x499130, 0x8

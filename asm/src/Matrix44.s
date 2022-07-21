@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CreatePerspective__Q33hel4math8Matrix44Fffff
 CreatePerspective__Q33hel4math8Matrix44Fffff:
 /* 8019EAEC 0019A92C  94 21 FF B0 */	stwu r1, -0x50(r1)

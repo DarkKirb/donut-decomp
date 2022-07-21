@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Insert__Q36effect6detail17EffectObjListUtilFRQ24util58ObjList$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1RQ24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1
 Insert__Q36effect6detail17EffectObjListUtilFRQ24util58ObjList$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1RQ24util62ObjListNode$$0Q36effect6detail6Effect$$4Q24util16ObjListDummyType$$1:
 /* 80180FF8 0017CE38  94 21 FF D0 */	stwu r1, -0x30(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ScriptPath__Q43scn4step4hero11HidKindUtilFQ43scn4step4hero7HidKind
 ScriptPath__Q43scn4step4hero11HidKindUtilFQ43scn4step4hero7HidKind:
 /* 80340EBC 0033CCFC  54 60 10 3A */	slwi r0, r3, 2
@@ -9,7 +9,7 @@ ScriptPath__Q43scn4step4hero11HidKindUtilFQ43scn4step4hero7HidKind:
 /* 80340EC8 0033CD08  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80340ECC 0033CD0C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248723
 $$248723:
 	.incbin "baserom.dol", 0x480248, 0x2C

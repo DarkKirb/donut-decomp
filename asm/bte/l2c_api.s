@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global L2CA_Register
 L2CA_Register:
 /* 800901E0 0008C020  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -869,7 +869,7 @@ lbl_80090D9C:
 /* 80090DA0 0008CBE0  88 63 90 20 */	lbz r3, l2cb@l(r3)
 /* 80090DA4 0008CBE4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21653
 $$21653:
 	.incbin "baserom.dol", 0x439730, 0x30

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss12creditdedede11StatePraiseFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss12creditdedede11StatePraiseFPQ43scn4step4boss4Boss:
 /* 80248268 002440A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -221,7 +221,7 @@ create__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditded
 __dt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 80248558 00244398  4B FE 61 48 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss9creditdee11StatePraiseFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss9creditdee11StatePraiseFPQ43scn4step4boss4Boss:
 /* 802494A4 002452E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -376,7 +376,7 @@ create__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee1
 __dt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 80249690 002454D0  4B FE 50 10 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4boss10creditmeta11StatePraiseFPQ43scn4step4boss4Boss
 TryToChangeState__Q53scn4step4boss10creditmeta11StatePraiseFPQ43scn4step4boss4Boss:
 /* 8024AD10 00246B50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -536,7 +536,7 @@ create__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmet
 __dt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1Fv:
 /* 8024AF10 00246D50  4B FE 37 90 */	b __dt__Q24util89StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss6common9StateWait$$4PQ43scn4step4boss4Boss$$1Fv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common11StatePraiseFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common11StatePraiseFPQ43scn4step5enemy5Enemy:
 /* 802938B4 0028F6F4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -654,7 +654,7 @@ procMove__Q53scn4step5enemy6common11StatePraiseFv:
 procFixPos__Q53scn4step5enemy6common11StatePraiseFv:
 /* 80293A24 0028F864  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6bouncy11StatePraiseFPQ43scn4step5enemy5Enemyb
 __ct__Q53scn4step5enemy6bouncy11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 8029DC4C 00299A8C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -906,7 +906,7 @@ lbl_8029DFC8:
 /* 8029DFD4 00299E14  38 21 00 20 */	addi r1, r1, 0x20
 /* 8029DFD8 00299E18  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6sparky11StatePraiseFPQ43scn4step5enemy5Enemyb
 __ct__Q53scn4step5enemy6sparky11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 802E74AC 002E32EC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1135,7 +1135,7 @@ lbl_802E77C4:
 procFixPos__Q53scn4step5enemy6sparky11StatePraiseFv:
 /* 802E77DC 002E361C  4B FB 67 A8 */	b procFixPos__Q53scn4step5enemy6bouncy11StatePraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdedede11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x462890, 0x10
@@ -1143,7 +1143,7 @@ __vt__Q24util99StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss12creditdeded
 __vt__Q53scn4step4boss12creditdedede11StatePraise:
 	.incbin "baserom.dol", 0x4628A0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x462C90, 0x10
@@ -1151,7 +1151,7 @@ __vt__Q24util95StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss9creditdee11S
 __vt__Q53scn4step4boss9creditdee11StatePraise:
 	.incbin "baserom.dol", 0x462CA0, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1
 __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta11StatePraise$$4PQ43scn4step4boss4Boss$$1:
 	.incbin "baserom.dol", 0x463040, 0x10
@@ -1159,27 +1159,27 @@ __vt__Q24util97StateFactoryArg1$$0Q24util6IState$$4Q53scn4step4boss10creditmeta1
 __vt__Q53scn4step4boss10creditmeta11StatePraise:
 	.incbin "baserom.dol", 0x463050, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common11StatePraise
 __vt__Q53scn4step5enemy6common11StatePraise:
 	.incbin "baserom.dol", 0x46F358, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6bouncy11StatePraise
 __vt__Q53scn4step5enemy6bouncy11StatePraise:
 	.incbin "baserom.dol", 0x470568, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6sparky11StatePraise
 __vt__Q53scn4step5enemy6sparky11StatePraise:
 	.incbin "baserom.dol", 0x479348, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255711
 $$255711:
 	.incbin "baserom.dol", 0x49B1A0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256661
 $$256661:
 	.incbin "baserom.dol", 0x49BE88, 0x8

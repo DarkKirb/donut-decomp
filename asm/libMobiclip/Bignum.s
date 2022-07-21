@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Reduce__6BignumFRC6BignumRC6BignumP6Bignum
 Reduce__6BignumFRC6BignumRC6BignumP6Bignum:
 /* 8014D200 00149040  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1053,7 +1053,7 @@ lbl_8014E078:
 /* 8014E088 00149EC8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 8014E08C 00149ECC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2LOCAL$$2BitsUsed__FUi$$2bits
 $$2LOCAL$$2BitsUsed__FUi$$2bits:
 	.incbin "baserom.dol", 0x40A450, 0x100

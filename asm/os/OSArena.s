@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global OSGetMEM1ArenaHi
 OSGetMEM1ArenaHi:
 /* 8001C370 000181B0  80 6D E3 B8 */	lwz r3, __OSArenaHi-_SDA_BASE_(r13)
@@ -95,7 +95,7 @@ OSAllocFromMEM2ArenaLo:
 /* 8001C468 000182A8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8001C46C 000182AC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global __OSArenaLo
 __OSArenaLo:
 	.incbin "baserom.dol", 0x4928A0, 0x4

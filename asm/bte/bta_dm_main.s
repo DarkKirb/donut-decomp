@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global bta_dm_sm_execute
 bta_dm_sm_execute:
 /* 8007AE50 00076C90  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -99,7 +99,7 @@ lbl_8007AF8C:
 /* 8007AFA8 00076DE8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8007AFAC 00076DEC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bta_dm_action
 bta_dm_action:
 	.incbin "baserom.dol", 0x404048, 0x34

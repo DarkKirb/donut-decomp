@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global _ftell
 _ftell:
 /* 8000A8E4 00006724  80 03 00 04 */	lwz r0, 4(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick5block13BlockResFilesFRQ23g3d17ResFileRepository
 __ct__Q53scn4step7gimmick5block13BlockResFilesFRQ23g3d17ResFileRepository:
 /* 80302C38 002FEA78  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -163,10 +163,10 @@ __sinit_$$3BlockResFiles_cpp:
 /* 80302E5C 002FEC9C  90 03 01 14 */	stw r0, 0x114(r3)
 /* 80302E60 002FECA0  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4025A0, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248773
 $$248773:
 	.incbin "baserom.dol", 0x47C088, 0x18
@@ -213,7 +213,7 @@ $$248793:
 T_CONTEXT_TABLE__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
 	.incbin "baserom.dol", 0x47C1B0, 0x1E0
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248772
 $$248772:
 	.incbin "baserom.dol", 0x496950, 0x8
@@ -239,7 +239,7 @@ $$248786:
 $$248787:
 	.incbin "baserom.dol", 0x496988, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2
 T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27$$2unnamed$$2BlockResFiles_cpp$$2:
 	.incbin "baserom.dol", 0x49D238, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss15challengemaster10SCWaftCtrlFRQ43scn4step4boss4Boss
 __ct__Q53scn4step4boss15challengemaster10SCWaftCtrlFRQ43scn4step4boss4Boss:
 /* 8023F8A4 0023B6E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -154,7 +154,7 @@ lbl_8023F99C:
 /* 8023FAD8 0023B918  38 21 00 80 */	addi r1, r1, 0x80
 /* 8023FADC 0023B91C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250562
 $$250562:
 	.incbin "baserom.dol", 0x49B060, 0x4

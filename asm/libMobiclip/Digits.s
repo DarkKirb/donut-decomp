@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DigitsAdd
 DigitsAdd:
 /* 8014E860 0014A6A0  2C 04 00 00 */	cmpwi r4, 0

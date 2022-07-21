@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RandomFoodKind__Q43scn4step4item17FoodTableKindUtilFQ43scn4step4item13FoodTableKind
 RandomFoodKind__Q43scn4step4item17FoodTableKindUtilFQ43scn4step4item13FoodTableKind:
 /* 803C0F94 003BCDD4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -22,7 +22,7 @@ RandomFoodKind__Q43scn4step4item17FoodTableKindUtilFQ43scn4step4item13FoodTableK
 /* 803C0FD4 003BCE14  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C0FD8 003BCE18  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2
 T_TABLE_STANDARD__Q43scn4step4item31$$2unnamed$$2FoodTableKindUtil_cpp$$2:
 	.incbin "baserom.dol", 0x41C228, 0x14

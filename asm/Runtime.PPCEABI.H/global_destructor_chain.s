@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __register_global_object
 __register_global_object:
 /* 80006B70 000029B0  80 0D E2 C0 */	lwz r0, __global_destructor_chain-_SDA_BASE_(r13)

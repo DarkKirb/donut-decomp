@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ull2dec
 __ull2dec:
 /* 80009858 00005698  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -746,17 +746,17 @@ lbl_8000A2B4:
 /* 8000A2C4 00006104  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000A2C8 00006108  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$2stringBase0
 $$2stringBase0:
 	.incbin "baserom.dol", 0x402788, 0xE0
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21232
 $$21232:
 	.incbin "baserom.dol", 0x41D338, 0x128
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$21377
 $$21377:
 	.incbin "baserom.dol", 0x498AC0, 0x8

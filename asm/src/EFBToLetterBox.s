@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_capture__Q23gfx28$$2unnamed$$2EFBToLetterBox_cpp$$2FRCQ23gfx9TexBufferUsUsUsb
 t_capture__Q23gfx28$$2unnamed$$2EFBToLetterBox_cpp$$2FRCQ23gfx9TexBufferUsUsUsb:
 /* 80195934 00191774  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -417,7 +417,7 @@ RoundUp$$0Us$$1__Q34nw4r2ut24$$2unnamed$$2Precompile_pch$$2FUsUi_Us:
 /* 80195F50 00191D90  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80195F54 00191D94  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251900
 $$251900:
 	.incbin "baserom.dol", 0x49A230, 0x4

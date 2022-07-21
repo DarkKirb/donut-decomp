@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetModelLocalAxisY2__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34
 GetModelLocalAxisY2__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2FPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34:
 /* 800E0DC0 000DCC00  E0 05 80 00 */	psq_l f0, 0(r5), 1, qr0
@@ -2418,12 +2418,12 @@ lbl_800E303C:
 /* 800E3058 000DEE98  4E 80 00 20 */	blr 
 /* 800E305C 000DEE9C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2
 bbFunc__Q34nw4r3g3d26$$2unnamed$$2g3d_calcview_cpp$$2:
 	.incbin "baserom.dol", 0x404EC8, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212856
 $$212856:
 	.incbin "baserom.dol", 0x499B58, 0x4

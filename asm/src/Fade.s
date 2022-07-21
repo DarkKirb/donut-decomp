@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23sfx4FadeFv
 __ct__Q23sfx4FadeFv:
 /* 8040078C 003FC5CC  38 80 00 00 */	li r4, 0
@@ -357,7 +357,7 @@ lbl_80400C30:
 /* 80400C64 003FCAA4  38 21 01 90 */	addi r1, r1, 0x190
 /* 80400C68 003FCAA8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251794
 $$251794:
 	.incbin "baserom.dol", 0x49EDE8, 0x4

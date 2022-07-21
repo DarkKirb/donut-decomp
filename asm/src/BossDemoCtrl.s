@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero12BossDemoCtrlFv
 __ct__Q43scn4step4hero12BossDemoCtrlFv:
 /* 80330770 0032C5B0  38 00 00 00 */	li r0, 0
@@ -64,7 +64,7 @@ setSignal__Q43scn4step4hero12BossDemoCtrlFQ43scn4step4hero18BossDemoSignalKind:
 /* 8033081C 0032C65C  90 03 00 08 */	stw r0, 8(r3)
 /* 80330820 0032C660  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248846
 $$248846:
 	.incbin "baserom.dol", 0x49D650, 0x8

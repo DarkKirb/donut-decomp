@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4info9challenge9RadarIconFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ63scn4step4info9challenge9RadarIcon6IconId
 __ct__Q53scn4step4info9challenge9RadarIconFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ63scn4step4info9challenge9RadarIcon6IconId:
 /* 803B5390 003B11D0  94 21 FF 80 */	stwu r1, -0x80(r1)
@@ -57,7 +57,7 @@ appear__Q53scn4step4info9challenge9RadarIconFv:
 /* 803B544C 003B128C  38 21 00 20 */	addi r1, r1, 0x20
 /* 803B5450 003B1290  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$251919
 $$251919:
 	.incbin "baserom.dol", 0x48C898, 0x14

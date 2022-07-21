@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q23seq12ContextStoryFv
 Create__Q23seq12ContextStoryFv:
 /* 803FCB20 003F8960  94 21 FB F0 */	stwu r1, -0x410(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global MOAllocateImage__FUlUl
 MOAllocateImage__FUlUl:
 /* 801527A0 0014E5E0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -756,7 +756,7 @@ lbl_80153218:
 /* 80153228 0014F068  38 21 00 30 */	addi r1, r1, 0x30
 /* 8015322C 0014F06C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global RootPublicKey
 RootPublicKey:
 	.incbin "baserom.dol", 0x40A8C0, 0xA0
@@ -764,7 +764,7 @@ RootPublicKey:
 RootPublicBarrett:
 	.incbin "baserom.dol", 0x40A960, 0xA8
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$23024
 $$23024:
 	.incbin "baserom.dol", 0x4443D8, 0x30
@@ -790,12 +790,12 @@ $$23137:
 $$23138:
 	.incbin "baserom.dol", 0x4444D8, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$23098
 $$23098:
 	.incbin "baserom.dol", 0x492EC0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$23100
 $$23100:
 	.incbin "baserom.dol", 0x49A0D0, 0x8

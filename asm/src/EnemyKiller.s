@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5debug11EnemyKillerFRQ33scn4step9ComponentRQ25ocoll5OwnerQ23g3d12NodeAccessorUl
 __ct__Q43scn4step5debug11EnemyKillerFRQ33scn4step9ComponentRQ25ocoll5OwnerQ23g3d12NodeAccessorUl:
 /* 8027A434 00276274  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -114,7 +114,7 @@ lbl_8027A5B4:
 /* 8027A5C8 00276408  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027A5CC 0027640C  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252852
 $$252852:
 	.incbin "baserom.dol", 0x49B918, 0x8

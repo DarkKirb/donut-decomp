@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q36effect6detail13PolyEffectResFv
 __ct__Q36effect6detail13PolyEffectResFv:
 /* 80183A10 0017F850  38 A3 FF FC */	addi r5, r3, -4

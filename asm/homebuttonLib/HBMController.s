@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global wpadConnectCallback__Q210homebutton10ControllerFll
 wpadConnectCallback__Q210homebutton10ControllerFll:
 /* 8012A020 00125E60  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -892,7 +892,7 @@ clrBatteryFlag__Q210homebutton10ControllerFv:
 /* 8012AC38 00126A78  7C 03 21 AE */	stbx r0, r3, r4
 /* 8012AC3C 00126A7C  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$29283
 $$29283:
 	.incbin "baserom.dol", 0x409EF8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r3snd15DvdSoundArchiveFv
 __ct__Q34nw4r3snd15DvdSoundArchiveFv:
 /* 80108400 00104240  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -582,7 +582,7 @@ lbl_80108B0C:
 /* 80108B28 00104968  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80108B2C 0010496C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream
 __vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream:
 	.incbin "baserom.dol", 0x43E188, 0x68

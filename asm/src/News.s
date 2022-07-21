@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn7history4NewsFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23lyt12PaneAccessor
 __ct__Q33scn7history4NewsFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23lyt12PaneAccessor:
 /* 8020CA58 00208898  94 21 FE A0 */	stwu r1, -0x160(r1)
@@ -589,7 +589,7 @@ lbl_8020D2BC:
 /* 8020D2BC 002090FC  38 60 00 00 */	li r3, 0
 /* 8020D2C0 00209100  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global IS_LARGE__Q33scn7history18$$2unnamed$$2News_cpp$$2
 IS_LARGE__Q33scn7history18$$2unnamed$$2News_cpp$$2:
 	.incbin "baserom.dol", 0x411C88, 0x18
@@ -597,7 +597,7 @@ IS_LARGE__Q33scn7history18$$2unnamed$$2News_cpp$$2:
 SHOW_DECORATION__Q33scn7history18$$2unnamed$$2News_cpp$$2:
 	.incbin "baserom.dol", 0x411CA0, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253381
 $$253381:
 	.incbin "baserom.dol", 0x45D460, 0x10
@@ -626,7 +626,7 @@ $$253514:
 $$253516:
 	.incbin "baserom.dol", 0x45D4DC, 0x44
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$253382
 $$253382:
 	.incbin "baserom.dol", 0x494990, 0x8
@@ -652,7 +652,7 @@ $$253528:
 $$253532:
 	.incbin "baserom.dol", 0x4949C8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253533
 $$253533:
 	.incbin "baserom.dol", 0x49AC18, 0x8

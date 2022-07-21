@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero5BlinkFv
 __ct__Q43scn4step4hero5BlinkFv:
 /* 80330568 0032C3A8  38 00 00 00 */	li r0, 0
@@ -150,7 +150,7 @@ getColor__Q43scn4step4hero5BlinkCFv:
 /* 80330768 0032C5A8  38 63 00 01 */	addi r3, r3, 1
 /* 8033076C 0032C5AC  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248855
 $$248855:
 	.incbin "baserom.dol", 0x49D640, 0x4

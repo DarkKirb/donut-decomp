@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ef21DrawBillboardStrategyFv
 __ct__Q34nw4r2ef21DrawBillboardStrategyFv:
 /* 800BAB50 000B6990  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2292,17 +2292,17 @@ __dt__Q34nw4r2ef21DrawBillboardStrategyFv:
 /* 800BCCB8 000B8AF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800BCCBC 000B8AFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ef21DrawBillboardStrategy
 __vt__Q34nw4r2ef21DrawBillboardStrategy:
 	.incbin "baserom.dol", 0x43C510, 0x20
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global billboard_tex0_u8__Q24nw4r2ef
 billboard_tex0_u8__Q24nw4r2ef:
 	.incbin "baserom.dol", 0x492D60, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$213380
 $$213380:
 	.incbin "baserom.dol", 0x499858, 0x4

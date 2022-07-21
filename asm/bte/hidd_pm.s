@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global hidd_pm_set_now
 hidd_pm_set_now:
 /* 8008D0A4 00088EE4  94 21 FF E0 */	stwu r1, -0x20(r1)

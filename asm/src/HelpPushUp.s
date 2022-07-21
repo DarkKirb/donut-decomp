@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4info10HelpPushUpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component
 __ct__Q43scn4step4info10HelpPushUpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRQ33scn4step9Component:
 /* 803A6B54 003A2994  94 21 FF 70 */	stwu r1, -0x90(r1)
@@ -358,7 +358,7 @@ startDisappearAnim__Q43scn4step4info10HelpPushUpFv:
 /* 803A7034 003A2E74  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A7038 003A2E78  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252107
 $$252107:
 	.incbin "baserom.dol", 0x48B748, 0x10
@@ -366,7 +366,7 @@ $$252107:
 $$252108:
 	.incbin "baserom.dol", 0x48B758, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252109
 $$252109:
 	.incbin "baserom.dol", 0x4978D0, 0x8
@@ -380,7 +380,7 @@ $$252192:
 $$252195:
 	.incbin "baserom.dol", 0x4978E8, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp
 APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp:
 	.incbin "baserom.dol", 0x49E3E8, 0x4

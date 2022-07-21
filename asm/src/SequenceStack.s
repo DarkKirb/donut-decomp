@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q23seq13SequenceStackFv
 __dt__Q23seq13SequenceStackFv:
 /* 803FFA5C 003FB89C  94 21 FF E0 */	stwu r1, -0x20(r1)

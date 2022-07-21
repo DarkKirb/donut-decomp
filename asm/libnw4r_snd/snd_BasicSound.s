@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail10BasicSoundFii
 __ct__Q44nw4r3snd6detail10BasicSoundFii:
 /* 801054B0 001012F0  C0 02 93 34 */	lfs f0, $$212467-_SDA2_BASE_(r2)
@@ -1643,15 +1643,15 @@ __sinit_$$3snd_BasicSound_cpp:
 /* 80106B78 001029B8  4E 80 00 20 */	blr 
 /* 80106B7C 001029BC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402398, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail10BasicSound
 __vt__Q44nw4r3snd6detail10BasicSound:
 	.incbin "baserom.dol", 0x43E100, 0x38
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$212466
 $$212466:
 	.incbin "baserom.dol", 0x499DF0, 0x4

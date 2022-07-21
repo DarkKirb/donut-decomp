@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero12interference16StateKissReceiveFPQ43scn4step4hero4HeroQ33hel4math7Vector3Q33hel4math7Vector3Q43scn4step4hero11KissContext
 __ct__Q53scn4step4hero12interference16StateKissReceiveFPQ43scn4step4hero4HeroQ33hel4math7Vector3Q33hel4math7Vector3Q43scn4step4hero11KissContext:
 /* 803729CC 0036E80C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -441,12 +441,12 @@ procMove__Q53scn4step4hero12interference16StateKissReceiveFv:
 procFixPos__Q53scn4step4hero12interference16StateKissReceiveFv:
 /* 80373038 0036EE78  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference16StateKissReceive
 __vt__Q53scn4step4hero12interference16StateKissReceive:
 	.incbin "baserom.dol", 0x488608, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$258092
 $$258092:
 	.incbin "baserom.dol", 0x49DD60, 0x4

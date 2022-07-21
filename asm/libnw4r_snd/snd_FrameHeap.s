@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail9FrameHeapFv
 __ct__Q44nw4r3snd6detail9FrameHeapFv:
 /* 80109480 001052C0  38 83 00 08 */	addi r4, r3, 8

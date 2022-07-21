@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26mintvm13VMSymbolTableFRCQ25mintx5XDataPCQ26mintvm13BCSymbolTable
 __ct__Q26mintvm13VMSymbolTableFRCQ25mintx5XDataPCQ26mintvm13BCSymbolTable:
 /* 801CDBD4 001C9A14  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -137,7 +137,7 @@ lbl_801CDD80:
 /* 801CDDA0 001C9BE0  38 21 00 30 */	addi r1, r1, 0x30
 /* 801CDDA4 001C9BE4  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl$$20
 $$2STRING$$2at__Q26mintvm11MArray$$0PCc$$1FUl$$20:
 	.incbin "baserom.dol", 0x458D80, 0x18

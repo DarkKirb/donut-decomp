@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __sinit_$$3Color_cpp
 __sinit_$$3Color_cpp:
 /* 8019D88C 001996CC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -73,7 +73,7 @@ __ct__Q33hel6common5ColorFUcUcUcUc:
 /* 8019D98C 001997CC  98 E3 00 03 */	stb r7, 3(r3)
 /* 8019D990 001997D0  4E 80 00 20 */	blr 
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x402414, 0x4
 
 .section .bss, "wa"  # 0x80496700 - 0x805643FC

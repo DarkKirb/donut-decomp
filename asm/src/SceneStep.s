@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global RuntimeTypeInfoImpl$$0Q33scn4step9SceneStep$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 RuntimeTypeInfoImpl$$0Q33scn4step9SceneStep$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo:
 /* 802217A4 0021D5E4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -499,7 +499,7 @@ result__Q33scn4step9SceneStepCFv:
 GetRuntimeTypeInfo__Q33scn4step9SceneStepCFv:
 /* 80221E74 0021DCB4  4B FF F9 30 */	b RuntimeTypeInfoImpl$$0Q33scn4step9SceneStep$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252721
 $$252721:
 	.incbin "baserom.dol", 0x45FC10, 0x14

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global l2c_link_hci_conn_req
 l2c_link_hci_conn_req:
 /* 80092284 0008E0C4  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1288,7 +1288,7 @@ lbl_80093400:
 /* 80093408 0008F248  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009340C 0008F24C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$21744
 $$21744:
 	.incbin "baserom.dol", 0x43A6F8, 0x20

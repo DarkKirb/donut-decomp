@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DefaultScrollSpeed__Q34info6ticker13TickerContextFv
 DefaultScrollSpeed__Q34info6ticker13TickerContextFv:
 /* 801AC058 001A7E98  C0 22 99 F8 */	lfs f1, $$252069-_SDA2_BASE_(r2)
@@ -42,7 +42,7 @@ __ct__Q34info6ticker13TickerContextFQ23lyt12PaneAccessorQ23lyt12PaneAccessorfUlU
 /* 801AC0D0 001A7F10  38 21 00 30 */	addi r1, r1, 0x30
 /* 801AC0D4 001A7F14  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252069
 $$252069:
 	.incbin "baserom.dol", 0x49A4B8, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy7parasol9StateRiseFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy7parasol9StateRiseFPQ43scn4step5enemy5Enemy:
 /* 802CB3D0 002C7210  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -217,12 +217,12 @@ lbl_802CB6C8:
 __dt__Q53scn4step5enemy7parasol9StateRiseFv:
 /* 802CB6DC 002C751C  4B FC 62 DC */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy7parasol9StateRise
 __vt__Q53scn4step5enemy7parasol9StateRise:
 	.incbin "baserom.dol", 0x476078, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$255826
 $$255826:
 	.incbin "baserom.dol", 0x49C980, 0x4

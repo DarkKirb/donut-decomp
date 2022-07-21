@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4boss6whispy16StateShotAirBallFPQ43scn4step4boss4BossUlUlUl
 __ct__Q53scn4step4boss6whispy16StateShotAirBallFPQ43scn4step4boss4BossUlUlUl:
 /* 8025DEE8 00259D28  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -182,7 +182,7 @@ lbl_8025E16C:
 /* 8025E180 00259FC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8025E184 00259FC4  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step4hero6common16StateShotAirBallFPQ43scn4step4hero4Hero
 __ct__Q53scn4step4hero6common16StateShotAirBallFPQ43scn4step4hero4Hero:
 /* 8036A0D0 00365F10  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -353,17 +353,17 @@ procMove__Q53scn4step4hero6common16StateShotAirBallFv:
 procFixPos__Q53scn4step4hero6common16StateShotAirBallFv:
 /* 8036A32C 0036616C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4boss6whispy16StateShotAirBall
 __vt__Q53scn4step4boss6whispy16StateShotAirBall:
 	.incbin "baserom.dol", 0x466778, 0x28
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero6common16StateShotAirBall
 __vt__Q53scn4step4hero6common16StateShotAirBall:
 	.incbin "baserom.dol", 0x488150, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253461
 $$253461:
 	.incbin "baserom.dol", 0x49B560, 0x8

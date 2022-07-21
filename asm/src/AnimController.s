@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q24util14AnimControllerFf
 __ct__Q24util14AnimControllerFf:
 /* 804056C0 00401500  D0 23 00 00 */	stfs f1, 0(r3)
@@ -142,7 +142,7 @@ lbl_80405858:
 /* 80405864 004016A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80405868 004016A8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$248941
 $$248941:
 	.incbin "baserom.dol", 0x49EEC8, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global ToLevelKind__Q33scn4step13LevelKindUtilFQ43scn4step3map4Kind
 ToLevelKind__Q33scn4step13LevelKindUtilFQ43scn4step3map4Kind:
 /* 80221668 0021D4A8  2C 03 00 2D */	cmpwi r3, 0x2d

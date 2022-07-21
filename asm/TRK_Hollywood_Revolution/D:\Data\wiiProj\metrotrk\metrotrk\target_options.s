@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global SetUseSerialIO
 SetUseSerialIO:
 /* 8001A098 00015ED8  98 6D E3 50 */	stb r3, bUseSerialIO-_SDA_BASE_(r13)

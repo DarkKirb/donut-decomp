@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_pauseCounterInc__25$$2unnamed$$2SoundSystem_cpp$$2FQ225$$2unnamed$$2SoundSystem_cpp$$219T_PauseCountReqKind
 t_pauseCounterInc__25$$2unnamed$$2SoundSystem_cpp$$2FQ225$$2unnamed$$2SoundSystem_cpp$$219T_PauseCountReqKind:
 /* 80403638 003FF478  94 21 FF F0 */	stwu r1, -0x10(r1)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global setupGX__Q34nrel8ezrender8Render2DFRCQ34nrel8ezrender14GXSettingFor2D
 setupGX__Q34nrel8ezrender8Render2DFRCQ34nrel8ezrender14GXSettingFor2D:
 /* 8014C4AC 001482EC  94 21 FF 40 */	stwu r1, -0xc0(r1)
@@ -143,7 +143,7 @@ renderRect__Q34nrel8ezrender8Render2DFRCQ34nw4r2ut4RectRC8_GXColor:
 /* 8014C6B4 001484F4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8014C6B8 001484F8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$24710
 $$24710:
 	.incbin "baserom.dol", 0x49A0B8, 0x8

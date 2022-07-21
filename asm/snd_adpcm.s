@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DecodeDspAdpcm__Q34nw4r3snd6detailFP10_AXPBADPCMUc
 DecodeDspAdpcm__Q34nw4r3snd6detailFP10_AXPBADPCMUc:
 /* 80006A00 00002840  A0 E3 00 22 */	lhz r7, 0x22(r3)

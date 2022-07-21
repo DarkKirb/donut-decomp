@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global CalcWorld__Q24nw4r3g3dFPQ34nw4r4math5MTX34PUlPCUcPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjChrPQ34nw4r3g3d16FuncObjCalcWorldUl
 CalcWorld__Q24nw4r3g3dFPQ34nw4r4math5MTX34PUlPCUcPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjChrPQ34nw4r3g3d16FuncObjCalcWorldUl:
 /* 800E3170 000DEFB0  94 21 FF 30 */	stwu r1, -0xd0(r1)
@@ -752,17 +752,17 @@ lbl_800E3C34:
 /* 800E3C48 000DFA88  4E 80 00 20 */	blr 
 /* 800E3C4C 000DFA8C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$29581
 $$29581:
 	.incbin "baserom.dol", 0x43D068, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$29736
 $$29736:
 	.incbin "baserom.dol", 0x492DE0, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$29400
 $$29400:
 	.incbin "baserom.dol", 0x499B68, 0x4

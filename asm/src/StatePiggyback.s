@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global TryToChangeState__Q53scn4step4hero12interference14StatePiggybackFPQ43scn4step4hero4Hero
 TryToChangeState__Q53scn4step4hero12interference14StatePiggybackFPQ43scn4step4hero4Hero:
 /* 8037303C 0036EE7C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -371,12 +371,12 @@ procConstraint__Q53scn4step4hero12interference14StatePiggybackFv:
 procFixPos__Q53scn4step4hero12interference14StatePiggybackFv:
 /* 80373590 0036F3D0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step4hero12interference14StatePiggyback
 __vt__Q53scn4step4hero12interference14StatePiggyback:
 	.incbin "baserom.dol", 0x488630, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257204
 $$257204:
 	.incbin "baserom.dol", 0x49DD80, 0x4

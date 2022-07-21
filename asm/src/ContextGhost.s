@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q33scn4step12ContextGhostFv
 Create__Q33scn4step12ContextGhostFv:
 /* 802210C4 0021CF04  38 83 FF FC */	addi r4, r3, -4

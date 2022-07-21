@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q26freeze9ExceptionFRQ26freeze7Console
 __ct__Q26freeze9ExceptionFRQ26freeze7Console:
 /* 801899D0 00185810  90 83 00 00 */	stw r4, 0(r3)
@@ -635,7 +635,7 @@ lbl_8018A1F0:
 /* 8018A2C8 00186108  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018A2CC 0018610C  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$248845
 $$248845:
 	.incbin "baserom.dol", 0x44FA90, 0x10
@@ -796,7 +796,7 @@ $$249355:
 $$249364:
 	.incbin "baserom.dol", 0x44FF90, 0x28
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$248847
 $$248847:
 	.incbin "baserom.dol", 0x493118, 0x4
@@ -822,7 +822,7 @@ $$249365:
 $$249366:
 	.incbin "baserom.dol", 0x493144, 0x4
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$249353
 $$249353:
 	.incbin "baserom.dol", 0x49A198, 0x8

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero3CryFRQ43scn4step4hero4Hero
 __ct__Q43scn4step4hero3CryFRQ43scn4step4hero4Hero:
 /* 8033462C 0033046C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -332,7 +332,7 @@ lbl_80334A98:
 /* 80334AA8 003308E8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80334AAC 003308EC  4E 80 00 20 */	blr 
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global CRY_TABLE_KIRBY__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2
 CRY_TABLE_KIRBY__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2:
 	.incbin "baserom.dol", 0x415D90, 0x20
@@ -343,7 +343,7 @@ CRY_TABLE_META__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2:
 CRY_TABLE_DEDEDE__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2:
 	.incbin "baserom.dol", 0x415DCC, 0x1C
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global SHOUT_TABLE_KIRBY__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2
 SHOUT_TABLE_KIRBY__Q43scn4step4hero17$$2unnamed$$2Cry_cpp$$2:
 	.incbin "baserom.dol", 0x49D6D0, 0x8

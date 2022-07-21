@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global create__Q34nrel8ezrender18OrthoCameraSettingFffffff
 create__Q34nrel8ezrender18OrthoCameraSettingFffffff:
 /* 8014C440 00148280  94 21 FF E0 */	stwu r1, -0x20(r1)

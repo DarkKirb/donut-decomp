@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global DvdAsyncCallback___Q34nw4r2ut13DvdFileStreamFlP11DVDFileInfo
 DvdAsyncCallback___Q34nw4r2ut13DvdFileStreamFlP11DVDFileInfo:
 /* 80120770 0011C5B0  80 84 00 3C */	lwz r4, 0x3c(r4)
@@ -539,10 +539,10 @@ __sinit_$$3ut_DvdFileStream_cpp:
 /* 80120E98 0011CCD8  4E 80 00 20 */	blr 
 /* 80120E9C 0011CCDC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data2, "wa"  # 0x80406260 - 0x80406540
+.section .ctors, "wa"  # 0x80406260 - 0x80406540
 	.incbin "baserom.dol", 0x4023B4, 0x4
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q34nw4r2ut13DvdFileStream
 __vt__Q34nw4r2ut13DvdFileStream:
 	.incbin "baserom.dol", 0x43E808, 0x68

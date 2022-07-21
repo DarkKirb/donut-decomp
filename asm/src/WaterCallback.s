@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step5enemy13WaterCallbackFRQ43scn4step5enemy5Enemy
 __ct__Q43scn4step5enemy13WaterCallbackFRQ43scn4step5enemy5Enemy:
 /* 80290A5C 0028C89C  3C A0 80 47 */	lis r5, __vt__Q43scn4step5enemy13WaterCallback@ha
@@ -59,7 +59,7 @@ lbl_80290B04:
 /* 80290B10 0028C950  38 21 00 10 */	addi r1, r1, 0x10
 /* 80290B14 0028C954  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q43scn4step5enemy13WaterCallback
 __vt__Q43scn4step5enemy13WaterCallback:
 	.incbin "baserom.dol", 0x46EE20, 0x18

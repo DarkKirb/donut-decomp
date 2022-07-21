@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6scarfy11StateEscapeFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6scarfy11StateEscapeFPQ43scn4step5enemy5Enemy:
 /* 802DAC04 002D6A44  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -140,7 +140,7 @@ lbl_802DADB8:
 __dt__Q53scn4step5enemy6scarfy11StateEscapeFv:
 /* 802DAE04 002D6C44  4B FB 6B B4 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5sheld11StateEscapeFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5sheld11StateEscapeFPQ43scn4step5enemy5Enemy:
 /* 802DE25C 002DA09C  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -351,17 +351,17 @@ lbl_802DE524:
 /* 802DE534 002DA374  38 21 00 70 */	addi r1, r1, 0x70
 /* 802DE538 002DA378  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6scarfy11StateEscape
 __vt__Q53scn4step5enemy6scarfy11StateEscape:
 	.incbin "baserom.dol", 0x477738, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld11StateEscape
 __vt__Q53scn4step5enemy5sheld11StateEscape:
 	.incbin "baserom.dol", 0x477E50, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$257269
 $$257269:
 	.incbin "baserom.dol", 0x49CD10, 0x4

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy6common17BrainWalkStraightFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy6common17BrainWalkStraightFRQ43scn4step5enemy5Enemy:
 /* 80291630 0028D470  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -65,7 +65,7 @@ lbl_802916E4:
 __dt__Q53scn4step5enemy6common17BrainWalkStraightFv:
 /* 80291704 0028D544  4B FF F9 68 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9waddledoo17BrainWalkStraightFRQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9waddledoo17BrainWalkStraightFRQ43scn4step5enemy5Enemy:
 /* 802EFA20 002EB860  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -96,12 +96,12 @@ update__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv:
 __dt__Q53scn4step5enemy9waddledoo17BrainWalkStraightFv:
 /* 802EFA64 002EB8A4  4B FA 16 08 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy6common17BrainWalkStraight
 __vt__Q53scn4step5enemy6common17BrainWalkStraight:
 	.incbin "baserom.dol", 0x46F0A8, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledoo17BrainWalkStraight
 __vt__Q53scn4step5enemy9waddledoo17BrainWalkStraight:
 	.incbin "baserom.dol", 0x47A530, 0x20

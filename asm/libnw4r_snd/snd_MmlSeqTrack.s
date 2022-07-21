@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q44nw4r3snd6detail11MmlSeqTrackFv
 __ct__Q44nw4r3snd6detail11MmlSeqTrackFv:
 /* 8010B080 00106EC0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -59,7 +59,7 @@ lbl_8010B11C:
 /* 8010B138 00106F78  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8010B13C 00106F7C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q44nw4r3snd6detail11MmlSeqTrack
 __vt__Q44nw4r3snd6detail11MmlSeqTrack:
 	.incbin "baserom.dol", 0x43E440, 0x10

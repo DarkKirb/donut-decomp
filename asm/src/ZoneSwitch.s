@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick10zoneswitch10ZoneSwitchFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick10zoneswitch10ZoneSwitchFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 8032B4B0 003272F0  94 21 FF D0 */	stwu r1, -0x30(r1)

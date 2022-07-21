@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q33seq17SequenceLvMapRoot6RecipeFQ33scn4step9LevelKindRCQ23seq12ContextStory
 Create__Q33seq17SequenceLvMapRoot6RecipeFQ33scn4step9LevelKindRCQ23seq12ContextStory:
 /* 803FEC20 003FAA60  94 21 FC 00 */	stwu r1, -0x400(r1)
@@ -600,7 +600,7 @@ onChildSequenceEndForChallenge__Q23seq17SequenceLvMapRootFRQ23seq9ISequence:
 GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv:
 /* 803FF420 003FB260  4B FF E6 08 */	b RuntimeTypeInfoImpl$$0Q23seq17SequenceLvMapRoot$$1__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq17SequenceLvMapRoot
 __vt__Q23seq17SequenceLvMapRoot:
 	.incbin "baserom.dol", 0x492578, 0x28

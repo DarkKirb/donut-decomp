@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global viewMtx__Q23g3d14CameraAccessorCFv
 viewMtx__Q23g3d14CameraAccessorCFv:
 /* 8018BE84 00187CC4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -124,7 +124,7 @@ getProjFar__Q23g3d14CameraAccessorCFv:
 /* 8018BFD4 00187E14  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018BFD8 00187E18  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step6camera14CameraAccessorFRQ33scn4step9Component
 __ct__Q43scn4step6camera14CameraAccessorFRQ33scn4step9Component:
 /* 80262A18 0025E858  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -602,7 +602,7 @@ toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel
 /* 8026308C 0025EECC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80263090 0025EED0  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv$$20
 $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv$$20:
 	.incbin "baserom.dol", 0x450258, 0x28
@@ -610,12 +610,12 @@ $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv$$20:
 $$2STRING$$2ref__Q34nw4r3g3d34ResCommon$$0Q34nw4r3g3d10CameraData$$1Fv:
 	.incbin "baserom.dol", 0x450280, 0x18
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$2STRING$$2__ct__Q43scn4step6camera13ParamAccessorFv
 $$2STRING$$2__ct__Q43scn4step6camera13ParamAccessorFv:
 	.incbin "baserom.dol", 0x467228, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252507
 $$252507:
 	.incbin "baserom.dol", 0x49B5F8, 0x4

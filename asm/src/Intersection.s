@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_signed2DTriArea__Q33hel5geo2d26$$2unnamed$$2Intersection_cpp$$2FRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2
 t_signed2DTriArea__Q33hel5geo2d26$$2unnamed$$2Intersection_cpp$$2FRCQ33hel4math7Vector2RCQ33hel4math7Vector2RCQ33hel4math7Vector2:
 /* 801A05E0 0019C420  C0 03 00 00 */	lfs f0, 0(r3)
@@ -566,7 +566,7 @@ lbl_801A0D7C:
 /* 801A0D94 0019CBD4  54 03 D9 7E */	srwi r3, r0, 5
 /* 801A0D98 0019CBD8  4E 80 00 20 */	blr 
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$250828
 $$250828:
 	.incbin "baserom.dol", 0x49A408, 0x4

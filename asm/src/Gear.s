@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q33scn14challengetitle4GearFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModelQ33scn14challengetitle11AbilityKind
 __ct__Q33scn14challengetitle4GearFRQ33scn14challengetitle9ComponentRQ23g3d10CharaModelQ33scn14challengetitle11AbilityKind:
 /* 801EDEA8 001E9CE8  94 21 FE C0 */	stwu r1, -0x140(r1)
@@ -222,7 +222,7 @@ lbl_801EE1B8:
 /* 801EE1D4 001EA014  38 21 00 60 */	addi r1, r1, 0x60
 /* 801EE1D8 001EA018  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __dt__Q24util31PlacementNew$$0Q24gobj9GearModel$$1Fv
 __dt__Q24util31PlacementNew$$0Q24gobj9GearModel$$1Fv:
 /* 8022FB78 0022B9B8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -518,7 +518,7 @@ anim__Q43scn4step4boss4GearFv:
 /* 8022FF28 0022BD68  80 63 01 A0 */	lwz r3, 0x1a0(r3)
 /* 8022FF2C 0022BD6C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4hero4GearFRQ43scn4step4hero4Heroi
 __ct__Q43scn4step4hero4GearFRQ43scn4step4hero4Heroi:
 /* 80337428 00333268  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1855,12 +1855,12 @@ allocator__Q43scn4step4hero4GearFv:
 /* 803385F0 00334430  38 21 00 10 */	addi r1, r1, 0x10
 /* 803385F4 00334434  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252434
 $$252434:
 	.incbin "baserom.dol", 0x45AD48, 0x10
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$252432
 $$252432:
 	.incbin "baserom.dol", 0x494110, 0x8
@@ -1868,7 +1868,7 @@ $$252432:
 $$252433:
 	.incbin "baserom.dol", 0x494118, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252435
 $$252435:
 	.incbin "baserom.dol", 0x49A940, 0x8

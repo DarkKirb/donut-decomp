@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global Create__Q33seq12SequenceStep6RecipeFRCQ33scn4step7Context
 Create__Q33seq12SequenceStep6RecipeFRCQ33scn4step7Context:
 /* 803FFDAC 003FBBEC  38 C3 FF FC */	addi r6, r3, -4
@@ -483,12 +483,12 @@ GetRuntimeTypeInfo__Q23seq12SequenceStepCFv:
 __dt__Q23seq12SequenceStepFv:
 /* 8040043C 003FC27C  4B FF CA 90 */	b __dt__Q23seq21SequenceChallengeRootFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q23seq12SequenceStep
 __vt__Q23seq12SequenceStep:
 	.incbin "baserom.dol", 0x492618, 0x28
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251094
 $$251094:
 	.incbin "baserom.dol", 0x49EDE0, 0x8

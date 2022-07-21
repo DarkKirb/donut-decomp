@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
 __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color:
 /* 8014C05C 00147E9C  80 04 00 00 */	lwz r0, 0(r4)

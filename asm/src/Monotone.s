@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_toVector3__Q43scn4step3sfx22$$2unnamed$$2Monotone_cpp$$2FRC8_GXColor
 t_toVector3__Q43scn4step3sfx22$$2unnamed$$2Monotone_cpp$$2FRC8_GXColor:
 /* 803CDD04 003C9B44  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -652,7 +652,7 @@ lbl_803CE5F4:
 /* 803CE600 003CA440  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CE604 003CA444  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q23sfx8MonotoneFRQ23gfx9TexBuffer
 __ct__Q23sfx8MonotoneFRQ23gfx9TexBuffer:
 /* 8040130C 003FD14C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -930,12 +930,12 @@ setupDrawOriginal__Q23sfx8MonotoneFv:
 /* 80401700 003FD540  38 21 00 40 */	addi r1, r1, 0x40
 /* 80401704 003FD544  4E 80 00 20 */	blr 
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$253437
 $$253437:
 	.incbin "baserom.dol", 0x48ED88, 0x18
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$253430
 $$253430:
 	.incbin "baserom.dol", 0x49E738, 0x8
@@ -955,7 +955,7 @@ $$253028:
 $$253596:
 	.incbin "baserom.dol", 0x49E750, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$251472
 $$251472:
 	.incbin "baserom.dol", 0x49EE38, 0x4

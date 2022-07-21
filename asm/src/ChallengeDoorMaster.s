@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 __ct__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 80307ED0 00303D10  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -858,7 +858,7 @@ lbl_80308A3C:
 kind__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterCFv:
 /* 80308A50 00304890  4B DF FF B0 */	b CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 
-.section .data4, "wa"  # 0x80406560 - 0x80421040
+.section .rodata, "wa"  # 0x80406560 - 0x80421040
 .global $$255380
 $$255380:
 	.incbin "baserom.dol", 0x415AA8, 0x34
@@ -866,7 +866,7 @@ $$255380:
 $$255490:
 	.incbin "baserom.dol", 0x415ADC, 0xC
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$256036
 $$256036:
 	.incbin "baserom.dol", 0x47CAA8, 0x24
@@ -955,7 +955,7 @@ $$256299:
 __vt__Q53scn4step7gimmick13challengedoor19ChallengeDoorMaster:
 	.incbin "baserom.dol", 0x47CC5C, 0x84
 
-.section .data6, "wa"  # 0x80556420 - 0x8055C6E0
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0
 .global $$256037
 $$256037:
 	.incbin "baserom.dol", 0x4969D8, 0x4
@@ -975,7 +975,7 @@ $$255488:
 $$255489:
 	.incbin "baserom.dol", 0x4969FC, 0xC
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256039
 $$256039:
 	.incbin "baserom.dol", 0x49D2F0, 0x4

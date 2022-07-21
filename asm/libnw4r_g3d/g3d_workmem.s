@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global GetScaleTemporary__Q44nw4r3g3d6detail7workmemFv
 GetScaleTemporary__Q44nw4r3g3d6detail7workmemFv:
 /* 800E3150 000DEF90  3C 60 80 51 */	lis r3, lbl_80510500@ha

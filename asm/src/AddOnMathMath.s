@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global t_SinRadF__Q33hel4mint27$$2unnamed$$2AddOnMathMath_cpp$$2Ff
 t_SinRadF__Q33hel4mint27$$2unnamed$$2AddOnMathMath_cpp$$2Ff:
 /* 801A1B1C 0019D95C  4B FF 3A 3C */	b SinF__Q33hel4math4MathFf
@@ -221,7 +221,7 @@ Func__Q43hel4mint13AddOnMathMath37Mint_SinRadF_0$52440AddOnMathMath_cppFRQ26mint
 /* 801A1DAC 0019DBEC  38 63 1B 1C */	addi r3, r3, t_SinRadF__Q33hel4mint27$$2unnamed$$2AddOnMathMath_cpp$$2Ff@l
 /* 801A1DB0 0019DBF0  4B FF FF 44 */	b mintCallWrappedFunc$$0f$$4f$$1__FPFf_fPQ26mintvm13MintFuncProxy_v
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global $$252822
 $$252822:
 	.incbin "baserom.dol", 0x452F38, 0x10
@@ -247,7 +247,7 @@ $$252828:
 $$252829:
 	.incbin "baserom.dol", 0x452FD8, 0x68
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$252792
 $$252792:
 	.incbin "baserom.dol", 0x49A428, 0x4

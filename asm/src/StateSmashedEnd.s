@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy5sheld15StateSmashedEndFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy5sheld15StateSmashedEndFPQ43scn4step5enemy5Enemy:
 /* 802DF800 002DB640  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -199,7 +199,7 @@ lbl_802DFAC8:
 /* 802DFAD8 002DB918  38 21 00 10 */	addi r1, r1, 0x10
 /* 802DFADC 002DB91C  4E 80 00 20 */	blr 
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q53scn4step5enemy9waddledee15StateSmashedEndFPQ43scn4step5enemy5Enemy
 __ct__Q53scn4step5enemy9waddledee15StateSmashedEndFPQ43scn4step5enemy5Enemy:
 /* 802EE6C8 002EA508  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -427,17 +427,17 @@ lbl_802EE9EC:
 procFixPos__Q53scn4step5enemy9waddledee15StateSmashedEndFv:
 /* 802EEA04 002EA844  4B FA 41 98 */	b procFixPos__Q53scn4step5enemy6common12StateLandingFv
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy5sheld15StateSmashedEnd
 __vt__Q53scn4step5enemy5sheld15StateSmashedEnd:
 	.incbin "baserom.dol", 0x477F90, 0x20
 
-.section .data5, "wa"  # 0x80421040 - 0x80496700
+.section .data, "wa"  # 0x80421040 - 0x80496700
 .global __vt__Q53scn4step5enemy9waddledee15StateSmashedEnd
 __vt__Q53scn4step5enemy9waddledee15StateSmashedEnd:
 	.incbin "baserom.dol", 0x47A398, 0x20
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256208
 $$256208:
 	.incbin "baserom.dol", 0x49CD70, 0x4
@@ -448,7 +448,7 @@ $$256209:
 $$256210:
 	.incbin "baserom.dol", 0x49CD78, 0x8
 
-.section .data7, "wa"  # 0x8055DF80 - 0x805643C0
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0
 .global $$256918
 $$256918:
 	.incbin "baserom.dol", 0x49D020, 0x4

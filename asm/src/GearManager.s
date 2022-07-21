@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text1, "ax"  # 0x80006A00 - 0x80406260
+.section .text, "ax"  # 0x80006A00 - 0x80406260
 .global __ct__Q43scn4step4boss11GearManagerFRQ43scn4step4boss4BossRQ23mem10IAllocator
 __ct__Q43scn4step4boss11GearManagerFRQ43scn4step4boss4BossRQ23mem10IAllocator:
 /* 8022FF30 0022BD70  94 21 FF F0 */	stwu r1, -0x10(r1)

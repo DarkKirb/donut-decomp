@@ -10,7 +10,6 @@ import sys
 basedir = 'asm/'
 macros = 'macros.inc'
 
-filename_counter = 0
 filenames = {}
 lastfile = None
 
@@ -20,8 +19,7 @@ with open(sys.argv[1]) as mapfile:
         if match and match.group(2) != lastfile:
             lastfile = match.group(2)
             addr = int(match.group(1), 16)
-            fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], match.group(2).strip().split(' '))) + f"_{filename_counter}" + '.s'
-            filename_counter += 1
+            fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], match.group(2).strip().split(' '))) + f"_{hex(addr)[2:]}" + '.s'
             filenames[addr] = fname
 
 curfile = open(macros, 'w')
@@ -33,7 +31,10 @@ while asmline := remainder or sys.stdin.readline():
     remainder = None
     trim = asmline.strip()
     if trim.startswith('.section'):
-        curaddr = int(trim[-23:-13], 0)
+        ex = trim.split("#", 1)
+        comment = ex[1]
+        ex = comment.split(" ")
+        curaddr = int(ex[1], 0)
         section = asmline
         curfile.close()
     else:

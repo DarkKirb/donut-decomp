@@ -4,6 +4,9 @@ endif
 ifneq ($(findstring MSYS,$(shell uname)),)
   WINDOWS := 1
 endif
+ifeq ($(findstring not found,$(shell which nix)),)
+  NIX := 1
+endif
 
 # If 0, tells the console to chill out. (Quiets the make process.)
 VERBOSE ?= 1
@@ -76,9 +79,16 @@ ifeq ($(WINDOWS),1)
   AS      := $(DEVKITPPC)/bin/powerpc-eabi-as.exe
   CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp.exe -P
 else
+ifeq ($(NIX),1)
+  WINE := $(shell nix-build '<nixpkgs>' -A wine-staging)/bin/wine
+  STDENV := $(shell nix-build '<nixpkgs>' -A pkgsCross.ppc-embedded.gccCrossLibcStdenv.cc --no-link)
+  AS   := $(STDENV)/bin/powerpc-none-eabi-as
+  CPP  := $(STDENV)/bin/powerpc-none-eabi-cpp -P
+else
   WINE ?= wine
   AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
   CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp -P
+endif
 endif
 CC      = $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwcceppc.exe
 ifeq ($(EPILOGUE_PROCESS),1)
@@ -95,7 +105,7 @@ FRANK := tools/franklite.py
 INCLUDES := -i include/
 ASM_INCLUDES := -I include/
 
-ASFLAGS := -mgekko $(ASM_INCLUDES) --defsym version=$(VERSION)
+ASFLAGS := -mbroadway $(ASM_INCLUDES) --defsym version=$(VERSION)
 ifeq ($(VERBOSE),1)
 # this set of LDFLAGS outputs warnings.
 LDFLAGS := $(MAPGEN) -fp hard -nodefaults

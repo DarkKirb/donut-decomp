@@ -1,5 +1,79 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@283"
+"@283":
+
+	.4byte 0x10080000
+	.4byte 0
+
+.global "@367"
+"@367":
+
+	.4byte 0x10080000
+	.4byte 0
+
+.global "@557"
+"@557":
+
+	.4byte 0x280A0000
+	.4byte 0
+
+.global "@861_800067A0"
+"@861_800067A0":
+
+	.4byte 0x50080000
+	.4byte 0x00000054
+	.4byte 0x01250010
+	.4byte 0
+	.4byte 0x8E000000
+
+.global "@952"
+"@952":
+
+	.4byte 0x28180000
+	.4byte 0x00000020
+	.4byte 0x00000018
+	.4byte 0x00000044
+	.4byte 0x004F0028
+	.4byte 0
+	.4byte 0x90000000
+	.4byte 0
+	.4byte 0x00000024
+	.4byte 0x00000020
+	.4byte 0x8D000020
+
+.global "@1130"
+"@1130":
+
+	.4byte 0x28080000
+	.4byte 0x00000274
+	.4byte 0x000F0010
+	.4byte 0
+	.4byte 0x8E000000
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+	.4byte ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo
+	.4byte 0x000001B0
+	.4byte "@283"
+	.4byte ExPPC_NextAction__FP14ActionIterator
+	.4byte 0x000001B0
+	.4byte "@367"
+	.4byte ExPPC_PopStackFrame__FP12ThrowContextP15MWExceptionInfo
+	.4byte 0x00000554
+	.4byte "@557"
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv
+	.4byte 0x0000050C
+	.4byte "@861_800067A0"
+	.4byte __unexpected
+	.4byte 0x000001B8
+	.4byte "@952"
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext
+	.4byte 0x00000408
+	.4byte "@1130"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global __register_fragment
 __register_fragment:
@@ -1867,3 +1941,121 @@ what__Q23std13bad_exceptionCFv:
 /* 80009170 00004FB0  3C 60 80 42 */	lis r3, "@STRING@what__Q23std13bad_exceptionCFv"@ha
 /* 80009174 00004FB4  38 63 10 E4 */	addi r3, r3, "@STRING@what__Q23std13bad_exceptionCFv"@l
 /* 80009178 00004FB8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@1152"
+"@1152":
+
+	.4byte 0x7374643A
+	.4byte 0x3A626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
+
+.global "@stringBase0_804065AC"
+"@stringBase0_804065AC":
+
+	.4byte 0x21626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E2121
+	.4byte 0x00217374
+	.4byte 0x643A3A65
+	.4byte 0x78636570
+	.4byte 0x74696F6E
+	.4byte 0x21217374
+	.4byte 0x643A3A62
+	.4byte 0x61645F65
+	.4byte 0x78636570
+	.4byte 0x74696F6E
+	.4byte 0x21210021
+	.4byte 0x7374643A
+	.4byte 0x3A626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E2121
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@366"
+"@366":
+
+	.4byte lbl_80007E90
+	.4byte lbl_80007E90
+	.4byte lbl_80007DE8
+	.4byte lbl_80007DF4
+	.4byte lbl_80007E00
+	.4byte lbl_80007E0C
+	.4byte lbl_80007E18
+	.4byte lbl_80007E18
+	.4byte lbl_80007E24
+	.4byte lbl_80007E30
+	.4byte lbl_80007E3C
+	.4byte lbl_80007E48
+	.4byte lbl_80007E54
+	.4byte lbl_80007E6C
+	.4byte lbl_80007E90
+	.4byte lbl_80007E78
+	.4byte lbl_80007E60
+
+.global "@860_80421084"
+"@860_80421084":
+
+	.4byte lbl_80008910
+	.4byte lbl_800084C8
+	.4byte lbl_800084DC
+	.4byte lbl_80008508
+	.4byte lbl_8000856C
+	.4byte lbl_800085B8
+	.4byte lbl_8000860C
+	.4byte lbl_80008660
+	.4byte lbl_800086B4
+	.4byte lbl_8000873C
+	.4byte lbl_800087B8
+	.4byte lbl_80008800
+	.4byte lbl_8000887C
+	.4byte lbl_800088A4
+	.4byte lbl_80008910
+	.4byte lbl_800088F0
+	.4byte lbl_80008890
+
+.global __vt__Q23std13bad_exception
+__vt__Q23std13bad_exception:
+
+	.4byte __RTTI__Q23std13bad_exception
+	.4byte 0
+	.4byte __dt__Q23std13bad_exceptionFv
+	.4byte what__Q23std13bad_exceptionCFv
+
+.global "@1153"
+"@1153":
+
+	.4byte __RTTI__Q23std9exception
+	.4byte 0
+	.4byte 0
+
+.global "@STRING@what__Q23std13bad_exceptionCFv"
+"@STRING@what__Q23std13bad_exceptionCFv":
+
+	.4byte 0x6261645F
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E000000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global fragmentinfo
+fragmentinfo:
+	.skip 0x180
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __RTTI__Q23std13bad_exception
+__RTTI__Q23std13bad_exception:
+
+	.4byte "@1152"
+	.4byte "@1153"

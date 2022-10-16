@@ -1,33 +1,28 @@
-O_FILES := $(BUILD_DIR)/asm/Runtime.PPCEABI.H/__mem_80004000.o \
+O_FILES := \
+$(BUILD_DIR)/asm/snd_adpcm.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__mem.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__va_arg.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/global_destructor_chain.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/NMWException.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/ptmf.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/runtime.o \
+$(BUILD_DIR)/src/Runtime.PPCEABI.H/__init_cpp_exceptions.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__init_cpp_exceptions.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC.o \
+$(BUILD_DIR)/asm/Runtime.PPCEABI.H/GCN_mem_alloc.o \
+\
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/__exception_80004380.o \
 $(BUILD_DIR)/asm/os/__start_800062c0.o \
 $(BUILD_DIR)/asm/os/__ppc_eabi_init_80006620.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New_80006740.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/NMWException_80006748.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80006788.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_800067f4.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80006804.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread_800068bc.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New_800068e0.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/NMWException_800068ec.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_8000691c.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_80006964.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_8000697c.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread_800069ac.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/snd_adpcm_80006a00.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__mem_80006a8c.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__va_arg_80006aa8.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/global_destructor_chain_80006b70.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New_80006bd0.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/NMWException_80006c10.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/ptmf_80007194.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/runtime_80007214.o \
-$(BUILD_DIR)/src/Runtime.PPCEABI.H/__init_cpp_exceptions.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__init_cpp_exceptions_800079fc.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80007a6c.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/GCN_mem_alloc_8000917c.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/alloc_80009234.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_files_80009748.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_fp_80009858.o \
@@ -2881,7 +2876,6 @@ $(BUILD_DIR)/asm/src/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__init_cpp_exceptions_80406260.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80406264.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_80406268.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_particlemanager_8040626c.o \
@@ -2988,13 +2982,7 @@ $(BUILD_DIR)/asm/src/MintCommander_80406520.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__init_cpp_exceptions_80406540.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New_80406560.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/ptmf_80406570.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/runtime_80406580.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80406598.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/GCN_mem_alloc_80406600.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/alloc_80406670.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_fp_80406688.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ctype_80406768.o \
@@ -3245,7 +3233,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80421040.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_files_804210f8.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_fp_80421238.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/locale_80421360.o \
@@ -5103,7 +5090,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80496700.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/alloc_80496880.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/ansi_files_804968b8.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/signal_80496bb8.o \
@@ -5271,10 +5257,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/New_80556420.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/NMWException_80556428.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/__init_cpp_exceptions_80556430.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/Gecko_ExceptionPPC_80556438.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/printf_80556440.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/float_80556448.o \
 $(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_80556450.o \
@@ -5746,7 +5728,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/Runtime.PPCEABI.H/global_destructor_chain_8055c6e0.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/alloc_8055c6e8.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/errno_8055c6f0.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/uart_console_io_gcn_8055c6f8.o \

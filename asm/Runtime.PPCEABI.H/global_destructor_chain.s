@@ -36,3 +36,9 @@ lbl_80006BB4:
 /* 80006BC4 00002A04  7C 08 03 A6 */	mtlr r0
 /* 80006BC8 00002A08  38 21 00 10 */	addi r1, r1, 0x10
 /* 80006BCC 00002A0C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global lbl_8055C6E0
+lbl_8055C6E0:
+	.skip 0x8

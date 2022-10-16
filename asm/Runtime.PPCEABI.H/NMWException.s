@@ -1,5 +1,54 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@340"
+"@340":
+
+	.4byte 0x28080000
+	.4byte 0x00000070
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x82000008
+	.4byte __dt__26__partial_array_destructorFv
+
+.global "@351"
+"@351":
+
+	.4byte 0x18080000
+	.4byte 0
+
+.global "@383"
+"@383":
+
+	.4byte 0x20080000
+	.4byte 0x0000005C
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x82000008
+	.4byte __dt__26__partial_array_destructorFv
+
+.global "@401"
+"@401":
+
+	.4byte 0x20080000
+	.4byte 0
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+	.4byte __construct_new_array
+	.4byte 0x00000104
+	.4byte "@340"
+	.4byte __dt__26__partial_array_destructorFv
+	.4byte 0x000000BC
+	.4byte "@351"
+	.4byte __construct_array
+	.4byte 0x000000F8
+	.4byte "@383"
+	.4byte __destroy_arr
+	.4byte 0x00000078
+	.4byte "@401"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global dthandler__3stdFv
 dthandler__3stdFv:
@@ -457,3 +506,15 @@ lbl_8000716C:
 /* 80007188 00002FC8  7C 08 03 A6 */	mtlr r0
 /* 8000718C 00002FCC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80007190 00002FD0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global thandler__3std
+thandler__3std:
+
+	.4byte dthandler__3stdFv
+
+.global uhandler__3std
+uhandler__3std:
+
+	.4byte duhandler__3stdFv

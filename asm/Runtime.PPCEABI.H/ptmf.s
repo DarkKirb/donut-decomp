@@ -43,3 +43,13 @@ __ptmf_scall4:
 lbl_8000720C:
 /* 8000720C 0000304C  7D 89 03 A6 */	mtctr r12
 /* 80007210 00003050  4E 80 04 20 */	bctr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global __ptmf_null
+__ptmf_null:
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

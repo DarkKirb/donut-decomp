@@ -729,3 +729,15 @@ lbl_800079D4:
 lbl_800079F4:
 /* 800079F4 00003834  38 21 00 10 */	addi r1, r1, 0x10
 /* 800079F8 00003838  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global __constants
+__constants:
+
+	.4byte 0
+	.4byte 0
+	.4byte 0x41F00000
+	.4byte 0
+	.4byte 0x41E00000
+	.4byte 0

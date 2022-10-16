@@ -1,5 +1,22 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@190"
+"@190":
+
+	.4byte 0x08080000
+	.4byte 0
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+.global "@191"
+"@191":
+
+	.4byte __dt__Q23std9exceptionFv
+	.4byte 0x00000040
+	.4byte "@190"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global __dt__Q23std9exceptionFv
 __dt__Q23std9exceptionFv:
@@ -21,3 +38,21 @@ lbl_80006BF8:
 /* 80006C04 00002A44  7C 08 03 A6 */	mtlr r0
 /* 80006C08 00002A48  38 21 00 10 */	addi r1, r1, 0x10
 /* 80006C0C 00002A4C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@278"
+"@278":
+
+	.4byte 0x7374643A
+	.4byte 0x3A657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __RTTI__Q23std9exception
+__RTTI__Q23std9exception:
+
+	.4byte "@278"
+	.4byte 0

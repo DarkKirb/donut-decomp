@@ -38,3 +38,22 @@ lbl_80007A5C:
 /* 80007A60 000038A0  7C 08 03 A6 */	mtlr r0
 /* 80007A64 000038A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80007A68 000038A8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+.global _ctors
+_ctors:
+
+	.4byte lbl_800079FC
+.include "macros.inc"
+
+.section .dtors, "wa"  # 0x80406540 - 0x80406560 ; 0x00000020
+	.4byte lbl_80007A38
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global lbl_80556430
+lbl_80556430:
+
+	.4byte 0xFFFFFFFE
+	.4byte 0

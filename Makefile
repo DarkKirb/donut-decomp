@@ -80,10 +80,9 @@ ifeq ($(WINDOWS),1)
   CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp.exe -P
 else
 ifeq ($(NIX),1)
-  WINE := $(shell nix-build '<nixpkgs>' -A wine-staging)/bin/wine
-  STDENV := $(shell nix-build '<nixpkgs>' -A pkgsCross.ppc-embedded.gccCrossLibcStdenv.cc --no-link)
-  AS   := $(STDENV)/bin/powerpc-none-eabi-as
-  CPP  := $(STDENV)/bin/powerpc-none-eabi-cpp -P
+  WINE := $(shell nix-build '<nixpkgs>' -A wine-staging --no-link)/bin/wine
+  AS := $(shell nix-build '<nixpkgs>' -A pkgsCross.ppc-embedded.gccCrossLibcStdenv.cc --no-link)/bin/powerpc-none-eabi-as
+  CPP := $(shell nix-build '<nixpkgs>' -A pkgsCross.ppc-embedded.gccCrossLibcStdenv.cc.cc --no-link)/bin/powerpc-none-eabi-cpp -P
 else
   WINE ?= wine
   AS      := $(DEVKITPPC)/bin/powerpc-eabi-as

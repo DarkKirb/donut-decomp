@@ -1,4 +1,4 @@
-.include "macros.inc"
+.include "macros.s"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
 
@@ -115,15 +115,15 @@ lbl_80556488:
 lbl_8055648C:
 
 	# ROM: 0x49286C
-	.asciz "RVA 1\n"
-	.balign 4
+	.4byte 0x52564120
+	.4byte 0x310A0000
 
 .global lbl_80556494
 lbl_80556494:
 
 	# ROM: 0x492874
-	.asciz "%08x\n"
-	.balign 4
+	.4byte 0x25303878
+	.4byte 0x0A000000
 
 .global lbl_8055649C
 lbl_8055649C:
@@ -135,15 +135,15 @@ lbl_8055649C:
 lbl_805564A0:
 
 	# ROM: 0x492880
-	.asciz "OS.c"
-	.balign 4
+	.4byte 0x4F532E63
+	.4byte 0
 
 .global lbl_805564A8
 lbl_805564A8:
 
 	# ROM: 0x492888
-	.asciz "HAEA"
-	.balign 4
+	.4byte 0x48414541
+	.4byte 0
 
 .global lbl_805564B0
 lbl_805564B0:
@@ -187,7 +187,8 @@ lbl_805564CC:
 lbl_805564D0:
 
 	# ROM: 0x4928B0
-	.asciz "%016llx"
+	.4byte 0x25303136
+	.4byte 0x6C6C7800
 
 .global lbl_805564D8
 lbl_805564D8:
@@ -214,7 +215,7 @@ lbl_805564E8:
 lbl_805564F0:
 
 	# ROM: 0x4928D0
-	.4byte func_800244A0
+	.4byte lbl_800244A0
 	.4byte 0
 
 .global lbl_805564F8
@@ -242,7 +243,8 @@ lbl_80556508:
 lbl_80556510:
 
 	# ROM: 0x4928F0
-	.asciz "Expired"
+	.4byte 0x45787069
+	.4byte 0x72656400
 
 .global lbl_80556518
 lbl_80556518:
@@ -298,8 +300,8 @@ lbl_8055653C:
 lbl_80556540:
 
 	# ROM: 0x492920
-	.asciz "vi.c"
-	.balign 4
+	.4byte 0x76692E63
+	.4byte 0
 
 .global lbl_80556548
 lbl_80556548:
@@ -493,7 +495,8 @@ lbl_805565C8:
 lbl_805565D0:
 
 	# ROM: 0x4929B0
-	.asciz "dvdfs.c"
+	.4byte 0x64766466
+	.4byte 0x732E6300
 
 .global lbl_805565D8
 lbl_805565D8:
@@ -517,8 +520,8 @@ lbl_805565E0:
 lbl_805565E4:
 
 	# ROM: 0x4929C4
-	.asciz "dvd.c"
-	.balign 4
+	.4byte 0x6476642E
+	.4byte 0x63000000
 
 .global lbl_805565EC
 lbl_805565EC:
@@ -551,7 +554,8 @@ lbl_80556600:
 lbl_80556608:
 
 	# ROM: 0x4929E8
-	.asciz "/dev/di"
+	.4byte 0x2F646576
+	.4byte 0x2F646900
 
 .global lbl_80556610
 lbl_80556610:
@@ -656,21 +660,22 @@ lbl_80556654:
 lbl_80556658:
 
 	# ROM: 0x492A38
-	.asciz "%s/%s"
-	.balign 4
+	.4byte 0x25732F25
+	.4byte 0x73000000
 
 .global lbl_80556660
 lbl_80556660:
 
 	# ROM: 0x492A40
-	.asciz "/meta"
-	.balign 4
+	.4byte 0x2F6D6574
+	.4byte 0x61000000
 
 .global lbl_80556668
 lbl_80556668:
 
 	# ROM: 0x492A48
-	.asciz "/ticket"
+	.4byte 0x2F746963
+	.4byte 0x6B657400
 
 .global lbl_80556670
 lbl_80556670:
@@ -694,223 +699,247 @@ lbl_80556678:
 lbl_8055667C:
 
 	# ROM: 0x492A5C
-	.asciz "IPL.CB"
-	.balign 4
+	.4byte 0x49504C2E
+	.4byte 0x43420000
 
 .global lbl_80556684
 lbl_80556684:
 
 	# ROM: 0x492A64
-	.asciz "IPL.AR"
-	.balign 4
+	.4byte 0x49504C2E
+	.4byte 0x41520000
 	.4byte 0
 
 .global lbl_80556690
 lbl_80556690:
 
 	# ROM: 0x492A70
-	.asciz "IPL.ARN"
+	.4byte 0x49504C2E
+	.4byte 0x41524E00
 
 .global lbl_80556698
 lbl_80556698:
 
 	# ROM: 0x492A78
-	.asciz "IPL.CD"
-	.balign 4
+	.4byte 0x49504C2E
+	.4byte 0x43440000
 
 .global lbl_805566A0
 lbl_805566A0:
 
 	# ROM: 0x492A80
-	.asciz "IPL.CD2"
+	.4byte 0x49504C2E
+	.4byte 0x43443200
 
 .global lbl_805566A8
 lbl_805566A8:
 
 	# ROM: 0x492A88
-	.asciz "IPL.DH"
-	.balign 4
+	.4byte 0x49504C2E
+	.4byte 0x44480000
 
 .global lbl_805566B0
 lbl_805566B0:
 
 	# ROM: 0x492A90
-	.asciz "IPL.E60"
+	.4byte 0x49504C2E
+	.4byte 0x45363000
 
 .global lbl_805566B8
 lbl_805566B8:
 
 	# ROM: 0x492A98
-	.asciz "IPL.FRC"
+	.4byte 0x49504C2E
+	.4byte 0x46524300
 
 .global lbl_805566C0
 lbl_805566C0:
 
 	# ROM: 0x492AA0
-	.asciz "IPL.IDL"
+	.4byte 0x49504C2E
+	.4byte 0x49444C00
 
 .global lbl_805566C8
 lbl_805566C8:
 
 	# ROM: 0x492AA8
-	.asciz "IPL.INC"
+	.4byte 0x49504C2E
+	.4byte 0x494E4300
 
 .global lbl_805566D0
 lbl_805566D0:
 
 	# ROM: 0x492AB0
-	.asciz "IPL.LNG"
+	.4byte 0x49504C2E
+	.4byte 0x4C4E4700
 
 .global lbl_805566D8
 lbl_805566D8:
 
 	# ROM: 0x492AB8
-	.asciz "IPL.NIK"
+	.4byte 0x49504C2E
+	.4byte 0x4E494B00
 
 .global lbl_805566E0
 lbl_805566E0:
 
 	# ROM: 0x492AC0
-	.asciz "IPL.PC"
-	.balign 4
+	.4byte 0x49504C2E
+	.4byte 0x50430000
 
 .global lbl_805566E8
 lbl_805566E8:
 
 	# ROM: 0x492AC8
-	.asciz "IPL.PGS"
+	.4byte 0x49504C2E
+	.4byte 0x50475300
 
 .global lbl_805566F0
 lbl_805566F0:
 
 	# ROM: 0x492AD0
-	.asciz "IPL.SSV"
+	.4byte 0x49504C2E
+	.4byte 0x53535600
 
 .global lbl_805566F8
 lbl_805566F8:
 
 	# ROM: 0x492AD8
-	.asciz "IPL.SND"
+	.4byte 0x49504C2E
+	.4byte 0x534E4400
 
 .global lbl_80556700
 lbl_80556700:
 
 	# ROM: 0x492AE0
-	.asciz "IPL.UPT"
+	.4byte 0x49504C2E
+	.4byte 0x55505400
 
 .global lbl_80556708
 lbl_80556708:
 
 	# ROM: 0x492AE8
-	.asciz "NET.CNF"
+	.4byte 0x4E45542E
+	.4byte 0x434E4600
 
 .global lbl_80556710
 lbl_80556710:
 
 	# ROM: 0x492AF0
-	.asciz "DEV.BTM"
+	.4byte 0x4445562E
+	.4byte 0x42544D00
 
 .global lbl_80556718
 lbl_80556718:
 
 	# ROM: 0x492AF8
-	.asciz "DEV.VIM"
+	.4byte 0x4445562E
+	.4byte 0x56494D00
 
 .global lbl_80556720
 lbl_80556720:
 
 	# ROM: 0x492B00
-	.asciz "DEV.CTC"
+	.4byte 0x4445562E
+	.4byte 0x43544300
 
 .global lbl_80556728
 lbl_80556728:
 
 	# ROM: 0x492B08
-	.asciz "DEV.DSM"
+	.4byte 0x4445562E
+	.4byte 0x44534D00
 
 .global lbl_80556730
 lbl_80556730:
 
 	# ROM: 0x492B10
-	.asciz "BT.DINF"
+	.4byte 0x42542E44
+	.4byte 0x494E4600
 
 .global lbl_80556738
 lbl_80556738:
 
 	# ROM: 0x492B18
-	.asciz "BT.CDIF"
+	.4byte 0x42542E43
+	.4byte 0x44494600
 
 .global lbl_80556740
 lbl_80556740:
 
 	# ROM: 0x492B20
-	.asciz "BT.SENS"
+	.4byte 0x42542E53
+	.4byte 0x454E5300
 
 .global lbl_80556748
 lbl_80556748:
 
 	# ROM: 0x492B28
-	.asciz "BT.SPKV"
+	.4byte 0x42542E53
+	.4byte 0x504B5600
 
 .global lbl_80556750
 lbl_80556750:
 
 	# ROM: 0x492B30
-	.asciz "BT.MOT"
-	.balign 4
+	.4byte 0x42542E4D
+	.4byte 0x4F540000
 
 .global lbl_80556758
 lbl_80556758:
 
 	# ROM: 0x492B38
-	.asciz "BT.BAR"
-	.balign 4
+	.4byte 0x42542E42
+	.4byte 0x41520000
 
 .global lbl_80556760
 lbl_80556760:
 
 	# ROM: 0x492B40
-	.asciz "DVD.CNF"
+	.4byte 0x4456442E
+	.4byte 0x434E4600
 
 .global lbl_80556768
 lbl_80556768:
 
 	# ROM: 0x492B48
-	.asciz "WWW.RST"
+	.4byte 0x5757572E
+	.4byte 0x52535400
 
 .global lbl_80556770
 lbl_80556770:
 
 	# ROM: 0x492B50
-	.asciz "IPL.TID"
+	.4byte 0x49504C2E
+	.4byte 0x54494400
 
 .global lbl_80556778
 lbl_80556778:
 
 	# ROM: 0x492B58
-	.asciz "SCv0"
-	.balign 4
+	.4byte 0x53437630
+	.4byte 0
 
 .global lbl_80556780
 lbl_80556780:
 
 	# ROM: 0x492B60
-	.asciz "SCed"
-	.balign 4
+	.4byte 0x53436564
+	.4byte 0
 
 .global lbl_80556788
 lbl_80556788:
 
 	# ROM: 0x492B68
-	.asciz "AREA"
-	.balign 4
+	.4byte 0x41524541
+	.4byte 0
 
 .global lbl_80556790
 lbl_80556790:
 
 	# ROM: 0x492B70
-	.asciz "GAME"
-	.balign 4
+	.4byte 0x47414D45
+	.4byte 0
 
 .global lbl_80556798
 lbl_80556798:
@@ -923,8 +952,8 @@ lbl_80556798:
 lbl_805567A0:
 
 	# ROM: 0x492B80
-	.asciz "arc.c"
-	.balign 4
+	.4byte 0x6172632E
+	.4byte 0x63000000
 
 .global lbl_805567A8
 lbl_805567A8:
@@ -949,7 +978,8 @@ lbl_805567B0:
 lbl_805567B8:
 
 	# ROM: 0x492B98
-	.asciz "/dev/fs"
+	.4byte 0x2F646576
+	.4byte 0x2F667300
 
 .global lbl_805567C0
 lbl_805567C0:
@@ -1029,15 +1059,15 @@ lbl_805567F0:
 lbl_805567F8:
 
 	# ROM: 0x492BD8
-	.asciz "RFNJ"
-	.balign 4
+	.4byte 0x52464E4A
+	.4byte 0
 
 .global lbl_80556800
 lbl_80556800:
 
 	# ROM: 0x492BE0
-	.asciz "WUD.c"
-	.balign 4
+	.4byte 0x5755442E
+	.4byte 0x63000000
 
 .global lbl_80556808
 lbl_80556808:
@@ -1254,8 +1284,8 @@ lbl_80556894:
 lbl_80556898:
 
 	# ROM: 0x492C78
-	.asciz "USB: "
-	.balign 4
+	.4byte 0x5553423A
+	.4byte 0x20000000
 
 .global lbl_805568A0
 lbl_805568A0:
@@ -1376,57 +1406,58 @@ lbl_80556900:
 lbl_80556904:
 
 	# ROM: 0x492CE4
-	.asciz "TRUE"
-	.balign 4
+	.4byte 0x54525545
+	.4byte 0
 
 .global lbl_8055690C
 lbl_8055690C:
 
 	# ROM: 0x492CEC
-	.asciz "FALSE"
-	.balign 4
+	.4byte 0x46414C53
+	.4byte 0x45000000
 	.4byte 0
 
 .global lbl_80556918
 lbl_80556918:
 
 	# ROM: 0x492CF8
-	.asciz "*******"
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A00
 
 .global lbl_80556920
 lbl_80556920:
 
 	# ROM: 0x492D00
-	.asciz "TRUE"
-	.balign 4
+	.4byte 0x54525545
+	.4byte 0
 
 .global lbl_80556928
 lbl_80556928:
 
 	# ROM: 0x492D08
-	.asciz "FALSE"
-	.balign 4
+	.4byte 0x46414C53
+	.4byte 0x45000000
 
 .global lbl_80556930
 lbl_80556930:
 
 	# ROM: 0x492D10
-	.asciz "Bad UA"
-	.balign 4
+	.4byte 0x42616420
+	.4byte 0x55410000
 
 .global lbl_80556938
 lbl_80556938:
 
 	# ROM: 0x492D18
-	.asciz "Bad DM"
-	.balign 4
+	.4byte 0x42616420
+	.4byte 0x444D0000
 
 .global lbl_80556940
 lbl_80556940:
 
 	# ROM: 0x492D20
-	.asciz "TPL.c"
-	.balign 4
+	.4byte 0x54504C2E
+	.4byte 0x63000000
 
 .global lbl_80556948
 lbl_80556948:
@@ -1439,7 +1470,8 @@ lbl_80556948:
 lbl_80556950:
 
 	# ROM: 0x492D30
-	.asciz "/dev/es"
+	.4byte 0x2F646576
+	.4byte 0x2F657300
 
 .global lbl_80556958
 lbl_80556958:
@@ -1512,13 +1544,15 @@ lbl_805569D0:
 lbl_805569D8:
 
 	# ROM: 0x492DB8
-	.asciz "DrawXlu"
+	.4byte 0x44726177
+	.4byte 0x586C7500
 
 .global lbl_805569E0
 lbl_805569E0:
 
 	# ROM: 0x492DC0
-	.asciz "DrawOpa"
+	.4byte 0x44726177
+	.4byte 0x4F706100
 
 .global lbl_805569E8
 lbl_805569E8:
@@ -1550,7 +1584,8 @@ lbl_805569FC:
 lbl_80556A00:
 
 	# ROM: 0x492DE0
-	.asciz "NodeMix"
+	.4byte 0x4E6F6465
+	.4byte 0x4D697800
 
 .global lbl_80556A08
 lbl_80556A08:
@@ -1592,19 +1627,22 @@ lbl_80556A1C:
 lbl_80556A20:
 
 	# ROM: 0x492E00
-	.asciz "NodeMix"
+	.4byte 0x4E6F6465
+	.4byte 0x4D697800
 
 .global lbl_80556A28
 lbl_80556A28:
 
 	# ROM: 0x492E08
-	.asciz "DrawOpa"
+	.4byte 0x44726177
+	.4byte 0x4F706100
 
 .global lbl_80556A30
 lbl_80556A30:
 
 	# ROM: 0x492E10
-	.asciz "DrawXlu"
+	.4byte 0x44726177
+	.4byte 0x586C7500
 
 .global lbl_80556A38
 lbl_80556A38:
@@ -1749,8 +1787,8 @@ lbl_80556AB8:
 lbl_80556AC0:
 
 	# ROM: 0x492EA0
-	.asciz "????"
-	.balign 4
+	.4byte 0x3F3F3F3F
+	.4byte 0
 
 .global lbl_80556AC8
 lbl_80556AC8:
@@ -1777,8 +1815,8 @@ lbl_80556AD8:
 lbl_80556AE0:
 
 	# ROM: 0x492EC0
-	.asciz "MOC5"
-	.balign 4
+	.4byte 0x4D4F4335
+	.4byte 0
 
 .global lbl_80556AE8
 lbl_80556AE8:
@@ -1791,113 +1829,113 @@ lbl_80556AE8:
 lbl_80556AF0:
 
 	# ROM: 0x492ED0
-	.asciz "LBL1"
-	.balign 4
+	.4byte 0x4C424C31
+	.4byte 0
 
 .global lbl_80556AF8
 lbl_80556AF8:
 
 	# ROM: 0x492ED8
-	.asciz "TXT2"
-	.balign 4
+	.4byte 0x54585432
+	.4byte 0
 
 .global lbl_80556B00
 lbl_80556B00:
 
 	# ROM: 0x492EE0
-	.asciz "ATR1"
-	.balign 4
+	.4byte 0x41545231
+	.4byte 0
 
 .global lbl_80556B08
 lbl_80556B08:
 
 	# ROM: 0x492EE8
-	.asciz "TSY1"
-	.balign 4
+	.4byte 0x54535931
+	.4byte 0
 
 .global lbl_80556B10
 lbl_80556B10:
 
 	# ROM: 0x492EF0
-	.asciz "CLR1"
-	.balign 4
+	.4byte 0x434C5231
+	.4byte 0
 
 .global lbl_80556B18
 lbl_80556B18:
 
 	# ROM: 0x492EF8
-	.asciz "CLB1"
-	.balign 4
+	.4byte 0x434C4231
+	.4byte 0
 
 .global lbl_80556B20
 lbl_80556B20:
 
 	# ROM: 0x492F00
-	.asciz "ATI2"
-	.balign 4
+	.4byte 0x41544932
+	.4byte 0
 
 .global lbl_80556B28
 lbl_80556B28:
 
 	# ROM: 0x492F08
-	.asciz "ALB1"
-	.balign 4
+	.4byte 0x414C4231
+	.4byte 0
 
 .global lbl_80556B30
 lbl_80556B30:
 
 	# ROM: 0x492F10
-	.asciz "ALI2"
-	.balign 4
+	.4byte 0x414C4932
+	.4byte 0
 
 .global lbl_80556B38
 lbl_80556B38:
 
 	# ROM: 0x492F18
-	.asciz "TGG2"
-	.balign 4
+	.4byte 0x54474732
+	.4byte 0
 
 .global lbl_80556B40
 lbl_80556B40:
 
 	# ROM: 0x492F20
-	.asciz "TAG2"
-	.balign 4
+	.4byte 0x54414732
+	.4byte 0
 
 .global lbl_80556B48
 lbl_80556B48:
 
 	# ROM: 0x492F28
-	.asciz "TGP2"
-	.balign 4
+	.4byte 0x54475032
+	.4byte 0
 
 .global lbl_80556B50
 lbl_80556B50:
 
 	# ROM: 0x492F30
-	.asciz "TGL2"
-	.balign 4
+	.4byte 0x54474C32
+	.4byte 0
 
 .global lbl_80556B58
 lbl_80556B58:
 
 	# ROM: 0x492F38
-	.asciz "SYL3"
-	.balign 4
+	.4byte 0x53594C33
+	.4byte 0
 
 .global lbl_80556B60
 lbl_80556B60:
 
 	# ROM: 0x492F40
-	.asciz "SLB1"
-	.balign 4
+	.4byte 0x534C4231
+	.4byte 0
 
 .global lbl_80556B68
 lbl_80556B68:
 
 	# ROM: 0x492F48
-	.asciz "CTI1"
-	.balign 4
+	.4byte 0x43544931
+	.4byte 0
 
 .global lbl_80556B70
 lbl_80556B70:
@@ -1917,49 +1955,50 @@ lbl_80556B78:
 lbl_80556B80:
 
 	# ROM: 0x492F60
-	.asciz "Confirm"
+	.4byte 0x436F6E66
+	.4byte 0x69726D00
 
 .global lbl_80556B88
 lbl_80556B88:
 
 	# ROM: 0x492F68
-	.asciz "WinN"
-	.balign 4
+	.4byte 0x57696E4E
+	.4byte 0
 
 .global lbl_80556B90
 lbl_80556B90:
 
 	# ROM: 0x492F70
-	.asciz "StdN"
-	.balign 4
+	.4byte 0x5374644E
+	.4byte 0
 
 .global lbl_80556B98
 lbl_80556B98:
 
 	# ROM: 0x492F78
-	.asciz "SelN"
-	.balign 4
+	.4byte 0x53656C4E
+	.4byte 0
 
 .global lbl_80556BA0
 lbl_80556BA0:
 
 	# ROM: 0x492F80
-	.asciz "ExtN"
-	.balign 4
+	.4byte 0x4578744E
+	.4byte 0
 
 .global lbl_80556BA8
 lbl_80556BA8:
 
 	# ROM: 0x492F88
-	.asciz "ClaN"
-	.balign 4
+	.4byte 0x436C614E
+	.4byte 0
 
 .global lbl_80556BB0
 lbl_80556BB0:
 
 	# ROM: 0x492F90
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80556BB8
 lbl_80556BB8:
@@ -1972,27 +2011,29 @@ lbl_80556BB8:
 lbl_80556BC0:
 
 	# ROM: 0x492FA0
-	.asciz "SubText"
+	.4byte 0x53756254
+	.4byte 0x65787400
 
 .global lbl_80556BC8
 lbl_80556BC8:
 
 	# ROM: 0x492FA8
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80556BD0
 lbl_80556BD0:
 
 	# ROM: 0x492FB0
-	.asciz "Connect"
+	.4byte 0x436F6E6E
+	.4byte 0x65637400
 
 .global lbl_80556BD8
 lbl_80556BD8:
 
 	# ROM: 0x492FB8
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80556BE0
 lbl_80556BE0:
@@ -2022,57 +2063,57 @@ lbl_80556BEC:
 lbl_80556BF0:
 
 	# ROM: 0x492FD0
-	.asciz "%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0
 
 .global lbl_80556BF8
 lbl_80556BF8:
 
 	# ROM: 0x492FD8
-	.asciz "US_JPN"
-	.balign 4
+	.4byte 0x55535F4A
+	.4byte 0x504E0000
 
 .global lbl_80556C00
 lbl_80556C00:
 
 	# ROM: 0x492FE0
-	.asciz "US_ENG"
-	.balign 4
+	.4byte 0x55535F45
+	.4byte 0x4E470000
 
 .global lbl_80556C08
 lbl_80556C08:
 
 	# ROM: 0x492FE8
-	.asciz "US_GER"
-	.balign 4
+	.4byte 0x55535F47
+	.4byte 0x45520000
 
 .global lbl_80556C10
 lbl_80556C10:
 
 	# ROM: 0x492FF0
-	.asciz "US_FRA"
-	.balign 4
+	.4byte 0x55535F46
+	.4byte 0x52410000
 
 .global lbl_80556C18
 lbl_80556C18:
 
 	# ROM: 0x492FF8
-	.asciz "US_SPA"
-	.balign 4
+	.4byte 0x55535F53
+	.4byte 0x50410000
 
 .global lbl_80556C20
 lbl_80556C20:
 
 	# ROM: 0x493000
-	.asciz "US_ITA"
-	.balign 4
+	.4byte 0x55535F49
+	.4byte 0x54410000
 
 .global lbl_80556C28
 lbl_80556C28:
 
 	# ROM: 0x493008
-	.asciz "US_NED"
-	.balign 4
+	.4byte 0x55535F4E
+	.4byte 0x45440000
 
 .global lbl_80556C30
 lbl_80556C30:
@@ -2084,22 +2125,22 @@ lbl_80556C30:
 lbl_80556C34:
 
 	# ROM: 0x493014
-	.asciz "%s%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0x25730000
 
 .global lbl_80556C3C
 lbl_80556C3C:
 
 	# ROM: 0x49301C
-	.asciz "WinN"
-	.balign 4
+	.4byte 0x57696E4E
+	.4byte 0
 
 .global lbl_80556C44
 lbl_80556C44:
 
 	# ROM: 0x493024
-	.asciz "NoSave"
-	.balign 4
+	.4byte 0x4E6F5361
+	.4byte 0x76650000
 
 .global lbl_80556C4C
 lbl_80556C4C:
@@ -2111,8 +2152,8 @@ lbl_80556C4C:
 lbl_80556C50:
 
 	# ROM: 0x493030
-	.asciz "Cancel"
-	.balign 4
+	.4byte 0x43616E63
+	.4byte 0x656C0000
 
 .global lbl_80556C58
 lbl_80556C58:
@@ -2124,77 +2165,79 @@ lbl_80556C58:
 lbl_80556C5C:
 
 	# ROM: 0x49303C
-	.asciz "Error"
-	.balign 4
+	.4byte 0x4572726F
+	.4byte 0x72000000
 
 .global lbl_80556C64
 lbl_80556C64:
 
 	# ROM: 0x493044
-	.asciz "Failed"
-	.balign 4
+	.4byte 0x4661696C
+	.4byte 0x65640000
 	.4byte 0
 
 .global lbl_80556C70
 lbl_80556C70:
 
 	# ROM: 0x493050
-	.asciz "Corrupt"
+	.4byte 0x436F7272
+	.4byte 0x75707400
 
 .global lbl_80556C78
 lbl_80556C78:
 
 	# ROM: 0x493058
-	.asciz "Wait02"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x30320000
 
 .global lbl_80556C80
 lbl_80556C80:
 
 	# ROM: 0x493060
-	.asciz "WinText"
+	.4byte 0x57696E54
+	.4byte 0x65787400
 
 .global lbl_80556C88
 lbl_80556C88:
 
 	# ROM: 0x493068
-	.asciz "Wait01"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x30310000
 
 .global lbl_80556C90
 lbl_80556C90:
 
 	# ROM: 0x493070
-	.asciz "Item"
-	.balign 4
+	.4byte 0x4974656D
+	.4byte 0
 
 .global lbl_80556C98
 lbl_80556C98:
 
 	# ROM: 0x493078
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80556CA0
 lbl_80556CA0:
 
 	# ROM: 0x493080
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80556CA8
 lbl_80556CA8:
 
 	# ROM: 0x493088
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_80556CB0
 lbl_80556CB0:
 
 	# ROM: 0x493090
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80556CB8
 lbl_80556CB8:
@@ -2212,8 +2255,8 @@ lbl_80556CBC:
 lbl_80556CC0:
 
 	# ROM: 0x4930A0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80556CC8
 lbl_80556CC8:
@@ -2225,8 +2268,8 @@ lbl_80556CC8:
 lbl_80556CCC:
 
 	# ROM: 0x4930AC
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80556CD4
 lbl_80556CD4:
@@ -2251,8 +2294,8 @@ lbl_80556CE0:
 lbl_80556CE4:
 
 	# ROM: 0x4930C4
-	.asciz "%sTopL"
-	.balign 4
+	.4byte 0x2573546F
+	.4byte 0x704C0000
 
 .global lbl_80556CEC
 lbl_80556CEC:
@@ -2264,15 +2307,15 @@ lbl_80556CEC:
 lbl_80556CF0:
 
 	# ROM: 0x4930D0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80556CF8
 lbl_80556CF8:
 
 	# ROM: 0x4930D8
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_80556D00
 lbl_80556D00:
@@ -2284,8 +2327,8 @@ lbl_80556D00:
 lbl_80556D04:
 
 	# ROM: 0x4930E4
-	.asciz "%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0
 	.4byte 0
 
 .global lbl_80556D10
@@ -2299,14 +2342,15 @@ lbl_80556D10:
 lbl_80556D18:
 
 	# ROM: 0x4930F8
-	.asciz ".cmp"
-	.balign 4
+	.4byte 0x2E636D70
+	.4byte 0
 
 .global lbl_80556D20
 lbl_80556D20:
 
 	# ROM: 0x493100
-	.asciz "%s.%s%s"
+	.4byte 0x25732E25
+	.4byte 0x73257300
 
 .global lbl_80556D28
 lbl_80556D28:
@@ -2319,8 +2363,8 @@ lbl_80556D28:
 lbl_80556D30:
 
 	# ROM: 0x493110
-	.asciz "Font"
-	.balign 4
+	.4byte 0x466F6E74
+	.4byte 0
 
 .global lbl_80556D38
 lbl_80556D38:
@@ -2338,27 +2382,29 @@ lbl_80556D3C:
 lbl_80556D40:
 
 	# ROM: 0x493120
-	.asciz "PROGRAM"
+	.4byte 0x50524F47
+	.4byte 0x52414D00
 
 .global lbl_80556D48
 lbl_80556D48:
 
 	# ROM: 0x493128
-	.asciz "TRACE"
-	.balign 4
+	.4byte 0x54524143
+	.4byte 0x45000000
 
 .global lbl_80556D50
 lbl_80556D50:
 
 	# ROM: 0x493130
-	.asciz " SNaN\n"
-	.balign 4
+	.4byte 0x20534E61
+	.4byte 0x4E0A0000
 
 .global lbl_80556D58
 lbl_80556D58:
 
 	# ROM: 0x493138
-	.asciz " 0 / 0\n"
+	.4byte 0x2030202F
+	.4byte 0x20300A00
 
 .global lbl_80556D60
 lbl_80556D60:
@@ -2402,8 +2448,8 @@ lbl_80556D78:
 lbl_80556D80:
 
 	# ROM: 0x493160
-	.asciz "ResTev"
-	.balign 4
+	.4byte 0x52657354
+	.4byte 0x65760000
 
 .global lbl_80556D88
 lbl_80556D88:
@@ -2416,8 +2462,8 @@ lbl_80556D88:
 lbl_80556D90:
 
 	# ROM: 0x493170
-	.asciz "ResMat"
-	.balign 4
+	.4byte 0x5265734D
+	.4byte 0x61740000
 
 .global lbl_80556D98
 lbl_80556D98:
@@ -2430,7 +2476,8 @@ lbl_80556D98:
 lbl_80556DA0:
 
 	# ROM: 0x493180
-	.asciz "ResNode"
+	.4byte 0x5265734E
+	.4byte 0x6F646500
 
 .global lbl_80556DA8
 lbl_80556DA8:
@@ -2479,7 +2526,8 @@ lbl_80556DC4:
 lbl_80556DC8:
 
 	# ROM: 0x4931A8
-	.asciz "%s_A%lu"
+	.4byte 0x25735F41
+	.4byte 0x256C7500
 
 .global lbl_80556DD0
 lbl_80556DD0:
@@ -2491,16 +2539,16 @@ lbl_80556DD0:
 lbl_80556DD4:
 
 	# ROM: 0x4931B4
-	.asciz "MdlAnm"
-	.balign 4
+	.4byte 0x4D646C41
+	.4byte 0x6E6D0000
 	.4byte 0
 
 .global lbl_80556DE0
 lbl_80556DE0:
 
 	# ROM: 0x4931C0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80556DE8
 lbl_80556DE8:
@@ -2539,36 +2587,36 @@ lbl_80556E04:
 lbl_80556E08:
 
 	# ROM: 0x4931E8
-	.asciz "noname"
-	.balign 4
+	.4byte 0x6E6F6E61
+	.4byte 0x6D650000
 
 .global lbl_80556E10
 lbl_80556E10:
 
 	# ROM: 0x4931F0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80556E18
 lbl_80556E18:
 
 	# ROM: 0x4931F8
-	.asciz "noname"
-	.balign 4
+	.4byte 0x6E6F6E61
+	.4byte 0x6D650000
 
 .global lbl_80556E20
 lbl_80556E20:
 
 	# ROM: 0x493200
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80556E28
 lbl_80556E28:
 
 	# ROM: 0x493208
-	.asciz "%s.%s"
-	.balign 4
+	.4byte 0x25732E25
+	.4byte 0x73000000
 
 .global lbl_80556E30
 lbl_80556E30:
@@ -2676,8 +2724,8 @@ lbl_80556E80:
 lbl_80556E88:
 
 	# ROM: 0x493268
-	.asciz "left"
-	.balign 4
+	.4byte 0x6C656674
+	.4byte 0
 
 .global lbl_80556E90
 lbl_80556E90:
@@ -2689,8 +2737,8 @@ lbl_80556E90:
 lbl_80556E94:
 
 	# ROM: 0x493274
-	.asciz "front"
-	.balign 4
+	.4byte 0x66726F6E
+	.4byte 0x74000000
 	.4byte 0
 
 .global lbl_80556EA0
@@ -2704,46 +2752,50 @@ lbl_80556EA0:
 lbl_80556EA8:
 
 	# ROM: 0x493288
-	.asciz "KirbyN"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x794E0000
 
 .global lbl_80556EB0
 lbl_80556EB0:
 
 	# ROM: 0x493290
-	.asciz "KirbyYN"
+	.4byte 0x4B697262
+	.4byte 0x79594E00
 
 .global lbl_80556EB8
 lbl_80556EB8:
 
 	# ROM: 0x493298
-	.asciz "KirbyRN"
+	.4byte 0x4B697262
+	.4byte 0x79524E00
 
 .global lbl_80556EC0
 lbl_80556EC0:
 
 	# ROM: 0x4932A0
-	.asciz "KirbyGN"
+	.4byte 0x4B697262
+	.4byte 0x79474E00
 
 .global lbl_80556EC8
 lbl_80556EC8:
 
 	# ROM: 0x4932A8
-	.asciz "MetaN"
-	.balign 4
+	.4byte 0x4D657461
+	.4byte 0x4E000000
 
 .global lbl_80556ED0
 lbl_80556ED0:
 
 	# ROM: 0x4932B0
-	.asciz "DededeN"
+	.4byte 0x44656465
+	.4byte 0x64654E00
 
 .global lbl_80556ED8
 lbl_80556ED8:
 
 	# ROM: 0x4932B8
-	.asciz "WadoN"
-	.balign 4
+	.4byte 0x5761646F
+	.4byte 0x4E000000
 
 .global lbl_80556EE0
 lbl_80556EE0:
@@ -2756,26 +2808,29 @@ lbl_80556EE0:
 lbl_80556EE8:
 
 	# ROM: 0x4932C8
-	.asciz "FileNum"
+	.4byte 0x46696C65
+	.4byte 0x4E756D00
 
 .global lbl_80556EF0
 lbl_80556EF0:
 
 	# ROM: 0x4932D0
-	.asciz "Replace"
+	.4byte 0x5265706C
+	.4byte 0x61636500
 
 .global lbl_80556EF8
 lbl_80556EF8:
 
 	# ROM: 0x4932D8
-	.asciz "Suspend"
+	.4byte 0x53757370
+	.4byte 0x656E6400
 
 .global lbl_80556F00
 lbl_80556F00:
 
 	# ROM: 0x4932E0
-	.asciz "Action"
-	.balign 4
+	.4byte 0x41637469
+	.4byte 0x6F6E0000
 
 .global lbl_80556F08
 lbl_80556F08:
@@ -2788,20 +2843,22 @@ lbl_80556F08:
 lbl_80556F10:
 
 	# ROM: 0x4932F0
-	.asciz "Suspend"
+	.4byte 0x53757370
+	.4byte 0x656E6400
 
 .global lbl_80556F18
 lbl_80556F18:
 
 	# ROM: 0x4932F8
-	.asciz "Suspend"
+	.4byte 0x53757370
+	.4byte 0x656E6400
 
 .global lbl_80556F20
 lbl_80556F20:
 
 	# ROM: 0x493300
-	.asciz "Action"
-	.balign 4
+	.4byte 0x41637469
+	.4byte 0x6F6E0000
 
 .global lbl_80556F28
 lbl_80556F28:
@@ -2813,15 +2870,15 @@ lbl_80556F28:
 lbl_80556F2C:
 
 	# ROM: 0x49330C
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80556F34
 lbl_80556F34:
 
 	# ROM: 0x493314
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80556F3C
 lbl_80556F3C:
@@ -2833,14 +2890,15 @@ lbl_80556F3C:
 lbl_80556F40:
 
 	# ROM: 0x493320
-	.asciz "Remote"
-	.balign 4
+	.4byte 0x52656D6F
+	.4byte 0x74650000
 
 .global lbl_80556F48
 lbl_80556F48:
 
 	# ROM: 0x493328
-	.asciz "BtnLamp"
+	.4byte 0x42746E4C
+	.4byte 0x616D7000
 
 .global lbl_80556F50
 lbl_80556F50:
@@ -2852,50 +2910,50 @@ lbl_80556F50:
 lbl_80556F54:
 
 	# ROM: 0x493334
-	.asciz "LEDN"
-	.balign 4
+	.4byte 0x4C45444E
+	.4byte 0
 
 .global lbl_80556F5C
 lbl_80556F5C:
 
 	# ROM: 0x49333C
-	.asciz "LED01"
-	.balign 4
+	.4byte 0x4C454430
+	.4byte 0x31000000
 
 .global lbl_80556F64
 lbl_80556F64:
 
 	# ROM: 0x493344
-	.asciz "LED02"
-	.balign 4
+	.4byte 0x4C454430
+	.4byte 0x32000000
 
 .global lbl_80556F6C
 lbl_80556F6C:
 
 	# ROM: 0x49334C
-	.asciz "LED03"
-	.balign 4
+	.4byte 0x4C454430
+	.4byte 0x33000000
 
 .global lbl_80556F74
 lbl_80556F74:
 
 	# ROM: 0x493354
-	.asciz "LED04"
-	.balign 4
+	.4byte 0x4C454430
+	.4byte 0x34000000
 
 .global lbl_80556F7C
 lbl_80556F7C:
 
 	# ROM: 0x49335C
-	.asciz "ToOn"
-	.balign 4
+	.4byte 0x546F4F6E
+	.4byte 0
 
 .global lbl_80556F84
 lbl_80556F84:
 
 	# ROM: 0x493364
-	.asciz "ToOff"
-	.balign 4
+	.4byte 0x546F4F66
+	.4byte 0x66000000
 
 .global lbl_80556F8C
 lbl_80556F8C:
@@ -2914,50 +2972,50 @@ lbl_80556F90:
 lbl_80556F98:
 
 	# ROM: 0x493378
-	.asciz "Button"
-	.balign 4
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
 
 .global lbl_80556FA0
 lbl_80556FA0:
 
 	# ROM: 0x493380
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_80556FA8
 lbl_80556FA8:
 
 	# ROM: 0x493388
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80556FB0
 lbl_80556FB0:
 
 	# ROM: 0x493390
-	.asciz "Bound"
-	.balign 4
+	.4byte 0x426F756E
+	.4byte 0x64000000
 
 .global lbl_80556FB8
 lbl_80556FB8:
 
 	# ROM: 0x493398
-	.asciz "Button"
-	.balign 4
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
 
 .global lbl_80556FC0
 lbl_80556FC0:
 
 	# ROM: 0x4933A0
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_80556FC8
 lbl_80556FC8:
 
 	# ROM: 0x4933A8
-	.asciz "Black"
-	.balign 4
+	.4byte 0x426C6163
+	.4byte 0x6B000000
 
 .global lbl_80556FD0
 lbl_80556FD0:
@@ -2970,29 +3028,29 @@ lbl_80556FD0:
 lbl_80556FD8:
 
 	# ROM: 0x4933B8
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80556FE0
 lbl_80556FE0:
 
 	# ROM: 0x4933C0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80556FE8
 lbl_80556FE8:
 
 	# ROM: 0x4933C8
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_80556FF0
 lbl_80556FF0:
 
 	# ROM: 0x4933D0
-	.asciz "YesN"
-	.balign 4
+	.4byte 0x5965734E
+	.4byte 0
 
 .global lbl_80556FF8
 lbl_80556FF8:
@@ -3005,96 +3063,99 @@ lbl_80556FF8:
 lbl_80557000:
 
 	# ROM: 0x4933E0
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557008
 lbl_80557008:
 
 	# ROM: 0x4933E8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557010
 lbl_80557010:
 
 	# ROM: 0x4933F0
-	.asciz "GameN"
-	.balign 4
+	.4byte 0x47616D65
+	.4byte 0x4E000000
 
 .global lbl_80557018
 lbl_80557018:
 
 	# ROM: 0x4933F8
-	.asciz "TextT"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x54000000
 
 .global lbl_80557020
 lbl_80557020:
 
 	# ROM: 0x493400
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557028
 lbl_80557028:
 
 	# ROM: 0x493408
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_80557030
 lbl_80557030:
 
 	# ROM: 0x493410
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80557038
 lbl_80557038:
 
 	# ROM: 0x493418
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557040
 lbl_80557040:
 
 	# ROM: 0x493420
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80557048
 lbl_80557048:
 
 	# ROM: 0x493428
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80557050
 lbl_80557050:
 
 	# ROM: 0x493430
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80557058
 lbl_80557058:
 
 	# ROM: 0x493438
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80557060
 lbl_80557060:
 
 	# ROM: 0x493440
-	.asciz "Confirm"
+	.4byte 0x436F6E66
+	.4byte 0x69726D00
 
 .global lbl_80557068
 lbl_80557068:
 
 	# ROM: 0x493448
-	.asciz "WinN"
-	.balign 4
+	.4byte 0x57696E4E
+	.4byte 0
 
 .global lbl_80557070
 lbl_80557070:
@@ -3112,29 +3173,29 @@ lbl_80557074:
 lbl_80557078:
 
 	# ROM: 0x493458
-	.asciz "Open2"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0x32000000
 
 .global lbl_80557080
 lbl_80557080:
 
 	# ROM: 0x493460
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557088
 lbl_80557088:
 
 	# ROM: 0x493468
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80557090
 lbl_80557090:
 
 	# ROM: 0x493470
-	.asciz "Close2"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65320000
 
 .global lbl_80557098
 lbl_80557098:
@@ -3146,37 +3207,37 @@ lbl_80557098:
 lbl_8055709C:
 
 	# ROM: 0x49347C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805570A4
 lbl_805570A4:
 
 	# ROM: 0x493484
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 	.4byte 0
 
 .global lbl_805570B0
 lbl_805570B0:
 
 	# ROM: 0x493490
-	.asciz "Skip"
-	.balign 4
+	.4byte 0x536B6970
+	.4byte 0
 
 .global lbl_805570B8
 lbl_805570B8:
 
 	# ROM: 0x493498
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_805570C0
 lbl_805570C0:
 
 	# ROM: 0x4934A0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805570C8
 lbl_805570C8:
@@ -3189,69 +3250,71 @@ lbl_805570C8:
 lbl_805570D0:
 
 	# ROM: 0x4934B0
-	.asciz "Bronze"
-	.balign 4
+	.4byte 0x42726F6E
+	.4byte 0x7A650000
 
 .global lbl_805570D8
 lbl_805570D8:
 
 	# ROM: 0x4934B8
-	.asciz "Silver"
-	.balign 4
+	.4byte 0x53696C76
+	.4byte 0x65720000
 
 .global lbl_805570E0
 lbl_805570E0:
 
 	# ROM: 0x4934C0
-	.asciz "Gold"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0
 
 .global lbl_805570E8
 lbl_805570E8:
 
 	# ROM: 0x4934C8
-	.asciz "Platina"
+	.4byte 0x506C6174
+	.4byte 0x696E6100
 
 .global lbl_805570F0
 lbl_805570F0:
 
 	# ROM: 0x4934D0
-	.asciz "%s%d"
-	.balign 4
+	.4byte 0x25732564
+	.4byte 0
 
 .global lbl_805570F8
 lbl_805570F8:
 
 	# ROM: 0x4934D8
-	.asciz "%sComma"
+	.4byte 0x2573436F
+	.4byte 0x6D6D6100
 
 .global lbl_80557100
 lbl_80557100:
 
 	# ROM: 0x4934E0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557108
 lbl_80557108:
 
 	# ROM: 0x4934E8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557110
 lbl_80557110:
 
 	# ROM: 0x4934F0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80557118
 lbl_80557118:
 
 	# ROM: 0x4934F8
-	.asciz "Blink"
-	.balign 4
+	.4byte 0x426C696E
+	.4byte 0x6B000000
 
 .global lbl_80557120
 lbl_80557120:
@@ -3263,30 +3326,30 @@ lbl_80557120:
 lbl_80557124:
 
 	# ROM: 0x493504
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_8055712C
 lbl_8055712C:
 
 	# ROM: 0x49350C
-	.asciz "Hold"
-	.balign 4
+	.4byte 0x486F6C64
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557138
 lbl_80557138:
 
 	# ROM: 0x493518
-	.asciz "Lv%d"
-	.balign 4
+	.4byte 0x4C762564
+	.4byte 0
 
 .global lbl_80557140
 lbl_80557140:
 
 	# ROM: 0x493520
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557148
 lbl_80557148:
@@ -3298,8 +3361,8 @@ lbl_80557148:
 lbl_8055714C:
 
 	# ROM: 0x49352C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557158
@@ -3312,8 +3375,8 @@ lbl_80557158:
 lbl_8055715C:
 
 	# ROM: 0x49353C
-	.asciz "root"
-	.balign 4
+	.4byte 0x726F6F74
+	.4byte 0
 
 .global lbl_80557164
 lbl_80557164:
@@ -3325,8 +3388,8 @@ lbl_80557164:
 lbl_80557168:
 
 	# ROM: 0x493548
-	.asciz "anim"
-	.balign 4
+	.4byte 0x616E696D
+	.4byte 0
 
 .global lbl_80557170
 lbl_80557170:
@@ -3392,8 +3455,8 @@ lbl_80557194:
 lbl_80557198:
 
 	# ROM: 0x493578
-	.asciz "Cursor"
-	.balign 4
+	.4byte 0x43757273
+	.4byte 0x6F720000
 
 .global lbl_805571A0
 lbl_805571A0:
@@ -3405,8 +3468,8 @@ lbl_805571A0:
 lbl_805571A4:
 
 	# ROM: 0x493584
-	.asciz "Star"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0
 
 .global lbl_805571AC
 lbl_805571AC:
@@ -3509,14 +3572,15 @@ lbl_805571E8:
 lbl_805571F0:
 
 	# ROM: 0x4935D0
-	.asciz "Replace"
+	.4byte 0x5265706C
+	.4byte 0x61636500
 
 .global lbl_805571F8
 lbl_805571F8:
 
 	# ROM: 0x4935D8
-	.asciz "Action"
-	.balign 4
+	.4byte 0x41637469
+	.4byte 0x6F6E0000
 
 .global lbl_80557200
 lbl_80557200:
@@ -3692,45 +3756,50 @@ lbl_80557270:
 lbl_80557278:
 
 	# ROM: 0x493658
-	.asciz "%s%02lu"
+	.4byte 0x25732530
+	.4byte 0x326C7500
 
 .global lbl_80557280
 lbl_80557280:
 
 	# ROM: 0x493660
-	.asciz "ArenaM1"
+	.4byte 0x4172656E
+	.4byte 0x614D3100
 
 .global lbl_80557288
 lbl_80557288:
 
 	# ROM: 0x493668
-	.asciz "ArenaM2"
+	.4byte 0x4172656E
+	.4byte 0x614D3200
 
 .global lbl_80557290
 lbl_80557290:
 
 	# ROM: 0x493670
-	.asciz "Mem1Fix"
+	.4byte 0x4D656D31
+	.4byte 0x46697800
 
 .global lbl_80557298
 lbl_80557298:
 
 	# ROM: 0x493678
-	.asciz "Scene"
-	.balign 4
+	.4byte 0x5363656E
+	.4byte 0x65000000
 
 .global lbl_805572A0
 lbl_805572A0:
 
 	# ROM: 0x493680
-	.asciz "Mem2Fix"
+	.4byte 0x4D656D32
+	.4byte 0x46697800
 
 .global lbl_805572A8
 lbl_805572A8:
 
 	# ROM: 0x493688
-	.asciz "Debug"
-	.balign 4
+	.4byte 0x44656275
+	.4byte 0x67000000
 
 .global lbl_805572B0
 lbl_805572B0:
@@ -3743,8 +3812,8 @@ lbl_805572B0:
 lbl_805572B8:
 
 	# ROM: 0x493698
-	.asciz "Mint"
-	.balign 4
+	.4byte 0x4D696E74
+	.4byte 0
 
 .global lbl_805572C0
 lbl_805572C0:
@@ -3757,15 +3826,15 @@ lbl_805572C0:
 lbl_805572C8:
 
 	# ROM: 0x4936A8
-	.asciz "Mint"
-	.balign 4
+	.4byte 0x4D696E74
+	.4byte 0
 
 .global lbl_805572D0
 lbl_805572D0:
 
 	# ROM: 0x4936B0
-	.asciz "MNT%s"
-	.balign 4
+	.4byte 0x4D4E5425
+	.4byte 0x73000000
 
 .global lbl_805572D8
 lbl_805572D8:
@@ -3830,7 +3899,8 @@ lbl_80557308:
 lbl_80557310:
 
 	# ROM: 0x4936F0
-	.asciz "    %d\n"
+	.4byte 0x20202020
+	.4byte 0x25640A00
 
 .global lbl_80557318
 lbl_80557318:
@@ -3848,330 +3918,330 @@ lbl_8055731C:
 lbl_80557320:
 
 	# ROM: 0x493700
-	.asciz "LDSRZR"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x5A520000
 
 .global lbl_80557328
 lbl_80557328:
 
 	# ROM: 0x493708
-	.asciz "LDSRBT"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x42540000
 
 .global lbl_80557330
 lbl_80557330:
 
 	# ROM: 0x493710
-	.asciz "LDSRC4"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x43340000
 
 .global lbl_80557338
 lbl_80557338:
 
 	# ROM: 0x493718
-	.asciz "LDSRCA"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x43410000
 
 .global lbl_80557340
 lbl_80557340:
 
 	# ROM: 0x493720
-	.asciz "LDSRSR"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x53520000
 
 .global lbl_80557348
 lbl_80557348:
 
 	# ROM: 0x493728
-	.asciz "LDSRFZ"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x465A0000
 
 .global lbl_80557350
 lbl_80557350:
 
 	# ROM: 0x493730
-	.asciz "LDFRSR"
-	.balign 4
+	.4byte 0x4C444652
+	.4byte 0x53520000
 
 .global lbl_80557358
 lbl_80557358:
 
 	# ROM: 0x493738
-	.asciz "LDSRSA"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x53410000
 
 .global lbl_80557360
 lbl_80557360:
 
 	# ROM: 0x493740
-	.asciz "LDSRSV"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x53560000
 
 .global lbl_80557368
 lbl_80557368:
 
 	# ROM: 0x493748
-	.asciz "LDSRA4"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x41340000
 
 .global lbl_80557370
 lbl_80557370:
 
 	# ROM: 0x493750
-	.asciz "LDSRSZ"
-	.balign 4
+	.4byte 0x4C445352
+	.4byte 0x535A0000
 
 .global lbl_80557378
 lbl_80557378:
 
 	# ROM: 0x493758
-	.asciz "STSRSR"
-	.balign 4
+	.4byte 0x53545352
+	.4byte 0x53520000
 
 .global lbl_80557380
 lbl_80557380:
 
 	# ROM: 0x493760
-	.asciz "STSVSR"
-	.balign 4
+	.4byte 0x53545356
+	.4byte 0x53520000
 
 .global lbl_80557388
 lbl_80557388:
 
 	# ROM: 0x493768
-	.asciz "ADDI32"
-	.balign 4
+	.4byte 0x41444449
+	.4byte 0x33320000
 
 .global lbl_80557390
 lbl_80557390:
 
 	# ROM: 0x493770
-	.asciz "SUBI32"
-	.balign 4
+	.4byte 0x53554249
+	.4byte 0x33320000
 
 .global lbl_80557398
 lbl_80557398:
 
 	# ROM: 0x493778
-	.asciz "MULS32"
-	.balign 4
+	.4byte 0x4D554C53
+	.4byte 0x33320000
 
 .global lbl_805573A0
 lbl_805573A0:
 
 	# ROM: 0x493780
-	.asciz "DIVS32"
-	.balign 4
+	.4byte 0x44495653
+	.4byte 0x33320000
 
 .global lbl_805573A8
 lbl_805573A8:
 
 	# ROM: 0x493788
-	.asciz "MODS32"
-	.balign 4
+	.4byte 0x4D4F4453
+	.4byte 0x33320000
 
 .global lbl_805573B0
 lbl_805573B0:
 
 	# ROM: 0x493790
-	.asciz "INCI32"
-	.balign 4
+	.4byte 0x494E4349
+	.4byte 0x33320000
 
 .global lbl_805573B8
 lbl_805573B8:
 
 	# ROM: 0x493798
-	.asciz "DECI32"
-	.balign 4
+	.4byte 0x44454349
+	.4byte 0x33320000
 
 .global lbl_805573C0
 lbl_805573C0:
 
 	# ROM: 0x4937A0
-	.asciz "NEGS32"
-	.balign 4
+	.4byte 0x4E454753
+	.4byte 0x33320000
 
 .global lbl_805573C8
 lbl_805573C8:
 
 	# ROM: 0x4937A8
-	.asciz "ADDF32"
-	.balign 4
+	.4byte 0x41444446
+	.4byte 0x33320000
 
 .global lbl_805573D0
 lbl_805573D0:
 
 	# ROM: 0x4937B0
-	.asciz "SUBF32"
-	.balign 4
+	.4byte 0x53554246
+	.4byte 0x33320000
 
 .global lbl_805573D8
 lbl_805573D8:
 
 	# ROM: 0x4937B8
-	.asciz "MULF32"
-	.balign 4
+	.4byte 0x4D554C46
+	.4byte 0x33320000
 
 .global lbl_805573E0
 lbl_805573E0:
 
 	# ROM: 0x4937C0
-	.asciz "DIVF32"
-	.balign 4
+	.4byte 0x44495646
+	.4byte 0x33320000
 
 .global lbl_805573E8
 lbl_805573E8:
 
 	# ROM: 0x4937C8
-	.asciz "INCF32"
-	.balign 4
+	.4byte 0x494E4346
+	.4byte 0x33320000
 
 .global lbl_805573F0
 lbl_805573F0:
 
 	# ROM: 0x4937D0
-	.asciz "DECF32"
-	.balign 4
+	.4byte 0x44454346
+	.4byte 0x33320000
 
 .global lbl_805573F8
 lbl_805573F8:
 
 	# ROM: 0x4937D8
-	.asciz "NEGF32"
-	.balign 4
+	.4byte 0x4E454746
+	.4byte 0x33320000
 
 .global lbl_80557400
 lbl_80557400:
 
 	# ROM: 0x4937E0
-	.asciz "LTS32"
-	.balign 4
+	.4byte 0x4C545333
+	.4byte 0x32000000
 
 .global lbl_80557408
 lbl_80557408:
 
 	# ROM: 0x4937E8
-	.asciz "LES32"
-	.balign 4
+	.4byte 0x4C455333
+	.4byte 0x32000000
 
 .global lbl_80557410
 lbl_80557410:
 
 	# ROM: 0x4937F0
-	.asciz "EQI32"
-	.balign 4
+	.4byte 0x45514933
+	.4byte 0x32000000
 
 .global lbl_80557418
 lbl_80557418:
 
 	# ROM: 0x4937F8
-	.asciz "NEI32"
-	.balign 4
+	.4byte 0x4E454933
+	.4byte 0x32000000
 
 .global lbl_80557420
 lbl_80557420:
 
 	# ROM: 0x493800
-	.asciz "LTF32"
-	.balign 4
+	.4byte 0x4C544633
+	.4byte 0x32000000
 
 .global lbl_80557428
 lbl_80557428:
 
 	# ROM: 0x493808
-	.asciz "LEF32"
-	.balign 4
+	.4byte 0x4C454633
+	.4byte 0x32000000
 
 .global lbl_80557430
 lbl_80557430:
 
 	# ROM: 0x493810
-	.asciz "EQF32"
-	.balign 4
+	.4byte 0x45514633
+	.4byte 0x32000000
 
 .global lbl_80557438
 lbl_80557438:
 
 	# ROM: 0x493818
-	.asciz "NEF32"
-	.balign 4
+	.4byte 0x4E454633
+	.4byte 0x32000000
 
 .global lbl_80557440
 lbl_80557440:
 
 	# ROM: 0x493820
-	.asciz "LTCMP"
-	.balign 4
+	.4byte 0x4C54434D
+	.4byte 0x50000000
 
 .global lbl_80557448
 lbl_80557448:
 
 	# ROM: 0x493828
-	.asciz "LECMP"
-	.balign 4
+	.4byte 0x4C45434D
+	.4byte 0x50000000
 
 .global lbl_80557450
 lbl_80557450:
 
 	# ROM: 0x493830
-	.asciz "EQBOOL"
-	.balign 4
+	.4byte 0x4551424F
+	.4byte 0x4F4C0000
 
 .global lbl_80557458
 lbl_80557458:
 
 	# ROM: 0x493838
-	.asciz "NEBOOL"
-	.balign 4
+	.4byte 0x4E45424F
+	.4byte 0x4F4C0000
 
 .global lbl_80557460
 lbl_80557460:
 
 	# ROM: 0x493840
-	.asciz "ANDI32"
-	.balign 4
+	.4byte 0x414E4449
+	.4byte 0x33320000
 
 .global lbl_80557468
 lbl_80557468:
 
 	# ROM: 0x493848
-	.asciz "ORI32"
-	.balign 4
+	.4byte 0x4F524933
+	.4byte 0x32000000
 
 .global lbl_80557470
 lbl_80557470:
 
 	# ROM: 0x493850
-	.asciz "XORI32"
-	.balign 4
+	.4byte 0x584F5249
+	.4byte 0x33320000
 
 .global lbl_80557478
 lbl_80557478:
 
 	# ROM: 0x493858
-	.asciz "NTI32"
-	.balign 4
+	.4byte 0x4E544933
+	.4byte 0x32000000
 
 .global lbl_80557480
 lbl_80557480:
 
 	# ROM: 0x493860
-	.asciz "NTBOOL"
-	.balign 4
+	.4byte 0x4E54424F
+	.4byte 0x4F4C0000
 
 .global lbl_80557488
 lbl_80557488:
 
 	# ROM: 0x493868
-	.asciz "SLLI32"
-	.balign 4
+	.4byte 0x534C4C49
+	.4byte 0x33320000
 
 .global lbl_80557490
 lbl_80557490:
 
 	# ROM: 0x493870
-	.asciz "SLRI32"
-	.balign 4
+	.4byte 0x534C5249
+	.4byte 0x33320000
 
 .global lbl_80557498
 lbl_80557498:
@@ -4183,148 +4253,149 @@ lbl_80557498:
 lbl_8055749C:
 
 	# ROM: 0x49387C
-	.asciz "JMPPOS"
-	.balign 4
+	.4byte 0x4A4D5050
+	.4byte 0x4F530000
 
 .global lbl_805574A4
 lbl_805574A4:
 
 	# ROM: 0x493884
-	.asciz "JMPNEG"
-	.balign 4
+	.4byte 0x4A4D504E
+	.4byte 0x45470000
 
 .global lbl_805574AC
 lbl_805574AC:
 
 	# ROM: 0x49388C
-	.asciz "FENTER"
-	.balign 4
+	.4byte 0x46454E54
+	.4byte 0x45520000
 
 .global lbl_805574B4
 lbl_805574B4:
 
 	# ROM: 0x493894
-	.asciz "FLEAVE"
-	.balign 4
+	.4byte 0x464C4541
+	.4byte 0x56450000
 
 .global lbl_805574BC
 lbl_805574BC:
 
 	# ROM: 0x49389C
-	.asciz "FRET"
-	.balign 4
+	.4byte 0x46524554
+	.4byte 0
 
 .global lbl_805574C4
 lbl_805574C4:
 
 	# ROM: 0x4938A4
-	.asciz "CALL"
-	.balign 4
+	.4byte 0x43414C4C
+	.4byte 0
 
 .global lbl_805574CC
 lbl_805574CC:
 
 	# ROM: 0x4938AC
-	.asciz "YIELD"
-	.balign 4
+	.4byte 0x5949454C
+	.4byte 0x44000000
 
 .global lbl_805574D4
 lbl_805574D4:
 
 	# ROM: 0x4938B4
-	.asciz "MCOPY"
-	.balign 4
+	.4byte 0x4D434F50
+	.4byte 0x59000000
 
 .global lbl_805574DC
 lbl_805574DC:
 
 	# ROM: 0x4938BC
-	.asciz "MZEROS"
-	.balign 4
+	.4byte 0x4D5A4552
+	.4byte 0x4F530000
 
 .global lbl_805574E4
 lbl_805574E4:
 
 	# ROM: 0x4938C4
-	.asciz "SPPSH"
-	.balign 4
+	.4byte 0x53505053
+	.4byte 0x48000000
 
 .global lbl_805574EC
 lbl_805574EC:
 
 	# ROM: 0x4938CC
-	.asciz "SPPSHZ"
-	.balign 4
+	.4byte 0x53505053
+	.4byte 0x485A0000
 
 .global lbl_805574F4
 lbl_805574F4:
 
 	# ROM: 0x4938D4
-	.asciz "SPPOP"
-	.balign 4
+	.4byte 0x5350504F
+	.4byte 0x50000000
 
 .global lbl_805574FC
 lbl_805574FC:
 
 	# ROM: 0x4938DC
-	.asciz "ADDOFS"
-	.balign 4
+	.4byte 0x4144444F
+	.4byte 0x46530000
 
 .global lbl_80557504
 lbl_80557504:
 
 	# ROM: 0x4938E4
-	.asciz "ARPSHZ"
-	.balign 4
+	.4byte 0x41525053
+	.4byte 0x485A0000
 
 .global lbl_8055750C
 lbl_8055750C:
 
 	# ROM: 0x4938EC
-	.asciz "ARIDX"
-	.balign 4
+	.4byte 0x41524944
+	.4byte 0x58000000
 
 .global lbl_80557514
 lbl_80557514:
 
 	# ROM: 0x4938F4
-	.asciz "ARLEN"
-	.balign 4
+	.4byte 0x41524C45
+	.4byte 0x4E000000
 
 .global lbl_8055751C
 lbl_8055751C:
 
 	# ROM: 0x4938FC
-	.asciz "ARPOP"
-	.balign 4
+	.4byte 0x4152504F
+	.4byte 0x50000000
 	.4byte 0
 
 .global lbl_80557528
 lbl_80557528:
 
 	# ROM: 0x493908
-	.asciz "* %s\n"
-	.balign 4
+	.4byte 0x2A202573
+	.4byte 0x0A000000
 
 .global lbl_80557530
 lbl_80557530:
 
 	# ROM: 0x493910
-	.asciz "Warning"
+	.4byte 0x5761726E
+	.4byte 0x696E6700
 
 .global lbl_80557538
 lbl_80557538:
 
 	# ROM: 0x493918
-	.asciz "Error"
-	.balign 4
+	.4byte 0x4572726F
+	.4byte 0x72000000
 
 .global lbl_80557540
 lbl_80557540:
 
 	# ROM: 0x493920
-	.asciz "Fatal"
-	.balign 4
+	.4byte 0x46617461
+	.4byte 0x6C000000
 
 .global lbl_80557548
 lbl_80557548:
@@ -4349,22 +4420,22 @@ lbl_80557550:
 lbl_80557558:
 
 	# ROM: 0x493938
-	.asciz "%3d : "
-	.balign 4
+	.4byte 0x25336420
+	.4byte 0x3A200000
 
 .global lbl_80557560
 lbl_80557560:
 
 	# ROM: 0x493940
-	.asciz "%08x"
-	.balign 4
+	.4byte 0x25303878
+	.4byte 0
 
 .global lbl_80557568
 lbl_80557568:
 
 	# ROM: 0x493948
-	.asciz "(%2d) "
-	.balign 4
+	.4byte 0x28253264
+	.4byte 0x29200000
 
 .global lbl_80557570
 lbl_80557570:
@@ -4389,8 +4460,8 @@ lbl_8055757C:
 lbl_80557580:
 
 	# ROM: 0x493960
-	.asciz "bool"
-	.balign 4
+	.4byte 0x626F6F6C
+	.4byte 0
 
 .global lbl_80557588
 lbl_80557588:
@@ -4402,15 +4473,15 @@ lbl_80557588:
 lbl_8055758C:
 
 	# ROM: 0x49396C
-	.asciz "float"
-	.balign 4
+	.4byte 0x666C6F61
+	.4byte 0x74000000
 
 .global lbl_80557594
 lbl_80557594:
 
 	# ROM: 0x493974
-	.asciz "string"
-	.balign 4
+	.4byte 0x73747269
+	.4byte 0x6E670000
 
 .global lbl_8055759C
 lbl_8055759C:
@@ -4422,7 +4493,8 @@ lbl_8055759C:
 lbl_805575A0:
 
 	# ROM: 0x493980
-	.asciz "ns   : "
+	.4byte 0x6E732020
+	.4byte 0x203A2000
 
 .global lbl_805575A8
 lbl_805575A8:
@@ -4489,69 +4561,71 @@ lbl_805575C8:
 lbl_805575D0:
 
 	# ROM: 0x4939B0
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_805575D8
 lbl_805575D8:
 
 	# ROM: 0x4939B8
-	.asciz "LvMap"
-	.balign 4
+	.4byte 0x4C764D61
+	.4byte 0x70000000
 
 .global lbl_805575E0
 lbl_805575E0:
 
 	# ROM: 0x4939C0
-	.asciz "Ship"
-	.balign 4
+	.4byte 0x53686970
+	.4byte 0
 
 .global lbl_805575E8
 lbl_805575E8:
 
 	# ROM: 0x4939C8
-	.asciz "Step"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0
 
 .global lbl_805575F0
 lbl_805575F0:
 
 	# ROM: 0x4939D0
-	.asciz "Pause"
-	.balign 4
+	.4byte 0x50617573
+	.4byte 0x65000000
 
 .global lbl_805575F8
 lbl_805575F8:
 
 	# ROM: 0x4939D8
-	.asciz "Common"
-	.balign 4
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E0000
 
 .global lbl_80557600
 lbl_80557600:
 
 	# ROM: 0x4939E0
-	.asciz "Option"
-	.balign 4
+	.4byte 0x4F707469
+	.4byte 0x6F6E0000
 
 .global lbl_80557608
 lbl_80557608:
 
 	# ROM: 0x4939E8
-	.asciz "History"
+	.4byte 0x48697374
+	.4byte 0x6F727900
 
 .global lbl_80557610
 lbl_80557610:
 
 	# ROM: 0x4939F0
-	.asciz "Product"
+	.4byte 0x50726F64
+	.4byte 0x75637400
 
 .global lbl_80557618
 lbl_80557618:
 
 	# ROM: 0x4939F8
-	.asciz "News"
-	.balign 4
+	.4byte 0x4E657773
+	.4byte 0
 
 .global lbl_80557620
 lbl_80557620:
@@ -4569,22 +4643,22 @@ lbl_80557624:
 lbl_80557628:
 
 	# ROM: 0x493A08
-	.asciz ".msbt"
-	.balign 4
+	.4byte 0x2E6D7362
+	.4byte 0x74000000
 
 .global lbl_80557630
 lbl_80557630:
 
 	# ROM: 0x493A10
-	.asciz "%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0
 
 .global lbl_80557638
 lbl_80557638:
 
 	# ROM: 0x493A18
-	.asciz "/tmp"
-	.balign 4
+	.4byte 0x2F746D70
+	.4byte 0
 
 .global lbl_80557640
 lbl_80557640:
@@ -4596,8 +4670,8 @@ lbl_80557640:
 lbl_80557644:
 
 	# ROM: 0x493A24
-	.asciz "Nand"
-	.balign 4
+	.4byte 0x4E616E64
+	.4byte 0
 
 .global lbl_8055764C
 lbl_8055764C:
@@ -4609,36 +4683,36 @@ lbl_8055764C:
 lbl_80557650:
 
 	# ROM: 0x493A30
-	.asciz "%s/%s"
-	.balign 4
+	.4byte 0x25732F25
+	.4byte 0x73000000
 
 .global lbl_80557658
 lbl_80557658:
 
 	# ROM: 0x493A38
-	.asciz "%s.bin"
-	.balign 4
+	.4byte 0x25732E62
+	.4byte 0x696E0000
 
 .global lbl_80557660
 lbl_80557660:
 
 	# ROM: 0x493A40
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_80557668
 lbl_80557668:
 
 	# ROM: 0x493A48
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557670
 lbl_80557670:
 
 	# ROM: 0x493A50
-	.asciz "Pause"
-	.balign 4
+	.4byte 0x50617573
+	.4byte 0x65000000
 
 .global lbl_80557678
 lbl_80557678:
@@ -4656,70 +4730,71 @@ lbl_8055767C:
 lbl_80557680:
 
 	# ROM: 0x493A60
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557688
 lbl_80557688:
 
 	# ROM: 0x493A68
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557690
 lbl_80557690:
 
 	# ROM: 0x493A70
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80557698
 lbl_80557698:
 
 	# ROM: 0x493A78
-	.asciz "Free"
-	.balign 4
+	.4byte 0x46726565
+	.4byte 0
 
 .global lbl_805576A0
 lbl_805576A0:
 
 	# ROM: 0x493A80
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_805576A8
 lbl_805576A8:
 
 	# ROM: 0x493A88
-	.asciz "Icon"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0
 
 .global lbl_805576B0
 lbl_805576B0:
 
 	# ROM: 0x493A90
-	.asciz "FrameN"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x654E0000
 
 .global lbl_805576B8
 lbl_805576B8:
 
 	# ROM: 0x493A98
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805576C0
 lbl_805576C0:
 
 	# ROM: 0x493AA0
-	.asciz "AbStar"
-	.balign 4
+	.4byte 0x41625374
+	.4byte 0x61720000
 
 .global lbl_805576C8
 lbl_805576C8:
 
 	# ROM: 0x493AA8
-	.asciz "AbIconN"
+	.4byte 0x41624963
+	.4byte 0x6F6E4E00
 
 .global lbl_805576D0
 lbl_805576D0:
@@ -4731,284 +4806,296 @@ lbl_805576D0:
 lbl_805576D4:
 
 	# ROM: 0x493AB4
-	.asciz "PageN"
-	.balign 4
+	.4byte 0x50616765
+	.4byte 0x4E000000
 	.4byte 0
 
 .global lbl_805576E0
 lbl_805576E0:
 
 	# ROM: 0x493AC0
-	.asciz "Dropout"
+	.4byte 0x44726F70
+	.4byte 0x6F757400
 
 .global lbl_805576E8
 lbl_805576E8:
 
 	# ROM: 0x493AC8
-	.asciz "Special"
+	.4byte 0x53706563
+	.4byte 0x69616C00
 
 .global lbl_805576F0
 lbl_805576F0:
 
 	# ROM: 0x493AD0
-	.asciz "Ship"
-	.balign 4
+	.4byte 0x53686970
+	.4byte 0
 
 .global lbl_805576F8
 lbl_805576F8:
 
 	# ROM: 0x493AD8
-	.asciz "Remote"
-	.balign 4
+	.4byte 0x52656D6F
+	.4byte 0x74650000
 
 .global lbl_80557700
 lbl_80557700:
 
 	# ROM: 0x493AE0
-	.asciz "Ability"
+	.4byte 0x4162696C
+	.4byte 0x69747900
 
 .global lbl_80557708
 lbl_80557708:
 
 	# ROM: 0x493AE8
-	.asciz "Friend"
-	.balign 4
+	.4byte 0x46726965
+	.4byte 0x6E640000
 
 .global lbl_80557710
 lbl_80557710:
 
 	# ROM: 0x493AF0
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80557718
 lbl_80557718:
 
 	# ROM: 0x493AF8
-	.asciz "Drawing"
+	.4byte 0x44726177
+	.4byte 0x696E6700
 
 .global lbl_80557720
 lbl_80557720:
 
 	# ROM: 0x493B00
-	.asciz "Drawn"
-	.balign 4
+	.4byte 0x44726177
+	.4byte 0x6E000000
 
 .global lbl_80557728
 lbl_80557728:
 
 	# ROM: 0x493B08
-	.asciz "Dash"
-	.balign 4
+	.4byte 0x44617368
+	.4byte 0
 
 .global lbl_80557730
 lbl_80557730:
 
 	# ROM: 0x493B10
-	.asciz "Guard"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x64000000
 
 .global lbl_80557738
 lbl_80557738:
 
 	# ROM: 0x493B18
-	.asciz "Sliding"
+	.4byte 0x536C6964
+	.4byte 0x696E6700
 
 .global lbl_80557740
 lbl_80557740:
 
 	# ROM: 0x493B20
-	.asciz "Swim"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0
 
 .global lbl_80557748
 lbl_80557748:
 
 	# ROM: 0x493B28
-	.asciz "Swim2"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0x32000000
 
 .global lbl_80557750
 lbl_80557750:
 
 	# ROM: 0x493B30
-	.asciz "Pistol"
-	.balign 4
+	.4byte 0x50697374
+	.4byte 0x6F6C0000
 
 .global lbl_80557758
 lbl_80557758:
 
 	# ROM: 0x493B38
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_80557760
 lbl_80557760:
 
 	# ROM: 0x493B40
-	.asciz "Beam"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0
 
 .global lbl_80557768
 lbl_80557768:
 
 	# ROM: 0x493B48
-	.asciz "Dril"
-	.balign 4
+	.4byte 0x4472696C
+	.4byte 0
 
 .global lbl_80557770
 lbl_80557770:
 
 	# ROM: 0x493B50
-	.asciz "Under"
-	.balign 4
+	.4byte 0x556E6465
+	.4byte 0x72000000
 
 .global lbl_80557778
 lbl_80557778:
 
 	# ROM: 0x493B58
-	.asciz "Upper"
-	.balign 4
+	.4byte 0x55707065
+	.4byte 0x72000000
 
 .global lbl_80557780
 lbl_80557780:
 
 	# ROM: 0x493B60
-	.asciz "Mteoend"
+	.4byte 0x4D74656F
+	.4byte 0x656E6400
 
 .global lbl_80557788
 lbl_80557788:
 
 	# ROM: 0x493B68
-	.asciz "Roll"
-	.balign 4
+	.4byte 0x526F6C6C
+	.4byte 0
 
 .global lbl_80557790
 lbl_80557790:
 
 	# ROM: 0x493B70
-	.asciz "Slash"
-	.balign 4
+	.4byte 0x536C6173
+	.4byte 0x68000000
 
 .global lbl_80557798
 lbl_80557798:
 
 	# ROM: 0x493B78
-	.asciz "Roof"
-	.balign 4
+	.4byte 0x526F6F66
+	.4byte 0
 
 .global lbl_805577A0
 lbl_805577A0:
 
 	# ROM: 0x493B80
-	.asciz "Typhoon"
+	.4byte 0x54797068
+	.4byte 0x6F6F6E00
 
 .global lbl_805577A8
 lbl_805577A8:
 
 	# ROM: 0x493B88
-	.asciz "Capture"
+	.4byte 0x43617074
+	.4byte 0x75726500
 
 .global lbl_805577B0
 lbl_805577B0:
 
 	# ROM: 0x493B90
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_805577B8
 lbl_805577B8:
 
 	# ROM: 0x493B98
-	.asciz "Stored"
-	.balign 4
+	.4byte 0x53746F72
+	.4byte 0x65640000
 
 .global lbl_805577C0
 lbl_805577C0:
 
 	# ROM: 0x493BA0
-	.asciz "Arrow"
-	.balign 4
+	.4byte 0x4172726F
+	.4byte 0x77000000
 
 .global lbl_805577C8
 lbl_805577C8:
 
 	# ROM: 0x493BA8
-	.asciz "Laser"
-	.balign 4
+	.4byte 0x4C617365
+	.4byte 0x72000000
 
 .global lbl_805577D0
 lbl_805577D0:
 
 	# ROM: 0x493BB0
-	.asciz "Cannon"
-	.balign 4
+	.4byte 0x43616E6E
+	.4byte 0x6F6E0000
 
 .global lbl_805577D8
 lbl_805577D8:
 
 	# ROM: 0x493BB8
-	.asciz "Barrier"
+	.4byte 0x42617272
+	.4byte 0x69657200
 
 .global lbl_805577E0
 lbl_805577E0:
 
 	# ROM: 0x493BC0
-	.asciz "Swing"
-	.balign 4
+	.4byte 0x5377696E
+	.4byte 0x67000000
 
 .global lbl_805577E8
 lbl_805577E8:
 
 	# ROM: 0x493BC8
-	.asciz "Sheild"
-	.balign 4
+	.4byte 0x53686569
+	.4byte 0x6C640000
 
 .global lbl_805577F0
 lbl_805577F0:
 
 	# ROM: 0x493BD0
-	.asciz "Diving"
-	.balign 4
+	.4byte 0x44697669
+	.4byte 0x6E670000
 
 .global lbl_805577F8
 lbl_805577F8:
 
 	# ROM: 0x493BD8
-	.asciz "Throw"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x77000000
 
 .global lbl_80557800
 lbl_80557800:
 
 	# ROM: 0x493BE0
-	.asciz "Falling"
+	.4byte 0x46616C6C
+	.4byte 0x696E6700
 
 .global lbl_80557808
 lbl_80557808:
 
 	# ROM: 0x493BE8
-	.asciz "Heading"
+	.4byte 0x48656164
+	.4byte 0x696E6700
 
 .global lbl_80557810
 lbl_80557810:
 
 	# ROM: 0x493BF0
-	.asciz "Toss"
-	.balign 4
+	.4byte 0x546F7373
+	.4byte 0
 
 .global lbl_80557818
 lbl_80557818:
 
 	# ROM: 0x493BF8
-	.asciz "Panchi"
-	.balign 4
+	.4byte 0x50616E63
+	.4byte 0x68690000
 
 .global lbl_80557820
 lbl_80557820:
 
 	# ROM: 0x493C00
-	.asciz "SkyKick"
+	.4byte 0x536B794B
+	.4byte 0x69636B00
 
 .global lbl_80557828
 lbl_80557828:
@@ -5020,109 +5107,114 @@ lbl_80557828:
 lbl_8055782C:
 
 	# ROM: 0x493C0C
-	.asciz "Hammer"
-	.balign 4
+	.4byte 0x48616D6D
+	.4byte 0x65720000
 
 .global lbl_80557834
 lbl_80557834:
 
 	# ROM: 0x493C14
-	.asciz "Wheel"
-	.balign 4
+	.4byte 0x57686565
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_80557840
 lbl_80557840:
 
 	# ROM: 0x493C20
-	.asciz "Twinkle"
+	.4byte 0x5477696E
+	.4byte 0x6B6C6500
 
 .global lbl_80557848
 lbl_80557848:
 
 	# ROM: 0x493C28
-	.asciz "Stone"
-	.balign 4
+	.4byte 0x53746F6E
+	.4byte 0x65000000
 
 .global lbl_80557850
 lbl_80557850:
 
 	# ROM: 0x493C30
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 
 .global lbl_80557858
 lbl_80557858:
 
 	# ROM: 0x493C38
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_80557860
 lbl_80557860:
 
 	# ROM: 0x493C40
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_80557868
 lbl_80557868:
 
 	# ROM: 0x493C48
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_80557870
 lbl_80557870:
 
 	# ROM: 0x493C50
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_80557878
 lbl_80557878:
 
 	# ROM: 0x493C58
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_80557880
 lbl_80557880:
 
 	# ROM: 0x493C60
-	.asciz "Smash"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x68000000
 
 .global lbl_80557888
 lbl_80557888:
 
 	# ROM: 0x493C68
-	.asciz "%sBtn"
-	.balign 4
+	.4byte 0x25734274
+	.4byte 0x6E000000
 
 .global lbl_80557890
 lbl_80557890:
 
 	# ROM: 0x493C70
-	.asciz "Abl%s%s"
+	.4byte 0x41626C25
+	.4byte 0x73257300
 
 .global lbl_80557898
 lbl_80557898:
 
 	# ROM: 0x493C78
-	.asciz "AbImage"
+	.4byte 0x4162496D
+	.4byte 0x61676500
 
 .global lbl_805578A0
 lbl_805578A0:
 
 	# ROM: 0x493C80
-	.asciz "ImageN"
-	.balign 4
+	.4byte 0x496D6167
+	.4byte 0x654E0000
 
 .global lbl_805578A8
 lbl_805578A8:
 
 	# ROM: 0x493C88
-	.asciz "AbText"
-	.balign 4
+	.4byte 0x41625465
+	.4byte 0x78740000
 
 .global lbl_805578B0
 lbl_805578B0:
@@ -5147,33 +5239,36 @@ lbl_805578BC:
 lbl_805578C0:
 
 	# ROM: 0x493CA0
-	.asciz "Group1N"
+	.4byte 0x47726F75
+	.4byte 0x70314E00
 
 .global lbl_805578C8
 lbl_805578C8:
 
 	# ROM: 0x493CA8
-	.asciz "Group2N"
+	.4byte 0x47726F75
+	.4byte 0x70324E00
 
 .global lbl_805578D0
 lbl_805578D0:
 
 	# ROM: 0x493CB0
-	.asciz "%s%d"
-	.balign 4
+	.4byte 0x25732564
+	.4byte 0
 
 .global lbl_805578D8
 lbl_805578D8:
 
 	# ROM: 0x493CB8
-	.asciz "Again"
-	.balign 4
+	.4byte 0x41676169
+	.4byte 0x6E000000
 
 .global lbl_805578E0
 lbl_805578E0:
 
 	# ROM: 0x493CC0
-	.asciz "WindowN"
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
 
 .global lbl_805578E8
 lbl_805578E8:
@@ -5191,123 +5286,127 @@ lbl_805578EC:
 lbl_805578F0:
 
 	# ROM: 0x493CD0
-	.asciz "Button"
-	.balign 4
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
 
 .global lbl_805578F8
 lbl_805578F8:
 
 	# ROM: 0x493CD8
-	.asciz "%s_Yes"
-	.balign 4
+	.4byte 0x25735F59
+	.4byte 0x65730000
 
 .global lbl_80557900
 lbl_80557900:
 
 	# ROM: 0x493CE0
-	.asciz "%s_No"
-	.balign 4
+	.4byte 0x25735F4E
+	.4byte 0x6F000000
 
 .global lbl_80557908
 lbl_80557908:
 
 	# ROM: 0x493CE8
-	.asciz "WindowN"
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
 
 .global lbl_80557910
 lbl_80557910:
 
 	# ROM: 0x493CF0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557918
 lbl_80557918:
 
 	# ROM: 0x493CF8
-	.asciz "%s.cmp"
-	.balign 4
+	.4byte 0x25732E63
+	.4byte 0x6D700000
 
 .global lbl_80557920
 lbl_80557920:
 
 	# ROM: 0x493D00
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80557928
 lbl_80557928:
 
 	# ROM: 0x493D08
-	.asciz "Window"
-	.balign 4
+	.4byte 0x57696E64
+	.4byte 0x6F770000
 
 .global lbl_80557930
 lbl_80557930:
 
 	# ROM: 0x493D10
-	.asciz "RewindN"
+	.4byte 0x52657769
+	.4byte 0x6E644E00
 
 .global lbl_80557938
 lbl_80557938:
 
 	# ROM: 0x493D18
-	.asciz "PlayN"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x4E000000
 
 .global lbl_80557940
 lbl_80557940:
 
 	# ROM: 0x493D20
-	.asciz "StopN"
-	.balign 4
+	.4byte 0x53746F70
+	.4byte 0x4E000000
 
 .global lbl_80557948
 lbl_80557948:
 
 	# ROM: 0x493D28
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80557950
 lbl_80557950:
 
 	# ROM: 0x493D30
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557958
 lbl_80557958:
 
 	# ROM: 0x493D38
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_80557960
 lbl_80557960:
 
 	# ROM: 0x493D40
-	.asciz "TabN"
-	.balign 4
+	.4byte 0x5461624E
+	.4byte 0
 
 .global lbl_80557968
 lbl_80557968:
 
 	# ROM: 0x493D48
-	.asciz "RewindN"
+	.4byte 0x52657769
+	.4byte 0x6E644E00
 
 .global lbl_80557970
 lbl_80557970:
 
 	# ROM: 0x493D50
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557978
 lbl_80557978:
 
 	# ROM: 0x493D58
-	.asciz "PlayN"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x4E000000
 
 .global lbl_80557980
 lbl_80557980:
@@ -5319,29 +5418,29 @@ lbl_80557980:
 lbl_80557984:
 
 	# ROM: 0x493D64
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055798C
 lbl_8055798C:
 
 	# ROM: 0x493D6C
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80557994
 lbl_80557994:
 
 	# ROM: 0x493D74
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055799C
 lbl_8055799C:
 
 	# ROM: 0x493D7C
-	.asciz "%02u"
-	.balign 4
+	.4byte 0x25303275
+	.4byte 0
 
 .global lbl_805579A4
 lbl_805579A4:
@@ -5359,64 +5458,65 @@ lbl_805579A8:
 lbl_805579AC:
 
 	# ROM: 0x493D8C
-	.asciz "Select"
-	.balign 4
+	.4byte 0x53656C65
+	.4byte 0x63740000
 
 .global lbl_805579B4
 lbl_805579B4:
 
 	# ROM: 0x493D94
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_805579BC
 lbl_805579BC:
 
 	# ROM: 0x493D9C
-	.asciz "Push2"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x32000000
 
 .global lbl_805579C4
 lbl_805579C4:
 
 	# ROM: 0x493DA4
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_805579CC
 lbl_805579CC:
 
 	# ROM: 0x493DAC
-	.asciz "Push1"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x31000000
 	.4byte 0
 
 .global lbl_805579D8
 lbl_805579D8:
 
 	# ROM: 0x493DB8
-	.asciz "Release"
+	.4byte 0x52656C65
+	.4byte 0x61736500
 
 .global lbl_805579E0
 lbl_805579E0:
 
 	# ROM: 0x493DC0
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_805579E8
 lbl_805579E8:
 
 	# ROM: 0x493DC8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805579F0
 lbl_805579F0:
 
 	# ROM: 0x493DD0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_805579F8
 lbl_805579F8:
@@ -5448,153 +5548,162 @@ lbl_80557A08:
 lbl_80557A10:
 
 	# ROM: 0x493DF0
-	.asciz "Player"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x65720000
 
 .global lbl_80557A18
 lbl_80557A18:
 
 	# ROM: 0x493DF8
-	.asciz "Cursor"
-	.balign 4
+	.4byte 0x43757273
+	.4byte 0x6F720000
 
 .global lbl_80557A20
 lbl_80557A20:
 
 	# ROM: 0x493E00
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557A28
 lbl_80557A28:
 
 	# ROM: 0x493E08
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_80557A30
 lbl_80557A30:
 
 	# ROM: 0x493E10
-	.asciz "BronzeN"
+	.4byte 0x42726F6E
+	.4byte 0x7A654E00
 
 .global lbl_80557A38
 lbl_80557A38:
 
 	# ROM: 0x493E18
-	.asciz "SilverN"
+	.4byte 0x53696C76
+	.4byte 0x65724E00
 
 .global lbl_80557A40
 lbl_80557A40:
 
 	# ROM: 0x493E20
-	.asciz "GoldN"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0x4E000000
 
 .global lbl_80557A48
 lbl_80557A48:
 
 	# ROM: 0x493E28
-	.asciz "DeleteN"
+	.4byte 0x44656C65
+	.4byte 0x74654E00
 
 .global lbl_80557A50
 lbl_80557A50:
 
 	# ROM: 0x493E30
-	.asciz "RumbleN"
+	.4byte 0x52756D62
+	.4byte 0x6C654E00
 
 .global lbl_80557A58
 lbl_80557A58:
 
 	# ROM: 0x493E38
-	.asciz "EndingN"
+	.4byte 0x456E6469
+	.4byte 0x6E674E00
 
 .global lbl_80557A60
 lbl_80557A60:
 
 	# ROM: 0x493E40
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80557A68
 lbl_80557A68:
 
 	# ROM: 0x493E48
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557A70
 lbl_80557A70:
 
 	# ROM: 0x493E50
-	.asciz "Delete"
-	.balign 4
+	.4byte 0x44656C65
+	.4byte 0x74650000
 
 .global lbl_80557A78
 lbl_80557A78:
 
 	# ROM: 0x493E58
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80557A80
 lbl_80557A80:
 
 	# ROM: 0x493E60
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80557A88
 lbl_80557A88:
 
 	# ROM: 0x493E68
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557A90
 lbl_80557A90:
 
 	# ROM: 0x493E70
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557A98
 lbl_80557A98:
 
 	# ROM: 0x493E78
-	.asciz "Confirm"
+	.4byte 0x436F6E66
+	.4byte 0x69726D00
 
 .global lbl_80557AA0
 lbl_80557AA0:
 
 	# ROM: 0x493E80
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557AA8
 lbl_80557AA8:
 
 	# ROM: 0x493E88
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80557AB0
 lbl_80557AB0:
 
 	# ROM: 0x493E90
-	.asciz "File"
-	.balign 4
+	.4byte 0x46696C65
+	.4byte 0
 
 .global lbl_80557AB8
 lbl_80557AB8:
 
 	# ROM: 0x493E98
-	.asciz "Kirby"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79000000
 
 .global lbl_80557AC0
 lbl_80557AC0:
 
 	# ROM: 0x493EA0
-	.asciz "FileBG"
-	.balign 4
+	.4byte 0x46696C65
+	.4byte 0x42470000
 
 .global lbl_80557AC8
 lbl_80557AC8:
@@ -5606,81 +5715,86 @@ lbl_80557AC8:
 lbl_80557ACC:
 
 	# ROM: 0x493EAC
-	.asciz "Blank"
-	.balign 4
+	.4byte 0x426C616E
+	.4byte 0x6B000000
 
 .global lbl_80557AD4
 lbl_80557AD4:
 
 	# ROM: 0x493EB4
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 	.4byte 0
 
 .global lbl_80557AE0
 lbl_80557AE0:
 
 	# ROM: 0x493EC0
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80557AE8
 lbl_80557AE8:
 
 	# ROM: 0x493EC8
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557AF0
 lbl_80557AF0:
 
 	# ROM: 0x493ED0
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557AF8
 lbl_80557AF8:
 
 	# ROM: 0x493ED8
-	.asciz "OpenBig"
+	.4byte 0x4F70656E
+	.4byte 0x42696700
 
 .global lbl_80557B00
 lbl_80557B00:
 
 	# ROM: 0x493EE0
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_80557B08
 lbl_80557B08:
 
 	# ROM: 0x493EE8
-	.asciz "Bronze"
-	.balign 4
+	.4byte 0x42726F6E
+	.4byte 0x7A650000
 
 .global lbl_80557B10
 lbl_80557B10:
 
 	# ROM: 0x493EF0
-	.asciz "Silver"
-	.balign 4
+	.4byte 0x53696C76
+	.4byte 0x65720000
 
 .global lbl_80557B18
 lbl_80557B18:
 
 	# ROM: 0x493EF8
-	.asciz "Gold"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0
 
 .global lbl_80557B20
 lbl_80557B20:
 
 	# ROM: 0x493F00
-	.asciz "Platina"
+	.4byte 0x506C6174
+	.4byte 0x696E6100
 
 .global lbl_80557B28
 lbl_80557B28:
 
 	# ROM: 0x493F08
-	.asciz "File%dN"
+	.4byte 0x46696C65
+	.4byte 0x25644E00
 
 .global lbl_80557B30
 lbl_80557B30:
@@ -5692,91 +5806,93 @@ lbl_80557B30:
 lbl_80557B34:
 
 	# ROM: 0x493F14
-	.asciz "BlankN"
-	.balign 4
+	.4byte 0x426C616E
+	.4byte 0x6B4E0000
 
 .global lbl_80557B3C
 lbl_80557B3C:
 
 	# ROM: 0x493F1C
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 	.4byte 0
 
 .global lbl_80557B48
 lbl_80557B48:
 
 	# ROM: 0x493F28
-	.asciz "Frame"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x65000000
 
 .global lbl_80557B50
 lbl_80557B50:
 
 	# ROM: 0x493F30
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557B58
 lbl_80557B58:
 
 	# ROM: 0x493F38
-	.asciz "Rumble"
-	.balign 4
+	.4byte 0x52756D62
+	.4byte 0x6C650000
 
 .global lbl_80557B60
 lbl_80557B60:
 
 	# ROM: 0x493F40
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80557B68
 lbl_80557B68:
 
 	# ROM: 0x493F48
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80557B70
 lbl_80557B70:
 
 	# ROM: 0x493F50
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557B78
 lbl_80557B78:
 
 	# ROM: 0x493F58
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557B80
 lbl_80557B80:
 
 	# ROM: 0x493F60
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557B88
 lbl_80557B88:
 
 	# ROM: 0x493F68
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80557B90
 lbl_80557B90:
 
 	# ROM: 0x493F70
-	.asciz "Effect"
-	.balign 4
+	.4byte 0x45666665
+	.4byte 0x63740000
 
 .global lbl_80557B98
 lbl_80557B98:
 
 	# ROM: 0x493F78
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80557BA0
 lbl_80557BA0:
@@ -5788,54 +5904,58 @@ lbl_80557BA0:
 lbl_80557BA4:
 
 	# ROM: 0x493F84
-	.asciz "FrameN"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x654E0000
 	.4byte 0
 
 .global lbl_80557BB0
 lbl_80557BB0:
 
 	# ROM: 0x493F90
-	.asciz "DeleteN"
+	.4byte 0x44656C65
+	.4byte 0x74654E00
 
 .global lbl_80557BB8
 lbl_80557BB8:
 
 	# ROM: 0x493F98
-	.asciz "RumbleN"
+	.4byte 0x52756D62
+	.4byte 0x6C654E00
 
 .global lbl_80557BC0
 lbl_80557BC0:
 
 	# ROM: 0x493FA0
-	.asciz "EndingN"
+	.4byte 0x456E6469
+	.4byte 0x6E674E00
 
 .global lbl_80557BC8
 lbl_80557BC8:
 
 	# ROM: 0x493FA8
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_80557BD0
 lbl_80557BD0:
 
 	# ROM: 0x493FB0
-	.asciz "Black"
-	.balign 4
+	.4byte 0x426C6163
+	.4byte 0x6B000000
 
 .global lbl_80557BD8
 lbl_80557BD8:
 
 	# ROM: 0x493FB8
-	.asciz "BGBomb"
-	.balign 4
+	.4byte 0x4247426F
+	.4byte 0x6D620000
 
 .global lbl_80557BE0
 lbl_80557BE0:
 
 	# ROM: 0x493FC0
-	.asciz "WindowN"
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
 
 .global lbl_80557BE8
 lbl_80557BE8:
@@ -5847,40 +5967,44 @@ lbl_80557BE8:
 lbl_80557BEC:
 
 	# ROM: 0x493FCC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557BF8
 lbl_80557BF8:
 
 	# ROM: 0x493FD8
-	.asciz "FileN%u"
+	.4byte 0x46696C65
+	.4byte 0x4E257500
 
 .global lbl_80557C00
 lbl_80557C00:
 
 	# ROM: 0x493FE0
-	.asciz "BlackN"
-	.balign 4
+	.4byte 0x426C6163
+	.4byte 0x6B4E0000
 
 .global lbl_80557C08
 lbl_80557C08:
 
 	# ROM: 0x493FE8
-	.asciz "BGBombN"
+	.4byte 0x4247426F
+	.4byte 0x6D624E00
 
 .global lbl_80557C10
 lbl_80557C10:
 
 	# ROM: 0x493FF0
-	.asciz "Deleted"
+	.4byte 0x44656C65
+	.4byte 0x74656400
 
 .global lbl_80557C18
 lbl_80557C18:
 
 	# ROM: 0x493FF8
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557C20
 lbl_80557C20:
@@ -5892,23 +6016,23 @@ lbl_80557C20:
 lbl_80557C24:
 
 	# ROM: 0x494004
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557C2C
 lbl_80557C2C:
 
 	# ROM: 0x49400C
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 	.4byte 0
 
 .global lbl_80557C38
 lbl_80557C38:
 
 	# ROM: 0x494018
-	.asciz "Ending"
-	.balign 4
+	.4byte 0x456E6469
+	.4byte 0x6E670000
 
 .global lbl_80557C40
 lbl_80557C40:
@@ -5920,48 +6044,51 @@ lbl_80557C40:
 lbl_80557C44:
 
 	# ROM: 0x494024
-	.asciz "NewN"
-	.balign 4
+	.4byte 0x4E65774E
+	.4byte 0
 
 .global lbl_80557C4C
 lbl_80557C4C:
 
 	# ROM: 0x49402C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557C54
 lbl_80557C54:
 
 	# ROM: 0x494034
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 	.4byte 0
 
 .global lbl_80557C60
 lbl_80557C60:
 
 	# ROM: 0x494040
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80557C68
 lbl_80557C68:
 
 	# ROM: 0x494048
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80557C70
 lbl_80557C70:
 
 	# ROM: 0x494050
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80557C78
 lbl_80557C78:
 
 	# ROM: 0x494058
-	.asciz "OpenBig"
+	.4byte 0x4F70656E
+	.4byte 0x42696700
 
 .global lbl_80557C80
 lbl_80557C80:
@@ -5973,15 +6100,15 @@ lbl_80557C80:
 lbl_80557C84:
 
 	# ROM: 0x494064
-	.asciz "Base01"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0x30310000
 
 .global lbl_80557C8C
 lbl_80557C8C:
 
 	# ROM: 0x49406C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557C98
@@ -5994,15 +6121,15 @@ lbl_80557C98:
 lbl_80557C9C:
 
 	# ROM: 0x49407C
-	.asciz "EdgeL"
-	.balign 4
+	.4byte 0x45646765
+	.4byte 0x4C000000
 
 .global lbl_80557CA4
 lbl_80557CA4:
 
 	# ROM: 0x494084
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557CB0
@@ -6021,114 +6148,120 @@ lbl_80557CB4:
 lbl_80557CB8:
 
 	# ROM: 0x494098
-	.asciz "KirbyL"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x794C0000
 
 .global lbl_80557CC0
 lbl_80557CC0:
 
 	# ROM: 0x4940A0
-	.asciz "Kirby1L"
+	.4byte 0x4B697262
+	.4byte 0x79314C00
 
 .global lbl_80557CC8
 lbl_80557CC8:
 
 	# ROM: 0x4940A8
-	.asciz "Kirby2L"
+	.4byte 0x4B697262
+	.4byte 0x79324C00
 
 .global lbl_80557CD0
 lbl_80557CD0:
 
 	# ROM: 0x4940B0
-	.asciz "Kirby3L"
+	.4byte 0x4B697262
+	.4byte 0x79334C00
 
 .global lbl_80557CD8
 lbl_80557CD8:
 
 	# ROM: 0x4940B8
-	.asciz "Kirby4L"
+	.4byte 0x4B697262
+	.4byte 0x79344C00
 
 .global lbl_80557CE0
 lbl_80557CE0:
 
 	# ROM: 0x4940C0
-	.asciz "Kirby5L"
+	.4byte 0x4B697262
+	.4byte 0x79354C00
 
 .global lbl_80557CE8
 lbl_80557CE8:
 
 	# ROM: 0x4940C8
-	.asciz "Kirby6L"
+	.4byte 0x4B697262
+	.4byte 0x79364C00
 
 .global lbl_80557CF0
 lbl_80557CF0:
 
 	# ROM: 0x4940D0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80557CF8
 lbl_80557CF8:
 
 	# ROM: 0x4940D8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80557D00
 lbl_80557D00:
 
 	# ROM: 0x4940E0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80557D08
 lbl_80557D08:
 
 	# ROM: 0x4940E8
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_80557D10
 lbl_80557D10:
 
 	# ROM: 0x4940F0
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_80557D18
 lbl_80557D18:
 
 	# ROM: 0x4940F8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557D20
 lbl_80557D20:
 
 	# ROM: 0x494100
-	.asciz "WaitA"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x41000000
 
 .global lbl_80557D28
 lbl_80557D28:
 
 	# ROM: 0x494108
-	.asciz "WaitB"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x42000000
 
 .global lbl_80557D30
 lbl_80557D30:
 
 	# ROM: 0x494110
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80557D38
 lbl_80557D38:
 
 	# ROM: 0x494118
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_80557D40
 lbl_80557D40:
@@ -6140,43 +6273,44 @@ lbl_80557D40:
 lbl_80557D44:
 
 	# ROM: 0x494124
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80557D4C
 lbl_80557D4C:
 
 	# ROM: 0x49412C
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80557D54
 lbl_80557D54:
 
 	# ROM: 0x494134
-	.asciz "HatL"
-	.balign 4
+	.4byte 0x4861744C
+	.4byte 0
 
 .global lbl_80557D5C
 lbl_80557D5C:
 
 	# ROM: 0x49413C
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557D68
 lbl_80557D68:
 
 	# ROM: 0x494148
-	.asciz "HatBigM"
+	.4byte 0x48617442
+	.4byte 0x69674D00
 
 .global lbl_80557D70
 lbl_80557D70:
 
 	# ROM: 0x494150
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80557D78
 lbl_80557D78:
@@ -6188,8 +6322,8 @@ lbl_80557D78:
 lbl_80557D7C:
 
 	# ROM: 0x49415C
-	.asciz "GObj"
-	.balign 4
+	.4byte 0x474F626A
+	.4byte 0
 
 .global lbl_80557D84
 lbl_80557D84:
@@ -6214,128 +6348,128 @@ lbl_80557D90:
 lbl_80557D94:
 
 	# ROM: 0x494174
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 
 .global lbl_80557D9C
 lbl_80557D9C:
 
 	# ROM: 0x49417C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_80557DA8
 lbl_80557DA8:
 
 	# ROM: 0x494188
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80557DB0
 lbl_80557DB0:
 
 	# ROM: 0x494190
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80557DB8
 lbl_80557DB8:
 
 	# ROM: 0x494198
-	.asciz "PushN"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x4E000000
 
 .global lbl_80557DC0
 lbl_80557DC0:
 
 	# ROM: 0x4941A0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557DC8
 lbl_80557DC8:
 
 	# ROM: 0x4941A8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557DD0
 lbl_80557DD0:
 
 	# ROM: 0x4941B0
-	.asciz "Frame"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x65000000
 
 .global lbl_80557DD8
 lbl_80557DD8:
 
 	# ROM: 0x4941B8
-	.asciz "Common"
-	.balign 4
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E0000
 
 .global lbl_80557DE0
 lbl_80557DE0:
 
 	# ROM: 0x4941C0
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_80557DE8
 lbl_80557DE8:
 
 	# ROM: 0x4941C8
-	.asciz "Effect"
-	.balign 4
+	.4byte 0x45666665
+	.4byte 0x63740000
 
 .global lbl_80557DF0
 lbl_80557DF0:
 
 	# ROM: 0x4941D0
-	.asciz "Info"
-	.balign 4
+	.4byte 0x496E666F
+	.4byte 0
 
 .global lbl_80557DF8
 lbl_80557DF8:
 
 	# ROM: 0x4941D8
-	.asciz "Info"
-	.balign 4
+	.4byte 0x496E666F
+	.4byte 0
 
 .global lbl_80557E00
 lbl_80557E00:
 
 	# ROM: 0x4941E0
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80557E08
 lbl_80557E08:
 
 	# ROM: 0x4941E8
-	.asciz "Lank"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0
 
 .global lbl_80557E10
 lbl_80557E10:
 
 	# ROM: 0x4941F0
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_80557E18
 lbl_80557E18:
 
 	# ROM: 0x4941F8
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80557E20
 lbl_80557E20:
 
 	# ROM: 0x494200
-	.asciz "BG%s"
-	.balign 4
+	.4byte 0x42472573
+	.4byte 0
 
 .global lbl_80557E28
 lbl_80557E28:
@@ -6347,91 +6481,93 @@ lbl_80557E28:
 lbl_80557E2C:
 
 	# ROM: 0x49420C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80557E34
 lbl_80557E34:
 
 	# ROM: 0x494214
-	.asciz "AbStar"
-	.balign 4
+	.4byte 0x41625374
+	.4byte 0x61720000
 	.4byte 0
 
 .global lbl_80557E40
 lbl_80557E40:
 
 	# ROM: 0x494220
-	.asciz "AbStarN"
+	.4byte 0x41625374
+	.4byte 0x61724E00
 
 .global lbl_80557E48
 lbl_80557E48:
 
 	# ROM: 0x494228
-	.asciz "%sStage"
+	.4byte 0x25735374
+	.4byte 0x61676500
 
 .global lbl_80557E50
 lbl_80557E50:
 
 	# ROM: 0x494230
-	.asciz "LankN"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0x4E000000
 
 .global lbl_80557E58
 lbl_80557E58:
 
 	# ROM: 0x494238
-	.asciz "BD%02d"
-	.balign 4
+	.4byte 0x42442530
+	.4byte 0x32640000
 
 .global lbl_80557E60
 lbl_80557E60:
 
 	# ROM: 0x494240
-	.asciz "BDTime"
-	.balign 4
+	.4byte 0x42445469
+	.4byte 0x6D650000
 
 .global lbl_80557E68
 lbl_80557E68:
 
 	# ROM: 0x494248
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_80557E70
 lbl_80557E70:
 
 	# ROM: 0x494250
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80557E78
 lbl_80557E78:
 
 	# ROM: 0x494258
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80557E80
 lbl_80557E80:
 
 	# ROM: 0x494260
-	.asciz "EndN"
-	.balign 4
+	.4byte 0x456E644E
+	.4byte 0
 
 .global lbl_80557E88
 lbl_80557E88:
 
 	# ROM: 0x494268
-	.asciz "Next"
-	.balign 4
+	.4byte 0x4E657874
+	.4byte 0
 
 .global lbl_80557E90
 lbl_80557E90:
 
 	# ROM: 0x494270
-	.asciz "Medal"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C000000
 
 .global lbl_80557E98
 lbl_80557E98:
@@ -6443,8 +6579,8 @@ lbl_80557E98:
 lbl_80557E9C:
 
 	# ROM: 0x49427C
-	.asciz "LankIN"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0x494E0000
 
 .global lbl_80557EA4
 lbl_80557EA4:
@@ -6456,135 +6592,141 @@ lbl_80557EA4:
 lbl_80557EA8:
 
 	# ROM: 0x494288
-	.asciz "Kirby%d"
+	.4byte 0x4B697262
+	.4byte 0x79256400
 
 .global lbl_80557EB0
 lbl_80557EB0:
 
 	# ROM: 0x494290
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_80557EB8
 lbl_80557EB8:
 
 	# ROM: 0x494298
-	.asciz "Mahoroa"
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
 
 .global lbl_80557EC0
 lbl_80557EC0:
 
 	# ROM: 0x4942A0
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_80557EC8
 lbl_80557EC8:
 
 	# ROM: 0x4942A8
-	.asciz "SwordN"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644E0000
 
 .global lbl_80557ED0
 lbl_80557ED0:
 
 	# ROM: 0x4942B0
-	.asciz "WhipN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x4E000000
 
 .global lbl_80557ED8
 lbl_80557ED8:
 
 	# ROM: 0x4942B8
-	.asciz "FireN"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0x4E000000
 
 .global lbl_80557EE0
 lbl_80557EE0:
 
 	# ROM: 0x4942C0
-	.asciz "SparkN"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
 
 .global lbl_80557EE8
 lbl_80557EE8:
 
 	# ROM: 0x4942C8
-	.asciz "WingN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x4E000000
 
 .global lbl_80557EF0
 lbl_80557EF0:
 
 	# ROM: 0x4942D0
-	.asciz "SmashN"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x684E0000
 
 .global lbl_80557EF8
 lbl_80557EF8:
 
 	# ROM: 0x4942D8
-	.asciz "ScoreS"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65530000
 
 .global lbl_80557F00
 lbl_80557F00:
 
 	# ROM: 0x4942E0
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_80557F08
 lbl_80557F08:
 
 	# ROM: 0x4942E8
-	.asciz "Score"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65000000
 
 .global lbl_80557F10
 lbl_80557F10:
 
 	# ROM: 0x4942F0
-	.asciz "ScoreP"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65500000
 
 .global lbl_80557F18
 lbl_80557F18:
 
 	# ROM: 0x4942F8
-	.asciz "BonusN"
-	.balign 4
+	.4byte 0x426F6E75
+	.4byte 0x734E0000
 
 .global lbl_80557F20
 lbl_80557F20:
 
 	# ROM: 0x494300
-	.asciz "Stage"
-	.balign 4
+	.4byte 0x53746167
+	.4byte 0x65000000
 
 .global lbl_80557F28
 lbl_80557F28:
 
 	# ROM: 0x494308
-	.asciz "StageSh"
+	.4byte 0x53746167
+	.4byte 0x65536800
 
 .global lbl_80557F30
 lbl_80557F30:
 
 	# ROM: 0x494310
-	.asciz "FgStage"
+	.4byte 0x46675374
+	.4byte 0x61676500
 
 .global lbl_80557F38
 lbl_80557F38:
 
 	# ROM: 0x494318
-	.asciz "SmStage"
+	.4byte 0x536D5374
+	.4byte 0x61676500
 
 .global lbl_80557F40
 lbl_80557F40:
 
 	# ROM: 0x494320
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80557F48
 lbl_80557F48:
@@ -6602,8 +6744,8 @@ lbl_80557F4C:
 lbl_80557F50:
 
 	# ROM: 0x494330
-	.asciz "SmEX"
-	.balign 4
+	.4byte 0x536D4558
+	.4byte 0
 
 .global lbl_80557F58
 lbl_80557F58:
@@ -6616,15 +6758,15 @@ lbl_80557F58:
 lbl_80557F60:
 
 	# ROM: 0x494340
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_80557F68
 lbl_80557F68:
 
 	# ROM: 0x494348
-	.asciz "TimeN"
-	.balign 4
+	.4byte 0x54696D65
+	.4byte 0x4E000000
 
 .global lbl_80557F70
 lbl_80557F70:
@@ -6636,8 +6778,8 @@ lbl_80557F70:
 lbl_80557F74:
 
 	# ROM: 0x494354
-	.asciz "Equal"
-	.balign 4
+	.4byte 0x45717561
+	.4byte 0x6C000000
 
 .global lbl_80557F7C
 lbl_80557F7C:
@@ -6649,82 +6791,85 @@ lbl_80557F7C:
 lbl_80557F80:
 
 	# ROM: 0x494360
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557F88
 lbl_80557F88:
 
 	# ROM: 0x494368
-	.asciz "Replace"
+	.4byte 0x5265706C
+	.4byte 0x61636500
 
 .global lbl_80557F90
 lbl_80557F90:
 
 	# ROM: 0x494370
-	.asciz "Minutes"
+	.4byte 0x4D696E75
+	.4byte 0x74657300
 
 .global lbl_80557F98
 lbl_80557F98:
 
 	# ROM: 0x494378
-	.asciz "Seconds"
+	.4byte 0x5365636F
+	.4byte 0x6E647300
 
 .global lbl_80557FA0
 lbl_80557FA0:
 
 	# ROM: 0x494380
-	.asciz "Frames"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x65730000
 
 .global lbl_80557FA8
 lbl_80557FA8:
 
 	# ROM: 0x494388
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_80557FB0
 lbl_80557FB0:
 
 	# ROM: 0x494390
-	.asciz "ScoreS"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65530000
 
 .global lbl_80557FB8
 lbl_80557FB8:
 
 	# ROM: 0x494398
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_80557FC0
 lbl_80557FC0:
 
 	# ROM: 0x4943A0
-	.asciz "Score"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65000000
 
 .global lbl_80557FC8
 lbl_80557FC8:
 
 	# ROM: 0x4943A8
-	.asciz "ScoreP"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65500000
 
 .global lbl_80557FD0
 lbl_80557FD0:
 
 	# ROM: 0x4943B0
-	.asciz "BonusN"
-	.balign 4
+	.4byte 0x426F6E75
+	.4byte 0x734E0000
 
 .global lbl_80557FD8
 lbl_80557FD8:
 
 	# ROM: 0x4943B8
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80557FE0
 lbl_80557FE0:
@@ -6761,265 +6906,281 @@ lbl_80557FF0:
 lbl_80557FF8:
 
 	# ROM: 0x4943D8
-	.asciz "Score%s"
+	.4byte 0x53636F72
+	.4byte 0x65257300
 
 .global lbl_80558000
 lbl_80558000:
 
 	# ROM: 0x4943E0
-	.asciz "Cursor"
-	.balign 4
+	.4byte 0x43757273
+	.4byte 0x6F720000
 
 .global lbl_80558008
 lbl_80558008:
 
 	# ROM: 0x4943E8
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80558010
 lbl_80558010:
 
 	# ROM: 0x4943F0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558018
 lbl_80558018:
 
 	# ROM: 0x4943F8
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558020
 lbl_80558020:
 
 	# ROM: 0x494400
-	.asciz "MoveL"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x4C000000
 
 .global lbl_80558028
 lbl_80558028:
 
 	# ROM: 0x494408
-	.asciz "MoveR"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x52000000
 
 .global lbl_80558030
 lbl_80558030:
 
 	# ROM: 0x494410
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80558038
 lbl_80558038:
 
 	# ROM: 0x494418
-	.asciz "Panel"
-	.balign 4
+	.4byte 0x50616E65
+	.4byte 0x6C000000
 
 .global lbl_80558040
 lbl_80558040:
 
 	# ROM: 0x494420
-	.asciz "Medal"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C000000
 
 .global lbl_80558048
 lbl_80558048:
 
 	# ROM: 0x494428
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_80558050
 lbl_80558050:
 
 	# ROM: 0x494430
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558058
 lbl_80558058:
 
 	# ROM: 0x494438
-	.asciz "SmashN"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x684E0000
 
 .global lbl_80558060
 lbl_80558060:
 
 	# ROM: 0x494440
-	.asciz "SmashUN"
+	.4byte 0x536D6173
+	.4byte 0x68554E00
 
 .global lbl_80558068
 lbl_80558068:
 
 	# ROM: 0x494448
-	.asciz "SwordN"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644E0000
 
 .global lbl_80558070
 lbl_80558070:
 
 	# ROM: 0x494450
-	.asciz "SwordUN"
+	.4byte 0x53776F72
+	.4byte 0x64554E00
 
 .global lbl_80558078
 lbl_80558078:
 
 	# ROM: 0x494458
-	.asciz "SparkN"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
 
 .global lbl_80558080
 lbl_80558080:
 
 	# ROM: 0x494460
-	.asciz "SparkUN"
+	.4byte 0x53706172
+	.4byte 0x6B554E00
 
 .global lbl_80558088
 lbl_80558088:
 
 	# ROM: 0x494468
-	.asciz "WhipN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x4E000000
 
 .global lbl_80558090
 lbl_80558090:
 
 	# ROM: 0x494470
-	.asciz "WhipUN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x554E0000
 
 .global lbl_80558098
 lbl_80558098:
 
 	# ROM: 0x494478
-	.asciz "WingN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x4E000000
 
 .global lbl_805580A0
 lbl_805580A0:
 
 	# ROM: 0x494480
-	.asciz "WingUN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x554E0000
 
 .global lbl_805580A8
 lbl_805580A8:
 
 	# ROM: 0x494488
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_805580B0
 lbl_805580B0:
 
 	# ROM: 0x494490
-	.asciz "FocusN"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x734E0000
 
 .global lbl_805580B8
 lbl_805580B8:
 
 	# ROM: 0x494498
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_805580C0
 lbl_805580C0:
 
 	# ROM: 0x4944A0
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_805580C8
 lbl_805580C8:
 
 	# ROM: 0x4944A8
-	.asciz "FireN"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0x4E000000
 
 .global lbl_805580D0
 lbl_805580D0:
 
 	# ROM: 0x4944B0
-	.asciz "FireUN"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0x554E0000
 
 .global lbl_805580D8
 lbl_805580D8:
 
 	# ROM: 0x4944B8
-	.asciz "GoldN"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0x4E000000
 
 .global lbl_805580E0
 lbl_805580E0:
 
 	# ROM: 0x4944C0
-	.asciz "SilverN"
+	.4byte 0x53696C76
+	.4byte 0x65724E00
 
 .global lbl_805580E8
 lbl_805580E8:
 
 	# ROM: 0x4944C8
-	.asciz "BronzeN"
+	.4byte 0x42726F6E
+	.4byte 0x7A654E00
 
 .global lbl_805580F0
 lbl_805580F0:
 
 	# ROM: 0x4944D0
-	.asciz "Panel1N"
+	.4byte 0x50616E65
+	.4byte 0x6C314E00
 
 .global lbl_805580F8
 lbl_805580F8:
 
 	# ROM: 0x4944D8
-	.asciz "Panel2N"
+	.4byte 0x50616E65
+	.4byte 0x6C324E00
 
 .global lbl_80558100
 lbl_80558100:
 
 	# ROM: 0x4944E0
-	.asciz "Panel3N"
+	.4byte 0x50616E65
+	.4byte 0x6C334E00
 
 .global lbl_80558108
 lbl_80558108:
 
 	# ROM: 0x4944E8
-	.asciz "Panel4N"
+	.4byte 0x50616E65
+	.4byte 0x6C344E00
 
 .global lbl_80558110
 lbl_80558110:
 
 	# ROM: 0x4944F0
-	.asciz "Panel5N"
+	.4byte 0x50616E65
+	.4byte 0x6C354E00
 
 .global lbl_80558118
 lbl_80558118:
 
 	# ROM: 0x4944F8
-	.asciz "Panel6N"
+	.4byte 0x50616E65
+	.4byte 0x6C364E00
 
 .global lbl_80558120
 lbl_80558120:
 
 	# ROM: 0x494500
-	.asciz "Panel7N"
+	.4byte 0x50616E65
+	.4byte 0x6C374E00
 
 .global lbl_80558128
 lbl_80558128:
 
 	# ROM: 0x494508
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558130
 lbl_80558130:
 
 	# ROM: 0x494510
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558138
 lbl_80558138:
@@ -7031,30 +7192,30 @@ lbl_80558138:
 lbl_8055813C:
 
 	# ROM: 0x49451C
-	.asciz "MoveR"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x52000000
 
 .global lbl_80558144
 lbl_80558144:
 
 	# ROM: 0x494524
-	.asciz "MoveL"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x4C000000
 	.4byte 0
 
 .global lbl_80558150
 lbl_80558150:
 
 	# ROM: 0x494530
-	.asciz "FrameN"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x654E0000
 
 .global lbl_80558158
 lbl_80558158:
 
 	# ROM: 0x494538
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558160
 lbl_80558160:
@@ -7067,144 +7228,148 @@ lbl_80558160:
 lbl_80558168:
 
 	# ROM: 0x494548
-	.asciz "Info"
-	.balign 4
+	.4byte 0x496E666F
+	.4byte 0
 
 .global lbl_80558170
 lbl_80558170:
 
 	# ROM: 0x494550
-	.asciz "ShadowN"
+	.4byte 0x53686164
+	.4byte 0x6F774E00
 
 .global lbl_80558178
 lbl_80558178:
 
 	# ROM: 0x494558
-	.asciz "FrameN"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x654E0000
 
 .global lbl_80558180
 lbl_80558180:
 
 	# ROM: 0x494560
-	.asciz "BaseN"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0x4E000000
 
 .global lbl_80558188
 lbl_80558188:
 
 	# ROM: 0x494568
-	.asciz "BoardN"
-	.balign 4
+	.4byte 0x426F6172
+	.4byte 0x644E0000
 
 .global lbl_80558190
 lbl_80558190:
 
 	# ROM: 0x494570
-	.asciz "TitleN"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x654E0000
 
 .global lbl_80558198
 lbl_80558198:
 
 	# ROM: 0x494578
-	.asciz "GhostN"
-	.balign 4
+	.4byte 0x47686F73
+	.4byte 0x744E0000
 
 .global lbl_805581A0
 lbl_805581A0:
 
 	# ROM: 0x494580
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805581A8
 lbl_805581A8:
 
 	# ROM: 0x494588
-	.asciz "close"
-	.balign 4
+	.4byte 0x636C6F73
+	.4byte 0x65000000
 
 .global lbl_805581B0
 lbl_805581B0:
 
 	# ROM: 0x494590
-	.asciz "HintN"
-	.balign 4
+	.4byte 0x48696E74
+	.4byte 0x4E000000
 
 .global lbl_805581B8
 lbl_805581B8:
 
 	# ROM: 0x494598
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 
 .global lbl_805581C0
 lbl_805581C0:
 
 	# ROM: 0x4945A0
-	.asciz "Skip"
-	.balign 4
+	.4byte 0x536B6970
+	.4byte 0
 
 .global lbl_805581C8
 lbl_805581C8:
 
 	# ROM: 0x4945A8
-	.asciz "AButton"
+	.4byte 0x41427574
+	.4byte 0x746F6E00
 
 .global lbl_805581D0
 lbl_805581D0:
 
 	# ROM: 0x4945B0
-	.asciz "Illust"
-	.balign 4
+	.4byte 0x496C6C75
+	.4byte 0x73740000
 
 .global lbl_805581D8
 lbl_805581D8:
 
 	# ROM: 0x4945B8
-	.asciz "IllustN"
+	.4byte 0x496C6C75
+	.4byte 0x73744E00
 
 .global lbl_805581E0
 lbl_805581E0:
 
 	# ROM: 0x4945C0
-	.asciz "appear"
-	.balign 4
+	.4byte 0x61707065
+	.4byte 0x61720000
 
 .global lbl_805581E8
 lbl_805581E8:
 
 	# ROM: 0x4945C8
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_805581F0
 lbl_805581F0:
 
 	# ROM: 0x4945D0
-	.asciz "Limit"
-	.balign 4
+	.4byte 0x4C696D69
+	.4byte 0x74000000
 
 .global lbl_805581F8
 lbl_805581F8:
 
 	# ROM: 0x4945D8
-	.asciz "Time"
-	.balign 4
+	.4byte 0x54696D65
+	.4byte 0
 
 .global lbl_80558200
 lbl_80558200:
 
 	# ROM: 0x4945E0
-	.asciz "%d:%02d"
+	.4byte 0x25643A25
+	.4byte 0x30326400
 
 .global lbl_80558208
 lbl_80558208:
 
 	# ROM: 0x4945E8
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80558210
 lbl_80558210:
@@ -7216,22 +7381,22 @@ lbl_80558210:
 lbl_80558214:
 
 	# ROM: 0x4945F4
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055821C
 lbl_8055821C:
 
 	# ROM: 0x4945FC
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_80558224
 lbl_80558224:
 
 	# ROM: 0x494604
-	.asciz "Next"
-	.balign 4
+	.4byte 0x4E657874
+	.4byte 0
 
 .global lbl_8055822C
 lbl_8055822C:
@@ -7243,103 +7408,106 @@ lbl_8055822C:
 lbl_80558230:
 
 	# ROM: 0x494610
-	.asciz "Close2"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65320000
 
 .global lbl_80558238
 lbl_80558238:
 
 	# ROM: 0x494618
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80558240
 lbl_80558240:
 
 	# ROM: 0x494620
-	.asciz "Page"
-	.balign 4
+	.4byte 0x50616765
+	.4byte 0
 
 .global lbl_80558248
 lbl_80558248:
 
 	# ROM: 0x494628
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80558250
 lbl_80558250:
 
 	# ROM: 0x494630
-	.asciz "CursorL"
+	.4byte 0x43757273
+	.4byte 0x6F724C00
 
 .global lbl_80558258
 lbl_80558258:
 
 	# ROM: 0x494638
-	.asciz "CursorR"
+	.4byte 0x43757273
+	.4byte 0x6F725200
 
 .global lbl_80558260
 lbl_80558260:
 
 	# ROM: 0x494640
-	.asciz "Page"
-	.balign 4
+	.4byte 0x50616765
+	.4byte 0
 
 .global lbl_80558268
 lbl_80558268:
 
 	# ROM: 0x494648
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_80558270
 lbl_80558270:
 
 	# ROM: 0x494650
-	.asciz "Zoom"
-	.balign 4
+	.4byte 0x5A6F6F6D
+	.4byte 0
 
 .global lbl_80558278
 lbl_80558278:
 
 	# ROM: 0x494658
-	.asciz "PageN"
-	.balign 4
+	.4byte 0x50616765
+	.4byte 0x4E000000
 
 .global lbl_80558280
 lbl_80558280:
 
 	# ROM: 0x494660
-	.asciz "ZoomN"
-	.balign 4
+	.4byte 0x5A6F6F6D
+	.4byte 0x4E000000
 
 .global lbl_80558288
 lbl_80558288:
 
 	# ROM: 0x494668
-	.asciz "MinusN"
-	.balign 4
+	.4byte 0x4D696E75
+	.4byte 0x734E0000
 
 .global lbl_80558290
 lbl_80558290:
 
 	# ROM: 0x494670
-	.asciz "Guard"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x64000000
 
 .global lbl_80558298
 lbl_80558298:
 
 	# ROM: 0x494678
-	.asciz "GuardN"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x644E0000
 
 .global lbl_805582A0
 lbl_805582A0:
 
 	# ROM: 0x494680
-	.asciz "GuardSN"
+	.4byte 0x47756172
+	.4byte 0x64534E00
 
 .global lbl_805582A8
 lbl_805582A8:
@@ -7363,29 +7531,29 @@ lbl_805582B0:
 lbl_805582B4:
 
 	# ROM: 0x494694
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_805582BC
 lbl_805582BC:
 
 	# ROM: 0x49469C
-	.asciz "Free"
-	.balign 4
+	.4byte 0x46726565
+	.4byte 0
 
 .global lbl_805582C4
 lbl_805582C4:
 
 	# ROM: 0x4946A4
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805582CC
 lbl_805582CC:
 
 	# ROM: 0x4946AC
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_805582D4
 lbl_805582D4:
@@ -7399,13 +7567,15 @@ lbl_805582D4:
 lbl_805582E0:
 
 	# ROM: 0x4946C0
-	.asciz "NowPage"
+	.4byte 0x4E6F7750
+	.4byte 0x61676500
 
 .global lbl_805582E8
 lbl_805582E8:
 
 	# ROM: 0x4946C8
-	.asciz "MaxPage"
+	.4byte 0x4D617850
+	.4byte 0x61676500
 
 .global lbl_805582F0
 lbl_805582F0:
@@ -7423,28 +7593,29 @@ lbl_805582F4:
 lbl_805582F8:
 
 	# ROM: 0x4946D8
-	.asciz "ComicN"
-	.balign 4
+	.4byte 0x436F6D69
+	.4byte 0x634E0000
 
 .global lbl_80558300
 lbl_80558300:
 
 	# ROM: 0x4946E0
-	.asciz "ComicSN"
+	.4byte 0x436F6D69
+	.4byte 0x63534E00
 
 .global lbl_80558308
 lbl_80558308:
 
 	# ROM: 0x4946E8
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 
 .global lbl_80558310
 lbl_80558310:
 
 	# ROM: 0x4946F0
-	.asciz "root"
-	.balign 4
+	.4byte 0x726F6F74
+	.4byte 0
 
 .global lbl_80558318
 lbl_80558318:
@@ -7456,15 +7627,15 @@ lbl_80558318:
 lbl_8055831C:
 
 	# ROM: 0x4946FC
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558324
 lbl_80558324:
 
 	# ROM: 0x494704
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558330
@@ -7490,68 +7661,78 @@ lbl_80558338:
 lbl_80558340:
 
 	# ROM: 0x494720
-	.asciz "Block0L"
+	.4byte 0x426C6F63
+	.4byte 0x6B304C00
 
 .global lbl_80558348
 lbl_80558348:
 
 	# ROM: 0x494728
-	.asciz "Block1L"
+	.4byte 0x426C6F63
+	.4byte 0x6B314C00
 
 .global lbl_80558350
 lbl_80558350:
 
 	# ROM: 0x494730
-	.asciz "Block2L"
+	.4byte 0x426C6F63
+	.4byte 0x6B324C00
 
 .global lbl_80558358
 lbl_80558358:
 
 	# ROM: 0x494738
-	.asciz "Block3L"
+	.4byte 0x426C6F63
+	.4byte 0x6B334C00
 
 .global lbl_80558360
 lbl_80558360:
 
 	# ROM: 0x494740
-	.asciz "Block4L"
+	.4byte 0x426C6F63
+	.4byte 0x6B344C00
 
 .global lbl_80558368
 lbl_80558368:
 
 	# ROM: 0x494748
-	.asciz "Block5L"
+	.4byte 0x426C6F63
+	.4byte 0x6B354C00
 
 .global lbl_80558370
 lbl_80558370:
 
 	# ROM: 0x494750
-	.asciz "Block6L"
+	.4byte 0x426C6F63
+	.4byte 0x6B364C00
 
 .global lbl_80558378
 lbl_80558378:
 
 	# ROM: 0x494758
-	.asciz "Block7L"
+	.4byte 0x426C6F63
+	.4byte 0x6B374C00
 
 .global lbl_80558380
 lbl_80558380:
 
 	# ROM: 0x494760
-	.asciz "Block8L"
+	.4byte 0x426C6F63
+	.4byte 0x6B384C00
 
 .global lbl_80558388
 lbl_80558388:
 
 	# ROM: 0x494768
-	.asciz "Block9L"
+	.4byte 0x426C6F63
+	.4byte 0x6B394C00
 
 .global lbl_80558390
 lbl_80558390:
 
 	# ROM: 0x494770
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558398
 lbl_80558398:
@@ -7570,91 +7751,93 @@ lbl_805583A0:
 lbl_805583A4:
 
 	# ROM: 0x494784
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_805583B0
 lbl_805583B0:
 
 	# ROM: 0x494790
-	.asciz "KirbyL"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x794C0000
 
 .global lbl_805583B8
 lbl_805583B8:
 
 	# ROM: 0x494798
-	.asciz "DededeL"
+	.4byte 0x44656465
+	.4byte 0x64654C00
 
 .global lbl_805583C0
 lbl_805583C0:
 
 	# ROM: 0x4947A0
-	.asciz "MetaL"
-	.balign 4
+	.4byte 0x4D657461
+	.4byte 0x4C000000
 
 .global lbl_805583C8
 lbl_805583C8:
 
 	# ROM: 0x4947A8
-	.asciz "DeeL"
-	.balign 4
+	.4byte 0x4465654C
+	.4byte 0
 
 .global lbl_805583D0
 lbl_805583D0:
 
 	# ROM: 0x4947B0
-	.asciz "Dee1L"
-	.balign 4
+	.4byte 0x44656531
+	.4byte 0x4C000000
 
 .global lbl_805583D8
 lbl_805583D8:
 
 	# ROM: 0x4947B8
-	.asciz "Dee2L"
-	.balign 4
+	.4byte 0x44656532
+	.4byte 0x4C000000
 
 .global lbl_805583E0
 lbl_805583E0:
 
 	# ROM: 0x4947C0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805583E8
 lbl_805583E8:
 
 	# ROM: 0x4947C8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_805583F0
 lbl_805583F0:
 
 	# ROM: 0x4947D0
-	.asciz "Vacuum"
-	.balign 4
+	.4byte 0x56616375
+	.4byte 0x756D0000
 
 .global lbl_805583F8
 lbl_805583F8:
 
 	# ROM: 0x4947D8
-	.asciz "EatWait"
+	.4byte 0x45617457
+	.4byte 0x61697400
 
 .global lbl_80558400
 lbl_80558400:
 
 	# ROM: 0x4947E0
-	.asciz "Vomit"
-	.balign 4
+	.4byte 0x566F6D69
+	.4byte 0x74000000
 
 .global lbl_80558408
 lbl_80558408:
 
 	# ROM: 0x4947E8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558410
 lbl_80558410:
@@ -7673,8 +7856,8 @@ lbl_80558418:
 lbl_8055841C:
 
 	# ROM: 0x4947FC
-	.asciz "GObj"
-	.balign 4
+	.4byte 0x474F626A
+	.4byte 0
 
 .global lbl_80558424
 lbl_80558424:
@@ -7699,58 +7882,58 @@ lbl_80558430:
 lbl_80558434:
 
 	# ROM: 0x494814
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 
 .global lbl_8055843C
 lbl_8055843C:
 
 	# ROM: 0x49481C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558448
 lbl_80558448:
 
 	# ROM: 0x494828
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80558450
 lbl_80558450:
 
 	# ROM: 0x494830
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80558458
 lbl_80558458:
 
 	# ROM: 0x494838
-	.asciz "PushN"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x4E000000
 
 .global lbl_80558460
 lbl_80558460:
 
 	# ROM: 0x494840
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558468
 lbl_80558468:
 
 	# ROM: 0x494848
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558470
 lbl_80558470:
 
 	# ROM: 0x494850
-	.asciz "Frame"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x65000000
 
 .global lbl_80558478
 lbl_80558478:
@@ -7770,15 +7953,15 @@ lbl_80558480:
 lbl_80558488:
 
 	# ROM: 0x494868
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_80558490
 lbl_80558490:
 
 	# ROM: 0x494870
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558498
 lbl_80558498:
@@ -7790,15 +7973,15 @@ lbl_80558498:
 lbl_8055849C:
 
 	# ROM: 0x49487C
-	.asciz "box_us"
-	.balign 4
+	.4byte 0x626F785F
+	.4byte 0x75730000
 
 .global lbl_805584A4
 lbl_805584A4:
 
 	# ROM: 0x494884
-	.asciz "GbGba"
-	.balign 4
+	.4byte 0x47624762
+	.4byte 0x61000000
 
 .global lbl_805584AC
 lbl_805584AC:
@@ -7810,36 +7993,36 @@ lbl_805584AC:
 lbl_805584B0:
 
 	# ROM: 0x494890
-	.asciz "DotRRR"
-	.balign 4
+	.4byte 0x446F7452
+	.4byte 0x52520000
 
 .global lbl_805584B8
 lbl_805584B8:
 
 	# ROM: 0x494898
-	.asciz "Snes64"
-	.balign 4
+	.4byte 0x536E6573
+	.4byte 0x36340000
 
 .global lbl_805584C0
 lbl_805584C0:
 
 	# ROM: 0x4948A0
-	.asciz "DotDee"
-	.balign 4
+	.4byte 0x446F7444
+	.4byte 0x65650000
 
 .global lbl_805584C8
 lbl_805584C8:
 
 	# ROM: 0x4948A8
-	.asciz "DotDDD"
-	.balign 4
+	.4byte 0x446F7444
+	.4byte 0x44440000
 
 .global lbl_805584D0
 lbl_805584D0:
 
 	# ROM: 0x4948B0
-	.asciz "Anime"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x65000000
 
 .global lbl_805584D8
 lbl_805584D8:
@@ -7857,7 +8040,8 @@ lbl_805584DC:
 lbl_805584E0:
 
 	# ROM: 0x4948C0
-	.asciz "DotMeta"
+	.4byte 0x446F744D
+	.4byte 0x65746100
 
 .global lbl_805584E8
 lbl_805584E8:
@@ -7869,113 +8053,114 @@ lbl_805584E8:
 lbl_805584EC:
 
 	# ROM: 0x4948CC
-	.asciz "Donut"
-	.balign 4
+	.4byte 0x446F6E75
+	.4byte 0x74000000
 
 .global lbl_805584F4
 lbl_805584F4:
 
 	# ROM: 0x4948D4
-	.asciz "DotDee"
-	.balign 4
+	.4byte 0x446F7444
+	.4byte 0x65650000
 
 .global lbl_805584FC
 lbl_805584FC:
 
 	# ROM: 0x4948DC
-	.asciz "DotDDD"
-	.balign 4
+	.4byte 0x446F7444
+	.4byte 0x44440000
 	.4byte 0
 
 .global lbl_80558508
 lbl_80558508:
 
 	# ROM: 0x4948E8
-	.asciz "DotMeta"
+	.4byte 0x446F744D
+	.4byte 0x65746100
 
 .global lbl_80558510
 lbl_80558510:
 
 	# ROM: 0x4948F0
-	.asciz "DotRRR"
-	.balign 4
+	.4byte 0x446F7452
+	.4byte 0x52520000
 
 .global lbl_80558518
 lbl_80558518:
 
 	# ROM: 0x4948F8
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_80558520
 lbl_80558520:
 
 	# ROM: 0x494900
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_80558528
 lbl_80558528:
 
 	# ROM: 0x494908
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_80558530
 lbl_80558530:
 
 	# ROM: 0x494910
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558538
 lbl_80558538:
 
 	# ROM: 0x494918
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80558540
 lbl_80558540:
 
 	# ROM: 0x494920
-	.asciz "Vacuum"
-	.balign 4
+	.4byte 0x56616375
+	.4byte 0x756D0000
 
 .global lbl_80558548
 lbl_80558548:
 
 	# ROM: 0x494928
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558550
 lbl_80558550:
 
 	# ROM: 0x494930
-	.asciz "Drink"
-	.balign 4
+	.4byte 0x4472696E
+	.4byte 0x6B000000
 
 .global lbl_80558558
 lbl_80558558:
 
 	# ROM: 0x494938
-	.asciz "Copy"
-	.balign 4
+	.4byte 0x436F7079
+	.4byte 0
 
 .global lbl_80558560
 lbl_80558560:
 
 	# ROM: 0x494940
-	.asciz "Tired"
-	.balign 4
+	.4byte 0x54697265
+	.4byte 0x64000000
 
 .global lbl_80558568
 lbl_80558568:
 
 	# ROM: 0x494948
-	.asciz "walk"
-	.balign 4
+	.4byte 0x77616C6B
+	.4byte 0
 
 .global lbl_80558570
 lbl_80558570:
@@ -7987,44 +8172,44 @@ lbl_80558570:
 lbl_80558574:
 
 	# ROM: 0x494954
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558580
 lbl_80558580:
 
 	# ROM: 0x494960
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80558588
 lbl_80558588:
 
 	# ROM: 0x494968
-	.asciz "NewsN"
-	.balign 4
+	.4byte 0x4E657773
+	.4byte 0x4E000000
 
 .global lbl_80558590
 lbl_80558590:
 
 	# ROM: 0x494970
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_80558598
 lbl_80558598:
 
 	# ROM: 0x494978
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_805585A0
 lbl_805585A0:
 
 	# ROM: 0x494980
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_805585A8
 lbl_805585A8:
@@ -8042,50 +8227,50 @@ lbl_805585AC:
 lbl_805585B0:
 
 	# ROM: 0x494990
-	.asciz "News"
-	.balign 4
+	.4byte 0x4E657773
+	.4byte 0
 
 .global lbl_805585B8
 lbl_805585B8:
 
 	# ROM: 0x494998
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805585C0
 lbl_805585C0:
 
 	# ROM: 0x4949A0
-	.asciz "StarN"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x4E000000
 
 .global lbl_805585C8
 lbl_805585C8:
 
 	# ROM: 0x4949A8
-	.asciz "Text01"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x30310000
 
 .global lbl_805585D0
 lbl_805585D0:
 
 	# ROM: 0x4949B0
-	.asciz "News%d"
-	.balign 4
+	.4byte 0x4E657773
+	.4byte 0x25640000
 
 .global lbl_805585D8
 lbl_805585D8:
 
 	# ROM: 0x4949B8
-	.asciz "Title"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x65000000
 
 .global lbl_805585E0
 lbl_805585E0:
 
 	# ROM: 0x4949C0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_805585E8
 lbl_805585E8:
@@ -8098,91 +8283,92 @@ lbl_805585E8:
 lbl_805585F0:
 
 	# ROM: 0x4949D0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805585F8
 lbl_805585F8:
 
 	# ROM: 0x4949D8
-	.asciz "RotYL"
-	.balign 4
+	.4byte 0x526F7459
+	.4byte 0x4C000000
 
 .global lbl_80558600
 lbl_80558600:
 
 	# ROM: 0x4949E0
-	.asciz "ScaleL"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654C0000
 
 .global lbl_80558608
 lbl_80558608:
 
 	# ROM: 0x4949E8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80558610
 lbl_80558610:
 
 	# ROM: 0x4949F0
-	.asciz "Vacuum"
-	.balign 4
+	.4byte 0x56616375
+	.4byte 0x756D0000
 
 .global lbl_80558618
 lbl_80558618:
 
 	# ROM: 0x4949F8
-	.asciz "Vacuum2"
+	.4byte 0x56616375
+	.4byte 0x756D3200
 
 .global lbl_80558620
 lbl_80558620:
 
 	# ROM: 0x494A00
-	.asciz "Shake"
-	.balign 4
+	.4byte 0x5368616B
+	.4byte 0x65000000
 
 .global lbl_80558628
 lbl_80558628:
 
 	# ROM: 0x494A08
-	.asciz "BoxM"
-	.balign 4
+	.4byte 0x426F784D
+	.4byte 0
 
 .global lbl_80558630
 lbl_80558630:
 
 	# ROM: 0x494A10
-	.asciz "Icon"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0
 
 .global lbl_80558638
 lbl_80558638:
 
 	# ROM: 0x494A18
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_80558640
 lbl_80558640:
 
 	# ROM: 0x494A20
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558648
 lbl_80558648:
 
 	# ROM: 0x494A28
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558650
 lbl_80558650:
 
 	# ROM: 0x494A30
-	.asciz "MovieN"
-	.balign 4
+	.4byte 0x4D6F7669
+	.4byte 0x654E0000
 
 .global lbl_80558658
 lbl_80558658:
@@ -8200,15 +8386,15 @@ lbl_8055865C:
 lbl_80558660:
 
 	# ROM: 0x494A40
-	.asciz "Anime"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x65000000
 
 .global lbl_80558668
 lbl_80558668:
 
 	# ROM: 0x494A48
-	.asciz "Comic"
-	.balign 4
+	.4byte 0x436F6D69
+	.4byte 0x63000000
 
 .global lbl_80558670
 lbl_80558670:
@@ -8221,28 +8407,29 @@ lbl_80558670:
 lbl_80558678:
 
 	# ROM: 0x494A58
-	.asciz "ShadowM"
+	.4byte 0x53686164
+	.4byte 0x6F774D00
 
 .global lbl_80558680
 lbl_80558680:
 
 	# ROM: 0x494A60
-	.asciz "LightM"
-	.balign 4
+	.4byte 0x4C696768
+	.4byte 0x744D0000
 
 .global lbl_80558688
 lbl_80558688:
 
 	# ROM: 0x494A68
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_80558690
 lbl_80558690:
 
 	# ROM: 0x494A70
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_80558698
 lbl_80558698:
@@ -8254,118 +8441,121 @@ lbl_80558698:
 lbl_8055869C:
 
 	# ROM: 0x494A7C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_805586A8
 lbl_805586A8:
 
 	# ROM: 0x494A88
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_805586B0
 lbl_805586B0:
 
 	# ROM: 0x494A90
-	.asciz "PlateL"
-	.balign 4
+	.4byte 0x506C6174
+	.4byte 0x654C0000
 
 .global lbl_805586B8
 lbl_805586B8:
 
 	# ROM: 0x494A98
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805586C0
 lbl_805586C0:
 
 	# ROM: 0x494AA0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805586C8
 lbl_805586C8:
 
 	# ROM: 0x494AA8
-	.asciz "StatueL"
+	.4byte 0x53746174
+	.4byte 0x75654C00
 
 .global lbl_805586D0
 lbl_805586D0:
 
 	# ROM: 0x494AB0
-	.asciz "Select"
-	.balign 4
+	.4byte 0x53656C65
+	.4byte 0x63740000
 
 .global lbl_805586D8
 lbl_805586D8:
 
 	# ROM: 0x494AB8
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_805586E0
 lbl_805586E0:
 
 	# ROM: 0x494AC0
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_805586E8
 lbl_805586E8:
 
 	# ROM: 0x494AC8
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_805586F0
 lbl_805586F0:
 
 	# ROM: 0x494AD0
-	.asciz "AgeN"
-	.balign 4
+	.4byte 0x4167654E
+	.4byte 0
 
 .global lbl_805586F8
 lbl_805586F8:
 
 	# ROM: 0x494AD8
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_80558700
 lbl_80558700:
 
 	# ROM: 0x494AE0
-	.asciz "MovieN"
-	.balign 4
+	.4byte 0x4D6F7669
+	.4byte 0x654E0000
 
 .global lbl_80558708
 lbl_80558708:
 
 	# ROM: 0x494AE8
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_80558710
 lbl_80558710:
 
 	# ROM: 0x494AF0
-	.asciz "WindowN"
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
 
 .global lbl_80558718
 lbl_80558718:
 
 	# ROM: 0x494AF8
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_80558720
 lbl_80558720:
 
 	# ROM: 0x494B00
-	.asciz "BarN"
-	.balign 4
+	.4byte 0x4261724E
+	.4byte 0
 
 .global lbl_80558728
 lbl_80558728:
@@ -8377,8 +8567,8 @@ lbl_80558728:
 lbl_8055872C:
 
 	# ROM: 0x494B0C
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80558734
 lbl_80558734:
@@ -8390,15 +8580,15 @@ lbl_80558734:
 lbl_80558738:
 
 	# ROM: 0x494B18
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80558740
 lbl_80558740:
 
 	# ROM: 0x494B20
-	.asciz "Out1"
-	.balign 4
+	.4byte 0x4F757431
+	.4byte 0
 
 .global lbl_80558748
 lbl_80558748:
@@ -8416,21 +8606,22 @@ lbl_8055874C:
 lbl_80558750:
 
 	# ROM: 0x494B30
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80558758
 lbl_80558758:
 
 	# ROM: 0x494B38
-	.asciz "Out2"
-	.balign 4
+	.4byte 0x4F757432
+	.4byte 0
 
 .global lbl_80558760
 lbl_80558760:
 
 	# ROM: 0x494B40
-	.asciz "TitleT"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x65540000
 
 .global lbl_80558768
 lbl_80558768:
@@ -8448,35 +8639,36 @@ lbl_8055876C:
 lbl_80558770:
 
 	# ROM: 0x494B50
-	.asciz "Play1"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x31000000
 
 .global lbl_80558778
 lbl_80558778:
 
 	# ROM: 0x494B58
-	.asciz "Play4"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x34000000
 
 .global lbl_80558780
 lbl_80558780:
 
 	# ROM: 0x494B60
-	.asciz "Play5"
-	.balign 4
+	.4byte 0x506C6179
+	.4byte 0x35000000
 
 .global lbl_80558788
 lbl_80558788:
 
 	# ROM: 0x494B68
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558790
 lbl_80558790:
 
 	# ROM: 0x494B70
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_80558798
 lbl_80558798:
@@ -8489,8 +8681,8 @@ lbl_80558798:
 lbl_805587A0:
 
 	# ROM: 0x494B80
-	.asciz "YesN"
-	.balign 4
+	.4byte 0x5965734E
+	.4byte 0
 
 .global lbl_805587A8
 lbl_805587A8:
@@ -8503,90 +8695,92 @@ lbl_805587A8:
 lbl_805587B0:
 
 	# ROM: 0x494B90
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_805587B8
 lbl_805587B8:
 
 	# ROM: 0x494B98
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805587C0
 lbl_805587C0:
 
 	# ROM: 0x494BA0
-	.asciz "GameN"
-	.balign 4
+	.4byte 0x47616D65
+	.4byte 0x4E000000
 
 .global lbl_805587C8
 lbl_805587C8:
 
 	# ROM: 0x494BA8
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_805587D0
 lbl_805587D0:
 
 	# ROM: 0x494BB0
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_805587D8
 lbl_805587D8:
 
 	# ROM: 0x494BB8
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_805587E0
 lbl_805587E0:
 
 	# ROM: 0x494BC0
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_805587E8
 lbl_805587E8:
 
 	# ROM: 0x494BC8
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_805587F0
 lbl_805587F0:
 
 	# ROM: 0x494BD0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_805587F8
 lbl_805587F8:
 
 	# ROM: 0x494BD8
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558800
 lbl_80558800:
 
 	# ROM: 0x494BE0
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80558808
 lbl_80558808:
 
 	# ROM: 0x494BE8
-	.asciz "Dummy"
-	.balign 4
+	.4byte 0x44756D6D
+	.4byte 0x79000000
 
 .global lbl_80558810
 lbl_80558810:
 
 	# ROM: 0x494BF0
-	.asciz "Kirby1"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79310000
 
 .global lbl_80558818
 lbl_80558818:
@@ -8616,21 +8810,22 @@ lbl_80558824:
 lbl_80558828:
 
 	# ROM: 0x494C08
-	.asciz "Kirby2"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79320000
 
 .global lbl_80558830
 lbl_80558830:
 
 	# ROM: 0x494C10
-	.asciz "Kirby3"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79330000
 
 .global lbl_80558838
 lbl_80558838:
 
 	# ROM: 0x494C18
-	.asciz "Kirby64"
+	.4byte 0x4B697262
+	.4byte 0x79363400
 
 .global lbl_80558840
 lbl_80558840:
@@ -8655,7 +8850,8 @@ lbl_80558848:
 lbl_80558850:
 
 	# ROM: 0x494C30
-	.asciz "TVAnime"
+	.4byte 0x5456416E
+	.4byte 0x696D6500
 
 .global lbl_80558858
 lbl_80558858:
@@ -8680,28 +8876,29 @@ lbl_80558860:
 lbl_80558868:
 
 	# ROM: 0x494C48
-	.asciz "Kirby20"
+	.4byte 0x4B697262
+	.4byte 0x79323000
 
 .global lbl_80558870
 lbl_80558870:
 
 	# ROM: 0x494C50
-	.asciz "Donut"
-	.balign 4
+	.4byte 0x446F6E75
+	.4byte 0x74000000
 
 .global lbl_80558878
 lbl_80558878:
 
 	# ROM: 0x494C58
-	.asciz "%s%d"
-	.balign 4
+	.4byte 0x25732564
+	.4byte 0
 
 .global lbl_80558880
 lbl_80558880:
 
 	# ROM: 0x494C60
-	.asciz "KSDXN"
-	.balign 4
+	.4byte 0x4B534458
+	.4byte 0x4E000000
 
 .global lbl_80558888
 lbl_80558888:
@@ -8725,103 +8922,107 @@ lbl_80558890:
 lbl_80558894:
 
 	# ROM: 0x494C74
-	.asciz "K64N"
-	.balign 4
+	.4byte 0x4B36344E
+	.4byte 0
 	.4byte 0
 
 .global lbl_805588A0
 lbl_805588A0:
 
 	# ROM: 0x494C80
-	.asciz "KDreamN"
+	.4byte 0x4B447265
+	.4byte 0x616D4E00
 
 .global lbl_805588A8
 lbl_805588A8:
 
 	# ROM: 0x494C88
-	.asciz "KBallN"
-	.balign 4
+	.4byte 0x4B42616C
+	.4byte 0x6C4E0000
 
 .global lbl_805588B0
 lbl_805588B0:
 
 	# ROM: 0x494C90
-	.asciz "KKiraN"
-	.balign 4
+	.4byte 0x4B4B6972
+	.4byte 0x614E0000
 
 .global lbl_805588B8
 lbl_805588B8:
 
 	# ROM: 0x494C98
-	.asciz "KWiiN"
-	.balign 4
+	.4byte 0x4B576969
+	.4byte 0x4E000000
 
 .global lbl_805588C0
 lbl_805588C0:
 
 	# ROM: 0x494CA0
-	.asciz "KUSDXN"
-	.balign 4
+	.4byte 0x4B555344
+	.4byte 0x584E0000
 
 .global lbl_805588C8
 lbl_805588C8:
 
 	# ROM: 0x494CA8
-	.asciz "KTouchN"
+	.4byte 0x4B546F75
+	.4byte 0x63684E00
 
 .global lbl_805588D0
 lbl_805588D0:
 
 	# ROM: 0x494CB0
-	.asciz "KDoroN"
-	.balign 4
+	.4byte 0x4B446F72
+	.4byte 0x6F4E0000
 
 .global lbl_805588D8
 lbl_805588D8:
 
 	# ROM: 0x494CB8
-	.asciz "KWoolN"
-	.balign 4
+	.4byte 0x4B576F6F
+	.4byte 0x6C4E0000
 
 .global lbl_805588E0
 lbl_805588E0:
 
 	# ROM: 0x494CC0
-	.asciz "KBBN"
-	.balign 4
+	.4byte 0x4B42424E
+	.4byte 0
 
 .global lbl_805588E8
 lbl_805588E8:
 
 	# ROM: 0x494CC8
-	.asciz "KCoroN"
-	.balign 4
+	.4byte 0x4B436F72
+	.4byte 0x6F4E0000
 
 .global lbl_805588F0
 lbl_805588F0:
 
 	# ROM: 0x494CD0
-	.asciz "KDonutN"
+	.4byte 0x4B446F6E
+	.4byte 0x75744E00
 
 .global lbl_805588F8
 lbl_805588F8:
 
 	# ROM: 0x494CD8
-	.asciz "Dummy"
-	.balign 4
+	.4byte 0x44756D6D
+	.4byte 0x79000000
 
 .global lbl_80558900
 lbl_80558900:
 
 	# ROM: 0x494CE0
-	.asciz "Unfocus"
+	.4byte 0x556E666F
+	.4byte 0x63757300
 
 .global lbl_80558908
 lbl_80558908:
 
 	# ROM: 0x494CE8
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558910
 lbl_80558910:
@@ -8834,96 +9035,99 @@ lbl_80558910:
 lbl_80558918:
 
 	# ROM: 0x494CF8
-	.asciz "RewindN"
+	.4byte 0x52657769
+	.4byte 0x6E644E00
 
 .global lbl_80558920
 lbl_80558920:
 
 	# ROM: 0x494D00
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80558928
 lbl_80558928:
 
 	# ROM: 0x494D08
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558930
 lbl_80558930:
 
 	# ROM: 0x494D10
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80558938
 lbl_80558938:
 
 	# ROM: 0x494D18
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80558940
 lbl_80558940:
 
 	# ROM: 0x494D20
-	.asciz "Release"
+	.4byte 0x52656C65
+	.4byte 0x61736500
 
 .global lbl_80558948
 lbl_80558948:
 
 	# ROM: 0x494D28
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80558950
 lbl_80558950:
 
 	# ROM: 0x494D30
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80558958
 lbl_80558958:
 
 	# ROM: 0x494D38
-	.asciz "%02u"
-	.balign 4
+	.4byte 0x25303275
+	.4byte 0
 
 .global lbl_80558960
 lbl_80558960:
 
 	# ROM: 0x494D40
-	.asciz "Push2"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x32000000
 
 .global lbl_80558968
 lbl_80558968:
 
 	# ROM: 0x494D48
-	.asciz "Push1"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0x31000000
 
 .global lbl_80558970
 lbl_80558970:
 
 	# ROM: 0x494D50
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_80558978
 lbl_80558978:
 
 	# ROM: 0x494D58
-	.asciz "Select"
-	.balign 4
+	.4byte 0x53656C65
+	.4byte 0x63740000
 
 .global lbl_80558980
 lbl_80558980:
 
 	# ROM: 0x494D60
-	.asciz "YesN"
-	.balign 4
+	.4byte 0x5965734E
+	.4byte 0
 
 .global lbl_80558988
 lbl_80558988:
@@ -8936,90 +9140,92 @@ lbl_80558988:
 lbl_80558990:
 
 	# ROM: 0x494D70
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_80558998
 lbl_80558998:
 
 	# ROM: 0x494D78
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805589A0
 lbl_805589A0:
 
 	# ROM: 0x494D80
-	.asciz "GameN"
-	.balign 4
+	.4byte 0x47616D65
+	.4byte 0x4E000000
 
 .global lbl_805589A8
 lbl_805589A8:
 
 	# ROM: 0x494D88
-	.asciz "TextT"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x54000000
 
 .global lbl_805589B0
 lbl_805589B0:
 
 	# ROM: 0x494D90
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_805589B8
 lbl_805589B8:
 
 	# ROM: 0x494D98
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 
 .global lbl_805589C0
 lbl_805589C0:
 
 	# ROM: 0x494DA0
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_805589C8
 lbl_805589C8:
 
 	# ROM: 0x494DA8
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_805589D0
 lbl_805589D0:
 
 	# ROM: 0x494DB0
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_805589D8
 lbl_805589D8:
 
 	# ROM: 0x494DB8
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_805589E0
 lbl_805589E0:
 
 	# ROM: 0x494DC0
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_805589E8
 lbl_805589E8:
 
 	# ROM: 0x494DC8
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_805589F0
 lbl_805589F0:
 
 	# ROM: 0x494DD0
-	.asciz "KSDXN"
-	.balign 4
+	.4byte 0x4B534458
+	.4byte 0x4E000000
 
 .global lbl_805589F8
 lbl_805589F8:
@@ -9043,145 +9249,149 @@ lbl_80558A00:
 lbl_80558A04:
 
 	# ROM: 0x494DE4
-	.asciz "K64N"
-	.balign 4
+	.4byte 0x4B36344E
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558A10
 lbl_80558A10:
 
 	# ROM: 0x494DF0
-	.asciz "KDreamN"
+	.4byte 0x4B447265
+	.4byte 0x616D4E00
 
 .global lbl_80558A18
 lbl_80558A18:
 
 	# ROM: 0x494DF8
-	.asciz "KBallN"
-	.balign 4
+	.4byte 0x4B42616C
+	.4byte 0x6C4E0000
 
 .global lbl_80558A20
 lbl_80558A20:
 
 	# ROM: 0x494E00
-	.asciz "KKiraN"
-	.balign 4
+	.4byte 0x4B4B6972
+	.4byte 0x614E0000
 
 .global lbl_80558A28
 lbl_80558A28:
 
 	# ROM: 0x494E08
-	.asciz "KWiiN"
-	.balign 4
+	.4byte 0x4B576969
+	.4byte 0x4E000000
 
 .global lbl_80558A30
 lbl_80558A30:
 
 	# ROM: 0x494E10
-	.asciz "KUSDXN"
-	.balign 4
+	.4byte 0x4B555344
+	.4byte 0x584E0000
 
 .global lbl_80558A38
 lbl_80558A38:
 
 	# ROM: 0x494E18
-	.asciz "KTouchN"
+	.4byte 0x4B546F75
+	.4byte 0x63684E00
 
 .global lbl_80558A40
 lbl_80558A40:
 
 	# ROM: 0x494E20
-	.asciz "KDoroN"
-	.balign 4
+	.4byte 0x4B446F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558A48
 lbl_80558A48:
 
 	# ROM: 0x494E28
-	.asciz "KWoolN"
-	.balign 4
+	.4byte 0x4B576F6F
+	.4byte 0x6C4E0000
 
 .global lbl_80558A50
 lbl_80558A50:
 
 	# ROM: 0x494E30
-	.asciz "KCoroN"
-	.balign 4
+	.4byte 0x4B436F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558A58
 lbl_80558A58:
 
 	# ROM: 0x494E38
-	.asciz "KBBN"
-	.balign 4
+	.4byte 0x4B42424E
+	.4byte 0
 
 .global lbl_80558A60
 lbl_80558A60:
 
 	# ROM: 0x494E40
-	.asciz "KDonutN"
+	.4byte 0x4B446F6E
+	.4byte 0x75744E00
 
 .global lbl_80558A68
 lbl_80558A68:
 
 	# ROM: 0x494E48
-	.asciz "Dummy"
-	.balign 4
+	.4byte 0x44756D6D
+	.4byte 0x79000000
 
 .global lbl_80558A70
 lbl_80558A70:
 
 	# ROM: 0x494E50
-	.asciz "Unfocus"
+	.4byte 0x556E666F
+	.4byte 0x63757300
 
 .global lbl_80558A78
 lbl_80558A78:
 
 	# ROM: 0x494E58
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558A80
 lbl_80558A80:
 
 	# ROM: 0x494E60
-	.asciz "Reset"
-	.balign 4
+	.4byte 0x52657365
+	.4byte 0x74000000
 
 .global lbl_80558A88
 lbl_80558A88:
 
 	# ROM: 0x494E68
-	.asciz "Zoom"
-	.balign 4
+	.4byte 0x5A6F6F6D
+	.4byte 0
 
 .global lbl_80558A90
 lbl_80558A90:
 
 	# ROM: 0x494E70
-	.asciz "ZoomN"
-	.balign 4
+	.4byte 0x5A6F6F6D
+	.4byte 0x4E000000
 
 .global lbl_80558A98
 lbl_80558A98:
 
 	# ROM: 0x494E78
-	.asciz "Rotate"
-	.balign 4
+	.4byte 0x526F7461
+	.4byte 0x74650000
 
 .global lbl_80558AA0
 lbl_80558AA0:
 
 	# ROM: 0x494E80
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_80558AA8
 lbl_80558AA8:
 
 	# ROM: 0x494E88
-	.asciz "BoxM"
-	.balign 4
+	.4byte 0x426F784D
+	.4byte 0
 
 .global lbl_80558AB0
 lbl_80558AB0:
@@ -9193,36 +9403,36 @@ lbl_80558AB0:
 lbl_80558AB4:
 
 	# ROM: 0x494E94
-	.asciz "PlusN"
-	.balign 4
+	.4byte 0x506C7573
+	.4byte 0x4E000000
 
 .global lbl_80558ABC
 lbl_80558ABC:
 
 	# ROM: 0x494E9C
-	.asciz "MinusN"
-	.balign 4
+	.4byte 0x4D696E75
+	.4byte 0x734E0000
 
 .global lbl_80558AC4
 lbl_80558AC4:
 
 	# ROM: 0x494EA4
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_80558ACC
 lbl_80558ACC:
 
 	# ROM: 0x494EAC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558AD4
 lbl_80558AD4:
 
 	# ROM: 0x494EB4
-	.asciz "ScaleL"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654C0000
 
 .global lbl_80558ADC
 lbl_80558ADC:
@@ -9240,16 +9450,16 @@ lbl_80558AE0:
 lbl_80558AE4:
 
 	# ROM: 0x494EC4
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_80558AF0
 lbl_80558AF0:
 
 	# ROM: 0x494ED0
-	.asciz "KSDXN"
-	.balign 4
+	.4byte 0x4B534458
+	.4byte 0x4E000000
 
 .global lbl_80558AF8
 lbl_80558AF8:
@@ -9273,108 +9483,114 @@ lbl_80558B00:
 lbl_80558B04:
 
 	# ROM: 0x494EE4
-	.asciz "K64N"
-	.balign 4
+	.4byte 0x4B36344E
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558B10
 lbl_80558B10:
 
 	# ROM: 0x494EF0
-	.asciz "KDreamN"
+	.4byte 0x4B447265
+	.4byte 0x616D4E00
 
 .global lbl_80558B18
 lbl_80558B18:
 
 	# ROM: 0x494EF8
-	.asciz "KBallN"
-	.balign 4
+	.4byte 0x4B42616C
+	.4byte 0x6C4E0000
 
 .global lbl_80558B20
 lbl_80558B20:
 
 	# ROM: 0x494F00
-	.asciz "KKiraN"
-	.balign 4
+	.4byte 0x4B4B6972
+	.4byte 0x614E0000
 
 .global lbl_80558B28
 lbl_80558B28:
 
 	# ROM: 0x494F08
-	.asciz "KWiiN"
-	.balign 4
+	.4byte 0x4B576969
+	.4byte 0x4E000000
 
 .global lbl_80558B30
 lbl_80558B30:
 
 	# ROM: 0x494F10
-	.asciz "KUSDXN"
-	.balign 4
+	.4byte 0x4B555344
+	.4byte 0x584E0000
 
 .global lbl_80558B38
 lbl_80558B38:
 
 	# ROM: 0x494F18
-	.asciz "KTouchN"
+	.4byte 0x4B546F75
+	.4byte 0x63684E00
 
 .global lbl_80558B40
 lbl_80558B40:
 
 	# ROM: 0x494F20
-	.asciz "KDoroN"
-	.balign 4
+	.4byte 0x4B446F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558B48
 lbl_80558B48:
 
 	# ROM: 0x494F28
-	.asciz "KWoolN"
-	.balign 4
+	.4byte 0x4B576F6F
+	.4byte 0x6C4E0000
 
 .global lbl_80558B50
 lbl_80558B50:
 
 	# ROM: 0x494F30
-	.asciz "KCoroN"
-	.balign 4
+	.4byte 0x4B436F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558B58
 lbl_80558B58:
 
 	# ROM: 0x494F38
-	.asciz "KBBN"
-	.balign 4
+	.4byte 0x4B42424E
+	.4byte 0
 
 .global lbl_80558B60
 lbl_80558B60:
 
 	# ROM: 0x494F40
-	.asciz "KanimeN"
+	.4byte 0x4B616E69
+	.4byte 0x6D654E00
 
 .global lbl_80558B68
 lbl_80558B68:
 
 	# ROM: 0x494F48
-	.asciz "KDonutN"
+	.4byte 0x4B446F6E
+	.4byte 0x75744E00
 
 .global lbl_80558B70
 lbl_80558B70:
 
 	# ROM: 0x494F50
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 
 .global lbl_80558B78
 lbl_80558B78:
 
 	# ROM: 0x494F58
-	.asciz "ShadowS"
+	.4byte 0x53686164
+	.4byte 0x6F775300
 
 .global lbl_80558B80
 lbl_80558B80:
 
 	# ROM: 0x494F60
-	.asciz "Shadow2"
+	.4byte 0x53686164
+	.4byte 0x6F773200
 
 .global lbl_80558B88
 lbl_80558B88:
@@ -9392,8 +9608,8 @@ lbl_80558B8C:
 lbl_80558B90:
 
 	# ROM: 0x494F70
-	.asciz "Dummy"
-	.balign 4
+	.4byte 0x44756D6D
+	.4byte 0x79000000
 
 .global lbl_80558B98
 lbl_80558B98:
@@ -9405,28 +9621,30 @@ lbl_80558B98:
 lbl_80558B9C:
 
 	# ROM: 0x494F7C
-	.asciz "MovieN"
-	.balign 4
+	.4byte 0x4D6F7669
+	.4byte 0x654E0000
 
 .global lbl_80558BA4
 lbl_80558BA4:
 
 	# ROM: 0x494F84
-	.asciz "Icon"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558BB0
 lbl_80558BB0:
 
 	# ROM: 0x494F90
-	.asciz "Unfocus"
+	.4byte 0x556E666F
+	.4byte 0x63757300
 
 .global lbl_80558BB8
 lbl_80558BB8:
 
 	# ROM: 0x494F98
-	.asciz "ShadowS"
+	.4byte 0x53686164
+	.4byte 0x6F775300
 
 .global lbl_80558BC0
 lbl_80558BC0:
@@ -9438,22 +9656,23 @@ lbl_80558BC0:
 lbl_80558BC4:
 
 	# ROM: 0x494FA4
-	.asciz "IconSN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x534E0000
 
 .global lbl_80558BCC
 lbl_80558BCC:
 
 	# ROM: 0x494FAC
-	.asciz "Shadow"
-	.balign 4
+	.4byte 0x53686164
+	.4byte 0x6F770000
 	.4byte 0
 
 .global lbl_80558BD8
 lbl_80558BD8:
 
 	# ROM: 0x494FB8
-	.asciz "Shadow2"
+	.4byte 0x53686164
+	.4byte 0x6F773200
 
 .global lbl_80558BE0
 lbl_80558BE0:
@@ -9465,22 +9684,22 @@ lbl_80558BE0:
 lbl_80558BE4:
 
 	# ROM: 0x494FC4
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_80558BEC
 lbl_80558BEC:
 
 	# ROM: 0x494FCC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558BF4
 lbl_80558BF4:
 
 	# ROM: 0x494FD4
-	.asciz "MovieN"
-	.balign 4
+	.4byte 0x4D6F7669
+	.4byte 0x654E0000
 
 .global lbl_80558BFC
 lbl_80558BFC:
@@ -9492,22 +9711,22 @@ lbl_80558BFC:
 lbl_80558C00:
 
 	# ROM: 0x494FE0
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_80558C08
 lbl_80558C08:
 
 	# ROM: 0x494FE8
-	.asciz "KSDXN"
-	.balign 4
+	.4byte 0x4B534458
+	.4byte 0x4E000000
 
 .global lbl_80558C10
 lbl_80558C10:
 
 	# ROM: 0x494FF0
-	.asciz "KBBN"
-	.balign 4
+	.4byte 0x4B42424E
+	.4byte 0
 
 .global lbl_80558C18
 lbl_80558C18:
@@ -9531,89 +9750,93 @@ lbl_80558C20:
 lbl_80558C24:
 
 	# ROM: 0x495004
-	.asciz "K64N"
-	.balign 4
+	.4byte 0x4B36344E
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558C30
 lbl_80558C30:
 
 	# ROM: 0x495010
-	.asciz "KDreamN"
+	.4byte 0x4B447265
+	.4byte 0x616D4E00
 
 .global lbl_80558C38
 lbl_80558C38:
 
 	# ROM: 0x495018
-	.asciz "KBallN"
-	.balign 4
+	.4byte 0x4B42616C
+	.4byte 0x6C4E0000
 
 .global lbl_80558C40
 lbl_80558C40:
 
 	# ROM: 0x495020
-	.asciz "KKiraN"
-	.balign 4
+	.4byte 0x4B4B6972
+	.4byte 0x614E0000
 
 .global lbl_80558C48
 lbl_80558C48:
 
 	# ROM: 0x495028
-	.asciz "KCoroN"
-	.balign 4
+	.4byte 0x4B436F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558C50
 lbl_80558C50:
 
 	# ROM: 0x495030
-	.asciz "KWiiN"
-	.balign 4
+	.4byte 0x4B576969
+	.4byte 0x4E000000
 
 .global lbl_80558C58
 lbl_80558C58:
 
 	# ROM: 0x495038
-	.asciz "KUSDXN"
-	.balign 4
+	.4byte 0x4B555344
+	.4byte 0x584E0000
 
 .global lbl_80558C60
 lbl_80558C60:
 
 	# ROM: 0x495040
-	.asciz "KTouchN"
+	.4byte 0x4B546F75
+	.4byte 0x63684E00
 
 .global lbl_80558C68
 lbl_80558C68:
 
 	# ROM: 0x495048
-	.asciz "KDoroN"
-	.balign 4
+	.4byte 0x4B446F72
+	.4byte 0x6F4E0000
 
 .global lbl_80558C70
 lbl_80558C70:
 
 	# ROM: 0x495050
-	.asciz "KWoolN"
-	.balign 4
+	.4byte 0x4B576F6F
+	.4byte 0x6C4E0000
 
 .global lbl_80558C78
 lbl_80558C78:
 
 	# ROM: 0x495058
-	.asciz "KanimeN"
+	.4byte 0x4B616E69
+	.4byte 0x6D654E00
 
 .global lbl_80558C80
 lbl_80558C80:
 
 	# ROM: 0x495060
-	.asciz "KDonutN"
+	.4byte 0x4B446F6E
+	.4byte 0x75744E00
 
 .global lbl_80558C88
 lbl_80558C88:
 
 	# ROM: 0x495068
-	.asciz "Dummy"
-	.balign 4
+	.4byte 0x44756D6D
+	.4byte 0x79000000
 
 .global lbl_80558C90
 lbl_80558C90:
@@ -9625,15 +9848,15 @@ lbl_80558C90:
 lbl_80558C94:
 
 	# ROM: 0x495074
-	.asciz "KDream"
-	.balign 4
+	.4byte 0x4B447265
+	.4byte 0x616D0000
 
 .global lbl_80558C9C
 lbl_80558C9C:
 
 	# ROM: 0x49507C
-	.asciz "KBall"
-	.balign 4
+	.4byte 0x4B42616C
+	.4byte 0x6C000000
 
 .global lbl_80558CA4
 lbl_80558CA4:
@@ -9651,15 +9874,15 @@ lbl_80558CA8:
 lbl_80558CAC:
 
 	# ROM: 0x49508C
-	.asciz "KSDX"
-	.balign 4
+	.4byte 0x4B534458
+	.4byte 0
 
 .global lbl_80558CB4
 lbl_80558CB4:
 
 	# ROM: 0x495094
-	.asciz "KKira"
-	.balign 4
+	.4byte 0x4B4B6972
+	.4byte 0x61000000
 
 .global lbl_80558CBC
 lbl_80558CBC:
@@ -9677,64 +9900,65 @@ lbl_80558CC0:
 lbl_80558CC4:
 
 	# ROM: 0x4950A4
-	.asciz "KCoro"
-	.balign 4
+	.4byte 0x4B436F72
+	.4byte 0x6F000000
 
 .global lbl_80558CCC
 lbl_80558CCC:
 
 	# ROM: 0x4950AC
-	.asciz "Kanime"
-	.balign 4
+	.4byte 0x4B616E69
+	.4byte 0x6D650000
 	.4byte 0
 
 .global lbl_80558CD8
 lbl_80558CD8:
 
 	# ROM: 0x4950B8
-	.asciz "KMirror"
+	.4byte 0x4B4D6972
+	.4byte 0x726F7200
 
 .global lbl_80558CE0
 lbl_80558CE0:
 
 	# ROM: 0x4950C0
-	.asciz "Touch"
-	.balign 4
+	.4byte 0x546F7563
+	.4byte 0x68000000
 
 .global lbl_80558CE8
 lbl_80558CE8:
 
 	# ROM: 0x4950C8
-	.asciz "KDoro"
-	.balign 4
+	.4byte 0x4B446F72
+	.4byte 0x6F000000
 
 .global lbl_80558CF0
 lbl_80558CF0:
 
 	# ROM: 0x4950D0
-	.asciz "KUSDX"
-	.balign 4
+	.4byte 0x4B555344
+	.4byte 0x58000000
 
 .global lbl_80558CF8
 lbl_80558CF8:
 
 	# ROM: 0x4950D8
-	.asciz "KWool"
-	.balign 4
+	.4byte 0x4B576F6F
+	.4byte 0x6C000000
 
 .global lbl_80558D00
 lbl_80558D00:
 
 	# ROM: 0x4950E0
-	.asciz "KWii"
-	.balign 4
+	.4byte 0x4B576969
+	.4byte 0
 
 .global lbl_80558D08
 lbl_80558D08:
 
 	# ROM: 0x4950E8
-	.asciz "KDonut"
-	.balign 4
+	.4byte 0x4B446F6E
+	.4byte 0x75740000
 
 .global lbl_80558D10
 lbl_80558D10:
@@ -9746,15 +9970,15 @@ lbl_80558D10:
 lbl_80558D14:
 
 	# ROM: 0x4950F4
-	.asciz "Text"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0
 
 .global lbl_80558D1C
 lbl_80558D1C:
 
 	# ROM: 0x4950FC
-	.asciz "TextN"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x4E000000
 
 .global lbl_80558D24
 lbl_80558D24:
@@ -9766,14 +9990,15 @@ lbl_80558D24:
 lbl_80558D28:
 
 	# ROM: 0x495108
-	.asciz "History"
+	.4byte 0x48697374
+	.4byte 0x6F727900
 
 .global lbl_80558D30
 lbl_80558D30:
 
 	# ROM: 0x495110
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_80558D38
 lbl_80558D38:
@@ -9793,8 +10018,8 @@ lbl_80558D40:
 lbl_80558D48:
 
 	# ROM: 0x495128
-	.asciz "Text01"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x30310000
 
 .global lbl_80558D50
 lbl_80558D50:
@@ -9806,29 +10031,30 @@ lbl_80558D50:
 lbl_80558D54:
 
 	# ROM: 0x495134
-	.asciz "TextIn"
-	.balign 4
+	.4byte 0x54657874
+	.4byte 0x496E0000
 
 .global lbl_80558D5C
 lbl_80558D5C:
 
 	# ROM: 0x49513C
-	.asciz "Choice"
-	.balign 4
+	.4byte 0x43686F69
+	.4byte 0x63650000
 	.4byte 0
 
 .global lbl_80558D68
 lbl_80558D68:
 
 	# ROM: 0x495148
-	.asciz "TextOut"
+	.4byte 0x54657874
+	.4byte 0x4F757400
 
 .global lbl_80558D70
 lbl_80558D70:
 
 	# ROM: 0x495150
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_80558D78
 lbl_80558D78:
@@ -9841,36 +10067,36 @@ lbl_80558D78:
 lbl_80558D80:
 
 	# ROM: 0x495160
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_80558D88
 lbl_80558D88:
 
 	# ROM: 0x495168
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_80558D90
 lbl_80558D90:
 
 	# ROM: 0x495170
-	.asciz "Title"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x65000000
 
 .global lbl_80558D98
 lbl_80558D98:
 
 	# ROM: 0x495178
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558DA0
 lbl_80558DA0:
 
 	# ROM: 0x495180
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 
 .global lbl_80558DA8
 lbl_80558DA8:
@@ -9883,7 +10109,8 @@ lbl_80558DA8:
 lbl_80558DB0:
 
 	# ROM: 0x495190
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_80558DB8
 lbl_80558DB8:
@@ -9895,8 +10122,8 @@ lbl_80558DB8:
 lbl_80558DBC:
 
 	# ROM: 0x49519C
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_80558DC4
 lbl_80558DC4:
@@ -9908,7 +10135,8 @@ lbl_80558DC4:
 lbl_80558DC8:
 
 	# ROM: 0x4951A8
-	.asciz "Master1"
+	.4byte 0x4D617374
+	.4byte 0x65723100
 
 .global lbl_80558DD0
 lbl_80558DD0:
@@ -9920,15 +10148,15 @@ lbl_80558DD0:
 lbl_80558DD4:
 
 	# ROM: 0x4951B4
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_80558DDC
 lbl_80558DDC:
 
 	# ROM: 0x4951BC
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_80558DE4
 lbl_80558DE4:
@@ -9940,7 +10168,8 @@ lbl_80558DE4:
 lbl_80558DE8:
 
 	# ROM: 0x4951C8
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_80558DF0
 lbl_80558DF0:
@@ -9952,8 +10181,8 @@ lbl_80558DF0:
 lbl_80558DF4:
 
 	# ROM: 0x4951D4
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_80558DFC
 lbl_80558DFC:
@@ -9965,7 +10194,8 @@ lbl_80558DFC:
 lbl_80558E00:
 
 	# ROM: 0x4951E0
-	.asciz "Master2"
+	.4byte 0x4D617374
+	.4byte 0x65723200
 
 .global lbl_80558E08
 lbl_80558E08:
@@ -9977,8 +10207,8 @@ lbl_80558E08:
 lbl_80558E0C:
 
 	# ROM: 0x4951EC
-	.asciz "Smash"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x68000000
 
 .global lbl_80558E14
 lbl_80558E14:
@@ -9997,7 +10227,8 @@ lbl_80558E18:
 lbl_80558E20:
 
 	# ROM: 0x495200
-	.asciz "Master3"
+	.4byte 0x4D617374
+	.4byte 0x65723300
 
 .global lbl_80558E28
 lbl_80558E28:
@@ -10010,7 +10241,8 @@ lbl_80558E28:
 lbl_80558E30:
 
 	# ROM: 0x495210
-	.asciz "Master4"
+	.4byte 0x4D617374
+	.4byte 0x65723400
 
 .global lbl_80558E38
 lbl_80558E38:
@@ -10023,14 +10255,15 @@ lbl_80558E38:
 lbl_80558E40:
 
 	# ROM: 0x495220
-	.asciz "Smashex"
+	.4byte 0x536D6173
+	.4byte 0x68657800
 
 .global lbl_80558E48
 lbl_80558E48:
 
 	# ROM: 0x495228
-	.asciz "SmEx"
-	.balign 4
+	.4byte 0x536D4578
+	.4byte 0
 
 .global lbl_80558E50
 lbl_80558E50:
@@ -10055,21 +10288,22 @@ lbl_80558E58:
 lbl_80558E60:
 
 	# ROM: 0x495240
-	.asciz "Title%s"
+	.4byte 0x5469746C
+	.4byte 0x65257300
 
 .global lbl_80558E68
 lbl_80558E68:
 
 	# ROM: 0x495248
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558E70
 lbl_80558E70:
 
 	# ROM: 0x495250
-	.asciz "ResMdl"
-	.balign 4
+	.4byte 0x5265734D
+	.4byte 0x646C0000
 
 .global lbl_80558E78
 lbl_80558E78:
@@ -10082,22 +10316,22 @@ lbl_80558E78:
 lbl_80558E80:
 
 	# ROM: 0x495260
-	.asciz "BLand"
-	.balign 4
+	.4byte 0x424C616E
+	.4byte 0x64000000
 
 .global lbl_80558E88
 lbl_80558E88:
 
 	# ROM: 0x495268
-	.asciz "MLand"
-	.balign 4
+	.4byte 0x4D4C616E
+	.4byte 0x64000000
 
 .global lbl_80558E90
 lbl_80558E90:
 
 	# ROM: 0x495270
-	.asciz "FLand"
-	.balign 4
+	.4byte 0x464C616E
+	.4byte 0x64000000
 
 .global lbl_80558E98
 lbl_80558E98:
@@ -10115,7 +10349,8 @@ lbl_80558E9C:
 lbl_80558EA0:
 
 	# ROM: 0x495280
-	.asciz "%s%04lu"
+	.4byte 0x25732530
+	.4byte 0x346C7500
 
 .global lbl_80558EA8
 lbl_80558EA8:
@@ -10193,8 +10428,8 @@ lbl_80558ED4:
 lbl_80558ED8:
 
 	# ROM: 0x4952B8
-	.asciz "Boss"
-	.balign 4
+	.4byte 0x426F7373
+	.4byte 0
 
 .global lbl_80558EE0
 lbl_80558EE0:
@@ -10238,29 +10473,29 @@ lbl_80558EFC:
 lbl_80558F00:
 
 	# ROM: 0x4952E0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558F08
 lbl_80558F08:
 
 	# ROM: 0x4952E8
-	.asciz "StarL"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x4C000000
 
 .global lbl_80558F10
 lbl_80558F10:
 
 	# ROM: 0x4952F0
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80558F18
 lbl_80558F18:
 
 	# ROM: 0x4952F8
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80558F20
 lbl_80558F20:
@@ -10273,33 +10508,36 @@ lbl_80558F20:
 lbl_80558F28:
 
 	# ROM: 0x495308
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80558F30
 lbl_80558F30:
 
 	# ROM: 0x495310
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80558F38
 lbl_80558F38:
 
 	# ROM: 0x495318
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80558F40
 lbl_80558F40:
 
 	# ROM: 0x495320
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_80558F48
 lbl_80558F48:
 
 	# ROM: 0x495328
-	.asciz "Bonkers"
+	.4byte 0x426F6E6B
+	.4byte 0x65727300
 
 .global lbl_80558F50
 lbl_80558F50:
@@ -10312,36 +10550,36 @@ lbl_80558F50:
 lbl_80558F58:
 
 	# ROM: 0x495338
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80558F60
 lbl_80558F60:
 
 	# ROM: 0x495340
-	.asciz "BodyM"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4D000000
 
 .global lbl_80558F68
 lbl_80558F68:
 
 	# ROM: 0x495348
-	.asciz "RHandJ"
-	.balign 4
+	.4byte 0x5248616E
+	.4byte 0x644A0000
 
 .global lbl_80558F70
 lbl_80558F70:
 
 	# ROM: 0x495350
-	.asciz "HeadJ"
-	.balign 4
+	.4byte 0x48656164
+	.4byte 0x4A000000
 
 .global lbl_80558F78
 lbl_80558F78:
 
 	# ROM: 0x495358
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80558F80
 lbl_80558F80:
@@ -10353,97 +10591,100 @@ lbl_80558F80:
 lbl_80558F84:
 
 	# ROM: 0x495364
-	.asciz "Fly2"
-	.balign 4
+	.4byte 0x466C7932
+	.4byte 0
 
 .global lbl_80558F8C
 lbl_80558F8C:
 
 	# ROM: 0x49536C
-	.asciz "Fly3"
-	.balign 4
+	.4byte 0x466C7933
+	.4byte 0
 
 .global lbl_80558F94
 lbl_80558F94:
 
 	# ROM: 0x495374
-	.asciz "Fly4"
-	.balign 4
+	.4byte 0x466C7934
+	.4byte 0
 
 .global lbl_80558F9C
 lbl_80558F9C:
 
 	# ROM: 0x49537C
-	.asciz "Fly5"
-	.balign 4
+	.4byte 0x466C7935
+	.4byte 0
 	.4byte 0
 
 .global lbl_80558FA8
 lbl_80558FA8:
 
 	# ROM: 0x495388
-	.asciz "Summons"
+	.4byte 0x53756D6D
+	.4byte 0x6F6E7300
 
 .global lbl_80558FB0
 lbl_80558FB0:
 
 	# ROM: 0x495390
-	.asciz "Shot"
-	.balign 4
+	.4byte 0x53686F74
+	.4byte 0
 
 .global lbl_80558FB8
 lbl_80558FB8:
 
 	# ROM: 0x495398
-	.asciz "ShotEnd"
+	.4byte 0x53686F74
+	.4byte 0x456E6400
 
 .global lbl_80558FC0
 lbl_80558FC0:
 
 	# ROM: 0x4953A0
-	.asciz "Margin"
-	.balign 4
+	.4byte 0x4D617267
+	.4byte 0x696E0000
 
 .global lbl_80558FC8
 lbl_80558FC8:
 
 	# ROM: 0x4953A8
-	.asciz "Panic"
-	.balign 4
+	.4byte 0x50616E69
+	.4byte 0x63000000
 
 .global lbl_80558FD0
 lbl_80558FD0:
 
 	# ROM: 0x4953B0
-	.asciz "SafeL"
-	.balign 4
+	.4byte 0x53616665
+	.4byte 0x4C000000
 
 .global lbl_80558FD8
 lbl_80558FD8:
 
 	# ROM: 0x4953B8
-	.asciz "SafeR"
-	.balign 4
+	.4byte 0x53616665
+	.4byte 0x52000000
 
 .global lbl_80558FE0
 lbl_80558FE0:
 
 	# ROM: 0x4953C0
-	.asciz "Glad"
-	.balign 4
+	.4byte 0x476C6164
+	.4byte 0
 
 .global lbl_80558FE8
 lbl_80558FE8:
 
 	# ROM: 0x4953C8
-	.asciz "Defeat"
-	.balign 4
+	.4byte 0x44656665
+	.4byte 0x61740000
 
 .global lbl_80558FF0
 lbl_80558FF0:
 
 	# ROM: 0x4953D0
-	.asciz "Goodbye"
+	.4byte 0x476F6F64
+	.4byte 0x62796500
 
 .global lbl_80558FF8
 lbl_80558FF8:
@@ -10501,48 +10742,50 @@ lbl_80559020:
 lbl_80559028:
 
 	# ROM: 0x495408
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559030
 lbl_80559030:
 
 	# ROM: 0x495410
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559038
 lbl_80559038:
 
 	# ROM: 0x495418
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559040
 lbl_80559040:
 
 	# ROM: 0x495420
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_80559048
 lbl_80559048:
 
 	# ROM: 0x495428
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559050
 lbl_80559050:
 
 	# ROM: 0x495430
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_80559058
 lbl_80559058:
 
 	# ROM: 0x495438
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559060
 lbl_80559060:
@@ -10554,70 +10797,72 @@ lbl_80559060:
 lbl_80559064:
 
 	# ROM: 0x495444
-	.asciz "Flight"
-	.balign 4
+	.4byte 0x466C6967
+	.4byte 0x68740000
 
 .global lbl_8055906C
 lbl_8055906C:
 
 	# ROM: 0x49544C
-	.asciz "Praise"
-	.balign 4
+	.4byte 0x50726169
+	.4byte 0x73650000
 	.4byte 0
 
 .global lbl_80559078
 lbl_80559078:
 
 	# ROM: 0x495458
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559080
 lbl_80559080:
 
 	# ROM: 0x495460
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_80559088
 lbl_80559088:
 
 	# ROM: 0x495468
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559090
 lbl_80559090:
 
 	# ROM: 0x495470
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559098
 lbl_80559098:
 
 	# ROM: 0x495478
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_805590A0
 lbl_805590A0:
 
 	# ROM: 0x495480
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_805590A8
 lbl_805590A8:
 
 	# ROM: 0x495488
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_805590B0
 lbl_805590B0:
 
 	# ROM: 0x495490
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_805590B8
 lbl_805590B8:
@@ -10630,21 +10875,22 @@ lbl_805590B8:
 lbl_805590C0:
 
 	# ROM: 0x4954A0
-	.asciz "WonderL"
+	.4byte 0x576F6E64
+	.4byte 0x65724C00
 
 .global lbl_805590C8
 lbl_805590C8:
 
 	# ROM: 0x4954A8
-	.asciz "Copter"
-	.balign 4
+	.4byte 0x436F7074
+	.4byte 0x65720000
 
 .global lbl_805590D0
 lbl_805590D0:
 
 	# ROM: 0x4954B0
-	.asciz "Praise"
-	.balign 4
+	.4byte 0x50726169
+	.4byte 0x73650000
 
 .global lbl_805590D8
 lbl_805590D8:
@@ -10657,48 +10903,50 @@ lbl_805590D8:
 lbl_805590E0:
 
 	# ROM: 0x4954C0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805590E8
 lbl_805590E8:
 
 	# ROM: 0x4954C8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805590F0
 lbl_805590F0:
 
 	# ROM: 0x4954D0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805590F8
 lbl_805590F8:
 
 	# ROM: 0x4954D8
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_80559100
 lbl_80559100:
 
 	# ROM: 0x4954E0
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559108
 lbl_80559108:
 
 	# ROM: 0x4954E8
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_80559110
 lbl_80559110:
 
 	# ROM: 0x4954F0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559118
 lbl_80559118:
@@ -10710,8 +10958,8 @@ lbl_80559118:
 lbl_8055911C:
 
 	# ROM: 0x4954FC
-	.asciz "Glide"
-	.balign 4
+	.4byte 0x476C6964
+	.4byte 0x65000000
 	.4byte 0
 
 .global lbl_80559128
@@ -10737,50 +10985,50 @@ lbl_80559134:
 lbl_80559138:
 
 	# ROM: 0x495518
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559140
 lbl_80559140:
 
 	# ROM: 0x495520
-	.asciz "RotL"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0
 
 .global lbl_80559148
 lbl_80559148:
 
 	# ROM: 0x495528
-	.asciz "Ptcl1L"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x314C0000
 
 .global lbl_80559150
 lbl_80559150:
 
 	# ROM: 0x495530
-	.asciz "Ptcl2L"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x324C0000
 
 .global lbl_80559158
 lbl_80559158:
 
 	# ROM: 0x495538
-	.asciz "OarL"
-	.balign 4
+	.4byte 0x4F61724C
+	.4byte 0
 
 .global lbl_80559160
 lbl_80559160:
 
 	# ROM: 0x495540
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559168
 lbl_80559168:
 
 	# ROM: 0x495548
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559170
 lbl_80559170:
@@ -10810,8 +11058,8 @@ lbl_8055917C:
 lbl_80559180:
 
 	# ROM: 0x495560
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559188
 lbl_80559188:
@@ -10823,228 +11071,233 @@ lbl_80559188:
 lbl_8055918C:
 
 	# ROM: 0x49556C
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80559194
 lbl_80559194:
 
 	# ROM: 0x495574
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 	.4byte 0
 
 .global lbl_805591A0
 lbl_805591A0:
 
 	# ROM: 0x495580
-	.asciz "CallEnd"
+	.4byte 0x43616C6C
+	.4byte 0x456E6400
 
 .global lbl_805591A8
 lbl_805591A8:
 
 	# ROM: 0x495588
-	.asciz "Dubior"
-	.balign 4
+	.4byte 0x44756269
+	.4byte 0x6F720000
 
 .global lbl_805591B0
 lbl_805591B0:
 
 	# ROM: 0x495590
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805591B8
 lbl_805591B8:
 
 	# ROM: 0x495598
-	.asciz "SwordL"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644C0000
 
 .global lbl_805591C0
 lbl_805591C0:
 
 	# ROM: 0x4955A0
-	.asciz "TransL"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734C0000
 
 .global lbl_805591C8
 lbl_805591C8:
 
 	# ROM: 0x4955A8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805591D0
 lbl_805591D0:
 
 	# ROM: 0x4955B0
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_805591D8
 lbl_805591D8:
 
 	# ROM: 0x4955B8
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_805591E0
 lbl_805591E0:
 
 	# ROM: 0x4955C0
-	.asciz "Attack2"
+	.4byte 0x41747461
+	.4byte 0x636B3200
 
 .global lbl_805591E8
 lbl_805591E8:
 
 	# ROM: 0x4955C8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_805591F0
 lbl_805591F0:
 
 	# ROM: 0x4955D0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805591F8
 lbl_805591F8:
 
 	# ROM: 0x4955D8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559200
 lbl_80559200:
 
 	# ROM: 0x4955E0
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_80559208
 lbl_80559208:
 
 	# ROM: 0x4955E8
-	.asciz "Guard"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x64000000
 
 .global lbl_80559210
 lbl_80559210:
 
 	# ROM: 0x4955F0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559218
 lbl_80559218:
 
 	# ROM: 0x4955F8
-	.asciz "Beam1J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x314A0000
 
 .global lbl_80559220
 lbl_80559220:
 
 	# ROM: 0x495600
-	.asciz "Beam2J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x324A0000
 
 .global lbl_80559228
 lbl_80559228:
 
 	# ROM: 0x495608
-	.asciz "Beam3J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x334A0000
 
 .global lbl_80559230
 lbl_80559230:
 
 	# ROM: 0x495610
-	.asciz "Beam4J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x344A0000
 
 .global lbl_80559238
 lbl_80559238:
 
 	# ROM: 0x495618
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80559240
 lbl_80559240:
 
 	# ROM: 0x495620
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80559248
 lbl_80559248:
 
 	# ROM: 0x495628
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559250
 lbl_80559250:
 
 	# ROM: 0x495630
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559258
 lbl_80559258:
 
 	# ROM: 0x495638
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559260
 lbl_80559260:
 
 	# ROM: 0x495640
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559268
 lbl_80559268:
 
 	# ROM: 0x495648
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559270
 lbl_80559270:
 
 	# ROM: 0x495650
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559278
 lbl_80559278:
 
 	# ROM: 0x495658
-	.asciz "BeamAir"
+	.4byte 0x4265616D
+	.4byte 0x41697200
 
 .global lbl_80559280
 lbl_80559280:
 
 	# ROM: 0x495660
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_80559288
 lbl_80559288:
 
 	# ROM: 0x495668
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559290
 lbl_80559290:
 
 	# ROM: 0x495670
-	.asciz "TransL"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734C0000
 
 .global lbl_80559298
 lbl_80559298:
@@ -11057,48 +11310,50 @@ lbl_80559298:
 lbl_805592A0:
 
 	# ROM: 0x495680
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805592A8
 lbl_805592A8:
 
 	# ROM: 0x495688
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_805592B0
 lbl_805592B0:
 
 	# ROM: 0x495690
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805592B8
 lbl_805592B8:
 
 	# ROM: 0x495698
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_805592C0
 lbl_805592C0:
 
 	# ROM: 0x4956A0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_805592C8
 lbl_805592C8:
 
 	# ROM: 0x4956A8
-	.asciz "MoveEnd"
+	.4byte 0x4D6F7665
+	.4byte 0x456E6400
 
 .global lbl_805592D0
 lbl_805592D0:
 
 	# ROM: 0x4956B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805592D8
 lbl_805592D8:
@@ -11110,206 +11365,212 @@ lbl_805592D8:
 lbl_805592DC:
 
 	# ROM: 0x4956BC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805592E4
 lbl_805592E4:
 
 	# ROM: 0x4956C4
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 	.4byte 0
 
 .global lbl_805592F0
 lbl_805592F0:
 
 	# ROM: 0x4956D0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_805592F8
 lbl_805592F8:
 
 	# ROM: 0x4956D8
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559300
 lbl_80559300:
 
 	# ROM: 0x4956E0
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_80559308
 lbl_80559308:
 
 	# ROM: 0x4956E8
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559310
 lbl_80559310:
 
 	# ROM: 0x4956F0
-	.asciz "Wave"
-	.balign 4
+	.4byte 0x57617665
+	.4byte 0
 
 .global lbl_80559318
 lbl_80559318:
 
 	# ROM: 0x4956F8
-	.asciz "WaveEnd"
+	.4byte 0x57617665
+	.4byte 0x456E6400
 
 .global lbl_80559320
 lbl_80559320:
 
 	# ROM: 0x495700
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559328
 lbl_80559328:
 
 	# ROM: 0x495708
-	.asciz "Splash"
-	.balign 4
+	.4byte 0x53706C61
+	.4byte 0x73680000
 
 .global lbl_80559330
 lbl_80559330:
 
 	# ROM: 0x495710
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559338
 lbl_80559338:
 
 	# ROM: 0x495718
-	.asciz "EyeJ"
-	.balign 4
+	.4byte 0x4579654A
+	.4byte 0
 
 .global lbl_80559340
 lbl_80559340:
 
 	# ROM: 0x495720
-	.asciz "MouthJ"
-	.balign 4
+	.4byte 0x4D6F7574
+	.4byte 0x684A0000
 
 .global lbl_80559348
 lbl_80559348:
 
 	# ROM: 0x495728
-	.asciz "MasterJ"
+	.4byte 0x4D617374
+	.4byte 0x65724A00
 
 .global lbl_80559350
 lbl_80559350:
 
 	# ROM: 0x495730
-	.asciz "CA1SJ"
-	.balign 4
+	.4byte 0x43413153
+	.4byte 0x4A000000
 
 .global lbl_80559358
 lbl_80559358:
 
 	# ROM: 0x495738
-	.asciz "CA2SJ"
-	.balign 4
+	.4byte 0x43413253
+	.4byte 0x4A000000
 
 .global lbl_80559360
 lbl_80559360:
 
 	# ROM: 0x495740
-	.asciz "CA3SJ"
-	.balign 4
+	.4byte 0x43413353
+	.4byte 0x4A000000
 
 .global lbl_80559368
 lbl_80559368:
 
 	# ROM: 0x495748
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559370
 lbl_80559370:
 
 	# ROM: 0x495750
-	.asciz "WaitBig"
+	.4byte 0x57616974
+	.4byte 0x42696700
 
 .global lbl_80559378
 lbl_80559378:
 
 	# ROM: 0x495758
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80559380
 lbl_80559380:
 
 	# ROM: 0x495760
-	.asciz "Menace"
-	.balign 4
+	.4byte 0x4D656E61
+	.4byte 0x63650000
 
 .global lbl_80559388
 lbl_80559388:
 
 	# ROM: 0x495768
-	.asciz "Grow"
-	.balign 4
+	.4byte 0x47726F77
+	.4byte 0
 
 .global lbl_80559390
 lbl_80559390:
 
 	# ROM: 0x495770
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559398
 lbl_80559398:
 
 	# ROM: 0x495778
-	.asciz "DamageL"
+	.4byte 0x44616D61
+	.4byte 0x67654C00
 
 .global lbl_805593A0
 lbl_805593A0:
 
 	# ROM: 0x495780
-	.asciz "Anemic"
-	.balign 4
+	.4byte 0x416E656D
+	.4byte 0x69630000
 
 .global lbl_805593A8
 lbl_805593A8:
 
 	# ROM: 0x495788
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_805593B0
 lbl_805593B0:
 
 	# ROM: 0x495790
-	.asciz "Catch"
-	.balign 4
+	.4byte 0x43617463
+	.4byte 0x68000000
 
 .global lbl_805593B8
 lbl_805593B8:
 
 	# ROM: 0x495798
-	.asciz "Chewing"
+	.4byte 0x43686577
+	.4byte 0x696E6700
 
 .global lbl_805593C0
 lbl_805593C0:
 
 	# ROM: 0x4957A0
-	.asciz "Vomit"
-	.balign 4
+	.4byte 0x566F6D69
+	.4byte 0x74000000
 
 .global lbl_805593C8
 lbl_805593C8:
 
 	# ROM: 0x4957A8
-	.asciz "Whispy"
-	.balign 4
+	.4byte 0x57686973
+	.4byte 0x70790000
 
 .global lbl_805593D0
 lbl_805593D0:
@@ -11329,8 +11590,8 @@ lbl_805593D8:
 lbl_805593E0:
 
 	# ROM: 0x4957C0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805593E8
 lbl_805593E8:
@@ -11343,55 +11604,57 @@ lbl_805593E8:
 lbl_805593F0:
 
 	# ROM: 0x4957D0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805593F8
 lbl_805593F8:
 
 	# ROM: 0x4957D8
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_80559400
 lbl_80559400:
 
 	# ROM: 0x4957E0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559408
 lbl_80559408:
 
 	# ROM: 0x4957E8
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559410
 lbl_80559410:
 
 	# ROM: 0x4957F0
-	.asciz "Death"
-	.balign 4
+	.4byte 0x44656174
+	.4byte 0x68000000
 
 .global lbl_80559418
 lbl_80559418:
 
 	# ROM: 0x4957F8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559420
 lbl_80559420:
 
 	# ROM: 0x495800
-	.asciz "MoveEnd"
+	.4byte 0x4D6F7665
+	.4byte 0x456E6400
 
 .global lbl_80559428
 lbl_80559428:
 
 	# ROM: 0x495808
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559430
 lbl_80559430:
@@ -11411,15 +11674,15 @@ lbl_80559438:
 lbl_80559440:
 
 	# ROM: 0x495820
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559448
 lbl_80559448:
 
 	# ROM: 0x495828
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_80559450
 lbl_80559450:
@@ -11476,8 +11739,8 @@ lbl_80559478:
 lbl_8055947C:
 
 	# ROM: 0x49585C
-	.asciz "GObj"
-	.balign 4
+	.4byte 0x474F626A
+	.4byte 0
 
 .global lbl_80559484
 lbl_80559484:
@@ -11496,8 +11759,8 @@ lbl_80559488:
 lbl_80559490:
 
 	# ROM: 0x495870
-	.asciz "Effect"
-	.balign 4
+	.4byte 0x45666665
+	.4byte 0x63740000
 
 .global lbl_80559498
 lbl_80559498:
@@ -11551,76 +11814,78 @@ lbl_805594B4:
 lbl_805594B8:
 
 	# ROM: 0x495898
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_805594C0
 lbl_805594C0:
 
 	# ROM: 0x4958A0
-	.asciz "Attack2"
+	.4byte 0x41747461
+	.4byte 0x636B3200
 
 .global lbl_805594C8
 lbl_805594C8:
 
 	# ROM: 0x4958A8
-	.asciz "Beam"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0
 
 .global lbl_805594D0
 lbl_805594D0:
 
 	# ROM: 0x4958B0
-	.asciz "Bomb"
-	.balign 4
+	.4byte 0x426F6D62
+	.4byte 0
 
 .global lbl_805594D8
 lbl_805594D8:
 
 	# ROM: 0x4958B8
-	.asciz "Bowby"
-	.balign 4
+	.4byte 0x426F7762
+	.4byte 0x79000000
 
 .global lbl_805594E0
 lbl_805594E0:
 
 	# ROM: 0x4958C0
-	.asciz "Broom"
-	.balign 4
+	.4byte 0x42726F6F
+	.4byte 0x6D000000
 
 .global lbl_805594E8
 lbl_805594E8:
 
 	# ROM: 0x4958C8
-	.asciz "Coldtzo"
+	.4byte 0x436F6C64
+	.4byte 0x747A6F00
 
 .global lbl_805594F0
 lbl_805594F0:
 
 	# ROM: 0x4958D0
-	.asciz "Common"
-	.balign 4
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E0000
 
 .global lbl_805594F8
 lbl_805594F8:
 
 	# ROM: 0x4958D8
-	.asciz "Cutter"
-	.balign 4
+	.4byte 0x43757474
+	.4byte 0x65720000
 
 .global lbl_80559500
 lbl_80559500:
 
 	# ROM: 0x4958E0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559508
 lbl_80559508:
 
 	# ROM: 0x4958E8
-	.asciz "Dedede"
-	.balign 4
+	.4byte 0x44656465
+	.4byte 0x64650000
 
 .global lbl_80559510
 lbl_80559510:
@@ -11633,40 +11898,43 @@ lbl_80559510:
 lbl_80559518:
 
 	# ROM: 0x4958F8
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_80559520
 lbl_80559520:
 
 	# ROM: 0x495900
-	.asciz "Fire"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0
 
 .global lbl_80559528
 lbl_80559528:
 
 	# ROM: 0x495908
-	.asciz "Ghost"
-	.balign 4
+	.4byte 0x47686F73
+	.4byte 0x74000000
 
 .global lbl_80559530
 lbl_80559530:
 
 	# ROM: 0x495910
-	.asciz "Gigatzo"
+	.4byte 0x47696761
+	.4byte 0x747A6F00
 
 .global lbl_80559538
 lbl_80559538:
 
 	# ROM: 0x495918
-	.asciz "GmkBall"
+	.4byte 0x476D6B42
+	.4byte 0x616C6C00
 
 .global lbl_80559540
 lbl_80559540:
 
 	# ROM: 0x495920
-	.asciz "Hammer"
-	.balign 4
+	.4byte 0x48616D6D
+	.4byte 0x65720000
 
 .global lbl_80559548
 lbl_80559548:
@@ -11678,112 +11946,114 @@ lbl_80559548:
 lbl_8055954C:
 
 	# ROM: 0x49592C
-	.asciz "Info"
-	.balign 4
+	.4byte 0x496E666F
+	.4byte 0
 
 .global lbl_80559554
 lbl_80559554:
 
 	# ROM: 0x495934
-	.asciz "Item"
-	.balign 4
+	.4byte 0x4974656D
+	.4byte 0
 
 .global lbl_8055955C
 lbl_8055955C:
 
 	# ROM: 0x49593C
-	.asciz "Leaf"
-	.balign 4
+	.4byte 0x4C656166
+	.4byte 0
 
 .global lbl_80559564
 lbl_80559564:
 
 	# ROM: 0x495944
-	.asciz "Master"
-	.balign 4
+	.4byte 0x4D617374
+	.4byte 0x65720000
 
 .global lbl_8055956C
 lbl_8055956C:
 
 	# ROM: 0x49594C
-	.asciz "Mike"
-	.balign 4
+	.4byte 0x4D696B65
+	.4byte 0
 	.4byte 0
 
 .global lbl_80559578
 lbl_80559578:
 
 	# ROM: 0x495958
-	.asciz "Missile"
+	.4byte 0x4D697373
+	.4byte 0x696C6500
 
 .global lbl_80559580
 lbl_80559580:
 
 	# ROM: 0x495960
-	.asciz "Needle"
-	.balign 4
+	.4byte 0x4E656564
+	.4byte 0x6C650000
 
 .global lbl_80559588
 lbl_80559588:
 
 	# ROM: 0x495968
-	.asciz "Ninja"
-	.balign 4
+	.4byte 0x4E696E6A
+	.4byte 0x61000000
 
 .global lbl_80559590
 lbl_80559590:
 
 	# ROM: 0x495970
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_80559598
 lbl_80559598:
 
 	# ROM: 0x495978
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_805595A0
 lbl_805595A0:
 
 	# ROM: 0x495980
-	.asciz "Ship"
-	.balign 4
+	.4byte 0x53686970
+	.4byte 0
 
 .global lbl_805595A8
 lbl_805595A8:
 
 	# ROM: 0x495988
-	.asciz "Shotzo"
-	.balign 4
+	.4byte 0x53686F74
+	.4byte 0x7A6F0000
 
 .global lbl_805595B0
 lbl_805595B0:
 
 	# ROM: 0x495990
-	.asciz "Sleep"
-	.balign 4
+	.4byte 0x536C6565
+	.4byte 0x70000000
 
 .global lbl_805595B8
 lbl_805595B8:
 
 	# ROM: 0x495998
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_805595C0
 lbl_805595C0:
 
 	# ROM: 0x4959A0
-	.asciz "Spear"
-	.balign 4
+	.4byte 0x53706561
+	.4byte 0x72000000
 
 .global lbl_805595C8
 lbl_805595C8:
 
 	# ROM: 0x4959A8
-	.asciz "Stone"
-	.balign 4
+	.4byte 0x53746F6E
+	.4byte 0x65000000
 
 .global lbl_805595D0
 lbl_805595D0:
@@ -11795,61 +12065,65 @@ lbl_805595D0:
 lbl_805595D4:
 
 	# ROM: 0x4959B4
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 	.4byte 0
 
 .global lbl_805595E0
 lbl_805595E0:
 
 	# ROM: 0x4959C0
-	.asciz "Tornado"
+	.4byte 0x546F726E
+	.4byte 0x61646F00
 
 .global lbl_805595E8
 lbl_805595E8:
 
 	# ROM: 0x4959C8
-	.asciz "Volttzo"
+	.4byte 0x566F6C74
+	.4byte 0x747A6F00
 
 .global lbl_805595F0
 lbl_805595F0:
 
 	# ROM: 0x4959D0
-	.asciz "Water"
-	.balign 4
+	.4byte 0x57617465
+	.4byte 0x72000000
 
 .global lbl_805595F8
 lbl_805595F8:
 
 	# ROM: 0x4959D8
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_80559600
 lbl_80559600:
 
 	# ROM: 0x4959E0
-	.asciz "Whispy"
-	.balign 4
+	.4byte 0x57686973
+	.4byte 0x70790000
 
 .global lbl_80559608
 lbl_80559608:
 
 	# ROM: 0x4959E8
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_80559610
 lbl_80559610:
 
 	# ROM: 0x4959F0
-	.asciz "MapCave"
+	.4byte 0x4D617043
+	.4byte 0x61766500
 
 .global lbl_80559618
 lbl_80559618:
 
 	# ROM: 0x4959F8
-	.asciz "MapSnow"
+	.4byte 0x4D617053
+	.4byte 0x6E6F7700
 
 .global lbl_80559620
 lbl_80559620:
@@ -11862,8 +12136,8 @@ lbl_80559620:
 lbl_80559628:
 
 	# ROM: 0x495A08
-	.asciz "Enemy"
-	.balign 4
+	.4byte 0x456E656D
+	.4byte 0x79000000
 
 .global lbl_80559630
 lbl_80559630:
@@ -11900,8 +12174,8 @@ lbl_80559644:
 lbl_80559648:
 
 	# ROM: 0x495A28
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559650
 lbl_80559650:
@@ -11914,117 +12188,120 @@ lbl_80559650:
 lbl_80559658:
 
 	# ROM: 0x495A38
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559660
 lbl_80559660:
 
 	# ROM: 0x495A40
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559668
 lbl_80559668:
 
 	# ROM: 0x495A48
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559670
 lbl_80559670:
 
 	# ROM: 0x495A50
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559678
 lbl_80559678:
 
 	# ROM: 0x495A58
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559680
 lbl_80559680:
 
 	# ROM: 0x495A60
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559688
 lbl_80559688:
 
 	# ROM: 0x495A68
-	.asciz "TransL"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734C0000
 
 .global lbl_80559690
 lbl_80559690:
 
 	# ROM: 0x495A70
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_80559698
 lbl_80559698:
 
 	# ROM: 0x495A78
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805596A0
 lbl_805596A0:
 
 	# ROM: 0x495A80
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_805596A8
 lbl_805596A8:
 
 	# ROM: 0x495A88
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_805596B0
 lbl_805596B0:
 
 	# ROM: 0x495A90
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805596B8
 lbl_805596B8:
 
 	# ROM: 0x495A98
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_805596C0
 lbl_805596C0:
 
 	# ROM: 0x495AA0
-	.asciz "Retreat"
+	.4byte 0x52657472
+	.4byte 0x65617400
 
 .global lbl_805596C8
 lbl_805596C8:
 
 	# ROM: 0x495AA8
-	.asciz "Walk2"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0x32000000
 
 .global lbl_805596D0
 lbl_805596D0:
 
 	# ROM: 0x495AB0
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_805596D8
 lbl_805596D8:
 
 	# ROM: 0x495AB8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805596E0
 lbl_805596E0:
@@ -12037,55 +12314,57 @@ lbl_805596E0:
 lbl_805596E8:
 
 	# ROM: 0x495AC8
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_805596F0
 lbl_805596F0:
 
 	# ROM: 0x495AD0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805596F8
 lbl_805596F8:
 
 	# ROM: 0x495AD8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559700
 lbl_80559700:
 
 	# ROM: 0x495AE0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559708
 lbl_80559708:
 
 	# ROM: 0x495AE8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559710
 lbl_80559710:
 
 	# ROM: 0x495AF0
-	.asciz "Blipper"
+	.4byte 0x426C6970
+	.4byte 0x70657200
 
 .global lbl_80559718
 lbl_80559718:
 
 	# ROM: 0x495AF8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559720
 lbl_80559720:
 
 	# ROM: 0x495B00
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_80559728
 lbl_80559728:
@@ -12105,8 +12384,8 @@ lbl_80559730:
 lbl_80559738:
 
 	# ROM: 0x495B18
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559740
 lbl_80559740:
@@ -12119,50 +12398,50 @@ lbl_80559740:
 lbl_80559748:
 
 	# ROM: 0x495B28
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559750
 lbl_80559750:
 
 	# ROM: 0x495B30
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559758
 lbl_80559758:
 
 	# ROM: 0x495B38
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559760
 lbl_80559760:
 
 	# ROM: 0x495B40
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559768
 lbl_80559768:
 
 	# ROM: 0x495B48
-	.asciz "Bouncy"
-	.balign 4
+	.4byte 0x426F756E
+	.4byte 0x63790000
 
 .global lbl_80559770
 lbl_80559770:
 
 	# ROM: 0x495B50
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559778
 lbl_80559778:
 
 	# ROM: 0x495B58
-	.asciz "FaceJ"
-	.balign 4
+	.4byte 0x46616365
+	.4byte 0x4A000000
 
 .global lbl_80559780
 lbl_80559780:
@@ -12175,36 +12454,36 @@ lbl_80559780:
 lbl_80559788:
 
 	# ROM: 0x495B68
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559790
 lbl_80559790:
 
 	# ROM: 0x495B70
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559798
 lbl_80559798:
 
 	# ROM: 0x495B78
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_805597A0
 lbl_805597A0:
 
 	# ROM: 0x495B80
-	.asciz "Bowby"
-	.balign 4
+	.4byte 0x426F7762
+	.4byte 0x79000000
 
 .global lbl_805597A8
 lbl_805597A8:
 
 	# ROM: 0x495B88
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805597B0
 lbl_805597B0:
@@ -12222,35 +12501,36 @@ lbl_805597B4:
 lbl_805597B8:
 
 	# ROM: 0x495B98
-	.asciz "WaitEnd"
+	.4byte 0x57616974
+	.4byte 0x456E6400
 
 .global lbl_805597C0
 lbl_805597C0:
 
 	# ROM: 0x495BA0
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_805597C8
 lbl_805597C8:
 
 	# ROM: 0x495BA8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805597D0
 lbl_805597D0:
 
 	# ROM: 0x495BB0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805597D8
 lbl_805597D8:
 
 	# ROM: 0x495BB8
-	.asciz "Hoki3J"
-	.balign 4
+	.4byte 0x486F6B69
+	.4byte 0x334A0000
 
 .global lbl_805597E0
 lbl_805597E0:
@@ -12263,104 +12543,106 @@ lbl_805597E0:
 lbl_805597E8:
 
 	# ROM: 0x495BC8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805597F0
 lbl_805597F0:
 
 	# ROM: 0x495BD0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805597F8
 lbl_805597F8:
 
 	# ROM: 0x495BD8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559800
 lbl_80559800:
 
 	# ROM: 0x495BE0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559808
 lbl_80559808:
 
 	# ROM: 0x495BE8
-	.asciz "Move2"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x32000000
 
 .global lbl_80559810
 lbl_80559810:
 
 	# ROM: 0x495BF0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559818
 lbl_80559818:
 
 	# ROM: 0x495BF8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559820
 lbl_80559820:
 
 	# ROM: 0x495C00
-	.asciz "CappyM"
-	.balign 4
+	.4byte 0x43617070
+	.4byte 0x794D0000
 
 .global lbl_80559828
 lbl_80559828:
 
 	# ROM: 0x495C08
-	.asciz "ArmM"
-	.balign 4
+	.4byte 0x41726D4D
+	.4byte 0
 
 .global lbl_80559830
 lbl_80559830:
 
 	# ROM: 0x495C10
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559838
 lbl_80559838:
 
 	# ROM: 0x495C18
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559840
 lbl_80559840:
 
 	# ROM: 0x495C20
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559848
 lbl_80559848:
 
 	# ROM: 0x495C28
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559850
 lbl_80559850:
 
 	# ROM: 0x495C30
-	.asciz "KasaUp"
-	.balign 4
+	.4byte 0x4B617361
+	.4byte 0x55700000
 
 .global lbl_80559858
 lbl_80559858:
 
 	# ROM: 0x495C38
-	.asciz "Cappy"
-	.balign 4
+	.4byte 0x43617070
+	.4byte 0x79000000
 
 .global lbl_80559860
 lbl_80559860:
@@ -12373,8 +12655,8 @@ lbl_80559860:
 lbl_80559868:
 
 	# ROM: 0x495C48
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559870
 lbl_80559870:
@@ -12387,8 +12669,8 @@ lbl_80559870:
 lbl_80559878:
 
 	# ROM: 0x495C58
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559880
 lbl_80559880:
@@ -12401,29 +12683,29 @@ lbl_80559880:
 lbl_80559888:
 
 	# ROM: 0x495C68
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559890
 lbl_80559890:
 
 	# ROM: 0x495C70
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559898
 lbl_80559898:
 
 	# ROM: 0x495C78
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805598A0
 lbl_805598A0:
 
 	# ROM: 0x495C80
-	.asciz "Turn"
-	.balign 4
+	.4byte 0x5475726E
+	.4byte 0
 
 .global lbl_805598A8
 lbl_805598A8:
@@ -12436,8 +12718,8 @@ lbl_805598A8:
 lbl_805598B0:
 
 	# ROM: 0x495C90
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805598B8
 lbl_805598B8:
@@ -12450,90 +12732,92 @@ lbl_805598B8:
 lbl_805598C0:
 
 	# ROM: 0x495CA0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_805598C8
 lbl_805598C8:
 
 	# ROM: 0x495CA8
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_805598D0
 lbl_805598D0:
 
 	# ROM: 0x495CB0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_805598D8
 lbl_805598D8:
 
 	# ROM: 0x495CB8
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_805598E0
 lbl_805598E0:
 
 	# ROM: 0x495CC0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_805598E8
 lbl_805598E8:
 
 	# ROM: 0x495CC8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_805598F0
 lbl_805598F0:
 
 	# ROM: 0x495CD0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805598F8
 lbl_805598F8:
 
 	# ROM: 0x495CD8
-	.asciz "Chilly"
-	.balign 4
+	.4byte 0x4368696C
+	.4byte 0x6C790000
 
 .global lbl_80559900
 lbl_80559900:
 
 	# ROM: 0x495CE0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559908
 lbl_80559908:
 
 	# ROM: 0x495CE8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559910
 lbl_80559910:
 
 	# ROM: 0x495CF0
-	.asciz "Damage2"
+	.4byte 0x44616D61
+	.4byte 0x67653200
 
 .global lbl_80559918
 lbl_80559918:
 
 	# ROM: 0x495CF8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559920
 lbl_80559920:
 
 	# ROM: 0x495D00
-	.asciz "Como"
-	.balign 4
+	.4byte 0x436F6D6F
+	.4byte 0
 
 .global lbl_80559928
 lbl_80559928:
@@ -12546,8 +12830,8 @@ lbl_80559928:
 lbl_80559930:
 
 	# ROM: 0x495D10
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559938
 lbl_80559938:
@@ -12559,64 +12843,65 @@ lbl_80559938:
 lbl_8055993C:
 
 	# ROM: 0x495D1C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559944
 lbl_80559944:
 
 	# ROM: 0x495D24
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055994C
 lbl_8055994C:
 
 	# ROM: 0x495D2C
-	.asciz "Chase"
-	.balign 4
+	.4byte 0x43686173
+	.4byte 0x65000000
 	.4byte 0
 
 .global lbl_80559958
 lbl_80559958:
 
 	# ROM: 0x495D38
-	.asciz "HitSpin"
+	.4byte 0x48697453
+	.4byte 0x70696E00
 
 .global lbl_80559960
 lbl_80559960:
 
 	# ROM: 0x495D40
-	.asciz "HitEnd"
-	.balign 4
+	.4byte 0x48697445
+	.4byte 0x6E640000
 
 .global lbl_80559968
 lbl_80559968:
 
 	# ROM: 0x495D48
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559970
 lbl_80559970:
 
 	# ROM: 0x495D50
-	.asciz "Degout"
-	.balign 4
+	.4byte 0x4465676F
+	.4byte 0x75740000
 
 .global lbl_80559978
 lbl_80559978:
 
 	# ROM: 0x495D58
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559980
 lbl_80559980:
 
 	# ROM: 0x495D60
-	.asciz "HipJ"
-	.balign 4
+	.4byte 0x4869704A
+	.4byte 0
 
 .global lbl_80559988
 lbl_80559988:
@@ -12629,15 +12914,15 @@ lbl_80559988:
 lbl_80559990:
 
 	# ROM: 0x495D70
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559998
 lbl_80559998:
 
 	# ROM: 0x495D78
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805599A0
 lbl_805599A0:
@@ -12650,8 +12935,8 @@ lbl_805599A0:
 lbl_805599A8:
 
 	# ROM: 0x495D88
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805599B0
 lbl_805599B0:
@@ -12663,361 +12948,366 @@ lbl_805599B0:
 lbl_805599B4:
 
 	# ROM: 0x495D94
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_805599BC
 lbl_805599BC:
 
 	# ROM: 0x495D9C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_805599C8
 lbl_805599C8:
 
 	# ROM: 0x495DA8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_805599D0
 lbl_805599D0:
 
 	# ROM: 0x495DB0
-	.asciz "EyeJ"
-	.balign 4
+	.4byte 0x4579654A
+	.4byte 0
 
 .global lbl_805599D8
 lbl_805599D8:
 
 	# ROM: 0x495DB8
-	.asciz "RMove"
-	.balign 4
+	.4byte 0x524D6F76
+	.4byte 0x65000000
 
 .global lbl_805599E0
 lbl_805599E0:
 
 	# ROM: 0x495DC0
-	.asciz "LMove"
-	.balign 4
+	.4byte 0x4C4D6F76
+	.4byte 0x65000000
 
 .global lbl_805599E8
 lbl_805599E8:
 
 	# ROM: 0x495DC8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_805599F0
 lbl_805599F0:
 
 	# ROM: 0x495DD0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_805599F8
 lbl_805599F8:
 
 	# ROM: 0x495DD8
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559A00
 lbl_80559A00:
 
 	# ROM: 0x495DE0
-	.asciz "Elec"
-	.balign 4
+	.4byte 0x456C6563
+	.4byte 0
 
 .global lbl_80559A08
 lbl_80559A08:
 
 	# ROM: 0x495DE8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559A10
 lbl_80559A10:
 
 	# ROM: 0x495DF0
-	.asciz "BodyJ"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4A000000
 
 .global lbl_80559A18
 lbl_80559A18:
 
 	# ROM: 0x495DF8
-	.asciz "Rot2L"
-	.balign 4
+	.4byte 0x526F7432
+	.4byte 0x4C000000
 
 .global lbl_80559A20
 lbl_80559A20:
 
 	# ROM: 0x495E00
-	.asciz "RMove"
-	.balign 4
+	.4byte 0x524D6F76
+	.4byte 0x65000000
 
 .global lbl_80559A28
 lbl_80559A28:
 
 	# ROM: 0x495E08
-	.asciz "LMove"
-	.balign 4
+	.4byte 0x4C4D6F76
+	.4byte 0x65000000
 
 .global lbl_80559A30
 lbl_80559A30:
 
 	# ROM: 0x495E10
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559A38
 lbl_80559A38:
 
 	# ROM: 0x495E18
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559A40
 lbl_80559A40:
 
 	# ROM: 0x495E20
-	.asciz "Flamer"
-	.balign 4
+	.4byte 0x466C616D
+	.4byte 0x65720000
 
 .global lbl_80559A48
 lbl_80559A48:
 
 	# ROM: 0x495E28
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559A50
 lbl_80559A50:
 
 	# ROM: 0x495E30
-	.asciz "Leaf1M"
-	.balign 4
+	.4byte 0x4C656166
+	.4byte 0x314D0000
 
 .global lbl_80559A58
 lbl_80559A58:
 
 	# ROM: 0x495E38
-	.asciz "Leaf2M"
-	.balign 4
+	.4byte 0x4C656166
+	.4byte 0x324D0000
 
 .global lbl_80559A60
 lbl_80559A60:
 
 	# ROM: 0x495E40
-	.asciz "RotL2"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0x32000000
 
 .global lbl_80559A68
 lbl_80559A68:
 
 	# ROM: 0x495E48
-	.asciz "BodyL"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4C000000
 
 .global lbl_80559A70
 lbl_80559A70:
 
 	# ROM: 0x495E50
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559A78
 lbl_80559A78:
 
 	# ROM: 0x495E58
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559A80
 lbl_80559A80:
 
 	# ROM: 0x495E60
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559A88
 lbl_80559A88:
 
 	# ROM: 0x495E68
-	.asciz "Foley"
-	.balign 4
+	.4byte 0x466F6C65
+	.4byte 0x79000000
 
 .global lbl_80559A90
 lbl_80559A90:
 
 	# ROM: 0x495E70
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559A98
 lbl_80559A98:
 
 	# ROM: 0x495E78
-	.asciz "BodyJ"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4A000000
 
 .global lbl_80559AA0
 lbl_80559AA0:
 
 	# ROM: 0x495E80
-	.asciz "Beam1J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x314A0000
 
 .global lbl_80559AA8
 lbl_80559AA8:
 
 	# ROM: 0x495E88
-	.asciz "Beam2J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x324A0000
 
 .global lbl_80559AB0
 lbl_80559AB0:
 
 	# ROM: 0x495E90
-	.asciz "Beam3J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x334A0000
 
 .global lbl_80559AB8
 lbl_80559AB8:
 
 	# ROM: 0x495E98
-	.asciz "Beam4J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x344A0000
 
 .global lbl_80559AC0
 lbl_80559AC0:
 
 	# ROM: 0x495EA0
-	.asciz "Beam5J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x354A0000
 
 .global lbl_80559AC8
 lbl_80559AC8:
 
 	# ROM: 0x495EA8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559AD0
 lbl_80559AD0:
 
 	# ROM: 0x495EB0
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559AD8
 lbl_80559AD8:
 
 	# ROM: 0x495EB8
-	.asciz "Gemra"
-	.balign 4
+	.4byte 0x47656D72
+	.4byte 0x61000000
 
 .global lbl_80559AE0
 lbl_80559AE0:
 
 	# ROM: 0x495EC0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559AE8
 lbl_80559AE8:
 
 	# ROM: 0x495EC8
-	.asciz "BodyJ"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4A000000
 
 .global lbl_80559AF0
 lbl_80559AF0:
 
 	# ROM: 0x495ED0
-	.asciz "TopJ"
-	.balign 4
+	.4byte 0x546F704A
+	.4byte 0
 
 .global lbl_80559AF8
 lbl_80559AF8:
 
 	# ROM: 0x495ED8
-	.asciz "TransL"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734C0000
 
 .global lbl_80559B00
 lbl_80559B00:
 
 	# ROM: 0x495EE0
-	.asciz "BaseM01"
+	.4byte 0x42617365
+	.4byte 0x4D303100
 
 .global lbl_80559B08
 lbl_80559B08:
 
 	# ROM: 0x495EE8
-	.asciz "BaseM02"
+	.4byte 0x42617365
+	.4byte 0x4D303200
 
 .global lbl_80559B10
 lbl_80559B10:
 
 	# ROM: 0x495EF0
-	.asciz "Body2J"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x324A0000
 
 .global lbl_80559B18
 lbl_80559B18:
 
 	# ROM: 0x495EF8
-	.asciz "Body3J"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x334A0000
 
 .global lbl_80559B20
 lbl_80559B20:
 
 	# ROM: 0x495F00
-	.asciz "BaseM"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0x4D000000
 
 .global lbl_80559B28
 lbl_80559B28:
 
 	# ROM: 0x495F08
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559B30
 lbl_80559B30:
 
 	# ROM: 0x495F10
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559B38
 lbl_80559B38:
 
 	# ROM: 0x495F18
-	.asciz "Gigatzo"
+	.4byte 0x47696761
+	.4byte 0x747A6F00
 
 .global lbl_80559B40
 lbl_80559B40:
 
 	# ROM: 0x495F20
-	.asciz "Volttzo"
+	.4byte 0x566F6C74
+	.4byte 0x747A6F00
 
 .global lbl_80559B48
 lbl_80559B48:
 
 	# ROM: 0x495F28
-	.asciz "Coldtzo"
+	.4byte 0x436F6C64
+	.4byte 0x747A6F00
 
 .global lbl_80559B50
 lbl_80559B50:
 
 	# ROM: 0x495F30
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559B58
 lbl_80559B58:
@@ -13030,15 +13320,15 @@ lbl_80559B58:
 lbl_80559B60:
 
 	# ROM: 0x495F40
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559B68
 lbl_80559B68:
 
 	# ROM: 0x495F48
-	.asciz "Gordo"
-	.balign 4
+	.4byte 0x476F7264
+	.4byte 0x6F000000
 
 .global lbl_80559B70
 lbl_80559B70:
@@ -13056,74 +13346,78 @@ lbl_80559B74:
 lbl_80559B78:
 
 	# ROM: 0x495F58
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559B80
 lbl_80559B80:
 
 	# ROM: 0x495F60
-	.asciz "MouthL"
-	.balign 4
+	.4byte 0x4D6F7574
+	.4byte 0x684C0000
 
 .global lbl_80559B88
 lbl_80559B88:
 
 	# ROM: 0x495F68
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559B90
 lbl_80559B90:
 
 	# ROM: 0x495F70
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559B98
 lbl_80559B98:
 
 	# ROM: 0x495F78
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559BA0
 lbl_80559BA0:
 
 	# ROM: 0x495F80
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_80559BA8
 lbl_80559BA8:
 
 	# ROM: 0x495F88
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559BB0
 lbl_80559BB0:
 
 	# ROM: 0x495F90
-	.asciz "Attack1"
+	.4byte 0x41747461
+	.4byte 0x636B3100
 
 .global lbl_80559BB8
 lbl_80559BB8:
 
 	# ROM: 0x495F98
-	.asciz "Attack2"
+	.4byte 0x41747461
+	.4byte 0x636B3200
 
 .global lbl_80559BC0
 lbl_80559BC0:
 
 	# ROM: 0x495FA0
-	.asciz "Hothead"
+	.4byte 0x486F7468
+	.4byte 0x65616400
 
 .global lbl_80559BC8
 lbl_80559BC8:
 
 	# ROM: 0x495FA8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559BD0
 lbl_80559BD0:
@@ -13135,44 +13429,44 @@ lbl_80559BD0:
 lbl_80559BD4:
 
 	# ROM: 0x495FB4
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559BDC
 lbl_80559BDC:
 
 	# ROM: 0x495FBC
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559BE4
 lbl_80559BE4:
 
 	# ROM: 0x495FC4
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559BEC
 lbl_80559BEC:
 
 	# ROM: 0x495FCC
-	.asciz "Juckle"
-	.balign 4
+	.4byte 0x4A75636B
+	.4byte 0x6C650000
 	.4byte 0
 
 .global lbl_80559BF8
 lbl_80559BF8:
 
 	# ROM: 0x495FD8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559C00
 lbl_80559C00:
 
 	# ROM: 0x495FE0
-	.asciz "BodyL"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4C000000
 
 .global lbl_80559C08
 lbl_80559C08:
@@ -13185,210 +13479,218 @@ lbl_80559C08:
 lbl_80559C10:
 
 	# ROM: 0x495FF0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559C18
 lbl_80559C18:
 
 	# ROM: 0x495FF8
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559C20
 lbl_80559C20:
 
 	# ROM: 0x496000
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559C28
 lbl_80559C28:
 
 	# ROM: 0x496008
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559C30
 lbl_80559C30:
 
 	# ROM: 0x496010
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_80559C38
 lbl_80559C38:
 
 	# ROM: 0x496018
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559C40
 lbl_80559C40:
 
 	# ROM: 0x496020
-	.asciz "Warp1"
-	.balign 4
+	.4byte 0x57617270
+	.4byte 0x31000000
 
 .global lbl_80559C48
 lbl_80559C48:
 
 	# ROM: 0x496028
-	.asciz "Warp2"
-	.balign 4
+	.4byte 0x57617270
+	.4byte 0x32000000
 
 .global lbl_80559C50
 lbl_80559C50:
 
 	# ROM: 0x496030
-	.asciz "Kabu"
-	.balign 4
+	.4byte 0x4B616275
+	.4byte 0
 
 .global lbl_80559C58
 lbl_80559C58:
 
 	# ROM: 0x496038
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559C60
 lbl_80559C60:
 
 	# ROM: 0x496040
-	.asciz "LL4ToeJ"
+	.4byte 0x4C4C3454
+	.4byte 0x6F654A00
 
 .global lbl_80559C68
 lbl_80559C68:
 
 	# ROM: 0x496048
-	.asciz "RL4ToeJ"
+	.4byte 0x524C3454
+	.4byte 0x6F654A00
 
 .global lbl_80559C70
 lbl_80559C70:
 
 	# ROM: 0x496050
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559C78
 lbl_80559C78:
 
 	# ROM: 0x496058
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559C80
 lbl_80559C80:
 
 	# ROM: 0x496060
-	.asciz "WalkL"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0x4C000000
 
 .global lbl_80559C88
 lbl_80559C88:
 
 	# ROM: 0x496068
-	.asciz "WalkR"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0x52000000
 
 .global lbl_80559C90
 lbl_80559C90:
 
 	# ROM: 0x496070
-	.asciz "DamageL"
+	.4byte 0x44616D61
+	.4byte 0x67654C00
 
 .global lbl_80559C98
 lbl_80559C98:
 
 	# ROM: 0x496078
-	.asciz "DamageR"
+	.4byte 0x44616D61
+	.4byte 0x67655200
 
 .global lbl_80559CA0
 lbl_80559CA0:
 
 	# ROM: 0x496080
-	.asciz "BackL"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4C000000
 
 .global lbl_80559CA8
 lbl_80559CA8:
 
 	# ROM: 0x496088
-	.asciz "BackR"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x52000000
 
 .global lbl_80559CB0
 lbl_80559CB0:
 
 	# ROM: 0x496090
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559CB8
 lbl_80559CB8:
 
 	# ROM: 0x496098
-	.asciz "Spear2J"
+	.4byte 0x53706561
+	.4byte 0x72324A00
 
 .global lbl_80559CC0
 lbl_80559CC0:
 
 	# ROM: 0x4960A0
-	.asciz "Spear3J"
+	.4byte 0x53706561
+	.4byte 0x72334A00
 
 .global lbl_80559CC8
 lbl_80559CC8:
 
 	# ROM: 0x4960A8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559CD0
 lbl_80559CD0:
 
 	# ROM: 0x4960B0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559CD8
 lbl_80559CD8:
 
 	# ROM: 0x4960B8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559CE0
 lbl_80559CE0:
 
 	# ROM: 0x4960C0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559CE8
 lbl_80559CE8:
 
 	# ROM: 0x4960C8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559CF0
 lbl_80559CF0:
 
 	# ROM: 0x4960D0
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559CF8
 lbl_80559CF8:
 
 	# ROM: 0x4960D8
-	.asciz "Lanzer"
-	.balign 4
+	.4byte 0x4C616E7A
+	.4byte 0x65720000
 
 .global lbl_80559D00
 lbl_80559D00:
 
 	# ROM: 0x4960E0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559D08
 lbl_80559D08:
@@ -13400,50 +13702,51 @@ lbl_80559D08:
 lbl_80559D0C:
 
 	# ROM: 0x4960EC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559D14
 lbl_80559D14:
 
 	# ROM: 0x4960F4
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 	.4byte 0
 
 .global lbl_80559D20
 lbl_80559D20:
 
 	# ROM: 0x496100
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559D28
 lbl_80559D28:
 
 	# ROM: 0x496108
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559D30
 lbl_80559D30:
 
 	# ROM: 0x496110
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559D38
 lbl_80559D38:
 
 	# ROM: 0x496118
-	.asciz "Leafan"
-	.balign 4
+	.4byte 0x4C656166
+	.4byte 0x616E0000
 
 .global lbl_80559D40
 lbl_80559D40:
 
 	# ROM: 0x496120
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559D48
 lbl_80559D48:
@@ -13455,16 +13758,16 @@ lbl_80559D48:
 lbl_80559D4C:
 
 	# ROM: 0x49612C
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_80559D58
 lbl_80559D58:
 
 	# ROM: 0x496138
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559D60
 lbl_80559D60:
@@ -13476,98 +13779,100 @@ lbl_80559D60:
 lbl_80559D64:
 
 	# ROM: 0x496144
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559D6C
 lbl_80559D6C:
 
 	# ROM: 0x49614C
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559D74
 lbl_80559D74:
 
 	# ROM: 0x496154
-	.asciz "Endure"
-	.balign 4
+	.4byte 0x456E6475
+	.4byte 0x72650000
 	.4byte 0
 
 .global lbl_80559D80
 lbl_80559D80:
 
 	# ROM: 0x496160
-	.asciz "Mumbies"
+	.4byte 0x4D756D62
+	.4byte 0x69657300
 
 .global lbl_80559D88
 lbl_80559D88:
 
 	# ROM: 0x496168
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559D90
 lbl_80559D90:
 
 	# ROM: 0x496170
-	.asciz "RotL"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0
 
 .global lbl_80559D98
 lbl_80559D98:
 
 	# ROM: 0x496178
-	.asciz "RoundL"
-	.balign 4
+	.4byte 0x526F756E
+	.4byte 0x644C0000
 
 .global lbl_80559DA0
 lbl_80559DA0:
 
 	# ROM: 0x496180
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559DA8
 lbl_80559DA8:
 
 	# ROM: 0x496188
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559DB0
 lbl_80559DB0:
 
 	# ROM: 0x496190
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559DB8
 lbl_80559DB8:
 
 	# ROM: 0x496198
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559DC0
 lbl_80559DC0:
 
 	# ROM: 0x4961A0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559DC8
 lbl_80559DC8:
 
 	# ROM: 0x4961A8
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559DD0
 lbl_80559DD0:
 
 	# ROM: 0x4961B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559DD8
 lbl_80559DD8:
@@ -13579,98 +13884,100 @@ lbl_80559DD8:
 lbl_80559DDC:
 
 	# ROM: 0x4961BC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559DE4
 lbl_80559DE4:
 
 	# ROM: 0x4961C4
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 	.4byte 0
 
 .global lbl_80559DF0
 lbl_80559DF0:
 
 	# ROM: 0x4961D0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559DF8
 lbl_80559DF8:
 
 	# ROM: 0x4961D8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559E00
 lbl_80559E00:
 
 	# ROM: 0x4961E0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559E08
 lbl_80559E08:
 
 	# ROM: 0x4961E8
-	.asciz "Noddy"
-	.balign 4
+	.4byte 0x4E6F6464
+	.4byte 0x79000000
 
 .global lbl_80559E10
 lbl_80559E10:
 
 	# ROM: 0x4961F0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559E18
 lbl_80559E18:
 
 	# ROM: 0x4961F8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559E20
 lbl_80559E20:
 
 	# ROM: 0x496200
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559E28
 lbl_80559E28:
 
 	# ROM: 0x496208
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559E30
 lbl_80559E30:
 
 	# ROM: 0x496210
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559E38
 lbl_80559E38:
 
 	# ROM: 0x496218
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559E40
 lbl_80559E40:
 
 	# ROM: 0x496220
-	.asciz "Nruff"
-	.balign 4
+	.4byte 0x4E727566
+	.4byte 0x66000000
 
 .global lbl_80559E48
 lbl_80559E48:
 
 	# ROM: 0x496228
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559E50
 lbl_80559E50:
@@ -13689,63 +13996,65 @@ lbl_80559E58:
 lbl_80559E5C:
 
 	# ROM: 0x49623C
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559E64
 lbl_80559E64:
 
 	# ROM: 0x496244
-	.asciz "Owgulf"
-	.balign 4
+	.4byte 0x4F776775
+	.4byte 0x6C660000
 	.4byte 0
 
 .global lbl_80559E70
 lbl_80559E70:
 
 	# ROM: 0x496250
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559E78
 lbl_80559E78:
 
 	# ROM: 0x496258
-	.asciz "BodyM"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4D000000
 
 .global lbl_80559E80
 lbl_80559E80:
 
 	# ROM: 0x496260
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559E88
 lbl_80559E88:
 
 	# ROM: 0x496268
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_80559E90
 lbl_80559E90:
 
 	# ROM: 0x496270
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559E98
 lbl_80559E98:
 
 	# ROM: 0x496278
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_80559EA0
 lbl_80559EA0:
 
 	# ROM: 0x496280
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559EA8
 lbl_80559EA8:
@@ -13758,61 +14067,64 @@ lbl_80559EA8:
 lbl_80559EB0:
 
 	# ROM: 0x496290
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559EB8
 lbl_80559EB8:
 
 	# ROM: 0x496298
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559EC0
 lbl_80559EC0:
 
 	# ROM: 0x4962A0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559EC8
 lbl_80559EC8:
 
 	# ROM: 0x4962A8
-	.asciz "MoveEnd"
+	.4byte 0x4D6F7665
+	.4byte 0x456E6400
 
 .global lbl_80559ED0
 lbl_80559ED0:
 
 	# ROM: 0x4962B0
-	.asciz "AttackL"
+	.4byte 0x41747461
+	.4byte 0x636B4C00
 
 .global lbl_80559ED8
 lbl_80559ED8:
 
 	# ROM: 0x4962B8
-	.asciz "AttackR"
+	.4byte 0x41747461
+	.4byte 0x636B5200
 
 .global lbl_80559EE0
 lbl_80559EE0:
 
 	# ROM: 0x4962C0
-	.asciz "Pierce"
-	.balign 4
+	.4byte 0x50696572
+	.4byte 0x63650000
 
 .global lbl_80559EE8
 lbl_80559EE8:
 
 	# ROM: 0x4962C8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559EF0
 lbl_80559EF0:
 
 	# ROM: 0x4962D0
-	.asciz "BomM"
-	.balign 4
+	.4byte 0x426F6D4D
+	.4byte 0
 
 .global lbl_80559EF8
 lbl_80559EF8:
@@ -13825,35 +14137,36 @@ lbl_80559EF8:
 lbl_80559F00:
 
 	# ROM: 0x4962E0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_80559F08
 lbl_80559F08:
 
 	# ROM: 0x4962E8
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559F10
 lbl_80559F10:
 
 	# ROM: 0x4962F0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559F18
 lbl_80559F18:
 
 	# ROM: 0x4962F8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559F20
 lbl_80559F20:
 
 	# ROM: 0x496300
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_80559F28
 lbl_80559F28:
@@ -14003,8 +14316,8 @@ lbl_80559F84:
 lbl_80559F88:
 
 	# ROM: 0x496368
-	.asciz "BomM"
-	.balign 4
+	.4byte 0x426F6D4D
+	.4byte 0
 
 .global lbl_80559F90
 lbl_80559F90:
@@ -14017,8 +14330,8 @@ lbl_80559F90:
 lbl_80559F98:
 
 	# ROM: 0x496378
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559FA0
 lbl_80559FA0:
@@ -14031,103 +14344,106 @@ lbl_80559FA0:
 lbl_80559FA8:
 
 	# ROM: 0x496388
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559FB0
 lbl_80559FB0:
 
 	# ROM: 0x496390
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_80559FB8
 lbl_80559FB8:
 
 	# ROM: 0x496398
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_80559FC0
 lbl_80559FC0:
 
 	# ROM: 0x4963A0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559FC8
 lbl_80559FC8:
 
 	# ROM: 0x4963A8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559FD0
 lbl_80559FD0:
 
 	# ROM: 0x4963B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_80559FD8
 lbl_80559FD8:
 
 	# ROM: 0x4963B8
-	.asciz "CA1HipJ"
+	.4byte 0x43413148
+	.4byte 0x69704A00
 
 .global lbl_80559FE0
 lbl_80559FE0:
 
 	# ROM: 0x4963C0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_80559FE8
 lbl_80559FE8:
 
 	# ROM: 0x4963C8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_80559FF0
 lbl_80559FF0:
 
 	# ROM: 0x4963D0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_80559FF8
 lbl_80559FF8:
 
 	# ROM: 0x4963D8
-	.asciz "MoveEnd"
+	.4byte 0x4D6F7665
+	.4byte 0x456E6400
 
 .global lbl_8055A000
 lbl_8055A000:
 
 	# ROM: 0x4963E0
-	.asciz "Stream"
-	.balign 4
+	.4byte 0x53747265
+	.4byte 0x616D0000
 
 .global lbl_8055A008
 lbl_8055A008:
 
 	# ROM: 0x4963E8
-	.asciz "Praise"
-	.balign 4
+	.4byte 0x50726169
+	.4byte 0x73650000
 
 .global lbl_8055A010
 lbl_8055A010:
 
 	# ROM: 0x4963F0
-	.asciz "Rocky"
-	.balign 4
+	.4byte 0x526F636B
+	.4byte 0x79000000
 
 .global lbl_8055A018
 lbl_8055A018:
 
 	# ROM: 0x4963F8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A020
 lbl_8055A020:
@@ -14140,22 +14456,22 @@ lbl_8055A020:
 lbl_8055A028:
 
 	# ROM: 0x496408
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A030
 lbl_8055A030:
 
 	# ROM: 0x496410
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A038
 lbl_8055A038:
 
 	# ROM: 0x496418
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A040
 lbl_8055A040:
@@ -14167,83 +14483,86 @@ lbl_8055A040:
 lbl_8055A044:
 
 	# ROM: 0x496424
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A04C
 lbl_8055A04C:
 
 	# ROM: 0x49642C
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055A058
 lbl_8055A058:
 
 	# ROM: 0x496438
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A060
 lbl_8055A060:
 
 	# ROM: 0x496440
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A068
 lbl_8055A068:
 
 	# ROM: 0x496448
-	.asciz "Sandbag"
+	.4byte 0x53616E64
+	.4byte 0x62616700
 
 .global lbl_8055A070
 lbl_8055A070:
 
 	# ROM: 0x496450
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A078
 lbl_8055A078:
 
 	# ROM: 0x496458
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A080
 lbl_8055A080:
 
 	# ROM: 0x496460
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A088
 lbl_8055A088:
 
 	# ROM: 0x496468
-	.asciz "Change"
-	.balign 4
+	.4byte 0x4368616E
+	.4byte 0x67650000
 
 .global lbl_8055A090
 lbl_8055A090:
 
 	# ROM: 0x496470
-	.asciz "Change2"
+	.4byte 0x4368616E
+	.4byte 0x67653200
 
 .global lbl_8055A098
 lbl_8055A098:
 
 	# ROM: 0x496478
-	.asciz "Scarfy"
-	.balign 4
+	.4byte 0x53636172
+	.4byte 0x66790000
 
 .global lbl_8055A0A0
 lbl_8055A0A0:
 
 	# ROM: 0x496480
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A0A8
 lbl_8055A0A8:
@@ -14255,112 +14574,114 @@ lbl_8055A0A8:
 lbl_8055A0AC:
 
 	# ROM: 0x49648C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A0B4
 lbl_8055A0B4:
 
 	# ROM: 0x496494
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A0BC
 lbl_8055A0BC:
 
 	# ROM: 0x49649C
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 	.4byte 0
 
 .global lbl_8055A0C8
 lbl_8055A0C8:
 
 	# ROM: 0x4964A8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A0D0
 lbl_8055A0D0:
 
 	# ROM: 0x4964B0
-	.asciz "BodyM"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4D000000
 
 .global lbl_8055A0D8
 lbl_8055A0D8:
 
 	# ROM: 0x4964B8
-	.asciz "ShellM"
-	.balign 4
+	.4byte 0x5368656C
+	.4byte 0x6C4D0000
 
 .global lbl_8055A0E0
 lbl_8055A0E0:
 
 	# ROM: 0x4964C0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A0E8
 lbl_8055A0E8:
 
 	# ROM: 0x4964C8
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A0F0
 lbl_8055A0F0:
 
 	# ROM: 0x4964D0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A0F8
 lbl_8055A0F8:
 
 	# ROM: 0x4964D8
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_8055A100
 lbl_8055A100:
 
 	# ROM: 0x4964E0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A108
 lbl_8055A108:
 
 	# ROM: 0x4964E8
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A110
 lbl_8055A110:
 
 	# ROM: 0x4964F0
-	.asciz "Dash"
-	.balign 4
+	.4byte 0x44617368
+	.4byte 0
 
 .global lbl_8055A118
 lbl_8055A118:
 
 	# ROM: 0x4964F8
-	.asciz "DashEnd"
+	.4byte 0x44617368
+	.4byte 0x456E6400
 
 .global lbl_8055A120
 lbl_8055A120:
 
 	# ROM: 0x496500
-	.asciz "Escape"
-	.balign 4
+	.4byte 0x45736361
+	.4byte 0x70650000
 
 .global lbl_8055A128
 lbl_8055A128:
 
 	# ROM: 0x496508
-	.asciz "Sheld"
-	.balign 4
+	.4byte 0x5368656C
+	.4byte 0x64000000
 
 .global lbl_8055A130
 lbl_8055A130:
@@ -14378,91 +14699,92 @@ lbl_8055A134:
 lbl_8055A138:
 
 	# ROM: 0x496518
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A140
 lbl_8055A140:
 
 	# ROM: 0x496520
-	.asciz "PtclL"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x4C000000
 
 .global lbl_8055A148
 lbl_8055A148:
 
 	# ROM: 0x496528
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A150
 lbl_8055A150:
 
 	# ROM: 0x496530
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A158
 lbl_8055A158:
 
 	# ROM: 0x496538
-	.asciz "Shotzo"
-	.balign 4
+	.4byte 0x53686F74
+	.4byte 0x7A6F0000
 
 .global lbl_8055A160
 lbl_8055A160:
 
 	# ROM: 0x496540
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A168
 lbl_8055A168:
 
 	# ROM: 0x496548
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A170
 lbl_8055A170:
 
 	# ROM: 0x496550
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A178
 lbl_8055A178:
 
 	# ROM: 0x496558
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A180
 lbl_8055A180:
 
 	# ROM: 0x496560
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055A188
 lbl_8055A188:
 
 	# ROM: 0x496568
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A190
 lbl_8055A190:
 
 	# ROM: 0x496570
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A198
 lbl_8055A198:
 
 	# ROM: 0x496578
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A1A0
 lbl_8055A1A0:
@@ -14475,42 +14797,43 @@ lbl_8055A1A0:
 lbl_8055A1A8:
 
 	# ROM: 0x496588
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A1B0
 lbl_8055A1B0:
 
 	# ROM: 0x496590
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A1B8
 lbl_8055A1B8:
 
 	# ROM: 0x496598
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A1C0
 lbl_8055A1C0:
 
 	# ROM: 0x4965A0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A1C8
 lbl_8055A1C8:
 
 	# ROM: 0x4965A8
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A1D0
 lbl_8055A1D0:
 
 	# ROM: 0x4965B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A1D8
 lbl_8055A1D8:
@@ -14522,181 +14845,184 @@ lbl_8055A1D8:
 lbl_8055A1DC:
 
 	# ROM: 0x4965BC
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A1E4
 lbl_8055A1E4:
 
 	# ROM: 0x4965C4
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_8055A1EC
 lbl_8055A1EC:
 
 	# ROM: 0x4965CC
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A1F4
 lbl_8055A1F4:
 
 	# ROM: 0x4965D4
-	.asciz "Snowl"
-	.balign 4
+	.4byte 0x536E6F77
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_8055A200
 lbl_8055A200:
 
 	# ROM: 0x4965E0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A208
 lbl_8055A208:
 
 	# ROM: 0x4965E8
-	.asciz "Rot1L"
-	.balign 4
+	.4byte 0x526F7431
+	.4byte 0x4C000000
 
 .global lbl_8055A210
 lbl_8055A210:
 
 	# ROM: 0x4965F0
-	.asciz "Rot2L"
-	.balign 4
+	.4byte 0x526F7432
+	.4byte 0x4C000000
 
 .global lbl_8055A218
 lbl_8055A218:
 
 	# ROM: 0x4965F8
-	.asciz "RotateL"
+	.4byte 0x526F7461
+	.4byte 0x74654C00
 
 .global lbl_8055A220
 lbl_8055A220:
 
 	# ROM: 0x496600
-	.asciz "EyeL"
-	.balign 4
+	.4byte 0x4579654C
+	.4byte 0
 
 .global lbl_8055A228
 lbl_8055A228:
 
 	# ROM: 0x496608
-	.asciz "Foot1J"
-	.balign 4
+	.4byte 0x466F6F74
+	.4byte 0x314A0000
 
 .global lbl_8055A230
 lbl_8055A230:
 
 	# ROM: 0x496610
-	.asciz "Foot2J"
-	.balign 4
+	.4byte 0x466F6F74
+	.4byte 0x324A0000
 
 .global lbl_8055A238
 lbl_8055A238:
 
 	# ROM: 0x496618
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A240
 lbl_8055A240:
 
 	# ROM: 0x496620
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A248
 lbl_8055A248:
 
 	# ROM: 0x496628
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A250
 lbl_8055A250:
 
 	# ROM: 0x496630
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_8055A258
 lbl_8055A258:
 
 	# ROM: 0x496638
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A260
 lbl_8055A260:
 
 	# ROM: 0x496640
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A268
 lbl_8055A268:
 
 	# ROM: 0x496648
-	.asciz "Sodory"
-	.balign 4
+	.4byte 0x536F646F
+	.4byte 0x72790000
 
 .global lbl_8055A270
 lbl_8055A270:
 
 	# ROM: 0x496650
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A278
 lbl_8055A278:
 
 	# ROM: 0x496658
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A280
 lbl_8055A280:
 
 	# ROM: 0x496660
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A288
 lbl_8055A288:
 
 	# ROM: 0x496668
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A290
 lbl_8055A290:
 
 	# ROM: 0x496670
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A298
 lbl_8055A298:
 
 	# ROM: 0x496678
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A2A0
 lbl_8055A2A0:
 
 	# ROM: 0x496680
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_8055A2A8
 lbl_8055A2A8:
 
 	# ROM: 0x496688
-	.asciz "Sparky"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B790000
 
 .global lbl_8055A2B0
 lbl_8055A2B0:
@@ -14709,8 +15035,8 @@ lbl_8055A2B0:
 lbl_8055A2B8:
 
 	# ROM: 0x496698
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A2C0
 lbl_8055A2C0:
@@ -14723,27 +15049,29 @@ lbl_8055A2C0:
 lbl_8055A2C8:
 
 	# ROM: 0x4966A8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A2D0
 lbl_8055A2D0:
 
 	# ROM: 0x4966B0
-	.asciz "EffectL"
+	.4byte 0x45666665
+	.4byte 0x63744C00
 
 .global lbl_8055A2D8
 lbl_8055A2D8:
 
 	# ROM: 0x4966B8
-	.asciz "RotateL"
+	.4byte 0x526F7461
+	.4byte 0x74654C00
 
 .global lbl_8055A2E0
 lbl_8055A2E0:
 
 	# ROM: 0x4966C0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A2E8
 lbl_8055A2E8:
@@ -14756,8 +15084,8 @@ lbl_8055A2E8:
 lbl_8055A2F0:
 
 	# ROM: 0x4966D0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A2F8
 lbl_8055A2F8:
@@ -14769,229 +15097,233 @@ lbl_8055A2F8:
 lbl_8055A2FC:
 
 	# ROM: 0x4966DC
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055A308
 lbl_8055A308:
 
 	# ROM: 0x4966E8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A310
 lbl_8055A310:
 
 	# ROM: 0x4966F0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A318
 lbl_8055A318:
 
 	# ROM: 0x4966F8
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A320
 lbl_8055A320:
 
 	# ROM: 0x496700
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A328
 lbl_8055A328:
 
 	# ROM: 0x496708
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055A330
 lbl_8055A330:
 
 	# ROM: 0x496710
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A338
 lbl_8055A338:
 
 	# ROM: 0x496718
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A340
 lbl_8055A340:
 
 	# ROM: 0x496720
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A348
 lbl_8055A348:
 
 	# ROM: 0x496728
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055A350
 lbl_8055A350:
 
 	# ROM: 0x496730
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A358
 lbl_8055A358:
 
 	# ROM: 0x496738
-	.asciz "Cheer1"
-	.balign 4
+	.4byte 0x43686565
+	.4byte 0x72310000
 
 .global lbl_8055A360
 lbl_8055A360:
 
 	# ROM: 0x496740
-	.asciz "Cheer2"
-	.balign 4
+	.4byte 0x43686565
+	.4byte 0x72320000
 
 .global lbl_8055A368
 lbl_8055A368:
 
 	# ROM: 0x496748
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A370
 lbl_8055A370:
 
 	# ROM: 0x496750
-	.asciz "LRide2"
-	.balign 4
+	.4byte 0x4C526964
+	.4byte 0x65320000
 
 .global lbl_8055A378
 lbl_8055A378:
 
 	# ROM: 0x496758
-	.asciz "RRide2"
-	.balign 4
+	.4byte 0x52526964
+	.4byte 0x65320000
 
 .global lbl_8055A380
 lbl_8055A380:
 
 	# ROM: 0x496760
-	.asciz "Pursuit"
+	.4byte 0x50757273
+	.4byte 0x75697400
 
 .global lbl_8055A388
 lbl_8055A388:
 
 	# ROM: 0x496768
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055A390
 lbl_8055A390:
 
 	# ROM: 0x496770
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055A398
 lbl_8055A398:
 
 	# ROM: 0x496778
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A3A0
 lbl_8055A3A0:
 
 	# ROM: 0x496780
-	.asciz "Beam1J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x314A0000
 
 .global lbl_8055A3A8
 lbl_8055A3A8:
 
 	# ROM: 0x496788
-	.asciz "Beam2J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x324A0000
 
 .global lbl_8055A3B0
 lbl_8055A3B0:
 
 	# ROM: 0x496790
-	.asciz "Beam3J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x334A0000
 
 .global lbl_8055A3B8
 lbl_8055A3B8:
 
 	# ROM: 0x496798
-	.asciz "Beam4J"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0x344A0000
 
 .global lbl_8055A3C0
 lbl_8055A3C0:
 
 	# ROM: 0x4967A0
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055A3C8
 lbl_8055A3C8:
 
 	# ROM: 0x4967A8
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_8055A3D0
 lbl_8055A3D0:
 
 	# ROM: 0x4967B0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055A3D8
 lbl_8055A3D8:
 
 	# ROM: 0x4967B8
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A3E0
 lbl_8055A3E0:
 
 	# ROM: 0x4967C0
-	.asciz "Move"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0
 
 .global lbl_8055A3E8
 lbl_8055A3E8:
 
 	# ROM: 0x4967C8
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055A3F0
 lbl_8055A3F0:
 
 	# ROM: 0x4967D0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A3F8
 lbl_8055A3F8:
 
 	# ROM: 0x4967D8
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A400
 lbl_8055A400:
 
 	# ROM: 0x4967E0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A408
 lbl_8055A408:
@@ -15003,140 +15335,142 @@ lbl_8055A408:
 lbl_8055A40C:
 
 	# ROM: 0x4967EC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A414
 lbl_8055A414:
 
 	# ROM: 0x4967F4
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055A420
 lbl_8055A420:
 
 	# ROM: 0x496800
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055A428
 lbl_8055A428:
 
 	# ROM: 0x496808
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A430
 lbl_8055A430:
 
 	# ROM: 0x496810
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A438
 lbl_8055A438:
 
 	# ROM: 0x496818
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A440
 lbl_8055A440:
 
 	# ROM: 0x496820
-	.asciz "PJointJ"
+	.4byte 0x504A6F69
+	.4byte 0x6E744A00
 
 .global lbl_8055A448
 lbl_8055A448:
 
 	# ROM: 0x496828
-	.asciz "TailJ8"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A380000
 
 .global lbl_8055A450
 lbl_8055A450:
 
 	# ROM: 0x496830
-	.asciz "TailJ7"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A370000
 
 .global lbl_8055A458
 lbl_8055A458:
 
 	# ROM: 0x496838
-	.asciz "TailJ6"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A360000
 
 .global lbl_8055A460
 lbl_8055A460:
 
 	# ROM: 0x496840
-	.asciz "TailJ5"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A350000
 
 .global lbl_8055A468
 lbl_8055A468:
 
 	# ROM: 0x496848
-	.asciz "TailJ4"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A340000
 
 .global lbl_8055A470
 lbl_8055A470:
 
 	# ROM: 0x496850
-	.asciz "TailJ3"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A330000
 
 .global lbl_8055A478
 lbl_8055A478:
 
 	# ROM: 0x496858
-	.asciz "TailJ2"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A320000
 
 .global lbl_8055A480
 lbl_8055A480:
 
 	# ROM: 0x496860
-	.asciz "TailJ1"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4A310000
 
 .global lbl_8055A488
 lbl_8055A488:
 
 	# ROM: 0x496868
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A490
 lbl_8055A490:
 
 	# ROM: 0x496870
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055A498
 lbl_8055A498:
 
 	# ROM: 0x496878
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055A4A0
 lbl_8055A4A0:
 
 	# ROM: 0x496880
-	.asciz "Whippy"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x70790000
 
 .global lbl_8055A4A8
 lbl_8055A4A8:
 
 	# ROM: 0x496888
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A4B0
 lbl_8055A4B0:
@@ -15148,30 +15482,30 @@ lbl_8055A4B0:
 lbl_8055A4B4:
 
 	# ROM: 0x496894
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A4BC
 lbl_8055A4BC:
 
 	# ROM: 0x49689C
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 	.4byte 0
 
 .global lbl_8055A4C8
 lbl_8055A4C8:
 
 	# ROM: 0x4968A8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A4D0
 lbl_8055A4D0:
 
 	# ROM: 0x4968B0
-	.asciz "ScaleL"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654C0000
 
 .global lbl_8055A4D8
 lbl_8055A4D8:
@@ -15184,22 +15518,22 @@ lbl_8055A4D8:
 lbl_8055A4E0:
 
 	# ROM: 0x4968C0
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055A4E8
 lbl_8055A4E8:
 
 	# ROM: 0x4968C8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A4F0
 lbl_8055A4F0:
 
 	# ROM: 0x4968D0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055A4F8
 lbl_8055A4F8:
@@ -15211,29 +15545,29 @@ lbl_8055A4F8:
 lbl_8055A4FC:
 
 	# ROM: 0x4968DC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A504
 lbl_8055A504:
 
 	# ROM: 0x4968E4
-	.asciz "ScaleL"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654C0000
 
 .global lbl_8055A50C
 lbl_8055A50C:
 
 	# ROM: 0x4968EC
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055A514
 lbl_8055A514:
 
 	# ROM: 0x4968F4
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055A520
@@ -15247,15 +15581,15 @@ lbl_8055A520:
 lbl_8055A528:
 
 	# ROM: 0x496908
-	.asciz "Right"
-	.balign 4
+	.4byte 0x52696768
+	.4byte 0x74000000
 
 .global lbl_8055A530
 lbl_8055A530:
 
 	# ROM: 0x496910
-	.asciz "Left"
-	.balign 4
+	.4byte 0x4C656674
+	.4byte 0
 
 .global lbl_8055A538
 lbl_8055A538:
@@ -15267,15 +15601,15 @@ lbl_8055A538:
 lbl_8055A53C:
 
 	# ROM: 0x49691C
-	.asciz "Down"
-	.balign 4
+	.4byte 0x446F776E
+	.4byte 0
 
 .global lbl_8055A544
 lbl_8055A544:
 
 	# ROM: 0x496924
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A54C
 lbl_8055A54C:
@@ -15287,21 +15621,22 @@ lbl_8055A54C:
 lbl_8055A550:
 
 	# ROM: 0x496930
-	.asciz "Crumble"
+	.4byte 0x4372756D
+	.4byte 0x626C6500
 
 .global lbl_8055A558
 lbl_8055A558:
 
 	# ROM: 0x496938
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A560
 lbl_8055A560:
 
 	# ROM: 0x496940
-	.asciz "Shake"
-	.balign 4
+	.4byte 0x5368616B
+	.4byte 0x65000000
 
 .global lbl_8055A568
 lbl_8055A568:
@@ -15319,8 +15654,8 @@ lbl_8055A56C:
 lbl_8055A570:
 
 	# ROM: 0x496950
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A578
 lbl_8055A578:
@@ -15333,57 +15668,64 @@ lbl_8055A578:
 lbl_8055A580:
 
 	# ROM: 0x496960
-	.asciz "TopL2x2"
+	.4byte 0x546F704C
+	.4byte 0x32783200
 
 .global lbl_8055A588
 lbl_8055A588:
 
 	# ROM: 0x496968
-	.asciz "TopL1x1"
+	.4byte 0x546F704C
+	.4byte 0x31783100
 
 .global lbl_8055A590
 lbl_8055A590:
 
 	# ROM: 0x496970
-	.asciz "TopL3x3"
+	.4byte 0x546F704C
+	.4byte 0x33783300
 
 .global lbl_8055A598
 lbl_8055A598:
 
 	# ROM: 0x496978
-	.asciz "TopL4x4"
+	.4byte 0x546F704C
+	.4byte 0x34783400
 
 .global lbl_8055A5A0
 lbl_8055A5A0:
 
 	# ROM: 0x496980
-	.asciz "TopL1x3"
+	.4byte 0x546F704C
+	.4byte 0x31783300
 
 .global lbl_8055A5A8
 lbl_8055A5A8:
 
 	# ROM: 0x496988
-	.asciz "TopL3x1"
+	.4byte 0x546F704C
+	.4byte 0x33783100
 
 .global lbl_8055A5B0
 lbl_8055A5B0:
 
 	# ROM: 0x496990
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A5B8
 lbl_8055A5B8:
 
 	# ROM: 0x496998
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055A5C0
 lbl_8055A5C0:
 
 	# ROM: 0x4969A0
-	.asciz "EffectL"
+	.4byte 0x45666665
+	.4byte 0x63744C00
 
 .global lbl_8055A5C8
 lbl_8055A5C8:
@@ -15395,36 +15737,37 @@ lbl_8055A5C8:
 lbl_8055A5CC:
 
 	# ROM: 0x4969AC
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_8055A5D4
 lbl_8055A5D4:
 
 	# ROM: 0x4969B4
-	.asciz "Copper"
-	.balign 4
+	.4byte 0x436F7070
+	.4byte 0x65720000
 
 .global lbl_8055A5DC
 lbl_8055A5DC:
 
 	# ROM: 0x4969BC
-	.asciz "Silver"
-	.balign 4
+	.4byte 0x53696C76
+	.4byte 0x65720000
 	.4byte 0
 
 .global lbl_8055A5E8
 lbl_8055A5E8:
 
 	# ROM: 0x4969C8
-	.asciz "GoldGet"
+	.4byte 0x476F6C64
+	.4byte 0x47657400
 
 .global lbl_8055A5F0
 lbl_8055A5F0:
 
 	# ROM: 0x4969D0
-	.asciz "Gold"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0
 
 .global lbl_8055A5F8
 lbl_8055A5F8:
@@ -15436,36 +15779,36 @@ lbl_8055A5F8:
 lbl_8055A5FC:
 
 	# ROM: 0x4969DC
-	.asciz "Lock4L"
-	.balign 4
+	.4byte 0x4C6F636B
+	.4byte 0x344C0000
 
 .global lbl_8055A604
 lbl_8055A604:
 
 	# ROM: 0x4969E4
-	.asciz "Lock5L"
-	.balign 4
+	.4byte 0x4C6F636B
+	.4byte 0x354C0000
 
 .global lbl_8055A60C
 lbl_8055A60C:
 
 	# ROM: 0x4969EC
-	.asciz "Lock1L"
-	.balign 4
+	.4byte 0x4C6F636B
+	.4byte 0x314C0000
 
 .global lbl_8055A614
 lbl_8055A614:
 
 	# ROM: 0x4969F4
-	.asciz "Lock2L"
-	.balign 4
+	.4byte 0x4C6F636B
+	.4byte 0x324C0000
 
 .global lbl_8055A61C
 lbl_8055A61C:
 
 	# ROM: 0x4969FC
-	.asciz "Lock3L"
-	.balign 4
+	.4byte 0x4C6F636B
+	.4byte 0x334C0000
 	.4byte 0
 
 .global lbl_8055A628
@@ -15479,19 +15822,22 @@ lbl_8055A628:
 lbl_8055A630:
 
 	# ROM: 0x496A10
-	.asciz "AnimL52"
+	.4byte 0x416E696D
+	.4byte 0x4C353200
 
 .global lbl_8055A638
 lbl_8055A638:
 
 	# ROM: 0x496A18
-	.asciz "AnimL50"
+	.4byte 0x416E696D
+	.4byte 0x4C353000
 
 .global lbl_8055A640
 lbl_8055A640:
 
 	# ROM: 0x496A20
-	.asciz "AnimL51"
+	.4byte 0x416E696D
+	.4byte 0x4C353100
 
 .global lbl_8055A648
 lbl_8055A648:
@@ -15511,19 +15857,22 @@ lbl_8055A650:
 lbl_8055A658:
 
 	# ROM: 0x496A38
-	.asciz "AnimL52"
+	.4byte 0x416E696D
+	.4byte 0x4C353200
 
 .global lbl_8055A660
 lbl_8055A660:
 
 	# ROM: 0x496A40
-	.asciz "AnimL50"
+	.4byte 0x416E696D
+	.4byte 0x4C353000
 
 .global lbl_8055A668
 lbl_8055A668:
 
 	# ROM: 0x496A48
-	.asciz "AnimL51"
+	.4byte 0x416E696D
+	.4byte 0x4C353100
 
 .global lbl_8055A670
 lbl_8055A670:
@@ -15543,8 +15892,8 @@ lbl_8055A678:
 lbl_8055A680:
 
 	# ROM: 0x496A60
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A688
 lbl_8055A688:
@@ -15557,251 +15906,253 @@ lbl_8055A688:
 lbl_8055A690:
 
 	# ROM: 0x496A70
-	.asciz "Destroy"
+	.4byte 0x44657374
+	.4byte 0x726F7900
 
 .global lbl_8055A698
 lbl_8055A698:
 
 	# ROM: 0x496A78
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055A6A0
 lbl_8055A6A0:
 
 	# ROM: 0x496A80
-	.asciz "TopL1"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x31000000
 
 .global lbl_8055A6A8
 lbl_8055A6A8:
 
 	# ROM: 0x496A88
-	.asciz "TopL2"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x32000000
 
 .global lbl_8055A6B0
 lbl_8055A6B0:
 
 	# ROM: 0x496A90
-	.asciz "Wait1"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31000000
 
 .global lbl_8055A6B8
 lbl_8055A6B8:
 
 	# ROM: 0x496A98
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055A6C0
 lbl_8055A6C0:
 
 	# ROM: 0x496AA0
-	.asciz "Crush1"
-	.balign 4
+	.4byte 0x43727573
+	.4byte 0x68310000
 
 .global lbl_8055A6C8
 lbl_8055A6C8:
 
 	# ROM: 0x496AA8
-	.asciz "Crush2"
-	.balign 4
+	.4byte 0x43727573
+	.4byte 0x68320000
 
 .global lbl_8055A6D0
 lbl_8055A6D0:
 
 	# ROM: 0x496AB0
-	.asciz "TopL1"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x31000000
 
 .global lbl_8055A6D8
 lbl_8055A6D8:
 
 	# ROM: 0x496AB8
-	.asciz "TopL2"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x32000000
 
 .global lbl_8055A6E0
 lbl_8055A6E0:
 
 	# ROM: 0x496AC0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A6E8
 lbl_8055A6E8:
 
 	# ROM: 0x496AC8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A6F0
 lbl_8055A6F0:
 
 	# ROM: 0x496AD0
-	.asciz "Door"
-	.balign 4
+	.4byte 0x446F6F72
+	.4byte 0
 
 .global lbl_8055A6F8
 lbl_8055A6F8:
 
 	# ROM: 0x496AD8
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055A700
 lbl_8055A700:
 
 	# ROM: 0x496AE0
-	.asciz "Goal"
-	.balign 4
+	.4byte 0x476F616C
+	.4byte 0
 
 .global lbl_8055A708
 lbl_8055A708:
 
 	# ROM: 0x496AE8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A710
 lbl_8055A710:
 
 	# ROM: 0x496AF0
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055A718
 lbl_8055A718:
 
 	# ROM: 0x496AF8
-	.asciz "GTopL"
-	.balign 4
+	.4byte 0x47546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A720
 lbl_8055A720:
 
 	# ROM: 0x496B00
-	.asciz "GWait1"
-	.balign 4
+	.4byte 0x47576169
+	.4byte 0x74310000
 
 .global lbl_8055A728
 lbl_8055A728:
 
 	# ROM: 0x496B08
-	.asciz "BTopL"
-	.balign 4
+	.4byte 0x42546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A730
 lbl_8055A730:
 
 	# ROM: 0x496B10
-	.asciz "BWait1"
-	.balign 4
+	.4byte 0x42576169
+	.4byte 0x74310000
 
 .global lbl_8055A738
 lbl_8055A738:
 
 	# ROM: 0x496B18
-	.asciz "BWait2"
-	.balign 4
+	.4byte 0x42576169
+	.4byte 0x74320000
 
 .global lbl_8055A740
 lbl_8055A740:
 
 	# ROM: 0x496B20
-	.asciz "DTopL"
-	.balign 4
+	.4byte 0x44546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A748
 lbl_8055A748:
 
 	# ROM: 0x496B28
-	.asciz "DWait1"
-	.balign 4
+	.4byte 0x44576169
+	.4byte 0x74310000
 
 .global lbl_8055A750
 lbl_8055A750:
 
 	# ROM: 0x496B30
-	.asciz "CTopL"
-	.balign 4
+	.4byte 0x43546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A758
 lbl_8055A758:
 
 	# ROM: 0x496B38
-	.asciz "CWait1"
-	.balign 4
+	.4byte 0x43576169
+	.4byte 0x74310000
 
 .global lbl_8055A760
 lbl_8055A760:
 
 	# ROM: 0x496B40
-	.asciz "FTopL"
-	.balign 4
+	.4byte 0x46546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A768
 lbl_8055A768:
 
 	# ROM: 0x496B48
-	.asciz "FWait1"
-	.balign 4
+	.4byte 0x46576169
+	.4byte 0x74310000
 
 .global lbl_8055A770
 lbl_8055A770:
 
 	# ROM: 0x496B50
-	.asciz "ETopL"
-	.balign 4
+	.4byte 0x45546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A778
 lbl_8055A778:
 
 	# ROM: 0x496B58
-	.asciz "EWait2"
-	.balign 4
+	.4byte 0x45576169
+	.4byte 0x74320000
 
 .global lbl_8055A780
 lbl_8055A780:
 
 	# ROM: 0x496B60
-	.asciz "EWait1"
-	.balign 4
+	.4byte 0x45576169
+	.4byte 0x74310000
 
 .global lbl_8055A788
 lbl_8055A788:
 
 	# ROM: 0x496B68
-	.asciz "ATopL"
-	.balign 4
+	.4byte 0x41546F70
+	.4byte 0x4C000000
 
 .global lbl_8055A790
 lbl_8055A790:
 
 	# ROM: 0x496B70
-	.asciz "AWait1"
-	.balign 4
+	.4byte 0x41576169
+	.4byte 0x74310000
 
 .global lbl_8055A798
 lbl_8055A798:
 
 	# ROM: 0x496B78
-	.asciz "AWait2"
-	.balign 4
+	.4byte 0x41576169
+	.4byte 0x74320000
 
 .global lbl_8055A7A0
 lbl_8055A7A0:
 
 	# ROM: 0x496B80
-	.asciz "EffectL"
+	.4byte 0x45666665
+	.4byte 0x63744C00
 
 .global lbl_8055A7A8
 lbl_8055A7A8:
 
 	# ROM: 0x496B88
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A7B0
 lbl_8055A7B0:
@@ -15813,99 +16164,100 @@ lbl_8055A7B0:
 lbl_8055A7B4:
 
 	# ROM: 0x496B94
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A7BC
 lbl_8055A7BC:
 
 	# ROM: 0x496B9C
-	.asciz "Talk1"
-	.balign 4
+	.4byte 0x54616C6B
+	.4byte 0x31000000
 
 .global lbl_8055A7C4
 lbl_8055A7C4:
 
 	# ROM: 0x496BA4
-	.asciz "Glad"
-	.balign 4
+	.4byte 0x476C6164
+	.4byte 0
 
 .global lbl_8055A7CC
 lbl_8055A7CC:
 
 	# ROM: 0x496BAC
-	.asciz "TalkGo"
-	.balign 4
+	.4byte 0x54616C6B
+	.4byte 0x476F0000
 
 .global lbl_8055A7D4
 lbl_8055A7D4:
 
 	# ROM: 0x496BB4
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055A7DC
 lbl_8055A7DC:
 
 	# ROM: 0x496BBC
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055A7E4
 lbl_8055A7E4:
 
 	# ROM: 0x496BC4
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_8055A7EC
 lbl_8055A7EC:
 
 	# ROM: 0x496BCC
-	.asciz "Wait6"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x36000000
 
 .global lbl_8055A7F4
 lbl_8055A7F4:
 
 	# ROM: 0x496BD4
-	.asciz "Wait7"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x37000000
 
 .global lbl_8055A7FC
 lbl_8055A7FC:
 
 	# ROM: 0x496BDC
-	.asciz "Wait8"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x38000000
 
 .global lbl_8055A804
 lbl_8055A804:
 
 	# ROM: 0x496BE4
-	.asciz "Wait9"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x39000000
 
 .global lbl_8055A80C
 lbl_8055A80C:
 
 	# ROM: 0x496BEC
-	.asciz "Wait10"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31300000
 
 .global lbl_8055A814
 lbl_8055A814:
 
 	# ROM: 0x496BF4
-	.asciz "Wait11"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x31310000
 	.4byte 0
 
 .global lbl_8055A820
 lbl_8055A820:
 
 	# ROM: 0x496C00
-	.asciz "Mahoroa"
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
 
 .global lbl_8055A828
 lbl_8055A828:
@@ -15942,29 +16294,29 @@ lbl_8055A838:
 lbl_8055A840:
 
 	# ROM: 0x496C20
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A848
 lbl_8055A848:
 
 	# ROM: 0x496C28
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055A850
 lbl_8055A850:
 
 	# ROM: 0x496C30
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A858
 lbl_8055A858:
 
 	# ROM: 0x496C38
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A860
 lbl_8055A860:
@@ -15977,60 +16329,64 @@ lbl_8055A860:
 lbl_8055A868:
 
 	# ROM: 0x496C48
-	.asciz "Mahoroa"
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
 
 .global lbl_8055A870
 lbl_8055A870:
 
 	# ROM: 0x496C50
-	.asciz "Kirby"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79000000
 
 .global lbl_8055A878
 lbl_8055A878:
 
 	# ROM: 0x496C58
-	.asciz "Monitor"
+	.4byte 0x4D6F6E69
+	.4byte 0x746F7200
 
 .global lbl_8055A880
 lbl_8055A880:
 
 	# ROM: 0x496C60
-	.asciz "Camera"
-	.balign 4
+	.4byte 0x43616D65
+	.4byte 0x72610000
 
 .global lbl_8055A888
 lbl_8055A888:
 
 	# ROM: 0x496C68
-	.asciz "Suspend"
+	.4byte 0x53757370
+	.4byte 0x656E6400
 
 .global lbl_8055A890
 lbl_8055A890:
 
 	# ROM: 0x496C70
-	.asciz "Message"
+	.4byte 0x4D657373
+	.4byte 0x61676500
 
 .global lbl_8055A898
 lbl_8055A898:
 
 	# ROM: 0x496C78
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A8A0
 lbl_8055A8A0:
 
 	# ROM: 0x496C80
-	.asciz "Talk"
-	.balign 4
+	.4byte 0x54616C6B
+	.4byte 0
 
 .global lbl_8055A8A8
 lbl_8055A8A8:
 
 	# ROM: 0x496C88
-	.asciz "Happy"
-	.balign 4
+	.4byte 0x48617070
+	.4byte 0x79000000
 
 .global lbl_8055A8B0
 lbl_8055A8B0:
@@ -16043,48 +16399,50 @@ lbl_8055A8B0:
 lbl_8055A8B8:
 
 	# ROM: 0x496C98
-	.asciz "Chuckle"
+	.4byte 0x43687563
+	.4byte 0x6B6C6500
 
 .global lbl_8055A8C0
 lbl_8055A8C0:
 
 	# ROM: 0x496CA0
-	.asciz "LetsGo"
-	.balign 4
+	.4byte 0x4C657473
+	.4byte 0x476F0000
 
 .global lbl_8055A8C8
 lbl_8055A8C8:
 
 	# ROM: 0x496CA8
-	.asciz "Show"
-	.balign 4
+	.4byte 0x53686F77
+	.4byte 0
 
 .global lbl_8055A8D0
 lbl_8055A8D0:
 
 	# ROM: 0x496CB0
-	.asciz "FadeOut"
+	.4byte 0x46616465
+	.4byte 0x4F757400
 
 .global lbl_8055A8D8
 lbl_8055A8D8:
 
 	# ROM: 0x496CB8
-	.asciz "FadeIn"
-	.balign 4
+	.4byte 0x46616465
+	.4byte 0x496E0000
 
 .global lbl_8055A8E0
 lbl_8055A8E0:
 
 	# ROM: 0x496CC0
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_8055A8E8
 lbl_8055A8E8:
 
 	# ROM: 0x496CC8
-	.asciz "Auto"
-	.balign 4
+	.4byte 0x4175746F
+	.4byte 0
 
 .global lbl_8055A8F0
 lbl_8055A8F0:
@@ -16096,106 +16454,107 @@ lbl_8055A8F0:
 lbl_8055A8F4:
 
 	# ROM: 0x496CD4
-	.asciz "Right"
-	.balign 4
+	.4byte 0x52696768
+	.4byte 0x74000000
 
 .global lbl_8055A8FC
 lbl_8055A8FC:
 
 	# ROM: 0x496CDC
-	.asciz "Left"
-	.balign 4
+	.4byte 0x4C656674
+	.4byte 0
 
 .global lbl_8055A904
 lbl_8055A904:
 
 	# ROM: 0x496CE4
-	.asciz "Under"
-	.balign 4
+	.4byte 0x556E6465
+	.4byte 0x72000000
 
 .global lbl_8055A90C
 lbl_8055A90C:
 
 	# ROM: 0x496CEC
-	.asciz "%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0
 
 .global lbl_8055A914
 lbl_8055A914:
 
 	# ROM: 0x496CF4
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A91C
 lbl_8055A91C:
 
 	# ROM: 0x496CFC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A924
 lbl_8055A924:
 
 	# ROM: 0x496D04
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_8055A92C
 lbl_8055A92C:
 
 	# ROM: 0x496D0C
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 	.4byte 0
 
 .global lbl_8055A938
 lbl_8055A938:
 
 	# ROM: 0x496D18
-	.asciz "EffectL"
+	.4byte 0x45666665
+	.4byte 0x63744C00
 
 .global lbl_8055A940
 lbl_8055A940:
 
 	# ROM: 0x496D20
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A948
 lbl_8055A948:
 
 	# ROM: 0x496D28
-	.asciz "%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0
 
 .global lbl_8055A950
 lbl_8055A950:
 
 	# ROM: 0x496D30
-	.asciz "%s%s%s"
-	.balign 4
+	.4byte 0x25732573
+	.4byte 0x25730000
 
 .global lbl_8055A958
 lbl_8055A958:
 
 	# ROM: 0x496D38
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A960
 lbl_8055A960:
 
 	# ROM: 0x496D40
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055A968
 lbl_8055A968:
 
 	# ROM: 0x496D48
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_8055A970
 lbl_8055A970:
@@ -16208,113 +16567,113 @@ lbl_8055A970:
 lbl_8055A978:
 
 	# ROM: 0x496D58
-	.asciz "Once"
-	.balign 4
+	.4byte 0x4F6E6365
+	.4byte 0
 
 .global lbl_8055A980
 lbl_8055A980:
 
 	# ROM: 0x496D60
-	.asciz "Return"
-	.balign 4
+	.4byte 0x52657475
+	.4byte 0x726E0000
 
 .global lbl_8055A988
 lbl_8055A988:
 
 	# ROM: 0x496D68
-	.asciz "Toggle"
-	.balign 4
+	.4byte 0x546F6767
+	.4byte 0x6C650000
 
 .global lbl_8055A990
 lbl_8055A990:
 
 	# ROM: 0x496D70
-	.asciz "Start1"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74310000
 
 .global lbl_8055A998
 lbl_8055A998:
 
 	# ROM: 0x496D78
-	.asciz "Start2"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74320000
 
 .global lbl_8055A9A0
 lbl_8055A9A0:
 
 	# ROM: 0x496D80
-	.asciz "Start3"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74330000
 
 .global lbl_8055A9A8
 lbl_8055A9A8:
 
 	# ROM: 0x496D88
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A9B0
 lbl_8055A9B0:
 
 	# ROM: 0x496D90
-	.asciz "TopL1"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x31000000
 
 .global lbl_8055A9B8
 lbl_8055A9B8:
 
 	# ROM: 0x496D98
-	.asciz "TopL2"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x32000000
 
 .global lbl_8055A9C0
 lbl_8055A9C0:
 
 	# ROM: 0x496DA0
-	.asciz "TopL3"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0x33000000
 
 .global lbl_8055A9C8
 lbl_8055A9C8:
 
 	# ROM: 0x496DA8
-	.asciz "AnimL"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x4C000000
 
 .global lbl_8055A9D0
 lbl_8055A9D0:
 
 	# ROM: 0x496DB0
-	.asciz "Move1"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x31000000
 
 .global lbl_8055A9D8
 lbl_8055A9D8:
 
 	# ROM: 0x496DB8
-	.asciz "Move2"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x32000000
 
 .global lbl_8055A9E0
 lbl_8055A9E0:
 
 	# ROM: 0x496DC0
-	.asciz "Move3"
-	.balign 4
+	.4byte 0x4D6F7665
+	.4byte 0x33000000
 
 .global lbl_8055A9E8
 lbl_8055A9E8:
 
 	# ROM: 0x496DC8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055A9F0
 lbl_8055A9F0:
 
 	# ROM: 0x496DD0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055A9F8
 lbl_8055A9F8:
@@ -16333,7 +16692,8 @@ lbl_8055A9F9:
 lbl_8055AA00:
 
 	# ROM: 0x496DE0
-	.asciz "Hero"
+	.4byte 0x4865726F
+	.byte 0x00
 
 .global lbl_8055AA05
 lbl_8055AA05:
@@ -16345,14 +16705,15 @@ lbl_8055AA05:
 lbl_8055AA08:
 
 	# ROM: 0x496DE8
-	.asciz "GoggleM"
+	.4byte 0x476F6767
+	.4byte 0x6C654D00
 
 .global lbl_8055AA10
 lbl_8055AA10:
 
 	# ROM: 0x496DF0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055AA18
 lbl_8055AA18:
@@ -16412,107 +16773,113 @@ lbl_8055AA48:
 lbl_8055AA50:
 
 	# ROM: 0x496E30
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055AA58
 lbl_8055AA58:
 
 	# ROM: 0x496E38
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055AA60
 lbl_8055AA60:
 
 	# ROM: 0x496E40
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055AA68
 lbl_8055AA68:
 
 	# ROM: 0x496E48
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_8055AA70
 lbl_8055AA70:
 
 	# ROM: 0x496E50
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_8055AA78
 lbl_8055AA78:
 
 	# ROM: 0x496E58
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055AA80
 lbl_8055AA80:
 
 	# ROM: 0x496E60
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055AA88
 lbl_8055AA88:
 
 	# ROM: 0x496E68
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055AA90
 lbl_8055AA90:
 
 	# ROM: 0x496E70
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_8055AA98
 lbl_8055AA98:
 
 	# ROM: 0x496E78
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055AAA0
 lbl_8055AAA0:
 
 	# ROM: 0x496E80
-	.asciz "Squat"
-	.balign 4
+	.4byte 0x53717561
+	.4byte 0x74000000
 
 .global lbl_8055AAA8
 lbl_8055AAA8:
 
 	# ROM: 0x496E88
-	.asciz "Sliding"
+	.4byte 0x536C6964
+	.4byte 0x696E6700
 
 .global lbl_8055AAB0
 lbl_8055AAB0:
 
 	# ROM: 0x496E90
-	.asciz "Flight"
-	.balign 4
+	.4byte 0x466C6967
+	.4byte 0x68740000
 
 .global lbl_8055AAB8
 lbl_8055AAB8:
 
 	# ROM: 0x496E98
-	.asciz "AirBall"
+	.4byte 0x41697242
+	.4byte 0x616C6C00
 
 .global lbl_8055AAC0
 lbl_8055AAC0:
 
 	# ROM: 0x496EA0
-	.asciz "DamageL"
+	.4byte 0x44616D61
+	.4byte 0x67654C00
 
 .global lbl_8055AAC8
 lbl_8055AAC8:
 
 	# ROM: 0x496EA8
-	.asciz "LaderUp"
+	.4byte 0x4C616465
+	.4byte 0x72557000
 
 .global lbl_8055AAD0
 lbl_8055AAD0:
@@ -16524,15 +16891,15 @@ lbl_8055AAD0:
 lbl_8055AAD4:
 
 	# ROM: 0x496EB4
-	.asciz "Guard"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x64000000
 
 .global lbl_8055AADC
 lbl_8055AADC:
 
 	# ROM: 0x496EBC
-	.asciz "Throw"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x77000000
 
 .global lbl_8055AAE4
 lbl_8055AAE4:
@@ -16544,308 +16911,330 @@ lbl_8055AAE4:
 lbl_8055AAE8:
 
 	# ROM: 0x496EC8
-	.asciz "DanceK1"
+	.4byte 0x44616E63
+	.4byte 0x654B3100
 
 .global lbl_8055AAF0
 lbl_8055AAF0:
 
 	# ROM: 0x496ED0
-	.asciz "DanceK2"
+	.4byte 0x44616E63
+	.4byte 0x654B3200
 
 .global lbl_8055AAF8
 lbl_8055AAF8:
 
 	# ROM: 0x496ED8
-	.asciz "DanceK3"
+	.4byte 0x44616E63
+	.4byte 0x654B3300
 
 .global lbl_8055AB00
 lbl_8055AB00:
 
 	# ROM: 0x496EE0
-	.asciz "DanceKE"
+	.4byte 0x44616E63
+	.4byte 0x654B4500
 
 .global lbl_8055AB08
 lbl_8055AB08:
 
 	# ROM: 0x496EE8
-	.asciz "DanceA1"
+	.4byte 0x44616E63
+	.4byte 0x65413100
 
 .global lbl_8055AB10
 lbl_8055AB10:
 
 	# ROM: 0x496EF0
-	.asciz "DanceA2"
+	.4byte 0x44616E63
+	.4byte 0x65413200
 
 .global lbl_8055AB18
 lbl_8055AB18:
 
 	# ROM: 0x496EF8
-	.asciz "DanceA3"
+	.4byte 0x44616E63
+	.4byte 0x65413300
 
 .global lbl_8055AB20
 lbl_8055AB20:
 
 	# ROM: 0x496F00
-	.asciz "DanceAE"
+	.4byte 0x44616E63
+	.4byte 0x65414500
 
 .global lbl_8055AB28
 lbl_8055AB28:
 
 	# ROM: 0x496F08
-	.asciz "DanceT1"
+	.4byte 0x44616E63
+	.4byte 0x65543100
 
 .global lbl_8055AB30
 lbl_8055AB30:
 
 	# ROM: 0x496F10
-	.asciz "DanceT2"
+	.4byte 0x44616E63
+	.4byte 0x65543200
 
 .global lbl_8055AB38
 lbl_8055AB38:
 
 	# ROM: 0x496F18
-	.asciz "DanceT3"
+	.4byte 0x44616E63
+	.4byte 0x65543300
 
 .global lbl_8055AB40
 lbl_8055AB40:
 
 	# ROM: 0x496F20
-	.asciz "DanceTE"
+	.4byte 0x44616E63
+	.4byte 0x65544500
 
 .global lbl_8055AB48
 lbl_8055AB48:
 
 	# ROM: 0x496F28
-	.asciz "Faint"
-	.balign 4
+	.4byte 0x4661696E
+	.4byte 0x74000000
 
 .global lbl_8055AB50
 lbl_8055AB50:
 
 	# ROM: 0x496F30
-	.asciz "WakeUp"
-	.balign 4
+	.4byte 0x57616B65
+	.4byte 0x55700000
 
 .global lbl_8055AB58
 lbl_8055AB58:
 
 	# ROM: 0x496F38
-	.asciz "Swim"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0
 
 .global lbl_8055AB60
 lbl_8055AB60:
 
 	# ROM: 0x496F40
-	.asciz "Stroke"
-	.balign 4
+	.4byte 0x5374726F
+	.4byte 0x6B650000
 
 .global lbl_8055AB68
 lbl_8055AB68:
 
 	# ROM: 0x496F48
-	.asciz "ItemGet"
+	.4byte 0x4974656D
+	.4byte 0x47657400
 
 .global lbl_8055AB70
 lbl_8055AB70:
 
 	# ROM: 0x496F50
-	.asciz "Dangle"
-	.balign 4
+	.4byte 0x44616E67
+	.4byte 0x6C650000
 
 .global lbl_8055AB78
 lbl_8055AB78:
 
 	# ROM: 0x496F58
-	.asciz "Door"
-	.balign 4
+	.4byte 0x446F6F72
+	.4byte 0
 
 .global lbl_8055AB80
 lbl_8055AB80:
 
 	# ROM: 0x496F60
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055AB88
 lbl_8055AB88:
 
 	# ROM: 0x496F68
-	.asciz "LookUp"
-	.balign 4
+	.4byte 0x4C6F6F6B
+	.4byte 0x55700000
 
 .global lbl_8055AB90
 lbl_8055AB90:
 
 	# ROM: 0x496F70
-	.asciz "WonderR"
+	.4byte 0x576F6E64
+	.4byte 0x65725200
 
 .global lbl_8055AB98
 lbl_8055AB98:
 
 	# ROM: 0x496F78
-	.asciz "WonderL"
+	.4byte 0x576F6E64
+	.4byte 0x65724C00
 
 .global lbl_8055ABA0
 lbl_8055ABA0:
 
 	# ROM: 0x496F80
-	.asciz "Tumble"
-	.balign 4
+	.4byte 0x54756D62
+	.4byte 0x6C650000
 
 .global lbl_8055ABA8
 lbl_8055ABA8:
 
 	# ROM: 0x496F88
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055ABB0
 lbl_8055ABB0:
 
 	# ROM: 0x496F90
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055ABB8
 lbl_8055ABB8:
 
 	# ROM: 0x496F98
-	.asciz "LA2ArmJ"
+	.4byte 0x4C413241
+	.4byte 0x726D4A00
 
 .global lbl_8055ABC0
 lbl_8055ABC0:
 
 	# ROM: 0x496FA0
-	.asciz "RA2ArmJ"
+	.4byte 0x52413241
+	.4byte 0x726D4A00
 
 .global lbl_8055ABC8
 lbl_8055ABC8:
 
 	# ROM: 0x496FA8
-	.asciz "CA1HipJ"
+	.4byte 0x43413148
+	.4byte 0x69704A00
 
 .global lbl_8055ABD0
 lbl_8055ABD0:
 
 	# ROM: 0x496FB0
-	.asciz "LHandH"
-	.balign 4
+	.4byte 0x4C48616E
+	.4byte 0x64480000
 
 .global lbl_8055ABD8
 lbl_8055ABD8:
 
 	# ROM: 0x496FB8
-	.asciz "LoadL"
-	.balign 4
+	.4byte 0x4C6F6164
+	.4byte 0x4C000000
 
 .global lbl_8055ABE0
 lbl_8055ABE0:
 
 	# ROM: 0x496FC0
-	.asciz "HammerM"
+	.4byte 0x48616D6D
+	.4byte 0x65724D00
 
 .global lbl_8055ABE8
 lbl_8055ABE8:
 
 	# ROM: 0x496FC8
-	.asciz "BodyM"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4D000000
 
 .global lbl_8055ABF0
 lbl_8055ABF0:
 
 	# ROM: 0x496FD0
-	.asciz "Dedede"
-	.balign 4
+	.4byte 0x44656465
+	.4byte 0x64650000
 
 .global lbl_8055ABF8
 lbl_8055ABF8:
 
 	# ROM: 0x496FD8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055AC00
 lbl_8055AC00:
 
 	# ROM: 0x496FE0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055AC08
 lbl_8055AC08:
 
 	# ROM: 0x496FE8
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055AC10
 lbl_8055AC10:
 
 	# ROM: 0x496FF0
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_8055AC18
 lbl_8055AC18:
 
 	# ROM: 0x496FF8
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_8055AC20
 lbl_8055AC20:
 
 	# ROM: 0x497000
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055AC28
 lbl_8055AC28:
 
 	# ROM: 0x497008
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055AC30
 lbl_8055AC30:
 
 	# ROM: 0x497010
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055AC38
 lbl_8055AC38:
 
 	# ROM: 0x497018
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_8055AC40
 lbl_8055AC40:
 
 	# ROM: 0x497020
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055AC48
 lbl_8055AC48:
 
 	# ROM: 0x497028
-	.asciz "Squat"
-	.balign 4
+	.4byte 0x53717561
+	.4byte 0x74000000
 
 .global lbl_8055AC50
 lbl_8055AC50:
 
 	# ROM: 0x497030
-	.asciz "Sliding"
+	.4byte 0x536C6964
+	.4byte 0x696E6700
 
 .global lbl_8055AC58
 lbl_8055AC58:
 
 	# ROM: 0x497038
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055AC60
 lbl_8055AC60:
@@ -16857,22 +17246,22 @@ lbl_8055AC60:
 lbl_8055AC64:
 
 	# ROM: 0x497044
-	.asciz "LGuard"
-	.balign 4
+	.4byte 0x4C477561
+	.4byte 0x72640000
 
 .global lbl_8055AC6C
 lbl_8055AC6C:
 
 	# ROM: 0x49704C
-	.asciz "RGuard"
-	.balign 4
+	.4byte 0x52477561
+	.4byte 0x72640000
 
 .global lbl_8055AC74
 lbl_8055AC74:
 
 	# ROM: 0x497054
-	.asciz "Throw"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x77000000
 
 .global lbl_8055AC7C
 lbl_8055AC7C:
@@ -16884,236 +17273,253 @@ lbl_8055AC7C:
 lbl_8055AC80:
 
 	# ROM: 0x497060
-	.asciz "DanceK1"
+	.4byte 0x44616E63
+	.4byte 0x654B3100
 
 .global lbl_8055AC88
 lbl_8055AC88:
 
 	# ROM: 0x497068
-	.asciz "DanceK2"
+	.4byte 0x44616E63
+	.4byte 0x654B3200
 
 .global lbl_8055AC90
 lbl_8055AC90:
 
 	# ROM: 0x497070
-	.asciz "DanceK3"
+	.4byte 0x44616E63
+	.4byte 0x654B3300
 
 .global lbl_8055AC98
 lbl_8055AC98:
 
 	# ROM: 0x497078
-	.asciz "DanceKE"
+	.4byte 0x44616E63
+	.4byte 0x654B4500
 
 .global lbl_8055ACA0
 lbl_8055ACA0:
 
 	# ROM: 0x497080
-	.asciz "DanceA1"
+	.4byte 0x44616E63
+	.4byte 0x65413100
 
 .global lbl_8055ACA8
 lbl_8055ACA8:
 
 	# ROM: 0x497088
-	.asciz "DanceA2"
+	.4byte 0x44616E63
+	.4byte 0x65413200
 
 .global lbl_8055ACB0
 lbl_8055ACB0:
 
 	# ROM: 0x497090
-	.asciz "DanceA3"
+	.4byte 0x44616E63
+	.4byte 0x65413300
 
 .global lbl_8055ACB8
 lbl_8055ACB8:
 
 	# ROM: 0x497098
-	.asciz "DanceAE"
+	.4byte 0x44616E63
+	.4byte 0x65414500
 
 .global lbl_8055ACC0
 lbl_8055ACC0:
 
 	# ROM: 0x4970A0
-	.asciz "DanceT1"
+	.4byte 0x44616E63
+	.4byte 0x65543100
 
 .global lbl_8055ACC8
 lbl_8055ACC8:
 
 	# ROM: 0x4970A8
-	.asciz "DanceT2"
+	.4byte 0x44616E63
+	.4byte 0x65543200
 
 .global lbl_8055ACD0
 lbl_8055ACD0:
 
 	# ROM: 0x4970B0
-	.asciz "DanceT3"
+	.4byte 0x44616E63
+	.4byte 0x65543300
 
 .global lbl_8055ACD8
 lbl_8055ACD8:
 
 	# ROM: 0x4970B8
-	.asciz "DanceTE"
+	.4byte 0x44616E63
+	.4byte 0x65544500
 
 .global lbl_8055ACE0
 lbl_8055ACE0:
 
 	# ROM: 0x4970C0
-	.asciz "Faint"
-	.balign 4
+	.4byte 0x4661696E
+	.4byte 0x74000000
 
 .global lbl_8055ACE8
 lbl_8055ACE8:
 
 	# ROM: 0x4970C8
-	.asciz "WakeUp"
-	.balign 4
+	.4byte 0x57616B65
+	.4byte 0x55700000
 
 .global lbl_8055ACF0
 lbl_8055ACF0:
 
 	# ROM: 0x4970D0
-	.asciz "Swim"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0
 
 .global lbl_8055ACF8
 lbl_8055ACF8:
 
 	# ROM: 0x4970D8
-	.asciz "Stroke"
-	.balign 4
+	.4byte 0x5374726F
+	.4byte 0x6B650000
 
 .global lbl_8055AD00
 lbl_8055AD00:
 
 	# ROM: 0x4970E0
-	.asciz "ItemGet"
+	.4byte 0x4974656D
+	.4byte 0x47657400
 
 .global lbl_8055AD08
 lbl_8055AD08:
 
 	# ROM: 0x4970E8
-	.asciz "Dangle"
-	.balign 4
+	.4byte 0x44616E67
+	.4byte 0x6C650000
 
 .global lbl_8055AD10
 lbl_8055AD10:
 
 	# ROM: 0x4970F0
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055AD18
 lbl_8055AD18:
 
 	# ROM: 0x4970F8
-	.asciz "Copter"
-	.balign 4
+	.4byte 0x436F7074
+	.4byte 0x65720000
 
 .global lbl_8055AD20
 lbl_8055AD20:
 
 	# ROM: 0x497100
-	.asciz "LookUp"
-	.balign 4
+	.4byte 0x4C6F6F6B
+	.4byte 0x55700000
 
 .global lbl_8055AD28
 lbl_8055AD28:
 
 	# ROM: 0x497108
-	.asciz "WonderR"
+	.4byte 0x576F6E64
+	.4byte 0x65725200
 
 .global lbl_8055AD30
 lbl_8055AD30:
 
 	# ROM: 0x497110
-	.asciz "WonderL"
+	.4byte 0x576F6E64
+	.4byte 0x65724C00
 
 .global lbl_8055AD38
 lbl_8055AD38:
 
 	# ROM: 0x497118
-	.asciz "Tumble"
-	.balign 4
+	.4byte 0x54756D62
+	.4byte 0x6C650000
 
 .global lbl_8055AD40
 lbl_8055AD40:
 
 	# ROM: 0x497120
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055AD48
 lbl_8055AD48:
 
 	# ROM: 0x497128
-	.asciz "HatL"
-	.balign 4
+	.4byte 0x4861744C
+	.4byte 0
 
 .global lbl_8055AD50
 lbl_8055AD50:
 
 	# ROM: 0x497130
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055AD58
 lbl_8055AD58:
 
 	# ROM: 0x497138
-	.asciz "LHaveL"
-	.balign 4
+	.4byte 0x4C486176
+	.4byte 0x654C0000
 
 .global lbl_8055AD60
 lbl_8055AD60:
 
 	# ROM: 0x497140
-	.asciz "CA1HipJ"
+	.4byte 0x43413148
+	.4byte 0x69704A00
 
 .global lbl_8055AD68
 lbl_8055AD68:
 
 	# ROM: 0x497148
-	.asciz "Rot1L"
-	.balign 4
+	.4byte 0x526F7431
+	.4byte 0x4C000000
 
 .global lbl_8055AD70
 lbl_8055AD70:
 
 	# ROM: 0x497150
-	.asciz "Rot2L"
-	.balign 4
+	.4byte 0x526F7432
+	.4byte 0x4C000000
 
 .global lbl_8055AD78
 lbl_8055AD78:
 
 	# ROM: 0x497158
-	.asciz "ThrowL"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x774C0000
 
 .global lbl_8055AD80
 lbl_8055AD80:
 
 	# ROM: 0x497160
-	.asciz "Spear1J"
+	.4byte 0x53706561
+	.4byte 0x72314A00
 
 .global lbl_8055AD88
 lbl_8055AD88:
 
 	# ROM: 0x497168
-	.asciz "LoadL"
-	.balign 4
+	.4byte 0x4C6F6164
+	.4byte 0x4C000000
 
 .global lbl_8055AD90
 lbl_8055AD90:
 
 	# ROM: 0x497170
-	.asciz "EdgeL"
-	.balign 4
+	.4byte 0x45646765
+	.4byte 0x4C000000
 
 .global lbl_8055AD98
 lbl_8055AD98:
 
 	# ROM: 0x497178
-	.asciz "DeeM"
-	.balign 4
+	.4byte 0x4465654D
+	.4byte 0
 
 .global lbl_8055ADA0
 lbl_8055ADA0:
@@ -17126,14 +17532,15 @@ lbl_8055ADA0:
 lbl_8055ADA8:
 
 	# ROM: 0x497188
-	.asciz "HatM"
-	.balign 4
+	.4byte 0x4861744D
+	.4byte 0
 
 .global lbl_8055ADB0
 lbl_8055ADB0:
 
 	# ROM: 0x497190
-	.asciz "HatBigM"
+	.4byte 0x48617442
+	.4byte 0x69674D00
 
 .global lbl_8055ADB8
 lbl_8055ADB8:
@@ -17146,142 +17553,148 @@ lbl_8055ADB8:
 lbl_8055ADC0:
 
 	# ROM: 0x4971A0
-	.asciz "LBand1S"
+	.4byte 0x4C42616E
+	.4byte 0x64315300
 
 .global lbl_8055ADC8
 lbl_8055ADC8:
 
 	# ROM: 0x4971A8
-	.asciz "RBand1S"
+	.4byte 0x5242616E
+	.4byte 0x64315300
 
 .global lbl_8055ADD0
 lbl_8055ADD0:
 
 	# ROM: 0x4971B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055ADD8
 lbl_8055ADD8:
 
 	# ROM: 0x4971B8
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 
 .global lbl_8055ADE0
 lbl_8055ADE0:
 
 	# ROM: 0x4971C0
-	.asciz "Carry"
-	.balign 4
+	.4byte 0x43617272
+	.4byte 0x79000000
 
 .global lbl_8055ADE8
 lbl_8055ADE8:
 
 	# ROM: 0x4971C8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055ADF0
 lbl_8055ADF0:
 
 	# ROM: 0x4971D0
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055ADF8
 lbl_8055ADF8:
 
 	# ROM: 0x4971D8
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055AE00
 lbl_8055AE00:
 
 	# ROM: 0x4971E0
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_8055AE08
 lbl_8055AE08:
 
 	# ROM: 0x4971E8
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_8055AE10
 lbl_8055AE10:
 
 	# ROM: 0x4971F0
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055AE18
 lbl_8055AE18:
 
 	# ROM: 0x4971F8
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055AE20
 lbl_8055AE20:
 
 	# ROM: 0x497200
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055AE28
 lbl_8055AE28:
 
 	# ROM: 0x497208
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_8055AE30
 lbl_8055AE30:
 
 	# ROM: 0x497210
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055AE38
 lbl_8055AE38:
 
 	# ROM: 0x497218
-	.asciz "Squat"
-	.balign 4
+	.4byte 0x53717561
+	.4byte 0x74000000
 
 .global lbl_8055AE40
 lbl_8055AE40:
 
 	# ROM: 0x497220
-	.asciz "Sliding"
+	.4byte 0x536C6964
+	.4byte 0x696E6700
 
 .global lbl_8055AE48
 lbl_8055AE48:
 
 	# ROM: 0x497228
-	.asciz "Flight"
-	.balign 4
+	.4byte 0x466C6967
+	.4byte 0x68740000
 
 .global lbl_8055AE50
 lbl_8055AE50:
 
 	# ROM: 0x497230
-	.asciz "AirBall"
+	.4byte 0x41697242
+	.4byte 0x616C6C00
 
 .global lbl_8055AE58
 lbl_8055AE58:
 
 	# ROM: 0x497238
-	.asciz "Vacuum"
-	.balign 4
+	.4byte 0x56616375
+	.4byte 0x756D0000
 
 .global lbl_8055AE60
 lbl_8055AE60:
 
 	# ROM: 0x497240
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055AE68
 lbl_8055AE68:
@@ -17299,80 +17712,85 @@ lbl_8055AE6C:
 lbl_8055AE70:
 
 	# ROM: 0x497250
-	.asciz "EatWait"
+	.4byte 0x45617457
+	.4byte 0x61697400
 
 .global lbl_8055AE78
 lbl_8055AE78:
 
 	# ROM: 0x497258
-	.asciz "EatWalk"
+	.4byte 0x45617457
+	.4byte 0x616C6B00
 
 .global lbl_8055AE80
 lbl_8055AE80:
 
 	# ROM: 0x497260
-	.asciz "EatRun"
-	.balign 4
+	.4byte 0x45617452
+	.4byte 0x756E0000
 
 .global lbl_8055AE88
 lbl_8055AE88:
 
 	# ROM: 0x497268
-	.asciz "EatJump"
+	.4byte 0x4561744A
+	.4byte 0x756D7000
 
 .global lbl_8055AE90
 lbl_8055AE90:
 
 	# ROM: 0x497270
-	.asciz "EatFall"
+	.4byte 0x45617446
+	.4byte 0x616C6C00
 
 .global lbl_8055AE98
 lbl_8055AE98:
 
 	# ROM: 0x497278
-	.asciz "Vomit"
-	.balign 4
+	.4byte 0x566F6D69
+	.4byte 0x74000000
 
 .global lbl_8055AEA0
 lbl_8055AEA0:
 
 	# ROM: 0x497280
-	.asciz "Drink"
-	.balign 4
+	.4byte 0x4472696E
+	.4byte 0x6B000000
 
 .global lbl_8055AEA8
 lbl_8055AEA8:
 
 	# ROM: 0x497288
-	.asciz "Copy"
-	.balign 4
+	.4byte 0x436F7079
+	.4byte 0
 
 .global lbl_8055AEB0
 lbl_8055AEB0:
 
 	# ROM: 0x497290
-	.asciz "HaveRun"
+	.4byte 0x48617665
+	.4byte 0x52756E00
 
 .global lbl_8055AEB8
 lbl_8055AEB8:
 
 	# ROM: 0x497298
-	.asciz "LGuard"
-	.balign 4
+	.4byte 0x4C477561
+	.4byte 0x72640000
 
 .global lbl_8055AEC0
 lbl_8055AEC0:
 
 	# ROM: 0x4972A0
-	.asciz "RGuard"
-	.balign 4
+	.4byte 0x52477561
+	.4byte 0x72640000
 
 .global lbl_8055AEC8
 lbl_8055AEC8:
 
 	# ROM: 0x4972A8
-	.asciz "Throw"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x77000000
 
 .global lbl_8055AED0
 lbl_8055AED0:
@@ -17385,442 +17803,470 @@ lbl_8055AED0:
 lbl_8055AED8:
 
 	# ROM: 0x4972B8
-	.asciz "DanceA1"
+	.4byte 0x44616E63
+	.4byte 0x65413100
 
 .global lbl_8055AEE0
 lbl_8055AEE0:
 
 	# ROM: 0x4972C0
-	.asciz "DanceA2"
+	.4byte 0x44616E63
+	.4byte 0x65413200
 
 .global lbl_8055AEE8
 lbl_8055AEE8:
 
 	# ROM: 0x4972C8
-	.asciz "DanceA3"
+	.4byte 0x44616E63
+	.4byte 0x65413300
 
 .global lbl_8055AEF0
 lbl_8055AEF0:
 
 	# ROM: 0x4972D0
-	.asciz "DanceAE"
+	.4byte 0x44616E63
+	.4byte 0x65414500
 
 .global lbl_8055AEF8
 lbl_8055AEF8:
 
 	# ROM: 0x4972D8
-	.asciz "DanceC1"
+	.4byte 0x44616E63
+	.4byte 0x65433100
 
 .global lbl_8055AF00
 lbl_8055AF00:
 
 	# ROM: 0x4972E0
-	.asciz "DanceC2"
+	.4byte 0x44616E63
+	.4byte 0x65433200
 
 .global lbl_8055AF08
 lbl_8055AF08:
 
 	# ROM: 0x4972E8
-	.asciz "DanceC3"
+	.4byte 0x44616E63
+	.4byte 0x65433300
 
 .global lbl_8055AF10
 lbl_8055AF10:
 
 	# ROM: 0x4972F0
-	.asciz "DanceCE"
+	.4byte 0x44616E63
+	.4byte 0x65434500
 
 .global lbl_8055AF18
 lbl_8055AF18:
 
 	# ROM: 0x4972F8
-	.asciz "DanceT1"
+	.4byte 0x44616E63
+	.4byte 0x65543100
 
 .global lbl_8055AF20
 lbl_8055AF20:
 
 	# ROM: 0x497300
-	.asciz "DanceT2"
+	.4byte 0x44616E63
+	.4byte 0x65543200
 
 .global lbl_8055AF28
 lbl_8055AF28:
 
 	# ROM: 0x497308
-	.asciz "DanceT3"
+	.4byte 0x44616E63
+	.4byte 0x65543300
 
 .global lbl_8055AF30
 lbl_8055AF30:
 
 	# ROM: 0x497310
-	.asciz "DanceTE"
+	.4byte 0x44616E63
+	.4byte 0x65544500
 
 .global lbl_8055AF38
 lbl_8055AF38:
 
 	# ROM: 0x497318
-	.asciz "DanceDE"
+	.4byte 0x44616E63
+	.4byte 0x65444500
 
 .global lbl_8055AF40
 lbl_8055AF40:
 
 	# ROM: 0x497320
-	.asciz "DanceEE"
+	.4byte 0x44616E63
+	.4byte 0x65454500
 
 .global lbl_8055AF48
 lbl_8055AF48:
 
 	# ROM: 0x497328
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055AF50
 lbl_8055AF50:
 
 	# ROM: 0x497330
-	.asciz "AWExit"
-	.balign 4
+	.4byte 0x41574578
+	.4byte 0x69740000
 
 .global lbl_8055AF58
 lbl_8055AF58:
 
 	# ROM: 0x497338
-	.asciz "Faint"
-	.balign 4
+	.4byte 0x4661696E
+	.4byte 0x74000000
 
 .global lbl_8055AF60
 lbl_8055AF60:
 
 	# ROM: 0x497340
-	.asciz "WakeUp"
-	.balign 4
+	.4byte 0x57616B65
+	.4byte 0x55700000
 
 .global lbl_8055AF68
 lbl_8055AF68:
 
 	# ROM: 0x497348
-	.asciz "Swim"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0
 
 .global lbl_8055AF70
 lbl_8055AF70:
 
 	# ROM: 0x497350
-	.asciz "Stroke"
-	.balign 4
+	.4byte 0x5374726F
+	.4byte 0x6B650000
 
 .global lbl_8055AF78
 lbl_8055AF78:
 
 	# ROM: 0x497358
-	.asciz "AirJump"
+	.4byte 0x4169724A
+	.4byte 0x756D7000
 
 .global lbl_8055AF80
 lbl_8055AF80:
 
 	# ROM: 0x497360
-	.asciz "ItemGet"
+	.4byte 0x4974656D
+	.4byte 0x47657400
 
 .global lbl_8055AF88
 lbl_8055AF88:
 
 	# ROM: 0x497368
-	.asciz "Dangle"
-	.balign 4
+	.4byte 0x44616E67
+	.4byte 0x6C650000
 
 .global lbl_8055AF90
 lbl_8055AF90:
 
 	# ROM: 0x497370
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055AF98
 lbl_8055AF98:
 
 	# ROM: 0x497378
-	.asciz "Thrust"
-	.balign 4
+	.4byte 0x54687275
+	.4byte 0x73740000
 
 .global lbl_8055AFA0
 lbl_8055AFA0:
 
 	# ROM: 0x497380
-	.asciz "Raising"
+	.4byte 0x52616973
+	.4byte 0x696E6700
 
 .global lbl_8055AFA8
 lbl_8055AFA8:
 
 	# ROM: 0x497388
-	.asciz "Meteo"
-	.balign 4
+	.4byte 0x4D657465
+	.4byte 0x6F000000
 
 .global lbl_8055AFB0
 lbl_8055AFB0:
 
 	# ROM: 0x497390
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_8055AFB8
 lbl_8055AFB8:
 
 	# ROM: 0x497398
-	.asciz "WhipUp"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x55700000
 
 .global lbl_8055AFC0
 lbl_8055AFC0:
 
 	# ROM: 0x4973A0
-	.asciz "WhipAir"
+	.4byte 0x57686970
+	.4byte 0x41697200
 
 .global lbl_8055AFC8
 lbl_8055AFC8:
 
 	# ROM: 0x4973A8
-	.asciz "Drill"
-	.balign 4
+	.4byte 0x4472696C
+	.4byte 0x6C000000
 
 .global lbl_8055AFD0
 lbl_8055AFD0:
 
 	# ROM: 0x4973B0
-	.asciz "Burning"
+	.4byte 0x4275726E
+	.4byte 0x696E6700
 
 .global lbl_8055AFD8
 lbl_8055AFD8:
 
 	# ROM: 0x4973B8
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_8055AFE0
 lbl_8055AFE0:
 
 	# ROM: 0x4973C0
-	.asciz "UpSpark"
+	.4byte 0x55705370
+	.4byte 0x61726B00
 
 .global lbl_8055AFE8
 lbl_8055AFE8:
 
 	# ROM: 0x4973C8
-	.asciz "Swing"
-	.balign 4
+	.4byte 0x5377696E
+	.4byte 0x67000000
 
 .global lbl_8055AFF0
 lbl_8055AFF0:
 
 	# ROM: 0x4973D0
-	.asciz "Dive"
-	.balign 4
+	.4byte 0x44697665
+	.4byte 0
 
 .global lbl_8055AFF8
 lbl_8055AFF8:
 
 	# ROM: 0x4973D8
-	.asciz "DiveEnd"
+	.4byte 0x44697665
+	.4byte 0x456E6400
 
 .global lbl_8055B000
 lbl_8055B000:
 
 	# ROM: 0x4973E0
-	.asciz "Shield"
-	.balign 4
+	.4byte 0x53686965
+	.4byte 0x6C640000
 
 .global lbl_8055B008
 lbl_8055B008:
 
 	# ROM: 0x4973E8
-	.asciz "LookUp"
-	.balign 4
+	.4byte 0x4C6F6F6B
+	.4byte 0x55700000
 
 .global lbl_8055B010
 lbl_8055B010:
 
 	# ROM: 0x4973F0
-	.asciz "WonderR"
+	.4byte 0x576F6E64
+	.4byte 0x65725200
 
 .global lbl_8055B018
 lbl_8055B018:
 
 	# ROM: 0x4973F8
-	.asciz "WonderL"
+	.4byte 0x576F6E64
+	.4byte 0x65724C00
 
 .global lbl_8055B020
 lbl_8055B020:
 
 	# ROM: 0x497400
-	.asciz "Tumble"
-	.balign 4
+	.4byte 0x54756D62
+	.4byte 0x6C650000
 
 .global lbl_8055B028
 lbl_8055B028:
 
 	# ROM: 0x497408
-	.asciz "View"
-	.balign 4
+	.4byte 0x56696577
+	.4byte 0
 
 .global lbl_8055B030
 lbl_8055B030:
 
 	# ROM: 0x497410
-	.asciz "ViewEnd"
+	.4byte 0x56696577
+	.4byte 0x456E6400
 
 .global lbl_8055B038
 lbl_8055B038:
 
 	# ROM: 0x497418
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B040
 lbl_8055B040:
 
 	# ROM: 0x497420
-	.asciz "HatL"
-	.balign 4
+	.4byte 0x4861744C
+	.4byte 0
 
 .global lbl_8055B048
 lbl_8055B048:
 
 	# ROM: 0x497428
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055B050
 lbl_8055B050:
 
 	# ROM: 0x497430
-	.asciz "LHaveL"
-	.balign 4
+	.4byte 0x4C486176
+	.4byte 0x654C0000
 
 .global lbl_8055B058
 lbl_8055B058:
 
 	# ROM: 0x497438
-	.asciz "MouthL"
-	.balign 4
+	.4byte 0x4D6F7574
+	.4byte 0x684C0000
 
 .global lbl_8055B060
 lbl_8055B060:
 
 	# ROM: 0x497440
-	.asciz "CA1HipJ"
+	.4byte 0x43413148
+	.4byte 0x69704A00
 
 .global lbl_8055B068
 lbl_8055B068:
 
 	# ROM: 0x497448
-	.asciz "Rot1L"
-	.balign 4
+	.4byte 0x526F7431
+	.4byte 0x4C000000
 
 .global lbl_8055B070
 lbl_8055B070:
 
 	# ROM: 0x497450
-	.asciz "Rot2L"
-	.balign 4
+	.4byte 0x526F7432
+	.4byte 0x4C000000
 
 .global lbl_8055B078
 lbl_8055B078:
 
 	# ROM: 0x497458
-	.asciz "ThrowL"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x774C0000
 
 .global lbl_8055B080
 lbl_8055B080:
 
 	# ROM: 0x497460
-	.asciz "Kirby"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79000000
 
 .global lbl_8055B088
 lbl_8055B088:
 
 	# ROM: 0x497468
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B090
 lbl_8055B090:
 
 	# ROM: 0x497470
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055B098
 lbl_8055B098:
 
 	# ROM: 0x497478
-	.asciz "Wait3"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x33000000
 
 .global lbl_8055B0A0
 lbl_8055B0A0:
 
 	# ROM: 0x497480
-	.asciz "Wait4"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x34000000
 
 .global lbl_8055B0A8
 lbl_8055B0A8:
 
 	# ROM: 0x497488
-	.asciz "Wait5"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x35000000
 
 .global lbl_8055B0B0
 lbl_8055B0B0:
 
 	# ROM: 0x497490
-	.asciz "Fall"
-	.balign 4
+	.4byte 0x46616C6C
+	.4byte 0
 
 .global lbl_8055B0B8
 lbl_8055B0B8:
 
 	# ROM: 0x497498
-	.asciz "Walk"
-	.balign 4
+	.4byte 0x57616C6B
+	.4byte 0
 
 .global lbl_8055B0C0
 lbl_8055B0C0:
 
 	# ROM: 0x4974A0
-	.asciz "Jump"
-	.balign 4
+	.4byte 0x4A756D70
+	.4byte 0
 
 .global lbl_8055B0C8
 lbl_8055B0C8:
 
 	# ROM: 0x4974A8
-	.asciz "JumpEnd"
+	.4byte 0x4A756D70
+	.4byte 0x456E6400
 
 .global lbl_8055B0D0
 lbl_8055B0D0:
 
 	# ROM: 0x4974B0
-	.asciz "Landing"
+	.4byte 0x4C616E64
+	.4byte 0x696E6700
 
 .global lbl_8055B0D8
 lbl_8055B0D8:
 
 	# ROM: 0x4974B8
-	.asciz "Squat"
-	.balign 4
+	.4byte 0x53717561
+	.4byte 0x74000000
 
 .global lbl_8055B0E0
 lbl_8055B0E0:
 
 	# ROM: 0x4974C0
-	.asciz "Sliding"
+	.4byte 0x536C6964
+	.4byte 0x696E6700
 
 .global lbl_8055B0E8
 lbl_8055B0E8:
 
 	# ROM: 0x4974C8
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055B0F0
 lbl_8055B0F0:
@@ -17832,15 +18278,15 @@ lbl_8055B0F0:
 lbl_8055B0F4:
 
 	# ROM: 0x4974D4
-	.asciz "Guard"
-	.balign 4
+	.4byte 0x47756172
+	.4byte 0x64000000
 
 .global lbl_8055B0FC
 lbl_8055B0FC:
 
 	# ROM: 0x4974DC
-	.asciz "Throw"
-	.balign 4
+	.4byte 0x5468726F
+	.4byte 0x77000000
 
 .global lbl_8055B104
 lbl_8055B104:
@@ -17852,248 +18298,267 @@ lbl_8055B104:
 lbl_8055B108:
 
 	# ROM: 0x4974E8
-	.asciz "DanceK1"
+	.4byte 0x44616E63
+	.4byte 0x654B3100
 
 .global lbl_8055B110
 lbl_8055B110:
 
 	# ROM: 0x4974F0
-	.asciz "DanceK2"
+	.4byte 0x44616E63
+	.4byte 0x654B3200
 
 .global lbl_8055B118
 lbl_8055B118:
 
 	# ROM: 0x4974F8
-	.asciz "DanceK3"
+	.4byte 0x44616E63
+	.4byte 0x654B3300
 
 .global lbl_8055B120
 lbl_8055B120:
 
 	# ROM: 0x497500
-	.asciz "DanceKE"
+	.4byte 0x44616E63
+	.4byte 0x654B4500
 
 .global lbl_8055B128
 lbl_8055B128:
 
 	# ROM: 0x497508
-	.asciz "DanceA1"
+	.4byte 0x44616E63
+	.4byte 0x65413100
 
 .global lbl_8055B130
 lbl_8055B130:
 
 	# ROM: 0x497510
-	.asciz "DanceA2"
+	.4byte 0x44616E63
+	.4byte 0x65413200
 
 .global lbl_8055B138
 lbl_8055B138:
 
 	# ROM: 0x497518
-	.asciz "DanceA3"
+	.4byte 0x44616E63
+	.4byte 0x65413300
 
 .global lbl_8055B140
 lbl_8055B140:
 
 	# ROM: 0x497520
-	.asciz "DanceAE"
+	.4byte 0x44616E63
+	.4byte 0x65414500
 
 .global lbl_8055B148
 lbl_8055B148:
 
 	# ROM: 0x497528
-	.asciz "DanceT1"
+	.4byte 0x44616E63
+	.4byte 0x65543100
 
 .global lbl_8055B150
 lbl_8055B150:
 
 	# ROM: 0x497530
-	.asciz "DanceT2"
+	.4byte 0x44616E63
+	.4byte 0x65543200
 
 .global lbl_8055B158
 lbl_8055B158:
 
 	# ROM: 0x497538
-	.asciz "DanceT3"
+	.4byte 0x44616E63
+	.4byte 0x65543300
 
 .global lbl_8055B160
 lbl_8055B160:
 
 	# ROM: 0x497540
-	.asciz "DanceTE"
+	.4byte 0x44616E63
+	.4byte 0x65544500
 
 .global lbl_8055B168
 lbl_8055B168:
 
 	# ROM: 0x497548
-	.asciz "Faint"
-	.balign 4
+	.4byte 0x4661696E
+	.4byte 0x74000000
 
 .global lbl_8055B170
 lbl_8055B170:
 
 	# ROM: 0x497550
-	.asciz "WakeUp"
-	.balign 4
+	.4byte 0x57616B65
+	.4byte 0x55700000
 
 .global lbl_8055B178
 lbl_8055B178:
 
 	# ROM: 0x497558
-	.asciz "Swim"
-	.balign 4
+	.4byte 0x5377696D
+	.4byte 0
 
 .global lbl_8055B180
 lbl_8055B180:
 
 	# ROM: 0x497560
-	.asciz "Stroke"
-	.balign 4
+	.4byte 0x5374726F
+	.4byte 0x6B650000
 
 .global lbl_8055B188
 lbl_8055B188:
 
 	# ROM: 0x497568
-	.asciz "Flight"
-	.balign 4
+	.4byte 0x466C6967
+	.4byte 0x68740000
 
 .global lbl_8055B190
 lbl_8055B190:
 
 	# ROM: 0x497570
-	.asciz "ItemGet"
+	.4byte 0x4974656D
+	.4byte 0x47657400
 
 .global lbl_8055B198
 lbl_8055B198:
 
 	# ROM: 0x497578
-	.asciz "Dangle"
-	.balign 4
+	.4byte 0x44616E67
+	.4byte 0x6C650000
 
 .global lbl_8055B1A0
 lbl_8055B1A0:
 
 	# ROM: 0x497580
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055B1A8
 lbl_8055B1A8:
 
 	# ROM: 0x497588
-	.asciz "Attack1"
+	.4byte 0x41747461
+	.4byte 0x636B3100
 
 .global lbl_8055B1B0
 lbl_8055B1B0:
 
 	# ROM: 0x497590
-	.asciz "Attack2"
+	.4byte 0x41747461
+	.4byte 0x636B3200
 
 .global lbl_8055B1B8
 lbl_8055B1B8:
 
 	# ROM: 0x497598
-	.asciz "Attack3"
+	.4byte 0x41747461
+	.4byte 0x636B3300
 
 .global lbl_8055B1C0
 lbl_8055B1C0:
 
 	# ROM: 0x4975A0
-	.asciz "Glide"
-	.balign 4
+	.4byte 0x476C6964
+	.4byte 0x65000000
 
 .global lbl_8055B1C8
 lbl_8055B1C8:
 
 	# ROM: 0x4975A8
-	.asciz "LookUp"
-	.balign 4
+	.4byte 0x4C6F6F6B
+	.4byte 0x55700000
 
 .global lbl_8055B1D0
 lbl_8055B1D0:
 
 	# ROM: 0x4975B0
-	.asciz "WonderR"
+	.4byte 0x576F6E64
+	.4byte 0x65725200
 
 .global lbl_8055B1D8
 lbl_8055B1D8:
 
 	# ROM: 0x4975B8
-	.asciz "WonderL"
+	.4byte 0x576F6E64
+	.4byte 0x65724C00
 
 .global lbl_8055B1E0
 lbl_8055B1E0:
 
 	# ROM: 0x4975C0
-	.asciz "Tumble"
-	.balign 4
+	.4byte 0x54756D62
+	.4byte 0x6C650000
 
 .global lbl_8055B1E8
 lbl_8055B1E8:
 
 	# ROM: 0x4975C8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B1F0
 lbl_8055B1F0:
 
 	# ROM: 0x4975D0
-	.asciz "RHaveL"
-	.balign 4
+	.4byte 0x52486176
+	.4byte 0x654C0000
 
 .global lbl_8055B1F8
 lbl_8055B1F8:
 
 	# ROM: 0x4975D8
-	.asciz "CA1HipJ"
+	.4byte 0x43413148
+	.4byte 0x69704A00
 
 .global lbl_8055B200
 lbl_8055B200:
 
 	# ROM: 0x4975E0
-	.asciz "Rot1L"
-	.balign 4
+	.4byte 0x526F7431
+	.4byte 0x4C000000
 
 .global lbl_8055B208
 lbl_8055B208:
 
 	# ROM: 0x4975E8
-	.asciz "SwordM"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644D0000
 
 .global lbl_8055B210
 lbl_8055B210:
 
 	# ROM: 0x4975F0
-	.asciz "LoadL"
-	.balign 4
+	.4byte 0x4C6F6164
+	.4byte 0x4C000000
 
 .global lbl_8055B218
 lbl_8055B218:
 
 	# ROM: 0x4975F8
-	.asciz "BodyM"
-	.balign 4
+	.4byte 0x426F6479
+	.4byte 0x4D000000
 
 .global lbl_8055B220
 lbl_8055B220:
 
 	# ROM: 0x497600
-	.asciz "Meta"
-	.balign 4
+	.4byte 0x4D657461
+	.4byte 0
 
 .global lbl_8055B228
 lbl_8055B228:
 
 	# ROM: 0x497608
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B230
 lbl_8055B230:
 
 	# ROM: 0x497610
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 
 .global lbl_8055B238
 lbl_8055B238:
@@ -18106,56 +18571,57 @@ lbl_8055B238:
 lbl_8055B240:
 
 	# ROM: 0x497620
-	.asciz "Carry"
-	.balign 4
+	.4byte 0x43617272
+	.4byte 0x79000000
 
 .global lbl_8055B248
 lbl_8055B248:
 
 	# ROM: 0x497628
-	.asciz "Swing"
-	.balign 4
+	.4byte 0x5377696E
+	.4byte 0x67000000
 
 .global lbl_8055B250
 lbl_8055B250:
 
 	# ROM: 0x497630
-	.asciz "Dive"
-	.balign 4
+	.4byte 0x44697665
+	.4byte 0
 
 .global lbl_8055B258
 lbl_8055B258:
 
 	# ROM: 0x497638
-	.asciz "DiveEnd"
+	.4byte 0x44697665
+	.4byte 0x456E6400
 
 .global lbl_8055B260
 lbl_8055B260:
 
 	# ROM: 0x497640
-	.asciz "Shield"
-	.balign 4
+	.4byte 0x53686965
+	.4byte 0x6C640000
 
 .global lbl_8055B268
 lbl_8055B268:
 
 	# ROM: 0x497648
-	.asciz "Drill"
-	.balign 4
+	.4byte 0x4472696C
+	.4byte 0x6C000000
 
 .global lbl_8055B270
 lbl_8055B270:
 
 	# ROM: 0x497650
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055B278
 lbl_8055B278:
 
 	# ROM: 0x497658
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B280
 lbl_8055B280:
@@ -18168,29 +18634,29 @@ lbl_8055B280:
 lbl_8055B288:
 
 	# ROM: 0x497668
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B290
 lbl_8055B290:
 
 	# ROM: 0x497670
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055B298
 lbl_8055B298:
 
 	# ROM: 0x497678
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 
 .global lbl_8055B2A0
 lbl_8055B2A0:
 
 	# ROM: 0x497680
-	.asciz "EdgeL"
-	.balign 4
+	.4byte 0x45646765
+	.4byte 0x4C000000
 
 .global lbl_8055B2A8
 lbl_8055B2A8:
@@ -18203,90 +18669,92 @@ lbl_8055B2A8:
 lbl_8055B2B0:
 
 	# ROM: 0x497690
-	.asciz "Carry"
-	.balign 4
+	.4byte 0x43617272
+	.4byte 0x79000000
 
 .global lbl_8055B2B8
 lbl_8055B2B8:
 
 	# ROM: 0x497698
-	.asciz "Thrust"
-	.balign 4
+	.4byte 0x54687275
+	.4byte 0x73740000
 
 .global lbl_8055B2C0
 lbl_8055B2C0:
 
 	# ROM: 0x4976A0
-	.asciz "Raising"
+	.4byte 0x52616973
+	.4byte 0x696E6700
 
 .global lbl_8055B2C8
 lbl_8055B2C8:
 
 	# ROM: 0x4976A8
-	.asciz "Meteo"
-	.balign 4
+	.4byte 0x4D657465
+	.4byte 0x6F000000
 
 .global lbl_8055B2D0
 lbl_8055B2D0:
 
 	# ROM: 0x4976B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B2D8
 lbl_8055B2D8:
 
 	# ROM: 0x4976B8
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 
 .global lbl_8055B2E0
 lbl_8055B2E0:
 
 	# ROM: 0x4976C0
-	.asciz "ConstL"
-	.balign 4
+	.4byte 0x436F6E73
+	.4byte 0x744C0000
 
 .global lbl_8055B2E8
 lbl_8055B2E8:
 
 	# ROM: 0x4976C8
-	.asciz "Carry"
-	.balign 4
+	.4byte 0x43617272
+	.4byte 0x79000000
 
 .global lbl_8055B2F0
 lbl_8055B2F0:
 
 	# ROM: 0x4976D0
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_8055B2F8
 lbl_8055B2F8:
 
 	# ROM: 0x4976D8
-	.asciz "WhipUp"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x55700000
 
 .global lbl_8055B300
 lbl_8055B300:
 
 	# ROM: 0x4976E0
-	.asciz "WhipAir"
+	.4byte 0x57686970
+	.4byte 0x41697200
 
 .global lbl_8055B308
 lbl_8055B308:
 
 	# ROM: 0x4976E8
-	.asciz "Drill"
-	.balign 4
+	.4byte 0x4472696C
+	.4byte 0x6C000000
 
 .global lbl_8055B310
 lbl_8055B310:
 
 	# ROM: 0x4976F0
-	.asciz "AllJ"
-	.balign 4
+	.4byte 0x416C6C4A
+	.4byte 0
 
 .global lbl_8055B318
 lbl_8055B318:
@@ -18298,15 +18766,15 @@ lbl_8055B318:
 lbl_8055B31C:
 
 	# ROM: 0x4976FC
-	.asciz "LBDJ"
-	.balign 4
+	.4byte 0x4C42444A
+	.4byte 0
 
 .global lbl_8055B324
 lbl_8055B324:
 
 	# ROM: 0x497704
-	.asciz "RBDJ"
-	.balign 4
+	.4byte 0x5242444A
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055B330
@@ -18344,235 +18812,239 @@ lbl_8055B344:
 lbl_8055B348:
 
 	# ROM: 0x497728
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055B350
 lbl_8055B350:
 
 	# ROM: 0x497730
-	.asciz "AnimL"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x4C000000
 
 .global lbl_8055B358
 lbl_8055B358:
 
 	# ROM: 0x497738
-	.asciz "sword"
-	.balign 4
+	.4byte 0x73776F72
+	.4byte 0x64000000
 
 .global lbl_8055B360
 lbl_8055B360:
 
 	# ROM: 0x497740
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 
 .global lbl_8055B368
 lbl_8055B368:
 
 	# ROM: 0x497748
-	.asciz "cutter"
-	.balign 4
+	.4byte 0x63757474
+	.4byte 0x65720000
 
 .global lbl_8055B370
 lbl_8055B370:
 
 	# ROM: 0x497750
-	.asciz "Cutter"
-	.balign 4
+	.4byte 0x43757474
+	.4byte 0x65720000
 
 .global lbl_8055B378
 lbl_8055B378:
 
 	# ROM: 0x497758
-	.asciz "leaf"
-	.balign 4
+	.4byte 0x6C656166
+	.4byte 0
 
 .global lbl_8055B380
 lbl_8055B380:
 
 	# ROM: 0x497760
-	.asciz "Leaf"
-	.balign 4
+	.4byte 0x4C656166
+	.4byte 0
 
 .global lbl_8055B388
 lbl_8055B388:
 
 	# ROM: 0x497768
-	.asciz "whip"
-	.balign 4
+	.4byte 0x77686970
+	.4byte 0
 
 .global lbl_8055B390
 lbl_8055B390:
 
 	# ROM: 0x497770
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_8055B398
 lbl_8055B398:
 
 	# ROM: 0x497778
-	.asciz "fire"
-	.balign 4
+	.4byte 0x66697265
+	.4byte 0
 
 .global lbl_8055B3A0
 lbl_8055B3A0:
 
 	# ROM: 0x497780
-	.asciz "Fire"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0
 
 .global lbl_8055B3A8
 lbl_8055B3A8:
 
 	# ROM: 0x497788
-	.asciz "needle"
-	.balign 4
+	.4byte 0x6E656564
+	.4byte 0x6C650000
 
 .global lbl_8055B3B0
 lbl_8055B3B0:
 
 	# ROM: 0x497790
-	.asciz "Needle"
-	.balign 4
+	.4byte 0x4E656564
+	.4byte 0x6C650000
 
 .global lbl_8055B3B8
 lbl_8055B3B8:
 
 	# ROM: 0x497798
-	.asciz "beam"
-	.balign 4
+	.4byte 0x6265616D
+	.4byte 0
 
 .global lbl_8055B3C0
 lbl_8055B3C0:
 
 	# ROM: 0x4977A0
-	.asciz "Beam"
-	.balign 4
+	.4byte 0x4265616D
+	.4byte 0
 
 .global lbl_8055B3C8
 lbl_8055B3C8:
 
 	# ROM: 0x4977A8
-	.asciz "spark"
-	.balign 4
+	.4byte 0x73706172
+	.4byte 0x6B000000
 
 .global lbl_8055B3D0
 lbl_8055B3D0:
 
 	# ROM: 0x4977B0
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_8055B3D8
 lbl_8055B3D8:
 
 	# ROM: 0x4977B8
-	.asciz "stone"
-	.balign 4
+	.4byte 0x73746F6E
+	.4byte 0x65000000
 
 .global lbl_8055B3E0
 lbl_8055B3E0:
 
 	# ROM: 0x4977C0
-	.asciz "Stone"
-	.balign 4
+	.4byte 0x53746F6E
+	.4byte 0x65000000
 
 .global lbl_8055B3E8
 lbl_8055B3E8:
 
 	# ROM: 0x4977C8
-	.asciz "sleep"
-	.balign 4
+	.4byte 0x736C6565
+	.4byte 0x70000000
 
 .global lbl_8055B3F0
 lbl_8055B3F0:
 
 	# ROM: 0x4977D0
-	.asciz "Sleep"
-	.balign 4
+	.4byte 0x536C6565
+	.4byte 0x70000000
 
 .global lbl_8055B3F8
 lbl_8055B3F8:
 
 	# ROM: 0x4977D8
-	.asciz "parasol"
+	.4byte 0x70617261
+	.4byte 0x736F6C00
 
 .global lbl_8055B400
 lbl_8055B400:
 
 	# ROM: 0x4977E0
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_8055B408
 lbl_8055B408:
 
 	# ROM: 0x4977E8
-	.asciz "water"
-	.balign 4
+	.4byte 0x77617465
+	.4byte 0x72000000
 
 .global lbl_8055B410
 lbl_8055B410:
 
 	# ROM: 0x4977F0
-	.asciz "Water"
-	.balign 4
+	.4byte 0x57617465
+	.4byte 0x72000000
 
 .global lbl_8055B418
 lbl_8055B418:
 
 	# ROM: 0x4977F8
-	.asciz "tornado"
+	.4byte 0x746F726E
+	.4byte 0x61646F00
 
 .global lbl_8055B420
 lbl_8055B420:
 
 	# ROM: 0x497800
-	.asciz "Tornado"
+	.4byte 0x546F726E
+	.4byte 0x61646F00
 
 .global lbl_8055B428
 lbl_8055B428:
 
 	# ROM: 0x497808
-	.asciz "bomb"
-	.balign 4
+	.4byte 0x626F6D62
+	.4byte 0
 
 .global lbl_8055B430
 lbl_8055B430:
 
 	# ROM: 0x497810
-	.asciz "Bomb"
-	.balign 4
+	.4byte 0x426F6D62
+	.4byte 0
 
 .global lbl_8055B438
 lbl_8055B438:
 
 	# ROM: 0x497818
-	.asciz "spear"
-	.balign 4
+	.4byte 0x73706561
+	.4byte 0x72000000
 
 .global lbl_8055B440
 lbl_8055B440:
 
 	# ROM: 0x497820
-	.asciz "Spear"
-	.balign 4
+	.4byte 0x53706561
+	.4byte 0x72000000
 
 .global lbl_8055B448
 lbl_8055B448:
 
 	# ROM: 0x497828
-	.asciz "hammer"
-	.balign 4
+	.4byte 0x68616D6D
+	.4byte 0x65720000
 
 .global lbl_8055B450
 lbl_8055B450:
 
 	# ROM: 0x497830
-	.asciz "Hammer"
-	.balign 4
+	.4byte 0x48616D6D
+	.4byte 0x65720000
 
 .global lbl_8055B458
 lbl_8055B458:
@@ -18590,41 +19062,43 @@ lbl_8055B45C:
 lbl_8055B460:
 
 	# ROM: 0x497840
-	.asciz "wing"
-	.balign 4
+	.4byte 0x77696E67
+	.4byte 0
 
 .global lbl_8055B468
 lbl_8055B468:
 
 	# ROM: 0x497848
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_8055B470
 lbl_8055B470:
 
 	# ROM: 0x497850
-	.asciz "ninja"
-	.balign 4
+	.4byte 0x6E696E6A
+	.4byte 0x61000000
 
 .global lbl_8055B478
 lbl_8055B478:
 
 	# ROM: 0x497858
-	.asciz "Ninja"
-	.balign 4
+	.4byte 0x4E696E6A
+	.4byte 0x61000000
 
 .global lbl_8055B480
 lbl_8055B480:
 
 	# ROM: 0x497860
-	.asciz "fighter"
+	.4byte 0x66696768
+	.4byte 0x74657200
 
 .global lbl_8055B488
 lbl_8055B488:
 
 	# ROM: 0x497868
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_8055B490
 lbl_8055B490:
@@ -18648,92 +19122,93 @@ lbl_8055B498:
 lbl_8055B49C:
 
 	# ROM: 0x49787C
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055B4A4
 lbl_8055B4A4:
 
 	# ROM: 0x497884
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055B4B0
 lbl_8055B4B0:
 
 	# ROM: 0x497890
-	.asciz "LifeBar"
+	.4byte 0x4C696665
+	.4byte 0x42617200
 
 .global lbl_8055B4B8
 lbl_8055B4B8:
 
 	# ROM: 0x497898
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055B4C0
 lbl_8055B4C0:
 
 	# ROM: 0x4978A0
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055B4C8
 lbl_8055B4C8:
 
 	# ROM: 0x4978A8
-	.asciz "Dead"
-	.balign 4
+	.4byte 0x44656164
+	.4byte 0
 
 .global lbl_8055B4D0
 lbl_8055B4D0:
 
 	# ROM: 0x4978B0
-	.asciz "0B0B0B"
-	.balign 4
+	.4byte 0x30423042
+	.4byte 0x30420000
 
 .global lbl_8055B4D8
 lbl_8055B4D8:
 
 	# ROM: 0x4978B8
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_8055B4E0
 lbl_8055B4E0:
 
 	# ROM: 0x4978C0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B4E8
 lbl_8055B4E8:
 
 	# ROM: 0x4978C8
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055B4F0
 lbl_8055B4F0:
 
 	# ROM: 0x4978D0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B4F8
 lbl_8055B4F8:
 
 	# ROM: 0x4978D8
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055B500
 lbl_8055B500:
 
 	# ROM: 0x4978E0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B508
 lbl_8055B508:
@@ -18746,35 +19221,36 @@ lbl_8055B508:
 lbl_8055B510:
 
 	# ROM: 0x4978F0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B518
 lbl_8055B518:
 
 	# ROM: 0x4978F8
-	.asciz "Shake"
-	.balign 4
+	.4byte 0x5368616B
+	.4byte 0x65000000
 
 .global lbl_8055B520
 lbl_8055B520:
 
 	# ROM: 0x497900
-	.asciz "Success"
+	.4byte 0x53756363
+	.4byte 0x65737300
 
 .global lbl_8055B528
 lbl_8055B528:
 
 	# ROM: 0x497908
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055B530
 lbl_8055B530:
 
 	# ROM: 0x497910
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B538
 lbl_8055B538:
@@ -18787,55 +19263,57 @@ lbl_8055B538:
 lbl_8055B540:
 
 	# ROM: 0x497920
-	.asciz "FlashN"
-	.balign 4
+	.4byte 0x466C6173
+	.4byte 0x684E0000
 
 .global lbl_8055B548
 lbl_8055B548:
 
 	# ROM: 0x497928
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B550
 lbl_8055B550:
 
 	# ROM: 0x497930
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055B558
 lbl_8055B558:
 
 	# ROM: 0x497938
-	.asciz "Pinch"
-	.balign 4
+	.4byte 0x50696E63
+	.4byte 0x68000000
 
 .global lbl_8055B560
 lbl_8055B560:
 
 	# ROM: 0x497940
-	.asciz "LifeBar"
+	.4byte 0x4C696665
+	.4byte 0x42617200
 
 .global lbl_8055B568
 lbl_8055B568:
 
 	# ROM: 0x497948
-	.asciz "AbGageN"
+	.4byte 0x41624761
+	.4byte 0x67654E00
 
 .global lbl_8055B570
 lbl_8055B570:
 
 	# ROM: 0x497950
-	.asciz "Ita02N"
-	.balign 4
+	.4byte 0x49746130
+	.4byte 0x324E0000
 
 .global lbl_8055B578
 lbl_8055B578:
 
 	# ROM: 0x497958
-	.asciz "ItaN"
-	.balign 4
+	.4byte 0x4974614E
+	.4byte 0
 
 .global lbl_8055B580
 lbl_8055B580:
@@ -18847,105 +19325,107 @@ lbl_8055B580:
 lbl_8055B584:
 
 	# ROM: 0x497964
-	.asciz "IconN"
-	.balign 4
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
 
 .global lbl_8055B58C
 lbl_8055B58C:
 
 	# ROM: 0x49796C
-	.asciz "Pinch"
-	.balign 4
+	.4byte 0x50696E63
+	.4byte 0x68000000
 
 .global lbl_8055B594
 lbl_8055B594:
 
 	# ROM: 0x497974
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B59C
 lbl_8055B59C:
 
 	# ROM: 0x49797C
-	.asciz "Damage"
-	.balign 4
+	.4byte 0x44616D61
+	.4byte 0x67650000
 
 .global lbl_8055B5A4
 lbl_8055B5A4:
 
 	# ROM: 0x497984
-	.asciz "Flash"
-	.balign 4
+	.4byte 0x466C6173
+	.4byte 0x68000000
 
 .global lbl_8055B5AC
 lbl_8055B5AC:
 
 	# ROM: 0x49798C
-	.asciz "Dead"
-	.balign 4
+	.4byte 0x44656164
+	.4byte 0
 
 .global lbl_8055B5B4
 lbl_8055B5B4:
 
 	# ROM: 0x497994
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_8055B5BC
 lbl_8055B5BC:
 
 	# ROM: 0x49799C
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 	.4byte 0
 
 .global lbl_8055B5C8
 lbl_8055B5C8:
 
 	# ROM: 0x4979A8
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_8055B5D0
 lbl_8055B5D0:
 
 	# ROM: 0x4979B0
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_8055B5D8
 lbl_8055B5D8:
 
 	# ROM: 0x4979B8
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_8055B5E0
 lbl_8055B5E0:
 
 	# ROM: 0x4979C0
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_8055B5E8
 lbl_8055B5E8:
 
 	# ROM: 0x4979C8
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_8055B5F0
 lbl_8055B5F0:
 
 	# ROM: 0x4979D0
-	.asciz "Smash"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x68000000
 
 .global lbl_8055B5F8
 lbl_8055B5F8:
 
 	# ROM: 0x4979D8
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055B600
 lbl_8055B600:
@@ -18957,8 +19437,8 @@ lbl_8055B600:
 lbl_8055B604:
 
 	# ROM: 0x4979E4
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B60C
 lbl_8055B60C:
@@ -18970,8 +19450,8 @@ lbl_8055B60C:
 lbl_8055B610:
 
 	# ROM: 0x4979F0
-	.asciz "OutS"
-	.balign 4
+	.4byte 0x4F757453
+	.4byte 0
 
 .global lbl_8055B618
 lbl_8055B618:
@@ -18984,55 +19464,57 @@ lbl_8055B618:
 lbl_8055B620:
 
 	# ROM: 0x497A00
-	.asciz "Info"
-	.balign 4
+	.4byte 0x496E666F
+	.4byte 0
 
 .global lbl_8055B628
 lbl_8055B628:
 
 	# ROM: 0x497A08
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055B630
 lbl_8055B630:
 
 	# ROM: 0x497A10
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_8055B638
 lbl_8055B638:
 
 	# ROM: 0x497A18
-	.asciz "Name_Sh"
+	.4byte 0x4E616D65
+	.4byte 0x5F536800
 
 .global lbl_8055B640
 lbl_8055B640:
 
 	# ROM: 0x497A20
-	.asciz "Exit"
-	.balign 4
+	.4byte 0x45786974
+	.4byte 0
 
 .global lbl_8055B648
 lbl_8055B648:
 
 	# ROM: 0x497A28
-	.asciz "Exit_Sh"
+	.4byte 0x45786974
+	.4byte 0x5F536800
 
 .global lbl_8055B650
 lbl_8055B650:
 
 	# ROM: 0x497A30
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B658
 lbl_8055B658:
 
 	# ROM: 0x497A38
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B660
 lbl_8055B660:
@@ -19044,15 +19526,15 @@ lbl_8055B660:
 lbl_8055B664:
 
 	# ROM: 0x497A44
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055B66C
 lbl_8055B66C:
 
 	# ROM: 0x497A4C
-	.asciz "Next"
-	.balign 4
+	.4byte 0x4E657874
+	.4byte 0
 
 .global lbl_8055B674
 lbl_8055B674:
@@ -19064,21 +19546,22 @@ lbl_8055B674:
 lbl_8055B678:
 
 	# ROM: 0x497A58
-	.asciz "Suspend"
+	.4byte 0x53757370
+	.4byte 0x656E6400
 
 .global lbl_8055B680
 lbl_8055B680:
 
 	# ROM: 0x497A60
-	.asciz "RightN"
-	.balign 4
+	.4byte 0x52696768
+	.4byte 0x744E0000
 
 .global lbl_8055B688
 lbl_8055B688:
 
 	# ROM: 0x497A68
-	.asciz "LeftN"
-	.balign 4
+	.4byte 0x4C656674
+	.4byte 0x4E000000
 
 .global lbl_8055B690
 lbl_8055B690:
@@ -19090,22 +19573,22 @@ lbl_8055B690:
 lbl_8055B694:
 
 	# ROM: 0x497A74
-	.asciz "DownN"
-	.balign 4
+	.4byte 0x446F776E
+	.4byte 0x4E000000
 
 .global lbl_8055B69C
 lbl_8055B69C:
 
 	# ROM: 0x497A7C
-	.asciz "RightN"
-	.balign 4
+	.4byte 0x52696768
+	.4byte 0x744E0000
 
 .global lbl_8055B6A4
 lbl_8055B6A4:
 
 	# ROM: 0x497A84
-	.asciz "LeftN"
-	.balign 4
+	.4byte 0x4C656674
+	.4byte 0x4E000000
 
 .global lbl_8055B6AC
 lbl_8055B6AC:
@@ -19117,64 +19600,64 @@ lbl_8055B6AC:
 lbl_8055B6B0:
 
 	# ROM: 0x497A90
-	.asciz "DownN"
-	.balign 4
+	.4byte 0x446F776E
+	.4byte 0x4E000000
 
 .global lbl_8055B6B8
 lbl_8055B6B8:
 
 	# ROM: 0x497A98
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B6C0
 lbl_8055B6C0:
 
 	# ROM: 0x497AA0
-	.asciz "StartR"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74520000
 
 .global lbl_8055B6C8
 lbl_8055B6C8:
 
 	# ROM: 0x497AA8
-	.asciz "WaitR"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x52000000
 
 .global lbl_8055B6D0
 lbl_8055B6D0:
 
 	# ROM: 0x497AB0
-	.asciz "EndR"
-	.balign 4
+	.4byte 0x456E6452
+	.4byte 0
 
 .global lbl_8055B6D8
 lbl_8055B6D8:
 
 	# ROM: 0x497AB8
-	.asciz "Title"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x65000000
 
 .global lbl_8055B6E0
 lbl_8055B6E0:
 
 	# ROM: 0x497AC0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B6E8
 lbl_8055B6E8:
 
 	# ROM: 0x497AC8
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_8055B6F0
 lbl_8055B6F0:
 
 	# ROM: 0x497AD0
-	.asciz "RankUp"
-	.balign 4
+	.4byte 0x52616E6B
+	.4byte 0x55700000
 
 .global lbl_8055B6F8
 lbl_8055B6F8:
@@ -19186,29 +19669,29 @@ lbl_8055B6F8:
 lbl_8055B6FC:
 
 	# ROM: 0x497ADC
-	.asciz "Bronze"
-	.balign 4
+	.4byte 0x42726F6E
+	.4byte 0x7A650000
 
 .global lbl_8055B704
 lbl_8055B704:
 
 	# ROM: 0x497AE4
-	.asciz "Silver"
-	.balign 4
+	.4byte 0x53696C76
+	.4byte 0x65720000
 
 .global lbl_8055B70C
 lbl_8055B70C:
 
 	# ROM: 0x497AEC
-	.asciz "Gold"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0
 
 .global lbl_8055B714
 lbl_8055B714:
 
 	# ROM: 0x497AF4
-	.asciz "King"
-	.balign 4
+	.4byte 0x4B696E67
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055B720
@@ -19221,15 +19704,15 @@ lbl_8055B720:
 lbl_8055B724:
 
 	# ROM: 0x497B04
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B72C
 lbl_8055B72C:
 
 	# ROM: 0x497B0C
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B734
 lbl_8055B734:
@@ -19241,29 +19724,29 @@ lbl_8055B734:
 lbl_8055B738:
 
 	# ROM: 0x497B18
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055B740
 lbl_8055B740:
 
 	# ROM: 0x497B20
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_8055B748
 lbl_8055B748:
 
 	# ROM: 0x497B28
-	.asciz "TimeN"
-	.balign 4
+	.4byte 0x54696D65
+	.4byte 0x4E000000
 
 .global lbl_8055B750
 lbl_8055B750:
 
 	# ROM: 0x497B30
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B758
 lbl_8055B758:
@@ -19281,21 +19764,22 @@ lbl_8055B75C:
 lbl_8055B760:
 
 	# ROM: 0x497B40
-	.asciz "OutS"
-	.balign 4
+	.4byte 0x4F757453
+	.4byte 0
 
 .global lbl_8055B768
 lbl_8055B768:
 
 	# ROM: 0x497B48
-	.asciz "Rest1S"
-	.balign 4
+	.4byte 0x52657374
+	.4byte 0x31530000
 
 .global lbl_8055B770
 lbl_8055B770:
 
 	# ROM: 0x497B50
-	.asciz "Rest30M"
+	.4byte 0x52657374
+	.4byte 0x33304D00
 
 .global lbl_8055B778
 lbl_8055B778:
@@ -19308,43 +19792,43 @@ lbl_8055B778:
 lbl_8055B780:
 
 	# ROM: 0x497B60
-	.asciz "TitleN"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x654E0000
 
 .global lbl_8055B788
 lbl_8055B788:
 
 	# ROM: 0x497B68
-	.asciz "BoardN"
-	.balign 4
+	.4byte 0x426F6172
+	.4byte 0x644E0000
 
 .global lbl_8055B790
 lbl_8055B790:
 
 	# ROM: 0x497B70
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055B798
 lbl_8055B798:
 
 	# ROM: 0x497B78
-	.asciz "close"
-	.balign 4
+	.4byte 0x636C6F73
+	.4byte 0x65000000
 
 .global lbl_8055B7A0
 lbl_8055B7A0:
 
 	# ROM: 0x497B80
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B7A8
 lbl_8055B7A8:
 
 	# ROM: 0x497B88
-	.asciz "ScaleN"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654E0000
 
 .global lbl_8055B7B0
 lbl_8055B7B0:
@@ -19362,22 +19846,22 @@ lbl_8055B7B4:
 lbl_8055B7B8:
 
 	# ROM: 0x497B98
-	.asciz "Goal"
-	.balign 4
+	.4byte 0x476F616C
+	.4byte 0
 
 .global lbl_8055B7C0
 lbl_8055B7C0:
 
 	# ROM: 0x497BA0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B7C8
 lbl_8055B7C8:
 
 	# ROM: 0x497BA8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B7D0
 lbl_8055B7D0:
@@ -19390,15 +19874,15 @@ lbl_8055B7D0:
 lbl_8055B7D8:
 
 	# ROM: 0x497BB8
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055B7E0
 lbl_8055B7E0:
 
 	# ROM: 0x497BC0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B7E8
 lbl_8055B7E8:
@@ -19410,8 +19894,8 @@ lbl_8055B7E8:
 lbl_8055B7EC:
 
 	# ROM: 0x497BCC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055B7F8
@@ -19424,22 +19908,22 @@ lbl_8055B7F8:
 lbl_8055B7FC:
 
 	# ROM: 0x497BDC
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B804
 lbl_8055B804:
 
 	# ROM: 0x497BE4
-	.asciz "ScaleN"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654E0000
 
 .global lbl_8055B80C
 lbl_8055B80C:
 
 	# ROM: 0x497BEC
-	.asciz "Lose"
-	.balign 4
+	.4byte 0x4C6F7365
+	.4byte 0
 
 .global lbl_8055B814
 lbl_8055B814:
@@ -19458,42 +19942,43 @@ lbl_8055B818:
 lbl_8055B820:
 
 	# ROM: 0x497C00
-	.asciz "Medal"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C000000
 
 .global lbl_8055B828
 lbl_8055B828:
 
 	# ROM: 0x497C08
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_8055B830
 lbl_8055B830:
 
 	# ROM: 0x497C10
-	.asciz "Bronze"
-	.balign 4
+	.4byte 0x42726F6E
+	.4byte 0x7A650000
 
 .global lbl_8055B838
 lbl_8055B838:
 
 	# ROM: 0x497C18
-	.asciz "Silver"
-	.balign 4
+	.4byte 0x53696C76
+	.4byte 0x65720000
 
 .global lbl_8055B840
 lbl_8055B840:
 
 	# ROM: 0x497C20
-	.asciz "Gold"
-	.balign 4
+	.4byte 0x476F6C64
+	.4byte 0
 
 .global lbl_8055B848
 lbl_8055B848:
 
 	# ROM: 0x497C28
-	.asciz "MinText"
+	.4byte 0x4D696E54
+	.4byte 0x65787400
 
 .global lbl_8055B850
 lbl_8055B850:
@@ -19506,7 +19991,8 @@ lbl_8055B850:
 lbl_8055B858:
 
 	# ROM: 0x497C38
-	.asciz "SecText"
+	.4byte 0x53656354
+	.4byte 0x65787400
 
 .global lbl_8055B860
 lbl_8055B860:
@@ -19518,15 +20004,15 @@ lbl_8055B860:
 lbl_8055B864:
 
 	# ROM: 0x497C44
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B86C
 lbl_8055B86C:
 
 	# ROM: 0x497C4C
-	.asciz "Goal"
-	.balign 4
+	.4byte 0x476F616C
+	.4byte 0
 
 .global lbl_8055B874
 lbl_8055B874:
@@ -19538,63 +20024,64 @@ lbl_8055B874:
 lbl_8055B878:
 
 	# ROM: 0x497C58
-	.asciz "%02u"
-	.balign 4
+	.4byte 0x25303275
+	.4byte 0
 
 .global lbl_8055B880
 lbl_8055B880:
 
 	# ROM: 0x497C60
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B888
 lbl_8055B888:
 
 	# ROM: 0x497C68
-	.asciz "Goal"
-	.balign 4
+	.4byte 0x476F616C
+	.4byte 0
 
 .global lbl_8055B890
 lbl_8055B890:
 
 	# ROM: 0x497C70
-	.asciz "StartN"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x744E0000
 
 .global lbl_8055B898
 lbl_8055B898:
 
 	# ROM: 0x497C78
-	.asciz "GoalN"
-	.balign 4
+	.4byte 0x476F616C
+	.4byte 0x4E000000
 
 .global lbl_8055B8A0
 lbl_8055B8A0:
 
 	# ROM: 0x497C80
-	.asciz "Score"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65000000
 
 .global lbl_8055B8A8
 lbl_8055B8A8:
 
 	# ROM: 0x497C88
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B8B0
 lbl_8055B8B0:
 
 	# ROM: 0x497C90
-	.asciz "Time"
-	.balign 4
+	.4byte 0x54696D65
+	.4byte 0
 
 .global lbl_8055B8B8
 lbl_8055B8B8:
 
 	# ROM: 0x497C98
-	.asciz "MinText"
+	.4byte 0x4D696E54
+	.4byte 0x65787400
 
 .global lbl_8055B8C0
 lbl_8055B8C0:
@@ -19607,35 +20094,36 @@ lbl_8055B8C0:
 lbl_8055B8C8:
 
 	# ROM: 0x497CA8
-	.asciz "SecText"
+	.4byte 0x53656354
+	.4byte 0x65787400
 
 .global lbl_8055B8D0
 lbl_8055B8D0:
 
 	# ROM: 0x497CB0
-	.asciz "%02u"
-	.balign 4
+	.4byte 0x25303275
+	.4byte 0
 
 .global lbl_8055B8D8
 lbl_8055B8D8:
 
 	# ROM: 0x497CB8
-	.asciz "TimeUp"
-	.balign 4
+	.4byte 0x54696D65
+	.4byte 0x55700000
 
 .global lbl_8055B8E0
 lbl_8055B8E0:
 
 	# ROM: 0x497CC0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055B8E8
 lbl_8055B8E8:
 
 	# ROM: 0x497CC8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055B8F0
 lbl_8055B8F0:
@@ -19648,85 +20136,85 @@ lbl_8055B8F0:
 lbl_8055B8F8:
 
 	# ROM: 0x497CD8
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055B900
 lbl_8055B900:
 
 	# ROM: 0x497CE0
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_8055B908
 lbl_8055B908:
 
 	# ROM: 0x497CE8
-	.asciz "Lank"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0
 
 .global lbl_8055B910
 lbl_8055B910:
 
 	# ROM: 0x497CF0
-	.asciz "EndN"
-	.balign 4
+	.4byte 0x456E644E
+	.4byte 0
 
 .global lbl_8055B918
 lbl_8055B918:
 
 	# ROM: 0x497CF8
-	.asciz "LankN"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0x4E000000
 
 .global lbl_8055B920
 lbl_8055B920:
 
 	# ROM: 0x497D00
-	.asciz "Next"
-	.balign 4
+	.4byte 0x4E657874
+	.4byte 0
 
 .global lbl_8055B928
 lbl_8055B928:
 
 	# ROM: 0x497D08
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_8055B930
 lbl_8055B930:
 
 	# ROM: 0x497D10
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055B938
 lbl_8055B938:
 
 	# ROM: 0x497D18
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_8055B940
 lbl_8055B940:
 
 	# ROM: 0x497D20
-	.asciz "BD%02d"
-	.balign 4
+	.4byte 0x42442530
+	.4byte 0x32640000
 
 .global lbl_8055B948
 lbl_8055B948:
 
 	# ROM: 0x497D28
-	.asciz "BDTime"
-	.balign 4
+	.4byte 0x42445469
+	.4byte 0x6D650000
 
 .global lbl_8055B950
 lbl_8055B950:
 
 	# ROM: 0x497D30
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055B958
 lbl_8055B958:
@@ -19738,8 +20226,8 @@ lbl_8055B958:
 lbl_8055B95C:
 
 	# ROM: 0x497D3C
-	.asciz "LankIN"
-	.balign 4
+	.4byte 0x4C616E6B
+	.4byte 0x494E0000
 
 .global lbl_8055B964
 lbl_8055B964:
@@ -19751,166 +20239,169 @@ lbl_8055B964:
 lbl_8055B968:
 
 	# ROM: 0x497D48
-	.asciz "Push"
-	.balign 4
+	.4byte 0x50757368
+	.4byte 0
 
 .global lbl_8055B970
 lbl_8055B970:
 
 	# ROM: 0x497D50
-	.asciz "Medal"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C000000
 
 .global lbl_8055B978
 lbl_8055B978:
 
 	# ROM: 0x497D58
-	.asciz "Kirby%d"
+	.4byte 0x4B697262
+	.4byte 0x79256400
 
 .global lbl_8055B980
 lbl_8055B980:
 
 	# ROM: 0x497D60
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_8055B988
 lbl_8055B988:
 
 	# ROM: 0x497D68
-	.asciz "Mahoroa"
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
 
 .global lbl_8055B990
 lbl_8055B990:
 
 	# ROM: 0x497D70
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_8055B998
 lbl_8055B998:
 
 	# ROM: 0x497D78
-	.asciz "SwordN"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644E0000
 
 .global lbl_8055B9A0
 lbl_8055B9A0:
 
 	# ROM: 0x497D80
-	.asciz "WhipN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x4E000000
 
 .global lbl_8055B9A8
 lbl_8055B9A8:
 
 	# ROM: 0x497D88
-	.asciz "FireN"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0x4E000000
 
 .global lbl_8055B9B0
 lbl_8055B9B0:
 
 	# ROM: 0x497D90
-	.asciz "SparkN"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
 
 .global lbl_8055B9B8
 lbl_8055B9B8:
 
 	# ROM: 0x497D98
-	.asciz "WingN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x4E000000
 
 .global lbl_8055B9C0
 lbl_8055B9C0:
 
 	# ROM: 0x497DA0
-	.asciz "SmashN"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x684E0000
 
 .global lbl_8055B9C8
 lbl_8055B9C8:
 
 	# ROM: 0x497DA8
-	.asciz "ScoreS"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65530000
 
 .global lbl_8055B9D0
 lbl_8055B9D0:
 
 	# ROM: 0x497DB0
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_8055B9D8
 lbl_8055B9D8:
 
 	# ROM: 0x497DB8
-	.asciz "Score"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65000000
 
 .global lbl_8055B9E0
 lbl_8055B9E0:
 
 	# ROM: 0x497DC0
-	.asciz "ScoreP"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65500000
 
 .global lbl_8055B9E8
 lbl_8055B9E8:
 
 	# ROM: 0x497DC8
-	.asciz "BonusN"
-	.balign 4
+	.4byte 0x426F6E75
+	.4byte 0x734E0000
 
 .global lbl_8055B9F0
 lbl_8055B9F0:
 
 	# ROM: 0x497DD0
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055B9F8
 lbl_8055B9F8:
 
 	# ROM: 0x497DD8
-	.asciz "ScoreS"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65530000
 
 .global lbl_8055BA00
 lbl_8055BA00:
 
 	# ROM: 0x497DE0
-	.asciz "ScoreN"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x654E0000
 
 .global lbl_8055BA08
 lbl_8055BA08:
 
 	# ROM: 0x497DE8
-	.asciz "Score"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65000000
 
 .global lbl_8055BA10
 lbl_8055BA10:
 
 	# ROM: 0x497DF0
-	.asciz "ScoreP"
-	.balign 4
+	.4byte 0x53636F72
+	.4byte 0x65500000
 
 .global lbl_8055BA18
 lbl_8055BA18:
 
 	# ROM: 0x497DF8
-	.asciz "BonusN"
-	.balign 4
+	.4byte 0x426F6E75
+	.4byte 0x734E0000
 
 .global lbl_8055BA20
 lbl_8055BA20:
 
 	# ROM: 0x497E00
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055BA28
 lbl_8055BA28:
@@ -19947,183 +20438,190 @@ lbl_8055BA38:
 lbl_8055BA40:
 
 	# ROM: 0x497E20
-	.asciz "Score%s"
+	.4byte 0x53636F72
+	.4byte 0x65257300
 
 .global lbl_8055BA48
 lbl_8055BA48:
 
 	# ROM: 0x497E28
-	.asciz "TransN"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734E0000
 
 .global lbl_8055BA50
 lbl_8055BA50:
 
 	# ROM: 0x497E30
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055BA58
 lbl_8055BA58:
 
 	# ROM: 0x497E38
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BA60
 lbl_8055BA60:
 
 	# ROM: 0x497E40
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055BA68
 lbl_8055BA68:
 
 	# ROM: 0x497E48
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_8055BA70
 lbl_8055BA70:
 
 	# ROM: 0x497E50
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055BA78
 lbl_8055BA78:
 
 	# ROM: 0x497E58
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_8055BA80
 lbl_8055BA80:
 
 	# ROM: 0x497E60
-	.asciz "BGStarN"
+	.4byte 0x42475374
+	.4byte 0x61724E00
 
 .global lbl_8055BA88
 lbl_8055BA88:
 
 	# ROM: 0x497E68
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BA90
 lbl_8055BA90:
 
 	# ROM: 0x497E70
-	.asciz "StarN"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x4E000000
 
 .global lbl_8055BA98
 lbl_8055BA98:
 
 	# ROM: 0x497E78
-	.asciz "ShotN"
-	.balign 4
+	.4byte 0x53686F74
+	.4byte 0x4E000000
 
 .global lbl_8055BAA0
 lbl_8055BAA0:
 
 	# ROM: 0x497E80
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_8055BAA8
 lbl_8055BAA8:
 
 	# ROM: 0x497E88
-	.asciz "NoScore"
+	.4byte 0x4E6F5363
+	.4byte 0x6F726500
 
 .global lbl_8055BAB0
 lbl_8055BAB0:
 
 	# ROM: 0x497E90
-	.asciz "Title"
-	.balign 4
+	.4byte 0x5469746C
+	.4byte 0x65000000
 
 .global lbl_8055BAB8
 lbl_8055BAB8:
 
 	# ROM: 0x497E98
-	.asciz "SmTitle"
+	.4byte 0x536D5469
+	.4byte 0x746C6500
 
 .global lbl_8055BAC0
 lbl_8055BAC0:
 
 	# ROM: 0x497EA0
-	.asciz "FgTitle"
+	.4byte 0x46675469
+	.4byte 0x746C6500
 
 .global lbl_8055BAC8
 lbl_8055BAC8:
 
 	# ROM: 0x497EA8
-	.asciz "Shot"
-	.balign 4
+	.4byte 0x53686F74
+	.4byte 0
 
 .global lbl_8055BAD0
 lbl_8055BAD0:
 
 	# ROM: 0x497EB0
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055BAD8
 lbl_8055BAD8:
 
 	# ROM: 0x497EB8
-	.asciz "SwordN"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644E0000
 
 .global lbl_8055BAE0
 lbl_8055BAE0:
 
 	# ROM: 0x497EC0
-	.asciz "SparkN"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
 
 .global lbl_8055BAE8
 lbl_8055BAE8:
 
 	# ROM: 0x497EC8
-	.asciz "WhipN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x4E000000
 
 .global lbl_8055BAF0
 lbl_8055BAF0:
 
 	# ROM: 0x497ED0
-	.asciz "WingN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x4E000000
 
 .global lbl_8055BAF8
 lbl_8055BAF8:
 
 	# ROM: 0x497ED8
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_8055BB00
 lbl_8055BB00:
 
 	# ROM: 0x497EE0
-	.asciz "SmashN"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x684E0000
 
 .global lbl_8055BB08
 lbl_8055BB08:
 
 	# ROM: 0x497EE8
-	.asciz "Button"
-	.balign 4
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
 
 .global lbl_8055BB10
 lbl_8055BB10:
 
 	# ROM: 0x497EF0
-	.asciz "ButtonN"
+	.4byte 0x42757474
+	.4byte 0x6F6E4E00
 
 .global lbl_8055BB18
 lbl_8055BB18:
@@ -20135,22 +20633,23 @@ lbl_8055BB18:
 lbl_8055BB1C:
 
 	# ROM: 0x497EFC
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 	.4byte 0
 
 .global lbl_8055BB28
 lbl_8055BB28:
 
 	# ROM: 0x497F08
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_8055BB30
 lbl_8055BB30:
 
 	# ROM: 0x497F10
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_8055BB38
 lbl_8055BB38:
@@ -20170,118 +20669,127 @@ lbl_8055BB40:
 lbl_8055BB48:
 
 	# ROM: 0x497F28
-	.asciz "CursorN"
+	.4byte 0x43757273
+	.4byte 0x6F724E00
 
 .global lbl_8055BB50
 lbl_8055BB50:
 
 	# ROM: 0x497F30
-	.asciz "Master"
-	.balign 4
+	.4byte 0x4D617374
+	.4byte 0x65720000
 
 .global lbl_8055BB58
 lbl_8055BB58:
 
 	# ROM: 0x497F38
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_8055BB60
 lbl_8055BB60:
 
 	# ROM: 0x497F40
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_8055BB68
 lbl_8055BB68:
 
 	# ROM: 0x497F48
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_8055BB70
 lbl_8055BB70:
 
 	# ROM: 0x497F50
-	.asciz "Sword"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x64000000
 
 .global lbl_8055BB78
 lbl_8055BB78:
 
 	# ROM: 0x497F58
-	.asciz "Parasol"
+	.4byte 0x50617261
+	.4byte 0x736F6C00
 
 .global lbl_8055BB80
 lbl_8055BB80:
 
 	# ROM: 0x497F60
-	.asciz "Spark"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B000000
 
 .global lbl_8055BB88
 lbl_8055BB88:
 
 	# ROM: 0x497F68
-	.asciz "Master1"
+	.4byte 0x4D617374
+	.4byte 0x65723100
 
 .global lbl_8055BB90
 lbl_8055BB90:
 
 	# ROM: 0x497F70
-	.asciz "Whip"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0
 
 .global lbl_8055BB98
 lbl_8055BB98:
 
 	# ROM: 0x497F78
-	.asciz "Fighter"
+	.4byte 0x46696768
+	.4byte 0x74657200
 
 .global lbl_8055BBA0
 lbl_8055BBA0:
 
 	# ROM: 0x497F80
-	.asciz "Wing"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0
 
 .global lbl_8055BBA8
 lbl_8055BBA8:
 
 	# ROM: 0x497F88
-	.asciz "Master2"
+	.4byte 0x4D617374
+	.4byte 0x65723200
 
 .global lbl_8055BBB0
 lbl_8055BBB0:
 
 	# ROM: 0x497F90
-	.asciz "Smash"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x68000000
 
 .global lbl_8055BBB8
 lbl_8055BBB8:
 
 	# ROM: 0x497F98
-	.asciz "Normal"
-	.balign 4
+	.4byte 0x4E6F726D
+	.4byte 0x616C0000
 
 .global lbl_8055BBC0
 lbl_8055BBC0:
 
 	# ROM: 0x497FA0
-	.asciz "Master3"
+	.4byte 0x4D617374
+	.4byte 0x65723300
 
 .global lbl_8055BBC8
 lbl_8055BBC8:
 
 	# ROM: 0x497FA8
-	.asciz "Master4"
+	.4byte 0x4D617374
+	.4byte 0x65723400
 
 .global lbl_8055BBD0
 lbl_8055BBD0:
 
 	# ROM: 0x497FB0
-	.asciz "SmashEx"
+	.4byte 0x536D6173
+	.4byte 0x68457800
 
 .global lbl_8055BBD8
 lbl_8055BBD8:
@@ -20293,8 +20801,8 @@ lbl_8055BBD8:
 lbl_8055BBDC:
 
 	# ROM: 0x497FBC
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055BBE4
 lbl_8055BBE4:
@@ -20318,22 +20826,22 @@ lbl_8055BBEC:
 lbl_8055BBF0:
 
 	# ROM: 0x497FD0
-	.asciz "Frame"
-	.balign 4
+	.4byte 0x4672616D
+	.4byte 0x65000000
 
 .global lbl_8055BBF8
 lbl_8055BBF8:
 
 	# ROM: 0x497FD8
-	.asciz "Lv%d"
-	.balign 4
+	.4byte 0x4C762564
+	.4byte 0
 
 .global lbl_8055BC00
 lbl_8055BC00:
 
 	# ROM: 0x497FE0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BC08
 lbl_8055BC08:
@@ -20357,151 +20865,156 @@ lbl_8055BC10:
 lbl_8055BC14:
 
 	# ROM: 0x497FF4
-	.asciz "OutS"
-	.balign 4
+	.4byte 0x4F757453
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055BC20
 lbl_8055BC20:
 
 	# ROM: 0x498000
-	.asciz "LvMap"
-	.balign 4
+	.4byte 0x4C764D61
+	.4byte 0x70000000
 
 .global lbl_8055BC28
 lbl_8055BC28:
 
 	# ROM: 0x498008
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055BC30
 lbl_8055BC30:
 
 	# ROM: 0x498010
-	.asciz "NormalN"
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
 
 .global lbl_8055BC38
 lbl_8055BC38:
 
 	# ROM: 0x498018
-	.asciz "FireN"
-	.balign 4
+	.4byte 0x46697265
+	.4byte 0x4E000000
 
 .global lbl_8055BC40
 lbl_8055BC40:
 
 	# ROM: 0x498020
-	.asciz "SwordN"
-	.balign 4
+	.4byte 0x53776F72
+	.4byte 0x644E0000
 
 .global lbl_8055BC48
 lbl_8055BC48:
 
 	# ROM: 0x498028
-	.asciz "WingN"
-	.balign 4
+	.4byte 0x57696E67
+	.4byte 0x4E000000
 
 .global lbl_8055BC50
 lbl_8055BC50:
 
 	# ROM: 0x498030
-	.asciz "WhipN"
-	.balign 4
+	.4byte 0x57686970
+	.4byte 0x4E000000
 
 .global lbl_8055BC58
 lbl_8055BC58:
 
 	# ROM: 0x498038
-	.asciz "SparkN"
-	.balign 4
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
 
 .global lbl_8055BC60
 lbl_8055BC60:
 
 	# ROM: 0x498040
-	.asciz "SmashN"
-	.balign 4
+	.4byte 0x536D6173
+	.4byte 0x684E0000
 
 .global lbl_8055BC68
 lbl_8055BC68:
 
 	# ROM: 0x498048
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055BC70
 lbl_8055BC70:
 
 	# ROM: 0x498050
-	.asciz "BackN"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0x4E000000
 
 .global lbl_8055BC78
 lbl_8055BC78:
 
 	# ROM: 0x498058
-	.asciz "TopN"
-	.balign 4
+	.4byte 0x546F704E
+	.4byte 0
 
 .global lbl_8055BC80
 lbl_8055BC80:
 
 	# ROM: 0x498060
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_8055BC88
 lbl_8055BC88:
 
 	# ROM: 0x498068
-	.asciz "BGStarN"
+	.4byte 0x42475374
+	.4byte 0x61724E00
 
 .global lbl_8055BC90
 lbl_8055BC90:
 
 	# ROM: 0x498070
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BC98
 lbl_8055BC98:
 
 	# ROM: 0x498078
-	.asciz "MedalN"
-	.balign 4
+	.4byte 0x4D656461
+	.4byte 0x6C4E0000
 
 .global lbl_8055BCA0
 lbl_8055BCA0:
 
 	# ROM: 0x498080
-	.asciz "Ranking"
+	.4byte 0x52616E6B
+	.4byte 0x696E6700
 
 .global lbl_8055BCA8
 lbl_8055BCA8:
 
 	# ROM: 0x498088
-	.asciz "Explain"
+	.4byte 0x4578706C
+	.4byte 0x61696E00
 
 .global lbl_8055BCB0
 lbl_8055BCB0:
 
 	# ROM: 0x498090
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055BCB8
 lbl_8055BCB8:
 
 	# ROM: 0x498098
-	.asciz "Plate"
-	.balign 4
+	.4byte 0x506C6174
+	.4byte 0x65000000
 
 .global lbl_8055BCC0
 lbl_8055BCC0:
 
 	# ROM: 0x4980A0
-	.asciz "Ranking"
+	.4byte 0x52616E6B
+	.4byte 0x696E6700
 
 .global lbl_8055BCC8
 lbl_8055BCC8:
@@ -20543,56 +21056,57 @@ lbl_8055BCDC:
 lbl_8055BCE0:
 
 	# ROM: 0x4980C0
-	.asciz "Kirby1"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79310000
 
 .global lbl_8055BCE8
 lbl_8055BCE8:
 
 	# ROM: 0x4980C8
-	.asciz "Name"
-	.balign 4
+	.4byte 0x4E616D65
+	.4byte 0
 
 .global lbl_8055BCF0
 lbl_8055BCF0:
 
 	# ROM: 0x4980D0
-	.asciz "Kirby2"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79320000
 
 .global lbl_8055BCF8
 lbl_8055BCF8:
 
 	# ROM: 0x4980D8
-	.asciz "Kirby3"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79330000
 
 .global lbl_8055BD00
 lbl_8055BD00:
 
 	# ROM: 0x4980E0
-	.asciz "Mahoroa"
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
 
 .global lbl_8055BD08
 lbl_8055BD08:
 
 	# ROM: 0x4980E8
-	.asciz "Appear"
-	.balign 4
+	.4byte 0x41707065
+	.4byte 0x61720000
 
 .global lbl_8055BD10
 lbl_8055BD10:
 
 	# ROM: 0x4980F0
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BD18
 lbl_8055BD18:
 
 	# ROM: 0x4980F8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BD20
 lbl_8055BD20:
@@ -20610,42 +21124,43 @@ lbl_8055BD24:
 lbl_8055BD28:
 
 	# ROM: 0x498108
-	.asciz "Focus"
-	.balign 4
+	.4byte 0x466F6375
+	.4byte 0x73000000
 
 .global lbl_8055BD30
 lbl_8055BD30:
 
 	# ROM: 0x498110
-	.asciz "UnFocus"
+	.4byte 0x556E466F
+	.4byte 0x63757300
 
 .global lbl_8055BD38
 lbl_8055BD38:
 
 	# ROM: 0x498118
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055BD40
 lbl_8055BD40:
 
 	# ROM: 0x498120
-	.asciz "SkipN"
-	.balign 4
+	.4byte 0x536B6970
+	.4byte 0x4E000000
 
 .global lbl_8055BD48
 lbl_8055BD48:
 
 	# ROM: 0x498128
-	.asciz "Skip"
-	.balign 4
+	.4byte 0x536B6970
+	.4byte 0
 
 .global lbl_8055BD50
 lbl_8055BD50:
 
 	# ROM: 0x498130
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055BD58
 lbl_8055BD58:
@@ -20658,15 +21173,15 @@ lbl_8055BD58:
 lbl_8055BD60:
 
 	# ROM: 0x498140
-	.asciz "AnimL"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x4C000000
 
 .global lbl_8055BD68
 lbl_8055BD68:
 
 	# ROM: 0x498148
-	.asciz "Item"
-	.balign 4
+	.4byte 0x4974656D
+	.4byte 0
 
 .global lbl_8055BD70
 lbl_8055BD70:
@@ -20678,8 +21193,8 @@ lbl_8055BD70:
 lbl_8055BD74:
 
 	# ROM: 0x498154
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055BD7C
 lbl_8055BD7C:
@@ -20691,524 +21206,547 @@ lbl_8055BD7C:
 lbl_8055BD80:
 
 	# ROM: 0x498160
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055BD88
 lbl_8055BD88:
 
 	# ROM: 0x498168
-	.asciz "FdJuice"
+	.4byte 0x46644A75
+	.4byte 0x69636500
 
 .global lbl_8055BD90
 lbl_8055BD90:
 
 	# ROM: 0x498170
-	.asciz "FdMeat"
-	.balign 4
+	.4byte 0x46644D65
+	.4byte 0x61740000
 
 .global lbl_8055BD98
 lbl_8055BD98:
 
 	# ROM: 0x498178
-	.asciz "FdGrape"
+	.4byte 0x46644772
+	.4byte 0x61706500
 
 .global lbl_8055BDA0
 lbl_8055BDA0:
 
 	# ROM: 0x498180
-	.asciz "FdCandy"
+	.4byte 0x46644361
+	.4byte 0x6E647900
 
 .global lbl_8055BDA8
 lbl_8055BDA8:
 
 	# ROM: 0x498188
-	.asciz "FdCurry"
+	.4byte 0x46644375
+	.4byte 0x72727900
 
 .global lbl_8055BDB0
 lbl_8055BDB0:
 
 	# ROM: 0x498190
-	.asciz "FdPizza"
+	.4byte 0x46645069
+	.4byte 0x7A7A6100
 
 .global lbl_8055BDB8
 lbl_8055BDB8:
 
 	# ROM: 0x498198
-	.asciz "FdGyoza"
+	.4byte 0x46644779
+	.4byte 0x6F7A6100
 
 .global lbl_8055BDC0
 lbl_8055BDC0:
 
 	# ROM: 0x4981A0
-	.asciz "FdTea"
-	.balign 4
+	.4byte 0x46645465
+	.4byte 0x61000000
 
 .global lbl_8055BDC8
 lbl_8055BDC8:
 
 	# ROM: 0x4981A8
-	.asciz "FdMilk"
-	.balign 4
+	.4byte 0x46644D69
+	.4byte 0x6C6B0000
 
 .global lbl_8055BDD0
 lbl_8055BDD0:
 
 	# ROM: 0x4981B0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BDD8
 lbl_8055BDD8:
 
 	# ROM: 0x4981B8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BDE0
 lbl_8055BDE0:
 
 	# ROM: 0x4981C0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BDE8
 lbl_8055BDE8:
 
 	# ROM: 0x4981C8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BDF0
 lbl_8055BDF0:
 
 	# ROM: 0x4981D0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BDF8
 lbl_8055BDF8:
 
 	# ROM: 0x4981D8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE00
 lbl_8055BE00:
 
 	# ROM: 0x4981E0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE08
 lbl_8055BE08:
 
 	# ROM: 0x4981E8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE10
 lbl_8055BE10:
 
 	# ROM: 0x4981F0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE18
 lbl_8055BE18:
 
 	# ROM: 0x4981F8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE20
 lbl_8055BE20:
 
 	# ROM: 0x498200
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE28
 lbl_8055BE28:
 
 	# ROM: 0x498208
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE30
 lbl_8055BE30:
 
 	# ROM: 0x498210
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE38
 lbl_8055BE38:
 
 	# ROM: 0x498218
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE40
 lbl_8055BE40:
 
 	# ROM: 0x498220
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE48
 lbl_8055BE48:
 
 	# ROM: 0x498228
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE50
 lbl_8055BE50:
 
 	# ROM: 0x498230
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE58
 lbl_8055BE58:
 
 	# ROM: 0x498238
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE60
 lbl_8055BE60:
 
 	# ROM: 0x498240
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE68
 lbl_8055BE68:
 
 	# ROM: 0x498248
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE70
 lbl_8055BE70:
 
 	# ROM: 0x498250
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE78
 lbl_8055BE78:
 
 	# ROM: 0x498258
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE80
 lbl_8055BE80:
 
 	# ROM: 0x498260
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE88
 lbl_8055BE88:
 
 	# ROM: 0x498268
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE90
 lbl_8055BE90:
 
 	# ROM: 0x498270
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BE98
 lbl_8055BE98:
 
 	# ROM: 0x498278
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEA0
 lbl_8055BEA0:
 
 	# ROM: 0x498280
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEA8
 lbl_8055BEA8:
 
 	# ROM: 0x498288
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEB0
 lbl_8055BEB0:
 
 	# ROM: 0x498290
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEB8
 lbl_8055BEB8:
 
 	# ROM: 0x498298
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEC0
 lbl_8055BEC0:
 
 	# ROM: 0x4982A0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEC8
 lbl_8055BEC8:
 
 	# ROM: 0x4982A8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BED0
 lbl_8055BED0:
 
 	# ROM: 0x4982B0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BED8
 lbl_8055BED8:
 
 	# ROM: 0x4982B8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEE0
 lbl_8055BEE0:
 
 	# ROM: 0x4982C0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEE8
 lbl_8055BEE8:
 
 	# ROM: 0x4982C8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055BEF0
 lbl_8055BEF0:
 
 	# ROM: 0x4982D0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BEF8
 lbl_8055BEF8:
 
 	# ROM: 0x4982D8
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055BF00
 lbl_8055BF00:
 
 	# ROM: 0x4982E0
-	.asciz "airfort"
+	.4byte 0x61697266
+	.4byte 0x6F727400
 
 .global lbl_8055BF08
 lbl_8055BF08:
 
 	# ROM: 0x4982E8
-	.asciz "desert"
-	.balign 4
+	.4byte 0x64657365
+	.4byte 0x72740000
 
 .global lbl_8055BF10
 lbl_8055BF10:
 
 	# ROM: 0x4982F0
-	.asciz "grass"
-	.balign 4
+	.4byte 0x67726173
+	.4byte 0x73000000
 
 .global lbl_8055BF18
 lbl_8055BF18:
 
 	# ROM: 0x4982F8
-	.asciz "snow"
-	.balign 4
+	.4byte 0x736E6F77
+	.4byte 0
 
 .global lbl_8055BF20
 lbl_8055BF20:
 
 	# ROM: 0x498300
-	.asciz "stage01"
+	.4byte 0x73746167
+	.4byte 0x65303100
 
 .global lbl_8055BF28
 lbl_8055BF28:
 
 	# ROM: 0x498308
-	.asciz "Step01"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30310000
 
 .global lbl_8055BF30
 lbl_8055BF30:
 
 	# ROM: 0x498310
-	.asciz "Step02"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30320000
 
 .global lbl_8055BF38
 lbl_8055BF38:
 
 	# ROM: 0x498318
-	.asciz "Step03"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30330000
 
 .global lbl_8055BF40
 lbl_8055BF40:
 
 	# ROM: 0x498320
-	.asciz "Step04"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30340000
 
 .global lbl_8055BF48
 lbl_8055BF48:
 
 	# ROM: 0x498328
-	.asciz "stage02"
+	.4byte 0x73746167
+	.4byte 0x65303200
 
 .global lbl_8055BF50
 lbl_8055BF50:
 
 	# ROM: 0x498330
-	.asciz "Step05"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30350000
 
 .global lbl_8055BF58
 lbl_8055BF58:
 
 	# ROM: 0x498338
-	.asciz "Step06"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30360000
 
 .global lbl_8055BF60
 lbl_8055BF60:
 
 	# ROM: 0x498340
-	.asciz "Step07"
-	.balign 4
+	.4byte 0x53746570
+	.4byte 0x30370000
 
 .global lbl_8055BF68
 lbl_8055BF68:
 
 	# ROM: 0x498348
-	.asciz "stage03"
+	.4byte 0x73746167
+	.4byte 0x65303300
 
 .global lbl_8055BF70
 lbl_8055BF70:
 
 	# ROM: 0x498350
-	.asciz "stage04"
+	.4byte 0x73746167
+	.4byte 0x65303400
 
 .global lbl_8055BF78
 lbl_8055BF78:
 
 	# ROM: 0x498358
-	.asciz "stage05"
+	.4byte 0x73746167
+	.4byte 0x65303500
 
 .global lbl_8055BF80
 lbl_8055BF80:
 
 	# ROM: 0x498360
-	.asciz "stage06"
+	.4byte 0x73746167
+	.4byte 0x65303600
 
 .global lbl_8055BF88
 lbl_8055BF88:
 
 	# ROM: 0x498368
-	.asciz "stage07"
+	.4byte 0x73746167
+	.4byte 0x65303700
 
 .global lbl_8055BF90
 lbl_8055BF90:
 
 	# ROM: 0x498370
-	.asciz "stage08"
+	.4byte 0x73746167
+	.4byte 0x65303800
 
 .global lbl_8055BF98
 lbl_8055BF98:
 
 	# ROM: 0x498378
-	.asciz "stage10"
+	.4byte 0x73746167
+	.4byte 0x65313000
 
 .global lbl_8055BFA0
 lbl_8055BFA0:
 
 	# ROM: 0x498380
-	.asciz "master1"
+	.4byte 0x6D617374
+	.4byte 0x65723100
 
 .global lbl_8055BFA8
 lbl_8055BFA8:
 
 	# ROM: 0x498388
-	.asciz "master2"
+	.4byte 0x6D617374
+	.4byte 0x65723200
 
 .global lbl_8055BFB0
 lbl_8055BFB0:
 
 	# ROM: 0x498390
-	.asciz "master3"
+	.4byte 0x6D617374
+	.4byte 0x65723300
 
 .global lbl_8055BFB8
 lbl_8055BFB8:
 
 	# ROM: 0x498398
-	.asciz "master4"
+	.4byte 0x6D617374
+	.4byte 0x65723400
 
 .global lbl_8055BFC0
 lbl_8055BFC0:
 
 	# ROM: 0x4983A0
-	.asciz "other"
-	.balign 4
+	.4byte 0x6F746865
+	.4byte 0x72000000
 
 .global lbl_8055BFC8
 lbl_8055BFC8:
 
 	# ROM: 0x4983A8
-	.asciz "lvmap"
-	.balign 4
+	.4byte 0x6C766D61
+	.4byte 0x70000000
 
 .global lbl_8055BFD0
 lbl_8055BFD0:
 
 	# ROM: 0x4983B0
-	.asciz "Level01"
+	.4byte 0x4C657665
+	.4byte 0x6C303100
 
 .global lbl_8055BFD8
 lbl_8055BFD8:
 
 	# ROM: 0x4983B8
-	.asciz "Level02"
+	.4byte 0x4C657665
+	.4byte 0x6C303200
 
 .global lbl_8055BFE0
 lbl_8055BFE0:
 
 	# ROM: 0x4983C0
-	.asciz "Level03"
+	.4byte 0x4C657665
+	.4byte 0x6C303300
 
 .global lbl_8055BFE8
 lbl_8055BFE8:
 
 	# ROM: 0x4983C8
-	.asciz "credit"
-	.balign 4
+	.4byte 0x63726564
+	.4byte 0x69740000
 
 .global lbl_8055BFF0
 lbl_8055BFF0:
@@ -21228,55 +21766,57 @@ lbl_8055BFF8:
 lbl_8055C000:
 
 	# ROM: 0x4983E0
-	.asciz "BigL"
-	.balign 4
+	.4byte 0x4269674C
+	.4byte 0
 
 .global lbl_8055C008
 lbl_8055C008:
 
 	# ROM: 0x4983E8
-	.asciz "SmallL"
-	.balign 4
+	.4byte 0x536D616C
+	.4byte 0x6C4C0000
 
 .global lbl_8055C010
 lbl_8055C010:
 
 	# ROM: 0x4983F0
-	.asciz "Sphere"
-	.balign 4
+	.4byte 0x53706865
+	.4byte 0x72650000
 
 .global lbl_8055C018
 lbl_8055C018:
 
 	# ROM: 0x4983F8
-	.asciz "FrontAM"
+	.4byte 0x46726F6E
+	.4byte 0x74414D00
 
 .global lbl_8055C020
 lbl_8055C020:
 
 	# ROM: 0x498400
-	.asciz "FrontCM"
+	.4byte 0x46726F6E
+	.4byte 0x74434D00
 
 .global lbl_8055C028
 lbl_8055C028:
 
 	# ROM: 0x498408
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C030
 lbl_8055C030:
 
 	# ROM: 0x498410
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C038
 lbl_8055C038:
 
 	# ROM: 0x498418
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C040
 lbl_8055C040:
@@ -21289,15 +21829,15 @@ lbl_8055C040:
 lbl_8055C048:
 
 	# ROM: 0x498428
-	.asciz "Weapon"
-	.balign 4
+	.4byte 0x57656170
+	.4byte 0x6F6E0000
 
 .global lbl_8055C050
 lbl_8055C050:
 
 	# ROM: 0x498430
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C058
 lbl_8055C058:
@@ -21309,36 +21849,37 @@ lbl_8055C058:
 lbl_8055C05C:
 
 	# ROM: 0x49843C
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C068
 lbl_8055C068:
 
 	# ROM: 0x498448
-	.asciz "AirBall"
+	.4byte 0x41697242
+	.4byte 0x616C6C00
 
 .global lbl_8055C070
 lbl_8055C070:
 
 	# ROM: 0x498450
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C078
 lbl_8055C078:
 
 	# ROM: 0x498458
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C080
 lbl_8055C080:
 
 	# ROM: 0x498460
-	.asciz "PtclL"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x4C000000
 
 .global lbl_8055C088
 lbl_8055C088:
@@ -21351,29 +21892,29 @@ lbl_8055C088:
 lbl_8055C090:
 
 	# ROM: 0x498470
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C098
 lbl_8055C098:
 
 	# ROM: 0x498478
-	.asciz "PtclL"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x4C000000
 
 .global lbl_8055C0A0
 lbl_8055C0A0:
 
 	# ROM: 0x498480
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C0A8
 lbl_8055C0A8:
 
 	# ROM: 0x498488
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C0B0
 lbl_8055C0B0:
@@ -21386,29 +21927,29 @@ lbl_8055C0B0:
 lbl_8055C0B8:
 
 	# ROM: 0x498498
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C0C0
 lbl_8055C0C0:
 
 	# ROM: 0x4984A0
-	.asciz "PtclL"
-	.balign 4
+	.4byte 0x5074636C
+	.4byte 0x4C000000
 
 .global lbl_8055C0C8
 lbl_8055C0C8:
 
 	# ROM: 0x4984A8
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C0D0
 lbl_8055C0D0:
 
 	# ROM: 0x4984B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C0D8
 lbl_8055C0D8:
@@ -21421,8 +21962,8 @@ lbl_8055C0D8:
 lbl_8055C0E0:
 
 	# ROM: 0x4984C0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C0E8
 lbl_8055C0E8:
@@ -21434,22 +21975,23 @@ lbl_8055C0E8:
 lbl_8055C0EC:
 
 	# ROM: 0x4984CC
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C0F8
 lbl_8055C0F8:
 
 	# ROM: 0x4984D8
-	.asciz "BigLoop"
+	.4byte 0x4269674C
+	.4byte 0x6F6F7000
 
 .global lbl_8055C100
 lbl_8055C100:
 
 	# ROM: 0x4984E0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C108
 lbl_8055C108:
@@ -21461,107 +22003,107 @@ lbl_8055C108:
 lbl_8055C10C:
 
 	# ROM: 0x4984EC
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_8055C118
 lbl_8055C118:
 
 	# ROM: 0x4984F8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C120
 lbl_8055C120:
 
 	# ROM: 0x498500
-	.asciz "TransL"
-	.balign 4
+	.4byte 0x5472616E
+	.4byte 0x734C0000
 
 .global lbl_8055C128
 lbl_8055C128:
 
 	# ROM: 0x498508
-	.asciz "RotL"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0
 
 .global lbl_8055C130
 lbl_8055C130:
 
 	# ROM: 0x498510
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C138
 lbl_8055C138:
 
 	# ROM: 0x498518
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C140
 lbl_8055C140:
 
 	# ROM: 0x498520
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C148
 lbl_8055C148:
 
 	# ROM: 0x498528
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C150
 lbl_8055C150:
 
 	# ROM: 0x498530
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055C158
 lbl_8055C158:
 
 	# ROM: 0x498538
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C160
 lbl_8055C160:
 
 	# ROM: 0x498540
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C168
 lbl_8055C168:
 
 	# ROM: 0x498548
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055C170
 lbl_8055C170:
 
 	# ROM: 0x498550
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C178
 lbl_8055C178:
 
 	# ROM: 0x498558
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C180
 lbl_8055C180:
 
 	# ROM: 0x498560
-	.asciz "AllJ"
-	.balign 4
+	.4byte 0x416C6C4A
+	.4byte 0
 
 .global lbl_8055C188
 lbl_8055C188:
@@ -21574,8 +22116,8 @@ lbl_8055C188:
 lbl_8055C190:
 
 	# ROM: 0x498570
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055C198
 lbl_8055C198:
@@ -21587,37 +22129,37 @@ lbl_8055C198:
 lbl_8055C19C:
 
 	# ROM: 0x49857C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C1A8
 lbl_8055C1A8:
 
 	# ROM: 0x498588
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C1B0
 lbl_8055C1B0:
 
 	# ROM: 0x498590
-	.asciz "AllL"
-	.balign 4
+	.4byte 0x416C6C4C
+	.4byte 0
 
 .global lbl_8055C1B8
 lbl_8055C1B8:
 
 	# ROM: 0x498598
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C1C0
 lbl_8055C1C0:
 
 	# ROM: 0x4985A0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C1C8
 lbl_8055C1C8:
@@ -21629,23 +22171,23 @@ lbl_8055C1C8:
 lbl_8055C1CC:
 
 	# ROM: 0x4985AC
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C1D4
 lbl_8055C1D4:
 
 	# ROM: 0x4985B4
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C1E0
 lbl_8055C1E0:
 
 	# ROM: 0x4985C0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C1E8
 lbl_8055C1E8:
@@ -21658,22 +22200,22 @@ lbl_8055C1E8:
 lbl_8055C1F0:
 
 	# ROM: 0x4985D0
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C1F8
 lbl_8055C1F8:
 
 	# ROM: 0x4985D8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C200
 lbl_8055C200:
 
 	# ROM: 0x4985E0
-	.asciz "ScaleL"
-	.balign 4
+	.4byte 0x5363616C
+	.4byte 0x654C0000
 
 .global lbl_8055C208
 lbl_8055C208:
@@ -21686,22 +22228,22 @@ lbl_8055C208:
 lbl_8055C210:
 
 	# ROM: 0x4985F0
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C218
 lbl_8055C218:
 
 	# ROM: 0x4985F8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C220
 lbl_8055C220:
 
 	# ROM: 0x498600
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C228
 lbl_8055C228:
@@ -21713,16 +22255,16 @@ lbl_8055C228:
 lbl_8055C22C:
 
 	# ROM: 0x49860C
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 	.4byte 0
 
 .global lbl_8055C238
 lbl_8055C238:
 
 	# ROM: 0x498618
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C240
 lbl_8055C240:
@@ -21734,106 +22276,107 @@ lbl_8055C240:
 lbl_8055C244:
 
 	# ROM: 0x498624
-	.asciz "Vanish"
-	.balign 4
+	.4byte 0x56616E69
+	.4byte 0x73680000
 
 .global lbl_8055C24C
 lbl_8055C24C:
 
 	# ROM: 0x49862C
-	.asciz "Rotate"
-	.balign 4
+	.4byte 0x526F7461
+	.4byte 0x74650000
 
 .global lbl_8055C254
 lbl_8055C254:
 
 	# ROM: 0x498634
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C260
 lbl_8055C260:
 
 	# ROM: 0x498640
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C268
 lbl_8055C268:
 
 	# ROM: 0x498648
-	.asciz "TailL"
-	.balign 4
+	.4byte 0x5461696C
+	.4byte 0x4C000000
 
 .global lbl_8055C270
 lbl_8055C270:
 
 	# ROM: 0x498650
-	.asciz "EffectL"
+	.4byte 0x45666665
+	.4byte 0x63744C00
 
 .global lbl_8055C278
 lbl_8055C278:
 
 	# ROM: 0x498658
-	.asciz "HeadL"
-	.balign 4
+	.4byte 0x48656164
+	.4byte 0x4C000000
 
 .global lbl_8055C280
 lbl_8055C280:
 
 	# ROM: 0x498660
-	.asciz "Arrow"
-	.balign 4
+	.4byte 0x4172726F
+	.4byte 0x77000000
 
 .global lbl_8055C288
 lbl_8055C288:
 
 	# ROM: 0x498668
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C290
 lbl_8055C290:
 
 	# ROM: 0x498670
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C298
 lbl_8055C298:
 
 	# ROM: 0x498678
-	.asciz "RotL"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0
 
 .global lbl_8055C2A0
 lbl_8055C2A0:
 
 	# ROM: 0x498680
-	.asciz "Cutter"
-	.balign 4
+	.4byte 0x43757474
+	.4byte 0x65720000
 
 .global lbl_8055C2A8
 lbl_8055C2A8:
 
 	# ROM: 0x498688
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C2B0
 lbl_8055C2B0:
 
 	# ROM: 0x498690
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C2B8
 lbl_8055C2B8:
 
 	# ROM: 0x498698
-	.asciz "AnimL"
-	.balign 4
+	.4byte 0x416E696D
+	.4byte 0x4C000000
 
 .global lbl_8055C2C0
 lbl_8055C2C0:
@@ -21846,15 +22389,15 @@ lbl_8055C2C0:
 lbl_8055C2C8:
 
 	# ROM: 0x4986A8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C2D0
 lbl_8055C2D0:
 
 	# ROM: 0x4986B0
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C2D8
 lbl_8055C2D8:
@@ -21866,16 +22409,16 @@ lbl_8055C2D8:
 lbl_8055C2DC:
 
 	# ROM: 0x4986BC
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C2E8
 lbl_8055C2E8:
 
 	# ROM: 0x4986C8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C2F0
 lbl_8055C2F0:
@@ -21887,15 +22430,15 @@ lbl_8055C2F0:
 lbl_8055C2F4:
 
 	# ROM: 0x4986D4
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C2FC
 lbl_8055C2FC:
 
 	# ROM: 0x4986DC
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C308
@@ -21950,29 +22493,29 @@ lbl_8055C324:
 lbl_8055C328:
 
 	# ROM: 0x498708
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C330
 lbl_8055C330:
 
 	# ROM: 0x498710
-	.asciz "RotL"
-	.balign 4
+	.4byte 0x526F744C
+	.4byte 0
 
 .global lbl_8055C338
 lbl_8055C338:
 
 	# ROM: 0x498718
-	.asciz "PtcL"
-	.balign 4
+	.4byte 0x5074634C
+	.4byte 0
 
 .global lbl_8055C340
 lbl_8055C340:
 
 	# ROM: 0x498720
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C348
 lbl_8055C348:
@@ -22002,8 +22545,8 @@ lbl_8055C354:
 lbl_8055C358:
 
 	# ROM: 0x498738
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C360
 lbl_8055C360:
@@ -22016,22 +22559,22 @@ lbl_8055C360:
 lbl_8055C368:
 
 	# ROM: 0x498748
-	.asciz "Model"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
 
 .global lbl_8055C370
 lbl_8055C370:
 
 	# ROM: 0x498750
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C378
 lbl_8055C378:
 
 	# ROM: 0x498758
-	.asciz "AllJ"
-	.balign 4
+	.4byte 0x416C6C4A
+	.4byte 0
 
 .global lbl_8055C380
 lbl_8055C380:
@@ -22044,8 +22587,8 @@ lbl_8055C380:
 lbl_8055C388:
 
 	# ROM: 0x498768
-	.asciz "Loop"
-	.balign 4
+	.4byte 0x4C6F6F70
+	.4byte 0
 
 .global lbl_8055C390
 lbl_8055C390:
@@ -22057,16 +22600,16 @@ lbl_8055C390:
 lbl_8055C394:
 
 	# ROM: 0x498774
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C3A0
 lbl_8055C3A0:
 
 	# ROM: 0x498780
-	.asciz "pCube1"
-	.balign 4
+	.4byte 0x70437562
+	.4byte 0x65310000
 
 .global lbl_8055C3A8
 lbl_8055C3A8:
@@ -22078,15 +22621,16 @@ lbl_8055C3A8:
 lbl_8055C3AC:
 
 	# ROM: 0x49878C
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C3B8
 lbl_8055C3B8:
 
 	# ROM: 0x498798
-	.asciz "TopL1x1"
+	.4byte 0x546F704C
+	.4byte 0x31783100
 
 .global lbl_8055C3C0
 lbl_8055C3C0:
@@ -22099,13 +22643,15 @@ lbl_8055C3C0:
 lbl_8055C3C8:
 
 	# ROM: 0x4987A8
-	.asciz "TopL1x1"
+	.4byte 0x546F704C
+	.4byte 0x31783100
 
 .global lbl_8055C3D0
 lbl_8055C3D0:
 
 	# ROM: 0x4987B0
-	.asciz "TopL2x2"
+	.4byte 0x546F704C
+	.4byte 0x32783200
 
 .global lbl_8055C3D8
 lbl_8055C3D8:
@@ -22118,13 +22664,15 @@ lbl_8055C3D8:
 lbl_8055C3E0:
 
 	# ROM: 0x4987C0
-	.asciz "TopL2x2"
+	.4byte 0x546F704C
+	.4byte 0x32783200
 
 .global lbl_8055C3E8
 lbl_8055C3E8:
 
 	# ROM: 0x4987C8
-	.asciz "TopL3x3"
+	.4byte 0x546F704C
+	.4byte 0x33783300
 
 .global lbl_8055C3F0
 lbl_8055C3F0:
@@ -22137,13 +22685,15 @@ lbl_8055C3F0:
 lbl_8055C3F8:
 
 	# ROM: 0x4987D8
-	.asciz "TopL3x3"
+	.4byte 0x546F704C
+	.4byte 0x33783300
 
 .global lbl_8055C400
 lbl_8055C400:
 
 	# ROM: 0x4987E0
-	.asciz "TopL4x4"
+	.4byte 0x546F704C
+	.4byte 0x34783400
 
 .global lbl_8055C408
 lbl_8055C408:
@@ -22156,7 +22706,8 @@ lbl_8055C408:
 lbl_8055C410:
 
 	# ROM: 0x4987F0
-	.asciz "TopL4x4"
+	.4byte 0x546F704C
+	.4byte 0x34783400
 
 .global lbl_8055C418
 lbl_8055C418:
@@ -22181,7 +22732,8 @@ lbl_8055C420:
 lbl_8055C428:
 
 	# ROM: 0x498808
-	.asciz "TopL1x3"
+	.4byte 0x546F704C
+	.4byte 0x31783300
 
 .global lbl_8055C430
 lbl_8055C430:
@@ -22194,13 +22746,15 @@ lbl_8055C430:
 lbl_8055C438:
 
 	# ROM: 0x498818
-	.asciz "TopL1x3"
+	.4byte 0x546F704C
+	.4byte 0x31783300
 
 .global lbl_8055C440
 lbl_8055C440:
 
 	# ROM: 0x498820
-	.asciz "TopL3x1"
+	.4byte 0x546F704C
+	.4byte 0x33783100
 
 .global lbl_8055C448
 lbl_8055C448:
@@ -22213,7 +22767,8 @@ lbl_8055C448:
 lbl_8055C450:
 
 	# ROM: 0x498830
-	.asciz "TopL3x1"
+	.4byte 0x546F704C
+	.4byte 0x33783100
 
 .global lbl_8055C458
 lbl_8055C458:
@@ -22231,8 +22786,8 @@ lbl_8055C45C:
 lbl_8055C460:
 
 	# ROM: 0x498840
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C468
 lbl_8055C468:
@@ -22244,43 +22799,44 @@ lbl_8055C468:
 lbl_8055C46C:
 
 	# ROM: 0x49884C
-	.asciz "Attack"
-	.balign 4
+	.4byte 0x41747461
+	.4byte 0x636B0000
 
 .global lbl_8055C474
 lbl_8055C474:
 
 	# ROM: 0x498854
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C480
 lbl_8055C480:
 
 	# ROM: 0x498860
-	.asciz "Strap"
-	.balign 4
+	.4byte 0x53747261
+	.4byte 0x70000000
 
 .global lbl_8055C488
 lbl_8055C488:
 
 	# ROM: 0x498868
-	.asciz "FadeOut"
+	.4byte 0x46616465
+	.4byte 0x4F757400
 
 .global lbl_8055C490
 lbl_8055C490:
 
 	# ROM: 0x498870
-	.asciz "Back"
-	.balign 4
+	.4byte 0x4261636B
+	.4byte 0
 
 .global lbl_8055C498
 lbl_8055C498:
 
 	# ROM: 0x498878
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055C4A0
 lbl_8055C4A0:
@@ -22304,36 +22860,37 @@ lbl_8055C4A8:
 lbl_8055C4AC:
 
 	# ROM: 0x49888C
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C4B4
 lbl_8055C4B4:
 
 	# ROM: 0x498894
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 	.4byte 0
 
 .global lbl_8055C4C0
 lbl_8055C4C0:
 
 	# ROM: 0x4988A0
-	.asciz "Curtain"
+	.4byte 0x43757274
+	.4byte 0x61696E00
 
 .global lbl_8055C4C8
 lbl_8055C4C8:
 
 	# ROM: 0x4988A8
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C4D0
 lbl_8055C4D0:
 
 	# ROM: 0x4988B0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055C4D8
 lbl_8055C4D8:
@@ -22345,57 +22902,58 @@ lbl_8055C4D8:
 lbl_8055C4DC:
 
 	# ROM: 0x4988BC
-	.asciz "Start2"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74320000
 
 .global lbl_8055C4E4
 lbl_8055C4E4:
 
 	# ROM: 0x4988C4
-	.asciz "End2"
-	.balign 4
+	.4byte 0x456E6432
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C4F0
 lbl_8055C4F0:
 
 	# ROM: 0x4988D0
-	.asciz "Kirby1"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79310000
 
 .global lbl_8055C4F8
 lbl_8055C4F8:
 
 	# ROM: 0x4988D8
-	.asciz "Kirby2"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79320000
 
 .global lbl_8055C500
 lbl_8055C500:
 
 	# ROM: 0x4988E0
-	.asciz "Kirby3"
-	.balign 4
+	.4byte 0x4B697262
+	.4byte 0x79330000
 
 .global lbl_8055C508
 lbl_8055C508:
 
 	# ROM: 0x4988E8
-	.asciz "Kirby64"
+	.4byte 0x4B697262
+	.4byte 0x79363400
 
 .global lbl_8055C510
 lbl_8055C510:
 
 	# ROM: 0x4988F0
-	.asciz "Range"
-	.balign 4
+	.4byte 0x52616E67
+	.4byte 0x65000000
 
 .global lbl_8055C518
 lbl_8055C518:
 
 	# ROM: 0x4988F8
-	.asciz "Main"
-	.balign 4
+	.4byte 0x4D61696E
+	.4byte 0
 
 .global lbl_8055C520
 lbl_8055C520:
@@ -22413,100 +22971,106 @@ lbl_8055C524:
 lbl_8055C528:
 
 	# ROM: 0x498908
-	.asciz "MenuMC"
-	.balign 4
+	.4byte 0x4D656E75
+	.4byte 0x4D430000
 
 .global lbl_8055C530
 lbl_8055C530:
 
 	# ROM: 0x498910
-	.asciz "MenuTL"
-	.balign 4
+	.4byte 0x4D656E75
+	.4byte 0x544C0000
 
 .global lbl_8055C538
 lbl_8055C538:
 
 	# ROM: 0x498918
-	.asciz "MenuVC"
-	.balign 4
+	.4byte 0x4D656E75
+	.4byte 0x56430000
 
 .global lbl_8055C540
 lbl_8055C540:
 
 	# ROM: 0x498920
-	.asciz "SoftK01"
+	.4byte 0x536F6674
+	.4byte 0x4B303100
 
 .global lbl_8055C548
 lbl_8055C548:
 
 	# ROM: 0x498928
-	.asciz "SoftK02"
+	.4byte 0x536F6674
+	.4byte 0x4B303200
 
 .global lbl_8055C550
 lbl_8055C550:
 
 	# ROM: 0x498930
-	.asciz "SoftK03"
+	.4byte 0x536F6674
+	.4byte 0x4B303300
 
 .global lbl_8055C558
 lbl_8055C558:
 
 	# ROM: 0x498938
-	.asciz "SoftKFC"
+	.4byte 0x536F6674
+	.4byte 0x4B464300
 
 .global lbl_8055C560
 lbl_8055C560:
 
 	# ROM: 0x498940
-	.asciz "SoftK64"
+	.4byte 0x536F6674
+	.4byte 0x4B363400
 
 .global lbl_8055C568
 lbl_8055C568:
 
 	# ROM: 0x498948
-	.asciz "Wait2"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0x32000000
 
 .global lbl_8055C570
 lbl_8055C570:
 
 	# ROM: 0x498950
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055C578
 lbl_8055C578:
 
 	# ROM: 0x498958
-	.asciz "Choose"
-	.balign 4
+	.4byte 0x43686F6F
+	.4byte 0x73650000
 
 .global lbl_8055C580
 lbl_8055C580:
 
 	# ROM: 0x498960
-	.asciz "EffectN"
+	.4byte 0x45666665
+	.4byte 0x63744E00
 
 .global lbl_8055C588
 lbl_8055C588:
 
 	# ROM: 0x498968
-	.asciz "Quit"
-	.balign 4
+	.4byte 0x51756974
+	.4byte 0
 
 .global lbl_8055C590
 lbl_8055C590:
 
 	# ROM: 0x498970
-	.asciz "Decide"
-	.balign 4
+	.4byte 0x44656369
+	.4byte 0x64650000
 
 .global lbl_8055C598
 lbl_8055C598:
 
 	# ROM: 0x498978
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055C5A0
 lbl_8055C5A0:
@@ -22518,15 +23082,15 @@ lbl_8055C5A0:
 lbl_8055C5A4:
 
 	# ROM: 0x498984
-	.asciz "Mode"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0
 
 .global lbl_8055C5AC
 lbl_8055C5AC:
 
 	# ROM: 0x49898C
-	.asciz "ModeN"
-	.balign 4
+	.4byte 0x4D6F6465
+	.4byte 0x4E000000
 
 .global lbl_8055C5B4
 lbl_8055C5B4:
@@ -22538,75 +23102,78 @@ lbl_8055C5B4:
 lbl_8055C5B8:
 
 	# ROM: 0x498998
-	.asciz "ButtonN"
+	.4byte 0x42757474
+	.4byte 0x6F6E4E00
 
 .global lbl_8055C5C0
 lbl_8055C5C0:
 
 	# ROM: 0x4989A0
-	.asciz "Wipe"
-	.balign 4
+	.4byte 0x57697065
+	.4byte 0
 
 .global lbl_8055C5C8
 lbl_8055C5C8:
 
 	# ROM: 0x4989A8
-	.asciz "PlayerN"
+	.4byte 0x506C6179
+	.4byte 0x65724E00
 
 .global lbl_8055C5D0
 lbl_8055C5D0:
 
 	# ROM: 0x4989B0
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055C5D8
 lbl_8055C5D8:
 
 	# ROM: 0x4989B8
-	.asciz "MenuBN"
-	.balign 4
+	.4byte 0x4D656E75
+	.4byte 0x424E0000
 
 .global lbl_8055C5E0
 lbl_8055C5E0:
 
 	# ROM: 0x4989C0
-	.asciz "MenuFN"
-	.balign 4
+	.4byte 0x4D656E75
+	.4byte 0x464E0000
 
 .global lbl_8055C5E8
 lbl_8055C5E8:
 
 	# ROM: 0x4989C8
-	.asciz "VCBN"
-	.balign 4
+	.4byte 0x5643424E
+	.4byte 0
 
 .global lbl_8055C5F0
 lbl_8055C5F0:
 
 	# ROM: 0x4989D0
-	.asciz "VCFN"
-	.balign 4
+	.4byte 0x5643464E
+	.4byte 0
 
 .global lbl_8055C5F8
 lbl_8055C5F8:
 
 	# ROM: 0x4989D8
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055C600
 lbl_8055C600:
 
 	# ROM: 0x4989E0
-	.asciz "PlayerT"
+	.4byte 0x506C6179
+	.4byte 0x65725400
 
 .global lbl_8055C608
 lbl_8055C608:
 
 	# ROM: 0x4989E8
-	.asciz "Open"
-	.balign 4
+	.4byte 0x4F70656E
+	.4byte 0
 
 .global lbl_8055C610
 lbl_8055C610:
@@ -22624,54 +23191,57 @@ lbl_8055C614:
 lbl_8055C618:
 
 	# ROM: 0x4989F8
-	.asciz "Close"
-	.balign 4
+	.4byte 0x436C6F73
+	.4byte 0x65000000
 
 .global lbl_8055C620
 lbl_8055C620:
 
 	# ROM: 0x498A00
-	.asciz "Base"
-	.balign 4
+	.4byte 0x42617365
+	.4byte 0
 
 .global lbl_8055C628
 lbl_8055C628:
 
 	# ROM: 0x498A08
-	.asciz "Design"
-	.balign 4
+	.4byte 0x44657369
+	.4byte 0x676E0000
 
 .global lbl_8055C630
 lbl_8055C630:
 
 	# ROM: 0x498A10
-	.asciz "Sound"
-	.balign 4
+	.4byte 0x536F756E
+	.4byte 0x64000000
 
 .global lbl_8055C638
 lbl_8055C638:
 
 	# ROM: 0x498A18
-	.asciz "Artwork"
+	.4byte 0x41727477
+	.4byte 0x6F726B00
 
 .global lbl_8055C640
 lbl_8055C640:
 
 	# ROM: 0x498A20
-	.asciz "Testing"
+	.4byte 0x54657374
+	.4byte 0x696E6700
 
 .global lbl_8055C648
 lbl_8055C648:
 
 	# ROM: 0x498A28
-	.asciz "Staff"
-	.balign 4
+	.4byte 0x53746166
+	.4byte 0x66000000
 
 .global lbl_8055C650
 lbl_8055C650:
 
 	# ROM: 0x498A30
-	.asciz "CenterN"
+	.4byte 0x43656E74
+	.4byte 0x65724E00
 
 .global lbl_8055C658
 lbl_8055C658:
@@ -22683,15 +23253,16 @@ lbl_8055C658:
 lbl_8055C65C:
 
 	# ROM: 0x498A3C
-	.asciz "Staff2"
-	.balign 4
+	.4byte 0x53746166
+	.4byte 0x66320000
 	.4byte 0
 
 .global lbl_8055C668
 lbl_8055C668:
 
 	# ROM: 0x498A48
-	.asciz "%s_%02u"
+	.4byte 0x25735F25
+	.4byte 0x30327500
 
 .global lbl_8055C670
 lbl_8055C670:
@@ -22704,13 +23275,15 @@ lbl_8055C670:
 lbl_8055C678:
 
 	# ROM: 0x498A58
-	.asciz "Staff1N"
+	.4byte 0x53746166
+	.4byte 0x66314E00
 
 .global lbl_8055C680
 lbl_8055C680:
 
 	# ROM: 0x498A60
-	.asciz "Staff2N"
+	.4byte 0x53746166
+	.4byte 0x66324E00
 
 .global lbl_8055C688
 lbl_8055C688:
@@ -22722,30 +23295,30 @@ lbl_8055C688:
 lbl_8055C68C:
 
 	# ROM: 0x498A6C
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055C694
 lbl_8055C694:
 
 	# ROM: 0x498A74
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 	.4byte 0
 
 .global lbl_8055C6A0
 lbl_8055C6A0:
 
 	# ROM: 0x498A80
-	.asciz "Start"
-	.balign 4
+	.4byte 0x53746172
+	.4byte 0x74000000
 
 .global lbl_8055C6A8
 lbl_8055C6A8:
 
 	# ROM: 0x498A88
-	.asciz "Wait"
-	.balign 4
+	.4byte 0x57616974
+	.4byte 0
 
 .global lbl_8055C6B0
 lbl_8055C6B0:
@@ -22758,22 +23331,22 @@ lbl_8055C6B0:
 lbl_8055C6B8:
 
 	# ROM: 0x498A98
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 
 .global lbl_8055C6C0
 lbl_8055C6C0:
 
 	# ROM: 0x498AA0
-	.asciz "Wipe"
-	.balign 4
+	.4byte 0x57697065
+	.4byte 0
 
 .global lbl_8055C6C8
 lbl_8055C6C8:
 
 	# ROM: 0x498AA8
-	.asciz "TopL"
-	.balign 4
+	.4byte 0x546F704C
+	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -1,4 +1,4 @@
-.include "macros.inc"
+.include "macros.s"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
 
@@ -26,8 +26,8 @@ lbl_8055DF8C:
 lbl_8055DF90:
 
 	# ROM: 0x498AD0
-	.asciz "AM|PM"
-	.balign 4
+	.4byte 0x414D7C50
+	.4byte 0x4D000000
 
 .global lbl_8055DF98
 lbl_8055DF98:
@@ -1887,8 +1887,8 @@ lbl_8055E6F8:
 lbl_8055E700:
 
 	# ROM: 0x499240
-	.asciz "?s33"
-	.balign 4
+	.4byte 0x3F733333
+	.4byte 0
 
 .global lbl_8055E708
 lbl_8055E708:
@@ -6584,8 +6584,8 @@ lbl_8055F64C:
 lbl_8055F650:
 
 	# ROM: 0x49A190
-	.asciz ":MSG:"
-	.balign 4
+	.4byte 0x3A4D5347
+	.4byte 0x3A000000
 
 .global lbl_8055F658
 lbl_8055F658:
@@ -13970,8 +13970,8 @@ lbl_80560DFC:
 lbl_80560E00:
 
 	# ROM: 0x49B940
-	.asciz "?fff"
-	.balign 4
+	.4byte 0x3F666666
+	.4byte 0
 
 .global lbl_80560E08
 lbl_80560E08:
@@ -14191,7 +14191,7 @@ lbl_80560EA0:
 lbl_80560EA4:
 
 	# ROM: 0x49B9E4
-	.4byte func_8029174C
+	.4byte lbl_8029174C
 
 .global lbl_80560EA8
 lbl_80560EA8:
@@ -15921,8 +15921,8 @@ lbl_80561388:
 lbl_80561390:
 
 	# ROM: 0x49BED0
-	.asciz "?s33"
-	.balign 4
+	.4byte 0x3F733333
+	.4byte 0
 
 .global lbl_80561398
 lbl_80561398:
@@ -17286,8 +17286,8 @@ lbl_8056179C:
 lbl_805617A0:
 
 	# ROM: 0x49C2E0
-	.asciz "?333"
-	.balign 4
+	.4byte 0x3F333333
+	.4byte 0
 
 .global lbl_805617A8
 lbl_805617A8:
@@ -19918,8 +19918,8 @@ lbl_80561F9C:
 lbl_80561FA0:
 
 	# ROM: 0x49CAE0
-	.asciz "?333"
-	.balign 4
+	.4byte 0x3F333333
+	.4byte 0
 
 .global lbl_80561FA8
 lbl_80561FA8:
@@ -20931,8 +20931,8 @@ lbl_805622B0:
 lbl_805622B8:
 
 	# ROM: 0x49CDF8
-	.asciz "?s33"
-	.balign 4
+	.4byte 0x3F733333
+	.4byte 0
 
 .global lbl_805622C0
 lbl_805622C0:
@@ -21592,8 +21592,8 @@ lbl_805624A8:
 lbl_805624B0:
 
 	# ROM: 0x49CFF0
-	.asciz "?fff"
-	.balign 4
+	.4byte 0x3F666666
+	.4byte 0
 
 .global lbl_805624B8
 lbl_805624B8:
@@ -24860,8 +24860,8 @@ lbl_80562EA4:
 lbl_80562EA8:
 
 	# ROM: 0x49D9E8
-	.asciz ">fff"
-	.balign 4
+	.4byte 0x3E666666
+	.4byte 0
 
 .global lbl_80562EB0
 lbl_80562EB0:
@@ -27105,8 +27105,8 @@ lbl_80563584:
 lbl_80563588:
 
 	# ROM: 0x49E0C8
-	.asciz "?fff"
-	.balign 4
+	.4byte 0x3F666666
+	.4byte 0
 
 .global lbl_80563590
 lbl_80563590:
@@ -27755,8 +27755,8 @@ lbl_8056378C:
 lbl_80563790:
 
 	# ROM: 0x49E2D0
-	.asciz "?333"
-	.balign 4
+	.4byte 0x3F333333
+	.4byte 0
 
 .global lbl_80563798
 lbl_80563798:
@@ -27900,8 +27900,8 @@ lbl_80563804:
 lbl_80563808:
 
 	# ROM: 0x49E348
-	.asciz "?fff"
-	.balign 4
+	.4byte 0x3F666666
+	.4byte 0
 
 .global lbl_80563810
 lbl_80563810:

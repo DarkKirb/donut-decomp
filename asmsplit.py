@@ -50,7 +50,8 @@ while asmline := remainder or sys.stdin.readline():
                     curfile.write('.include "' + macros + '"\n\n')
 
                 curfile.write(section)
-
+            if trim.startswith("#"):
+                continue
             if trim.startswith('.skip'):
                 curaddr += int(trim[6:], 0)
             elif trim.startswith('.incbin'):
@@ -67,9 +68,19 @@ while asmline := remainder or sys.stdin.readline():
                 if k < s:
                     asmline = f + ', 0x' + format(a, 'X') + ', 0x' + format(k, 'X') + '\n'
                     remainder = f + ', 0x' + format(a + k, 'X') + ', 0x' + format(s - k, 'X') + '\n'
-
+            elif trim.startswith(".balign"):
+                _, alignment = asmline.split(' ')
+                alignment = int(alignment)
+                if curaddr % alignment != 0:
+                    curaddr += 4 - (curaddr % alignment)
             elif not trim.startswith('.global') and not trim.endswith(':'):
-                curaddr += 4
+                if trim.startswith(".2byte"):
+                    curaddr += 2
+                elif trim.startswith(".byte"):
+                    parts = trim.count(",") + 1
+                    curaddr += parts
+                else:
+                    curaddr += 4
 
         if not curfile.closed: curfile.write(asmline)
 

@@ -1,4 +1,4 @@
-.include "macros.inc"
+.include "macros.s"
 
 .section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
 
@@ -159,14 +159,14 @@ lbl_80006834:
 	.4byte lbl_800148E0
 	.4byte 0x8680001D
 	.4byte 0
-	.4byte func_80006BD0
+	.4byte lbl_80006BD0
 	.4byte 0x02000020
 	.4byte lbl_800148E0
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte func_80006BD0
+	.4byte lbl_80006BD0
 	.4byte 0x82000030
-	.4byte func_800149D8
+	.4byte lbl_800149D8
 
 .global lbl_80006894
 lbl_80006894:

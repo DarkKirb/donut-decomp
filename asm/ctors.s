@@ -1,4 +1,4 @@
-.include "macros.inc"
+.include "macros.s"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
 

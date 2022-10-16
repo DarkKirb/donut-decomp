@@ -1,4 +1,4 @@
-.include "macros.inc"
+.include "macros.s"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
 
@@ -7,8 +7,10 @@
 lbl_80406560:
 
 	# ROM: 0x402660
-	.asciz "std::exception"
-	.balign 4
+	.4byte 0x7374643A
+	.4byte 0x3A657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
 
 .global lbl_80406570
 lbl_80406570:
@@ -34,29 +36,70 @@ lbl_80406580:
 lbl_80406598:
 
 	# ROM: 0x402698
-	.asciz "std::bad_exception"
-	.balign 4
+	.4byte 0x7374643A
+	.4byte 0x3A626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
 
 .global lbl_804065AC
 lbl_804065AC:
 
 	# ROM: 0x4026AC
-	.asciz "!bad_exception!!"
-	.byte 0x21, 0x73, 0x74
-	.asciz "d::exception!!std::bad_exception!!"
-	.byte 0x21
-	.asciz "std::bad_exception!!"
-	.balign 4
+	.4byte 0x21626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E2121
+	.4byte 0x00217374
+	.4byte 0x643A3A65
+	.4byte 0x78636570
+	.4byte 0x74696F6E
+	.4byte 0x21217374
+	.4byte 0x643A3A62
+	.4byte 0x61645F65
+	.4byte 0x78636570
+	.4byte 0x74696F6E
+	.4byte 0x21210021
+	.4byte 0x7374643A
+	.4byte 0x3A626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E2121
+	.4byte 0
 	.4byte 0
 
 .global lbl_80406600
 lbl_80406600:
 
 	# ROM: 0x402700
-	.asciz "GCN_Mem_Alloc.c : InitDefaultHeap. No Heap Available\n"
-	.byte 0x4D, 0x65
-	.asciz "trowerks CW runtime library initializing default heap\n"
-	.balign 4
+	.4byte 0x47434E5F
+	.4byte 0x4D656D5F
+	.4byte 0x416C6C6F
+	.4byte 0x632E6320
+	.4byte 0x3A20496E
+	.4byte 0x69744465
+	.4byte 0x6661756C
+	.4byte 0x74486561
+	.4byte 0x702E204E
+	.4byte 0x6F204865
+	.4byte 0x61702041
+	.4byte 0x7661696C
+	.4byte 0x61626C65
+	.4byte 0x0A004D65
+	.4byte 0x74726F77
+	.4byte 0x65726B73
+	.4byte 0x20435720
+	.4byte 0x72756E74
+	.4byte 0x696D6520
+	.4byte 0x6C696272
+	.4byte 0x61727920
+	.4byte 0x696E6974
+	.4byte 0x69616C69
+	.4byte 0x7A696E67
+	.4byte 0x20646566
+	.4byte 0x61756C74
+	.4byte 0x20686561
+	.4byte 0x700A0000
 
 .global lbl_80406670
 lbl_80406670:
@@ -73,19 +116,42 @@ lbl_80406670:
 lbl_80406688:
 
 	# ROM: 0x402788
-	.asciz "542101086242752217003726400434970855712890625"
-	.byte 0x31, 0x31
-	.asciz "102230246251565404236316680908203125"
-	.byte 0x32, 0x33, 0x32
-	.asciz "83064365386962890625"
-	.byte 0x31, 0x35, 0x32
-	.asciz "587890625"
-	.byte 0x33, 0x39
-	.asciz "0625"
-	.byte 0x37, 0x38, 0x31
+	.4byte 0x35343231
+	.4byte 0x30313038
+	.4byte 0x36323432
+	.4byte 0x37353232
+	.4byte 0x31373030
+	.4byte 0x33373236
+	.4byte 0x34303034
+	.4byte 0x33343937
+	.4byte 0x30383535
+	.4byte 0x37313238
+	.4byte 0x39303632
+	.4byte 0x35003131
+	.4byte 0x31303232
+	.4byte 0x33303234
+	.4byte 0x36323531
+	.4byte 0x35363534
+	.4byte 0x30343233
+	.4byte 0x36333136
+	.4byte 0x36383039
+	.4byte 0x30383230
+	.4byte 0x33313235
+	.4byte 0x00323332
+	.4byte 0x38333036
+	.4byte 0x34333635
+	.4byte 0x33383639
+	.4byte 0x36323839
+	.4byte 0x30363235
+	.4byte 0x00313532
+	.4byte 0x35383738
+	.4byte 0x39303632
+	.4byte 0x35003339
+	.4byte 0x30363235
+	.4byte 0x00373831
 	.4byte 0x32350031
-	.asciz "5625"
-	.byte 0x33, 0x31, 0x32
+	.4byte 0x35363235
+	.4byte 0x00333132
 	.4byte 0x35003632
 	.4byte 0x35003132
 	.4byte 0x35003235
@@ -96,8 +162,16 @@ lbl_80406688:
 	.4byte 0x00363400
 	.4byte 0x31323800
 	.4byte 0x32353600
-	.asciz "179769313486231580793728714053034151"
-	.balign 4
+	.4byte 0x31373937
+	.4byte 0x36393331
+	.4byte 0x33343836
+	.4byte 0x32333135
+	.4byte 0x38303739
+	.4byte 0x33373238
+	.4byte 0x37313430
+	.4byte 0x35333033
+	.4byte 0x34313531
+	.4byte 0
 
 .global lbl_80406768
 lbl_80406768:
@@ -374,42 +448,99 @@ lbl_80406A68:
 lbl_80406B68:
 
 	# ROM: 0x402C68
-	.asciz "%a %b %e %T %Y"
-	.balign 4
+	.4byte 0x25612025
+	.4byte 0x62202565
+	.4byte 0x20255420
+	.4byte 0x25590000
 
 .global lbl_80406B78
 lbl_80406B78:
 
 	# ROM: 0x402C78
-	.asciz "%I:%M:%S %p"
+	.4byte 0x25493A25
+	.4byte 0x4D3A2553
+	.4byte 0x20257000
 
 .global lbl_80406B84
 lbl_80406B84:
 
 	# ROM: 0x402C84
-	.asciz "%m/%d/%y"
-	.balign 4
+	.4byte 0x256D2F25
+	.4byte 0x642F2579
+	.4byte 0
 
 .global lbl_80406B90
 lbl_80406B90:
 
 	# ROM: 0x402C90
-	.asciz "Sun|Sunday|Mon|Monday|Tue|Tuesday|Wed|Wednesday|Thu|Thursday|Fri|Friday|Sat|Saturday"
-	.balign 4
+	.4byte 0x53756E7C
+	.4byte 0x53756E64
+	.4byte 0x61797C4D
+	.4byte 0x6F6E7C4D
+	.4byte 0x6F6E6461
+	.4byte 0x797C5475
+	.4byte 0x657C5475
+	.4byte 0x65736461
+	.4byte 0x797C5765
+	.4byte 0x647C5765
+	.4byte 0x646E6573
+	.4byte 0x6461797C
+	.4byte 0x5468757C
+	.4byte 0x54687572
+	.4byte 0x73646179
+	.4byte 0x7C467269
+	.4byte 0x7C467269
+	.4byte 0x6461797C
+	.4byte 0x5361747C
+	.4byte 0x53617475
+	.4byte 0x72646179
+	.4byte 0
 
 .global lbl_80406BE8
 lbl_80406BE8:
 
 	# ROM: 0x402CE8
-	.asciz "Jan|January|Feb|February|Mar|March|Apr|April|May|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December"
-	.balign 4
+	.4byte 0x4A616E7C
+	.4byte 0x4A616E75
+	.4byte 0x6172797C
+	.4byte 0x4665627C
+	.4byte 0x46656272
+	.4byte 0x75617279
+	.4byte 0x7C4D6172
+	.4byte 0x7C4D6172
+	.4byte 0x63687C41
+	.4byte 0x70727C41
+	.4byte 0x7072696C
+	.4byte 0x7C4D6179
+	.4byte 0x7C4D6179
+	.4byte 0x7C4A756E
+	.4byte 0x7C4A756E
+	.4byte 0x657C4A75
+	.4byte 0x6C7C4A75
+	.4byte 0x6C797C41
+	.4byte 0x75677C41
+	.4byte 0x75677573
+	.4byte 0x747C5365
+	.4byte 0x707C5365
+	.4byte 0x7074656D
+	.4byte 0x6265727C
+	.4byte 0x4F63747C
+	.4byte 0x4F63746F
+	.4byte 0x6265727C
+	.4byte 0x4E6F767C
+	.4byte 0x4E6F7665
+	.4byte 0x6D626572
+	.4byte 0x7C446563
+	.4byte 0x7C446563
+	.4byte 0x656D6265
+	.4byte 0x72000000
 
 .global lbl_80406C70
 lbl_80406C70:
 
 	# ROM: 0x402D70
-	.asciz "-INF"
-	.byte 0x2D, 0x69, 0x6E
+	.4byte 0x2D494E46
+	.4byte 0x002D696E
 	.4byte 0x6600494E
 	.4byte 0x4600696E
 	.4byte 0x66002D4E
@@ -974,16 +1105,16 @@ lbl_80407478:
 	# ROM: 0x403578
 	.4byte 0x3FF921FB
 	.4byte 0x40000000
-	.asciz ">tD-"
-	.balign 4
+	.4byte 0x3E74442D
+	.4byte 0
 	.4byte 0x3CF84698
 	.4byte 0x80000000
 	.4byte 0x3B78CC51
 	.4byte 0x60000000
 	.4byte 0x39F01B83
 	.4byte 0x80000000
-	.asciz "8z% @"
-	.balign 4
+	.4byte 0x387A2520
+	.4byte 0x40000000
 	.4byte 0x36E38222
 	.4byte 0x80000000
 	.4byte 0x3569F31D
@@ -1067,56 +1198,147 @@ lbl_80407520:
 lbl_804075B8:
 
 	# ROM: 0x4036B8
-	.asciz "std::tr1::detail::shared_ptr_deleter<char, std::detail::default_delete<char[]>>"
+	.4byte 0x7374643A
+	.4byte 0x3A747231
+	.4byte 0x3A3A6465
+	.4byte 0x7461696C
+	.4byte 0x3A3A7368
+	.4byte 0x61726564
+	.4byte 0x5F707472
+	.4byte 0x5F64656C
+	.4byte 0x65746572
+	.4byte 0x3C636861
+	.4byte 0x722C2073
+	.4byte 0x74643A3A
+	.4byte 0x64657461
+	.4byte 0x696C3A3A
+	.4byte 0x64656661
+	.4byte 0x756C745F
+	.4byte 0x64656C65
+	.4byte 0x74653C63
+	.4byte 0x6861725B
+	.4byte 0x5D3E3E00
 
 .global lbl_80407608
 lbl_80407608:
 
 	# ROM: 0x403708
-	.asciz "std::tr1::detail::shared_ptr_deleter_common"
+	.4byte 0x7374643A
+	.4byte 0x3A747231
+	.4byte 0x3A3A6465
+	.4byte 0x7461696C
+	.4byte 0x3A3A7368
+	.4byte 0x61726564
+	.4byte 0x5F707472
+	.4byte 0x5F64656C
+	.4byte 0x65746572
+	.4byte 0x5F636F6D
+	.4byte 0x6D6F6E00
 
 .global lbl_80407634
 lbl_80407634:
 
 	# ROM: 0x403734
-	.asciz "std::detail::default_delete<char[]>"
+	.4byte 0x7374643A
+	.4byte 0x3A646574
+	.4byte 0x61696C3A
+	.4byte 0x3A646566
+	.4byte 0x61756C74
+	.4byte 0x5F64656C
+	.4byte 0x6574653C
+	.4byte 0x63686172
+	.4byte 0x5B5D3E00
 
 .global lbl_80407658
 lbl_80407658:
 
 	# ROM: 0x403758
-	.asciz "std::out_of_range"
-	.balign 4
+	.4byte 0x7374643A
+	.4byte 0x3A6F7574
+	.4byte 0x5F6F665F
+	.4byte 0x72616E67
+	.4byte 0x65000000
 
 .global lbl_8040766C
 lbl_8040766C:
 
 	# ROM: 0x40376C
-	.asciz "std::length_error"
-	.balign 4
+	.4byte 0x7374643A
+	.4byte 0x3A6C656E
+	.4byte 0x6774685F
+	.4byte 0x6572726F
+	.4byte 0x72000000
 
 .global lbl_80407680
 lbl_80407680:
 
 	# ROM: 0x403780
-	.asciz "std::logic_error"
-	.balign 4
+	.4byte 0x7374643A
+	.4byte 0x3A6C6F67
+	.4byte 0x69635F65
+	.4byte 0x72726F72
+	.4byte 0
 
 .global lbl_80407694
 lbl_80407694:
 
 	# ROM: 0x403794
-	.asciz "vector length error"
-	.asciz "!std::exception!!std::logic_error!!std::length_error!!"
-	.byte 0x62
-	.asciz "asic_string: out_of_range"
-	.byte 0x21, 0x73
-	.asciz "td::exception!!std::logic_error!!std::out_of_range!!"
-	.byte 0x43, 0x00, 0x2A
+	.4byte 0x76656374
+	.4byte 0x6F72206C
+	.4byte 0x656E6774
+	.4byte 0x68206572
+	.4byte 0x726F7200
+	.4byte 0x21737464
+	.4byte 0x3A3A6578
+	.4byte 0x63657074
+	.4byte 0x696F6E21
+	.4byte 0x21737464
+	.4byte 0x3A3A6C6F
+	.4byte 0x6769635F
+	.4byte 0x6572726F
+	.4byte 0x72212173
+	.4byte 0x74643A3A
+	.4byte 0x6C656E67
+	.4byte 0x74685F65
+	.4byte 0x72726F72
+	.4byte 0x21210062
+	.4byte 0x61736963
+	.4byte 0x5F737472
+	.4byte 0x696E673A
+	.4byte 0x206F7574
+	.4byte 0x5F6F665F
+	.4byte 0x72616E67
+	.4byte 0x65002173
+	.4byte 0x74643A3A
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E212173
+	.4byte 0x74643A3A
+	.4byte 0x6C6F6769
+	.4byte 0x635F6572
+	.4byte 0x726F7221
+	.4byte 0x21737464
+	.4byte 0x3A3A6F75
+	.4byte 0x745F6F66
+	.4byte 0x5F72616E
+	.4byte 0x67652121
+	.4byte 0x0043002A
 	.4byte 0x00626173
-	.asciz "ic_string: length_error"
-	.asciz "basic_string::reserve length_error"
-	.balign 4
+	.4byte 0x69635F73
+	.4byte 0x7472696E
+	.4byte 0x673A206C
+	.4byte 0x656E6774
+	.4byte 0x685F6572
+	.4byte 0x726F7200
+	.4byte 0x62617369
+	.4byte 0x635F7374
+	.4byte 0x72696E67
+	.4byte 0x3A3A7265
+	.4byte 0x73657276
+	.4byte 0x65206C65
+	.4byte 0x6E677468
+	.4byte 0x5F657272
+	.4byte 0x6F720000
 	.4byte 0
 
 .global lbl_80407778
@@ -1244,8 +1466,23 @@ lbl_80407888:
 lbl_804078A8:
 
 	# ROM: 0x4039A8
-	.asciz "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_./"
-	.balign 4
+	.4byte 0x30313233
+	.4byte 0x34353637
+	.4byte 0x38396162
+	.4byte 0x63646566
+	.4byte 0x6768696A
+	.4byte 0x6B6C6D6E
+	.4byte 0x6F707172
+	.4byte 0x73747576
+	.4byte 0x7778797A
+	.4byte 0x41424344
+	.4byte 0x45464748
+	.4byte 0x494A4B4C
+	.4byte 0x4D4E4F50
+	.4byte 0x51525354
+	.4byte 0x55565758
+	.4byte 0x595A2D5F
+	.4byte 0x2E2F0000
 	.4byte 0
 
 .global lbl_804078F0
@@ -1528,22 +1765,37 @@ lbl_80407B50:
 lbl_80407C50:
 
 	# ROM: 0x403D50
-	.asciz "/shared2/sys"
-	.balign 4
+	.4byte 0x2F736861
+	.4byte 0x72656432
+	.4byte 0x2F737973
+	.4byte 0
 
 .global lbl_80407C60
 lbl_80407C60:
 
 	# ROM: 0x403D60
-	.asciz "/shared2/sys/SYSCONF"
-	.balign 4
+	.4byte 0x2F736861
+	.4byte 0x72656432
+	.4byte 0x2F737973
+	.4byte 0x2F535953
+	.4byte 0x434F4E46
+	.4byte 0
 
 .global lbl_80407C78
 lbl_80407C78:
 
 	# ROM: 0x403D78
-	.asciz "/title/00000001/00000002/data/setting.txt"
-	.balign 4
+	.4byte 0x2F746974
+	.4byte 0x6C652F30
+	.4byte 0x30303030
+	.4byte 0x3030312F
+	.4byte 0x30303030
+	.4byte 0x30303032
+	.4byte 0x2F646174
+	.4byte 0x612F7365
+	.4byte 0x7474696E
+	.4byte 0x672E7478
+	.4byte 0x74000000
 	.4byte 0
 
 .global lbl_80407CA8
@@ -1923,7 +2175,7 @@ lbl_80408070:
 	.4byte lbl_8007C360
 	.4byte lbl_8007C620
 	.4byte lbl_8007C3B8
-	.4byte func_8007BE1C
+	.4byte lbl_8007BE1C
 	.4byte lbl_8007BFB0
 	.4byte lbl_8007CCB4
 	.4byte lbl_8007CA18
@@ -2212,23 +2464,28 @@ lbl_804083A0:
 
 	# ROM: 0x4044A0
 	.4byte 0x0000000A
-	.asciz "AnmObjVis"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5669
+	.4byte 0x73000000
 
 .global lbl_804083B0
 lbl_804083B0:
 
 	# ROM: 0x4044B0
 	.4byte 0x0000000E
-	.asciz "AnmObjVisNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5669
+	.4byte 0x734E6F64
+	.4byte 0x65000000
 
 .global lbl_804083C4
 lbl_804083C4:
 
 	# ROM: 0x4044C4
 	.4byte 0x0000000C
-	.asciz "AnmObjVisOR"
+	.4byte 0x416E6D4F
+	.4byte 0x626A5669
+	.4byte 0x734F5200
 	.4byte 0
 
 .global lbl_804083D8
@@ -2236,8 +2493,10 @@ lbl_804083D8:
 
 	# ROM: 0x4044D8
 	.4byte 0x0000000D
-	.asciz "AnmObjVisRes"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5669
+	.4byte 0x73526573
+	.4byte 0
 	.4byte 0
 
 .global lbl_804083F0
@@ -2245,8 +2504,10 @@ lbl_804083F0:
 
 	# ROM: 0x4044F0
 	.4byte 0x0000000D
-	.asciz "AnmObjMatClr"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4D61
+	.4byte 0x74436C72
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408408
@@ -2254,16 +2515,23 @@ lbl_80408408:
 
 	# ROM: 0x404508
 	.4byte 0x00000011
-	.asciz "AnmObjMatClrNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4D61
+	.4byte 0x74436C72
+	.4byte 0x4E6F6465
+	.4byte 0
 
 .global lbl_80408420
 lbl_80408420:
 
 	# ROM: 0x404520
 	.4byte 0x00000015
-	.asciz "AnmObjMatClrOverride"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4D61
+	.4byte 0x74436C72
+	.4byte 0x4F766572
+	.4byte 0x72696465
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408440
@@ -2271,7 +2539,10 @@ lbl_80408440:
 
 	# ROM: 0x404540
 	.4byte 0x00000010
-	.asciz "AnmObjMatClrRes"
+	.4byte 0x416E6D4F
+	.4byte 0x626A4D61
+	.4byte 0x74436C72
+	.4byte 0x52657300
 	.4byte 0
 
 .global lbl_80408458
@@ -2279,8 +2550,10 @@ lbl_80408458:
 
 	# ROM: 0x404558
 	.4byte 0x0000000D
-	.asciz "AnmObjTexPat"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78506174
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408470
@@ -2288,16 +2561,23 @@ lbl_80408470:
 
 	# ROM: 0x404570
 	.4byte 0x00000011
-	.asciz "AnmObjTexPatNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78506174
+	.4byte 0x4E6F6465
+	.4byte 0
 
 .global lbl_80408488
 lbl_80408488:
 
 	# ROM: 0x404588
 	.4byte 0x00000015
-	.asciz "AnmObjTexPatOverride"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78506174
+	.4byte 0x4F766572
+	.4byte 0x72696465
+	.4byte 0
 	.4byte 0
 
 .global lbl_804084A8
@@ -2305,7 +2585,10 @@ lbl_804084A8:
 
 	# ROM: 0x4045A8
 	.4byte 0x00000010
-	.asciz "AnmObjTexPatRes"
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78506174
+	.4byte 0x52657300
 	.4byte 0
 
 .global lbl_804084C0
@@ -2313,8 +2596,10 @@ lbl_804084C0:
 
 	# ROM: 0x4045C0
 	.4byte 0x0000000D
-	.asciz "AnmObjTexSrt"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78537274
+	.4byte 0
 	.4byte 0
 
 .global lbl_804084D8
@@ -2322,16 +2607,23 @@ lbl_804084D8:
 
 	# ROM: 0x4045D8
 	.4byte 0x00000011
-	.asciz "AnmObjTexSrtNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78537274
+	.4byte 0x4E6F6465
+	.4byte 0
 
 .global lbl_804084F0
 lbl_804084F0:
 
 	# ROM: 0x4045F0
 	.4byte 0x00000015
-	.asciz "AnmObjTexSrtOverride"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78537274
+	.4byte 0x4F766572
+	.4byte 0x72696465
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408510
@@ -2339,7 +2631,10 @@ lbl_80408510:
 
 	# ROM: 0x404610
 	.4byte 0x00000010
-	.asciz "AnmObjTexSrtRes"
+	.4byte 0x416E6D4F
+	.4byte 0x626A5465
+	.4byte 0x78537274
+	.4byte 0x52657300
 	.4byte 0
 
 .global lbl_80408528
@@ -2347,32 +2642,39 @@ lbl_80408528:
 
 	# ROM: 0x404628
 	.4byte 0x0000000A
-	.asciz "AnmObjChr"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4368
+	.4byte 0x72000000
 
 .global lbl_80408538
 lbl_80408538:
 
 	# ROM: 0x404638
 	.4byte 0x0000000E
-	.asciz "AnmObjChrNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4368
+	.4byte 0x724E6F64
+	.4byte 0x65000000
 
 .global lbl_8040854C
 lbl_8040854C:
 
 	# ROM: 0x40464C
 	.4byte 0x0000000F
-	.asciz "AnmObjChrBlend"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4368
+	.4byte 0x72426C65
+	.4byte 0x6E640000
 
 .global lbl_80408560
 lbl_80408560:
 
 	# ROM: 0x404660
 	.4byte 0x0000000D
-	.asciz "AnmObjChrRes"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A4368
+	.4byte 0x72526573
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408578
@@ -2380,32 +2682,39 @@ lbl_80408578:
 
 	# ROM: 0x404678
 	.4byte 0x0000000A
-	.asciz "AnmObjShp"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5368
+	.4byte 0x70000000
 
 .global lbl_80408588
 lbl_80408588:
 
 	# ROM: 0x404688
 	.4byte 0x0000000E
-	.asciz "AnmObjShpNode"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5368
+	.4byte 0x704E6F64
+	.4byte 0x65000000
 
 .global lbl_8040859C
 lbl_8040859C:
 
 	# ROM: 0x40469C
 	.4byte 0x0000000F
-	.asciz "AnmObjShpBlend"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5368
+	.4byte 0x70426C65
+	.4byte 0x6E640000
 
 .global lbl_804085B0
 lbl_804085B0:
 
 	# ROM: 0x4046B0
 	.4byte 0x0000000D
-	.asciz "AnmObjShpRes"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A5368
+	.4byte 0x70526573
+	.4byte 0
 	.4byte 0
 
 .global lbl_804085C8
@@ -2413,8 +2722,8 @@ lbl_804085C8:
 
 	# ROM: 0x4046C8
 	.4byte 0x00000007
-	.asciz "AnmScn"
-	.balign 4
+	.4byte 0x416E6D53
+	.4byte 0x636E0000
 	.4byte 0
 
 .global lbl_804085D8
@@ -2422,16 +2731,17 @@ lbl_804085D8:
 
 	# ROM: 0x4046D8
 	.4byte 0x0000000A
-	.asciz "AnmScnRes"
-	.balign 4
+	.4byte 0x416E6D53
+	.4byte 0x636E5265
+	.4byte 0x73000000
 
 .global lbl_804085E8
 lbl_804085E8:
 
 	# ROM: 0x4046E8
 	.4byte 0x00000007
-	.asciz "G3dObj"
-	.balign 4
+	.4byte 0x4733644F
+	.4byte 0x626A0000
 	.4byte 0
 
 .global lbl_804085F8
@@ -2439,8 +2749,8 @@ lbl_804085F8:
 
 	# ROM: 0x4046F8
 	.4byte 0x00000007
-	.asciz "AnmObj"
-	.balign 4
+	.4byte 0x416E6D4F
+	.4byte 0x626A0000
 	.4byte 0
 
 .global lbl_80408608
@@ -3015,7 +3325,7 @@ lbl_80408E3C:
 	.4byte lbl_800E8250
 	.4byte lbl_800E8090
 	.4byte lbl_800E81C0
-	.4byte func_800E7F20
+	.4byte lbl_800E7F20
 	.4byte lbl_800E7F50
 	.4byte lbl_800E7E10
 	.4byte lbl_800E7D90
@@ -3049,8 +3359,8 @@ lbl_80408E90:
 
 	# ROM: 0x404F90
 	.4byte 0x00000007
-	.asciz "ScnObj"
-	.balign 4
+	.4byte 0x53636E4F
+	.4byte 0x626A0000
 	.4byte 0
 
 .global lbl_80408EA0
@@ -3058,7 +3368,8 @@ lbl_80408EA0:
 
 	# ROM: 0x404FA0
 	.4byte 0x00000008
-	.asciz "ScnLeaf"
+	.4byte 0x53636E4C
+	.4byte 0x65616600
 	.4byte 0
 
 .global lbl_80408EB0
@@ -3066,15 +3377,17 @@ lbl_80408EB0:
 
 	# ROM: 0x404FB0
 	.4byte 0x00000009
-	.asciz "ScnGroup"
-	.balign 4
+	.4byte 0x53636E47
+	.4byte 0x726F7570
+	.4byte 0
 
 .global lbl_80408EC0
 lbl_80408EC0:
 
 	# ROM: 0x404FC0
 	.4byte 0x00000008
-	.asciz "ScnRoot"
+	.4byte 0x53636E52
+	.4byte 0x6F6F7400
 	.4byte 0
 
 .global lbl_80408ED0
@@ -3082,8 +3395,10 @@ lbl_80408ED0:
 
 	# ROM: 0x404FD0
 	.4byte 0x0000000D
-	.asciz "ScnMdlSimple"
-	.balign 4
+	.4byte 0x53636E4D
+	.4byte 0x646C5369
+	.4byte 0x6D706C65
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408EE8
@@ -3091,8 +3406,8 @@ lbl_80408EE8:
 
 	# ROM: 0x404FE8
 	.4byte 0x00000007
-	.asciz "ScnMdl"
-	.balign 4
+	.4byte 0x53636E4D
+	.4byte 0x646C0000
 	.4byte 0
 
 .global lbl_80408EF8
@@ -3100,8 +3415,10 @@ lbl_80408EF8:
 
 	# ROM: 0x404FF8
 	.4byte 0x0000000D
-	.asciz "ScnMdlExpand"
-	.balign 4
+	.4byte 0x53636E4D
+	.4byte 0x646C4578
+	.4byte 0x70616E64
+	.4byte 0
 	.4byte 0
 
 .global lbl_80408F10
@@ -5241,8 +5558,8 @@ lbl_8040AFB4:
 	.4byte 0xC4AF0907
 	.4byte 0x36A23ABB
 	.4byte 0x0000C545
-	.asciz "\n15v:("
-	.balign 4
+	.4byte 0x0A313576
+	.4byte 0x3A280000
 	.4byte 0xC5D80B53
 	.4byte 0x3451399A
 	.4byte 0x0000C666
@@ -8077,8 +8394,10 @@ lbl_8040DB28:
 	.4byte 0xFFFFFFFF
 	.4byte 0xFFFFFFFF
 	.4byte 0xFF296465
-	.asciz "f+gh%&i*j',k"
-	.byte 0x01, 0x02, 0x03
+	.4byte 0x662B6768
+	.4byte 0x2526692A
+	.4byte 0x6A272C6B
+	.4byte 0x00010203
 	.4byte 0x04050607
 	.4byte 0x0809246C
 	.4byte 0x6D6E6F28
@@ -8295,14 +8614,21 @@ lbl_8040DE04:
 lbl_8040DE08:
 
 	# ROM: 0x409F08
-	.asciz "wt\\HomeButtonSe.wt"
-	.balign 4
+	.4byte 0x77745C48
+	.4byte 0x6F6D6542
+	.4byte 0x7574746F
+	.4byte 0x6E53652E
+	.4byte 0x77740000
 
 .global lbl_8040DE1C
 lbl_8040DE1C:
 
 	# ROM: 0x409F1C
-	.asciz "wt\\HomeButtonSe.pcm"
+	.4byte 0x77745C48
+	.4byte 0x6F6D6542
+	.4byte 0x7574746F
+	.4byte 0x6E53652E
+	.4byte 0x70636D00
 	.4byte 0
 	.4byte 0x41200000
 	.4byte 0x41A00000
@@ -8535,8 +8861,8 @@ lbl_8040E150:
 	.4byte 0x41100000
 	.4byte 0x43340000
 	.4byte 0x47000000
-	.asciz "AK33"
-	.byte 0x00, 0x00, 0xFF
+	.4byte 0x414B3333
+	.4byte 0x000000FF
 	.4byte 0x000000FF
 	.4byte 0x000000FF
 	.4byte 0xC3FA0000
@@ -9278,8 +9604,8 @@ lbl_8040E908:
 	.4byte lbl_801549E0
 	.4byte lbl_80154C00
 	.4byte lbl_80154E20
-	.4byte func_80162610
-	.4byte func_80161CD0
+	.4byte lbl_80162610
+	.4byte lbl_80161CD0
 	.4byte lbl_80155040
 	.4byte lbl_801550D0
 
@@ -15577,8 +15903,9 @@ lbl_80414500:
 lbl_80414518:
 
 	# ROM: 0x410618
-	.asciz ":EXFlag:"
-	.balign 4
+	.4byte 0x3A455846
+	.4byte 0x6C61673A
+	.4byte 0
 	.4byte 0
 
 .global lbl_80414528
@@ -18018,8 +18345,8 @@ lbl_804163D0:
 
 	# ROM: 0x4124D0
 	.4byte 0x3F800000
-	.asciz "?333?"
-	.balign 4
+	.4byte 0x3F333333
+	.4byte 0x3F000000
 	.4byte 0x3ECCCCCD
 	.4byte 0x3E99999A
 	.4byte 0x3E4CCCCD
@@ -22623,10 +22950,10 @@ lbl_8041A0A0:
 	.4byte lbl_8035C77C
 	.4byte lbl_8035BBE4
 	.4byte lbl_8035BDCC
-	.4byte func_8035C65C
-	.4byte func_8035C65C
-	.4byte func_8035C65C
-	.4byte func_8035C65C
+	.4byte lbl_8035C65C
+	.4byte lbl_8035C65C
+	.4byte lbl_8035C65C
+	.4byte lbl_8035C65C
 	.4byte lbl_8035C7A4
 	.4byte lbl_8035BC0C
 	.4byte lbl_8035BDF4
@@ -29863,8 +30190,8 @@ lbl_80420BF0:
 	.4byte 0x4047AE14
 	.4byte 0
 	.4byte 0x41D4CCCD
-	.asciz "?333"
-	.balign 4
+	.4byte 0x3F333333
+	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0x3ECCCCCD

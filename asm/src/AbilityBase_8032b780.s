@@ -1,0 +1,95 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
+.global lbl_8032B780
+lbl_8032B780:
+/* 8032B780 003275C0  3C C0 80 48 */	lis r6, lbl_80482710@ha
+/* 8032B784 003275C4  38 06 27 10 */	addi r0, r6, lbl_80482710@l
+/* 8032B788 003275C8  90 03 00 00 */	stw r0, 0x0(r3)
+/* 8032B78C 003275CC  90 83 00 04 */	stw r4, 0x4(r3)
+/* 8032B790 003275D0  90 A3 00 08 */	stw r5, 0x8(r3)
+/* 8032B794 003275D4  4E 80 00 20 */	blr
+
+.global lbl_8032B798
+lbl_8032B798:
+/* 8032B798 003275D8  4B E4 A3 D0 */	b lbl_80175B68
+
+.global lbl_8032B79C
+lbl_8032B79C:
+/* 8032B79C 003275DC  4E 80 00 20 */	blr
+
+.global lbl_8032B7A0
+lbl_8032B7A0:
+/* 8032B7A0 003275E0  4B D2 86 50 */	b lbl_80053DF0
+
+.global lbl_8032B7A4
+lbl_8032B7A4:
+/* 8032B7A4 003275E4  4B D2 86 4C */	b lbl_80053DF0
+
+.global lbl_8032B7A8
+lbl_8032B7A8:
+/* 8032B7A8 003275E8  4B D2 86 48 */	b lbl_80053DF0
+
+.global lbl_8032B7AC
+lbl_8032B7AC:
+/* 8032B7AC 003275EC  4B D2 86 44 */	b lbl_80053DF0
+
+.global lbl_8032B7B0
+lbl_8032B7B0:
+/* 8032B7B0 003275F0  4E 80 00 20 */	blr
+
+.global lbl_8032B7B4
+lbl_8032B7B4:
+/* 8032B7B4 003275F4  4E 80 00 20 */	blr
+
+.global lbl_8032B7B8
+lbl_8032B7B8:
+/* 8032B7B8 003275F8  4E 80 00 20 */	blr
+
+.global lbl_8032B7BC
+lbl_8032B7BC:
+/* 8032B7BC 003275FC  4E 80 00 20 */	blr
+
+.global lbl_8032B7C0
+lbl_8032B7C0:
+/* 8032B7C0 00327600  4E 80 00 20 */	blr
+
+.global lbl_8032B7C4
+lbl_8032B7C4:
+/* 8032B7C4 00327604  4E 80 00 20 */	blr
+
+.global lbl_8032B7C8
+lbl_8032B7C8:
+/* 8032B7C8 00327608  4E 80 00 20 */	blr
+
+.global lbl_8032B7CC
+lbl_8032B7CC:
+/* 8032B7CC 0032760C  4E 80 00 20 */	blr
+
+.global lbl_8032B7D0
+lbl_8032B7D0:
+/* 8032B7D0 00327610  4E 80 00 20 */	blr
+
+.global lbl_8032B7D4
+lbl_8032B7D4:
+/* 8032B7D4 00327614  4E 80 00 20 */	blr
+
+.global lbl_8032B7D8
+lbl_8032B7D8:
+/* 8032B7D8 00327618  4E 80 00 20 */	blr
+
+.global lbl_8032B7DC
+lbl_8032B7DC:
+/* 8032B7DC 0032761C  4E 80 00 20 */	blr
+
+.global lbl_8032B7E0
+lbl_8032B7E0:
+/* 8032B7E0 00327620  4E 80 00 20 */	blr
+
+.global lbl_8032B7E4
+lbl_8032B7E4:
+/* 8032B7E4 00327624  4E 80 00 20 */	blr
+
+.global lbl_8032B7E8
+lbl_8032B7E8:
+/* 8032B7E8 00327628  4B D2 86 08 */	b lbl_80053DF0

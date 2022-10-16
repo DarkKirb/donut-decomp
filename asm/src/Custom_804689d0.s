@@ -1,0 +1,120 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_804689D0
+lbl_804689D0:
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563426F
+	.4byte 0x73735275
+	.4byte 0x73684578
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x65634578
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563416E
+	.4byte 0x67727945
+	.4byte 0x78000000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563426F
+	.4byte 0x73735275
+	.4byte 0x73680000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x65630000
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4D6F
+	.4byte 0x756E6465
+	.4byte 0x6174682E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563416E
+	.4byte 0x67727900
+
+.global lbl_80468AD0
+lbl_80468AD0:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_80255AC4
+	.4byte lbl_80255ABC
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_80468B10
+lbl_80468B10:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_80255AB8
+	.4byte lbl_80255AC0
+	.4byte lbl_80255678
+	.4byte lbl_80255908
+	.4byte lbl_8025590C
+	.4byte lbl_80255910
+	.4byte lbl_80255914
+	.4byte lbl_8022E5D8
+	.4byte lbl_8022E5DC
+	.4byte lbl_8022E5E0
+	.4byte lbl_8022E5E4
+	.4byte lbl_8022E5E8
+	.4byte lbl_8022E5EC
+	.4byte lbl_802559AC
+	.4byte lbl_8022E5F4
+	.4byte lbl_802559B0
+	.4byte lbl_8022E5FC
+	.4byte lbl_8022E600
+	.4byte lbl_8022E604
+	.4byte 0x6E6F206E
+	.4byte 0x616D6520
+	.4byte 0x636C6173
+	.4byte 0x73000000
+	.4byte 0

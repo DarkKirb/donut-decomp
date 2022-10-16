@@ -1,0 +1,106 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_8043FA38
+lbl_8043FA38:
+
+	.4byte 0x53445020
+	.4byte 0x2D20556E
+	.4byte 0x6578702E
+	.4byte 0x20504455
+	.4byte 0x3A202564
+	.4byte 0x20696E20
+	.4byte 0x73746174
+	.4byte 0x653A2025
+	.4byte 0x64000000
+	.4byte 0
+
+.global lbl_8043FA60
+lbl_8043FA60:
+
+	.4byte 0x53445020
+	.4byte 0x2D205263
+	.4byte 0x76642053
+	.4byte 0x65727669
+	.4byte 0x63655365
+	.4byte 0x61726368
+	.4byte 0x5273702C
+	.4byte 0x206E6F20
+	.4byte 0x6D617463
+	.4byte 0x68657300
+
+.global lbl_8043FA88
+lbl_8043FA88:
+
+	.4byte 0x53445020
+	.4byte 0x2D205772
+	.4byte 0x6F6E6720
+	.4byte 0x74797065
+	.4byte 0x3A203078
+	.4byte 0x25303278
+	.4byte 0x20696E20
+	.4byte 0x61747472
+	.4byte 0x5F727370
+	.4byte 0
+	.4byte 0x53445020
+	.4byte 0x2D204261
+	.4byte 0x64206C65
+	.4byte 0x6E20696E
+	.4byte 0x20617474
+	.4byte 0x725F7273
+	.4byte 0x70202564
+	.4byte 0
+	.4byte 0x53445020
+	.4byte 0x2D204442
+	.4byte 0x2066756C
+	.4byte 0x6C000000
+	.4byte 0x53445020
+	.4byte 0x2D204261
+	.4byte 0x64207479
+	.4byte 0x70653A20
+	.4byte 0x30782530
+	.4byte 0x3278206F
+	.4byte 0x72206C65
+	.4byte 0x6E3A2025
+	.4byte 0x6420696E
+	.4byte 0x20617474
+	.4byte 0x725F7273
+	.4byte 0x70000000
+	.4byte 0x53445020
+	.4byte 0x2D206174
+	.4byte 0x7472206E
+	.4byte 0x65737469
+	.4byte 0x6E672074
+	.4byte 0x6F6F2064
+	.4byte 0x65657000
+	.4byte 0x53445020
+	.4byte 0x2D206261
+	.4byte 0x64206C65
+	.4byte 0x6E20696E
+	.4byte 0x20555549
+	.4byte 0x44206174
+	.4byte 0x74723A20
+	.4byte 0x25640000
+	.4byte 0x53445020
+	.4byte 0x2D206261
+	.4byte 0x64206C65
+	.4byte 0x6E20696E
+	.4byte 0x20626F6F
+	.4byte 0x6C65616E
+	.4byte 0x20617474
+	.4byte 0x723A2025
+	.4byte 0x64000000
+
+.global lbl_8043FB70
+lbl_8043FB70:
+
+	.4byte lbl_8009F4A4
+	.4byte lbl_8009F070
+	.4byte lbl_8009F120
+	.4byte lbl_8009F1DC
+	.4byte lbl_8009F424
+	.4byte lbl_8009F454
+	.4byte lbl_8009F370
+	.4byte lbl_8009F370
+	.4byte lbl_8009F424
+	.4byte 0

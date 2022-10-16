@@ -1,0 +1,52 @@
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global lbl_804199E8
+lbl_804199E8:
+
+	.4byte lbl_8055A7B4
+	.4byte 0
+	.4byte lbl_8055A7BC
+	.4byte 0
+	.4byte lbl_8055A7C4
+	.4byte 0
+	.4byte lbl_804815B8
+	.4byte 0
+	.4byte lbl_804815C8
+	.4byte 0
+	.4byte lbl_804815D4
+	.4byte 0
+	.4byte lbl_804815E0
+	.4byte 0
+	.4byte lbl_804815F0
+	.4byte 0
+	.4byte lbl_804815FC
+	.4byte 0
+	.4byte lbl_8048160C
+	.4byte 0
+	.4byte lbl_8048161C
+	.4byte 0
+	.4byte lbl_80481630
+	.4byte 0
+	.4byte lbl_8055A7CC
+	.4byte 0
+	.4byte lbl_8048163C
+	.4byte 0
+	.4byte lbl_8055A7D4
+	.4byte 0
+	.4byte lbl_8055A7DC
+	.4byte 0
+	.4byte lbl_8055A7E4
+	.4byte 0
+	.4byte lbl_8055A7EC
+	.4byte 0
+	.4byte lbl_8055A7F4
+	.4byte 0
+	.4byte lbl_8055A7FC
+	.4byte 0
+	.4byte lbl_8055A804
+	.4byte 0
+	.4byte lbl_8055A80C
+	.4byte 0
+	.4byte lbl_8055A814
+	.4byte 0

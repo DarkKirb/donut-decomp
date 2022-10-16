@@ -1,0 +1,108 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_804310F8
+lbl_804310F8:
+
+	.4byte 0x44564443
+	.4byte 0x6F6E7665
+	.4byte 0x7274456E
+	.4byte 0x7472796E
+	.4byte 0x756D546F
+	.4byte 0x50617468
+	.4byte 0x28706F73
+	.4byte 0x7369626C
+	.4byte 0x79204456
+	.4byte 0x444F7065
+	.4byte 0x6E206F72
+	.4byte 0x20445644
+	.4byte 0x4368616E
+	.4byte 0x67654469
+	.4byte 0x72206F72
+	.4byte 0x20445644
+	.4byte 0x4F70656E
+	.4byte 0x44697229
+	.4byte 0x3A207370
+	.4byte 0x65636966
+	.4byte 0x69656420
+	.4byte 0x64697265
+	.4byte 0x63746F72
+	.4byte 0x79206F72
+	.4byte 0x2066696C
+	.4byte 0x65202825
+	.4byte 0x73292064
+	.4byte 0x6F65736E
+	.4byte 0x2774206D
+	.4byte 0x61746368
+	.4byte 0x20737461
+	.4byte 0x6E646172
+	.4byte 0x6420382E
+	.4byte 0x3320666F
+	.4byte 0x726D6174
+	.4byte 0x2E205468
+	.4byte 0x69732069
+	.4byte 0x73206120
+	.4byte 0x74656D70
+	.4byte 0x6F726172
+	.4byte 0x79207265
+	.4byte 0x73747269
+	.4byte 0x6374696F
+	.4byte 0x6E20616E
+	.4byte 0x64207769
+	.4byte 0x6C6C2062
+	.4byte 0x65207265
+	.4byte 0x6D6F7665
+	.4byte 0x6420736F
+	.4byte 0x6F6E0A00
+
+.global lbl_804311C0
+lbl_804311C0:
+
+	.4byte 0x5761726E
+	.4byte 0x696E673A
+	.4byte 0x20445644
+	.4byte 0x4F70656E
+	.4byte 0x28293A20
+	.4byte 0x66696C65
+	.4byte 0x20272573
+	.4byte 0x27207761
+	.4byte 0x73206E6F
+	.4byte 0x7420666F
+	.4byte 0x756E6420
+	.4byte 0x756E6465
+	.4byte 0x72202573
+	.4byte 0x2E0A0000
+
+.global lbl_804311F8
+lbl_804311F8:
+
+	.4byte 0x44564452
+	.4byte 0x65616441
+	.4byte 0x73796E63
+	.4byte 0x28293A20
+	.4byte 0x73706563
+	.4byte 0x69666965
+	.4byte 0x64206172
+	.4byte 0x65612069
+	.4byte 0x73206F75
+	.4byte 0x74206F66
+	.4byte 0x20746865
+	.4byte 0x2066696C
+	.4byte 0x65202000
+
+.global lbl_8043122C
+lbl_8043122C:
+
+	.4byte 0x44564452
+	.4byte 0x65616428
+	.4byte 0x293A2073
+	.4byte 0x70656369
+	.4byte 0x66696564
+	.4byte 0x20617265
+	.4byte 0x61206973
+	.4byte 0x206F7574
+	.4byte 0x206F6620
+	.4byte 0x74686520
+	.4byte 0x66696C65
+	.4byte 0x20200000
+	.4byte 0

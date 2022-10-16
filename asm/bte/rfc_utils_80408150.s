@@ -1,0 +1,70 @@
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global lbl_80408150
+lbl_80408150:
+
+	.4byte 0x0091E372
+	.4byte 0x0796E475
+	.4byte 0x0E9FED7C
+	.4byte 0x0998EA7B
+	.4byte 0x1C8DFF6E
+	.4byte 0x1B8AF869
+	.4byte 0x1283F160
+	.4byte 0x1584F667
+	.4byte 0x38A9DB4A
+	.4byte 0x3FAEDC4D
+	.4byte 0x36A7D544
+	.4byte 0x31A0D243
+	.4byte 0x24B5C756
+	.4byte 0x23B2C051
+	.4byte 0x2ABBC958
+	.4byte 0x2DBCCE5F
+	.4byte 0x70E19302
+	.4byte 0x77E69405
+	.4byte 0x7EEF9D0C
+	.4byte 0x79E89A0B
+	.4byte 0x6CFD8F1E
+	.4byte 0x6BFA8819
+	.4byte 0x62F38110
+	.4byte 0x65F48617
+	.4byte 0x48D9AB3A
+	.4byte 0x4FDEAC3D
+	.4byte 0x46D7A534
+	.4byte 0x41D0A233
+	.4byte 0x54C5B726
+	.4byte 0x53C2B021
+	.4byte 0x5ACBB928
+	.4byte 0x5DCCBE2F
+	.4byte 0xE0710392
+	.4byte 0xE7760495
+	.4byte 0xEE7F0D9C
+	.4byte 0xE9780A9B
+	.4byte 0xFC6D1F8E
+	.4byte 0xFB6A1889
+	.4byte 0xF2631180
+	.4byte 0xF5641687
+	.4byte 0xD8493BAA
+	.4byte 0xDF4E3CAD
+	.4byte 0xD64735A4
+	.4byte 0xD14032A3
+	.4byte 0xC45527B6
+	.4byte 0xC35220B1
+	.4byte 0xCA5B29B8
+	.4byte 0xCD5C2EBF
+	.4byte 0x900173E2
+	.4byte 0x970674E5
+	.4byte 0x9E0F7DEC
+	.4byte 0x99087AEB
+	.4byte 0x8C1D6FFE
+	.4byte 0x8B1A68F9
+	.4byte 0x821361F0
+	.4byte 0x851466F7
+	.4byte 0xA8394BDA
+	.4byte 0xAF3E4CDD
+	.4byte 0xA63745D4
+	.4byte 0xA13042D3
+	.4byte 0xB42557C6
+	.4byte 0xB32250C1
+	.4byte 0xBA2B59C8
+	.4byte 0xBD2C5ECF

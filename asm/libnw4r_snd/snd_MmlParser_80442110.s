@@ -1,0 +1,154 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_80442110
+lbl_80442110:
+
+	.4byte 0x23253038
+	.4byte 0x785B2564
+	.4byte 0x5D3A2070
+	.4byte 0x72696E74
+	.4byte 0x76617220
+	.4byte 0x25735641
+	.4byte 0x525F2564
+	.4byte 0x28256429
+	.4byte 0x203D2025
+	.4byte 0x640A0000
+
+.global lbl_80442138
+lbl_80442138:
+
+	.4byte lbl_8010A5B8
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AA28
+	.4byte lbl_8010AA68
+	.4byte lbl_8010AA78
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010A5B0
+	.4byte lbl_8010A83C
+	.4byte lbl_8010A8B0
+	.4byte lbl_8010A634
+	.4byte lbl_8010A930
+	.4byte lbl_8010A938
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010A6AC
+	.4byte lbl_8010A5E0
+	.4byte lbl_8010A63C
+	.4byte lbl_8010A644
+	.4byte lbl_8010A64C
+	.4byte lbl_8010A6A4
+	.4byte lbl_8010A76C
+	.4byte lbl_8010A774
+	.4byte lbl_8010A888
+	.4byte lbl_8010A8DC
+	.4byte lbl_8010A790
+	.4byte lbl_8010A7B4
+	.4byte lbl_8010A7D8
+	.4byte lbl_8010A7E0
+	.4byte lbl_8010A8F4
+	.4byte lbl_8010A788
+	.4byte lbl_8010A81C
+	.4byte lbl_8010A824
+	.4byte lbl_8010A82C
+	.4byte lbl_8010A834
+	.4byte lbl_8010AB08
+	.4byte lbl_8010A62C
+	.4byte lbl_8010A97C
+	.4byte lbl_8010A714
+	.4byte lbl_8010A908
+	.4byte lbl_8010A95C
+	.4byte lbl_8010A964
+	.4byte lbl_8010A974
+	.4byte lbl_8010A708
+	.4byte lbl_8010A5D0
+	.4byte lbl_8010A96C
+	.4byte lbl_8010A864
+	.4byte lbl_8010A7E8
+	.4byte lbl_8010A590
+	.4byte lbl_8010AE94
+	.4byte lbl_8010A7F8
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010AE94
+	.4byte lbl_8010A848
+	.4byte lbl_8010AB40
+	.4byte lbl_8010AAB8
+	.4byte 0
+
+.global lbl_80442330
+lbl_80442330:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_8010A530
+	.4byte lbl_8010AEB0

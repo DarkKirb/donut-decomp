@@ -1,0 +1,116 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_80460B38
+lbl_80460B38:
+
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C650000
+	.4byte 0
+
+.global lbl_80460B48
+lbl_80460B48:
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F50
+	.4byte 0x74477261
+	.4byte 0x6E645469
+	.4byte 0x746C6500
+
+.global lbl_80460B60
+lbl_80460B60:
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F56
+	.4byte 0x61637575
+	.4byte 0x6D000000
+	.4byte 0
+
+.global lbl_80460B78
+lbl_80460B78:
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F56
+	.4byte 0x61637575
+	.4byte 0x6D487573
+	.4byte 0x746C6500
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C654162
+	.4byte 0x696C6974
+	.4byte 0x79476574
+	.4byte 0
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C65426C
+	.4byte 0x6F636B45
+	.4byte 0x66666563
+	.4byte 0x74000000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C65436F
+	.4byte 0x6D706C65
+	.4byte 0x74655374
+	.4byte 0x61720000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C654465
+	.4byte 0x64656465
+	.4byte 0x48616D6D
+	.4byte 0x65720000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C65446F
+	.4byte 0x74566163
+	.4byte 0x75756D50
+	.4byte 0x74636C00
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C654561
+	.4byte 0x74000000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655269
+	.4byte 0x6E670000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655269
+	.4byte 0x6E674669
+	.4byte 0x74000000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655374
+	.4byte 0x6172446F
+	.4byte 0x74000000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655469
+	.4byte 0x746C6553
+	.4byte 0x74617200
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655661
+	.4byte 0x6375756D
+	.4byte 0x5074636C
+	.4byte 0
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655661
+	.4byte 0x6375756D
+	.4byte 0x48757374
+	.4byte 0x6C655074
+	.4byte 0x636C0000
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C65566F
+	.4byte 0x6D697400
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C655761
+	.4byte 0x72705374
+	.4byte 0x61720000
+	.4byte 0

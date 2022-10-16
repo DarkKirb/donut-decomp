@@ -1,0 +1,82 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_80440E10
+lbl_80440E10:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_800DBC40
+	.4byte lbl_800DB250
+	.4byte lbl_800DB110
+	.4byte lbl_800DBCE0
+	.4byte lbl_800DBCD0
+	.4byte lbl_800DB120
+	.4byte lbl_800DB180
+	.4byte lbl_800DB190
+	.4byte lbl_800DB1C0
+	.4byte lbl_800DB1D0
+	.4byte lbl_800DAD60
+	.4byte lbl_800DAD70
+	.4byte lbl_800DADC0
+	.4byte lbl_800DADD0
+	.4byte lbl_800DADE0
+	.4byte lbl_800DADF0
+	.4byte lbl_800DAE00
+	.4byte lbl_800DAE10
+	.4byte lbl_800DAE20
+	.4byte lbl_800DAE30
+	.4byte lbl_800DAE40
+	.4byte lbl_800DAE50
+	.4byte lbl_800DAE60
+	.4byte lbl_800DB2A0
+	.4byte lbl_800DB3E0
+	.4byte lbl_800DB450
+	.4byte lbl_800DB5D0
+	.4byte lbl_800DB680
+	.4byte lbl_800DBA30
+	.4byte lbl_800DBA70
+	.4byte lbl_800DB7E0
+	.4byte lbl_800DB880
+	.4byte lbl_800DB910
+	.4byte lbl_800DB9A0
+
+.global lbl_80440EA0
+lbl_80440EA0:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_800DBC90
+	.4byte 0
+	.4byte lbl_800DAD80
+	.4byte lbl_800DBD00
+	.4byte lbl_800DBCF0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte lbl_800DAD60
+	.4byte lbl_800DAD70
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

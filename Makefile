@@ -55,10 +55,6 @@ ifeq ($(EPILOGUE_PROCESS),1)
 include e_files.mk
 endif
 
-O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(TEXT_O_FILES) \
-           $(CTORS_O_FILES) $(DTORS_O_FILES) $(RODATA_O_FILES) $(DATA_O_FILES) \
-           $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES) \
-		   		 $(SBSS2_O_FILES)
 ifeq ($(EPILOGUE_PROCESS),1)
 E_FILES :=	$(EPILOGUE_UNSCHEDULED)
 endif
@@ -167,16 +163,18 @@ clean:
 tools:
 	$(MAKE) -C tools
 
+build/o_files: $(O_FILES)
+	$(file >$@) $(foreach V,$^,$(file >>$@,$V))
+	@true
+
 # ELF creation makefile instructions
 ifeq ($(EPILOGUE_PROCESS),1)
 	@echo Linking ELF $@
-$(ELF): $(O_FILES) $(E_FILES) $(LDSCRIPT)
-	$(QUIET) @echo $(O_FILES) > build/o_files
+$(ELF): build/o_files $(E_FILES) $(LDSCRIPT)
 	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
 else
-$(ELF): $(O_FILES) $(LDSCRIPT)
+$(ELF): build/o_files $(LDSCRIPT)
 	@echo Linking ELF $@
-	$(QUIET) @echo $(O_FILES) > build/o_files
 	$(QUIET) $(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
 endif
 

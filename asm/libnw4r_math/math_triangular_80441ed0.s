@@ -1,0 +1,72 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_80441ED0
+lbl_80441ED0:
+
+	.4byte 0
+	.4byte 0x3FA2EBF1
+	.4byte 0x3FA2EBF1
+	.4byte 0x3FA29AB1
+	.4byte 0x4022C351
+	.4byte 0x3FA1F923
+	.4byte 0x4073BFE2
+	.4byte 0x3FA10925
+	.4byte 0x40A2223B
+	.4byte 0x3F9FCD71
+	.4byte 0x40CA1597
+	.4byte 0x3F9E498C
+	.4byte 0x40F1A7FA
+	.4byte 0x3F9C81AB
+	.4byte 0x410C6432
+	.4byte 0x3F9A7A9B
+	.4byte 0x411FB386
+	.4byte 0x3F98399D
+	.4byte 0x4132BAB9
+	.4byte 0x3F95C44B
+	.4byte 0x41457343
+	.4byte 0x3F932075
+	.4byte 0x4157D751
+	.4byte 0x3F905408
+	.4byte 0x4169E1D2
+	.4byte 0x3F8D64EB
+	.4byte 0x417B8E70
+	.4byte 0x3F8A58EC
+	.4byte 0x41866CC7
+	.4byte 0x3F8735A9
+	.4byte 0x418EE021
+	.4byte 0x3F84007D
+	.4byte 0x41972029
+	.4byte 0x3F80BE73
+	.4byte 0x419F2C10
+	.4byte 0x3F7AE877
+	.4byte 0x41A70354
+	.4byte 0x3F744C4A
+	.4byte 0x41AEA5B6
+	.4byte 0x3F6DB032
+	.4byte 0x41B61338
+	.4byte 0x3F671B36
+	.4byte 0x41BD4C11
+	.4byte 0x3F60938F
+	.4byte 0x41C450AE
+	.4byte 0x3F5A1EB2
+	.4byte 0x41CB21A3
+	.4byte 0x3F53C157
+	.4byte 0x41D1BFAE
+	.4byte 0x3F4D7F84
+	.4byte 0x41D82BAA
+	.4byte 0x3F475C97
+	.4byte 0x41DE668F
+	.4byte 0x3F415B59
+	.4byte 0x41E4716A
+	.4byte 0x3F3B7E02
+	.4byte 0x41EA4D5A
+	.4byte 0x3F35C652
+	.4byte 0x41EFFB8C
+	.4byte 0x3F303593
+	.4byte 0x41F57D39
+	.4byte 0x3F2ACCAE
+	.4byte 0x41FAD39E
+	.4byte 0x3F258C33
+	.4byte 0x42000000
+	.4byte 0x3F207467

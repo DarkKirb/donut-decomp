@@ -1,0 +1,70 @@
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global lbl_8041FC18
+lbl_8041FC18:
+
+	.4byte 0x00000001
+	.4byte lbl_8055B358
+	.4byte lbl_8055B360
+	.4byte 0x00000002
+	.4byte lbl_8055B368
+	.4byte lbl_8055B370
+	.4byte 0x00000003
+	.4byte lbl_8055B378
+	.4byte lbl_8055B380
+	.4byte 0x00000004
+	.4byte lbl_8055B388
+	.4byte lbl_8055B390
+	.4byte 0x00000005
+	.4byte lbl_8055B398
+	.4byte lbl_8055B3A0
+	.4byte 0x00000006
+	.4byte lbl_8055B3A8
+	.4byte lbl_8055B3B0
+	.4byte 0x00000007
+	.4byte lbl_8055B3B8
+	.4byte lbl_8055B3C0
+	.4byte 0x00000008
+	.4byte lbl_8055B3C8
+	.4byte lbl_8055B3D0
+	.4byte 0x00000009
+	.4byte lbl_8055B3D8
+	.4byte lbl_8055B3E0
+	.4byte 0x0000000A
+	.4byte lbl_8055B3E8
+	.4byte lbl_8055B3F0
+	.4byte 0x0000000B
+	.4byte lbl_8055B3F8
+	.4byte lbl_8055B400
+	.4byte 0x0000000C
+	.4byte lbl_8055B408
+	.4byte lbl_8055B410
+	.4byte 0x0000000D
+	.4byte lbl_8048CE30
+	.4byte lbl_8048CE3C
+	.4byte 0x0000000E
+	.4byte lbl_8055B418
+	.4byte lbl_8055B420
+	.4byte 0x0000000F
+	.4byte lbl_8055B428
+	.4byte lbl_8055B430
+	.4byte 0x00000010
+	.4byte lbl_8055B438
+	.4byte lbl_8055B440
+	.4byte 0x00000011
+	.4byte lbl_8055B448
+	.4byte lbl_8055B450
+	.4byte 0x00000012
+	.4byte lbl_8055B458
+	.4byte lbl_8055B45C
+	.4byte 0x00000013
+	.4byte lbl_8055B460
+	.4byte lbl_8055B468
+	.4byte 0x00000014
+	.4byte lbl_8055B470
+	.4byte lbl_8055B478
+	.4byte 0x00000015
+	.4byte lbl_8055B480
+	.4byte lbl_8055B488
+	.4byte 0

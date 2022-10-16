@@ -1,0 +1,18 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
+.global lbl_8032B7EC
+lbl_8032B7EC:
+/* 8032B7EC 0032762C  3C A0 80 48 */	lis r5, lbl_80482770@ha
+/* 8032B7F0 00327630  38 05 27 70 */	addi r0, r5, lbl_80482770@l
+/* 8032B7F4 00327634  90 03 00 00 */	stw r0, 0x0(r3)
+/* 8032B7F8 00327638  90 83 00 04 */	stw r4, 0x4(r3)
+/* 8032B7FC 0032763C  4E 80 00 20 */	blr
+
+.global lbl_8032B800
+lbl_8032B800:
+/* 8032B800 00327640  4B E4 A3 68 */	b lbl_80175B68
+
+.global lbl_8032B804
+lbl_8032B804:
+/* 8032B804 00327644  4B F0 55 94 */	b lbl_80230D98

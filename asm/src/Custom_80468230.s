@@ -1,0 +1,118 @@
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global lbl_80468230
+lbl_80468230:
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63426F73
+	.4byte 0x73527573
+	.4byte 0x68457800
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63457800
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63416E67
+	.4byte 0x72794578
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63426F73
+	.4byte 0x73527573
+	.4byte 0x68000000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63000000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F2E42
+	.4byte 0x7261696E
+	.4byte 0x2E457865
+	.4byte 0x63416E67
+	.4byte 0x72790000
+	.4byte 0
+
+.global lbl_80468328
+lbl_80468328:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_80253888
+	.4byte lbl_80253880
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_80468368
+lbl_80468368:
+
+	.4byte 0
+	.4byte 0
+	.4byte lbl_8025387C
+	.4byte lbl_80253884
+	.4byte lbl_80253520
+	.4byte lbl_802537D0
+	.4byte lbl_802537D4
+	.4byte lbl_802537D8
+	.4byte lbl_802537DC
+	.4byte lbl_8022E5D8
+	.4byte lbl_8022E5DC
+	.4byte lbl_8022E5E0
+	.4byte lbl_8022E5E4
+	.4byte lbl_8022E5E8
+	.4byte lbl_8022E5EC
+	.4byte lbl_80253874
+	.4byte lbl_8022E5F4
+	.4byte lbl_80253878
+	.4byte lbl_8022E5FC
+	.4byte lbl_8022E600
+	.4byte lbl_8022E604
+	.4byte 0x6E6F206E
+	.4byte 0x616D6520
+	.4byte 0x636C6173
+	.4byte 0x73000000
+	.4byte 0

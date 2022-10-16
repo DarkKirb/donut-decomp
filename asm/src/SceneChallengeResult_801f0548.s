@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801F0548
-lbl_801F0548:
+.global "RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
+"RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo":
 /* 801F0548 001EC388  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F054C 001EC38C  7C 08 02 A6 */	mflr r0
 /* 801F0550 001EC390  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F0554 001EC394  88 0D EF 18 */	lbz r0, lbl_8055D338@sda21(r13)
+/* 801F0554 001EC394  88 0D EF 18 */	lbz r0, "@GUARD@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"@sda21(r13)
 /* 801F0558 001EC398  7C 00 07 74 */	extsb r0, r0
 /* 801F055C 001EC39C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801F0560 001EC3A0  40 82 00 24 */	bne lbl_801F0584
-/* 801F0564 001EC3A4  4B F8 47 89 */	bl lbl_80174CEC
+/* 801F0564 001EC3A4  4B F8 47 89 */	bl "RuntimeTypeInfoImpl<Q23scn6IScene>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 801F0568 001EC3A8  7C 64 1B 78 */	mr r4, r3
-/* 801F056C 001EC3AC  38 6D EF 20 */	addi r3, r13, lbl_8055D340@sda21
-/* 801F0570 001EC3B0  3C A0 80 45 */	lis r5, lbl_80452B1C@ha
-/* 801F0574 001EC3B4  38 A5 2B 1C */	addi r5, r5, lbl_80452B1C@l
-/* 801F0578 001EC3B8  4B F8 47 C1 */	bl lbl_80174D38
+/* 801F056C 001EC3AC  38 6D EF 20 */	addi r3, r13, "@LOCAL@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"@sda21
+/* 801F0570 001EC3B0  3C A0 80 45 */	lis r5, "@STRING@NoName__Q33hel6common15RuntimeTypeInfoFv"@ha
+/* 801F0574 001EC3B4  38 A5 2B 1C */	addi r5, r5, "@STRING@NoName__Q33hel6common15RuntimeTypeInfoFv"@l
+/* 801F0578 001EC3B8  4B F8 47 C1 */	bl __ct__Q33hel6common15RuntimeTypeInfoFPCQ33hel6common15RuntimeTypeInfoPCc
 /* 801F057C 001EC3BC  38 00 00 01 */	li r0, 0x1
-/* 801F0580 001EC3C0  98 0D EF 18 */	stb r0, lbl_8055D338@sda21(r13)
+/* 801F0580 001EC3C0  98 0D EF 18 */	stb r0, "@GUARD@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"@sda21(r13)
 .global lbl_801F0584
 lbl_801F0584:
-/* 801F0584 001EC3C4  38 6D EF 20 */	addi r3, r13, lbl_8055D340@sda21
+/* 801F0584 001EC3C4  38 6D EF 20 */	addi r3, r13, "@LOCAL@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"@sda21
 /* 801F0588 001EC3C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F058C 001EC3CC  7C 08 03 A6 */	mtlr r0
 /* 801F0590 001EC3D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0594 001EC3D4  4E 80 00 20 */	blr
-.global lbl_801F0598
-lbl_801F0598:
+.global Create__Q43scn15challengeresult20SceneChallengeResult6RecipeFQ33scn4step13ChallengeKindbQ33scn4step16ContextChallengeQ37storage15BackupFileData213ChallengeData
+Create__Q43scn15challengeresult20SceneChallengeResult6RecipeFQ33scn4step13ChallengeKindbQ33scn4step16ContextChallengeQ37storage15BackupFileData213ChallengeData:
 /* 801F0598 001EC3D8  39 23 FF FC */	addi r9, r3, -0x4
 /* 801F059C 001EC3DC  39 00 00 00 */	li r8, 0x0
 /* 801F05A0 001EC3E0  38 00 00 19 */	li r0, 0x19
@@ -63,9 +63,9 @@ lbl_801F05D4:
 /* 801F060C 001EC44C  90 03 00 A0 */	stw r0, 0xa0(r3)
 /* 801F0610 001EC450  38 63 00 A4 */	addi r3, r3, 0xa4
 /* 801F0614 001EC454  7C E4 3B 78 */	mr r4, r7
-/* 801F0618 001EC458  48 00 00 04 */	b lbl_801F061C
-.global lbl_801F061C
-lbl_801F061C:
+/* 801F0618 001EC458  48 00 00 04 */	b __as__Q37storage15BackupFileData213ChallengeDataFRCQ37storage15BackupFileData213ChallengeData
+.global __as__Q37storage15BackupFileData213ChallengeDataFRCQ37storage15BackupFileData213ChallengeData
+__as__Q37storage15BackupFileData213ChallengeDataFRCQ37storage15BackupFileData213ChallengeData:
 /* 801F061C 001EC45C  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 801F0620 001EC460  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801F0624 001EC464  80 A4 00 04 */	lwz r5, 0x4(r4)
@@ -85,8 +85,8 @@ lbl_801F061C:
 /* 801F065C 001EC49C  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 801F0660 001EC4A0  90 03 00 20 */	stw r0, 0x20(r3)
 /* 801F0664 001EC4A4  4E 80 00 20 */	blr
-.global lbl_801F0668
-lbl_801F0668:
+.global __ct__Q33scn15challengeresult20SceneChallengeResultFRCQ43scn15challengeresult20SceneChallengeResult6Recipe
+__ct__Q33scn15challengeresult20SceneChallengeResultFRCQ43scn15challengeresult20SceneChallengeResult6Recipe:
 /* 801F0668 001EC4A8  94 21 F8 A0 */	stwu r1, -0x760(r1)
 /* 801F066C 001EC4AC  7C 08 02 A6 */	mflr r0
 /* 801F0670 001EC4B0  90 01 07 64 */	stw r0, 0x764(r1)
@@ -94,95 +94,95 @@ lbl_801F0668:
 /* 801F0678 001EC4B8  4B E1 6C C1 */	bl lbl_80007338
 /* 801F067C 001EC4BC  7C 7E 1B 78 */	mr r30, r3
 /* 801F0680 001EC4C0  7C 9F 23 78 */	mr r31, r4
-/* 801F0684 001EC4C4  3C 80 80 46 */	lis r4, lbl_8045F004@ha
-/* 801F0688 001EC4C8  38 04 F0 04 */	addi r0, r4, lbl_8045F004@l
+/* 801F0684 001EC4C4  3C 80 80 46 */	lis r4, __vt__Q33scn15challengeresult20SceneChallengeResult@ha
+/* 801F0688 001EC4C8  38 04 F0 04 */	addi r0, r4, __vt__Q33scn15challengeresult20SceneChallengeResult@l
 /* 801F068C 001EC4CC  90 03 00 00 */	stw r0, 0x0(r3)
-/* 801F0690 001EC4D0  80 6D ED 00 */	lwz r3, lbl_8055D120@sda21(r13)
-/* 801F0694 001EC4D4  4B FC EF 5D */	bl lbl_801BF5F0
+/* 801F0690 001EC4D0  80 6D ED 00 */	lwz r3, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
+/* 801F0694 001EC4D4  4B FC EF 5D */	bl sceneHeap__Q23mem6MemoryFv
 /* 801F0698 001EC4D8  7C 64 1B 78 */	mr r4, r3
 /* 801F069C 001EC4DC  38 7E 00 04 */	addi r3, r30, 0x4
 /* 801F06A0 001EC4E0  3C A0 00 13 */	lis r5, 0x13
 /* 801F06A4 001EC4E4  38 A5 C0 00 */	addi r5, r5, -0x4000
-/* 801F06A8 001EC4E8  38 CD 99 C8 */	addi r6, r13, lbl_80557DE8@sda21
-/* 801F06AC 001EC4EC  4B FC CB 59 */	bl lbl_801BD204
-/* 801F06B0 001EC4F0  4B F1 83 51 */	bl lbl_80108A00
+/* 801F06A8 001EC4E8  38 CD 99 C8 */	addi r6, r13, "@54439"@sda21
+/* 801F06AC 001EC4EC  4B FC CB 59 */	bl __ct__Q23mem11AutoHeapExpFRQ23mem10IAllocatorUlPCc
+/* 801F06B0 001EC4F0  4B F1 83 51 */	bl CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F06B4 001EC4F4  7C 7D 1B 78 */	mr r29, r3
-/* 801F06B8 001EC4F8  4B FF 8C DD */	bl lbl_801E9394
+/* 801F06B8 001EC4F8  4B FF 8C DD */	bl kind__Q33scn19challengefileselect11StaffCreditCFv
 /* 801F06BC 001EC4FC  7C 7C 1B 78 */	mr r28, r3
-/* 801F06C0 001EC500  4B F1 83 11 */	bl lbl_801089D0
+/* 801F06C0 001EC500  4B F1 83 11 */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F06C4 001EC504  7C 7B 1B 78 */	mr r27, r3
-/* 801F06C8 001EC508  4B F1 83 09 */	bl lbl_801089D0
+/* 801F06C8 001EC508  4B F1 83 09 */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F06CC 001EC50C  7C 7A 1B 78 */	mr r26, r3
-/* 801F06D0 001EC510  4B FA 1A 19 */	bl lbl_801920E8
+/* 801F06D0 001EC510  4B FA 1A 19 */	bl DefaultAllocator__Q23g3d12ModelContextFv
 /* 801F06D4 001EC514  7C 64 1B 78 */	mr r4, r3
 /* 801F06D8 001EC518  38 61 00 34 */	addi r3, r1, 0x34
 /* 801F06DC 001EC51C  7F 45 D3 78 */	mr r5, r26
 /* 801F06E0 001EC520  7F 66 DB 78 */	mr r6, r27
 /* 801F06E4 001EC524  7F 87 E3 78 */	mr r7, r28
 /* 801F06E8 001EC528  7F A8 EB 78 */	mr r8, r29
-/* 801F06EC 001EC52C  4B FA 3F 31 */	bl lbl_8019461C
+/* 801F06EC 001EC52C  4B FA 3F 31 */	bl __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl
 /* 801F06F0 001EC530  7C 64 1B 78 */	mr r4, r3
 /* 801F06F4 001EC534  38 7E 00 64 */	addi r3, r30, 0x64
-/* 801F06F8 001EC538  4B FA 38 7D */	bl lbl_80193F74
-/* 801F06FC 001EC53C  4B F1 83 05 */	bl lbl_80108A00
+/* 801F06F8 001EC538  4B FA 38 7D */	bl __ct__Q23g3d4RootFRCQ23g3d11RootContext
+/* 801F06FC 001EC53C  4B F1 83 05 */	bl CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F0700 001EC540  7C 7D 1B 78 */	mr r29, r3
-/* 801F0704 001EC544  4B FF 8C 91 */	bl lbl_801E9394
+/* 801F0704 001EC544  4B FF 8C 91 */	bl kind__Q33scn19challengefileselect11StaffCreditCFv
 /* 801F0708 001EC548  7C 7C 1B 78 */	mr r28, r3
-/* 801F070C 001EC54C  4B F1 82 C5 */	bl lbl_801089D0
+/* 801F070C 001EC54C  4B F1 82 C5 */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F0710 001EC550  7C 7B 1B 78 */	mr r27, r3
-/* 801F0714 001EC554  4B F1 82 BD */	bl lbl_801089D0
+/* 801F0714 001EC554  4B F1 82 BD */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F0718 001EC558  7C 7A 1B 78 */	mr r26, r3
-/* 801F071C 001EC55C  4B FA 19 CD */	bl lbl_801920E8
+/* 801F071C 001EC55C  4B FA 19 CD */	bl DefaultAllocator__Q23g3d12ModelContextFv
 /* 801F0720 001EC560  7C 64 1B 78 */	mr r4, r3
 /* 801F0724 001EC564  38 61 00 20 */	addi r3, r1, 0x20
 /* 801F0728 001EC568  7F 45 D3 78 */	mr r5, r26
 /* 801F072C 001EC56C  7F 66 DB 78 */	mr r6, r27
 /* 801F0730 001EC570  7F 87 E3 78 */	mr r7, r28
 /* 801F0734 001EC574  7F A8 EB 78 */	mr r8, r29
-/* 801F0738 001EC578  4B FA 3E E5 */	bl lbl_8019461C
+/* 801F0738 001EC578  4B FA 3E E5 */	bl __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl
 /* 801F073C 001EC57C  7C 64 1B 78 */	mr r4, r3
 /* 801F0740 001EC580  38 7E 00 B4 */	addi r3, r30, 0xb4
-/* 801F0744 001EC584  4B FA 38 31 */	bl lbl_80193F74
-/* 801F0748 001EC588  4B F1 82 B9 */	bl lbl_80108A00
+/* 801F0744 001EC584  4B FA 38 31 */	bl __ct__Q23g3d4RootFRCQ23g3d11RootContext
+/* 801F0748 001EC588  4B F1 82 B9 */	bl CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F074C 001EC58C  7C 7A 1B 78 */	mr r26, r3
-/* 801F0750 001EC590  4B FF 8C 45 */	bl lbl_801E9394
+/* 801F0750 001EC590  4B FF 8C 45 */	bl kind__Q33scn19challengefileselect11StaffCreditCFv
 /* 801F0754 001EC594  7C 7B 1B 78 */	mr r27, r3
-/* 801F0758 001EC598  4B F1 82 79 */	bl lbl_801089D0
+/* 801F0758 001EC598  4B F1 82 79 */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F075C 001EC59C  7C 7C 1B 78 */	mr r28, r3
-/* 801F0760 001EC5A0  4B F1 82 71 */	bl lbl_801089D0
+/* 801F0760 001EC5A0  4B F1 82 71 */	bl GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
 /* 801F0764 001EC5A4  7C 7D 1B 78 */	mr r29, r3
-/* 801F0768 001EC5A8  4B FA 19 81 */	bl lbl_801920E8
+/* 801F0768 001EC5A8  4B FA 19 81 */	bl DefaultAllocator__Q23g3d12ModelContextFv
 /* 801F076C 001EC5AC  7C 64 1B 78 */	mr r4, r3
 /* 801F0770 001EC5B0  38 61 00 0C */	addi r3, r1, 0xc
 /* 801F0774 001EC5B4  7F A5 EB 78 */	mr r5, r29
 /* 801F0778 001EC5B8  7F 86 E3 78 */	mr r6, r28
 /* 801F077C 001EC5BC  7F 67 DB 78 */	mr r7, r27
 /* 801F0780 001EC5C0  7F 48 D3 78 */	mr r8, r26
-/* 801F0784 001EC5C4  4B FA 3E 99 */	bl lbl_8019461C
+/* 801F0784 001EC5C4  4B FA 3E 99 */	bl __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl
 /* 801F0788 001EC5C8  7C 64 1B 78 */	mr r4, r3
 /* 801F078C 001EC5CC  38 7E 01 04 */	addi r3, r30, 0x104
-/* 801F0790 001EC5D0  4B FA 37 E5 */	bl lbl_80193F74
+/* 801F0790 001EC5D0  4B FA 37 E5 */	bl __ct__Q23g3d4RootFRCQ23g3d11RootContext
 /* 801F0794 001EC5D4  38 7E 01 54 */	addi r3, r30, 0x154
 /* 801F0798 001EC5D8  38 9E 00 B4 */	addi r4, r30, 0xb4
 /* 801F079C 001EC5DC  38 BE 01 04 */	addi r5, r30, 0x104
-/* 801F07A0 001EC5E0  48 00 09 21 */	bl lbl_801F10C0
+/* 801F07A0 001EC5E0  48 00 09 21 */	bl __ct__Q43scn15challengeresult6effect7ManagerFRQ23g3d4RootRQ23g3d4Root
 /* 801F07A4 001EC5E4  3B A0 00 00 */	li r29, 0x0
 /* 801F07A8 001EC5E8  93 BE 03 1C */	stw r29, 0x31c(r30)
 /* 801F07AC 001EC5EC  80 1F 00 00 */	lwz r0, 0x0(r31)
 /* 801F07B0 001EC5F0  90 1E 03 20 */	stw r0, 0x320(r30)
 /* 801F07B4 001EC5F4  38 7E 03 24 */	addi r3, r30, 0x324
 /* 801F07B8 001EC5F8  38 9F 00 08 */	addi r4, r31, 0x8
-/* 801F07BC 001EC5FC  48 00 02 E1 */	bl lbl_801F0A9C
+/* 801F07BC 001EC5FC  48 00 02 E1 */	bl __ct__Q33scn4step16ContextChallengeFRCQ33scn4step16ContextChallenge
 /* 801F07C0 001EC600  93 BE 03 C0 */	stw r29, 0x3c0(r30)
 /* 801F07C4 001EC604  38 7E 7A 18 */	addi r3, r30, 0x7a18
-/* 801F07C8 001EC608  4B E2 B0 39 */	bl lbl_8001B800
+/* 801F07C8 001EC608  4B E2 B0 39 */	bl OSCreateAlarm
 /* 801F07CC 001EC60C  38 7E 7A 20 */	addi r3, r30, 0x7a20
-/* 801F07D0 001EC610  48 20 FF BD */	bl lbl_8040078C
+/* 801F07D0 001EC610  48 20 FF BD */	bl __ct__Q23sfx4FadeFv
 /* 801F07D4 001EC614  38 7E 7A 44 */	addi r3, r30, 0x7a44
-/* 801F07D8 001EC618  48 21 22 95 */	bl lbl_80402A6C
+/* 801F07D8 001EC618  48 21 22 95 */	bl __ct__Q23snd11SERequestorFv
 /* 801F07DC 001EC61C  38 7E 7A B8 */	addi r3, r30, 0x7ab8
 /* 801F07E0 001EC620  7F E4 FB 78 */	mr r4, r31
-/* 801F07E4 001EC624  48 00 03 CD */	bl lbl_801F0BB0
+/* 801F07E4 001EC624  48 00 03 CD */	bl __ct__Q43scn15challengeresult20SceneChallengeResult6RecipeFRCQ43scn15challengeresult20SceneChallengeResult6Recipe
 /* 801F07E8 001EC628  93 A1 01 40 */	stw r29, 0x140(r1)
 /* 801F07EC 001EC62C  38 A1 01 44 */	addi r5, r1, 0x144
 /* 801F07F0 001EC630  38 01 07 44 */	addi r0, r1, 0x744
@@ -200,8 +200,8 @@ lbl_801F0800:
 /* 801F0810 001EC650  38 A5 00 40 */	addi r5, r5, 0x40
 /* 801F0814 001EC654  7C 05 00 40 */	cmplw r5, r0
 /* 801F0818 001EC658  41 80 FF E0 */	blt lbl_801F07F8
-/* 801F081C 001EC65C  3C 60 80 46 */	lis r3, lbl_8045EFF0@ha
-/* 801F0820 001EC660  38 83 EF F0 */	addi r4, r3, lbl_8045EFF0@l
+/* 801F081C 001EC65C  3C 60 80 46 */	lis r3, "@54440"@ha
+/* 801F0820 001EC660  38 83 EF F0 */	addi r4, r3, "@54440"@l
 /* 801F0824 001EC664  38 A1 00 44 */	addi r5, r1, 0x44
 /* 801F0828 001EC668  38 60 00 00 */	li r3, 0x0
 /* 801F082C 001EC66C  38 00 00 08 */	li r0, 0x8
@@ -213,14 +213,14 @@ lbl_801F0834:
 /* 801F083C 001EC67C  42 00 FF F8 */	bdnz lbl_801F0834
 /* 801F0840 001EC680  38 61 00 48 */	addi r3, r1, 0x48
 /* 801F0844 001EC684  38 A0 00 40 */	li r5, 0x40
-/* 801F0848 001EC688  4B FA D1 75 */	bl lbl_8019D9BC
+/* 801F0848 001EC688  4B FA D1 75 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801F084C 001EC68C  80 01 01 40 */	lwz r0, 0x140(r1)
 /* 801F0850 001EC690  28 00 00 18 */	cmplwi r0, 0x18
 /* 801F0854 001EC694  41 82 00 50 */	beq lbl_801F08A4
 /* 801F0858 001EC698  83 41 01 40 */	lwz r26, 0x140(r1)
 /* 801F085C 001EC69C  7F 43 D3 78 */	mr r3, r26
 /* 801F0860 001EC6A0  38 80 00 18 */	li r4, 0x18
-/* 801F0864 001EC6A4  4B E3 3C 3D */	bl lbl_800244A0
+/* 801F0864 001EC6A4  4B E3 3C 3D */	bl DefaultSwitchThreadCallback
 /* 801F0868 001EC6A8  57 43 30 32 */	slwi r3, r26, 6
 /* 801F086C 001EC6AC  38 01 01 44 */	addi r0, r1, 0x144
 /* 801F0870 001EC6B0  7C A0 1A 14 */	add r5, r0, r3
@@ -242,31 +242,31 @@ lbl_801F0884:
 lbl_801F08A4:
 /* 801F08A4 001EC6E4  38 61 01 40 */	addi r3, r1, 0x140
 /* 801F08A8 001EC6E8  38 80 00 01 */	li r4, 0x1
-/* 801F08AC 001EC6EC  4B F9 86 B9 */	bl lbl_80188F64
+/* 801F08AC 001EC6EC  4B F9 86 B9 */	bl "DNProcess__Q24file7UtilityFRCQ33hel6common47MutableArray<Q33hel6common15FixedString<64>,24>b"
 /* 801F08B0 001EC6F0  38 60 00 01 */	li r3, 0x1
-/* 801F08B4 001EC6F4  4B F9 86 A9 */	bl lbl_80188F5C
+/* 801F08B4 001EC6F4  4B F9 86 A9 */	bl SetIsFileLoadWarningEnable__Q24file7UtilityFb
 /* 801F08B8 001EC6F8  38 61 01 40 */	addi r3, r1, 0x140
 /* 801F08BC 001EC6FC  38 80 FF FF */	li r4, -0x1
-/* 801F08C0 001EC700  4B F8 52 A9 */	bl lbl_80175B68
-/* 801F08C4 001EC704  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 801F08C8 001EC708  4B F8 5C 81 */	bl lbl_80176548
+/* 801F08C0 001EC700  4B F8 52 A9 */	bl __dt__Q23scn6ISceneFv
+/* 801F08C4 001EC704  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 801F08C8 001EC708  4B F8 5C 81 */	bl hidErrorMenu__Q23app11ApplicationFv
 /* 801F08CC 001EC70C  38 80 00 00 */	li r4, 0x0
-/* 801F08D0 001EC710  4B F8 74 55 */	bl lbl_80177D24
+/* 801F08D0 001EC710  4B F8 74 55 */	bl setup__Q23app12HIDErrorMenuFQ33app12HIDErrorMenu18DisconnectMenuMode
 /* 801F08D4 001EC714  38 7E 03 C0 */	addi r3, r30, 0x3c0
-/* 801F08D8 001EC718  48 00 03 59 */	bl lbl_801F0C30
+/* 801F08D8 001EC718  48 00 03 59 */	bl "destruct__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv"
 /* 801F08DC 001EC71C  38 7E 03 C4 */	addi r3, r30, 0x3c4
 /* 801F08E0 001EC720  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801F08E4 001EC724  41 82 00 0C */	beq lbl_801F08F0
 /* 801F08E8 001EC728  7F C4 F3 78 */	mr r4, r30
-/* 801F08EC 001EC72C  48 00 0C 99 */	bl lbl_801F1584
+/* 801F08EC 001EC72C  48 00 0C 99 */	bl __ct__Q43scn15challengeresult4info7ManagerFRQ33scn15challengeresult20SceneChallengeResult
 .global lbl_801F08F0
 lbl_801F08F0:
 /* 801F08F0 001EC730  90 7E 03 C0 */	stw r3, 0x3c0(r30)
 /* 801F08F4 001EC734  3B A0 00 00 */	li r29, 0x0
 /* 801F08F8 001EC738  93 BE 03 1C */	stw r29, 0x31c(r30)
-/* 801F08FC 001EC73C  80 6D ED 04 */	lwz r3, lbl_8055D124@sda21(r13)
-/* 801F0900 001EC740  48 21 29 59 */	bl lbl_80403258
-/* 801F0904 001EC744  48 21 1E B1 */	bl lbl_804027B4
+/* 801F08FC 001EC73C  80 6D ED 04 */	lwz r3, "object___Q33hel6common39ExplicitSingleton<Q23snd12SoundManager>"@sda21(r13)
+/* 801F0900 001EC740  48 21 29 59 */	bl bgm__Q23snd12SoundManagerFv
+/* 801F0904 001EC744  48 21 1E B1 */	bl stop__Q23snd9BgmPlayerFv
 /* 801F0908 001EC748  38 61 00 84 */	addi r3, r1, 0x84
 /* 801F090C 001EC74C  38 00 00 17 */	li r0, 0x17
 /* 801F0910 001EC750  7C 09 03 A6 */	mtctr r0
@@ -343,30 +343,30 @@ lbl_801F096C:
 /* 801F0A14 001EC854  98 01 01 1A */	stb r0, 0x11a(r1)
 /* 801F0A18 001EC858  38 61 01 1C */	addi r3, r1, 0x11c
 /* 801F0A1C 001EC85C  38 9F 00 A4 */	addi r4, r31, 0xa4
-/* 801F0A20 001EC860  4B FF FB FD */	bl lbl_801F061C
+/* 801F0A20 001EC860  4B FF FB FD */	bl __as__Q37storage15BackupFileData213ChallengeDataFRCQ37storage15BackupFileData213ChallengeData
 /* 801F0A24 001EC864  80 7E 03 C0 */	lwz r3, 0x3c0(r30)
 /* 801F0A28 001EC868  38 63 04 04 */	addi r3, r3, 0x404
 /* 801F0A2C 001EC86C  38 81 00 88 */	addi r4, r1, 0x88
-/* 801F0A30 001EC870  48 00 14 E9 */	bl lbl_801F1F18
-/* 801F0A34 001EC874  80 02 9E A8 */	lwz r0, lbl_8055FE28@sda21(r2)
+/* 801F0A30 001EC870  48 00 14 E9 */	bl appear__Q43scn15challengeresult4info9ResultLytFRCQ53scn15challengeresult4info9ResultLyt6Recipe
+/* 801F0A34 001EC874  80 02 9E A8 */	lwz r0, "@53533_8055FE28"@sda21(r2)
 /* 801F0A38 001EC878  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801F0A3C 001EC87C  38 7E 7A 20 */	addi r3, r30, 0x7a20
 /* 801F0A40 001EC880  38 81 00 08 */	addi r4, r1, 0x8
-/* 801F0A44 001EC884  48 20 FE DD */	bl lbl_80400920
+/* 801F0A44 001EC884  48 20 FE DD */	bl setColor__Q23sfx4FadeFRC8_GXColor
 /* 801F0A48 001EC888  38 7E 7A 20 */	addi r3, r30, 0x7a20
 /* 801F0A4C 001EC88C  38 80 00 01 */	li r4, 0x1
-/* 801F0A50 001EC890  48 20 FE A1 */	bl lbl_804008F0
+/* 801F0A50 001EC890  48 20 FE A1 */	bl setFadeIn__Q23sfx4FadeFUl
 /* 801F0A54 001EC894  38 7E 7A 20 */	addi r3, r30, 0x7a20
-/* 801F0A58 001EC898  48 20 FD 6D */	bl lbl_804007C4
+/* 801F0A58 001EC898  48 20 FD 6D */	bl update__Q23sfx4FadeFv
 /* 801F0A5C 001EC89C  7F C3 F3 78 */	mr r3, r30
 /* 801F0A60 001EC8A0  38 9E 00 64 */	addi r4, r30, 0x64
-/* 801F0A64 001EC8A4  48 00 03 AD */	bl lbl_801F0E10
+/* 801F0A64 001EC8A4  48 00 03 AD */	bl setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root
 /* 801F0A68 001EC8A8  7F C3 F3 78 */	mr r3, r30
 /* 801F0A6C 001EC8AC  38 9E 00 B4 */	addi r4, r30, 0xb4
-/* 801F0A70 001EC8B0  48 00 03 A1 */	bl lbl_801F0E10
+/* 801F0A70 001EC8B0  48 00 03 A1 */	bl setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root
 /* 801F0A74 001EC8B4  7F C3 F3 78 */	mr r3, r30
 /* 801F0A78 001EC8B8  38 9E 01 04 */	addi r4, r30, 0x104
-/* 801F0A7C 001EC8BC  48 00 03 95 */	bl lbl_801F0E10
+/* 801F0A7C 001EC8BC  48 00 03 95 */	bl setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root
 /* 801F0A80 001EC8C0  7F C3 F3 78 */	mr r3, r30
 /* 801F0A84 001EC8C4  39 61 07 60 */	addi r11, r1, 0x760
 /* 801F0A88 001EC8C8  4B E1 68 FD */	bl lbl_80007384
@@ -374,8 +374,8 @@ lbl_801F096C:
 /* 801F0A90 001EC8D0  7C 08 03 A6 */	mtlr r0
 /* 801F0A94 001EC8D4  38 21 07 60 */	addi r1, r1, 0x760
 /* 801F0A98 001EC8D8  4E 80 00 20 */	blr
-.global lbl_801F0A9C
-lbl_801F0A9C:
+.global __ct__Q33scn4step16ContextChallengeFRCQ33scn4step16ContextChallenge
+__ct__Q33scn4step16ContextChallengeFRCQ33scn4step16ContextChallenge:
 /* 801F0A9C 001EC8DC  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 801F0AA0 001EC8E0  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801F0AA4 001EC8E4  7C 67 1B 78 */	mr r7, r3
@@ -449,8 +449,8 @@ lbl_801F0AE0:
 /* 801F0BA4 001EC9E4  80 04 00 98 */	lwz r0, 0x98(r4)
 /* 801F0BA8 001EC9E8  90 03 00 98 */	stw r0, 0x98(r3)
 /* 801F0BAC 001EC9EC  4E 80 00 20 */	blr
-.global lbl_801F0BB0
-lbl_801F0BB0:
+.global __ct__Q43scn15challengeresult20SceneChallengeResult6RecipeFRCQ43scn15challengeresult20SceneChallengeResult6Recipe
+__ct__Q43scn15challengeresult20SceneChallengeResult6RecipeFRCQ43scn15challengeresult20SceneChallengeResult6Recipe:
 /* 801F0BB0 001EC9F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0BB4 001EC9F4  7C 08 02 A6 */	mflr r0
 /* 801F0BB8 001EC9F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -464,7 +464,7 @@ lbl_801F0BB0:
 /* 801F0BD8 001ECA18  98 03 00 04 */	stb r0, 0x4(r3)
 /* 801F0BDC 001ECA1C  38 63 00 08 */	addi r3, r3, 0x8
 /* 801F0BE0 001ECA20  38 84 00 08 */	addi r4, r4, 0x8
-/* 801F0BE4 001ECA24  4B FF FE B9 */	bl lbl_801F0A9C
+/* 801F0BE4 001ECA24  4B FF FE B9 */	bl __ct__Q33scn4step16ContextChallengeFRCQ33scn4step16ContextChallenge
 /* 801F0BE8 001ECA28  38 BE 00 A0 */	addi r5, r30, 0xa0
 /* 801F0BEC 001ECA2C  38 9F 00 A0 */	addi r4, r31, 0xa0
 /* 801F0BF0 001ECA30  38 00 00 04 */	li r0, 0x4
@@ -485,8 +485,8 @@ lbl_801F0BF8:
 /* 801F0C24 001ECA64  7C 08 03 A6 */	mtlr r0
 /* 801F0C28 001ECA68  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0C2C 001ECA6C  4E 80 00 20 */	blr
-.global lbl_801F0C30
-lbl_801F0C30:
+.global "destruct__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv"
+"destruct__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv":
 /* 801F0C30 001ECA70  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0C34 001ECA74  7C 08 02 A6 */	mflr r0
 /* 801F0C38 001ECA78  90 01 00 14 */	stw r0, 0x14(r1)
@@ -496,7 +496,7 @@ lbl_801F0C30:
 /* 801F0C48 001ECA88  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801F0C4C 001ECA8C  41 82 00 14 */	beq lbl_801F0C60
 /* 801F0C50 001ECA90  38 80 FF FF */	li r4, -0x1
-/* 801F0C54 001ECA94  48 00 0D 61 */	bl lbl_801F19B4
+/* 801F0C54 001ECA94  48 00 0D 61 */	bl __dt__Q43scn15challengeresult4info7ManagerFv
 /* 801F0C58 001ECA98  38 00 00 00 */	li r0, 0x0
 /* 801F0C5C 001ECA9C  90 1F 00 00 */	stw r0, 0x0(r31)
 .global lbl_801F0C60
@@ -506,8 +506,8 @@ lbl_801F0C60:
 /* 801F0C68 001ECAA8  7C 08 03 A6 */	mtlr r0
 /* 801F0C6C 001ECAAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0C70 001ECAB0  4E 80 00 20 */	blr
-.global lbl_801F0C74
-lbl_801F0C74:
+.global __dt__Q43scn15challengeresult6effect7ManagerFv
+__dt__Q43scn15challengeresult6effect7ManagerFv:
 /* 801F0C74 001ECAB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0C78 001ECAB8  7C 08 02 A6 */	mflr r0
 /* 801F0C7C 001ECABC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -519,24 +519,24 @@ lbl_801F0C74:
 /* 801F0C94 001ECAD4  41 82 00 54 */	beq lbl_801F0CE8
 /* 801F0C98 001ECAD8  38 63 01 AC */	addi r3, r3, 0x1ac
 /* 801F0C9C 001ECADC  38 80 FF FF */	li r4, -0x1
-/* 801F0CA0 001ECAE0  4B F8 E2 3D */	bl lbl_8017EEDC
+/* 801F0CA0 001ECAE0  4B F8 E2 3D */	bl __dt__Q26effect12StdRequestorFv
 /* 801F0CA4 001ECAE4  38 7E 01 90 */	addi r3, r30, 0x190
 /* 801F0CA8 001ECAE8  38 80 FF FF */	li r4, -0x1
-/* 801F0CAC 001ECAEC  4B F8 E2 31 */	bl lbl_8017EEDC
+/* 801F0CAC 001ECAEC  4B F8 E2 31 */	bl __dt__Q26effect12StdRequestorFv
 /* 801F0CB0 001ECAF0  38 7E 01 60 */	addi r3, r30, 0x160
 /* 801F0CB4 001ECAF4  38 80 FF FF */	li r4, -0x1
-/* 801F0CB8 001ECAF8  4B F8 D5 89 */	bl lbl_8017E240
+/* 801F0CB8 001ECAF8  4B F8 D5 89 */	bl __dt__Q26effect5GroupFv
 /* 801F0CBC 001ECAFC  38 7E 01 30 */	addi r3, r30, 0x130
 /* 801F0CC0 001ECB00  38 80 FF FF */	li r4, -0x1
-/* 801F0CC4 001ECB04  4B F8 D5 7D */	bl lbl_8017E240
+/* 801F0CC4 001ECB04  4B F8 D5 7D */	bl __dt__Q26effect5GroupFv
 /* 801F0CC8 001ECB08  7F C3 F3 78 */	mr r3, r30
 /* 801F0CCC 001ECB0C  38 80 FF FF */	li r4, -0x1
-/* 801F0CD0 001ECB10  4B F8 D9 09 */	bl lbl_8017E5D8
+/* 801F0CD0 001ECB10  4B F8 D9 09 */	bl __dt__Q26effect7ManagerFv
 /* 801F0CD4 001ECB14  7F E0 07 34 */	extsh r0, r31
 /* 801F0CD8 001ECB18  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801F0CDC 001ECB1C  40 81 00 0C */	ble lbl_801F0CE8
 /* 801F0CE0 001ECB20  7F C3 F3 78 */	mr r3, r30
-/* 801F0CE4 001ECB24  4B FC EA 31 */	bl lbl_801BF714
+/* 801F0CE4 001ECB24  4B FC EA 31 */	bl __dl__FPv
 .global lbl_801F0CE8
 lbl_801F0CE8:
 /* 801F0CE8 001ECB28  7F C3 F3 78 */	mr r3, r30
@@ -546,8 +546,8 @@ lbl_801F0CE8:
 /* 801F0CF8 001ECB38  7C 08 03 A6 */	mtlr r0
 /* 801F0CFC 001ECB3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0D00 001ECB40  4E 80 00 20 */	blr
-.global lbl_801F0D04
-lbl_801F0D04:
+.global "__dt__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv"
+"__dt__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv":
 /* 801F0D04 001ECB44  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0D08 001ECB48  7C 08 02 A6 */	mflr r0
 /* 801F0D0C 001ECB4C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -557,12 +557,12 @@ lbl_801F0D04:
 /* 801F0D1C 001ECB5C  7C 9F 23 78 */	mr r31, r4
 /* 801F0D20 001ECB60  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801F0D24 001ECB64  41 82 00 1C */	beq lbl_801F0D40
-/* 801F0D28 001ECB68  4B FF FF 09 */	bl lbl_801F0C30
+/* 801F0D28 001ECB68  4B FF FF 09 */	bl "destruct__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv"
 /* 801F0D2C 001ECB6C  7F E0 07 34 */	extsh r0, r31
 /* 801F0D30 001ECB70  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801F0D34 001ECB74  40 81 00 0C */	ble lbl_801F0D40
 /* 801F0D38 001ECB78  7F C3 F3 78 */	mr r3, r30
-/* 801F0D3C 001ECB7C  4B FC E9 D9 */	bl lbl_801BF714
+/* 801F0D3C 001ECB7C  4B FC E9 D9 */	bl __dl__FPv
 .global lbl_801F0D40
 lbl_801F0D40:
 /* 801F0D40 001ECB80  7F C3 F3 78 */	mr r3, r30
@@ -573,8 +573,8 @@ lbl_801F0D40:
 /* 801F0D54 001ECB94  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0D58 001ECB98  4E 80 00 20 */	blr
 
-.global lbl_801F0D5C
-lbl_801F0D5C:
+.global __dt__Q33scn15challengeresult20SceneChallengeResultFv
+__dt__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F0D5C 001ECB9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0D60 001ECBA0  7C 08 02 A6 */	mflr r0
 /* 801F0D64 001ECBA4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -586,33 +586,33 @@ lbl_801F0D5C:
 /* 801F0D7C 001ECBBC  41 82 00 78 */	beq lbl_801F0DF4
 /* 801F0D80 001ECBC0  38 63 7A 44 */	addi r3, r3, 0x7a44
 /* 801F0D84 001ECBC4  38 80 FF FF */	li r4, -0x1
-/* 801F0D88 001ECBC8  48 21 1E A1 */	bl lbl_80402C28
+/* 801F0D88 001ECBC8  48 21 1E A1 */	bl __dt__Q23snd11SERequestorFv
 /* 801F0D8C 001ECBCC  38 7E 03 C0 */	addi r3, r30, 0x3c0
 /* 801F0D90 001ECBD0  38 80 FF FF */	li r4, -0x1
-/* 801F0D94 001ECBD4  4B FF FF 71 */	bl lbl_801F0D04
+/* 801F0D94 001ECBD4  4B FF FF 71 */	bl "__dt__Q24util50PlacementNew<Q43scn15challengeresult4info7Manager>Fv"
 /* 801F0D98 001ECBD8  38 7E 01 54 */	addi r3, r30, 0x154
 /* 801F0D9C 001ECBDC  38 80 FF FF */	li r4, -0x1
-/* 801F0DA0 001ECBE0  4B FF FE D5 */	bl lbl_801F0C74
+/* 801F0DA0 001ECBE0  4B FF FE D5 */	bl __dt__Q43scn15challengeresult6effect7ManagerFv
 /* 801F0DA4 001ECBE4  38 7E 01 04 */	addi r3, r30, 0x104
 /* 801F0DA8 001ECBE8  38 80 FF FF */	li r4, -0x1
-/* 801F0DAC 001ECBEC  4B FA 34 41 */	bl lbl_801941EC
+/* 801F0DAC 001ECBEC  4B FA 34 41 */	bl __dt__Q23g3d4RootFv
 /* 801F0DB0 001ECBF0  38 7E 00 B4 */	addi r3, r30, 0xb4
 /* 801F0DB4 001ECBF4  38 80 FF FF */	li r4, -0x1
-/* 801F0DB8 001ECBF8  4B FA 34 35 */	bl lbl_801941EC
+/* 801F0DB8 001ECBF8  4B FA 34 35 */	bl __dt__Q23g3d4RootFv
 /* 801F0DBC 001ECBFC  38 7E 00 64 */	addi r3, r30, 0x64
 /* 801F0DC0 001ECC00  38 80 FF FF */	li r4, -0x1
-/* 801F0DC4 001ECC04  4B FA 34 29 */	bl lbl_801941EC
+/* 801F0DC4 001ECC04  4B FA 34 29 */	bl __dt__Q23g3d4RootFv
 /* 801F0DC8 001ECC08  38 7E 00 04 */	addi r3, r30, 0x4
 /* 801F0DCC 001ECC0C  38 80 FF FF */	li r4, -0x1
-/* 801F0DD0 001ECC10  4B F8 44 C9 */	bl lbl_80175298
+/* 801F0DD0 001ECC10  4B F8 44 C9 */	bl __dt__Q23mem11AutoHeapExpFv
 /* 801F0DD4 001ECC14  7F C3 F3 78 */	mr r3, r30
 /* 801F0DD8 001ECC18  38 80 00 00 */	li r4, 0x0
-/* 801F0DDC 001ECC1C  4B F8 4D 8D */	bl lbl_80175B68
+/* 801F0DDC 001ECC1C  4B F8 4D 8D */	bl __dt__Q23scn6ISceneFv
 /* 801F0DE0 001ECC20  7F E0 07 34 */	extsh r0, r31
 /* 801F0DE4 001ECC24  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801F0DE8 001ECC28  40 81 00 0C */	ble lbl_801F0DF4
 /* 801F0DEC 001ECC2C  7F C3 F3 78 */	mr r3, r30
-/* 801F0DF0 001ECC30  4B FC E9 25 */	bl lbl_801BF714
+/* 801F0DF0 001ECC30  4B FC E9 25 */	bl __dl__FPv
 .global lbl_801F0DF4
 lbl_801F0DF4:
 /* 801F0DF4 001ECC34  7F C3 F3 78 */	mr r3, r30
@@ -622,15 +622,15 @@ lbl_801F0DF4:
 /* 801F0E04 001ECC44  7C 08 03 A6 */	mtlr r0
 /* 801F0E08 001ECC48  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0E0C 001ECC4C  4E 80 00 20 */	blr
-.global lbl_801F0E10
-lbl_801F0E10:
+.global setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root
+setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root:
 /* 801F0E10 001ECC50  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801F0E14 001ECC54  7C 08 02 A6 */	mflr r0
 /* 801F0E18 001ECC58  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801F0E1C 001ECC5C  93 E1 00 6C */	stw r31, 0x6c(r1)
 /* 801F0E20 001ECC60  7C 9F 23 78 */	mr r31, r4
-/* 801F0E24 001ECC64  3C 60 80 54 */	lis r3, lbl_80545300@ha
-/* 801F0E28 001ECC68  38 83 53 00 */	addi r4, r3, lbl_80545300@l
+/* 801F0E24 001ECC64  3C 60 80 54 */	lis r3, BASIS_Z__Q33hel4math7Vector3@ha
+/* 801F0E28 001ECC68  38 83 53 00 */	addi r4, r3, BASIS_Z__Q33hel4math7Vector3@l
 /* 801F0E2C 001ECC6C  80 64 00 00 */	lwz r3, 0x0(r4)
 /* 801F0E30 001ECC70  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 801F0E34 001ECC74  90 61 00 10 */	stw r3, 0x10(r1)
@@ -638,7 +638,7 @@ lbl_801F0E10:
 /* 801F0E3C 001ECC7C  80 04 00 08 */	lwz r0, 0x8(r4)
 /* 801F0E40 001ECC80  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801F0E44 001ECC84  C0 01 00 10 */	lfs f0, 0x10(r1)
-/* 801F0E48 001ECC88  C0 22 9E AC */	lfs f1, lbl_8055FE2C@sda21(r2)
+/* 801F0E48 001ECC88  C0 22 9E AC */	lfs f1, "@54497_8055FE2C"@sda21(r2)
 /* 801F0E4C 001ECC8C  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801F0E50 001ECC90  D0 01 00 10 */	stfs f0, 0x10(r1)
 /* 801F0E54 001ECC94  C0 01 00 14 */	lfs f0, 0x14(r1)
@@ -653,43 +653,43 @@ lbl_801F0E10:
 /* 801F0E78 001ECCB8  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801F0E7C 001ECCBC  80 01 00 18 */	lwz r0, 0x18(r1)
 /* 801F0E80 001ECCC0  90 01 00 24 */	stw r0, 0x24(r1)
-/* 801F0E84 001ECCC4  C0 02 9E B0 */	lfs f0, lbl_8055FE30@sda21(r2)
+/* 801F0E84 001ECCC4  C0 02 9E B0 */	lfs f0, "@54498_8055FE30"@sda21(r2)
 /* 801F0E88 001ECCC8  D0 01 00 28 */	stfs f0, 0x28(r1)
 /* 801F0E8C 001ECCCC  D0 01 00 2C */	stfs f0, 0x2c(r1)
-/* 801F0E90 001ECCD0  C0 02 9E B4 */	lfs f0, lbl_8055FE34@sda21(r2)
+/* 801F0E90 001ECCD0  C0 02 9E B4 */	lfs f0, "@54499_8055FE34"@sda21(r2)
 /* 801F0E94 001ECCD4  D0 01 00 30 */	stfs f0, 0x30(r1)
 /* 801F0E98 001ECCD8  7F E3 FB 78 */	mr r3, r31
-/* 801F0E9C 001ECCDC  4B FA 35 B1 */	bl lbl_8019444C
+/* 801F0E9C 001ECCDC  4B FA 35 B1 */	bl currentCamera__Q23g3d4RootCFv
 /* 801F0EA0 001ECCE0  90 61 00 0C */	stw r3, 0xc(r1)
 /* 801F0EA4 001ECCE4  38 61 00 38 */	addi r3, r1, 0x38
 /* 801F0EA8 001ECCE8  38 81 00 28 */	addi r4, r1, 0x28
-/* 801F0EAC 001ECCEC  3C A0 80 54 */	lis r5, lbl_805452F4@ha
-/* 801F0EB0 001ECCF0  38 A5 52 F4 */	addi r5, r5, lbl_805452F4@l
+/* 801F0EAC 001ECCEC  3C A0 80 54 */	lis r5, BASIS_Y__Q33hel4math7Vector3@ha
+/* 801F0EB0 001ECCF0  38 A5 52 F4 */	addi r5, r5, BASIS_Y__Q33hel4math7Vector3@l
 /* 801F0EB4 001ECCF4  38 C1 00 1C */	addi r6, r1, 0x1c
-/* 801F0EB8 001ECCF8  4B FA D8 F9 */	bl lbl_8019E7B0
+/* 801F0EB8 001ECCF8  4B FA D8 F9 */	bl CreateLookAt__Q33hel4math8Matrix34FRCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
 /* 801F0EBC 001ECCFC  38 61 00 0C */	addi r3, r1, 0xc
 /* 801F0EC0 001ECD00  38 81 00 38 */	addi r4, r1, 0x38
-/* 801F0EC4 001ECD04  4B F9 B0 05 */	bl lbl_8018BEC8
+/* 801F0EC4 001ECD04  4B F9 B0 05 */	bl setViewMtx__Q23g3d14CameraAccessorCFRCQ33hel4math8Matrix34
 /* 801F0EC8 001ECD08  7F E3 FB 78 */	mr r3, r31
-/* 801F0ECC 001ECD0C  4B FA 35 81 */	bl lbl_8019444C
+/* 801F0ECC 001ECD0C  4B FA 35 81 */	bl currentCamera__Q23g3d4RootCFv
 /* 801F0ED0 001ECD10  90 61 00 08 */	stw r3, 0x8(r1)
 /* 801F0ED4 001ECD14  38 61 00 08 */	addi r3, r1, 0x8
-/* 801F0ED8 001ECD18  C0 22 9E B8 */	lfs f1, lbl_8055FE38@sda21(r2)
-/* 801F0EDC 001ECD1C  C0 42 9E BC */	lfs f2, lbl_8055FE3C@sda21(r2)
-/* 801F0EE0 001ECD20  C0 62 9E C0 */	lfs f3, lbl_8055FE40@sda21(r2)
-/* 801F0EE4 001ECD24  C0 82 9E C4 */	lfs f4, lbl_8055FE44@sda21(r2)
-/* 801F0EE8 001ECD28  4B F9 B0 0D */	bl lbl_8018BEF4
+/* 801F0ED8 001ECD18  C0 22 9E B8 */	lfs f1, "@54500_8055FE38"@sda21(r2)
+/* 801F0EDC 001ECD1C  C0 42 9E BC */	lfs f2, "@54501"@sda21(r2)
+/* 801F0EE0 001ECD20  C0 62 9E C0 */	lfs f3, "@54502_8055FE40"@sda21(r2)
+/* 801F0EE4 001ECD24  C0 82 9E C4 */	lfs f4, "@54503_8055FE44"@sda21(r2)
+/* 801F0EE8 001ECD28  4B F9 B0 0D */	bl setProjPerspective__Q23g3d14CameraAccessorCFffff
 /* 801F0EEC 001ECD2C  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 801F0EF0 001ECD30  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801F0EF4 001ECD34  7C 08 03 A6 */	mtlr r0
 /* 801F0EF8 001ECD38  38 21 00 70 */	addi r1, r1, 0x70
 /* 801F0EFC 001ECD3C  4E 80 00 20 */	blr
-.global lbl_801F0F00
-lbl_801F0F00:
+.global recipe__Q33scn15challengeresult20SceneChallengeResultFv
+recipe__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F0F00 001ECD40  38 84 7A B8 */	addi r4, r4, 0x7ab8
-/* 801F0F04 001ECD44  4B FF FC AC */	b lbl_801F0BB0
-.global lbl_801F0F08
-lbl_801F0F08:
+/* 801F0F04 001ECD44  4B FF FC AC */	b __ct__Q43scn15challengeresult20SceneChallengeResult6RecipeFRCQ43scn15challengeresult20SceneChallengeResult6Recipe
+.global result__Q33scn15challengeresult20SceneChallengeResultFv
+result__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F0F08 001ECD48  7C 64 1B 78 */	mr r4, r3
 /* 801F0F0C 001ECD4C  A0 03 7B 80 */	lhz r0, 0x7b80(r3)
 /* 801F0F10 001ECD50  54 03 80 1E */	slwi r3, r0, 16
@@ -697,21 +697,21 @@ lbl_801F0F08:
 /* 801F0F18 001ECD58  50 03 44 2E */	rlwimi r3, r0, 8, 16, 23
 /* 801F0F1C 001ECD5C  4E 80 00 20 */	blr
 
-.global lbl_801F0F20
-lbl_801F0F20:
+.global updateUseGPU__Q33scn15challengeresult20SceneChallengeResultFv
+updateUseGPU__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F0F20 001ECD60  4E 80 00 20 */	blr
 
-.global lbl_801F0F24
-lbl_801F0F24:
+.global updateMain__Q33scn15challengeresult20SceneChallengeResultFv
+updateMain__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F0F24 001ECD64  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F0F28 001ECD68  7C 08 02 A6 */	mflr r0
 /* 801F0F2C 001ECD6C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801F0F30 001ECD70  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801F0F34 001ECD74  7C 7F 1B 78 */	mr r31, r3
 /* 801F0F38 001ECD78  38 63 7A 18 */	addi r3, r3, 0x7a18
-/* 801F0F3C 001ECD7C  48 21 4A 65 */	bl lbl_804059A0
+/* 801F0F3C 001ECD7C  48 21 4A 65 */	bl advanceIfNotEnd__Q24util12FrameCounterFv
 /* 801F0F40 001ECD80  38 7F 7A 20 */	addi r3, r31, 0x7a20
-/* 801F0F44 001ECD84  48 20 F8 81 */	bl lbl_804007C4
+/* 801F0F44 001ECD84  48 20 F8 81 */	bl update__Q23sfx4FadeFv
 /* 801F0F48 001ECD88  80 1F 03 1C */	lwz r0, 0x31c(r31)
 /* 801F0F4C 001ECD8C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801F0F50 001ECD90  41 82 00 18 */	beq lbl_801F0F68
@@ -724,7 +724,7 @@ lbl_801F0F24:
 lbl_801F0F68:
 /* 801F0F68 001ECDA8  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
 /* 801F0F6C 001ECDAC  38 63 04 04 */	addi r3, r3, 0x404
-/* 801F0F70 001ECDB0  48 00 19 7D */	bl lbl_801F28EC
+/* 801F0F70 001ECDB0  48 00 19 7D */	bl isAnimEnd__Q43scn15challengeresult4info9ResultLytCFv
 /* 801F0F74 001ECDB4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801F0F78 001ECDB8  41 82 00 7C */	beq lbl_801F0FF4
 /* 801F0F7C 001ECDBC  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
@@ -734,24 +734,24 @@ lbl_801F0F68:
 /* 801F0F8C 001ECDCC  98 1F 7B 81 */	stb r0, 0x7b81(r31)
 /* 801F0F90 001ECDD0  88 03 75 26 */	lbz r0, 0x7526(r3)
 /* 801F0F94 001ECDD4  98 1F 7B 82 */	stb r0, 0x7b82(r31)
-/* 801F0F98 001ECDD8  80 02 9E C8 */	lwz r0, lbl_8055FE48@sda21(r2)
+/* 801F0F98 001ECDD8  80 02 9E C8 */	lwz r0, "@53899_8055FE48"@sda21(r2)
 /* 801F0F9C 001ECDDC  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801F0FA0 001ECDE0  38 7F 7A 20 */	addi r3, r31, 0x7a20
 /* 801F0FA4 001ECDE4  38 81 00 08 */	addi r4, r1, 0x8
-/* 801F0FA8 001ECDE8  48 20 F9 79 */	bl lbl_80400920
+/* 801F0FA8 001ECDE8  48 20 F9 79 */	bl setColor__Q23sfx4FadeFRC8_GXColor
 /* 801F0FAC 001ECDEC  38 7F 7A 20 */	addi r3, r31, 0x7a20
 /* 801F0FB0 001ECDF0  38 80 00 19 */	li r4, 0x19
-/* 801F0FB4 001ECDF4  48 20 F9 55 */	bl lbl_80400908
+/* 801F0FB4 001ECDF4  48 20 F9 55 */	bl setFadeOut__Q23sfx4FadeFUl
 /* 801F0FB8 001ECDF8  38 7F 7A 18 */	addi r3, r31, 0x7a18
 /* 801F0FBC 001ECDFC  38 80 00 19 */	li r4, 0x19
-/* 801F0FC0 001ECE00  48 21 49 C1 */	bl lbl_80405980
+/* 801F0FC0 001ECE00  48 21 49 C1 */	bl reset__Q24util12FrameCounterFUl
 /* 801F0FC4 001ECE04  38 00 00 01 */	li r0, 0x1
 /* 801F0FC8 001ECE08  90 1F 03 1C */	stw r0, 0x31c(r31)
 /* 801F0FCC 001ECE0C  48 00 00 28 */	b lbl_801F0FF4
 .global lbl_801F0FD0
 lbl_801F0FD0:
 /* 801F0FD0 001ECE10  38 7F 7A 18 */	addi r3, r31, 0x7a18
-/* 801F0FD4 001ECE14  48 21 49 B5 */	bl lbl_80405988
+/* 801F0FD4 001ECE14  48 21 49 B5 */	bl isEnd__Q24util12FrameCounterCFv
 /* 801F0FD8 001ECE18  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801F0FDC 001ECE1C  41 82 00 18 */	beq lbl_801F0FF4
 /* 801F0FE0 001ECE20  38 00 00 02 */	li r0, 0x2
@@ -764,55 +764,55 @@ lbl_801F0FEC:
 .global lbl_801F0FF4
 lbl_801F0FF4:
 /* 801F0FF4 001ECE34  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
-/* 801F0FF8 001ECE38  48 00 0A 55 */	bl lbl_801F1A4C
+/* 801F0FF8 001ECE38  48 00 0A 55 */	bl procAnim__Q43scn15challengeresult4info7ManagerFv
 /* 801F0FFC 001ECE3C  38 7F 01 54 */	addi r3, r31, 0x154
-/* 801F1000 001ECE40  48 00 02 41 */	bl lbl_801F1240
+/* 801F1000 001ECE40  48 00 02 41 */	bl procAnim__Q43scn15challengeresult6effect7ManagerFv
 /* 801F1004 001ECE44  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
-/* 801F1008 001ECE48  48 00 0A 85 */	bl lbl_801F1A8C
+/* 801F1008 001ECE48  48 00 0A 85 */	bl procReadyToRender__Q43scn15challengeresult4info7ManagerFv
 /* 801F100C 001ECE4C  38 7F 01 54 */	addi r3, r31, 0x154
-/* 801F1010 001ECE50  48 00 03 65 */	bl lbl_801F1374
+/* 801F1010 001ECE50  48 00 03 65 */	bl procReadyToRender__Q43scn15challengeresult6effect7ManagerFv
 /* 801F1014 001ECE54  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801F1018 001ECE58  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801F101C 001ECE5C  7C 08 03 A6 */	mtlr r0
 /* 801F1020 001ECE60  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F1024 001ECE64  4E 80 00 20 */	blr
 
-.global lbl_801F1028
-lbl_801F1028:
+.global updateDebug__Q33scn15challengeresult20SceneChallengeResultFv
+updateDebug__Q33scn15challengeresult20SceneChallengeResultFv:
 /* 801F1028 001ECE68  4E 80 00 20 */	blr
 
-.global lbl_801F102C
-lbl_801F102C:
+.global draw__Q33scn15challengeresult20SceneChallengeResultFRCQ23scn11DrawReqInfo
+draw__Q33scn15challengeresult20SceneChallengeResultFRCQ23scn11DrawReqInfo:
 /* 801F102C 001ECE6C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F1030 001ECE70  7C 08 02 A6 */	mflr r0
 /* 801F1034 001ECE74  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F1038 001ECE78  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F103C 001ECE7C  7C 7F 1B 78 */	mr r31, r3
 /* 801F1040 001ECE80  80 63 03 C0 */	lwz r3, 0x3c0(r3)
-/* 801F1044 001ECE84  48 00 0A 81 */	bl lbl_801F1AC4
+/* 801F1044 001ECE84  48 00 0A 81 */	bl draw__Q43scn15challengeresult4info7ManagerCFv
 /* 801F1048 001ECE88  38 7F 01 54 */	addi r3, r31, 0x154
-/* 801F104C 001ECE8C  48 00 03 79 */	bl lbl_801F13C4
+/* 801F104C 001ECE8C  48 00 03 79 */	bl drawMain__Q43scn15challengeresult6effect7ManagerFv
 /* 801F1050 001ECE90  38 7F 01 54 */	addi r3, r31, 0x154
-/* 801F1054 001ECE94  48 00 03 D1 */	bl lbl_801F1424
+/* 801F1054 001ECE94  48 00 03 D1 */	bl drawFront__Q43scn15challengeresult6effect7ManagerFv
 /* 801F1058 001ECE98  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
-/* 801F105C 001ECE9C  48 00 0A 9D */	bl lbl_801F1AF8
+/* 801F105C 001ECE9C  48 00 0A 9D */	bl drawFront__Q43scn15challengeresult4info7ManagerCFv
 /* 801F1060 001ECEA0  38 7F 7A 20 */	addi r3, r31, 0x7a20
-/* 801F1064 001ECEA4  48 20 F9 0D */	bl lbl_80400970
+/* 801F1064 001ECEA4  48 20 F9 0D */	bl draw__Q23sfx4FadeCFv
 /* 801F1068 001ECEA8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801F106C 001ECEAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F1070 001ECEB0  7C 08 03 A6 */	mtlr r0
 /* 801F1074 001ECEB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F1078 001ECEB8  4E 80 00 20 */	blr
 
-.global lbl_801F107C
-lbl_801F107C:
+.global isSceneEnd__Q33scn15challengeresult20SceneChallengeResultCFv
+isSceneEnd__Q33scn15challengeresult20SceneChallengeResultCFv:
 /* 801F107C 001ECEBC  80 63 03 1C */	lwz r3, 0x31c(r3)
 /* 801F1080 001ECEC0  38 03 FF FD */	addi r0, r3, -0x3
 /* 801F1084 001ECEC4  7C 00 00 34 */	cntlzw r0, r0
 /* 801F1088 001ECEC8  54 03 D9 7E */	srwi r3, r0, 5
 /* 801F108C 001ECECC  4E 80 00 20 */	blr
-.global lbl_801F1090
-lbl_801F1090:
+.global isChallengeMusou__Q33scn15challengeresult20SceneChallengeResultCFv
+isChallengeMusou__Q33scn15challengeresult20SceneChallengeResultCFv:
 /* 801F1090 001ECED0  80 03 7A B8 */	lwz r0, 0x7ab8(r3)
 /* 801F1094 001ECED4  2C 00 00 05 */	cmpwi r0, 0x5
 /* 801F1098 001ECED8  41 82 00 14 */	beq lbl_801F10AC
@@ -829,6 +829,6 @@ lbl_801F10B4:
 /* 801F10B4 001ECEF4  38 60 00 00 */	li r3, 0x0
 /* 801F10B8 001ECEF8  4E 80 00 20 */	blr
 
-.global lbl_801F10BC
-lbl_801F10BC:
-/* 801F10BC 001ECEFC  4B FF F4 8C */	b lbl_801F0548
+.global GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv
+GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv:
+/* 801F10BC 001ECEFC  4B FF F4 8C */	b "RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"

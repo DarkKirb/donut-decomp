@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80408608
-lbl_80408608:
+.global scaaaTexRegionAddr
+scaaaTexRegionAddr:
 
 	.4byte 0
 	.4byte 0x00040000
@@ -245,8 +245,8 @@ lbl_80408608:
 	.4byte 0x000C0000
 	.4byte 0x000B0000
 
-.global lbl_804089C8
-lbl_804089C8:
+.global scaaaTexRegionSize
+scaaaTexRegionSize:
 
 	.4byte 0x00000001
 	.4byte 0

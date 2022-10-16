@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80419C90
-lbl_80419C90:
+.global "CRY_TABLE_KIRBY__Q43scn4step4hero17@unnamed@Cry_cpp@"
+"CRY_TABLE_KIRBY__Q43scn4step4hero17@unnamed@Cry_cpp@":
 
 	.4byte 0x0000007F
 	.4byte 0x00000080

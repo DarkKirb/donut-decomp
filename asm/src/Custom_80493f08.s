@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80493F08
-lbl_80493F08:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv19StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv19StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DC22C
-	.4byte lbl_803DC164
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv19StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv19StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493F18
-lbl_80493F18:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803DC228
-	.4byte lbl_803DC180
-
-.global lbl_80493F28
-lbl_80493F28:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv29StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv29StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DC224
-	.4byte lbl_803DC19C
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv29StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv29StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493F38
-lbl_80493F38:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv39StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv39StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DC160
-	.4byte lbl_803DC1B8
-	.4byte lbl_803DBD40
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv39StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11starshotlv39StateMain,PQ43scn4step6weapon6Weapon>Fv"
+
+.global __vt__Q53scn4step6weapon11starshotlv16Custom
+__vt__Q53scn4step6weapon11starshotlv16Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step6weapon11starshotlv16CustomCFv
+	.4byte __dt__Q53scn4step6weapon11starshotlv16CustomFv
+	.4byte onInit__Q53scn4step6weapon11starshotlv16CustomFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0

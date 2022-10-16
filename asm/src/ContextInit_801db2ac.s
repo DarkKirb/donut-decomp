@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801DB2AC
-lbl_801DB2AC:
+.global Create__Q25pause11ContextInitFQ27storage9StoryModeQ25pause8ModeKind
+Create__Q25pause11ContextInitFQ27storage9StoryModeQ25pause8ModeKind:
 /* 801DB2AC 001D70EC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DB2B0 001D70F0  7C 08 02 A6 */	mflr r0
 /* 801DB2B4 001D70F4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -11,7 +11,7 @@ lbl_801DB2AC:
 /* 801DB2C0 001D7100  7C 7E 1B 78 */	mr r30, r3
 /* 801DB2C4 001D7104  7C 9F 23 78 */	mr r31, r4
 /* 801DB2C8 001D7108  38 61 00 08 */	addi r3, r1, 0x8
-/* 801DB2CC 001D710C  48 00 00 2D */	bl lbl_801DB2F8
+/* 801DB2CC 001D710C  48 00 00 2D */	bl __ct__Q25pause11ContextInitFv
 /* 801DB2D0 001D7110  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801DB2D4 001D7114  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DB2D8 001D7118  7F C3 F3 78 */	mr r3, r30
@@ -22,8 +22,8 @@ lbl_801DB2AC:
 /* 801DB2EC 001D712C  7C 08 03 A6 */	mtlr r0
 /* 801DB2F0 001D7130  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DB2F4 001D7134  4E 80 00 20 */	blr
-.global lbl_801DB2F8
-lbl_801DB2F8:
+.global __ct__Q25pause11ContextInitFv
+__ct__Q25pause11ContextInitFv:
 /* 801DB2F8 001D7138  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DB2FC 001D713C  38 00 00 00 */	li r0, 0x0
 /* 801DB300 001D7140  90 01 00 08 */	stw r0, 0x8(r1)

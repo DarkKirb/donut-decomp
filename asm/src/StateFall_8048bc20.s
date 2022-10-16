@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048BC20
-lbl_8048BC20:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common13StatePlancher,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common13StatePlancher,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803631EC
-	.4byte lbl_803631D0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common13StatePlancher,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common13StatePlancher,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048BC30
-lbl_8048BC30:
+.global __vt__Q53scn4step4hero6common9StateFall
+__vt__Q53scn4step4hero6common9StateFall:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80362D18
-	.4byte lbl_80362D94
-	.4byte lbl_80363068
-	.4byte lbl_8035550C
-	.4byte lbl_8036306C
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero6common9StateFallFv
+	.4byte procAnim__Q53scn4step4hero6common9StateFallFv
+	.4byte procMove__Q53scn4step4hero6common9StateFallFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common9StateFallFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800CF440
-lbl_800CF440:
+.global GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
+GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf:
 /* 800CF440 000CB280  A0 A3 00 00 */	lhz r5, 0x0(r3)
 /* 800CF444 000CB284  C0 43 00 08 */	lfs f2, 0x8(r3)
 /* 800CF448 000CB288  38 05 FF FF */	addi r0, r5, -0x1
@@ -67,13 +67,13 @@ lbl_800CF4F4:
 lbl_800CF508:
 /* 800CF508 000CB348  C0 43 00 0C */	lfs f2, 0xc(r3)
 /* 800CF50C 000CB34C  ED 41 18 28 */	fsubs f10, f1, f3
-/* 800CF510 000CB350  C0 02 8E F4 */	lfs f0, lbl_8055EE74@sda21(r2)
+/* 800CF510 000CB350  C0 02 8E F4 */	lfs f0, "@5116"@sda21(r2)
 /* 800CF514 000CB354  ED 62 18 28 */	fsubs f11, f2, f3
 /* 800CF518 000CB358  C0 43 00 10 */	lfs f2, 0x10(r3)
 /* 800CF51C 000CB35C  C0 A3 00 04 */	lfs f5, 0x4(r3)
-/* 800CF520 000CB360  C0 22 8E F8 */	lfs f1, lbl_8055EE78@sda21(r2)
+/* 800CF520 000CB360  C0 22 8E F8 */	lfs f1, "@5117"@sda21(r2)
 /* 800CF524 000CB364  ED 00 58 30 */	fres f8, f11
-/* 800CF528 000CB368  C0 82 8E F0 */	lfs f4, lbl_8055EE70@sda21(r2)
+/* 800CF528 000CB368  C0 82 8E F0 */	lfs f4, "@5115"@sda21(r2)
 /* 800CF52C 000CB36C  C0 E3 00 14 */	lfs f7, 0x14(r3)
 /* 800CF530 000CB370  C0 C3 00 08 */	lfs f6, 0x8(r3)
 /* 800CF534 000CB374  11 28 40 2A */	ps_add f9, f8, f8
@@ -101,24 +101,24 @@ lbl_800CF57C:
 /* 800CF584 000CB3C4  00 00 00 00 */	.4byte 0x00000000
 /* 800CF588 000CB3C8  00 00 00 00 */	.4byte 0x00000000
 /* 800CF58C 000CB3CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CF590
-lbl_800CF590:
-/* 800CF590 000CB3D0  4B FD 58 20 */	b lbl_800A4DB0
+.global __dt__Q34nw4r2ut5ColorFv
+__dt__Q34nw4r2ut5ColorFv:
+/* 800CF590 000CB3D0  4B FD 58 20 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 800CF594 000CB3D4  00 00 00 00 */	.4byte 0x00000000
 /* 800CF598 000CB3D8  00 00 00 00 */	.4byte 0x00000000
 /* 800CF59C 000CB3DC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CF5A0
-lbl_800CF5A0:
+.global GetResColorAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d21ResColorAnmFramesDataf
+GetResColorAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d21ResColorAnmFramesDataf:
 /* 800CF5A0 000CB3E0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800CF5A4 000CB3E4  7C 08 02 A6 */	mflr r0
 /* 800CF5A8 000CB3E8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 800CF5AC 000CB3EC  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 800CF5B0 000CB3F0  7C 7F 1B 78 */	mr r31, r3
 /* 800CF5B4 000CB3F4  38 61 00 20 */	addi r3, r1, 0x20
-/* 800CF5B8 000CB3F8  4B F4 4D 91 */	bl lbl_80014348
+/* 800CF5B8 000CB3F8  4B F4 4D 91 */	bl modf
 /* 800CF5BC 000CB3FC  C8 41 00 20 */	lfd f2, 0x20(r1)
 /* 800CF5C0 000CB400  FC 20 08 18 */	frsp f1, f1
-/* 800CF5C4 000CB404  C0 02 8E FC */	lfs f0, lbl_8055EE7C@sda21(r2)
+/* 800CF5C4 000CB404  C0 02 8E FC */	lfs f0, "@5180"@sda21(r2)
 /* 800CF5C8 000CB408  FC 40 10 18 */	frsp f2, f2
 /* 800CF5CC 000CB40C  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 800CF5D0 000CB410  FC 00 10 1E */	fctiwz f0, f2
@@ -131,7 +131,7 @@ lbl_800CF5A0:
 .global lbl_800CF5EC
 lbl_800CF5EC:
 /* 800CF5EC 000CB42C  38 03 00 01 */	addi r0, r3, 0x1
-/* 800CF5F0 000CB430  C0 02 8F 00 */	lfs f0, lbl_8055EE80@sda21(r2)
+/* 800CF5F0 000CB430  C0 02 8F 00 */	lfs f0, "@5181"@sda21(r2)
 /* 800CF5F4 000CB434  54 64 10 3A */	slwi r4, r3, 2
 /* 800CF5F8 000CB438  38 61 00 0C */	addi r3, r1, 0xc
 /* 800CF5FC 000CB43C  54 05 10 3A */	slwi r5, r0, 2

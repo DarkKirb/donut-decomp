@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802ED670
-lbl_802ED670:
-/* 802ED670 002E94B0  4B FA FA 28 */	b lbl_8029D098
+.global Create__Q53scn4step5enemy9waddledee10CharaParamFv
+Create__Q53scn4step5enemy9waddledee10CharaParamFv:
+/* 802ED670 002E94B0  4B FA FA 28 */	b Create__Q53scn4step5enemy6bouncy10CharaParamFv
 
-.global lbl_802ED674
-lbl_802ED674:
+.global CreateGold__Q53scn4step5enemy9waddledee10CharaParamFv
+CreateGold__Q53scn4step5enemy9waddledee10CharaParamFv:
 /* 802ED674 002E94B4  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 802ED678 002E94B8  7C 08 02 A6 */	mflr r0
 /* 802ED67C 002E94BC  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 802ED680 002E94C0  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 802ED684 002E94C4  7C 7F 1B 78 */	mr r31, r3
 /* 802ED688 002E94C8  38 61 00 08 */	addi r3, r1, 0x8
-/* 802ED68C 002E94CC  4B FA 40 C1 */	bl lbl_8029174C
+/* 802ED68C 002E94CC  4B FA 40 C1 */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802ED690 002E94D0  38 A1 00 54 */	addi r5, r1, 0x54
 /* 802ED694 002E94D4  38 81 00 04 */	addi r4, r1, 0x4
 /* 802ED698 002E94D8  38 00 00 0A */	li r0, 0xa
@@ -25,7 +25,7 @@ lbl_802ED6A0:
 /* 802ED6A8 002E94E8  90 65 00 04 */	stw r3, 0x4(r5)
 /* 802ED6AC 002E94EC  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 802ED6B0 002E94F0  42 00 FF F0 */	bdnz lbl_802ED6A0
-/* 802ED6B4 002E94F4  C0 02 C5 30 */	lfs f0, lbl_805624B0@sda21(r2)
+/* 802ED6B4 002E94F4  C0 02 C5 30 */	lfs f0, "@48789_805624B0"@sda21(r2)
 /* 802ED6B8 002E94F8  D0 01 00 58 */	stfs f0, 0x58(r1)
 /* 802ED6BC 002E94FC  38 BF FF FC */	addi r5, r31, -0x4
 /* 802ED6C0 002E9500  38 81 00 54 */	addi r4, r1, 0x54

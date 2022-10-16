@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045E0D8
-lbl_8045E0D8:
+.global "@52743_8045E0D8"
+"@52743_8045E0D8":
 
 	.4byte 0x6368616C
 	.4byte 0x6C656E67
@@ -33,8 +33,8 @@ lbl_8045E0D8:
 	.4byte 0x6C53636F
 	.4byte 0x72650000
 
-.global lbl_8045E148
-lbl_8045E148:
+.global "@52818"
+"@52818":
 
 	.4byte 0x4F70656E
 	.4byte 0x536D616C
@@ -49,20 +49,20 @@ lbl_8045E148:
 	.4byte 0x6B25734E
 	.4byte 0
 
-.global lbl_8045E178
-lbl_8045E178:
+.global __vt__Q33scn19challengefileselect4File
+__vt__Q33scn19challengefileselect4File:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801E412C
-	.4byte lbl_801E3D1C
-	.4byte lbl_801E3D54
-	.4byte lbl_801E3D64
-	.4byte lbl_801E3D70
-	.4byte lbl_801E3D7C
-	.4byte lbl_801E3D88
-	.4byte lbl_801E3D90
-	.4byte lbl_801E3E00
+	.4byte __dt__Q33scn19challengefileselect4FileFv
+	.4byte updateFrame__Q33scn19challengefileselect4FileFv
+	.4byte appear__Q33scn19challengefileselect4FileFv
+	.4byte focus__Q33scn19challengefileselect4FileFv
+	.4byte unfocus__Q33scn19challengefileselect4FileFv
+	.4byte decide__Q33scn19challengefileselect4FileFv
+	.4byte isAnimEnd__Q33scn19challengefileselect4FileCFv
+	.4byte kind__Q33scn19challengefileselect4FileCFv
+	.4byte cursorPane__Q33scn19challengefileselect4FileFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

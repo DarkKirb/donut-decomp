@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80492F38
-lbl_80492F38:
+.global "@64044"
+"@64044":
 
 	.4byte lbl_803D38C0
 	.4byte lbl_803D38C0
@@ -71,800 +71,800 @@ lbl_80492F38:
 	.4byte lbl_803D44A0
 	.4byte lbl_803D44DC
 
-.global lbl_80493040
-lbl_80493040:
+.global "__vt__Q43scn4step6weapon50CustomSimple<Q53scn4step6weapon7airball9StateMain>"
+"__vt__Q43scn4step6weapon50CustomSimple<Q53scn4step6weapon7airball9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B20
-	.4byte lbl_803D59A8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon50CustomSimple<Q53scn4step6weapon7airball9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon50CustomSimple<Q53scn4step6weapon7airball9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049305C
-lbl_8049305C:
+.global "__vt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11waterpistol9StateMain>"
+"__vt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11waterpistol9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B1C
-	.4byte lbl_803D592C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11waterpistol9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11waterpistol9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493078
-lbl_80493078:
+.global "__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9swordbeam9StateMain>"
+"__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9swordbeam9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B18
-	.4byte lbl_803D58B0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9swordbeam9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9swordbeam9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493094
-lbl_80493094:
+.global "__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15cutterfinalwave9StateMain>"
+"__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15cutterfinalwave9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B14
-	.4byte lbl_803D5834
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15cutterfinalwave9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15cutterfinalwave9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804930B0
-lbl_804930B0:
+.global "__vt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17fireburningbullet9StateMain>"
+"__vt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17fireburningbullet9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B10
-	.4byte lbl_803D57B8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17fireburningbullet9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17fireburningbullet9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804930CC
-lbl_804930CC:
+.global "__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispyairball9StateMain>"
+"__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispyairball9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B0C
-	.4byte lbl_803D573C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispyairball9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispyairball9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804930E8
-lbl_804930E8:
+.global "__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15sirkibblecutter9StateMain>"
+"__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15sirkibblecutter9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B08
-	.4byte lbl_803D56C0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15sirkibblecutter9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15sirkibblecutter9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493104
-lbl_80493104:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12shotzobullet9StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12shotzobullet9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B04
-	.4byte lbl_803D5644
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12shotzobullet9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12shotzobullet9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493120
-lbl_80493120:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12leafanpollen9StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12leafanpollen9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5B00
-	.4byte lbl_803D55C8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12leafanpollen9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12leafanpollen9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049313C
-lbl_8049313C:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv19StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv19StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AFC
-	.4byte lbl_803D554C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv19StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv19StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493158
-lbl_80493158:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv29StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv29StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AF8
-	.4byte lbl_803D54D0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv29StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv29StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493174
-lbl_80493174:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv39StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv39StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AF4
-	.4byte lbl_803D5454
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv39StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12sparkshotlv39StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493190
-lbl_80493190:
+.global "__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18watergalboroswater9StateMain>"
+"__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18watergalboroswater9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AF0
-	.4byte lbl_803D53D8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18watergalboroswater9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18watergalboroswater9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804931AC
-lbl_804931AC:
+.global "__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10spearspear9StateMain>"
+"__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10spearspear9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AEC
-	.4byte lbl_803D535C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10spearspear9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10spearspear9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804931C8
-lbl_804931C8:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12hammerhammer9StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12hammerhammer9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AE8
-	.4byte lbl_803D52E0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12hammerhammer9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12hammerhammer9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804931E4
-lbl_804931E4:
+.global "__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8wingshot9StateMain>"
+"__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8wingshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AE4
-	.4byte lbl_803D5264
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8wingshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8wingshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493200
-lbl_80493200:
+.global "__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13wingshockwave9StateMain>"
+"__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13wingshockwave9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AE0
-	.4byte lbl_803D51E8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13wingshockwave9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13wingshockwave9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049321C
-lbl_8049321C:
+.global "__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16fightersmashshot9StateMain>"
+"__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16fightersmashshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5ADC
-	.4byte lbl_803D516C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16fightersmashshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16fightersmashshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493238
-lbl_80493238:
+.global "__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15fighterkickshot9StateMain>"
+"__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15fighterkickshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AD8
-	.4byte lbl_803D50F0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15fighterkickshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15fighterkickshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493254
-lbl_80493254:
+.global "__vt__Q43scn4step6weapon58CustomSimple<Q53scn4step6weapon14gigantedgeshot9StateMain>"
+"__vt__Q43scn4step6weapon58CustomSimple<Q53scn4step6weapon14gigantedgeshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AD4
-	.4byte lbl_803D5074
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon58CustomSimple<Q53scn4step6weapon14gigantedgeshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon58CustomSimple<Q53scn4step6weapon14gigantedgeshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493270
-lbl_80493270:
+.global "__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16enemywaterbullet9StateMain>"
+"__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16enemywaterbullet9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AD0
-	.4byte lbl_803D4FF8
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16enemywaterbullet9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16enemywaterbullet9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049328C
-lbl_8049328C:
+.global "__vt__Q43scn4step6weapon64CustomSimple<Q53scn4step6weapon20enemywaterbulletwarp9StateMain>"
+"__vt__Q43scn4step6weapon64CustomSimple<Q53scn4step6weapon20enemywaterbulletwarp9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5ACC
-	.4byte lbl_803D4F7C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon64CustomSimple<Q53scn4step6weapon20enemywaterbulletwarp9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon64CustomSimple<Q53scn4step6weapon20enemywaterbulletwarp9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804932A8
-lbl_804932A8:
+.global "__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16kingsdoowaveshot9StateMain>"
+"__vt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16kingsdoowaveshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AC8
-	.4byte lbl_803D4F00
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16kingsdoowaveshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon60CustomSimple<Q53scn4step6weapon16kingsdoowaveshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804932C4
-lbl_804932C4:
+.global "__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13owgulffeather9StateMain>"
+"__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13owgulffeather9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AC4
-	.4byte lbl_803D4E84
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13owgulffeather9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13owgulffeather9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804932E0
-lbl_804932E0:
+.global "__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9foleyleaf9StateMain>"
+"__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9foleyleaf9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AC0
-	.4byte lbl_803D4E08
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9foleyleaf9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9foleyleaf9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804932FC
-lbl_804932FC:
+.global "__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10bowbyarrow9StateMain>"
+"__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10bowbyarrow9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5ABC
-	.4byte lbl_803D4D8C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10bowbyarrow9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10bowbyarrow9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493318
-lbl_80493318:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12jucklecutter9StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12jucklecutter9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AB8
-	.4byte lbl_803D4D10
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12jucklecutter9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12jucklecutter9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493334
-lbl_80493334:
+.global "__vt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17tsukikageshuriken9StateMain>"
+"__vt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17tsukikageshuriken9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AB4
-	.4byte lbl_803D4C94
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17tsukikageshuriken9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon61CustomSimple<Q53scn4step6weapon17tsukikageshuriken9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493350
-lbl_80493350:
+.global "__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15knucklejoehadou9StateMain>"
+"__vt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15knucklejoehadou9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AB0
-	.4byte lbl_803D4C18
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15knucklejoehadou9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon59CustomSimple<Q53scn4step6weapon15knucklejoehadou9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049336C
-lbl_8049336C:
+.global "__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9snowlball9StateMain>"
+"__vt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9snowlball9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AAC
-	.4byte lbl_803D4B9C
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9snowlball9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon52CustomSimple<Q53scn4step6weapon9snowlball9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493388
-lbl_80493388:
+.global "__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10floweffect9StateMain>"
+"__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10floweffect9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AA8
-	.4byte lbl_803D4B20
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10floweffect9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10floweffect9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804933A4
-lbl_804933A4:
+.global "__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispytornado9StateMain>"
+"__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispytornado9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AA4
-	.4byte lbl_803D4AA4
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispytornado9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13whispytornado9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804933C0
-lbl_804933C0:
+.global "__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10whispyroot9StateMain>"
+"__vt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10whispyroot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5AA0
-	.4byte lbl_803D4A28
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10whispyroot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon54CustomSimple<Q53scn4step6weapon10whispyroot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804933DC
-lbl_804933DC:
+.global "__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationairball9StateMain>"
+"__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationairball9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A9C
-	.4byte lbl_803D49AC
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationairball9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationairball9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804933F8
-lbl_804933F8:
+.global "__vt__Q43scn4step6weapon63CustomSimple<Q53scn4step6weapon19combinationmetabeam9StateMain>"
+"__vt__Q43scn4step6weapon63CustomSimple<Q53scn4step6weapon19combinationmetabeam9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A98
-	.4byte lbl_803D4930
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon63CustomSimple<Q53scn4step6weapon19combinationmetabeam9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon63CustomSimple<Q53scn4step6weapon19combinationmetabeam9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493414
-lbl_80493414:
+.global "__vt__Q43scn4step6weapon67CustomSimple<Q53scn4step6weapon23combinationdededebomber9StateMain>"
+"__vt__Q43scn4step6weapon67CustomSimple<Q53scn4step6weapon23combinationdededebomber9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A94
-	.4byte lbl_803D48B4
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon67CustomSimple<Q53scn4step6weapon23combinationdededebomber9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon67CustomSimple<Q53scn4step6weapon23combinationdededebomber9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493430
-lbl_80493430:
+.global "__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationdeeshot9StateMain>"
+"__vt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationdeeshot9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A90
-	.4byte lbl_803D4838
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationdeeshot9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon62CustomSimple<Q53scn4step6weapon18combinationdeeshot9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_8049344C
-lbl_8049344C:
+.global "__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8metabeam9StateMain>"
+"__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8metabeam9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A8C
-	.4byte lbl_803D47BC
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8metabeam9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8metabeam9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493468
-lbl_80493468:
+.global "__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13metashockwave9StateMain>"
+"__vt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13metashockwave9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A88
-	.4byte lbl_803D4740
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13metashockwave9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon57CustomSimple<Q53scn4step6weapon13metashockwave9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_80493484
-lbl_80493484:
+.global "__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12dededehammer9StateMain>"
+"__vt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12dededehammer9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A84
-	.4byte lbl_803D46C4
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12dededehammer9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon56CustomSimple<Q53scn4step6weapon12dededehammer9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804934A0
-lbl_804934A0:
+.global "__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8deespear9StateMain>"
+"__vt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8deespear9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A80
-	.4byte lbl_803D4648
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8deespear9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon51CustomSimple<Q53scn4step6weapon8deespear9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804934BC
-lbl_804934BC:
+.global "__vt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11hotheadfire9StateMain>"
+"__vt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11hotheadfire9StateMain>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D5A24
-	.4byte lbl_803D45CC
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte "__dt__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11hotheadfire9StateMain>Fv"
+	.4byte "onInit__Q43scn4step6weapon55CustomSimple<Q53scn4step6weapon11hotheadfire9StateMain>Fv"
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 
-.global lbl_804934D8
-lbl_804934D8:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11hotheadfire9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11hotheadfire9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6060
-	.4byte lbl_803D5B24
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11hotheadfire9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11hotheadfire9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804934E8
-lbl_804934E8:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8deespear9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8deespear9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D605C
-	.4byte lbl_803D5B40
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8deespear9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8deespear9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804934F8
-lbl_804934F8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12dededehammer9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12dededehammer9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6058
-	.4byte lbl_803D5B5C
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12dededehammer9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12dededehammer9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493508
-lbl_80493508:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13metashockwave9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13metashockwave9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6054
-	.4byte lbl_803D5B78
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13metashockwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13metashockwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493518
-lbl_80493518:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8metabeam9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8metabeam9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6050
-	.4byte lbl_803D5B94
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8metabeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8metabeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493528
-lbl_80493528:
+.global "__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationdeeshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationdeeshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D604C
-	.4byte lbl_803D5BB0
+	.4byte "__dt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationdeeshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationdeeshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493538
-lbl_80493538:
+.global "__vt__Q24util113StateFactoryArg1<Q24util6IState,Q53scn4step6weapon23combinationdededebomber9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util113StateFactoryArg1<Q24util6IState,Q53scn4step6weapon23combinationdededebomber9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6048
-	.4byte lbl_803D5BCC
+	.4byte "__dt__Q24util113StateFactoryArg1<Q24util6IState,Q53scn4step6weapon23combinationdededebomber9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util113StateFactoryArg1<Q24util6IState,Q53scn4step6weapon23combinationdededebomber9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493548
-lbl_80493548:
+.global "__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19combinationmetabeam9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19combinationmetabeam9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6044
-	.4byte lbl_803D5BE8
+	.4byte "__dt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19combinationmetabeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19combinationmetabeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493558
-lbl_80493558:
+.global "__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationairball9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationairball9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6040
-	.4byte lbl_803D5C04
+	.4byte "__dt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationairball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18combinationairball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493568
-lbl_80493568:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10whispyroot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10whispyroot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D603C
-	.4byte lbl_803D5C20
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10whispyroot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10whispyroot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493578
-lbl_80493578:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispytornado9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispytornado9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6038
-	.4byte lbl_803D5C3C
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispytornado9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispytornado9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493588
-lbl_80493588:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10floweffect9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10floweffect9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6034
-	.4byte lbl_803D5C58
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10floweffect9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10floweffect9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493598
-lbl_80493598:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9snowlball9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9snowlball9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6030
-	.4byte lbl_803D5C74
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9snowlball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9snowlball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935A8
-lbl_804935A8:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15knucklejoehadou9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15knucklejoehadou9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D602C
-	.4byte lbl_803D5C90
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15knucklejoehadou9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15knucklejoehadou9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935B8
-lbl_804935B8:
+.global "__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17tsukikageshuriken9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17tsukikageshuriken9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6028
-	.4byte lbl_803D5CAC
+	.4byte "__dt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17tsukikageshuriken9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17tsukikageshuriken9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935C8
-lbl_804935C8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12jucklecutter9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12jucklecutter9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6024
-	.4byte lbl_803D5CC8
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12jucklecutter9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12jucklecutter9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935D8
-lbl_804935D8:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10bowbyarrow9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10bowbyarrow9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6020
-	.4byte lbl_803D5CE4
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10bowbyarrow9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10bowbyarrow9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935E8
-lbl_804935E8:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9foleyleaf9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9foleyleaf9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D601C
-	.4byte lbl_803D5D00
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9foleyleaf9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9foleyleaf9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804935F8
-lbl_804935F8:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13owgulffeather9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13owgulffeather9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6018
-	.4byte lbl_803D5D1C
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13owgulffeather9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13owgulffeather9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493608
-lbl_80493608:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16kingsdoowaveshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16kingsdoowaveshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6014
-	.4byte lbl_803D5D38
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16kingsdoowaveshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16kingsdoowaveshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493618
-lbl_80493618:
+.global "__vt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step6weapon20enemywaterbulletwarp9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step6weapon20enemywaterbulletwarp9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6010
-	.4byte lbl_803D5D54
+	.4byte "__dt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step6weapon20enemywaterbulletwarp9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step6weapon20enemywaterbulletwarp9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493628
-lbl_80493628:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16enemywaterbullet9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16enemywaterbullet9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D600C
-	.4byte lbl_803D5D70
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16enemywaterbullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16enemywaterbullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493638
-lbl_80493638:
+.global "__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon14gigantedgeshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon14gigantedgeshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6008
-	.4byte lbl_803D5D8C
+	.4byte "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon14gigantedgeshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon14gigantedgeshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493648
-lbl_80493648:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6004
-	.4byte lbl_803D5DA8
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493658
-lbl_80493658:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16fightersmashshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16fightersmashshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D6000
-	.4byte lbl_803D5DC4
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16fightersmashshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step6weapon16fightersmashshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493668
-lbl_80493668:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13wingshockwave9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13wingshockwave9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FFC
-	.4byte lbl_803D5DE0
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13wingshockwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13wingshockwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493678
-lbl_80493678:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8wingshot9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8wingshot9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FF8
-	.4byte lbl_803D5DFC
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8wingshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step6weapon8wingshot9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493688
-lbl_80493688:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12hammerhammer9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12hammerhammer9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FF4
-	.4byte lbl_803D5E18
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12hammerhammer9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12hammerhammer9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493698
-lbl_80493698:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FF0
-	.4byte lbl_803D5E34
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936A8
-lbl_804936A8:
+.global "__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18watergalboroswater9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18watergalboroswater9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FEC
-	.4byte lbl_803D5E50
+	.4byte "__dt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18watergalboroswater9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step6weapon18watergalboroswater9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936B8
-lbl_804936B8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv39StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv39StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FE8
-	.4byte lbl_803D5E6C
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv39StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv39StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936C8
-lbl_804936C8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv29StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv29StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FE4
-	.4byte lbl_803D5E88
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv29StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv29StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936D8
-lbl_804936D8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv19StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv19StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FE0
-	.4byte lbl_803D5EA4
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv19StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12sparkshotlv19StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936E8
-lbl_804936E8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12leafanpollen9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12leafanpollen9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FDC
-	.4byte lbl_803D5EC0
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12leafanpollen9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12leafanpollen9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804936F8
-lbl_804936F8:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12shotzobullet9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12shotzobullet9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FD8
-	.4byte lbl_803D5EDC
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12shotzobullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step6weapon12shotzobullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493708
-lbl_80493708:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15sirkibblecutter9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15sirkibblecutter9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FD4
-	.4byte lbl_803D5EF8
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15sirkibblecutter9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15sirkibblecutter9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493718
-lbl_80493718:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispyairball9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispyairball9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FD0
-	.4byte lbl_803D5F14
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispyairball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13whispyairball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493728
-lbl_80493728:
+.global "__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17fireburningbullet9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17fireburningbullet9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FCC
-	.4byte lbl_803D5F30
+	.4byte "__dt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17fireburningbullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step6weapon17fireburningbullet9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493738
-lbl_80493738:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15cutterfinalwave9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15cutterfinalwave9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FC8
-	.4byte lbl_803D5F4C
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15cutterfinalwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15cutterfinalwave9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493748
-lbl_80493748:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9swordbeam9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9swordbeam9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FC4
-	.4byte lbl_803D5F68
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9swordbeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step6weapon9swordbeam9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493758
-lbl_80493758:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11waterpistol9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11waterpistol9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FC0
-	.4byte lbl_803D5F84
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11waterpistol9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step6weapon11waterpistol9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80493768
-lbl_80493768:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7airball9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7airball9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D5FBC
-	.4byte lbl_803D5FA0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7airball9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7airball9StateMain,PQ43scn4step6weapon6Weapon>Fv"

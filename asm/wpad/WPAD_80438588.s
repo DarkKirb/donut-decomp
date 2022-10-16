@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80438588
-lbl_80438588:
+.global "@1504"
+"@1504":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F53
@@ -23,16 +23,16 @@ lbl_80438588:
 	.4byte 0x34352920
 	.4byte 0x3E3E0000
 
-.global lbl_804385D0
-lbl_804385D0:
+.global ShutdownFunctionInfo_804385D0
+ShutdownFunctionInfo_804385D0:
 
-	.4byte lbl_80053EA0
+	.4byte OnShutdown_80053EA0
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
 
-.global lbl_804385E0
-lbl_804385E0:
+.global "@6806"
+"@6806":
 
 	.4byte lbl_80054354
 	.4byte lbl_80054354
@@ -53,8 +53,8 @@ lbl_804385E0:
 	.4byte lbl_80054364
 	.4byte lbl_80054374
 
-.global lbl_80438628
-lbl_80438628:
+.global "@7538"
+"@7538":
 
 	.4byte lbl_80054734
 	.4byte lbl_80054734
@@ -75,8 +75,8 @@ lbl_80438628:
 	.4byte lbl_800550CC
 	.4byte lbl_80054AC0
 
-.global lbl_80438670
-lbl_80438670:
+.global "@8163"
+"@8163":
 
 	.4byte 0x4E696E74
 	.4byte 0x656E646F
@@ -84,8 +84,8 @@ lbl_80438670:
 	.4byte 0x2D574243
 	.4byte 0
 
-.global lbl_80438684
-lbl_80438684:
+.global "@8218"
+"@8218":
 
 	.4byte 0x4E696E74
 	.4byte 0x656E646F
@@ -93,8 +93,8 @@ lbl_80438684:
 	.4byte 0x2D434E54
 	.4byte 0
 
-.global lbl_80438698
-lbl_80438698:
+.global "@8277"
+"@8277":
 
 	.4byte 0x5741524E
 	.4byte 0x494E473A
@@ -110,8 +110,8 @@ lbl_80438698:
 	.4byte 0x4B504144
 	.4byte 0x2E0A0000
 
-.global lbl_804386CC
-lbl_804386CC:
+.global "@8278"
+"@8278":
 
 	.4byte 0x20202020
 	.4byte 0x20202020
@@ -135,8 +135,8 @@ lbl_804386CC:
 	.4byte 0x61636B2E
 	.4byte 0x0A000000
 
-.global lbl_80438720
-lbl_80438720:
+.global "@8284"
+"@8284":
 
 	.4byte 0x20202020
 	.4byte 0x20202020
@@ -159,8 +159,8 @@ lbl_80438720:
 	.4byte 0x6C626163
 	.4byte 0x6B2E0A00
 
-.global lbl_80438770
-lbl_80438770:
+.global "@9104"
+"@9104":
 
 	.4byte lbl_8005C91C
 	.4byte lbl_8005B864
@@ -172,8 +172,8 @@ lbl_80438770:
 	.4byte lbl_8005C910
 	.4byte lbl_8005C914
 
-.global lbl_80438794
-lbl_80438794:
+.global "@9220"
+"@9220":
 
 	.4byte lbl_8005CE38
 	.4byte lbl_8005CE44
@@ -197,8 +197,8 @@ lbl_80438794:
 	.4byte lbl_8005CEE0
 	.4byte lbl_8005CEEC
 
-.global lbl_804387E8
-lbl_804387E8:
+.global "@9559_804387E8"
+"@9559_804387E8":
 
 	.4byte lbl_8005E01C
 	.4byte lbl_8005E1A0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80319198
-lbl_80319198:
+.global __ct__Q53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrderFv
+__ct__Q53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrderFv:
 /* 80319198 00314FD8  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8031919C 00314FDC  7C 08 02 A6 */	mflr r0
 /* 803191A0 00314FE0  90 01 00 44 */	stw r0, 0x44(r1)
@@ -19,7 +19,7 @@ lbl_803191BC:
 /* 803191C4 00315004  42 00 FF F8 */	bdnz lbl_803191BC
 /* 803191C8 00315008  38 61 00 08 */	addi r3, r1, 0x8
 /* 803191CC 0031500C  38 81 00 20 */	addi r4, r1, 0x20
-/* 803191D0 00315010  4B FF E7 55 */	bl lbl_80317924
+/* 803191D0 00315010  4B FF E7 55 */	bl __as__Q53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrderFRCQ53scn4step7gimmick13movegroupctrl18MoveGroupCtrlOrder
 /* 803191D4 00315014  38 BF FF FC */	addi r5, r31, -0x4
 /* 803191D8 00315018  38 81 00 04 */	addi r4, r1, 0x4
 /* 803191DC 0031501C  38 00 00 03 */	li r0, 0x3

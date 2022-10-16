@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8023D5B4
-lbl_8023D5B4:
+.global __ct__Q53scn4step4boss15challengemaster7EyeCtrlFRQ43scn4step4boss4Boss
+__ct__Q53scn4step4boss15challengemaster7EyeCtrlFRQ43scn4step4boss4Boss:
 /* 8023D5B4 002393F4  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8023D5B8 002393F8  38 00 00 00 */	li r0, 0x0
 /* 8023D5BC 002393FC  90 03 00 04 */	stw r0, 0x4(r3)
@@ -10,15 +10,15 @@ lbl_8023D5B4:
 /* 8023D5C4 00239404  38 00 00 01 */	li r0, 0x1
 /* 8023D5C8 00239408  98 03 00 0C */	stb r0, 0xc(r3)
 /* 8023D5CC 0023940C  4E 80 00 20 */	blr
-.global lbl_8023D5D0
-lbl_8023D5D0:
+.global update__Q53scn4step4boss15challengemaster7EyeCtrlFv
+update__Q53scn4step4boss15challengemaster7EyeCtrlFv:
 /* 8023D5D0 00239410  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023D5D4 00239414  7C 08 02 A6 */	mflr r0
 /* 8023D5D8 00239418  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8023D5DC 0023941C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8023D5E0 00239420  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8023D5E4 00239424  7C 7E 1B 78 */	mr r30, r3
-/* 8023D5E8 00239428  48 00 01 59 */	bl lbl_8023D740
+/* 8023D5E8 00239428  48 00 01 59 */	bl chkValidAnim__Q53scn4step4boss15challengemaster7EyeCtrlCFv
 /* 8023D5EC 0023942C  7C 7F 1B 78 */	mr r31, r3
 /* 8023D5F0 00239430  88 1E 00 0C */	lbz r0, 0xc(r30)
 /* 8023D5F4 00239434  2C 00 00 00 */	cmpwi r0, 0x0
@@ -26,7 +26,7 @@ lbl_8023D5D0:
 /* 8023D5FC 0023943C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023D600 00239440  40 82 00 0C */	bne lbl_8023D60C
 /* 8023D604 00239444  7F C3 F3 78 */	mr r3, r30
-/* 8023D608 00239448  48 00 00 D5 */	bl lbl_8023D6DC
+/* 8023D608 00239448  48 00 00 D5 */	bl clearSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv
 .global lbl_8023D60C
 lbl_8023D60C:
 /* 8023D60C 0023944C  9B FE 00 0C */	stb r31, 0xc(r30)
@@ -42,9 +42,9 @@ lbl_8023D60C:
 .global lbl_8023D634
 lbl_8023D634:
 /* 8023D634 00239474  7F C3 F3 78 */	mr r3, r30
-/* 8023D638 00239478  48 00 00 25 */	bl lbl_8023D65C
+/* 8023D638 00239478  48 00 00 25 */	bl startSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv
 /* 8023D63C 0023947C  7F C3 F3 78 */	mr r3, r30
-/* 8023D640 00239480  48 00 00 CD */	bl lbl_8023D70C
+/* 8023D640 00239480  48 00 00 CD */	bl setFrame__Q53scn4step4boss15challengemaster7EyeCtrlFv
 .global lbl_8023D644
 lbl_8023D644:
 /* 8023D644 00239484  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -53,60 +53,60 @@ lbl_8023D644:
 /* 8023D650 00239490  7C 08 03 A6 */	mtlr r0
 /* 8023D654 00239494  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023D658 00239498  4E 80 00 20 */	blr
-.global lbl_8023D65C
-lbl_8023D65C:
+.global startSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv
+startSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv:
 /* 8023D65C 0023949C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8023D660 002394A0  7C 08 02 A6 */	mflr r0
 /* 8023D664 002394A4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023D668 002394A8  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8023D66C 002394AC  7C 7F 1B 78 */	mr r31, r3
 /* 8023D670 002394B0  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8023D674 002394B4  4B FE F8 C5 */	bl lbl_8022CF38
-/* 8023D678 002394B8  48 03 3E 79 */	bl lbl_802714F0
+/* 8023D674 002394B4  4B FE F8 C5 */	bl model__Q43scn4step4boss4BossFv
+/* 8023D678 002394B8  48 03 3E 79 */	bl anim__Q43scn4step5chara5ModelFv
 /* 8023D67C 002394BC  38 80 00 00 */	li r4, 0x0
-/* 8023D680 002394C0  4B F5 C1 7D */	bl lbl_801997FC
+/* 8023D680 002394C0  4B F5 C1 7D */	bl subAnimClear__Q24gobj4AnimFUl
 /* 8023D684 002394C4  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8023D688 002394C8  4B FE F8 B1 */	bl lbl_8022CF38
-/* 8023D68C 002394CC  48 03 3E 65 */	bl lbl_802714F0
+/* 8023D688 002394C8  4B FE F8 B1 */	bl model__Q43scn4step4boss4BossFv
+/* 8023D68C 002394CC  48 03 3E 65 */	bl anim__Q43scn4step5chara5ModelFv
 /* 8023D690 002394D0  38 80 00 00 */	li r4, 0x0
 /* 8023D694 002394D4  38 A0 00 1F */	li r5, 0x1f
 /* 8023D698 002394D8  38 C0 00 01 */	li r6, 0x1
-/* 8023D69C 002394DC  4B F5 C0 B5 */	bl lbl_80199750
+/* 8023D69C 002394DC  4B F5 C0 B5 */	bl subAnimSet__Q24gobj4AnimFUlUlUl
 /* 8023D6A0 002394E0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8023D6A4 002394E4  4B FE F8 95 */	bl lbl_8022CF38
-/* 8023D6A8 002394E8  48 03 3E 49 */	bl lbl_802714F0
+/* 8023D6A4 002394E4  4B FE F8 95 */	bl model__Q43scn4step4boss4BossFv
+/* 8023D6A8 002394E8  48 03 3E 49 */	bl anim__Q43scn4step5chara5ModelFv
 /* 8023D6AC 002394EC  38 80 00 00 */	li r4, 0x0
-/* 8023D6B0 002394F0  4B F5 C1 FD */	bl lbl_801998AC
+/* 8023D6B0 002394F0  4B F5 C1 FD */	bl subAnimAccessor__Q24gobj4AnimFUl
 /* 8023D6B4 002394F4  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8023D6B8 002394F8  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8023D6BC 002394FC  38 61 00 08 */	addi r3, r1, 0x8
 /* 8023D6C0 00239500  38 80 00 00 */	li r4, 0x0
-/* 8023D6C4 00239504  4B F5 45 CD */	bl lbl_80191C90
+/* 8023D6C4 00239504  4B F5 45 CD */	bl start__Q23g3d17ModelAnimAccessorCFb
 /* 8023D6C8 00239508  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8023D6CC 0023950C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023D6D0 00239510  7C 08 03 A6 */	mtlr r0
 /* 8023D6D4 00239514  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023D6D8 00239518  4E 80 00 20 */	blr
-.global lbl_8023D6DC
-lbl_8023D6DC:
+.global clearSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv
+clearSubAnim__Q53scn4step4boss15challengemaster7EyeCtrlFv:
 /* 8023D6DC 0023951C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023D6E0 00239520  7C 08 02 A6 */	mflr r0
 /* 8023D6E4 00239524  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8023D6E8 00239528  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8023D6EC 0023952C  4B FE F8 4D */	bl lbl_8022CF38
-/* 8023D6F0 00239530  48 03 3E 01 */	bl lbl_802714F0
+/* 8023D6EC 0023952C  4B FE F8 4D */	bl model__Q43scn4step4boss4BossFv
+/* 8023D6F0 00239530  48 03 3E 01 */	bl anim__Q43scn4step5chara5ModelFv
 /* 8023D6F4 00239534  38 80 00 00 */	li r4, 0x0
-/* 8023D6F8 00239538  4B F5 C1 05 */	bl lbl_801997FC
+/* 8023D6F8 00239538  4B F5 C1 05 */	bl subAnimClear__Q24gobj4AnimFUl
 /* 8023D6FC 0023953C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8023D700 00239540  7C 08 03 A6 */	mtlr r0
 /* 8023D704 00239544  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023D708 00239548  4E 80 00 20 */	blr
-.global lbl_8023D70C
-lbl_8023D70C:
+.global setFrame__Q53scn4step4boss15challengemaster7EyeCtrlFv
+setFrame__Q53scn4step4boss15challengemaster7EyeCtrlFv:
 /* 8023D70C 0023954C  80 A3 00 08 */	lwz r5, 0x8(r3)
 /* 8023D710 00239550  54 A0 10 3A */	slwi r0, r5, 2
-/* 8023D714 00239554  3C 80 80 41 */	lis r4, lbl_80416798@ha
-/* 8023D718 00239558  38 84 67 98 */	addi r4, r4, lbl_80416798@l
+/* 8023D714 00239554  3C 80 80 41 */	lis r4, "T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21@unnamed@EyeCtrl_cpp@"@ha
+/* 8023D718 00239558  38 84 67 98 */	addi r4, r4, "T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21@unnamed@EyeCtrl_cpp@"@l
 /* 8023D71C 0023955C  7C 04 00 2E */	lwzx r0, r4, r0
 /* 8023D720 00239560  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8023D724 00239564  38 05 00 01 */	addi r0, r5, 0x1
@@ -116,15 +116,15 @@ lbl_8023D70C:
 /* 8023D734 00239574  38 00 00 00 */	li r0, 0x0
 /* 8023D738 00239578  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8023D73C 0023957C  4E 80 00 20 */	blr
-.global lbl_8023D740
-lbl_8023D740:
+.global chkValidAnim__Q53scn4step4boss15challengemaster7EyeCtrlCFv
+chkValidAnim__Q53scn4step4boss15challengemaster7EyeCtrlCFv:
 /* 8023D740 00239580  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023D744 00239584  7C 08 02 A6 */	mflr r0
 /* 8023D748 00239588  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8023D74C 0023958C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8023D750 00239590  4B FE F7 E9 */	bl lbl_8022CF38
-/* 8023D754 00239594  48 03 3D 9D */	bl lbl_802714F0
-/* 8023D758 00239598  4B EB 63 49 */	bl lbl_800F3AA0
+/* 8023D750 00239590  4B FE F7 E9 */	bl model__Q43scn4step4boss4BossFv
+/* 8023D754 00239594  48 03 3D 9D */	bl anim__Q43scn4step5chara5ModelFv
+/* 8023D758 00239598  4B EB 63 49 */	bl GetMaterial__Q34nw4r3lyt4PaneCFv
 /* 8023D75C 0023959C  38 03 FF EC */	addi r0, r3, -0x14
 /* 8023D760 002395A0  28 00 00 05 */	cmplwi r0, 0x5
 /* 8023D764 002395A4  40 81 00 24 */	ble lbl_8023D788

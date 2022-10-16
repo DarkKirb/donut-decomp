@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8026ECE8
-lbl_8026ECE8:
+.global __ct__Q43scn4step5chara7HitStopFv
+__ct__Q43scn4step5chara7HitStopFv:
 /* 8026ECE8 0026AB28  38 00 00 00 */	li r0, 0x0
 /* 8026ECEC 0026AB2C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8026ECF0 0026AB30  90 03 00 04 */	stw r0, 0x4(r3)
@@ -11,8 +11,8 @@ lbl_8026ECE8:
 /* 8026ECFC 0026AB3C  98 03 00 0A */	stb r0, 0xa(r3)
 /* 8026ED00 0026AB40  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8026ED04 0026AB44  4E 80 00 20 */	blr
-.global lbl_8026ED08
-lbl_8026ED08:
+.global __ct__Q43scn4step5chara7HitStopFRQ43scn4step5chara16IHitStopCallback
+__ct__Q43scn4step5chara7HitStopFRQ43scn4step5chara16IHitStopCallback:
 /* 8026ED08 0026AB48  38 00 00 00 */	li r0, 0x0
 /* 8026ED0C 0026AB4C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8026ED10 0026AB50  90 03 00 04 */	stw r0, 0x4(r3)
@@ -21,8 +21,8 @@ lbl_8026ED08:
 /* 8026ED1C 0026AB5C  98 03 00 0A */	stb r0, 0xa(r3)
 /* 8026ED20 0026AB60  90 83 00 0C */	stw r4, 0xc(r3)
 /* 8026ED24 0026AB64  4E 80 00 20 */	blr
-.global lbl_8026ED28
-lbl_8026ED28:
+.global update__Q43scn4step5chara7HitStopFv
+update__Q43scn4step5chara7HitStopFv:
 /* 8026ED28 0026AB68  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8026ED2C 0026AB6C  7C 08 02 A6 */	mflr r0
 /* 8026ED30 0026AB70  90 01 00 14 */	stw r0, 0x14(r1)
@@ -67,8 +67,8 @@ lbl_8026EDA4:
 /* 8026EDB4 0026ABF4  7C 08 03 A6 */	mtlr r0
 /* 8026EDB8 0026ABF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8026EDBC 0026ABFC  4E 80 00 20 */	blr
-.global lbl_8026EDC0
-lbl_8026EDC0:
+.global set__Q43scn4step5chara7HitStopFUl
+set__Q43scn4step5chara7HitStopFUl:
 /* 8026EDC0 0026AC00  88 03 00 0A */	lbz r0, 0xa(r3)
 /* 8026EDC4 0026AC04  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8026EDC8 0026AC08  4C 82 00 20 */	bnelr
@@ -86,8 +86,8 @@ lbl_8026EDEC:
 /* 8026EDF0 0026AC30  38 00 00 00 */	li r0, 0x0
 /* 8026EDF4 0026AC34  98 03 00 09 */	stb r0, 0x9(r3)
 /* 8026EDF8 0026AC38  4E 80 00 20 */	blr
-.global lbl_8026EDFC
-lbl_8026EDFC:
+.global setSoft__Q43scn4step5chara7HitStopFUl
+setSoft__Q43scn4step5chara7HitStopFUl:
 /* 8026EDFC 0026AC3C  88 03 00 0A */	lbz r0, 0xa(r3)
 /* 8026EE00 0026AC40  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8026EE04 0026AC44  4C 82 00 20 */	bnelr
@@ -100,8 +100,8 @@ lbl_8026EDFC:
 /* 8026EE20 0026AC60  38 00 00 01 */	li r0, 0x1
 /* 8026EE24 0026AC64  98 03 00 09 */	stb r0, 0x9(r3)
 /* 8026EE28 0026AC68  4E 80 00 20 */	blr
-.global lbl_8026EE2C
-lbl_8026EE2C:
+.global clear__Q43scn4step5chara7HitStopFv
+clear__Q43scn4step5chara7HitStopFv:
 /* 8026EE2C 0026AC6C  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8026EE30 0026AC70  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8026EE34 0026AC74  4D 82 00 20 */	beqlr

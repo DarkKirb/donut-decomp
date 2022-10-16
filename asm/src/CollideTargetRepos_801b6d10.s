@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801B6D10
-lbl_801B6D10:
+.global __ct__Q35mcoll6detail18CollideTargetReposFv
+__ct__Q35mcoll6detail18CollideTargetReposFv:
 /* 801B6D10 001B2B50  38 A0 00 00 */	li r5, 0x0
 /* 801B6D14 001B2B54  90 A3 00 00 */	stw r5, 0x0(r3)
 /* 801B6D18 001B2B58  38 C0 00 00 */	li r6, 0x0
@@ -15,8 +15,8 @@ lbl_801B6D24:
 /* 801B6D2C 001B2B6C  38 C6 00 01 */	addi r6, r6, 0x1
 /* 801B6D30 001B2B70  42 00 FF F4 */	bdnz lbl_801B6D24
 /* 801B6D34 001B2B74  4E 80 00 20 */	blr
-.global lbl_801B6D38
-lbl_801B6D38:
+.global add__Q35mcoll6detail18CollideTargetReposFRCQ35mcoll6detail13CollideTarget
+add__Q35mcoll6detail18CollideTargetReposFRCQ35mcoll6detail13CollideTarget:
 /* 801B6D38 001B2B78  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B6D3C 001B2B7C  7C 08 02 A6 */	mflr r0
 /* 801B6D40 001B2B80  90 01 00 24 */	stw r0, 0x24(r1)
@@ -33,7 +33,7 @@ lbl_801B6D38:
 /* 801B6D6C 001B2BAC  83 DF 00 00 */	lwz r30, 0x0(r31)
 /* 801B6D70 001B2BB0  7F C3 F3 78 */	mr r3, r30
 /* 801B6D74 001B2BB4  38 80 00 40 */	li r4, 0x40
-/* 801B6D78 001B2BB8  4B E6 D7 29 */	bl lbl_800244A0
+/* 801B6D78 001B2BB8  4B E6 D7 29 */	bl DefaultSwitchThreadCallback
 /* 801B6D7C 001B2BBC  57 C0 28 34 */	slwi r0, r30, 5
 /* 801B6D80 001B2BC0  7C 7F 02 14 */	add r3, r31, r0
 /* 801B6D84 001B2BC4  88 1D 00 00 */	lbz r0, 0x0(r29)

@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80461D60
-lbl_80461D60:
+.global "@48755_80461D60"
+"@48755_80461D60":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627931
 	.4byte 0
 
-.global lbl_80461D70
-lbl_80461D70:
+.global "@48756_80461D70"
+"@48756_80461D70":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x31000000
 
-.global lbl_80461D80
-lbl_80461D80:
+.global "@48757_80461D80"
+"@48757_80461D80":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x31000000
 
-.global lbl_80461D90
-lbl_80461D90:
+.global "@48759_80461D90"
+"@48759_80461D90":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -34,23 +34,23 @@ lbl_80461D90:
 	.4byte 0x6B4B6972
 	.4byte 0x62793100
 
-.global lbl_80461DA4
-lbl_80461DA4:
+.global "@48760_80461DA4"
+"@48760_80461DA4":
 
 	.4byte 0x4F6E6550
 	.4byte 0x6572736F
 	.4byte 0x6E730000
 
-.global lbl_80461DB0
-lbl_80461DB0:
+.global "@48761_80461DB0"
+"@48761_80461DB0":
 
 	.4byte 0x4B697262
 	.4byte 0x79447265
 	.4byte 0x616D4C61
 	.4byte 0x6E640000
 
-.global lbl_80461DC0
-lbl_80461DC0:
+.global "@48762_80461DC0"
+"@48762_80461DC0":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -59,8 +59,8 @@ lbl_80461DC0:
 	.4byte 0x4C616E64
 	.4byte 0
 
-.global lbl_80461DD8
-lbl_80461DD8:
+.global "@48763_80461DD8"
+"@48763_80461DD8":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -69,8 +69,8 @@ lbl_80461DD8:
 	.4byte 0x6D4C616E
 	.4byte 0x64000000
 
-.global lbl_80461DF0
-lbl_80461DF0:
+.global "@48764_80461DF0"
+"@48764_80461DF0":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -79,8 +79,8 @@ lbl_80461DF0:
 	.4byte 0x6D4C616E
 	.4byte 0x64000000
 
-.global lbl_80461E08
-lbl_80461E08:
+.global "@48766_80461E08"
+"@48766_80461E08":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -90,16 +90,16 @@ lbl_80461E08:
 	.4byte 0x65616D4C
 	.4byte 0x616E6400
 
-.global lbl_80461E24
-lbl_80461E24:
+.global "@48767_80461E24"
+"@48767_80461E24":
 
 	.4byte 0x4B697262
 	.4byte 0x7950696E
 	.4byte 0x42616C6C
 	.4byte 0
 
-.global lbl_80461E34
-lbl_80461E34:
+.global "@48768_80461E34"
+"@48768_80461E34":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -107,8 +107,8 @@ lbl_80461E34:
 	.4byte 0x696E4261
 	.4byte 0x6C6C0000
 
-.global lbl_80461E48
-lbl_80461E48:
+.global "@48769_80461E48"
+"@48769_80461E48":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -116,8 +116,8 @@ lbl_80461E48:
 	.4byte 0x50696E42
 	.4byte 0x616C6C00
 
-.global lbl_80461E5C
-lbl_80461E5C:
+.global "@48770_80461E5C"
+"@48770_80461E5C":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -125,24 +125,24 @@ lbl_80461E5C:
 	.4byte 0x50696E42
 	.4byte 0x616C6C00
 
-.global lbl_80461E70
-lbl_80461E70:
+.global "@48772_80461E70"
+"@48772_80461E70":
 
 	.4byte 0x4B697262
 	.4byte 0x7942616C
 	.4byte 0x6C000000
 	.4byte 0
 
-.global lbl_80461E80
-lbl_80461E80:
+.global "@48773_80461E80"
+"@48773_80461E80":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627942
 	.4byte 0x616C6C00
 
-.global lbl_80461E90
-lbl_80461E90:
+.global "@48774_80461E90"
+"@48774_80461E90":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -150,8 +150,8 @@ lbl_80461E90:
 	.4byte 0x42616C6C
 	.4byte 0
 
-.global lbl_80461EA4
-lbl_80461EA4:
+.global "@48775_80461EA4"
+"@48775_80461EA4":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -159,16 +159,16 @@ lbl_80461EA4:
 	.4byte 0x42616C6C
 	.4byte 0
 
-.global lbl_80461EB8
-lbl_80461EB8:
+.global "@48777_80461EB8"
+"@48777_80461EB8":
 
 	.4byte 0x4B697262
 	.4byte 0x79417661
 	.4byte 0x6C616E63
 	.4byte 0x68650000
 
-.global lbl_80461EC8
-lbl_80461EC8:
+.global "@48778_80461EC8"
+"@48778_80461EC8":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -177,8 +177,8 @@ lbl_80461EC8:
 	.4byte 0x6E636865
 	.4byte 0
 
-.global lbl_80461EE0
-lbl_80461EE0:
+.global "@48779_80461EE0"
+"@48779_80461EE0":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -187,8 +187,8 @@ lbl_80461EE0:
 	.4byte 0x616E6368
 	.4byte 0x65000000
 
-.global lbl_80461EF8
-lbl_80461EF8:
+.global "@48780_80461EF8"
+"@48780_80461EF8":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -197,32 +197,32 @@ lbl_80461EF8:
 	.4byte 0x616E6368
 	.4byte 0x65000000
 
-.global lbl_80461F10
-lbl_80461F10:
+.global "@48782_80461F10"
+"@48782_80461F10":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627932
 	.4byte 0
 
-.global lbl_80461F20
-lbl_80461F20:
+.global "@48783_80461F20"
+"@48783_80461F20":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x32000000
 
-.global lbl_80461F30
-lbl_80461F30:
+.global "@48784_80461F30"
+"@48784_80461F30":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x32000000
 
-.global lbl_80461F40
-lbl_80461F40:
+.global "@48785_80461F40"
+"@48785_80461F40":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -230,16 +230,16 @@ lbl_80461F40:
 	.4byte 0x6B4B6972
 	.4byte 0x62793200
 
-.global lbl_80461F54
-lbl_80461F54:
+.global "@48786_80461F54"
+"@48786_80461F54":
 
 	.4byte 0x4B697262
 	.4byte 0x79426C6F
 	.4byte 0x636B4261
 	.4byte 0x6C6C0000
 
-.global lbl_80461F64
-lbl_80461F64:
+.global "@48787_80461F64"
+"@48787_80461F64":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -248,8 +248,8 @@ lbl_80461F64:
 	.4byte 0x42616C6C
 	.4byte 0
 
-.global lbl_80461F7C
-lbl_80461F7C:
+.global "@48788_80461F7C"
+"@48788_80461F7C":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -258,8 +258,8 @@ lbl_80461F7C:
 	.4byte 0x6B42616C
 	.4byte 0x6C000000
 
-.global lbl_80461F94
-lbl_80461F94:
+.global "@48789_80461F94"
+"@48789_80461F94":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -268,39 +268,39 @@ lbl_80461F94:
 	.4byte 0x6B42616C
 	.4byte 0x6C000000
 
-.global lbl_80461FAC
-lbl_80461FAC:
+.global "@48790_80461FAC"
+"@48790_80461FAC":
 
 	.4byte 0x4B697262
 	.4byte 0x79534458
 	.4byte 0
 
-.global lbl_80461FB8
-lbl_80461FB8:
+.global "@48791_80461FB8"
+"@48791_80461FB8":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627953
 	.4byte 0x44580000
 
-.global lbl_80461FC8
-lbl_80461FC8:
+.global "@48792_80461FC8"
+"@48792_80461FC8":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x53445800
 
-.global lbl_80461FD8
-lbl_80461FD8:
+.global "@48793_80461FD8"
+"@48793_80461FD8":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x53445800
 
-.global lbl_80461FE8
-lbl_80461FE8:
+.global "@48794_80461FE8"
+"@48794_80461FE8":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -309,23 +309,23 @@ lbl_80461FE8:
 	.4byte 0x62795344
 	.4byte 0x58000000
 
-.global lbl_80462000
-lbl_80462000:
+.global "@48795_80462000"
+"@48795_80462000":
 
 	.4byte 0x4F6E655F
 	.4byte 0x54776F50
 	.4byte 0x6572736F
 	.4byte 0x6E730000
 
-.global lbl_80462010
-lbl_80462010:
+.global "@48796_80462010"
+"@48796_80462010":
 
 	.4byte 0x4B697262
 	.4byte 0x794B6964
 	.4byte 0x73474200
 
-.global lbl_8046201C
-lbl_8046201C:
+.global "@48797_8046201C"
+"@48797_8046201C":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -333,8 +333,8 @@ lbl_8046201C:
 	.4byte 0x69647347
 	.4byte 0x42000000
 
-.global lbl_80462030
-lbl_80462030:
+.global "@48798_80462030"
+"@48798_80462030":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -342,8 +342,8 @@ lbl_80462030:
 	.4byte 0x4B696473
 	.4byte 0x47420000
 
-.global lbl_80462044
-lbl_80462044:
+.global "@48799_80462044"
+"@48799_80462044":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -351,32 +351,32 @@ lbl_80462044:
 	.4byte 0x4B696473
 	.4byte 0x47420000
 
-.global lbl_80462058
-lbl_80462058:
+.global "@48801_80462058"
+"@48801_80462058":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627933
 	.4byte 0
 
-.global lbl_80462068
-lbl_80462068:
+.global "@48802_80462068"
+"@48802_80462068":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x33000000
 
-.global lbl_80462078
-lbl_80462078:
+.global "@48803_80462078"
+"@48803_80462078":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x33000000
 
-.global lbl_80462088
-lbl_80462088:
+.global "@48804_80462088"
+"@48804_80462088":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -384,32 +384,32 @@ lbl_80462088:
 	.4byte 0x6B4B6972
 	.4byte 0x62793300
 
-.global lbl_8046209C
-lbl_8046209C:
+.global "@48806_8046209C"
+"@48806_8046209C":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627936
 	.4byte 0x34000000
 
-.global lbl_804620AC
-lbl_804620AC:
+.global "@48807_804620AC"
+"@48807_804620AC":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x36340000
 
-.global lbl_804620BC
-lbl_804620BC:
+.global "@48808_804620BC"
+"@48808_804620BC":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x36340000
 
-.global lbl_804620CC
-lbl_804620CC:
+.global "@48810_804620CC"
+"@48810_804620CC":
 
 	.4byte 0x506C6179
 	.4byte 0x47616D65
@@ -419,24 +419,24 @@ lbl_804620CC:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804620E8
-lbl_804620E8:
+.global "@48811_804620E8"
+"@48811_804620E8":
 
 	.4byte 0x4F6E655F
 	.4byte 0x466F7572
 	.4byte 0x50657273
 	.4byte 0x6F6E7300
 
-.global lbl_804620F8
-lbl_804620F8:
+.global "@48812_804620F8"
+"@48812_804620F8":
 
 	.4byte 0x4B697262
 	.4byte 0x794B6F72
 	.4byte 0x6F4B6F72
 	.4byte 0x6F000000
 
-.global lbl_80462108
-lbl_80462108:
+.global "@48813_80462108"
+"@48813_80462108":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -444,8 +444,8 @@ lbl_80462108:
 	.4byte 0x6F726F4B
 	.4byte 0x6F726F00
 
-.global lbl_8046211C
-lbl_8046211C:
+.global "@48814_8046211C"
+"@48814_8046211C":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -454,8 +454,8 @@ lbl_8046211C:
 	.4byte 0x4B6F726F
 	.4byte 0
 
-.global lbl_80462134
-lbl_80462134:
+.global "@48815_80462134"
+"@48815_80462134":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -464,8 +464,8 @@ lbl_80462134:
 	.4byte 0x4B6F726F
 	.4byte 0
 
-.global lbl_8046214C
-lbl_8046214C:
+.global "@48817_8046214C"
+"@48817_8046214C":
 
 	.4byte 0x4B697262
 	.4byte 0x79447265
@@ -473,8 +473,8 @@ lbl_8046214C:
 	.4byte 0x6E644458
 	.4byte 0
 
-.global lbl_80462160
-lbl_80462160:
+.global "@48818_80462160"
+"@48818_80462160":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -483,8 +483,8 @@ lbl_80462160:
 	.4byte 0x4C616E64
 	.4byte 0x44580000
 
-.global lbl_80462178
-lbl_80462178:
+.global "@48819_80462178"
+"@48819_80462178":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -493,8 +493,8 @@ lbl_80462178:
 	.4byte 0x6D4C616E
 	.4byte 0x64445800
 
-.global lbl_80462190
-lbl_80462190:
+.global "@48820_80462190"
+"@48820_80462190":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -503,15 +503,15 @@ lbl_80462190:
 	.4byte 0x6D4C616E
 	.4byte 0x64445800
 
-.global lbl_804621A8
-lbl_804621A8:
+.global "@48822_804621A8"
+"@48822_804621A8":
 
 	.4byte 0x4B697262
 	.4byte 0x79416E69
 	.4byte 0x6D653100
 
-.global lbl_804621B4
-lbl_804621B4:
+.global "@48823_804621B4"
+"@48823_804621B4":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -519,8 +519,8 @@ lbl_804621B4:
 	.4byte 0x6E696D65
 	.4byte 0x31000000
 
-.global lbl_804621C8
-lbl_804621C8:
+.global "@48824_804621C8"
+"@48824_804621C8":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -528,8 +528,8 @@ lbl_804621C8:
 	.4byte 0x416E696D
 	.4byte 0x65310000
 
-.global lbl_804621DC
-lbl_804621DC:
+.global "@48825_804621DC"
+"@48825_804621DC":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -537,24 +537,24 @@ lbl_804621DC:
 	.4byte 0x416E696D
 	.4byte 0x65310000
 
-.global lbl_804621F0
-lbl_804621F0:
+.global "@48827_804621F0"
+"@48827_804621F0":
 
 	.4byte 0x506C6179
 	.4byte 0x416E696D
 	.4byte 0x65436865
 	.4byte 0x636B0000
 
-.global lbl_80462200
-lbl_80462200:
+.global "@48828_80462200"
+"@48828_80462200":
 
 	.4byte 0x4B697262
 	.4byte 0x79416972
 	.4byte 0x52696465
 	.4byte 0
 
-.global lbl_80462210
-lbl_80462210:
+.global "@48829_80462210"
+"@48829_80462210":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -562,8 +562,8 @@ lbl_80462210:
 	.4byte 0x69725269
 	.4byte 0x64650000
 
-.global lbl_80462224
-lbl_80462224:
+.global "@48830_80462224"
+"@48830_80462224":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -571,8 +571,8 @@ lbl_80462224:
 	.4byte 0x41697252
 	.4byte 0x69646500
 
-.global lbl_80462238
-lbl_80462238:
+.global "@48831_80462238"
+"@48831_80462238":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -580,15 +580,15 @@ lbl_80462238:
 	.4byte 0x41697252
 	.4byte 0x69646500
 
-.global lbl_8046224C
-lbl_8046224C:
+.global "@48833_8046224C"
+"@48833_8046224C":
 
 	.4byte 0x4B697262
 	.4byte 0x794D6972
 	.4byte 0x726F7200
 
-.global lbl_80462258
-lbl_80462258:
+.global "@48834_80462258"
+"@48834_80462258":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -596,8 +596,8 @@ lbl_80462258:
 	.4byte 0x6972726F
 	.4byte 0x72000000
 
-.global lbl_8046226C
-lbl_8046226C:
+.global "@48835_8046226C"
+"@48835_8046226C":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -605,8 +605,8 @@ lbl_8046226C:
 	.4byte 0x4D697272
 	.4byte 0x6F720000
 
-.global lbl_80462280
-lbl_80462280:
+.global "@48836_80462280"
+"@48836_80462280":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -614,15 +614,15 @@ lbl_80462280:
 	.4byte 0x4D697272
 	.4byte 0x6F720000
 
-.global lbl_80462294
-lbl_80462294:
+.global "@48837_80462294"
+"@48837_80462294":
 
 	.4byte 0x4B697262
 	.4byte 0x79546F75
 	.4byte 0x63680000
 
-.global lbl_804622A0
-lbl_804622A0:
+.global "@48838_804622A0"
+"@48838_804622A0":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -630,8 +630,8 @@ lbl_804622A0:
 	.4byte 0x6F756368
 	.4byte 0
 
-.global lbl_804622B4
-lbl_804622B4:
+.global "@48839_804622B4"
+"@48839_804622B4":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -639,8 +639,8 @@ lbl_804622B4:
 	.4byte 0x546F7563
 	.4byte 0x68000000
 
-.global lbl_804622C8
-lbl_804622C8:
+.global "@48840_804622C8"
+"@48840_804622C8":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -648,16 +648,16 @@ lbl_804622C8:
 	.4byte 0x546F7563
 	.4byte 0x68000000
 
-.global lbl_804622DC
-lbl_804622DC:
+.global "@48842_804622DC"
+"@48842_804622DC":
 
 	.4byte 0x4B697262
 	.4byte 0x79446F72
 	.4byte 0x6F636865
 	.4byte 0
 
-.global lbl_804622EC
-lbl_804622EC:
+.global "@48843_804622EC"
+"@48843_804622EC":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -665,8 +665,8 @@ lbl_804622EC:
 	.4byte 0x6F726F63
 	.4byte 0x68650000
 
-.global lbl_80462300
-lbl_80462300:
+.global "@48844_80462300"
+"@48844_80462300":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -674,8 +674,8 @@ lbl_80462300:
 	.4byte 0x446F726F
 	.4byte 0x63686500
 
-.global lbl_80462314
-lbl_80462314:
+.global "@48845_80462314"
+"@48845_80462314":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -683,15 +683,15 @@ lbl_80462314:
 	.4byte 0x446F726F
 	.4byte 0x63686500
 
-.global lbl_80462328
-lbl_80462328:
+.global "@48846_80462328"
+"@48846_80462328":
 
 	.4byte 0x4B697262
 	.4byte 0x79444458
 	.4byte 0
 
-.global lbl_80462334
-lbl_80462334:
+.global "@48847_80462334"
+"@48847_80462334":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -699,32 +699,32 @@ lbl_80462334:
 	.4byte 0x44580000
 	.4byte 0
 
-.global lbl_80462348
-lbl_80462348:
+.global "@48848_80462348"
+"@48848_80462348":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x44445800
 
-.global lbl_80462358
-lbl_80462358:
+.global "@48849_80462358"
+"@48849_80462358":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x44445800
 
-.global lbl_80462368
-lbl_80462368:
+.global "@48850_80462368"
+"@48850_80462368":
 
 	.4byte 0x4B697262
 	.4byte 0x79457069
 	.4byte 0x63596172
 	.4byte 0x6E000000
 
-.global lbl_80462378
-lbl_80462378:
+.global "@48851_80462378"
+"@48851_80462378":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -732,8 +732,8 @@ lbl_80462378:
 	.4byte 0x70696359
 	.4byte 0x61726E00
 
-.global lbl_8046238C
-lbl_8046238C:
+.global "@48852_8046238C"
+"@48852_8046238C":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -742,8 +742,8 @@ lbl_8046238C:
 	.4byte 0x5961726E
 	.4byte 0
 
-.global lbl_804623A4
-lbl_804623A4:
+.global "@48853_804623A4"
+"@48853_804623A4":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -753,16 +753,16 @@ lbl_804623A4:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804623C0
-lbl_804623C0:
+.global "@48855_804623C0"
+"@48855_804623C0":
 
 	.4byte 0x4B697262
 	.4byte 0x794D6173
 	.4byte 0x73417474
 	.4byte 0x61636B00
 
-.global lbl_804623D0
-lbl_804623D0:
+.global "@48856_804623D0"
+"@48856_804623D0":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -771,8 +771,8 @@ lbl_804623D0:
 	.4byte 0x74746163
 	.4byte 0x6B000000
 
-.global lbl_804623E8
-lbl_804623E8:
+.global "@48857_804623E8"
+"@48857_804623E8":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
@@ -781,8 +781,8 @@ lbl_804623E8:
 	.4byte 0x41747461
 	.4byte 0x636B0000
 
-.global lbl_80462400
-lbl_80462400:
+.global "@48858_80462400"
+"@48858_80462400":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
@@ -791,15 +791,15 @@ lbl_80462400:
 	.4byte 0x41747461
 	.4byte 0x636B0000
 
-.global lbl_80462418
-lbl_80462418:
+.global "@48859_80462418"
+"@48859_80462418":
 
 	.4byte 0x4B697262
 	.4byte 0x79576969
 	.4byte 0
 
-.global lbl_80462424
-lbl_80462424:
+.global "@48860_80462424"
+"@48860_80462424":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
@@ -807,55 +807,55 @@ lbl_80462424:
 	.4byte 0x69690000
 	.4byte 0
 
-.global lbl_80462438
-lbl_80462438:
+.global "@48861_80462438"
+"@48861_80462438":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x57696900
 
-.global lbl_80462448
-lbl_80462448:
+.global "@48862_80462448"
+"@48862_80462448":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x57696900
 
-.global lbl_80462458
-lbl_80462458:
+.global "@48864_80462458"
+"@48864_80462458":
 
 	.4byte 0x53656C65
 	.4byte 0x63744B69
 	.4byte 0x72627932
 	.4byte 0x30000000
 
-.global lbl_80462468
-lbl_80462468:
+.global "@48865_80462468"
+"@48865_80462468":
 
 	.4byte 0x52656C65
 	.4byte 0x6173654B
 	.4byte 0x69726279
 	.4byte 0x32300000
 
-.global lbl_80462478
-lbl_80462478:
+.global "@48866_80462478"
+"@48866_80462478":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E4B
 	.4byte 0x69726279
 	.4byte 0x32300000
 
-.global lbl_80462488
-lbl_80462488:
+.global "@49027_80462488"
+"@49027_80462488":
 
 	.4byte 0x546F4D61
 	.4byte 0x696E4D65
 	.4byte 0x6E750000
 
-.global lbl_80462494
-lbl_80462494:
+.global "@49035_80462494"
+"@49035_80462494":
 
 	.4byte 0x506C6179
 	.4byte 0x4D757369

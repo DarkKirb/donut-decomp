@@ -1,40 +1,40 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80421360
-lbl_80421360:
+.global __lconv
+__lconv:
 
-	.4byte lbl_8055DF88
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
+	.4byte "@139"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.4byte lbl_8055DF8C
+	.4byte "@140"
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 
-.global lbl_80421398
-lbl_80421398:
+.global _loc_ctyp_C
+_loc_ctyp_C:
 
 	.4byte 0x43000000
 	.4byte 0
-	.4byte lbl_80406768
-	.4byte lbl_80406A68
-	.4byte lbl_80406968
-	.4byte lbl_80406C98
-	.4byte lbl_80407098
-	.4byte lbl_80406E98
-	.4byte lbl_8000AB6C
-	.4byte lbl_8000ABB8
+	.4byte __ctype_mapC
+	.4byte __upper_mapC
+	.4byte __lower_mapC
+	.4byte __wctype_mapC
+	.4byte __wupper_mapC
+	.4byte __wlower_mapC
+	.4byte __mbtowc_noconv
+	.4byte __wctomb_noconv
 
-.global lbl_804213C0
-lbl_804213C0:
+.global char_coll_tableC
+char_coll_tableC:
 
 	.4byte 0x00010002
 	.4byte 0x00030004
@@ -85,60 +85,60 @@ lbl_804213C0:
 	.4byte 0x001E001F
 	.4byte 0x00200000
 
-.global lbl_80421480
-lbl_80421480:
+.global _loc_coll_C
+_loc_coll_C:
 
 	.4byte 0x43000000
 	.4byte 0
 	.4byte 0x00000020
 	.4byte 0x0000006E
 	.4byte 0
-	.4byte lbl_804213C0
+	.4byte char_coll_tableC
 	.4byte 0
 
-.global lbl_8042149C
-lbl_8042149C:
+.global _loc_mon_C
+_loc_mon_C:
 
 	.4byte 0x43000000
 	.4byte 0
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
+	.4byte "@140"
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.4byte lbl_8055DF8C
+	.4byte "@140"
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 
-.global lbl_804214D0
-lbl_804214D0:
+.global _loc_num_C
+_loc_num_C:
 
 	.4byte 0x43000000
 	.4byte 0
-	.4byte lbl_8055DF88
-	.4byte lbl_8055DF8C
-	.4byte lbl_8055DF8C
+	.4byte "@139"
+	.4byte "@140"
+	.4byte "@140"
 	.4byte 0
 
-.global lbl_804214E8
-lbl_804214E8:
+.global _loc_tim_C
+_loc_tim_C:
 
 	.4byte 0x43000000
 	.4byte 0
-	.4byte lbl_8055DF90
-	.4byte lbl_80406B68
-	.4byte lbl_80406B78
-	.4byte lbl_80406B84
-	.4byte lbl_8055DF98
-	.4byte lbl_80406B90
-	.4byte lbl_80406BE8
-	.4byte lbl_8055DF8C
+	.4byte "@141"
+	.4byte "@142"
+	.4byte "@143"
+	.4byte "@144"
+	.4byte "@145"
+	.4byte "@146"
+	.4byte "@147"
+	.4byte "@140"
 
-.global lbl_80421510
-lbl_80421510:
+.global _current_locale
+_current_locale:
 
 	.4byte 0
 	.4byte 0x43000000
@@ -153,8 +153,8 @@ lbl_80421510:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80421480
-	.4byte lbl_80421398
-	.4byte lbl_8042149C
-	.4byte lbl_804214D0
-	.4byte lbl_804214E8
+	.4byte _loc_coll_C
+	.4byte _loc_ctyp_C
+	.4byte _loc_mon_C
+	.4byte _loc_num_C
+	.4byte _loc_tim_C

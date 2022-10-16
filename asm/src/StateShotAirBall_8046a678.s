@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8046A678
-lbl_8046A678:
+.global __vt__Q53scn4step4boss6whispy16StateShotAirBall
+__vt__Q53scn4step4boss6whispy16StateShotAirBall:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025E12C
-	.4byte lbl_8025E210
-	.4byte lbl_8025E37C
-	.4byte lbl_802344FC
-	.4byte lbl_8025E380
-	.4byte lbl_80234504
-	.4byte lbl_8025DF8C
+	.4byte __dt__Q53scn4step4boss6whispy16StateShotAirBallFv
+	.4byte procAnim__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procMove__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy20StateShotAirBallBaseFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+	.4byte reqAirBall__Q53scn4step4boss6whispy16StateShotAirBallFv
 	.4byte 0

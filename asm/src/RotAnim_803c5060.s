@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803C5060
-lbl_803C5060:
+.global __ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item
+__ct__Q43scn4step4item7RotAnimFRQ43scn4step4item4Item:
 /* 803C5060 003C0EA0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 803C5064 003C0EA4  7C 08 02 A6 */	mflr r0
 /* 803C5068 003C0EA8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -16,16 +16,16 @@ lbl_803C5060:
 /* 803C5088 003C0EC8  38 00 00 00 */	li r0, 0x0
 /* 803C508C 003C0ECC  90 03 00 04 */	stw r0, 0x4(r3)
 /* 803C5090 003C0ED0  7F E3 FB 78 */	mr r3, r31
-/* 803C5094 003C0ED4  4B FF DC 45 */	bl lbl_803C2CD8
+/* 803C5094 003C0ED4  4B FF DC 45 */	bl location__Q43scn4step4item4ItemFv
 /* 803C5098 003C0ED8  7C 64 1B 78 */	mr r4, r3
 /* 803C509C 003C0EDC  38 61 00 08 */	addi r3, r1, 0x8
-/* 803C50A0 003C0EE0  4B DB 75 29 */	bl lbl_8017C5C8
+/* 803C50A0 003C0EE0  4B DB 75 29 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 /* 803C50A4 003C0EE4  C3 E1 00 08 */	lfs f31, 0x8(r1)
 /* 803C50A8 003C0EE8  7F E3 FB 78 */	mr r3, r31
-/* 803C50AC 003C0EEC  4B CB 06 85 */	bl lbl_80075730
-/* 803C50B0 003C0EF0  4B E5 BD 51 */	bl lbl_80220E00
+/* 803C50AC 003C0EEC  4B CB 06 85 */	bl GKI_getfirst
+/* 803C50B0 003C0EF0  4B E5 BD 51 */	bl itemManager__Q33scn4step9ComponentFv
 /* 803C50B4 003C0EF4  FC 20 F8 90 */	fmr f1, f31
-/* 803C50B8 003C0EF8  4B FF EF 11 */	bl lbl_803C3FC8
+/* 803C50B8 003C0EF8  4B FF EF 11 */	bl getRotGlobal__Q43scn4step4item7ManagerCFf
 /* 803C50BC 003C0EFC  D0 3E 00 08 */	stfs f1, 0x8(r30)
 /* 803C50C0 003C0F00  38 00 00 01 */	li r0, 0x1
 /* 803C50C4 003C0F04  98 1E 00 0C */	stb r0, 0xc(r30)
@@ -39,15 +39,15 @@ lbl_803C5060:
 /* 803C50E4 003C0F24  7C 08 03 A6 */	mtlr r0
 /* 803C50E8 003C0F28  38 21 00 30 */	addi r1, r1, 0x30
 /* 803C50EC 003C0F2C  4E 80 00 20 */	blr
-.global lbl_803C50F0
-lbl_803C50F0:
+.global update__Q43scn4step4item7RotAnimFv
+update__Q43scn4step4item7RotAnimFv:
 /* 803C50F0 003C0F30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803C50F4 003C0F34  7C 08 02 A6 */	mflr r0
 /* 803C50F8 003C0F38  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803C50FC 003C0F3C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 803C5100 003C0F40  7C 7F 1B 78 */	mr r31, r3
 /* 803C5104 003C0F44  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 803C5108 003C0F48  4B FF DA 55 */	bl lbl_803C2B5C
+/* 803C5108 003C0F48  4B FF DA 55 */	bl isRequireRotAnim__Q43scn4step4item4ItemCFv
 /* 803C510C 003C0F4C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803C5110 003C0F50  41 82 00 84 */	beq lbl_803C5194
 /* 803C5114 003C0F54  88 1F 00 0C */	lbz r0, 0xc(r31)
@@ -57,12 +57,12 @@ lbl_803C50F0:
 .global lbl_803C5124
 lbl_803C5124:
 /* 803C5124 003C0F64  7F E3 FB 78 */	mr r3, r31
-/* 803C5128 003C0F68  48 00 00 81 */	bl lbl_803C51A8
+/* 803C5128 003C0F68  48 00 00 81 */	bl currentSpeed__Q43scn4step4item7RotAnimCFv
 /* 803C512C 003C0F6C  C0 1F 00 08 */	lfs f0, 0x8(r31)
 /* 803C5130 003C0F70  EC 00 08 2A */	fadds f0, f0, f1
 /* 803C5134 003C0F74  D0 1F 00 08 */	stfs f0, 0x8(r31)
-/* 803C5138 003C0F78  C0 42 DA B8 */	lfs f2, lbl_80563A38@sda21(r2)
-/* 803C513C 003C0F7C  C0 02 DA BC */	lfs f0, lbl_80563A3C@sda21(r2)
+/* 803C5138 003C0F78  C0 42 DA B8 */	lfs f2, "@54904_80563A38"@sda21(r2)
+/* 803C513C 003C0F7C  C0 02 DA BC */	lfs f0, "@54905"@sda21(r2)
 /* 803C5140 003C0F80  48 00 00 10 */	b lbl_803C5150
 .global lbl_803C5144
 lbl_803C5144:
@@ -74,7 +74,7 @@ lbl_803C5150:
 /* 803C5150 003C0F90  C0 3F 00 08 */	lfs f1, 0x8(r31)
 /* 803C5154 003C0F94  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 803C5158 003C0F98  41 80 FF EC */	blt lbl_803C5144
-/* 803C515C 003C0F9C  C0 22 DA B8 */	lfs f1, lbl_80563A38@sda21(r2)
+/* 803C515C 003C0F9C  C0 22 DA B8 */	lfs f1, "@54904_80563A38"@sda21(r2)
 /* 803C5160 003C0FA0  48 00 00 10 */	b lbl_803C5170
 .global lbl_803C5164
 lbl_803C5164:
@@ -88,10 +88,10 @@ lbl_803C5170:
 /* 803C5178 003C0FB8  4C 40 13 82 */	cror eq, lt, eq
 /* 803C517C 003C0FBC  41 82 FF E8 */	beq lbl_803C5164
 /* 803C5180 003C0FC0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 803C5184 003C0FC4  4B FF DB 65 */	bl lbl_803C2CE8
-/* 803C5188 003C0FC8  4B EA 10 85 */	bl lbl_8026620C
+/* 803C5184 003C0FC4  4B FF DB 65 */	bl model__Q43scn4step4item4ItemFv
+/* 803C5188 003C0FC8  4B EA 10 85 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
 /* 803C518C 003C0FCC  C0 3F 00 08 */	lfs f1, 0x8(r31)
-/* 803C5190 003C0FD0  4B EA C5 79 */	bl lbl_80271708
+/* 803C5190 003C0FD0  4B EA C5 79 */	bl initRotH__Q43scn4step5chara12ModelRotCtrlFf
 .global lbl_803C5194
 lbl_803C5194:
 /* 803C5194 003C0FD4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -99,8 +99,8 @@ lbl_803C5194:
 /* 803C519C 003C0FDC  7C 08 03 A6 */	mtlr r0
 /* 803C51A0 003C0FE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C51A4 003C0FE4  4E 80 00 20 */	blr
-.global lbl_803C51A8
-lbl_803C51A8:
+.global currentSpeed__Q43scn4step4item7RotAnimCFv
+currentSpeed__Q43scn4step4item7RotAnimCFv:
 /* 803C51A8 003C0FE8  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 803C51AC 003C0FEC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803C51B0 003C0FF0  41 82 00 18 */	beq lbl_803C51C8
@@ -111,17 +111,17 @@ lbl_803C51A8:
 /* 803C51C4 003C1004  48 00 00 1C */	b lbl_803C51E0
 .global lbl_803C51C8
 lbl_803C51C8:
-/* 803C51C8 003C1008  C0 22 DA C0 */	lfs f1, lbl_80563A40@sda21(r2)
+/* 803C51C8 003C1008  C0 22 DA C0 */	lfs f1, "@54920"@sda21(r2)
 /* 803C51CC 003C100C  4E 80 00 20 */	blr
 .global lbl_803C51D0
 lbl_803C51D0:
-/* 803C51D0 003C1010  C0 22 DA C4 */	lfs f1, lbl_80563A44@sda21(r2)
+/* 803C51D0 003C1010  C0 22 DA C4 */	lfs f1, "@54921"@sda21(r2)
 /* 803C51D4 003C1014  4E 80 00 20 */	blr
 .global lbl_803C51D8
 lbl_803C51D8:
-/* 803C51D8 003C1018  C0 22 DA C8 */	lfs f1, lbl_80563A48@sda21(r2)
+/* 803C51D8 003C1018  C0 22 DA C8 */	lfs f1, "@54922"@sda21(r2)
 /* 803C51DC 003C101C  4E 80 00 20 */	blr
 .global lbl_803C51E0
 lbl_803C51E0:
-/* 803C51E0 003C1020  C0 22 DA BC */	lfs f1, lbl_80563A3C@sda21(r2)
+/* 803C51E0 003C1020  C0 22 DA BC */	lfs f1, "@54905"@sda21(r2)
 /* 803C51E4 003C1024  4E 80 00 20 */	blr

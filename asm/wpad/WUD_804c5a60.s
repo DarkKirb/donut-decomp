@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804C5A60
-lbl_804C5A60:
+.global __rvl_wudcb
+__rvl_wudcb:
 	.skip 0x750
 
-.global lbl_804C61B0
-lbl_804C61B0:
+.global _wudDiscResp
+_wudDiscResp:
 	.skip 0x108
 
-.global lbl_804C62B8
-lbl_804C62B8:
+.global _wudDiscWork
+_wudDiscWork:
 	.skip 0x60
 
-.global lbl_804C6318
-lbl_804C6318:
+.global _scArray
+_scArray:
 	.skip 0x468
 
-.global lbl_804C6780
-lbl_804C6780:
+.global _wudNandWbcInfo
+_wudNandWbcInfo:
 	.skip 0xA0
 
-.global lbl_804C6820
-lbl_804C6820:
+.global _dev_handle_to_bda
+_dev_handle_to_bda:
 	.skip 0x1A0
 
-.global lbl_804C69C0
-lbl_804C69C0:
+.global _wudHandlerStack
+_wudHandlerStack:
 	.skip 0x1208
 
-.global lbl_804C7BC8
-lbl_804C7BC8:
+.global _dev_handle_queue_size
+_dev_handle_queue_size:
 	.skip 0x20
 
-.global lbl_804C7BE8
-lbl_804C7BE8:
+.global _dev_handle_notack_num
+_dev_handle_notack_num:
 	.skip 0x20

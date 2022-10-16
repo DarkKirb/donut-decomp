@@ -1,110 +1,110 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_80562060
-lbl_80562060:
+.global "@59518"
+"@59518":
 
 	.4byte 0
 
-.global lbl_80562064
-lbl_80562064:
+.global "@59519"
+"@59519":
 
 	.4byte 0x3DCCCCCD
 
-.global lbl_80562068
-lbl_80562068:
+.global "@59520"
+"@59520":
 
 	.4byte 0x3F000000
 
-.global lbl_8056206C
-lbl_8056206C:
+.global "@59560_8056206C"
+"@59560_8056206C":
 
 	.4byte 0x43B40000
 
-.global lbl_80562070
-lbl_80562070:
+.global "@59581"
+"@59581":
 
 	.4byte 0xBC23D70A
 
-.global lbl_80562074
-lbl_80562074:
+.global "@59597_80562074"
+"@59597_80562074":
 
 	.4byte 0x3C23D70A
 
-.global lbl_80562078
-lbl_80562078:
+.global "@59653"
+"@59653":
 
 	.4byte 0x40000000
 
-.global lbl_8056207C
-lbl_8056207C:
+.global "@59654"
+"@59654":
 
 	.4byte 0x40400000
 
-.global lbl_80562080
-lbl_80562080:
+.global "@59655"
+"@59655":
 
 	.4byte 0x40800000
 
-.global lbl_80562084
-lbl_80562084:
+.global "@59710"
+"@59710":
 
 	.4byte 0xBF800000
 
-.global lbl_80562088
-lbl_80562088:
+.global "@59711"
+"@59711":
 
 	.4byte 0x3F800000
 	.4byte 0
 
-.global lbl_80562090
-lbl_80562090:
+.global "@59731"
+"@59731":
 
 	.4byte 0x43300000
 	.4byte 0x80000000
 
-.global lbl_80562098
-lbl_80562098:
+.global "@57493_80562098"
+"@57493_80562098":
 
 	.4byte 0xFF0000FF
 
-.global lbl_8056209C
-lbl_8056209C:
+.global "@57505_8056209C"
+"@57505_8056209C":
 
 	.4byte 0xFF0000FF
 
-.global lbl_805620A0
-lbl_805620A0:
+.global "@57512_805620A0"
+"@57512_805620A0":
 
 	.4byte 0x00FFFFFF
 
-.global lbl_805620A4
-lbl_805620A4:
+.global "@57519_805620A4"
+"@57519_805620A4":
 
 	.4byte 0x00FFFFFF
 
-.global lbl_805620A8
-lbl_805620A8:
+.global "@59765"
+"@59765":
 
 	.4byte 0x42700000
 
-.global lbl_805620AC
-lbl_805620AC:
+.global "@59766"
+"@59766":
 
 	.4byte 0x43340000
 
-.global lbl_805620B0
-lbl_805620B0:
+.global "@59767"
+"@59767":
 
 	.4byte 0xBDCCCCCD
 
-.global lbl_805620B4
-lbl_805620B4:
+.global "@59768"
+"@59768":
 
 	.4byte 0xC2700000
 
-.global lbl_805620B8
-lbl_805620B8:
+.global "@59769"
+"@59769":
 
 	.4byte 0x3727C5AC
 	.4byte 0

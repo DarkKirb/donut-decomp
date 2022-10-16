@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80408F10
-lbl_80408F10:
+.global gSinCosTbl__Q34nw4r4math6detail
+gSinCosTbl__Q34nw4r4math6detail:
 
 	.4byte 0
 	.4byte 0x3F800000

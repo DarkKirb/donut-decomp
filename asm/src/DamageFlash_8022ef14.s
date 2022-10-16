@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8022EF14
-lbl_8022EF14:
+.global update__Q43scn4step4boss11DamageFlashFv
+update__Q43scn4step4boss11DamageFlashFv:
 /* 8022EF14 0022AD54  80 83 00 04 */	lwz r4, 0x4(r3)
 /* 8022EF18 0022AD58  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8022EF1C 0022AD5C  41 82 00 0C */	beq lbl_8022EF28
@@ -29,13 +29,13 @@ lbl_8022EF40:
 lbl_8022EF5C:
 /* 8022EF5C 0022AD9C  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 8022EF60 0022ADA0  54 00 F8 7E */	srwi r0, r0, 1
-/* 8022EF64 0022ADA4  3C 80 80 41 */	lis r4, lbl_804163A8@ha
-/* 8022EF68 0022ADA8  38 84 63 A8 */	addi r4, r4, lbl_804163A8@l
+/* 8022EF64 0022ADA4  3C 80 80 41 */	lis r4, "T_ALPHA_TABLE__Q43scn4step4boss25@unnamed@DamageFlash_cpp@"@ha
+/* 8022EF68 0022ADA8  38 84 63 A8 */	addi r4, r4, "T_ALPHA_TABLE__Q43scn4step4boss25@unnamed@DamageFlash_cpp@"@l
 /* 8022EF6C 0022ADAC  7C 04 00 AE */	lbzx r0, r4, r0
 /* 8022EF70 0022ADB0  98 03 00 03 */	stb r0, 0x3(r3)
 /* 8022EF74 0022ADB4  4E 80 00 20 */	blr
-.global lbl_8022EF78
-lbl_8022EF78:
+.global set__Q43scn4step4boss11DamageFlashFQ43scn4step5ocoll7ElementUl
+set__Q43scn4step4boss11DamageFlashFQ43scn4step5ocoll7ElementUl:
 /* 8022EF78 0022ADB8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8022EF7C 0022ADBC  7C 08 02 A6 */	mflr r0
 /* 8022EF80 0022ADC0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -60,40 +60,40 @@ lbl_8022EF78:
 /* 8022EFCC 0022AE0C  48 00 00 5C */	b lbl_8022F028
 .global lbl_8022EFD0
 lbl_8022EFD0:
-/* 8022EFD0 0022AE10  80 02 A3 80 */	lwz r0, lbl_80560300@sda21(r2)
+/* 8022EFD0 0022AE10  80 02 A3 80 */	lwz r0, "@48757_80560300"@sda21(r2)
 /* 8022EFD4 0022AE14  90 01 00 18 */	stw r0, 0x18(r1)
 /* 8022EFD8 0022AE18  7F C3 F3 78 */	mr r3, r30
 /* 8022EFDC 0022AE1C  38 81 00 18 */	addi r4, r1, 0x18
-/* 8022EFE0 0022AE20  4B F1 C9 35 */	bl lbl_8014B914
+/* 8022EFE0 0022AE20  4B F1 C9 35 */	bl __as__8_GXColorFRC8_GXColor
 /* 8022EFE4 0022AE24  48 00 00 54 */	b lbl_8022F038
 .global lbl_8022EFE8
 lbl_8022EFE8:
-/* 8022EFE8 0022AE28  80 02 A3 84 */	lwz r0, lbl_80560304@sda21(r2)
+/* 8022EFE8 0022AE28  80 02 A3 84 */	lwz r0, "@48762_80560304"@sda21(r2)
 /* 8022EFEC 0022AE2C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8022EFF0 0022AE30  7F C3 F3 78 */	mr r3, r30
 /* 8022EFF4 0022AE34  38 81 00 14 */	addi r4, r1, 0x14
-/* 8022EFF8 0022AE38  4B F1 C9 1D */	bl lbl_8014B914
+/* 8022EFF8 0022AE38  4B F1 C9 1D */	bl __as__8_GXColorFRC8_GXColor
 /* 8022EFFC 0022AE3C  48 00 00 3C */	b lbl_8022F038
 .global lbl_8022F000
 lbl_8022F000:
-/* 8022F000 0022AE40  80 02 A3 88 */	lwz r0, lbl_80560308@sda21(r2)
+/* 8022F000 0022AE40  80 02 A3 88 */	lwz r0, "@48766_80560308"@sda21(r2)
 /* 8022F004 0022AE44  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8022F008 0022AE48  38 81 00 10 */	addi r4, r1, 0x10
-/* 8022F00C 0022AE4C  4B F1 C9 09 */	bl lbl_8014B914
+/* 8022F00C 0022AE4C  4B F1 C9 09 */	bl __as__8_GXColorFRC8_GXColor
 /* 8022F010 0022AE50  48 00 00 28 */	b lbl_8022F038
 .global lbl_8022F014
 lbl_8022F014:
-/* 8022F014 0022AE54  80 02 A3 8C */	lwz r0, lbl_8056030C@sda21(r2)
+/* 8022F014 0022AE54  80 02 A3 8C */	lwz r0, "@48770_8056030C"@sda21(r2)
 /* 8022F018 0022AE58  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8022F01C 0022AE5C  38 81 00 0C */	addi r4, r1, 0xc
-/* 8022F020 0022AE60  4B F1 C8 F5 */	bl lbl_8014B914
+/* 8022F020 0022AE60  4B F1 C8 F5 */	bl __as__8_GXColorFRC8_GXColor
 /* 8022F024 0022AE64  48 00 00 14 */	b lbl_8022F038
 .global lbl_8022F028
 lbl_8022F028:
-/* 8022F028 0022AE68  80 02 A3 90 */	lwz r0, lbl_80560310@sda21(r2)
+/* 8022F028 0022AE68  80 02 A3 90 */	lwz r0, "@48775_80560310"@sda21(r2)
 /* 8022F02C 0022AE6C  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8022F030 0022AE70  38 81 00 08 */	addi r4, r1, 0x8
-/* 8022F034 0022AE74  4B F1 C8 E1 */	bl lbl_8014B914
+/* 8022F034 0022AE74  4B F1 C8 E1 */	bl __as__8_GXColorFRC8_GXColor
 .global lbl_8022F038
 lbl_8022F038:
 /* 8022F038 0022AE78  80 1E 00 04 */	lwz r0, 0x4(r30)
@@ -144,8 +144,8 @@ lbl_8022F0B0:
 lbl_8022F0B8:
 /* 8022F0B8 0022AEF8  80 1E 00 08 */	lwz r0, 0x8(r30)
 /* 8022F0BC 0022AEFC  54 00 F8 7E */	srwi r0, r0, 1
-/* 8022F0C0 0022AF00  3C 60 80 41 */	lis r3, lbl_804163A8@ha
-/* 8022F0C4 0022AF04  38 63 63 A8 */	addi r3, r3, lbl_804163A8@l
+/* 8022F0C0 0022AF00  3C 60 80 41 */	lis r3, "T_ALPHA_TABLE__Q43scn4step4boss25@unnamed@DamageFlash_cpp@"@ha
+/* 8022F0C4 0022AF04  38 63 63 A8 */	addi r3, r3, "T_ALPHA_TABLE__Q43scn4step4boss25@unnamed@DamageFlash_cpp@"@l
 /* 8022F0C8 0022AF08  7C 03 00 AE */	lbzx r0, r3, r0
 /* 8022F0CC 0022AF0C  98 1E 00 03 */	stb r0, 0x3(r30)
 /* 8022F0D0 0022AF10  93 FE 00 04 */	stw r31, 0x4(r30)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415C48
-lbl_80415C48:
+.global "MOVE_TABLE__Q43scn7history6detail20@unnamed@Button_cpp@"
+"MOVE_TABLE__Q43scn7history6detail20@unnamed@Button_cpp@":
 
 	.4byte 0x00010000
 	.4byte 0x00010000

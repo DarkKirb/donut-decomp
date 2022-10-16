@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048F100
-lbl_8048F100:
+.global "@57129_8048F100"
+"@57129_8048F100":
 
 	.4byte 0x47756172
 	.4byte 0x6425644E
 	.4byte 0
 
-.global lbl_8048F10C
-lbl_8048F10C:
+.global "@57130"
+"@57130":
 
 	.4byte 0x47756172
 	.4byte 0x6425644D
 	.4byte 0x614E0000
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80402CD4
+	.4byte start__Q23snd11SERequestorFUl
 	.4byte 0x73746570
 	.4byte 0x2F67616D
 	.4byte 0x652F4D61
@@ -34,15 +34,15 @@ lbl_8048F10C:
 	.4byte 0x72645061
 	.4byte 0x72747300
 
-.global lbl_8048F164
-lbl_8048F164:
+.global "@57179"
+"@57179":
 
 	.4byte 0x4C696665
 	.4byte 0x42617245
 	.4byte 0x78000000
 
-.global lbl_8048F170
-lbl_8048F170:
+.global "@57291"
+"@57291":
 
 	.4byte 0x5472616E
 	.4byte 0x73666F72
@@ -53,7 +53,7 @@ lbl_8048F170:
 	.4byte 0x6D000000
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803A6380
+	.4byte appearParts__Q43scn4step4info9BossPanelFv
 	.4byte 0x50617274
 	.4byte 0x7345784E
 	.4byte 0
@@ -74,7 +74,7 @@ lbl_8048F170:
 	.4byte 0
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803A6414
+	.4byte disappearParts__Q43scn4step4info9BossPanelFUl
 	.4byte 0x43686172
 	.4byte 0x61576869
 	.4byte 0x73707900
@@ -253,8 +253,8 @@ lbl_8048F170:
 	.4byte 0x6C426173
 	.4byte 0x65000000
 
-.global lbl_8048F4B0
-lbl_8048F4B0:
+.global "@57578_8048F4B0"
+"@57578_8048F4B0":
 
 	.4byte lbl_803A6138
 	.4byte lbl_803A6140
@@ -293,41 +293,41 @@ lbl_8048F4B0:
 	.4byte lbl_803A6220
 	.4byte 0
 
-.global lbl_8048F540
-lbl_8048F540:
+.global "__vt__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803A691C
-	.4byte lbl_803A6728
-	.4byte lbl_803A6768
-	.4byte lbl_803A6784
+	.4byte "__dt__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail289function_imp<PFv_v,Q43std3tr16detail245bound_func<v,Q43std3tr16detail41mem_fn_1<v,Q43scn4step4info9BossPanel,Ul>,Q33std3tr1157tuple<PQ43scn4step4info9BossPanel,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
 
-.global lbl_8048F558
-lbl_8048F558:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803A6918
-	.4byte lbl_803A6788
-	.4byte lbl_803A67C8
-	.4byte lbl_803A67E4
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-
-.global lbl_8048F588
-lbl_8048F588:
+.global "__vt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803A6914
-	.4byte lbl_803A67E8
-	.4byte lbl_803A6828
-	.4byte lbl_803A6844
+	.4byte "__dt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail38mem_fn_0<b,Q43scn4step4info9BossPanel>,Q33std3tr1169tuple<PQ43scn4step4info9BossPanel,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global "__vt__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail275function_imp<PFv_v,Q43std3tr16detail231bound_func<v,Q43std3tr16detail34mem_fn_1<v,Q23snd11SERequestor,Ul>,Q33std3tr1150tuple<PQ23snd11SERequestor,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

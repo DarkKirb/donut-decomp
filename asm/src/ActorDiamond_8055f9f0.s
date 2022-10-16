@@ -1,84 +1,84 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_8055F9F0
-lbl_8055F9F0:
+.global "@59613_8055F9F0"
+"@59613_8055F9F0":
 
 	.4byte 0
 
-.global lbl_8055F9F4
-lbl_8055F9F4:
+.global "@59746"
+"@59746":
 
 	.4byte 0x358637BD
 
-.global lbl_8055F9F8
-lbl_8055F9F8:
+.global "@LOCAL@exec__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@distMin"
+"@LOCAL@exec__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@distMin":
 
 	.4byte 0
 
-.global lbl_8055F9FC
-lbl_8055F9FC:
+.global "@LOCAL@collide__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@STATIC_ARGS"
+"@LOCAL@collide__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@STATIC_ARGS":
 
 	.4byte 0x00000101
 
-.global lbl_8055FA00
-lbl_8055FA00:
+.global "@59758"
+"@59758":
 
 	.4byte 0x3F800000
 
-.global lbl_8055FA04
-lbl_8055FA04:
+.global "@54672_8055FA04"
+"@54672_8055FA04":
 
 	.4byte 0xFF8040FF
 
-.global lbl_8055FA08
-lbl_8055FA08:
+.global "@54674_8055FA08"
+"@54674_8055FA08":
 
 	.4byte 0xFFFF80FF
 
-.global lbl_8055FA0C
-lbl_8055FA0C:
+.global "@59916"
+"@59916":
 
 	.4byte 0x3DCCCCCD
 
-.global lbl_8055FA10
-lbl_8055FA10:
+.global "@59917"
+"@59917":
 
 	.4byte 0xBF800000
 
-.global lbl_8055FA14
-lbl_8055FA14:
+.global "@59918"
+"@59918":
 
 	.4byte 0x3727C5AC
 
-.global lbl_8055FA18
-lbl_8055FA18:
+.global "@59919_8055FA18"
+"@59919_8055FA18":
 
 	.4byte 0x3F000000
 
-.global lbl_8055FA1C
-lbl_8055FA1C:
+.global "@60302_8055FA1C"
+"@60302_8055FA1C":
 
 	.4byte 0xBF35C28F
 
-.global lbl_8055FA20
-lbl_8055FA20:
+.global "@60305_8055FA20"
+"@60305_8055FA20":
 
 	.4byte 0x43300000
 	.4byte 0x80000000
 
-.global lbl_8055FA28
-lbl_8055FA28:
+.global "@60531"
+"@60531":
 
 	.4byte 0xB727C5AC
 
-.global lbl_8055FA2C
-lbl_8055FA2C:
+.global "@60603"
+"@60603":
 
 	.4byte 0x3F8CCCCD
 
-.global lbl_8055FA30
-lbl_8055FA30:
+.global "@60610_8055FA30"
+"@60610_8055FA30":
 
 	.4byte 0x43300000
 	.4byte 0

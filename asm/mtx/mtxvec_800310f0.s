@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800310F0
-lbl_800310F0:
+.global PSMTXMultVec
+PSMTXMultVec:
 /* 800310F0 0002CF30  E0 04 00 00 */	psq_l f0, 0x0(r4), 0, qr0
 /* 800310F4 0002CF34  E0 43 00 00 */	psq_l f2, 0x0(r3), 0, qr0
 /* 800310F8 0002CF38  E0 24 80 08 */	psq_l f1, 0x8(r4), 1, qr0
@@ -27,8 +27,8 @@ lbl_800310F0:
 /* 80031144 0002CF84  00 00 00 00 */	.4byte 0x00000000
 /* 80031148 0002CF88  00 00 00 00 */	.4byte 0x00000000
 /* 8003114C 0002CF8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80031150
-lbl_80031150:
+.global PSMTXMultVecSR
+PSMTXMultVecSR:
 /* 80031150 0002CF90  E0 03 00 00 */	psq_l f0, 0x0(r3), 0, qr0
 /* 80031154 0002CF94  E0 C4 00 00 */	psq_l f6, 0x0(r4), 0, qr0
 /* 80031158 0002CF98  E0 43 00 10 */	psq_l f2, 0x10(r3), 0, qr0

@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_80563048
-lbl_80563048:
+.global "@58766"
+"@58766":
 
 	.4byte 0x3E4CCCCD
 
-.global lbl_8056304C
-lbl_8056304C:
+.global "@58788"
+"@58788":
 
 	.4byte 0

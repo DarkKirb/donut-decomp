@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80174190
-lbl_80174190:
-/* 80174190 0016FFD0  90 6D EC C8 */	stw r3, lbl_8055D0E8@sda21(r13)
-/* 80174194 0016FFD4  90 8D EC CC */	stw r4, lbl_8055D0EC@sda21(r13)
+.global LMS_SetMemFuncs
+LMS_SetMemFuncs:
+/* 80174190 0016FFD0  90 6D EC C8 */	stw r3, g_pMalloc@sda21(r13)
+/* 80174194 0016FFD4  90 8D EC CC */	stw r4, g_pFree@sda21(r13)
 /* 80174198 0016FFD8  4E 80 00 20 */	blr
 /* 8017419C 0016FFDC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801741A0
-lbl_801741A0:
-/* 801741A0 0016FFE0  81 8D EC C8 */	lwz r12, lbl_8055D0E8@sda21(r13)
+.global LMSi_Malloc
+LMSi_Malloc:
+/* 801741A0 0016FFE0  81 8D EC C8 */	lwz r12, g_pMalloc@sda21(r13)
 /* 801741A4 0016FFE4  7D 89 03 A6 */	mtctr r12
 /* 801741A8 0016FFE8  4E 80 04 20 */	bctr
 /* 801741AC 0016FFEC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801741B0
-lbl_801741B0:
-/* 801741B0 0016FFF0  81 8D EC CC */	lwz r12, lbl_8055D0EC@sda21(r13)
+.global LMSi_Free
+LMSi_Free:
+/* 801741B0 0016FFF0  81 8D EC CC */	lwz r12, g_pFree@sda21(r13)
 /* 801741B4 0016FFF4  7D 89 03 A6 */	mtctr r12
 /* 801741B8 0016FFF8  4E 80 04 20 */	bctr
 /* 801741BC 0016FFFC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801741C0
-lbl_801741C0:
+.global LMSi_MemCmp
+LMSi_MemCmp:
 /* 801741C0 00170000  7C A9 03 A6 */	mtctr r5
 /* 801741C4 00170004  2C 05 00 00 */	cmpwi r5, 0x0
 /* 801741C8 00170008  40 81 00 34 */	ble lbl_801741FC

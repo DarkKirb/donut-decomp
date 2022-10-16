@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045C198
-lbl_8045C198:
+.global "@52995_8045C198"
+"@52995_8045C198":
 
 	.4byte 0x52756E6E
 	.4byte 0x65722E63
 	.4byte 0x70700000
 
-.global lbl_8045C1A4
-lbl_8045C1A4:
+.global "@52996_8045C1A4"
+"@52996_8045C1A4":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -21,8 +21,8 @@ lbl_8045C1A4:
 	.4byte 0x4C454D45
 	.4byte 0x4E545D00
 
-.global lbl_8045C1C8
-lbl_8045C1C8:
+.global "@53157_8045C1C8"
+"@53157_8045C1C8":
 
 	.4byte lbl_801C974C
 	.4byte lbl_801C8A70
@@ -91,12 +91,12 @@ lbl_8045C1C8:
 	.4byte lbl_801C96FC
 	.4byte lbl_801C9728
 
-.global lbl_8045C2D0
-lbl_8045C2D0:
+.global __vt__Q26mintvm6Runner
+__vt__Q26mintvm6Runner:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801C07C0
+	.4byte __dt__Q26mintvm6RunnerFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -182,8 +182,8 @@ lbl_8045C2D0:
 	.4byte 0x2E687070
 	.4byte 0
 
-.global lbl_8045C42C
-lbl_8045C42C:
+.global "@STRING@instruction__Q26mintvm10VMFunctionCFv@0"
+"@STRING@instruction__Q26mintvm10VMFunctionCFv@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -191,16 +191,16 @@ lbl_8045C42C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C440
-lbl_8045C440:
+.global "@STRING@instruction__Q26mintvm10VMFunctionCFv"
+"@STRING@instruction__Q26mintvm10VMFunctionCFv":
 
 	.4byte 0x564D4675
 	.4byte 0x6E637469
 	.4byte 0x6F6E2E68
 	.4byte 0x70700000
 
-.global lbl_8045C450
-lbl_8045C450:
+.global "@STRING@nativeFunc__Q26mintvm10VMFunctionCFv@0"
+"@STRING@nativeFunc__Q26mintvm10VMFunctionCFv@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -208,8 +208,8 @@ lbl_8045C450:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C464
-lbl_8045C464:
+.global "@STRING@nativeFunc__Q26mintvm10VMFunctionCFv"
+"@STRING@nativeFunc__Q26mintvm10VMFunctionCFv":
 
 	.4byte 0x564D4675
 	.4byte 0x6E637469
@@ -217,8 +217,8 @@ lbl_8045C464:
 	.4byte 0x70700000
 	.4byte 0
 
-.global lbl_8045C478
-lbl_8045C478:
+.global "@STRING@at__Q26mintvm11MArray<PCc>CFUl@0"
+"@STRING@at__Q26mintvm11MArray<PCc>CFUl@0":
 
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -227,15 +227,15 @@ lbl_8045C478:
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C490
-lbl_8045C490:
+.global "@STRING@at__Q26mintvm11MArray<PCc>CFUl"
+"@STRING@at__Q26mintvm11MArray<PCc>CFUl":
 
 	.4byte 0x4D417272
 	.4byte 0x61792E68
 	.4byte 0x70700000
 
-.global lbl_8045C49C
-lbl_8045C49C:
+.global "@STRING@get__Q26mintvm15VMConstantTableCFUs@0"
+"@STRING@get__Q26mintvm15VMConstantTableCFUs@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -243,8 +243,8 @@ lbl_8045C49C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C4B0
-lbl_8045C4B0:
+.global "@STRING@get__Q26mintvm15VMConstantTableCFUs"
+"@STRING@get__Q26mintvm15VMConstantTableCFUs":
 
 	.4byte 0x564D436F
 	.4byte 0x6E737461
@@ -253,8 +253,8 @@ lbl_8045C4B0:
 	.4byte 0x68707000
 	.4byte 0
 
-.global lbl_8045C4C8
-lbl_8045C4C8:
+.global "@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>CFUl@0"
+"@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>CFUl@0":
 
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -263,16 +263,16 @@ lbl_8045C4C8:
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C4E0
-lbl_8045C4E0:
+.global "@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>CFUl"
+"@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>CFUl":
 
 	.4byte 0x4D417272
 	.4byte 0x61792E68
 	.4byte 0x70700000
 	.4byte 0
 
-.global lbl_8045C4F0
-lbl_8045C4F0:
+.global "@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>FUl@0"
+"@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>FUl@0":
 
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -281,15 +281,15 @@ lbl_8045C4F0:
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C508
-lbl_8045C508:
+.global "@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>FUl"
+"@STRING@at__Q26mintvm28MArray<PCQ26mintvm8VMModule>FUl":
 
 	.4byte 0x4D417272
 	.4byte 0x61792E68
 	.4byte 0x70700000
 
-.global lbl_8045C514
-lbl_8045C514:
+.global "@STRING@popModule__Q26mintvm6RunnerFv@0"
+"@STRING@popModule__Q26mintvm6RunnerFv@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -297,15 +297,15 @@ lbl_8045C514:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C528
-lbl_8045C528:
+.global "@STRING@popModule__Q26mintvm6RunnerFv"
+"@STRING@popModule__Q26mintvm6RunnerFv":
 
 	.4byte 0x52756E6E
 	.4byte 0x65722E68
 	.4byte 0x70700000
 
-.global lbl_8045C534
-lbl_8045C534:
+.global "@STRING@decYieldCount__Q26mintvm6RegsetFv@0"
+"@STRING@decYieldCount__Q26mintvm6RegsetFv@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -313,8 +313,8 @@ lbl_8045C534:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C548
-lbl_8045C548:
+.global "@STRING@decYieldCount__Q26mintvm6RegsetFv"
+"@STRING@decYieldCount__Q26mintvm6RegsetFv":
 
 	.4byte 0x52656773
 	.4byte 0x65742E68

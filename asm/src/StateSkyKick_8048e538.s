@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048E538
-lbl_8048E538:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateSkyKickHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateSkyKickHit,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039EA6C
-	.4byte lbl_8039EA30
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateSkyKickHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateSkyKickHit,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048E548
-lbl_8048E548:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8039EA68
-	.4byte lbl_8039EA4C
-
-.global lbl_8048E558
-lbl_8048E558:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter12StateSkyKick,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter12StateSkyKick,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039E820
-	.4byte lbl_8039E824
-	.4byte lbl_8039E8E8
-	.4byte lbl_8035550C
-	.4byte lbl_8039E944
-	.4byte lbl_8039E990
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter12StateSkyKick,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter12StateSkyKick,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero7fighter12StateSkyKick
+__vt__Q53scn4step4hero7fighter12StateSkyKick:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7fighter12StateSkyKickFv
+	.4byte procAnim__Q53scn4step4hero7fighter12StateSkyKickFv
+	.4byte procMove__Q53scn4step4hero7fighter12StateSkyKickFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7fighter12StateSkyKickFv
+	.4byte procObjCollReact__Q53scn4step4hero7fighter12StateSkyKickFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

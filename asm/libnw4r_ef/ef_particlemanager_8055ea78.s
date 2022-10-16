@@ -1,76 +1,76 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_8055EA78
-lbl_8055EA78:
+.global "@10377"
+"@10377":
 
 	.4byte 0x3F800000
 
-.global lbl_8055EA7C
-lbl_8055EA7C:
+.global "@10378"
+"@10378":
 
 	.4byte 0
 
-.global lbl_8055EA80
-lbl_8055EA80:
+.global "@11032_8055EA80"
+"@11032_8055EA80":
 
 	.4byte 0x3F13CD3A
 
-.global lbl_8055EA84
-lbl_8055EA84:
+.global "@11033"
+"@11033":
 
 	.4byte 0x47000000
 
-.global lbl_8055EA88
-lbl_8055EA88:
+.global "@11034"
+"@11034":
 
 	.4byte 0x477FFF00
 
-.global lbl_8055EA8C
-lbl_8055EA8C:
+.global "@11035"
+"@11035":
 
 	.4byte 0x40000000
 
-.global lbl_8055EA90
-lbl_8055EA90:
+.global "@11036"
+"@11036":
 
 	.4byte 0x40490FDB
 
-.global lbl_8055EA94
-lbl_8055EA94:
+.global "@11037"
+"@11037":
 
 	.4byte 0x4222F983
 
-.global lbl_8055EA98
-lbl_8055EA98:
+.global "@11038"
+"@11038":
 
 	.4byte 0x40000000
 	.4byte 0
 
-.global lbl_8055EAA0
-lbl_8055EAA0:
+.global "@11039"
+"@11039":
 
 	.4byte 0xBF800000
 	.4byte 0
 
-.global lbl_8055EAA8
-lbl_8055EAA8:
+.global "@11044"
+"@11044":
 
 	.4byte 0x43300000
 	.4byte 0x80000000
 
-.global lbl_8055EAB0
-lbl_8055EAB0:
+.global "@11045"
+"@11045":
 
 	.4byte 0x43300000
 	.4byte 0
 
-.global lbl_8055EAB8
-lbl_8055EAB8:
+.global "@11202"
+"@11202":
 
 	.4byte 0x34000000
 
-.global lbl_8055EABC
-lbl_8055EABC:
+.global "@11203_8055EABC"
+"@11203_8055EABC":
 
 	.4byte 0x43800000

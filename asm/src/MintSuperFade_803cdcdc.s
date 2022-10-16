@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803CDCDC
-lbl_803CDCDC:
-/* 803CDCDC 003C9B1C  90 6D F9 20 */	stw r3, lbl_8055DD40@sda21(r13)
+.global Register__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade
+Register__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade:
+/* 803CDCDC 003C9B1C  90 6D F9 20 */	stw r3, "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"@sda21(r13)
 /* 803CDCE0 003C9B20  4E 80 00 20 */	blr
-.global lbl_803CDCE4
-lbl_803CDCE4:
+.global Unregister__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade
+Unregister__Q43scn4step3sfx13MintSuperFadeFRQ43scn4step3sfx9SuperFade:
 /* 803CDCE4 003C9B24  38 00 00 00 */	li r0, 0x0
-/* 803CDCE8 003C9B28  90 0D F9 20 */	stw r0, lbl_8055DD40@sda21(r13)
+/* 803CDCE8 003C9B28  90 0D F9 20 */	stw r0, "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"@sda21(r13)
 /* 803CDCEC 003C9B2C  4E 80 00 20 */	blr
-.global lbl_803CDCF0
-lbl_803CDCF0:
+.global SetBack__Q43scn4step3sfx13MintSuperFadeFb
+SetBack__Q43scn4step3sfx13MintSuperFadeFb:
 /* 803CDCF0 003C9B30  7C 64 1B 78 */	mr r4, r3
-/* 803CDCF4 003C9B34  80 6D F9 20 */	lwz r3, lbl_8055DD40@sda21(r13)
-/* 803CDCF8 003C9B38  4B DE 79 D8 */	b lbl_801B56D0
+/* 803CDCF4 003C9B34  80 6D F9 20 */	lwz r3, "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"@sda21(r13)
+/* 803CDCF8 003C9B38  4B DE 79 D8 */	b setIsEnableDetect__Q35mcoll6detail13CollideTargetFb
 
-.global lbl_803CDCFC
-lbl_803CDCFC:
-/* 803CDCFC 003C9B3C  38 6D F9 20 */	addi r3, r13, lbl_8055DD40@sda21
-/* 803CDD00 003C9B40  4B D0 F6 E0 */	b lbl_800DD3E0
+.global "__sinit_@@1MintSuperFade_cpp"
+"__sinit_@@1MintSuperFade_cpp":
+/* 803CDCFC 003C9B3C  38 6D F9 20 */	addi r3, r13, "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"@sda21
+/* 803CDD00 003C9B40  4B D0 F6 E0 */	b __ct__Q34nw4r3g3d8LightObjFv

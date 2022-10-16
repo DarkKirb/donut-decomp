@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80220F6C
-lbl_80220F6C:
+.global Create__Q33scn4step16ContextChallengeFv
+Create__Q33scn4step16ContextChallengeFv:
 /* 80220F6C 0021CDAC  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 80220F70 0021CDB0  7C 08 02 A6 */	mflr r0
 /* 80220F74 0021CDB4  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -21,7 +21,7 @@ lbl_80220F90:
 /* 80220FA0 0021CDE0  38 00 00 00 */	li r0, 0x0
 /* 80220FA4 0021CDE4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80220FA8 0021CDE8  38 61 00 08 */	addi r3, r1, 0x8
-/* 80220FAC 0021CDEC  48 04 89 F1 */	bl lbl_8026999C
+/* 80220FAC 0021CDEC  48 04 89 F1 */	bl __ct__Q43scn4step9challenge5ScoreFv
 /* 80220FB0 0021CDF0  7F E5 FB 78 */	mr r5, r31
 /* 80220FB4 0021CDF4  38 81 00 04 */	addi r4, r1, 0x4
 /* 80220FB8 0021CDF8  38 00 00 05 */	li r0, 0x5

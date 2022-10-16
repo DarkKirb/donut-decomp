@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80482420
-lbl_80482420:
+.global "SUB_KIND_POSTFIX__21@unnamed@Shutter_cpp@"
+"SUB_KIND_POSTFIX__21@unnamed@Shutter_cpp@":
 
-	.4byte lbl_8055A8F0
-	.4byte lbl_8055A8F4
-	.4byte lbl_8055A8FC
-	.4byte lbl_8055A904
+	.4byte "@53500"
+	.4byte "@53501"
+	.4byte "@53502_8055A8FC"
+	.4byte "@53503_8055A904"
 
-.global lbl_80482430
-lbl_80482430:
+.global "@56118_80482430"
+"@56118_80482430":
 
 	.4byte 0x73746570
 	.4byte 0x2F67696D
@@ -19,8 +19,8 @@ lbl_80482430:
 	.4byte 0x74746572
 	.4byte 0
 
-.global lbl_80482448
-lbl_80482448:
+.global "@56218"
+"@56218":
 
 	.4byte lbl_80323B04
 	.4byte lbl_80323B24
@@ -31,14 +31,14 @@ lbl_80482448:
 	.4byte lbl_80323BC4
 	.4byte lbl_80323BE4
 
-.global lbl_80482468
-lbl_80482468:
+.global __vt__Q53scn4step7gimmick7shutter7Shutter
+__vt__Q53scn4step7gimmick7shutter7Shutter:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80323894
-	.4byte lbl_80323E08
-	.4byte lbl_80323E20
-	.4byte lbl_80323E38
-	.4byte lbl_80323E84
-	.4byte lbl_80323EC0
+	.4byte __dt__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOn__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOff__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchToggle__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOnFromSuperBeamSwitch__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte checkDemoPos__Q53scn4step7gimmick7shutter7ShutterCFRQ33hel4math7Vector2

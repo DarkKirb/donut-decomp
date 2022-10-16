@@ -1,67 +1,67 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556550
-lbl_80556550:
+.global __tvType
+__tvType:
 
 	.4byte 0x000000FF
 
-.global lbl_80556554
-lbl_80556554:
+.global __wd0
+__wd0:
 
 	.byte 0xFF
 
-.global lbl_80556555
-lbl_80556555:
+.global __wd1
+__wd1:
 
 	.byte 0xFF
 
-.global lbl_80556556
-lbl_80556556:
+.global __wd2
+__wd2:
 
 	.byte 0xFF
 
-.global lbl_80556557
-lbl_80556557:
+.global __gp1
+__gp1:
 
 	.byte 0xFF
 
-.global lbl_80556558
-lbl_80556558:
+.global __gp2
+__gp2:
 
 	.byte 0xFF
 
-.global lbl_80556559
-lbl_80556559:
+.global __gp3
+__gp3:
 
 	.byte 0xFF
 
-.global lbl_8055655A
-lbl_8055655A:
+.global __gp4
+__gp4:
 
 	.byte 0xFF
 
-.global lbl_8055655B
-lbl_8055655B:
+.global __cc1
+__cc1:
 
 	.byte 0xFF
 
-.global lbl_8055655C
-lbl_8055655C:
+.global __cc2
+__cc2:
 
 	.byte 0xFF
 
-.global lbl_8055655D
-lbl_8055655D:
+.global __cc3
+__cc3:
 
 	.byte 0xFF
 
-.global lbl_8055655E
-lbl_8055655E:
+.global __cc4
+__cc4:
 
 	.byte 0xFF
 
-.global lbl_8055655F
-lbl_8055655F:
+.global __filter
+__filter:
 
 	.byte 0xFF

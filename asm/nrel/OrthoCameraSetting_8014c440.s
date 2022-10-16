@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014C440
-lbl_8014C440:
+.global create__Q34nrel8ezrender18OrthoCameraSettingFffffff
+create__Q34nrel8ezrender18OrthoCameraSettingFffffff:
 /* 8014C440 00148280  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8014C444 00148284  D0 21 00 08 */	stfs f1, 0x8(r1)
 /* 8014C448 00148288  D0 41 00 0C */	stfs f2, 0xc(r1)
@@ -23,8 +23,8 @@ lbl_8014C46C:
 /* 8014C47C 001482BC  42 00 FF F0 */	bdnz lbl_8014C46C
 /* 8014C480 001482C0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8014C484 001482C4  4E 80 00 20 */	blr
-.global lbl_8014C488
-lbl_8014C488:
+.global setupMatrix__Q34nrel8ezrender18OrthoCameraSettingCFRA4_A4_f
+setupMatrix__Q34nrel8ezrender18OrthoCameraSettingCFRA4_A4_f:
 /* 8014C488 001482C8  7C 65 1B 78 */	mr r5, r3
 /* 8014C48C 001482CC  7C 83 23 78 */	mr r3, r4
 /* 8014C490 001482D0  C0 25 00 04 */	lfs f1, 0x4(r5)
@@ -33,4 +33,4 @@ lbl_8014C488:
 /* 8014C49C 001482DC  C0 85 00 08 */	lfs f4, 0x8(r5)
 /* 8014C4A0 001482E0  C0 A5 00 10 */	lfs f5, 0x10(r5)
 /* 8014C4A4 001482E4  C0 C5 00 14 */	lfs f6, 0x14(r5)
-/* 8014C4A8 001482E8  4B EE 4E 98 */	b lbl_80031340
+/* 8014C4A8 001482E8  4B EE 4E 98 */	b C_MTXOrtho

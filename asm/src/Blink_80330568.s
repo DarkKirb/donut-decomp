@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80330568
-lbl_80330568:
+.global __ct__Q43scn4step4hero5BlinkFv
+__ct__Q43scn4step4hero5BlinkFv:
 /* 80330568 0032C3A8  38 00 00 00 */	li r0, 0x0
 /* 8033056C 0032C3AC  98 03 00 00 */	stb r0, 0x0(r3)
 /* 80330570 0032C3B0  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80330574 0032C3B4  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80330578 0032C3B8  4E 80 00 20 */	blr
-.global lbl_8033057C
-lbl_8033057C:
+.global __dt__Q43scn4step4hero5BlinkFv
+__dt__Q43scn4step4hero5BlinkFv:
 /* 8033057C 0032C3BC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80330580 0032C3C0  7C 08 02 A6 */	mflr r0
 /* 80330584 0032C3C4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -19,12 +19,12 @@ lbl_8033057C:
 /* 80330594 0032C3D4  7C 9F 23 78 */	mr r31, r4
 /* 80330598 0032C3D8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8033059C 0032C3DC  41 82 00 1C */	beq lbl_803305B8
-/* 803305A0 0032C3E0  48 00 00 35 */	bl lbl_803305D4
+/* 803305A0 0032C3E0  48 00 00 35 */	bl clear__Q43scn4step4hero5BlinkFv
 /* 803305A4 0032C3E4  7F E0 07 34 */	extsh r0, r31
 /* 803305A8 0032C3E8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803305AC 0032C3EC  40 81 00 0C */	ble lbl_803305B8
 /* 803305B0 0032C3F0  7F C3 F3 78 */	mr r3, r30
-/* 803305B4 0032C3F4  4B E8 F1 61 */	bl lbl_801BF714
+/* 803305B4 0032C3F4  4B E8 F1 61 */	bl __dl__FPv
 .global lbl_803305B8
 lbl_803305B8:
 /* 803305B8 0032C3F8  7F C3 F3 78 */	mr r3, r30
@@ -34,16 +34,16 @@ lbl_803305B8:
 /* 803305C8 0032C408  7C 08 03 A6 */	mtlr r0
 /* 803305CC 0032C40C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803305D0 0032C410  4E 80 00 20 */	blr
-.global lbl_803305D4
-lbl_803305D4:
+.global clear__Q43scn4step4hero5BlinkFv
+clear__Q43scn4step4hero5BlinkFv:
 /* 803305D4 0032C414  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 803305D8 0032C418  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803305DC 0032C41C  4D 82 00 20 */	beqlr
 /* 803305E0 0032C420  38 00 00 00 */	li r0, 0x0
 /* 803305E4 0032C424  98 03 00 00 */	stb r0, 0x0(r3)
 /* 803305E8 0032C428  4E 80 00 20 */	blr
-.global lbl_803305EC
-lbl_803305EC:
+.global update__Q43scn4step4hero5BlinkFv
+update__Q43scn4step4hero5BlinkFv:
 /* 803305EC 0032C42C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 803305F0 0032C430  3C 00 43 30 */	lis r0, 0x4330
 /* 803305F4 0032C434  90 01 00 08 */	stw r0, 0x8(r1)
@@ -67,7 +67,7 @@ lbl_80330630:
 /* 80330634 0032C474  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80330638 0032C478  41 82 01 28 */	beq lbl_80330760
 /* 8033063C 0032C47C  80 03 00 14 */	lwz r0, 0x14(r3)
-/* 80330640 0032C480  C8 42 CB 88 */	lfd f2, lbl_80562B08@sda21(r2)
+/* 80330640 0032C480  C8 42 CB 88 */	lfd f2, "@48860_80562B08"@sda21(r2)
 /* 80330644 0032C484  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80330648 0032C488  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8033064C 0032C48C  EC 20 10 28 */	fsubs f1, f0, f2
@@ -75,17 +75,17 @@ lbl_80330630:
 /* 80330654 0032C494  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80330658 0032C498  EC 00 10 28 */	fsubs f0, f0, f2
 /* 8033065C 0032C49C  EC 61 00 24 */	fdivs f3, f1, f0
-/* 80330660 0032C4A0  C0 02 CB 84 */	lfs f0, lbl_80562B04@sda21(r2)
+/* 80330660 0032C4A0  C0 02 CB 84 */	lfs f0, "@48856_80562B04"@sda21(r2)
 /* 80330664 0032C4A4  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 80330668 0032C4A8  40 81 00 0C */	ble lbl_80330674
-/* 8033066C 0032C4AC  C0 02 CB 80 */	lfs f0, lbl_80562B00@sda21(r2)
+/* 8033066C 0032C4AC  C0 02 CB 80 */	lfs f0, "@48855_80562B00"@sda21(r2)
 /* 80330670 0032C4B0  EC 60 18 28 */	fsubs f3, f0, f3
 .global lbl_80330674
 lbl_80330674:
-/* 80330674 0032C4B4  C0 02 CB 84 */	lfs f0, lbl_80562B04@sda21(r2)
+/* 80330674 0032C4B4  C0 02 CB 84 */	lfs f0, "@48856_80562B04"@sda21(r2)
 /* 80330678 0032C4B8  EC 80 18 28 */	fsubs f4, f0, f3
 /* 8033067C 0032C4BC  88 03 00 05 */	lbz r0, 0x5(r3)
-/* 80330680 0032C4C0  C8 42 CB 88 */	lfd f2, lbl_80562B08@sda21(r2)
+/* 80330680 0032C4C0  C8 42 CB 88 */	lfd f2, "@48860_80562B08"@sda21(r2)
 /* 80330684 0032C4C4  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80330688 0032C4C8  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8033068C 0032C4CC  EC 20 10 28 */	fsubs f1, f0, f2
@@ -145,7 +145,7 @@ lbl_80330674:
 lbl_80330760:
 /* 80330760 0032C5A0  38 21 00 40 */	addi r1, r1, 0x40
 /* 80330764 0032C5A4  4E 80 00 20 */	blr
-.global lbl_80330768
-lbl_80330768:
+.global getColor__Q43scn4step4hero5BlinkCFv
+getColor__Q43scn4step4hero5BlinkCFv:
 /* 80330768 0032C5A8  38 63 00 01 */	addi r3, r3, 0x1
 /* 8033076C 0032C5AC  4E 80 00 20 */	blr

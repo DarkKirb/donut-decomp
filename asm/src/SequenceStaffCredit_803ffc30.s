@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803FFC30
-lbl_803FFC30:
+.global __ct__Q23seq19SequenceStaffCreditFv
+__ct__Q23seq19SequenceStaffCreditFv:
 /* 803FFC30 003FBA70  94 21 FC 30 */	stwu r1, -0x3d0(r1)
 /* 803FFC34 003FBA74  7C 08 02 A6 */	mflr r0
 /* 803FFC38 003FBA78  90 01 03 D4 */	stw r0, 0x3d4(r1)
 /* 803FFC3C 003FBA7C  93 E1 03 CC */	stw r31, 0x3cc(r1)
 /* 803FFC40 003FBA80  7C 7F 1B 78 */	mr r31, r3
-/* 803FFC44 003FBA84  3C 80 80 49 */	lis r4, lbl_804964F0@ha
-/* 803FFC48 003FBA88  38 04 64 F0 */	addi r0, r4, lbl_804964F0@l
+/* 803FFC44 003FBA84  3C 80 80 49 */	lis r4, __vt__Q23seq19SequenceStaffCredit@ha
+/* 803FFC48 003FBA88  38 04 64 F0 */	addi r0, r4, __vt__Q23seq19SequenceStaffCredit@l
 /* 803FFC4C 003FBA8C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FFC50 003FBA90  38 61 00 20 */	addi r3, r1, 0x20
-/* 803FFC54 003FBA94  4B FF CE CD */	bl lbl_803FCB20
+/* 803FFC54 003FBA94  4B FF CE CD */	bl Create__Q23seq12ContextStoryFv
 /* 803FFC58 003FBA98  7F E5 FB 78 */	mr r5, r31
 /* 803FFC5C 003FBA9C  38 81 00 1C */	addi r4, r1, 0x1c
 /* 803FFC60 003FBAA0  38 00 00 75 */	li r0, 0x75
@@ -25,7 +25,7 @@ lbl_803FFC68:
 /* 803FFC74 003FBAB4  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 803FFC78 003FBAB8  42 00 FF F0 */	bdnz lbl_803FFC68
 /* 803FFC7C 003FBABC  38 61 00 08 */	addi r3, r1, 0x8
-/* 803FFC80 003FBAC0  4B E2 17 3D */	bl lbl_802213BC
+/* 803FFC80 003FBAC0  4B E2 17 3D */	bl Create__Q33scn4step11ContextModeFv
 /* 803FFC84 003FBAC4  38 BF 03 A8 */	addi r5, r31, 0x3a8
 /* 803FFC88 003FBAC8  38 81 00 04 */	addi r4, r1, 0x4
 /* 803FFC8C 003FBACC  38 00 00 02 */	li r0, 0x2
@@ -49,12 +49,12 @@ lbl_803FFC94:
 /* 803FFCCC 003FBB0C  38 21 03 D0 */	addi r1, r1, 0x3d0
 /* 803FFCD0 003FBB10  4E 80 00 20 */	blr
 
-.global lbl_803FFCD4
-lbl_803FFCD4:
-/* 803FFCD4 003FBB14  4B FF FD 2C */	b lbl_803FFA00
+.global __dt__Q23seq19SequenceStaffCreditFv
+__dt__Q23seq19SequenceStaffCreditFv:
+/* 803FFCD4 003FBB14  4B FF FD 2C */	b __dt__Q23seq12SequenceRootFv
 
-.global lbl_803FFCD8
-lbl_803FFCD8:
+.global nextAction__Q23seq19SequenceStaffCreditCFv
+nextAction__Q23seq19SequenceStaffCreditCFv:
 /* 803FFCD8 003FBB18  80 03 03 C0 */	lwz r0, 0x3c0(r3)
 /* 803FFCDC 003FBB1C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803FFCE0 003FBB20  41 82 00 10 */	beq lbl_803FFCF0
@@ -74,16 +74,16 @@ lbl_803FFD00:
 /* 803FFD00 003FBB40  38 60 00 00 */	li r3, 0x0
 /* 803FFD04 003FBB44  4E 80 00 20 */	blr
 
-.global lbl_803FFD08
-lbl_803FFD08:
-/* 803FFD08 003FBB48  4B CD D6 D8 */	b lbl_800DD3E0
+.global createChildSequence__Q23seq19SequenceStaffCreditCFv
+createChildSequence__Q23seq19SequenceStaffCreditCFv:
+/* 803FFD08 003FBB48  4B CD D6 D8 */	b __ct__Q34nw4r3g3d8LightObjFv
 
-.global lbl_803FFD0C
-lbl_803FFD0C:
+.global onChildSequenceEnd__Q23seq19SequenceStaffCreditFRQ23seq9ISequence
+onChildSequenceEnd__Q23seq19SequenceStaffCreditFRQ23seq9ISequence:
 /* 803FFD0C 003FBB4C  4E 80 00 20 */	blr
 
-.global lbl_803FFD10
-lbl_803FFD10:
+.global createScene__Q23seq19SequenceStaffCreditCFv
+createScene__Q23seq19SequenceStaffCreditCFv:
 /* 803FFD10 003FBB50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803FFD14 003FBB54  7C 08 02 A6 */	mflr r0
 /* 803FFD18 003FBB58  90 01 00 14 */	stw r0, 0x14(r1)
@@ -93,11 +93,11 @@ lbl_803FFD10:
 /* 803FFD28 003FBB68  38 00 00 00 */	li r0, 0x0
 /* 803FFD2C 003FBB6C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FFD30 003FBB70  38 60 00 0C */	li r3, 0xc
-/* 803FFD34 003FBB74  4B DB F9 DD */	bl lbl_801BF710
+/* 803FFD34 003FBB74  4B DB F9 DD */	bl __nw__FUl
 /* 803FFD38 003FBB78  7C 7F 1B 78 */	mr r31, r3
 /* 803FFD3C 003FBB7C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803FFD40 003FBB80  41 82 00 0C */	beq lbl_803FFD4C
-/* 803FFD44 003FBB84  4B FF 9E 89 */	bl lbl_803F9BCC
+/* 803FFD44 003FBB84  4B FF 9E 89 */	bl __ct__Q33scn11staffcredit16SceneStaffCreditFv
 /* 803FFD48 003FBB88  7C 7F 1B 78 */	mr r31, r3
 .global lbl_803FFD4C
 lbl_803FFD4C:
@@ -123,8 +123,8 @@ lbl_803FFD78:
 /* 803FFD88 003FBBC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FFD8C 003FBBCC  4E 80 00 20 */	blr
 
-.global lbl_803FFD90
-lbl_803FFD90:
+.global onSceneEnd__Q23seq19SequenceStaffCreditFRQ23scn6IScene
+onSceneEnd__Q23seq19SequenceStaffCreditFRQ23scn6IScene:
 /* 803FFD90 003FBBD0  80 03 03 C0 */	lwz r0, 0x3c0(r3)
 /* 803FFD94 003FBBD4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803FFD98 003FBBD8  4C 82 00 20 */	bnelr
@@ -132,6 +132,6 @@ lbl_803FFD90:
 /* 803FFDA0 003FBBE0  90 03 03 C0 */	stw r0, 0x3c0(r3)
 /* 803FFDA4 003FBBE4  4E 80 00 20 */	blr
 
-.global lbl_803FFDA8
-lbl_803FFDA8:
-/* 803FFDA8 003FBBE8  4B FF DC D0 */	b lbl_803FDA78
+.global GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv
+GetRuntimeTypeInfo__Q23seq19SequenceStaffCreditCFv:
+/* 803FFDA8 003FBBE8  4B FF DC D0 */	b "RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"

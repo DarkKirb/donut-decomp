@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800281E0
-lbl_800281E0:
+.global OSCalcCRC32
+OSCalcCRC32:
 /* 800281E0 00024020  2C 04 00 00 */	cmpwi r4, 0x0
-/* 800281E4 00024024  3C E0 80 40 */	lis r7, lbl_80407800@ha
+/* 800281E4 00024024  3C E0 80 40 */	lis r7, "@LOCAL@OSCalcCRC32__FPCvUl@crc32_table"@ha
 /* 800281E8 00024028  39 00 FF FF */	li r8, -0x1
-/* 800281EC 0002402C  38 E7 78 00 */	addi r7, r7, lbl_80407800@l
+/* 800281EC 0002402C  38 E7 78 00 */	addi r7, r7, "@LOCAL@OSCalcCRC32__FPCvUl@crc32_table"@l
 /* 800281F0 00024030  41 82 01 1C */	beq lbl_8002830C
 /* 800281F4 00024034  54 80 F0 BF */	srwi. r0, r4, 2
 /* 800281F8 00024038  7C 09 03 A6 */	mtctr r0

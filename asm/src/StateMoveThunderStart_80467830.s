@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80467830
-lbl_80467830:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6dubior16StateMoveThunder,PQ43scn4step4boss4Boss>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6dubior16StateMoveThunder,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8024FD38
-	.4byte lbl_8024FD1C
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6dubior16StateMoveThunder,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6dubior16StateMoveThunder,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80467840
-lbl_80467840:
+.global __vt__Q53scn4step4boss6dubior21StateMoveThunderStart
+__vt__Q53scn4step4boss6dubior21StateMoveThunderStart:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8024FB2C
-	.4byte lbl_8024FB30
-	.4byte lbl_8024FBDC
-	.4byte lbl_802344FC
-	.4byte lbl_8024FD18
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss6dubior21StateMoveThunderStartFv
+	.4byte procAnim__Q53scn4step4boss6dubior21StateMoveThunderStartFv
+	.4byte procMove__Q53scn4step4boss6dubior21StateMoveThunderStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6dubior21StateMoveThunderStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

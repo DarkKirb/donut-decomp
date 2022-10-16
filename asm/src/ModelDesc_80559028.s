@@ -1,193 +1,193 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80559028
-lbl_80559028:
+.global "@50130_80559028"
+"@50130_80559028":
 
 	.4byte 0x546F704C
 	.4byte 0
 
-.global lbl_80559030
-lbl_80559030:
+.global "@50134_80559030"
+"@50134_80559030":
 
 	.4byte 0x57616974
 	.4byte 0
 
-.global lbl_80559038
-lbl_80559038:
+.global "@50135_80559038"
+"@50135_80559038":
 
 	.4byte 0x46616C6C
 	.4byte 0
 
-.global lbl_80559040
-lbl_80559040:
+.global "@50136_80559040"
+"@50136_80559040":
 
 	.4byte 0x57616C6B
 	.4byte 0
 
-.global lbl_80559048
-lbl_80559048:
+.global "@50138_80559048"
+"@50138_80559048":
 
 	.4byte 0x4A756D70
 	.4byte 0
 
-.global lbl_80559050
-lbl_80559050:
+.global "@50139_80559050"
+"@50139_80559050":
 
 	.4byte 0x4A756D70
 	.4byte 0x456E6400
 
-.global lbl_80559058
-lbl_80559058:
+.global "@50140_80559058"
+"@50140_80559058":
 
 	.4byte 0x4C616E64
 	.4byte 0x696E6700
 
-.global lbl_80559060
-lbl_80559060:
+.global "@50141_80559060"
+"@50141_80559060":
 
 	.4byte 0x52756E00
 
-.global lbl_80559064
-lbl_80559064:
+.global "@50142_80559064"
+"@50142_80559064":
 
 	.4byte 0x466C6967
 	.4byte 0x68740000
 
-.global lbl_8055906C
-lbl_8055906C:
+.global "@50144_8055906C"
+"@50144_8055906C":
 
 	.4byte 0x50726169
 	.4byte 0x73650000
 	.4byte 0
 
-.global lbl_80559078
-lbl_80559078:
+.global "@50130_80559078"
+"@50130_80559078":
 
 	.4byte 0x546F704C
 	.4byte 0
 
-.global lbl_80559080
-lbl_80559080:
+.global "@50133_80559080"
+"@50133_80559080":
 
 	.4byte 0x52486176
 	.4byte 0x654C0000
 
-.global lbl_80559088
-lbl_80559088:
+.global "@50135_80559088"
+"@50135_80559088":
 
 	.4byte 0x57616974
 	.4byte 0
 
-.global lbl_80559090
-lbl_80559090:
+.global "@50136_80559090"
+"@50136_80559090":
 
 	.4byte 0x46616C6C
 	.4byte 0
 
-.global lbl_80559098
-lbl_80559098:
+.global "@50137_80559098"
+"@50137_80559098":
 
 	.4byte 0x57616C6B
 	.4byte 0
 
-.global lbl_805590A0
-lbl_805590A0:
+.global "@50139_805590A0"
+"@50139_805590A0":
 
 	.4byte 0x4A756D70
 	.4byte 0
 
-.global lbl_805590A8
-lbl_805590A8:
+.global "@50140_805590A8"
+"@50140_805590A8":
 
 	.4byte 0x4A756D70
 	.4byte 0x456E6400
 
-.global lbl_805590B0
-lbl_805590B0:
+.global "@50141_805590B0"
+"@50141_805590B0":
 
 	.4byte 0x4C616E64
 	.4byte 0x696E6700
 
-.global lbl_805590B8
-lbl_805590B8:
+.global "@50142_805590B8"
+"@50142_805590B8":
 
 	.4byte 0x52756E00
 	.4byte 0
 
-.global lbl_805590C0
-lbl_805590C0:
+.global "@50147_805590C0"
+"@50147_805590C0":
 
 	.4byte 0x576F6E64
 	.4byte 0x65724C00
 
-.global lbl_805590C8
-lbl_805590C8:
+.global "@50150_805590C8"
+"@50150_805590C8":
 
 	.4byte 0x436F7074
 	.4byte 0x65720000
 
-.global lbl_805590D0
-lbl_805590D0:
+.global "@50151_805590D0"
+"@50151_805590D0":
 
 	.4byte 0x50726169
 	.4byte 0x73650000
 
-.global lbl_805590D8
-lbl_805590D8:
+.global "T_DYNAMICS_TARGET_NODE__Q53scn4step4boss9creditdee23@unnamed@ModelDesc_cpp@"
+"T_DYNAMICS_TARGET_NODE__Q53scn4step4boss9creditdee23@unnamed@ModelDesc_cpp@":
 
-	.4byte lbl_80466AB0
-	.4byte lbl_80466AB0
+	.4byte "@50161_80466AB0"
+	.4byte "@50161_80466AB0"
 
-.global lbl_805590E0
-lbl_805590E0:
+.global "@50130_805590E0"
+"@50130_805590E0":
 
 	.4byte 0x546F704C
 	.4byte 0
 
-.global lbl_805590E8
-lbl_805590E8:
+.global "@50134_805590E8"
+"@50134_805590E8":
 
 	.4byte 0x57616974
 	.4byte 0
 
-.global lbl_805590F0
-lbl_805590F0:
+.global "@50135_805590F0"
+"@50135_805590F0":
 
 	.4byte 0x46616C6C
 	.4byte 0
 
-.global lbl_805590F8
-lbl_805590F8:
+.global "@50136_805590F8"
+"@50136_805590F8":
 
 	.4byte 0x57616C6B
 	.4byte 0
 
-.global lbl_80559100
-lbl_80559100:
+.global "@50138_80559100"
+"@50138_80559100":
 
 	.4byte 0x4A756D70
 	.4byte 0
 
-.global lbl_80559108
-lbl_80559108:
+.global "@50139_80559108"
+"@50139_80559108":
 
 	.4byte 0x4A756D70
 	.4byte 0x456E6400
 
-.global lbl_80559110
-lbl_80559110:
+.global "@50140_80559110"
+"@50140_80559110":
 
 	.4byte 0x4C616E64
 	.4byte 0x696E6700
 
-.global lbl_80559118
-lbl_80559118:
+.global "@50141_80559118"
+"@50141_80559118":
 
 	.4byte 0x52756E00
 
-.global lbl_8055911C
-lbl_8055911C:
+.global "@50142_8055911C"
+"@50142_8055911C":
 
 	.4byte 0x476C6964
 	.4byte 0x65000000

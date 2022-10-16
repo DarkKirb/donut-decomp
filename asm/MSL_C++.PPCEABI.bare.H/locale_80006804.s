@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
-.global lbl_80006804
-lbl_80006804:
+.global "@25556"
+"@25556":
 
 	.4byte 0x18180000
 	.4byte 0x00000048
@@ -15,14 +15,14 @@ lbl_80006804:
 	.4byte 0x00000008
 	.4byte 0x8D000008
 
-.global lbl_8000682C
-lbl_8000682C:
+.global "@26577"
+"@26577":
 
 	.4byte 0x10080000
 	.4byte 0
 
-.global lbl_80006834
-lbl_80006834:
+.global "@27127"
+"@27127":
 
 	.4byte 0x68080000
 	.4byte 0x00000094
@@ -37,20 +37,20 @@ lbl_80006834:
 	.4byte 0x00000058
 	.4byte 0
 	.4byte 0x02000028
-	.4byte lbl_800148E0
+	.4byte "__dt__Q210Metrowerks48move_ptr<c,RQ33std6detail20default_delete<A0_c>>Fv"
 	.4byte 0x8680001D
 	.4byte 0
-	.4byte lbl_80006BD0
+	.4byte __dt__Q23std9exceptionFv
 	.4byte 0x02000020
-	.4byte lbl_800148E0
+	.4byte "__dt__Q210Metrowerks48move_ptr<c,RQ33std6detail20default_delete<A0_c>>Fv"
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte lbl_80006BD0
+	.4byte __dt__Q23std9exceptionFv
 	.4byte 0x82000030
-	.4byte lbl_800149D8
+	.4byte "__dt__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
 
-.global lbl_80006894
-lbl_80006894:
+.global "@27197"
+"@27197":
 
 	.4byte 0x18180000
 	.4byte 0x0000004C

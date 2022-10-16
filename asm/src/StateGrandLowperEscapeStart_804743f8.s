@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804743F8
-lbl_804743F8:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy22StateGrandLowperEscape,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy22StateGrandLowperEscape,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029D88C
-	.4byte lbl_8029D870
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy22StateGrandLowperEscape,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy22StateGrandLowperEscape,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80474408
-lbl_80474408:
+.global __vt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart
+__vt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029D7CC
-	.4byte lbl_8029D7D0
-	.4byte lbl_8029D868
-	.4byte lbl_8028DDE0
-	.4byte lbl_8029D86C
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFv
+	.4byte procAnim__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFv
+	.4byte procMove__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStartFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

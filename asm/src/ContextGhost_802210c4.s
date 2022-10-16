@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802210C4
-lbl_802210C4:
+.global Create__Q33scn4step12ContextGhostFv
+Create__Q33scn4step12ContextGhostFv:
 /* 802210C4 0021CF04  38 83 FF FC */	addi r4, r3, -0x4
 /* 802210C8 0021CF08  38 60 00 00 */	li r3, 0x0
 /* 802210CC 0021CF0C  38 00 00 05 */	li r0, 0x5

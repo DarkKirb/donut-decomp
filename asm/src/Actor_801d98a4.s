@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801D98A4
-lbl_801D98A4:
+.global __ct__Q25ostop5ActorFRQ25ostop7ManagerUl
+__ct__Q25ostop5ActorFRQ25ostop7ManagerUl:
 /* 801D98A4 001D56E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D98A8 001D56E8  7C 08 02 A6 */	mflr r0
 /* 801D98AC 001D56EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -17,15 +17,15 @@ lbl_801D98A4:
 /* 801D98D0 001D5710  98 03 00 0E */	stb r0, 0xe(r3)
 /* 801D98D4 001D5714  7C 83 23 78 */	mr r3, r4
 /* 801D98D8 001D5718  7F E4 FB 78 */	mr r4, r31
-/* 801D98DC 001D571C  48 00 07 49 */	bl lbl_801DA024
+/* 801D98DC 001D571C  48 00 07 49 */	bl registerActor__Q25ostop7ManagerFRQ25ostop5Actor
 /* 801D98E0 001D5720  7F E3 FB 78 */	mr r3, r31
 /* 801D98E4 001D5724  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801D98E8 001D5728  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D98EC 001D572C  7C 08 03 A6 */	mtlr r0
 /* 801D98F0 001D5730  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D98F4 001D5734  4E 80 00 20 */	blr
-.global lbl_801D98F8
-lbl_801D98F8:
+.global __dt__Q25ostop5ActorFv
+__dt__Q25ostop5ActorFv:
 /* 801D98F8 001D5738  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D98FC 001D573C  7C 08 02 A6 */	mflr r0
 /* 801D9900 001D5740  90 01 00 14 */	stw r0, 0x14(r1)
@@ -37,12 +37,12 @@ lbl_801D98F8:
 /* 801D9918 001D5758  41 82 00 24 */	beq lbl_801D993C
 /* 801D991C 001D575C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801D9920 001D5760  7F C4 F3 78 */	mr r4, r30
-/* 801D9924 001D5764  48 00 07 5D */	bl lbl_801DA080
+/* 801D9924 001D5764  48 00 07 5D */	bl unregisterActor__Q25ostop7ManagerFRQ25ostop5Actor
 /* 801D9928 001D5768  7F E0 07 34 */	extsh r0, r31
 /* 801D992C 001D576C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801D9930 001D5770  40 81 00 0C */	ble lbl_801D993C
 /* 801D9934 001D5774  7F C3 F3 78 */	mr r3, r30
-/* 801D9938 001D5778  4B FE 5D DD */	bl lbl_801BF714
+/* 801D9938 001D5778  4B FE 5D DD */	bl __dl__FPv
 .global lbl_801D993C
 lbl_801D993C:
 /* 801D993C 001D577C  7F C3 F3 78 */	mr r3, r30
@@ -52,8 +52,8 @@ lbl_801D993C:
 /* 801D994C 001D578C  7C 08 03 A6 */	mtlr r0
 /* 801D9950 001D5790  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9954 001D5794  4E 80 00 20 */	blr
-.global lbl_801D9958
-lbl_801D9958:
+.global isStopped__Q25ostop5ActorCFv
+isStopped__Q25ostop5ActorCFv:
 /* 801D9958 001D5798  38 80 00 00 */	li r4, 0x0
 /* 801D995C 001D579C  88 03 00 0D */	lbz r0, 0xd(r3)
 /* 801D9960 001D57A0  2C 00 00 00 */	cmpwi r0, 0x0
@@ -68,24 +68,24 @@ lbl_801D9974:
 lbl_801D9978:
 /* 801D9978 001D57B8  7C 83 23 78 */	mr r3, r4
 /* 801D997C 001D57BC  4E 80 00 20 */	blr
-.global lbl_801D9980
-lbl_801D9980:
+.global isStoppedNormal__Q25ostop5ActorCFv
+isStoppedNormal__Q25ostop5ActorCFv:
 /* 801D9980 001D57C0  88 63 00 0D */	lbz r3, 0xd(r3)
 /* 801D9984 001D57C4  4E 80 00 20 */	blr
-.global lbl_801D9988
-lbl_801D9988:
+.global isNotStopped__Q25ostop5ActorCFv
+isNotStopped__Q25ostop5ActorCFv:
 /* 801D9988 001D57C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D998C 001D57CC  7C 08 02 A6 */	mflr r0
 /* 801D9990 001D57D0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D9994 001D57D4  4B FF FF C5 */	bl lbl_801D9958
+/* 801D9994 001D57D4  4B FF FF C5 */	bl isStopped__Q25ostop5ActorCFv
 /* 801D9998 001D57D8  7C 60 00 34 */	cntlzw r0, r3
 /* 801D999C 001D57DC  54 03 D9 7E */	srwi r3, r0, 5
 /* 801D99A0 001D57E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D99A4 001D57E4  7C 08 03 A6 */	mtlr r0
 /* 801D99A8 001D57E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D99AC 001D57EC  4E 80 00 20 */	blr
-.global lbl_801D99B0
-lbl_801D99B0:
+.global registerEventReceiver__Q25ostop5ActorFRQ25ostop19IActorEventReceiver
+registerEventReceiver__Q25ostop5ActorFRQ25ostop19IActorEventReceiver:
 /* 801D99B0 001D57F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D99B4 001D57F4  7C 08 02 A6 */	mflr r0
 /* 801D99B8 001D57F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -119,8 +119,8 @@ lbl_801D9A10:
 /* 801D9A18 001D5858  7C 08 03 A6 */	mtlr r0
 /* 801D9A1C 001D585C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9A20 001D5860  4E 80 00 20 */	blr
-.global lbl_801D9A24
-lbl_801D9A24:
+.global unregisterEventReceiver__Q25ostop5ActorFRQ25ostop19IActorEventReceiver
+unregisterEventReceiver__Q25ostop5ActorFRQ25ostop19IActorEventReceiver:
 /* 801D9A24 001D5864  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9A28 001D5868  7C 08 02 A6 */	mflr r0
 /* 801D9A2C 001D586C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -155,8 +155,8 @@ lbl_801D9A80:
 /* 801D9A90 001D58D0  7C 08 03 A6 */	mtlr r0
 /* 801D9A94 001D58D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9A98 001D58D8  4E 80 00 20 */	blr
-.global lbl_801D9A9C
-lbl_801D9A9C:
+.global updateIsStop__Q25ostop5ActorFv
+updateIsStop__Q25ostop5ActorFv:
 /* 801D9A9C 001D58DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D9AA0 001D58E0  7C 08 02 A6 */	mflr r0
 /* 801D9AA4 001D58E4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -171,7 +171,7 @@ lbl_801D9A9C:
 /* 801D9AC8 001D5908  40 82 00 1C */	bne lbl_801D9AE4
 /* 801D9ACC 001D590C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801D9AD0 001D5910  80 9B 00 04 */	lwz r4, 0x4(r27)
-/* 801D9AD4 001D5914  48 00 03 69 */	bl lbl_801D9E3C
+/* 801D9AD4 001D5914  48 00 03 69 */	bl isStoppedNormal__Q25ostop7ManagerCFUl
 /* 801D9AD8 001D5918  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801D9ADC 001D591C  41 82 00 08 */	beq lbl_801D9AE4
 /* 801D9AE0 001D5920  3B C0 00 01 */	li r30, 0x1
@@ -179,7 +179,7 @@ lbl_801D9A9C:
 lbl_801D9AE4:
 /* 801D9AE4 001D5924  80 7B 00 00 */	lwz r3, 0x0(r27)
 /* 801D9AE8 001D5928  80 9B 00 04 */	lwz r4, 0x4(r27)
-/* 801D9AEC 001D592C  48 00 03 65 */	bl lbl_801D9E50
+/* 801D9AEC 001D592C  48 00 03 65 */	bl isStoppedPowerful__Q25ostop7ManagerCFUl
 /* 801D9AF0 001D5930  7C 7F 1B 78 */	mr r31, r3
 /* 801D9AF4 001D5934  9B DB 00 0D */	stb r30, 0xd(r27)
 /* 801D9AF8 001D5938  98 7B 00 0E */	stb r3, 0xe(r27)

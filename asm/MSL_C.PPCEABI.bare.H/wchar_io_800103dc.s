@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800103DC
-lbl_800103DC:
+.global fwide
+fwide:
 /* 800103DC 0000C21C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800103E0 0000C220  41 82 00 10 */	beq lbl_800103F0
 /* 800103E4 0000C224  80 A3 00 04 */	lwz r5, 0x4(r3)

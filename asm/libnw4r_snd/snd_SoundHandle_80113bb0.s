@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80113BB0
-lbl_80113BB0:
+.global detail_AttachSound__Q34nw4r3snd11SoundHandleFPQ44nw4r3snd6detail10BasicSound
+detail_AttachSound__Q34nw4r3snd11SoundHandleFPQ44nw4r3snd6detail10BasicSound:
 /* 80113BB0 0010F9F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80113BB4 0010F9F4  7C 08 02 A6 */	mflr r0
 /* 80113BB8 0010F9F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -10,11 +10,11 @@ lbl_80113BB0:
 /* 80113BC0 0010FA00  7C 7F 1B 78 */	mr r31, r3
 /* 80113BC4 0010FA04  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80113BC8 0010FA08  7C 83 23 78 */	mr r3, r4
-/* 80113BCC 0010FA0C  4B FF 2F 15 */	bl lbl_80106AE0
+/* 80113BCC 0010FA0C  4B FF 2F 15 */	bl IsAttachedGeneralHandle__Q44nw4r3snd6detail10BasicSoundFv
 /* 80113BD0 0010FA10  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80113BD4 0010FA14  41 82 00 0C */	beq lbl_80113BE0
 /* 80113BD8 0010FA18  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80113BDC 0010FA1C  4B FF 2F 25 */	bl lbl_80106B00
+/* 80113BDC 0010FA1C  4B FF 2F 25 */	bl DetachGeneralHandle__Q44nw4r3snd6detail10BasicSoundFv
 .global lbl_80113BE0
 lbl_80113BE0:
 /* 80113BE0 0010FA20  80 7F 00 00 */	lwz r3, 0x0(r31)
@@ -25,8 +25,8 @@ lbl_80113BE0:
 /* 80113BF4 0010FA34  38 21 00 10 */	addi r1, r1, 0x10
 /* 80113BF8 0010FA38  4E 80 00 20 */	blr
 /* 80113BFC 0010FA3C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80113C00
-lbl_80113C00:
+.global DetachSound__Q34nw4r3snd11SoundHandleFv
+DetachSound__Q34nw4r3snd11SoundHandleFv:
 /* 80113C00 0010FA40  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 80113C04 0010FA44  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80113C08 0010FA48  41 82 00 30 */	beq lbl_80113C38

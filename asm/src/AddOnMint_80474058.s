@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80474058
-lbl_80474058:
+.global "@55833_80474058"
+"@55833_80474058":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -49,29 +49,29 @@ lbl_80474058:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80474108
-lbl_80474108:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy9StateJump,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy9StateJump,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029CB3C
-	.4byte lbl_8029CAE0
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy9StateJump,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy9StateJump,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80474118
-lbl_80474118:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8029CB38
-	.4byte lbl_8029CAFC
-
-.global lbl_80474128
-lbl_80474128:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy12StateLanding,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy12StateLanding,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029CB34
-	.4byte lbl_8029CB18
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy12StateLanding,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy12StateLanding,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6bouncy27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

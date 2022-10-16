@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055DD28
-lbl_8055DD28:
+.global "@GUARD@CreateTmpl<9,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<9,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
 	.skip 0x1
 
-.global lbl_8055DD29
-lbl_8055DD29:
+.global "@GUARD@CreateTmpl<9,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<9,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
 	.skip 0x7

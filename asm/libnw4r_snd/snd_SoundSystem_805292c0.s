@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_805292C0
-lbl_805292C0:
+.global "@4760"
+"@4760":
 	.skip 0x10
 
-.global lbl_805292D0
-lbl_805292D0:
+.global sTaskThread__Q34nw4r3snd11SoundSystem
+sTaskThread__Q34nw4r3snd11SoundSystem:
 	.skip 0x330
 
-.global lbl_80529600
-lbl_80529600:
+.global "@LOCAL@InitSoundSystem__Q34nw4r3snd11SoundSystemFll@defaultSoundSystemWork"
+"@LOCAL@InitSoundSystem__Q34nw4r3snd11SoundSystemFll@defaultSoundSystemWork":
 	.skip 0x6A02
 
 .global lbl_80530002

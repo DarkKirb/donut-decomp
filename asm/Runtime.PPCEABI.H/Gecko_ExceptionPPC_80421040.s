@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80421040
-lbl_80421040:
+.global "@366"
+"@366":
 
 	.4byte lbl_80007E90
 	.4byte lbl_80007E90
@@ -22,8 +22,8 @@ lbl_80421040:
 	.4byte lbl_80007E78
 	.4byte lbl_80007E60
 
-.global lbl_80421084
-lbl_80421084:
+.global "@860_80421084"
+"@860_80421084":
 
 	.4byte lbl_80008910
 	.4byte lbl_800084C8
@@ -43,23 +43,23 @@ lbl_80421084:
 	.4byte lbl_800088F0
 	.4byte lbl_80008890
 
-.global lbl_804210C8
-lbl_804210C8:
+.global __vt__Q23std13bad_exception
+__vt__Q23std13bad_exception:
 
-	.4byte lbl_80556438
+	.4byte __RTTI__Q23std13bad_exception
 	.4byte 0
-	.4byte lbl_80008AF0
-	.4byte lbl_80009170
+	.4byte __dt__Q23std13bad_exceptionFv
+	.4byte what__Q23std13bad_exceptionCFv
 
-.global lbl_804210D8
-lbl_804210D8:
+.global "@1153"
+"@1153":
 
-	.4byte lbl_80556420
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
 	.4byte 0
 
-.global lbl_804210E4
-lbl_804210E4:
+.global "@STRING@what__Q23std13bad_exceptionCFv"
+"@STRING@what__Q23std13bad_exceptionCFv":
 
 	.4byte 0x6261645F
 	.4byte 0x65786365

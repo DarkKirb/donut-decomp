@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80452D18
-lbl_80452D18:
+.global "@52181_80452D18"
+"@52181_80452D18":
 
 	.4byte 0x44697363
 	.4byte 0x6F6E6E65
 	.4byte 0x63745469
 	.4byte 0x746C6500
-	.4byte lbl_80452D18
-	.4byte lbl_80452D18
-	.4byte lbl_80452D18
+	.4byte "@52181_80452D18"
+	.4byte "@52181_80452D18"
+	.4byte "@52181_80452D18"
 
-.global lbl_80452D34
-lbl_80452D34:
+.global "@52182_80452D34"
+"@52182_80452D34":
 
 	.4byte 0x44697363
 	.4byte 0x6F6E6E65
@@ -24,8 +24,8 @@ lbl_80452D34:
 	.4byte 0x6E63656C
 	.4byte 0
 
-.global lbl_80452D54
-lbl_80452D54:
+.global "@52183_80452D54"
+"@52183_80452D54":
 
 	.4byte 0x44697363
 	.4byte 0x6F6E6E65
@@ -34,12 +34,12 @@ lbl_80452D54:
 	.4byte 0x75625769
 	.4byte 0x74685175
 	.4byte 0x69740000
-	.4byte lbl_80452D18
-	.4byte lbl_80452D34
-	.4byte lbl_80452D54
+	.4byte "@52181_80452D18"
+	.4byte "@52182_80452D34"
+	.4byte "@52183_80452D54"
 
-.global lbl_80452D7C
-lbl_80452D7C:
+.global "@52184_80452D7C"
+"@52184_80452D7C":
 
 	.4byte 0x44697363
 	.4byte 0x6F6E6E65
@@ -47,19 +47,19 @@ lbl_80452D7C:
 	.4byte 0x6E74696E
 	.4byte 0x75650000
 
-.global lbl_80452D90
-lbl_80452D90:
+.global "@52185_80452D90"
+"@52185_80452D90":
 
 	.4byte 0x44697363
 	.4byte 0x6F6E6E65
 	.4byte 0x63745175
 	.4byte 0x69740000
-	.4byte lbl_80452D7C
-	.4byte lbl_80452D7C
-	.4byte lbl_80452D90
+	.4byte "@52184_80452D7C"
+	.4byte "@52184_80452D7C"
+	.4byte "@52185_80452D90"
 
-.global lbl_80452DAC
-lbl_80452DAC:
+.global "@54504_80452DAC"
+"@54504_80452DAC":
 
 	.4byte 0x4572726F
 	.4byte 0x724D656E
@@ -84,15 +84,15 @@ lbl_80452DAC:
 	.4byte 0x69726D4E
 	.4byte 0x6F000000
 
-.global lbl_80452E04
-lbl_80452E04:
+.global "@54699_80452E04"
+"@54699_80452E04":
 
 	.4byte 0x53776974
 	.4byte 0x63683031
 	.4byte 0
 
-.global lbl_80452E10
-lbl_80452E10:
+.global "@54701_80452E10"
+"@54701_80452E10":
 
 	.4byte lbl_801784F4
 	.4byte lbl_80178514
@@ -131,15 +131,15 @@ lbl_80452E10:
 	.4byte 0x69726D54
 	.4byte 0x65787400
 
-.global lbl_80452EA0
-lbl_80452EA0:
+.global "@54876_80452EA0"
+"@54876_80452EA0":
 
 	.4byte 0x53776974
 	.4byte 0x63683032
 	.4byte 0
 
-.global lbl_80452EAC
-lbl_80452EAC:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -151,8 +151,8 @@ lbl_80452EAC:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80452ED0
-lbl_80452ED0:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

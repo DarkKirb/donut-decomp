@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C7D8
-lbl_8055C7D8:
+.global __OSArenaHi
+__OSArenaHi:
 	.skip 0x4
 
-.global lbl_8055C7DC
-lbl_8055C7DC:
+.global s_mem2ArenaHi
+s_mem2ArenaHi:
 	.skip 0x4

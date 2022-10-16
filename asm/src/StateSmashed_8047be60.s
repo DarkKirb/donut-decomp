@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047BE60
-lbl_8047BE60:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld15StateSmashedEnd,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld15StateSmashedEnd,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DF7FC
-	.4byte lbl_802DF7E0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld15StateSmashedEnd,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld15StateSmashedEnd,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047BE70
-lbl_8047BE70:
+.global __vt__Q53scn4step5enemy5sheld12StateSmashed
+__vt__Q53scn4step5enemy5sheld12StateSmashed:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DF37C
-	.4byte lbl_802DF414
-	.4byte lbl_802DF5C8
-	.4byte lbl_8028DDE0
-	.4byte lbl_802DF634
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy5sheld12StateSmashedFv
+	.4byte procAnim__Q53scn4step5enemy5sheld12StateSmashedFv
+	.4byte procMove__Q53scn4step5enemy5sheld12StateSmashedFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5sheld12StateSmashedFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

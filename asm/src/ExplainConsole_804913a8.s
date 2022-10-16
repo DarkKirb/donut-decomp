@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804913A8
-lbl_804913A8:
+.global "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
 
 	.4byte 0
 	.4byte 0x00000001
 	.4byte 0x00000003
 	.4byte 0
 
-.global lbl_804913B8
-lbl_804913B8:
+.global "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
 
 	.4byte 0
 	.4byte 0x00000002
 	.4byte 0x00000001
 	.4byte 0x00000003
 
-.global lbl_804913C8
-lbl_804913C8:
+.global "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
 
 	.4byte 0
 	.4byte 0x00000002
 	.4byte 0x00000003
 
-.global lbl_804913D4
-lbl_804913D4:
+.global "bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
 
 	.4byte 0x00000004
 	.4byte 0x00000005
 	.4byte 0x00000006
 
-.global lbl_804913E0
-lbl_804913E0:
+.global "bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
 
 	.4byte 0x00000007
 	.4byte 0x00000009

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043D110
-lbl_8043D110:
+.global "@651"
+"@651":
 
 	.4byte 0x68696464
 	.4byte 0x5F70726F

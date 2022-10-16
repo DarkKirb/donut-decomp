@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80191F30
-lbl_80191F30:
+.global __ct__Q23g3d17ModelBufferOptionFv
+__ct__Q23g3d17ModelBufferOptionFv:
 /* 80191F30 0018DD70  38 00 00 00 */	li r0, 0x0
 /* 80191F34 0018DD74  98 03 00 00 */	stb r0, 0x0(r3)
 /* 80191F38 0018DD78  98 03 00 01 */	stb r0, 0x1(r3)
@@ -21,30 +21,30 @@ lbl_80191F30:
 /* 80191F6C 0018DDAC  98 03 00 0E */	stb r0, 0xe(r3)
 /* 80191F70 0018DDB0  98 03 00 0F */	stb r0, 0xf(r3)
 /* 80191F74 0018DDB4  4E 80 00 20 */	blr
-.global lbl_80191F78
-lbl_80191F78:
+.global addAnimMatColor__Q23g3d17ModelBufferOptionFv
+addAnimMatColor__Q23g3d17ModelBufferOptionFv:
 /* 80191F78 0018DDB8  38 00 00 01 */	li r0, 0x1
 /* 80191F7C 0018DDBC  98 03 00 08 */	stb r0, 0x8(r3)
 /* 80191F80 0018DDC0  98 03 00 03 */	stb r0, 0x3(r3)
 /* 80191F84 0018DDC4  4E 80 00 20 */	blr
-.global lbl_80191F88
-lbl_80191F88:
+.global addAnimTexPattern__Q23g3d17ModelBufferOptionFv
+addAnimTexPattern__Q23g3d17ModelBufferOptionFv:
 /* 80191F88 0018DDC8  38 00 00 01 */	li r0, 0x1
 /* 80191F8C 0018DDCC  98 03 00 00 */	stb r0, 0x0(r3)
 /* 80191F90 0018DDD0  98 03 00 01 */	stb r0, 0x1(r3)
 /* 80191F94 0018DDD4  4E 80 00 20 */	blr
-.global lbl_80191F98
-lbl_80191F98:
+.global addAnimTexSRT__Q23g3d17ModelBufferOptionFv
+addAnimTexSRT__Q23g3d17ModelBufferOptionFv:
 /* 80191F98 0018DDD8  38 00 00 01 */	li r0, 0x1
 /* 80191F9C 0018DDDC  98 03 00 02 */	stb r0, 0x2(r3)
 /* 80191FA0 0018DDE0  4E 80 00 20 */	blr
-.global lbl_80191FA4
-lbl_80191FA4:
+.global addAnimVisible__Q23g3d17ModelBufferOptionFv
+addAnimVisible__Q23g3d17ModelBufferOptionFv:
 /* 80191FA4 0018DDE4  38 00 00 01 */	li r0, 0x1
 /* 80191FA8 0018DDE8  98 03 00 06 */	stb r0, 0x6(r3)
 /* 80191FAC 0018DDEC  4E 80 00 20 */	blr
-.global lbl_80191FB0
-lbl_80191FB0:
+.global value__Q23g3d17ModelBufferOptionCFv
+value__Q23g3d17ModelBufferOptionCFv:
 /* 80191FB0 0018DDF0  88 83 00 00 */	lbz r4, 0x0(r3)
 /* 80191FB4 0018DDF4  88 03 00 01 */	lbz r0, 0x1(r3)
 /* 80191FB8 0018DDF8  20 00 00 00 */	subfic r0, r0, 0x0

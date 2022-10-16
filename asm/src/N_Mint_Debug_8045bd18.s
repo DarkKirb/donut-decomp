@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045BD18
-lbl_8045BD18:
+.global "@50074_8045BD18"
+"@50074_8045BD18":
 
 	.4byte 0x41737365
 	.4byte 0x72742046
 	.4byte 0x61696C00
 
-.global lbl_8045BD24
-lbl_8045BD24:
+.global "@50077_8045BD24"
+"@50077_8045BD24":
 
 	.4byte 0x54657374
 	.4byte 0x20466169
 	.4byte 0x6C210000
 
-.global lbl_8045BD30
-lbl_8045BD30:
+.global "@50082"
+"@50082":
 
 	.4byte 0x4E5F4D69
 	.4byte 0x6E745F44
@@ -24,8 +24,8 @@ lbl_8045BD30:
 	.4byte 0x2E637070
 	.4byte 0
 
-.global lbl_8045BD44
-lbl_8045BD44:
+.global "@50083"
+"@50083":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -33,8 +33,8 @@ lbl_8045BD44:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045BD58
-lbl_8045BD58:
+.global "@50098_8045BD58"
+"@50098_8045BD58":
 
 	.4byte 0x5B417373
 	.4byte 0x6572745F
@@ -45,8 +45,8 @@ lbl_8045BD58:
 	.4byte 0xDB3A2025
 	.4byte 0x640A0000
 
-.global lbl_8045BD78
-lbl_8045BD78:
+.global "@50104"
+"@50104":
 
 	.4byte 0x5B417373
 	.4byte 0x6572745F
@@ -57,8 +57,8 @@ lbl_8045BD78:
 	.4byte 0xDB3A2025
 	.4byte 0x660A0000
 
-.global lbl_8045BD98
-lbl_8045BD98:
+.global "@50115"
+"@50115":
 
 	.4byte 0x5B417373
 	.4byte 0x6572745F
@@ -77,8 +77,8 @@ lbl_8045BD98:
 	.4byte 0x0A000000
 	.4byte 0
 
-.global lbl_8045BDD8
-lbl_8045BDD8:
+.global "@50119"
+"@50119":
 
 	.4byte 0x5B546573
 	.4byte 0x745F695D
@@ -91,8 +91,8 @@ lbl_8045BDD8:
 	.4byte 0x6572726F
 	.4byte 0x72210A00
 
-.global lbl_8045BE00
-lbl_8045BE00:
+.global "@50123_8045BE00"
+"@50123_8045BE00":
 
 	.4byte 0x5B546573
 	.4byte 0x745F665D
@@ -105,8 +105,8 @@ lbl_8045BE00:
 	.4byte 0x6572726F
 	.4byte 0x72210A00
 
-.global lbl_8045BE28
-lbl_8045BE28:
+.global "@50131_8045BE28"
+"@50131_8045BE28":
 
 	.4byte 0x5B546573
 	.4byte 0x745F6674
@@ -127,16 +127,16 @@ lbl_8045BE28:
 	.4byte 0x210A0000
 	.4byte 0
 
-.global lbl_8045BE70
-lbl_8045BE70:
+.global "@50134_8045BE70"
+"@50134_8045BE70":
 
 	.4byte 0x44756D70
 	.4byte 0x28696E74
 	.4byte 0x29203A20
 	.4byte 0x25640A00
 
-.global lbl_8045BE80
-lbl_8045BE80:
+.global "@50137_8045BE80"
+"@50137_8045BE80":
 
 	.4byte 0x44756D70
 	.4byte 0x28666C6F

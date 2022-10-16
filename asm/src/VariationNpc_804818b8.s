@@ -1,81 +1,81 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804818B8
-lbl_804818B8:
+.global "@58009_804818B8"
+"@58009_804818B8":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314BBC
+	.4byte ActWait__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314C00
+	.4byte ActWait2__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314C44
+	.4byte ActWait3__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314C88
+	.4byte ActWait5__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314CCC
+	.4byte ActWait6__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314D10
+	.4byte ActWait7__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314D54
+	.4byte ActWait8__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314D98
+	.4byte ActWait9__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314DDC
+	.4byte ActWait10__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314E20
+	.4byte ActWait11__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314E64
+	.4byte ActTurnFront__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80314F64
+	.4byte ActTurnBack__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803150B4
+	.4byte ActTalk__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803150F8
+	.4byte ActTalkGlad__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8031513C
+	.4byte ActTalkRegret__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80315180
+	.4byte ActTalkPointing__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803151C4
+	.4byte ActTalkChuckle__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80315208
+	.4byte ActTalkGo__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8031524C
+	.4byte ActGlad__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80315290
+	.4byte ActChase__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803153DC
+	.4byte ActAvert__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803154E8
+	.4byte ActTurnMainPlayer__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803155E8
+	.4byte ActWaitMainPlayerMove__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
 
-.global lbl_804819CC
-lbl_804819CC:
+.global "@58043_804819CC"
+"@58043_804819CC":
 
 	.4byte lbl_8031488C
 	.4byte lbl_803148AC
@@ -101,16 +101,16 @@ lbl_804819CC:
 	.4byte lbl_80314B2C
 	.4byte lbl_80314B4C
 
-.global lbl_80481A28
-lbl_80481A28:
+.global __vt__Q53scn4step7gimmick7mahoroa12VariationNpc
+__vt__Q53scn4step7gimmick7mahoroa12VariationNpc:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80314600
-	.4byte lbl_80314640
-	.4byte lbl_8031479C
-	.4byte lbl_80315740
-	.4byte lbl_803147C4
+	.4byte registerToRoot__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
+	.4byte updateFrame__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
+	.4byte updateUseGPU__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
+	.4byte objCollRect__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7Mahoroa
+	.4byte reqAct__Q53scn4step7gimmick7mahoroa12VariationNpcFRQ53scn4step7gimmick7mahoroa7MahoroaQ53scn4step7gimmick7mahoroa7ActKind
 	.4byte 0
 	.4byte 0
 	.4byte 0

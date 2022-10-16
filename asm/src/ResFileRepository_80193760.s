@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80193760
-lbl_80193760:
+.global __ct__Q23g3d17ResFileRepositoryFv
+__ct__Q23g3d17ResFileRepositoryFv:
 /* 80193760 0018F5A0  38 A0 00 00 */	li r5, 0x0
 /* 80193764 0018F5A4  90 A3 00 00 */	stw r5, 0x0(r3)
 /* 80193768 0018F5A8  7C 64 1B 78 */	mr r4, r3
@@ -14,8 +14,8 @@ lbl_80193774:
 /* 80193778 0018F5B8  94 A4 00 08 */	stwu r5, 0x8(r4)
 /* 8019377C 0018F5BC  42 00 FF F8 */	bdnz lbl_80193774
 /* 80193780 0018F5C0  4E 80 00 20 */	blr
-.global lbl_80193784
-lbl_80193784:
+.global "__dt__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>Fv"
+"__dt__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>Fv":
 /* 80193784 0018F5C4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80193788 0018F5C8  7C 08 02 A6 */	mflr r0
 /* 8019378C 0018F5CC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -32,18 +32,18 @@ lbl_801937B0:
 /* 801937B0 0018F5F0  3B A3 FF FF */	addi r29, r3, -0x1
 /* 801937B4 0018F5F4  38 7B 00 04 */	addi r3, r27, 0x4
 /* 801937B8 0018F5F8  7F A4 EB 78 */	mr r4, r29
-/* 801937BC 0018F5FC  48 00 00 79 */	bl lbl_80193834
+/* 801937BC 0018F5FC  48 00 00 79 */	bl "__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl"
 /* 801937C0 0018F600  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 801937C4 0018F604  38 7B 00 04 */	addi r3, r27, 0x4
 /* 801937C8 0018F608  7F A4 EB 78 */	mr r4, r29
-/* 801937CC 0018F60C  48 00 00 69 */	bl lbl_80193834
+/* 801937CC 0018F60C  48 00 00 69 */	bl "__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl"
 /* 801937D0 0018F610  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 801937D4 0018F614  80 7B 00 00 */	lwz r3, 0x0(r27)
 /* 801937D8 0018F618  38 03 FF FF */	addi r0, r3, -0x1
 /* 801937DC 0018F61C  90 1B 00 00 */	stw r0, 0x0(r27)
 /* 801937E0 0018F620  7F C3 F3 78 */	mr r3, r30
 /* 801937E4 0018F624  38 80 00 01 */	li r4, 0x1
-/* 801937E8 0018F628  48 00 03 55 */	bl lbl_80193B3C
+/* 801937E8 0018F628  48 00 03 55 */	bl __dt__Q33g3d17ResFileRepository4NodeFv
 .global lbl_801937EC
 lbl_801937EC:
 /* 801937EC 0018F62C  80 7B 00 00 */	lwz r3, 0x0(r27)
@@ -51,12 +51,12 @@ lbl_801937EC:
 /* 801937F4 0018F634  40 82 FF BC */	bne lbl_801937B0
 /* 801937F8 0018F638  7F 63 DB 78 */	mr r3, r27
 /* 801937FC 0018F63C  38 80 00 00 */	li r4, 0x0
-/* 80193800 0018F640  4B FE 23 69 */	bl lbl_80175B68
+/* 80193800 0018F640  4B FE 23 69 */	bl __dt__Q23scn6ISceneFv
 /* 80193804 0018F644  7F 80 07 34 */	extsh r0, r28
 /* 80193808 0018F648  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8019380C 0018F64C  40 81 00 0C */	ble lbl_80193818
 /* 80193810 0018F650  7F 63 DB 78 */	mr r3, r27
-/* 80193814 0018F654  48 02 BF 01 */	bl lbl_801BF714
+/* 80193814 0018F654  48 02 BF 01 */	bl __dl__FPv
 .global lbl_80193818
 lbl_80193818:
 /* 80193818 0018F658  7F 63 DB 78 */	mr r3, r27
@@ -66,8 +66,8 @@ lbl_80193818:
 /* 80193828 0018F668  7C 08 03 A6 */	mtlr r0
 /* 8019382C 0018F66C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80193830 0018F670  4E 80 00 20 */	blr
-.global lbl_80193834
-lbl_80193834:
+.global "__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl"
+"__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl":
 /* 80193834 0018F674  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80193838 0018F678  7C 08 02 A6 */	mflr r0
 /* 8019383C 0018F67C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -77,7 +77,7 @@ lbl_80193834:
 /* 8019384C 0018F68C  7C 9F 23 78 */	mr r31, r4
 /* 80193850 0018F690  7F E3 FB 78 */	mr r3, r31
 /* 80193854 0018F694  38 80 00 80 */	li r4, 0x80
-/* 80193858 0018F698  4B E9 0C 49 */	bl lbl_800244A0
+/* 80193858 0018F698  4B E9 0C 49 */	bl DefaultSwitchThreadCallback
 /* 8019385C 0018F69C  57 E0 10 3A */	slwi r0, r31, 2
 /* 80193860 0018F6A0  7C 7E 02 14 */	add r3, r30, r0
 /* 80193864 0018F6A4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -86,8 +86,8 @@ lbl_80193834:
 /* 80193870 0018F6B0  7C 08 03 A6 */	mtlr r0
 /* 80193874 0018F6B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80193878 0018F6B8  4E 80 00 20 */	blr
-.global lbl_8019387C
-lbl_8019387C:
+.global __dt__Q23g3d17ResFileRepositoryFv
+__dt__Q23g3d17ResFileRepositoryFv:
 /* 8019387C 0018F6BC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80193880 0018F6C0  7C 08 02 A6 */	mflr r0
 /* 80193884 0018F6C4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -98,12 +98,12 @@ lbl_8019387C:
 /* 80193898 0018F6D8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8019389C 0018F6DC  41 82 00 20 */	beq lbl_801938BC
 /* 801938A0 0018F6E0  38 80 FF FF */	li r4, -0x1
-/* 801938A4 0018F6E4  4B FF FE E1 */	bl lbl_80193784
+/* 801938A4 0018F6E4  4B FF FE E1 */	bl "__dt__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>Fv"
 /* 801938A8 0018F6E8  7F E0 07 34 */	extsh r0, r31
 /* 801938AC 0018F6EC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801938B0 0018F6F0  40 81 00 0C */	ble lbl_801938BC
 /* 801938B4 0018F6F4  7F C3 F3 78 */	mr r3, r30
-/* 801938B8 0018F6F8  48 02 BE 5D */	bl lbl_801BF714
+/* 801938B8 0018F6F8  48 02 BE 5D */	bl __dl__FPv
 .global lbl_801938BC
 lbl_801938BC:
 /* 801938BC 0018F6FC  7F C3 F3 78 */	mr r3, r30
@@ -113,8 +113,8 @@ lbl_801938BC:
 /* 801938CC 0018F70C  7C 08 03 A6 */	mtlr r0
 /* 801938D0 0018F710  38 21 00 10 */	addi r1, r1, 0x10
 /* 801938D4 0018F714  4E 80 00 20 */	blr
-.global lbl_801938D8
-lbl_801938D8:
+.global get__Q23g3d17ResFileRepositoryFPCcb
+get__Q23g3d17ResFileRepositoryFPCcb:
 /* 801938D8 0018F718  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801938DC 0018F71C  7C 08 02 A6 */	mflr r0
 /* 801938E0 0018F720  90 01 00 24 */	stw r0, 0x24(r1)
@@ -123,39 +123,39 @@ lbl_801938D8:
 /* 801938EC 0018F72C  7C 7D 1B 78 */	mr r29, r3
 /* 801938F0 0018F730  7C 9E 23 78 */	mr r30, r4
 /* 801938F4 0018F734  7C BF 2B 78 */	mr r31, r5
-/* 801938F8 0018F738  48 00 01 49 */	bl lbl_80193A40
+/* 801938F8 0018F738  48 00 01 49 */	bl find__Q23g3d17ResFileRepositoryFPCc
 /* 801938FC 0018F73C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80193900 0018F740  41 82 00 10 */	beq lbl_80193910
 /* 80193904 0018F744  38 63 00 50 */	addi r3, r3, 0x50
-/* 80193908 0018F748  4B F6 CE D9 */	bl lbl_801007E0
+/* 80193908 0018F748  4B F6 CE D9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8019390C 0018F74C  48 00 00 64 */	b lbl_80193970
 .global lbl_80193910
 lbl_80193910:
 /* 80193910 0018F750  38 60 00 58 */	li r3, 0x58
-/* 80193914 0018F754  48 02 BD FD */	bl lbl_801BF710
+/* 80193914 0018F754  48 02 BD FD */	bl __nw__FUl
 /* 80193918 0018F758  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8019391C 0018F75C  41 82 00 10 */	beq lbl_8019392C
 /* 80193920 0018F760  7F C4 F3 78 */	mr r4, r30
 /* 80193924 0018F764  7F E5 FB 78 */	mr r5, r31
-/* 80193928 0018F768  48 00 01 9D */	bl lbl_80193AC4
+/* 80193928 0018F768  48 00 01 9D */	bl __ct__Q33g3d17ResFileRepository4NodeFPCcb
 .global lbl_8019392C
 lbl_8019392C:
 /* 8019392C 0018F76C  90 61 00 0C */	stw r3, 0xc(r1)
 /* 80193930 0018F770  38 63 00 50 */	addi r3, r3, 0x50
-/* 80193934 0018F774  4B F6 CE AD */	bl lbl_801007E0
+/* 80193934 0018F774  4B F6 CE AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80193938 0018F778  7C 7F 1B 78 */	mr r31, r3
 /* 8019393C 0018F77C  38 61 00 0C */	addi r3, r1, 0xc
-/* 80193940 0018F780  4B FE 1C AD */	bl lbl_801755EC
+/* 80193940 0018F780  4B FE 1C AD */	bl "release__Q23std26auto_ptr<Q23seq9ISequence>Fv"
 /* 80193944 0018F784  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80193948 0018F788  7F A3 EB 78 */	mr r3, r29
 /* 8019394C 0018F78C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80193950 0018F790  48 00 00 99 */	bl lbl_801939E8
+/* 80193950 0018F790  48 00 00 99 */	bl "add__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>FQ23std40auto_ptr<Q33g3d17ResFileRepository4Node>"
 /* 80193954 0018F794  38 61 00 08 */	addi r3, r1, 0x8
 /* 80193958 0018F798  38 80 FF FF */	li r4, -0x1
-/* 8019395C 0018F79C  48 00 00 2D */	bl lbl_80193988
+/* 8019395C 0018F79C  48 00 00 2D */	bl "__dt__Q23std40auto_ptr<Q33g3d17ResFileRepository4Node>Fv"
 /* 80193960 0018F7A0  38 61 00 0C */	addi r3, r1, 0xc
 /* 80193964 0018F7A4  38 80 FF FF */	li r4, -0x1
-/* 80193968 0018F7A8  48 00 00 21 */	bl lbl_80193988
+/* 80193968 0018F7A8  48 00 00 21 */	bl "__dt__Q23std40auto_ptr<Q33g3d17ResFileRepository4Node>Fv"
 /* 8019396C 0018F7AC  7F E3 FB 78 */	mr r3, r31
 .global lbl_80193970
 lbl_80193970:
@@ -165,8 +165,8 @@ lbl_80193970:
 /* 8019397C 0018F7BC  7C 08 03 A6 */	mtlr r0
 /* 80193980 0018F7C0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80193984 0018F7C4  4E 80 00 20 */	blr
-.global lbl_80193988
-lbl_80193988:
+.global "__dt__Q23std40auto_ptr<Q33g3d17ResFileRepository4Node>Fv"
+"__dt__Q23std40auto_ptr<Q33g3d17ResFileRepository4Node>Fv":
 /* 80193988 0018F7C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019398C 0018F7CC  7C 08 02 A6 */	mflr r0
 /* 80193990 0018F7D0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -178,12 +178,12 @@ lbl_80193988:
 /* 801939A8 0018F7E8  41 82 00 24 */	beq lbl_801939CC
 /* 801939AC 0018F7EC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801939B0 0018F7F0  38 80 00 01 */	li r4, 0x1
-/* 801939B4 0018F7F4  48 00 01 89 */	bl lbl_80193B3C
+/* 801939B4 0018F7F4  48 00 01 89 */	bl __dt__Q33g3d17ResFileRepository4NodeFv
 /* 801939B8 0018F7F8  7F E0 07 34 */	extsh r0, r31
 /* 801939BC 0018F7FC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801939C0 0018F800  40 81 00 0C */	ble lbl_801939CC
 /* 801939C4 0018F804  7F C3 F3 78 */	mr r3, r30
-/* 801939C8 0018F808  48 02 BD 4D */	bl lbl_801BF714
+/* 801939C8 0018F808  48 02 BD 4D */	bl __dl__FPv
 .global lbl_801939CC
 lbl_801939CC:
 /* 801939CC 0018F80C  7F C3 F3 78 */	mr r3, r30
@@ -193,8 +193,8 @@ lbl_801939CC:
 /* 801939DC 0018F81C  7C 08 03 A6 */	mtlr r0
 /* 801939E0 0018F820  38 21 00 10 */	addi r1, r1, 0x10
 /* 801939E4 0018F824  4E 80 00 20 */	blr
-.global lbl_801939E8
-lbl_801939E8:
+.global "add__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>FQ23std40auto_ptr<Q33g3d17ResFileRepository4Node>"
+"add__Q33hel6common51AutoDeleteArray<Q33g3d17ResFileRepository4Node,128>FQ23std40auto_ptr<Q33g3d17ResFileRepository4Node>":
 /* 801939E8 0018F828  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801939EC 0018F82C  7C 08 02 A6 */	mflr r0
 /* 801939F0 0018F830  90 01 00 14 */	stw r0, 0x14(r1)
@@ -202,11 +202,11 @@ lbl_801939E8:
 /* 801939F8 0018F838  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801939FC 0018F83C  7C 7E 1B 78 */	mr r30, r3
 /* 80193A00 0018F840  7C 83 23 78 */	mr r3, r4
-/* 80193A04 0018F844  4B FE 1B E9 */	bl lbl_801755EC
+/* 80193A04 0018F844  4B FE 1B E9 */	bl "release__Q23std26auto_ptr<Q23seq9ISequence>Fv"
 /* 80193A08 0018F848  7C 7F 1B 78 */	mr r31, r3
 /* 80193A0C 0018F84C  38 7E 00 04 */	addi r3, r30, 0x4
 /* 80193A10 0018F850  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 80193A14 0018F854  4B FF FE 21 */	bl lbl_80193834
+/* 80193A14 0018F854  4B FF FE 21 */	bl "__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl"
 /* 80193A18 0018F858  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 80193A1C 0018F85C  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 80193A20 0018F860  38 03 00 01 */	addi r0, r3, 0x1
@@ -217,8 +217,8 @@ lbl_801939E8:
 /* 80193A34 0018F874  7C 08 03 A6 */	mtlr r0
 /* 80193A38 0018F878  38 21 00 10 */	addi r1, r1, 0x10
 /* 80193A3C 0018F87C  4E 80 00 20 */	blr
-.global lbl_80193A40
-lbl_80193A40:
+.global find__Q23g3d17ResFileRepositoryFPCc
+find__Q23g3d17ResFileRepositoryFPCc:
 /* 80193A40 0018F880  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80193A44 0018F884  7C 08 02 A6 */	mflr r0
 /* 80193A48 0018F888  90 01 00 24 */	stw r0, 0x24(r1)
@@ -232,11 +232,11 @@ lbl_80193A40:
 lbl_80193A64:
 /* 80193A64 0018F8A4  38 7C 00 04 */	addi r3, r28, 0x4
 /* 80193A68 0018F8A8  7F C4 F3 78 */	mr r4, r30
-/* 80193A6C 0018F8AC  4B FF FD C9 */	bl lbl_80193834
+/* 80193A6C 0018F8AC  4B FF FD C9 */	bl "__vc__Q33hel6common42Array<PQ33g3d17ResFileRepository4Node,128>FUl"
 /* 80193A70 0018F8B0  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 80193A74 0018F8B4  7F E3 FB 78 */	mr r3, r31
 /* 80193A78 0018F8B8  7F A4 EB 78 */	mr r4, r29
-/* 80193A7C 0018F8BC  48 00 9F 39 */	bl lbl_8019D9B4
+/* 80193A7C 0018F8BC  48 00 9F 39 */	bl "Strcmp__Q33hel6common9Traits<c>FPCcPCc"
 /* 80193A80 0018F8C0  7C 60 00 34 */	cntlzw r0, r3
 /* 80193A84 0018F8C4  54 00 D9 7E */	srwi r0, r0, 5
 /* 80193A88 0018F8C8  2C 00 00 00 */	cmpwi r0, 0x0
@@ -260,8 +260,8 @@ lbl_80193AAC:
 /* 80193AB8 0018F8F8  7C 08 03 A6 */	mtlr r0
 /* 80193ABC 0018F8FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80193AC0 0018F900  4E 80 00 20 */	blr
-.global lbl_80193AC4
-lbl_80193AC4:
+.global __ct__Q33g3d17ResFileRepository4NodeFPCcb
+__ct__Q33g3d17ResFileRepository4NodeFPCcb:
 /* 80193AC4 0018F904  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80193AC8 0018F908  7C 08 02 A6 */	mflr r0
 /* 80193ACC 0018F90C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -282,11 +282,11 @@ lbl_80193AF4:
 /* 80193B00 0018F940  7F A3 EB 78 */	mr r3, r29
 /* 80193B04 0018F944  7F C4 F3 78 */	mr r4, r30
 /* 80193B08 0018F948  38 A0 00 50 */	li r5, 0x50
-/* 80193B0C 0018F94C  48 00 9E B1 */	bl lbl_8019D9BC
+/* 80193B0C 0018F94C  48 00 9E B1 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 80193B10 0018F950  38 7D 00 50 */	addi r3, r29, 0x50
 /* 80193B14 0018F954  7F C4 F3 78 */	mr r4, r30
 /* 80193B18 0018F958  7F E5 FB 78 */	mr r5, r31
-/* 80193B1C 0018F95C  4B FF F7 15 */	bl lbl_80193230
+/* 80193B1C 0018F95C  4B FF F7 15 */	bl __ct__Q23g3d7ResFileFPCcb
 /* 80193B20 0018F960  7F A3 EB 78 */	mr r3, r29
 /* 80193B24 0018F964  39 61 00 20 */	addi r11, r1, 0x20
 /* 80193B28 0018F968  4B E7 38 69 */	bl lbl_80007390
@@ -294,8 +294,8 @@ lbl_80193AF4:
 /* 80193B30 0018F970  7C 08 03 A6 */	mtlr r0
 /* 80193B34 0018F974  38 21 00 20 */	addi r1, r1, 0x20
 /* 80193B38 0018F978  4E 80 00 20 */	blr
-.global lbl_80193B3C
-lbl_80193B3C:
+.global __dt__Q33g3d17ResFileRepository4NodeFv
+__dt__Q33g3d17ResFileRepository4NodeFv:
 /* 80193B3C 0018F97C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80193B40 0018F980  7C 08 02 A6 */	mflr r0
 /* 80193B44 0018F984  90 01 00 14 */	stw r0, 0x14(r1)
@@ -307,12 +307,12 @@ lbl_80193B3C:
 /* 80193B5C 0018F99C  41 82 00 24 */	beq lbl_80193B80
 /* 80193B60 0018F9A0  38 63 00 50 */	addi r3, r3, 0x50
 /* 80193B64 0018F9A4  38 80 FF FF */	li r4, -0x1
-/* 80193B68 0018F9A8  4B FF F8 2D */	bl lbl_80193394
+/* 80193B68 0018F9A8  4B FF F8 2D */	bl __dt__Q23g3d7ResFileFv
 /* 80193B6C 0018F9AC  7F E0 07 34 */	extsh r0, r31
 /* 80193B70 0018F9B0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80193B74 0018F9B4  40 81 00 0C */	ble lbl_80193B80
 /* 80193B78 0018F9B8  7F C3 F3 78 */	mr r3, r30
-/* 80193B7C 0018F9BC  48 02 BB 99 */	bl lbl_801BF714
+/* 80193B7C 0018F9BC  48 02 BB 99 */	bl __dl__FPv
 .global lbl_80193B80
 lbl_80193B80:
 /* 80193B80 0018F9C0  7F C3 F3 78 */	mr r3, r30

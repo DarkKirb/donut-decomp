@@ -1,25 +1,25 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407F48
-lbl_80407F48:
+.global bta_dm_action
+bta_dm_action:
 
-	.4byte lbl_800786C4
-	.4byte lbl_800787D4
-	.4byte lbl_80078940
-	.4byte lbl_80078948
-	.4byte lbl_80078990
-	.4byte lbl_80078A00
-	.4byte lbl_80078A9C
-	.4byte lbl_80079FD4
-	.4byte lbl_8007A174
-	.4byte lbl_8007B8A0
-	.4byte lbl_8007B9C0
-	.4byte lbl_8007A90C
-	.4byte lbl_8007A994
+	.4byte bta_dm_enable
+	.4byte bta_dm_disable
+	.4byte bta_dm_set_dev_name
+	.4byte bta_dm_set_visibility
+	.4byte bta_dm_bond
+	.4byte bta_dm_pin_reply
+	.4byte bta_dm_auth_reply
+	.4byte bta_dm_signal_strength
+	.4byte bta_dm_acl_change
+	.4byte bta_dm_pm_btm_status
+	.4byte bta_dm_pm_timer
+	.4byte bta_dm_keep_acl
+	.4byte bta_dm_send_hci_reset
 
-.global lbl_80407F7C
-lbl_80407F7C:
+.global bta_dm_st_table
+bta_dm_st_table:
 
 	.4byte 0x000D0001
 	.4byte 0x0D00020D
@@ -33,30 +33,30 @@ lbl_80407F7C:
 	.4byte 0x0C0D0000
 	.4byte 0
 
-.global lbl_80407FA8
-lbl_80407FA8:
+.global bta_dm_search_action
+bta_dm_search_action:
 
-	.4byte lbl_80078B70
-	.4byte lbl_80078BD0
-	.4byte lbl_80078C54
-	.4byte lbl_80078D68
-	.4byte lbl_80078F8C
-	.4byte lbl_8007915C
-	.4byte lbl_800793C4
-	.4byte lbl_80079500
-	.4byte lbl_800793DC
-	.4byte lbl_8007942C
-	.4byte lbl_80079544
-	.4byte lbl_8007958C
-	.4byte lbl_800795D4
-	.4byte lbl_80079618
-	.4byte lbl_800796B8
-	.4byte lbl_8007965C
-	.4byte lbl_800790F8
-	.4byte lbl_80079BC8
+	.4byte bta_dm_search_start
+	.4byte bta_dm_search_cancel
+	.4byte bta_dm_discover
+	.4byte bta_dm_inq_cmpl
+	.4byte bta_dm_rmt_name
+	.4byte bta_dm_sdp_result
+	.4byte bta_dm_search_cmpl
+	.4byte bta_dm_free_sdp_db
+	.4byte bta_dm_disc_result
+	.4byte bta_dm_search_result
+	.4byte bta_dm_queue_search
+	.4byte bta_dm_queue_disc
+	.4byte bta_dm_search_clear_queue
+	.4byte bta_dm_search_cancel_cmpl
+	.4byte bta_dm_search_cancel_notify
+	.4byte bta_dm_search_cancel_transac_cmpl
+	.4byte bta_dm_disc_rmt_name
+	.4byte bta_dm_cancel_rmt_name
 
-.global lbl_80407FF0
-lbl_80407FF0:
+.global bta_dm_search_idle_st_table
+bta_dm_search_idle_st_table:
 
 	.4byte 0x0012010E
 	.4byte 0x12000212
@@ -66,8 +66,8 @@ lbl_80407FF0:
 	.4byte 0x00121200
 	.4byte 0x12120000
 
-.global lbl_8040800C
-lbl_8040800C:
+.global bta_dm_search_search_active_st_table
+bta_dm_search_search_active_st_table:
 
 	.4byte 0x12120101
 	.4byte 0x12021212
@@ -77,8 +77,8 @@ lbl_8040800C:
 	.4byte 0x01061200
 	.4byte 0x09120100
 
-.global lbl_80408028
-lbl_80408028:
+.global bta_dm_search_search_cancelling_st_table
+bta_dm_search_search_cancelling_st_table:
 
 	.4byte 0x0A12020C
 	.4byte 0x0E020B12
@@ -88,8 +88,8 @@ lbl_80408028:
 	.4byte 0x000D1200
 	.4byte 0x0D120000
 
-.global lbl_80408044
-lbl_80408044:
+.global bta_dm_search_disc_active_st_table
+bta_dm_search_disc_active_st_table:
 
 	.4byte 0x1212030E
 	.4byte 0x12031212
@@ -99,10 +99,10 @@ lbl_80408044:
 	.4byte 0x03121200
 	.4byte 0x08120300
 
-.global lbl_80408060
-lbl_80408060:
+.global bta_dm_search_st_tbl
+bta_dm_search_st_tbl:
 
-	.4byte lbl_80407FF0
-	.4byte lbl_8040800C
-	.4byte lbl_80408028
-	.4byte lbl_80408044
+	.4byte bta_dm_search_idle_st_table
+	.4byte bta_dm_search_search_active_st_table
+	.4byte bta_dm_search_search_cancelling_st_table
+	.4byte bta_dm_search_disc_active_st_table

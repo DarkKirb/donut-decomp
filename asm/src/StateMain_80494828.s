@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80494828
-lbl_80494828:
+.global __vt__Q53scn4step6weapon8wingshot9StateMain
+__vt__Q53scn4step6weapon8wingshot9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E5DA8
-	.4byte lbl_803E5DAC
-	.4byte lbl_803E5E8C
-	.4byte lbl_803D895C
-	.4byte lbl_803E5EE0
-	.4byte lbl_803E5EE4
+	.4byte __dt__Q53scn4step6weapon8wingshot9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon8wingshot9StateMainFv
+	.4byte procMove__Q53scn4step6weapon8wingshot9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon8wingshot9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon8wingshot9StateMainFv
 
-.global lbl_80494848
-lbl_80494848:
+.global __vt__Q53scn4step6weapon13wingshockwave9StateMain
+__vt__Q53scn4step6weapon13wingshockwave9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E6080
-	.4byte lbl_803E6084
-	.4byte lbl_803E6164
-	.4byte lbl_803D895C
-	.4byte lbl_803E61C8
-	.4byte lbl_803E61CC
+	.4byte __dt__Q53scn4step6weapon13wingshockwave9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon13wingshockwave9StateMainFv
+	.4byte procMove__Q53scn4step6weapon13wingshockwave9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon13wingshockwave9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon13wingshockwave9StateMainFv

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803C8FDC
-lbl_803C8FDC:
+.global toMaproPos__Q43scn4step3map11BinMaproPosCFv
+toMaproPos__Q43scn4step3map11BinMaproPosCFv:
 /* 803C8FDC 003C4E1C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803C8FE0 003C4E20  7C 08 02 A6 */	mflr r0
 /* 803C8FE4 003C4E24  90 01 00 14 */	stw r0, 0x14(r1)
@@ -10,7 +10,7 @@ lbl_803C8FDC:
 /* 803C8FEC 003C4E2C  38 61 00 08 */	addi r3, r1, 0x8
 /* 803C8FF0 003C4E30  80 85 00 00 */	lwz r4, 0x0(r5)
 /* 803C8FF4 003C4E34  80 A5 00 04 */	lwz r5, 0x4(r5)
-/* 803C8FF8 003C4E38  4B DA BD 41 */	bl lbl_80174D38
+/* 803C8FF8 003C4E38  4B DA BD 41 */	bl __ct__Q33hel6common15RuntimeTypeInfoFPCQ33hel6common15RuntimeTypeInfoPCc
 /* 803C8FFC 003C4E3C  7C 64 1B 78 */	mr r4, r3
 /* 803C9000 003C4E40  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803C9004 003C4E44  80 84 00 04 */	lwz r4, 0x4(r4)

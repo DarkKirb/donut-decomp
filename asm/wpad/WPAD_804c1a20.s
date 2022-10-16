@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804C1A20
-lbl_804C1A20:
+.global _wpadManageAlarm
+_wpadManageAlarm:
 	.skip 0x30
 
-.global lbl_804C1A50
-lbl_804C1A50:
+.global __rvl_p_wpadcb
+__rvl_p_wpadcb:
 	.skip 0x10
 
-.global lbl_804C1A60
-lbl_804C1A60:
+.global __wpadManageHandlerStack
+__wpadManageHandlerStack:
 	.skip 0x1000
 
-.global lbl_804C2A60
-lbl_804C2A60:
+.global _wpadHandle2PortTable
+_wpadHandle2PortTable:
 	.skip 0x2FA0

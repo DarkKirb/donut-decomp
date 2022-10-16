@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801F7D10
-lbl_801F7D10:
+.global __ct__Q43scn17challengetutorial4info19AbilityPanelContextFRQ23lyt6LayoutPCcRQ23mem10IAllocator
+__ct__Q43scn17challengetutorial4info19AbilityPanelContextFRQ23lyt6LayoutPCcRQ23mem10IAllocator:
 /* 801F7D10 001F3B50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F7D14 001F3B54  7C 08 02 A6 */	mflr r0
 /* 801F7D18 001F3B58  90 01 00 14 */	stw r0, 0x14(r1)
@@ -23,7 +23,7 @@ lbl_801F7D40:
 /* 801F7D4C 001F3B8C  38 63 00 04 */	addi r3, r3, 0x4
 /* 801F7D50 001F3B90  7C A4 2B 78 */	mr r4, r5
 /* 801F7D54 001F3B94  38 A0 00 20 */	li r5, 0x20
-/* 801F7D58 001F3B98  4B FA 5C 65 */	bl lbl_8019D9BC
+/* 801F7D58 001F3B98  4B FA 5C 65 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801F7D5C 001F3B9C  93 FE 00 24 */	stw r31, 0x24(r30)
 /* 801F7D60 001F3BA0  7F C3 F3 78 */	mr r3, r30
 /* 801F7D64 001F3BA4  83 E1 00 0C */	lwz r31, 0xc(r1)

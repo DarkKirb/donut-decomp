@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80419D00
-lbl_80419D00:
+.global "T_ALPHA_TABLE__19@unnamed@Guard_cpp@"
+"T_ALPHA_TABLE__19@unnamed@Guard_cpp@":
 
 	.4byte 0x000000C0
 	.4byte 0x000000C0

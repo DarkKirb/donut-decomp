@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80417A60
-lbl_80417A60:
+.global "T_ENTRIES__Q43scn4step4core31@unnamed@DrawLayerKindUtil_cpp@"
+"T_ENTRIES__Q43scn4step4core31@unnamed@DrawLayerKindUtil_cpp@":
 
 	.4byte 0x00000001
 	.4byte 0x00000010

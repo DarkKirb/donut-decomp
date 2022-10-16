@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80543088
-lbl_80543088:
+.global sFrameBufferInfo__Q24nw4r2db
+sFrameBufferInfo__Q24nw4r2db:
 	.skip 0x10
 
-.global lbl_80543098
-lbl_80543098:
+.global sFrameBufferColor__Q24nw4r2db
+sFrameBufferColor__Q24nw4r2db:
 	.skip 0x18

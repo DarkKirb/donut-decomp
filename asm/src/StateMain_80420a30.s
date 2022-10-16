@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420A30
-lbl_80420A30:
+.global "ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A30"
+"ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A30":
 
 	.4byte 0x0000015E
 	.4byte 0x0000016A
 	.4byte 0x00000177
 	.4byte 0x0000017A
 
-.global lbl_80420A40
-lbl_80420A40:
+.global "ATTACK_SUB_TYPE_TABLE__23@unnamed@StateMain_cpp@"
+"ATTACK_SUB_TYPE_TABLE__23@unnamed@StateMain_cpp@":
 
 	.4byte 0x00000176
 	.4byte 0x00000176
 	.4byte 0x0000017D
 	.4byte 0x0000017D
 
-.global lbl_80420A50
-lbl_80420A50:
+.global "ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A50"
+"ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A50":
 
 	.4byte 0x0000015F
 	.4byte 0x0000016B
 	.4byte 0x00000178
 	.4byte 0x0000017B
 
-.global lbl_80420A60
-lbl_80420A60:
+.global "ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A60"
+"ATTACK_TYPE_TABLE__23@unnamed@StateMain_cpp@_80420A60":
 
 	.4byte 0x00000160
 	.4byte 0x0000016C

@@ -1,74 +1,74 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CB90
-lbl_8055CB90:
+.global __AXAuxCpuReadWritePosition
+__AXAuxCpuReadWritePosition:
 	.skip 0x4
 
-.global lbl_8055CB94
-lbl_8055CB94:
+.global __AXAuxDspReadPosition
+__AXAuxDspReadPosition:
 	.skip 0x4
 
-.global lbl_8055CB98
-lbl_8055CB98:
+.global __AXAuxDspWritePosition
+__AXAuxDspWritePosition:
 	.skip 0x4
 
-.global lbl_8055CB9C
-lbl_8055CB9C:
+.global __AXAuxCDspRead
+__AXAuxCDspRead:
 	.skip 0x4
 
-.global lbl_8055CBA0
-lbl_8055CBA0:
+.global __AXAuxCDspWrite
+__AXAuxCDspWrite:
 	.skip 0x4
 
-.global lbl_8055CBA4
-lbl_8055CBA4:
+.global __AXAuxBDspRead
+__AXAuxBDspRead:
 	.skip 0x4
 
-.global lbl_8055CBA8
-lbl_8055CBA8:
+.global __AXAuxBDspWrite
+__AXAuxBDspWrite:
 	.skip 0x4
 
-.global lbl_8055CBAC
-lbl_8055CBAC:
+.global __AXAuxADspRead
+__AXAuxADspRead:
 	.skip 0x4
 
-.global lbl_8055CBB0
-lbl_8055CBB0:
+.global __AXAuxADspWrite
+__AXAuxADspWrite:
 	.skip 0x4
 
-.global lbl_8055CBB4
-lbl_8055CBB4:
+.global __AXContextAuxC
+__AXContextAuxC:
 	.skip 0x4
 
-.global lbl_8055CBB8
-lbl_8055CBB8:
+.global __AXContextAuxB
+__AXContextAuxB:
 	.skip 0x4
 
-.global lbl_8055CBBC
-lbl_8055CBBC:
+.global __AXContextAuxA
+__AXContextAuxA:
 	.skip 0x4
 
-.global lbl_8055CBC0
-lbl_8055CBC0:
+.global __AXCallbackAuxC
+__AXCallbackAuxC:
 	.skip 0x4
 
-.global lbl_8055CBC4
-lbl_8055CBC4:
+.global __AXCallbackAuxB
+__AXCallbackAuxB:
 	.skip 0x4
 
-.global lbl_8055CBC8
-lbl_8055CBC8:
+.global __AXCallbackAuxA
+__AXCallbackAuxA:
 	.skip 0x4
 
-.global lbl_8055CBCC
-lbl_8055CBCC:
+.global __clearAuxC
+__clearAuxC:
 	.skip 0x4
 
-.global lbl_8055CBD0
-lbl_8055CBD0:
+.global __clearAuxB
+__clearAuxB:
 	.skip 0x4
 
-.global lbl_8055CBD4
-lbl_8055CBD4:
+.global __clearAuxA
+__clearAuxA:
 	.skip 0x4

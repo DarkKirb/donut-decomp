@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80273ED4
-lbl_80273ED4:
+.global lightInfo__Q43scn4step4core16AreaLightManagerCFRCQ33hel4math7Vector2
+lightInfo__Q43scn4step4core16AreaLightManagerCFRCQ33hel4math7Vector2:
 /* 80273ED4 0026FD14  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80273ED8 0026FD18  7C 08 02 A6 */	mflr r0
 /* 80273EDC 0026FD1C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -11,31 +11,31 @@ lbl_80273ED4:
 /* 80273EE8 0026FD28  7C 7D 1B 78 */	mr r29, r3
 /* 80273EEC 0026FD2C  7C 9E 23 78 */	mr r30, r4
 /* 80273EF0 0026FD30  7C BF 2B 78 */	mr r31, r5
-/* 80273EF4 0026FD34  4B FF FC D5 */	bl lbl_80273BC8
+/* 80273EF4 0026FD34  4B FF FC D5 */	bl __ct__Q43scn4step4core13AreaLightInfoFv
 /* 80273EF8 0026FD38  7F C3 F3 78 */	mr r3, r30
 /* 80273EFC 0026FD3C  7F A4 EB 78 */	mr r4, r29
 /* 80273F00 0026FD40  7F E5 FB 78 */	mr r5, r31
-/* 80273F04 0026FD44  48 00 00 45 */	bl lbl_80273F48
+/* 80273F04 0026FD44  48 00 00 45 */	bl setupDirectional__Q43scn4step4core16AreaLightManagerCFRQ43scn4step4core13AreaLightInfoRCQ33hel4math7Vector2
 /* 80273F08 0026FD48  39 61 00 20 */	addi r11, r1, 0x20
 /* 80273F0C 0026FD4C  4B D9 34 85 */	bl lbl_80007390
 /* 80273F10 0026FD50  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80273F14 0026FD54  7C 08 03 A6 */	mtlr r0
 /* 80273F18 0026FD58  38 21 00 20 */	addi r1, r1, 0x20
 /* 80273F1C 0026FD5C  4E 80 00 20 */	blr
-.global lbl_80273F20
-lbl_80273F20:
+.global isNeedToUpdateEveryFrame__Q43scn4step4core16AreaLightManagerCFv
+isNeedToUpdateEveryFrame__Q43scn4step4core16AreaLightManagerCFv:
 /* 80273F20 0026FD60  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80273F24 0026FD64  7C 08 02 A6 */	mflr r0
 /* 80273F28 0026FD68  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80273F2C 0026FD6C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80273F30 0026FD70  4B FA CD 91 */	bl lbl_80220CC0
-/* 80273F34 0026FD74  4B FB 37 6D */	bl lbl_802276A0
+/* 80273F30 0026FD70  4B FA CD 91 */	bl mapDecorationManager__Q33scn4step9ComponentFv
+/* 80273F34 0026FD74  4B FB 37 6D */	bl isNeedToUpdateAreaLightEveryFrame__Q43scn4step2bg7ManagerCFv
 /* 80273F38 0026FD78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80273F3C 0026FD7C  7C 08 03 A6 */	mtlr r0
 /* 80273F40 0026FD80  38 21 00 10 */	addi r1, r1, 0x10
 /* 80273F44 0026FD84  4E 80 00 20 */	blr
-.global lbl_80273F48
-lbl_80273F48:
+.global setupDirectional__Q43scn4step4core16AreaLightManagerCFRQ43scn4step4core13AreaLightInfoRCQ33hel4math7Vector2
+setupDirectional__Q43scn4step4core16AreaLightManagerCFRQ43scn4step4core13AreaLightInfoRCQ33hel4math7Vector2:
 /* 80273F48 0026FD88  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 80273F4C 0026FD8C  7C 08 02 A6 */	mflr r0
 /* 80273F50 0026FD90  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -44,11 +44,11 @@ lbl_80273F48:
 /* 80273F5C 0026FD9C  7C 9F 23 78 */	mr r31, r4
 /* 80273F60 0026FDA0  7C BE 2B 78 */	mr r30, r5
 /* 80273F64 0026FDA4  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80273F68 0026FDA8  4B FA CD 59 */	bl lbl_80220CC0
+/* 80273F68 0026FDA8  4B FA CD 59 */	bl mapDecorationManager__Q33scn4step9ComponentFv
 /* 80273F6C 0026FDAC  7C 64 1B 78 */	mr r4, r3
 /* 80273F70 0026FDB0  38 61 00 08 */	addi r3, r1, 0x8
 /* 80273F74 0026FDB4  7F C5 F3 78 */	mr r5, r30
-/* 80273F78 0026FDB8  4B FB 37 21 */	bl lbl_80227698
+/* 80273F78 0026FDB8  4B FB 37 21 */	bl areaLightInfo__Q43scn4step2bg7ManagerCFRCQ33hel4math7Vector2
 /* 80273F7C 0026FDBC  80 61 00 08 */	lwz r3, 0x8(r1)
 /* 80273F80 0026FDC0  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80273F84 0026FDC4  90 7F 00 00 */	stw r3, 0x0(r31)

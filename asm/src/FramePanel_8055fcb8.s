@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_8055FCB8
-lbl_8055FCB8:
+.global "T_MOVE_NODE__Q25pause24@unnamed@FramePanel_cpp@"
+"T_MOVE_NODE__Q25pause24@unnamed@FramePanel_cpp@":
 
-	.4byte lbl_805576A0
+	.4byte "@51724_805576A0"
 
-.global lbl_8055FCBC
-lbl_8055FCBC:
+.global "T_FIX_NODE__Q25pause24@unnamed@FramePanel_cpp@"
+"T_FIX_NODE__Q25pause24@unnamed@FramePanel_cpp@":
 
-	.4byte lbl_8045D4A8
+	.4byte "@51725_8045D4A8"

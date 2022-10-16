@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804789F0
-lbl_804789F0:
+.global __vt__Q53scn4step5enemy10knucklejoe17StateWalkStepBack
+__vt__Q53scn4step5enemy10knucklejoe17StateWalkStepBack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C1280
-	.4byte lbl_802C12FC
-	.4byte lbl_802C1484
-	.4byte lbl_8028DDE0
-	.4byte lbl_802C1570
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy10knucklejoe17StateWalkStepBackFv
+	.4byte procAnim__Q53scn4step5enemy10knucklejoe17StateWalkStepBackFv
+	.4byte procMove__Q53scn4step5enemy10knucklejoe17StateWalkStepBackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10knucklejoe17StateWalkStepBackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

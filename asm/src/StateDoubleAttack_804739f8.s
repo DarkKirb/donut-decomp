@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804739F8
-lbl_804739F8:
+.global __vt__Q53scn4step5enemy11bladeknight17StateDoubleAttack
+__vt__Q53scn4step5enemy11bladeknight17StateDoubleAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80297950
-	.4byte lbl_80297954
-	.4byte lbl_80297A40
-	.4byte lbl_8028DDE0
-	.4byte lbl_80297B34
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.4byte procAnim__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.4byte procMove__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11bladeknight17StateDoubleAttackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

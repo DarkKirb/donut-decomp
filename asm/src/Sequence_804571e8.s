@@ -1,87 +1,87 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804571E8
-lbl_804571E8:
+.global "@55949"
+"@55949":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A67CC
+	.4byte reset__Q34info8sequence7CommandFv
 
-.global lbl_804571F4
-lbl_804571F4:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801A7018
-	.4byte lbl_801A696C
-	.4byte lbl_801A6924
-
-.global lbl_80457208
-lbl_80457208:
+.global __vt__Q34info8sequence11CommandWait
+__vt__Q34info8sequence11CommandWait:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A6FAC
-	.4byte lbl_801A6914
-	.4byte lbl_801A6974
+	.4byte __dt__Q34info8sequence11CommandWaitFv
+	.4byte start__Q34info8sequence11CommandWaitFv
+	.4byte proc__Q34info8sequence11CommandWaitFv
 
-.global lbl_8045721C
-lbl_8045721C:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801A6F34
-	.4byte lbl_801A6ACC
-	.4byte lbl_801A6A00
-
-.global lbl_80457230
-lbl_80457230:
+.global __vt__Q34info8sequence11CommandProc
+__vt__Q34info8sequence11CommandProc:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A6EC8
-	.4byte lbl_801A6B24
-	.4byte lbl_801A5C68
+	.4byte __dt__Q34info8sequence11CommandProcFv
+	.4byte start__Q34info8sequence7CommandFv
+	.4byte proc__Q34info8sequence11CommandProcFv
 
-.global lbl_80457244
-lbl_80457244:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801A649C
-	.4byte lbl_801A6C08
-	.4byte lbl_801A6C10
-
-.global lbl_80457258
-lbl_80457258:
+.global __vt__Q34info8sequence15CommandInterval
+__vt__Q34info8sequence15CommandInterval:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A6080
-	.4byte lbl_801A6C14
-	.4byte lbl_801A6C18
+	.4byte __dt__Q34info8sequence15CommandIntervalFv
+	.4byte start__Q34info8sequence15CommandIntervalFv
+	.4byte proc__Q34info8sequence15CommandIntervalFv
 
-.global lbl_8045726C
-lbl_8045726C:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801A6BAC
-	.4byte lbl_801A6B9C
-	.4byte lbl_801A6B5C
-
-.global lbl_80457280
-lbl_80457280:
+.global __vt__Q34info8sequence11CommandCall
+__vt__Q34info8sequence11CommandCall:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A5DAC
-	.4byte lbl_801A6914
-	.4byte lbl_801A5C68
+	.4byte __dt__Q34info8sequence11CommandCallFv
+	.4byte start__Q34info8sequence11CommandCallFv
+	.4byte proc__Q34info8sequence7CommandFv
 
-.global lbl_80457294
-lbl_80457294:
+.global "__vt__Q34util17Delegate<Fv_v,64>12DelegateHeap"
+"__vt__Q34util17Delegate<Fv_v,64>12DelegateHeap":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q34util17Delegate<Fv_v,64>12DelegateHeapFv"
+	.4byte "allocatorAlloc__Q34util17Delegate<Fv_v,64>12DelegateHeapFUll"
+	.4byte "allocatorFree__Q34util17Delegate<Fv_v,64>12DelegateHeapFPv"
+
+.global "__vt__Q34util17Delegate<Fv_b,64>12DelegateHeap"
+"__vt__Q34util17Delegate<Fv_b,64>12DelegateHeap":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q34util17Delegate<Fv_b,64>12DelegateHeapFv"
+	.4byte "allocatorAlloc__Q34util17Delegate<Fv_b,64>12DelegateHeapFUll"
+	.4byte "allocatorFree__Q34util17Delegate<Fv_b,64>12DelegateHeapFPv"
+
+.global __vt__Q34info8sequence11CommandAnim
+__vt__Q34info8sequence11CommandAnim:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34info8sequence11CommandAnimFv
+	.4byte start__Q34info8sequence11CommandAnimFv
+	.4byte proc__Q34info8sequence11CommandAnimFv
+
+.global __vt__Q34info8sequence7Command
+__vt__Q34info8sequence7Command:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34info8sequence7CommandFv
+	.4byte start__Q34info8sequence7CommandFv
+	.4byte proc__Q34info8sequence7CommandFv
+
+.global "@56161_80457294"
+"@56161_80457294":
 
 	.4byte 0x6261645F
 	.4byte 0x66756E63

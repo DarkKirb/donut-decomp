@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80430F78
-lbl_80430F78:
+.global TEVCOpTableST0
+TEVCOpTableST0:
 
 	.4byte 0xC008F8AF
 	.4byte 0xC008A89F
@@ -25,8 +25,8 @@ lbl_80430F78:
 	.4byte 0xC108FFC0
 	.4byte 0xC108FF80
 
-.global lbl_80430FC8
-lbl_80430FC8:
+.global "@LOCAL@GXSetTevOrder__F13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID@c2r"
+"@LOCAL@GXSetTevOrder__F13_GXTevStageID13_GXTexCoordID11_GXTexMapID12_GXChannelID@c2r":
 
 	.4byte 0
 	.4byte 0x00000001

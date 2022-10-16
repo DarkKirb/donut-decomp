@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048C9A0
-lbl_8048C9A0:
+.global "__vt__Q24util150StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre,PQ43scn4step4hero4Hero,Q53scn4step7gimmick13challengedoor6Result>"
+"__vt__Q24util150StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre,PQ43scn4step4hero4Hero,Q53scn4step7gimmick13challengedoor6Result>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8037CF78
-	.4byte lbl_8037CF58
+	.4byte "__dt__Q24util150StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre,PQ43scn4step4hero4Hero,Q53scn4step7gimmick13challengedoor6Result>Fv"
+	.4byte "create__Q24util150StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre,PQ43scn4step4hero4Hero,Q53scn4step7gimmick13challengedoor6Result>Fv"
 
-.global lbl_8048C9B0
-lbl_8048C9B0:
+.global __vt__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre
+__vt__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPre:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8037CA5C
-	.4byte lbl_8037CAE0
-	.4byte lbl_8037CB78
-	.4byte lbl_8035550C
-	.4byte lbl_8037CB7C
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFv
+	.4byte procAnim__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFv
+	.4byte procMove__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800CF940
-lbl_800CF940:
+.global "SearchFrame__Q34nw4r3g3d30@unnamed@g3d_resanmtexpat_cpp@FPCQ34nw4r3g3d19ResAnmTexPatAnmDataf"
+"SearchFrame__Q34nw4r3g3d30@unnamed@g3d_resanmtexpat_cpp@FPCQ34nw4r3g3d19ResAnmTexPatAnmDataf":
 /* 800CF940 000CB780  A0 A3 00 00 */	lhz r5, 0x0(r3)
 /* 800CF944 000CB784  38 C3 00 08 */	addi r6, r3, 0x8
 /* 800CF948 000CB788  C0 43 00 08 */	lfs f2, 0x8(r3)
@@ -65,8 +65,8 @@ lbl_800CF9FC:
 /* 800CFA04 000CB844  00 00 00 00 */	.4byte 0x00000000
 /* 800CFA08 000CB848  00 00 00 00 */	.4byte 0x00000000
 /* 800CFA0C 000CB84C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CFA10
-lbl_800CFA10:
+.global GetAnmResult__Q34nw4r3g3d12ResAnmTexPatCFPQ34nw4r3g3d15TexPatAnmResultUlf
+GetAnmResult__Q34nw4r3g3d12ResAnmTexPatCFPQ34nw4r3g3d15TexPatAnmResultUlf:
 /* 800CFA10 000CB850  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800CFA14 000CB854  7C 08 02 A6 */	mflr r0
 /* 800CFA18 000CB858  90 01 00 44 */	stw r0, 0x44(r1)
@@ -148,7 +148,7 @@ lbl_800CFAF0:
 /* 800CFAF0 000CB930  80 1A 00 00 */	lwz r0, 0x0(r26)
 /* 800CFAF4 000CB934  FC 20 F8 90 */	fmr f1, f31
 /* 800CFAF8 000CB938  7C 60 F2 14 */	add r3, r0, r30
-/* 800CFAFC 000CB93C  4B FF FE 45 */	bl lbl_800CF940
+/* 800CFAFC 000CB93C  4B FF FE 45 */	bl "SearchFrame__Q34nw4r3g3d30@unnamed@g3d_resanmtexpat_cpp@FPCQ34nw4r3g3d19ResAnmTexPatAnmDataf"
 /* 800CFB00 000CB940  A0 83 00 04 */	lhz r4, 0x4(r3)
 /* 800CFB04 000CB944  A0 A3 00 06 */	lhz r5, 0x6(r3)
 .global lbl_800CFB08
@@ -197,8 +197,8 @@ lbl_800CFB68:
 /* 800CFB94 000CB9D4  4E 80 00 20 */	blr
 /* 800CFB98 000CB9D8  00 00 00 00 */	.4byte 0x00000000
 /* 800CFB9C 000CB9DC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CFBA0
-lbl_800CFBA0:
+.global Bind__Q34nw4r3g3d12ResAnmTexPatFQ34nw4r3g3d7ResFile
+Bind__Q34nw4r3g3d12ResAnmTexPatFQ34nw4r3g3d7ResFile:
 /* 800CFBA0 000CB9E0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800CFBA4 000CB9E4  7C 08 02 A6 */	mflr r0
 /* 800CFBA8 000CB9E8  90 01 00 44 */	stw r0, 0x44(r1)
@@ -267,7 +267,7 @@ lbl_800CFC48:
 /* 800CFC54 000CBA94  7C BB 02 14 */	add r5, r27, r0
 /* 800CFC58 000CBA98  38 05 FF FC */	addi r0, r5, -0x4
 /* 800CFC5C 000CBA9C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800CFC60 000CBAA0  4B FF 95 11 */	bl lbl_800C9170
+/* 800CFC60 000CBAA0  4B FF 95 11 */	bl GetResTex__Q34nw4r3g3d7ResFileCFQ34nw4r3g3d7ResName
 /* 800CFC64 000CBAA4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800CFC68 000CBAA8  41 82 00 0C */	beq lbl_800CFC74
 /* 800CFC6C 000CBAAC  90 78 00 00 */	stw r3, 0x0(r24)
@@ -299,7 +299,7 @@ lbl_800CFCA8:
 /* 800CFCB4 000CBAF4  7C BA 02 14 */	add r5, r26, r0
 /* 800CFCB8 000CBAF8  38 05 FF FC */	addi r0, r5, -0x4
 /* 800CFCBC 000CBAFC  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800CFCC0 000CBB00  4B FF 94 31 */	bl lbl_800C90F0
+/* 800CFCC0 000CBB00  4B FF 94 31 */	bl GetResPltt__Q34nw4r3g3d7ResFileCFQ34nw4r3g3d7ResName
 /* 800CFCC4 000CBB04  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800CFCC8 000CBB08  41 82 00 0C */	beq lbl_800CFCD4
 /* 800CFCCC 000CBB0C  90 79 00 00 */	stw r3, 0x0(r25)
@@ -323,8 +323,8 @@ lbl_800CFCE0:
 /* 800CFD04 000CBB44  7C 08 03 A6 */	mtlr r0
 /* 800CFD08 000CBB48  38 21 00 40 */	addi r1, r1, 0x40
 /* 800CFD0C 000CBB4C  4E 80 00 20 */	blr
-.global lbl_800CFD10
-lbl_800CFD10:
+.global Release__Q34nw4r3g3d12ResAnmTexPatFv
+Release__Q34nw4r3g3d12ResAnmTexPatFv:
 /* 800CFD10 000CBB50  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 800CFD14 000CBB54  80 04 00 1C */	lwz r0, 0x1c(r4)
 /* 800CFD18 000CBB58  A1 24 00 34 */	lhz r9, 0x34(r4)

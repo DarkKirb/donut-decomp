@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CBD8
-lbl_8055CBD8:
+.global __AXAuxCVolume
+__AXAuxCVolume:
 	.skip 0x2
 
-.global lbl_8055CBDA
-lbl_8055CBDA:
+.global __AXAuxBVolume
+__AXAuxBVolume:
 	.skip 0x2
 
-.global lbl_8055CBDC
-lbl_8055CBDC:
+.global __AXAuxAVolume
+__AXAuxAVolume:
 	.skip 0x2
 
-.global lbl_8055CBDE
-lbl_8055CBDE:
+.global __AXMasterVolume
+__AXMasterVolume:
 	.skip 0x2
 
-.global lbl_8055CBE0
-lbl_8055CBE0:
+.global __AXCompressorReleaseFrames
+__AXCompressorReleaseFrames:
 	.skip 0x4
 
-.global lbl_8055CBE4
-lbl_8055CBE4:
+.global __AXCompressorTable
+__AXCompressorTable:
 	.skip 0x4
 
-.global lbl_8055CBE8
-lbl_8055CBE8:
+.global __AXCompressor
+__AXCompressor:
 	.skip 0x4
 
-.global lbl_8055CBEC
-lbl_8055CBEC:
+.global __AXCommandListCycles
+__AXCommandListCycles:
 	.skip 0x4
 
-.global lbl_8055CBF0
-lbl_8055CBF0:
+.global __AXClMode
+__AXClMode:
 	.skip 0x4
 
-.global lbl_8055CBF4
-lbl_8055CBF4:
+.global __AXClWrite
+__AXClWrite:
 	.skip 0x4
 
-.global lbl_8055CBF8
-lbl_8055CBF8:
+.global __AXCommandListPosition
+__AXCommandListPosition:
 	.skip 0x8

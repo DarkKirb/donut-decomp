@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80477318
-lbl_80477318:
+.global "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"
+"T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@":
 
-	.4byte lbl_80559AE0
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AF0
-	.4byte lbl_80559AF8
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AE8
-	.4byte lbl_80559B00
-	.4byte lbl_80559B08
+	.4byte "@50122_80559AE0"
+	.4byte "@50123_80559AE8"
+	.4byte "@50124_80559AF0"
+	.4byte "@50125_80559AF8"
+	.4byte "@50123_80559AE8"
+	.4byte "@50123_80559AE8"
+	.4byte "@50123_80559AE8"
+	.4byte "@50126_80559B00"
+	.4byte "@50127_80559B08"
 
-.global lbl_8047733C
-lbl_8047733C:
+.global "@50129_8047733C"
+"@50129_8047733C":
 
 	.4byte 0x45666665
 	.4byte 0x6374314C
 	.4byte 0
-	.4byte lbl_80559AE0
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AF0
-	.4byte lbl_80559AF8
-	.4byte lbl_8047733C
-	.4byte lbl_80559B10
-	.4byte lbl_80559B18
-	.4byte lbl_80559B00
-	.4byte lbl_80559B08
-	.4byte lbl_80559AE0
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AF0
-	.4byte lbl_80559AF8
-	.4byte lbl_80559AE8
-	.4byte lbl_80559AE8
-	.4byte lbl_80559B18
-	.4byte lbl_80559B20
-	.4byte lbl_80559B20
+	.4byte "@50122_80559AE0"
+	.4byte "@50123_80559AE8"
+	.4byte "@50124_80559AF0"
+	.4byte "@50125_80559AF8"
+	.4byte "@50129_8047733C"
+	.4byte "@50130_80559B10"
+	.4byte "@50131_80559B18"
+	.4byte "@50126_80559B00"
+	.4byte "@50127_80559B08"
+	.4byte "@50122_80559AE0"
+	.4byte "@50123_80559AE8"
+	.4byte "@50124_80559AF0"
+	.4byte "@50125_80559AF8"
+	.4byte "@50123_80559AE8"
+	.4byte "@50123_80559AE8"
+	.4byte "@50131_80559B18"
+	.4byte "@50133_80559B20"
+	.4byte "@50133_80559B20"
 
-.global lbl_80477390
-lbl_80477390:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0

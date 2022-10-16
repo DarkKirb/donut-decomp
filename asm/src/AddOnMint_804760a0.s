@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804760A0
-lbl_804760A0:
+.global "@55902_804760A0"
+"@55902_804760A0":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -35,29 +35,29 @@ lbl_804760A0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80476118
-lbl_80476118:
+.global "__vt__Q24util96StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateBack,PQ43scn4step5enemy5Enemy,f>"
+"__vt__Q24util96StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateBack,PQ43scn4step5enemy5Enemy,f>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802ADEE4
-	.4byte lbl_802ADE9C
+	.4byte "__dt__Q24util96StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateBack,PQ43scn4step5enemy5Enemy,f>Fv"
+	.4byte "create__Q24util96StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateBack,PQ43scn4step5enemy5Enemy,f>Fv"
 
-.global lbl_80476128
-lbl_80476128:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802ADEE0
-	.4byte lbl_802ADE78
-
-.global lbl_80476138
-lbl_80476138:
+.global "__vt__Q24util98StateFactoryArg3<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateMove,PQ43scn4step5enemy5Enemy,f,f>"
+"__vt__Q24util98StateFactoryArg3<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateMove,PQ43scn4step5enemy5Enemy,f,f>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802ADEDC
-	.4byte lbl_802ADEBC
+	.4byte "__dt__Q24util98StateFactoryArg3<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateMove,PQ43scn4step5enemy5Enemy,f,f>Fv"
+	.4byte "create__Q24util98StateFactoryArg3<Q24util6IState,Q53scn4step5enemy8dubiorjr9StateMove,PQ43scn4step5enemy5Enemy,f,f>Fv"
+
+.global "__vt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr8StateFly,PQ43scn4step5enemy5Enemy,f>"
+"__vt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr8StateFly,PQ43scn4step5enemy5Enemy,f>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr8StateFly,PQ43scn4step5enemy5Enemy,f>Fv"
+	.4byte "create__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step5enemy8dubiorjr8StateFly,PQ43scn4step5enemy5Enemy,f>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801CDDB8
-lbl_801CDDB8:
+.global offsetOf__Q26mintvm14VMVariableListCFRCQ26mintvm6VMCorei
+offsetOf__Q26mintvm14VMVariableListCFRCQ26mintvm6VMCorei:
 /* 801CDDB8 001C9BF8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CDDBC 001C9BFC  7C 08 02 A6 */	mflr r0
 /* 801CDDC0 001C9C00  90 01 00 24 */	stw r0, 0x24(r1)
@@ -23,20 +23,20 @@ lbl_801CDDEC:
 .global lbl_801CDDF4
 lbl_801CDDF4:
 /* 801CDDF4 001C9C34  38 85 FF FF */	addi r4, r5, -0x1
-/* 801CDDF8 001C9C38  48 00 00 4D */	bl lbl_801CDE44
+/* 801CDDF8 001C9C38  48 00 00 4D */	bl variable__Q26mintvm14VMVariableListCFUi
 /* 801CDDFC 001C9C3C  7F A4 EB 78 */	mr r4, r29
-/* 801CDE00 001C9C40  4B FF FF A9 */	bl lbl_801CDDA8
+/* 801CDE00 001C9C40  4B FF FF A9 */	bl sizeOf__Q26mintvm10VMVariableCFRCQ26mintvm6VMCore
 /* 801CDE04 001C9C44  48 00 00 28 */	b lbl_801CDE2C
 .global lbl_801CDE08
 lbl_801CDE08:
 /* 801CDE08 001C9C48  38 A5 FF FF */	addi r5, r5, -0x1
-/* 801CDE0C 001C9C4C  4B FF FF AD */	bl lbl_801CDDB8
+/* 801CDE0C 001C9C4C  4B FF FF AD */	bl offsetOf__Q26mintvm14VMVariableListCFRCQ26mintvm6VMCorei
 /* 801CDE10 001C9C50  7C 7F 1B 78 */	mr r31, r3
 /* 801CDE14 001C9C54  7F 83 E3 78 */	mr r3, r28
 /* 801CDE18 001C9C58  38 9E FF FF */	addi r4, r30, -0x1
-/* 801CDE1C 001C9C5C  48 00 00 29 */	bl lbl_801CDE44
+/* 801CDE1C 001C9C5C  48 00 00 29 */	bl variable__Q26mintvm14VMVariableListCFUi
 /* 801CDE20 001C9C60  7F A4 EB 78 */	mr r4, r29
-/* 801CDE24 001C9C64  4B FF FF 85 */	bl lbl_801CDDA8
+/* 801CDE24 001C9C64  4B FF FF 85 */	bl sizeOf__Q26mintvm10VMVariableCFRCQ26mintvm6VMCore
 /* 801CDE28 001C9C68  7C 63 FA 14 */	add r3, r3, r31
 .global lbl_801CDE2C
 lbl_801CDE2C:
@@ -46,8 +46,8 @@ lbl_801CDE2C:
 /* 801CDE38 001C9C78  7C 08 03 A6 */	mtlr r0
 /* 801CDE3C 001C9C7C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CDE40 001C9C80  4E 80 00 20 */	blr
-.global lbl_801CDE44
-lbl_801CDE44:
+.global variable__Q26mintvm14VMVariableListCFUi
+variable__Q26mintvm14VMVariableListCFUi:
 /* 801CDE44 001C9C84  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CDE48 001C9C88  7C 08 02 A6 */	mflr r0
 /* 801CDE4C 001C9C8C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -58,13 +58,13 @@ lbl_801CDE44:
 /* 801CDE60 001C9CA0  80 C3 00 0C */	lwz r6, 0xc(r3)
 /* 801CDE64 001C9CA4  7C 04 30 40 */	cmplw r4, r6
 /* 801CDE68 001C9CA8  41 80 00 20 */	blt lbl_801CDE88
-/* 801CDE6C 001C9CAC  3C 60 80 46 */	lis r3, lbl_8045CC14@ha
-/* 801CDE70 001C9CB0  38 63 CC 14 */	addi r3, r3, lbl_8045CC14@l
+/* 801CDE6C 001C9CAC  3C 60 80 46 */	lis r3, "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>CFUl"@ha
+/* 801CDE70 001C9CB0  38 63 CC 14 */	addi r3, r3, "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>CFUl"@l
 /* 801CDE74 001C9CB4  38 80 00 42 */	li r4, 0x42
-/* 801CDE78 001C9CB8  3C A0 80 46 */	lis r5, lbl_8045CC08@ha
-/* 801CDE7C 001C9CBC  38 A5 CC 08 */	addi r5, r5, lbl_8045CC08@l
+/* 801CDE78 001C9CB8  3C A0 80 46 */	lis r5, "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>CFUl@0"@ha
+/* 801CDE7C 001C9CBC  38 A5 CC 08 */	addi r5, r5, "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>CFUl@0"@l
 /* 801CDE80 001C9CC0  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801CDE84 001C9CC4  4B FF 81 21 */	bl lbl_801C5FA4
+/* 801CDE84 001C9CC4  4B FF 81 21 */	bl panic__Q26mintvm14MintSystemCallFPCciPCce
 .global lbl_801CDE88
 lbl_801CDE88:
 /* 801CDE88 001C9CC8  80 7E 00 10 */	lwz r3, 0x10(r30)
@@ -76,8 +76,8 @@ lbl_801CDE88:
 /* 801CDEA0 001C9CE0  7C 08 03 A6 */	mtlr r0
 /* 801CDEA4 001C9CE4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CDEA8 001C9CE8  4E 80 00 20 */	blr
-.global lbl_801CDEAC
-lbl_801CDEAC:
+.global search__Q26mintvm14VMVariableListCFRCQ26mintvm5VMKey
+search__Q26mintvm14VMVariableListCFRCQ26mintvm5VMKey:
 /* 801CDEAC 001C9CEC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CDEB0 001C9CF0  7C 08 02 A6 */	mflr r0
 /* 801CDEB4 001C9CF4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -91,11 +91,11 @@ lbl_801CDEAC:
 lbl_801CDED0:
 /* 801CDED0 001C9D10  7F A3 EB 78 */	mr r3, r29
 /* 801CDED4 001C9D14  7F E4 FB 78 */	mr r4, r31
-/* 801CDED8 001C9D18  4B FF FF 6D */	bl lbl_801CDE44
+/* 801CDED8 001C9D18  4B FF FF 6D */	bl variable__Q26mintvm14VMVariableListCFUi
 /* 801CDEDC 001C9D1C  7C 64 1B 78 */	mr r4, r3
 /* 801CDEE0 001C9D20  80 7E 00 04 */	lwz r3, 0x4(r30)
 /* 801CDEE4 001C9D24  80 84 00 04 */	lwz r4, 0x4(r4)
-/* 801CDEE8 001C9D28  4B E3 FC 55 */	bl lbl_8000DB3C
+/* 801CDEE8 001C9D28  4B E3 FC 55 */	bl strcmp
 /* 801CDEEC 001C9D2C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801CDEF0 001C9D30  40 82 00 0C */	bne lbl_801CDEFC
 /* 801CDEF4 001C9D34  7F E3 FB 78 */	mr r3, r31

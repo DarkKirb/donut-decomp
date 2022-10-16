@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8035C0FC
-lbl_8035C0FC:
+.global SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4step4hero9modeldesc8Dynamics9NodeParam
+SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4step4hero9modeldesc8Dynamics9NodeParam:
 /* 8035C0FC 00357F3C  C1 04 00 20 */	lfs f8, 0x20(r4)
-/* 8035C100 00357F40  C0 22 D0 28 */	lfs f1, lbl_80562FA8@sda21(r2)
+/* 8035C100 00357F40  C0 22 D0 28 */	lfs f1, "@49488"@sda21(r2)
 /* 8035C104 00357F44  C0 04 00 1C */	lfs f0, 0x1c(r4)
 /* 8035C108 00357F48  EC E1 00 32 */	fmuls f7, f1, f0
 /* 8035C10C 00357F4C  C0 04 00 18 */	lfs f0, 0x18(r4)

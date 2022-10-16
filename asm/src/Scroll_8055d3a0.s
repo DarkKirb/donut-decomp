@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D3A0
-lbl_8055D3A0:
+.global "STEP_WIDTH__Q33scn7history20@unnamed@Scroll_cpp@"
+"STEP_WIDTH__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4
 
-.global lbl_8055D3A4
-lbl_8055D3A4:
+.global "FAST_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4
 
-.global lbl_8055D3A8
-lbl_8055D3A8:
+.global "FAST_MOVE_INIT_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_INIT_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4
 
-.global lbl_8055D3AC
-lbl_8055D3AC:
+.global "FAST_MOVE_ACCEL__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_ACCEL__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4
 
-.global lbl_8055D3B0
-lbl_8055D3B0:
+.global "FAST_MOVE_ACCEL_DELTA__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_ACCEL_DELTA__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4
 
-.global lbl_8055D3B4
-lbl_8055D3B4:
+.global "MAX_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"MAX_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
 	.skip 0x4

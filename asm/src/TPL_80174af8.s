@@ -1,13 +1,13 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80174AF8
-lbl_80174AF8:
+.global HALTPLBind__FP10TPLPalette
+HALTPLBind__FP10TPLPalette:
 /* 80174AF8 00170938  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 80174AFC 0017093C  3C 00 80 00 */	lis r0, 0x8000
 /* 80174B00 00170940  7C 04 00 40 */	cmplw r4, r0
 /* 80174B04 00170944  40 80 00 08 */	bge lbl_80174B0C
-/* 80174B08 00170948  4B F2 D2 F8 */	b lbl_800A1E00
+/* 80174B08 00170948  4B F2 D2 F8 */	b TPLBind
 .global lbl_80174B0C
 lbl_80174B0C:
 /* 80174B0C 0017094C  38 C0 00 00 */	li r6, 0x0
@@ -41,8 +41,8 @@ lbl_80174B58:
 /* 80174B5C 0017099C  7C 06 00 40 */	cmplw r6, r0
 /* 80174B60 001709A0  41 80 FF B8 */	blt lbl_80174B18
 /* 80174B64 001709A4  4E 80 00 20 */	blr
-.global lbl_80174B68
-lbl_80174B68:
+.global HALTPLUnbind__FP10TPLPalette
+HALTPLUnbind__FP10TPLPalette:
 /* 80174B68 001709A8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80174B6C 001709AC  7C 08 02 A6 */	mflr r0
 /* 80174B70 001709B0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -79,7 +79,7 @@ lbl_80174BA8:
 /* 80174BE4 00170A24  7F 63 DB 78 */	mr r3, r27
 /* 80174BE8 00170A28  80 9C 00 00 */	lwz r4, 0x0(r28)
 /* 80174BEC 00170A2C  80 84 00 08 */	lwz r4, 0x8(r4)
-/* 80174BF0 00170A30  48 00 00 C1 */	bl lbl_80174CB0
+/* 80174BF0 00170A30  48 00 00 C1 */	bl "tInvertOffset<P10TPLPalette,Pc>__17@unnamed@TPL_cpp@FP10TPLPalettePc_Pc"
 /* 80174BF4 00170A34  80 9C 00 00 */	lwz r4, 0x0(r28)
 /* 80174BF8 00170A38  90 64 00 08 */	stw r3, 0x8(r4)
 /* 80174BFC 00170A3C  80 1C 00 00 */	lwz r0, 0x0(r28)
@@ -107,7 +107,7 @@ lbl_80174C10:
 /* 80174C44 00170A84  7F 63 DB 78 */	mr r3, r27
 /* 80174C48 00170A88  80 9C 00 04 */	lwz r4, 0x4(r28)
 /* 80174C4C 00170A8C  80 84 00 08 */	lwz r4, 0x8(r4)
-/* 80174C50 00170A90  48 00 00 61 */	bl lbl_80174CB0
+/* 80174C50 00170A90  48 00 00 61 */	bl "tInvertOffset<P10TPLPalette,Pc>__17@unnamed@TPL_cpp@FP10TPLPalettePc_Pc"
 /* 80174C54 00170A94  80 9C 00 04 */	lwz r4, 0x4(r28)
 /* 80174C58 00170A98  90 64 00 08 */	stw r3, 0x8(r4)
 /* 80174C5C 00170A9C  80 1C 00 04 */	lwz r0, 0x4(r28)
@@ -139,7 +139,7 @@ lbl_80174C98:
 /* 80174CA4 00170AE4  7C 08 03 A6 */	mtlr r0
 /* 80174CA8 00170AE8  38 21 00 30 */	addi r1, r1, 0x30
 /* 80174CAC 00170AEC  4E 80 00 20 */	blr
-.global lbl_80174CB0
-lbl_80174CB0:
+.global "tInvertOffset<P10TPLPalette,Pc>__17@unnamed@TPL_cpp@FP10TPLPalettePc_Pc"
+"tInvertOffset<P10TPLPalette,Pc>__17@unnamed@TPL_cpp@FP10TPLPalettePc_Pc":
 /* 80174CB0 00170AF0  7C 63 20 50 */	subf r3, r3, r4
 /* 80174CB4 00170AF4  4E 80 00 20 */	blr

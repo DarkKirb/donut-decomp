@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495FA8
-lbl_80495FA8:
+.global "@52494"
+"@52494":
 
 	.4byte 0x53746166
 	.4byte 0x66437265
@@ -23,18 +23,18 @@ lbl_80495FA8:
 	.4byte 0x7262792E
 	.4byte 0x646E0000
 
-.global lbl_80495FF0
-lbl_80495FF0:
+.global __vt__Q33scn11staffcredit16SceneStaffCredit
+__vt__Q33scn11staffcredit16SceneStaffCredit:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803F9FD4
-	.4byte lbl_803F9D88
-	.4byte lbl_803F9E1C
-	.4byte lbl_803F9DF4
-	.4byte lbl_803F9E44
-	.4byte lbl_803F9E6C
-	.4byte lbl_803F9E94
+	.4byte GetRuntimeTypeInfo__Q33scn11staffcredit16SceneStaffCreditCFv
+	.4byte __dt__Q33scn11staffcredit16SceneStaffCreditFv
+	.4byte updateMain__Q33scn11staffcredit16SceneStaffCreditFv
+	.4byte updateUseGPU__Q33scn11staffcredit16SceneStaffCreditFv
+	.4byte updateDebug__Q33scn11staffcredit16SceneStaffCreditFv
+	.4byte draw__Q33scn11staffcredit16SceneStaffCreditFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn11staffcredit16SceneStaffCreditCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

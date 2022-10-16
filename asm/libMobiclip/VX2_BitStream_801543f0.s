@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801543F0
-lbl_801543F0:
+.global VX2BitStreamInit__FP12VX2BitStreamPCUs
+VX2BitStreamInit__FP12VX2BitStreamPCUs:
 /* 801543F0 00150230  38 00 00 00 */	li r0, 0x0
 /* 801543F4 00150234  90 83 00 0C */	stw r4, 0xc(r3)
 /* 801543F8 00150238  90 03 00 00 */	stw r0, 0x0(r3)

@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80494B68
-lbl_80494B68:
+.global "@50123_80494B68"
+"@50123_80494B68":
 
 	.4byte 0x436F6E74
 	.4byte 0x726F6C4C
 	.4byte 0
 
-.global lbl_80494B74
-lbl_80494B74:
+.global "T_NODE_NAMES__Q53scn4step6weapon12jucklecutter23@unnamed@ModelDesc_cpp@"
+"T_NODE_NAMES__Q53scn4step6weapon12jucklecutter23@unnamed@ModelDesc_cpp@":
 
-	.4byte lbl_8055C290
-	.4byte lbl_80494B68
-	.4byte lbl_8055C298
+	.4byte "@50122_8055C290"
+	.4byte "@50123_80494B68"
+	.4byte "@50124_8055C298"
 
-.global lbl_80494B80
-lbl_80494B80:
+.global "@50236_80494B80"
+"@50236_80494B80":
 
 	.4byte 0x73746570
 	.4byte 0x2F776561

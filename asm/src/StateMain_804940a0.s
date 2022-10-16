@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804940A0
-lbl_804940A0:
+.global __vt__Q53scn4step6weapon11starshotlv39StateMain
+__vt__Q53scn4step6weapon11starshotlv39StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DD524
-	.4byte lbl_803DD528
-	.4byte lbl_803DD7A0
-	.4byte lbl_803D895C
-	.4byte lbl_803DD7A4
-	.4byte lbl_803DD7A8
+	.4byte __dt__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procMove__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11starshotlv39StateMainFv
 
-.global lbl_804940C0
-lbl_804940C0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803DE040
-	.4byte lbl_803DDA38
-	.4byte lbl_803DDA9C
-	.4byte lbl_803D895C
-	.4byte lbl_803DDD90
-	.4byte lbl_803DDE04
-
-.global lbl_804940E0
-lbl_804940E0:
+.global __vt__Q53scn4step6weapon11waterpistol9StateMain
+__vt__Q53scn4step6weapon11waterpistol9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DE3FC
-	.4byte lbl_803DE288
-	.4byte lbl_803DE2E0
-	.4byte lbl_803D895C
-	.4byte lbl_803DE358
-	.4byte lbl_803DE35C
+	.4byte __dt__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procMove__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11waterpistol9StateMainFv
+
+.global __vt__Q53scn4step6weapon9swordbeam9StateMain
+__vt__Q53scn4step6weapon9swordbeam9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procMove__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon9swordbeam9StateMainFv

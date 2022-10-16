@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80441ED0
-lbl_80441ED0:
+.global "sArcTanTbl__Q34nw4r4math29@unnamed@math_triangular_cpp@"
+"sArcTanTbl__Q34nw4r4math29@unnamed@math_triangular_cpp@":
 
 	.4byte 0
 	.4byte 0x3FA2EBF1

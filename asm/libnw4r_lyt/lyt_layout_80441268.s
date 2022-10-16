@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80441268
-lbl_80441268:
+.global __vt__Q34nw4r3lyt6Layout
+__vt__Q34nw4r3lyt6Layout:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800F40A0
-	.4byte lbl_800F41D0
-	.4byte lbl_800F4520
-	.4byte lbl_800F45A0
-	.4byte lbl_800F4600
-	.4byte lbl_800F4690
-	.4byte lbl_800F46C0
-	.4byte lbl_800F46F0
-	.4byte lbl_800F4710
-	.4byte lbl_800F49B0
-	.4byte lbl_800F49E0
-	.4byte lbl_800F4A00
-	.4byte lbl_800F4A20
-	.4byte lbl_800F4A80
+	.4byte __dt__Q34nw4r3lyt6LayoutFv
+	.4byte Build__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor
+	.4byte CreateAnimTransform__Q34nw4r3lyt6LayoutFv
+	.4byte CreateAnimTransform__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor
+	.4byte CreateAnimTransform__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor
+	.4byte BindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform
+	.4byte UnbindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform
+	.4byte UnbindAllAnimation__Q34nw4r3lyt6LayoutFv
+	.4byte BindAnimationAuto__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor
+	.4byte SetAnimationEnable__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransformb
+	.4byte CalculateMtx__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
+	.4byte Draw__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
+	.4byte Animate__Q34nw4r3lyt6LayoutFUl
+	.4byte "SetTagProcessor__Q34nw4r3lyt6LayoutFPQ34nw4r2ut19TagProcessorBase<w>"

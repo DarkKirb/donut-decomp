@@ -1,48 +1,48 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048DF20
-lbl_8048DF20:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing22StateDashAttackWallHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing22StateDashAttackWallHit,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80397DBC
-	.4byte lbl_80397D40
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing22StateDashAttackWallHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing22StateDashAttackWallHit,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048DF30
-lbl_8048DF30:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80397DB8
-	.4byte lbl_80397D5C
-
-.global lbl_8048DF40
-lbl_8048DF40:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDiveAttack,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDiveAttack,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80397DB4
-	.4byte lbl_80397D78
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDiveAttack,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDiveAttack,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048DF50
-lbl_8048DF50:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80397DB0
-	.4byte lbl_80397D94
-
-.global lbl_8048DF60
-lbl_8048DF60:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing16StateUnderAttack,PQ43scn4step4hero4Hero>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing16StateUnderAttack,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803973C8
-	.4byte lbl_803974C8
-	.4byte lbl_80397668
-	.4byte lbl_8035550C
-	.4byte lbl_803976D8
-	.4byte lbl_803976DC
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing16StateUnderAttack,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing16StateUnderAttack,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDashAttack,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDashAttack,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDashAttack,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero4wing15StateDashAttack,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero4wing15StateDashAttack
+__vt__Q53scn4step4hero4wing15StateDashAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero4wing15StateDashAttackFv
+	.4byte procAnim__Q53scn4step4hero4wing15StateDashAttackFv
+	.4byte procMove__Q53scn4step4hero4wing15StateDashAttackFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero4wing15StateDashAttackFv
+	.4byte procObjCollReact__Q53scn4step4hero4wing15StateDashAttackFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

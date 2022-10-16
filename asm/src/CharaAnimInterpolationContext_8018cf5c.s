@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018CF5C
-lbl_8018CF5C:
+.global __ct__Q23g3d29CharaAnimInterpolationContextFRCQ23g3d15ResModelContextRQ23mem10IAllocator
+__ct__Q23g3d29CharaAnimInterpolationContextFRCQ23g3d15ResModelContextRQ23mem10IAllocator:
 /* 8018CF5C 00188D9C  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 8018CF60 00188DA0  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8018CF64 00188DA4  7C 67 1B 78 */	mr r7, r3

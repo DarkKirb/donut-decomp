@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495410
-lbl_80495410:
+.global "@52931_80495410"
+"@52931_80495410":
 
 	.4byte 0x73747261
 	.4byte 0x702F4D61
@@ -53,8 +53,8 @@ lbl_80495410:
 	.4byte 0x7262792E
 	.4byte 0x646E0000
 
-.global lbl_804954D0
-lbl_804954D0:
+.global "@53027_804954D0"
+"@53027_804954D0":
 
 	.4byte lbl_803F256C
 	.4byte lbl_803F25CC
@@ -65,18 +65,18 @@ lbl_804954D0:
 	.4byte lbl_803F26D0
 	.4byte lbl_803F2744
 
-.global lbl_804954F0
-lbl_804954F0:
+.global __vt__Q33scn5strap10SceneStrap
+__vt__Q33scn5strap10SceneStrap:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803F2830
-	.4byte lbl_803F2384
-	.4byte lbl_803F2418
-	.4byte lbl_803F2414
-	.4byte lbl_803F27A0
-	.4byte lbl_803F27A4
-	.4byte lbl_803F281C
+	.4byte GetRuntimeTypeInfo__Q33scn5strap10SceneStrapCFv
+	.4byte __dt__Q33scn5strap10SceneStrapFv
+	.4byte updateMain__Q33scn5strap10SceneStrapFv
+	.4byte updateUseGPU__Q33scn5strap10SceneStrapFv
+	.4byte updateDebug__Q33scn5strap10SceneStrapFv
+	.4byte draw__Q33scn5strap10SceneStrapFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn5strap10SceneStrapCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

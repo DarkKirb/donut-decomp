@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804549E0
-lbl_804549E0:
+.global "@55014"
+"@55014":
 
 	.4byte 0x474F626A
 	.4byte 0x2E416E69
@@ -321,82 +321,82 @@ lbl_804549E0:
 	.4byte 0x6F6E3328
 	.4byte 0x29000000
 
-.global lbl_80454ED0
-lbl_80454ED0:
+.global "@55246"
+"@55246":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80198B8C
+	.4byte currentG3DAnimIndex__Q24gobj12MintGearAnimCFv
 
-.global lbl_80454EDC
-lbl_80454EDC:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_80198C58
-
-.global lbl_80454EE8
-lbl_80454EE8:
+.global "@55273_80454EDC"
+"@55273_80454EDC":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80198D64
+	.4byte setFrameRate__Q24gobj12MintGearAnimCFf
 
-.global lbl_80454EF4
-lbl_80454EF4:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_80198DB4
-
-.global lbl_80454F00
-lbl_80454F00:
+.global "@55285_80454EE8"
+"@55285_80454EE8":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80198E90
+	.4byte frameRate__Q24gobj12MintGearAnimCFv
 
-.global lbl_80454F0C
-lbl_80454F0C:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_80198EE0
-
-.global lbl_80454F18
-lbl_80454F18:
+.global "@55299_80454EF4"
+"@55299_80454EF4":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80198F30
+	.4byte isLooped__Q24gobj12MintGearAnimCFv
 
-.global lbl_80454F24
-lbl_80454F24:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_80199014
-
-.global lbl_80454F30
-lbl_80454F30:
+.global "@55318_80454F00"
+"@55318_80454F00":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801990C0
+	.4byte isAnimEnd__Q24gobj12MintGearAnimCFv
 
-.global lbl_80454F3C
-lbl_80454F3C:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_80199158
-
-.global lbl_80454F48
-lbl_80454F48:
+.global "@55327_80454F0C"
+"@55327_80454F0C":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801991DC
+	.4byte setFrame__Q24gobj12MintGearAnimFf
+
+.global "@55336_80454F18"
+"@55336_80454F18":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte totalFrame__Q24gobj12MintGearAnimCFv
+
+.global "@55350_80454F24"
+"@55350_80454F24":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte frame__Q24gobj12MintGearAnimCFv
+
+.global "@55359"
+"@55359":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte start__Q24gobj12MintGearAnimCFUlbUl
+
+.global "@55366"
+"@55366":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte start__Q24gobj12MintGearAnimCFUlb
+
+.global "@55373_80454F48"
+"@55373_80454F48":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte start__Q24gobj12MintGearAnimCFUl
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661
@@ -409,8 +409,8 @@ lbl_80454F48:
 	.4byte 0x70000000
 	.4byte 0
 
-.global lbl_80454F80
-lbl_80454F80:
+.global "@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>CFUl@0"
+"@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>CFUl@0":
 
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -419,8 +419,8 @@ lbl_80454F80:
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_80454F98
-lbl_80454F98:
+.global "@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>CFUl"
+"@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>CFUl":
 
 	.4byte 0x4D417272
 	.4byte 0x61792E68

@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8029F2DC
-lbl_8029F2DC:
+.global Create__Q53scn4step5enemy10brontoburt10CharaParamFv
+Create__Q53scn4step5enemy10brontoburt10CharaParamFv:
 /* 8029F2DC 0029B11C  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 8029F2E0 0029B120  7C 08 02 A6 */	mflr r0
 /* 8029F2E4 0029B124  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 8029F2E8 0029B128  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 8029F2EC 0029B12C  7C 7F 1B 78 */	mr r31, r3
 /* 8029F2F0 0029B130  38 61 00 08 */	addi r3, r1, 0x8
-/* 8029F2F4 0029B134  4B FF 24 59 */	bl lbl_8029174C
+/* 8029F2F4 0029B134  4B FF 24 59 */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 8029F2F8 0029B138  38 A1 00 54 */	addi r5, r1, 0x54
 /* 8029F2FC 0029B13C  38 81 00 04 */	addi r4, r1, 0x4
 /* 8029F300 0029B140  38 00 00 0A */	li r0, 0xa
@@ -23,7 +23,7 @@ lbl_8029F308:
 /* 8029F318 0029B158  42 00 FF F0 */	bdnz lbl_8029F308
 /* 8029F31C 0029B15C  38 00 00 08 */	li r0, 0x8
 /* 8029F320 0029B160  90 01 00 6C */	stw r0, 0x6c(r1)
-/* 8029F324 0029B164  C0 02 B4 10 */	lfs f0, lbl_80561390@sda21(r2)
+/* 8029F324 0029B164  C0 02 B4 10 */	lfs f0, "@48778_80561390"@sda21(r2)
 /* 8029F328 0029B168  D0 01 00 58 */	stfs f0, 0x58(r1)
 /* 8029F32C 0029B16C  38 BF FF FC */	addi r5, r31, -0x4
 /* 8029F330 0029B170  38 81 00 54 */	addi r4, r1, 0x54

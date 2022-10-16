@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80457DA0
-lbl_80457DA0:
+.global __vt__Q23lyt12TagProcessor
+__vt__Q23lyt12TagProcessor:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801AC73C
-	.4byte lbl_801AFC70
-	.4byte lbl_801AFD08
+	.4byte __dt__Q23lyt12TagProcessorFv
+	.4byte "Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext<w>"
+	.4byte "CalcRect__Q23lyt12TagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>"
 	.4byte 0

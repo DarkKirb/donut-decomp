@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043F4C0
-lbl_8043F4C0:
+.global "@1372"
+"@1372":
 
 	.4byte 0x4E554C4C
 	.4byte 0x20706F72
@@ -10,8 +10,8 @@ lbl_8043F4C0:
 	.4byte 0x656E7420
 	.4byte 0x25640000
 
-.global lbl_8043F4D4
-lbl_8043F4D4:
+.global "@1388"
+"@1388":
 
 	.4byte 0x506F7274
 	.4byte 0x20657272
@@ -22,8 +22,8 @@ lbl_8043F4D4:
 	.4byte 0x74202564
 	.4byte 0
 
-.global lbl_8043F4F4
-lbl_8043F4F4:
+.global "@1389"
+"@1389":
 
 	.4byte 0x506F7274
 	.4byte 0x20737461
@@ -35,8 +35,8 @@ lbl_8043F4F4:
 	.4byte 0x72656420
 	.4byte 0x25640000
 
-.global lbl_8043F518
-lbl_8043F518:
+.global "@1392"
+"@1392":
 
 	.4byte lbl_800993B4
 	.4byte lbl_800993EC
@@ -54,8 +54,8 @@ lbl_8043F518:
 	.4byte lbl_800993A4
 	.4byte lbl_800993A8
 
-.global lbl_8043F554
-lbl_8043F554:
+.global "@1416"
+"@1416":
 
 	.4byte 0x506F7274
 	.4byte 0x20737461
@@ -69,8 +69,8 @@ lbl_8043F554:
 	.4byte 0x65642025
 	.4byte 0x64000000
 
-.global lbl_8043F580
-lbl_8043F580:
+.global "@1419"
+"@1419":
 
 	.4byte lbl_800995BC
 	.4byte lbl_8009954C
@@ -111,8 +111,8 @@ lbl_8043F580:
 	.4byte 0x6F726564
 	.4byte 0x20256400
 
-.global lbl_8043F618
-lbl_8043F618:
+.global "@1448_8043F618"
+"@1448_8043F618":
 
 	.4byte lbl_8009973C
 	.4byte lbl_800997BC
@@ -155,8 +155,8 @@ lbl_8043F618:
 	.4byte 0x6F726564
 	.4byte 0x20256400
 
-.global lbl_8043F6B8
-lbl_8043F6B8:
+.global "@1465_8043F6B8"
+"@1465_8043F6B8":
 
 	.4byte lbl_80099890
 	.4byte lbl_8009990C
@@ -175,8 +175,8 @@ lbl_8043F6B8:
 	.4byte lbl_800998D4
 	.4byte lbl_80099840
 
-.global lbl_8043F6F8
-lbl_8043F6F8:
+.global "@1487"
+"@1487":
 
 	.4byte 0x506F7274
 	.4byte 0x20737461
@@ -188,8 +188,8 @@ lbl_8043F6F8:
 	.4byte 0x72656420
 	.4byte 0x25640000
 
-.global lbl_8043F71C
-lbl_8043F71C:
+.global "@1490"
+"@1490":
 
 	.4byte lbl_80099A60
 	.4byte lbl_80099A5C
@@ -207,8 +207,8 @@ lbl_8043F71C:
 	.4byte lbl_800999E0
 	.4byte lbl_800999E8
 
-.global lbl_8043F758
-lbl_8043F758:
+.global "@1505"
+"@1505":
 
 	.4byte 0x506F7274
 	.4byte 0x20737461
@@ -222,8 +222,8 @@ lbl_8043F758:
 	.4byte 0x64202564
 	.4byte 0
 
-.global lbl_8043F784
-lbl_8043F784:
+.global "@1508"
+"@1508":
 
 	.4byte lbl_80099BC8
 	.4byte lbl_80099BB0
@@ -241,8 +241,8 @@ lbl_8043F784:
 	.4byte lbl_80099B9C
 	.4byte lbl_80099BA4
 
-.global lbl_8043F7C0
-lbl_8043F7C0:
+.global "@1516_8043F7C0"
+"@1516_8043F7C0":
 
 	.4byte 0x2A2A2A2A
 	.4byte 0x2A204D58

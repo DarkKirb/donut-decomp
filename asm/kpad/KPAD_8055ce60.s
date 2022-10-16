@@ -1,94 +1,94 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CE60
-lbl_8055CE60:
+.global icenter_org
+icenter_org:
 	.skip 0x4
 
 .global lbl_8055CE64
 lbl_8055CE64:
 	.skip 0x4
 
-.global lbl_8055CE68
-lbl_8055CE68:
+.global kp_stick_clamp_cross
+kp_stick_clamp_cross:
 	.skip 0x4
 
-.global lbl_8055CE6C
-lbl_8055CE6C:
+.global kp_ex_trigger_min
+kp_ex_trigger_min:
 	.skip 0x4
 
-.global lbl_8055CE70
-lbl_8055CE70:
+.global kp_ex_analog_min
+kp_ex_analog_min:
 	.skip 0x4
 
-.global lbl_8055CE74
-lbl_8055CE74:
+.global kp_initialized
+kp_initialized:
 	.skip 0x4
 
-.global lbl_8055CE78
-lbl_8055CE78:
+.global Vec2_0
+Vec2_0:
 	.skip 0x4
 
 .global lbl_8055CE7C
 lbl_8055CE7C:
 	.skip 0x4
 
-.global lbl_8055CE80
-lbl_8055CE80:
+.global kp_wbc_stable_width
+kp_wbc_stable_width:
 	.skip 0x8
 
-.global lbl_8055CE88
-lbl_8055CE88:
+.global kp_wbc_max_weight
+kp_wbc_max_weight:
 	.skip 0x8
 
-.global lbl_8055CE90
-lbl_8055CE90:
+.global kp_wbc_min_weight
+kp_wbc_min_weight:
 	.skip 0x8
 
-.global lbl_8055CE98
-lbl_8055CE98:
+.global kp_wbc_tgc_weight
+kp_wbc_tgc_weight:
 	.skip 0x8
 
-.global lbl_8055CEA0
-lbl_8055CEA0:
+.global kp_wbc_ave_sample_count
+kp_wbc_ave_sample_count:
 	.skip 0x2
 
-.global lbl_8055CEA2
-lbl_8055CEA2:
+.global kp_wbc_failure_count
+kp_wbc_failure_count:
 	.skip 0x1
 
-.global lbl_8055CEA3
-lbl_8055CEA3:
+.global kp_wbc_zero_point_done
+kp_wbc_zero_point_done:
 	.skip 0x1
 
-.global lbl_8055CEA4
-lbl_8055CEA4:
+.global kp_wbc_zero_point_wait
+kp_wbc_zero_point_wait:
 	.skip 0x1
 
-.global lbl_8055CEA5
-lbl_8055CEA5:
+.global kp_wbc_tgc_weight_done
+kp_wbc_tgc_weight_done:
 	.skip 0x1
 
-.global lbl_8055CEA6
-lbl_8055CEA6:
+.global kp_wbc_tgc_weight_wait
+kp_wbc_tgc_weight_wait:
 	.skip 0x2
 
-.global lbl_8055CEA8
-lbl_8055CEA8:
+.global kp_wbc_tgc_weight_err
+kp_wbc_tgc_weight_err:
 	.skip 0x1
 
-.global lbl_8055CEA9
-lbl_8055CEA9:
+.global kp_wbc_enabled
+kp_wbc_enabled:
 	.skip 0x1
 
-.global lbl_8055CEAA
-lbl_8055CEAA:
+.global kp_wbc_issued
+kp_wbc_issued:
 	.skip 0x2
 
-.global lbl_8055CEAC
-lbl_8055CEAC:
+.global kp_dist_vv1
+kp_dist_vv1:
 	.skip 0x4
 
-.global lbl_8055CEB0
-lbl_8055CEB0:
+.global kp_err_dist_min
+kp_err_dist_min:
 	.skip 0x8

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801882BC
-lbl_801882BC:
+.global __ct__Q24file8FileTreeFRQ23mem10IAllocatorRQ23mem10IAllocatorUlUl
+__ct__Q24file8FileTreeFRQ23mem10IAllocatorRQ23mem10IAllocatorUlUl:
 /* 801882BC 001840FC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801882C0 00184100  7C 08 02 A6 */	mflr r0
 /* 801882C4 00184104  90 01 00 34 */	stw r0, 0x34(r1)
@@ -21,28 +21,28 @@ lbl_801882BC:
 /* 801882F8 00184138  90 9E 00 00 */	stw r4, 0x0(r30)
 /* 801882FC 0018413C  90 DE 00 04 */	stw r6, 0x4(r30)
 /* 80188300 00184140  38 7E 00 08 */	addi r3, r30, 0x8
-/* 80188304 00184144  4B F5 50 DD */	bl lbl_800DD3E0
+/* 80188304 00184144  4B F5 50 DD */	bl __ct__Q34nw4r3g3d8LightObjFv
 /* 80188308 00184148  80 1E 00 04 */	lwz r0, 0x4(r30)
 /* 8018830C 0018414C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80188310 00184150  41 82 00 58 */	beq lbl_80188368
 /* 80188314 00184154  7F 23 CB 78 */	mr r3, r25
-/* 80188318 00184158  4B E9 C1 89 */	bl lbl_800244A0
+/* 80188318 00184158  4B E9 C1 89 */	bl DefaultSwitchThreadCallback
 /* 8018831C 0018415C  90 61 00 0C */	stw r3, 0xc(r1)
 /* 80188320 00184160  38 7E 00 08 */	addi r3, r30, 0x8
 /* 80188324 00184164  1C 9B 00 6C */	mulli r4, r27, 0x6c
 /* 80188328 00184168  38 A0 00 04 */	li r5, 0x4
 /* 8018832C 0018416C  38 C1 00 0C */	addi r6, r1, 0xc
-/* 80188330 00184170  4B FF AD 75 */	bl lbl_801830A4
+/* 80188330 00184170  4B FF AD 75 */	bl "construct<Ul,l,Q33std3tr137reference_wrapper<Q23mem10IAllocator>>__Q24util30PlacementNew<Q23mem9DataBlock>FUllQ33std3tr137reference_wrapper<Q23mem10IAllocator>_v"
 /* 80188334 00184174  3B 80 00 00 */	li r28, 0x0
 /* 80188338 00184178  48 00 00 24 */	b lbl_8018835C
 .global lbl_8018833C
 lbl_8018833C:
 /* 8018833C 0018417C  7F C3 F3 78 */	mr r3, r30
-/* 80188340 00184180  4B FF AD C5 */	bl lbl_80183104
+/* 80188340 00184180  4B FF AD C5 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80188344 00184184  7C 63 EA 14 */	add r3, r3, r29
 /* 80188348 00184188  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018834C 0018418C  41 82 00 08 */	beq lbl_80188354
-/* 80188350 00184190  48 00 08 69 */	bl lbl_80188BB8
+/* 80188350 00184190  48 00 08 69 */	bl __ct__Q34file8FileTree8FileNodeFv
 .global lbl_80188354
 lbl_80188354:
 /* 80188354 00184194  3B 9C 00 01 */	addi r28, r28, 0x1
@@ -58,18 +58,18 @@ lbl_80188368:
 /* 8018836C 001841AC  93 3C 00 00 */	stw r25, 0x0(r28)
 /* 80188370 001841B0  93 5C 00 04 */	stw r26, 0x4(r28)
 /* 80188374 001841B4  38 7C 00 08 */	addi r3, r28, 0x8
-/* 80188378 001841B8  4B F5 50 69 */	bl lbl_800DD3E0
+/* 80188378 001841B8  4B F5 50 69 */	bl __ct__Q34nw4r3g3d8LightObjFv
 /* 8018837C 001841BC  80 1C 00 04 */	lwz r0, 0x4(r28)
 /* 80188380 001841C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80188384 001841C4  41 82 00 60 */	beq lbl_801883E4
 /* 80188388 001841C8  7F 23 CB 78 */	mr r3, r25
-/* 8018838C 001841CC  4B E9 C1 15 */	bl lbl_800244A0
+/* 8018838C 001841CC  4B E9 C1 15 */	bl DefaultSwitchThreadCallback
 /* 80188390 001841D0  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80188394 001841D4  38 7C 00 08 */	addi r3, r28, 0x8
 /* 80188398 001841D8  57 44 10 3A */	slwi r4, r26, 2
 /* 8018839C 001841DC  38 A0 00 04 */	li r5, 0x4
 /* 801883A0 001841E0  38 C1 00 08 */	addi r6, r1, 0x8
-/* 801883A4 001841E4  4B FF AD 01 */	bl lbl_801830A4
+/* 801883A4 001841E4  4B FF AD 01 */	bl "construct<Ul,l,Q33std3tr137reference_wrapper<Q23mem10IAllocator>>__Q24util30PlacementNew<Q23mem9DataBlock>FUllQ33std3tr137reference_wrapper<Q23mem10IAllocator>_v"
 /* 801883A8 001841E8  3B 60 00 00 */	li r27, 0x0
 /* 801883AC 001841EC  3B C0 00 00 */	li r30, 0x0
 /* 801883B0 001841F0  3B A0 00 00 */	li r29, 0x0
@@ -77,7 +77,7 @@ lbl_80188368:
 .global lbl_801883B8
 lbl_801883B8:
 /* 801883B8 001841F8  7F 83 E3 78 */	mr r3, r28
-/* 801883BC 001841FC  4B FF AD 49 */	bl lbl_80183104
+/* 801883BC 001841FC  4B FF AD 49 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 801883C0 00184200  7C 63 F2 14 */	add r3, r3, r30
 /* 801883C4 00184204  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801883C8 00184208  41 82 00 08 */	beq lbl_801883D0
@@ -100,7 +100,7 @@ lbl_801883E4:
 lbl_801883F0:
 /* 801883F0 00184230  38 7F 00 28 */	addi r3, r31, 0x28
 /* 801883F4 00184234  7F 64 DB 78 */	mr r4, r27
-/* 801883F8 00184238  48 00 01 69 */	bl lbl_80188560
+/* 801883F8 00184238  48 00 01 69 */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 801883FC 0018423C  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 80188400 00184240  3B 7B 00 01 */	addi r27, r27, 0x1
 .global lbl_80188404
@@ -114,8 +114,8 @@ lbl_80188404:
 /* 8018841C 0018425C  7C 08 03 A6 */	mtlr r0
 /* 80188420 00184260  38 21 00 30 */	addi r1, r1, 0x30
 /* 80188424 00184264  4E 80 00 20 */	blr
-.global lbl_80188428
-lbl_80188428:
+.global "__dt__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>Fv"
+"__dt__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>Fv":
 /* 80188428 00184268  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018842C 0018426C  7C 08 02 A6 */	mflr r0
 /* 80188430 00184270  90 01 00 24 */	stw r0, 0x24(r1)
@@ -132,7 +132,7 @@ lbl_80188428:
 .global lbl_8018845C
 lbl_8018845C:
 /* 8018845C 0018429C  7F A3 EB 78 */	mr r3, r29
-/* 80188460 001842A0  4B FF AC A5 */	bl lbl_80183104
+/* 80188460 001842A0  4B FF AC A5 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80188464 001842A4  38 1F FF FF */	addi r0, r31, -0x1
 /* 80188468 001842A8  1C 00 00 6C */	mulli r0, r0, 0x6c
 /* 8018846C 001842AC  7C 63 02 14 */	add r3, r3, r0
@@ -140,7 +140,7 @@ lbl_8018845C:
 /* 80188474 001842B4  41 82 00 10 */	beq lbl_80188484
 /* 80188478 001842B8  38 63 00 04 */	addi r3, r3, 0x4
 /* 8018847C 001842BC  38 80 FF FF */	li r4, -0x1
-/* 80188480 001842C0  4B FF F7 ED */	bl lbl_80187C6C
+/* 80188480 001842C0  4B FF F7 ED */	bl __dt__Q24file10FileLoaderFv
 .global lbl_80188484
 lbl_80188484:
 /* 80188484 001842C4  3B FF FF FF */	addi r31, r31, -0x1
@@ -149,17 +149,17 @@ lbl_80188488:
 /* 80188488 001842C8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8018848C 001842CC  40 82 FF D0 */	bne lbl_8018845C
 /* 80188490 001842D0  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80188494 001842D4  4B FF 5C 65 */	bl lbl_8017E0F8
+/* 80188494 001842D4  4B FF 5C 65 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 .global lbl_80188498
 lbl_80188498:
 /* 80188498 001842D8  38 7D 00 08 */	addi r3, r29, 0x8
 /* 8018849C 001842DC  38 80 FF FF */	li r4, -0x1
-/* 801884A0 001842E0  4B FF 5C 9D */	bl lbl_8017E13C
+/* 801884A0 001842E0  4B FF 5C 9D */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 801884A4 001842E4  7F C0 07 34 */	extsh r0, r30
 /* 801884A8 001842E8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801884AC 001842EC  40 81 00 0C */	ble lbl_801884B8
 /* 801884B0 001842F0  7F A3 EB 78 */	mr r3, r29
-/* 801884B4 001842F4  48 03 72 61 */	bl lbl_801BF714
+/* 801884B4 001842F4  48 03 72 61 */	bl __dl__FPv
 .global lbl_801884B8
 lbl_801884B8:
 /* 801884B8 001842F8  7F A3 EB 78 */	mr r3, r29
@@ -169,8 +169,8 @@ lbl_801884B8:
 /* 801884C8 00184308  7C 08 03 A6 */	mtlr r0
 /* 801884CC 0018430C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801884D0 00184310  4E 80 00 20 */	blr
-.global lbl_801884D4
-lbl_801884D4:
+.global "__dt__Q23mem36RuntimeFixedArray<PQ24file8FileTree>Fv"
+"__dt__Q23mem36RuntimeFixedArray<PQ24file8FileTree>Fv":
 /* 801884D4 00184314  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801884D8 00184318  7C 08 02 A6 */	mflr r0
 /* 801884DC 0018431C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -187,24 +187,24 @@ lbl_801884D4:
 .global lbl_80188508
 lbl_80188508:
 /* 80188508 00184348  7F A3 EB 78 */	mr r3, r29
-/* 8018850C 0018434C  4B FF AB F9 */	bl lbl_80183104
+/* 8018850C 0018434C  4B FF AB F9 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80188510 00184350  3B FF FF FF */	addi r31, r31, -0x1
 .global lbl_80188514
 lbl_80188514:
 /* 80188514 00184354  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80188518 00184358  40 82 FF F0 */	bne lbl_80188508
 /* 8018851C 0018435C  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80188520 00184360  4B FF 5B D9 */	bl lbl_8017E0F8
+/* 80188520 00184360  4B FF 5B D9 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 .global lbl_80188524
 lbl_80188524:
 /* 80188524 00184364  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80188528 00184368  38 80 FF FF */	li r4, -0x1
-/* 8018852C 0018436C  4B FF 5C 11 */	bl lbl_8017E13C
+/* 8018852C 0018436C  4B FF 5C 11 */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 80188530 00184370  7F C0 07 34 */	extsh r0, r30
 /* 80188534 00184374  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80188538 00184378  40 81 00 0C */	ble lbl_80188544
 /* 8018853C 0018437C  7F A3 EB 78 */	mr r3, r29
-/* 80188540 00184380  48 03 71 D5 */	bl lbl_801BF714
+/* 80188540 00184380  48 03 71 D5 */	bl __dl__FPv
 .global lbl_80188544
 lbl_80188544:
 /* 80188544 00184384  7F A3 EB 78 */	mr r3, r29
@@ -214,8 +214,8 @@ lbl_80188544:
 /* 80188554 00184394  7C 08 03 A6 */	mtlr r0
 /* 80188558 00184398  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018855C 0018439C  4E 80 00 20 */	blr
-.global lbl_80188560
-lbl_80188560:
+.global "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
+"__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl":
 /* 80188560 001843A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80188564 001843A4  7C 08 02 A6 */	mflr r0
 /* 80188568 001843A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -225,9 +225,9 @@ lbl_80188560:
 /* 80188578 001843B8  7C 9F 23 78 */	mr r31, r4
 /* 8018857C 001843BC  7F E3 FB 78 */	mr r3, r31
 /* 80188580 001843C0  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 80188584 001843C4  4B E9 BF 1D */	bl lbl_800244A0
+/* 80188584 001843C4  4B E9 BF 1D */	bl DefaultSwitchThreadCallback
 /* 80188588 001843C8  7F C3 F3 78 */	mr r3, r30
-/* 8018858C 001843CC  4B FF AB 79 */	bl lbl_80183104
+/* 8018858C 001843CC  4B FF AB 79 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80188590 001843D0  57 E0 10 3A */	slwi r0, r31, 2
 /* 80188594 001843D4  7C 63 02 14 */	add r3, r3, r0
 /* 80188598 001843D8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -236,8 +236,8 @@ lbl_80188560:
 /* 801885A4 001843E4  7C 08 03 A6 */	mtlr r0
 /* 801885A8 001843E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801885AC 001843EC  4E 80 00 20 */	blr
-.global lbl_801885B0
-lbl_801885B0:
+.global __dt__Q24file8FileTreeFv
+__dt__Q24file8FileTreeFv:
 /* 801885B0 001843F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801885B4 001843F4  7C 08 02 A6 */	mflr r0
 /* 801885B8 001843F8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -247,11 +247,11 @@ lbl_801885B0:
 /* 801885C8 00184408  7C 9E 23 78 */	mr r30, r4
 /* 801885CC 0018440C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801885D0 00184410  41 82 00 8C */	beq lbl_8018865C
-/* 801885D4 00184414  48 00 00 F5 */	bl lbl_801886C8
+/* 801885D4 00184414  48 00 00 F5 */	bl wasSetParent__Q24file8FileTreeCFv
 /* 801885D8 00184418  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801885DC 0018441C  41 82 00 0C */	beq lbl_801885E8
 /* 801885E0 00184420  7F A3 EB 78 */	mr r3, r29
-/* 801885E4 00184424  48 00 00 A9 */	bl lbl_8018868C
+/* 801885E4 00184424  48 00 00 A9 */	bl unsetParent__Q24file8FileTreeFv
 .global lbl_801885E8
 lbl_801885E8:
 /* 801885E8 00184428  3B E0 00 00 */	li r31, 0x0
@@ -260,11 +260,11 @@ lbl_801885E8:
 lbl_801885F0:
 /* 801885F0 00184430  38 7D 00 28 */	addi r3, r29, 0x28
 /* 801885F4 00184434  7F E4 FB 78 */	mr r4, r31
-/* 801885F8 00184438  4B FF FF 69 */	bl lbl_80188560
+/* 801885F8 00184438  4B FF FF 69 */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 801885FC 0018443C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80188600 00184440  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188604 00184444  41 82 00 08 */	beq lbl_8018860C
-/* 80188608 00184448  48 00 00 85 */	bl lbl_8018868C
+/* 80188608 00184448  48 00 00 85 */	bl unsetParent__Q24file8FileTreeFv
 .global lbl_8018860C
 lbl_8018860C:
 /* 8018860C 0018444C  3B FF 00 01 */	addi r31, r31, 0x1
@@ -274,21 +274,21 @@ lbl_80188610:
 /* 80188614 00184454  7C 1F 00 40 */	cmplw r31, r0
 /* 80188618 00184458  41 80 FF D8 */	blt lbl_801885F0
 /* 8018861C 0018445C  7F A3 EB 78 */	mr r3, r29
-/* 80188620 00184460  48 00 01 4D */	bl lbl_8018876C
+/* 80188620 00184460  48 00 01 4D */	bl clearFiles__Q24file8FileTreeFv
 /* 80188624 00184464  38 7D 00 28 */	addi r3, r29, 0x28
 /* 80188628 00184468  38 80 FF FF */	li r4, -0x1
-/* 8018862C 0018446C  4B FF FE A9 */	bl lbl_801884D4
+/* 8018862C 0018446C  4B FF FE A9 */	bl "__dt__Q23mem36RuntimeFixedArray<PQ24file8FileTree>Fv"
 /* 80188630 00184470  38 7D 00 10 */	addi r3, r29, 0x10
 /* 80188634 00184474  38 80 FF FF */	li r4, -0x1
-/* 80188638 00184478  4B FF FD F1 */	bl lbl_80188428
+/* 80188638 00184478  4B FF FD F1 */	bl "__dt__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>Fv"
 /* 8018863C 0018447C  7F A3 EB 78 */	mr r3, r29
 /* 80188640 00184480  38 80 00 00 */	li r4, 0x0
-/* 80188644 00184484  4B FE D5 25 */	bl lbl_80175B68
+/* 80188644 00184484  4B FE D5 25 */	bl __dt__Q23scn6ISceneFv
 /* 80188648 00184488  7F C0 07 34 */	extsh r0, r30
 /* 8018864C 0018448C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80188650 00184490  40 81 00 0C */	ble lbl_8018865C
 /* 80188654 00184494  7F A3 EB 78 */	mr r3, r29
-/* 80188658 00184498  48 03 70 BD */	bl lbl_801BF714
+/* 80188658 00184498  48 03 70 BD */	bl __dl__FPv
 .global lbl_8018865C
 lbl_8018865C:
 /* 8018865C 0018449C  7F A3 EB 78 */	mr r3, r29
@@ -298,15 +298,15 @@ lbl_8018865C:
 /* 8018866C 001844AC  7C 08 03 A6 */	mtlr r0
 /* 80188670 001844B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80188674 001844B4  4E 80 00 20 */	blr
-.global lbl_80188678
-lbl_80188678:
+.global setParent__Q24file8FileTreeFRQ24file8FileTree
+setParent__Q24file8FileTreeFRQ24file8FileTree:
 /* 80188678 001844B8  7C 60 1B 78 */	mr r0, r3
 /* 8018867C 001844BC  90 83 00 0C */	stw r4, 0xc(r3)
 /* 80188680 001844C0  7C 83 23 78 */	mr r3, r4
 /* 80188684 001844C4  7C 04 03 78 */	mr r4, r0
-/* 80188688 001844C8  48 00 02 28 */	b lbl_801888B0
-.global lbl_8018868C
-lbl_8018868C:
+/* 80188688 001844C8  48 00 02 28 */	b addChild__Q24file8FileTreeFRQ24file8FileTree
+.global unsetParent__Q24file8FileTreeFv
+unsetParent__Q24file8FileTreeFv:
 /* 8018868C 001844CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80188690 001844D0  7C 08 02 A6 */	mflr r0
 /* 80188694 001844D4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -314,7 +314,7 @@ lbl_8018868C:
 /* 8018869C 001844DC  7C 7F 1B 78 */	mr r31, r3
 /* 801886A0 001844E0  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 801886A4 001844E4  7F E4 FB 78 */	mr r4, r31
-/* 801886A8 001844E8  48 00 02 81 */	bl lbl_80188928
+/* 801886A8 001844E8  48 00 02 81 */	bl removeChild__Q24file8FileTreeFRQ24file8FileTree
 /* 801886AC 001844EC  38 00 00 00 */	li r0, 0x0
 /* 801886B0 001844F0  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 801886B4 001844F4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -322,18 +322,18 @@ lbl_8018868C:
 /* 801886BC 001844FC  7C 08 03 A6 */	mtlr r0
 /* 801886C0 00184500  38 21 00 10 */	addi r1, r1, 0x10
 /* 801886C4 00184504  4E 80 00 20 */	blr
-.global lbl_801886C8
-lbl_801886C8:
+.global wasSetParent__Q24file8FileTreeCFv
+wasSetParent__Q24file8FileTreeCFv:
 /* 801886C8 00184508  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 801886CC 0018450C  30 03 FF FF */	addic r0, r3, -0x1
 /* 801886D0 00184510  7C 60 19 10 */	subfe r3, r0, r3
 /* 801886D4 00184514  4E 80 00 20 */	blr
-.global lbl_801886D8
-lbl_801886D8:
+.global findFile__Q24file8FileTreeCFPCc
+findFile__Q24file8FileTreeCFPCc:
 /* 801886D8 00184518  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801886DC 0018451C  7C 08 02 A6 */	mflr r0
 /* 801886E0 00184520  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801886E4 00184524  48 00 03 C9 */	bl lbl_80188AAC
+/* 801886E4 00184524  48 00 03 C9 */	bl findFileNode__Q24file8FileTreeCFPCc
 /* 801886E8 00184528  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801886EC 0018452C  41 82 00 0C */	beq lbl_801886F8
 /* 801886F0 00184530  38 63 00 04 */	addi r3, r3, 0x4
@@ -347,16 +347,16 @@ lbl_801886FC:
 /* 80188700 00184540  7C 08 03 A6 */	mtlr r0
 /* 80188704 00184544  38 21 00 10 */	addi r1, r1, 0x10
 /* 80188708 00184548  4E 80 00 20 */	blr
-.global lbl_8018870C
-lbl_8018870C:
+.global setCompactionHeap__Q24file8FileTreeFRQ23mem14HeapCompaction
+setCompactionHeap__Q24file8FileTreeFRQ23mem14HeapCompaction:
 /* 8018870C 0018454C  90 83 00 08 */	stw r4, 0x8(r3)
 /* 80188710 00184550  4E 80 00 20 */	blr
-.global lbl_80188714
-lbl_80188714:
+.global setFileKeep__Q24file8FileTreeFPCc
+setFileKeep__Q24file8FileTreeFPCc:
 /* 80188714 00184554  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80188718 00184558  7C 08 02 A6 */	mflr r0
 /* 8018871C 0018455C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80188720 00184560  48 00 03 8D */	bl lbl_80188AAC
+/* 80188720 00184560  48 00 03 8D */	bl findFileNode__Q24file8FileTreeCFPCc
 /* 80188724 00184564  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188728 00184568  40 82 00 0C */	bne lbl_80188734
 /* 8018872C 0018456C  38 60 00 00 */	li r3, 0x0
@@ -372,19 +372,19 @@ lbl_80188740:
 /* 80188744 00184584  7C 08 03 A6 */	mtlr r0
 /* 80188748 00184588  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018874C 0018458C  4E 80 00 20 */	blr
-.global lbl_80188750
-lbl_80188750:
+.global addFile__Q24file8FileTreeFPCcPCQ24file16IFileInitializer
+addFile__Q24file8FileTreeFPCcPCQ24file16IFileInitializer:
 /* 80188750 00184590  38 C0 00 00 */	li r6, 0x0
-/* 80188754 00184594  48 00 02 50 */	b lbl_801889A4
-.global lbl_80188758
-lbl_80188758:
+/* 80188754 00184594  48 00 02 50 */	b addFileIN__Q24file8FileTreeFPCcPCQ24file16IFileInitializerPCQ23mem8MemBlock
+.global addFile__Q24file8FileTreeFRCQ23mem8MemBlockPCcPCQ24file16IFileInitializer
+addFile__Q24file8FileTreeFRCQ23mem8MemBlockPCcPCQ24file16IFileInitializer:
 /* 80188758 00184598  7C 80 23 78 */	mr r0, r4
 /* 8018875C 0018459C  7C A4 2B 78 */	mr r4, r5
 /* 80188760 001845A0  7C C5 33 78 */	mr r5, r6
 /* 80188764 001845A4  7C 06 03 78 */	mr r6, r0
-/* 80188768 001845A8  48 00 02 3C */	b lbl_801889A4
-.global lbl_8018876C
-lbl_8018876C:
+/* 80188768 001845A8  48 00 02 3C */	b addFileIN__Q24file8FileTreeFPCcPCQ24file16IFileInitializerPCQ23mem8MemBlock
+.global clearFiles__Q24file8FileTreeFv
+clearFiles__Q24file8FileTreeFv:
 /* 8018876C 001845AC  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80188770 001845B0  7C 08 02 A6 */	mflr r0
 /* 80188774 001845B4  90 01 00 84 */	stw r0, 0x84(r1)
@@ -399,7 +399,7 @@ lbl_8018876C:
 lbl_80188794:
 /* 80188794 001845D4  38 78 00 10 */	addi r3, r24, 0x10
 /* 80188798 001845D8  7F 44 D3 78 */	mr r4, r26
-/* 8018879C 001845DC  48 00 00 C5 */	bl lbl_80188860
+/* 8018879C 001845DC  48 00 00 C5 */	bl "__vc__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>FUl"
 /* 801887A0 001845E0  7C 7D 1B 78 */	mr r29, r3
 /* 801887A4 001845E4  3B 20 00 01 */	li r25, 0x1
 /* 801887A8 001845E8  88 03 00 00 */	lbz r0, 0x0(r3)
@@ -407,14 +407,14 @@ lbl_80188794:
 /* 801887B0 001845F0  41 82 00 78 */	beq lbl_80188828
 /* 801887B4 001845F4  9B C3 00 00 */	stb r30, 0x0(r3)
 /* 801887B8 001845F8  38 63 00 04 */	addi r3, r3, 0x4
-/* 801887BC 001845FC  4B FF 2E 79 */	bl lbl_8017B634
+/* 801887BC 001845FC  4B FF 2E 79 */	bl font__Q23app14RomFontWrapperFv
 /* 801887C0 00184600  7C 7C 1B 78 */	mr r28, r3
 /* 801887C4 00184604  38 7D 00 04 */	addi r3, r29, 0x4
-/* 801887C8 00184608  4B FF F7 09 */	bl lbl_80187ED0
+/* 801887C8 00184608  4B FF F7 09 */	bl latestUpdateDate__Q24file10FileLoaderCFv
 /* 801887CC 0018460C  7C 7F 1B 78 */	mr r31, r3
 /* 801887D0 00184610  7F 83 E3 78 */	mr r3, r28
 /* 801887D4 00184614  38 80 00 01 */	li r4, 0x1
-/* 801887D8 00184618  4B EC B6 19 */	bl lbl_80053DF0
+/* 801887D8 00184618  4B EC B6 19 */	bl __wpadNoAlloc
 /* 801887DC 0018461C  7C 03 F8 40 */	cmplw r3, r31
 /* 801887E0 00184620  41 81 00 08 */	bgt lbl_801887E8
 /* 801887E4 00184624  3B 20 00 00 */	li r25, 0x0
@@ -427,11 +427,11 @@ lbl_801887EC:
 /* 801887F0 00184630  40 81 00 2C */	ble lbl_8018881C
 /* 801887F4 00184634  38 61 00 08 */	addi r3, r1, 0x8
 /* 801887F8 00184638  7F 84 E3 78 */	mr r4, r28
-/* 801887FC 0018463C  48 00 0B 5D */	bl lbl_80189358
+/* 801887FC 0018463C  48 00 0B 5D */	bl FilePath__Q24font12FontKindUtilFQ24font8FontKind
 /* 80188800 00184640  38 7D 00 04 */	addi r3, r29, 0x4
-/* 80188804 00184644  4B FF 2E 31 */	bl lbl_8017B634
+/* 80188804 00184644  4B FF 2E 31 */	bl font__Q23app14RomFontWrapperFv
 /* 80188808 00184648  7F 64 DB 78 */	mr r4, r27
-/* 8018880C 0018464C  4B FF E0 6D */	bl lbl_80186878
+/* 8018880C 0018464C  4B FF E0 6D */	bl isCategoryNameEquals__Q36effect6detail13PtclEffectResCFPCc
 /* 80188810 00184650  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188814 00184654  41 82 00 08 */	beq lbl_8018881C
 /* 80188818 00184658  3B 20 00 01 */	li r25, 0x1
@@ -445,7 +445,7 @@ lbl_80188828:
 /* 80188828 00184668  2C 19 00 00 */	cmpwi r25, 0x0
 /* 8018882C 0018466C  41 82 00 0C */	beq lbl_80188838
 /* 80188830 00184670  38 7D 00 04 */	addi r3, r29, 0x4
-/* 80188834 00184674  4B FF F5 01 */	bl lbl_80187D34
+/* 80188834 00184674  4B FF F5 01 */	bl unload__Q24file10FileLoaderFv
 .global lbl_80188838
 lbl_80188838:
 /* 80188838 00184678  3B 5A 00 01 */	addi r26, r26, 0x1
@@ -460,8 +460,8 @@ lbl_8018883C:
 /* 80188854 00184694  7C 08 03 A6 */	mtlr r0
 /* 80188858 00184698  38 21 00 80 */	addi r1, r1, 0x80
 /* 8018885C 0018469C  4E 80 00 20 */	blr
-.global lbl_80188860
-lbl_80188860:
+.global "__vc__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>FUl"
+"__vc__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>FUl":
 /* 80188860 001846A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80188864 001846A4  7C 08 02 A6 */	mflr r0
 /* 80188868 001846A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -471,9 +471,9 @@ lbl_80188860:
 /* 80188878 001846B8  7C 9F 23 78 */	mr r31, r4
 /* 8018887C 001846BC  7F E3 FB 78 */	mr r3, r31
 /* 80188880 001846C0  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 80188884 001846C4  4B E9 BC 1D */	bl lbl_800244A0
+/* 80188884 001846C4  4B E9 BC 1D */	bl DefaultSwitchThreadCallback
 /* 80188888 001846C8  7F C3 F3 78 */	mr r3, r30
-/* 8018888C 001846CC  4B FF A8 79 */	bl lbl_80183104
+/* 8018888C 001846CC  4B FF A8 79 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80188890 001846D0  1C 1F 00 6C */	mulli r0, r31, 0x6c
 /* 80188894 001846D4  7C 63 02 14 */	add r3, r3, r0
 /* 80188898 001846D8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -482,8 +482,8 @@ lbl_80188860:
 /* 801888A4 001846E4  7C 08 03 A6 */	mtlr r0
 /* 801888A8 001846E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801888AC 001846EC  4E 80 00 20 */	blr
-.global lbl_801888B0
-lbl_801888B0:
+.global addChild__Q24file8FileTreeFRQ24file8FileTree
+addChild__Q24file8FileTreeFRQ24file8FileTree:
 /* 801888B0 001846F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801888B4 001846F4  7C 08 02 A6 */	mflr r0
 /* 801888B8 001846F8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -497,13 +497,13 @@ lbl_801888B0:
 lbl_801888D4:
 /* 801888D4 00184714  38 7D 00 28 */	addi r3, r29, 0x28
 /* 801888D8 00184718  7F E4 FB 78 */	mr r4, r31
-/* 801888DC 0018471C  4B FF FC 85 */	bl lbl_80188560
+/* 801888DC 0018471C  4B FF FC 85 */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 801888E0 00184720  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 801888E4 00184724  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801888E8 00184728  40 82 00 18 */	bne lbl_80188900
 /* 801888EC 0018472C  38 7D 00 28 */	addi r3, r29, 0x28
 /* 801888F0 00184730  7F E4 FB 78 */	mr r4, r31
-/* 801888F4 00184734  4B FF FC 6D */	bl lbl_80188560
+/* 801888F4 00184734  4B FF FC 6D */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 801888F8 00184738  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 801888FC 0018473C  48 00 00 14 */	b lbl_80188910
 .global lbl_80188900
@@ -522,8 +522,8 @@ lbl_80188910:
 /* 8018891C 0018475C  7C 08 03 A6 */	mtlr r0
 /* 80188920 00184760  38 21 00 20 */	addi r1, r1, 0x20
 /* 80188924 00184764  4E 80 00 20 */	blr
-.global lbl_80188928
-lbl_80188928:
+.global removeChild__Q24file8FileTreeFRQ24file8FileTree
+removeChild__Q24file8FileTreeFRQ24file8FileTree:
 /* 80188928 00184768  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018892C 0018476C  7C 08 02 A6 */	mflr r0
 /* 80188930 00184770  90 01 00 24 */	stw r0, 0x24(r1)
@@ -537,14 +537,14 @@ lbl_80188928:
 lbl_8018894C:
 /* 8018894C 0018478C  38 7D 00 28 */	addi r3, r29, 0x28
 /* 80188950 00184790  7F C4 F3 78 */	mr r4, r30
-/* 80188954 00184794  4B FF FC 0D */	bl lbl_80188560
+/* 80188954 00184794  4B FF FC 0D */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 80188958 00184798  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8018895C 0018479C  7C 00 F8 40 */	cmplw r0, r31
 /* 80188960 001847A0  40 82 00 1C */	bne lbl_8018897C
 /* 80188964 001847A4  3B E0 00 00 */	li r31, 0x0
 /* 80188968 001847A8  38 7D 00 28 */	addi r3, r29, 0x28
 /* 8018896C 001847AC  7F C4 F3 78 */	mr r4, r30
-/* 80188970 001847B0  4B FF FB F1 */	bl lbl_80188560
+/* 80188970 001847B0  4B FF FB F1 */	bl "__vc__Q23mem36RuntimeFixedArray<PQ24file8FileTree>FUl"
 /* 80188974 001847B4  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 80188978 001847B8  48 00 00 14 */	b lbl_8018898C
 .global lbl_8018897C
@@ -563,8 +563,8 @@ lbl_8018898C:
 /* 80188998 001847D8  7C 08 03 A6 */	mtlr r0
 /* 8018899C 001847DC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801889A0 001847E0  4E 80 00 20 */	blr
-.global lbl_801889A4
-lbl_801889A4:
+.global addFileIN__Q24file8FileTreeFPCcPCQ24file16IFileInitializerPCQ23mem8MemBlock
+addFileIN__Q24file8FileTreeFPCcPCQ24file16IFileInitializerPCQ23mem8MemBlock:
 /* 801889A4 001847E4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801889A8 001847E8  7C 08 02 A6 */	mflr r0
 /* 801889AC 001847EC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -581,14 +581,14 @@ lbl_801889A4:
 lbl_801889D4:
 /* 801889D4 00184814  38 7A 00 10 */	addi r3, r26, 0x10
 /* 801889D8 00184818  7F C4 F3 78 */	mr r4, r30
-/* 801889DC 0018481C  4B FF FE 85 */	bl lbl_80188860
+/* 801889DC 0018481C  4B FF FE 85 */	bl "__vc__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>FUl"
 /* 801889E0 00184820  38 63 00 04 */	addi r3, r3, 0x4
-/* 801889E4 00184824  4B FF F4 65 */	bl lbl_80187E48
+/* 801889E4 00184824  4B FF F4 65 */	bl isLoaded__Q24file10FileLoaderCFv
 /* 801889E8 00184828  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801889EC 0018482C  40 82 00 18 */	bne lbl_80188A04
 /* 801889F0 00184830  38 7A 00 10 */	addi r3, r26, 0x10
 /* 801889F4 00184834  7F C4 F3 78 */	mr r4, r30
-/* 801889F8 00184838  4B FF FE 69 */	bl lbl_80188860
+/* 801889F8 00184838  4B FF FE 69 */	bl "__vc__Q23mem44RuntimeFixedArray<Q34file8FileTree8FileNode>FUl"
 /* 801889FC 0018483C  7C 7F 1B 78 */	mr r31, r3
 /* 80188A00 00184840  48 00 00 14 */	b lbl_80188A14
 .global lbl_80188A04
@@ -609,7 +609,7 @@ lbl_80188A14:
 /* 80188A28 00184868  7F 65 DB 78 */	mr r5, r27
 /* 80188A2C 0018486C  80 DA 00 04 */	lwz r6, 0x4(r26)
 /* 80188A30 00184870  7F 87 E3 78 */	mr r7, r28
-/* 80188A34 00184874  4B FF F2 E5 */	bl lbl_80187D18
+/* 80188A34 00184874  4B FF F2 E5 */	bl load__Q24file10FileLoaderFRCQ23mem8MemBlockPCcRQ23mem10IAllocatorPCQ24file16IFileInitializer
 /* 80188A38 00184878  48 00 00 40 */	b lbl_80188A78
 .global lbl_80188A3C
 lbl_80188A3C:
@@ -620,7 +620,7 @@ lbl_80188A3C:
 /* 80188A4C 0018488C  7F 64 DB 78 */	mr r4, r27
 /* 80188A50 00184890  38 C0 00 01 */	li r6, 0x1
 /* 80188A54 00184894  7F 87 E3 78 */	mr r7, r28
-/* 80188A58 00184898  4B FF F2 A1 */	bl lbl_80187CF8
+/* 80188A58 00184898  4B FF F2 A1 */	bl load__Q24file10FileLoaderFPCcRQ23mem14HeapCompactionbPCQ24file16IFileInitializer
 /* 80188A5C 0018489C  48 00 00 1C */	b lbl_80188A78
 .global lbl_80188A60
 lbl_80188A60:
@@ -629,11 +629,11 @@ lbl_80188A60:
 /* 80188A68 001848A8  80 BA 00 04 */	lwz r5, 0x4(r26)
 /* 80188A6C 001848AC  38 C0 00 01 */	li r6, 0x1
 /* 80188A70 001848B0  7F 87 E3 78 */	mr r7, r28
-/* 80188A74 001848B4  4B FF F2 6D */	bl lbl_80187CE0
+/* 80188A74 001848B4  4B FF F2 6D */	bl load__Q24file10FileLoaderFPCcRQ23mem10IAllocatorbPCQ24file16IFileInitializer
 .global lbl_80188A78
 lbl_80188A78:
 /* 80188A78 001848B8  7F C3 F3 78 */	mr r3, r30
-/* 80188A7C 001848BC  4B FF F3 CD */	bl lbl_80187E48
+/* 80188A7C 001848BC  4B FF F3 CD */	bl isLoaded__Q24file10FileLoaderCFv
 /* 80188A80 001848C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188A84 001848C4  41 82 00 0C */	beq lbl_80188A90
 /* 80188A88 001848C8  7F C3 F3 78 */	mr r3, r30
@@ -649,8 +649,8 @@ lbl_80188A94:
 /* 80188AA0 001848E0  7C 08 03 A6 */	mtlr r0
 /* 80188AA4 001848E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80188AA8 001848E8  4E 80 00 20 */	blr
-.global lbl_80188AAC
-lbl_80188AAC:
+.global findFileNode__Q24file8FileTreeCFPCc
+findFileNode__Q24file8FileTreeCFPCc:
 /* 80188AAC 001848EC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80188AB0 001848F0  7C 08 02 A6 */	mflr r0
 /* 80188AB4 001848F4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -664,22 +664,22 @@ lbl_80188AAC:
 .global lbl_80188AD4
 lbl_80188AD4:
 /* 80188AD4 00184914  7F A3 EB 78 */	mr r3, r29
-/* 80188AD8 00184918  4B E9 B9 C9 */	bl lbl_800244A0
+/* 80188AD8 00184918  4B E9 B9 C9 */	bl DefaultSwitchThreadCallback
 /* 80188ADC 0018491C  80 7B 00 18 */	lwz r3, 0x18(r27)
-/* 80188AE0 00184920  4B FF A6 59 */	bl lbl_80183138
+/* 80188AE0 00184920  4B FF A6 59 */	bl block__Q23mem9DataBlockCFv
 /* 80188AE4 00184924  90 81 00 14 */	stw r4, 0x14(r1)
 /* 80188AE8 00184928  90 61 00 10 */	stw r3, 0x10(r1)
 /* 80188AEC 0018492C  38 61 00 10 */	addi r3, r1, 0x10
-/* 80188AF0 00184930  4B F7 7C F1 */	bl lbl_801007E0
+/* 80188AF0 00184930  4B F7 7C F1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80188AF4 00184934  7F C3 FA 14 */	add r30, r3, r31
 /* 80188AF8 00184938  38 7E 00 04 */	addi r3, r30, 0x4
-/* 80188AFC 0018493C  4B FF F3 4D */	bl lbl_80187E48
+/* 80188AFC 0018493C  4B FF F3 4D */	bl isLoaded__Q24file10FileLoaderCFv
 /* 80188B00 00184940  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188B04 00184944  41 82 00 24 */	beq lbl_80188B28
 /* 80188B08 00184948  38 7E 00 04 */	addi r3, r30, 0x4
-/* 80188B0C 0018494C  4B FF 2B 29 */	bl lbl_8017B634
+/* 80188B0C 0018494C  4B FF 2B 29 */	bl font__Q23app14RomFontWrapperFv
 /* 80188B10 00184950  7F 84 E3 78 */	mr r4, r28
-/* 80188B14 00184954  4B FF DD 65 */	bl lbl_80186878
+/* 80188B14 00184954  4B FF DD 65 */	bl isCategoryNameEquals__Q36effect6detail13PtclEffectResCFPCc
 /* 80188B18 00184958  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188B1C 0018495C  41 82 00 0C */	beq lbl_80188B28
 /* 80188B20 00184960  7F C3 F3 78 */	mr r3, r30
@@ -699,18 +699,18 @@ lbl_80188B30:
 .global lbl_80188B48
 lbl_80188B48:
 /* 80188B48 00184988  7F A3 EB 78 */	mr r3, r29
-/* 80188B4C 0018498C  4B E9 B9 55 */	bl lbl_800244A0
+/* 80188B4C 0018498C  4B E9 B9 55 */	bl DefaultSwitchThreadCallback
 /* 80188B50 00184990  80 7B 00 30 */	lwz r3, 0x30(r27)
-/* 80188B54 00184994  4B FF A5 E5 */	bl lbl_80183138
+/* 80188B54 00184994  4B FF A5 E5 */	bl block__Q23mem9DataBlockCFv
 /* 80188B58 00184998  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80188B5C 0018499C  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80188B60 001849A0  38 61 00 08 */	addi r3, r1, 0x8
-/* 80188B64 001849A4  4B F7 7C 7D */	bl lbl_801007E0
+/* 80188B64 001849A4  4B F7 7C 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80188B68 001849A8  7C 63 F8 2E */	lwzx r3, r3, r31
 /* 80188B6C 001849AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188B70 001849B0  41 82 00 18 */	beq lbl_80188B88
 /* 80188B74 001849B4  7F 84 E3 78 */	mr r4, r28
-/* 80188B78 001849B8  4B FF FF 35 */	bl lbl_80188AAC
+/* 80188B78 001849B8  4B FF FF 35 */	bl findFileNode__Q24file8FileTreeCFPCc
 /* 80188B7C 001849BC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80188B80 001849C0  41 82 00 08 */	beq lbl_80188B88
 /* 80188B84 001849C4  48 00 00 1C */	b lbl_80188BA0
@@ -732,8 +732,8 @@ lbl_80188BA0:
 /* 80188BAC 001849EC  7C 08 03 A6 */	mtlr r0
 /* 80188BB0 001849F0  38 21 00 30 */	addi r1, r1, 0x30
 /* 80188BB4 001849F4  4E 80 00 20 */	blr
-.global lbl_80188BB8
-lbl_80188BB8:
+.global __ct__Q34file8FileTree8FileNodeFv
+__ct__Q34file8FileTree8FileNodeFv:
 /* 80188BB8 001849F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80188BBC 001849FC  7C 08 02 A6 */	mflr r0
 /* 80188BC0 00184A00  90 01 00 14 */	stw r0, 0x14(r1)
@@ -742,7 +742,7 @@ lbl_80188BB8:
 /* 80188BCC 00184A0C  38 00 00 00 */	li r0, 0x0
 /* 80188BD0 00184A10  98 03 00 00 */	stb r0, 0x0(r3)
 /* 80188BD4 00184A14  38 63 00 04 */	addi r3, r3, 0x4
-/* 80188BD8 00184A18  4B FF F0 29 */	bl lbl_80187C00
+/* 80188BD8 00184A18  4B FF F0 29 */	bl __ct__Q24file10FileLoaderFv
 /* 80188BDC 00184A1C  7F E3 FB 78 */	mr r3, r31
 /* 80188BE0 00184A20  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80188BE4 00184A24  80 01 00 14 */	lwz r0, 0x14(r1)

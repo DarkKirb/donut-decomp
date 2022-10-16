@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800F9050
-lbl_800F9050:
+.global __ct__Q34nw4r3lyt8BoundingFPCQ44nw4r3lyt3res8BoundingRCQ34nw4r3lyt11ResBlockSet
+__ct__Q34nw4r3lyt8BoundingFPCQ44nw4r3lyt3res8BoundingRCQ34nw4r3lyt11ResBlockSet:
 /* 800F9050 000F4E90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800F9054 000F4E94  7C 08 02 A6 */	mflr r0
 /* 800F9058 000F4E98  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800F905C 000F4E9C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800F9060 000F4EA0  7C 7F 1B 78 */	mr r31, r3
-/* 800F9064 000F4EA4  4B FF 9B 3D */	bl lbl_800F2BA0
-/* 800F9068 000F4EA8  3C 80 80 44 */	lis r4, lbl_80441470@ha
+/* 800F9064 000F4EA4  4B FF 9B 3D */	bl __ct__Q34nw4r3lyt4PaneFPCQ44nw4r3lyt3res4Pane
+/* 800F9068 000F4EA8  3C 80 80 44 */	lis r4, __vt__Q34nw4r3lyt8Bounding@ha
 /* 800F906C 000F4EAC  7F E3 FB 78 */	mr r3, r31
-/* 800F9070 000F4EB0  38 84 14 70 */	addi r4, r4, lbl_80441470@l
+/* 800F9070 000F4EB0  38 84 14 70 */	addi r4, r4, __vt__Q34nw4r3lyt8Bounding@l
 /* 800F9074 000F4EB4  90 9F 00 00 */	stw r4, 0x0(r31)
 /* 800F9078 000F4EB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800F907C 000F4EBC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -20,8 +20,8 @@ lbl_800F9050:
 /* 800F9088 000F4EC8  4E 80 00 20 */	blr
 /* 800F908C 000F4ECC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800F9090
-lbl_800F9090:
+.global __dt__Q34nw4r3lyt8BoundingFv
+__dt__Q34nw4r3lyt8BoundingFv:
 /* 800F9090 000F4ED0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800F9094 000F4ED4  7C 08 02 A6 */	mflr r0
 /* 800F9098 000F4ED8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -32,11 +32,11 @@ lbl_800F9090:
 /* 800F90AC 000F4EEC  7C 7E 1B 78 */	mr r30, r3
 /* 800F90B0 000F4EF0  41 82 00 1C */	beq lbl_800F90CC
 /* 800F90B4 000F4EF4  38 80 00 00 */	li r4, 0x0
-/* 800F90B8 000F4EF8  4B FF 9C 19 */	bl lbl_800F2CD0
+/* 800F90B8 000F4EF8  4B FF 9C 19 */	bl __dt__Q34nw4r3lyt4PaneFv
 /* 800F90BC 000F4EFC  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 800F90C0 000F4F00  40 81 00 0C */	ble lbl_800F90CC
 /* 800F90C4 000F4F04  7F C3 F3 78 */	mr r3, r30
-/* 800F90C8 000F4F08  48 0C 66 4D */	bl lbl_801BF714
+/* 800F90C8 000F4F08  48 0C 66 4D */	bl __dl__FPv
 .global lbl_800F90CC
 lbl_800F90CC:
 /* 800F90CC 000F4F0C  7F C3 F3 78 */	mr r3, r30
@@ -49,23 +49,23 @@ lbl_800F90CC:
 /* 800F90E8 000F4F28  00 00 00 00 */	.4byte 0x00000000
 /* 800F90EC 000F4F2C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800F90F0
-lbl_800F90F0:
+.global DrawSelf__Q34nw4r3lyt8BoundingFRCQ34nw4r3lyt8DrawInfo
+DrawSelf__Q34nw4r3lyt8BoundingFRCQ34nw4r3lyt8DrawInfo:
 /* 800F90F0 000F4F30  4E 80 00 20 */	blr
 /* 800F90F4 000F4F34  00 00 00 00 */	.4byte 0x00000000
 /* 800F90F8 000F4F38  00 00 00 00 */	.4byte 0x00000000
 /* 800F90FC 000F4F3C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800F9100
-lbl_800F9100:
-/* 800F9100 000F4F40  38 6D EB A8 */	addi r3, r13, lbl_8055CFC8@sda21
+.global GetRuntimeTypeInfo__Q34nw4r3lyt8BoundingCFv
+GetRuntimeTypeInfo__Q34nw4r3lyt8BoundingCFv:
+/* 800F9100 000F4F40  38 6D EB A8 */	addi r3, r13, typeInfo__Q34nw4r3lyt8Bounding@sda21
 /* 800F9104 000F4F44  4E 80 00 20 */	blr
 /* 800F9108 000F4F48  00 00 00 00 */	.4byte 0x00000000
 /* 800F910C 000F4F4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800F9110
-lbl_800F9110:
-/* 800F9110 000F4F50  38 0D EB 80 */	addi r0, r13, lbl_8055CFA0@sda21
-/* 800F9114 000F4F54  90 0D EB A8 */	stw r0, lbl_8055CFC8@sda21(r13)
+.global "__sinit_@@1lyt_bounding_cpp_800F9110"
+"__sinit_@@1lyt_bounding_cpp_800F9110":
+/* 800F9110 000F4F50  38 0D EB 80 */	addi r0, r13, typeInfo__Q34nw4r3lyt4Pane@sda21
+/* 800F9114 000F4F54  90 0D EB A8 */	stw r0, typeInfo__Q34nw4r3lyt8Bounding@sda21(r13)
 /* 800F9118 000F4F58  4E 80 00 20 */	blr
 /* 800F911C 000F4F5C  00 00 00 00 */	.4byte 0x00000000

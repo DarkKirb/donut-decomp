@@ -1,6 +1,6 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055DD40
-lbl_8055DD40:
+.global "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"
+"t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@":
 	.skip 0x8

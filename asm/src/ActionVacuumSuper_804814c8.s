@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804814C8
-lbl_804814C8:
+.global "@52897_804814C8"
+"@52897_804814C8":
 
 	.4byte 0x45436861
 	.4byte 0x6E676532
 	.4byte 0
 
-.global lbl_804814D4
-lbl_804814D4:
+.global "@52901_804814D4"
+"@52901_804814D4":
 
 	.4byte 0x45436861
 	.4byte 0x6E676531
 	.4byte 0
 
-.global lbl_804814E0
-lbl_804814E0:
+.global __vt__Q53scn4step7gimmick10guideboard17ActionVacuumSuper
+__vt__Q53scn4step7gimmick10guideboard17ActionVacuumSuper:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80311538
-	.4byte lbl_80310578
-	.4byte lbl_80311540
-	.4byte lbl_80311590
-	.4byte lbl_80311630
-	.4byte lbl_80310570
-	.4byte lbl_8031056C
-	.4byte lbl_80310568
-	.4byte lbl_80310564
-	.4byte lbl_80310560
-	.4byte lbl_803116B8
-	.4byte lbl_80311734
-	.4byte lbl_80311794
-	.4byte lbl_80310550
-	.4byte lbl_80310574
+	.4byte topLName__Q53scn4step7gimmick10guideboard17ActionVacuumSuperCFv
+	.4byte isInitState__Q53scn4step7gimmick10guideboard6ActionCFv
+	.4byte reset__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFb
+	.4byte updateFrame__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFv
+	.4byte onFrameEnd__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFv
+	.4byte onEat__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onVomit__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onDrink__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onRun__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onHover__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAbilityGet__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFRCQ33hel4math7Vector3
+	.4byte onAbilityClear__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFRCQ33hel4math7Vector3
+	.4byte onVacuumSuper__Q53scn4step7gimmick10guideboard17ActionVacuumSuperFRCQ33hel4math7Vector3
+	.4byte onThroughLand__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAttack__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
 	.4byte 0

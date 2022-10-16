@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801834E0
-lbl_801834E0:
+.global __ct__Q36effect6detail20PolyEffectMemManagerFRQ23mem10IAllocatorUl
+__ct__Q36effect6detail20PolyEffectMemManagerFRQ23mem10IAllocatorUl:
 /* 801834E0 0017F320  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801834E4 0017F324  7C 08 02 A6 */	mflr r0
 /* 801834E8 0017F328  90 01 00 34 */	stw r0, 0x34(r1)
@@ -14,7 +14,7 @@ lbl_801834E0:
 /* 80183500 0017F340  54 A4 70 22 */	slwi r4, r5, 14
 /* 80183504 0017F344  38 A0 00 04 */	li r5, 0x4
 /* 80183508 0017F348  7F 86 E3 78 */	mr r6, r28
-/* 8018350C 0017F34C  48 03 9D 99 */	bl lbl_801BD2A4
+/* 8018350C 0017F34C  48 03 9D 99 */	bl __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
 /* 80183510 0017F350  3B BA 00 0C */	addi r29, r26, 0xc
 /* 80183514 0017F354  93 9D 00 00 */	stw r28, 0x0(r29)
 /* 80183518 0017F358  93 7D 00 04 */	stw r27, 0x4(r29)
@@ -23,14 +23,14 @@ lbl_801834E0:
 /* 80183524 0017F364  2C 1B 00 00 */	cmpwi r27, 0x0
 /* 80183528 0017F368  41 82 00 64 */	beq lbl_8018358C
 /* 8018352C 0017F36C  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80183530 0017F370  4B FF AB C9 */	bl lbl_8017E0F8
+/* 80183530 0017F370  4B FF AB C9 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 80183534 0017F374  38 7D 00 0C */	addi r3, r29, 0xc
 /* 80183538 0017F378  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018353C 0017F37C  41 82 00 14 */	beq lbl_80183550
 /* 80183540 0017F380  1C 9B 00 5C */	mulli r4, r27, 0x5c
 /* 80183544 0017F384  38 A0 00 04 */	li r5, 0x4
 /* 80183548 0017F388  7F 86 E3 78 */	mr r6, r28
-/* 8018354C 0017F38C  48 03 9D 59 */	bl lbl_801BD2A4
+/* 8018354C 0017F38C  48 03 9D 59 */	bl __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
 .global lbl_80183550
 lbl_80183550:
 /* 80183550 0017F390  90 7D 00 08 */	stw r3, 0x8(r29)
@@ -40,11 +40,11 @@ lbl_80183550:
 .global lbl_80183560
 lbl_80183560:
 /* 80183560 0017F3A0  7F A3 EB 78 */	mr r3, r29
-/* 80183564 0017F3A4  4B FF FB A1 */	bl lbl_80183104
+/* 80183564 0017F3A4  4B FF FB A1 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80183568 0017F3A8  7C 63 FA 14 */	add r3, r3, r31
 /* 8018356C 0017F3AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80183570 0017F3B0  41 82 00 08 */	beq lbl_80183578
-/* 80183574 0017F3B4  48 00 02 C9 */	bl lbl_8018383C
+/* 80183574 0017F3B4  48 00 02 C9 */	bl __ct__Q46effect6detail20PolyEffectMemManager8OneBlockFv
 .global lbl_80183578
 lbl_80183578:
 /* 80183578 0017F3B8  3B DE 00 01 */	addi r30, r30, 0x1
@@ -61,7 +61,7 @@ lbl_8018358C:
 /* 80183594 0017F3D4  90 61 00 10 */	stw r3, 0x10(r1)
 /* 80183598 0017F3D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8018359C 0017F3DC  38 61 00 10 */	addi r3, r1, 0x10
-/* 801835A0 0017F3E0  4B F7 D2 41 */	bl lbl_801007E0
+/* 801835A0 0017F3E0  4B F7 D2 41 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 801835A4 0017F3E4  7C 7D 1B 78 */	mr r29, r3
 /* 801835A8 0017F3E8  3B 80 00 00 */	li r28, 0x0
 /* 801835AC 0017F3EC  3B E0 00 00 */	li r31, 0x0
@@ -71,13 +71,13 @@ lbl_801835B4:
 /* 801835B4 0017F3F4  38 61 00 08 */	addi r3, r1, 0x8
 /* 801835B8 0017F3F8  7C 9D FA 14 */	add r4, r29, r31
 /* 801835BC 0017F3FC  38 A0 40 00 */	li r5, 0x4000
-/* 801835C0 0017F400  48 03 BC 2D */	bl lbl_801BF1EC
+/* 801835C0 0017F400  48 03 BC 2D */	bl __ct__Q23mem8MemBlockFPvUl
 /* 801835C4 0017F404  7C 7E 1B 78 */	mr r30, r3
 /* 801835C8 0017F408  38 7A 00 0C */	addi r3, r26, 0xc
 /* 801835CC 0017F40C  7F 84 E3 78 */	mr r4, r28
-/* 801835D0 0017F410  48 00 00 D9 */	bl lbl_801836A8
+/* 801835D0 0017F410  48 00 00 D9 */	bl "__vc__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>FUl"
 /* 801835D4 0017F414  7F C4 F3 78 */	mr r4, r30
-/* 801835D8 0017F418  48 00 03 79 */	bl lbl_80183950
+/* 801835D8 0017F418  48 00 03 79 */	bl assign__Q46effect6detail20PolyEffectMemManager8OneBlockFRCQ23mem8MemBlock
 /* 801835DC 0017F41C  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 801835E0 0017F420  3B FF 40 00 */	addi r31, r31, 0x4000
 .global lbl_801835E4
@@ -91,8 +91,8 @@ lbl_801835E4:
 /* 801835FC 0017F43C  7C 08 03 A6 */	mtlr r0
 /* 80183600 0017F440  38 21 00 30 */	addi r1, r1, 0x30
 /* 80183604 0017F444  4E 80 00 20 */	blr
-.global lbl_80183608
-lbl_80183608:
+.global "__dt__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>Fv"
+"__dt__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>Fv":
 /* 80183608 0017F448  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018360C 0017F44C  7C 08 02 A6 */	mflr r0
 /* 80183610 0017F450  90 01 00 24 */	stw r0, 0x24(r1)
@@ -109,29 +109,29 @@ lbl_80183608:
 .global lbl_8018363C
 lbl_8018363C:
 /* 8018363C 0017F47C  7F A3 EB 78 */	mr r3, r29
-/* 80183640 0017F480  4B FF FA C5 */	bl lbl_80183104
+/* 80183640 0017F480  4B FF FA C5 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80183644 0017F484  38 1F FF FF */	addi r0, r31, -0x1
 /* 80183648 0017F488  1C 00 00 5C */	mulli r0, r0, 0x5c
 /* 8018364C 0017F48C  7C 63 02 14 */	add r3, r3, r0
 /* 80183650 0017F490  38 80 FF FF */	li r4, -0x1
-/* 80183654 0017F494  48 00 02 A1 */	bl lbl_801838F4
+/* 80183654 0017F494  48 00 02 A1 */	bl __dt__Q46effect6detail20PolyEffectMemManager8OneBlockFv
 /* 80183658 0017F498  3B FF FF FF */	addi r31, r31, -0x1
 .global lbl_8018365C
 lbl_8018365C:
 /* 8018365C 0017F49C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80183660 0017F4A0  40 82 FF DC */	bne lbl_8018363C
 /* 80183664 0017F4A4  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80183668 0017F4A8  4B FF AA 91 */	bl lbl_8017E0F8
+/* 80183668 0017F4A8  4B FF AA 91 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 .global lbl_8018366C
 lbl_8018366C:
 /* 8018366C 0017F4AC  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80183670 0017F4B0  38 80 FF FF */	li r4, -0x1
-/* 80183674 0017F4B4  4B FF AA C9 */	bl lbl_8017E13C
+/* 80183674 0017F4B4  4B FF AA C9 */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 80183678 0017F4B8  7F C0 07 34 */	extsh r0, r30
 /* 8018367C 0017F4BC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80183680 0017F4C0  40 81 00 0C */	ble lbl_8018368C
 /* 80183684 0017F4C4  7F A3 EB 78 */	mr r3, r29
-/* 80183688 0017F4C8  48 03 C0 8D */	bl lbl_801BF714
+/* 80183688 0017F4C8  48 03 C0 8D */	bl __dl__FPv
 .global lbl_8018368C
 lbl_8018368C:
 /* 8018368C 0017F4CC  7F A3 EB 78 */	mr r3, r29
@@ -141,8 +141,8 @@ lbl_8018368C:
 /* 8018369C 0017F4DC  7C 08 03 A6 */	mtlr r0
 /* 801836A0 0017F4E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801836A4 0017F4E4  4E 80 00 20 */	blr
-.global lbl_801836A8
-lbl_801836A8:
+.global "__vc__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>FUl"
+"__vc__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>FUl":
 /* 801836A8 0017F4E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801836AC 0017F4EC  7C 08 02 A6 */	mflr r0
 /* 801836B0 0017F4F0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -152,9 +152,9 @@ lbl_801836A8:
 /* 801836C0 0017F500  7C 9F 23 78 */	mr r31, r4
 /* 801836C4 0017F504  7F E3 FB 78 */	mr r3, r31
 /* 801836C8 0017F508  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 801836CC 0017F50C  4B EA 0D D5 */	bl lbl_800244A0
+/* 801836CC 0017F50C  4B EA 0D D5 */	bl DefaultSwitchThreadCallback
 /* 801836D0 0017F510  7F C3 F3 78 */	mr r3, r30
-/* 801836D4 0017F514  4B FF FA 31 */	bl lbl_80183104
+/* 801836D4 0017F514  4B FF FA 31 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 801836D8 0017F518  1C 1F 00 5C */	mulli r0, r31, 0x5c
 /* 801836DC 0017F51C  7C 63 02 14 */	add r3, r3, r0
 /* 801836E0 0017F520  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -163,8 +163,8 @@ lbl_801836A8:
 /* 801836EC 0017F52C  7C 08 03 A6 */	mtlr r0
 /* 801836F0 0017F530  38 21 00 10 */	addi r1, r1, 0x10
 /* 801836F4 0017F534  4E 80 00 20 */	blr
-.global lbl_801836F8
-lbl_801836F8:
+.global __dt__Q36effect6detail20PolyEffectMemManagerFv
+__dt__Q36effect6detail20PolyEffectMemManagerFv:
 /* 801836F8 0017F538  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801836FC 0017F53C  7C 08 02 A6 */	mflr r0
 /* 80183700 0017F540  90 01 00 14 */	stw r0, 0x14(r1)
@@ -176,15 +176,15 @@ lbl_801836F8:
 /* 80183718 0017F558  41 82 00 30 */	beq lbl_80183748
 /* 8018371C 0017F55C  38 63 00 0C */	addi r3, r3, 0xc
 /* 80183720 0017F560  38 80 FF FF */	li r4, -0x1
-/* 80183724 0017F564  4B FF FE E5 */	bl lbl_80183608
+/* 80183724 0017F564  4B FF FE E5 */	bl "__dt__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>Fv"
 /* 80183728 0017F568  7F C3 F3 78 */	mr r3, r30
 /* 8018372C 0017F56C  38 80 FF FF */	li r4, -0x1
-/* 80183730 0017F570  48 03 9B D5 */	bl lbl_801BD304
+/* 80183730 0017F570  48 03 9B D5 */	bl __dt__Q23mem9DataBlockFv
 /* 80183734 0017F574  7F E0 07 34 */	extsh r0, r31
 /* 80183738 0017F578  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018373C 0017F57C  40 81 00 0C */	ble lbl_80183748
 /* 80183740 0017F580  7F C3 F3 78 */	mr r3, r30
-/* 80183744 0017F584  48 03 BF D1 */	bl lbl_801BF714
+/* 80183744 0017F584  48 03 BF D1 */	bl __dl__FPv
 .global lbl_80183748
 lbl_80183748:
 /* 80183748 0017F588  7F C3 F3 78 */	mr r3, r30
@@ -194,8 +194,8 @@ lbl_80183748:
 /* 80183758 0017F598  7C 08 03 A6 */	mtlr r0
 /* 8018375C 0017F59C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80183760 0017F5A0  4E 80 00 20 */	blr
-.global lbl_80183764
-lbl_80183764:
+.global use__Q36effect6detail20PolyEffectMemManagerFv
+use__Q36effect6detail20PolyEffectMemManagerFv:
 /* 80183764 0017F5A4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80183768 0017F5A8  7C 08 02 A6 */	mflr r0
 /* 8018376C 0017F5AC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -208,15 +208,15 @@ lbl_80183764:
 lbl_80183784:
 /* 80183784 0017F5C4  38 7E 00 0C */	addi r3, r30, 0xc
 /* 80183788 0017F5C8  7F E4 FB 78 */	mr r4, r31
-/* 8018378C 0017F5CC  4B FF FF 1D */	bl lbl_801836A8
+/* 8018378C 0017F5CC  4B FF FF 1D */	bl "__vc__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>FUl"
 /* 80183790 0017F5D0  88 03 00 58 */	lbz r0, 0x58(r3)
 /* 80183794 0017F5D4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80183798 0017F5D8  40 82 00 28 */	bne lbl_801837C0
-/* 8018379C 0017F5DC  48 00 02 59 */	bl lbl_801839F4
+/* 8018379C 0017F5DC  48 00 02 59 */	bl use__Q46effect6detail20PolyEffectMemManager8OneBlockFv
 /* 801837A0 0017F5E0  7C 65 1B 78 */	mr r5, r3
 /* 801837A4 0017F5E4  38 61 00 10 */	addi r3, r1, 0x10
 /* 801837A8 0017F5E8  7F E4 FB 78 */	mr r4, r31
-/* 801837AC 0017F5EC  4B FF F7 7D */	bl lbl_80182F28
+/* 801837AC 0017F5EC  4B FF F7 7D */	bl __ct__Q36effect6detail19PolyEffectAllocatorFUlRQ23mem10IAllocator
 /* 801837B0 0017F5F0  7C 64 1B 78 */	mr r4, r3
 /* 801837B4 0017F5F4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801837B8 0017F5F8  80 84 00 04 */	lwz r4, 0x4(r4)
@@ -230,7 +230,7 @@ lbl_801837C4:
 /* 801837C8 0017F608  7C 1F 00 40 */	cmplw r31, r0
 /* 801837CC 0017F60C  41 80 FF B8 */	blt lbl_80183784
 /* 801837D0 0017F610  38 61 00 08 */	addi r3, r1, 0x8
-/* 801837D4 0017F614  4B FF F7 19 */	bl lbl_80182EEC
+/* 801837D4 0017F614  4B FF F7 19 */	bl __ct__Q36effect6detail19PolyEffectAllocatorFv
 /* 801837D8 0017F618  7C 64 1B 78 */	mr r4, r3
 /* 801837DC 0017F61C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801837E0 0017F620  80 84 00 04 */	lwz r4, 0x4(r4)
@@ -242,32 +242,32 @@ lbl_801837E4:
 /* 801837F0 0017F630  7C 08 03 A6 */	mtlr r0
 /* 801837F4 0017F634  38 21 00 20 */	addi r1, r1, 0x20
 /* 801837F8 0017F638  4E 80 00 20 */	blr
-.global lbl_801837FC
-lbl_801837FC:
+.global free__Q36effect6detail20PolyEffectMemManagerFRCQ36effect6detail19PolyEffectAllocator
+free__Q36effect6detail20PolyEffectMemManagerFRCQ36effect6detail19PolyEffectAllocator:
 /* 801837FC 0017F63C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80183800 0017F640  7C 08 02 A6 */	mflr r0
 /* 80183804 0017F644  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80183808 0017F648  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8018380C 0017F64C  7C 7F 1B 78 */	mr r31, r3
 /* 80183810 0017F650  7C 83 23 78 */	mr r3, r4
-/* 80183814 0017F654  4B EF 1F 1D */	bl lbl_80075730
+/* 80183814 0017F654  4B EF 1F 1D */	bl GKI_getfirst
 /* 80183818 0017F658  7C 64 1B 78 */	mr r4, r3
 /* 8018381C 0017F65C  38 7F 00 0C */	addi r3, r31, 0xc
-/* 80183820 0017F660  4B FF FE 89 */	bl lbl_801836A8
-/* 80183824 0017F664  48 00 01 E1 */	bl lbl_80183A04
+/* 80183820 0017F660  4B FF FE 89 */	bl "__vc__Q23mem66RuntimeFixedArray<Q46effect6detail20PolyEffectMemManager8OneBlock>FUl"
+/* 80183824 0017F664  48 00 01 E1 */	bl free__Q46effect6detail20PolyEffectMemManager8OneBlockFv
 /* 80183828 0017F668  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8018382C 0017F66C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80183830 0017F670  7C 08 03 A6 */	mtlr r0
 /* 80183834 0017F674  38 21 00 10 */	addi r1, r1, 0x10
 /* 80183838 0017F678  4E 80 00 20 */	blr
-.global lbl_8018383C
-lbl_8018383C:
+.global __ct__Q46effect6detail20PolyEffectMemManager8OneBlockFv
+__ct__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 8018383C 0017F67C  38 00 00 00 */	li r0, 0x0
 /* 80183840 0017F680  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80183844 0017F684  98 03 00 58 */	stb r0, 0x58(r3)
 /* 80183848 0017F688  4E 80 00 20 */	blr
-.global lbl_8018384C
-lbl_8018384C:
+.global "__dt__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
+"__dt__Q24util28PlacementNew<Q23mem7HeapExp>Fv":
 /* 8018384C 0017F68C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80183850 0017F690  7C 08 02 A6 */	mflr r0
 /* 80183854 0017F694  90 01 00 14 */	stw r0, 0x14(r1)
@@ -277,12 +277,12 @@ lbl_8018384C:
 /* 80183864 0017F6A4  7C 9F 23 78 */	mr r31, r4
 /* 80183868 0017F6A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018386C 0017F6AC  41 82 00 1C */	beq lbl_80183888
-/* 80183870 0017F6B0  48 00 00 35 */	bl lbl_801838A4
+/* 80183870 0017F6B0  48 00 00 35 */	bl "destruct__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
 /* 80183874 0017F6B4  7F E0 07 34 */	extsh r0, r31
 /* 80183878 0017F6B8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018387C 0017F6BC  40 81 00 0C */	ble lbl_80183888
 /* 80183880 0017F6C0  7F C3 F3 78 */	mr r3, r30
-/* 80183884 0017F6C4  48 03 BE 91 */	bl lbl_801BF714
+/* 80183884 0017F6C4  48 03 BE 91 */	bl __dl__FPv
 .global lbl_80183888
 lbl_80183888:
 /* 80183888 0017F6C8  7F C3 F3 78 */	mr r3, r30
@@ -292,8 +292,8 @@ lbl_80183888:
 /* 80183898 0017F6D8  7C 08 03 A6 */	mtlr r0
 /* 8018389C 0017F6DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801838A0 0017F6E0  4E 80 00 20 */	blr
-.global lbl_801838A4
-lbl_801838A4:
+.global "destruct__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
+"destruct__Q24util28PlacementNew<Q23mem7HeapExp>Fv":
 /* 801838A4 0017F6E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801838A8 0017F6E8  7C 08 02 A6 */	mflr r0
 /* 801838AC 0017F6EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -316,8 +316,8 @@ lbl_801838E0:
 /* 801838E8 0017F728  7C 08 03 A6 */	mtlr r0
 /* 801838EC 0017F72C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801838F0 0017F730  4E 80 00 20 */	blr
-.global lbl_801838F4
-lbl_801838F4:
+.global __dt__Q46effect6detail20PolyEffectMemManager8OneBlockFv
+__dt__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 801838F4 0017F734  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801838F8 0017F738  7C 08 02 A6 */	mflr r0
 /* 801838FC 0017F73C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -328,12 +328,12 @@ lbl_801838F4:
 /* 80183910 0017F750  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80183914 0017F754  41 82 00 20 */	beq lbl_80183934
 /* 80183918 0017F758  38 80 FF FF */	li r4, -0x1
-/* 8018391C 0017F75C  4B FF FF 31 */	bl lbl_8018384C
+/* 8018391C 0017F75C  4B FF FF 31 */	bl "__dt__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
 /* 80183920 0017F760  7F E0 07 34 */	extsh r0, r31
 /* 80183924 0017F764  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80183928 0017F768  40 81 00 0C */	ble lbl_80183934
 /* 8018392C 0017F76C  7F C3 F3 78 */	mr r3, r30
-/* 80183930 0017F770  48 03 BD E5 */	bl lbl_801BF714
+/* 80183930 0017F770  48 03 BD E5 */	bl __dl__FPv
 .global lbl_80183934
 lbl_80183934:
 /* 80183934 0017F774  7F C3 F3 78 */	mr r3, r30
@@ -343,8 +343,8 @@ lbl_80183934:
 /* 80183944 0017F784  7C 08 03 A6 */	mtlr r0
 /* 80183948 0017F788  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018394C 0017F78C  4E 80 00 20 */	blr
-.global lbl_80183950
-lbl_80183950:
+.global assign__Q46effect6detail20PolyEffectMemManager8OneBlockFRCQ23mem8MemBlock
+assign__Q46effect6detail20PolyEffectMemManager8OneBlockFRCQ23mem8MemBlock:
 /* 80183950 0017F790  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80183954 0017F794  7C 08 02 A6 */	mflr r0
 /* 80183958 0017F798  90 01 00 44 */	stw r0, 0x44(r1)
@@ -355,9 +355,9 @@ lbl_80183950:
 /* 8018396C 0017F7AC  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 80183970 0017F7B0  90 A1 00 08 */	stw r5, 0x8(r1)
 /* 80183974 0017F7B4  90 01 00 0C */	stw r0, 0xc(r1)
-/* 80183978 0017F7B8  3C 80 80 45 */	lis r4, lbl_80453408@ha
-/* 8018397C 0017F7BC  3B E4 34 08 */	addi r31, r4, lbl_80453408@l
-/* 80183980 0017F7C0  4B FF FF 25 */	bl lbl_801838A4
+/* 80183978 0017F7B8  3C 80 80 45 */	lis r4, "@49795"@ha
+/* 8018397C 0017F7BC  3B E4 34 08 */	addi r31, r4, "@49795"@l
+/* 80183980 0017F7C0  4B FF FF 25 */	bl "destruct__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
 /* 80183984 0017F7C4  3B DD 00 04 */	addi r30, r29, 0x4
 /* 80183988 0017F7C8  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 8018398C 0017F7CC  41 82 00 4C */	beq lbl_801839D8
@@ -373,13 +373,13 @@ lbl_801839A0:
 /* 801839AC 0017F7EC  38 61 00 10 */	addi r3, r1, 0x10
 /* 801839B0 0017F7F0  7F E4 FB 78 */	mr r4, r31
 /* 801839B4 0017F7F4  38 A0 00 20 */	li r5, 0x20
-/* 801839B8 0017F7F8  48 01 A0 05 */	bl lbl_8019D9BC
+/* 801839B8 0017F7F8  48 01 A0 05 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801839BC 0017F7FC  7F C3 F3 78 */	mr r3, r30
 /* 801839C0 0017F800  38 81 00 10 */	addi r4, r1, 0x10
 /* 801839C4 0017F804  38 A1 00 08 */	addi r5, r1, 0x8
 /* 801839C8 0017F808  38 C0 00 01 */	li r6, 0x1
 /* 801839CC 0017F80C  38 E0 00 00 */	li r7, 0x0
-/* 801839D0 0017F810  48 03 A8 E1 */	bl lbl_801BE2B0
+/* 801839D0 0017F810  48 03 A8 E1 */	bl "__ct__Q23mem7HeapExpFRCQ33hel6common15FixedString<32>RCQ23mem8MemBlockbb"
 /* 801839D4 0017F814  7C 7E 1B 78 */	mr r30, r3
 .global lbl_801839D8
 lbl_801839D8:
@@ -390,14 +390,14 @@ lbl_801839D8:
 /* 801839E8 0017F828  7C 08 03 A6 */	mtlr r0
 /* 801839EC 0017F82C  38 21 00 40 */	addi r1, r1, 0x40
 /* 801839F0 0017F830  4E 80 00 20 */	blr
-.global lbl_801839F4
-lbl_801839F4:
+.global use__Q46effect6detail20PolyEffectMemManager8OneBlockFv
+use__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 801839F4 0017F834  38 00 00 01 */	li r0, 0x1
 /* 801839F8 0017F838  98 03 00 58 */	stb r0, 0x58(r3)
 /* 801839FC 0017F83C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80183A00 0017F840  4E 80 00 20 */	blr
-.global lbl_80183A04
-lbl_80183A04:
+.global free__Q46effect6detail20PolyEffectMemManager8OneBlockFv
+free__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 80183A04 0017F844  38 00 00 00 */	li r0, 0x0
 /* 80183A08 0017F848  98 03 00 58 */	stb r0, 0x58(r3)
 /* 80183A0C 0017F84C  4E 80 00 20 */	blr

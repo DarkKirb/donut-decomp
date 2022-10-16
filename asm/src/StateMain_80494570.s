@@ -1,62 +1,62 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80494570
-lbl_80494570:
+.global __vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain
+__vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E37E8
-	.4byte lbl_803D8954
-	.4byte lbl_803D8958
-	.4byte lbl_803D895C
-	.4byte lbl_803D8960
-	.4byte lbl_803D8964
+	.4byte __dt__Q53scn4step6weapon20enemywaterbulletwarp9StateMainFv
+	.4byte procAnim__Q43scn4step6weapon9StateBaseFv
+	.4byte procMove__Q43scn4step6weapon9StateBaseFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q43scn4step6weapon9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step6weapon9StateBaseFv
 
-.global lbl_80494590
-lbl_80494590:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803E390C
-	.4byte lbl_803E3910
-	.4byte lbl_803E396C
-	.4byte lbl_803D895C
-	.4byte lbl_803E39D0
-	.4byte lbl_803E3A24
-
-.global lbl_804945B0
-lbl_804945B0:
+.global __vt__Q53scn4step6weapon15cutterfinalwave9StateMain
+__vt__Q53scn4step6weapon15cutterfinalwave9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E3CA0
-	.4byte lbl_803E3BA8
-	.4byte lbl_803E3C00
-	.4byte lbl_803D895C
-	.4byte lbl_803E3C04
-	.4byte lbl_803E3C08
+	.4byte __dt__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procMove__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon15cutterfinalwave9StateMainFv
 
-.global lbl_804945D0
-lbl_804945D0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803E3E30
-	.4byte lbl_803E3D74
-	.4byte lbl_803E3DCC
-	.4byte lbl_803D895C
-	.4byte lbl_803E3DD0
-	.4byte lbl_803E3DD4
-
-.global lbl_804945F0
-lbl_804945F0:
+.global __vt__Q53scn4step6weapon12sparkshotlv19StateMain
+__vt__Q53scn4step6weapon12sparkshotlv19StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E3F60
-	.4byte lbl_803E3EFC
-	.4byte lbl_803E3F54
-	.4byte lbl_803D895C
-	.4byte lbl_803E3F58
-	.4byte lbl_803E3F5C
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv19StateMainFv
+
+.global __vt__Q53scn4step6weapon12sparkshotlv29StateMain
+__vt__Q53scn4step6weapon12sparkshotlv29StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv29StateMainFv
+
+.global __vt__Q53scn4step6weapon12sparkshotlv39StateMain
+__vt__Q53scn4step6weapon12sparkshotlv39StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv39StateMainFv

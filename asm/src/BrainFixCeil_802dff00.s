@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802DFF00
-lbl_802DFF00:
+.global __ct__Q53scn4step5enemy6shotzo12BrainFixCeilFRQ43scn4step5enemy5Enemy
+__ct__Q53scn4step5enemy6shotzo12BrainFixCeilFRQ43scn4step5enemy5Enemy:
 /* 802DFF00 002DBD40  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802DFF04 002DBD44  7C 08 02 A6 */	mflr r0
 /* 802DFF08 002DBD48  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802DFF0C 002DBD4C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802DFF10 002DBD50  7C 7F 1B 78 */	mr r31, r3
-/* 802DFF14 002DBD54  4B F9 EF 01 */	bl lbl_8027EE14
-/* 802DFF18 002DBD58  3C 60 80 48 */	lis r3, lbl_8047BFF8@ha
-/* 802DFF1C 002DBD5C  38 03 BF F8 */	addi r0, r3, lbl_8047BFF8@l
+/* 802DFF14 002DBD54  4B F9 EF 01 */	bl __ct__Q43scn4step5enemy9BrainBaseFRQ43scn4step5enemy5Enemy
+/* 802DFF18 002DBD58  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy6shotzo12BrainFixCeil@ha
+/* 802DFF1C 002DBD5C  38 03 BF F8 */	addi r0, r3, __vt__Q53scn4step5enemy6shotzo12BrainFixCeil@l
 /* 802DFF20 002DBD60  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 802DFF24 002DBD64  7F E3 FB 78 */	mr r3, r31
 /* 802DFF28 002DBD68  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -19,8 +19,8 @@ lbl_802DFF00:
 /* 802DFF34 002DBD74  38 21 00 10 */	addi r1, r1, 0x10
 /* 802DFF38 002DBD78  4E 80 00 20 */	blr
 
-.global lbl_802DFF3C
-lbl_802DFF3C:
+.global onStart__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+onStart__Q53scn4step5enemy6shotzo12BrainFixCeilFv:
 /* 802DFF3C 002DBD7C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 802DFF40 002DBD80  7C 08 02 A6 */	mflr r0
 /* 802DFF44 002DBD84  90 01 00 44 */	stw r0, 0x44(r1)
@@ -31,65 +31,65 @@ lbl_802DFF3C:
 /* 802DFF58 002DBD98  39 61 00 20 */	addi r11, r1, 0x20
 /* 802DFF5C 002DBD9C  4B D2 73 E9 */	bl lbl_80007344
 /* 802DFF60 002DBDA0  7C 7D 1B 78 */	mr r29, r3
-/* 802DFF64 002DBDA4  4B E2 08 7D */	bl lbl_801007E0
+/* 802DFF64 002DBDA4  4B E2 08 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DFF68 002DBDA8  7C 7E 1B 78 */	mr r30, r3
 /* 802DFF6C 002DBDAC  7F A3 EB 78 */	mr r3, r29
-/* 802DFF70 002DBDB0  4B E2 08 71 */	bl lbl_801007E0
-/* 802DFF74 002DBDB4  4B FA 82 31 */	bl lbl_802881A4
+/* 802DFF70 002DBDB0  4B E2 08 71 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802DFF74 002DBDB4  4B FA 82 31 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
 /* 802DFF78 002DBDB8  7C 7F 1B 78 */	mr r31, r3
-/* 802DFF7C 002DBDBC  48 12 5F 85 */	bl lbl_80405F00
+/* 802DFF7C 002DBDBC  48 12 5F 85 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 802DFF80 002DBDC0  38 9F 00 10 */	addi r4, r31, 0x10
 /* 802DFF84 002DBDC4  2C 04 00 00 */	cmpwi r4, 0x0
 /* 802DFF88 002DBDC8  41 82 00 28 */	beq lbl_802DFFB0
-/* 802DFF8C 002DBDCC  3C 60 80 46 */	lis r3, lbl_80464478@ha
-/* 802DFF90 002DBDD0  38 03 44 78 */	addi r0, r3, lbl_80464478@l
+/* 802DFF8C 002DBDCC  3C 60 80 46 */	lis r3, "__vt__Q24util28StateFactory<Q24util6IState>"@ha
+/* 802DFF90 002DBDD0  38 03 44 78 */	addi r0, r3, "__vt__Q24util28StateFactory<Q24util6IState>"@l
 /* 802DFF94 002DBDD4  90 04 00 00 */	stw r0, 0x0(r4)
 /* 802DFF98 002DBDD8  38 1F 00 90 */	addi r0, r31, 0x90
 /* 802DFF9C 002DBDDC  90 04 00 04 */	stw r0, 0x4(r4)
-/* 802DFFA0 002DBDE0  3C 60 80 48 */	lis r3, lbl_8047BFC8@ha
-/* 802DFFA4 002DBDE4  38 03 BF C8 */	addi r0, r3, lbl_8047BFC8@l
+/* 802DFFA0 002DBDE0  3C 60 80 48 */	lis r3, "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>"@ha
+/* 802DFFA4 002DBDE4  38 03 BF C8 */	addi r0, r3, "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>"@l
 /* 802DFFA8 002DBDE8  90 04 00 00 */	stw r0, 0x0(r4)
 /* 802DFFAC 002DBDEC  93 C4 00 08 */	stw r30, 0x8(r4)
 .global lbl_802DFFB0
 lbl_802DFFB0:
 /* 802DFFB0 002DBDF0  90 9F 00 0C */	stw r4, 0xc(r31)
-/* 802DFFB4 002DBDF4  C3 C2 C2 C0 */	lfs f30, lbl_80562240@sda21(r2)
+/* 802DFFB4 002DBDF4  C3 C2 C2 C0 */	lfs f30, "@55186"@sda21(r2)
 /* 802DFFB8 002DBDF8  7F A3 EB 78 */	mr r3, r29
-/* 802DFFBC 002DBDFC  4B E2 08 25 */	bl lbl_801007E0
-/* 802DFFC0 002DBE00  4B ED 74 A1 */	bl lbl_801B7460
+/* 802DFFBC 002DBDFC  4B E2 08 25 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802DFFC0 002DBE00  4B ED 74 A1 */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
 /* 802DFFC4 002DBE04  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802DFFC8 002DBE08  41 82 00 64 */	beq lbl_802E002C
 /* 802DFFCC 002DBE0C  7F A3 EB 78 */	mr r3, r29
-/* 802DFFD0 002DBE10  4B E2 08 11 */	bl lbl_801007E0
-/* 802DFFD4 002DBE14  4B ED 74 8D */	bl lbl_801B7460
+/* 802DFFD0 002DBE10  4B E2 08 11 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802DFFD4 002DBE14  4B ED 74 8D */	bl collidedLogCount__Q35mcoll6detail12DetectResultCFv
 /* 802DFFD8 002DBE18  2C 03 00 01 */	cmpwi r3, 0x1
 /* 802DFFDC 002DBE1C  41 82 00 50 */	beq lbl_802E002C
 /* 802DFFE0 002DBE20  7F A3 EB 78 */	mr r3, r29
-/* 802DFFE4 002DBE24  4B E2 07 FD */	bl lbl_801007E0
-/* 802DFFE8 002DBE28  4B FA E8 B1 */	bl lbl_8028E898
+/* 802DFFE4 002DBE24  4B E2 07 FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802DFFE8 002DBE28  4B FA E8 B1 */	bl GetRotByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
 /* 802DFFEC 002DBE2C  FF E0 08 90 */	fmr f31, f1
-/* 802DFFF0 002DBE30  C0 02 C2 C8 */	lfs f0, lbl_80562248@sda21(r2)
+/* 802DFFF0 002DBE30  C0 02 C2 C8 */	lfs f0, "@55188"@sda21(r2)
 /* 802DFFF4 002DBE34  EC 20 00 72 */	fmuls f1, f0, f1
-/* 802DFFF8 002DBE38  C0 02 C2 C4 */	lfs f0, lbl_80562244@sda21(r2)
+/* 802DFFF8 002DBE38  C0 02 C2 C4 */	lfs f0, "@55187"@sda21(r2)
 /* 802DFFFC 002DBE3C  EC 20 00 72 */	fmuls f1, f0, f1
-/* 802E0000 002DBE40  4B E1 EB 21 */	bl lbl_800FEB20
+/* 802E0000 002DBE40  4B E1 EB 21 */	bl CosFIdx__Q24nw4r4mathFf
 /* 802E0004 002DBE44  FF C0 08 50 */	fneg f30, f1
-/* 802E0008 002DBE48  C0 02 C2 C8 */	lfs f0, lbl_80562248@sda21(r2)
+/* 802E0008 002DBE48  C0 02 C2 C8 */	lfs f0, "@55188"@sda21(r2)
 /* 802E000C 002DBE4C  EC 20 07 F2 */	fmuls f1, f0, f31
-/* 802E0010 002DBE50  C0 02 C2 C4 */	lfs f0, lbl_80562244@sda21(r2)
+/* 802E0010 002DBE50  C0 02 C2 C4 */	lfs f0, "@55187"@sda21(r2)
 /* 802E0014 002DBE54  EC 20 00 72 */	fmuls f1, f0, f1
-/* 802E0018 002DBE58  4B E1 EA 89 */	bl lbl_800FEAA0
+/* 802E0018 002DBE58  4B E1 EA 89 */	bl SinFIdx__Q24nw4r4mathFf
 /* 802E001C 002DBE5C  FC 40 F0 90 */	fmr f2, f30
-/* 802E0020 002DBE60  4B E1 EB E1 */	bl lbl_800FEC00
-/* 802E0024 002DBE64  C0 02 C2 CC */	lfs f0, lbl_8056224C@sda21(r2)
+/* 802E0020 002DBE60  4B E1 EB E1 */	bl Atan2FIdx__Q24nw4r4mathFff
+/* 802E0024 002DBE64  C0 02 C2 CC */	lfs f0, "@55189"@sda21(r2)
 /* 802E0028 002DBE68  EF C0 00 72 */	fmuls f30, f0, f1
 .global lbl_802E002C
 lbl_802E002C:
 /* 802E002C 002DBE6C  7F A3 EB 78 */	mr r3, r29
-/* 802E0030 002DBE70  4B E2 07 B1 */	bl lbl_801007E0
-/* 802E0034 002DBE74  4B FA 81 61 */	bl lbl_80288194
+/* 802E0030 002DBE70  4B E2 07 B1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802E0034 002DBE74  4B FA 81 61 */	bl custom__Q43scn4step5enemy5EnemyFv
 /* 802E0038 002DBE78  7C 7E 1B 78 */	mr r30, r3
-/* 802E003C 002DBE7C  4B FA 25 71 */	bl lbl_802825AC
+/* 802E003C 002DBE7C  4B FA 25 71 */	bl "RuntimeTypeInfoImpl<Q53scn4step5enemy6shotzo6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 802E0040 002DBE80  7C 7F 1B 78 */	mr r31, r3
 /* 802E0044 002DBE84  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 802E0048 002DBE88  41 82 00 48 */	beq lbl_802E0090
@@ -125,7 +125,7 @@ lbl_802E0090:
 lbl_802E0094:
 /* 802E0094 002DBED4  7F C3 F3 78 */	mr r3, r30
 /* 802E0098 002DBED8  FC 20 F0 90 */	fmr f1, f30
-/* 802E009C 002DBEDC  48 00 02 ED */	bl lbl_802E0388
+/* 802E009C 002DBEDC  48 00 02 ED */	bl setAimAngle__Q53scn4step5enemy6shotzo6CustomFf
 /* 802E00A0 002DBEE0  38 60 00 01 */	li r3, 0x1
 /* 802E00A4 002DBEE4  38 00 00 38 */	li r0, 0x38
 /* 802E00A8 002DBEE8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
@@ -140,6 +140,6 @@ lbl_802E0094:
 /* 802E00CC 002DBF0C  38 21 00 40 */	addi r1, r1, 0x40
 /* 802E00D0 002DBF10  4E 80 00 20 */	blr
 
-.global lbl_802E00D4
-lbl_802E00D4:
-/* 802E00D4 002DBF14  4B FB 0F 98 */	b lbl_8029106C
+.global __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+__dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv:
+/* 802E00D4 002DBF14  4B FB 0F 98 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv

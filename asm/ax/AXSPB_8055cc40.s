@@ -1,82 +1,82 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CC40
-lbl_8055CC40:
+.global __AXSpbAux3
+__AXSpbAux3:
 	.skip 0x4
 
-.global lbl_8055CC44
-lbl_8055CC44:
+.global __AXSpbAux2
+__AXSpbAux2:
 	.skip 0x4
 
-.global lbl_8055CC48
-lbl_8055CC48:
+.global __AXSpbAux1
+__AXSpbAux1:
 	.skip 0x4
 
-.global lbl_8055CC4C
-lbl_8055CC4C:
+.global __AXSpbAux0
+__AXSpbAux0:
 	.skip 0x4
 
-.global lbl_8055CC50
-lbl_8055CC50:
+.global __AXSpbMain3
+__AXSpbMain3:
 	.skip 0x4
 
-.global lbl_8055CC54
-lbl_8055CC54:
+.global __AXSpbMain2
+__AXSpbMain2:
 	.skip 0x4
 
-.global lbl_8055CC58
-lbl_8055CC58:
+.global __AXSpbMain1
+__AXSpbMain1:
 	.skip 0x4
 
-.global lbl_8055CC5C
-lbl_8055CC5C:
+.global __AXSpbMain0
+__AXSpbMain0:
 	.skip 0x4
 
-.global lbl_8055CC60
-lbl_8055CC60:
+.global __AXSpbACS
+__AXSpbACS:
 	.skip 0x4
 
-.global lbl_8055CC64
-lbl_8055CC64:
+.global __AXSpbACR
+__AXSpbACR:
 	.skip 0x4
 
-.global lbl_8055CC68
-lbl_8055CC68:
+.global __AXSpbACL
+__AXSpbACL:
 	.skip 0x4
 
-.global lbl_8055CC6C
-lbl_8055CC6C:
+.global __AXSpbABS
+__AXSpbABS:
 	.skip 0x4
 
-.global lbl_8055CC70
-lbl_8055CC70:
+.global __AXSpbABR
+__AXSpbABR:
 	.skip 0x4
 
-.global lbl_8055CC74
-lbl_8055CC74:
+.global __AXSpbABL
+__AXSpbABL:
 	.skip 0x4
 
-.global lbl_8055CC78
-lbl_8055CC78:
+.global __AXSpbAAS
+__AXSpbAAS:
 	.skip 0x4
 
-.global lbl_8055CC7C
-lbl_8055CC7C:
+.global __AXSpbAAR
+__AXSpbAAR:
 	.skip 0x4
 
-.global lbl_8055CC80
-lbl_8055CC80:
+.global __AXSpbAAL
+__AXSpbAAL:
 	.skip 0x4
 
-.global lbl_8055CC84
-lbl_8055CC84:
+.global __AXSpbAS
+__AXSpbAS:
 	.skip 0x4
 
-.global lbl_8055CC88
-lbl_8055CC88:
+.global __AXSpbAR
+__AXSpbAR:
 	.skip 0x4
 
-.global lbl_8055CC8C
-lbl_8055CC8C:
+.global __AXSpbAL
+__AXSpbAL:
 	.skip 0x4

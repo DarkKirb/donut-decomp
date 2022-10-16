@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80128860
-lbl_80128860:
+.global drawLine___Q210homebutton3guiFfffffUcR8_GXColor
+drawLine___Q210homebutton3guiFfffffUcR8_GXColor:
 /* 80128860 001246A0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80128864 001246A4  7C 08 02 A6 */	mflr r0
 /* 80128868 001246A8  90 01 00 94 */	stw r0, 0x94(r1)
@@ -25,29 +25,29 @@ lbl_80128860:
 /* 801288AC 001246EC  7C 9F 23 78 */	mr r31, r4
 /* 801288B0 001246F0  93 C1 00 38 */	stw r30, 0x38(r1)
 /* 801288B4 001246F4  7C 7E 1B 78 */	mr r30, r3
-/* 801288B8 001246F8  4B F0 B4 F9 */	bl lbl_80033DB0
+/* 801288B8 001246F8  4B F0 B4 F9 */	bl GXClearVtxDesc
 /* 801288BC 001246FC  38 60 00 09 */	li r3, 0x9
 /* 801288C0 00124700  38 80 00 01 */	li r4, 0x1
-/* 801288C4 00124704  4B F0 AE DD */	bl lbl_800337A0
+/* 801288C4 00124704  4B F0 AE DD */	bl GXSetVtxDesc
 /* 801288C8 00124708  38 60 00 0B */	li r3, 0xb
 /* 801288CC 0012470C  38 80 00 01 */	li r4, 0x1
-/* 801288D0 00124710  4B F0 AE D1 */	bl lbl_800337A0
+/* 801288D0 00124710  4B F0 AE D1 */	bl GXSetVtxDesc
 /* 801288D4 00124714  38 60 00 00 */	li r3, 0x0
 /* 801288D8 00124718  38 80 00 09 */	li r4, 0x9
 /* 801288DC 0012471C  38 A0 00 01 */	li r5, 0x1
 /* 801288E0 00124720  38 C0 00 04 */	li r6, 0x4
 /* 801288E4 00124724  38 E0 00 00 */	li r7, 0x0
-/* 801288E8 00124728  4B F0 B5 09 */	bl lbl_80033DF0
+/* 801288E8 00124728  4B F0 B5 09 */	bl GXSetVtxAttrFmt
 /* 801288EC 0012472C  38 60 00 00 */	li r3, 0x0
 /* 801288F0 00124730  38 80 00 0B */	li r4, 0xb
 /* 801288F4 00124734  38 A0 00 01 */	li r5, 0x1
 /* 801288F8 00124738  38 C0 00 05 */	li r6, 0x5
 /* 801288FC 0012473C  38 E0 00 00 */	li r7, 0x0
-/* 80128900 00124740  4B F0 B4 F1 */	bl lbl_80033DF0
+/* 80128900 00124740  4B F0 B4 F1 */	bl GXSetVtxAttrFmt
 /* 80128904 00124744  38 60 00 00 */	li r3, 0x0
-/* 80128908 00124748  4B F0 CC 59 */	bl lbl_80035560
+/* 80128908 00124748  4B F0 CC 59 */	bl GXSetCullMode
 /* 8012890C 0012474C  38 60 00 01 */	li r3, 0x1
-/* 80128910 00124750  4B F0 DB D1 */	bl lbl_800364E0
+/* 80128910 00124750  4B F0 DB D1 */	bl GXSetNumChans
 /* 80128914 00124754  38 60 00 04 */	li r3, 0x4
 /* 80128918 00124758  38 80 00 00 */	li r4, 0x0
 /* 8012891C 0012475C  38 A0 00 01 */	li r5, 0x1
@@ -55,40 +55,40 @@ lbl_80128860:
 /* 80128924 00124764  38 E0 00 00 */	li r7, 0x0
 /* 80128928 00124768  39 00 00 00 */	li r8, 0x0
 /* 8012892C 0012476C  39 20 00 02 */	li r9, 0x2
-/* 80128930 00124770  4B F0 DB E1 */	bl lbl_80036510
+/* 80128930 00124770  4B F0 DB E1 */	bl GXSetChanCtrl
 /* 80128934 00124774  38 60 00 00 */	li r3, 0x0
-/* 80128938 00124778  4B F0 BD A9 */	bl lbl_800346E0
+/* 80128938 00124778  4B F0 BD A9 */	bl GXSetNumTexGens
 /* 8012893C 0012477C  38 60 00 01 */	li r3, 0x1
-/* 80128940 00124780  4B F0 F9 21 */	bl lbl_80038260
+/* 80128940 00124780  4B F0 F9 21 */	bl GXSetNumTevStages
 /* 80128944 00124784  38 60 00 00 */	li r3, 0x0
 /* 80128948 00124788  38 80 00 04 */	li r4, 0x4
-/* 8012894C 0012478C  4B F0 F2 75 */	bl lbl_80037BC0
+/* 8012894C 0012478C  4B F0 F2 75 */	bl GXSetTevOp
 /* 80128950 00124790  38 60 00 00 */	li r3, 0x0
 /* 80128954 00124794  38 80 00 FF */	li r4, 0xff
 /* 80128958 00124798  38 A0 00 FF */	li r5, 0xff
 /* 8012895C 0012479C  38 C0 00 04 */	li r6, 0x4
-/* 80128960 001247A0  4B F0 F7 A1 */	bl lbl_80038100
+/* 80128960 001247A0  4B F0 F7 A1 */	bl GXSetTevOrder
 /* 80128964 001247A4  38 60 00 00 */	li r3, 0x0
 /* 80128968 001247A8  38 80 00 00 */	li r4, 0x0
 /* 8012896C 001247AC  38 A0 00 00 */	li r5, 0x0
 /* 80128970 001247B0  38 C0 00 05 */	li r6, 0x5
-/* 80128974 001247B4  4B F0 FD BD */	bl lbl_80038730
-/* 80128978 001247B8  3C 80 80 41 */	lis r4, lbl_8040DDE8@ha
+/* 80128974 001247B4  4B F0 FD BD */	bl GXSetBlendMode
+/* 80128978 001247B8  3C 80 80 41 */	lis r4, "@9996"@ha
 /* 8012897C 001247BC  38 61 00 08 */	addi r3, r1, 0x8
-/* 80128980 001247C0  C0 24 DD E8 */	lfs f1, lbl_8040DDE8@l(r4)
+/* 80128980 001247C0  C0 24 DD E8 */	lfs f1, "@9996"@l(r4)
 /* 80128984 001247C4  FC 40 08 90 */	fmr f2, f1
 /* 80128988 001247C8  FC 60 08 90 */	fmr f3, f1
-/* 8012898C 001247CC  4B F0 81 D5 */	bl lbl_80030B60
+/* 8012898C 001247CC  4B F0 81 D5 */	bl PSMTXTrans
 /* 80128990 001247D0  38 61 00 08 */	addi r3, r1, 0x8
 /* 80128994 001247D4  38 80 00 00 */	li r4, 0x0
-/* 80128998 001247D8  4B F1 02 89 */	bl lbl_80038C20
+/* 80128998 001247D8  4B F1 02 89 */	bl GXLoadPosMtxImm
 /* 8012899C 001247DC  7F C3 F3 78 */	mr r3, r30
 /* 801289A0 001247E0  38 80 00 00 */	li r4, 0x0
-/* 801289A4 001247E4  4B F0 CA FD */	bl lbl_800354A0
+/* 801289A4 001247E4  4B F0 CA FD */	bl GXSetLineWidth
 /* 801289A8 001247E8  38 60 00 A8 */	li r3, 0xa8
 /* 801289AC 001247EC  38 80 00 00 */	li r4, 0x0
 /* 801289B0 001247F0  38 A0 00 02 */	li r5, 0x2
-/* 801289B4 001247F4  4B F0 C8 BD */	bl lbl_80035270
+/* 801289B4 001247F4  4B F0 C8 BD */	bl GXBegin
 /* 801289B8 001247F8  3C 60 CC 01 */	lis r3, 0xCC008000@ha
 /* 801289BC 001247FC  D3 63 80 00 */	stfs f27, 0xCC008000@l(r3)
 /* 801289C0 00124800  D3 83 80 00 */	stfs f28, -0x8000(r3)
@@ -120,8 +120,8 @@ lbl_80128860:
 /* 80128A28 00124868  00 00 00 00 */	.4byte 0x00000000
 /* 80128A2C 0012486C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128A30
-lbl_80128A30:
+.global update__Q310homebutton3gui9ComponentFiffUlUlUlPv
+update__Q310homebutton3gui9ComponentFiffUlUlUlPv:
 /* 80128A30 00124870  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80128A34 00124874  7C 08 02 A6 */	mflr r0
 /* 80128A38 00124878  90 01 00 34 */	stw r0, 0x34(r1)
@@ -263,29 +263,29 @@ lbl_80128C0C:
 /* 80128C38 00124A78  00 00 00 00 */	.4byte 0x00000000
 /* 80128C3C 00124A7C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128C40
-lbl_80128C40:
-/* 80128C40 00124A80  4B FD FD C0 */	b lbl_80108A00
+.global isVisible__Q310homebutton3gui9ComponentFv
+isVisible__Q310homebutton3gui9ComponentFv:
+/* 80128C40 00124A80  4B FD FD C0 */	b CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 /* 80128C44 00124A84  00 00 00 00 */	.4byte 0x00000000
 /* 80128C48 00124A88  00 00 00 00 */	.4byte 0x00000000
 /* 80128C4C 00124A8C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128C50
-lbl_80128C50:
+.global isPointed__Q310homebutton3gui9ComponentFi
+isPointed__Q310homebutton3gui9ComponentFi:
 /* 80128C50 00124A90  7C 63 22 14 */	add r3, r3, r4
 /* 80128C54 00124A94  88 63 00 04 */	lbz r3, 0x4(r3)
 /* 80128C58 00124A98  4E 80 00 20 */	blr
 /* 80128C5C 00124A9C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128C60
-lbl_80128C60:
+.global onMove__Q310homebutton3gui9ComponentFff
+onMove__Q310homebutton3gui9ComponentFff:
 /* 80128C60 00124AA0  4E 80 00 20 */	blr
 /* 80128C64 00124AA4  00 00 00 00 */	.4byte 0x00000000
 /* 80128C68 00124AA8  00 00 00 00 */	.4byte 0x00000000
 /* 80128C6C 00124AAC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128C70
-lbl_80128C70:
+.global onEvent__Q310homebutton3gui7ManagerFUlUlPv
+onEvent__Q310homebutton3gui7ManagerFUlUlPv:
 /* 80128C70 00124AB0  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80128C74 00124AB4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128C78 00124AB8  4D 82 00 20 */	beqlr
@@ -295,43 +295,43 @@ lbl_80128C70:
 /* 80128C88 00124AC8  4E 80 04 20 */	bctr
 /* 80128C8C 00124ACC  4E 80 00 20 */	blr
 
-.global lbl_80128C90
-lbl_80128C90:
+.global onEvent__Q310homebutton3gui12EventHandlerFUlUlPv
+onEvent__Q310homebutton3gui12EventHandlerFUlUlPv:
 /* 80128C90 00124AD0  4E 80 00 20 */	blr
 /* 80128C94 00124AD4  00 00 00 00 */	.4byte 0x00000000
 /* 80128C98 00124AD8  00 00 00 00 */	.4byte 0x00000000
 /* 80128C9C 00124ADC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128CA0
-lbl_80128CA0:
+.global getID__Q310homebutton3gui9ComponentFv
+getID__Q310homebutton3gui9ComponentFv:
 /* 80128CA0 00124AE0  80 63 00 20 */	lwz r3, 0x20(r3)
 /* 80128CA4 00124AE4  4E 80 00 20 */	blr
 /* 80128CA8 00124AE8  00 00 00 00 */	.4byte 0x00000000
 /* 80128CAC 00124AEC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128CB0
-lbl_80128CB0:
+.global setPointed__Q310homebutton3gui9ComponentFib
+setPointed__Q310homebutton3gui9ComponentFib:
 /* 80128CB0 00124AF0  7C 63 22 14 */	add r3, r3, r4
 /* 80128CB4 00124AF4  98 A3 00 04 */	stb r5, 0x4(r3)
 /* 80128CB8 00124AF8  4E 80 00 20 */	blr
 /* 80128CBC 00124AFC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128CC0
-lbl_80128CC0:
+.global onPoint__Q310homebutton3gui9ComponentFv
+onPoint__Q310homebutton3gui9ComponentFv:
 /* 80128CC0 00124B00  4E 80 00 20 */	blr
 /* 80128CC4 00124B04  00 00 00 00 */	.4byte 0x00000000
 /* 80128CC8 00124B08  00 00 00 00 */	.4byte 0x00000000
 /* 80128CCC 00124B0C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128CD0
-lbl_80128CD0:
+.global offPoint__Q310homebutton3gui9ComponentFv
+offPoint__Q310homebutton3gui9ComponentFv:
 /* 80128CD0 00124B10  4E 80 00 20 */	blr
 /* 80128CD4 00124B14  00 00 00 00 */	.4byte 0x00000000
 /* 80128CD8 00124B18  00 00 00 00 */	.4byte 0x00000000
 /* 80128CDC 00124B1C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128CE0
-lbl_80128CE0:
+.global __dt__Q310homebutton3gui7ManagerFv
+__dt__Q310homebutton3gui7ManagerFv:
 /* 80128CE0 00124B20  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80128CE4 00124B24  7C 08 02 A6 */	mflr r0
 /* 80128CE8 00124B28  2C 03 00 00 */	cmpwi r3, 0x0
@@ -342,34 +342,34 @@ lbl_80128CE0:
 /* 80128CFC 00124B3C  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 80128D00 00124B40  7C 7D 1B 78 */	mr r29, r3
 /* 80128D04 00124B44  41 82 00 78 */	beq lbl_80128D7C
-/* 80128D08 00124B48  3C A0 80 44 */	lis r5, lbl_80442B70@ha
+/* 80128D08 00124B48  3C A0 80 44 */	lis r5, __vt__Q310homebutton3gui7Manager@ha
 /* 80128D0C 00124B4C  38 80 00 00 */	li r4, 0x0
-/* 80128D10 00124B50  38 A5 2B 70 */	addi r5, r5, lbl_80442B70@l
+/* 80128D10 00124B50  38 A5 2B 70 */	addi r5, r5, __vt__Q310homebutton3gui7Manager@l
 /* 80128D14 00124B54  90 A3 00 00 */	stw r5, 0x0(r3)
 /* 80128D18 00124B58  38 63 00 08 */	addi r3, r3, 0x8
-/* 80128D1C 00124B5C  4B F7 AC 15 */	bl lbl_800A3930
+/* 80128D1C 00124B5C  4B F7 AC 15 */	bl MEMGetNextListObject
 /* 80128D20 00124B60  7C 7F 1B 78 */	mr r31, r3
 /* 80128D24 00124B64  48 00 00 40 */	b lbl_80128D64
 .global lbl_80128D28
 lbl_80128D28:
 /* 80128D28 00124B68  7F E4 FB 78 */	mr r4, r31
 /* 80128D2C 00124B6C  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80128D30 00124B70  4B F7 AB 91 */	bl lbl_800A38C0
+/* 80128D30 00124B70  4B F7 AB 91 */	bl MEMRemoveListObject
 /* 80128D34 00124B74  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 80128D38 00124B78  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128D3C 00124B7C  41 82 00 10 */	beq lbl_80128D4C
 /* 80128D40 00124B80  7F E4 FB 78 */	mr r4, r31
-/* 80128D44 00124B84  4B F7 AA BD */	bl lbl_800A3800
+/* 80128D44 00124B84  4B F7 AA BD */	bl MEMFreeToAllocator
 /* 80128D48 00124B88  48 00 00 0C */	b lbl_80128D54
 .global lbl_80128D4C
 lbl_80128D4C:
 /* 80128D4C 00124B8C  7F E3 FB 78 */	mr r3, r31
-/* 80128D50 00124B90  48 09 69 C5 */	bl lbl_801BF714
+/* 80128D50 00124B90  48 09 69 C5 */	bl __dl__FPv
 .global lbl_80128D54
 lbl_80128D54:
 /* 80128D54 00124B94  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80128D58 00124B98  38 80 00 00 */	li r4, 0x0
-/* 80128D5C 00124B9C  4B F7 AB D5 */	bl lbl_800A3930
+/* 80128D5C 00124B9C  4B F7 AB D5 */	bl MEMGetNextListObject
 /* 80128D60 00124BA0  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80128D64
 lbl_80128D64:
@@ -378,7 +378,7 @@ lbl_80128D64:
 /* 80128D6C 00124BAC  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80128D70 00124BB0  40 81 00 0C */	ble lbl_80128D7C
 /* 80128D74 00124BB4  7F A3 EB 78 */	mr r3, r29
-/* 80128D78 00124BB8  48 09 69 9D */	bl lbl_801BF714
+/* 80128D78 00124BB8  48 09 69 9D */	bl __dl__FPv
 .global lbl_80128D7C
 lbl_80128D7C:
 /* 80128D7C 00124BBC  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -391,8 +391,8 @@ lbl_80128D7C:
 /* 80128D98 00124BD8  4E 80 00 20 */	blr
 /* 80128D9C 00124BDC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128DA0
-lbl_80128DA0:
+.global init__Q310homebutton3gui7ManagerFv
+init__Q310homebutton3gui7ManagerFv:
 /* 80128DA0 00124BE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80128DA4 00124BE4  7C 08 02 A6 */	mflr r0
 /* 80128DA8 00124BE8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -405,7 +405,7 @@ lbl_80128DA0:
 lbl_80128DC0:
 /* 80128DC0 00124C00  38 7E 00 08 */	addi r3, r30, 0x8
 /* 80128DC4 00124C04  57 E4 04 3E */	clrlwi r4, r31, 16
-/* 80128DC8 00124C08  48 01 8A B9 */	bl lbl_80141880
+/* 80128DC8 00124C08  48 01 8A B9 */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 80128DCC 00124C0C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80128DD0 00124C10  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80128DD4 00124C14  81 8C 00 0C */	lwz r12, 0xc(r12)
@@ -426,8 +426,8 @@ lbl_80128DE4:
 /* 80128E08 00124C48  00 00 00 00 */	.4byte 0x00000000
 /* 80128E0C 00124C4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128E10
-lbl_80128E10:
+.global init__Q310homebutton3gui9ComponentFv
+init__Q310homebutton3gui9ComponentFv:
 /* 80128E10 00124C50  38 00 00 00 */	li r0, 0x0
 /* 80128E14 00124C54  98 03 00 18 */	stb r0, 0x18(r3)
 /* 80128E18 00124C58  98 03 00 04 */	stb r0, 0x4(r3)
@@ -441,8 +441,8 @@ lbl_80128E10:
 /* 80128E38 00124C78  4E 80 00 20 */	blr
 /* 80128E3C 00124C7C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128E40
-lbl_80128E40:
+.global addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component:
 /* 80128E40 00124C80  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80128E44 00124C84  7C 08 02 A6 */	mflr r0
 /* 80128E48 00124C88  90 01 00 24 */	stw r0, 0x24(r1)
@@ -467,7 +467,7 @@ lbl_80128E40:
 /* 80128E94 00124CD4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128E98 00124CD8  41 82 00 2C */	beq lbl_80128EC4
 /* 80128E9C 00124CDC  38 80 00 10 */	li r4, 0x10
-/* 80128EA0 00124CE0  4B F7 A9 51 */	bl lbl_800A37F0
+/* 80128EA0 00124CE0  4B F7 A9 51 */	bl MEMAllocFromAllocator
 /* 80128EA4 00124CE4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128EA8 00124CE8  41 82 00 0C */	beq lbl_80128EB4
 /* 80128EAC 00124CEC  93 E3 00 00 */	stw r31, 0x0(r3)
@@ -476,12 +476,12 @@ lbl_80128E40:
 lbl_80128EB4:
 /* 80128EB4 00124CF4  7C 64 1B 78 */	mr r4, r3
 /* 80128EB8 00124CF8  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80128EBC 00124CFC  4B F7 A9 95 */	bl lbl_800A3850
+/* 80128EBC 00124CFC  4B F7 A9 95 */	bl MEMAppendListObject
 /* 80128EC0 00124D00  48 00 00 28 */	b lbl_80128EE8
 .global lbl_80128EC4
 lbl_80128EC4:
 /* 80128EC4 00124D04  38 60 00 10 */	li r3, 0x10
-/* 80128EC8 00124D08  48 09 68 49 */	bl lbl_801BF710
+/* 80128EC8 00124D08  48 09 68 49 */	bl __nw__FUl
 /* 80128ECC 00124D0C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128ED0 00124D10  41 82 00 0C */	beq lbl_80128EDC
 /* 80128ED4 00124D14  93 E3 00 00 */	stw r31, 0x0(r3)
@@ -490,7 +490,7 @@ lbl_80128EC4:
 lbl_80128EDC:
 /* 80128EDC 00124D1C  7C 64 1B 78 */	mr r4, r3
 /* 80128EE0 00124D20  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80128EE4 00124D24  4B F7 A9 6D */	bl lbl_800A3850
+/* 80128EE4 00124D24  4B F7 A9 6D */	bl MEMAppendListObject
 .global lbl_80128EE8
 lbl_80128EE8:
 /* 80128EE8 00124D28  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -504,15 +504,15 @@ lbl_80128EE8:
 /* 80128F08 00124D48  00 00 00 00 */	.4byte 0x00000000
 /* 80128F0C 00124D4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128F10
-lbl_80128F10:
+.global setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
+setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager:
 /* 80128F10 00124D50  90 83 00 28 */	stw r4, 0x28(r3)
 /* 80128F14 00124D54  4E 80 00 20 */	blr
 /* 80128F18 00124D58  00 00 00 00 */	.4byte 0x00000000
 /* 80128F1C 00124D5C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128F20
-lbl_80128F20:
+.global delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component:
 /* 80128F20 00124D60  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80128F24 00124D64  7C 08 02 A6 */	mflr r0
 /* 80128F28 00124D68  90 01 00 24 */	stw r0, 0x24(r1)
@@ -523,7 +523,7 @@ lbl_80128F20:
 /* 80128F3C 00124D7C  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 80128F40 00124D80  7C 7D 1B 78 */	mr r29, r3
 /* 80128F44 00124D84  38 63 00 08 */	addi r3, r3, 0x8
-/* 80128F48 00124D88  4B F7 A9 E9 */	bl lbl_800A3930
+/* 80128F48 00124D88  4B F7 A9 E9 */	bl MEMGetNextListObject
 /* 80128F4C 00124D8C  7C 7F 1B 78 */	mr r31, r3
 /* 80128F50 00124D90  48 00 00 20 */	b lbl_80128F70
 .global lbl_80128F54
@@ -533,7 +533,7 @@ lbl_80128F54:
 /* 80128F5C 00124D9C  41 82 00 1C */	beq lbl_80128F78
 /* 80128F60 00124DA0  7F E4 FB 78 */	mr r4, r31
 /* 80128F64 00124DA4  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80128F68 00124DA8  4B F7 A9 C9 */	bl lbl_800A3930
+/* 80128F68 00124DA8  4B F7 A9 C9 */	bl MEMGetNextListObject
 /* 80128F6C 00124DAC  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80128F70
 lbl_80128F70:
@@ -543,17 +543,17 @@ lbl_80128F70:
 lbl_80128F78:
 /* 80128F78 00124DB8  7F E4 FB 78 */	mr r4, r31
 /* 80128F7C 00124DBC  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80128F80 00124DC0  4B F7 A9 41 */	bl lbl_800A38C0
+/* 80128F80 00124DC0  4B F7 A9 41 */	bl MEMRemoveListObject
 /* 80128F84 00124DC4  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 80128F88 00124DC8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80128F8C 00124DCC  41 82 00 10 */	beq lbl_80128F9C
 /* 80128F90 00124DD0  7F E4 FB 78 */	mr r4, r31
-/* 80128F94 00124DD4  4B F7 A8 6D */	bl lbl_800A3800
+/* 80128F94 00124DD4  4B F7 A8 6D */	bl MEMFreeToAllocator
 /* 80128F98 00124DD8  48 00 00 0C */	b lbl_80128FA4
 .global lbl_80128F9C
 lbl_80128F9C:
 /* 80128F9C 00124DDC  7F E3 FB 78 */	mr r3, r31
-/* 80128FA0 00124DE0  48 09 67 75 */	bl lbl_801BF714
+/* 80128FA0 00124DE0  48 09 67 75 */	bl __dl__FPv
 .global lbl_80128FA4
 lbl_80128FA4:
 /* 80128FA4 00124DE4  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -564,14 +564,14 @@ lbl_80128FA4:
 /* 80128FB8 00124DF8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80128FBC 00124DFC  4E 80 00 20 */	blr
 
-.global lbl_80128FC0
-lbl_80128FC0:
+.global getComponent__Q310homebutton3gui7ManagerFUl
+getComponent__Q310homebutton3gui7ManagerFUl:
 /* 80128FC0 00124E00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80128FC4 00124E04  7C 08 02 A6 */	mflr r0
 /* 80128FC8 00124E08  54 84 04 3E */	clrlwi r4, r4, 16
 /* 80128FCC 00124E0C  38 63 00 08 */	addi r3, r3, 0x8
 /* 80128FD0 00124E10  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80128FD4 00124E14  48 01 88 AD */	bl lbl_80141880
+/* 80128FD4 00124E14  48 01 88 AD */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 80128FD8 00124E18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80128FDC 00124E1C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80128FE0 00124E20  7C 08 03 A6 */	mtlr r0
@@ -579,8 +579,8 @@ lbl_80128FC0:
 /* 80128FE8 00124E28  4E 80 00 20 */	blr
 /* 80128FEC 00124E2C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80128FF0
-lbl_80128FF0:
+.global update__Q310homebutton3gui7ManagerFiffUlUlUlPv
+update__Q310homebutton3gui7ManagerFiffUlUlUlPv:
 /* 80128FF0 00124E30  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80128FF4 00124E34  7C 08 02 A6 */	mflr r0
 /* 80128FF8 00124E38  90 01 00 64 */	stw r0, 0x64(r1)
@@ -604,7 +604,7 @@ lbl_80128FF0:
 lbl_8012903C:
 /* 8012903C 00124E7C  38 76 00 08 */	addi r3, r22, 0x8
 /* 80129040 00124E80  57 84 04 3E */	clrlwi r4, r28, 16
-/* 80129044 00124E84  48 01 88 3D */	bl lbl_80141880
+/* 80129044 00124E84  48 01 88 3D */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 80129048 00124E88  7C 7F 1B 78 */	mr r31, r3
 /* 8012904C 00124E8C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80129050 00124E90  FC 20 F0 90 */	fmr f1, f30
@@ -702,15 +702,15 @@ lbl_80129170:
 /* 80129198 00124FD8  00 00 00 00 */	.4byte 0x00000000
 /* 8012919C 00124FDC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801291A0
-lbl_801291A0:
+.global isTriggerTarger__Q310homebutton3gui9ComponentFv
+isTriggerTarger__Q310homebutton3gui9ComponentFv:
 /* 801291A0 00124FE0  88 63 00 24 */	lbz r3, 0x24(r3)
 /* 801291A4 00124FE4  4E 80 00 20 */	blr
 /* 801291A8 00124FE8  00 00 00 00 */	.4byte 0x00000000
 /* 801291AC 00124FEC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801291B0
-lbl_801291B0:
+.global onTrig__Q310homebutton3gui9ComponentFUlR3Vec
+onTrig__Q310homebutton3gui9ComponentFUlR3Vec:
 /* 801291B0 00124FF0  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 801291B4 00124FF4  7C 80 00 39 */	and. r0, r4, r0
 /* 801291B8 00124FF8  4D 82 00 20 */	beqlr
@@ -724,8 +724,8 @@ lbl_801291B0:
 /* 801291D8 00125018  98 03 00 18 */	stb r0, 0x18(r3)
 /* 801291DC 0012501C  4E 80 00 20 */	blr
 
-.global lbl_801291E0
-lbl_801291E0:
+.global calc__Q310homebutton3gui7ManagerFv
+calc__Q310homebutton3gui7ManagerFv:
 /* 801291E0 00125020  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801291E4 00125024  7C 08 02 A6 */	mflr r0
 /* 801291E8 00125028  90 01 00 14 */	stw r0, 0x14(r1)
@@ -738,7 +738,7 @@ lbl_801291E0:
 lbl_80129200:
 /* 80129200 00125040  38 7E 00 08 */	addi r3, r30, 0x8
 /* 80129204 00125044  57 E4 04 3E */	clrlwi r4, r31, 16
-/* 80129208 00125048  48 01 86 79 */	bl lbl_80141880
+/* 80129208 00125048  48 01 86 79 */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 8012920C 0012504C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80129210 00125050  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80129214 00125054  81 8C 00 10 */	lwz r12, 0x10(r12)
@@ -759,15 +759,15 @@ lbl_80129224:
 /* 80129248 00125088  00 00 00 00 */	.4byte 0x00000000
 /* 8012924C 0012508C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129250
-lbl_80129250:
+.global calc__Q310homebutton3gui9InterfaceFv
+calc__Q310homebutton3gui9InterfaceFv:
 /* 80129250 00125090  4E 80 00 20 */	blr
 /* 80129254 00125094  00 00 00 00 */	.4byte 0x00000000
 /* 80129258 00125098  00 00 00 00 */	.4byte 0x00000000
 /* 8012925C 0012509C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129260
-lbl_80129260:
+.global draw__Q310homebutton3gui7ManagerFv
+draw__Q310homebutton3gui7ManagerFv:
 /* 80129260 001250A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80129264 001250A4  7C 08 02 A6 */	mflr r0
 /* 80129268 001250A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -780,7 +780,7 @@ lbl_80129260:
 lbl_80129280:
 /* 80129280 001250C0  38 7E 00 08 */	addi r3, r30, 0x8
 /* 80129284 001250C4  57 E4 04 3E */	clrlwi r4, r31, 16
-/* 80129288 001250C8  48 01 85 F9 */	bl lbl_80141880
+/* 80129288 001250C8  48 01 85 F9 */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 8012928C 001250CC  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80129290 001250D0  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80129294 001250D4  81 8C 00 18 */	lwz r12, 0x18(r12)
@@ -801,15 +801,15 @@ lbl_801292A4:
 /* 801292C8 00125108  00 00 00 00 */	.4byte 0x00000000
 /* 801292CC 0012510C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801292D0
-lbl_801292D0:
+.global draw__Q310homebutton3gui9InterfaceFv
+draw__Q310homebutton3gui9InterfaceFv:
 /* 801292D0 00125110  4E 80 00 20 */	blr
 /* 801292D4 00125114  00 00 00 00 */	.4byte 0x00000000
 /* 801292D8 00125118  00 00 00 00 */	.4byte 0x00000000
 /* 801292DC 0012511C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801292E0
-lbl_801292E0:
+.global setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
+setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb:
 /* 801292E0 00125120  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801292E4 00125124  7C 08 02 A6 */	mflr r0
 /* 801292E8 00125128  90 01 00 24 */	stw r0, 0x24(r1)
@@ -824,7 +824,7 @@ lbl_801292E0:
 lbl_80129308:
 /* 80129308 00125148  38 7D 00 08 */	addi r3, r29, 0x8
 /* 8012930C 0012514C  57 E4 04 3E */	clrlwi r4, r31, 16
-/* 80129310 00125150  48 01 85 71 */	bl lbl_80141880
+/* 80129310 00125150  48 01 85 71 */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 80129314 00125154  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80129318 00125158  7F C4 F3 78 */	mr r4, r30
 /* 8012931C 0012515C  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -847,15 +847,15 @@ lbl_80129330:
 /* 80129358 00125198  00 00 00 00 */	.4byte 0x00000000
 /* 8012935C 0012519C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129360
-lbl_80129360:
+.global setTriggerTarget__Q310homebutton3gui9ComponentFb
+setTriggerTarget__Q310homebutton3gui9ComponentFb:
 /* 80129360 001251A0  98 83 00 24 */	stb r4, 0x24(r3)
 /* 80129364 001251A4  4E 80 00 20 */	blr
 /* 80129368 001251A8  00 00 00 00 */	.4byte 0x00000000
 /* 8012936C 001251AC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129370
-lbl_80129370:
+.global __dt__Q310homebutton3gui11PaneManagerFv
+__dt__Q310homebutton3gui11PaneManagerFv:
 /* 80129370 001251B0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80129374 001251B4  7C 08 02 A6 */	mflr r0
 /* 80129378 001251B8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -866,27 +866,27 @@ lbl_80129370:
 /* 8012938C 001251CC  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 80129390 001251D0  7C 7D 1B 78 */	mr r29, r3
 /* 80129394 001251D4  41 82 01 10 */	beq lbl_801294A4
-/* 80129398 001251D8  3C A0 80 44 */	lis r5, lbl_80442AD0@ha
+/* 80129398 001251D8  3C A0 80 44 */	lis r5, __vt__Q310homebutton3gui11PaneManager@ha
 /* 8012939C 001251DC  38 80 00 00 */	li r4, 0x0
-/* 801293A0 001251E0  38 A5 2A D0 */	addi r5, r5, lbl_80442AD0@l
+/* 801293A0 001251E0  38 A5 2A D0 */	addi r5, r5, __vt__Q310homebutton3gui11PaneManager@l
 /* 801293A4 001251E4  90 A3 00 00 */	stw r5, 0x0(r3)
 /* 801293A8 001251E8  38 63 00 18 */	addi r3, r3, 0x18
-/* 801293AC 001251EC  4B F7 A5 85 */	bl lbl_800A3930
+/* 801293AC 001251EC  4B F7 A5 85 */	bl MEMGetNextListObject
 /* 801293B0 001251F0  7C 7F 1B 78 */	mr r31, r3
 /* 801293B4 001251F4  48 00 00 6C */	b lbl_80129420
 .global lbl_801293B8
 lbl_801293B8:
 /* 801293B8 001251F8  7F E4 FB 78 */	mr r4, r31
 /* 801293BC 001251FC  38 7D 00 18 */	addi r3, r29, 0x18
-/* 801293C0 00125200  4B F7 A5 01 */	bl lbl_800A38C0
+/* 801293C0 00125200  4B F7 A5 01 */	bl MEMRemoveListObject
 /* 801293C4 00125204  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 801293C8 00125208  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801293CC 0012520C  41 82 00 1C */	beq lbl_801293E8
 /* 801293D0 00125210  80 9F 00 04 */	lwz r4, 0x4(r31)
-/* 801293D4 00125214  4B F7 A4 2D */	bl lbl_800A3800
+/* 801293D4 00125214  4B F7 A4 2D */	bl MEMFreeToAllocator
 /* 801293D8 00125218  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 801293DC 0012521C  7F E4 FB 78 */	mr r4, r31
-/* 801293E0 00125220  4B F7 A4 21 */	bl lbl_800A3800
+/* 801293E0 00125220  4B F7 A4 21 */	bl MEMFreeToAllocator
 /* 801293E4 00125224  48 00 00 2C */	b lbl_80129410
 .global lbl_801293E8
 lbl_801293E8:
@@ -901,12 +901,12 @@ lbl_801293E8:
 .global lbl_80129408
 lbl_80129408:
 /* 80129408 00125248  7F E3 FB 78 */	mr r3, r31
-/* 8012940C 0012524C  48 09 63 09 */	bl lbl_801BF714
+/* 8012940C 0012524C  48 09 63 09 */	bl __dl__FPv
 .global lbl_80129410
 lbl_80129410:
 /* 80129410 00125250  38 7D 00 18 */	addi r3, r29, 0x18
 /* 80129414 00125254  38 80 00 00 */	li r4, 0x0
-/* 80129418 00125258  4B F7 A5 19 */	bl lbl_800A3930
+/* 80129418 00125258  4B F7 A5 19 */	bl MEMGetNextListObject
 /* 8012941C 0012525C  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80129420
 lbl_80129420:
@@ -914,34 +914,34 @@ lbl_80129420:
 /* 80129424 00125264  40 82 FF 94 */	bne lbl_801293B8
 /* 80129428 00125268  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8012942C 0012526C  41 82 00 68 */	beq lbl_80129494
-/* 80129430 00125270  3C 80 80 44 */	lis r4, lbl_80442B70@ha
+/* 80129430 00125270  3C 80 80 44 */	lis r4, __vt__Q310homebutton3gui7Manager@ha
 /* 80129434 00125274  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80129438 00125278  38 84 2B 70 */	addi r4, r4, lbl_80442B70@l
+/* 80129438 00125278  38 84 2B 70 */	addi r4, r4, __vt__Q310homebutton3gui7Manager@l
 /* 8012943C 0012527C  90 9D 00 00 */	stw r4, 0x0(r29)
 /* 80129440 00125280  38 80 00 00 */	li r4, 0x0
-/* 80129444 00125284  4B F7 A4 ED */	bl lbl_800A3930
+/* 80129444 00125284  4B F7 A4 ED */	bl MEMGetNextListObject
 /* 80129448 00125288  7C 7F 1B 78 */	mr r31, r3
 /* 8012944C 0012528C  48 00 00 40 */	b lbl_8012948C
 .global lbl_80129450
 lbl_80129450:
 /* 80129450 00125290  7F E4 FB 78 */	mr r4, r31
 /* 80129454 00125294  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80129458 00125298  4B F7 A4 69 */	bl lbl_800A38C0
+/* 80129458 00125298  4B F7 A4 69 */	bl MEMRemoveListObject
 /* 8012945C 0012529C  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 80129460 001252A0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80129464 001252A4  41 82 00 10 */	beq lbl_80129474
 /* 80129468 001252A8  7F E4 FB 78 */	mr r4, r31
-/* 8012946C 001252AC  4B F7 A3 95 */	bl lbl_800A3800
+/* 8012946C 001252AC  4B F7 A3 95 */	bl MEMFreeToAllocator
 /* 80129470 001252B0  48 00 00 0C */	b lbl_8012947C
 .global lbl_80129474
 lbl_80129474:
 /* 80129474 001252B4  7F E3 FB 78 */	mr r3, r31
-/* 80129478 001252B8  48 09 62 9D */	bl lbl_801BF714
+/* 80129478 001252B8  48 09 62 9D */	bl __dl__FPv
 .global lbl_8012947C
 lbl_8012947C:
 /* 8012947C 001252BC  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80129480 001252C0  38 80 00 00 */	li r4, 0x0
-/* 80129484 001252C4  4B F7 A4 AD */	bl lbl_800A3930
+/* 80129484 001252C4  4B F7 A4 AD */	bl MEMGetNextListObject
 /* 80129488 001252C8  7C 7F 1B 78 */	mr r31, r3
 .global lbl_8012948C
 lbl_8012948C:
@@ -952,7 +952,7 @@ lbl_80129494:
 /* 80129494 001252D4  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80129498 001252D8  40 81 00 0C */	ble lbl_801294A4
 /* 8012949C 001252DC  7F A3 EB 78 */	mr r3, r29
-/* 801294A0 001252E0  48 09 62 75 */	bl lbl_801BF714
+/* 801294A0 001252E0  48 09 62 75 */	bl __dl__FPv
 .global lbl_801294A4
 lbl_801294A4:
 /* 801294A4 001252E4  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -967,25 +967,25 @@ lbl_801294A4:
 /* 801294C8 00125308  00 00 00 00 */	.4byte 0x00000000
 /* 801294CC 0012530C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801294D0
-lbl_801294D0:
-/* 801294D0 00125310  4B F7 B8 E0 */	b lbl_800A4DB0
+.global __dt__Q310homebutton3gui13PaneComponentFv
+__dt__Q310homebutton3gui13PaneComponentFv:
+/* 801294D0 00125310  4B F7 B8 E0 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 801294D4 00125314  00 00 00 00 */	.4byte 0x00000000
 /* 801294D8 00125318  00 00 00 00 */	.4byte 0x00000000
 /* 801294DC 0012531C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801294E0
-lbl_801294E0:
-/* 801294E0 00125320  4B F7 B8 D0 */	b lbl_800A4DB0
+.global __dt__Q310homebutton3gui9ComponentFv
+__dt__Q310homebutton3gui9ComponentFv:
+/* 801294E0 00125320  4B F7 B8 D0 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 801294E4 00125324  00 00 00 00 */	.4byte 0x00000000
 /* 801294E8 00125328  00 00 00 00 */	.4byte 0x00000000
 /* 801294EC 0012532C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801294F0
-lbl_801294F0:
-/* 801294F0 00125330  3C A0 80 54 */	lis r5, lbl_805434F8@ha
+.global createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout:
+/* 801294F0 00125330  3C A0 80 54 */	lis r5, suIDCounter__Q310homebutton3gui11PaneManager@ha
 /* 801294F4 00125334  38 00 00 00 */	li r0, 0x0
-/* 801294F8 00125338  90 05 34 F8 */	stw r0, lbl_805434F8@l(r5)
+/* 801294F8 00125338  90 05 34 F8 */	stw r0, suIDCounter__Q310homebutton3gui11PaneManager@l(r5)
 /* 801294FC 0012533C  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 80129500 00125340  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80129504 00125344  38 84 00 10 */	addi r4, r4, 0x10
@@ -996,8 +996,8 @@ lbl_801294F0:
 /* 80129518 00125358  00 00 00 00 */	.4byte 0x00000000
 /* 8012951C 0012535C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129520
-lbl_80129520:
+.global addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout:
 /* 80129520 00125360  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80129524 00125364  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 80129528 00125368  81 8C 00 5C */	lwz r12, 0x5c(r12)
@@ -1007,25 +1007,25 @@ lbl_80129520:
 /* 80129538 00125378  00 00 00 00 */	.4byte 0x00000000
 /* 8012953C 0012537C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129540
-lbl_80129540:
+.global "walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>"
+"walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>":
 /* 80129540 00125380  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80129544 00125384  7C 08 02 A6 */	mflr r0
 /* 80129548 00125388  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8012954C 0012538C  39 61 00 40 */	addi r11, r1, 0x40
 /* 80129550 00125390  4B ED DD D5 */	bl lbl_80007324
-/* 80129554 00125394  3E E0 80 44 */	lis r23, lbl_80442BE0@ha
-/* 80129558 00125398  3F 20 80 44 */	lis r25, lbl_80442A28@ha
-/* 8012955C 0012539C  3F E0 80 54 */	lis r31, lbl_80543780@ha
-/* 80129560 001253A0  3F C0 80 54 */	lis r30, lbl_80543790@ha
+/* 80129554 00125394  3E E0 80 44 */	lis r23, __vt__Q310homebutton3gui9Component@ha
+/* 80129558 00125398  3F 20 80 44 */	lis r25, __vt__Q310homebutton3gui13PaneComponent@ha
+/* 8012955C 0012539C  3F E0 80 54 */	lis r31, typeInfo__Q36nw4hbm3lyt7Picture@ha
+/* 80129560 001253A0  3F C0 80 54 */	lis r30, typeInfo__Q36nw4hbm3lyt6Window@ha
 /* 80129564 001253A4  83 64 00 04 */	lwz r27, 0x4(r4)
 /* 80129568 001253A8  7C 7C 1B 78 */	mr r28, r3
-/* 8012956C 001253AC  3A F7 2B E0 */	addi r23, r23, lbl_80442BE0@l
-/* 80129570 001253B0  3B 39 2A 28 */	addi r25, r25, lbl_80442A28@l
-/* 80129574 001253B4  3B FF 37 80 */	addi r31, r31, lbl_80543780@l
-/* 80129578 001253B8  3B DE 37 90 */	addi r30, r30, lbl_80543790@l
+/* 8012956C 001253AC  3A F7 2B E0 */	addi r23, r23, __vt__Q310homebutton3gui9Component@l
+/* 80129570 001253B0  3B 39 2A 28 */	addi r25, r25, __vt__Q310homebutton3gui13PaneComponent@l
+/* 80129574 001253B4  3B FF 37 80 */	addi r31, r31, typeInfo__Q36nw4hbm3lyt7Picture@l
+/* 80129578 001253B8  3B DE 37 90 */	addi r30, r30, typeInfo__Q36nw4hbm3lyt6Window@l
 /* 8012957C 001253BC  3B 44 00 04 */	addi r26, r4, 0x4
-/* 80129580 001253C0  3E C0 80 54 */	lis r22, lbl_805434F8@ha
+/* 80129580 001253C0  3E C0 80 54 */	lis r22, suIDCounter__Q310homebutton3gui11PaneManager@ha
 /* 80129584 001253C4  3B 00 00 00 */	li r24, 0x0
 /* 80129588 001253C8  48 00 02 30 */	b lbl_801297B8
 .global lbl_8012958C
@@ -1034,15 +1034,15 @@ lbl_8012958C:
 /* 80129590 001253D0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80129594 001253D4  41 82 00 78 */	beq lbl_8012960C
 /* 80129598 001253D8  38 80 00 30 */	li r4, 0x30
-/* 8012959C 001253DC  4B F7 A2 55 */	bl lbl_800A37F0
+/* 8012959C 001253DC  4B F7 A2 55 */	bl MEMAllocFromAllocator
 /* 801295A0 001253E0  7C 7D 1B 78 */	mr r29, r3
 /* 801295A4 001253E4  80 7C 00 14 */	lwz r3, 0x14(r28)
 /* 801295A8 001253E8  38 80 00 10 */	li r4, 0x10
-/* 801295AC 001253EC  4B F7 A2 45 */	bl lbl_800A37F0
+/* 801295AC 001253EC  4B F7 A2 45 */	bl MEMAllocFromAllocator
 /* 801295B0 001253F0  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 801295B4 001253F4  7C 75 1B 78 */	mr r21, r3
 /* 801295B8 001253F8  41 82 00 3C */	beq lbl_801295F4
-/* 801295BC 001253FC  80 16 34 F8 */	lwz r0, lbl_805434F8@l(r22)
+/* 801295BC 001253FC  80 16 34 F8 */	lwz r0, suIDCounter__Q310homebutton3gui11PaneManager@l(r22)
 /* 801295C0 00125400  7F A3 EB 78 */	mr r3, r29
 /* 801295C4 00125404  92 FD 00 00 */	stw r23, 0x0(r29)
 /* 801295C8 00125408  9B 1D 00 18 */	stb r24, 0x18(r29)
@@ -1067,7 +1067,7 @@ lbl_801295F4:
 .global lbl_8012960C
 lbl_8012960C:
 /* 8012960C 0012544C  38 60 00 30 */	li r3, 0x30
-/* 80129610 00125450  48 09 61 01 */	bl lbl_801BF710
+/* 80129610 00125450  48 09 61 01 */	bl __nw__FUl
 /* 80129614 00125454  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80129618 00125458  7C 7D 1B 78 */	mr r29, r3
 /* 8012961C 0012545C  41 82 00 34 */	beq lbl_80129650
@@ -1086,7 +1086,7 @@ lbl_8012960C:
 .global lbl_80129650
 lbl_80129650:
 /* 80129650 00125490  38 60 00 10 */	li r3, 0x10
-/* 80129654 00125494  48 09 60 BD */	bl lbl_801BF710
+/* 80129654 00125494  48 09 60 BD */	bl __nw__FUl
 /* 80129658 00125498  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8012965C 0012549C  41 82 00 10 */	beq lbl_8012966C
 /* 80129660 001254A0  38 1B FF FC */	addi r0, r27, -0x4
@@ -1099,7 +1099,7 @@ lbl_8012966C:
 lbl_80129670:
 /* 80129670 001254B0  7E A4 AB 78 */	mr r4, r21
 /* 80129674 001254B4  38 7C 00 18 */	addi r3, r28, 0x18
-/* 80129678 001254B8  4B F7 A1 D9 */	bl lbl_800A3850
+/* 80129678 001254B8  4B F7 A1 D9 */	bl MEMAppendListObject
 /* 8012967C 001254BC  80 96 34 F8 */	lwz r4, 0x34f8(r22)
 /* 80129680 001254C0  3A BB FF FC */	addi r21, r27, -0x4
 /* 80129684 001254C4  7F A3 EB 78 */	mr r3, r29
@@ -1220,22 +1220,22 @@ lbl_801297B8:
 /* 801297D8 00125618  00 00 00 00 */	.4byte 0x00000000
 /* 801297DC 0012561C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801297E0
-lbl_801297E0:
+.global setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane
+setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane:
 /* 801297E0 00125620  90 83 00 2C */	stw r4, 0x2c(r3)
 /* 801297E4 00125624  4E 80 00 20 */	blr
 /* 801297E8 00125628  00 00 00 00 */	.4byte 0x00000000
 /* 801297EC 0012562C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801297F0
-lbl_801297F0:
-/* 801297F0 00125630  3C 60 80 54 */	lis r3, lbl_80543778@ha
-/* 801297F4 00125634  38 63 37 78 */	addi r3, r3, lbl_80543778@l
+.global GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv
+GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv:
+/* 801297F0 00125630  3C 60 80 54 */	lis r3, typeInfo__Q36nw4hbm3lyt4Pane@ha
+/* 801297F4 00125634  38 63 37 78 */	addi r3, r3, typeInfo__Q36nw4hbm3lyt4Pane@l
 /* 801297F8 00125638  4E 80 00 20 */	blr
 /* 801297FC 0012563C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129800
-lbl_80129800:
+.global delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout:
 /* 80129800 00125640  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 80129804 00125644  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 80129808 00125648  81 8C 00 60 */	lwz r12, 0x60(r12)
@@ -1245,8 +1245,8 @@ lbl_80129800:
 /* 80129818 00125658  00 00 00 00 */	.4byte 0x00000000
 /* 8012981C 0012565C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129820
-lbl_80129820:
+.global "walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>"
+"walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>":
 /* 80129820 00125660  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80129824 00125664  7C 08 02 A6 */	mflr r0
 /* 80129828 00125668  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1255,13 +1255,13 @@ lbl_80129820:
 /* 80129834 00125674  83 E4 00 04 */	lwz r31, 0x4(r4)
 /* 80129838 00125678  7C 7A 1B 78 */	mr r26, r3
 /* 8012983C 0012567C  3B C4 00 04 */	addi r30, r4, 0x4
-/* 80129840 00125680  3F A0 80 54 */	lis r29, lbl_805434F8@ha
+/* 80129840 00125680  3F A0 80 54 */	lis r29, suIDCounter__Q310homebutton3gui11PaneManager@ha
 /* 80129844 00125684  48 00 00 D8 */	b lbl_8012991C
 .global lbl_80129848
 lbl_80129848:
 /* 80129848 00125688  38 7A 00 18 */	addi r3, r26, 0x18
 /* 8012984C 0012568C  38 80 00 00 */	li r4, 0x0
-/* 80129850 00125690  4B F7 A0 E1 */	bl lbl_800A3930
+/* 80129850 00125690  4B F7 A0 E1 */	bl MEMGetNextListObject
 /* 80129854 00125694  7C 7B 1B 78 */	mr r27, r3
 /* 80129858 00125698  3B 9F FF FC */	addi r28, r31, -0x4
 /* 8012985C 0012569C  48 00 00 20 */	b lbl_8012987C
@@ -1272,7 +1272,7 @@ lbl_80129860:
 /* 80129868 001256A8  41 82 00 1C */	beq lbl_80129884
 /* 8012986C 001256AC  7F 64 DB 78 */	mr r4, r27
 /* 80129870 001256B0  38 7A 00 18 */	addi r3, r26, 0x18
-/* 80129874 001256B4  4B F7 A0 BD */	bl lbl_800A3930
+/* 80129874 001256B4  4B F7 A0 BD */	bl MEMGetNextListObject
 /* 80129878 001256B8  7C 7B 1B 78 */	mr r27, r3
 .global lbl_8012987C
 lbl_8012987C:
@@ -1288,18 +1288,18 @@ lbl_80129884:
 /* 80129898 001256D8  4E 80 04 21 */	bctrl
 /* 8012989C 001256DC  7F 64 DB 78 */	mr r4, r27
 /* 801298A0 001256E0  38 7A 00 18 */	addi r3, r26, 0x18
-/* 801298A4 001256E4  4B F7 A0 1D */	bl lbl_800A38C0
-/* 801298A8 001256E8  80 7D 34 F8 */	lwz r3, lbl_805434F8@l(r29)
+/* 801298A4 001256E4  4B F7 A0 1D */	bl MEMRemoveListObject
+/* 801298A8 001256E8  80 7D 34 F8 */	lwz r3, suIDCounter__Q310homebutton3gui11PaneManager@l(r29)
 /* 801298AC 001256EC  38 03 FF FF */	addi r0, r3, -0x1
 /* 801298B0 001256F0  90 1D 34 F8 */	stw r0, 0x34f8(r29)
 /* 801298B4 001256F4  80 7A 00 14 */	lwz r3, 0x14(r26)
 /* 801298B8 001256F8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801298BC 001256FC  41 82 00 1C */	beq lbl_801298D8
 /* 801298C0 00125700  80 9B 00 04 */	lwz r4, 0x4(r27)
-/* 801298C4 00125704  4B F7 9F 3D */	bl lbl_800A3800
+/* 801298C4 00125704  4B F7 9F 3D */	bl MEMFreeToAllocator
 /* 801298C8 00125708  80 7A 00 14 */	lwz r3, 0x14(r26)
 /* 801298CC 0012570C  7F 64 DB 78 */	mr r4, r27
-/* 801298D0 00125710  4B F7 9F 31 */	bl lbl_800A3800
+/* 801298D0 00125710  4B F7 9F 31 */	bl MEMFreeToAllocator
 /* 801298D4 00125714  48 00 00 2C */	b lbl_80129900
 .global lbl_801298D8
 lbl_801298D8:
@@ -1314,7 +1314,7 @@ lbl_801298D8:
 .global lbl_801298F8
 lbl_801298F8:
 /* 801298F8 00125738  7F 63 DB 78 */	mr r3, r27
-/* 801298FC 0012573C  48 09 5E 19 */	bl lbl_801BF714
+/* 801298FC 0012573C  48 09 5E 19 */	bl __dl__FPv
 .global lbl_80129900
 lbl_80129900:
 /* 80129900 00125740  81 9A 00 00 */	lwz r12, 0x0(r26)
@@ -1336,8 +1336,8 @@ lbl_8012991C:
 /* 80129938 00125778  4E 80 00 20 */	blr
 /* 8012993C 0012577C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129940
-lbl_80129940:
+.global getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane
+getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane:
 /* 80129940 00125780  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80129944 00125784  7C 08 02 A6 */	mflr r0
 /* 80129948 00125788  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1352,7 +1352,7 @@ lbl_80129940:
 lbl_80129968:
 /* 80129968 001257A8  38 7D 00 18 */	addi r3, r29, 0x18
 /* 8012996C 001257AC  57 E4 04 3E */	clrlwi r4, r31, 16
-/* 80129970 001257B0  48 01 7F 11 */	bl lbl_80141880
+/* 80129970 001257B0  48 01 7F 11 */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 80129974 001257B4  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 80129978 001257B8  7C 00 F0 40 */	cmplw r0, r30
 /* 8012997C 001257BC  40 82 00 0C */	bne lbl_80129988
@@ -1379,24 +1379,24 @@ lbl_8012999C:
 /* 801299B8 001257F8  00 00 00 00 */	.4byte 0x00000000
 /* 801299BC 001257FC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801299C0
-lbl_801299C0:
+.global setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb
+setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb:
 /* 801299C0 00125800  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801299C4 00125804  7C 08 02 A6 */	mflr r0
 /* 801299C8 00125808  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801299CC 0012580C  39 61 00 20 */	addi r11, r1, 0x20
 /* 801299D0 00125810  4B ED D9 69 */	bl lbl_80007338
-/* 801299D4 00125814  3F A0 80 54 */	lis r29, lbl_80543740@ha
+/* 801299D4 00125814  3F A0 80 54 */	lis r29, typeInfo__Q36nw4hbm3lyt8Bounding@ha
 /* 801299D8 00125818  7C 7A 1B 78 */	mr r26, r3
 /* 801299DC 0012581C  7C 9B 23 78 */	mr r27, r4
 /* 801299E0 00125820  3B 80 00 00 */	li r28, 0x0
-/* 801299E4 00125824  3B BD 37 40 */	addi r29, r29, lbl_80543740@l
+/* 801299E4 00125824  3B BD 37 40 */	addi r29, r29, typeInfo__Q36nw4hbm3lyt8Bounding@l
 /* 801299E8 00125828  48 00 00 84 */	b lbl_80129A6C
 .global lbl_801299EC
 lbl_801299EC:
 /* 801299EC 0012582C  38 7A 00 18 */	addi r3, r26, 0x18
 /* 801299F0 00125830  57 84 04 3E */	clrlwi r4, r28, 16
-/* 801299F4 00125834  48 01 7E 8D */	bl lbl_80141880
+/* 801299F4 00125834  48 01 7E 8D */	bl List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
 /* 801299F8 00125838  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 801299FC 0012583C  7C 7F 1B 78 */	mr r31, r3
 /* 80129A00 00125840  81 9E 00 00 */	lwz r12, 0x0(r30)
@@ -1452,8 +1452,8 @@ lbl_80129A6C:
 /* 80129A88 001258C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80129A8C 001258CC  4E 80 00 20 */	blr
 
-.global lbl_80129A90
-lbl_80129A90:
+.global contain__Q310homebutton3gui13PaneComponentFff
+contain__Q310homebutton3gui13PaneComponentFff:
 /* 80129A90 001258D0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80129A94 001258D4  7C 08 02 A6 */	mflr r0
 /* 80129A98 001258D8  90 01 00 94 */	stw r0, 0x94(r1)
@@ -1488,20 +1488,20 @@ lbl_80129AFC:
 /* 80129AFC 0012593C  80 7E 00 2C */	lwz r3, 0x2c(r30)
 /* 80129B00 00125940  38 81 00 38 */	addi r4, r1, 0x38
 /* 80129B04 00125944  38 63 00 84 */	addi r3, r3, 0x84
-/* 80129B08 00125948  4B F0 6C F9 */	bl lbl_80030800
-/* 80129B0C 0012594C  3C 60 80 41 */	lis r3, lbl_8040DDE8@ha
+/* 80129B08 00125948  4B F0 6C F9 */	bl PSMTXInverse
+/* 80129B0C 0012594C  3C 60 80 41 */	lis r3, "@9996"@ha
 /* 80129B10 00125950  D3 C1 00 08 */	stfs f30, 0x8(r1)
-/* 80129B14 00125954  C0 03 DD E8 */	lfs f0, lbl_8040DDE8@l(r3)
+/* 80129B14 00125954  C0 03 DD E8 */	lfs f0, "@9996"@l(r3)
 /* 80129B18 00125958  38 61 00 38 */	addi r3, r1, 0x38
 /* 80129B1C 0012595C  D3 E1 00 0C */	stfs f31, 0xc(r1)
 /* 80129B20 00125960  38 81 00 08 */	addi r4, r1, 0x8
 /* 80129B24 00125964  38 A1 00 28 */	addi r5, r1, 0x28
 /* 80129B28 00125968  D0 01 00 10 */	stfs f0, 0x10(r1)
-/* 80129B2C 0012596C  4B F0 75 C5 */	bl lbl_800310F0
+/* 80129B2C 0012596C  4B F0 75 C5 */	bl PSMTXMultVec
 /* 80129B30 00125970  80 9E 00 2C */	lwz r4, 0x2c(r30)
 /* 80129B34 00125974  7F E5 FB 78 */	mr r5, r31
 /* 80129B38 00125978  38 61 00 18 */	addi r3, r1, 0x18
-/* 80129B3C 0012597C  48 01 11 F5 */	bl lbl_8013AD30
+/* 80129B3C 0012597C  48 01 11 F5 */	bl GetPaneRect__Q36nw4hbm3lyt4PaneCFRCQ36nw4hbm3lyt8DrawInfo
 /* 80129B40 00125980  C0 01 00 18 */	lfs f0, 0x18(r1)
 /* 80129B44 00125984  C0 21 00 28 */	lfs f1, 0x28(r1)
 /* 80129B48 00125988  FC 00 08 40 */	fcmpo cr0, f0, f1
@@ -1539,15 +1539,15 @@ lbl_80129B94:
 /* 80129BB8 001259F8  4E 80 00 20 */	blr
 /* 80129BBC 001259FC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129BC0
-lbl_80129BC0:
+.global getDrawInfo__Q310homebutton3gui11PaneManagerFv
+getDrawInfo__Q310homebutton3gui11PaneManagerFv:
 /* 80129BC0 00125A00  80 63 00 24 */	lwz r3, 0x24(r3)
 /* 80129BC4 00125A04  4E 80 00 20 */	blr
 /* 80129BC8 00125A08  00 00 00 00 */	.4byte 0x00000000
 /* 80129BCC 00125A0C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129BD0
-lbl_80129BD0:
+.global draw__Q310homebutton3gui13PaneComponentFv
+draw__Q310homebutton3gui13PaneComponentFv:
 /* 80129BD0 00125A10  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80129BD4 00125A14  7C 08 02 A6 */	mflr r0
 /* 80129BD8 00125A18  90 01 00 44 */	stw r0, 0x44(r1)
@@ -1556,8 +1556,8 @@ lbl_80129BD0:
 /* 80129BE4 00125A24  DB C1 00 20 */	stfd f30, 0x20(r1)
 /* 80129BE8 00125A28  F3 C1 00 28 */	psq_st f30, 0x28(r1), 0, qr0
 /* 80129BEC 00125A2C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 80129BF0 00125A30  3F E0 80 41 */	lis r31, lbl_8040DDE8@ha
-/* 80129BF4 00125A34  3B FF DD E8 */	addi r31, r31, lbl_8040DDE8@l
+/* 80129BF0 00125A30  3F E0 80 41 */	lis r31, "@9996"@ha
+/* 80129BF4 00125A34  3B FF DD E8 */	addi r31, r31, "@9996"@l
 /* 80129BF8 00125A38  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 80129BFC 00125A3C  7C 7E 1B 78 */	mr r30, r3
 /* 80129C00 00125A40  80 63 00 28 */	lwz r3, 0x28(r3)
@@ -1597,7 +1597,7 @@ lbl_80129C5C:
 /* 80129C80 00125AC0  EC 3F 18 28 */	fsubs f1, f31, f3
 /* 80129C84 00125AC4  EC 7F 18 2A */	fadds f3, f31, f3
 /* 80129C88 00125AC8  FC 80 10 90 */	fmr f4, f2
-/* 80129C8C 00125ACC  4B FF EB D5 */	bl lbl_80128860
+/* 80129C8C 00125ACC  4B FF EB D5 */	bl drawLine___Q210homebutton3guiFfffffUcR8_GXColor
 /* 80129C90 00125AD0  C0 21 00 10 */	lfs f1, 0x10(r1)
 /* 80129C94 00125AD4  38 81 00 08 */	addi r4, r1, 0x8
 /* 80129C98 00125AD8  C0 5F 00 08 */	lfs f2, 0x8(r31)
@@ -1610,7 +1610,7 @@ lbl_80129C5C:
 /* 80129CB4 00125AF4  EC 5E 00 28 */	fsubs f2, f30, f0
 /* 80129CB8 00125AF8  EC 9E 00 2A */	fadds f4, f30, f0
 /* 80129CBC 00125AFC  FC 60 08 90 */	fmr f3, f1
-/* 80129CC0 00125B00  4B FF EB A1 */	bl lbl_80128860
+/* 80129CC0 00125B00  4B FF EB A1 */	bl drawLine___Q210homebutton3guiFfffffUcR8_GXColor
 /* 80129CC4 00125B04  C0 3F 00 08 */	lfs f1, 0x8(r31)
 /* 80129CC8 00125B08  38 81 00 08 */	addi r4, r1, 0x8
 /* 80129CCC 00125B0C  C0 01 00 14 */	lfs f0, 0x14(r1)
@@ -1623,7 +1623,7 @@ lbl_80129C5C:
 /* 80129CE8 00125B28  EC 3F 18 2A */	fadds f1, f31, f3
 /* 80129CEC 00125B2C  EC 7F 18 28 */	fsubs f3, f31, f3
 /* 80129CF0 00125B30  FC 80 10 90 */	fmr f4, f2
-/* 80129CF4 00125B34  4B FF EB 6D */	bl lbl_80128860
+/* 80129CF4 00125B34  4B FF EB 6D */	bl drawLine___Q210homebutton3guiFfffffUcR8_GXColor
 /* 80129CF8 00125B38  C0 21 00 10 */	lfs f1, 0x10(r1)
 /* 80129CFC 00125B3C  38 81 00 08 */	addi r4, r1, 0x8
 /* 80129D00 00125B40  C0 5F 00 08 */	lfs f2, 0x8(r31)
@@ -1636,7 +1636,7 @@ lbl_80129C5C:
 /* 80129D1C 00125B5C  EC 5E 00 2A */	fadds f2, f30, f0
 /* 80129D20 00125B60  EC 9E 00 28 */	fsubs f4, f30, f0
 /* 80129D24 00125B64  FC 60 08 90 */	fmr f3, f1
-/* 80129D28 00125B68  4B FF EB 39 */	bl lbl_80128860
+/* 80129D28 00125B68  4B FF EB 39 */	bl drawLine___Q210homebutton3guiFfffffUcR8_GXColor
 .global lbl_80129D2C
 lbl_80129D2C:
 /* 80129D2C 00125B6C  80 01 00 44 */	lwz r0, 0x44(r1)
@@ -1652,8 +1652,8 @@ lbl_80129D2C:
 /* 80129D54 00125B94  00 00 00 00 */	.4byte 0x00000000
 /* 80129D58 00125B98  00 00 00 00 */	.4byte 0x00000000
 /* 80129D5C 00125B9C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80129D60
-lbl_80129D60:
+.global is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane
+is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane:
 /* 80129D60 00125BA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80129D64 00125BA4  7C 08 02 A6 */	mflr r0
 /* 80129D68 00125BA8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1715,7 +1715,7 @@ lbl_80129DFC:
 .global lbl_80129E10
 lbl_80129E10:
 /* 80129E10 00125C50  7F E3 FB 78 */	mr r3, r31
-/* 80129E14 00125C54  48 00 00 4D */	bl lbl_80129E60
+/* 80129E14 00125C54  48 00 00 4D */	bl IsVisible__Q36nw4hbm3lyt4PaneCFv
 /* 80129E18 00125C58  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80129E1C 00125C5C  40 82 00 0C */	bne lbl_80129E28
 /* 80129E20 00125C60  38 60 00 00 */	li r3, 0x0
@@ -1723,7 +1723,7 @@ lbl_80129E10:
 .global lbl_80129E28
 lbl_80129E28:
 /* 80129E28 00125C68  7F E3 FB 78 */	mr r3, r31
-/* 80129E2C 00125C6C  48 00 00 45 */	bl lbl_80129E70
+/* 80129E2C 00125C6C  48 00 00 45 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
 /* 80129E30 00125C70  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80129E34 00125C74  40 82 00 0C */	bne lbl_80129E40
 /* 80129E38 00125C78  38 60 00 01 */	li r3, 0x1
@@ -1731,8 +1731,8 @@ lbl_80129E28:
 .global lbl_80129E40
 lbl_80129E40:
 /* 80129E40 00125C80  7F E3 FB 78 */	mr r3, r31
-/* 80129E44 00125C84  48 00 00 2D */	bl lbl_80129E70
-/* 80129E48 00125C88  4B FF FF 19 */	bl lbl_80129D60
+/* 80129E44 00125C84  48 00 00 2D */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 80129E48 00125C88  4B FF FF 19 */	bl is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane
 .global lbl_80129E4C
 lbl_80129E4C:
 /* 80129E4C 00125C8C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1740,21 +1740,21 @@ lbl_80129E4C:
 /* 80129E54 00125C94  7C 08 03 A6 */	mtlr r0
 /* 80129E58 00125C98  38 21 00 10 */	addi r1, r1, 0x10
 /* 80129E5C 00125C9C  4E 80 00 20 */	blr
-.global lbl_80129E60
-lbl_80129E60:
+.global IsVisible__Q36nw4hbm3lyt4PaneCFv
+IsVisible__Q36nw4hbm3lyt4PaneCFv:
 /* 80129E60 00125CA0  88 03 00 CF */	lbz r0, 0xcf(r3)
 /* 80129E64 00125CA4  54 03 07 FE */	clrlwi r3, r0, 31
 /* 80129E68 00125CA8  4E 80 00 20 */	blr
 /* 80129E6C 00125CAC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80129E70
-lbl_80129E70:
+.global GetParent__Q36nw4hbm3lyt4PaneCFv
+GetParent__Q36nw4hbm3lyt4PaneCFv:
 /* 80129E70 00125CB0  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 80129E74 00125CB4  4E 80 00 20 */	blr
 /* 80129E78 00125CB8  00 00 00 00 */	.4byte 0x00000000
 /* 80129E7C 00125CBC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129E80
-lbl_80129E80:
+.global isVisible__Q310homebutton3gui13PaneComponentFv
+isVisible__Q310homebutton3gui13PaneComponentFv:
 /* 80129E80 00125CC0  80 63 00 2C */	lwz r3, 0x2c(r3)
 /* 80129E84 00125CC4  88 03 00 CF */	lbz r0, 0xcf(r3)
 /* 80129E88 00125CC8  54 00 07 FF */	clrlwi. r0, r0, 31
@@ -1826,56 +1826,56 @@ lbl_80129F38:
 /* 80129F48 00125D88  4E 80 00 20 */	blr
 .global lbl_80129F4C
 lbl_80129F4C:
-/* 80129F4C 00125D8C  4B FF FE 14 */	b lbl_80129D60
+/* 80129F4C 00125D8C  4B FF FE 14 */	b is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane
 /* 80129F50 00125D90  4E 80 00 20 */	blr
 /* 80129F54 00125D94  00 00 00 00 */	.4byte 0x00000000
 /* 80129F58 00125D98  00 00 00 00 */	.4byte 0x00000000
 /* 80129F5C 00125D9C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129F60
-lbl_80129F60:
+.global draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+draw__Q310homebutton3gui9InterfaceFRA3_A4_f:
 /* 80129F60 00125DA0  4E 80 00 20 */	blr
 /* 80129F64 00125DA4  00 00 00 00 */	.4byte 0x00000000
 /* 80129F68 00125DA8  00 00 00 00 */	.4byte 0x00000000
 /* 80129F6C 00125DAC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129F70
-lbl_80129F70:
+.global create__Q310homebutton3gui9InterfaceFv
+create__Q310homebutton3gui9InterfaceFv:
 /* 80129F70 00125DB0  4E 80 00 20 */	blr
 /* 80129F74 00125DB4  00 00 00 00 */	.4byte 0x00000000
 /* 80129F78 00125DB8  00 00 00 00 */	.4byte 0x00000000
 /* 80129F7C 00125DBC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129F80
-lbl_80129F80:
-/* 80129F80 00125DC0  4B F2 9E 70 */	b lbl_80053DF0
+.global update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
+update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv:
+/* 80129F80 00125DC0  4B F2 9E 70 */	b __wpadNoAlloc
 /* 80129F84 00125DC4  00 00 00 00 */	.4byte 0x00000000
 /* 80129F88 00125DC8  00 00 00 00 */	.4byte 0x00000000
 /* 80129F8C 00125DCC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129F90
-lbl_80129F90:
+.global setDraggingButton__Q310homebutton3gui9ComponentFUl
+setDraggingButton__Q310homebutton3gui9ComponentFUl:
 /* 80129F90 00125DD0  90 83 00 1C */	stw r4, 0x1c(r3)
 /* 80129F94 00125DD4  4E 80 00 20 */	blr
 /* 80129F98 00125DD8  00 00 00 00 */	.4byte 0x00000000
 /* 80129F9C 00125DDC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129FA0
-lbl_80129FA0:
+.global onDrag__Q310homebutton3gui9ComponentFff
+onDrag__Q310homebutton3gui9ComponentFff:
 /* 80129FA0 00125DE0  4E 80 00 20 */	blr
 /* 80129FA4 00125DE4  00 00 00 00 */	.4byte 0x00000000
 /* 80129FA8 00125DE8  00 00 00 00 */	.4byte 0x00000000
 /* 80129FAC 00125DEC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129FB0
-lbl_80129FB0:
+.global getPane__Q310homebutton3gui13PaneComponentFv
+getPane__Q310homebutton3gui13PaneComponentFv:
 /* 80129FB0 00125DF0  80 63 00 2C */	lwz r3, 0x2c(r3)
 /* 80129FB4 00125DF4  4E 80 00 20 */	blr
 /* 80129FB8 00125DF8  00 00 00 00 */	.4byte 0x00000000
 /* 80129FBC 00125DFC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129FC0
-lbl_80129FC0:
+.global setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
+setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler:
 /* 80129FC0 00125E00  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80129FC4 00125E04  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80129FC8 00125E08  7C 60 1B 78 */	mr r0, r3
@@ -1889,22 +1889,22 @@ lbl_80129FC0:
 /* 80129FE8 00125E28  4E 80 00 20 */	blr
 /* 80129FEC 00125E2C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80129FF0
-lbl_80129FF0:
+.global setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager
+setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager:
 /* 80129FF0 00125E30  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80129FF4 00125E34  4E 80 00 20 */	blr
 /* 80129FF8 00125E38  00 00 00 00 */	.4byte 0x00000000
 /* 80129FFC 00125E3C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8012A000
-lbl_8012A000:
-/* 8012A000 00125E40  4B F2 9D F0 */	b lbl_80053DF0
+.global update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
+update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv:
+/* 8012A000 00125E40  4B F2 9D F0 */	b __wpadNoAlloc
 /* 8012A004 00125E44  00 00 00 00 */	.4byte 0x00000000
 /* 8012A008 00125E48  00 00 00 00 */	.4byte 0x00000000
 /* 8012A00C 00125E4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8012A010
-lbl_8012A010:
+.global setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo
+setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo:
 /* 8012A010 00125E50  90 83 00 24 */	stw r4, 0x24(r3)
 /* 8012A014 00125E54  4E 80 00 20 */	blr
 /* 8012A018 00125E58  00 00 00 00 */	.4byte 0x00000000

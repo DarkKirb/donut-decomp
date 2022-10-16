@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80441040
-lbl_80441040:
+.global __vt__Q34nw4r3g3d12ScnObjGather
+__vt__Q34nw4r3g3d12ScnObjGather:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800EC300
-	.4byte lbl_800EB5D0
-	.4byte lbl_800EC2F0
-	.4byte lbl_800EB6F0
-	.4byte lbl_800EBFD0
-	.4byte lbl_800EC150
-	.4byte lbl_800EC1C0
-	.4byte lbl_800EC250
-	.4byte lbl_800EC2E0
+	.4byte __dt__Q34nw4r3g3d12ScnObjGatherFv
+	.4byte Add__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d6ScnObjbb
+	.4byte Clear__Q34nw4r3g3d12ScnObjGatherFv
+	.4byte ZSort__Q34nw4r3g3d12ScnObjGatherFv
+	.4byte Sort__Q34nw4r3g3d12ScnObjGatherFv
+	.4byte Sort__Q34nw4r3g3d12ScnObjGatherFPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_bPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b
+	.4byte DrawOpa__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d14ResMdlDrawMode
+	.4byte DrawXlu__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d14ResMdlDrawMode
+	.4byte CheckScnObj__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d6ScnObj
 	.4byte 0
 
-.global lbl_80441070
-lbl_80441070:
+.global __vt__Q34nw4r3g3d7ScnRoot
+__vt__Q34nw4r3g3d7ScnRoot:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800EC310
-	.4byte lbl_800EAA70
-	.4byte lbl_800EB550
-	.4byte lbl_800EC390
-	.4byte lbl_800EC380
-	.4byte lbl_800E9D40
-	.4byte lbl_800E9350
-	.4byte lbl_800E94F0
-	.4byte lbl_800E96A0
-	.4byte lbl_800E96B0
-	.4byte lbl_800E9110
-	.4byte lbl_800EA450
-	.4byte lbl_800EA5E0
-	.4byte lbl_800EA6A0
+	.4byte IsDerivedFrom__Q34nw4r3g3d7ScnRootCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d7ScnRootFUlUlPv
+	.4byte __dt__Q34nw4r3g3d7ScnRootFv
+	.4byte GetTypeObj__Q34nw4r3g3d7ScnRootCFv
+	.4byte GetTypeName__Q34nw4r3g3d7ScnRootCFv
+	.4byte ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.4byte SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl
+	.4byte GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl
+	.4byte GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.4byte CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl
+	.4byte Insert__Q34nw4r3g3d8ScnGroupFUlPQ34nw4r3g3d6ScnObj
+	.4byte Remove__Q34nw4r3g3d8ScnGroupFUl
+	.4byte Remove__Q34nw4r3g3d8ScnGroupFPQ34nw4r3g3d6ScnObj

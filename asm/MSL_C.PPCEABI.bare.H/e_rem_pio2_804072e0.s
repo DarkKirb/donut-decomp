@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804072E0
-lbl_804072E0:
+.global two_over_pi
+two_over_pi:
 
 	.4byte 0x00A2F983
 	.4byte 0x006E4E44
@@ -71,8 +71,8 @@ lbl_804072E0:
 	.4byte 0x0060E27B
 	.4byte 0x00C08C6B
 
-.global lbl_804073E8
-lbl_804073E8:
+.global npio2_hw
+npio2_hw:
 
 	.4byte 0x3FF921FB
 	.4byte 0x400921FB

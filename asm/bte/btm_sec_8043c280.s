@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043C280
-lbl_8043C280:
+.global "@2854"
+"@2854":
 
 	.4byte 0x42544D5F
 	.4byte 0x5365633A
@@ -43,8 +43,8 @@ lbl_8043C280:
 	.4byte 0x3E205452
 	.4byte 0x55450000
 
-.global lbl_8043C318
-lbl_8043C318:
+.global "@2900"
+"@2900":
 
 	.4byte 0x42544D5F
 	.4byte 0x53657450
@@ -113,8 +113,8 @@ lbl_8043C318:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8043C420
-lbl_8043C420:
+.global "@2972_8043C420"
+"@2972_8043C420":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -141,8 +141,8 @@ lbl_8043C420:
 	.4byte 0x32782530
 	.4byte 0x32785D00
 
-.global lbl_8043C480
-lbl_8043C480:
+.global "@2973_8043C480"
+"@2973_8043C480":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -208,8 +208,8 @@ lbl_8043C480:
 	.4byte 0x62756666
 	.4byte 0x65720000
 
-.global lbl_8043C57C
-lbl_8043C57C:
+.global "@3016_8043C57C"
+"@3016_8043C57C":
 
 	.4byte 0x62746D5F
 	.4byte 0x72657374
@@ -363,8 +363,8 @@ lbl_8043C57C:
 	.4byte 0x67733A30
 	.4byte 0x78257800
 
-.global lbl_8043C7D8
-lbl_8043C7D8:
+.global "@3105_8043C7D8"
+"@3105_8043C7D8":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -383,8 +383,8 @@ lbl_8043C7D8:
 	.4byte 0x434E3A25
 	.4byte 0x64000000
 
-.global lbl_8043C818
-lbl_8043C818:
+.global "@3125"
+"@3125":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -402,8 +402,8 @@ lbl_8043C818:
 	.4byte 0x76696365
 	.4byte 0
 
-.global lbl_8043C854
-lbl_8043C854:
+.global "@3195_8043C854"
+"@3195_8043C854":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -420,8 +420,8 @@ lbl_8043C854:
 	.4byte 0x6174653A
 	.4byte 0x25640000
 
-.global lbl_8043C88C
-lbl_8043C88C:
+.global "@3238"
+"@3238":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -437,8 +437,8 @@ lbl_8043C88C:
 	.4byte 0x6174653A
 	.4byte 0x25640000
 
-.global lbl_8043C8C0
-lbl_8043C8C0:
+.global "@3250_8043C8C0"
+"@3250_8043C8C0":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -453,8 +453,8 @@ lbl_8043C8C0:
 	.4byte 0x6174653A
 	.4byte 0x25640000
 
-.global lbl_8043C8F0
-lbl_8043C8F0:
+.global "@3268"
+"@3268":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -470,8 +470,8 @@ lbl_8043C8F0:
 	.4byte 0x74617465
 	.4byte 0x3A256400
 
-.global lbl_8043C924
-lbl_8043C924:
+.global "@3318"
+"@3318":
 
 	.4byte 0x53656375
 	.4byte 0x72697479
@@ -491,8 +491,8 @@ lbl_8043C924:
 	.4byte 0x6D6F6465
 	.4byte 0x3A256400
 
-.global lbl_8043C968
-lbl_8043C968:
+.global "@3358"
+"@3358":
 
 	.4byte 0x62746D5F
 	.4byte 0x7365635F
@@ -512,8 +512,8 @@ lbl_8043C968:
 	.4byte 0x32783A25
 	.4byte 0x30327800
 
-.global lbl_8043C9AC
-lbl_8043C9AC:
+.global "@3359"
+"@3359":
 
 	.4byte 0x20202020
 	.4byte 0x20202020
@@ -527,8 +527,8 @@ lbl_8043C9AC:
 	.4byte 0x3A202564
 	.4byte 0
 
-.global lbl_8043C9D8
-lbl_8043C9D8:
+.global "@3373"
+"@3373":
 
 	.4byte 0x62746D5F
 	.4byte 0x7365635F
@@ -547,8 +547,8 @@ lbl_8043C9D8:
 	.4byte 0x783A2530
 	.4byte 0x32780000
 
-.global lbl_8043CA18
-lbl_8043CA18:
+.global "@3377_8043CA18"
+"@3377_8043CA18":
 
 	.4byte 0x62746D5F
 	.4byte 0x7365635F
@@ -702,8 +702,8 @@ lbl_8043CA18:
 	.4byte 0x6E746564
 	.4byte 0
 
-.global lbl_8043CC74
-lbl_8043CC74:
+.global "@3519_8043CC74"
+"@3519_8043CC74":
 
 	.4byte 0x62746D5F
 	.4byte 0x7365635F

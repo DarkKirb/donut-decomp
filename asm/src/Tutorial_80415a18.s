@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415A18
-lbl_80415A18:
+.global T_PageDataNormal__Q33scn17challengetutorial4info
+T_PageDataNormal__Q33scn17challengetutorial4info:
 
 	.4byte 0
 	.4byte 0x00000001

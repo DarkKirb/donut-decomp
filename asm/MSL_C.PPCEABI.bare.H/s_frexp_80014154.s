@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80014154
-lbl_80014154:
+.global frexp
+frexp:
 /* 80014154 0000FF94  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80014158 0000FF98  38 80 00 00 */	li r4, 0x0
 /* 8001415C 0000FF9C  3C 00 7F F0 */	lis r0, 0x7ff0
@@ -21,7 +21,7 @@ lbl_80014188:
 /* 80014188 0000FFC8  3C 00 00 10 */	lis r0, 0x10
 /* 8001418C 0000FFCC  7C 04 00 00 */	cmpw r4, r0
 /* 80014190 0000FFD0  40 80 00 20 */	bge lbl_800141B0
-/* 80014194 0000FFD4  C8 02 84 F8 */	lfd f0, lbl_8055E478@sda21(r2)
+/* 80014194 0000FFD4  C8 02 84 F8 */	lfd f0, "@468"@sda21(r2)
 /* 80014198 0000FFD8  38 00 FF CA */	li r0, -0x36
 /* 8001419C 0000FFDC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 800141A0 0000FFE0  FC 21 00 32 */	fmul f1, f1, f0

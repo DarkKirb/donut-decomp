@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014B914
-lbl_8014B914:
+.global __as__8_GXColorFRC8_GXColor
+__as__8_GXColorFRC8_GXColor:
 /* 8014B914 00147754  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 8014B918 00147758  98 03 00 00 */	stb r0, 0x0(r3)
 /* 8014B91C 0014775C  88 04 00 01 */	lbz r0, 0x1(r4)
@@ -12,22 +12,22 @@ lbl_8014B914:
 /* 8014B92C 0014776C  88 04 00 03 */	lbz r0, 0x3(r4)
 /* 8014B930 00147770  98 03 00 03 */	stb r0, 0x3(r3)
 /* 8014B934 00147774  4E 80 00 20 */	blr
-.global lbl_8014B938
-lbl_8014B938:
+.global __as__Q34nw4r4math4VEC2FRCQ34nw4r4math4VEC2
+__as__Q34nw4r4math4VEC2FRCQ34nw4r4math4VEC2:
 /* 8014B938 00147778  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014B93C 0014777C  7C 08 02 A6 */	mflr r0
 /* 8014B940 00147780  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8014B944 00147784  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8014B948 00147788  7C 7F 1B 78 */	mr r31, r3
-/* 8014B94C 0014778C  48 00 00 1D */	bl lbl_8014B968
+/* 8014B94C 0014778C  48 00 00 1D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 8014B950 00147790  7F E3 FB 78 */	mr r3, r31
 /* 8014B954 00147794  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8014B958 00147798  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8014B95C 0014779C  7C 08 03 A6 */	mtlr r0
 /* 8014B960 001477A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014B964 001477A4  4E 80 00 20 */	blr
-.global lbl_8014B968
-lbl_8014B968:
+.global __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+__as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2:
 /* 8014B968 001477A8  C0 04 00 00 */	lfs f0, 0x0(r4)
 /* 8014B96C 001477AC  D0 03 00 00 */	stfs f0, 0x0(r3)
 /* 8014B970 001477B0  C0 04 00 04 */	lfs f0, 0x4(r4)

@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040EB78
-lbl_8040EB78:
+.global VX2CommandTable16x8
+VX2CommandTable16x8:
 
-	.4byte lbl_80156BC0
-	.4byte lbl_80156CF0
-	.4byte lbl_80156F10
-	.4byte lbl_80157130
-	.4byte lbl_80157350
-	.4byte lbl_80157570
+	.4byte VX2CommandSkip116x8__FR14VX2DecoderData
+	.4byte VX2CommandBack116x8__FR14VX2DecoderData
+	.4byte VX2CommandBack216x8__FR14VX2DecoderData
+	.4byte VX2CommandBack316x8__FR14VX2DecoderData
+	.4byte VX2CommandBack416x8__FR14VX2DecoderData
+	.4byte VX2CommandBack516x8__FR14VX2DecoderData
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80157790
-	.4byte lbl_80157810
+	.4byte VX2CommandCutH16x8__FR14VX2DecoderData
+	.4byte VX2CommandCutV16x8__FR14VX2DecoderData
 
-.global lbl_8040EBA0
-lbl_8040EBA0:
+.global "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@command"
+"@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@command":
 
 	.4byte 0x00000002
 	.4byte 0x00000002
@@ -51,8 +51,8 @@ lbl_8040EBA0:
 	.4byte 0x00000001
 	.4byte 0x00000001
 
-.global lbl_8040EC20
-lbl_8040EC20:
+.global "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@size@0"
+"@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@size@0":
 
 	.4byte 0x00000003
 	.4byte 0x00000002

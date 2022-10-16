@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D4E8
-lbl_8055D4E8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4F0
-lbl_8055D4F0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8

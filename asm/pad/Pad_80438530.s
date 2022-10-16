@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80438530
-lbl_80438530:
+.global "@1_80438530"
+"@1_80438530":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F53
@@ -23,10 +23,10 @@ lbl_80438530:
 	.4byte 0x3529203E
 	.4byte 0x3E000000
 
-.global lbl_80438578
-lbl_80438578:
+.global ShutdownFunctionInfo_80438578
+ShutdownFunctionInfo_80438578:
 
-	.4byte lbl_80053C60
+	.4byte OnShutdown_80053C60
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0

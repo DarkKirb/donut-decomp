@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CD60
-lbl_8055CD60:
+.global "@LOCAL@OnShutdown__FiUl@recalibrated"
+"@LOCAL@OnShutdown__FiUl@recalibrated":
 	.skip 0x4
 
-.global lbl_8055CD64
-lbl_8055CD64:
+.global SamplingCallback
+SamplingCallback:
 	.skip 0x4
 
-.global lbl_8055CD68
-lbl_8055CD68:
+.global __PADSpec
+__PADSpec:
 	.skip 0x4
 
-.global lbl_8055CD6C
-lbl_8055CD6C:
+.global BarrelBits
+BarrelBits:
 	.skip 0x4
 
-.global lbl_8055CD70
-lbl_8055CD70:
+.global PendingBits
+PendingBits:
 	.skip 0x4
 
-.global lbl_8055CD74
-lbl_8055CD74:
+.global CheckingBits
+CheckingBits:
 	.skip 0x4
 
-.global lbl_8055CD78
-lbl_8055CD78:
+.global WaitingBits
+WaitingBits:
 	.skip 0x4
 
-.global lbl_8055CD7C
-lbl_8055CD7C:
+.global RecalibrateBits
+RecalibrateBits:
 	.skip 0x4
 
-.global lbl_8055CD80
-lbl_8055CD80:
+.global ResettingBits
+ResettingBits:
 	.skip 0x4
 
-.global lbl_8055CD84
-lbl_8055CD84:
+.global EnabledBits
+EnabledBits:
 	.skip 0x4
 
-.global lbl_8055CD88
-lbl_8055CD88:
+.global Initialized_8055CD88
+Initialized_8055CD88:
 	.skip 0x8

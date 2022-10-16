@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80479FD8
-lbl_80479FD8:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10parasoldee16StateParasolFall,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10parasoldee16StateParasolFall,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802CB9AC
-	.4byte lbl_802CB98C
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10parasoldee16StateParasolFall,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10parasoldee16StateParasolFall,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80479FE8
-lbl_80479FE8:
+.global __vt__Q53scn4step5enemy10parasoldee12BrainRelease
+__vt__Q53scn4step5enemy10parasoldee12BrainRelease:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802CB9A8
-	.4byte lbl_802CB898
-	.4byte lbl_802CB984
-	.4byte lbl_8027EE30
-	.4byte lbl_802CB988
+	.4byte __dt__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onStart__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onRecover__Q53scn4step5enemy10parasoldee12BrainReleaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q53scn4step5enemy10parasoldee12BrainReleaseFv
 	.4byte 0

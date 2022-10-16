@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80479948
-lbl_80479948:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff12StateStopAir,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff12StateStopAir,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C83A8
-	.4byte lbl_802C838C
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff12StateStopAir,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff12StateStopAir,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80479958
-lbl_80479958:
+.global __vt__Q53scn4step5enemy5nruff9StateFall
+__vt__Q53scn4step5enemy5nruff9StateFall:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C7FD4
-	.4byte lbl_802C8054
-	.4byte lbl_802C80BC
-	.4byte lbl_8028DDE0
-	.4byte lbl_802C8128
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy5nruff9StateFallFv
+	.4byte procAnim__Q53scn4step5enemy5nruff9StateFallFv
+	.4byte procMove__Q53scn4step5enemy5nruff9StateFallFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5nruff9StateFallFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

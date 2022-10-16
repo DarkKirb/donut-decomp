@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043FF38
-lbl_8043FF38:
+.global "@1109"
+"@1109":
 
 	.4byte lbl_800A11D0
 	.4byte lbl_800A1170
@@ -22,8 +22,8 @@ lbl_8043FF38:
 	.4byte lbl_800A11D0
 	.4byte lbl_800A11BC
 
-.global lbl_8043FF7C
-lbl_8043FF7C:
+.global "@1118"
+"@1118":
 
 	.4byte 0x53445020
 	.4byte 0x2D207364
@@ -40,8 +40,8 @@ lbl_8043FF7C:
 	.4byte 0x30782578
 	.4byte 0
 
-.global lbl_8043FFB4
-lbl_8043FFB4:
+.global "@1119"
+"@1119":
 
 	.4byte 0x53445020
 	.4byte 0x2D206E6F
@@ -51,8 +51,8 @@ lbl_8043FFB4:
 	.4byte 0x206D7367
 	.4byte 0
 
-.global lbl_8043FFD0
-lbl_8043FFD0:
+.global "@1173_8043FFD0"
+"@1173_8043FFD0":
 
 	.4byte lbl_800A14E0
 	.4byte lbl_800A1470
@@ -63,8 +63,8 @@ lbl_8043FFD0:
 	.4byte lbl_800A1494
 	.4byte lbl_800A14B0
 
-.global lbl_8043FFF0
-lbl_8043FFF0:
+.global "@1172_8043FFF0"
+"@1172_8043FFF0":
 
 	.4byte lbl_800A140C
 	.4byte lbl_800A139C
@@ -91,8 +91,8 @@ lbl_8044000C:
 
 	.4byte lbl_800A13DC
 
-.global lbl_80440010
-lbl_80440010:
+.global "@1221_80440010"
+"@1221_80440010":
 
 	.4byte lbl_800A191C
 

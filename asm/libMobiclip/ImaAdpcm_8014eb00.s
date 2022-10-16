@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014EB00
-lbl_8014EB00:
+.global ImaAdpcmInit
+ImaAdpcmInit:
 /* 8014EB00 0014A940  38 C0 00 01 */	li r6, 0x1
 /* 8014EB04 0014A944  90 C3 00 00 */	stw r6, 0x0(r3)
 /* 8014EB08 0014A948  38 00 00 00 */	li r0, 0x0
@@ -11,8 +11,8 @@ lbl_8014EB00:
 /* 8014EB14 0014A954  90 C5 00 00 */	stw r6, 0x0(r5)
 /* 8014EB18 0014A958  4E 80 00 20 */	blr
 /* 8014EB1C 0014A95C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8014EB20
-lbl_8014EB20:
+.global ImaAdpcmSetContext
+ImaAdpcmSetContext:
 /* 8014EB20 0014A960  88 A4 00 03 */	lbz r5, 0x3(r4)
 /* 8014EB24 0014A964  88 04 00 02 */	lbz r0, 0x2(r4)
 /* 8014EB28 0014A968  50 A0 44 2E */	rlwimi r0, r5, 8, 16, 23
@@ -21,15 +21,15 @@ lbl_8014EB20:
 /* 8014EB34 0014A974  90 83 00 04 */	stw r4, 0x4(r3)
 /* 8014EB38 0014A978  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8014EB3C 0014A97C  4E 80 00 20 */	blr
-.global lbl_8014EB40
-lbl_8014EB40:
+.global ImaAdpcmDecode
+ImaAdpcmDecode:
 /* 8014EB40 0014A980  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 8014EB44 0014A984  3D 00 80 41 */	lis r8, lbl_8040E450@ha
-/* 8014EB48 0014A988  3C E0 80 41 */	lis r7, lbl_8040E508@ha
+/* 8014EB44 0014A984  3D 00 80 41 */	lis r8, g_Ima_Adpcm_StepTable@ha
+/* 8014EB48 0014A988  3C E0 80 41 */	lis r7, g_Ima_Adpcm_IndexTable@ha
 /* 8014EB4C 0014A98C  39 20 00 00 */	li r9, 0x0
 /* 8014EB50 0014A990  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8014EB54 0014A994  39 68 E4 50 */	addi r11, r8, lbl_8040E450@l
-/* 8014EB58 0014A998  39 47 E5 08 */	addi r10, r7, lbl_8040E508@l
+/* 8014EB54 0014A994  39 68 E4 50 */	addi r11, r8, g_Ima_Adpcm_StepTable@l
+/* 8014EB58 0014A998  39 47 E5 08 */	addi r10, r7, g_Ima_Adpcm_IndexTable@l
 /* 8014EB5C 0014A99C  39 00 00 58 */	li r8, 0x58
 /* 8014EB60 0014A9A0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8014EB64 0014A9A4  38 E0 80 00 */	li r7, -0x8000

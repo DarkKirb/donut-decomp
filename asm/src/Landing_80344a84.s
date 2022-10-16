@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80344A84
-lbl_80344A84:
+.global setLandingPosForGimmick__Q43scn4step4hero7LandingFv
+setLandingPosForGimmick__Q43scn4step4hero7LandingFv:
 /* 80344A84 003408C4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80344A88 003408C8  7C 08 02 A6 */	mflr r0
 /* 80344A8C 003408CC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80344A90 003408D0  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80344A94 003408D4  7C 7F 1B 78 */	mr r31, r3
-/* 80344A98 003408D8  48 00 00 E5 */	bl lbl_80344B7C
+/* 80344A98 003408D8  48 00 00 E5 */	bl isLanding__Q43scn4step4hero7LandingFv
 /* 80344A9C 003408DC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80344AA0 003408E0  41 82 00 24 */	beq lbl_80344AC4
 /* 80344AA4 003408E4  38 61 00 08 */	addi r3, r1, 0x8
 /* 80344AA8 003408E8  7F E4 FB 78 */	mr r4, r31
-/* 80344AAC 003408EC  48 00 00 2D */	bl lbl_80344AD8
+/* 80344AAC 003408EC  48 00 00 2D */	bl pos__Q43scn4step4hero7LandingFv
 /* 80344AB0 003408F0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80344AB4 003408F4  4B D3 0C 7D */	bl lbl_80075730
-/* 80344AB8 003408F8  4B ED C2 71 */	bl lbl_80220D28
+/* 80344AB4 003408F4  4B D3 0C 7D */	bl GKI_getfirst
+/* 80344AB8 003408F8  4B ED C2 71 */	bl gimmickManager__Q33scn4step9ComponentFv
 /* 80344ABC 003408FC  38 81 00 08 */	addi r4, r1, 0x8
-/* 80344AC0 00340900  4B FB 25 4D */	bl lbl_802F700C
+/* 80344AC0 00340900  4B FB 25 4D */	bl onLand__Q43scn4step7gimmick7ManagerFRCQ33hel4math7Vector3
 .global lbl_80344AC4
 lbl_80344AC4:
 /* 80344AC4 00340904  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -26,8 +26,8 @@ lbl_80344AC4:
 /* 80344ACC 0034090C  7C 08 03 A6 */	mtlr r0
 /* 80344AD0 00340910  38 21 00 20 */	addi r1, r1, 0x20
 /* 80344AD4 00340914  4E 80 00 20 */	blr
-.global lbl_80344AD8
-lbl_80344AD8:
+.global pos__Q43scn4step4hero7LandingFv
+pos__Q43scn4step4hero7LandingFv:
 /* 80344AD8 00340918  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80344ADC 0034091C  7C 08 02 A6 */	mflr r0
 /* 80344AE0 00340920  90 01 00 24 */	stw r0, 0x24(r1)
@@ -39,34 +39,34 @@ lbl_80344AD8:
 /* 80344AF8 00340938  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80344AFC 0034093C  41 82 00 54 */	beq lbl_80344B50
 /* 80344B00 00340940  80 64 00 00 */	lwz r3, 0x0(r4)
-/* 80344B04 00340944  4B FF B9 51 */	bl lbl_80340454
-/* 80344B08 00340948  4B E4 E6 69 */	bl lbl_80193170
+/* 80344B04 00340944  4B FF B9 51 */	bl groundChecker__Q43scn4step4hero4HeroFv
+/* 80344B08 00340948  4B E4 E6 69 */	bl isEnable__Q23g3d12NodeLocalMtxCFv
 /* 80344B0C 0034094C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80344B10 00340950  41 82 00 28 */	beq lbl_80344B38
 /* 80344B14 00340954  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80344B18 00340958  4B FF B9 3D */	bl lbl_80340454
+/* 80344B18 00340958  4B FF B9 3D */	bl groundChecker__Q43scn4step4hero4HeroFv
 /* 80344B1C 0034095C  7C 64 1B 78 */	mr r4, r3
 /* 80344B20 00340960  38 61 00 08 */	addi r3, r1, 0x8
-/* 80344B24 00340964  4B E6 E6 09 */	bl lbl_801B312C
+/* 80344B24 00340964  4B E6 E6 09 */	bl actorCurrentPos__Q35mcoll6detail12ActorDiamondCFv
 /* 80344B28 00340968  7F C3 F3 78 */	mr r3, r30
 /* 80344B2C 0034096C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80344B30 00340970  4B E5 A9 2D */	bl lbl_8019F45C
+/* 80344B30 00340970  4B E5 A9 2D */	bl toVector3__Q33hel4math7Vector2CFv
 /* 80344B34 00340974  48 00 00 30 */	b lbl_80344B64
 .global lbl_80344B38
 lbl_80344B38:
 /* 80344B38 00340978  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80344B3C 0034097C  4B FF B7 C9 */	bl lbl_80340304
+/* 80344B3C 0034097C  4B FF B7 C9 */	bl location__Q43scn4step4hero4HeroCFv
 /* 80344B40 00340980  7C 64 1B 78 */	mr r4, r3
 /* 80344B44 00340984  7F C3 F3 78 */	mr r3, r30
-/* 80344B48 00340988  4B F2 AB 6D */	bl lbl_8026F6B4
+/* 80344B48 00340988  4B F2 AB 6D */	bl pos__Q43scn4step5chara8LocationCFv
 /* 80344B4C 0034098C  48 00 00 18 */	b lbl_80344B64
 .global lbl_80344B50
 lbl_80344B50:
 /* 80344B50 00340990  80 64 00 00 */	lwz r3, 0x0(r4)
-/* 80344B54 00340994  4B FF B7 B1 */	bl lbl_80340304
+/* 80344B54 00340994  4B FF B7 B1 */	bl location__Q43scn4step4hero4HeroCFv
 /* 80344B58 00340998  7C 64 1B 78 */	mr r4, r3
 /* 80344B5C 0034099C  7F C3 F3 78 */	mr r3, r30
-/* 80344B60 003409A0  4B F2 AB 55 */	bl lbl_8026F6B4
+/* 80344B60 003409A0  4B F2 AB 55 */	bl pos__Q43scn4step5chara8LocationCFv
 .global lbl_80344B64
 lbl_80344B64:
 /* 80344B64 003409A4  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -75,8 +75,8 @@ lbl_80344B64:
 /* 80344B70 003409B0  7C 08 03 A6 */	mtlr r0
 /* 80344B74 003409B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80344B78 003409B8  4E 80 00 20 */	blr
-.global lbl_80344B7C
-lbl_80344B7C:
+.global isLanding__Q43scn4step4hero7LandingFv
+isLanding__Q43scn4step4hero7LandingFv:
 /* 80344B7C 003409BC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80344B80 003409C0  7C 08 02 A6 */	mflr r0
 /* 80344B84 003409C4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -88,8 +88,8 @@ lbl_80344B7C:
 /* 80344B9C 003409DC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80344BA0 003409E0  41 82 00 78 */	beq lbl_80344C18
 /* 80344BA4 003409E4  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80344BA8 003409E8  4B FF B8 AD */	bl lbl_80340454
-/* 80344BAC 003409EC  4B E4 E5 C5 */	bl lbl_80193170
+/* 80344BA8 003409E8  4B FF B8 AD */	bl groundChecker__Q43scn4step4hero4HeroFv
+/* 80344BAC 003409EC  4B E4 E5 C5 */	bl isEnable__Q23g3d12NodeLocalMtxCFv
 /* 80344BB0 003409F0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80344BB4 003409F4  40 82 00 0C */	bne lbl_80344BC0
 /* 80344BB8 003409F8  38 60 00 00 */	li r3, 0x0
@@ -97,25 +97,25 @@ lbl_80344B7C:
 .global lbl_80344BC0
 lbl_80344BC0:
 /* 80344BC0 00340A00  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80344BC4 00340A04  4B FF B8 91 */	bl lbl_80340454
+/* 80344BC4 00340A04  4B FF B8 91 */	bl groundChecker__Q43scn4step4hero4HeroFv
 /* 80344BC8 00340A08  7C 64 1B 78 */	mr r4, r3
 /* 80344BCC 00340A0C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80344BD0 00340A10  4B E6 E5 5D */	bl lbl_801B312C
+/* 80344BD0 00340A10  4B E6 E5 5D */	bl actorCurrentPos__Q35mcoll6detail12ActorDiamondCFv
 /* 80344BD4 00340A14  C3 E1 00 0C */	lfs f31, 0xc(r1)
 /* 80344BD8 00340A18  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80344BDC 00340A1C  4B FF B7 29 */	bl lbl_80340304
+/* 80344BDC 00340A1C  4B FF B7 29 */	bl location__Q43scn4step4hero4HeroCFv
 /* 80344BE0 00340A20  7C 64 1B 78 */	mr r4, r3
 /* 80344BE4 00340A24  38 61 00 10 */	addi r3, r1, 0x10
-/* 80344BE8 00340A28  4B F2 AA CD */	bl lbl_8026F6B4
+/* 80344BE8 00340A28  4B F2 AA CD */	bl pos__Q43scn4step5chara8LocationCFv
 /* 80344BEC 00340A2C  C0 01 00 14 */	lfs f0, 0x14(r1)
 /* 80344BF0 00340A30  EC 20 F8 28 */	fsubs f1, f0, f31
-/* 80344BF4 00340A34  C0 02 CC E0 */	lfs f0, lbl_80562C60@sda21(r2)
+/* 80344BF4 00340A34  C0 02 CC E0 */	lfs f0, "@52449_80562C60"@sda21(r2)
 /* 80344BF8 00340A38  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80344BFC 00340A3C  40 80 00 08 */	bge lbl_80344C04
 /* 80344C00 00340A40  FC 20 08 50 */	fneg f1, f1
 .global lbl_80344C04
 lbl_80344C04:
-/* 80344C04 00340A44  C0 02 CC E4 */	lfs f0, lbl_80562C64@sda21(r2)
+/* 80344C04 00340A44  C0 02 CC E4 */	lfs f0, "@52450_80562C64"@sda21(r2)
 /* 80344C08 00340A48  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80344C0C 00340A4C  7C 60 00 26 */	mfcr r3
 /* 80344C10 00340A50  54 63 0F FE */	srwi r3, r3, 31
@@ -123,8 +123,8 @@ lbl_80344C04:
 .global lbl_80344C18
 lbl_80344C18:
 /* 80344C18 00340A58  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80344C1C 00340A5C  4B FF B6 E1 */	bl lbl_803402FC
-/* 80344C20 00340A60  4B E3 CA B5 */	bl lbl_801816D4
+/* 80344C1C 00340A5C  4B FF B6 E1 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80344C20 00340A60  4B E3 CA B5 */	bl dataType__Q36effect6detail10GenContextCFv
 .global lbl_80344C24
 lbl_80344C24:
 /* 80344C24 00340A64  38 00 00 38 */	li r0, 0x38

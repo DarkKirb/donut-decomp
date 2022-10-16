@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80447EC8
-lbl_80447EC8:
+.global "@3186"
+"@3186":
 
 	.4byte 0x5B53646B
 	.4byte 0x204F7065
@@ -73,8 +73,8 @@ lbl_80447EC8:
 	.4byte 0x20657272
 	.4byte 0x6F720A00
 
-.global lbl_80447FD8
-lbl_80447FD8:
+.global "@3205"
+"@3205":
 
 	.4byte lbl_801512B4
 	.4byte lbl_801512BC
@@ -86,8 +86,8 @@ lbl_80447FD8:
 	.4byte lbl_801512F4
 	.4byte lbl_801512EC
 
-.global lbl_80447FFC
-lbl_80447FFC:
+.global "@3204"
+"@3204":
 
 	.4byte lbl_80151154
 	.4byte lbl_8015115C
@@ -99,8 +99,8 @@ lbl_80447FFC:
 	.4byte lbl_80151194
 	.4byte lbl_8015118C
 
-.global lbl_80448020
-lbl_80448020:
+.global "@3203"
+"@3203":
 
 	.4byte lbl_801510BC
 	.4byte lbl_801510C4
@@ -112,8 +112,8 @@ lbl_80448020:
 	.4byte lbl_801510FC
 	.4byte lbl_801510F4
 
-.global lbl_80448044
-lbl_80448044:
+.global "@3242_80448044"
+"@3242_80448044":
 
 	.4byte lbl_801514E0
 	.4byte lbl_801514E8
@@ -125,8 +125,8 @@ lbl_80448044:
 	.4byte lbl_80151520
 	.4byte lbl_80151518
 
-.global lbl_80448068
-lbl_80448068:
+.global "@3241"
+"@3241":
 
 	.4byte lbl_8015143C
 	.4byte lbl_80151444
@@ -138,8 +138,8 @@ lbl_80448068:
 	.4byte lbl_8015147C
 	.4byte lbl_80151474
 
-.global lbl_8044808C
-lbl_8044808C:
+.global "@3271"
+"@3271":
 
 	.4byte lbl_801516A0
 	.4byte lbl_801516A8
@@ -151,8 +151,8 @@ lbl_8044808C:
 	.4byte lbl_801516E0
 	.4byte lbl_801516D8
 
-.global lbl_804480B0
-lbl_804480B0:
+.global "@3270"
+"@3270":
 
 	.4byte lbl_801515FC
 	.4byte lbl_80151604
@@ -170,8 +170,8 @@ lbl_804480B0:
 	.4byte 0x696E670A
 	.4byte 0
 
-.global lbl_804480EC
-lbl_804480EC:
+.global "@3317"
+"@3317":
 
 	.4byte lbl_8015189C
 	.4byte lbl_801518A4
@@ -183,8 +183,8 @@ lbl_804480EC:
 	.4byte lbl_801518DC
 	.4byte lbl_801518D4
 
-.global lbl_80448110
-lbl_80448110:
+.global "@3329"
+"@3329":
 
 	.4byte lbl_80151964
 	.4byte lbl_8015196C
@@ -196,8 +196,8 @@ lbl_80448110:
 	.4byte lbl_801519A4
 	.4byte lbl_8015199C
 
-.global lbl_80448134
-lbl_80448134:
+.global "@3353"
+"@3353":
 
 	.4byte lbl_80151A94
 	.4byte lbl_80151A9C
@@ -209,8 +209,8 @@ lbl_80448134:
 	.4byte lbl_80151AD4
 	.4byte lbl_80151ACC
 
-.global lbl_80448158
-lbl_80448158:
+.global "@3352"
+"@3352":
 
 	.4byte lbl_80151A20
 	.4byte lbl_80151A28

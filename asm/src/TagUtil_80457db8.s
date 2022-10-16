@@ -1,20 +1,20 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80457DB8
-lbl_80457DB8:
+.global __vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp
+__vt__Q33lyt7TagUtil25Iterator$48859TagUtil_cpp:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801B0104
-	.4byte lbl_801B00F4
-	.4byte lbl_801B00C0
+	.4byte onStartTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil25Iterator$48859TagUtil_cppFw
 
-.global lbl_80457DCC
-lbl_80457DCC:
+.global __vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp
+__vt__Q33lyt7TagUtil25Iterator$48809TagUtil_cpp:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801B0128
-	.4byte lbl_801B0118
-	.4byte lbl_801B0108
+	.4byte onStartTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil25Iterator$48809TagUtil_cppFw

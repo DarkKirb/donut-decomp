@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801285D0
-lbl_801285D0:
+.global init__Q210homebutton15FrameControllerFifff
+init__Q210homebutton15FrameControllerFifff:
 /* 801285D0 00124410  2C 04 00 01 */	cmpwi r4, 0x1
 /* 801285D4 00124414  38 00 00 00 */	li r0, 0x0
 /* 801285D8 00124418  90 83 00 18 */	stw r4, 0x18(r3)
@@ -23,8 +23,8 @@ lbl_80128600:
 /* 80128604 00124444  4E 80 00 20 */	blr
 /* 80128608 00124448  00 00 00 00 */	.4byte 0x00000000
 /* 8012860C 0012444C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80128610
-lbl_80128610:
+.global initFrame__Q210homebutton15FrameControllerFv
+initFrame__Q210homebutton15FrameControllerFv:
 /* 80128610 00124450  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80128614 00124454  2C 00 00 01 */	cmpwi r0, 0x1
 /* 80128618 00124458  40 82 00 0C */	bne lbl_80128624
@@ -38,8 +38,8 @@ lbl_80128628:
 /* 80128628 00124468  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 8012862C 0012446C  4E 80 00 20 */	blr
 
-.global lbl_80128630
-lbl_80128630:
+.global calc__Q210homebutton15FrameControllerFv
+calc__Q210homebutton15FrameControllerFv:
 /* 80128630 00124470  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80128634 00124474  2C 00 00 01 */	cmpwi r0, 0x1
 /* 80128638 00124478  4C 82 00 20 */	bnelr
@@ -55,9 +55,9 @@ lbl_80128630:
 /* 80128660 001244A0  4E 80 00 20 */	blr
 .global lbl_80128664
 lbl_80128664:
-/* 80128664 001244A4  3C 80 80 41 */	lis r4, lbl_8040DDE0@ha
+/* 80128664 001244A4  3C 80 80 41 */	lis r4, "@2246"@ha
 /* 80128668 001244A8  C0 63 00 04 */	lfs f3, 0x4(r3)
-/* 8012866C 001244AC  C0 44 DD E0 */	lfs f2, lbl_8040DDE0@l(r4)
+/* 8012866C 001244AC  C0 44 DD E0 */	lfs f2, "@2246"@l(r4)
 /* 80128670 001244B0  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 80128674 001244B4  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 80128678 001244B8  EC 43 10 28 */	fsubs f2, f3, f2
@@ -104,9 +104,9 @@ lbl_80128704:
 /* 80128704 00124544  88 03 00 1C */	lbz r0, 0x1c(r3)
 /* 80128708 00124548  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8012870C 0012454C  40 82 00 40 */	bne lbl_8012874C
-/* 80128710 00124550  3C 80 80 41 */	lis r4, lbl_8040DDE0@ha
+/* 80128710 00124550  3C 80 80 41 */	lis r4, "@2246"@ha
 /* 80128714 00124554  C0 63 00 04 */	lfs f3, 0x4(r3)
-/* 80128718 00124558  C0 44 DD E0 */	lfs f2, lbl_8040DDE0@l(r4)
+/* 80128718 00124558  C0 44 DD E0 */	lfs f2, "@2246"@l(r4)
 /* 8012871C 0012455C  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 80128720 00124560  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 80128724 00124564  EC 43 10 28 */	fsubs f2, f3, f2

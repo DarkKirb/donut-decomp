@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048BEA8
-lbl_8048BEA8:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common16StatePlancherHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common16StatePlancherHit,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803678A0
-	.4byte lbl_80367884
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common16StatePlancherHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common16StatePlancherHit,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048BEB8
-lbl_8048BEB8:
+.global __vt__Q53scn4step4hero6common13StatePlancher
+__vt__Q53scn4step4hero6common13StatePlancher:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80367570
-	.4byte lbl_80367600
-	.4byte lbl_80367748
-	.4byte lbl_8035550C
-	.4byte lbl_8036774C
-	.4byte lbl_803677DC
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero6common13StatePlancherFv
+	.4byte procAnim__Q53scn4step4hero6common13StatePlancherFv
+	.4byte procMove__Q53scn4step4hero6common13StatePlancherFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common13StatePlancherFv
+	.4byte procObjCollReact__Q53scn4step4hero6common13StatePlancherFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040B358
-lbl_8040B358:
+.global DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator
+DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator:
 
 	.4byte 0xFD2DFD2E
 	.4byte 0xFD2FFD75
@@ -69,8 +69,8 @@ lbl_8040B358:
 	.4byte 0xFFFCFFFD
 	.4byte 0xFFFF0000
 
-.global lbl_8040B458
-lbl_8040B458:
+.global "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"
+"@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable":
 
 	.4byte 0x3F7FCCB8
 	.4byte 0x3F7F9947

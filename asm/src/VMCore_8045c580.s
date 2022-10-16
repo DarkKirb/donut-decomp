@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045C580
-lbl_8045C580:
+.global "@58575_8045C580"
+"@58575_8045C580":
 
 	.4byte 0x74726565
 	.4byte 0x3A3A696E
@@ -12,8 +12,8 @@ lbl_8045C580:
 	.4byte 0x6572726F
 	.4byte 0x72000000
 
-.global lbl_8045C59C
-lbl_8045C59C:
+.global "@58628_8045C59C"
+"@58628_8045C59C":
 
 	.4byte 0x5F5F496E
 	.4byte 0x69742829
@@ -105,8 +105,8 @@ lbl_8045C59C:
 	.4byte 0x28666C6F
 	.4byte 0x61742900
 
-.global lbl_8045C700
-lbl_8045C700:
+.global "@58679"
+"@58679":
 
 	.4byte 0x4E6F7420
 	.4byte 0x466F756E
@@ -117,16 +117,16 @@ lbl_8045C700:
 	.4byte 0x6C000000
 	.4byte 0
 
-.global lbl_8045C720
-lbl_8045C720:
+.global "@LOCAL@isBuiltInType__Q26mintvm6VMCoreFPCc@table"
+"@LOCAL@isBuiltInType__Q26mintvm6VMCoreFPCc@table":
 
-	.4byte lbl_80557580
-	.4byte lbl_80557588
-	.4byte lbl_8055758C
-	.4byte lbl_80557594
+	.4byte "@52608_80557580"
+	.4byte "@52609_80557588"
+	.4byte "@52610_8055758C"
+	.4byte "@52611_80557594"
 
-.global lbl_8045C730
-lbl_8045C730:
+.global "@58793"
+"@58793":
 
 	.4byte 0x4E6F7420
 	.4byte 0x466F756E
@@ -136,8 +136,8 @@ lbl_8045C730:
 	.4byte 0x7A654F66
 	.4byte 0
 
-.global lbl_8045C74C
-lbl_8045C74C:
+.global "@58849_8045C74C"
+"@58849_8045C74C":
 
 	.4byte 0x4E6F7420
 	.4byte 0x466F756E
@@ -147,15 +147,15 @@ lbl_8045C74C:
 	.4byte 0x66736574
 	.4byte 0x4F660000
 
-.global lbl_8045C768
-lbl_8045C768:
+.global "@58872_8045C768"
+"@58872_8045C768":
 
 	.4byte 0x0A2A206E
 	.4byte 0x616D6520
 	.4byte 0x3A200000
 
-.global lbl_8045C774
-lbl_8045C774:
+.global "@58874_8045C774"
+"@58874_8045C774":
 
 	.4byte 0x4E6F7420
 	.4byte 0x466F756E
@@ -165,15 +165,15 @@ lbl_8045C774:
 	.4byte 0x796D626F
 	.4byte 0x6C000000
 
-.global lbl_8045C790
-lbl_8045C790:
+.global "@58933_8045C790"
+"@58933_8045C790":
 
 	.4byte 0x564D436F
 	.4byte 0x72652E63
 	.4byte 0x70700000
 
-.global lbl_8045C79C
-lbl_8045C79C:
+.global "@58934_8045C79C"
+"@58934_8045C79C":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -181,8 +181,8 @@ lbl_8045C79C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C7B0
-lbl_8045C7B0:
+.global "@58979"
+"@58979":
 
 	.4byte 0x93AF82B6
 	.4byte 0x96BC914F
@@ -226,73 +226,73 @@ lbl_8045C7B0:
 	.4byte 0xB982F10A
 	.4byte 0x2A200000
 
-.global lbl_8045C854
-lbl_8045C854:
+.global "@59008"
+"@59008":
 
 	.4byte 0x4E6F7420
 	.4byte 0x666F756E
 	.4byte 0x64202573
 	.4byte 0x0A000000
 
-.global lbl_8045C864
-lbl_8045C864:
+.global __vt__Q26mintvm6VMCore
+__vt__Q26mintvm6VMCore:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801CAE1C
+	.4byte __dt__Q26mintvm6VMCoreFv
 
-.global lbl_8045C870
-lbl_8045C870:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801CADB0
-
-.global lbl_8045C87C
-lbl_8045C87C:
+.global "__vt__Q26mintvm20VMMap<Ul,4294967295>"
+"__vt__Q26mintvm20VMMap<Ul,4294967295>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801CACE8
+	.4byte "__dt__Q26mintvm20VMMap<Ul,4294967295>Fv"
 
-.global lbl_8045C888
-lbl_8045C888:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801CAC20
-
-.global lbl_8045C894
-lbl_8045C894:
+.global "__vt__Q26mintvm31VMMapPtr<Q26mintvm10VMVariable>"
+"__vt__Q26mintvm31VMMapPtr<Q26mintvm10VMVariable>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801CAB58
+	.4byte "__dt__Q26mintvm31VMMapPtr<Q26mintvm10VMVariable>Fv"
 
-.global lbl_8045C8A0
-lbl_8045C8A0:
+.global "__vt__Q26mintvm31VMMapPtr<Q26mintvm10VMFunction>"
+"__vt__Q26mintvm31VMMapPtr<Q26mintvm10VMFunction>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801C9F3C
+	.4byte "__dt__Q26mintvm31VMMapPtr<Q26mintvm10VMFunction>Fv"
 
-.global lbl_8045C8AC
-lbl_8045C8AC:
+.global "__vt__Q26mintvm28VMMapPtr<Q26mintvm8VMModule>"
+"__vt__Q26mintvm28VMMapPtr<Q26mintvm8VMModule>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q26mintvm28VMMapPtr<Q26mintvm8VMModule>Fv"
+
+.global __vt__Q26mintvm8VMObject
+__vt__Q26mintvm8VMObject:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm8VMObjectFv
+
+.global "@STRING@addPtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FPQ26mintvm8VMModule@0"
+"@STRING@addPtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FPQ26mintvm8VMModule@0":
 
 	.4byte 0x6D4D6178
 	.4byte 0x203D2025
 	.4byte 0x640A0000
 
-.global lbl_8045C8B8
-lbl_8045C8B8:
+.global "@STRING@addPtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FPQ26mintvm8VMModule"
+"@STRING@addPtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FPQ26mintvm8VMModule":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C8C8
-lbl_8045C8C8:
+.global "@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@2"
+"@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@2":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -300,16 +300,16 @@ lbl_8045C8C8:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C8DC
-lbl_8045C8DC:
+.global "@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@1"
+"@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@1":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C8EC
-lbl_8045C8EC:
+.global "@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@0"
+"@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -317,16 +317,16 @@ lbl_8045C8EC:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C900
-lbl_8045C900:
+.global "@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl"
+"@STRING@deletePtr__Q26mintvm29MPtrArray<Q26mintvm8VMModule>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C910
-lbl_8045C910:
+.global "@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@2"
+"@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@2":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -334,16 +334,16 @@ lbl_8045C910:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C924
-lbl_8045C924:
+.global "@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@1"
+"@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@1":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C934
-lbl_8045C934:
+.global "@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@0"
+"@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -351,46 +351,46 @@ lbl_8045C934:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C948
-lbl_8045C948:
+.global "@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl"
+"@STRING@deletePtr__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C958
-lbl_8045C958:
+.global "@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@0"
+"@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl@0":
 
 	.4byte 0x636F756E
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C964
-lbl_8045C964:
+.global "@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl"
+"@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C974
-lbl_8045C974:
+.global "@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>CFUl@0"
+"@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>CFUl@0":
 
 	.4byte 0x636F756E
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C980
-lbl_8045C980:
+.global "@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>CFUl"
+"@STRING@at__Q26mintvm34MPtrArray<Q26mintvm12VMObjectType>CFUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C990
-lbl_8045C990:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@2"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@2":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -398,16 +398,16 @@ lbl_8045C990:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C9A4
-lbl_8045C9A4:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@1"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@1":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C9B4
-lbl_8045C9B4:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@0"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -415,31 +415,31 @@ lbl_8045C9B4:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C9C8
-lbl_8045C9C8:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C9D8
-lbl_8045C9D8:
+.global "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@0"
+"@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl@0":
 
 	.4byte 0x636F756E
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045C9E4
-lbl_8045C9E4:
+.global "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl"
+"@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045C9F4
-lbl_8045C9F4:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@2"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@2":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -447,16 +447,16 @@ lbl_8045C9F4:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045CA08
-lbl_8045CA08:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@1"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@1":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045CA18
-lbl_8045CA18:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@0"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -464,31 +464,31 @@ lbl_8045CA18:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045CA2C
-lbl_8045CA2C:
+.global "@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl"
+"@STRING@deletePtr__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045CA3C
-lbl_8045CA3C:
+.global "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@0"
+"@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl@0":
 
 	.4byte 0x636F756E
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_8045CA48
-lbl_8045CA48:
+.global "@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl"
+"@STRING@at__Q26mintvm32MPtrArray<Q26mintvm10VMVariable>FUl":
 
 	.4byte 0x4D507472
 	.4byte 0x41727261
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_8045CA58
-lbl_8045CA58:
+.global "@STRING@add__Q26mintvm9TmpSymbolFPCc@0"
+"@STRING@add__Q26mintvm9TmpSymbolFPCc@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -496,16 +496,16 @@ lbl_8045CA58:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045CA6C
-lbl_8045CA6C:
+.global "@STRING@add__Q26mintvm9TmpSymbolFPCc"
+"@STRING@add__Q26mintvm9TmpSymbolFPCc":
 
 	.4byte 0x546D7053
 	.4byte 0x796D626F
 	.4byte 0x6C2E6870
 	.4byte 0x70000000
 
-.global lbl_8045CA7C
-lbl_8045CA7C:
+.global "@STRING@divide__Q26mintvm9TmpSymbolFi@0"
+"@STRING@divide__Q26mintvm9TmpSymbolFi@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -513,8 +513,8 @@ lbl_8045CA7C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045CA90
-lbl_8045CA90:
+.global "@STRING@divide__Q26mintvm9TmpSymbolFi"
+"@STRING@divide__Q26mintvm9TmpSymbolFi":
 
 	.4byte 0x546D7053
 	.4byte 0x796D626F

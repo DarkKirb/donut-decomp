@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000B18C
-lbl_8000B18C:
+.global __fpclassifyf
+__fpclassifyf:
 /* 8000B18C 00006FCC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000B190 00006FD0  D0 21 00 08 */	stfs f1, 0x8(r1)
 /* 8000B194 00006FD4  80 61 00 08 */	lwz r3, 0x8(r1)
@@ -35,16 +35,16 @@ lbl_8000B1E0:
 lbl_8000B1E4:
 /* 8000B1E4 00007024  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000B1E8 00007028  4E 80 00 20 */	blr
-.global lbl_8000B1EC
-lbl_8000B1EC:
+.global __signbitd
+__signbitd:
 /* 8000B1EC 0000702C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000B1F0 00007030  D8 21 00 08 */	stfd f1, 0x8(r1)
 /* 8000B1F4 00007034  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 8000B1F8 00007038  54 03 00 00 */	clrrwi r3, r0, 31
 /* 8000B1FC 0000703C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000B200 00007040  4E 80 00 20 */	blr
-.global lbl_8000B204
-lbl_8000B204:
+.global __fpclassifyd
+__fpclassifyd:
 /* 8000B204 00007044  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000B208 00007048  D8 21 00 08 */	stfd f1, 0x8(r1)
 /* 8000B20C 0000704C  80 61 00 08 */	lwz r3, 0x8(r1)

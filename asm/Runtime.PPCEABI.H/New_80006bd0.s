@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80006BD0
-lbl_80006BD0:
+.global __dt__Q23std9exceptionFv
+__dt__Q23std9exceptionFv:
 /* 80006BD0 00002A10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80006BD4 00002A14  7C 08 02 A6 */	mflr r0
 /* 80006BD8 00002A18  2C 03 00 00 */	cmpwi r3, 0x0
@@ -12,7 +12,7 @@ lbl_80006BD0:
 /* 80006BE8 00002A28  41 82 00 10 */	beq lbl_80006BF8
 /* 80006BEC 00002A2C  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80006BF0 00002A30  40 81 00 08 */	ble lbl_80006BF8
-/* 80006BF4 00002A34  48 1B 8B 21 */	bl lbl_801BF714
+/* 80006BF4 00002A34  48 1B 8B 21 */	bl __dl__FPv
 .global lbl_80006BF8
 lbl_80006BF8:
 /* 80006BF8 00002A38  7F E3 FB 78 */	mr r3, r31

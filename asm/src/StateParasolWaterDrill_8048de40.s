@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048DE40
-lbl_8048DE40:
+.global "__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol25StateParasolWaterDrillEnd,PQ43scn4step4hero4Hero>"
+"__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol25StateParasolWaterDrillEnd,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803965F0
-	.4byte lbl_803965B4
+	.4byte "__dt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol25StateParasolWaterDrillEnd,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol25StateParasolWaterDrillEnd,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048DE50
-lbl_8048DE50:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803965EC
-	.4byte lbl_803965D0
-
-.global lbl_8048DE60
-lbl_8048DE60:
+.global "__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol22StateParasolWaterDrill,PQ43scn4step4hero4Hero>"
+"__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol22StateParasolWaterDrill,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80396010
-	.4byte lbl_80396114
-	.4byte lbl_8039630C
-	.4byte lbl_8035550C
-	.4byte lbl_803963C8
-	.4byte lbl_803963CC
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol22StateParasolWaterDrill,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step4hero7parasol22StateParasolWaterDrill,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero7parasol22StateParasolWaterDrill
+__vt__Q53scn4step4hero7parasol22StateParasolWaterDrill:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7parasol22StateParasolWaterDrillFv
+	.4byte procAnim__Q53scn4step4hero7parasol22StateParasolWaterDrillFv
+	.4byte procMove__Q53scn4step4hero7parasol22StateParasolWaterDrillFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7parasol22StateParasolWaterDrillFv
+	.4byte procObjCollReact__Q53scn4step4hero7parasol22StateParasolWaterDrillFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

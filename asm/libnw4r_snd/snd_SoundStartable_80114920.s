@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80114920
-lbl_80114920:
+.global detail_StartSound__Q34nw4r3snd14SoundStartableFPQ34nw4r3snd11SoundHandleUlPCQ44nw4r3snd14SoundStartable9StartInfo
+detail_StartSound__Q34nw4r3snd14SoundStartableFPQ34nw4r3snd11SoundHandleUlPCQ44nw4r3snd14SoundStartable9StartInfo:
 /* 80114920 00110760  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80114924 00110764  7C 08 02 A6 */	mflr r0
 /* 80114928 00110768  7C C7 33 78 */	mr r7, r6
@@ -22,7 +22,7 @@ lbl_80114958:
 /* 80114958 00110798  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 8011495C 0011079C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80114960 001107A0  41 82 00 08 */	beq lbl_80114968
-/* 80114964 001107A4  4B FF 0D 8D */	bl lbl_801056F0
+/* 80114964 001107A4  4B FF 0D 8D */	bl StartPrepared__Q44nw4r3snd6detail10BasicSoundFv
 .global lbl_80114968
 lbl_80114968:
 /* 80114968 001107A8  38 60 00 00 */	li r3, 0x0

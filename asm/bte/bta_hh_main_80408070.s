@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80408070
-lbl_80408070:
+.global bta_hh_action
+bta_hh_action:
 
-	.4byte lbl_8007C118
-	.4byte lbl_8007C2A8
-	.4byte lbl_8007C818
-	.4byte lbl_8007C360
-	.4byte lbl_8007C620
-	.4byte lbl_8007C3B8
-	.4byte lbl_8007BE1C
-	.4byte lbl_8007BFB0
-	.4byte lbl_8007CCB4
-	.4byte lbl_8007CA18
-	.4byte lbl_8007CA34
-	.4byte lbl_8007C180
+	.4byte bta_hh_api_disc_act
+	.4byte bta_hh_open_act
+	.4byte bta_hh_close_act
+	.4byte bta_hh_data_act
+	.4byte bta_hh_ctrl_dat_act
+	.4byte bta_hh_handsk_act
+	.4byte bta_hh_start_sdp
+	.4byte bta_hh_sdp_cmpl
+	.4byte bta_hh_write_dev_act
+	.4byte bta_hh_get_dscp_act
+	.4byte bta_hh_maint_dev_act
+	.4byte bta_hh_open_cmpl_act
 
-.global lbl_804080A0
-lbl_804080A0:
+.global bta_hh_st_idle
+bta_hh_st_idle:
 
 	.4byte 0x06020C01
 	.4byte 0x01020201
@@ -27,8 +27,8 @@ lbl_804080A0:
 	.4byte 0x0C010C01
 	.4byte 0x0A010C01
 
-.global lbl_804080B8
-lbl_804080B8:
+.global bta_hh_st_w4_conn
+bta_hh_st_w4_conn:
 
 	.4byte 0x0C020C01
 	.4byte 0x01020201
@@ -37,8 +37,8 @@ lbl_804080B8:
 	.4byte 0x0C020C02
 	.4byte 0x0A010B03
 
-.global lbl_804080D0
-lbl_804080D0:
+.global bta_hh_st_connected
+bta_hh_st_connected:
 
 	.4byte 0x0C030003
 	.4byte 0x01030201
@@ -47,10 +47,10 @@ lbl_804080D0:
 	.4byte 0x08030903
 	.4byte 0x0A030C03
 
-.global lbl_804080E8
-lbl_804080E8:
+.global bta_hh_st_tbl
+bta_hh_st_tbl:
 
-	.4byte lbl_804080A0
-	.4byte lbl_804080B8
-	.4byte lbl_804080D0
+	.4byte bta_hh_st_idle
+	.4byte bta_hh_st_w4_conn
+	.4byte bta_hh_st_connected
 	.4byte 0

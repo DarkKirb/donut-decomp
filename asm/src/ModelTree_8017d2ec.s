@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8017D2EC
-lbl_8017D2EC:
+.global __ct__Q28dynamics9ModelTreeFRQ23mem15AllocatorHandleRCQ23g3d13ModelAccessorRCQ28dynamics4Desc
+__ct__Q28dynamics9ModelTreeFRQ23mem15AllocatorHandleRCQ23g3d13ModelAccessorRCQ28dynamics4Desc:
 /* 8017D2EC 0017912C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8017D2F0 00179130  7C 08 02 A6 */	mflr r0
 /* 8017D2F4 00179134  90 01 00 44 */	stw r0, 0x44(r1)
@@ -13,7 +13,7 @@ lbl_8017D2EC:
 /* 8017D308 00179148  7C DC 33 78 */	mr r28, r6
 /* 8017D30C 0017914C  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8017D310 00179150  38 63 00 04 */	addi r3, r3, 0x4
-/* 8017D314 00179154  48 01 33 21 */	bl lbl_80190634
+/* 8017D314 00179154  48 01 33 21 */	bl __ct__Q23g3d13ModelAccessorFv
 /* 8017D318 00179158  38 80 00 00 */	li r4, 0x0
 /* 8017D31C 0017915C  90 9B 00 18 */	stw r4, 0x18(r27)
 /* 8017D320 00179160  38 7B 00 18 */	addi r3, r27, 0x18
@@ -25,28 +25,28 @@ lbl_8017D32C:
 /* 8017D330 00179170  94 83 00 08 */	stwu r4, 0x8(r3)
 /* 8017D334 00179174  42 00 FF F8 */	bdnz lbl_8017D32C
 /* 8017D338 00179178  38 7B 00 34 */	addi r3, r27, 0x34
-/* 8017D33C 0017917C  48 01 69 FD */	bl lbl_80193D38
+/* 8017D33C 0017917C  48 01 69 FD */	bl __ct__Q23g3d7ResNodeFv
 /* 8017D340 00179180  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8017D344 00179184  7F A4 EB 78 */	mr r4, r29
-/* 8017D348 00179188  48 00 01 65 */	bl lbl_8017D4AC
+/* 8017D348 00179188  48 00 01 65 */	bl "__as__Q24util26ObjRefHandle<Q23g3d5Model>FRCQ24util26ObjRefHandle<Q23g3d5Model>"
 /* 8017D34C 0017918C  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D350 00179190  38 9B 00 04 */	addi r4, r27, 0x4
-/* 8017D354 00179194  48 01 33 BD */	bl lbl_80190710
+/* 8017D354 00179194  48 01 33 BD */	bl resModel__Q23g3d13ModelAccessorCFv
 /* 8017D358 00179198  38 00 00 01 */	li r0, 0x1
 /* 8017D35C 0017919C  98 1B 00 14 */	stb r0, 0x14(r27)
 /* 8017D360 001791A0  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D364 001791A4  38 9C 00 08 */	addi r4, r28, 0x8
-/* 8017D368 001791A8  48 01 69 29 */	bl lbl_80193C90
+/* 8017D368 001791A8  48 01 69 29 */	bl nodeByName__Q23g3d8ResModelCFPCc
 /* 8017D36C 001791AC  90 61 00 1C */	stw r3, 0x1c(r1)
 /* 8017D370 001791B0  38 61 00 1C */	addi r3, r1, 0x1c
-/* 8017D374 001791B4  48 01 6A 21 */	bl lbl_80193D94
+/* 8017D374 001791B4  48 01 6A 21 */	bl id__Q23g3d7ResNodeCFv
 /* 8017D378 001791B8  7C 7E 1B 78 */	mr r30, r3
 /* 8017D37C 001791BC  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D380 001791C0  7F C4 F3 78 */	mr r4, r30
-/* 8017D384 001791C4  48 01 68 D5 */	bl lbl_80193C58
+/* 8017D384 001791C4  48 01 68 D5 */	bl nodeByIndex__Q23g3d8ResModelCFUl
 /* 8017D388 001791C8  90 61 00 18 */	stw r3, 0x18(r1)
 /* 8017D38C 001791CC  38 61 00 18 */	addi r3, r1, 0x18
-/* 8017D390 001791D0  48 01 6A D5 */	bl lbl_80193E64
+/* 8017D390 001791D0  48 01 6A D5 */	bl parent__Q23g3d7ResNodeCFv
 /* 8017D394 001791D4  90 7B 00 34 */	stw r3, 0x34(r27)
 /* 8017D398 001791D8  3B A0 00 00 */	li r29, 0x0
 /* 8017D39C 001791DC  48 00 00 74 */	b lbl_8017D410
@@ -54,31 +54,31 @@ lbl_8017D32C:
 lbl_8017D3A0:
 /* 8017D3A0 001791E0  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D3A4 001791E4  7C 9E EA 14 */	add r4, r30, r29
-/* 8017D3A8 001791E8  48 01 68 B1 */	bl lbl_80193C58
+/* 8017D3A8 001791E8  48 01 68 B1 */	bl nodeByIndex__Q23g3d8ResModelCFUl
 /* 8017D3AC 001791EC  90 61 00 10 */	stw r3, 0x10(r1)
 /* 8017D3B0 001791F0  7F 63 DB 78 */	mr r3, r27
 /* 8017D3B4 001791F4  38 9B 00 04 */	addi r4, r27, 0x4
 /* 8017D3B8 001791F8  38 A1 00 10 */	addi r5, r1, 0x10
 /* 8017D3BC 001791FC  7F 86 E3 78 */	mr r6, r28
 /* 8017D3C0 00179200  7F A7 EB 78 */	mr r7, r29
-/* 8017D3C4 00179204  48 00 03 ED */	bl lbl_8017D7B0
+/* 8017D3C4 00179204  48 00 03 ED */	bl allocModelNode__Q28dynamics9ModelTreeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
 /* 8017D3C8 00179208  90 61 00 14 */	stw r3, 0x14(r1)
 /* 8017D3CC 0017920C  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D3D0 00179210  38 81 00 14 */	addi r4, r1, 0x14
-/* 8017D3D4 00179214  48 00 01 75 */	bl lbl_8017D548
+/* 8017D3D4 00179214  48 00 01 75 */	bl "add__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FRCPQ28dynamics9ModelNode"
 /* 8017D3D8 00179218  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8017D3DC 0017921C  41 82 00 30 */	beq lbl_8017D40C
 /* 8017D3E0 00179220  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D3E4 00179224  7F A4 EB 78 */	mr r4, r29
-/* 8017D3E8 00179228  48 00 02 05 */	bl lbl_8017D5EC
+/* 8017D3E8 00179228  48 00 02 05 */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D3EC 0017922C  7C 7F 1B 78 */	mr r31, r3
 /* 8017D3F0 00179230  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D3F4 00179234  38 9D FF FF */	addi r4, r29, -0x1
-/* 8017D3F8 00179238  48 00 01 F5 */	bl lbl_8017D5EC
+/* 8017D3F8 00179238  48 00 01 F5 */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D3FC 0017923C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8017D400 00179240  80 9F 00 00 */	lwz r4, 0x0(r31)
 /* 8017D404 00179244  7F 85 E3 78 */	mr r5, r28
-/* 8017D408 00179248  4B FF F3 1D */	bl lbl_8017C724
+/* 8017D408 00179248  4B FF F3 1D */	bl SetChild__Q28dynamics9ModelNodeFRQ28dynamics9ModelNodeRCQ28dynamics4Desc
 .global lbl_8017D40C
 lbl_8017D40C:
 /* 8017D40C 0017924C  3B BD 00 01 */	addi r29, r29, 0x1
@@ -89,7 +89,7 @@ lbl_8017D410:
 /* 8017D418 00179258  41 80 FF 88 */	blt lbl_8017D3A0
 /* 8017D41C 0017925C  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D420 00179260  7C 9E EA 14 */	add r4, r30, r29
-/* 8017D424 00179264  48 01 68 35 */	bl lbl_80193C58
+/* 8017D424 00179264  48 01 68 35 */	bl nodeByIndex__Q23g3d8ResModelCFUl
 /* 8017D428 00179268  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8017D42C 0017926C  7F 63 DB 78 */	mr r3, r27
 /* 8017D430 00179270  38 9B 00 04 */	addi r4, r27, 0x4
@@ -97,25 +97,25 @@ lbl_8017D410:
 /* 8017D438 00179278  7F 86 E3 78 */	mr r6, r28
 /* 8017D43C 0017927C  80 FC 00 04 */	lwz r7, 0x4(r28)
 /* 8017D440 00179280  38 E7 FF FF */	addi r7, r7, -0x1
-/* 8017D444 00179284  48 00 03 6D */	bl lbl_8017D7B0
+/* 8017D444 00179284  48 00 03 6D */	bl allocModelNode__Q28dynamics9ModelTreeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
 /* 8017D448 00179288  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8017D44C 0017928C  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D450 00179290  38 81 00 0C */	addi r4, r1, 0xc
-/* 8017D454 00179294  48 00 00 F5 */	bl lbl_8017D548
+/* 8017D454 00179294  48 00 00 F5 */	bl "add__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FRCPQ28dynamics9ModelNode"
 /* 8017D458 00179298  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D45C 0017929C  7F A4 EB 78 */	mr r4, r29
-/* 8017D460 001792A0  48 00 01 8D */	bl lbl_8017D5EC
+/* 8017D460 001792A0  48 00 01 8D */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D464 001792A4  7C 7F 1B 78 */	mr r31, r3
 /* 8017D468 001792A8  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D46C 001792AC  38 9D FF FF */	addi r4, r29, -0x1
-/* 8017D470 001792B0  48 00 01 7D */	bl lbl_8017D5EC
+/* 8017D470 001792B0  48 00 01 7D */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D474 001792B4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8017D478 001792B8  80 9F 00 00 */	lwz r4, 0x0(r31)
 /* 8017D47C 001792BC  7F 85 E3 78 */	mr r5, r28
-/* 8017D480 001792C0  4B FF F2 A5 */	bl lbl_8017C724
+/* 8017D480 001792C0  4B FF F2 A5 */	bl SetChild__Q28dynamics9ModelNodeFRQ28dynamics9ModelNodeRCQ28dynamics4Desc
 /* 8017D484 001792C4  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D488 001792C8  38 80 FF FF */	li r4, -0x1
-/* 8017D48C 001792CC  4B FF 86 DD */	bl lbl_80175B68
+/* 8017D48C 001792CC  4B FF 86 DD */	bl __dt__Q23scn6ISceneFv
 /* 8017D490 001792D0  7F 63 DB 78 */	mr r3, r27
 /* 8017D494 001792D4  39 61 00 40 */	addi r11, r1, 0x40
 /* 8017D498 001792D8  4B E8 9E F1 */	bl lbl_80007388
@@ -123,8 +123,8 @@ lbl_8017D410:
 /* 8017D4A0 001792E0  7C 08 03 A6 */	mtlr r0
 /* 8017D4A4 001792E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8017D4A8 001792E8  4E 80 00 20 */	blr
-.global lbl_8017D4AC
-lbl_8017D4AC:
+.global "__as__Q24util26ObjRefHandle<Q23g3d5Model>FRCQ24util26ObjRefHandle<Q23g3d5Model>"
+"__as__Q24util26ObjRefHandle<Q23g3d5Model>FRCQ24util26ObjRefHandle<Q23g3d5Model>":
 /* 8017D4AC 001792EC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8017D4B0 001792F0  7C 08 02 A6 */	mflr r0
 /* 8017D4B4 001792F4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -132,11 +132,11 @@ lbl_8017D4AC:
 /* 8017D4BC 001792FC  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8017D4C0 00179300  7C 7E 1B 78 */	mr r30, r3
 /* 8017D4C4 00179304  7C 9F 23 78 */	mr r31, r4
-/* 8017D4C8 00179308  4B FF F1 1D */	bl lbl_8017C5E4
+/* 8017D4C8 00179308  4B FF F1 1D */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 8017D4CC 0017930C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8017D4D0 00179310  41 82 00 0C */	beq lbl_8017D4DC
 /* 8017D4D4 00179314  7F C3 F3 78 */	mr r3, r30
-/* 8017D4D8 00179318  4B FF F1 1D */	bl lbl_8017C5F4
+/* 8017D4D8 00179318  4B FF F1 1D */	bl "unlink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>Fv"
 .global lbl_8017D4DC
 lbl_8017D4DC:
 /* 8017D4DC 0017931C  38 00 00 00 */	li r0, 0x0
@@ -148,7 +148,7 @@ lbl_8017D4DC:
 .global lbl_8017D4F4
 lbl_8017D4F4:
 /* 8017D4F4 00179334  7F E3 FB 78 */	mr r3, r31
-/* 8017D4F8 00179338  4B FF F0 ED */	bl lbl_8017C5E4
+/* 8017D4F8 00179338  4B FF F0 ED */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 8017D4FC 0017933C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8017D500 00179340  41 82 00 2C */	beq lbl_8017D52C
 /* 8017D504 00179344  83 FF 00 08 */	lwz r31, 0x8(r31)
@@ -156,11 +156,11 @@ lbl_8017D4F4:
 /* 8017D50C 0017934C  38 1F 00 04 */	addi r0, r31, 0x4
 /* 8017D510 00179350  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8017D514 00179354  7F C3 F3 78 */	mr r3, r30
-/* 8017D518 00179358  4B FF F1 29 */	bl lbl_8017C640
+/* 8017D518 00179358  4B FF F1 29 */	bl "GetNodeFromPointer__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>FPQ24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>"
 /* 8017D51C 0017935C  7C 65 1B 78 */	mr r5, r3
 /* 8017D520 00179360  7F E3 FB 78 */	mr r3, r31
 /* 8017D524 00179364  38 81 00 08 */	addi r4, r1, 0x8
-/* 8017D528 00179368  4B FA 28 89 */	bl lbl_8011FDB0
+/* 8017D528 00179368  4B FA 28 89 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 .global lbl_8017D52C
 lbl_8017D52C:
 /* 8017D52C 0017936C  7F C3 F3 78 */	mr r3, r30
@@ -170,8 +170,8 @@ lbl_8017D52C:
 /* 8017D53C 0017937C  7C 08 03 A6 */	mtlr r0
 /* 8017D540 00179380  38 21 00 20 */	addi r1, r1, 0x20
 /* 8017D544 00179384  4E 80 00 20 */	blr
-.global lbl_8017D548
-lbl_8017D548:
+.global "add__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FRCPQ28dynamics9ModelNode"
+"add__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FRCPQ28dynamics9ModelNode":
 /* 8017D548 00179388  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017D54C 0017938C  7C 08 02 A6 */	mflr r0
 /* 8017D550 00179390  90 01 00 14 */	stw r0, 0x14(r1)
@@ -184,7 +184,7 @@ lbl_8017D548:
 /* 8017D56C 001793AC  83 E4 00 00 */	lwz r31, 0x0(r4)
 /* 8017D570 001793B0  38 63 00 04 */	addi r3, r3, 0x4
 /* 8017D574 001793B4  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 8017D578 001793B8  48 00 00 2D */	bl lbl_8017D5A4
+/* 8017D578 001793B8  48 00 00 2D */	bl "__vc__Q33hel6common31Array<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D57C 001793BC  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 8017D580 001793C0  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 8017D584 001793C4  38 03 00 01 */	addi r0, r3, 0x1
@@ -197,8 +197,8 @@ lbl_8017D58C:
 /* 8017D598 001793D8  7C 08 03 A6 */	mtlr r0
 /* 8017D59C 001793DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017D5A0 001793E0  4E 80 00 20 */	blr
-.global lbl_8017D5A4
-lbl_8017D5A4:
+.global "__vc__Q33hel6common31Array<PQ28dynamics9ModelNode,6>FUl"
+"__vc__Q33hel6common31Array<PQ28dynamics9ModelNode,6>FUl":
 /* 8017D5A4 001793E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017D5A8 001793E8  7C 08 02 A6 */	mflr r0
 /* 8017D5AC 001793EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -208,7 +208,7 @@ lbl_8017D5A4:
 /* 8017D5BC 001793FC  7C 9F 23 78 */	mr r31, r4
 /* 8017D5C0 00179400  7F E3 FB 78 */	mr r3, r31
 /* 8017D5C4 00179404  38 80 00 06 */	li r4, 0x6
-/* 8017D5C8 00179408  4B EA 6E D9 */	bl lbl_800244A0
+/* 8017D5C8 00179408  4B EA 6E D9 */	bl DefaultSwitchThreadCallback
 /* 8017D5CC 0017940C  57 E0 10 3A */	slwi r0, r31, 2
 /* 8017D5D0 00179410  7C 7E 02 14 */	add r3, r30, r0
 /* 8017D5D4 00179414  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -217,8 +217,8 @@ lbl_8017D5A4:
 /* 8017D5E0 00179420  7C 08 03 A6 */	mtlr r0
 /* 8017D5E4 00179424  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017D5E8 00179428  4E 80 00 20 */	blr
-.global lbl_8017D5EC
-lbl_8017D5EC:
+.global "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
+"at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl":
 /* 8017D5EC 0017942C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017D5F0 00179430  7C 08 02 A6 */	mflr r0
 /* 8017D5F4 00179434  90 01 00 14 */	stw r0, 0x14(r1)
@@ -228,18 +228,18 @@ lbl_8017D5EC:
 /* 8017D604 00179444  7C 9F 23 78 */	mr r31, r4
 /* 8017D608 00179448  7F E3 FB 78 */	mr r3, r31
 /* 8017D60C 0017944C  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 8017D610 00179450  4B EA 6E 91 */	bl lbl_800244A0
+/* 8017D610 00179450  4B EA 6E 91 */	bl DefaultSwitchThreadCallback
 /* 8017D614 00179454  38 7E 00 04 */	addi r3, r30, 0x4
 /* 8017D618 00179458  7F E4 FB 78 */	mr r4, r31
-/* 8017D61C 0017945C  4B FF FF 89 */	bl lbl_8017D5A4
+/* 8017D61C 0017945C  4B FF FF 89 */	bl "__vc__Q33hel6common31Array<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D620 00179460  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017D624 00179464  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 8017D628 00179468  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D62C 0017946C  7C 08 03 A6 */	mtlr r0
 /* 8017D630 00179470  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017D634 00179474  4E 80 00 20 */	blr
-.global lbl_8017D638
-lbl_8017D638:
+.global __dt__Q28dynamics9ModelTreeFv
+__dt__Q28dynamics9ModelTreeFv:
 /* 8017D638 00179478  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8017D63C 0017947C  7C 08 02 A6 */	mflr r0
 /* 8017D640 00179480  90 01 00 24 */	stw r0, 0x24(r1)
@@ -255,11 +255,11 @@ lbl_8017D638:
 lbl_8017D664:
 /* 8017D664 001794A4  38 7D 00 18 */	addi r3, r29, 0x18
 /* 8017D668 001794A8  7F E4 FB 78 */	mr r4, r31
-/* 8017D66C 001794AC  4B FF FF 81 */	bl lbl_8017D5EC
+/* 8017D66C 001794AC  4B FF FF 81 */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D670 001794B0  7C 64 1B 78 */	mr r4, r3
 /* 8017D674 001794B4  7F A3 EB 78 */	mr r3, r29
 /* 8017D678 001794B8  80 84 00 00 */	lwz r4, 0x0(r4)
-/* 8017D67C 001794BC  48 00 01 A9 */	bl lbl_8017D824
+/* 8017D67C 001794BC  48 00 01 A9 */	bl freeModelNode__Q28dynamics9ModelTreeFPQ28dynamics9ModelNode
 /* 8017D680 001794C0  3B FF 00 01 */	addi r31, r31, 0x1
 .global lbl_8017D684
 lbl_8017D684:
@@ -270,15 +270,15 @@ lbl_8017D684:
 /* 8017D694 001794D4  90 1D 00 18 */	stw r0, 0x18(r29)
 /* 8017D698 001794D8  38 7D 00 18 */	addi r3, r29, 0x18
 /* 8017D69C 001794DC  38 80 FF FF */	li r4, -0x1
-/* 8017D6A0 001794E0  4B FF 84 C9 */	bl lbl_80175B68
+/* 8017D6A0 001794E0  4B FF 84 C9 */	bl __dt__Q23scn6ISceneFv
 /* 8017D6A4 001794E4  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8017D6A8 001794E8  38 80 FF FF */	li r4, -0x1
-/* 8017D6AC 001794EC  4B FF E8 9D */	bl lbl_8017BF48
+/* 8017D6AC 001794EC  4B FF E8 9D */	bl __dt__Q23g3d13ModelAccessorFv
 /* 8017D6B0 001794F0  7F C0 07 34 */	extsh r0, r30
 /* 8017D6B4 001794F4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8017D6B8 001794F8  40 81 00 0C */	ble lbl_8017D6C4
 /* 8017D6BC 001794FC  7F A3 EB 78 */	mr r3, r29
-/* 8017D6C0 00179500  48 04 20 55 */	bl lbl_801BF714
+/* 8017D6C0 00179500  48 04 20 55 */	bl __dl__FPv
 .global lbl_8017D6C4
 lbl_8017D6C4:
 /* 8017D6C4 00179504  7F A3 EB 78 */	mr r3, r29
@@ -288,8 +288,8 @@ lbl_8017D6C4:
 /* 8017D6D4 00179514  7C 08 03 A6 */	mtlr r0
 /* 8017D6D8 00179518  38 21 00 20 */	addi r1, r1, 0x20
 /* 8017D6DC 0017951C  4E 80 00 20 */	blr
-.global lbl_8017D6E0
-lbl_8017D6E0:
+.global update__Q28dynamics9ModelTreeFv
+update__Q28dynamics9ModelTreeFv:
 /* 8017D6E0 00179520  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 8017D6E4 00179524  7C 08 02 A6 */	mflr r0
 /* 8017D6E8 00179528  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -303,13 +303,13 @@ lbl_8017D6E0:
 /* 8017D708 00179548  38 61 00 08 */	addi r3, r1, 0x8
 /* 8017D70C 0017954C  38 9B 00 04 */	addi r4, r27, 0x4
 /* 8017D710 00179550  38 BB 00 34 */	addi r5, r27, 0x34
-/* 8017D714 00179554  48 01 30 15 */	bl lbl_80190728
+/* 8017D714 00179554  48 01 30 15 */	bl nodeByResNode__Q23g3d13ModelAccessorCFRCQ23g3d7ResNode
 /* 8017D718 00179558  38 61 00 50 */	addi r3, r1, 0x50
 /* 8017D71C 0017955C  38 81 00 08 */	addi r4, r1, 0x8
-/* 8017D720 00179560  48 01 57 0D */	bl lbl_80192E2C
+/* 8017D720 00179560  48 01 57 0D */	bl worldMtx__Q23g3d12NodeAccessorCFv
 /* 8017D724 00179564  38 61 00 08 */	addi r3, r1, 0x8
 /* 8017D728 00179568  38 80 FF FF */	li r4, -0x1
-/* 8017D72C 0017956C  4B FF EF 65 */	bl lbl_8017C690
+/* 8017D72C 0017956C  4B FF EF 65 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 8017D730 00179570  3B 80 00 00 */	li r28, 0x0
 /* 8017D734 00179574  80 1B 00 18 */	lwz r0, 0x18(r27)
 /* 8017D738 00179578  2C 00 00 00 */	cmpwi r0, 0x0
@@ -322,17 +322,17 @@ lbl_8017D6E0:
 lbl_8017D750:
 /* 8017D750 00179590  38 7B 00 18 */	addi r3, r27, 0x18
 /* 8017D754 00179594  7F 84 E3 78 */	mr r4, r28
-/* 8017D758 00179598  4B FF FE 95 */	bl lbl_8017D5EC
+/* 8017D758 00179598  4B FF FE 95 */	bl "at__Q33hel6common38MutableArray<PQ28dynamics9ModelNode,6>FUl"
 /* 8017D75C 0017959C  7C 64 1B 78 */	mr r4, r3
 /* 8017D760 001795A0  38 61 00 20 */	addi r3, r1, 0x20
 /* 8017D764 001795A4  80 84 00 00 */	lwz r4, 0x0(r4)
 /* 8017D768 001795A8  38 A1 00 50 */	addi r5, r1, 0x50
-/* 8017D76C 001795AC  4B FF F3 A5 */	bl lbl_8017CB10
+/* 8017D76C 001795AC  4B FF F3 A5 */	bl update__Q28dynamics9ModelNodeFRQ33hel4math8Matrix34
 /* 8017D770 001795B0  7C 1E F8 40 */	cmplw r30, r31
 /* 8017D774 001795B4  41 82 00 10 */	beq lbl_8017D784
 /* 8017D778 001795B8  7F E3 FB 78 */	mr r3, r31
 /* 8017D77C 001795BC  7F C4 F3 78 */	mr r4, r30
-/* 8017D780 001795C0  4B EB 2D 91 */	bl lbl_80030510
+/* 8017D780 001795C0  4B EB 2D 91 */	bl PSMTXCopy
 .global lbl_8017D784
 lbl_8017D784:
 /* 8017D784 001795C4  3B 9C 00 01 */	addi r28, r28, 0x1
@@ -350,8 +350,8 @@ lbl_8017D794:
 /* 8017D7A4 001795E4  7C 08 03 A6 */	mtlr r0
 /* 8017D7A8 001795E8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 8017D7AC 001795EC  4E 80 00 20 */	blr
-.global lbl_8017D7B0
-lbl_8017D7B0:
+.global allocModelNode__Q28dynamics9ModelTreeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
+allocModelNode__Q28dynamics9ModelTreeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl:
 /* 8017D7B0 001795F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8017D7B4 001795F4  7C 08 02 A6 */	mflr r0
 /* 8017D7B8 001795F8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -362,10 +362,10 @@ lbl_8017D7B0:
 /* 8017D7CC 0017960C  7C DE 33 78 */	mr r30, r6
 /* 8017D7D0 00179610  7C FF 3B 78 */	mr r31, r7
 /* 8017D7D4 00179614  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8017D7D8 00179618  4B EF 7F 59 */	bl lbl_80075730
+/* 8017D7D8 00179618  4B EF 7F 59 */	bl GKI_getfirst
 /* 8017D7DC 0017961C  7C 64 1B 78 */	mr r4, r3
 /* 8017D7E0 00179620  38 60 00 AC */	li r3, 0xac
-/* 8017D7E4 00179624  48 04 1F 29 */	bl lbl_801BF70C
+/* 8017D7E4 00179624  48 04 1F 29 */	bl __nw__FUlRQ23mem10IAllocator
 /* 8017D7E8 00179628  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8017D7EC 0017962C  41 82 00 20 */	beq lbl_8017D80C
 /* 8017D7F0 00179630  80 1D 00 00 */	lwz r0, 0x0(r29)
@@ -374,7 +374,7 @@ lbl_8017D7B0:
 /* 8017D7FC 0017963C  38 A1 00 08 */	addi r5, r1, 0x8
 /* 8017D800 00179640  7F C6 F3 78 */	mr r6, r30
 /* 8017D804 00179644  7F E7 FB 78 */	mr r7, r31
-/* 8017D808 00179648  4B FF EA A1 */	bl lbl_8017C2A8
+/* 8017D808 00179648  4B FF EA A1 */	bl __ct__Q28dynamics9ModelNodeFRCQ23g3d13ModelAccessorQ23g3d7ResNodeRCQ28dynamics4DescUl
 .global lbl_8017D80C
 lbl_8017D80C:
 /* 8017D80C 0017964C  39 61 00 20 */	addi r11, r1, 0x20
@@ -383,8 +383,8 @@ lbl_8017D80C:
 /* 8017D818 00179658  7C 08 03 A6 */	mtlr r0
 /* 8017D81C 0017965C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8017D820 00179660  4E 80 00 20 */	blr
-.global lbl_8017D824
-lbl_8017D824:
+.global freeModelNode__Q28dynamics9ModelTreeFPQ28dynamics9ModelNode
+freeModelNode__Q28dynamics9ModelTreeFPQ28dynamics9ModelNode:
 /* 8017D824 00179664  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017D828 00179668  7C 08 02 A6 */	mflr r0
 /* 8017D82C 0017966C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -394,9 +394,9 @@ lbl_8017D824:
 /* 8017D83C 0017967C  7C 9F 23 78 */	mr r31, r4
 /* 8017D840 00179680  7F E3 FB 78 */	mr r3, r31
 /* 8017D844 00179684  38 80 FF FF */	li r4, -0x1
-/* 8017D848 00179688  4B FF EE 4D */	bl lbl_8017C694
+/* 8017D848 00179688  4B FF EE 4D */	bl __dt__Q28dynamics9ModelNodeFv
 /* 8017D84C 0017968C  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 8017D850 00179690  4B EF 7E E1 */	bl lbl_80075730
+/* 8017D850 00179690  4B EF 7E E1 */	bl GKI_getfirst
 /* 8017D854 00179694  7F E4 FB 78 */	mr r4, r31
 /* 8017D858 00179698  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 8017D85C 0017969C  81 8C 00 10 */	lwz r12, 0x10(r12)

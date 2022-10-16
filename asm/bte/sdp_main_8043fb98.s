@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043FB98
-lbl_8043FB98:
+.global "@1261"
+"@1261":
 
 	.4byte 0x53657276
 	.4byte 0x69636520
@@ -35,8 +35,8 @@ lbl_8043FB98:
 	.4byte 0x20666169
 	.4byte 0x6C656400
 
-.global lbl_8043FC10
-lbl_8043FC10:
+.global "@1274"
+"@1274":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -87,8 +87,8 @@ lbl_8043FC10:
 	.4byte 0x44203078
 	.4byte 0x25780000
 
-.global lbl_8043FCD0
-lbl_8043FCD0:
+.global "@1306"
+"@1306":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -102,8 +102,8 @@ lbl_8043FCD0:
 	.4byte 0x443A2030
 	.4byte 0x78257800
 
-.global lbl_8043FCFC
-lbl_8043FCFC:
+.global "@1307"
+"@1307":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -128,8 +128,8 @@ lbl_8043FCFC:
 	.4byte 0x743A2025
 	.4byte 0x64000000
 
-.global lbl_8043FD54
-lbl_8043FD54:
+.global "@1323"
+"@1323":
 
 	.4byte 0x53445020
 	.4byte 0x2D206469
@@ -139,8 +139,8 @@ lbl_8043FD54:
 	.4byte 0x443A2030
 	.4byte 0x78257800
 
-.global lbl_8043FD70
-lbl_8043FD70:
+.global "@1337"
+"@1337":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -154,8 +154,8 @@ lbl_8043FD70:
 	.4byte 0x30782578
 	.4byte 0
 
-.global lbl_8043FD9C
-lbl_8043FD9C:
+.global "@1338"
+"@1338":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -167,8 +167,8 @@ lbl_8043FD9C:
 	.4byte 0x30782578
 	.4byte 0
 
-.global lbl_8043FDC0
-lbl_8043FDC0:
+.global "@1347"
+"@1347":
 
 	.4byte 0x53445020
 	.4byte 0x2D204967
@@ -185,8 +185,8 @@ lbl_8043FDC0:
 	.4byte 0x3A203078
 	.4byte 0x25780000
 
-.global lbl_8043FDF8
-lbl_8043FDF8:
+.global "@1348"
+"@1348":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -219,8 +219,8 @@ lbl_8043FDF8:
 	.4byte 0x6661696C
 	.4byte 0x65640000
 
-.global lbl_8043FE70
-lbl_8043FE70:
+.global "@1375"
+"@1375":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -235,8 +235,8 @@ lbl_8043FE70:
 	.4byte 0x30782578
 	.4byte 0
 
-.global lbl_8043FEA0
-lbl_8043FEA0:
+.global "@1376"
+"@1376":
 
 	.4byte 0x53445020
 	.4byte 0x2D205263
@@ -249,8 +249,8 @@ lbl_8043FEA0:
 	.4byte 0x30782578
 	.4byte 0
 
-.global lbl_8043FEC8
-lbl_8043FEC8:
+.global "@1382"
+"@1382":
 
 	.4byte 0x53445020
 	.4byte 0x2D204343

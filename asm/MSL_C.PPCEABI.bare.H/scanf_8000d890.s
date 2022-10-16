@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000D890
-lbl_8000D890:
+.global __StringRead
+__StringRead:
 /* 8000D890 000096D0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 8000D894 000096D4  41 82 00 18 */	beq lbl_8000D8AC
 /* 8000D898 000096D8  2C 05 00 01 */	cmpwi r5, 0x1

@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048D428
-lbl_8048D428:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8captured17StateCapturedWhip,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8captured17StateCapturedWhip,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8038A76C
-	.4byte lbl_8038A730
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8captured17StateCapturedWhip,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8captured17StateCapturedWhip,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8048D438
-lbl_8048D438:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8038A768
-	.4byte lbl_8038A74C
-
-.global lbl_8048D448
-lbl_8048D448:
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero4whip14StateWhipCatch,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero4whip14StateWhipCatch,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8038A484
-	.4byte lbl_8038A534
-	.4byte lbl_8038A5E8
-	.4byte lbl_8038A5EC
-	.4byte lbl_8038A660
-	.4byte lbl_8038A664
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero4whip14StateWhipCatch,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero4whip14StateWhipCatch,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero4whip16StateWhipCapture
+__vt__Q53scn4step4hero4whip16StateWhipCapture:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procAnim__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procMove__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procConstraint__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procFixPos__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procObjCollReact__Q53scn4step4hero4whip16StateWhipCaptureFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

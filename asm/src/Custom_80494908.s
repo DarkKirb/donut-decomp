@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80494908
-lbl_80494908:
+.global "__vt__Q24util153StateFactoryArg2<Q24util6IState,Q53scn4step6weapon16fighterhadoushot9StateMain,PQ43scn4step6weapon6Weapon,Q53scn4step6weapon16fighterhadoushot9Variation>"
+"__vt__Q24util153StateFactoryArg2<Q24util6IState,Q53scn4step6weapon16fighterhadoushot9StateMain,PQ43scn4step6weapon6Weapon,Q53scn4step6weapon16fighterhadoushot9Variation>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E6C4C
-	.4byte lbl_803E6C28
+	.4byte "__dt__Q24util153StateFactoryArg2<Q24util6IState,Q53scn4step6weapon16fighterhadoushot9StateMain,PQ43scn4step6weapon6Weapon,Q53scn4step6weapon16fighterhadoushot9Variation>Fv"
+	.4byte "create__Q24util153StateFactoryArg2<Q24util6IState,Q53scn4step6weapon16fighterhadoushot9StateMain,PQ43scn4step6weapon6Weapon,Q53scn4step6weapon16fighterhadoushot9Variation>Fv"
 
-.global lbl_80494918
-lbl_80494918:
+.global __vt__Q53scn4step6weapon16fighterhadoushot6Custom
+__vt__Q53scn4step6weapon16fighterhadoushot6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E6C24
-	.4byte lbl_803E6C48
-	.4byte lbl_803E6AF0
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q53scn4step6weapon16fighterhadoushot6CustomCFv
+	.4byte __dt__Q53scn4step6weapon16fighterhadoushot6CustomFv
+	.4byte onInit__Q53scn4step6weapon16fighterhadoushot6CustomFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0

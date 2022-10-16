@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495A58
-lbl_80495A58:
+.global "t_ModeItemSetList__18@unnamed@Menu_cpp@"
+"t_ModeItemSetList__18@unnamed@Menu_cpp@":
 
 	.4byte 0
 	.4byte 0x00000001
 	.4byte 0x00000002
 	.4byte 0
 
-.global lbl_80495A68
-lbl_80495A68:
+.global "t_VCItemSetList__18@unnamed@Menu_cpp@"
+"t_VCItemSetList__18@unnamed@Menu_cpp@":
 
 	.4byte 0x00000003
 	.4byte 0x00000004

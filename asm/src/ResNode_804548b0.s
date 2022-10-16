@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804548B0
-lbl_804548B0:
+.global "@STRING@ref__Q34nw4r3g3d7ResNodeCFv@0"
+"@STRING@ref__Q34nw4r3g3d7ResNodeCFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -12,8 +12,8 @@ lbl_804548B0:
 	.4byte 0x616C6964
 	.4byte 0x2E000000
 
-.global lbl_804548CC
-lbl_804548CC:
+.global "@STRING@ref__Q34nw4r3g3d7ResNodeCFv"
+"@STRING@ref__Q34nw4r3g3d7ResNodeCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736E
@@ -21,8 +21,8 @@ lbl_804548CC:
 	.4byte 0x61632E68
 	.4byte 0
 
-.global lbl_804548E0
-lbl_804548E0:
+.global "@STRING@GetID__Q34nw4r3g3d7ResNodeCFv@0"
+"@STRING@GetID__Q34nw4r3g3d7ResNodeCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -33,8 +33,8 @@ lbl_804548E0:
 	.4byte 0x56616C69
 	.4byte 0x64282900
 
-.global lbl_80454900
-lbl_80454900:
+.global "@STRING@GetID__Q34nw4r3g3d7ResNodeCFv"
+"@STRING@GetID__Q34nw4r3g3d7ResNodeCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736E
@@ -43,8 +43,8 @@ lbl_80454900:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80454918
-lbl_80454918:
+.global "@STRING@GetMtxID__Q34nw4r3g3d7ResNodeCFv@0"
+"@STRING@GetMtxID__Q34nw4r3g3d7ResNodeCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -55,8 +55,8 @@ lbl_80454918:
 	.4byte 0x56616C69
 	.4byte 0x64282900
 
-.global lbl_80454938
-lbl_80454938:
+.global "@STRING@GetMtxID__Q34nw4r3g3d7ResNodeCFv"
+"@STRING@GetMtxID__Q34nw4r3g3d7ResNodeCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736E

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804481F8
-lbl_804481F8:
+.global "@2532"
+"@2532":
 
 	.4byte 0x5B417564
 	.4byte 0x696F4465
@@ -12,8 +12,8 @@ lbl_804481F8:
 	.4byte 0x6F79696E
 	.4byte 0x670A0000
 
-.global lbl_80448214
-lbl_80448214:
+.global "@2549_80448214"
+"@2549_80448214":
 
 	.4byte 0x5B417564
 	.4byte 0x696F4465
@@ -23,8 +23,8 @@ lbl_80448214:
 	.4byte 0x65206572
 	.4byte 0x726F7200
 
-.global lbl_80448230
-lbl_80448230:
+.global "@2550_80448230"
+"@2550_80448230":
 
 	.4byte 0x5B617564
 	.4byte 0x696F4465
@@ -36,13 +36,13 @@ lbl_80448230:
 	.4byte 0x73697A65
 	.4byte 0
 
-.global lbl_80448254
-lbl_80448254:
+.global __vt__17MoSdkAudioDecoder
+__vt__17MoSdkAudioDecoder:
 
-	.4byte lbl_80556AD0
+	.4byte __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80152050
-	.4byte lbl_801520C0
-	.4byte lbl_8014F970
+	.4byte __dt__17MoSdkAudioDecoderFv
+	.4byte decode__17MoSdkAudioDecoderFPCUcUl
+	.4byte seekPerformed__17MoSdkAudioDecoderFv

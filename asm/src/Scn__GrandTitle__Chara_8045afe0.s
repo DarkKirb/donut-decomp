@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045AFE0
-lbl_8045AFE0:
+.global "@56054_8045AFE0"
+"@56054_8045AFE0":
 
 	.4byte 0x53636E2E
 	.4byte 0x4772616E
@@ -111,106 +111,106 @@ lbl_8045AFE0:
 	.4byte 0x65642829
 	.4byte 0
 
-.global lbl_8045B188
-lbl_8045B188:
+.global "@56070_8045B188"
+"@56070_8045B188":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4EE8
+	.4byte isCelebrateAnimPlayed__Q28mintglue22Scn__GrandTitle__CharaFv
 
-.global lbl_8045B194
-lbl_8045B194:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4EA4
-
-.global lbl_8045B1A0
-lbl_8045B1A0:
+.global "@56126_8045B194"
+"@56126_8045B194":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4E80
+	.4byte setLoopAnim__Q28mintglue22Scn__GrandTitle__CharaFPCcPCc
 
-.global lbl_8045B1AC
-lbl_8045B1AC:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4E34
-
-.global lbl_8045B1B8
-lbl_8045B1B8:
+.global "@56131_8045B1A0"
+"@56131_8045B1A0":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4E10
+	.4byte stopWalkSE__Q28mintglue22Scn__GrandTitle__CharaFv
 
-.global lbl_8045B1C4
-lbl_8045B1C4:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4DDC
-
-.global lbl_8045B1D0
-lbl_8045B1D0:
+.global "@56139_8045B1AC"
+"@56139_8045B1AC":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4DA8
+	.4byte requestWalkSE__Q28mintglue22Scn__GrandTitle__CharaFUlUli
 
-.global lbl_8045B1DC
-lbl_8045B1DC:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4D74
-
-.global lbl_8045B1E8
-lbl_8045B1E8:
+.global "@56142_8045B1B8"
+"@56142_8045B1B8":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4D50
+	.4byte flashReset__Q28mintglue22Scn__GrandTitle__CharaFv
 
-.global lbl_8045B1F4
-lbl_8045B1F4:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4D0C
-
-.global lbl_8045B200
-lbl_8045B200:
+.global "@56147_8045B1C4"
+"@56147_8045B1C4":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4CC8
+	.4byte flashStart__Q28mintglue22Scn__GrandTitle__CharaFUl
 
-.global lbl_8045B20C
-lbl_8045B20C:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4C84
-
-.global lbl_8045B218
-lbl_8045B218:
+.global "@56150_8045B1D0"
+"@56150_8045B1D0":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4C60
+	.4byte setBlockVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 
-.global lbl_8045B224
-lbl_8045B224:
+.global "@56158_8045B1DC"
+"@56158_8045B1DC":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C4BB8
+	.4byte setVisibility__Q28mintglue22Scn__GrandTitle__CharaFb
 
-.global lbl_8045B230
-lbl_8045B230:
+.global "@56163_8045B1E8"
+"@56163_8045B1E8":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resetEffect__Q28mintglue22Scn__GrandTitle__CharaFv
+
+.global "@56168_8045B1F4"
+"@56168_8045B1F4":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte effectWarpRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+
+.global "@56176_8045B200"
+"@56176_8045B200":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte effectForeRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+
+.global "@56181"
+"@56181":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte effectRequestN__Q28mintglue22Scn__GrandTitle__CharaFUlPCc
+
+.global "@56186_8045B218"
+"@56186_8045B218":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isAnimLooped__Q28mintglue22Scn__GrandTitle__CharaFv
+
+.global "@56191_8045B224"
+"@56191_8045B224":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte changeAnim__Q28mintglue22Scn__GrandTitle__CharaFPCci
+
+.global "@STRING@ref__Q26mintvm33MintPtr<Q33scn10grandtitle5Chara>CFv"
+"@STRING@ref__Q26mintvm33MintPtr<Q33scn10grandtitle5Chara>CFv":
 
 	.4byte 0x4D696E74
 	.4byte 0x50747220

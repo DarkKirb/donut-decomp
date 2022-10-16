@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801A21FC
-lbl_801A21FC:
+.global __ct__Q23hid5AccelFv
+__ct__Q23hid5AccelFv:
 /* 801A21FC 0019E03C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A2200 0019E040  38 00 00 00 */	li r0, 0x0
 /* 801A2204 0019E044  90 01 00 08 */	stw r0, 0x8(r1)

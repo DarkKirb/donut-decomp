@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802213BC
-lbl_802213BC:
+.global Create__Q33scn4step11ContextModeFv
+Create__Q33scn4step11ContextModeFv:
 /* 802213BC 0021D1FC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802213C0 0021D200  38 A1 00 04 */	addi r5, r1, 0x4
 /* 802213C4 0021D204  38 80 00 00 */	li r4, 0x0
@@ -32,29 +32,29 @@ lbl_802213FC:
 /* 80221414 0021D254  90 05 00 04 */	stw r0, 0x4(r5)
 /* 80221418 0021D258  38 21 00 20 */	addi r1, r1, 0x20
 /* 8022141C 0021D25C  4E 80 00 20 */	blr
-.global lbl_80221420
-lbl_80221420:
+.global isStoryMode__Q33scn4step11ContextModeCFv
+isStoryMode__Q33scn4step11ContextModeCFv:
 /* 80221420 0021D260  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 80221424 0021D264  38 00 00 01 */	li r0, 0x1
 /* 80221428 0021D268  38 60 FF FF */	li r3, -0x1
 /* 8022142C 0021D26C  7C 04 00 10 */	subfc r0, r4, r0
 /* 80221430 0021D270  7C 63 01 90 */	subfze r3, r3
 /* 80221434 0021D274  4E 80 00 20 */	blr
-.global lbl_80221438
-lbl_80221438:
+.global isArenaMode__Q33scn4step11ContextModeCFv
+isArenaMode__Q33scn4step11ContextModeCFv:
 /* 80221438 0021D278  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8022143C 0021D27C  38 03 FF FE */	addi r0, r3, -0x2
 /* 80221440 0021D280  7C 00 00 34 */	cntlzw r0, r0
 /* 80221444 0021D284  54 03 D9 7E */	srwi r3, r0, 5
 /* 80221448 0021D288  4E 80 00 20 */	blr
-.global lbl_8022144C
-lbl_8022144C:
+.global isExtraMode__Q33scn4step11ContextModeCFv
+isExtraMode__Q33scn4step11ContextModeCFv:
 /* 8022144C 0021D28C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80221450 0021D290  7C 08 02 A6 */	mflr r0
 /* 80221454 0021D294  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80221458 0021D298  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8022145C 0021D29C  7C 7F 1B 78 */	mr r31, r3
-/* 80221460 0021D2A0  4B FF FF C1 */	bl lbl_80221420
+/* 80221460 0021D2A0  4B FF FF C1 */	bl isStoryMode__Q33scn4step11ContextModeCFv
 /* 80221464 0021D2A4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80221468 0021D2A8  41 82 00 18 */	beq lbl_80221480
 /* 8022146C 0021D2AC  80 7F 00 0C */	lwz r3, 0xc(r31)
@@ -65,7 +65,7 @@ lbl_8022144C:
 .global lbl_80221480
 lbl_80221480:
 /* 80221480 0021D2C0  7F E3 FB 78 */	mr r3, r31
-/* 80221484 0021D2C4  4B FF FF B5 */	bl lbl_80221438
+/* 80221484 0021D2C4  4B FF FF B5 */	bl isArenaMode__Q33scn4step11ContextModeCFv
 /* 80221488 0021D2C8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8022148C 0021D2CC  41 82 00 18 */	beq lbl_802214A4
 /* 80221490 0021D2D0  80 7F 00 08 */	lwz r3, 0x8(r31)

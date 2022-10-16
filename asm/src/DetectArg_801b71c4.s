@@ -1,9 +1,9 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801B71C4
-lbl_801B71C4:
-/* 801B71C4 001B3004  C0 02 9A C8 */	lfs f0, lbl_8055FA48@sda21(r2)
+.global __ct__Q35mcoll6detail9DetectArgFv
+__ct__Q35mcoll6detail9DetectArgFv:
+/* 801B71C4 001B3004  C0 02 9A C8 */	lfs f0, "@49806"@sda21(r2)
 /* 801B71C8 001B3008  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 801B71CC 001B300C  D0 03 00 00 */	stfs f0, 0x0(r3)
 /* 801B71D0 001B3010  38 00 00 00 */	li r0, 0x0
@@ -18,49 +18,49 @@ lbl_801B71C4:
 /* 801B71F4 001B3034  98 03 00 13 */	stb r0, 0x13(r3)
 /* 801B71F8 001B3038  98 03 00 14 */	stb r0, 0x14(r3)
 /* 801B71FC 001B303C  4E 80 00 20 */	blr
-.global lbl_801B7200
-lbl_801B7200:
+.global setMoveRetryCountToMultiTime__Q35mcoll6detail9DetectArgFv
+setMoveRetryCountToMultiTime__Q35mcoll6detail9DetectArgFv:
 /* 801B7200 001B3040  38 00 00 0F */	li r0, 0xf
 /* 801B7204 001B3044  90 03 00 08 */	stw r0, 0x8(r3)
 /* 801B7208 001B3048  4E 80 00 20 */	blr
-.global lbl_801B720C
-lbl_801B720C:
+.global isPassThroughLand__Q35mcoll6detail9DetectArgCFv
+isPassThroughLand__Q35mcoll6detail9DetectArgCFv:
 /* 801B720C 001B304C  88 63 00 0C */	lbz r3, 0xc(r3)
 /* 801B7210 001B3050  4E 80 00 20 */	blr
-.global lbl_801B7214
-lbl_801B7214:
+.global setIsPassThroughLand__Q35mcoll6detail9DetectArgFb
+setIsPassThroughLand__Q35mcoll6detail9DetectArgFb:
 /* 801B7214 001B3054  98 83 00 0C */	stb r4, 0xc(r3)
 /* 801B7218 001B3058  4E 80 00 20 */	blr
-.global lbl_801B721C
-lbl_801B721C:
+.global setIsGenerateFloorToOneSpaceGrid__Q35mcoll6detail9DetectArgFb
+setIsGenerateFloorToOneSpaceGrid__Q35mcoll6detail9DetectArgFb:
 /* 801B721C 001B305C  98 83 00 0D */	stb r4, 0xd(r3)
 /* 801B7220 001B3060  4E 80 00 20 */	blr
-.global lbl_801B7224
-lbl_801B7224:
+.global setIsGenerateFloorToTwoSpaceGrid__Q35mcoll6detail9DetectArgFb
+setIsGenerateFloorToTwoSpaceGrid__Q35mcoll6detail9DetectArgFb:
 /* 801B7224 001B3064  98 83 00 0E */	stb r4, 0xe(r3)
 /* 801B7228 001B3068  4E 80 00 20 */	blr
-.global lbl_801B722C
-lbl_801B722C:
+.global setIsPassInvisibleLand__Q35mcoll6detail9DetectArgFb
+setIsPassInvisibleLand__Q35mcoll6detail9DetectArgFb:
 /* 801B722C 001B306C  98 83 00 0F */	stb r4, 0xf(r3)
 /* 801B7230 001B3070  4E 80 00 20 */	blr
-.global lbl_801B7234
-lbl_801B7234:
+.global setIsPassInvisibleWater__Q35mcoll6detail9DetectArgFb
+setIsPassInvisibleWater__Q35mcoll6detail9DetectArgFb:
 /* 801B7234 001B3074  98 83 00 10 */	stb r4, 0x10(r3)
 /* 801B7238 001B3078  4E 80 00 20 */	blr
-.global lbl_801B723C
-lbl_801B723C:
+.global setIsGroundMode__Q35mcoll6detail9DetectArgFb
+setIsGroundMode__Q35mcoll6detail9DetectArgFb:
 /* 801B723C 001B307C  98 83 00 11 */	stb r4, 0x11(r3)
 /* 801B7240 001B3080  4E 80 00 20 */	blr
-.global lbl_801B7244
-lbl_801B7244:
+.global setIsPassCrystalWallLand__Q35mcoll6detail9DetectArgFb
+setIsPassCrystalWallLand__Q35mcoll6detail9DetectArgFb:
 /* 801B7244 001B3084  98 83 00 12 */	stb r4, 0x12(r3)
 /* 801B7248 001B3088  4E 80 00 20 */	blr
-.global lbl_801B724C
-lbl_801B724C:
+.global setIsPassDamageLand__Q35mcoll6detail9DetectArgFb
+setIsPassDamageLand__Q35mcoll6detail9DetectArgFb:
 /* 801B724C 001B308C  98 83 00 13 */	stb r4, 0x13(r3)
 /* 801B7250 001B3090  4E 80 00 20 */	blr
-.global lbl_801B7254
-lbl_801B7254:
+.global toActorDetectOption__Q35mcoll6detail9DetectArgCFv
+toActorDetectOption__Q35mcoll6detail9DetectArgCFv:
 /* 801B7254 001B3094  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B7258 001B3098  7C 08 02 A6 */	mflr r0
 /* 801B725C 001B309C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -68,7 +68,7 @@ lbl_801B7254:
 /* 801B7264 001B30A4  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801B7268 001B30A8  7C 7E 1B 78 */	mr r30, r3
 /* 801B726C 001B30AC  7C 9F 23 78 */	mr r31, r4
-/* 801B7270 001B30B0  4B FF B5 79 */	bl lbl_801B27E8
+/* 801B7270 001B30B0  4B FF B5 79 */	bl __ct__Q35mcoll6detail17ActorDetectOptionFv
 /* 801B7274 001B30B4  88 1F 00 0D */	lbz r0, 0xd(r31)
 /* 801B7278 001B30B8  98 1E 00 00 */	stb r0, 0x0(r30)
 /* 801B727C 001B30BC  88 1F 00 0E */	lbz r0, 0xe(r31)

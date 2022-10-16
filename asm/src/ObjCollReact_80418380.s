@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80418380
-lbl_80418380:
+.global "T_HITEFFECT_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@"
+"T_HITEFFECT_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@":
 
 	.4byte 0x00000072
 	.4byte 0x00000071
@@ -30,8 +30,8 @@ lbl_80418380:
 	.4byte 0x00000072
 	.4byte 0x00000076
 
-.global lbl_804183E4
-lbl_804183E4:
+.global "T_HITSE_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@"
+"T_HITSE_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@":
 
 	.4byte 0x000001E5
 	.4byte 0x000001E5

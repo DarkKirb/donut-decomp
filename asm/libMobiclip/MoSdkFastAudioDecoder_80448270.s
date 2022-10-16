@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80448270
-lbl_80448270:
+.global "@2578_80448270"
+"@2578_80448270":
 
 	.4byte 0x5B417564
 	.4byte 0x696F4465
@@ -14,19 +14,19 @@ lbl_80448270:
 	.4byte 0x73697A65
 	.4byte 0x210A0000
 
-.global lbl_80448294
-lbl_80448294:
+.global __vt__21MoSdkFastAudioDecoder
+__vt__21MoSdkFastAudioDecoder:
 
-	.4byte lbl_80556AD8
+	.4byte __RTTI__21MoSdkFastAudioDecoder
 	.4byte 0
-	.4byte lbl_801525A0
-	.4byte lbl_80152540
-	.4byte lbl_801524E0
-	.4byte lbl_801520C0
-	.4byte lbl_8014F970
+	.4byte decodeIntoBuffer__21MoSdkFastAudioDecoderFPCUcUlPUsPUl
+	.4byte getPcmSizeFromPacket__21MoSdkFastAudioDecoderFUl
+	.4byte __dt__21MoSdkFastAudioDecoderFv
+	.4byte decode__17MoSdkAudioDecoderFPCUcUl
+	.4byte seekPerformed__17MoSdkAudioDecoderFv
 
-.global lbl_804482B0
-lbl_804482B0:
+.global "@2542_804482B0"
+"@2542_804482B0":
 
 	.4byte 0x4D6F5364
 	.4byte 0x6B466173
@@ -35,10 +35,10 @@ lbl_804482B0:
 	.4byte 0x636F6465
 	.4byte 0x72000000
 
-.global lbl_804482C8
-lbl_804482C8:
+.global "@2543_804482C8"
+"@2543_804482C8":
 
-	.4byte lbl_80556AD0
+	.4byte __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 	.4byte 0

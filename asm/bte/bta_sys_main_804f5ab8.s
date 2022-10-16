@@ -1,6 +1,6 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804F5AB8
-lbl_804F5AB8:
+.global bta_sys_cb
+bta_sys_cb:
 	.skip 0x90

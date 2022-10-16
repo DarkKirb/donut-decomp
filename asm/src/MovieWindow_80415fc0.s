@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415FC0
-lbl_80415FC0:
+.global "@51646_80415FC0"
+"@51646_80415FC0":
 
 	.4byte 0
 	.4byte 0
@@ -14,8 +14,8 @@ lbl_80415FC0:
 	.4byte 0xBF800000
 	.4byte 0
 
-.global lbl_80415FE4
-lbl_80415FE4:
+.global "MOVIE_KIND_TABLE__Q43scn7history6detail25@unnamed@MovieWindow_cpp@"
+"MOVIE_KIND_TABLE__Q43scn7history6detail25@unnamed@MovieWindow_cpp@":
 
 	.4byte 0
 	.4byte 0

@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80456F80
-lbl_80456F80:
+.global "T_HERO_PANE_NAMES__18@unnamed@Util_cpp@"
+"T_HERO_PANE_NAMES__18@unnamed@Util_cpp@":
 
-	.4byte lbl_80556EA8
-	.4byte lbl_80556EB0
-	.4byte lbl_80556EB8
-	.4byte lbl_80556EC0
-	.4byte lbl_80556EC8
-	.4byte lbl_80556ED0
-	.4byte lbl_80556ED8
+	.4byte "@51913"
+	.4byte "@51914"
+	.4byte "@51915"
+	.4byte "@51916"
+	.4byte "@51917_80556EC8"
+	.4byte "@51918"
+	.4byte "@51919_80556ED8"
 
-.global lbl_80456F9C
-lbl_80456F9C:
+.global "@54066"
+"@54066":
 
 	.4byte 0xFF10FF11
 	.4byte 0xFF12FF13
@@ -22,40 +22,40 @@ lbl_80456F9C:
 	.4byte 0xFF18FF19
 	.4byte 0
 
-.global lbl_80456FB4
-lbl_80456FB4:
+.global "@54067"
+"@54067":
 
 	.4byte 0x53706865
 	.4byte 0x7265436F
 	.4byte 0x756E7400
 
-.global lbl_80456FC0
-lbl_80456FC0:
+.global "@54078"
+"@54078":
 
 	.4byte 0x506C6179
 	.4byte 0x65724E75
 	.4byte 0x6D000000
 
-.global lbl_80456FCC
-lbl_80456FCC:
+.global __vt__Q24info22Iterator$52761Util_cpp
+__vt__Q24info22Iterator$52761Util_cpp:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A56E8
-	.4byte lbl_801A5680
-	.4byte lbl_801A5600
+	.4byte onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q24info22Iterator$52761Util_cppFPCwUlUsUs
+	.4byte onNormalChar__Q24info22Iterator$52761Util_cppFw
 
-.global lbl_80456FE0
-lbl_80456FE0:
+.global __vt__Q24info22Iterator$52705Util_cpp
+__vt__Q24info22Iterator$52705Util_cpp:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A58A8
-	.4byte lbl_801A5850
-	.4byte lbl_801A5804
+	.4byte onStartTag__Q24info22Iterator$52705Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q24info22Iterator$52705Util_cppFPCwUlUsUs
+	.4byte onNormalChar__Q24info22Iterator$52705Util_cppFw
 
-.global lbl_80456FF4
-lbl_80456FF4:
+.global "@54197"
+"@54197":
 
 	.4byte 0x6261645F
 	.4byte 0x66756E63
@@ -63,26 +63,26 @@ lbl_80456FF4:
 	.4byte 0x5F63616C
 	.4byte 0x6C000000
 
-.global lbl_80457008
-lbl_80457008:
+.global __vt__Q24info22Iterator$52503Util_cpp
+__vt__Q24info22Iterator$52503Util_cpp:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A5918
-	.4byte lbl_801AFF00
-	.4byte lbl_801AFF04
+	.4byte onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil14StringIteratorFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil14StringIteratorFw
 
-.global lbl_8045701C
-lbl_8045701C:
+.global "__vt__Q218@unnamed@Util_cpp@22Iterator$52007Util_cpp"
+"__vt__Q218@unnamed@Util_cpp@22Iterator$52007Util_cpp":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801A5A70
-	.4byte lbl_801A5A6C
-	.4byte lbl_801A5A68
+	.4byte "onStartTag__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFPCwUlUsUsUsPUc"
+	.4byte "onEndTag__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFPCwUlUsUs"
+	.4byte "onNormalChar__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFw"
 
-.global lbl_80457030
-lbl_80457030:
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@2"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -98,8 +98,8 @@ lbl_80457030:
 	.4byte 0x6E746572
 	.4byte 0x2E000000
 
-.global lbl_80457064
-lbl_80457064:
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@1"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@1":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -107,8 +107,8 @@ lbl_80457064:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80457078
-lbl_80457078:
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@0"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -124,8 +124,8 @@ lbl_80457078:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_804570AC
-lbl_804570AC:
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -133,8 +133,8 @@ lbl_804570AC:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_804570C0
-lbl_804570C0:
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@2"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -152,8 +152,8 @@ lbl_804570C0:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_804570FC
-lbl_804570FC:
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@1"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@1":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -161,8 +161,8 @@ lbl_804570FC:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80457110
-lbl_80457110:
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@0"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -178,8 +178,8 @@ lbl_80457110:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80457144
-lbl_80457144:
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -187,8 +187,8 @@ lbl_80457144:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80457158
-lbl_80457158:
+.global "@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0"
+"@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -204,8 +204,8 @@ lbl_80457158:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_8045718C
-lbl_8045718C:
+.global "@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff"
+"@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -213,8 +213,8 @@ lbl_8045718C:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_804571A0
-lbl_804571A0:
+.global "@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0"
+"@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -230,8 +230,8 @@ lbl_804571A0:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_804571D4
-lbl_804571D4:
+.global "@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff"
+"@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff":
 
 	.4byte 0x54657874
 	.4byte 0x57726974

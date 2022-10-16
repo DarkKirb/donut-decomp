@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802210E8
-lbl_802210E8:
+.global Create__Q33scn4step17ContextHeroIndiviFv
+Create__Q33scn4step17ContextHeroIndiviFv:
 /* 802210E8 0021CF28  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 802210EC 0021CF2C  38 A1 00 04 */	addi r5, r1, 0x4
 /* 802210F0 0021CF30  38 80 00 00 */	li r4, 0x0
@@ -32,15 +32,15 @@ lbl_80221128:
 /* 80221140 0021CF80  90 05 00 04 */	stw r0, 0x4(r5)
 /* 80221144 0021CF84  38 21 00 50 */	addi r1, r1, 0x50
 /* 80221148 0021CF88  4E 80 00 20 */	blr
-.global lbl_8022114C
-lbl_8022114C:
+.global CreateDefault__Q33scn4step17ContextHeroIndiviFv
+CreateDefault__Q33scn4step17ContextHeroIndiviFv:
 /* 8022114C 0021CF8C  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80221150 0021CF90  7C 08 02 A6 */	mflr r0
 /* 80221154 0021CF94  90 01 00 94 */	stw r0, 0x94(r1)
 /* 80221158 0021CF98  93 E1 00 8C */	stw r31, 0x8c(r1)
 /* 8022115C 0021CF9C  7C 7F 1B 78 */	mr r31, r3
 /* 80221160 0021CFA0  38 61 00 08 */	addi r3, r1, 0x8
-/* 80221164 0021CFA4  4B FF FF 85 */	bl lbl_802210E8
+/* 80221164 0021CFA4  4B FF FF 85 */	bl Create__Q33scn4step17ContextHeroIndiviFv
 /* 80221168 0021CFA8  38 A1 00 40 */	addi r5, r1, 0x40
 /* 8022116C 0021CFAC  38 81 00 04 */	addi r4, r1, 0x4
 /* 80221170 0021CFB0  38 00 00 07 */	li r0, 0x7
@@ -86,8 +86,8 @@ lbl_802211DC:
 /* 80221200 0021D040  7C 08 03 A6 */	mtlr r0
 /* 80221204 0021D044  38 21 00 90 */	addi r1, r1, 0x90
 /* 80221208 0021D048  4E 80 00 20 */	blr
-.global lbl_8022120C
-lbl_8022120C:
+.global Create__Q33scn4step11ContextHeroFv
+Create__Q33scn4step11ContextHeroFv:
 /* 8022120C 0021D04C  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 80221210 0021D050  7C 08 02 A6 */	mflr r0
 /* 80221214 0021D054  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -104,15 +104,15 @@ lbl_80221230:
 /* 80221238 0021D078  42 00 FF F8 */	bdnz lbl_80221230
 /* 8022123C 0021D07C  90 64 00 04 */	stw r3, 0x4(r4)
 /* 80221240 0021D080  38 61 00 44 */	addi r3, r1, 0x44
-/* 80221244 0021D084  48 00 00 E1 */	bl lbl_80221324
+/* 80221244 0021D084  48 00 00 E1 */	bl initSharedData__Q33scn4step11ContextHeroFv
 /* 80221248 0021D088  38 00 00 00 */	li r0, 0x0
 /* 8022124C 0021D08C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80221250 0021D090  90 01 00 50 */	stw r0, 0x50(r1)
 /* 80221254 0021D094  38 61 00 08 */	addi r3, r1, 0x8
-/* 80221258 0021D098  4B FF FE F5 */	bl lbl_8022114C
+/* 80221258 0021D098  4B FF FE F5 */	bl CreateDefault__Q33scn4step17ContextHeroIndiviFv
 /* 8022125C 0021D09C  38 61 00 54 */	addi r3, r1, 0x54
 /* 80221260 0021D0A0  38 81 00 08 */	addi r4, r1, 0x8
-/* 80221264 0021D0A4  48 00 00 45 */	bl lbl_802212A8
+/* 80221264 0021D0A4  48 00 00 45 */	bl __as__Q33scn4step17ContextHeroIndiviFRCQ33scn4step17ContextHeroIndivi
 /* 80221268 0021D0A8  38 BF FF FC */	addi r5, r31, -0x4
 /* 8022126C 0021D0AC  38 81 00 40 */	addi r4, r1, 0x40
 /* 80221270 0021D0B0  38 00 00 09 */	li r0, 0x9
@@ -131,8 +131,8 @@ lbl_80221278:
 /* 8022129C 0021D0DC  7C 08 03 A6 */	mtlr r0
 /* 802212A0 0021D0E0  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802212A4 0021D0E4  4E 80 00 20 */	blr
-.global lbl_802212A8
-lbl_802212A8:
+.global __as__Q33scn4step17ContextHeroIndiviFRCQ33scn4step17ContextHeroIndivi
+__as__Q33scn4step17ContextHeroIndiviFRCQ33scn4step17ContextHeroIndivi:
 /* 802212A8 0021D0E8  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 802212AC 0021D0EC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 802212B0 0021D0F0  80 04 00 04 */	lwz r0, 0x4(r4)
@@ -164,8 +164,8 @@ lbl_802212A8:
 /* 80221318 0021D158  90 A3 00 34 */	stw r5, 0x34(r3)
 /* 8022131C 0021D15C  90 03 00 38 */	stw r0, 0x38(r3)
 /* 80221320 0021D160  4E 80 00 20 */	blr
-.global lbl_80221324
-lbl_80221324:
+.global initSharedData__Q33scn4step11ContextHeroFv
+initSharedData__Q33scn4step11ContextHeroFv:
 /* 80221324 0021D164  38 00 00 07 */	li r0, 0x7
 /* 80221328 0021D168  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8022132C 0021D16C  38 00 00 00 */	li r0, 0x0

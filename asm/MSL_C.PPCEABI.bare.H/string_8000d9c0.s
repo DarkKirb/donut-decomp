@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000D9C0
-lbl_8000D9C0:
+.global strcpy
+strcpy:
 /* 8000D9C0 00009800  54 60 07 BE */	clrlwi r0, r3, 30
 /* 8000D9C4 00009804  54 85 07 BE */	clrlwi r5, r4, 30
 /* 8000D9C8 00009808  7C 00 28 40 */	cmplw r0, r5
@@ -63,8 +63,8 @@ lbl_8000DA6C:
 /* 8000DA74 000098B4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8000DA78 000098B8  40 82 FF F4 */	bne lbl_8000DA6C
 /* 8000DA7C 000098BC  4E 80 00 20 */	blr
-.global lbl_8000DA80
-lbl_8000DA80:
+.global strncpy
+strncpy:
 /* 8000DA80 000098C0  38 84 FF FF */	addi r4, r4, -0x1
 /* 8000DA84 000098C4  38 C3 FF FF */	addi r6, r3, -0x1
 /* 8000DA88 000098C8  38 A5 00 01 */	addi r5, r5, 0x1
@@ -90,8 +90,8 @@ lbl_8000DAB8:
 /* 8000DAB8 000098F8  34 A5 FF FF */	addic. r5, r5, -0x1
 /* 8000DABC 000098FC  40 82 FF D4 */	bne lbl_8000DA90
 /* 8000DAC0 00009900  4E 80 00 20 */	blr
-.global lbl_8000DAC4
-lbl_8000DAC4:
+.global strcat
+strcat:
 /* 8000DAC4 00009904  38 84 FF FF */	addi r4, r4, -0x1
 /* 8000DAC8 00009908  38 A3 FF FF */	addi r5, r3, -0x1
 .global lbl_8000DACC
@@ -107,8 +107,8 @@ lbl_8000DADC:
 /* 8000DAE4 00009924  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8000DAE8 00009928  40 82 FF F4 */	bne lbl_8000DADC
 /* 8000DAEC 0000992C  4E 80 00 20 */	blr
-.global lbl_8000DAF0
-lbl_8000DAF0:
+.global strncat
+strncat:
 /* 8000DAF0 00009930  38 84 FF FF */	addi r4, r4, -0x1
 /* 8000DAF4 00009934  38 C3 FF FF */	addi r6, r3, -0x1
 .global lbl_8000DAF8
@@ -136,8 +136,8 @@ lbl_8000DB30:
 /* 8000DB30 00009970  38 00 00 00 */	li r0, 0x0
 /* 8000DB34 00009974  98 06 00 01 */	stb r0, 0x1(r6)
 /* 8000DB38 00009978  4E 80 00 20 */	blr
-.global lbl_8000DB3C
-lbl_8000DB3C:
+.global strcmp
+strcmp:
 /* 8000DB3C 0000997C  88 A3 00 00 */	lbz r5, 0x0(r3)
 /* 8000DB40 00009980  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 8000DB44 00009984  7C 00 28 51 */	subf. r0, r0, r5
@@ -235,8 +235,8 @@ lbl_8000DC48:
 /* 8000DC4C 00009A8C  40 82 FF E4 */	bne lbl_8000DC30
 /* 8000DC50 00009A90  38 60 00 00 */	li r3, 0x0
 /* 8000DC54 00009A94  4E 80 00 20 */	blr
-.global lbl_8000DC58
-lbl_8000DC58:
+.global strncmp
+strncmp:
 /* 8000DC58 00009A98  38 63 FF FF */	addi r3, r3, -0x1
 /* 8000DC5C 00009A9C  38 84 FF FF */	addi r4, r4, -0x1
 /* 8000DC60 00009AA0  38 C5 00 01 */	addi r6, r5, 0x1
@@ -261,8 +261,8 @@ lbl_8000DC88:
 lbl_8000DC90:
 /* 8000DC90 00009AD0  38 60 00 00 */	li r3, 0x0
 /* 8000DC94 00009AD4  4E 80 00 20 */	blr
-.global lbl_8000DC98
-lbl_8000DC98:
+.global strchr
+strchr:
 /* 8000DC98 00009AD8  38 63 FF FF */	addi r3, r3, -0x1
 /* 8000DC9C 00009ADC  54 80 06 3E */	clrlwi r0, r4, 24
 /* 8000DCA0 00009AE0  48 00 00 0C */	b lbl_8000DCAC
@@ -279,8 +279,8 @@ lbl_8000DCAC:
 /* 8000DCBC 00009AFC  4D 82 00 20 */	beqlr
 /* 8000DCC0 00009B00  38 60 00 00 */	li r3, 0x0
 /* 8000DCC4 00009B04  4E 80 00 20 */	blr
-.global lbl_8000DCC8
-lbl_8000DCC8:
+.global strstr
+strstr:
 /* 8000DCC8 00009B08  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8000DCCC 00009B0C  38 A3 FF FF */	addi r5, r3, -0x1
 /* 8000DCD0 00009B10  4D 82 00 20 */	beqlr

@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80483E40
-lbl_80483E40:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80333E00
-	.4byte lbl_80333DC0
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80483E50
-lbl_80483E50:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80333DFC
-	.4byte lbl_80333DDC
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>Fv"

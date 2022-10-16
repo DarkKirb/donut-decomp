@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C9F8
-lbl_8055C9F8:
+.global CPUFifoReady
+CPUFifoReady:
 	.skip 0x1
 
-.global lbl_8055C9F9
-lbl_8055C9F9:
+.global GPFifoReady
+GPFifoReady:
 	.skip 0x3
 
-.global lbl_8055C9FC
-lbl_8055C9FC:
+.global __GXOverflowCount
+__GXOverflowCount:
 	.skip 0x4
 
-.global lbl_8055CA00
-lbl_8055CA00:
+.global __GXCurrentBP
+__GXCurrentBP:
 	.skip 0x4
 
-.global lbl_8055CA04
-lbl_8055CA04:
+.global BreakPointCB
+BreakPointCB:
 	.skip 0x4
 
-.global lbl_8055CA08
-lbl_8055CA08:
+.global GXOverflowSuspendInProgress
+GXOverflowSuspendInProgress:
 	.skip 0x4
 
-.global lbl_8055CA0C
-lbl_8055CA0C:
+.global __GXCurrentThread
+__GXCurrentThread:
 	.skip 0x4
 
-.global lbl_8055CA10
-lbl_8055CA10:
+.global CPGPLinked
+CPGPLinked:
 	.skip 0x8

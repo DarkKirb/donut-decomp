@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800470D0
-lbl_800470D0:
+.global CXSecureUncompressLZ
+CXSecureUncompressLZ:
 /* 800470D0 00042F10  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 800470D4 00042F14  7C A6 2B 78 */	mr r6, r5
 /* 800470D8 00042F18  81 03 00 00 */	lwz r8, 0x0(r3)

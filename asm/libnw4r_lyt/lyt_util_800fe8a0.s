@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800FE8A0
-lbl_800FE8A0:
+.global BindAnimation__Q24nw4r3lytFPQ34nw4r3lyt5GroupPQ34nw4r3lyt13AnimTransformbb
+BindAnimation__Q24nw4r3lytFPQ34nw4r3lyt5GroupPQ34nw4r3lyt13AnimTransformbb:
 /* 800FE8A0 000FA6E0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800FE8A4 000FA6E4  7C 08 02 A6 */	mflr r0
 /* 800FE8A8 000FA6E8  90 01 00 24 */	stw r0, 0x24(r1)

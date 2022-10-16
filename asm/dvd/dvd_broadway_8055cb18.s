@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CB18
-lbl_8055CB18:
+.global requestInProgress
+requestInProgress:
 	.skip 0x1
 
-.global lbl_8055CB19
-lbl_8055CB19:
+.global callbackInProgress
+callbackInProgress:
 	.skip 0x3
 
-.global lbl_8055CB1C
-lbl_8055CB1C:
+.global freeCommandBuf
+freeCommandBuf:
 	.skip 0x4
 
-.global lbl_8055CB20
-lbl_8055CB20:
+.global freeDvdContext
+freeDvdContext:
 	.skip 0x4
 
-.global lbl_8055CB24
-lbl_8055CB24:
+.global dvdContextsInited
+dvdContextsInited:
 	.skip 0x1
 
-.global lbl_8055CB25
-lbl_8055CB25:
+.global DVDLowInitCalled
+DVDLowInitCalled:
 	.skip 0x3
 
-.global lbl_8055CB28
-lbl_8055CB28:
+.global spinUpValue
+spinUpValue:
 	.skip 0x4
 
-.global lbl_8055CB2C
-lbl_8055CB2C:
+.global readLength
+readLength:
 	.skip 0x4
 
-.global lbl_8055CB30
-lbl_8055CB30:
+.global pathBuf
+pathBuf:
 	.skip 0x4
 
-.global lbl_8055CB34
-lbl_8055CB34:
+.global diCommand
+diCommand:
 	.skip 0x4
 
-.global lbl_8055CB38
-lbl_8055CB38:
+.global breakRequested
+breakRequested:
 	.skip 0x8

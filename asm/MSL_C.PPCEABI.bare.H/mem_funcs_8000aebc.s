@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000AEBC
-lbl_8000AEBC:
+.global __copy_longs_aligned
+__copy_longs_aligned:
 /* 8000AEBC 00006CFC  7C 03 00 D0 */	neg r0, r3
 /* 8000AEC0 00006D00  38 E4 FF FF */	addi r7, r4, -0x1
 /* 8000AEC4 00006D04  54 06 07 BF */	clrlwi. r6, r0, 30
@@ -64,8 +64,8 @@ lbl_8000AF64:
 /* 8000AF6C 00006DAC  9C 03 00 01 */	stbu r0, 0x1(r3)
 /* 8000AF70 00006DB0  40 82 FF F4 */	bne lbl_8000AF64
 /* 8000AF74 00006DB4  4E 80 00 20 */	blr
-.global lbl_8000AF78
-lbl_8000AF78:
+.global __copy_longs_rev_aligned
+__copy_longs_rev_aligned:
 /* 8000AF78 00006DB8  7C C3 2A 14 */	add r6, r3, r5
 /* 8000AF7C 00006DBC  7C 84 2A 14 */	add r4, r4, r5
 /* 8000AF80 00006DC0  54 C3 07 BF */	clrlwi. r3, r6, 30
@@ -122,8 +122,8 @@ lbl_8000B00C:
 /* 8000B014 00006E54  9C 06 FF FF */	stbu r0, -0x1(r6)
 /* 8000B018 00006E58  40 82 FF F4 */	bne lbl_8000B00C
 /* 8000B01C 00006E5C  4E 80 00 20 */	blr
-.global lbl_8000B020
-lbl_8000B020:
+.global __copy_longs_unaligned
+__copy_longs_unaligned:
 /* 8000B020 00006E60  7C 03 00 D0 */	neg r0, r3
 /* 8000B024 00006E64  38 E4 FF FF */	addi r7, r4, -0x1
 /* 8000B028 00006E68  54 06 07 BF */	clrlwi. r6, r0, 30
@@ -182,8 +182,8 @@ lbl_8000B0CC:
 /* 8000B0D4 00006F14  9C 03 00 01 */	stbu r0, 0x1(r3)
 /* 8000B0D8 00006F18  40 82 FF F4 */	bne lbl_8000B0CC
 /* 8000B0DC 00006F1C  4E 80 00 20 */	blr
-.global lbl_8000B0E0
-lbl_8000B0E0:
+.global __copy_longs_rev_unaligned
+__copy_longs_rev_unaligned:
 /* 8000B0E0 00006F20  7D 83 2A 14 */	add r12, r3, r5
 /* 8000B0E4 00006F24  7C 84 2A 14 */	add r4, r4, r5
 /* 8000B0E8 00006F28  55 83 07 BF */	clrlwi. r3, r12, 30

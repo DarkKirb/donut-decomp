@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011FE10
-lbl_8011FE10:
+.global IsValidBinaryFile__Q24nw4r2utFPCQ34nw4r2ut16BinaryFileHeaderUlUsUs
+IsValidBinaryFile__Q24nw4r2utFPCQ34nw4r2ut16BinaryFileHeaderUlUsUs:
 /* 8011FE10 0011BC50  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8011FE14 0011BC54  7C 00 20 40 */	cmplw r0, r4
 /* 8011FE18 0011BC58  41 82 00 0C */	beq lbl_8011FE24

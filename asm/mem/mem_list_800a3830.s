@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800A3830
-lbl_800A3830:
+.global MEMInitList
+MEMInitList:
 /* 800A3830 0009F670  38 00 00 00 */	li r0, 0x0
 /* 800A3834 0009F674  90 03 00 00 */	stw r0, 0x0(r3)
 /* 800A3838 0009F678  90 03 00 04 */	stw r0, 0x4(r3)
@@ -11,8 +11,8 @@ lbl_800A3830:
 /* 800A3844 0009F684  4E 80 00 20 */	blr
 /* 800A3848 0009F688  00 00 00 00 */	.4byte 0x00000000
 /* 800A384C 0009F68C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800A3850
-lbl_800A3850:
+.global MEMAppendListObject
+MEMAppendListObject:
 /* 800A3850 0009F690  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800A3854 0009F694  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800A3858 0009F698  40 82 00 30 */	bne lbl_800A3888
@@ -43,8 +43,8 @@ lbl_800A3888:
 /* 800A38B4 0009F6F4  38 05 00 01 */	addi r0, r5, 0x1
 /* 800A38B8 0009F6F8  B0 03 00 08 */	sth r0, 0x8(r3)
 /* 800A38BC 0009F6FC  4E 80 00 20 */	blr
-.global lbl_800A38C0
-lbl_800A38C0:
+.global MEMRemoveListObject
+MEMRemoveListObject:
 /* 800A38C0 0009F700  A0 03 00 0A */	lhz r0, 0xa(r3)
 /* 800A38C4 0009F704  7C C4 02 14 */	add r6, r4, r0
 /* 800A38C8 0009F708  7C 84 00 2E */	lwzx r4, r4, r0
@@ -81,8 +81,8 @@ lbl_800A3910:
 /* 800A3924 0009F764  B0 03 00 08 */	sth r0, 0x8(r3)
 /* 800A3928 0009F768  4E 80 00 20 */	blr
 /* 800A392C 0009F76C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800A3930
-lbl_800A3930:
+.global MEMGetNextListObject
+MEMGetNextListObject:
 /* 800A3930 0009F770  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800A3934 0009F774  40 82 00 0C */	bne lbl_800A3940
 /* 800A3938 0009F778  80 63 00 00 */	lwz r3, 0x0(r3)

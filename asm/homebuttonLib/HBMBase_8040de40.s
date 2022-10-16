@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040DE40
-lbl_8040DE40:
+.global "@9436_8040DE40"
+"@9436_8040DE40":
 
 	.4byte 0x000000FF
 	.4byte 0
 
-.global lbl_8040DE48
-lbl_8040DE48:
+.global scAnmTable__10homebutton
+scAnmTable__10homebutton:
 
 	.4byte 0
 	.4byte 0
@@ -35,8 +35,8 @@ lbl_8040DE48:
 	.4byte 0x00000007
 	.4byte 0x00000001
 
-.global lbl_8040DEA8
-lbl_8040DEA8:
+.global scGroupAnmTable__10homebutton
+scGroupAnmTable__10homebutton:
 
 	.4byte 0
 	.4byte 0
@@ -197,8 +197,8 @@ lbl_8040DEA8:
 	.4byte 0x000000B4
 	.4byte 0x3FC00000
 
-.global lbl_8040E120
-lbl_8040E120:
+.global "@16081"
+"@16081":
 
 	.4byte 0x3F800000
 	.4byte 0
@@ -213,8 +213,8 @@ lbl_8040E120:
 	.4byte 0x3DA14285
 	.4byte 0x41200000
 
-.global lbl_8040E150
-lbl_8040E150:
+.global "@16337"
+"@16337":
 
 	.4byte 0x43300000
 	.4byte 0x80000000

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018B57C
-lbl_8018B57C:
+.global "copyXFB__24@unnamed@XFBRestore_cpp@FPUcPUcUl"
+"copyXFB__24@unnamed@XFBRestore_cpp@FPUcPUcUl":
 /* 8018B57C 001873BC  39 20 00 00 */	li r9, 0x0
 /* 8018B580 001873C0  38 05 00 01 */	addi r0, r5, 0x1
 /* 8018B584 001873C4  54 00 F8 7E */	srwi r0, r0, 1
@@ -26,9 +26,9 @@ lbl_8018B594:
 .global lbl_8018B5C4
 lbl_8018B5C4:
 /* 8018B5C4 00187404  7C A4 2B 78 */	mr r4, r5
-/* 8018B5C8 00187408  4B E9 13 B8 */	b lbl_8001C980
-.global lbl_8018B5CC
-lbl_8018B5CC:
+/* 8018B5C8 00187408  4B E9 13 B8 */	b DCFlushRange
+.global __ct__Q26freeze10XFBRestoreFPUcPUc
+__ct__Q26freeze10XFBRestoreFPUcPUc:
 /* 8018B5CC 0018740C  38 00 00 00 */	li r0, 0x0
 /* 8018B5D0 00187410  98 03 00 00 */	stb r0, 0x0(r3)
 /* 8018B5D4 00187414  90 83 00 04 */	stw r4, 0x4(r3)
@@ -41,8 +41,8 @@ lbl_8018B5CC:
 /* 8018B5F0 00187430  90 03 00 20 */	stw r0, 0x20(r3)
 /* 8018B5F4 00187434  90 03 00 24 */	stw r0, 0x24(r3)
 /* 8018B5F8 00187438  4E 80 00 20 */	blr
-.global lbl_8018B5FC
-lbl_8018B5FC:
+.global init__Q26freeze10XFBRestoreFv
+init__Q26freeze10XFBRestoreFv:
 /* 8018B5FC 0018743C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018B600 00187440  7C 08 02 A6 */	mflr r0
 /* 8018B604 00187444  90 01 00 14 */	stw r0, 0x14(r1)
@@ -52,7 +52,7 @@ lbl_8018B5FC:
 /* 8018B614 00187454  38 00 00 01 */	li r0, 0x1
 /* 8018B618 00187458  98 03 00 00 */	stb r0, 0x0(r3)
 /* 8018B61C 0018745C  83 E3 00 04 */	lwz r31, 0x4(r3)
-/* 8018B620 00187460  4B EA 28 C1 */	bl lbl_8002DEE0
+/* 8018B620 00187460  4B EA 28 C1 */	bl VIGetCurrentFrameBuffer
 /* 8018B624 00187464  7C 1F 18 40 */	cmplw r31, r3
 /* 8018B628 00187468  40 82 00 14 */	bne lbl_8018B63C
 /* 8018B62C 0018746C  93 FE 00 0C */	stw r31, 0xc(r30)
@@ -67,7 +67,7 @@ lbl_8018B63C:
 /* 8018B648 00187488  90 1E 00 10 */	stw r0, 0x10(r30)
 .global lbl_8018B64C
 lbl_8018B64C:
-/* 8018B64C 0018748C  80 6D ED 08 */	lwz r3, lbl_8055D128@sda21(r13)
+/* 8018B64C 0018748C  80 6D ED 08 */	lwz r3, "object___Q33hel6common35ExplicitSingleton<Q23gfx9VISetting>"@sda21(r13)
 /* 8018B650 00187490  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8018B654 00187494  90 7E 00 14 */	stw r3, 0x14(r30)
 /* 8018B658 00187498  A0 83 00 04 */	lhz r4, 0x4(r3)
@@ -83,7 +83,7 @@ lbl_8018B64C:
 /* 8018B680 001874C0  90 BE 00 24 */	stw r5, 0x24(r30)
 /* 8018B684 001874C4  80 7E 00 10 */	lwz r3, 0x10(r30)
 /* 8018B688 001874C8  80 9E 00 0C */	lwz r4, 0xc(r30)
-/* 8018B68C 001874CC  4B FF FE F1 */	bl lbl_8018B57C
+/* 8018B68C 001874CC  4B FF FE F1 */	bl "copyXFB__24@unnamed@XFBRestore_cpp@FPUcPUcUl"
 /* 8018B690 001874D0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8018B694 001874D4  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 8018B698 001874D8  80 01 00 14 */	lwz r0, 0x14(r1)

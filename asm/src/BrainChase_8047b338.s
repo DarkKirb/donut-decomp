@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047B338
-lbl_8047B338:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateAngerChase,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateAngerChase,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D96FC
-	.4byte lbl_802D969C
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateAngerChase,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateAngerChase,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047B348
-lbl_8047B348:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802D96F8
-	.4byte lbl_802D96B8
-
-.global lbl_8047B358
-lbl_8047B358:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateFaceChange,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateFaceChange,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D96F4
-	.4byte lbl_802D96D4
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateFaceChange,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy15StateFaceChange,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047B368
-lbl_8047B368:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy10StateChase,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy10StateChase,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D96F0
-	.4byte lbl_802D94DC
-	.4byte lbl_802D9558
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy10StateChase,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6scarfy10StateChase,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy6scarfy10BrainChase
+__vt__Q53scn4step5enemy6scarfy10BrainChase:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6scarfy10BrainChaseFv
+	.4byte onStart__Q53scn4step5enemy6scarfy10BrainChaseFv
+	.4byte onRecover__Q53scn4step5enemy6scarfy10BrainChaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

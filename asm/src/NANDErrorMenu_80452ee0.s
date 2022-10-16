@@ -1,23 +1,23 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80452EE0
-lbl_80452EE0:
+.global "@51882_80452EE0"
+"@51882_80452EE0":
 
 	.4byte 0x72657369
 	.4byte 0x64656E74
 	.4byte 0x2F4D6169
 	.4byte 0x6E000000
 
-.global lbl_80452EF0
-lbl_80452EF0:
+.global "@53133_80452EF0"
+"@53133_80452EF0":
 
 	.4byte 0x4E414E44
 	.4byte 0x4572726F
 	.4byte 0x72000000
 
-.global lbl_80452EFC
-lbl_80452EFC:
+.global "@53141_80452EFC"
+"@53141_80452EFC":
 
 	.4byte 0x4E414E44
 	.4byte 0x4572726F
@@ -60,8 +60,8 @@ lbl_80452EFC:
 	.4byte 0x74546578
 	.4byte 0x74000000
 
-.global lbl_80452F9C
-lbl_80452F9C:
+.global "@53323"
+"@53323":
 
 	.4byte lbl_8017A0E8
 	.4byte lbl_8017A074
@@ -75,23 +75,23 @@ lbl_80452F9C:
 	.4byte lbl_8017A0E8
 	.4byte lbl_8017A0AC
 
-.global lbl_80452FC8
-lbl_80452FC8:
+.global "@53362_80452FC8"
+"@53362_80452FC8":
 
 	.4byte 0x53617665
 	.4byte 0x43686563
 	.4byte 0x6B427574
 	.4byte 0x746F6E00
 
-.global lbl_80452FD8
-lbl_80452FD8:
+.global "@53374"
+"@53374":
 
 	.4byte 0x4E6F4368
 	.4byte 0x6F696365
 	.4byte 0
 
-.global lbl_80452FE4
-lbl_80452FE4:
+.global "@53377"
+"@53377":
 
 	.4byte 0x42757474
 	.4byte 0x6F6E5465

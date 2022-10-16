@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80016BDC
-lbl_80016BDC:
-/* 80016BDC 00012A1C  3C 40 80 49 */	lis r2, lbl_80498C68@h
-/* 80016BE0 00012A20  60 42 8C 68 */	ori r2, r2, lbl_80498C68@l
+.global TRKSaveExtended1Block
+TRKSaveExtended1Block:
+/* 80016BDC 00012A1C  3C 40 80 49 */	lis r2, gTRKCPUState@h
+/* 80016BE0 00012A20  60 42 8C 68 */	ori r2, r2, gTRKCPUState@l
 /* 80016BE4 00012A24  7E 00 04 A6 */	mfsr r16, 0
 /* 80016BE8 00012A28  7E 21 04 A6 */	mfsr r17, 1
 /* 80016BEC 00012A2C  7E 42 04 A6 */	mfsr r18, 2
@@ -116,12 +116,12 @@ lbl_80016BDC:
 /* 80016D94 00012BD4  7F FB E2 A6 */	mfspr r31, DMA_L
 /* 80016D98 00012BD8  BE 82 02 FC */	stmw r20, 0x2fc(r2)
 /* 80016D9C 00012BDC  4E 80 00 20 */	blr
-.global lbl_80016DA0
-lbl_80016DA0:
-/* 80016DA0 00012BE0  3C 40 80 49 */	lis r2, lbl_80498C68@h
-/* 80016DA4 00012BE4  60 42 8C 68 */	ori r2, r2, lbl_80498C68@l
-/* 80016DA8 00012BE8  3C A0 80 49 */	lis r5, lbl_80498AF0@h
-/* 80016DAC 00012BEC  60 A5 8A F0 */	ori r5, r5, lbl_80498AF0@l
+.global TRKRestoreExtended1Block
+TRKRestoreExtended1Block:
+/* 80016DA0 00012BE0  3C 40 80 49 */	lis r2, gTRKCPUState@h
+/* 80016DA4 00012BE4  60 42 8C 68 */	ori r2, r2, gTRKCPUState@l
+/* 80016DA8 00012BE8  3C A0 80 49 */	lis r5, gTRKRestoreFlags@h
+/* 80016DAC 00012BEC  60 A5 8A F0 */	ori r5, r5, gTRKRestoreFlags@l
 /* 80016DB0 00012BF0  88 65 00 00 */	lbz r3, 0x0(r5)
 /* 80016DB4 00012BF4  88 C5 00 01 */	lbz r6, 0x1(r5)
 /* 80016DB8 00012BF8  38 00 00 00 */	li r0, 0x0

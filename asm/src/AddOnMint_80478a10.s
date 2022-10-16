@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80478A10
-lbl_80478A10:
+.global "@55828_80478A10"
+"@55828_80478A10":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -43,37 +43,37 @@ lbl_80478A10:
 	.4byte 0x74282900
 	.4byte 0
 
-.global lbl_80478AA8
-lbl_80478AA8:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer11StateAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C1B00
-	.4byte lbl_802C1A84
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80478AB8
-lbl_80478AB8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802C1AFC
-	.4byte lbl_802C1AA0
-
-.global lbl_80478AC8
-lbl_80478AC8:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer15StateWalkAround,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer15StateWalkAround,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C1AF8
-	.4byte lbl_802C1ABC
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer15StateWalkAround,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer15StateWalkAround,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80478AD8
-lbl_80478AD8:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWalk,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWalk,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C1AF4
-	.4byte lbl_802C1AD8
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWait,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWait,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWait,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6lanzer9StateWait,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

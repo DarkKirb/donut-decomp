@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80469A90
-lbl_80469A90:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros12StateCapture,PQ43scn4step4boss4Boss>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros12StateCapture,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025A810
-	.4byte lbl_8025A7F4
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros12StateCapture,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros12StateCapture,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80469AA0
-lbl_80469AA0:
+.global __vt__Q53scn4step4boss13watergalboros18StateCaptureAttack
+__vt__Q53scn4step4boss13watergalboros18StateCaptureAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025A4A4
-	.4byte lbl_8025A51C
-	.4byte lbl_8025A740
-	.4byte lbl_802344FC
-	.4byte lbl_80234500
-	.4byte lbl_8025A744
+	.4byte __dt__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.4byte procAnim__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.4byte procMove__Q53scn4step4boss13watergalboros18StateCaptureAttackFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q43scn4step4boss9StateBaseFv
+	.4byte procObjCollReact__Q53scn4step4boss13watergalboros18StateCaptureAttackFv

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556438
-lbl_80556438:
+.global __RTTI__Q23std13bad_exception
+__RTTI__Q23std13bad_exception:
 
-	.4byte lbl_80406598
-	.4byte lbl_804210D8
+	.4byte "@1152"
+	.4byte "@1153"

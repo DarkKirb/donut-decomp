@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047EBD0
-lbl_8047EBD0:
+.global "@50126_8047EBD0"
+"@50126_8047EBD0":
 
 	.4byte 0x46616C6C
 	.4byte 0x5369676E
 	.4byte 0
 
-.global lbl_8047EBDC
-lbl_8047EBDC:
+.global "@50128_8047EBDC"
+"@50128_8047EBDC":
 
 	.4byte 0x57686973
 	.4byte 0x70794170
@@ -21,8 +21,8 @@ lbl_8047EBDC:
 	.4byte 0x722E4578
 	.4byte 0x65630000
 
-.global lbl_8047EC00
-lbl_8047EC00:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy11whispyapple23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy11whispyapple23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -59,7 +59,7 @@ lbl_8047EC00:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8047EBDC
+	.4byte "@50128_8047EBDC"
 	.4byte 0
 	.4byte 0
 	.4byte 0

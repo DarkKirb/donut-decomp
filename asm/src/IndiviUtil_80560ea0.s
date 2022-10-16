@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_80560EA0
-lbl_80560EA0:
+.global "T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"
+"T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@":
 
-	.4byte lbl_802ED6F4
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
 
-.global lbl_80560EA4
-lbl_80560EA4:
+.global "T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"
+"T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@":
 
-	.4byte lbl_8029174C
+	.4byte Create__Q53scn4step5enemy6common9ParamBaseFv

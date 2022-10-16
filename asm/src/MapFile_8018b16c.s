@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018B16C
-lbl_8018B16C:
-/* 8018B16C 00186FAC  80 6D ED 80 */	lwz r3, lbl_8055D1A0@sda21(r13)
+.global MapFile_Exists__6freezeFv
+MapFile_Exists__6freezeFv:
+/* 8018B16C 00186FAC  80 6D ED 80 */	lwz r3, sMapFileList__6freeze@sda21(r13)
 /* 8018B170 00186FB0  30 03 FF FF */	addic r0, r3, -0x1
 /* 8018B174 00186FB4  7C 60 19 10 */	subfe r3, r0, r3
 /* 8018B178 00186FB8  4E 80 00 20 */	blr
-.global lbl_8018B17C
-lbl_8018B17C:
+.global SearchNextLine___6freezeFPUcl
+SearchNextLine___6freezeFPUcl:
 /* 8018B17C 00186FBC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018B180 00186FC0  40 82 00 30 */	bne lbl_8018B1B0
 /* 8018B184 00186FC4  38 60 00 00 */	li r3, 0x0
@@ -33,8 +33,8 @@ lbl_8018B1B0:
 /* 8018B1B8 00186FF8  40 82 FF D8 */	bne lbl_8018B190
 /* 8018B1BC 00186FFC  38 60 00 00 */	li r3, 0x0
 /* 8018B1C0 00187000  4E 80 00 20 */	blr
-.global lbl_8018B1C4
-lbl_8018B1C4:
+.global XStrToU32___6freezeFPCUc
+XStrToU32___6freezeFPCUc:
 /* 8018B1C4 00187004  38 00 00 00 */	li r0, 0x0
 /* 8018B1C8 00187008  3C 80 10 00 */	lis r4, 0x1000
 .global lbl_8018B1CC
@@ -79,8 +79,8 @@ lbl_8018B230:
 /* 8018B238 00187078  38 63 00 01 */	addi r3, r3, 0x1
 /* 8018B23C 0018707C  4B FF FF 90 */	b lbl_8018B1CC
 /* 8018B240 00187080  4E 80 00 20 */	blr
-.global lbl_8018B244
-lbl_8018B244:
+.global MapFile_QuerySymbol__6freezeFUlPUcUl
+MapFile_QuerySymbol__6freezeFUlPUcUl:
 /* 8018B244 00187084  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8018B248 00187088  7C 08 02 A6 */	mflr r0
 /* 8018B24C 0018708C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -89,14 +89,14 @@ lbl_8018B244:
 /* 8018B258 00187098  7C 7D 1B 78 */	mr r29, r3
 /* 8018B25C 0018709C  7C 9E 23 78 */	mr r30, r4
 /* 8018B260 001870A0  7C BF 2B 78 */	mr r31, r5
-/* 8018B264 001870A4  80 6D ED 80 */	lwz r3, lbl_8055D1A0@sda21(r13)
+/* 8018B264 001870A4  80 6D ED 80 */	lwz r3, sMapFileList__6freeze@sda21(r13)
 /* 8018B268 001870A8  82 E3 00 00 */	lwz r23, 0x0(r3)
 /* 8018B26C 001870AC  3B 80 00 00 */	li r28, 0x0
 .global lbl_8018B270
 lbl_8018B270:
 /* 8018B270 001870B0  7E E3 BB 78 */	mr r3, r23
 /* 8018B274 001870B4  38 80 00 01 */	li r4, 0x1
-/* 8018B278 001870B8  4B FF FF 05 */	bl lbl_8018B17C
+/* 8018B278 001870B8  4B FF FF 05 */	bl SearchNextLine___6freezeFPUcl
 /* 8018B27C 001870BC  7C 77 1B 78 */	mr r23, r3
 /* 8018B280 001870C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018B284 001870C4  40 82 00 0C */	bne lbl_8018B290
@@ -111,13 +111,13 @@ lbl_8018B290:
 lbl_8018B29C:
 /* 8018B29C 001870DC  7E E3 BB 78 */	mr r3, r23
 /* 8018B2A0 001870E0  38 80 00 03 */	li r4, 0x3
-/* 8018B2A4 001870E4  4B FF FE D9 */	bl lbl_8018B17C
+/* 8018B2A4 001870E4  4B FF FE D9 */	bl SearchNextLine___6freezeFPUcl
 /* 8018B2A8 001870E8  7C 77 1B 78 */	mr r23, r3
 .global lbl_8018B2AC
 lbl_8018B2AC:
 /* 8018B2AC 001870EC  7E E3 BB 78 */	mr r3, r23
 /* 8018B2B0 001870F0  38 80 00 01 */	li r4, 0x1
-/* 8018B2B4 001870F4  4B FF FE C9 */	bl lbl_8018B17C
+/* 8018B2B4 001870F4  4B FF FE C9 */	bl SearchNextLine___6freezeFPUcl
 /* 8018B2B8 001870F8  7C 77 1B 78 */	mr r23, r3
 /* 8018B2BC 001870FC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018B2C0 00187100  40 82 00 0C */	bne lbl_8018B2CC
@@ -162,13 +162,13 @@ lbl_8018B318:
 .global lbl_8018B334
 lbl_8018B334:
 /* 8018B334 00187174  7F 03 C3 78 */	mr r3, r24
-/* 8018B338 00187178  4B FF FE 8D */	bl lbl_8018B1C4
+/* 8018B338 00187178  4B FF FE 8D */	bl XStrToU32___6freezeFPCUc
 /* 8018B33C 0018717C  7C 7A 1B 78 */	mr r26, r3
 /* 8018B340 00187180  48 00 00 14 */	b lbl_8018B354
 .global lbl_8018B344
 lbl_8018B344:
 /* 8018B344 00187184  7F 03 C3 78 */	mr r3, r24
-/* 8018B348 00187188  4B FF FE 7D */	bl lbl_8018B1C4
+/* 8018B348 00187188  4B FF FE 7D */	bl XStrToU32___6freezeFPCUc
 /* 8018B34C 0018718C  7C 7B 1B 78 */	mr r27, r3
 /* 8018B350 00187190  48 00 00 14 */	b lbl_8018B364
 .global lbl_8018B354

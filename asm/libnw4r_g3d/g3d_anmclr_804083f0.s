@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804083F0
-lbl_804083F0:
+.global TYPE_NAME__Q34nw4r3g3d12AnmObjMatClr
+TYPE_NAME__Q34nw4r3g3d12AnmObjMatClr:
 
 	.4byte 0x0000000D
 	.4byte 0x416E6D4F
@@ -11,8 +11,8 @@ lbl_804083F0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80408408
-lbl_80408408:
+.global TYPE_NAME__Q34nw4r3g3d16AnmObjMatClrNode
+TYPE_NAME__Q34nw4r3g3d16AnmObjMatClrNode:
 
 	.4byte 0x00000011
 	.4byte 0x416E6D4F
@@ -21,8 +21,8 @@ lbl_80408408:
 	.4byte 0x4E6F6465
 	.4byte 0
 
-.global lbl_80408420
-lbl_80408420:
+.global TYPE_NAME__Q34nw4r3g3d20AnmObjMatClrOverride
+TYPE_NAME__Q34nw4r3g3d20AnmObjMatClrOverride:
 
 	.4byte 0x00000015
 	.4byte 0x416E6D4F
@@ -33,8 +33,8 @@ lbl_80408420:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80408440
-lbl_80408440:
+.global TYPE_NAME__Q34nw4r3g3d15AnmObjMatClrRes
+TYPE_NAME__Q34nw4r3g3d15AnmObjMatClrRes:
 
 	.4byte 0x00000010
 	.4byte 0x416E6D4F

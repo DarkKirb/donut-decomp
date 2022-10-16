@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8019B9A4
-lbl_8019B9A4:
-/* 8019B9A4 001977E4  C0 22 98 18 */	lfs f1, lbl_8055F798@sda21(r2)
+.global Zero__Q24gobj14MoveParamAccelFv
+Zero__Q24gobj14MoveParamAccelFv:
+/* 8019B9A4 001977E4  C0 22 98 18 */	lfs f1, "@48787_8055F798"@sda21(r2)
 /* 8019B9A8 001977E8  FC 40 08 90 */	fmr f2, f1
 /* 8019B9AC 001977EC  FC 60 08 90 */	fmr f3, f1
-/* 8019B9B0 001977F0  48 00 00 04 */	b lbl_8019B9B4
-.global lbl_8019B9B4
-lbl_8019B9B4:
+/* 8019B9B0 001977F0  48 00 00 04 */	b Create__Q24gobj14MoveParamAccelFfff
+.global Create__Q24gobj14MoveParamAccelFfff
+Create__Q24gobj14MoveParamAccelFfff:
 /* 8019B9B4 001977F4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8019B9B8 001977F8  38 00 00 00 */	li r0, 0x0
 /* 8019B9BC 001977FC  90 01 00 08 */	stw r0, 0x8(r1)

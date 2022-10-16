@@ -1,6 +1,6 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80496700
-lbl_80496700:
+.global fragmentinfo
+fragmentinfo:
 	.skip 0x180

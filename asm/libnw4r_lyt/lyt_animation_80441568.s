@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80441568
-lbl_80441568:
+.global __vt__Q34nw4r3lyt18AnimTransformBasic
+__vt__Q34nw4r3lyt18AnimTransformBasic:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800FC590
-	.4byte lbl_800FC660
-	.4byte lbl_800FC680
-	.4byte lbl_800FC800
-	.4byte lbl_800FC9D0
-	.4byte lbl_800FCAF0
-	.4byte lbl_800FCCD0
+	.4byte __dt__Q34nw4r3lyt18AnimTransformBasicFv
+	.4byte SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessor
+	.4byte SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessorUs
+	.4byte Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt4Panebb
+	.4byte Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt8Materialb
+	.4byte Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt4Pane
+	.4byte Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt8Material
 	.4byte 0

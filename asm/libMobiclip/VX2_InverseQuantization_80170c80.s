@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80170C80
-lbl_80170C80:
+.global VX2InverseQuantizationSet__FR14VX2DecoderDatai
+VX2InverseQuantizationSet__FR14VX2DecoderDatai:
 /* 80170C80 0016CAC0  3C A0 2A AB */	lis r5, 0x2aab
 /* 80170C84 0016CAC4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80170C88 0016CAC8  38 05 AA AB */	addi r0, r5, -0x5555
-/* 80170C8C 0016CACC  3C C0 80 41 */	lis r6, lbl_80413830@ha
+/* 80170C8C 0016CACC  3C C0 80 41 */	lis r6, VX2InverseQuantizer4x4@ha
 /* 80170C90 0016CAD0  7C A0 20 96 */	mulhw r5, r0, r4
 /* 80170C94 0016CAD4  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 80170C98 0016CAD8  38 C6 38 30 */	addi r6, r6, lbl_80413830@l
+/* 80170C98 0016CAD8  38 C6 38 30 */	addi r6, r6, VX2InverseQuantizer4x4@l
 /* 80170C9C 0016CADC  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 80170CA0 0016CAE0  39 20 00 02 */	li r9, 0x2
 /* 80170CA4 0016CAE4  39 06 00 00 */	addi r8, r6, 0x0

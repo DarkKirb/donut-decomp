@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8010DF10
-lbl_8010DF10:
+.global DetachSound__Q34nw4r3snd14SeqSoundHandleFv
+DetachSound__Q34nw4r3snd14SeqSoundHandleFv:
 /* 8010DF10 00109D50  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 8010DF14 00109D54  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8010DF18 00109D58  41 82 00 18 */	beq lbl_8010DF30

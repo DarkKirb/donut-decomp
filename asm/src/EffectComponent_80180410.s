@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80180410
-lbl_80180410:
+.global __ct__Q36effect6detail15EffectComponentFRQ36effect6detail15GenContextTableRQ36effect6detail17PolyEffectManagerRQ36effect6detail17PtclEffectManager
+__ct__Q36effect6detail15EffectComponentFRQ36effect6detail15GenContextTableRQ36effect6detail17PolyEffectManagerRQ36effect6detail17PtclEffectManager:
 /* 80180410 0017C250  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80180414 0017C254  90 A3 00 04 */	stw r5, 0x4(r3)
 /* 80180418 0017C258  90 C3 00 08 */	stw r6, 0x8(r3)

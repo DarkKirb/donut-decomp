@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80417550
-lbl_80417550:
+.global "T_OBVERSE_TABLE__Q53scn4step4boss6whispy23@unnamed@EnemyCtrl_cpp@"
+"T_OBVERSE_TABLE__Q53scn4step4boss6whispy23@unnamed@EnemyCtrl_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x00000155

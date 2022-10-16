@@ -1,11 +1,11 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801417D0
-lbl_801417D0:
+.global InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding
+InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding:
 /* 801417D0 0013D610  2C 04 00 00 */	cmpwi r4, 0x0
-/* 801417D4 0013D614  3C A0 80 44 */	lis r5, lbl_80445468@ha
-/* 801417D8 0013D618  38 A5 54 68 */	addi r5, r5, lbl_80445468@l
+/* 801417D4 0013D614  3C A0 80 44 */	lis r5, "@98"@ha
+/* 801417D8 0013D618  38 A5 54 68 */	addi r5, r5, "@98"@l
 /* 801417DC 0013D61C  41 82 00 18 */	beq lbl_801417F4
 /* 801417E0 0013D620  2C 04 00 01 */	cmpwi r4, 0x1
 /* 801417E4 0013D624  41 82 00 30 */	beq lbl_80141814

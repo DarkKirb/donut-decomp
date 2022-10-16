@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D0D8
-lbl_8055D0D8:
+.global MOiAllocator
+MOiAllocator:
 	.skip 0x4
 
-.global lbl_8055D0DC
-lbl_8055D0DC:
+.global MOiAllocated
+MOiAllocated:
 	.skip 0x4
 
-.global lbl_8055D0E0
-lbl_8055D0E0:
+.global MOiNbAllocated
+MOiNbAllocated:
 	.skip 0x4
 
-.global lbl_8055D0E4
-lbl_8055D0E4:
+.global MOiMaxAllocated
+MOiMaxAllocated:
 	.skip 0x4

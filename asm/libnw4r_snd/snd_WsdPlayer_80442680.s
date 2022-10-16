@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442680
-lbl_80442680:
+.global __vt__Q44nw4r3snd6detail9WsdPlayer
+__vt__Q44nw4r3snd6detail9WsdPlayer:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8011E420
-	.4byte lbl_8011EDE0
-	.4byte lbl_8011EDF0
-	.4byte lbl_8011EF20
-	.4byte lbl_8011FAC0
-	.4byte lbl_8011FAA0
-	.4byte lbl_8011FA80
+	.4byte __dt__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Start__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Stop__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte Pause__Q44nw4r3snd6detail9WsdPlayerFb
+	.4byte IsActive__Q44nw4r3snd6detail9WsdPlayerCFv
+	.4byte IsStarted__Q44nw4r3snd6detail9WsdPlayerCFv
+	.4byte IsPause__Q44nw4r3snd6detail9WsdPlayerCFv
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8011FB00
-	.4byte lbl_8011FAF0
-	.4byte lbl_8011FAE0
+	.4byte "@180@__dt__Q44nw4r3snd6detail9WsdPlayerFv"
+	.4byte "@180@InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv"
+	.4byte "@180@InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8011FB30
-	.4byte lbl_8011FB20
-	.4byte lbl_80109E20
-	.4byte lbl_8011FB10
-	.4byte lbl_8011F000
-	.4byte lbl_8011FA70
-	.4byte lbl_8011FA50
-	.4byte lbl_8011FA60
+	.4byte "@192@__dt__Q44nw4r3snd6detail9WsdPlayerFv"
+	.4byte "@192@OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv"
+	.4byte OnUpdateVoiceSoundThread__Q54nw4r3snd6detail11SoundThread14PlayerCallbackFv
+	.4byte "@192@OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv"
+	.4byte InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv
+	.4byte OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv
+	.4byte OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv

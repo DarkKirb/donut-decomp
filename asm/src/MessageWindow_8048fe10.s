@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048FE10
-lbl_8048FE10:
+.global "@57430"
+"@57430":
 
 	.4byte 0x73746570
 	.4byte 0x2F67616D
@@ -16,46 +16,46 @@ lbl_8048FE10:
 	.4byte 0x7574746F
 	.4byte 0x6E4E0000
 
-.global lbl_8048FE3C
-lbl_8048FE3C:
+.global "@57579_8048FE3C"
+"@57579_8048FE3C":
 
 	.4byte 0x4D657373
 	.4byte 0x61676554
 	.4byte 0x65787400
 
-.global lbl_8048FE48
-lbl_8048FE48:
+.global "@57580"
+"@57580":
 
 	.4byte 0x4D657373
 	.4byte 0x61676554
 	.4byte 0x6578745F
 	.4byte 0x53680000
 
-.global lbl_8048FE58
-lbl_8048FE58:
+.global "@57614_8048FE58"
+"@57614_8048FE58":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803AEDE0
+	.4byte processMessage__Q43scn4step4info13MessageWindowFUl
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803AEDE0
+	.4byte processMessage__Q43scn4step4info13MessageWindowFUl
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803AEDE0
+	.4byte processMessage__Q43scn4step4info13MessageWindowFUl
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803AF1FC
+	.4byte actionCallbackIN__Q43scn4step4info13MessageWindowFPCcPCc
 
-.global lbl_8048FE88
-lbl_8048FE88:
+.global "@57820"
+"@57820":
 
 	.4byte 0x4D61686F
 	.4byte 0x726F614E
 	.4byte 0x616D6500
 
-.global lbl_8048FE94
-lbl_8048FE94:
+.global "@57831"
+"@57831":
 
 	.4byte 0x6261645F
 	.4byte 0x66756E63
@@ -63,31 +63,15 @@ lbl_8048FE94:
 	.4byte 0x5F63616C
 	.4byte 0x6C000000
 
-.global lbl_8048FEA8
-lbl_8048FEA8:
+.global "__vt__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>"
+"__vt__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803AF644
-	.4byte lbl_803AF30C
-	.4byte lbl_803AF34C
-	.4byte lbl_803AF368
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-
-.global lbl_8048FED8
-lbl_8048FED8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803AF640
-	.4byte lbl_803AF36C
-	.4byte lbl_803AF3AC
-	.4byte lbl_803AF3C8
+	.4byte "__dt__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>Fv"
+	.4byte "clone__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>CFv"
+	.4byte "clone__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>CFPv"
+	.4byte "__cl__Q43std3tr16detail367function_imp<PFPCcPCc_v,Q43std3tr16detail318bound_func<v,Q43std3tr16detail51mem_fn_2<v,Q43scn4step4info13MessageWindow,PCc,PCc>,Q33std3tr1220tuple<PQ43scn4step4info13MessageWindow,Q53std3tr112placeholders6detail5ph<1>,Q53std3tr112placeholders6detail5ph<2>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,1>FPCcPCc"
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -95,25 +79,41 @@ lbl_8048FED8:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8048FF08
-lbl_8048FF08:
+.global "__vt__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803AF63C
-	.4byte lbl_803AF3D0
-	.4byte lbl_803AF410
-	.4byte lbl_803AF42C
+	.4byte "__dt__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail298function_imp<PFv_v,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
-.global lbl_8048FF20
-lbl_8048FF20:
+.global "__vt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803AF638
-	.4byte lbl_803AF458
-	.4byte lbl_803AF498
-	.4byte lbl_803AF4B4
+	.4byte "__dt__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail298function_imp<PFv_b,Q43std3tr16detail254bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1161tuple<PQ43scn4step4info13MessageWindow,i,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+
+.global "__vt__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail299function_imp<PFv_b,Q43std3tr16detail255bound_func<b,Q43std3tr16detail46mem_fn_1<b,Q43scn4step4info13MessageWindow,Ul>,Q33std3tr1162tuple<PQ43scn4step4info13MessageWindow,Ul,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

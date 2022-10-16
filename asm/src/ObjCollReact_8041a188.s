@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8041A188
-lbl_8041A188:
+.global "T_HITEFFECT_TABLE__Q43scn4step4hero26@unnamed@ObjCollReact_cpp@"
+"T_HITEFFECT_TABLE__Q43scn4step4hero26@unnamed@ObjCollReact_cpp@":
 
 	.4byte 0x00000077
 	.4byte 0x00000071
@@ -30,8 +30,8 @@ lbl_8041A188:
 	.4byte 0x00000077
 	.4byte 0x00000076
 
-.global lbl_8041A1EC
-lbl_8041A1EC:
+.global "T_HITSE_TABLE__Q43scn4step4hero26@unnamed@ObjCollReact_cpp@"
+"T_HITSE_TABLE__Q43scn4step4hero26@unnamed@ObjCollReact_cpp@":
 
 	.4byte 0x000000A2
 	.4byte 0x000000A2

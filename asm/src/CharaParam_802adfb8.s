@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802ADFB8
-lbl_802ADFB8:
+.global Create__Q53scn4step5enemy8dubiorjr10CharaParamFv
+Create__Q53scn4step5enemy8dubiorjr10CharaParamFv:
 /* 802ADFB8 002A9DF8  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 802ADFBC 002A9DFC  7C 08 02 A6 */	mflr r0
 /* 802ADFC0 002A9E00  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 802ADFC4 002A9E04  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 802ADFC8 002A9E08  7C 7F 1B 78 */	mr r31, r3
 /* 802ADFCC 002A9E0C  38 61 00 08 */	addi r3, r1, 0x8
-/* 802ADFD0 002A9E10  4B FE 37 7D */	bl lbl_8029174C
+/* 802ADFD0 002A9E10  4B FE 37 7D */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802ADFD4 002A9E14  38 A1 00 54 */	addi r5, r1, 0x54
 /* 802ADFD8 002A9E18  38 81 00 04 */	addi r4, r1, 0x4
 /* 802ADFDC 002A9E1C  38 00 00 0A */	li r0, 0xa
@@ -21,7 +21,7 @@ lbl_802ADFE4:
 /* 802ADFEC 002A9E2C  90 65 00 04 */	stw r3, 0x4(r5)
 /* 802ADFF0 002A9E30  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 802ADFF4 002A9E34  42 00 FF F0 */	bdnz lbl_802ADFE4
-/* 802ADFF8 002A9E38  C0 02 B8 30 */	lfs f0, lbl_805617B0@sda21(r2)
+/* 802ADFF8 002A9E38  C0 02 B8 30 */	lfs f0, "@48778_805617B0"@sda21(r2)
 /* 802ADFFC 002A9E3C  D0 01 00 64 */	stfs f0, 0x64(r1)
 /* 802AE000 002A9E40  38 00 00 01 */	li r0, 0x1
 /* 802AE004 002A9E44  90 01 00 6C */	stw r0, 0x6c(r1)

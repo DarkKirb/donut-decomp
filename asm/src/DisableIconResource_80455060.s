@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80455060
-lbl_80455060:
+.global DISABLE_ICON_TPL_RESOURCE__3hbm
+DISABLE_ICON_TPL_RESOURCE__3hbm:
 
 	.4byte 0x0020AF30
 	.4byte 0x00000001

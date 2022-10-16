@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801920E8
-lbl_801920E8:
-/* 801920E8 0018DF28  80 6D ED 00 */	lwz r3, lbl_8055D120@sda21(r13)
-/* 801920EC 0018DF2C  48 02 D5 04 */	b lbl_801BF5F0
-.global lbl_801920F0
-lbl_801920F0:
+.global DefaultAllocator__Q23g3d12ModelContextFv
+DefaultAllocator__Q23g3d12ModelContextFv:
+/* 801920E8 0018DF28  80 6D ED 00 */	lwz r3, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
+/* 801920EC 0018DF2C  48 02 D5 04 */	b sceneHeap__Q23mem6MemoryFv
+.global DefaultModelBufferOption__Q23g3d12ModelContextFv
+DefaultModelBufferOption__Q23g3d12ModelContextFv:
 /* 801920F0 0018DF30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801920F4 0018DF34  7C 08 02 A6 */	mflr r0
 /* 801920F8 0018DF38  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801920FC 0018DF3C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80192100 0018DF40  7C 7F 1B 78 */	mr r31, r3
-/* 80192104 0018DF44  4B FF FE 2D */	bl lbl_80191F30
+/* 80192104 0018DF44  4B FF FE 2D */	bl __ct__Q23g3d17ModelBufferOptionFv
 /* 80192108 0018DF48  7F E3 FB 78 */	mr r3, r31
-/* 8019210C 0018DF4C  4B FF FE 6D */	bl lbl_80191F78
+/* 8019210C 0018DF4C  4B FF FE 6D */	bl addAnimMatColor__Q23g3d17ModelBufferOptionFv
 /* 80192110 0018DF50  7F E3 FB 78 */	mr r3, r31
-/* 80192114 0018DF54  4B FF FE 75 */	bl lbl_80191F88
+/* 80192114 0018DF54  4B FF FE 75 */	bl addAnimTexPattern__Q23g3d17ModelBufferOptionFv
 /* 80192118 0018DF58  7F E3 FB 78 */	mr r3, r31
-/* 8019211C 0018DF5C  4B FF FE 7D */	bl lbl_80191F98
+/* 8019211C 0018DF5C  4B FF FE 7D */	bl addAnimTexSRT__Q23g3d17ModelBufferOptionFv
 /* 80192120 0018DF60  7F E3 FB 78 */	mr r3, r31
-/* 80192124 0018DF64  4B FF FE 81 */	bl lbl_80191FA4
+/* 80192124 0018DF64  4B FF FE 81 */	bl addAnimVisible__Q23g3d17ModelBufferOptionFv
 /* 80192128 0018DF68  38 00 00 01 */	li r0, 0x1
 /* 8019212C 0018DF6C  98 1F 00 0B */	stb r0, 0xb(r31)
 /* 80192130 0018DF70  98 1F 00 04 */	stb r0, 0x4(r31)
@@ -30,8 +30,8 @@ lbl_801920F0:
 /* 80192140 0018DF80  7C 08 03 A6 */	mtlr r0
 /* 80192144 0018DF84  38 21 00 10 */	addi r1, r1, 0x10
 /* 80192148 0018DF88  4E 80 00 20 */	blr
-.global lbl_8019214C
-lbl_8019214C:
+.global __ct__Q23g3d12ModelContextFRCQ23g3d15ResModelContextRCQ23g3d17ModelBufferOptionUlUlRQ23mem10IAllocatorb
+__ct__Q23g3d12ModelContextFRCQ23g3d15ResModelContextRCQ23g3d17ModelBufferOptionUlUlRQ23mem10IAllocatorb:
 /* 8019214C 0018DF8C  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 80192150 0018DF90  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80192154 0018DF94  7C 6B 1B 78 */	mr r11, r3

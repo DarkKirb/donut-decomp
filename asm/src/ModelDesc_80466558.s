@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80466558
-lbl_80466558:
+.global "@50131_80466558"
+"@50131_80466558":
 
 	.4byte 0x43413342
 	.4byte 0x6F64794A
 	.4byte 0
 
-.global lbl_80466564
-lbl_80466564:
+.global "@50132_80466564"
+"@50132_80466564":
 
 	.4byte 0x436F6E74
 	.4byte 0x726F6C32
 	.4byte 0x4C000000
-	.4byte lbl_80559028
-	.4byte lbl_80466558
-	.4byte lbl_80466564
+	.4byte "@50130_80559028"
+	.4byte "@50131_80466558"
+	.4byte "@50132_80466564"
 
-.global lbl_8046657C
-lbl_8046657C:
+.global "@50137_8046657C"
+"@50137_8046657C":
 
 	.4byte 0x4A756D70
 	.4byte 0x53746172
 	.4byte 0x74000000
 
-.global lbl_80466588
-lbl_80466588:
+.global "@50143_80466588"
+"@50143_80466588":
 
 	.4byte 0x466C6967
 	.4byte 0x68744661
 	.4byte 0x6C6C0000
 
-.global lbl_80466594
-lbl_80466594:
+.global "@50145_80466594"
+"@50145_80466594":
 
 	.4byte 0x476F6F64
 	.4byte 0x6279654C
 	.4byte 0x6F6F7000
 
-.global lbl_804665A0
-lbl_804665A0:
+.global "@50147_804665A0"
+"@50147_804665A0":
 
 	.4byte 0x43726564
 	.4byte 0x69744465
@@ -53,8 +53,8 @@ lbl_804665A0:
 	.4byte 0x2E457865
 	.4byte 0x63000000
 
-.global lbl_804665C8
-lbl_804665C8:
+.global "@50148_804665C8"
+"@50148_804665C8":
 
 	.4byte 0x43726564
 	.4byte 0x69744465
@@ -66,8 +66,8 @@ lbl_804665C8:
 	.4byte 0x73652E45
 	.4byte 0x78656300
 
-.global lbl_804665EC
-lbl_804665EC:
+.global "@50149_804665EC"
+"@50149_804665EC":
 
 	.4byte 0x43726564
 	.4byte 0x69744465
@@ -81,8 +81,8 @@ lbl_804665EC:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80466618
-lbl_80466618:
+.global "T_SCRIPT_ENTRIES__Q53scn4step4boss12creditdedede23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step4boss12creditdedede23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -119,17 +119,17 @@ lbl_80466618:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804665A0
+	.4byte "@50147_804665A0"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804665C8
+	.4byte "@50148_804665C8"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804665EC
+	.4byte "@50149_804665EC"
 	.4byte 0
 	.4byte 0
 	.4byte 0

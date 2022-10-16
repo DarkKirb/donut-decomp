@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800B4690
-lbl_800B4690:
+.global AddParticleCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3
+AddParticleCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3:
 /* 800B4690 000B04D0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B4694 000B04D4  7C 08 02 A6 */	mflr r0
 /* 800B4698 000B04D8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -105,8 +105,8 @@ lbl_800B47F4:
 /* 800B4804 000B0644  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B4808 000B0648  4E 80 00 20 */	blr
 /* 800B480C 000B064C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800B4810
-lbl_800B4810:
+.global AddEmitterCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3
+AddEmitterCreation__Q34nw4r2ef13CreationQueueFPCQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticlePQ34nw4r2ef15EmitterResourceUsPCQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3:
 /* 800B4810 000B0650  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B4814 000B0654  7C 08 02 A6 */	mflr r0
 /* 800B4818 000B0658  90 01 00 34 */	stw r0, 0x34(r1)
@@ -209,8 +209,8 @@ lbl_800B4978:
 /* 800B4984 000B07C4  7C 08 03 A6 */	mtlr r0
 /* 800B4988 000B07C8  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B498C 000B07CC  4E 80 00 20 */	blr
-.global lbl_800B4990
-lbl_800B4990:
+.global Execute__Q34nw4r2ef13CreationQueueFv
+Execute__Q34nw4r2ef13CreationQueueFv:
 /* 800B4990 000B07D0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B4994 000B07D4  7C 08 02 A6 */	mflr r0
 /* 800B4998 000B07D8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -244,7 +244,7 @@ lbl_800B49E4:
 /* 800B49F0 000B0830  80 66 00 C8 */	lwz r3, 0xc8(r6)
 /* 800B49F4 000B0834  A0 FF 00 02 */	lhz r7, 0x2(r31)
 /* 800B49F8 000B0838  80 63 00 20 */	lwz r3, 0x20(r3)
-/* 800B49FC 000B083C  4B FF 0E 35 */	bl lbl_800A5830
+/* 800B49FC 000B083C  4B FF 0E 35 */	bl CreateEmitterTmp__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3
 /* 800B4A00 000B0840  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 800B4A04 000B0844  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 800B4A08 000B0848  34 00 FF FF */	addic. r0, r0, -0x1

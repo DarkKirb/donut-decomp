@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80414C48
-lbl_80414C48:
+.global "addType_ConditionalStepM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalStepM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00002700
 	.4byte 0x01002700
 	.4byte 0x02002700
 
-.global lbl_80414C54
-lbl_80414C54:
+.global "addType_ConditionalStepHM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalStepHM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00000100
 	.4byte 0x01000100
 	.4byte 0x02000100
 
-.global lbl_80414C60
-lbl_80414C60:
+.global "addType_ConditionalStepL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalStepL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00002700
 	.4byte 0x01002700
@@ -24,8 +24,8 @@ lbl_80414C60:
 	.4byte 0x03002700
 	.4byte 0x04002700
 
-.global lbl_80414C74
-lbl_80414C74:
+.global "addType_ConditionalStepHL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalStepHL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00000100
 	.4byte 0x01000100
@@ -33,22 +33,22 @@ lbl_80414C74:
 	.4byte 0x03000100
 	.4byte 0x04000100
 
-.global lbl_80414C88
-lbl_80414C88:
+.global "addType_ConditionalCloudStepM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalCloudStepM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00002730
 	.4byte 0x01002730
 	.4byte 0x02002730
 
-.global lbl_80414C94
-lbl_80414C94:
+.global "addType_ConditionalCloudStepHM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalCloudStepHM__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00000130
 	.4byte 0x01000130
 	.4byte 0x02000130
 
-.global lbl_80414CA0
-lbl_80414CA0:
+.global "addType_ConditionalCloudStepL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalCloudStepL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00002730
 	.4byte 0x01002730
@@ -56,8 +56,8 @@ lbl_80414CA0:
 	.4byte 0x03002730
 	.4byte 0x04002730
 
-.global lbl_80414CB4
-lbl_80414CB4:
+.global "addType_ConditionalCloudStepHL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalCloudStepHL__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00000130
 	.4byte 0x01000130
@@ -65,16 +65,16 @@ lbl_80414CB4:
 	.4byte 0x03000130
 	.4byte 0x04000130
 
-.global lbl_80414CC8
-lbl_80414CC8:
+.global "addType_ConditionalChallengeMasterExDoor__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_ConditionalChallengeMasterExDoor__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00001A00
 	.4byte 0x01001A00
 	.4byte 0x02001A00
 	.4byte 0x03001A00
 
-.global lbl_80414CD8
-lbl_80414CD8:
+.global "addType_SIceVolcano__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@"
+"addType_SIceVolcano__Q35mcoll6detail29@unnamed@MoveGridManager_cpp@":
 
 	.4byte 0x00000100
 	.4byte 0x0E000100

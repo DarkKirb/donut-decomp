@@ -1,66 +1,66 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804535E8
-lbl_804535E8:
+.global __vt__Q34nw4r2ef13MemoryManager
+__vt__Q34nw4r2ef13MemoryManager:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80185DD0
-	.4byte lbl_80184EBC
-	.4byte lbl_80186588
-	.4byte lbl_80186538
-	.4byte lbl_801864E0
-	.4byte lbl_80185294
-	.4byte lbl_80185304
-	.4byte lbl_8018644C
-	.4byte lbl_801863FC
-	.4byte lbl_801863A4
-	.4byte lbl_801852B0
-	.4byte lbl_80185320
-	.4byte lbl_80186310
-	.4byte lbl_801862C0
-	.4byte lbl_80186268
-	.4byte lbl_801852CC
-	.4byte lbl_8018533C
-	.4byte lbl_801861C8
-	.4byte lbl_80186178
-	.4byte lbl_80186120
-	.4byte lbl_801852E8
-	.4byte lbl_80185358
-	.4byte lbl_80185C38
-	.4byte lbl_80185F48
+	.4byte __dt__Q34nw4r2ef13MemoryManagerFv
+	.4byte GarbageCollection__Q34nw4r2ef13MemoryManagerFv
+	.4byte AllocEffect__Q34nw4r2ef13MemoryManagerFv
+	.4byte FreeEffect__Q34nw4r2ef13MemoryManagerFPv
+	.4byte GetNumAllocEffect__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumActiveEffect__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumFreeEffect__Q34nw4r2ef13MemoryManagerCFv
+	.4byte AllocEmitter__Q34nw4r2ef13MemoryManagerFv
+	.4byte FreeEmitter__Q34nw4r2ef13MemoryManagerFPv
+	.4byte GetNumAllocEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumActiveEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumFreeEmitter__Q34nw4r2ef13MemoryManagerCFv
+	.4byte AllocParticleManager__Q34nw4r2ef13MemoryManagerFv
+	.4byte FreeParticleManager__Q34nw4r2ef13MemoryManagerFPv
+	.4byte GetNumAllocParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumActiveParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumFreeParticleManager__Q34nw4r2ef13MemoryManagerCFv
+	.4byte AllocParticle__Q34nw4r2ef13MemoryManagerFv
+	.4byte FreeParticle__Q34nw4r2ef13MemoryManagerFPv
+	.4byte GetNumAllocParticle__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumActiveParticle__Q34nw4r2ef13MemoryManagerCFv
+	.4byte GetNumFreeParticle__Q34nw4r2ef13MemoryManagerCFv
+	.4byte AllocHeap__Q34nw4r2ef13MemoryManagerFUl
+	.4byte FreeHeap__Q34nw4r2ef13MemoryManagerFPv
 
-.global lbl_80453650
-lbl_80453650:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80186258
-
-.global lbl_8045365C
-lbl_8045365C:
+.global "__vt__Q34nw4r2ef37MemoryManagerTmp<Q34nw4r2ef8Particle>"
+"__vt__Q34nw4r2ef37MemoryManagerTmp<Q34nw4r2ef8Particle>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801863A0
+	.4byte "AssignObjectID__Q34nw4r2ef37MemoryManagerTmp<Q34nw4r2ef8Particle>FPv"
 
-.global lbl_80453668
-lbl_80453668:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801864DC
-
-.global lbl_80453674
-lbl_80453674:
+.global "__vt__Q34nw4r2ef45MemoryManagerTmp<Q34nw4r2ef15ParticleManager>"
+"__vt__Q34nw4r2ef45MemoryManagerTmp<Q34nw4r2ef15ParticleManager>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80186618
+	.4byte "AssignObjectID__Q34nw4r2ef45MemoryManagerTmp<Q34nw4r2ef15ParticleManager>FPv"
 
-.global lbl_80453680
-lbl_80453680:
+.global "__vt__Q34nw4r2ef36MemoryManagerTmp<Q34nw4r2ef7Emitter>"
+"__vt__Q34nw4r2ef36MemoryManagerTmp<Q34nw4r2ef7Emitter>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "AssignObjectID__Q34nw4r2ef36MemoryManagerTmp<Q34nw4r2ef7Emitter>FPv"
+
+.global "__vt__Q34nw4r2ef35MemoryManagerTmp<Q34nw4r2ef6Effect>"
+"__vt__Q34nw4r2ef35MemoryManagerTmp<Q34nw4r2ef6Effect>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "AssignObjectID__Q34nw4r2ef35MemoryManagerTmp<Q34nw4r2ef6Effect>FPv"
+
+.global "@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@2"
+"@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -99,8 +99,8 @@ lbl_80453680:
 	.4byte 0x64657253
 	.4byte 0x697A6500
 
-.global lbl_80453710
-lbl_80453710:
+.global "@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@1"
+"@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@1":
 
 	.4byte 0x6D656D6F
 	.4byte 0x72796D61
@@ -108,8 +108,8 @@ lbl_80453710:
 	.4byte 0x72746D70
 	.4byte 0x2E680000
 
-.global lbl_80453724
-lbl_80453724:
+.global "@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@0"
+"@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A416C69
@@ -132,8 +132,8 @@ lbl_80453724:
 	.4byte 0x64617279
 	.4byte 0x2E000000
 
-.global lbl_80453774
-lbl_80453774:
+.global "@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii"
+"@STRING@__ct__Q34nw4r2ef13MemoryManagerFPvUliiii":
 
 	.4byte 0x6D656D6F
 	.4byte 0x72796D61
@@ -141,8 +141,8 @@ lbl_80453774:
 	.4byte 0x72746D70
 	.4byte 0x2E680000
 
-.global lbl_80453788
-lbl_80453788:
+.global "@STRING@AllocHeap__Q34nw4r2ef13MemoryManagerFUl@0"
+"@STRING@AllocHeap__Q34nw4r2ef13MemoryManagerFUl@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -152,8 +152,8 @@ lbl_80453788:
 	.4byte 0x6E206661
 	.4byte 0x6C736500
 
-.global lbl_804537A4
-lbl_804537A4:
+.global "@STRING@AllocHeap__Q34nw4r2ef13MemoryManagerFUl"
+"@STRING@AllocHeap__Q34nw4r2ef13MemoryManagerFUl":
 
 	.4byte 0x6D656D6F
 	.4byte 0x72796D61

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80440660
-lbl_80440660:
+.global "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"
+"ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@":
 
 	.4byte 0x0000000E
 	.4byte 0x4C696768
@@ -13,8 +13,8 @@ lbl_80440660:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440680
-lbl_80440680:
+.global "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"
+"ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@":
 
 	.4byte 0x0000000F
 	.4byte 0x416D624C
@@ -25,8 +25,8 @@ lbl_80440680:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804406A0
-lbl_804406A0:
+.global "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"
+"ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x4C696768
@@ -37,8 +37,8 @@ lbl_804406A0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804406C0
-lbl_804406C0:
+.global "ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"
+"ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@":
 
 	.4byte 0x0000000A
 	.4byte 0x466F6773
@@ -49,8 +49,8 @@ lbl_804406C0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804406E0
-lbl_804406E0:
+.global "ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"
+"ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@":
 
 	.4byte 0x0000000D
 	.4byte 0x43616D65

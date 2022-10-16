@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802AD2A0
-lbl_802AD2A0:
+.global __ct__Q53scn4step5enemy6degout6CustomFRQ43scn4step5enemy5Enemy
+__ct__Q53scn4step5enemy6degout6CustomFRQ43scn4step5enemy5Enemy:
 /* 802AD2A0 002A90E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802AD2A4 002A90E4  7C 08 02 A6 */	mflr r0
 /* 802AD2A8 002A90E8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802AD2AC 002A90EC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802AD2B0 002A90F0  7C 7F 1B 78 */	mr r31, r3
-/* 802AD2B4 002A90F4  4B FD 4B BD */	bl lbl_80281E70
-/* 802AD2B8 002A90F8  3C 60 80 47 */	lis r3, lbl_80475EF8@ha
-/* 802AD2BC 002A90FC  38 03 5E F8 */	addi r0, r3, lbl_80475EF8@l
+/* 802AD2B4 002A90F4  4B FD 4B BD */	bl __ct__Q43scn4step5enemy10CustomBaseFRQ43scn4step5enemy5Enemy
+/* 802AD2B8 002A90F8  3C 60 80 47 */	lis r3, __vt__Q53scn4step5enemy6degout6Custom@ha
+/* 802AD2BC 002A90FC  38 03 5E F8 */	addi r0, r3, __vt__Q53scn4step5enemy6degout6Custom@l
 /* 802AD2C0 002A9100  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 802AD2C4 002A9104  38 00 00 00 */	li r0, 0x0
 /* 802AD2C8 002A9108  98 1F 00 08 */	stb r0, 0x8(r31)
@@ -22,12 +22,12 @@ lbl_802AD2A0:
 /* 802AD2E0 002A9120  38 21 00 10 */	addi r1, r1, 0x10
 /* 802AD2E4 002A9124  4E 80 00 20 */	blr
 
-.global lbl_802AD2E8
-lbl_802AD2E8:
-/* 802AD2E8 002A9128  4B DA 6B 08 */	b lbl_80053DF0
+.global onInit__Q53scn4step5enemy6degout6CustomFv
+onInit__Q53scn4step5enemy6degout6CustomFv:
+/* 802AD2E8 002A9128  4B DA 6B 08 */	b __wpadNoAlloc
 
-.global lbl_802AD2EC
-lbl_802AD2EC:
+.global onDamaged__Q53scn4step5enemy6degout6CustomFv
+onDamaged__Q53scn4step5enemy6degout6CustomFv:
 /* 802AD2EC 002A912C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802AD2F0 002A9130  7C 08 02 A6 */	mflr r0
 /* 802AD2F4 002A9134  90 01 00 14 */	stw r0, 0x14(r1)
@@ -36,8 +36,8 @@ lbl_802AD2EC:
 /* 802AD300 002A9140  7C 7E 1B 78 */	mr r30, r3
 /* 802AD304 002A9144  3B E0 00 01 */	li r31, 0x1
 /* 802AD308 002A9148  9B E3 00 09 */	stb r31, 0x9(r3)
-/* 802AD30C 002A914C  4B E5 34 D5 */	bl lbl_801007E0
-/* 802AD310 002A9150  4B E7 3B 51 */	bl lbl_80120E60
+/* 802AD30C 002A914C  4B E5 34 D5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802AD310 002A9150  4B E7 3B 51 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 802AD314 002A9154  2C 03 00 7F */	cmpwi r3, 0x7f
 /* 802AD318 002A9158  40 82 00 08 */	bne lbl_802AD320
 /* 802AD31C 002A915C  9B FE 00 08 */	stb r31, 0x8(r30)
@@ -51,10 +51,10 @@ lbl_802AD320:
 /* 802AD334 002A9174  38 21 00 10 */	addi r1, r1, 0x10
 /* 802AD338 002A9178  4E 80 00 20 */	blr
 
-.global lbl_802AD33C
-lbl_802AD33C:
-/* 802AD33C 002A917C  4B FD 57 20 */	b lbl_80282A5C
+.global GetRuntimeTypeInfo__Q53scn4step5enemy6degout6CustomCFv
+GetRuntimeTypeInfo__Q53scn4step5enemy6degout6CustomCFv:
+/* 802AD33C 002A917C  4B FD 57 20 */	b "RuntimeTypeInfoImpl<Q53scn4step5enemy6degout6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 
-.global lbl_802AD340
-lbl_802AD340:
-/* 802AD340 002A9180  4B FE 92 90 */	b lbl_802965D0
+.global __dt__Q53scn4step5enemy6degout6CustomFv
+__dt__Q53scn4step5enemy6degout6CustomFv:
+/* 802AD340 002A9180  4B FE 92 90 */	b __dt__Q53scn4step5enemy8armordee6CustomFv

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011D270
-lbl_8011D270:
+.global __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader
+__ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader:
 /* 8011D270 001190B0  80 04 00 10 */	lwz r0, 0x10(r4)
 /* 8011D274 001190B4  38 A0 00 00 */	li r5, 0x0
 /* 8011D278 001190B8  90 A3 00 00 */	stw r5, 0x0(r3)
@@ -11,8 +11,8 @@ lbl_8011D270:
 /* 8011D284 001190C4  38 04 00 08 */	addi r0, r4, 0x8
 /* 8011D288 001190C8  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8011D28C 001190CC  4E 80 00 20 */	blr
-.global lbl_8011D290
-lbl_8011D290:
+.global ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
+ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv:
 /* 8011D290 001190D0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011D294 001190D4  7C 08 02 A6 */	mflr r0
 /* 8011D298 001190D8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -67,13 +67,13 @@ lbl_8011D2F0:
 /* 8011D334 00119174  98 04 00 04 */	stb r0, 0x4(r4)
 /* 8011D338 00119178  80 9B 00 00 */	lwz r4, 0x0(r27)
 /* 8011D33C 0011917C  80 84 00 08 */	lwz r4, 0x8(r4)
-/* 8011D340 00119180  4B FE 48 01 */	bl lbl_80101B40
+/* 8011D340 00119180  4B FE 48 01 */	bl GetSampleByDspAddress__Q44nw4r3snd6detail7AxVoiceFPCvUlQ34nw4r3snd12SampleFormat
 /* 8011D344 00119184  90 7D 00 10 */	stw r3, 0x10(r29)
 /* 8011D348 00119188  7F C5 F3 78 */	mr r5, r30
 /* 8011D34C 0011918C  38 60 00 00 */	li r3, 0x0
 /* 8011D350 00119190  80 9B 00 00 */	lwz r4, 0x0(r27)
 /* 8011D354 00119194  80 84 00 0C */	lwz r4, 0xc(r4)
-/* 8011D358 00119198  4B FE 47 E9 */	bl lbl_80101B40
+/* 8011D358 00119198  4B FE 47 E9 */	bl GetSampleByDspAddress__Q44nw4r3snd6detail7AxVoiceFPCvUlQ34nw4r3snd12SampleFormat
 /* 8011D35C 0011919C  38 03 00 01 */	addi r0, r3, 0x1
 /* 8011D360 001191A0  90 1D 00 14 */	stw r0, 0x14(r29)
 /* 8011D364 001191A4  3B FD 00 18 */	addi r31, r29, 0x18
@@ -126,7 +126,7 @@ lbl_8011D37C:
 lbl_8011D414:
 /* 8011D414 00119254  7F 63 DB 78 */	mr r3, r27
 /* 8011D418 00119258  7F 85 E3 78 */	mr r5, r28
-/* 8011D41C 0011925C  48 00 00 45 */	bl lbl_8011D460
+/* 8011D41C 0011925C  48 00 00 45 */	bl GetWaveDataAddress__Q44nw4r3snd6detail14WaveFileReaderCFPCQ54nw4r3snd6detail8WaveFile15WaveChannelInfoPCv
 /* 8011D420 00119260  90 7F 00 00 */	stw r3, 0x0(r31)
 .global lbl_8011D424
 lbl_8011D424:
@@ -147,8 +147,8 @@ lbl_8011D430:
 /* 8011D454 00119294  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011D458 00119298  4E 80 00 20 */	blr
 /* 8011D45C 0011929C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011D460
-lbl_8011D460:
+.global GetWaveDataAddress__Q44nw4r3snd6detail14WaveFileReaderCFPCQ54nw4r3snd6detail8WaveFile15WaveChannelInfoPCv
+GetWaveDataAddress__Q44nw4r3snd6detail14WaveFileReaderCFPCQ54nw4r3snd6detail8WaveFile15WaveChannelInfoPCv:
 /* 8011D460 001192A0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 8011D464 001192A4  7C A0 00 34 */	cntlzw r0, r5
 /* 8011D468 001192A8  54 06 D9 7E */	srwi r6, r0, 5

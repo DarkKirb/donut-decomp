@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804829E0
-lbl_804829E0:
+.global "@59268"
+"@59268":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -1104,47 +1104,47 @@ lbl_804829E0:
 	.4byte 0x696D2829
 	.4byte 0
 
-.global lbl_80483B0C
-lbl_80483B0C:
+.global "@59597_80483B0C"
+"@59597_80483B0C":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FA4C
+	.4byte effectWarp__Q43scn4step4hero8MintGearCFv
 
-.global lbl_80483B18
-lbl_80483B18:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FB4C
-
-.global lbl_80483B24
-lbl_80483B24:
+.global "@59638"
+"@59638":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FBFC
+	.4byte effect__Q43scn4step4hero8MintGearCFv
 
-.global lbl_80483B30
-lbl_80483B30:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FCC8
-
-.global lbl_80483B3C
-lbl_80483B3C:
+.global "@59647"
+"@59647":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FD60
+	.4byte anim__Q43scn4step4hero8MintGearCFv
 
-.global lbl_80483B48
-lbl_80483B48:
+.global "@59669"
+"@59669":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8032FDE4
+	.4byte isAnimExist__Q43scn4step4hero8MintGearCFv
+
+.global "@59683"
+"@59683":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte setNodeVisibility__Q43scn4step4hero8MintGearCFUlb
+
+.global "@59690_80483B48"
+"@59690_80483B48":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte setVisibility__Q43scn4step4hero8MintGearCFb
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

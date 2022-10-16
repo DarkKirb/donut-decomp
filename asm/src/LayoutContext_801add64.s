@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801ADD64
-lbl_801ADD64:
+.global __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
+__ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator:
 /* 801ADD64 001A9BA4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801ADD68 001A9BA8  7C 08 02 A6 */	mflr r0
 /* 801ADD6C 001A9BAC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -22,7 +22,7 @@ lbl_801ADD94:
 /* 801ADD9C 001A9BDC  42 00 FF F8 */	bdnz lbl_801ADD94
 /* 801ADDA0 001A9BE0  7F A3 EB 78 */	mr r3, r29
 /* 801ADDA4 001A9BE4  38 A0 00 40 */	li r5, 0x40
-/* 801ADDA8 001A9BE8  4B FE FC 15 */	bl lbl_8019D9BC
+/* 801ADDA8 001A9BE8  4B FE FC 15 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801ADDAC 001A9BEC  38 9D 00 3C */	addi r4, r29, 0x3c
 /* 801ADDB0 001A9BF0  38 60 00 00 */	li r3, 0x0
 /* 801ADDB4 001A9BF4  38 00 00 04 */	li r0, 0x4
@@ -35,7 +35,7 @@ lbl_801ADDBC:
 /* 801ADDC8 001A9C08  38 7D 00 40 */	addi r3, r29, 0x40
 /* 801ADDCC 001A9C0C  7F C4 F3 78 */	mr r4, r30
 /* 801ADDD0 001A9C10  38 A0 00 20 */	li r5, 0x20
-/* 801ADDD4 001A9C14  4B FE FB E9 */	bl lbl_8019D9BC
+/* 801ADDD4 001A9C14  4B FE FB E9 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801ADDD8 001A9C18  93 FD 00 60 */	stw r31, 0x60(r29)
 /* 801ADDDC 001A9C1C  7F A3 EB 78 */	mr r3, r29
 /* 801ADDE0 001A9C20  39 61 00 20 */	addi r11, r1, 0x20

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80432FD0
-lbl_80432FD0:
+.global __AXMixCycles
+__AXMixCycles:
 
 	.4byte 0x00000002
 	.4byte 0x00000198
@@ -37,8 +37,8 @@ lbl_80432FD0:
 	.4byte 0x0000083F
 	.4byte 0x0000083F
 
-.global lbl_80433050
-lbl_80433050:
+.global __AXRmtMixCycles
+__AXRmtMixCycles:
 
 	.4byte 0x00000004
 	.4byte 0x00000056

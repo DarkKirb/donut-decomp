@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800147EC
-lbl_800147EC:
-/* 800147EC 0001062C  3C A0 80 42 */	lis r5, lbl_80421510@ha
-/* 800147F0 00010630  38 A5 15 10 */	addi r5, r5, lbl_80421510@l
+.global stricmp
+stricmp:
+/* 800147EC 0001062C  3C A0 80 42 */	lis r5, _current_locale@ha
+/* 800147F0 00010630  38 A5 15 10 */	addi r5, r5, _current_locale@l
 /* 800147F4 00010634  80 C5 00 38 */	lwz r6, 0x38(r5)
 .global lbl_800147F8
 lbl_800147F8:

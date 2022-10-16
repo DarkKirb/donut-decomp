@@ -1,40 +1,40 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803554F0
-lbl_803554F0:
-/* 803554F0 00351330  3C A0 80 48 */	lis r5, lbl_804854F0@ha
-/* 803554F4 00351334  38 05 54 F0 */	addi r0, r5, lbl_804854F0@l
+.global __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero:
+/* 803554F0 00351330  3C A0 80 48 */	lis r5, __vt__Q43scn4step4hero9StateBase@ha
+/* 803554F4 00351334  38 05 54 F0 */	addi r0, r5, __vt__Q43scn4step4hero9StateBase@l
 /* 803554F8 00351338  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803554FC 0035133C  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80355500 00351340  4E 80 00 20 */	blr
 
-.global lbl_80355504
-lbl_80355504:
+.global procAnim__Q43scn4step4hero9StateBaseFv
+procAnim__Q43scn4step4hero9StateBaseFv:
 /* 80355504 00351344  4E 80 00 20 */	blr
 
-.global lbl_80355508
-lbl_80355508:
+.global procMove__Q43scn4step4hero9StateBaseFv
+procMove__Q43scn4step4hero9StateBaseFv:
 /* 80355508 00351348  4E 80 00 20 */	blr
 
-.global lbl_8035550C
-lbl_8035550C:
+.global procConstraint__Q43scn4step4hero9StateBaseFv
+procConstraint__Q43scn4step4hero9StateBaseFv:
 /* 8035550C 0035134C  4E 80 00 20 */	blr
 
-.global lbl_80355510
-lbl_80355510:
+.global procFixPos__Q43scn4step4hero9StateBaseFv
+procFixPos__Q43scn4step4hero9StateBaseFv:
 /* 80355510 00351350  4E 80 00 20 */	blr
 
-.global lbl_80355514
-lbl_80355514:
-/* 80355514 00351354  4B CF E8 DC */	b lbl_80053DF0
+.global procObjCollReact__Q43scn4step4hero9StateBaseFv
+procObjCollReact__Q43scn4step4hero9StateBaseFv:
+/* 80355514 00351354  4B CF E8 DC */	b __wpadNoAlloc
 
-.global lbl_80355518
-lbl_80355518:
+.global procEnd__Q43scn4step4hero9StateBaseFv
+procEnd__Q43scn4step4hero9StateBaseFv:
 /* 80355518 00351358  4E 80 00 20 */	blr
 
-.global lbl_8035551C
-lbl_8035551C:
+.global __dt__Q43scn4step4hero9StateBaseFv
+__dt__Q43scn4step4hero9StateBaseFv:
 /* 8035551C 0035135C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80355520 00351360  7C 08 02 A6 */	mflr r0
 /* 80355524 00351364  90 01 00 14 */	stw r0, 0x14(r1)
@@ -45,12 +45,12 @@ lbl_8035551C:
 /* 80355538 00351378  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8035553C 0035137C  41 82 00 20 */	beq lbl_8035555C
 /* 80355540 00351380  38 80 00 00 */	li r4, 0x0
-/* 80355544 00351384  4B ED B7 F9 */	bl lbl_80230D3C
+/* 80355544 00351384  4B ED B7 F9 */	bl __dt__Q43scn4step4boss6IStateFv
 /* 80355548 00351388  7F E0 07 34 */	extsh r0, r31
 /* 8035554C 0035138C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80355550 00351390  40 81 00 0C */	ble lbl_8035555C
 /* 80355554 00351394  7F C3 F3 78 */	mr r3, r30
-/* 80355558 00351398  4B E6 A1 BD */	bl lbl_801BF714
+/* 80355558 00351398  4B E6 A1 BD */	bl __dl__FPv
 .global lbl_8035555C
 lbl_8035555C:
 /* 8035555C 0035139C  7F C3 F3 78 */	mr r3, r30

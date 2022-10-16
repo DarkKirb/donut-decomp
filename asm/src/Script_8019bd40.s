@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8019BD40
-lbl_8019BD40:
+.global __ct__Q24gobj6ScriptFRCQ24gobj10ScriptDescRQ23mem10IAllocatorRQ24mint6Engine
+__ct__Q24gobj6ScriptFRCQ24gobj10ScriptDescRQ23mem10IAllocatorRQ24mint6Engine:
 /* 8019BD40 00197B80  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019BD44 00197B84  7C 08 02 A6 */	mflr r0
 /* 8019BD48 00197B88  90 01 00 14 */	stw r0, 0x14(r1)
@@ -11,7 +11,7 @@ lbl_8019BD40:
 /* 8019BD54 00197B94  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8019BD58 00197B98  38 63 00 04 */	addi r3, r3, 0x4
 /* 8019BD5C 00197B9C  7C C4 33 78 */	mr r4, r6
-/* 8019BD60 00197BA0  48 02 4A 19 */	bl lbl_801C0778
+/* 8019BD60 00197BA0  48 02 4A 19 */	bl __ct__Q24mint6RunnerFRCQ24mint6Engine
 /* 8019BD64 00197BA4  38 00 00 00 */	li r0, 0x0
 /* 8019BD68 00197BA8  90 1F 00 50 */	stw r0, 0x50(r31)
 /* 8019BD6C 00197BAC  38 00 FF FF */	li r0, -0x1
@@ -23,8 +23,8 @@ lbl_8019BD40:
 /* 8019BD84 00197BC4  7C 08 03 A6 */	mtlr r0
 /* 8019BD88 00197BC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019BD8C 00197BCC  4E 80 00 20 */	blr
-.global lbl_8019BD90
-lbl_8019BD90:
+.global __dt__Q24gobj6ScriptFv
+__dt__Q24gobj6ScriptFv:
 /* 8019BD90 00197BD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019BD94 00197BD4  7C 08 02 A6 */	mflr r0
 /* 8019BD98 00197BD8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -36,12 +36,12 @@ lbl_8019BD90:
 /* 8019BDB0 00197BF0  41 82 00 24 */	beq lbl_8019BDD4
 /* 8019BDB4 00197BF4  38 63 00 04 */	addi r3, r3, 0x4
 /* 8019BDB8 00197BF8  38 80 FF FF */	li r4, -0x1
-/* 8019BDBC 00197BFC  48 02 4C 1D */	bl lbl_801C09D8
+/* 8019BDBC 00197BFC  48 02 4C 1D */	bl __dt__Q24mint6RunnerFv
 /* 8019BDC0 00197C00  7F E0 07 34 */	extsh r0, r31
 /* 8019BDC4 00197C04  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8019BDC8 00197C08  40 81 00 0C */	ble lbl_8019BDD4
 /* 8019BDCC 00197C0C  7F C3 F3 78 */	mr r3, r30
-/* 8019BDD0 00197C10  48 02 39 45 */	bl lbl_801BF714
+/* 8019BDD0 00197C10  48 02 39 45 */	bl __dl__FPv
 .global lbl_8019BDD4
 lbl_8019BDD4:
 /* 8019BDD4 00197C14  7F C3 F3 78 */	mr r3, r30
@@ -51,12 +51,12 @@ lbl_8019BDD4:
 /* 8019BDE4 00197C24  7C 08 03 A6 */	mtlr r0
 /* 8019BDE8 00197C28  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019BDEC 00197C2C  4E 80 00 20 */	blr
-.global lbl_8019BDF0
-lbl_8019BDF0:
+.global registerCallback__Q24gobj6ScriptFRQ24gobj15IScriptCallback
+registerCallback__Q24gobj6ScriptFRQ24gobj15IScriptCallback:
 /* 8019BDF0 00197C30  90 83 00 50 */	stw r4, 0x50(r3)
 /* 8019BDF4 00197C34  4E 80 00 20 */	blr
-.global lbl_8019BDF8
-lbl_8019BDF8:
+.global start__Q24gobj6ScriptFUl
+start__Q24gobj6ScriptFUl:
 /* 8019BDF8 00197C38  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8019BDFC 00197C3C  7C 08 02 A6 */	mflr r0
 /* 8019BE00 00197C40  90 01 00 84 */	stw r0, 0x84(r1)
@@ -77,43 +77,43 @@ lbl_8019BDF8:
 /* 8019BE3C 00197C7C  40 82 00 14 */	bne lbl_8019BE50
 /* 8019BE40 00197C80  38 63 00 04 */	addi r3, r3, 0x4
 /* 8019BE44 00197C84  38 86 00 01 */	addi r4, r6, 0x1
-/* 8019BE48 00197C88  48 02 4B F1 */	bl lbl_801C0A38
+/* 8019BE48 00197C88  48 02 4B F1 */	bl setEntryPoint__Q24mint6RunnerFPCc
 /* 8019BE4C 00197C8C  48 00 00 24 */	b lbl_8019BE70
 .global lbl_8019BE50
 lbl_8019BE50:
 /* 8019BE50 00197C90  38 61 00 08 */	addi r3, r1, 0x8
-/* 8019BE54 00197C94  38 8D 8A 08 */	addi r4, r13, lbl_80556E28@sda21
+/* 8019BE54 00197C94  38 8D 8A 08 */	addi r4, r13, "@51536_80556E28"@sda21
 /* 8019BE58 00197C98  80 A7 00 00 */	lwz r5, 0x0(r7)
 /* 8019BE5C 00197C9C  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8019BE60 00197CA0  48 00 00 B5 */	bl lbl_8019BF14
+/* 8019BE60 00197CA0  48 00 00 B5 */	bl "FromFormat__Q33hel6common19FixedStringIN<c,96>FPCce"
 /* 8019BE64 00197CA4  38 81 00 08 */	addi r4, r1, 0x8
 /* 8019BE68 00197CA8  38 7D 00 04 */	addi r3, r29, 0x4
-/* 8019BE6C 00197CAC  48 02 4B CD */	bl lbl_801C0A38
+/* 8019BE6C 00197CAC  48 02 4B CD */	bl setEntryPoint__Q24mint6RunnerFPCc
 .global lbl_8019BE70
 lbl_8019BE70:
 /* 8019BE70 00197CB0  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8019BE74 00197CB4  38 80 00 00 */	li r4, 0x0
 /* 8019BE78 00197CB8  80 BF 00 04 */	lwz r5, 0x4(r31)
-/* 8019BE7C 00197CBC  48 02 4B F1 */	bl lbl_801C0A6C
+/* 8019BE7C 00197CBC  48 02 4B F1 */	bl setArgS32__Q24mint6RunnerFUll
 /* 8019BE80 00197CC0  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8019BE84 00197CC4  38 80 00 01 */	li r4, 0x1
 /* 8019BE88 00197CC8  80 BF 00 08 */	lwz r5, 0x8(r31)
-/* 8019BE8C 00197CCC  48 02 4B E1 */	bl lbl_801C0A6C
+/* 8019BE8C 00197CCC  48 02 4B E1 */	bl setArgS32__Q24mint6RunnerFUll
 /* 8019BE90 00197CD0  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8019BE94 00197CD4  38 80 00 02 */	li r4, 0x2
 /* 8019BE98 00197CD8  80 BF 00 0C */	lwz r5, 0xc(r31)
-/* 8019BE9C 00197CDC  48 02 4B D1 */	bl lbl_801C0A6C
+/* 8019BE9C 00197CDC  48 02 4B D1 */	bl setArgS32__Q24mint6RunnerFUll
 /* 8019BEA0 00197CE0  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8019BEA4 00197CE4  38 80 00 03 */	li r4, 0x3
 /* 8019BEA8 00197CE8  80 BF 00 10 */	lwz r5, 0x10(r31)
-/* 8019BEAC 00197CEC  48 02 4B C1 */	bl lbl_801C0A6C
+/* 8019BEAC 00197CEC  48 02 4B C1 */	bl setArgS32__Q24mint6RunnerFUll
 /* 8019BEB0 00197CF0  48 00 00 14 */	b lbl_8019BEC4
 .global lbl_8019BEB4
 lbl_8019BEB4:
 /* 8019BEB4 00197CF4  38 63 00 04 */	addi r3, r3, 0x4
-/* 8019BEB8 00197CF8  3C 80 80 45 */	lis r4, lbl_80455040@ha
-/* 8019BEBC 00197CFC  38 84 50 40 */	addi r4, r4, lbl_80455040@l
-/* 8019BEC0 00197D00  48 02 4B 79 */	bl lbl_801C0A38
+/* 8019BEB8 00197CF8  3C 80 80 45 */	lis r4, "@51537_80455040"@ha
+/* 8019BEBC 00197CFC  38 84 50 40 */	addi r4, r4, "@51537_80455040"@l
+/* 8019BEC0 00197D00  48 02 4B 79 */	bl setEntryPoint__Q24mint6RunnerFPCc
 .global lbl_8019BEC4
 lbl_8019BEC4:
 /* 8019BEC4 00197D04  80 BD 00 54 */	lwz r5, 0x54(r29)
@@ -131,15 +131,15 @@ lbl_8019BEC4:
 .global lbl_8019BEF4
 lbl_8019BEF4:
 /* 8019BEF4 00197D34  7F A3 EB 78 */	mr r3, r29
-/* 8019BEF8 00197D38  48 00 01 1D */	bl lbl_8019C014
+/* 8019BEF8 00197D38  48 00 01 1D */	bl update__Q24gobj6ScriptFv
 /* 8019BEFC 00197D3C  39 61 00 80 */	addi r11, r1, 0x80
 /* 8019BF00 00197D40  4B E6 B4 91 */	bl lbl_80007390
 /* 8019BF04 00197D44  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8019BF08 00197D48  7C 08 03 A6 */	mtlr r0
 /* 8019BF0C 00197D4C  38 21 00 80 */	addi r1, r1, 0x80
 /* 8019BF10 00197D50  4E 80 00 20 */	blr
-.global lbl_8019BF14
-lbl_8019BF14:
+.global "FromFormat__Q33hel6common19FixedStringIN<c,96>FPCce"
+"FromFormat__Q33hel6common19FixedStringIN<c,96>FPCce":
 /* 8019BF14 00197D54  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8019BF18 00197D58  7C 08 02 A6 */	mflr r0
 /* 8019BF1C 00197D5C  90 01 00 84 */	stw r0, 0x84(r1)
@@ -183,24 +183,24 @@ lbl_8019BF90:
 /* 8019BFA4 00197DE4  38 80 00 60 */	li r4, 0x60
 /* 8019BFA8 00197DE8  38 A1 00 68 */	addi r5, r1, 0x68
 /* 8019BFAC 00197DEC  7D 66 5B 78 */	mr r6, r11
-/* 8019BFB0 00197DF0  48 00 1A 51 */	bl lbl_8019DA00
+/* 8019BFB0 00197DF0  48 00 1A 51 */	bl "VPrintf__Q33hel6common9Traits<c>FPcUlP16__va_list_structPCc"
 /* 8019BFB4 00197DF4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8019BFB8 00197DF8  7C 08 03 A6 */	mtlr r0
 /* 8019BFBC 00197DFC  38 21 00 80 */	addi r1, r1, 0x80
 /* 8019BFC0 00197E00  4E 80 00 20 */	blr
-.global lbl_8019BFC4
-lbl_8019BFC4:
+.global stop__Q24gobj6ScriptFv
+stop__Q24gobj6ScriptFv:
 /* 8019BFC4 00197E04  38 63 00 04 */	addi r3, r3, 0x4
-/* 8019BFC8 00197E08  48 02 4A 6C */	b lbl_801C0A34
-.global lbl_8019BFCC
-lbl_8019BFCC:
+/* 8019BFC8 00197E08  48 02 4A 6C */	b reset__Q24mint6RunnerFv
+.global clear__Q24gobj6ScriptFv
+clear__Q24gobj6ScriptFv:
 /* 8019BFCC 00197E0C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019BFD0 00197E10  7C 08 02 A6 */	mflr r0
 /* 8019BFD4 00197E14  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8019BFD8 00197E18  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8019BFDC 00197E1C  7C 7F 1B 78 */	mr r31, r3
 /* 8019BFE0 00197E20  38 63 00 04 */	addi r3, r3, 0x4
-/* 8019BFE4 00197E24  48 02 4A 51 */	bl lbl_801C0A34
+/* 8019BFE4 00197E24  48 02 4A 51 */	bl reset__Q24mint6RunnerFv
 /* 8019BFE8 00197E28  80 1F 00 54 */	lwz r0, 0x54(r31)
 /* 8019BFEC 00197E2C  90 1F 00 58 */	stw r0, 0x58(r31)
 /* 8019BFF0 00197E30  38 00 FF FF */	li r0, -0x1
@@ -210,12 +210,12 @@ lbl_8019BFCC:
 /* 8019C000 00197E40  7C 08 03 A6 */	mtlr r0
 /* 8019C004 00197E44  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019C008 00197E48  4E 80 00 20 */	blr
-.global lbl_8019C00C
-lbl_8019C00C:
+.global isEnd__Q24gobj6ScriptCFv
+isEnd__Q24gobj6ScriptCFv:
 /* 8019C00C 00197E4C  38 63 00 04 */	addi r3, r3, 0x4
-/* 8019C010 00197E50  48 02 4A 58 */	b lbl_801C0A68
-.global lbl_8019C014
-lbl_8019C014:
+/* 8019C010 00197E50  48 02 4A 58 */	b isEnd__Q24mint6RunnerCFv
+.global update__Q24gobj6ScriptFv
+update__Q24gobj6ScriptFv:
 /* 8019C014 00197E54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019C018 00197E58  7C 08 02 A6 */	mflr r0
 /* 8019C01C 00197E5C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -232,7 +232,7 @@ lbl_8019C014:
 .global lbl_8019C048
 lbl_8019C048:
 /* 8019C048 00197E88  38 7F 00 04 */	addi r3, r31, 0x4
-/* 8019C04C 00197E8C  48 02 49 F1 */	bl lbl_801C0A3C
+/* 8019C04C 00197E8C  48 02 49 F1 */	bl execute__Q24mint6RunnerFv
 /* 8019C050 00197E90  80 7F 00 50 */	lwz r3, 0x50(r31)
 /* 8019C054 00197E94  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8019C058 00197E98  41 82 00 18 */	beq lbl_8019C070
@@ -248,11 +248,11 @@ lbl_8019C070:
 /* 8019C078 00197EB8  7C 08 03 A6 */	mtlr r0
 /* 8019C07C 00197EBC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019C080 00197EC0  4E 80 00 20 */	blr
-.global lbl_8019C084
-lbl_8019C084:
+.global currentScriptIndex__Q24gobj6ScriptCFv
+currentScriptIndex__Q24gobj6ScriptCFv:
 /* 8019C084 00197EC4  80 63 00 54 */	lwz r3, 0x54(r3)
 /* 8019C088 00197EC8  4E 80 00 20 */	blr
-.global lbl_8019C08C
-lbl_8019C08C:
+.global prevScriptIndex__Q24gobj6ScriptCFv
+prevScriptIndex__Q24gobj6ScriptCFv:
 /* 8019C08C 00197ECC  80 63 00 58 */	lwz r3, 0x58(r3)
 /* 8019C090 00197ED0  4E 80 00 20 */	blr

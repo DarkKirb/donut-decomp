@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8019DE24
-lbl_8019DE24:
+.global IsPointerValid__Q33hel5debug6AssertFPCv
+IsPointerValid__Q33hel5debug6AssertFPCv:
 /* 8019DE24 00199C64  54 64 00 0E */	clrrwi r4, r3, 24
 /* 8019DE28 00199C68  3C 04 80 00 */	addis r0, r4, 0x8000
 /* 8019DE2C 00199C6C  28 00 00 00 */	cmplwi r0, 0x0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80191EEC
-lbl_80191EEC:
+.global __ct__Q23g3d16ModelAnimContextFRCQ23g3d15ResModelContextRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocator
+__ct__Q23g3d16ModelAnimContextFRCQ23g3d15ResModelContextRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocatorRQ23mem10IAllocator:
 /* 80191EEC 0018DD2C  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 80191EF0 0018DD30  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80191EF4 0018DD34  7C 6C 1B 78 */	mr r12, r3

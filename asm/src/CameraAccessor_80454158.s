@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80454158
-lbl_80454158:
+.global "@STRING@ref__Q34nw4r3g3d34ResCommon<Q34nw4r3g3d10CameraData>Fv@0"
+"@STRING@ref__Q34nw4r3g3d34ResCommon<Q34nw4r3g3d10CameraData>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -15,8 +15,8 @@ lbl_80454158:
 	.4byte 0x70446174
 	.4byte 0x61290000
 
-.global lbl_80454180
-lbl_80454180:
+.global "@STRING@ref__Q34nw4r3g3d34ResCommon<Q34nw4r3g3d10CameraData>Fv"
+"@STRING@ref__Q34nw4r3g3d34ResCommon<Q34nw4r3g3d10CameraData>Fv":
 
 	.4byte 0x6733645F
 	.4byte 0x72657363

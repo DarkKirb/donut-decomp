@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80444350
-lbl_80444350:
+.global "sSinCosTbl__Q36nw4hbm4math29@unnamed@math_triangular_cpp@"
+"sSinCosTbl__Q36nw4hbm4math29@unnamed@math_triangular_cpp@":
 
 	.4byte 0
 	.4byte 0x3F800000
@@ -1033,8 +1033,8 @@ lbl_80444350:
 	.4byte 0x3CC90A35
 	.4byte 0xB99DCF89
 
-.global lbl_80445360
-lbl_80445360:
+.global "sArcTanTbl__Q36nw4hbm4math29@unnamed@math_triangular_cpp@"
+"sArcTanTbl__Q36nw4hbm4math29@unnamed@math_triangular_cpp@":
 
 	.4byte 0
 	.4byte 0x3FA2EBF1

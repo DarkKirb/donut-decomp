@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80480480
-lbl_80480480:
+.global __vt__Q53scn4step7gimmick10cameralock14VariationStill
+__vt__Q53scn4step7gimmick10cameralock14VariationStill:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80305498
-	.4byte lbl_80305628
-	.4byte lbl_803056A8
-	.4byte lbl_803056AC
-	.4byte lbl_803056B0
+	.4byte updateReady__Q53scn4step7gimmick10cameralock14VariationStillFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLock__Q53scn4step7gimmick10cameralock14VariationStillFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateReadyNonStop__Q53scn4step7gimmick10cameralock14VariationStillFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock14VariationStillFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte setIsPose__Q53scn4step7gimmick10cameralock14VariationStillFb
 	.4byte 0

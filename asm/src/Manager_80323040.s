@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80323040
-lbl_80323040:
+.global __ct__Q53scn4step7gimmick7shutter7ManagerFRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManager
+__ct__Q53scn4step7gimmick7shutter7ManagerFRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManager:
 /* 80323040 0031EE80  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80323044 0031EE84  7C 08 02 A6 */	mflr r0
 /* 80323048 0031EE88  90 01 00 34 */	stw r0, 0x34(r1)
@@ -13,8 +13,8 @@ lbl_80323040:
 /* 8032305C 0031EE9C  7C BB 2B 78 */	mr r27, r5
 /* 80323060 0031EEA0  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80323064 0031EEA4  7F 43 D3 78 */	mr r3, r26
-/* 80323068 0031EEA8  4B EF DC 25 */	bl lbl_80220C8C
-/* 8032306C 0031EEAC  48 0A 76 ED */	bl lbl_803CA758
+/* 80323068 0031EEA8  4B EF DC 25 */	bl mapMemManager__Q33scn4step9ComponentFv
+/* 8032306C 0031EEAC  48 0A 76 ED */	bl allocator__Q43scn4step3map10MemManagerFv
 /* 80323070 0031EEB0  90 79 00 04 */	stw r3, 0x4(r25)
 /* 80323074 0031EEB4  38 80 00 00 */	li r4, 0x0
 /* 80323078 0031EEB8  90 99 00 08 */	stw r4, 0x8(r25)
@@ -27,14 +27,14 @@ lbl_80323088:
 /* 8032308C 0031EECC  94 83 00 08 */	stwu r4, 0x8(r3)
 /* 80323090 0031EED0  42 00 FF F8 */	bdnz lbl_80323088
 /* 80323094 0031EED4  7F 43 D3 78 */	mr r3, r26
-/* 80323098 0031EED8  4B EC 79 59 */	bl lbl_801EA9F0
-/* 8032309C 0031EEDC  48 0A 69 FD */	bl lbl_803C9A98
+/* 80323098 0031EED8  4B EC 79 59 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 8032309C 0031EEDC  48 0A 69 FD */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 803230A0 0031EEE0  90 61 00 08 */	stw r3, 0x8(r1)
 /* 803230A4 0031EEE4  38 61 00 08 */	addi r3, r1, 0x8
-/* 803230A8 0031EEE8  48 0A 60 85 */	bl lbl_803C912C
+/* 803230A8 0031EEE8  48 0A 60 85 */	bl gimmickDataAccessor__Q43scn4step3map12DataAccessorCFv
 /* 803230AC 0031EEEC  90 61 00 0C */	stw r3, 0xc(r1)
 /* 803230B0 0031EEF0  38 61 00 0C */	addi r3, r1, 0xc
-/* 803230B4 0031EEF4  48 0A 6E 61 */	bl lbl_803C9F14
+/* 803230B4 0031EEF4  48 0A 6E 61 */	bl shutterEntryCount__Q43scn4step3map19GimmickDataAccessorCFv
 /* 803230B8 0031EEF8  7C 7D 1B 78 */	mr r29, r3
 /* 803230BC 0031EEFC  28 03 00 10 */	cmplwi r3, 0x10
 /* 803230C0 0031EF00  40 81 00 08 */	ble lbl_803230C8
@@ -49,24 +49,24 @@ lbl_803230C8:
 lbl_803230D8:
 /* 803230D8 0031EF18  38 61 00 0C */	addi r3, r1, 0xc
 /* 803230DC 0031EF1C  7F 84 E3 78 */	mr r4, r28
-/* 803230E0 0031EF20  48 0A 6E 3D */	bl lbl_803C9F1C
+/* 803230E0 0031EF20  48 0A 6E 3D */	bl shutterEntryAt__Q43scn4step3map19GimmickDataAccessorCFUl
 /* 803230E4 0031EF24  7C 7F 1B 78 */	mr r31, r3
 /* 803230E8 0031EF28  38 60 09 B8 */	li r3, 0x9b8
 /* 803230EC 0031EF2C  80 99 00 04 */	lwz r4, 0x4(r25)
-/* 803230F0 0031EF30  4B E9 C6 1D */	bl lbl_801BF70C
+/* 803230F0 0031EF30  4B E9 C6 1D */	bl __nw__FUlRQ23mem10IAllocator
 /* 803230F4 0031EF34  7C 7E 1B 78 */	mr r30, r3
 /* 803230F8 0031EF38  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803230FC 0031EF3C  41 82 00 18 */	beq lbl_80323114
 /* 80323100 0031EF40  7F E4 FB 78 */	mr r4, r31
 /* 80323104 0031EF44  7F 45 D3 78 */	mr r5, r26
 /* 80323108 0031EF48  7F 66 DB 78 */	mr r6, r27
-/* 8032310C 0031EF4C  48 00 04 2D */	bl lbl_80323538
+/* 8032310C 0031EF4C  48 00 04 2D */	bl __ct__Q53scn4step7gimmick7shutter7ShutterFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManager
 /* 80323110 0031EF50  7C 7E 1B 78 */	mr r30, r3
 .global lbl_80323114
 lbl_80323114:
 /* 80323114 0031EF54  38 79 00 0C */	addi r3, r25, 0xc
 /* 80323118 0031EF58  80 99 00 08 */	lwz r4, 0x8(r25)
-/* 8032311C 0031EF5C  4B E8 0B 11 */	bl lbl_801A3C2C
+/* 8032311C 0031EF5C  4B E8 0B 11 */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 80323120 0031EF60  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 80323124 0031EF64  80 79 00 08 */	lwz r3, 0x8(r25)
 /* 80323128 0031EF68  38 03 00 01 */	addi r0, r3, 0x1
@@ -85,8 +85,8 @@ lbl_8032313C:
 /* 8032314C 0031EF8C  7C 08 03 A6 */	mtlr r0
 /* 80323150 0031EF90  38 21 00 30 */	addi r1, r1, 0x30
 /* 80323154 0031EF94  4E 80 00 20 */	blr
-.global lbl_80323158
-lbl_80323158:
+.global "__dt__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>Fv"
+"__dt__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>Fv":
 /* 80323158 0031EF98  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8032315C 0031EF9C  7C 08 02 A6 */	mflr r0
 /* 80323160 0031EFA0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -103,11 +103,11 @@ lbl_80323184:
 /* 80323184 0031EFC4  3B A3 FF FF */	addi r29, r3, -0x1
 /* 80323188 0031EFC8  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8032318C 0031EFCC  7F A4 EB 78 */	mr r4, r29
-/* 80323190 0031EFD0  4B E8 0A 9D */	bl lbl_801A3C2C
+/* 80323190 0031EFD0  4B E8 0A 9D */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 80323194 0031EFD4  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 80323198 0031EFD8  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8032319C 0031EFDC  7F A4 EB 78 */	mr r4, r29
-/* 803231A0 0031EFE0  4B E8 0A 8D */	bl lbl_801A3C2C
+/* 803231A0 0031EFE0  4B E8 0A 8D */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 803231A4 0031EFE4  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803231A8 0031EFE8  80 7B 00 04 */	lwz r3, 0x4(r27)
 /* 803231AC 0031EFEC  38 03 FF FF */	addi r0, r3, -0x1
@@ -131,12 +131,12 @@ lbl_803231E4:
 /* 803231EC 0031F02C  40 82 FF 98 */	bne lbl_80323184
 /* 803231F0 0031F030  7F 63 DB 78 */	mr r3, r27
 /* 803231F4 0031F034  38 80 00 00 */	li r4, 0x0
-/* 803231F8 0031F038  4B E5 29 71 */	bl lbl_80175B68
+/* 803231F8 0031F038  4B E5 29 71 */	bl __dt__Q23scn6ISceneFv
 /* 803231FC 0031F03C  7F 80 07 34 */	extsh r0, r28
 /* 80323200 0031F040  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80323204 0031F044  40 81 00 0C */	ble lbl_80323210
 /* 80323208 0031F048  7F 63 DB 78 */	mr r3, r27
-/* 8032320C 0031F04C  4B E9 C5 09 */	bl lbl_801BF714
+/* 8032320C 0031F04C  4B E9 C5 09 */	bl __dl__FPv
 .global lbl_80323210
 lbl_80323210:
 /* 80323210 0031F050  7F 63 DB 78 */	mr r3, r27
@@ -146,8 +146,8 @@ lbl_80323210:
 /* 80323220 0031F060  7C 08 03 A6 */	mtlr r0
 /* 80323224 0031F064  38 21 00 20 */	addi r1, r1, 0x20
 /* 80323228 0031F068  4E 80 00 20 */	blr
-.global lbl_8032322C
-lbl_8032322C:
+.global __dt__Q53scn4step7gimmick7shutter7ManagerFv
+__dt__Q53scn4step7gimmick7shutter7ManagerFv:
 /* 8032322C 0031F06C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80323230 0031F070  7C 08 02 A6 */	mflr r0
 /* 80323234 0031F074  90 01 00 14 */	stw r0, 0x14(r1)
@@ -159,12 +159,12 @@ lbl_8032322C:
 /* 8032324C 0031F08C  41 82 00 24 */	beq lbl_80323270
 /* 80323250 0031F090  38 63 00 04 */	addi r3, r3, 0x4
 /* 80323254 0031F094  38 80 FF FF */	li r4, -0x1
-/* 80323258 0031F098  4B FF FF 01 */	bl lbl_80323158
+/* 80323258 0031F098  4B FF FF 01 */	bl "__dt__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>Fv"
 /* 8032325C 0031F09C  7F E0 07 34 */	extsh r0, r31
 /* 80323260 0031F0A0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80323264 0031F0A4  40 81 00 0C */	ble lbl_80323270
 /* 80323268 0031F0A8  7F C3 F3 78 */	mr r3, r30
-/* 8032326C 0031F0AC  4B E9 C4 A9 */	bl lbl_801BF714
+/* 8032326C 0031F0AC  4B E9 C4 A9 */	bl __dl__FPv
 .global lbl_80323270
 lbl_80323270:
 /* 80323270 0031F0B0  7F C3 F3 78 */	mr r3, r30
@@ -174,8 +174,8 @@ lbl_80323270:
 /* 80323280 0031F0C0  7C 08 03 A6 */	mtlr r0
 /* 80323284 0031F0C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80323288 0031F0C8  4E 80 00 20 */	blr
-.global lbl_8032328C
-lbl_8032328C:
+.global registerToRoot__Q53scn4step7gimmick7shutter7ManagerFRQ23g3d4Root
+registerToRoot__Q53scn4step7gimmick7shutter7ManagerFRQ23g3d4Root:
 /* 8032328C 0031F0CC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80323290 0031F0D0  7C 08 02 A6 */	mflr r0
 /* 80323294 0031F0D4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -190,9 +190,9 @@ lbl_8032328C:
 lbl_803232B4:
 /* 803232B4 0031F0F4  38 7C 00 04 */	addi r3, r28, 0x4
 /* 803232B8 0031F0F8  7F C4 F3 78 */	mr r4, r30
-/* 803232BC 0031F0FC  48 00 00 31 */	bl lbl_803232EC
+/* 803232BC 0031F0FC  48 00 00 31 */	bl "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>FUl"
 /* 803232C0 0031F100  7F A4 EB 78 */	mr r4, r29
-/* 803232C4 0031F104  48 00 06 B5 */	bl lbl_80323978
+/* 803232C4 0031F104  48 00 06 B5 */	bl registerToRoot__Q53scn4step7gimmick7shutter7ShutterFRQ23g3d4Root
 /* 803232C8 0031F108  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_803232CC
 lbl_803232CC:
@@ -204,8 +204,8 @@ lbl_803232CC:
 /* 803232E0 0031F120  7C 08 03 A6 */	mtlr r0
 /* 803232E4 0031F124  38 21 00 20 */	addi r1, r1, 0x20
 /* 803232E8 0031F128  4E 80 00 20 */	blr
-.global lbl_803232EC
-lbl_803232EC:
+.global "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>FUl"
+"__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>FUl":
 /* 803232EC 0031F12C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803232F0 0031F130  7C 08 02 A6 */	mflr r0
 /* 803232F4 0031F134  90 01 00 14 */	stw r0, 0x14(r1)
@@ -215,10 +215,10 @@ lbl_803232EC:
 /* 80323304 0031F144  7C 9F 23 78 */	mr r31, r4
 /* 80323308 0031F148  7F E3 FB 78 */	mr r3, r31
 /* 8032330C 0031F14C  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 80323310 0031F150  4B D0 11 91 */	bl lbl_800244A0
+/* 80323310 0031F150  4B D0 11 91 */	bl DefaultSwitchThreadCallback
 /* 80323314 0031F154  38 7E 00 08 */	addi r3, r30, 0x8
 /* 80323318 0031F158  7F E4 FB 78 */	mr r4, r31
-/* 8032331C 0031F15C  4B E8 09 11 */	bl lbl_801A3C2C
+/* 8032331C 0031F15C  4B E8 09 11 */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 80323320 0031F160  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80323324 0031F164  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80323328 0031F168  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -226,8 +226,8 @@ lbl_803232EC:
 /* 80323330 0031F170  7C 08 03 A6 */	mtlr r0
 /* 80323334 0031F174  38 21 00 10 */	addi r1, r1, 0x10
 /* 80323338 0031F178  4E 80 00 20 */	blr
-.global lbl_8032333C
-lbl_8032333C:
+.global procBegin__Q53scn4step7gimmick7shutter7ManagerFv
+procBegin__Q53scn4step7gimmick7shutter7ManagerFv:
 /* 8032333C 0031F17C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80323340 0031F180  7C 08 02 A6 */	mflr r0
 /* 80323344 0031F184  90 01 00 24 */	stw r0, 0x24(r1)
@@ -241,8 +241,8 @@ lbl_8032333C:
 lbl_80323360:
 /* 80323360 0031F1A0  38 7D 00 04 */	addi r3, r29, 0x4
 /* 80323364 0031F1A4  7F C4 F3 78 */	mr r4, r30
-/* 80323368 0031F1A8  4B FF FF 85 */	bl lbl_803232EC
-/* 8032336C 0031F1AC  48 00 06 65 */	bl lbl_803239D0
+/* 80323368 0031F1A8  4B FF FF 85 */	bl "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>FUl"
+/* 8032336C 0031F1AC  48 00 06 65 */	bl procBegin__Q53scn4step7gimmick7shutter7ShutterFv
 /* 80323370 0031F1B0  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_80323374
 lbl_80323374:
@@ -254,8 +254,8 @@ lbl_80323374:
 /* 80323388 0031F1C8  7C 08 03 A6 */	mtlr r0
 /* 8032338C 0031F1CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80323390 0031F1D0  4E 80 00 20 */	blr
-.global lbl_80323394
-lbl_80323394:
+.global procAnim__Q53scn4step7gimmick7shutter7ManagerFv
+procAnim__Q53scn4step7gimmick7shutter7ManagerFv:
 /* 80323394 0031F1D4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80323398 0031F1D8  7C 08 02 A6 */	mflr r0
 /* 8032339C 0031F1DC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -269,8 +269,8 @@ lbl_80323394:
 lbl_803233B8:
 /* 803233B8 0031F1F8  38 7D 00 04 */	addi r3, r29, 0x4
 /* 803233BC 0031F1FC  7F C4 F3 78 */	mr r4, r30
-/* 803233C0 0031F200  4B FF FF 2D */	bl lbl_803232EC
-/* 803233C4 0031F204  48 00 08 55 */	bl lbl_80323C18
+/* 803233C0 0031F200  4B FF FF 2D */	bl "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>FUl"
+/* 803233C4 0031F204  48 00 08 55 */	bl procAnim__Q53scn4step7gimmick7shutter7ShutterFv
 /* 803233C8 0031F208  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_803233CC
 lbl_803233CC:
@@ -282,8 +282,8 @@ lbl_803233CC:
 /* 803233E0 0031F220  7C 08 03 A6 */	mtlr r0
 /* 803233E4 0031F224  38 21 00 20 */	addi r1, r1, 0x20
 /* 803233E8 0031F228  4E 80 00 20 */	blr
-.global lbl_803233EC
-lbl_803233EC:
+.global isExistOpenedShutter__Q53scn4step7gimmick7shutter7ManagerCFRCQ33scn4step7GridPos
+isExistOpenedShutter__Q53scn4step7gimmick7shutter7ManagerCFRCQ33scn4step7GridPos:
 /* 803233EC 0031F22C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803233F0 0031F230  7C 08 02 A6 */	mflr r0
 /* 803233F4 0031F234  90 01 00 24 */	stw r0, 0x24(r1)
@@ -298,15 +298,15 @@ lbl_803233EC:
 lbl_80323414:
 /* 80323414 0031F254  38 7C 00 04 */	addi r3, r28, 0x4
 /* 80323418 0031F258  7F C4 F3 78 */	mr r4, r30
-/* 8032341C 0031F25C  48 00 00 5D */	bl lbl_80323478
-/* 80323420 0031F260  48 00 0B 71 */	bl lbl_80323F90
+/* 8032341C 0031F25C  48 00 00 5D */	bl "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>CFUl"
+/* 80323420 0031F260  48 00 0B 71 */	bl isOpen__Q53scn4step7gimmick7shutter7ShutterCFv
 /* 80323424 0031F264  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80323428 0031F268  41 82 00 28 */	beq lbl_80323450
 /* 8032342C 0031F26C  38 7C 00 04 */	addi r3, r28, 0x4
 /* 80323430 0031F270  7F C4 F3 78 */	mr r4, r30
-/* 80323434 0031F274  48 00 00 45 */	bl lbl_80323478
+/* 80323434 0031F274  48 00 00 45 */	bl "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>CFUl"
 /* 80323438 0031F278  7F A4 EB 78 */	mr r4, r29
-/* 8032343C 0031F27C  48 00 0C 25 */	bl lbl_80324060
+/* 8032343C 0031F27C  48 00 0C 25 */	bl isIncludes__Q53scn4step7gimmick7shutter7ShutterCFRCQ33scn4step7GridPos
 /* 80323440 0031F280  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80323444 0031F284  41 82 00 0C */	beq lbl_80323450
 /* 80323448 0031F288  38 60 00 01 */	li r3, 0x1
@@ -327,8 +327,8 @@ lbl_80323460:
 /* 8032346C 0031F2AC  7C 08 03 A6 */	mtlr r0
 /* 80323470 0031F2B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80323474 0031F2B4  4E 80 00 20 */	blr
-.global lbl_80323478
-lbl_80323478:
+.global "__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>CFUl"
+"__vc__Q23mem63ExplicitAutoDeleteArray<Q53scn4step7gimmick7shutter7Shutter,16>CFUl":
 /* 80323478 0031F2B8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8032347C 0031F2BC  7C 08 02 A6 */	mflr r0
 /* 80323480 0031F2C0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -338,10 +338,10 @@ lbl_80323478:
 /* 80323490 0031F2D0  7C 9F 23 78 */	mr r31, r4
 /* 80323494 0031F2D4  7F E3 FB 78 */	mr r3, r31
 /* 80323498 0031F2D8  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8032349C 0031F2DC  4B D0 10 05 */	bl lbl_800244A0
+/* 8032349C 0031F2DC  4B D0 10 05 */	bl DefaultSwitchThreadCallback
 /* 803234A0 0031F2E0  7F E3 FB 78 */	mr r3, r31
 /* 803234A4 0031F2E4  38 80 00 10 */	li r4, 0x10
-/* 803234A8 0031F2E8  4B D0 0F F9 */	bl lbl_800244A0
+/* 803234A8 0031F2E8  4B D0 0F F9 */	bl DefaultSwitchThreadCallback
 /* 803234AC 0031F2EC  57 E0 10 3A */	slwi r0, r31, 2
 /* 803234B0 0031F2F0  7C 7E 02 14 */	add r3, r30, r0
 /* 803234B4 0031F2F4  80 63 00 08 */	lwz r3, 0x8(r3)

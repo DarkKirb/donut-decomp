@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80316D58
-lbl_80316D58:
+.global __ct__Q53scn4step7gimmick12mastermarker12MasterMarkerFRCQ43scn4step3map18BinGmkGeneralEntry
+__ct__Q53scn4step7gimmick12mastermarker12MasterMarkerFRCQ43scn4step3map18BinGmkGeneralEntry:
 /* 80316D58 00312B98  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80316D5C 00312B9C  7C 08 02 A6 */	mflr r0
 /* 80316D60 00312BA0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -11,12 +11,12 @@ lbl_80316D58:
 /* 80316D6C 00312BAC  7C 7E 1B 78 */	mr r30, r3
 /* 80316D70 00312BB0  7C 9F 23 78 */	mr r31, r4
 /* 80316D74 00312BB4  38 64 00 04 */	addi r3, r4, 0x4
-/* 80316D78 00312BB8  48 0B 22 65 */	bl lbl_803C8FDC
+/* 80316D78 00312BB8  48 0B 22 65 */	bl toMaproPos__Q43scn4step3map11BinMaproPosCFv
 /* 80316D7C 00312BBC  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80316D80 00312BC0  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80316D84 00312BC4  38 61 00 10 */	addi r3, r1, 0x10
 /* 80316D88 00312BC8  38 81 00 08 */	addi r4, r1, 0x8
-/* 80316D8C 00312BCC  4B F0 A9 11 */	bl lbl_8022169C
+/* 80316D8C 00312BCC  4B F0 A9 11 */	bl toWorldPos__Q33scn4step8MaproPosCFv
 /* 80316D90 00312BD0  C0 01 00 10 */	lfs f0, 0x10(r1)
 /* 80316D94 00312BD4  D0 1E 00 00 */	stfs f0, 0x0(r30)
 /* 80316D98 00312BD8  C0 01 00 14 */	lfs f0, 0x14(r1)
@@ -41,7 +41,7 @@ lbl_80316D58:
 /* 80316DE4 00312C24  30 03 FF FF */	addic r0, r3, -0x1
 /* 80316DE8 00312C28  7C 00 19 10 */	subfe r0, r0, r3
 /* 80316DEC 00312C2C  98 1E 00 13 */	stb r0, 0x13(r30)
-/* 80316DF0 00312C30  C0 02 C9 D8 */	lfs f0, lbl_80562958@sda21(r2)
+/* 80316DF0 00312C30  C0 02 C9 D8 */	lfs f0, "@49893_80562958"@sda21(r2)
 /* 80316DF4 00312C34  D0 1E 00 14 */	stfs f0, 0x14(r30)
 /* 80316DF8 00312C38  7F C3 F3 78 */	mr r3, r30
 /* 80316DFC 00312C3C  83 E1 00 1C */	lwz r31, 0x1c(r1)

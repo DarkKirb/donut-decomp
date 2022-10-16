@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80221338
-lbl_80221338:
+.global Create__Q33scn4step12ContextLvMapFv
+Create__Q33scn4step12ContextLvMapFv:
 /* 80221338 0021D178  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8022133C 0021D17C  38 A1 00 04 */	addi r5, r1, 0x4
 /* 80221340 0021D180  38 80 00 00 */	li r4, 0x0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80006A8C
-lbl_80006A8C:
+.global strlen
+strlen:
 /* 80006A8C 000028CC  38 83 FF FF */	addi r4, r3, -0x1
 /* 80006A90 000028D0  38 60 FF FF */	li r3, -0x1
 .global lbl_80006A94

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043CD20
-lbl_8043CD20:
+.global "@1709_8043CD20"
+"@1709_8043CD20":
 
 	.4byte 0x5741524E
 	.4byte 0x494E473A
@@ -22,8 +22,8 @@ lbl_8043CD20:
 	.4byte 0x6E656374
 	.4byte 0x696E6700
 
-.global lbl_8043CD64
-lbl_8043CD64:
+.global "@1710_8043CD64"
+"@1710_8043CD64":
 
 	.4byte 0x4741505F
 	.4byte 0x434F4E4E
@@ -37,8 +37,8 @@ lbl_8043CD64:
 	.4byte 0x20307825
 	.4byte 0x78000000
 
-.global lbl_8043CD90
-lbl_8043CD90:
+.global "@1777_8043CD90"
+"@1777_8043CD90":
 
 	.4byte 0x4741505F
 	.4byte 0x434F4E4E
@@ -51,8 +51,8 @@ lbl_8043CD90:
 	.4byte 0x20307825
 	.4byte 0x78000000
 
-.global lbl_8043CDB8
-lbl_8043CDB8:
+.global "@1798_8043CDB8"
+"@1798_8043CDB8":
 
 	.4byte 0x4741505F
 	.4byte 0x434F4E4E

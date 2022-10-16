@@ -1,13 +1,13 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80405194
-lbl_80405194:
+.global init__Q27storage13VolatileData2Fv
+init__Q27storage13VolatileData2Fv:
 /* 80405194 00400FD4  38 80 00 00 */	li r4, 0x0
 /* 80405198 00400FD8  38 A0 10 58 */	li r5, 0x1058
-/* 8040519C 00400FDC  4B BF F1 B4 */	b func_80004350
-.global lbl_804051A0
-lbl_804051A0:
+/* 8040519C 00400FDC  4B BF F1 B4 */	b memset
+.global onSoftReset__Q27storage13VolatileData2Fv
+onSoftReset__Q27storage13VolatileData2Fv:
 /* 804051A0 00400FE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 804051A4 00400FE4  7C 08 02 A6 */	mflr r0
 /* 804051A8 00400FE8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -15,7 +15,7 @@ lbl_804051A0:
 /* 804051B0 00400FF0  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 804051B4 00400FF4  7C 7E 1B 78 */	mr r30, r3
 /* 804051B8 00400FF8  8B E3 00 00 */	lbz r31, 0x0(r3)
-/* 804051BC 00400FFC  4B FF FF D9 */	bl lbl_80405194
+/* 804051BC 00400FFC  4B FF FF D9 */	bl init__Q27storage13VolatileData2Fv
 /* 804051C0 00401000  9B FE 00 00 */	stb r31, 0x0(r30)
 /* 804051C4 00401004  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 804051C8 00401008  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -23,8 +23,8 @@ lbl_804051A0:
 /* 804051D0 00401010  7C 08 03 A6 */	mtlr r0
 /* 804051D4 00401014  38 21 00 10 */	addi r1, r1, 0x10
 /* 804051D8 00401018  4E 80 00 20 */	blr
-.global lbl_804051DC
-lbl_804051DC:
+.global onEnterStage__Q27storage13VolatileData2Fv
+onEnterStage__Q27storage13VolatileData2Fv:
 /* 804051DC 0040101C  94 21 EF B0 */	stwu r1, -0x1050(r1)
 /* 804051E0 00401020  38 A1 00 04 */	addi r5, r1, 0x4
 /* 804051E4 00401024  38 80 00 00 */	li r4, 0x0
@@ -63,8 +63,8 @@ lbl_80405240:
 /* 80405250 00401090  42 00 FF F0 */	bdnz lbl_80405240
 /* 80405254 00401094  38 21 10 50 */	addi r1, r1, 0x1050
 /* 80405258 00401098  4E 80 00 20 */	blr
-.global lbl_8040525C
-lbl_8040525C:
+.global addIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2
+addIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2:
 /* 8040525C 0040109C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80405260 004010A0  7C 08 02 A6 */	mflr r0
 /* 80405264 004010A4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -73,7 +73,7 @@ lbl_8040525C:
 /* 80405270 004010B0  7C 7D 1B 78 */	mr r29, r3
 /* 80405274 004010B4  7C 9E 23 78 */	mr r30, r4
 /* 80405278 004010B8  7C BF 2B 78 */	mr r31, r5
-/* 8040527C 004010BC  48 00 00 65 */	bl lbl_804052E0
+/* 8040527C 004010BC  48 00 00 65 */	bl isExistIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2
 /* 80405280 004010C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80405284 004010C4  40 82 00 44 */	bne lbl_804052C8
 /* 80405288 004010C8  80 1D 00 00 */	lwz r0, 0x0(r29)
@@ -100,8 +100,8 @@ lbl_804052C8:
 /* 804052D4 00401114  7C 08 03 A6 */	mtlr r0
 /* 804052D8 00401118  38 21 00 20 */	addi r1, r1, 0x20
 /* 804052DC 0040111C  4E 80 00 20 */	blr
-.global lbl_804052E0
-lbl_804052E0:
+.global isExistIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2
+isExistIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2:
 /* 804052E0 00401120  38 C0 00 00 */	li r6, 0x0
 /* 804052E4 00401124  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 804052E8 00401128  7C 09 03 A6 */	mtctr r0
@@ -131,8 +131,8 @@ lbl_8040532C:
 lbl_80405334:
 /* 80405334 00401174  38 60 00 00 */	li r3, 0x0
 /* 80405338 00401178  4E 80 00 20 */	blr
-.global lbl_8040533C
-lbl_8040533C:
+.global addMoveGroupSaveData__Q37storage13VolatileData213StepStageDataFlQ53scn4step7gimmick13movegroupctrl17MoveGroupSaveData
+addMoveGroupSaveData__Q37storage13VolatileData213StepStageDataFlQ53scn4step7gimmick13movegroupctrl17MoveGroupSaveData:
 /* 8040533C 0040117C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80405340 00401180  7C 08 02 A6 */	mflr r0
 /* 80405344 00401184  90 01 00 14 */	stw r0, 0x14(r1)
@@ -165,7 +165,7 @@ lbl_8040533C:
 /* 804053B0 004011F0  90 07 0F 18 */	stw r0, 0xf18(r7)
 /* 804053B4 004011F4  88 A5 00 00 */	lbz r5, 0x0(r5)
 /* 804053B8 004011F8  7C A5 07 74 */	extsb r5, r5
-/* 804053BC 004011FC  48 00 00 2D */	bl lbl_804053E8
+/* 804053BC 004011FC  48 00 00 2D */	bl isExistMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll
 /* 804053C0 00401200  2C 03 00 00 */	cmpwi r3, 0x0
 /* 804053C4 00401204  40 82 00 10 */	bne lbl_804053D4
 /* 804053C8 00401208  80 7F 0F 04 */	lwz r3, 0xf04(r31)
@@ -178,8 +178,8 @@ lbl_804053D4:
 /* 804053DC 0040121C  7C 08 03 A6 */	mtlr r0
 /* 804053E0 00401220  38 21 00 10 */	addi r1, r1, 0x10
 /* 804053E4 00401224  4E 80 00 20 */	blr
-.global lbl_804053E8
-lbl_804053E8:
+.global isExistMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll
+isExistMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll:
 /* 804053E8 00401228  38 C0 00 00 */	li r6, 0x0
 /* 804053EC 0040122C  80 03 0F 04 */	lwz r0, 0xf04(r3)
 /* 804053F0 00401230  7C 09 03 A6 */	mtctr r0
@@ -205,13 +205,13 @@ lbl_80405424:
 lbl_8040542C:
 /* 8040542C 0040126C  38 60 00 00 */	li r3, 0x0
 /* 80405430 00401270  4E 80 00 20 */	blr
-.global lbl_80405434
-lbl_80405434:
+.global clearMoveGroupSaveData__Q37storage13VolatileData213StepStageDataFv
+clearMoveGroupSaveData__Q37storage13VolatileData213StepStageDataFv:
 /* 80405434 00401274  38 00 00 00 */	li r0, 0x0
 /* 80405438 00401278  90 03 0F 04 */	stw r0, 0xf04(r3)
 /* 8040543C 0040127C  4E 80 00 20 */	blr
-.global lbl_80405440
-lbl_80405440:
+.global getMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll
+getMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll:
 /* 80405440 00401280  38 E0 00 00 */	li r7, 0x0
 /* 80405444 00401284  80 04 0F 04 */	lwz r0, 0xf04(r4)
 /* 80405448 00401288  7C 09 03 A6 */	mtctr r0
@@ -260,18 +260,18 @@ lbl_804054BC:
 /* 804054DC 0040131C  98 83 00 04 */	stb r4, 0x4(r3)
 /* 804054E0 00401320  98 83 00 05 */	stb r4, 0x5(r3)
 /* 804054E4 00401324  98 83 00 06 */	stb r4, 0x6(r3)
-/* 804054E8 00401328  C0 02 E3 F0 */	lfs f0, lbl_80564370@sda21(r2)
+/* 804054E8 00401328  C0 02 E3 F0 */	lfs f0, "@49921"@sda21(r2)
 /* 804054EC 0040132C  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 804054F0 00401330  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 804054F4 00401334  4E 80 00 20 */	blr
-.global lbl_804054F8
-lbl_804054F8:
+.global updateSaveTiming__Q27storage13VolatileData2FQ27storage10SaveTiming
+updateSaveTiming__Q27storage13VolatileData2FQ27storage10SaveTiming:
 /* 804054F8 00401338  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 804054FC 0040133C  7C 00 20 00 */	cmpw r0, r4
 /* 80405500 00401340  4C 80 00 20 */	bgelr
 /* 80405504 00401344  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80405508 00401348  4E 80 00 20 */	blr
-.global lbl_8040550C
-lbl_8040550C:
+.global setLevelKind__Q27storage13VolatileData2FQ33scn4step9LevelKind
+setLevelKind__Q27storage13VolatileData2FQ33scn4step9LevelKind:
 /* 8040550C 0040134C  90 83 10 54 */	stw r4, 0x1054(r3)
 /* 80405510 00401350  4E 80 00 20 */	blr

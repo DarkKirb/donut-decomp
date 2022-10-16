@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047AF08
-lbl_8047AF08:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky16StateCliffAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky16StateCliffAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D5E44
-	.4byte lbl_802D5E08
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky16StateCliffAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky16StateCliffAttack,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047AF18
-lbl_8047AF18:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802D5E40
-	.4byte lbl_802D5E24
-
-.global lbl_8047AF28
-lbl_8047AF28:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky12StateWalkEnd,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky12StateWalkEnd,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D5758
-	.4byte lbl_802D575C
-	.4byte lbl_802D5AB0
-	.4byte lbl_8028DDE0
-	.4byte lbl_802D5B64
-	.4byte lbl_8028DDE8
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky12StateWalkEnd,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5rocky12StateWalkEnd,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy5rocky9StateWalk
+__vt__Q53scn4step5enemy5rocky9StateWalk:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5rocky9StateWalkFv
+	.4byte procAnim__Q53scn4step5enemy5rocky9StateWalkFv
+	.4byte procMove__Q53scn4step5enemy5rocky9StateWalkFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5rocky9StateWalkFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

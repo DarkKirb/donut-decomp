@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80047090
-lbl_80047090:
+.global CXGetUncompressedSize
+CXGetUncompressedSize:
 /* 80047090 00042ED0  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 80047094 00042ED4  54 A4 42 1E */	rlwinm r4, r5, 8, 8, 15
 /* 80047098 00042ED8  54 A0 C4 2E */	rlwinm r0, r5, 24, 16, 23

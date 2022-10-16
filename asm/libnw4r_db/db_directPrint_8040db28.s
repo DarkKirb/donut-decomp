@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040DB28
-lbl_8040DB28:
+.global sAsciiTable__Q24nw4r2db
+sAsciiTable__Q24nw4r2db:
 
 	.4byte 0x7A7A7A7A
 	.4byte 0x7A7A7A7A
@@ -37,8 +37,8 @@ lbl_8040DB28:
 	.4byte 0x94959676
 	.4byte 0x7778797A
 
-.global lbl_8040DBA8
-lbl_8040DBA8:
+.global sFontData__Q24nw4r2db
+sFontData__Q24nw4r2db:
 
 	.4byte 0x70871C30
 	.4byte 0x8988A250
@@ -105,8 +105,8 @@ lbl_8040DBA8:
 	.4byte 0x20800020
 	.4byte 0
 
-.global lbl_8040DCA8
-lbl_8040DCA8:
+.global sFontData2__Q24nw4r2db
+sFontData2__Q24nw4r2db:
 
 	.4byte 0x51421820
 	.4byte 0x53E7A420

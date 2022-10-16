@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011C4E0
-lbl_8011C4E0:
+.global GetInstance__Q44nw4r3snd6detail12VoiceManagerFv
+GetInstance__Q44nw4r3snd6detail12VoiceManagerFv:
 /* 8011C4E0 00118320  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011C4E4 00118324  7C 08 02 A6 */	mflr r0
 /* 8011C4E8 00118328  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011C4EC 0011832C  88 0D EC 38 */	lbz r0, lbl_8055D058@sda21(r13)
+/* 8011C4EC 0011832C  88 0D EC 38 */	lbz r0, "@GUARD@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@sda21(r13)
 /* 8011C4F0 00118330  7C 00 07 75 */	extsb. r0, r0
 /* 8011C4F4 00118334  40 82 00 50 */	bne lbl_8011C544
-/* 8011C4F8 00118338  3C C0 80 54 */	lis r6, lbl_8054300C@ha
+/* 8011C4F8 00118338  3C C0 80 54 */	lis r6, "@LOCAL@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@ha
 /* 8011C4FC 0011833C  38 00 00 00 */	li r0, 0x0
-/* 8011C500 00118340  38 66 30 0C */	addi r3, r6, lbl_8054300C@l
-/* 8011C504 00118344  3C 80 80 12 */	lis r4, lbl_8011C560@ha
+/* 8011C500 00118340  38 66 30 0C */	addi r3, r6, "@LOCAL@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@l
+/* 8011C504 00118344  3C 80 80 12 */	lis r4, __dt__Q44nw4r3snd6detail12VoiceManagerFv@ha
 /* 8011C508 00118348  39 03 00 08 */	addi r8, r3, 0x8
-/* 8011C50C 0011834C  3C A0 80 54 */	lis r5, lbl_80543000@ha
+/* 8011C50C 0011834C  3C A0 80 54 */	lis r5, "@3460"@ha
 /* 8011C510 00118350  38 E3 00 14 */	addi r7, r3, 0x14
 /* 8011C514 00118354  98 06 30 0C */	stb r0, 0x300c(r6)
-/* 8011C518 00118358  38 84 C5 60 */	addi r4, r4, lbl_8011C560@l
-/* 8011C51C 0011835C  38 A5 30 00 */	addi r5, r5, lbl_80543000@l
+/* 8011C518 00118358  38 84 C5 60 */	addi r4, r4, __dt__Q44nw4r3snd6detail12VoiceManagerFv@l
+/* 8011C51C 0011835C  38 A5 30 00 */	addi r5, r5, "@3460"@l
 /* 8011C520 00118360  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8011C524 00118364  91 03 00 08 */	stw r8, 0x8(r3)
 /* 8011C528 00118368  91 03 00 0C */	stw r8, 0xc(r3)
@@ -27,18 +27,18 @@ lbl_8011C4E0:
 /* 8011C534 00118374  90 E3 00 18 */	stw r7, 0x18(r3)
 /* 8011C538 00118378  4B EE A6 39 */	bl lbl_80006B70
 /* 8011C53C 0011837C  38 00 00 01 */	li r0, 0x1
-/* 8011C540 00118380  98 0D EC 38 */	stb r0, lbl_8055D058@sda21(r13)
+/* 8011C540 00118380  98 0D EC 38 */	stb r0, "@GUARD@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@sda21(r13)
 .global lbl_8011C544
 lbl_8011C544:
 /* 8011C544 00118384  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 8011C548 00118388  3C 60 80 54 */	lis r3, lbl_8054300C@ha
-/* 8011C54C 0011838C  38 63 30 0C */	addi r3, r3, lbl_8054300C@l
+/* 8011C548 00118388  3C 60 80 54 */	lis r3, "@LOCAL@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@ha
+/* 8011C54C 0011838C  38 63 30 0C */	addi r3, r3, "@LOCAL@GetInstance__Q44nw4r3snd6detail12VoiceManagerFv@instance"@l
 /* 8011C550 00118390  7C 08 03 A6 */	mtlr r0
 /* 8011C554 00118394  38 21 00 10 */	addi r1, r1, 0x10
 /* 8011C558 00118398  4E 80 00 20 */	blr
 /* 8011C55C 0011839C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011C560
-lbl_8011C560:
+.global __dt__Q44nw4r3snd6detail12VoiceManagerFv
+__dt__Q44nw4r3snd6detail12VoiceManagerFv:
 /* 8011C560 001183A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011C564 001183A4  7C 08 02 A6 */	mflr r0
 /* 8011C568 001183A8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -51,19 +51,19 @@ lbl_8011C560:
 /* 8011C584 001183C4  34 63 00 10 */	addic. r3, r3, 0x10
 /* 8011C588 001183C8  41 82 00 0C */	beq lbl_8011C594
 /* 8011C58C 001183CC  38 80 00 00 */	li r4, 0x0
-/* 8011C590 001183D0  48 00 36 F1 */	bl lbl_8011FC80
+/* 8011C590 001183D0  48 00 36 F1 */	bl __dt__Q44nw4r2ut6detail12LinkListImplFv
 .global lbl_8011C594
 lbl_8011C594:
 /* 8011C594 001183D4  34 7E 00 04 */	addic. r3, r30, 0x4
 /* 8011C598 001183D8  41 82 00 0C */	beq lbl_8011C5A4
 /* 8011C59C 001183DC  38 80 00 00 */	li r4, 0x0
-/* 8011C5A0 001183E0  48 00 36 E1 */	bl lbl_8011FC80
+/* 8011C5A0 001183E0  48 00 36 E1 */	bl __dt__Q44nw4r2ut6detail12LinkListImplFv
 .global lbl_8011C5A4
 lbl_8011C5A4:
 /* 8011C5A4 001183E4  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8011C5A8 001183E8  40 81 00 0C */	ble lbl_8011C5B4
 /* 8011C5AC 001183EC  7F C3 F3 78 */	mr r3, r30
-/* 8011C5B0 001183F0  48 0A 31 65 */	bl lbl_801BF714
+/* 8011C5B0 001183F0  48 0A 31 65 */	bl __dl__FPv
 .global lbl_8011C5B4
 lbl_8011C5B4:
 /* 8011C5B4 001183F4  7F C3 F3 78 */	mr r3, r30
@@ -73,14 +73,14 @@ lbl_8011C5B4:
 /* 8011C5C4 00118404  7C 08 03 A6 */	mtlr r0
 /* 8011C5C8 00118408  38 21 00 10 */	addi r1, r1, 0x10
 /* 8011C5CC 0011840C  4E 80 00 20 */	blr
-.global lbl_8011C5D0
-lbl_8011C5D0:
+.global GetRequiredMemSize__Q44nw4r3snd6detail12VoiceManagerFi
+GetRequiredMemSize__Q44nw4r3snd6detail12VoiceManagerFi:
 /* 8011C5D0 00118410  1C 64 01 04 */	mulli r3, r4, 0x104
 /* 8011C5D4 00118414  4E 80 00 20 */	blr
 /* 8011C5D8 00118418  00 00 00 00 */	.4byte 0x00000000
 /* 8011C5DC 0011841C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011C5E0
-lbl_8011C5E0:
+.global Setup__Q44nw4r3snd6detail12VoiceManagerFPvUl
+Setup__Q44nw4r3snd6detail12VoiceManagerFPvUl:
 /* 8011C5E0 00118420  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8011C5E4 00118424  7C 08 02 A6 */	mflr r0
 /* 8011C5E8 00118428  90 01 00 34 */	stw r0, 0x34(r1)
@@ -105,7 +105,7 @@ lbl_8011C628:
 /* 8011C62C 0011846C  7F A5 EB 78 */	mr r5, r29
 /* 8011C630 00118470  41 82 00 10 */	beq lbl_8011C640
 /* 8011C634 00118474  7F A3 EB 78 */	mr r3, r29
-/* 8011C638 00118478  4B FF D5 A9 */	bl lbl_80119BE0
+/* 8011C638 00118478  4B FF D5 A9 */	bl __ct__Q44nw4r3snd6detail5VoiceFv
 /* 8011C63C 0011847C  7C 65 1B 78 */	mr r5, r3
 .global lbl_8011C640
 lbl_8011C640:
@@ -113,7 +113,7 @@ lbl_8011C640:
 /* 8011C644 00118484  38 7B 00 10 */	addi r3, r27, 0x10
 /* 8011C648 00118488  38 81 00 08 */	addi r4, r1, 0x8
 /* 8011C64C 0011848C  38 A5 00 FC */	addi r5, r5, 0xfc
-/* 8011C650 00118490  48 00 37 61 */	bl lbl_8011FDB0
+/* 8011C650 00118490  48 00 37 61 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 /* 8011C654 00118494  3B BD 01 04 */	addi r29, r29, 0x104
 /* 8011C658 00118498  3B 9C 00 01 */	addi r28, r28, 0x1
 .global lbl_8011C65C
@@ -135,8 +135,8 @@ lbl_8011C66C:
 /* 8011C684 001184C4  00 00 00 00 */	.4byte 0x00000000
 /* 8011C688 001184C8  00 00 00 00 */	.4byte 0x00000000
 /* 8011C68C 001184CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011C690
-lbl_8011C690:
+.global Shutdown__Q44nw4r3snd6detail12VoiceManagerFv
+Shutdown__Q44nw4r3snd6detail12VoiceManagerFv:
 /* 8011C690 001184D0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011C694 001184D4  7C 08 02 A6 */	mflr r0
 /* 8011C698 001184D8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -147,7 +147,7 @@ lbl_8011C690:
 /* 8011C6AC 001184EC  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 8011C6B0 001184F0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8011C6B4 001184F4  41 82 00 A0 */	beq lbl_8011C754
-/* 8011C6B8 001184F8  4B F0 51 69 */	bl lbl_80021820
+/* 8011C6B8 001184F8  4B F0 51 69 */	bl OSDisableInterrupts
 /* 8011C6BC 001184FC  7C 7F 1B 78 */	mr r31, r3
 /* 8011C6C0 00118500  48 00 00 3C */	b lbl_8011C6FC
 .global lbl_8011C6C4
@@ -155,7 +155,7 @@ lbl_8011C6C4:
 /* 8011C6C4 00118504  80 7D 00 08 */	lwz r3, 0x8(r29)
 /* 8011C6C8 00118508  3B C3 FF 04 */	addi r30, r3, -0xfc
 /* 8011C6CC 0011850C  7F C3 F3 78 */	mr r3, r30
-/* 8011C6D0 00118510  4B FF E2 41 */	bl lbl_8011A910
+/* 8011C6D0 00118510  4B FF E2 41 */	bl Stop__Q44nw4r3snd6detail5VoiceFv
 /* 8011C6D4 00118514  81 9E 00 94 */	lwz r12, 0x94(r30)
 /* 8011C6D8 00118518  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 8011C6DC 0011851C  41 82 00 18 */	beq lbl_8011C6F4
@@ -167,14 +167,14 @@ lbl_8011C6C4:
 .global lbl_8011C6F4
 lbl_8011C6F4:
 /* 8011C6F4 00118534  7F C3 F3 78 */	mr r3, r30
-/* 8011C6F8 00118538  4B FF DF 29 */	bl lbl_8011A620
+/* 8011C6F8 00118538  4B FF DF 29 */	bl Free__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011C6FC
 lbl_8011C6FC:
 /* 8011C6FC 0011853C  80 1D 00 04 */	lwz r0, 0x4(r29)
 /* 8011C700 00118540  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8011C704 00118544  40 82 FF C0 */	bne lbl_8011C6C4
 /* 8011C708 00118548  7F E3 FB 78 */	mr r3, r31
-/* 8011C70C 0011854C  4B F0 51 55 */	bl lbl_80021860
+/* 8011C70C 0011854C  4B F0 51 55 */	bl OSRestoreInterrupts
 /* 8011C710 00118550  48 00 00 30 */	b lbl_8011C740
 .global lbl_8011C714
 lbl_8011C714:
@@ -182,7 +182,7 @@ lbl_8011C714:
 /* 8011C718 00118558  38 7D 00 10 */	addi r3, r29, 0x10
 /* 8011C71C 0011855C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8011C720 00118560  38 81 00 08 */	addi r4, r1, 0x8
-/* 8011C724 00118564  48 00 35 ED */	bl lbl_8011FD10
+/* 8011C724 00118564  48 00 35 ED */	bl Erase__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8Iterator
 /* 8011C728 00118568  81 9E FF 0C */	lwz r12, -0xf4(r30)
 /* 8011C72C 0011856C  38 7E FF 04 */	addi r3, r30, -0xfc
 /* 8011C730 00118570  38 80 FF FF */	li r4, -0x1
@@ -205,8 +205,8 @@ lbl_8011C754:
 /* 8011C764 001185A4  7C 08 03 A6 */	mtlr r0
 /* 8011C768 001185A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011C76C 001185AC  4E 80 00 20 */	blr
-.global lbl_8011C770
-lbl_8011C770:
+.global AllocVoice__Q44nw4r3snd6detail12VoiceManagerFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv
+AllocVoice__Q44nw4r3snd6detail12VoiceManagerFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv:
 /* 8011C770 001185B0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8011C774 001185B4  7C 08 02 A6 */	mflr r0
 /* 8011C778 001185B8  90 01 00 44 */	stw r0, 0x44(r1)
@@ -218,7 +218,7 @@ lbl_8011C770:
 /* 8011C790 001185D0  7C D9 33 78 */	mr r25, r6
 /* 8011C794 001185D4  7C FA 3B 78 */	mr r26, r7
 /* 8011C798 001185D8  7D 1B 43 78 */	mr r27, r8
-/* 8011C79C 001185DC  4B F0 50 85 */	bl lbl_80021820
+/* 8011C79C 001185DC  4B F0 50 85 */	bl OSDisableInterrupts
 /* 8011C7A0 001185E0  80 1F 00 10 */	lwz r0, 0x10(r31)
 /* 8011C7A4 001185E4  7C 7E 1B 78 */	mr r30, r3
 /* 8011C7A8 001185E8  2C 00 00 00 */	cmpwi r0, 0x0
@@ -238,9 +238,9 @@ lbl_8011C7D4:
 /* 8011C7D8 00118618  7F 83 E3 78 */	mr r3, r28
 /* 8011C7DC 0011861C  80 1C 00 90 */	lwz r0, 0x90(r28)
 /* 8011C7E0 00118620  7F A4 01 D6 */	mullw r29, r4, r0
-/* 8011C7E4 00118624  4B FF E1 2D */	bl lbl_8011A910
+/* 8011C7E4 00118624  4B FF E1 2D */	bl Stop__Q44nw4r3snd6detail5VoiceFv
 /* 8011C7E8 00118628  7F 83 E3 78 */	mr r3, r28
-/* 8011C7EC 0011862C  4B FF DE 35 */	bl lbl_8011A620
+/* 8011C7EC 0011862C  4B FF DE 35 */	bl Free__Q44nw4r3snd6detail5VoiceFv
 /* 8011C7F0 00118630  81 9C 00 94 */	lwz r12, 0x94(r28)
 /* 8011C7F4 00118634  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 8011C7F8 00118638  41 82 00 18 */	beq lbl_8011C810
@@ -254,7 +254,7 @@ lbl_8011C810:
 /* 8011C810 00118650  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8011C814 00118654  40 82 00 14 */	bne lbl_8011C828
 /* 8011C818 00118658  7F C3 F3 78 */	mr r3, r30
-/* 8011C81C 0011865C  4B F0 50 45 */	bl lbl_80021860
+/* 8011C81C 0011865C  4B F0 50 45 */	bl OSRestoreInterrupts
 /* 8011C820 00118660  38 60 00 00 */	li r3, 0x0
 /* 8011C824 00118664  48 00 00 F4 */	b lbl_8011C918
 .global lbl_8011C828
@@ -267,23 +267,23 @@ lbl_8011C828:
 /* 8011C83C 0011867C  7F 47 D3 78 */	mr r7, r26
 /* 8011C840 00118680  7F 83 E3 78 */	mr r3, r28
 /* 8011C844 00118684  7F 68 DB 78 */	mr r8, r27
-/* 8011C848 00118688  4B FF DB 99 */	bl lbl_8011A3E0
+/* 8011C848 00118688  4B FF DB 99 */	bl Acquire__Q44nw4r3snd6detail5VoiceFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv
 /* 8011C84C 0011868C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8011C850 00118690  40 82 00 14 */	bne lbl_8011C864
 /* 8011C854 00118694  7F C3 F3 78 */	mr r3, r30
-/* 8011C858 00118698  4B F0 50 09 */	bl lbl_80021860
+/* 8011C858 00118698  4B F0 50 09 */	bl OSRestoreInterrupts
 /* 8011C85C 0011869C  38 60 00 00 */	li r3, 0x0
 /* 8011C860 001186A0  48 00 00 B8 */	b lbl_8011C918
 .global lbl_8011C864
 lbl_8011C864:
 /* 8011C864 001186A4  57 20 06 3E */	clrlwi r0, r25, 24
 /* 8011C868 001186A8  90 1C 00 A8 */	stw r0, 0xa8(r28)
-/* 8011C86C 001186AC  4B F0 4F B5 */	bl lbl_80021820
+/* 8011C86C 001186AC  4B F0 4F B5 */	bl OSDisableInterrupts
 /* 8011C870 001186B0  3B 7C 00 FC */	addi r27, r28, 0xfc
 /* 8011C874 001186B4  7C 7D 1B 78 */	mr r29, r3
 /* 8011C878 001186B8  7F 64 DB 78 */	mr r4, r27
 /* 8011C87C 001186BC  38 7F 00 10 */	addi r3, r31, 0x10
-/* 8011C880 001186C0  48 00 35 61 */	bl lbl_8011FDE0
+/* 8011C880 001186C0  48 00 35 61 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
 /* 8011C884 001186C4  38 7F 00 08 */	addi r3, r31, 0x8
 /* 8011C888 001186C8  48 00 00 20 */	b lbl_8011C8A8
 /* 8011C88C 001186CC  60 00 00 00 */	nop
@@ -306,9 +306,9 @@ lbl_8011C8B4:
 /* 8011C8B8 001186F8  7F 65 DB 78 */	mr r5, r27
 /* 8011C8BC 001186FC  38 7F 00 04 */	addi r3, r31, 0x4
 /* 8011C8C0 00118700  38 81 00 08 */	addi r4, r1, 0x8
-/* 8011C8C4 00118704  48 00 34 ED */	bl lbl_8011FDB0
+/* 8011C8C4 00118704  48 00 34 ED */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 /* 8011C8C8 00118708  7F A3 EB 78 */	mr r3, r29
-/* 8011C8CC 0011870C  4B F0 4F 95 */	bl lbl_80021860
+/* 8011C8CC 0011870C  4B F0 4F 95 */	bl OSRestoreInterrupts
 /* 8011C8D0 00118710  3B BF 00 08 */	addi r29, r31, 0x8
 /* 8011C8D4 00118714  48 00 00 24 */	b lbl_8011C8F8
 .global lbl_8011C8D8
@@ -319,7 +319,7 @@ lbl_8011C8D8:
 /* 8011C8E4 00118724  40 81 00 1C */	ble lbl_8011C900
 /* 8011C8E8 00118728  2C 00 00 FF */	cmpwi r0, 0xff
 /* 8011C8EC 0011872C  41 82 00 08 */	beq lbl_8011C8F4
-/* 8011C8F0 00118730  4B FF E5 51 */	bl lbl_8011AE40
+/* 8011C8F0 00118730  4B FF E5 51 */	bl UpdateVoicesPriority__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011C8F4
 lbl_8011C8F4:
 /* 8011C8F4 00118734  83 7B 00 00 */	lwz r27, 0x0(r27)
@@ -329,11 +329,11 @@ lbl_8011C8F8:
 /* 8011C8FC 0011873C  40 82 FF DC */	bne lbl_8011C8D8
 .global lbl_8011C900
 lbl_8011C900:
-/* 8011C900 00118740  4B FE B7 71 */	bl lbl_80108070
+/* 8011C900 00118740  4B FE B7 71 */	bl GetInstance__Q44nw4r3snd6detail22DisposeCallbackManagerFv
 /* 8011C904 00118744  7F 84 E3 78 */	mr r4, r28
-/* 8011C908 00118748  4B FE B8 59 */	bl lbl_80108160
+/* 8011C908 00118748  4B FE B8 59 */	bl RegisterDisposeCallback__Q44nw4r3snd6detail22DisposeCallbackManagerFPQ44nw4r3snd6detail15DisposeCallback
 /* 8011C90C 0011874C  7F C3 F3 78 */	mr r3, r30
-/* 8011C910 00118750  4B F0 4F 51 */	bl lbl_80021860
+/* 8011C910 00118750  4B F0 4F 51 */	bl OSRestoreInterrupts
 /* 8011C914 00118754  7F 83 E3 78 */	mr r3, r28
 .global lbl_8011C918
 lbl_8011C918:
@@ -343,8 +343,8 @@ lbl_8011C918:
 /* 8011C924 00118764  7C 08 03 A6 */	mtlr r0
 /* 8011C928 00118768  38 21 00 40 */	addi r1, r1, 0x40
 /* 8011C92C 0011876C  4E 80 00 20 */	blr
-.global lbl_8011C930
-lbl_8011C930:
+.global FreeVoice__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice
+FreeVoice__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice:
 /* 8011C930 00118770  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011C934 00118774  7C 08 02 A6 */	mflr r0
 /* 8011C938 00118778  90 01 00 24 */	stw r0, 0x24(r1)
@@ -354,27 +354,27 @@ lbl_8011C930:
 /* 8011C948 00118788  7C 9D 23 78 */	mr r29, r4
 /* 8011C94C 0011878C  93 81 00 10 */	stw r28, 0x10(r1)
 /* 8011C950 00118790  7C 7C 1B 78 */	mr r28, r3
-/* 8011C954 00118794  4B F0 4E CD */	bl lbl_80021820
+/* 8011C954 00118794  4B F0 4E CD */	bl OSDisableInterrupts
 /* 8011C958 00118798  7C 7F 1B 78 */	mr r31, r3
-/* 8011C95C 0011879C  4B FE B7 15 */	bl lbl_80108070
+/* 8011C95C 0011879C  4B FE B7 15 */	bl GetInstance__Q44nw4r3snd6detail22DisposeCallbackManagerFv
 /* 8011C960 001187A0  7F A4 EB 78 */	mr r4, r29
-/* 8011C964 001187A4  4B FE B8 2D */	bl lbl_80108190
-/* 8011C968 001187A8  4B F0 4E B9 */	bl lbl_80021820
+/* 8011C964 001187A4  4B FE B8 2D */	bl UnregisterDisposeCallback__Q44nw4r3snd6detail22DisposeCallbackManagerFPQ44nw4r3snd6detail15DisposeCallback
+/* 8011C968 001187A8  4B F0 4E B9 */	bl OSDisableInterrupts
 /* 8011C96C 001187AC  3B BD 00 FC */	addi r29, r29, 0xfc
 /* 8011C970 001187B0  7C 7E 1B 78 */	mr r30, r3
 /* 8011C974 001187B4  7F A4 EB 78 */	mr r4, r29
 /* 8011C978 001187B8  38 7C 00 04 */	addi r3, r28, 0x4
-/* 8011C97C 001187BC  48 00 34 65 */	bl lbl_8011FDE0
+/* 8011C97C 001187BC  48 00 34 65 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
 /* 8011C980 001187C0  38 1C 00 14 */	addi r0, r28, 0x14
 /* 8011C984 001187C4  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8011C988 001187C8  7F A5 EB 78 */	mr r5, r29
 /* 8011C98C 001187CC  38 7C 00 10 */	addi r3, r28, 0x10
 /* 8011C990 001187D0  38 81 00 08 */	addi r4, r1, 0x8
-/* 8011C994 001187D4  48 00 34 1D */	bl lbl_8011FDB0
+/* 8011C994 001187D4  48 00 34 1D */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 /* 8011C998 001187D8  7F C3 F3 78 */	mr r3, r30
-/* 8011C99C 001187DC  4B F0 4E C5 */	bl lbl_80021860
+/* 8011C99C 001187DC  4B F0 4E C5 */	bl OSRestoreInterrupts
 /* 8011C9A0 001187E0  7F E3 FB 78 */	mr r3, r31
-/* 8011C9A4 001187E4  4B F0 4E BD */	bl lbl_80021860
+/* 8011C9A4 001187E4  4B F0 4E BD */	bl OSRestoreInterrupts
 /* 8011C9A8 001187E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8011C9AC 001187EC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8011C9B0 001187F0  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -385,8 +385,8 @@ lbl_8011C930:
 /* 8011C9C4 00118804  4E 80 00 20 */	blr
 /* 8011C9C8 00118808  00 00 00 00 */	.4byte 0x00000000
 /* 8011C9CC 0011880C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011C9D0
-lbl_8011C9D0:
+.global UpdateAllVoices__Q44nw4r3snd6detail12VoiceManagerFv
+UpdateAllVoices__Q44nw4r3snd6detail12VoiceManagerFv:
 /* 8011C9D0 00118810  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011C9D4 00118814  7C 08 02 A6 */	mflr r0
 /* 8011C9D8 00118818  90 01 00 24 */	stw r0, 0x24(r1)
@@ -402,7 +402,7 @@ lbl_8011C9F8:
 /* 8011C9F8 00118838  7F E3 FB 78 */	mr r3, r31
 /* 8011C9FC 0011883C  83 FF 00 00 */	lwz r31, 0x0(r31)
 /* 8011CA00 00118840  38 63 FF 04 */	addi r3, r3, -0xfc
-/* 8011CA04 00118844  4B FF D3 ED */	bl lbl_80119DF0
+/* 8011CA04 00118844  4B FF D3 ED */	bl StopFinished__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011CA08
 lbl_8011CA08:
 /* 8011CA08 00118848  7C 1F F0 40 */	cmplw r31, r30
@@ -415,12 +415,12 @@ lbl_8011CA1C:
 /* 8011CA1C 0011885C  7F C3 F3 78 */	mr r3, r30
 /* 8011CA20 00118860  83 DE 00 00 */	lwz r30, 0x0(r30)
 /* 8011CA24 00118864  38 63 FF 04 */	addi r3, r3, -0xfc
-/* 8011CA28 00118868  4B FF D4 69 */	bl lbl_80119E90
+/* 8011CA28 00118868  4B FF D4 69 */	bl Calc__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011CA2C
 lbl_8011CA2C:
 /* 8011CA2C 0011886C  7C 1E F8 40 */	cmplw r30, r31
 /* 8011CA30 00118870  40 82 FF EC */	bne lbl_8011CA1C
-/* 8011CA34 00118874  4B F0 4D ED */	bl lbl_80021820
+/* 8011CA34 00118874  4B F0 4D ED */	bl OSDisableInterrupts
 /* 8011CA38 00118878  87 FD 00 08 */	lwzu r31, 0x8(r29)
 /* 8011CA3C 0011887C  7C 7E 1B 78 */	mr r30, r3
 /* 8011CA40 00118880  48 00 00 14 */	b lbl_8011CA54
@@ -429,13 +429,13 @@ lbl_8011CA44:
 /* 8011CA44 00118884  7F E3 FB 78 */	mr r3, r31
 /* 8011CA48 00118888  83 FF 00 00 */	lwz r31, 0x0(r31)
 /* 8011CA4C 0011888C  38 63 FF 04 */	addi r3, r3, -0xfc
-/* 8011CA50 00118890  4B FF D6 D1 */	bl lbl_8011A120
+/* 8011CA50 00118890  4B FF D6 D1 */	bl Update__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011CA54
 lbl_8011CA54:
 /* 8011CA54 00118894  7C 1F E8 40 */	cmplw r31, r29
 /* 8011CA58 00118898  40 82 FF EC */	bne lbl_8011CA44
 /* 8011CA5C 0011889C  7F C3 F3 78 */	mr r3, r30
-/* 8011CA60 001188A0  4B F0 4E 01 */	bl lbl_80021860
+/* 8011CA60 001188A0  4B F0 4E 01 */	bl OSRestoreInterrupts
 /* 8011CA64 001188A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8011CA68 001188A8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8011CA6C 001188AC  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -443,8 +443,8 @@ lbl_8011CA54:
 /* 8011CA74 001188B4  7C 08 03 A6 */	mtlr r0
 /* 8011CA78 001188B8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011CA7C 001188BC  4E 80 00 20 */	blr
-.global lbl_8011CA80
-lbl_8011CA80:
+.global NotifyVoiceUpdate__Q44nw4r3snd6detail12VoiceManagerFv
+NotifyVoiceUpdate__Q44nw4r3snd6detail12VoiceManagerFv:
 /* 8011CA80 001188C0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011CA84 001188C4  7C 08 02 A6 */	mflr r0
 /* 8011CA88 001188C8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -452,7 +452,7 @@ lbl_8011CA80:
 /* 8011CA90 001188D0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8011CA94 001188D4  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8011CA98 001188D8  7C 7D 1B 78 */	mr r29, r3
-/* 8011CA9C 001188DC  4B F0 4D 85 */	bl lbl_80021820
+/* 8011CA9C 001188DC  4B F0 4D 85 */	bl OSDisableInterrupts
 /* 8011CAA0 001188E0  87 DD 00 08 */	lwzu r30, 0x8(r29)
 /* 8011CAA4 001188E4  7C 7F 1B 78 */	mr r31, r3
 /* 8011CAA8 001188E8  48 00 00 14 */	b lbl_8011CABC
@@ -461,13 +461,13 @@ lbl_8011CAAC:
 /* 8011CAAC 001188EC  7F C3 F3 78 */	mr r3, r30
 /* 8011CAB0 001188F0  83 DE 00 00 */	lwz r30, 0x0(r30)
 /* 8011CAB4 001188F4  38 63 FF 04 */	addi r3, r3, -0xfc
-/* 8011CAB8 001188F8  4B FF E9 A9 */	bl lbl_8011B460
+/* 8011CAB8 001188F8  4B FF E9 A9 */	bl ResetDelta__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011CABC
 lbl_8011CABC:
 /* 8011CABC 001188FC  7C 1E E8 40 */	cmplw r30, r29
 /* 8011CAC0 00118900  40 82 FF EC */	bne lbl_8011CAAC
 /* 8011CAC4 00118904  7F E3 FB 78 */	mr r3, r31
-/* 8011CAC8 00118908  4B F0 4D 99 */	bl lbl_80021860
+/* 8011CAC8 00118908  4B F0 4D 99 */	bl OSRestoreInterrupts
 /* 8011CACC 0011890C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8011CAD0 00118910  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8011CAD4 00118914  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -477,8 +477,8 @@ lbl_8011CABC:
 /* 8011CAE4 00118924  4E 80 00 20 */	blr
 /* 8011CAE8 00118928  00 00 00 00 */	.4byte 0x00000000
 /* 8011CAEC 0011892C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011CAF0
-lbl_8011CAF0:
+.global ChangeVoicePriority__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice
+ChangeVoicePriority__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice:
 /* 8011CAF0 00118930  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8011CAF4 00118934  7C 08 02 A6 */	mflr r0
 /* 8011CAF8 00118938  90 01 00 34 */	stw r0, 0x34(r1)
@@ -486,27 +486,27 @@ lbl_8011CAF0:
 /* 8011CB00 00118940  4B EE A8 3D */	bl lbl_8000733C
 /* 8011CB04 00118944  7C 7B 1B 78 */	mr r27, r3
 /* 8011CB08 00118948  7C 9C 23 78 */	mr r28, r4
-/* 8011CB0C 0011894C  4B F0 4D 15 */	bl lbl_80021820
+/* 8011CB0C 0011894C  4B F0 4D 15 */	bl OSDisableInterrupts
 /* 8011CB10 00118950  7C 7F 1B 78 */	mr r31, r3
-/* 8011CB14 00118954  4B F0 4D 0D */	bl lbl_80021820
+/* 8011CB14 00118954  4B F0 4D 0D */	bl OSDisableInterrupts
 /* 8011CB18 00118958  3B BC 00 FC */	addi r29, r28, 0xfc
 /* 8011CB1C 0011895C  7C 7E 1B 78 */	mr r30, r3
 /* 8011CB20 00118960  7F A4 EB 78 */	mr r4, r29
 /* 8011CB24 00118964  38 7B 00 04 */	addi r3, r27, 0x4
-/* 8011CB28 00118968  48 00 32 B9 */	bl lbl_8011FDE0
+/* 8011CB28 00118968  48 00 32 B9 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
 /* 8011CB2C 0011896C  38 1B 00 14 */	addi r0, r27, 0x14
 /* 8011CB30 00118970  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8011CB34 00118974  7F A5 EB 78 */	mr r5, r29
 /* 8011CB38 00118978  38 7B 00 10 */	addi r3, r27, 0x10
 /* 8011CB3C 0011897C  38 81 00 0C */	addi r4, r1, 0xc
-/* 8011CB40 00118980  48 00 32 71 */	bl lbl_8011FDB0
+/* 8011CB40 00118980  48 00 32 71 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 /* 8011CB44 00118984  7F C3 F3 78 */	mr r3, r30
-/* 8011CB48 00118988  4B F0 4D 19 */	bl lbl_80021860
-/* 8011CB4C 0011898C  4B F0 4C D5 */	bl lbl_80021820
+/* 8011CB48 00118988  4B F0 4D 19 */	bl OSRestoreInterrupts
+/* 8011CB4C 0011898C  4B F0 4C D5 */	bl OSDisableInterrupts
 /* 8011CB50 00118990  7C 7E 1B 78 */	mr r30, r3
 /* 8011CB54 00118994  7F A4 EB 78 */	mr r4, r29
 /* 8011CB58 00118998  38 7B 00 10 */	addi r3, r27, 0x10
-/* 8011CB5C 0011899C  48 00 32 85 */	bl lbl_8011FDE0
+/* 8011CB5C 0011899C  48 00 32 85 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
 /* 8011CB60 001189A0  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8011CB64 001189A4  48 00 00 1C */	b lbl_8011CB80
 .global lbl_8011CB68
@@ -528,9 +528,9 @@ lbl_8011CB8C:
 /* 8011CB90 001189D0  7F A5 EB 78 */	mr r5, r29
 /* 8011CB94 001189D4  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8011CB98 001189D8  38 81 00 08 */	addi r4, r1, 0x8
-/* 8011CB9C 001189DC  48 00 32 15 */	bl lbl_8011FDB0
+/* 8011CB9C 001189DC  48 00 32 15 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 /* 8011CBA0 001189E0  7F C3 F3 78 */	mr r3, r30
-/* 8011CBA4 001189E4  4B F0 4C BD */	bl lbl_80021860
+/* 8011CBA4 001189E4  4B F0 4C BD */	bl OSRestoreInterrupts
 /* 8011CBA8 001189E8  3B DB 00 08 */	addi r30, r27, 0x8
 /* 8011CBAC 001189EC  48 00 00 24 */	b lbl_8011CBD0
 .global lbl_8011CBB0
@@ -541,7 +541,7 @@ lbl_8011CBB0:
 /* 8011CBBC 001189FC  40 81 00 1C */	ble lbl_8011CBD8
 /* 8011CBC0 00118A00  2C 00 00 FF */	cmpwi r0, 0xff
 /* 8011CBC4 00118A04  41 82 00 08 */	beq lbl_8011CBCC
-/* 8011CBC8 00118A08  4B FF E2 79 */	bl lbl_8011AE40
+/* 8011CBC8 00118A08  4B FF E2 79 */	bl UpdateVoicesPriority__Q44nw4r3snd6detail5VoiceFv
 .global lbl_8011CBCC
 lbl_8011CBCC:
 /* 8011CBCC 00118A0C  83 BD 00 00 */	lwz r29, 0x0(r29)
@@ -552,7 +552,7 @@ lbl_8011CBD0:
 .global lbl_8011CBD8
 lbl_8011CBD8:
 /* 8011CBD8 00118A18  7F E3 FB 78 */	mr r3, r31
-/* 8011CBDC 00118A1C  4B F0 4C 85 */	bl lbl_80021860
+/* 8011CBDC 00118A1C  4B F0 4C 85 */	bl OSRestoreInterrupts
 /* 8011CBE0 00118A20  39 61 00 30 */	addi r11, r1, 0x30
 /* 8011CBE4 00118A24  4B EE A7 A5 */	bl lbl_80007388
 /* 8011CBE8 00118A28  80 01 00 34 */	lwz r0, 0x34(r1)
@@ -561,8 +561,8 @@ lbl_8011CBD8:
 /* 8011CBF4 00118A34  4E 80 00 20 */	blr
 /* 8011CBF8 00118A38  00 00 00 00 */	.4byte 0x00000000
 /* 8011CBFC 00118A3C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011CC00
-lbl_8011CC00:
+.global UpdateAllVoicesSync__Q44nw4r3snd6detail12VoiceManagerFUl
+UpdateAllVoicesSync__Q44nw4r3snd6detail12VoiceManagerFUl:
 /* 8011CC00 00118A40  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011CC04 00118A44  7C 08 02 A6 */	mflr r0
 /* 8011CC08 00118A48  90 01 00 14 */	stw r0, 0x14(r1)
@@ -570,7 +570,7 @@ lbl_8011CC00:
 /* 8011CC10 00118A50  7C 9F 23 78 */	mr r31, r4
 /* 8011CC14 00118A54  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8011CC18 00118A58  7C 7E 1B 78 */	mr r30, r3
-/* 8011CC1C 00118A5C  4B F0 4C 05 */	bl lbl_80021820
+/* 8011CC1C 00118A5C  4B F0 4C 05 */	bl OSDisableInterrupts
 /* 8011CC20 00118A60  80 9E 00 08 */	lwz r4, 0x8(r30)
 /* 8011CC24 00118A64  38 1E 00 08 */	addi r0, r30, 0x8
 /* 8011CC28 00118A68  57 E6 04 3E */	clrlwi r6, r31, 16
@@ -589,7 +589,7 @@ lbl_8011CC30:
 lbl_8011CC50:
 /* 8011CC50 00118A90  7C 04 00 40 */	cmplw r4, r0
 /* 8011CC54 00118A94  40 82 FF DC */	bne lbl_8011CC30
-/* 8011CC58 00118A98  4B F0 4C 09 */	bl lbl_80021860
+/* 8011CC58 00118A98  4B F0 4C 09 */	bl OSRestoreInterrupts
 /* 8011CC5C 00118A9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011CC60 00118AA0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8011CC64 00118AA4  83 C1 00 08 */	lwz r30, 0x8(r1)

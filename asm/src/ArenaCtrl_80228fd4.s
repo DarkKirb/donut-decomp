@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80228FD4
-lbl_80228FD4:
+.global __ct__Q43scn4step4boss9ArenaCtrlFRQ33scn4step9Component
+__ct__Q43scn4step4boss9ArenaCtrlFRQ33scn4step9Component:
 /* 80228FD4 00224E14  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80228FD8 00224E18  38 00 00 00 */	li r0, 0x0
 /* 80228FDC 00224E1C  98 03 00 04 */	stb r0, 0x4(r3)
@@ -10,14 +10,14 @@ lbl_80228FD4:
 /* 80228FE4 00224E24  38 00 00 96 */	li r0, 0x96
 /* 80228FE8 00224E28  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80228FEC 00224E2C  4E 80 00 20 */	blr
-.global lbl_80228FF0
-lbl_80228FF0:
+.global setNextScene__Q43scn4step4boss9ArenaCtrlFb
+setNextScene__Q43scn4step4boss9ArenaCtrlFb:
 /* 80228FF0 00224E30  38 00 00 01 */	li r0, 0x1
 /* 80228FF4 00224E34  98 03 00 04 */	stb r0, 0x4(r3)
 /* 80228FF8 00224E38  98 83 00 05 */	stb r4, 0x5(r3)
 /* 80228FFC 00224E3C  4E 80 00 20 */	blr
-.global lbl_80229000
-lbl_80229000:
+.global update__Q43scn4step4boss9ArenaCtrlFv
+update__Q43scn4step4boss9ArenaCtrlFv:
 /* 80229000 00224E40  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80229004 00224E44  7C 08 02 A6 */	mflr r0
 /* 80229008 00224E48  90 01 00 24 */	stw r0, 0x24(r1)
@@ -45,26 +45,26 @@ lbl_80229000:
 /* 80229060 00224EA0  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 80229064 00224EA4  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80229068 00224EA8  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8022906C 00224EAC  4B FF 77 DD */	bl lbl_80220848
+/* 8022906C 00224EAC  4B FF 77 DD */	bl screenFade__Q33scn4step9ComponentFv
 /* 80229070 00224EB0  38 81 00 0C */	addi r4, r1, 0xc
-/* 80229074 00224EB4  48 1A 3C A1 */	bl lbl_803CCD14
+/* 80229074 00224EB4  48 1A 3C A1 */	bl setColor__Q43scn4step3sfx6BGFadeFRC8_GXColor
 /* 80229078 00224EB8  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8022907C 00224EBC  4B FF 77 CD */	bl lbl_80220848
+/* 8022907C 00224EBC  4B FF 77 CD */	bl screenFade__Q33scn4step9ComponentFv
 /* 80229080 00224EC0  38 80 00 1E */	li r4, 0x1e
-/* 80229084 00224EC4  48 1A 3C 89 */	bl lbl_803CCD0C
+/* 80229084 00224EC4  48 1A 3C 89 */	bl setFadeOut__Q43scn4step3sfx6BGFadeFUl
 .global lbl_80229088
 lbl_80229088:
 /* 80229088 00224EC8  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8022908C 00224ECC  4B FC 2D 51 */	bl lbl_801EBDDC
+/* 8022908C 00224ECC  4B FC 2D 51 */	bl charaManager__Q33scn14challengetitle9ComponentFv
 /* 80229090 00224ED0  38 80 00 08 */	li r4, 0x8
 /* 80229094 00224ED4  38 A0 00 00 */	li r5, 0x0
-/* 80229098 00224ED8  48 04 ED D1 */	bl lbl_80277E68
+/* 80229098 00224ED8  48 04 ED D1 */	bl setIsEnable__Q43scn4step4core12PauseTriggerFQ53scn4step4core12PauseTrigger10EnableKindb
 /* 8022909C 00224EDC  48 00 00 10 */	b lbl_802290AC
 .global lbl_802290A0
 lbl_802290A0:
 /* 802290A0 00224EE0  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 802290A4 00224EE4  4B FF 77 15 */	bl lbl_802207B8
-/* 802290A8 00224EE8  48 04 F9 BD */	bl lbl_80278A64
+/* 802290A4 00224EE4  4B FF 77 15 */	bl sceneChanger__Q33scn4step9ComponentFv
+/* 802290A8 00224EE8  48 04 F9 BD */	bl changeBossClearArena__Q43scn4step4core12SceneChangerFv
 .global lbl_802290AC
 lbl_802290AC:
 /* 802290AC 00224EEC  83 E1 00 1C */	lwz r31, 0x1c(r1)

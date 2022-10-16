@@ -1,27 +1,27 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802BAE48
-lbl_802BAE48:
+.global "t_SetNextState_Attack__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
+"t_SetNextState_Attack__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv":
 /* 802BAE48 002B6C88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802BAE4C 002B6C8C  7C 08 02 A6 */	mflr r0
 /* 802BAE50 002B6C90  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802BAE54 002B6C94  39 61 00 20 */	addi r11, r1, 0x20
 /* 802BAE58 002B6C98  4B D4 C4 ED */	bl lbl_80007344
-/* 802BAE5C 002B6C9C  4B FC FF 71 */	bl lbl_8028ADCC
+/* 802BAE5C 002B6C9C  4B FC FF 71 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802BAE60 002B6CA0  7C 7E 1B 78 */	mr r30, r3
-/* 802BAE64 002B6CA4  4B FC FF 69 */	bl lbl_8028ADCC
-/* 802BAE68 002B6CA8  4B FC D3 3D */	bl lbl_802881A4
+/* 802BAE64 002B6CA4  4B FC FF 69 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
+/* 802BAE68 002B6CA8  4B FC D3 3D */	bl stateChanger__Q43scn4step5enemy5EnemyFv
 /* 802BAE6C 002B6CAC  7C 7F 1B 78 */	mr r31, r3
-/* 802BAE70 002B6CB0  48 14 B0 91 */	bl lbl_80405F00
+/* 802BAE70 002B6CB0  48 14 B0 91 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 802BAE74 002B6CB4  3B BF 00 10 */	addi r29, r31, 0x10
 /* 802BAE78 002B6CB8  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 802BAE7C 002B6CBC  41 82 00 20 */	beq lbl_802BAE9C
 /* 802BAE80 002B6CC0  7F A3 EB 78 */	mr r3, r29
 /* 802BAE84 002B6CC4  38 9F 00 90 */	addi r4, r31, 0x90
-/* 802BAE88 002B6CC8  4B F7 B9 E1 */	bl lbl_80236868
-/* 802BAE8C 002B6CCC  3C 60 80 47 */	lis r3, lbl_80477AE8@ha
-/* 802BAE90 002B6CD0  38 03 7A E8 */	addi r0, r3, lbl_80477AE8@l
+/* 802BAE88 002B6CC8  4B F7 B9 E1 */	bl "__ct__Q24util28StateFactory<Q24util6IState>FPv"
+/* 802BAE8C 002B6CCC  3C 60 80 47 */	lis r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>"@ha
+/* 802BAE90 002B6CD0  38 03 7A E8 */	addi r0, r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>"@l
 /* 802BAE94 002B6CD4  90 1D 00 00 */	stw r0, 0x0(r29)
 /* 802BAE98 002B6CD8  93 DD 00 08 */	stw r30, 0x8(r29)
 .global lbl_802BAE9C
@@ -33,27 +33,27 @@ lbl_802BAE9C:
 /* 802BAEAC 002B6CEC  7C 08 03 A6 */	mtlr r0
 /* 802BAEB0 002B6CF0  38 21 00 20 */	addi r1, r1, 0x20
 /* 802BAEB4 002B6CF4  4E 80 00 20 */	blr
-.global lbl_802BAEB8
-lbl_802BAEB8:
+.global "t_SetNextState_Follow__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
+"t_SetNextState_Follow__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv":
 /* 802BAEB8 002B6CF8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802BAEBC 002B6CFC  7C 08 02 A6 */	mflr r0
 /* 802BAEC0 002B6D00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802BAEC4 002B6D04  39 61 00 20 */	addi r11, r1, 0x20
 /* 802BAEC8 002B6D08  4B D4 C4 7D */	bl lbl_80007344
-/* 802BAECC 002B6D0C  4B FC FF 01 */	bl lbl_8028ADCC
+/* 802BAECC 002B6D0C  4B FC FF 01 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802BAED0 002B6D10  7C 7E 1B 78 */	mr r30, r3
-/* 802BAED4 002B6D14  4B FC FE F9 */	bl lbl_8028ADCC
-/* 802BAED8 002B6D18  4B FC D2 CD */	bl lbl_802881A4
+/* 802BAED4 002B6D14  4B FC FE F9 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
+/* 802BAED8 002B6D18  4B FC D2 CD */	bl stateChanger__Q43scn4step5enemy5EnemyFv
 /* 802BAEDC 002B6D1C  7C 7F 1B 78 */	mr r31, r3
-/* 802BAEE0 002B6D20  48 14 B0 21 */	bl lbl_80405F00
+/* 802BAEE0 002B6D20  48 14 B0 21 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 802BAEE4 002B6D24  3B BF 00 10 */	addi r29, r31, 0x10
 /* 802BAEE8 002B6D28  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 802BAEEC 002B6D2C  41 82 00 20 */	beq lbl_802BAF0C
 /* 802BAEF0 002B6D30  7F A3 EB 78 */	mr r3, r29
 /* 802BAEF4 002B6D34  38 9F 00 90 */	addi r4, r31, 0x90
-/* 802BAEF8 002B6D38  4B F7 B9 71 */	bl lbl_80236868
-/* 802BAEFC 002B6D3C  3C 60 80 47 */	lis r3, lbl_80477AD8@ha
-/* 802BAF00 002B6D40  38 03 7A D8 */	addi r0, r3, lbl_80477AD8@l
+/* 802BAEF8 002B6D38  4B F7 B9 71 */	bl "__ct__Q24util28StateFactory<Q24util6IState>FPv"
+/* 802BAEFC 002B6D3C  3C 60 80 47 */	lis r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>"@ha
+/* 802BAF00 002B6D40  38 03 7A D8 */	addi r0, r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>"@l
 /* 802BAF04 002B6D44  90 1D 00 00 */	stw r0, 0x0(r29)
 /* 802BAF08 002B6D48  93 DD 00 08 */	stw r30, 0x8(r29)
 .global lbl_802BAF0C
@@ -65,17 +65,17 @@ lbl_802BAF0C:
 /* 802BAF1C 002B6D5C  7C 08 03 A6 */	mtlr r0
 /* 802BAF20 002B6D60  38 21 00 20 */	addi r1, r1, 0x20
 /* 802BAF24 002B6D64  4E 80 00 20 */	blr
-.global lbl_802BAF28
-lbl_802BAF28:
+.global "t_Custom_IsPlayerInArea__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
+"t_Custom_IsPlayerInArea__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv":
 /* 802BAF28 002B6D68  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802BAF2C 002B6D6C  7C 08 02 A6 */	mflr r0
 /* 802BAF30 002B6D70  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802BAF34 002B6D74  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802BAF38 002B6D78  93 C1 00 08 */	stw r30, 0x8(r1)
-/* 802BAF3C 002B6D7C  4B FC FE 91 */	bl lbl_8028ADCC
-/* 802BAF40 002B6D80  4B FC D2 55 */	bl lbl_80288194
+/* 802BAF3C 002B6D7C  4B FC FE 91 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
+/* 802BAF40 002B6D80  4B FC D2 55 */	bl custom__Q43scn4step5enemy5EnemyFv
 /* 802BAF44 002B6D84  7C 7E 1B 78 */	mr r30, r3
-/* 802BAF48 002B6D88  4B FC 79 85 */	bl lbl_802828CC
+/* 802BAF48 002B6D88  4B FC 79 85 */	bl "RuntimeTypeInfoImpl<Q53scn4step5enemy6juckle6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 802BAF4C 002B6D8C  7C 7F 1B 78 */	mr r31, r3
 /* 802BAF50 002B6D90  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 802BAF54 002B6D94  41 82 00 48 */	beq lbl_802BAF9C
@@ -110,48 +110,48 @@ lbl_802BAF9C:
 .global lbl_802BAFA0
 lbl_802BAFA0:
 /* 802BAFA0 002B6DE0  7F C3 F3 78 */	mr r3, r30
-/* 802BAFA4 002B6DE4  48 00 07 41 */	bl lbl_802BB6E4
+/* 802BAFA4 002B6DE4  48 00 07 41 */	bl isPlayerInArea__Q53scn4step5enemy6juckle6CustomFv
 /* 802BAFA8 002B6DE8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802BAFAC 002B6DEC  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 802BAFB0 002B6DF0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BAFB4 002B6DF4  7C 08 03 A6 */	mtlr r0
 /* 802BAFB8 002B6DF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 802BAFBC 002B6DFC  4E 80 00 20 */	blr
-.global lbl_802BAFC0
-lbl_802BAFC0:
+.global RegisterAll__Q53scn4step5enemy6juckle9AddOnMintFRQ26mintvm6VMCore
+RegisterAll__Q53scn4step5enemy6juckle9AddOnMintFRQ26mintvm6VMCore:
 /* 802BAFC0 002B6E00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802BAFC4 002B6E04  7C 08 02 A6 */	mflr r0
 /* 802BAFC8 002B6E08  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802BAFCC 002B6E0C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802BAFD0 002B6E10  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 802BAFD4 002B6E14  7C 7E 1B 78 */	mr r30, r3
-/* 802BAFD8 002B6E18  3C 80 80 47 */	lis r4, lbl_80477A58@ha
-/* 802BAFDC 002B6E1C  3B E4 7A 58 */	addi r31, r4, lbl_80477A58@l
+/* 802BAFD8 002B6E18  3C 80 80 47 */	lis r4, "@55955_80477A58"@ha
+/* 802BAFDC 002B6E1C  3B E4 7A 58 */	addi r31, r4, "@55955_80477A58"@l
 /* 802BAFE0 002B6E20  38 9F 00 00 */	addi r4, r31, 0x0
 /* 802BAFE4 002B6E24  38 BF 00 24 */	addi r5, r31, 0x24
-/* 802BAFE8 002B6E28  3C C0 80 2C */	lis r6, lbl_802BB0E0@ha
-/* 802BAFEC 002B6E2C  38 C6 B0 E0 */	addi r6, r6, lbl_802BB0E0@l
-/* 802BAFF0 002B6E30  4B F1 15 89 */	bl lbl_801CC578
+/* 802BAFE8 002B6E28  3C C0 80 2C */	lis r6, Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Attack_0$55428AddOnMint_cppFRQ26mintvm13MintFuncProxy@ha
+/* 802BAFEC 002B6E2C  38 C6 B0 E0 */	addi r6, r6, Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Attack_0$55428AddOnMint_cppFRQ26mintvm13MintFuncProxy@l
+/* 802BAFF0 002B6E30  4B F1 15 89 */	bl addNativeFunction__Q26mintvm6VMCoreFPCcPCcPFRQ26mintvm13MintFuncProxy_v
 /* 802BAFF4 002B6E34  7F C3 F3 78 */	mr r3, r30
 /* 802BAFF8 002B6E38  38 9F 00 00 */	addi r4, r31, 0x0
 /* 802BAFFC 002B6E3C  38 BF 00 34 */	addi r5, r31, 0x34
-/* 802BB000 002B6E40  3C C0 80 2C */	lis r6, lbl_802BB0DC@ha
-/* 802BB004 002B6E44  38 C6 B0 DC */	addi r6, r6, lbl_802BB0DC@l
-/* 802BB008 002B6E48  4B F1 15 71 */	bl lbl_801CC578
+/* 802BB000 002B6E40  3C C0 80 2C */	lis r6, Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Follow_0$55430AddOnMint_cppFRQ26mintvm13MintFuncProxy@ha
+/* 802BB004 002B6E44  38 C6 B0 DC */	addi r6, r6, Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Follow_0$55430AddOnMint_cppFRQ26mintvm13MintFuncProxy@l
+/* 802BB008 002B6E48  4B F1 15 71 */	bl addNativeFunction__Q26mintvm6VMCoreFPCcPCcPFRQ26mintvm13MintFuncProxy_v
 /* 802BB00C 002B6E4C  7F C3 F3 78 */	mr r3, r30
 /* 802BB010 002B6E50  38 9F 00 44 */	addi r4, r31, 0x44
 /* 802BB014 002B6E54  38 BF 00 64 */	addi r5, r31, 0x64
-/* 802BB018 002B6E58  3C C0 80 2C */	lis r6, lbl_802BB03C@ha
-/* 802BB01C 002B6E5C  38 C6 B0 3C */	addi r6, r6, lbl_802BB03C@l
-/* 802BB020 002B6E60  4B F1 15 59 */	bl lbl_801CC578
+/* 802BB018 002B6E58  3C C0 80 2C */	lis r6, Func__Q63scn4step5enemy6juckle9AddOnMint40Mint_IsPlayerInArea_0$55432AddOnMint_cppFRQ26mintvm13MintFuncProxy@ha
+/* 802BB01C 002B6E5C  38 C6 B0 3C */	addi r6, r6, Func__Q63scn4step5enemy6juckle9AddOnMint40Mint_IsPlayerInArea_0$55432AddOnMint_cppFRQ26mintvm13MintFuncProxy@l
+/* 802BB020 002B6E60  4B F1 15 59 */	bl addNativeFunction__Q26mintvm6VMCoreFPCcPCcPFRQ26mintvm13MintFuncProxy_v
 /* 802BB024 002B6E64  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802BB028 002B6E68  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 802BB02C 002B6E6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BB030 002B6E70  7C 08 03 A6 */	mtlr r0
 /* 802BB034 002B6E74  38 21 00 10 */	addi r1, r1, 0x10
 /* 802BB038 002B6E78  4E 80 00 20 */	blr
-.global lbl_802BB03C
-lbl_802BB03C:
+.global Func__Q63scn4step5enemy6juckle9AddOnMint40Mint_IsPlayerInArea_0$55432AddOnMint_cppFRQ26mintvm13MintFuncProxy
+Func__Q63scn4step5enemy6juckle9AddOnMint40Mint_IsPlayerInArea_0$55432AddOnMint_cppFRQ26mintvm13MintFuncProxy:
 /* 802BB03C 002B6E7C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802BB040 002B6E80  7C 08 02 A6 */	mflr r0
 /* 802BB044 002B6E84  90 01 00 14 */	stw r0, 0x14(r1)
@@ -164,13 +164,13 @@ lbl_802BB03C:
 /* 802BB060 002B6EA0  90 03 00 08 */	stw r0, 0x8(r3)
 /* 802BB064 002B6EA4  2C 04 00 00 */	cmpwi r4, 0x0
 /* 802BB068 002B6EA8  40 82 00 20 */	bne lbl_802BB088
-/* 802BB06C 002B6EAC  3C 60 80 45 */	lis r3, lbl_8045411C@ha
-/* 802BB070 002B6EB0  38 63 41 1C */	addi r3, r3, lbl_8045411C@l
+/* 802BB06C 002B6EAC  3C 60 80 45 */	lis r3, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv"@ha
+/* 802BB070 002B6EB0  38 63 41 1C */	addi r3, r3, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv"@l
 /* 802BB074 002B6EB4  38 80 00 92 */	li r4, 0x92
-/* 802BB078 002B6EB8  3C A0 80 45 */	lis r5, lbl_80454108@ha
-/* 802BB07C 002B6EBC  38 A5 41 08 */	addi r5, r5, lbl_80454108@l
+/* 802BB078 002B6EB8  3C A0 80 45 */	lis r5, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0"@ha
+/* 802BB07C 002B6EBC  38 A5 41 08 */	addi r5, r5, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0"@l
 /* 802BB080 002B6EC0  4C C6 31 82 */	crclr 4*cr1+eq
-/* 802BB084 002B6EC4  4B F0 AF 21 */	bl lbl_801C5FA4
+/* 802BB084 002B6EC4  4B F0 AF 21 */	bl panic__Q26mintvm14MintSystemCallFPCciPCce
 .global lbl_802BB088
 lbl_802BB088:
 /* 802BB088 002B6EC8  88 1F 00 06 */	lbz r0, 0x6(r31)
@@ -178,20 +178,20 @@ lbl_802BB088:
 /* 802BB090 002B6ED0  41 82 00 18 */	beq lbl_802BB0A8
 /* 802BB094 002B6ED4  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 802BB098 002B6ED8  38 80 00 00 */	li r4, 0x0
-/* 802BB09C 002B6EDC  4B ED 07 3D */	bl lbl_8018B7D8
+/* 802BB09C 002B6EDC  4B ED 07 3D */	bl internal_getFR__Q26mintvm6RegsetFUi
 /* 802BB0A0 002B6EE0  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 802BB0A4 002B6EE4  48 00 00 14 */	b lbl_802BB0B8
 .global lbl_802BB0A8
 lbl_802BB0A8:
 /* 802BB0A8 002B6EE8  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 802BB0AC 002B6EEC  38 80 00 00 */	li r4, 0x0
-/* 802BB0B0 002B6EF0  4B ED 07 29 */	bl lbl_8018B7D8
+/* 802BB0B0 002B6EF0  4B ED 07 29 */	bl internal_getFR__Q26mintvm6RegsetFUi
 /* 802BB0B4 002B6EF4  7C 7F 1B 78 */	mr r31, r3
 .global lbl_802BB0B8
 lbl_802BB0B8:
 /* 802BB0B8 002B6EF8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 802BB0BC 002B6EFC  41 82 00 0C */	beq lbl_802BB0C8
-/* 802BB0C0 002B6F00  4B FF FE 69 */	bl lbl_802BAF28
+/* 802BB0C0 002B6F00  4B FF FE 69 */	bl "t_Custom_IsPlayerInArea__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
 /* 802BB0C4 002B6F04  98 7F 00 00 */	stb r3, 0x0(r31)
 .global lbl_802BB0C8
 lbl_802BB0C8:
@@ -200,37 +200,37 @@ lbl_802BB0C8:
 /* 802BB0D0 002B6F10  7C 08 03 A6 */	mtlr r0
 /* 802BB0D4 002B6F14  38 21 00 10 */	addi r1, r1, 0x10
 /* 802BB0D8 002B6F18  4E 80 00 20 */	blr
-.global lbl_802BB0DC
-lbl_802BB0DC:
-/* 802BB0DC 002B6F1C  4B FF FD DC */	b lbl_802BAEB8
-.global lbl_802BB0E0
-lbl_802BB0E0:
-/* 802BB0E0 002B6F20  4B FF FD 68 */	b lbl_802BAE48
+.global Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Follow_0$55430AddOnMint_cppFRQ26mintvm13MintFuncProxy
+Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Follow_0$55430AddOnMint_cppFRQ26mintvm13MintFuncProxy:
+/* 802BB0DC 002B6F1C  4B FF FD DC */	b "t_SetNextState_Follow__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
+.global Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Attack_0$55428AddOnMint_cppFRQ26mintvm13MintFuncProxy
+Func__Q63scn4step5enemy6juckle9AddOnMint32Mint_Attack_0$55428AddOnMint_cppFRQ26mintvm13MintFuncProxy:
+/* 802BB0E0 002B6F20  4B FF FD 68 */	b "t_SetNextState_Attack__Q53scn4step5enemy6juckle23@unnamed@AddOnMint_cpp@Fv"
 
-.global lbl_802BB0E4
-lbl_802BB0E4:
+.global "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>Fv"
+"create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>Fv":
 /* 802BB0E4 002B6F24  7C 64 1B 78 */	mr r4, r3
 /* 802BB0E8 002B6F28  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 802BB0EC 002B6F2C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802BB0F0 002B6F30  4D 82 00 20 */	beqlr
 /* 802BB0F4 002B6F34  80 84 00 08 */	lwz r4, 0x8(r4)
-/* 802BB0F8 002B6F38  48 00 0B 80 */	b lbl_802BBC78
+/* 802BB0F8 002B6F38  48 00 0B 80 */	b __ct__Q53scn4step5enemy6juckle11StateFollowFPQ43scn4step5enemy5Enemy
 /* 802BB0FC 002B6F3C  4E 80 00 20 */	blr
 
-.global lbl_802BB100
-lbl_802BB100:
+.global "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+"create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>Fv":
 /* 802BB100 002B6F40  7C 64 1B 78 */	mr r4, r3
 /* 802BB104 002B6F44  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 802BB108 002B6F48  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802BB10C 002B6F4C  4D 82 00 20 */	beqlr
 /* 802BB110 002B6F50  80 84 00 08 */	lwz r4, 0x8(r4)
-/* 802BB114 002B6F54  48 00 07 60 */	b lbl_802BB874
+/* 802BB114 002B6F54  48 00 07 60 */	b __ct__Q53scn4step5enemy6juckle11StateAttackFPQ43scn4step5enemy5Enemy
 /* 802BB118 002B6F58  4E 80 00 20 */	blr
 
-.global lbl_802BB11C
-lbl_802BB11C:
-/* 802BB11C 002B6F5C  4B F7 35 84 */	b lbl_8022E6A0
+.global "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+"__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateAttack,PQ43scn4step5enemy5Enemy>Fv":
+/* 802BB11C 002B6F5C  4B F7 35 84 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_802BB120
-lbl_802BB120:
-/* 802BB120 002B6F60  4B F7 35 80 */	b lbl_8022E6A0
+.global "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>Fv"
+"__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6juckle11StateFollow,PQ43scn4step5enemy5Enemy>Fv":
+/* 802BB120 002B6F60  4B F7 35 80 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"

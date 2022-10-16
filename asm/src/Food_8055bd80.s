@@ -1,272 +1,272 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_8055BD80
-lbl_8055BD80:
+.global "@52582_8055BD80"
+"@52582_8055BD80":
 
 	.4byte 0x546F704C
 	.4byte 0
 
-.global lbl_8055BD88
-lbl_8055BD88:
+.global "@52586"
+"@52586":
 
 	.4byte 0x46644A75
 	.4byte 0x69636500
 
-.global lbl_8055BD90
-lbl_8055BD90:
+.global "@52588"
+"@52588":
 
 	.4byte 0x46644D65
 	.4byte 0x61740000
 
-.global lbl_8055BD98
-lbl_8055BD98:
+.global "@52594_8055BD98"
+"@52594_8055BD98":
 
 	.4byte 0x46644772
 	.4byte 0x61706500
 
-.global lbl_8055BDA0
-lbl_8055BDA0:
+.global "@52606"
+"@52606":
 
 	.4byte 0x46644361
 	.4byte 0x6E647900
 
-.global lbl_8055BDA8
-lbl_8055BDA8:
+.global "@52612"
+"@52612":
 
 	.4byte 0x46644375
 	.4byte 0x72727900
 
-.global lbl_8055BDB0
-lbl_8055BDB0:
+.global "@52618_8055BDB0"
+"@52618_8055BDB0":
 
 	.4byte 0x46645069
 	.4byte 0x7A7A6100
 
-.global lbl_8055BDB8
-lbl_8055BDB8:
+.global "@52628_8055BDB8"
+"@52628_8055BDB8":
 
 	.4byte 0x46644779
 	.4byte 0x6F7A6100
 
-.global lbl_8055BDC0
-lbl_8055BDC0:
+.global "@52644_8055BDC0"
+"@52644_8055BDC0":
 
 	.4byte 0x46645465
 	.4byte 0x61000000
 
-.global lbl_8055BDC8
-lbl_8055BDC8:
+.global "@52648_8055BDC8"
+"@52648_8055BDC8":
 
 	.4byte 0x46644D69
 	.4byte 0x6C6B0000
 
-.global lbl_8055BDD0
-lbl_8055BDD0:
+.global "@STRING@CreateGeneral<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BDD8
-lbl_8055BDD8:
+.global "@STRING@CreateGeneral<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BDE0
-lbl_8055BDE0:
+.global "@STRING@CreateGeneral<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BDE8
-lbl_8055BDE8:
+.global "@STRING@CreateGeneral<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BDF0
-lbl_8055BDF0:
+.global "@STRING@CreateGeneral<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BDF8
-lbl_8055BDF8:
+.global "@STRING@CreateGeneral<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE00
-lbl_8055BE00:
+.global "@STRING@CreateGeneral<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE08
-lbl_8055BE08:
+.global "@STRING@CreateGeneral<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE10
-lbl_8055BE10:
+.global "@STRING@CreateGeneral<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE18
-lbl_8055BE18:
+.global "@STRING@CreateGeneral<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE20
-lbl_8055BE20:
+.global "@STRING@CreateGeneral<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE28
-lbl_8055BE28:
+.global "@STRING@CreateGeneral<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE30
-lbl_8055BE30:
+.global "@STRING@CreateGeneral<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE38
-lbl_8055BE38:
+.global "@STRING@CreateGeneral<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE40
-lbl_8055BE40:
+.global "@STRING@CreateGeneral<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE48
-lbl_8055BE48:
+.global "@STRING@CreateGeneral<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE50
-lbl_8055BE50:
+.global "@STRING@CreateGeneral<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE58
-lbl_8055BE58:
+.global "@STRING@CreateGeneral<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE60
-lbl_8055BE60:
+.global "@STRING@CreateGeneral<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE68
-lbl_8055BE68:
+.global "@STRING@CreateGeneral<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE70
-lbl_8055BE70:
+.global "@STRING@CreateGeneral<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE78
-lbl_8055BE78:
+.global "@STRING@CreateGeneral<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE80
-lbl_8055BE80:
+.global "@STRING@CreateGeneral<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE88
-lbl_8055BE88:
+.global "@STRING@CreateGeneral<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE90
-lbl_8055BE90:
+.global "@STRING@CreateGeneral<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BE98
-lbl_8055BE98:
+.global "@STRING@CreateGeneral<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEA0
-lbl_8055BEA0:
+.global "@STRING@CreateGeneral<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEA8
-lbl_8055BEA8:
+.global "@STRING@CreateGeneral<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEB0
-lbl_8055BEB0:
+.global "@STRING@CreateGeneral<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEB8
-lbl_8055BEB8:
+.global "@STRING@CreateGeneral<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEC0
-lbl_8055BEC0:
+.global "@STRING@CreateGeneral<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEC8
-lbl_8055BEC8:
+.global "@STRING@CreateGeneral<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BED0
-lbl_8055BED0:
+.global "@STRING@CreateGeneral<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BED8
-lbl_8055BED8:
+.global "@STRING@CreateGeneral<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000
 
-.global lbl_8055BEE0
-lbl_8055BEE0:
+.global "@STRING@CreateGeneral<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
 
 	.4byte 0x4D6F6465
 	.4byte 0x6C000000

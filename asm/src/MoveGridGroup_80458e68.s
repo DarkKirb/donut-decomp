@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80458E68
-lbl_80458E68:
+.global "T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail27@unnamed@MoveGridGroup_cpp@"
+"T_GRID_SHAPE_INFO_TABLE__Q35mcoll6detail27@unnamed@MoveGridGroup_cpp@":
 
 	.4byte 0
 	.4byte 0

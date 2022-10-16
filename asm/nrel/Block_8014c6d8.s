@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014C6D8
-lbl_8014C6D8:
+.global __ct__Q34nrel3mem5BlockFPCvPCvUl
+__ct__Q34nrel3mem5BlockFPCvPCvUl:
 /* 8014C6D8 00148518  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014C6DC 0014851C  7C 08 02 A6 */	mflr r0
 /* 8014C6E0 00148520  90 01 00 14 */	stw r0, 0x14(r1)
@@ -13,13 +13,13 @@ lbl_8014C6D8:
 /* 8014C6F4 00148534  90 C3 00 08 */	stw r6, 0x8(r3)
 /* 8014C6F8 00148538  7C 04 28 40 */	cmplw r4, r5
 /* 8014C6FC 0014853C  40 81 00 20 */	ble lbl_8014C71C
-/* 8014C700 00148540  3C 60 80 44 */	lis r3, lbl_80446FC8@ha
-/* 8014C704 00148544  38 63 6F C8 */	addi r3, r3, lbl_80446FC8@l
+/* 8014C700 00148540  3C 60 80 44 */	lis r3, "@515_80446FC8"@ha
+/* 8014C704 00148544  38 63 6F C8 */	addi r3, r3, "@515_80446FC8"@l
 /* 8014C708 00148548  38 80 00 14 */	li r4, 0x14
-/* 8014C70C 0014854C  3C A0 80 44 */	lis r5, lbl_80446FD4@ha
-/* 8014C710 00148550  38 A5 6F D4 */	addi r5, r5, lbl_80446FD4@l
+/* 8014C70C 0014854C  3C A0 80 44 */	lis r5, "@516_80446FD4"@ha
+/* 8014C710 00148550  38 A5 6F D4 */	addi r5, r5, "@516_80446FD4"@l
 /* 8014C714 00148554  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8014C718 00148558  4B FD BC 39 */	bl lbl_80128350
+/* 8014C718 00148558  4B FD BC 39 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8014C71C
 lbl_8014C71C:
 /* 8014C71C 0014855C  7F E3 FB 78 */	mr r3, r31

@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8007AE50
-lbl_8007AE50:
+.global bta_dm_sm_execute
+bta_dm_sm_execute:
 /* 8007AE50 00076C90  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8007AE54 00076C94  7C 08 02 A6 */	mflr r0
 /* 8007AE58 00076C98  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8007AE5C 00076C9C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8007AE60 00076CA0  3F E0 80 40 */	lis r31, lbl_80407F48@ha
-/* 8007AE64 00076CA4  3B FF 7F 48 */	addi r31, r31, lbl_80407F48@l
+/* 8007AE60 00076CA0  3F E0 80 40 */	lis r31, bta_dm_action@ha
+/* 8007AE64 00076CA4  3B FF 7F 48 */	addi r31, r31, bta_dm_action@l
 /* 8007AE68 00076CA8  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 8007AE6C 00076CAC  3F C0 80 40 */	lis r30, lbl_80407F7C@ha
-/* 8007AE70 00076CB0  3B DE 7F 7C */	addi r30, r30, lbl_80407F7C@l
+/* 8007AE6C 00076CAC  3F C0 80 40 */	lis r30, bta_dm_st_table@ha
+/* 8007AE70 00076CB0  3B DE 7F 7C */	addi r30, r30, bta_dm_st_table@l
 /* 8007AE74 00076CB4  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8007AE78 00076CB8  3B A0 00 00 */	li r29, 0x0
 /* 8007AE7C 00076CBC  93 81 00 10 */	stw r28, 0x10(r1)
@@ -46,18 +46,18 @@ lbl_8007AEC4:
 /* 8007AEE0 00076D20  38 21 00 20 */	addi r1, r1, 0x20
 /* 8007AEE4 00076D24  4E 80 00 20 */	blr
 
-.global lbl_8007AEE8
-lbl_8007AEE8:
+.global bta_dm_search_sm_execute
+bta_dm_search_sm_execute:
 /* 8007AEE8 00076D28  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8007AEEC 00076D2C  7C 08 02 A6 */	mflr r0
-/* 8007AEF0 00076D30  3C E0 80 4F */	lis r7, lbl_804F5B78@ha
-/* 8007AEF4 00076D34  3C A0 80 41 */	lis r5, lbl_80408060@ha
+/* 8007AEF0 00076D30  3C E0 80 4F */	lis r7, bta_dm_search_cb@ha
+/* 8007AEF4 00076D34  3C A0 80 41 */	lis r5, bta_dm_search_st_tbl@ha
 /* 8007AEF8 00076D38  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8007AEFC 00076D3C  38 E7 5B 78 */	addi r7, r7, lbl_804F5B78@l
-/* 8007AF00 00076D40  38 A5 80 60 */	addi r5, r5, lbl_80408060@l
+/* 8007AEFC 00076D3C  38 E7 5B 78 */	addi r7, r7, bta_dm_search_cb@l
+/* 8007AF00 00076D40  38 A5 80 60 */	addi r5, r5, bta_dm_search_st_tbl@l
 /* 8007AF04 00076D44  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8007AF08 00076D48  3F E0 80 40 */	lis r31, lbl_80407FA8@ha
-/* 8007AF0C 00076D4C  3B FF 7F A8 */	addi r31, r31, lbl_80407FA8@l
+/* 8007AF08 00076D48  3F E0 80 40 */	lis r31, bta_dm_search_action@ha
+/* 8007AF0C 00076D4C  3B FF 7F A8 */	addi r31, r31, bta_dm_search_action@l
 /* 8007AF10 00076D50  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8007AF14 00076D54  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8007AF18 00076D58  3B A0 00 00 */	li r29, 0x0

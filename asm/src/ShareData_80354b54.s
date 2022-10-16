@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80354B54
-lbl_80354B54:
+.global __ct__Q43scn4step4hero9ShareDataFRQ33scn4step9ComponentRCQ33scn4step11ContextHero
+__ct__Q43scn4step4hero9ShareDataFRQ33scn4step9ComponentRCQ33scn4step11ContextHero:
 /* 80354B54 00350994  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80354B58 00350998  7C 08 02 A6 */	mflr r0
 /* 80354B5C 0035099C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -13,15 +13,15 @@ lbl_80354B54:
 /* 80354B70 003509B0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80354B74 003509B4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80354B78 003509B8  80 85 00 04 */	lwz r4, 0x4(r5)
-/* 80354B7C 003509BC  48 00 00 55 */	bl lbl_80354BD0
+/* 80354B7C 003509BC  48 00 00 55 */	bl setRestPlayer__Q43scn4step4hero9ShareDataFUl
 /* 80354B80 003509C0  7F E3 FB 78 */	mr r3, r31
 /* 80354B84 003509C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80354B88 003509C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80354B8C 003509CC  7C 08 03 A6 */	mtlr r0
 /* 80354B90 003509D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80354B94 003509D4  4E 80 00 20 */	blr
-.global lbl_80354B98
-lbl_80354B98:
+.global incRestPlayer__Q43scn4step4hero9ShareDataFb
+incRestPlayer__Q43scn4step4hero9ShareDataFb:
 /* 80354B98 003509D8  80 83 00 04 */	lwz r4, 0x4(r3)
 /* 80354B9C 003509DC  38 04 00 01 */	addi r0, r4, 0x1
 /* 80354BA0 003509E0  90 03 00 04 */	stw r0, 0x4(r3)
@@ -30,24 +30,24 @@ lbl_80354B98:
 /* 80354BAC 003509EC  38 00 00 63 */	li r0, 0x63
 /* 80354BB0 003509F0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80354BB4 003509F4  4E 80 00 20 */	blr
-.global lbl_80354BB8
-lbl_80354BB8:
+.global decRestPlayer__Q43scn4step4hero9ShareDataFv
+decRestPlayer__Q43scn4step4hero9ShareDataFv:
 /* 80354BB8 003509F8  80 83 00 04 */	lwz r4, 0x4(r3)
 /* 80354BBC 003509FC  28 04 00 01 */	cmplwi r4, 0x1
 /* 80354BC0 00350A00  4D 80 00 20 */	bltlr
 /* 80354BC4 00350A04  38 04 FF FF */	addi r0, r4, -0x1
 /* 80354BC8 00350A08  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80354BCC 00350A0C  4E 80 00 20 */	blr
-.global lbl_80354BD0
-lbl_80354BD0:
+.global setRestPlayer__Q43scn4step4hero9ShareDataFUl
+setRestPlayer__Q43scn4step4hero9ShareDataFUl:
 /* 80354BD0 00350A10  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80354BD4 00350A14  28 04 00 63 */	cmplwi r4, 0x63
 /* 80354BD8 00350A18  4C 81 00 20 */	blelr
 /* 80354BDC 00350A1C  38 00 00 63 */	li r0, 0x63
 /* 80354BE0 00350A20  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80354BE4 00350A24  4E 80 00 20 */	blr
-.global lbl_80354BE8
-lbl_80354BE8:
+.global addPointStarNum__Q43scn4step4hero9ShareDataFUl
+addPointStarNum__Q43scn4step4hero9ShareDataFUl:
 /* 80354BE8 00350A28  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80354BEC 00350A2C  7C 08 02 A6 */	mflr r0
 /* 80354BF0 00350A30  90 01 00 14 */	stw r0, 0x14(r1)
@@ -66,7 +66,7 @@ lbl_80354BE8:
 lbl_80354C20:
 /* 80354C20 00350A60  7F C3 F3 78 */	mr r3, r30
 /* 80354C24 00350A64  38 80 00 01 */	li r4, 0x1
-/* 80354C28 00350A68  4B FF FF 71 */	bl lbl_80354B98
+/* 80354C28 00350A68  4B FF FF 71 */	bl incRestPlayer__Q43scn4step4hero9ShareDataFb
 /* 80354C2C 00350A6C  80 7E 00 08 */	lwz r3, 0x8(r30)
 /* 80354C30 00350A70  38 03 FF 9C */	addi r0, r3, -0x64
 /* 80354C34 00350A74  90 1E 00 08 */	stw r0, 0x8(r30)

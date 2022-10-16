@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000AD4C
-lbl_8000AD4C:
+.global memmove
+memmove:
 /* 8000AD4C 00006B8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000AD50 00006B90  7C 08 02 A6 */	mflr r0
 /* 8000AD54 00006B94  7C 66 22 78 */	xor r6, r3, r4
@@ -18,21 +18,21 @@ lbl_8000AD4C:
 /* 8000AD7C 00006BBC  41 82 00 1C */	beq lbl_8000AD98
 /* 8000AD80 00006BC0  2C 07 00 00 */	cmpwi r7, 0x0
 /* 8000AD84 00006BC4  40 82 00 0C */	bne lbl_8000AD90
-/* 8000AD88 00006BC8  48 00 02 99 */	bl lbl_8000B020
+/* 8000AD88 00006BC8  48 00 02 99 */	bl __copy_longs_unaligned
 /* 8000AD8C 00006BCC  48 00 00 20 */	b lbl_8000ADAC
 .global lbl_8000AD90
 lbl_8000AD90:
-/* 8000AD90 00006BD0  48 00 03 51 */	bl lbl_8000B0E0
+/* 8000AD90 00006BD0  48 00 03 51 */	bl __copy_longs_rev_unaligned
 /* 8000AD94 00006BD4  48 00 00 18 */	b lbl_8000ADAC
 .global lbl_8000AD98
 lbl_8000AD98:
 /* 8000AD98 00006BD8  2C 07 00 00 */	cmpwi r7, 0x0
 /* 8000AD9C 00006BDC  40 82 00 0C */	bne lbl_8000ADA8
-/* 8000ADA0 00006BE0  48 00 01 1D */	bl lbl_8000AEBC
+/* 8000ADA0 00006BE0  48 00 01 1D */	bl __copy_longs_aligned
 /* 8000ADA4 00006BE4  48 00 00 08 */	b lbl_8000ADAC
 .global lbl_8000ADA8
 lbl_8000ADA8:
-/* 8000ADA8 00006BE8  48 00 01 D1 */	bl lbl_8000AF78
+/* 8000ADA8 00006BE8  48 00 01 D1 */	bl __copy_longs_rev_aligned
 .global lbl_8000ADAC
 lbl_8000ADAC:
 /* 8000ADAC 00006BEC  7F E3 FB 78 */	mr r3, r31
@@ -78,8 +78,8 @@ lbl_8000AE04:
 /* 8000AE0C 00006C4C  7C 08 03 A6 */	mtlr r0
 /* 8000AE10 00006C50  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000AE14 00006C54  4E 80 00 20 */	blr
-.global lbl_8000AE18
-lbl_8000AE18:
+.global memchr
+memchr:
 /* 8000AE18 00006C58  54 84 06 3E */	clrlwi r4, r4, 24
 /* 8000AE1C 00006C5C  38 63 FF FF */	addi r3, r3, -0x1
 /* 8000AE20 00006C60  38 A5 00 01 */	addi r5, r5, 0x1
@@ -95,8 +95,8 @@ lbl_8000AE34:
 /* 8000AE38 00006C78  40 82 FF F0 */	bne lbl_8000AE28
 /* 8000AE3C 00006C7C  38 60 00 00 */	li r3, 0x0
 /* 8000AE40 00006C80  4E 80 00 20 */	blr
-.global lbl_8000AE44
-lbl_8000AE44:
+.global __memrchr
+__memrchr:
 /* 8000AE44 00006C84  7C 63 2A 14 */	add r3, r3, r5
 /* 8000AE48 00006C88  54 84 06 3E */	clrlwi r4, r4, 24
 /* 8000AE4C 00006C8C  38 A5 00 01 */	addi r5, r5, 0x1
@@ -112,8 +112,8 @@ lbl_8000AE60:
 /* 8000AE64 00006CA4  40 82 FF F0 */	bne lbl_8000AE54
 /* 8000AE68 00006CA8  38 60 00 00 */	li r3, 0x0
 /* 8000AE6C 00006CAC  4E 80 00 20 */	blr
-.global lbl_8000AE70
-lbl_8000AE70:
+.global memcmp
+memcmp:
 /* 8000AE70 00006CB0  38 E4 FF FF */	addi r7, r4, -0x1
 /* 8000AE74 00006CB4  38 C3 FF FF */	addi r6, r3, -0x1
 /* 8000AE78 00006CB8  38 85 00 01 */	addi r4, r5, 0x1

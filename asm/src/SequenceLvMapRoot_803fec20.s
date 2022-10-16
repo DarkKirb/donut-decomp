@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803FEC20
-lbl_803FEC20:
+.global Create__Q33seq17SequenceLvMapRoot6RecipeFQ33scn4step9LevelKindRCQ23seq12ContextStory
+Create__Q33seq17SequenceLvMapRoot6RecipeFQ33scn4step9LevelKindRCQ23seq12ContextStory:
 /* 803FEC20 003FAA60  94 21 FC 00 */	stwu r1, -0x400(r1)
 /* 803FEC24 003FAA64  7C 08 02 A6 */	mflr r0
 /* 803FEC28 003FAA68  90 01 04 04 */	stw r0, 0x404(r1)
@@ -20,12 +20,12 @@ lbl_803FEC44:
 /* 803FEC50 003FAA90  90 81 00 28 */	stw r4, 0x28(r1)
 /* 803FEC54 003FAA94  38 61 00 2C */	addi r3, r1, 0x2c
 /* 803FEC58 003FAA98  7C A4 2B 78 */	mr r4, r5
-/* 803FEC5C 003FAA9C  48 00 00 51 */	bl lbl_803FECAC
+/* 803FEC5C 003FAA9C  48 00 00 51 */	bl __as__Q23seq12ContextStoryFRCQ23seq12ContextStory
 /* 803FEC60 003FAAA0  38 61 00 08 */	addi r3, r1, 0x8
-/* 803FEC64 003FAAA4  4B E2 26 D5 */	bl lbl_80221338
+/* 803FEC64 003FAAA4  4B E2 26 D5 */	bl Create__Q33scn4step12ContextLvMapFv
 /* 803FEC68 003FAAA8  38 61 03 D4 */	addi r3, r1, 0x3d4
 /* 803FEC6C 003FAAAC  38 81 00 08 */	addi r4, r1, 0x8
-/* 803FEC70 003FAAB0  48 00 00 99 */	bl lbl_803FED08
+/* 803FEC70 003FAAB0  48 00 00 99 */	bl __as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap
 /* 803FEC74 003FAAB4  38 BF FF FC */	addi r5, r31, -0x4
 /* 803FEC78 003FAAB8  38 81 00 24 */	addi r4, r1, 0x24
 /* 803FEC7C 003FAABC  38 00 00 79 */	li r0, 0x79
@@ -42,8 +42,8 @@ lbl_803FEC84:
 /* 803FECA0 003FAAE0  7C 08 03 A6 */	mtlr r0
 /* 803FECA4 003FAAE4  38 21 04 00 */	addi r1, r1, 0x400
 /* 803FECA8 003FAAE8  4E 80 00 20 */	blr
-.global lbl_803FECAC
-lbl_803FECAC:
+.global __as__Q23seq12ContextStoryFRCQ23seq12ContextStory
+__as__Q23seq12ContextStoryFRCQ23seq12ContextStory:
 /* 803FECAC 003FAAEC  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 803FECB0 003FAAF0  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FECB4 003FAAF4  7C 67 1B 78 */	mr r7, r3
@@ -71,8 +71,8 @@ lbl_803FECE8:
 /* 803FECFC 003FAB3C  80 05 00 04 */	lwz r0, 0x4(r5)
 /* 803FED00 003FAB40  90 06 00 04 */	stw r0, 0x4(r6)
 /* 803FED04 003FAB44  4E 80 00 20 */	blr
-.global lbl_803FED08
-lbl_803FED08:
+.global __as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap
+__as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap:
 /* 803FED08 003FAB48  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 803FED0C 003FAB4C  98 03 00 00 */	stb r0, 0x0(r3)
 /* 803FED10 003FAB50  88 04 00 01 */	lbz r0, 0x1(r4)
@@ -96,8 +96,8 @@ lbl_803FED08:
 /* 803FED58 003FAB98  90 A3 00 14 */	stw r5, 0x14(r3)
 /* 803FED5C 003FAB9C  90 03 00 18 */	stw r0, 0x18(r3)
 /* 803FED60 003FABA0  4E 80 00 20 */	blr
-.global lbl_803FED64
-lbl_803FED64:
+.global __ct__Q23seq17SequenceLvMapRootFRCQ33seq17SequenceLvMapRoot6Recipe
+__ct__Q23seq17SequenceLvMapRootFRCQ33seq17SequenceLvMapRoot6Recipe:
 /* 803FED64 003FABA4  94 21 FC 10 */	stwu r1, -0x3f0(r1)
 /* 803FED68 003FABA8  7C 08 02 A6 */	mflr r0
 /* 803FED6C 003FABAC  90 01 03 F4 */	stw r0, 0x3f4(r1)
@@ -105,11 +105,11 @@ lbl_803FED64:
 /* 803FED74 003FABB4  4B C0 85 D1 */	bl lbl_80007344
 /* 803FED78 003FABB8  7C 7F 1B 78 */	mr r31, r3
 /* 803FED7C 003FABBC  7C 9D 23 78 */	mr r29, r4
-/* 803FED80 003FABC0  3C 80 80 49 */	lis r4, lbl_80496478@ha
-/* 803FED84 003FABC4  38 04 64 78 */	addi r0, r4, lbl_80496478@l
+/* 803FED80 003FABC0  3C 80 80 49 */	lis r4, __vt__Q23seq17SequenceLvMapRoot@ha
+/* 803FED84 003FABC4  38 04 64 78 */	addi r0, r4, __vt__Q23seq17SequenceLvMapRoot@l
 /* 803FED88 003FABC8  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FED8C 003FABCC  38 63 00 04 */	addi r3, r3, 0x4
-/* 803FED90 003FABD0  4B D8 8D CD */	bl lbl_80187B5C
+/* 803FED90 003FABD0  4B D8 8D CD */	bl __ct__Q24file21FileClearDisableScopeFv
 /* 803FED94 003FABD4  80 1D 00 00 */	lwz r0, 0x0(r29)
 /* 803FED98 003FABD8  90 1F 00 08 */	stw r0, 0x8(r31)
 /* 803FED9C 003FABDC  38 00 00 00 */	li r0, 0x0
@@ -148,9 +148,9 @@ lbl_803FEDE8:
 /* 803FEE10 003FAC50  9B BF 07 9D */	stb r29, 0x79d(r31)
 /* 803FEE14 003FAC54  9B BF 07 9E */	stb r29, 0x79e(r31)
 /* 803FEE18 003FAC58  83 DF 00 08 */	lwz r30, 0x8(r31)
-/* 803FEE1C 003FAC5C  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FEE20 003FAC60  4B D7 78 A5 */	bl lbl_801766C4
-/* 803FEE24 003FAC64  48 00 61 01 */	bl lbl_80404F24
+/* 803FEE1C 003FAC5C  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FEE20 003FAC60  4B D7 78 A5 */	bl storageManager__Q23app11ApplicationFv
+/* 803FEE24 003FAC64  48 00 61 01 */	bl volatileData2__Q27storage14StorageManagerFv
 /* 803FEE28 003FAC68  93 C3 10 54 */	stw r30, 0x1054(r3)
 /* 803FEE2C 003FAC6C  38 61 00 28 */	addi r3, r1, 0x28
 /* 803FEE30 003FAC70  38 00 00 75 */	li r0, 0x75
@@ -179,21 +179,21 @@ lbl_803FEE58:
 /* 803FEE7C 003FACBC  93 C1 00 0C */	stw r30, 0xc(r1)
 /* 803FEE80 003FACC0  38 7F 07 74 */	addi r3, r31, 0x774
 /* 803FEE84 003FACC4  38 81 00 08 */	addi r4, r1, 0x8
-/* 803FEE88 003FACC8  48 00 00 AD */	bl lbl_803FEF34
-/* 803FEE8C 003FACCC  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FEE90 003FACD0  4B D7 78 35 */	bl lbl_801766C4
-/* 803FEE94 003FACD4  48 00 60 B5 */	bl lbl_80404F48
-/* 803FEE98 003FACD8  48 00 54 E5 */	bl lbl_8040437C
+/* 803FEE88 003FACC8  48 00 00 AD */	bl __as__Q33scn4step17ContextTotalScoreFRCQ33scn4step17ContextTotalScore
+/* 803FEE8C 003FACCC  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FEE90 003FACD0  4B D7 78 35 */	bl storageManager__Q23app11ApplicationFv
+/* 803FEE94 003FACD4  48 00 60 B5 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FEE98 003FACD8  48 00 54 E5 */	bl challengeTotalScore__Q27storage15BackupFileData2CFv
 /* 803FEE9C 003FACDC  90 7F 07 74 */	stw r3, 0x774(r31)
-/* 803FEEA0 003FACE0  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FEEA4 003FACE4  4B D7 78 21 */	bl lbl_801766C4
-/* 803FEEA8 003FACE8  48 00 60 A1 */	bl lbl_80404F48
-/* 803FEEAC 003FACEC  48 00 56 91 */	bl lbl_8040453C
+/* 803FEEA0 003FACE0  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FEEA4 003FACE4  4B D7 78 21 */	bl storageManager__Q23app11ApplicationFv
+/* 803FEEA8 003FACE8  48 00 60 A1 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FEEAC 003FACEC  48 00 56 91 */	bl hasAllPlatinumMedal__Q27storage15BackupFileData2CFv
 /* 803FEEB0 003FACF0  98 7F 07 78 */	stb r3, 0x778(r31)
-/* 803FEEB4 003FACF4  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FEEB8 003FACF8  4B D7 78 0D */	bl lbl_801766C4
-/* 803FEEBC 003FACFC  48 00 60 8D */	bl lbl_80404F48
-/* 803FEEC0 003FAD00  48 00 56 B1 */	bl lbl_80404570
+/* 803FEEB4 003FACF4  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FEEB8 003FACF8  4B D7 78 0D */	bl storageManager__Q23app11ApplicationFv
+/* 803FEEBC 003FACFC  48 00 60 8D */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FEEC0 003FAD00  48 00 56 B1 */	bl isAllStageCleared__Q27storage15BackupFileData2CFv
 /* 803FEEC4 003FAD04  98 7F 07 9D */	stb r3, 0x79d(r31)
 /* 803FEEC8 003FAD08  88 1F 07 7C */	lbz r0, 0x77c(r31)
 /* 803FEECC 003FAD0C  2C 00 00 00 */	cmpwi r0, 0x0
@@ -209,12 +209,12 @@ lbl_803FEEE0:
 /* 803FEEEC 003FAD2C  93 C3 00 04 */	stw r30, 0x4(r3)
 /* 803FEEF0 003FAD30  38 7F 07 7C */	addi r3, r31, 0x77c
 /* 803FEEF4 003FAD34  38 81 00 10 */	addi r4, r1, 0x10
-/* 803FEEF8 003FAD38  4B FF FE 11 */	bl lbl_803FED08
+/* 803FEEF8 003FAD38  4B FF FE 11 */	bl __as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap
 /* 803FEEFC 003FAD3C  38 00 00 01 */	li r0, 0x1
 /* 803FEF00 003FAD40  98 1F 07 7C */	stb r0, 0x77c(r31)
 /* 803FEF04 003FAD44  38 7F 07 90 */	addi r3, r31, 0x790
 /* 803FEF08 003FAD48  38 9F 07 74 */	addi r4, r31, 0x774
-/* 803FEF0C 003FAD4C  48 00 00 29 */	bl lbl_803FEF34
+/* 803FEF0C 003FAD4C  48 00 00 29 */	bl __as__Q33scn4step17ContextTotalScoreFRCQ33scn4step17ContextTotalScore
 /* 803FEF10 003FAD50  88 1F 07 9D */	lbz r0, 0x79d(r31)
 /* 803FEF14 003FAD54  98 1F 07 80 */	stb r0, 0x780(r31)
 .global lbl_803FEF18
@@ -226,20 +226,20 @@ lbl_803FEF18:
 /* 803FEF28 003FAD68  7C 08 03 A6 */	mtlr r0
 /* 803FEF2C 003FAD6C  38 21 03 F0 */	addi r1, r1, 0x3f0
 /* 803FEF30 003FAD70  4E 80 00 20 */	blr
-.global lbl_803FEF34
-lbl_803FEF34:
+.global __as__Q33scn4step17ContextTotalScoreFRCQ33scn4step17ContextTotalScore
+__as__Q33scn4step17ContextTotalScoreFRCQ33scn4step17ContextTotalScore:
 /* 803FEF34 003FAD74  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 803FEF38 003FAD78  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FEF3C 003FAD7C  88 04 00 04 */	lbz r0, 0x4(r4)
 /* 803FEF40 003FAD80  98 03 00 04 */	stb r0, 0x4(r3)
 /* 803FEF44 003FAD84  4E 80 00 20 */	blr
 
-.global lbl_803FEF48
-lbl_803FEF48:
-/* 803FEF48 003FAD88  4B FF DF 84 */	b lbl_803FCECC
+.global __dt__Q23seq17SequenceLvMapRootFv
+__dt__Q23seq17SequenceLvMapRootFv:
+/* 803FEF48 003FAD88  4B FF DF 84 */	b __dt__Q23seq21SequenceChallengeRootFv
 
-.global lbl_803FEF4C
-lbl_803FEF4C:
+.global nextAction__Q23seq17SequenceLvMapRootCFv
+nextAction__Q23seq17SequenceLvMapRootCFv:
 /* 803FEF4C 003FAD8C  80 03 03 B8 */	lwz r0, 0x3b8(r3)
 /* 803FEF50 003FAD90  28 00 00 01 */	cmplwi r0, 0x1
 /* 803FEF54 003FAD94  40 81 00 10 */	ble lbl_803FEF64
@@ -259,8 +259,8 @@ lbl_803FEF74:
 /* 803FEF74 003FADB4  38 60 00 00 */	li r3, 0x0
 /* 803FEF78 003FADB8  4E 80 00 20 */	blr
 
-.global lbl_803FEF7C
-lbl_803FEF7C:
+.global createChildSequence__Q23seq17SequenceLvMapRootCFv
+createChildSequence__Q23seq17SequenceLvMapRootCFv:
 /* 803FEF7C 003FADBC  94 21 EE C0 */	stwu r1, -0x1140(r1)
 /* 803FEF80 003FADC0  7C 08 02 A6 */	mflr r0
 /* 803FEF84 003FADC4  90 01 11 44 */	stw r0, 0x1144(r1)
@@ -292,7 +292,7 @@ lbl_803FEFC4:
 /* 803FEFDC 003FAE1C  3B A0 00 00 */	li r29, 0x0
 /* 803FEFE0 003FAE20  93 A1 11 18 */	stw r29, 0x1118(r1)
 /* 803FEFE4 003FAE24  80 64 00 08 */	lwz r3, 0x8(r4)
-/* 803FEFE8 003FAE28  4B FC B6 65 */	bl lbl_803CA64C
+/* 803FEFE8 003FAE28  4B FC B6 65 */	bl ToLevelMapKind__Q43scn4step3map8KindUtilFQ33scn4step9LevelKind
 /* 803FEFEC 003FAE2C  90 61 11 14 */	stw r3, 0x1114(r1)
 /* 803FEFF0 003FAE30  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803FEFF4 003FAE34  40 80 00 08 */	bge lbl_803FEFFC
@@ -308,39 +308,39 @@ lbl_803FEFFC:
 lbl_803FF010:
 /* 803FF010 003FAE50  38 61 10 AC */	addi r3, r1, 0x10ac
 /* 803FF014 003FAE54  38 9F 07 28 */	addi r4, r31, 0x728
-/* 803FF018 003FAE58  48 00 01 1D */	bl lbl_803FF134
+/* 803FF018 003FAE58  48 00 01 1D */	bl __as__Q33scn4step11ContextHeroFRCQ33scn4step11ContextHero
 /* 803FF01C 003FAE5C  38 00 00 00 */	li r0, 0x0
 /* 803FF020 003FAE60  90 01 10 C4 */	stw r0, 0x10c4(r1)
 /* 803FF024 003FAE64  38 61 10 F8 */	addi r3, r1, 0x10f8
 /* 803FF028 003FAE68  38 9F 07 7C */	addi r4, r31, 0x77c
-/* 803FF02C 003FAE6C  4B FF FC DD */	bl lbl_803FED08
+/* 803FF02C 003FAE6C  4B FF FC DD */	bl __as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap
 /* 803FF030 003FAE70  88 1F 07 9D */	lbz r0, 0x79d(r31)
 /* 803FF034 003FAE74  98 01 10 FC */	stb r0, 0x10fc(r1)
 /* 803FF038 003FAE78  38 61 11 0C */	addi r3, r1, 0x110c
 /* 803FF03C 003FAE7C  38 9F 07 74 */	addi r4, r31, 0x774
-/* 803FF040 003FAE80  4B FF FE F5 */	bl lbl_803FEF34
+/* 803FF040 003FAE80  4B FF FE F5 */	bl __as__Q33scn4step17ContextTotalScoreFRCQ33scn4step17ContextTotalScore
 /* 803FF044 003FAE84  38 60 09 7C */	li r3, 0x97c
-/* 803FF048 003FAE88  4B FF DB 95 */	bl lbl_803FCBDC
+/* 803FF048 003FAE88  4B FF DB 95 */	bl __nw__Q23seq9ISequenceFUl
 /* 803FF04C 003FAE8C  7C 7D 1B 78 */	mr r29, r3
 /* 803FF050 003FAE90  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803FF054 003FAE94  41 82 00 20 */	beq lbl_803FF074
 /* 803FF058 003FAE98  38 61 03 F8 */	addi r3, r1, 0x3f8
 /* 803FF05C 003FAE9C  38 81 0C 78 */	addi r4, r1, 0xc78
-/* 803FF060 003FAEA0  48 00 0D 4D */	bl lbl_803FFDAC
+/* 803FF060 003FAEA0  48 00 0D 4D */	bl Create__Q33seq12SequenceStep6RecipeFRCQ33scn4step7Context
 /* 803FF064 003FAEA4  7F A3 EB 78 */	mr r3, r29
 /* 803FF068 003FAEA8  38 81 03 F8 */	addi r4, r1, 0x3f8
-/* 803FF06C 003FAEAC  48 00 0E 9D */	bl lbl_803FFF08
+/* 803FF06C 003FAEAC  48 00 0E 9D */	bl __ct__Q23seq12SequenceStepFRCQ33seq12SequenceStep6Recipe
 /* 803FF070 003FAEB0  7C 7D 1B 78 */	mr r29, r3
 .global lbl_803FF074
 lbl_803FF074:
 /* 803FF074 003FAEB4  7F C3 F3 78 */	mr r3, r30
 /* 803FF078 003FAEB8  7F A4 EB 78 */	mr r4, r29
-/* 803FF07C 003FAEBC  4B D7 66 3D */	bl lbl_801756B8
+/* 803FF07C 003FAEBC  4B D7 66 3D */	bl "reset__Q23std26auto_ptr<Q23seq9ISequence>FPQ23seq9ISequence"
 /* 803FF080 003FAEC0  48 00 00 9C */	b lbl_803FF11C
 .global lbl_803FF084
 lbl_803FF084:
 /* 803FF084 003FAEC4  38 61 00 08 */	addi r3, r1, 0x8
-/* 803FF088 003FAEC8  4B E2 23 35 */	bl lbl_802213BC
+/* 803FF088 003FAEC8  4B E2 23 35 */	bl Create__Q33scn4step11ContextModeFv
 /* 803FF08C 003FAECC  38 A1 00 18 */	addi r5, r1, 0x18
 /* 803FF090 003FAED0  38 81 00 04 */	addi r4, r1, 0x4
 /* 803FF094 003FAED4  38 00 00 02 */	li r0, 0x2
@@ -359,7 +359,7 @@ lbl_803FF09C:
 /* 803FF0C0 003FAF00  80 BF 03 C4 */	lwz r5, 0x3c4(r31)
 /* 803FF0C4 003FAF04  88 DF 03 C8 */	lbz r6, 0x3c8(r31)
 /* 803FF0C8 003FAF08  38 E1 00 1C */	addi r7, r1, 0x1c
-/* 803FF0CC 003FAF0C  4B FF DC 21 */	bl lbl_803FCCEC
+/* 803FF0CC 003FAF0C  4B FF DC 21 */	bl Create__Q33seq21SequenceChallengeRoot6RecipeFQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKindbQ33scn4step11ContextMode
 /* 803FF0D0 003FAF10  38 A1 08 AC */	addi r5, r1, 0x8ac
 /* 803FF0D4 003FAF14  38 81 00 2C */	addi r4, r1, 0x2c
 /* 803FF0D8 003FAF18  38 00 00 79 */	li r0, 0x79
@@ -372,17 +372,17 @@ lbl_803FF0E0:
 /* 803FF0EC 003FAF2C  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 803FF0F0 003FAF30  42 00 FF F0 */	bdnz lbl_803FF0E0
 /* 803FF0F4 003FAF34  38 60 01 60 */	li r3, 0x160
-/* 803FF0F8 003FAF38  4B FF DA E5 */	bl lbl_803FCBDC
+/* 803FF0F8 003FAF38  4B FF DA E5 */	bl __nw__Q23seq9ISequenceFUl
 /* 803FF0FC 003FAF3C  7C 64 1B 78 */	mr r4, r3
 /* 803FF100 003FAF40  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803FF104 003FAF44  41 82 00 10 */	beq lbl_803FF114
 /* 803FF108 003FAF48  38 81 08 B0 */	addi r4, r1, 0x8b0
-/* 803FF10C 003FAF4C  4B FF DC 8D */	bl lbl_803FCD98
+/* 803FF10C 003FAF4C  4B FF DC 8D */	bl __ct__Q23seq21SequenceChallengeRootFRCQ33seq21SequenceChallengeRoot6Recipe
 /* 803FF110 003FAF50  7C 64 1B 78 */	mr r4, r3
 .global lbl_803FF114
 lbl_803FF114:
 /* 803FF114 003FAF54  7F C3 F3 78 */	mr r3, r30
-/* 803FF118 003FAF58  4B D7 65 A1 */	bl lbl_801756B8
+/* 803FF118 003FAF58  4B D7 65 A1 */	bl "reset__Q23std26auto_ptr<Q23seq9ISequence>FPQ23seq9ISequence"
 .global lbl_803FF11C
 lbl_803FF11C:
 /* 803FF11C 003FAF5C  39 61 11 40 */	addi r11, r1, 0x1140
@@ -391,8 +391,8 @@ lbl_803FF11C:
 /* 803FF128 003FAF68  7C 08 03 A6 */	mtlr r0
 /* 803FF12C 003FAF6C  38 21 11 40 */	addi r1, r1, 0x1140
 /* 803FF130 003FAF70  4E 80 00 20 */	blr
-.global lbl_803FF134
-lbl_803FF134:
+.global __as__Q33scn4step11ContextHeroFRCQ33scn4step11ContextHero
+__as__Q33scn4step11ContextHeroFRCQ33scn4step11ContextHero:
 /* 803FF134 003FAF74  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 803FF138 003FAF78  90 03 00 00 */	stw r0, 0x0(r3)
 /* 803FF13C 003FAF7C  80 04 00 04 */	lwz r0, 0x4(r4)
@@ -416,8 +416,8 @@ lbl_803FF164:
 /* 803FF17C 003FAFBC  90 06 00 04 */	stw r0, 0x4(r6)
 /* 803FF180 003FAFC0  4E 80 00 20 */	blr
 
-.global lbl_803FF184
-lbl_803FF184:
+.global onChildSequenceEnd__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
+onChildSequenceEnd__Q23seq17SequenceLvMapRootFRQ23seq9ISequence:
 /* 803FF184 003FAFC4  80 03 03 B8 */	lwz r0, 0x3b8(r3)
 /* 803FF188 003FAFC8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803FF18C 003FAFCC  41 82 00 10 */	beq lbl_803FF19C
@@ -426,21 +426,21 @@ lbl_803FF184:
 /* 803FF198 003FAFD8  4E 80 00 20 */	blr
 .global lbl_803FF19C
 lbl_803FF19C:
-/* 803FF19C 003FAFDC  48 00 00 A4 */	b lbl_803FF240
+/* 803FF19C 003FAFDC  48 00 00 A4 */	b onChildSequenceEndForLvMap__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
 .global lbl_803FF1A0
 lbl_803FF1A0:
-/* 803FF1A0 003FAFE0  48 00 02 30 */	b lbl_803FF3D0
+/* 803FF1A0 003FAFE0  48 00 02 30 */	b onChildSequenceEndForChallenge__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
 /* 803FF1A4 003FAFE4  4E 80 00 20 */	blr
 
-.global lbl_803FF1A8
-lbl_803FF1A8:
-/* 803FF1A8 003FAFE8  4B FF F0 E0 */	b lbl_803FE288
+.global createScene__Q23seq17SequenceLvMapRootCFv
+createScene__Q23seq17SequenceLvMapRootCFv:
+/* 803FF1A8 003FAFE8  4B FF F0 E0 */	b createScene__Q23seq17SequenceFirstDemoCFv
 
-.global lbl_803FF1AC
-lbl_803FF1AC:
+.global onSceneEnd__Q23seq17SequenceLvMapRootFRQ23scn6IScene
+onSceneEnd__Q23seq17SequenceLvMapRootFRQ23scn6IScene:
 /* 803FF1AC 003FAFEC  4E 80 00 20 */	blr
-.global lbl_803FF1B0
-lbl_803FF1B0:
+.global setupForLeaveDoor__Q23seq17SequenceLvMapRootFv
+setupForLeaveDoor__Q23seq17SequenceLvMapRootFv:
 /* 803FF1B0 003FAFF0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 803FF1B4 003FAFF4  7C 08 02 A6 */	mflr r0
 /* 803FF1B8 003FAFF8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -450,13 +450,13 @@ lbl_803FF1B0:
 /* 803FF1C8 003FB008  38 04 00 01 */	addi r0, r4, 0x1
 /* 803FF1CC 003FB00C  90 03 07 28 */	stw r0, 0x728(r3)
 /* 803FF1D0 003FB010  38 61 00 08 */	addi r3, r1, 0x8
-/* 803FF1D4 003FB014  4B E2 21 65 */	bl lbl_80221338
+/* 803FF1D4 003FB014  4B E2 21 65 */	bl Create__Q33scn4step12ContextLvMapFv
 /* 803FF1D8 003FB018  38 7F 07 7C */	addi r3, r31, 0x77c
 /* 803FF1DC 003FB01C  38 81 00 08 */	addi r4, r1, 0x8
-/* 803FF1E0 003FB020  4B FF FB 29 */	bl lbl_803FED08
+/* 803FF1E0 003FB020  4B FF FB 29 */	bl __as__Q33scn4step12ContextLvMapFRCQ33scn4step12ContextLvMap
 /* 803FF1E4 003FB024  80 7F 00 08 */	lwz r3, 0x8(r31)
 /* 803FF1E8 003FB028  80 9F 03 BC */	lwz r4, 0x3bc(r31)
-/* 803FF1EC 003FB02C  4B C5 4C 05 */	bl lbl_80053DF0
+/* 803FF1EC 003FB02C  4B C5 4C 05 */	bl __wpadNoAlloc
 /* 803FF1F0 003FB030  38 00 00 01 */	li r0, 0x1
 /* 803FF1F4 003FB034  98 1F 07 7D */	stb r0, 0x77d(r31)
 /* 803FF1F8 003FB038  90 7F 07 84 */	stw r3, 0x784(r31)
@@ -467,8 +467,8 @@ lbl_803FF1B0:
 /* 803FF20C 003FB04C  7C 08 03 A6 */	mtlr r0
 /* 803FF210 003FB050  38 21 00 30 */	addi r1, r1, 0x30
 /* 803FF214 003FB054  4E 80 00 20 */	blr
-.global lbl_803FF218
-lbl_803FF218:
+.global resetContextHero__Q23seq17SequenceLvMapRootFb
+resetContextHero__Q23seq17SequenceLvMapRootFb:
 /* 803FF218 003FB058  38 A0 00 00 */	li r5, 0x0
 /* 803FF21C 003FB05C  90 A3 07 28 */	stw r5, 0x728(r3)
 /* 803FF220 003FB060  90 A3 07 34 */	stw r5, 0x734(r3)
@@ -479,8 +479,8 @@ lbl_803FF218:
 /* 803FF234 003FB074  90 03 07 4C */	stw r0, 0x74c(r3)
 /* 803FF238 003FB078  90 A3 07 58 */	stw r5, 0x758(r3)
 /* 803FF23C 003FB07C  4E 80 00 20 */	blr
-.global lbl_803FF240
-lbl_803FF240:
+.global onChildSequenceEndForLvMap__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
+onChildSequenceEndForLvMap__Q23seq17SequenceLvMapRootFRQ23seq9ISequence:
 /* 803FF240 003FB080  94 21 FB 20 */	stwu r1, -0x4e0(r1)
 /* 803FF244 003FB084  7C 08 02 A6 */	mflr r0
 /* 803FF248 003FB088  90 01 04 E4 */	stw r0, 0x4e4(r1)
@@ -488,7 +488,7 @@ lbl_803FF240:
 /* 803FF250 003FB090  4B C0 80 F5 */	bl lbl_80007344
 /* 803FF254 003FB094  7C 7F 1B 78 */	mr r31, r3
 /* 803FF258 003FB098  7C 9D 23 78 */	mr r29, r4
-/* 803FF25C 003FB09C  4B FF DA 41 */	bl lbl_803FCC9C
+/* 803FF25C 003FB09C  4B FF DA 41 */	bl "RuntimeTypeInfoImpl<Q23seq12SequenceStep>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 803FF260 003FB0A0  7C 7E 1B 78 */	mr r30, r3
 /* 803FF264 003FB0A4  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 803FF268 003FB0A8  41 82 00 48 */	beq lbl_803FF2B0
@@ -524,30 +524,30 @@ lbl_803FF2B0:
 lbl_803FF2B4:
 /* 803FF2B4 003FB0F4  38 61 00 08 */	addi r3, r1, 0x8
 /* 803FF2B8 003FB0F8  7F A4 EB 78 */	mr r4, r29
-/* 803FF2BC 003FB0FC  48 00 11 2D */	bl lbl_804003E8
+/* 803FF2BC 003FB0FC  48 00 11 2D */	bl result__Q23seq12SequenceStepCFv
 /* 803FF2C0 003FB100  38 7F 07 28 */	addi r3, r31, 0x728
 /* 803FF2C4 003FB104  38 81 04 40 */	addi r4, r1, 0x440
-/* 803FF2C8 003FB108  4B FF FE 6D */	bl lbl_803FF134
+/* 803FF2C8 003FB108  4B FF FE 6D */	bl __as__Q33scn4step11ContextHeroFRCQ33scn4step11ContextHero
 /* 803FF2CC 003FB10C  7F E3 FB 78 */	mr r3, r31
 /* 803FF2D0 003FB110  80 81 00 08 */	lwz r4, 0x8(r1)
 /* 803FF2D4 003FB114  38 84 FF F9 */	addi r4, r4, -0x7
 /* 803FF2D8 003FB118  30 04 FF FF */	addic r0, r4, -0x1
 /* 803FF2DC 003FB11C  7C 80 21 10 */	subfe r4, r0, r4
-/* 803FF2E0 003FB120  4B FF FF 39 */	bl lbl_803FF218
-/* 803FF2E4 003FB124  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FF2E8 003FB128  4B D7 73 DD */	bl lbl_801766C4
-/* 803FF2EC 003FB12C  48 00 5C 5D */	bl lbl_80404F48
-/* 803FF2F0 003FB130  48 00 52 81 */	bl lbl_80404570
+/* 803FF2E0 003FB120  4B FF FF 39 */	bl resetContextHero__Q23seq17SequenceLvMapRootFb
+/* 803FF2E4 003FB124  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FF2E8 003FB128  4B D7 73 DD */	bl storageManager__Q23app11ApplicationFv
+/* 803FF2EC 003FB12C  48 00 5C 5D */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FF2F0 003FB130  48 00 52 81 */	bl isAllStageCleared__Q27storage15BackupFileData2CFv
 /* 803FF2F4 003FB134  98 7F 07 9D */	stb r3, 0x79d(r31)
-/* 803FF2F8 003FB138  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FF2FC 003FB13C  4B D7 73 C9 */	bl lbl_801766C4
-/* 803FF300 003FB140  48 00 5C 49 */	bl lbl_80404F48
-/* 803FF304 003FB144  48 00 50 79 */	bl lbl_8040437C
+/* 803FF2F8 003FB138  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FF2FC 003FB13C  4B D7 73 C9 */	bl storageManager__Q23app11ApplicationFv
+/* 803FF300 003FB140  48 00 5C 49 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FF304 003FB144  48 00 50 79 */	bl challengeTotalScore__Q27storage15BackupFileData2CFv
 /* 803FF308 003FB148  90 7F 07 74 */	stw r3, 0x774(r31)
-/* 803FF30C 003FB14C  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FF310 003FB150  4B D7 73 B5 */	bl lbl_801766C4
-/* 803FF314 003FB154  48 00 5C 35 */	bl lbl_80404F48
-/* 803FF318 003FB158  48 00 52 25 */	bl lbl_8040453C
+/* 803FF30C 003FB14C  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FF310 003FB150  4B D7 73 B5 */	bl storageManager__Q23app11ApplicationFv
+/* 803FF314 003FB154  48 00 5C 35 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
+/* 803FF318 003FB158  48 00 52 25 */	bl hasAllPlatinumMedal__Q27storage15BackupFileData2CFv
 /* 803FF31C 003FB15C  98 7F 07 78 */	stb r3, 0x778(r31)
 /* 803FF320 003FB160  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 803FF324 003FB164  2C 00 00 08 */	cmpwi r0, 0x8
@@ -568,21 +568,21 @@ lbl_803FF338:
 /* 803FF358 003FB198  38 00 00 01 */	li r0, 0x1
 /* 803FF35C 003FB19C  90 1F 03 B8 */	stw r0, 0x3b8(r31)
 /* 803FF360 003FB1A0  80 61 04 A8 */	lwz r3, 0x4a8(r1)
-/* 803FF364 003FB1A4  4B FC B1 A5 */	bl lbl_803CA508
+/* 803FF364 003FB1A4  4B FC B1 A5 */	bl ToLevelKind__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
 /* 803FF368 003FB1A8  90 7F 00 08 */	stw r3, 0x8(r31)
-/* 803FF36C 003FB1AC  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FF370 003FB1B0  4B D7 73 55 */	bl lbl_801766C4
-/* 803FF374 003FB1B4  48 00 5B D5 */	bl lbl_80404F48
+/* 803FF36C 003FB1AC  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FF370 003FB1B0  4B D7 73 55 */	bl storageManager__Q23app11ApplicationFv
+/* 803FF374 003FB1B4  48 00 5B D5 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
 /* 803FF378 003FB1B8  80 1F 03 C0 */	lwz r0, 0x3c0(r31)
 /* 803FF37C 003FB1BC  1C 00 00 24 */	mulli r0, r0, 0x24
 /* 803FF380 003FB1C0  7C 63 02 14 */	add r3, r3, r0
 /* 803FF384 003FB1C4  80 03 00 20 */	lwz r0, 0x20(r3)
 /* 803FF388 003FB1C8  90 1F 07 98 */	stw r0, 0x798(r31)
-/* 803FF38C 003FB1CC  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 803FF390 003FB1D0  4B D7 73 35 */	bl lbl_801766C4
-/* 803FF394 003FB1D4  48 00 5B B5 */	bl lbl_80404F48
+/* 803FF38C 003FB1CC  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 803FF390 003FB1D0  4B D7 73 35 */	bl storageManager__Q23app11ApplicationFv
+/* 803FF394 003FB1D4  48 00 5B B5 */	bl selectedBackupFileData2__Q27storage14StorageManagerFv
 /* 803FF398 003FB1D8  80 9F 03 C0 */	lwz r4, 0x3c0(r31)
-/* 803FF39C 003FB1DC  48 00 53 85 */	bl lbl_80404720
+/* 803FF39C 003FB1DC  48 00 53 85 */	bl hasAllAbilityPlatinumMedal__Q27storage15BackupFileData2CFQ33scn4step13ChallengeKind
 /* 803FF3A0 003FB1E0  98 7F 07 9C */	stb r3, 0x79c(r31)
 /* 803FF3A4 003FB1E4  48 00 00 14 */	b lbl_803FF3B8
 .global lbl_803FF3A8
@@ -599,14 +599,14 @@ lbl_803FF3B8:
 /* 803FF3C4 003FB204  7C 08 03 A6 */	mtlr r0
 /* 803FF3C8 003FB208  38 21 04 E0 */	addi r1, r1, 0x4e0
 /* 803FF3CC 003FB20C  4E 80 00 20 */	blr
-.global lbl_803FF3D0
-lbl_803FF3D0:
+.global onChildSequenceEndForChallenge__Q23seq17SequenceLvMapRootFRQ23seq9ISequence
+onChildSequenceEndForChallenge__Q23seq17SequenceLvMapRootFRQ23seq9ISequence:
 /* 803FF3D0 003FB210  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803FF3D4 003FB214  7C 08 02 A6 */	mflr r0
 /* 803FF3D8 003FB218  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803FF3DC 003FB21C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 803FF3E0 003FB220  7C 7F 1B 78 */	mr r31, r3
-/* 803FF3E4 003FB224  4B FF FD CD */	bl lbl_803FF1B0
+/* 803FF3E4 003FB224  4B FF FD CD */	bl setupForLeaveDoor__Q23seq17SequenceLvMapRootFv
 /* 803FF3E8 003FB228  80 7F 03 C0 */	lwz r3, 0x3c0(r31)
 /* 803FF3EC 003FB22C  38 03 00 01 */	addi r0, r3, 0x1
 /* 803FF3F0 003FB230  90 1F 07 28 */	stw r0, 0x728(r31)
@@ -622,6 +622,6 @@ lbl_803FF3D0:
 /* 803FF418 003FB258  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FF41C 003FB25C  4E 80 00 20 */	blr
 
-.global lbl_803FF420
-lbl_803FF420:
-/* 803FF420 003FB260  4B FF E6 08 */	b lbl_803FDA28
+.global GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv
+GetRuntimeTypeInfo__Q23seq17SequenceLvMapRootCFv:
+/* 803FF420 003FB260  4B FF E6 08 */	b "RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"

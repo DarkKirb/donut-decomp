@@ -1,166 +1,166 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C900
-lbl_8055C900:
+.global IsInitialized
+IsInitialized:
 	.skip 0x4
 
-.global lbl_8055C904
-lbl_8055C904:
+.global vsync_timing_err_cnt
+vsync_timing_err_cnt:
 	.skip 0x4
 
-.global lbl_8055C908
-lbl_8055C908:
+.global vsync_timing_test_flag
+vsync_timing_test_flag:
 	.skip 0x4
 
-.global lbl_8055C90C
-lbl_8055C90C:
+.global __VIDimming_All_Clear
+__VIDimming_All_Clear:
 	.skip 0x4
 
-.global lbl_8055C910
-lbl_8055C910:
+.global THD_TIME_TO_DIMMING
+THD_TIME_TO_DIMMING:
 	.skip 0x4
 
-.global lbl_8055C914
-lbl_8055C914:
+.global NEW_TIME_TO_DIMMING
+NEW_TIME_TO_DIMMING:
 	.skip 0x4
 
-.global lbl_8055C918
-lbl_8055C918:
+.global THD_TIME_TO_DVD_STOP
+THD_TIME_TO_DVD_STOP:
 	.skip 0x4
 
-.global lbl_8055C91C
-lbl_8055C91C:
+.global _gIdleCount_dimming
+_gIdleCount_dimming:
 	.skip 0x4
 
-.global lbl_8055C920
-lbl_8055C920:
+.global _gIdleCount_dvd
+_gIdleCount_dvd:
 	.skip 0x4
 
-.global lbl_8055C924
-lbl_8055C924:
+.global __VIDimmingState
+__VIDimmingState:
 	.skip 0x4
 
-.global lbl_8055C928
-lbl_8055C928:
+.global PositionCallback
+PositionCallback:
 	.skip 0x4
 
-.global lbl_8055C92C
-lbl_8055C92C:
+.global displayOffsetH
+displayOffsetH:
 	.skip 0x2
 
-.global lbl_8055C92E
-lbl_8055C92E:
+.global displayOffsetV
+displayOffsetV:
 	.skip 0x2
 
-.global lbl_8055C930
-lbl_8055C930:
+.global changeMode
+changeMode:
 	.skip 0x8
 
-.global lbl_8055C938
-lbl_8055C938:
+.global changed
+changed:
 	.skip 0x4
 
 .global lbl_8055C93C
 lbl_8055C93C:
 	.skip 0x4
 
-.global lbl_8055C940
-lbl_8055C940:
+.global shdwChangeMode
+shdwChangeMode:
 	.skip 0x8
 
-.global lbl_8055C948
-lbl_8055C948:
+.global shdwChanged
+shdwChanged:
 	.skip 0x4
 
 .global lbl_8055C94C
 lbl_8055C94C:
 	.skip 0x4
 
-.global lbl_8055C950
-lbl_8055C950:
+.global FBSet
+FBSet:
 	.skip 0x4
 
-.global lbl_8055C954
-lbl_8055C954:
+.global timingExtra
+timingExtra:
 	.skip 0x4
 
-.global lbl_8055C958
-lbl_8055C958:
+.global "@LOCAL@OnShutdown__FiUl@count@0"
+"@LOCAL@OnShutdown__FiUl@count@0":
 	.skip 0x4
 
-.global lbl_8055C95C
-lbl_8055C95C:
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingON_Pending@3"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingON_Pending@3":
 	.skip 0x4
 
-.global lbl_8055C960
-lbl_8055C960:
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingOFF_Pending@4"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingOFF_Pending@4":
 	.skip 0x4
 
-.global lbl_8055C964
-lbl_8055C964:
+.global "@LOCAL@PrintDebugPalCaution__Fv@message"
+"@LOCAL@PrintDebugPalCaution__Fv@message":
 	.skip 0x4
 
-.global lbl_8055C968
-lbl_8055C968:
+.global CurrBufAddr
+CurrBufAddr:
 	.skip 0x4
 
-.global lbl_8055C96C
-lbl_8055C96C:
+.global NextBufAddr
+NextBufAddr:
 	.skip 0x4
 
-.global lbl_8055C970
-lbl_8055C970:
+.global CurrTvMode
+CurrTvMode:
 	.skip 0x4
 
-.global lbl_8055C974
-lbl_8055C974:
+.global CurrTiming
+CurrTiming:
 	.skip 0x4
 
-.global lbl_8055C978
-lbl_8055C978:
+.global encoderType
+encoderType:
 	.skip 0x4
 
-.global lbl_8055C97C
-lbl_8055C97C:
+.global PostCB
+PostCB:
 	.skip 0x4
 
-.global lbl_8055C980
-lbl_8055C980:
+.global PreCB
+PreCB:
 	.skip 0x8
 
-.global lbl_8055C988
-lbl_8055C988:
+.global retraceQueue
+retraceQueue:
 	.skip 0x8
 
-.global lbl_8055C990
-lbl_8055C990:
+.global __VIDimmingFlag_SI_IDLE
+__VIDimmingFlag_SI_IDLE:
 	.skip 0x4
 
-.global lbl_8055C994
-lbl_8055C994:
+.global __VIDimmingFlag_RF_IDLE
+__VIDimmingFlag_RF_IDLE:
 	.skip 0x4
 
-.global lbl_8055C998
-lbl_8055C998:
+.global g_current_time_to_dim
+g_current_time_to_dim:
 	.skip 0x4
 
-.global lbl_8055C99C
-lbl_8055C99C:
+.global __VIDVDStopFlag_Enable
+__VIDVDStopFlag_Enable:
 	.skip 0x4
 
-.global lbl_8055C9A0
-lbl_8055C9A0:
+.global __VIDimmingFlag_Enable
+__VIDimmingFlag_Enable:
 	.skip 0x4
 
-.global lbl_8055C9A4
-lbl_8055C9A4:
+.global flushFlag3in1
+flushFlag3in1:
 	.skip 0x4
 
-.global lbl_8055C9A8
-lbl_8055C9A8:
+.global flushFlag
+flushFlag:
 	.skip 0x4
 
-.global lbl_8055C9AC
-lbl_8055C9AC:
+.global retraceCount
+retraceCount:
 	.skip 0x4

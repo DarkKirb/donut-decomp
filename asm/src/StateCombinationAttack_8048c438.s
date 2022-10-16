@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048C438
-lbl_8048C438:
+.global "__vt__Q24util113StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference22StateCombinationAttack,PQ43scn4step4hero4Hero,Ul>"
+"__vt__Q24util113StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference22StateCombinationAttack,PQ43scn4step4hero4Hero,Ul>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80370E38
-	.4byte lbl_80370E18
+	.4byte "__dt__Q24util113StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference22StateCombinationAttack,PQ43scn4step4hero4Hero,Ul>Fv"
+	.4byte "create__Q24util113StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference22StateCombinationAttack,PQ43scn4step4hero4Hero,Ul>Fv"
 
-.global lbl_8048C448
-lbl_8048C448:
+.global __vt__Q53scn4step4hero12interference22StateCombinationAttack
+__vt__Q53scn4step4hero12interference22StateCombinationAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803700C8
-	.4byte lbl_80370144
-	.4byte lbl_803701B4
-	.4byte lbl_8035550C
-	.4byte lbl_803701B8
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero12interference22StateCombinationAttackFv
+	.4byte procAnim__Q53scn4step4hero12interference22StateCombinationAttackFv
+	.4byte procMove__Q53scn4step4hero12interference22StateCombinationAttackFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero12interference22StateCombinationAttackFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

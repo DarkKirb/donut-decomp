@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80337138
-lbl_80337138:
+.global __ct__Q43scn4step4hero10GatherItemFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero10GatherItemFRQ43scn4step4hero4Hero:
 /* 80337138 00332F78  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8033713C 00332F7C  7C 08 02 A6 */	mflr r0
 /* 80337140 00332F80  90 01 00 14 */	stw r0, 0x14(r1)
@@ -12,21 +12,21 @@ lbl_80337138:
 /* 80337150 00332F90  38 00 00 00 */	li r0, 0x0
 /* 80337154 00332F94  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80337158 00332F98  38 63 00 08 */	addi r3, r3, 0x8
-/* 8033715C 00332F9C  3C 80 80 1A */	lis r4, lbl_8019FD54@ha
-/* 80337160 00332FA0  38 84 FD 54 */	addi r4, r4, lbl_8019FD54@l
-/* 80337164 00332FA4  3C A0 80 1A */	lis r5, lbl_8019FE3C@ha
-/* 80337168 00332FA8  38 A5 FE 3C */	addi r5, r5, lbl_8019FE3C@l
+/* 8033715C 00332F9C  3C 80 80 1A */	lis r4, __ct__Q33hel3geo4RectFv@ha
+/* 80337160 00332FA0  38 84 FD 54 */	addi r4, r4, __ct__Q33hel3geo4RectFv@l
+/* 80337164 00332FA4  3C A0 80 1A */	lis r5, __dt__Q33hel3geo4RectFv@ha
+/* 80337168 00332FA8  38 A5 FE 3C */	addi r5, r5, __dt__Q33hel3geo4RectFv@l
 /* 8033716C 00332FAC  38 C0 00 10 */	li r6, 0x10
 /* 80337170 00332FB0  38 E0 00 05 */	li r7, 0x5
-/* 80337174 00332FB4  4B CC FE B1 */	bl lbl_80007024
+/* 80337174 00332FB4  4B CC FE B1 */	bl __construct_array
 /* 80337178 00332FB8  7F E3 FB 78 */	mr r3, r31
 /* 8033717C 00332FBC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80337180 00332FC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80337184 00332FC4  7C 08 03 A6 */	mtlr r0
 /* 80337188 00332FC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8033718C 00332FCC  4E 80 00 20 */	blr
-.global lbl_80337190
-lbl_80337190:
+.global "__dt__Q33hel6common24Array<Q33hel3geo4Rect,5>Fv"
+"__dt__Q33hel6common24Array<Q33hel3geo4Rect,5>Fv":
 /* 80337190 00332FD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80337194 00332FD4  7C 08 02 A6 */	mflr r0
 /* 80337198 00332FD8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -36,16 +36,16 @@ lbl_80337190:
 /* 803371A8 00332FE8  7C 9F 23 78 */	mr r31, r4
 /* 803371AC 00332FEC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803371B0 00332FF0  41 82 00 2C */	beq lbl_803371DC
-/* 803371B4 00332FF4  3C 80 80 1A */	lis r4, lbl_8019FE3C@ha
-/* 803371B8 00332FF8  38 84 FE 3C */	addi r4, r4, lbl_8019FE3C@l
+/* 803371B4 00332FF4  3C 80 80 1A */	lis r4, __dt__Q33hel3geo4RectFv@ha
+/* 803371B8 00332FF8  38 84 FE 3C */	addi r4, r4, __dt__Q33hel3geo4RectFv@l
 /* 803371BC 00332FFC  38 A0 00 10 */	li r5, 0x10
 /* 803371C0 00333000  38 C0 00 05 */	li r6, 0x5
-/* 803371C4 00333004  4B CC FF 59 */	bl lbl_8000711C
+/* 803371C4 00333004  4B CC FF 59 */	bl __destroy_arr
 /* 803371C8 00333008  7F E0 07 34 */	extsh r0, r31
 /* 803371CC 0033300C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803371D0 00333010  40 81 00 0C */	ble lbl_803371DC
 /* 803371D4 00333014  7F C3 F3 78 */	mr r3, r30
-/* 803371D8 00333018  4B E8 85 3D */	bl lbl_801BF714
+/* 803371D8 00333018  4B E8 85 3D */	bl __dl__FPv
 .global lbl_803371DC
 lbl_803371DC:
 /* 803371DC 0033301C  7F C3 F3 78 */	mr r3, r30
@@ -55,8 +55,8 @@ lbl_803371DC:
 /* 803371EC 0033302C  7C 08 03 A6 */	mtlr r0
 /* 803371F0 00333030  38 21 00 10 */	addi r1, r1, 0x10
 /* 803371F4 00333034  4E 80 00 20 */	blr
-.global lbl_803371F8
-lbl_803371F8:
+.global "__dt__Q33hel6common31MutableArray<Q33hel3geo4Rect,5>Fv"
+"__dt__Q33hel6common31MutableArray<Q33hel3geo4Rect,5>Fv":
 /* 803371F8 00333038  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803371FC 0033303C  7C 08 02 A6 */	mflr r0
 /* 80337200 00333040  90 01 00 14 */	stw r0, 0x14(r1)
@@ -68,12 +68,12 @@ lbl_803371F8:
 /* 80337218 00333058  41 82 00 24 */	beq lbl_8033723C
 /* 8033721C 0033305C  38 63 00 04 */	addi r3, r3, 0x4
 /* 80337220 00333060  38 80 FF FF */	li r4, -0x1
-/* 80337224 00333064  4B FF FF 6D */	bl lbl_80337190
+/* 80337224 00333064  4B FF FF 6D */	bl "__dt__Q33hel6common24Array<Q33hel3geo4Rect,5>Fv"
 /* 80337228 00333068  7F E0 07 34 */	extsh r0, r31
 /* 8033722C 0033306C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80337230 00333070  40 81 00 0C */	ble lbl_8033723C
 /* 80337234 00333074  7F C3 F3 78 */	mr r3, r30
-/* 80337238 00333078  4B E8 84 DD */	bl lbl_801BF714
+/* 80337238 00333078  4B E8 84 DD */	bl __dl__FPv
 .global lbl_8033723C
 lbl_8033723C:
 /* 8033723C 0033307C  7F C3 F3 78 */	mr r3, r30
@@ -83,8 +83,8 @@ lbl_8033723C:
 /* 8033724C 0033308C  7C 08 03 A6 */	mtlr r0
 /* 80337250 00333090  38 21 00 10 */	addi r1, r1, 0x10
 /* 80337254 00333094  4E 80 00 20 */	blr
-.global lbl_80337258
-lbl_80337258:
+.global __dt__Q43scn4step4hero10GatherItemFv
+__dt__Q43scn4step4hero10GatherItemFv:
 /* 80337258 00333098  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8033725C 0033309C  7C 08 02 A6 */	mflr r0
 /* 80337260 003330A0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -96,12 +96,12 @@ lbl_80337258:
 /* 80337278 003330B8  41 82 00 24 */	beq lbl_8033729C
 /* 8033727C 003330BC  38 63 00 04 */	addi r3, r3, 0x4
 /* 80337280 003330C0  38 80 FF FF */	li r4, -0x1
-/* 80337284 003330C4  4B FF FF 75 */	bl lbl_803371F8
+/* 80337284 003330C4  4B FF FF 75 */	bl "__dt__Q33hel6common31MutableArray<Q33hel3geo4Rect,5>Fv"
 /* 80337288 003330C8  7F E0 07 34 */	extsh r0, r31
 /* 8033728C 003330CC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80337290 003330D0  40 81 00 0C */	ble lbl_8033729C
 /* 80337294 003330D4  7F C3 F3 78 */	mr r3, r30
-/* 80337298 003330D8  4B E8 84 7D */	bl lbl_801BF714
+/* 80337298 003330D8  4B E8 84 7D */	bl __dl__FPv
 .global lbl_8033729C
 lbl_8033729C:
 /* 8033729C 003330DC  7F C3 F3 78 */	mr r3, r30
@@ -111,8 +111,8 @@ lbl_8033729C:
 /* 803372AC 003330EC  7C 08 03 A6 */	mtlr r0
 /* 803372B0 003330F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803372B4 003330F4  4E 80 00 20 */	blr
-.global lbl_803372B8
-lbl_803372B8:
+.global procFixPos__Q43scn4step4hero10GatherItemFv
+procFixPos__Q43scn4step4hero10GatherItemFv:
 /* 803372B8 003330F8  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 803372BC 003330FC  7C 08 02 A6 */	mflr r0
 /* 803372C0 00333100  90 01 00 44 */	stw r0, 0x44(r1)
@@ -121,10 +121,10 @@ lbl_803372B8:
 /* 803372CC 0033310C  7C 7C 1B 78 */	mr r28, r3
 /* 803372D0 00333110  3B E0 00 00 */	li r31, 0x0
 /* 803372D4 00333114  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 803372D8 00333118  48 00 90 2D */	bl lbl_80340304
+/* 803372D8 00333118  48 00 90 2D */	bl location__Q43scn4step4hero4HeroCFv
 /* 803372DC 0033311C  7C 64 1B 78 */	mr r4, r3
 /* 803372E0 00333120  38 61 00 10 */	addi r3, r1, 0x10
-/* 803372E4 00333124  4B F3 83 D1 */	bl lbl_8026F6B4
+/* 803372E4 00333124  4B F3 83 D1 */	bl pos__Q43scn4step5chara8LocationCFv
 /* 803372E8 00333128  C0 01 00 14 */	lfs f0, 0x14(r1)
 /* 803372EC 0033312C  C0 21 00 10 */	lfs f1, 0x10(r1)
 /* 803372F0 00333130  D0 21 00 08 */	stfs f1, 0x8(r1)
@@ -136,33 +136,33 @@ lbl_803372B8:
 lbl_80337304:
 /* 80337304 00333144  7F A3 EB 78 */	mr r3, r29
 /* 80337308 00333148  80 9C 00 04 */	lwz r4, 0x4(r28)
-/* 8033730C 0033314C  4B CE D1 95 */	bl lbl_800244A0
+/* 8033730C 0033314C  4B CE D1 95 */	bl DefaultSwitchThreadCallback
 /* 80337310 00333150  38 7C 00 08 */	addi r3, r28, 0x8
 /* 80337314 00333154  7F A4 EB 78 */	mr r4, r29
-/* 80337318 00333158  4B EF 69 41 */	bl lbl_8022DC58
+/* 80337318 00333158  4B EF 69 41 */	bl "__vc__Q33hel6common53Array<Q24util35ObjRefHandle<Q43scn4step4boss4Boss>,5>FUl"
 /* 8033731C 0033315C  7C 64 1B 78 */	mr r4, r3
 /* 80337320 00333160  38 61 00 20 */	addi r3, r1, 0x20
-/* 80337324 00333164  4B E6 8A C5 */	bl lbl_8019FDE8
+/* 80337324 00333164  4B E6 8A C5 */	bl __ct__Q33hel3geo4RectFRCQ33hel3geo4Rect
 /* 80337328 00333168  38 61 00 20 */	addi r3, r1, 0x20
 /* 8033732C 0033316C  C0 21 00 08 */	lfs f1, 0x8(r1)
 /* 80337330 00333170  C0 41 00 0C */	lfs f2, 0xc(r1)
-/* 80337334 00333174  4B E6 8B 0D */	bl lbl_8019FE40
+/* 80337334 00333174  4B E6 8B 0D */	bl trans__Q33hel3geo4RectFff
 /* 80337338 00333178  80 7C 00 00 */	lwz r3, 0x0(r28)
-/* 8033733C 0033317C  48 00 90 59 */	bl lbl_80340394
+/* 8033733C 0033317C  48 00 90 59 */	bl itemCatcher__Q43scn4step4hero4HeroFv
 /* 80337340 00333180  38 81 00 20 */	addi r4, r1, 0x20
-/* 80337344 00333184  48 00 B8 FD */	bl lbl_80342C40
+/* 80337344 00333184  48 00 B8 FD */	bl chkGatherItem__Q43scn4step4hero11ItemCatcherFRCQ33hel3geo4Rect
 /* 80337348 00333188  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8033734C 0033318C  41 82 00 18 */	beq lbl_80337364
 /* 80337350 00333190  3B E0 00 01 */	li r31, 0x1
 /* 80337354 00333194  38 61 00 20 */	addi r3, r1, 0x20
 /* 80337358 00333198  38 80 FF FF */	li r4, -0x1
-/* 8033735C 0033319C  4B E6 8A E1 */	bl lbl_8019FE3C
+/* 8033735C 0033319C  4B E6 8A E1 */	bl __dt__Q33hel3geo4RectFv
 /* 80337360 003331A0  48 00 00 1C */	b lbl_8033737C
 .global lbl_80337364
 lbl_80337364:
 /* 80337364 003331A4  38 61 00 20 */	addi r3, r1, 0x20
 /* 80337368 003331A8  38 80 FF FF */	li r4, -0x1
-/* 8033736C 003331AC  4B E6 8A D1 */	bl lbl_8019FE3C
+/* 8033736C 003331AC  4B E6 8A D1 */	bl __dt__Q33hel3geo4RectFv
 /* 80337370 003331B0  3B BD 00 01 */	addi r29, r29, 0x1
 .global lbl_80337374
 lbl_80337374:
@@ -173,10 +173,10 @@ lbl_8033737C:
 /* 8033737C 003331BC  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80337380 003331C0  41 82 00 18 */	beq lbl_80337398
 /* 80337384 003331C4  80 7C 00 00 */	lwz r3, 0x0(r28)
-/* 80337388 003331C8  48 00 90 1D */	bl lbl_803403A4
+/* 80337388 003331C8  48 00 90 1D */	bl soundSE__Q43scn4step4hero4HeroFv
 /* 8033738C 003331CC  38 63 00 04 */	addi r3, r3, 0x4
 /* 80337390 003331D0  38 80 01 71 */	li r4, 0x171
-/* 80337394 003331D4  48 0C B9 41 */	bl lbl_80402CD4
+/* 80337394 003331D4  48 0C B9 41 */	bl start__Q23snd11SERequestorFUl
 .global lbl_80337398
 lbl_80337398:
 /* 80337398 003331D8  39 61 00 40 */	addi r11, r1, 0x40
@@ -185,8 +185,8 @@ lbl_80337398:
 /* 803373A4 003331E4  7C 08 03 A6 */	mtlr r0
 /* 803373A8 003331E8  38 21 00 40 */	addi r1, r1, 0x40
 /* 803373AC 003331EC  4E 80 00 20 */	blr
-.global lbl_803373B0
-lbl_803373B0:
+.global add__Q43scn4step4hero10GatherItemFRCQ33hel3geo4Rect
+add__Q43scn4step4hero10GatherItemFRCQ33hel3geo4Rect:
 /* 803373B0 003331F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803373B4 003331F4  7C 08 02 A6 */	mflr r0
 /* 803373B8 003331F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -199,7 +199,7 @@ lbl_803373B0:
 /* 803373D4 00333214  41 82 00 3C */	beq lbl_80337410
 /* 803373D8 00333218  38 63 00 08 */	addi r3, r3, 0x8
 /* 803373DC 0033321C  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 803373E0 00333220  4B EF 68 79 */	bl lbl_8022DC58
+/* 803373E0 00333220  4B EF 68 79 */	bl "__vc__Q33hel6common53Array<Q24util35ObjRefHandle<Q43scn4step4boss4Boss>,5>FUl"
 /* 803373E4 00333224  C0 1F 00 00 */	lfs f0, 0x0(r31)
 /* 803373E8 00333228  D0 03 00 00 */	stfs f0, 0x0(r3)
 /* 803373EC 0033322C  C0 1F 00 04 */	lfs f0, 0x4(r31)

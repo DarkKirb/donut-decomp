@@ -1,64 +1,64 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80416088
-lbl_80416088:
+.global "COPYRIGHT_TABLE__Q43scn7history6detail18@unnamed@Text_cpp@"
+"COPYRIGHT_TABLE__Q43scn7history6detail18@unnamed@Text_cpp@":
 
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0x00000001
-	.4byte lbl_804631B0
+	.4byte "@51850"
 	.4byte 0x00000001
-	.4byte lbl_804631C0
+	.4byte "@51851"
 	.4byte 0x00000001
-	.4byte lbl_804631D8
+	.4byte "@51852"
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0x00000001
-	.4byte lbl_804631F0
+	.4byte "@51853_804631F0"
 	.4byte 0x00000001
-	.4byte lbl_80463204
+	.4byte "@51854_80463204"
 	.4byte 0x00000001
-	.4byte lbl_80463218
+	.4byte "@51855_80463218"
 	.4byte 0x00000001
-	.4byte lbl_80463228
+	.4byte "@51856"
 	.4byte 0x00000001
-	.4byte lbl_80463240
+	.4byte "@51857"
 	.4byte 0x00000001
-	.4byte lbl_80463254
+	.4byte "@51858"
 	.4byte 0x00000001
-	.4byte lbl_80463270
+	.4byte "@51859"
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0x00000001
-	.4byte lbl_80463280
+	.4byte "@51860"
 	.4byte 0x00000001
-	.4byte lbl_80463294
+	.4byte "@51861"
 	.4byte 0x00000001
-	.4byte lbl_804632AC
+	.4byte "@51862"
 	.4byte 0x00000001
-	.4byte lbl_804632C8
+	.4byte "@51863"
 	.4byte 0x00000001
-	.4byte lbl_804632E0
+	.4byte "@51864_804632E0"
 	.4byte 0x00000001
-	.4byte lbl_804632F8
+	.4byte "@51865"
 	.4byte 0x00000001
-	.4byte lbl_80463310
+	.4byte "@51866_80463310"
 	.4byte 0x00000001
-	.4byte lbl_80463324
+	.4byte "@51867_80463324"
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0x00000001
-	.4byte lbl_8046333C
+	.4byte "@51868_8046333C"
 	.4byte 0
-	.4byte lbl_80558D10
+	.4byte "@51849"
 	.4byte 0x00000001
-	.4byte lbl_80463350
+	.4byte "@51869"
 	.4byte 0x00000001
-	.4byte lbl_80463368
+	.4byte "@51870_80463368"
 	.4byte 0x00000001
-	.4byte lbl_80463384
+	.4byte "@51871_80463384"
 	.4byte 0x00000001
-	.4byte lbl_80463398
+	.4byte "@51872_80463398"

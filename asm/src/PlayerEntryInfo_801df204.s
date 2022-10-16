@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801DF204
-lbl_801DF204:
+.global __ct__Q25pause15PlayerEntryInfoFv
+__ct__Q25pause15PlayerEntryInfoFv:
 /* 801DF204 001DB044  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DF208 001DB048  7C 08 02 A6 */	mflr r0
 /* 801DF20C 001DB04C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -13,14 +13,14 @@ lbl_801DF204:
 /* 801DF220 001DB060  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 801DF224 001DB064  3B E0 00 01 */	li r31, 0x1
 /* 801DF228 001DB068  38 80 00 00 */	li r4, 0x0
-/* 801DF22C 001DB06C  4B F9 88 99 */	bl lbl_80177AC4
+/* 801DF22C 001DB06C  4B F9 88 99 */	bl "__vc__Q33hel6common10Array<b,4>FUl"
 /* 801DF230 001DB070  9B E3 00 00 */	stb r31, 0x0(r3)
 /* 801DF234 001DB074  3B E0 00 01 */	li r31, 0x1
 .global lbl_801DF238
 lbl_801DF238:
 /* 801DF238 001DB078  7F A3 EB 78 */	mr r3, r29
 /* 801DF23C 001DB07C  7F E4 FB 78 */	mr r4, r31
-/* 801DF240 001DB080  4B F9 88 85 */	bl lbl_80177AC4
+/* 801DF240 001DB080  4B F9 88 85 */	bl "__vc__Q33hel6common10Array<b,4>FUl"
 /* 801DF244 001DB084  9B C3 00 00 */	stb r30, 0x0(r3)
 /* 801DF248 001DB088  3B FF 00 01 */	addi r31, r31, 0x1
 /* 801DF24C 001DB08C  28 1F 00 04 */	cmplwi r31, 0x4
@@ -32,8 +32,8 @@ lbl_801DF238:
 /* 801DF264 001DB0A4  7C 08 03 A6 */	mtlr r0
 /* 801DF268 001DB0A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DF26C 001DB0AC  4E 80 00 20 */	blr
-.global lbl_801DF270
-lbl_801DF270:
+.global get__Q25pause15PlayerEntryInfoCFUl
+get__Q25pause15PlayerEntryInfoCFUl:
 /* 801DF270 001DB0B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF274 001DB0B4  7C 08 02 A6 */	mflr r0
 /* 801DF278 001DB0B8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -43,7 +43,7 @@ lbl_801DF270:
 /* 801DF288 001DB0C8  7C 9F 23 78 */	mr r31, r4
 /* 801DF28C 001DB0CC  7F E3 FB 78 */	mr r3, r31
 /* 801DF290 001DB0D0  38 80 00 04 */	li r4, 0x4
-/* 801DF294 001DB0D4  4B E4 52 0D */	bl lbl_800244A0
+/* 801DF294 001DB0D4  4B E4 52 0D */	bl DefaultSwitchThreadCallback
 /* 801DF298 001DB0D8  7C 7E F8 AE */	lbzx r3, r30, r31
 /* 801DF29C 001DB0DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801DF2A0 001DB0E0  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -51,14 +51,14 @@ lbl_801DF270:
 /* 801DF2A8 001DB0E8  7C 08 03 A6 */	mtlr r0
 /* 801DF2AC 001DB0EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DF2B0 001DB0F0  4E 80 00 20 */	blr
-.global lbl_801DF2B4
-lbl_801DF2B4:
+.global set__Q25pause15PlayerEntryInfoFUlb
+set__Q25pause15PlayerEntryInfoFUlb:
 /* 801DF2B4 001DB0F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF2B8 001DB0F8  7C 08 02 A6 */	mflr r0
 /* 801DF2BC 001DB0FC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801DF2C0 001DB100  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DF2C4 001DB104  7C BF 2B 78 */	mr r31, r5
-/* 801DF2C8 001DB108  4B F9 87 FD */	bl lbl_80177AC4
+/* 801DF2C8 001DB108  4B F9 87 FD */	bl "__vc__Q33hel6common10Array<b,4>FUl"
 /* 801DF2CC 001DB10C  9B E3 00 00 */	stb r31, 0x0(r3)
 /* 801DF2D0 001DB110  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801DF2D4 001DB114  80 01 00 14 */	lwz r0, 0x14(r1)

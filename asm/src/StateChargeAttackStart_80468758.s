@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80468758
-lbl_80468758:
+.global __vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart
+__vt__Q53scn4step4boss8kingsdoo22StateChargeAttackStart:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80253E8C
-	.4byte lbl_80253E90
-	.4byte lbl_80253E94
-	.4byte lbl_802344FC
-	.4byte lbl_80253E98
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv
+	.4byte procAnim__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv
+	.4byte procMove__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss8kingsdoo22StateChargeAttackStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

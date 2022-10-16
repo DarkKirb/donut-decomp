@@ -1,138 +1,138 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CA60
-lbl_8055CA60:
+.global CommandInfoCounter
+CommandInfoCounter:
 	.skip 0x4
 
-.global lbl_8055CA64
-lbl_8055CA64:
+.global PauseFlag
+PauseFlag:
 	.skip 0x4
 
-.global lbl_8055CA68
-lbl_8055CA68:
+.global PausingFlag
+PausingFlag:
 	.skip 0x4
 
-.global lbl_8055CA6C
-lbl_8055CA6C:
+.global FatalErrorFlag
+FatalErrorFlag:
 	.skip 0x4
 
-.global lbl_8055CA70
-lbl_8055CA70:
+.global Canceling
+Canceling:
 	.skip 0x4
 
-.global lbl_8055CA74
-lbl_8055CA74:
+.global ResumeFromHere
+ResumeFromHere:
 	.skip 0x4
 
-.global lbl_8055CA78
-lbl_8055CA78:
+.global NumInternalRetry
+NumInternalRetry:
 	.skip 0x4
 
-.global lbl_8055CA7C
-lbl_8055CA7C:
+.global FirstTimeInBootrom
+FirstTimeInBootrom:
 	.skip 0x4
 
-.global lbl_8055CA80
-lbl_8055CA80:
+.global Breaking
+Breaking:
 	.skip 0x4
 
-.global lbl_8055CA84
-lbl_8055CA84:
+.global WaitingForCoverOpen
+WaitingForCoverOpen:
 	.skip 0x4
 
-.global lbl_8055CA88
-lbl_8055CA88:
+.global WaitingForCoverClose
+WaitingForCoverClose:
 	.skip 0x4
 
-.global lbl_8055CA8C
-lbl_8055CA8C:
+.global MotorStopped
+MotorStopped:
 	.skip 0x4
 
-.global lbl_8055CA90
-lbl_8055CA90:
+.global ChangedDisc
+ChangedDisc:
 	.skip 0x4
 
-.global lbl_8055CA94
-lbl_8055CA94:
+.global PreparingCover
+PreparingCover:
 	.skip 0x4
 
-.global lbl_8055CA98
-lbl_8055CA98:
+.global __DVDLayoutFormat
+__DVDLayoutFormat:
 	.skip 0x4
 
-.global lbl_8055CA9C
-lbl_8055CA9C:
+.global DVDInitialized
+DVDInitialized:
 	.skip 0x4
 
-.global lbl_8055CAA0
-lbl_8055CAA0:
+.global __BS2DVDLowIntType
+__BS2DVDLowIntType:
 	.skip 0x4
 
-.global lbl_8055CAA4
-lbl_8055CAA4:
+.global Prepared_8055CAA4
+Prepared_8055CAA4:
 	.skip 0x4
 
-.global lbl_8055CAA8
-lbl_8055CAA8:
+.global BootGameInfo
+BootGameInfo:
 	.skip 0x4
 
-.global lbl_8055CAAC
-lbl_8055CAAC:
+.global PartInfo
+PartInfo:
 	.skip 0x4
 
-.global lbl_8055CAB0
-lbl_8055CAB0:
+.global GameToc
+GameToc:
 	.skip 0x10
 
-.global lbl_8055CAC0
-lbl_8055CAC0:
+.global __DVDNumTmdBytes
+__DVDNumTmdBytes:
 	.skip 0x8
 
-.global lbl_8055CAC8
-lbl_8055CAC8:
+.global LastResetEnd
+LastResetEnd:
 	.skip 0x4
 
 .global lbl_8055CACC
 lbl_8055CACC:
 	.skip 0x4
 
-.global lbl_8055CAD0
-lbl_8055CAD0:
+.global MotorState
+MotorState:
 	.skip 0x4
 
-.global lbl_8055CAD4
-lbl_8055CAD4:
+.global ResetRequired
+ResetRequired:
 	.skip 0x4
 
-.global lbl_8055CAD8
-lbl_8055CAD8:
+.global LastError
+LastError:
 	.skip 0x4
 
-.global lbl_8055CADC
-lbl_8055CADC:
+.global CancelLastError
+CancelLastError:
 	.skip 0x4
 
-.global lbl_8055CAE0
-lbl_8055CAE0:
+.global CancelCallback
+CancelCallback:
 	.skip 0x4
 
-.global lbl_8055CAE4
-lbl_8055CAE4:
+.global CurrCommand
+CurrCommand:
 	.skip 0x4
 
-.global lbl_8055CAE8
-lbl_8055CAE8:
+.global bootInfo
+bootInfo:
 	.skip 0x4
 
-.global lbl_8055CAEC
-lbl_8055CAEC:
+.global IDShouldBe
+IDShouldBe:
 	.skip 0x4
 
-.global lbl_8055CAF0
-lbl_8055CAF0:
+.global executing
+executing:
 	.skip 0x4
 
-.global lbl_8055CAF4
-lbl_8055CAF4:
+.global LastState
+LastState:
 	.skip 0x4

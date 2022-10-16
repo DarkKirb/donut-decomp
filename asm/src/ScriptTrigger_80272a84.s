@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80272A84
-lbl_80272A84:
+.global set__Q43scn4step5chara13ScriptTriggerFUl
+set__Q43scn4step5chara13ScriptTriggerFUl:
 /* 80272A84 0026E8C4  28 04 00 20 */	cmplwi r4, 0x20
 /* 80272A88 0026E8C8  4C 80 00 20 */	bgelr
 /* 80272A8C 0026E8CC  80 A3 00 00 */	lwz r5, 0x0(r3)
@@ -11,8 +11,8 @@ lbl_80272A84:
 /* 80272A98 0026E8D8  7C A0 03 78 */	or r0, r5, r0
 /* 80272A9C 0026E8DC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80272AA0 0026E8E0  4E 80 00 20 */	blr
-.global lbl_80272AA4
-lbl_80272AA4:
+.global get__Q43scn4step5chara13ScriptTriggerFUl
+get__Q43scn4step5chara13ScriptTriggerFUl:
 /* 80272AA4 0026E8E4  28 04 00 20 */	cmplwi r4, 0x20
 /* 80272AA8 0026E8E8  41 80 00 0C */	blt lbl_80272AB4
 /* 80272AAC 0026E8EC  38 60 00 00 */	li r3, 0x0

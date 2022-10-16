@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045A510
-lbl_8045A510:
+.global "@54520"
+"@54520":
 
 	.4byte 0x48454C2E
 	.4byte 0x4D617468
@@ -270,131 +270,131 @@ lbl_8045A510:
 	.4byte 0x6F617429
 	.4byte 0
 
-.global lbl_8045A934
-lbl_8045A934:
+.global "@54663_8045A934"
+"@54663_8045A934":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2990
+	.4byte getZY__Q33hel4math7Vector3CFv
 
-.global lbl_8045A940
-lbl_8045A940:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2A7C
-
-.global lbl_8045A94C
-lbl_8045A94C:
+.global "@54702_8045A940"
+"@54702_8045A940":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2AD0
+	.4byte getZX__Q33hel4math7Vector3CFv
 
-.global lbl_8045A958
-lbl_8045A958:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2B24
-
-.global lbl_8045A964
-lbl_8045A964:
+.global "@54710_8045A94C"
+"@54710_8045A94C":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2B78
+	.4byte getYZ__Q33hel4math7Vector3CFv
 
-.global lbl_8045A970
-lbl_8045A970:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2BCC
-
-.global lbl_8045A97C
-lbl_8045A97C:
+.global "@54718_8045A958"
+"@54718_8045A958":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C2C20
+	.4byte getYX__Q33hel4math7Vector3CFv
 
-.global lbl_8045A988
-lbl_8045A988:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8017C568
-
-.global lbl_8045A994
-lbl_8045A994:
+.global "@54726_8045A964"
+"@54726_8045A964":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8017C84C
+	.4byte getXZ__Q33hel4math7Vector3CFv
 
-.global lbl_8045A9A0
-lbl_8045A9A0:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801954E0
-
-.global lbl_8045A9AC
-lbl_8045A9AC:
+.global "@54734_8045A970"
+"@54734_8045A970":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F724
+	.4byte getXY__Q33hel4math7Vector3CFv
 
-.global lbl_8045A9B8
-lbl_8045A9B8:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F730
-
-.global lbl_8045A9C4
-lbl_8045A9C4:
+.global "@54742_8045A97C"
+"@54742_8045A97C":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019FC88
+	.4byte __dv__Q33hel4math7Vector3CFf
 
-.global lbl_8045A9D0
-lbl_8045A9D0:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801829AC
-
-.global lbl_8045A9DC
-lbl_8045A9DC:
+.global "@54772_8045A988"
+"@54772_8045A988":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019E1BC
+	.4byte __ml__Q33hel4math7Vector3CFf
 
-.global lbl_8045A9E8
-lbl_8045A9E8:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F888
-
-.global lbl_8045A9F4
-lbl_8045A9F4:
+.global "@54782"
+"@54782":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C326C
+	.4byte __mi__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
 
-.global lbl_8045AA00
-lbl_8045AA00:
+.global "@54806"
+"@54806":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C33B4
+	.4byte __pl__Q33hel4math7Vector3CFRCQ33hel4math7Vector3
+
+.global "@54820_8045A9AC"
+"@54820_8045A9AC":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __adv__Q33hel4math7Vector3Ff
+
+.global "@54828_8045A9B8"
+"@54828_8045A9B8":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __amu__Q33hel4math7Vector3Ff
+
+.global "@54833"
+"@54833":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+
+.global "@54841"
+"@54841":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __apl__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+
+.global "@54846"
+"@54846":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZero__Q33hel4math7Vector3CFv
+
+.global "@54875_8045A9E8"
+"@54875_8045A9E8":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZeroStrict__Q33hel4math7Vector3CFv
+
+.global "@54880_8045A9F4"
+"@54880_8045A9F4":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZeroLoose__Q33hel4math7Vector3CFf
+
+.global "@54904_8045AA00"
+"@54904_8045AA00":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte set__Q33hel4math7Vector3Ffff
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

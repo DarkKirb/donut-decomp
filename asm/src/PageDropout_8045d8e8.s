@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045D8E8
-lbl_8045D8E8:
+.global "@52145_8045D8E8"
+"@52145_8045D8E8":
 
 	.4byte 0x436F6E74
 	.4byte 0x696E7565
 	.4byte 0
 
-.global lbl_8045D8F4
-lbl_8045D8F4:
+.global "@52146_8045D8F4"
+"@52146_8045D8F4":
 
 	.4byte 0x45786974
 	.4byte 0x53746167
 	.4byte 0x65000000
 
-.global lbl_8045D900
-lbl_8045D900:
+.global "@52147_8045D900"
+"@52147_8045D900":
 
 	.4byte 0x52657475
 	.4byte 0x726E4669
@@ -24,16 +24,16 @@ lbl_8045D900:
 	.4byte 0x6C656374
 	.4byte 0
 
-.global lbl_8045D914
-lbl_8045D914:
+.global "@52148_8045D914"
+"@52148_8045D914":
 
 	.4byte 0x52657475
 	.4byte 0x726E4172
 	.4byte 0x65614D61
 	.4byte 0x70000000
 
-.global lbl_8045D924
-lbl_8045D924:
+.global "@52150"
+"@52150":
 
 	.4byte 0x42617474
 	.4byte 0x6C654B69
@@ -71,8 +71,8 @@ lbl_8045D924:
 	.4byte 0x6F757425
 	.4byte 0x73000000
 
-.global lbl_8045D9B0
-lbl_8045D9B0:
+.global "@53415_8045D9B0"
+"@53415_8045D9B0":
 
 	.4byte 0x50616765
 	.4byte 0x5469746C
@@ -105,17 +105,17 @@ lbl_8045D9B0:
 	.4byte 0x6F745361
 	.4byte 0x76656400
 
-.global lbl_8045DA28
-lbl_8045DA28:
+.global __vt__Q25pause11PageDropout
+__vt__Q25pause11PageDropout:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801DD928
-	.4byte lbl_801DD44C
-	.4byte lbl_801DD458
-	.4byte lbl_801DD45C
-	.4byte lbl_801DD4C4
-	.4byte lbl_801DD4F4
+	.4byte __dt__Q25pause11PageDropoutFv
+	.4byte pageFrameTitle__Q25pause11PageDropoutCFv
+	.4byte pageMainLayout__Q25pause11PageDropoutFv
+	.4byte pageProcAnim__Q25pause11PageDropoutFv
+	.4byte pageProcHID__Q25pause11PageDropoutFv
+	.4byte pageIsBusy__Q25pause11PageDropoutCFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

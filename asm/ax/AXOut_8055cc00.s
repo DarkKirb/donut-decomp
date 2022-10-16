@@ -1,54 +1,54 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CC00
-lbl_8055CC00:
+.global __AXExceedCallback
+__AXExceedCallback:
 	.skip 0x4
 
-.global lbl_8055CC04
-lbl_8055CC04:
+.global __AXRmtCpuPtr
+__AXRmtCpuPtr:
 	.skip 0x4
 
-.global lbl_8055CC08
-lbl_8055CC08:
+.global __AXRmtDspPtr
+__AXRmtDspPtr:
 	.skip 0x4
 
-.global lbl_8055CC0C
-lbl_8055CC0C:
+.global __AXRmtBuffLen
+__AXRmtBuffLen:
 	.skip 0x4
 
-.global lbl_8055CC10
-lbl_8055CC10:
+.global __AXOutputBufferMode
+__AXOutputBufferMode:
 	.skip 0x8
 
-.global lbl_8055CC18
-lbl_8055CC18:
+.global __AXOutThreadQueue
+__AXOutThreadQueue:
 	.skip 0x8
 
-.global lbl_8055CC20
-lbl_8055CC20:
+.global __AXDebugSteppingMode
+__AXDebugSteppingMode:
 	.skip 0x4
 
-.global lbl_8055CC24
-lbl_8055CC24:
+.global __AXDSPDoneFlag
+__AXDSPDoneFlag:
 	.skip 0x4
 
-.global lbl_8055CC28
-lbl_8055CC28:
+.global __AXDSPInitFlag
+__AXDSPInitFlag:
 	.skip 0x4
 
-.global lbl_8055CC2C
-lbl_8055CC2C:
+.global __AXUserFrameCallback
+__AXUserFrameCallback:
 	.skip 0x4
 
-.global lbl_8055CC30
-lbl_8055CC30:
+.global __AXOutDspReady
+__AXOutDspReady:
 	.skip 0x4
 
-.global lbl_8055CC34
-lbl_8055CC34:
+.global __AXAiDmaFrame
+__AXAiDmaFrame:
 	.skip 0x4
 
-.global lbl_8055CC38
-lbl_8055CC38:
+.global __AXOutFrame
+__AXOutFrame:
 	.skip 0x8

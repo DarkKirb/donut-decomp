@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80443F98
-lbl_80443F98:
+.global __vt__Q36nw4hbm3lyt5Group
+__vt__Q36nw4hbm3lyt5Group:
 
-	.4byte lbl_80443FB8
+	.4byte __RTTI__Q36nw4hbm3lyt5Group
 	.4byte 0
-	.4byte lbl_801369E0
+	.4byte __dt__Q36nw4hbm3lyt5GroupFv
 
-.global lbl_80443FA4
-lbl_80443FA4:
+.global "@7939"
+"@7939":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -17,8 +17,8 @@ lbl_80443FA4:
 	.4byte 0x3A47726F
 	.4byte 0x75700000
 
-.global lbl_80443FB8
-lbl_80443FB8:
+.global __RTTI__Q36nw4hbm3lyt5Group
+__RTTI__Q36nw4hbm3lyt5Group:
 
-	.4byte lbl_80443FA4
+	.4byte "@7939"
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415BD0
-lbl_80415BD0:
+.global "BGM_LABEL_TABLE__Q43scn7history6detail17@unnamed@BGM_cpp@"
+"BGM_LABEL_TABLE__Q43scn7history6detail17@unnamed@BGM_cpp@":
 
 	.4byte 0x00000014
 	.4byte 0x00000014

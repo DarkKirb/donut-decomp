@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8028ADDC
-lbl_8028ADDC:
+.global Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 8028ADDC 00286C1C  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8028ADE0 00286C20  7C 08 02 A6 */	mflr r0
 /* 8028ADE4 00286C24  90 01 00 54 */	stw r0, 0x54(r1)
@@ -30,7 +30,7 @@ lbl_8028AE28:
 /* 8028AE34 00286C74  38 61 00 08 */	addi r3, r1, 0x8
 /* 8028AE38 00286C78  7C E4 3B 78 */	mr r4, r7
 /* 8028AE3C 00286C7C  38 A0 00 18 */	li r5, 0x18
-/* 8028AE40 00286C80  4B F1 2B 7D */	bl lbl_8019D9BC
+/* 8028AE40 00286C80  4B F1 2B 7D */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 8028AE44 00286C84  38 BD 00 14 */	addi r5, r29, 0x14
 /* 8028AE48 00286C88  38 81 00 04 */	addi r4, r1, 0x4
 /* 8028AE4C 00286C8C  38 00 00 03 */	li r0, 0x3
@@ -49,8 +49,8 @@ lbl_8028AE54:
 /* 8028AE78 00286CB8  93 3E 00 04 */	stw r25, 0x4(r30)
 /* 8028AE7C 00286CBC  93 5E 00 08 */	stw r26, 0x8(r30)
 /* 8028AE80 00286CC0  93 DD 00 70 */	stw r30, 0x70(r29)
-/* 8028AE84 00286CC4  3C 60 80 47 */	lis r3, lbl_80472658@ha
-/* 8028AE88 00286CC8  38 03 26 58 */	addi r0, r3, lbl_80472658@l
+/* 8028AE84 00286CC4  3C 60 80 47 */	lis r3, "@50228_80472658"@ha
+/* 8028AE88 00286CC8  38 03 26 58 */	addi r0, r3, "@50228_80472658"@l
 /* 8028AE8C 00286CCC  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 8028AE90 00286CD0  93 7F 00 04 */	stw r27, 0x4(r31)
 /* 8028AE94 00286CD4  93 9F 00 08 */	stw r28, 0x8(r31)

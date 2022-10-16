@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800D29E0
-lbl_800D29E0:
+.global HasResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFv
+HasResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D29E0 000CE820  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D29E4 000CE824  7C 08 02 A6 */	mflr r0
 /* 800D29E8 000CE828  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -17,13 +17,13 @@ lbl_800D2A04:
 /* 800D2A04 000CE844  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2A08
 lbl_800D2A08:
-/* 800D2A08 000CE848  3C 60 80 44 */	lis r3, lbl_80440680@ha
+/* 800D2A08 000CE848  3C 60 80 44 */	lis r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2A0C 000CE84C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2A10 000CE850  38 63 06 80 */	addi r3, r3, lbl_80440680@l
+/* 800D2A10 000CE850  38 63 06 80 */	addi r3, r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2A14 000CE854  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2A18 000CE858  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2A1C 000CE85C  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2A20 000CE860  4B FF 64 71 */	bl lbl_800C8E90
+/* 800D2A20 000CE860  4B FF 64 71 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2A24 000CE864  7C 03 00 D0 */	neg r0, r3
 /* 800D2A28 000CE868  7C 00 1B 78 */	or r0, r0, r3
 /* 800D2A2C 000CE86C  54 03 0F FE */	srwi r3, r0, 31
@@ -31,8 +31,8 @@ lbl_800D2A08:
 /* 800D2A34 000CE874  7C 08 03 A6 */	mtlr r0
 /* 800D2A38 000CE878  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2A3C 000CE87C  4E 80 00 20 */	blr
-.global lbl_800D2A40
-lbl_800D2A40:
+.global HasResAnmLight__Q34nw4r3g3d9ResAnmScnCFv
+HasResAnmLight__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D2A40 000CE880  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D2A44 000CE884  7C 08 02 A6 */	mflr r0
 /* 800D2A48 000CE888  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -47,13 +47,13 @@ lbl_800D2A64:
 /* 800D2A64 000CE8A4  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2A68
 lbl_800D2A68:
-/* 800D2A68 000CE8A8  3C 60 80 44 */	lis r3, lbl_804406A0@ha
+/* 800D2A68 000CE8A8  3C 60 80 44 */	lis r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2A6C 000CE8AC  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2A70 000CE8B0  38 63 06 A0 */	addi r3, r3, lbl_804406A0@l
+/* 800D2A70 000CE8B0  38 63 06 A0 */	addi r3, r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2A74 000CE8B4  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2A78 000CE8B8  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2A7C 000CE8BC  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2A80 000CE8C0  4B FF 64 11 */	bl lbl_800C8E90
+/* 800D2A80 000CE8C0  4B FF 64 11 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2A84 000CE8C4  7C 03 00 D0 */	neg r0, r3
 /* 800D2A88 000CE8C8  7C 00 1B 78 */	or r0, r0, r3
 /* 800D2A8C 000CE8CC  54 03 0F FE */	srwi r3, r0, 31
@@ -61,8 +61,8 @@ lbl_800D2A68:
 /* 800D2A94 000CE8D4  7C 08 03 A6 */	mtlr r0
 /* 800D2A98 000CE8D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2A9C 000CE8DC  4E 80 00 20 */	blr
-.global lbl_800D2AA0
-lbl_800D2AA0:
+.global GetResLightSetNumEntries__Q34nw4r3g3d9ResAnmScnCFv
+GetResLightSetNumEntries__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D2AA0 000CE8E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D2AA4 000CE8E4  7C 08 02 A6 */	mflr r0
 /* 800D2AA8 000CE8E8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -77,13 +77,13 @@ lbl_800D2AC4:
 /* 800D2AC4 000CE904  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2AC8
 lbl_800D2AC8:
-/* 800D2AC8 000CE908  3C 60 80 44 */	lis r3, lbl_80440660@ha
+/* 800D2AC8 000CE908  3C 60 80 44 */	lis r3, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2ACC 000CE90C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2AD0 000CE910  38 63 06 60 */	addi r3, r3, lbl_80440660@l
+/* 800D2AD0 000CE910  38 63 06 60 */	addi r3, r3, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2AD4 000CE914  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2AD8 000CE918  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2ADC 000CE91C  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2AE0 000CE920  4B FF 63 B1 */	bl lbl_800C8E90
+/* 800D2AE0 000CE920  4B FF 63 B1 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2AE4 000CE924  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2AE8 000CE928  41 82 00 24 */	beq lbl_800D2B0C
 /* 800D2AEC 000CE92C  7C 03 00 D0 */	neg r0, r3
@@ -105,8 +105,8 @@ lbl_800D2B10:
 /* 800D2B14 000CE954  7C 08 03 A6 */	mtlr r0
 /* 800D2B18 000CE958  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2B1C 000CE95C  4E 80 00 20 */	blr
-.global lbl_800D2B20
-lbl_800D2B20:
+.global GetResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFQ34nw4r3g3d7ResName
+GetResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFQ34nw4r3g3d7ResName:
 /* 800D2B20 000CE960  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2B24 000CE964  7C 08 02 A6 */	mflr r0
 /* 800D2B28 000CE968  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -123,13 +123,13 @@ lbl_800D2B4C:
 /* 800D2B4C 000CE98C  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2B50
 lbl_800D2B50:
-/* 800D2B50 000CE990  3C 60 80 44 */	lis r3, lbl_80440680@ha
+/* 800D2B50 000CE990  3C 60 80 44 */	lis r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2B54 000CE994  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800D2B58 000CE998  38 63 06 80 */	addi r3, r3, lbl_80440680@l
+/* 800D2B58 000CE998  38 63 06 80 */	addi r3, r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2B5C 000CE99C  38 81 00 10 */	addi r4, r1, 0x10
 /* 800D2B60 000CE9A0  90 61 00 10 */	stw r3, 0x10(r1)
 /* 800D2B64 000CE9A4  38 61 00 14 */	addi r3, r1, 0x14
-/* 800D2B68 000CE9A8  4B FF 63 29 */	bl lbl_800C8E90
+/* 800D2B68 000CE9A8  4B FF 63 29 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2B6C 000CE9AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2B70 000CE9B0  41 82 00 20 */	beq lbl_800D2B90
 /* 800D2B74 000CE9B4  80 1F 00 00 */	lwz r0, 0x0(r31)
@@ -137,7 +137,7 @@ lbl_800D2B50:
 /* 800D2B7C 000CE9BC  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D2B80 000CE9C0  38 61 00 0C */	addi r3, r1, 0xc
 /* 800D2B84 000CE9C4  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D2B88 000CE9C8  4B FF 63 09 */	bl lbl_800C8E90
+/* 800D2B88 000CE9C8  4B FF 63 09 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2B8C 000CE9CC  48 00 00 08 */	b lbl_800D2B94
 .global lbl_800D2B90
 lbl_800D2B90:
@@ -151,8 +151,8 @@ lbl_800D2B94:
 /* 800D2BA4 000CE9E4  4E 80 00 20 */	blr
 /* 800D2BA8 000CE9E8  00 00 00 00 */	.4byte 0x00000000
 /* 800D2BAC 000CE9EC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D2BB0
-lbl_800D2BB0:
+.global GetResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmAmbLight__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D2BB0 000CE9F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2BB4 000CE9F4  7C 08 02 A6 */	mflr r0
 /* 800D2BB8 000CE9F8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -169,13 +169,13 @@ lbl_800D2BDC:
 /* 800D2BDC 000CEA1C  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2BE0
 lbl_800D2BE0:
-/* 800D2BE0 000CEA20  3C 60 80 44 */	lis r3, lbl_80440680@ha
+/* 800D2BE0 000CEA20  3C 60 80 44 */	lis r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2BE4 000CEA24  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D2BE8 000CEA28  38 63 06 80 */	addi r3, r3, lbl_80440680@l
+/* 800D2BE8 000CEA28  38 63 06 80 */	addi r3, r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2BEC 000CEA2C  38 81 00 0C */	addi r4, r1, 0xc
 /* 800D2BF0 000CEA30  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D2BF4 000CEA34  38 61 00 08 */	addi r3, r1, 0x8
-/* 800D2BF8 000CEA38  4B FF 62 99 */	bl lbl_800C8E90
+/* 800D2BF8 000CEA38  4B FF 62 99 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2BFC 000CEA3C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2C00 000CEA40  41 82 00 44 */	beq lbl_800D2C44
 /* 800D2C04 000CEA44  7C 03 00 D0 */	neg r0, r3
@@ -209,8 +209,8 @@ lbl_800D2C48:
 /* 800D2C54 000CEA94  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D2C58 000CEA98  4E 80 00 20 */	blr
 /* 800D2C5C 000CEA9C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D2C60
-lbl_800D2C60:
+.global GetResAnmAmbLightNumEntries__Q34nw4r3g3d9ResAnmScnCFv
+GetResAnmAmbLightNumEntries__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D2C60 000CEAA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D2C64 000CEAA4  7C 08 02 A6 */	mflr r0
 /* 800D2C68 000CEAA8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -225,13 +225,13 @@ lbl_800D2C84:
 /* 800D2C84 000CEAC4  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2C88
 lbl_800D2C88:
-/* 800D2C88 000CEAC8  3C 60 80 44 */	lis r3, lbl_80440680@ha
+/* 800D2C88 000CEAC8  3C 60 80 44 */	lis r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2C8C 000CEACC  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2C90 000CEAD0  38 63 06 80 */	addi r3, r3, lbl_80440680@l
+/* 800D2C90 000CEAD0  38 63 06 80 */	addi r3, r3, "ResNameData_AmbLights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2C94 000CEAD4  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2C98 000CEAD8  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2C9C 000CEADC  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2CA0 000CEAE0  4B FF 61 F1 */	bl lbl_800C8E90
+/* 800D2CA0 000CEAE0  4B FF 61 F1 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2CA4 000CEAE4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2CA8 000CEAE8  41 82 00 24 */	beq lbl_800D2CCC
 /* 800D2CAC 000CEAEC  7C 03 00 D0 */	neg r0, r3
@@ -253,8 +253,8 @@ lbl_800D2CD0:
 /* 800D2CD4 000CEB14  7C 08 03 A6 */	mtlr r0
 /* 800D2CD8 000CEB18  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2CDC 000CEB1C  4E 80 00 20 */	blr
-.global lbl_800D2CE0
-lbl_800D2CE0:
+.global GetResAnmLight__Q34nw4r3g3d9ResAnmScnCFQ34nw4r3g3d7ResName
+GetResAnmLight__Q34nw4r3g3d9ResAnmScnCFQ34nw4r3g3d7ResName:
 /* 800D2CE0 000CEB20  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2CE4 000CEB24  7C 08 02 A6 */	mflr r0
 /* 800D2CE8 000CEB28  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -271,13 +271,13 @@ lbl_800D2D0C:
 /* 800D2D0C 000CEB4C  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2D10
 lbl_800D2D10:
-/* 800D2D10 000CEB50  3C 60 80 44 */	lis r3, lbl_804406A0@ha
+/* 800D2D10 000CEB50  3C 60 80 44 */	lis r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2D14 000CEB54  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800D2D18 000CEB58  38 63 06 A0 */	addi r3, r3, lbl_804406A0@l
+/* 800D2D18 000CEB58  38 63 06 A0 */	addi r3, r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2D1C 000CEB5C  38 81 00 10 */	addi r4, r1, 0x10
 /* 800D2D20 000CEB60  90 61 00 10 */	stw r3, 0x10(r1)
 /* 800D2D24 000CEB64  38 61 00 14 */	addi r3, r1, 0x14
-/* 800D2D28 000CEB68  4B FF 61 69 */	bl lbl_800C8E90
+/* 800D2D28 000CEB68  4B FF 61 69 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2D2C 000CEB6C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2D30 000CEB70  41 82 00 20 */	beq lbl_800D2D50
 /* 800D2D34 000CEB74  80 1F 00 00 */	lwz r0, 0x0(r31)
@@ -285,7 +285,7 @@ lbl_800D2D10:
 /* 800D2D3C 000CEB7C  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D2D40 000CEB80  38 61 00 0C */	addi r3, r1, 0xc
 /* 800D2D44 000CEB84  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D2D48 000CEB88  4B FF 61 49 */	bl lbl_800C8E90
+/* 800D2D48 000CEB88  4B FF 61 49 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2D4C 000CEB8C  48 00 00 08 */	b lbl_800D2D54
 .global lbl_800D2D50
 lbl_800D2D50:
@@ -299,8 +299,8 @@ lbl_800D2D54:
 /* 800D2D64 000CEBA4  4E 80 00 20 */	blr
 /* 800D2D68 000CEBA8  00 00 00 00 */	.4byte 0x00000000
 /* 800D2D6C 000CEBAC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D2D70
-lbl_800D2D70:
+.global GetResAnmLight__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmLight__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D2D70 000CEBB0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2D74 000CEBB4  7C 08 02 A6 */	mflr r0
 /* 800D2D78 000CEBB8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -317,13 +317,13 @@ lbl_800D2D9C:
 /* 800D2D9C 000CEBDC  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2DA0
 lbl_800D2DA0:
-/* 800D2DA0 000CEBE0  3C 60 80 44 */	lis r3, lbl_804406A0@ha
+/* 800D2DA0 000CEBE0  3C 60 80 44 */	lis r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2DA4 000CEBE4  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D2DA8 000CEBE8  38 63 06 A0 */	addi r3, r3, lbl_804406A0@l
+/* 800D2DA8 000CEBE8  38 63 06 A0 */	addi r3, r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2DAC 000CEBEC  38 81 00 0C */	addi r4, r1, 0xc
 /* 800D2DB0 000CEBF0  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D2DB4 000CEBF4  38 61 00 08 */	addi r3, r1, 0x8
-/* 800D2DB8 000CEBF8  4B FF 60 D9 */	bl lbl_800C8E90
+/* 800D2DB8 000CEBF8  4B FF 60 D9 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2DBC 000CEBFC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2DC0 000CEC00  41 82 00 44 */	beq lbl_800D2E04
 /* 800D2DC4 000CEC04  7C 03 00 D0 */	neg r0, r3
@@ -357,8 +357,8 @@ lbl_800D2E08:
 /* 800D2E14 000CEC54  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D2E18 000CEC58  4E 80 00 20 */	blr
 /* 800D2E1C 000CEC5C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D2E20
-lbl_800D2E20:
+.global GetResAnmLightNumEntries__Q34nw4r3g3d9ResAnmScnCFv
+GetResAnmLightNumEntries__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D2E20 000CEC60  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D2E24 000CEC64  7C 08 02 A6 */	mflr r0
 /* 800D2E28 000CEC68  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -373,13 +373,13 @@ lbl_800D2E44:
 /* 800D2E44 000CEC84  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2E48
 lbl_800D2E48:
-/* 800D2E48 000CEC88  3C 60 80 44 */	lis r3, lbl_804406A0@ha
+/* 800D2E48 000CEC88  3C 60 80 44 */	lis r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2E4C 000CEC8C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2E50 000CEC90  38 63 06 A0 */	addi r3, r3, lbl_804406A0@l
+/* 800D2E50 000CEC90  38 63 06 A0 */	addi r3, r3, "ResNameData_Lights__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2E54 000CEC94  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2E58 000CEC98  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2E5C 000CEC9C  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2E60 000CECA0  4B FF 60 31 */	bl lbl_800C8E90
+/* 800D2E60 000CECA0  4B FF 60 31 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2E64 000CECA4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2E68 000CECA8  41 82 00 24 */	beq lbl_800D2E8C
 /* 800D2E6C 000CECAC  7C 03 00 D0 */	neg r0, r3
@@ -401,8 +401,8 @@ lbl_800D2E90:
 /* 800D2E94 000CECD4  7C 08 03 A6 */	mtlr r0
 /* 800D2E98 000CECD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2E9C 000CECDC  4E 80 00 20 */	blr
-.global lbl_800D2EA0
-lbl_800D2EA0:
+.global GetResAnmFog__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmFog__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D2EA0 000CECE0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2EA4 000CECE4  7C 08 02 A6 */	mflr r0
 /* 800D2EA8 000CECE8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -419,13 +419,13 @@ lbl_800D2ECC:
 /* 800D2ECC 000CED0C  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2ED0
 lbl_800D2ED0:
-/* 800D2ED0 000CED10  3C 60 80 44 */	lis r3, lbl_804406C0@ha
+/* 800D2ED0 000CED10  3C 60 80 44 */	lis r3, "ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2ED4 000CED14  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D2ED8 000CED18  38 63 06 C0 */	addi r3, r3, lbl_804406C0@l
+/* 800D2ED8 000CED18  38 63 06 C0 */	addi r3, r3, "ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2EDC 000CED1C  38 81 00 0C */	addi r4, r1, 0xc
 /* 800D2EE0 000CED20  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D2EE4 000CED24  38 61 00 08 */	addi r3, r1, 0x8
-/* 800D2EE8 000CED28  4B FF 5F A9 */	bl lbl_800C8E90
+/* 800D2EE8 000CED28  4B FF 5F A9 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2EEC 000CED2C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2EF0 000CED30  41 82 00 44 */	beq lbl_800D2F34
 /* 800D2EF4 000CED34  7C 03 00 D0 */	neg r0, r3
@@ -459,8 +459,8 @@ lbl_800D2F38:
 /* 800D2F44 000CED84  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D2F48 000CED88  4E 80 00 20 */	blr
 /* 800D2F4C 000CED8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D2F50
-lbl_800D2F50:
+.global GetResAnmFogNumEntries__Q34nw4r3g3d9ResAnmScnCFv
+GetResAnmFogNumEntries__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D2F50 000CED90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D2F54 000CED94  7C 08 02 A6 */	mflr r0
 /* 800D2F58 000CED98  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -475,13 +475,13 @@ lbl_800D2F74:
 /* 800D2F74 000CEDB4  38 00 00 00 */	li r0, 0x0
 .global lbl_800D2F78
 lbl_800D2F78:
-/* 800D2F78 000CEDB8  3C 60 80 44 */	lis r3, lbl_804406C0@ha
+/* 800D2F78 000CEDB8  3C 60 80 44 */	lis r3, "ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D2F7C 000CEDBC  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D2F80 000CEDC0  38 63 06 C0 */	addi r3, r3, lbl_804406C0@l
+/* 800D2F80 000CEDC0  38 63 06 C0 */	addi r3, r3, "ResNameData_Fogs__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D2F84 000CEDC4  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D2F88 000CEDC8  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D2F8C 000CEDCC  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D2F90 000CEDD0  4B FF 5F 01 */	bl lbl_800C8E90
+/* 800D2F90 000CEDD0  4B FF 5F 01 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D2F94 000CEDD4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D2F98 000CEDD8  41 82 00 24 */	beq lbl_800D2FBC
 /* 800D2F9C 000CEDDC  7C 03 00 D0 */	neg r0, r3
@@ -503,8 +503,8 @@ lbl_800D2FC0:
 /* 800D2FC4 000CEE04  7C 08 03 A6 */	mtlr r0
 /* 800D2FC8 000CEE08  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D2FCC 000CEE0C  4E 80 00 20 */	blr
-.global lbl_800D2FD0
-lbl_800D2FD0:
+.global GetResAnmCamera__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmCamera__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D2FD0 000CEE10  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D2FD4 000CEE14  7C 08 02 A6 */	mflr r0
 /* 800D2FD8 000CEE18  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -521,13 +521,13 @@ lbl_800D2FFC:
 /* 800D2FFC 000CEE3C  38 00 00 00 */	li r0, 0x0
 .global lbl_800D3000
 lbl_800D3000:
-/* 800D3000 000CEE40  3C 60 80 44 */	lis r3, lbl_804406E0@ha
+/* 800D3000 000CEE40  3C 60 80 44 */	lis r3, "ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D3004 000CEE44  90 01 00 08 */	stw r0, 0x8(r1)
-/* 800D3008 000CEE48  38 63 06 E0 */	addi r3, r3, lbl_804406E0@l
+/* 800D3008 000CEE48  38 63 06 E0 */	addi r3, r3, "ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D300C 000CEE4C  38 81 00 0C */	addi r4, r1, 0xc
 /* 800D3010 000CEE50  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800D3014 000CEE54  38 61 00 08 */	addi r3, r1, 0x8
-/* 800D3018 000CEE58  4B FF 5E 79 */	bl lbl_800C8E90
+/* 800D3018 000CEE58  4B FF 5E 79 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D301C 000CEE5C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D3020 000CEE60  41 82 00 44 */	beq lbl_800D3064
 /* 800D3024 000CEE64  7C 03 00 D0 */	neg r0, r3
@@ -561,8 +561,8 @@ lbl_800D3068:
 /* 800D3074 000CEEB4  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D3078 000CEEB8  4E 80 00 20 */	blr
 /* 800D307C 000CEEBC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3080
-lbl_800D3080:
+.global GetResAnmCameraNumEntries__Q34nw4r3g3d9ResAnmScnCFv
+GetResAnmCameraNumEntries__Q34nw4r3g3d9ResAnmScnCFv:
 /* 800D3080 000CEEC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D3084 000CEEC4  7C 08 02 A6 */	mflr r0
 /* 800D3088 000CEEC8  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -577,13 +577,13 @@ lbl_800D30A4:
 /* 800D30A4 000CEEE4  38 00 00 00 */	li r0, 0x0
 .global lbl_800D30A8
 lbl_800D30A8:
-/* 800D30A8 000CEEE8  3C 60 80 44 */	lis r3, lbl_804406E0@ha
+/* 800D30A8 000CEEE8  3C 60 80 44 */	lis r3, "ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D30AC 000CEEEC  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D30B0 000CEEF0  38 63 06 E0 */	addi r3, r3, lbl_804406E0@l
+/* 800D30B0 000CEEF0  38 63 06 E0 */	addi r3, r3, "ResNameData_Cameras__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D30B4 000CEEF4  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D30B8 000CEEF8  90 61 00 08 */	stw r3, 0x8(r1)
 /* 800D30BC 000CEEFC  38 61 00 0C */	addi r3, r1, 0xc
-/* 800D30C0 000CEF00  4B FF 5D D1 */	bl lbl_800C8E90
+/* 800D30C0 000CEF00  4B FF 5D D1 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D30C4 000CEF04  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D30C8 000CEF08  41 82 00 24 */	beq lbl_800D30EC
 /* 800D30CC 000CEF0C  7C 03 00 D0 */	neg r0, r3
@@ -605,8 +605,8 @@ lbl_800D30F0:
 /* 800D30F4 000CEF34  7C 08 03 A6 */	mtlr r0
 /* 800D30F8 000CEF38  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D30FC 000CEF3C  4E 80 00 20 */	blr
-.global lbl_800D3100
-lbl_800D3100:
+.global GetResLightSetByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl
+GetResLightSetByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D3100 000CEF40  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 800D3104 000CEF44  A0 A3 00 3C */	lhz r5, 0x3c(r3)
 /* 800D3108 000CEF48  7C 05 20 40 */	cmplw r5, r4
@@ -633,8 +633,8 @@ lbl_800D3130:
 /* 800D3144 000CEF84  38 60 00 00 */	li r3, 0x0
 /* 800D3148 000CEF88  4E 80 00 20 */	blr
 /* 800D314C 000CEF8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3150
-lbl_800D3150:
+.global GetResAnmAmbLightByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmAmbLightByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D3150 000CEF90  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 800D3154 000CEF94  A0 A3 00 3E */	lhz r5, 0x3e(r3)
 /* 800D3158 000CEF98  7C 05 20 40 */	cmplw r5, r4
@@ -661,8 +661,8 @@ lbl_800D3180:
 /* 800D3194 000CEFD4  38 60 00 00 */	li r3, 0x0
 /* 800D3198 000CEFD8  4E 80 00 20 */	blr
 /* 800D319C 000CEFDC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D31A0
-lbl_800D31A0:
+.global GetResAnmLightByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmLightByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D31A0 000CEFE0  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 800D31A4 000CEFE4  A0 A3 00 40 */	lhz r5, 0x40(r3)
 /* 800D31A8 000CEFE8  7C 05 20 40 */	cmplw r5, r4
@@ -689,8 +689,8 @@ lbl_800D31D0:
 /* 800D31E4 000CF024  38 60 00 00 */	li r3, 0x0
 /* 800D31E8 000CF028  4E 80 00 20 */	blr
 /* 800D31EC 000CF02C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D31F0
-lbl_800D31F0:
+.global GetResAnmFogByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmFogByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D31F0 000CF030  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 800D31F4 000CF034  A0 A3 00 42 */	lhz r5, 0x42(r3)
 /* 800D31F8 000CF038  7C 05 20 40 */	cmplw r5, r4
@@ -717,8 +717,8 @@ lbl_800D3220:
 /* 800D3234 000CF074  38 60 00 00 */	li r3, 0x0
 /* 800D3238 000CF078  4E 80 00 20 */	blr
 /* 800D323C 000CF07C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3240
-lbl_800D3240:
+.global GetResAnmCameraByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl
+GetResAnmCameraByRefNumber__Q34nw4r3g3d9ResAnmScnCFUl:
 /* 800D3240 000CF080  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 800D3244 000CF084  A0 A3 00 44 */	lhz r5, 0x44(r3)
 /* 800D3248 000CF088  7C 05 20 40 */	cmplw r5, r4
@@ -745,8 +745,8 @@ lbl_800D3270:
 /* 800D3284 000CF0C4  38 60 00 00 */	li r3, 0x0
 /* 800D3288 000CF0C8  4E 80 00 20 */	blr
 /* 800D328C 000CF0CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3290
-lbl_800D3290:
+.global Bind__Q34nw4r3g3d9ResAnmScnFQ34nw4r3g3d9ResAnmScn
+Bind__Q34nw4r3g3d9ResAnmScnFQ34nw4r3g3d9ResAnmScn:
 /* 800D3290 000CF0D0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800D3294 000CF0D4  7C 08 02 A6 */	mflr r0
 /* 800D3298 000CF0D8  90 01 00 44 */	stw r0, 0x44(r1)
@@ -765,13 +765,13 @@ lbl_800D32C4:
 /* 800D32C4 000CF104  38 00 00 00 */	li r0, 0x0
 .global lbl_800D32C8
 lbl_800D32C8:
-/* 800D32C8 000CF108  3C 60 80 44 */	lis r3, lbl_80440660@ha
+/* 800D32C8 000CF108  3C 60 80 44 */	lis r3, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D32CC 000CF10C  90 01 00 10 */	stw r0, 0x10(r1)
-/* 800D32D0 000CF110  38 63 06 60 */	addi r3, r3, lbl_80440660@l
+/* 800D32D0 000CF110  38 63 06 60 */	addi r3, r3, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D32D4 000CF114  38 81 00 14 */	addi r4, r1, 0x14
 /* 800D32D8 000CF118  90 61 00 14 */	stw r3, 0x14(r1)
 /* 800D32DC 000CF11C  38 61 00 10 */	addi r3, r1, 0x10
-/* 800D32E0 000CF120  4B FF 5B B1 */	bl lbl_800C8E90
+/* 800D32E0 000CF120  4B FF 5B B1 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D32E4 000CF124  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D32E8 000CF128  41 82 00 24 */	beq lbl_800D330C
 /* 800D32EC 000CF12C  7C 03 00 D0 */	neg r0, r3
@@ -789,9 +789,9 @@ lbl_800D330C:
 /* 800D330C 000CF14C  3B 40 00 00 */	li r26, 0x0
 .global lbl_800D3310
 lbl_800D3310:
-/* 800D3310 000CF150  3F 60 80 44 */	lis r27, lbl_80440660@ha
+/* 800D3310 000CF150  3F 60 80 44 */	lis r27, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@ha
 /* 800D3314 000CF154  3B E0 00 01 */	li r31, 0x1
-/* 800D3318 000CF158  3B 7B 06 60 */	addi r27, r27, lbl_80440660@l
+/* 800D3318 000CF158  3B 7B 06 60 */	addi r27, r27, "ResNameData_LightSet__Q34nw4r3g3d27@unnamed@g3d_resanmscn_cpp@"@l
 /* 800D331C 000CF15C  3B C0 00 00 */	li r30, 0x0
 /* 800D3320 000CF160  48 00 00 B8 */	b lbl_800D33D8
 .global lbl_800D3324
@@ -811,7 +811,7 @@ lbl_800D3340:
 /* 800D3344 000CF184  38 81 00 08 */	addi r4, r1, 0x8
 /* 800D3348 000CF188  38 61 00 0C */	addi r3, r1, 0xc
 /* 800D334C 000CF18C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800D3350 000CF190  4B FF 5B 41 */	bl lbl_800C8E90
+/* 800D3350 000CF190  4B FF 5B 41 */	bl __vc__Q34nw4r3g3d6ResDicCFQ34nw4r3g3d7ResName
 /* 800D3354 000CF194  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D3358 000CF198  41 82 00 44 */	beq lbl_800D339C
 /* 800D335C 000CF19C  7C 03 00 D0 */	neg r0, r3
@@ -845,7 +845,7 @@ lbl_800D33A0:
 /* 800D33AC 000CF1EC  38 61 00 1C */	addi r3, r1, 0x1c
 /* 800D33B0 000CF1F0  3B 20 00 00 */	li r25, 0x0
 /* 800D33B4 000CF1F4  90 01 00 18 */	stw r0, 0x18(r1)
-/* 800D33B8 000CF1F8  4B FF EB 89 */	bl lbl_800D1F40
+/* 800D33B8 000CF1F8  4B FF EB 89 */	bl Bind__Q34nw4r3g3d11ResLightSetFQ34nw4r3g3d9ResAnmScn
 /* 800D33BC 000CF1FC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800D33C0 000CF200  41 82 00 10 */	beq lbl_800D33D0
 /* 800D33C4 000CF204  2C 1F 00 00 */	cmpwi r31, 0x0

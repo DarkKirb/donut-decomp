@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_804047E4
-lbl_804047E4:
+.global init__Q27storage9GhostDataFv
+init__Q27storage9GhostDataFv:
 /* 804047E4 00400624  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 804047E8 00400628  7C 08 02 A6 */	mflr r0
 /* 804047EC 0040062C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -11,7 +11,7 @@ lbl_804047E4:
 /* 804047F8 00400638  38 80 00 00 */	li r4, 0x0
 /* 804047FC 0040063C  3C A0 00 01 */	lis r5, 0x1
 /* 80404800 00400640  38 A5 8B FF */	addi r5, r5, -0x7401
-/* 80404804 00400644  4B BF FB 4D */	bl func_80004350
+/* 80404804 00400644  4B BF FB 4D */	bl memset
 /* 80404808 00400648  38 00 00 80 */	li r0, 0x80
 /* 8040480C 0040064C  98 1F 00 00 */	stb r0, 0x0(r31)
 /* 80404810 00400650  83 E1 00 0C */	lwz r31, 0xc(r1)

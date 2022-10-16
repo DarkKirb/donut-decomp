@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80454048
-lbl_80454048:
+.global "@52191"
+"@52191":
 
 	.4byte 0x4733442E
 	.4byte 0x4E6F6465
@@ -53,8 +53,8 @@ lbl_80454048:
 	.4byte 0x6573736F
 	.4byte 0x72000000
 
-.global lbl_80454108
-lbl_80454108:
+.global "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0"
+"@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -62,8 +62,8 @@ lbl_80454108:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045411C
-lbl_8045411C:
+.global "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv"
+"@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv":
 
 	.4byte 0x4D696E74
 	.4byte 0x46756E63
@@ -71,8 +71,8 @@ lbl_8045411C:
 	.4byte 0x792E6870
 	.4byte 0x70000000
 
-.global lbl_80454130
-lbl_80454130:
+.global "@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>FUl@0"
+"@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>FUl@0":
 
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -81,8 +81,8 @@ lbl_80454130:
 	.4byte 0x74203D20
 	.4byte 0x25640A00
 
-.global lbl_80454148
-lbl_80454148:
+.global "@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>FUl"
+"@STRING@at__Q26mintvm24MArray<Q26mintvm6MValue>FUl":
 
 	.4byte 0x4D417272
 	.4byte 0x61792E68

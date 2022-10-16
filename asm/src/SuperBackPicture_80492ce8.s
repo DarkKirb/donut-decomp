@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80492CE8
-lbl_80492CE8:
+.global "@53740"
+"@53740":
 
 	.4byte 0x53757065
 	.4byte 0x72426163
@@ -10,8 +10,8 @@ lbl_80492CE8:
 	.4byte 0x74757265
 	.4byte 0
 
-.global lbl_80492CFC
-lbl_80492CFC:
+.global "@53741"
+"@53741":
 
 	.4byte 0x73746570
 	.4byte 0x2F776561
@@ -23,14 +23,14 @@ lbl_80492CFC:
 	.4byte 0x61746F72
 	.4byte 0
 
-.global lbl_80492D20
-lbl_80492D20:
+.global __vt__Q43scn4step3sfx16SuperBackPicture
+__vt__Q43scn4step3sfx16SuperBackPicture:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803CFF94
-	.4byte lbl_803D0798
-	.4byte lbl_803D079C
-	.4byte lbl_803D07A0
-	.4byte lbl_803D07D8
+	.4byte __dt__Q43scn4step3sfx16SuperBackPictureFv
+	.4byte onStopNormalStarted__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step3sfx16SuperBackPictureFRCQ25ostop5Actor
 	.4byte 0

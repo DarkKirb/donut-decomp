@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80403D0C
-lbl_80403D0C:
+.global WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv
+WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv:
 /* 80403D0C 003FFB4C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80403D10 003FFB50  4C 82 00 20 */	bnelr
 /* 80403D14 003FFB54  38 00 00 01 */	li r0, 0x1
 /* 80403D18 003FFB58  3C 65 00 02 */	addis r3, r5, 0x2
 /* 80403D1C 003FFB5C  98 03 80 20 */	stb r0, -0x7fe0(r3)
 /* 80403D20 003FFB60  4E 80 00 20 */	blr
-.global lbl_80403D24
-lbl_80403D24:
+.global setData__Q33snd10WaveHandle10WavePacketFPCUsUlUl
+setData__Q33snd10WaveHandle10WavePacketFPCUsUlUl:
 /* 80403D24 003FFB64  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80403D28 003FFB68  7C 08 02 A6 */	mflr r0
 /* 80403D2C 003FFB6C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -52,7 +52,7 @@ lbl_80403D9C:
 .global lbl_80403DAC
 lbl_80403DAC:
 /* 80403DAC 003FFBEC  7F C4 F3 78 */	mr r4, r30
-/* 80403DB0 003FFBF0  4B C1 8B D1 */	bl lbl_8001C980
+/* 80403DB0 003FFBF0  4B C1 8B D1 */	bl DCFlushRange
 /* 80403DB4 003FFBF4  7C 1E FA 14 */	add r0, r30, r31
 /* 80403DB8 003FFBF8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80403DBC 003FFBFC  48 00 00 80 */	b lbl_80403E3C
@@ -87,10 +87,10 @@ lbl_80403E14:
 /* 80403E18 003FFC58  41 80 FF D0 */	blt lbl_80403DE8
 /* 80403E1C 003FFC5C  7C C3 33 78 */	mr r3, r6
 /* 80403E20 003FFC60  7F C4 F3 78 */	mr r4, r30
-/* 80403E24 003FFC64  4B C1 8B 5D */	bl lbl_8001C980
+/* 80403E24 003FFC64  4B C1 8B 5D */	bl DCFlushRange
 /* 80403E28 003FFC68  7F 83 E3 78 */	mr r3, r28
 /* 80403E2C 003FFC6C  7F C4 F3 78 */	mr r4, r30
-/* 80403E30 003FFC70  4B C1 8B 51 */	bl lbl_8001C980
+/* 80403E30 003FFC70  4B C1 8B 51 */	bl DCFlushRange
 /* 80403E34 003FFC74  7C 1E FA 14 */	add r0, r30, r31
 /* 80403E38 003FFC78  90 01 00 14 */	stw r0, 0x14(r1)
 .global lbl_80403E3C
@@ -100,15 +100,15 @@ lbl_80403E3C:
 /* 80403E44 003FFC84  98 03 80 20 */	stb r0, -0x7fe0(r3)
 /* 80403E48 003FFC88  7F A3 EB 78 */	mr r3, r29
 /* 80403E4C 003FFC8C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80403E50 003FFC90  48 00 00 1D */	bl lbl_80403E6C
+/* 80403E50 003FFC90  48 00 00 1D */	bl SetWaveBuffer__Q44nw4r3snd10WavePlayer10WavePacketFRCQ44nw4r3snd10WavePlayer14WaveBufferInfo
 /* 80403E54 003FFC94  39 61 00 30 */	addi r11, r1, 0x30
 /* 80403E58 003FFC98  4B C0 35 35 */	bl lbl_8000738C
 /* 80403E5C 003FFC9C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80403E60 003FFCA0  7C 08 03 A6 */	mtlr r0
 /* 80403E64 003FFCA4  38 21 00 30 */	addi r1, r1, 0x30
 /* 80403E68 003FFCA8  4E 80 00 20 */	blr
-.global lbl_80403E6C
-lbl_80403E6C:
+.global SetWaveBuffer__Q44nw4r3snd10WavePlayer10WavePacketFRCQ44nw4r3snd10WavePlayer14WaveBufferInfo
+SetWaveBuffer__Q44nw4r3snd10WavePlayer10WavePacketFRCQ44nw4r3snd10WavePlayer14WaveBufferInfo:
 /* 80403E6C 003FFCAC  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 80403E70 003FFCB0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80403E74 003FFCB4  80 A4 00 04 */	lwz r5, 0x4(r4)
@@ -118,8 +118,8 @@ lbl_80403E6C:
 /* 80403E84 003FFCC4  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 80403E88 003FFCC8  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80403E8C 003FFCCC  4E 80 00 20 */	blr
-.global lbl_80403E90
-lbl_80403E90:
+.global __ct__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat
+__ct__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat:
 /* 80403E90 003FFCD0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80403E94 003FFCD4  7C 08 02 A6 */	mflr r0
 /* 80403E98 003FFCD8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -129,11 +129,11 @@ lbl_80403E90:
 /* 80403EA8 003FFCE8  7C 9B 23 78 */	mr r27, r4
 /* 80403EAC 003FFCEC  7C BF 2B 78 */	mr r31, r5
 /* 80403EB0 003FFCF0  7C DC 33 78 */	mr r28, r6
-/* 80403EB4 003FFCF4  3C 80 80 49 */	lis r4, lbl_804966B8@ha
-/* 80403EB8 003FFCF8  38 04 66 B8 */	addi r0, r4, lbl_804966B8@l
+/* 80403EB4 003FFCF4  3C 80 80 49 */	lis r4, __vt__Q23snd10WaveHandle@ha
+/* 80403EB8 003FFCF8  38 04 66 B8 */	addi r0, r4, __vt__Q23snd10WaveHandle@l
 /* 80403EBC 003FFCFC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80403EC0 003FFD00  38 63 00 08 */	addi r3, r3, 0x8
-/* 80403EC4 003FFD04  4B D1 96 0D */	bl lbl_8011D4D0
+/* 80403EC4 003FFD04  4B D1 96 0D */	bl __ct__Q34nw4r3snd10WavePlayerFv
 /* 80403EC8 003FFD08  38 80 00 00 */	li r4, 0x0
 /* 80403ECC 003FFD0C  90 9E 00 B8 */	stw r4, 0xb8(r30)
 /* 80403ED0 003FFD10  90 9E 00 BC */	stw r4, 0xbc(r30)
@@ -146,23 +146,23 @@ lbl_80403EE0:
 /* 80403EE4 003FFD24  94 83 00 08 */	stwu r4, 0x8(r3)
 /* 80403EE8 003FFD28  42 00 FF F8 */	bdnz lbl_80403EE0
 /* 80403EEC 003FFD2C  38 7E 10 C0 */	addi r3, r30, 0x10c0
-/* 80403EF0 003FFD30  3C 80 80 40 */	lis r4, lbl_80403FA4@ha
-/* 80403EF4 003FFD34  38 84 3F A4 */	addi r4, r4, lbl_80403FA4@l
-/* 80403EF8 003FFD38  3C A0 80 40 */	lis r5, lbl_80404048@ha
-/* 80403EFC 003FFD3C  38 A5 40 48 */	addi r5, r5, lbl_80404048@l
+/* 80403EF0 003FFD30  3C 80 80 40 */	lis r4, __ct__Q33snd10WaveHandle10WavePacketFv@ha
+/* 80403EF4 003FFD34  38 84 3F A4 */	addi r4, r4, __ct__Q33snd10WaveHandle10WavePacketFv@l
+/* 80403EF8 003FFD38  3C A0 80 40 */	lis r5, __dt__Q33snd10WaveHandle10WavePacketFv@ha
+/* 80403EFC 003FFD3C  38 A5 40 48 */	addi r5, r5, __dt__Q33snd10WaveHandle10WavePacketFv@l
 /* 80403F00 003FFD40  3F A0 00 02 */	lis r29, 0x2
 /* 80403F04 003FFD44  38 DD 80 40 */	addi r6, r29, -0x7fc0
 /* 80403F08 003FFD48  38 E0 00 0C */	li r7, 0xc
-/* 80403F0C 003FFD4C  4B C0 31 19 */	bl lbl_80007024
+/* 80403F0C 003FFD4C  4B C0 31 19 */	bl __construct_array
 /* 80403F10 003FFD50  7F C3 F3 78 */	mr r3, r30
 /* 80403F14 003FFD54  7F 64 DB 78 */	mr r4, r27
 /* 80403F18 003FFD58  7F E5 FB 78 */	mr r5, r31
 /* 80403F1C 003FFD5C  7F 86 E3 78 */	mr r6, r28
-/* 80403F20 003FFD60  48 00 03 2D */	bl lbl_8040424C
-/* 80403F24 003FFD64  C0 02 E3 E0 */	lfs f0, lbl_80564360@sda21(r2)
+/* 80403F20 003FFD60  48 00 03 2D */	bl setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat
+/* 80403F24 003FFD64  C0 02 E3 E0 */	lfs f0, "@49104_80564360"@sda21(r2)
 /* 80403F28 003FFD68  D0 1E 00 68 */	stfs f0, 0x68(r30)
 /* 80403F2C 003FFD6C  38 7E 00 08 */	addi r3, r30, 0x8
-/* 80403F30 003FFD70  4B D1 99 41 */	bl lbl_8011D870
+/* 80403F30 003FFD70  4B D1 99 41 */	bl GetMinimumBufferSize__Q34nw4r3snd10WavePlayerFv
 /* 80403F34 003FFD74  7C 1F 19 D6 */	mullw r0, r31, r3
 /* 80403F38 003FFD78  90 1E 00 B8 */	stw r0, 0xb8(r30)
 /* 80403F3C 003FFD7C  3B 80 00 00 */	li r28, 0x0
@@ -182,7 +182,7 @@ lbl_80403F44:
 /* 80403F6C 003FFDAC  93 E1 00 08 */	stw r31, 0x8(r1)
 /* 80403F70 003FFDB0  38 64 10 C0 */	addi r3, r4, 0x10c0
 /* 80403F74 003FFDB4  38 81 00 08 */	addi r4, r1, 0x8
-/* 80403F78 003FFDB8  4B FF FE F5 */	bl lbl_80403E6C
+/* 80403F78 003FFDB8  4B FF FE F5 */	bl SetWaveBuffer__Q44nw4r3snd10WavePlayer10WavePacketFRCQ44nw4r3snd10WavePlayer14WaveBufferInfo
 /* 80403F7C 003FFDBC  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 80403F80 003FFDC0  28 1C 00 0C */	cmplwi r28, 0xc
 /* 80403F84 003FFDC4  41 80 FF C0 */	blt lbl_80403F44
@@ -193,16 +193,16 @@ lbl_80403F44:
 /* 80403F98 003FFDD8  7C 08 03 A6 */	mtlr r0
 /* 80403F9C 003FFDDC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80403FA0 003FFDE0  4E 80 00 20 */	blr
-.global lbl_80403FA4
-lbl_80403FA4:
+.global __ct__Q33snd10WaveHandle10WavePacketFv
+__ct__Q33snd10WaveHandle10WavePacketFv:
 /* 80403FA4 003FFDE4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80403FA8 003FFDE8  7C 08 02 A6 */	mflr r0
 /* 80403FAC 003FFDEC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80403FB0 003FFDF0  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80403FB4 003FFDF4  7C 7F 1B 78 */	mr r31, r3
-/* 80403FB8 003FFDF8  4B D1 A2 A9 */	bl lbl_8011E260
-/* 80403FBC 003FFDFC  3C 60 80 49 */	lis r3, lbl_804966C4@ha
-/* 80403FC0 003FFE00  38 03 66 C4 */	addi r0, r3, lbl_804966C4@l
+/* 80403FB8 003FFDF8  4B D1 A2 A9 */	bl __ct__Q44nw4r3snd10WavePlayer10WavePacketFv
+/* 80403FBC 003FFDFC  3C 60 80 49 */	lis r3, __vt__Q33snd10WaveHandle10WavePacket@ha
+/* 80403FC0 003FFE00  38 03 66 C4 */	addi r0, r3, __vt__Q33snd10WaveHandle10WavePacket@l
 /* 80403FC4 003FFE04  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 80403FC8 003FFE08  38 9F 00 1C */	addi r4, r31, 0x1c
 /* 80403FCC 003FFE0C  38 60 00 00 */	li r3, 0x0
@@ -228,7 +228,7 @@ lbl_80403FD8:
 /* 80404014 003FFE54  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80404018 003FFE58  7F E3 FB 78 */	mr r3, r31
 /* 8040401C 003FFE5C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80404020 003FFE60  4B FF FE 4D */	bl lbl_80403E6C
+/* 80404020 003FFE60  4B FF FE 4D */	bl SetWaveBuffer__Q44nw4r3snd10WavePlayer10WavePacketFRCQ44nw4r3snd10WavePlayer14WaveBufferInfo
 /* 80404024 003FFE64  38 00 00 01 */	li r0, 0x1
 /* 80404028 003FFE68  3C 7F 00 02 */	addis r3, r31, 0x2
 /* 8040402C 003FFE6C  98 03 80 20 */	stb r0, -0x7fe0(r3)
@@ -239,8 +239,8 @@ lbl_80403FD8:
 /* 80404040 003FFE80  38 21 00 20 */	addi r1, r1, 0x20
 /* 80404044 003FFE84  4E 80 00 20 */	blr
 
-.global lbl_80404048
-lbl_80404048:
+.global __dt__Q33snd10WaveHandle10WavePacketFv
+__dt__Q33snd10WaveHandle10WavePacketFv:
 /* 80404048 003FFE88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8040404C 003FFE8C  7C 08 02 A6 */	mflr r0
 /* 80404050 003FFE90  90 01 00 14 */	stw r0, 0x14(r1)
@@ -251,12 +251,12 @@ lbl_80404048:
 /* 80404064 003FFEA4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80404068 003FFEA8  41 82 00 20 */	beq lbl_80404088
 /* 8040406C 003FFEAC  38 80 00 00 */	li r4, 0x0
-/* 80404070 003FFEB0  4B D1 A3 31 */	bl lbl_8011E3A0
+/* 80404070 003FFEB0  4B D1 A3 31 */	bl __dt__Q44nw4r3snd10WavePlayer10WavePacketFv
 /* 80404074 003FFEB4  7F E0 07 34 */	extsh r0, r31
 /* 80404078 003FFEB8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8040407C 003FFEBC  40 81 00 0C */	ble lbl_80404088
 /* 80404080 003FFEC0  7F C3 F3 78 */	mr r3, r30
-/* 80404084 003FFEC4  4B DB B6 91 */	bl lbl_801BF714
+/* 80404084 003FFEC4  4B DB B6 91 */	bl __dl__FPv
 .global lbl_80404088
 lbl_80404088:
 /* 80404088 003FFEC8  7F C3 F3 78 */	mr r3, r30
@@ -267,8 +267,8 @@ lbl_80404088:
 /* 8040409C 003FFEDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 804040A0 003FFEE0  4E 80 00 20 */	blr
 
-.global lbl_804040A4
-lbl_804040A4:
+.global __dt__Q23snd10WaveHandleFv
+__dt__Q23snd10WaveHandleFv:
 /* 804040A4 003FFEE4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 804040A8 003FFEE8  7C 08 02 A6 */	mflr r0
 /* 804040AC 003FFEEC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -278,26 +278,26 @@ lbl_804040A4:
 /* 804040BC 003FFEFC  7C 9F 23 78 */	mr r31, r4
 /* 804040C0 003FFF00  2C 03 00 00 */	cmpwi r3, 0x0
 /* 804040C4 003FFF04  41 82 00 54 */	beq lbl_80404118
-/* 804040C8 003FFF08  3C 80 80 49 */	lis r4, lbl_804966B8@ha
-/* 804040CC 003FFF0C  38 04 66 B8 */	addi r0, r4, lbl_804966B8@l
+/* 804040C8 003FFF08  3C 80 80 49 */	lis r4, __vt__Q23snd10WaveHandle@ha
+/* 804040CC 003FFF0C  38 04 66 B8 */	addi r0, r4, __vt__Q23snd10WaveHandle@l
 /* 804040D0 003FFF10  90 03 00 00 */	stw r0, 0x0(r3)
 /* 804040D4 003FFF14  38 63 00 08 */	addi r3, r3, 0x8
-/* 804040D8 003FFF18  4B D1 97 29 */	bl lbl_8011D800
+/* 804040D8 003FFF18  4B D1 97 29 */	bl Shutdown__Q34nw4r3snd10WavePlayerFv
 /* 804040DC 003FFF1C  38 7E 10 C0 */	addi r3, r30, 0x10c0
-/* 804040E0 003FFF20  3C 80 80 40 */	lis r4, lbl_80404048@ha
-/* 804040E4 003FFF24  38 84 40 48 */	addi r4, r4, lbl_80404048@l
+/* 804040E0 003FFF20  3C 80 80 40 */	lis r4, __dt__Q33snd10WaveHandle10WavePacketFv@ha
+/* 804040E4 003FFF24  38 84 40 48 */	addi r4, r4, __dt__Q33snd10WaveHandle10WavePacketFv@l
 /* 804040E8 003FFF28  3C A0 00 02 */	lis r5, 0x2
 /* 804040EC 003FFF2C  38 A5 80 40 */	addi r5, r5, -0x7fc0
 /* 804040F0 003FFF30  38 C0 00 0C */	li r6, 0xc
-/* 804040F4 003FFF34  4B C0 30 29 */	bl lbl_8000711C
+/* 804040F4 003FFF34  4B C0 30 29 */	bl __destroy_arr
 /* 804040F8 003FFF38  38 7E 00 08 */	addi r3, r30, 0x8
 /* 804040FC 003FFF3C  38 80 FF FF */	li r4, -0x1
-/* 80404100 003FFF40  4B D1 94 51 */	bl lbl_8011D550
+/* 80404100 003FFF40  4B D1 94 51 */	bl __dt__Q34nw4r3snd10WavePlayerFv
 /* 80404104 003FFF44  7F E0 07 34 */	extsh r0, r31
 /* 80404108 003FFF48  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8040410C 003FFF4C  40 81 00 0C */	ble lbl_80404118
 /* 80404110 003FFF50  7F C3 F3 78 */	mr r3, r30
-/* 80404114 003FFF54  4B DB B6 01 */	bl lbl_801BF714
+/* 80404114 003FFF54  4B DB B6 01 */	bl __dl__FPv
 .global lbl_80404118
 lbl_80404118:
 /* 80404118 003FFF58  7F C3 F3 78 */	mr r3, r30
@@ -307,8 +307,8 @@ lbl_80404118:
 /* 80404128 003FFF68  7C 08 03 A6 */	mtlr r0
 /* 8040412C 003FFF6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80404130 003FFF70  4E 80 00 20 */	blr
-.global lbl_80404134
-lbl_80404134:
+.global addData__Q23snd10WaveHandleFPCUsUl
+addData__Q23snd10WaveHandleFPCUsUl:
 /* 80404134 003FFF74  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80404138 003FFF78  7C 08 02 A6 */	mflr r0
 /* 8040413C 003FFF7C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -324,7 +324,7 @@ lbl_80404134:
 /* 80404164 003FFFA4  40 81 00 20 */	ble lbl_80404184
 /* 80404168 003FFFA8  7C 63 3A 14 */	add r3, r3, r7
 /* 8040416C 003FFFAC  38 63 00 C0 */	addi r3, r3, 0xc0
-/* 80404170 003FFFB0  4B BF FE 91 */	bl func_80004000
+/* 80404170 003FFFB0  4B BF FE 91 */	bl memcpy
 /* 80404174 003FFFB4  80 1D 00 BC */	lwz r0, 0xbc(r29)
 /* 80404178 003FFFB8  7C 00 FA 14 */	add r0, r0, r31
 /* 8040417C 003FFFBC  90 1D 00 BC */	stw r0, 0xbc(r29)
@@ -357,12 +357,12 @@ lbl_804041BC:
 /* 804041D0 00400010  38 9D 00 C0 */	addi r4, r29, 0xc0
 /* 804041D4 00400014  7C E5 3B 78 */	mr r5, r7
 /* 804041D8 00400018  38 C0 00 00 */	li r6, 0x0
-/* 804041DC 0040001C  4B FF FB 49 */	bl lbl_80403D24
+/* 804041DC 0040001C  4B FF FB 49 */	bl setData__Q33snd10WaveHandle10WavePacketFPCUsUlUl
 /* 804041E0 00400020  7F 83 E3 78 */	mr r3, r28
 /* 804041E4 00400024  7F C4 F3 78 */	mr r4, r30
 /* 804041E8 00400028  7F E5 FB 78 */	mr r5, r31
 /* 804041EC 0040002C  80 DD 00 BC */	lwz r6, 0xbc(r29)
-/* 804041F0 00400030  4B FF FB 35 */	bl lbl_80403D24
+/* 804041F0 00400030  4B FF FB 35 */	bl setData__Q33snd10WaveHandle10WavePacketFPCUsUlUl
 /* 804041F4 00400034  38 00 00 00 */	li r0, 0x0
 /* 804041F8 00400038  90 1D 00 BC */	stw r0, 0xbc(r29)
 /* 804041FC 0040003C  48 00 00 20 */	b lbl_8040421C
@@ -374,12 +374,12 @@ lbl_80404200:
 /* 8040420C 0040004C  7F C4 F3 78 */	mr r4, r30
 /* 80404210 00400050  7F E5 FB 78 */	mr r5, r31
 /* 80404214 00400054  38 C0 00 00 */	li r6, 0x0
-/* 80404218 00400058  4B FF FB 0D */	bl lbl_80403D24
+/* 80404218 00400058  4B FF FB 0D */	bl setData__Q33snd10WaveHandle10WavePacketFPCUsUlUl
 .global lbl_8040421C
 lbl_8040421C:
 /* 8040421C 0040005C  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80404220 00400060  7F 84 E3 78 */	mr r4, r28
-/* 80404224 00400064  4B D1 97 2D */	bl lbl_8011D950
+/* 80404224 00400064  4B D1 97 2D */	bl AppendWavePacket__Q34nw4r3snd10WavePlayerFPQ44nw4r3snd10WavePlayer10WavePacket
 /* 80404228 00400068  48 00 00 0C */	b lbl_80404234
 .global lbl_8040422C
 lbl_8040422C:
@@ -393,12 +393,12 @@ lbl_80404234:
 /* 80404240 00400080  7C 08 03 A6 */	mtlr r0
 /* 80404244 00400084  38 21 00 20 */	addi r1, r1, 0x20
 /* 80404248 00400088  4E 80 00 20 */	blr
-.global lbl_8040424C
-lbl_8040424C:
+.global setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat
+setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat:
 /* 8040424C 0040008C  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80404250 00400090  7C 08 02 A6 */	mflr r0
 /* 80404254 00400094  90 01 00 54 */	stw r0, 0x54(r1)
-/* 80404258 00400098  C0 02 E3 E0 */	lfs f0, lbl_80564360@sda21(r2)
+/* 80404258 00400098  C0 02 E3 E0 */	lfs f0, "@49104_80564360"@sda21(r2)
 /* 8040425C 0040009C  38 00 00 01 */	li r0, 0x1
 /* 80404260 004000A0  90 01 00 18 */	stw r0, 0x18(r1)
 /* 80404264 004000A4  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -407,10 +407,10 @@ lbl_8040424C:
 /* 80404270 004000B0  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 80404274 004000B4  38 63 00 08 */	addi r3, r3, 0x8
 /* 80404278 004000B8  38 81 00 08 */	addi r4, r1, 0x8
-/* 8040427C 004000BC  3C A0 80 40 */	lis r5, lbl_80403D0C@ha
-/* 80404280 004000C0  38 A5 3D 0C */	addi r5, r5, lbl_80403D0C@l
+/* 8040427C 004000BC  3C A0 80 40 */	lis r5, WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv@ha
+/* 80404280 004000C0  38 A5 3D 0C */	addi r5, r5, WavePacketCallback__3sndFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv@l
 /* 80404284 004000C4  38 C0 00 00 */	li r6, 0x0
-/* 80404288 004000C8  4B D1 93 D9 */	bl lbl_8011D660
+/* 80404288 004000C8  4B D1 93 D9 */	bl Setup__Q34nw4r3snd10WavePlayerFRCQ44nw4r3snd10WavePlayer10SetupParamPFQ44nw4r3snd10WavePlayer24WavePacketCallbackStatusPQ34nw4r3snd10WavePlayerPQ44nw4r3snd10WavePlayer10WavePacketPv_vPv
 /* 8040428C 004000CC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80404290 004000D0  7C 08 03 A6 */	mtlr r0
 /* 80404294 004000D4  38 21 00 50 */	addi r1, r1, 0x50

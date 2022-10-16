@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802329D4
-lbl_802329D4:
+.global Create__Q43scn4step4boss9ModelDescFQ43scn4step3map11BinBossKindUlbb
+Create__Q43scn4step4boss9ModelDescFQ43scn4step3map11BinBossKindUlbb:
 /* 802329D4 0022E814  7C 60 1B 78 */	mr r0, r3
 /* 802329D8 0022E818  2C 06 00 00 */	cmpwi r6, 0x0
 /* 802329DC 0022E81C  41 82 00 18 */	beq lbl_802329F4
@@ -10,19 +10,19 @@ lbl_802329D4:
 /* 802329E4 0022E824  40 82 00 10 */	bne lbl_802329F4
 /* 802329E8 0022E828  7C 83 23 78 */	mr r3, r4
 /* 802329EC 0022E82C  7C A4 2B 78 */	mr r4, r5
-/* 802329F0 0022E830  48 00 52 E8 */	b lbl_80237CD8
+/* 802329F0 0022E830  48 00 52 E8 */	b CreateSuper__Q53scn4step4boss7bonkers9ModelDescFUlb
 .global lbl_802329F4
 lbl_802329F4:
 /* 802329F4 0022E834  7C 83 23 78 */	mr r3, r4
 /* 802329F8 0022E838  7C A4 2B 78 */	mr r4, r5
 /* 802329FC 0022E83C  54 00 10 3A */	slwi r0, r0, 2
-/* 80232A00 0022E840  3C A0 80 46 */	lis r5, lbl_804645F0@ha
-/* 80232A04 0022E844  38 A5 45 F0 */	addi r5, r5, lbl_804645F0@l
+/* 80232A00 0022E840  3C A0 80 46 */	lis r5, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@ha
+/* 80232A04 0022E844  38 A5 45 F0 */	addi r5, r5, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@l
 /* 80232A08 0022E848  7D 85 00 2E */	lwzx r12, r5, r0
 /* 80232A0C 0022E84C  7D 89 03 A6 */	mtctr r12
 /* 80232A10 0022E850  4E 80 04 20 */	bctr
-.global lbl_80232A14
-lbl_80232A14:
+.global Set__Q43scn4step4boss9ModelDescFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step4boss9ModelDescFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 80232A14 0022E854  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80232A18 0022E858  7C 08 02 A6 */	mflr r0
 /* 80232A1C 0022E85C  90 01 00 64 */	stw r0, 0x64(r1)
@@ -51,7 +51,7 @@ lbl_80232A64:
 /* 80232A70 0022E8B0  38 61 00 18 */	addi r3, r1, 0x18
 /* 80232A74 0022E8B4  7D 04 43 78 */	mr r4, r8
 /* 80232A78 0022E8B8  38 A0 00 18 */	li r5, 0x18
-/* 80232A7C 0022E8BC  4B F6 AF 41 */	bl lbl_8019D9BC
+/* 80232A7C 0022E8BC  4B F6 AF 41 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 80232A80 0022E8C0  38 B7 00 14 */	addi r5, r23, 0x14
 /* 80232A84 0022E8C4  38 81 00 14 */	addi r4, r1, 0x14
 /* 80232A88 0022E8C8  38 00 00 03 */	li r0, 0x3
@@ -75,15 +75,15 @@ lbl_80232A90:
 /* 80232AC8 0022E908  93 98 00 04 */	stw r28, 0x4(r24)
 /* 80232ACC 0022E90C  93 B8 00 08 */	stw r29, 0x8(r24)
 /* 80232AD0 0022E910  93 17 00 70 */	stw r24, 0x70(r23)
-/* 80232AD4 0022E914  3C 60 80 46 */	lis r3, lbl_8046465C@ha
-/* 80232AD8 0022E918  38 03 46 5C */	addi r0, r3, lbl_8046465C@l
+/* 80232AD4 0022E914  3C 60 80 46 */	lis r3, "@50315_8046465C"@ha
+/* 80232AD8 0022E918  38 03 46 5C */	addi r0, r3, "@50315_8046465C"@l
 /* 80232ADC 0022E91C  90 19 00 00 */	stw r0, 0x0(r25)
 /* 80232AE0 0022E920  93 D9 00 04 */	stw r30, 0x4(r25)
 /* 80232AE4 0022E924  93 F9 00 08 */	stw r31, 0x8(r25)
 /* 80232AE8 0022E928  93 37 00 74 */	stw r25, 0x74(r23)
-/* 80232AEC 0022E92C  C0 22 A3 E4 */	lfs f1, lbl_80560364@sda21(r2)
+/* 80232AEC 0022E92C  C0 22 A3 E4 */	lfs f1, "@50316_80560364"@sda21(r2)
 /* 80232AF0 0022E930  D0 21 00 08 */	stfs f1, 0x8(r1)
-/* 80232AF4 0022E934  C0 02 A3 E8 */	lfs f0, lbl_80560368@sda21(r2)
+/* 80232AF4 0022E934  C0 02 A3 E8 */	lfs f0, "@50317_80560368"@sda21(r2)
 /* 80232AF8 0022E938  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 80232AFC 0022E93C  D0 21 00 10 */	stfs f1, 0x10(r1)
 /* 80232B00 0022E940  D0 37 00 0C */	stfs f1, 0xc(r23)
@@ -96,11 +96,11 @@ lbl_80232A90:
 /* 80232B1C 0022E95C  38 21 00 60 */	addi r1, r1, 0x60
 /* 80232B20 0022E960  4E 80 00 20 */	blr
 
-.global lbl_80232B24
-lbl_80232B24:
-/* 80232B24 0022E964  80 02 A3 E0 */	lwz r0, lbl_80560360@sda21(r2)
-/* 80232B28 0022E968  3C 60 80 46 */	lis r3, lbl_804645F0@ha
-/* 80232B2C 0022E96C  90 03 45 F0 */	stw r0, lbl_804645F0@l(r3)
+.global "__sinit_@@1ModelDesc_cpp_80232B24"
+"__sinit_@@1ModelDesc_cpp_80232B24":
+/* 80232B24 0022E964  80 02 A3 E0 */	lwz r0, "T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@sda21(r2)
+/* 80232B28 0022E968  3C 60 80 46 */	lis r3, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@ha
+/* 80232B2C 0022E96C  90 03 45 F0 */	stw r0, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@l(r3)
 /* 80232B30 0022E970  38 63 45 F0 */	addi r3, r3, 0x45f0
 /* 80232B34 0022E974  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80232B38 0022E978  90 03 00 24 */	stw r0, 0x24(r3)

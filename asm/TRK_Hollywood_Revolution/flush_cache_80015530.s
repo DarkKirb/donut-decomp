@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80015530
-lbl_80015530:
+.global TRK_flush_cache
+TRK_flush_cache:
 /* 80015530 00011370  3C A0 FF FF */	lis r5, 0xFFFFFFF1@h
 /* 80015534 00011374  60 A5 FF F1 */	ori r5, r5, 0xFFFFFFF1@l
 /* 80015538 00011378  7C A5 18 38 */	and r5, r5, r3

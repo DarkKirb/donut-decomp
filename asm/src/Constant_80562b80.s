@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_80562B80
-lbl_80562B80:
+.global LIFE_BAR_LENGTH_MAIN__Q43scn4step4hero8Constant
+LIFE_BAR_LENGTH_MAIN__Q43scn4step4hero8Constant:
 
 	.4byte 0x3F800000
 
-.global lbl_80562B84
-lbl_80562B84:
+.global LIFE_BAR_LENGTH_EXTRA__Q43scn4step4hero8Constant
+LIFE_BAR_LENGTH_EXTRA__Q43scn4step4hero8Constant:
 
 	.4byte 0x3F19999A

@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8046AB80
-lbl_8046AB80:
+.global "__vt__Q24util133StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter13StateStraight,PQ43scn4step5enemy5Enemy,Q43scn4step4boss8Accessor>"
+"__vt__Q24util133StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter13StateStraight,PQ43scn4step5enemy5Enemy,Q43scn4step4boss8Accessor>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80260CFC
-	.4byte lbl_80260C78
+	.4byte "__dt__Q24util133StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter13StateStraight,PQ43scn4step5enemy5Enemy,Q43scn4step4boss8Accessor>Fv"
+	.4byte "create__Q24util133StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter13StateStraight,PQ43scn4step5enemy5Enemy,Q43scn4step4boss8Accessor>Fv"
 
-.global lbl_8046AB90
-lbl_8046AB90:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80260CF8
-	.4byte lbl_80260C98
-
-.global lbl_8046ABA0
-lbl_8046ABA0:
+.global "__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter11StateCircle,PQ43scn4step5enemy5Enemy,b>"
+"__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter11StateCircle,PQ43scn4step5enemy5Enemy,b>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80260CF4
-	.4byte lbl_80260CB8
+	.4byte "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter11StateCircle,PQ43scn4step5enemy5Enemy,b>Fv"
+	.4byte "create__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step5enemy15zankibblecutter11StateCircle,PQ43scn4step5enemy5Enemy,b>Fv"
 
-.global lbl_8046ABB0
-lbl_8046ABB0:
+.global "__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter15StateBackCircle,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter15StateBackCircle,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80260CF0
-	.4byte lbl_80260CD4
+	.4byte "__dt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter15StateBackCircle,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter15StateBackCircle,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter10StateSlant,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter10StateSlant,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter10StateSlant,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step5enemy15zankibblecutter10StateSlant,PQ43scn4step5enemy5Enemy>Fv"

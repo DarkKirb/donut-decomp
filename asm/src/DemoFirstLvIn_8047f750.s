@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047F750
-lbl_8047F750:
+.global "@55389"
+"@55389":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -17,16 +17,16 @@ lbl_8047F750:
 	.4byte 0x744C7649
 	.4byte 0x6E000000
 
-.global lbl_8047F780
-lbl_8047F780:
+.global __vt__Q53scn4step7gimmick11areamapdemo13DemoFirstLvIn
+__vt__Q53scn4step7gimmick11areamapdemo13DemoFirstLvIn:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802FC004
-	.4byte lbl_802FAE04
-	.4byte lbl_802FC070
-	.4byte lbl_802FC100
-	.4byte lbl_802FC180
-	.4byte lbl_802FC1B0
-	.4byte lbl_802FC21C
-	.4byte lbl_802FC2A0
+	.4byte __dt__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+	.4byte registerToRoot__Q53scn4step7gimmick11areamapdemo4DemoFRQ23g3d4Root
+	.4byte procAnim__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+	.4byte start__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+	.4byte end__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+	.4byte startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+	.4byte isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInCFv
+	.4byte unsetZoomAll__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv

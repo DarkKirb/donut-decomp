@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804636C8
-lbl_804636C8:
+.global "@53204_804636C8"
+"@53204_804636C8":
 
 	.4byte 0x636F6D6D
 	.4byte 0x6F6E2F73
@@ -27,22 +27,22 @@ lbl_804636C8:
 	.4byte 0x69726D4F
 	.4byte 0x4B000000
 
-.global lbl_80463720
-lbl_80463720:
+.global "@53294"
+"@53294":
 
 	.4byte 0x53617669
 	.4byte 0x6E674669
 	.4byte 0x6C650000
 
-.global lbl_8046372C
-lbl_8046372C:
+.global "@53295"
+"@53295":
 
 	.4byte 0x53617665
 	.4byte 0x6446696C
 	.4byte 0x65000000
 
-.global lbl_80463738
-lbl_80463738:
+.global "@53298"
+"@53298":
 
 	.4byte lbl_8021BAE0
 	.4byte lbl_8021BB0C
@@ -60,18 +60,18 @@ lbl_80463738:
 	.4byte lbl_8021BF7C
 	.4byte lbl_8021BF98
 
-.global lbl_80463774
-lbl_80463774:
+.global __vt__Q33scn4init9SceneInit
+__vt__Q33scn4init9SceneInit:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8021C058
-	.4byte lbl_8021B9E0
-	.4byte lbl_8021BA98
-	.4byte lbl_8021BA94
-	.4byte lbl_8021BFBC
-	.4byte lbl_8021BFC0
-	.4byte lbl_8021C004
+	.4byte GetRuntimeTypeInfo__Q33scn4init9SceneInitCFv
+	.4byte __dt__Q33scn4init9SceneInitFv
+	.4byte updateMain__Q33scn4init9SceneInitFv
+	.4byte updateUseGPU__Q33scn4init9SceneInitFv
+	.4byte updateDebug__Q33scn4init9SceneInitFv
+	.4byte draw__Q33scn4init9SceneInitFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn4init9SceneInitCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

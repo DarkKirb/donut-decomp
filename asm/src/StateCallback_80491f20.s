@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80491F20
-lbl_80491F20:
+.global __vt__Q43scn4step4item13StateCallback
+__vt__Q43scn4step4item13StateCallback:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803C1C90
-	.4byte lbl_803C5278
+	.4byte __dt__Q43scn4step4item13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger

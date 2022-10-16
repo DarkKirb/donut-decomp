@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80456A60
-lbl_80456A60:
+.global "@54658_80456A60"
+"@54658_80456A60":
 
 	.4byte 0x48454C2E
 	.4byte 0x4D617468
@@ -203,47 +203,47 @@ lbl_80456A60:
 	.4byte 0x6F723329
 	.4byte 0
 
-.global lbl_80456D78
-lbl_80456D78:
+.global "@54769"
+"@54769":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A1468
+	.4byte restructLeftUp__Q33hel4math10Direction3Fv
 
-.global lbl_80456D84
-lbl_80456D84:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801A155C
-
-.global lbl_80456D90
-lbl_80456D90:
+.global "@54815"
+"@54815":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A15F4
+	.4byte restructLeftFront__Q33hel4math10Direction3Fv
 
-.global lbl_80456D9C
-lbl_80456D9C:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801A168C
-
-.global lbl_80456DA8
-lbl_80456DA8:
+.global "@54827_80456D90"
+"@54827_80456D90":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A1724
+	.4byte restructUpLeft__Q33hel4math10Direction3Fv
 
-.global lbl_80456DB4
-lbl_80456DB4:
+.global "@54840"
+"@54840":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A17BC
+	.4byte restructUpFront__Q33hel4math10Direction3Fv
+
+.global "@54854"
+"@54854":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte restructFrontLeft__Q33hel4math10Direction3Fv
+
+.global "@54863_80456DB4"
+"@54863_80456DB4":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte restructFrontUp__Q33hel4math10Direction3Fv
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

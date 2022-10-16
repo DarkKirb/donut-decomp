@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804404E0
-lbl_804404E0:
+.global "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000E
 	.4byte 0x33444D6F
@@ -13,8 +13,8 @@ lbl_804404E0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440500
-lbl_80440500:
+.global "ResNameData_Pltts__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_Pltts__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000E
 	.4byte 0x50616C65
@@ -25,8 +25,8 @@ lbl_80440500:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440520
-lbl_80440520:
+.global "ResNameData_Textures__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_Textures__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000E
 	.4byte 0x54657874
@@ -37,8 +37,8 @@ lbl_80440520:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440540
-lbl_80440540:
+.global "ResNameData_AnmChr__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmChr__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x416E6D43
@@ -49,8 +49,8 @@ lbl_80440540:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440560
-lbl_80440560:
+.global "ResNameData_AnmVis__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmVis__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x416E6D56
@@ -61,8 +61,8 @@ lbl_80440560:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440580
-lbl_80440580:
+.global "ResNameData_AnmClr__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmClr__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x416E6D43
@@ -73,8 +73,8 @@ lbl_80440580:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804405A0
-lbl_804405A0:
+.global "ResNameData_AnmTexPat__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmTexPat__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000F
 	.4byte 0x416E6D54
@@ -85,8 +85,8 @@ lbl_804405A0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804405C0
-lbl_804405C0:
+.global "ResNameData_AnmTexSrt__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmTexSrt__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000F
 	.4byte 0x416E6D54
@@ -97,8 +97,8 @@ lbl_804405C0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804405E0
-lbl_804405E0:
+.global "ResNameData_AnmShp__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmShp__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x416E6D53
@@ -109,8 +109,8 @@ lbl_804405E0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440600
-lbl_80440600:
+.global "ResNameData_AnmScn__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_AnmScn__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x0000000C
 	.4byte 0x416E6D53
@@ -121,8 +121,8 @@ lbl_80440600:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80440620
-lbl_80440620:
+.global "ResNameData_Ext__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"
+"ResNameData_Ext__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@":
 
 	.4byte 0x00000008
 	.4byte 0x45787465

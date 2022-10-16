@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80454198
-lbl_80454198:
+.global "@49791"
+"@49791":
 
 	.4byte 0x43686172
 	.4byte 0x61416E69
@@ -54,8 +54,8 @@ lbl_80454198:
 	.4byte 0x756E6461
 	.4byte 0x72792E00
 
-.global lbl_8045425C
-lbl_8045425C:
+.global "@49903"
+"@49903":
 
 	.4byte 0x4E573452
 	.4byte 0x20496E74
@@ -82,8 +82,8 @@ lbl_8045425C:
 	.4byte 0x82C582B7
 	.4byte 0x81420000
 
-.global lbl_804542BC
-lbl_804542BC:
+.global "@49981"
+"@49981":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -99,34 +99,34 @@ lbl_804542BC:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_804542F0
-lbl_804542F0:
+.global __vt__Q23g3d16CharaAnimBlender
+__vt__Q23g3d16CharaAnimBlender:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800D9600
-	.4byte lbl_800D8380
-	.4byte lbl_8018CC24
-	.4byte lbl_800D9710
-	.4byte lbl_800D9700
-	.4byte lbl_800D8020
-	.4byte lbl_800D8030
-	.4byte lbl_800D8010
-	.4byte lbl_800D8090
-	.4byte lbl_800D80A0
-	.4byte lbl_8018C94C
-	.4byte lbl_800D8220
-	.4byte lbl_8018C2B4
-	.4byte lbl_800D7FE0
-	.4byte lbl_800D7FF0
-	.4byte lbl_800D8000
-	.4byte lbl_800D7E70
-	.4byte lbl_800D7E80
-	.4byte lbl_800D8110
-	.4byte lbl_800D8230
+	.4byte IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv
+	.4byte __dt__Q23g3d16CharaAnimBlenderFv
+	.4byte GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf
+	.4byte GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf
+	.4byte GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv
+	.4byte Bind__Q23g3d16CharaAnimBlenderFQ34nw4r3g3d6ResMdl
+	.4byte Release__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte GetResult__Q23g3d16CharaAnimBlenderFPQ34nw4r3g3d12ChrAnmResultUl
+	.4byte Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes
+	.4byte Detach__Q34nw4r3g3d13AnmObjChrNodeFi
+	.4byte DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv
+	.4byte SetWeight__Q34nw4r3g3d9AnmObjChrFif
+	.4byte GetWeight__Q34nw4r3g3d9AnmObjChrCFi
+	.4byte Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
+	.4byte Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption
 
-.global lbl_80454348
-lbl_80454348:
+.global "@STRING@FLog__Q24nw4r4mathFf@0"
+"@STRING@FLog__Q24nw4r4mathFf@0":
 
 	.4byte 0x464C6F67
 	.4byte 0x3A20496E
@@ -138,8 +138,8 @@ lbl_80454348:
 	.4byte 0x6D61696E
 	.4byte 0x2E000000
 
-.global lbl_8045436C
-lbl_8045436C:
+.global "@STRING@FLog__Q24nw4r4mathFf"
+"@STRING@FLog__Q24nw4r4mathFf":
 
 	.4byte 0x61726974
 	.4byte 0x686D6574

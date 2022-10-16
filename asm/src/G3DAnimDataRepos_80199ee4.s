@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80199EE4
-lbl_80199EE4:
+.global __ct__Q24gobj16G3DAnimDataReposFRCQ24gobj20G3DAnimDataReposDescRQ23mem10IAllocator
+__ct__Q24gobj16G3DAnimDataReposFRCQ24gobj20G3DAnimDataReposDescRQ23mem10IAllocator:
 /* 80199EE4 00195D24  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80199EE8 00195D28  7C 08 02 A6 */	mflr r0
 /* 80199EEC 00195D2C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -20,14 +20,14 @@ lbl_80199EE4:
 /* 80199F1C 00195D5C  41 82 00 68 */	beq lbl_80199F84
 /* 80199F20 00195D60  7C BF 2B 78 */	mr r31, r5
 /* 80199F24 00195D64  38 7E 00 08 */	addi r3, r30, 0x8
-/* 80199F28 00195D68  4B FE 41 D1 */	bl lbl_8017E0F8
+/* 80199F28 00195D68  4B FE 41 D1 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 80199F2C 00195D6C  38 7E 00 0C */	addi r3, r30, 0xc
 /* 80199F30 00195D70  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80199F34 00195D74  41 82 00 14 */	beq lbl_80199F48
 /* 80199F38 00195D78  57 A4 10 3A */	slwi r4, r29, 2
 /* 80199F3C 00195D7C  38 A0 00 04 */	li r5, 0x4
 /* 80199F40 00195D80  7F E6 FB 78 */	mr r6, r31
-/* 80199F44 00195D84  48 02 33 61 */	bl lbl_801BD2A4
+/* 80199F44 00195D84  48 02 33 61 */	bl __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
 .global lbl_80199F48
 lbl_80199F48:
 /* 80199F48 00195D88  90 7E 00 08 */	stw r3, 0x8(r30)
@@ -37,11 +37,11 @@ lbl_80199F48:
 .global lbl_80199F58
 lbl_80199F58:
 /* 80199F58 00195D98  7F C3 F3 78 */	mr r3, r30
-/* 80199F5C 00195D9C  4B FE 91 A9 */	bl lbl_80183104
+/* 80199F5C 00195D9C  4B FE 91 A9 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80199F60 00195DA0  7C 63 FA 14 */	add r3, r3, r31
 /* 80199F64 00195DA4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80199F68 00195DA8  41 82 00 08 */	beq lbl_80199F70
-/* 80199F6C 00195DAC  4B F4 34 75 */	bl lbl_800DD3E0
+/* 80199F6C 00195DAC  4B F4 34 75 */	bl __ct__Q34nw4r3g3d8LightObjFv
 .global lbl_80199F70
 lbl_80199F70:
 /* 80199F70 00195DB0  3B BD 00 01 */	addi r29, r29, 0x1
@@ -60,8 +60,8 @@ lbl_80199F84:
 /* 80199F94 00195DD4  7C 08 03 A6 */	mtlr r0
 /* 80199F98 00195DD8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80199F9C 00195DDC  4E 80 00 20 */	blr
-.global lbl_80199FA0
-lbl_80199FA0:
+.global "__dt__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>Fv"
+"__dt__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>Fv":
 /* 80199FA0 00195DE0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80199FA4 00195DE4  7C 08 02 A6 */	mflr r0
 /* 80199FA8 00195DE8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -78,24 +78,24 @@ lbl_80199FA0:
 .global lbl_80199FD4
 lbl_80199FD4:
 /* 80199FD4 00195E14  7F A3 EB 78 */	mr r3, r29
-/* 80199FD8 00195E18  4B FE 91 2D */	bl lbl_80183104
+/* 80199FD8 00195E18  4B FE 91 2D */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 80199FDC 00195E1C  3B FF FF FF */	addi r31, r31, -0x1
 .global lbl_80199FE0
 lbl_80199FE0:
 /* 80199FE0 00195E20  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80199FE4 00195E24  40 82 FF F0 */	bne lbl_80199FD4
 /* 80199FE8 00195E28  38 7D 00 08 */	addi r3, r29, 0x8
-/* 80199FEC 00195E2C  4B FE 41 0D */	bl lbl_8017E0F8
+/* 80199FEC 00195E2C  4B FE 41 0D */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 .global lbl_80199FF0
 lbl_80199FF0:
 /* 80199FF0 00195E30  38 7D 00 08 */	addi r3, r29, 0x8
 /* 80199FF4 00195E34  38 80 FF FF */	li r4, -0x1
-/* 80199FF8 00195E38  4B FE 41 45 */	bl lbl_8017E13C
+/* 80199FF8 00195E38  4B FE 41 45 */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 80199FFC 00195E3C  7F C0 07 34 */	extsh r0, r30
 /* 8019A000 00195E40  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8019A004 00195E44  40 81 00 0C */	ble lbl_8019A010
 /* 8019A008 00195E48  7F A3 EB 78 */	mr r3, r29
-/* 8019A00C 00195E4C  48 02 57 09 */	bl lbl_801BF714
+/* 8019A00C 00195E4C  48 02 57 09 */	bl __dl__FPv
 .global lbl_8019A010
 lbl_8019A010:
 /* 8019A010 00195E50  7F A3 EB 78 */	mr r3, r29
@@ -105,8 +105,8 @@ lbl_8019A010:
 /* 8019A020 00195E60  7C 08 03 A6 */	mtlr r0
 /* 8019A024 00195E64  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019A028 00195E68  4E 80 00 20 */	blr
-.global lbl_8019A02C
-lbl_8019A02C:
+.global __dt__Q24gobj16G3DAnimDataReposFv
+__dt__Q24gobj16G3DAnimDataReposFv:
 /* 8019A02C 00195E6C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019A030 00195E70  7C 08 02 A6 */	mflr r0
 /* 8019A034 00195E74  90 01 00 14 */	stw r0, 0x14(r1)
@@ -118,12 +118,12 @@ lbl_8019A02C:
 /* 8019A04C 00195E8C  41 82 00 24 */	beq lbl_8019A070
 /* 8019A050 00195E90  38 63 00 04 */	addi r3, r3, 0x4
 /* 8019A054 00195E94  38 80 FF FF */	li r4, -0x1
-/* 8019A058 00195E98  4B FF FF 49 */	bl lbl_80199FA0
+/* 8019A058 00195E98  4B FF FF 49 */	bl "__dt__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>Fv"
 /* 8019A05C 00195E9C  7F E0 07 34 */	extsh r0, r31
 /* 8019A060 00195EA0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8019A064 00195EA4  40 81 00 0C */	ble lbl_8019A070
 /* 8019A068 00195EA8  7F C3 F3 78 */	mr r3, r30
-/* 8019A06C 00195EAC  48 02 56 A9 */	bl lbl_801BF714
+/* 8019A06C 00195EAC  48 02 56 A9 */	bl __dl__FPv
 .global lbl_8019A070
 lbl_8019A070:
 /* 8019A070 00195EB0  7F C3 F3 78 */	mr r3, r30
@@ -133,8 +133,8 @@ lbl_8019A070:
 /* 8019A080 00195EC0  7C 08 03 A6 */	mtlr r0
 /* 8019A084 00195EC4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019A088 00195EC8  4E 80 00 20 */	blr
-.global lbl_8019A08C
-lbl_8019A08C:
+.global at__Q24gobj16G3DAnimDataReposCFUl
+at__Q24gobj16G3DAnimDataReposCFUl:
 /* 8019A08C 00195ECC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8019A090 00195ED0  7C 08 02 A6 */	mflr r0
 /* 8019A094 00195ED4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -145,11 +145,11 @@ lbl_8019A08C:
 /* 8019A0A8 00195EE8  7F E5 02 14 */	add r31, r5, r0
 /* 8019A0AC 00195EEC  38 63 00 04 */	addi r3, r3, 0x4
 /* 8019A0B0 00195EF0  80 9F 00 04 */	lwz r4, 0x4(r31)
-/* 8019A0B4 00195EF4  48 00 00 35 */	bl lbl_8019A0E8
+/* 8019A0B4 00195EF4  48 00 00 35 */	bl "__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>CFUl"
 /* 8019A0B8 00195EF8  7C 65 1B 78 */	mr r5, r3
 /* 8019A0BC 00195EFC  38 61 00 08 */	addi r3, r1, 0x8
 /* 8019A0C0 00195F00  80 9F 00 00 */	lwz r4, 0x0(r31)
-/* 8019A0C4 00195F04  4B FF FE 11 */	bl lbl_80199ED4
+/* 8019A0C4 00195F04  4B FF FE 11 */	bl __ct__Q24gobj11G3DAnimDataFPCcRCQ23g3d15ResFileAccessor
 /* 8019A0C8 00195F08  7C 64 1B 78 */	mr r4, r3
 /* 8019A0CC 00195F0C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8019A0D0 00195F10  80 84 00 04 */	lwz r4, 0x4(r4)
@@ -158,8 +158,8 @@ lbl_8019A08C:
 /* 8019A0DC 00195F1C  7C 08 03 A6 */	mtlr r0
 /* 8019A0E0 00195F20  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019A0E4 00195F24  4E 80 00 20 */	blr
-.global lbl_8019A0E8
-lbl_8019A0E8:
+.global "__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>CFUl"
+"__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>CFUl":
 /* 8019A0E8 00195F28  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8019A0EC 00195F2C  7C 08 02 A6 */	mflr r0
 /* 8019A0F0 00195F30  90 01 00 24 */	stw r0, 0x24(r1)
@@ -169,13 +169,13 @@ lbl_8019A0E8:
 /* 8019A100 00195F40  7C 9F 23 78 */	mr r31, r4
 /* 8019A104 00195F44  7F E3 FB 78 */	mr r3, r31
 /* 8019A108 00195F48  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8019A10C 00195F4C  4B E8 A3 95 */	bl lbl_800244A0
+/* 8019A10C 00195F4C  4B E8 A3 95 */	bl DefaultSwitchThreadCallback
 /* 8019A110 00195F50  80 7E 00 08 */	lwz r3, 0x8(r30)
-/* 8019A114 00195F54  4B FE 90 25 */	bl lbl_80183138
+/* 8019A114 00195F54  4B FE 90 25 */	bl block__Q23mem9DataBlockCFv
 /* 8019A118 00195F58  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8019A11C 00195F5C  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8019A120 00195F60  38 61 00 08 */	addi r3, r1, 0x8
-/* 8019A124 00195F64  4B F6 66 BD */	bl lbl_801007E0
+/* 8019A124 00195F64  4B F6 66 BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8019A128 00195F68  57 E0 10 3A */	slwi r0, r31, 2
 /* 8019A12C 00195F6C  7C 63 02 14 */	add r3, r3, r0
 /* 8019A130 00195F70  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -184,24 +184,24 @@ lbl_8019A0E8:
 /* 8019A13C 00195F7C  7C 08 03 A6 */	mtlr r0
 /* 8019A140 00195F80  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019A144 00195F84  4E 80 00 20 */	blr
-.global lbl_8019A148
-lbl_8019A148:
+.global registerResFile__Q24gobj16G3DAnimDataReposFUlRCQ23g3d15ResFileAccessor
+registerResFile__Q24gobj16G3DAnimDataReposFUlRCQ23g3d15ResFileAccessor:
 /* 8019A148 00195F88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019A14C 00195F8C  7C 08 02 A6 */	mflr r0
 /* 8019A150 00195F90  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8019A154 00195F94  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8019A158 00195F98  7C BF 2B 78 */	mr r31, r5
 /* 8019A15C 00195F9C  38 63 00 04 */	addi r3, r3, 0x4
-/* 8019A160 00195FA0  48 00 00 21 */	bl lbl_8019A180
+/* 8019A160 00195FA0  48 00 00 21 */	bl "__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>FUl"
 /* 8019A164 00195FA4  7F E4 FB 78 */	mr r4, r31
-/* 8019A168 00195FA8  4B FB 1E F5 */	bl lbl_8014C05C
+/* 8019A168 00195FA8  4B FB 1E F5 */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
 /* 8019A16C 00195FAC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8019A170 00195FB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8019A174 00195FB4  7C 08 03 A6 */	mtlr r0
 /* 8019A178 00195FB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019A17C 00195FBC  4E 80 00 20 */	blr
-.global lbl_8019A180
-lbl_8019A180:
+.global "__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>FUl"
+"__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>FUl":
 /* 8019A180 00195FC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019A184 00195FC4  7C 08 02 A6 */	mflr r0
 /* 8019A188 00195FC8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -211,9 +211,9 @@ lbl_8019A180:
 /* 8019A198 00195FD8  7C 9F 23 78 */	mr r31, r4
 /* 8019A19C 00195FDC  7F E3 FB 78 */	mr r3, r31
 /* 8019A1A0 00195FE0  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8019A1A4 00195FE4  4B E8 A2 FD */	bl lbl_800244A0
+/* 8019A1A4 00195FE4  4B E8 A2 FD */	bl DefaultSwitchThreadCallback
 /* 8019A1A8 00195FE8  7F C3 F3 78 */	mr r3, r30
-/* 8019A1AC 00195FEC  4B FE 8F 59 */	bl lbl_80183104
+/* 8019A1AC 00195FEC  4B FE 8F 59 */	bl "head__Q23mem50RuntimeFixedArray<Q36effect6detail13PolyEffectRes>Fv"
 /* 8019A1B0 00195FF0  57 E0 10 3A */	slwi r0, r31, 2
 /* 8019A1B4 00195FF4  7C 63 02 14 */	add r3, r3, r0
 /* 8019A1B8 00195FF8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -222,8 +222,8 @@ lbl_8019A180:
 /* 8019A1C4 00196004  7C 08 03 A6 */	mtlr r0
 /* 8019A1C8 00196008  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019A1CC 0019600C  4E 80 00 20 */	blr
-.global lbl_8019A1D0
-lbl_8019A1D0:
+.global unregisterResFile__Q24gobj16G3DAnimDataReposFUl
+unregisterResFile__Q24gobj16G3DAnimDataReposFUl:
 /* 8019A1D0 00196010  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8019A1D4 00196014  7C 08 02 A6 */	mflr r0
 /* 8019A1D8 00196018  90 01 00 24 */	stw r0, 0x24(r1)
@@ -232,13 +232,13 @@ lbl_8019A1D0:
 /* 8019A1E4 00196024  7C 7D 1B 78 */	mr r29, r3
 /* 8019A1E8 00196028  7C 9E 23 78 */	mr r30, r4
 /* 8019A1EC 0019602C  38 61 00 08 */	addi r3, r1, 0x8
-/* 8019A1F0 00196030  4B F4 31 F1 */	bl lbl_800DD3E0
+/* 8019A1F0 00196030  4B F4 31 F1 */	bl __ct__Q34nw4r3g3d8LightObjFv
 /* 8019A1F4 00196034  7C 7F 1B 78 */	mr r31, r3
 /* 8019A1F8 00196038  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8019A1FC 0019603C  7F C4 F3 78 */	mr r4, r30
-/* 8019A200 00196040  4B FF FF 81 */	bl lbl_8019A180
+/* 8019A200 00196040  4B FF FF 81 */	bl "__vc__Q23mem42RuntimeFixedArray<Q23g3d15ResFileAccessor>FUl"
 /* 8019A204 00196044  7F E4 FB 78 */	mr r4, r31
-/* 8019A208 00196048  4B FB 1E 55 */	bl lbl_8014C05C
+/* 8019A208 00196048  4B FB 1E 55 */	bl __ct__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color
 /* 8019A20C 0019604C  39 61 00 20 */	addi r11, r1, 0x20
 /* 8019A210 00196050  4B E6 D1 81 */	bl lbl_80007390
 /* 8019A214 00196054  80 01 00 24 */	lwz r0, 0x24(r1)

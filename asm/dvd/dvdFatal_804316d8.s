@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804316D8
-lbl_804316D8:
+.global "@1462_804316D8"
+"@1462_804316D8":
 
 	.4byte 0x0A0A0A83
 	.4byte 0x47838981
@@ -41,8 +41,8 @@ lbl_804316D8:
 	.4byte 0x82B382A2
 	.4byte 0x81420000
 
-.global lbl_80431768
-lbl_80431768:
+.global "@1463"
+"@1463":
 
 	.4byte 0x0A0A0A41
 	.4byte 0x6E206572
@@ -89,8 +89,8 @@ lbl_80431768:
 	.4byte 0x74696F6E
 	.4byte 0x732E0000
 
-.global lbl_80431818
-lbl_80431818:
+.global "@1464"
+"@1464":
 
 	.4byte 0x0A0A0A45
 	.4byte 0x696E2046
@@ -139,8 +139,8 @@ lbl_80431818:
 	.4byte 0x68616C74
 	.4byte 0x656E2E00
 
-.global lbl_804318D0
-lbl_804318D0:
+.global "@1465_804318D0"
+"@1465_804318D0":
 
 	.4byte 0x0A0A0A55
 	.4byte 0x6E652065
@@ -187,8 +187,8 @@ lbl_804318D0:
 	.4byte 0x2E000000
 	.4byte 0
 
-.global lbl_80431980
-lbl_80431980:
+.global "@1466"
+"@1466":
 
 	.4byte 0x0A0A0A4F
 	.4byte 0x63757272
@@ -231,8 +231,8 @@ lbl_80431980:
 	.4byte 0x6D616369
 	.4byte 0xF36E2E00
 
-.global lbl_80431A20
-lbl_80431A20:
+.global "@1467"
+"@1467":
 
 	.4byte 0x0A0A0A53
 	.4byte 0x6920E820
@@ -278,8 +278,8 @@ lbl_80431A20:
 	.4byte 0x6C652057
 	.4byte 0x69692E00
 
-.global lbl_80431ACC
-lbl_80431ACC:
+.global "@1468"
+"@1468":
 
 	.4byte 0x0A0A0A45
 	.4byte 0x72206973
@@ -319,8 +319,8 @@ lbl_80431ACC:
 	.4byte 0x7469652E
 	.4byte 0
 
-.global lbl_80431B60
-lbl_80431B60:
+.global "@1469"
+"@1469":
 
 	.4byte 0x0A0A0A41
 	.4byte 0x6E206572
@@ -364,8 +364,8 @@ lbl_80431B60:
 	.4byte 0x696C732E
 	.4byte 0
 
-.global lbl_80431C04
-lbl_80431C04:
+.global "@1470"
+"@1470":
 
 	.4byte 0x0A0A0A55
 	.4byte 0x6E652065
@@ -409,8 +409,8 @@ lbl_80431C04:
 	.4byte 0xE9746169
 	.4byte 0x6C732E00
 
-.global lbl_80431CA8
-lbl_80431CA8:
+.global "@1471"
+"@1471":
 
 	.4byte 0x0A0A0A53
 	.4byte 0x65206861
@@ -456,8 +456,8 @@ lbl_80431CA8:
 	.4byte 0x616369F3
 	.4byte 0x6E2E0000
 
-.global lbl_80431D54
-lbl_80431D54:
+.global "@1472"
+"@1472":
 
 	.4byte 0x0A0A8347
 	.4byte 0x8389815B
@@ -501,8 +501,8 @@ lbl_80431D54:
 	.4byte 0x82B382A2
 	.4byte 0x81420000
 
-.global lbl_80431DF8
-lbl_80431DF8:
+.global "@1473"
+"@1473":
 
 	.4byte 0x0A0A4572
 	.4byte 0x726F7220

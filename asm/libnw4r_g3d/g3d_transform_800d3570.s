@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800D3570
-lbl_800D3570:
+.global CalcViewNrmMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34
+CalcViewNrmMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34:
 /* 800D3570 000CF3B0  E0 04 80 00 */	psq_l f0, 0x0(r4), 1, qr0
 /* 800D3574 000CF3B4  E0 24 00 04 */	psq_l f1, 0x4(r4), 0, qr0
 /* 800D3578 000CF3B8  E0 44 80 10 */	psq_l f2, 0x10(r4), 1, qr0
@@ -17,10 +17,10 @@ lbl_800D3570:
 /* 800D359C 000CF3DC  11 61 59 F8 */	ps_msub f11, f1, f7, f11
 /* 800D35A0 000CF3E0  11 81 02 32 */	ps_mul f12, f1, f8
 /* 800D35A4 000CF3E4  11 A3 6A 38 */	ps_msub f13, f3, f8, f13
-/* 800D35A8 000CF3E8  3D 80 80 56 */	lis r12, lbl_8055EF08@ha
+/* 800D35A8 000CF3E8  3D 80 80 56 */	lis r12, det_epsilon__Q34nw4r3g3d6detail@ha
 /* 800D35AC 000CF3EC  11 85 61 B8 */	ps_msub f12, f5, f6, f12
 /* 800D35B0 000CF3F0  10 E0 03 72 */	ps_mul f7, f0, f13
-/* 800D35B4 000CF3F4  39 8C EF 08 */	addi r12, r12, lbl_8055EF08@l
+/* 800D35B4 000CF3F4  39 8C EF 08 */	addi r12, r12, det_epsilon__Q34nw4r3g3d6detail@l
 /* 800D35B8 000CF3F8  11 43 01 32 */	ps_mul f10, f3, f4
 /* 800D35BC 000CF3FC  10 E2 3B 3A */	ps_madd f7, f2, f12, f7
 /* 800D35C0 000CF400  E0 CC 80 00 */	psq_l f6, 0x0(r12), 1, qr0
@@ -65,8 +65,8 @@ lbl_800D3600:
 /* 800D3654 000CF494  00 00 00 00 */	.4byte 0x00000000
 /* 800D3658 000CF498  00 00 00 00 */	.4byte 0x00000000
 /* 800D365C 000CF49C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3660
-lbl_800D3660:
+.global CalcViewTexMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34
+CalcViewTexMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34:
 /* 800D3660 000CF4A0  E0 04 80 00 */	psq_l f0, 0x0(r4), 1, qr0
 /* 800D3664 000CF4A4  E0 24 00 04 */	psq_l f1, 0x4(r4), 0, qr0
 /* 800D3668 000CF4A8  E0 44 80 10 */	psq_l f2, 0x10(r4), 1, qr0
@@ -81,10 +81,10 @@ lbl_800D3660:
 /* 800D368C 000CF4CC  11 61 59 F8 */	ps_msub f11, f1, f7, f11
 /* 800D3690 000CF4D0  11 81 02 32 */	ps_mul f12, f1, f8
 /* 800D3694 000CF4D4  11 A3 6A 38 */	ps_msub f13, f3, f8, f13
-/* 800D3698 000CF4D8  3D 80 80 56 */	lis r12, lbl_8055EF08@ha
+/* 800D3698 000CF4D8  3D 80 80 56 */	lis r12, det_epsilon__Q34nw4r3g3d6detail@ha
 /* 800D369C 000CF4DC  11 85 61 B8 */	ps_msub f12, f5, f6, f12
 /* 800D36A0 000CF4E0  10 E0 03 72 */	ps_mul f7, f0, f13
-/* 800D36A4 000CF4E4  39 8C EF 08 */	addi r12, r12, lbl_8055EF08@l
+/* 800D36A4 000CF4E4  39 8C EF 08 */	addi r12, r12, det_epsilon__Q34nw4r3g3d6detail@l
 /* 800D36A8 000CF4E8  11 43 01 32 */	ps_mul f10, f3, f4
 /* 800D36AC 000CF4EC  10 E2 3B 3A */	ps_madd f7, f2, f12, f7
 /* 800D36B0 000CF4F0  E0 CC 80 00 */	psq_l f6, 0x0(r12), 1, qr0
@@ -139,8 +139,8 @@ lbl_800D3708:
 /* 800D3764 000CF5A4  4E 80 00 20 */	blr
 /* 800D3768 000CF5A8  00 00 00 00 */	.4byte 0x00000000
 /* 800D376C 000CF5AC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800D3770
-lbl_800D3770:
+.global CalcInvWorldMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34
+CalcInvWorldMtx__Q34nw4r3g3d6detailFPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34:
 /* 800D3770 000CF5B0  E0 04 80 00 */	psq_l f0, 0x0(r4), 1, qr0
 /* 800D3774 000CF5B4  E0 24 00 04 */	psq_l f1, 0x4(r4), 0, qr0
 /* 800D3778 000CF5B8  E0 44 80 10 */	psq_l f2, 0x10(r4), 1, qr0
@@ -155,10 +155,10 @@ lbl_800D3770:
 /* 800D379C 000CF5DC  11 61 59 F8 */	ps_msub f11, f1, f7, f11
 /* 800D37A0 000CF5E0  11 81 02 32 */	ps_mul f12, f1, f8
 /* 800D37A4 000CF5E4  11 A3 6A 38 */	ps_msub f13, f3, f8, f13
-/* 800D37A8 000CF5E8  3D 80 80 56 */	lis r12, lbl_8055EF08@ha
+/* 800D37A8 000CF5E8  3D 80 80 56 */	lis r12, det_epsilon__Q34nw4r3g3d6detail@ha
 /* 800D37AC 000CF5EC  11 85 61 B8 */	ps_msub f12, f5, f6, f12
 /* 800D37B0 000CF5F0  10 E0 03 72 */	ps_mul f7, f0, f13
-/* 800D37B4 000CF5F4  39 8C EF 08 */	addi r12, r12, lbl_8055EF08@l
+/* 800D37B4 000CF5F4  39 8C EF 08 */	addi r12, r12, det_epsilon__Q34nw4r3g3d6detail@l
 /* 800D37B8 000CF5F8  11 43 01 32 */	ps_mul f10, f3, f4
 /* 800D37BC 000CF5FC  10 E2 3B 3A */	ps_madd f7, f2, f12, f7
 /* 800D37C0 000CF600  E0 CC 80 00 */	psq_l f6, 0x0(r12), 1, qr0

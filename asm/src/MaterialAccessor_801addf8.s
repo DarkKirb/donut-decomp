@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801ADDF8
-lbl_801ADDF8:
+.global __ct__Q23lyt16MaterialAccessorFRCQ23lyt12PaneAccessorRQ34nw4r3lyt8Material
+__ct__Q23lyt16MaterialAccessorFRCQ23lyt12PaneAccessorRQ34nw4r3lyt8Material:
 /* 801ADDF8 001A9C38  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801ADDFC 001A9C3C  7C 08 02 A6 */	mflr r0
 /* 801ADE00 001A9C40  90 01 00 34 */	stw r0, 0x34(r1)
@@ -18,11 +18,11 @@ lbl_801ADDF8:
 /* 801ADE28 001A9C68  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801ADE2C 001A9C6C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801ADE30 001A9C70  90 03 00 04 */	stw r0, 0x4(r3)
-/* 801ADE34 001A9C74  4B FC E7 B1 */	bl lbl_8017C5E4
+/* 801ADE34 001A9C74  4B FC E7 B1 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 801ADE38 001A9C78  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801ADE3C 001A9C7C  41 82 00 0C */	beq lbl_801ADE48
 /* 801ADE40 001A9C80  7F 83 E3 78 */	mr r3, r28
-/* 801ADE44 001A9C84  4B FF DD 8D */	bl lbl_801ABBD0
+/* 801ADE44 001A9C84  4B FF DD 8D */	bl "unlink__Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>Fv"
 .global lbl_801ADE48
 lbl_801ADE48:
 /* 801ADE48 001A9C88  38 00 00 00 */	li r0, 0x0
@@ -34,7 +34,7 @@ lbl_801ADE48:
 .global lbl_801ADE60
 lbl_801ADE60:
 /* 801ADE60 001A9CA0  7F A3 EB 78 */	mr r3, r29
-/* 801ADE64 001A9CA4  4B FC E7 81 */	bl lbl_8017C5E4
+/* 801ADE64 001A9CA4  4B FC E7 81 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 801ADE68 001A9CA8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801ADE6C 001A9CAC  41 82 00 2C */	beq lbl_801ADE98
 /* 801ADE70 001A9CB0  83 FD 00 08 */	lwz r31, 0x8(r29)
@@ -42,11 +42,11 @@ lbl_801ADE60:
 /* 801ADE78 001A9CB8  38 1F 00 04 */	addi r0, r31, 0x4
 /* 801ADE7C 001A9CBC  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801ADE80 001A9CC0  7F 83 E3 78 */	mr r3, r28
-/* 801ADE84 001A9CC4  4B FF DD 99 */	bl lbl_801ABC1C
+/* 801ADE84 001A9CC4  4B FF DD 99 */	bl "GetNodeFromPointer__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>"
 /* 801ADE88 001A9CC8  7C 65 1B 78 */	mr r5, r3
 /* 801ADE8C 001A9CCC  7F E3 FB 78 */	mr r3, r31
 /* 801ADE90 001A9CD0  38 81 00 08 */	addi r4, r1, 0x8
-/* 801ADE94 001A9CD4  4B F7 1F 1D */	bl lbl_8011FDB0
+/* 801ADE94 001A9CD4  4B F7 1F 1D */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 .global lbl_801ADE98
 lbl_801ADE98:
 /* 801ADE98 001A9CD8  80 1D 00 10 */	lwz r0, 0x10(r29)
@@ -59,8 +59,8 @@ lbl_801ADE98:
 /* 801ADEB4 001A9CF4  7C 08 03 A6 */	mtlr r0
 /* 801ADEB8 001A9CF8  38 21 00 30 */	addi r1, r1, 0x30
 /* 801ADEBC 001A9CFC  4E 80 00 20 */	blr
-.global lbl_801ADEC0
-lbl_801ADEC0:
+.global SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf
+SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf:
 /* 801ADEC0 001A9D00  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801ADEC4 001A9D04  7C 08 02 A6 */	mflr r0
 /* 801ADEC8 001A9D08  90 01 00 24 */	stw r0, 0x24(r1)
@@ -75,17 +75,17 @@ lbl_801ADEC0:
 /* 801ADEEC 001A9D2C  54 00 47 3E */	extrwi r0, r0, 4, 4
 /* 801ADEF0 001A9D30  7C 04 00 40 */	cmplw r4, r0
 /* 801ADEF4 001A9D34  41 80 00 20 */	blt lbl_801ADF14
-/* 801ADEF8 001A9D38  3C 60 80 45 */	lis r3, lbl_804579F0@ha
-/* 801ADEFC 001A9D3C  38 63 79 F0 */	addi r3, r3, lbl_804579F0@l
+/* 801ADEF8 001A9D38  3C 60 80 45 */	lis r3, "@STRING@SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf"@ha
+/* 801ADEFC 001A9D3C  38 63 79 F0 */	addi r3, r3, "@STRING@SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf"@l
 /* 801ADF00 001A9D40  38 80 01 1F */	li r4, 0x11f
-/* 801ADF04 001A9D44  3C A0 80 45 */	lis r5, lbl_804579BC@ha
-/* 801ADF08 001A9D48  38 A5 79 BC */	addi r5, r5, lbl_804579BC@l
+/* 801ADF04 001A9D44  3C A0 80 45 */	lis r5, "@STRING@SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf@0"@ha
+/* 801ADF08 001A9D48  38 A5 79 BC */	addi r5, r5, "@STRING@SetTexSRTElement__Q34nw4r3lyt8MaterialFUlUlf@0"@l
 /* 801ADF0C 001A9D4C  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801ADF10 001A9D50  4B F7 A4 41 */	bl lbl_80128350
+/* 801ADF10 001A9D50  4B F7 A4 41 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_801ADF14
 lbl_801ADF14:
 /* 801ADF14 001A9D54  7F A3 EB 78 */	mr r3, r29
-/* 801ADF18 001A9D58  4B F4 CD 09 */	bl lbl_800FAC20
+/* 801ADF18 001A9D58  4B F4 CD 09 */	bl GetTexSRTAry__Q34nw4r3lyt8MaterialCFv
 /* 801ADF1C 001A9D5C  1C 1E 00 14 */	mulli r0, r30, 0x14
 /* 801ADF20 001A9D60  7C 63 02 14 */	add r3, r3, r0
 /* 801ADF24 001A9D64  57 E0 10 3A */	slwi r0, r31, 2
@@ -97,8 +97,8 @@ lbl_801ADF14:
 /* 801ADF3C 001A9D7C  7C 08 03 A6 */	mtlr r0
 /* 801ADF40 001A9D80  38 21 00 20 */	addi r1, r1, 0x20
 /* 801ADF44 001A9D84  4E 80 00 20 */	blr
-.global lbl_801ADF48
-lbl_801ADF48:
+.global setTevColor__Q23lyt16MaterialAccessorCFUlRCQ33hel6common5Color
+setTevColor__Q23lyt16MaterialAccessorCFUlRCQ33hel6common5Color:
 /* 801ADF48 001A9D88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801ADF4C 001A9D8C  7C 08 02 A6 */	mflr r0
 /* 801ADF50 001A9D90  90 01 00 24 */	stw r0, 0x24(r1)
@@ -112,13 +112,13 @@ lbl_801ADF48:
 /* 801ADF70 001A9DB0  83 E3 00 14 */	lwz r31, 0x14(r3)
 /* 801ADF74 001A9DB4  28 04 00 03 */	cmplwi r4, 0x3
 /* 801ADF78 001A9DB8  41 80 00 20 */	blt lbl_801ADF98
-/* 801ADF7C 001A9DBC  3C 60 80 45 */	lis r3, lbl_804579B0@ha
-/* 801ADF80 001A9DC0  38 63 79 B0 */	addi r3, r3, lbl_804579B0@l
+/* 801ADF7C 001A9DBC  3C 60 80 45 */	lis r3, "@STRING@SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10"@ha
+/* 801ADF80 001A9DC0  38 63 79 B0 */	addi r3, r3, "@STRING@SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10"@l
 /* 801ADF84 001A9DC4  38 80 00 8F */	li r4, 0x8f
-/* 801ADF88 001A9DC8  3C A0 80 45 */	lis r5, lbl_80457988@ha
-/* 801ADF8C 001A9DCC  38 A5 79 88 */	addi r5, r5, lbl_80457988@l
+/* 801ADF88 001A9DC8  3C A0 80 45 */	lis r5, "@STRING@SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10@0"@ha
+/* 801ADF8C 001A9DCC  38 A5 79 88 */	addi r5, r5, "@STRING@SetTevColor__Q34nw4r3lyt8MaterialFUlRC11_GXColorS10@0"@l
 /* 801ADF90 001A9DD0  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801ADF94 001A9DD4  4B F7 A3 BD */	bl lbl_80128350
+/* 801ADF94 001A9DD4  4B F7 A3 BD */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_801ADF98
 lbl_801ADF98:
 /* 801ADF98 001A9DD8  57 40 18 38 */	slwi r0, r26, 3

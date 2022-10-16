@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8019DE98
-lbl_8019DE98:
+.global HelSPrintfImpl__Q33hel5debug5PrintFPCce
+HelSPrintfImpl__Q33hel5debug5PrintFPCce:
 /* 8019DE98 00199CD8  94 21 FE 00 */	stwu r1, -0x200(r1)
 /* 8019DE9C 00199CDC  7C 08 02 A6 */	mflr r0
 /* 8019DEA0 00199CE0  90 01 02 04 */	stw r0, 0x204(r1)
@@ -49,7 +49,7 @@ lbl_8019DF1C:
 /* 8019DF34 00199D74  38 80 01 80 */	li r4, 0x180
 /* 8019DF38 00199D78  38 A1 00 68 */	addi r5, r1, 0x68
 /* 8019DF3C 00199D7C  7D 66 5B 78 */	mr r6, r11
-/* 8019DF40 00199D80  4B FF FA C1 */	bl lbl_8019DA00
+/* 8019DF40 00199D80  4B FF FA C1 */	bl "VPrintf__Q33hel6common9Traits<c>FPcUlP16__va_list_structPCc"
 /* 8019DF44 00199D84  38 BF FF FC */	addi r5, r31, -0x4
 /* 8019DF48 00199D88  38 81 00 74 */	addi r4, r1, 0x74
 /* 8019DF4C 00199D8C  38 00 00 30 */	li r0, 0x30

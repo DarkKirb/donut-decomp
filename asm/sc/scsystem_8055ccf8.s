@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CCF8
-lbl_8055CCF8:
+.global BgJobStatus
+BgJobStatus:
 	.skip 0x4
 
-.global lbl_8055CCFC
-lbl_8055CCFC:
+.global ItemRestSize
+ItemRestSize:
 	.skip 0x4
 
-.global lbl_8055CD00
-lbl_8055CD00:
+.global ItemNumTotal
+ItemNumTotal:
 	.skip 0x4
 
-.global lbl_8055CD04
-lbl_8055CD04:
+.global ItemIDMaxPlus1
+ItemIDMaxPlus1:
 	.skip 0x4
 
-.global lbl_8055CD08
-lbl_8055CD08:
+.global ItemIDOffsetTblOffset
+ItemIDOffsetTblOffset:
 	.skip 0x4
 
-.global lbl_8055CD0C
-lbl_8055CD0C:
+.global IsDevKit
+IsDevKit:
 	.skip 0x1
 
-.global lbl_8055CD0D
-lbl_8055CD0D:
+.global DirtyFlag
+DirtyFlag:
 	.skip 0x1
 
-.global lbl_8055CD0E
-lbl_8055CD0E:
+.global Initialized_8055CD0E
+Initialized_8055CD0E:
 	.skip 0x2

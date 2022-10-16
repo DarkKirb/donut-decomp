@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800CFEB0
-lbl_800CFEB0:
+.global GetAnmResult__Q34nw4r3g3d12ResAnmTexSrtCFPQ34nw4r3g3d15TexSrtAnmResultUlf
+GetAnmResult__Q34nw4r3g3d12ResAnmTexSrtCFPQ34nw4r3g3d15TexSrtAnmResultUlf:
 /* 800CFEB0 000CBCF0  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 800CFEB4 000CBCF4  7C 08 02 A6 */	mflr r0
 /* 800CFEB8 000CBCF8  90 01 00 74 */	stw r0, 0x74(r1)
@@ -54,9 +54,9 @@ lbl_800CFF34:
 /* 800CFF48 000CBD88  3B 64 00 0C */	addi r27, r4, 0xc
 /* 800CFF4C 000CBD8C  90 04 00 00 */	stw r0, 0x0(r4)
 /* 800CFF50 000CBD90  3B 80 00 00 */	li r28, 0x0
-/* 800CFF54 000CBD94  C3 E2 8F 28 */	lfs f31, lbl_8055EEA8@sda21(r2)
+/* 800CFF54 000CBD94  C3 E2 8F 28 */	lfs f31, "@6218"@sda21(r2)
 /* 800CFF58 000CBD98  90 04 00 04 */	stw r0, 0x4(r4)
-/* 800CFF5C 000CBD9C  C3 C2 8F 2C */	lfs f30, lbl_8055EEAC@sda21(r2)
+/* 800CFF5C 000CBD9C  C3 C2 8F 2C */	lfs f30, "@6219"@sda21(r2)
 /* 800CFF60 000CBDA0  80 03 00 24 */	lwz r0, 0x24(r3)
 /* 800CFF64 000CBDA4  90 04 00 08 */	stw r0, 0x8(r4)
 /* 800CFF68 000CBDA8  48 00 01 80 */	b lbl_800D00E8
@@ -82,7 +82,7 @@ lbl_800CFFA8:
 /* 800CFFA8 000CBDE8  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800CFFAC 000CBDEC  FC 20 E8 90 */	fmr f1, f29
 /* 800CFFB0 000CBDF0  7C 63 02 14 */	add r3, r3, r0
-/* 800CFFB4 000CBDF4  4B FF F4 8D */	bl lbl_800CF440
+/* 800CFFB4 000CBDF4  4B FF F4 8D */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800CFFB8
 lbl_800CFFB8:
 /* 800CFFB8 000CBDF8  57 E0 06 F7 */	rlwinm. r0, r31, 0, 27, 27
@@ -104,7 +104,7 @@ lbl_800CFFE8:
 /* 800CFFE8 000CBE28  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800CFFEC 000CBE2C  FC 20 E8 90 */	fmr f1, f29
 /* 800CFFF0 000CBE30  7C 63 02 14 */	add r3, r3, r0
-/* 800CFFF4 000CBE34  4B FF F4 4D */	bl lbl_800CF440
+/* 800CFFF4 000CBE34  4B FF F4 4D */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800CFFF8
 lbl_800CFFF8:
 /* 800CFFF8 000CBE38  D0 3B 00 04 */	stfs f1, 0x4(r27)
@@ -130,7 +130,7 @@ lbl_800D0030:
 /* 800D0030 000CBE70  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D0034 000CBE74  FC 20 E8 90 */	fmr f1, f29
 /* 800D0038 000CBE78  7C 63 02 14 */	add r3, r3, r0
-/* 800D003C 000CBE7C  4B FF F4 05 */	bl lbl_800CF440
+/* 800D003C 000CBE7C  4B FF F4 05 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D0040
 lbl_800D0040:
 /* 800D0040 000CBE80  D0 3B 00 08 */	stfs f1, 0x8(r27)
@@ -156,7 +156,7 @@ lbl_800D0078:
 /* 800D0078 000CBEB8  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D007C 000CBEBC  FC 20 E8 90 */	fmr f1, f29
 /* 800D0080 000CBEC0  7C 63 02 14 */	add r3, r3, r0
-/* 800D0084 000CBEC4  4B FF F3 BD */	bl lbl_800CF440
+/* 800D0084 000CBEC4  4B FF F3 BD */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D0088
 lbl_800D0088:
 /* 800D0088 000CBEC8  57 A0 10 3A */	slwi r0, r29, 2
@@ -172,7 +172,7 @@ lbl_800D00A8:
 /* 800D00A8 000CBEE8  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D00AC 000CBEEC  FC 20 E8 90 */	fmr f1, f29
 /* 800D00B0 000CBEF0  7C 63 02 14 */	add r3, r3, r0
-/* 800D00B4 000CBEF4  4B FF F3 8D */	bl lbl_800CF440
+/* 800D00B4 000CBEF4  4B FF F3 8D */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D00B8
 lbl_800D00B8:
 /* 800D00B8 000CBEF8  D0 3B 00 10 */	stfs f1, 0x10(r27)
@@ -197,9 +197,9 @@ lbl_800D00DC:
 lbl_800D00E8:
 /* 800D00E8 000CBF28  2C 1A 00 00 */	cmpwi r26, 0x0
 /* 800D00EC 000CBF2C  40 82 FE 80 */	bne lbl_800CFF6C
-/* 800D00F0 000CBF30  C3 C2 8F 28 */	lfs f30, lbl_8055EEA8@sda21(r2)
+/* 800D00F0 000CBF30  C3 C2 8F 28 */	lfs f30, "@6218"@sda21(r2)
 /* 800D00F4 000CBF34  3B 40 00 00 */	li r26, 0x0
-/* 800D00F8 000CBF38  C3 E2 8F 2C */	lfs f31, lbl_8055EEAC@sda21(r2)
+/* 800D00F8 000CBF38  C3 E2 8F 2C */	lfs f31, "@6219"@sda21(r2)
 /* 800D00FC 000CBF3C  3B 60 00 00 */	li r27, 0x0
 /* 800D0100 000CBF40  48 00 01 8C */	b lbl_800D028C
 .global lbl_800D0104
@@ -227,7 +227,7 @@ lbl_800D014C:
 /* 800D014C 000CBF8C  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D0150 000CBF90  FC 20 E8 90 */	fmr f1, f29
 /* 800D0154 000CBF94  7C 63 02 14 */	add r3, r3, r0
-/* 800D0158 000CBF98  4B FF F2 E9 */	bl lbl_800CF440
+/* 800D0158 000CBF98  4B FF F2 E9 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D015C
 lbl_800D015C:
 /* 800D015C 000CBF9C  57 A0 06 F7 */	rlwinm. r0, r29, 0, 27, 27
@@ -249,7 +249,7 @@ lbl_800D018C:
 /* 800D018C 000CBFCC  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D0190 000CBFD0  FC 20 E8 90 */	fmr f1, f29
 /* 800D0194 000CBFD4  7C 63 02 14 */	add r3, r3, r0
-/* 800D0198 000CBFD8  4B FF F2 A9 */	bl lbl_800CF440
+/* 800D0198 000CBFD8  4B FF F2 A9 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D019C
 lbl_800D019C:
 /* 800D019C 000CBFDC  D0 3F 00 10 */	stfs f1, 0x10(r31)
@@ -275,7 +275,7 @@ lbl_800D01D4:
 /* 800D01D4 000CC014  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D01D8 000CC018  FC 20 E8 90 */	fmr f1, f29
 /* 800D01DC 000CC01C  7C 63 02 14 */	add r3, r3, r0
-/* 800D01E0 000CC020  4B FF F2 61 */	bl lbl_800CF440
+/* 800D01E0 000CC020  4B FF F2 61 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D01E4
 lbl_800D01E4:
 /* 800D01E4 000CC024  D0 3F 00 14 */	stfs f1, 0x14(r31)
@@ -301,7 +301,7 @@ lbl_800D021C:
 /* 800D021C 000CC05C  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D0220 000CC060  FC 20 E8 90 */	fmr f1, f29
 /* 800D0224 000CC064  7C 63 02 14 */	add r3, r3, r0
-/* 800D0228 000CC068  4B FF F2 19 */	bl lbl_800CF440
+/* 800D0228 000CC068  4B FF F2 19 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D022C
 lbl_800D022C:
 /* 800D022C 000CC06C  57 80 10 3A */	slwi r0, r28, 2
@@ -317,7 +317,7 @@ lbl_800D024C:
 /* 800D024C 000CC08C  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800D0250 000CC090  FC 20 E8 90 */	fmr f1, f29
 /* 800D0254 000CC094  7C 63 02 14 */	add r3, r3, r0
-/* 800D0258 000CC098  4B FF F1 E9 */	bl lbl_800CF440
+/* 800D0258 000CC098  4B FF F1 E9 */	bl GetResKeyFrameAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d18ResKeyFrameAnmDataf
 .global lbl_800D025C
 lbl_800D025C:
 /* 800D025C 000CC09C  D0 3F 00 1C */	stfs f1, 0x1c(r31)

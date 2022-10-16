@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000E20C
-lbl_8000E20C:
+.global wmemcpy
+wmemcpy:
 /* 8000E20C 0000A04C  54 A5 08 3C */	slwi r5, r5, 1
-/* 8000E210 0000A050  4B FF 5D F0 */	b func_80004000
-.global lbl_8000E214
-lbl_8000E214:
+/* 8000E210 0000A050  4B FF 5D F0 */	b memcpy
+.global wmemchr
+wmemchr:
 /* 8000E214 0000A054  7C A9 03 A6 */	mtctr r5
 /* 8000E218 0000A058  2C 05 00 00 */	cmpwi r5, 0x0
 /* 8000E21C 0000A05C  41 82 00 18 */	beq lbl_8000E234

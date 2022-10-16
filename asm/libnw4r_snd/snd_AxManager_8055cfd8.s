@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CFD8
-lbl_8055CFD8:
+.global sBiquadFilterLpf__Q44nw4r3snd6detail9AxManager
+sBiquadFilterLpf__Q44nw4r3snd6detail9AxManager:
 	.skip 0x4
 
-.global lbl_8055CFDC
-lbl_8055CFDC:
+.global sBiquadFilterHpf__Q44nw4r3snd6detail9AxManager
+sBiquadFilterHpf__Q44nw4r3snd6detail9AxManager:
 	.skip 0x4
 
-.global lbl_8055CFE0
-lbl_8055CFE0:
+.global sBiquadFilterBpf512__Q44nw4r3snd6detail9AxManager
+sBiquadFilterBpf512__Q44nw4r3snd6detail9AxManager:
 	.skip 0x4
 
-.global lbl_8055CFE4
-lbl_8055CFE4:
+.global sBiquadFilterBpf1024__Q44nw4r3snd6detail9AxManager
+sBiquadFilterBpf1024__Q44nw4r3snd6detail9AxManager:
 	.skip 0x4
 
-.global lbl_8055CFE8
-lbl_8055CFE8:
+.global sBiquadFilterBpf2048__Q44nw4r3snd6detail9AxManager
+sBiquadFilterBpf2048__Q44nw4r3snd6detail9AxManager:
 	.skip 0x4
 
-.global lbl_8055CFEC
-lbl_8055CFEC:
+.global "@GUARD@GetInstance__Q44nw4r3snd6detail9AxManagerFv@instance"
+"@GUARD@GetInstance__Q44nw4r3snd6detail9AxManagerFv@instance":
 	.skip 0x1
 
-.global lbl_8055CFED
-lbl_8055CFED:
+.global "@LOCAL@PrepareResetProc__Q44nw4r3snd6detail9AxManagerFv@finishedFlag"
+"@LOCAL@PrepareResetProc__Q44nw4r3snd6detail9AxManagerFv@finishedFlag":
 	.skip 0x3

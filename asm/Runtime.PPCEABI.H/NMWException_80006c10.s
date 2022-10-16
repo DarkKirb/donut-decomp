@@ -1,25 +1,25 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80006C10
-lbl_80006C10:
-/* 80006C10 00002A50  48 00 99 18 */	b lbl_80010528
+.global dthandler__3stdFv
+dthandler__3stdFv:
+/* 80006C10 00002A50  48 00 99 18 */	b abort
 
-.global lbl_80006C14
-lbl_80006C14:
-/* 80006C14 00002A54  48 00 00 04 */	b lbl_80006C18
-.global lbl_80006C18
-lbl_80006C18:
-/* 80006C18 00002A58  81 8D 80 08 */	lwz r12, lbl_80556428@sda21(r13)
+.global duhandler__3stdFv
+duhandler__3stdFv:
+/* 80006C14 00002A54  48 00 00 04 */	b terminate__3stdFv
+.global terminate__3stdFv
+terminate__3stdFv:
+/* 80006C18 00002A58  81 8D 80 08 */	lwz r12, thandler__3std@sda21(r13)
 /* 80006C1C 00002A5C  7D 89 03 A6 */	mtctr r12
 /* 80006C20 00002A60  4E 80 04 20 */	bctr
-.global lbl_80006C24
-lbl_80006C24:
-/* 80006C24 00002A64  81 8D 80 0C */	lwz r12, lbl_8055642C@sda21(r13)
+.global unexpected__3stdFv
+unexpected__3stdFv:
+/* 80006C24 00002A64  81 8D 80 0C */	lwz r12, uhandler__3std@sda21(r13)
 /* 80006C28 00002A68  7D 89 03 A6 */	mtctr r12
 /* 80006C2C 00002A6C  4E 80 04 20 */	bctr
-.global lbl_80006C30
-lbl_80006C30:
+.global __throw_catch_compare
+__throw_catch_compare:
 /* 80006C30 00002A70  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80006C34 00002A74  38 00 00 00 */	li r0, 0x0
 /* 80006C38 00002A78  90 05 00 00 */	stw r0, 0x0(r5)
@@ -210,8 +210,8 @@ lbl_80006E44:
 /* 80006E5C 00002C9C  38 60 00 00 */	li r3, 0x0
 /* 80006E60 00002CA0  4E 80 00 20 */	blr
 
-.global lbl_80006E64
-lbl_80006E64:
+.global __construct_new_array
+__construct_new_array:
 /* 80006E64 00002CA4  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80006E68 00002CA8  7C 08 02 A6 */	mflr r0
 /* 80006E6C 00002CAC  2C 03 00 00 */	cmpwi r3, 0x0
@@ -288,8 +288,8 @@ lbl_80006F50:
 /* 80006F60 00002DA0  38 21 00 40 */	addi r1, r1, 0x40
 /* 80006F64 00002DA4  4E 80 00 20 */	blr
 
-.global lbl_80006F68
-lbl_80006F68:
+.global __dt__26__partial_array_destructorFv
+__dt__26__partial_array_destructorFv:
 /* 80006F68 00002DA8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80006F6C 00002DAC  7C 08 02 A6 */	mflr r0
 /* 80006F70 00002DB0  2C 03 00 00 */	cmpwi r3, 0x0
@@ -334,7 +334,7 @@ lbl_80006FF4:
 /* 80006FF4 00002E34  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80006FF8 00002E38  40 81 00 0C */	ble lbl_80007004
 /* 80006FFC 00002E3C  7F A3 EB 78 */	mr r3, r29
-/* 80007000 00002E40  48 1B 87 15 */	bl lbl_801BF714
+/* 80007000 00002E40  48 1B 87 15 */	bl __dl__FPv
 .global lbl_80007004
 lbl_80007004:
 /* 80007004 00002E44  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -346,8 +346,8 @@ lbl_80007004:
 /* 8000701C 00002E5C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80007020 00002E60  4E 80 00 20 */	blr
 
-.global lbl_80007024
-lbl_80007024:
+.global __construct_array
+__construct_array:
 /* 80007024 00002E64  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80007028 00002E68  7C 08 02 A6 */	mflr r0
 /* 8000702C 00002E6C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -421,8 +421,8 @@ lbl_800070FC:
 /* 80007114 00002F54  38 21 00 30 */	addi r1, r1, 0x30
 /* 80007118 00002F58  4E 80 00 20 */	blr
 
-.global lbl_8000711C
-lbl_8000711C:
+.global __destroy_arr
+__destroy_arr:
 /* 8000711C 00002F5C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80007120 00002F60  7C 08 02 A6 */	mflr r0
 /* 80007124 00002F64  90 01 00 24 */	stw r0, 0x24(r1)

@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045CBA0
-lbl_8045CBA0:
+.global __vt__Q26mintvm8VMModule
+__vt__Q26mintvm8VMModule:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801CA0F8
+	.4byte __dt__Q26mintvm8VMModuleFv
 
-.global lbl_8045CBAC
-lbl_8045CBAC:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801CA6EC
-
-.global lbl_8045CBB8
-lbl_8045CBB8:
+.global __vt__Q26mintvm13VMSymbolTable
+__vt__Q26mintvm13VMSymbolTable:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801CA758
+	.4byte __dt__Q26mintvm13VMSymbolTableFv
+
+.global __vt__Q26mintvm15VMConstantTable
+__vt__Q26mintvm15VMConstantTable:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm15VMConstantTableFv
 	.4byte 0

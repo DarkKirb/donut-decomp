@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804643C8
-lbl_804643C8:
+.global "__vt__Q24util41StateChanger<Q43scn4step4boss6IState,256>"
+"__vt__Q24util41StateChanger<Q43scn4step4boss6IState,256>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8022C084
+	.4byte "__dt__Q24util41StateChanger<Q43scn4step4boss6IState,256>Fv"
 
-.global lbl_804643D4
-lbl_804643D4:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -21,15 +21,15 @@ lbl_804643D4:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_804643F8
-lbl_804643F8:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80464404
-lbl_80464404:
+.global "@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -41,15 +41,15 @@ lbl_80464404:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80464428
-lbl_80464428:
+.global "@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80464434
-lbl_80464434:
+.global "@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -61,8 +61,8 @@ lbl_80464434:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_80464458
-lbl_80464458:
+.global "@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

@@ -1,31 +1,31 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80078008
-lbl_80078008:
-/* 80078008 00073E48  3C 80 80 4F */	lis r4, lbl_804F5AB8@ha
-/* 8007800C 00073E4C  38 84 5A B8 */	addi r4, r4, lbl_804F5AB8@l
+.global bta_sys_rm_register
+bta_sys_rm_register:
+/* 80078008 00073E48  3C 80 80 4F */	lis r4, bta_sys_cb@ha
+/* 8007800C 00073E4C  38 84 5A B8 */	addi r4, r4, bta_sys_cb@l
 /* 80078010 00073E50  90 64 00 80 */	stw r3, 0x80(r4)
 /* 80078014 00073E54  4E 80 00 20 */	blr
-.global lbl_80078018
-lbl_80078018:
-/* 80078018 00073E58  3C 80 80 4F */	lis r4, lbl_804F5AB8@ha
-/* 8007801C 00073E5C  38 84 5A B8 */	addi r4, r4, lbl_804F5AB8@l
+.global bta_sys_compress_register
+bta_sys_compress_register:
+/* 80078018 00073E58  3C 80 80 4F */	lis r4, bta_sys_cb@ha
+/* 8007801C 00073E5C  38 84 5A B8 */	addi r4, r4, bta_sys_cb@l
 /* 80078020 00073E60  90 64 00 88 */	stw r3, 0x88(r4)
 /* 80078024 00073E64  4E 80 00 20 */	blr
-.global lbl_80078028
-lbl_80078028:
-/* 80078028 00073E68  3C 80 80 4F */	lis r4, lbl_804F5AB8@ha
-/* 8007802C 00073E6C  38 84 5A B8 */	addi r4, r4, lbl_804F5AB8@l
+.global bta_sys_pm_register
+bta_sys_pm_register:
+/* 80078028 00073E68  3C 80 80 4F */	lis r4, bta_sys_cb@ha
+/* 8007802C 00073E6C  38 84 5A B8 */	addi r4, r4, bta_sys_cb@l
 /* 80078030 00073E70  90 64 00 84 */	stw r3, 0x84(r4)
 /* 80078034 00073E74  4E 80 00 20 */	blr
-.global lbl_80078038
-lbl_80078038:
+.global bta_sys_conn_open
+bta_sys_conn_open:
 /* 80078038 00073E78  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8007803C 00073E7C  7C 08 02 A6 */	mflr r0
-/* 80078040 00073E80  3C C0 80 4F */	lis r6, lbl_804F5AB8@ha
+/* 80078040 00073E80  3C C0 80 4F */	lis r6, bta_sys_cb@ha
 /* 80078044 00073E84  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80078048 00073E88  38 C6 5A B8 */	addi r6, r6, lbl_804F5AB8@l
+/* 80078048 00073E88  38 C6 5A B8 */	addi r6, r6, bta_sys_cb@l
 /* 8007804C 00073E8C  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80078050 00073E90  7C BF 2B 78 */	mr r31, r5
 /* 80078054 00073E94  93 C1 00 18 */	stw r30, 0x18(r1)
@@ -43,8 +43,8 @@ lbl_80078038:
 /* 80078084 00073EC4  4E 80 04 21 */	bctrl
 .global lbl_80078088
 lbl_80078088:
-/* 80078088 00073EC8  3C 60 80 4F */	lis r3, lbl_804F5AB8@ha
-/* 8007808C 00073ECC  38 63 5A B8 */	addi r3, r3, lbl_804F5AB8@l
+/* 80078088 00073EC8  3C 60 80 4F */	lis r3, bta_sys_cb@ha
+/* 8007808C 00073ECC  38 63 5A B8 */	addi r3, r3, bta_sys_cb@l
 /* 80078090 00073ED0  81 83 00 84 */	lwz r12, 0x84(r3)
 /* 80078094 00073ED4  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 80078098 00073ED8  41 82 00 1C */	beq lbl_800780B4
@@ -56,8 +56,8 @@ lbl_80078088:
 /* 800780B0 00073EF0  4E 80 04 21 */	bctrl
 .global lbl_800780B4
 lbl_800780B4:
-/* 800780B4 00073EF4  3C 60 80 4F */	lis r3, lbl_804F5AB8@ha
-/* 800780B8 00073EF8  38 63 5A B8 */	addi r3, r3, lbl_804F5AB8@l
+/* 800780B4 00073EF4  3C 60 80 4F */	lis r3, bta_sys_cb@ha
+/* 800780B8 00073EF8  38 63 5A B8 */	addi r3, r3, bta_sys_cb@l
 /* 800780BC 00073EFC  81 83 00 88 */	lwz r12, 0x88(r3)
 /* 800780C0 00073F00  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 800780C4 00073F04  41 82 00 1C */	beq lbl_800780E0
@@ -76,13 +76,13 @@ lbl_800780E0:
 /* 800780F0 00073F30  7C 08 03 A6 */	mtlr r0
 /* 800780F4 00073F34  38 21 00 20 */	addi r1, r1, 0x20
 /* 800780F8 00073F38  4E 80 00 20 */	blr
-.global lbl_800780FC
-lbl_800780FC:
+.global bta_sys_conn_close
+bta_sys_conn_close:
 /* 800780FC 00073F3C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80078100 00073F40  7C 08 02 A6 */	mflr r0
-/* 80078104 00073F44  3C C0 80 4F */	lis r6, lbl_804F5AB8@ha
+/* 80078104 00073F44  3C C0 80 4F */	lis r6, bta_sys_cb@ha
 /* 80078108 00073F48  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8007810C 00073F4C  38 C6 5A B8 */	addi r6, r6, lbl_804F5AB8@l
+/* 8007810C 00073F4C  38 C6 5A B8 */	addi r6, r6, bta_sys_cb@l
 /* 80078110 00073F50  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80078114 00073F54  7C BF 2B 78 */	mr r31, r5
 /* 80078118 00073F58  93 C1 00 18 */	stw r30, 0x18(r1)
@@ -100,8 +100,8 @@ lbl_800780FC:
 /* 80078148 00073F88  4E 80 04 21 */	bctrl
 .global lbl_8007814C
 lbl_8007814C:
-/* 8007814C 00073F8C  3C 60 80 4F */	lis r3, lbl_804F5AB8@ha
-/* 80078150 00073F90  38 63 5A B8 */	addi r3, r3, lbl_804F5AB8@l
+/* 8007814C 00073F8C  3C 60 80 4F */	lis r3, bta_sys_cb@ha
+/* 80078150 00073F90  38 63 5A B8 */	addi r3, r3, bta_sys_cb@l
 /* 80078154 00073F94  81 83 00 84 */	lwz r12, 0x84(r3)
 /* 80078158 00073F98  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 8007815C 00073F9C  41 82 00 1C */	beq lbl_80078178
@@ -113,8 +113,8 @@ lbl_8007814C:
 /* 80078174 00073FB4  4E 80 04 21 */	bctrl
 .global lbl_80078178
 lbl_80078178:
-/* 80078178 00073FB8  3C 60 80 4F */	lis r3, lbl_804F5AB8@ha
-/* 8007817C 00073FBC  38 63 5A B8 */	addi r3, r3, lbl_804F5AB8@l
+/* 80078178 00073FB8  3C 60 80 4F */	lis r3, bta_sys_cb@ha
+/* 8007817C 00073FBC  38 63 5A B8 */	addi r3, r3, bta_sys_cb@l
 /* 80078180 00073FC0  81 83 00 88 */	lwz r12, 0x88(r3)
 /* 80078184 00073FC4  2C 0C 00 00 */	cmpwi r12, 0x0
 /* 80078188 00073FC8  41 82 00 1C */	beq lbl_800781A4
@@ -133,11 +133,11 @@ lbl_800781A4:
 /* 800781B4 00073FF4  7C 08 03 A6 */	mtlr r0
 /* 800781B8 00073FF8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800781BC 00073FFC  4E 80 00 20 */	blr
-.global lbl_800781C0
-lbl_800781C0:
-/* 800781C0 00074000  3C C0 80 4F */	lis r6, lbl_804F5AB8@ha
+.global bta_sys_sco_close
+bta_sys_sco_close:
+/* 800781C0 00074000  3C C0 80 4F */	lis r6, bta_sys_cb@ha
 /* 800781C4 00074004  7C 80 23 78 */	mr r0, r4
-/* 800781C8 00074008  38 C6 5A B8 */	addi r6, r6, lbl_804F5AB8@l
+/* 800781C8 00074008  38 C6 5A B8 */	addi r6, r6, bta_sys_cb@l
 /* 800781CC 0007400C  81 86 00 84 */	lwz r12, 0x84(r6)
 /* 800781D0 00074010  7C A6 2B 78 */	mr r6, r5
 /* 800781D4 00074014  2C 0C 00 00 */	cmpwi r12, 0x0
@@ -148,11 +148,11 @@ lbl_800781C0:
 /* 800781E8 00074028  7D 89 03 A6 */	mtctr r12
 /* 800781EC 0007402C  4E 80 04 20 */	bctr
 /* 800781F0 00074030  4E 80 00 20 */	blr
-.global lbl_800781F4
-lbl_800781F4:
-/* 800781F4 00074034  3C C0 80 4F */	lis r6, lbl_804F5AB8@ha
+.global bta_sys_idle
+bta_sys_idle:
+/* 800781F4 00074034  3C C0 80 4F */	lis r6, bta_sys_cb@ha
 /* 800781F8 00074038  7C 80 23 78 */	mr r0, r4
-/* 800781FC 0007403C  38 C6 5A B8 */	addi r6, r6, lbl_804F5AB8@l
+/* 800781FC 0007403C  38 C6 5A B8 */	addi r6, r6, bta_sys_cb@l
 /* 80078200 00074040  81 86 00 84 */	lwz r12, 0x84(r6)
 /* 80078204 00074044  7C A6 2B 78 */	mr r6, r5
 /* 80078208 00074048  2C 0C 00 00 */	cmpwi r12, 0x0
@@ -163,11 +163,11 @@ lbl_800781F4:
 /* 8007821C 0007405C  7D 89 03 A6 */	mtctr r12
 /* 80078220 00074060  4E 80 04 20 */	bctr
 /* 80078224 00074064  4E 80 00 20 */	blr
-.global lbl_80078228
-lbl_80078228:
-/* 80078228 00074068  3C C0 80 4F */	lis r6, lbl_804F5AB8@ha
+.global bta_sys_busy
+bta_sys_busy:
+/* 80078228 00074068  3C C0 80 4F */	lis r6, bta_sys_cb@ha
 /* 8007822C 0007406C  7C 80 23 78 */	mr r0, r4
-/* 80078230 00074070  38 C6 5A B8 */	addi r6, r6, lbl_804F5AB8@l
+/* 80078230 00074070  38 C6 5A B8 */	addi r6, r6, bta_sys_cb@l
 /* 80078234 00074074  81 86 00 84 */	lwz r12, 0x84(r6)
 /* 80078238 00074078  7C A6 2B 78 */	mr r6, r5
 /* 8007823C 0007407C  2C 0C 00 00 */	cmpwi r12, 0x0

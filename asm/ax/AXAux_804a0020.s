@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804A0020
-lbl_804A0020:
+.global __AXBufferAuxA
+__AXBufferAuxA:
 	.skip 0x4
 
 .global lbl_804A0024
@@ -61,10 +61,10 @@ lbl_804A006C:
 lbl_804A0070:
 	.skip 0x11B0
 
-.global lbl_804A1220
-lbl_804A1220:
+.global __AXBufferAuxB
+__AXBufferAuxB:
 	.skip 0x1200
 
-.global lbl_804A2420
-lbl_804A2420:
+.global __AXBufferAuxC
+__AXBufferAuxC:
 	.skip 0xD80

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80453420
-lbl_80453420:
+.global "@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@2"
+"@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -79,8 +79,8 @@ lbl_80453420:
 	.4byte 0x4F53494E
 	.4byte 0x47000000
 
-.global lbl_80453548
-lbl_80453548:
+.global "@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@1"
+"@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@1":
 
 	.4byte 0x6D656D6F
 	.4byte 0x72796D61
@@ -88,8 +88,8 @@ lbl_80453548:
 	.4byte 0x72746D70
 	.4byte 0x2E680000
 
-.global lbl_8045355C
-lbl_8045355C:
+.global "@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@0"
+"@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -104,8 +104,8 @@ lbl_8045355C:
 	.4byte 0x3D3D2030
 	.4byte 0
 
-.global lbl_8045358C
-lbl_8045358C:
+.global "@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv"
+"@STRING@GarbageCollection__Q34nw4r2ef13MemoryManagerFv":
 
 	.4byte 0x6D656D6F
 	.4byte 0x72796D61
@@ -113,8 +113,8 @@ lbl_8045358C:
 	.4byte 0x72746D70
 	.4byte 0x2E680000
 
-.global lbl_804535A0
-lbl_804535A0:
+.global "@STRING@ptr__Q34nw4r2ef10ResEmitterFv@0"
+"@STRING@ptr__Q34nw4r2ef10ResEmitterFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -130,8 +130,8 @@ lbl_804535A0:
 	.4byte 0x6F696E74
 	.4byte 0x65722E00
 
-.global lbl_804535D4
-lbl_804535D4:
+.global "@STRING@ptr__Q34nw4r2ef10ResEmitterFv"
+"@STRING@ptr__Q34nw4r2ef10ResEmitterFv":
 
 	.4byte 0x7265735F
 	.4byte 0x656D6974

@@ -1,256 +1,256 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420438
-lbl_80420438:
+.global "T_INFOS__Q43scn4step3map22@unnamed@KindUtil_cpp@"
+"T_INFOS__Q43scn4step3map22@unnamed@KindUtil_cpp@":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF20
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49156_8055BF28"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF20
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49157_8055BF30"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF20
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49158"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF20
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49159_8055BF40"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49157_8055BF30"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49158"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49159_8055BF40"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF50
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49161_8055BF50"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF58
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49162"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF48
-	.4byte lbl_8055BF60
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49163"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF68
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF68
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49157_8055BF30"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF68
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49158"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF68
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49159_8055BF40"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF70
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49156_8055BF28"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF70
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49157_8055BF30"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF70
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49158"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF70
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49159_8055BF40"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49157_8055BF30"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49158"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49159_8055BF40"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF50
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49161_8055BF50"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF78
-	.4byte lbl_8055BF58
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49162"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF80
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49167"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF88
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF88
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49157_8055BF30"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF88
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49158"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF88
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49159_8055BF40"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF90
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF90
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49157_8055BF30"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF90
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49158"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF90
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49159_8055BF40"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF98
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49156_8055BF28"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF98
-	.4byte lbl_8055BF30
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49157_8055BF30"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF98
-	.4byte lbl_8055BF38
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49158"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BF98
-	.4byte lbl_8055BF40
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49159_8055BF40"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BFA0
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49171"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BFA8
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49172"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BFB0
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49173"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_8055BFB8
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49174"
+	.4byte "@49156_8055BF28"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_804928C4
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49175"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_804928D0
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49176_804928D0"
+	.4byte "@49156_8055BF28"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_804928B8
-	.4byte lbl_804928DC
-	.4byte lbl_8055BF28
+	.4byte "@49154"
+	.4byte "@49177"
+	.4byte "@49156_8055BF28"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055BFC0
-	.4byte lbl_8055BFC8
-	.4byte lbl_8055BFD0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49180"
 	.4byte 0x00000001
 	.4byte 0
-	.4byte lbl_8055BFC0
-	.4byte lbl_8055BFC8
-	.4byte lbl_8055BFD8
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49181"
 	.4byte 0x00000002
 	.4byte 0
-	.4byte lbl_8055BFC0
-	.4byte lbl_8055BFC8
-	.4byte lbl_8055BFE0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49182"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055BFC0
-	.4byte lbl_8055BFE8
-	.4byte lbl_804928E8
+	.4byte "@49178_8055BFC0"
+	.4byte "@49183"
+	.4byte "@49184"
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055BFC0
-	.4byte lbl_804928F4
-	.4byte lbl_80492900
+	.4byte "@49178_8055BFC0"
+	.4byte "@49185"
+	.4byte "@49186"

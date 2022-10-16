@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415688
-lbl_80415688:
+.global "COLOR_TABLE__Q33scn14challengetitle19@unnamed@Flash_cpp@"
+"COLOR_TABLE__Q33scn14challengetitle19@unnamed@Flash_cpp@":
 
 	.4byte 0x000000FF
 	.4byte 0

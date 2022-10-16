@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80246E9C
-lbl_80246E9C:
+.global __ct__Q53scn4step4boss6common19StateJumpAttackDescFQ33hel4math7Vector2Q24gobj14MoveParamDecelQ24gobj13MoveParamFalli
+__ct__Q53scn4step4boss6common19StateJumpAttackDescFQ33hel4math7Vector2Q24gobj14MoveParamDecelQ24gobj13MoveParamFalli:
 /* 80246E9C 00242CDC  C0 04 00 00 */	lfs f0, 0x0(r4)
 /* 80246EA0 00242CE0  D0 03 00 00 */	stfs f0, 0x0(r3)
 /* 80246EA4 00242CE4  C0 04 00 04 */	lfs f0, 0x4(r4)

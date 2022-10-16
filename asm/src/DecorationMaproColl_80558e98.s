@@ -1,68 +1,68 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80558E98
-lbl_80558E98:
+.global "@53352_80558E98"
+"@53352_80558E98":
 
 	.4byte 0
 
-.global lbl_80558E9C
-lbl_80558E9C:
+.global "@53355_80558E9C"
+"@53355_80558E9C":
 
 	.4byte 0
 
-.global lbl_80558EA0
-lbl_80558EA0:
+.global "@58266"
+"@58266":
 
 	.4byte 0x25732530
 	.4byte 0x346C7500
 
-.global lbl_80558EA8
-lbl_80558EA8:
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0":
 
 	.4byte 0xFFFFFFFC
 
-.global lbl_80558EAC
-lbl_80558EAC:
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0":
 
 	.4byte 0xFFFFFFFC
 
-.global lbl_80558EB0
-lbl_80558EB0:
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0":
 
 	.4byte 0xFFFFFFFC
 
-.global lbl_80558EB4
-lbl_80558EB4:
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0":
 
 	.4byte 0xFFFFFFFC
 
-.global lbl_80558EB8
-lbl_80558EB8:
+.global __FUNCTION__$34959_80558EB8
+__FUNCTION__$34959_80558EB8:
 
 	.4byte 0x72656600
 
-.global lbl_80558EBC
-lbl_80558EBC:
+.global __FUNCTION__$32217
+__FUNCTION__$32217:
 
 	.4byte 0x72656600
 
-.global lbl_80558EC0
-lbl_80558EC0:
+.global __FUNCTION__$31454
+__FUNCTION__$31454:
 
 	.4byte 0x72656600
 
-.global lbl_80558EC4
-lbl_80558EC4:
+.global __FUNCTION__$31183
+__FUNCTION__$31183:
 
 	.4byte 0x72656600
 
-.global lbl_80558EC8
-lbl_80558EC8:
+.global __FUNCTION__$30538_80558EC8
+__FUNCTION__$30538_80558EC8:
 
 	.4byte 0x72656600
 
-.global lbl_80558ECC
-lbl_80558ECC:
+.global __FUNCTION__$30525_80558ECC
+__FUNCTION__$30525_80558ECC:
 
 	.4byte 0x72656600

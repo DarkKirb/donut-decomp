@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80115620
-lbl_80115620:
+.global ReadStrmInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader8StrmInfo
+ReadStrmInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader8StrmInfo:
 /* 80115620 00111460  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115624 00111464  7C 08 02 A6 */	mflr r0
 /* 80115628 00111468  80 A3 00 04 */	lwz r5, 0x4(r3)
@@ -11,7 +11,7 @@ lbl_80115620:
 /* 80115634 00111474  7C 9F 23 78 */	mr r31, r4
 /* 80115638 00111478  8C 65 00 08 */	lbzu r3, 0x8(r5)
 /* 8011563C 0011147C  80 85 00 04 */	lwz r4, 0x4(r5)
-/* 80115640 00111480  48 00 7A F1 */	bl lbl_8011D130
+/* 80115640 00111480  48 00 7A F1 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115644 00111484  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 80115648 00111488  2C 00 00 02 */	cmpwi r0, 0x2
 /* 8011564C 0011148C  41 82 00 18 */	beq lbl_80115664
@@ -81,8 +81,8 @@ lbl_80115680:
 /* 80115724 00111564  38 21 00 10 */	addi r1, r1, 0x10
 /* 80115728 00111568  4E 80 00 20 */	blr
 /* 8011572C 0011156C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115730
-lbl_80115730:
+.global ReadStrmTrackInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader13StrmTrackInfoi
+ReadStrmTrackInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader13StrmTrackInfoi:
 /* 80115730 00111570  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80115734 00111574  7C 08 02 A6 */	mflr r0
 /* 80115738 00111578  80 C3 00 04 */	lwz r6, 0x4(r3)
@@ -96,7 +96,7 @@ lbl_80115730:
 /* 80115758 00111598  7C 7D 1B 78 */	mr r29, r3
 /* 8011575C 0011159C  88 66 00 10 */	lbz r3, 0x10(r6)
 /* 80115760 001115A0  80 86 00 14 */	lwz r4, 0x14(r6)
-/* 80115764 001115A4  48 00 79 CD */	bl lbl_8011D130
+/* 80115764 001115A4  48 00 79 CD */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115768 001115A8  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 8011576C 001115AC  7C 1E 00 00 */	cmpw r30, r0
 /* 80115770 001115B0  41 80 00 0C */	blt lbl_8011577C
@@ -118,7 +118,7 @@ lbl_80115794:
 /* 801157A0 001115E0  38 A4 00 08 */	addi r5, r4, 0x8
 /* 801157A4 001115E4  88 66 00 04 */	lbz r3, 0x4(r6)
 /* 801157A8 001115E8  80 86 00 08 */	lwz r4, 0x8(r6)
-/* 801157AC 001115EC  48 00 79 85 */	bl lbl_8011D130
+/* 801157AC 001115EC  48 00 79 85 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 801157B0 001115F0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801157B4 001115F4  40 82 00 0C */	bne lbl_801157C0
 /* 801157B8 001115F8  38 60 00 00 */	li r3, 0x0
@@ -204,7 +204,7 @@ lbl_801158B4:
 /* 801158C0 00111700  38 A4 00 08 */	addi r5, r4, 0x8
 /* 801158C4 00111704  88 66 00 04 */	lbz r3, 0x4(r6)
 /* 801158C8 00111708  80 86 00 08 */	lwz r4, 0x8(r6)
-/* 801158CC 0011170C  48 00 78 65 */	bl lbl_8011D130
+/* 801158CC 0011170C  48 00 78 65 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 801158D0 00111710  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801158D4 00111714  40 82 00 0C */	bne lbl_801158E0
 /* 801158D8 00111718  38 60 00 00 */	li r3, 0x0
@@ -293,8 +293,8 @@ lbl_801159D4:
 /* 801159E4 00111824  7C 08 03 A6 */	mtlr r0
 /* 801159E8 00111828  38 21 00 20 */	addi r1, r1, 0x20
 /* 801159EC 0011182C  4E 80 00 20 */	blr
-.global lbl_801159F0
-lbl_801159F0:
+.global LoadFileHeader__Q44nw4r3snd6detail14StrmFileLoaderFPvUl
+LoadFileHeader__Q44nw4r3snd6detail14StrmFileLoaderFPvUl:
 /* 801159F0 00111830  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 801159F4 00111834  7C 08 02 A6 */	mflr r0
 /* 801159F8 00111838  90 01 00 84 */	stw r0, 0x84(r1)
@@ -418,7 +418,7 @@ lbl_80115B68:
 /* 80115B80 001119C0  38 A3 00 08 */	addi r5, r3, 0x8
 /* 80115B84 001119C4  88 63 00 08 */	lbz r3, 0x8(r3)
 /* 80115B88 001119C8  80 85 00 04 */	lwz r4, 0x4(r5)
-/* 80115B8C 001119CC  48 00 75 A5 */	bl lbl_8011D130
+/* 80115B8C 001119CC  48 00 75 A5 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 .global lbl_80115B90
 lbl_80115B90:
 /* 80115B90 001119D0  38 60 00 01 */	li r3, 0x1
@@ -435,8 +435,8 @@ lbl_80115B94:
 /* 80115BB4 001119F4  00 00 00 00 */	.4byte 0x00000000
 /* 80115BB8 001119F8  00 00 00 00 */	.4byte 0x00000000
 /* 80115BBC 001119FC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115BC0
-lbl_80115BC0:
+.global GetChannelCount__Q44nw4r3snd6detail14StrmFileLoaderCFv
+GetChannelCount__Q44nw4r3snd6detail14StrmFileLoaderCFv:
 /* 80115BC0 00111A00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115BC4 00111A04  7C 08 02 A6 */	mflr r0
 /* 80115BC8 00111A08  90 01 00 14 */	stw r0, 0x14(r1)
@@ -451,7 +451,7 @@ lbl_80115BE0:
 /* 80115BE4 00111A24  88 64 00 18 */	lbz r3, 0x18(r4)
 /* 80115BE8 00111A28  38 A4 00 08 */	addi r5, r4, 0x8
 /* 80115BEC 00111A2C  80 84 00 1C */	lwz r4, 0x1c(r4)
-/* 80115BF0 00111A30  48 00 75 41 */	bl lbl_8011D130
+/* 80115BF0 00111A30  48 00 75 41 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115BF4 00111A34  88 63 00 00 */	lbz r3, 0x0(r3)
 .global lbl_80115BF8
 lbl_80115BF8:
@@ -461,8 +461,8 @@ lbl_80115BF8:
 /* 80115C04 00111A44  4E 80 00 20 */	blr
 /* 80115C08 00111A48  00 00 00 00 */	.4byte 0x00000000
 /* 80115C0C 00111A4C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115C10
-lbl_80115C10:
+.global ReadStrmInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ54nw4r3snd6detail14StrmFileReader8StrmInfo
+ReadStrmInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ54nw4r3snd6detail14StrmFileReader8StrmInfo:
 /* 80115C10 00111A50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115C14 00111A54  7C 08 02 A6 */	mflr r0
 /* 80115C18 00111A58  90 01 00 14 */	stw r0, 0x14(r1)
@@ -474,7 +474,7 @@ lbl_80115C10:
 .global lbl_80115C30
 lbl_80115C30:
 /* 80115C30 00111A70  38 63 00 04 */	addi r3, r3, 0x4
-/* 80115C34 00111A74  4B FF F9 ED */	bl lbl_80115620
+/* 80115C34 00111A74  4B FF F9 ED */	bl ReadStrmInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader8StrmInfo
 /* 80115C38 00111A78  38 60 00 01 */	li r3, 0x1
 .global lbl_80115C3C
 lbl_80115C3C:
@@ -483,8 +483,8 @@ lbl_80115C3C:
 /* 80115C44 00111A84  38 21 00 10 */	addi r1, r1, 0x10
 /* 80115C48 00111A88  4E 80 00 20 */	blr
 /* 80115C4C 00111A8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115C50
-lbl_80115C50:
+.global ReadStrmTrackInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ54nw4r3snd6detail14StrmFileReader13StrmTrackInfoi
+ReadStrmTrackInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ54nw4r3snd6detail14StrmFileReader13StrmTrackInfoi:
 /* 80115C50 00111A90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115C54 00111A94  7C 08 02 A6 */	mflr r0
 /* 80115C58 00111A98  90 01 00 14 */	stw r0, 0x14(r1)
@@ -496,7 +496,7 @@ lbl_80115C50:
 .global lbl_80115C70
 lbl_80115C70:
 /* 80115C70 00111AB0  38 63 00 04 */	addi r3, r3, 0x4
-/* 80115C74 00111AB4  4B FF FA BD */	bl lbl_80115730
+/* 80115C74 00111AB4  4B FF FA BD */	bl ReadStrmTrackInfo__Q44nw4r3snd6detail14StrmFileReaderCFPQ54nw4r3snd6detail14StrmFileReader13StrmTrackInfoi
 /* 80115C78 00111AB8  38 60 00 01 */	li r3, 0x1
 .global lbl_80115C7C
 lbl_80115C7C:
@@ -505,8 +505,8 @@ lbl_80115C7C:
 /* 80115C84 00111AC4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80115C88 00111AC8  4E 80 00 20 */	blr
 /* 80115C8C 00111ACC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115C90
-lbl_80115C90:
+.global ReadAdpcmInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ34nw4r3snd10AdpcmParamPQ44nw4r3snd6detail14AdpcmLoopParami
+ReadAdpcmInfo__Q44nw4r3snd6detail14StrmFileLoaderCFPQ34nw4r3snd10AdpcmParamPQ44nw4r3snd6detail14AdpcmLoopParami:
 /* 80115C90 00111AD0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80115C94 00111AD4  7C 08 02 A6 */	mflr r0
 /* 80115C98 00111AD8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -528,7 +528,7 @@ lbl_80115CD0:
 /* 80115CD0 00111B10  80 A3 00 08 */	lwz r5, 0x8(r3)
 /* 80115CD4 00111B14  8C 65 00 08 */	lbzu r3, 0x8(r5)
 /* 80115CD8 00111B18  80 85 00 04 */	lwz r4, 0x4(r5)
-/* 80115CDC 00111B1C  48 00 74 55 */	bl lbl_8011D130
+/* 80115CDC 00111B1C  48 00 74 55 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115CE0 00111B20  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 80115CE4 00111B24  28 00 00 02 */	cmplwi r0, 0x2
 /* 80115CE8 00111B28  40 82 00 D0 */	bne lbl_80115DB8
@@ -536,7 +536,7 @@ lbl_80115CD0:
 /* 80115CF0 00111B30  88 64 00 18 */	lbz r3, 0x18(r4)
 /* 80115CF4 00111B34  38 A4 00 08 */	addi r5, r4, 0x8
 /* 80115CF8 00111B38  80 84 00 1C */	lwz r4, 0x1c(r4)
-/* 80115CFC 00111B3C  48 00 74 35 */	bl lbl_8011D130
+/* 80115CFC 00111B3C  48 00 74 35 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115D00 00111B40  88 03 00 00 */	lbz r0, 0x0(r3)
 /* 80115D04 00111B44  7C 1D 00 00 */	cmpw r29, r0
 /* 80115D08 00111B48  40 80 00 B0 */	bge lbl_80115DB8
@@ -546,13 +546,13 @@ lbl_80115CD0:
 /* 80115D18 00111B58  38 A4 00 08 */	addi r5, r4, 0x8
 /* 80115D1C 00111B5C  88 66 00 04 */	lbz r3, 0x4(r6)
 /* 80115D20 00111B60  80 86 00 08 */	lwz r4, 0x8(r6)
-/* 80115D24 00111B64  48 00 74 0D */	bl lbl_8011D130
+/* 80115D24 00111B64  48 00 74 0D */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115D28 00111B68  7C 64 1B 78 */	mr r4, r3
 /* 80115D2C 00111B6C  80 BC 00 08 */	lwz r5, 0x8(r28)
 /* 80115D30 00111B70  88 63 00 00 */	lbz r3, 0x0(r3)
 /* 80115D34 00111B74  80 84 00 04 */	lwz r4, 0x4(r4)
 /* 80115D38 00111B78  38 A5 00 08 */	addi r5, r5, 0x8
-/* 80115D3C 00111B7C  48 00 73 F5 */	bl lbl_8011D130
+/* 80115D3C 00111B7C  48 00 73 F5 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80115D40 00111B80  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 80115D44 00111B84  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 80115D48 00111B88  90 1E 00 04 */	stw r0, 0x4(r30)
@@ -597,8 +597,8 @@ lbl_80115DBC:
 /* 80115DD4 00111C14  38 21 00 20 */	addi r1, r1, 0x20
 /* 80115DD8 00111C18  4E 80 00 20 */	blr
 /* 80115DDC 00111C1C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80115DE0
-lbl_80115DE0:
+.global ReadAdpcBlockData__Q44nw4r3snd6detail14StrmFileLoaderFPUsPUsii
+ReadAdpcBlockData__Q44nw4r3snd6detail14StrmFileLoaderFPUsPUsii:
 /* 80115DE0 00111C20  54 2B 06 FE */	clrlwi r11, r1, 27
 /* 80115DE4 00111C24  7C 2C 0B 78 */	mr r12, r1
 /* 80115DE8 00111C28  21 6B FF A0 */	subfic r11, r11, -0x60

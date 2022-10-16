@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80408150
-lbl_80408150:
+.global rfc_crctable
+rfc_crctable:
 
 	.4byte 0x0091E372
 	.4byte 0x0796E475

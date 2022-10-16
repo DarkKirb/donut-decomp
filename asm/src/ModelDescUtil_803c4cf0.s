@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803C4CF0
-lbl_803C4CF0:
+.global Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 803C4CF0 003C0B30  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 803C4CF4 003C0B34  7C 08 02 A6 */	mflr r0
 /* 803C4CF8 003C0B38  90 01 00 74 */	stw r0, 0x74(r1)
@@ -29,7 +29,7 @@ lbl_803C4D38:
 /* 803C4D44 003C0B84  38 61 00 08 */	addi r3, r1, 0x8
 /* 803C4D48 003C0B88  7C E4 3B 78 */	mr r4, r7
 /* 803C4D4C 003C0B8C  38 A0 00 18 */	li r5, 0x18
-/* 803C4D50 003C0B90  4B DD 8C 6D */	bl lbl_8019D9BC
+/* 803C4D50 003C0B90  4B DD 8C 6D */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 803C4D54 003C0B94  38 B8 00 14 */	addi r5, r24, 0x14
 /* 803C4D58 003C0B98  38 81 00 04 */	addi r4, r1, 0x4
 /* 803C4D5C 003C0B9C  38 00 00 03 */	li r0, 0x3
@@ -53,7 +53,7 @@ lbl_803C4D88:
 /* 803C4D94 003C0BD4  38 61 00 20 */	addi r3, r1, 0x20
 /* 803C4D98 003C0BD8  7F 64 DB 78 */	mr r4, r27
 /* 803C4D9C 003C0BDC  38 A0 00 28 */	li r5, 0x28
-/* 803C4DA0 003C0BE0  4B DD 8C 1D */	bl lbl_8019D9BC
+/* 803C4DA0 003C0BE0  4B DD 8C 1D */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 803C4DA4 003C0BE4  38 B8 00 2C */	addi r5, r24, 0x2c
 /* 803C4DA8 003C0BE8  38 81 00 1C */	addi r4, r1, 0x1c
 /* 803C4DAC 003C0BEC  38 00 00 05 */	li r0, 0x5
@@ -72,14 +72,14 @@ lbl_803C4DB4:
 /* 803C4DD8 003C0C18  98 78 00 65 */	stb r3, 0x65(r24)
 /* 803C4DDC 003C0C1C  38 60 00 01 */	li r3, 0x1
 /* 803C4DE0 003C0C20  90 78 00 68 */	stw r3, 0x68(r24)
-/* 803C4DE4 003C0C24  38 0D D9 5C */	addi r0, r13, lbl_8055BD7C@sda21
+/* 803C4DE4 003C0C24  38 0D D9 5C */	addi r0, r13, "@LOCAL@Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry@NODE_NAMES"@sda21
 /* 803C4DE8 003C0C28  90 18 00 6C */	stw r0, 0x6c(r24)
 /* 803C4DEC 003C0C2C  90 79 00 00 */	stw r3, 0x0(r25)
 /* 803C4DF0 003C0C30  93 99 00 04 */	stw r28, 0x4(r25)
 /* 803C4DF4 003C0C34  93 B9 00 08 */	stw r29, 0x8(r25)
 /* 803C4DF8 003C0C38  93 38 00 70 */	stw r25, 0x70(r24)
-/* 803C4DFC 003C0C3C  3C 60 80 49 */	lis r3, lbl_80491ED8@ha
-/* 803C4E00 003C0C40  38 03 1E D8 */	addi r0, r3, lbl_80491ED8@l
+/* 803C4DFC 003C0C3C  3C 60 80 49 */	lis r3, "@50281_80491ED8"@ha
+/* 803C4E00 003C0C40  38 03 1E D8 */	addi r0, r3, "@50281_80491ED8"@l
 /* 803C4E04 003C0C44  90 1A 00 00 */	stw r0, 0x0(r26)
 /* 803C4E08 003C0C48  93 DA 00 04 */	stw r30, 0x4(r26)
 /* 803C4E0C 003C0C4C  93 FA 00 08 */	stw r31, 0x8(r26)

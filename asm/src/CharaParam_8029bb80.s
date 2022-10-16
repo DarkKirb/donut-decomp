@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8029BB80
-lbl_8029BB80:
+.global Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv
+Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv:
 /* 8029BB80 002979C0  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 8029BB84 002979C4  7C 08 02 A6 */	mflr r0
 /* 8029BB88 002979C8  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 8029BB8C 002979CC  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 8029BB90 002979D0  7C 7F 1B 78 */	mr r31, r3
 /* 8029BB94 002979D4  38 61 00 08 */	addi r3, r1, 0x8
-/* 8029BB98 002979D8  4B FF 5B B5 */	bl lbl_8029174C
+/* 8029BB98 002979D8  4B FF 5B B5 */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 8029BB9C 002979DC  38 A1 00 54 */	addi r5, r1, 0x54
 /* 8029BBA0 002979E0  38 81 00 04 */	addi r4, r1, 0x4
 /* 8029BBA4 002979E4  38 00 00 0A */	li r0, 0xa
@@ -25,7 +25,7 @@ lbl_8029BBAC:
 /* 8029BBC4 00297A04  90 01 00 6C */	stw r0, 0x6c(r1)
 /* 8029BBC8 00297A08  38 00 00 00 */	li r0, 0x0
 /* 8029BBCC 00297A0C  98 01 00 9F */	stb r0, 0x9f(r1)
-/* 8029BBD0 00297A10  C0 02 B3 90 */	lfs f0, lbl_80561310@sda21(r2)
+/* 8029BBD0 00297A10  C0 02 B3 90 */	lfs f0, "@48778_80561310"@sda21(r2)
 /* 8029BBD4 00297A14  D0 01 00 84 */	stfs f0, 0x84(r1)
 /* 8029BBD8 00297A18  98 01 00 9E */	stb r0, 0x9e(r1)
 /* 8029BBDC 00297A1C  38 BF FF FC */	addi r5, r31, -0x4

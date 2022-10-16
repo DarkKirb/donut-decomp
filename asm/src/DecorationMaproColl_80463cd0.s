@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80463CD0
-lbl_80463CD0:
+.global "@STRING@GetClassName__Q34nw4r3g3d9ResVtxPosFv"
+"@STRING@GetClassName__Q34nw4r3g3d9ResVtxPosFv":
 
 	.4byte 0x52657356
 	.4byte 0x7478506F
 	.4byte 0x73000000
 
-.global lbl_80463CDC
-lbl_80463CDC:
+.global "@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv@0"
+"@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -19,16 +19,16 @@ lbl_80463CDC:
 	.4byte 0x616C6964
 	.4byte 0x2E000000
 
-.global lbl_80463CF8
-lbl_80463CF8:
+.global "@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv"
+"@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x72657376
 	.4byte 0x74785F61
 	.4byte 0x632E6800
 
-.global lbl_80463D08
-lbl_80463D08:
+.global "@STRING@ref__Q34nw4r3g3d6ResMdlFv@0"
+"@STRING@ref__Q34nw4r3g3d6ResMdlFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -39,16 +39,16 @@ lbl_80463D08:
 	.4byte 0x2E000000
 	.4byte 0
 
-.global lbl_80463D28
-lbl_80463D28:
+.global "@STRING@ref__Q34nw4r3g3d6ResMdlFv"
+"@STRING@ref__Q34nw4r3g3d6ResMdlFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736D
 	.4byte 0x646C5F61
 	.4byte 0x632E6800
 
-.global lbl_80463D38
-lbl_80463D38:
+.global "@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv@0"
+"@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -61,23 +61,23 @@ lbl_80463D38:
 	.4byte 0x20307833
 	.4byte 0x29000000
 
-.global lbl_80463D60
-lbl_80463D60:
+.global "@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv"
+"@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736D
 	.4byte 0x646C5F61
 	.4byte 0x632E6800
 
-.global lbl_80463D70
-lbl_80463D70:
+.global "@STRING@GetClassName__Q34nw4r3g3d10ResMdlInfoFv"
+"@STRING@GetClassName__Q34nw4r3g3d10ResMdlInfoFv":
 
 	.4byte 0x5265734D
 	.4byte 0x646C496E
 	.4byte 0x666F0000
 
-.global lbl_80463D7C
-lbl_80463D7C:
+.global "@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv@0"
+"@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -87,8 +87,8 @@ lbl_80463D7C:
 	.4byte 0x616C6964
 	.4byte 0x2E000000
 
-.global lbl_80463D98
-lbl_80463D98:
+.global "@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv"
+"@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736D

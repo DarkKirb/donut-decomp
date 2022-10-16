@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8040429C
-lbl_8040429C:
+.global init__Q27storage10BackupDataFv
+init__Q27storage10BackupDataFv:
 /* 8040429C 004000DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 804042A0 004000E0  7C 08 02 A6 */	mflr r0
 /* 804042A4 004000E4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -11,14 +11,14 @@ lbl_8040429C:
 /* 804042B0 004000F0  7C 7D 1B 78 */	mr r29, r3
 /* 804042B4 004000F4  38 80 00 00 */	li r4, 0x0
 /* 804042B8 004000F8  38 A0 07 D8 */	li r5, 0x7d8
-/* 804042BC 004000FC  4B C0 00 95 */	bl func_80004350
+/* 804042BC 004000FC  4B C0 00 95 */	bl memset
 /* 804042C0 00400100  3B C0 00 00 */	li r30, 0x0
 /* 804042C4 00400104  3B E0 00 00 */	li r31, 0x0
 .global lbl_804042C8
 lbl_804042C8:
 /* 804042C8 00400108  7C 7D FA 14 */	add r3, r29, r31
 /* 804042CC 0040010C  38 63 00 04 */	addi r3, r3, 0x4
-/* 804042D0 00400110  48 00 00 2D */	bl lbl_804042FC
+/* 804042D0 00400110  48 00 00 2D */	bl init__Q27storage15BackupFileData2Fv
 /* 804042D4 00400114  3B DE 00 01 */	addi r30, r30, 0x1
 /* 804042D8 00400118  3B FF 02 9C */	addi r31, r31, 0x29c
 /* 804042DC 0040011C  28 1E 00 03 */	cmplwi r30, 0x3

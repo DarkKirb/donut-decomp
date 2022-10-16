@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80193CC8
-lbl_80193CC8:
-/* 80193CC8 0018FB08  38 6D 89 C0 */	addi r3, r13, lbl_80556DE0@sda21
+.global DefaultEntryName__Q23g3d15ResModelContextFv
+DefaultEntryName__Q23g3d15ResModelContextFv:
+/* 80193CC8 0018FB08  38 6D 89 C0 */	addi r3, r13, "@49029_80556DE0"@sda21
 /* 80193CCC 0018FB0C  4E 80 00 20 */	blr
-.global lbl_80193CD0
-lbl_80193CD0:
+.global __ct__Q23g3d15ResModelContextFRCQ23g3d15ResFileAccessorPCc
+__ct__Q23g3d15ResModelContextFRCQ23g3d15ResFileAccessorPCc:
 /* 80193CD0 0018FB10  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80193CD4 0018FB14  7C 08 02 A6 */	mflr r0
 /* 80193CD8 0018FB18  90 01 00 44 */	stw r0, 0x44(r1)
@@ -15,9 +15,9 @@ lbl_80193CD0:
 /* 80193CE4 0018FB24  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 80193CE8 0018FB28  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80193CEC 0018FB2C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80193CF0 0018FB30  38 8D 89 C8 */	addi r4, r13, lbl_80556DE8@sda21
+/* 80193CF0 0018FB30  38 8D 89 C8 */	addi r4, r13, "@49041_80556DE8"@sda21
 /* 80193CF4 0018FB34  4C C6 31 82 */	crclr 4*cr1+eq
-/* 80193CF8 0018FB38  4B FE E3 75 */	bl lbl_8018206C
+/* 80193CF8 0018FB38  4B FE E3 75 */	bl "FromFormat__Q33hel6common19FixedStringIN<c,40>FPCce"
 /* 80193CFC 0018FB3C  7F E5 FB 78 */	mr r5, r31
 /* 80193D00 0018FB40  38 81 00 04 */	addi r4, r1, 0x4
 /* 80193D04 0018FB44  38 00 00 05 */	li r0, 0x5

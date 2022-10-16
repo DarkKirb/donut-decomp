@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442110
-lbl_80442110:
+.global "@10410"
+"@10410":
 
 	.4byte 0x23253038
 	.4byte 0x785B2564
@@ -15,8 +15,8 @@ lbl_80442110:
 	.4byte 0x203D2025
 	.4byte 0x640A0000
 
-.global lbl_80442138
-lbl_80442138:
+.global "@10414_80442138"
+"@10414_80442138":
 
 	.4byte lbl_8010A5B8
 	.4byte lbl_8010AE94
@@ -145,10 +145,10 @@ lbl_80442138:
 	.4byte lbl_8010AAB8
 	.4byte 0
 
-.global lbl_80442330
-lbl_80442330:
+.global __vt__Q44nw4r3snd6detail9MmlParser
+__vt__Q44nw4r3snd6detail9MmlParser:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8010A530
-	.4byte lbl_8010AEB0
+	.4byte CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll
+	.4byte NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb

@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802079F4
-lbl_802079F4:
+.global __ct__Q33scn7history10ControllerFv
+__ct__Q33scn7history10ControllerFv:
 /* 802079F4 00203834  38 00 00 00 */	li r0, 0x0
 /* 802079F8 00203838  90 03 00 00 */	stw r0, 0x0(r3)
 /* 802079FC 0020383C  98 03 00 04 */	stb r0, 0x4(r3)
 /* 80207A00 00203840  98 03 00 05 */	stb r0, 0x5(r3)
 /* 80207A04 00203844  4E 80 00 20 */	blr
-.global lbl_80207A08
-lbl_80207A08:
+.global update__Q33scn7history10ControllerFbbUl
+update__Q33scn7history10ControllerFbbUl:
 /* 80207A08 00203848  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80207A0C 0020384C  7C 08 02 A6 */	mflr r0
 /* 80207A10 00203850  90 01 00 14 */	stw r0, 0x14(r1)
@@ -42,7 +42,7 @@ lbl_80207A60:
 /* 80207A6C 002038AC  41 82 00 1C */	beq lbl_80207A88
 /* 80207A70 002038B0  2C 06 00 00 */	cmpwi r6, 0x0
 /* 80207A74 002038B4  41 82 00 14 */	beq lbl_80207A88
-/* 80207A78 002038B8  4B FF FA 01 */	bl lbl_80207478
+/* 80207A78 002038B8  4B FF FA 01 */	bl YearCount__Q33scn7history10ChronologyFv
 /* 80207A7C 002038BC  38 03 FF FF */	addi r0, r3, -0x1
 /* 80207A80 002038C0  7C 1F 00 40 */	cmplw r31, r0
 /* 80207A84 002038C4  40 82 00 14 */	bne lbl_80207A98

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801B7904
-lbl_801B7904:
+.global __ct__Q35mcoll6detail16LandGatherOptionFv
+__ct__Q35mcoll6detail16LandGatherOptionFv:
 /* 801B7904 001B3744  38 00 00 00 */	li r0, 0x0
 /* 801B7908 001B3748  98 03 00 00 */	stb r0, 0x0(r3)
 /* 801B790C 001B374C  98 03 00 01 */	stb r0, 0x1(r3)

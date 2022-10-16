@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80195854
-lbl_80195854:
+.global __dt__Q23gfx10TPLTextureFv
+__dt__Q23gfx10TPLTextureFv:
 /* 80195854 00191694  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80195858 00191698  7C 08 02 A6 */	mflr r0
 /* 8019585C 0019169C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -14,15 +14,15 @@ lbl_80195854:
 /* 80195874 001916B4  41 82 00 30 */	beq lbl_801958A4
 /* 80195878 001916B8  38 63 00 24 */	addi r3, r3, 0x24
 /* 8019587C 001916BC  38 80 FF FF */	li r4, -0x1
-/* 80195880 001916C0  48 00 00 45 */	bl lbl_801958C4
+/* 80195880 001916C0  48 00 00 45 */	bl "__dt__Q24util35PlacementNew<Q24file12FileAccessor>Fv"
 /* 80195884 001916C4  7F C3 F3 78 */	mr r3, r30
 /* 80195888 001916C8  38 80 00 00 */	li r4, 0x0
-/* 8019588C 001916CC  48 00 00 35 */	bl lbl_801958C0
+/* 8019588C 001916CC  48 00 00 35 */	bl __dt__Q23gfx10TextureObjFv
 /* 80195890 001916D0  7F E0 07 34 */	extsh r0, r31
 /* 80195894 001916D4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80195898 001916D8  40 81 00 0C */	ble lbl_801958A4
 /* 8019589C 001916DC  7F C3 F3 78 */	mr r3, r30
-/* 801958A0 001916E0  48 02 9E 75 */	bl lbl_801BF714
+/* 801958A0 001916E0  48 02 9E 75 */	bl __dl__FPv
 .global lbl_801958A4
 lbl_801958A4:
 /* 801958A4 001916E4  7F C3 F3 78 */	mr r3, r30
@@ -33,11 +33,11 @@ lbl_801958A4:
 /* 801958B8 001916F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801958BC 001916FC  4E 80 00 20 */	blr
 
-.global lbl_801958C0
-lbl_801958C0:
-/* 801958C0 00191700  4B FE 02 A8 */	b lbl_80175B68
-.global lbl_801958C4
-lbl_801958C4:
+.global __dt__Q23gfx10TextureObjFv
+__dt__Q23gfx10TextureObjFv:
+/* 801958C0 00191700  4B FE 02 A8 */	b __dt__Q23scn6ISceneFv
+.global "__dt__Q24util35PlacementNew<Q24file12FileAccessor>Fv"
+"__dt__Q24util35PlacementNew<Q24file12FileAccessor>Fv":
 /* 801958C4 00191704  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801958C8 00191708  7C 08 02 A6 */	mflr r0
 /* 801958CC 0019170C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -51,7 +51,7 @@ lbl_801958C4:
 /* 801958EC 0019172C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801958F0 00191730  41 82 00 14 */	beq lbl_80195904
 /* 801958F4 00191734  38 80 FF FF */	li r4, -0x1
-/* 801958F8 00191738  4B FD F7 0D */	bl lbl_80175004
+/* 801958F8 00191738  4B FD F7 0D */	bl "__dt__Q33hel6common31ExplicitSingleton<Q23app5Reset>Fv"
 /* 801958FC 0019173C  38 00 00 00 */	li r0, 0x0
 /* 80195900 00191740  90 1E 00 00 */	stw r0, 0x0(r30)
 .global lbl_80195904
@@ -60,7 +60,7 @@ lbl_80195904:
 /* 80195908 00191748  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8019590C 0019174C  40 81 00 0C */	ble lbl_80195918
 /* 80195910 00191750  7F C3 F3 78 */	mr r3, r30
-/* 80195914 00191754  48 02 9E 01 */	bl lbl_801BF714
+/* 80195914 00191754  48 02 9E 01 */	bl __dl__FPv
 .global lbl_80195918
 lbl_80195918:
 /* 80195918 00191758  7F C3 F3 78 */	mr r3, r30

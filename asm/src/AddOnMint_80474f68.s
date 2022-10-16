@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80474F68
-lbl_80474F68:
+.global "@55979_80474F68"
+"@55979_80474F68":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -41,13 +41,13 @@ lbl_80474F68:
 	.4byte 0x28290000
 	.4byte 0
 
-.global lbl_80474FF8
-lbl_80474FF8:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5cappy11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5cappy11StateAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802A2404
-	.4byte lbl_802A23E8
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5cappy11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5cappy11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

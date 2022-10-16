@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80494D58
-lbl_80494D58:
+.global __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion
+__vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803EB974
-	.4byte lbl_803EB978
-	.4byte lbl_803EB9D0
-	.4byte lbl_803D895C
-	.4byte lbl_803EB9D4
-	.4byte lbl_803EB9D8
+	.4byte __dt__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procAnim__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procMove__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procObjCollReact__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv

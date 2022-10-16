@@ -1,40 +1,40 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80441320
-lbl_80441320:
+.global __vt__Q34nw4r3lyt7TextBox
+__vt__Q34nw4r3lyt7TextBox:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800F5630
-	.4byte lbl_800F6A90
-	.4byte lbl_800F30D0
-	.4byte lbl_800F33D0
-	.4byte lbl_800F58D0
-	.4byte lbl_800F3470
-	.4byte lbl_800F3500
-	.4byte lbl_800F57D0
-	.4byte lbl_800F57F0
-	.4byte lbl_800F2EC0
-	.4byte lbl_800F2EF0
-	.4byte lbl_800F5830
-	.4byte lbl_800F5850
-	.4byte lbl_800F2F40
-	.4byte lbl_800F3000
-	.4byte lbl_800F35C0
-	.4byte lbl_800F35E0
-	.4byte lbl_800F3670
-	.4byte lbl_800F3690
-	.4byte lbl_800F3730
-	.4byte lbl_800F3740
-	.4byte lbl_800F3750
-	.4byte lbl_800F3850
-	.4byte lbl_800F3A80
-	.4byte lbl_800F3AA0
-	.4byte lbl_800F3AB0
-	.4byte lbl_800F6570
-	.4byte lbl_800F6280
-	.4byte lbl_800F6350
-	.4byte lbl_800F63A0
-	.4byte lbl_800F6480
+	.4byte __dt__Q34nw4r3lyt7TextBoxFv
+	.4byte GetRuntimeTypeInfo__Q34nw4r3lyt7TextBoxCFv
+	.4byte CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte DrawSelf__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo
+	.4byte Animate__Q34nw4r3lyt4PaneFUl
+	.4byte AnimateSelf__Q34nw4r3lyt4PaneFUl
+	.4byte GetVtxColor__Q34nw4r3lyt7TextBoxCFUl
+	.4byte SetVtxColor__Q34nw4r3lyt7TextBoxFUlQ34nw4r2ut5Color
+	.4byte GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.4byte SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.4byte GetVtxColorElement__Q34nw4r3lyt7TextBoxCFUl
+	.4byte SetVtxColorElement__Q34nw4r3lyt7TextBoxFUlUc
+	.4byte FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte FindMaterialByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.4byte UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.4byte UnbindAnimationSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.4byte GetMaterialNum__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFUl
+	.4byte LoadMtx__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo
+	.4byte AllocStringBuffer__Q34nw4r3lyt7TextBoxFUs
+	.4byte FreeStringBuffer__Q34nw4r3lyt7TextBoxFv
+	.4byte SetString__Q34nw4r3lyt7TextBoxFPCwUs
+	.4byte SetString__Q34nw4r3lyt7TextBoxFPCwUsUs
 	.4byte 0

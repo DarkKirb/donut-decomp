@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803558A0
-lbl_803558A0:
+.global __ct__Q43scn4step4hero12StateCheckerFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero12StateCheckerFRQ43scn4step4hero4Hero:
 /* 803558A0 003516E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803558A4 003516E4  7C 08 02 A6 */	mflr r0
 /* 803558A8 003516E8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -10,7 +10,7 @@ lbl_803558A0:
 /* 803558B0 003516F0  7C 7F 1B 78 */	mr r31, r3
 /* 803558B4 003516F4  90 83 00 00 */	stw r4, 0x0(r3)
 /* 803558B8 003516F8  7C 83 23 78 */	mr r3, r4
-/* 803558BC 003516FC  4B D1 FE 75 */	bl lbl_80075730
+/* 803558BC 003516FC  4B D1 FE 75 */	bl GKI_getfirst
 /* 803558C0 00351700  90 7F 00 04 */	stw r3, 0x4(r31)
 /* 803558C4 00351704  38 00 00 00 */	li r0, 0x0
 /* 803558C8 00351708  98 1F 00 08 */	stb r0, 0x8(r31)
@@ -34,7 +34,7 @@ lbl_803558A0:
 /* 80355910 00351750  98 1F 00 20 */	stb r0, 0x20(r31)
 /* 80355914 00351754  98 1F 00 21 */	stb r0, 0x21(r31)
 /* 80355918 00351758  98 1F 00 22 */	stb r0, 0x22(r31)
-/* 8035591C 0035175C  C0 02 CF 18 */	lfs f0, lbl_80562E98@sda21(r2)
+/* 8035591C 0035175C  C0 02 CF 18 */	lfs f0, "@51026"@sda21(r2)
 /* 80355920 00351760  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 80355924 00351764  D0 1F 00 28 */	stfs f0, 0x28(r31)
 /* 80355928 00351768  D0 1F 00 24 */	stfs f0, 0x24(r31)
@@ -72,8 +72,8 @@ lbl_803558A0:
 /* 803559A8 003517E8  7C 08 03 A6 */	mtlr r0
 /* 803559AC 003517EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803559B0 003517F0  4E 80 00 20 */	blr
-.global lbl_803559B4
-lbl_803559B4:
+.global update__Q43scn4step4hero12StateCheckerFv
+update__Q43scn4step4hero12StateCheckerFv:
 /* 803559B4 003517F4  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 803559B8 003517F8  2C 04 00 00 */	cmpwi r4, 0x0
 /* 803559BC 003517FC  41 82 00 0C */	beq lbl_803559C8
@@ -101,15 +101,15 @@ lbl_803559F0:
 /* 803559FC 0035183C  38 04 FF FF */	addi r0, r4, -0x1
 /* 80355A00 00351840  90 03 00 50 */	stw r0, 0x50(r3)
 /* 80355A04 00351844  4E 80 00 20 */	blr
-.global lbl_80355A08
-lbl_80355A08:
+.global clearSpecialTrigger__Q43scn4step4hero12StateCheckerFv
+clearSpecialTrigger__Q43scn4step4hero12StateCheckerFv:
 /* 80355A08 00351848  38 00 00 00 */	li r0, 0x0
 /* 80355A0C 0035184C  98 03 00 19 */	stb r0, 0x19(r3)
 /* 80355A10 00351850  98 03 00 1A */	stb r0, 0x1a(r3)
 /* 80355A14 00351854  98 03 00 3A */	stb r0, 0x3a(r3)
 /* 80355A18 00351858  4E 80 00 20 */	blr
-.global lbl_80355A1C
-lbl_80355A1C:
+.global setForbidWarpStar__Q43scn4step4hero12StateCheckerFv
+setForbidWarpStar__Q43scn4step4hero12StateCheckerFv:
 /* 80355A1C 0035185C  38 00 00 32 */	li r0, 0x32
 /* 80355A20 00351860  90 03 00 48 */	stw r0, 0x48(r3)
 /* 80355A24 00351864  4E 80 00 20 */	blr

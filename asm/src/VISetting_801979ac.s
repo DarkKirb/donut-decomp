@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801979AC
-lbl_801979AC:
+.global __ct__Q23gfx9VISettingFv
+__ct__Q23gfx9VISettingFv:
 /* 801979AC 001937EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801979B0 001937F0  7C 08 02 A6 */	mflr r0
 /* 801979B4 001937F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -16,17 +16,17 @@ lbl_801979AC:
 /* 801979D4 00193814  90 03 00 0C */	stw r0, 0xc(r3)
 /* 801979D8 00193818  38 00 00 01 */	li r0, 0x1
 /* 801979DC 0019381C  98 03 00 10 */	stb r0, 0x10(r3)
-/* 801979E0 00193820  90 6D ED 08 */	stw r3, lbl_8055D128@sda21(r13)
+/* 801979E0 00193820  90 6D ED 08 */	stw r3, "object___Q33hel6common35ExplicitSingleton<Q23gfx9VISetting>"@sda21(r13)
 /* 801979E4 00193824  38 80 00 0E */	li r4, 0xe
-/* 801979E8 00193828  48 00 01 A9 */	bl lbl_80197B90
+/* 801979E8 00193828  48 00 01 A9 */	bl set__Q23gfx9VISettingFUl
 /* 801979EC 0019382C  7F E3 FB 78 */	mr r3, r31
 /* 801979F0 00193830  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801979F4 00193834  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801979F8 00193838  7C 08 03 A6 */	mtlr r0
 /* 801979FC 0019383C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80197A00 00193840  4E 80 00 20 */	blr
-.global lbl_80197A04
-lbl_80197A04:
+.global __dt__Q23gfx9VISettingFv
+__dt__Q23gfx9VISettingFv:
 /* 80197A04 00193844  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80197A08 00193848  7C 08 02 A6 */	mflr r0
 /* 80197A0C 0019384C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -37,14 +37,14 @@ lbl_80197A04:
 /* 80197A20 00193860  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80197A24 00193864  41 82 00 28 */	beq lbl_80197A4C
 /* 80197A28 00193868  38 00 00 00 */	li r0, 0x0
-/* 80197A2C 0019386C  90 0D ED 08 */	stw r0, lbl_8055D128@sda21(r13)
+/* 80197A2C 0019386C  90 0D ED 08 */	stw r0, "object___Q33hel6common35ExplicitSingleton<Q23gfx9VISetting>"@sda21(r13)
 /* 80197A30 00193870  38 80 00 00 */	li r4, 0x0
-/* 80197A34 00193874  4B FD D5 D1 */	bl lbl_80175004
+/* 80197A34 00193874  4B FD D5 D1 */	bl "__dt__Q33hel6common31ExplicitSingleton<Q23app5Reset>Fv"
 /* 80197A38 00193878  7F E0 07 34 */	extsh r0, r31
 /* 80197A3C 0019387C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80197A40 00193880  40 81 00 0C */	ble lbl_80197A4C
 /* 80197A44 00193884  7F C3 F3 78 */	mr r3, r30
-/* 80197A48 00193888  48 02 7C CD */	bl lbl_801BF714
+/* 80197A48 00193888  48 02 7C CD */	bl __dl__FPv
 .global lbl_80197A4C
 lbl_80197A4C:
 /* 80197A4C 0019388C  7F C3 F3 78 */	mr r3, r30
@@ -54,35 +54,35 @@ lbl_80197A4C:
 /* 80197A5C 0019389C  7C 08 03 A6 */	mtlr r0
 /* 80197A60 001938A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80197A64 001938A4  4E 80 00 20 */	blr
-.global lbl_80197A68
-lbl_80197A68:
+.global recommendRenderModeNo__Q23gfx9VISettingCFv
+recommendRenderModeNo__Q23gfx9VISettingCFv:
 /* 80197A68 001938A8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80197A6C 001938AC  7C 08 02 A6 */	mflr r0
 /* 80197A70 001938B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80197A74 001938B4  39 61 00 20 */	addi r11, r1, 0x20
 /* 80197A78 001938B8  4B E6 F8 C9 */	bl lbl_80007340
-/* 80197A7C 001938BC  4B E9 65 95 */	bl lbl_8002E010
+/* 80197A7C 001938BC  4B E9 65 95 */	bl VIGetTvFormat
 /* 80197A80 001938C0  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80197A84
 lbl_80197A84:
-/* 80197A84 001938C4  4B EB 3A 4D */	bl lbl_8004B4D0
+/* 80197A84 001938C4  4B EB 3A 4D */	bl SCCheckStatus
 /* 80197A88 001938C8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80197A8C 001938CC  40 82 FF F8 */	bne lbl_80197A84
-/* 80197A90 001938D0  4B EB 54 11 */	bl lbl_8004CEA0
+/* 80197A90 001938D0  4B EB 54 11 */	bl SCGetProgressiveMode
 /* 80197A94 001938D4  54 63 06 3E */	clrlwi r3, r3, 24
 /* 80197A98 001938D8  38 03 FF FF */	addi r0, r3, -0x1
 /* 80197A9C 001938DC  7C 00 00 34 */	cntlzw r0, r0
 /* 80197AA0 001938E0  54 1E D9 7E */	srwi r30, r0, 5
-/* 80197AA4 001938E4  4B EB 53 1D */	bl lbl_8004CDC0
+/* 80197AA4 001938E4  4B EB 53 1D */	bl SCGetEuRgb60Mode
 /* 80197AA8 001938E8  54 63 06 3E */	clrlwi r3, r3, 24
 /* 80197AAC 001938EC  38 03 FF FF */	addi r0, r3, -0x1
 /* 80197AB0 001938F0  7C 00 00 34 */	cntlzw r0, r0
 /* 80197AB4 001938F4  54 1D D9 7E */	srwi r29, r0, 5
-/* 80197AB8 001938F8  4B EB 52 29 */	bl lbl_8004CCE0
+/* 80197AB8 001938F8  4B EB 52 29 */	bl SCGetAspectRatio
 /* 80197ABC 001938FC  54 60 06 3E */	clrlwi r0, r3, 24
 /* 80197AC0 00193900  7C 00 00 34 */	cntlzw r0, r0
 /* 80197AC4 00193904  54 1C D9 7E */	srwi r28, r0, 5
-/* 80197AC8 00193908  4B E9 65 A9 */	bl lbl_8002E070
+/* 80197AC8 00193908  4B E9 65 A9 */	bl VIGetDTVStatus
 /* 80197ACC 0019390C  38 03 FF FF */	addi r0, r3, -0x1
 /* 80197AD0 00193910  7C 00 00 34 */	cntlzw r0, r0
 /* 80197AD4 00193914  54 03 D9 7E */	srwi r3, r0, 5
@@ -144,8 +144,8 @@ lbl_80197B78:
 /* 80197B84 001939C4  7C 08 03 A6 */	mtlr r0
 /* 80197B88 001939C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80197B8C 001939CC  4E 80 00 20 */	blr
-.global lbl_80197B90
-lbl_80197B90:
+.global set__Q23gfx9VISettingFUl
+set__Q23gfx9VISettingFUl:
 /* 80197B90 001939D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80197B94 001939D4  7C 08 02 A6 */	mflr r0
 /* 80197B98 001939D8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -155,11 +155,11 @@ lbl_80197B90:
 /* 80197BA8 001939E8  7C 9F 23 78 */	mr r31, r4
 /* 80197BAC 001939EC  28 04 00 0E */	cmplwi r4, 0xe
 /* 80197BB0 001939F0  40 82 00 0C */	bne lbl_80197BBC
-/* 80197BB4 001939F4  4B FF FE B5 */	bl lbl_80197A68
+/* 80197BB4 001939F4  4B FF FE B5 */	bl recommendRenderModeNo__Q23gfx9VISettingCFv
 /* 80197BB8 001939F8  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80197BBC
 lbl_80197BBC:
-/* 80197BBC 001939FC  80 6D ED 90 */	lwz r3, lbl_8055D1B0@sda21(r13)
+/* 80197BBC 001939FC  80 6D ED 90 */	lwz r3, "object___Q33hel6common40ExplicitSingleton<Q23gfx13RenderSetting>"@sda21(r13)
 /* 80197BC0 00193A00  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80197BC4 00193A04  41 82 00 94 */	beq lbl_80197C58
 /* 80197BC8 00193A08  80 03 00 04 */	lwz r0, 0x4(r3)
@@ -219,14 +219,14 @@ lbl_80197C54:
 .global lbl_80197C58
 lbl_80197C58:
 /* 80197C58 00193A98  57 E0 10 3A */	slwi r0, r31, 2
-/* 80197C5C 00193A9C  3C 60 80 45 */	lis r3, lbl_804549A8@ha
-/* 80197C60 00193AA0  38 63 49 A8 */	addi r3, r3, lbl_804549A8@l
+/* 80197C5C 00193A9C  3C 60 80 45 */	lis r3, "StandardRenderModeSets__Q23gfx23@unnamed@VISetting_cpp@"@ha
+/* 80197C60 00193AA0  38 63 49 A8 */	addi r3, r3, "StandardRenderModeSets__Q23gfx23@unnamed@VISetting_cpp@"@l
 /* 80197C64 00193AA4  7C 83 00 2E */	lwzx r4, r3, r0
 /* 80197C68 00193AA8  7F C3 F3 78 */	mr r3, r30
 /* 80197C6C 00193AAC  A0 A4 00 3C */	lhz r5, 0x3c(r4)
 /* 80197C70 00193AB0  A0 C4 00 3E */	lhz r6, 0x3e(r4)
 /* 80197C74 00193AB4  88 E4 00 40 */	lbz r7, 0x40(r4)
-/* 80197C78 00193AB8  48 00 00 21 */	bl lbl_80197C98
+/* 80197C78 00193AB8  48 00 00 21 */	bl set__Q23gfx9VISettingFRC16_GXRenderModeObjUsUsb
 /* 80197C7C 00193ABC  93 FE 00 0C */	stw r31, 0xc(r30)
 /* 80197C80 00193AC0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80197C84 00193AC4  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -234,8 +234,8 @@ lbl_80197C58:
 /* 80197C8C 00193ACC  7C 08 03 A6 */	mtlr r0
 /* 80197C90 00193AD0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80197C94 00193AD4  4E 80 00 20 */	blr
-.global lbl_80197C98
-lbl_80197C98:
+.global set__Q23gfx9VISettingFRC16_GXRenderModeObjUsUsb
+set__Q23gfx9VISettingFRC16_GXRenderModeObjUsUsb:
 /* 80197C98 00193AD8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80197C9C 00193ADC  7C 08 02 A6 */	mflr r0
 /* 80197CA0 00193AE0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -249,24 +249,24 @@ lbl_80197C98:
 /* 80197CC0 00193B00  B0 C3 00 06 */	sth r6, 0x6(r3)
 /* 80197CC4 00193B04  98 E3 00 08 */	stb r7, 0x8(r3)
 /* 80197CC8 00193B08  38 60 00 01 */	li r3, 0x1
-/* 80197CCC 00193B0C  4B E9 62 25 */	bl lbl_8002DEF0
+/* 80197CCC 00193B0C  4B E9 62 25 */	bl VISetBlack
 /* 80197CD0 00193B10  7F E3 FB 78 */	mr r3, r31
-/* 80197CD4 00193B14  4B E9 56 4D */	bl lbl_8002D320
-/* 80197CD8 00193B18  4B E9 60 79 */	bl lbl_8002DD50
+/* 80197CD4 00193B14  4B E9 56 4D */	bl VIConfigure
+/* 80197CD8 00193B18  4B E9 60 79 */	bl VIFlush
 /* 80197CDC 00193B1C  38 60 00 00 */	li r3, 0x0
 /* 80197CE0 00193B20  38 80 00 00 */	li r4, 0x0
 /* 80197CE4 00193B24  A0 BF 00 04 */	lhz r5, 0x4(r31)
 /* 80197CE8 00193B28  A0 DF 00 06 */	lhz r6, 0x6(r31)
-/* 80197CEC 00193B2C  4B E9 D9 15 */	bl lbl_80035600
+/* 80197CEC 00193B2C  4B E9 D9 15 */	bl GXSetDispCopySrc
 /* 80197CF0 00193B30  A0 7F 00 04 */	lhz r3, 0x4(r31)
 /* 80197CF4 00193B34  A0 9F 00 08 */	lhz r4, 0x8(r31)
-/* 80197CF8 00193B38  4B E9 D9 89 */	bl lbl_80035680
-/* 80197CFC 00193B3C  C0 22 97 F0 */	lfs f1, lbl_8055F770@sda21(r2)
-/* 80197D00 00193B40  4B E9 DB 11 */	bl lbl_80035810
+/* 80197CF8 00193B38  4B E9 D9 89 */	bl GXSetDispCopyDst
+/* 80197CFC 00193B3C  C0 22 97 F0 */	lfs f1, "@49284_8055F770"@sda21(r2)
+/* 80197D00 00193B40  4B E9 DB 11 */	bl GXSetDispCopyYScale
 /* 80197D04 00193B44  38 60 00 00 */	li r3, 0x0
-/* 80197D08 00193B48  4B E9 DE 49 */	bl lbl_80035B50
-/* 80197D0C 00193B4C  4B E9 50 85 */	bl lbl_8002CD90
-/* 80197D10 00193B50  4B E9 50 81 */	bl lbl_8002CD90
+/* 80197D08 00193B48  4B E9 DE 49 */	bl GXSetDispCopyGamma
+/* 80197D0C 00193B4C  4B E9 50 85 */	bl VIWaitForRetrace
+/* 80197D10 00193B50  4B E9 50 81 */	bl VIWaitForRetrace
 .global lbl_80197D14
 lbl_80197D14:
 /* 80197D14 00193B54  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -274,19 +274,19 @@ lbl_80197D14:
 /* 80197D1C 00193B5C  7C 08 03 A6 */	mtlr r0
 /* 80197D20 00193B60  38 21 00 10 */	addi r1, r1, 0x10
 /* 80197D24 00193B64  4E 80 00 20 */	blr
-.global lbl_80197D28
-lbl_80197D28:
+.global rmode__Q23gfx9VISettingCFUl
+rmode__Q23gfx9VISettingCFUl:
 /* 80197D28 00193B68  54 80 10 3A */	slwi r0, r4, 2
-/* 80197D2C 00193B6C  3C 60 80 45 */	lis r3, lbl_804549A8@ha
-/* 80197D30 00193B70  38 63 49 A8 */	addi r3, r3, lbl_804549A8@l
+/* 80197D2C 00193B6C  3C 60 80 45 */	lis r3, "StandardRenderModeSets__Q23gfx23@unnamed@VISetting_cpp@"@ha
+/* 80197D30 00193B70  38 63 49 A8 */	addi r3, r3, "StandardRenderModeSets__Q23gfx23@unnamed@VISetting_cpp@"@l
 /* 80197D34 00193B74  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80197D38 00193B78  4E 80 00 20 */	blr
-.global lbl_80197D3C
-lbl_80197D3C:
+.global setDimming__Q23gfx9VISettingFb
+setDimming__Q23gfx9VISettingFb:
 /* 80197D3C 00193B7C  98 83 00 10 */	stb r4, 0x10(r3)
 /* 80197D40 00193B80  7C 83 23 78 */	mr r3, r4
-/* 80197D44 00193B84  4B E9 65 AC */	b lbl_8002E2F0
-.global lbl_80197D48
-lbl_80197D48:
+/* 80197D44 00193B84  4B E9 65 AC */	b VIEnableDimming
+.global getDimming__Q23gfx9VISettingCFv
+getDimming__Q23gfx9VISettingCFv:
 /* 80197D48 00193B88  88 63 00 10 */	lbz r3, 0x10(r3)
 /* 80197D4C 00193B8C  4E 80 00 20 */	blr

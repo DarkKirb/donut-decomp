@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800C3A90
-lbl_800C3A90:
+.global __ct__Q34nw4r2ef24DrawSmoothStripeStrategyFv
+__ct__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
 /* 800C3A90 000BF8D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800C3A94 000BF8D4  7C 08 02 A6 */	mflr r0
 /* 800C3A98 000BF8D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800C3A9C 000BF8DC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800C3AA0 000BF8E0  7C 7F 1B 78 */	mr r31, r3
-/* 800C3AA4 000BF8E4  4B FF 50 AD */	bl lbl_800B8B50
-/* 800C3AA8 000BF8E8  3C 80 80 44 */	lis r4, lbl_804404B8@ha
+/* 800C3AA4 000BF8E4  4B FF 50 AD */	bl __ct__Q34nw4r2ef16DrawStrategyImplFv
+/* 800C3AA8 000BF8E8  3C 80 80 44 */	lis r4, __vt__Q34nw4r2ef24DrawSmoothStripeStrategy@ha
 /* 800C3AAC 000BF8EC  7F E3 FB 78 */	mr r3, r31
-/* 800C3AB0 000BF8F0  38 84 04 B8 */	addi r4, r4, lbl_804404B8@l
+/* 800C3AB0 000BF8F0  38 84 04 B8 */	addi r4, r4, __vt__Q34nw4r2ef24DrawSmoothStripeStrategy@l
 /* 800C3AB4 000BF8F4  90 9F 00 00 */	stw r4, 0x0(r31)
 /* 800C3AB8 000BF8F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800C3ABC 000BF8FC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -19,8 +19,8 @@ lbl_800C3A90:
 /* 800C3AC4 000BF904  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C3AC8 000BF908  4E 80 00 20 */	blr
 /* 800C3ACC 000BF90C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C3AD0
-lbl_800C3AD0:
+.global CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
+CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff:
 /* 800C3AD0 000BF910  94 21 FE D0 */	stwu r1, -0x130(r1)
 /* 800C3AD4 000BF914  7C 08 02 A6 */	mflr r0
 /* 800C3AD8 000BF918  90 01 01 34 */	stw r0, 0x134(r1)
@@ -53,18 +53,18 @@ lbl_800C3AD0:
 /* 800C3B44 000BF984  7F C3 F3 78 */	mr r3, r30
 /* 800C3B48 000BF988  38 99 00 CC */	addi r4, r25, 0xcc
 /* 800C3B4C 000BF98C  38 A1 00 1C */	addi r5, r1, 0x1c
-/* 800C3B50 000BF990  4B F6 DB 11 */	bl lbl_80031660
+/* 800C3B50 000BF990  4B F6 DB 11 */	bl PSVECCrossProduct
 /* 800C3B54 000BF994  48 00 00 14 */	b lbl_800C3B68
 .global lbl_800C3B58
 lbl_800C3B58:
 /* 800C3B58 000BF998  7F C3 F3 78 */	mr r3, r30
 /* 800C3B5C 000BF99C  38 98 00 C8 */	addi r4, r24, 0xc8
 /* 800C3B60 000BF9A0  38 A1 00 1C */	addi r5, r1, 0x1c
-/* 800C3B64 000BF9A4  4B F6 DA FD */	bl lbl_80031660
+/* 800C3B64 000BF9A4  4B F6 DA FD */	bl PSVECCrossProduct
 .global lbl_800C3B68
 lbl_800C3B68:
 /* 800C3B68 000BF9A8  3B A1 00 1C */	addi r29, r1, 0x1c
-/* 800C3B6C 000BF9AC  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C3B6C 000BF9AC  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C3B70 000BF9B0  E0 5D 00 04 */	psq_l f2, 0x4(r29), 0, qr0
 /* 800C3B74 000BF9B4  E0 3D 80 00 */	psq_l f1, 0x0(r29), 1, qr0
 /* 800C3B78 000BF9B8  10 42 00 B2 */	ps_mul f2, f2, f2
@@ -76,7 +76,7 @@ lbl_800C3B68:
 /* 800C3B90 000BF9D0  48 00 00 24 */	b lbl_800C3BB4
 .global lbl_800C3B94
 lbl_800C3B94:
-/* 800C3B94 000BF9D4  48 03 AE DD */	bl lbl_800FEA70
+/* 800C3B94 000BF9D4  48 03 AE DD */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C3B98 000BF9D8  E0 1D 00 00 */	psq_l f0, 0x0(r29), 0, qr0
 /* 800C3B9C 000BF9DC  38 00 00 01 */	li r0, 0x1
 /* 800C3BA0 000BF9E0  10 40 00 58 */	ps_muls0 f2, f0, f1
@@ -99,9 +99,9 @@ lbl_800C3BD4:
 /* 800C3BD4 000BFA14  7F C4 F3 78 */	mr r4, r30
 /* 800C3BD8 000BFA18  38 61 00 1C */	addi r3, r1, 0x1c
 /* 800C3BDC 000BFA1C  38 A1 00 28 */	addi r5, r1, 0x28
-/* 800C3BE0 000BFA20  4B F6 DA 81 */	bl lbl_80031660
+/* 800C3BE0 000BFA20  4B F6 DA 81 */	bl PSVECCrossProduct
 /* 800C3BE4 000BFA24  3B C1 00 28 */	addi r30, r1, 0x28
-/* 800C3BE8 000BFA28  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C3BE8 000BFA28  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C3BEC 000BFA2C  E0 5E 00 04 */	psq_l f2, 0x4(r30), 0, qr0
 /* 800C3BF0 000BFA30  E0 3E 80 00 */	psq_l f1, 0x0(r30), 1, qr0
 /* 800C3BF4 000BFA34  10 42 00 B2 */	ps_mul f2, f2, f2
@@ -109,7 +109,7 @@ lbl_800C3BD4:
 /* 800C3BFC 000BFA3C  10 21 10 94 */	ps_sum0 f1, f1, f2, f2
 /* 800C3C00 000BFA40  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C3C04 000BFA44  41 80 00 20 */	blt lbl_800C3C24
-/* 800C3C08 000BFA48  48 03 AE 69 */	bl lbl_800FEA70
+/* 800C3C08 000BFA48  48 03 AE 69 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C3C0C 000BFA4C  E0 1E 00 00 */	psq_l f0, 0x0(r30), 0, qr0
 /* 800C3C10 000BFA50  10 40 00 58 */	ps_muls0 f2, f0, f1
 /* 800C3C14 000BFA54  E0 1E 80 08 */	psq_l f0, 0x8(r30), 1, qr0
@@ -159,9 +159,9 @@ lbl_800C3C24:
 /* 800C3CBC 000BFAFC  41 82 00 2C */	beq lbl_800C3CE8
 /* 800C3CC0 000BFB00  3C 00 43 30 */	lis r0, 0x4330
 /* 800C3CC4 000BFB04  90 61 00 D4 */	stw r3, 0xd4(r1)
-/* 800C3CC8 000BFB08  C8 42 8E 80 */	lfd f2, lbl_8055EE00@sda21(r2)
+/* 800C3CC8 000BFB08  C8 42 8E 80 */	lfd f2, "@15299"@sda21(r2)
 /* 800C3CCC 000BFB0C  90 01 00 D0 */	stw r0, 0xd0(r1)
-/* 800C3CD0 000BFB10  C0 02 8E 74 */	lfs f0, lbl_8055EDF4@sda21(r2)
+/* 800C3CD0 000BFB10  C0 02 8E 74 */	lfs f0, "@15288"@sda21(r2)
 /* 800C3CD4 000BFB14  C8 21 00 D0 */	lfd f1, 0xd0(r1)
 /* 800C3CD8 000BFB18  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C3CDC 000BFB1C  EC 00 00 72 */	fmuls f0, f0, f1
@@ -174,9 +174,9 @@ lbl_800C3CE8:
 /* 800C3CF0 000BFB30  41 82 00 30 */	beq lbl_800C3D20
 /* 800C3CF4 000BFB34  3C 00 43 30 */	lis r0, 0x4330
 /* 800C3CF8 000BFB38  90 61 00 D4 */	stw r3, 0xd4(r1)
-/* 800C3CFC 000BFB3C  C8 62 8E 80 */	lfd f3, lbl_8055EE00@sda21(r2)
+/* 800C3CFC 000BFB3C  C8 62 8E 80 */	lfd f3, "@15299"@sda21(r2)
 /* 800C3D00 000BFB40  90 01 00 D0 */	stw r0, 0xd0(r1)
-/* 800C3D04 000BFB44  C0 22 8E 74 */	lfs f1, lbl_8055EDF4@sda21(r2)
+/* 800C3D04 000BFB44  C0 22 8E 74 */	lfs f1, "@15288"@sda21(r2)
 /* 800C3D08 000BFB48  C8 41 00 D0 */	lfd f2, 0xd0(r1)
 /* 800C3D0C 000BFB4C  C0 01 00 14 */	lfs f0, 0x14(r1)
 /* 800C3D10 000BFB50  EC 42 18 28 */	fsubs f2, f2, f3
@@ -190,9 +190,9 @@ lbl_800C3D20:
 /* 800C3D28 000BFB68  41 82 00 30 */	beq lbl_800C3D58
 /* 800C3D2C 000BFB6C  3C 00 43 30 */	lis r0, 0x4330
 /* 800C3D30 000BFB70  90 61 00 D4 */	stw r3, 0xd4(r1)
-/* 800C3D34 000BFB74  C8 62 8E 80 */	lfd f3, lbl_8055EE00@sda21(r2)
+/* 800C3D34 000BFB74  C8 62 8E 80 */	lfd f3, "@15299"@sda21(r2)
 /* 800C3D38 000BFB78  90 01 00 D0 */	stw r0, 0xd0(r1)
-/* 800C3D3C 000BFB7C  C0 22 8E 74 */	lfs f1, lbl_8055EDF4@sda21(r2)
+/* 800C3D3C 000BFB7C  C0 22 8E 74 */	lfs f1, "@15288"@sda21(r2)
 /* 800C3D40 000BFB80  C8 41 00 D0 */	lfd f2, 0xd0(r1)
 /* 800C3D44 000BFB84  C0 01 00 18 */	lfs f0, 0x18(r1)
 /* 800C3D48 000BFB88  EC 42 18 28 */	fsubs f2, f2, f3
@@ -221,15 +221,15 @@ lbl_800C3D58:
 /* 800C3D9C 000BFBDC  EC 03 10 2A */	fadds f0, f3, f2
 /* 800C3DA0 000BFBE0  D0 21 00 14 */	stfs f1, 0x14(r1)
 /* 800C3DA4 000BFBE4  D0 01 00 18 */	stfs f0, 0x18(r1)
-/* 800C3DA8 000BFBE8  4B FE FD 19 */	bl lbl_800B3AC0
+/* 800C3DA8 000BFBE8  4B FE FD 19 */	bl PSSinCosRad__Q24nw4r2efFPfPff
 /* 800C3DAC 000BFBEC  C0 21 00 08 */	lfs f1, 0x8(r1)
 /* 800C3DB0 000BFBF0  38 61 00 70 */	addi r3, r1, 0x70
 /* 800C3DB4 000BFBF4  C0 01 00 0C */	lfs f0, 0xc(r1)
 /* 800C3DB8 000BFBF8  38 81 00 40 */	addi r4, r1, 0x40
 /* 800C3DBC 000BFBFC  EC A1 07 72 */	fmuls f5, f1, f29
-/* 800C3DC0 000BFC00  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
+/* 800C3DC0 000BFC00  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
 /* 800C3DC4 000BFC04  EC 80 07 72 */	fmuls f4, f0, f29
-/* 800C3DC8 000BFC08  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C3DC8 000BFC08  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C3DCC 000BFC0C  D0 A1 00 08 */	stfs f5, 0x8(r1)
 /* 800C3DD0 000BFC10  38 A1 00 A0 */	addi r5, r1, 0xa0
 /* 800C3DD4 000BFC14  FC 60 20 50 */	fneg f3, f4
@@ -249,15 +249,15 @@ lbl_800C3D58:
 /* 800C3E0C 000BFC4C  D0 21 00 64 */	stfs f1, 0x64(r1)
 /* 800C3E10 000BFC50  D0 A1 00 68 */	stfs f5, 0x68(r1)
 /* 800C3E14 000BFC54  D0 C1 00 6C */	stfs f6, 0x6c(r1)
-/* 800C3E18 000BFC58  4B F6 C7 39 */	bl lbl_80030550
+/* 800C3E18 000BFC58  4B F6 C7 39 */	bl PSMTXConcat
 /* 800C3E1C 000BFC5C  7F 64 DB 78 */	mr r4, r27
 /* 800C3E20 000BFC60  7F E5 FB 78 */	mr r5, r31
 /* 800C3E24 000BFC64  38 61 00 A0 */	addi r3, r1, 0xa0
-/* 800C3E28 000BFC68  4B F6 D2 C9 */	bl lbl_800310F0
+/* 800C3E28 000BFC68  4B F6 D2 C9 */	bl PSMTXMultVec
 /* 800C3E2C 000BFC6C  7F 84 E3 78 */	mr r4, r28
 /* 800C3E30 000BFC70  38 61 00 A0 */	addi r3, r1, 0xa0
 /* 800C3E34 000BFC74  38 BF 00 0C */	addi r5, r31, 0xc
-/* 800C3E38 000BFC78  4B F6 D2 B9 */	bl lbl_800310F0
+/* 800C3E38 000BFC78  4B F6 D2 B9 */	bl PSMTXMultVec
 /* 800C3E3C 000BFC7C  D3 FF 00 18 */	stfs f31, 0x18(r31)
 /* 800C3E40 000BFC80  E3 E1 01 28 */	psq_l f31, 0x128(r1), 0, qr0
 /* 800C3E44 000BFC84  CB E1 01 20 */	lfd f31, 0x120(r1)
@@ -271,8 +271,8 @@ lbl_800C3D58:
 /* 800C3E64 000BFCA4  7C 08 03 A6 */	mtlr r0
 /* 800C3E68 000BFCA8  38 21 01 30 */	addi r1, r1, 0x130
 /* 800C3E6C 000BFCAC  4E 80 00 20 */	blr
-.global lbl_800C3E70
-lbl_800C3E70:
+.global CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
+CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff:
 /* 800C3E70 000BFCB0  94 21 FE B0 */	stwu r1, -0x150(r1)
 /* 800C3E74 000BFCB4  7C 08 02 A6 */	mflr r0
 /* 800C3E78 000BFCB8  90 01 01 54 */	stw r0, 0x154(r1)
@@ -307,18 +307,18 @@ lbl_800C3E70:
 /* 800C3EEC 000BFD2C  7F C3 F3 78 */	mr r3, r30
 /* 800C3EF0 000BFD30  38 9C 00 CC */	addi r4, r28, 0xcc
 /* 800C3EF4 000BFD34  38 A1 00 10 */	addi r5, r1, 0x10
-/* 800C3EF8 000BFD38  4B F6 D7 69 */	bl lbl_80031660
+/* 800C3EF8 000BFD38  4B F6 D7 69 */	bl PSVECCrossProduct
 /* 800C3EFC 000BFD3C  48 00 00 14 */	b lbl_800C3F10
 .global lbl_800C3F00
 lbl_800C3F00:
 /* 800C3F00 000BFD40  7F C3 F3 78 */	mr r3, r30
 /* 800C3F04 000BFD44  38 9B 00 C8 */	addi r4, r27, 0xc8
 /* 800C3F08 000BFD48  38 A1 00 10 */	addi r5, r1, 0x10
-/* 800C3F0C 000BFD4C  4B F6 D7 55 */	bl lbl_80031660
+/* 800C3F0C 000BFD4C  4B F6 D7 55 */	bl PSVECCrossProduct
 .global lbl_800C3F10
 lbl_800C3F10:
 /* 800C3F10 000BFD50  3B A1 00 10 */	addi r29, r1, 0x10
-/* 800C3F14 000BFD54  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C3F14 000BFD54  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C3F18 000BFD58  E0 5D 00 04 */	psq_l f2, 0x4(r29), 0, qr0
 /* 800C3F1C 000BFD5C  E0 3D 80 00 */	psq_l f1, 0x0(r29), 1, qr0
 /* 800C3F20 000BFD60  10 42 00 B2 */	ps_mul f2, f2, f2
@@ -330,7 +330,7 @@ lbl_800C3F10:
 /* 800C3F38 000BFD78  48 00 00 24 */	b lbl_800C3F5C
 .global lbl_800C3F3C
 lbl_800C3F3C:
-/* 800C3F3C 000BFD7C  48 03 AB 35 */	bl lbl_800FEA70
+/* 800C3F3C 000BFD7C  48 03 AB 35 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C3F40 000BFD80  E0 1D 00 00 */	psq_l f0, 0x0(r29), 0, qr0
 /* 800C3F44 000BFD84  38 00 00 01 */	li r0, 0x1
 /* 800C3F48 000BFD88  10 40 00 58 */	ps_muls0 f2, f0, f1
@@ -353,9 +353,9 @@ lbl_800C3F7C:
 /* 800C3F7C 000BFDBC  7F C4 F3 78 */	mr r4, r30
 /* 800C3F80 000BFDC0  38 61 00 10 */	addi r3, r1, 0x10
 /* 800C3F84 000BFDC4  38 A1 00 1C */	addi r5, r1, 0x1c
-/* 800C3F88 000BFDC8  4B F6 D6 D9 */	bl lbl_80031660
+/* 800C3F88 000BFDC8  4B F6 D6 D9 */	bl PSVECCrossProduct
 /* 800C3F8C 000BFDCC  3B C1 00 1C */	addi r30, r1, 0x1c
-/* 800C3F90 000BFDD0  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C3F90 000BFDD0  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C3F94 000BFDD4  E0 5E 00 04 */	psq_l f2, 0x4(r30), 0, qr0
 /* 800C3F98 000BFDD8  E0 3E 80 00 */	psq_l f1, 0x0(r30), 1, qr0
 /* 800C3F9C 000BFDDC  10 42 00 B2 */	ps_mul f2, f2, f2
@@ -363,7 +363,7 @@ lbl_800C3F7C:
 /* 800C3FA4 000BFDE4  10 21 10 94 */	ps_sum0 f1, f1, f2, f2
 /* 800C3FA8 000BFDE8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C3FAC 000BFDEC  41 80 00 20 */	blt lbl_800C3FCC
-/* 800C3FB0 000BFDF0  48 03 AA C1 */	bl lbl_800FEA70
+/* 800C3FB0 000BFDF0  48 03 AA C1 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C3FB4 000BFDF4  E0 1E 00 00 */	psq_l f0, 0x0(r30), 0, qr0
 /* 800C3FB8 000BFDF8  10 40 00 58 */	ps_muls0 f2, f0, f1
 /* 800C3FBC 000BFDFC  E0 1E 80 08 */	psq_l f0, 0x8(r30), 1, qr0
@@ -413,9 +413,9 @@ lbl_800C3FCC:
 /* 800C4064 000BFEA4  41 82 00 2C */	beq lbl_800C4090
 /* 800C4068 000BFEA8  3C 00 43 30 */	lis r0, 0x4330
 /* 800C406C 000BFEAC  90 61 00 E4 */	stw r3, 0xe4(r1)
-/* 800C4070 000BFEB0  C8 42 8E 80 */	lfd f2, lbl_8055EE00@sda21(r2)
+/* 800C4070 000BFEB0  C8 42 8E 80 */	lfd f2, "@15299"@sda21(r2)
 /* 800C4074 000BFEB4  90 01 00 E0 */	stw r0, 0xe0(r1)
-/* 800C4078 000BFEB8  C0 02 8E 74 */	lfs f0, lbl_8055EDF4@sda21(r2)
+/* 800C4078 000BFEB8  C0 02 8E 74 */	lfs f0, "@15288"@sda21(r2)
 /* 800C407C 000BFEBC  C8 21 00 E0 */	lfd f1, 0xe0(r1)
 /* 800C4080 000BFEC0  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C4084 000BFEC4  EC 00 00 72 */	fmuls f0, f0, f1
@@ -428,9 +428,9 @@ lbl_800C4090:
 /* 800C4098 000BFED8  41 82 00 30 */	beq lbl_800C40C8
 /* 800C409C 000BFEDC  3C 00 43 30 */	lis r0, 0x4330
 /* 800C40A0 000BFEE0  90 61 00 E4 */	stw r3, 0xe4(r1)
-/* 800C40A4 000BFEE4  C8 62 8E 80 */	lfd f3, lbl_8055EE00@sda21(r2)
+/* 800C40A4 000BFEE4  C8 62 8E 80 */	lfd f3, "@15299"@sda21(r2)
 /* 800C40A8 000BFEE8  90 01 00 E0 */	stw r0, 0xe0(r1)
-/* 800C40AC 000BFEEC  C0 22 8E 74 */	lfs f1, lbl_8055EDF4@sda21(r2)
+/* 800C40AC 000BFEEC  C0 22 8E 74 */	lfs f1, "@15288"@sda21(r2)
 /* 800C40B0 000BFEF0  C8 41 00 E0 */	lfd f2, 0xe0(r1)
 /* 800C40B4 000BFEF4  C0 01 00 38 */	lfs f0, 0x38(r1)
 /* 800C40B8 000BFEF8  EC 42 18 28 */	fsubs f2, f2, f3
@@ -444,9 +444,9 @@ lbl_800C40C8:
 /* 800C40D0 000BFF10  41 82 00 30 */	beq lbl_800C4100
 /* 800C40D4 000BFF14  3C 00 43 30 */	lis r0, 0x4330
 /* 800C40D8 000BFF18  90 61 00 E4 */	stw r3, 0xe4(r1)
-/* 800C40DC 000BFF1C  C8 62 8E 80 */	lfd f3, lbl_8055EE00@sda21(r2)
+/* 800C40DC 000BFF1C  C8 62 8E 80 */	lfd f3, "@15299"@sda21(r2)
 /* 800C40E0 000BFF20  90 01 00 E0 */	stw r0, 0xe0(r1)
-/* 800C40E4 000BFF24  C0 22 8E 74 */	lfs f1, lbl_8055EDF4@sda21(r2)
+/* 800C40E4 000BFF24  C0 22 8E 74 */	lfs f1, "@15288"@sda21(r2)
 /* 800C40E8 000BFF28  C8 41 00 E0 */	lfd f2, 0xe0(r1)
 /* 800C40EC 000BFF2C  C0 01 00 3C */	lfs f0, 0x3c(r1)
 /* 800C40F0 000BFF30  EC 42 18 28 */	fsubs f2, f2, f3
@@ -506,15 +506,15 @@ lbl_800C4198:
 /* 800C41A0 000BFFE0  C0 21 00 38 */	lfs f1, 0x38(r1)
 /* 800C41A4 000BFFE4  38 81 00 08 */	addi r4, r1, 0x8
 /* 800C41A8 000BFFE8  EF 68 00 32 */	fmuls f27, f8, f0
-/* 800C41AC 000BFFEC  4B FE F9 15 */	bl lbl_800B3AC0
+/* 800C41AC 000BFFEC  4B FE F9 15 */	bl PSSinCosRad__Q24nw4r2efFPfPff
 /* 800C41B0 000BFFF0  C0 61 00 08 */	lfs f3, 0x8(r1)
 /* 800C41B4 000BFFF4  38 61 00 B0 */	addi r3, r1, 0xb0
 /* 800C41B8 000BFFF8  C0 E1 00 0C */	lfs f7, 0xc(r1)
 /* 800C41BC 000BFFFC  38 81 00 80 */	addi r4, r1, 0x80
 /* 800C41C0 000C0000  EC 43 07 F2 */	fmuls f2, f3, f31
-/* 800C41C4 000C0004  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
+/* 800C41C4 000C0004  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
 /* 800C41C8 000C0008  ED 07 07 F2 */	fmuls f8, f7, f31
-/* 800C41CC 000C000C  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C41CC 000C000C  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C41D0 000C0010  EC C3 06 F2 */	fmuls f6, f3, f27
 /* 800C41D4 000C0014  D0 41 00 80 */	stfs f2, 0x80(r1)
 /* 800C41D8 000C0018  EC 9C 00 B2 */	fmuls f4, f28, f2
@@ -540,26 +540,26 @@ lbl_800C4198:
 /* 800C4228 000C0068  D0 21 00 A4 */	stfs f1, 0xa4(r1)
 /* 800C422C 000C006C  D0 C1 00 A8 */	stfs f6, 0xa8(r1)
 /* 800C4230 000C0070  D0 61 00 AC */	stfs f3, 0xac(r1)
-/* 800C4234 000C0074  4B F6 C3 1D */	bl lbl_80030550
+/* 800C4234 000C0074  4B F6 C3 1D */	bl PSMTXConcat
 /* 800C4238 000C0078  C0 41 00 7C */	lfs f2, 0x7c(r1)
-/* 800C423C 000C007C  3C A0 80 51 */	lis r5, lbl_8050AA08@ha
+/* 800C423C 000C007C  3C A0 80 51 */	lis r5, mXUnitVec__Q34nw4r2ef16DrawStrategyImpl@ha
 /* 800C4240 000C0080  C0 21 00 6C */	lfs f1, 0x6c(r1)
 /* 800C4244 000C0084  38 7F 00 0C */	addi r3, r31, 0xc
 /* 800C4248 000C0088  C0 01 00 5C */	lfs f0, 0x5c(r1)
 /* 800C424C 000C008C  38 81 00 50 */	addi r4, r1, 0x50
 /* 800C4250 000C0090  D0 01 00 28 */	stfs f0, 0x28(r1)
-/* 800C4254 000C0094  38 A5 AA 08 */	addi r5, r5, lbl_8050AA08@l
+/* 800C4254 000C0094  38 A5 AA 08 */	addi r5, r5, mXUnitVec__Q34nw4r2ef16DrawStrategyImpl@l
 /* 800C4258 000C0098  D0 21 00 2C */	stfs f1, 0x2c(r1)
 /* 800C425C 000C009C  D0 41 00 30 */	stfs f2, 0x30(r1)
 /* 800C4260 000C00A0  D0 1F 00 00 */	stfs f0, 0x0(r31)
 /* 800C4264 000C00A4  D0 3F 00 04 */	stfs f1, 0x4(r31)
 /* 800C4268 000C00A8  D0 5F 00 08 */	stfs f2, 0x8(r31)
-/* 800C426C 000C00AC  48 03 AE 65 */	bl lbl_800FF0D0
-/* 800C4270 000C00B0  3C A0 80 51 */	lis r5, lbl_8050AA20@ha
+/* 800C426C 000C00AC  48 03 AE 65 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
+/* 800C4270 000C00B0  3C A0 80 51 */	lis r5, mZUnitVec__Q34nw4r2ef16DrawStrategyImpl@ha
 /* 800C4274 000C00B4  38 7F 00 18 */	addi r3, r31, 0x18
 /* 800C4278 000C00B8  38 81 00 50 */	addi r4, r1, 0x50
-/* 800C427C 000C00BC  38 A5 AA 20 */	addi r5, r5, lbl_8050AA20@l
-/* 800C4280 000C00C0  48 03 AE 51 */	bl lbl_800FF0D0
+/* 800C427C 000C00BC  38 A5 AA 20 */	addi r5, r5, mZUnitVec__Q34nw4r2ef16DrawStrategyImpl@l
+/* 800C4280 000C00C0  48 03 AE 51 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C4284 000C00C4  D3 DF 00 24 */	stfs f30, 0x24(r31)
 /* 800C4288 000C00C8  E3 E1 01 48 */	psq_l f31, 0x148(r1), 0, qr0
 /* 800C428C 000C00CC  CB E1 01 40 */	lfd f31, 0x140(r1)
@@ -579,8 +579,8 @@ lbl_800C4198:
 /* 800C42C4 000C0104  4E 80 00 20 */	blr
 /* 800C42C8 000C0108  00 00 00 00 */	.4byte 0x00000000
 /* 800C42CC 000C010C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C42D0
-lbl_800C42D0:
+.global DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
+DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi:
 /* 800C42D0 000C0110  94 21 FF 00 */	stwu r1, -0x100(r1)
 /* 800C42D4 000C0114  7C 08 02 A6 */	mflr r0
 /* 800C42D8 000C0118  90 01 01 04 */	stw r0, 0x104(r1)
@@ -596,7 +596,7 @@ lbl_800C42D0:
 /* 800C4300 000C0140  3D 20 43 30 */	lis r9, 0x4330
 /* 800C4304 000C0144  90 01 00 AC */	stw r0, 0xac(r1)
 /* 800C4308 000C0148  3B 21 00 20 */	addi r25, r1, 0x20
-/* 800C430C 000C014C  C9 42 8E 90 */	lfd f10, lbl_8055EE10@sda21(r2)
+/* 800C430C 000C014C  C9 42 8E 90 */	lfd f10, "@15501"@sda21(r2)
 /* 800C4310 000C0150  3B 41 00 2C */	addi r26, r1, 0x2c
 /* 800C4314 000C0154  91 21 00 A8 */	stw r9, 0xa8(r1)
 /* 800C4318 000C0158  3B 61 00 14 */	addi r27, r1, 0x14
@@ -610,10 +610,10 @@ lbl_800C42D0:
 /* 800C4338 000C0178  39 61 00 74 */	addi r11, r1, 0x74
 /* 800C433C 000C017C  39 41 00 44 */	addi r10, r1, 0x44
 /* 800C4340 000C0180  55 08 07 FE */	clrlwi r8, r8, 31
-/* 800C4344 000C0184  C1 22 8E 88 */	lfs f9, lbl_8055EE08@sda21(r2)
+/* 800C4344 000C0184  C1 22 8E 88 */	lfs f9, "@15425"@sda21(r2)
 /* 800C4348 000C0188  3B 00 00 00 */	li r24, 0x0
 /* 800C434C 000C018C  ED 60 00 30 */	fres f11, f0
-/* 800C4350 000C0190  C0 C2 8E 8C */	lfs f6, lbl_8055EE0C@sda21(r2)
+/* 800C4350 000C0190  C0 C2 8E 8C */	lfs f6, "@15426"@sda21(r2)
 /* 800C4354 000C0194  3C 60 CC 01 */	lis r3, 0xCC008000@ha
 /* 800C4358 000C0198  10 4B 58 2A */	ps_add f2, f11, f11
 /* 800C435C 000C019C  10 2B 02 F2 */	ps_mul f1, f11, f11
@@ -724,7 +724,7 @@ lbl_800C4370:
 /* 800C44F8 000C0338  D0 21 00 A4 */	stfs f1, 0xa4(r1)
 /* 800C44FC 000C033C  D0 83 80 00 */	stfs f4, -0x8000(r3)
 /* 800C4500 000C0340  41 82 00 10 */	beq lbl_800C4510
-/* 800C4504 000C0344  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C4504 000C0344  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C4508 000C0348  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C450C 000C034C  D0 23 80 00 */	stfs f1, -0x8000(r3)
 .global lbl_800C4510
@@ -737,7 +737,7 @@ lbl_800C4510:
 /* 800C4524 000C0364  C0 01 00 A0 */	lfs f0, 0xa0(r1)
 /* 800C4528 000C0368  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C452C 000C036C  41 82 00 10 */	beq lbl_800C453C
-/* 800C4530 000C0370  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C4530 000C0370  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C4534 000C0374  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C4538 000C0378  D0 23 80 00 */	stfs f1, -0x8000(r3)
 .global lbl_800C453C
@@ -761,8 +761,8 @@ lbl_800C4544:
 /* 800C4574 000C03B4  00 00 00 00 */	.4byte 0x00000000
 /* 800C4578 000C03B8  00 00 00 00 */	.4byte 0x00000000
 /* 800C457C 000C03BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C4580
-lbl_800C4580:
+.global __pl__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3
+__pl__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3:
 /* 800C4580 000C03C0  E0 44 00 00 */	psq_l f2, 0x0(r4), 0, qr0
 /* 800C4584 000C03C4  E0 25 00 00 */	psq_l f1, 0x0(r5), 0, qr0
 /* 800C4588 000C03C8  10 02 08 2A */	ps_add f0, f2, f1
@@ -775,17 +775,17 @@ lbl_800C4580:
 /* 800C45A4 000C03E4  00 00 00 00 */	.4byte 0x00000000
 /* 800C45A8 000C03E8  00 00 00 00 */	.4byte 0x00000000
 /* 800C45AC 000C03EC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C45B0
-lbl_800C45B0:
+.global DrawSectionEnd_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
+DrawSectionEnd_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi:
 /* 800C45B0 000C03F0  94 21 FF 10 */	stwu r1, -0xf0(r1)
-/* 800C45B4 000C03F4  C0 42 8E 7C */	lfs f2, lbl_8055EDFC@sda21(r2)
+/* 800C45B4 000C03F4  C0 42 8E 7C */	lfs f2, "@15290"@sda21(r2)
 /* 800C45B8 000C03F8  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 800C45BC 000C03FC  39 41 00 68 */	addi r10, r1, 0x68
-/* 800C45C0 000C0400  C0 62 8E 88 */	lfs f3, lbl_8055EE08@sda21(r2)
+/* 800C45C0 000C0400  C0 62 8E 88 */	lfs f3, "@15425"@sda21(r2)
 /* 800C45C4 000C0404  39 61 00 5C */	addi r11, r1, 0x5c
 /* 800C45C8 000C0408  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 800C45CC 000C040C  39 01 00 74 */	addi r8, r1, 0x74
-/* 800C45D0 000C0410  C0 02 8E 8C */	lfs f0, lbl_8055EE0C@sda21(r2)
+/* 800C45D0 000C0410  C0 02 8E 8C */	lfs f0, "@15426"@sda21(r2)
 /* 800C45D4 000C0414  EC E3 00 B2 */	fmuls f7, f3, f2
 /* 800C45D8 000C0418  DB C1 00 D0 */	stfd f30, 0xd0(r1)
 /* 800C45DC 000C041C  39 21 00 50 */	addi r9, r1, 0x50
@@ -897,7 +897,7 @@ lbl_800C45B0:
 /* 800C4784 000C05C4  D0 21 00 A4 */	stfs f1, 0xa4(r1)
 /* 800C4788 000C05C8  D0 C3 80 00 */	stfs f6, -0x8000(r3)
 /* 800C478C 000C05CC  41 82 00 10 */	beq lbl_800C479C
-/* 800C4790 000C05D0  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C4790 000C05D0  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C4794 000C05D4  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C4798 000C05D8  D0 23 80 00 */	stfs f1, -0x8000(r3)
 .global lbl_800C479C
@@ -911,7 +911,7 @@ lbl_800C479C:
 /* 800C47B4 000C05F4  C0 01 00 A0 */	lfs f0, 0xa0(r1)
 /* 800C47B8 000C05F8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C47BC 000C05FC  41 82 00 10 */	beq lbl_800C47CC
-/* 800C47C0 000C0600  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C47C0 000C0600  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C47C4 000C0604  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C47C8 000C0608  D0 23 80 00 */	stfs f1, -0x8000(r3)
 .global lbl_800C47CC
@@ -929,8 +929,8 @@ lbl_800C47CC:
 /* 800C47F4 000C0634  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 800C47F8 000C0638  4E 80 00 20 */	blr
 /* 800C47FC 000C063C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C4800
-lbl_800C4800:
+.global DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
+DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric:
 /* 800C4800 000C0640  94 21 FC 20 */	stwu r1, -0x3e0(r1)
 /* 800C4804 000C0644  7C 08 02 A6 */	mflr r0
 /* 800C4808 000C0648  90 01 03 E4 */	stw r0, 0x3e4(r1)
@@ -953,22 +953,22 @@ lbl_800C4800:
 /* 800C484C 000C068C  F3 01 03 68 */	psq_st f24, 0x368(r1), 0, qr0
 /* 800C4850 000C0690  DA E1 03 50 */	stfd f23, 0x350(r1)
 /* 800C4854 000C0694  F2 E1 03 58 */	psq_st f23, 0x358(r1), 0, qr0
-/* 800C4858 000C0698  4B F4 2A B1 */	bl lbl_80007308
+/* 800C4858 000C0698  4B F4 2A B1 */	bl __save_gpr
 /* 800C485C 000C069C  3D 60 43 30 */	lis r11, 0x4330
 /* 800C4860 000C06A0  6C 83 80 00 */	xoris r3, r4, 0x8000
 /* 800C4864 000C06A4  6C A0 80 00 */	xoris r0, r5, 0x8000
 /* 800C4868 000C06A8  90 61 02 DC */	stw r3, 0x2dc(r1)
-/* 800C486C 000C06AC  CB A2 8E 90 */	lfd f29, lbl_8055EE10@sda21(r2)
+/* 800C486C 000C06AC  CB A2 8E 90 */	lfd f29, "@15501"@sda21(r2)
 /* 800C4870 000C06B0  39 81 00 EC */	addi r12, r1, 0xec
 /* 800C4874 000C06B4  91 61 02 D8 */	stw r11, 0x2d8(r1)
 /* 800C4878 000C06B8  38 61 00 F8 */	addi r3, r1, 0xf8
-/* 800C487C 000C06BC  C0 82 8E 78 */	lfs f4, lbl_8055EDF8@sda21(r2)
+/* 800C487C 000C06BC  C0 82 8E 78 */	lfs f4, "@15289"@sda21(r2)
 /* 800C4880 000C06C0  7D 4F 53 78 */	mr r15, r10
 /* 800C4884 000C06C4  C8 01 02 D8 */	lfd f0, 0x2d8(r1)
 /* 800C4888 000C06C8  3A 61 00 E0 */	addi r19, r1, 0xe0
-/* 800C488C 000C06CC  C3 C2 8E 88 */	lfs f30, lbl_8055EE08@sda21(r2)
+/* 800C488C 000C06CC  C3 C2 8E 88 */	lfs f30, "@15425"@sda21(r2)
 /* 800C4890 000C06D0  EC 40 E8 28 */	fsubs f2, f0, f29
-/* 800C4894 000C06D4  C3 E2 8E 8C */	lfs f31, lbl_8055EE0C@sda21(r2)
+/* 800C4894 000C06D4  C3 E2 8E 8C */	lfs f31, "@15426"@sda21(r2)
 /* 800C4898 000C06D8  ED 9E 01 32 */	fmuls f12, f30, f4
 /* 800C489C 000C06DC  91 61 02 E0 */	stw r11, 0x2e0(r1)
 /* 800C48A0 000C06E0  EC 1F 01 32 */	fmuls f0, f31, f4
@@ -1390,7 +1390,7 @@ lbl_800C4B6C:
 /* 800C4F18 000C0D58  91 81 02 A0 */	stw r12, 0x2a0(r1)
 /* 800C4F1C 000C0D5C  90 01 02 A8 */	stw r0, 0x2a8(r1)
 /* 800C4F20 000C0D60  D0 01 02 AC */	stfs f0, 0x2ac(r1)
-/* 800C4F24 000C0D64  4B F7 03 4D */	bl lbl_80035270
+/* 800C4F24 000C0D64  4B F7 03 4D */	bl GXBegin
 /* 800C4F28 000C0D68  80 01 02 F4 */	lwz r0, 0x2f4(r1)
 /* 800C4F2C 000C0D6C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C4F30 000C0D70  41 82 01 98 */	beq lbl_800C50C8
@@ -1639,7 +1639,7 @@ lbl_800C5264:
 /* 800C52B4 000C10F4  CB 01 03 60 */	lfd f24, 0x360(r1)
 /* 800C52B8 000C10F8  E2 E1 03 58 */	psq_l f23, 0x358(r1), 0, qr0
 /* 800C52BC 000C10FC  CA E1 03 50 */	lfd f23, 0x350(r1)
-/* 800C52C0 000C1100  4B F4 20 95 */	bl lbl_80007354
+/* 800C52C0 000C1100  4B F4 20 95 */	bl __restore_gpr
 /* 800C52C4 000C1104  80 01 03 E4 */	lwz r0, 0x3e4(r1)
 /* 800C52C8 000C1108  7C 08 03 A6 */	mtlr r0
 /* 800C52CC 000C110C  38 21 03 E0 */	addi r1, r1, 0x3e0
@@ -1647,8 +1647,8 @@ lbl_800C5264:
 /* 800C52D4 000C1114  00 00 00 00 */	.4byte 0x00000000
 /* 800C52D8 000C1118  00 00 00 00 */	.4byte 0x00000000
 /* 800C52DC 000C111C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C52E0
-lbl_800C52E0:
+.global DrawSmoothStripe_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
+DrawSmoothStripe_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3:
 /* 800C52E0 000C1120  94 21 FF 10 */	stwu r1, -0xf0(r1)
 /* 800C52E4 000C1124  7C 08 02 A6 */	mflr r0
 /* 800C52E8 000C1128  90 01 00 F4 */	stw r0, 0xf4(r1)
@@ -1671,7 +1671,7 @@ lbl_800C52E0:
 /* 800C532C 000C116C  7C DD 33 78 */	mr r29, r6
 /* 800C5330 000C1170  7C FE 3B 78 */	mr r30, r7
 /* 800C5334 000C1174  7D 1F 43 78 */	mr r31, r8
-/* 800C5338 000C1178  4B FF 7D F9 */	bl lbl_800BD130
+/* 800C5338 000C1178  4B FF 7D F9 */	bl GetEmitterDrawSetting__Q34nw4r2ef15EmitterResourceFv
 /* 800C533C 000C117C  81 9A 00 00 */	lwz r12, 0x0(r26)
 /* 800C5340 000C1180  7C 77 1B 78 */	mr r23, r3
 /* 800C5344 000C1184  7F 43 D3 78 */	mr r3, r26
@@ -1682,7 +1682,7 @@ lbl_800C52E0:
 /* 800C5358 000C1198  7C 75 1B 78 */	mr r21, r3
 /* 800C535C 000C119C  7F 43 D3 78 */	mr r3, r26
 /* 800C5360 000C11A0  7E E4 BB 78 */	mr r4, r23
-/* 800C5364 000C11A4  48 00 02 CD */	bl lbl_800C5630
+/* 800C5364 000C11A4  48 00 02 CD */	bl GetDrawOrder__Q34nw4r2ef24DrawSmoothStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C5368 000C11A8  81 9A 00 00 */	lwz r12, 0x0(r26)
 /* 800C536C 000C11AC  7C 78 1B 78 */	mr r24, r3
 /* 800C5370 000C11B0  7F 43 D3 78 */	mr r3, r26
@@ -1700,13 +1700,13 @@ lbl_800C52E0:
 /* 800C53A0 000C11E0  7C 73 1B 78 */	mr r19, r3
 /* 800C53A4 000C11E4  7F 43 D3 78 */	mr r3, r26
 /* 800C53A8 000C11E8  7E C4 B3 78 */	mr r4, r22
-/* 800C53AC 000C11EC  4B FF B3 A5 */	bl lbl_800C0750
+/* 800C53AC 000C11EC  4B FF B3 A5 */	bl GetNumDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager
 /* 800C53B0 000C11F0  88 17 00 A9 */	lbz r0, 0xa9(r23)
 /* 800C53B4 000C11F4  7C 79 1B 78 */	mr r25, r3
-/* 800C53B8 000C11F8  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C53B8 000C11F8  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C53BC 000C11FC  7C 99 E1 D6 */	mullw r4, r25, r28
 /* 800C53C0 000C1200  7C 00 07 74 */	extsb r0, r0
-/* 800C53C4 000C1204  C0 02 8E 98 */	lfs f0, lbl_8055EE18@sda21(r2)
+/* 800C53C4 000C1204  C0 02 8E 98 */	lfs f0, "@15880"@sda21(r2)
 /* 800C53C8 000C1208  38 60 00 98 */	li r3, 0x98
 /* 800C53CC 000C120C  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800C53D0 000C1210  90 01 00 6C */	stw r0, 0x6c(r1)
@@ -1716,23 +1716,23 @@ lbl_800C52E0:
 /* 800C53E0 000C1220  38 80 00 00 */	li r4, 0x0
 /* 800C53E4 000C1224  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C53E8 000C1228  EF A0 00 72 */	fmuls f29, f0, f1
-/* 800C53EC 000C122C  4B F6 FE 85 */	bl lbl_80035270
+/* 800C53EC 000C122C  4B F6 FE 85 */	bl GXBegin
 /* 800C53F0 000C1230  7F 43 D3 78 */	mr r3, r26
 /* 800C53F4 000C1234  7E E4 BB 78 */	mr r4, r23
-/* 800C53F8 000C1238  4B FF B3 69 */	bl lbl_800C0760
+/* 800C53F8 000C1238  4B FF B3 69 */	bl GetStripeTexmapType__Q34nw4r2ef18DrawStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C53FC 000C123C  2C 03 00 40 */	cmpwi r3, 0x40
 /* 800C5400 000C1240  40 82 00 0C */	bne lbl_800C540C
-/* 800C5404 000C1244  C3 C2 8E 7C */	lfs f30, lbl_8055EDFC@sda21(r2)
+/* 800C5404 000C1244  C3 C2 8E 7C */	lfs f30, "@15290"@sda21(r2)
 /* 800C5408 000C1248  48 00 00 24 */	b lbl_800C542C
 .global lbl_800C540C
 lbl_800C540C:
 /* 800C540C 000C124C  38 19 FF FF */	addi r0, r25, -0x1
-/* 800C5410 000C1250  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C5410 000C1250  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C5414 000C1254  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800C5418 000C1258  90 01 00 74 */	stw r0, 0x74(r1)
 /* 800C541C 000C125C  C8 01 00 70 */	lfd f0, 0x70(r1)
 /* 800C5420 000C1260  EC 20 08 28 */	fsubs f1, f0, f1
-/* 800C5424 000C1264  4B FF B3 4D */	bl lbl_800C0770
+/* 800C5424 000C1264  4B FF B3 4D */	bl FInv__Q24nw4r4mathFf
 /* 800C5428 000C1268  FF C0 08 90 */	fmr f30, f1
 .global lbl_800C542C
 lbl_800C542C:
@@ -1745,11 +1745,11 @@ lbl_800C542C:
 .global lbl_800C5444
 lbl_800C5444:
 /* 800C5444 000C1284  38 61 00 10 */	addi r3, r1, 0x10
-/* 800C5448 000C1288  4B F5 F0 59 */	bl lbl_800244A0
+/* 800C5448 000C1288  4B F5 F0 59 */	bl DefaultSwitchThreadCallback
 /* 800C544C 000C128C  38 61 00 2C */	addi r3, r1, 0x2c
-/* 800C5450 000C1290  4B F5 F0 51 */	bl lbl_800244A0
+/* 800C5450 000C1290  4B F5 F0 51 */	bl DefaultSwitchThreadCallback
 /* 800C5454 000C1294  38 61 00 48 */	addi r3, r1, 0x48
-/* 800C5458 000C1298  4B F5 F0 49 */	bl lbl_800244A0
+/* 800C5458 000C1298  4B F5 F0 49 */	bl DefaultSwitchThreadCallback
 /* 800C545C 000C129C  7E 8C A3 78 */	mr r12, r20
 /* 800C5460 000C12A0  7E C3 B3 78 */	mr r3, r22
 /* 800C5464 000C12A4  3A 00 00 00 */	li r16, 0x0
@@ -1759,7 +1759,7 @@ lbl_800C5444:
 /* 800C5474 000C12B4  6E 40 80 00 */	xoris r0, r18, 0x8000
 /* 800C5478 000C12B8  90 01 00 6C */	stw r0, 0x6c(r1)
 /* 800C547C 000C12BC  7C 74 1B 78 */	mr r20, r3
-/* 800C5480 000C12C0  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5480 000C12C0  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C5484 000C12C4  C8 01 00 68 */	lfd f0, 0x68(r1)
 /* 800C5488 000C12C8  FC 20 E8 90 */	fmr f1, f29
 /* 800C548C 000C12CC  93 E1 00 08 */	stw r31, 0x8(r1)
@@ -1773,7 +1773,7 @@ lbl_800C5444:
 /* 800C54AC 000C12EC  7F CA F3 78 */	mr r10, r30
 /* 800C54B0 000C12F0  38 81 00 10 */	addi r4, r1, 0x10
 /* 800C54B4 000C12F4  39 34 00 AC */	addi r9, r20, 0xac
-/* 800C54B8 000C12F8  4B FF E6 19 */	bl lbl_800C3AD0
+/* 800C54B8 000C12F8  4B FF E6 19 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C54BC 000C12FC  7E 6C 9B 78 */	mr r12, r19
 /* 800C54C0 000C1300  7E C3 B3 78 */	mr r3, r22
 /* 800C54C4 000C1304  7E 84 A3 78 */	mr r4, r20
@@ -1781,7 +1781,7 @@ lbl_800C5444:
 /* 800C54CC 000C130C  7D 89 03 A6 */	mtctr r12
 /* 800C54D0 000C1310  4E 80 04 21 */	bctrl
 /* 800C54D4 000C1314  3C 80 55 55 */	lis r4, 0x5555
-/* 800C54D8 000C1318  CB E2 8E 90 */	lfd f31, lbl_8055EE10@sda21(r2)
+/* 800C54D8 000C1318  CB E2 8E 90 */	lfd f31, "@15501"@sda21(r2)
 /* 800C54DC 000C131C  7C 77 1B 78 */	mr r23, r3
 /* 800C54E0 000C1320  3B 24 55 56 */	addi r25, r4, 0x5556
 /* 800C54E4 000C1324  48 00 00 B8 */	b lbl_800C559C
@@ -1813,7 +1813,7 @@ lbl_800C54E8:
 /* 800C5544 000C1384  7F CA F3 78 */	mr r10, r30
 /* 800C5548 000C1388  7F 04 C3 78 */	mr r4, r24
 /* 800C554C 000C138C  39 37 00 AC */	addi r9, r23, 0xac
-/* 800C5550 000C1390  4B FF E5 81 */	bl lbl_800C3AD0
+/* 800C5550 000C1390  4B FF E5 81 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5554 000C1394  1D 34 00 1C */	mulli r9, r20, 0x1c
 /* 800C5558 000C1398  38 A1 00 10 */	addi r5, r1, 0x10
 /* 800C555C 000C139C  7F 43 D3 78 */	mr r3, r26
@@ -1824,7 +1824,7 @@ lbl_800C54E8:
 /* 800C5570 000C13B0  7F A8 EB 78 */	mr r8, r29
 /* 800C5574 000C13B4  7C A5 4A 14 */	add r5, r5, r9
 /* 800C5578 000C13B8  7C C6 02 14 */	add r6, r6, r0
-/* 800C557C 000C13BC  4B FF ED 55 */	bl lbl_800C42D0
+/* 800C557C 000C13BC  4B FF ED 55 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C5580 000C13C0  7E 6C 9B 78 */	mr r12, r19
 /* 800C5584 000C13C4  7E C3 B3 78 */	mr r3, r22
 /* 800C5588 000C13C8  7E E4 BB 78 */	mr r4, r23
@@ -1848,14 +1848,14 @@ lbl_800C559C:
 /* 800C55C8 000C1408  7D E7 7B 78 */	mr r7, r15
 /* 800C55CC 000C140C  7E 31 02 14 */	add r17, r17, r0
 /* 800C55D0 000C1410  7E 25 8B 78 */	mr r5, r17
-/* 800C55D4 000C1414  4B FF EC FD */	bl lbl_800C42D0
+/* 800C55D4 000C1414  4B FF EC FD */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C55D8 000C1418  7F 43 D3 78 */	mr r3, r26
 /* 800C55DC 000C141C  7E 24 8B 78 */	mr r4, r17
 /* 800C55E0 000C1420  7D E5 7B 78 */	mr r5, r15
 /* 800C55E4 000C1424  7D E6 7B 78 */	mr r6, r15
 /* 800C55E8 000C1428  7F A7 EB 78 */	mr r7, r29
-/* 800C55EC 000C142C  4B FF EF C5 */	bl lbl_800C45B0
-/* 800C55F0 000C1430  4B F5 EE B1 */	bl lbl_800244A0
+/* 800C55EC 000C142C  4B FF EF C5 */	bl DrawSectionEnd_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
+/* 800C55F0 000C1430  4B F5 EE B1 */	bl DefaultSwitchThreadCallback
 /* 800C55F4 000C1434  39 61 00 C0 */	addi r11, r1, 0xc0
 /* 800C55F8 000C1438  E3 E1 00 E8 */	psq_l f31, 0xe8(r1), 0, qr0
 /* 800C55FC 000C143C  CB E1 00 E0 */	lfd f31, 0xe0(r1)
@@ -1871,14 +1871,14 @@ lbl_800C559C:
 /* 800C5624 000C1464  00 00 00 00 */	.4byte 0x00000000
 /* 800C5628 000C1468  00 00 00 00 */	.4byte 0x00000000
 /* 800C562C 000C146C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5630
-lbl_800C5630:
+.global GetDrawOrder__Q34nw4r2ef24DrawSmoothStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
+GetDrawOrder__Q34nw4r2ef24DrawSmoothStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting:
 /* 800C5630 000C1470  A0 04 00 00 */	lhz r0, 0x0(r4)
 /* 800C5634 000C1474  54 03 05 28 */	rlwinm r3, r0, 0, 20, 20
 /* 800C5638 000C1478  4E 80 00 20 */	blr
 /* 800C563C 000C147C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5640
-lbl_800C5640:
+.global DrawSmoothStripe_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
+DrawSmoothStripe_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3:
 /* 800C5640 000C1480  94 21 FE C0 */	stwu r1, -0x140(r1)
 /* 800C5644 000C1484  7C 08 02 A6 */	mflr r0
 /* 800C5648 000C1488  90 01 01 44 */	stw r0, 0x144(r1)
@@ -1901,7 +1901,7 @@ lbl_800C5640:
 /* 800C568C 000C14CC  7C DD 33 78 */	mr r29, r6
 /* 800C5690 000C14D0  7C FE 3B 78 */	mr r30, r7
 /* 800C5694 000C14D4  7D 1F 43 78 */	mr r31, r8
-/* 800C5698 000C14D8  4B FF 7A 99 */	bl lbl_800BD130
+/* 800C5698 000C14D8  4B FF 7A 99 */	bl GetEmitterDrawSetting__Q34nw4r2ef15EmitterResourceFv
 /* 800C569C 000C14DC  81 9A 00 00 */	lwz r12, 0x0(r26)
 /* 800C56A0 000C14E0  7C 77 1B 78 */	mr r23, r3
 /* 800C56A4 000C14E4  7F 43 D3 78 */	mr r3, r26
@@ -1912,7 +1912,7 @@ lbl_800C5640:
 /* 800C56B8 000C14F8  7C 75 1B 78 */	mr r21, r3
 /* 800C56BC 000C14FC  7F 43 D3 78 */	mr r3, r26
 /* 800C56C0 000C1500  7E E4 BB 78 */	mr r4, r23
-/* 800C56C4 000C1504  4B FF FF 6D */	bl lbl_800C5630
+/* 800C56C4 000C1504  4B FF FF 6D */	bl GetDrawOrder__Q34nw4r2ef24DrawSmoothStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C56C8 000C1508  81 9A 00 00 */	lwz r12, 0x0(r26)
 /* 800C56CC 000C150C  7C 78 1B 78 */	mr r24, r3
 /* 800C56D0 000C1510  7F 43 D3 78 */	mr r3, r26
@@ -1930,13 +1930,13 @@ lbl_800C5640:
 /* 800C5700 000C1540  7C 73 1B 78 */	mr r19, r3
 /* 800C5704 000C1544  7F 43 D3 78 */	mr r3, r26
 /* 800C5708 000C1548  7E C4 B3 78 */	mr r4, r22
-/* 800C570C 000C154C  4B FF B0 45 */	bl lbl_800C0750
+/* 800C570C 000C154C  4B FF B0 45 */	bl GetNumDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager
 /* 800C5710 000C1550  88 17 00 A9 */	lbz r0, 0xa9(r23)
 /* 800C5714 000C1554  7C 79 1B 78 */	mr r25, r3
-/* 800C5718 000C1558  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5718 000C1558  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C571C 000C155C  7C 99 E1 D6 */	mullw r4, r25, r28
 /* 800C5720 000C1560  7C 00 07 74 */	extsb r0, r0
-/* 800C5724 000C1564  C0 02 8E 98 */	lfs f0, lbl_8055EE18@sda21(r2)
+/* 800C5724 000C1564  C0 02 8E 98 */	lfs f0, "@15880"@sda21(r2)
 /* 800C5728 000C1568  38 60 00 98 */	li r3, 0x98
 /* 800C572C 000C156C  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800C5730 000C1570  90 01 00 BC */	stw r0, 0xbc(r1)
@@ -1946,21 +1946,21 @@ lbl_800C5640:
 /* 800C5740 000C1580  38 80 00 00 */	li r4, 0x0
 /* 800C5744 000C1584  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C5748 000C1588  EF C0 00 72 */	fmuls f30, f0, f1
-/* 800C574C 000C158C  4B F6 FB 25 */	bl lbl_80035270
+/* 800C574C 000C158C  4B F6 FB 25 */	bl GXBegin
 /* 800C5750 000C1590  7F 43 D3 78 */	mr r3, r26
 /* 800C5754 000C1594  7E E4 BB 78 */	mr r4, r23
-/* 800C5758 000C1598  4B FF B0 09 */	bl lbl_800C0760
+/* 800C5758 000C1598  4B FF B0 09 */	bl GetStripeTexmapType__Q34nw4r2ef18DrawStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C575C 000C159C  2C 03 00 40 */	cmpwi r3, 0x40
 /* 800C5760 000C15A0  40 82 00 0C */	bne lbl_800C576C
-/* 800C5764 000C15A4  C3 A2 8E 88 */	lfs f29, lbl_8055EE08@sda21(r2)
+/* 800C5764 000C15A4  C3 A2 8E 88 */	lfs f29, "@15425"@sda21(r2)
 /* 800C5768 000C15A8  48 00 00 20 */	b lbl_800C5788
 .global lbl_800C576C
 lbl_800C576C:
 /* 800C576C 000C15AC  6F 20 80 00 */	xoris r0, r25, 0x8000
 /* 800C5770 000C15B0  90 01 00 C4 */	stw r0, 0xc4(r1)
-/* 800C5774 000C15B4  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5774 000C15B4  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C5778 000C15B8  C8 21 00 C0 */	lfd f1, 0xc0(r1)
-/* 800C577C 000C15BC  C0 02 8E 88 */	lfs f0, lbl_8055EE08@sda21(r2)
+/* 800C577C 000C15BC  C0 02 8E 88 */	lfs f0, "@15425"@sda21(r2)
 /* 800C5780 000C15C0  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C5784 000C15C4  EF A0 08 24 */	fdivs f29, f0, f1
 .global lbl_800C5788
@@ -1975,19 +1975,19 @@ lbl_800C5788:
 .global lbl_800C57A4
 lbl_800C57A4:
 /* 800C57A4 000C15E4  38 61 00 28 */	addi r3, r1, 0x28
-/* 800C57A8 000C15E8  4B F5 EC F9 */	bl lbl_800244A0
+/* 800C57A8 000C15E8  4B F5 EC F9 */	bl DefaultSwitchThreadCallback
 /* 800C57AC 000C15EC  38 61 00 44 */	addi r3, r1, 0x44
-/* 800C57B0 000C15F0  4B F5 EC F1 */	bl lbl_800244A0
+/* 800C57B0 000C15F0  4B F5 EC F1 */	bl DefaultSwitchThreadCallback
 /* 800C57B4 000C15F4  38 61 00 60 */	addi r3, r1, 0x60
-/* 800C57B8 000C15F8  4B F5 EC E9 */	bl lbl_800244A0
+/* 800C57B8 000C15F8  4B F5 EC E9 */	bl DefaultSwitchThreadCallback
 /* 800C57BC 000C15FC  38 61 00 7C */	addi r3, r1, 0x7c
-/* 800C57C0 000C1600  4B F5 EC E1 */	bl lbl_800244A0
+/* 800C57C0 000C1600  4B F5 EC E1 */	bl DefaultSwitchThreadCallback
 /* 800C57C4 000C1604  38 61 00 98 */	addi r3, r1, 0x98
-/* 800C57C8 000C1608  4B F5 EC D9 */	bl lbl_800244A0
+/* 800C57C8 000C1608  4B F5 EC D9 */	bl DefaultSwitchThreadCallback
 /* 800C57CC 000C160C  38 61 00 1C */	addi r3, r1, 0x1c
-/* 800C57D0 000C1610  4B F5 EC D1 */	bl lbl_800244A0
+/* 800C57D0 000C1610  4B F5 EC D1 */	bl DefaultSwitchThreadCallback
 /* 800C57D4 000C1614  38 61 00 10 */	addi r3, r1, 0x10
-/* 800C57D8 000C1618  4B F5 EC C9 */	bl lbl_800244A0
+/* 800C57D8 000C1618  4B F5 EC C9 */	bl DefaultSwitchThreadCallback
 /* 800C57DC 000C161C  7E 8C A3 78 */	mr r12, r20
 /* 800C57E0 000C1620  7E C3 B3 78 */	mr r3, r22
 /* 800C57E4 000C1624  7D 89 03 A6 */	mtctr r12
@@ -1995,7 +1995,7 @@ lbl_800C57A4:
 /* 800C57EC 000C162C  6E 40 80 00 */	xoris r0, r18, 0x8000
 /* 800C57F0 000C1630  90 01 00 BC */	stw r0, 0xbc(r1)
 /* 800C57F4 000C1634  7C 6F 1B 78 */	mr r15, r3
-/* 800C57F8 000C1638  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C57F8 000C1638  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C57FC 000C163C  C8 01 00 B8 */	lfd f0, 0xb8(r1)
 /* 800C5800 000C1640  FC 20 F0 90 */	fmr f1, f30
 /* 800C5804 000C1644  93 E1 00 08 */	stw r31, 0x8(r1)
@@ -2009,7 +2009,7 @@ lbl_800C57A4:
 /* 800C5824 000C1664  7F CA F3 78 */	mr r10, r30
 /* 800C5828 000C1668  38 81 00 7C */	addi r4, r1, 0x7c
 /* 800C582C 000C166C  39 2F 00 AC */	addi r9, r15, 0xac
-/* 800C5830 000C1670  4B FF E2 A1 */	bl lbl_800C3AD0
+/* 800C5830 000C1670  4B FF E2 A1 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5834 000C1674  7E 6C 9B 78 */	mr r12, r19
 /* 800C5838 000C1678  7E C3 B3 78 */	mr r3, r22
 /* 800C583C 000C167C  7D E4 7B 78 */	mr r4, r15
@@ -2019,7 +2019,7 @@ lbl_800C57A4:
 /* 800C584C 000C168C  7C 6F 1B 78 */	mr r15, r3
 /* 800C5850 000C1690  6E 40 80 00 */	xoris r0, r18, 0x8000
 /* 800C5854 000C1694  90 01 00 C4 */	stw r0, 0xc4(r1)
-/* 800C5858 000C1698  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5858 000C1698  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C585C 000C169C  FC 20 F0 90 */	fmr f1, f30
 /* 800C5860 000C16A0  C8 01 00 C0 */	lfd f0, 0xc0(r1)
 /* 800C5864 000C16A4  7F 43 D3 78 */	mr r3, r26
@@ -2033,14 +2033,14 @@ lbl_800C57A4:
 /* 800C5884 000C16C4  EC 5D 00 32 */	fmuls f2, f29, f0
 /* 800C5888 000C16C8  38 81 00 98 */	addi r4, r1, 0x98
 /* 800C588C 000C16CC  39 2F 00 AC */	addi r9, r15, 0xac
-/* 800C5890 000C16D0  4B FF E2 41 */	bl lbl_800C3AD0
+/* 800C5890 000C16D0  4B FF E2 41 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5894 000C16D4  7E 6C 9B 78 */	mr r12, r19
 /* 800C5898 000C16D8  7E C3 B3 78 */	mr r3, r22
 /* 800C589C 000C16DC  7D E4 7B 78 */	mr r4, r15
 /* 800C58A0 000C16E0  7D 89 03 A6 */	mtctr r12
 /* 800C58A4 000C16E4  4E 80 04 21 */	bctrl
 /* 800C58A8 000C16E8  3C 80 55 55 */	lis r4, 0x5555
-/* 800C58AC 000C16EC  CB E2 8E 90 */	lfd f31, lbl_8055EE10@sda21(r2)
+/* 800C58AC 000C16EC  CB E2 8E 90 */	lfd f31, "@15501"@sda21(r2)
 /* 800C58B0 000C16F0  7C 77 1B 78 */	mr r23, r3
 /* 800C58B4 000C16F4  7E 52 8A 14 */	add r18, r18, r17
 /* 800C58B8 000C16F8  3B 24 55 56 */	addi r25, r4, 0x5556
@@ -2075,7 +2075,7 @@ lbl_800C58C8:
 /* 800C5924 000C1764  7F CA F3 78 */	mr r10, r30
 /* 800C5928 000C1768  7F 04 C3 78 */	mr r4, r24
 /* 800C592C 000C176C  39 37 00 AC */	addi r9, r23, 0xac
-/* 800C5930 000C1770  4B FF E1 A1 */	bl lbl_800C3AD0
+/* 800C5930 000C1770  4B FF E1 A1 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5934 000C1774  1D 34 00 1C */	mulli r9, r20, 0x1c
 /* 800C5938 000C1778  38 A1 00 28 */	addi r5, r1, 0x28
 /* 800C593C 000C177C  7F 43 D3 78 */	mr r3, r26
@@ -2086,7 +2086,7 @@ lbl_800C58C8:
 /* 800C5950 000C1790  7F A8 EB 78 */	mr r8, r29
 /* 800C5954 000C1794  7C A5 4A 14 */	add r5, r5, r9
 /* 800C5958 000C1798  7C C6 02 14 */	add r6, r6, r0
-/* 800C595C 000C179C  4B FF E9 75 */	bl lbl_800C42D0
+/* 800C595C 000C179C  4B FF E9 75 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C5960 000C17A0  7E 6C 9B 78 */	mr r12, r19
 /* 800C5964 000C17A4  7E C3 B3 78 */	mr r3, r22
 /* 800C5968 000C17A8  7E E4 BB 78 */	mr r4, r23
@@ -2102,7 +2102,7 @@ lbl_800C597C:
 /* 800C5988 000C17C8  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 800C598C 000C17CC  1C 6F 00 1C */	mulli r3, r15, 0x1c
 /* 800C5990 000C17D0  39 E1 00 28 */	addi r15, r1, 0x28
-/* 800C5994 000C17D4  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C5994 000C17D4  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C5998 000C17D8  7F 84 E3 78 */	mr r4, r28
 /* 800C599C 000C17DC  C8 01 00 C0 */	lfd f0, 0xc0(r1)
 /* 800C59A0 000C17E0  7D E5 7B 78 */	mr r5, r15
@@ -2116,9 +2116,9 @@ lbl_800C597C:
 /* 800C59C0 000C1800  38 E1 00 7C */	addi r7, r1, 0x7c
 /* 800C59C4 000C1804  D0 01 00 94 */	stfs f0, 0x94(r1)
 /* 800C59C8 000C1808  7C A5 02 14 */	add r5, r5, r0
-/* 800C59CC 000C180C  4B FF E9 05 */	bl lbl_800C42D0
+/* 800C59CC 000C180C  4B FF E9 05 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C59D0 000C1810  7E 52 8A 14 */	add r18, r18, r17
-/* 800C59D4 000C1814  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C59D4 000C1814  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C59D8 000C1818  6E 40 80 00 */	xoris r0, r18, 0x8000
 /* 800C59DC 000C181C  90 01 00 BC */	stw r0, 0xbc(r1)
 /* 800C59E0 000C1820  7F 43 D3 78 */	mr r3, r26
@@ -2131,14 +2131,14 @@ lbl_800C597C:
 /* 800C59FC 000C183C  38 E1 00 98 */	addi r7, r1, 0x98
 /* 800C5A00 000C1840  EC 1D 00 32 */	fmuls f0, f29, f0
 /* 800C5A04 000C1844  D0 01 00 B0 */	stfs f0, 0xb0(r1)
-/* 800C5A08 000C1848  4B FF E8 C9 */	bl lbl_800C42D0
+/* 800C5A08 000C1848  4B FF E8 C9 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C5A0C 000C184C  7F 43 D3 78 */	mr r3, r26
 /* 800C5A10 000C1850  7D E4 7B 78 */	mr r4, r15
 /* 800C5A14 000C1854  7F A7 EB 78 */	mr r7, r29
 /* 800C5A18 000C1858  38 A1 00 7C */	addi r5, r1, 0x7c
 /* 800C5A1C 000C185C  38 C1 00 98 */	addi r6, r1, 0x98
-/* 800C5A20 000C1860  4B FF EB 91 */	bl lbl_800C45B0
-/* 800C5A24 000C1864  4B F5 EA 7D */	bl lbl_800244A0
+/* 800C5A20 000C1860  4B FF EB 91 */	bl DrawSectionEnd_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
+/* 800C5A24 000C1864  4B F5 EA 7D */	bl DefaultSwitchThreadCallback
 /* 800C5A28 000C1868  39 61 01 10 */	addi r11, r1, 0x110
 /* 800C5A2C 000C186C  E3 E1 01 38 */	psq_l f31, 0x138(r1), 0, qr0
 /* 800C5A30 000C1870  CB E1 01 30 */	lfd f31, 0x130(r1)
@@ -2153,8 +2153,8 @@ lbl_800C597C:
 /* 800C5A54 000C1894  4E 80 00 20 */	blr
 /* 800C5A58 000C1898  00 00 00 00 */	.4byte 0x00000000
 /* 800C5A5C 000C189C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5A60
-lbl_800C5A60:
+.global DrawSmoothStripe_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
+DrawSmoothStripe_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3:
 /* 800C5A60 000C18A0  94 21 FE B0 */	stwu r1, -0x150(r1)
 /* 800C5A64 000C18A4  7C 08 02 A6 */	mflr r0
 /* 800C5A68 000C18A8  90 01 01 54 */	stw r0, 0x154(r1)
@@ -2165,7 +2165,7 @@ lbl_800C5A60:
 /* 800C5A7C 000C18BC  F3 C1 01 38 */	psq_st f30, 0x138(r1), 0, qr0
 /* 800C5A80 000C18C0  DB A1 01 20 */	stfd f29, 0x120(r1)
 /* 800C5A84 000C18C4  F3 A1 01 28 */	psq_st f29, 0x128(r1), 0, qr0
-/* 800C5A88 000C18C8  4B F4 18 81 */	bl lbl_80007308
+/* 800C5A88 000C18C8  4B F4 18 81 */	bl __save_gpr
 /* 800C5A8C 000C18CC  83 84 00 00 */	lwz r28, 0x0(r4)
 /* 800C5A90 000C18D0  3C 00 43 30 */	lis r0, 0x4330
 /* 800C5A94 000C18D4  7C 6F 1B 78 */	mr r15, r3
@@ -2177,7 +2177,7 @@ lbl_800C5A60:
 /* 800C5AAC 000C18EC  7C D2 33 78 */	mr r18, r6
 /* 800C5AB0 000C18F0  7C F3 3B 78 */	mr r19, r7
 /* 800C5AB4 000C18F4  7D 14 43 78 */	mr r20, r8
-/* 800C5AB8 000C18F8  4B FF 76 79 */	bl lbl_800BD130
+/* 800C5AB8 000C18F8  4B FF 76 79 */	bl GetEmitterDrawSetting__Q34nw4r2ef15EmitterResourceFv
 /* 800C5ABC 000C18FC  81 8F 00 00 */	lwz r12, 0x0(r15)
 /* 800C5AC0 000C1900  7C 75 1B 78 */	mr r21, r3
 /* 800C5AC4 000C1904  7D E3 7B 78 */	mr r3, r15
@@ -2188,7 +2188,7 @@ lbl_800C5A60:
 /* 800C5AD8 000C1918  7C 7B 1B 78 */	mr r27, r3
 /* 800C5ADC 000C191C  7D E3 7B 78 */	mr r3, r15
 /* 800C5AE0 000C1920  7E A4 AB 78 */	mr r4, r21
-/* 800C5AE4 000C1924  4B FF FB 4D */	bl lbl_800C5630
+/* 800C5AE4 000C1924  4B FF FB 4D */	bl GetDrawOrder__Q34nw4r2ef24DrawSmoothStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C5AE8 000C1928  81 8F 00 00 */	lwz r12, 0x0(r15)
 /* 800C5AEC 000C192C  7C 6E 1B 78 */	mr r14, r3
 /* 800C5AF0 000C1930  7D E3 7B 78 */	mr r3, r15
@@ -2205,24 +2205,24 @@ lbl_800C5A60:
 /* 800C5B1C 000C195C  4E 80 04 21 */	bctrl
 /* 800C5B20 000C1960  88 15 00 A9 */	lbz r0, 0xa9(r21)
 /* 800C5B24 000C1964  7C 7A 1B 78 */	mr r26, r3
-/* 800C5B28 000C1968  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5B28 000C1968  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C5B2C 000C196C  7C 00 07 74 */	extsb r0, r0
-/* 800C5B30 000C1970  C0 02 8E 98 */	lfs f0, lbl_8055EE18@sda21(r2)
+/* 800C5B30 000C1970  C0 02 8E 98 */	lfs f0, "@15880"@sda21(r2)
 /* 800C5B34 000C1974  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800C5B38 000C1978  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 800C5B3C 000C197C  80 70 00 00 */	lwz r3, 0x0(r16)
 /* 800C5B40 000C1980  C8 21 00 C0 */	lfd f1, 0xc0(r1)
 /* 800C5B44 000C1984  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800C5B48 000C1988  EF A0 00 72 */	fmuls f29, f0, f1
-/* 800C5B4C 000C198C  48 00 03 B5 */	bl lbl_800C5F00
+/* 800C5B4C 000C198C  48 00 03 B5 */	bl GetYoungestDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager
 /* 800C5B50 000C1990  7C 65 1B 78 */	mr r5, r3
 /* 800C5B54 000C1994  38 61 00 40 */	addi r3, r1, 0x40
 /* 800C5B58 000C1998  38 90 00 A4 */	addi r4, r16, 0xa4
 /* 800C5B5C 000C199C  38 A5 00 AC */	addi r5, r5, 0xac
-/* 800C5B60 000C19A0  48 00 03 F1 */	bl lbl_800C5F50
+/* 800C5B60 000C19A0  48 00 03 F1 */	bl __mi__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3
 /* 800C5B64 000C19A4  7D E3 7B 78 */	mr r3, r15
 /* 800C5B68 000C19A8  7F 84 E3 78 */	mr r4, r28
-/* 800C5B6C 000C19AC  4B FF AB E5 */	bl lbl_800C0750
+/* 800C5B6C 000C19AC  4B FF AB E5 */	bl GetNumDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager
 /* 800C5B70 000C19B0  7C 76 1B 78 */	mr r22, r3
 /* 800C5B74 000C19B4  38 60 00 98 */	li r3, 0x98
 /* 800C5B78 000C19B8  38 16 00 01 */	addi r0, r22, 0x1
@@ -2230,22 +2230,22 @@ lbl_800C5A60:
 /* 800C5B80 000C19C0  7C A0 89 D6 */	mullw r5, r0, r17
 /* 800C5B84 000C19C4  38 05 00 01 */	addi r0, r5, 0x1
 /* 800C5B88 000C19C8  54 05 0C 3C */	rlwinm r5, r0, 1, 16, 30
-/* 800C5B8C 000C19CC  4B F6 F6 E5 */	bl lbl_80035270
+/* 800C5B8C 000C19CC  4B F6 F6 E5 */	bl GXBegin
 /* 800C5B90 000C19D0  7D E3 7B 78 */	mr r3, r15
 /* 800C5B94 000C19D4  7E A4 AB 78 */	mr r4, r21
-/* 800C5B98 000C19D8  4B FF AB C9 */	bl lbl_800C0760
+/* 800C5B98 000C19D8  4B FF AB C9 */	bl GetStripeTexmapType__Q34nw4r2ef18DrawStripeStrategyCFRCQ34nw4r2ef18EmitterDrawSetting
 /* 800C5B9C 000C19DC  2C 03 00 40 */	cmpwi r3, 0x40
 /* 800C5BA0 000C19E0  40 82 00 0C */	bne lbl_800C5BAC
-/* 800C5BA4 000C19E4  C3 C2 8E 7C */	lfs f30, lbl_8055EDFC@sda21(r2)
+/* 800C5BA4 000C19E4  C3 C2 8E 7C */	lfs f30, "@15290"@sda21(r2)
 /* 800C5BA8 000C19E8  48 00 00 20 */	b lbl_800C5BC8
 .global lbl_800C5BAC
 lbl_800C5BAC:
 /* 800C5BAC 000C19EC  6E C0 80 00 */	xoris r0, r22, 0x8000
 /* 800C5BB0 000C19F0  90 01 00 CC */	stw r0, 0xcc(r1)
-/* 800C5BB4 000C19F4  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C5BB4 000C19F4  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C5BB8 000C19F8  C8 01 00 C8 */	lfd f0, 0xc8(r1)
 /* 800C5BBC 000C19FC  EC 20 08 28 */	fsubs f1, f0, f1
-/* 800C5BC0 000C1A00  4B FF AB B1 */	bl lbl_800C0770
+/* 800C5BC0 000C1A00  4B FF AB B1 */	bl FInv__Q24nw4r4mathFf
 /* 800C5BC4 000C1A04  FF C0 08 90 */	fmr f30, f1
 .global lbl_800C5BC8
 lbl_800C5BC8:
@@ -2258,17 +2258,17 @@ lbl_800C5BC8:
 .global lbl_800C5BE0
 lbl_800C5BE0:
 /* 800C5BE0 000C1A20  38 61 00 68 */	addi r3, r1, 0x68
-/* 800C5BE4 000C1A24  4B F5 E8 BD */	bl lbl_800244A0
+/* 800C5BE4 000C1A24  4B F5 E8 BD */	bl DefaultSwitchThreadCallback
 /* 800C5BE8 000C1A28  38 61 00 84 */	addi r3, r1, 0x84
-/* 800C5BEC 000C1A2C  4B F5 E8 B5 */	bl lbl_800244A0
+/* 800C5BEC 000C1A2C  4B F5 E8 B5 */	bl DefaultSwitchThreadCallback
 /* 800C5BF0 000C1A30  38 61 00 A0 */	addi r3, r1, 0xa0
-/* 800C5BF4 000C1A34  4B F5 E8 AD */	bl lbl_800244A0
+/* 800C5BF4 000C1A34  4B F5 E8 AD */	bl DefaultSwitchThreadCallback
 /* 800C5BF8 000C1A38  38 61 00 34 */	addi r3, r1, 0x34
 /* 800C5BFC 000C1A3C  3A C0 00 00 */	li r22, 0x0
 /* 800C5C00 000C1A40  3A A0 00 00 */	li r21, 0x0
-/* 800C5C04 000C1A44  4B F5 E8 9D */	bl lbl_800244A0
+/* 800C5C04 000C1A44  4B F5 E8 9D */	bl DefaultSwitchThreadCallback
 /* 800C5C08 000C1A48  38 61 00 28 */	addi r3, r1, 0x28
-/* 800C5C0C 000C1A4C  4B F5 E8 95 */	bl lbl_800244A0
+/* 800C5C0C 000C1A4C  4B F5 E8 95 */	bl DefaultSwitchThreadCallback
 /* 800C5C10 000C1A50  7E EC BB 78 */	mr r12, r23
 /* 800C5C14 000C1A54  7F 83 E3 78 */	mr r3, r28
 /* 800C5C18 000C1A58  7D 89 03 A6 */	mtctr r12
@@ -2276,7 +2276,7 @@ lbl_800C5BE0:
 /* 800C5C20 000C1A60  6F 20 80 00 */	xoris r0, r25, 0x8000
 /* 800C5C24 000C1A64  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 800C5C28 000C1A68  7C 77 1B 78 */	mr r23, r3
-/* 800C5C2C 000C1A6C  C8 42 8E 90 */	lfd f2, lbl_8055EE10@sda21(r2)
+/* 800C5C2C 000C1A6C  C8 42 8E 90 */	lfd f2, "@15501"@sda21(r2)
 /* 800C5C30 000C1A70  C8 01 00 C0 */	lfd f0, 0xc0(r1)
 /* 800C5C34 000C1A74  FC 20 E8 90 */	fmr f1, f29
 /* 800C5C38 000C1A78  92 81 00 08 */	stw r20, 0x8(r1)
@@ -2290,27 +2290,27 @@ lbl_800C5BE0:
 /* 800C5C58 000C1A98  7E 6A 9B 78 */	mr r10, r19
 /* 800C5C5C 000C1A9C  38 81 00 68 */	addi r4, r1, 0x68
 /* 800C5C60 000C1AA0  39 37 00 AC */	addi r9, r23, 0xac
-/* 800C5C64 000C1AA4  4B FF DE 6D */	bl lbl_800C3AD0
+/* 800C5C64 000C1AA4  4B FF DE 6D */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5C68 000C1AA8  2C 0E 00 00 */	cmpwi r14, 0x0
 /* 800C5C6C 000C1AAC  7F 39 C2 14 */	add r25, r25, r24
 /* 800C5C70 000C1AB0  40 82 00 68 */	bne lbl_800C5CD8
 /* 800C5C74 000C1AB4  38 61 00 84 */	addi r3, r1, 0x84
 /* 800C5C78 000C1AB8  38 81 00 68 */	addi r4, r1, 0x68
 /* 800C5C7C 000C1ABC  3A A0 00 01 */	li r21, 0x1
-/* 800C5C80 000C1AC0  48 00 03 71 */	bl lbl_800C5FF0
+/* 800C5C80 000C1AC0  48 00 03 71 */	bl __as__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertex
 /* 800C5C84 000C1AC4  6F 20 80 00 */	xoris r0, r25, 0x8000
 /* 800C5C88 000C1AC8  90 01 00 CC */	stw r0, 0xcc(r1)
-/* 800C5C8C 000C1ACC  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C5C8C 000C1ACC  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C5C90 000C1AD0  38 61 00 68 */	addi r3, r1, 0x68
 /* 800C5C94 000C1AD4  C8 01 00 C8 */	lfd f0, 0xc8(r1)
 /* 800C5C98 000C1AD8  38 81 00 40 */	addi r4, r1, 0x40
 /* 800C5C9C 000C1ADC  EC 00 08 28 */	fsubs f0, f0, f1
 /* 800C5CA0 000C1AE0  EC 1E 00 32 */	fmuls f0, f30, f0
 /* 800C5CA4 000C1AE4  D0 01 00 9C */	stfs f0, 0x9c(r1)
-/* 800C5CA8 000C1AE8  48 00 02 D9 */	bl lbl_800C5F80
+/* 800C5CA8 000C1AE8  48 00 02 D9 */	bl __apl__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
 /* 800C5CAC 000C1AEC  38 61 00 74 */	addi r3, r1, 0x74
 /* 800C5CB0 000C1AF0  38 81 00 40 */	addi r4, r1, 0x40
-/* 800C5CB4 000C1AF4  48 00 02 CD */	bl lbl_800C5F80
+/* 800C5CB4 000C1AF4  48 00 02 CD */	bl __apl__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
 /* 800C5CB8 000C1AF8  38 A1 00 68 */	addi r5, r1, 0x68
 /* 800C5CBC 000C1AFC  7D E3 7B 78 */	mr r3, r15
 /* 800C5CC0 000C1B00  7E 24 8B 78 */	mr r4, r17
@@ -2318,7 +2318,7 @@ lbl_800C5BE0:
 /* 800C5CC8 000C1B08  7C A6 2B 78 */	mr r6, r5
 /* 800C5CCC 000C1B0C  7F 39 C2 14 */	add r25, r25, r24
 /* 800C5CD0 000C1B10  38 E1 00 84 */	addi r7, r1, 0x84
-/* 800C5CD4 000C1B14  4B FF E5 FD */	bl lbl_800C42D0
+/* 800C5CD4 000C1B14  4B FF E5 FD */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 .global lbl_800C5CD8
 lbl_800C5CD8:
 /* 800C5CD8 000C1B18  7F 4C D3 78 */	mr r12, r26
@@ -2327,7 +2327,7 @@ lbl_800C5CD8:
 /* 800C5CE4 000C1B24  7D 89 03 A6 */	mtctr r12
 /* 800C5CE8 000C1B28  4E 80 04 21 */	bctrl
 /* 800C5CEC 000C1B2C  3C 80 55 55 */	lis r4, 0x5555
-/* 800C5CF0 000C1B30  CB E2 8E 90 */	lfd f31, lbl_8055EE10@sda21(r2)
+/* 800C5CF0 000C1B30  CB E2 8E 90 */	lfd f31, "@15501"@sda21(r2)
 /* 800C5CF4 000C1B34  7C 7D 1B 78 */	mr r29, r3
 /* 800C5CF8 000C1B38  3B E4 55 56 */	addi r31, r4, 0x5556
 /* 800C5CFC 000C1B3C  48 00 00 B8 */	b lbl_800C5DB4
@@ -2359,7 +2359,7 @@ lbl_800C5D00:
 /* 800C5D5C 000C1B9C  7E 6A 9B 78 */	mr r10, r19
 /* 800C5D60 000C1BA0  7F C4 F3 78 */	mr r4, r30
 /* 800C5D64 000C1BA4  39 3D 00 AC */	addi r9, r29, 0xac
-/* 800C5D68 000C1BA8  4B FF DD 69 */	bl lbl_800C3AD0
+/* 800C5D68 000C1BA8  4B FF DD 69 */	bl CalcVertex__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy6VertexPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3ff
 /* 800C5D6C 000C1BAC  1D 37 00 1C */	mulli r9, r23, 0x1c
 /* 800C5D70 000C1BB0  38 A1 00 68 */	addi r5, r1, 0x68
 /* 800C5D74 000C1BB4  7D E3 7B 78 */	mr r3, r15
@@ -2370,7 +2370,7 @@ lbl_800C5D00:
 /* 800C5D88 000C1BC8  7E 48 93 78 */	mr r8, r18
 /* 800C5D8C 000C1BCC  7C A5 4A 14 */	add r5, r5, r9
 /* 800C5D90 000C1BD0  7C C6 02 14 */	add r6, r6, r0
-/* 800C5D94 000C1BD4  4B FF E5 3D */	bl lbl_800C42D0
+/* 800C5D94 000C1BD4  4B FF E5 3D */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C5D98 000C1BD8  7F 4C D3 78 */	mr r12, r26
 /* 800C5D9C 000C1BDC  7F 83 E3 78 */	mr r3, r28
 /* 800C5DA0 000C1BE0  7F A4 EB 78 */	mr r4, r29
@@ -2403,24 +2403,24 @@ lbl_800C5DB4:
 /* 800C5E04 000C1C44  7D CE 22 14 */	add r14, r14, r4
 /* 800C5E08 000C1C48  7E 10 02 14 */	add r16, r16, r0
 /* 800C5E0C 000C1C4C  38 8E 00 0C */	addi r4, r14, 0xc
-/* 800C5E10 000C1C50  4B FF E7 71 */	bl lbl_800C4580
+/* 800C5E10 000C1C50  4B FF E7 71 */	bl __pl__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3
 /* 800C5E14 000C1C54  7D C4 73 78 */	mr r4, r14
 /* 800C5E18 000C1C58  38 61 00 1C */	addi r3, r1, 0x1c
 /* 800C5E1C 000C1C5C  38 A1 00 40 */	addi r5, r1, 0x40
-/* 800C5E20 000C1C60  4B FF E7 61 */	bl lbl_800C4580
+/* 800C5E20 000C1C60  4B FF E7 61 */	bl __pl__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3
 /* 800C5E24 000C1C64  6F 20 80 00 */	xoris r0, r25, 0x8000
 /* 800C5E28 000C1C68  90 01 00 CC */	stw r0, 0xcc(r1)
-/* 800C5E2C 000C1C6C  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C5E2C 000C1C6C  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C5E30 000C1C70  38 61 00 4C */	addi r3, r1, 0x4c
 /* 800C5E34 000C1C74  C8 01 00 C8 */	lfd f0, 0xc8(r1)
 /* 800C5E38 000C1C78  38 81 00 1C */	addi r4, r1, 0x1c
 /* 800C5E3C 000C1C7C  38 A1 00 10 */	addi r5, r1, 0x10
 /* 800C5E40 000C1C80  EC 00 08 28 */	fsubs f0, f0, f1
 /* 800C5E44 000C1C84  EC 3E 00 32 */	fmuls f1, f30, f0
-/* 800C5E48 000C1C88  48 00 01 69 */	bl lbl_800C5FB0
+/* 800C5E48 000C1C88  48 00 01 69 */	bl __ct__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3f
 /* 800C5E4C 000C1C8C  7C 64 1B 78 */	mr r4, r3
 /* 800C5E50 000C1C90  7E 03 83 78 */	mr r3, r16
-/* 800C5E54 000C1C94  48 00 01 9D */	bl lbl_800C5FF0
+/* 800C5E54 000C1C94  48 00 01 9D */	bl __as__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertex
 /* 800C5E58 000C1C98  1C 13 00 1C */	mulli r0, r19, 0x1c
 /* 800C5E5C 000C1C9C  38 A1 00 68 */	addi r5, r1, 0x68
 /* 800C5E60 000C1CA0  7D E3 7B 78 */	mr r3, r15
@@ -2429,7 +2429,7 @@ lbl_800C5DB4:
 /* 800C5E6C 000C1CAC  7E 07 83 78 */	mr r7, r16
 /* 800C5E70 000C1CB0  7E 48 93 78 */	mr r8, r18
 /* 800C5E74 000C1CB4  7C A5 02 14 */	add r5, r5, r0
-/* 800C5E78 000C1CB8  4B FF E4 59 */	bl lbl_800C42D0
+/* 800C5E78 000C1CB8  4B FF E4 59 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 .global lbl_800C5E7C
 lbl_800C5E7C:
 /* 800C5E7C 000C1CBC  1C 15 00 1C */	mulli r0, r21, 0x1c
@@ -2444,14 +2444,14 @@ lbl_800C5E7C:
 /* 800C5EA0 000C1CE0  7D C7 73 78 */	mr r7, r14
 /* 800C5EA4 000C1CE4  7E 10 02 14 */	add r16, r16, r0
 /* 800C5EA8 000C1CE8  7E 05 83 78 */	mr r5, r16
-/* 800C5EAC 000C1CEC  4B FF E4 25 */	bl lbl_800C42D0
+/* 800C5EAC 000C1CEC  4B FF E4 25 */	bl DrawSection_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
 /* 800C5EB0 000C1CF0  7D E3 7B 78 */	mr r3, r15
 /* 800C5EB4 000C1CF4  7E 04 83 78 */	mr r4, r16
 /* 800C5EB8 000C1CF8  7D C5 73 78 */	mr r5, r14
 /* 800C5EBC 000C1CFC  7D C6 73 78 */	mr r6, r14
 /* 800C5EC0 000C1D00  7E 47 93 78 */	mr r7, r18
-/* 800C5EC4 000C1D04  4B FF E6 ED */	bl lbl_800C45B0
-/* 800C5EC8 000C1D08  4B F5 E5 D9 */	bl lbl_800244A0
+/* 800C5EC4 000C1D04  4B FF E6 ED */	bl DrawSectionEnd_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6VertexRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertexi
+/* 800C5EC8 000C1D08  4B F5 E5 D9 */	bl DefaultSwitchThreadCallback
 /* 800C5ECC 000C1D0C  39 61 01 20 */	addi r11, r1, 0x120
 /* 800C5ED0 000C1D10  E3 E1 01 48 */	psq_l f31, 0x148(r1), 0, qr0
 /* 800C5ED4 000C1D14  CB E1 01 40 */	lfd f31, 0x140(r1)
@@ -2459,14 +2459,14 @@ lbl_800C5E7C:
 /* 800C5EDC 000C1D1C  CB C1 01 30 */	lfd f30, 0x130(r1)
 /* 800C5EE0 000C1D20  E3 A1 01 28 */	psq_l f29, 0x128(r1), 0, qr0
 /* 800C5EE4 000C1D24  CB A1 01 20 */	lfd f29, 0x120(r1)
-/* 800C5EE8 000C1D28  4B F4 14 6D */	bl lbl_80007354
+/* 800C5EE8 000C1D28  4B F4 14 6D */	bl __restore_gpr
 /* 800C5EEC 000C1D2C  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 800C5EF0 000C1D30  7C 08 03 A6 */	mtlr r0
 /* 800C5EF4 000C1D34  38 21 01 50 */	addi r1, r1, 0x150
 /* 800C5EF8 000C1D38  4E 80 00 20 */	blr
 /* 800C5EFC 000C1D3C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5F00
-lbl_800C5F00:
+.global GetYoungestDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager
+GetYoungestDrawParticle__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManager:
 /* 800C5F00 000C1D40  80 A3 00 3C */	lwz r5, 0x3c(r3)
 /* 800C5F04 000C1D44  48 00 00 2C */	b lbl_800C5F30
 .global lbl_800C5F08
@@ -2497,8 +2497,8 @@ lbl_800C5F44:
 /* 800C5F44 000C1D84  7C A3 2B 78 */	mr r3, r5
 /* 800C5F48 000C1D88  4E 80 00 20 */	blr
 /* 800C5F4C 000C1D8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5F50
-lbl_800C5F50:
+.global __mi__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3
+__mi__Q34nw4r4math4VEC3CFRCQ34nw4r4math4VEC3:
 /* 800C5F50 000C1D90  E0 44 00 00 */	psq_l f2, 0x0(r4), 0, qr0
 /* 800C5F54 000C1D94  E0 25 00 00 */	psq_l f1, 0x0(r5), 0, qr0
 /* 800C5F58 000C1D98  10 02 08 28 */	ps_sub f0, f2, f1
@@ -2511,8 +2511,8 @@ lbl_800C5F50:
 /* 800C5F74 000C1DB4  00 00 00 00 */	.4byte 0x00000000
 /* 800C5F78 000C1DB8  00 00 00 00 */	.4byte 0x00000000
 /* 800C5F7C 000C1DBC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5F80
-lbl_800C5F80:
+.global __apl__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
+__apl__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3:
 /* 800C5F80 000C1DC0  E0 43 00 00 */	psq_l f2, 0x0(r3), 0, qr0
 /* 800C5F84 000C1DC4  E0 24 00 00 */	psq_l f1, 0x0(r4), 0, qr0
 /* 800C5F88 000C1DC8  10 02 08 2A */	ps_add f0, f2, f1
@@ -2525,8 +2525,8 @@ lbl_800C5F80:
 /* 800C5FA4 000C1DE4  00 00 00 00 */	.4byte 0x00000000
 /* 800C5FA8 000C1DE8  00 00 00 00 */	.4byte 0x00000000
 /* 800C5FAC 000C1DEC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5FB0
-lbl_800C5FB0:
+.global __ct__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3f
+__ct__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3f:
 /* 800C5FB0 000C1DF0  81 24 00 00 */	lwz r9, 0x0(r4)
 /* 800C5FB4 000C1DF4  81 04 00 04 */	lwz r8, 0x4(r4)
 /* 800C5FB8 000C1DF8  80 E4 00 08 */	lwz r7, 0x8(r4)
@@ -2543,8 +2543,8 @@ lbl_800C5FB0:
 /* 800C5FE4 000C1E24  4E 80 00 20 */	blr
 /* 800C5FE8 000C1E28  00 00 00 00 */	.4byte 0x00000000
 /* 800C5FEC 000C1E2C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C5FF0
-lbl_800C5FF0:
+.global __as__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertex
+__as__Q44nw4r2ef24DrawSmoothStripeStrategy6VertexFRCQ44nw4r2ef24DrawSmoothStripeStrategy6Vertex:
 /* 800C5FF0 000C1E30  81 24 00 00 */	lwz r9, 0x0(r4)
 /* 800C5FF4 000C1E34  81 04 00 04 */	lwz r8, 0x4(r4)
 /* 800C5FF8 000C1E38  80 E4 00 08 */	lwz r7, 0x8(r4)
@@ -2561,8 +2561,8 @@ lbl_800C5FF0:
 /* 800C6024 000C1E64  D0 03 00 18 */	stfs f0, 0x18(r3)
 /* 800C6028 000C1E68  4E 80 00 20 */	blr
 /* 800C602C 000C1E6C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C6030
-lbl_800C6030:
+.global DrawSmoothStripeTube_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
+DrawSmoothStripeTube_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii:
 /* 800C6030 000C1E70  94 21 FE F0 */	stwu r1, -0x110(r1)
 /* 800C6034 000C1E74  7C 08 02 A6 */	mflr r0
 /* 800C6038 000C1E78  90 01 01 14 */	stw r0, 0x114(r1)
@@ -2612,7 +2612,7 @@ lbl_800C6030:
 /* 800C60E8 000C1F28  7C 04 07 74 */	extsb r4, r0
 /* 800C60EC 000C1F2C  88 1A 01 4E */	lbz r0, 0x14e(r26)
 /* 800C60F0 000C1F30  7C 63 07 74 */	extsb r3, r3
-/* 800C60F4 000C1F34  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C60F4 000C1F34  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C60F8 000C1F38  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 800C60FC 000C1F3C  90 81 00 84 */	stw r4, 0x84(r1)
 /* 800C6100 000C1F40  6C 63 80 00 */	xoris r3, r3, 0x8000
@@ -2622,7 +2622,7 @@ lbl_800C6030:
 /* 800C6110 000C1F50  C8 21 00 80 */	lfd f1, 0x80(r1)
 /* 800C6114 000C1F54  C8 01 00 88 */	lfd f0, 0x88(r1)
 /* 800C6118 000C1F58  EC 41 18 28 */	fsubs f2, f1, f3
-/* 800C611C 000C1F5C  C0 22 8E 98 */	lfs f1, lbl_8055EE18@sda21(r2)
+/* 800C611C 000C1F5C  C0 22 8E 98 */	lfs f1, "@15880"@sda21(r2)
 /* 800C6120 000C1F60  EC 00 18 28 */	fsubs f0, f0, f3
 /* 800C6124 000C1F64  A0 77 00 50 */	lhz r3, 0x50(r23)
 /* 800C6128 000C1F68  EF C1 00 B2 */	fmuls f30, f1, f2
@@ -2640,7 +2640,7 @@ lbl_800C6030:
 /* 800C6158 000C1F98  48 00 00 08 */	b lbl_800C6160
 .global lbl_800C615C
 lbl_800C615C:
-/* 800C615C 000C1F9C  C3 82 8E 7C */	lfs f28, lbl_8055EDFC@sda21(r2)
+/* 800C615C 000C1F9C  C3 82 8E 7C */	lfs f28, "@15290"@sda21(r2)
 .global lbl_800C6160
 lbl_800C6160:
 /* 800C6160 000C1FA0  2C 1B 00 00 */	cmpwi r27, 0x0
@@ -2660,7 +2660,7 @@ lbl_800C6178:
 /* 800C6190 000C1FD0  6E 80 80 00 */	xoris r0, r20, 0x8000
 /* 800C6194 000C1FD4  90 01 00 8C */	stw r0, 0x8c(r1)
 /* 800C6198 000C1FD8  7C 72 1B 78 */	mr r18, r3
-/* 800C619C 000C1FDC  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C619C 000C1FDC  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C61A0 000C1FE0  C8 01 00 88 */	lfd f0, 0x88(r1)
 /* 800C61A4 000C1FE4  FC 20 F0 90 */	fmr f1, f30
 /* 800C61A8 000C1FE8  FC 40 E8 90 */	fmr f2, f29
@@ -2672,7 +2672,7 @@ lbl_800C6178:
 /* 800C61C0 000C2000  EC 7C 00 32 */	fmuls f3, f28, f0
 /* 800C61C4 000C2004  7E C8 B3 78 */	mr r8, r22
 /* 800C61C8 000C2008  38 81 00 08 */	addi r4, r1, 0x8
-/* 800C61CC 000C200C  4B FF DC A5 */	bl lbl_800C3E70
+/* 800C61CC 000C200C  4B FF DC A5 */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C61D0 000C2010  7E AC AB 78 */	mr r12, r21
 /* 800C61D4 000C2014  7E E3 BB 78 */	mr r3, r23
 /* 800C61D8 000C2018  7E 44 93 78 */	mr r4, r18
@@ -2680,7 +2680,7 @@ lbl_800C6178:
 /* 800C61E0 000C2020  7D 89 03 A6 */	mtctr r12
 /* 800C61E4 000C2024  4E 80 04 21 */	bctrl
 /* 800C61E8 000C2028  3C 80 55 55 */	lis r4, 0x5555
-/* 800C61EC 000C202C  CB E2 8E 90 */	lfd f31, lbl_8055EE10@sda21(r2)
+/* 800C61EC 000C202C  CB E2 8E 90 */	lfd f31, "@15501"@sda21(r2)
 /* 800C61F0 000C2030  7C 78 1B 78 */	mr r24, r3
 /* 800C61F4 000C2034  3B 64 55 56 */	addi r27, r4, 0x5556
 /* 800C61F8 000C2038  48 00 00 B8 */	b lbl_800C62B0
@@ -2710,7 +2710,7 @@ lbl_800C61FC:
 /* 800C6250 000C2090  7E C8 B3 78 */	mr r8, r22
 /* 800C6254 000C2094  7F 39 02 14 */	add r25, r25, r0
 /* 800C6258 000C2098  7F 24 CB 78 */	mr r4, r25
-/* 800C625C 000C209C  4B FF DC 15 */	bl lbl_800C3E70
+/* 800C625C 000C209C  4B FF DC 15 */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C6260 000C20A0  1D 72 00 28 */	mulli r11, r18, 0x28
 /* 800C6264 000C20A4  38 C1 00 08 */	addi r6, r1, 0x8
 /* 800C6268 000C20A8  88 BA 01 4C */	lbz r5, 0x14c(r26)
@@ -2723,7 +2723,7 @@ lbl_800C61FC:
 /* 800C6284 000C20C4  7F E9 FB 78 */	mr r9, r31
 /* 800C6288 000C20C8  7C C6 5A 14 */	add r6, r6, r11
 /* 800C628C 000C20CC  7C E7 02 14 */	add r7, r7, r0
-/* 800C6290 000C20D0  4B FF E5 71 */	bl lbl_800C4800
+/* 800C6290 000C20D0  4B FF E5 71 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C6294 000C20D4  7E AC AB 78 */	mr r12, r21
 /* 800C6298 000C20D8  7E E3 BB 78 */	mr r3, r23
 /* 800C629C 000C20DC  7F 04 C3 78 */	mr r4, r24
@@ -2747,7 +2747,7 @@ lbl_800C62B0:
 /* 800C62DC 000C211C  7F E9 FB 78 */	mr r9, r31
 /* 800C62E0 000C2120  7C E8 3B 78 */	mr r8, r7
 /* 800C62E4 000C2124  7C C6 02 14 */	add r6, r6, r0
-/* 800C62E8 000C2128  4B FF E5 19 */	bl lbl_800C4800
+/* 800C62E8 000C2128  4B FF E5 19 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C62EC 000C212C  39 61 00 D0 */	addi r11, r1, 0xd0
 /* 800C62F0 000C2130  E3 E1 01 08 */	psq_l f31, 0x108(r1), 0, qr0
 /* 800C62F4 000C2134  CB E1 01 00 */	lfd f31, 0x100(r1)
@@ -2765,8 +2765,8 @@ lbl_800C62B0:
 /* 800C6324 000C2164  00 00 00 00 */	.4byte 0x00000000
 /* 800C6328 000C2168  00 00 00 00 */	.4byte 0x00000000
 /* 800C632C 000C216C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C6330
-lbl_800C6330:
+.global DrawSmoothStripeTube_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
+DrawSmoothStripeTube_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii:
 /* 800C6330 000C2170  94 21 FE A0 */	stwu r1, -0x160(r1)
 /* 800C6334 000C2174  7C 08 02 A6 */	mflr r0
 /* 800C6338 000C2178  90 01 01 64 */	stw r0, 0x164(r1)
@@ -2816,7 +2816,7 @@ lbl_800C6330:
 /* 800C63E8 000C2228  7C 04 07 74 */	extsb r4, r0
 /* 800C63EC 000C222C  88 1A 01 4E */	lbz r0, 0x14e(r26)
 /* 800C63F0 000C2230  7C 63 07 74 */	extsb r3, r3
-/* 800C63F4 000C2234  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C63F4 000C2234  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C63F8 000C2238  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 800C63FC 000C223C  90 81 00 D4 */	stw r4, 0xd4(r1)
 /* 800C6400 000C2240  6C 63 80 00 */	xoris r3, r3, 0x8000
@@ -2826,19 +2826,19 @@ lbl_800C6330:
 /* 800C6410 000C2250  C8 21 00 D0 */	lfd f1, 0xd0(r1)
 /* 800C6414 000C2254  C8 01 00 D8 */	lfd f0, 0xd8(r1)
 /* 800C6418 000C2258  EC 41 18 28 */	fsubs f2, f1, f3
-/* 800C641C 000C225C  C0 22 8E 98 */	lfs f1, lbl_8055EE18@sda21(r2)
+/* 800C641C 000C225C  C0 22 8E 98 */	lfs f1, "@15880"@sda21(r2)
 /* 800C6420 000C2260  EC 00 18 28 */	fsubs f0, f0, f3
 /* 800C6424 000C2264  A0 77 00 50 */	lhz r3, 0x50(r23)
 /* 800C6428 000C2268  EF A1 00 B2 */	fmuls f29, f1, f2
 /* 800C642C 000C226C  EF 81 00 32 */	fmuls f28, f1, f0
 /* 800C6430 000C2270  40 82 00 0C */	bne lbl_800C643C
-/* 800C6434 000C2274  C3 E2 8E 88 */	lfs f31, lbl_8055EE08@sda21(r2)
+/* 800C6434 000C2274  C3 E2 8E 88 */	lfs f31, "@15425"@sda21(r2)
 /* 800C6438 000C2278  48 00 00 1C */	b lbl_800C6454
 .global lbl_800C643C
 lbl_800C643C:
 /* 800C643C 000C227C  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 800C6440 000C2280  90 01 00 D4 */	stw r0, 0xd4(r1)
-/* 800C6444 000C2284  C0 02 8E 88 */	lfs f0, lbl_8055EE08@sda21(r2)
+/* 800C6444 000C2284  C0 02 8E 88 */	lfs f0, "@15425"@sda21(r2)
 /* 800C6448 000C2288  C8 21 00 D0 */	lfd f1, 0xd0(r1)
 /* 800C644C 000C228C  EC 21 18 28 */	fsubs f1, f1, f3
 /* 800C6450 000C2290  EF E0 08 24 */	fdivs f31, f0, f1
@@ -2860,7 +2860,7 @@ lbl_800C6470:
 /* 800C6480 000C22C0  6E 80 80 00 */	xoris r0, r20, 0x8000
 /* 800C6484 000C22C4  90 01 00 DC */	stw r0, 0xdc(r1)
 /* 800C6488 000C22C8  7C 70 1B 78 */	mr r16, r3
-/* 800C648C 000C22CC  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C648C 000C22CC  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C6490 000C22D0  C8 01 00 D8 */	lfd f0, 0xd8(r1)
 /* 800C6494 000C22D4  FC 20 E8 90 */	fmr f1, f29
 /* 800C6498 000C22D8  FC 40 E0 90 */	fmr f2, f28
@@ -2872,7 +2872,7 @@ lbl_800C6470:
 /* 800C64B0 000C22F0  EC 7F 00 32 */	fmuls f3, f31, f0
 /* 800C64B4 000C22F4  7E C8 B3 78 */	mr r8, r22
 /* 800C64B8 000C22F8  38 81 00 80 */	addi r4, r1, 0x80
-/* 800C64BC 000C22FC  4B FF D9 B5 */	bl lbl_800C3E70
+/* 800C64BC 000C22FC  4B FF D9 B5 */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C64C0 000C2300  7E AC AB 78 */	mr r12, r21
 /* 800C64C4 000C2304  7E E3 BB 78 */	mr r3, r23
 /* 800C64C8 000C2308  7E 04 83 78 */	mr r4, r16
@@ -2882,7 +2882,7 @@ lbl_800C6470:
 /* 800C64D8 000C2318  7C 70 1B 78 */	mr r16, r3
 /* 800C64DC 000C231C  6E 80 80 00 */	xoris r0, r20, 0x8000
 /* 800C64E0 000C2320  90 01 00 D4 */	stw r0, 0xd4(r1)
-/* 800C64E4 000C2324  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C64E4 000C2324  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C64E8 000C2328  FC 20 E8 90 */	fmr f1, f29
 /* 800C64EC 000C232C  C8 01 00 D0 */	lfd f0, 0xd0(r1)
 /* 800C64F0 000C2330  FC 40 E0 90 */	fmr f2, f28
@@ -2894,14 +2894,14 @@ lbl_800C6470:
 /* 800C6508 000C2348  7E C8 B3 78 */	mr r8, r22
 /* 800C650C 000C234C  38 81 00 A8 */	addi r4, r1, 0xa8
 /* 800C6510 000C2350  EC 7F 00 32 */	fmuls f3, f31, f0
-/* 800C6514 000C2354  4B FF D9 5D */	bl lbl_800C3E70
+/* 800C6514 000C2354  4B FF D9 5D */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C6518 000C2358  7E AC AB 78 */	mr r12, r21
 /* 800C651C 000C235C  7E E3 BB 78 */	mr r3, r23
 /* 800C6520 000C2360  7E 04 83 78 */	mr r4, r16
 /* 800C6524 000C2364  7D 89 03 A6 */	mtctr r12
 /* 800C6528 000C2368  4E 80 04 21 */	bctrl
 /* 800C652C 000C236C  3C 80 55 55 */	lis r4, 0x5555
-/* 800C6530 000C2370  CB C2 8E 90 */	lfd f30, lbl_8055EE10@sda21(r2)
+/* 800C6530 000C2370  CB C2 8E 90 */	lfd f30, "@15501"@sda21(r2)
 /* 800C6534 000C2374  7C 78 1B 78 */	mr r24, r3
 /* 800C6538 000C2378  7E 94 9A 14 */	add r20, r20, r19
 /* 800C653C 000C237C  3B 64 55 56 */	addi r27, r4, 0x5556
@@ -2934,7 +2934,7 @@ lbl_800C654C:
 /* 800C65A0 000C23E0  7E C8 B3 78 */	mr r8, r22
 /* 800C65A4 000C23E4  7F 39 02 14 */	add r25, r25, r0
 /* 800C65A8 000C23E8  7F 24 CB 78 */	mr r4, r25
-/* 800C65AC 000C23EC  4B FF D8 C5 */	bl lbl_800C3E70
+/* 800C65AC 000C23EC  4B FF D8 C5 */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C65B0 000C23F0  1D 72 00 28 */	mulli r11, r18, 0x28
 /* 800C65B4 000C23F4  38 C1 00 08 */	addi r6, r1, 0x8
 /* 800C65B8 000C23F8  88 BA 01 4C */	lbz r5, 0x14c(r26)
@@ -2947,7 +2947,7 @@ lbl_800C654C:
 /* 800C65D4 000C2414  7F E9 FB 78 */	mr r9, r31
 /* 800C65D8 000C2418  7C C6 5A 14 */	add r6, r6, r11
 /* 800C65DC 000C241C  7C E7 02 14 */	add r7, r7, r0
-/* 800C65E0 000C2420  4B FF E2 21 */	bl lbl_800C4800
+/* 800C65E0 000C2420  4B FF E2 21 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C65E4 000C2424  7E AC AB 78 */	mr r12, r21
 /* 800C65E8 000C2428  7E E3 BB 78 */	mr r3, r23
 /* 800C65EC 000C242C  7F 04 C3 78 */	mr r4, r24
@@ -2963,7 +2963,7 @@ lbl_800C6600:
 /* 800C660C 000C244C  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 800C6610 000C2450  1C 70 00 28 */	mulli r3, r16, 0x28
 /* 800C6614 000C2454  3A 01 00 08 */	addi r16, r1, 0x8
-/* 800C6618 000C2458  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C6618 000C2458  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C661C 000C245C  7F C4 F3 78 */	mr r4, r30
 /* 800C6620 000C2460  C8 01 00 D0 */	lfd f0, 0xd0(r1)
 /* 800C6624 000C2464  7E 06 83 78 */	mr r6, r16
@@ -2979,9 +2979,9 @@ lbl_800C6600:
 /* 800C664C 000C248C  7C C6 02 14 */	add r6, r6, r0
 /* 800C6650 000C2490  88 BA 01 4C */	lbz r5, 0x14c(r26)
 /* 800C6654 000C2494  81 5D 00 D4 */	lwz r10, 0xd4(r29)
-/* 800C6658 000C2498  4B FF E1 A9 */	bl lbl_800C4800
+/* 800C6658 000C2498  4B FF E1 A9 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C665C 000C249C  7E 94 9A 14 */	add r20, r20, r19
-/* 800C6660 000C24A0  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C6660 000C24A0  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C6664 000C24A4  6E 80 80 00 */	xoris r0, r20, 0x8000
 /* 800C6668 000C24A8  90 01 00 DC */	stw r0, 0xdc(r1)
 /* 800C666C 000C24AC  7F 83 E3 78 */	mr r3, r28
@@ -2996,7 +2996,7 @@ lbl_800C6600:
 /* 800C6690 000C24D0  D0 01 00 CC */	stfs f0, 0xcc(r1)
 /* 800C6694 000C24D4  88 BA 01 4C */	lbz r5, 0x14c(r26)
 /* 800C6698 000C24D8  81 5D 00 D4 */	lwz r10, 0xd4(r29)
-/* 800C669C 000C24DC  4B FF E1 65 */	bl lbl_800C4800
+/* 800C669C 000C24DC  4B FF E1 65 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C66A0 000C24E0  39 61 01 20 */	addi r11, r1, 0x120
 /* 800C66A4 000C24E4  E3 E1 01 58 */	psq_l f31, 0x158(r1), 0, qr0
 /* 800C66A8 000C24E8  CB E1 01 50 */	lfd f31, 0x150(r1)
@@ -3013,8 +3013,8 @@ lbl_800C6600:
 /* 800C66D4 000C2514  4E 80 00 20 */	blr
 /* 800C66D8 000C2518  00 00 00 00 */	.4byte 0x00000000
 /* 800C66DC 000C251C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C66E0
-lbl_800C66E0:
+.global DrawSmoothStripeTube_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
+DrawSmoothStripeTube_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii:
 /* 800C66E0 000C2520  94 21 FE 60 */	stwu r1, -0x1a0(r1)
 /* 800C66E4 000C2524  7C 08 02 A6 */	mflr r0
 /* 800C66E8 000C2528  90 01 01 A4 */	stw r0, 0x1a4(r1)
@@ -3027,7 +3027,7 @@ lbl_800C66E0:
 /* 800C6704 000C2544  F3 A1 01 78 */	psq_st f29, 0x178(r1), 0, qr0
 /* 800C6708 000C2548  DB 81 01 60 */	stfd f28, 0x160(r1)
 /* 800C670C 000C254C  F3 81 01 68 */	psq_st f28, 0x168(r1), 0, qr0
-/* 800C6710 000C2550  4B F4 0B F9 */	bl lbl_80007308
+/* 800C6710 000C2550  4B F4 0B F9 */	bl __save_gpr
 /* 800C6714 000C2554  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 800C6718 000C2558  3C 00 43 30 */	lis r0, 0x4330
 /* 800C671C 000C255C  83 A4 00 00 */	lwz r29, 0x0(r4)
@@ -3062,9 +3062,9 @@ lbl_800C66E0:
 /* 800C6790 000C25D0  7C 7B 1B 78 */	mr r27, r3
 /* 800C6794 000C25D4  88 9E 01 45 */	lbz r4, 0x145(r30)
 /* 800C6798 000C25D8  7C 00 07 74 */	extsb r0, r0
-/* 800C679C 000C25DC  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C679C 000C25DC  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C67A0 000C25E0  7C 83 07 74 */	extsb r3, r4
-/* 800C67A4 000C25E4  C0 22 8E 98 */	lfs f1, lbl_8055EE18@sda21(r2)
+/* 800C67A4 000C25E4  C0 22 8E 98 */	lfs f1, "@15880"@sda21(r2)
 /* 800C67A8 000C25E8  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 800C67AC 000C25EC  90 61 00 EC */	stw r3, 0xec(r1)
 /* 800C67B0 000C25F0  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -3120,7 +3120,7 @@ lbl_800C681C:
 /* 800C6850 000C2690  41 82 00 2C */	beq lbl_800C687C
 /* 800C6854 000C2694  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 800C6858 000C2698  90 01 00 EC */	stw r0, 0xec(r1)
-/* 800C685C 000C269C  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C685C 000C269C  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C6860 000C26A0  C8 01 00 E8 */	lfd f0, 0xe8(r1)
 /* 800C6864 000C26A4  EC 00 08 28 */	fsubs f0, f0, f1
 /* 800C6868 000C26A8  EF A0 00 30 */	fres f29, f0
@@ -3130,7 +3130,7 @@ lbl_800C681C:
 /* 800C6878 000C26B8  48 00 00 08 */	b lbl_800C6880
 .global lbl_800C687C
 lbl_800C687C:
-/* 800C687C 000C26BC  C3 A2 8E 7C */	lfs f29, lbl_8055EDFC@sda21(r2)
+/* 800C687C 000C26BC  C3 A2 8E 7C */	lfs f29, "@15290"@sda21(r2)
 .global lbl_800C6880
 lbl_800C6880:
 /* 800C6880 000C26C0  2C 1F 00 00 */	cmpwi r31, 0x0
@@ -3150,7 +3150,7 @@ lbl_800C6898:
 /* 800C68B0 000C26F0  4E 80 04 21 */	bctrl
 /* 800C68B4 000C26F4  6F 40 80 00 */	xoris r0, r26, 0x8000
 /* 800C68B8 000C26F8  90 01 00 F4 */	stw r0, 0xf4(r1)
-/* 800C68BC 000C26FC  C8 62 8E 90 */	lfd f3, lbl_8055EE10@sda21(r2)
+/* 800C68BC 000C26FC  C8 62 8E 90 */	lfd f3, "@15501"@sda21(r2)
 /* 800C68C0 000C2700  FC 20 F8 90 */	fmr f1, f31
 /* 800C68C4 000C2704  C8 01 00 F0 */	lfd f0, 0xf0(r1)
 /* 800C68C8 000C2708  FC 40 F0 90 */	fmr f2, f30
@@ -3163,7 +3163,7 @@ lbl_800C6898:
 /* 800C68E4 000C2724  7F 88 E3 78 */	mr r8, r28
 /* 800C68E8 000C2728  EC 7D 00 32 */	fmuls f3, f29, f0
 /* 800C68EC 000C272C  38 81 00 70 */	addi r4, r1, 0x70
-/* 800C68F0 000C2730  4B FF D5 81 */	bl lbl_800C3E70
+/* 800C68F0 000C2730  4B FF D5 81 */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C68F4 000C2734  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 800C68F8 000C2738  7F 5A CA 14 */	add r26, r26, r25
 /* 800C68FC 000C273C  40 82 01 20 */	bne lbl_800C6A1C
@@ -3176,7 +3176,7 @@ lbl_800C6898:
 /* 800C6918 000C2758  90 01 00 FC */	stw r0, 0xfc(r1)
 /* 800C691C 000C275C  38 81 00 14 */	addi r4, r1, 0x14
 /* 800C6920 000C2760  1C 18 00 28 */	mulli r0, r24, 0x28
-/* 800C6924 000C2764  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C6924 000C2764  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C6928 000C2768  C8 01 00 E8 */	lfd f0, 0xe8(r1)
 /* 800C692C 000C276C  7E 06 83 78 */	mr r6, r16
 /* 800C6930 000C2770  81 41 00 74 */	lwz r10, 0x74(r1)
@@ -3237,7 +3237,7 @@ lbl_800C6898:
 /* 800C6A0C 000C284C  91 C1 00 64 */	stw r14, 0x64(r1)
 /* 800C6A10 000C2850  90 01 00 68 */	stw r0, 0x68(r1)
 /* 800C6A14 000C2854  D0 01 00 6C */	stfs f0, 0x6c(r1)
-/* 800C6A18 000C2858  4B FF DD E9 */	bl lbl_800C4800
+/* 800C6A18 000C2858  4B FF DD E9 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 .global lbl_800C6A1C
 lbl_800C6A1C:
 /* 800C6A1C 000C285C  7F 6C DB 78 */	mr r12, r27
@@ -3246,7 +3246,7 @@ lbl_800C6A1C:
 /* 800C6A28 000C2868  7D 89 03 A6 */	mtctr r12
 /* 800C6A2C 000C286C  4E 80 04 21 */	bctrl
 /* 800C6A30 000C2870  3C 80 55 55 */	lis r4, 0x5555
-/* 800C6A34 000C2874  CB 82 8E 90 */	lfd f28, lbl_8055EE10@sda21(r2)
+/* 800C6A34 000C2874  CB 82 8E 90 */	lfd f28, "@15501"@sda21(r2)
 /* 800C6A38 000C2878  7C 71 1B 78 */	mr r17, r3
 /* 800C6A3C 000C287C  39 C4 55 56 */	addi r14, r4, 0x5556
 /* 800C6A40 000C2880  48 00 00 B8 */	b lbl_800C6AF8
@@ -3276,7 +3276,7 @@ lbl_800C6A44:
 /* 800C6A98 000C28D8  7F 88 E3 78 */	mr r8, r28
 /* 800C6A9C 000C28DC  7D EF 02 14 */	add r15, r15, r0
 /* 800C6AA0 000C28E0  7D E4 7B 78 */	mr r4, r15
-/* 800C6AA4 000C28E4  4B FF D3 CD */	bl lbl_800C3E70
+/* 800C6AA4 000C28E4  4B FF D3 CD */	bl CalcVertexTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubePQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiPQ34nw4r2ef8ParticlePFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle_vfff
 /* 800C6AA8 000C28E8  1D 70 00 28 */	mulli r11, r16, 0x28
 /* 800C6AAC 000C28EC  38 C1 00 70 */	addi r6, r1, 0x70
 /* 800C6AB0 000C28F0  88 BE 01 4C */	lbz r5, 0x14c(r30)
@@ -3289,7 +3289,7 @@ lbl_800C6A44:
 /* 800C6ACC 000C290C  7E C9 B3 78 */	mr r9, r22
 /* 800C6AD0 000C2910  7C C6 5A 14 */	add r6, r6, r11
 /* 800C6AD4 000C2914  7C E7 02 14 */	add r7, r7, r0
-/* 800C6AD8 000C2918  4B FF DD 29 */	bl lbl_800C4800
+/* 800C6AD8 000C2918  4B FF DD 29 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C6ADC 000C291C  7F 6C DB 78 */	mr r12, r27
 /* 800C6AE0 000C2920  7F A3 EB 78 */	mr r3, r29
 /* 800C6AE4 000C2924  7E 24 8B 78 */	mr r4, r17
@@ -3312,7 +3312,7 @@ lbl_800C6AF8:
 /* 800C6B20 000C2960  6F 40 80 00 */	xoris r0, r26, 0x8000
 /* 800C6B24 000C2964  90 01 00 EC */	stw r0, 0xec(r1)
 /* 800C6B28 000C2968  38 81 00 14 */	addi r4, r1, 0x14
-/* 800C6B2C 000C296C  C8 22 8E 90 */	lfd f1, lbl_8055EE10@sda21(r2)
+/* 800C6B2C 000C296C  C8 22 8E 90 */	lfd f1, "@15501"@sda21(r2)
 /* 800C6B30 000C2970  54 E0 0F FE */	srwi r0, r7, 31
 /* 800C6B34 000C2974  38 C1 00 70 */	addi r6, r1, 0x70
 /* 800C6B38 000C2978  1C B8 00 28 */	mulli r5, r24, 0x28
@@ -3379,7 +3379,7 @@ lbl_800C6AF8:
 /* 800C6C2C 000C2A6C  91 E1 00 3C */	stw r15, 0x3c(r1)
 /* 800C6C30 000C2A70  91 C1 00 40 */	stw r14, 0x40(r1)
 /* 800C6C34 000C2A74  D0 01 00 44 */	stfs f0, 0x44(r1)
-/* 800C6C38 000C2A78  4B FF DB C9 */	bl lbl_800C4800
+/* 800C6C38 000C2A78  4B FF DB C9 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 .global lbl_800C6C3C
 lbl_800C6C3C:
 /* 800C6C3C 000C2A7C  1C 17 00 28 */	mulli r0, r23, 0x28
@@ -3394,7 +3394,7 @@ lbl_800C6C3C:
 /* 800C6C60 000C2AA0  7E C9 B3 78 */	mr r9, r22
 /* 800C6C64 000C2AA4  7C E8 3B 78 */	mr r8, r7
 /* 800C6C68 000C2AA8  7C C6 02 14 */	add r6, r6, r0
-/* 800C6C6C 000C2AAC  4B FF DB 95 */	bl lbl_800C4800
+/* 800C6C6C 000C2AAC  4B FF DB 95 */	bl DrawSectionTube_BSpline__Q34nw4r2ef24DrawSmoothStripeStrategyFiiRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeRCQ44nw4r2ef24DrawSmoothStripeStrategy10VertexTubeiPCQ44nw4r2ef24DrawSmoothStripeStrategy13Trigonometric
 /* 800C6C70 000C2AB0  39 61 01 60 */	addi r11, r1, 0x160
 /* 800C6C74 000C2AB4  E3 E1 01 98 */	psq_l f31, 0x198(r1), 0, qr0
 /* 800C6C78 000C2AB8  CB E1 01 90 */	lfd f31, 0x190(r1)
@@ -3404,15 +3404,15 @@ lbl_800C6C3C:
 /* 800C6C88 000C2AC8  CB A1 01 70 */	lfd f29, 0x170(r1)
 /* 800C6C8C 000C2ACC  E3 81 01 68 */	psq_l f28, 0x168(r1), 0, qr0
 /* 800C6C90 000C2AD0  CB 81 01 60 */	lfd f28, 0x160(r1)
-/* 800C6C94 000C2AD4  4B F4 06 C1 */	bl lbl_80007354
+/* 800C6C94 000C2AD4  4B F4 06 C1 */	bl __restore_gpr
 /* 800C6C98 000C2AD8  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 800C6C9C 000C2ADC  7C 08 03 A6 */	mtlr r0
 /* 800C6CA0 000C2AE0  38 21 01 A0 */	addi r1, r1, 0x1a0
 /* 800C6CA4 000C2AE4  4E 80 00 20 */	blr
 /* 800C6CA8 000C2AE8  00 00 00 00 */	.4byte 0x00000000
 /* 800C6CAC 000C2AEC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C6CB0
-lbl_800C6CB0:
+.global DrawSmoothStripeTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiib
+DrawSmoothStripeTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiib:
 /* 800C6CB0 000C2AF0  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 800C6CB4 000C2AF4  7C 08 02 A6 */	mflr r0
 /* 800C6CB8 000C2AF8  90 01 00 74 */	stw r0, 0x74(r1)
@@ -3447,18 +3447,18 @@ lbl_800C6CB0:
 /* 800C6D2C 000C2B6C  3F 20 43 30 */	lis r25, 0x4330
 /* 800C6D30 000C2B70  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 800C6D34 000C2B74  3A D5 00 08 */	addi r22, r21, 0x8
-/* 800C6D38 000C2B78  CB C2 8E 90 */	lfd f30, lbl_8055EE10@sda21(r2)
+/* 800C6D38 000C2B78  CB C2 8E 90 */	lfd f30, "@15501"@sda21(r2)
 /* 800C6D3C 000C2B7C  3A 80 00 01 */	li r20, 0x1
 /* 800C6D40 000C2B80  93 3F 00 08 */	stw r25, 0x8(r31)
-/* 800C6D44 000C2B84  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C6D44 000C2B84  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C6D48 000C2B88  C8 5F 00 08 */	lfd f2, 0x8(r31)
-/* 800C6D4C 000C2B8C  C0 22 8E 9C */	lfs f1, lbl_8055EE1C@sda21(r2)
+/* 800C6D4C 000C2B8C  C0 22 8E 9C */	lfs f1, "@16421"@sda21(r2)
 /* 800C6D50 000C2B90  EC 42 F0 28 */	fsubs f2, f2, f30
 /* 800C6D54 000C2B94  D0 15 00 00 */	stfs f0, 0x0(r21)
-/* 800C6D58 000C2B98  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6D58 000C2B98  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6D5C 000C2B9C  D0 15 00 04 */	stfs f0, 0x4(r21)
 /* 800C6D60 000C2BA0  EF A1 10 24 */	fdivs f29, f1, f2
-/* 800C6D64 000C2BA4  C3 E2 8E A0 */	lfs f31, lbl_8055EE20@sda21(r2)
+/* 800C6D64 000C2BA4  C3 E2 8E A0 */	lfs f31, "@16422"@sda21(r2)
 /* 800C6D68 000C2BA8  48 00 00 34 */	b lbl_800C6D9C
 .global lbl_800C6D6C
 lbl_800C6D6C:
@@ -3471,7 +3471,7 @@ lbl_800C6D6C:
 /* 800C6D84 000C2BC4  EC 00 F0 28 */	fsubs f0, f0, f30
 /* 800C6D88 000C2BC8  EC 1D 00 32 */	fmuls f0, f29, f0
 /* 800C6D8C 000C2BCC  EC 3F 00 32 */	fmuls f1, f31, f0
-/* 800C6D90 000C2BD0  48 03 7E 01 */	bl lbl_800FEB90
+/* 800C6D90 000C2BD0  48 03 7E 01 */	bl SinCosFIdx__Q24nw4r4mathFPfPff
 /* 800C6D94 000C2BD4  3A D6 00 08 */	addi r22, r22, 0x8
 /* 800C6D98 000C2BD8  3A 94 00 01 */	addi r20, r20, 0x1
 .global lbl_800C6D9C
@@ -3479,10 +3479,10 @@ lbl_800C6D9C:
 /* 800C6D9C 000C2BDC  7C 14 B8 00 */	cmpw r20, r23
 /* 800C6DA0 000C2BE0  41 80 FF CC */	blt lbl_800C6D6C
 /* 800C6DA4 000C2BE4  56 E0 18 38 */	slwi r0, r23, 3
-/* 800C6DA8 000C2BE8  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C6DA8 000C2BE8  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C6DAC 000C2BEC  7C 15 05 2E */	stfsx f0, r21, r0
 /* 800C6DB0 000C2BF0  7C 75 02 14 */	add r3, r21, r0
-/* 800C6DB4 000C2BF4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6DB4 000C2BF4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6DB8 000C2BF8  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 800C6DBC 000C2BFC  92 BB 00 D4 */	stw r21, 0xd4(r27)
 /* 800C6DC0 000C2C00  88 18 01 4E */	lbz r0, 0x14e(r24)
@@ -3492,13 +3492,13 @@ lbl_800C6D9C:
 /* 800C6DD0 000C2C10  2C 00 00 02 */	cmpwi r0, 0x2
 /* 800C6DD4 000C2C14  41 82 04 4C */	beq lbl_800C7220
 /* 800C6DD8 000C2C18  38 60 00 01 */	li r3, 0x1
-/* 800C6DDC 000C2C1C  4B F6 E7 85 */	bl lbl_80035560
+/* 800C6DDC 000C2C1C  4B F6 E7 85 */	bl GXSetCullMode
 /* 800C6DE0 000C2C20  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C6DE4 000C2C24  41 82 00 F0 */	beq lbl_800C6ED4
 /* 800C6DE8 000C2C28  38 60 00 98 */	li r3, 0x98
 /* 800C6DEC 000C2C2C  38 80 00 00 */	li r4, 0x0
 /* 800C6DF0 000C2C30  38 A0 00 08 */	li r5, 0x8
-/* 800C6DF4 000C2C34  4B F6 E4 7D */	bl lbl_80035270
+/* 800C6DF4 000C2C34  4B F6 E4 7D */	bl GXBegin
 /* 800C6DF8 000C2C38  38 00 00 02 */	li r0, 0x2
 /* 800C6DFC 000C2C3C  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C6E00 000C2C40  38 80 00 00 */	li r4, 0x0
@@ -3506,59 +3506,59 @@ lbl_800C6D9C:
 /* 800C6E08 000C2C48  7C 09 03 A6 */	mtctr r0
 .global lbl_800C6E0C
 lbl_800C6E0C:
-/* 800C6E0C 000C2C4C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E0C 000C2C4C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E10 000C2C50  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6E14 000C2C54  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C6E18 000C2C58  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E18 000C2C58  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E1C 000C2C5C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E20 000C2C60  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E20 000C2C60  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E24 000C2C64  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6E28 000C2C68  41 82 00 14 */	beq lbl_800C6E3C
-/* 800C6E2C 000C2C6C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E2C 000C2C6C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E30 000C2C70  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E34 000C2C74  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E34 000C2C74  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E38 000C2C78  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6E3C
 lbl_800C6E3C:
-/* 800C6E3C 000C2C7C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E3C 000C2C7C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E40 000C2C80  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6E44 000C2C84  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E48 000C2C88  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E48 000C2C88  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E4C 000C2C8C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E50 000C2C90  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E50 000C2C90  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E54 000C2C94  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6E58 000C2C98  41 82 00 14 */	beq lbl_800C6E6C
-/* 800C6E5C 000C2C9C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E5C 000C2C9C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E60 000C2CA0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E64 000C2CA4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E64 000C2CA4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E68 000C2CA8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6E6C
 lbl_800C6E6C:
-/* 800C6E6C 000C2CAC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E6C 000C2CAC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E70 000C2CB0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6E74 000C2CB4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E78 000C2CB8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E78 000C2CB8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E7C 000C2CBC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E80 000C2CC0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E80 000C2CC0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E84 000C2CC4  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6E88 000C2CC8  41 82 00 14 */	beq lbl_800C6E9C
-/* 800C6E8C 000C2CCC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E8C 000C2CCC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E90 000C2CD0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6E94 000C2CD4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E94 000C2CD4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6E98 000C2CD8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6E9C
 lbl_800C6E9C:
-/* 800C6E9C 000C2CDC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6E9C 000C2CDC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6EA0 000C2CE0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6EA4 000C2CE4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6EA8 000C2CE8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6EA8 000C2CE8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6EAC 000C2CEC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6EB0 000C2CF0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6EB0 000C2CF0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6EB4 000C2CF4  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6EB8 000C2CF8  41 82 00 14 */	beq lbl_800C6ECC
-/* 800C6EBC 000C2CFC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6EBC 000C2CFC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6EC0 000C2D00  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6EC4 000C2D04  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6EC4 000C2D04  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6EC8 000C2D08  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6ECC
 lbl_800C6ECC:
@@ -3570,15 +3570,15 @@ lbl_800C6ED4:
 /* 800C6ED8 000C2D18  7F 64 DB 78 */	mr r4, r27
 /* 800C6EDC 000C2D1C  7F 85 E3 78 */	mr r5, r28
 /* 800C6EE0 000C2D20  7F A6 EB 78 */	mr r6, r29
-/* 800C6EE4 000C2D24  4B FF F1 4D */	bl lbl_800C6030
+/* 800C6EE4 000C2D24  4B FF F1 4D */	bl DrawSmoothStripeTube_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 /* 800C6EE8 000C2D28  38 60 00 02 */	li r3, 0x2
-/* 800C6EEC 000C2D2C  4B F6 E6 75 */	bl lbl_80035560
+/* 800C6EEC 000C2D2C  4B F6 E6 75 */	bl GXSetCullMode
 /* 800C6EF0 000C2D30  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C6EF4 000C2D34  41 82 00 F0 */	beq lbl_800C6FE4
 /* 800C6EF8 000C2D38  38 60 00 98 */	li r3, 0x98
 /* 800C6EFC 000C2D3C  38 80 00 00 */	li r4, 0x0
 /* 800C6F00 000C2D40  38 A0 00 08 */	li r5, 0x8
-/* 800C6F04 000C2D44  4B F6 E3 6D */	bl lbl_80035270
+/* 800C6F04 000C2D44  4B F6 E3 6D */	bl GXBegin
 /* 800C6F08 000C2D48  38 00 00 02 */	li r0, 0x2
 /* 800C6F0C 000C2D4C  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C6F10 000C2D50  38 80 00 00 */	li r4, 0x0
@@ -3586,59 +3586,59 @@ lbl_800C6ED4:
 /* 800C6F18 000C2D58  7C 09 03 A6 */	mtctr r0
 .global lbl_800C6F1C
 lbl_800C6F1C:
-/* 800C6F1C 000C2D5C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F1C 000C2D5C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F20 000C2D60  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6F24 000C2D64  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C6F28 000C2D68  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F28 000C2D68  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F2C 000C2D6C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F30 000C2D70  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F30 000C2D70  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F34 000C2D74  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6F38 000C2D78  41 82 00 14 */	beq lbl_800C6F4C
-/* 800C6F3C 000C2D7C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F3C 000C2D7C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F40 000C2D80  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F44 000C2D84  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F44 000C2D84  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F48 000C2D88  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6F4C
 lbl_800C6F4C:
-/* 800C6F4C 000C2D8C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F4C 000C2D8C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F50 000C2D90  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6F54 000C2D94  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F58 000C2D98  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F58 000C2D98  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F5C 000C2D9C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F60 000C2DA0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F60 000C2DA0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F64 000C2DA4  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6F68 000C2DA8  41 82 00 14 */	beq lbl_800C6F7C
-/* 800C6F6C 000C2DAC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F6C 000C2DAC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F70 000C2DB0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F74 000C2DB4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F74 000C2DB4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F78 000C2DB8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6F7C
 lbl_800C6F7C:
-/* 800C6F7C 000C2DBC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F7C 000C2DBC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F80 000C2DC0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6F84 000C2DC4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F88 000C2DC8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F88 000C2DC8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F8C 000C2DCC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6F90 000C2DD0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F90 000C2DD0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6F94 000C2DD4  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6F98 000C2DD8  41 82 00 14 */	beq lbl_800C6FAC
-/* 800C6F9C 000C2DDC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6F9C 000C2DDC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FA0 000C2DE0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6FA4 000C2DE4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FA4 000C2DE4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FA8 000C2DE8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6FAC
 lbl_800C6FAC:
-/* 800C6FAC 000C2DEC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FAC 000C2DEC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FB0 000C2DF0  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C6FB4 000C2DF4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6FB8 000C2DF8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FB8 000C2DF8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FBC 000C2DFC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6FC0 000C2E00  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FC0 000C2E00  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FC4 000C2E04  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C6FC8 000C2E08  41 82 00 14 */	beq lbl_800C6FDC
-/* 800C6FCC 000C2E0C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FCC 000C2E0C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FD0 000C2E10  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C6FD4 000C2E14  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C6FD4 000C2E14  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C6FD8 000C2E18  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C6FDC
 lbl_800C6FDC:
@@ -3650,18 +3650,18 @@ lbl_800C6FE4:
 /* 800C6FE8 000C2E28  7F 64 DB 78 */	mr r4, r27
 /* 800C6FEC 000C2E2C  7F 85 E3 78 */	mr r5, r28
 /* 800C6FF0 000C2E30  7F A6 EB 78 */	mr r6, r29
-/* 800C6FF4 000C2E34  4B FF F0 3D */	bl lbl_800C6030
+/* 800C6FF4 000C2E34  4B FF F0 3D */	bl DrawSmoothStripeTube_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 /* 800C6FF8 000C2E38  48 00 04 48 */	b lbl_800C7440
 .global lbl_800C6FFC
 lbl_800C6FFC:
 /* 800C6FFC 000C2E3C  38 60 00 01 */	li r3, 0x1
-/* 800C7000 000C2E40  4B F6 E5 61 */	bl lbl_80035560
+/* 800C7000 000C2E40  4B F6 E5 61 */	bl GXSetCullMode
 /* 800C7004 000C2E44  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C7008 000C2E48  41 82 00 F0 */	beq lbl_800C70F8
 /* 800C700C 000C2E4C  38 60 00 98 */	li r3, 0x98
 /* 800C7010 000C2E50  38 80 00 00 */	li r4, 0x0
 /* 800C7014 000C2E54  38 A0 00 08 */	li r5, 0x8
-/* 800C7018 000C2E58  4B F6 E2 59 */	bl lbl_80035270
+/* 800C7018 000C2E58  4B F6 E2 59 */	bl GXBegin
 /* 800C701C 000C2E5C  38 00 00 02 */	li r0, 0x2
 /* 800C7020 000C2E60  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C7024 000C2E64  38 80 00 00 */	li r4, 0x0
@@ -3669,59 +3669,59 @@ lbl_800C6FFC:
 /* 800C702C 000C2E6C  7C 09 03 A6 */	mtctr r0
 .global lbl_800C7030
 lbl_800C7030:
-/* 800C7030 000C2E70  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7030 000C2E70  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7034 000C2E74  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C7038 000C2E78  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C703C 000C2E7C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C703C 000C2E7C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7040 000C2E80  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7044 000C2E84  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7044 000C2E84  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7048 000C2E88  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C704C 000C2E8C  41 82 00 14 */	beq lbl_800C7060
-/* 800C7050 000C2E90  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7050 000C2E90  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7054 000C2E94  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7058 000C2E98  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7058 000C2E98  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C705C 000C2E9C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7060
 lbl_800C7060:
-/* 800C7060 000C2EA0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7060 000C2EA0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7064 000C2EA4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C7068 000C2EA8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C706C 000C2EAC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C706C 000C2EAC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7070 000C2EB0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7074 000C2EB4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7074 000C2EB4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7078 000C2EB8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C707C 000C2EBC  41 82 00 14 */	beq lbl_800C7090
-/* 800C7080 000C2EC0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7080 000C2EC0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7084 000C2EC4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7088 000C2EC8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7088 000C2EC8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C708C 000C2ECC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7090
 lbl_800C7090:
-/* 800C7090 000C2ED0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7090 000C2ED0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7094 000C2ED4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C7098 000C2ED8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C709C 000C2EDC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C709C 000C2EDC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70A0 000C2EE0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C70A4 000C2EE4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70A4 000C2EE4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70A8 000C2EE8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C70AC 000C2EEC  41 82 00 14 */	beq lbl_800C70C0
-/* 800C70B0 000C2EF0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70B0 000C2EF0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70B4 000C2EF4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C70B8 000C2EF8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70B8 000C2EF8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70BC 000C2EFC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C70C0
 lbl_800C70C0:
-/* 800C70C0 000C2F00  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70C0 000C2F00  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70C4 000C2F04  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C70C8 000C2F08  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C70CC 000C2F0C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70CC 000C2F0C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70D0 000C2F10  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C70D4 000C2F14  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70D4 000C2F14  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70D8 000C2F18  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C70DC 000C2F1C  41 82 00 14 */	beq lbl_800C70F0
-/* 800C70E0 000C2F20  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70E0 000C2F20  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70E4 000C2F24  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C70E8 000C2F28  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C70E8 000C2F28  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C70EC 000C2F2C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C70F0
 lbl_800C70F0:
@@ -3733,15 +3733,15 @@ lbl_800C70F8:
 /* 800C70FC 000C2F3C  7F 64 DB 78 */	mr r4, r27
 /* 800C7100 000C2F40  7F 85 E3 78 */	mr r5, r28
 /* 800C7104 000C2F44  7F A6 EB 78 */	mr r6, r29
-/* 800C7108 000C2F48  4B FF F2 29 */	bl lbl_800C6330
+/* 800C7108 000C2F48  4B FF F2 29 */	bl DrawSmoothStripeTube_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 /* 800C710C 000C2F4C  38 60 00 02 */	li r3, 0x2
-/* 800C7110 000C2F50  4B F6 E4 51 */	bl lbl_80035560
+/* 800C7110 000C2F50  4B F6 E4 51 */	bl GXSetCullMode
 /* 800C7114 000C2F54  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C7118 000C2F58  41 82 00 F0 */	beq lbl_800C7208
 /* 800C711C 000C2F5C  38 60 00 98 */	li r3, 0x98
 /* 800C7120 000C2F60  38 80 00 00 */	li r4, 0x0
 /* 800C7124 000C2F64  38 A0 00 08 */	li r5, 0x8
-/* 800C7128 000C2F68  4B F6 E1 49 */	bl lbl_80035270
+/* 800C7128 000C2F68  4B F6 E1 49 */	bl GXBegin
 /* 800C712C 000C2F6C  38 00 00 02 */	li r0, 0x2
 /* 800C7130 000C2F70  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C7134 000C2F74  38 80 00 00 */	li r4, 0x0
@@ -3749,59 +3749,59 @@ lbl_800C70F8:
 /* 800C713C 000C2F7C  7C 09 03 A6 */	mtctr r0
 .global lbl_800C7140
 lbl_800C7140:
-/* 800C7140 000C2F80  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7140 000C2F80  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7144 000C2F84  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C7148 000C2F88  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C714C 000C2F8C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C714C 000C2F8C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7150 000C2F90  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7154 000C2F94  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7154 000C2F94  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7158 000C2F98  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C715C 000C2F9C  41 82 00 14 */	beq lbl_800C7170
-/* 800C7160 000C2FA0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7160 000C2FA0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7164 000C2FA4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7168 000C2FA8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7168 000C2FA8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C716C 000C2FAC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7170
 lbl_800C7170:
-/* 800C7170 000C2FB0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7170 000C2FB0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7174 000C2FB4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C7178 000C2FB8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C717C 000C2FBC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C717C 000C2FBC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7180 000C2FC0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7184 000C2FC4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7184 000C2FC4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7188 000C2FC8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C718C 000C2FCC  41 82 00 14 */	beq lbl_800C71A0
-/* 800C7190 000C2FD0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7190 000C2FD0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7194 000C2FD4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7198 000C2FD8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7198 000C2FD8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C719C 000C2FDC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C71A0
 lbl_800C71A0:
-/* 800C71A0 000C2FE0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71A0 000C2FE0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71A4 000C2FE4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C71A8 000C2FE8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71AC 000C2FEC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71AC 000C2FEC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71B0 000C2FF0  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71B4 000C2FF4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71B4 000C2FF4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71B8 000C2FF8  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C71BC 000C2FFC  41 82 00 14 */	beq lbl_800C71D0
-/* 800C71C0 000C3000  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71C0 000C3000  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71C4 000C3004  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71C8 000C3008  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71C8 000C3008  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71CC 000C300C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C71D0
 lbl_800C71D0:
-/* 800C71D0 000C3010  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71D0 000C3010  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71D4 000C3014  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C71D8 000C3018  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71DC 000C301C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71DC 000C301C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71E0 000C3020  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71E4 000C3024  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71E4 000C3024  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71E8 000C3028  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C71EC 000C302C  41 82 00 14 */	beq lbl_800C7200
-/* 800C71F0 000C3030  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71F0 000C3030  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71F4 000C3034  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C71F8 000C3038  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C71F8 000C3038  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C71FC 000C303C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7200
 lbl_800C7200:
@@ -3813,18 +3813,18 @@ lbl_800C7208:
 /* 800C720C 000C304C  7F 64 DB 78 */	mr r4, r27
 /* 800C7210 000C3050  7F 85 E3 78 */	mr r5, r28
 /* 800C7214 000C3054  7F A6 EB 78 */	mr r6, r29
-/* 800C7218 000C3058  4B FF F1 19 */	bl lbl_800C6330
+/* 800C7218 000C3058  4B FF F1 19 */	bl DrawSmoothStripeTube_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 /* 800C721C 000C305C  48 00 02 24 */	b lbl_800C7440
 .global lbl_800C7220
 lbl_800C7220:
 /* 800C7220 000C3060  38 60 00 01 */	li r3, 0x1
-/* 800C7224 000C3064  4B F6 E3 3D */	bl lbl_80035560
+/* 800C7224 000C3064  4B F6 E3 3D */	bl GXSetCullMode
 /* 800C7228 000C3068  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C722C 000C306C  41 82 00 F0 */	beq lbl_800C731C
 /* 800C7230 000C3070  38 60 00 98 */	li r3, 0x98
 /* 800C7234 000C3074  38 80 00 00 */	li r4, 0x0
 /* 800C7238 000C3078  38 A0 00 08 */	li r5, 0x8
-/* 800C723C 000C307C  4B F6 E0 35 */	bl lbl_80035270
+/* 800C723C 000C307C  4B F6 E0 35 */	bl GXBegin
 /* 800C7240 000C3080  38 00 00 02 */	li r0, 0x2
 /* 800C7244 000C3084  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C7248 000C3088  38 80 00 00 */	li r4, 0x0
@@ -3832,59 +3832,59 @@ lbl_800C7220:
 /* 800C7250 000C3090  7C 09 03 A6 */	mtctr r0
 .global lbl_800C7254
 lbl_800C7254:
-/* 800C7254 000C3094  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7254 000C3094  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7258 000C3098  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C725C 000C309C  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C7260 000C30A0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7260 000C30A0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7264 000C30A4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7268 000C30A8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7268 000C30A8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C726C 000C30AC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C7270 000C30B0  41 82 00 14 */	beq lbl_800C7284
-/* 800C7274 000C30B4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7274 000C30B4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7278 000C30B8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C727C 000C30BC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C727C 000C30BC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7280 000C30C0  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7284
 lbl_800C7284:
-/* 800C7284 000C30C4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7284 000C30C4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7288 000C30C8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C728C 000C30CC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7290 000C30D0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7290 000C30D0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7294 000C30D4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7298 000C30D8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7298 000C30D8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C729C 000C30DC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C72A0 000C30E0  41 82 00 14 */	beq lbl_800C72B4
-/* 800C72A4 000C30E4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72A4 000C30E4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72A8 000C30E8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72AC 000C30EC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72AC 000C30EC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72B0 000C30F0  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C72B4
 lbl_800C72B4:
-/* 800C72B4 000C30F4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72B4 000C30F4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72B8 000C30F8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C72BC 000C30FC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72C0 000C3100  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72C0 000C3100  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72C4 000C3104  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72C8 000C3108  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72C8 000C3108  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72CC 000C310C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C72D0 000C3110  41 82 00 14 */	beq lbl_800C72E4
-/* 800C72D4 000C3114  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72D4 000C3114  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72D8 000C3118  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72DC 000C311C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72DC 000C311C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72E0 000C3120  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C72E4
 lbl_800C72E4:
-/* 800C72E4 000C3124  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72E4 000C3124  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72E8 000C3128  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C72EC 000C312C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72F0 000C3130  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72F0 000C3130  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72F4 000C3134  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C72F8 000C3138  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C72F8 000C3138  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C72FC 000C313C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C7300 000C3140  41 82 00 14 */	beq lbl_800C7314
-/* 800C7304 000C3144  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7304 000C3144  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7308 000C3148  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C730C 000C314C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C730C 000C314C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7310 000C3150  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7314
 lbl_800C7314:
@@ -3896,15 +3896,15 @@ lbl_800C731C:
 /* 800C7320 000C3160  7F 64 DB 78 */	mr r4, r27
 /* 800C7324 000C3164  7F 85 E3 78 */	mr r5, r28
 /* 800C7328 000C3168  7F A6 EB 78 */	mr r6, r29
-/* 800C732C 000C316C  4B FF F3 B5 */	bl lbl_800C66E0
+/* 800C732C 000C316C  4B FF F3 B5 */	bl DrawSmoothStripeTube_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 /* 800C7330 000C3170  38 60 00 02 */	li r3, 0x2
-/* 800C7334 000C3174  4B F6 E2 2D */	bl lbl_80035560
+/* 800C7334 000C3174  4B F6 E2 2D */	bl GXSetCullMode
 /* 800C7338 000C3178  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C733C 000C317C  41 82 00 F0 */	beq lbl_800C742C
 /* 800C7340 000C3180  38 60 00 98 */	li r3, 0x98
 /* 800C7344 000C3184  38 80 00 00 */	li r4, 0x0
 /* 800C7348 000C3188  38 A0 00 08 */	li r5, 0x8
-/* 800C734C 000C318C  4B F6 DF 25 */	bl lbl_80035270
+/* 800C734C 000C318C  4B F6 DF 25 */	bl GXBegin
 /* 800C7350 000C3190  38 00 00 02 */	li r0, 0x2
 /* 800C7354 000C3194  57 A5 07 FE */	clrlwi r5, r29, 31
 /* 800C7358 000C3198  38 80 00 00 */	li r4, 0x0
@@ -3912,59 +3912,59 @@ lbl_800C731C:
 /* 800C7360 000C31A0  7C 09 03 A6 */	mtctr r0
 .global lbl_800C7364
 lbl_800C7364:
-/* 800C7364 000C31A4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7364 000C31A4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7368 000C31A8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C736C 000C31AC  D0 03 80 00 */	stfs f0, 0xCC008000@l(r3)
-/* 800C7370 000C31B0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7370 000C31B0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7374 000C31B4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7378 000C31B8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7378 000C31B8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C737C 000C31BC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C7380 000C31C0  41 82 00 14 */	beq lbl_800C7394
-/* 800C7384 000C31C4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7384 000C31C4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7388 000C31C8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C738C 000C31CC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C738C 000C31CC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7390 000C31D0  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7394
 lbl_800C7394:
-/* 800C7394 000C31D4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7394 000C31D4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7398 000C31D8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C739C 000C31DC  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73A0 000C31E0  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73A0 000C31E0  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73A4 000C31E4  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73A8 000C31E8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73A8 000C31E8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73AC 000C31EC  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C73B0 000C31F0  41 82 00 14 */	beq lbl_800C73C4
-/* 800C73B4 000C31F4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73B4 000C31F4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73B8 000C31F8  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73BC 000C31FC  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73BC 000C31FC  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73C0 000C3200  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C73C4
 lbl_800C73C4:
-/* 800C73C4 000C3204  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73C4 000C3204  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73C8 000C3208  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C73CC 000C320C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73D0 000C3210  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73D0 000C3210  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73D4 000C3214  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73D8 000C3218  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73D8 000C3218  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73DC 000C321C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C73E0 000C3220  41 82 00 14 */	beq lbl_800C73F4
-/* 800C73E4 000C3224  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73E4 000C3224  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73E8 000C3228  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C73EC 000C322C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73EC 000C322C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73F0 000C3230  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C73F4
 lbl_800C73F4:
-/* 800C73F4 000C3234  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C73F4 000C3234  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C73F8 000C3238  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800C73FC 000C323C  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7400 000C3240  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7400 000C3240  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7404 000C3244  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C7408 000C3248  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7408 000C3248  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C740C 000C324C  D0 03 80 00 */	stfs f0, -0x8000(r3)
 /* 800C7410 000C3250  41 82 00 14 */	beq lbl_800C7424
-/* 800C7414 000C3254  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7414 000C3254  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7418 000C3258  D0 03 80 00 */	stfs f0, -0x8000(r3)
-/* 800C741C 000C325C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C741C 000C325C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7420 000C3260  D0 03 80 00 */	stfs f0, -0x8000(r3)
 .global lbl_800C7424
 lbl_800C7424:
@@ -3976,7 +3976,7 @@ lbl_800C742C:
 /* 800C7430 000C3270  7F 64 DB 78 */	mr r4, r27
 /* 800C7434 000C3274  7F 85 E3 78 */	mr r5, r28
 /* 800C7438 000C3278  7F A6 EB 78 */	mr r6, r29
-/* 800C743C 000C327C  4B FF F2 A5 */	bl lbl_800C66E0
+/* 800C743C 000C327C  4B FF F2 A5 */	bl DrawSmoothStripeTube_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeii
 .global lbl_800C7440
 lbl_800C7440:
 /* 800C7440 000C3280  7F EA FB 78 */	mr r10, r31
@@ -3996,8 +3996,8 @@ lbl_800C7440:
 /* 800C7478 000C32B8  00 00 00 00 */	.4byte 0x00000000
 /* 800C747C 000C32BC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800C7480
-lbl_800C7480:
+.global Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager
+Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager:
 /* 800C7480 000C32C0  94 21 FD 80 */	stwu r1, -0x280(r1)
 /* 800C7484 000C32C4  7C 08 02 A6 */	mflr r0
 /* 800C7488 000C32C8  90 01 02 84 */	stw r0, 0x284(r1)
@@ -4016,7 +4016,7 @@ lbl_800C7480:
 /* 800C74BC 000C32FC  80 64 00 00 */	lwz r3, 0x0(r4)
 /* 800C74C0 000C3300  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 800C74C4 000C3304  90 01 01 44 */	stw r0, 0x144(r1)
-/* 800C74C8 000C3308  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
+/* 800C74C8 000C3308  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
 /* 800C74CC 000C330C  90 61 01 40 */	stw r3, 0x140(r1)
 /* 800C74D0 000C3310  80 64 00 08 */	lwz r3, 0x8(r4)
 /* 800C74D4 000C3314  80 04 00 0C */	lwz r0, 0xc(r4)
@@ -4042,7 +4042,7 @@ lbl_800C7480:
 /* 800C7524 000C3364  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800C7528 000C3368  41 82 01 14 */	beq lbl_800C763C
 /* 800C752C 000C336C  38 61 00 90 */	addi r3, r1, 0x90
-/* 800C7530 000C3370  4B F7 16 B1 */	bl lbl_80038BE0
+/* 800C7530 000C3370  4B F7 16 B1 */	bl GXGetProjectionv
 /* 800C7534 000C3374  C0 01 00 90 */	lfs f0, 0x90(r1)
 /* 800C7538 000C3378  FC 00 00 1E */	fctiwz f0, f0
 /* 800C753C 000C337C  D8 01 02 48 */	stfd f0, 0x248(r1)
@@ -4059,14 +4059,14 @@ lbl_800C7560:
 /* 800C7560 000C33A0  7F 43 D3 78 */	mr r3, r26
 /* 800C7564 000C33A4  38 9A 00 8C */	addi r4, r26, 0x8c
 /* 800C7568 000C33A8  38 A1 00 38 */	addi r5, r1, 0x38
-/* 800C756C 000C33AC  4B F6 9B 85 */	bl lbl_800310F0
+/* 800C756C 000C33AC  4B F6 9B 85 */	bl PSMTXMultVec
 /* 800C7570 000C33B0  38 61 00 38 */	addi r3, r1, 0x38
 /* 800C7574 000C33B4  7C 64 1B 78 */	mr r4, r3
-/* 800C7578 000C33B8  4B FE C4 59 */	bl lbl_800B39D0
+/* 800C7578 000C33B8  4B FE C4 59 */	bl Normalize__Q24nw4r2efFPQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3
 /* 800C757C 000C33BC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800C7580 000C33C0  41 82 00 98 */	beq lbl_800C7618
 /* 800C7584 000C33C4  C0 21 00 40 */	lfs f1, 0x40(r1)
-/* 800C7588 000C33C8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7588 000C33C8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C758C 000C33CC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C7590 000C33D0  4C 41 13 82 */	cror eq, gt, eq
 /* 800C7594 000C33D4  40 82 00 44 */	bne lbl_800C75D8
@@ -4122,7 +4122,7 @@ lbl_800C763C:
 /* 800C763C 000C347C  7F 65 DB 78 */	mr r5, r27
 /* 800C7640 000C3480  38 61 01 70 */	addi r3, r1, 0x170
 /* 800C7644 000C3484  38 81 01 40 */	addi r4, r1, 0x140
-/* 800C7648 000C3488  4B FF 32 39 */	bl lbl_800BA880
+/* 800C7648 000C3488  4B FF 32 39 */	bl __ct__Q44nw4r2ef16DrawStrategyImpl12AheadContextFRCQ34nw4r4math5MTX34PQ34nw4r2ef15ParticleManager
 /* 800C764C 000C348C  C0 01 01 98 */	lfs f0, 0x198(r1)
 /* 800C7650 000C3490  38 61 02 2C */	addi r3, r1, 0x22c
 /* 800C7654 000C3494  C0 21 01 88 */	lfs f1, 0x188(r1)
@@ -4132,14 +4132,14 @@ lbl_800C763C:
 /* 800C7664 000C34A4  D0 41 00 2C */	stfs f2, 0x2c(r1)
 /* 800C7668 000C34A8  D0 21 00 30 */	stfs f1, 0x30(r1)
 /* 800C766C 000C34AC  D0 01 00 34 */	stfs f0, 0x34(r1)
-/* 800C7670 000C34B0  48 03 7A 61 */	bl lbl_800FF0D0
+/* 800C7670 000C34B0  48 03 7A 61 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C7674 000C34B4  7F 24 CB 78 */	mr r4, r25
 /* 800C7678 000C34B8  7F E5 FB 78 */	mr r5, r31
 /* 800C767C 000C34BC  38 61 00 68 */	addi r3, r1, 0x68
 /* 800C7680 000C34C0  38 C1 01 70 */	addi r6, r1, 0x170
-/* 800C7684 000C34C4  48 00 08 1D */	bl lbl_800C7EA0
+/* 800C7684 000C34C4  48 00 08 1D */	bl GetInitialPrevAxis__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef18EmitterDrawSettingRCQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripe
 /* 800C7688 000C34C8  80 7B 00 3C */	lwz r3, 0x3c(r27)
-/* 800C768C 000C34CC  C0 22 8E 7C */	lfs f1, lbl_8055EDFC@sda21(r2)
+/* 800C768C 000C34CC  C0 22 8E 7C */	lfs f1, "@15290"@sda21(r2)
 /* 800C7690 000C34D0  48 00 00 38 */	b lbl_800C76C8
 /* 800C7694 000C34D4  60 00 00 00 */	nop
 .global lbl_800C7698
@@ -4175,7 +4175,7 @@ lbl_800C76D0:
 /* 800C76F8 000C3538  90 61 01 10 */	stw r3, 0x110(r1)
 /* 800C76FC 000C353C  20 05 00 02 */	subfic r0, r5, 0x2
 /* 800C7700 000C3540  7C 80 00 F8 */	nor r0, r4, r0
-/* 800C7704 000C3544  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
+/* 800C7704 000C3544  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
 /* 800C7708 000C3548  7C 04 FE 70 */	srawi r4, r0, 31
 /* 800C770C 000C354C  80 7A 00 08 */	lwz r3, 0x8(r26)
 /* 800C7710 000C3550  80 1A 00 0C */	lwz r0, 0xc(r26)
@@ -4203,7 +4203,7 @@ lbl_800C76D0:
 /* 800C7768 000C35A8  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800C776C 000C35AC  41 82 01 14 */	beq lbl_800C7880
 /* 800C7770 000C35B0  38 61 00 74 */	addi r3, r1, 0x74
-/* 800C7774 000C35B4  4B F7 14 6D */	bl lbl_80038BE0
+/* 800C7774 000C35B4  4B F7 14 6D */	bl GXGetProjectionv
 /* 800C7778 000C35B8  C0 01 00 74 */	lfs f0, 0x74(r1)
 /* 800C777C 000C35BC  FC 00 00 1E */	fctiwz f0, f0
 /* 800C7780 000C35C0  D8 01 02 48 */	stfd f0, 0x248(r1)
@@ -4220,14 +4220,14 @@ lbl_800C77A4:
 /* 800C77A4 000C35E4  7F 43 D3 78 */	mr r3, r26
 /* 800C77A8 000C35E8  38 9A 00 8C */	addi r4, r26, 0x8c
 /* 800C77AC 000C35EC  38 A1 00 20 */	addi r5, r1, 0x20
-/* 800C77B0 000C35F0  4B F6 99 41 */	bl lbl_800310F0
+/* 800C77B0 000C35F0  4B F6 99 41 */	bl PSMTXMultVec
 /* 800C77B4 000C35F4  38 61 00 20 */	addi r3, r1, 0x20
 /* 800C77B8 000C35F8  7C 64 1B 78 */	mr r4, r3
-/* 800C77BC 000C35FC  4B FE C2 15 */	bl lbl_800B39D0
+/* 800C77BC 000C35FC  4B FE C2 15 */	bl Normalize__Q24nw4r2efFPQ34nw4r4math4VEC3PCQ34nw4r4math4VEC3
 /* 800C77C0 000C3600  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800C77C4 000C3604  41 82 00 98 */	beq lbl_800C785C
 /* 800C77C8 000C3608  C0 21 00 28 */	lfs f1, 0x28(r1)
-/* 800C77CC 000C360C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C77CC 000C360C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C77D0 000C3610  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C77D4 000C3614  4C 41 13 82 */	cror eq, gt, eq
 /* 800C77D8 000C3618  40 82 00 44 */	bne lbl_800C781C
@@ -4283,12 +4283,12 @@ lbl_800C7880:
 /* 800C7880 000C36C0  38 61 01 10 */	addi r3, r1, 0x110
 /* 800C7884 000C36C4  38 81 01 A8 */	addi r4, r1, 0x1a8
 /* 800C7888 000C36C8  7C 65 1B 78 */	mr r5, r3
-/* 800C788C 000C36CC  4B F6 8C C5 */	bl lbl_80030550
+/* 800C788C 000C36CC  4B F6 8C C5 */	bl PSMTXConcat
 /* 800C7890 000C36D0  57 80 07 39 */	rlwinm. r0, r28, 0, 28, 28
 /* 800C7894 000C36D4  41 82 00 60 */	beq lbl_800C78F4
 /* 800C7898 000C36D8  38 61 01 10 */	addi r3, r1, 0x110
 /* 800C789C 000C36DC  38 81 00 E0 */	addi r4, r1, 0xe0
-/* 800C78A0 000C36E0  4B F6 8F 61 */	bl lbl_80030800
+/* 800C78A0 000C36E0  4B F6 8F 61 */	bl PSMTXInverse
 /* 800C78A4 000C36E4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800C78A8 000C36E8  41 82 00 2C */	beq lbl_800C78D4
 /* 800C78AC 000C36EC  C0 41 01 08 */	lfs f2, 0x108(r1)
@@ -4303,8 +4303,8 @@ lbl_800C7880:
 /* 800C78D0 000C3710  48 00 00 24 */	b lbl_800C78F4
 .global lbl_800C78D4
 lbl_800C78D4:
-/* 800C78D4 000C3714  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
-/* 800C78D8 000C3718  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C78D4 000C3714  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
+/* 800C78D8 000C3718  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C78DC 000C371C  D0 21 00 44 */	stfs f1, 0x44(r1)
 /* 800C78E0 000C3720  D0 21 00 48 */	stfs f1, 0x48(r1)
 /* 800C78E4 000C3724  D0 01 00 4C */	stfs f0, 0x4c(r1)
@@ -4352,7 +4352,7 @@ lbl_800C791C:
 /* 800C7974 000C37B4  7F 63 DB 78 */	mr r3, r27
 /* 800C7978 000C37B8  7D 89 03 A6 */	mtctr r12
 /* 800C797C 000C37BC  4E 80 04 21 */	bctrl
-/* 800C7980 000C37C0  C3 E2 8E 70 */	lfs f31, lbl_8055EDF0@sda21(r2)
+/* 800C7980 000C37C0  C3 E2 8E 70 */	lfs f31, "@15287"@sda21(r2)
 /* 800C7984 000C37C4  57 99 07 38 */	rlwinm r25, r28, 0, 28, 28
 /* 800C7988 000C37C8  7C 78 1B 78 */	mr r24, r3
 /* 800C798C 000C37CC  3B 41 00 5C */	addi r26, r1, 0x5c
@@ -4372,14 +4372,14 @@ lbl_800C799C:
 /* 800C79BC 000C37FC  7F 43 D3 78 */	mr r3, r26
 /* 800C79C0 000C3800  38 98 00 CC */	addi r4, r24, 0xcc
 /* 800C79C4 000C3804  38 A1 00 08 */	addi r5, r1, 0x8
-/* 800C79C8 000C3808  4B F6 9C 99 */	bl lbl_80031660
+/* 800C79C8 000C3808  4B F6 9C 99 */	bl PSVECCrossProduct
 /* 800C79CC 000C380C  48 00 00 14 */	b lbl_800C79E0
 .global lbl_800C79D0
 lbl_800C79D0:
 /* 800C79D0 000C3810  7F 43 D3 78 */	mr r3, r26
 /* 800C79D4 000C3814  38 81 02 38 */	addi r4, r1, 0x238
 /* 800C79D8 000C3818  38 A1 00 08 */	addi r5, r1, 0x8
-/* 800C79DC 000C381C  4B F6 9C 85 */	bl lbl_80031660
+/* 800C79DC 000C381C  4B F6 9C 85 */	bl PSVECCrossProduct
 .global lbl_800C79E0
 lbl_800C79E0:
 /* 800C79E0 000C3820  E0 3D 00 04 */	psq_l f1, 0x4(r29), 0, qr0
@@ -4393,7 +4393,7 @@ lbl_800C79E0:
 /* 800C7A00 000C3840  48 00 00 24 */	b lbl_800C7A24
 .global lbl_800C7A04
 lbl_800C7A04:
-/* 800C7A04 000C3844  48 03 70 6D */	bl lbl_800FEA70
+/* 800C7A04 000C3844  48 03 70 6D */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C7A08 000C3848  E0 1D 00 00 */	psq_l f0, 0x0(r29), 0, qr0
 /* 800C7A0C 000C384C  38 00 00 01 */	li r0, 0x1
 /* 800C7A10 000C3850  10 40 00 58 */	ps_muls0 f2, f0, f1
@@ -4416,7 +4416,7 @@ lbl_800C7A44:
 /* 800C7A44 000C3884  7F 44 D3 78 */	mr r4, r26
 /* 800C7A48 000C3888  38 61 00 08 */	addi r3, r1, 0x8
 /* 800C7A4C 000C388C  38 A1 00 14 */	addi r5, r1, 0x14
-/* 800C7A50 000C3890  4B F6 9C 11 */	bl lbl_80031660
+/* 800C7A50 000C3890  4B F6 9C 11 */	bl PSVECCrossProduct
 /* 800C7A54 000C3894  E0 3C 00 04 */	psq_l f1, 0x4(r28), 0, qr0
 /* 800C7A58 000C3898  E0 1C 80 00 */	psq_l f0, 0x0(r28), 1, qr0
 /* 800C7A5C 000C389C  10 21 00 72 */	ps_mul f1, f1, f1
@@ -4424,7 +4424,7 @@ lbl_800C7A44:
 /* 800C7A64 000C38A4  10 20 08 54 */	ps_sum0 f1, f0, f1, f1
 /* 800C7A68 000C38A8  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 800C7A6C 000C38AC  41 80 00 20 */	blt lbl_800C7A8C
-/* 800C7A70 000C38B0  48 03 70 01 */	bl lbl_800FEA70
+/* 800C7A70 000C38B0  48 03 70 01 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C7A74 000C38B4  E0 1C 00 00 */	psq_l f0, 0x0(r28), 0, qr0
 /* 800C7A78 000C38B8  10 40 00 58 */	ps_muls0 f2, f0, f1
 /* 800C7A7C 000C38BC  E0 1C 80 08 */	psq_l f0, 0x8(r28), 1, qr0
@@ -4481,21 +4481,21 @@ lbl_800C7B28:
 /* 800C7B30 000C3970  7F 64 DB 78 */	mr r4, r27
 /* 800C7B34 000C3974  7F 46 D3 78 */	mr r6, r26
 /* 800C7B38 000C3978  38 A5 00 9C */	addi r5, r5, 0x9c
-/* 800C7B3C 000C397C  4B FF 10 C5 */	bl lbl_800B8C00
+/* 800C7B3C 000C397C  4B FF 10 C5 */	bl Initialize__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef15ParticleManagerRCQ34nw4r2ef18EmitterDrawSettingRCQ34nw4r2ef8DrawInfo
 /* 800C7B40 000C3980  38 60 00 00 */	li r3, 0x0
 /* 800C7B44 000C3984  38 80 00 01 */	li r4, 0x1
 /* 800C7B48 000C3988  38 A0 00 01 */	li r5, 0x1
-/* 800C7B4C 000C398C  4B F6 D9 D5 */	bl lbl_80035520
-/* 800C7B50 000C3990  4B F6 C2 61 */	bl lbl_80033DB0
+/* 800C7B4C 000C398C  4B F6 D9 D5 */	bl GXEnableTexOffsets
+/* 800C7B50 000C3990  4B F6 C2 61 */	bl GXClearVtxDesc
 /* 800C7B54 000C3994  38 60 00 09 */	li r3, 0x9
 /* 800C7B58 000C3998  38 80 00 01 */	li r4, 0x1
-/* 800C7B5C 000C399C  4B F6 BC 45 */	bl lbl_800337A0
+/* 800C7B5C 000C399C  4B F6 BC 45 */	bl GXSetVtxDesc
 /* 800C7B60 000C39A0  88 19 00 D0 */	lbz r0, 0xd0(r25)
 /* 800C7B64 000C39A4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C7B68 000C39A8  41 82 00 10 */	beq lbl_800C7B78
 /* 800C7B6C 000C39AC  38 60 00 0D */	li r3, 0xd
 /* 800C7B70 000C39B0  38 80 00 01 */	li r4, 0x1
-/* 800C7B74 000C39B4  4B F6 BC 2D */	bl lbl_800337A0
+/* 800C7B74 000C39B4  4B F6 BC 2D */	bl GXSetVtxDesc
 .global lbl_800C7B78
 lbl_800C7B78:
 /* 800C7B78 000C39B8  38 60 00 00 */	li r3, 0x0
@@ -4503,18 +4503,18 @@ lbl_800C7B78:
 /* 800C7B80 000C39C0  38 A0 00 01 */	li r5, 0x1
 /* 800C7B84 000C39C4  38 C0 00 04 */	li r6, 0x4
 /* 800C7B88 000C39C8  38 E0 00 00 */	li r7, 0x0
-/* 800C7B8C 000C39CC  4B F6 C2 65 */	bl lbl_80033DF0
+/* 800C7B8C 000C39CC  4B F6 C2 65 */	bl GXSetVtxAttrFmt
 /* 800C7B90 000C39D0  38 60 00 00 */	li r3, 0x0
 /* 800C7B94 000C39D4  38 80 00 0D */	li r4, 0xd
 /* 800C7B98 000C39D8  38 A0 00 01 */	li r5, 0x1
 /* 800C7B9C 000C39DC  38 C0 00 04 */	li r6, 0x4
 /* 800C7BA0 000C39E0  38 E0 00 00 */	li r7, 0x0
-/* 800C7BA4 000C39E4  4B F6 C2 4D */	bl lbl_80033DF0
+/* 800C7BA4 000C39E4  4B F6 C2 4D */	bl GXSetVtxAttrFmt
 /* 800C7BA8 000C39E8  38 60 00 00 */	li r3, 0x0
-/* 800C7BAC 000C39EC  4B F7 11 95 */	bl lbl_80038D40
+/* 800C7BAC 000C39EC  4B F7 11 95 */	bl GXSetCurrentMtx
 /* 800C7BB0 000C39F0  38 61 01 10 */	addi r3, r1, 0x110
 /* 800C7BB4 000C39F4  38 80 00 00 */	li r4, 0x0
-/* 800C7BB8 000C39F8  4B F7 10 69 */	bl lbl_80038C20
+/* 800C7BB8 000C39F8  4B F7 10 69 */	bl GXLoadPosMtxImm
 /* 800C7BBC 000C39FC  88 B9 00 D0 */	lbz r5, 0xd0(r25)
 /* 800C7BC0 000C3A00  7F 23 CB 78 */	mr r3, r25
 /* 800C7BC4 000C3A04  81 99 00 00 */	lwz r12, 0x0(r25)
@@ -4538,67 +4538,67 @@ lbl_800C7B78:
 /* 800C7C0C 000C3A4C  7F 46 D3 78 */	mr r6, r26
 /* 800C7C10 000C3A50  38 E0 00 01 */	li r7, 0x1
 /* 800C7C14 000C3A54  39 00 00 00 */	li r8, 0x0
-/* 800C7C18 000C3A58  4B FF 17 59 */	bl lbl_800B9370
+/* 800C7C18 000C3A58  4B FF 17 59 */	bl SetupGP__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r2ef8ParticleRCQ34nw4r2ef18EmitterDrawSettingRCQ34nw4r2ef8DrawInfobb
 /* 800C7C1C 000C3A5C  8B DF 00 B1 */	lbz r30, 0xb1(r31)
 /* 800C7C20 000C3A60  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 800C7C24 000C3A64  40 82 00 08 */	bne lbl_800C7C2C
 /* 800C7C28 000C3A68  3B C0 00 01 */	li r30, 0x1
 .global lbl_800C7C2C
 lbl_800C7C2C:
-/* 800C7C2C 000C3A6C  88 0D EB 40 */	lbz r0, lbl_8055CF60@sda21(r13)
+/* 800C7C2C 000C3A6C  88 0D EB 40 */	lbz r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@sda21(r13)
 /* 800C7C30 000C3A70  7C 00 07 75 */	extsb. r0, r0
 /* 800C7C34 000C3A74  40 82 00 28 */	bne lbl_800C7C5C
-/* 800C7C38 000C3A78  3C 80 80 51 */	lis r4, lbl_8050AA68@ha
-/* 800C7C3C 000C3A7C  C0 22 8E 7C */	lfs f1, lbl_8055EDFC@sda21(r2)
-/* 800C7C40 000C3A80  38 64 AA 68 */	addi r3, r4, lbl_8050AA68@l
-/* 800C7C44 000C3A84  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7C38 000C3A78  3C 80 80 51 */	lis r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@ha
+/* 800C7C3C 000C3A7C  C0 22 8E 7C */	lfs f1, "@15290"@sda21(r2)
+/* 800C7C40 000C3A80  38 64 AA 68 */	addi r3, r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@l
+/* 800C7C44 000C3A84  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7C48 000C3A88  38 00 00 01 */	li r0, 0x1
 /* 800C7C4C 000C3A8C  D0 24 AA 68 */	stfs f1, -0x5598(r4)
 /* 800C7C50 000C3A90  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 800C7C54 000C3A94  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 800C7C58 000C3A98  98 0D EB 40 */	stb r0, lbl_8055CF60@sda21(r13)
+/* 800C7C58 000C3A98  98 0D EB 40 */	stb r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@sda21(r13)
 .global lbl_800C7C5C
 lbl_800C7C5C:
-/* 800C7C5C 000C3A9C  88 0D EB 41 */	lbz r0, lbl_8055CF61@sda21(r13)
+/* 800C7C5C 000C3A9C  88 0D EB 41 */	lbz r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@sda21(r13)
 /* 800C7C60 000C3AA0  7C 00 07 75 */	extsb. r0, r0
 /* 800C7C64 000C3AA4  40 82 00 28 */	bne lbl_800C7C8C
-/* 800C7C68 000C3AA8  3C 80 80 51 */	lis r4, lbl_8050AA74@ha
-/* 800C7C6C 000C3AAC  C0 22 8E 8C */	lfs f1, lbl_8055EE0C@sda21(r2)
-/* 800C7C70 000C3AB0  38 64 AA 74 */	addi r3, r4, lbl_8050AA74@l
-/* 800C7C74 000C3AB4  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C7C68 000C3AA8  3C 80 80 51 */	lis r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@ha
+/* 800C7C6C 000C3AAC  C0 22 8E 8C */	lfs f1, "@15426"@sda21(r2)
+/* 800C7C70 000C3AB0  38 64 AA 74 */	addi r3, r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@l
+/* 800C7C74 000C3AB4  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C7C78 000C3AB8  38 00 00 01 */	li r0, 0x1
 /* 800C7C7C 000C3ABC  D0 24 AA 74 */	stfs f1, -0x558c(r4)
 /* 800C7C80 000C3AC0  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 800C7C84 000C3AC4  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 800C7C88 000C3AC8  98 0D EB 41 */	stb r0, lbl_8055CF61@sda21(r13)
+/* 800C7C88 000C3AC8  98 0D EB 41 */	stb r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@sda21(r13)
 .global lbl_800C7C8C
 lbl_800C7C8C:
-/* 800C7C8C 000C3ACC  88 0D EB 42 */	lbz r0, lbl_8055CF62@sda21(r13)
+/* 800C7C8C 000C3ACC  88 0D EB 42 */	lbz r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@sda21(r13)
 /* 800C7C90 000C3AD0  7C 00 07 75 */	extsb. r0, r0
 /* 800C7C94 000C3AD4  40 82 00 28 */	bne lbl_800C7CBC
-/* 800C7C98 000C3AD8  3C 80 80 51 */	lis r4, lbl_8050AA80@ha
-/* 800C7C9C 000C3ADC  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
-/* 800C7CA0 000C3AE0  38 64 AA 80 */	addi r3, r4, lbl_8050AA80@l
-/* 800C7CA4 000C3AE4  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C7C98 000C3AD8  3C 80 80 51 */	lis r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@ha
+/* 800C7C9C 000C3ADC  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
+/* 800C7CA0 000C3AE0  38 64 AA 80 */	addi r3, r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@l
+/* 800C7CA4 000C3AE4  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C7CA8 000C3AE8  38 00 00 01 */	li r0, 0x1
 /* 800C7CAC 000C3AEC  D0 24 AA 80 */	stfs f1, -0x5580(r4)
 /* 800C7CB0 000C3AF0  D0 23 00 04 */	stfs f1, 0x4(r3)
 /* 800C7CB4 000C3AF4  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 800C7CB8 000C3AF8  98 0D EB 42 */	stb r0, lbl_8055CF62@sda21(r13)
+/* 800C7CB8 000C3AF8  98 0D EB 42 */	stb r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@sda21(r13)
 .global lbl_800C7CBC
 lbl_800C7CBC:
-/* 800C7CBC 000C3AFC  88 0D EB 43 */	lbz r0, lbl_8055CF63@sda21(r13)
+/* 800C7CBC 000C3AFC  88 0D EB 43 */	lbz r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@sda21(r13)
 /* 800C7CC0 000C3B00  7C 00 07 75 */	extsb. r0, r0
 /* 800C7CC4 000C3B04  40 82 00 28 */	bne lbl_800C7CEC
-/* 800C7CC8 000C3B08  3C 80 80 51 */	lis r4, lbl_8050AA8C@ha
-/* 800C7CCC 000C3B0C  C0 22 8E 78 */	lfs f1, lbl_8055EDF8@sda21(r2)
-/* 800C7CD0 000C3B10  38 64 AA 8C */	addi r3, r4, lbl_8050AA8C@l
-/* 800C7CD4 000C3B14  C0 02 8E 8C */	lfs f0, lbl_8055EE0C@sda21(r2)
+/* 800C7CC8 000C3B08  3C 80 80 51 */	lis r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@ha
+/* 800C7CCC 000C3B0C  C0 22 8E 78 */	lfs f1, "@15289"@sda21(r2)
+/* 800C7CD0 000C3B10  38 64 AA 8C */	addi r3, r4, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@l
+/* 800C7CD4 000C3B14  C0 02 8E 8C */	lfs f0, "@15426"@sda21(r2)
 /* 800C7CD8 000C3B18  38 00 00 01 */	li r0, 0x1
 /* 800C7CDC 000C3B1C  D0 24 AA 8C */	stfs f1, -0x5574(r4)
 /* 800C7CE0 000C3B20  D0 23 00 04 */	stfs f1, 0x4(r3)
 /* 800C7CE4 000C3B24  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 800C7CE8 000C3B28  98 0D EB 43 */	stb r0, lbl_8055CF63@sda21(r13)
+/* 800C7CE8 000C3B28  98 0D EB 43 */	stb r0, "@GUARD@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@sda21(r13)
 .global lbl_800C7CEC
 lbl_800C7CEC:
 /* 800C7CEC 000C3B2C  88 1F 00 AD */	lbz r0, 0xad(r31)
@@ -4612,39 +4612,39 @@ lbl_800C7CEC:
 /* 800C7D0C 000C3B4C  41 82 00 34 */	beq lbl_800C7D40
 /* 800C7D10 000C3B50  2C 00 00 02 */	cmpwi r0, 0x2
 /* 800C7D14 000C3B54  41 82 00 54 */	beq lbl_800C7D68
-/* 800C7D18 000C3B58  3C E0 80 51 */	lis r7, lbl_8050AA68@ha
-/* 800C7D1C 000C3B5C  3D 00 80 51 */	lis r8, lbl_8050AA74@ha
+/* 800C7D18 000C3B58  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@ha
+/* 800C7D1C 000C3B5C  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@ha
 /* 800C7D20 000C3B60  7F 23 CB 78 */	mr r3, r25
 /* 800C7D24 000C3B64  7F C5 F3 78 */	mr r5, r30
 /* 800C7D28 000C3B68  7F 86 E3 78 */	mr r6, r28
 /* 800C7D2C 000C3B6C  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7D30 000C3B70  38 E7 AA 68 */	addi r7, r7, lbl_8050AA68@l
-/* 800C7D34 000C3B74  39 08 AA 74 */	addi r8, r8, lbl_8050AA74@l
-/* 800C7D38 000C3B78  4B FF D5 A9 */	bl lbl_800C52E0
+/* 800C7D30 000C3B70  38 E7 AA 68 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@l
+/* 800C7D34 000C3B74  39 08 AA 74 */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@l
+/* 800C7D38 000C3B78  4B FF D5 A9 */	bl DrawSmoothStripe_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 /* 800C7D3C 000C3B7C  48 00 00 50 */	b lbl_800C7D8C
 .global lbl_800C7D40
 lbl_800C7D40:
-/* 800C7D40 000C3B80  3C E0 80 51 */	lis r7, lbl_8050AA68@ha
-/* 800C7D44 000C3B84  3D 00 80 51 */	lis r8, lbl_8050AA74@ha
+/* 800C7D40 000C3B80  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@ha
+/* 800C7D44 000C3B84  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@ha
 /* 800C7D48 000C3B88  7F 23 CB 78 */	mr r3, r25
 /* 800C7D4C 000C3B8C  7F C5 F3 78 */	mr r5, r30
 /* 800C7D50 000C3B90  7F 86 E3 78 */	mr r6, r28
 /* 800C7D54 000C3B94  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7D58 000C3B98  38 E7 AA 68 */	addi r7, r7, lbl_8050AA68@l
-/* 800C7D5C 000C3B9C  39 08 AA 74 */	addi r8, r8, lbl_8050AA74@l
-/* 800C7D60 000C3BA0  4B FF D8 E1 */	bl lbl_800C5640
+/* 800C7D58 000C3B98  38 E7 AA 68 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@l
+/* 800C7D5C 000C3B9C  39 08 AA 74 */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@l
+/* 800C7D60 000C3BA0  4B FF D8 E1 */	bl DrawSmoothStripe_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 /* 800C7D64 000C3BA4  48 00 00 28 */	b lbl_800C7D8C
 .global lbl_800C7D68
 lbl_800C7D68:
-/* 800C7D68 000C3BA8  3C E0 80 51 */	lis r7, lbl_8050AA68@ha
-/* 800C7D6C 000C3BAC  3D 00 80 51 */	lis r8, lbl_8050AA74@ha
+/* 800C7D68 000C3BA8  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@ha
+/* 800C7D6C 000C3BAC  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@ha
 /* 800C7D70 000C3BB0  7F 23 CB 78 */	mr r3, r25
 /* 800C7D74 000C3BB4  7F C5 F3 78 */	mr r5, r30
 /* 800C7D78 000C3BB8  7F 86 E3 78 */	mr r6, r28
 /* 800C7D7C 000C3BBC  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7D80 000C3BC0  38 E7 AA 68 */	addi r7, r7, lbl_8050AA68@l
-/* 800C7D84 000C3BC4  39 08 AA 74 */	addi r8, r8, lbl_8050AA74@l
-/* 800C7D88 000C3BC8  4B FF DC D9 */	bl lbl_800C5A60
+/* 800C7D80 000C3BC0  38 E7 AA 68 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v0"@l
+/* 800C7D84 000C3BC4  39 08 AA 74 */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v1@0"@l
+/* 800C7D88 000C3BC8  4B FF DC D9 */	bl DrawSmoothStripe_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 .global lbl_800C7D8C
 lbl_800C7D8C:
 /* 800C7D8C 000C3BCC  88 1F 00 AD */	lbz r0, 0xad(r31)
@@ -4658,39 +4658,39 @@ lbl_800C7D8C:
 /* 800C7DAC 000C3BEC  41 82 00 34 */	beq lbl_800C7DE0
 /* 800C7DB0 000C3BF0  2C 00 00 02 */	cmpwi r0, 0x2
 /* 800C7DB4 000C3BF4  41 82 00 54 */	beq lbl_800C7E08
-/* 800C7DB8 000C3BF8  3C E0 80 51 */	lis r7, lbl_8050AA80@ha
-/* 800C7DBC 000C3BFC  3D 00 80 51 */	lis r8, lbl_8050AA8C@ha
+/* 800C7DB8 000C3BF8  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@ha
+/* 800C7DBC 000C3BFC  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@ha
 /* 800C7DC0 000C3C00  7F 23 CB 78 */	mr r3, r25
 /* 800C7DC4 000C3C04  7F C5 F3 78 */	mr r5, r30
 /* 800C7DC8 000C3C08  7F 86 E3 78 */	mr r6, r28
 /* 800C7DCC 000C3C0C  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7DD0 000C3C10  38 E7 AA 80 */	addi r7, r7, lbl_8050AA80@l
-/* 800C7DD4 000C3C14  39 08 AA 8C */	addi r8, r8, lbl_8050AA8C@l
-/* 800C7DD8 000C3C18  4B FF D5 09 */	bl lbl_800C52E0
+/* 800C7DD0 000C3C10  38 E7 AA 80 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@l
+/* 800C7DD4 000C3C14  39 08 AA 8C */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@l
+/* 800C7DD8 000C3C18  4B FF D5 09 */	bl DrawSmoothStripe_BSpline_ConnectNone__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 /* 800C7DDC 000C3C1C  48 00 00 9C */	b lbl_800C7E78
 .global lbl_800C7DE0
 lbl_800C7DE0:
-/* 800C7DE0 000C3C20  3C E0 80 51 */	lis r7, lbl_8050AA80@ha
-/* 800C7DE4 000C3C24  3D 00 80 51 */	lis r8, lbl_8050AA8C@ha
+/* 800C7DE0 000C3C20  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@ha
+/* 800C7DE4 000C3C24  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@ha
 /* 800C7DE8 000C3C28  7F 23 CB 78 */	mr r3, r25
 /* 800C7DEC 000C3C2C  7F C5 F3 78 */	mr r5, r30
 /* 800C7DF0 000C3C30  7F 86 E3 78 */	mr r6, r28
 /* 800C7DF4 000C3C34  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7DF8 000C3C38  38 E7 AA 80 */	addi r7, r7, lbl_8050AA80@l
-/* 800C7DFC 000C3C3C  39 08 AA 8C */	addi r8, r8, lbl_8050AA8C@l
-/* 800C7E00 000C3C40  4B FF D8 41 */	bl lbl_800C5640
+/* 800C7DF8 000C3C38  38 E7 AA 80 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@l
+/* 800C7DFC 000C3C3C  39 08 AA 8C */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@l
+/* 800C7E00 000C3C40  4B FF D8 41 */	bl DrawSmoothStripe_BSpline_ConnectRing__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 /* 800C7E04 000C3C44  48 00 00 74 */	b lbl_800C7E78
 .global lbl_800C7E08
 lbl_800C7E08:
-/* 800C7E08 000C3C48  3C E0 80 51 */	lis r7, lbl_8050AA80@ha
-/* 800C7E0C 000C3C4C  3D 00 80 51 */	lis r8, lbl_8050AA8C@ha
+/* 800C7E08 000C3C48  3C E0 80 51 */	lis r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@ha
+/* 800C7E0C 000C3C4C  3D 00 80 51 */	lis r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@ha
 /* 800C7E10 000C3C50  7F 23 CB 78 */	mr r3, r25
 /* 800C7E14 000C3C54  7F C5 F3 78 */	mr r5, r30
 /* 800C7E18 000C3C58  7F 86 E3 78 */	mr r6, r28
 /* 800C7E1C 000C3C5C  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7E20 000C3C60  38 E7 AA 80 */	addi r7, r7, lbl_8050AA80@l
-/* 800C7E24 000C3C64  39 08 AA 8C */	addi r8, r8, lbl_8050AA8C@l
-/* 800C7E28 000C3C68  4B FF DC 39 */	bl lbl_800C5A60
+/* 800C7E20 000C3C60  38 E7 AA 80 */	addi r7, r7, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v2@1"@l
+/* 800C7E24 000C3C64  39 08 AA 8C */	addi r8, r8, "@LOCAL@Draw__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef8DrawInfoPQ34nw4r2ef15ParticleManager@v3@2"@l
+/* 800C7E28 000C3C68  4B FF DC 39 */	bl DrawSmoothStripe_BSpline_ConnectEmitter__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiiRCQ34nw4r4math4VEC3RCQ34nw4r4math4VEC3
 /* 800C7E2C 000C3C6C  48 00 00 4C */	b lbl_800C7E78
 .global lbl_800C7E30
 lbl_800C7E30:
@@ -4715,7 +4715,7 @@ lbl_800C7E64:
 /* 800C7E68 000C3CA8  7F C5 F3 78 */	mr r5, r30
 /* 800C7E6C 000C3CAC  7F 86 E3 78 */	mr r6, r28
 /* 800C7E70 000C3CB0  38 81 01 70 */	addi r4, r1, 0x170
-/* 800C7E74 000C3CB4  4B FF EE 3D */	bl lbl_800C6CB0
+/* 800C7E74 000C3CB4  4B FF EE 3D */	bl DrawSmoothStripeTube__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripeiib
 .global lbl_800C7E78
 lbl_800C7E78:
 /* 800C7E78 000C3CB8  39 61 02 70 */	addi r11, r1, 0x270
@@ -4728,8 +4728,8 @@ lbl_800C7E78:
 /* 800C7E94 000C3CD4  4E 80 00 20 */	blr
 /* 800C7E98 000C3CD8  00 00 00 00 */	.4byte 0x00000000
 /* 800C7E9C 000C3CDC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C7EA0
-lbl_800C7EA0:
+.global GetInitialPrevAxis__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef18EmitterDrawSettingRCQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripe
+GetInitialPrevAxis__Q34nw4r2ef24DrawSmoothStripeStrategyFRCQ34nw4r2ef18EmitterDrawSettingRCQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripe:
 /* 800C7EA0 000C3CE0  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 800C7EA4 000C3CE4  7C 08 02 A6 */	mflr r0
 /* 800C7EA8 000C3CE8  90 01 00 84 */	stw r0, 0x84(r1)
@@ -4845,14 +4845,14 @@ lbl_800C8018:
 /* 800C8038 000C3E78  48 00 00 28 */	b lbl_800C8060
 .global lbl_800C803C
 lbl_800C803C:
-/* 800C803C 000C3E7C  3C A0 80 51 */	lis r5, lbl_8050AA08@ha
+/* 800C803C 000C3E7C  3C A0 80 51 */	lis r5, mXUnitVec__Q34nw4r2ef16DrawStrategyImpl@ha
 /* 800C8040 000C3E80  38 86 00 08 */	addi r4, r6, 0x8
-/* 800C8044 000C3E84  38 A5 AA 08 */	addi r5, r5, lbl_8050AA08@l
-/* 800C8048 000C3E88  48 03 70 89 */	bl lbl_800FF0D0
+/* 800C8044 000C3E84  38 A5 AA 08 */	addi r5, r5, mXUnitVec__Q34nw4r2ef16DrawStrategyImpl@l
+/* 800C8048 000C3E88  48 03 70 89 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C804C 000C3E8C  7F C3 F3 78 */	mr r3, r30
 /* 800C8050 000C3E90  7F C5 F3 78 */	mr r5, r30
 /* 800C8054 000C3E94  38 9F 00 68 */	addi r4, r31, 0x68
-/* 800C8058 000C3E98  48 03 70 79 */	bl lbl_800FF0D0
+/* 800C8058 000C3E98  48 03 70 79 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C805C 000C3E9C  48 00 00 70 */	b lbl_800C80CC
 .global lbl_800C8060
 lbl_800C8060:
@@ -4865,34 +4865,34 @@ lbl_800C8060:
 /* 800C8078 000C3EB8  48 00 00 BC */	b lbl_800C8134
 .global lbl_800C807C
 lbl_800C807C:
-/* 800C807C 000C3EBC  3C A0 80 51 */	lis r5, lbl_8050AA20@ha
+/* 800C807C 000C3EBC  3C A0 80 51 */	lis r5, mZUnitVec__Q34nw4r2ef16DrawStrategyImpl@ha
 /* 800C8080 000C3EC0  38 86 00 08 */	addi r4, r6, 0x8
-/* 800C8084 000C3EC4  38 A5 AA 20 */	addi r5, r5, lbl_8050AA20@l
-/* 800C8088 000C3EC8  48 03 70 49 */	bl lbl_800FF0D0
+/* 800C8084 000C3EC4  38 A5 AA 20 */	addi r5, r5, mZUnitVec__Q34nw4r2ef16DrawStrategyImpl@l
+/* 800C8088 000C3EC8  48 03 70 49 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C808C 000C3ECC  7F C3 F3 78 */	mr r3, r30
 /* 800C8090 000C3ED0  7F C5 F3 78 */	mr r5, r30
 /* 800C8094 000C3ED4  38 9F 00 68 */	addi r4, r31, 0x68
-/* 800C8098 000C3ED8  48 03 70 39 */	bl lbl_800FF0D0
+/* 800C8098 000C3ED8  48 03 70 39 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C809C 000C3EDC  48 00 00 30 */	b lbl_800C80CC
 .global lbl_800C80A0
 lbl_800C80A0:
-/* 800C80A0 000C3EE0  C0 02 8E 7C */	lfs f0, lbl_8055EDFC@sda21(r2)
+/* 800C80A0 000C3EE0  C0 02 8E 7C */	lfs f0, "@15290"@sda21(r2)
 /* 800C80A4 000C3EE4  38 86 00 08 */	addi r4, r6, 0x8
 /* 800C80A8 000C3EE8  D0 01 00 68 */	stfs f0, 0x68(r1)
 /* 800C80AC 000C3EEC  38 A1 00 68 */	addi r5, r1, 0x68
 /* 800C80B0 000C3EF0  D0 01 00 6C */	stfs f0, 0x6c(r1)
 /* 800C80B4 000C3EF4  D0 01 00 70 */	stfs f0, 0x70(r1)
-/* 800C80B8 000C3EF8  48 03 70 19 */	bl lbl_800FF0D0
+/* 800C80B8 000C3EF8  48 03 70 19 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 /* 800C80BC 000C3EFC  7F C3 F3 78 */	mr r3, r30
 /* 800C80C0 000C3F00  7F C5 F3 78 */	mr r5, r30
 /* 800C80C4 000C3F04  38 9F 00 68 */	addi r4, r31, 0x68
-/* 800C80C8 000C3F08  48 03 70 09 */	bl lbl_800FF0D0
+/* 800C80C8 000C3F08  48 03 70 09 */	bl VEC3TransformNormal__Q24nw4r4mathFPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3
 .global lbl_800C80CC
 lbl_800C80CC:
 /* 800C80CC 000C3F0C  E0 3E 00 04 */	psq_l f1, 0x4(r30), 0, qr0
 /* 800C80D0 000C3F10  E0 5E 80 00 */	psq_l f2, 0x0(r30), 1, qr0
 /* 800C80D4 000C3F14  10 21 00 72 */	ps_mul f1, f1, f1
-/* 800C80D8 000C3F18  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C80D8 000C3F18  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C80DC 000C3F1C  10 42 08 BA */	ps_madd f2, f2, f2, f1
 /* 800C80E0 000C3F20  10 22 08 54 */	ps_sum0 f1, f2, f1, f1
 /* 800C80E4 000C3F24  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -4901,7 +4901,7 @@ lbl_800C80CC:
 /* 800C80F0 000C3F30  48 00 00 24 */	b lbl_800C8114
 .global lbl_800C80F4
 lbl_800C80F4:
-/* 800C80F4 000C3F34  48 03 69 7D */	bl lbl_800FEA70
+/* 800C80F4 000C3F34  48 03 69 7D */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C80F8 000C3F38  E0 5E 00 00 */	psq_l f2, 0x0(r30), 0, qr0
 /* 800C80FC 000C3F3C  38 00 00 01 */	li r0, 0x1
 /* 800C8100 000C3F40  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -4929,8 +4929,8 @@ lbl_800C8134:
 /* 800C8148 000C3F88  4E 80 00 20 */	blr
 /* 800C814C 000C3F8C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800C8150
-lbl_800C8150:
+.global GetCalcAheadFunc__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r2ef15ParticleManager
+GetCalcAheadFunc__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r2ef15ParticleManager:
 /* 800C8150 000C3F90  80 64 00 24 */	lwz r3, 0x24(r4)
 /* 800C8154 000C3F94  88 03 01 4A */	lbz r0, 0x14a(r3)
 /* 800C8158 000C3F98  2C 00 00 00 */	cmpwi r0, 0x0
@@ -4950,28 +4950,28 @@ lbl_800C8150:
 /* 800C8190 000C3FD0  48 00 00 80 */	b lbl_800C8210
 .global lbl_800C8194
 lbl_800C8194:
-/* 800C8194 000C3FD4  3C 60 80 0C */	lis r3, lbl_800BC750@ha
-/* 800C8198 000C3FD8  38 63 C7 50 */	addi r3, r3, lbl_800BC750@l
+/* 800C8194 000C3FD4  3C 60 80 0C */	lis r3, CalcAhead_Speed__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@ha
+/* 800C8198 000C3FD8  38 63 C7 50 */	addi r3, r3, CalcAhead_Speed__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@l
 /* 800C819C 000C3FDC  4E 80 00 20 */	blr
 .global lbl_800C81A0
 lbl_800C81A0:
-/* 800C81A0 000C3FE0  3C 60 80 0C */	lis r3, lbl_800BC830@ha
-/* 800C81A4 000C3FE4  38 63 C8 30 */	addi r3, r3, lbl_800BC830@l
+/* 800C81A0 000C3FE0  3C 60 80 0C */	lis r3, CalcAhead_EmitterCenter__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@ha
+/* 800C81A4 000C3FE4  38 63 C8 30 */	addi r3, r3, CalcAhead_EmitterCenter__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@l
 /* 800C81A8 000C3FE8  4E 80 00 20 */	blr
 .global lbl_800C81AC
 lbl_800C81AC:
-/* 800C81AC 000C3FEC  3C 60 80 0C */	lis r3, lbl_800BC8F0@ha
-/* 800C81B0 000C3FF0  38 63 C8 F0 */	addi r3, r3, lbl_800BC8F0@l
+/* 800C81AC 000C3FEC  3C 60 80 0C */	lis r3, CalcAhead_EmitterDesign__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@ha
+/* 800C81B0 000C3FF0  38 63 C8 F0 */	addi r3, r3, CalcAhead_EmitterDesign__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@l
 /* 800C81B4 000C3FF4  4E 80 00 20 */	blr
 .global lbl_800C81B8
 lbl_800C81B8:
-/* 800C81B8 000C3FF8  3C 60 80 0D */	lis r3, lbl_800C8220@ha
-/* 800C81BC 000C3FFC  38 63 82 20 */	addi r3, r3, lbl_800C8220@l
+/* 800C81B8 000C3FF8  3C 60 80 0D */	lis r3, CalcAhead_Particle_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@ha
+/* 800C81BC 000C3FFC  38 63 82 20 */	addi r3, r3, CalcAhead_Particle_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@l
 /* 800C81C0 000C4000  4E 80 00 20 */	blr
 .global lbl_800C81C4
 lbl_800C81C4:
-/* 800C81C4 000C4004  3C 60 80 0C */	lis r3, lbl_800BF060@ha
-/* 800C81C8 000C4008  38 63 F0 60 */	addi r3, r3, lbl_800BF060@l
+/* 800C81C4 000C4004  3C 60 80 0C */	lis r3, CalcAhead_NoDesign__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@ha
+/* 800C81C8 000C4008  38 63 F0 60 */	addi r3, r3, CalcAhead_NoDesign__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@l
 /* 800C81CC 000C400C  4E 80 00 20 */	blr
 .global lbl_800C81D0
 lbl_800C81D0:
@@ -4984,27 +4984,27 @@ lbl_800C81D0:
 /* 800C81E8 000C4028  48 00 00 1C */	b lbl_800C8204
 .global lbl_800C81EC
 lbl_800C81EC:
-/* 800C81EC 000C402C  3C 60 80 0D */	lis r3, lbl_800C85C0@ha
-/* 800C81F0 000C4030  38 63 85 C0 */	addi r3, r3, lbl_800C85C0@l
+/* 800C81EC 000C402C  3C 60 80 0D */	lis r3, CalcAhead_ParticleBoth_Ring__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@ha
+/* 800C81F0 000C4030  38 63 85 C0 */	addi r3, r3, CalcAhead_ParticleBoth_Ring__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@l
 /* 800C81F4 000C4034  4E 80 00 20 */	blr
 .global lbl_800C81F8
 lbl_800C81F8:
-/* 800C81F8 000C4038  3C 60 80 0D */	lis r3, lbl_800C8890@ha
-/* 800C81FC 000C403C  38 63 88 90 */	addi r3, r3, lbl_800C8890@l
+/* 800C81F8 000C4038  3C 60 80 0D */	lis r3, CalcAhead_ParticleBoth_Origin__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@ha
+/* 800C81FC 000C403C  38 63 88 90 */	addi r3, r3, CalcAhead_ParticleBoth_Origin__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@l
 /* 800C8200 000C4040  4E 80 00 20 */	blr
 .global lbl_800C8204
 lbl_800C8204:
-/* 800C8204 000C4044  3C 60 80 0D */	lis r3, lbl_800C8340@ha
-/* 800C8208 000C4048  38 63 83 40 */	addi r3, r3, lbl_800C8340@l
+/* 800C8204 000C4044  3C 60 80 0D */	lis r3, CalcAhead_ParticleBoth_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@ha
+/* 800C8208 000C4048  38 63 83 40 */	addi r3, r3, CalcAhead_ParticleBoth_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle@l
 /* 800C820C 000C404C  4E 80 00 20 */	blr
 .global lbl_800C8210
 lbl_800C8210:
-/* 800C8210 000C4050  3C 60 80 0C */	lis r3, lbl_800BC750@ha
-/* 800C8214 000C4054  38 63 C7 50 */	addi r3, r3, lbl_800BC750@l
+/* 800C8210 000C4050  3C 60 80 0C */	lis r3, CalcAhead_Speed__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@ha
+/* 800C8214 000C4054  38 63 C7 50 */	addi r3, r3, CalcAhead_Speed__Q34nw4r2ef16DrawStrategyImplFPQ34nw4r4math4VEC3PQ44nw4r2ef16DrawStrategyImpl12AheadContextPQ34nw4r2ef8Particle@l
 /* 800C8218 000C4058  4E 80 00 20 */	blr
 /* 800C821C 000C405C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8220
-lbl_800C8220:
+.global CalcAhead_Particle_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle
+CalcAhead_Particle_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle:
 /* 800C8220 000C4060  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800C8224 000C4064  7C 08 02 A6 */	mflr r0
 /* 800C8228 000C4068  90 01 00 14 */	stw r0, 0x14(r1)
@@ -5057,7 +5057,7 @@ lbl_800C82BC:
 /* 800C82BC 000C40FC  E0 23 00 04 */	psq_l f1, 0x4(r3), 0, qr0
 /* 800C82C0 000C4100  E0 43 80 00 */	psq_l f2, 0x0(r3), 1, qr0
 /* 800C82C4 000C4104  10 21 00 72 */	ps_mul f1, f1, f1
-/* 800C82C8 000C4108  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C82C8 000C4108  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C82CC 000C410C  10 42 08 BA */	ps_madd f2, f2, f2, f1
 /* 800C82D0 000C4110  10 22 08 54 */	ps_sum0 f1, f2, f1, f1
 /* 800C82D4 000C4114  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -5066,7 +5066,7 @@ lbl_800C82BC:
 /* 800C82E0 000C4120  48 00 00 24 */	b lbl_800C8304
 .global lbl_800C82E4
 lbl_800C82E4:
-/* 800C82E4 000C4124  48 03 67 8D */	bl lbl_800FEA70
+/* 800C82E4 000C4124  48 03 67 8D */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C82E8 000C4128  E0 5E 00 00 */	psq_l f2, 0x0(r30), 0, qr0
 /* 800C82EC 000C412C  38 00 00 01 */	li r0, 0x1
 /* 800C82F0 000C4130  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5093,8 +5093,8 @@ lbl_800C8324:
 /* 800C8334 000C4174  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C8338 000C4178  4E 80 00 20 */	blr
 /* 800C833C 000C417C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8340
-lbl_800C8340:
+.global CalcAhead_ParticleBoth_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle
+CalcAhead_ParticleBoth_Stripe__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle:
 /* 800C8340 000C4180  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800C8344 000C4184  7C 08 02 A6 */	mflr r0
 /* 800C8348 000C4188  90 01 00 54 */	stw r0, 0x54(r1)
@@ -5139,7 +5139,7 @@ lbl_800C83AC:
 /* 800C83BC 000C41FC  40 82 FF E4 */	bne lbl_800C83A0
 .global lbl_800C83C0
 lbl_800C83C0:
-/* 800C83C0 000C4200  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C83C0 000C4200  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C83C4 000C4204  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800C83C8 000C4208  D0 01 00 2C */	stfs f0, 0x2c(r1)
 /* 800C83CC 000C420C  D0 01 00 30 */	stfs f0, 0x30(r1)
@@ -5148,7 +5148,7 @@ lbl_800C83C0:
 /* 800C83D8 000C4218  E0 64 00 AC */	psq_l f3, 0xac(r4), 0, qr0
 /* 800C83DC 000C421C  3B 81 00 2C */	addi r28, r1, 0x2c
 /* 800C83E0 000C4220  E0 45 00 AC */	psq_l f2, 0xac(r5), 0, qr0
-/* 800C83E4 000C4224  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C83E4 000C4224  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C83E8 000C4228  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C83EC 000C422C  E0 64 80 B4 */	psq_l f3, 0xb4(r4), 1, qr0
 /* 800C83F0 000C4230  E0 45 80 B4 */	psq_l f2, 0xb4(r5), 1, qr0
@@ -5166,7 +5166,7 @@ lbl_800C83C0:
 /* 800C8420 000C4260  48 00 00 24 */	b lbl_800C8444
 .global lbl_800C8424
 lbl_800C8424:
-/* 800C8424 000C4264  48 03 66 4D */	bl lbl_800FEA70
+/* 800C8424 000C4264  48 03 66 4D */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8428 000C4268  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C842C 000C426C  38 00 00 01 */	li r0, 0x1
 /* 800C8430 000C4270  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5178,7 +5178,7 @@ lbl_800C8424:
 lbl_800C8444:
 /* 800C8444 000C4284  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C8448 000C4288  40 82 00 20 */	bne lbl_800C8468
-/* 800C844C 000C428C  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C844C 000C428C  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C8450 000C4290  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 800C8454 000C4294  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 800C8458 000C4298  D0 01 00 1C */	stfs f0, 0x1c(r1)
@@ -5187,7 +5187,7 @@ lbl_800C8444:
 /* 800C8464 000C42A4  D0 01 00 34 */	stfs f0, 0x34(r1)
 .global lbl_800C8468
 lbl_800C8468:
-/* 800C8468 000C42A8  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C8468 000C42A8  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C846C 000C42AC  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 800C8470 000C42B0  D0 01 00 20 */	stfs f0, 0x20(r1)
 /* 800C8474 000C42B4  D0 01 00 24 */	stfs f0, 0x24(r1)
@@ -5196,7 +5196,7 @@ lbl_800C8468:
 /* 800C8480 000C42C0  E0 7D 00 AC */	psq_l f3, 0xac(r29), 0, qr0
 /* 800C8484 000C42C4  3B 81 00 20 */	addi r28, r1, 0x20
 /* 800C8488 000C42C8  E0 5B 00 AC */	psq_l f2, 0xac(r27), 0, qr0
-/* 800C848C 000C42CC  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C848C 000C42CC  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C8490 000C42D0  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C8494 000C42D4  E0 7D 80 B4 */	psq_l f3, 0xb4(r29), 1, qr0
 /* 800C8498 000C42D8  E0 5B 80 B4 */	psq_l f2, 0xb4(r27), 1, qr0
@@ -5214,7 +5214,7 @@ lbl_800C8468:
 /* 800C84C8 000C4308  48 00 00 24 */	b lbl_800C84EC
 .global lbl_800C84CC
 lbl_800C84CC:
-/* 800C84CC 000C430C  48 03 65 A5 */	bl lbl_800FEA70
+/* 800C84CC 000C430C  48 03 65 A5 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C84D0 000C4310  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C84D4 000C4314  38 00 00 01 */	li r0, 0x1
 /* 800C84D8 000C4318  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5226,7 +5226,7 @@ lbl_800C84CC:
 lbl_800C84EC:
 /* 800C84EC 000C432C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C84F0 000C4330  40 82 00 20 */	bne lbl_800C8510
-/* 800C84F4 000C4334  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C84F4 000C4334  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C84F8 000C4338  D0 01 00 08 */	stfs f0, 0x8(r1)
 /* 800C84FC 000C433C  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 800C8500 000C4340  D0 01 00 10 */	stfs f0, 0x10(r1)
@@ -5239,7 +5239,7 @@ lbl_800C8510:
 /* 800C8514 000C4354  38 61 00 2C */	addi r3, r1, 0x2c
 /* 800C8518 000C4358  E0 63 00 00 */	psq_l f3, 0x0(r3), 0, qr0
 /* 800C851C 000C435C  E0 44 00 00 */	psq_l f2, 0x0(r4), 0, qr0
-/* 800C8520 000C4360  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C8520 000C4360  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C8524 000C4364  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C8528 000C4368  E0 63 80 08 */	psq_l f3, 0x8(r3), 1, qr0
 /* 800C852C 000C436C  E0 44 80 08 */	psq_l f2, 0x8(r4), 1, qr0
@@ -5257,7 +5257,7 @@ lbl_800C8510:
 /* 800C855C 000C439C  48 00 00 24 */	b lbl_800C8580
 .global lbl_800C8560
 lbl_800C8560:
-/* 800C8560 000C43A0  48 03 65 11 */	bl lbl_800FEA70
+/* 800C8560 000C43A0  48 03 65 11 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8564 000C43A4  E0 5E 00 00 */	psq_l f2, 0x0(r30), 0, qr0
 /* 800C8568 000C43A8  38 00 00 01 */	li r0, 0x1
 /* 800C856C 000C43AC  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5285,8 +5285,8 @@ lbl_800C85A0:
 /* 800C85B4 000C43F4  4E 80 00 20 */	blr
 /* 800C85B8 000C43F8  00 00 00 00 */	.4byte 0x00000000
 /* 800C85BC 000C43FC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C85C0
-lbl_800C85C0:
+.global CalcAhead_ParticleBoth_Ring__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle
+CalcAhead_ParticleBoth_Ring__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle:
 /* 800C85C0 000C4400  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800C85C4 000C4404  7C 08 02 A6 */	mflr r0
 /* 800C85C8 000C4408  90 01 00 54 */	stw r0, 0x54(r1)
@@ -5382,7 +5382,7 @@ lbl_800C86C0:
 /* 800C86C0 000C4500  E0 64 00 AC */	psq_l f3, 0xac(r4), 0, qr0
 /* 800C86C4 000C4504  3B 81 00 2C */	addi r28, r1, 0x2c
 /* 800C86C8 000C4508  E0 45 00 AC */	psq_l f2, 0xac(r5), 0, qr0
-/* 800C86CC 000C450C  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C86CC 000C450C  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C86D0 000C4510  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C86D4 000C4514  E0 64 80 B4 */	psq_l f3, 0xb4(r4), 1, qr0
 /* 800C86D8 000C4518  E0 45 80 B4 */	psq_l f2, 0xb4(r5), 1, qr0
@@ -5400,7 +5400,7 @@ lbl_800C86C0:
 /* 800C8708 000C4548  48 00 00 24 */	b lbl_800C872C
 .global lbl_800C870C
 lbl_800C870C:
-/* 800C870C 000C454C  48 03 63 65 */	bl lbl_800FEA70
+/* 800C870C 000C454C  48 03 63 65 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8710 000C4550  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C8714 000C4554  38 00 00 01 */	li r0, 0x1
 /* 800C8718 000C4558  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5412,7 +5412,7 @@ lbl_800C870C:
 lbl_800C872C:
 /* 800C872C 000C456C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C8730 000C4570  40 82 00 20 */	bne lbl_800C8750
-/* 800C8734 000C4574  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C8734 000C4574  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C8738 000C4578  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 800C873C 000C457C  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 800C8740 000C4580  D0 01 00 1C */	stfs f0, 0x1c(r1)
@@ -5424,7 +5424,7 @@ lbl_800C8750:
 /* 800C8750 000C4590  E0 7B 00 AC */	psq_l f3, 0xac(r27), 0, qr0
 /* 800C8754 000C4594  3B 81 00 20 */	addi r28, r1, 0x20
 /* 800C8758 000C4598  E0 5F 00 AC */	psq_l f2, 0xac(r31), 0, qr0
-/* 800C875C 000C459C  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C875C 000C459C  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C8760 000C45A0  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C8764 000C45A4  E0 7B 80 B4 */	psq_l f3, 0xb4(r27), 1, qr0
 /* 800C8768 000C45A8  E0 5F 80 B4 */	psq_l f2, 0xb4(r31), 1, qr0
@@ -5442,7 +5442,7 @@ lbl_800C8750:
 /* 800C8798 000C45D8  48 00 00 24 */	b lbl_800C87BC
 .global lbl_800C879C
 lbl_800C879C:
-/* 800C879C 000C45DC  48 03 62 D5 */	bl lbl_800FEA70
+/* 800C879C 000C45DC  48 03 62 D5 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C87A0 000C45E0  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C87A4 000C45E4  38 00 00 01 */	li r0, 0x1
 /* 800C87A8 000C45E8  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5454,7 +5454,7 @@ lbl_800C879C:
 lbl_800C87BC:
 /* 800C87BC 000C45FC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800C87C0 000C4600  40 82 00 20 */	bne lbl_800C87E0
-/* 800C87C4 000C4604  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C87C4 000C4604  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C87C8 000C4608  D0 01 00 08 */	stfs f0, 0x8(r1)
 /* 800C87CC 000C460C  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 800C87D0 000C4610  D0 01 00 10 */	stfs f0, 0x10(r1)
@@ -5467,7 +5467,7 @@ lbl_800C87E0:
 /* 800C87E4 000C4624  38 61 00 2C */	addi r3, r1, 0x2c
 /* 800C87E8 000C4628  E0 63 00 00 */	psq_l f3, 0x0(r3), 0, qr0
 /* 800C87EC 000C462C  E0 44 00 00 */	psq_l f2, 0x0(r4), 0, qr0
-/* 800C87F0 000C4630  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C87F0 000C4630  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C87F4 000C4634  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C87F8 000C4638  E0 63 80 08 */	psq_l f3, 0x8(r3), 1, qr0
 /* 800C87FC 000C463C  E0 44 80 08 */	psq_l f2, 0x8(r4), 1, qr0
@@ -5485,7 +5485,7 @@ lbl_800C87E0:
 /* 800C882C 000C466C  48 00 00 24 */	b lbl_800C8850
 .global lbl_800C8830
 lbl_800C8830:
-/* 800C8830 000C4670  48 03 62 41 */	bl lbl_800FEA70
+/* 800C8830 000C4670  48 03 62 41 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8834 000C4674  E0 5D 00 00 */	psq_l f2, 0x0(r29), 0, qr0
 /* 800C8838 000C4678  38 00 00 01 */	li r0, 0x1
 /* 800C883C 000C467C  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5513,8 +5513,8 @@ lbl_800C8870:
 /* 800C8884 000C46C4  4E 80 00 20 */	blr
 /* 800C8888 000C46C8  00 00 00 00 */	.4byte 0x00000000
 /* 800C888C 000C46CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8890
-lbl_800C8890:
+.global CalcAhead_ParticleBoth_Origin__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle
+CalcAhead_ParticleBoth_Origin__Q34nw4r2ef24DrawSmoothStripeStrategyFPQ34nw4r4math4VEC3PQ44nw4r2ef24DrawSmoothStripeStrategy18AheadContextStripePQ34nw4r2ef8Particle:
 /* 800C8890 000C46D0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800C8894 000C46D4  7C 08 02 A6 */	mflr r0
 /* 800C8898 000C46D8  90 01 00 44 */	stw r0, 0x44(r1)
@@ -5559,7 +5559,7 @@ lbl_800C88FC:
 /* 800C890C 000C474C  40 82 FF E4 */	bne lbl_800C88F0
 .global lbl_800C8910
 lbl_800C8910:
-/* 800C8910 000C4750  C0 02 8E 78 */	lfs f0, lbl_8055EDF8@sda21(r2)
+/* 800C8910 000C4750  C0 02 8E 78 */	lfs f0, "@15289"@sda21(r2)
 /* 800C8914 000C4754  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800C8918 000C4758  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 800C891C 000C475C  D0 01 00 18 */	stfs f0, 0x18(r1)
@@ -5568,7 +5568,7 @@ lbl_800C8910:
 /* 800C8928 000C4768  E0 64 00 AC */	psq_l f3, 0xac(r4), 0, qr0
 /* 800C892C 000C476C  3B 81 00 14 */	addi r28, r1, 0x14
 /* 800C8930 000C4770  E0 45 00 AC */	psq_l f2, 0xac(r5), 0, qr0
-/* 800C8934 000C4774  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C8934 000C4774  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C8938 000C4778  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C893C 000C477C  E0 64 80 B4 */	psq_l f3, 0xb4(r4), 1, qr0
 /* 800C8940 000C4780  E0 45 80 B4 */	psq_l f2, 0xb4(r5), 1, qr0
@@ -5585,7 +5585,7 @@ lbl_800C8910:
 /* 800C896C 000C47AC  48 00 00 20 */	b lbl_800C898C
 .global lbl_800C8970
 lbl_800C8970:
-/* 800C8970 000C47B0  48 03 61 01 */	bl lbl_800FEA70
+/* 800C8970 000C47B0  48 03 61 01 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8974 000C47B4  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C8978 000C47B8  10 02 00 58 */	ps_muls0 f0, f2, f1
 /* 800C897C 000C47BC  E0 5C 80 08 */	psq_l f2, 0x8(r28), 1, qr0
@@ -5620,7 +5620,7 @@ lbl_800C89BC:
 .global lbl_800C89E0
 lbl_800C89E0:
 /* 800C89E0 000C4820  3B 81 00 08 */	addi r28, r1, 0x8
-/* 800C89E4 000C4824  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C89E4 000C4824  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C89E8 000C4828  E0 3C 00 04 */	psq_l f1, 0x4(r28), 0, qr0
 /* 800C89EC 000C482C  E0 5C 80 00 */	psq_l f2, 0x0(r28), 1, qr0
 /* 800C89F0 000C4830  10 21 00 72 */	ps_mul f1, f1, f1
@@ -5631,7 +5631,7 @@ lbl_800C89E0:
 /* 800C8A04 000C4844  48 00 00 20 */	b lbl_800C8A24
 .global lbl_800C8A08
 lbl_800C8A08:
-/* 800C8A08 000C4848  48 03 60 69 */	bl lbl_800FEA70
+/* 800C8A08 000C4848  48 03 60 69 */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8A0C 000C484C  E0 5C 00 00 */	psq_l f2, 0x0(r28), 0, qr0
 /* 800C8A10 000C4850  10 02 00 58 */	ps_muls0 f0, f2, f1
 /* 800C8A14 000C4854  E0 5C 80 08 */	psq_l f2, 0x8(r28), 1, qr0
@@ -5644,7 +5644,7 @@ lbl_800C8A24:
 /* 800C8A28 000C4868  38 61 00 14 */	addi r3, r1, 0x14
 /* 800C8A2C 000C486C  E0 63 00 00 */	psq_l f3, 0x0(r3), 0, qr0
 /* 800C8A30 000C4870  E0 44 00 00 */	psq_l f2, 0x0(r4), 0, qr0
-/* 800C8A34 000C4874  C0 02 8E 70 */	lfs f0, lbl_8055EDF0@sda21(r2)
+/* 800C8A34 000C4874  C0 02 8E 70 */	lfs f0, "@15287"@sda21(r2)
 /* 800C8A38 000C4878  10 23 10 28 */	ps_sub f1, f3, f2
 /* 800C8A3C 000C487C  E0 63 80 08 */	psq_l f3, 0x8(r3), 1, qr0
 /* 800C8A40 000C4880  E0 44 80 08 */	psq_l f2, 0x8(r4), 1, qr0
@@ -5662,7 +5662,7 @@ lbl_800C8A24:
 /* 800C8A70 000C48B0  48 00 00 24 */	b lbl_800C8A94
 .global lbl_800C8A74
 lbl_800C8A74:
-/* 800C8A74 000C48B4  48 03 5F FD */	bl lbl_800FEA70
+/* 800C8A74 000C48B4  48 03 5F FD */	bl FrSqrt__Q24nw4r4mathFf
 /* 800C8A78 000C48B8  E0 5E 00 00 */	psq_l f2, 0x0(r30), 0, qr0
 /* 800C8A7C 000C48BC  38 00 00 01 */	li r0, 0x1
 /* 800C8A80 000C48C0  10 02 00 58 */	ps_muls0 f0, f2, f1
@@ -5690,9 +5690,9 @@ lbl_800C8AB4:
 /* 800C8AC8 000C4908  4E 80 00 20 */	blr
 /* 800C8ACC 000C490C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_800C8AD0
-lbl_800C8AD0:
-/* 800C8AD0 000C4910  4B FD C2 E0 */	b lbl_800A4DB0
+.global __dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv
+__dt__Q34nw4r2ef24DrawSmoothStripeStrategyFv:
+/* 800C8AD0 000C4910  4B FD C2 E0 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 800C8AD4 000C4914  00 00 00 00 */	.4byte 0x00000000
 /* 800C8AD8 000C4918  00 00 00 00 */	.4byte 0x00000000
 /* 800C8ADC 000C491C  00 00 00 00 */	.4byte 0x00000000

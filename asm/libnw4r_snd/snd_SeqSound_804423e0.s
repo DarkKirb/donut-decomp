@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804423E0
-lbl_804423E0:
+.global __vt__Q44nw4r3snd6detail8SeqSound
+__vt__Q44nw4r3snd6detail8SeqSound:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8010DEF0
-	.4byte lbl_8010DBA0
-	.4byte lbl_8010DAC0
-	.4byte lbl_8010DEE0
-	.4byte lbl_8010DD30
-	.4byte lbl_8010DD50
-	.4byte lbl_8010D810
-	.4byte lbl_8010DEC0
-	.4byte lbl_8010DED0
-	.4byte lbl_8010DC40
-	.4byte lbl_80106200
-	.4byte lbl_80106240
+	.4byte GetRuntimeTypeInfo__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte __dt__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte Shutdown__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte IsPrepared__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte IsAttachedTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte DetachTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte InitParam__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundCFv
+	.4byte OnUpdatePlayerPriority__Q44nw4r3snd6detail8SeqSoundFv
+	.4byte UpdateMoveValue__Q44nw4r3snd6detail10BasicSoundFv
+	.4byte UpdateParam__Q44nw4r3snd6detail10BasicSoundFv
 
-.global lbl_80442418
-lbl_80442418:
+.global __vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask
+__vt__Q54nw4r3snd6detail8SeqSound11SeqLoadTask:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8010D7B0
-	.4byte lbl_8010DD60
-	.4byte lbl_8010DE60
-	.4byte lbl_8010DE90
+	.4byte __dt__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte Execute__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte Cancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv
+	.4byte OnCancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv

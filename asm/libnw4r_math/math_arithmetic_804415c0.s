@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804415C0
-lbl_804415C0:
+.global "sExpTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"
+"sExpTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@":
 
 	.4byte 0x3F000000
 	.4byte 0x3CB5586D
@@ -71,8 +71,8 @@ lbl_804415C0:
 	.4byte 0x40000000
 	.4byte 0x3DB5586D
 
-.global lbl_804416C8
-lbl_804416C8:
+.global "sLogTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"
+"sLogTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@":
 
 	.4byte 0
 	.4byte 0x3B7F8053

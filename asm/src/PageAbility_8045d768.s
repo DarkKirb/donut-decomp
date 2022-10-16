@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045D768
-lbl_8045D768:
+.global "@52590_8045D768"
+"@52590_8045D768":
 
 	.4byte 0x4162696C
 	.4byte 0x69747957
@@ -19,17 +19,17 @@ lbl_8045D768:
 	.4byte 0x6D700000
 	.4byte 0
 
-.global lbl_8045D7A0
-lbl_8045D7A0:
+.global __vt__Q25pause11PageAbility
+__vt__Q25pause11PageAbility:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801DC6BC
-	.4byte lbl_801DC64C
-	.4byte lbl_801DC6A8
-	.4byte lbl_801DC6AC
-	.4byte lbl_801DC6B4
-	.4byte lbl_801DC6B8
+	.4byte __dt__Q25pause11PageAbilityFv
+	.4byte pageFrameTitle__Q25pause11PageAbilityCFv
+	.4byte pageMainLayout__Q25pause11PageAbilityFv
+	.4byte pageProcAnim__Q25pause11PageAbilityFv
+	.4byte pageProcHID__Q25pause11PageAbilityFv
+	.4byte pageIsBusy__Q25pause11PageAbilityCFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

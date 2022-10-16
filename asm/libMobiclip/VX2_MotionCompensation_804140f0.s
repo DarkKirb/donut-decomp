@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804140F0
-lbl_804140F0:
+.global InvCbpTable_804140F0
+InvCbpTable_804140F0:
 
 	.4byte 0
 	.4byte 0x0000001F
@@ -133,8 +133,8 @@ lbl_804140F0:
 	.4byte 0x00000039
 	.4byte 0x00000036
 
-.global lbl_804142F0
-lbl_804142F0:
+.global InvSbpTable_804142F0
+InvSbpTable_804142F0:
 
 	.4byte 0
 	.4byte 0x0000001E
@@ -171,16 +171,16 @@ lbl_804142F0:
 	.4byte 0x0000000C
 	.4byte 0xFFFFFFFF
 
-.global lbl_80414378
-lbl_80414378:
+.global DecodeEscapeTable
+DecodeEscapeTable:
 
-	.4byte lbl_80170EA0
-	.4byte lbl_80170EA0
-	.4byte lbl_80170FB0
-	.4byte lbl_801710C0
+	.4byte DecodeEscape__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape2__FR14VX2DecoderDataRiRiRi
+	.4byte DecodeEscape3__FR14VX2DecoderDataRiRiRi
 
-.global lbl_80414388
-lbl_80414388:
+.global ZigZag8x8
+ZigZag8x8:
 
 	.4byte 0
 	.4byte 0x00000008
@@ -247,8 +247,8 @@ lbl_80414388:
 	.4byte 0x00000037
 	.4byte 0x0000003F
 
-.global lbl_80414488
-lbl_80414488:
+.global ZigZag4x4
+ZigZag4x4:
 
 	.4byte 0
 	.4byte 0x00000001

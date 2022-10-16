@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801BFA30
-lbl_801BFA30:
+.global MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl
+MemSetU32__Q23mem7UtilityFRCQ23mem8MemBlockUl:
 /* 801BFA30 001BB870  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BFA34 001BB874  90 81 00 08 */	stw r4, 0x8(r1)
 /* 801BFA38 001BB878  80 C3 00 04 */	lwz r6, 0x4(r3)

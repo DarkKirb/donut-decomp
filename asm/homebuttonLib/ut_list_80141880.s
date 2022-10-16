@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80141880
-lbl_80141880:
+.global List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs
+List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs:
 /* 80141880 0013D6C0  38 C0 00 00 */	li r6, 0x0
 /* 80141884 0013D6C4  38 A0 00 00 */	li r5, 0x0
 /* 80141888 0013D6C8  48 00 00 1C */	b lbl_801418A4

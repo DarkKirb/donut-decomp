@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_805436C0
-lbl_805436C0:
+.global spHomeButtonObj__Q210homebutton10HomeButton
+spHomeButtonObj__Q210homebutton10HomeButton:
 	.skip 0x8
 
-.global lbl_805436C8
-lbl_805436C8:
+.global sMutex__Q210homebutton10HomeButton
+sMutex__Q210homebutton10HomeButton:
 	.skip 0x18
 
-.global lbl_805436E0
-lbl_805436E0:
+.global sWpadInfo__Q210homebutton10HomeButton
+sWpadInfo__Q210homebutton10HomeButton:
 	.skip 0x60

@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8017F38C
-lbl_8017F38C:
+.global __ct__Q36effect6detail8DrawInfoFv
+__ct__Q36effect6detail8DrawInfoFv:
 /* 8017F38C 0017B1CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017F390 0017B1D0  7C 08 02 A6 */	mflr r0
 /* 8017F394 0017B1D4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8017F398 0017B1D8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8017F39C 0017B1DC  7C 7F 1B 78 */	mr r31, r3
-/* 8017F3A0 0017B1E0  4B EB 11 41 */	bl lbl_800304E0
+/* 8017F3A0 0017B1E0  4B EB 11 41 */	bl PSMTXIdentity
 /* 8017F3A4 0017B1E4  38 7F 00 30 */	addi r3, r31, 0x30
-/* 8017F3A8 0017B1E8  4B EB 11 39 */	bl lbl_800304E0
+/* 8017F3A8 0017B1E8  4B EB 11 39 */	bl PSMTXIdentity
 /* 8017F3AC 0017B1EC  38 60 00 00 */	li r3, 0x0
 /* 8017F3B0 0017B1F0  98 7F 00 60 */	stb r3, 0x60(r31)
 /* 8017F3B4 0017B1F4  90 7F 00 64 */	stw r3, 0x64(r31)
@@ -18,9 +18,9 @@ lbl_8017F38C:
 /* 8017F3BC 0017B1FC  38 00 00 01 */	li r0, 0x1
 /* 8017F3C0 0017B200  98 1F 00 6C */	stb r0, 0x6c(r31)
 /* 8017F3C4 0017B204  90 7F 00 70 */	stw r3, 0x70(r31)
-/* 8017F3C8 0017B208  C0 22 96 B8 */	lfs f1, lbl_8055F638@sda21(r2)
+/* 8017F3C8 0017B208  C0 22 96 B8 */	lfs f1, "@51405"@sda21(r2)
 /* 8017F3CC 0017B20C  D0 3F 00 74 */	stfs f1, 0x74(r31)
-/* 8017F3D0 0017B210  C0 02 96 BC */	lfs f0, lbl_8055F63C@sda21(r2)
+/* 8017F3D0 0017B210  C0 02 96 BC */	lfs f0, "@51406"@sda21(r2)
 /* 8017F3D4 0017B214  D0 1F 00 78 */	stfs f0, 0x78(r31)
 /* 8017F3D8 0017B218  D0 3F 00 7C */	stfs f1, 0x7c(r31)
 /* 8017F3DC 0017B21C  D0 1F 00 80 */	stfs f0, 0x80(r31)
@@ -43,8 +43,8 @@ lbl_8017F38C:
 /* 8017F420 0017B260  7C 08 03 A6 */	mtlr r0
 /* 8017F424 0017B264  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017F428 0017B268  4E 80 00 20 */	blr
-.global lbl_8017F42C
-lbl_8017F42C:
+.global obj__Q36effect6detail8DrawInfoCFv
+obj__Q36effect6detail8DrawInfoCFv:
 /* 8017F42C 0017B26C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017F430 0017B270  7C 08 02 A6 */	mflr r0
 /* 8017F434 0017B274  90 01 00 14 */	stw r0, 0x14(r1)
@@ -52,10 +52,10 @@ lbl_8017F42C:
 /* 8017F43C 0017B27C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8017F440 0017B280  7C 7E 1B 78 */	mr r30, r3
 /* 8017F444 0017B284  7C 9F 23 78 */	mr r31, r4
-/* 8017F448 0017B288  48 00 00 A9 */	bl lbl_8017F4F0
+/* 8017F448 0017B288  48 00 00 A9 */	bl __ct__Q34nw4r4math5MTX34FRCQ34nw4r4math5MTX34
 /* 8017F44C 0017B28C  38 7E 00 30 */	addi r3, r30, 0x30
 /* 8017F450 0017B290  38 9F 00 30 */	addi r4, r31, 0x30
-/* 8017F454 0017B294  48 00 00 9D */	bl lbl_8017F4F0
+/* 8017F454 0017B294  48 00 00 9D */	bl __ct__Q34nw4r4math5MTX34FRCQ34nw4r4math5MTX34
 /* 8017F458 0017B298  88 1F 00 60 */	lbz r0, 0x60(r31)
 /* 8017F45C 0017B29C  98 1E 00 60 */	stb r0, 0x60(r30)
 /* 8017F460 0017B2A0  80 1F 00 64 */	lwz r0, 0x64(r31)
@@ -94,8 +94,8 @@ lbl_8017F42C:
 /* 8017F4E4 0017B324  7C 08 03 A6 */	mtlr r0
 /* 8017F4E8 0017B328  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017F4EC 0017B32C  4E 80 00 20 */	blr
-.global lbl_8017F4F0
-lbl_8017F4F0:
+.global __ct__Q34nw4r4math5MTX34FRCQ34nw4r4math5MTX34
+__ct__Q34nw4r4math5MTX34FRCQ34nw4r4math5MTX34:
 /* 8017F4F0 0017B330  38 C3 FF FC */	addi r6, r3, -0x4
 /* 8017F4F4 0017B334  38 A4 FF FC */	addi r5, r4, -0x4
 /* 8017F4F8 0017B338  38 00 00 06 */	li r0, 0x6
@@ -108,14 +108,14 @@ lbl_8017F500:
 /* 8017F50C 0017B34C  94 06 00 08 */	stwu r0, 0x8(r6)
 /* 8017F510 0017B350  42 00 FF F0 */	bdnz lbl_8017F500
 /* 8017F514 0017B354  4E 80 00 20 */	blr
-.global lbl_8017F518
-lbl_8017F518:
+.global viewMtx__Q36effect6detail8DrawInfoCFv
+viewMtx__Q36effect6detail8DrawInfoCFv:
 /* 8017F518 0017B358  7C 60 1B 78 */	mr r0, r3
 /* 8017F51C 0017B35C  7C 83 23 78 */	mr r3, r4
 /* 8017F520 0017B360  7C 04 03 78 */	mr r4, r0
-/* 8017F524 0017B364  4B EB 0F EC */	b lbl_80030510
-.global lbl_8017F528
-lbl_8017F528:
+/* 8017F524 0017B364  4B EB 0F EC */	b PSMTXCopy
+.global setViewMtx__Q36effect6detail8DrawInfoFRCQ33hel4math8Matrix34
+setViewMtx__Q36effect6detail8DrawInfoFRCQ33hel4math8Matrix34:
 /* 8017F528 0017B368  38 A3 FF FC */	addi r5, r3, -0x4
 /* 8017F52C 0017B36C  38 84 FF FC */	addi r4, r4, -0x4
 /* 8017F530 0017B370  38 00 00 06 */	li r0, 0x6

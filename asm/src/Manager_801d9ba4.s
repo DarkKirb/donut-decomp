@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801D9BA4
-lbl_801D9BA4:
+.global __ct__Q25ostop7ManagerFv
+__ct__Q25ostop7ManagerFv:
 /* 801D9BA4 001D59E4  38 A0 00 00 */	li r5, 0x0
 /* 801D9BA8 001D59E8  90 A3 00 00 */	stw r5, 0x0(r3)
 /* 801D9BAC 001D59EC  7C 64 1B 78 */	mr r4, r3
@@ -20,8 +20,8 @@ lbl_801D9BB8:
 /* 801D9BD4 001D5A14  90 03 0A 10 */	stw r0, 0xa10(r3)
 /* 801D9BD8 001D5A18  90 03 0A 14 */	stw r0, 0xa14(r3)
 /* 801D9BDC 001D5A1C  4E 80 00 20 */	blr
-.global lbl_801D9BE0
-lbl_801D9BE0:
+.global __dt__Q25ostop7ManagerFv
+__dt__Q25ostop7ManagerFv:
 /* 801D9BE0 001D5A20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9BE4 001D5A24  7C 08 02 A6 */	mflr r0
 /* 801D9BE8 001D5A28  90 01 00 14 */	stw r0, 0x14(r1)
@@ -33,15 +33,15 @@ lbl_801D9BE0:
 /* 801D9C00 001D5A40  41 82 00 30 */	beq lbl_801D9C30
 /* 801D9C04 001D5A44  38 63 08 04 */	addi r3, r3, 0x804
 /* 801D9C08 001D5A48  38 80 FF FF */	li r4, -0x1
-/* 801D9C0C 001D5A4C  4B F9 BF 5D */	bl lbl_80175B68
+/* 801D9C0C 001D5A4C  4B F9 BF 5D */	bl __dt__Q23scn6ISceneFv
 /* 801D9C10 001D5A50  7F C3 F3 78 */	mr r3, r30
 /* 801D9C14 001D5A54  38 80 FF FF */	li r4, -0x1
-/* 801D9C18 001D5A58  4B F9 BF 51 */	bl lbl_80175B68
+/* 801D9C18 001D5A58  4B F9 BF 51 */	bl __dt__Q23scn6ISceneFv
 /* 801D9C1C 001D5A5C  7F E0 07 34 */	extsh r0, r31
 /* 801D9C20 001D5A60  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801D9C24 001D5A64  40 81 00 0C */	ble lbl_801D9C30
 /* 801D9C28 001D5A68  7F C3 F3 78 */	mr r3, r30
-/* 801D9C2C 001D5A6C  4B FE 5A E9 */	bl lbl_801BF714
+/* 801D9C2C 001D5A6C  4B FE 5A E9 */	bl __dl__FPv
 .global lbl_801D9C30
 lbl_801D9C30:
 /* 801D9C30 001D5A70  7F C3 F3 78 */	mr r3, r30
@@ -51,36 +51,36 @@ lbl_801D9C30:
 /* 801D9C40 001D5A80  7C 08 03 A6 */	mtlr r0
 /* 801D9C44 001D5A84  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9C48 001D5A88  4E 80 00 20 */	blr
-.global lbl_801D9C4C
-lbl_801D9C4C:
+.global requestStopNormal__Q25ostop7ManagerFUl
+requestStopNormal__Q25ostop7ManagerFUl:
 /* 801D9C4C 001D5A8C  38 A0 FF FF */	li r5, -0x1
-/* 801D9C50 001D5A90  48 00 00 04 */	b lbl_801D9C54
-.global lbl_801D9C54
-lbl_801D9C54:
+/* 801D9C50 001D5A90  48 00 00 04 */	b requestStopNormal__Q25ostop7ManagerFUlUl
+.global requestStopNormal__Q25ostop7ManagerFUlUl
+requestStopNormal__Q25ostop7ManagerFUlUl:
 /* 801D9C54 001D5A94  38 C0 00 00 */	li r6, 0x0
-/* 801D9C58 001D5A98  48 00 04 F8 */	b lbl_801DA150
-.global lbl_801D9C5C
-lbl_801D9C5C:
+/* 801D9C58 001D5A98  48 00 04 F8 */	b addReqInfo__Q25ostop7ManagerFUlUlb
+.global releaseStopNormal__Q25ostop7ManagerFRCQ25ostop9ReqHandle
+releaseStopNormal__Q25ostop7ManagerFRCQ25ostop9ReqHandle:
 /* 801D9C5C 001D5A9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9C60 001D5AA0  7C 08 02 A6 */	mflr r0
 /* 801D9C64 001D5AA4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801D9C68 001D5AA8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801D9C6C 001D5AAC  7C 7F 1B 78 */	mr r31, r3
 /* 801D9C70 001D5AB0  7C 83 23 78 */	mr r3, r4
-/* 801D9C74 001D5AB4  4B F2 6B 6D */	bl lbl_801007E0
+/* 801D9C74 001D5AB4  4B F2 6B 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 801D9C78 001D5AB8  7C 64 1B 78 */	mr r4, r3
 /* 801D9C7C 001D5ABC  7F E3 FB 78 */	mr r3, r31
-/* 801D9C80 001D5AC0  48 00 05 F1 */	bl lbl_801DA270
+/* 801D9C80 001D5AC0  48 00 05 F1 */	bl indexAtID__Q25ostop7ManagerCFUl
 /* 801D9C84 001D5AC4  7C 64 1B 78 */	mr r4, r3
 /* 801D9C88 001D5AC8  38 7F 08 04 */	addi r3, r31, 0x804
-/* 801D9C8C 001D5ACC  48 00 00 19 */	bl lbl_801D9CA4
+/* 801D9C8C 001D5ACC  48 00 00 19 */	bl "removeAtIndex__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
 /* 801D9C90 001D5AD0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801D9C94 001D5AD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D9C98 001D5AD8  7C 08 03 A6 */	mtlr r0
 /* 801D9C9C 001D5ADC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9CA0 001D5AE0  4E 80 00 20 */	blr
-.global lbl_801D9CA4
-lbl_801D9CA4:
+.global "removeAtIndex__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
+"removeAtIndex__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl":
 /* 801D9CA4 001D5AE4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D9CA8 001D5AE8  7C 08 02 A6 */	mflr r0
 /* 801D9CAC 001D5AEC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -96,13 +96,13 @@ lbl_801D9CA4:
 lbl_801D9CD0:
 /* 801D9CD0 001D5B10  38 7D 00 04 */	addi r3, r29, 0x4
 /* 801D9CD4 001D5B14  7F C4 F3 78 */	mr r4, r30
-/* 801D9CD8 001D5B18  4B FF AB 6D */	bl lbl_801D4844
+/* 801D9CD8 001D5B18  4B FF AB 6D */	bl "__vc__Q33hel6common37Array<Q35ocoll9AttackLog8LogDatum,32>FUl"
 /* 801D9CDC 001D5B1C  7C 7F 1B 78 */	mr r31, r3
 /* 801D9CE0 001D5B20  38 7D 00 04 */	addi r3, r29, 0x4
 /* 801D9CE4 001D5B24  38 9E FF FF */	addi r4, r30, -0x1
-/* 801D9CE8 001D5B28  4B FF AB 5D */	bl lbl_801D4844
+/* 801D9CE8 001D5B28  4B FF AB 5D */	bl "__vc__Q33hel6common37Array<Q35ocoll9AttackLog8LogDatum,32>FUl"
 /* 801D9CEC 001D5B2C  7F E4 FB 78 */	mr r4, r31
-/* 801D9CF0 001D5B30  48 00 00 39 */	bl lbl_801D9D28
+/* 801D9CF0 001D5B30  48 00 00 39 */	bl __as__Q35ostop7Manager7ReqInfoFRCQ35ostop7Manager7ReqInfo
 /* 801D9CF4 001D5B34  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_801D9CF8
 lbl_801D9CF8:
@@ -120,8 +120,8 @@ lbl_801D9D10:
 /* 801D9D1C 001D5B5C  7C 08 03 A6 */	mtlr r0
 /* 801D9D20 001D5B60  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D9D24 001D5B64  4E 80 00 20 */	blr
-.global lbl_801D9D28
-lbl_801D9D28:
+.global __as__Q35ostop7Manager7ReqInfoFRCQ35ostop7Manager7ReqInfo
+__as__Q35ostop7Manager7ReqInfoFRCQ35ostop7Manager7ReqInfo:
 /* 801D9D28 001D5B68  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 801D9D2C 001D5B6C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801D9D30 001D5B70  80 04 00 04 */	lwz r0, 0x4(r4)
@@ -133,8 +133,8 @@ lbl_801D9D28:
 /* 801D9D48 001D5B88  88 04 00 0D */	lbz r0, 0xd(r4)
 /* 801D9D4C 001D5B8C  98 03 00 0D */	stb r0, 0xd(r3)
 /* 801D9D50 001D5B90  4E 80 00 20 */	blr
-.global lbl_801D9D54
-lbl_801D9D54:
+.global canRequestStopNormal__Q25ostop7ManagerCFv
+canRequestStopNormal__Q25ostop7ManagerCFv:
 /* 801D9D54 001D5B94  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9D58 001D5B98  7C 08 02 A6 */	mflr r0
 /* 801D9D5C 001D5B9C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -147,7 +147,7 @@ lbl_801D9D54:
 lbl_801D9D74:
 /* 801D9D74 001D5BB4  38 7E 08 04 */	addi r3, r30, 0x804
 /* 801D9D78 001D5BB8  7F E4 FB 78 */	mr r4, r31
-/* 801D9D7C 001D5BBC  48 00 00 45 */	bl lbl_801D9DC0
+/* 801D9D7C 001D5BBC  48 00 00 45 */	bl "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>CFUl"
 /* 801D9D80 001D5BC0  88 03 00 0D */	lbz r0, 0xd(r3)
 /* 801D9D84 001D5BC4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801D9D88 001D5BC8  40 82 00 0C */	bne lbl_801D9D94
@@ -170,8 +170,8 @@ lbl_801D9DA8:
 /* 801D9DB4 001D5BF4  7C 08 03 A6 */	mtlr r0
 /* 801D9DB8 001D5BF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9DBC 001D5BFC  4E 80 00 20 */	blr
-.global lbl_801D9DC0
-lbl_801D9DC0:
+.global "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>CFUl"
+"__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>CFUl":
 /* 801D9DC0 001D5C00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9DC4 001D5C04  7C 08 02 A6 */	mflr r0
 /* 801D9DC8 001D5C08  90 01 00 14 */	stw r0, 0x14(r1)
@@ -181,10 +181,10 @@ lbl_801D9DC0:
 /* 801D9DD8 001D5C18  7C 9F 23 78 */	mr r31, r4
 /* 801D9DDC 001D5C1C  7F E3 FB 78 */	mr r3, r31
 /* 801D9DE0 001D5C20  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 801D9DE4 001D5C24  4B E4 A6 BD */	bl lbl_800244A0
+/* 801D9DE4 001D5C24  4B E4 A6 BD */	bl DefaultSwitchThreadCallback
 /* 801D9DE8 001D5C28  7F E3 FB 78 */	mr r3, r31
 /* 801D9DEC 001D5C2C  38 80 00 20 */	li r4, 0x20
-/* 801D9DF0 001D5C30  4B E4 A6 B1 */	bl lbl_800244A0
+/* 801D9DF0 001D5C30  4B E4 A6 B1 */	bl DefaultSwitchThreadCallback
 /* 801D9DF4 001D5C34  57 E0 20 36 */	slwi r0, r31, 4
 /* 801D9DF8 001D5C38  7C 7E 02 14 */	add r3, r30, r0
 /* 801D9DFC 001D5C3C  38 63 00 04 */	addi r3, r3, 0x4
@@ -194,47 +194,47 @@ lbl_801D9DC0:
 /* 801D9E0C 001D5C4C  7C 08 03 A6 */	mtlr r0
 /* 801D9E10 001D5C50  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9E14 001D5C54  4E 80 00 20 */	blr
-.global lbl_801D9E18
-lbl_801D9E18:
+.global requestStopPowerful__Q25ostop7ManagerFUl
+requestStopPowerful__Q25ostop7ManagerFUl:
 /* 801D9E18 001D5C58  7C 85 23 78 */	mr r5, r4
 /* 801D9E1C 001D5C5C  38 80 FF FF */	li r4, -0x1
 /* 801D9E20 001D5C60  38 C0 00 01 */	li r6, 0x1
-/* 801D9E24 001D5C64  48 00 03 2C */	b lbl_801DA150
-.global lbl_801D9E28
-lbl_801D9E28:
+/* 801D9E24 001D5C64  48 00 03 2C */	b addReqInfo__Q25ostop7ManagerFUlUlb
+.global isStopped__Q25ostop7ManagerCFUl
+isStopped__Q25ostop7ManagerCFUl:
 /* 801D9E28 001D5C68  80 03 0A 0C */	lwz r0, 0xa0c(r3)
 /* 801D9E2C 001D5C6C  7C 03 20 38 */	and r3, r0, r4
 /* 801D9E30 001D5C70  30 03 FF FF */	addic r0, r3, -0x1
 /* 801D9E34 001D5C74  7C 60 19 10 */	subfe r3, r0, r3
 /* 801D9E38 001D5C78  4E 80 00 20 */	blr
-.global lbl_801D9E3C
-lbl_801D9E3C:
+.global isStoppedNormal__Q25ostop7ManagerCFUl
+isStoppedNormal__Q25ostop7ManagerCFUl:
 /* 801D9E3C 001D5C7C  80 03 0A 10 */	lwz r0, 0xa10(r3)
 /* 801D9E40 001D5C80  7C 03 20 38 */	and r3, r0, r4
 /* 801D9E44 001D5C84  30 03 FF FF */	addic r0, r3, -0x1
 /* 801D9E48 001D5C88  7C 60 19 10 */	subfe r3, r0, r3
 /* 801D9E4C 001D5C8C  4E 80 00 20 */	blr
-.global lbl_801D9E50
-lbl_801D9E50:
+.global isStoppedPowerful__Q25ostop7ManagerCFUl
+isStoppedPowerful__Q25ostop7ManagerCFUl:
 /* 801D9E50 001D5C90  80 03 0A 14 */	lwz r0, 0xa14(r3)
 /* 801D9E54 001D5C94  7C 03 20 38 */	and r3, r0, r4
 /* 801D9E58 001D5C98  30 03 FF FF */	addic r0, r3, -0x1
 /* 801D9E5C 001D5C9C  7C 60 19 10 */	subfe r3, r0, r3
 /* 801D9E60 001D5CA0  4E 80 00 20 */	blr
-.global lbl_801D9E64
-lbl_801D9E64:
+.global isNotStopped__Q25ostop7ManagerCFUl
+isNotStopped__Q25ostop7ManagerCFUl:
 /* 801D9E64 001D5CA4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9E68 001D5CA8  7C 08 02 A6 */	mflr r0
 /* 801D9E6C 001D5CAC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D9E70 001D5CB0  4B FF FF B9 */	bl lbl_801D9E28
+/* 801D9E70 001D5CB0  4B FF FF B9 */	bl isStopped__Q25ostop7ManagerCFUl
 /* 801D9E74 001D5CB4  7C 60 00 34 */	cntlzw r0, r3
 /* 801D9E78 001D5CB8  54 03 D9 7E */	srwi r3, r0, 5
 /* 801D9E7C 001D5CBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D9E80 001D5CC0  7C 08 03 A6 */	mtlr r0
 /* 801D9E84 001D5CC4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D9E88 001D5CC8  4E 80 00 20 */	blr
-.global lbl_801D9E8C
-lbl_801D9E8C:
+.global update__Q25ostop7ManagerFb
+update__Q25ostop7ManagerFb:
 /* 801D9E8C 001D5CCC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D9E90 001D5CD0  7C 08 02 A6 */	mflr r0
 /* 801D9E94 001D5CD4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -250,7 +250,7 @@ lbl_801D9EB4:
 /* 801D9EB4 001D5CF4  3B 9D FF FF */	addi r28, r29, -0x1
 /* 801D9EB8 001D5CF8  38 7F 08 04 */	addi r3, r31, 0x804
 /* 801D9EBC 001D5CFC  7F 84 E3 78 */	mr r4, r28
-/* 801D9EC0 001D5D00  48 00 01 19 */	bl lbl_801D9FD8
+/* 801D9EC0 001D5D00  48 00 01 19 */	bl "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
 /* 801D9EC4 001D5D04  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 801D9EC8 001D5D08  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801D9ECC 001D5D0C  40 82 00 0C */	bne lbl_801D9ED8
@@ -268,7 +268,7 @@ lbl_801D9ED8:
 /* 801D9EF4 001D5D34  40 82 00 14 */	bne lbl_801D9F08
 /* 801D9EF8 001D5D38  38 7F 08 04 */	addi r3, r31, 0x804
 /* 801D9EFC 001D5D3C  7F 84 E3 78 */	mr r4, r28
-/* 801D9F00 001D5D40  4B FF FD A5 */	bl lbl_801D9CA4
+/* 801D9F00 001D5D40  4B FF FD A5 */	bl "removeAtIndex__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
 /* 801D9F04 001D5D44  48 00 00 0C */	b lbl_801D9F10
 .global lbl_801D9F08
 lbl_801D9F08:
@@ -289,7 +289,7 @@ lbl_801D9F14:
 lbl_801D9F2C:
 /* 801D9F2C 001D5D6C  38 7F 08 04 */	addi r3, r31, 0x804
 /* 801D9F30 001D5D70  7F C4 F3 78 */	mr r4, r30
-/* 801D9F34 001D5D74  48 00 00 A5 */	bl lbl_801D9FD8
+/* 801D9F34 001D5D74  48 00 00 A5 */	bl "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
 /* 801D9F38 001D5D78  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 801D9F3C 001D5D7C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801D9F40 001D5D80  41 82 00 28 */	beq lbl_801D9F68
@@ -322,12 +322,12 @@ lbl_801D9F6C:
 lbl_801D9F90:
 /* 801D9F90 001D5DD0  7F 83 E3 78 */	mr r3, r28
 /* 801D9F94 001D5DD4  80 9F 00 00 */	lwz r4, 0x0(r31)
-/* 801D9F98 001D5DD8  4B E4 A5 09 */	bl lbl_800244A0
+/* 801D9F98 001D5DD8  4B E4 A5 09 */	bl DefaultSwitchThreadCallback
 /* 801D9F9C 001D5DDC  38 7F 00 04 */	addi r3, r31, 0x4
 /* 801D9FA0 001D5DE0  7F 84 E3 78 */	mr r4, r28
-/* 801D9FA4 001D5DE4  4B FE 4D 7D */	bl lbl_801BED20
+/* 801D9FA4 001D5DE4  4B FE 4D 7D */	bl "__vc__Q33hel6common48Array<PQ44nrel6devkit7heapmap12IHeapMapUser,512>FUl"
 /* 801D9FA8 001D5DE8  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 801D9FAC 001D5DEC  4B FF FA F1 */	bl lbl_801D9A9C
+/* 801D9FAC 001D5DEC  4B FF FA F1 */	bl updateIsStop__Q25ostop5ActorFv
 /* 801D9FB0 001D5DF0  3B 9C 00 01 */	addi r28, r28, 0x1
 .global lbl_801D9FB4
 lbl_801D9FB4:
@@ -340,8 +340,8 @@ lbl_801D9FB4:
 /* 801D9FCC 001D5E0C  7C 08 03 A6 */	mtlr r0
 /* 801D9FD0 001D5E10  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D9FD4 001D5E14  4E 80 00 20 */	blr
-.global lbl_801D9FD8
-lbl_801D9FD8:
+.global "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl"
+"__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>FUl":
 /* 801D9FD8 001D5E18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D9FDC 001D5E1C  7C 08 02 A6 */	mflr r0
 /* 801D9FE0 001D5E20  90 01 00 14 */	stw r0, 0x14(r1)
@@ -351,18 +351,18 @@ lbl_801D9FD8:
 /* 801D9FF0 001D5E30  7C 9F 23 78 */	mr r31, r4
 /* 801D9FF4 001D5E34  7F E3 FB 78 */	mr r3, r31
 /* 801D9FF8 001D5E38  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 801D9FFC 001D5E3C  4B E4 A4 A5 */	bl lbl_800244A0
+/* 801D9FFC 001D5E3C  4B E4 A4 A5 */	bl DefaultSwitchThreadCallback
 /* 801DA000 001D5E40  38 7E 00 04 */	addi r3, r30, 0x4
 /* 801DA004 001D5E44  7F E4 FB 78 */	mr r4, r31
-/* 801DA008 001D5E48  4B FF A8 3D */	bl lbl_801D4844
+/* 801DA008 001D5E48  4B FF A8 3D */	bl "__vc__Q33hel6common37Array<Q35ocoll9AttackLog8LogDatum,32>FUl"
 /* 801DA00C 001D5E4C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801DA010 001D5E50  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 801DA014 001D5E54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801DA018 001D5E58  7C 08 03 A6 */	mtlr r0
 /* 801DA01C 001D5E5C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DA020 001D5E60  4E 80 00 20 */	blr
-.global lbl_801DA024
-lbl_801DA024:
+.global registerActor__Q25ostop7ManagerFRQ25ostop5Actor
+registerActor__Q25ostop7ManagerFRQ25ostop5Actor:
 /* 801DA024 001D5E64  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DA028 001D5E68  7C 08 02 A6 */	mflr r0
 /* 801DA02C 001D5E6C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -375,7 +375,7 @@ lbl_801DA024:
 /* 801DA048 001D5E88  41 82 00 20 */	beq lbl_801DA068
 /* 801DA04C 001D5E8C  38 63 00 04 */	addi r3, r3, 0x4
 /* 801DA050 001D5E90  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 801DA054 001D5E94  4B FE 4C CD */	bl lbl_801BED20
+/* 801DA054 001D5E94  4B FE 4C CD */	bl "__vc__Q33hel6common48Array<PQ44nrel6devkit7heapmap12IHeapMapUser,512>FUl"
 /* 801DA058 001D5E98  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 801DA05C 001D5E9C  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 801DA060 001D5EA0  38 03 00 01 */	addi r0, r3, 0x1
@@ -388,8 +388,8 @@ lbl_801DA068:
 /* 801DA074 001D5EB4  7C 08 03 A6 */	mtlr r0
 /* 801DA078 001D5EB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DA07C 001D5EBC  4E 80 00 20 */	blr
-.global lbl_801DA080
-lbl_801DA080:
+.global unregisterActor__Q25ostop7ManagerFRQ25ostop5Actor
+unregisterActor__Q25ostop7ManagerFRQ25ostop5Actor:
 /* 801DA080 001D5EC0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DA084 001D5EC4  7C 08 02 A6 */	mflr r0
 /* 801DA088 001D5EC8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -403,10 +403,10 @@ lbl_801DA080:
 .global lbl_801DA0A8
 lbl_801DA0A8:
 /* 801DA0A8 001D5EE8  7F C3 F3 78 */	mr r3, r30
-/* 801DA0AC 001D5EEC  4B E4 A3 F5 */	bl lbl_800244A0
+/* 801DA0AC 001D5EEC  4B E4 A3 F5 */	bl DefaultSwitchThreadCallback
 /* 801DA0B0 001D5EF0  7F C3 F3 78 */	mr r3, r30
 /* 801DA0B4 001D5EF4  38 80 02 00 */	li r4, 0x200
-/* 801DA0B8 001D5EF8  4B E4 A3 E9 */	bl lbl_800244A0
+/* 801DA0B8 001D5EF8  4B E4 A3 E9 */	bl DefaultSwitchThreadCallback
 /* 801DA0BC 001D5EFC  7C 7C FA 14 */	add r3, r28, r31
 /* 801DA0C0 001D5F00  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 801DA0C4 001D5F04  7C 1D 00 40 */	cmplw r29, r0
@@ -433,11 +433,11 @@ lbl_801DA0E8:
 lbl_801DA0FC:
 /* 801DA0FC 001D5F3C  38 7C 00 04 */	addi r3, r28, 0x4
 /* 801DA100 001D5F40  7F C4 F3 78 */	mr r4, r30
-/* 801DA104 001D5F44  4B FE 4C 1D */	bl lbl_801BED20
+/* 801DA104 001D5F44  4B FE 4C 1D */	bl "__vc__Q33hel6common48Array<PQ44nrel6devkit7heapmap12IHeapMapUser,512>FUl"
 /* 801DA108 001D5F48  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 801DA10C 001D5F4C  38 7C 00 04 */	addi r3, r28, 0x4
 /* 801DA110 001D5F50  38 9E FF FF */	addi r4, r30, -0x1
-/* 801DA114 001D5F54  4B FE 4C 0D */	bl lbl_801BED20
+/* 801DA114 001D5F54  4B FE 4C 0D */	bl "__vc__Q33hel6common48Array<PQ44nrel6devkit7heapmap12IHeapMapUser,512>FUl"
 /* 801DA118 001D5F58  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 801DA11C 001D5F5C  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_801DA120
@@ -456,8 +456,8 @@ lbl_801DA138:
 /* 801DA144 001D5F84  7C 08 03 A6 */	mtlr r0
 /* 801DA148 001D5F88  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DA14C 001D5F8C  4E 80 00 20 */	blr
-.global lbl_801DA150
-lbl_801DA150:
+.global addReqInfo__Q25ostop7ManagerFUlUlb
+addReqInfo__Q25ostop7ManagerFUlUlb:
 /* 801DA150 001D5F90  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801DA154 001D5F94  7C 08 02 A6 */	mflr r0
 /* 801DA158 001D5F98  90 01 00 44 */	stw r0, 0x44(r1)
@@ -469,11 +469,11 @@ lbl_801DA150:
 /* 801DA170 001D5FB0  7C DE 33 78 */	mr r30, r6
 /* 801DA174 001D5FB4  2C 06 00 00 */	cmpwi r6, 0x0
 /* 801DA178 001D5FB8  40 82 00 28 */	bne lbl_801DA1A0
-/* 801DA17C 001D5FBC  4B FF FB D9 */	bl lbl_801D9D54
+/* 801DA17C 001D5FBC  4B FF FB D9 */	bl canRequestStopNormal__Q25ostop7ManagerCFv
 /* 801DA180 001D5FC0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801DA184 001D5FC4  40 82 00 1C */	bne lbl_801DA1A0
 /* 801DA188 001D5FC8  38 61 00 10 */	addi r3, r1, 0x10
-/* 801DA18C 001D5FCC  48 00 01 51 */	bl lbl_801DA2DC
+/* 801DA18C 001D5FCC  48 00 01 51 */	bl __ct__Q25ostop9ReqHandleFv
 /* 801DA190 001D5FD0  7C 64 1B 78 */	mr r4, r3
 /* 801DA194 001D5FD4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801DA198 001D5FD8  80 84 00 04 */	lwz r4, 0x4(r4)
@@ -484,7 +484,7 @@ lbl_801DA1A0:
 /* 801DA1A4 001D5FE4  38 83 00 01 */	addi r4, r3, 0x1
 /* 801DA1A8 001D5FE8  90 9B 0A 08 */	stw r4, 0xa08(r27)
 /* 801DA1AC 001D5FEC  7F 63 DB 78 */	mr r3, r27
-/* 801DA1B0 001D5FF0  48 00 00 89 */	bl lbl_801DA238
+/* 801DA1B0 001D5FF0  48 00 00 89 */	bl isUsingID__Q25ostop7ManagerCFUl
 /* 801DA1B4 001D5FF4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801DA1B8 001D5FF8  40 82 FF E8 */	bne lbl_801DA1A0
 /* 801DA1BC 001D5FFC  83 FB 0A 08 */	lwz r31, 0xa08(r27)
@@ -500,9 +500,9 @@ lbl_801DA1A0:
 /* 801DA1E4 001D6024  41 82 00 24 */	beq lbl_801DA208
 /* 801DA1E8 001D6028  38 7B 08 08 */	addi r3, r27, 0x808
 /* 801DA1EC 001D602C  80 9B 08 04 */	lwz r4, 0x804(r27)
-/* 801DA1F0 001D6030  4B FF A6 55 */	bl lbl_801D4844
+/* 801DA1F0 001D6030  4B FF A6 55 */	bl "__vc__Q33hel6common37Array<Q35ocoll9AttackLog8LogDatum,32>FUl"
 /* 801DA1F4 001D6034  38 81 00 18 */	addi r4, r1, 0x18
-/* 801DA1F8 001D6038  4B FF FB 31 */	bl lbl_801D9D28
+/* 801DA1F8 001D6038  4B FF FB 31 */	bl __as__Q35ostop7Manager7ReqInfoFRCQ35ostop7Manager7ReqInfo
 /* 801DA1FC 001D603C  80 7B 08 04 */	lwz r3, 0x804(r27)
 /* 801DA200 001D6040  38 03 00 01 */	addi r0, r3, 0x1
 /* 801DA204 001D6044  90 1B 08 04 */	stw r0, 0x804(r27)
@@ -510,7 +510,7 @@ lbl_801DA1A0:
 lbl_801DA208:
 /* 801DA208 001D6048  38 61 00 08 */	addi r3, r1, 0x8
 /* 801DA20C 001D604C  7F E4 FB 78 */	mr r4, r31
-/* 801DA210 001D6050  48 00 00 DD */	bl lbl_801DA2EC
+/* 801DA210 001D6050  48 00 00 DD */	bl __ct__Q25ostop9ReqHandleFUl
 /* 801DA214 001D6054  7C 64 1B 78 */	mr r4, r3
 /* 801DA218 001D6058  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801DA21C 001D605C  80 84 00 04 */	lwz r4, 0x4(r4)
@@ -522,14 +522,14 @@ lbl_801DA220:
 /* 801DA22C 001D606C  7C 08 03 A6 */	mtlr r0
 /* 801DA230 001D6070  38 21 00 40 */	addi r1, r1, 0x40
 /* 801DA234 001D6074  4E 80 00 20 */	blr
-.global lbl_801DA238
-lbl_801DA238:
+.global isUsingID__Q25ostop7ManagerCFUl
+isUsingID__Q25ostop7ManagerCFUl:
 /* 801DA238 001D6078  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DA23C 001D607C  7C 08 02 A6 */	mflr r0
 /* 801DA240 001D6080  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801DA244 001D6084  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DA248 001D6088  83 E3 08 04 */	lwz r31, 0x804(r3)
-/* 801DA24C 001D608C  48 00 00 25 */	bl lbl_801DA270
+/* 801DA24C 001D608C  48 00 00 25 */	bl indexAtID__Q25ostop7ManagerCFUl
 /* 801DA250 001D6090  7C 63 F8 50 */	subf r3, r3, r31
 /* 801DA254 001D6094  30 03 FF FF */	addic r0, r3, -0x1
 /* 801DA258 001D6098  7C 60 19 10 */	subfe r3, r0, r3
@@ -538,8 +538,8 @@ lbl_801DA238:
 /* 801DA264 001D60A4  7C 08 03 A6 */	mtlr r0
 /* 801DA268 001D60A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DA26C 001D60AC  4E 80 00 20 */	blr
-.global lbl_801DA270
-lbl_801DA270:
+.global indexAtID__Q25ostop7ManagerCFUl
+indexAtID__Q25ostop7ManagerCFUl:
 /* 801DA270 001D60B0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DA274 001D60B4  7C 08 02 A6 */	mflr r0
 /* 801DA278 001D60B8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -553,7 +553,7 @@ lbl_801DA270:
 lbl_801DA294:
 /* 801DA294 001D60D4  38 7D 08 04 */	addi r3, r29, 0x804
 /* 801DA298 001D60D8  7F E4 FB 78 */	mr r4, r31
-/* 801DA29C 001D60DC  4B FF FB 25 */	bl lbl_801D9DC0
+/* 801DA29C 001D60DC  4B FF FB 25 */	bl "__vc__Q33hel6common41MutableArray<Q35ostop7Manager7ReqInfo,32>CFUl"
 /* 801DA2A0 001D60E0  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 801DA2A4 001D60E4  7C 1E 00 40 */	cmplw r30, r0
 /* 801DA2A8 001D60E8  40 82 00 0C */	bne lbl_801DA2B4

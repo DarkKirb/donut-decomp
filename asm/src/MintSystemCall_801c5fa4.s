@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801C5FA4
-lbl_801C5FA4:
+.global panic__Q26mintvm14MintSystemCallFPCciPCce
+panic__Q26mintvm14MintSystemCallFPCciPCce:
 /* 801C5FA4 001C1DE4  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 801C5FA8 001C1DE8  7C 08 02 A6 */	mflr r0
 /* 801C5FAC 001C1DEC  90 01 00 84 */	stw r0, 0x84(r1)
@@ -37,26 +37,26 @@ lbl_801C5FE4:
 /* 801C6018 001C1E58  38 01 00 08 */	addi r0, r1, 0x8
 /* 801C601C 001C1E5C  90 01 00 70 */	stw r0, 0x70(r1)
 /* 801C6020 001C1E60  7C A3 2B 78 */	mr r3, r5
-/* 801C6024 001C1E64  4B E4 74 A9 */	bl lbl_8000D4CC
-/* 801C6028 001C1E68  3C 60 80 46 */	lis r3, lbl_8045BCA0@ha
-/* 801C602C 001C1E6C  38 63 BC A0 */	addi r3, r3, lbl_8045BCA0@l
+/* 801C6024 001C1E64  4B E4 74 A9 */	bl vprintf
+/* 801C6028 001C1E68  3C 60 80 46 */	lis r3, "@49097_8045BCA0"@ha
+/* 801C602C 001C1E6C  38 63 BC A0 */	addi r3, r3, "@49097_8045BCA0"@l
 /* 801C6030 001C1E70  7F C4 F3 78 */	mr r4, r30
 /* 801C6034 001C1E74  7F E5 FB 78 */	mr r5, r31
 /* 801C6038 001C1E78  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801C603C 001C1E7C  4B E4 72 FD */	bl lbl_8000D338
-/* 801C6040 001C1E80  48 00 00 1D */	bl lbl_801C605C
+/* 801C603C 001C1E7C  4B E4 72 FD */	bl printf
+/* 801C6040 001C1E80  48 00 00 1D */	bl halt__Q26mintvm14MintSystemCallFv
 /* 801C6044 001C1E84  83 E1 00 7C */	lwz r31, 0x7c(r1)
 /* 801C6048 001C1E88  83 C1 00 78 */	lwz r30, 0x78(r1)
 /* 801C604C 001C1E8C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 801C6050 001C1E90  7C 08 03 A6 */	mtlr r0
 /* 801C6054 001C1E94  38 21 00 80 */	addi r1, r1, 0x80
 /* 801C6058 001C1E98  4E 80 00 20 */	blr
-.global lbl_801C605C
-lbl_801C605C:
+.global halt__Q26mintvm14MintSystemCallFv
+halt__Q26mintvm14MintSystemCallFv:
 /* 801C605C 001C1E9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C6060 001C1EA0  7C 08 02 A6 */	mflr r0
 /* 801C6064 001C1EA4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801C6068 001C1EA8  48 00 00 21 */	bl lbl_801C6088
+/* 801C6068 001C1EA8  48 00 00 21 */	bl "Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv"
 /* 801C606C 001C1EAC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 801C6070 001C1EB0  7D 89 03 A6 */	mtctr r12
 /* 801C6074 001C1EB4  4E 80 04 21 */	bctrl
@@ -64,30 +64,30 @@ lbl_801C605C:
 /* 801C607C 001C1EBC  7C 08 03 A6 */	mtlr r0
 /* 801C6080 001C1EC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C6084 001C1EC4  4E 80 00 20 */	blr
-.global lbl_801C6088
-lbl_801C6088:
+.global "Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv"
+"Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv":
 /* 801C6088 001C1EC8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C608C 001C1ECC  7C 08 02 A6 */	mflr r0
 /* 801C6090 001C1ED0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801C6094 001C1ED4  80 0D EE A0 */	lwz r0, lbl_8055D2C0@sda21(r13)
+/* 801C6094 001C1ED4  80 0D EE A0 */	lwz r0, "object___Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>"@sda21(r13)
 /* 801C6098 001C1ED8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801C609C 001C1EDC  40 82 00 20 */	bne lbl_801C60BC
-/* 801C60A0 001C1EE0  3C 60 80 46 */	lis r3, lbl_80459DF4@ha
-/* 801C60A4 001C1EE4  38 63 9D F4 */	addi r3, r3, lbl_80459DF4@l
+/* 801C60A0 001C1EE0  3C 60 80 46 */	lis r3, "@STRING@Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv"@ha
+/* 801C60A4 001C1EE4  38 63 9D F4 */	addi r3, r3, "@STRING@Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv"@l
 /* 801C60A8 001C1EE8  38 80 00 21 */	li r4, 0x21
-/* 801C60AC 001C1EEC  3C A0 80 46 */	lis r5, lbl_80459DE0@ha
-/* 801C60B0 001C1EF0  38 A5 9D E0 */	addi r5, r5, lbl_80459DE0@l
+/* 801C60AC 001C1EEC  3C A0 80 46 */	lis r5, "@STRING@Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv@0"@ha
+/* 801C60B0 001C1EF0  38 A5 9D E0 */	addi r5, r5, "@STRING@Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv@0"@l
 /* 801C60B4 001C1EF4  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801C60B8 001C1EF8  4B FF FE ED */	bl lbl_801C5FA4
+/* 801C60B8 001C1EF8  4B FF FE ED */	bl panic__Q26mintvm14MintSystemCallFPCciPCce
 .global lbl_801C60BC
 lbl_801C60BC:
-/* 801C60BC 001C1EFC  80 6D EE A0 */	lwz r3, lbl_8055D2C0@sda21(r13)
+/* 801C60BC 001C1EFC  80 6D EE A0 */	lwz r3, "object___Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>"@sda21(r13)
 /* 801C60C0 001C1F00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801C60C4 001C1F04  7C 08 03 A6 */	mtlr r0
 /* 801C60C8 001C1F08  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C60CC 001C1F0C  4E 80 00 20 */	blr
-.global lbl_801C60D0
-lbl_801C60D0:
+.global messageHandler__Q26mintvm14MintSystemCallFQ26mintvm11MintMsgKindPCcPCc
+messageHandler__Q26mintvm14MintSystemCallFQ26mintvm11MintMsgKindPCcPCc:
 /* 801C60D0 001C1F10  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801C60D4 001C1F14  7C 08 02 A6 */	mflr r0
 /* 801C60D8 001C1F18  90 01 00 24 */	stw r0, 0x24(r1)
@@ -96,7 +96,7 @@ lbl_801C60D0:
 /* 801C60E4 001C1F24  7C 7D 1B 78 */	mr r29, r3
 /* 801C60E8 001C1F28  7C 9E 23 78 */	mr r30, r4
 /* 801C60EC 001C1F2C  7C BF 2B 78 */	mr r31, r5
-/* 801C60F0 001C1F30  4B FF FF 99 */	bl lbl_801C6088
+/* 801C60F0 001C1F30  4B FF FF 99 */	bl "Instance__Q26mintvm41ExplicitSingleton<Q26mintvm11MintSetting>Fv"
 /* 801C60F4 001C1F34  7C 66 1B 78 */	mr r6, r3
 /* 801C60F8 001C1F38  7F A3 EB 78 */	mr r3, r29
 /* 801C60FC 001C1F3C  7F C4 F3 78 */	mr r4, r30
@@ -106,7 +106,7 @@ lbl_801C60D0:
 /* 801C610C 001C1F4C  4E 80 04 21 */	bctrl
 /* 801C6110 001C1F50  2C 1D 00 01 */	cmpwi r29, 0x1
 /* 801C6114 001C1F54  41 80 00 08 */	blt lbl_801C611C
-/* 801C6118 001C1F58  4B FF FF 45 */	bl lbl_801C605C
+/* 801C6118 001C1F58  4B FF FF 45 */	bl halt__Q26mintvm14MintSystemCallFv
 .global lbl_801C611C
 lbl_801C611C:
 /* 801C611C 001C1F5C  39 61 00 20 */	addi r11, r1, 0x20

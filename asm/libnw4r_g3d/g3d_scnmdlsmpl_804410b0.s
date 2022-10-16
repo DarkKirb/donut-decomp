@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804410B0
-lbl_804410B0:
+.global "@14160"
+"@14160":
 
 	.4byte 0x4E6F6465
 	.4byte 0x54726565
 	.4byte 0
 	.4byte 0
 
-.global lbl_804410C0
-lbl_804410C0:
+.global __vt__Q34nw4r3g3d12ScnMdlSimple
+__vt__Q34nw4r3g3d12ScnMdlSimple:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800EE1B0
-	.4byte lbl_800EC9B0
-	.4byte lbl_800EE090
-	.4byte lbl_800EE230
-	.4byte lbl_800EE220
-	.4byte lbl_800E9830
-	.4byte lbl_800ED240
-	.4byte lbl_800ED280
-	.4byte lbl_800E96A0
-	.4byte lbl_800E96B0
-	.4byte lbl_800E9900
-	.4byte lbl_800ED3A0
-	.4byte lbl_800ED9B0
-	.4byte lbl_800EDB30
-	.4byte lbl_800EDC10
-	.4byte lbl_800EDC70
+	.4byte IsDerivedFrom__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d12ScnMdlSimpleFUlUlPv
+	.4byte __dt__Q34nw4r3g3d12ScnMdlSimpleFv
+	.4byte GetTypeObj__Q34nw4r3g3d12ScnMdlSimpleCFv
+	.4byte GetTypeName__Q34nw4r3g3d12ScnMdlSimpleCFv
+	.4byte ForEach__Q34nw4r3g3d7ScnLeafFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb
+	.4byte SetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleFUlUl
+	.4byte GetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleCFUlPUl
+	.4byte GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv
+	.4byte GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv
+	.4byte CalcWorldMtx__Q34nw4r3g3d7ScnLeafFPCQ34nw4r4math5MTX34PUl
+	.4byte SetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObjQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.4byte RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObj
+	.4byte RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.4byte GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType
+	.4byte GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d12ScnMdlSimple10AnmObjType

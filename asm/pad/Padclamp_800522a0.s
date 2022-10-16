@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800522A0
-lbl_800522A0:
+.global ClampStick
+ClampStick:
 /* 800522A0 0004E0E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800522A4 0004E0E4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800522A8 0004E0E8  88 03 00 00 */	lbz r0, 0x0(r3)
@@ -95,8 +95,8 @@ lbl_800523C4:
 /* 800523C4 0004E204  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800523C8 0004E208  38 21 00 10 */	addi r1, r1, 0x10
 /* 800523CC 0004E20C  4E 80 00 20 */	blr
-.global lbl_800523D0
-lbl_800523D0:
+.global PADClamp
+PADClamp:
 /* 800523D0 0004E210  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800523D4 0004E214  7C 08 02 A6 */	mflr r0
 /* 800523D8 0004E218  90 01 00 24 */	stw r0, 0x24(r1)
@@ -118,13 +118,13 @@ lbl_800523FC:
 /* 80052410 0004E250  38 A0 00 48 */	li r5, 0x48
 /* 80052414 0004E254  38 C0 00 28 */	li r6, 0x28
 /* 80052418 0004E258  38 E0 00 0F */	li r7, 0xf
-/* 8005241C 0004E25C  4B FF FE 85 */	bl lbl_800522A0
+/* 8005241C 0004E25C  4B FF FE 85 */	bl ClampStick
 /* 80052420 0004E260  38 7C 00 04 */	addi r3, r28, 0x4
 /* 80052424 0004E264  38 9C 00 05 */	addi r4, r28, 0x5
 /* 80052428 0004E268  38 A0 00 3B */	li r5, 0x3b
 /* 8005242C 0004E26C  38 C0 00 1F */	li r6, 0x1f
 /* 80052430 0004E270  38 E0 00 0F */	li r7, 0xf
-/* 80052434 0004E274  4B FF FE 6D */	bl lbl_800522A0
+/* 80052434 0004E274  4B FF FE 6D */	bl ClampStick
 /* 80052438 0004E278  88 1C 00 06 */	lbz r0, 0x6(r28)
 /* 8005243C 0004E27C  28 00 00 1E */	cmplwi r0, 0x1e
 /* 80052440 0004E280  41 81 00 0C */	bgt lbl_8005244C

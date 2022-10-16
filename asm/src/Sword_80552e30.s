@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80552E30
-lbl_80552E30:
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SwordFv@desc"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SwordFv@desc":
 	.skip 0x58
 
-.global lbl_80552E88
-lbl_80552E88:
+.global "@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@desc"
+"@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@desc":
 	.skip 0xE4
 
-.global lbl_80552F6C
-lbl_80552F6C:
+.global "@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@descNode0@0"
+"@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@descNode0@0":
 	.skip 0x24
 
-.global lbl_80552F90
-lbl_80552F90:
+.global "@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@descNode1@1"
+"@LOCAL@HatDyna__Q53scn4step4hero9modeldesc5SwordFv@descNode1@1":
 	.skip 0x28
 
-.global lbl_80552FB8
-lbl_80552FB8:
+.global "@LOCAL@SwordModel__Q53scn4step4hero9modeldesc5SwordFv@desc"
+"@LOCAL@SwordModel__Q53scn4step4hero9modeldesc5SwordFv@desc":
 	.skip 0x58
 
-.global lbl_80553010
-lbl_80553010:
+.global "@LOCAL@SwordAnim__Q53scn4step4hero9modeldesc5SwordFv@desc"
+"@LOCAL@SwordAnim__Q53scn4step4hero9modeldesc5SwordFv@desc":
 	.skip 0x10
 
-.global lbl_80553020
-lbl_80553020:
+.global "@LOCAL@SwordAnim__Q53scn4step4hero9modeldesc5SwordFv@dataDesc@0"
+"@LOCAL@SwordAnim__Q53scn4step4hero9modeldesc5SwordFv@dataDesc@0":
 	.skip 0x10

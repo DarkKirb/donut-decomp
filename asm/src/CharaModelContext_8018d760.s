@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018D760
-lbl_8018D760:
-/* 8018D760 001895A0  48 00 49 88 */	b lbl_801920E8
-.global lbl_8018D764
-lbl_8018D764:
-/* 8018D764 001895A4  4B F9 45 6C */	b lbl_80121CD0
-.global lbl_8018D768
-lbl_8018D768:
-/* 8018D768 001895A8  48 00 54 B8 */	b lbl_80192C20
-.global lbl_8018D76C
-lbl_8018D76C:
-/* 8018D76C 001895AC  4B F7 B2 94 */	b lbl_80108A00
-.global lbl_8018D770
-lbl_8018D770:
-/* 8018D770 001895B0  4B F7 B2 80 */	b lbl_801089F0
-.global lbl_8018D774
-lbl_8018D774:
-/* 8018D774 001895B4  48 00 49 7C */	b lbl_801920F0
-.global lbl_8018D778
-lbl_8018D778:
-/* 8018D778 001895B8  4B F9 45 58 */	b lbl_80121CD0
-.global lbl_8018D77C
-lbl_8018D77C:
-/* 8018D77C 001895BC  48 00 55 04 */	b lbl_80192C80
-.global lbl_8018D780
-lbl_8018D780:
+.global DefaultAllocator__Q23g3d17CharaModelContextFv
+DefaultAllocator__Q23g3d17CharaModelContextFv:
+/* 8018D760 001895A0  48 00 49 88 */	b DefaultAllocator__Q23g3d12ModelContextFv
+.global DefaultAnimSlotNum__Q23g3d17CharaModelContextFv
+DefaultAnimSlotNum__Q23g3d17CharaModelContextFv:
+/* 8018D764 001895A4  4B F9 45 6C */	b GetType__Q44nw4r2ut6detail11ResFontBaseCFv
+.global DefaultHeapNamePrefix__Q23g3d17CharaModelContextFv
+DefaultHeapNamePrefix__Q23g3d17CharaModelContextFv:
+/* 8018D768 001895A8  48 00 54 B8 */	b DefaultHeapNamePrefix__Q23g3d21ModelMultiAnimContextFv
+.global DefaultIsCreateNodeLocalMtx__Q23g3d17CharaModelContextFv
+DefaultIsCreateNodeLocalMtx__Q23g3d17CharaModelContextFv:
+/* 8018D76C 001895AC  4B F7 B2 94 */	b CanCancel__Q34nw4r2ut13DvdFileStreamCFv
+.global DefaultMaxNumChildren__Q23g3d17CharaModelContextFv
+DefaultMaxNumChildren__Q23g3d17CharaModelContextFv:
+/* 8018D770 001895B0  4B F7 B2 80 */	b GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
+.global DefaultModelBufferOption__Q23g3d17CharaModelContextFv
+DefaultModelBufferOption__Q23g3d17CharaModelContextFv:
+/* 8018D774 001895B4  48 00 49 7C */	b DefaultModelBufferOption__Q23g3d12ModelContextFv
+.global DefaultNumView__Q23g3d17CharaModelContextFv
+DefaultNumView__Q23g3d17CharaModelContextFv:
+/* 8018D778 001895B8  4B F9 45 58 */	b GetType__Q44nw4r2ut6detail11ResFontBaseCFv
+.global DefaultOneAnimSlotWorkMemSize__Q23g3d17CharaModelContextFv
+DefaultOneAnimSlotWorkMemSize__Q23g3d17CharaModelContextFv:
+/* 8018D77C 001895BC  48 00 55 04 */	b DefaultOneAnimSlotWorkMemSize__Q23g3d21ModelMultiAnimContextFv
+.global "__ct__Q23g3d17CharaModelContextFRCQ23g3d15ResModelContextRCQ23g3d17ModelBufferOptionUlUlUlRQ23mem10IAllocatorbUlRCQ33hel6common15FixedString<32>"
+"__ct__Q23g3d17CharaModelContextFRCQ23g3d15ResModelContextRCQ23g3d17ModelBufferOptionUlUlUlRQ23mem10IAllocatorbUlRCQ33hel6common15FixedString<32>":
 /* 8018D780 001895C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018D784 001895C4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8018D788 001895C8  93 C1 00 08 */	stw r30, 0x8(r1)

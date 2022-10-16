@@ -1,28 +1,28 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_805568B0
-lbl_805568B0:
+.global p_bta_dm_rm_cfg
+p_bta_dm_rm_cfg:
 
-	.4byte lbl_80407E0C
+	.4byte bta_dm_rm_cfg
 
-.global lbl_805568B4
-lbl_805568B4:
+.global p_bta_dm_compress_cfg
+p_bta_dm_compress_cfg:
 
-	.4byte lbl_80407E18
+	.4byte bta_dm_compress_cfg
 
-.global lbl_805568B8
-lbl_805568B8:
+.global p_bta_dm_pm_cfg
+p_bta_dm_pm_cfg:
 
-	.4byte lbl_805643C0
+	.4byte bta_dm_pm_cfg
 
-.global lbl_805568BC
-lbl_805568BC:
+.global p_bta_dm_pm_spec
+p_bta_dm_pm_spec:
 
-	.4byte lbl_80407E2C
+	.4byte bta_dm_pm_spec
 
-.global lbl_805568C0
-lbl_805568C0:
+.global p_bta_dm_pm_md
+p_bta_dm_pm_md:
 
-	.4byte lbl_80407E78
+	.4byte bta_dm_pm_md
 	.4byte 0

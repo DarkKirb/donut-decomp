@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8027A9AC
-lbl_8027A9AC:
+.global __dt__Q43scn4step5debug12ObjInfoReposFv
+__dt__Q43scn4step5debug12ObjInfoReposFv:
 /* 8027A9AC 002767EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8027A9B0 002767F0  7C 08 02 A6 */	mflr r0
 /* 8027A9B4 002767F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -13,12 +13,12 @@ lbl_8027A9AC:
 /* 8027A9C8 00276808  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8027A9CC 0027680C  41 82 00 20 */	beq lbl_8027A9EC
 /* 8027A9D0 00276810  38 80 FF FF */	li r4, -0x1
-/* 8027A9D4 00276814  4B EF B1 95 */	bl lbl_80175B68
+/* 8027A9D4 00276814  4B EF B1 95 */	bl __dt__Q23scn6ISceneFv
 /* 8027A9D8 00276818  7F E0 07 34 */	extsh r0, r31
 /* 8027A9DC 0027681C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8027A9E0 00276820  40 81 00 0C */	ble lbl_8027A9EC
 /* 8027A9E4 00276824  7F C3 F3 78 */	mr r3, r30
-/* 8027A9E8 00276828  4B F4 4D 2D */	bl lbl_801BF714
+/* 8027A9E8 00276828  4B F4 4D 2D */	bl __dl__FPv
 .global lbl_8027A9EC
 lbl_8027A9EC:
 /* 8027A9EC 0027682C  7F C3 F3 78 */	mr r3, r30
@@ -28,8 +28,8 @@ lbl_8027A9EC:
 /* 8027A9FC 0027683C  7C 08 03 A6 */	mtlr r0
 /* 8027AA00 00276840  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027AA04 00276844  4E 80 00 20 */	blr
-.global lbl_8027AA08
-lbl_8027AA08:
+.global registerObj__Q43scn4step5debug12ObjInfoReposFRCQ43scn4step5debug12IObjInfoImpl
+registerObj__Q43scn4step5debug12ObjInfoReposFRCQ43scn4step5debug12IObjInfoImpl:
 /* 8027AA08 00276848  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8027AA0C 0027684C  7C 08 02 A6 */	mflr r0
 /* 8027AA10 00276850  90 01 00 14 */	stw r0, 0x14(r1)
@@ -42,7 +42,7 @@ lbl_8027AA08:
 /* 8027AA2C 0027686C  41 82 00 20 */	beq lbl_8027AA4C
 /* 8027AA30 00276870  38 63 00 04 */	addi r3, r3, 0x4
 /* 8027AA34 00276874  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 8027AA38 00276878  4B F2 B2 81 */	bl lbl_801A5CB8
+/* 8027AA38 00276878  4B F2 B2 81 */	bl "__vc__Q33hel6common35Array<PQ34info8sequence7Command,64>FUl"
 /* 8027AA3C 0027687C  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 8027AA40 00276880  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 8027AA44 00276884  38 03 00 01 */	addi r0, r3, 0x1
@@ -55,8 +55,8 @@ lbl_8027AA4C:
 /* 8027AA58 00276898  7C 08 03 A6 */	mtlr r0
 /* 8027AA5C 0027689C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027AA60 002768A0  4E 80 00 20 */	blr
-.global lbl_8027AA64
-lbl_8027AA64:
+.global unregisterObj__Q43scn4step5debug12ObjInfoReposFRCQ43scn4step5debug12IObjInfoImpl
+unregisterObj__Q43scn4step5debug12ObjInfoReposFRCQ43scn4step5debug12IObjInfoImpl:
 /* 8027AA64 002768A4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8027AA68 002768A8  7C 08 02 A6 */	mflr r0
 /* 8027AA6C 002768AC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -70,10 +70,10 @@ lbl_8027AA64:
 .global lbl_8027AA8C
 lbl_8027AA8C:
 /* 8027AA8C 002768CC  7F C3 F3 78 */	mr r3, r30
-/* 8027AA90 002768D0  4B DA 9A 11 */	bl lbl_800244A0
+/* 8027AA90 002768D0  4B DA 9A 11 */	bl DefaultSwitchThreadCallback
 /* 8027AA94 002768D4  7F C3 F3 78 */	mr r3, r30
 /* 8027AA98 002768D8  38 80 00 40 */	li r4, 0x40
-/* 8027AA9C 002768DC  4B DA 9A 05 */	bl lbl_800244A0
+/* 8027AA9C 002768DC  4B DA 9A 05 */	bl DefaultSwitchThreadCallback
 /* 8027AAA0 002768E0  7C 7C FA 14 */	add r3, r28, r31
 /* 8027AAA4 002768E4  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 8027AAA8 002768E8  7C 1D 00 40 */	cmplw r29, r0
@@ -100,11 +100,11 @@ lbl_8027AACC:
 lbl_8027AAE0:
 /* 8027AAE0 00276920  38 7C 00 04 */	addi r3, r28, 0x4
 /* 8027AAE4 00276924  7F C4 F3 78 */	mr r4, r30
-/* 8027AAE8 00276928  4B F2 B1 D1 */	bl lbl_801A5CB8
+/* 8027AAE8 00276928  4B F2 B1 D1 */	bl "__vc__Q33hel6common35Array<PQ34info8sequence7Command,64>FUl"
 /* 8027AAEC 0027692C  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 8027AAF0 00276930  38 7C 00 04 */	addi r3, r28, 0x4
 /* 8027AAF4 00276934  38 9E FF FF */	addi r4, r30, -0x1
-/* 8027AAF8 00276938  4B F2 B1 C1 */	bl lbl_801A5CB8
+/* 8027AAF8 00276938  4B F2 B1 C1 */	bl "__vc__Q33hel6common35Array<PQ34info8sequence7Command,64>FUl"
 /* 8027AAFC 0027693C  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 8027AB00 00276940  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8027AB04

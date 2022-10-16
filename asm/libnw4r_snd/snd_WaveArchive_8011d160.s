@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011D160
-lbl_8011D160:
+.global __ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv
+__ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv:
 /* 8011D160 00118FA0  38 00 00 00 */	li r0, 0x0
 /* 8011D164 00118FA4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8011D168 00118FA8  90 03 00 04 */	stw r0, 0x4(r3)
@@ -41,8 +41,8 @@ lbl_8011D1B0:
 /* 8011D1D4 00119014  00 00 00 00 */	.4byte 0x00000000
 /* 8011D1D8 00119018  00 00 00 00 */	.4byte 0x00000000
 /* 8011D1DC 0011901C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011D1E0
-lbl_8011D1E0:
+.global GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi
+GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi:
 /* 8011D1E0 00119020  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011D1E4 00119024  7C 08 02 A6 */	mflr r0
 /* 8011D1E8 00119028  80 C3 00 00 */	lwz r6, 0x0(r3)
@@ -80,7 +80,7 @@ lbl_8011D238:
 /* 8011D248 00119088  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 8011D24C 0011908C  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8011D250 00119090  88 61 00 08 */	lbz r3, 0x8(r1)
-/* 8011D254 00119094  4B FF FE DD */	bl lbl_8011D130
+/* 8011D254 00119094  4B FF FE DD */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 .global lbl_8011D258
 lbl_8011D258:
 /* 8011D258 00119098  80 01 00 14 */	lwz r0, 0x14(r1)

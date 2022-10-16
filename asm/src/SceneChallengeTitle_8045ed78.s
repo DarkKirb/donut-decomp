@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045ED78
-lbl_8045ED78:
+.global "@52713"
+"@52713":
 
 	.4byte 0x4368616C
 	.4byte 0x6C656E67
@@ -43,18 +43,18 @@ lbl_8045ED78:
 	.4byte 0x6469742E
 	.4byte 0x646E0000
 
-.global lbl_8045EE10
-lbl_8045EE10:
+.global __vt__Q33scn14challengetitle19SceneChallengeTitle
+__vt__Q33scn14challengetitle19SceneChallengeTitle:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801EFBBC
-	.4byte lbl_801EFA0C
-	.4byte lbl_801EFAA0
-	.4byte lbl_801EFA78
-	.4byte lbl_801EFAF4
-	.4byte lbl_801EFB1C
-	.4byte lbl_801EFB44
+	.4byte GetRuntimeTypeInfo__Q33scn14challengetitle19SceneChallengeTitleCFv
+	.4byte __dt__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateMain__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateUseGPU__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte updateDebug__Q33scn14challengetitle19SceneChallengeTitleFv
+	.4byte draw__Q33scn14challengetitle19SceneChallengeTitleFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn14challengetitle19SceneChallengeTitleCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

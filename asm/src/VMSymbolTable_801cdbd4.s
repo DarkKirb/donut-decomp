@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801CDBD4
-lbl_801CDBD4:
+.global __ct__Q26mintvm13VMSymbolTableFRCQ25mintx5XDataPCQ26mintvm13BCSymbolTable
+__ct__Q26mintvm13VMSymbolTableFRCQ25mintx5XDataPCQ26mintvm13BCSymbolTable:
 /* 801CDBD4 001C9A14  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801CDBD8 001C9A18  7C 08 02 A6 */	mflr r0
 /* 801CDBDC 001C9A1C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -11,11 +11,11 @@ lbl_801CDBD4:
 /* 801CDBE8 001C9A28  7C 7C 1B 78 */	mr r28, r3
 /* 801CDBEC 001C9A2C  7C 9D 23 78 */	mr r29, r4
 /* 801CDBF0 001C9A30  7C BE 2B 78 */	mr r30, r5
-/* 801CDBF4 001C9A34  3C 80 80 46 */	lis r4, lbl_8045CBAC@ha
-/* 801CDBF8 001C9A38  38 04 CB AC */	addi r0, r4, lbl_8045CBAC@l
+/* 801CDBF4 001C9A34  3C 80 80 46 */	lis r4, __vt__Q26mintvm13VMSymbolTable@ha
+/* 801CDBF8 001C9A38  38 04 CB AC */	addi r0, r4, __vt__Q26mintvm13VMSymbolTable@l
 /* 801CDBFC 001C9A3C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801CDC00 001C9A40  83 45 00 00 */	lwz r26, 0x0(r5)
-/* 801CDC04 001C9A44  4B FF C3 D5 */	bl lbl_801C9FD8
+/* 801CDC04 001C9A44  4B FF C3 D5 */	bl allocator__Q26mintvm8VMObjectFv
 /* 801CDC08 001C9A48  90 7C 00 04 */	stw r3, 0x4(r28)
 /* 801CDC0C 001C9A4C  93 5C 00 08 */	stw r26, 0x8(r28)
 /* 801CDC10 001C9A50  3B 20 00 00 */	li r25, 0x0
@@ -51,19 +51,19 @@ lbl_801CDC60:
 lbl_801CDC6C:
 /* 801CDC6C 001C9AAC  3B E0 00 00 */	li r31, 0x0
 /* 801CDC70 001C9AB0  3B 60 00 00 */	li r27, 0x0
-/* 801CDC74 001C9AB4  3F 20 80 46 */	lis r25, lbl_8045CC98@ha
-/* 801CDC78 001C9AB8  3F 40 80 46 */	lis r26, lbl_8045CC80@ha
+/* 801CDC74 001C9AB4  3F 20 80 46 */	lis r25, "@STRING@at__Q26mintvm11MArray<PCc>FUl"@ha
+/* 801CDC78 001C9AB8  3F 40 80 46 */	lis r26, "@STRING@at__Q26mintvm11MArray<PCc>FUl@0"@ha
 /* 801CDC7C 001C9ABC  48 00 01 04 */	b lbl_801CDD80
 .global lbl_801CDC80
 lbl_801CDC80:
 /* 801CDC80 001C9AC0  7C 1F 38 40 */	cmplw r31, r7
 /* 801CDC84 001C9AC4  41 80 00 1C */	blt lbl_801CDCA0
-/* 801CDC88 001C9AC8  38 79 CC 98 */	addi r3, r25, lbl_8045CC98@l
+/* 801CDC88 001C9AC8  38 79 CC 98 */	addi r3, r25, "@STRING@at__Q26mintvm11MArray<PCc>FUl"@l
 /* 801CDC8C 001C9ACC  38 80 00 4E */	li r4, 0x4e
-/* 801CDC90 001C9AD0  38 BA CC 80 */	addi r5, r26, lbl_8045CC80@l
+/* 801CDC90 001C9AD0  38 BA CC 80 */	addi r5, r26, "@STRING@at__Q26mintvm11MArray<PCc>FUl@0"@l
 /* 801CDC94 001C9AD4  7F E6 FB 78 */	mr r6, r31
 /* 801CDC98 001C9AD8  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801CDC9C 001C9ADC  4B FF 83 09 */	bl lbl_801C5FA4
+/* 801CDC9C 001C9ADC  4B FF 83 09 */	bl panic__Q26mintvm14MintSystemCallFPCciPCce
 .global lbl_801CDCA0
 lbl_801CDCA0:
 /* 801CDCA0 001C9AE0  80 9C 00 0C */	lwz r4, 0xc(r28)

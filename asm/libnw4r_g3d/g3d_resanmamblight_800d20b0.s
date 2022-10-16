@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800D20B0
-lbl_800D20B0:
+.global GetAnmResult__Q34nw4r3g3d14ResAnmAmbLightCFPQ34nw4r3g3d17AmbLightAnmResultf
+GetAnmResult__Q34nw4r3g3d14ResAnmAmbLightCFPQ34nw4r3g3d17AmbLightAnmResultf:
 /* 800D20B0 000CDEF0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D20B4 000CDEF4  7C 08 02 A6 */	mflr r0
 /* 800D20B8 000CDEF8  80 A3 00 00 */	lwz r5, 0x0(r3)
@@ -21,7 +21,7 @@ lbl_800D20E4:
 /* 800D20E4 000CDF24  38 60 00 00 */	li r3, 0x0
 .global lbl_800D20E8
 lbl_800D20E8:
-/* 800D20E8 000CDF28  C0 02 8F 50 */	lfs f0, lbl_8055EED0@sda21(r2)
+/* 800D20E8 000CDF28  C0 02 8F 50 */	lfs f0, "@10893"@sda21(r2)
 /* 800D20EC 000CDF2C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800D20F0 000CDF30  4C 40 13 82 */	cror eq, lt, eq
 /* 800D20F4 000CDF34  40 82 00 08 */	bne lbl_800D20FC
@@ -31,7 +31,7 @@ lbl_800D20FC:
 /* 800D20FC 000CDF3C  A0 63 00 34 */	lhz r3, 0x34(r3)
 /* 800D2100 000CDF40  3C 00 43 30 */	lis r0, 0x4330
 /* 800D2104 000CDF44  90 61 00 0C */	stw r3, 0xc(r1)
-/* 800D2108 000CDF48  C8 42 8F 58 */	lfd f2, lbl_8055EED8@sda21(r2)
+/* 800D2108 000CDF48  C8 42 8F 58 */	lfd f2, "@10897"@sda21(r2)
 /* 800D210C 000CDF4C  90 01 00 08 */	stw r0, 0x8(r1)
 /* 800D2110 000CDF50  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 800D2114 000CDF54  EC 00 10 28 */	fsubs f0, f0, f2
@@ -60,7 +60,7 @@ lbl_800D2154:
 /* 800D2158 000CDF98  FC 20 00 90 */	fmr f1, f0
 /* 800D215C 000CDF9C  7C 65 02 14 */	add r3, r5, r0
 /* 800D2160 000CDFA0  38 63 00 18 */	addi r3, r3, 0x18
-/* 800D2164 000CDFA4  4B FF D4 3D */	bl lbl_800CF5A0
+/* 800D2164 000CDFA4  4B FF D4 3D */	bl GetResColorAnmResult__Q34nw4r3g3d6detailFPCQ34nw4r3g3d21ResColorAnmFramesDataf
 .global lbl_800D2168
 lbl_800D2168:
 /* 800D2168 000CDFA8  90 7F 00 04 */	stw r3, 0x4(r31)

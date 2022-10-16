@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80467910
-lbl_80467910:
+.global "@54625"
+"@54625":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -51,61 +51,61 @@ lbl_80467910:
 	.4byte 0x29000000
 	.4byte 0
 
-.global lbl_804679C8
-lbl_804679C8:
+.global "__vt__Q24util228StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common20StateJumpAttackStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common19StateJumpAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>"
+"__vt__Q24util228StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common20StateJumpAttackStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common19StateJumpAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80251B40
-	.4byte lbl_80251A30
+	.4byte "__dt__Q24util228StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common20StateJumpAttackStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common19StateJumpAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+	.4byte "create__Q24util228StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common20StateJumpAttackStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common19StateJumpAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
 
-.global lbl_804679D8
-lbl_804679D8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80251B3C
-	.4byte lbl_80251AC0
-
-.global lbl_804679E8
-lbl_804679E8:
+.global "__vt__Q24util140StateFactoryArg2<Q24util6IState,Q53scn4step4boss10gigantedge9StateShot,PQ43scn4step4boss4Boss,Q63scn4step4boss10gigantedge9StateShot6Config>"
+"__vt__Q24util140StateFactoryArg2<Q24util6IState,Q53scn4step4boss10gigantedge9StateShot,PQ43scn4step4boss4Boss,Q63scn4step4boss10gigantedge9StateShot6Config>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80251B38
-	.4byte lbl_80251B0C
+	.4byte "__dt__Q24util140StateFactoryArg2<Q24util6IState,Q53scn4step4boss10gigantedge9StateShot,PQ43scn4step4boss4Boss,Q63scn4step4boss10gigantedge9StateShot6Config>Fv"
+	.4byte "create__Q24util140StateFactoryArg2<Q24util6IState,Q53scn4step4boss10gigantedge9StateShot,PQ43scn4step4boss4Boss,Q63scn4step4boss10gigantedge9StateShot6Config>Fv"
 
-.global lbl_804679F8
-lbl_804679F8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80251B34
-	.4byte lbl_80251A04
-
-.global lbl_80467A08
-lbl_80467A08:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss10gigantedge10StateGuard,PQ43scn4step4boss4Boss>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss10gigantedge10StateGuard,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80251B30
-	.4byte lbl_80251A58
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss10gigantedge10StateGuard,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss10gigantedge10StateGuard,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80467A18
-lbl_80467A18:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80251B2C
-	.4byte lbl_80251AB8
-
-.global lbl_80467A28
-lbl_80467A28:
+.global "__vt__Q24util251StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>"
+"__vt__Q24util251StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80251B28
-	.4byte lbl_80251ABC
+	.4byte "__dt__Q24util251StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+	.4byte "create__Q24util251StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+
+.global "__vt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common13StateMoveBack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>"
+"__vt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common13StateMoveBack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common13StateMoveBack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+	.4byte "create__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common13StateMoveBack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+
+.global "__vt__Q24util177StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common16StateMoveForward,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>"
+"__vt__Q24util177StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common16StateMoveForward,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util177StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common16StateMoveForward,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+	.4byte "create__Q24util177StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common16StateMoveForward,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateMoveDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+
+.global "__vt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common15StateAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind>"
+"__vt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common15StateAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common15StateAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
+	.4byte "create__Q24util174StateFactoryArg3<Q24util6IState,Q53scn4step4boss6common11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss6common15StateAttackDesc,Q53scn4step4boss10gigantedge10ScriptKind>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

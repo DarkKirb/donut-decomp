@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8041A360
-lbl_8041A360:
+.global "CHECK_DEEP_OFFS_ARRAY__19@unnamed@Water_cpp@"
+"CHECK_DEEP_OFFS_ARRAY__19@unnamed@Water_cpp@":
 
 	.4byte 0xBF7AE148
 	.4byte 0x3F7AE148

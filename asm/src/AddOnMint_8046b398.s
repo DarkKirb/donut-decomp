@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8046B398
-lbl_8046B398:
+.global "@58827"
+"@58827":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -1144,103 +1144,103 @@ lbl_8046B398:
 	.4byte 0x28696E74
 	.4byte 0x29000000
 
-.global lbl_8046C564
-lbl_8046C564:
+.global "@59186"
+"@59186":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026BD28
+	.4byte releaseAndVanish__Q43scn4step5chara10MintEffectCFv
 
-.global lbl_8046C570
-lbl_8046C570:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026BDD4
-
-.global lbl_8046C57C
-lbl_8046C57C:
+.global "@59211"
+"@59211":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026BEA8
+	.4byte release__Q43scn4step5chara10MintEffectCFv
 
-.global lbl_8046C588
-lbl_8046C588:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026BF68
-
-.global lbl_8046C594
-lbl_8046C594:
+.global "@59220"
+"@59220":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C028
+	.4byte requestND__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3f
 
-.global lbl_8046C5A0
-lbl_8046C5A0:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C0D4
-
-.global lbl_8046C5AC
-lbl_8046C5AC:
+.global "@59229_8046C588"
+"@59229_8046C588":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C194
+	.4byte requestND__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3
 
-.global lbl_8046C5B8
-lbl_8046C5B8:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C240
-
-.global lbl_8046C5C4
-lbl_8046C5C4:
+.global "@59238_8046C594"
+"@59238_8046C594":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C2EC
+	.4byte requestND__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3f
 
-.global lbl_8046C5D0
-lbl_8046C5D0:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C384
-
-.global lbl_8046C5DC
-lbl_8046C5DC:
+.global "@59246"
+"@59246":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C444
+	.4byte requestND__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3
 
-.global lbl_8046C5E8
-lbl_8046C5E8:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C4F0
-
-.global lbl_8046C5F4
-lbl_8046C5F4:
+.global "@59254"
+"@59254":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C59C
+	.4byte requestN__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math7Vector3f
 
-.global lbl_8046C600
-lbl_8046C600:
+.global "@59262"
+"@59262":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026C634
+	.4byte requestN__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlRCQ33hel4math7Vector3
+
+.global "@59270_8046C5C4"
+"@59270_8046C5C4":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestN__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUlf
+
+.global "@59277_8046C5D0"
+"@59277_8046C5D0":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestN__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindUl
+
+.global "@59284_8046C5DC"
+"@59284_8046C5DC":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestPD__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3f
+
+.global "@59293_8046C5E8"
+"@59293_8046C5E8":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestPD__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindRCQ33hel4math7Vector3RCQ33hel4math10Direction3
+
+.global "@59302_8046C5F4"
+"@59302_8046C5F4":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestP__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindRCQ33hel4math7Vector3f
+
+.global "@59310_8046C600"
+"@59310_8046C600":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte requestP__Q43scn4step5chara10MintEffectCFQ43scn4step6effect4KindRCQ33hel4math7Vector3
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

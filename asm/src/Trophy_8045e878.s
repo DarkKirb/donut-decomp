@@ -1,49 +1,49 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045E878
-lbl_8045E878:
+.global "@52317_8045E878"
+"@52317_8045E878":
 
 	.4byte 0x436F7070
 	.4byte 0x65727472
 	.4byte 0x6F706879
 	.4byte 0
 
-.global lbl_8045E888
-lbl_8045E888:
+.global "@52318_8045E888"
+"@52318_8045E888":
 
 	.4byte 0x53696C76
 	.4byte 0x65727472
 	.4byte 0x6F706879
 	.4byte 0
 
-.global lbl_8045E898
-lbl_8045E898:
+.global "@52319_8045E898"
+"@52319_8045E898":
 
 	.4byte 0x476F6C64
 	.4byte 0x74726F70
 	.4byte 0x68790000
 
-.global lbl_8045E8A4
-lbl_8045E8A4:
+.global "@52320_8045E8A4"
+"@52320_8045E8A4":
 
 	.4byte 0x506C6174
 	.4byte 0x696E756D
 	.4byte 0x74726F70
 	.4byte 0x68790000
 
-.global lbl_8045E8B4
-lbl_8045E8B4:
+.global "@52321_8045E8B4"
+"@52321_8045E8B4":
 
 	.4byte 0x4B696E67
 	.4byte 0x74726F70
 	.4byte 0x68790000
-	.4byte lbl_8045E878
-	.4byte lbl_8045E878
-	.4byte lbl_8045E888
-	.4byte lbl_8045E898
-	.4byte lbl_8045E8A4
-	.4byte lbl_8045E8B4
+	.4byte "@52317_8045E878"
+	.4byte "@52317_8045E878"
+	.4byte "@52318_8045E888"
+	.4byte "@52319_8045E898"
+	.4byte "@52320_8045E8A4"
+	.4byte "@52321_8045E8B4"
 	.4byte 0x6368616C
 	.4byte 0x6C656E67
 	.4byte 0x6566696C

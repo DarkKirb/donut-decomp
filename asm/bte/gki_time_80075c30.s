@@ -1,11 +1,11 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80075C30
-lbl_80075C30:
-/* 80075C30 00071A70  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
+.global gki_timers_init
+gki_timers_init:
+/* 80075C30 00071A70  3C 60 80 4D */	lis r3, gki_cb@ha
 /* 80075C34 00071A74  38 00 00 00 */	li r0, 0x0
-/* 80075C38 00071A78  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+/* 80075C38 00071A78  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075C3C 00071A7C  3C 63 00 03 */	addis r3, r3, 0x3
 /* 80075C40 00071A80  90 03 88 38 */	stw r0, -0x77c8(r3)
 /* 80075C44 00071A84  90 03 88 3C */	stw r0, -0x77c4(r3)
@@ -51,18 +51,18 @@ lbl_80075C30:
 /* 80075CE4 00071B24  90 03 88 DC */	stw r0, -0x7724(r3)
 /* 80075CE8 00071B28  4E 80 00 20 */	blr
 /* 80075CEC 00071B2C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80075CF0
-lbl_80075CF0:
-/* 80075CF0 00071B30  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
-/* 80075CF4 00071B34  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+.global GKI_get_tick_count
+GKI_get_tick_count:
+/* 80075CF0 00071B30  3C 60 80 4D */	lis r3, gki_cb@ha
+/* 80075CF4 00071B34  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075CF8 00071B38  3C 63 00 03 */	addis r3, r3, 0x3
 /* 80075CFC 00071B3C  80 63 88 28 */	lwz r3, -0x77d8(r3)
 /* 80075D00 00071B40  4E 80 00 20 */	blr
 /* 80075D04 00071B44  00 00 00 00 */	.4byte 0x00000000
 /* 80075D08 00071B48  00 00 00 00 */	.4byte 0x00000000
 /* 80075D0C 00071B4C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80075D10
-lbl_80075D10:
+.global GKI_start_timer
+GKI_start_timer:
 /* 80075D10 00071B50  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80075D14 00071B54  7C 08 02 A6 */	mflr r0
 /* 80075D18 00071B58  90 01 00 24 */	stw r0, 0x24(r1)
@@ -71,7 +71,7 @@ lbl_80075D10:
 /* 80075D24 00071B64  7C 7B 1B 78 */	mr r27, r3
 /* 80075D28 00071B68  7C 9D 23 78 */	mr r29, r4
 /* 80075D2C 00071B6C  7C BF 2B 78 */	mr r31, r5
-/* 80075D30 00071B70  48 0A BF A1 */	bl lbl_80121CD0
+/* 80075D30 00071B70  48 0A BF A1 */	bl GetType__Q44nw4r2ut6detail11ResFontBaseCFv
 /* 80075D34 00071B74  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 80075D38 00071B78  7C 7C 1B 78 */	mr r28, r3
 /* 80075D3C 00071B7C  3B C0 00 00 */	li r30, 0x0
@@ -83,10 +83,10 @@ lbl_80075D48:
 /* 80075D4C 00071B8C  7C 00 FB 78 */	or r0, r0, r31
 /* 80075D50 00071B90  7C 00 FE 70 */	srawi r0, r0, 31
 /* 80075D54 00071B94  7F BF 00 38 */	and r31, r29, r0
-/* 80075D58 00071B98  48 00 06 89 */	bl lbl_800763E0
-/* 80075D5C 00071B9C  3C 80 80 4D */	lis r4, lbl_804C96A8@ha
+/* 80075D58 00071B98  48 00 06 89 */	bl GKI_disable
+/* 80075D5C 00071B9C  3C 80 80 4D */	lis r4, gki_cb@ha
 /* 80075D60 00071BA0  3C 60 80 00 */	lis r3, 0x8000
-/* 80075D64 00071BA4  38 84 96 A8 */	addi r4, r4, lbl_804C96A8@l
+/* 80075D64 00071BA4  38 84 96 A8 */	addi r4, r4, gki_cb@l
 /* 80075D68 00071BA8  3C A4 00 03 */	addis r5, r4, 0x3
 /* 80075D6C 00071BAC  38 83 FF FF */	addi r4, r3, -0x1
 /* 80075D70 00071BB0  80 65 88 38 */	lwz r3, -0x77c8(r5)
@@ -105,9 +105,9 @@ lbl_80075D8C:
 /* 80075D9C 00071BDC  48 00 00 44 */	b lbl_80075DE0
 .global lbl_80075DA0
 lbl_80075DA0:
-/* 80075DA0 00071BE0  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
+/* 80075DA0 00071BE0  3C 60 80 4D */	lis r3, gki_cb@ha
 /* 80075DA4 00071BE4  57 85 15 BA */	rlwinm r5, r28, 2, 22, 29
-/* 80075DA8 00071BE8  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+/* 80075DA8 00071BE8  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075DAC 00071BEC  3C 03 00 03 */	addis r0, r3, 0x3
 /* 80075DB0 00071BF0  7C 60 2A 14 */	add r3, r0, r5
 /* 80075DB4 00071BF4  93 E3 88 80 */	stw r31, -0x7780(r3)
@@ -115,9 +115,9 @@ lbl_80075DA0:
 /* 80075DBC 00071BFC  48 00 00 28 */	b lbl_80075DE4
 .global lbl_80075DC0
 lbl_80075DC0:
-/* 80075DC0 00071C00  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
+/* 80075DC0 00071C00  3C 60 80 4D */	lis r3, gki_cb@ha
 /* 80075DC4 00071C04  57 85 15 BA */	rlwinm r5, r28, 2, 22, 29
-/* 80075DC8 00071C08  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+/* 80075DC8 00071C08  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075DCC 00071C0C  3C 03 00 03 */	addis r0, r3, 0x3
 /* 80075DD0 00071C10  7C 60 2A 14 */	add r3, r0, r5
 /* 80075DD4 00071C14  93 E3 88 C0 */	stw r31, -0x7740(r3)
@@ -132,8 +132,8 @@ lbl_80075DE4:
 /* 80075DE8 00071C28  40 82 00 58 */	bne lbl_80075E40
 /* 80075DEC 00071C2C  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 80075DF0 00071C30  40 81 00 50 */	ble lbl_80075E40
-/* 80075DF4 00071C34  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
-/* 80075DF8 00071C38  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+/* 80075DF4 00071C34  3C 60 80 4D */	lis r3, gki_cb@ha
+/* 80075DF8 00071C38  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075DFC 00071C3C  3C 63 00 03 */	addis r3, r3, 0x3
 /* 80075E00 00071C40  80 83 88 3C */	lwz r4, -0x77c4(r3)
 /* 80075E04 00071C44  2C 04 00 00 */	cmpwi r4, 0x0
@@ -145,8 +145,8 @@ lbl_80075DE4:
 /* 80075E1C 00071C5C  40 81 00 24 */	ble lbl_80075E40
 .global lbl_80075E20
 lbl_80075E20:
-/* 80075E20 00071C60  3C 60 80 4D */	lis r3, lbl_804C96A8@ha
-/* 80075E24 00071C64  38 63 96 A8 */	addi r3, r3, lbl_804C96A8@l
+/* 80075E20 00071C60  3C 60 80 4D */	lis r3, gki_cb@ha
+/* 80075E24 00071C64  38 63 96 A8 */	addi r3, r3, gki_cb@l
 /* 80075E28 00071C68  3C 63 00 03 */	addis r3, r3, 0x3
 /* 80075E2C 00071C6C  80 03 88 38 */	lwz r0, -0x77c8(r3)
 /* 80075E30 00071C70  7C 00 20 50 */	subf r0, r0, r4
@@ -155,7 +155,7 @@ lbl_80075E20:
 /* 80075E3C 00071C7C  93 A3 88 38 */	stw r29, -0x77c8(r3)
 .global lbl_80075E40
 lbl_80075E40:
-/* 80075E40 00071C80  48 00 05 71 */	bl lbl_800763B0
+/* 80075E40 00071C80  48 00 05 71 */	bl GKI_enable
 /* 80075E44 00071C84  39 61 00 20 */	addi r11, r1, 0x20
 /* 80075E48 00071C88  4B F9 15 41 */	bl lbl_80007388
 /* 80075E4C 00071C8C  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -163,14 +163,14 @@ lbl_80075E40:
 /* 80075E54 00071C94  38 21 00 20 */	addi r1, r1, 0x20
 /* 80075E58 00071C98  4E 80 00 20 */	blr
 /* 80075E5C 00071C9C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80075E60
-lbl_80075E60:
+.global GKI_stop_timer
+GKI_stop_timer:
 /* 80075E60 00071CA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80075E64 00071CA4  7C 08 02 A6 */	mflr r0
 /* 80075E68 00071CA8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80075E6C 00071CAC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80075E70 00071CB0  7C 7F 1B 78 */	mr r31, r3
-/* 80075E74 00071CB4  48 0A BE 5D */	bl lbl_80121CD0
+/* 80075E74 00071CB4  48 0A BE 5D */	bl GetType__Q44nw4r2ut6detail11ResFontBaseCFv
 /* 80075E78 00071CB8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80075E7C 00071CBC  41 82 00 10 */	beq lbl_80075E8C
 /* 80075E80 00071CC0  2C 1F 00 01 */	cmpwi r31, 0x1
@@ -178,9 +178,9 @@ lbl_80075E60:
 /* 80075E88 00071CC8  48 00 00 48 */	b lbl_80075ED0
 .global lbl_80075E8C
 lbl_80075E8C:
-/* 80075E8C 00071CCC  3C 80 80 4D */	lis r4, lbl_804C96A8@ha
+/* 80075E8C 00071CCC  3C 80 80 4D */	lis r4, gki_cb@ha
 /* 80075E90 00071CD0  54 63 15 BA */	rlwinm r3, r3, 2, 22, 29
-/* 80075E94 00071CD4  38 84 96 A8 */	addi r4, r4, lbl_804C96A8@l
+/* 80075E94 00071CD4  38 84 96 A8 */	addi r4, r4, gki_cb@l
 /* 80075E98 00071CD8  38 A0 00 00 */	li r5, 0x0
 /* 80075E9C 00071CDC  3C 04 00 03 */	addis r0, r4, 0x3
 /* 80075EA0 00071CE0  7C 60 1A 14 */	add r3, r0, r3
@@ -189,9 +189,9 @@ lbl_80075E8C:
 /* 80075EAC 00071CEC  48 00 00 24 */	b lbl_80075ED0
 .global lbl_80075EB0
 lbl_80075EB0:
-/* 80075EB0 00071CF0  3C 80 80 4D */	lis r4, lbl_804C96A8@ha
+/* 80075EB0 00071CF0  3C 80 80 4D */	lis r4, gki_cb@ha
 /* 80075EB4 00071CF4  54 63 15 BA */	rlwinm r3, r3, 2, 22, 29
-/* 80075EB8 00071CF8  38 84 96 A8 */	addi r4, r4, lbl_804C96A8@l
+/* 80075EB8 00071CF8  38 84 96 A8 */	addi r4, r4, gki_cb@l
 /* 80075EBC 00071CFC  38 A0 00 00 */	li r5, 0x0
 /* 80075EC0 00071D00  3C 04 00 03 */	addis r0, r4, 0x3
 /* 80075EC4 00071D04  7C 60 1A 14 */	add r3, r0, r3
@@ -207,8 +207,8 @@ lbl_80075ED0:
 /* 80075EE4 00071D24  00 00 00 00 */	.4byte 0x00000000
 /* 80075EE8 00071D28  00 00 00 00 */	.4byte 0x00000000
 /* 80075EEC 00071D2C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80075EF0
-lbl_80075EF0:
+.global GKI_init_timer_list
+GKI_init_timer_list:
 /* 80075EF0 00071D30  38 00 00 00 */	li r0, 0x0
 /* 80075EF4 00071D34  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80075EF8 00071D38  90 03 00 04 */	stw r0, 0x4(r3)
@@ -217,8 +217,8 @@ lbl_80075EF0:
 /* 80075F04 00071D44  00 00 00 00 */	.4byte 0x00000000
 /* 80075F08 00071D48  00 00 00 00 */	.4byte 0x00000000
 /* 80075F0C 00071D4C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80075F10
-lbl_80075F10:
+.global GKI_update_timer_list
+GKI_update_timer_list:
 /* 80075F10 00071D50  80 C3 00 00 */	lwz r6, 0x0(r3)
 /* 80075F14 00071D54  38 E0 00 00 */	li r7, 0x0
 /* 80075F18 00071D58  48 00 00 10 */	b lbl_80075F28
@@ -271,8 +271,8 @@ lbl_80075F78:
 lbl_80075F98:
 /* 80075F98 00071DD8  7C E3 3B 78 */	mr r3, r7
 /* 80075F9C 00071DDC  4E 80 00 20 */	blr
-.global lbl_80075FA0
-lbl_80075FA0:
+.global GKI_add_to_timer_list
+GKI_add_to_timer_list:
 /* 80075FA0 00071DE0  80 A4 00 0C */	lwz r5, 0xc(r4)
 /* 80075FA4 00071DE4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 80075FA8 00071DE8  4D 80 00 20 */	bltlr
@@ -353,8 +353,8 @@ lbl_80076080:
 /* 80076084 00071EC4  98 04 00 16 */	stb r0, 0x16(r4)
 /* 80076088 00071EC8  4E 80 00 20 */	blr
 /* 8007608C 00071ECC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80076090
-lbl_80076090:
+.global GKI_remove_from_timer_list
+GKI_remove_from_timer_list:
 /* 80076090 00071ED0  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80076094 00071ED4  4D 82 00 20 */	beqlr
 /* 80076098 00071ED8  88 04 00 16 */	lbz r0, 0x16(r4)

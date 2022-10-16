@@ -1,54 +1,54 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420B40
-lbl_80420B40:
+.global "t_ItemInfoTable__25@unnamed@Explanation_cpp@"
+"t_ItemInfoTable__25@unnamed@Explanation_cpp@":
 
 	.4byte 0
 	.4byte 0
 	.4byte 0x0000000F
-	.4byte lbl_804957B0
+	.4byte "@51882_804957B0"
 	.4byte 0
 	.4byte 0x00000001
 	.4byte 0x0000000F
-	.4byte lbl_804957C8
+	.4byte "@51883"
 	.4byte 0
 	.4byte 0x00000002
 	.4byte 0x0000000F
-	.4byte lbl_804957D8
+	.4byte "@51884"
 	.4byte 0x00000001
 	.4byte 0x00000003
 	.4byte 0x0000000F
-	.4byte lbl_8055C4F0
+	.4byte "@51885"
 	.4byte 0x00000001
 	.4byte 0x00000003
 	.4byte 0x0000000F
-	.4byte lbl_8055C4F8
+	.4byte "@51886"
 	.4byte 0x00000001
 	.4byte 0x00000005
 	.4byte 0x0000000F
-	.4byte lbl_8055C500
+	.4byte "@51887"
 	.4byte 0x00000001
 	.4byte 0x00000004
 	.4byte 0x0000000F
-	.4byte lbl_804957EC
+	.4byte "@51888_804957EC"
 	.4byte 0x00000001
 	.4byte 0x00000005
 	.4byte 0x0000000F
-	.4byte lbl_804957FC
+	.4byte "@51889"
 	.4byte 0x00000001
 	.4byte 0x00000006
 	.4byte 0x0000000F
-	.4byte lbl_8055C508
+	.4byte "@51890"
 
-.global lbl_80420BD0
-lbl_80420BD0:
+.global "@52218"
+"@52218":
 
-	.4byte lbl_80495844
-	.4byte lbl_80495850
-	.4byte lbl_8049585C
-	.4byte lbl_80495868
-	.4byte lbl_80495874
-	.4byte lbl_80495880
-	.4byte lbl_80495890
+	.4byte "@52211_80495844"
+	.4byte "@52212_80495850"
+	.4byte "@52213"
+	.4byte "@52214"
+	.4byte "@52215_80495874"
+	.4byte "@52216"
+	.4byte "@52217"
 	.4byte 0

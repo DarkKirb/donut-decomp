@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045AA88
-lbl_8045AA88:
+.global "@56033_8045AA88"
+"@56033_8045AA88":
 
 	.4byte 0x53636E2E
 	.4byte 0x4368616C
@@ -79,85 +79,85 @@ lbl_8045AA88:
 	.4byte 0x616D6528
 	.4byte 0x29000000
 
-.global lbl_8045ABB0
-lbl_8045ABB0:
+.global "@56046_8045ABB0"
+"@56046_8045ABB0":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3D00
+	.4byte setRandomFrame__Q28mintglue26Scn__ChallengeTitle__CharaFv
 
-.global lbl_8045ABBC
-lbl_8045ABBC:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3CDC
-
-.global lbl_8045ABC8
-lbl_8045ABC8:
+.global "@56077"
+"@56077":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3C98
+	.4byte flashReset__Q28mintglue26Scn__ChallengeTitle__CharaFv
 
-.global lbl_8045ABD4
-lbl_8045ABD4:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3C74
-
-.global lbl_8045ABE0
-lbl_8045ABE0:
+.global "@56082_8045ABC8"
+"@56082_8045ABC8":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3C50
+	.4byte flashStart__Q28mintglue26Scn__ChallengeTitle__CharaFUlb
 
-.global lbl_8045ABEC
-lbl_8045ABEC:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3C1C
-
-.global lbl_8045ABF8
-lbl_8045ABF8:
+.global "@56098_8045ABD4"
+"@56098_8045ABD4":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3BF8
+	.4byte clearSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
 
-.global lbl_8045AC04
-lbl_8045AC04:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3BD4
-
-.global lbl_8045AC10
-lbl_8045AC10:
+.global "@56103"
+"@56103":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3B90
+	.4byte setSubAnim__Q28mintglue26Scn__ChallengeTitle__CharaFv
 
-.global lbl_8045AC1C
-lbl_8045AC1C:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3B6C
-
-.global lbl_8045AC28
-lbl_8045AC28:
+.global "@56108_8045ABEC"
+"@56108_8045ABEC":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C3AC4
+	.4byte setVisibility__Q28mintglue26Scn__ChallengeTitle__CharaFb
 
-.global lbl_8045AC34
-lbl_8045AC34:
+.global "@56111_8045ABF8"
+"@56111_8045ABF8":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte createEquip__Q28mintglue26Scn__ChallengeTitle__CharaFv
+
+.global "@56116_8045AC04"
+"@56116_8045AC04":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte releaseEffect__Q28mintglue26Scn__ChallengeTitle__CharaFv
+
+.global "@56121_8045AC10"
+"@56121_8045AC10":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte effectRequestN__Q28mintglue26Scn__ChallengeTitle__CharaFUlPCc
+
+.global "@56127_8045AC1C"
+"@56127_8045AC1C":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isAnimLooped__Q28mintglue26Scn__ChallengeTitle__CharaFv
+
+.global "@56141_8045AC28"
+"@56141_8045AC28":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte changeAnim__Q28mintglue26Scn__ChallengeTitle__CharaFPCci
+
+.global "@STRING@ref__Q26mintvm37MintPtr<Q33scn14challengetitle5Chara>CFv"
+"@STRING@ref__Q26mintvm37MintPtr<Q33scn14challengetitle5Chara>CFv":
 
 	.4byte 0x4D696E74
 	.4byte 0x50747220

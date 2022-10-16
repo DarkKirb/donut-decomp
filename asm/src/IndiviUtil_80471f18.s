@@ -1,89 +1,89 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80471F18
-lbl_80471F18:
+.global "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"
+"T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@":
 
-	.4byte lbl_802E16E4
-	.4byte lbl_802E12DC
+	.4byte Create__Q53scn4step5enemy9sirkibble9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9sirkibble10CharaParamFv
 	.4byte 0
-	.4byte lbl_8029F364
-	.4byte lbl_8029F2DC
+	.4byte Create__Q53scn4step5enemy10brontoburt9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10brontoburt10CharaParamFv
 	.4byte 0
-	.4byte lbl_802ED6F4
-	.4byte lbl_802ED670
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.4byte lbl_802972CC
-	.4byte lbl_80296F2C
+	.4byte CreateNormal__Q53scn4step5enemy11bladeknight9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11bladeknight10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A2DA4
-	.4byte lbl_802A2704
+	.4byte Create__Q53scn4step5enemy5cappy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5cappy10CharaParamFv
 	.4byte 0
-	.4byte lbl_802BA66C
-	.4byte lbl_802BA260
+	.4byte CreateNormal__Q53scn4step5enemy7hothead9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7hothead10CharaParamFv
 	.4byte 0
-	.4byte lbl_802BF8C0
-	.4byte lbl_802BF2C8
+	.4byte Create__Q53scn4step5enemy10knucklejoe9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10knucklejoe10CharaParamFv
 	.4byte 0
-	.4byte lbl_802D3318
-	.4byte lbl_802D3198
+	.4byte Create__Q53scn4step5enemy9puppetdee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9puppetdee10CharaParamFv
 	.4byte 0
-	.4byte lbl_8029662C
-	.4byte lbl_8029638C
+	.4byte Create__Q53scn4step5enemy8armordee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8armordee10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A7470
-	.4byte lbl_802A7238
+	.4byte Create__Q53scn4step5enemy4como9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4como10CharaParamFv
 	.4byte 0
-	.4byte lbl_802B9058
-	.4byte lbl_802B8D28
+	.4byte Create__Q53scn4step5enemy5gordo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5gordo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802F0804
-	.4byte lbl_802F077C
+	.4byte Create__Q53scn4step5enemy6whippy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6whippy10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E0740
-	.4byte lbl_802E01E0
+	.4byte Create__Q53scn4step5enemy6shotzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6shotzo10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C3564
-	.4byte lbl_802C34E4
+	.4byte Create__Q53scn4step5enemy6leafan9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6leafan10CharaParamFv
 	.4byte 0
-	.4byte lbl_802EFB34
-	.4byte lbl_802EFA68
+	.4byte CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledoo10CharaParamFv
 	.4byte 0
-	.4byte lbl_8029D1D4
-	.4byte lbl_8029D098
+	.4byte Create__Q53scn4step5enemy6bouncy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6bouncy10CharaParamFv
 	.4byte 0
-	.4byte lbl_802E6E78
-	.4byte lbl_802E6CB8
+	.4byte Create__Q53scn4step5enemy6sparky9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6sparky10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C6204
-	.4byte lbl_802C5D1C
+	.4byte Create__Q53scn4step5enemy8needlous9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8needlous10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A0EE8
-	.4byte lbl_802A0E60
+	.4byte Create__Q53scn4step5enemy11broomhatter9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11broomhatter10CharaParamFv
 	.4byte 0
-	.4byte lbl_802D9D58
-	.4byte lbl_802D9A00
+	.4byte Create__Q53scn4step5enemy6scarfy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6scarfy10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C7E00
-	.4byte lbl_802C7A68
+	.4byte Create__Q53scn4step5enemy5nruff9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5nruff10CharaParamFv
 	.4byte 0
-	.4byte lbl_802B22D8
-	.4byte lbl_802B2168
+	.4byte Create__Q53scn4step5enemy6flamer9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6flamer10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802F01BC
-	.4byte lbl_802F0134
+	.4byte Create__Q53scn4step5enemy10watergalbo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10watergalbo10CharaParamFv
 	.4byte 0
-	.4byte lbl_802D3A88
-	.4byte lbl_802D3928
+	.4byte Create__Q53scn4step5enemy5rocky9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5rocky10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -94,20 +94,20 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D1D28
-	.4byte lbl_802D167C
+	.4byte Create__Q53scn4step5enemy10poppybrojr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10poppybrojr10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C732C
-	.4byte lbl_802C72B0
+	.4byte Create__Q53scn4step5enemy5noddy9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5noddy10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A5580
-	.4byte lbl_802A54F8
+	.4byte Create__Q53scn4step5enemy8cerulean9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8cerulean10CharaParamFv
 	.4byte 0
-	.4byte lbl_80299398
-	.4byte lbl_80298E8C
+	.4byte Create__Q53scn4step5enemy7blipper9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7blipper10CharaParamFv
 	.4byte 0
-	.4byte lbl_802B76B8
-	.4byte lbl_802B6AA8
+	.4byte Create__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -115,59 +115,59 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E2AF4
-	.4byte lbl_802E2890
+	.4byte Create__Q53scn4step5enemy11sisterbound9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11sisterbound10CharaParamFv
 	.4byte 0
-	.4byte lbl_802D662C
-	.4byte lbl_802D6170
+	.4byte Create__Q53scn4step5enemy8rollball9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8rollball10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C5000
-	.4byte lbl_802C4DB4
+	.4byte Create__Q53scn4step5enemy7mumbies9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7mumbies10CharaParamFv
 	.4byte 0
-	.4byte lbl_802ED6F4
-	.4byte lbl_802CBA74
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldee10CharaParamFv
 	.4byte 0
-	.4byte lbl_802BCDC8
-	.4byte lbl_802BCBEC
+	.4byte Create__Q53scn4step5enemy4kabu9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4kabu10CharaParamFv
 	.4byte 0
-	.4byte lbl_802EFB34
-	.4byte lbl_802CDBA0
+	.4byte CreateNormal__Q53scn4step5enemy9waddledoo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldoo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B49C8
-	.4byte lbl_802B449C
+	.4byte Create__Q53scn4step5enemy5foley9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5foley10CharaParamFv
 	.4byte 0
-	.4byte lbl_802BB7A0
-	.4byte lbl_802BB270
+	.4byte Create__Q53scn4step5enemy6juckle9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6juckle10CharaParamFv
 	.4byte 0
-	.4byte lbl_8029E788
-	.4byte lbl_8029E30C
+	.4byte Create__Q53scn4step5enemy5bowby9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5bowby10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C9F18
-	.4byte lbl_802C9D68
+	.4byte Create__Q53scn4step5enemy6owgulf9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6owgulf10CharaParamFv
 	.4byte 0
-	.4byte lbl_802AD344
-	.4byte lbl_802AD218
+	.4byte Create__Q53scn4step5enemy6degout9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6degout10CharaParamFv
 	.4byte 0
-	.4byte lbl_802DD8F8
-	.4byte lbl_802DCE78
+	.4byte Create__Q53scn4step5enemy5sheld9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5sheld10CharaParamFv
 	.4byte 0
-	.4byte lbl_802C2188
-	.4byte lbl_802C1EE4
+	.4byte Create__Q53scn4step5enemy6lanzer9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6lanzer10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A62E4
-	.4byte lbl_802A61E4
+	.4byte CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6chilly10CharaParamFv
 	.4byte 0
-	.4byte lbl_802EAFFC
-	.4byte lbl_802EA6F8
+	.4byte Create__Q53scn4step5enemy9tsukikage9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9tsukikage10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B61AC
-	.4byte lbl_802B5840
+	.4byte Create__Q53scn4step5enemy5gemra9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5gemra10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -175,8 +175,8 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B7768
-	.4byte lbl_802B6AA8
+	.4byte CreateVolt__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -190,17 +190,17 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802CFB3C
-	.4byte lbl_802CF890
+	.4byte Create__Q53scn4step5enemy6pierce9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6pierce10CharaParamFv
 	.4byte 0
-	.4byte lbl_802DBDF0
-	.4byte lbl_802DBB80
+	.4byte Create__Q53scn4step5enemy8searches9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8searches10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802AFC40
-	.4byte lbl_802AFA00
+	.4byte Create__Q53scn4step5enemy4elec9ModelDescFv
+	.4byte Create__Q53scn4step5enemy4elec10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -208,23 +208,23 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E53D0
-	.4byte lbl_802E4C3C
+	.4byte Create__Q53scn4step5enemy6sodory9ModelDescFv
+	.4byte Create__Q53scn4step5enemy6sodory10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E3840
-	.4byte lbl_802E36A4
+	.4byte Create__Q53scn4step5enemy5snowl9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5snowl10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802ED7AC
-	.4byte lbl_802ED670
+	.4byte HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.4byte lbl_802B7818
-	.4byte lbl_802B6AA8
+	.4byte CreateCold__Q53scn4step5enemy7gigatzo9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7gigatzo10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -244,8 +244,8 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802ED6F4
-	.4byte lbl_802E9CD4
+	.4byte Create__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8toughdee10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -259,8 +259,8 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029F414
-	.4byte lbl_8029F2DC
+	.4byte HalcandleCreate__Q53scn4step5enemy10brontoburt9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10brontoburt10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -280,23 +280,23 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D9188
-	.4byte lbl_802D87F8
+	.4byte Create__Q53scn4step5enemy7sandbag9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7sandbag10CharaParamFv
 	.4byte 0
-	.4byte lbl_802ED7AC
-	.4byte lbl_802CBA74
+	.4byte HalcandledeeCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10parasoldee10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029E838
-	.4byte lbl_8029E30C
+	.4byte HalcandleCreate__Q53scn4step5enemy5bowby9ModelDescFv
+	.4byte Create__Q53scn4step5enemy5bowby10CharaParamFv
 	.4byte 0
-	.4byte lbl_802E8C44
-	.4byte lbl_802E87B4
+	.4byte Create__Q53scn4step5enemy3sun9ModelDescFv
+	.4byte Create__Q53scn4step5enemy3sun10CharaParamFv
 	.4byte 0
-	.4byte lbl_802E8C44
-	.4byte lbl_802E87B4
+	.4byte Create__Q53scn4step5enemy3sun9ModelDescFv
+	.4byte Create__Q53scn4step5enemy3sun10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -304,17 +304,17 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D66DC
-	.4byte lbl_802D6170
+	.4byte CreateMaster__Q53scn4step5enemy8rollball9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8rollball10CharaParamFv
 	.4byte 0
-	.4byte lbl_802ED864
-	.4byte lbl_802ED674
+	.4byte GoldCreate__Q53scn4step5enemy9waddledee9ModelDescFv
+	.4byte CreateGold__Q53scn4step5enemy9waddledee10CharaParamFv
 	.4byte 0
-	.4byte lbl_802E7E84
-	.4byte lbl_802E79A8
+	.4byte Create__Q53scn4step5enemy10stareffect9ModelDescFv
+	.4byte Create__Q53scn4step5enemy10stareffect10CharaParamFv
 	.4byte 0
-	.4byte lbl_802A3D14
-	.4byte lbl_802A3918
+	.4byte Create__Q53scn4step5enemy8cappyhat9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8cappyhat10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -328,8 +328,8 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802F10A8
-	.4byte lbl_802F0C94
+	.4byte Create__Q53scn4step5enemy11whispyapple9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11whispyapple10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -349,26 +349,26 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802CB104
-	.4byte lbl_802CAAF8
+	.4byte Create__Q53scn4step5enemy7parasol9ModelDescFv
+	.4byte Create__Q53scn4step5enemy7parasol10CharaParamFv
 	.4byte 0
-	.4byte lbl_802AE194
-	.4byte lbl_802ADFB8
-	.4byte lbl_802AE2A0
-	.4byte lbl_802D2C0C
-	.4byte lbl_802D2830
+	.4byte Create__Q53scn4step5enemy8dubiorjr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy8dubiorjr10CharaParamFv
+	.4byte CreateEx__Q53scn4step5enemy8dubiorjr9ModelDescFv
+	.4byte Create__Q53scn4step5enemy14poppybrojrbomb9ModelDescFv
+	.4byte Create__Q53scn4step5enemy14poppybrojrbomb10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802F2570
-	.4byte lbl_802F22D4
+	.4byte Create__Q53scn4step5enemy15zankibblecutter9ModelDescFv
+	.4byte Create__Q53scn4step5enemy15zankibblecutter10CharaParamFv
 	.4byte 0
-	.4byte lbl_8029C0E0
-	.4byte lbl_8029BB80
+	.4byte Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11bonkersbomb10CharaParamFv
 	.4byte 0
-	.4byte lbl_802AEE80
-	.4byte lbl_802AEC08
+	.4byte Create__Q53scn4step5enemy11dubiorspark9ModelDescFv
+	.4byte Create__Q53scn4step5enemy11dubiorspark10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -418,8 +418,8 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C4698
-	.4byte lbl_802C4154
+	.4byte Create__Q53scn4step5enemy9mbossdead9ModelDescFv
+	.4byte Create__Q53scn4step5enemy9mbossdead10CharaParamFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -448,7 +448,7 @@ lbl_80471F18:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802A2DA4
-	.4byte lbl_802A27B0
+	.4byte Create__Q53scn4step5enemy5cappy9ModelDescFv
+	.4byte CreateSkinned__Q53scn4step5enemy5cappy10CharaParamFv
 	.4byte 0
 	.4byte 0

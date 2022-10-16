@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802960E0
-lbl_802960E0:
+.global "t_GetFrameRate__Q53scn4step5enemy8armordee23@unnamed@AddOnMint_cpp@Fv"
+"t_GetFrameRate__Q53scn4step5enemy8armordee23@unnamed@AddOnMint_cpp@Fv":
 /* 802960E0 00291F20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802960E4 00291F24  7C 08 02 A6 */	mflr r0
 /* 802960E8 00291F28  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802960EC 00291F2C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802960F0 00291F30  93 C1 00 08 */	stw r30, 0x8(r1)
-/* 802960F4 00291F34  4B FF 4C D9 */	bl lbl_8028ADCC
-/* 802960F8 00291F38  4B FF 20 9D */	bl lbl_80288194
+/* 802960F4 00291F34  4B FF 4C D9 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
+/* 802960F8 00291F38  4B FF 20 9D */	bl custom__Q43scn4step5enemy5EnemyFv
 /* 802960FC 00291F3C  7C 7E 1B 78 */	mr r30, r3
-/* 80296100 00291F40  4B FE C6 DD */	bl lbl_802827DC
+/* 80296100 00291F40  4B FE C6 DD */	bl "RuntimeTypeInfoImpl<Q53scn4step5enemy8armordee6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 80296104 00291F44  7C 7F 1B 78 */	mr r31, r3
 /* 80296108 00291F48  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 8029610C 00291F4C  41 82 00 48 */	beq lbl_80296154
@@ -46,24 +46,24 @@ lbl_80296154:
 .global lbl_80296158
 lbl_80296158:
 /* 80296158 00291F98  7F C3 F3 78 */	mr r3, r30
-/* 8029615C 00291F9C  48 00 04 15 */	bl lbl_80296570
+/* 8029615C 00291F9C  48 00 04 15 */	bl getFrameRate__Q53scn4step5enemy8armordee6CustomFv
 /* 80296160 00291FA0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80296164 00291FA4  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 80296168 00291FA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8029616C 00291FAC  7C 08 03 A6 */	mtlr r0
 /* 80296170 00291FB0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80296174 00291FB4  4E 80 00 20 */	blr
-.global lbl_80296178
-lbl_80296178:
-/* 80296178 00291FB8  3C 80 80 47 */	lis r4, lbl_804733C8@ha
-/* 8029617C 00291FBC  38 84 33 C8 */	addi r4, r4, lbl_804733C8@l
-/* 80296180 00291FC0  3C A0 80 47 */	lis r5, lbl_804733E8@ha
-/* 80296184 00291FC4  38 A5 33 E8 */	addi r5, r5, lbl_804733E8@l
-/* 80296188 00291FC8  3C C0 80 29 */	lis r6, lbl_80296194@ha
-/* 8029618C 00291FCC  38 C6 61 94 */	addi r6, r6, lbl_80296194@l
-/* 80296190 00291FD0  4B F3 63 E8 */	b lbl_801CC578
-.global lbl_80296194
-lbl_80296194:
+.global RegisterAll__Q53scn4step5enemy8armordee9AddOnMintFRQ26mintvm6VMCore
+RegisterAll__Q53scn4step5enemy8armordee9AddOnMintFRQ26mintvm6VMCore:
+/* 80296178 00291FB8  3C 80 80 47 */	lis r4, "@54073"@ha
+/* 8029617C 00291FBC  38 84 33 C8 */	addi r4, r4, "@54073"@l
+/* 80296180 00291FC0  3C A0 80 47 */	lis r5, "@54074"@ha
+/* 80296184 00291FC4  38 A5 33 E8 */	addi r5, r5, "@54074"@l
+/* 80296188 00291FC8  3C C0 80 29 */	lis r6, Func__Q63scn4step5enemy8armordee9AddOnMint38Mint_GetFrameRate_0$53684AddOnMint_cppFRQ26mintvm13MintFuncProxy@ha
+/* 8029618C 00291FCC  38 C6 61 94 */	addi r6, r6, Func__Q63scn4step5enemy8armordee9AddOnMint38Mint_GetFrameRate_0$53684AddOnMint_cppFRQ26mintvm13MintFuncProxy@l
+/* 80296190 00291FD0  4B F3 63 E8 */	b addNativeFunction__Q26mintvm6VMCoreFPCcPCcPFRQ26mintvm13MintFuncProxy_v
+.global Func__Q63scn4step5enemy8armordee9AddOnMint38Mint_GetFrameRate_0$53684AddOnMint_cppFRQ26mintvm13MintFuncProxy
+Func__Q63scn4step5enemy8armordee9AddOnMint38Mint_GetFrameRate_0$53684AddOnMint_cppFRQ26mintvm13MintFuncProxy:
 /* 80296194 00291FD4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80296198 00291FD8  7C 08 02 A6 */	mflr r0
 /* 8029619C 00291FDC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -76,13 +76,13 @@ lbl_80296194:
 /* 802961B8 00291FF8  90 03 00 08 */	stw r0, 0x8(r3)
 /* 802961BC 00291FFC  2C 04 00 00 */	cmpwi r4, 0x0
 /* 802961C0 00292000  40 82 00 20 */	bne lbl_802961E0
-/* 802961C4 00292004  3C 60 80 45 */	lis r3, lbl_8045411C@ha
-/* 802961C8 00292008  38 63 41 1C */	addi r3, r3, lbl_8045411C@l
+/* 802961C4 00292004  3C 60 80 45 */	lis r3, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv"@ha
+/* 802961C8 00292008  38 63 41 1C */	addi r3, r3, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv"@l
 /* 802961CC 0029200C  38 80 00 92 */	li r4, 0x92
-/* 802961D0 00292010  3C A0 80 45 */	lis r5, lbl_80454108@ha
-/* 802961D4 00292014  38 A5 41 08 */	addi r5, r5, lbl_80454108@l
+/* 802961D0 00292010  3C A0 80 45 */	lis r5, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0"@ha
+/* 802961D4 00292014  38 A5 41 08 */	addi r5, r5, "@STRING@internal_getRet_addr__Q26mintvm13MintFuncProxyCFv@0"@l
 /* 802961D8 00292018  4C C6 31 82 */	crclr 4*cr1+eq
-/* 802961DC 0029201C  4B F2 FD C9 */	bl lbl_801C5FA4
+/* 802961DC 0029201C  4B F2 FD C9 */	bl panic__Q26mintvm14MintSystemCallFPCciPCce
 .global lbl_802961E0
 lbl_802961E0:
 /* 802961E0 00292020  88 1F 00 06 */	lbz r0, 0x6(r31)
@@ -90,20 +90,20 @@ lbl_802961E0:
 /* 802961E8 00292028  41 82 00 18 */	beq lbl_80296200
 /* 802961EC 0029202C  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 802961F0 00292030  38 80 00 00 */	li r4, 0x0
-/* 802961F4 00292034  4B EF 55 E5 */	bl lbl_8018B7D8
+/* 802961F4 00292034  4B EF 55 E5 */	bl internal_getFR__Q26mintvm6RegsetFUi
 /* 802961F8 00292038  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 802961FC 0029203C  48 00 00 14 */	b lbl_80296210
 .global lbl_80296200
 lbl_80296200:
 /* 80296200 00292040  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 80296204 00292044  38 80 00 00 */	li r4, 0x0
-/* 80296208 00292048  4B EF 55 D1 */	bl lbl_8018B7D8
+/* 80296208 00292048  4B EF 55 D1 */	bl internal_getFR__Q26mintvm6RegsetFUi
 /* 8029620C 0029204C  7C 7F 1B 78 */	mr r31, r3
 .global lbl_80296210
 lbl_80296210:
 /* 80296210 00292050  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80296214 00292054  41 82 00 0C */	beq lbl_80296220
-/* 80296218 00292058  4B FF FE C9 */	bl lbl_802960E0
+/* 80296218 00292058  4B FF FE C9 */	bl "t_GetFrameRate__Q53scn4step5enemy8armordee23@unnamed@AddOnMint_cpp@Fv"
 /* 8029621C 0029205C  D0 3F 00 00 */	stfs f1, 0x0(r31)
 .global lbl_80296220
 lbl_80296220:

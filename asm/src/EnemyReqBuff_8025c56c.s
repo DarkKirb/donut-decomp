@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8025C56C
-lbl_8025C56C:
+.global add__Q53scn4step4boss6whispy12EnemyReqBuffFRCQ63scn4step4boss6whispy12EnemyReqBuff7ReqData
+add__Q53scn4step4boss6whispy12EnemyReqBuffFRCQ63scn4step4boss6whispy12EnemyReqBuff7ReqData:
 /* 8025C56C 002583AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8025C570 002583B0  7C 08 02 A6 */	mflr r0
 /* 8025C574 002583B4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -15,9 +15,9 @@ lbl_8025C56C:
 /* 8025C590 002583D0  41 82 00 24 */	beq lbl_8025C5B4
 /* 8025C594 002583D4  38 63 00 04 */	addi r3, r3, 0x4
 /* 8025C598 002583D8  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 8025C59C 002583DC  4B FF E7 9D */	bl lbl_8025AD38
+/* 8025C59C 002583DC  4B FF E7 9D */	bl "__vc__Q33hel6common61Array<Q63scn4step4boss13watergalboros10WeaponCtrl7ReqData,10>FUl"
 /* 8025C5A0 002583E0  7F E4 FB 78 */	mr r4, r31
-/* 8025C5A4 002583E4  4B F4 7E 41 */	bl lbl_801A43E4
+/* 8025C5A4 002583E4  4B F4 7E 41 */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 8025C5A8 002583E8  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 8025C5AC 002583EC  38 03 00 01 */	addi r0, r3, 0x1
 /* 8025C5B0 002583F0  90 1E 00 00 */	stw r0, 0x0(r30)
@@ -29,8 +29,8 @@ lbl_8025C5B4:
 /* 8025C5C0 00258400  7C 08 03 A6 */	mtlr r0
 /* 8025C5C4 00258404  38 21 00 10 */	addi r1, r1, 0x10
 /* 8025C5C8 00258408  4E 80 00 20 */	blr
-.global lbl_8025C5CC
-lbl_8025C5CC:
+.global pick__Q53scn4step4boss6whispy12EnemyReqBuffFv
+pick__Q53scn4step4boss6whispy12EnemyReqBuffFv:
 /* 8025C5CC 0025840C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8025C5D0 00258410  7C 08 02 A6 */	mflr r0
 /* 8025C5D4 00258414  90 01 00 34 */	stw r0, 0x34(r1)
@@ -39,13 +39,13 @@ lbl_8025C5CC:
 /* 8025C5E0 00258420  7C 7C 1B 78 */	mr r28, r3
 /* 8025C5E4 00258424  7C 9D 23 78 */	mr r29, r4
 /* 8025C5E8 00258428  80 64 00 00 */	lwz r3, 0x0(r4)
-/* 8025C5EC 0025842C  4B F1 E4 E1 */	bl lbl_8017AACC
+/* 8025C5EC 0025842C  4B F1 E4 E1 */	bl RandU32__Q23app6RandomFUl
 /* 8025C5F0 00258430  7C 7E 1B 78 */	mr r30, r3
 /* 8025C5F4 00258434  80 9D 00 00 */	lwz r4, 0x0(r29)
-/* 8025C5F8 00258438  4B DC 7E A9 */	bl lbl_800244A0
+/* 8025C5F8 00258438  4B DC 7E A9 */	bl DefaultSwitchThreadCallback
 /* 8025C5FC 0025843C  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8025C600 00258440  7F C4 F3 78 */	mr r4, r30
-/* 8025C604 00258444  4B FF E7 35 */	bl lbl_8025AD38
+/* 8025C604 00258444  4B FF E7 35 */	bl "__vc__Q33hel6common61Array<Q63scn4step4boss13watergalboros10WeaponCtrl7ReqData,10>FUl"
 /* 8025C608 00258448  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 8025C60C 0025844C  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 8025C610 00258450  90 81 00 08 */	stw r4, 0x8(r1)
@@ -61,13 +61,13 @@ lbl_8025C5CC:
 lbl_8025C634:
 /* 8025C634 00258474  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8025C638 00258478  7F C4 F3 78 */	mr r4, r30
-/* 8025C63C 0025847C  4B FF E6 FD */	bl lbl_8025AD38
+/* 8025C63C 0025847C  4B FF E6 FD */	bl "__vc__Q33hel6common61Array<Q63scn4step4boss13watergalboros10WeaponCtrl7ReqData,10>FUl"
 /* 8025C640 00258480  7C 7F 1B 78 */	mr r31, r3
 /* 8025C644 00258484  38 7D 00 04 */	addi r3, r29, 0x4
 /* 8025C648 00258488  38 9E FF FF */	addi r4, r30, -0x1
-/* 8025C64C 0025848C  4B FF E6 ED */	bl lbl_8025AD38
+/* 8025C64C 0025848C  4B FF E6 ED */	bl "__vc__Q33hel6common61Array<Q63scn4step4boss13watergalboros10WeaponCtrl7ReqData,10>FUl"
 /* 8025C650 00258490  7F E4 FB 78 */	mr r4, r31
-/* 8025C654 00258494  4B F4 7D 91 */	bl lbl_801A43E4
+/* 8025C654 00258494  4B F4 7D 91 */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 8025C658 00258498  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8025C65C
 lbl_8025C65C:

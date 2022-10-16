@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80445578
-lbl_80445578:
+.global "@549"
+"@549":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8013FDF0
+	.4byte ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv
 	.4byte 0
 
-.global lbl_80445588
-lbl_80445588:
+.global __vt__Q46nw4hbm2ut6detail11ResFontBase
+__vt__Q46nw4hbm2ut6detail11ResFontBase:
 
-	.4byte lbl_80445550
+	.4byte __RTTI__Q46nw4hbm2ut6detail11ResFontBase
 	.4byte 0
-	.4byte lbl_80141B10
-	.4byte lbl_80141B20
-	.4byte lbl_80141B30
-	.4byte lbl_80141B40
-	.4byte lbl_80141B50
-	.4byte lbl_80141B60
-	.4byte lbl_80141B70
-	.4byte lbl_80141B80
-	.4byte lbl_80141B90
-	.4byte lbl_80141BA0
-	.4byte lbl_80141BB0
-	.4byte lbl_80141BC0
-	.4byte lbl_80141BD0
-	.4byte lbl_80141BE0
-	.4byte lbl_80141BF0
-	.4byte lbl_80141C90
-	.4byte lbl_80141CA0
-	.4byte lbl_80141CB0
-	.4byte lbl_80141DB0
-	.4byte lbl_80141E60
+	.4byte __dt__Q46nw4hbm2ut6detail11ResFontBaseFv
+	.4byte GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths
+	.4byte SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs
+	.4byte SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi
+	.4byte GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.4byte GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.4byte GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs
+	.4byte GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv
 
-.global lbl_804455E0
-lbl_804455E0:
+.global __vt__Q36nw4hbm2ut4Font
+__vt__Q36nw4hbm2ut4Font:
 
-	.4byte lbl_80445570
+	.4byte __RTTI__Q36nw4hbm2ut4Font
 	.4byte 0
-	.4byte lbl_8013D340
+	.4byte __dt__Q36nw4hbm2ut4FontFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

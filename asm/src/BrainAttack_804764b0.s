@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804764B0
-lbl_804764B0:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4elec10StateChase,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4elec10StateChase,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802AF4D8
-	.4byte lbl_802AF4B8
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4elec10StateChase,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4elec10StateChase,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_804764C0
-lbl_804764C0:
+.global __vt__Q53scn4step5enemy4elec11BrainAttack
+__vt__Q53scn4step5enemy4elec11BrainAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802AF4D4
-	.4byte lbl_802AF430
-	.4byte lbl_802AF4B4
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onStart__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onRecover__Q53scn4step5enemy4elec11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

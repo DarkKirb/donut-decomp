@@ -1,36 +1,36 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80475780
-lbl_80475780:
+.global "@50127_80475780"
+"@50127_80475780":
 
 	.4byte 0x4A756D70
 	.4byte 0x53746172
 	.4byte 0x74000000
 
-.global lbl_8047578C
-lbl_8047578C:
+.global "@50132_8047578C"
+"@50132_8047578C":
 
 	.4byte 0x44616D61
 	.4byte 0x67654574
 	.4byte 0x63000000
 
-.global lbl_80475798
-lbl_80475798:
+.global "@50133_80475798"
+"@50133_80475798":
 
 	.4byte 0x426C697A
 	.4byte 0x7A617264
 	.4byte 0
 
-.global lbl_804757A4
-lbl_804757A4:
+.global "@50134_804757A4"
+"@50134_804757A4":
 
 	.4byte 0x476F6F64
 	.4byte 0x6279654C
 	.4byte 0x6F6F7000
 
-.global lbl_804757B0
-lbl_804757B0:
+.global "@50136_804757B0"
+"@50136_804757B0":
 
 	.4byte 0x4368696C
 	.4byte 0x6C792E41
@@ -42,8 +42,8 @@ lbl_804757B0:
 	.4byte 0x722E4578
 	.4byte 0x65630000
 
-.global lbl_804757D4
-lbl_804757D4:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy6chilly23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy6chilly23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -95,7 +95,7 @@ lbl_804757D4:
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804757B0
+	.4byte "@50136_804757B0"
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -111,8 +111,8 @@ lbl_804757D4:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804758D8
-lbl_804758D8:
+.global "@50214_804758D8"
+"@50214_804758D8":
 
 	.4byte 0x73746570
 	.4byte 0x2F636861

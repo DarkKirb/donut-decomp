@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80156BC0
-lbl_80156BC0:
+.global VX2CommandSkip116x8__FR14VX2DecoderData
+VX2CommandSkip116x8__FR14VX2DecoderData:
 /* 80156BC0 00152A00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80156BC4 00152A04  7C 08 02 A6 */	mflr r0
 /* 80156BC8 00152A08  90 01 00 14 */	stw r0, 0x14(r1)
@@ -80,15 +80,15 @@ lbl_80156BC0:
 /* 80156CE8 00152B28  38 21 00 10 */	addi r1, r1, 0x10
 /* 80156CEC 00152B2C  4E 80 00 20 */	blr
 
-.global lbl_80156CF0
-lbl_80156CF0:
+.global VX2CommandBack116x8__FR14VX2DecoderData
+VX2CommandBack116x8__FR14VX2DecoderData:
 /* 80156CF0 00152B30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80156CF4 00152B34  7C 08 02 A6 */	mflr r0
-/* 80156CF8 00152B38  3C 80 80 45 */	lis r4, lbl_804485D8@ha
-/* 80156CFC 00152B3C  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80156CF8 00152B38  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
+/* 80156CFC 00152B3C  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80156D00 00152B40  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80156D04 00152B44  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
-/* 80156D08 00152B48  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80156D04 00152B44  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
+/* 80156D08 00152B48  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 80156D0C 00152B4C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80156D10 00152B50  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80156D14 00152B54  7C 7E 1B 78 */	mr r30, r3
@@ -118,15 +118,15 @@ lbl_80156CF0:
 .global lbl_80156D74
 lbl_80156D74:
 /* 80156D74 00152BB4  A8 03 0A 24 */	lha r0, 0xa24(r3)
-/* 80156D78 00152BB8  3C 80 80 45 */	lis r4, lbl_804485D8@ha
+/* 80156D78 00152BB8  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
 /* 80156D7C 00152BBC  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 80156D80 00152BC0  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80156D80 00152BC0  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80156D84 00152BC4  7C 00 4A 14 */	add r0, r0, r9
 /* 80156D88 00152BC8  B0 03 0A 20 */	sth r0, 0xa20(r3)
 /* 80156D8C 00152BCC  54 C0 7C 7E */	srwi r0, r6, 17
-/* 80156D90 00152BD0  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
+/* 80156D90 00152BD0  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
 /* 80156D94 00152BD4  7D 24 00 AE */	lbzx r9, r4, r0
-/* 80156D98 00152BD8  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80156D98 00152BD8  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 80156D9C 00152BDC  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 80156DA0 00152BE0  7D 29 07 74 */	extsb r9, r9
 /* 80156DA4 00152BE4  55 24 10 3A */	slwi r4, r9, 2
@@ -223,15 +223,15 @@ lbl_80156DEC:
 /* 80156F08 00152D48  00 00 00 00 */	.4byte 0x00000000
 /* 80156F0C 00152D4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80156F10
-lbl_80156F10:
+.global VX2CommandBack216x8__FR14VX2DecoderData
+VX2CommandBack216x8__FR14VX2DecoderData:
 /* 80156F10 00152D50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80156F14 00152D54  7C 08 02 A6 */	mflr r0
-/* 80156F18 00152D58  3C 80 80 45 */	lis r4, lbl_804485D8@ha
-/* 80156F1C 00152D5C  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80156F18 00152D58  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
+/* 80156F1C 00152D5C  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80156F20 00152D60  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80156F24 00152D64  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
-/* 80156F28 00152D68  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80156F24 00152D64  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
+/* 80156F28 00152D68  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 80156F2C 00152D6C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80156F30 00152D70  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80156F34 00152D74  7C 7E 1B 78 */	mr r30, r3
@@ -261,15 +261,15 @@ lbl_80156F10:
 .global lbl_80156F94
 lbl_80156F94:
 /* 80156F94 00152DD4  A8 03 0A 24 */	lha r0, 0xa24(r3)
-/* 80156F98 00152DD8  3C 80 80 45 */	lis r4, lbl_804485D8@ha
+/* 80156F98 00152DD8  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
 /* 80156F9C 00152DDC  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 80156FA0 00152DE0  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80156FA0 00152DE0  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80156FA4 00152DE4  7C 00 4A 14 */	add r0, r0, r9
 /* 80156FA8 00152DE8  B0 03 0A 20 */	sth r0, 0xa20(r3)
 /* 80156FAC 00152DEC  54 C0 7C 7E */	srwi r0, r6, 17
-/* 80156FB0 00152DF0  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
+/* 80156FB0 00152DF0  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
 /* 80156FB4 00152DF4  7D 24 00 AE */	lbzx r9, r4, r0
-/* 80156FB8 00152DF8  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80156FB8 00152DF8  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 80156FBC 00152DFC  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 80156FC0 00152E00  7D 29 07 74 */	extsb r9, r9
 /* 80156FC4 00152E04  55 24 10 3A */	slwi r4, r9, 2
@@ -366,15 +366,15 @@ lbl_8015700C:
 /* 80157128 00152F68  00 00 00 00 */	.4byte 0x00000000
 /* 8015712C 00152F6C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80157130
-lbl_80157130:
+.global VX2CommandBack316x8__FR14VX2DecoderData
+VX2CommandBack316x8__FR14VX2DecoderData:
 /* 80157130 00152F70  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157134 00152F74  7C 08 02 A6 */	mflr r0
-/* 80157138 00152F78  3C 80 80 45 */	lis r4, lbl_804485D8@ha
-/* 8015713C 00152F7C  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80157138 00152F78  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
+/* 8015713C 00152F7C  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80157140 00152F80  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80157144 00152F84  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
-/* 80157148 00152F88  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80157144 00152F84  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
+/* 80157148 00152F88  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 8015714C 00152F8C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80157150 00152F90  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80157154 00152F94  7C 7E 1B 78 */	mr r30, r3
@@ -404,15 +404,15 @@ lbl_80157130:
 .global lbl_801571B4
 lbl_801571B4:
 /* 801571B4 00152FF4  A8 03 0A 24 */	lha r0, 0xa24(r3)
-/* 801571B8 00152FF8  3C 80 80 45 */	lis r4, lbl_804485D8@ha
+/* 801571B8 00152FF8  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
 /* 801571BC 00152FFC  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 801571C0 00153000  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 801571C0 00153000  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 801571C4 00153004  7C 00 4A 14 */	add r0, r0, r9
 /* 801571C8 00153008  B0 03 0A 20 */	sth r0, 0xa20(r3)
 /* 801571CC 0015300C  54 C0 7C 7E */	srwi r0, r6, 17
-/* 801571D0 00153010  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
+/* 801571D0 00153010  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
 /* 801571D4 00153014  7D 24 00 AE */	lbzx r9, r4, r0
-/* 801571D8 00153018  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 801571D8 00153018  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 801571DC 0015301C  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 801571E0 00153020  7D 29 07 74 */	extsb r9, r9
 /* 801571E4 00153024  55 24 10 3A */	slwi r4, r9, 2
@@ -509,15 +509,15 @@ lbl_8015722C:
 /* 80157348 00153188  00 00 00 00 */	.4byte 0x00000000
 /* 8015734C 0015318C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80157350
-lbl_80157350:
+.global VX2CommandBack416x8__FR14VX2DecoderData
+VX2CommandBack416x8__FR14VX2DecoderData:
 /* 80157350 00153190  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157354 00153194  7C 08 02 A6 */	mflr r0
-/* 80157358 00153198  3C 80 80 45 */	lis r4, lbl_804485D8@ha
-/* 8015735C 0015319C  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80157358 00153198  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
+/* 8015735C 0015319C  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80157360 001531A0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80157364 001531A4  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
-/* 80157368 001531A8  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80157364 001531A4  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
+/* 80157368 001531A8  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 8015736C 001531AC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80157370 001531B0  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80157374 001531B4  7C 7E 1B 78 */	mr r30, r3
@@ -547,15 +547,15 @@ lbl_80157350:
 .global lbl_801573D4
 lbl_801573D4:
 /* 801573D4 00153214  A8 03 0A 24 */	lha r0, 0xa24(r3)
-/* 801573D8 00153218  3C 80 80 45 */	lis r4, lbl_804485D8@ha
+/* 801573D8 00153218  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
 /* 801573DC 0015321C  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 801573E0 00153220  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 801573E0 00153220  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 801573E4 00153224  7C 00 4A 14 */	add r0, r0, r9
 /* 801573E8 00153228  B0 03 0A 20 */	sth r0, 0xa20(r3)
 /* 801573EC 0015322C  54 C0 7C 7E */	srwi r0, r6, 17
-/* 801573F0 00153230  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
+/* 801573F0 00153230  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
 /* 801573F4 00153234  7D 24 00 AE */	lbzx r9, r4, r0
-/* 801573F8 00153238  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 801573F8 00153238  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 801573FC 0015323C  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 80157400 00153240  7D 29 07 74 */	extsb r9, r9
 /* 80157404 00153244  55 24 10 3A */	slwi r4, r9, 2
@@ -652,15 +652,15 @@ lbl_8015744C:
 /* 80157568 001533A8  00 00 00 00 */	.4byte 0x00000000
 /* 8015756C 001533AC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80157570
-lbl_80157570:
+.global VX2CommandBack516x8__FR14VX2DecoderData
+VX2CommandBack516x8__FR14VX2DecoderData:
 /* 80157570 001533B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157574 001533B4  7C 08 02 A6 */	mflr r0
-/* 80157578 001533B8  3C 80 80 45 */	lis r4, lbl_804485D8@ha
-/* 8015757C 001533BC  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80157578 001533B8  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
+/* 8015757C 001533BC  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80157580 001533C0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80157584 001533C4  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
-/* 80157588 001533C8  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80157584 001533C4  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
+/* 80157588 001533C8  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 8015758C 001533CC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80157590 001533D0  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80157594 001533D4  7C 7E 1B 78 */	mr r30, r3
@@ -690,15 +690,15 @@ lbl_80157570:
 .global lbl_801575F4
 lbl_801575F4:
 /* 801575F4 00153434  A8 03 0A 24 */	lha r0, 0xa24(r3)
-/* 801575F8 00153438  3C 80 80 45 */	lis r4, lbl_804485D8@ha
+/* 801575F8 00153438  3C 80 80 45 */	lis r4, VX2GolombCodeSigned@ha
 /* 801575FC 0015343C  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 80157600 00153440  3C A0 80 45 */	lis r5, lbl_804505D8@ha
+/* 80157600 00153440  3C A0 80 45 */	lis r5, VX2GolombCodeSignedSize@ha
 /* 80157604 00153444  7C 00 4A 14 */	add r0, r0, r9
 /* 80157608 00153448  B0 03 0A 20 */	sth r0, 0xa20(r3)
 /* 8015760C 0015344C  54 C0 7C 7E */	srwi r0, r6, 17
-/* 80157610 00153450  38 84 85 D8 */	addi r4, r4, lbl_804485D8@l
+/* 80157610 00153450  38 84 85 D8 */	addi r4, r4, VX2GolombCodeSigned@l
 /* 80157614 00153454  7D 24 00 AE */	lbzx r9, r4, r0
-/* 80157618 00153458  38 A5 05 D8 */	addi r5, r5, lbl_804505D8@l
+/* 80157618 00153458  38 A5 05 D8 */	addi r5, r5, VX2GolombCodeSignedSize@l
 /* 8015761C 0015345C  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 80157620 00153460  7D 29 07 74 */	extsb r9, r9
 /* 80157624 00153464  55 24 10 3A */	slwi r4, r9, 2
@@ -795,14 +795,14 @@ lbl_8015766C:
 /* 80157788 001535C8  00 00 00 00 */	.4byte 0x00000000
 /* 8015778C 001535CC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80157790
-lbl_80157790:
+.global VX2CommandCutH16x8__FR14VX2DecoderData
+VX2CommandCutH16x8__FR14VX2DecoderData:
 /* 80157790 001535D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157794 001535D4  7C 08 02 A6 */	mflr r0
 /* 80157798 001535D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8015779C 001535DC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801577A0 001535E0  7C 7F 1B 78 */	mr r31, r3
-/* 801577A4 001535E4  4B FF F3 9D */	bl lbl_80156B40
+/* 801577A4 001535E4  4B FF F3 9D */	bl VX2DecodeBlockInter16x4__FR14VX2DecoderData
 /* 801577A8 001535E8  80 1F 00 00 */	lwz r0, 0x0(r31)
 /* 801577AC 001535EC  7F E3 FB 78 */	mr r3, r31
 /* 801577B0 001535F0  80 DF 08 B4 */	lwz r6, 0x8b4(r31)
@@ -813,7 +813,7 @@ lbl_80157790:
 /* 801577C4 00153604  90 BF 08 B4 */	stw r5, 0x8b4(r31)
 /* 801577C8 00153608  7C 04 02 14 */	add r0, r4, r0
 /* 801577CC 0015360C  90 1F 08 B8 */	stw r0, 0x8b8(r31)
-/* 801577D0 00153610  4B FF F3 71 */	bl lbl_80156B40
+/* 801577D0 00153610  4B FF F3 71 */	bl VX2DecodeBlockInter16x4__FR14VX2DecoderData
 /* 801577D4 00153614  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 801577D8 00153618  80 9F 08 B4 */	lwz r4, 0x8b4(r31)
 /* 801577DC 0015361C  54 65 10 3A */	slwi r5, r3, 2
@@ -830,14 +830,14 @@ lbl_80157790:
 /* 80157808 00153648  4E 80 00 20 */	blr
 /* 8015780C 0015364C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80157810
-lbl_80157810:
+.global VX2CommandCutV16x8__FR14VX2DecoderData
+VX2CommandCutV16x8__FR14VX2DecoderData:
 /* 80157810 00153650  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157814 00153654  7C 08 02 A6 */	mflr r0
 /* 80157818 00153658  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8015781C 0015365C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80157820 00153660  7C 7F 1B 78 */	mr r31, r3
-/* 80157824 00153664  48 00 9C 1D */	bl lbl_80161440
+/* 80157824 00153664  48 00 9C 1D */	bl VX2DecodeBlockInter8x8__FR14VX2DecoderData
 /* 80157828 00153668  80 BF 08 B4 */	lwz r5, 0x8b4(r31)
 /* 8015782C 0015366C  7F E3 FB 78 */	mr r3, r31
 /* 80157830 00153670  80 9F 08 B8 */	lwz r4, 0x8b8(r31)
@@ -845,7 +845,7 @@ lbl_80157810:
 /* 80157838 00153678  90 1F 08 B4 */	stw r0, 0x8b4(r31)
 /* 8015783C 0015367C  38 04 00 04 */	addi r0, r4, 0x4
 /* 80157840 00153680  90 1F 08 B8 */	stw r0, 0x8b8(r31)
-/* 80157844 00153684  48 00 9B FD */	bl lbl_80161440
+/* 80157844 00153684  48 00 9B FD */	bl VX2DecodeBlockInter8x8__FR14VX2DecoderData
 /* 80157848 00153688  80 9F 08 B4 */	lwz r4, 0x8b4(r31)
 /* 8015784C 0015368C  80 7F 08 B8 */	lwz r3, 0x8b8(r31)
 /* 80157850 00153690  38 04 FF F8 */	addi r0, r4, -0x8
@@ -860,16 +860,16 @@ lbl_80157810:
 /* 80157874 001536B4  00 00 00 00 */	.4byte 0x00000000
 /* 80157878 001536B8  00 00 00 00 */	.4byte 0x00000000
 /* 8015787C 001536BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80157880
-lbl_80157880:
+.global VX2DecodeBlockInter16x8__FR14VX2DecoderData
+VX2DecodeBlockInter16x8__FR14VX2DecoderData:
 /* 80157880 001536C0  80 C3 0A 08 */	lwz r6, 0xa08(r3)
-/* 80157884 001536C4  3C 80 80 41 */	lis r4, lbl_8040EBA0@ha
-/* 80157888 001536C8  3C A0 80 41 */	lis r5, lbl_8040EC20@ha
+/* 80157884 001536C4  3C 80 80 41 */	lis r4, "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@command"@ha
+/* 80157888 001536C8  3C A0 80 41 */	lis r5, "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@size@0"@ha
 /* 8015788C 001536CC  80 03 0A 04 */	lwz r0, 0xa04(r3)
 /* 80157890 001536D0  54 C6 3E 7A */	rlwinm r6, r6, 7, 25, 29
-/* 80157894 001536D4  38 84 EB A0 */	addi r4, r4, lbl_8040EBA0@l
+/* 80157894 001536D4  38 84 EB A0 */	addi r4, r4, "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@command"@l
 /* 80157898 001536D8  7C C4 30 2E */	lwzx r6, r4, r6
-/* 8015789C 001536DC  38 A5 EC 20 */	addi r5, r5, lbl_8040EC20@l
+/* 8015789C 001536DC  38 A5 EC 20 */	addi r5, r5, "@LOCAL@VX2DecodeBlockInter16x8__FR14VX2DecoderData@size@0"@l
 /* 801578A0 001536E0  80 83 0A 08 */	lwz r4, 0xa08(r3)
 /* 801578A4 001536E4  54 C9 10 3A */	slwi r9, r6, 2
 /* 801578A8 001536E8  7C A5 48 2E */	lwzx r5, r5, r9
@@ -890,8 +890,8 @@ lbl_80157880:
 /* 801578E4 00153724  90 03 0A 04 */	stw r0, 0xa04(r3)
 .global lbl_801578E8
 lbl_801578E8:
-/* 801578E8 00153728  3C 80 80 41 */	lis r4, lbl_8040EB78@ha
-/* 801578EC 0015372C  38 84 EB 78 */	addi r4, r4, lbl_8040EB78@l
+/* 801578E8 00153728  3C 80 80 41 */	lis r4, VX2CommandTable16x8@ha
+/* 801578EC 0015372C  38 84 EB 78 */	addi r4, r4, VX2CommandTable16x8@l
 /* 801578F0 00153730  7D 84 48 2E */	lwzx r12, r4, r9
 /* 801578F4 00153734  7D 89 03 A6 */	mtctr r12
 /* 801578F8 00153738  4E 80 04 20 */	bctr

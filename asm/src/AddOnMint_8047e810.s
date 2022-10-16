@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047E810
-lbl_8047E810:
+.global "@55490_8047E810"
+"@55490_8047E810":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -15,18 +15,18 @@ lbl_8047E810:
 	.4byte 0x74537461
 	.4byte 0x74650000
 
-.global lbl_8047E838
-lbl_8047E838:
+.global "@55491_8047E838"
+"@55491_8047E838":
 
 	.4byte 0x766F6964
 	.4byte 0x20417474
 	.4byte 0x61636B28
 	.4byte 0x29000000
 
-.global lbl_8047E848
-lbl_8047E848:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10watergalbo11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10watergalbo11StateAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802F005C
-	.4byte lbl_802F0040
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10watergalbo11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10watergalbo11StateAttack,PQ43scn4step5enemy5Enemy>Fv"

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80230D3C
-lbl_80230D3C:
+.global __dt__Q43scn4step4boss6IStateFv
+__dt__Q43scn4step4boss6IStateFv:
 /* 80230D3C 0022CB7C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80230D40 0022CB80  7C 08 02 A6 */	mflr r0
 /* 80230D44 0022CB84  90 01 00 14 */	stw r0, 0x14(r1)
@@ -13,12 +13,12 @@ lbl_80230D3C:
 /* 80230D58 0022CB98  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80230D5C 0022CB9C  41 82 00 20 */	beq lbl_80230D7C
 /* 80230D60 0022CBA0  38 80 00 00 */	li r4, 0x0
-/* 80230D64 0022CBA4  4B F4 4E 05 */	bl lbl_80175B68
+/* 80230D64 0022CBA4  4B F4 4E 05 */	bl __dt__Q23scn6ISceneFv
 /* 80230D68 0022CBA8  7F E0 07 34 */	extsh r0, r31
 /* 80230D6C 0022CBAC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80230D70 0022CBB0  40 81 00 0C */	ble lbl_80230D7C
 /* 80230D74 0022CBB4  7F C3 F3 78 */	mr r3, r30
-/* 80230D78 0022CBB8  4B F8 E9 9D */	bl lbl_801BF714
+/* 80230D78 0022CBB8  4B F8 E9 9D */	bl __dl__FPv
 .global lbl_80230D7C
 lbl_80230D7C:
 /* 80230D7C 0022CBBC  7F C3 F3 78 */	mr r3, r30

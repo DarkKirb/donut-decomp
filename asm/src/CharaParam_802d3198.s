@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802D3198
-lbl_802D3198:
+.global Create__Q53scn4step5enemy9puppetdee10CharaParamFv
+Create__Q53scn4step5enemy9puppetdee10CharaParamFv:
 /* 802D3198 002CEFD8  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 802D319C 002CEFDC  7C 08 02 A6 */	mflr r0
 /* 802D31A0 002CEFE0  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 802D31A4 002CEFE4  93 E1 00 BC */	stw r31, 0xbc(r1)
 /* 802D31A8 002CEFE8  7C 7F 1B 78 */	mr r31, r3
 /* 802D31AC 002CEFEC  38 61 00 10 */	addi r3, r1, 0x10
-/* 802D31B0 002CEFF0  4B FB E5 9D */	bl lbl_8029174C
+/* 802D31B0 002CEFF0  4B FB E5 9D */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802D31B4 002CEFF4  38 A1 00 5C */	addi r5, r1, 0x5c
 /* 802D31B8 002CEFF8  38 81 00 0C */	addi r4, r1, 0xc
 /* 802D31BC 002CEFFC  38 00 00 0A */	li r0, 0xa
@@ -21,7 +21,7 @@ lbl_802D31C4:
 /* 802D31CC 002CF00C  90 65 00 04 */	stw r3, 0x4(r5)
 /* 802D31D0 002CF010  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 802D31D4 002CF014  42 00 FF F0 */	bdnz lbl_802D31C4
-/* 802D31D8 002CF018  80 62 C0 50 */	lwz r3, lbl_80561FD0@sda21(r2)
+/* 802D31D8 002CF018  80 62 C0 50 */	lwz r3, "@48730_80561FD0"@sda21(r2)
 /* 802D31DC 002CF01C  80 02 C0 54 */	lwz r0, lbl_80561FD4@sda21(r2)
 /* 802D31E0 002CF020  90 61 00 08 */	stw r3, 0x8(r1)
 /* 802D31E4 002CF024  90 01 00 0C */	stw r0, 0xc(r1)
@@ -33,15 +33,15 @@ lbl_802D31C4:
 /* 802D31FC 002CF03C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802D3200 002CF040  38 00 00 3C */	li r0, 0x3c
 /* 802D3204 002CF044  90 01 00 78 */	stw r0, 0x78(r1)
-/* 802D3208 002CF048  C0 02 C0 58 */	lfs f0, lbl_80561FD8@sda21(r2)
+/* 802D3208 002CF048  C0 02 C0 58 */	lfs f0, "@48789_80561FD8"@sda21(r2)
 /* 802D320C 002CF04C  D0 01 00 7C */	stfs f0, 0x7c(r1)
 /* 802D3210 002CF050  38 00 00 03 */	li r0, 0x3
 /* 802D3214 002CF054  90 01 00 80 */	stw r0, 0x80(r1)
 /* 802D3218 002CF058  38 00 00 01 */	li r0, 0x1
 /* 802D321C 002CF05C  90 01 00 84 */	stw r0, 0x84(r1)
-/* 802D3220 002CF060  C0 02 C0 5C */	lfs f0, lbl_80561FDC@sda21(r2)
+/* 802D3220 002CF060  C0 02 C0 5C */	lfs f0, "@48790_80561FDC"@sda21(r2)
 /* 802D3224 002CF064  D0 01 00 8C */	stfs f0, 0x8c(r1)
-/* 802D3228 002CF068  C0 02 C0 60 */	lfs f0, lbl_80561FE0@sda21(r2)
+/* 802D3228 002CF068  C0 02 C0 60 */	lfs f0, "@48791_80561FE0"@sda21(r2)
 /* 802D322C 002CF06C  D0 01 00 94 */	stfs f0, 0x94(r1)
 /* 802D3230 002CF070  38 00 00 04 */	li r0, 0x4
 /* 802D3234 002CF074  90 01 00 A0 */	stw r0, 0xa0(r1)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801C54D0
-lbl_801C54D0:
+.global isValidData__Q25mintx5XDataCFv
+isValidData__Q25mintx5XDataCFv:
 /* 801C54D0 001C1310  38 80 00 00 */	li r4, 0x0
 /* 801C54D4 001C1314  38 A0 00 00 */	li r5, 0x0
 /* 801C54D8 001C1318  38 C0 00 00 */	li r6, 0x0
@@ -52,11 +52,11 @@ lbl_801C554C:
 lbl_801C5564:
 /* 801C5564 001C13A4  7C 83 23 78 */	mr r3, r4
 /* 801C5568 001C13A8  4E 80 00 20 */	blr
-.global lbl_801C556C
-lbl_801C556C:
-/* 801C556C 001C13AC  48 00 00 04 */	b lbl_801C5570
-.global lbl_801C5570
-lbl_801C5570:
+.global R2String__Q25mintx5XDataCFUi
+R2String__Q25mintx5XDataCFUi:
+/* 801C556C 001C13AC  48 00 00 04 */	b labelAddressWithReference__Q25mintx5XDataCFUi
+.global labelAddressWithReference__Q25mintx5XDataCFUi
+labelAddressWithReference__Q25mintx5XDataCFUi:
 /* 801C5570 001C13B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C5574 001C13B4  7C 08 02 A6 */	mflr r0
 /* 801C5578 001C13B8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -64,7 +64,7 @@ lbl_801C5570:
 /* 801C5580 001C13C0  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801C5584 001C13C4  7C 7E 1B 78 */	mr r30, r3
 /* 801C5588 001C13C8  7C 9F 23 78 */	mr r31, r4
-/* 801C558C 001C13CC  4B FF FF 45 */	bl lbl_801C54D0
+/* 801C558C 001C13CC  4B FF FF 45 */	bl isValidData__Q25mintx5XDataCFv
 /* 801C5590 001C13D0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801C5594 001C13D4  40 82 00 0C */	bne lbl_801C55A0
 /* 801C5598 001C13D8  38 60 00 00 */	li r3, 0x0

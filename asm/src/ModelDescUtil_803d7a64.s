@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803D7A64
-lbl_803D7A64:
+.global Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
+Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry:
 /* 803D7A64 003D38A4  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 803D7A68 003D38A8  7C 08 02 A6 */	mflr r0
 /* 803D7A6C 003D38AC  90 01 00 74 */	stw r0, 0x74(r1)
@@ -30,7 +30,7 @@ lbl_803D7AB0:
 /* 803D7ABC 003D38FC  38 61 00 08 */	addi r3, r1, 0x8
 /* 803D7AC0 003D3900  7C E4 3B 78 */	mr r4, r7
 /* 803D7AC4 003D3904  38 A0 00 18 */	li r5, 0x18
-/* 803D7AC8 003D3908  4B DC 5E F5 */	bl lbl_8019D9BC
+/* 803D7AC8 003D3908  4B DC 5E F5 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 803D7ACC 003D390C  38 B7 00 14 */	addi r5, r23, 0x14
 /* 803D7AD0 003D3910  38 81 00 04 */	addi r4, r1, 0x4
 /* 803D7AD4 003D3914  38 00 00 03 */	li r0, 0x3
@@ -42,7 +42,7 @@ lbl_803D7ADC:
 /* 803D7AE4 003D3924  90 65 00 04 */	stw r3, 0x4(r5)
 /* 803D7AE8 003D3928  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 803D7AEC 003D392C  42 00 FF F0 */	bdnz lbl_803D7ADC
-/* 803D7AF0 003D3930  4B DB C1 D9 */	bl lbl_80193CC8
+/* 803D7AF0 003D3930  4B DB C1 D9 */	bl DefaultEntryName__Q23g3d15ResModelContextFv
 /* 803D7AF4 003D3934  7C 64 1B 78 */	mr r4, r3
 /* 803D7AF8 003D3938  38 A1 00 1C */	addi r5, r1, 0x1c
 /* 803D7AFC 003D393C  38 60 00 00 */	li r3, 0x0
@@ -55,7 +55,7 @@ lbl_803D7B08:
 /* 803D7B10 003D3950  42 00 FF F8 */	bdnz lbl_803D7B08
 /* 803D7B14 003D3954  38 61 00 20 */	addi r3, r1, 0x20
 /* 803D7B18 003D3958  38 A0 00 28 */	li r5, 0x28
-/* 803D7B1C 003D395C  4B DC 5E A1 */	bl lbl_8019D9BC
+/* 803D7B1C 003D395C  4B DC 5E A1 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 803D7B20 003D3960  38 B7 00 2C */	addi r5, r23, 0x2c
 /* 803D7B24 003D3964  38 81 00 1C */	addi r4, r1, 0x1c
 /* 803D7B28 003D3968  38 00 00 05 */	li r0, 0x5
@@ -76,8 +76,8 @@ lbl_803D7B30:
 /* 803D7B5C 003D399C  93 98 00 04 */	stw r28, 0x4(r24)
 /* 803D7B60 003D39A0  93 B8 00 08 */	stw r29, 0x8(r24)
 /* 803D7B64 003D39A4  93 17 00 70 */	stw r24, 0x70(r23)
-/* 803D7B68 003D39A8  3C 60 80 49 */	lis r3, lbl_804937D8@ha
-/* 803D7B6C 003D39AC  38 03 37 D8 */	addi r0, r3, lbl_804937D8@l
+/* 803D7B68 003D39A8  3C 60 80 49 */	lis r3, "@50293_804937D8"@ha
+/* 803D7B6C 003D39AC  38 03 37 D8 */	addi r0, r3, "@50293_804937D8"@l
 /* 803D7B70 003D39B0  90 19 00 00 */	stw r0, 0x0(r25)
 /* 803D7B74 003D39B4  93 D9 00 04 */	stw r30, 0x4(r25)
 /* 803D7B78 003D39B8  93 F9 00 08 */	stw r31, 0x8(r25)

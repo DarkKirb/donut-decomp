@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407520
-lbl_80407520:
+.global atanhi
+atanhi:
 
 	.4byte 0x3FDDAC67
 	.4byte 0x0561BB4F

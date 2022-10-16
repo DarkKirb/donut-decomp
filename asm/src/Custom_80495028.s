@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495028
-lbl_80495028:
+.global "@56603_80495028"
+"@56603_80495028":
 
 	.4byte lbl_803EE45C
 	.4byte lbl_803EE464
@@ -17,22 +17,22 @@ lbl_80495028:
 	.4byte lbl_803EE4AC
 	.4byte lbl_803EE4B4
 
-.global lbl_80495058
-lbl_80495058:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13vacuumedblock9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13vacuumedblock9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803EE564
-	.4byte lbl_803EE4DC
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13vacuumedblock9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step6weapon13vacuumedblock9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80495068
-lbl_80495068:
+.global __vt__Q53scn4step6weapon13vacuumedblock6Custom
+__vt__Q53scn4step6weapon13vacuumedblock6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803EE4D8
-	.4byte lbl_803EE4F8
-	.4byte lbl_803EE2F0
-	.4byte lbl_803EE3FC
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q53scn4step6weapon13vacuumedblock6CustomCFv
+	.4byte __dt__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.4byte onInit__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.4byte onDead__Q53scn4step6weapon13vacuumedblock6CustomFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0

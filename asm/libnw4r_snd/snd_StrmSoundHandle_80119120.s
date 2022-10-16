@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80119120
-lbl_80119120:
+.global __ct__Q34nw4r3snd15StrmSoundHandleFPQ34nw4r3snd11SoundHandle
+__ct__Q34nw4r3snd15StrmSoundHandleFPQ34nw4r3snd11SoundHandle:
 /* 80119120 00114F60  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80119124 00114F64  7C 08 02 A6 */	mflr r0
 /* 80119128 00114F68  2C 04 00 00 */	cmpwi r4, 0x0
@@ -23,7 +23,7 @@ lbl_80119150:
 /* 8011915C 00114F9C  48 00 00 9C */	b lbl_801191F8
 .global lbl_80119160
 lbl_80119160:
-/* 80119160 00114FA0  3B ED EC 28 */	addi r31, r13, lbl_8055D048@sda21
+/* 80119160 00114FA0  3B ED EC 28 */	addi r31, r13, typeInfo__Q44nw4r3snd6detail9StrmSound@sda21
 /* 80119164 00114FA4  41 82 00 48 */	beq lbl_801191AC
 /* 80119168 00114FA8  81 9E 00 00 */	lwz r12, 0x0(r30)
 /* 8011916C 00114FAC  7F C3 F3 78 */	mr r3, r30
@@ -89,8 +89,8 @@ lbl_801191F8:
 /* 80119214 00115054  00 00 00 00 */	.4byte 0x00000000
 /* 80119218 00115058  00 00 00 00 */	.4byte 0x00000000
 /* 8011921C 0011505C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80119220
-lbl_80119220:
+.global DetachSound__Q34nw4r3snd15StrmSoundHandleFv
+DetachSound__Q34nw4r3snd15StrmSoundHandleFv:
 /* 80119220 00115060  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 80119224 00115064  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80119228 00115068  41 82 00 18 */	beq lbl_80119240

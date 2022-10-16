@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556428
-lbl_80556428:
+.global thandler__3std
+thandler__3std:
 
-	.4byte lbl_80006C10
+	.4byte dthandler__3stdFv
 
-.global lbl_8055642C
-lbl_8055642C:
+.global uhandler__3std
+uhandler__3std:
 
-	.4byte lbl_80006C14
+	.4byte duhandler__3stdFv

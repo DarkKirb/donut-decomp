@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80478258
-lbl_80478258:
+.global "@56081_80478258"
+"@56081_80478258":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -45,29 +45,29 @@ lbl_80478258:
 	.4byte 0x2053686F
 	.4byte 0x74282900
 
-.global lbl_804782F8
-lbl_804782F8:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe11StateAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802BF09C
-	.4byte lbl_802BF040
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80478308
-lbl_80478308:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802BF098
-	.4byte lbl_802BF05C
-
-.global lbl_80478318
-lbl_80478318:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe17StateWalkStepBack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe17StateWalkStepBack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802BF094
-	.4byte lbl_802BF078
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe17StateWalkStepBack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe17StateWalkStepBack,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe9StateWalk,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe9StateWalk,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy10knucklejoe9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

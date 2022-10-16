@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8010C0B0
-lbl_8010C0B0:
+.global __ct__Q44nw4r3snd6detail13SeqFileReaderFPCv
+__ct__Q44nw4r3snd6detail13SeqFileReaderFPCv:
 /* 8010C0B0 00107EF0  38 00 00 00 */	li r0, 0x0
 /* 8010C0B4 00107EF4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8010C0B8 00107EF8  90 03 00 04 */	stw r0, 0x4(r3)
@@ -37,14 +37,14 @@ lbl_8010C100:
 /* 8010C114 00107F54  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8010C118 00107F58  4E 80 00 20 */	blr
 /* 8010C11C 00107F5C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8010C120
-lbl_8010C120:
+.global GetBaseAddress__Q44nw4r3snd6detail13SeqFileReaderCFv
+GetBaseAddress__Q44nw4r3snd6detail13SeqFileReaderCFv:
 /* 8010C120 00107F60  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8010C124 00107F64  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 8010C128 00107F68  7C 60 1A 14 */	add r3, r0, r3
 /* 8010C12C 00107F6C  4E 80 00 20 */	blr
-.global lbl_8010C130
-lbl_8010C130:
+.global ReadOffsetByLabel__Q44nw4r3snd6detail13SeqFileReaderCFPCcPUl
+ReadOffsetByLabel__Q44nw4r3snd6detail13SeqFileReaderCFPCcPUl:
 /* 8010C130 00107F70  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8010C134 00107F74  7C 08 02 A6 */	mflr r0
 /* 8010C138 00107F78  90 01 00 34 */	stw r0, 0x34(r1)
@@ -61,7 +61,7 @@ lbl_8010C130:
 .global lbl_8010C164
 lbl_8010C164:
 /* 8010C164 00107FA4  7F 03 C3 78 */	mr r3, r24
-/* 8010C168 00107FA8  4B EF A9 25 */	bl lbl_80006A8C
+/* 8010C168 00107FA8  4B EF A9 25 */	bl strlen
 /* 8010C16C 00107FAC  83 DC 00 08 */	lwz r30, 0x8(r28)
 /* 8010C170 00107FB0  7C 7B 1B 78 */	mr r27, r3
 /* 8010C174 00107FB4  7F 9D E3 78 */	mr r29, r28
@@ -77,7 +77,7 @@ lbl_8010C180:
 /* 8010C194 00107FD4  7F 03 C3 78 */	mr r3, r24
 /* 8010C198 00107FD8  7F 65 DB 78 */	mr r5, r27
 /* 8010C19C 00107FDC  38 9F 00 10 */	addi r4, r31, 0x10
-/* 8010C1A0 00107FE0  4B F0 1A B9 */	bl lbl_8000DC58
+/* 8010C1A0 00107FE0  4B F0 1A B9 */	bl strncmp
 /* 8010C1A4 00107FE4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8010C1A8 00107FE8  40 82 00 14 */	bne lbl_8010C1BC
 /* 8010C1AC 00107FEC  80 1F 00 08 */	lwz r0, 0x8(r31)

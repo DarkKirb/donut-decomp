@@ -1,36 +1,36 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801BF7AC
-lbl_801BF7AC:
-/* 801BF7AC 001BB5EC  3C A0 80 46 */	lis r5, lbl_80459D80@ha
-/* 801BF7B0 001BB5F0  38 05 9D 80 */	addi r0, r5, lbl_80459D80@l
+.global __ct__Q23mem15UnitHeapMapUserFRCQ23mem8HeapUnit
+__ct__Q23mem15UnitHeapMapUserFRCQ23mem8HeapUnit:
+/* 801BF7AC 001BB5EC  3C A0 80 46 */	lis r5, __vt__Q23mem15UnitHeapMapUser@ha
+/* 801BF7B0 001BB5F0  38 05 9D 80 */	addi r0, r5, __vt__Q23mem15UnitHeapMapUser@l
 /* 801BF7B4 001BB5F4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801BF7B8 001BB5F8  90 83 00 04 */	stw r4, 0x4(r3)
 /* 801BF7BC 001BB5FC  4E 80 00 20 */	blr
 
-.global lbl_801BF7C0
-lbl_801BF7C0:
+.global heapName__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+heapName__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF7C0 001BB600  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801BF7C4 001BB604  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 801BF7C8 001BB608  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801BF7CC 001BB60C  7D 89 03 A6 */	mtctr r12
 /* 801BF7D0 001BB610  4E 80 04 20 */	bctr
 
-.global lbl_801BF7D4
-lbl_801BF7D4:
-/* 801BF7D4 001BB614  4B E9 46 1C */	b lbl_80053DF0
+.global fragmentBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+fragmentBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
+/* 801BF7D4 001BB614  4B E9 46 1C */	b __wpadNoAlloc
 
-.global lbl_801BF7D8
-lbl_801BF7D8:
+.global usedBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+usedBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF7D8 001BB618  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801BF7DC 001BB61C  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 801BF7E0 001BB620  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 801BF7E4 001BB624  7D 89 03 A6 */	mtctr r12
 /* 801BF7E8 001BB628  4E 80 04 20 */	bctr
 
-.global lbl_801BF7EC
-lbl_801BF7EC:
+.global totalHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+totalHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF7EC 001BB62C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BF7F0 001BB630  7C 08 02 A6 */	mflr r0
 /* 801BF7F4 001BB634  90 01 00 14 */	stw r0, 0x14(r1)
@@ -38,7 +38,7 @@ lbl_801BF7EC:
 /* 801BF7FC 001BB63C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801BF800 001BB640  7C 7E 1B 78 */	mr r30, r3
 /* 801BF804 001BB644  80 63 00 04 */	lwz r3, 0x4(r3)
-/* 801BF808 001BB648  4B FF F9 79 */	bl lbl_801BF180
+/* 801BF808 001BB648  4B FF F9 79 */	bl freeMemBlockCount__Q23mem8HeapUnitCFv
 /* 801BF80C 001BB64C  7C 7F 1B 78 */	mr r31, r3
 /* 801BF810 001BB650  80 7E 00 04 */	lwz r3, 0x4(r30)
 /* 801BF814 001BB654  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -47,7 +47,7 @@ lbl_801BF7EC:
 /* 801BF820 001BB660  4E 80 04 21 */	bctrl
 /* 801BF824 001BB664  7F E3 FA 14 */	add r31, r3, r31
 /* 801BF828 001BB668  80 7E 00 04 */	lwz r3, 0x4(r30)
-/* 801BF82C 001BB66C  4B F6 A3 95 */	bl lbl_80129BC0
+/* 801BF82C 001BB66C  4B F6 A3 95 */	bl getDrawInfo__Q310homebutton3gui11PaneManagerFv
 /* 801BF830 001BB670  7C 63 F9 D6 */	mullw r3, r3, r31
 /* 801BF834 001BB674  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801BF838 001BB678  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -56,8 +56,8 @@ lbl_801BF7EC:
 /* 801BF844 001BB684  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BF848 001BB688  4E 80 00 20 */	blr
 
-.global lbl_801BF84C
-lbl_801BF84C:
+.global usedHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+usedHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF84C 001BB68C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BF850 001BB690  7C 08 02 A6 */	mflr r0
 /* 801BF854 001BB694  90 01 00 14 */	stw r0, 0x14(r1)
@@ -71,7 +71,7 @@ lbl_801BF84C:
 /* 801BF874 001BB6B4  4E 80 04 21 */	bctrl
 /* 801BF878 001BB6B8  7C 7F 1B 78 */	mr r31, r3
 /* 801BF87C 001BB6BC  80 7E 00 04 */	lwz r3, 0x4(r30)
-/* 801BF880 001BB6C0  4B F6 A3 41 */	bl lbl_80129BC0
+/* 801BF880 001BB6C0  4B F6 A3 41 */	bl getDrawInfo__Q310homebutton3gui11PaneManagerFv
 /* 801BF884 001BB6C4  7C 63 F9 D6 */	mullw r3, r3, r31
 /* 801BF888 001BB6C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801BF88C 001BB6CC  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -80,8 +80,8 @@ lbl_801BF84C:
 /* 801BF898 001BB6D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BF89C 001BB6DC  4E 80 00 20 */	blr
 
-.global lbl_801BF8A0
-lbl_801BF8A0:
+.global startAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+startAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF8A0 001BB6E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BF8A4 001BB6E4  7C 08 02 A6 */	mflr r0
 /* 801BF8A8 001BB6E8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -98,8 +98,8 @@ lbl_801BF8A0:
 /* 801BF8D4 001BB714  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BF8D8 001BB718  4E 80 00 20 */	blr
 
-.global lbl_801BF8DC
-lbl_801BF8DC:
+.global endAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+endAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap:
 /* 801BF8DC 001BB71C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801BF8E0 001BB720  7C 08 02 A6 */	mflr r0
 /* 801BF8E4 001BB724  90 01 00 24 */	stw r0, 0x24(r1)
@@ -129,8 +129,8 @@ lbl_801BF8DC:
 /* 801BF944 001BB784  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BF948 001BB788  4E 80 00 20 */	blr
 
-.global lbl_801BF94C
-lbl_801BF94C:
+.global drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer:
 /* 801BF94C 001BB78C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801BF950 001BB790  7C 08 02 A6 */	mflr r0
 /* 801BF954 001BB794  90 01 00 44 */	stw r0, 0x44(r1)
@@ -144,26 +144,26 @@ lbl_801BF94C:
 /* 801BF974 001BB7B4  7D 89 03 A6 */	mtctr r12
 /* 801BF978 001BB7B8  4E 80 04 21 */	bctrl
 /* 801BF97C 001BB7BC  7C 7E 1B 78 */	mr r30, r3
-/* 801BF980 001BB7C0  80 02 9C 40 */	lwz r0, lbl_8055FBC0@sda21(r2)
+/* 801BF980 001BB7C0  80 02 9C 40 */	lwz r0, "@49027_8055FBC0"@sda21(r2)
 /* 801BF984 001BB7C4  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801BF988 001BB7C8  80 7B 00 04 */	lwz r3, 0x4(r27)
-/* 801BF98C 001BB7CC  4B F3 B2 85 */	bl lbl_800FAC10
+/* 801BF98C 001BB7CC  4B F3 B2 85 */	bl GetTexMapAry__Q34nw4r3lyt8MaterialCFv
 /* 801BF990 001BB7D0  7C 7F 1B 78 */	mr r31, r3
 /* 801BF994 001BB7D4  80 7B 00 04 */	lwz r3, 0x4(r27)
-/* 801BF998 001BB7D8  4B F6 A2 29 */	bl lbl_80129BC0
+/* 801BF998 001BB7D8  4B F6 A2 29 */	bl getDrawInfo__Q310homebutton3gui11PaneManagerFv
 /* 801BF99C 001BB7DC  7C 03 F9 D6 */	mullw r0, r3, r31
 /* 801BF9A0 001BB7E0  7C BE 02 14 */	add r5, r30, r0
 /* 801BF9A4 001BB7E4  38 61 00 18 */	addi r3, r1, 0x18
 /* 801BF9A8 001BB7E8  7F C4 F3 78 */	mr r4, r30
 /* 801BF9AC 001BB7EC  38 C0 00 00 */	li r6, 0x0
-/* 801BF9B0 001BB7F0  4B F8 CD 29 */	bl lbl_8014C6D8
+/* 801BF9B0 001BB7F0  4B F8 CD 29 */	bl __ct__Q34nrel3mem5BlockFPCvPCvUl
 /* 801BF9B4 001BB7F4  7F A3 EB 78 */	mr r3, r29
 /* 801BF9B8 001BB7F8  38 81 00 18 */	addi r4, r1, 0x18
 /* 801BF9BC 001BB7FC  38 A1 00 08 */	addi r5, r1, 0x8
-/* 801BF9C0 001BB800  4B F8 C3 D9 */	bl lbl_8014BD98
+/* 801BF9C0 001BB800  4B F8 C3 D9 */	bl tryToDrawWithColor__Q44nrel6devkit7heapmap18HeapMapBlockDrawerFRCQ34nrel3mem5BlockRC8_GXColor
 /* 801BF9C4 001BB804  38 61 00 18 */	addi r3, r1, 0x18
 /* 801BF9C8 001BB808  38 80 FF FF */	li r4, -0x1
-/* 801BF9CC 001BB80C  4B FB 61 9D */	bl lbl_80175B68
+/* 801BF9CC 001BB80C  4B FB 61 9D */	bl __dt__Q23scn6ISceneFv
 /* 801BF9D0 001BB810  7F 63 DB 78 */	mr r3, r27
 /* 801BF9D4 001BB814  7F 84 E3 78 */	mr r4, r28
 /* 801BF9D8 001BB818  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -174,13 +174,13 @@ lbl_801BF94C:
 /* 801BF9EC 001BB82C  38 61 00 0C */	addi r3, r1, 0xc
 /* 801BF9F0 001BB830  7F C4 F3 78 */	mr r4, r30
 /* 801BF9F4 001BB834  38 C0 00 00 */	li r6, 0x0
-/* 801BF9F8 001BB838  4B F8 CC E1 */	bl lbl_8014C6D8
+/* 801BF9F8 001BB838  4B F8 CC E1 */	bl __ct__Q34nrel3mem5BlockFPCvPCvUl
 /* 801BF9FC 001BB83C  7F A3 EB 78 */	mr r3, r29
 /* 801BFA00 001BB840  38 81 00 0C */	addi r4, r1, 0xc
-/* 801BFA04 001BB844  4B F8 C3 8D */	bl lbl_8014BD90
+/* 801BFA04 001BB844  4B F8 C3 8D */	bl tryToDraw__Q44nrel6devkit7heapmap18HeapMapBlockDrawerFRCQ34nrel3mem5Block
 /* 801BFA08 001BB848  38 61 00 0C */	addi r3, r1, 0xc
 /* 801BFA0C 001BB84C  38 80 FF FF */	li r4, -0x1
-/* 801BFA10 001BB850  4B FB 61 59 */	bl lbl_80175B68
+/* 801BFA10 001BB850  4B FB 61 59 */	bl __dt__Q23scn6ISceneFv
 /* 801BFA14 001BB854  39 61 00 40 */	addi r11, r1, 0x40
 /* 801BFA18 001BB858  4B E4 79 71 */	bl lbl_80007388
 /* 801BFA1C 001BB85C  80 01 00 44 */	lwz r0, 0x44(r1)
@@ -188,6 +188,6 @@ lbl_801BF94C:
 /* 801BFA24 001BB864  38 21 00 40 */	addi r1, r1, 0x40
 /* 801BFA28 001BB868  4E 80 00 20 */	blr
 
-.global lbl_801BFA2C
-lbl_801BFA2C:
+.global drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer:
 /* 801BFA2C 001BB86C  4E 80 00 20 */	blr

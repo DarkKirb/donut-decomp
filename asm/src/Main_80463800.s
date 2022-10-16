@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80463800
-lbl_80463800:
+.global "@55596_80463800"
+"@55596_80463800":
 
 	.4byte 0x68697374
 	.4byte 0x6F72792F
@@ -18,26 +18,26 @@ lbl_80463800:
 	.4byte 0x646F7700
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A84A4
+	.4byte isPushEnd__Q34info6common10ButtonHelpCFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80400920
+	.4byte setColor__Q23sfx4FadeFRC8_GXColor
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80400908
+	.4byte setFadeOut__Q23sfx4FadeFUl
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8040096C
+	.4byte isEnd__Q23sfx4FadeCFv
 
-.global lbl_80463860
-lbl_80463860:
+.global "__vt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8021C950
-	.4byte lbl_8021C8AC
-	.4byte lbl_8021C8EC
-	.4byte lbl_8021C908
+	.4byte "__dt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

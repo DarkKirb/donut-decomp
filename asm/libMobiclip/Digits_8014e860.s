@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014E860
-lbl_8014E860:
+.global DigitsAdd
+DigitsAdd:
 /* 8014E860 0014A6A0  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8014E864 0014A6A4  39 00 00 00 */	li r8, 0x0
 /* 8014E868 0014A6A8  41 82 00 E4 */	beq lbl_8014E94C
@@ -75,8 +75,8 @@ lbl_8014E94C:
 /* 8014E954 0014A794  00 00 00 00 */	.4byte 0x00000000
 /* 8014E958 0014A798  00 00 00 00 */	.4byte 0x00000000
 /* 8014E95C 0014A79C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8014E960
-lbl_8014E960:
+.global DigitsSub
+DigitsSub:
 /* 8014E960 0014A7A0  38 00 00 00 */	li r0, 0x0
 /* 8014E964 0014A7A4  7C 89 03 A6 */	mtctr r4
 /* 8014E968 0014A7A8  2C 04 00 00 */	cmpwi r4, 0x0
@@ -113,8 +113,8 @@ lbl_8014E9C4:
 /* 8014E9C4 0014A804  7C 03 03 78 */	mr r3, r0
 /* 8014E9C8 0014A808  4E 80 00 20 */	blr
 /* 8014E9CC 0014A80C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8014E9D0
-lbl_8014E9D0:
+.global DigitsMul
+DigitsMul:
 /* 8014E9D0 0014A810  54 C7 04 3E */	clrlwi r7, r6, 16
 /* 8014E9D4 0014A814  54 C8 84 3E */	srwi r8, r6, 16
 /* 8014E9D8 0014A818  38 C0 00 00 */	li r6, 0x0
@@ -161,8 +161,8 @@ lbl_8014EA54:
 /* 8014EA54 0014A894  7C C3 33 78 */	mr r3, r6
 /* 8014EA58 0014A898  4E 80 00 20 */	blr
 /* 8014EA5C 0014A89C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8014EA60
-lbl_8014EA60:
+.global DigitsMulAdd
+DigitsMulAdd:
 /* 8014EA60 0014A8A0  54 C7 04 3E */	clrlwi r7, r6, 16
 /* 8014EA64 0014A8A4  54 C8 84 3E */	srwi r8, r6, 16
 /* 8014EA68 0014A8A8  38 C0 00 00 */	li r6, 0x0

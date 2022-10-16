@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80446E68
-lbl_80446E68:
+.global "@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@2"
+"@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -18,8 +18,8 @@ lbl_80446E68:
 	.4byte 0x6E746572
 	.4byte 0x2E000000
 
-.global lbl_80446E9C
-lbl_80446E9C:
+.global "@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@1"
+"@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@1":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -27,8 +27,8 @@ lbl_80446E9C:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80446EB0
-lbl_80446EB0:
+.global "@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@0"
+"@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -44,8 +44,8 @@ lbl_80446EB0:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80446EE4
-lbl_80446EE4:
+.global "@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc"
+"@STRING@Print__Q34nw4r2ut17TextWriterBase<c>FPCc":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -53,8 +53,8 @@ lbl_80446EE4:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80446EF8
-lbl_80446EF8:
+.global "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@2"
+"@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -71,16 +71,16 @@ lbl_80446EF8:
 	.4byte 0x7465722E
 	.4byte 0
 
-.global lbl_80446F30
-lbl_80446F30:
+.global "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@1"
+"@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@1":
 
 	.4byte 0x43686172
 	.4byte 0x57726974
 	.4byte 0x65722E68
 	.4byte 0
 
-.global lbl_80446F40
-lbl_80446F40:
+.global "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@0"
+"@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -96,16 +96,16 @@ lbl_80446F40:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80446F74
-lbl_80446F74:
+.global "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font"
+"@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font":
 
 	.4byte 0x43686172
 	.4byte 0x57726974
 	.4byte 0x65722E68
 	.4byte 0
 
-.global lbl_80446F84
-lbl_80446F84:
+.global "@STRING@SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color@0"
+"@STRING@SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -121,8 +121,8 @@ lbl_80446F84:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80446FB8
-lbl_80446FB8:
+.global "@STRING@SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color"
+"@STRING@SetTextColor__Q34nw4r2ut10CharWriterFQ34nw4r2ut5Color":
 
 	.4byte 0x43686172
 	.4byte 0x57726974

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80413830
-lbl_80413830:
+.global VX2InverseQuantizer4x4
+VX2InverseQuantizer4x4:
 
 	.4byte 0x0000000A
 	.4byte 0x0000000D

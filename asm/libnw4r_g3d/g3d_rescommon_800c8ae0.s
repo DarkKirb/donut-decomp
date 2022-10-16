@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800C8AE0
-lbl_800C8AE0:
+.global __eq__Q34nw4r3g3d7ResNameCFQ34nw4r3g3d7ResName
+__eq__Q34nw4r3g3d7ResNameCFQ34nw4r3g3d7ResName:
 /* 800C8AE0 000C4920  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800C8AE4 000C4924  7C 08 02 A6 */	mflr r0
 /* 800C8AE8 000C4928  80 84 00 00 */	lwz r4, 0x0(r4)
@@ -14,7 +14,7 @@ lbl_800C8AE0:
 /* 800C8B00 000C4940  40 82 00 1C */	bne lbl_800C8B1C
 /* 800C8B04 000C4944  38 65 00 04 */	addi r3, r5, 0x4
 /* 800C8B08 000C4948  38 84 00 04 */	addi r4, r4, 0x4
-/* 800C8B0C 000C494C  4B F4 50 31 */	bl lbl_8000DB3C
+/* 800C8B0C 000C494C  4B F4 50 31 */	bl strcmp
 /* 800C8B10 000C4950  7C 60 00 34 */	cntlzw r0, r3
 /* 800C8B14 000C4954  54 03 D9 7E */	srwi r3, r0, 5
 /* 800C8B18 000C4958  48 00 00 08 */	b lbl_800C8B20
@@ -27,8 +27,8 @@ lbl_800C8B20:
 /* 800C8B24 000C4964  7C 08 03 A6 */	mtlr r0
 /* 800C8B28 000C4968  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C8B2C 000C496C  4E 80 00 20 */	blr
-.global lbl_800C8B30
-lbl_800C8B30:
+.global ResWriteBPCmd__Q34nw4r3g3d6detailFPUcUl
+ResWriteBPCmd__Q34nw4r3g3d6detailFPUcUl:
 /* 800C8B30 000C4970  54 86 46 3E */	srwi r6, r4, 24
 /* 800C8B34 000C4974  54 85 86 3E */	extrwi r5, r4, 8, 8
 /* 800C8B38 000C4978  54 80 C6 3E */	extrwi r0, r4, 8, 16
@@ -41,8 +41,8 @@ lbl_800C8B30:
 /* 800C8B54 000C4994  4E 80 00 20 */	blr
 /* 800C8B58 000C4998  00 00 00 00 */	.4byte 0x00000000
 /* 800C8B5C 000C499C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8B60
-lbl_800C8B60:
+.global ResWriteBPCmd__Q34nw4r3g3d6detailFPUcUlUl
+ResWriteBPCmd__Q34nw4r3g3d6detailFPUcUlUl:
 /* 800C8B60 000C49A0  88 C3 00 02 */	lbz r6, 0x2(r3)
 /* 800C8B64 000C49A4  39 00 00 61 */	li r8, 0x61
 /* 800C8B68 000C49A8  88 03 00 03 */	lbz r0, 0x3(r3)
@@ -67,8 +67,8 @@ lbl_800C8B60:
 /* 800C8BB4 000C49F4  4E 80 00 20 */	blr
 /* 800C8BB8 000C49F8  00 00 00 00 */	.4byte 0x00000000
 /* 800C8BBC 000C49FC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8BC0
-lbl_800C8BC0:
+.global ResWriteCPCmd__Q34nw4r3g3d6detailFPUcUcUl
+ResWriteCPCmd__Q34nw4r3g3d6detailFPUcUcUl:
 /* 800C8BC0 000C4A00  54 A7 46 3E */	srwi r7, r5, 24
 /* 800C8BC4 000C4A04  54 A6 86 3E */	extrwi r6, r5, 8, 8
 /* 800C8BC8 000C4A08  54 A0 C6 3E */	extrwi r0, r5, 8, 16
@@ -81,8 +81,8 @@ lbl_800C8BC0:
 /* 800C8BE4 000C4A24  98 A3 00 05 */	stb r5, 0x5(r3)
 /* 800C8BE8 000C4A28  4E 80 00 20 */	blr
 /* 800C8BEC 000C4A2C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800C8BF0
-lbl_800C8BF0:
+.global ResWriteSSMask__Q34nw4r3g3d6detailFPUcUl
+ResWriteSSMask__Q34nw4r3g3d6detailFPUcUl:
 /* 800C8BF0 000C4A30  88 C3 00 02 */	lbz r6, 0x2(r3)
 /* 800C8BF4 000C4A34  38 00 00 61 */	li r0, 0x61
 /* 800C8BF8 000C4A38  88 A3 00 03 */	lbz r5, 0x3(r3)

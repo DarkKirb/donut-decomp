@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047B150
-lbl_8047B150:
+.global __vt__Q53scn4step5enemy7sandbag6Custom
+__vt__Q53scn4step5enemy7sandbag6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802D9180
-	.4byte lbl_802D9184
-	.4byte lbl_802D88D0
-	.4byte lbl_80281E88
-	.4byte lbl_802D8E28
-	.4byte lbl_80281E90
-	.4byte lbl_802D8E2C
-	.4byte lbl_80281E98
-	.4byte lbl_80281F10
-	.4byte lbl_802D8E60
-	.4byte lbl_802D8EB8
-	.4byte lbl_802D8BB8
-	.4byte lbl_802D893C
-	.4byte lbl_80281F24
-	.4byte lbl_80281F28
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy7sandbag6CustomCFv
+	.4byte __dt__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onInit__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumReceive__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onCaptured__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onDead__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte onProcFixPos__Q53scn4step5enemy7sandbag6CustomFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0

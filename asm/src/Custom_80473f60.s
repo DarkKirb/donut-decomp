@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80473F60
-lbl_80473F60:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb9StateShot,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb9StateShot,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029C0DC
-	.4byte lbl_8029C0BC
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb9StateShot,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb9StateShot,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80473F70
-lbl_80473F70:
+.global __vt__Q53scn4step5enemy11bonkersbomb6Custom
+__vt__Q53scn4step5enemy11bonkersbomb6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8029C0B8
-	.4byte lbl_8029C0D8
-	.4byte lbl_8029BCB8
-	.4byte lbl_8029BE98
-	.4byte lbl_80281E8C
-	.4byte lbl_80281E90
-	.4byte lbl_8029BE28
-	.4byte lbl_80281E98
-	.4byte lbl_80281F10
-	.4byte lbl_80281F14
-	.4byte lbl_80281F18
-	.4byte lbl_80281F1C
-	.4byte lbl_80281F20
-	.4byte lbl_8029BEA8
-	.4byte lbl_80281F28
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy11bonkersbomb6CustomCFv
+	.4byte __dt__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.4byte onInit__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.4byte onHitPointIsZero__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q53scn4step5enemy11bonkersbomb6CustomFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0

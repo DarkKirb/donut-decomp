@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80249E24
-lbl_80249E24:
+.global TryToChangeState__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Boss
+TryToChangeState__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Boss:
 /* 80249E24 00245C64  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80249E28 00245C68  7C 08 02 A6 */	mflr r0
 /* 80249E2C 00245C6C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80249E30 00245C70  39 61 00 20 */	addi r11, r1, 0x20
 /* 80249E34 00245C74  4B DB D5 11 */	bl lbl_80007344
 /* 80249E38 00245C78  7C 7D 1B 78 */	mr r29, r3
-/* 80249E3C 00245C7C  4B E2 B8 F5 */	bl lbl_80075730
-/* 80249E40 00245C80  4B FD 70 29 */	bl lbl_80220E68
-/* 80249E44 00245C84  4B FE 7E 75 */	bl lbl_80231CB8
-/* 80249E48 00245C88  4B E2 B8 E9 */	bl lbl_80075730
+/* 80249E3C 00245C7C  4B E2 B8 F5 */	bl GKI_getfirst
+/* 80249E40 00245C80  4B FD 70 29 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80249E44 00245C84  4B FE 7E 75 */	bl staffCreditCtrl__Q43scn4step4boss7ManagerFv
+/* 80249E48 00245C88  4B E2 B8 E9 */	bl GKI_getfirst
 /* 80249E4C 00245C8C  2C 03 00 0D */	cmpwi r3, 0xd
 /* 80249E50 00245C90  40 82 00 50 */	bne lbl_80249EA0
 /* 80249E54 00245C94  7F A3 EB 78 */	mr r3, r29
-/* 80249E58 00245C98  4B FE 31 C1 */	bl lbl_8022D018
+/* 80249E58 00245C98  4B FE 31 C1 */	bl stateChanger__Q43scn4step4boss4BossFv
 /* 80249E5C 00245C9C  7C 7F 1B 78 */	mr r31, r3
-/* 80249E60 00245CA0  48 1B C0 A1 */	bl lbl_80405F00
+/* 80249E60 00245CA0  48 1B C0 A1 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 80249E64 00245CA4  3B DF 00 10 */	addi r30, r31, 0x10
 /* 80249E68 00245CA8  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80249E6C 00245CAC  41 82 00 28 */	beq lbl_80249E94
 /* 80249E70 00245CB0  7F C3 F3 78 */	mr r3, r30
 /* 80249E74 00245CB4  38 9F 00 90 */	addi r4, r31, 0x90
-/* 80249E78 00245CB8  4B FE C9 F1 */	bl lbl_80236868
-/* 80249E7C 00245CBC  3C 60 80 46 */	lis r3, lbl_80466ED0@ha
-/* 80249E80 00245CC0  38 03 6E D0 */	addi r0, r3, lbl_80466ED0@l
+/* 80249E78 00245CB8  4B FE C9 F1 */	bl "__ct__Q24util28StateFactory<Q24util6IState>FPv"
+/* 80249E7C 00245CBC  3C 60 80 46 */	lis r3, "__vt__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>"@ha
+/* 80249E80 00245CC0  38 03 6E D0 */	addi r0, r3, "__vt__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>"@l
 /* 80249E84 00245CC4  90 1E 00 00 */	stw r0, 0x0(r30)
 /* 80249E88 00245CC8  93 BE 00 08 */	stw r29, 0x8(r30)
 /* 80249E8C 00245CCC  38 00 00 01 */	li r0, 0x1
@@ -47,8 +47,8 @@ lbl_80249EA4:
 /* 80249EB0 00245CF0  7C 08 03 A6 */	mtlr r0
 /* 80249EB4 00245CF4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80249EB8 00245CF8  4E 80 00 20 */	blr
-.global lbl_80249EBC
-lbl_80249EBC:
+.global __ct__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Bossb
+__ct__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Bossb:
 /* 80249EBC 00245CFC  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80249EC0 00245D00  7C 08 02 A6 */	mflr r0
 /* 80249EC4 00245D04  90 01 00 54 */	stw r0, 0x54(r1)
@@ -56,41 +56,41 @@ lbl_80249EBC:
 /* 80249ECC 00245D0C  4B DB D4 79 */	bl lbl_80007344
 /* 80249ED0 00245D10  7C 7D 1B 78 */	mr r29, r3
 /* 80249ED4 00245D14  7C BE 2B 78 */	mr r30, r5
-/* 80249ED8 00245D18  4B FE A6 09 */	bl lbl_802344E0
-/* 80249EDC 00245D1C  3C 60 80 46 */	lis r3, lbl_80466EE0@ha
-/* 80249EE0 00245D20  38 03 6E E0 */	addi r0, r3, lbl_80466EE0@l
+/* 80249ED8 00245D18  4B FE A6 09 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
+/* 80249EDC 00245D1C  3C 60 80 46 */	lis r3, __vt__Q53scn4step4boss10creditmeta10StateGlide@ha
+/* 80249EE0 00245D20  38 03 6E E0 */	addi r0, r3, __vt__Q53scn4step4boss10creditmeta10StateGlide@l
 /* 80249EE4 00245D24  90 1D 00 00 */	stw r0, 0x0(r29)
 /* 80249EE8 00245D28  38 00 00 00 */	li r0, 0x0
 /* 80249EEC 00245D2C  98 1D 00 08 */	stb r0, 0x8(r29)
-/* 80249EF0 00245D30  C0 02 A7 18 */	lfs f0, lbl_80560698@sda21(r2)
+/* 80249EF0 00245D30  C0 02 A7 18 */	lfs f0, "@55695_80560698"@sda21(r2)
 /* 80249EF4 00245D34  D0 1D 00 0C */	stfs f0, 0xc(r29)
 /* 80249EF8 00245D38  D0 1D 00 10 */	stfs f0, 0x10(r29)
 /* 80249EFC 00245D3C  90 1D 00 14 */	stw r0, 0x14(r29)
 /* 80249F00 00245D40  7F A3 EB 78 */	mr r3, r29
-/* 80249F04 00245D44  4B EB 68 DD */	bl lbl_801007E0
-/* 80249F08 00245D48  4B FE 30 09 */	bl lbl_8022CF10
-/* 80249F0C 00245D4C  4B FE 9D 75 */	bl lbl_80233C80
+/* 80249F04 00245D44  4B EB 68 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249F08 00245D48  4B FE 30 09 */	bl param__Q43scn4step4boss4BossCFv
+/* 80249F0C 00245D4C  4B FE 9D 75 */	bl creditmeta__Q43scn4step4boss5ParamCFv
 /* 80249F10 00245D50  7C 7F 1B 78 */	mr r31, r3
 /* 80249F14 00245D54  7F A3 EB 78 */	mr r3, r29
-/* 80249F18 00245D58  4B EB 68 C9 */	bl lbl_801007E0
-/* 80249F1C 00245D5C  4B FE 30 1D */	bl lbl_8022CF38
+/* 80249F18 00245D58  4B EB 68 C9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249F1C 00245D5C  4B FE 30 1D */	bl model__Q43scn4step4boss4BossFv
 /* 80249F20 00245D60  38 80 00 07 */	li r4, 0x7
-/* 80249F24 00245D64  48 02 73 59 */	bl lbl_8027127C
+/* 80249F24 00245D64  48 02 73 59 */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 80249F28 00245D68  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80249F2C 00245D6C  41 82 00 A4 */	beq lbl_80249FD0
 /* 80249F30 00245D70  7F A3 EB 78 */	mr r3, r29
-/* 80249F34 00245D74  4B EB 68 AD */	bl lbl_801007E0
-/* 80249F38 00245D78  4B E2 B7 F9 */	bl lbl_80075730
-/* 80249F3C 00245D7C  4B FD 6C 4D */	bl lbl_80220B88
+/* 80249F34 00245D74  4B EB 68 AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249F38 00245D78  4B E2 B7 F9 */	bl GKI_getfirst
+/* 80249F3C 00245D7C  4B FD 6C 4D */	bl mainCamera__Q33scn4step9ComponentCFv
 /* 80249F40 00245D80  7C 64 1B 78 */	mr r4, r3
 /* 80249F44 00245D84  38 61 00 28 */	addi r3, r1, 0x28
-/* 80249F48 00245D88  48 01 C1 FD */	bl lbl_80266144
+/* 80249F48 00245D88  48 01 C1 FD */	bl getViewRect__Q43scn4step6camera10MainCameraCFv
 /* 80249F4C 00245D8C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80249F50 00245D90  38 81 00 28 */	addi r4, r1, 0x28
-/* 80249F54 00245D94  4B F5 5F 21 */	bl lbl_8019FE74
+/* 80249F54 00245D94  4B F5 5F 21 */	bl getCenter__Q33hel3geo4RectCFv
 /* 80249F58 00245D98  38 61 00 1C */	addi r3, r1, 0x1c
 /* 80249F5C 00245D9C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80249F60 00245DA0  4B F5 54 FD */	bl lbl_8019F45C
+/* 80249F60 00245DA0  4B F5 54 FD */	bl toVector3__Q33hel4math7Vector2CFv
 /* 80249F64 00245DA4  C0 21 00 34 */	lfs f1, 0x34(r1)
 /* 80249F68 00245DA8  D0 21 00 1C */	stfs f1, 0x1c(r1)
 /* 80249F6C 00245DAC  80 7F 00 1C */	lwz r3, 0x1c(r31)
@@ -111,28 +111,28 @@ lbl_80249EBC:
 /* 80249FA8 00245DE8  EC 01 00 2A */	fadds f0, f1, f0
 /* 80249FAC 00245DEC  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 80249FB0 00245DF0  7F A3 EB 78 */	mr r3, r29
-/* 80249FB4 00245DF4  4B EB 68 2D */	bl lbl_801007E0
-/* 80249FB8 00245DF8  4B FE 2F 71 */	bl lbl_8022CF28
+/* 80249FB4 00245DF4  4B EB 68 2D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249FB8 00245DF8  4B FE 2F 71 */	bl location__Q43scn4step4boss4BossCFv
 /* 80249FBC 00245DFC  38 81 00 1C */	addi r4, r1, 0x1c
-/* 80249FC0 00245E00  48 02 56 FD */	bl lbl_8026F6BC
+/* 80249FC0 00245E00  48 02 56 FD */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
 /* 80249FC4 00245E04  38 61 00 28 */	addi r3, r1, 0x28
 /* 80249FC8 00245E08  38 80 FF FF */	li r4, -0x1
-/* 80249FCC 00245E0C  4B F5 5E 71 */	bl lbl_8019FE3C
+/* 80249FCC 00245E0C  4B F5 5E 71 */	bl __dt__Q33hel3geo4RectFv
 .global lbl_80249FD0
 lbl_80249FD0:
 /* 80249FD0 00245E10  7F A3 EB 78 */	mr r3, r29
-/* 80249FD4 00245E14  4B EB 68 0D */	bl lbl_801007E0
-/* 80249FD8 00245E18  4B FE 2F 41 */	bl lbl_8022CF18
+/* 80249FD4 00245E14  4B EB 68 0D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249FD8 00245E18  4B FE 2F 41 */	bl target__Q43scn4step4boss4BossFv
 /* 80249FDC 00245E1C  38 80 00 00 */	li r4, 0x0
-/* 80249FE0 00245E20  4B F4 E6 A1 */	bl lbl_80198680
+/* 80249FE0 00245E20  4B F4 E6 A1 */	bl "__ct__25mint_wrapNative_helper<b>Fb"
 /* 80249FE4 00245E24  C0 1F 00 28 */	lfs f0, 0x28(r31)
 /* 80249FE8 00245E28  D0 1D 00 0C */	stfs f0, 0xc(r29)
 /* 80249FEC 00245E2C  C0 1F 00 2C */	lfs f0, 0x2c(r31)
 /* 80249FF0 00245E30  D0 1D 00 10 */	stfs f0, 0x10(r29)
 /* 80249FF4 00245E34  7F A3 EB 78 */	mr r3, r29
-/* 80249FF8 00245E38  4B EB 67 E9 */	bl lbl_801007E0
-/* 80249FFC 00245E3C  4B FE 2F 25 */	bl lbl_8022CF20
-/* 8024A000 00245E40  4B F3 D5 39 */	bl lbl_80187538
+/* 80249FF8 00245E38  4B EB 67 E9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80249FFC 00245E3C  4B FE 2F 25 */	bl footState__Q43scn4step4boss4BossFv
+/* 8024A000 00245E40  4B F3 D5 39 */	bl __ct__Q24file8DNOptionFv
 /* 8024A004 00245E44  7F A3 EB 78 */	mr r3, r29
 /* 8024A008 00245E48  39 61 00 50 */	addi r11, r1, 0x50
 /* 8024A00C 00245E4C  4B DB D3 85 */	bl lbl_80007390
@@ -141,21 +141,21 @@ lbl_80249FD0:
 /* 8024A018 00245E58  38 21 00 50 */	addi r1, r1, 0x50
 /* 8024A01C 00245E5C  4E 80 00 20 */	blr
 
-.global lbl_8024A020
-lbl_8024A020:
-/* 8024A020 00245E60  4B FE DE 34 */	b lbl_80237E54
+.global __dt__Q53scn4step4boss10creditmeta10StateGlideFv
+__dt__Q53scn4step4boss10creditmeta10StateGlideFv:
+/* 8024A020 00245E60  4B FE DE 34 */	b __dt__Q53scn4step4boss7bonkers9StateBombFv
 
-.global lbl_8024A024
-lbl_8024A024:
+.global procAnim__Q53scn4step4boss10creditmeta10StateGlideFv
+procAnim__Q53scn4step4boss10creditmeta10StateGlideFv:
 /* 8024A024 00245E64  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8024A028 00245E68  7C 08 02 A6 */	mflr r0
 /* 8024A02C 00245E6C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8024A030 00245E70  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8024A034 00245E74  7C 7F 1B 78 */	mr r31, r3
-/* 8024A038 00245E78  4B EB 67 A9 */	bl lbl_801007E0
-/* 8024A03C 00245E7C  4B FE 2F 05 */	bl lbl_8022CF40
+/* 8024A038 00245E78  4B EB 67 A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A03C 00245E7C  4B FE 2F 05 */	bl scriptTrigger__Q43scn4step4boss4BossFv
 /* 8024A040 00245E80  38 80 00 00 */	li r4, 0x0
-/* 8024A044 00245E84  48 02 8A 61 */	bl lbl_80272AA4
+/* 8024A044 00245E84  48 02 8A 61 */	bl get__Q43scn4step5chara13ScriptTriggerFUl
 /* 8024A048 00245E88  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024A04C 00245E8C  41 82 00 0C */	beq lbl_8024A058
 /* 8024A050 00245E90  38 00 00 01 */	li r0, 0x1
@@ -163,10 +163,10 @@ lbl_8024A024:
 .global lbl_8024A058
 lbl_8024A058:
 /* 8024A058 00245E98  7F E3 FB 78 */	mr r3, r31
-/* 8024A05C 00245E9C  4B EB 67 85 */	bl lbl_801007E0
-/* 8024A060 00245EA0  4B FE 2E E1 */	bl lbl_8022CF40
+/* 8024A05C 00245E9C  4B EB 67 85 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A060 00245EA0  4B FE 2E E1 */	bl scriptTrigger__Q43scn4step4boss4BossFv
 /* 8024A064 00245EA4  38 80 00 01 */	li r4, 0x1
-/* 8024A068 00245EA8  48 02 8A 3D */	bl lbl_80272AA4
+/* 8024A068 00245EA8  48 02 8A 3D */	bl get__Q43scn4step5chara13ScriptTriggerFUl
 /* 8024A06C 00245EAC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024A070 00245EB0  41 82 00 0C */	beq lbl_8024A07C
 /* 8024A074 00245EB4  38 00 00 00 */	li r0, 0x0
@@ -174,10 +174,10 @@ lbl_8024A058:
 .global lbl_8024A07C
 lbl_8024A07C:
 /* 8024A07C 00245EBC  7F E3 FB 78 */	mr r3, r31
-/* 8024A080 00245EC0  48 00 02 95 */	bl lbl_8024A314
+/* 8024A080 00245EC0  48 00 02 95 */	bl updateRotate__Q53scn4step4boss10creditmeta10StateGlideFv
 /* 8024A084 00245EC4  7F E3 FB 78 */	mr r3, r31
-/* 8024A088 00245EC8  4B EB 67 59 */	bl lbl_801007E0
-/* 8024A08C 00245ECC  48 00 0E 89 */	bl lbl_8024AF14
+/* 8024A088 00245EC8  4B EB 67 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A08C 00245ECC  48 00 0E 89 */	bl TryToChangeState__Q53scn4step4boss10creditmeta16StateShuttleLoopFPQ43scn4step4boss4Boss
 /* 8024A090 00245ED0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024A094 00245ED4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024A098 00245ED8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -185,20 +185,20 @@ lbl_8024A07C:
 /* 8024A0A0 00245EE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8024A0A4 00245EE4  4E 80 00 20 */	blr
 
-.global lbl_8024A0A8
-lbl_8024A0A8:
+.global procMove__Q53scn4step4boss10creditmeta10StateGlideFv
+procMove__Q53scn4step4boss10creditmeta10StateGlideFv:
 /* 8024A0A8 00245EE8  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8024A0AC 00245EEC  7C 08 02 A6 */	mflr r0
 /* 8024A0B0 00245EF0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8024A0B4 00245EF4  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 8024A0B8 00245EF8  93 C1 00 38 */	stw r30, 0x38(r1)
 /* 8024A0BC 00245EFC  7C 7E 1B 78 */	mr r30, r3
-/* 8024A0C0 00245F00  4B EB 67 21 */	bl lbl_801007E0
-/* 8024A0C4 00245F04  4B FE 2E 4D */	bl lbl_8022CF10
-/* 8024A0C8 00245F08  4B FE 9B B9 */	bl lbl_80233C80
+/* 8024A0C0 00245F00  4B EB 67 21 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A0C4 00245F04  4B FE 2E 4D */	bl param__Q43scn4step4boss4BossCFv
+/* 8024A0C8 00245F08  4B FE 9B B9 */	bl creditmeta__Q43scn4step4boss5ParamCFv
 /* 8024A0CC 00245F0C  7C 7F 1B 78 */	mr r31, r3
-/* 8024A0D0 00245F10  3C 60 80 54 */	lis r3, lbl_805452E8@ha
-/* 8024A0D4 00245F14  38 83 52 E8 */	addi r4, r3, lbl_805452E8@l
+/* 8024A0D0 00245F10  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 8024A0D4 00245F14  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
 /* 8024A0D8 00245F18  80 64 00 00 */	lwz r3, 0x0(r4)
 /* 8024A0DC 00245F1C  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 8024A0E0 00245F20  90 61 00 24 */	stw r3, 0x24(r1)
@@ -207,19 +207,19 @@ lbl_8024A0A8:
 /* 8024A0EC 00245F2C  90 01 00 2C */	stw r0, 0x2c(r1)
 /* 8024A0F0 00245F30  38 61 00 24 */	addi r3, r1, 0x24
 /* 8024A0F4 00245F34  38 80 00 02 */	li r4, 0x2
-/* 8024A0F8 00245F38  C0 22 A7 1C */	lfs f1, lbl_8056069C@sda21(r2)
+/* 8024A0F8 00245F38  C0 22 A7 1C */	lfs f1, "@55723_8056069C"@sda21(r2)
 /* 8024A0FC 00245F3C  C0 1E 00 0C */	lfs f0, 0xc(r30)
 /* 8024A100 00245F40  EC 21 00 32 */	fmuls f1, f1, f0
-/* 8024A104 00245F44  4B F5 58 41 */	bl lbl_8019F944
+/* 8024A104 00245F44  4B F5 58 41 */	bl rotate__Q33hel4math7Vector3FQ43hel4math7Vector38AxisKindf
 /* 8024A108 00245F48  7F C3 F3 78 */	mr r3, r30
-/* 8024A10C 00245F4C  4B EB 66 D5 */	bl lbl_801007E0
-/* 8024A110 00245F50  4B FE 2E 09 */	bl lbl_8022CF18
-/* 8024A114 00245F54  4B F5 1F 8D */	bl lbl_8019C0A0
+/* 8024A10C 00245F4C  4B EB 66 D5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A110 00245F50  4B FE 2E 09 */	bl target__Q43scn4step4boss4BossFv
+/* 8024A114 00245F54  4B F5 1F 8D */	bl getSign__Q24gobj6TargetCFv
 /* 8024A118 00245F58  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 8024A11C 00245F5C  EC 00 00 72 */	fmuls f0, f0, f1
 /* 8024A120 00245F60  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 8024A124 00245F64  C0 5E 00 0C */	lfs f2, 0xc(r30)
-/* 8024A128 00245F68  C0 02 A7 18 */	lfs f0, lbl_80560698@sda21(r2)
+/* 8024A128 00245F68  C0 02 A7 18 */	lfs f0, "@55695_80560698"@sda21(r2)
 /* 8024A12C 00245F6C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8024A130 00245F70  40 81 00 18 */	ble lbl_8024A148
 /* 8024A134 00245F74  C0 3F 00 48 */	lfs f1, 0x48(r31)
@@ -242,7 +242,7 @@ lbl_8024A158:
 /* 8024A168 00245FA8  48 00 00 18 */	b lbl_8024A180
 .global lbl_8024A16C
 lbl_8024A16C:
-/* 8024A16C 00245FAC  C0 2D AD 08 */	lfs f1, lbl_80559128@sda21(r13)
+/* 8024A16C 00245FAC  C0 2D AD 08 */	lfs f1, "@55202"@sda21(r13)
 /* 8024A170 00245FB0  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8024A174 00245FB4  40 80 00 08 */	bge lbl_8024A17C
 /* 8024A178 00245FB8  48 00 00 08 */	b lbl_8024A180
@@ -275,17 +275,17 @@ lbl_8024A180:
 /* 8024A1D4 00246014  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024A1D8 00246018  90 01 00 20 */	stw r0, 0x20(r1)
 /* 8024A1DC 0024601C  7F C3 F3 78 */	mr r3, r30
-/* 8024A1E0 00246020  4B EB 66 01 */	bl lbl_801007E0
-/* 8024A1E4 00246024  4B FE 2D 4D */	bl lbl_8022CF30
+/* 8024A1E0 00246020  4B EB 66 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A1E4 00246024  4B FE 2D 4D */	bl move__Q43scn4step4boss4BossFv
 /* 8024A1E8 00246028  38 81 00 18 */	addi r4, r1, 0x18
-/* 8024A1EC 0024602C  4B F5 11 8D */	bl lbl_8019B378
-/* 8024A1F0 00246030  4B F5 18 05 */	bl lbl_8019B9F4
+/* 8024A1EC 0024602C  4B F5 11 8D */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
+/* 8024A1F0 00246030  4B F5 18 05 */	bl Zero__Q24gobj14MoveParamDecelFv
 /* 8024A1F4 00246034  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8024A1F8 00246038  7F C3 F3 78 */	mr r3, r30
-/* 8024A1FC 0024603C  4B EB 65 E5 */	bl lbl_801007E0
-/* 8024A200 00246040  4B FE 2D 31 */	bl lbl_8022CF30
+/* 8024A1FC 0024603C  4B EB 65 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A200 00246040  4B FE 2D 31 */	bl move__Q43scn4step4boss4BossFv
 /* 8024A204 00246044  38 81 00 08 */	addi r4, r1, 0x8
-/* 8024A208 00246048  4B F5 12 21 */	bl lbl_8019B428
+/* 8024A208 00246048  4B F5 12 21 */	bl decel__Q24gobj4MoveFRCQ24gobj14MoveParamDecel
 /* 8024A20C 0024604C  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 8024A210 00246050  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 8024A214 00246054  80 01 00 44 */	lwz r0, 0x44(r1)
@@ -293,8 +293,8 @@ lbl_8024A180:
 /* 8024A21C 0024605C  38 21 00 40 */	addi r1, r1, 0x40
 /* 8024A220 00246060  4E 80 00 20 */	blr
 
-.global lbl_8024A224
-lbl_8024A224:
+.global procFixPos__Q53scn4step4boss10creditmeta10StateGlideFv
+procFixPos__Q53scn4step4boss10creditmeta10StateGlideFv:
 /* 8024A224 00246064  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8024A228 00246068  7C 08 02 A6 */	mflr r0
 /* 8024A22C 0024606C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -303,22 +303,22 @@ lbl_8024A224:
 /* 8024A238 00246078  39 61 00 20 */	addi r11, r1, 0x20
 /* 8024A23C 0024607C  4B DB D1 09 */	bl lbl_80007344
 /* 8024A240 00246080  7C 7D 1B 78 */	mr r29, r3
-/* 8024A244 00246084  4B EB 65 9D */	bl lbl_801007E0
-/* 8024A248 00246088  4B FE 2C C9 */	bl lbl_8022CF10
-/* 8024A24C 0024608C  4B FE 9A 35 */	bl lbl_80233C80
+/* 8024A244 00246084  4B EB 65 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A248 00246088  4B FE 2C C9 */	bl param__Q43scn4step4boss4BossCFv
+/* 8024A24C 0024608C  4B FE 9A 35 */	bl creditmeta__Q43scn4step4boss5ParamCFv
 /* 8024A250 00246090  C0 23 00 1C */	lfs f1, 0x1c(r3)
-/* 8024A254 00246094  C0 02 A7 18 */	lfs f0, lbl_80560698@sda21(r2)
+/* 8024A254 00246094  C0 02 A7 18 */	lfs f0, "@55695_80560698"@sda21(r2)
 /* 8024A258 00246098  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8024A25C 0024609C  40 80 00 08 */	bge lbl_8024A264
 /* 8024A260 002460A0  FC 20 08 50 */	fneg f1, f1
 .global lbl_8024A264
 lbl_8024A264:
-/* 8024A264 002460A4  C0 02 A7 20 */	lfs f0, lbl_805606A0@sda21(r2)
+/* 8024A264 002460A4  C0 02 A7 20 */	lfs f0, "@55738"@sda21(r2)
 /* 8024A268 002460A8  EF E0 08 2A */	fadds f31, f0, f1
 /* 8024A26C 002460AC  7F A3 EB 78 */	mr r3, r29
-/* 8024A270 002460B0  4B EB 65 71 */	bl lbl_801007E0
+/* 8024A270 002460B0  4B EB 65 71 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024A274 002460B4  FC 20 F8 90 */	fmr f1, f31
-/* 8024A278 002460B8  4B FE B4 31 */	bl lbl_802356A8
+/* 8024A278 002460B8  4B FE B4 31 */	bl IsInScreen__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Bossf
 /* 8024A27C 002460BC  88 1D 00 08 */	lbz r0, 0x8(r29)
 /* 8024A280 002460C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8024A284 002460C4  40 82 00 18 */	bne lbl_8024A29C
@@ -332,21 +332,21 @@ lbl_8024A29C:
 /* 8024A29C 002460DC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024A2A0 002460E0  40 82 00 50 */	bne lbl_8024A2F0
 /* 8024A2A4 002460E4  7F A3 EB 78 */	mr r3, r29
-/* 8024A2A8 002460E8  4B EB 65 39 */	bl lbl_801007E0
+/* 8024A2A8 002460E8  4B EB 65 39 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024A2AC 002460EC  7C 7E 1B 78 */	mr r30, r3
 /* 8024A2B0 002460F0  7F A3 EB 78 */	mr r3, r29
-/* 8024A2B4 002460F4  4B EB 65 2D */	bl lbl_801007E0
-/* 8024A2B8 002460F8  4B FE 2D 61 */	bl lbl_8022D018
+/* 8024A2B4 002460F4  4B EB 65 2D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A2B8 002460F8  4B FE 2D 61 */	bl stateChanger__Q43scn4step4boss4BossFv
 /* 8024A2BC 002460FC  7C 7F 1B 78 */	mr r31, r3
-/* 8024A2C0 00246100  48 1B BC 41 */	bl lbl_80405F00
+/* 8024A2C0 00246100  48 1B BC 41 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 8024A2C4 00246104  3B BF 00 10 */	addi r29, r31, 0x10
 /* 8024A2C8 00246108  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8024A2CC 0024610C  41 82 00 20 */	beq lbl_8024A2EC
 /* 8024A2D0 00246110  7F A3 EB 78 */	mr r3, r29
 /* 8024A2D4 00246114  38 9F 00 90 */	addi r4, r31, 0x90
-/* 8024A2D8 00246118  4B FE C5 91 */	bl lbl_80236868
-/* 8024A2DC 0024611C  3C 60 80 46 */	lis r3, lbl_80466C20@ha
-/* 8024A2E0 00246120  38 03 6C 20 */	addi r0, r3, lbl_80466C20@l
+/* 8024A2D8 00246118  4B FE C5 91 */	bl "__ct__Q24util28StateFactory<Q24util6IState>FPv"
+/* 8024A2DC 0024611C  3C 60 80 46 */	lis r3, "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta9StateHide,PQ43scn4step4boss4Boss>"@ha
+/* 8024A2E0 00246120  38 03 6C 20 */	addi r0, r3, "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta9StateHide,PQ43scn4step4boss4Boss>"@l
 /* 8024A2E4 00246124  90 1D 00 00 */	stw r0, 0x0(r29)
 /* 8024A2E8 00246128  93 DD 00 08 */	stw r30, 0x8(r29)
 .global lbl_8024A2EC
@@ -363,8 +363,8 @@ lbl_8024A2F0:
 /* 8024A308 00246148  7C 08 03 A6 */	mtlr r0
 /* 8024A30C 0024614C  38 21 00 30 */	addi r1, r1, 0x30
 /* 8024A310 00246150  4E 80 00 20 */	blr
-.global lbl_8024A314
-lbl_8024A314:
+.global updateRotate__Q53scn4step4boss10creditmeta10StateGlideFv
+updateRotate__Q53scn4step4boss10creditmeta10StateGlideFv:
 /* 8024A314 00246154  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8024A318 00246158  7C 08 02 A6 */	mflr r0
 /* 8024A31C 0024615C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -372,9 +372,9 @@ lbl_8024A314:
 /* 8024A324 00246164  F3 E1 00 18 */	psq_st f31, 0x18(r1), 0, qr0
 /* 8024A328 00246168  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8024A32C 0024616C  7C 7F 1B 78 */	mr r31, r3
-/* 8024A330 00246170  4B EB 64 B1 */	bl lbl_801007E0
-/* 8024A334 00246174  4B FE 2B DD */	bl lbl_8022CF10
-/* 8024A338 00246178  4B FE 99 49 */	bl lbl_80233C80
+/* 8024A330 00246170  4B EB 64 B1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A334 00246174  4B FE 2B DD */	bl param__Q43scn4step4boss4BossCFv
+/* 8024A338 00246178  4B FE 99 49 */	bl creditmeta__Q43scn4step4boss5ParamCFv
 /* 8024A33C 0024617C  80 1F 00 14 */	lwz r0, 0x14(r31)
 /* 8024A340 00246180  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8024A344 00246184  41 82 00 18 */	beq lbl_8024A35C
@@ -430,17 +430,17 @@ lbl_8024A3C4:
 .global lbl_8024A3E4
 lbl_8024A3E4:
 /* 8024A3E4 00246224  7F E3 FB 78 */	mr r3, r31
-/* 8024A3E8 00246228  4B EB 63 F9 */	bl lbl_801007E0
-/* 8024A3EC 0024622C  4B FE 2B 2D */	bl lbl_8022CF18
-/* 8024A3F0 00246230  4B F5 1C B1 */	bl lbl_8019C0A0
+/* 8024A3E8 00246228  4B EB 63 F9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A3EC 0024622C  4B FE 2B 2D */	bl target__Q43scn4step4boss4BossFv
+/* 8024A3F0 00246230  4B F5 1C B1 */	bl getSign__Q24gobj6TargetCFv
 /* 8024A3F4 00246234  C0 1F 00 0C */	lfs f0, 0xc(r31)
 /* 8024A3F8 00246238  EF E0 00 72 */	fmuls f31, f0, f1
 /* 8024A3FC 0024623C  7F E3 FB 78 */	mr r3, r31
-/* 8024A400 00246240  4B EB 63 E1 */	bl lbl_801007E0
-/* 8024A404 00246244  4B FE 2B 35 */	bl lbl_8022CF38
-/* 8024A408 00246248  48 01 BE 05 */	bl lbl_8026620C
+/* 8024A400 00246240  4B EB 63 E1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024A404 00246244  4B FE 2B 35 */	bl model__Q43scn4step4boss4BossFv
+/* 8024A408 00246248  48 01 BE 05 */	bl getOffset__Q43scn4step6camera10MainCameraCFv
 /* 8024A40C 0024624C  FC 20 F8 90 */	fmr f1, f31
-/* 8024A410 00246250  4B E8 A0 01 */	bl lbl_800D4410
+/* 8024A410 00246250  4B E8 A0 01 */	bl SetUpdateRate__Q34nw4r3g3d12AnmObjVisResFf
 /* 8024A414 00246254  38 00 00 18 */	li r0, 0x18
 /* 8024A418 00246258  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8024A41C 0024625C  CB E1 00 10 */	lfd f31, 0x10(r1)
@@ -450,17 +450,17 @@ lbl_8024A3E4:
 /* 8024A42C 0024626C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8024A430 00246270  4E 80 00 20 */	blr
 
-.global lbl_8024A434
-lbl_8024A434:
+.global "create__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>Fv"
+"create__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>Fv":
 /* 8024A434 00246274  7C 65 1B 78 */	mr r5, r3
 /* 8024A438 00246278  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8024A43C 0024627C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024A440 00246280  4D 82 00 20 */	beqlr
 /* 8024A444 00246284  80 85 00 08 */	lwz r4, 0x8(r5)
 /* 8024A448 00246288  88 A5 00 0C */	lbz r5, 0xc(r5)
-/* 8024A44C 0024628C  4B FF FA 70 */	b lbl_80249EBC
+/* 8024A44C 0024628C  4B FF FA 70 */	b __ct__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Bossb
 /* 8024A450 00246290  4E 80 00 20 */	blr
 
-.global lbl_8024A454
-lbl_8024A454:
-/* 8024A454 00246294  4B FE 42 4C */	b lbl_8022E6A0
+.global "__dt__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>Fv"
+"__dt__Q24util98StateFactoryArg2<Q24util6IState,Q53scn4step4boss10creditmeta10StateGlide,PQ43scn4step4boss4Boss,b>Fv":
+/* 8024A454 00246294  4B FE 42 4C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"

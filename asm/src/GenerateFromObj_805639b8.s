@@ -1,46 +1,46 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_805639B8
-lbl_805639B8:
+.global "T_ODDSTABLE_ENEMY_1__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDSTABLE_ENEMY_1__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0x00000011
-	.4byte lbl_80420208
+	.4byte "T_ODDS_ENEMY_1__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
 
-.global lbl_805639C0
-lbl_805639C0:
+.global "T_ODDSTABLE_ENEMY_2__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDSTABLE_ENEMY_2__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0x0000000D
-	.4byte lbl_8042024C
+	.4byte "T_ODDS_ENEMY_2__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
 
-.global lbl_805639C8
-lbl_805639C8:
+.global "T_ODDSTABLE_ENEMY_3__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDSTABLE_ENEMY_3__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0x00000005
-	.4byte lbl_80420280
+	.4byte "T_ODDS_ENEMY_3__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
 
-.global lbl_805639D0
-lbl_805639D0:
+.global "@54118_805639D0"
+"@54118_805639D0":
 
 	.4byte 0x3E99999A
 
-.global lbl_805639D4
-lbl_805639D4:
+.global "@54119"
+"@54119":
 
 	.4byte 0x3F19999A
 
-.global lbl_805639D8
-lbl_805639D8:
+.global "@54139"
+"@54139":
 
 	.4byte 0
 
-.global lbl_805639DC
-lbl_805639DC:
+.global "@54140"
+"@54140":
 
 	.4byte 0x3F800000
 
-.global lbl_805639E0
-lbl_805639E0:
+.global "@54143"
+"@54143":
 
 	.4byte 0x43300000
 	.4byte 0

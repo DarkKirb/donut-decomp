@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804957B0
-lbl_804957B0:
+.global "@51882_804957B0"
+"@51882_804957B0":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E5F
@@ -11,16 +11,16 @@ lbl_804957B0:
 	.4byte 0x65000000
 	.4byte 0
 
-.global lbl_804957C8
-lbl_804957C8:
+.global "@51883"
+"@51883":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E5F
 	.4byte 0x48697374
 	.4byte 0x6F727900
 
-.global lbl_804957D8
-lbl_804957D8:
+.global "@51884"
+"@51884":
 
 	.4byte 0x4578706C
 	.4byte 0x61696E5F
@@ -28,16 +28,16 @@ lbl_804957D8:
 	.4byte 0x65637469
 	.4byte 0x6F6E0000
 
-.global lbl_804957EC
-lbl_804957EC:
+.global "@51888_804957EC"
+"@51888_804957EC":
 
 	.4byte 0x4B697262
 	.4byte 0x79447265
 	.4byte 0x616D4C61
 	.4byte 0x6E640000
 
-.global lbl_804957FC
-lbl_804957FC:
+.global "@51889"
+"@51889":
 
 	.4byte 0x4B697262
 	.4byte 0x79534458
@@ -50,67 +50,67 @@ lbl_804957FC:
 	.4byte 0x616E6174
 	.4byte 0x696F6E00
 
-.global lbl_80495824
-lbl_80495824:
+.global "@52786_80495824"
+"@52786_80495824":
 
 	.4byte 0x6578706C
 	.4byte 0x616E6174
 	.4byte 0x696F6E4C
 	.4byte 0x54000000
 
-.global lbl_80495834
-lbl_80495834:
+.global "@52788_80495834"
+"@52788_80495834":
 
 	.4byte 0x6578706C
 	.4byte 0x616E6174
 	.4byte 0x696F6E43
 	.4byte 0x54000000
 
-.global lbl_80495844
-lbl_80495844:
+.global "@52211_80495844"
+"@52211_80495844":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F6D6300
 
-.global lbl_80495850
-lbl_80495850:
+.global "@52212_80495850"
+"@52212_80495850":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F746C00
 
-.global lbl_8049585C
-lbl_8049585C:
+.global "@52213"
+"@52213":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F766300
 
-.global lbl_80495868
-lbl_80495868:
+.global "@52214"
+"@52214":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F676200
 
-.global lbl_80495874
-lbl_80495874:
+.global "@52215_80495874"
+"@52215_80495874":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F666300
 
-.global lbl_80495880
-lbl_80495880:
+.global "@52216"
+"@52216":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172
 	.4byte 0x5F736663
 	.4byte 0
 
-.global lbl_80495890
-lbl_80495890:
+.global "@52217"
+"@52217":
 
 	.4byte 0x49636F6E
 	.4byte 0x73746172

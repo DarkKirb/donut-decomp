@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045A1C0
-lbl_8045A1C0:
+.global "@54029_8045A1C0"
+"@54029_8045A1C0":
 
 	.4byte 0x48454C2E
 	.4byte 0x4D617468
@@ -144,103 +144,103 @@ lbl_8045A1C0:
 	.4byte 0x6F6E7374
 	.4byte 0
 
-.global lbl_8045A3EC
-lbl_8045A3EC:
+.global "@54048"
+"@54048":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F46C
+	.4byte toVector3XOY__Q33hel4math7Vector2CFv
 
-.global lbl_8045A3F8
-lbl_8045A3F8:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F45C
-
-.global lbl_8045A404
-lbl_8045A404:
+.global "@54109"
+"@54109":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801C1BB4
+	.4byte toVector3__Q33hel4math7Vector2CFv
 
-.global lbl_8045A410
-lbl_8045A410:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F3B4
-
-.global lbl_8045A41C
-lbl_8045A41C:
+.global "@54114_8045A404"
+"@54114_8045A404":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801A01FC
+	.4byte __dv__Q33hel4math7Vector2CFf
 
-.global lbl_8045A428
-lbl_8045A428:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801A0590
-
-.global lbl_8045A434
-lbl_8045A434:
+.global "@54145"
+"@54145":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F0F8
+	.4byte __ml__Q33hel4math7Vector2CFf
 
-.global lbl_8045A440
-lbl_8045A440:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F000
-
-.global lbl_8045A44C
-lbl_8045A44C:
+.global "@54153"
+"@54153":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F48C
+	.4byte __mi__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 
-.global lbl_8045A458
-lbl_8045A458:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F438
-
-.global lbl_8045A464
-lbl_8045A464:
+.global "@54175"
+"@54175":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801B8E30
+	.4byte __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 
-.global lbl_8045A470
-lbl_8045A470:
-
-	.4byte 0
-	.4byte 0xFFFFFFFF
-	.4byte lbl_801A08C0
-
-.global lbl_8045A47C
-lbl_8045A47C:
+.global "@54187_8045A434"
+"@54187_8045A434":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_801B58AC
+	.4byte __adv__Q33hel4math7Vector2Ff
 
-.global lbl_8045A488
-lbl_8045A488:
+.global "@54195"
+"@54195":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8019F3A8
+	.4byte __amu__Q33hel4math7Vector2Ff
+
+.global "@54200"
+"@54200":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __ami__Q33hel4math7Vector2FRCQ33hel4math7Vector2
+
+.global "@54208"
+"@54208":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
+
+.global "@54213"
+"@54213":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZero__Q33hel4math7Vector2CFv
+
+.global "@54239"
+"@54239":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZeroStrict__Q33hel4math7Vector2CFv
+
+.global "@54244"
+"@54244":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isZeroLoose__Q33hel4math7Vector2CFf
+
+.global "@54265"
+"@54265":
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte set__Q33hel4math7Vector2Fff
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

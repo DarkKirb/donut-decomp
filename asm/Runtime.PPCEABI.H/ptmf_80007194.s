@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80007194
-lbl_80007194:
+.global __ptmf_test
+__ptmf_test:
 /* 80007194 00002FD4  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 80007198 00002FD8  80 C3 00 04 */	lwz r6, 0x4(r3)
 /* 8000719C 00002FDC  80 E3 00 08 */	lwz r7, 0x8(r3)
@@ -15,8 +15,8 @@ lbl_80007194:
 /* 800071B8 00002FF8  4C 9E 00 20 */	bnelr cr7
 /* 800071BC 00002FFC  38 60 00 00 */	li r3, 0x0
 /* 800071C0 00003000  4E 80 00 20 */	blr
-.global lbl_800071C4
-lbl_800071C4:
+.global __ptmf_scall
+__ptmf_scall:
 /* 800071C4 00003004  80 0C 00 00 */	lwz r0, 0x0(r12)
 /* 800071C8 00003008  81 6C 00 04 */	lwz r11, 0x4(r12)
 /* 800071CC 0000300C  81 8C 00 08 */	lwz r12, 0x8(r12)
@@ -29,8 +29,8 @@ lbl_800071C4:
 lbl_800071E4:
 /* 800071E4 00003024  7D 89 03 A6 */	mtctr r12
 /* 800071E8 00003028  4E 80 04 20 */	bctr
-.global lbl_800071EC
-lbl_800071EC:
+.global __ptmf_scall4
+__ptmf_scall4:
 /* 800071EC 0000302C  80 0C 00 00 */	lwz r0, 0x0(r12)
 /* 800071F0 00003030  81 6C 00 04 */	lwz r11, 0x4(r12)
 /* 800071F4 00003034  81 8C 00 08 */	lwz r12, 0x8(r12)

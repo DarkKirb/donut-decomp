@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80278514
-lbl_80278514:
+.global __ct__Q43scn4step4core12SceneChangerFRQ33scn4step9Component
+__ct__Q43scn4step4core12SceneChangerFRQ33scn4step9Component:
 /* 80278514 00274354  94 21 FB 30 */	stwu r1, -0x4d0(r1)
 /* 80278518 00274358  7C 08 02 A6 */	mflr r0
 /* 8027851C 0027435C  90 01 04 D4 */	stw r0, 0x4d4(r1)
@@ -23,17 +23,17 @@ lbl_80278544:
 /* 80278550 00274390  90 85 00 04 */	stw r4, 0x4(r5)
 /* 80278554 00274394  38 63 00 04 */	addi r3, r3, 0x4
 /* 80278558 00274398  38 81 00 08 */	addi r4, r1, 0x8
-/* 8027855C 0027439C  4B FF E6 41 */	bl lbl_80276B9C
+/* 8027855C 0027439C  4B FF E6 41 */	bl __ct__Q33scn4step6ResultFRCQ33scn4step6Result
 /* 80278560 002743A0  38 00 00 00 */	li r0, 0x0
 /* 80278564 002743A4  98 1E 04 C0 */	stb r0, 0x4c0(r30)
 /* 80278568 002743A8  7F E3 FB 78 */	mr r3, r31
-/* 8027856C 002743AC  4B EF DE 55 */	bl lbl_801763C0
+/* 8027856C 002743AC  4B EF DE 55 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278570 002743B0  80 63 04 9C */	lwz r3, 0x49c(r3)
-/* 80278574 002743B4  48 15 20 41 */	bl lbl_803CA5B4
+/* 80278574 002743B4  48 15 20 41 */	bl IsChallengeStageWithoutAbilityMap__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
 /* 80278578 002743B8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8027857C 002743BC  41 82 00 14 */	beq lbl_80278590
 /* 80278580 002743C0  7F E3 FB 78 */	mr r3, r31
-/* 80278584 002743C4  4B EF DE 3D */	bl lbl_801763C0
+/* 80278584 002743C4  4B EF DE 3D */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278588 002743C8  88 03 04 08 */	lbz r0, 0x408(r3)
 /* 8027858C 002743CC  98 1E 04 10 */	stb r0, 0x410(r30)
 .global lbl_80278590
@@ -45,16 +45,16 @@ lbl_80278590:
 /* 802785A0 002743E0  7C 08 03 A6 */	mtlr r0
 /* 802785A4 002743E4  38 21 04 D0 */	addi r1, r1, 0x4d0
 /* 802785A8 002743E8  4E 80 00 20 */	blr
-.global lbl_802785AC
-lbl_802785AC:
+.global isSceneEnd__Q43scn4step4core12SceneChangerCFv
+isSceneEnd__Q43scn4step4core12SceneChangerCFv:
 /* 802785AC 002743EC  88 63 04 C0 */	lbz r3, 0x4c0(r3)
 /* 802785B0 002743F0  4E 80 00 20 */	blr
-.global lbl_802785B4
-lbl_802785B4:
+.global result__Q43scn4step4core12SceneChangerCFv
+result__Q43scn4step4core12SceneChangerCFv:
 /* 802785B4 002743F4  38 84 00 04 */	addi r4, r4, 0x4
-/* 802785B8 002743F8  4B FF E5 E4 */	b lbl_80276B9C
-.global lbl_802785BC
-lbl_802785BC:
+/* 802785B8 002743F8  4B FF E5 E4 */	b __ct__Q33scn4step6ResultFRCQ33scn4step6Result
+.global changeDead__Q43scn4step4core12SceneChangerFb
+changeDead__Q43scn4step4core12SceneChangerFb:
 /* 802785BC 002743FC  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 802785C0 00274400  7C 08 02 A6 */	mflr r0
 /* 802785C4 00274404  90 01 01 24 */	stw r0, 0x124(r1)
@@ -63,42 +63,42 @@ lbl_802785BC:
 /* 802785D0 00274410  7C 7F 1B 78 */	mr r31, r3
 /* 802785D4 00274414  3B A0 00 00 */	li r29, 0x0
 /* 802785D8 00274418  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 802785DC 0027441C  4B EF DD E5 */	bl lbl_801763C0
+/* 802785DC 0027441C  4B EF DD E5 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 802785E0 00274420  83 C3 04 34 */	lwz r30, 0x434(r3)
 /* 802785E4 00274424  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 802785E8 00274428  4B F7 24 09 */	bl lbl_801EA9F0
-/* 802785EC 0027442C  48 15 14 AD */	bl lbl_803C9A98
+/* 802785E8 00274428  4B F7 24 09 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 802785EC 0027442C  48 15 14 AD */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 802785F0 00274430  90 61 00 14 */	stw r3, 0x14(r1)
 /* 802785F4 00274434  38 61 00 14 */	addi r3, r1, 0x14
-/* 802785F8 00274438  48 15 13 D1 */	bl lbl_803C99C8
+/* 802785F8 00274438  48 15 13 D1 */	bl comebackKind__Q43scn4step3map12DataAccessorCFv
 /* 802785FC 0027443C  2C 03 00 01 */	cmpwi r3, 0x1
 /* 80278600 00274440  40 82 00 3C */	bne lbl_8027863C
 /* 80278604 00274444  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278608 00274448  4B F7 23 E9 */	bl lbl_801EA9F0
-/* 8027860C 0027444C  48 15 14 8D */	bl lbl_803C9A98
+/* 80278608 00274448  4B F7 23 E9 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 8027860C 0027444C  48 15 14 8D */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 80278610 00274450  90 61 00 10 */	stw r3, 0x10(r1)
 /* 80278614 00274454  38 61 00 10 */	addi r3, r1, 0x10
-/* 80278618 00274458  48 15 13 D5 */	bl lbl_803C99EC
+/* 80278618 00274458  48 15 13 D5 */	bl comebackStepShift__Q43scn4step3map12DataAccessorCFv
 /* 8027861C 0027445C  7C 7D 1B 78 */	mr r29, r3
 /* 80278620 00274460  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278624 00274464  4B F7 23 CD */	bl lbl_801EA9F0
-/* 80278628 00274468  48 15 14 71 */	bl lbl_803C9A98
+/* 80278624 00274464  4B F7 23 CD */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 80278628 00274468  48 15 14 71 */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 8027862C 0027446C  90 61 00 0C */	stw r3, 0xc(r1)
 /* 80278630 00274470  38 61 00 0C */	addi r3, r1, 0xc
-/* 80278634 00274474  48 15 13 DD */	bl lbl_803C9A10
+/* 80278634 00274474  48 15 13 DD */	bl comebackPortalNo__Q43scn4step3map12DataAccessorCFv
 /* 80278638 00274478  7C 7E 1B 78 */	mr r30, r3
 .global lbl_8027863C
 lbl_8027863C:
 /* 8027863C 0027447C  7F E3 FB 78 */	mr r3, r31
 /* 80278640 00274480  7F A4 EB 78 */	mr r4, r29
 /* 80278644 00274484  7F C5 F3 78 */	mr r5, r30
-/* 80278648 00274488  48 00 0A BD */	bl lbl_80279104
+/* 80278648 00274488  48 00 0A BD */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 8027864C 0027448C  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278650 00274490  4B F7 23 A1 */	bl lbl_801EA9F0
-/* 80278654 00274494  48 15 14 45 */	bl lbl_803C9A98
+/* 80278650 00274490  4B F7 23 A1 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 80278654 00274494  48 15 14 45 */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 80278658 00274498  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8027865C 0027449C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80278660 002744A0  48 15 13 39 */	bl lbl_803C9998
+/* 80278660 002744A0  48 15 13 39 */	bl isEnableSFXMonotone__Q43scn4step3map12DataAccessorCFv
 /* 80278664 002744A4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80278668 002744A8  41 82 00 10 */	beq lbl_80278678
 /* 8027866C 002744AC  38 00 00 07 */	li r0, 0x7
@@ -116,7 +116,7 @@ lbl_80278680:
 /* 8027868C 002744CC  38 61 00 54 */	addi r3, r1, 0x54
 /* 80278690 002744D0  38 9F 04 3C */	addi r4, r31, 0x43c
 /* 80278694 002744D4  38 A0 00 00 */	li r5, 0x0
-/* 80278698 002744D8  48 00 01 61 */	bl lbl_802787F8
+/* 80278698 002744D8  48 00 01 61 */	bl getIndivi__Q33scn4step11ContextHeroCFUl
 /* 8027869C 002744DC  38 A1 00 C8 */	addi r5, r1, 0xc8
 /* 802786A0 002744E0  38 81 00 50 */	addi r4, r1, 0x50
 /* 802786A4 002744E4  7F A9 03 A6 */	mtctr r29
@@ -143,7 +143,7 @@ lbl_802786E0:
 /* 802786E0 00274520  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802786E4 00274524  41 82 00 BC */	beq lbl_802787A0
 /* 802786E8 00274528  38 61 00 18 */	addi r3, r1, 0x18
-/* 802786EC 0027452C  4B FA 8A 61 */	bl lbl_8022114C
+/* 802786EC 0027452C  4B FA 8A 61 */	bl CreateDefault__Q33scn4step17ContextHeroIndiviFv
 /* 802786F0 00274530  38 A1 00 8C */	addi r5, r1, 0x8c
 /* 802786F4 00274534  38 81 00 14 */	addi r4, r1, 0x14
 /* 802786F8 00274538  7F A9 03 A6 */	mtctr r29
@@ -163,7 +163,7 @@ lbl_802786FC:
 /* 80278728 00274568  83 A1 00 D4 */	lwz r29, 0xd4(r1)
 /* 8027872C 0027456C  2C 1C 00 00 */	cmpwi r28, 0x0
 /* 80278730 00274570  41 82 00 2C */	beq lbl_8027875C
-/* 80278734 00274574  48 0C 94 B9 */	bl lbl_80341BEC
+/* 80278734 00274574  48 0C 94 B9 */	bl IsKirby__Q43scn4step4hero10IndiviUtilFQ43scn4step4hero4Kind
 /* 80278738 00274578  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8027873C 0027457C  41 82 00 10 */	beq lbl_8027874C
 /* 80278740 00274580  80 01 00 90 */	lwz r0, 0x90(r1)
@@ -180,9 +180,9 @@ lbl_80278754:
 .global lbl_8027875C
 lbl_8027875C:
 /* 8027875C 0027459C  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278760 002745A0  4B EF DC 61 */	bl lbl_801763C0
+/* 80278760 002745A0  4B EF DC 61 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278764 002745A4  80 63 04 9C */	lwz r3, 0x49c(r3)
-/* 80278768 002745A8  48 15 1D B5 */	bl lbl_803CA51C
+/* 80278768 002745A8  48 15 1D B5 */	bl IsChallengeStage__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
 /* 8027876C 002745AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80278770 002745B0  41 82 00 0C */	beq lbl_8027877C
 /* 80278774 002745B4  93 A1 00 98 */	stw r29, 0x98(r1)
@@ -199,25 +199,25 @@ lbl_80278780:
 /* 80278790 002745D0  38 7F 04 3C */	addi r3, r31, 0x43c
 /* 80278794 002745D4  38 80 00 00 */	li r4, 0x0
 /* 80278798 002745D8  38 A1 00 90 */	addi r5, r1, 0x90
-/* 8027879C 002745DC  48 00 00 95 */	bl lbl_80278830
+/* 8027879C 002745DC  48 00 00 95 */	bl setIndivi__Q33scn4step11ContextHeroFUlRCQ33scn4step17ContextHeroIndivi
 .global lbl_802787A0
 lbl_802787A0:
 /* 802787A0 002745E0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 802787A4 002745E4  4B EF DC 1D */	bl lbl_801763C0
+/* 802787A4 002745E4  4B EF DC 1D */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 802787A8 002745E8  80 63 04 9C */	lwz r3, 0x49c(r3)
-/* 802787AC 002745EC  48 15 1D 71 */	bl lbl_803CA51C
+/* 802787AC 002745EC  48 15 1D 71 */	bl IsChallengeStage__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
 /* 802787B0 002745F0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802787B4 002745F4  40 82 00 0C */	bne lbl_802787C0
 /* 802787B8 002745F8  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 802787BC 002745FC  4B FA 9B 95 */	bl lbl_80222350
+/* 802787BC 002745FC  4B FA 9B 95 */	bl ClearIgnoreObj__Q33scn4step16StorageAccessor2FRQ33scn4step9Component
 .global lbl_802787C0
 lbl_802787C0:
 /* 802787C0 00274600  7F E3 FB 78 */	mr r3, r31
-/* 802787C4 00274604  48 00 0B 15 */	bl lbl_802792D8
+/* 802787C4 00274604  48 00 0B 15 */	bl incBossRetryCount__Q43scn4step4core12SceneChangerFv
 /* 802787C8 00274608  38 00 00 00 */	li r0, 0x0
 /* 802787CC 0027460C  90 1F 02 B0 */	stw r0, 0x2b0(r31)
 /* 802787D0 00274610  7F E3 FB 78 */	mr r3, r31
-/* 802787D4 00274614  48 00 0C F1 */	bl lbl_802794C4
+/* 802787D4 00274614  48 00 0C F1 */	bl incCommanderRetryCount__Q43scn4step4core12SceneChangerFv
 /* 802787D8 00274618  38 00 00 01 */	li r0, 0x1
 /* 802787DC 0027461C  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 802787E0 00274620  39 61 01 20 */	addi r11, r1, 0x120
@@ -226,8 +226,8 @@ lbl_802787C0:
 /* 802787EC 0027462C  7C 08 03 A6 */	mtlr r0
 /* 802787F0 00274630  38 21 01 20 */	addi r1, r1, 0x120
 /* 802787F4 00274634  4E 80 00 20 */	blr
-.global lbl_802787F8
-lbl_802787F8:
+.global getIndivi__Q33scn4step11ContextHeroCFUl
+getIndivi__Q33scn4step11ContextHeroCFUl:
 /* 802787F8 00274638  1C 05 00 3C */	mulli r0, r5, 0x3c
 /* 802787FC 0027463C  7C 84 02 14 */	add r4, r4, r0
 /* 80278800 00274640  38 A3 FF FC */	addi r5, r3, -0x4
@@ -244,8 +244,8 @@ lbl_80278810:
 /* 80278824 00274664  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 80278828 00274668  90 05 00 04 */	stw r0, 0x4(r5)
 /* 8027882C 0027466C  4E 80 00 20 */	blr
-.global lbl_80278830
-lbl_80278830:
+.global setIndivi__Q33scn4step11ContextHeroFUlRCQ33scn4step17ContextHeroIndivi
+setIndivi__Q33scn4step11ContextHeroFUlRCQ33scn4step17ContextHeroIndivi:
 /* 80278830 00274670  1C 84 00 3C */	mulli r4, r4, 0x3c
 /* 80278834 00274674  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 80278838 00274678  7C 83 22 14 */	add r4, r3, r4
@@ -279,8 +279,8 @@ lbl_80278830:
 /* 802788A8 002746E8  90 64 00 44 */	stw r3, 0x44(r4)
 /* 802788AC 002746EC  90 04 00 48 */	stw r0, 0x48(r4)
 /* 802788B0 002746F0  4E 80 00 20 */	blr
-.global lbl_802788B4
-lbl_802788B4:
+.global changeExitStage__Q43scn4step4core12SceneChangerFv
+changeExitStage__Q43scn4step4core12SceneChangerFv:
 /* 802788B4 002746F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802788B8 002746F8  7C 08 02 A6 */	mflr r0
 /* 802788BC 002746FC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -288,7 +288,7 @@ lbl_802788B4:
 /* 802788C4 00274704  7C 7F 1B 78 */	mr r31, r3
 /* 802788C8 00274708  38 80 00 00 */	li r4, 0x0
 /* 802788CC 0027470C  38 A0 00 00 */	li r5, 0x0
-/* 802788D0 00274710  48 00 08 35 */	bl lbl_80279104
+/* 802788D0 00274710  48 00 08 35 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 802788D4 00274714  38 00 00 10 */	li r0, 0x10
 /* 802788D8 00274718  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 802788DC 0027471C  38 00 00 00 */	li r0, 0x0
@@ -298,39 +298,39 @@ lbl_802788B4:
 /* 802788EC 0027472C  7C 08 03 A6 */	mtlr r0
 /* 802788F0 00274730  38 21 00 10 */	addi r1, r1, 0x10
 /* 802788F4 00274734  4E 80 00 20 */	blr
-.global lbl_802788F8
-lbl_802788F8:
+.global changeDoor__Q43scn4step4core12SceneChangerFiUl
+changeDoor__Q43scn4step4core12SceneChangerFiUl:
 /* 802788F8 00274738  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802788FC 0027473C  7C 08 02 A6 */	mflr r0
 /* 80278900 00274740  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80278904 00274744  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80278908 00274748  7C 7F 1B 78 */	mr r31, r3
-/* 8027890C 0027474C  48 00 07 F9 */	bl lbl_80279104
+/* 8027890C 0027474C  48 00 07 F9 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278910 00274750  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278914 00274754  4B FA 84 15 */	bl lbl_80220D28
-/* 80278918 00274758  48 07 E4 79 */	bl lbl_802F6D90
+/* 80278914 00274754  4B FA 84 15 */	bl gimmickManager__Q33scn4step9ComponentFv
+/* 80278918 00274758  48 07 E4 79 */	bl onStepMove__Q43scn4step7gimmick7ManagerFv
 /* 8027891C 0027475C  38 00 00 01 */	li r0, 0x1
 /* 80278920 00274760  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80278924 00274764  38 00 00 02 */	li r0, 0x2
 /* 80278928 00274768  90 1F 04 48 */	stw r0, 0x448(r31)
 /* 8027892C 0027476C  7F E3 FB 78 */	mr r3, r31
-/* 80278930 00274770  48 00 08 D5 */	bl lbl_80279204
+/* 80278930 00274770  48 00 08 D5 */	bl setPiggyback__Q43scn4step4core12SceneChangerFv
 /* 80278934 00274774  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278938 00274778  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027893C 0027477C  7C 08 03 A6 */	mtlr r0
 /* 80278940 00274780  38 21 00 10 */	addi r1, r1, 0x10
 /* 80278944 00274784  4E 80 00 20 */	blr
-.global lbl_80278948
-lbl_80278948:
+.global changeWarpStar__Q43scn4step4core12SceneChangerFiUl
+changeWarpStar__Q43scn4step4core12SceneChangerFiUl:
 /* 80278948 00274788  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8027894C 0027478C  7C 08 02 A6 */	mflr r0
 /* 80278950 00274790  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80278954 00274794  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80278958 00274798  7C 7F 1B 78 */	mr r31, r3
-/* 8027895C 0027479C  48 00 07 A9 */	bl lbl_80279104
+/* 8027895C 0027479C  48 00 07 A9 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278960 002747A0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278964 002747A4  4B FA 83 C5 */	bl lbl_80220D28
-/* 80278968 002747A8  48 07 E4 29 */	bl lbl_802F6D90
+/* 80278964 002747A4  4B FA 83 C5 */	bl gimmickManager__Q33scn4step9ComponentFv
+/* 80278968 002747A8  48 07 E4 29 */	bl onStepMove__Q43scn4step7gimmick7ManagerFv
 /* 8027896C 002747AC  38 00 00 01 */	li r0, 0x1
 /* 80278970 002747B0  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80278974 002747B4  38 00 00 03 */	li r0, 0x3
@@ -340,8 +340,8 @@ lbl_80278948:
 /* 80278984 002747C4  7C 08 03 A6 */	mtlr r0
 /* 80278988 002747C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027898C 002747CC  4E 80 00 20 */	blr
-.global lbl_80278990
-lbl_80278990:
+.global changeChallengeIn__Q43scn4step4core12SceneChangerFQ33scn4step13ChallengeKind
+changeChallengeIn__Q43scn4step4core12SceneChangerFQ33scn4step13ChallengeKind:
 /* 80278990 002747D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80278994 002747D4  7C 08 02 A6 */	mflr r0
 /* 80278998 002747D8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -351,20 +351,20 @@ lbl_80278990:
 /* 802789A8 002747E8  7C 9F 23 78 */	mr r31, r4
 /* 802789AC 002747EC  38 80 00 00 */	li r4, 0x0
 /* 802789B0 002747F0  38 A0 00 00 */	li r5, 0x0
-/* 802789B4 002747F4  48 00 07 51 */	bl lbl_80279104
+/* 802789B4 002747F4  48 00 07 51 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 802789B8 002747F8  93 FE 03 60 */	stw r31, 0x360(r30)
 /* 802789BC 002747FC  38 00 00 08 */	li r0, 0x8
 /* 802789C0 00274800  90 1E 00 04 */	stw r0, 0x4(r30)
 /* 802789C4 00274804  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 802789C8 00274808  4B FA 99 89 */	bl lbl_80222350
+/* 802789C8 00274808  4B FA 99 89 */	bl ClearIgnoreObj__Q33scn4step16StorageAccessor2FRQ33scn4step9Component
 /* 802789CC 0027480C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802789D0 00274810  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 802789D4 00274814  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802789D8 00274818  7C 08 03 A6 */	mtlr r0
 /* 802789DC 0027481C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802789E0 00274820  4E 80 00 20 */	blr
-.global lbl_802789E4
-lbl_802789E4:
+.global changeBossClear__Q43scn4step4core12SceneChangerFv
+changeBossClear__Q43scn4step4core12SceneChangerFv:
 /* 802789E4 00274824  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802789E8 00274828  7C 08 02 A6 */	mflr r0
 /* 802789EC 0027482C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -373,14 +373,14 @@ lbl_802789E4:
 /* 802789F8 00274838  7C 7D 1B 78 */	mr r29, r3
 /* 802789FC 0027483C  38 80 00 00 */	li r4, 0x0
 /* 80278A00 00274840  38 A0 00 00 */	li r5, 0x0
-/* 80278A04 00274844  48 00 07 01 */	bl lbl_80279104
+/* 80278A04 00274844  48 00 07 01 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278A08 00274848  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 80278A0C 0027484C  4B FA 83 1D */	bl lbl_80220D28
-/* 80278A10 00274850  48 07 E3 81 */	bl lbl_802F6D90
+/* 80278A0C 0027484C  4B FA 83 1D */	bl gimmickManager__Q33scn4step9ComponentFv
+/* 80278A10 00274850  48 07 E3 81 */	bl onStepMove__Q43scn4step7gimmick7ManagerFv
 /* 80278A14 00274854  3B C0 00 00 */	li r30, 0x0
 /* 80278A18 00274858  3B E0 03 E8 */	li r31, 0x3e8
 /* 80278A1C 0027485C  80 7D 04 54 */	lwz r3, 0x454(r29)
-/* 80278A20 00274860  4B DD B3 D1 */	bl lbl_80053DF0
+/* 80278A20 00274860  4B DD B3 D1 */	bl __wpadNoAlloc
 /* 80278A24 00274864  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80278A28 00274868  41 82 00 08 */	beq lbl_80278A30
 /* 80278A2C 0027486C  93 DD 04 54 */	stw r30, 0x454(r29)
@@ -388,7 +388,7 @@ lbl_802789E4:
 lbl_80278A30:
 /* 80278A30 00274870  93 FD 04 58 */	stw r31, 0x458(r29)
 /* 80278A34 00274874  7F A3 EB 78 */	mr r3, r29
-/* 80278A38 00274878  48 00 09 B5 */	bl lbl_802793EC
+/* 80278A38 00274878  48 00 09 B5 */	bl resetBossRetryCount__Q43scn4step4core12SceneChangerFv
 /* 80278A3C 0027487C  38 00 00 09 */	li r0, 0x9
 /* 80278A40 00274880  90 1D 00 04 */	stw r0, 0x4(r29)
 /* 80278A44 00274884  38 00 00 00 */	li r0, 0x0
@@ -399,8 +399,8 @@ lbl_80278A30:
 /* 80278A58 00274898  7C 08 03 A6 */	mtlr r0
 /* 80278A5C 0027489C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80278A60 002748A0  4E 80 00 20 */	blr
-.global lbl_80278A64
-lbl_80278A64:
+.global changeBossClearArena__Q43scn4step4core12SceneChangerFv
+changeBossClearArena__Q43scn4step4core12SceneChangerFv:
 /* 80278A64 002748A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80278A68 002748A8  7C 08 02 A6 */	mflr r0
 /* 80278A6C 002748AC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -408,12 +408,12 @@ lbl_80278A64:
 /* 80278A74 002748B4  7C 7F 1B 78 */	mr r31, r3
 /* 80278A78 002748B8  38 80 00 00 */	li r4, 0x0
 /* 80278A7C 002748BC  38 A0 00 00 */	li r5, 0x0
-/* 80278A80 002748C0  48 00 06 85 */	bl lbl_80279104
+/* 80278A80 002748C0  48 00 06 85 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278A84 002748C4  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278A88 002748C8  4B FA 82 A1 */	bl lbl_80220D28
-/* 80278A8C 002748CC  48 07 E3 05 */	bl lbl_802F6D90
+/* 80278A88 002748C8  4B FA 82 A1 */	bl gimmickManager__Q33scn4step9ComponentFv
+/* 80278A8C 002748CC  48 07 E3 05 */	bl onStepMove__Q43scn4step7gimmick7ManagerFv
 /* 80278A90 002748D0  7F E3 FB 78 */	mr r3, r31
-/* 80278A94 002748D4  48 00 09 59 */	bl lbl_802793EC
+/* 80278A94 002748D4  48 00 09 59 */	bl resetBossRetryCount__Q43scn4step4core12SceneChangerFv
 /* 80278A98 002748D8  38 00 00 09 */	li r0, 0x9
 /* 80278A9C 002748DC  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80278AA0 002748E0  38 00 00 00 */	li r0, 0x0
@@ -423,8 +423,8 @@ lbl_80278A64:
 /* 80278AB0 002748F0  7C 08 03 A6 */	mtlr r0
 /* 80278AB4 002748F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80278AB8 002748F8  4E 80 00 20 */	blr
-.global lbl_80278ABC
-lbl_80278ABC:
+.global changeChallengeResult__Q43scn4step4core12SceneChangerFv
+changeChallengeResult__Q43scn4step4core12SceneChangerFv:
 /* 80278ABC 002748FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80278AC0 00274900  7C 08 02 A6 */	mflr r0
 /* 80278AC4 00274904  90 01 00 14 */	stw r0, 0x14(r1)
@@ -432,20 +432,20 @@ lbl_80278ABC:
 /* 80278ACC 0027490C  7C 7F 1B 78 */	mr r31, r3
 /* 80278AD0 00274910  38 80 00 00 */	li r4, 0x0
 /* 80278AD4 00274914  38 A0 00 00 */	li r5, 0x0
-/* 80278AD8 00274918  48 00 06 2D */	bl lbl_80279104
+/* 80278AD8 00274918  48 00 06 2D */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278ADC 0027491C  38 00 00 01 */	li r0, 0x1
 /* 80278AE0 00274920  98 1F 03 F0 */	stb r0, 0x3f0(r31)
 /* 80278AE4 00274924  38 00 00 0B */	li r0, 0xb
 /* 80278AE8 00274928  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80278AEC 0027492C  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278AF0 00274930  4B FA 98 61 */	bl lbl_80222350
+/* 80278AF0 00274930  4B FA 98 61 */	bl ClearIgnoreObj__Q33scn4step16StorageAccessor2FRQ33scn4step9Component
 /* 80278AF4 00274934  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278AF8 00274938  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278AFC 0027493C  7C 08 03 A6 */	mtlr r0
 /* 80278B00 00274940  38 21 00 10 */	addi r1, r1, 0x10
 /* 80278B04 00274944  4E 80 00 20 */	blr
-.global lbl_80278B08
-lbl_80278B08:
+.global changeChallengeRetry__Q43scn4step4core12SceneChangerFbb
+changeChallengeRetry__Q43scn4step4core12SceneChangerFbb:
 /* 80278B08 00274948  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80278B0C 0027494C  7C 08 02 A6 */	mflr r0
 /* 80278B10 00274950  90 01 00 24 */	stw r0, 0x24(r1)
@@ -455,15 +455,15 @@ lbl_80278B08:
 /* 80278B20 00274960  7C 9E 23 78 */	mr r30, r4
 /* 80278B24 00274964  7C BF 2B 78 */	mr r31, r5
 /* 80278B28 00274968  38 80 00 00 */	li r4, 0x0
-/* 80278B2C 0027496C  4B FF FA 91 */	bl lbl_802785BC
+/* 80278B2C 0027496C  4B FF FA 91 */	bl changeDead__Q43scn4step4core12SceneChangerFb
 /* 80278B30 00274970  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 80278B34 00274974  41 82 00 6C */	beq lbl_80278BA0
 /* 80278B38 00274978  38 00 00 01 */	li r0, 0x1
 /* 80278B3C 0027497C  90 1D 00 04 */	stw r0, 0x4(r29)
 /* 80278B40 00274980  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 80278B44 00274984  4B EF D8 7D */	bl lbl_801763C0
+/* 80278B44 00274984  4B EF D8 7D */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278B48 00274988  80 63 04 9C */	lwz r3, 0x49c(r3)
-/* 80278B4C 0027498C  4B FA 44 61 */	bl lbl_8021CFAC
+/* 80278B4C 0027498C  4B FA 44 61 */	bl ToChallengeKind__Q33scn4step17ChallengeKindUtilFQ43scn4step3map4Kind
 /* 80278B50 00274990  38 03 FF F6 */	addi r0, r3, -0xa
 /* 80278B54 00274994  28 00 00 01 */	cmplwi r0, 0x1
 /* 80278B58 00274998  40 81 00 14 */	ble lbl_80278B6C
@@ -479,12 +479,12 @@ lbl_80278B6C:
 lbl_80278B74:
 /* 80278B74 002749B4  38 00 00 0C */	li r0, 0xc
 /* 80278B78 002749B8  90 1D 04 48 */	stw r0, 0x448(r29)
-/* 80278B7C 002749BC  4B FA 43 D9 */	bl lbl_8021CF54
+/* 80278B7C 002749BC  4B FA 43 D9 */	bl MapKind__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKind
 /* 80278B80 002749C0  90 7D 04 A4 */	stw r3, 0x4a4(r29)
 /* 80278B84 002749C4  38 00 00 00 */	li r0, 0x0
 /* 80278B88 002749C8  90 1D 04 3C */	stw r0, 0x43c(r29)
 /* 80278B8C 002749CC  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 80278B90 002749D0  4B EF D8 31 */	bl lbl_801763C0
+/* 80278B90 002749D0  4B EF D8 31 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278B94 002749D4  88 03 04 08 */	lbz r0, 0x408(r3)
 /* 80278B98 002749D8  98 1D 04 10 */	stb r0, 0x410(r29)
 /* 80278B9C 002749DC  48 00 00 10 */	b lbl_80278BAC
@@ -496,16 +496,16 @@ lbl_80278BA0:
 .global lbl_80278BAC
 lbl_80278BAC:
 /* 80278BAC 002749EC  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 80278BB0 002749F0  4B FA 97 A1 */	bl lbl_80222350
-/* 80278BB4 002749F4  4B FA 98 CD */	bl lbl_80222480
+/* 80278BB0 002749F0  4B FA 97 A1 */	bl ClearIgnoreObj__Q33scn4step16StorageAccessor2FRQ33scn4step9Component
+/* 80278BB4 002749F4  4B FA 98 CD */	bl ClearMoveGroupSaveData__Q33scn4step16StorageAccessor2Fv
 /* 80278BB8 002749F8  39 61 00 20 */	addi r11, r1, 0x20
 /* 80278BBC 002749FC  4B D8 E7 D5 */	bl lbl_80007390
 /* 80278BC0 00274A00  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80278BC4 00274A04  7C 08 03 A6 */	mtlr r0
 /* 80278BC8 00274A08  38 21 00 20 */	addi r1, r1, 0x20
 /* 80278BCC 00274A0C  4E 80 00 20 */	blr
-.global lbl_80278BD0
-lbl_80278BD0:
+.global changeChallengeMasterClear__Q43scn4step4core12SceneChangerFbbbb
+changeChallengeMasterClear__Q43scn4step4core12SceneChangerFbbbb:
 /* 80278BD0 00274A10  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80278BD4 00274A14  7C 08 02 A6 */	mflr r0
 /* 80278BD8 00274A18  90 01 00 24 */	stw r0, 0x24(r1)
@@ -517,7 +517,7 @@ lbl_80278BD0:
 /* 80278BF0 00274A30  7C DE 33 78 */	mr r30, r6
 /* 80278BF4 00274A34  7C FF 3B 78 */	mr r31, r7
 /* 80278BF8 00274A38  38 80 00 00 */	li r4, 0x0
-/* 80278BFC 00274A3C  4B FF F9 C1 */	bl lbl_802785BC
+/* 80278BFC 00274A3C  4B FF F9 C1 */	bl changeDead__Q43scn4step4core12SceneChangerFb
 /* 80278C00 00274A40  38 00 00 01 */	li r0, 0x1
 /* 80278C04 00274A44  98 1B 03 F0 */	stb r0, 0x3f0(r27)
 /* 80278C08 00274A48  2C 1E 00 00 */	cmpwi r30, 0x0
@@ -531,9 +531,9 @@ lbl_80278C1C:
 /* 80278C20 00274A60  41 82 00 5C */	beq lbl_80278C7C
 /* 80278C24 00274A64  90 1B 00 04 */	stw r0, 0x4(r27)
 /* 80278C28 00274A68  80 7B 00 00 */	lwz r3, 0x0(r27)
-/* 80278C2C 00274A6C  4B EF D7 95 */	bl lbl_801763C0
+/* 80278C2C 00274A6C  4B EF D7 95 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278C30 00274A70  80 63 04 9C */	lwz r3, 0x49c(r3)
-/* 80278C34 00274A74  4B FA 43 79 */	bl lbl_8021CFAC
+/* 80278C34 00274A74  4B FA 43 79 */	bl ToChallengeKind__Q33scn4step17ChallengeKindUtilFQ43scn4step3map4Kind
 /* 80278C38 00274A78  38 03 FF F6 */	addi r0, r3, -0xa
 /* 80278C3C 00274A7C  28 00 00 01 */	cmplwi r0, 0x1
 /* 80278C40 00274A80  40 81 00 14 */	ble lbl_80278C54
@@ -549,7 +549,7 @@ lbl_80278C54:
 lbl_80278C5C:
 /* 80278C5C 00274A9C  38 00 00 0C */	li r0, 0xc
 /* 80278C60 00274AA0  90 1B 04 48 */	stw r0, 0x448(r27)
-/* 80278C64 00274AA4  4B FA 42 F1 */	bl lbl_8021CF54
+/* 80278C64 00274AA4  4B FA 42 F1 */	bl MapKind__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKind
 /* 80278C68 00274AA8  90 7B 04 A4 */	stw r3, 0x4a4(r27)
 /* 80278C6C 00274AAC  38 00 00 00 */	li r0, 0x0
 /* 80278C70 00274AB0  90 1B 04 3C */	stw r0, 0x43c(r27)
@@ -563,15 +563,15 @@ lbl_80278C7C:
 .global lbl_80278C88
 lbl_80278C88:
 /* 80278C88 00274AC8  80 7B 00 00 */	lwz r3, 0x0(r27)
-/* 80278C8C 00274ACC  4B FA 96 C5 */	bl lbl_80222350
+/* 80278C8C 00274ACC  4B FA 96 C5 */	bl ClearIgnoreObj__Q33scn4step16StorageAccessor2FRQ33scn4step9Component
 /* 80278C90 00274AD0  39 61 00 20 */	addi r11, r1, 0x20
 /* 80278C94 00274AD4  4B D8 E6 F5 */	bl lbl_80007388
 /* 80278C98 00274AD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80278C9C 00274ADC  7C 08 03 A6 */	mtlr r0
 /* 80278CA0 00274AE0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80278CA4 00274AE4  4E 80 00 20 */	blr
-.global lbl_80278CA8
-lbl_80278CA8:
+.global changeModeSelect__Q43scn4step4core12SceneChangerFv
+changeModeSelect__Q43scn4step4core12SceneChangerFv:
 /* 80278CA8 00274AE8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80278CAC 00274AEC  7C 08 02 A6 */	mflr r0
 /* 80278CB0 00274AF0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -579,7 +579,7 @@ lbl_80278CA8:
 /* 80278CB8 00274AF8  7C 7F 1B 78 */	mr r31, r3
 /* 80278CBC 00274AFC  38 80 00 00 */	li r4, 0x0
 /* 80278CC0 00274B00  38 A0 00 00 */	li r5, 0x0
-/* 80278CC4 00274B04  48 00 04 41 */	bl lbl_80279104
+/* 80278CC4 00274B04  48 00 04 41 */	bl changeCommon__Q43scn4step4core12SceneChangerFiUl
 /* 80278CC8 00274B08  38 00 00 04 */	li r0, 0x4
 /* 80278CCC 00274B0C  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80278CD0 00274B10  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -587,15 +587,15 @@ lbl_80278CA8:
 /* 80278CD8 00274B18  7C 08 03 A6 */	mtlr r0
 /* 80278CDC 00274B1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80278CE0 00274B20  4E 80 00 20 */	blr
-.global lbl_80278CE4
-lbl_80278CE4:
+.global changeCommon__Q43scn4step4core12SceneChangerFv
+changeCommon__Q43scn4step4core12SceneChangerFv:
 /* 80278CE4 00274B24  94 21 FB 70 */	stwu r1, -0x490(r1)
 /* 80278CE8 00274B28  7C 08 02 A6 */	mflr r0
 /* 80278CEC 00274B2C  90 01 04 94 */	stw r0, 0x494(r1)
 /* 80278CF0 00274B30  93 E1 04 8C */	stw r31, 0x48c(r1)
 /* 80278CF4 00274B34  7C 7F 1B 78 */	mr r31, r3
 /* 80278CF8 00274B38  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80278CFC 00274B3C  4B EF D6 C5 */	bl lbl_801763C0
+/* 80278CFC 00274B3C  4B EF D6 C5 */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 80278D00 00274B40  38 DF 00 04 */	addi r6, r31, 0x4
 /* 80278D04 00274B44  38 A3 FF FC */	addi r5, r3, -0x4
 /* 80278D08 00274B48  38 00 00 6B */	li r0, 0x6b
@@ -688,10 +688,10 @@ lbl_80278E18:
 /* 80278E2C 00274C6C  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 80278E30 00274C70  90 05 00 04 */	stw r0, 0x4(r5)
 /* 80278E34 00274C74  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278E38 00274C78  4B FA 7F C1 */	bl lbl_80220DF8
+/* 80278E38 00274C78  4B FA 7F C1 */	bl heroManager__Q33scn4step9ComponentFv
 /* 80278E3C 00274C7C  7C 64 1B 78 */	mr r4, r3
 /* 80278E40 00274C80  38 61 00 48 */	addi r3, r1, 0x48
-/* 80278E44 00274C84  48 0C CB 21 */	bl lbl_80345964
+/* 80278E44 00274C84  48 0C CB 21 */	bl createContext__Q43scn4step4hero7ManagerFv
 /* 80278E48 00274C88  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80278E4C 00274C8C  90 1F 04 3C */	stw r0, 0x43c(r31)
 /* 80278E50 00274C90  80 01 00 4C */	lwz r0, 0x4c(r1)
@@ -714,10 +714,10 @@ lbl_80278E78:
 /* 80278E8C 00274CCC  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 80278E90 00274CD0  90 05 00 04 */	stw r0, 0x4(r5)
 /* 80278E94 00274CD4  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278E98 00274CD8  4B FA 7F 9D */	bl lbl_80220E34
+/* 80278E98 00274CD8  4B FA 7F 9D */	bl enemyManager__Q33scn4step9ComponentFv
 /* 80278E9C 00274CDC  7C 64 1B 78 */	mr r4, r3
 /* 80278EA0 00274CE0  38 61 00 08 */	addi r3, r1, 0x8
-/* 80278EA4 00274CE4  48 01 0E A9 */	bl lbl_80289D4C
+/* 80278EA4 00274CE4  48 01 0E A9 */	bl context__Q43scn4step5enemy7ManagerFv
 /* 80278EA8 00274CE8  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 80278EAC 00274CEC  90 1F 03 FC */	stw r0, 0x3fc(r31)
 /* 80278EB0 00274CF0  80 61 00 0C */	lwz r3, 0xc(r1)
@@ -729,10 +729,10 @@ lbl_80278E78:
 /* 80278EC8 00274D08  90 7F 04 08 */	stw r3, 0x408(r31)
 /* 80278ECC 00274D0C  90 1F 04 0C */	stw r0, 0x40c(r31)
 /* 80278ED0 00274D10  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278ED4 00274D14  4B FA 7F 95 */	bl lbl_80220E68
+/* 80278ED4 00274D14  4B FA 7F 95 */	bl bossManager__Q33scn4step9ComponentFv
 /* 80278ED8 00274D18  7C 64 1B 78 */	mr r4, r3
 /* 80278EDC 00274D1C  38 61 01 30 */	addi r3, r1, 0x130
-/* 80278EE0 00274D20  4B FB 8D E1 */	bl lbl_80231CC0
+/* 80278EE0 00274D20  4B FB 8D E1 */	bl context__Q43scn4step4boss7ManagerFv
 /* 80278EE4 00274D24  38 BF 00 04 */	addi r5, r31, 0x4
 /* 80278EE8 00274D28  38 81 01 2C */	addi r4, r1, 0x12c
 /* 80278EEC 00274D2C  38 00 00 0C */	li r0, 0xc
@@ -795,10 +795,10 @@ lbl_80278F54:
 /* 80278FB8 00274DF8  88 01 04 84 */	lbz r0, 0x484(r1)
 /* 80278FBC 00274DFC  98 1F 03 5C */	stb r0, 0x35c(r31)
 /* 80278FC0 00274E00  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80278FC4 00274E04  4B FA 7E D9 */	bl lbl_80220E9C
+/* 80278FC4 00274E04  4B FA 7E D9 */	bl ghostManager__Q33scn4step9ComponentFv
 /* 80278FC8 00274E08  7C 64 1B 78 */	mr r4, r3
 /* 80278FCC 00274E0C  38 61 00 1C */	addi r3, r1, 0x1c
-/* 80278FD0 00274E10  48 17 90 71 */	bl lbl_803F2040
+/* 80278FD0 00274E10  48 17 90 71 */	bl createContext__Q43scn4step5ghost7ManagerFv
 /* 80278FD4 00274E14  88 01 00 1C */	lbz r0, 0x1c(r1)
 /* 80278FD8 00274E18  98 1F 04 10 */	stb r0, 0x410(r31)
 /* 80278FDC 00274E1C  80 01 00 20 */	lwz r0, 0x20(r1)
@@ -832,13 +832,13 @@ lbl_80278F54:
 /* 8027904C 00274E8C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80279050 00274E90  90 1F 04 38 */	stw r0, 0x438(r31)
 /* 80279054 00274E94  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279058 00274E98  4B FA 7E 79 */	bl lbl_80220ED0
-/* 8027905C 00274E9C  4B FE FD CD */	bl lbl_80268E28
+/* 80279058 00274E98  4B FA 7E 79 */	bl challengeManager__Q33scn4step9ComponentFv
+/* 8027905C 00274E9C  4B FE FD CD */	bl balanceDyingEnemy__Q43scn4step9challenge7ManagerFv
 /* 80279060 00274EA0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279064 00274EA4  4B FA 7E 6D */	bl lbl_80220ED0
+/* 80279064 00274EA4  4B FA 7E 6D */	bl challengeManager__Q33scn4step9ComponentFv
 /* 80279068 00274EA8  7C 64 1B 78 */	mr r4, r3
 /* 8027906C 00274EAC  38 61 00 94 */	addi r3, r1, 0x94
-/* 80279070 00274EB0  4B FF 02 89 */	bl lbl_802692F8
+/* 80279070 00274EB0  4B FF 02 89 */	bl createContext__Q43scn4step9challenge7ManagerFv
 /* 80279074 00274EB4  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80279078 00274EB8  90 1F 03 60 */	stw r0, 0x360(r31)
 /* 8027907C 00274EBC  38 BF 03 60 */	addi r5, r31, 0x360
@@ -862,14 +862,14 @@ lbl_8027908C:
 /* 802790BC 00274EFC  90 1F 03 F4 */	stw r0, 0x3f4(r31)
 /* 802790C0 00274F00  80 01 01 2C */	lwz r0, 0x12c(r1)
 /* 802790C4 00274F04  90 1F 03 F8 */	stw r0, 0x3f8(r31)
-/* 802790C8 00274F08  4B FA 90 BD */	bl lbl_80222184
+/* 802790C8 00274F08  4B FA 90 BD */	bl IsAllStageCleared__Q33scn4step16StorageAccessor2Fv
 /* 802790CC 00274F0C  98 7F 04 8C */	stb r3, 0x48c(r31)
-/* 802790D0 00274F10  4B FA 90 6D */	bl lbl_8022213C
+/* 802790D0 00274F10  4B FA 90 6D */	bl GetChallengeTotalScore__Q33scn4step16StorageAccessor2Fv
 /* 802790D4 00274F14  90 7F 04 9C */	stw r3, 0x49c(r31)
-/* 802790D8 00274F18  4B FA 90 89 */	bl lbl_80222160
+/* 802790D8 00274F18  4B FA 90 89 */	bl HasAllPlatinumMedal__Q33scn4step16StorageAccessor2Fv
 /* 802790DC 00274F1C  98 7F 04 A0 */	stb r3, 0x4a0(r31)
 /* 802790E0 00274F20  7F E3 FB 78 */	mr r3, r31
-/* 802790E4 00274F24  48 00 00 9D */	bl lbl_80279180
+/* 802790E4 00274F24  48 00 00 9D */	bl resetPiggyback__Q43scn4step4core12SceneChangerFv
 /* 802790E8 00274F28  38 00 00 01 */	li r0, 0x1
 /* 802790EC 00274F2C  98 1F 04 C0 */	stb r0, 0x4c0(r31)
 /* 802790F0 00274F30  83 E1 04 8C */	lwz r31, 0x48c(r1)
@@ -877,8 +877,8 @@ lbl_8027908C:
 /* 802790F8 00274F38  7C 08 03 A6 */	mtlr r0
 /* 802790FC 00274F3C  38 21 04 90 */	addi r1, r1, 0x490
 /* 80279100 00274F40  4E 80 00 20 */	blr
-.global lbl_80279104
-lbl_80279104:
+.global changeCommon__Q43scn4step4core12SceneChangerFiUl
+changeCommon__Q43scn4step4core12SceneChangerFiUl:
 /* 80279104 00274F44  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80279108 00274F48  7C 08 02 A6 */	mflr r0
 /* 8027910C 00274F4C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -887,11 +887,11 @@ lbl_80279104:
 /* 80279118 00274F58  7C 7D 1B 78 */	mr r29, r3
 /* 8027911C 00274F5C  7C 9E 23 78 */	mr r30, r4
 /* 80279120 00274F60  7C BF 2B 78 */	mr r31, r5
-/* 80279124 00274F64  4B FF FB C1 */	bl lbl_80278CE4
+/* 80279124 00274F64  4B FF FB C1 */	bl changeCommon__Q43scn4step4core12SceneChangerFv
 /* 80279128 00274F68  80 9D 04 A4 */	lwz r4, 0x4a4(r29)
 /* 8027912C 00274F6C  7C 84 F2 14 */	add r4, r4, r30
 /* 80279130 00274F70  38 7D 04 A4 */	addi r3, r29, 0x4a4
-/* 80279134 00274F74  48 00 00 21 */	bl lbl_80279154
+/* 80279134 00274F74  48 00 00 21 */	bl setKind__Q33scn4step10ContextMapFi
 /* 80279138 00274F78  93 FD 04 3C */	stw r31, 0x43c(r29)
 /* 8027913C 00274F7C  39 61 00 20 */	addi r11, r1, 0x20
 /* 80279140 00274F80  4B D8 E2 51 */	bl lbl_80007390
@@ -899,8 +899,8 @@ lbl_80279104:
 /* 80279148 00274F88  7C 08 03 A6 */	mtlr r0
 /* 8027914C 00274F8C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80279150 00274F90  4E 80 00 20 */	blr
-.global lbl_80279154
-lbl_80279154:
+.global setKind__Q33scn4step10ContextMapFi
+setKind__Q33scn4step10ContextMapFi:
 /* 80279154 00274F94  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80279158 00274F98  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8027915C 00274F9C  40 80 00 0C */	bge lbl_80279168
@@ -914,8 +914,8 @@ lbl_80279168:
 /* 80279174 00274FB4  38 00 00 31 */	li r0, 0x31
 /* 80279178 00274FB8  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8027917C 00274FBC  4E 80 00 20 */	blr
-.global lbl_80279180
-lbl_80279180:
+.global resetPiggyback__Q43scn4step4core12SceneChangerFv
+resetPiggyback__Q43scn4step4core12SceneChangerFv:
 /* 80279180 00274FC0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80279184 00274FC4  7C 08 02 A6 */	mflr r0
 /* 80279188 00274FC8  90 01 00 94 */	stw r0, 0x94(r1)
@@ -927,7 +927,7 @@ lbl_80279180:
 /* 802791A0 00274FE0  38 61 00 08 */	addi r3, r1, 0x8
 /* 802791A4 00274FE4  38 9D 04 3C */	addi r4, r29, 0x43c
 /* 802791A8 00274FE8  38 A0 00 00 */	li r5, 0x0
-/* 802791AC 00274FEC  4B FF F6 4D */	bl lbl_802787F8
+/* 802791AC 00274FEC  4B FF F6 4D */	bl getIndivi__Q33scn4step11ContextHeroCFUl
 /* 802791B0 00274FF0  38 A1 00 40 */	addi r5, r1, 0x40
 /* 802791B4 00274FF4  38 81 00 04 */	addi r4, r1, 0x4
 /* 802791B8 00274FF8  7F C9 03 A6 */	mtctr r30
@@ -944,15 +944,15 @@ lbl_802791BC:
 /* 802791DC 0027501C  38 7D 04 3C */	addi r3, r29, 0x43c
 /* 802791E0 00275020  38 80 00 00 */	li r4, 0x0
 /* 802791E4 00275024  38 A1 00 44 */	addi r5, r1, 0x44
-/* 802791E8 00275028  4B FF F6 49 */	bl lbl_80278830
+/* 802791E8 00275028  4B FF F6 49 */	bl setIndivi__Q33scn4step11ContextHeroFUlRCQ33scn4step17ContextHeroIndivi
 /* 802791EC 0027502C  39 61 00 90 */	addi r11, r1, 0x90
 /* 802791F0 00275030  4B D8 E1 A1 */	bl lbl_80007390
 /* 802791F4 00275034  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802791F8 00275038  7C 08 03 A6 */	mtlr r0
 /* 802791FC 0027503C  38 21 00 90 */	addi r1, r1, 0x90
 /* 80279200 00275040  4E 80 00 20 */	blr
-.global lbl_80279204
-lbl_80279204:
+.global setPiggyback__Q43scn4step4core12SceneChangerFv
+setPiggyback__Q43scn4step4core12SceneChangerFv:
 /* 80279204 00275044  94 21 FE A0 */	stwu r1, -0x160(r1)
 /* 80279208 00275048  7C 08 02 A6 */	mflr r0
 /* 8027920C 0027504C  90 01 01 64 */	stw r0, 0x164(r1)
@@ -960,10 +960,10 @@ lbl_80279204:
 /* 80279214 00275054  93 C1 01 58 */	stw r30, 0x158(r1)
 /* 80279218 00275058  7C 7E 1B 78 */	mr r30, r3
 /* 8027921C 0027505C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80279220 00275060  4B FA 7B D9 */	bl lbl_80220DF8
+/* 80279220 00275060  4B FA 7B D9 */	bl heroManager__Q33scn4step9ComponentFv
 /* 80279224 00275064  7C 64 1B 78 */	mr r4, r3
 /* 80279228 00275068  38 61 00 BC */	addi r3, r1, 0xbc
-/* 8027922C 0027506C  48 0C C7 39 */	bl lbl_80345964
+/* 8027922C 0027506C  48 0C C7 39 */	bl createContext__Q43scn4step4hero7ManagerFv
 /* 80279230 00275070  38 A1 01 04 */	addi r5, r1, 0x104
 /* 80279234 00275074  38 81 00 B8 */	addi r4, r1, 0xb8
 /* 80279238 00275078  38 00 00 09 */	li r0, 0x9
@@ -981,7 +981,7 @@ lbl_80279240:
 /* 80279260 002750A0  38 61 00 44 */	addi r3, r1, 0x44
 /* 80279264 002750A4  38 9E 04 3C */	addi r4, r30, 0x43c
 /* 80279268 002750A8  38 A0 00 00 */	li r5, 0x0
-/* 8027926C 002750AC  4B FF F5 8D */	bl lbl_802787F8
+/* 8027926C 002750AC  4B FF F5 8D */	bl getIndivi__Q33scn4step11ContextHeroCFUl
 /* 80279270 002750B0  38 A1 00 7C */	addi r5, r1, 0x7c
 /* 80279274 002750B4  38 81 00 40 */	addi r4, r1, 0x40
 /* 80279278 002750B8  7F E9 03 A6 */	mtctr r31
@@ -997,21 +997,21 @@ lbl_8027927C:
 /* 80279298 002750D8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8027929C 002750DC  38 81 01 08 */	addi r4, r1, 0x108
 /* 802792A0 002750E0  38 A0 00 00 */	li r5, 0x0
-/* 802792A4 002750E4  4B FF F5 55 */	bl lbl_802787F8
+/* 802792A4 002750E4  4B FF F5 55 */	bl getIndivi__Q33scn4step11ContextHeroCFUl
 /* 802792A8 002750E8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802792AC 002750EC  90 01 00 AC */	stw r0, 0xac(r1)
 /* 802792B0 002750F0  38 7E 04 3C */	addi r3, r30, 0x43c
 /* 802792B4 002750F4  38 80 00 00 */	li r4, 0x0
 /* 802792B8 002750F8  38 A1 00 80 */	addi r5, r1, 0x80
-/* 802792BC 002750FC  4B FF F5 75 */	bl lbl_80278830
+/* 802792BC 002750FC  4B FF F5 75 */	bl setIndivi__Q33scn4step11ContextHeroFUlRCQ33scn4step17ContextHeroIndivi
 /* 802792C0 00275100  83 E1 01 5C */	lwz r31, 0x15c(r1)
 /* 802792C4 00275104  83 C1 01 58 */	lwz r30, 0x158(r1)
 /* 802792C8 00275108  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 802792CC 0027510C  7C 08 03 A6 */	mtlr r0
 /* 802792D0 00275110  38 21 01 60 */	addi r1, r1, 0x160
 /* 802792D4 00275114  4E 80 00 20 */	blr
-.global lbl_802792D8
-lbl_802792D8:
+.global incBossRetryCount__Q43scn4step4core12SceneChangerFv
+incBossRetryCount__Q43scn4step4core12SceneChangerFv:
 /* 802792D8 00275118  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802792DC 0027511C  7C 08 02 A6 */	mflr r0
 /* 802792E0 00275120  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1019,13 +1019,13 @@ lbl_802792D8:
 /* 802792E8 00275128  4B D8 E0 59 */	bl lbl_80007340
 /* 802792EC 0027512C  7C 7F 1B 78 */	mr r31, r3
 /* 802792F0 00275130  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 802792F4 00275134  4B FA 7B 75 */	bl lbl_80220E68
-/* 802792F8 00275138  4B FB 88 95 */	bl lbl_80231B8C
+/* 802792F4 00275134  4B FA 7B 75 */	bl bossManager__Q33scn4step9ComponentFv
+/* 802792F8 00275138  4B FB 88 95 */	bl isRetryBossKindValid__Q43scn4step4boss7ManagerCFv
 /* 802792FC 0027513C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80279300 00275140  41 82 00 D4 */	beq lbl_802793D4
 /* 80279304 00275144  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279308 00275148  4B FA 7B 61 */	bl lbl_80220E68
-/* 8027930C 0027514C  4B FB 88 79 */	bl lbl_80231B84
+/* 80279308 00275148  4B FA 7B 61 */	bl bossManager__Q33scn4step9ComponentFv
+/* 8027930C 0027514C  4B FB 88 79 */	bl getRetryBossKind__Q43scn4step4boss7ManagerCFv
 /* 80279310 00275150  7C 7D 1B 78 */	mr r29, r3
 /* 80279314 00275154  38 80 00 00 */	li r4, 0x0
 /* 80279318 00275158  80 DF 00 08 */	lwz r6, 0x8(r31)
@@ -1063,7 +1063,7 @@ lbl_8027936C:
 /* 80279378 002751B8  38 63 00 0C */	addi r3, r3, 0xc
 /* 8027937C 002751BC  7C 9F F2 14 */	add r4, r31, r30
 /* 80279380 002751C0  38 84 00 0C */	addi r4, r4, 0xc
-/* 80279384 002751C4  4B F0 63 A5 */	bl lbl_8017F728
+/* 80279384 002751C4  4B F0 63 A5 */	bl __as__Q34nw4r2ut4LinkFRCQ34nw4r2ut4Link
 /* 80279388 002751C8  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 8027938C 002751CC  3B DE 00 08 */	addi r30, r30, 0x8
 .global lbl_80279390
@@ -1083,7 +1083,7 @@ lbl_802793A4:
 /* 802793B8 002751F8  7C 7F 02 14 */	add r3, r31, r0
 /* 802793BC 002751FC  38 63 00 0C */	addi r3, r3, 0xc
 /* 802793C0 00275200  38 81 00 08 */	addi r4, r1, 0x8
-/* 802793C4 00275204  4B F0 63 65 */	bl lbl_8017F728
+/* 802793C4 00275204  4B F0 63 65 */	bl __as__Q34nw4r2ut4LinkFRCQ34nw4r2ut4Link
 /* 802793C8 00275208  80 7F 00 08 */	lwz r3, 0x8(r31)
 /* 802793CC 0027520C  38 03 00 01 */	addi r0, r3, 0x1
 /* 802793D0 00275210  90 1F 00 08 */	stw r0, 0x8(r31)
@@ -1095,21 +1095,21 @@ lbl_802793D4:
 /* 802793E0 00275220  7C 08 03 A6 */	mtlr r0
 /* 802793E4 00275224  38 21 00 20 */	addi r1, r1, 0x20
 /* 802793E8 00275228  4E 80 00 20 */	blr
-.global lbl_802793EC
-lbl_802793EC:
+.global resetBossRetryCount__Q43scn4step4core12SceneChangerFv
+resetBossRetryCount__Q43scn4step4core12SceneChangerFv:
 /* 802793EC 0027522C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802793F0 00275230  7C 08 02 A6 */	mflr r0
 /* 802793F4 00275234  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802793F8 00275238  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802793FC 0027523C  7C 7F 1B 78 */	mr r31, r3
 /* 80279400 00275240  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80279404 00275244  4B FA 7A 65 */	bl lbl_80220E68
-/* 80279408 00275248  4B FB 87 85 */	bl lbl_80231B8C
+/* 80279404 00275244  4B FA 7A 65 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80279408 00275248  4B FB 87 85 */	bl isRetryBossKindValid__Q43scn4step4boss7ManagerCFv
 /* 8027940C 0027524C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80279410 00275250  41 82 00 A0 */	beq lbl_802794B0
 /* 80279414 00275254  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279418 00275258  4B FA 7A 51 */	bl lbl_80220E68
-/* 8027941C 0027525C  4B FB 87 69 */	bl lbl_80231B84
+/* 80279418 00275258  4B FA 7A 51 */	bl bossManager__Q33scn4step9ComponentFv
+/* 8027941C 0027525C  4B FB 87 69 */	bl getRetryBossKind__Q43scn4step4boss7ManagerCFv
 /* 80279420 00275260  38 80 00 00 */	li r4, 0x0
 /* 80279424 00275264  80 1F 00 08 */	lwz r0, 0x8(r31)
 /* 80279428 00275268  7C 09 03 A6 */	mtctr r0
@@ -1131,13 +1131,13 @@ lbl_80279450:
 .global lbl_80279458
 lbl_80279458:
 /* 80279458 00275298  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8027945C 0027529C  4B FA 7A 0D */	bl lbl_80220E68
-/* 80279460 002752A0  4B FB 87 85 */	bl lbl_80231BE4
+/* 8027945C 0027529C  4B FA 7A 0D */	bl bossManager__Q33scn4step9ComponentFv
+/* 80279460 002752A0  4B FB 87 85 */	bl isRetryCoupledBossKindValid__Q43scn4step4boss7ManagerCFv
 /* 80279464 002752A4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80279468 002752A8  41 82 00 48 */	beq lbl_802794B0
 /* 8027946C 002752AC  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279470 002752B0  4B FA 79 F9 */	bl lbl_80220E68
-/* 80279474 002752B4  4B FB 87 69 */	bl lbl_80231BDC
+/* 80279470 002752B0  4B FA 79 F9 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80279474 002752B4  4B FB 87 69 */	bl getRetryCoupledBossKind__Q43scn4step4boss7ManagerCFv
 /* 80279478 002752B8  38 80 00 00 */	li r4, 0x0
 /* 8027947C 002752BC  80 1F 00 08 */	lwz r0, 0x8(r31)
 /* 80279480 002752C0  7C 09 03 A6 */	mtctr r0
@@ -1163,8 +1163,8 @@ lbl_802794B0:
 /* 802794B8 002752F8  7C 08 03 A6 */	mtlr r0
 /* 802794BC 002752FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 802794C0 00275300  4E 80 00 20 */	blr
-.global lbl_802794C4
-lbl_802794C4:
+.global incCommanderRetryCount__Q43scn4step4core12SceneChangerFv
+incCommanderRetryCount__Q43scn4step4core12SceneChangerFv:
 /* 802794C4 00275304  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 802794C8 00275308  7C 08 02 A6 */	mflr r0
 /* 802794CC 0027530C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -1172,16 +1172,16 @@ lbl_802794C4:
 /* 802794D4 00275314  4B D8 DE 69 */	bl lbl_8000733C
 /* 802794D8 00275318  7C 7F 1B 78 */	mr r31, r3
 /* 802794DC 0027531C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 802794E0 00275320  4B FA 79 89 */	bl lbl_80220E68
-/* 802794E4 00275324  4B FB 87 31 */	bl lbl_80231C14
+/* 802794E0 00275320  4B FA 79 89 */	bl bossManager__Q33scn4step9ComponentFv
+/* 802794E4 00275324  4B FB 87 31 */	bl isRetryCommanderIDValid__Q43scn4step4boss7ManagerCFv
 /* 802794E8 00275328  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802794EC 0027532C  41 82 00 F0 */	beq lbl_802795DC
 /* 802794F0 00275330  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 802794F4 00275334  4B EF CE CD */	bl lbl_801763C0
+/* 802794F4 00275334  4B EF CE CD */	bl "__rf__Q33hel6common25ScopedPtr<Q23app7AppImpl>CFv"
 /* 802794F8 00275338  83 83 04 9C */	lwz r28, 0x49c(r3)
 /* 802794FC 0027533C  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80279500 00275340  4B FA 79 69 */	bl lbl_80220E68
-/* 80279504 00275344  4B FB 87 09 */	bl lbl_80231C0C
+/* 80279500 00275340  4B FA 79 69 */	bl bossManager__Q33scn4step9ComponentFv
+/* 80279504 00275344  4B FB 87 09 */	bl getRetryCommanderID__Q43scn4step4boss7ManagerCFv
 /* 80279508 00275348  7C 7D 1B 78 */	mr r29, r3
 /* 8027950C 0027534C  38 80 00 00 */	li r4, 0x0
 /* 80279510 00275350  80 DF 00 6C */	lwz r6, 0x6c(r31)
@@ -1222,7 +1222,7 @@ lbl_80279570:
 /* 8027957C 002753BC  38 63 00 70 */	addi r3, r3, 0x70
 /* 80279580 002753C0  7C 9F F2 14 */	add r4, r31, r30
 /* 80279584 002753C4  38 84 00 70 */	addi r4, r4, 0x70
-/* 80279588 002753C8  4B F2 AE 5D */	bl lbl_801A43E4
+/* 80279588 002753C8  4B F2 AE 5D */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 8027958C 002753CC  3B 7B 00 01 */	addi r27, r27, 0x1
 /* 80279590 002753D0  3B DE 00 0C */	addi r30, r30, 0xc
 .global lbl_80279594
@@ -1243,7 +1243,7 @@ lbl_802795A8:
 /* 802795C0 00275400  7C 7F 02 14 */	add r3, r31, r0
 /* 802795C4 00275404  38 63 00 70 */	addi r3, r3, 0x70
 /* 802795C8 00275408  38 81 00 08 */	addi r4, r1, 0x8
-/* 802795CC 0027540C  4B F2 AE 19 */	bl lbl_801A43E4
+/* 802795CC 0027540C  4B F2 AE 19 */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 802795D0 00275410  80 7F 00 6C */	lwz r3, 0x6c(r31)
 /* 802795D4 00275414  38 03 00 01 */	addi r0, r3, 0x1
 /* 802795D8 00275418  90 1F 00 6C */	stw r0, 0x6c(r31)

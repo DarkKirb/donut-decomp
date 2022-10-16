@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80463920
-lbl_80463920:
+.global "@52048_80463920"
+"@52048_80463920":
 
 	.4byte 0x5061636B
 	.4byte 0x6167654C
@@ -37,18 +37,18 @@ lbl_80463920:
 	.4byte 0x6E2E646E
 	.4byte 0
 
-.global lbl_804639A0
-lbl_804639A0:
+.global __vt__Q33scn11packagelist16ScenePackageList
+__vt__Q33scn11packagelist16ScenePackageList:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8021CCC4
-	.4byte lbl_8021CB90
-	.4byte lbl_8021CC24
-	.4byte lbl_8021CBFC
-	.4byte lbl_8021CC4C
-	.4byte lbl_8021CC74
-	.4byte lbl_8021CC9C
+	.4byte GetRuntimeTypeInfo__Q33scn11packagelist16ScenePackageListCFv
+	.4byte __dt__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateMain__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateUseGPU__Q33scn11packagelist16ScenePackageListFv
+	.4byte updateDebug__Q33scn11packagelist16ScenePackageListFv
+	.4byte draw__Q33scn11packagelist16ScenePackageListFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn11packagelist16ScenePackageListCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

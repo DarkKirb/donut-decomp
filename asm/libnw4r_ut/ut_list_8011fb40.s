@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011FB40
-lbl_8011FB40:
+.global List_Insert__Q24nw4r2utFPQ34nw4r2ut4ListPvPv
+List_Insert__Q24nw4r2utFPQ34nw4r2ut4ListPvPv:
 /* 8011FB40 0011B980  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8011FB44 0011B984  40 82 00 74 */	bne lbl_8011FBB8
 /* 8011FB48 0011B988  80 03 00 00 */	lwz r0, 0x0(r3)
@@ -83,8 +83,8 @@ lbl_8011FC2C:
 /* 8011FC54 0011BA94  38 04 00 01 */	addi r0, r4, 0x1
 /* 8011FC58 0011BA98  B0 03 00 08 */	sth r0, 0x8(r3)
 /* 8011FC5C 0011BA9C  4E 80 00 20 */	blr
-.global lbl_8011FC60
-lbl_8011FC60:
+.global List_GetPrev__Q24nw4r2utFPCQ34nw4r2ut4ListPCv
+List_GetPrev__Q24nw4r2utFPCQ34nw4r2ut4ListPCv:
 /* 8011FC60 0011BAA0  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8011FC64 0011BAA4  40 82 00 0C */	bne lbl_8011FC70
 /* 8011FC68 0011BAA8  80 63 00 04 */	lwz r3, 0x4(r3)

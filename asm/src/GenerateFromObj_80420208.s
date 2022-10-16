@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420208
-lbl_80420208:
+.global "T_ODDS_ENEMY_1__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDS_ENEMY_1__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -22,8 +22,8 @@ lbl_80420208:
 	.4byte 0x00000032
 	.4byte 0x00000064
 
-.global lbl_8042024C
-lbl_8042024C:
+.global "T_ODDS_ENEMY_2__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDS_ENEMY_2__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -39,8 +39,8 @@ lbl_8042024C:
 	.4byte 0x0000005A
 	.4byte 0x00000064
 
-.global lbl_80420280
-lbl_80420280:
+.global "T_ODDS_ENEMY_3__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@"
+"T_ODDS_ENEMY_3__Q43scn4step4item29@unnamed@GenerateFromObj_cpp@":
 
 	.4byte 0
 	.4byte 0

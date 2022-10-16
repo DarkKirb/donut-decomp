@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80466F40
-lbl_80466F40:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta11StatePraise,PQ43scn4step4boss4Boss>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta11StatePraise,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8024AF10
-	.4byte lbl_8024AEF4
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta11StatePraise,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss10creditmeta11StatePraise,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80466F50
-lbl_80466F50:
+.global __vt__Q53scn4step4boss10creditmeta11StatePraise
+__vt__Q53scn4step4boss10creditmeta11StatePraise:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8024AE14
-	.4byte lbl_8024AE18
-	.4byte lbl_8024AE9C
-	.4byte lbl_802344FC
-	.4byte lbl_8024AEF0
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.4byte procAnim__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.4byte procMove__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditmeta11StatePraiseFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

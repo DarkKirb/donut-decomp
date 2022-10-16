@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804163D0
-lbl_804163D0:
+.global "T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19@unnamed@Guard_cpp@"
+"T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19@unnamed@Guard_cpp@":
 
 	.4byte 0x3F800000
 	.4byte 0x3F333333

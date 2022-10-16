@@ -1,25 +1,25 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80128780
-lbl_80128780:
-/* 80128780 001245C0  3C 80 80 44 */	lis r4, lbl_804429E0@ha
+.global __ct__Q210homebutton18GroupAnmControllerFv
+__ct__Q210homebutton18GroupAnmControllerFv:
+/* 80128780 001245C0  3C 80 80 44 */	lis r4, __vt__Q210homebutton18GroupAnmController@ha
 /* 80128784 001245C4  38 00 00 00 */	li r0, 0x0
-/* 80128788 001245C8  38 84 29 E0 */	addi r4, r4, lbl_804429E0@l
+/* 80128788 001245C8  38 84 29 E0 */	addi r4, r4, __vt__Q210homebutton18GroupAnmController@l
 /* 8012878C 001245CC  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80128790 001245D0  90 03 00 20 */	stw r0, 0x20(r3)
 /* 80128794 001245D4  90 03 00 24 */	stw r0, 0x24(r3)
 /* 80128798 001245D8  4E 80 00 20 */	blr
 /* 8012879C 001245DC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801287A0
-lbl_801287A0:
-/* 801287A0 001245E0  4B F7 C6 10 */	b lbl_800A4DB0
+.global __dt__Q210homebutton18GroupAnmControllerFv
+__dt__Q210homebutton18GroupAnmControllerFv:
+/* 801287A0 001245E0  4B F7 C6 10 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 801287A4 001245E4  00 00 00 00 */	.4byte 0x00000000
 /* 801287A8 001245E8  00 00 00 00 */	.4byte 0x00000000
 /* 801287AC 001245EC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801287B0
-lbl_801287B0:
+.global do_calc__Q210homebutton18GroupAnmControllerFv
+do_calc__Q210homebutton18GroupAnmControllerFv:
 /* 801287B0 001245F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801287B4 001245F4  7C 08 02 A6 */	mflr r0
 /* 801287B8 001245F8  90 01 00 24 */	stw r0, 0x24(r1)

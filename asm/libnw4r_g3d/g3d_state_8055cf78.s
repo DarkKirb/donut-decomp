@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CF78
-lbl_8055CF78:
+.global "sIsGXCullModeInversed__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sIsGXCullModeInversed__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x4
 
-.global lbl_8055CF7C
-lbl_8055CF7C:
+.global "sSyncGX__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sSyncGX__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x4
 
-.global lbl_8055CF80
-lbl_8055CF80:
+.global "sCurrMtx__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sCurrMtx__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x4
 
-.global lbl_8055CF84
-lbl_8055CF84:
+.global "sPostTexMtx__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sPostTexMtx__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x4
 
-.global lbl_8055CF88
-lbl_8055CF88:
+.global "sTev__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sTev__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x4
 
-.global lbl_8055CF8C
-lbl_8055CF8C:
+.global "@GUARD@GetViewNrmMtxPtr__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@19PosNrmMtxArrayStateCFUl@m"
+"@GUARD@GetViewNrmMtxPtr__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@19PosNrmMtxArrayStateCFUl@m":
 	.skip 0x4
 
-.global lbl_8055CF90
-lbl_8055CF90:
+.global "sMisc__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sMisc__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x8

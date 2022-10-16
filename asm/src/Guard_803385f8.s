@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803385F8
-lbl_803385F8:
+.global __ct__Q43scn4step4hero5GuardFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero5GuardFRQ43scn4step4hero4Hero:
 /* 803385F8 00334438  90 83 00 00 */	stw r4, 0x0(r3)
 /* 803385FC 0033443C  38 00 00 00 */	li r0, 0x0
 /* 80338600 00334440  98 03 00 04 */	stb r0, 0x4(r3)
 /* 80338604 00334444  98 03 00 05 */	stb r0, 0x5(r3)
 /* 80338608 00334448  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8033860C 0033444C  4E 80 00 20 */	blr
-.global lbl_80338610
-lbl_80338610:
+.global update__Q43scn4step4hero5GuardFv
+update__Q43scn4step4hero5GuardFv:
 /* 80338610 00334450  88 03 00 04 */	lbz r0, 0x4(r3)
 /* 80338614 00334454  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80338618 00334458  41 82 00 20 */	beq lbl_80338638
@@ -26,8 +26,8 @@ lbl_80338638:
 /* 80338638 00334478  88 03 00 04 */	lbz r0, 0x4(r3)
 /* 8033863C 0033447C  98 03 00 05 */	stb r0, 0x5(r3)
 /* 80338640 00334480  4E 80 00 20 */	blr
-.global lbl_80338644
-lbl_80338644:
+.global setGuard__Q43scn4step4hero5GuardFb
+setGuard__Q43scn4step4hero5GuardFb:
 /* 80338644 00334484  98 83 00 04 */	stb r4, 0x4(r3)
 /* 80338648 00334488  88 03 00 05 */	lbz r0, 0x5(r3)
 /* 8033864C 0033448C  2C 00 00 00 */	cmpwi r0, 0x0
@@ -35,10 +35,10 @@ lbl_80338644:
 /* 80338654 00334494  54 80 06 3E */	clrlwi r0, r4, 24
 /* 80338658 00334498  28 00 00 01 */	cmplwi r0, 0x1
 /* 8033865C 0033449C  4C 82 00 20 */	bnelr
-/* 80338660 003344A0  48 0C 5E D8 */	b lbl_803FE538
+/* 80338660 003344A0  48 0C 5E D8 */	b onChildSequenceEnd__Q23seq17SequenceGrandMenuFRQ23seq9ISequence
 /* 80338664 003344A4  4E 80 00 20 */	blr
-.global lbl_80338668
-lbl_80338668:
+.global getColor__Q43scn4step4hero5GuardCFv
+getColor__Q43scn4step4hero5GuardCFv:
 /* 80338668 003344A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8033866C 003344AC  38 80 00 00 */	li r4, 0x0
 /* 80338670 003344B0  88 03 00 04 */	lbz r0, 0x4(r3)
@@ -46,8 +46,8 @@ lbl_80338668:
 /* 80338678 003344B8  41 82 00 18 */	beq lbl_80338690
 /* 8033867C 003344BC  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 80338680 003344C0  54 00 10 3A */	slwi r0, r0, 2
-/* 80338684 003344C4  3C 60 80 42 */	lis r3, lbl_80419D00@ha
-/* 80338688 003344C8  38 63 9D 00 */	addi r3, r3, lbl_80419D00@l
+/* 80338684 003344C4  3C 60 80 42 */	lis r3, "T_ALPHA_TABLE__19@unnamed@Guard_cpp@"@ha
+/* 80338688 003344C8  38 63 9D 00 */	addi r3, r3, "T_ALPHA_TABLE__19@unnamed@Guard_cpp@"@l
 /* 8033868C 003344CC  7C 83 00 2E */	lwzx r4, r3, r0
 .global lbl_80338690
 lbl_80338690:

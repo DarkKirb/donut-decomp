@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047BFC8
-lbl_8047BFC8:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DFEFC
-	.4byte lbl_802DFEDC
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateWait,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047BFD8
-lbl_8047BFD8:
+.global __vt__Q53scn4step5enemy6shotzo8BrainFix
+__vt__Q53scn4step5enemy6shotzo8BrainFix:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DFEF8
-	.4byte lbl_802DFDDC
-	.4byte lbl_8027EE2C
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy6shotzo8BrainFixFv
+	.4byte onStart__Q53scn4step5enemy6shotzo8BrainFixFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

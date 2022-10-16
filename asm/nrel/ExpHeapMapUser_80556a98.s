@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556A98
-lbl_80556A98:
+.global __RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser
+__RTTI__Q44nrel6devkit7heapmap14ExpHeapMapUser:
 
-	.4byte lbl_80446C88
-	.4byte lbl_80446CB0
+	.4byte "@2500"
+	.4byte "@2501"
 
-.global lbl_80556AA0
-lbl_80556AA0:
+.global __RTTI__Q44nrel6devkit7heapmap12IHeapMapUser
+__RTTI__Q44nrel6devkit7heapmap12IHeapMapUser:
 
-	.4byte lbl_80446CF0
+	.4byte "@2502"
 	.4byte 0

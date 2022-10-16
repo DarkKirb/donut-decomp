@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048CFB8
-lbl_8048CFB8:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword21StateSwordChoppingHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword21StateSwordChoppingHit,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80387798
-	.4byte lbl_80387778
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword21StateSwordChoppingHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword21StateSwordChoppingHit,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048CFC8
-lbl_8048CFC8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80387794
-	.4byte lbl_80387758
-
-.global lbl_8048CFD8
-lbl_8048CFD8:
+.global "__vt__Q24util100StateFactoryArg2<Q24util6IState,Q53scn4step4hero5sword18StateSwordChopping,PQ43scn4step4hero4Hero,b>"
+"__vt__Q24util100StateFactoryArg2<Q24util6IState,Q53scn4step4hero5sword18StateSwordChopping,PQ43scn4step4hero4Hero,b>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803875A4
-	.4byte lbl_803875A8
-	.4byte lbl_80387688
-	.4byte lbl_8035550C
-	.4byte lbl_8038768C
-	.4byte lbl_803876B8
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util100StateFactoryArg2<Q24util6IState,Q53scn4step4hero5sword18StateSwordChopping,PQ43scn4step4hero4Hero,b>Fv"
+	.4byte "create__Q24util100StateFactoryArg2<Q24util6IState,Q53scn4step4hero5sword18StateSwordChopping,PQ43scn4step4hero4Hero,b>Fv"
+
+.global __vt__Q53scn4step4hero5sword18StateSwordChopping
+__vt__Q53scn4step4hero5sword18StateSwordChopping:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.4byte procAnim__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.4byte procMove__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.4byte procObjCollReact__Q53scn4step4hero5sword18StateSwordChoppingFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

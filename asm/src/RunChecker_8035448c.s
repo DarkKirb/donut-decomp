@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8035448C
-lbl_8035448C:
+.global __ct__Q43scn4step4hero10RunCheckerFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero10RunCheckerFRQ43scn4step4hero4Hero:
 /* 8035448C 003502CC  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80354490 003502D0  38 00 00 00 */	li r0, 0x0
 /* 80354494 003502D4  90 03 00 04 */	stw r0, 0x4(r3)
@@ -12,37 +12,37 @@ lbl_8035448C:
 /* 803544A4 003502E4  98 03 00 14 */	stb r0, 0x14(r3)
 /* 803544A8 003502E8  98 03 00 15 */	stb r0, 0x15(r3)
 /* 803544AC 003502EC  4E 80 00 20 */	blr
-.global lbl_803544B0
-lbl_803544B0:
+.global update__Q43scn4step4hero10RunCheckerFv
+update__Q43scn4step4hero10RunCheckerFv:
 /* 803544B0 003502F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803544B4 003502F4  7C 08 02 A6 */	mflr r0
 /* 803544B8 003502F8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803544BC 003502FC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 803544C0 00350300  7C 7F 1B 78 */	mr r31, r3
-/* 803544C4 00350304  48 00 01 41 */	bl lbl_80354604
+/* 803544C4 00350304  48 00 01 41 */	bl updateEnableRunFrame__Q43scn4step4hero10RunCheckerFv
 /* 803544C8 00350308  7F E3 FB 78 */	mr r3, r31
-/* 803544CC 0035030C  48 00 01 FD */	bl lbl_803546C8
+/* 803544CC 0035030C  48 00 01 FD */	bl updateGroundContinue__Q43scn4step4hero10RunCheckerFv
 /* 803544D0 00350310  7F E3 FB 78 */	mr r3, r31
-/* 803544D4 00350314  48 00 01 B1 */	bl lbl_80354684
+/* 803544D4 00350314  48 00 01 B1 */	bl updateAirContinue__Q43scn4step4hero10RunCheckerFv
 /* 803544D8 00350318  7F E3 FB 78 */	mr r3, r31
-/* 803544DC 0035031C  48 00 02 51 */	bl lbl_8035472C
+/* 803544DC 0035031C  48 00 02 51 */	bl updatePrevKey__Q43scn4step4hero10RunCheckerFv
 /* 803544E0 00350320  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803544E4 00350324  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803544E8 00350328  7C 08 03 A6 */	mtlr r0
 /* 803544EC 0035032C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803544F0 00350330  4E 80 00 20 */	blr
-.global lbl_803544F4
-lbl_803544F4:
+.global isEnableRun__Q43scn4step4hero10RunCheckerCFv
+isEnableRun__Q43scn4step4hero10RunCheckerCFv:
 /* 803544F4 00350334  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 803544F8 00350338  7C 08 02 A6 */	mflr r0
 /* 803544FC 0035033C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80354500 00350340  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 80354504 00350344  7C 7F 1B 78 */	mr r31, r3
 /* 80354508 00350348  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8035450C 0035034C  4B FE BE 31 */	bl lbl_8034033C
+/* 8035450C 0035034C  4B FE BE 31 */	bl mapColl__Q43scn4step4hero4HeroFv
 /* 80354510 00350350  7C 64 1B 78 */	mr r4, r3
 /* 80354514 00350354  38 61 00 08 */	addi r3, r1, 0x8
-/* 80354518 00350358  4B FE 0A 59 */	bl lbl_80334F70
+/* 80354518 00350358  4B FE 0A 59 */	bl result__Q43scn4step4hero7MapCollCFv
 /* 8035451C 0035035C  88 01 00 08 */	lbz r0, 0x8(r1)
 /* 80354520 00350360  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80354524 00350364  40 82 00 0C */	bne lbl_80354530
@@ -61,7 +61,7 @@ lbl_80354544:
 /* 80354548 00350388  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8035454C 0035038C  41 82 00 1C */	beq lbl_80354568
 /* 80354550 00350390  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80354554 00350394  48 00 1C C5 */	bl lbl_80356218
+/* 80354554 00350394  48 00 1C C5 */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 80354558 00350398  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8035455C 0035039C  41 82 00 0C */	beq lbl_80354568
 /* 80354560 003503A0  38 60 00 01 */	li r3, 0x1
@@ -74,7 +74,7 @@ lbl_80354568:
 /* 80354574 003503B4  28 00 00 0C */	cmplwi r0, 0xc
 /* 80354578 003503B8  40 80 00 1C */	bge lbl_80354594
 /* 8035457C 003503BC  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80354580 003503C0  48 00 1D 1D */	bl lbl_8035629C
+/* 80354580 003503C0  48 00 1D 1D */	bl IsTriggerHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 80354584 003503C4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80354588 003503C8  41 82 00 0C */	beq lbl_80354594
 /* 8035458C 003503CC  38 60 00 01 */	li r3, 0x1
@@ -87,9 +87,9 @@ lbl_80354594:
 /* 803545A0 003503E0  28 00 00 0C */	cmplwi r0, 0xc
 /* 803545A4 003503E4  40 80 00 24 */	bge lbl_803545C8
 /* 803545A8 003503E8  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 803545AC 003503EC  4B FE BD A1 */	bl lbl_8034034C
+/* 803545AC 003503EC  4B FE BD A1 */	bl hid__Q43scn4step4hero4HeroFv
 /* 803545B0 003503F0  80 9F 00 0C */	lwz r4, 0xc(r31)
-/* 803545B4 003503F4  4B FE C8 39 */	bl lbl_80340DEC
+/* 803545B4 003503F4  4B FE C8 39 */	bl isTrigger__Q43scn4step4hero3HidCFUl
 /* 803545B8 003503F8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803545BC 003503FC  41 82 00 0C */	beq lbl_803545C8
 /* 803545C0 00350400  38 60 00 01 */	li r3, 0x1
@@ -104,21 +104,21 @@ lbl_803545CC:
 /* 803545D4 00350414  7C 08 03 A6 */	mtlr r0
 /* 803545D8 00350418  38 21 00 40 */	addi r1, r1, 0x40
 /* 803545DC 0035041C  4E 80 00 20 */	blr
-.global lbl_803545E0
-lbl_803545E0:
+.global setGroundContinue__Q43scn4step4hero10RunCheckerFv
+setGroundContinue__Q43scn4step4hero10RunCheckerFv:
 /* 803545E0 00350420  38 00 00 01 */	li r0, 0x1
 /* 803545E4 00350424  98 03 00 15 */	stb r0, 0x15(r3)
 /* 803545E8 00350428  38 00 00 06 */	li r0, 0x6
 /* 803545EC 0035042C  90 03 00 10 */	stw r0, 0x10(r3)
 /* 803545F0 00350430  4E 80 00 20 */	blr
-.global lbl_803545F4
-lbl_803545F4:
+.global cancelContinue__Q43scn4step4hero10RunCheckerFv
+cancelContinue__Q43scn4step4hero10RunCheckerFv:
 /* 803545F4 00350434  38 00 00 00 */	li r0, 0x0
 /* 803545F8 00350438  98 03 00 14 */	stb r0, 0x14(r3)
 /* 803545FC 0035043C  98 03 00 15 */	stb r0, 0x15(r3)
 /* 80354600 00350440  4E 80 00 20 */	blr
-.global lbl_80354604
-lbl_80354604:
+.global updateEnableRunFrame__Q43scn4step4hero10RunCheckerFv
+updateEnableRunFrame__Q43scn4step4hero10RunCheckerFv:
 /* 80354604 00350444  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80354608 00350448  7C 08 02 A6 */	mflr r0
 /* 8035460C 0035044C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -139,7 +139,7 @@ lbl_8035462C:
 .global lbl_80354640
 lbl_80354640:
 /* 80354640 00350480  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80354644 00350484  48 00 1C 59 */	bl lbl_8035629C
+/* 80354644 00350484  48 00 1C 59 */	bl IsTriggerHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 80354648 00350488  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8035464C 0035048C  41 82 00 0C */	beq lbl_80354658
 /* 80354650 00350490  38 00 00 0C */	li r0, 0xc
@@ -147,7 +147,7 @@ lbl_80354640:
 .global lbl_80354658
 lbl_80354658:
 /* 80354658 00350498  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 8035465C 0035049C  48 00 1B BD */	bl lbl_80356218
+/* 8035465C 0035049C  48 00 1B BD */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 80354660 003504A0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80354664 003504A4  41 82 00 0C */	beq lbl_80354670
 /* 80354668 003504A8  38 00 00 0C */	li r0, 0xc
@@ -159,16 +159,16 @@ lbl_80354670:
 /* 80354678 003504B8  7C 08 03 A6 */	mtlr r0
 /* 8035467C 003504BC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80354680 003504C0  4E 80 00 20 */	blr
-.global lbl_80354684
-lbl_80354684:
+.global updateAirContinue__Q43scn4step4hero10RunCheckerFv
+updateAirContinue__Q43scn4step4hero10RunCheckerFv:
 /* 80354684 003504C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80354688 003504C8  7C 08 02 A6 */	mflr r0
 /* 8035468C 003504CC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80354690 003504D0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80354694 003504D4  7C 7F 1B 78 */	mr r31, r3
 /* 80354698 003504D8  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8035469C 003504DC  4B FE BC 61 */	bl lbl_803402FC
-/* 803546A0 003504E0  4B E2 D0 35 */	bl lbl_801816D4
+/* 8035469C 003504DC  4B FE BC 61 */	bl footState__Q43scn4step4hero4HeroFv
+/* 803546A0 003504E0  4B E2 D0 35 */	bl dataType__Q36effect6detail10GenContextCFv
 /* 803546A4 003504E4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803546A8 003504E8  41 82 00 0C */	beq lbl_803546B4
 /* 803546AC 003504EC  38 00 00 00 */	li r0, 0x0
@@ -180,16 +180,16 @@ lbl_803546B4:
 /* 803546BC 003504FC  7C 08 03 A6 */	mtlr r0
 /* 803546C0 00350500  38 21 00 10 */	addi r1, r1, 0x10
 /* 803546C4 00350504  4E 80 00 20 */	blr
-.global lbl_803546C8
-lbl_803546C8:
+.global updateGroundContinue__Q43scn4step4hero10RunCheckerFv
+updateGroundContinue__Q43scn4step4hero10RunCheckerFv:
 /* 803546C8 00350508  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803546CC 0035050C  7C 08 02 A6 */	mflr r0
 /* 803546D0 00350510  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803546D4 00350514  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 803546D8 00350518  7C 7F 1B 78 */	mr r31, r3
 /* 803546DC 0035051C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 803546E0 00350520  4B FE BC 1D */	bl lbl_803402FC
-/* 803546E4 00350524  4B E4 57 D5 */	bl lbl_80199EB8
+/* 803546E0 00350520  4B FE BC 1D */	bl footState__Q43scn4step4hero4HeroFv
+/* 803546E4 00350524  4B E4 57 D5 */	bl isAir__Q24gobj9FootStateCFv
 /* 803546E8 00350528  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803546EC 0035052C  41 82 00 0C */	beq lbl_803546F8
 /* 803546F0 00350530  38 00 00 00 */	li r0, 0x0
@@ -213,17 +213,17 @@ lbl_80354718:
 /* 80354720 00350560  7C 08 03 A6 */	mtlr r0
 /* 80354724 00350564  38 21 00 10 */	addi r1, r1, 0x10
 /* 80354728 00350568  4E 80 00 20 */	blr
-.global lbl_8035472C
-lbl_8035472C:
+.global updatePrevKey__Q43scn4step4hero10RunCheckerFv
+updatePrevKey__Q43scn4step4hero10RunCheckerFv:
 /* 8035472C 0035056C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80354730 00350570  7C 08 02 A6 */	mflr r0
 /* 80354734 00350574  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80354738 00350578  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8035473C 0035057C  7C 7F 1B 78 */	mr r31, r3
 /* 80354740 00350580  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80354744 00350584  4B FE BC 09 */	bl lbl_8034034C
+/* 80354744 00350584  4B FE BC 09 */	bl hid__Q43scn4step4hero4HeroFv
 /* 80354748 00350588  38 80 00 02 */	li r4, 0x2
-/* 8035474C 0035058C  4B E4 DB 09 */	bl lbl_801A2254
+/* 8035474C 0035058C  4B E4 DB 09 */	bl isTrigger__Q23hid6ButtonCFUl
 /* 80354750 00350590  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80354754 00350594  41 82 00 0C */	beq lbl_80354760
 /* 80354758 00350598  38 00 00 02 */	li r0, 0x2
@@ -231,9 +231,9 @@ lbl_8035472C:
 .global lbl_80354760
 lbl_80354760:
 /* 80354760 003505A0  80 7F 00 00 */	lwz r3, 0x0(r31)
-/* 80354764 003505A4  4B FE BB E9 */	bl lbl_8034034C
+/* 80354764 003505A4  4B FE BB E9 */	bl hid__Q43scn4step4hero4HeroFv
 /* 80354768 003505A8  38 80 00 01 */	li r4, 0x1
-/* 8035476C 003505AC  4B E4 DA E9 */	bl lbl_801A2254
+/* 8035476C 003505AC  4B E4 DA E9 */	bl isTrigger__Q23hid6ButtonCFUl
 /* 80354770 003505B0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80354774 003505B4  41 82 00 0C */	beq lbl_80354780
 /* 80354778 003505B8  38 00 00 01 */	li r0, 0x1

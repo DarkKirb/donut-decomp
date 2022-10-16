@@ -1,9 +1,9 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800FE910
-lbl_800FE910:
-/* 800FE910 000FA750  C0 02 92 58 */	lfs f0, lbl_8055F1D8@sda21(r2)
+.global FExp__Q34nw4r4math6detailFf
+FExp__Q34nw4r4math6detailFf:
+/* 800FE910 000FA750  C0 02 92 58 */	lfs f0, "@2456"@sda21(r2)
 /* 800FE914 000FA754  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800FE918 000FA758  EC 00 00 72 */	fmuls f0, f0, f1
 /* 800FE91C 000FA75C  38 61 00 20 */	addi r3, r1, 0x20
@@ -14,9 +14,9 @@ lbl_800FE910:
 /* 800FE930 000FA770  B0 01 00 0E */	sth r0, 0xe(r1)
 /* 800FE934 000FA774  E0 83 D0 00 */	psq_l f4, 0x0(r3), 1, qr5
 /* 800FE938 000FA778  38 61 00 18 */	addi r3, r1, 0x18
-/* 800FE93C 000FA77C  C0 62 92 5C */	lfs f3, lbl_8055F1DC@sda21(r2)
+/* 800FE93C 000FA77C  C0 62 92 5C */	lfs f3, "@2457_8055F1DC"@sda21(r2)
 /* 800FE940 000FA780  FC 40 20 18 */	frsp f2, f4
-/* 800FE944 000FA784  C0 02 92 60 */	lfs f0, lbl_8055F1E0@sda21(r2)
+/* 800FE944 000FA784  C0 02 92 60 */	lfs f0, "@2458"@sda21(r2)
 /* 800FE948 000FA788  D0 81 00 1C */	stfs f4, 0x1c(r1)
 /* 800FE94C 000FA78C  EC 43 00 B2 */	fmuls f2, f3, f2
 /* 800FE950 000FA790  EC 21 10 28 */	fsubs f1, f1, f2
@@ -28,10 +28,10 @@ lbl_800FE910:
 /* 800FE968 000FA7A8  B0 81 00 0A */	sth r4, 0xa(r1)
 /* 800FE96C 000FA7AC  B0 81 00 08 */	sth r4, 0x8(r1)
 /* 800FE970 000FA7B0  E0 03 B0 00 */	psq_l f0, 0x0(r3), 1, qr3
-/* 800FE974 000FA7B4  3C A0 80 44 */	lis r5, lbl_804415C0@ha
+/* 800FE974 000FA7B4  3C A0 80 44 */	lis r5, "sExpTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"@ha
 /* 800FE978 000FA7B8  54 86 18 38 */	slwi r6, r4, 3
 /* 800FE97C 000FA7BC  54 03 B8 10 */	slwi r3, r0, 23
-/* 800FE980 000FA7C0  38 A5 15 C0 */	addi r5, r5, lbl_804415C0@l
+/* 800FE980 000FA7C0  38 A5 15 C0 */	addi r5, r5, "sExpTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"@l
 /* 800FE984 000FA7C4  EC 41 00 28 */	fsubs f2, f1, f0
 /* 800FE988 000FA7C8  7C 85 32 14 */	add r4, r5, r6
 /* 800FE98C 000FA7CC  7C 05 34 2E */	lfsx f0, r5, r6
@@ -47,8 +47,8 @@ lbl_800FE910:
 /* 800FE9B4 000FA7F4  38 21 00 30 */	addi r1, r1, 0x30
 /* 800FE9B8 000FA7F8  4E 80 00 20 */	blr
 /* 800FE9BC 000FA7FC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800FE9C0
-lbl_800FE9C0:
+.global FLog__Q34nw4r4math6detailFf
+FLog__Q34nw4r4math6detailFf:
 /* 800FE9C0 000FA800  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800FE9C4 000FA804  D0 21 00 20 */	stfs f1, 0x20(r1)
 /* 800FE9C8 000FA808  38 61 00 0C */	addi r3, r1, 0xc
@@ -64,8 +64,8 @@ lbl_800FE9C0:
 /* 800FE9F0 000FA830  C0 81 00 1C */	lfs f4, 0x1c(r1)
 /* 800FE9F4 000FA834  E0 43 D0 00 */	psq_l f2, 0x0(r3), 1, qr5
 /* 800FE9F8 000FA838  38 61 00 10 */	addi r3, r1, 0x10
-/* 800FE9FC 000FA83C  C0 22 92 68 */	lfs f1, lbl_8055F1E8@sda21(r2)
-/* 800FEA00 000FA840  C0 02 92 64 */	lfs f0, lbl_8055F1E4@sda21(r2)
+/* 800FE9FC 000FA83C  C0 22 92 68 */	lfs f1, "@2495"@sda21(r2)
+/* 800FEA00 000FA840  C0 02 92 64 */	lfs f0, "@2494"@sda21(r2)
 /* 800FEA04 000FA844  FC 60 10 18 */	frsp f3, f2
 /* 800FEA08 000FA848  EC 24 08 28 */	fsubs f1, f4, f1
 /* 800FEA0C 000FA84C  D0 41 00 14 */	stfs f2, 0x14(r1)
@@ -76,10 +76,10 @@ lbl_800FE9C0:
 /* 800FEA20 000FA860  B0 01 00 0A */	sth r0, 0xa(r1)
 /* 800FEA24 000FA864  B0 01 00 08 */	sth r0, 0x8(r1)
 /* 800FEA28 000FA868  E0 23 B0 00 */	psq_l f1, 0x0(r3), 1, qr3
-/* 800FEA2C 000FA86C  3C 80 80 44 */	lis r4, lbl_804416C8@ha
-/* 800FEA30 000FA870  C0 02 92 5C */	lfs f0, lbl_8055F1DC@sda21(r2)
+/* 800FEA2C 000FA86C  3C 80 80 44 */	lis r4, "sLogTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"@ha
+/* 800FEA30 000FA870  C0 02 92 5C */	lfs f0, "@2457_8055F1DC"@sda21(r2)
 /* 800FEA34 000FA874  54 00 18 38 */	slwi r0, r0, 3
-/* 800FEA38 000FA878  38 84 16 C8 */	addi r4, r4, lbl_804416C8@l
+/* 800FEA38 000FA878  38 84 16 C8 */	addi r4, r4, "sLogTbl__Q34nw4r4math29@unnamed@math_arithmetic_cpp@"@l
 /* 800FEA3C 000FA87C  EC 82 08 28 */	fsubs f4, f2, f1
 /* 800FEA40 000FA880  7C 64 02 14 */	add r3, r4, r0
 /* 800FEA44 000FA884  7C 24 04 2E */	lfsx f1, r4, r0
@@ -93,11 +93,11 @@ lbl_800FE9C0:
 /* 800FEA64 000FA8A4  00 00 00 00 */	.4byte 0x00000000
 /* 800FEA68 000FA8A8  00 00 00 00 */	.4byte 0x00000000
 /* 800FEA6C 000FA8AC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800FEA70
-lbl_800FEA70:
+.global FrSqrt__Q24nw4r4mathFf
+FrSqrt__Q24nw4r4mathFf:
 /* 800FEA70 000FA8B0  FC 00 08 34 */	frsqrte f0, f1
-/* 800FEA74 000FA8B4  C0 42 92 6C */	lfs f2, lbl_8055F1EC@sda21(r2)
-/* 800FEA78 000FA8B8  C0 62 92 70 */	lfs f3, lbl_8055F1F0@sda21(r2)
+/* 800FEA74 000FA8B4  C0 42 92 6C */	lfs f2, "@2497"@sda21(r2)
+/* 800FEA78 000FA8B8  C0 62 92 70 */	lfs f3, "@2498"@sda21(r2)
 /* 800FEA7C 000FA8BC  EC 80 00 32 */	fmuls f4, f0, f0
 /* 800FEA80 000FA8C0  EC 00 00 B2 */	fmuls f0, f0, f2
 /* 800FEA84 000FA8C4  EC 84 18 7C */	fnmsubs f4, f4, f1, f3

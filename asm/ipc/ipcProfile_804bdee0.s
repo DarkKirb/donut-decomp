@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804BDEE0
-lbl_804BDEE0:
+.global IpcReqArray
+IpcReqArray:
 	.skip 0x2130
 
 .global lbl_804C0010

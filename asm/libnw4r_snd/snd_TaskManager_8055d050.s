@@ -1,6 +1,6 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D050
-lbl_8055D050:
+.global "@GUARD@GetInstance__Q44nw4r3snd6detail11TaskManagerFv@instance"
+"@GUARD@GetInstance__Q44nw4r3snd6detail11TaskManagerFv@instance":
 	.skip 0x8

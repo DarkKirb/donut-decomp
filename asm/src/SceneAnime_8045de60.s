@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045DE60
-lbl_8045DE60:
+.global "@52934_8045DE60"
+"@52934_8045DE60":
 
 	.4byte 0x416E696D
 	.4byte 0x65436F6D
@@ -35,22 +35,22 @@ lbl_8045DE60:
 	.4byte 0x6E2E646E
 	.4byte 0
 
-.global lbl_8045DED8
-lbl_8045DED8:
+.global __vt__Q33scn5anime10SceneAnime
+__vt__Q33scn5anime10SceneAnime:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801E2F7C
-	.4byte lbl_801E2E08
-	.4byte lbl_801E2E9C
-	.4byte lbl_801E2E74
-	.4byte lbl_801E2EC4
-	.4byte lbl_801E2EEC
-	.4byte lbl_801E2F24
+	.4byte GetRuntimeTypeInfo__Q33scn5anime10SceneAnimeCFv
+	.4byte __dt__Q33scn5anime10SceneAnimeFv
+	.4byte updateMain__Q33scn5anime10SceneAnimeFv
+	.4byte updateUseGPU__Q33scn5anime10SceneAnimeFv
+	.4byte updateDebug__Q33scn5anime10SceneAnimeFv
+	.4byte draw__Q33scn5anime10SceneAnimeFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn5anime10SceneAnimeCFv
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801E2F80
-	.4byte lbl_80175B68
+	.4byte GetRuntimeTypeInfo__Q23scn6ISceneCFv
+	.4byte __dt__Q23scn6ISceneFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

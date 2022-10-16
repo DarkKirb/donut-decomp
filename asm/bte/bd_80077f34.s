@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80077F34
-lbl_80077F34:
+.global bdcpy
+bdcpy:
 /* 80077F34 00073D74  89 24 00 00 */	lbz r9, 0x0(r4)
 /* 80077F38 00073D78  89 04 00 01 */	lbz r8, 0x1(r4)
 /* 80077F3C 00073D7C  88 E4 00 02 */	lbz r7, 0x2(r4)
@@ -16,8 +16,8 @@ lbl_80077F34:
 /* 80077F5C 00073D9C  98 A3 00 04 */	stb r5, 0x4(r3)
 /* 80077F60 00073DA0  98 03 00 05 */	stb r0, 0x5(r3)
 /* 80077F64 00073DA4  4E 80 00 20 */	blr
-.global lbl_80077F68
-lbl_80077F68:
+.global bdcmp
+bdcmp:
 /* 80077F68 00073DA8  88 A3 00 00 */	lbz r5, 0x0(r3)
 /* 80077F6C 00073DAC  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 80077F70 00073DB0  7C 05 00 40 */	cmplw r5, r0

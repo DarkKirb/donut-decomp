@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804485D8
-lbl_804485D8:
+.global VX2GolombCodeSigned
+VX2GolombCodeSigned:
 
 	.4byte 0
 	.4byte 0
@@ -8206,8 +8206,8 @@ lbl_80450006:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804505D8
-lbl_804505D8:
+.global VX2GolombCodeSignedSize
+VX2GolombCodeSignedSize:
 
 	.4byte 0x0000000F
 	.4byte 0x0000000F
@@ -8466,8 +8466,8 @@ lbl_804505D8:
 	.4byte 0x0000000F
 	.4byte 0
 
-.global lbl_804509D8
-lbl_804509D8:
+.global VX2GolombCode
+VX2GolombCode:
 
 	.4byte 0
 	.4byte 0
@@ -10518,8 +10518,8 @@ lbl_804509D8:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804529D8
-lbl_804529D8:
+.global VX2GolombCodeSize
+VX2GolombCodeSize:
 
 	.4byte 0x00000001
 	.4byte 0x00000003

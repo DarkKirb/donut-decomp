@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80459CB0
-lbl_80459CB0:
+.global __vt__Q23mem14HeapCompaction
+__vt__Q23mem14HeapCompaction:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801BD720
-	.4byte lbl_801BDC58
-	.4byte lbl_801BDC60
-	.4byte lbl_801BDC64
-	.4byte lbl_801BDCB4
-	.4byte lbl_801BDCB8
-	.4byte lbl_801BDCBC
-	.4byte lbl_801BDCC4
-	.4byte lbl_801BDCCC
-	.4byte lbl_801BDD44
+	.4byte __dt__Q23mem14HeapCompactionFv
+	.4byte heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte fragmentBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte totalHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte startAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte endAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte drawUsedBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte drawFragmentBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801BE1F0
-	.4byte lbl_801BE1E8
-	.4byte lbl_801BE1E0
-	.4byte lbl_801BDD48
-	.4byte lbl_801BDD88
+	.4byte "@4@__dt__Q23mem14HeapCompactionFv"
+	.4byte "@4@allocatorAlloc__Q23mem14HeapCompactionFUll"
+	.4byte "@4@allocatorFree__Q23mem14HeapCompactionFPv"
+	.4byte allocatorAlloc__Q23mem14HeapCompactionFUll
+	.4byte allocatorFree__Q23mem14HeapCompactionFPv
 
-.global lbl_80459CFC
-lbl_80459CFC:
+.global __vt__Q33mem14HeapCompaction22AllocFromTailAllocator
+__vt__Q33mem14HeapCompaction22AllocFromTailAllocator:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801BD6C4
-	.4byte lbl_801BE188
-	.4byte lbl_801BE1CC
+	.4byte __dt__Q33mem14HeapCompaction22AllocFromTailAllocatorFv
+	.4byte allocatorAlloc__Q33mem14HeapCompaction22AllocFromTailAllocatorFUll
+	.4byte allocatorFree__Q33mem14HeapCompaction22AllocFromTailAllocatorFPv

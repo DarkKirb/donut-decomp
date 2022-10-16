@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407CE8
-lbl_80407CE8:
+.global certn
+certn:
 
 	.4byte 0x00000010
 	.4byte 0xA3DC5F11
@@ -23,8 +23,8 @@ lbl_80407CE8:
 	.4byte 0x81194F1C
 	.4byte 0
 
-.global lbl_80407D30
-lbl_80407D30:
+.global certv
+certv:
 
 	.4byte 0x00000010
 	.4byte 0x99D2071A
@@ -45,8 +45,8 @@ lbl_80407D30:
 	.4byte 0x1AF308B6
 	.4byte 0
 
-.global lbl_80407D78
-lbl_80407D78:
+.global "@LOCAL@WPADControlDpd__FlUlPFll_v@cfg1"
+"@LOCAL@WPADControlDpd__FlUlPFll_v@cfg1":
 
 	.4byte 0x02000071
 	.4byte 0x01006400
@@ -61,8 +61,8 @@ lbl_80407D78:
 	.4byte 0x01007200
 	.4byte 0x20000000
 
-.global lbl_80407DA8
-lbl_80407DA8:
+.global "@LOCAL@WPADControlDpd__FlUlPFll_v@cfg2@0"
+"@LOCAL@WPADControlDpd__FlUlPFll_v@cfg2@0":
 
 	.4byte 0xFD05B304
 	.4byte 0x63033503

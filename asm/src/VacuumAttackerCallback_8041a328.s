@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8041A328
-lbl_8041A328:
+.global "SOUND_TABLE__36@unnamed@VacuumAttackerCallback_cpp@"
+"SOUND_TABLE__36@unnamed@VacuumAttackerCallback_cpp@":
 
 	.4byte 0x0000011F
 	.4byte 0x0000011F

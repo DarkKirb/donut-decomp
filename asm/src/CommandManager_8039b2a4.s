@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8039B2A4
-lbl_8039B2A4:
+.global __ct__Q53scn4step4hero7fighter14CommandManagerFRQ43scn4step4hero4Hero
+__ct__Q53scn4step4hero7fighter14CommandManagerFRQ43scn4step4hero4Hero:
 /* 8039B2A4 003970E4  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8039B2A8 003970E8  38 00 00 00 */	li r0, 0x0
 /* 8039B2AC 003970EC  98 03 00 04 */	stb r0, 0x4(r3)
@@ -11,8 +11,8 @@ lbl_8039B2A4:
 /* 8039B2B8 003970F8  38 00 00 02 */	li r0, 0x2
 /* 8039B2BC 003970FC  90 03 00 10 */	stw r0, 0x10(r3)
 /* 8039B2C0 00397100  4E 80 00 20 */	blr
-.global lbl_8039B2C4
-lbl_8039B2C4:
+.global update__Q53scn4step4hero7fighter14CommandManagerFv
+update__Q53scn4step4hero7fighter14CommandManagerFv:
 /* 8039B2C4 00397104  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8039B2C8 00397108  7C 08 02 A6 */	mflr r0
 /* 8039B2CC 0039710C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -33,9 +33,9 @@ lbl_8039B2C4:
 .global lbl_8039B308
 lbl_8039B308:
 /* 8039B308 00397148  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8039B30C 0039714C  4B FA 50 41 */	bl lbl_8034034C
+/* 8039B30C 0039714C  4B FA 50 41 */	bl hid__Q43scn4step4hero4HeroFv
 /* 8039B310 00397150  38 80 00 04 */	li r4, 0x4
-/* 8039B314 00397154  4B FA 5A D9 */	bl lbl_80340DEC
+/* 8039B314 00397154  4B FA 5A D9 */	bl isTrigger__Q43scn4step4hero3HidCFUl
 /* 8039B318 00397158  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8039B31C 0039715C  41 82 00 B8 */	beq lbl_8039B3D4
 /* 8039B320 00397160  38 00 00 01 */	li r0, 0x1
@@ -46,8 +46,8 @@ lbl_8039B308:
 .global lbl_8039B334
 lbl_8039B334:
 /* 8039B334 00397174  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8039B338 00397178  4B FA 4F A5 */	bl lbl_803402DC
-/* 8039B33C 0039717C  4B FB 5F 69 */	bl lbl_803512A4
+/* 8039B338 00397178  4B FA 4F A5 */	bl param__Q43scn4step4hero4HeroFv
+/* 8039B33C 0039717C  4B FB 5F 69 */	bl fighter__Q43scn4step4hero5ParamCFv
 /* 8039B340 00397180  80 63 01 48 */	lwz r3, 0x148(r3)
 /* 8039B344 00397184  80 1D 00 0C */	lwz r0, 0xc(r29)
 /* 8039B348 00397188  7C 00 18 40 */	cmplw r0, r3
@@ -58,9 +58,9 @@ lbl_8039B334:
 .global lbl_8039B35C
 lbl_8039B35C:
 /* 8039B35C 0039719C  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 8039B360 003971A0  4B FA 4F ED */	bl lbl_8034034C
+/* 8039B360 003971A0  4B FA 4F ED */	bl hid__Q43scn4step4hero4HeroFv
 /* 8039B364 003971A4  38 80 00 03 */	li r4, 0x3
-/* 8039B368 003971A8  4B FA 5A 85 */	bl lbl_80340DEC
+/* 8039B368 003971A8  4B FA 5A 85 */	bl isTrigger__Q43scn4step4hero3HidCFUl
 /* 8039B36C 003971AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8039B370 003971B0  41 82 00 64 */	beq lbl_8039B3D4
 /* 8039B374 003971B4  3B C0 00 02 */	li r30, 0x2
@@ -70,9 +70,9 @@ lbl_8039B35C:
 /* 8039B384 003971C4  38 00 00 00 */	li r0, 0x0
 /* 8039B388 003971C8  90 1D 00 0C */	stw r0, 0xc(r29)
 /* 8039B38C 003971CC  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 8039B390 003971D0  4B FA 4F BD */	bl lbl_8034034C
+/* 8039B390 003971D0  4B FA 4F BD */	bl hid__Q43scn4step4hero4HeroFv
 /* 8039B394 003971D4  38 80 00 02 */	li r4, 0x2
-/* 8039B398 003971D8  4B FA 5A 55 */	bl lbl_80340DEC
+/* 8039B398 003971D8  4B FA 5A 55 */	bl isTrigger__Q43scn4step4hero3HidCFUl
 /* 8039B39C 003971DC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8039B3A0 003971E0  41 82 00 08 */	beq lbl_8039B3A8
 /* 8039B3A4 003971E4  7F DF F3 78 */	mr r31, r30
@@ -83,14 +83,14 @@ lbl_8039B3A8:
 .global lbl_8039B3B0
 lbl_8039B3B0:
 /* 8039B3B0 003971F0  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8039B3B4 003971F4  4B FA 4F 29 */	bl lbl_803402DC
-/* 8039B3B8 003971F8  4B FB 5E ED */	bl lbl_803512A4
+/* 8039B3B4 003971F4  4B FA 4F 29 */	bl param__Q43scn4step4hero4HeroFv
+/* 8039B3B8 003971F8  4B FB 5E ED */	bl fighter__Q43scn4step4hero5ParamCFv
 /* 8039B3BC 003971FC  80 63 01 4C */	lwz r3, 0x14c(r3)
 /* 8039B3C0 00397200  80 1D 00 0C */	lwz r0, 0xc(r29)
 /* 8039B3C4 00397204  7C 00 18 40 */	cmplw r0, r3
 /* 8039B3C8 00397208  40 81 00 0C */	ble lbl_8039B3D4
 /* 8039B3CC 0039720C  7F A3 EB 78 */	mr r3, r29
-/* 8039B3D0 00397210  48 00 00 1D */	bl lbl_8039B3EC
+/* 8039B3D0 00397210  48 00 00 1D */	bl reset__Q53scn4step4hero7fighter14CommandManagerFv
 .global lbl_8039B3D4
 lbl_8039B3D4:
 /* 8039B3D4 00397214  39 61 00 20 */	addi r11, r1, 0x20
@@ -99,8 +99,8 @@ lbl_8039B3D4:
 /* 8039B3E0 00397220  7C 08 03 A6 */	mtlr r0
 /* 8039B3E4 00397224  38 21 00 20 */	addi r1, r1, 0x20
 /* 8039B3E8 00397228  4E 80 00 20 */	blr
-.global lbl_8039B3EC
-lbl_8039B3EC:
+.global reset__Q53scn4step4hero7fighter14CommandManagerFv
+reset__Q53scn4step4hero7fighter14CommandManagerFv:
 /* 8039B3EC 0039722C  38 00 00 00 */	li r0, 0x0
 /* 8039B3F0 00397230  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8039B3F4 00397234  98 03 00 04 */	stb r0, 0x4(r3)

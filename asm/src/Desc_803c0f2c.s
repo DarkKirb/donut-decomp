@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803C0F2C
-lbl_803C0F2C:
+.global __ct__Q43scn4step4item4DescFQ43scn4step3map11BinItemKindUlbQ43scn4step3map16BinItemVariationRCQ33hel4math7Vector2
+__ct__Q43scn4step4item4DescFQ43scn4step3map11BinItemKindUlbQ43scn4step3map16BinItemVariationRCQ33hel4math7Vector2:
 /* 803C0F2C 003BCD6C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803C0F30 003BCD70  7C 08 02 A6 */	mflr r0
 /* 803C0F34 003BCD74  90 01 00 14 */	stw r0, 0x14(r1)
@@ -16,12 +16,12 @@ lbl_803C0F2C:
 /* 803C0F54 003BCD94  90 E3 00 0C */	stw r7, 0xc(r3)
 /* 803C0F58 003BCD98  38 63 00 10 */	addi r3, r3, 0x10
 /* 803C0F5C 003BCD9C  7F E4 FB 78 */	mr r4, r31
-/* 803C0F60 003BCDA0  4B D8 AA 09 */	bl lbl_8014B968
+/* 803C0F60 003BCDA0  4B D8 AA 09 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 803C0F64 003BCDA4  38 00 00 00 */	li r0, 0x0
 /* 803C0F68 003BCDA8  98 1E 00 18 */	stb r0, 0x18(r30)
 /* 803C0F6C 003BCDAC  38 7E 00 1C */	addi r3, r30, 0x1c
 /* 803C0F70 003BCDB0  7F E4 FB 78 */	mr r4, r31
-/* 803C0F74 003BCDB4  4B D8 A9 F5 */	bl lbl_8014B968
+/* 803C0F74 003BCDB4  4B D8 A9 F5 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 803C0F78 003BCDB8  7F C3 F3 78 */	mr r3, r30
 /* 803C0F7C 003BCDBC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803C0F80 003BCDC0  83 C1 00 08 */	lwz r30, 0x8(r1)

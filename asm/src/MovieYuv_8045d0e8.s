@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045D0E8
-lbl_8045D0E8:
+.global __vt__Q23mov8MovieYuv
+__vt__Q23mov8MovieYuv:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801D0670
-	.4byte lbl_801D0DEC
-	.4byte lbl_801D0DB8
-	.4byte lbl_801D0AC0
-	.4byte lbl_801D0B7C
+	.4byte __dt__Q23mov8MovieYuvFv
+	.4byte getImage__Q23mov8MovieYuvFPv
+	.4byte setupRender__Q23mov8MovieYuvCFv
+	.4byte restoreRender__Q23mov8MovieYuvCFv
+	.4byte setupTexObjs__Q23mov8MovieYuvCFP9_GXTexObj
 	.4byte 0

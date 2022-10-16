@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8042FC90
-lbl_8042FC90:
+.global "@1_8042FC90"
+"@1_8042FC90":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F53
@@ -23,8 +23,8 @@ lbl_8042FC90:
 	.4byte 0x29203E3E
 	.4byte 0
 
-.global lbl_8042FCD8
-lbl_8042FCD8:
+.global timing
+timing:
 
 	.4byte 0x060000F0
 	.4byte 0x00180019
@@ -132,8 +132,8 @@ lbl_8042FCD8:
 	.4byte 0x017C7A00
 	.4byte 0x019C0000
 
-.global lbl_8042FE7C
-lbl_8042FE7C:
+.global taps
+taps:
 
 	.4byte 0x01F001DC
 	.4byte 0x01AE0174
@@ -195,16 +195,16 @@ lbl_8042FE7C:
 	.4byte 0x04000000
 	.4byte 0
 
-.global lbl_8042FF68
-lbl_8042FF68:
+.global ShutdownFunctionInfo_8042FF68
+ShutdownFunctionInfo_8042FF68:
 
-	.4byte lbl_8002BAD0
+	.4byte OnShutdown_8002BAD0
 	.4byte 0x0000007F
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042FF78
-lbl_8042FF78:
+.global "@3436"
+"@3436":
 
 	.4byte lbl_8002BFC0
 	.4byte lbl_8002BFC8
@@ -216,8 +216,8 @@ lbl_8042FF78:
 	.4byte lbl_8002BFC0
 	.4byte lbl_8002BFC0
 
-.global lbl_8042FF9C
-lbl_8042FF9C:
+.global "@3466"
+"@3466":
 
 	.4byte lbl_8002C540
 	.4byte lbl_8002C54C
@@ -263,8 +263,8 @@ lbl_80430008:
 	.4byte lbl_8002C630
 	.4byte lbl_8002C628
 
-.global lbl_80430028
-lbl_80430028:
+.global "@3633"
+"@3633":
 
 	.4byte lbl_8002CCD4
 	.4byte lbl_8002CCDC
@@ -361,8 +361,8 @@ lbl_80430028:
 	.4byte 0x69646465
 	.4byte 0x6E0A0000
 
-.global lbl_804301A0
-lbl_804301A0:
+.global "@4121"
+"@4121":
 
 	.4byte lbl_8002E048
 	.4byte lbl_8002E050
@@ -374,8 +374,8 @@ lbl_804301A0:
 	.4byte lbl_8002E048
 	.4byte lbl_8002E048
 
-.global lbl_804301C4
-lbl_804301C4:
+.global "@4441"
+"@4441":
 
 	.4byte lbl_8002E394
 	.4byte lbl_8002E39C

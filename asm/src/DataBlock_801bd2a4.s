@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801BD2A4
-lbl_801BD2A4:
+.global __ct__Q23mem9DataBlockFUllRQ23mem10IAllocator
+__ct__Q23mem9DataBlockFUllRQ23mem10IAllocator:
 /* 801BD2A4 001B90E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BD2A8 001B90E8  7C 08 02 A6 */	mflr r0
 /* 801BD2AC 001B90EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -19,7 +19,7 @@ lbl_801BD2A4:
 /* 801BD2D8 001B9118  7C 64 1B 78 */	mr r4, r3
 /* 801BD2DC 001B911C  38 7E 00 04 */	addi r3, r30, 0x4
 /* 801BD2E0 001B9120  7F E5 FB 78 */	mr r5, r31
-/* 801BD2E4 001B9124  48 00 1F 09 */	bl lbl_801BF1EC
+/* 801BD2E4 001B9124  48 00 1F 09 */	bl __ct__Q23mem8MemBlockFPvUl
 /* 801BD2E8 001B9128  7F C3 F3 78 */	mr r3, r30
 /* 801BD2EC 001B912C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801BD2F0 001B9130  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -27,8 +27,8 @@ lbl_801BD2A4:
 /* 801BD2F8 001B9138  7C 08 03 A6 */	mtlr r0
 /* 801BD2FC 001B913C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BD300 001B9140  4E 80 00 20 */	blr
-.global lbl_801BD304
-lbl_801BD304:
+.global __dt__Q23mem9DataBlockFv
+__dt__Q23mem9DataBlockFv:
 /* 801BD304 001B9144  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BD308 001B9148  7C 08 02 A6 */	mflr r0
 /* 801BD30C 001B914C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -48,7 +48,7 @@ lbl_801BD304:
 /* 801BD344 001B9184  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BD348 001B9188  40 81 00 0C */	ble lbl_801BD354
 /* 801BD34C 001B918C  7F C3 F3 78 */	mr r3, r30
-/* 801BD350 001B9190  48 00 23 C5 */	bl lbl_801BF714
+/* 801BD350 001B9190  48 00 23 C5 */	bl __dl__FPv
 .global lbl_801BD354
 lbl_801BD354:
 /* 801BD354 001B9194  7F C3 F3 78 */	mr r3, r30

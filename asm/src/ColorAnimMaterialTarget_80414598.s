@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80414598
-lbl_80414598:
+.global "T_TEV_REG_ID_2_TEV_COLOR_ARG__Q23g3d37@unnamed@ColorAnimMaterialTarget_cpp@"
+"T_TEV_REG_ID_2_TEV_COLOR_ARG__Q23g3d37@unnamed@ColorAnimMaterialTarget_cpp@":
 
 	.4byte 0
 	.4byte 0x00000002
 	.4byte 0x00000004
 	.4byte 0x00000006
 
-.global lbl_804145A8
-lbl_804145A8:
+.global "T_TEV_REG_ID_2_TEV_COLOR_ARG_ALPHA__Q23g3d37@unnamed@ColorAnimMaterialTarget_cpp@"
+"T_TEV_REG_ID_2_TEV_COLOR_ARG_ALPHA__Q23g3d37@unnamed@ColorAnimMaterialTarget_cpp@":
 
 	.4byte 0x00000001
 	.4byte 0x00000003

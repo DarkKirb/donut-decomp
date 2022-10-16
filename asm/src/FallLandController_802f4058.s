@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802F4058
-lbl_802F4058:
+.global __ct__Q43scn4step7gimmick18FallLandControllerFRQ33scn4step9ComponentRCQ35mcoll6detail15MoveGridGroupIdfb
+__ct__Q43scn4step7gimmick18FallLandControllerFRQ33scn4step9ComponentRCQ35mcoll6detail15MoveGridGroupIdfb:
 /* 802F4058 002EFE98  90 83 00 00 */	stw r4, 0x0(r3)
 /* 802F405C 002EFE9C  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 802F4060 002EFEA0  90 03 00 04 */	stw r0, 0x4(r3)
@@ -10,7 +10,7 @@ lbl_802F4058:
 /* 802F4068 002EFEA8  98 C3 00 0C */	stb r6, 0xc(r3)
 /* 802F406C 002EFEAC  38 00 00 00 */	li r0, 0x0
 /* 802F4070 002EFEB0  98 03 00 0D */	stb r0, 0xd(r3)
-/* 802F4074 002EFEB4  C0 02 C6 50 */	lfs f0, lbl_805625D0@sda21(r2)
+/* 802F4074 002EFEB4  C0 02 C6 50 */	lfs f0, "@53415_805625D0"@sda21(r2)
 /* 802F4078 002EFEB8  D0 03 00 10 */	stfs f0, 0x10(r3)
 /* 802F407C 002EFEBC  D0 03 00 14 */	stfs f0, 0x14(r3)
 /* 802F4080 002EFEC0  D0 03 00 18 */	stfs f0, 0x18(r3)
@@ -19,8 +19,8 @@ lbl_802F4058:
 /* 802F408C 002EFECC  38 00 00 01 */	li r0, 0x1
 /* 802F4090 002EFED0  98 03 00 24 */	stb r0, 0x24(r3)
 /* 802F4094 002EFED4  4E 80 00 20 */	blr
-.global lbl_802F4098
-lbl_802F4098:
+.global procBegin__Q43scn4step7gimmick18FallLandControllerFv
+procBegin__Q43scn4step7gimmick18FallLandControllerFv:
 /* 802F4098 002EFED8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 802F409C 002EFEDC  7C 08 02 A6 */	mflr r0
 /* 802F40A0 002EFEE0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -33,16 +33,16 @@ lbl_802F4098:
 /* 802F40BC 002EFEFC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 802F40C0 002EFF00  40 82 00 18 */	bne lbl_802F40D8
 /* 802F40C4 002EFF04  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 802F40C8 002EFF08  4B F2 CC 2D */	bl lbl_80220CF4
-/* 802F40CC 002EFF0C  4B D3 03 D5 */	bl lbl_800244A0
+/* 802F40C8 002EFF08  4B F2 CC 2D */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802F40CC 002EFF0C  4B D3 03 D5 */	bl DefaultSwitchThreadCallback
 /* 802F40D0 002EFF10  38 9D 00 04 */	addi r4, r29, 0x4
-/* 802F40D4 002EFF14  4B EB E4 5D */	bl lbl_801B2530
+/* 802F40D4 002EFF14  4B EB E4 5D */	bl mgInvalidGroup__Q25mcoll11LandManagerFRCQ35mcoll6detail15MoveGridGroupId
 .global lbl_802F40D8
 lbl_802F40D8:
 /* 802F40D8 002EFF18  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 802F40DC 002EFF1C  4B EF AD F5 */	bl lbl_801EEED0
+/* 802F40DC 002EFF1C  4B EF AD F5 */	bl commander__Q33scn14challengetitle9ComponentFv
 /* 802F40E0 002EFF20  38 80 00 20 */	li r4, 0x20
-/* 802F40E4 002EFF24  48 0D 6C 41 */	bl lbl_803CAD24
+/* 802F40E4 002EFF24  48 0D 6C 41 */	bl isStopped__Q43scn4step5ostop7ManagerCFQ43scn4step5ostop4Flag
 /* 802F40E8 002EFF28  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802F40EC 002EFF2C  40 82 01 10 */	bne lbl_802F41FC
 /* 802F40F0 002EFF30  80 1D 00 20 */	lwz r0, 0x20(r29)
@@ -78,46 +78,46 @@ lbl_802F4150:
 .global lbl_802F4158
 lbl_802F4158:
 /* 802F4158 002EFF98  38 61 00 18 */	addi r3, r1, 0x18
-/* 802F415C 002EFF9C  C0 22 C6 50 */	lfs f1, lbl_805625D0@sda21(r2)
+/* 802F415C 002EFF9C  C0 22 C6 50 */	lfs f1, "@53415_805625D0"@sda21(r2)
 /* 802F4160 002EFFA0  C0 1D 00 10 */	lfs f0, 0x10(r29)
 /* 802F4164 002EFFA4  FC 40 00 50 */	fneg f2, f0
-/* 802F4168 002EFFA8  4B EA B2 41 */	bl lbl_8019F3A8
+/* 802F4168 002EFFA8  4B EA B2 41 */	bl set__Q33hel4math7Vector2Fff
 /* 802F416C 002EFFAC  7C 7E 1B 78 */	mr r30, r3
 /* 802F4170 002EFFB0  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 802F4174 002EFFB4  4B F2 CB 81 */	bl lbl_80220CF4
-/* 802F4178 002EFFB8  4B D3 03 29 */	bl lbl_800244A0
+/* 802F4174 002EFFB4  4B F2 CB 81 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802F4178 002EFFB8  4B D3 03 29 */	bl DefaultSwitchThreadCallback
 /* 802F417C 002EFFBC  38 9D 00 04 */	addi r4, r29, 0x4
 /* 802F4180 002EFFC0  7F C5 F3 78 */	mr r5, r30
-/* 802F4184 002EFFC4  4B EB E2 D9 */	bl lbl_801B245C
+/* 802F4184 002EFFC4  4B EB E2 D9 */	bl mgSetOffset__Q25mcoll11LandManagerFRCQ35mcoll6detail15MoveGridGroupIdRCQ33hel4math7Vector2
 /* 802F4188 002EFFC8  38 61 00 10 */	addi r3, r1, 0x10
-/* 802F418C 002EFFCC  C0 22 C6 50 */	lfs f1, lbl_805625D0@sda21(r2)
+/* 802F418C 002EFFCC  C0 22 C6 50 */	lfs f1, "@53415_805625D0"@sda21(r2)
 /* 802F4190 002EFFD0  C0 1D 00 14 */	lfs f0, 0x14(r29)
 /* 802F4194 002EFFD4  FC 40 00 50 */	fneg f2, f0
-/* 802F4198 002EFFD8  4B EA B2 11 */	bl lbl_8019F3A8
+/* 802F4198 002EFFD8  4B EA B2 11 */	bl set__Q33hel4math7Vector2Fff
 /* 802F419C 002EFFDC  7C 7E 1B 78 */	mr r30, r3
 /* 802F41A0 002EFFE0  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 802F41A4 002EFFE4  4B F2 CB 51 */	bl lbl_80220CF4
-/* 802F41A8 002EFFE8  4B D3 02 F9 */	bl lbl_800244A0
+/* 802F41A4 002EFFE4  4B F2 CB 51 */	bl mapLandManager__Q33scn4step9ComponentFv
+/* 802F41A8 002EFFE8  4B D3 02 F9 */	bl DefaultSwitchThreadCallback
 /* 802F41AC 002EFFEC  38 9D 00 04 */	addi r4, r29, 0x4
 /* 802F41B0 002EFFF0  7F C5 F3 78 */	mr r5, r30
-/* 802F41B4 002EFFF4  4B EB E2 ED */	bl lbl_801B24A0
+/* 802F41B4 002EFFF4  4B EB E2 ED */	bl mgSetDelta__Q25mcoll11LandManagerFRCQ35mcoll6detail15MoveGridGroupIdRCQ33hel4math7Vector2
 /* 802F41B8 002EFFF8  88 1D 00 0C */	lbz r0, 0xc(r29)
 /* 802F41BC 002EFFFC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 802F41C0 002F0000  41 82 00 3C */	beq lbl_802F41FC
 /* 802F41C4 002F0004  38 61 00 08 */	addi r3, r1, 0x8
-/* 802F41C8 002F0008  C0 22 C6 50 */	lfs f1, lbl_805625D0@sda21(r2)
+/* 802F41C8 002F0008  C0 22 C6 50 */	lfs f1, "@53415_805625D0"@sda21(r2)
 /* 802F41CC 002F000C  C0 1D 00 10 */	lfs f0, 0x10(r29)
 /* 802F41D0 002F0010  FC 40 00 50 */	fneg f2, f0
-/* 802F41D4 002F0014  4B EA B1 D5 */	bl lbl_8019F3A8
+/* 802F41D4 002F0014  4B EA B1 D5 */	bl set__Q33hel4math7Vector2Fff
 /* 802F41D8 002F0018  7C 7E 1B 78 */	mr r30, r3
 /* 802F41DC 002F001C  38 7D 00 04 */	addi r3, r29, 0x4
-/* 802F41E0 002F0020  4B D8 15 51 */	bl lbl_80075730
+/* 802F41E0 002F0020  4B D8 15 51 */	bl GKI_getfirst
 /* 802F41E4 002F0024  7C 7F 1B 78 */	mr r31, r3
 /* 802F41E8 002F0028  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 802F41EC 002F002C  4B F2 CA D5 */	bl lbl_80220CC0
+/* 802F41EC 002F002C  4B F2 CA D5 */	bl mapDecorationManager__Q33scn4step9ComponentFv
 /* 802F41F0 002F0030  7F E4 FB 78 */	mr r4, r31
 /* 802F41F4 002F0034  7F C5 F3 78 */	mr r5, r30
-/* 802F41F8 002F0038  4B F3 33 DD */	bl lbl_802275D4
+/* 802F41F8 002F0038  4B F3 33 DD */	bl maproSetOffset__Q43scn4step2bg7ManagerFUlRCQ33hel4math7Vector2
 .global lbl_802F41FC
 lbl_802F41FC:
 /* 802F41FC 002F003C  39 61 00 30 */	addi r11, r1, 0x30
@@ -126,27 +126,27 @@ lbl_802F41FC:
 /* 802F4208 002F0048  7C 08 03 A6 */	mtlr r0
 /* 802F420C 002F004C  38 21 00 30 */	addi r1, r1, 0x30
 /* 802F4210 002F0050  4E 80 00 20 */	blr
-.global lbl_802F4214
-lbl_802F4214:
+.global startFall__Q43scn4step7gimmick18FallLandControllerFff
+startFall__Q43scn4step7gimmick18FallLandControllerFff:
 /* 802F4214 002F0054  D0 23 00 18 */	stfs f1, 0x18(r3)
 /* 802F4218 002F0058  D0 43 00 1C */	stfs f2, 0x1c(r3)
 /* 802F421C 002F005C  38 00 00 01 */	li r0, 0x1
 /* 802F4220 002F0060  90 03 00 20 */	stw r0, 0x20(r3)
 /* 802F4224 002F0064  4E 80 00 20 */	blr
-.global lbl_802F4228
-lbl_802F4228:
+.global isEndFall__Q43scn4step7gimmick18FallLandControllerCFv
+isEndFall__Q43scn4step7gimmick18FallLandControllerCFv:
 /* 802F4228 002F0068  80 63 00 20 */	lwz r3, 0x20(r3)
 /* 802F422C 002F006C  38 03 FF FE */	addi r0, r3, -0x2
 /* 802F4230 002F0070  7C 00 00 34 */	cntlzw r0, r0
 /* 802F4234 002F0074  54 03 D9 7E */	srwi r3, r0, 5
 /* 802F4238 002F0078  4E 80 00 20 */	blr
-.global lbl_802F423C
-lbl_802F423C:
+.global getPos__Q43scn4step7gimmick18FallLandControllerCFv
+getPos__Q43scn4step7gimmick18FallLandControllerCFv:
 /* 802F423C 002F007C  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 802F4240 002F0080  FC 20 00 50 */	fneg f1, f0
 /* 802F4244 002F0084  4E 80 00 20 */	blr
-.global lbl_802F4248
-lbl_802F4248:
+.global setInvalid__Q43scn4step7gimmick18FallLandControllerFv
+setInvalid__Q43scn4step7gimmick18FallLandControllerFv:
 /* 802F4248 002F0088  38 00 00 00 */	li r0, 0x0
 /* 802F424C 002F008C  98 03 00 24 */	stb r0, 0x24(r3)
 /* 802F4250 002F0090  4E 80 00 20 */	blr

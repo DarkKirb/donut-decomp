@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80479640
-lbl_80479640:
+.global "@55673_80479640"
+"@55673_80479640":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -41,29 +41,29 @@ lbl_80479640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_804796D0
-lbl_804796D0:
+.global "__vt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C776C
-	.4byte lbl_802C7710
+	.4byte "__dt__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util110StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff27StateGrandLowperEscapeStart,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_804796E0
-lbl_804796E0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802C7768
-	.4byte lbl_802C772C
-
-.global lbl_804796F0
-lbl_804796F0:
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateStay,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateStay,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C7764
-	.4byte lbl_802C7748
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateStay,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateStay,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateWalk,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateWalk,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5nruff9StateWalk,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -1,20 +1,20 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801A4778
-lbl_801A4778:
+.global __ct__Q23hid5StickFi
+__ct__Q23hid5StickFi:
 /* 801A4778 001A05B8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801A477C 001A05BC  38 00 00 00 */	li r0, 0x0
 /* 801A4780 001A05C0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 801A4784 001A05C4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 801A4788 001A05C8  4E 80 00 20 */	blr
-.global lbl_801A478C
-lbl_801A478C:
+.global update__Q23hid5StickFii
+update__Q23hid5StickFii:
 /* 801A478C 001A05CC  90 83 00 04 */	stw r4, 0x4(r3)
 /* 801A4790 001A05D0  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 801A4794 001A05D4  4E 80 00 20 */	blr
-.global lbl_801A4798
-lbl_801A4798:
+.global normalized__Q23hid5StickCFv
+normalized__Q23hid5StickCFv:
 /* 801A4798 001A05D8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A479C 001A05DC  3C 00 43 30 */	lis r0, 0x4330
 /* 801A47A0 001A05E0  90 01 00 08 */	stw r0, 0x8(r1)
@@ -22,7 +22,7 @@ lbl_801A4798:
 /* 801A47A8 001A05E8  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801A47AC 001A05EC  80 A4 00 00 */	lwz r5, 0x0(r4)
 /* 801A47B0 001A05F0  80 04 00 08 */	lwz r0, 0x8(r4)
-/* 801A47B4 001A05F4  C8 42 99 B0 */	lfd f2, lbl_8055F930@sda21(r2)
+/* 801A47B4 001A05F4  C8 42 99 B0 */	lfd f2, "@49704"@sda21(r2)
 /* 801A47B8 001A05F8  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 801A47BC 001A05FC  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801A47C0 001A0600  C8 01 00 08 */	lfd f0, 0x8(r1)

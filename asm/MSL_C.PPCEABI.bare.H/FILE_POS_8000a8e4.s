@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000A8E4
-lbl_8000A8E4:
+.global _ftell
+_ftell:
 /* 8000A8E4 00006724  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 8000A8E8 00006728  38 C0 00 00 */	li r6, 0x0
 /* 8000A8EC 0000672C  54 04 57 7E */	extrwi r4, r0, 3, 7
@@ -16,7 +16,7 @@ lbl_8000A8E4:
 .global lbl_8000A90C
 lbl_8000A90C:
 /* 8000A90C 0000674C  38 00 00 28 */	li r0, 0x28
-/* 8000A910 00006750  90 0D E2 D0 */	stw r0, lbl_8055C6F0@sda21(r13)
+/* 8000A910 00006750  90 0D E2 D0 */	stw r0, errno@sda21(r13)
 /* 8000A914 00006754  38 60 FF FF */	li r3, -0x1
 /* 8000A918 00006758  4E 80 00 20 */	blr
 .global lbl_8000A91C
@@ -59,11 +59,11 @@ lbl_8000A980:
 lbl_8000A984:
 /* 8000A984 000067C4  7C E3 3B 78 */	mr r3, r7
 /* 8000A988 000067C8  4E 80 00 20 */	blr
-.global lbl_8000A98C
-lbl_8000A98C:
-/* 8000A98C 000067CC  4B FF FF 58 */	b lbl_8000A8E4
-.global lbl_8000A990
-lbl_8000A990:
+.global ftell
+ftell:
+/* 8000A98C 000067CC  4B FF FF 58 */	b _ftell
+.global _fseek
+_fseek:
 /* 8000A990 000067D0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8000A994 000067D4  7C 08 02 A6 */	mflr r0
 /* 8000A998 000067D8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -82,7 +82,7 @@ lbl_8000A990:
 .global lbl_8000A9CC
 lbl_8000A9CC:
 /* 8000A9CC 0000680C  38 00 00 28 */	li r0, 0x28
-/* 8000A9D0 00006810  90 0D E2 D0 */	stw r0, lbl_8055C6F0@sda21(r13)
+/* 8000A9D0 00006810  90 0D E2 D0 */	stw r0, errno@sda21(r13)
 /* 8000A9D4 00006814  38 60 FF FF */	li r3, -0x1
 /* 8000A9D8 00006818  48 00 01 64 */	b lbl_8000AB3C
 .global lbl_8000A9DC
@@ -92,7 +92,7 @@ lbl_8000A9DC:
 /* 8000A9E4 00006824  28 00 00 01 */	cmplwi r0, 0x1
 /* 8000A9E8 00006828  40 82 00 34 */	bne lbl_8000AA1C
 /* 8000A9EC 0000682C  38 80 00 00 */	li r4, 0x0
-/* 8000A9F0 00006830  4B FF F9 15 */	bl lbl_8000A304
+/* 8000A9F0 00006830  4B FF F9 15 */	bl __flush_buffer
 /* 8000A9F4 00006834  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8000A9F8 00006838  41 82 00 24 */	beq lbl_8000AA1C
 /* 8000A9FC 0000683C  38 80 00 00 */	li r4, 0x0
@@ -101,7 +101,7 @@ lbl_8000A9DC:
 /* 8000AA08 00006848  38 60 FF FF */	li r3, -0x1
 /* 8000AA0C 0000684C  98 1E 00 0A */	stb r0, 0xa(r30)
 /* 8000AA10 00006850  38 00 00 28 */	li r0, 0x28
-/* 8000AA14 00006854  90 0D E2 D0 */	stw r0, lbl_8055C6F0@sda21(r13)
+/* 8000AA14 00006854  90 0D E2 D0 */	stw r0, errno@sda21(r13)
 /* 8000AA18 00006858  48 00 01 24 */	b lbl_8000AB3C
 .global lbl_8000AA1C
 lbl_8000AA1C:
@@ -109,7 +109,7 @@ lbl_8000AA1C:
 /* 8000AA20 00006860  40 82 00 1C */	bne lbl_8000AA3C
 /* 8000AA24 00006864  7F C3 F3 78 */	mr r3, r30
 /* 8000AA28 00006868  3B E0 00 00 */	li r31, 0x0
-/* 8000AA2C 0000686C  4B FF FE B9 */	bl lbl_8000A8E4
+/* 8000AA2C 0000686C  4B FF FE B9 */	bl _ftell
 /* 8000AA30 00006870  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 8000AA34 00006874  7C 00 1A 14 */	add r0, r0, r3
 /* 8000AA38 00006878  90 01 00 08 */	stw r0, 0x8(r1)
@@ -179,7 +179,7 @@ lbl_8000AACC:
 /* 8000AB10 00006950  38 60 FF FF */	li r3, -0x1
 /* 8000AB14 00006954  98 1E 00 0A */	stb r0, 0xa(r30)
 /* 8000AB18 00006958  38 00 00 28 */	li r0, 0x28
-/* 8000AB1C 0000695C  90 0D E2 D0 */	stw r0, lbl_8055C6F0@sda21(r13)
+/* 8000AB1C 0000695C  90 0D E2 D0 */	stw r0, errno@sda21(r13)
 /* 8000AB20 00006960  48 00 00 1C */	b lbl_8000AB3C
 .global lbl_8000AB24
 lbl_8000AB24:

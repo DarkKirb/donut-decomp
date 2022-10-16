@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80445638
-lbl_80445638:
+.global "__vt__Q36nw4hbm2ut19TagProcessorBase<w>"
+"__vt__Q36nw4hbm2ut19TagProcessorBase<w>":
 
-	.4byte lbl_80445678
+	.4byte "__RTTI__Q36nw4hbm2ut19TagProcessorBase<w>"
 	.4byte 0
-	.4byte lbl_801424F0
-	.4byte lbl_80142530
-	.4byte lbl_80142690
+	.4byte "__dt__Q36nw4hbm2ut19TagProcessorBase<w>Fv"
+	.4byte "Process__Q36nw4hbm2ut19TagProcessorBase<w>FUsPQ36nw4hbm2ut15PrintContext<w>"
+	.4byte "CalcRect__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<w>"
 
-.global lbl_8044564C
-lbl_8044564C:
+.global "@4426"
+"@4426":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -25,23 +25,23 @@ lbl_8044564C:
 	.4byte 0x3E000000
 	.4byte 0
 
-.global lbl_80445678
-lbl_80445678:
+.global "__RTTI__Q36nw4hbm2ut19TagProcessorBase<w>"
+"__RTTI__Q36nw4hbm2ut19TagProcessorBase<w>":
 
-	.4byte lbl_8044564C
+	.4byte "@4426"
 	.4byte 0
 
-.global lbl_80445680
-lbl_80445680:
+.global "__vt__Q36nw4hbm2ut19TagProcessorBase<c>"
+"__vt__Q36nw4hbm2ut19TagProcessorBase<c>":
 
-	.4byte lbl_804456B8
+	.4byte "__RTTI__Q36nw4hbm2ut19TagProcessorBase<c>"
 	.4byte 0
-	.4byte lbl_80141F90
-	.4byte lbl_80141FD0
-	.4byte lbl_80142130
+	.4byte "__dt__Q36nw4hbm2ut19TagProcessorBase<c>Fv"
+	.4byte "Process__Q36nw4hbm2ut19TagProcessorBase<c>FUsPQ36nw4hbm2ut15PrintContext<c>"
+	.4byte "CalcRect__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<c>"
 
-.global lbl_80445694
-lbl_80445694:
+.global "@4427"
+"@4427":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -53,8 +53,8 @@ lbl_80445694:
 	.4byte 0x3C636861
 	.4byte 0x723E0000
 
-.global lbl_804456B8
-lbl_804456B8:
+.global "__RTTI__Q36nw4hbm2ut19TagProcessorBase<c>"
+"__RTTI__Q36nw4hbm2ut19TagProcessorBase<c>":
 
-	.4byte lbl_80445694
+	.4byte "@4427"
 	.4byte 0

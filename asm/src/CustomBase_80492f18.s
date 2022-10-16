@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80492F18
-lbl_80492F18:
+.global __vt__Q43scn4step6weapon10CustomBase
+__vt__Q43scn4step6weapon10CustomBase:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803D3770
-	.4byte lbl_803D3774
-	.4byte lbl_803D3764
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte __dt__Q43scn4step6weapon10CustomBaseFv
+	.4byte onInit__Q43scn4step6weapon10CustomBaseFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0

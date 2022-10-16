@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D218
-lbl_8055D218:
+.global BLACK__Q33hel6common5Color
+BLACK__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D21C
-lbl_8055D21C:
+.global GRAY__Q33hel6common5Color
+GRAY__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D220
-lbl_8055D220:
+.global WHITE__Q33hel6common5Color
+WHITE__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D224
-lbl_8055D224:
+.global RED__Q33hel6common5Color
+RED__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D228
-lbl_8055D228:
+.global GREEN__Q33hel6common5Color
+GREEN__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D22C
-lbl_8055D22C:
+.global BLUE__Q33hel6common5Color
+BLUE__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D230
-lbl_8055D230:
+.global YELLOW__Q33hel6common5Color
+YELLOW__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D234
-lbl_8055D234:
+.global MAGENTA__Q33hel6common5Color
+MAGENTA__Q33hel6common5Color:
 	.skip 0x4
 
-.global lbl_8055D238
-lbl_8055D238:
+.global CYAN__Q33hel6common5Color
+CYAN__Q33hel6common5Color:
 	.skip 0x8

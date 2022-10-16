@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8003FCF0
-lbl_8003FCF0:
+.global DVDCompareDiskID
+DVDCompareDiskID:
 /* 8003FCF0 0003BB30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8003FCF4 0003BB34  7C 08 02 A6 */	mflr r0
 /* 8003FCF8 0003BB38  90 01 00 14 */	stw r0, 0x14(r1)
@@ -17,7 +17,7 @@ lbl_8003FCF0:
 /* 8003FD1C 0003BB5C  7C 00 07 75 */	extsb. r0, r0
 /* 8003FD20 0003BB60  41 82 00 1C */	beq lbl_8003FD3C
 /* 8003FD24 0003BB64  38 A0 00 04 */	li r5, 0x4
-/* 8003FD28 0003BB68  4B FC DF 31 */	bl lbl_8000DC58
+/* 8003FD28 0003BB68  4B FC DF 31 */	bl strncmp
 /* 8003FD2C 0003BB6C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8003FD30 0003BB70  41 82 00 0C */	beq lbl_8003FD3C
 /* 8003FD34 0003BB74  38 60 00 00 */	li r3, 0x0
@@ -33,7 +33,7 @@ lbl_8003FD3C:
 /* 8003FD54 0003BB94  38 7E 00 04 */	addi r3, r30, 0x4
 /* 8003FD58 0003BB98  38 9F 00 04 */	addi r4, r31, 0x4
 /* 8003FD5C 0003BB9C  38 A0 00 02 */	li r5, 0x2
-/* 8003FD60 0003BBA0  4B FC DE F9 */	bl lbl_8000DC58
+/* 8003FD60 0003BBA0  4B FC DE F9 */	bl strncmp
 /* 8003FD64 0003BBA4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8003FD68 0003BBA8  41 82 00 0C */	beq lbl_8003FD74
 .global lbl_8003FD6C

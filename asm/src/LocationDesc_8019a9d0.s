@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8019A9D0
-lbl_8019A9D0:
+.global Create__Q24gobj12LocationDescFRCQ33hel4math7Vector3
+Create__Q24gobj12LocationDescFRCQ33hel4math7Vector3:
 /* 8019A9D0 00196810  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8019A9D4 00196814  38 00 00 00 */	li r0, 0x0
 /* 8019A9D8 00196818  90 01 00 08 */	stw r0, 0x8(r1)

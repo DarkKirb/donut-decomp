@@ -1,42 +1,42 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442038
-lbl_80442038:
+.global __vt__Q44nw4r3snd6detail19BiquadFilterBpf2048
+__vt__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80106EC0
-	.4byte lbl_80106DE0
+	.4byte __dt__Q44nw4r3snd6detail19BiquadFilterBpf2048Fv
+	.4byte GetCoef__Q44nw4r3snd6detail19BiquadFilterBpf2048CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 
-.global lbl_80442048
-lbl_80442048:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80106EB0
-	.4byte lbl_80106D40
-
-.global lbl_80442058
-lbl_80442058:
+.global __vt__Q44nw4r3snd6detail19BiquadFilterBpf1024
+__vt__Q44nw4r3snd6detail19BiquadFilterBpf1024:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80106EA0
-	.4byte lbl_80106CA0
+	.4byte __dt__Q44nw4r3snd6detail19BiquadFilterBpf1024Fv
+	.4byte GetCoef__Q44nw4r3snd6detail19BiquadFilterBpf1024CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
 
-.global lbl_80442068
-lbl_80442068:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80106E90
-	.4byte lbl_80106C10
-
-.global lbl_80442078
-lbl_80442078:
+.global __vt__Q44nw4r3snd6detail18BiquadFilterBpf512
+__vt__Q44nw4r3snd6detail18BiquadFilterBpf512:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80106E80
-	.4byte lbl_80106B80
+	.4byte __dt__Q44nw4r3snd6detail18BiquadFilterBpf512Fv
+	.4byte GetCoef__Q44nw4r3snd6detail18BiquadFilterBpf512CFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
+
+.global __vt__Q44nw4r3snd6detail15BiquadFilterHpf
+__vt__Q44nw4r3snd6detail15BiquadFilterHpf:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q44nw4r3snd6detail15BiquadFilterHpfFv
+	.4byte GetCoef__Q44nw4r3snd6detail15BiquadFilterHpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef
+
+.global __vt__Q44nw4r3snd6detail15BiquadFilterLpf
+__vt__Q44nw4r3snd6detail15BiquadFilterLpf:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q44nw4r3snd6detail15BiquadFilterLpfFv
+	.4byte GetCoef__Q44nw4r3snd6detail15BiquadFilterLpfCFifPQ44nw4r3snd20BiquadFilterCallback10BiquadCoef

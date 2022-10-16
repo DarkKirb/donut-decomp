@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804429B8
-lbl_804429B8:
+.global "@2206"
+"@2206":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -13,8 +13,8 @@ lbl_804429B8:
 	.4byte 0x6C657200
 	.4byte 0
 
-.global lbl_804429D8
-lbl_804429D8:
+.global __RTTI__Q210homebutton15FrameController
+__RTTI__Q210homebutton15FrameController:
 
-	.4byte lbl_804429B8
+	.4byte "@2206"
 	.4byte 0

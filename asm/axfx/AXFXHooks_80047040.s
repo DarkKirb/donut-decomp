@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80047040
-lbl_80047040:
+.global __AXFXAllocFunction
+__AXFXAllocFunction:
 /* 80047040 00042E80  7C 64 1B 78 */	mr r4, r3
-/* 80047044 00042E84  80 6D 80 98 */	lwz r3, lbl_805564B8@sda21(r13)
-/* 80047048 00042E88  4B FD 50 B8 */	b lbl_8001C100
+/* 80047044 00042E84  80 6D 80 98 */	lwz r3, __OSCurrHeap@sda21(r13)
+/* 80047048 00042E88  4B FD 50 B8 */	b OSAllocFromHeap
 /* 8004704C 00042E8C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80047050
-lbl_80047050:
+.global __AXFXFreeFunction
+__AXFXFreeFunction:
 /* 80047050 00042E90  7C 64 1B 78 */	mr r4, r3
-/* 80047054 00042E94  80 6D 80 98 */	lwz r3, lbl_805564B8@sda21(r13)
-/* 80047058 00042E98  4B FD 51 A8 */	b lbl_8001C200
+/* 80047054 00042E94  80 6D 80 98 */	lwz r3, __OSCurrHeap@sda21(r13)
+/* 80047058 00042E98  4B FD 51 A8 */	b OSFreeToHeap
 /* 8004705C 00042E9C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80047060
-lbl_80047060:
-/* 80047060 00042EA0  90 6D 82 08 */	stw r3, lbl_80556628@sda21(r13)
-/* 80047064 00042EA4  90 8D 82 0C */	stw r4, lbl_8055662C@sda21(r13)
+.global AXFXSetHooks
+AXFXSetHooks:
+/* 80047060 00042EA0  90 6D 82 08 */	stw r3, __AXFXAlloc@sda21(r13)
+/* 80047064 00042EA4  90 8D 82 0C */	stw r4, __AXFXFree@sda21(r13)
 /* 80047068 00042EA8  4E 80 00 20 */	blr
 /* 8004706C 00042EAC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80047070
-lbl_80047070:
-/* 80047070 00042EB0  80 0D 82 08 */	lwz r0, lbl_80556628@sda21(r13)
+.global AXFXGetHooks
+AXFXGetHooks:
+/* 80047070 00042EB0  80 0D 82 08 */	lwz r0, __AXFXAlloc@sda21(r13)
 /* 80047074 00042EB4  90 03 00 00 */	stw r0, 0x0(r3)
-/* 80047078 00042EB8  80 0D 82 0C */	lwz r0, lbl_8055662C@sda21(r13)
+/* 80047078 00042EB8  80 0D 82 0C */	lwz r0, __AXFXFree@sda21(r13)
 /* 8004707C 00042EBC  90 04 00 00 */	stw r0, 0x0(r4)
 /* 80047080 00042EC0  4E 80 00 20 */	blr
 /* 80047084 00042EC4  00 00 00 00 */	.4byte 0x00000000

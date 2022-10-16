@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80476A58
-lbl_80476A58:
+.global __vt__Q53scn4step5enemy6flamer15BrainMoveAttack
+__vt__Q53scn4step5enemy6flamer15BrainMoveAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B2164
-	.4byte lbl_802B1F8C
-	.4byte lbl_802B206C
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onStart__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onRecover__Q53scn4step5enemy6flamer15BrainMoveAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

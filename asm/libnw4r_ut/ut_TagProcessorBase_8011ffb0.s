@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011FFB0
-lbl_8011FFB0:
-/* 8011FFB0 0011BDF0  3C 80 80 44 */	lis r4, lbl_804426F4@ha
-/* 8011FFB4 0011BDF4  38 84 26 F4 */	addi r4, r4, lbl_804426F4@l
+.global "__ct__Q34nw4r2ut19TagProcessorBase<c>Fv"
+"__ct__Q34nw4r2ut19TagProcessorBase<c>Fv":
+/* 8011FFB0 0011BDF0  3C 80 80 44 */	lis r4, "__vt__Q34nw4r2ut19TagProcessorBase<c>"@ha
+/* 8011FFB4 0011BDF4  38 84 26 F4 */	addi r4, r4, "__vt__Q34nw4r2ut19TagProcessorBase<c>"@l
 /* 8011FFB8 0011BDF8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8011FFBC 0011BDFC  4E 80 00 20 */	blr
 
-.global lbl_8011FFC0
-lbl_8011FFC0:
-/* 8011FFC0 0011BE00  4B F8 4D F0 */	b lbl_800A4DB0
+.global "__dt__Q34nw4r2ut19TagProcessorBase<c>Fv"
+"__dt__Q34nw4r2ut19TagProcessorBase<c>Fv":
+/* 8011FFC0 0011BE00  4B F8 4D F0 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 8011FFC4 0011BE04  00 00 00 00 */	.4byte 0x00000000
 /* 8011FFC8 0011BE08  00 00 00 00 */	.4byte 0x00000000
 /* 8011FFCC 0011BE0C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8011FFD0
-lbl_8011FFD0:
+.global "Process__Q34nw4r2ut19TagProcessorBase<c>FUsPQ34nw4r2ut15PrintContext<c>"
+"Process__Q34nw4r2ut19TagProcessorBase<c>FUsPQ34nw4r2ut15PrintContext<c>":
 /* 8011FFD0 0011BE10  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8011FFD4 0011BE14  7C 08 02 A6 */	mflr r0
 /* 8011FFD8 0011BE18  2C 04 00 0A */	cmpwi r4, 0xa
@@ -39,7 +39,7 @@ lbl_80120010:
 /* 80120014 0011BE54  C3 E5 00 08 */	lfs f31, 0x8(r5)
 /* 80120018 0011BE58  C3 DF 00 30 */	lfs f30, 0x30(r31)
 /* 8012001C 0011BE5C  7F E3 FB 78 */	mr r3, r31
-/* 80120020 0011BE60  48 00 3D A1 */	bl lbl_80123DC0
+/* 80120020 0011BE60  48 00 3D A1 */	bl "GetLineHeight__Q34nw4r2ut17TextWriterBase<c>CFv"
 /* 80120024 0011BE64  D3 FF 00 2C */	stfs f31, 0x2c(r31)
 /* 80120028 0011BE68  EC 1E 08 2A */	fadds f0, f30, f1
 /* 8012002C 0011BE6C  38 60 00 03 */	li r3, 0x3
@@ -59,13 +59,13 @@ lbl_80120038:
 .global lbl_8012005C
 lbl_8012005C:
 /* 8012005C 0011BE9C  7F E3 FB 78 */	mr r3, r31
-/* 80120060 0011BEA0  48 00 33 31 */	bl lbl_80123390
+/* 80120060 0011BEA0  48 00 33 31 */	bl GetFontWidth__Q34nw4r2ut10CharWriterCFv
 .global lbl_80120064
 lbl_80120064:
 /* 80120064 0011BEA4  3C 00 43 30 */	lis r0, 0x4330
 /* 80120068 0011BEA8  6F C3 80 00 */	xoris r3, r30, 0x8000
 /* 8012006C 0011BEAC  90 61 00 0C */	stw r3, 0xc(r1)
-/* 80120070 0011BEB0  C8 42 95 60 */	lfd f2, lbl_8055F4E0@sda21(r2)
+/* 80120070 0011BEB0  C8 42 95 60 */	lfd f2, "@4919"@sda21(r2)
 /* 80120074 0011BEB4  90 01 00 08 */	stw r0, 0x8(r1)
 /* 80120078 0011BEB8  C0 9F 00 2C */	lfs f4, 0x2c(r31)
 /* 8012007C 0011BEBC  C8 01 00 08 */	lfd f0, 0x8(r1)
@@ -108,8 +108,8 @@ lbl_801200D0:
 /* 801200F8 0011BF38  4E 80 00 20 */	blr
 /* 801200FC 0011BF3C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80120100
-lbl_80120100:
+.global "CalcRect__Q34nw4r2ut19TagProcessorBase<c>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<c>"
+"CalcRect__Q34nw4r2ut19TagProcessorBase<c>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<c>":
 /* 80120100 0011BF40  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80120104 0011BF44  7C 08 02 A6 */	mflr r0
 /* 80120108 0011BF48  90 01 00 64 */	stw r0, 0x64(r1)
@@ -137,7 +137,7 @@ lbl_80120140:
 /* 80120158 0011BF98  C3 E6 00 08 */	lfs f31, 0x8(r6)
 /* 8012015C 0011BF9C  C3 DF 00 30 */	lfs f30, 0x30(r31)
 /* 80120160 0011BFA0  7F E3 FB 78 */	mr r3, r31
-/* 80120164 0011BFA4  48 00 3C 5D */	bl lbl_80123DC0
+/* 80120164 0011BFA4  48 00 3C 5D */	bl "GetLineHeight__Q34nw4r2ut17TextWriterBase<c>CFv"
 /* 80120168 0011BFA8  D3 FF 00 2C */	stfs f31, 0x2c(r31)
 /* 8012016C 0011BFAC  EC 1E 08 2A */	fadds f0, f30, f1
 /* 80120170 0011BFB0  D0 1F 00 30 */	stfs f0, 0x30(r31)
@@ -145,7 +145,7 @@ lbl_80120140:
 /* 80120178 0011BFB8  D0 1B 00 00 */	stfs f0, 0x0(r27)
 /* 8012017C 0011BFBC  C3 DE 00 30 */	lfs f30, 0x30(r30)
 /* 80120180 0011BFC0  80 7C 00 00 */	lwz r3, 0x0(r28)
-/* 80120184 0011BFC4  48 00 32 6D */	bl lbl_801233F0
+/* 80120184 0011BFC4  48 00 32 6D */	bl GetFontHeight__Q34nw4r2ut10CharWriterCFv
 /* 80120188 0011BFC8  EC 1E 08 2A */	fadds f0, f30, f1
 /* 8012018C 0011BFCC  C0 DB 00 04 */	lfs f6, 0x4(r27)
 /* 80120190 0011BFD0  C0 FB 00 00 */	lfs f7, 0x0(r27)
@@ -179,13 +179,13 @@ lbl_801201C8:
 .global lbl_801201F8
 lbl_801201F8:
 /* 801201F8 0011C038  7F E3 FB 78 */	mr r3, r31
-/* 801201FC 0011C03C  48 00 31 95 */	bl lbl_80123390
+/* 801201FC 0011C03C  48 00 31 95 */	bl GetFontWidth__Q34nw4r2ut10CharWriterCFv
 .global lbl_80120200
 lbl_80120200:
 /* 80120200 0011C040  3C 00 43 30 */	lis r0, 0x4330
 /* 80120204 0011C044  6F C3 80 00 */	xoris r3, r30, 0x8000
 /* 80120208 0011C048  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8012020C 0011C04C  C8 42 95 60 */	lfd f2, lbl_8055F4E0@sda21(r2)
+/* 8012020C 0011C04C  C8 42 95 60 */	lfd f2, "@4919"@sda21(r2)
 /* 80120210 0011C050  90 01 00 08 */	stw r0, 0x8(r1)
 /* 80120214 0011C054  C0 9F 00 2C */	lfs f4, 0x2c(r31)
 /* 80120218 0011C058  C8 01 00 08 */	lfd f0, 0x8(r1)
@@ -213,7 +213,7 @@ lbl_80120260:
 /* 80120268 0011C0A8  D0 1B 00 08 */	stfs f0, 0x8(r27)
 /* 8012026C 0011C0AC  C0 1D 00 30 */	lfs f0, 0x30(r29)
 /* 80120270 0011C0B0  D0 1B 00 04 */	stfs f0, 0x4(r27)
-/* 80120274 0011C0B4  48 00 31 7D */	bl lbl_801233F0
+/* 80120274 0011C0B4  48 00 31 7D */	bl GetFontHeight__Q34nw4r2ut10CharWriterCFv
 /* 80120278 0011C0B8  C0 5B 00 04 */	lfs f2, 0x4(r27)
 /* 8012027C 0011C0BC  38 60 00 01 */	li r3, 0x1
 /* 80120280 0011C0C0  C0 DB 00 00 */	lfs f6, 0x0(r27)
@@ -248,22 +248,22 @@ lbl_801202BC:
 /* 801202E4 0011C124  00 00 00 00 */	.4byte 0x00000000
 /* 801202E8 0011C128  00 00 00 00 */	.4byte 0x00000000
 /* 801202EC 0011C12C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801202F0
-lbl_801202F0:
-/* 801202F0 0011C130  3C 80 80 44 */	lis r4, lbl_804426E0@ha
-/* 801202F4 0011C134  38 84 26 E0 */	addi r4, r4, lbl_804426E0@l
+.global "__ct__Q34nw4r2ut19TagProcessorBase<w>Fv"
+"__ct__Q34nw4r2ut19TagProcessorBase<w>Fv":
+/* 801202F0 0011C130  3C 80 80 44 */	lis r4, "__vt__Q34nw4r2ut19TagProcessorBase<w>"@ha
+/* 801202F4 0011C134  38 84 26 E0 */	addi r4, r4, "__vt__Q34nw4r2ut19TagProcessorBase<w>"@l
 /* 801202F8 0011C138  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801202FC 0011C13C  4E 80 00 20 */	blr
 
-.global lbl_80120300
-lbl_80120300:
-/* 80120300 0011C140  4B F8 4A B0 */	b lbl_800A4DB0
+.global "__dt__Q34nw4r2ut19TagProcessorBase<w>Fv"
+"__dt__Q34nw4r2ut19TagProcessorBase<w>Fv":
+/* 80120300 0011C140  4B F8 4A B0 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 80120304 0011C144  00 00 00 00 */	.4byte 0x00000000
 /* 80120308 0011C148  00 00 00 00 */	.4byte 0x00000000
 /* 8012030C 0011C14C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80120310
-lbl_80120310:
+.global "Process__Q34nw4r2ut19TagProcessorBase<w>FUsPQ34nw4r2ut15PrintContext<w>"
+"Process__Q34nw4r2ut19TagProcessorBase<w>FUsPQ34nw4r2ut15PrintContext<w>":
 /* 80120310 0011C150  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80120314 0011C154  7C 08 02 A6 */	mflr r0
 /* 80120318 0011C158  2C 04 00 0A */	cmpwi r4, 0xa
@@ -286,7 +286,7 @@ lbl_80120350:
 /* 80120354 0011C194  C3 E5 00 08 */	lfs f31, 0x8(r5)
 /* 80120358 0011C198  C3 DF 00 30 */	lfs f30, 0x30(r31)
 /* 8012035C 0011C19C  7F E3 FB 78 */	mr r3, r31
-/* 80120360 0011C1A0  48 00 3A 61 */	bl lbl_80123DC0
+/* 80120360 0011C1A0  48 00 3A 61 */	bl "GetLineHeight__Q34nw4r2ut17TextWriterBase<c>CFv"
 /* 80120364 0011C1A4  D3 FF 00 2C */	stfs f31, 0x2c(r31)
 /* 80120368 0011C1A8  EC 1E 08 2A */	fadds f0, f30, f1
 /* 8012036C 0011C1AC  38 60 00 03 */	li r3, 0x3
@@ -306,13 +306,13 @@ lbl_80120378:
 .global lbl_8012039C
 lbl_8012039C:
 /* 8012039C 0011C1DC  7F E3 FB 78 */	mr r3, r31
-/* 801203A0 0011C1E0  48 00 2F F1 */	bl lbl_80123390
+/* 801203A0 0011C1E0  48 00 2F F1 */	bl GetFontWidth__Q34nw4r2ut10CharWriterCFv
 .global lbl_801203A4
 lbl_801203A4:
 /* 801203A4 0011C1E4  3C 00 43 30 */	lis r0, 0x4330
 /* 801203A8 0011C1E8  6F C3 80 00 */	xoris r3, r30, 0x8000
 /* 801203AC 0011C1EC  90 61 00 0C */	stw r3, 0xc(r1)
-/* 801203B0 0011C1F0  C8 42 95 60 */	lfd f2, lbl_8055F4E0@sda21(r2)
+/* 801203B0 0011C1F0  C8 42 95 60 */	lfd f2, "@4919"@sda21(r2)
 /* 801203B4 0011C1F4  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801203B8 0011C1F8  C0 9F 00 2C */	lfs f4, 0x2c(r31)
 /* 801203BC 0011C1FC  C8 01 00 08 */	lfd f0, 0x8(r1)
@@ -355,8 +355,8 @@ lbl_80120410:
 /* 80120438 0011C278  4E 80 00 20 */	blr
 /* 8012043C 0011C27C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80120440
-lbl_80120440:
+.global "CalcRect__Q34nw4r2ut19TagProcessorBase<w>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>"
+"CalcRect__Q34nw4r2ut19TagProcessorBase<w>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>":
 /* 80120440 0011C280  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80120444 0011C284  7C 08 02 A6 */	mflr r0
 /* 80120448 0011C288  90 01 00 64 */	stw r0, 0x64(r1)
@@ -384,7 +384,7 @@ lbl_80120480:
 /* 80120498 0011C2D8  C3 E6 00 08 */	lfs f31, 0x8(r6)
 /* 8012049C 0011C2DC  C3 DF 00 30 */	lfs f30, 0x30(r31)
 /* 801204A0 0011C2E0  7F E3 FB 78 */	mr r3, r31
-/* 801204A4 0011C2E4  48 00 39 1D */	bl lbl_80123DC0
+/* 801204A4 0011C2E4  48 00 39 1D */	bl "GetLineHeight__Q34nw4r2ut17TextWriterBase<c>CFv"
 /* 801204A8 0011C2E8  D3 FF 00 2C */	stfs f31, 0x2c(r31)
 /* 801204AC 0011C2EC  EC 1E 08 2A */	fadds f0, f30, f1
 /* 801204B0 0011C2F0  D0 1F 00 30 */	stfs f0, 0x30(r31)
@@ -392,7 +392,7 @@ lbl_80120480:
 /* 801204B8 0011C2F8  D0 1B 00 00 */	stfs f0, 0x0(r27)
 /* 801204BC 0011C2FC  C3 DE 00 30 */	lfs f30, 0x30(r30)
 /* 801204C0 0011C300  80 7C 00 00 */	lwz r3, 0x0(r28)
-/* 801204C4 0011C304  48 00 2F 2D */	bl lbl_801233F0
+/* 801204C4 0011C304  48 00 2F 2D */	bl GetFontHeight__Q34nw4r2ut10CharWriterCFv
 /* 801204C8 0011C308  EC 1E 08 2A */	fadds f0, f30, f1
 /* 801204CC 0011C30C  C0 DB 00 04 */	lfs f6, 0x4(r27)
 /* 801204D0 0011C310  C0 FB 00 00 */	lfs f7, 0x0(r27)
@@ -426,13 +426,13 @@ lbl_80120508:
 .global lbl_80120538
 lbl_80120538:
 /* 80120538 0011C378  7F E3 FB 78 */	mr r3, r31
-/* 8012053C 0011C37C  48 00 2E 55 */	bl lbl_80123390
+/* 8012053C 0011C37C  48 00 2E 55 */	bl GetFontWidth__Q34nw4r2ut10CharWriterCFv
 .global lbl_80120540
 lbl_80120540:
 /* 80120540 0011C380  3C 00 43 30 */	lis r0, 0x4330
 /* 80120544 0011C384  6F C3 80 00 */	xoris r3, r30, 0x8000
 /* 80120548 0011C388  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8012054C 0011C38C  C8 42 95 60 */	lfd f2, lbl_8055F4E0@sda21(r2)
+/* 8012054C 0011C38C  C8 42 95 60 */	lfd f2, "@4919"@sda21(r2)
 /* 80120550 0011C390  90 01 00 08 */	stw r0, 0x8(r1)
 /* 80120554 0011C394  C0 9F 00 2C */	lfs f4, 0x2c(r31)
 /* 80120558 0011C398  C8 01 00 08 */	lfd f0, 0x8(r1)
@@ -460,7 +460,7 @@ lbl_801205A0:
 /* 801205A8 0011C3E8  D0 1B 00 08 */	stfs f0, 0x8(r27)
 /* 801205AC 0011C3EC  C0 1D 00 30 */	lfs f0, 0x30(r29)
 /* 801205B0 0011C3F0  D0 1B 00 04 */	stfs f0, 0x4(r27)
-/* 801205B4 0011C3F4  48 00 2E 3D */	bl lbl_801233F0
+/* 801205B4 0011C3F4  48 00 2E 3D */	bl GetFontHeight__Q34nw4r2ut10CharWriterCFv
 /* 801205B8 0011C3F8  C0 5B 00 04 */	lfs f2, 0x4(r27)
 /* 801205BC 0011C3FC  38 60 00 01 */	li r3, 0x1
 /* 801205C0 0011C400  C0 DB 00 00 */	lfs f6, 0x0(r27)

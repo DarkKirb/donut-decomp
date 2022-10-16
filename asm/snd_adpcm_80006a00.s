@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80006A00
-lbl_80006A00:
+.global DecodeDspAdpcm__Q34nw4r3snd6detailFP10_AXPBADPCMUc
+DecodeDspAdpcm__Q34nw4r3snd6detailFP10_AXPBADPCMUc:
 /* 80006A00 00002840  A0 E3 00 22 */	lhz r7, 0x22(r3)
 /* 80006A04 00002844  54 80 63 26 */	rlwinm r0, r4, 12, 12, 19
 /* 80006A08 00002848  A1 23 00 24 */	lhz r9, 0x24(r3)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80464B60
-lbl_80464B60:
+.global "@57947_80464B60"
+"@57947_80464B60":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -65,54 +65,54 @@ lbl_80464B60:
 	.4byte 0x416E6772
 	.4byte 0x79000000
 
-.global lbl_80464C50
-lbl_80464C50:
+.global "__vt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss7bonkers8NodeKind>"
+"__vt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss7bonkers8NodeKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80237C04
-	.4byte lbl_80237B68
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-
-.global lbl_80464C70
-lbl_80464C70:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80237C00
-	.4byte lbl_80237B88
+	.4byte "__dt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss7bonkers8NodeKind>Fv"
+	.4byte "create__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss7bonkers8NodeKind>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_80464C90
-lbl_80464C90:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common11StateAppear,PQ43scn4step4boss4Boss>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common11StateAppear,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80237B64
-	.4byte lbl_80237BA4
-	.4byte lbl_802373E0
-	.4byte lbl_80237740
-	.4byte lbl_802377FC
-	.4byte lbl_80237888
-	.4byte lbl_802378B8
-	.4byte lbl_8022E5D8
-	.4byte lbl_8022E5DC
-	.4byte lbl_8022E5E0
-	.4byte lbl_8022E5E4
-	.4byte lbl_8022E5E8
-	.4byte lbl_8022E5EC
-	.4byte lbl_80237950
-	.4byte lbl_8022E5F4
-	.4byte lbl_80237954
-	.4byte lbl_8022E5FC
-	.4byte lbl_8022E600
-	.4byte lbl_8022E604
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common11StateAppear,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common11StateAppear,PQ43scn4step4boss4Boss>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q53scn4step4boss7bonkers6Custom
+__vt__Q53scn4step4boss7bonkers6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step4boss7bonkers6CustomCFv
+	.4byte __dt__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onInit__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onAppear__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onStart__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onDamage__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onDead__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onProcMove__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcFixPos__Q53scn4step4boss7bonkers6CustomFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

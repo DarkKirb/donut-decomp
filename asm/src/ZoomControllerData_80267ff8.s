@@ -1,11 +1,11 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80267FF8
-lbl_80267FF8:
+.global __ct__Q43scn4step6camera18ZoomControllerDataFv
+__ct__Q43scn4step6camera18ZoomControllerDataFv:
 /* 80267FF8 00263E38  38 00 00 00 */	li r0, 0x0
 /* 80267FFC 00263E3C  90 03 00 00 */	stw r0, 0x0(r3)
-/* 80268000 00263E40  C0 02 AC 60 */	lfs f0, lbl_80560BE0@sda21(r2)
+/* 80268000 00263E40  C0 02 AC 60 */	lfs f0, "@49761"@sda21(r2)
 /* 80268004 00263E44  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 80268008 00263E48  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 8026800C 00263E4C  D0 03 00 0C */	stfs f0, 0xc(r3)
@@ -13,8 +13,8 @@ lbl_80267FF8:
 /* 80268014 00263E54  98 03 00 14 */	stb r0, 0x14(r3)
 /* 80268018 00263E58  90 03 00 18 */	stw r0, 0x18(r3)
 /* 8026801C 00263E5C  4E 80 00 20 */	blr
-.global lbl_80268020
-lbl_80268020:
+.global __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomControllerRCQ33hel4math7Vector2ffbQ43scn4step6camera12ZoomPriority
+__ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomControllerRCQ33hel4math7Vector2ffbQ43scn4step6camera12ZoomPriority:
 /* 80268020 00263E60  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80268024 00263E64  7C 08 02 A6 */	mflr r0
 /* 80268028 00263E68  90 01 00 44 */	stw r0, 0x44(r1)
@@ -31,7 +31,7 @@ lbl_80268020:
 /* 80268054 00263E94  7C DE 33 78 */	mr r30, r6
 /* 80268058 00263E98  7C FF 3B 78 */	mr r31, r7
 /* 8026805C 00263E9C  7C 83 23 78 */	mr r3, r4
-/* 80268060 00263EA0  4B FF FE E9 */	bl lbl_80267F48
+/* 80268060 00263EA0  4B FF FE E9 */	bl generateUID__Q43scn4step6camera14ZoomControllerFv
 /* 80268064 00263EA4  90 7C 00 00 */	stw r3, 0x0(r28)
 /* 80268068 00263EA8  C0 1D 00 00 */	lfs f0, 0x0(r29)
 /* 8026806C 00263EAC  D0 1C 00 04 */	stfs f0, 0x4(r28)

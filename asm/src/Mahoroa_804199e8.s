@@ -1,52 +1,52 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804199E8
-lbl_804199E8:
+.global "T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21@unnamed@Mahoroa_cpp@"
+"T_ANIM_ENTRIES__Q53scn4step7gimmick7mahoroa21@unnamed@Mahoroa_cpp@":
 
-	.4byte lbl_8055A7B4
+	.4byte "@55205"
 	.4byte 0
-	.4byte lbl_8055A7BC
+	.4byte "@55206"
 	.4byte 0
-	.4byte lbl_8055A7C4
+	.4byte "@55207"
 	.4byte 0
-	.4byte lbl_804815B8
+	.4byte "@55208_804815B8"
 	.4byte 0
-	.4byte lbl_804815C8
+	.4byte "@55209_804815C8"
 	.4byte 0
-	.4byte lbl_804815D4
+	.4byte "@55210_804815D4"
 	.4byte 0
-	.4byte lbl_804815E0
+	.4byte "@55211_804815E0"
 	.4byte 0
-	.4byte lbl_804815F0
+	.4byte "@55212_804815F0"
 	.4byte 0
-	.4byte lbl_804815FC
+	.4byte "@55213_804815FC"
 	.4byte 0
-	.4byte lbl_8048160C
+	.4byte "@55214_8048160C"
 	.4byte 0
-	.4byte lbl_8048161C
+	.4byte "@55215_8048161C"
 	.4byte 0
-	.4byte lbl_80481630
+	.4byte "@55216_80481630"
 	.4byte 0
-	.4byte lbl_8055A7CC
+	.4byte "@55217_8055A7CC"
 	.4byte 0
-	.4byte lbl_8048163C
+	.4byte "@55218_8048163C"
 	.4byte 0
-	.4byte lbl_8055A7D4
+	.4byte "@55219"
 	.4byte 0
-	.4byte lbl_8055A7DC
+	.4byte "@55220"
 	.4byte 0
-	.4byte lbl_8055A7E4
+	.4byte "@55221_8055A7E4"
 	.4byte 0
-	.4byte lbl_8055A7EC
+	.4byte "@55222"
 	.4byte 0
-	.4byte lbl_8055A7F4
+	.4byte "@55223"
 	.4byte 0
-	.4byte lbl_8055A7FC
+	.4byte "@55224"
 	.4byte 0
-	.4byte lbl_8055A804
+	.4byte "@55225_8055A804"
 	.4byte 0
-	.4byte lbl_8055A80C
+	.4byte "@55226_8055A80C"
 	.4byte 0
-	.4byte lbl_8055A814
+	.4byte "@55227_8055A814"
 	.4byte 0

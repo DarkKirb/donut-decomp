@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407EA0
-lbl_80407EA0:
+.global bta_service_id_to_uuid_lkup_tbl
+bta_service_id_to_uuid_lkup_tbl:
 
 	.4byte 0x12001101
 	.4byte 0x11031111
@@ -17,8 +17,8 @@ lbl_80407EA0:
 	.4byte 0x11241304
 	.4byte 0x112F0000
 
-.global lbl_80407ED0
-lbl_80407ED0:
+.global bta_service_id_to_btm_srv_id_lkup_tbl
+bta_service_id_to_btm_srv_id_lkup_tbl:
 
 	.4byte 0
 	.4byte 0x00000001
@@ -45,12 +45,12 @@ lbl_80407ED0:
 	.4byte 0x0000002C
 	.4byte 0
 
-.global lbl_80407F30
-lbl_80407F30:
+.global bta_security
+bta_security:
 
-	.4byte lbl_80079BCC
-	.4byte lbl_80079D54
-	.4byte lbl_80079E8C
-	.4byte lbl_80079E84
-	.4byte lbl_80079F28
+	.4byte bta_dm_authorize_cback
+	.4byte bta_dm_pin_cback
+	.4byte bta_dm_new_link_key_cback
+	.4byte bta_dm_link_key_request_cback
+	.4byte bta_dm_authentication_complete_cback
 	.4byte 0

@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047C9C0
-lbl_8047C9C0:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl16StateFlyStraight,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl16StateFlyStraight,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E36A0
-	.4byte lbl_802E3660
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl16StateFlyStraight,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl16StateFlyStraight,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047C9D0
-lbl_8047C9D0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802E369C
-	.4byte lbl_802E367C
-
-.global lbl_8047C9E0
-lbl_8047C9E0:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl14StateFlyAround,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl14StateFlyAround,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E3698
-	.4byte lbl_802E357C
-	.4byte lbl_802E365C
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl14StateFlyAround,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5snowl14StateFlyAround,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy5snowl8BrainFly
+__vt__Q53scn4step5enemy5snowl8BrainFly:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5snowl8BrainFlyFv
+	.4byte onStart__Q53scn4step5enemy5snowl8BrainFlyFv
+	.4byte onRecover__Q53scn4step5enemy5snowl8BrainFlyFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

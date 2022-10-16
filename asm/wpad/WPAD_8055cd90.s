@@ -1,150 +1,150 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CD90
-lbl_8055CD90:
+.global _wpadRegisterShutdownFunc
+_wpadRegisterShutdownFunc:
 	.skip 0x2
 
-.global lbl_8055CD92
-lbl_8055CD92:
+.global _wpadSenseCnt
+_wpadSenseCnt:
 	.skip 0x2
 
-.global lbl_8055CD94
-lbl_8055CD94:
+.global _wpadCheckCnt
+_wpadCheckCnt:
 	.skip 0x2
 
-.global lbl_8055CD96
-lbl_8055CD96:
+.global _wpadAfhCnt
+_wpadAfhCnt:
 	.skip 0x2
 
-.global lbl_8055CD98
-lbl_8055CD98:
+.global _wpadExtCnt
+_wpadExtCnt:
 	.skip 0x4
 
-.global lbl_8055CD9C
-lbl_8055CD9C:
+.global _wpadRumbleCnt
+_wpadRumbleCnt:
 	.skip 0x4
 
-.global lbl_8055CDA0
-lbl_8055CDA0:
+.global _wpadStartup
+_wpadStartup:
 	.skip 0x4
 
-.global lbl_8055CDA4
-lbl_8055CDA4:
+.global _wpadReconnectWait
+_wpadReconnectWait:
 	.skip 0x4
 
-.global lbl_8055CDA8
-lbl_8055CDA8:
+.global _wpadVSMInit
+_wpadVSMInit:
 	.skip 0x4
 
-.global lbl_8055CDAC
-lbl_8055CDAC:
+.global _wpadTRNInit
+_wpadTRNInit:
 	.skip 0x4
 
-.global lbl_8055CDB0
-lbl_8055CDB0:
+.global _wpadGTRInit
+_wpadGTRInit:
 	.skip 0x4
 
-.global lbl_8055CDB4
-lbl_8055CDB4:
+.global _wpadDRMInit
+_wpadDRMInit:
 	.skip 0x4
 
-.global lbl_8055CDB8
-lbl_8055CDB8:
+.global _wpadTKOInit
+_wpadTKOInit:
 	.skip 0x4
 
-.global lbl_8055CDBC
-lbl_8055CDBC:
+.global _wpadTBLInit
+_wpadTBLInit:
 	.skip 0x4
 
-.global lbl_8055CDC0
-lbl_8055CDC0:
+.global _wpadBLKInit
+_wpadBLKInit:
 	.skip 0x4
 
-.global lbl_8055CDC4
-lbl_8055CDC4:
+.global _wpadDRWInit
+_wpadDRWInit:
 	.skip 0x4
 
-.global lbl_8055CDC8
-lbl_8055CDC8:
+.global _enabledVSM
+_enabledVSM:
 	.skip 0x4
 
-.global lbl_8055CDCC
-lbl_8055CDCC:
+.global _enabledTRN
+_enabledTRN:
 	.skip 0x4
 
-.global lbl_8055CDD0
-lbl_8055CDD0:
+.global _enabledGTR
+_enabledGTR:
 	.skip 0x4
 
-.global lbl_8055CDD4
-lbl_8055CDD4:
+.global _enabledDRM
+_enabledDRM:
 	.skip 0x4
 
-.global lbl_8055CDD8
-lbl_8055CDD8:
+.global _enabledTKO
+_enabledTKO:
 	.skip 0x4
 
-.global lbl_8055CDDC
-lbl_8055CDDC:
+.global _enabledTBL
+_enabledTBL:
 	.skip 0x4
 
-.global lbl_8055CDE0
-lbl_8055CDE0:
+.global _enabledBLK
+_enabledBLK:
 	.skip 0x4
 
-.global lbl_8055CDE4
-lbl_8055CDE4:
+.global _enabledDRW
+_enabledDRW:
 	.skip 0x4
 
-.global lbl_8055CDE8
-lbl_8055CDE8:
+.global _wpadUsedCallback
+_wpadUsedCallback:
 	.skip 0x4
 
-.global lbl_8055CDEC
-lbl_8055CDEC:
+.global _wpadInitialized
+_wpadInitialized:
 	.skip 0x4
 
-.global lbl_8055CDF0
-lbl_8055CDF0:
+.global _wpadIsUsedChannel
+_wpadIsUsedChannel:
 	.skip 0x4
 
-.global lbl_8055CDF4
-lbl_8055CDF4:
+.global _wpadAfhChannel
+_wpadAfhChannel:
 	.skip 0x1
 
-.global lbl_8055CDF5
-lbl_8055CDF5:
+.global _wpadShutdownFlag
+_wpadShutdownFlag:
 	.skip 0x1
 
-.global lbl_8055CDF6
-lbl_8055CDF6:
+.global _wpadSCSetting
+_wpadSCSetting:
 	.skip 0x1
 
-.global lbl_8055CDF7
-lbl_8055CDF7:
+.global _wpadSpeakerVol
+_wpadSpeakerVol:
 	.skip 0x1
 
-.global lbl_8055CDF8
-lbl_8055CDF8:
+.global _wpadRumbleFlag
+_wpadRumbleFlag:
 	.skip 0x4
 
-.global lbl_8055CDFC
-lbl_8055CDFC:
+.global _wpadSensorBarPos
+_wpadSensorBarPos:
 	.skip 0x1
 
-.global lbl_8055CDFD
-lbl_8055CDFD:
+.global _wpadDpdSense
+_wpadDpdSense:
 	.skip 0x1
 
-.global lbl_8055CDFE
-lbl_8055CDFE:
+.global _wpadSleepTime
+_wpadSleepTime:
 	.skip 0x2
 
-.global lbl_8055CE00
-lbl_8055CE00:
+.global _wpadGameCode
+_wpadGameCode:
 	.skip 0x4
 
-.global lbl_8055CE04
-lbl_8055CE04:
+.global _wpadGameType
+_wpadGameType:
 	.skip 0x4

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80419DA0
-lbl_80419DA0:
+.global "MIGHTY_COLOR_TABLE__24@unnamed@Invincible_cpp@"
+"MIGHTY_COLOR_TABLE__24@unnamed@Invincible_cpp@":
 
 	.4byte 0x000000FF
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804383F0
-lbl_804383F0:
+.global ProductAreaAndStringTbl
+ProductAreaAndStringTbl:
 
 	.4byte 0x004A504E
 	.4byte 0x00015553
@@ -23,8 +23,8 @@ lbl_804383F0:
 	.4byte 0x00FF0000
 	.4byte 0
 
-.global lbl_80438438
-lbl_80438438:
+.global ProductGameRegionAndStringTbl
+ProductGameRegionAndStringTbl:
 
 	.4byte 0x004A5000
 	.4byte 0x01555300

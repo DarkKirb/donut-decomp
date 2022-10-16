@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8022169C
-lbl_8022169C:
+.global toWorldPos__Q33scn4step8MaproPosCFv
+toWorldPos__Q33scn4step8MaproPosCFv:
 /* 8022169C 0021D4DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802216A0 0021D4E0  80 04 00 04 */	lwz r0, 0x4(r4)
-/* 802216A4 0021D4E4  C8 42 A2 90 */	lfd f2, lbl_80560210@sda21(r2)
+/* 802216A4 0021D4E4  C8 42 A2 90 */	lfd f2, "@49677_80560210"@sda21(r2)
 /* 802216A8 0021D4E8  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 802216AC 0021D4EC  90 01 00 0C */	stw r0, 0xc(r1)
 /* 802216B0 0021D4F0  3C A0 43 30 */	lis r5, 0x4330
 /* 802216B4 0021D4F4  90 A1 00 08 */	stw r5, 0x8(r1)
 /* 802216B8 0021D4F8  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 802216BC 0021D4FC  EC 00 10 28 */	fsubs f0, f0, f2
-/* 802216C0 0021D500  C0 22 DB A0 */	lfs f1, lbl_80563B20@sda21(r2)
+/* 802216C0 0021D500  C0 22 DB A0 */	lfs f1, ONE_GRID_SIZE_ON_MAPRO_POS__Q43scn4step3map8Constant@sda21(r2)
 /* 802216C4 0021D504  EC 60 08 24 */	fdivs f3, f0, f1
 /* 802216C8 0021D508  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 802216CC 0021D50C  6C 00 80 00 */	xoris r0, r0, 0x8000

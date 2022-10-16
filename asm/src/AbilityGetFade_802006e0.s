@@ -1,20 +1,20 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802006E0
-lbl_802006E0:
+.global __ct__Q33scn10grandtitle14AbilityGetFadeFRQ33scn10grandtitle9Component
+__ct__Q33scn10grandtitle14AbilityGetFadeFRQ33scn10grandtitle9Component:
 /* 802006E0 001FC520  90 83 00 00 */	stw r4, 0x0(r3)
 /* 802006E4 001FC524  38 00 00 00 */	li r0, 0x0
 /* 802006E8 001FC528  98 03 00 04 */	stb r0, 0x4(r3)
-/* 802006EC 001FC52C  C0 02 9F 90 */	lfs f0, lbl_8055FF10@sda21(r2)
+/* 802006EC 001FC52C  C0 02 9F 90 */	lfs f0, "@51592_8055FF10"@sda21(r2)
 /* 802006F0 001FC530  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 802006F4 001FC534  80 02 9F 88 */	lwz r0, lbl_8055FF08@sda21(r2)
+/* 802006F4 001FC534  80 02 9F 88 */	lwz r0, "@51579_8055FF08"@sda21(r2)
 /* 802006F8 001FC538  90 03 00 0C */	stw r0, 0xc(r3)
-/* 802006FC 001FC53C  80 02 9F 8C */	lwz r0, lbl_8055FF0C@sda21(r2)
+/* 802006FC 001FC53C  80 02 9F 8C */	lwz r0, "@51582_8055FF0C"@sda21(r2)
 /* 80200700 001FC540  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80200704 001FC544  4E 80 00 20 */	blr
-.global lbl_80200708
-lbl_80200708:
+.global update__Q33scn10grandtitle14AbilityGetFadeFv
+update__Q33scn10grandtitle14AbilityGetFadeFv:
 /* 80200708 001FC548  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8020070C 001FC54C  7C 08 02 A6 */	mflr r0
 /* 80200710 001FC550  90 01 00 24 */	stw r0, 0x24(r1)
@@ -23,23 +23,23 @@ lbl_80200708:
 /* 8020071C 001FC55C  88 03 00 04 */	lbz r0, 0x4(r3)
 /* 80200720 001FC560  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80200724 001FC564  41 82 00 0C */	beq lbl_80200730
-/* 80200728 001FC568  C0 02 9F 94 */	lfs f0, lbl_8055FF14@sda21(r2)
+/* 80200728 001FC568  C0 02 9F 94 */	lfs f0, "@51602"@sda21(r2)
 /* 8020072C 001FC56C  48 00 00 08 */	b lbl_80200734
 .global lbl_80200730
 lbl_80200730:
-/* 80200730 001FC570  C0 02 9F 90 */	lfs f0, lbl_8055FF10@sda21(r2)
+/* 80200730 001FC570  C0 02 9F 90 */	lfs f0, "@51592_8055FF10"@sda21(r2)
 .global lbl_80200734
 lbl_80200734:
 /* 80200734 001FC574  C0 43 00 08 */	lfs f2, 0x8(r3)
 /* 80200738 001FC578  EC 20 10 28 */	fsubs f1, f0, f2
-/* 8020073C 001FC57C  C0 02 9F 98 */	lfs f0, lbl_8055FF18@sda21(r2)
+/* 8020073C 001FC57C  C0 02 9F 98 */	lfs f0, "@51603"@sda21(r2)
 /* 80200740 001FC580  EC 00 10 7A */	fmadds f0, f0, f1, f2
 /* 80200744 001FC584  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 80200748 001FC588  38 63 00 10 */	addi r3, r3, 0x10
 /* 8020074C 001FC58C  38 9F 00 0C */	addi r4, r31, 0xc
-/* 80200750 001FC590  4B F4 B1 C5 */	bl lbl_8014B914
+/* 80200750 001FC590  4B F4 B1 C5 */	bl __as__8_GXColorFRC8_GXColor
 /* 80200754 001FC594  88 1F 00 0F */	lbz r0, 0xf(r31)
-/* 80200758 001FC598  C8 22 9F A0 */	lfd f1, lbl_8055FF20@sda21(r2)
+/* 80200758 001FC598  C8 22 9F A0 */	lfd f1, "@51606_8055FF20"@sda21(r2)
 /* 8020075C 001FC59C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80200760 001FC5A0  3C 00 43 30 */	lis r0, 0x4330
 /* 80200764 001FC5A4  90 01 00 08 */	stw r0, 0x8(r1)
@@ -56,12 +56,12 @@ lbl_80200734:
 /* 80200790 001FC5D0  7C 08 03 A6 */	mtlr r0
 /* 80200794 001FC5D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80200798 001FC5D8  4E 80 00 20 */	blr
-.global lbl_8020079C
-lbl_8020079C:
+.global setColor__Q33scn10grandtitle14AbilityGetFadeFRC8_GXColor
+setColor__Q33scn10grandtitle14AbilityGetFadeFRC8_GXColor:
 /* 8020079C 001FC5DC  38 63 00 0C */	addi r3, r3, 0xc
-/* 802007A0 001FC5E0  4B F4 B1 74 */	b lbl_8014B914
-.global lbl_802007A4
-lbl_802007A4:
+/* 802007A0 001FC5E0  4B F4 B1 74 */	b __as__8_GXColorFRC8_GXColor
+.global draw__Q33scn10grandtitle14AbilityGetFadeCFv
+draw__Q33scn10grandtitle14AbilityGetFadeCFv:
 /* 802007A4 001FC5E4  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 802007A8 001FC5E8  7C 08 02 A6 */	mflr r0
 /* 802007AC 001FC5EC  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -71,25 +71,25 @@ lbl_802007A4:
 /* 802007BC 001FC5FC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 802007C0 001FC600  41 82 00 A0 */	beq lbl_80200860
 /* 802007C4 001FC604  38 61 00 68 */	addi r3, r1, 0x68
-/* 802007C8 001FC608  C0 22 9F 90 */	lfs f1, lbl_8055FF10@sda21(r2)
-/* 802007CC 001FC60C  C0 42 9F 94 */	lfs f2, lbl_8055FF14@sda21(r2)
+/* 802007C8 001FC608  C0 22 9F 90 */	lfs f1, "@51592_8055FF10"@sda21(r2)
+/* 802007CC 001FC60C  C0 42 9F 94 */	lfs f2, "@51602"@sda21(r2)
 /* 802007D0 001FC610  FC 60 08 90 */	fmr f3, f1
 /* 802007D4 001FC614  FC 80 10 90 */	fmr f4, f2
 /* 802007D8 001FC618  FC A0 08 90 */	fmr f5, f1
 /* 802007DC 001FC61C  FC C0 10 90 */	fmr f6, f2
-/* 802007E0 001FC620  4B F9 E3 49 */	bl lbl_8019EB28
+/* 802007E0 001FC620  4B F9 E3 49 */	bl CreateOrtho__Q33hel4math8Matrix44Fffffff
 /* 802007E4 001FC624  38 61 00 68 */	addi r3, r1, 0x68
 /* 802007E8 001FC628  38 80 00 00 */	li r4, 0x0
-/* 802007EC 001FC62C  4B F9 48 69 */	bl lbl_80195054
+/* 802007EC 001FC62C  4B F9 48 69 */	bl SetupGX__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix44b
 /* 802007F0 001FC630  38 7F 00 10 */	addi r3, r31, 0x10
-/* 802007F4 001FC634  4B F9 4A F1 */	bl lbl_801952E4
+/* 802007F4 001FC634  4B F9 4A F1 */	bl SetColor__Q23gfx12EasyRender3DFRC8_GXColor
 /* 802007F8 001FC638  38 60 00 01 */	li r3, 0x1
 /* 802007FC 001FC63C  38 80 00 01 */	li r4, 0x1
 /* 80200800 001FC640  38 A0 00 00 */	li r5, 0x0
-/* 80200804 001FC644  4B E3 80 1D */	bl lbl_80038820
-/* 80200808 001FC648  C0 22 9F 90 */	lfs f1, lbl_8055FF10@sda21(r2)
+/* 80200804 001FC644  4B E3 80 1D */	bl GXSetZMode
+/* 80200808 001FC648  C0 22 9F 90 */	lfs f1, "@51592_8055FF10"@sda21(r2)
 /* 8020080C 001FC64C  D0 21 00 08 */	stfs f1, 0x8(r1)
-/* 80200810 001FC650  C0 02 9F 94 */	lfs f0, lbl_8055FF14@sda21(r2)
+/* 80200810 001FC650  C0 02 9F 94 */	lfs f0, "@51602"@sda21(r2)
 /* 80200814 001FC654  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 80200818 001FC658  D0 21 00 10 */	stfs f1, 0x10(r1)
 /* 8020081C 001FC65C  D0 01 00 14 */	stfs f0, 0x14(r1)
@@ -102,13 +102,13 @@ lbl_802007A4:
 /* 80200838 001FC678  D0 21 00 30 */	stfs f1, 0x30(r1)
 /* 8020083C 001FC67C  D0 21 00 34 */	stfs f1, 0x34(r1)
 /* 80200840 001FC680  38 61 00 38 */	addi r3, r1, 0x38
-/* 80200844 001FC684  4B E2 FC 9D */	bl lbl_800304E0
+/* 80200844 001FC684  4B E2 FC 9D */	bl PSMTXIdentity
 /* 80200848 001FC688  38 61 00 38 */	addi r3, r1, 0x38
 /* 8020084C 001FC68C  38 81 00 2C */	addi r4, r1, 0x2c
 /* 80200850 001FC690  38 A1 00 20 */	addi r5, r1, 0x20
 /* 80200854 001FC694  38 C1 00 14 */	addi r6, r1, 0x14
 /* 80200858 001FC698  38 E1 00 08 */	addi r7, r1, 0x8
-/* 8020085C 001FC69C  4B F9 4D 09 */	bl lbl_80195564
+/* 8020085C 001FC69C  4B F9 4D 09 */	bl DrawQuadFill__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3RCQ33hel4math7Vector3
 .global lbl_80200860
 lbl_80200860:
 /* 80200860 001FC6A0  83 E1 00 AC */	lwz r31, 0xac(r1)

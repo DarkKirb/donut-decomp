@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8023AE58
-lbl_8023AE58:
+.global __ct__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFRQ43scn4step4boss4Boss
+__ct__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFRQ43scn4step4boss4Boss:
 /* 8023AE58 00236C98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AE5C 00236C9C  7C 08 02 A6 */	mflr r0
 /* 8023AE60 00236CA0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -12,24 +12,24 @@ lbl_8023AE58:
 /* 8023AE70 00236CB0  38 00 00 00 */	li r0, 0x0
 /* 8023AE74 00236CB4  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8023AE78 00236CB8  38 63 00 08 */	addi r3, r3, 0x8
-/* 8023AE7C 00236CBC  3C 80 80 24 */	lis r4, lbl_8023AEB0@ha
-/* 8023AE80 00236CC0  38 84 AE B0 */	addi r4, r4, lbl_8023AEB0@l
-/* 8023AE84 00236CC4  3C A0 80 24 */	lis r5, lbl_8023AF50@ha
-/* 8023AE88 00236CC8  38 A5 AF 50 */	addi r5, r5, lbl_8023AF50@l
+/* 8023AE7C 00236CBC  3C 80 80 24 */	lis r4, __ct__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@ha
+/* 8023AE80 00236CC0  38 84 AE B0 */	addi r4, r4, __ct__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@l
+/* 8023AE84 00236CC4  3C A0 80 24 */	lis r5, __dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@ha
+/* 8023AE88 00236CC8  38 A5 AF 50 */	addi r5, r5, __dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@l
 /* 8023AE8C 00236CCC  38 C0 00 14 */	li r6, 0x14
 /* 8023AE90 00236CD0  38 E0 00 08 */	li r7, 0x8
-/* 8023AE94 00236CD4  4B DC C1 91 */	bl lbl_80007024
+/* 8023AE94 00236CD4  4B DC C1 91 */	bl __construct_array
 /* 8023AE98 00236CD8  7F E3 FB 78 */	mr r3, r31
 /* 8023AE9C 00236CDC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8023AEA0 00236CE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8023AEA4 00236CE4  7C 08 03 A6 */	mtlr r0
 /* 8023AEA8 00236CE8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023AEAC 00236CEC  4E 80 00 20 */	blr
-.global lbl_8023AEB0
-lbl_8023AEB0:
-/* 8023AEB0 00236CF0  4B FF F0 D4 */	b lbl_80239F84
-.global lbl_8023AEB4
-lbl_8023AEB4:
+.global __ct__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv
+__ct__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv:
+/* 8023AEB0 00236CF0  4B FF F0 D4 */	b "__ct__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
+.global "unlink__Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>Fv"
+"unlink__Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>Fv":
 /* 8023AEB4 00236CF4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AEB8 00236CF8  7C 08 02 A6 */	mflr r0
 /* 8023AEBC 00236CFC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -37,10 +37,10 @@ lbl_8023AEB4:
 /* 8023AEC4 00236D04  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8023AEC8 00236D08  7C 7E 1B 78 */	mr r30, r3
 /* 8023AECC 00236D0C  83 E3 00 08 */	lwz r31, 0x8(r3)
-/* 8023AED0 00236D10  48 00 00 31 */	bl lbl_8023AF00
+/* 8023AED0 00236D10  48 00 00 31 */	bl "GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"
 /* 8023AED4 00236D14  7C 64 1B 78 */	mr r4, r3
 /* 8023AED8 00236D18  7F E3 FB 78 */	mr r3, r31
-/* 8023AEDC 00236D1C  4B EE 4F 05 */	bl lbl_8011FDE0
+/* 8023AEDC 00236D1C  4B EE 4F 05 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode
 /* 8023AEE0 00236D20  38 00 00 00 */	li r0, 0x0
 /* 8023AEE4 00236D24  90 1E 00 08 */	stw r0, 0x8(r30)
 /* 8023AEE8 00236D28  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -49,8 +49,8 @@ lbl_8023AEB4:
 /* 8023AEF4 00236D34  7C 08 03 A6 */	mtlr r0
 /* 8023AEF8 00236D38  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023AEFC 00236D3C  4E 80 00 20 */	blr
-.global lbl_8023AF00
-lbl_8023AF00:
+.global "GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"
+"GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>":
 /* 8023AF00 00236D40  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AF04 00236D44  7C 08 02 A6 */	mflr r0
 /* 8023AF08 00236D48  90 01 00 14 */	stw r0, 0x14(r1)
@@ -58,13 +58,13 @@ lbl_8023AF00:
 /* 8023AF10 00236D50  7C 7F 1B 78 */	mr r31, r3
 /* 8023AF14 00236D54  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023AF18 00236D58  40 82 00 20 */	bne lbl_8023AF38
-/* 8023AF1C 00236D5C  3C 60 80 46 */	lis r3, lbl_804648C4@ha
-/* 8023AF20 00236D60  38 63 48 C4 */	addi r3, r3, lbl_804648C4@l
+/* 8023AF1C 00236D5C  3C 60 80 46 */	lis r3, "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"@ha
+/* 8023AF20 00236D60  38 63 48 C4 */	addi r3, r3, "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"@l
 /* 8023AF24 00236D64  38 80 02 33 */	li r4, 0x233
-/* 8023AF28 00236D68  3C A0 80 46 */	lis r5, lbl_804648A0@ha
-/* 8023AF2C 00236D6C  38 A5 48 A0 */	addi r5, r5, lbl_804648A0@l
+/* 8023AF28 00236D68  3C A0 80 46 */	lis r5, "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>@0"@ha
+/* 8023AF2C 00236D6C  38 A5 48 A0 */	addi r5, r5, "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>@0"@l
 /* 8023AF30 00236D70  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8023AF34 00236D74  4B EE D4 1D */	bl lbl_80128350
+/* 8023AF34 00236D74  4B EE D4 1D */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8023AF38
 lbl_8023AF38:
 /* 8023AF38 00236D78  7F E3 FB 78 */	mr r3, r31
@@ -73,8 +73,8 @@ lbl_8023AF38:
 /* 8023AF44 00236D84  7C 08 03 A6 */	mtlr r0
 /* 8023AF48 00236D88  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023AF4C 00236D8C  4E 80 00 20 */	blr
-.global lbl_8023AF50
-lbl_8023AF50:
+.global __dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv
+__dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv:
 /* 8023AF50 00236D90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AF54 00236D94  7C 08 02 A6 */	mflr r0
 /* 8023AF58 00236D98  90 01 00 14 */	stw r0, 0x14(r1)
@@ -85,12 +85,12 @@ lbl_8023AF50:
 /* 8023AF6C 00236DAC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023AF70 00236DB0  41 82 00 20 */	beq lbl_8023AF90
 /* 8023AF74 00236DB4  38 80 FF FF */	li r4, -0x1
-/* 8023AF78 00236DB8  4B FF A3 91 */	bl lbl_80235308
+/* 8023AF78 00236DB8  4B FF A3 91 */	bl "__dt__Q24util37ObjRefHandle<Q43scn4step5enemy5Enemy>Fv"
 /* 8023AF7C 00236DBC  7F E0 07 34 */	extsh r0, r31
 /* 8023AF80 00236DC0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8023AF84 00236DC4  40 81 00 0C */	ble lbl_8023AF90
 /* 8023AF88 00236DC8  7F C3 F3 78 */	mr r3, r30
-/* 8023AF8C 00236DCC  4B F8 47 89 */	bl lbl_801BF714
+/* 8023AF8C 00236DCC  4B F8 47 89 */	bl __dl__FPv
 .global lbl_8023AF90
 lbl_8023AF90:
 /* 8023AF90 00236DD0  7F C3 F3 78 */	mr r3, r30
@@ -100,8 +100,8 @@ lbl_8023AF90:
 /* 8023AFA0 00236DE0  7C 08 03 A6 */	mtlr r0
 /* 8023AFA4 00236DE4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023AFA8 00236DE8  4E 80 00 20 */	blr
-.global lbl_8023AFAC
-lbl_8023AFAC:
+.global "__dt__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>Fv"
+"__dt__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>Fv":
 /* 8023AFAC 00236DEC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AFB0 00236DF0  7C 08 02 A6 */	mflr r0
 /* 8023AFB4 00236DF4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -111,16 +111,16 @@ lbl_8023AFAC:
 /* 8023AFC4 00236E04  7C 9F 23 78 */	mr r31, r4
 /* 8023AFC8 00236E08  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023AFCC 00236E0C  41 82 00 2C */	beq lbl_8023AFF8
-/* 8023AFD0 00236E10  3C 80 80 24 */	lis r4, lbl_8023AF50@ha
-/* 8023AFD4 00236E14  38 84 AF 50 */	addi r4, r4, lbl_8023AF50@l
+/* 8023AFD0 00236E10  3C 80 80 24 */	lis r4, __dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@ha
+/* 8023AFD4 00236E14  38 84 AF 50 */	addi r4, r4, __dt__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFv@l
 /* 8023AFD8 00236E18  38 A0 00 14 */	li r5, 0x14
 /* 8023AFDC 00236E1C  38 C0 00 08 */	li r6, 0x8
-/* 8023AFE0 00236E20  4B DC C1 3D */	bl lbl_8000711C
+/* 8023AFE0 00236E20  4B DC C1 3D */	bl __destroy_arr
 /* 8023AFE4 00236E24  7F E0 07 34 */	extsh r0, r31
 /* 8023AFE8 00236E28  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8023AFEC 00236E2C  40 81 00 0C */	ble lbl_8023AFF8
 /* 8023AFF0 00236E30  7F C3 F3 78 */	mr r3, r30
-/* 8023AFF4 00236E34  4B F8 47 21 */	bl lbl_801BF714
+/* 8023AFF4 00236E34  4B F8 47 21 */	bl __dl__FPv
 .global lbl_8023AFF8
 lbl_8023AFF8:
 /* 8023AFF8 00236E38  7F C3 F3 78 */	mr r3, r30
@@ -130,8 +130,8 @@ lbl_8023AFF8:
 /* 8023B008 00236E48  7C 08 03 A6 */	mtlr r0
 /* 8023B00C 00236E4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023B010 00236E50  4E 80 00 20 */	blr
-.global lbl_8023B014
-lbl_8023B014:
+.global "__dt__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>Fv"
+"__dt__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>Fv":
 /* 8023B014 00236E54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023B018 00236E58  7C 08 02 A6 */	mflr r0
 /* 8023B01C 00236E5C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -143,12 +143,12 @@ lbl_8023B014:
 /* 8023B034 00236E74  41 82 00 24 */	beq lbl_8023B058
 /* 8023B038 00236E78  38 63 00 04 */	addi r3, r3, 0x4
 /* 8023B03C 00236E7C  38 80 FF FF */	li r4, -0x1
-/* 8023B040 00236E80  4B FF FF 6D */	bl lbl_8023AFAC
+/* 8023B040 00236E80  4B FF FF 6D */	bl "__dt__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>Fv"
 /* 8023B044 00236E84  7F E0 07 34 */	extsh r0, r31
 /* 8023B048 00236E88  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8023B04C 00236E8C  40 81 00 0C */	ble lbl_8023B058
 /* 8023B050 00236E90  7F C3 F3 78 */	mr r3, r30
-/* 8023B054 00236E94  4B F8 46 C1 */	bl lbl_801BF714
+/* 8023B054 00236E94  4B F8 46 C1 */	bl __dl__FPv
 .global lbl_8023B058
 lbl_8023B058:
 /* 8023B058 00236E98  7F C3 F3 78 */	mr r3, r30
@@ -158,8 +158,8 @@ lbl_8023B058:
 /* 8023B068 00236EA8  7C 08 03 A6 */	mtlr r0
 /* 8023B06C 00236EAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023B070 00236EB0  4E 80 00 20 */	blr
-.global lbl_8023B074
-lbl_8023B074:
+.global update__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFv
+update__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFv:
 /* 8023B074 00236EB4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8023B078 00236EB8  7C 08 02 A6 */	mflr r0
 /* 8023B07C 00236EBC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -167,9 +167,9 @@ lbl_8023B074:
 /* 8023B084 00236EC4  4B DC C2 BD */	bl lbl_80007340
 /* 8023B088 00236EC8  7C 7C 1B 78 */	mr r28, r3
 /* 8023B08C 00236ECC  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8023B090 00236ED0  4B FF 1F 59 */	bl lbl_8022CFE8
+/* 8023B090 00236ED0  4B FF 1F 59 */	bl custom__Q43scn4step4boss4BossFv
 /* 8023B094 00236ED4  7C 7E 1B 78 */	mr r30, r3
-/* 8023B098 00236ED8  4B FF 36 B5 */	bl lbl_8022E74C
+/* 8023B098 00236ED8  4B FF 36 B5 */	bl "RuntimeTypeInfoImpl<Q53scn4step4boss15challengemaster6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
 /* 8023B09C 00236EDC  7C 7F 1B 78 */	mr r31, r3
 /* 8023B0A0 00236EE0  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 8023B0A4 00236EE4  41 82 00 48 */	beq lbl_8023B0EC
@@ -204,7 +204,7 @@ lbl_8023B0EC:
 .global lbl_8023B0F0
 lbl_8023B0F0:
 /* 8023B0F0 00236F30  7F C3 F3 78 */	mr r3, r30
-/* 8023B0F4 00236F34  4B FC F1 85 */	bl lbl_8020A278
+/* 8023B0F4 00236F34  4B FC F1 85 */	bl bgPlate__Q33scn7history9ComponentFv
 /* 8023B0F8 00236F38  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 8023B0FC 00236F3C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8023B100 00236F40  40 82 00 94 */	bne lbl_8023B194
@@ -215,11 +215,11 @@ lbl_8023B10C:
 /* 8023B10C 00236F4C  3B DD FF FF */	addi r30, r29, -0x1
 /* 8023B110 00236F50  7F C3 F3 78 */	mr r3, r30
 /* 8023B114 00236F54  80 9C 00 04 */	lwz r4, 0x4(r28)
-/* 8023B118 00236F58  4B DE 93 89 */	bl lbl_800244A0
+/* 8023B118 00236F58  4B DE 93 89 */	bl DefaultSwitchThreadCallback
 /* 8023B11C 00236F5C  38 7C 00 08 */	addi r3, r28, 0x8
 /* 8023B120 00236F60  7F C4 F3 78 */	mr r4, r30
-/* 8023B124 00236F64  48 00 00 89 */	bl lbl_8023B1AC
-/* 8023B128 00236F68  4B F4 D5 A1 */	bl lbl_801886C8
+/* 8023B124 00236F64  48 00 00 89 */	bl "__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl"
+/* 8023B128 00236F68  4B F4 D5 A1 */	bl wasSetParent__Q24file8FileTreeCFv
 /* 8023B12C 00236F6C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023B130 00236F70  40 82 00 58 */	bne lbl_8023B188
 /* 8023B134 00236F74  80 1C 00 04 */	lwz r0, 0x4(r28)
@@ -231,13 +231,13 @@ lbl_8023B10C:
 lbl_8023B148:
 /* 8023B148 00236F88  38 7C 00 08 */	addi r3, r28, 0x8
 /* 8023B14C 00236F8C  7F C4 F3 78 */	mr r4, r30
-/* 8023B150 00236F90  48 00 00 5D */	bl lbl_8023B1AC
+/* 8023B150 00236F90  48 00 00 5D */	bl "__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl"
 /* 8023B154 00236F94  7C 7F 1B 78 */	mr r31, r3
 /* 8023B158 00236F98  38 7C 00 08 */	addi r3, r28, 0x8
 /* 8023B15C 00236F9C  38 9E FF FF */	addi r4, r30, -0x1
-/* 8023B160 00236FA0  48 00 00 4D */	bl lbl_8023B1AC
+/* 8023B160 00236FA0  48 00 00 4D */	bl "__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl"
 /* 8023B164 00236FA4  7F E4 FB 78 */	mr r4, r31
-/* 8023B168 00236FA8  48 00 00 8D */	bl lbl_8023B1F4
+/* 8023B168 00236FA8  48 00 00 8D */	bl __as__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData
 /* 8023B16C 00236FAC  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8023B170
 lbl_8023B170:
@@ -262,8 +262,8 @@ lbl_8023B194:
 /* 8023B1A0 00236FE0  7C 08 03 A6 */	mtlr r0
 /* 8023B1A4 00236FE4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023B1A8 00236FE8  4E 80 00 20 */	blr
-.global lbl_8023B1AC
-lbl_8023B1AC:
+.global "__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl"
+"__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl":
 /* 8023B1AC 00236FEC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023B1B0 00236FF0  7C 08 02 A6 */	mflr r0
 /* 8023B1B4 00236FF4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -273,7 +273,7 @@ lbl_8023B1AC:
 /* 8023B1C4 00237004  7C 9F 23 78 */	mr r31, r4
 /* 8023B1C8 00237008  7F E3 FB 78 */	mr r3, r31
 /* 8023B1CC 0023700C  38 80 00 08 */	li r4, 0x8
-/* 8023B1D0 00237010  4B DE 92 D1 */	bl lbl_800244A0
+/* 8023B1D0 00237010  4B DE 92 D1 */	bl DefaultSwitchThreadCallback
 /* 8023B1D4 00237014  1C 1F 00 14 */	mulli r0, r31, 0x14
 /* 8023B1D8 00237018  7C 7E 02 14 */	add r3, r30, r0
 /* 8023B1DC 0023701C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -282,8 +282,8 @@ lbl_8023B1AC:
 /* 8023B1E8 00237028  7C 08 03 A6 */	mtlr r0
 /* 8023B1EC 0023702C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023B1F0 00237030  4E 80 00 20 */	blr
-.global lbl_8023B1F4
-lbl_8023B1F4:
+.global __as__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData
+__as__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData:
 /* 8023B1F4 00237034  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8023B1F8 00237038  7C 08 02 A6 */	mflr r0
 /* 8023B1FC 0023703C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -291,17 +291,17 @@ lbl_8023B1F4:
 /* 8023B204 00237044  4B DC C1 41 */	bl lbl_80007344
 /* 8023B208 00237048  7C 7D 1B 78 */	mr r29, r3
 /* 8023B20C 0023704C  7C 9E 23 78 */	mr r30, r4
-/* 8023B210 00237050  4B F4 13 D5 */	bl lbl_8017C5E4
+/* 8023B210 00237050  4B F4 13 D5 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 8023B214 00237054  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023B218 00237058  41 82 00 0C */	beq lbl_8023B224
 /* 8023B21C 0023705C  7F A3 EB 78 */	mr r3, r29
-/* 8023B220 00237060  4B FF FC 95 */	bl lbl_8023AEB4
+/* 8023B220 00237060  4B FF FC 95 */	bl "unlink__Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>Fv"
 .global lbl_8023B224
 lbl_8023B224:
 /* 8023B224 00237064  38 00 00 00 */	li r0, 0x0
 /* 8023B228 00237068  90 1D 00 0C */	stw r0, 0xc(r29)
 /* 8023B22C 0023706C  7F C3 F3 78 */	mr r3, r30
-/* 8023B230 00237070  4B F4 D4 99 */	bl lbl_801886C8
+/* 8023B230 00237070  4B F4 D4 99 */	bl wasSetParent__Q24file8FileTreeCFv
 /* 8023B234 00237074  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023B238 00237078  41 82 00 0C */	beq lbl_8023B244
 /* 8023B23C 0023707C  80 1E 00 0C */	lwz r0, 0xc(r30)
@@ -309,7 +309,7 @@ lbl_8023B224:
 .global lbl_8023B244
 lbl_8023B244:
 /* 8023B244 00237084  7F C3 F3 78 */	mr r3, r30
-/* 8023B248 00237088  4B F4 13 9D */	bl lbl_8017C5E4
+/* 8023B248 00237088  4B F4 13 9D */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 8023B24C 0023708C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023B250 00237090  41 82 00 2C */	beq lbl_8023B27C
 /* 8023B254 00237094  83 FE 00 08 */	lwz r31, 0x8(r30)
@@ -317,11 +317,11 @@ lbl_8023B244:
 /* 8023B25C 0023709C  38 1F 00 04 */	addi r0, r31, 0x4
 /* 8023B260 002370A0  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8023B264 002370A4  7F A3 EB 78 */	mr r3, r29
-/* 8023B268 002370A8  4B FF FC 99 */	bl lbl_8023AF00
+/* 8023B268 002370A8  4B FF FC 99 */	bl "GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"
 /* 8023B26C 002370AC  7C 65 1B 78 */	mr r5, r3
 /* 8023B270 002370B0  7F E3 FB 78 */	mr r3, r31
 /* 8023B274 002370B4  38 81 00 08 */	addi r4, r1, 0x8
-/* 8023B278 002370B8  4B EE 4B 39 */	bl lbl_8011FDB0
+/* 8023B278 002370B8  4B EE 4B 39 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 .global lbl_8023B27C
 lbl_8023B27C:
 /* 8023B27C 002370BC  C0 1E 00 10 */	lfs f0, 0x10(r30)
@@ -333,13 +333,13 @@ lbl_8023B27C:
 /* 8023B294 002370D4  7C 08 03 A6 */	mtlr r0
 /* 8023B298 002370D8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023B29C 002370DC  4E 80 00 20 */	blr
-.global lbl_8023B2A0
-lbl_8023B2A0:
+.global "Square<f>__Q33hel4math4MathFRCf_Cf"
+"Square<f>__Q33hel4math4MathFRCf_Cf":
 /* 8023B2A0 002370E0  C0 03 00 00 */	lfs f0, 0x0(r3)
 /* 8023B2A4 002370E4  EC 20 00 32 */	fmuls f1, f0, f0
 /* 8023B2A8 002370E8  4E 80 00 20 */	blr
-.global lbl_8023B2AC
-lbl_8023B2AC:
+.global "__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl"
+"__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl":
 /* 8023B2AC 002370EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023B2B0 002370F0  7C 08 02 A6 */	mflr r0
 /* 8023B2B4 002370F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -349,10 +349,10 @@ lbl_8023B2AC:
 /* 8023B2C4 00237104  7C 9F 23 78 */	mr r31, r4
 /* 8023B2C8 00237108  7F E3 FB 78 */	mr r3, r31
 /* 8023B2CC 0023710C  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 8023B2D0 00237110  4B DE 91 D1 */	bl lbl_800244A0
+/* 8023B2D0 00237110  4B DE 91 D1 */	bl DefaultSwitchThreadCallback
 /* 8023B2D4 00237114  7F E3 FB 78 */	mr r3, r31
 /* 8023B2D8 00237118  38 80 00 08 */	li r4, 0x8
-/* 8023B2DC 0023711C  4B DE 91 C5 */	bl lbl_800244A0
+/* 8023B2DC 0023711C  4B DE 91 C5 */	bl DefaultSwitchThreadCallback
 /* 8023B2E0 00237120  1C 1F 00 14 */	mulli r0, r31, 0x14
 /* 8023B2E4 00237124  7C 7E 02 14 */	add r3, r30, r0
 /* 8023B2E8 00237128  38 63 00 04 */	addi r3, r3, 0x4
@@ -362,8 +362,8 @@ lbl_8023B2AC:
 /* 8023B2F8 00237138  7C 08 03 A6 */	mtlr r0
 /* 8023B2FC 0023713C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023B300 00237140  4E 80 00 20 */	blr
-.global lbl_8023B304
-lbl_8023B304:
+.global isExistFuture__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlCFRCQ33hel4math7Vector2
+isExistFuture__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlCFRCQ33hel4math7Vector2:
 /* 8023B304 00237144  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 8023B308 00237148  7C 08 02 A6 */	mflr r0
 /* 8023B30C 0023714C  90 01 00 94 */	stw r0, 0x94(r1)
@@ -376,45 +376,45 @@ lbl_8023B304:
 /* 8023B328 00237168  7C 7B 1B 78 */	mr r27, r3
 /* 8023B32C 0023716C  7C 9C 23 78 */	mr r28, r4
 /* 8023B330 00237170  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 8023B334 00237174  4B FF 1B DD */	bl lbl_8022CF10
-/* 8023B338 00237178  4B FF 87 E9 */	bl lbl_80233B20
+/* 8023B334 00237174  4B FF 1B DD */	bl param__Q43scn4step4boss4BossCFv
+/* 8023B338 00237178  4B FF 87 E9 */	bl challengemaster__Q43scn4step4boss5ParamCFv
 /* 8023B33C 0023717C  7C 7F 1B 78 */	mr r31, r3
 /* 8023B340 00237180  3B A0 00 00 */	li r29, 0x0
-/* 8023B344 00237184  C3 E2 A4 F0 */	lfs f31, lbl_80560470@sda21(r2)
+/* 8023B344 00237184  C3 E2 A4 F0 */	lfs f31, "@52973"@sda21(r2)
 /* 8023B348 00237188  3B C1 00 28 */	addi r30, r1, 0x28
 /* 8023B34C 0023718C  48 00 01 24 */	b lbl_8023B470
 .global lbl_8023B350
 lbl_8023B350:
 /* 8023B350 00237190  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8023B354 00237194  7F A4 EB 78 */	mr r4, r29
-/* 8023B358 00237198  4B FF FF 55 */	bl lbl_8023B2AC
-/* 8023B35C 0023719C  4B F4 D3 6D */	bl lbl_801886C8
+/* 8023B358 00237198  4B FF FF 55 */	bl "__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl"
+/* 8023B35C 0023719C  4B F4 D3 6D */	bl wasSetParent__Q24file8FileTreeCFv
 /* 8023B360 002371A0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8023B364 002371A4  41 82 01 08 */	beq lbl_8023B46C
 /* 8023B368 002371A8  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8023B36C 002371AC  7F A4 EB 78 */	mr r4, r29
-/* 8023B370 002371B0  4B FF FF 3D */	bl lbl_8023B2AC
+/* 8023B370 002371B0  4B FF FF 3D */	bl "__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl"
 /* 8023B374 002371B4  C0 23 00 10 */	lfs f1, 0x10(r3)
 /* 8023B378 002371B8  C0 1F 00 08 */	lfs f0, 0x8(r31)
 /* 8023B37C 002371BC  EC 00 08 2A */	fadds f0, f0, f1
 /* 8023B380 002371C0  D0 01 00 08 */	stfs f0, 0x8(r1)
 /* 8023B384 002371C4  38 61 00 08 */	addi r3, r1, 0x8
-/* 8023B388 002371C8  4B FF FF 19 */	bl lbl_8023B2A0
+/* 8023B388 002371C8  4B FF FF 19 */	bl "Square<f>__Q33hel4math4MathFRCf_Cf"
 /* 8023B38C 002371CC  FF C0 08 90 */	fmr f30, f1
 /* 8023B390 002371D0  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8023B394 002371D4  7F A4 EB 78 */	mr r4, r29
-/* 8023B398 002371D8  4B FF FF 15 */	bl lbl_8023B2AC
-/* 8023B39C 002371DC  4B EE EA D5 */	bl lbl_80129E70
-/* 8023B3A0 002371E0  48 04 CD 25 */	bl lbl_802880C4
+/* 8023B398 002371D8  4B FF FF 15 */	bl "__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl"
+/* 8023B39C 002371DC  4B EE EA D5 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 8023B3A0 002371E0  48 04 CD 25 */	bl move__Q43scn4step5enemy5EnemyFv
 /* 8023B3A4 002371E4  7C 64 1B 78 */	mr r4, r3
 /* 8023B3A8 002371E8  38 61 00 4C */	addi r3, r1, 0x4c
-/* 8023B3AC 002371EC  4B F5 FF B1 */	bl lbl_8019B35C
+/* 8023B3AC 002371EC  4B F5 FF B1 */	bl velocity__Q24gobj4MoveCFv
 /* 8023B3B0 002371F0  38 61 00 38 */	addi r3, r1, 0x38
 /* 8023B3B4 002371F4  38 81 00 4C */	addi r4, r1, 0x4c
-/* 8023B3B8 002371F8  4B F8 78 15 */	bl lbl_801C2BCC
+/* 8023B3B8 002371F8  4B F8 78 15 */	bl getXY__Q33hel4math7Vector3CFv
 /* 8023B3BC 002371FC  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023B3C0 00237200  38 81 00 38 */	addi r4, r1, 0x38
-/* 8023B3C4 00237204  4B F1 05 A5 */	bl lbl_8014B968
+/* 8023B3C4 00237204  4B F1 05 A5 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 8023B3C8 00237208  7C 64 1B 78 */	mr r4, r3
 /* 8023B3CC 0023720C  C0 03 00 00 */	lfs f0, 0x0(r3)
 /* 8023B3D0 00237210  EC 00 07 F2 */	fmuls f0, f0, f31
@@ -423,21 +423,21 @@ lbl_8023B350:
 /* 8023B3DC 0023721C  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 8023B3E0 00237220  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 8023B3E4 00237224  38 61 00 20 */	addi r3, r1, 0x20
-/* 8023B3E8 00237228  4B F1 05 81 */	bl lbl_8014B968
+/* 8023B3E8 00237228  4B F1 05 81 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 8023B3EC 0023722C  38 7B 00 04 */	addi r3, r27, 0x4
 /* 8023B3F0 00237230  7F A4 EB 78 */	mr r4, r29
-/* 8023B3F4 00237234  4B FF FE B9 */	bl lbl_8023B2AC
-/* 8023B3F8 00237238  4B EE EA 79 */	bl lbl_80129E70
-/* 8023B3FC 0023723C  48 04 CC C1 */	bl lbl_802880BC
+/* 8023B3F4 00237234  4B FF FE B9 */	bl "__vc__Q33hel6common75MutableArray<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>CFUl"
+/* 8023B3F8 00237238  4B EE EA 79 */	bl GetParent__Q36nw4hbm3lyt4PaneCFv
+/* 8023B3FC 0023723C  48 04 CC C1 */	bl location__Q43scn4step5enemy5EnemyCFv
 /* 8023B400 00237240  7C 64 1B 78 */	mr r4, r3
 /* 8023B404 00237244  38 61 00 40 */	addi r3, r1, 0x40
-/* 8023B408 00237248  48 03 42 BD */	bl lbl_8026F6C4
+/* 8023B408 00237248  48 03 42 BD */	bl centerPos__Q43scn4step5chara8LocationCFv
 /* 8023B40C 0023724C  38 61 00 28 */	addi r3, r1, 0x28
 /* 8023B410 00237250  38 81 00 40 */	addi r4, r1, 0x40
-/* 8023B414 00237254  4B F8 77 B9 */	bl lbl_801C2BCC
+/* 8023B414 00237254  4B F8 77 B9 */	bl getXY__Q33hel4math7Vector3CFv
 /* 8023B418 00237258  38 61 00 10 */	addi r3, r1, 0x10
 /* 8023B41C 0023725C  7F C4 F3 78 */	mr r4, r30
-/* 8023B420 00237260  4B F1 05 49 */	bl lbl_8014B968
+/* 8023B420 00237260  4B F1 05 49 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 8023B424 00237264  7C 64 1B 78 */	mr r4, r3
 /* 8023B428 00237268  C0 23 00 00 */	lfs f1, 0x0(r3)
 /* 8023B42C 0023726C  C0 01 00 20 */	lfs f0, 0x20(r1)
@@ -448,10 +448,10 @@ lbl_8023B350:
 /* 8023B440 00237280  EC 01 00 2A */	fadds f0, f1, f0
 /* 8023B444 00237284  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 8023B448 00237288  38 61 00 30 */	addi r3, r1, 0x30
-/* 8023B44C 0023728C  4B F1 05 1D */	bl lbl_8014B968
+/* 8023B44C 0023728C  4B F1 05 1D */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 8023B450 00237290  38 61 00 30 */	addi r3, r1, 0x30
 /* 8023B454 00237294  7F 84 E3 78 */	mr r4, r28
-/* 8023B458 00237298  4B FF 72 69 */	bl lbl_802326C0
+/* 8023B458 00237298  4B FF 72 69 */	bl squareDistance__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 /* 8023B45C 0023729C  FC 01 F0 40 */	fcmpo cr0, f1, f30
 /* 8023B460 002372A0  40 80 00 0C */	bge lbl_8023B46C
 /* 8023B464 002372A4  38 60 00 01 */	li r3, 0x1
@@ -479,8 +479,8 @@ lbl_8023B480:
 /* 8023B4A4 002372E4  7C 08 03 A6 */	mtlr r0
 /* 8023B4A8 002372E8  38 21 00 90 */	addi r1, r1, 0x90
 /* 8023B4AC 002372EC  4E 80 00 20 */	blr
-.global lbl_8023B4B0
-lbl_8023B4B0:
+.global add__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData
+add__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData:
 /* 8023B4B0 002372F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023B4B4 002372F4  7C 08 02 A6 */	mflr r0
 /* 8023B4B8 002372F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -493,9 +493,9 @@ lbl_8023B4B0:
 /* 8023B4D4 00237314  41 82 00 24 */	beq lbl_8023B4F8
 /* 8023B4D8 00237318  38 63 00 08 */	addi r3, r3, 0x8
 /* 8023B4DC 0023731C  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8023B4E0 00237320  4B FF FC CD */	bl lbl_8023B1AC
+/* 8023B4E0 00237320  4B FF FC CD */	bl "__vc__Q33hel6common68Array<Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData,8>FUl"
 /* 8023B4E4 00237324  7F E4 FB 78 */	mr r4, r31
-/* 8023B4E8 00237328  4B FF FD 0D */	bl lbl_8023B1F4
+/* 8023B4E8 00237328  4B FF FD 0D */	bl __as__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFRCQ63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyData
 /* 8023B4EC 0023732C  80 7E 00 04 */	lwz r3, 0x4(r30)
 /* 8023B4F0 00237330  38 03 00 01 */	addi r0, r3, 0x1
 /* 8023B4F4 00237334  90 1E 00 04 */	stw r0, 0x4(r30)

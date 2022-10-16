@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800CE7F0
-lbl_800CE7F0:
+.global PatchChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult
+PatchChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult:
 /* 800CE7F0 000CA630  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800CE7F4 000CA634  7C 08 02 A6 */	mflr r0
 /* 800CE7F8 000CA638  90 01 00 34 */	stw r0, 0x34(r1)
@@ -19,7 +19,7 @@ lbl_800CE7F0:
 /* 800CE824 000CA664  80 7D 00 14 */	lwz r3, 0x14(r29)
 /* 800CE828 000CA668  54 60 07 39 */	rlwinm. r0, r3, 0, 28, 28
 /* 800CE82C 000CA66C  41 82 00 1C */	beq lbl_800CE848
-/* 800CE830 000CA670  C0 02 8E E0 */	lfs f0, lbl_8055EE60@sda21(r2)
+/* 800CE830 000CA670  C0 02 8E E0 */	lfs f0, "@7550"@sda21(r2)
 /* 800CE834 000CA674  63 FF 00 18 */	ori r31, r31, 0x18
 /* 800CE838 000CA678  D0 04 00 0C */	stfs f0, 0xc(r4)
 /* 800CE83C 000CA67C  D0 04 00 08 */	stfs f0, 0x8(r4)
@@ -55,20 +55,20 @@ lbl_800CE878:
 /* 800CE89C 000CA6DC  D0 41 00 10 */	stfs f2, 0x10(r1)
 /* 800CE8A0 000CA6E0  41 82 00 14 */	beq lbl_800CE8B4
 /* 800CE8A4 000CA6E4  38 64 00 1C */	addi r3, r4, 0x1c
-/* 800CE8A8 000CA6E8  4B F6 1C 39 */	bl lbl_800304E0
+/* 800CE8A8 000CA6E8  4B F6 1C 39 */	bl PSMTXIdentity
 /* 800CE8AC 000CA6EC  63 FF 00 20 */	ori r31, r31, 0x20
 /* 800CE8B0 000CA6F0  48 00 00 30 */	b lbl_800CE8E0
 .global lbl_800CE8B4
 lbl_800CE8B4:
 /* 800CE8B4 000CA6F4  C0 7D 00 34 */	lfs f3, 0x34(r29)
 /* 800CE8B8 000CA6F8  38 64 00 1C */	addi r3, r4, 0x1c
-/* 800CE8BC 000CA6FC  C0 02 8E E4 */	lfs f0, lbl_8055EE64@sda21(r2)
+/* 800CE8BC 000CA6FC  C0 02 8E E4 */	lfs f0, "@7551"@sda21(r2)
 /* 800CE8C0 000CA700  C0 5D 00 30 */	lfs f2, 0x30(r29)
 /* 800CE8C4 000CA704  C0 3D 00 2C */	lfs f1, 0x2c(r29)
 /* 800CE8C8 000CA708  EC 60 00 F2 */	fmuls f3, f0, f3
 /* 800CE8CC 000CA70C  EC 40 00 B2 */	fmuls f2, f0, f2
 /* 800CE8D0 000CA710  EC 20 00 72 */	fmuls f1, f0, f1
-/* 800CE8D4 000CA714  48 03 06 8D */	bl lbl_800FEF60
+/* 800CE8D4 000CA714  48 03 06 8D */	bl MTX34RotXYZFIdx__Q24nw4r4mathFPQ34nw4r4math5MTX34fff
 /* 800CE8D8 000CA718  38 00 FF D9 */	li r0, -0x27
 /* 800CE8DC 000CA71C  7F FF 00 38 */	and r31, r31, r0
 .global lbl_800CE8E0
@@ -87,7 +87,7 @@ lbl_800CE8FC:
 /* 800CE904 000CA744  80 1D 00 14 */	lwz r0, 0x14(r29)
 /* 800CE908 000CA748  54 00 07 BD */	rlwinm. r0, r0, 0, 30, 30
 /* 800CE90C 000CA74C  41 82 00 1C */	beq lbl_800CE928
-/* 800CE910 000CA750  C0 02 8E E8 */	lfs f0, lbl_8055EE68@sda21(r2)
+/* 800CE910 000CA750  C0 02 8E E8 */	lfs f0, "@7552"@sda21(r2)
 /* 800CE914 000CA754  63 FF 00 40 */	ori r31, r31, 0x40
 /* 800CE918 000CA758  D0 1E 00 48 */	stfs f0, 0x48(r30)
 /* 800CE91C 000CA75C  D0 1E 00 38 */	stfs f0, 0x38(r30)
@@ -127,8 +127,8 @@ lbl_800CE970:
 /* 800CE984 000CA7C4  38 21 00 30 */	addi r1, r1, 0x30
 /* 800CE988 000CA7C8  4E 80 00 20 */	blr
 /* 800CE98C 000CA7CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CE990
-lbl_800CE990:
+.global CalcChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult
+CalcChrAnmResult__Q34nw4r3g3d7ResNodeCFPQ34nw4r3g3d12ChrAnmResult:
 /* 800CE990 000CA7D0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800CE994 000CA7D4  7C 08 02 A6 */	mflr r0
 /* 800CE998 000CA7D8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -143,7 +143,7 @@ lbl_800CE990:
 /* 800CE9BC 000CA7FC  3B C0 00 00 */	li r30, 0x0
 /* 800CE9C0 000CA800  54 60 07 39 */	rlwinm. r0, r3, 0, 28, 28
 /* 800CE9C4 000CA804  41 82 00 1C */	beq lbl_800CE9E0
-/* 800CE9C8 000CA808  C0 02 8E E0 */	lfs f0, lbl_8055EE60@sda21(r2)
+/* 800CE9C8 000CA808  C0 02 8E E0 */	lfs f0, "@7550"@sda21(r2)
 /* 800CE9CC 000CA80C  63 DE 00 18 */	ori r30, r30, 0x18
 /* 800CE9D0 000CA810  D0 04 00 0C */	stfs f0, 0xc(r4)
 /* 800CE9D4 000CA814  D0 04 00 08 */	stfs f0, 0x8(r4)
@@ -168,7 +168,7 @@ lbl_800CEA04:
 /* 800CEA08 000CA848  54 00 07 7B */	rlwinm. r0, r0, 0, 29, 29
 /* 800CEA0C 000CA84C  41 82 00 14 */	beq lbl_800CEA20
 /* 800CEA10 000CA850  38 64 00 1C */	addi r3, r4, 0x1c
-/* 800CEA14 000CA854  4B F6 1A CD */	bl lbl_800304E0
+/* 800CEA14 000CA854  4B F6 1A CD */	bl PSMTXIdentity
 /* 800CEA18 000CA858  63 DE 00 20 */	ori r30, r30, 0x20
 /* 800CEA1C 000CA85C  48 00 00 4C */	b lbl_800CEA68
 .global lbl_800CEA20
@@ -178,7 +178,7 @@ lbl_800CEA20:
 /* 800CEA28 000CA868  C0 BF 00 30 */	lfs f5, 0x30(r31)
 /* 800CEA2C 000CA86C  C0 9F 00 34 */	lfs f4, 0x34(r31)
 /* 800CEA30 000CA870  D0 84 00 18 */	stfs f4, 0x18(r4)
-/* 800CEA34 000CA874  C0 02 8E E4 */	lfs f0, lbl_8055EE64@sda21(r2)
+/* 800CEA34 000CA874  C0 02 8E E4 */	lfs f0, "@7551"@sda21(r2)
 /* 800CEA38 000CA878  D0 24 00 10 */	stfs f1, 0x10(r4)
 /* 800CEA3C 000CA87C  D0 A4 00 14 */	stfs f5, 0x14(r4)
 /* 800CEA40 000CA880  C0 7F 00 34 */	lfs f3, 0x34(r31)
@@ -190,7 +190,7 @@ lbl_800CEA20:
 /* 800CEA58 000CA898  EC 20 01 B2 */	fmuls f1, f0, f6
 /* 800CEA5C 000CA89C  D0 A1 00 0C */	stfs f5, 0xc(r1)
 /* 800CEA60 000CA8A0  D0 81 00 10 */	stfs f4, 0x10(r1)
-/* 800CEA64 000CA8A4  48 03 04 FD */	bl lbl_800FEF60
+/* 800CEA64 000CA8A4  48 03 04 FD */	bl MTX34RotXYZFIdx__Q24nw4r4mathFPQ34nw4r4math5MTX34fff
 .global lbl_800CEA68
 lbl_800CEA68:
 /* 800CEA68 000CA8A8  80 1F 00 14 */	lwz r0, 0x14(r31)
@@ -243,8 +243,8 @@ lbl_800CEADC:
 /* 800CEAF4 000CA934  4E 80 00 20 */	blr
 /* 800CEAF8 000CA938  00 00 00 00 */	.4byte 0x00000000
 /* 800CEAFC 000CA93C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CEB00
-lbl_800CEB00:
+.global "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
+"OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl":
 /* 800CEB00 000CA940  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800CEB04 000CA944  7C 08 02 A6 */	mflr r0
 /* 800CEB08 000CA948  90 01 00 34 */	stw r0, 0x34(r1)
@@ -303,14 +303,14 @@ lbl_800CEBAC:
 /* 800CEBB4 000CA9F4  90 01 00 10 */	stw r0, 0x10(r1)
 /* 800CEBB8 000CA9F8  7F E4 FB 78 */	mr r4, r31
 /* 800CEBBC 000CA9FC  38 61 00 10 */	addi r3, r1, 0x10
-/* 800CEBC0 000CAA00  4B FF FF 41 */	bl lbl_800CEB00
+/* 800CEBC0 000CAA00  4B FF FF 41 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 /* 800CEBC4 000CAA04  48 00 00 14 */	b lbl_800CEBD8
 .global lbl_800CEBC8
 lbl_800CEBC8:
 /* 800CEBC8 000CAA08  93 C1 00 14 */	stw r30, 0x14(r1)
 /* 800CEBCC 000CAA0C  7F E4 FB 78 */	mr r4, r31
 /* 800CEBD0 000CAA10  38 61 00 14 */	addi r3, r1, 0x14
-/* 800CEBD4 000CAA14  4B FF FF 2D */	bl lbl_800CEB00
+/* 800CEBD4 000CAA14  4B FF FF 2D */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CEBD8
 lbl_800CEBD8:
 /* 800CEBD8 000CAA18  80 1E 00 64 */	lwz r0, 0x64(r30)
@@ -355,7 +355,7 @@ lbl_800CEC3C:
 /* 800CEC44 000CAA84  90 01 00 08 */	stw r0, 0x8(r1)
 /* 800CEC48 000CAA88  7F E4 FB 78 */	mr r4, r31
 /* 800CEC4C 000CAA8C  38 61 00 08 */	addi r3, r1, 0x8
-/* 800CEC50 000CAA90  4B FF FE B1 */	bl lbl_800CEB00
+/* 800CEC50 000CAA90  4B FF FE B1 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CEC54
 lbl_800CEC54:
 /* 800CEC54 000CAA94  7F BE EB 78 */	mr r30, r29
@@ -365,7 +365,7 @@ lbl_800CEC5C:
 /* 800CEC5C 000CAA9C  93 C1 00 0C */	stw r30, 0xc(r1)
 /* 800CEC60 000CAAA0  7F E4 FB 78 */	mr r4, r31
 /* 800CEC64 000CAAA4  38 61 00 0C */	addi r3, r1, 0xc
-/* 800CEC68 000CAAA8  4B FF FE 99 */	bl lbl_800CEB00
+/* 800CEC68 000CAAA8  4B FF FE 99 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CEC6C
 lbl_800CEC6C:
 /* 800CEC6C 000CAAAC  80 1E 00 64 */	lwz r0, 0x64(r30)
@@ -405,8 +405,8 @@ lbl_800CECAC:
 /* 800CECC4 000CAB04  4E 80 00 20 */	blr
 /* 800CECC8 000CAB08  00 00 00 00 */	.4byte 0x00000000
 /* 800CECCC 000CAB0C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800CECD0
-lbl_800CECD0:
+.global "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
+"OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode":
 /* 800CECD0 000CAB10  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800CECD4 000CAB14  7C 08 02 A6 */	mflr r0
 /* 800CECD8 000CAB18  90 01 00 34 */	stw r0, 0x34(r1)
@@ -465,13 +465,13 @@ lbl_800CED80:
 /* 800CED84 000CABC4  41 82 00 20 */	beq lbl_800CEDA4
 /* 800CED88 000CABC8  90 01 00 10 */	stw r0, 0x10(r1)
 /* 800CED8C 000CABCC  38 61 00 10 */	addi r3, r1, 0x10
-/* 800CED90 000CABD0  4B FF FF 41 */	bl lbl_800CECD0
+/* 800CED90 000CABD0  4B FF FF 41 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 /* 800CED94 000CABD4  48 00 00 10 */	b lbl_800CEDA4
 .global lbl_800CED98
 lbl_800CED98:
 /* 800CED98 000CABD8  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 800CED9C 000CABDC  38 61 00 14 */	addi r3, r1, 0x14
-/* 800CEDA0 000CABE0  4B FF FF 31 */	bl lbl_800CECD0
+/* 800CEDA0 000CABE0  4B FF FF 31 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CEDA4
 lbl_800CEDA4:
 /* 800CEDA4 000CABE4  80 1F 00 64 */	lwz r0, 0x64(r31)
@@ -516,7 +516,7 @@ lbl_800CEE0C:
 /* 800CEE10 000CAC50  41 82 00 10 */	beq lbl_800CEE20
 /* 800CEE14 000CAC54  90 01 00 08 */	stw r0, 0x8(r1)
 /* 800CEE18 000CAC58  38 61 00 08 */	addi r3, r1, 0x8
-/* 800CEE1C 000CAC5C  4B FF FE B5 */	bl lbl_800CECD0
+/* 800CEE1C 000CAC5C  4B FF FE B5 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CEE20
 lbl_800CEE20:
 /* 800CEE20 000CAC60  7F DF F3 78 */	mr r31, r30
@@ -525,7 +525,7 @@ lbl_800CEE20:
 lbl_800CEE28:
 /* 800CEE28 000CAC68  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800CEE2C 000CAC6C  38 61 00 0C */	addi r3, r1, 0xc
-/* 800CEE30 000CAC70  4B FF FE A1 */	bl lbl_800CECD0
+/* 800CEE30 000CAC70  4B FF FE A1 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CEE34
 lbl_800CEE34:
 /* 800CEE34 000CAC74  80 1F 00 64 */	lwz r0, 0x64(r31)
@@ -563,8 +563,8 @@ lbl_800CEE74:
 /* 800CEE84 000CACC4  7C 08 03 A6 */	mtlr r0
 /* 800CEE88 000CACC8  38 21 00 30 */	addi r1, r1, 0x30
 /* 800CEE8C 000CACCC  4E 80 00 20 */	blr
-.global lbl_800CEE90
-lbl_800CEE90:
+.global SetBillboardMode__Q34nw4r3g3d7ResNodeFQ44nw4r3g3d18ResNodeDataTypedef9Billboard
+SetBillboardMode__Q34nw4r3g3d7ResNodeFQ44nw4r3g3d18ResNodeDataTypedef9Billboard:
 /* 800CEE90 000CACD0  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800CEE94 000CACD4  7C 08 02 A6 */	mflr r0
 /* 800CEE98 000CACD8  90 01 00 54 */	stw r0, 0x54(r1)
@@ -678,14 +678,14 @@ lbl_800CEFC8:
 /* 800CEFD0 000CAE10  90 01 00 2C */	stw r0, 0x2c(r1)
 /* 800CEFD4 000CAE14  7F A4 EB 78 */	mr r4, r29
 /* 800CEFD8 000CAE18  38 61 00 2C */	addi r3, r1, 0x2c
-/* 800CEFDC 000CAE1C  4B FF FB 25 */	bl lbl_800CEB00
+/* 800CEFDC 000CAE1C  4B FF FB 25 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 /* 800CEFE0 000CAE20  48 00 00 14 */	b lbl_800CEFF4
 .global lbl_800CEFE4
 lbl_800CEFE4:
 /* 800CEFE4 000CAE24  93 E1 00 28 */	stw r31, 0x28(r1)
 /* 800CEFE8 000CAE28  7F A4 EB 78 */	mr r4, r29
 /* 800CEFEC 000CAE2C  38 61 00 28 */	addi r3, r1, 0x28
-/* 800CEFF0 000CAE30  4B FF FB 11 */	bl lbl_800CEB00
+/* 800CEFF0 000CAE30  4B FF FB 11 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CEFF4
 lbl_800CEFF4:
 /* 800CEFF4 000CAE34  80 1F 00 64 */	lwz r0, 0x64(r31)
@@ -727,7 +727,7 @@ lbl_800CF054:
 /* 800CF05C 000CAE9C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 800CF060 000CAEA0  7F A4 EB 78 */	mr r4, r29
 /* 800CF064 000CAEA4  38 61 00 34 */	addi r3, r1, 0x34
-/* 800CF068 000CAEA8  4B FF FA 99 */	bl lbl_800CEB00
+/* 800CF068 000CAEA8  4B FF FA 99 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CF06C
 lbl_800CF06C:
 /* 800CF06C 000CAEAC  7F DF F3 78 */	mr r31, r30
@@ -737,7 +737,7 @@ lbl_800CF074:
 /* 800CF074 000CAEB4  93 E1 00 30 */	stw r31, 0x30(r1)
 /* 800CF078 000CAEB8  7F A4 EB 78 */	mr r4, r29
 /* 800CF07C 000CAEBC  38 61 00 30 */	addi r3, r1, 0x30
-/* 800CF080 000CAEC0  4B FF FA 81 */	bl lbl_800CEB00
+/* 800CF080 000CAEC0  4B FF FA 81 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CF084
 lbl_800CF084:
 /* 800CF084 000CAEC4  80 1F 00 64 */	lwz r0, 0x64(r31)
@@ -830,13 +830,13 @@ lbl_800CF17C:
 /* 800CF180 000CAFC0  41 82 00 20 */	beq lbl_800CF1A0
 /* 800CF184 000CAFC4  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 800CF188 000CAFC8  38 61 00 1C */	addi r3, r1, 0x1c
-/* 800CF18C 000CAFCC  4B FF FB 45 */	bl lbl_800CECD0
+/* 800CF18C 000CAFCC  4B FF FB 45 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 /* 800CF190 000CAFD0  48 00 00 10 */	b lbl_800CF1A0
 .global lbl_800CF194
 lbl_800CF194:
 /* 800CF194 000CAFD4  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 800CF198 000CAFD8  38 61 00 18 */	addi r3, r1, 0x18
-/* 800CF19C 000CAFDC  4B FF FB 35 */	bl lbl_800CECD0
+/* 800CF19C 000CAFDC  4B FF FB 35 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CF1A0
 lbl_800CF1A0:
 /* 800CF1A0 000CAFE0  80 1E 00 64 */	lwz r0, 0x64(r30)
@@ -880,7 +880,7 @@ lbl_800CF204:
 /* 800CF208 000CB048  41 82 00 10 */	beq lbl_800CF218
 /* 800CF20C 000CB04C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 800CF210 000CB050  38 61 00 24 */	addi r3, r1, 0x24
-/* 800CF214 000CB054  4B FF FA BD */	bl lbl_800CECD0
+/* 800CF214 000CB054  4B FF FA BD */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CF218
 lbl_800CF218:
 /* 800CF218 000CB058  7F FE FB 78 */	mr r30, r31
@@ -889,7 +889,7 @@ lbl_800CF218:
 lbl_800CF220:
 /* 800CF220 000CB060  93 C1 00 20 */	stw r30, 0x20(r1)
 /* 800CF224 000CB064  38 61 00 20 */	addi r3, r1, 0x20
-/* 800CF228 000CB068  4B FF FA A9 */	bl lbl_800CECD0
+/* 800CF228 000CB068  4B FF FA A9 */	bl "OffRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNode"
 .global lbl_800CF22C
 lbl_800CF22C:
 /* 800CF22C 000CB06C  80 1E 00 64 */	lwz r0, 0x64(r30)
@@ -982,14 +982,14 @@ lbl_800CF320:
 /* 800CF328 000CB168  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800CF32C 000CB16C  7F A4 EB 78 */	mr r4, r29
 /* 800CF330 000CB170  38 61 00 0C */	addi r3, r1, 0xc
-/* 800CF334 000CB174  4B FF F7 CD */	bl lbl_800CEB00
+/* 800CF334 000CB174  4B FF F7 CD */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 /* 800CF338 000CB178  48 00 00 14 */	b lbl_800CF34C
 .global lbl_800CF33C
 lbl_800CF33C:
 /* 800CF33C 000CB17C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800CF340 000CB180  7F A4 EB 78 */	mr r4, r29
 /* 800CF344 000CB184  38 61 00 08 */	addi r3, r1, 0x8
-/* 800CF348 000CB188  4B FF F7 B9 */	bl lbl_800CEB00
+/* 800CF348 000CB188  4B FF F7 B9 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CF34C
 lbl_800CF34C:
 /* 800CF34C 000CB18C  80 1E 00 64 */	lwz r0, 0x64(r30)
@@ -1031,7 +1031,7 @@ lbl_800CF3AC:
 /* 800CF3B4 000CB1F4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800CF3B8 000CB1F8  7F A4 EB 78 */	mr r4, r29
 /* 800CF3BC 000CB1FC  38 61 00 14 */	addi r3, r1, 0x14
-/* 800CF3C0 000CB200  4B FF F7 41 */	bl lbl_800CEB00
+/* 800CF3C0 000CB200  4B FF F7 41 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CF3C4
 lbl_800CF3C4:
 /* 800CF3C4 000CB204  7F FE FB 78 */	mr r30, r31
@@ -1041,7 +1041,7 @@ lbl_800CF3CC:
 /* 800CF3CC 000CB20C  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 800CF3D0 000CB210  7F A4 EB 78 */	mr r4, r29
 /* 800CF3D4 000CB214  38 61 00 10 */	addi r3, r1, 0x10
-/* 800CF3D8 000CB218  4B FF F7 29 */	bl lbl_800CEB00
+/* 800CF3D8 000CB218  4B FF F7 29 */	bl "OnRefBBRecursively__Q34nw4r3g3d25@unnamed@g3d_resnode_cpp@FQ34nw4r3g3d7ResNodeUl"
 .global lbl_800CF3DC
 lbl_800CF3DC:
 /* 800CF3DC 000CB21C  80 1E 00 64 */	lwz r0, 0x64(r30)

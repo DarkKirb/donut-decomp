@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047C600
-lbl_8047C600:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9sirkibble10StateCatch,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9sirkibble10StateCatch,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E22C0
-	.4byte lbl_802E22A4
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9sirkibble10StateCatch,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9sirkibble10StateCatch,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047C610
-lbl_8047C610:
+.global __vt__Q53scn4step5enemy9sirkibble9StateWait
+__vt__Q53scn4step5enemy9sirkibble9StateWait:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802E20CC
-	.4byte lbl_802E20D0
-	.4byte lbl_802E229C
-	.4byte lbl_8028DDE0
-	.4byte lbl_802E22A0
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy9sirkibble9StateWaitFv
+	.4byte procAnim__Q53scn4step5enemy9sirkibble9StateWaitFv
+	.4byte procMove__Q53scn4step5enemy9sirkibble9StateWaitFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9sirkibble9StateWaitFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

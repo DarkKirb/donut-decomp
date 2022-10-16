@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D320
-lbl_8055D320:
+.global "@GUARD@RuntimeTypeInfoImpl<Q33scn14challengetitle19SceneChallengeTitle>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q33scn14challengetitle19SceneChallengeTitle>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D328
-lbl_8055D328:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q33scn14challengetitle19SceneChallengeTitle>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q33scn14challengetitle19SceneChallengeTitle>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80334230
-lbl_80334230:
+.global __ct__Q43scn4step4hero14CommandManagerFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero14CommandManagerFRQ43scn4step4hero4Hero:
 /* 80334230 00330070  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80334234 00330074  7C 08 02 A6 */	mflr r0
 /* 80334238 00330078  90 01 00 24 */	stw r0, 0x24(r1)
@@ -24,15 +24,15 @@ lbl_80334230:
 lbl_80334274:
 /* 80334274 003300B4  38 7B 00 04 */	addi r3, r27, 0x4
 /* 80334278 003300B8  7F 84 E3 78 */	mr r4, r28
-/* 8033427C 003300BC  48 00 00 51 */	bl lbl_803342CC
+/* 8033427C 003300BC  48 00 00 51 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 80334280 003300C0  93 A3 00 00 */	stw r29, 0x0(r3)
 /* 80334284 003300C4  38 7B 00 04 */	addi r3, r27, 0x4
 /* 80334288 003300C8  7F 84 E3 78 */	mr r4, r28
-/* 8033428C 003300CC  48 00 00 41 */	bl lbl_803342CC
+/* 8033428C 003300CC  48 00 00 41 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 80334290 003300D0  93 C3 00 04 */	stw r30, 0x4(r3)
 /* 80334294 003300D4  38 7B 00 04 */	addi r3, r27, 0x4
 /* 80334298 003300D8  7F 84 E3 78 */	mr r4, r28
-/* 8033429C 003300DC  48 00 00 31 */	bl lbl_803342CC
+/* 8033429C 003300DC  48 00 00 31 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 803342A0 003300E0  9B E3 00 08 */	stb r31, 0x8(r3)
 /* 803342A4 003300E4  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 803342A8 003300E8  28 1C 00 0B */	cmplwi r28, 0xb
@@ -44,8 +44,8 @@ lbl_80334274:
 /* 803342C0 00330100  7C 08 03 A6 */	mtlr r0
 /* 803342C4 00330104  38 21 00 20 */	addi r1, r1, 0x20
 /* 803342C8 00330108  4E 80 00 20 */	blr
-.global lbl_803342CC
-lbl_803342CC:
+.global "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
+"__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl":
 /* 803342CC 0033010C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803342D0 00330110  7C 08 02 A6 */	mflr r0
 /* 803342D4 00330114  90 01 00 14 */	stw r0, 0x14(r1)
@@ -55,7 +55,7 @@ lbl_803342CC:
 /* 803342E4 00330124  7C 9F 23 78 */	mr r31, r4
 /* 803342E8 00330128  7F E3 FB 78 */	mr r3, r31
 /* 803342EC 0033012C  38 80 00 0B */	li r4, 0xb
-/* 803342F0 00330130  4B CF 01 B1 */	bl lbl_800244A0
+/* 803342F0 00330130  4B CF 01 B1 */	bl DefaultSwitchThreadCallback
 /* 803342F4 00330134  1C 1F 00 0C */	mulli r0, r31, 0xc
 /* 803342F8 00330138  7C 7E 02 14 */	add r3, r30, r0
 /* 803342FC 0033013C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -64,8 +64,8 @@ lbl_803342CC:
 /* 80334308 00330148  7C 08 03 A6 */	mtlr r0
 /* 8033430C 0033014C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80334310 00330150  4E 80 00 20 */	blr
-.global lbl_80334314
-lbl_80334314:
+.global update__Q43scn4step4hero14CommandManagerFv
+update__Q43scn4step4hero14CommandManagerFv:
 /* 80334314 00330154  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80334318 00330158  7C 08 02 A6 */	mflr r0
 /* 8033431C 0033015C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -79,13 +79,13 @@ lbl_80334314:
 lbl_80334338:
 /* 80334338 00330178  38 7A 00 04 */	addi r3, r26, 0x4
 /* 8033433C 0033017C  7F 84 E3 78 */	mr r4, r28
-/* 80334340 00330180  4B FF FF 8D */	bl lbl_803342CC
+/* 80334340 00330180  4B FF FF 8D */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 80334344 00330184  7C 7D 1B 78 */	mr r29, r3
 /* 80334348 00330188  7F DB E0 30 */	slw r27, r30, r28
 /* 8033434C 0033018C  80 7A 00 00 */	lwz r3, 0x0(r26)
-/* 80334350 00330190  48 00 BF FD */	bl lbl_8034034C
+/* 80334350 00330190  48 00 BF FD */	bl hid__Q43scn4step4hero4HeroFv
 /* 80334354 00330194  7F 64 DB 78 */	mr r4, r27
-/* 80334358 00330198  48 00 CA 95 */	bl lbl_80340DEC
+/* 80334358 00330198  48 00 CA 95 */	bl isTrigger__Q43scn4step4hero3HidCFUl
 /* 8033435C 0033019C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80334360 003301A0  41 82 00 0C */	beq lbl_8033436C
 /* 80334364 003301A4  9B DD 00 08 */	stb r30, 0x8(r29)
@@ -103,9 +103,9 @@ lbl_80334380:
 /* 80334384 003301C4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80334388 003301C8  41 82 00 34 */	beq lbl_803343BC
 /* 8033438C 003301CC  80 7A 00 00 */	lwz r3, 0x0(r26)
-/* 80334390 003301D0  48 00 BF BD */	bl lbl_8034034C
+/* 80334390 003301D0  48 00 BF BD */	bl hid__Q43scn4step4hero4HeroFv
 /* 80334394 003301D4  7F 64 DB 78 */	mr r4, r27
-/* 80334398 003301D8  4B E6 DE BD */	bl lbl_801A2254
+/* 80334398 003301D8  4B E6 DE BD */	bl isTrigger__Q23hid6ButtonCFUl
 /* 8033439C 003301DC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803343A0 003301E0  41 82 00 1C */	beq lbl_803343BC
 /* 803343A4 003301E4  80 7D 00 00 */	lwz r3, 0x0(r29)
@@ -128,8 +128,8 @@ lbl_803343C0:
 /* 803343D8 00330218  7C 08 03 A6 */	mtlr r0
 /* 803343DC 0033021C  38 21 00 20 */	addi r1, r1, 0x20
 /* 803343E0 00330220  4E 80 00 20 */	blr
-.global lbl_803343E4
-lbl_803343E4:
+.global setWait__Q43scn4step4hero14CommandManagerFQ43scn4step4hero10ButtonMask
+setWait__Q43scn4step4hero14CommandManagerFQ43scn4step4hero10ButtonMask:
 /* 803343E4 00330224  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803343E8 00330228  7C 08 02 A6 */	mflr r0
 /* 803343EC 0033022C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -149,7 +149,7 @@ lbl_80334410:
 /* 8033441C 0033025C  41 82 00 18 */	beq lbl_80334434
 /* 80334420 00330260  38 7A 00 04 */	addi r3, r26, 0x4
 /* 80334424 00330264  7F 84 E3 78 */	mr r4, r28
-/* 80334428 00330268  4B FF FE A5 */	bl lbl_803342CC
+/* 80334428 00330268  4B FF FE A5 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 8033442C 0033026C  9B C3 00 08 */	stb r30, 0x8(r3)
 /* 80334430 00330270  93 E3 00 04 */	stw r31, 0x4(r3)
 .global lbl_80334434
@@ -163,8 +163,8 @@ lbl_80334434:
 /* 8033444C 0033028C  7C 08 03 A6 */	mtlr r0
 /* 80334450 00330290  38 21 00 20 */	addi r1, r1, 0x20
 /* 80334454 00330294  4E 80 00 20 */	blr
-.global lbl_80334458
-lbl_80334458:
+.global resetHoldFrame__Q43scn4step4hero14CommandManagerFQ43scn4step4hero10ButtonMask
+resetHoldFrame__Q43scn4step4hero14CommandManagerFQ43scn4step4hero10ButtonMask:
 /* 80334458 00330298  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8033445C 0033029C  7C 08 02 A6 */	mflr r0
 /* 80334460 003302A0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -183,7 +183,7 @@ lbl_80334480:
 /* 8033448C 003302CC  41 82 00 14 */	beq lbl_803344A0
 /* 80334490 003302D0  38 7B 00 04 */	addi r3, r27, 0x4
 /* 80334494 003302D4  7F A4 EB 78 */	mr r4, r29
-/* 80334498 003302D8  4B FF FE 35 */	bl lbl_803342CC
+/* 80334498 003302D8  4B FF FE 35 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 8033449C 003302DC  93 E3 00 00 */	stw r31, 0x0(r3)
 .global lbl_803344A0
 lbl_803344A0:
@@ -196,8 +196,8 @@ lbl_803344A0:
 /* 803344B8 003302F8  7C 08 03 A6 */	mtlr r0
 /* 803344BC 003302FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 803344C0 00330300  4E 80 00 20 */	blr
-.global lbl_803344C4
-lbl_803344C4:
+.global getHoldFrame__Q43scn4step4hero14CommandManagerCFQ43scn4step4hero10ButtonMask
+getHoldFrame__Q43scn4step4hero14CommandManagerCFQ43scn4step4hero10ButtonMask:
 /* 803344C4 00330304  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803344C8 00330308  7C 08 02 A6 */	mflr r0
 /* 803344CC 0033030C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -216,7 +216,7 @@ lbl_803344EC:
 /* 803344F8 00330338  41 82 00 20 */	beq lbl_80334518
 /* 803344FC 0033033C  38 7B 00 04 */	addi r3, r27, 0x4
 /* 80334500 00330340  7F A4 EB 78 */	mr r4, r29
-/* 80334504 00330344  4B FF FD C9 */	bl lbl_803342CC
+/* 80334504 00330344  4B FF FD C9 */	bl "__vc__Q33hel6common48Array<Q53scn4step4hero14CommandManager5Datum,11>FUl"
 /* 80334508 00330348  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8033450C 0033034C  7C 1E 00 40 */	cmplw r30, r0
 /* 80334510 00330350  40 81 00 08 */	ble lbl_80334518

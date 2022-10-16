@@ -1,31 +1,31 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802432C8
-lbl_802432C8:
+.global __ct__Q53scn4step4boss15challengemaster14StateStartWaitFPQ43scn4step4boss4Boss
+__ct__Q53scn4step4boss15challengemaster14StateStartWaitFPQ43scn4step4boss4Boss:
 /* 802432C8 0023F108  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802432CC 0023F10C  7C 08 02 A6 */	mflr r0
 /* 802432D0 0023F110  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802432D4 0023F114  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802432D8 0023F118  7C 7F 1B 78 */	mr r31, r3
-/* 802432DC 0023F11C  4B FF 12 05 */	bl lbl_802344E0
-/* 802432E0 0023F120  3C 60 80 46 */	lis r3, lbl_80465FD8@ha
-/* 802432E4 0023F124  38 03 5F D8 */	addi r0, r3, lbl_80465FD8@l
+/* 802432DC 0023F11C  4B FF 12 05 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
+/* 802432E0 0023F120  3C 60 80 46 */	lis r3, __vt__Q53scn4step4boss15challengemaster14StateStartWait@ha
+/* 802432E4 0023F124  38 03 5F D8 */	addi r0, r3, __vt__Q53scn4step4boss15challengemaster14StateStartWait@l
 /* 802432E8 0023F128  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 802432EC 0023F12C  7F E3 FB 78 */	mr r3, r31
-/* 802432F0 0023F130  4B EB D4 F1 */	bl lbl_801007E0
-/* 802432F4 0023F134  4B FE 9C 2D */	bl lbl_8022CF20
-/* 802432F8 0023F138  4B F4 42 41 */	bl lbl_80187538
+/* 802432F0 0023F130  4B EB D4 F1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802432F4 0023F134  4B FE 9C 2D */	bl footState__Q43scn4step4boss4BossFv
+/* 802432F8 0023F138  4B F4 42 41 */	bl __ct__Q24file8DNOptionFv
 /* 802432FC 0023F13C  7F E3 FB 78 */	mr r3, r31
-/* 80243300 0023F140  4B EB D4 E1 */	bl lbl_801007E0
-/* 80243304 0023F144  4B FE 9C 35 */	bl lbl_8022CF38
+/* 80243300 0023F140  4B EB D4 E1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80243304 0023F144  4B FE 9C 35 */	bl model__Q43scn4step4boss4BossFv
 /* 80243308 0023F148  38 80 00 05 */	li r4, 0x5
-/* 8024330C 0023F14C  48 02 DF 71 */	bl lbl_8027127C
+/* 8024330C 0023F14C  48 02 DF 71 */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 80243310 0023F150  7F E3 FB 78 */	mr r3, r31
-/* 80243314 0023F154  4B EB D4 CD */	bl lbl_801007E0
-/* 80243318 0023F158  4B FE 9C 01 */	bl lbl_8022CF18
+/* 80243314 0023F154  4B EB D4 CD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80243318 0023F158  4B FE 9C 01 */	bl target__Q43scn4step4boss4BossFv
 /* 8024331C 0023F15C  38 80 00 01 */	li r4, 0x1
-/* 80243320 0023F160  4B F5 53 61 */	bl lbl_80198680
+/* 80243320 0023F160  4B F5 53 61 */	bl "__ct__25mint_wrapNative_helper<b>Fb"
 /* 80243324 0023F164  7F E3 FB 78 */	mr r3, r31
 /* 80243328 0023F168  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024332C 0023F16C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -33,62 +33,62 @@ lbl_802432C8:
 /* 80243334 0023F174  38 21 00 10 */	addi r1, r1, 0x10
 /* 80243338 0023F178  4E 80 00 20 */	blr
 
-.global lbl_8024333C
-lbl_8024333C:
-/* 8024333C 0023F17C  4B FF 4B 18 */	b lbl_80237E54
+.global __dt__Q53scn4step4boss15challengemaster14StateStartWaitFv
+__dt__Q53scn4step4boss15challengemaster14StateStartWaitFv:
+/* 8024333C 0023F17C  4B FF 4B 18 */	b __dt__Q53scn4step4boss7bonkers9StateBombFv
 
-.global lbl_80243340
-lbl_80243340:
+.global procAnim__Q53scn4step4boss15challengemaster14StateStartWaitFv
+procAnim__Q53scn4step4boss15challengemaster14StateStartWaitFv:
 /* 80243340 0023F180  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80243344 0023F184  7C 08 02 A6 */	mflr r0
 /* 80243348 0023F188  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8024334C 0023F18C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80243350 0023F190  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80243354 0023F194  7C 7F 1B 78 */	mr r31, r3
-/* 80243358 0023F198  4B EB D4 89 */	bl lbl_801007E0
-/* 8024335C 0023F19C  4B E3 23 D5 */	bl lbl_80075730
-/* 80243360 0023F1A0  4B FD D6 F1 */	bl lbl_80220A50
-/* 80243364 0023F1A4  48 16 A2 75 */	bl lbl_803AD5D8
+/* 80243358 0023F198  4B EB D4 89 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024335C 0023F19C  4B E3 23 D5 */	bl GKI_getfirst
+/* 80243360 0023F1A0  4B FD D6 F1 */	bl infoManager__Q33scn4step9ComponentFv
+/* 80243364 0023F1A4  48 16 A2 75 */	bl hasChallenge__Q43scn4step4info7ManagerCFv
 /* 80243368 0023F1A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8024336C 0023F1AC  41 82 00 A0 */	beq lbl_8024340C
 /* 80243370 0023F1B0  7F E3 FB 78 */	mr r3, r31
-/* 80243374 0023F1B4  4B EB D4 6D */	bl lbl_801007E0
-/* 80243378 0023F1B8  4B E3 23 B9 */	bl lbl_80075730
-/* 8024337C 0023F1BC  4B FD D6 D5 */	bl lbl_80220A50
-/* 80243380 0023F1C0  48 16 A2 95 */	bl lbl_803AD614
+/* 80243374 0023F1B4  4B EB D4 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80243378 0023F1B8  4B E3 23 B9 */	bl GKI_getfirst
+/* 8024337C 0023F1BC  4B FD D6 D5 */	bl infoManager__Q33scn4step9ComponentFv
+/* 80243380 0023F1C0  48 16 A2 95 */	bl challenge__Q43scn4step4info7ManagerFv
 /* 80243384 0023F1C4  38 63 09 1C */	addi r3, r3, 0x91c
-/* 80243388 0023F1C8  48 17 24 15 */	bl lbl_803B579C
+/* 80243388 0023F1C8  48 17 24 15 */	bl isActive__Q53scn4step4info9challenge5StartCFv
 /* 8024338C 0023F1CC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80243390 0023F1D0  41 82 00 28 */	beq lbl_802433B8
 /* 80243394 0023F1D4  7F E3 FB 78 */	mr r3, r31
-/* 80243398 0023F1D8  4B EB D4 49 */	bl lbl_801007E0
-/* 8024339C 0023F1DC  4B E3 23 95 */	bl lbl_80075730
-/* 802433A0 0023F1E0  4B FD D6 B1 */	bl lbl_80220A50
-/* 802433A4 0023F1E4  48 16 A2 71 */	bl lbl_803AD614
+/* 80243398 0023F1D8  4B EB D4 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8024339C 0023F1DC  4B E3 23 95 */	bl GKI_getfirst
+/* 802433A0 0023F1E0  4B FD D6 B1 */	bl infoManager__Q33scn4step9ComponentFv
+/* 802433A4 0023F1E4  48 16 A2 71 */	bl challenge__Q43scn4step4info7ManagerFv
 /* 802433A8 0023F1E8  38 63 09 1C */	addi r3, r3, 0x91c
-/* 802433AC 0023F1EC  48 17 23 E9 */	bl lbl_803B5794
+/* 802433AC 0023F1EC  48 17 23 E9 */	bl isAnimEnd__Q53scn4step4info9challenge5StartCFv
 /* 802433B0 0023F1F0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 802433B4 0023F1F4  41 82 00 58 */	beq lbl_8024340C
 .global lbl_802433B8
 lbl_802433B8:
 /* 802433B8 0023F1F8  7F E3 FB 78 */	mr r3, r31
-/* 802433BC 0023F1FC  4B EB D4 25 */	bl lbl_801007E0
+/* 802433BC 0023F1FC  4B EB D4 25 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802433C0 0023F200  7C 7E 1B 78 */	mr r30, r3
 /* 802433C4 0023F204  7F E3 FB 78 */	mr r3, r31
-/* 802433C8 0023F208  4B EB D4 19 */	bl lbl_801007E0
-/* 802433CC 0023F20C  4B FE 9C 4D */	bl lbl_8022D018
+/* 802433C8 0023F208  4B EB D4 19 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802433CC 0023F20C  4B FE 9C 4D */	bl stateChanger__Q43scn4step4boss4BossFv
 /* 802433D0 0023F210  7C 7F 1B 78 */	mr r31, r3
-/* 802433D4 0023F214  48 1C 2B 2D */	bl lbl_80405F00
+/* 802433D4 0023F214  48 1C 2B 2D */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 802433D8 0023F218  38 9F 00 10 */	addi r4, r31, 0x10
 /* 802433DC 0023F21C  2C 04 00 00 */	cmpwi r4, 0x0
 /* 802433E0 0023F220  41 82 00 28 */	beq lbl_80243408
-/* 802433E4 0023F224  3C 60 80 46 */	lis r3, lbl_80464478@ha
-/* 802433E8 0023F228  38 03 44 78 */	addi r0, r3, lbl_80464478@l
+/* 802433E4 0023F224  3C 60 80 46 */	lis r3, "__vt__Q24util28StateFactory<Q24util6IState>"@ha
+/* 802433E8 0023F228  38 03 44 78 */	addi r0, r3, "__vt__Q24util28StateFactory<Q24util6IState>"@l
 /* 802433EC 0023F22C  90 04 00 00 */	stw r0, 0x0(r4)
 /* 802433F0 0023F230  38 1F 00 90 */	addi r0, r31, 0x90
 /* 802433F4 0023F234  90 04 00 04 */	stw r0, 0x4(r4)
-/* 802433F8 0023F238  3C 60 80 46 */	lis r3, lbl_80465D58@ha
-/* 802433FC 0023F23C  38 03 5D 58 */	addi r0, r3, lbl_80465D58@l
+/* 802433F8 0023F238  3C 60 80 46 */	lis r3, "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster8StateFly,PQ43scn4step4boss4Boss>"@ha
+/* 802433FC 0023F23C  38 03 5D 58 */	addi r0, r3, "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster8StateFly,PQ43scn4step4boss4Boss>"@l
 /* 80243400 0023F240  90 04 00 00 */	stw r0, 0x0(r4)
 /* 80243404 0023F244  93 C4 00 08 */	stw r30, 0x8(r4)
 .global lbl_80243408
@@ -103,10 +103,10 @@ lbl_8024340C:
 /* 8024341C 0023F25C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80243420 0023F260  4E 80 00 20 */	blr
 
-.global lbl_80243424
-lbl_80243424:
+.global procMove__Q53scn4step4boss15challengemaster14StateStartWaitFv
+procMove__Q53scn4step4boss15challengemaster14StateStartWaitFv:
 /* 80243424 0023F264  4E 80 00 20 */	blr
 
-.global lbl_80243428
-lbl_80243428:
+.global procFixPos__Q53scn4step4boss15challengemaster14StateStartWaitFv
+procFixPos__Q53scn4step4boss15challengemaster14StateStartWaitFv:
 /* 80243428 0023F268  4E 80 00 20 */	blr

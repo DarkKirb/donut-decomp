@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804966E0
-lbl_804966E0:
+.global __vt__Q24util5Alarm
+__vt__Q24util5Alarm:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80405558
+	.4byte __dt__Q24util5AlarmFv
 	.4byte 0

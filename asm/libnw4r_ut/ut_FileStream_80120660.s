@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80120660
-lbl_80120660:
+.global Skip__Q44nw4r2ut10FileStream12FilePositionFl
+Skip__Q44nw4r2ut10FileStream12FilePositionFl:
 /* 80120660 0011C4A0  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80120664 0011C4A4  41 82 00 58 */	beq lbl_801206BC
 /* 80120668 0011C4A8  80 03 00 04 */	lwz r0, 0x4(r3)
@@ -39,8 +39,8 @@ lbl_801206BC:
 /* 801206C4 0011C504  00 00 00 00 */	.4byte 0x00000000
 /* 801206C8 0011C508  00 00 00 00 */	.4byte 0x00000000
 /* 801206CC 0011C50C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801206D0
-lbl_801206D0:
+.global Seek__Q44nw4r2ut10FileStream12FilePositionFlUl
+Seek__Q44nw4r2ut10FileStream12FilePositionFlUl:
 /* 801206D0 0011C510  2C 05 00 00 */	cmpwi r5, 0x0
 /* 801206D4 0011C514  41 82 00 10 */	beq lbl_801206E4
 /* 801206D8 0011C518  28 05 00 02 */	cmplwi r5, 0x2
@@ -90,9 +90,9 @@ lbl_80120750:
 /* 80120758 0011C598  00 00 00 00 */	.4byte 0x00000000
 /* 8012075C 0011C59C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80120760
-lbl_80120760:
-/* 80120760 0011C5A0  38 0D EC 48 */	addi r0, r13, lbl_8055D068@sda21
-/* 80120764 0011C5A4  90 0D EC 50 */	stw r0, lbl_8055D070@sda21(r13)
+.global "__sinit_@@1ut_FileStream_cpp"
+"__sinit_@@1ut_FileStream_cpp":
+/* 80120760 0011C5A0  38 0D EC 48 */	addi r0, r13, typeInfo__Q34nw4r2ut8IOStream@sda21
+/* 80120764 0011C5A4  90 0D EC 50 */	stw r0, typeInfo__Q34nw4r2ut10FileStream@sda21(r13)
 /* 80120768 0011C5A8  4E 80 00 20 */	blr
 /* 8012076C 0011C5AC  00 00 00 00 */	.4byte 0x00000000

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8030EA60
-lbl_8030EA60:
+.global __ct__Q53scn4step7gimmick9enemylist9EnemyListFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
+__ct__Q53scn4step7gimmick9enemylist9EnemyListFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component:
 /* 8030EA60 0030A8A0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8030EA64 0030A8A4  7C 08 02 A6 */	mflr r0
 /* 8030EA68 0030A8A8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -18,16 +18,16 @@ lbl_8030EA60:
 /* 8030EA90 0030A8D0  54 A5 04 3E */	clrlwi r5, r5, 16
 /* 8030EA94 0030A8D4  54 06 84 3E */	srwi r6, r0, 16
 /* 8030EA98 0030A8D8  54 07 04 3E */	clrlwi r7, r0, 16
-/* 8030EA9C 0030A8DC  4B F1 2C 59 */	bl lbl_802216F4
+/* 8030EA9C 0030A8DC  4B F1 2C 59 */	bl __ct__Q33scn4step9MaproRectFllUlUl
 /* 8030EAA0 0030A8E0  7C 64 1B 78 */	mr r4, r3
 /* 8030EAA4 0030A8E4  38 61 00 08 */	addi r3, r1, 0x8
-/* 8030EAA8 0030A8E8  4B F1 2C 61 */	bl lbl_80221708
+/* 8030EAA8 0030A8E8  4B F1 2C 61 */	bl toWorldRect__Q33scn4step9MaproRectCFv
 /* 8030EAAC 0030A8EC  38 7E 00 04 */	addi r3, r30, 0x4
 /* 8030EAB0 0030A8F0  38 81 00 08 */	addi r4, r1, 0x8
-/* 8030EAB4 0030A8F4  4B E9 13 35 */	bl lbl_8019FDE8
+/* 8030EAB4 0030A8F4  4B E9 13 35 */	bl __ct__Q33hel3geo4RectFRCQ33hel3geo4Rect
 /* 8030EAB8 0030A8F8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EABC 0030A8FC  38 80 FF FF */	li r4, -0x1
-/* 8030EAC0 0030A900  4B E9 13 7D */	bl lbl_8019FE3C
+/* 8030EAC0 0030A900  4B E9 13 7D */	bl __dt__Q33hel3geo4RectFv
 /* 8030EAC4 0030A904  80 1F 00 28 */	lwz r0, 0x28(r31)
 /* 8030EAC8 0030A908  90 1E 00 14 */	stw r0, 0x14(r30)
 /* 8030EACC 0030A90C  80 1F 00 2C */	lwz r0, 0x2c(r31)

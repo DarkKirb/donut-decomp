@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80452B30
-lbl_80452B30:
+.global "@STRING@SetDrawFlag__Q34nw4r2ut17TextWriterBase<c>FUl@0"
+"@STRING@SetDrawFlag__Q34nw4r2ut17TextWriterBase<c>FUl@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -18,8 +18,8 @@ lbl_80452B30:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80452B64
-lbl_80452B64:
+.global "@STRING@SetDrawFlag__Q34nw4r2ut17TextWriterBase<c>FUl"
+"@STRING@SetDrawFlag__Q34nw4r2ut17TextWriterBase<c>FUl":
 
 	.4byte 0x54657874
 	.4byte 0x57726974
@@ -27,8 +27,8 @@ lbl_80452B64:
 	.4byte 0x73652E68
 	.4byte 0
 
-.global lbl_80452B78
-lbl_80452B78:
+.global "@STRING@SetCursor__Q34nw4r2ut10CharWriterFff@0"
+"@STRING@SetCursor__Q34nw4r2ut10CharWriterFff@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -44,8 +44,8 @@ lbl_80452B78:
 	.4byte 0x696E7465
 	.4byte 0x722E0000
 
-.global lbl_80452BAC
-lbl_80452BAC:
+.global "@STRING@SetCursor__Q34nw4r2ut10CharWriterFff"
+"@STRING@SetCursor__Q34nw4r2ut10CharWriterFff":
 
 	.4byte 0x43686172
 	.4byte 0x57726974

@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8049A350
-lbl_8049A350:
+.global Packet
+Packet:
 	.skip 0x80
 
-.global lbl_8049A3D0
-lbl_8049A3D0:
+.global XferTime
+XferTime:
 	.skip 0x20
 
-.global lbl_8049A3F0
-lbl_8049A3F0:
+.global TypeTime
+TypeTime:
 	.skip 0x20
 
-.global lbl_8049A410
-lbl_8049A410:
+.global Alarm
+Alarm:
 	.skip 0xC0
 
-.global lbl_8049A4D0
-lbl_8049A4D0:
+.global InputBuffer
+InputBuffer:
 	.skip 0x20
 
-.global lbl_8049A4F0
-lbl_8049A4F0:
+.global InputBufferValid
+InputBufferValid:
 	.skip 0x10
 
-.global lbl_8049A500
-lbl_8049A500:
+.global InputBufferVcount
+InputBufferVcount:
 	.skip 0x10
 
-.global lbl_8049A510
-lbl_8049A510:
+.global RDSTHandler
+RDSTHandler:
 	.skip 0x20
 
-.global lbl_8049A530
-lbl_8049A530:
+.global TypeCallback
+TypeCallback:
 	.skip 0x40

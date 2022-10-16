@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80214B18
-lbl_80214B18:
+.global CreateFromYear__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatori
+CreateFromYear__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatori:
 /* 80214B18 00210958  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80214B1C 0021095C  7C 08 02 A6 */	mflr r0
 /* 80214B20 00210960  90 01 00 44 */	stw r0, 0x44(r1)
@@ -12,8 +12,8 @@ lbl_80214B18:
 /* 80214B30 00210970  7C 9B 23 78 */	mr r27, r4
 /* 80214B34 00210974  7C BC 2B 78 */	mr r28, r5
 /* 80214B38 00210978  38 61 00 10 */	addi r3, r1, 0x10
-/* 80214B3C 0021097C  4B EE 84 85 */	bl lbl_800FCFC0
-/* 80214B40 00210980  4B FF 29 25 */	bl lbl_80207464
+/* 80214B3C 0021097C  4B EE 84 85 */	bl __ct__Q34nw4r3lyt12AnimResourceFv
+/* 80214B40 00210980  4B FF 29 25 */	bl Products__Q33scn7history10ChronologyFv
 /* 80214B44 00210984  7C 7E 1B 78 */	mr r30, r3
 /* 80214B48 00210988  3B A0 00 00 */	li r29, 0x0
 /* 80214B4C 0021098C  3B E0 00 00 */	li r31, 0x0
@@ -30,39 +30,39 @@ lbl_80214B54:
 /* 80214B70 002109B0  93 A1 00 08 */	stw r29, 0x8(r1)
 /* 80214B74 002109B4  38 61 00 10 */	addi r3, r1, 0x10
 /* 80214B78 002109B8  38 81 00 08 */	addi r4, r1, 0x8
-/* 80214B7C 002109BC  48 00 00 65 */	bl lbl_80214BE0
+/* 80214B7C 002109BC  48 00 00 65 */	bl "add__Q33hel6common43MutableArray<Q33scn7history11ProductKind,3>FRCQ33scn7history11ProductKind"
 .global lbl_80214B80
 lbl_80214B80:
 /* 80214B80 002109C0  3B BD 00 01 */	addi r29, r29, 0x1
 /* 80214B84 002109C4  3B FF 00 14 */	addi r31, r31, 0x14
 .global lbl_80214B88
 lbl_80214B88:
-/* 80214B88 002109C8  4B FF 28 E9 */	bl lbl_80207470
+/* 80214B88 002109C8  4B FF 28 E9 */	bl Count__Q33scn7history10ChronologyFv
 /* 80214B8C 002109CC  7C 1D 18 00 */	cmpw r29, r3
 /* 80214B90 002109D0  41 80 FF C4 */	blt lbl_80214B54
 /* 80214B94 002109D4  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 80214B98 002109D8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80214B9C 002109DC  40 82 00 10 */	bne lbl_80214BAC
 /* 80214BA0 002109E0  38 61 00 10 */	addi r3, r1, 0x10
-/* 80214BA4 002109E4  38 8D A3 78 */	addi r4, r13, lbl_80558798@sda21
-/* 80214BA8 002109E8  48 00 00 39 */	bl lbl_80214BE0
+/* 80214BA4 002109E4  38 8D A3 78 */	addi r4, r13, "@48752_80558798"@sda21
+/* 80214BA8 002109E8  48 00 00 39 */	bl "add__Q33hel6common43MutableArray<Q33scn7history11ProductKind,3>FRCQ33scn7history11ProductKind"
 .global lbl_80214BAC
 lbl_80214BAC:
 /* 80214BAC 002109EC  7F 43 D3 78 */	mr r3, r26
 /* 80214BB0 002109F0  7F 64 DB 78 */	mr r4, r27
 /* 80214BB4 002109F4  38 A1 00 10 */	addi r5, r1, 0x10
-/* 80214BB8 002109F8  48 00 00 95 */	bl lbl_80214C4C
+/* 80214BB8 002109F8  48 00 00 95 */	bl "__ct__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatorRCQ33hel6common43MutableArray<Q33scn7history11ProductKind,3>"
 /* 80214BBC 002109FC  38 61 00 10 */	addi r3, r1, 0x10
 /* 80214BC0 00210A00  38 80 FF FF */	li r4, -0x1
-/* 80214BC4 00210A04  4B F6 0F A5 */	bl lbl_80175B68
+/* 80214BC4 00210A04  4B F6 0F A5 */	bl __dt__Q23scn6ISceneFv
 /* 80214BC8 00210A08  39 61 00 40 */	addi r11, r1, 0x40
 /* 80214BCC 00210A0C  4B DF 27 B9 */	bl lbl_80007384
 /* 80214BD0 00210A10  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80214BD4 00210A14  7C 08 03 A6 */	mtlr r0
 /* 80214BD8 00210A18  38 21 00 40 */	addi r1, r1, 0x40
 /* 80214BDC 00210A1C  4E 80 00 20 */	blr
-.global lbl_80214BE0
-lbl_80214BE0:
+.global "add__Q33hel6common43MutableArray<Q33scn7history11ProductKind,3>FRCQ33scn7history11ProductKind"
+"add__Q33hel6common43MutableArray<Q33scn7history11ProductKind,3>FRCQ33scn7history11ProductKind":
 /* 80214BE0 00210A20  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80214BE4 00210A24  7C 08 02 A6 */	mflr r0
 /* 80214BE8 00210A28  90 01 00 24 */	stw r0, 0x24(r1)
@@ -76,7 +76,7 @@ lbl_80214BE0:
 /* 80214C08 00210A48  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 80214C0C 00210A4C  7F E3 FB 78 */	mr r3, r31
 /* 80214C10 00210A50  38 80 00 03 */	li r4, 0x3
-/* 80214C14 00210A54  4B E0 F8 8D */	bl lbl_800244A0
+/* 80214C14 00210A54  4B E0 F8 8D */	bl DefaultSwitchThreadCallback
 /* 80214C18 00210A58  80 9E 00 00 */	lwz r4, 0x0(r30)
 /* 80214C1C 00210A5C  57 E0 10 3A */	slwi r0, r31, 2
 /* 80214C20 00210A60  7C 7D 02 14 */	add r3, r29, r0
@@ -92,8 +92,8 @@ lbl_80214C34:
 /* 80214C40 00210A80  7C 08 03 A6 */	mtlr r0
 /* 80214C44 00210A84  38 21 00 20 */	addi r1, r1, 0x20
 /* 80214C48 00210A88  4E 80 00 20 */	blr
-.global lbl_80214C4C
-lbl_80214C4C:
+.global "__ct__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatorRCQ33hel6common43MutableArray<Q33scn7history11ProductKind,3>"
+"__ct__Q43scn7history6detail13DetailContextFRQ23mem10IAllocatorRCQ33hel6common43MutableArray<Q33scn7history11ProductKind,3>":
 /* 80214C4C 00210A8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80214C50 00210A90  7C 08 02 A6 */	mflr r0
 /* 80214C54 00210A94  90 01 00 14 */	stw r0, 0x14(r1)
@@ -103,7 +103,7 @@ lbl_80214C4C:
 /* 80214C64 00210AA4  7C BF 2B 78 */	mr r31, r5
 /* 80214C68 00210AA8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80214C6C 00210AAC  38 63 00 04 */	addi r3, r3, 0x4
-/* 80214C70 00210AB0  4B EE 83 51 */	bl lbl_800FCFC0
+/* 80214C70 00210AB0  4B EE 83 51 */	bl __ct__Q34nw4r3lyt12AnimResourceFv
 /* 80214C74 00210AB4  80 1F 00 00 */	lwz r0, 0x0(r31)
 /* 80214C78 00210AB8  90 1E 00 04 */	stw r0, 0x4(r30)
 /* 80214C7C 00210ABC  80 7F 00 04 */	lwz r3, 0x4(r31)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011E750
-lbl_8011E750:
+.global __ct__Q44nw4r3snd6detail13WsdFileReaderFPCv
+__ct__Q44nw4r3snd6detail13WsdFileReaderFPCv:
 /* 8011E750 0011A590  38 00 00 00 */	li r0, 0x0
 /* 8011E754 0011A594  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8011E758 0011A598  90 03 00 04 */	stw r0, 0x4(r3)
@@ -47,8 +47,8 @@ lbl_8011E7C4:
 /* 8011E7D4 0011A614  7C 00 22 14 */	add r0, r0, r4
 /* 8011E7D8 0011A618  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8011E7DC 0011A61C  4E 80 00 20 */	blr
-.global lbl_8011E7E0
-lbl_8011E7E0:
+.global ReadWaveSoundInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail13WaveSoundInfoi
+ReadWaveSoundInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail13WaveSoundInfoi:
 /* 8011E7E0 0011A620  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E7E4 0011A624  7C 08 02 A6 */	mflr r0
 /* 8011E7E8 0011A628  80 C3 00 04 */	lwz r6, 0x4(r3)
@@ -62,13 +62,13 @@ lbl_8011E7E0:
 /* 8011E808 0011A648  7C 7E 1B 78 */	mr r30, r3
 /* 8011E80C 0011A64C  88 64 00 0C */	lbz r3, 0xc(r4)
 /* 8011E810 0011A650  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 8011E814 0011A654  4B FF E9 1D */	bl lbl_8011D130
+/* 8011E814 0011A654  4B FF E9 1D */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 8011E818 0011A658  7C 64 1B 78 */	mr r4, r3
 /* 8011E81C 0011A65C  80 BE 00 04 */	lwz r5, 0x4(r30)
 /* 8011E820 0011A660  88 63 00 00 */	lbz r3, 0x0(r3)
 /* 8011E824 0011A664  80 84 00 04 */	lwz r4, 0x4(r4)
 /* 8011E828 0011A668  38 A5 00 08 */	addi r5, r5, 0x8
-/* 8011E82C 0011A66C  4B FF E9 05 */	bl lbl_8011D130
+/* 8011E82C 0011A66C  4B FF E9 05 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 8011E830 0011A670  80 9E 00 00 */	lwz r4, 0x0(r30)
 /* 8011E834 0011A674  A0 04 00 06 */	lhz r0, 0x6(r4)
 /* 8011E838 0011A678  28 00 01 02 */	cmplwi r0, 0x102
@@ -107,7 +107,7 @@ lbl_8011E87C:
 /* 8011E8B4 0011A6F4  48 00 00 30 */	b lbl_8011E8E4
 .global lbl_8011E8B8
 lbl_8011E8B8:
-/* 8011E8B8 0011A6F8  C0 02 95 30 */	lfs f0, lbl_8055F4B0@sda21(r2)
+/* 8011E8B8 0011A6F8  C0 02 95 30 */	lfs f0, "@7814"@sda21(r2)
 /* 8011E8BC 0011A6FC  38 60 00 00 */	li r3, 0x0
 /* 8011E8C0 0011A700  38 80 00 40 */	li r4, 0x40
 /* 8011E8C4 0011A704  38 00 00 7F */	li r0, 0x7f
@@ -127,8 +127,8 @@ lbl_8011E8E4:
 /* 8011E8F4 0011A734  7C 08 03 A6 */	mtlr r0
 /* 8011E8F8 0011A738  38 21 00 10 */	addi r1, r1, 0x10
 /* 8011E8FC 0011A73C  4E 80 00 20 */	blr
-.global lbl_8011E900
-lbl_8011E900:
+.global ReadWaveSoundNoteInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail17WaveSoundNoteInfoii
+ReadWaveSoundNoteInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail17WaveSoundNoteInfoii:
 /* 8011E900 0011A740  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011E904 0011A744  7C 08 02 A6 */	mflr r0
 /* 8011E908 0011A748  80 E3 00 04 */	lwz r7, 0x4(r3)
@@ -144,20 +144,20 @@ lbl_8011E900:
 /* 8011E930 0011A770  7C 7D 1B 78 */	mr r29, r3
 /* 8011E934 0011A774  88 64 00 0C */	lbz r3, 0xc(r4)
 /* 8011E938 0011A778  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 8011E93C 0011A77C  4B FF E7 F5 */	bl lbl_8011D130
+/* 8011E93C 0011A77C  4B FF E7 F5 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 8011E940 0011A780  7C 64 1B 78 */	mr r4, r3
 /* 8011E944 0011A784  80 BD 00 04 */	lwz r5, 0x4(r29)
 /* 8011E948 0011A788  88 63 00 10 */	lbz r3, 0x10(r3)
 /* 8011E94C 0011A78C  80 84 00 14 */	lwz r4, 0x14(r4)
 /* 8011E950 0011A790  38 A5 00 08 */	addi r5, r5, 0x8
-/* 8011E954 0011A794  4B FF E7 DD */	bl lbl_8011D130
+/* 8011E954 0011A794  4B FF E7 DD */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 8011E958 0011A798  57 C0 18 38 */	slwi r0, r30, 3
 /* 8011E95C 0011A79C  80 9D 00 04 */	lwz r4, 0x4(r29)
 /* 8011E960 0011A7A0  7C C3 02 14 */	add r6, r3, r0
 /* 8011E964 0011A7A4  38 A4 00 08 */	addi r5, r4, 0x8
 /* 8011E968 0011A7A8  88 66 00 04 */	lbz r3, 0x4(r6)
 /* 8011E96C 0011A7AC  80 86 00 08 */	lwz r4, 0x8(r6)
-/* 8011E970 0011A7B0  4B FF E7 C1 */	bl lbl_8011D130
+/* 8011E970 0011A7B0  4B FF E7 C1 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 8011E974 0011A7B4  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8011E978 0011A7B8  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 8011E97C 0011A7BC  80 9D 00 00 */	lwz r4, 0x0(r29)
@@ -187,7 +187,7 @@ lbl_8011E900:
 /* 8011E9DC 0011A81C  48 00 00 1C */	b lbl_8011E9F8
 .global lbl_8011E9E0
 lbl_8011E9E0:
-/* 8011E9E0 0011A820  C0 02 95 30 */	lfs f0, lbl_8055F4B0@sda21(r2)
+/* 8011E9E0 0011A820  C0 02 95 30 */	lfs f0, "@7814"@sda21(r2)
 /* 8011E9E4 0011A824  38 60 00 40 */	li r3, 0x40
 /* 8011E9E8 0011A828  38 00 00 00 */	li r0, 0x0
 /* 8011E9EC 0011A82C  98 7F 00 0A */	stb r3, 0xa(r31)
@@ -205,8 +205,8 @@ lbl_8011E9F8:
 /* 8011EA14 0011A854  4E 80 00 20 */	blr
 /* 8011EA18 0011A858  00 00 00 00 */	.4byte 0x00000000
 /* 8011EA1C 0011A85C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8011EA20
-lbl_8011EA20:
+.global ReadWaveInfo__Q44nw4r3snd6detail13WsdFileReaderCFiPQ44nw4r3snd6detail8WaveInfoPCv
+ReadWaveInfo__Q44nw4r3snd6detail13WsdFileReaderCFiPQ44nw4r3snd6detail8WaveInfoPCv:
 /* 8011EA20 0011A860  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8011EA24 0011A864  7C 08 02 A6 */	mflr r0
 /* 8011EA28 0011A868  80 E3 00 08 */	lwz r7, 0x8(r3)
@@ -221,10 +221,10 @@ lbl_8011EA20:
 /* 8011EA4C 0011A88C  40 82 00 4C */	bne lbl_8011EA98
 /* 8011EA50 0011A890  7F E4 FB 78 */	mr r4, r31
 /* 8011EA54 0011A894  38 61 00 10 */	addi r3, r1, 0x10
-/* 8011EA58 0011A898  4B FF E7 09 */	bl lbl_8011D160
+/* 8011EA58 0011A898  4B FF E7 09 */	bl __ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv
 /* 8011EA5C 0011A89C  7F A4 EB 78 */	mr r4, r29
 /* 8011EA60 0011A8A0  38 61 00 10 */	addi r3, r1, 0x10
-/* 8011EA64 0011A8A4  4B FF E7 7D */	bl lbl_8011D1E0
+/* 8011EA64 0011A8A4  4B FF E7 7D */	bl GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi
 /* 8011EA68 0011A8A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8011EA6C 0011A8AC  40 82 00 0C */	bne lbl_8011EA78
 /* 8011EA70 0011A8B0  38 60 00 00 */	li r3, 0x0
@@ -233,11 +233,11 @@ lbl_8011EA20:
 lbl_8011EA78:
 /* 8011EA78 0011A8B8  7C 64 1B 78 */	mr r4, r3
 /* 8011EA7C 0011A8BC  38 61 00 0C */	addi r3, r1, 0xc
-/* 8011EA80 0011A8C0  4B FF E7 F1 */	bl lbl_8011D270
+/* 8011EA80 0011A8C0  4B FF E7 F1 */	bl __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader
 /* 8011EA84 0011A8C4  7F C4 F3 78 */	mr r4, r30
 /* 8011EA88 0011A8C8  38 61 00 0C */	addi r3, r1, 0xc
 /* 8011EA8C 0011A8CC  38 A0 00 00 */	li r5, 0x0
-/* 8011EA90 0011A8D0  4B FF E8 01 */	bl lbl_8011D290
+/* 8011EA90 0011A8D0  4B FF E8 01 */	bl ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
 /* 8011EA94 0011A8D4  48 00 00 64 */	b lbl_8011EAF8
 .global lbl_8011EA98
 lbl_8011EA98:
@@ -266,11 +266,11 @@ lbl_8011EAD0:
 .global lbl_8011EAE0
 lbl_8011EAE0:
 /* 8011EAE0 0011A920  38 61 00 08 */	addi r3, r1, 0x8
-/* 8011EAE4 0011A924  4B FC 70 0D */	bl lbl_800E5AF0
+/* 8011EAE4 0011A924  4B FC 70 0D */	bl __ct__Q34nw4r3g3d6CameraFPQ34nw4r3g3d10CameraData
 /* 8011EAE8 0011A928  7F C4 F3 78 */	mr r4, r30
 /* 8011EAEC 0011A92C  7F E5 FB 78 */	mr r5, r31
 /* 8011EAF0 0011A930  38 61 00 08 */	addi r3, r1, 0x8
-/* 8011EAF4 0011A934  4B FF E7 9D */	bl lbl_8011D290
+/* 8011EAF4 0011A934  4B FF E7 9D */	bl ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
 .global lbl_8011EAF8
 lbl_8011EAF8:
 /* 8011EAF8 0011A938  80 01 00 34 */	lwz r0, 0x34(r1)

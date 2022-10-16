@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80006AA8
-lbl_80006AA8:
+.global __va_arg
+__va_arg:
 /* 80006AA8 000028E8  88 E3 00 00 */	lbz r7, 0x0(r3)
 /* 80006AAC 000028EC  2C 04 00 03 */	cmpwi r4, 0x3
 /* 80006AB0 000028F0  7C 66 1B 78 */	mr r6, r3

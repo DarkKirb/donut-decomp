@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80469260
-lbl_80469260:
+.global "@54862"
+"@54862":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -81,53 +81,53 @@ lbl_80469260:
 	.4byte 0x66282900
 	.4byte 0
 
-.global lbl_80469390
-lbl_80469390:
+.global "__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros18StateCaptureAttack,PQ43scn4step4boss4Boss>"
+"__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros18StateCaptureAttack,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80259630
-	.4byte lbl_80259600
+	.4byte "__dt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros18StateCaptureAttack,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss13watergalboros18StateCaptureAttack,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_804693A0
-lbl_804693A0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8025962C
-	.4byte lbl_80259564
-
-.global lbl_804693B0
-lbl_804693B0:
+.global "__vt__Q24util260StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>"
+"__vt__Q24util260StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80259628
-	.4byte lbl_8025956C
+	.4byte "__dt__Q24util260StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+	.4byte "create__Q24util260StateFactoryArg5<Q24util6IState,Q53scn4step4boss6common9StateDash,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateDashDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
 
-.global lbl_804693C0
-lbl_804693C0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80259624
-	.4byte lbl_802595C0
-
-.global lbl_804693D0
-lbl_804693D0:
+.global "__vt__Q24util154StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros12StateQuivery,PQ43scn4step4boss4Boss,Q63scn4step4boss13watergalboros12StateQuivery6Config>"
+"__vt__Q24util154StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros12StateQuivery,PQ43scn4step4boss4Boss,Q63scn4step4boss13watergalboros12StateQuivery6Config>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80259620
-	.4byte lbl_802595E0
+	.4byte "__dt__Q24util154StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros12StateQuivery,PQ43scn4step4boss4Boss,Q63scn4step4boss13watergalboros12StateQuivery6Config>Fv"
+	.4byte "create__Q24util154StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros12StateQuivery,PQ43scn4step4boss4Boss,Q63scn4step4boss13watergalboros12StateQuivery6Config>Fv"
 
-.global lbl_804693E0
-lbl_804693E0:
+.global "__vt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>"
+"__vt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025961C
-	.4byte lbl_80259568
+	.4byte "__dt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+	.4byte "create__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros11StateAttack,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+
+.global "__vt__Q24util149StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros16StateAttackJoint,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>"
+"__vt__Q24util149StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros16StateAttackJoint,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util149StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros16StateAttackJoint,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+	.4byte "create__Q24util149StateFactoryArg2<Q24util6IState,Q53scn4step4boss13watergalboros16StateAttackJoint,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+
+.global "__vt__Q24util222StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>"
+"__vt__Q24util222StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util222StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
+	.4byte "create__Q24util222StateFactoryArg4<Q24util6IState,Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

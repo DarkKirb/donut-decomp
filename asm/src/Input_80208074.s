@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80208074
-lbl_80208074:
+.global __ct__Q33scn7history5InputFv
+__ct__Q33scn7history5InputFv:
 /* 80208074 00203EB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80208078 00203EB8  7C 08 02 A6 */	mflr r0
 /* 8020807C 00203EBC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -15,40 +15,40 @@ lbl_80208074:
 /* 80208098 00203ED8  98 03 00 03 */	stb r0, 0x3(r3)
 /* 8020809C 00203EDC  98 03 00 04 */	stb r0, 0x4(r3)
 /* 802080A0 00203EE0  98 03 00 05 */	stb r0, 0x5(r3)
-/* 802080A4 00203EE4  48 00 00 1D */	bl lbl_802080C0
+/* 802080A4 00203EE4  48 00 00 1D */	bl init__Q33scn7history5InputFv
 /* 802080A8 00203EE8  7F E3 FB 78 */	mr r3, r31
 /* 802080AC 00203EEC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802080B0 00203EF0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802080B4 00203EF4  7C 08 03 A6 */	mtlr r0
 /* 802080B8 00203EF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 802080BC 00203EFC  4E 80 00 20 */	blr
-.global lbl_802080C0
-lbl_802080C0:
+.global init__Q33scn7history5InputFv
+init__Q33scn7history5InputFv:
 /* 802080C0 00203F00  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 802080C4 00203F04  7C 08 02 A6 */	mflr r0
 /* 802080C8 00203F08  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802080CC 00203F0C  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 802080D0 00203F10  7C 7F 1B 78 */	mr r31, r3
-/* 802080D4 00203F14  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 802080D4 00203F14  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 802080D8 00203F18  38 80 00 00 */	li r4, 0x0
-/* 802080DC 00203F1C  4B F9 B4 9D */	bl lbl_801A3578
+/* 802080DC 00203F1C  4B F9 B4 9D */	bl gameHID__Q23hid10HIDManagerCFUl
 /* 802080E0 00203F20  7C 64 1B 78 */	mr r4, r3
 /* 802080E4 00203F24  38 61 00 14 */	addi r3, r1, 0x14
-/* 802080E8 00203F28  4B F9 A7 11 */	bl lbl_801A27F8
+/* 802080E8 00203F28  4B F9 A7 11 */	bl button__Q23hid11HIDAccessorCFv
 /* 802080EC 00203F2C  38 61 00 14 */	addi r3, r1, 0x14
-/* 802080F0 00203F30  4B E6 D6 41 */	bl lbl_80075730
+/* 802080F0 00203F30  4B E6 D6 41 */	bl GKI_getfirst
 /* 802080F4 00203F34  54 63 07 7C */	rlwinm r3, r3, 0, 29, 30
 /* 802080F8 00203F38  30 03 FF FF */	addic r0, r3, -0x1
 /* 802080FC 00203F3C  7C 00 19 10 */	subfe r0, r0, r3
 /* 80208100 00203F40  98 1F 00 00 */	stb r0, 0x0(r31)
-/* 80208104 00203F44  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 80208104 00203F44  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 80208108 00203F48  38 80 00 00 */	li r4, 0x0
-/* 8020810C 00203F4C  4B F9 B4 6D */	bl lbl_801A3578
+/* 8020810C 00203F4C  4B F9 B4 6D */	bl gameHID__Q23hid10HIDManagerCFUl
 /* 80208110 00203F50  7C 64 1B 78 */	mr r4, r3
 /* 80208114 00203F54  38 61 00 08 */	addi r3, r1, 0x8
-/* 80208118 00203F58  4B F9 A6 E1 */	bl lbl_801A27F8
+/* 80208118 00203F58  4B F9 A6 E1 */	bl button__Q23hid11HIDAccessorCFv
 /* 8020811C 00203F5C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80208120 00203F60  4B E6 D6 11 */	bl lbl_80075730
+/* 80208120 00203F60  4B E6 D6 11 */	bl GKI_getfirst
 /* 80208124 00203F64  70 63 00 09 */	andi. r3, r3, 0x9
 /* 80208128 00203F68  30 03 FF FF */	addic r0, r3, -0x1
 /* 8020812C 00203F6C  7C 00 19 10 */	subfe r0, r0, r3
@@ -63,8 +63,8 @@ lbl_802080C0:
 /* 80208150 00203F90  7C 08 03 A6 */	mtlr r0
 /* 80208154 00203F94  38 21 00 30 */	addi r1, r1, 0x30
 /* 80208158 00203F98  4E 80 00 20 */	blr
-.global lbl_8020815C
-lbl_8020815C:
+.global read__Q33scn7history5InputFRbRbRbRb
+read__Q33scn7history5InputFRbRbRbRb:
 /* 8020815C 00203F9C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80208160 00203FA0  7C 08 02 A6 */	mflr r0
 /* 80208164 00203FA4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -75,25 +75,25 @@ lbl_8020815C:
 /* 80208178 00203FB8  7C BC 2B 78 */	mr r28, r5
 /* 8020817C 00203FBC  7C DD 33 78 */	mr r29, r6
 /* 80208180 00203FC0  7C FE 3B 78 */	mr r30, r7
-/* 80208184 00203FC4  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 80208184 00203FC4  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 80208188 00203FC8  38 80 00 00 */	li r4, 0x0
-/* 8020818C 00203FCC  4B F9 B3 ED */	bl lbl_801A3578
+/* 8020818C 00203FCC  4B F9 B3 ED */	bl gameHID__Q23hid10HIDManagerCFUl
 /* 80208190 00203FD0  7C 64 1B 78 */	mr r4, r3
 /* 80208194 00203FD4  38 61 00 14 */	addi r3, r1, 0x14
-/* 80208198 00203FD8  4B F9 A6 61 */	bl lbl_801A27F8
+/* 80208198 00203FD8  4B F9 A6 61 */	bl button__Q23hid11HIDAccessorCFv
 /* 8020819C 00203FDC  38 61 00 14 */	addi r3, r1, 0x14
-/* 802081A0 00203FE0  4B E6 D5 91 */	bl lbl_80075730
+/* 802081A0 00203FE0  4B E6 D5 91 */	bl GKI_getfirst
 /* 802081A4 00203FE4  54 63 07 7C */	rlwinm r3, r3, 0, 29, 30
 /* 802081A8 00203FE8  30 03 FF FF */	addic r0, r3, -0x1
 /* 802081AC 00203FEC  7F E0 19 10 */	subfe r31, r0, r3
-/* 802081B0 00203FF0  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 802081B0 00203FF0  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 802081B4 00203FF4  38 80 00 00 */	li r4, 0x0
-/* 802081B8 00203FF8  4B F9 B3 C1 */	bl lbl_801A3578
+/* 802081B8 00203FF8  4B F9 B3 C1 */	bl gameHID__Q23hid10HIDManagerCFUl
 /* 802081BC 00203FFC  7C 64 1B 78 */	mr r4, r3
 /* 802081C0 00204000  38 61 00 08 */	addi r3, r1, 0x8
-/* 802081C4 00204004  4B F9 A6 35 */	bl lbl_801A27F8
+/* 802081C4 00204004  4B F9 A6 35 */	bl button__Q23hid11HIDAccessorCFv
 /* 802081C8 00204008  38 61 00 08 */	addi r3, r1, 0x8
-/* 802081CC 0020400C  4B E6 D5 65 */	bl lbl_80075730
+/* 802081CC 0020400C  4B E6 D5 65 */	bl GKI_getfirst
 /* 802081D0 00204010  70 63 00 09 */	andi. r3, r3, 0x9
 /* 802081D4 00204014  30 03 FF FF */	addic r0, r3, -0x1
 /* 802081D8 00204018  7C 00 19 10 */	subfe r0, r0, r3

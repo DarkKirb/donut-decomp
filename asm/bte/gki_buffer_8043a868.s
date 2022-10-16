@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043A868
-lbl_8043A868:
+.global "@749"
+"@749":
 
 	.4byte 0x67657462
 	.4byte 0x75663A20
@@ -11,8 +11,8 @@ lbl_8043A868:
 	.4byte 0x7A65726F
 	.4byte 0
 
-.global lbl_8043A880
-lbl_8043A880:
+.global "@750"
+"@750":
 
 	.4byte 0x67657462
 	.4byte 0x75663A20
@@ -53,8 +53,8 @@ lbl_8043A880:
 	.4byte 0x6E6B6564
 	.4byte 0
 
-.global lbl_8043A918
-lbl_8043A918:
+.global "@880_8043A918"
+"@880_8043A918":
 
 	.4byte 0x456E7175
 	.4byte 0x65756520
@@ -64,8 +64,8 @@ lbl_8043A918:
 	.4byte 0x72757074
 	.4byte 0x65640000
 
-.global lbl_8043A934
-lbl_8043A934:
+.global "@881"
+"@881":
 
 	.4byte 0x456E6575
 	.4byte 0x65756520
@@ -76,8 +76,8 @@ lbl_8043A934:
 	.4byte 0x6E6B6564
 	.4byte 0
 
-.global lbl_8043A954
-lbl_8043A954:
+.global "@901"
+"@901":
 
 	.4byte 0x456E6575
 	.4byte 0x65756520
@@ -97,8 +97,8 @@ lbl_8043A954:
 	.4byte 0x61646472
 	.4byte 0
 
-.global lbl_8043A998
-lbl_8043A998:
+.global "@1054_8043A998"
+"@1054_8043A998":
 
 	.4byte 0x44656C65
 	.4byte 0x74696E67

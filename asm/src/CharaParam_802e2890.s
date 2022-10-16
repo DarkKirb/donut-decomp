@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802E2890
-lbl_802E2890:
+.global Create__Q53scn4step5enemy11sisterbound10CharaParamFv
+Create__Q53scn4step5enemy11sisterbound10CharaParamFv:
 /* 802E2890 002DE6D0  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 802E2894 002DE6D4  7C 08 02 A6 */	mflr r0
 /* 802E2898 002DE6D8  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 802E289C 002DE6DC  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 802E28A0 002DE6E0  7C 7F 1B 78 */	mr r31, r3
 /* 802E28A4 002DE6E4  38 61 00 08 */	addi r3, r1, 0x8
-/* 802E28A8 002DE6E8  4B FA EE A5 */	bl lbl_8029174C
+/* 802E28A8 002DE6E8  4B FA EE A5 */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802E28AC 002DE6EC  38 A1 00 54 */	addi r5, r1, 0x54
 /* 802E28B0 002DE6F0  38 81 00 04 */	addi r4, r1, 0x4
 /* 802E28B4 002DE6F4  38 00 00 0A */	li r0, 0xa
@@ -25,7 +25,7 @@ lbl_802E28BC:
 /* 802E28D4 002DE714  90 01 00 6C */	stw r0, 0x6c(r1)
 /* 802E28D8 002DE718  38 00 00 3C */	li r0, 0x3c
 /* 802E28DC 002DE71C  90 01 00 70 */	stw r0, 0x70(r1)
-/* 802E28E0 002DE720  C0 02 C3 50 */	lfs f0, lbl_805622D0@sda21(r2)
+/* 802E28E0 002DE720  C0 02 C3 50 */	lfs f0, "@48778_805622D0"@sda21(r2)
 /* 802E28E4 002DE724  D0 01 00 74 */	stfs f0, 0x74(r1)
 /* 802E28E8 002DE728  38 00 00 02 */	li r0, 0x2
 /* 802E28EC 002DE72C  90 01 00 78 */	stw r0, 0x78(r1)

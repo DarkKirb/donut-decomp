@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80462BE0
-lbl_80462BE0:
+.global "@55641_80462BE0"
+"@55641_80462BE0":
 
 	.4byte 0x68697374
 	.4byte 0x6F72792F
@@ -50,23 +50,23 @@ lbl_80462BE0:
 	.4byte 0x74655265
 	.4byte 0x73657400
 
-.global lbl_80462C94
-lbl_80462C94:
+.global "@55831_80462C94"
+"@55831_80462C94":
 
 	.4byte 0x5061636B
 	.4byte 0x6167654E
 	.4byte 0
 
-.global lbl_80462CA0
-lbl_80462CA0:
+.global "@56044_80462CA0"
+"@56044_80462CA0":
 
 	.4byte 0x68697374
 	.4byte 0x6F72792F
 	.4byte 0x25732F25
 	.4byte 0x73000000
 
-.global lbl_80462CB0
-lbl_80462CB0:
+.global "@56102_80462CB0"
+"@56102_80462CB0":
 
 	.4byte lbl_80219E04
 	.4byte lbl_80219DA4
@@ -99,17 +99,17 @@ lbl_80462CB0:
 	.4byte lbl_80219DF8
 	.4byte 0
 
-.global lbl_80462D28
-lbl_80462D28:
+.global __vt__Q43scn7history6detail13PackageWindow
+__vt__Q43scn7history6detail13PackageWindow:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802187C8
-	.4byte lbl_80218A70
-	.4byte lbl_800E9D20
-	.4byte lbl_800E9D30
-	.4byte lbl_800EC990
-	.4byte lbl_800EC9A0
+	.4byte __dt__Q43scn7history6detail13PackageWindowFv
+	.4byte ExecCallback_CALC_WORLD__Q43scn7history6detail13PackageWindowFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_VIEW__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
 	.4byte 0
 	.4byte 0
 	.4byte 0

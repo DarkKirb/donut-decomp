@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80480D30
-lbl_80480D30:
+.global "@54958"
+"@54958":
 
 	.4byte 0x46696768
 	.4byte 0x74657244
@@ -11,8 +11,8 @@ lbl_80480D30:
 	.4byte 0x72616E63
 	.4byte 0x65303000
 
-.global lbl_80480D48
-lbl_80480D48:
+.global "@54959"
+"@54959":
 
 	.4byte 0x53756D61
 	.4byte 0x62757261
@@ -47,8 +47,8 @@ lbl_80480D48:
 	.4byte 0x67654D75
 	.4byte 0x736F7500
 
-.global lbl_80480DC8
-lbl_80480DC8:
+.global "@55023_80480DC8"
+"@55023_80480DC8":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -64,30 +64,30 @@ lbl_80480DC8:
 	.4byte 0x446F6F72
 	.4byte 0
 
-.global lbl_80480DFC
-lbl_80480DFC:
+.global __vt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusou
+__vt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusou:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8030918C
-	.4byte lbl_80309410
-	.4byte lbl_803091F8
-	.4byte lbl_80306D6C
-	.4byte lbl_80306D70
-	.4byte lbl_80306D74
-	.4byte lbl_80306D78
-	.4byte lbl_80309278
-	.4byte lbl_803092BC
-	.4byte lbl_803076D8
-	.4byte lbl_80309300
-	.4byte lbl_803076E0
-	.4byte lbl_80309354
-	.4byte lbl_80307C68
-	.4byte lbl_80307BA0
-	.4byte lbl_80307BC8
-	.4byte lbl_80307C24
-	.4byte lbl_803079C0
-	.4byte lbl_803079CC
+	.4byte __dt__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.4byte kind__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouCFv
+	.4byte init__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.4byte registerToRoot__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.4byte registerToRootCharaBack__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.4byte registerToRootCharaFront__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRQ23g3d4Root
+	.4byte procAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.4byte startUnlockDemo__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.4byte endUnlockDemo__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.4byte unsetZoomAll__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.4byte unlockAnim__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouFv
+	.4byte isUnlockAnimEnd__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.4byte canEnter__Q53scn4step7gimmick13challengedoor18ChallengeDoorMusouCFv
+	.4byte isCleared__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.4byte getEnterDistX__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.4byte getEnterDistY__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFv
+	.4byte modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.4byte reqDoorOpenSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
+	.4byte reqDoorCloseSE__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

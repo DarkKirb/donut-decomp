@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C7F8
-lbl_8055C7F8:
+.global ParseString
+ParseString:
 	.skip 0x4
 
-.global lbl_8055C7FC
-lbl_8055C7FC:
+.global FixedPitch
+FixedPitch:
 	.skip 0x4
 
-.global lbl_8055C800
-lbl_8055C800:
+.global FontDataSjis
+FontDataSjis:
 	.skip 0x4
 
-.global lbl_8055C804
-lbl_8055C804:
+.global FontDataAnsi
+FontDataAnsi:
 	.skip 0x4

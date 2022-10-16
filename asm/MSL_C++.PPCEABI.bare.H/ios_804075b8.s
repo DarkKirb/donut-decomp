@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804075B8
-lbl_804075B8:
+.global "@9022"
+"@9022":
 
 	.4byte 0x7374643A
 	.4byte 0x3A747231
@@ -25,8 +25,8 @@ lbl_804075B8:
 	.4byte 0x6861725B
 	.4byte 0x5D3E3E00
 
-.global lbl_80407608
-lbl_80407608:
+.global "@9050"
+"@9050":
 
 	.4byte 0x7374643A
 	.4byte 0x3A747231
@@ -40,8 +40,8 @@ lbl_80407608:
 	.4byte 0x5F636F6D
 	.4byte 0x6D6F6E00
 
-.global lbl_80407634
-lbl_80407634:
+.global "@9165"
+"@9165":
 
 	.4byte 0x7374643A
 	.4byte 0x3A646574

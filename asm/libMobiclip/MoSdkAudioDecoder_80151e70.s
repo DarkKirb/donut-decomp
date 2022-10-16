@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80151E70
-lbl_80151E70:
+.global __ct__20MoSdkAudioRepositoryFv
+__ct__20MoSdkAudioRepositoryFv:
 /* 80151E70 0014DCB0  38 00 00 00 */	li r0, 0x0
 /* 80151E74 0014DCB4  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 80151E78 0014DCB8  90 03 00 84 */	stw r0, 0x84(r3)
@@ -11,8 +11,8 @@ lbl_80151E70:
 /* 80151E84 0014DCC4  90 03 00 90 */	stw r0, 0x90(r3)
 /* 80151E88 0014DCC8  4E 80 00 20 */	blr
 /* 80151E8C 0014DCCC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80151E90
-lbl_80151E90:
+.global __dt__20MoSdkAudioRepositoryFv
+__dt__20MoSdkAudioRepositoryFv:
 /* 80151E90 0014DCD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80151E94 0014DCD4  7C 08 02 A6 */	mflr r0
 /* 80151E98 0014DCD8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -25,13 +25,13 @@ lbl_80151E90:
 /* 80151EB4 0014DCF4  80 63 00 80 */	lwz r3, 0x80(r3)
 /* 80151EB8 0014DCF8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80151EBC 0014DCFC  41 82 00 08 */	beq lbl_80151EC4
-/* 80151EC0 0014DD00  48 00 19 11 */	bl lbl_801537D0
+/* 80151EC0 0014DD00  48 00 19 11 */	bl MOiFree__FPv
 .global lbl_80151EC4
 lbl_80151EC4:
 /* 80151EC4 0014DD04  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80151EC8 0014DD08  40 81 00 0C */	ble lbl_80151ED4
 /* 80151ECC 0014DD0C  7F C3 F3 78 */	mr r3, r30
-/* 80151ED0 0014DD10  48 06 D8 45 */	bl lbl_801BF714
+/* 80151ED0 0014DD10  48 06 D8 45 */	bl __dl__FPv
 .global lbl_80151ED4
 lbl_80151ED4:
 /* 80151ED4 0014DD14  7F C3 F3 78 */	mr r3, r30
@@ -41,8 +41,8 @@ lbl_80151ED4:
 /* 80151EE4 0014DD24  7C 08 03 A6 */	mtlr r0
 /* 80151EE8 0014DD28  38 21 00 10 */	addi r1, r1, 0x10
 /* 80151EEC 0014DD2C  4E 80 00 20 */	blr
-.global lbl_80151EF0
-lbl_80151EF0:
+.global allocAudioBuffer__20MoSdkAudioRepositoryFii
+allocAudioBuffer__20MoSdkAudioRepositoryFii:
 /* 80151EF0 0014DD30  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80151EF4 0014DD34  7C 08 02 A6 */	mflr r0
 /* 80151EF8 0014DD38  90 01 00 24 */	stw r0, 0x24(r1)
@@ -56,13 +56,13 @@ lbl_80151EF0:
 /* 80151F18 0014DD58  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80151F1C 0014DD5C  41 82 00 0C */	beq lbl_80151F28
 /* 80151F20 0014DD60  7C 03 03 78 */	mr r3, r0
-/* 80151F24 0014DD64  48 00 18 AD */	bl lbl_801537D0
+/* 80151F24 0014DD64  48 00 18 AD */	bl MOiFree__FPv
 .global lbl_80151F28
 lbl_80151F28:
 /* 80151F28 0014DD68  7C 1E F9 D6 */	mullw r0, r30, r31
 /* 80151F2C 0014DD6C  54 03 08 3C */	slwi r3, r0, 1
 /* 80151F30 0014DD70  90 7D 00 84 */	stw r3, 0x84(r29)
-/* 80151F34 0014DD74  48 00 17 ED */	bl lbl_80153720
+/* 80151F34 0014DD74  48 00 17 ED */	bl MOiAlloc__FUi
 /* 80151F38 0014DD78  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80151F3C 0014DD7C  90 7D 00 80 */	stw r3, 0x80(r29)
 /* 80151F40 0014DD80  40 82 00 0C */	bne lbl_80151F4C
@@ -81,8 +81,8 @@ lbl_80151F50:
 /* 80151F64 0014DDA4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80151F68 0014DDA8  4E 80 00 20 */	blr
 /* 80151F6C 0014DDAC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80151F70
-lbl_80151F70:
+.global getPacket__20MoSdkAudioRepositoryFPPUcPUl
+getPacket__20MoSdkAudioRepositoryFPPUcPUl:
 /* 80151F70 0014DDB0  80 C3 00 88 */	lwz r6, 0x88(r3)
 /* 80151F74 0014DDB4  80 03 00 8C */	lwz r0, 0x8c(r3)
 /* 80151F78 0014DDB8  7C 06 00 40 */	cmplw r6, r0
@@ -109,8 +109,8 @@ lbl_80151F88:
 /* 80151FC4 0014DE04  00 00 00 00 */	.4byte 0x00000000
 /* 80151FC8 0014DE08  00 00 00 00 */	.4byte 0x00000000
 /* 80151FCC 0014DE0C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80151FD0
-lbl_80151FD0:
+.global getNextPacketSize__20MoSdkAudioRepositoryFv
+getNextPacketSize__20MoSdkAudioRepositoryFv:
 /* 80151FD0 0014DE10  80 83 00 88 */	lwz r4, 0x88(r3)
 /* 80151FD4 0014DE14  80 03 00 8C */	lwz r0, 0x8c(r3)
 /* 80151FD8 0014DE18  7C 04 00 40 */	cmplw r4, r0
@@ -125,8 +125,8 @@ lbl_80151FEC:
 /* 80151FF4 0014DE34  7C 63 02 14 */	add r3, r3, r0
 /* 80151FF8 0014DE38  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80151FFC 0014DE3C  4E 80 00 20 */	blr
-.global lbl_80152000
-lbl_80152000:
+.global skipPacket__20MoSdkAudioRepositoryFv
+skipPacket__20MoSdkAudioRepositoryFv:
 /* 80152000 0014DE40  80 83 00 88 */	lwz r4, 0x88(r3)
 /* 80152004 0014DE44  80 03 00 8C */	lwz r0, 0x8c(r3)
 /* 80152008 0014DE48  7C 04 00 40 */	cmplw r4, r0
@@ -141,19 +141,19 @@ lbl_80152018:
 /* 80152024 0014DE64  38 60 00 01 */	li r3, 0x1
 /* 80152028 0014DE68  4E 80 00 20 */	blr
 /* 8015202C 0014DE6C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80152030
-lbl_80152030:
-/* 80152030 0014DE70  3D 00 80 45 */	lis r8, lbl_80448254@ha
+.global __ct__17MoSdkAudioDecoderFP20MoSdkAudioRepositoryPvUlUl
+__ct__17MoSdkAudioDecoderFP20MoSdkAudioRepositoryPvUlUl:
+/* 80152030 0014DE70  3D 00 80 45 */	lis r8, __vt__17MoSdkAudioDecoder@ha
 /* 80152034 0014DE74  90 A3 00 0C */	stw r5, 0xc(r3)
-/* 80152038 0014DE78  39 08 82 54 */	addi r8, r8, lbl_80448254@l
+/* 80152038 0014DE78  39 08 82 54 */	addi r8, r8, __vt__17MoSdkAudioDecoder@l
 /* 8015203C 0014DE7C  91 03 00 10 */	stw r8, 0x10(r3)
 /* 80152040 0014DE80  90 E3 00 00 */	stw r7, 0x0(r3)
 /* 80152044 0014DE84  90 C3 00 04 */	stw r6, 0x4(r3)
 /* 80152048 0014DE88  90 83 00 08 */	stw r4, 0x8(r3)
 /* 8015204C 0014DE8C  4E 80 00 20 */	blr
 
-.global lbl_80152050
-lbl_80152050:
+.global __dt__17MoSdkAudioDecoderFv
+__dt__17MoSdkAudioDecoderFv:
 /* 80152050 0014DE90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80152054 0014DE94  7C 08 02 A6 */	mflr r0
 /* 80152058 0014DE98  2C 03 00 00 */	cmpwi r3, 0x0
@@ -163,18 +163,18 @@ lbl_80152050:
 /* 80152068 0014DEA8  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8015206C 0014DEAC  7C 7E 1B 78 */	mr r30, r3
 /* 80152070 0014DEB0  41 82 00 34 */	beq lbl_801520A4
-/* 80152074 0014DEB4  3C A0 80 45 */	lis r5, lbl_80448254@ha
-/* 80152078 0014DEB8  3C 80 80 45 */	lis r4, lbl_804481F8@ha
-/* 8015207C 0014DEBC  38 A5 82 54 */	addi r5, r5, lbl_80448254@l
+/* 80152074 0014DEB4  3C A0 80 45 */	lis r5, __vt__17MoSdkAudioDecoder@ha
+/* 80152078 0014DEB8  3C 80 80 45 */	lis r4, "@2532"@ha
+/* 8015207C 0014DEBC  38 A5 82 54 */	addi r5, r5, __vt__17MoSdkAudioDecoder@l
 /* 80152080 0014DEC0  90 A3 00 10 */	stw r5, 0x10(r3)
 /* 80152084 0014DEC4  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80152088 0014DEC8  38 84 81 F8 */	addi r4, r4, lbl_804481F8@l
+/* 80152088 0014DEC8  38 84 81 F8 */	addi r4, r4, "@2532"@l
 /* 8015208C 0014DECC  4C C6 31 82 */	crclr 4*cr1+eq
-/* 80152090 0014DED0  4B FF D8 F1 */	bl lbl_8014F980
+/* 80152090 0014DED0  4B FF D8 F1 */	bl MoLog
 /* 80152094 0014DED4  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80152098 0014DED8  40 81 00 0C */	ble lbl_801520A4
 /* 8015209C 0014DEDC  7F C3 F3 78 */	mr r3, r30
-/* 801520A0 0014DEE0  48 06 D6 75 */	bl lbl_801BF714
+/* 801520A0 0014DEE0  48 06 D6 75 */	bl __dl__FPv
 .global lbl_801520A4
 lbl_801520A4:
 /* 801520A4 0014DEE4  7F C3 F3 78 */	mr r3, r30
@@ -185,8 +185,8 @@ lbl_801520A4:
 /* 801520B8 0014DEF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801520BC 0014DEFC  4E 80 00 20 */	blr
 
-.global lbl_801520C0
-lbl_801520C0:
+.global decode__17MoSdkAudioDecoderFPCUcUl
+decode__17MoSdkAudioDecoderFPCUcUl:
 /* 801520C0 0014DF00  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801520C4 0014DF04  7C 08 02 A6 */	mflr r0
 /* 801520C8 0014DF08  90 01 00 34 */	stw r0, 0x34(r1)
@@ -229,11 +229,11 @@ lbl_8015212C:
 /* 8015214C 0014DF8C  4E 80 04 21 */	bctrl
 /* 80152150 0014DF90  28 03 00 01 */	cmplwi r3, 0x1
 /* 80152154 0014DF94  41 82 00 20 */	beq lbl_80152174
-/* 80152158 0014DF98  3C 80 80 45 */	lis r4, lbl_80448214@ha
+/* 80152158 0014DF98  3C 80 80 45 */	lis r4, "@2549_80448214"@ha
 /* 8015215C 0014DF9C  80 7F 00 0C */	lwz r3, 0xc(r31)
-/* 80152160 0014DFA0  38 84 82 14 */	addi r4, r4, lbl_80448214@l
+/* 80152160 0014DFA0  38 84 82 14 */	addi r4, r4, "@2549_80448214"@l
 /* 80152164 0014DFA4  4C C6 31 82 */	crclr 4*cr1+eq
-/* 80152168 0014DFA8  4B FF D8 19 */	bl lbl_8014F980
+/* 80152168 0014DFA8  4B FF D8 19 */	bl MoLog
 /* 8015216C 0014DFAC  38 60 00 00 */	li r3, 0x0
 /* 80152170 0014DFB0  48 00 00 5C */	b lbl_801521CC
 .global lbl_80152174
@@ -241,11 +241,11 @@ lbl_80152174:
 /* 80152174 0014DFB4  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 80152178 0014DFB8  7C 00 F0 40 */	cmplw r0, r30
 /* 8015217C 0014DFBC  41 82 00 18 */	beq lbl_80152194
-/* 80152180 0014DFC0  3C 80 80 45 */	lis r4, lbl_80448230@ha
+/* 80152180 0014DFC0  3C 80 80 45 */	lis r4, "@2550_80448230"@ha
 /* 80152184 0014DFC4  80 7F 00 0C */	lwz r3, 0xc(r31)
-/* 80152188 0014DFC8  38 84 82 30 */	addi r4, r4, lbl_80448230@l
+/* 80152188 0014DFC8  38 84 82 30 */	addi r4, r4, "@2550_80448230"@l
 /* 8015218C 0014DFCC  4C C6 31 82 */	crclr 4*cr1+eq
-/* 80152190 0014DFD0  4B FF D8 C1 */	bl lbl_8014FA50
+/* 80152190 0014DFD0  4B FF D8 C1 */	bl MoThrowError
 .global lbl_80152194
 lbl_80152194:
 /* 80152194 0014DFD4  80 9F 00 08 */	lwz r4, 0x8(r31)

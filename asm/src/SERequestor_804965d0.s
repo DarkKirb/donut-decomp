@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804965D0
-lbl_804965D0:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -14,8 +14,8 @@ lbl_804965D0:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_804965F4
-lbl_804965F4:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

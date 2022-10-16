@@ -1,58 +1,58 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8050AEE0
-lbl_8050AEE0:
+.global "sGenMode2__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sGenMode2__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0xC
 
-.global lbl_8050AEEC
-lbl_8050AEEC:
+.global "sTexCoordScale__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sTexCoordScale__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x74
 
-.global lbl_8050AF60
-lbl_8050AF60:
+.global "sTex__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sTex__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x120
 
-.global lbl_8050B080
-lbl_8050B080:
+.global "sTlut__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sTlut__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x70
 
-.global lbl_8050B0F0
-lbl_8050B0F0:
+.global "sPreTexMtxState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sPreTexMtxState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x20
 
-.global lbl_8050B110
-lbl_8050B110:
+.global "sPosNrmArrayState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sPosNrmArrayState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x10
 
-.global lbl_8050B120
-lbl_8050B120:
+.global "sScnDependentTexMtxFuncTable__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sScnDependentTexMtxFuncTable__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x800
 
-.global lbl_8050B920
-lbl_8050B920:
+.global "sFogState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sFogState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x608
 
-.global lbl_8050BF28
-lbl_8050BF28:
+.global "sLightState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sLightState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x2A2C
 
-.global lbl_8050E954
-lbl_8050E954:
+.global "sCameraMtxState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sCameraMtxState__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x16AC
 
 .global lbl_80510000
 lbl_80510000:
 	.skip 0x388
 
-.global lbl_80510388
-lbl_80510388:
+.global "sRenderMode__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"sRenderMode__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x40
 
-.global lbl_805103C8
-lbl_805103C8:
+.global "IndMtxOpDefault__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@"
+"IndMtxOpDefault__Q44nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@":
 	.skip 0x98
 
-.global lbl_80510460
-lbl_80510460:
+.global "@LOCAL@GetViewNrmMtxPtr__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@19PosNrmMtxArrayStateCFUl@m"
+"@LOCAL@GetViewNrmMtxPtr__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@19PosNrmMtxArrayStateCFUl@m":
 	.skip 0xA0

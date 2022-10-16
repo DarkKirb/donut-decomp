@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80267174
-lbl_80267174:
+.global update__Q43scn4step6camera10QuakePieceFv
+update__Q43scn4step6camera10QuakePieceFv:
 /* 80267174 00262FB4  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 80267178 00262FB8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8026717C 00262FBC  4D 82 00 20 */	beqlr

@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_805638A8
-lbl_805638A8:
+.global APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp
+APPEAR_WAIT_DEFAULT__Q43scn4step4info10HelpPushUp:
 
 	.4byte 0x0000001E
 
-.global lbl_805638AC
-lbl_805638AC:
+.global "@52184_805638AC"
+"@52184_805638AC":
 
 	.4byte 0
 
-.global lbl_805638B0
-lbl_805638B0:
+.global "@52185_805638B0"
+"@52185_805638B0":
 
 	.4byte 0x42C80000
 	.4byte 0

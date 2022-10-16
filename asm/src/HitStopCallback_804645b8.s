@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804645B8
-lbl_804645B8:
+.global __vt__Q43scn4step4boss15HitStopCallback
+__vt__Q43scn4step4boss15HitStopCallback:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80230AA8
-	.4byte lbl_80230B04
-	.4byte lbl_80230B74
+	.4byte __dt__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onStart__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step4boss15HitStopCallbackFv
 	.4byte 0

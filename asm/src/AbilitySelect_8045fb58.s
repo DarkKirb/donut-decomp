@@ -1,50 +1,50 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045FB58
-lbl_8045FB58:
+.global "panelPosName__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@"
+"panelPosName__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@":
 
-	.4byte lbl_805580F0
-	.4byte lbl_805580F8
-	.4byte lbl_80558100
-	.4byte lbl_80558108
-	.4byte lbl_80558110
-	.4byte lbl_80558118
-	.4byte lbl_80558120
+	.4byte "@51749_805580F0"
+	.4byte "@51750_805580F8"
+	.4byte "@51751"
+	.4byte "@51752"
+	.4byte "@51753"
+	.4byte "@51754"
+	.4byte "@51755_80558120"
 
-.global lbl_8045FB74
-lbl_8045FB74:
+.global "@51757"
+"@51757":
 
 	.4byte 0x43757273
 	.4byte 0x6F724261
 	.4byte 0x7365314E
 	.4byte 0
 
-.global lbl_8045FB84
-lbl_8045FB84:
+.global "@51758"
+"@51758":
 
 	.4byte 0x43757273
 	.4byte 0x6F724261
 	.4byte 0x7365324E
 	.4byte 0
 
-.global lbl_8045FB94
-lbl_8045FB94:
+.global "@51759_8045FB94"
+"@51759_8045FB94":
 
 	.4byte 0x43757273
 	.4byte 0x6F724261
 	.4byte 0x7365334E
 	.4byte 0
-	.4byte lbl_8045FB74
-	.4byte lbl_8045FB84
-	.4byte lbl_8045FB94
+	.4byte "@51757"
+	.4byte "@51758"
+	.4byte "@51759_8045FB94"
 
-.global lbl_8045FBB0
-lbl_8045FBB0:
+.global "areaPanelTbl__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@"
+"areaPanelTbl__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@":
 
-	.4byte lbl_80415948
-	.4byte lbl_80415980
-	.4byte lbl_804159B8
+	.4byte "area1Panel__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@"
+	.4byte "area2Panel__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@"
+	.4byte "area3Panel__Q43scn17challengetutorial4info27@unnamed@AbilitySelect_cpp@"
 	.4byte 0x6368616C
 	.4byte 0x6C656E67
 	.4byte 0x65616269
@@ -80,8 +80,8 @@ lbl_8045FBB0:
 	.4byte 0x6C426173
 	.4byte 0x654E0000
 
-.global lbl_8045FC44
-lbl_8045FC44:
+.global "@54084"
+"@54084":
 
 	.4byte lbl_801F86E4
 	.4byte lbl_801F8688

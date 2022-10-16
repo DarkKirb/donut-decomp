@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048EF80
-lbl_8048EF80:
+.global "@60245"
+"@60245":
 
 	.4byte lbl_803A33E8
 	.4byte lbl_803A3158
@@ -21,16 +21,16 @@ lbl_8048EF80:
 	.4byte lbl_803A33B4
 	.4byte lbl_803A33D0
 
-.global lbl_8048EFC0
-lbl_8048EFC0:
+.global __vt__Q53scn4step4hero8bossdemo17StateBossDemoWait
+__vt__Q53scn4step4hero8bossdemo17StateBossDemoWait:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803A2F6C
-	.4byte lbl_803A3054
-	.4byte lbl_803A343C
-	.4byte lbl_8035550C
-	.4byte lbl_803A38C4
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv
+	.4byte procAnim__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv
+	.4byte procMove__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

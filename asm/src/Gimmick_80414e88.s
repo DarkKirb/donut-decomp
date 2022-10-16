@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80414E88
-lbl_80414E88:
+.global "T_BLOCK_CENTER_OFFS__21@unnamed@Gimmick_cpp@"
+"T_BLOCK_CENTER_OFFS__21@unnamed@Gimmick_cpp@":
 
 	.4byte 0x3F000000
 	.4byte 0x3F000000

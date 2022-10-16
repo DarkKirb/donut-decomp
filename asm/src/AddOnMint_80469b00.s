@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80469B00
-lbl_80469B00:
+.global "@54699_80469B00"
+"@54699_80469B00":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -99,53 +99,53 @@ lbl_80469B00:
 	.4byte 0x65742829
 	.4byte 0
 
-.global lbl_80469C78
-lbl_80469C78:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy15StateRootAttack,PQ43scn4step4boss4Boss>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy15StateRootAttack,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025B8EC
-	.4byte lbl_8025B8A0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy15StateRootAttack,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy15StateRootAttack,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80469C88
-lbl_80469C88:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8025B8E8
-	.4byte lbl_8025B8BC
-
-.global lbl_80469C98
-lbl_80469C98:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy16StateVacuumStart,PQ43scn4step4boss4Boss>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy16StateVacuumStart,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025B8E4
-	.4byte lbl_8025B87C
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy16StateVacuumStart,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4boss6whispy16StateVacuumStart,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80469CA8
-lbl_80469CA8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8025B8E0
-	.4byte lbl_8025B804
-
-.global lbl_80469CB8
-lbl_80469CB8:
+.global "__vt__Q24util134StateFactoryArg3<Q24util6IState,Q53scn4step4boss6whispy14StateFallEnemy,PQ43scn4step4boss4Boss,Q53scn4step4boss6whispy10ScriptKind,Ul>"
+"__vt__Q24util134StateFactoryArg3<Q24util6IState,Q53scn4step4boss6whispy14StateFallEnemy,PQ43scn4step4boss4Boss,Q53scn4step4boss6whispy10ScriptKind,Ul>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025B8DC
-	.4byte lbl_8025B82C
+	.4byte "__dt__Q24util134StateFactoryArg3<Q24util6IState,Q53scn4step4boss6whispy14StateFallEnemy,PQ43scn4step4boss4Boss,Q53scn4step4boss6whispy10ScriptKind,Ul>Fv"
+	.4byte "create__Q24util134StateFactoryArg3<Q24util6IState,Q53scn4step4boss6whispy14StateFallEnemy,PQ43scn4step4boss4Boss,Q53scn4step4boss6whispy10ScriptKind,Ul>Fv"
 
-.global lbl_80469CC8
-lbl_80469CC8:
+.global "__vt__Q24util113StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy23StateShotAirBallTornado,PQ43scn4step4boss4Boss,Ul,Ul,Ul>"
+"__vt__Q24util113StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy23StateShotAirBallTornado,PQ43scn4step4boss4Boss,Ul,Ul,Ul>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8025B8D8
-	.4byte lbl_8025B854
+	.4byte "__dt__Q24util113StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy23StateShotAirBallTornado,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
+	.4byte "create__Q24util113StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy23StateShotAirBallTornado,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
+
+.global "__vt__Q24util109StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy19StateShotAirBallBig,PQ43scn4step4boss4Boss,Ul,Ul,Ul>"
+"__vt__Q24util109StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy19StateShotAirBallBig,PQ43scn4step4boss4Boss,Ul,Ul,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util109StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy19StateShotAirBallBig,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
+	.4byte "create__Q24util109StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy19StateShotAirBallBig,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
+
+.global "__vt__Q24util106StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy16StateShotAirBall,PQ43scn4step4boss4Boss,Ul,Ul,Ul>"
+"__vt__Q24util106StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy16StateShotAirBall,PQ43scn4step4boss4Boss,Ul,Ul,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util106StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy16StateShotAirBall,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
+	.4byte "create__Q24util106StateFactoryArg4<Q24util6IState,Q53scn4step4boss6whispy16StateShotAirBall,PQ43scn4step4boss4Boss,Ul,Ul,Ul>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

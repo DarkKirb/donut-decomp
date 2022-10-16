@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801B27E8
-lbl_801B27E8:
+.global __ct__Q35mcoll6detail17ActorDetectOptionFv
+__ct__Q35mcoll6detail17ActorDetectOptionFv:
 /* 801B27E8 001AE628  38 00 00 00 */	li r0, 0x0
 /* 801B27EC 001AE62C  98 03 00 00 */	stb r0, 0x0(r3)
 /* 801B27F0 001AE630  98 03 00 01 */	stb r0, 0x1(r3)
@@ -14,8 +14,8 @@ lbl_801B27E8:
 /* 801B2808 001AE648  98 03 00 07 */	stb r0, 0x7(r3)
 /* 801B280C 001AE64C  98 03 00 08 */	stb r0, 0x8(r3)
 /* 801B2810 001AE650  4E 80 00 20 */	blr
-.global lbl_801B2814
-lbl_801B2814:
+.global toLandGatherOption__Q35mcoll6detail17ActorDetectOptionCFv
+toLandGatherOption__Q35mcoll6detail17ActorDetectOptionCFv:
 /* 801B2814 001AE654  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B2818 001AE658  7C 08 02 A6 */	mflr r0
 /* 801B281C 001AE65C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -23,7 +23,7 @@ lbl_801B2814:
 /* 801B2824 001AE664  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801B2828 001AE668  7C 7E 1B 78 */	mr r30, r3
 /* 801B282C 001AE66C  7C 9F 23 78 */	mr r31, r4
-/* 801B2830 001AE670  48 00 50 D5 */	bl lbl_801B7904
+/* 801B2830 001AE670  48 00 50 D5 */	bl __ct__Q35mcoll6detail16LandGatherOptionFv
 /* 801B2834 001AE674  88 1F 00 00 */	lbz r0, 0x0(r31)
 /* 801B2838 001AE678  98 1E 00 00 */	stb r0, 0x0(r30)
 /* 801B283C 001AE67C  88 1F 00 01 */	lbz r0, 0x1(r31)

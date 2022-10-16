@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045F888
-lbl_8045F888:
+.global "@53516_8045F888"
+"@53516_8045F888":
 
 	.4byte 0x53746570
 	.4byte 0x436F6D6D
@@ -40,8 +40,8 @@ lbl_8045F888:
 	.4byte 0x65722E64
 	.4byte 0x6E000000
 
-.global lbl_8045F914
-lbl_8045F914:
+.global "@53523_8045F914"
+"@53523_8045F914":
 
 	.4byte lbl_801F6990
 	.4byte lbl_801F6990
@@ -60,18 +60,18 @@ lbl_8045F914:
 	.4byte lbl_801F6990
 	.4byte lbl_801F6990
 
-.global lbl_8045F954
-lbl_8045F954:
+.global __vt__Q33scn17challengetutorial22SceneChallengeTutorial
+__vt__Q33scn17challengetutorial22SceneChallengeTutorial:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801F7044
-	.4byte lbl_801F6E00
-	.4byte lbl_801F6E98
-	.4byte lbl_801F6E94
-	.4byte lbl_801F6FF4
-	.4byte lbl_801F6FF8
-	.4byte lbl_801F7030
+	.4byte GetRuntimeTypeInfo__Q33scn17challengetutorial22SceneChallengeTutorialCFv
+	.4byte __dt__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.4byte updateMain__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.4byte updateUseGPU__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.4byte updateDebug__Q33scn17challengetutorial22SceneChallengeTutorialFv
+	.4byte draw__Q33scn17challengetutorial22SceneChallengeTutorialFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn17challengetutorial22SceneChallengeTutorialCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

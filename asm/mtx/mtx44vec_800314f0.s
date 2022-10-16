@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800314F0
-lbl_800314F0:
+.global PSMTX44MultVec
+PSMTX44MultVec:
 /* 800314F0 0002D330  E0 04 00 00 */	psq_l f0, 0x0(r4), 0, qr0
 /* 800314F4 0002D334  E0 43 00 30 */	psq_l f2, 0x30(r3), 0, qr0
 /* 800314F8 0002D338  E0 24 80 08 */	psq_l f1, 0x8(r4), 1, qr0

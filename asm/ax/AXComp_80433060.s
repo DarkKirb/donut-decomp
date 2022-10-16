@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80433060
-lbl_80433060:
+.global __AXCompressorDefaultTable
+__AXCompressorDefaultTable:
 
 	.4byte 0x7F637EC7
 	.4byte 0x7E2B7D91

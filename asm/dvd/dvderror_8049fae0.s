@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8049FAE0
-lbl_8049FAE0:
+.global NandInfo
+NandInfo:
 	.skip 0x8C
 
-.global lbl_8049FB6C
-lbl_8049FB6C:
+.global NandCb
+NandCb:
 	.skip 0xD4
 
-.global lbl_8049FC40
-lbl_8049FC40:
+.global __ErrorInfo
+__ErrorInfo:
 	.skip 0x100

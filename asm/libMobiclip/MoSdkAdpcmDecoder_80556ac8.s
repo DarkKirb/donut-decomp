@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556AC8
-lbl_80556AC8:
+.global __RTTI__17MoSdkAdpcmDecoder
+__RTTI__17MoSdkAdpcmDecoder:
 
-	.4byte lbl_804481C0
-	.4byte lbl_804481D4
+	.4byte "@2510"
+	.4byte "@2511"
 
-.global lbl_80556AD0
-lbl_80556AD0:
+.global __RTTI__17MoSdkAudioDecoder
+__RTTI__17MoSdkAudioDecoder:
 
-	.4byte lbl_804481E0
+	.4byte "@2512"
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80447B88
-lbl_80447B88:
+.global "@2662"
+"@2662":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F4D
@@ -45,8 +45,8 @@ lbl_80447B88:
 	.4byte 0x6C65640A
 	.4byte 0
 
-.global lbl_80447C28
-lbl_80447C28:
+.global "@3402"
+"@3402":
 
 	.4byte lbl_8014EF74
 	.4byte lbl_8014EF7C
@@ -58,8 +58,8 @@ lbl_80447C28:
 	.4byte lbl_8014EFB4
 	.4byte lbl_8014EFAC
 
-.global lbl_80447C4C
-lbl_80447C4C:
+.global "@3409"
+"@3409":
 
 	.4byte 0x5B4D4F52
 	.4byte 0x756E5D20
@@ -69,8 +69,8 @@ lbl_80447C4C:
 	.4byte 0x656E6564
 	.4byte 0x0A000000
 
-.global lbl_80447C68
-lbl_80447C68:
+.global "@3410"
+"@3410":
 
 	.4byte 0x5B4D4F52
 	.4byte 0x756E5D20
@@ -79,8 +79,8 @@ lbl_80447C68:
 	.4byte 0x726F720A
 	.4byte 0
 
-.global lbl_80447C80
-lbl_80447C80:
+.global "@3417"
+"@3417":
 
 	.4byte 0x5B4D4F43
 	.4byte 0x6C6F7365
@@ -91,8 +91,8 @@ lbl_80447C80:
 	.4byte 0x6F70656E
 	.4byte 0x65640A00
 
-.global lbl_80447CA0
-lbl_80447CA0:
+.global "@3425"
+"@3425":
 
 	.4byte 0x5B4D4F44
 	.4byte 0x65737472
@@ -106,8 +106,8 @@ lbl_80447CA0:
 	.4byte 0x6F736564
 	.4byte 0x0A000000
 
-.global lbl_80447CCC
-lbl_80447CCC:
+.global "@3509"
+"@3509":
 
 	.4byte 0x5B4D4F47
 	.4byte 0x65745955
@@ -130,8 +130,8 @@ lbl_80447CCC:
 	.4byte 0x656E6564
 	.4byte 0x0A000000
 
-.global lbl_80447D1C
-lbl_80447D1C:
+.global "@3546"
+"@3546":
 
 	.4byte 0x5B4D4F53
 	.4byte 0x6B697049
@@ -190,8 +190,8 @@ lbl_80447D1C:
 	.4byte 0x656D7074
 	.4byte 0x790A0000
 
-.global lbl_80447DFC
-lbl_80447DFC:
+.global "@3600"
+"@3600":
 
 	.4byte 0x5B4D4F53
 	.4byte 0x6B697041
@@ -205,8 +205,8 @@ lbl_80447DFC:
 	.4byte 0x656E6564
 	.4byte 0x0A000000
 
-.global lbl_80447E28
-lbl_80447E28:
+.global "@3601"
+"@3601":
 
 	.4byte 0x5B4D4F53
 	.4byte 0x6B697041
@@ -221,8 +221,8 @@ lbl_80447E28:
 	.4byte 0x20656D70
 	.4byte 0x74790A00
 
-.global lbl_80447E58
-lbl_80447E58:
+.global "@3614"
+"@3614":
 
 	.4byte 0x5B4D4F47
 	.4byte 0x65744E65
@@ -238,8 +238,8 @@ lbl_80447E58:
 	.4byte 0x6E65640A
 	.4byte 0
 
-.global lbl_80447E8C
-lbl_80447E8C:
+.global "@3615"
+"@3615":
 
 	.4byte 0x5B4D4F47
 	.4byte 0x65744E65

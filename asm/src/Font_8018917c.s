@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018917C
-lbl_8018917C:
+.global __ct__Q24font4FontFPCcPCc
+__ct__Q24font4FontFPCcPCc:
 /* 8018917C 00184FBC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80189180 00184FC0  7C 08 02 A6 */	mflr r0
 /* 80189184 00184FC4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -21,7 +21,7 @@ lbl_801891A8:
 /* 801891B0 00184FF0  42 00 FF F8 */	bdnz lbl_801891A8
 /* 801891B4 00184FF4  7F C3 F3 78 */	mr r3, r30
 /* 801891B8 00184FF8  38 A0 00 50 */	li r5, 0x50
-/* 801891BC 00184FFC  48 01 48 01 */	bl lbl_8019D9BC
+/* 801891BC 00184FFC  48 01 48 01 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801891C0 00185000  38 9E 00 4C */	addi r4, r30, 0x4c
 /* 801891C4 00185004  38 60 00 00 */	li r3, 0x0
 /* 801891C8 00185008  38 00 00 04 */	li r0, 0x4
@@ -34,9 +34,9 @@ lbl_801891D0:
 /* 801891DC 0018501C  38 7E 00 50 */	addi r3, r30, 0x50
 /* 801891E0 00185020  7F E4 FB 78 */	mr r4, r31
 /* 801891E4 00185024  38 A0 00 20 */	li r5, 0x20
-/* 801891E8 00185028  48 01 47 D5 */	bl lbl_8019D9BC
+/* 801891E8 00185028  48 01 47 D5 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801891EC 0018502C  38 7E 00 70 */	addi r3, r30, 0x70
-/* 801891F0 00185030  4B F9 91 11 */	bl lbl_80122300
+/* 801891F0 00185030  4B F9 91 11 */	bl __ct__Q34nw4r2ut7ResFontFv
 /* 801891F4 00185034  38 00 00 00 */	li r0, 0x0
 /* 801891F8 00185038  98 1E 00 8C */	stb r0, 0x8c(r30)
 /* 801891FC 0018503C  7F C3 F3 78 */	mr r3, r30
@@ -46,8 +46,8 @@ lbl_801891D0:
 /* 8018920C 0018504C  7C 08 03 A6 */	mtlr r0
 /* 80189210 00185050  38 21 00 10 */	addi r1, r1, 0x10
 /* 80189214 00185054  4E 80 00 20 */	blr
-.global lbl_80189218
-lbl_80189218:
+.global __dt__Q24font4FontFv
+__dt__Q24font4FontFv:
 /* 80189218 00185058  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018921C 0018505C  7C 08 02 A6 */	mflr r0
 /* 80189220 00185060  90 01 00 14 */	stw r0, 0x14(r1)
@@ -60,17 +60,17 @@ lbl_80189218:
 /* 8018923C 0018507C  88 03 00 8C */	lbz r0, 0x8c(r3)
 /* 80189240 00185080  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80189244 00185084  41 82 00 08 */	beq lbl_8018924C
-/* 80189248 00185088  48 00 00 A5 */	bl lbl_801892EC
+/* 80189248 00185088  48 00 00 A5 */	bl unload__Q24font4FontFv
 .global lbl_8018924C
 lbl_8018924C:
 /* 8018924C 0018508C  38 7E 00 70 */	addi r3, r30, 0x70
 /* 80189250 00185090  38 80 FF FF */	li r4, -0x1
-/* 80189254 00185094  4B F9 90 ED */	bl lbl_80122340
+/* 80189254 00185094  4B F9 90 ED */	bl __dt__Q34nw4r2ut7ResFontFv
 /* 80189258 00185098  7F E0 07 34 */	extsh r0, r31
 /* 8018925C 0018509C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80189260 001850A0  40 81 00 0C */	ble lbl_8018926C
 /* 80189264 001850A4  7F C3 F3 78 */	mr r3, r30
-/* 80189268 001850A8  48 03 64 AD */	bl lbl_801BF714
+/* 80189268 001850A8  48 03 64 AD */	bl __dl__FPv
 .global lbl_8018926C
 lbl_8018926C:
 /* 8018926C 001850AC  7F C3 F3 78 */	mr r3, r30
@@ -80,8 +80,8 @@ lbl_8018926C:
 /* 8018927C 001850BC  7C 08 03 A6 */	mtlr r0
 /* 80189280 001850C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80189284 001850C4  4E 80 00 20 */	blr
-.global lbl_80189288
-lbl_80189288:
+.global load__Q24font4FontFv
+load__Q24font4FontFv:
 /* 80189288 001850C8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018928C 001850CC  7C 08 02 A6 */	mflr r0
 /* 80189290 001850D0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -90,16 +90,16 @@ lbl_80189288:
 /* 8018929C 001850DC  38 61 00 08 */	addi r3, r1, 0x8
 /* 801892A0 001850E0  7F E4 FB 78 */	mr r4, r31
 /* 801892A4 001850E4  38 A0 00 00 */	li r5, 0x0
-/* 801892A8 001850E8  4B FF E7 A9 */	bl lbl_80187A50
+/* 801892A8 001850E8  4B FF E7 A9 */	bl __ct__Q24file12FileAccessorFPCcb
 /* 801892AC 001850EC  38 61 00 08 */	addi r3, r1, 0x8
-/* 801892B0 001850F0  4B FF E8 29 */	bl lbl_80187AD8
+/* 801892B0 001850F0  4B FF E8 29 */	bl block__Q24file12FileAccessorCFv
 /* 801892B4 001850F4  90 81 00 14 */	stw r4, 0x14(r1)
 /* 801892B8 001850F8  90 61 00 10 */	stw r3, 0x10(r1)
 /* 801892BC 001850FC  38 7F 00 70 */	addi r3, r31, 0x70
-/* 801892C0 00185100  4B F9 90 E1 */	bl lbl_801223A0
+/* 801892C0 00185100  4B F9 90 E1 */	bl SetResource__Q34nw4r2ut7ResFontFPv
 /* 801892C4 00185104  38 61 00 08 */	addi r3, r1, 0x8
 /* 801892C8 00185108  38 80 FF FF */	li r4, -0x1
-/* 801892CC 0018510C  4B FE BD 39 */	bl lbl_80175004
+/* 801892CC 0018510C  4B FE BD 39 */	bl "__dt__Q33hel6common31ExplicitSingleton<Q23app5Reset>Fv"
 /* 801892D0 00185110  38 00 00 01 */	li r0, 0x1
 /* 801892D4 00185114  98 1F 00 8C */	stb r0, 0x8c(r31)
 /* 801892D8 00185118  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -107,15 +107,15 @@ lbl_80189288:
 /* 801892E0 00185120  7C 08 03 A6 */	mtlr r0
 /* 801892E4 00185124  38 21 00 20 */	addi r1, r1, 0x20
 /* 801892E8 00185128  4E 80 00 20 */	blr
-.global lbl_801892EC
-lbl_801892EC:
+.global unload__Q24font4FontFv
+unload__Q24font4FontFv:
 /* 801892EC 0018512C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801892F0 00185130  7C 08 02 A6 */	mflr r0
 /* 801892F4 00185134  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801892F8 00185138  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801892FC 0018513C  7C 7F 1B 78 */	mr r31, r3
 /* 80189300 00185140  38 63 00 70 */	addi r3, r3, 0x70
-/* 80189304 00185144  4B F9 91 ED */	bl lbl_801224F0
+/* 80189304 00185144  4B F9 91 ED */	bl RemoveResource__Q34nw4r2ut7ResFontFv
 /* 80189308 00185148  38 00 00 00 */	li r0, 0x0
 /* 8018930C 0018514C  98 1F 00 8C */	stb r0, 0x8c(r31)
 /* 80189310 00185150  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -123,15 +123,15 @@ lbl_801892EC:
 /* 80189318 00185158  7C 08 03 A6 */	mtlr r0
 /* 8018931C 0018515C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80189320 00185160  4E 80 00 20 */	blr
-.global lbl_80189324
-lbl_80189324:
+.global loaded__Q24font4FontCFv
+loaded__Q24font4FontCFv:
 /* 80189324 00185164  88 63 00 8C */	lbz r3, 0x8c(r3)
 /* 80189328 00185168  4E 80 00 20 */	blr
-.global lbl_8018932C
-lbl_8018932C:
+.global name__Q24font4FontCFv
+name__Q24font4FontCFv:
 /* 8018932C 0018516C  38 63 00 50 */	addi r3, r3, 0x50
 /* 80189330 00185170  4E 80 00 20 */	blr
-.global lbl_80189334
-lbl_80189334:
+.global font__Q24font4FontFv
+font__Q24font4FontFv:
 /* 80189334 00185174  38 63 00 70 */	addi r3, r3, 0x70
 /* 80189338 00185178  4E 80 00 20 */	blr

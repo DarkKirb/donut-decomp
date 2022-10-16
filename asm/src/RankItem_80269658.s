@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80269658
-lbl_80269658:
+.global __ct__Q43scn4step9challenge8RankItemFv
+__ct__Q43scn4step9challenge8RankItemFv:
 /* 80269658 00265498  38 00 00 00 */	li r0, 0x0
 /* 8026965C 0026549C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80269660 002654A0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80269664 002654A4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80269668 002654A8  98 03 00 0C */	stb r0, 0xc(r3)
 /* 8026966C 002654AC  4E 80 00 20 */	blr
-.global lbl_80269670
-lbl_80269670:
+.global __ct__Q43scn4step9challenge8RankItemFiiUlb
+__ct__Q43scn4step9challenge8RankItemFiiUlb:
 /* 80269670 002654B0  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80269674 002654B4  90 A3 00 04 */	stw r5, 0x4(r3)
 /* 80269678 002654B8  90 C3 00 08 */	stw r6, 0x8(r3)
 /* 8026967C 002654BC  98 E3 00 0C */	stb r7, 0xc(r3)
 /* 80269680 002654C0  4E 80 00 20 */	blr
-.global lbl_80269684
-lbl_80269684:
+.global isDefaultScore__Q43scn4step9challenge8RankItemCFv
+isDefaultScore__Q43scn4step9challenge8RankItemCFv:
 /* 80269684 002654C4  80 63 00 08 */	lwz r3, 0x8(r3)
 /* 80269688 002654C8  38 03 00 01 */	addi r0, r3, 0x1
 /* 8026968C 002654CC  7C 00 00 34 */	cntlzw r0, r0
 /* 80269690 002654D0  54 03 D9 7E */	srwi r3, r0, 5
 /* 80269694 002654D4  4E 80 00 20 */	blr
-.global lbl_80269698
-lbl_80269698:
+.global Merge__Q43scn4step9challenge8RankItemFPQ43scn4step9challenge8RankItemPCiRCQ37storage15BackupFileData213ChallengeDataQ33scn4step13ChallengeKindbii
+Merge__Q43scn4step9challenge8RankItemFPQ43scn4step9challenge8RankItemPCiRCQ37storage15BackupFileData213ChallengeDataQ33scn4step13ChallengeKindbii:
 /* 80269698 002654D8  94 21 FE C0 */	stwu r1, -0x140(r1)
 /* 8026969C 002654DC  7C 08 02 A6 */	mflr r0
 /* 802696A0 002654E0  90 01 01 44 */	stw r0, 0x144(r1)
@@ -42,13 +42,13 @@ lbl_80269698:
 .global lbl_802696D0
 lbl_802696D0:
 /* 802696D0 00265510  7E E3 BB 78 */	mr r3, r23
-/* 802696D4 00265514  4B FF FF 85 */	bl lbl_80269658
+/* 802696D4 00265514  4B FF FF 85 */	bl __ct__Q43scn4step9challenge8RankItemFv
 /* 802696D8 00265518  3A F7 00 10 */	addi r23, r23, 0x10
 /* 802696DC 0026551C  7C 17 B0 40 */	cmplw r23, r22
 /* 802696E0 00265520  41 80 FF F0 */	blt lbl_802696D0
-/* 802696E4 00265524  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 802696E8 00265528  4B F0 CF DD */	bl lbl_801766C4
-/* 802696EC 0026552C  48 19 B8 39 */	bl lbl_80404F24
+/* 802696E4 00265524  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 802696E8 00265528  4B F0 CF DD */	bl storageManager__Q23app11ApplicationFv
+/* 802696EC 0026552C  48 19 B8 39 */	bl volatileData2__Q27storage14StorageManagerFv
 /* 802696F0 00265530  83 E3 00 08 */	lwz r31, 0x8(r3)
 /* 802696F4 00265534  3B C0 00 00 */	li r30, 0x0
 /* 802696F8 00265538  3A C0 00 00 */	li r22, 0x0
@@ -61,11 +61,11 @@ lbl_80269704:
 /* 8026970C 0026554C  38 A0 00 24 */	li r5, 0x24
 /* 80269710 00265550  38 C0 FF FF */	li r6, -0x1
 /* 80269714 00265554  38 E0 00 00 */	li r7, 0x0
-/* 80269718 00265558  4B FF FF 59 */	bl lbl_80269670
+/* 80269718 00265558  4B FF FF 59 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
 /* 8026971C 0026555C  7C 64 1B 78 */	mr r4, r3
 /* 80269720 00265560  38 61 00 80 */	addi r3, r1, 0x80
 /* 80269724 00265564  7C 63 B2 14 */	add r3, r3, r22
-/* 80269728 00265568  48 00 02 51 */	bl lbl_80269978
+/* 80269728 00265568  48 00 02 51 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 8026972C 0026556C  3B DE 00 01 */	addi r30, r30, 0x1
 /* 80269730 00265570  3A D6 00 10 */	addi r22, r22, 0x10
 /* 80269734 00265574  3A B5 00 01 */	addi r21, r21, 0x1
@@ -84,11 +84,11 @@ lbl_80269754:
 /* 80269760 002655A0  80 A5 00 10 */	lwz r5, 0x10(r5)
 /* 80269764 002655A4  7F E6 FB 78 */	mr r6, r31
 /* 80269768 002655A8  38 E0 00 00 */	li r7, 0x0
-/* 8026976C 002655AC  4B FF FF 05 */	bl lbl_80269670
+/* 8026976C 002655AC  4B FF FF 05 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
 /* 80269770 002655B0  7C 64 1B 78 */	mr r4, r3
 /* 80269774 002655B4  38 61 00 80 */	addi r3, r1, 0x80
 /* 80269778 002655B8  7C 63 BA 14 */	add r3, r3, r23
-/* 8026977C 002655BC  48 00 01 FD */	bl lbl_80269978
+/* 8026977C 002655BC  48 00 01 FD */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 80269780 002655C0  3B DE 00 01 */	addi r30, r30, 0x1
 /* 80269784 002655C4  3A F7 00 10 */	addi r23, r23, 0x10
 /* 80269788 002655C8  3A B5 00 01 */	addi r21, r21, 0x1
@@ -105,12 +105,12 @@ lbl_80269790:
 /* 802697AC 002655EC  7F A5 EB 78 */	mr r5, r29
 /* 802697B0 002655F0  7F E6 FB 78 */	mr r6, r31
 /* 802697B4 002655F4  38 E0 00 01 */	li r7, 0x1
-/* 802697B8 002655F8  4B FF FE B9 */	bl lbl_80269670
+/* 802697B8 002655F8  4B FF FE B9 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
 /* 802697BC 002655FC  7C 64 1B 78 */	mr r4, r3
 /* 802697C0 00265600  57 C0 20 36 */	slwi r0, r30, 4
 /* 802697C4 00265604  38 61 00 80 */	addi r3, r1, 0x80
 /* 802697C8 00265608  7C 63 02 14 */	add r3, r3, r0
-/* 802697CC 0026560C  48 00 01 AD */	bl lbl_80269978
+/* 802697CC 0026560C  48 00 01 AD */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 802697D0 00265610  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_802697D4
 lbl_802697D4:
@@ -121,12 +121,12 @@ lbl_802697D4:
 lbl_802697E0:
 /* 802697E0 00265620  7C 15 F8 40 */	cmplw r21, r31
 /* 802697E4 00265624  41 82 00 80 */	beq lbl_80269864
-/* 802697E8 00265628  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 802697EC 0026562C  4B F0 CE D9 */	bl lbl_801766C4
+/* 802697E8 00265628  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 802697EC 0026562C  4B F0 CE D9 */	bl storageManager__Q23app11ApplicationFv
 /* 802697F0 00265630  7E A4 AB 78 */	mr r4, r21
-/* 802697F4 00265634  48 19 B6 E5 */	bl lbl_80404ED8
+/* 802697F4 00265634  48 19 B6 E5 */	bl backupFileData2__Q27storage14StorageManagerFUl
 /* 802697F8 00265638  7F 44 D3 78 */	mr r4, r26
-/* 802697FC 0026563C  48 19 AB 75 */	bl lbl_80404370
+/* 802697FC 0026563C  48 19 AB 75 */	bl challengeData__Q27storage15BackupFileData2FQ33scn4step13ChallengeKind
 /* 80269800 00265640  38 A1 00 54 */	addi r5, r1, 0x54
 /* 80269804 00265644  38 83 FF FC */	addi r4, r3, -0x4
 /* 80269808 00265648  7E C9 03 A6 */	mtctr r22
@@ -147,11 +147,11 @@ lbl_8026980C:
 /* 8026983C 0026567C  80 A1 00 68 */	lwz r5, 0x68(r1)
 /* 80269840 00265680  7E A6 AB 78 */	mr r6, r21
 /* 80269844 00265684  38 E0 00 00 */	li r7, 0x0
-/* 80269848 00265688  4B FF FE 29 */	bl lbl_80269670
+/* 80269848 00265688  4B FF FE 29 */	bl __ct__Q43scn4step9challenge8RankItemFiiUlb
 /* 8026984C 0026568C  7C 64 1B 78 */	mr r4, r3
 /* 80269850 00265690  38 61 00 80 */	addi r3, r1, 0x80
 /* 80269854 00265694  7C 63 CA 14 */	add r3, r3, r25
-/* 80269858 00265698  48 00 01 21 */	bl lbl_80269978
+/* 80269858 00265698  48 00 01 21 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 8026985C 0026569C  3B DE 00 01 */	addi r30, r30, 0x1
 /* 80269860 002656A0  3B 39 00 10 */	addi r25, r25, 0x10
 .global lbl_80269864
@@ -187,10 +187,10 @@ lbl_80269884:
 /* 802698C4 00265704  3A C1 00 80 */	addi r22, r1, 0x80
 /* 802698C8 00265708  7E D6 02 14 */	add r22, r22, r0
 /* 802698CC 0026570C  7E C4 B3 78 */	mr r4, r22
-/* 802698D0 00265710  48 00 00 A9 */	bl lbl_80269978
+/* 802698D0 00265710  48 00 00 A9 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 802698D4 00265714  7E C3 B3 78 */	mr r3, r22
 /* 802698D8 00265718  38 81 00 48 */	addi r4, r1, 0x48
-/* 802698DC 0026571C  48 00 00 9D */	bl lbl_80269978
+/* 802698DC 0026571C  48 00 00 9D */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 .global lbl_802698E0
 lbl_802698E0:
 /* 802698E0 00265720  3A F7 00 01 */	addi r23, r23, 0x1
@@ -217,7 +217,7 @@ lbl_80269910:
 /* 8026991C 0026575C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80269920 00265760  41 82 00 10 */	beq lbl_80269930
 /* 80269924 00265764  38 61 00 B0 */	addi r3, r1, 0xb0
-/* 80269928 00265768  48 00 00 51 */	bl lbl_80269978
+/* 80269928 00265768  48 00 00 51 */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 8026992C 0026576C  48 00 00 0C */	b lbl_80269938
 .global lbl_80269930
 lbl_80269930:
@@ -232,7 +232,7 @@ lbl_80269940:
 /* 80269940 00265780  7C 78 CA 14 */	add r3, r24, r25
 /* 80269944 00265784  38 81 00 80 */	addi r4, r1, 0x80
 /* 80269948 00265788  7C 84 CA 14 */	add r4, r4, r25
-/* 8026994C 0026578C  48 00 00 2D */	bl lbl_80269978
+/* 8026994C 0026578C  48 00 00 2D */	bl __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
 /* 80269950 00265790  3A B5 00 01 */	addi r21, r21, 0x1
 /* 80269954 00265794  3B 39 00 10 */	addi r25, r25, 0x10
 /* 80269958 00265798  2C 15 00 04 */	cmpwi r21, 0x4
@@ -243,8 +243,8 @@ lbl_80269940:
 /* 8026996C 002657AC  7C 08 03 A6 */	mtlr r0
 /* 80269970 002657B0  38 21 01 40 */	addi r1, r1, 0x140
 /* 80269974 002657B4  4E 80 00 20 */	blr
-.global lbl_80269978
-lbl_80269978:
+.global __as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem
+__as__Q43scn4step9challenge8RankItemFRCQ43scn4step9challenge8RankItem:
 /* 80269978 002657B8  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 8026997C 002657BC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80269980 002657C0  80 04 00 04 */	lwz r0, 0x4(r4)

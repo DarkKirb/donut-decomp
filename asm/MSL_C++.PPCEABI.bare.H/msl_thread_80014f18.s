@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80014F18
-lbl_80014F18:
+.global release__Q43std3tr16detail25shared_ptr_deleter_commonFv
+release__Q43std3tr16detail25shared_ptr_deleter_commonFv:
 /* 80014F18 00010D58  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80014F1C 00010D5C  7C 08 02 A6 */	mflr r0
 /* 80014F20 00010D60  90 01 00 14 */	stw r0, 0x14(r1)
@@ -36,8 +36,8 @@ lbl_80014F7C:
 /* 80014F88 00010DC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 80014F8C 00010DCC  4E 80 00 20 */	blr
 
-.global lbl_80014F90
-lbl_80014F90:
+.global "__dt__Q33std3tr114function<Fv_v>Fv"
+"__dt__Q33std3tr114function<Fv_v>Fv":
 /* 80014F90 00010DD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80014F94 00010DD4  7C 08 02 A6 */	mflr r0
 /* 80014F98 00010DD8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -74,7 +74,7 @@ lbl_80015004:
 /* 80015004 00010E44  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80015008 00010E48  40 81 00 0C */	ble lbl_80015014
 /* 8001500C 00010E4C  7F C3 F3 78 */	mr r3, r30
-/* 80015010 00010E50  48 1A A7 05 */	bl lbl_801BF714
+/* 80015010 00010E50  48 1A A7 05 */	bl __dl__FPv
 .global lbl_80015014
 lbl_80015014:
 /* 80015014 00010E54  7F C3 F3 78 */	mr r3, r30
@@ -85,6 +85,6 @@ lbl_80015014:
 /* 80015028 00010E68  38 21 00 10 */	addi r1, r1, 0x10
 /* 8001502C 00010E6C  4E 80 00 20 */	blr
 
-.global lbl_80015030
-lbl_80015030:
-/* 80015030 00010E70  4B FF 1B A0 */	b lbl_80006BD0
+.global "__dt__Q43std3tr16detail20function_base<PFv_v>Fv"
+"__dt__Q43std3tr16detail20function_base<PFv_v>Fv":
+/* 80015030 00010E70  4B FF 1B A0 */	b __dt__Q23std9exceptionFv

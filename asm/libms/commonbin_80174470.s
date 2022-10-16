@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80174470
-lbl_80174470:
+.global LMSi_AnalyzeMessageHeader
+LMSi_AnalyzeMessageHeader:
 /* 80174470 001702B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80174474 001702B4  7C 08 02 A6 */	mflr r0
 /* 80174478 001702B8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -21,7 +21,7 @@ lbl_80174470:
 .global lbl_801744AC
 lbl_801744AC:
 /* 801744AC 001702EC  54 03 23 36 */	rlwinm r3, r0, 4, 12, 27
-/* 801744B0 001702F0  4B FF FC F1 */	bl lbl_801741A0
+/* 801744B0 001702F0  4B FF FC F1 */	bl LMSi_Malloc
 /* 801744B4 001702F4  90 7F 00 0C */	stw r3, 0xc(r31)
 .global lbl_801744B8
 lbl_801744B8:
@@ -35,8 +35,8 @@ lbl_801744B8:
 /* 801744D4 00170314  4E 80 00 20 */	blr
 /* 801744D8 00170318  00 00 00 00 */	.4byte 0x00000000
 /* 801744DC 0017031C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801744E0
-lbl_801744E0:
+.global LMSi_AnalyzeMessageBlocks
+LMSi_AnalyzeMessageBlocks:
 /* 801744E0 00170320  39 00 00 20 */	li r8, 0x20
 /* 801744E4 00170324  38 E0 00 00 */	li r7, 0x0
 /* 801744E8 00170328  38 C0 00 00 */	li r6, 0x0
@@ -85,16 +85,16 @@ lbl_8017457C:
 /* 80174584 001703C4  41 80 FF 6C */	blt lbl_801744F0
 /* 80174588 001703C8  4E 80 00 20 */	blr
 /* 8017458C 001703CC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80174590
-lbl_80174590:
+.global LMSi_AnalyzeMessageBinary
+LMSi_AnalyzeMessageBinary:
 /* 80174590 001703D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80174594 001703D4  7C 08 02 A6 */	mflr r0
 /* 80174598 001703D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8017459C 001703DC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801745A0 001703E0  7C 7F 1B 78 */	mr r31, r3
-/* 801745A4 001703E4  4B FF FE CD */	bl lbl_80174470
+/* 801745A4 001703E4  4B FF FE CD */	bl LMSi_AnalyzeMessageHeader
 /* 801745A8 001703E8  7F E3 FB 78 */	mr r3, r31
-/* 801745AC 001703EC  4B FF FF 35 */	bl lbl_801744E0
+/* 801745AC 001703EC  4B FF FF 35 */	bl LMSi_AnalyzeMessageBlocks
 /* 801745B0 001703F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801745B4 001703F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801745B8 001703F8  7C 08 03 A6 */	mtlr r0
@@ -103,8 +103,8 @@ lbl_80174590:
 /* 801745C4 00170404  00 00 00 00 */	.4byte 0x00000000
 /* 801745C8 00170408  00 00 00 00 */	.4byte 0x00000000
 /* 801745CC 0017040C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801745D0
-lbl_801745D0:
+.global LMSi_SearchBlockByName
+LMSi_SearchBlockByName:
 /* 801745D0 00170410  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801745D4 00170414  7C 08 02 A6 */	mflr r0
 /* 801745D8 00170418  90 01 00 24 */	stw r0, 0x24(r1)
@@ -123,7 +123,7 @@ lbl_801745F8:
 /* 80174604 00170444  38 A0 00 04 */	li r5, 0x4
 /* 80174608 00170448  7C 63 02 14 */	add r3, r3, r0
 /* 8017460C 0017044C  38 63 00 04 */	addi r3, r3, 0x4
-/* 80174610 00170450  4B FF FB B1 */	bl lbl_801741C0
+/* 80174610 00170450  4B FF FB B1 */	bl LMSi_MemCmp
 /* 80174614 00170454  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80174618 00170458  41 82 00 0C */	beq lbl_80174624
 /* 8017461C 0017045C  57 E3 04 3E */	clrlwi r3, r31, 16
@@ -149,8 +149,8 @@ lbl_8017463C:
 /* 80174654 00170494  4E 80 00 20 */	blr
 /* 80174658 00170498  00 00 00 00 */	.4byte 0x00000000
 /* 8017465C 0017049C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80174660
-lbl_80174660:
+.global LMSi_GetHashTableIndexFromLabel
+LMSi_GetHashTableIndexFromLabel:
 /* 80174660 001704A0  38 A0 00 00 */	li r5, 0x0
 /* 80174664 001704A4  60 00 00 00 */	nop
 .global lbl_80174668

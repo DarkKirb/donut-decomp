@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556628
-lbl_80556628:
+.global __AXFXAlloc
+__AXFXAlloc:
 
-	.4byte lbl_80047040
+	.4byte __AXFXAllocFunction
 
-.global lbl_8055662C
-lbl_8055662C:
+.global __AXFXFree
+__AXFXFree:
 
-	.4byte lbl_80047050
+	.4byte __AXFXFreeFunction

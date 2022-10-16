@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80465E68
-lbl_80465E68:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster9StateLose,PQ43scn4step4boss4Boss>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster9StateLose,PQ43scn4step4boss4Boss>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802416B8
-	.4byte lbl_8024169C
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster9StateLose,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster9StateLose,PQ43scn4step4boss4Boss>Fv"
 
-.global lbl_80465E78
-lbl_80465E78:
+.global __vt__Q53scn4step4boss15challengemaster12StateLoseFly
+__vt__Q53scn4step4boss15challengemaster12StateLoseFly:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80241178
-	.4byte lbl_8024117C
-	.4byte lbl_80241340
-	.4byte lbl_802344FC
-	.4byte lbl_802415F8
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss15challengemaster12StateLoseFlyFv
+	.4byte procAnim__Q53scn4step4boss15challengemaster12StateLoseFlyFv
+	.4byte procMove__Q53scn4step4boss15challengemaster12StateLoseFlyFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss15challengemaster12StateLoseFlyFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407468
-lbl_80407468:
+.global init_jk
+init_jk:
 
 	.4byte 0x00000002
 	.4byte 0x00000003
 	.4byte 0x00000004
 	.4byte 0x00000006
 
-.global lbl_80407478
-lbl_80407478:
+.global PIo2
+PIo2:
 
 	.4byte 0x3FF921FB
 	.4byte 0x40000000

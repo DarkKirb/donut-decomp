@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80015690
-lbl_80015690:
+.global TRK_memcpy
+TRK_memcpy:
 /* 80015690 000114D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80015694 000114D4  2C 05 00 00 */	cmpwi r5, 0x0
 /* 80015698 000114D8  39 20 00 FF */	li r9, 0xff
@@ -90,8 +90,8 @@ lbl_800157BC:
 /* 800157C0 00011600  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 800157C4 00011604  38 21 00 10 */	addi r1, r1, 0x10
 /* 800157C8 00011608  4E 80 00 20 */	blr
-.global lbl_800157CC
-lbl_800157CC:
+.global TRK_memset
+TRK_memset:
 /* 800157CC 0001160C  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800157D0 00011610  54 88 06 3E */	clrlwi r8, r4, 24
 /* 800157D4 00011614  7C 67 1B 78 */	mr r7, r3

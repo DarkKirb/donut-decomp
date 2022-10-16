@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055DED8
-lbl_8055DED8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DEE0
-lbl_8055DEE0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DEE8
-lbl_8055DEE8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DEF0
-lbl_8055DEF0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DEF8
-lbl_8055DEF8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DF00
-lbl_8055DF00:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DF08
-lbl_8055DF08:
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DF10
-lbl_8055DF10:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8

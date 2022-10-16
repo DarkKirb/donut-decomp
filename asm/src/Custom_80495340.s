@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495340
-lbl_80495340:
+.global "__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot10StateReady,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot10StateReady,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803F04D8
-	.4byte lbl_803F0498
+	.4byte "__dt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot10StateReady,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot10StateReady,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_80495350
-lbl_80495350:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803F04D4
-	.4byte lbl_803F04B4
-
-.global lbl_80495360
-lbl_80495360:
+.global "__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot9StateWait,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot9StateWait,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803F0494
-	.4byte lbl_803F04D0
-	.4byte lbl_803F0280
-	.4byte lbl_803D3768
-	.4byte lbl_803F02FC
+	.4byte "__dt__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot9StateWait,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util109StateFactoryArg1<Q24util6IState,Q53scn4step6weapon19challengemastershot9StateWait,PQ43scn4step6weapon6Weapon>Fv"
+
+.global __vt__Q53scn4step6weapon19challengemastershot6Custom
+__vt__Q53scn4step6weapon19challengemastershot6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step6weapon19challengemastershot6CustomCFv
+	.4byte __dt__Q53scn4step6weapon19challengemastershot6CustomFv
+	.4byte onInit__Q53scn4step6weapon19challengemastershot6CustomFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q53scn4step6weapon19challengemastershot6CustomFv
 	.4byte 0

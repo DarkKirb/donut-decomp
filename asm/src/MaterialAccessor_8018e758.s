@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018E758
-lbl_8018E758:
+.global __ct__Q23g3d16MaterialAccessorFv
+__ct__Q23g3d16MaterialAccessorFv:
 /* 8018E758 0018A598  38 A3 FF FC */	addi r5, r3, -0x4
 /* 8018E75C 0018A59C  38 80 00 00 */	li r4, 0x0
 /* 8018E760 0018A5A0  38 00 00 06 */	li r0, 0x6
@@ -16,8 +16,8 @@ lbl_8018E768:
 /* 8018E778 0018A5B8  38 00 00 00 */	li r0, 0x0
 /* 8018E77C 0018A5BC  98 03 00 34 */	stb r0, 0x34(r3)
 /* 8018E780 0018A5C0  4E 80 00 20 */	blr
-.global lbl_8018E784
-lbl_8018E784:
+.global __ct__Q23g3d16MaterialAccessorFRQ34nw4r3g3d6ScnMdlUl
+__ct__Q23g3d16MaterialAccessorFRQ34nw4r3g3d6ScnMdlUl:
 /* 8018E784 0018A5C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E788 0018A5C8  7C 08 02 A6 */	mflr r0
 /* 8018E78C 0018A5CC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -38,7 +38,7 @@ lbl_8018E7A8:
 /* 8018E7C0 0018A600  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8018E7C4 0018A604  41 82 00 0C */	beq lbl_8018E7D0
 /* 8018E7C8 0018A608  7F E3 FB 78 */	mr r3, r31
-/* 8018E7CC 0018A60C  4B F5 FC 75 */	bl lbl_800EE440
+/* 8018E7CC 0018A60C  4B F5 FC 75 */	bl __ct__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFPQ34nw4r3g3d6ScnMdlUl
 .global lbl_8018E7D0
 lbl_8018E7D0:
 /* 8018E7D0 0018A610  80 7F 00 00 */	lwz r3, 0x0(r31)
@@ -51,8 +51,8 @@ lbl_8018E7D0:
 /* 8018E7EC 0018A62C  7C 08 03 A6 */	mtlr r0
 /* 8018E7F0 0018A630  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E7F4 0018A634  4E 80 00 20 */	blr
-.global lbl_8018E7F8
-lbl_8018E7F8:
+.global matTevColorGXSetTevColor__Q23g3d16MaterialAccessorCF11_GXTevRegIDRC8_GXColor
+matTevColorGXSetTevColor__Q23g3d16MaterialAccessorCF11_GXTevRegIDRC8_GXColor:
 /* 8018E7F8 0018A638  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018E7FC 0018A63C  7C 08 02 A6 */	mflr r0
 /* 8018E800 0018A640  90 01 00 24 */	stw r0, 0x24(r1)
@@ -61,34 +61,34 @@ lbl_8018E7F8:
 /* 8018E80C 0018A64C  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 8018E810 0018A650  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8018E814 0018A654  38 80 00 00 */	li r4, 0x0
-/* 8018E818 0018A658  4B F5 FB 19 */	bl lbl_800EE330
+/* 8018E818 0018A658  4B F5 FB 19 */	bl GetResMatTevColor__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 /* 8018E81C 0018A65C  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8018E820 0018A660  38 61 00 0C */	addi r3, r1, 0xc
 /* 8018E824 0018A664  7F E4 FB 78 */	mr r4, r31
 /* 8018E828 0018A668  38 A1 00 08 */	addi r5, r1, 0x8
-/* 8018E82C 0018A66C  4B F3 EC A5 */	bl lbl_800CD4D0
+/* 8018E82C 0018A66C  4B F3 EC A5 */	bl GXSetTevColor__Q34nw4r3g3d14ResMatTevColorF11_GXTevRegID8_GXColor
 /* 8018E830 0018A670  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8018E834 0018A674  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8018E838 0018A678  7C 08 03 A6 */	mtlr r0
 /* 8018E83C 0018A67C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018E840 0018A680  4E 80 00 20 */	blr
-.global lbl_8018E844
-lbl_8018E844:
+.global matTevColorEndEdit__Q23g3d16MaterialAccessorCFv
+matTevColorEndEdit__Q23g3d16MaterialAccessorCFv:
 /* 8018E844 0018A684  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E848 0018A688  7C 08 02 A6 */	mflr r0
 /* 8018E84C 0018A68C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8018E850 0018A690  38 80 00 00 */	li r4, 0x0
-/* 8018E854 0018A694  4B F5 FA DD */	bl lbl_800EE330
+/* 8018E854 0018A694  4B F5 FA DD */	bl GetResMatTevColor__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 /* 8018E858 0018A698  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8018E85C 0018A69C  38 61 00 08 */	addi r3, r1, 0x8
 /* 8018E860 0018A6A0  38 80 00 00 */	li r4, 0x0
-/* 8018E864 0018A6A4  4B F3 E4 ED */	bl lbl_800CCD50
+/* 8018E864 0018A6A4  4B F3 E4 ED */	bl DCStore__Q34nw4r3g3d14ResMatTevColorFb
 /* 8018E868 0018A6A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8018E86C 0018A6AC  7C 08 03 A6 */	mtlr r0
 /* 8018E870 0018A6B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E874 0018A6B4  4E 80 00 20 */	blr
-.global lbl_8018E878
-lbl_8018E878:
+.global matPixGXSetDstAlpha__Q23g3d16MaterialAccessorCFbUc
+matPixGXSetDstAlpha__Q23g3d16MaterialAccessorCFbUc:
 /* 8018E878 0018A6B8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018E87C 0018A6BC  7C 08 02 A6 */	mflr r0
 /* 8018E880 0018A6C0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -97,52 +97,52 @@ lbl_8018E878:
 /* 8018E88C 0018A6CC  7C BE 2B 78 */	mr r30, r5
 /* 8018E890 0018A6D0  54 9F 06 3E */	clrlwi r31, r4, 24
 /* 8018E894 0018A6D4  38 80 00 00 */	li r4, 0x0
-/* 8018E898 0018A6D8  4B F5 FA 49 */	bl lbl_800EE2E0
+/* 8018E898 0018A6D8  4B F5 FA 49 */	bl GetResMatPix__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 /* 8018E89C 0018A6DC  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8018E8A0 0018A6E0  38 61 00 08 */	addi r3, r1, 0x8
 /* 8018E8A4 0018A6E4  7F E4 FB 78 */	mr r4, r31
 /* 8018E8A8 0018A6E8  57 C5 06 3E */	clrlwi r5, r30, 24
-/* 8018E8AC 0018A6EC  4B F3 EB 45 */	bl lbl_800CD3F0
+/* 8018E8AC 0018A6EC  4B F3 EB 45 */	bl GXSetDstAlpha__Q34nw4r3g3d9ResMatPixFUcUc
 /* 8018E8B0 0018A6F0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8018E8B4 0018A6F4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8018E8B8 0018A6F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8018E8BC 0018A6FC  7C 08 03 A6 */	mtlr r0
 /* 8018E8C0 0018A700  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018E8C4 0018A704  4E 80 00 20 */	blr
-.global lbl_8018E8C8
-lbl_8018E8C8:
+.global matPixEndEdit__Q23g3d16MaterialAccessorCFv
+matPixEndEdit__Q23g3d16MaterialAccessorCFv:
 /* 8018E8C8 0018A708  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E8CC 0018A70C  7C 08 02 A6 */	mflr r0
 /* 8018E8D0 0018A710  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8018E8D4 0018A714  38 80 00 00 */	li r4, 0x0
-/* 8018E8D8 0018A718  4B F5 FA 09 */	bl lbl_800EE2E0
+/* 8018E8D8 0018A718  4B F5 FA 09 */	bl GetResMatPix__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 /* 8018E8DC 0018A71C  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8018E8E0 0018A720  38 61 00 08 */	addi r3, r1, 0x8
 /* 8018E8E4 0018A724  38 80 00 00 */	li r4, 0x0
-/* 8018E8E8 0018A728  4B F3 E4 49 */	bl lbl_800CCD30
+/* 8018E8E8 0018A728  4B F3 E4 49 */	bl DCStore__Q34nw4r3g3d9ResMatPixFb
 /* 8018E8EC 0018A72C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8018E8F0 0018A730  7C 08 03 A6 */	mtlr r0
 /* 8018E8F4 0018A734  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E8F8 0018A738  4E 80 00 20 */	blr
-.global lbl_8018E8FC
-lbl_8018E8FC:
+.global matMiscSetLightSetIdx__Q23g3d16MaterialAccessorCFUl
+matMiscSetLightSetIdx__Q23g3d16MaterialAccessorCFUl:
 /* 8018E8FC 0018A73C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018E900 0018A740  7C 08 02 A6 */	mflr r0
 /* 8018E904 0018A744  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8018E908 0018A748  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8018E90C 0018A74C  7C 9F 23 78 */	mr r31, r4
 /* 8018E910 0018A750  38 80 00 00 */	li r4, 0x0
-/* 8018E914 0018A754  4B F5 F9 7D */	bl lbl_800EE290
+/* 8018E914 0018A754  4B F5 F9 7D */	bl GetResMatMisc__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb
 /* 8018E918 0018A758  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8018E91C 0018A75C  38 61 00 08 */	addi r3, r1, 0x8
 /* 8018E920 0018A760  7F E4 FB 78 */	mr r4, r31
-/* 8018E924 0018A764  4B F3 E9 0D */	bl lbl_800CD230
+/* 8018E924 0018A764  4B F3 E9 0D */	bl SetLightSetIdx__Q34nw4r3g3d10ResMatMiscFi
 /* 8018E928 0018A768  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8018E92C 0018A76C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8018E930 0018A770  7C 08 03 A6 */	mtlr r0
 /* 8018E934 0018A774  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018E938 0018A778  4E 80 00 20 */	blr
-.global lbl_8018E93C
-lbl_8018E93C:
+.global matMiscEndEdit__Q23g3d16MaterialAccessorCFv
+matMiscEndEdit__Q23g3d16MaterialAccessorCFv:
 /* 8018E93C 0018A77C  38 80 00 00 */	li r4, 0x0
-/* 8018E940 0018A780  4B F5 F9 50 */	b lbl_800EE290
+/* 8018E940 0018A780  4B F5 F9 50 */	b GetResMatMisc__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb

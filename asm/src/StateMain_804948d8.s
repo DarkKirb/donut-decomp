@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804948D8
-lbl_804948D8:
+.global "__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot14StateExplosion,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot14StateExplosion,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E6AB0
-	.4byte lbl_803E6A94
+	.4byte "__dt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot14StateExplosion,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step6weapon15fighterkickshot14StateExplosion,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804948E8
-lbl_804948E8:
+.global __vt__Q53scn4step6weapon15fighterkickshot9StateMain
+__vt__Q53scn4step6weapon15fighterkickshot9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E68A8
-	.4byte lbl_803E6924
-	.4byte lbl_803E6998
-	.4byte lbl_803D895C
-	.4byte lbl_803E69FC
-	.4byte lbl_803E6A00
+	.4byte __dt__Q53scn4step6weapon15fighterkickshot9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon15fighterkickshot9StateMainFv
+	.4byte procMove__Q53scn4step6weapon15fighterkickshot9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon15fighterkickshot9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon15fighterkickshot9StateMainFv

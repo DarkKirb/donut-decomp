@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047BEB0
-lbl_8047BEB0:
+.global "@55896_8047BEB0"
+"@55896_8047BEB0":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -39,21 +39,21 @@ lbl_8047BEB0:
 	.4byte 0x6978506F
 	.4byte 0x73282900
 
-.global lbl_8047BF38
-lbl_8047BF38:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateShot,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateShot,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DFD9C
-	.4byte lbl_802DFD60
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateShot,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo9StateShot,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047BF48
-lbl_8047BF48:
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo8StateAim,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo8StateAim,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802DFD98
-	.4byte lbl_802DFD7C
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo8StateAim,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6shotzo8StateAim,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

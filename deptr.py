@@ -4,18 +4,8 @@
 # Usage: deptr.py mapfile file.s
 # Replaces pointers with symbol names
 
-import os
 import re
 import sys
-
-substitutions = (
-    ('<',  '$$0'),
-    ('>',  '$$1'),
-    ('@',  '$$2'),
-    ('\\', '\\\\'),
-    (',',  '$$4'),
-    ('-',  '$$5')
-)
 
 def format(symbol):
     illegal_symbols = ('<', '>', '@', '\\', ',', '-')
@@ -33,6 +23,8 @@ if len(sys.argv) != 3:
 
 labels = set()
 labelNames = {}
+known_labels = set()
+double_labels = set()
 
 with open(sys.argv[1], "r") as mapfile:
     for line in mapfile:
@@ -40,6 +32,10 @@ with open(sys.argv[1], "r") as mapfile:
         if match:
             addr = int(match.group(1), 16)
             name = format(match.group(2))
+            if name in known_labels:
+                double_labels.add(name)
+            else:
+                known_labels.add(name)
             labels.add(addr)
             labelNames[addr] = name
 
@@ -52,5 +48,11 @@ with open(sys.argv[2], 'rt') as f:
             label_address = int(m.group(3), 16)
             label = m.group(1)
             if label_address in labelNames:
-                line = line.replace(label, labelNames[label_address])
+                name = labelNames[label_address]
+                if name in double_labels:
+                    if name.endswith('"'):
+                        name = name[:-1] + f'_{m.group(3)}"'
+                    else:
+                        name += f'_{m.group(3)}'
+                line = line.replace(label, name)
         print(line)

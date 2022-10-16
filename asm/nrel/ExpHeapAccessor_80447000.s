@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80447000
-lbl_80447000:
+.global "@882_80447000"
+"@882_80447000":
 
 	.4byte 0x45787048
 	.4byte 0x65617041
@@ -10,8 +10,8 @@ lbl_80447000:
 	.4byte 0x736F722E
 	.4byte 0x63707000
 
-.global lbl_80447014
-lbl_80447014:
+.global "@883_80447014"
+"@883_80447014":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -348,8 +348,8 @@ lbl_80447014:
 	.4byte 0x2E687070
 	.4byte 0
 
-.global lbl_8044754C
-lbl_8044754C:
+.global "@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@2"
+"@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@2":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -363,8 +363,8 @@ lbl_8044754C:
 	.4byte 0x6576203D
 	.4byte 0x3D203000
 
-.global lbl_80447578
-lbl_80447578:
+.global "@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@1"
+"@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@1":
 
 	.4byte 0x45787048
 	.4byte 0x65617042
@@ -374,8 +374,8 @@ lbl_80447578:
 	.4byte 0x2E687070
 	.4byte 0
 
-.global lbl_80447594
-lbl_80447594:
+.global "@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@0"
+"@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -391,8 +391,8 @@ lbl_80447594:
 	.4byte 0x6E746572
 	.4byte 0x2E000000
 
-.global lbl_804475C8
-lbl_804475C8:
+.global "@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead"
+"@STRING@__ct__Q34nrel3mem20ExpHeapBlockIteratorFPC21MEMiExpHeapMBlockHead":
 
 	.4byte 0x45787048
 	.4byte 0x65617042

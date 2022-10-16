@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442A28
-lbl_80442A28:
+.global __vt__Q310homebutton3gui13PaneComponent
+__vt__Q310homebutton3gui13PaneComponent:
 
-	.4byte lbl_80442AC8
+	.4byte __RTTI__Q310homebutton3gui13PaneComponent
 	.4byte 0
-	.4byte lbl_80129F70
-	.4byte lbl_80128E10
-	.4byte lbl_80129250
-	.4byte lbl_80129F60
-	.4byte lbl_80129BD0
-	.4byte lbl_801294D0
-	.4byte lbl_80128CA0
-	.4byte lbl_80128C50
-	.4byte lbl_80128CB0
-	.4byte lbl_80128CC0
-	.4byte lbl_80128CD0
-	.4byte lbl_80129FA0
-	.4byte lbl_80128C60
-	.4byte lbl_801291B0
-	.4byte lbl_80129F90
-	.4byte lbl_80129F80
-	.4byte lbl_80128A30
-	.4byte lbl_801291A0
-	.4byte lbl_80129360
-	.4byte lbl_80128F10
-	.4byte lbl_80129E80
-	.4byte lbl_80129A90
-	.4byte lbl_801297E0
-	.4byte lbl_80129FB0
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui9ComponentFv
+	.4byte calc__Q310homebutton3gui9InterfaceFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui13PaneComponentFv
+	.4byte __dt__Q310homebutton3gui13PaneComponentFv
+	.4byte getID__Q310homebutton3gui9ComponentFv
+	.4byte isPointed__Q310homebutton3gui9ComponentFi
+	.4byte setPointed__Q310homebutton3gui9ComponentFib
+	.4byte onPoint__Q310homebutton3gui9ComponentFv
+	.4byte offPoint__Q310homebutton3gui9ComponentFv
+	.4byte onDrag__Q310homebutton3gui9ComponentFff
+	.4byte onMove__Q310homebutton3gui9ComponentFff
+	.4byte onTrig__Q310homebutton3gui9ComponentFUlR3Vec
+	.4byte setDraggingButton__Q310homebutton3gui9ComponentFUl
+	.4byte update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui9ComponentFiffUlUlUlPv
+	.4byte isTriggerTarger__Q310homebutton3gui9ComponentFv
+	.4byte setTriggerTarget__Q310homebutton3gui9ComponentFb
+	.4byte setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
+	.4byte isVisible__Q310homebutton3gui13PaneComponentFv
+	.4byte contain__Q310homebutton3gui13PaneComponentFff
+	.4byte setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane
+	.4byte getPane__Q310homebutton3gui13PaneComponentFv
 
-.global lbl_80442A90
-lbl_80442A90:
+.global "@9429"
+"@9429":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -43,53 +43,53 @@ lbl_80442A90:
 	.4byte 0x706F6E65
 	.4byte 0x6E740000
 
-.global lbl_80442AB0
-lbl_80442AB0:
+.global "@9430"
+"@9430":
 
-	.4byte lbl_80442C90
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
-	.4byte lbl_80442C68
+	.4byte __RTTI__Q310homebutton3gui9Component
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_80442AC8
-lbl_80442AC8:
+.global __RTTI__Q310homebutton3gui13PaneComponent
+__RTTI__Q310homebutton3gui13PaneComponent:
 
-	.4byte lbl_80442A90
-	.4byte lbl_80442AB0
+	.4byte "@9429"
+	.4byte "@9430"
 
-.global lbl_80442AD0
-lbl_80442AD0:
+.global __vt__Q310homebutton3gui11PaneManager
+__vt__Q310homebutton3gui11PaneManager:
 
-	.4byte lbl_80442B68
+	.4byte __RTTI__Q310homebutton3gui11PaneManager
 	.4byte 0
-	.4byte lbl_80129F70
-	.4byte lbl_80128DA0
-	.4byte lbl_801291E0
-	.4byte lbl_80129F60
-	.4byte lbl_80129260
-	.4byte lbl_80129370
-	.4byte lbl_80128E40
-	.4byte lbl_80128F20
-	.4byte lbl_80128FC0
-	.4byte lbl_8012A000
-	.4byte lbl_80128FF0
-	.4byte lbl_80128C70
-	.4byte lbl_801292E0
-	.4byte lbl_80129FC0
-	.4byte lbl_801294F0
-	.4byte lbl_80129520
-	.4byte lbl_80129800
-	.4byte lbl_80129940
-	.4byte lbl_80129BC0
-	.4byte lbl_8012A010
-	.4byte lbl_801299C0
-	.4byte lbl_80129540
-	.4byte lbl_80129820
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui7ManagerFv
+	.4byte calc__Q310homebutton3gui7ManagerFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui7ManagerFv
+	.4byte __dt__Q310homebutton3gui11PaneManagerFv
+	.4byte addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte getComponent__Q310homebutton3gui7ManagerFUl
+	.4byte update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui7ManagerFiffUlUlUlPv
+	.4byte onEvent__Q310homebutton3gui7ManagerFUlUlPv
+	.4byte setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
+	.4byte setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
+	.4byte createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout
+	.4byte getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane
+	.4byte getDrawInfo__Q310homebutton3gui11PaneManagerFv
+	.4byte setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo
+	.4byte setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb
+	.4byte "walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>"
+	.4byte "walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>"
 
-.global lbl_80442B34
-lbl_80442B34:
+.global "@9431"
+"@9431":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -100,43 +100,43 @@ lbl_80442B34:
 	.4byte 0x61676572
 	.4byte 0
 
-.global lbl_80442B54
-lbl_80442B54:
+.global "@9432"
+"@9432":
 
-	.4byte lbl_80442C90
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
-	.4byte lbl_80442BD8
+	.4byte __RTTI__Q310homebutton3gui7Manager
 	.4byte 0
 	.4byte 0
 
-.global lbl_80442B68
-lbl_80442B68:
+.global __RTTI__Q310homebutton3gui11PaneManager
+__RTTI__Q310homebutton3gui11PaneManager:
 
-	.4byte lbl_80442B34
-	.4byte lbl_80442B54
+	.4byte "@9431"
+	.4byte "@9432"
 
-.global lbl_80442B70
-lbl_80442B70:
+.global __vt__Q310homebutton3gui7Manager
+__vt__Q310homebutton3gui7Manager:
 
-	.4byte lbl_80442BD8
+	.4byte __RTTI__Q310homebutton3gui7Manager
 	.4byte 0
-	.4byte lbl_80129F70
-	.4byte lbl_80128DA0
-	.4byte lbl_801291E0
-	.4byte lbl_80129F60
-	.4byte lbl_80129260
-	.4byte lbl_80128CE0
-	.4byte lbl_80128E40
-	.4byte lbl_80128F20
-	.4byte lbl_80128FC0
-	.4byte lbl_8012A000
-	.4byte lbl_80128FF0
-	.4byte lbl_80128C70
-	.4byte lbl_801292E0
-	.4byte lbl_80129FC0
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui7ManagerFv
+	.4byte calc__Q310homebutton3gui7ManagerFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui7ManagerFv
+	.4byte __dt__Q310homebutton3gui7ManagerFv
+	.4byte addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component
+	.4byte getComponent__Q310homebutton3gui7ManagerFUl
+	.4byte update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui7ManagerFiffUlUlUlPv
+	.4byte onEvent__Q310homebutton3gui7ManagerFUlUlPv
+	.4byte setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb
+	.4byte setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler
 
-.global lbl_80442BB0
-lbl_80442BB0:
+.global "@9433"
+"@9433":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -146,49 +146,49 @@ lbl_80442BB0:
 	.4byte 0x61676572
 	.4byte 0
 
-.global lbl_80442BCC
-lbl_80442BCC:
+.global "@9434"
+"@9434":
 
-	.4byte lbl_80442C90
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
 	.4byte 0
 
-.global lbl_80442BD8
-lbl_80442BD8:
+.global __RTTI__Q310homebutton3gui7Manager
+__RTTI__Q310homebutton3gui7Manager:
 
-	.4byte lbl_80442BB0
-	.4byte lbl_80442BCC
+	.4byte "@9433"
+	.4byte "@9434"
 
-.global lbl_80442BE0
-lbl_80442BE0:
+.global __vt__Q310homebutton3gui9Component
+__vt__Q310homebutton3gui9Component:
 
-	.4byte lbl_80442C68
+	.4byte __RTTI__Q310homebutton3gui9Component
 	.4byte 0
-	.4byte lbl_80129F70
-	.4byte lbl_80128E10
-	.4byte lbl_80129250
-	.4byte lbl_80129F60
-	.4byte lbl_801292D0
-	.4byte lbl_801294E0
-	.4byte lbl_80128CA0
-	.4byte lbl_80128C50
-	.4byte lbl_80128CB0
-	.4byte lbl_80128CC0
-	.4byte lbl_80128CD0
-	.4byte lbl_80129FA0
-	.4byte lbl_80128C60
-	.4byte lbl_801291B0
-	.4byte lbl_80129F90
-	.4byte lbl_80129F80
-	.4byte lbl_80128A30
-	.4byte lbl_801291A0
-	.4byte lbl_80129360
-	.4byte lbl_80128F10
-	.4byte lbl_80128C40
+	.4byte create__Q310homebutton3gui9InterfaceFv
+	.4byte init__Q310homebutton3gui9ComponentFv
+	.4byte calc__Q310homebutton3gui9InterfaceFv
+	.4byte draw__Q310homebutton3gui9InterfaceFRA3_A4_f
+	.4byte draw__Q310homebutton3gui9InterfaceFv
+	.4byte __dt__Q310homebutton3gui9ComponentFv
+	.4byte getID__Q310homebutton3gui9ComponentFv
+	.4byte isPointed__Q310homebutton3gui9ComponentFi
+	.4byte setPointed__Q310homebutton3gui9ComponentFib
+	.4byte onPoint__Q310homebutton3gui9ComponentFv
+	.4byte offPoint__Q310homebutton3gui9ComponentFv
+	.4byte onDrag__Q310homebutton3gui9ComponentFff
+	.4byte onMove__Q310homebutton3gui9ComponentFff
+	.4byte onTrig__Q310homebutton3gui9ComponentFUlR3Vec
+	.4byte setDraggingButton__Q310homebutton3gui9ComponentFUl
+	.4byte update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv
+	.4byte update__Q310homebutton3gui9ComponentFiffUlUlUlPv
+	.4byte isTriggerTarger__Q310homebutton3gui9ComponentFv
+	.4byte setTriggerTarget__Q310homebutton3gui9ComponentFb
+	.4byte setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager
+	.4byte isVisible__Q310homebutton3gui9ComponentFv
 	.4byte 0
 
-.global lbl_80442C40
-lbl_80442C40:
+.global "@9435"
+"@9435":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -198,21 +198,21 @@ lbl_80442C40:
 	.4byte 0x706F6E65
 	.4byte 0x6E740000
 
-.global lbl_80442C5C
-lbl_80442C5C:
+.global "@9436_80442C5C"
+"@9436_80442C5C":
 
-	.4byte lbl_80442C90
+	.4byte __RTTI__Q310homebutton3gui9Interface
 	.4byte 0
 	.4byte 0
 
-.global lbl_80442C68
-lbl_80442C68:
+.global __RTTI__Q310homebutton3gui9Component
+__RTTI__Q310homebutton3gui9Component:
 
-	.4byte lbl_80442C40
-	.4byte lbl_80442C5C
+	.4byte "@9435"
+	.4byte "@9436_80442C5C"
 
-.global lbl_80442C70
-lbl_80442C70:
+.global "@9437"
+"@9437":
 
 	.4byte 0x686F6D65
 	.4byte 0x62757474
@@ -223,8 +223,8 @@ lbl_80442C70:
 	.4byte 0x63650000
 	.4byte 0
 
-.global lbl_80442C90
-lbl_80442C90:
+.global __RTTI__Q310homebutton3gui9Interface
+__RTTI__Q310homebutton3gui9Interface:
 
-	.4byte lbl_80442C70
+	.4byte "@9437"
 	.4byte 0

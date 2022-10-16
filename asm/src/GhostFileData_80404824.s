@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80404824
-lbl_80404824:
+.global init__Q27storage13GhostFileDataFv
+init__Q27storage13GhostFileDataFv:
 /* 80404824 00400664  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80404828 00400668  7C 08 02 A6 */	mflr r0
 /* 8040482C 0040066C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -16,7 +16,7 @@ lbl_80404824:
 lbl_80404848:
 /* 80404848 00400688  7C 1E F9 D6 */	mullw r0, r30, r31
 /* 8040484C 0040068C  7C 7D 02 14 */	add r3, r29, r0
-/* 80404850 00400690  4B FF FF 95 */	bl lbl_804047E4
+/* 80404850 00400690  4B FF FF 95 */	bl init__Q27storage9GhostDataFv
 /* 80404854 00400694  3B DE 00 01 */	addi r30, r30, 0x1
 /* 80404858 00400698  28 1E 00 0D */	cmplwi r30, 0xd
 /* 8040485C 0040069C  41 80 FF EC */	blt lbl_80404848
@@ -26,11 +26,11 @@ lbl_80404848:
 /* 8040486C 004006AC  7C 08 03 A6 */	mtlr r0
 /* 80404870 004006B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80404874 004006B4  4E 80 00 20 */	blr
-.global lbl_80404878
-lbl_80404878:
-/* 80404878 004006B8  4B FF FF AC */	b lbl_80404824
-.global lbl_8040487C
-lbl_8040487C:
+.global onSoftReset__Q27storage13GhostFileDataFv
+onSoftReset__Q27storage13GhostFileDataFv:
+/* 80404878 004006B8  4B FF FF AC */	b init__Q27storage13GhostFileDataFv
+.global isData__Q27storage13GhostFileDataFQ33scn4step13ChallengeKind
+isData__Q27storage13GhostFileDataFQ33scn4step13ChallengeKind:
 /* 8040487C 004006BC  2C 04 00 0D */	cmpwi r4, 0xd
 /* 80404880 004006C0  40 80 00 24 */	bge lbl_804048A4
 /* 80404884 004006C4  3C A0 00 01 */	lis r5, 0x1

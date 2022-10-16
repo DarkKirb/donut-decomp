@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_804A32A0
-lbl_804A32A0:
+.global __AXLocalProfile
+__AXLocalProfile:
 	.skip 0x40
 
-.global lbl_804A32E0
-lbl_804A32E0:
+.global __AXRmtOutBuffer
+__AXRmtOutBuffer:
 	.skip 0x8A0
 
-.global lbl_804A3B80
-lbl_804A3B80:
+.global __AXOutBuffer
+__AXOutBuffer:
 	.skip 0x480
 
-.global lbl_804A4000
-lbl_804A4000:
+.global __AXDSPTask
+__AXDSPTask:
 	.skip 0x60
 
-.global lbl_804A4060
-lbl_804A4060:
+.global __AXDramImage
+__AXDramImage:
 	.skip 0x40

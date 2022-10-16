@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048FCA8
-lbl_8048FCA8:
+.global "@54554_8048FCA8"
+"@54554_8048FCA8":
 
 	.4byte 0x73746570
 	.4byte 0x2F67616D
@@ -53,12 +53,12 @@ lbl_8048FCA8:
 	.4byte 0x50616E65
 	.4byte 0x6C4E3000
 
-.global lbl_8048FD68
-lbl_8048FD68:
+.global "@54817_8048FD68"
+"@54817_8048FD68":
 
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_803AC804
+	.4byte "safeboolFunc__Q24util45PlacementNew<Q43scn4step4info13WarpStarPanel>CFv"
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

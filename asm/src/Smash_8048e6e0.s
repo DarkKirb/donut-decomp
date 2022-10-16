@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048E6E0
-lbl_8048E6E0:
+.global "@55926_8048E6E0"
+"@55926_8048E6E0":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -21,8 +21,8 @@ lbl_8048E6E0:
 	.4byte 0x7062696E
 	.4byte 0
 
-.global lbl_8048E720
-lbl_8048E720:
+.global "@55927_8048E720"
+"@55927_8048E720":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -43,8 +43,8 @@ lbl_8048E720:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8048E768
-lbl_8048E768:
+.global "@55928_8048E768"
+"@55928_8048E768":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -63,8 +63,8 @@ lbl_8048E768:
 	.4byte 0x2E636D70
 	.4byte 0x62696E00
 
-.global lbl_8048E7A8
-lbl_8048E7A8:
+.global "@55929_8048E7A8"
+"@55929_8048E7A8":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -83,8 +83,8 @@ lbl_8048E7A8:
 	.4byte 0x7062696E
 	.4byte 0
 
-.global lbl_8048E7E8
-lbl_8048E7E8:
+.global "@55930_8048E7E8"
+"@55930_8048E7E8":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -103,8 +103,8 @@ lbl_8048E7E8:
 	.4byte 0x7062696E
 	.4byte 0
 
-.global lbl_8048E828
-lbl_8048E828:
+.global "@55931_8048E828"
+"@55931_8048E828":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -122,8 +122,8 @@ lbl_8048E828:
 	.4byte 0x2E636D70
 	.4byte 0x62696E00
 
-.global lbl_8048E864
-lbl_8048E864:
+.global "@55932_8048E864"
+"@55932_8048E864":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -143,8 +143,8 @@ lbl_8048E864:
 	.4byte 0x6D706269
 	.4byte 0x6E000000
 
-.global lbl_8048E8A8
-lbl_8048E8A8:
+.global "@55933_8048E8A8"
+"@55933_8048E8A8":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -164,8 +164,8 @@ lbl_8048E8A8:
 	.4byte 0x636D7062
 	.4byte 0x696E0000
 
-.global lbl_8048E8EC
-lbl_8048E8EC:
+.global "@55934_8048E8EC"
+"@55934_8048E8EC":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -183,8 +183,8 @@ lbl_8048E8EC:
 	.4byte 0x2E636D70
 	.4byte 0x62696E00
 
-.global lbl_8048E928
-lbl_8048E928:
+.global "@55935_8048E928"
+"@55935_8048E928":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -203,8 +203,8 @@ lbl_8048E928:
 	.4byte 0x6D706269
 	.4byte 0x6E000000
 
-.global lbl_8048E968
-lbl_8048E968:
+.global "@55936"
+"@55936":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -223,8 +223,8 @@ lbl_8048E968:
 	.4byte 0x636D7062
 	.4byte 0x696E0000
 
-.global lbl_8048E9A8
-lbl_8048E9A8:
+.global "@55937"
+"@55937":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -243,8 +243,8 @@ lbl_8048E9A8:
 	.4byte 0x636D7062
 	.4byte 0x696E0000
 
-.global lbl_8048E9E8
-lbl_8048E9E8:
+.global "@55938"
+"@55938":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -263,8 +263,8 @@ lbl_8048E9E8:
 	.4byte 0x6D706269
 	.4byte 0x6E000000
 
-.global lbl_8048EA28
-lbl_8048EA28:
+.global "@55939_8048EA28"
+"@55939_8048EA28":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -284,8 +284,8 @@ lbl_8048EA28:
 	.4byte 0x636D7062
 	.4byte 0x696E0000
 
-.global lbl_8048EA6C
-lbl_8048EA6C:
+.global "@55940_8048EA6C"
+"@55940_8048EA6C":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -306,8 +306,8 @@ lbl_8048EA6C:
 	.4byte 0x6D706269
 	.4byte 0x6E000000
 
-.global lbl_8048EAB4
-lbl_8048EAB4:
+.global "@55941_8048EAB4"
+"@55941_8048EAB4":
 
 	.4byte 0x6733642F
 	.4byte 0x73746570
@@ -327,28 +327,28 @@ lbl_8048EAB4:
 	.4byte 0x696E0000
 	.4byte 0
 
-.global lbl_8048EAF8
-lbl_8048EAF8:
+.global "STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19@unnamed@Smash_cpp@"
+"STONEBODY_MODEL_TABLE__Q53scn4step4hero5smash19@unnamed@Smash_cpp@":
 
-	.4byte lbl_8048E6E0
-	.4byte lbl_8048E720
-	.4byte lbl_8048E768
-	.4byte lbl_8048E7A8
-	.4byte lbl_8048E7E8
-	.4byte lbl_8048E828
-	.4byte lbl_8048E864
-	.4byte lbl_8048E8A8
-	.4byte lbl_8048E8EC
-	.4byte lbl_8048E928
-	.4byte lbl_8048E968
-	.4byte lbl_8048E9A8
-	.4byte lbl_8048E9E8
-	.4byte lbl_8048EA28
-	.4byte lbl_8048EA6C
-	.4byte lbl_8048EAB4
+	.4byte "@55926_8048E6E0"
+	.4byte "@55927_8048E720"
+	.4byte "@55928_8048E768"
+	.4byte "@55929_8048E7A8"
+	.4byte "@55930_8048E7E8"
+	.4byte "@55931_8048E828"
+	.4byte "@55932_8048E864"
+	.4byte "@55933_8048E8A8"
+	.4byte "@55934_8048E8EC"
+	.4byte "@55935_8048E928"
+	.4byte "@55936"
+	.4byte "@55937"
+	.4byte "@55938"
+	.4byte "@55939_8048EA28"
+	.4byte "@55940_8048EA6C"
+	.4byte "@55941_8048EAB4"
 
-.global lbl_8048EB38
-lbl_8048EB38:
+.global "@57442_8048EB38"
+"@57442_8048EB38":
 
 	.4byte 0x48725374
 	.4byte 0x6F6E6542
@@ -417,32 +417,32 @@ lbl_8048EB38:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8048EC40
-lbl_8048EC40:
+.global __vt__Q53scn4step4hero5smash5Smash
+__vt__Q53scn4step4hero5smash5Smash:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803A05BC
-	.4byte lbl_803A06CC
-	.4byte lbl_8032B7A0
-	.4byte lbl_8032B7A4
-	.4byte lbl_8032B7A8
-	.4byte lbl_803A0864
-	.4byte lbl_803A09C8
-	.4byte lbl_8032B7B4
-	.4byte lbl_8032B7B8
-	.4byte lbl_8032B7BC
-	.4byte lbl_8032B7C0
-	.4byte lbl_8032B7C4
-	.4byte lbl_8032B7C8
-	.4byte lbl_8032B7CC
-	.4byte lbl_8032B7D0
-	.4byte lbl_8032B7D4
-	.4byte lbl_8032B7D8
-	.4byte lbl_8032B7DC
-	.4byte lbl_8032B7E0
-	.4byte lbl_8032B7E4
-	.4byte lbl_8032B7E8
+	.4byte __dt__Q53scn4step4hero5smash5SmashFv
+	.4byte setup__Q53scn4step4hero5smash5SmashFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero5smash5SmashFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero5smash5SmashFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q43scn4step4hero11AbilityBaseFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

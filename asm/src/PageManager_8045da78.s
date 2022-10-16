@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045DA78
-lbl_8045DA78:
+.global "@52168_8045DA78"
+"@52168_8045DA78":
 
 	.4byte 0x57696E64
 	.4byte 0x6F774669
@@ -33,43 +33,43 @@ lbl_8045DA78:
 	.4byte 0x736F724E
 	.4byte 0
 
-.global lbl_8045DAE8
-lbl_8045DAE8:
+.global "@53970"
+"@53970":
 
 	.4byte 0x4E657874
 	.4byte 0x50616765
 	.4byte 0x32000000
 
-.global lbl_8045DAF4
-lbl_8045DAF4:
+.global "@53971"
+"@53971":
 
 	.4byte 0x50726576
 	.4byte 0x50616765
 	.4byte 0x32000000
 
-.global lbl_8045DB00
-lbl_8045DB00:
+.global "@54026_8045DB00"
+"@54026_8045DB00":
 
 	.4byte 0x6C79742F
 	.4byte 0x25732E61
 	.4byte 0x72630000
 
-.global lbl_8045DB0C
-lbl_8045DB0C:
+.global "@54027_8045DB0C"
+"@54027_8045DB0C":
 
 	.4byte 0x25732E63
 	.4byte 0x6D706269
 	.4byte 0x6E000000
 
-.global lbl_8045DB18
-lbl_8045DB18:
+.global "@54051_8045DB18"
+"@54051_8045DB18":
 
 	.4byte 0x4E657874
 	.4byte 0x50616765
 	.4byte 0x31000000
 
-.global lbl_8045DB24
-lbl_8045DB24:
+.global "@54052_8045DB24"
+"@54052_8045DB24":
 
 	.4byte 0x50726576
 	.4byte 0x50616765

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801A3E44
-lbl_801A3E44:
+.global __ct__Q23hid15RumbleRequestorFRQ23hid13RumbleManagerUl
+__ct__Q23hid15RumbleRequestorFRQ23hid13RumbleManagerUl:
 /* 801A3E44 0019FC84  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A3E48 0019FC88  7C 08 02 A6 */	mflr r0
 /* 801A3E4C 0019FC8C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -22,17 +22,17 @@ lbl_801A3E44:
 /* 801A3E84 0019FCC4  90 03 00 18 */	stw r0, 0x18(r3)
 /* 801A3E88 0019FCC8  7C 83 23 78 */	mr r3, r4
 /* 801A3E8C 0019FCCC  7F E4 FB 78 */	mr r4, r31
-/* 801A3E90 0019FCD0  4B FF FE 89 */	bl lbl_801A3D18
+/* 801A3E90 0019FCD0  4B FF FE 89 */	bl addRequestor__Q23hid13RumbleManagerFRQ23hid15RumbleRequestor
 /* 801A3E94 0019FCD4  7F E3 FB 78 */	mr r3, r31
-/* 801A3E98 0019FCD8  48 00 02 21 */	bl lbl_801A40B8
+/* 801A3E98 0019FCD8  48 00 02 21 */	bl updateIsInvalidFromSaveData__Q23hid15RumbleRequestorFv
 /* 801A3E9C 0019FCDC  7F E3 FB 78 */	mr r3, r31
 /* 801A3EA0 0019FCE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801A3EA4 0019FCE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3EA8 0019FCE8  7C 08 03 A6 */	mtlr r0
 /* 801A3EAC 0019FCEC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A3EB0 0019FCF0  4E 80 00 20 */	blr
-.global lbl_801A3EB4
-lbl_801A3EB4:
+.global __dt__Q23hid15RumbleRequestorFv
+__dt__Q23hid15RumbleRequestorFv:
 /* 801A3EB4 0019FCF4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A3EB8 0019FCF8  7C 08 02 A6 */	mflr r0
 /* 801A3EBC 0019FCFC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -44,12 +44,12 @@ lbl_801A3EB4:
 /* 801A3ED4 0019FD14  41 82 00 24 */	beq lbl_801A3EF8
 /* 801A3ED8 0019FD18  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801A3EDC 0019FD1C  7F C4 F3 78 */	mr r4, r30
-/* 801A3EE0 0019FD20  4B FF FE 95 */	bl lbl_801A3D74
+/* 801A3EE0 0019FD20  4B FF FE 95 */	bl removeRequestor__Q23hid13RumbleManagerFRQ23hid15RumbleRequestor
 /* 801A3EE4 0019FD24  7F E0 07 34 */	extsh r0, r31
 /* 801A3EE8 0019FD28  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A3EEC 0019FD2C  40 81 00 0C */	ble lbl_801A3EF8
 /* 801A3EF0 0019FD30  7F C3 F3 78 */	mr r3, r30
-/* 801A3EF4 0019FD34  48 01 B8 21 */	bl lbl_801BF714
+/* 801A3EF4 0019FD34  48 01 B8 21 */	bl __dl__FPv
 .global lbl_801A3EF8
 lbl_801A3EF8:
 /* 801A3EF8 0019FD38  7F C3 F3 78 */	mr r3, r30
@@ -59,8 +59,8 @@ lbl_801A3EF8:
 /* 801A3F08 0019FD48  7C 08 03 A6 */	mtlr r0
 /* 801A3F0C 0019FD4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A3F10 0019FD50  4E 80 00 20 */	blr
-.global lbl_801A3F14
-lbl_801A3F14:
+.global start__Q23hid15RumbleRequestorFUl
+start__Q23hid15RumbleRequestorFUl:
 /* 801A3F14 0019FD54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A3F18 0019FD58  7C 08 02 A6 */	mflr r0
 /* 801A3F1C 0019FD5C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -68,7 +68,7 @@ lbl_801A3F14:
 /* 801A3F24 0019FD64  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 801A3F28 0019FD68  7C 7E 1B 78 */	mr r30, r3
 /* 801A3F2C 0019FD6C  7C 9F 23 78 */	mr r31, r4
-/* 801A3F30 0019FD70  48 00 00 6D */	bl lbl_801A3F9C
+/* 801A3F30 0019FD70  48 00 00 6D */	bl stop__Q23hid15RumbleRequestorFv
 /* 801A3F34 0019FD74  88 1E 00 0A */	lbz r0, 0xa(r30)
 /* 801A3F38 0019FD78  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A3F3C 0019FD7C  41 82 00 48 */	beq lbl_801A3F84
@@ -78,15 +78,15 @@ lbl_801A3F14:
 /* 801A3F4C 0019FD8C  48 00 00 38 */	b lbl_801A3F84
 .global lbl_801A3F50
 lbl_801A3F50:
-/* 801A3F50 0019FD90  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 801A3F50 0019FD90  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 801A3F54 0019FD94  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 801A3F58 0019FD98  4B FF F6 21 */	bl lbl_801A3578
-/* 801A3F5C 0019FD9C  4B F7 CF 05 */	bl lbl_80120E60
+/* 801A3F58 0019FD98  4B FF F6 21 */	bl gameHID__Q23hid10HIDManagerCFUl
+/* 801A3F5C 0019FD9C  4B F7 CF 05 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 801A3F60 0019FDA0  90 7E 00 18 */	stw r3, 0x18(r30)
 /* 801A3F64 0019FDA4  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 801A3F68 0019FDA8  4B E8 05 39 */	bl lbl_800244A0
+/* 801A3F68 0019FDA8  4B E8 05 39 */	bl DefaultSwitchThreadCallback
 /* 801A3F6C 0019FDAC  7F E4 FB 78 */	mr r4, r31
-/* 801A3F70 0019FDB0  48 00 02 5D */	bl lbl_801A41CC
+/* 801A3F70 0019FDB0  48 00 02 5D */	bl commandList__Q23hid14RumbleResourceCFUl
 /* 801A3F74 0019FDB4  90 7E 00 0C */	stw r3, 0xc(r30)
 /* 801A3F78 0019FDB8  38 00 00 00 */	li r0, 0x0
 /* 801A3F7C 0019FDBC  90 1E 00 10 */	stw r0, 0x10(r30)
@@ -99,17 +99,17 @@ lbl_801A3F84:
 /* 801A3F90 0019FDD0  7C 08 03 A6 */	mtlr r0
 /* 801A3F94 0019FDD4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A3F98 0019FDD8  4E 80 00 20 */	blr
-.global lbl_801A3F9C
-lbl_801A3F9C:
+.global stop__Q23hid15RumbleRequestorFv
+stop__Q23hid15RumbleRequestorFv:
 /* 801A3F9C 0019FDDC  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801A3FA0 0019FDE0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A3FA4 0019FDE4  4D 82 00 20 */	beqlr
 /* 801A3FA8 0019FDE8  38 00 00 00 */	li r0, 0x0
 /* 801A3FAC 0019FDEC  90 03 00 0C */	stw r0, 0xc(r3)
-/* 801A3FB0 0019FDF0  48 00 01 88 */	b lbl_801A4138
+/* 801A3FB0 0019FDF0  48 00 01 88 */	b stopMotor__Q23hid15RumbleRequestorFv
 /* 801A3FB4 0019FDF4  4E 80 00 20 */	blr
-.global lbl_801A3FB8
-lbl_801A3FB8:
+.global update__Q23hid15RumbleRequestorFv
+update__Q23hid15RumbleRequestorFv:
 /* 801A3FB8 0019FDF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A3FBC 0019FDFC  7C 08 02 A6 */	mflr r0
 /* 801A3FC0 0019FE00  90 01 00 14 */	stw r0, 0x14(r1)
@@ -118,7 +118,7 @@ lbl_801A3FB8:
 /* 801A3FCC 0019FE0C  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801A3FD0 0019FE10  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A3FD4 0019FE14  41 82 00 9C */	beq lbl_801A4070
-/* 801A3FD8 0019FE18  48 00 00 AD */	bl lbl_801A4084
+/* 801A3FD8 0019FE18  48 00 00 AD */	bl isPause__Q23hid15RumbleRequestorCFv
 /* 801A3FDC 0019FE1C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801A3FE0 0019FE20  40 82 00 90 */	bne lbl_801A4070
 /* 801A3FE4 0019FE24  80 9F 00 0C */	lwz r4, 0xc(r31)
@@ -127,7 +127,7 @@ lbl_801A3FB8:
 /* 801A3FF0 0019FE30  7C 00 18 40 */	cmplw r0, r3
 /* 801A3FF4 0019FE34  41 81 00 10 */	bgt lbl_801A4004
 /* 801A3FF8 0019FE38  7F E3 FB 78 */	mr r3, r31
-/* 801A3FFC 0019FE3C  4B FF FF A1 */	bl lbl_801A3F9C
+/* 801A3FFC 0019FE3C  4B FF FF A1 */	bl stop__Q23hid15RumbleRequestorFv
 /* 801A4000 0019FE40  48 00 00 70 */	b lbl_801A4070
 .global lbl_801A4004
 lbl_801A4004:
@@ -140,12 +140,12 @@ lbl_801A4004:
 /* 801A401C 0019FE5C  28 00 00 01 */	cmplwi r0, 0x1
 /* 801A4020 0019FE60  40 82 00 10 */	bne lbl_801A4030
 /* 801A4024 0019FE64  7F E3 FB 78 */	mr r3, r31
-/* 801A4028 0019FE68  48 00 00 DD */	bl lbl_801A4104
+/* 801A4028 0019FE68  48 00 00 DD */	bl startMotor__Q23hid15RumbleRequestorFv
 /* 801A402C 0019FE6C  48 00 00 0C */	b lbl_801A4038
 .global lbl_801A4030
 lbl_801A4030:
 /* 801A4030 0019FE70  7F E3 FB 78 */	mr r3, r31
-/* 801A4034 0019FE74  48 00 01 05 */	bl lbl_801A4138
+/* 801A4034 0019FE74  48 00 01 05 */	bl stopMotor__Q23hid15RumbleRequestorFv
 .global lbl_801A4038
 lbl_801A4038:
 /* 801A4038 0019FE78  80 7F 00 14 */	lwz r3, 0x14(r31)
@@ -169,14 +169,14 @@ lbl_801A4070:
 /* 801A4078 0019FEB8  7C 08 03 A6 */	mtlr r0
 /* 801A407C 0019FEBC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4080 0019FEC0  4E 80 00 20 */	blr
-.global lbl_801A4084
-lbl_801A4084:
+.global isPause__Q23hid15RumbleRequestorCFv
+isPause__Q23hid15RumbleRequestorCFv:
 /* 801A4084 0019FEC4  A0 63 00 08 */	lhz r3, 0x8(r3)
 /* 801A4088 0019FEC8  30 03 FF FF */	addic r0, r3, -0x1
 /* 801A408C 0019FECC  7C 60 19 10 */	subfe r3, r0, r3
 /* 801A4090 0019FED0  4E 80 00 20 */	blr
-.global lbl_801A4094
-lbl_801A4094:
+.global setIsEnable__Q23hid15RumbleRequestorFb
+setIsEnable__Q23hid15RumbleRequestorFb:
 /* 801A4094 0019FED4  88 03 00 0A */	lbz r0, 0xa(r3)
 /* 801A4098 0019FED8  7C 04 00 40 */	cmplw r4, r0
 /* 801A409C 0019FEDC  4D 82 00 20 */	beqlr
@@ -184,24 +184,24 @@ lbl_801A4094:
 /* 801A40A4 0019FEE4  54 80 06 3E */	clrlwi r0, r4, 24
 /* 801A40A8 0019FEE8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A40AC 0019FEEC  4C 82 00 20 */	bnelr
-/* 801A40B0 0019FEF0  4B FF FE EC */	b lbl_801A3F9C
+/* 801A40B0 0019FEF0  4B FF FE EC */	b stop__Q23hid15RumbleRequestorFv
 /* 801A40B4 0019FEF4  4E 80 00 20 */	blr
-.global lbl_801A40B8
-lbl_801A40B8:
+.global updateIsInvalidFromSaveData__Q23hid15RumbleRequestorFv
+updateIsInvalidFromSaveData__Q23hid15RumbleRequestorFv:
 /* 801A40B8 0019FEF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A40BC 0019FEFC  7C 08 02 A6 */	mflr r0
 /* 801A40C0 0019FF00  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A40C4 0019FF04  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A40C8 0019FF08  7C 7F 1B 78 */	mr r31, r3
-/* 801A40CC 0019FF0C  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 801A40D0 0019FF10  4B FD 25 F5 */	bl lbl_801766C4
-/* 801A40D4 0019FF14  48 26 0E 01 */	bl lbl_80404ED4
+/* 801A40CC 0019FF0C  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 801A40D0 0019FF10  4B FD 25 F5 */	bl storageManager__Q23app11ApplicationFv
+/* 801A40D4 0019FF14  48 26 0E 01 */	bl backupSystemData__Q27storage14StorageManagerFv
 /* 801A40D8 0019FF18  88 03 00 01 */	lbz r0, 0x1(r3)
 /* 801A40DC 0019FF1C  98 1F 00 0B */	stb r0, 0xb(r31)
 /* 801A40E0 0019FF20  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A40E4 0019FF24  40 82 00 0C */	bne lbl_801A40F0
 /* 801A40E8 0019FF28  7F E3 FB 78 */	mr r3, r31
-/* 801A40EC 0019FF2C  4B FF FE B1 */	bl lbl_801A3F9C
+/* 801A40EC 0019FF2C  4B FF FE B1 */	bl stop__Q23hid15RumbleRequestorFv
 .global lbl_801A40F0
 lbl_801A40F0:
 /* 801A40F0 0019FF30  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -209,8 +209,8 @@ lbl_801A40F0:
 /* 801A40F8 0019FF38  7C 08 03 A6 */	mtlr r0
 /* 801A40FC 0019FF3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4100 0019FF40  4E 80 00 20 */	blr
-.global lbl_801A4104
-lbl_801A4104:
+.global startMotor__Q23hid15RumbleRequestorFv
+startMotor__Q23hid15RumbleRequestorFv:
 /* 801A4104 0019FF44  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 801A4108 0019FF48  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801A410C 0019FF4C  41 82 00 10 */	beq lbl_801A411C
@@ -221,15 +221,15 @@ lbl_801A4104:
 lbl_801A411C:
 /* 801A411C 0019FF5C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801A4120 0019FF60  38 80 00 01 */	li r4, 0x1
-/* 801A4124 0019FF64  4B EB 40 2C */	b lbl_80058150
+/* 801A4124 0019FF64  4B EB 40 2C */	b WPADControlMotor
 .global lbl_801A4128
 lbl_801A4128:
 /* 801A4128 0019FF68  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801A412C 0019FF6C  38 80 00 01 */	li r4, 0x1
-/* 801A4130 0019FF70  4B EA F4 20 */	b lbl_80053550
+/* 801A4130 0019FF70  4B EA F4 20 */	b PADControlMotor
 /* 801A4134 0019FF74  4E 80 00 20 */	blr
-.global lbl_801A4138
-lbl_801A4138:
+.global stopMotor__Q23hid15RumbleRequestorFv
+stopMotor__Q23hid15RumbleRequestorFv:
 /* 801A4138 0019FF78  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A413C 0019FF7C  7C 08 02 A6 */	mflr r0
 /* 801A4140 0019FF80  90 01 00 14 */	stw r0, 0x14(r1)
@@ -237,10 +237,10 @@ lbl_801A4138:
 /* 801A4148 0019FF88  7C 7F 1B 78 */	mr r31, r3
 /* 801A414C 0019FF8C  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801A4150 0019FF90  38 80 00 00 */	li r4, 0x0
-/* 801A4154 0019FF94  4B EB 3F FD */	bl lbl_80058150
+/* 801A4154 0019FF94  4B EB 3F FD */	bl WPADControlMotor
 /* 801A4158 0019FF98  80 7F 00 04 */	lwz r3, 0x4(r31)
 /* 801A415C 0019FF9C  38 80 00 00 */	li r4, 0x0
-/* 801A4160 0019FFA0  4B EA F3 F1 */	bl lbl_80053550
+/* 801A4160 0019FFA0  4B EA F3 F1 */	bl PADControlMotor
 /* 801A4164 0019FFA4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801A4168 0019FFA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A416C 0019FFAC  7C 08 03 A6 */	mtlr r0

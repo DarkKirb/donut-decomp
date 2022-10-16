@@ -1,138 +1,138 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420820
-lbl_80420820:
+.global "T_INDIVI_TABLE__Q43scn4step6weapon24@unnamed@IndiviUtil_cpp@"
+"T_INDIVI_TABLE__Q43scn4step6weapon24@unnamed@IndiviUtil_cpp@":
 
-	.4byte lbl_803DC230
+	.4byte Create__Q53scn4step6weapon11starshotlv19ModelDescFv
 	.4byte 0
-	.4byte lbl_803DCAA8
+	.4byte Create__Q53scn4step6weapon11starshotlv29ModelDescFv
 	.4byte 0
-	.4byte lbl_803DD184
+	.4byte Create__Q53scn4step6weapon11starshotlv39ModelDescFv
 	.4byte 0
-	.4byte lbl_803DB1B8
+	.4byte Create__Q53scn4step6weapon7airball9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803DE400
-	.4byte lbl_803DE534
-	.4byte lbl_803E2278
+	.4byte Create__Q53scn4step6weapon13whispyairball9ModelDescFv
+	.4byte CreateEx__Q53scn4step6weapon13whispyairball9ModelDescFv
+	.4byte Create__Q53scn4step6weapon10comothread9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E77F4
+	.4byte Create__Q53scn4step6weapon15sirkibblecutter9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E7290
+	.4byte Create__Q53scn4step6weapon12shotzobullet9ModelDescFv
 	.4byte 0
-	.4byte lbl_803DF078
+	.4byte Create__Q53scn4step6weapon12leafanpollen9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803E3F64
+	.4byte Create__Q53scn4step6weapon10spearspear9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E5350
+	.4byte Create__Q53scn4step6weapon12hammerhammer9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E5AF4
+	.4byte Create__Q53scn4step6weapon8wingshot9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803E2A0C
+	.4byte Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E3668
+	.4byte Create__Q53scn4step6weapon20enemywaterbulletwarp9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803E02B8
+	.4byte Create__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803E8040
+	.4byte Create__Q53scn4step6weapon13owgulffeather9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E84A4
+	.4byte Create__Q53scn4step6weapon9foleyleaf9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E87F4
+	.4byte Create__Q53scn4step6weapon10bowbyarrow9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E9494
+	.4byte Create__Q53scn4step6weapon12jucklecutter9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E98C8
+	.4byte Create__Q53scn4step6weapon17tsukikageshuriken9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E0378
+	.4byte CreateVolt__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803E0438
+	.4byte CreateCold__Q53scn4step6weapon13gigatzobullet9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803EA768
+	.4byte Create__Q53scn4step6weapon10whispyroot9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EACAC
+	.4byte Create__Q53scn4step6weapon18combinationairball9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803EBE30
+	.4byte Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803EC79C
+	.4byte Create__Q53scn4step6weapon12dededehammer9ModelDescFv
 	.4byte 0
-	.4byte lbl_803ECF88
+	.4byte Create__Q53scn4step6weapon8deespear9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE568
+	.4byte CreateStar__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE628
+	.4byte CreateHeavy1x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE6E8
+	.4byte CreateHeavy2x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE7A8
+	.4byte CreateHeavy3x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE868
+	.4byte CreateHeavy4x4__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE928
+	.4byte CreateHeavyA1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EE9E8
+	.4byte CreateHeavyB1x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EEAA8
+	.4byte CreateHeavy1x2x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EEB68
+	.4byte CreateHeavy1x3__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EEC28
+	.4byte CreateHeavy3x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EECE8
+	.4byte CreateHeavy2x4x4x2__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EEDA8
+	.4byte CreateHeavy3x2x1__Q53scn4step6weapon13vacuumedblock9ModelDescFv
 	.4byte 0
-	.4byte lbl_803E88B4
+	.4byte CreateHalcan__Q53scn4step6weapon10bowbyarrow9ModelDescFv
 	.4byte 0
-	.4byte lbl_803EF5EC
+	.4byte Create__Q53scn4step6weapon11hotheadfire9ModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0
-	.4byte lbl_803D6350
+	.4byte Create__Q43scn4step6weapon22EffectLocatorModelDescFv
 	.4byte 0

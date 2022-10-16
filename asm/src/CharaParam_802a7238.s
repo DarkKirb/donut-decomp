@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802A7238
-lbl_802A7238:
+.global Create__Q53scn4step5enemy4como10CharaParamFv
+Create__Q53scn4step5enemy4como10CharaParamFv:
 /* 802A7238 002A3078  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 802A723C 002A307C  7C 08 02 A6 */	mflr r0
 /* 802A7240 002A3080  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 802A7244 002A3084  93 E1 00 BC */	stw r31, 0xbc(r1)
 /* 802A7248 002A3088  7C 7F 1B 78 */	mr r31, r3
 /* 802A724C 002A308C  38 61 00 10 */	addi r3, r1, 0x10
-/* 802A7250 002A3090  4B FE A4 FD */	bl lbl_8029174C
+/* 802A7250 002A3090  4B FE A4 FD */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802A7254 002A3094  38 A1 00 5C */	addi r5, r1, 0x5c
 /* 802A7258 002A3098  38 81 00 0C */	addi r4, r1, 0xc
 /* 802A725C 002A309C  38 00 00 0A */	li r0, 0xa
@@ -21,7 +21,7 @@ lbl_802A7264:
 /* 802A726C 002A30AC  90 65 00 04 */	stw r3, 0x4(r5)
 /* 802A7270 002A30B0  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 802A7274 002A30B4  42 00 FF F0 */	bdnz lbl_802A7264
-/* 802A7278 002A30B8  80 62 B5 F0 */	lwz r3, lbl_80561570@sda21(r2)
+/* 802A7278 002A30B8  80 62 B5 F0 */	lwz r3, "@48730_80561570"@sda21(r2)
 /* 802A727C 002A30BC  80 02 B5 F4 */	lwz r0, lbl_80561574@sda21(r2)
 /* 802A7280 002A30C0  90 61 00 08 */	stw r3, 0x8(r1)
 /* 802A7284 002A30C4  90 01 00 0C */	stw r0, 0xc(r1)
@@ -29,9 +29,9 @@ lbl_802A7264:
 /* 802A728C 002A30CC  D0 01 00 64 */	stfs f0, 0x64(r1)
 /* 802A7290 002A30D0  C0 01 00 0C */	lfs f0, 0xc(r1)
 /* 802A7294 002A30D4  D0 01 00 68 */	stfs f0, 0x68(r1)
-/* 802A7298 002A30D8  C0 02 B5 F8 */	lfs f0, lbl_80561578@sda21(r2)
+/* 802A7298 002A30D8  C0 02 B5 F8 */	lfs f0, "@48789_80561578"@sda21(r2)
 /* 802A729C 002A30DC  D0 01 00 6C */	stfs f0, 0x6c(r1)
-/* 802A72A0 002A30E0  C0 02 B5 FC */	lfs f0, lbl_8056157C@sda21(r2)
+/* 802A72A0 002A30E0  C0 02 B5 FC */	lfs f0, "@48790_8056157C"@sda21(r2)
 /* 802A72A4 002A30E4  D0 01 00 8C */	stfs f0, 0x8c(r1)
 /* 802A72A8 002A30E8  38 00 00 00 */	li r0, 0x0
 /* 802A72AC 002A30EC  98 01 00 A7 */	stb r0, 0xa7(r1)

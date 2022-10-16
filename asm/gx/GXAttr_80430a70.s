@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80430A70
-lbl_80430A70:
+.global "@3194_80430A70"
+"@3194_80430A70":
 
 	.4byte lbl_800337C0
 	.4byte lbl_800337D4
@@ -31,8 +31,8 @@ lbl_80430A70:
 	.4byte lbl_800339B4
 	.4byte lbl_800338BC
 
-.global lbl_80430AD8
-lbl_80430AD8:
+.global "@3337"
+"@3337":
 
 	.4byte lbl_80033C10
 	.4byte lbl_80033C20
@@ -61,8 +61,8 @@ lbl_80430AD8:
 	.4byte lbl_80033D98
 	.4byte lbl_80033CD4
 
-.global lbl_80430B40
-lbl_80430B40:
+.global "@3383_80430B40"
+"@3383_80430B40":
 
 	.4byte lbl_80033E20
 	.4byte lbl_80033E38
@@ -82,8 +82,8 @@ lbl_80430B40:
 	.4byte lbl_80033F60
 	.4byte lbl_80033E38
 
-.global lbl_80430B84
-lbl_80430B84:
+.global "@3413"
+"@3413":
 
 	.4byte lbl_80033FD8
 	.4byte lbl_80033FF0
@@ -103,8 +103,8 @@ lbl_80430B84:
 	.4byte lbl_80034118
 	.4byte lbl_80033FF0
 
-.global lbl_80430BC8
-lbl_80430BC8:
+.global "@3456"
+"@3456":
 
 	.4byte lbl_80034210
 	.4byte lbl_80034238
@@ -124,8 +124,8 @@ lbl_80430BC8:
 	.4byte lbl_80034424
 	.4byte lbl_80034238
 
-.global lbl_80430C0C
-lbl_80430C0C:
+.global "@3589"
+"@3589":
 
 	.4byte lbl_800344BC
 	.4byte lbl_800344C8

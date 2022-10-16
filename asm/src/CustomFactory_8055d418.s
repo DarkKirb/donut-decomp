@@ -1,106 +1,106 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D418
-lbl_8055D418:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss7bonkers6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss7bonkers6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D420
-lbl_8055D420:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss7bonkers6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss7bonkers6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D428
-lbl_8055D428:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss15challengemaster6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss15challengemaster6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D430
-lbl_8055D430:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss15challengemaster6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss15challengemaster6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D438
-lbl_8055D438:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss12creditdedede6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss12creditdedede6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D440
-lbl_8055D440:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss12creditdedede6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss12creditdedede6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D448
-lbl_8055D448:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9creditdee6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9creditdee6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D450
-lbl_8055D450:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9creditdee6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9creditdee6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D458
-lbl_8055D458:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10creditmeta6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10creditmeta6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D460
-lbl_8055D460:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10creditmeta6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10creditmeta6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D468
-lbl_8055D468:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10creditroah6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10creditroah6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D470
-lbl_8055D470:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10creditroah6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10creditroah6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D478
-lbl_8055D478:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss6dubior6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss6dubior6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D480
-lbl_8055D480:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss6dubior6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss6dubior6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D488
-lbl_8055D488:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10gigantedge6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss10gigantedge6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D490
-lbl_8055D490:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10gigantedge6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss10gigantedge6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D498
-lbl_8055D498:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss8kingsdoo6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss8kingsdoo6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4A0
-lbl_8055D4A0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss8kingsdoo6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss8kingsdoo6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4A8
-lbl_8055D4A8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9moundeath6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9moundeath6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4B0
-lbl_8055D4B0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9moundeath6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9moundeath6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4B8
-lbl_8055D4B8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss13watergalboros6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss13watergalboros6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4C0
-lbl_8055D4C0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss13watergalboros6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss13watergalboros6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4C8
-lbl_8055D4C8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss6whispy6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss6whispy6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4D0
-lbl_8055D4D0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss6whispy6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss6whispy6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4D8
-lbl_8055D4D8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9zankibble6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4boss9zankibble6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055D4E0
-lbl_8055D4E0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9zankibble6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4boss9zankibble6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8

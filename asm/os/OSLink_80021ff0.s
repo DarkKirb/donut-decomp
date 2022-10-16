@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80021FF0
-lbl_80021FF0:
+.global __OSModuleInit
+__OSModuleInit:
 /* 80021FF0 0001DE30  3C 60 80 00 */	lis r3, 0x800030CC@ha
 /* 80021FF4 0001DE34  38 00 00 00 */	li r0, 0x0
 /* 80021FF8 0001DE38  90 03 30 CC */	stw r0, 0x800030CC@l(r3)

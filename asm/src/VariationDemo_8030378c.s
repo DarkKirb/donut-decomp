@@ -1,11 +1,11 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8030378C
-lbl_8030378C:
+.global "ORDER_SET_WIDEHEIGHT__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+"ORDER_SET_WIDEHEIGHT__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf":
 /* 8030378C 002FF5CC  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 80303790 002FF5D0  3C A0 80 42 */	lis r5, lbl_804198F8@ha
-/* 80303794 002FF5D4  38 C5 98 F8 */	addi r6, r5, lbl_804198F8@l
+/* 80303790 002FF5D0  3C A0 80 42 */	lis r5, "@54361"@ha
+/* 80303794 002FF5D4  38 C5 98 F8 */	addi r6, r5, "@54361"@l
 /* 80303798 002FF5D8  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 8030379C 002FF5DC  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 803037A0 002FF5E0  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -21,11 +21,11 @@ lbl_8030378C:
 /* 803037C8 002FF608  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 803037CC 002FF60C  38 21 00 20 */	addi r1, r1, 0x20
 /* 803037D0 002FF610  4E 80 00 20 */	blr
-.global lbl_803037D4
-lbl_803037D4:
+.global "ORDER_SET_ZOOM__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+"ORDER_SET_ZOOM__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf":
 /* 803037D4 002FF614  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 803037D8 002FF618  3C A0 80 42 */	lis r5, lbl_80419904@ha
-/* 803037DC 002FF61C  38 C5 99 04 */	addi r6, r5, lbl_80419904@l
+/* 803037D8 002FF618  3C A0 80 42 */	lis r5, "@54373"@ha
+/* 803037DC 002FF61C  38 C5 99 04 */	addi r6, r5, "@54373"@l
 /* 803037E0 002FF620  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 803037E4 002FF624  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 803037E8 002FF628  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -41,11 +41,11 @@ lbl_803037D4:
 /* 80303810 002FF650  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 80303814 002FF654  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303818 002FF658  4E 80 00 20 */	blr
-.global lbl_8030381C
-lbl_8030381C:
+.global "ORDER_SET_ROTX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+"ORDER_SET_ROTX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf":
 /* 8030381C 002FF65C  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 80303820 002FF660  3C A0 80 42 */	lis r5, lbl_80419910@ha
-/* 80303824 002FF664  38 C5 99 10 */	addi r6, r5, lbl_80419910@l
+/* 80303820 002FF660  3C A0 80 42 */	lis r5, "@54385"@ha
+/* 80303824 002FF664  38 C5 99 10 */	addi r6, r5, "@54385"@l
 /* 80303828 002FF668  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 8030382C 002FF66C  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 80303830 002FF670  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -61,11 +61,11 @@ lbl_8030381C:
 /* 80303858 002FF698  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 8030385C 002FF69C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303860 002FF6A0  4E 80 00 20 */	blr
-.global lbl_80303864
-lbl_80303864:
+.global "ORDER_SET_ROTY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+"ORDER_SET_ROTY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf":
 /* 80303864 002FF6A4  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 80303868 002FF6A8  3C A0 80 42 */	lis r5, lbl_8041991C@ha
-/* 8030386C 002FF6AC  38 C5 99 1C */	addi r6, r5, lbl_8041991C@l
+/* 80303868 002FF6A8  3C A0 80 42 */	lis r5, "@54397"@ha
+/* 8030386C 002FF6AC  38 C5 99 1C */	addi r6, r5, "@54397"@l
 /* 80303870 002FF6B0  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 80303874 002FF6B4  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 80303878 002FF6B8  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -81,11 +81,11 @@ lbl_80303864:
 /* 803038A0 002FF6E0  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 803038A4 002FF6E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 803038A8 002FF6E8  4E 80 00 20 */	blr
-.global lbl_803038AC
-lbl_803038AC:
+.global "ORDER_SET_ACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+"ORDER_SET_ACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf":
 /* 803038AC 002FF6EC  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 803038B0 002FF6F0  3C A0 80 42 */	lis r5, lbl_80419928@ha
-/* 803038B4 002FF6F4  38 C5 99 28 */	addi r6, r5, lbl_80419928@l
+/* 803038B0 002FF6F0  3C A0 80 42 */	lis r5, "@54469_80419928"@ha
+/* 803038B4 002FF6F4  38 C5 99 28 */	addi r6, r5, "@54469_80419928"@l
 /* 803038B8 002FF6F8  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 803038BC 002FF6FC  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 803038C0 002FF700  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -101,11 +101,11 @@ lbl_803038AC:
 /* 803038E8 002FF728  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 803038EC 002FF72C  38 21 00 20 */	addi r1, r1, 0x20
 /* 803038F0 002FF730  4E 80 00 20 */	blr
-.global lbl_803038F4
-lbl_803038F4:
+.global "ORDER_SET_ZOOMCENTER__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsff"
+"ORDER_SET_ZOOMCENTER__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsff":
 /* 803038F4 002FF734  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 803038F8 002FF738  3C A0 80 42 */	lis r5, lbl_80419934@ha
-/* 803038FC 002FF73C  38 C5 99 34 */	addi r6, r5, lbl_80419934@l
+/* 803038F8 002FF738  3C A0 80 42 */	lis r5, "@54508_80419934"@ha
+/* 803038FC 002FF73C  38 C5 99 34 */	addi r6, r5, "@54508_80419934"@l
 /* 80303900 002FF740  80 A6 00 00 */	lwz r5, 0x0(r6)
 /* 80303904 002FF744  80 06 00 04 */	lwz r0, 0x4(r6)
 /* 80303908 002FF748  90 A1 00 08 */	stw r5, 0x8(r1)
@@ -123,11 +123,11 @@ lbl_803038F4:
 /* 80303938 002FF778  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8030393C 002FF77C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303940 002FF780  4E 80 00 20 */	blr
-.global lbl_80303944
-lbl_80303944:
+.global "ORDER_CLEARACCELX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
+"ORDER_CLEARACCELX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs":
 /* 80303944 002FF784  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 80303948 002FF788  3C A0 80 42 */	lis r5, lbl_80419940@ha
-/* 8030394C 002FF78C  38 A5 99 40 */	addi r5, r5, lbl_80419940@l
+/* 80303948 002FF788  3C A0 80 42 */	lis r5, "@54552_80419940"@ha
+/* 8030394C 002FF78C  38 A5 99 40 */	addi r5, r5, "@54552_80419940"@l
 /* 80303950 002FF790  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 80303954 002FF794  80 C5 00 04 */	lwz r6, 0x4(r5)
 /* 80303958 002FF798  90 01 00 08 */	stw r0, 0x8(r1)
@@ -141,11 +141,11 @@ lbl_80303944:
 /* 80303978 002FF7B8  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 8030397C 002FF7BC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303980 002FF7C0  4E 80 00 20 */	blr
-.global lbl_80303984
-lbl_80303984:
+.global "ORDER_CLEARACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
+"ORDER_CLEARACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs":
 /* 80303984 002FF7C4  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 80303988 002FF7C8  3C A0 80 42 */	lis r5, lbl_8041994C@ha
-/* 8030398C 002FF7CC  38 A5 99 4C */	addi r5, r5, lbl_8041994C@l
+/* 80303988 002FF7C8  3C A0 80 42 */	lis r5, "@54563_8041994C"@ha
+/* 8030398C 002FF7CC  38 A5 99 4C */	addi r5, r5, "@54563_8041994C"@l
 /* 80303990 002FF7D0  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 80303994 002FF7D4  80 C5 00 04 */	lwz r6, 0x4(r5)
 /* 80303998 002FF7D8  90 01 00 08 */	stw r0, 0x8(r1)
@@ -159,11 +159,11 @@ lbl_80303984:
 /* 803039B8 002FF7F8  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 803039BC 002FF7FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 803039C0 002FF800  4E 80 00 20 */	blr
-.global lbl_803039C4
-lbl_803039C4:
+.global "ORDER_LOCK__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
+"ORDER_LOCK__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs":
 /* 803039C4 002FF804  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 803039C8 002FF808  3C A0 80 42 */	lis r5, lbl_80419958@ha
-/* 803039CC 002FF80C  38 A5 99 58 */	addi r5, r5, lbl_80419958@l
+/* 803039C8 002FF808  3C A0 80 42 */	lis r5, "@54574_80419958"@ha
+/* 803039CC 002FF80C  38 A5 99 58 */	addi r5, r5, "@54574_80419958"@l
 /* 803039D0 002FF810  80 05 00 00 */	lwz r0, 0x0(r5)
 /* 803039D4 002FF814  80 C5 00 04 */	lwz r6, 0x4(r5)
 /* 803039D8 002FF818  90 01 00 08 */	stw r0, 0x8(r1)
@@ -177,8 +177,8 @@ lbl_803039C4:
 /* 803039F8 002FF838  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 803039FC 002FF83C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303A00 002FF840  4E 80 00 20 */	blr
-.global lbl_80303A04
-lbl_80303A04:
+.global __ct__Q53scn4step7gimmick10cameralock13VariationDemoFQ33scn4step11ContextModei
+__ct__Q53scn4step7gimmick10cameralock13VariationDemoFQ33scn4step11ContextModei:
 /* 80303A04 002FF844  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80303A08 002FF848  7C 08 02 A6 */	mflr r0
 /* 80303A0C 002FF84C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -187,8 +187,8 @@ lbl_80303A04:
 /* 80303A18 002FF858  7C 7D 1B 78 */	mr r29, r3
 /* 80303A1C 002FF85C  7C 9E 23 78 */	mr r30, r4
 /* 80303A20 002FF860  7C BF 2B 78 */	mr r31, r5
-/* 80303A24 002FF864  3C 80 80 48 */	lis r4, lbl_804803A0@ha
-/* 80303A28 002FF868  38 04 03 A0 */	addi r0, r4, lbl_804803A0@l
+/* 80303A24 002FF864  3C 80 80 48 */	lis r4, __vt__Q53scn4step7gimmick10cameralock13VariationDemo@ha
+/* 80303A28 002FF868  38 04 03 A0 */	addi r0, r4, __vt__Q53scn4step7gimmick10cameralock13VariationDemo@l
 /* 80303A2C 002FF86C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80303A30 002FF870  38 00 00 00 */	li r0, 0x0
 /* 80303A34 002FF874  98 03 00 04 */	stb r0, 0x4(r3)
@@ -206,13 +206,13 @@ lbl_80303A04:
 /* 80303A64 002FF8A4  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 80303A68 002FF8A8  90 03 00 20 */	stw r0, 0x20(r3)
 /* 80303A6C 002FF8AC  38 63 00 50 */	addi r3, r3, 0x50
-/* 80303A70 002FF8B0  4B E9 BA 0D */	bl lbl_8019F47C
+/* 80303A70 002FF8B0  4B E9 BA 0D */	bl __ct__Q33hel4math7Vector2Fv
 /* 80303A74 002FF8B4  38 7D 00 58 */	addi r3, r29, 0x58
-/* 80303A78 002FF8B8  4B E9 BA 05 */	bl lbl_8019F47C
+/* 80303A78 002FF8B8  4B E9 BA 05 */	bl __ct__Q33hel4math7Vector2Fv
 /* 80303A7C 002FF8BC  38 7D 00 60 */	addi r3, r29, 0x60
-/* 80303A80 002FF8C0  4B E9 B9 FD */	bl lbl_8019F47C
+/* 80303A80 002FF8C0  4B E9 B9 FD */	bl __ct__Q33hel4math7Vector2Fv
 /* 80303A84 002FF8C4  38 7D 00 24 */	addi r3, r29, 0x24
-/* 80303A88 002FF8C8  48 00 00 3D */	bl lbl_80303AC4
+/* 80303A88 002FF8C8  48 00 00 3D */	bl init__Q63scn4step7gimmick10cameralock13VariationDemo9OrderDataFv
 /* 80303A8C 002FF8CC  2C 1F 00 0B */	cmpwi r31, 0xb
 /* 80303A90 002FF8D0  40 82 00 18 */	bne lbl_80303AA8
 /* 80303A94 002FF8D4  80 1E 00 00 */	lwz r0, 0x0(r30)
@@ -229,17 +229,17 @@ lbl_80303AA8:
 /* 80303AB8 002FF8F8  7C 08 03 A6 */	mtlr r0
 /* 80303ABC 002FF8FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80303AC0 002FF900  4E 80 00 20 */	blr
-.global lbl_80303AC4
-lbl_80303AC4:
+.global init__Q63scn4step7gimmick10cameralock13VariationDemo9OrderDataFv
+init__Q63scn4step7gimmick10cameralock13VariationDemo9OrderDataFv:
 /* 80303AC4 002FF904  38 00 00 00 */	li r0, 0x0
 /* 80303AC8 002FF908  B0 03 00 02 */	sth r0, 0x2(r3)
 /* 80303ACC 002FF90C  B0 03 00 00 */	sth r0, 0x0(r3)
-/* 80303AD0 002FF910  C0 22 C7 80 */	lfs f1, lbl_80562700@sda21(r2)
+/* 80303AD0 002FF910  C0 22 C7 80 */	lfs f1, "@55183"@sda21(r2)
 /* 80303AD4 002FF914  D0 23 00 10 */	stfs f1, 0x10(r3)
 /* 80303AD8 002FF918  D0 23 00 0C */	stfs f1, 0xc(r3)
 /* 80303ADC 002FF91C  D0 23 00 08 */	stfs f1, 0x8(r3)
 /* 80303AE0 002FF920  D0 23 00 04 */	stfs f1, 0x4(r3)
-/* 80303AE4 002FF924  C0 02 C7 84 */	lfs f0, lbl_80562704@sda21(r2)
+/* 80303AE4 002FF924  C0 02 C7 84 */	lfs f0, "@55184_80562704"@sda21(r2)
 /* 80303AE8 002FF928  D0 03 00 20 */	stfs f0, 0x20(r3)
 /* 80303AEC 002FF92C  D0 03 00 1C */	stfs f0, 0x1c(r3)
 /* 80303AF0 002FF930  D0 03 00 18 */	stfs f0, 0x18(r3)
@@ -254,8 +254,8 @@ lbl_80303AC4:
 /* 80303B14 002FF954  D0 23 00 40 */	stfs f1, 0x40(r3)
 /* 80303B18 002FF958  4E 80 00 20 */	blr
 
-.global lbl_80303B1C
-lbl_80303B1C:
+.global updateReady__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+updateReady__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock:
 /* 80303B1C 002FF95C  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80303B20 002FF960  7C 08 02 A6 */	mflr r0
 /* 80303B24 002FF964  90 01 00 54 */	stw r0, 0x54(r1)
@@ -276,14 +276,14 @@ lbl_80303B1C:
 /* 80303B60 002FF9A0  48 00 02 30 */	b lbl_80303D90
 .global lbl_80303B64
 lbl_80303B64:
-/* 80303B64 002FF9A4  3C 60 80 48 */	lis r3, lbl_80480318@ha
-/* 80303B68 002FF9A8  3B 83 03 18 */	addi r28, r3, lbl_80480318@l
+/* 80303B64 002FF9A4  3C 60 80 48 */	lis r3, "datSizeTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@ha
+/* 80303B68 002FF9A8  3B 83 03 18 */	addi r28, r3, "datSizeTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@l
 /* 80303B6C 002FF9AC  3B 60 00 00 */	li r27, 0x0
 /* 80303B70 002FF9B0  3B 40 00 01 */	li r26, 0x1
-/* 80303B74 002FF9B4  C3 E2 C7 80 */	lfs f31, lbl_80562700@sda21(r2)
-/* 80303B78 002FF9B8  3F 20 80 48 */	lis r25, lbl_80480348@ha
-/* 80303B7C 002FF9BC  3C 60 80 48 */	lis r3, lbl_804802E8@ha
-/* 80303B80 002FF9C0  3B E3 02 E8 */	addi r31, r3, lbl_804802E8@l
+/* 80303B74 002FF9B4  C3 E2 C7 80 */	lfs f31, "@55183"@sda21(r2)
+/* 80303B78 002FF9B8  3F 20 80 48 */	lis r25, "@55233_80480348"@ha
+/* 80303B7C 002FF9BC  3C 60 80 48 */	lis r3, "datTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@ha
+/* 80303B80 002FF9C0  3B E3 02 E8 */	addi r31, r3, "datTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@l
 /* 80303B84 002FF9C4  48 00 01 E8 */	b lbl_80303D6C
 .global lbl_80303B88
 lbl_80303B88:
@@ -301,7 +301,7 @@ lbl_80303B88:
 /* 80303BB4 002FF9F4  A0 01 00 08 */	lhz r0, 0x8(r1)
 /* 80303BB8 002FF9F8  28 00 00 15 */	cmplwi r0, 0x15
 /* 80303BBC 002FF9FC  41 81 01 A4 */	bgt lbl_80303D60
-/* 80303BC0 002FFA00  38 79 03 48 */	addi r3, r25, lbl_80480348@l
+/* 80303BC0 002FFA00  38 79 03 48 */	addi r3, r25, "@55233_80480348"@l
 /* 80303BC4 002FFA04  54 00 10 3A */	slwi r0, r0, 2
 /* 80303BC8 002FFA08  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80303BCC 002FFA0C  7C 69 03 A6 */	mtctr r3
@@ -380,7 +380,7 @@ lbl_80303C6C:
 /* 80303C6C 002FFAAC  38 7D 00 50 */	addi r3, r29, 0x50
 /* 80303C70 002FFAB0  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 80303C74 002FFAB4  C0 41 00 10 */	lfs f2, 0x10(r1)
-/* 80303C78 002FFAB8  4B E9 B7 31 */	bl lbl_8019F3A8
+/* 80303C78 002FFAB8  4B E9 B7 31 */	bl set__Q33hel4math7Vector2Fff
 /* 80303C7C 002FFABC  9B 5D 00 06 */	stb r26, 0x6(r29)
 /* 80303C80 002FFAC0  48 00 00 E0 */	b lbl_80303D60
 
@@ -389,7 +389,7 @@ lbl_80303C84:
 /* 80303C84 002FFAC4  38 7D 00 58 */	addi r3, r29, 0x58
 /* 80303C88 002FFAC8  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 80303C8C 002FFACC  C0 41 00 10 */	lfs f2, 0x10(r1)
-/* 80303C90 002FFAD0  4B E9 B7 19 */	bl lbl_8019F3A8
+/* 80303C90 002FFAD0  4B E9 B7 19 */	bl set__Q33hel4math7Vector2Fff
 /* 80303C94 002FFAD4  9B 5D 00 06 */	stb r26, 0x6(r29)
 /* 80303C98 002FFAD8  48 00 00 C8 */	b lbl_80303D60
 
@@ -398,7 +398,7 @@ lbl_80303C9C:
 /* 80303C9C 002FFADC  38 7D 00 60 */	addi r3, r29, 0x60
 /* 80303CA0 002FFAE0  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 80303CA4 002FFAE4  C0 41 00 10 */	lfs f2, 0x10(r1)
-/* 80303CA8 002FFAE8  4B E9 B7 01 */	bl lbl_8019F3A8
+/* 80303CA8 002FFAE8  4B E9 B7 01 */	bl set__Q33hel4math7Vector2Fff
 /* 80303CAC 002FFAEC  9B 5D 00 07 */	stb r26, 0x7(r29)
 /* 80303CB0 002FFAF0  48 00 00 B0 */	b lbl_80303D60
 
@@ -412,24 +412,24 @@ lbl_80303CB4:
 .global lbl_80303CC4
 lbl_80303CC4:
 /* 80303CC4 002FFB04  7F C3 F3 78 */	mr r3, r30
-/* 80303CC8 002FFB08  4B D4 A8 B9 */	bl lbl_8004E580
-/* 80303CCC 002FFB0C  4B F1 CD ED */	bl lbl_80220AB8
+/* 80303CC8 002FFB08  4B D4 A8 B9 */	bl ARCGetLength
+/* 80303CCC 002FFB0C  4B F1 CD ED */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303CD0 002FFB10  80 9D 00 14 */	lwz r4, 0x14(r29)
-/* 80303CD4 002FFB14  4B F6 02 3D */	bl lbl_80263F10
+/* 80303CD4 002FFB14  4B F6 02 3D */	bl unsetZoom__Q43scn4step6camera16CameraControllerFUl
 /* 80303CD8 002FFB18  48 00 00 88 */	b lbl_80303D60
 
 .global lbl_80303CDC
 lbl_80303CDC:
 /* 80303CDC 002FFB1C  7F C3 F3 78 */	mr r3, r30
-/* 80303CE0 002FFB20  4B D4 A8 A1 */	bl lbl_8004E580
-/* 80303CE4 002FFB24  4B F1 CD D5 */	bl lbl_80220AB8
+/* 80303CE0 002FFB20  4B D4 A8 A1 */	bl ARCGetLength
+/* 80303CE4 002FFB24  4B F1 CD D5 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303CE8 002FFB28  80 9D 00 18 */	lwz r4, 0x18(r29)
-/* 80303CEC 002FFB2C  4B F6 03 B5 */	bl lbl_802640A0
+/* 80303CEC 002FFB2C  4B F6 03 B5 */	bl unsetRotDegX__Q43scn4step6camera16CameraControllerFUl
 /* 80303CF0 002FFB30  7F C3 F3 78 */	mr r3, r30
-/* 80303CF4 002FFB34  4B D4 A8 8D */	bl lbl_8004E580
-/* 80303CF8 002FFB38  4B F1 CD C1 */	bl lbl_80220AB8
+/* 80303CF4 002FFB34  4B D4 A8 8D */	bl ARCGetLength
+/* 80303CF8 002FFB38  4B F1 CD C1 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303CFC 002FFB3C  80 9D 00 1C */	lwz r4, 0x1c(r29)
-/* 80303D00 002FFB40  4B F6 03 A1 */	bl lbl_802640A0
+/* 80303D00 002FFB40  4B F6 03 A1 */	bl unsetRotDegX__Q43scn4step6camera16CameraControllerFUl
 /* 80303D04 002FFB44  48 00 00 5C */	b lbl_80303D60
 
 .global lbl_80303D08
@@ -451,20 +451,20 @@ lbl_80303D18:
 lbl_80303D20:
 /* 80303D20 002FFB60  9B 7D 00 05 */	stb r27, 0x5(r29)
 /* 80303D24 002FFB64  38 7D 00 24 */	addi r3, r29, 0x24
-/* 80303D28 002FFB68  4B FF FD 9D */	bl lbl_80303AC4
+/* 80303D28 002FFB68  4B FF FD 9D */	bl init__Q63scn4step7gimmick10cameralock13VariationDemo9OrderDataFv
 /* 80303D2C 002FFB6C  7F C3 F3 78 */	mr r3, r30
-/* 80303D30 002FFB70  4B D4 A8 51 */	bl lbl_8004E580
-/* 80303D34 002FFB74  4B F1 CD 85 */	bl lbl_80220AB8
-/* 80303D38 002FFB78  4B F6 02 69 */	bl lbl_80263FA0
+/* 80303D30 002FFB70  4B D4 A8 51 */	bl ARCGetLength
+/* 80303D34 002FFB74  4B F1 CD 85 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 80303D38 002FFB78  4B F6 02 69 */	bl unsetLock__Q43scn4step6camera16CameraControllerFv
 /* 80303D3C 002FFB7C  7F C3 F3 78 */	mr r3, r30
-/* 80303D40 002FFB80  4B D4 A8 41 */	bl lbl_8004E580
-/* 80303D44 002FFB84  4B F1 CD 75 */	bl lbl_80220AB8
+/* 80303D40 002FFB80  4B D4 A8 41 */	bl ARCGetLength
+/* 80303D44 002FFB84  4B F1 CD 75 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303D48 002FFB88  80 9D 00 14 */	lwz r4, 0x14(r29)
-/* 80303D4C 002FFB8C  4B F6 01 C5 */	bl lbl_80263F10
+/* 80303D4C 002FFB8C  4B F6 01 C5 */	bl unsetZoom__Q43scn4step6camera16CameraControllerFUl
 /* 80303D50 002FFB90  7F C3 F3 78 */	mr r3, r30
-/* 80303D54 002FFB94  4B D4 A8 2D */	bl lbl_8004E580
-/* 80303D58 002FFB98  4B F1 CD 61 */	bl lbl_80220AB8
-/* 80303D5C 002FFB9C  4B F6 0B B9 */	bl lbl_80264914
+/* 80303D54 002FFB94  4B D4 A8 2D */	bl ARCGetLength
+/* 80303D58 002FFB98  4B F1 CD 61 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 80303D5C 002FFB9C  4B F6 0B B9 */	bl resetIntpRateLockMode__Q43scn4step6camera16CameraControllerFv
 
 .global lbl_80303D60
 lbl_80303D60:
@@ -489,7 +489,7 @@ lbl_80303D90:
 /* 80303D98 002FFBD8  41 82 00 10 */	beq lbl_80303DA8
 /* 80303D9C 002FFBDC  7F A3 EB 78 */	mr r3, r29
 /* 80303DA0 002FFBE0  7F C4 F3 78 */	mr r4, r30
-/* 80303DA4 002FFBE4  48 00 00 3D */	bl lbl_80303DE0
+/* 80303DA4 002FFBE4  48 00 00 3D */	bl updateState__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
 .global lbl_80303DA8
 lbl_80303DA8:
 /* 80303DA8 002FFBE8  38 00 00 48 */	li r0, 0x48
@@ -502,21 +502,21 @@ lbl_80303DA8:
 /* 80303DC4 002FFC04  38 21 00 50 */	addi r1, r1, 0x50
 /* 80303DC8 002FFC08  4E 80 00 20 */	blr
 
-.global lbl_80303DCC
-lbl_80303DCC:
+.global updateLock__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+updateLock__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock:
 /* 80303DCC 002FFC0C  7C 83 23 78 */	mr r3, r4
 /* 80303DD0 002FFC10  38 80 00 00 */	li r4, 0x0
-/* 80303DD4 002FFC14  4B E2 61 BC */	b lbl_80129F90
+/* 80303DD4 002FFC14  4B E2 61 BC */	b setDraggingButton__Q310homebutton3gui9ComponentFUl
 
-.global lbl_80303DD8
-lbl_80303DD8:
+.global updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock:
 /* 80303DD8 002FFC18  4E 80 00 20 */	blr
 
-.global lbl_80303DDC
-lbl_80303DDC:
+.global updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock:
 /* 80303DDC 002FFC1C  4E 80 00 20 */	blr
-.global lbl_80303DE0
-lbl_80303DE0:
+.global updateState__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+updateState__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock:
 /* 80303DE0 002FFC20  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80303DE4 002FFC24  7C 08 02 A6 */	mflr r0
 /* 80303DE8 002FFC28  90 01 00 44 */	stw r0, 0x44(r1)
@@ -524,7 +524,7 @@ lbl_80303DE0:
 /* 80303DF0 002FFC30  93 C1 00 38 */	stw r30, 0x38(r1)
 /* 80303DF4 002FFC34  7C 7E 1B 78 */	mr r30, r3
 /* 80303DF8 002FFC38  7C 9F 23 78 */	mr r31, r4
-/* 80303DFC 002FFC3C  C0 02 C7 80 */	lfs f0, lbl_80562700@sda21(r2)
+/* 80303DFC 002FFC3C  C0 02 C7 80 */	lfs f0, "@55183"@sda21(r2)
 /* 80303E00 002FFC40  C0 23 00 48 */	lfs f1, 0x48(r3)
 /* 80303E04 002FFC44  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 80303E08 002FFC48  41 82 00 18 */	beq lbl_80303E20
@@ -535,7 +535,7 @@ lbl_80303DE0:
 /* 80303E1C 002FFC5C  98 03 00 06 */	stb r0, 0x6(r3)
 .global lbl_80303E20
 lbl_80303E20:
-/* 80303E20 002FFC60  C0 02 C7 80 */	lfs f0, lbl_80562700@sda21(r2)
+/* 80303E20 002FFC60  C0 02 C7 80 */	lfs f0, "@55183"@sda21(r2)
 /* 80303E24 002FFC64  C0 23 00 4C */	lfs f1, 0x4c(r3)
 /* 80303E28 002FFC68  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 80303E2C 002FFC6C  41 82 00 18 */	beq lbl_80303E44
@@ -550,108 +550,108 @@ lbl_80303E44:
 /* 80303E48 002FFC88  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80303E4C 002FFC8C  41 82 00 FC */	beq lbl_80303F48
 /* 80303E50 002FFC90  7F E3 FB 78 */	mr r3, r31
-/* 80303E54 002FFC94  4B D4 A7 2D */	bl lbl_8004E580
-/* 80303E58 002FFC98  4B F1 CC 61 */	bl lbl_80220AB8
-/* 80303E5C 002FFC9C  4B F6 01 45 */	bl lbl_80263FA0
+/* 80303E54 002FFC94  4B D4 A7 2D */	bl ARCGetLength
+/* 80303E58 002FFC98  4B F1 CC 61 */	bl cameraController__Q33scn4step9ComponentCFv
+/* 80303E5C 002FFC9C  4B F6 01 45 */	bl unsetLock__Q43scn4step6camera16CameraControllerFv
 /* 80303E60 002FFCA0  7F E3 FB 78 */	mr r3, r31
-/* 80303E64 002FFCA4  4B D4 A7 1D */	bl lbl_8004E580
-/* 80303E68 002FFCA8  4B F1 CD 21 */	bl lbl_80220B88
-/* 80303E6C 002FFCAC  4B F6 1E A5 */	bl lbl_80265D10
+/* 80303E64 002FFCA4  4B D4 A7 1D */	bl ARCGetLength
+/* 80303E68 002FFCA8  4B F1 CD 21 */	bl mainCamera__Q33scn4step9ComponentCFv
+/* 80303E6C 002FFCAC  4B F6 1E A5 */	bl getAspect__Q43scn4step6camera10MainCameraCFv
 /* 80303E70 002FFCB0  C0 5E 00 28 */	lfs f2, 0x28(r30)
 /* 80303E74 002FFCB4  EC A2 00 72 */	fmuls f5, f2, f1
 /* 80303E78 002FFCB8  38 61 00 20 */	addi r3, r1, 0x20
-/* 80303E7C 002FFCBC  C0 82 C7 88 */	lfs f4, lbl_80562708@sda21(r2)
+/* 80303E7C 002FFCBC  C0 82 C7 88 */	lfs f4, "@55250_80562708"@sda21(r2)
 /* 80303E80 002FFCC0  EC 24 00 B2 */	fmuls f1, f4, f2
-/* 80303E84 002FFCC4  C0 02 C7 8C */	lfs f0, lbl_8056270C@sda21(r2)
+/* 80303E84 002FFCC4  C0 02 C7 8C */	lfs f0, "@55251"@sda21(r2)
 /* 80303E88 002FFCC8  EC 40 00 B2 */	fmuls f2, f0, f2
 /* 80303E8C 002FFCCC  EC 60 01 72 */	fmuls f3, f0, f5
 /* 80303E90 002FFCD0  EC 84 01 72 */	fmuls f4, f4, f5
-/* 80303E94 002FFCD4  4B E9 BF 11 */	bl lbl_8019FDA4
-/* 80303E98 002FFCD8  C0 02 C7 80 */	lfs f0, lbl_80562700@sda21(r2)
+/* 80303E94 002FFCD4  4B E9 BF 11 */	bl __ct__Q33hel3geo4RectFffff
+/* 80303E98 002FFCD8  C0 02 C7 80 */	lfs f0, "@55183"@sda21(r2)
 /* 80303E9C 002FFCDC  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 80303EA0 002FFCE0  D0 01 00 1C */	stfs f0, 0x1c(r1)
 /* 80303EA4 002FFCE4  38 7E 00 50 */	addi r3, r30, 0x50
-/* 80303EA8 002FFCE8  4B E9 CA 19 */	bl lbl_801A08C0
+/* 80303EA8 002FFCE8  4B E9 CA 19 */	bl isZeroStrict__Q33hel4math7Vector2CFv
 /* 80303EAC 002FFCEC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80303EB0 002FFCF0  41 82 00 3C */	beq lbl_80303EEC
 /* 80303EB4 002FFCF4  38 61 00 08 */	addi r3, r1, 0x8
 /* 80303EB8 002FFCF8  7F E4 FB 78 */	mr r4, r31
-/* 80303EBC 002FFCFC  4B F5 FC 79 */	bl lbl_80263B34
+/* 80303EBC 002FFCFC  4B F5 FC 79 */	bl getCenter__Q43scn4step6camera16CameraControllerCFv
 /* 80303EC0 002FFD00  38 61 00 18 */	addi r3, r1, 0x18
 /* 80303EC4 002FFD04  38 81 00 08 */	addi r4, r1, 0x8
-/* 80303EC8 002FFD08  4B E4 7A A1 */	bl lbl_8014B968
+/* 80303EC8 002FFD08  4B E4 7A A1 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 80303ECC 002FFD0C  38 61 00 18 */	addi r3, r1, 0x18
 /* 80303ED0 002FFD10  38 9E 00 58 */	addi r4, r30, 0x58
-/* 80303ED4 002FFD14  4B E9 B5 65 */	bl lbl_8019F438
+/* 80303ED4 002FFD14  4B E9 B5 65 */	bl __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 /* 80303ED8 002FFD18  38 61 00 20 */	addi r3, r1, 0x20
 /* 80303EDC 002FFD1C  C0 21 00 18 */	lfs f1, 0x18(r1)
 /* 80303EE0 002FFD20  C0 41 00 1C */	lfs f2, 0x1c(r1)
-/* 80303EE4 002FFD24  4B E9 BF 5D */	bl lbl_8019FE40
+/* 80303EE4 002FFD24  4B E9 BF 5D */	bl trans__Q33hel3geo4RectFff
 /* 80303EE8 002FFD28  48 00 00 2C */	b lbl_80303F14
 .global lbl_80303EEC
 lbl_80303EEC:
 /* 80303EEC 002FFD2C  38 61 00 18 */	addi r3, r1, 0x18
 /* 80303EF0 002FFD30  38 9E 00 50 */	addi r4, r30, 0x50
-/* 80303EF4 002FFD34  4B E4 7A 75 */	bl lbl_8014B968
+/* 80303EF4 002FFD34  4B E4 7A 75 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 80303EF8 002FFD38  38 61 00 18 */	addi r3, r1, 0x18
 /* 80303EFC 002FFD3C  38 9E 00 58 */	addi r4, r30, 0x58
-/* 80303F00 002FFD40  4B E9 B5 39 */	bl lbl_8019F438
+/* 80303F00 002FFD40  4B E9 B5 39 */	bl __apl__Q33hel4math7Vector2FRCQ33hel4math7Vector2
 /* 80303F04 002FFD44  38 61 00 20 */	addi r3, r1, 0x20
 /* 80303F08 002FFD48  C0 21 00 18 */	lfs f1, 0x18(r1)
 /* 80303F0C 002FFD4C  C0 41 00 1C */	lfs f2, 0x1c(r1)
-/* 80303F10 002FFD50  4B E9 BF 31 */	bl lbl_8019FE40
+/* 80303F10 002FFD50  4B E9 BF 31 */	bl trans__Q33hel3geo4RectFff
 .global lbl_80303F14
 lbl_80303F14:
 /* 80303F14 002FFD54  7F E3 FB 78 */	mr r3, r31
-/* 80303F18 002FFD58  4B D4 A6 69 */	bl lbl_8004E580
-/* 80303F1C 002FFD5C  4B F1 CB 9D */	bl lbl_80220AB8
+/* 80303F18 002FFD58  4B D4 A6 69 */	bl ARCGetLength
+/* 80303F1C 002FFD5C  4B F1 CB 9D */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303F20 002FFD60  38 81 00 20 */	addi r4, r1, 0x20
-/* 80303F24 002FFD64  4B F5 FF F5 */	bl lbl_80263F18
+/* 80303F24 002FFD64  4B F5 FF F5 */	bl setLock__Q43scn4step6camera16CameraControllerFRCQ33hel3geo4Rect
 /* 80303F28 002FFD68  7F E3 FB 78 */	mr r3, r31
-/* 80303F2C 002FFD6C  4B D4 A6 55 */	bl lbl_8004E580
-/* 80303F30 002FFD70  4B F1 CB 89 */	bl lbl_80220AB8
+/* 80303F2C 002FFD6C  4B D4 A6 55 */	bl ARCGetLength
+/* 80303F30 002FFD70  4B F1 CB 89 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303F34 002FFD74  C0 3E 00 38 */	lfs f1, 0x38(r30)
-/* 80303F38 002FFD78  4B F6 09 D5 */	bl lbl_8026490C
+/* 80303F38 002FFD78  4B F6 09 D5 */	bl setIntpRateLockMode__Q43scn4step6camera16CameraControllerFf
 /* 80303F3C 002FFD7C  38 61 00 20 */	addi r3, r1, 0x20
 /* 80303F40 002FFD80  38 80 FF FF */	li r4, -0x1
-/* 80303F44 002FFD84  4B E9 BE F9 */	bl lbl_8019FE3C
+/* 80303F44 002FFD84  4B E9 BE F9 */	bl __dt__Q33hel3geo4RectFv
 .global lbl_80303F48
 lbl_80303F48:
 /* 80303F48 002FFD88  88 1E 00 07 */	lbz r0, 0x7(r30)
 /* 80303F4C 002FFD8C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80303F50 002FFD90  41 82 00 80 */	beq lbl_80303FD0
 /* 80303F54 002FFD94  7F E3 FB 78 */	mr r3, r31
-/* 80303F58 002FFD98  4B D4 A6 29 */	bl lbl_8004E580
-/* 80303F5C 002FFD9C  4B F1 CB 5D */	bl lbl_80220AB8
+/* 80303F58 002FFD98  4B D4 A6 29 */	bl ARCGetLength
+/* 80303F5C 002FFD9C  4B F1 CB 5D */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303F60 002FFDA0  80 9E 00 14 */	lwz r4, 0x14(r30)
-/* 80303F64 002FFDA4  4B F5 FF AD */	bl lbl_80263F10
+/* 80303F64 002FFDA4  4B F5 FF AD */	bl unsetZoom__Q43scn4step6camera16CameraControllerFUl
 /* 80303F68 002FFDA8  38 7E 00 60 */	addi r3, r30, 0x60
-/* 80303F6C 002FFDAC  4B E9 C9 55 */	bl lbl_801A08C0
+/* 80303F6C 002FFDAC  4B E9 C9 55 */	bl isZeroStrict__Q33hel4math7Vector2CFv
 /* 80303F70 002FFDB0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80303F74 002FFDB4  41 82 00 38 */	beq lbl_80303FAC
 /* 80303F78 002FFDB8  38 61 00 10 */	addi r3, r1, 0x10
 /* 80303F7C 002FFDBC  7F E4 FB 78 */	mr r4, r31
-/* 80303F80 002FFDC0  4B F5 FB B5 */	bl lbl_80263B34
+/* 80303F80 002FFDC0  4B F5 FB B5 */	bl getCenter__Q43scn4step6camera16CameraControllerCFv
 /* 80303F84 002FFDC4  7F E3 FB 78 */	mr r3, r31
-/* 80303F88 002FFDC8  4B D4 A5 F9 */	bl lbl_8004E580
-/* 80303F8C 002FFDCC  4B F1 CB 2D */	bl lbl_80220AB8
+/* 80303F88 002FFDC8  4B D4 A5 F9 */	bl ARCGetLength
+/* 80303F8C 002FFDCC  4B F1 CB 2D */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303F90 002FFDD0  38 81 00 10 */	addi r4, r1, 0x10
 /* 80303F94 002FFDD4  C0 3E 00 2C */	lfs f1, 0x2c(r30)
 /* 80303F98 002FFDD8  C0 5E 00 3C */	lfs f2, 0x3c(r30)
 /* 80303F9C 002FFDDC  38 A0 00 01 */	li r5, 0x1
-/* 80303FA0 002FFDE0  4B F5 FF 61 */	bl lbl_80263F00
+/* 80303FA0 002FFDE0  4B F5 FF 61 */	bl setZoom__Q43scn4step6camera16CameraControllerFRCQ33hel4math7Vector2ffb
 /* 80303FA4 002FFDE4  90 7E 00 14 */	stw r3, 0x14(r30)
 /* 80303FA8 002FFDE8  48 00 00 28 */	b lbl_80303FD0
 .global lbl_80303FAC
 lbl_80303FAC:
 /* 80303FAC 002FFDEC  7F E3 FB 78 */	mr r3, r31
-/* 80303FB0 002FFDF0  4B D4 A5 D1 */	bl lbl_8004E580
-/* 80303FB4 002FFDF4  4B F1 CB 05 */	bl lbl_80220AB8
+/* 80303FB0 002FFDF0  4B D4 A5 D1 */	bl ARCGetLength
+/* 80303FB4 002FFDF4  4B F1 CB 05 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303FB8 002FFDF8  38 9E 00 60 */	addi r4, r30, 0x60
 /* 80303FBC 002FFDFC  C0 3E 00 2C */	lfs f1, 0x2c(r30)
 /* 80303FC0 002FFE00  C0 5E 00 3C */	lfs f2, 0x3c(r30)
 /* 80303FC4 002FFE04  38 A0 00 01 */	li r5, 0x1
-/* 80303FC8 002FFE08  4B F5 FF 39 */	bl lbl_80263F00
+/* 80303FC8 002FFE08  4B F5 FF 39 */	bl setZoom__Q43scn4step6camera16CameraControllerFRCQ33hel4math7Vector2ffb
 /* 80303FCC 002FFE0C  90 7E 00 14 */	stw r3, 0x14(r30)
 .global lbl_80303FD0
 lbl_80303FD0:
@@ -659,17 +659,17 @@ lbl_80303FD0:
 /* 80303FD4 002FFE14  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80303FD8 002FFE18  41 82 00 38 */	beq lbl_80304010
 /* 80303FDC 002FFE1C  7F E3 FB 78 */	mr r3, r31
-/* 80303FE0 002FFE20  4B D4 A5 A1 */	bl lbl_8004E580
-/* 80303FE4 002FFE24  4B F1 CA D5 */	bl lbl_80220AB8
+/* 80303FE0 002FFE20  4B D4 A5 A1 */	bl ARCGetLength
+/* 80303FE4 002FFE24  4B F1 CA D5 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303FE8 002FFE28  80 9E 00 18 */	lwz r4, 0x18(r30)
-/* 80303FEC 002FFE2C  4B F6 00 B5 */	bl lbl_802640A0
+/* 80303FEC 002FFE2C  4B F6 00 B5 */	bl unsetRotDegX__Q43scn4step6camera16CameraControllerFUl
 /* 80303FF0 002FFE30  7F E3 FB 78 */	mr r3, r31
-/* 80303FF4 002FFE34  4B D4 A5 8D */	bl lbl_8004E580
-/* 80303FF8 002FFE38  4B F1 CA C1 */	bl lbl_80220AB8
+/* 80303FF4 002FFE34  4B D4 A5 8D */	bl ARCGetLength
+/* 80303FF8 002FFE38  4B F1 CA C1 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80303FFC 002FFE3C  C0 3E 00 30 */	lfs f1, 0x30(r30)
 /* 80304000 002FFE40  C0 5E 00 40 */	lfs f2, 0x40(r30)
 /* 80304004 002FFE44  38 80 00 01 */	li r4, 0x1
-/* 80304008 002FFE48  4B F6 00 91 */	bl lbl_80264098
+/* 80304008 002FFE48  4B F6 00 91 */	bl setRotDegX__Q43scn4step6camera16CameraControllerFffb
 /* 8030400C 002FFE4C  90 7E 00 18 */	stw r3, 0x18(r30)
 .global lbl_80304010
 lbl_80304010:
@@ -677,17 +677,17 @@ lbl_80304010:
 /* 80304014 002FFE54  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80304018 002FFE58  41 82 00 38 */	beq lbl_80304050
 /* 8030401C 002FFE5C  7F E3 FB 78 */	mr r3, r31
-/* 80304020 002FFE60  4B D4 A5 61 */	bl lbl_8004E580
-/* 80304024 002FFE64  4B F1 CA 95 */	bl lbl_80220AB8
+/* 80304020 002FFE60  4B D4 A5 61 */	bl ARCGetLength
+/* 80304024 002FFE64  4B F1 CA 95 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80304028 002FFE68  80 9E 00 1C */	lwz r4, 0x1c(r30)
-/* 8030402C 002FFE6C  4B F6 00 85 */	bl lbl_802640B0
+/* 8030402C 002FFE6C  4B F6 00 85 */	bl unsetRotDegY__Q43scn4step6camera16CameraControllerFUl
 /* 80304030 002FFE70  7F E3 FB 78 */	mr r3, r31
-/* 80304034 002FFE74  4B D4 A5 4D */	bl lbl_8004E580
-/* 80304038 002FFE78  4B F1 CA 81 */	bl lbl_80220AB8
+/* 80304034 002FFE74  4B D4 A5 4D */	bl ARCGetLength
+/* 80304038 002FFE78  4B F1 CA 81 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 8030403C 002FFE7C  C0 3E 00 34 */	lfs f1, 0x34(r30)
 /* 80304040 002FFE80  C0 5E 00 44 */	lfs f2, 0x44(r30)
 /* 80304044 002FFE84  38 80 00 01 */	li r4, 0x1
-/* 80304048 002FFE88  4B F6 00 61 */	bl lbl_802640A8
+/* 80304048 002FFE88  4B F6 00 61 */	bl setRotDegY__Q43scn4step6camera16CameraControllerFffb
 /* 8030404C 002FFE8C  90 7E 00 1C */	stw r3, 0x1c(r30)
 .global lbl_80304050
 lbl_80304050:
@@ -695,10 +695,10 @@ lbl_80304050:
 /* 80304054 002FFE94  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80304058 002FFE98  41 82 00 18 */	beq lbl_80304070
 /* 8030405C 002FFE9C  7F E3 FB 78 */	mr r3, r31
-/* 80304060 002FFEA0  4B D4 A5 21 */	bl lbl_8004E580
-/* 80304064 002FFEA4  4B F1 CA 55 */	bl lbl_80220AB8
+/* 80304060 002FFEA0  4B D4 A5 21 */	bl ARCGetLength
+/* 80304064 002FFEA4  4B F1 CA 55 */	bl cameraController__Q33scn4step9ComponentCFv
 /* 80304068 002FFEA8  C0 3E 00 38 */	lfs f1, 0x38(r30)
-/* 8030406C 002FFEAC  4B F6 08 A1 */	bl lbl_8026490C
+/* 8030406C 002FFEAC  4B F6 08 A1 */	bl setIntpRateLockMode__Q43scn4step6camera16CameraControllerFf
 .global lbl_80304070
 lbl_80304070:
 /* 80304070 002FFEB0  38 00 00 00 */	li r0, 0x0
@@ -714,22 +714,22 @@ lbl_80304070:
 /* 80304098 002FFED8  38 21 00 40 */	addi r1, r1, 0x40
 /* 8030409C 002FFEDC  4E 80 00 20 */	blr
 
-.global lbl_803040A0
-lbl_803040A0:
+.global setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb
+setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb:
 /* 803040A0 002FFEE0  4E 80 00 20 */	blr
 
-.global lbl_803040A4
-lbl_803040A4:
+.global "__sinit_@@1VariationDemo_cpp"
+"__sinit_@@1VariationDemo_cpp":
 /* 803040A4 002FFEE4  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 803040A8 002FFEE8  7C 08 02 A6 */	mflr r0
 /* 803040AC 002FFEEC  90 01 00 84 */	stw r0, 0x84(r1)
 /* 803040B0 002FFEF0  93 E1 00 7C */	stw r31, 0x7c(r1)
 /* 803040B4 002FFEF4  38 61 00 68 */	addi r3, r1, 0x68
 /* 803040B8 002FFEF8  38 80 00 00 */	li r4, 0x0
-/* 803040BC 002FFEFC  C0 22 C7 90 */	lfs f1, lbl_80562710@sda21(r2)
-/* 803040C0 002FFF00  4B FF F6 CD */	bl lbl_8030378C
-/* 803040C4 002FFF04  3C 60 80 55 */	lis r3, lbl_80552588@ha
-/* 803040C8 002FFF08  3B E3 25 88 */	addi r31, r3, lbl_80552588@l
+/* 803040BC 002FFEFC  C0 22 C7 90 */	lfs f1, "@55291_80562710"@sda21(r2)
+/* 803040C0 002FFF00  4B FF F6 CD */	bl "ORDER_SET_WIDEHEIGHT__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
+/* 803040C4 002FFF04  3C 60 80 55 */	lis r3, "datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@ha
+/* 803040C8 002FFF08  3B E3 25 88 */	addi r31, r3, "datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"@l
 /* 803040CC 002FFF0C  80 61 00 68 */	lwz r3, 0x68(r1)
 /* 803040D0 002FFF10  80 01 00 6C */	lwz r0, 0x6c(r1)
 /* 803040D4 002FFF14  90 7F 00 00 */	stw r3, 0x0(r31)
@@ -738,8 +738,8 @@ lbl_803040A4:
 /* 803040E0 002FFF20  90 1F 00 08 */	stw r0, 0x8(r31)
 /* 803040E4 002FFF24  38 61 00 5C */	addi r3, r1, 0x5c
 /* 803040E8 002FFF28  38 80 00 00 */	li r4, 0x0
-/* 803040EC 002FFF2C  C0 22 C7 94 */	lfs f1, lbl_80562714@sda21(r2)
-/* 803040F0 002FFF30  4B FF F6 E5 */	bl lbl_803037D4
+/* 803040EC 002FFF2C  C0 22 C7 94 */	lfs f1, "@55292_80562714"@sda21(r2)
+/* 803040F0 002FFF30  4B FF F6 E5 */	bl "ORDER_SET_ZOOM__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
 /* 803040F4 002FFF34  80 61 00 5C */	lwz r3, 0x5c(r1)
 /* 803040F8 002FFF38  80 01 00 60 */	lwz r0, 0x60(r1)
 /* 803040FC 002FFF3C  90 7F 00 0C */	stw r3, 0xc(r31)
@@ -748,9 +748,9 @@ lbl_803040A4:
 /* 80304108 002FFF48  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 8030410C 002FFF4C  38 61 00 50 */	addi r3, r1, 0x50
 /* 80304110 002FFF50  38 80 00 00 */	li r4, 0x0
-/* 80304114 002FFF54  C0 22 C7 98 */	lfs f1, lbl_80562718@sda21(r2)
-/* 80304118 002FFF58  C0 42 C7 9C */	lfs f2, lbl_8056271C@sda21(r2)
-/* 8030411C 002FFF5C  4B FF F7 D9 */	bl lbl_803038F4
+/* 80304114 002FFF54  C0 22 C7 98 */	lfs f1, "@55293_80562718"@sda21(r2)
+/* 80304118 002FFF58  C0 42 C7 9C */	lfs f2, "@55294_8056271C"@sda21(r2)
+/* 8030411C 002FFF5C  4B FF F7 D9 */	bl "ORDER_SET_ZOOMCENTER__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsff"
 /* 80304120 002FFF60  80 61 00 50 */	lwz r3, 0x50(r1)
 /* 80304124 002FFF64  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80304128 002FFF68  90 7F 00 18 */	stw r3, 0x18(r31)
@@ -759,8 +759,8 @@ lbl_803040A4:
 /* 80304134 002FFF74  90 1F 00 20 */	stw r0, 0x20(r31)
 /* 80304138 002FFF78  38 61 00 44 */	addi r3, r1, 0x44
 /* 8030413C 002FFF7C  38 80 00 00 */	li r4, 0x0
-/* 80304140 002FFF80  C0 22 C7 A0 */	lfs f1, lbl_80562720@sda21(r2)
-/* 80304144 002FFF84  4B FF F7 21 */	bl lbl_80303864
+/* 80304140 002FFF80  C0 22 C7 A0 */	lfs f1, "@55295_80562720"@sda21(r2)
+/* 80304144 002FFF84  4B FF F7 21 */	bl "ORDER_SET_ROTY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
 /* 80304148 002FFF88  80 61 00 44 */	lwz r3, 0x44(r1)
 /* 8030414C 002FFF8C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80304150 002FFF90  90 7F 00 24 */	stw r3, 0x24(r31)
@@ -769,8 +769,8 @@ lbl_803040A4:
 /* 8030415C 002FFF9C  90 1F 00 2C */	stw r0, 0x2c(r31)
 /* 80304160 002FFFA0  38 61 00 38 */	addi r3, r1, 0x38
 /* 80304164 002FFFA4  38 80 00 00 */	li r4, 0x0
-/* 80304168 002FFFA8  C0 22 C7 A4 */	lfs f1, lbl_80562724@sda21(r2)
-/* 8030416C 002FFFAC  4B FF F6 B1 */	bl lbl_8030381C
+/* 80304168 002FFFA8  C0 22 C7 A4 */	lfs f1, "@55296_80562724"@sda21(r2)
+/* 8030416C 002FFFAC  4B FF F6 B1 */	bl "ORDER_SET_ROTX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
 /* 80304170 002FFFB0  80 61 00 38 */	lwz r3, 0x38(r1)
 /* 80304174 002FFFB4  80 01 00 3C */	lwz r0, 0x3c(r1)
 /* 80304178 002FFFB8  90 7F 00 30 */	stw r3, 0x30(r31)
@@ -779,7 +779,7 @@ lbl_803040A4:
 /* 80304184 002FFFC4  90 1F 00 38 */	stw r0, 0x38(r31)
 /* 80304188 002FFFC8  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8030418C 002FFFCC  38 80 00 00 */	li r4, 0x0
-/* 80304190 002FFFD0  4B FF F8 35 */	bl lbl_803039C4
+/* 80304190 002FFFD0  4B FF F8 35 */	bl "ORDER_LOCK__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
 /* 80304194 002FFFD4  80 61 00 2C */	lwz r3, 0x2c(r1)
 /* 80304198 002FFFD8  80 01 00 30 */	lwz r0, 0x30(r1)
 /* 8030419C 002FFFDC  90 7F 00 3C */	stw r3, 0x3c(r31)
@@ -788,8 +788,8 @@ lbl_803040A4:
 /* 803041A8 002FFFE8  90 1F 00 44 */	stw r0, 0x44(r31)
 /* 803041AC 002FFFEC  38 61 00 20 */	addi r3, r1, 0x20
 /* 803041B0 002FFFF0  38 80 00 C8 */	li r4, 0xc8
-/* 803041B4 002FFFF4  C0 22 C7 A8 */	lfs f1, lbl_80562728@sda21(r2)
-/* 803041B8 002FFFF8  4B FF F6 F5 */	bl lbl_803038AC
+/* 803041B4 002FFFF4  C0 22 C7 A8 */	lfs f1, "@55297_80562728"@sda21(r2)
+/* 803041B8 002FFFF8  4B FF F6 F5 */	bl "ORDER_SET_ACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUsf"
 /* 803041BC 002FFFFC  80 61 00 20 */	lwz r3, 0x20(r1)
 /* 803041C0 00300000  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803041C4 00300004  90 7F 00 48 */	stw r3, 0x48(r31)
@@ -798,7 +798,7 @@ lbl_803040A4:
 /* 803041D0 00300010  90 1F 00 50 */	stw r0, 0x50(r31)
 /* 803041D4 00300014  38 61 00 14 */	addi r3, r1, 0x14
 /* 803041D8 00300018  38 80 00 00 */	li r4, 0x0
-/* 803041DC 0030001C  4B FF F7 69 */	bl lbl_80303944
+/* 803041DC 0030001C  4B FF F7 69 */	bl "ORDER_CLEARACCELX__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
 /* 803041E0 00300020  80 61 00 14 */	lwz r3, 0x14(r1)
 /* 803041E4 00300024  80 01 00 18 */	lwz r0, 0x18(r1)
 /* 803041E8 00300028  90 7F 00 54 */	stw r3, 0x54(r31)
@@ -807,7 +807,7 @@ lbl_803040A4:
 /* 803041F4 00300034  90 1F 00 5C */	stw r0, 0x5c(r31)
 /* 803041F8 00300038  38 61 00 08 */	addi r3, r1, 0x8
 /* 803041FC 0030003C  38 80 00 01 */	li r4, 0x1
-/* 80304200 00300040  4B FF F7 85 */	bl lbl_80303984
+/* 80304200 00300040  4B FF F7 85 */	bl "ORDER_CLEARACCELY__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@FUs"
 /* 80304204 00300044  80 61 00 08 */	lwz r3, 0x8(r1)
 /* 80304208 00300048  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8030420C 0030004C  90 7F 00 60 */	stw r3, 0x60(r31)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80446458
-lbl_80446458:
+.global __HBMSYNVolumeAttenuation
+__HBMSYNVolumeAttenuation:
 
 	.4byte 0xFC400000
 	.4byte 0xFCB67A80
@@ -133,8 +133,8 @@ lbl_80446458:
 	.4byte 0xFFFEA072
 	.4byte 0
 
-.global lbl_80446658
-lbl_80446658:
+.global __HBMSYNAttackAttnTable
+__HBMSYNAttackAttnTable:
 
 	.4byte 0xFC400000
 	.4byte 0xFE70DF7B

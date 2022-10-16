@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804753D8
-lbl_804753D8:
+.global "__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>"
+"__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802A4634
-	.4byte lbl_802A45EC
+	.4byte "__dt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv"
+	.4byte "create__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv"
 
-.global lbl_804753E8
-lbl_804753E8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802A4630
-	.4byte lbl_802A4610
-
-.global lbl_804753F8
-lbl_804753F8:
+.global "__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>"
+"__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802A42FC
-	.4byte lbl_802A4370
-	.4byte lbl_802A4578
-	.4byte lbl_802A457C
-	.4byte lbl_8028DDE4
-	.4byte lbl_8028DDE8
+	.4byte "__dt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>Fv"
+	.4byte "create__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>Fv"
+
+.global __vt__Q53scn4step5enemy8captured20StateCapturedFighter
+__vt__Q53scn4step5enemy8captured20StateCapturedFighter:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procAnim__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procMove__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procConstraint__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

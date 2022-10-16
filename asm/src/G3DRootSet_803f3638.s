@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803F3638
-lbl_803F3638:
+.global __ct__Q33scn9grandmenu10G3DRootSetFRQ33scn9grandmenu9Component
+__ct__Q33scn9grandmenu10G3DRootSetFRQ33scn9grandmenu9Component:
 /* 803F3638 003EF478  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 803F363C 003EF47C  7C 08 02 A6 */	mflr r0
 /* 803F3640 003EF480  90 01 00 34 */	stw r0, 0x34(r1)
@@ -14,31 +14,31 @@ lbl_803F3638:
 /* 803F3658 003EF498  90 03 00 04 */	stw r0, 0x4(r3)
 /* 803F365C 003EF49C  90 03 00 08 */	stw r0, 0x8(r3)
 /* 803F3660 003EF4A0  38 60 00 50 */	li r3, 0x50
-/* 803F3664 003EF4A4  4B DC C0 AD */	bl lbl_801BF710
+/* 803F3664 003EF4A4  4B DC C0 AD */	bl __nw__FUl
 /* 803F3668 003EF4A8  7C 7D 1B 78 */	mr r29, r3
 /* 803F366C 003EF4AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803F3670 003EF4B0  41 82 00 44 */	beq lbl_803F36B4
-/* 803F3674 003EF4B4  4B D1 53 8D */	bl lbl_80108A00
+/* 803F3674 003EF4B4  4B D1 53 8D */	bl CanCancel__Q34nw4r2ut13DvdFileStreamCFv
 /* 803F3678 003EF4B8  7C 7E 1B 78 */	mr r30, r3
-/* 803F367C 003EF4BC  4B DF 5D 19 */	bl lbl_801E9394
+/* 803F367C 003EF4BC  4B DF 5D 19 */	bl kind__Q33scn19challengefileselect11StaffCreditCFv
 /* 803F3680 003EF4C0  7C 7F 1B 78 */	mr r31, r3
-/* 803F3684 003EF4C4  4B D9 EA 65 */	bl lbl_801920E8
+/* 803F3684 003EF4C4  4B D9 EA 65 */	bl DefaultAllocator__Q23g3d12ModelContextFv
 /* 803F3688 003EF4C8  7C 64 1B 78 */	mr r4, r3
 /* 803F368C 003EF4CC  38 61 00 08 */	addi r3, r1, 0x8
 /* 803F3690 003EF4D0  38 A0 00 10 */	li r5, 0x10
 /* 803F3694 003EF4D4  38 C0 00 10 */	li r6, 0x10
 /* 803F3698 003EF4D8  7F E7 FB 78 */	mr r7, r31
 /* 803F369C 003EF4DC  7F C8 F3 78 */	mr r8, r30
-/* 803F36A0 003EF4E0  4B DA 0F 7D */	bl lbl_8019461C
+/* 803F36A0 003EF4E0  4B DA 0F 7D */	bl __ct__Q23g3d11RootContextFRQ23mem10IAllocatorUlUlUlUl
 /* 803F36A4 003EF4E4  7C 64 1B 78 */	mr r4, r3
 /* 803F36A8 003EF4E8  7F A3 EB 78 */	mr r3, r29
-/* 803F36AC 003EF4EC  4B DA 08 C9 */	bl lbl_80193F74
+/* 803F36AC 003EF4EC  4B DA 08 C9 */	bl __ct__Q23g3d4RootFRCQ23g3d11RootContext
 /* 803F36B0 003EF4F0  7C 7D 1B 78 */	mr r29, r3
 .global lbl_803F36B4
 lbl_803F36B4:
 /* 803F36B4 003EF4F4  38 7C 00 08 */	addi r3, r28, 0x8
 /* 803F36B8 003EF4F8  80 9C 00 04 */	lwz r4, 0x4(r28)
-/* 803F36BC 003EF4FC  4B E3 CE F9 */	bl lbl_802305B4
+/* 803F36BC 003EF4FC  4B E3 CE F9 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F36C0 003EF500  93 A3 00 00 */	stw r29, 0x0(r3)
 /* 803F36C4 003EF504  80 7C 00 04 */	lwz r3, 0x4(r28)
 /* 803F36C8 003EF508  38 03 00 01 */	addi r0, r3, 0x1
@@ -50,8 +50,8 @@ lbl_803F36B4:
 /* 803F36E0 003EF520  7C 08 03 A6 */	mtlr r0
 /* 803F36E4 003EF524  38 21 00 30 */	addi r1, r1, 0x30
 /* 803F36E8 003EF528  4E 80 00 20 */	blr
-.global lbl_803F36EC
-lbl_803F36EC:
+.global "__dt__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>Fv"
+"__dt__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>Fv":
 /* 803F36EC 003EF52C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803F36F0 003EF530  7C 08 02 A6 */	mflr r0
 /* 803F36F4 003EF534  90 01 00 24 */	stw r0, 0x24(r1)
@@ -68,18 +68,18 @@ lbl_803F3718:
 /* 803F3718 003EF558  3B A3 FF FF */	addi r29, r3, -0x1
 /* 803F371C 003EF55C  38 7B 00 04 */	addi r3, r27, 0x4
 /* 803F3720 003EF560  7F A4 EB 78 */	mr r4, r29
-/* 803F3724 003EF564  4B E3 CE 91 */	bl lbl_802305B4
+/* 803F3724 003EF564  4B E3 CE 91 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F3728 003EF568  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 803F372C 003EF56C  38 7B 00 04 */	addi r3, r27, 0x4
 /* 803F3730 003EF570  7F A4 EB 78 */	mr r4, r29
-/* 803F3734 003EF574  4B E3 CE 81 */	bl lbl_802305B4
+/* 803F3734 003EF574  4B E3 CE 81 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F3738 003EF578  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803F373C 003EF57C  80 7B 00 00 */	lwz r3, 0x0(r27)
 /* 803F3740 003EF580  38 03 FF FF */	addi r0, r3, -0x1
 /* 803F3744 003EF584  90 1B 00 00 */	stw r0, 0x0(r27)
 /* 803F3748 003EF588  7F C3 F3 78 */	mr r3, r30
 /* 803F374C 003EF58C  38 80 00 01 */	li r4, 0x1
-/* 803F3750 003EF590  4B DA 0A 9D */	bl lbl_801941EC
+/* 803F3750 003EF590  4B DA 0A 9D */	bl __dt__Q23g3d4RootFv
 .global lbl_803F3754
 lbl_803F3754:
 /* 803F3754 003EF594  80 7B 00 00 */	lwz r3, 0x0(r27)
@@ -87,12 +87,12 @@ lbl_803F3754:
 /* 803F375C 003EF59C  40 82 FF BC */	bne lbl_803F3718
 /* 803F3760 003EF5A0  7F 63 DB 78 */	mr r3, r27
 /* 803F3764 003EF5A4  38 80 00 00 */	li r4, 0x0
-/* 803F3768 003EF5A8  4B D8 24 01 */	bl lbl_80175B68
+/* 803F3768 003EF5A8  4B D8 24 01 */	bl __dt__Q23scn6ISceneFv
 /* 803F376C 003EF5AC  7F 80 07 34 */	extsh r0, r28
 /* 803F3770 003EF5B0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803F3774 003EF5B4  40 81 00 0C */	ble lbl_803F3780
 /* 803F3778 003EF5B8  7F 63 DB 78 */	mr r3, r27
-/* 803F377C 003EF5BC  4B DC BF 99 */	bl lbl_801BF714
+/* 803F377C 003EF5BC  4B DC BF 99 */	bl __dl__FPv
 .global lbl_803F3780
 lbl_803F3780:
 /* 803F3780 003EF5C0  7F 63 DB 78 */	mr r3, r27
@@ -102,8 +102,8 @@ lbl_803F3780:
 /* 803F3790 003EF5D0  7C 08 03 A6 */	mtlr r0
 /* 803F3794 003EF5D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 803F3798 003EF5D8  4E 80 00 20 */	blr
-.global lbl_803F379C
-lbl_803F379C:
+.global __dt__Q33scn9grandmenu10G3DRootSetFv
+__dt__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F379C 003EF5DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F37A0 003EF5E0  7C 08 02 A6 */	mflr r0
 /* 803F37A4 003EF5E4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -115,12 +115,12 @@ lbl_803F379C:
 /* 803F37BC 003EF5FC  41 82 00 24 */	beq lbl_803F37E0
 /* 803F37C0 003EF600  38 63 00 04 */	addi r3, r3, 0x4
 /* 803F37C4 003EF604  38 80 FF FF */	li r4, -0x1
-/* 803F37C8 003EF608  4B FF FF 25 */	bl lbl_803F36EC
+/* 803F37C8 003EF608  4B FF FF 25 */	bl "__dt__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>Fv"
 /* 803F37CC 003EF60C  7F E0 07 34 */	extsh r0, r31
 /* 803F37D0 003EF610  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803F37D4 003EF614  40 81 00 0C */	ble lbl_803F37E0
 /* 803F37D8 003EF618  7F C3 F3 78 */	mr r3, r30
-/* 803F37DC 003EF61C  4B DC BF 39 */	bl lbl_801BF714
+/* 803F37DC 003EF61C  4B DC BF 39 */	bl __dl__FPv
 .global lbl_803F37E0
 lbl_803F37E0:
 /* 803F37E0 003EF620  7F C3 F3 78 */	mr r3, r30
@@ -130,24 +130,24 @@ lbl_803F37E0:
 /* 803F37F0 003EF630  7C 08 03 A6 */	mtlr r0
 /* 803F37F4 003EF634  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F37F8 003EF638  4E 80 00 20 */	blr
-.global lbl_803F37FC
-lbl_803F37FC:
+.global root__Q33scn9grandmenu10G3DRootSetFQ33scn9grandmenu13DrawLayerKind
+root__Q33scn9grandmenu10G3DRootSetFQ33scn9grandmenu13DrawLayerKind:
 /* 803F37FC 003EF63C  38 63 00 04 */	addi r3, r3, 0x4
-/* 803F3800 003EF640  48 00 00 04 */	b lbl_803F3804
-.global lbl_803F3804
-lbl_803F3804:
+/* 803F3800 003EF640  48 00 00 04 */	b "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+.global "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+"__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl":
 /* 803F3804 003EF644  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F3808 003EF648  7C 08 02 A6 */	mflr r0
 /* 803F380C 003EF64C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803F3810 003EF650  38 63 00 04 */	addi r3, r3, 0x4
-/* 803F3814 003EF654  4B E3 CD A1 */	bl lbl_802305B4
+/* 803F3814 003EF654  4B E3 CD A1 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F3818 003EF658  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803F381C 003EF65C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F3820 003EF660  7C 08 03 A6 */	mtlr r0
 /* 803F3824 003EF664  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3828 003EF668  4E 80 00 20 */	blr
-.global lbl_803F382C
-lbl_803F382C:
+.global sceneCalcOnUpdateMain__Q33scn9grandmenu10G3DRootSetFv
+sceneCalcOnUpdateMain__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F382C 003EF66C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F3830 003EF670  7C 08 02 A6 */	mflr r0
 /* 803F3834 003EF674  90 01 00 14 */	stw r0, 0x14(r1)
@@ -160,8 +160,8 @@ lbl_803F382C:
 lbl_803F384C:
 /* 803F384C 003EF68C  38 7E 00 04 */	addi r3, r30, 0x4
 /* 803F3850 003EF690  7F E4 FB 78 */	mr r4, r31
-/* 803F3854 003EF694  4B FF FF B1 */	bl lbl_803F3804
-/* 803F3858 003EF698  4B DA 0A A9 */	bl lbl_80194300
+/* 803F3854 003EF694  4B FF FF B1 */	bl "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+/* 803F3858 003EF698  4B DA 0A A9 */	bl sceneCalcOnUpdateMain__Q23g3d4RootFv
 /* 803F385C 003EF69C  3B FF 00 01 */	addi r31, r31, 0x1
 .global lbl_803F3860
 lbl_803F3860:
@@ -174,8 +174,8 @@ lbl_803F3860:
 /* 803F3878 003EF6B8  7C 08 03 A6 */	mtlr r0
 /* 803F387C 003EF6BC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3880 003EF6C0  4E 80 00 20 */	blr
-.global lbl_803F3884
-lbl_803F3884:
+.global sceneCalcOnUpdateUseGPU__Q33scn9grandmenu10G3DRootSetFv
+sceneCalcOnUpdateUseGPU__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F3884 003EF6C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F3888 003EF6C8  7C 08 02 A6 */	mflr r0
 /* 803F388C 003EF6CC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -188,8 +188,8 @@ lbl_803F3884:
 lbl_803F38A4:
 /* 803F38A4 003EF6E4  38 7E 00 04 */	addi r3, r30, 0x4
 /* 803F38A8 003EF6E8  7F E4 FB 78 */	mr r4, r31
-/* 803F38AC 003EF6EC  4B FF FF 59 */	bl lbl_803F3804
-/* 803F38B0 003EF6F0  4B DA 0A F9 */	bl lbl_801943A8
+/* 803F38AC 003EF6EC  4B FF FF 59 */	bl "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+/* 803F38B0 003EF6F0  4B DA 0A F9 */	bl sceneCalcOnUpdateUseGPU__Q23g3d4RootFv
 /* 803F38B4 003EF6F4  3B FF 00 01 */	addi r31, r31, 0x1
 .global lbl_803F38B8
 lbl_803F38B8:
@@ -202,8 +202,8 @@ lbl_803F38B8:
 /* 803F38D0 003EF710  7C 08 03 A6 */	mtlr r0
 /* 803F38D4 003EF714  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F38D8 003EF718  4E 80 00 20 */	blr
-.global lbl_803F38DC
-lbl_803F38DC:
+.global setProjPerspective__Q33scn9grandmenu10G3DRootSetFv
+setProjPerspective__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F38DC 003EF71C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 803F38E0 003EF720  7C 08 02 A6 */	mflr r0
 /* 803F38E4 003EF724  90 01 00 34 */	stw r0, 0x34(r1)
@@ -213,31 +213,31 @@ lbl_803F38DC:
 /* 803F38F4 003EF734  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 803F38F8 003EF738  7C 7E 1B 78 */	mr r30, r3
 /* 803F38FC 003EF73C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 803F3900 003EF740  4B E1 69 79 */	bl lbl_8020A278
+/* 803F3900 003EF740  4B E1 69 79 */	bl bgPlate__Q33scn7history9ComponentFv
 /* 803F3904 003EF744  38 80 00 00 */	li r4, 0x0
-/* 803F3908 003EF748  4B FF F5 51 */	bl lbl_803F2E58
+/* 803F3908 003EF748  4B FF F5 51 */	bl camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind
 /* 803F390C 003EF74C  7C 7F 1B 78 */	mr r31, r3
 /* 803F3910 003EF750  38 7E 00 04 */	addi r3, r30, 0x4
 /* 803F3914 003EF754  38 80 00 00 */	li r4, 0x0
-/* 803F3918 003EF758  4B FF FE ED */	bl lbl_803F3804
-/* 803F391C 003EF75C  4B DA 0B 31 */	bl lbl_8019444C
+/* 803F3918 003EF758  4B FF FE ED */	bl "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+/* 803F391C 003EF75C  4B DA 0B 31 */	bl currentCamera__Q23g3d4RootCFv
 /* 803F3920 003EF760  90 61 00 08 */	stw r3, 0x8(r1)
 /* 803F3924 003EF764  7F E3 FB 78 */	mr r3, r31
-/* 803F3928 003EF768  4B FF F2 ED */	bl lbl_803F2C14
+/* 803F3928 003EF768  4B FF F2 ED */	bl far__Q33scn9grandmenu6CameraFv
 /* 803F392C 003EF76C  FF A0 08 90 */	fmr f29, f1
 /* 803F3930 003EF770  7F E3 FB 78 */	mr r3, r31
-/* 803F3934 003EF774  4B FF F2 D9 */	bl lbl_803F2C0C
+/* 803F3934 003EF774  4B FF F2 D9 */	bl near__Q33scn9grandmenu6CameraFv
 /* 803F3938 003EF778  FF C0 08 90 */	fmr f30, f1
 /* 803F393C 003EF77C  7F E3 FB 78 */	mr r3, r31
-/* 803F3940 003EF780  4B FF F2 C5 */	bl lbl_803F2C04
+/* 803F3940 003EF780  4B FF F2 C5 */	bl aspect__Q33scn9grandmenu6CameraFv
 /* 803F3944 003EF784  FF E0 08 90 */	fmr f31, f1
 /* 803F3948 003EF788  7F E3 FB 78 */	mr r3, r31
-/* 803F394C 003EF78C  4B DC 95 A9 */	bl lbl_801BCEF4
+/* 803F394C 003EF78C  4B DC 95 A9 */	bl getToLeftDist__Q35mcoll6detail19ShapeDiamondContextCFv
 /* 803F3950 003EF790  38 61 00 08 */	addi r3, r1, 0x8
 /* 803F3954 003EF794  FC 40 F8 90 */	fmr f2, f31
 /* 803F3958 003EF798  FC 60 F0 90 */	fmr f3, f30
 /* 803F395C 003EF79C  FC 80 E8 90 */	fmr f4, f29
-/* 803F3960 003EF7A0  4B D9 85 95 */	bl lbl_8018BEF4
+/* 803F3960 003EF7A0  4B D9 85 95 */	bl setProjPerspective__Q23g3d14CameraAccessorCFffff
 /* 803F3964 003EF7A4  39 61 00 30 */	addi r11, r1, 0x30
 /* 803F3968 003EF7A8  4B C1 39 91 */	bl lbl_800072F8
 /* 803F396C 003EF7AC  83 E1 00 14 */	lwz r31, 0x14(r1)
@@ -246,8 +246,8 @@ lbl_803F38DC:
 /* 803F3978 003EF7B8  7C 08 03 A6 */	mtlr r0
 /* 803F397C 003EF7BC  38 21 00 30 */	addi r1, r1, 0x30
 /* 803F3980 003EF7C0  4E 80 00 20 */	blr
-.global lbl_803F3984
-lbl_803F3984:
+.global setViewMtx__Q33scn9grandmenu10G3DRootSetFv
+setViewMtx__Q33scn9grandmenu10G3DRootSetFv:
 /* 803F3984 003EF7C4  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 803F3988 003EF7C8  7C 08 02 A6 */	mflr r0
 /* 803F398C 003EF7CC  90 01 00 54 */	stw r0, 0x54(r1)
@@ -255,21 +255,21 @@ lbl_803F3984:
 /* 803F3994 003EF7D4  93 C1 00 48 */	stw r30, 0x48(r1)
 /* 803F3998 003EF7D8  7C 7E 1B 78 */	mr r30, r3
 /* 803F399C 003EF7DC  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 803F39A0 003EF7E0  4B E1 68 D9 */	bl lbl_8020A278
+/* 803F39A0 003EF7E0  4B E1 68 D9 */	bl bgPlate__Q33scn7history9ComponentFv
 /* 803F39A4 003EF7E4  38 80 00 00 */	li r4, 0x0
-/* 803F39A8 003EF7E8  4B FF F4 B1 */	bl lbl_803F2E58
+/* 803F39A8 003EF7E8  4B FF F4 B1 */	bl camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind
 /* 803F39AC 003EF7EC  7C 7F 1B 78 */	mr r31, r3
 /* 803F39B0 003EF7F0  38 7E 00 04 */	addi r3, r30, 0x4
 /* 803F39B4 003EF7F4  38 80 00 00 */	li r4, 0x0
-/* 803F39B8 003EF7F8  4B FF FE 4D */	bl lbl_803F3804
-/* 803F39BC 003EF7FC  4B DA 0A 91 */	bl lbl_8019444C
+/* 803F39B8 003EF7F8  4B FF FE 4D */	bl "__vc__Q33hel6common30AutoDeleteArray<Q23g3d4Root,1>FUl"
+/* 803F39BC 003EF7FC  4B DA 0A 91 */	bl currentCamera__Q23g3d4RootCFv
 /* 803F39C0 003EF800  90 61 00 08 */	stw r3, 0x8(r1)
 /* 803F39C4 003EF804  38 61 00 10 */	addi r3, r1, 0x10
 /* 803F39C8 003EF808  7F E4 FB 78 */	mr r4, r31
-/* 803F39CC 003EF80C  4B FF F2 51 */	bl lbl_803F2C1C
+/* 803F39CC 003EF80C  4B FF F2 51 */	bl viewMtx__Q33scn9grandmenu6CameraFv
 /* 803F39D0 003EF810  38 61 00 08 */	addi r3, r1, 0x8
 /* 803F39D4 003EF814  38 81 00 10 */	addi r4, r1, 0x10
-/* 803F39D8 003EF818  4B D9 84 F1 */	bl lbl_8018BEC8
+/* 803F39D8 003EF818  4B D9 84 F1 */	bl setViewMtx__Q23g3d14CameraAccessorCFRCQ33hel4math8Matrix34
 /* 803F39DC 003EF81C  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 803F39E0 003EF820  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 803F39E4 003EF824  80 01 00 54 */	lwz r0, 0x54(r1)

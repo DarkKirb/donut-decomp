@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80492CC8
-lbl_80492CC8:
+.global __vt__Q43scn4step3sfx4Stop
+__vt__Q43scn4step3sfx4Stop:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803CF958
-	.4byte lbl_803CFB20
-	.4byte lbl_803CFB8C
-	.4byte lbl_803CFC04
-	.4byte lbl_803CFCAC
+	.4byte __dt__Q43scn4step3sfx4StopFv
+	.4byte onStopNormalStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040F3A8
-lbl_8040F3A8:
+.global InvCbpTable_8040F3A8
+InvCbpTable_8040F3A8:
 
 	.4byte 0
 	.4byte 0x0000001F
@@ -133,8 +133,8 @@ lbl_8040F3A8:
 	.4byte 0x00000039
 	.4byte 0x00000036
 
-.global lbl_8040F5A8
-lbl_8040F5A8:
+.global InvSbpTable_8040F5A8
+InvSbpTable_8040F5A8:
 
 	.4byte 0
 	.4byte 0x0000001E

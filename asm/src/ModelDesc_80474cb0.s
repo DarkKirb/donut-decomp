@@ -1,29 +1,29 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80474CB0
-lbl_80474CB0:
+.global "@50131_80474CB0"
+"@50131_80474CB0":
 
 	.4byte 0x44616D61
 	.4byte 0x67654574
 	.4byte 0x63000000
 
-.global lbl_80474CBC
-lbl_80474CBC:
+.global "@50132_80474CBC"
+"@50132_80474CBC":
 
 	.4byte 0x536C6F70
 	.4byte 0x65537461
 	.4byte 0x72740000
 
-.global lbl_80474CC8
-lbl_80474CC8:
+.global "@50133_80474CC8"
+"@50133_80474CC8":
 
 	.4byte 0x536C6F70
 	.4byte 0x654C6F6F
 	.4byte 0x70000000
 
-.global lbl_80474CD4
-lbl_80474CD4:
+.global "@50135_80474CD4"
+"@50135_80474CD4":
 
 	.4byte 0x42726F6F
 	.4byte 0x6D486174
@@ -35,8 +35,8 @@ lbl_80474CD4:
 	.4byte 0x45786563
 	.4byte 0
 
-.global lbl_80474CF8
-lbl_80474CF8:
+.global "@50136_80474CF8"
+"@50136_80474CF8":
 
 	.4byte 0x42726F6F
 	.4byte 0x6D486174
@@ -52,8 +52,8 @@ lbl_80474CF8:
 	.4byte 0x742E4578
 	.4byte 0x65630000
 
-.global lbl_80474D2C
-lbl_80474D2C:
+.global "@50137_80474D2C"
+"@50137_80474D2C":
 
 	.4byte 0x42726F6F
 	.4byte 0x6D486174
@@ -68,8 +68,8 @@ lbl_80474D2C:
 	.4byte 0x2E457865
 	.4byte 0x63000000
 
-.global lbl_80474D5C
-lbl_80474D5C:
+.global "@50138_80474D5C"
+"@50138_80474D5C":
 
 	.4byte 0x42726F6F
 	.4byte 0x6D486174
@@ -81,8 +81,8 @@ lbl_80474D5C:
 	.4byte 0x652E4578
 	.4byte 0x65630000
 
-.global lbl_80474D80
-lbl_80474D80:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy11broomhatter23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy11broomhatter23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -99,7 +99,7 @@ lbl_80474D80:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80474CD4
+	.4byte "@50135_80474CD4"
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -129,17 +129,17 @@ lbl_80474D80:
 	.4byte 0x0000000A
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80474CF8
+	.4byte "@50136_80474CF8"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80474D2C
+	.4byte "@50137_80474D2C"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80474D5C
+	.4byte "@50138_80474D5C"
 	.4byte 0
 	.4byte 0
 	.4byte 0

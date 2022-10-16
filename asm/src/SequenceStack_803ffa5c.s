@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803FFA5C
-lbl_803FFA5C:
+.global __dt__Q23seq13SequenceStackFv
+__dt__Q23seq13SequenceStackFv:
 /* 803FFA5C 003FB89C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803FFA60 003FB8A0  7C 08 02 A6 */	mflr r0
 /* 803FFA64 003FB8A4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -17,10 +17,10 @@ lbl_803FFA5C:
 lbl_803FFA84:
 /* 803FFA84 003FB8C4  38 61 00 08 */	addi r3, r1, 0x8
 /* 803FFA88 003FB8C8  7F C4 F3 78 */	mr r4, r30
-/* 803FFA8C 003FB8CC  48 00 01 11 */	bl lbl_803FFB9C
+/* 803FFA8C 003FB8CC  48 00 01 11 */	bl pop__Q23seq13SequenceStackFv
 /* 803FFA90 003FB8D0  38 61 00 08 */	addi r3, r1, 0x8
 /* 803FFA94 003FB8D4  38 80 FF FF */	li r4, -0x1
-/* 803FFA98 003FB8D8  4B D7 5B 69 */	bl lbl_80175600
+/* 803FFA98 003FB8D8  4B D7 5B 69 */	bl "__dt__Q23std26auto_ptr<Q23seq9ISequence>Fv"
 .global lbl_803FFA9C
 lbl_803FFA9C:
 /* 803FFA9C 003FB8DC  80 1E 00 00 */	lwz r0, 0x0(r30)
@@ -28,12 +28,12 @@ lbl_803FFA9C:
 /* 803FFAA4 003FB8E4  40 82 FF E0 */	bne lbl_803FFA84
 /* 803FFAA8 003FB8E8  7F C3 F3 78 */	mr r3, r30
 /* 803FFAAC 003FB8EC  38 80 FF FF */	li r4, -0x1
-/* 803FFAB0 003FB8F0  4B D7 60 B9 */	bl lbl_80175B68
+/* 803FFAB0 003FB8F0  4B D7 60 B9 */	bl __dt__Q23scn6ISceneFv
 /* 803FFAB4 003FB8F4  7F E0 07 34 */	extsh r0, r31
 /* 803FFAB8 003FB8F8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803FFABC 003FB8FC  40 81 00 0C */	ble lbl_803FFAC8
 /* 803FFAC0 003FB900  7F C3 F3 78 */	mr r3, r30
-/* 803FFAC4 003FB904  4B DB FC 51 */	bl lbl_801BF714
+/* 803FFAC4 003FB904  4B DB FC 51 */	bl __dl__FPv
 .global lbl_803FFAC8
 lbl_803FFAC8:
 /* 803FFAC8 003FB908  7F C3 F3 78 */	mr r3, r30
@@ -43,8 +43,8 @@ lbl_803FFAC8:
 /* 803FFAD8 003FB918  7C 08 03 A6 */	mtlr r0
 /* 803FFADC 003FB91C  38 21 00 20 */	addi r1, r1, 0x20
 /* 803FFAE0 003FB920  4E 80 00 20 */	blr
-.global lbl_803FFAE4
-lbl_803FFAE4:
+.global top__Q23seq13SequenceStackFv
+top__Q23seq13SequenceStackFv:
 /* 803FFAE4 003FB924  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803FFAE8 003FB928  7C 08 02 A6 */	mflr r0
 /* 803FFAEC 003FB92C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -55,10 +55,10 @@ lbl_803FFAE4:
 /* 803FFB00 003FB940  3B E3 FF FF */	addi r31, r3, -0x1
 /* 803FFB04 003FB944  7F E3 FB 78 */	mr r3, r31
 /* 803FFB08 003FB948  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 803FFB0C 003FB94C  4B C2 49 95 */	bl lbl_800244A0
+/* 803FFB0C 003FB94C  4B C2 49 95 */	bl DefaultSwitchThreadCallback
 /* 803FFB10 003FB950  38 7E 00 04 */	addi r3, r30, 0x4
 /* 803FFB14 003FB954  7F E4 FB 78 */	mr r4, r31
-/* 803FFB18 003FB958  4B DD 89 8D */	bl lbl_801D84A4
+/* 803FFB18 003FB958  4B DD 89 8D */	bl "__vc__Q33hel6common36Array<PQ25ocoll16SearchAttackNode,8>FUl"
 /* 803FFB1C 003FB95C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803FFB20 003FB960  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FFB24 003FB964  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -66,8 +66,8 @@ lbl_803FFAE4:
 /* 803FFB2C 003FB96C  7C 08 03 A6 */	mtlr r0
 /* 803FFB30 003FB970  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FFB34 003FB974  4E 80 00 20 */	blr
-.global lbl_803FFB38
-lbl_803FFB38:
+.global "push__Q23seq13SequenceStackFQ23std26auto_ptr<Q23seq9ISequence>"
+"push__Q23seq13SequenceStackFQ23std26auto_ptr<Q23seq9ISequence>":
 /* 803FFB38 003FB978  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803FFB3C 003FB97C  7C 08 02 A6 */	mflr r0
 /* 803FFB40 003FB980  90 01 00 14 */	stw r0, 0x14(r1)
@@ -82,7 +82,7 @@ lbl_803FFB38:
 /* 803FFB64 003FB9A4  41 82 00 20 */	beq lbl_803FFB84
 /* 803FFB68 003FB9A8  38 63 00 04 */	addi r3, r3, 0x4
 /* 803FFB6C 003FB9AC  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 803FFB70 003FB9B0  4B DD 89 35 */	bl lbl_801D84A4
+/* 803FFB70 003FB9B0  4B DD 89 35 */	bl "__vc__Q33hel6common36Array<PQ25ocoll16SearchAttackNode,8>FUl"
 /* 803FFB74 003FB9B4  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803FFB78 003FB9B8  80 7E 00 00 */	lwz r3, 0x0(r30)
 /* 803FFB7C 003FB9BC  38 03 00 01 */	addi r0, r3, 0x1
@@ -95,8 +95,8 @@ lbl_803FFB84:
 /* 803FFB90 003FB9D0  7C 08 03 A6 */	mtlr r0
 /* 803FFB94 003FB9D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FFB98 003FB9D8  4E 80 00 20 */	blr
-.global lbl_803FFB9C
-lbl_803FFB9C:
+.global pop__Q23seq13SequenceStackFv
+pop__Q23seq13SequenceStackFv:
 /* 803FFB9C 003FB9DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803FFBA0 003FB9E0  7C 08 02 A6 */	mflr r0
 /* 803FFBA4 003FB9E4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -105,7 +105,7 @@ lbl_803FFB9C:
 /* 803FFBB0 003FB9F0  7C 7E 1B 78 */	mr r30, r3
 /* 803FFBB4 003FB9F4  7C 9D 23 78 */	mr r29, r4
 /* 803FFBB8 003FB9F8  7F A3 EB 78 */	mr r3, r29
-/* 803FFBBC 003FB9FC  4B FF FF 29 */	bl lbl_803FFAE4
+/* 803FFBBC 003FB9FC  4B FF FF 29 */	bl top__Q23seq13SequenceStackFv
 /* 803FFBC0 003FBA00  90 7E 00 00 */	stw r3, 0x0(r30)
 /* 803FFBC4 003FBA04  80 9D 00 00 */	lwz r4, 0x0(r29)
 /* 803FFBC8 003FBA08  38 64 FF FF */	addi r3, r4, -0x1
@@ -117,11 +117,11 @@ lbl_803FFB9C:
 lbl_803FFBDC:
 /* 803FFBDC 003FBA1C  38 7D 00 04 */	addi r3, r29, 0x4
 /* 803FFBE0 003FBA20  7F C4 F3 78 */	mr r4, r30
-/* 803FFBE4 003FBA24  4B DD 88 C1 */	bl lbl_801D84A4
+/* 803FFBE4 003FBA24  4B DD 88 C1 */	bl "__vc__Q33hel6common36Array<PQ25ocoll16SearchAttackNode,8>FUl"
 /* 803FFBE8 003FBA28  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 803FFBEC 003FBA2C  38 7D 00 04 */	addi r3, r29, 0x4
 /* 803FFBF0 003FBA30  38 9E FF FF */	addi r4, r30, -0x1
-/* 803FFBF4 003FBA34  4B DD 88 B1 */	bl lbl_801D84A4
+/* 803FFBF4 003FBA34  4B DD 88 B1 */	bl "__vc__Q33hel6common36Array<PQ25ocoll16SearchAttackNode,8>FUl"
 /* 803FFBF8 003FBA38  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803FFBFC 003FBA3C  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_803FFC00

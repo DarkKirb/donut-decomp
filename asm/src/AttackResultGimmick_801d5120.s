@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801D5120
-lbl_801D5120:
+.global __ct__Q25ocoll19AttackResultGimmickFv
+__ct__Q25ocoll19AttackResultGimmickFv:
 /* 801D5120 001D0F60  38 80 00 00 */	li r4, 0x0
 /* 801D5124 001D0F64  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801D5128 001D0F68  38 A3 00 04 */	addi r5, r3, 0x4
-/* 801D512C 001D0F6C  C0 02 9D 00 */	lfs f0, lbl_8055FC80@sda21(r2)
+/* 801D512C 001D0F6C  C0 02 9D 00 */	lfs f0, "@50024"@sda21(r2)
 /* 801D5130 001D0F70  38 03 00 7C */	addi r0, r3, 0x7c
 .global lbl_801D5134
 lbl_801D5134:
@@ -17,8 +17,8 @@ lbl_801D5134:
 /* 801D5144 001D0F84  7C 05 00 40 */	cmplw r5, r0
 /* 801D5148 001D0F88  41 80 FF EC */	blt lbl_801D5134
 /* 801D514C 001D0F8C  4E 80 00 20 */	blr
-.global lbl_801D5150
-lbl_801D5150:
+.global add__Q25ocoll19AttackResultGimmickFRCQ35ocoll19AttackResultGimmick5Datum
+add__Q25ocoll19AttackResultGimmickFRCQ35ocoll19AttackResultGimmick5Datum:
 /* 801D5150 001D0F90  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D5154 001D0F94  7C 08 02 A6 */	mflr r0
 /* 801D5158 001D0F98  90 01 00 24 */	stw r0, 0x24(r1)
@@ -32,7 +32,7 @@ lbl_801D5150:
 /* 801D5178 001D0FB8  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 801D517C 001D0FBC  7F E3 FB 78 */	mr r3, r31
 /* 801D5180 001D0FC0  38 80 00 0A */	li r4, 0xa
-/* 801D5184 001D0FC4  4B E4 F3 1D */	bl lbl_800244A0
+/* 801D5184 001D0FC4  4B E4 F3 1D */	bl DefaultSwitchThreadCallback
 /* 801D5188 001D0FC8  1C 1F 00 0C */	mulli r0, r31, 0xc
 /* 801D518C 001D0FCC  7C 9D 02 14 */	add r4, r29, r0
 /* 801D5190 001D0FD0  80 7E 00 00 */	lwz r3, 0x0(r30)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80483EB0
-lbl_80483EB0:
+.global "@87026"
+"@87026":
 
 	.4byte lbl_8033FCD4
 	.4byte lbl_8033FC94
@@ -23,159 +23,159 @@ lbl_80483EB0:
 	.4byte lbl_80340094
 	.4byte lbl_803400D4
 
-.global lbl_80483EF8
-lbl_80483EF8:
+.global "__vt__Q24util104StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StatePiggyback,PQ43scn4step4hero4Hero,b>"
+"__vt__Q24util104StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StatePiggyback,PQ43scn4step4hero4Hero,b>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340868
-	.4byte lbl_80340594
+	.4byte "__dt__Q24util104StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StatePiggyback,PQ43scn4step4hero4Hero,b>Fv"
+	.4byte "create__Q24util104StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StatePiggyback,PQ43scn4step4hero4Hero,b>Fv"
 
-.global lbl_80483F08
-lbl_80483F08:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80340864
-	.4byte lbl_8034070C
-
-.global lbl_80483F18
-lbl_80483F18:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateAnyWhereIn,PQ43scn4step4hero4Hero>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateAnyWhereIn,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340860
-	.4byte lbl_8034050C
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateAnyWhereIn,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateAnyWhereIn,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80483F28
-lbl_80483F28:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8034085C
-	.4byte lbl_803405B4
-
-.global lbl_80483F38
-lbl_80483F38:
+.global "__vt__Q24util99StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick13StateWarpStar,PQ43scn4step4hero4Hero,b,i>"
+"__vt__Q24util99StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick13StateWarpStar,PQ43scn4step4hero4Hero,b,i>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340858
-	.4byte lbl_80340530
+	.4byte "__dt__Q24util99StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick13StateWarpStar,PQ43scn4step4hero4Hero,b,i>Fv"
+	.4byte "create__Q24util99StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick13StateWarpStar,PQ43scn4step4hero4Hero,b,i>Fv"
 
-.global lbl_80483F48
-lbl_80483F48:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80340854
-	.4byte lbl_80340614
-
-.global lbl_80483F58
-lbl_80483F58:
+.global "__vt__Q24util117StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick15StateWarpStarIn,PQ43scn4step4hero4Hero,Q33hel4math7Vector2>"
+"__vt__Q24util117StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick15StateWarpStarIn,PQ43scn4step4hero4Hero,Q33hel4math7Vector2>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340850
-	.4byte lbl_80340670
+	.4byte "__dt__Q24util117StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick15StateWarpStarIn,PQ43scn4step4hero4Hero,Q33hel4math7Vector2>Fv"
+	.4byte "create__Q24util117StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick15StateWarpStarIn,PQ43scn4step4hero4Hero,Q33hel4math7Vector2>Fv"
 
-.global lbl_80483F68
-lbl_80483F68:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8034084C
-	.4byte lbl_80340728
-
-.global lbl_80483F78
-lbl_80483F78:
+.global "__vt__Q24util125StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick21StateReturnWarpLowper,PQ43scn4step4hero4Hero,Q33hel4math7Vector2,b>"
+"__vt__Q24util125StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick21StateReturnWarpLowper,PQ43scn4step4hero4Hero,Q33hel4math7Vector2,b>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340848
-	.4byte lbl_80340744
+	.4byte "__dt__Q24util125StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick21StateReturnWarpLowper,PQ43scn4step4hero4Hero,Q33hel4math7Vector2,b>Fv"
+	.4byte "create__Q24util125StateFactoryArg3<Q24util6IState,Q53scn4step4hero7gimmick21StateReturnWarpLowper,PQ43scn4step4hero4Hero,Q33hel4math7Vector2,b>Fv"
 
-.global lbl_80483F88
-lbl_80483F88:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80340844
-	.4byte lbl_80340760
-
-.global lbl_80483F98
-lbl_80483F98:
+.global "__vt__Q24util121StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick19StateLeaveLvMapDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>"
+"__vt__Q24util121StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick19StateLeaveLvMapDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340840
-	.4byte lbl_8034077C
+	.4byte "__dt__Q24util121StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick19StateLeaveLvMapDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
+	.4byte "create__Q24util121StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick19StateLeaveLvMapDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
 
-.global lbl_80483FA8
-lbl_80483FA8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8034083C
-	.4byte lbl_80340798
-
-.global lbl_80483FB8
-lbl_80483FB8:
+.global "__vt__Q24util125StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateLeaveChallengeDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>"
+"__vt__Q24util125StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateLeaveChallengeDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340838
-	.4byte lbl_80340690
+	.4byte "__dt__Q24util125StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateLeaveChallengeDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
+	.4byte "create__Q24util125StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateLeaveChallengeDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
 
-.global lbl_80483FC8
-lbl_80483FC8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80340834
-	.4byte lbl_803407B4
-
-.global lbl_80483FD8
-lbl_80483FD8:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick16StateChallengeIn,PQ43scn4step4hero4Hero>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick16StateChallengeIn,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340830
-	.4byte lbl_803407D0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick16StateChallengeIn,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick16StateChallengeIn,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80483FE8
-lbl_80483FE8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8034082C
-	.4byte lbl_803407EC
-
-.global lbl_80483FF8
-lbl_80483FF8:
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateShipRepairDemo,PQ43scn4step4hero4Hero>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateShipRepairDemo,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80340828
-	.4byte lbl_80340808
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateShipRepairDemo,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateShipRepairDemo,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80484008
-lbl_80484008:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80340824
-	.4byte lbl_803406EC
-
-.global lbl_80484018
-lbl_80484018:
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common25StateShipRepairDemoFollow,PQ43scn4step4hero4Hero>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common25StateShipRepairDemoFollow,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8033C7C8
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common25StateShipRepairDemoFollow,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common25StateShipRepairDemoFollow,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80484024
-lbl_80484024:
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common24StateShipRepairDemoAfter,PQ43scn4step4hero4Hero>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common24StateShipRepairDemoAfter,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common24StateShipRepairDemoAfter,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common24StateShipRepairDemoAfter,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common30StateShipRepairDemoAfterFollow,PQ43scn4step4hero4Hero>"
+"__vt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common30StateShipRepairDemoAfterFollow,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common30StateShipRepairDemoAfterFollow,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util111StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common30StateShipRepairDemoAfterFollow,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick21StateLeaveSubgameDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>"
+"__vt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick21StateLeaveSubgameDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick21StateLeaveSubgameDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
+	.4byte "create__Q24util123StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick21StateLeaveSubgameDoor,PQ43scn4step4hero4Hero,Q33hel4math7Vector3>Fv"
+
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick14StateFirstDemo,PQ43scn4step4hero4Hero>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick14StateFirstDemo,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick14StateFirstDemo,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick14StateFirstDemo,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero11staffcredit9StateInit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero11staffcredit9StateInit,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero11staffcredit9StateInit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero11staffcredit9StateInit,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWait,PQ43scn4step4hero4Hero>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWait,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWait,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWait,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateWait,PQ43scn4step4hero4Hero>"
+"__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateWait,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateWait,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateWait,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util112StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common12StateCopyPre,PQ43scn4step4hero4Hero,Q25ostop9ReqHandle>"
+"__vt__Q24util112StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common12StateCopyPre,PQ43scn4step4hero4Hero,Q25ostop9ReqHandle>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util112StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common12StateCopyPre,PQ43scn4step4hero4Hero,Q25ostop9ReqHandle>Fv"
+	.4byte "create__Q24util112StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common12StateCopyPre,PQ43scn4step4hero4Hero,Q25ostop9ReqHandle>Fv"
+
+.global "__vt__Q24util41StateChanger<Q43scn4step4hero6IState,256>"
+"__vt__Q24util41StateChanger<Q43scn4step4hero6IState,256>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util41StateChanger<Q43scn4step4hero6IState,256>Fv"
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -187,15 +187,15 @@ lbl_80484024:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80484048
-lbl_80484048:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80484054
-lbl_80484054:
+.global "@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -207,15 +207,15 @@ lbl_80484054:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80484078
-lbl_80484078:
+.global "@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80484084
-lbl_80484084:
+.global "@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -227,15 +227,15 @@ lbl_80484084:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_804840A8
-lbl_804840A8:
+.global "@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4hero4Hero,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_804840B4
-lbl_804840B4:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -247,15 +247,15 @@ lbl_804840B4:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_804840D8
-lbl_804840D8:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_804840E4
-lbl_804840E4:
+.global "@STRING@__ml__Q44nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -267,15 +267,15 @@ lbl_804840E4:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80484108
-lbl_80484108:
+.global "@STRING@__ml__Q44nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80484114
-lbl_80484114:
+.global "@STRING@GetBack__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -287,8 +287,8 @@ lbl_80484114:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_80484138
-lbl_80484138:
+.global "@STRING@GetBack__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

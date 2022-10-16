@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8046B140
-lbl_8046B140:
+.global "@51535"
+"@51535":
 
 	.4byte 0x496E7661
 	.4byte 0x6C69642E
 	.4byte 0x45786563
 	.4byte 0x28290000
 
-.global lbl_8046B150
-lbl_8046B150:
+.global "@51536_8046B150"
+"@51536_8046B150":
 
 	.4byte 0x53757065
 	.4byte 0x72436F70
@@ -19,8 +19,8 @@ lbl_8046B150:
 	.4byte 0x65632829
 	.4byte 0
 
-.global lbl_8046B168
-lbl_8046B168:
+.global "@51537_8046B168"
+"@51537_8046B168":
 
 	.4byte 0x53757065
 	.4byte 0x7253776F
@@ -30,8 +30,8 @@ lbl_8046B168:
 	.4byte 0x45786563
 	.4byte 0x28290000
 
-.global lbl_8046B184
-lbl_8046B184:
+.global "@51538_8046B184"
+"@51538_8046B184":
 
 	.4byte 0x53757065
 	.4byte 0x7248616D
@@ -41,8 +41,8 @@ lbl_8046B184:
 	.4byte 0x2E457865
 	.4byte 0x63282900
 
-.global lbl_8046B1A0
-lbl_8046B1A0:
+.global "@51539_8046B1A0"
+"@51539_8046B1A0":
 
 	.4byte 0x426F7373
 	.4byte 0x506F7765
@@ -53,8 +53,8 @@ lbl_8046B1A0:
 	.4byte 0x6F6E6728
 	.4byte 0x29000000
 
-.global lbl_8046B1C0
-lbl_8046B1C0:
+.global "@51540_8046B1C0"
+"@51540_8046B1C0":
 
 	.4byte 0x426F7373
 	.4byte 0x506F7765
@@ -65,8 +65,8 @@ lbl_8046B1C0:
 	.4byte 0x686F7274
 	.4byte 0x28290000
 
-.global lbl_8046B1E0
-lbl_8046B1E0:
+.global "@51541_8046B1E0"
+"@51541_8046B1E0":
 
 	.4byte 0x426F7373
 	.4byte 0x506F7765
@@ -77,19 +77,19 @@ lbl_8046B1E0:
 	.4byte 0x2E457865
 	.4byte 0x63282900
 
-.global lbl_8046B200
-lbl_8046B200:
+.global "T_QUAKE_NAME_TABLE__Q43scn4step6camera23@unnamed@ZoomQuake_cpp@"
+"T_QUAKE_NAME_TABLE__Q43scn4step6camera23@unnamed@ZoomQuake_cpp@":
 
-	.4byte lbl_8046B140
-	.4byte lbl_8046B150
-	.4byte lbl_8046B168
-	.4byte lbl_8046B184
-	.4byte lbl_8046B1A0
-	.4byte lbl_8046B1C0
-	.4byte lbl_8046B1E0
+	.4byte "@51535"
+	.4byte "@51536_8046B150"
+	.4byte "@51537_8046B168"
+	.4byte "@51538_8046B184"
+	.4byte "@51539_8046B1A0"
+	.4byte "@51540_8046B1C0"
+	.4byte "@51541_8046B1E0"
 
-.global lbl_8046B21C
-lbl_8046B21C:
+.global "@51699"
+"@51699":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570

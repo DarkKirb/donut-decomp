@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802E01E0
-lbl_802E01E0:
+.global Create__Q53scn4step5enemy6shotzo10CharaParamFv
+Create__Q53scn4step5enemy6shotzo10CharaParamFv:
 /* 802E01E0 002DC020  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 802E01E4 002DC024  7C 08 02 A6 */	mflr r0
 /* 802E01E8 002DC028  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 802E01EC 002DC02C  93 E1 00 BC */	stw r31, 0xbc(r1)
 /* 802E01F0 002DC030  7C 7F 1B 78 */	mr r31, r3
 /* 802E01F4 002DC034  38 61 00 10 */	addi r3, r1, 0x10
-/* 802E01F8 002DC038  4B FB 15 55 */	bl lbl_8029174C
+/* 802E01F8 002DC038  4B FB 15 55 */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802E01FC 002DC03C  38 A1 00 5C */	addi r5, r1, 0x5c
 /* 802E0200 002DC040  38 81 00 0C */	addi r4, r1, 0xc
 /* 802E0204 002DC044  38 00 00 0A */	li r0, 0xa
@@ -21,7 +21,7 @@ lbl_802E020C:
 /* 802E0214 002DC054  90 65 00 04 */	stw r3, 0x4(r5)
 /* 802E0218 002DC058  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 802E021C 002DC05C  42 00 FF F0 */	bdnz lbl_802E020C
-/* 802E0220 002DC060  80 62 C2 D0 */	lwz r3, lbl_80562250@sda21(r2)
+/* 802E0220 002DC060  80 62 C2 D0 */	lwz r3, "@48730_80562250"@sda21(r2)
 /* 802E0224 002DC064  80 02 C2 D4 */	lwz r0, lbl_80562254@sda21(r2)
 /* 802E0228 002DC068  90 61 00 08 */	stw r3, 0x8(r1)
 /* 802E022C 002DC06C  90 01 00 0C */	stw r0, 0xc(r1)
@@ -29,9 +29,9 @@ lbl_802E020C:
 /* 802E0234 002DC074  D0 01 00 64 */	stfs f0, 0x64(r1)
 /* 802E0238 002DC078  C0 01 00 0C */	lfs f0, 0xc(r1)
 /* 802E023C 002DC07C  D0 01 00 68 */	stfs f0, 0x68(r1)
-/* 802E0240 002DC080  C0 02 C2 D8 */	lfs f0, lbl_80562258@sda21(r2)
+/* 802E0240 002DC080  C0 02 C2 D8 */	lfs f0, "@48789_80562258"@sda21(r2)
 /* 802E0244 002DC084  D0 01 00 8C */	stfs f0, 0x8c(r1)
-/* 802E0248 002DC088  C0 02 C2 DC */	lfs f0, lbl_8056225C@sda21(r2)
+/* 802E0248 002DC088  C0 02 C2 DC */	lfs f0, "@48790_8056225C"@sda21(r2)
 /* 802E024C 002DC08C  D0 01 00 6C */	stfs f0, 0x6c(r1)
 /* 802E0250 002DC090  38 00 00 02 */	li r0, 0x2
 /* 802E0254 002DC094  90 01 00 84 */	stw r0, 0x84(r1)

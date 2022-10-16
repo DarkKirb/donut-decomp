@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047D4E8
-lbl_8047D4E8:
+.global "@56382"
+"@56382":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -69,61 +69,61 @@ lbl_8047D4E8:
 	.4byte 0x74746163
 	.4byte 0x6B282900
 
-.global lbl_8047D5E8
-lbl_8047D5E8:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWall,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWall,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA414
-	.4byte lbl_802EA338
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWall,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWall,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047D5F8
-lbl_8047D5F8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802EA410
-	.4byte lbl_802EA354
-
-.global lbl_8047D608
-lbl_8047D608:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWarp,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWarp,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA40C
-	.4byte lbl_802EA370
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWarp,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWarp,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047D618
-lbl_8047D618:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802EA408
-	.4byte lbl_802EA38C
-
-.global lbl_8047D628
-lbl_8047D628:
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateJumpAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateJumpAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA404
-	.4byte lbl_802EA3A8
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateJumpAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateJumpAttack,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047D638
-lbl_8047D638:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802EA400
-	.4byte lbl_802EA3C4
-
-.global lbl_8047D648
-lbl_8047D648:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA3FC
-	.4byte lbl_802EA3E0
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateWallAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateWallAttack,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateWallAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage15StateWallAttack,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage11StateAttack,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateJump,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateJump,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateJump,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateJump,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0

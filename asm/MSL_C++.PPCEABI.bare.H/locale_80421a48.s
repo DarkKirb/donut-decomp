@@ -1,54 +1,54 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80421A48
-lbl_80421A48:
+.global __vt__Q23std12out_of_range
+__vt__Q23std12out_of_range:
 
-	.4byte lbl_80556468
+	.4byte __RTTI__Q23std12out_of_range
 	.4byte 0
-	.4byte lbl_80014EC0
-	.4byte lbl_80014944
+	.4byte __dt__Q23std12out_of_rangeFv
+	.4byte what__Q23std11logic_errorCFv
 
-.global lbl_80421A58
-lbl_80421A58:
+.global "@10380"
+"@10380":
 
-	.4byte lbl_80556420
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
-	.4byte lbl_80556478
-	.4byte 0
-	.4byte 0
-	.4byte 0
-
-.global lbl_80421A70
-lbl_80421A70:
-
-	.4byte lbl_80556470
-	.4byte 0
-	.4byte lbl_80014E2C
-	.4byte lbl_80014944
-
-.global lbl_80421A80
-lbl_80421A80:
-
-	.4byte lbl_80556420
-	.4byte 0
-	.4byte lbl_80556478
+	.4byte __RTTI__Q23std11logic_error
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_80421A98
-lbl_80421A98:
+.global __vt__Q23std12length_error
+__vt__Q23std12length_error:
 
-	.4byte lbl_80556478
+	.4byte __RTTI__Q23std12length_error
 	.4byte 0
-	.4byte lbl_80014948
-	.4byte lbl_80014944
+	.4byte __dt__Q23std12length_errorFv
+	.4byte what__Q23std11logic_errorCFv
 
-.global lbl_80421AA8
-lbl_80421AA8:
+.global "@10382"
+"@10382":
 
-	.4byte lbl_80556420
+	.4byte __RTTI__Q23std9exception
+	.4byte 0
+	.4byte __RTTI__Q23std11logic_error
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q23std11logic_error
+__vt__Q23std11logic_error:
+
+	.4byte __RTTI__Q23std11logic_error
+	.4byte 0
+	.4byte __dt__Q23std11logic_errorFv
+	.4byte what__Q23std11logic_errorCFv
+
+.global "@10388"
+"@10388":
+
+	.4byte __RTTI__Q23std9exception
 	.4byte 0
 	.4byte 0
 	.4byte 0

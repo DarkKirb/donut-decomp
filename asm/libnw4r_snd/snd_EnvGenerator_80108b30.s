@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80108B30
-lbl_80108B30:
-/* 80108B30 00104970  C0 22 93 78 */	lfs f1, lbl_8055F2F8@sda21(r2)
+.global __ct__Q44nw4r3snd6detail12EnvGeneratorFv
+__ct__Q44nw4r3snd6detail12EnvGeneratorFv:
+/* 80108B30 00104970  C0 22 93 78 */	lfs f1, VOLUME_INIT__Q44nw4r3snd6detail12EnvGenerator@sda21(r2)
 /* 80108B34 00104974  38 80 00 00 */	li r4, 0x0
-/* 80108B38 00104978  C0 02 93 80 */	lfs f0, lbl_8055F300@sda21(r2)
-/* 80108B3C 0010497C  3C A0 80 41 */	lis r5, lbl_8040B458@ha
-/* 80108B40 00104980  38 A5 B4 58 */	addi r5, r5, lbl_8040B458@l
-/* 80108B44 00104984  C0 42 93 7C */	lfs f2, lbl_8055F2FC@sda21(r2)
+/* 80108B38 00104978  C0 02 93 80 */	lfs f0, "@3471_8055F300"@sda21(r2)
+/* 80108B3C 0010497C  3C A0 80 41 */	lis r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@ha
+/* 80108B40 00104980  38 A5 B4 58 */	addi r5, r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@l
+/* 80108B44 00104984  C0 42 93 7C */	lfs f2, "@3470"@sda21(r2)
 /* 80108B48 00104988  EC 00 00 72 */	fmuls f0, f0, f1
 /* 80108B4C 0010498C  C0 25 01 FC */	lfs f1, 0x1fc(r5)
 /* 80108B50 00104990  38 00 00 7F */	li r0, 0x7f
@@ -23,14 +23,14 @@ lbl_80108B30:
 /* 80108B74 001049B4  00 00 00 00 */	.4byte 0x00000000
 /* 80108B78 001049B8  00 00 00 00 */	.4byte 0x00000000
 /* 80108B7C 001049BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108B80
-lbl_80108B80:
-/* 80108B80 001049C0  C0 02 93 80 */	lfs f0, lbl_8055F300@sda21(r2)
+.global Init__Q44nw4r3snd6detail12EnvGeneratorFf
+Init__Q44nw4r3snd6detail12EnvGeneratorFf:
+/* 80108B80 001049C0  C0 02 93 80 */	lfs f0, "@3471_8055F300"@sda21(r2)
 /* 80108B84 001049C4  38 80 00 00 */	li r4, 0x0
-/* 80108B88 001049C8  3C A0 80 41 */	lis r5, lbl_8040B458@ha
-/* 80108B8C 001049CC  C0 42 93 7C */	lfs f2, lbl_8055F2FC@sda21(r2)
+/* 80108B88 001049C8  3C A0 80 41 */	lis r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@ha
+/* 80108B8C 001049CC  C0 42 93 7C */	lfs f2, "@3470"@sda21(r2)
 /* 80108B90 001049D0  EC 00 00 72 */	fmuls f0, f0, f1
-/* 80108B94 001049D4  38 A5 B4 58 */	addi r5, r5, lbl_8040B458@l
+/* 80108B94 001049D4  38 A5 B4 58 */	addi r5, r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@l
 /* 80108B98 001049D8  C0 25 01 FC */	lfs f1, 0x1fc(r5)
 /* 80108B9C 001049DC  38 00 00 7F */	li r0, 0x7f
 /* 80108BA0 001049E0  D0 23 00 10 */	stfs f1, 0x10(r3)
@@ -41,9 +41,9 @@ lbl_80108B80:
 /* 80108BB4 001049F4  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 80108BB8 001049F8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80108BBC 001049FC  4E 80 00 20 */	blr
-.global lbl_80108BC0
-lbl_80108BC0:
-/* 80108BC0 00104A00  C0 02 93 80 */	lfs f0, lbl_8055F300@sda21(r2)
+.global Reset__Q44nw4r3snd6detail12EnvGeneratorFf
+Reset__Q44nw4r3snd6detail12EnvGeneratorFf:
+/* 80108BC0 00104A00  C0 02 93 80 */	lfs f0, "@3471_8055F300"@sda21(r2)
 /* 80108BC4 00104A04  38 00 00 00 */	li r0, 0x0
 /* 80108BC8 00104A08  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80108BCC 00104A0C  EC 00 00 72 */	fmuls f0, f0, f1
@@ -51,24 +51,24 @@ lbl_80108BC0:
 /* 80108BD4 00104A14  4E 80 00 20 */	blr
 /* 80108BD8 00104A18  00 00 00 00 */	.4byte 0x00000000
 /* 80108BDC 00104A1C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108BE0
-lbl_80108BE0:
+.global GetValue__Q44nw4r3snd6detail12EnvGeneratorCFv
+GetValue__Q44nw4r3snd6detail12EnvGeneratorCFv:
 /* 80108BE0 00104A20  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 80108BE4 00104A24  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80108BE8 00104A28  40 82 00 14 */	bne lbl_80108BFC
-/* 80108BEC 00104A2C  C0 22 93 84 */	lfs f1, lbl_8055F304@sda21(r2)
+/* 80108BEC 00104A2C  C0 22 93 84 */	lfs f1, "@3479"@sda21(r2)
 /* 80108BF0 00104A30  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 80108BF4 00104A34  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80108BF8 00104A38  4D 82 00 20 */	beqlr
 .global lbl_80108BFC
 lbl_80108BFC:
 /* 80108BFC 00104A3C  C0 23 00 04 */	lfs f1, 0x4(r3)
-/* 80108C00 00104A40  C0 02 93 80 */	lfs f0, lbl_8055F300@sda21(r2)
+/* 80108C00 00104A40  C0 02 93 80 */	lfs f0, "@3471_8055F300"@sda21(r2)
 /* 80108C04 00104A44  EC 21 00 24 */	fdivs f1, f1, f0
 /* 80108C08 00104A48  4E 80 00 20 */	blr
 /* 80108C0C 00104A4C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108C10
-lbl_80108C10:
+.global Update__Q44nw4r3snd6detail12EnvGeneratorFi
+Update__Q44nw4r3snd6detail12EnvGeneratorFi:
 /* 80108C10 00104A50  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80108C14 00104A54  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 80108C18 00104A58  2C 00 00 00 */	cmpwi r0, 0x0
@@ -82,7 +82,7 @@ lbl_80108C10:
 /* 80108C38 00104A78  48 00 01 30 */	b lbl_80108D68
 .global lbl_80108C3C
 lbl_80108C3C:
-/* 80108C3C 00104A7C  C0 02 93 88 */	lfs f0, lbl_8055F308@sda21(r2)
+/* 80108C3C 00104A7C  C0 02 93 88 */	lfs f0, "@3500"@sda21(r2)
 /* 80108C40 00104A80  7C 89 03 A6 */	mtctr r4
 /* 80108C44 00104A84  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80108C48 00104A88  40 81 01 20 */	ble lbl_80108D68
@@ -95,7 +95,7 @@ lbl_80108C50:
 /* 80108C5C 00104A9C  D0 23 00 04 */	stfs f1, 0x4(r3)
 /* 80108C60 00104AA0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80108C64 00104AA4  40 81 00 20 */	ble lbl_80108C84
-/* 80108C68 00104AA8  C0 02 93 84 */	lfs f0, lbl_8055F304@sda21(r2)
+/* 80108C68 00104AA8  C0 02 93 84 */	lfs f0, "@3479"@sda21(r2)
 /* 80108C6C 00104AAC  38 80 00 01 */	li r4, 0x1
 /* 80108C70 00104AB0  A0 03 00 16 */	lhz r0, 0x16(r3)
 /* 80108C74 00104AB4  D0 03 00 04 */	stfs f0, 0x4(r3)
@@ -132,12 +132,12 @@ lbl_80108CC8:
 /* 80108CC8 00104B08  3C A0 43 30 */	lis r5, 0x4330
 /* 80108CCC 00104B0C  6C 80 80 00 */	xoris r0, r4, 0x8000
 /* 80108CD0 00104B10  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80108CD4 00104B14  3C 80 80 41 */	lis r4, lbl_8040B358@ha
+/* 80108CD4 00104B14  3C 80 80 41 */	lis r4, DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator@ha
 /* 80108CD8 00104B18  88 C3 00 14 */	lbz r6, 0x14(r3)
-/* 80108CDC 00104B1C  38 84 B3 58 */	addi r4, r4, lbl_8040B358@l
+/* 80108CDC 00104B1C  38 84 B3 58 */	addi r4, r4, DecibelSquareTable__Q44nw4r3snd6detail12EnvGenerator@l
 /* 80108CE0 00104B20  90 A1 00 10 */	stw r5, 0x10(r1)
 /* 80108CE4 00104B24  54 C0 08 3C */	slwi r0, r6, 1
-/* 80108CE8 00104B28  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108CE8 00104B28  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108CEC 00104B2C  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80108CF0 00104B30  7C 04 02 AE */	lhax r0, r4, r0
 /* 80108CF4 00104B34  EC 40 18 28 */	fsubs f2, f0, f3
@@ -162,7 +162,7 @@ lbl_80108D38:
 /* 80108D38 00104B78  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 80108D3C 00104B7C  3C 00 43 30 */	lis r0, 0x4330
 /* 80108D40 00104B80  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80108D44 00104B84  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108D44 00104B84  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108D48 00104B88  90 01 00 10 */	stw r0, 0x10(r1)
 /* 80108D4C 00104B8C  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 80108D50 00104B90  C8 41 00 10 */	lfd f2, 0x10(r1)
@@ -175,18 +175,18 @@ lbl_80108D38:
 lbl_80108D68:
 /* 80108D68 00104BA8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80108D6C 00104BAC  4E 80 00 20 */	blr
-.global lbl_80108D70
-lbl_80108D70:
-/* 80108D70 00104BB0  3C A0 80 41 */	lis r5, lbl_8040B458@ha
+.global SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi
+SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi:
+/* 80108D70 00104BB0  3C A0 80 41 */	lis r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@ha
 /* 80108D74 00104BB4  54 80 10 3A */	slwi r0, r4, 2
-/* 80108D78 00104BB8  38 A5 B4 58 */	addi r5, r5, lbl_8040B458@l
+/* 80108D78 00104BB8  38 A5 B4 58 */	addi r5, r5, "@LOCAL@SetAttack__Q44nw4r3snd6detail12EnvGeneratorFi@attackTable"@l
 /* 80108D7C 00104BBC  7C 05 04 2E */	lfsx f0, r5, r0
 /* 80108D80 00104BC0  D0 03 00 10 */	stfs f0, 0x10(r3)
 /* 80108D84 00104BC4  4E 80 00 20 */	blr
 /* 80108D88 00104BC8  00 00 00 00 */	.4byte 0x00000000
 /* 80108D8C 00104BCC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108D90
-lbl_80108D90:
+.global SetHold__Q44nw4r3snd6detail12EnvGeneratorFi
+SetHold__Q44nw4r3snd6detail12EnvGeneratorFi:
 /* 80108D90 00104BD0  38 04 00 01 */	addi r0, r4, 0x1
 /* 80108D94 00104BD4  7C 00 01 D6 */	mullw r0, r0, r0
 /* 80108D98 00104BD8  7C 00 16 70 */	srawi r0, r0, 2
@@ -195,18 +195,18 @@ lbl_80108D90:
 /* 80108DA4 00104BE4  4E 80 00 20 */	blr
 /* 80108DA8 00104BE8  00 00 00 00 */	.4byte 0x00000000
 /* 80108DAC 00104BEC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108DB0
-lbl_80108DB0:
+.global SetDecay__Q44nw4r3snd6detail12EnvGeneratorFi
+SetDecay__Q44nw4r3snd6detail12EnvGeneratorFi:
 /* 80108DB0 00104BF0  2C 04 00 7F */	cmpwi r4, 0x7f
 /* 80108DB4 00104BF4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80108DB8 00104BF8  40 82 00 0C */	bne lbl_80108DC4
-/* 80108DBC 00104BFC  C0 02 93 7C */	lfs f0, lbl_8055F2FC@sda21(r2)
+/* 80108DBC 00104BFC  C0 02 93 7C */	lfs f0, "@3470"@sda21(r2)
 /* 80108DC0 00104C00  48 00 00 84 */	b lbl_80108E44
 .global lbl_80108DC4
 lbl_80108DC4:
 /* 80108DC4 00104C04  2C 04 00 7E */	cmpwi r4, 0x7e
 /* 80108DC8 00104C08  40 82 00 0C */	bne lbl_80108DD4
-/* 80108DCC 00104C0C  C0 02 93 98 */	lfs f0, lbl_8055F318@sda21(r2)
+/* 80108DCC 00104C0C  C0 02 93 98 */	lfs f0, "@3514"@sda21(r2)
 /* 80108DD0 00104C10  48 00 00 74 */	b lbl_80108E44
 .global lbl_80108DD4
 lbl_80108DD4:
@@ -217,11 +217,11 @@ lbl_80108DD4:
 /* 80108DE4 00104C24  38 84 00 01 */	addi r4, r4, 0x1
 /* 80108DE8 00104C28  90 01 00 08 */	stw r0, 0x8(r1)
 /* 80108DEC 00104C2C  6C 80 80 00 */	xoris r0, r4, 0x8000
-/* 80108DF0 00104C30  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108DF0 00104C30  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108DF4 00104C34  90 01 00 0C */	stw r0, 0xc(r1)
-/* 80108DF8 00104C38  C0 22 93 9C */	lfs f1, lbl_8055F31C@sda21(r2)
+/* 80108DF8 00104C38  C0 22 93 9C */	lfs f1, "@3515"@sda21(r2)
 /* 80108DFC 00104C3C  C8 41 00 08 */	lfd f2, 0x8(r1)
-/* 80108E00 00104C40  C0 02 93 A0 */	lfs f0, lbl_8055F320@sda21(r2)
+/* 80108E00 00104C40  C0 02 93 A0 */	lfs f0, "@3516_8055F320"@sda21(r2)
 /* 80108E04 00104C44  EC 42 18 28 */	fsubs f2, f2, f3
 /* 80108E08 00104C48  EC 22 00 72 */	fmuls f1, f2, f1
 /* 80108E0C 00104C4C  EC 01 00 24 */	fdivs f0, f1, f0
@@ -232,11 +232,11 @@ lbl_80108E14:
 /* 80108E18 00104C58  3C 00 43 30 */	lis r0, 0x4330
 /* 80108E1C 00104C5C  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 80108E20 00104C60  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80108E24 00104C64  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108E24 00104C64  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108E28 00104C68  90 01 00 10 */	stw r0, 0x10(r1)
-/* 80108E2C 00104C6C  C0 22 93 A4 */	lfs f1, lbl_8055F324@sda21(r2)
+/* 80108E2C 00104C6C  C0 22 93 A4 */	lfs f1, "@3517_8055F324"@sda21(r2)
 /* 80108E30 00104C70  C8 41 00 10 */	lfd f2, 0x10(r1)
-/* 80108E34 00104C74  C0 02 93 A0 */	lfs f0, lbl_8055F320@sda21(r2)
+/* 80108E34 00104C74  C0 02 93 A0 */	lfs f0, "@3516_8055F320"@sda21(r2)
 /* 80108E38 00104C78  EC 42 18 28 */	fsubs f2, f2, f3
 /* 80108E3C 00104C7C  EC 21 10 24 */	fdivs f1, f1, f2
 /* 80108E40 00104C80  EC 01 00 24 */	fdivs f0, f1, f0
@@ -245,24 +245,24 @@ lbl_80108E44:
 /* 80108E44 00104C84  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 80108E48 00104C88  38 21 00 20 */	addi r1, r1, 0x20
 /* 80108E4C 00104C8C  4E 80 00 20 */	blr
-.global lbl_80108E50
-lbl_80108E50:
+.global SetSustain__Q44nw4r3snd6detail12EnvGeneratorFi
+SetSustain__Q44nw4r3snd6detail12EnvGeneratorFi:
 /* 80108E50 00104C90  98 83 00 14 */	stb r4, 0x14(r3)
 /* 80108E54 00104C94  4E 80 00 20 */	blr
 /* 80108E58 00104C98  00 00 00 00 */	.4byte 0x00000000
 /* 80108E5C 00104C9C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80108E60
-lbl_80108E60:
+.global SetRelease__Q44nw4r3snd6detail12EnvGeneratorFi
+SetRelease__Q44nw4r3snd6detail12EnvGeneratorFi:
 /* 80108E60 00104CA0  2C 04 00 7F */	cmpwi r4, 0x7f
 /* 80108E64 00104CA4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80108E68 00104CA8  40 82 00 0C */	bne lbl_80108E74
-/* 80108E6C 00104CAC  C0 02 93 7C */	lfs f0, lbl_8055F2FC@sda21(r2)
+/* 80108E6C 00104CAC  C0 02 93 7C */	lfs f0, "@3470"@sda21(r2)
 /* 80108E70 00104CB0  48 00 00 84 */	b lbl_80108EF4
 .global lbl_80108E74
 lbl_80108E74:
 /* 80108E74 00104CB4  2C 04 00 7E */	cmpwi r4, 0x7e
 /* 80108E78 00104CB8  40 82 00 0C */	bne lbl_80108E84
-/* 80108E7C 00104CBC  C0 02 93 98 */	lfs f0, lbl_8055F318@sda21(r2)
+/* 80108E7C 00104CBC  C0 02 93 98 */	lfs f0, "@3514"@sda21(r2)
 /* 80108E80 00104CC0  48 00 00 74 */	b lbl_80108EF4
 .global lbl_80108E84
 lbl_80108E84:
@@ -273,11 +273,11 @@ lbl_80108E84:
 /* 80108E94 00104CD4  38 84 00 01 */	addi r4, r4, 0x1
 /* 80108E98 00104CD8  90 01 00 08 */	stw r0, 0x8(r1)
 /* 80108E9C 00104CDC  6C 80 80 00 */	xoris r0, r4, 0x8000
-/* 80108EA0 00104CE0  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108EA0 00104CE0  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108EA4 00104CE4  90 01 00 0C */	stw r0, 0xc(r1)
-/* 80108EA8 00104CE8  C0 22 93 9C */	lfs f1, lbl_8055F31C@sda21(r2)
+/* 80108EA8 00104CE8  C0 22 93 9C */	lfs f1, "@3515"@sda21(r2)
 /* 80108EAC 00104CEC  C8 41 00 08 */	lfd f2, 0x8(r1)
-/* 80108EB0 00104CF0  C0 02 93 A0 */	lfs f0, lbl_8055F320@sda21(r2)
+/* 80108EB0 00104CF0  C0 02 93 A0 */	lfs f0, "@3516_8055F320"@sda21(r2)
 /* 80108EB4 00104CF4  EC 42 18 28 */	fsubs f2, f2, f3
 /* 80108EB8 00104CF8  EC 22 00 72 */	fmuls f1, f2, f1
 /* 80108EBC 00104CFC  EC 01 00 24 */	fdivs f0, f1, f0
@@ -288,11 +288,11 @@ lbl_80108EC4:
 /* 80108EC8 00104D08  3C 00 43 30 */	lis r0, 0x4330
 /* 80108ECC 00104D0C  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 80108ED0 00104D10  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80108ED4 00104D14  C8 62 93 90 */	lfd f3, lbl_8055F310@sda21(r2)
+/* 80108ED4 00104D14  C8 62 93 90 */	lfd f3, "@3503"@sda21(r2)
 /* 80108ED8 00104D18  90 01 00 10 */	stw r0, 0x10(r1)
-/* 80108EDC 00104D1C  C0 22 93 A4 */	lfs f1, lbl_8055F324@sda21(r2)
+/* 80108EDC 00104D1C  C0 22 93 A4 */	lfs f1, "@3517_8055F324"@sda21(r2)
 /* 80108EE0 00104D20  C8 41 00 10 */	lfd f2, 0x10(r1)
-/* 80108EE4 00104D24  C0 02 93 A0 */	lfs f0, lbl_8055F320@sda21(r2)
+/* 80108EE4 00104D24  C0 02 93 A0 */	lfs f0, "@3516_8055F320"@sda21(r2)
 /* 80108EE8 00104D28  EC 42 18 28 */	fsubs f2, f2, f3
 /* 80108EEC 00104D2C  EC 21 10 24 */	fdivs f1, f1, f2
 /* 80108EF0 00104D30  EC 01 00 24 */	fdivs f0, f1, f0

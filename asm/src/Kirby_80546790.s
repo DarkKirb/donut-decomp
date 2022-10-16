@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80546790
-lbl_80546790:
+.global "POS_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@"
+"POS_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@":
 	.skip 0xC
 
-.global lbl_8054679C
-lbl_8054679C:
+.global "POS_OFFSET_VACUUM__Q33scn7history19@unnamed@Kirby_cpp@"
+"POS_OFFSET_VACUUM__Q33scn7history19@unnamed@Kirby_cpp@":
 	.skip 0xC
 
-.global lbl_805467A8
-lbl_805467A8:
+.global "VACUUM_TARGET_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@"
+"VACUUM_TARGET_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@":
 	.skip 0xC
 
-.global lbl_805467B4
-lbl_805467B4:
+.global "RUN_START_EFFECT_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@"
+"RUN_START_EFFECT_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@":
 	.skip 0xC
 
-.global lbl_805467C0
-lbl_805467C0:
+.global "RUN_EFFECT_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@"
+"RUN_EFFECT_OFFSET__Q33scn7history19@unnamed@Kirby_cpp@":
 	.skip 0x10

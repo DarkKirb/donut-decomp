@@ -1,64 +1,64 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048E300
-lbl_8048E300:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateStamp,PQ43scn4step4hero4Hero>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateStamp,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039C660
-	.4byte lbl_8039C5C0
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateStamp,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateStamp,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048E310
-lbl_8048E310:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8039C65C
-	.4byte lbl_8039C5DC
-
-.global lbl_8048E320
-lbl_8048E320:
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateVulcan,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateVulcan,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039C658
-	.4byte lbl_8039C5F8
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateVulcan,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateVulcan,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048E330
-lbl_8048E330:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8039C654
-	.4byte lbl_8039C614
-
-.global lbl_8048E340
-lbl_8048E340:
+.global "__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateDoubleKick,PQ43scn4step4hero4Hero>"
+"__vt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateDoubleKick,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039C650
-	.4byte lbl_8039C5A0
+	.4byte "__dt__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateDoubleKick,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util97StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter15StateDoubleKick,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048E350
-lbl_8048E350:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8039C64C
-	.4byte lbl_8039C630
-
-.global lbl_8048E360
-lbl_8048E360:
+.global "__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateSmash,PQ43scn4step4hero4Hero>"
+"__vt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateSmash,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8039C054
-	.4byte lbl_8039C0F4
-	.4byte lbl_8039C278
-	.4byte lbl_8035550C
-	.4byte lbl_8039C2B4
-	.4byte lbl_8039C2B8
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateSmash,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util92StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter10StateSmash,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util128StateFactoryArg2<Q24util6IState,Q53scn4step4hero7fighter9StateShot,PQ43scn4step4hero4Hero,Q53scn4step4hero7fighter11ChargeLevel>"
+"__vt__Q24util128StateFactoryArg2<Q24util6IState,Q53scn4step4hero7fighter9StateShot,PQ43scn4step4hero4Hero,Q53scn4step4hero7fighter11ChargeLevel>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util128StateFactoryArg2<Q24util6IState,Q53scn4step4hero7fighter9StateShot,PQ43scn4step4hero4Hero,Q53scn4step4hero7fighter11ChargeLevel>Fv"
+	.4byte "create__Q24util128StateFactoryArg2<Q24util6IState,Q53scn4step4hero7fighter9StateShot,PQ43scn4step4hero4Hero,Q53scn4step4hero7fighter11ChargeLevel>Fv"
+
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateCharge,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateCharge,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateCharge,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero7fighter11StateCharge,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero7fighter11StateCharge
+__vt__Q53scn4step4hero7fighter11StateCharge:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7fighter11StateChargeFv
+	.4byte procAnim__Q53scn4step4hero7fighter11StateChargeFv
+	.4byte procMove__Q53scn4step4hero7fighter11StateChargeFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7fighter11StateChargeFv
+	.4byte procObjCollReact__Q53scn4step4hero7fighter11StateChargeFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

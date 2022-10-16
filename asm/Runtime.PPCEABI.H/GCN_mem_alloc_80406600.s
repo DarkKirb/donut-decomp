@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80406600
-lbl_80406600:
+.global "@stringBase0_80406600"
+"@stringBase0_80406600":
 
 	.4byte 0x47434E5F
 	.4byte 0x4D656D5F

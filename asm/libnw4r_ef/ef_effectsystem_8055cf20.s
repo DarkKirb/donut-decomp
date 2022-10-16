@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CF20
-lbl_8055CF20:
+.global gBasicDrawOrder__Q24nw4r2ef
+gBasicDrawOrder__Q24nw4r2ef:
 	.skip 0x4
 
-.global lbl_8055CF24
-lbl_8055CF24:
+.global gBasicDrawStrategyBuilder__Q24nw4r2ef
+gBasicDrawStrategyBuilder__Q24nw4r2ef:
 	.skip 0x4
 
-.global lbl_8055CF28
-lbl_8055CF28:
+.global gBasicEmitFormBuilder__Q24nw4r2ef
+gBasicEmitFormBuilder__Q24nw4r2ef:
 	.skip 0x4
 
-.global lbl_8055CF2C
-lbl_8055CF2C:
+.global mDisplayVersion__Q34nw4r2ef12EffectSystem
+mDisplayVersion__Q34nw4r2ef12EffectSystem:
 	.skip 0x4

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048DB58
-lbl_8048DB58:
+.global "@57636_8048DB58"
+"@57636_8048DB58":
 
 	.4byte 0x73746570
 	.4byte 0x2F636861
@@ -13,8 +13,8 @@ lbl_8048DB58:
 	.4byte 0x73652F50
 	.4byte 0x696E6B00
 
-.global lbl_8048DB78
-lbl_8048DB78:
+.global "@57637"
+"@57637":
 
 	.4byte 0x73746570
 	.4byte 0x2F636861
@@ -27,30 +27,30 @@ lbl_8048DB78:
 	.4byte 0x74696F6E
 	.4byte 0
 
-.global lbl_8048DBA0
-lbl_8048DBA0:
+.global __vt__Q53scn4step4hero7parasol7Parasol
+__vt__Q53scn4step4hero7parasol7Parasol:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803925A4
-	.4byte lbl_80392630
-	.4byte lbl_8032B7A0
-	.4byte lbl_8032B7A4
-	.4byte lbl_8032B7A8
-	.4byte lbl_80392738
-	.4byte lbl_80392870
-	.4byte lbl_8032B7B4
-	.4byte lbl_8032B7B8
-	.4byte lbl_8032B7BC
-	.4byte lbl_8032B7C0
-	.4byte lbl_8032B7C4
-	.4byte lbl_8032B7C8
-	.4byte lbl_8032B7CC
-	.4byte lbl_8032B7D0
-	.4byte lbl_8032B7D4
-	.4byte lbl_8032B7D8
-	.4byte lbl_80392850
-	.4byte lbl_8032B7E0
-	.4byte lbl_8032B7E4
-	.4byte lbl_8032B7E8
+	.4byte __dt__Q53scn4step4hero7parasol7ParasolFv
+	.4byte setup__Q53scn4step4hero7parasol7ParasolFv
+	.4byte tryToChangeStateOnCarry__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnInterval__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeStateOnDamage__Q43scn4step4hero11AbilityBaseFv
+	.4byte tryToChangeState__Q53scn4step4hero7parasol7ParasolFv
+	.4byte onStateEndCleanUp__Q53scn4step4hero7parasol7ParasolFv
+	.4byte onGetEventItem__Q43scn4step4hero11AbilityBaseFv
+	.4byte onGimmickReactChangeState__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartClearDanceExternal__Q43scn4step4hero11AbilityBaseFv
+	.4byte onEnterWarpLowper__Q43scn4step4hero11AbilityBaseFv
+	.4byte onShowHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onHideHero__Q43scn4step4hero11AbilityBaseFv
+	.4byte onDead__Q43scn4step4hero11AbilityBaseFv
+	.4byte onCaptured__Q43scn4step4hero11AbilityBaseFv
+	.4byte onVacuumed__Q43scn4step4hero11AbilityBaseFv
+	.4byte onStartDemo__Q43scn4step4hero11AbilityBaseFv
+	.4byte procAnim__Q53scn4step4hero7parasol7ParasolFv
+	.4byte procMove__Q43scn4step4hero11AbilityBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero11AbilityBaseFv
+	.4byte isDepleted__Q43scn4step4hero11AbilityBaseCFv
 	.4byte 0

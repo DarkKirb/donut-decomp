@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_804145B8
-lbl_804145B8:
+.global "NtscInt4x3__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscInt4x3__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0
 	.4byte 0x028001C8
@@ -22,8 +22,8 @@ lbl_804145B8:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_804145FC
-lbl_804145FC:
+.global "NtscInt4x3AA__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscInt4x3AA__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0
 	.4byte 0x028000E6
@@ -43,8 +43,8 @@ lbl_804145FC:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_80414640
-lbl_80414640:
+.global "NtscProg4x3__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscProg4x3__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x028001C8
@@ -64,8 +64,8 @@ lbl_80414640:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_80414684
-lbl_80414684:
+.global "NtscProg4x3AA__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscProg4x3AA__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x028000E6
@@ -85,8 +85,8 @@ lbl_80414684:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_804146C8
-lbl_804146C8:
+.global "Pal50Int4x3__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal50Int4x3__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000004
 	.4byte 0x028001C8
@@ -106,8 +106,8 @@ lbl_804146C8:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_8041470C
-lbl_8041470C:
+.global "Pal60Int4x3__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal60Int4x3__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000014
 	.4byte 0x028001C8
@@ -127,8 +127,8 @@ lbl_8041470C:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_80414750
-lbl_80414750:
+.global "Pal60Prog4x3__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal60Prog4x3__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000016
 	.4byte 0x028001C8
@@ -148,8 +148,8 @@ lbl_80414750:
 	.4byte 0x026001C8
 	.4byte 0
 
-.global lbl_80414794
-lbl_80414794:
+.global "NtscInt16x9__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscInt16x9__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0
 	.4byte 0x028001C8
@@ -169,8 +169,8 @@ lbl_80414794:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_804147D8
-lbl_804147D8:
+.global "NtscInt16x9AA__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscInt16x9AA__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0
 	.4byte 0x028000E6
@@ -190,8 +190,8 @@ lbl_804147D8:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_8041481C
-lbl_8041481C:
+.global "NtscProg16x9__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscProg16x9__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x028001C8
@@ -211,8 +211,8 @@ lbl_8041481C:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_80414860
-lbl_80414860:
+.global "NtscProg16x9AA__Q23gfx23@unnamed@VISetting_cpp@"
+"NtscProg16x9AA__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x028000E6
@@ -232,8 +232,8 @@ lbl_80414860:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_804148A4
-lbl_804148A4:
+.global "Pal50Int16x9__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal50Int16x9__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000004
 	.4byte 0x028001C8
@@ -253,8 +253,8 @@ lbl_804148A4:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_804148E8
-lbl_804148E8:
+.global "Pal60Int16x9__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal60Int16x9__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000014
 	.4byte 0x028001C8
@@ -274,8 +274,8 @@ lbl_804148E8:
 	.4byte 0x034001C8
 	.4byte 0x01000000
 
-.global lbl_8041492C
-lbl_8041492C:
+.global "Pal60Prog16x9__Q23gfx23@unnamed@VISetting_cpp@"
+"Pal60Prog16x9__Q23gfx23@unnamed@VISetting_cpp@":
 
 	.4byte 0x00000016
 	.4byte 0x028001C8

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000A2DC
-lbl_8000A2DC:
+.global __prep_buffer
+__prep_buffer:
 /* 8000A2DC 0000611C  80 83 00 18 */	lwz r4, 0x18(r3)
 /* 8000A2E0 00006120  80 03 00 2C */	lwz r0, 0x2c(r3)
 /* 8000A2E4 00006124  80 C3 00 1C */	lwz r6, 0x1c(r3)
@@ -13,8 +13,8 @@ lbl_8000A2DC:
 /* 8000A2F8 00006138  90 03 00 28 */	stw r0, 0x28(r3)
 /* 8000A2FC 0000613C  90 83 00 34 */	stw r4, 0x34(r3)
 /* 8000A300 00006140  4E 80 00 20 */	blr
-.global lbl_8000A304
-lbl_8000A304:
+.global __flush_buffer
+__flush_buffer:
 /* 8000A304 00006144  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000A308 00006148  7C 08 02 A6 */	mflr r0
 /* 8000A30C 0000614C  90 01 00 14 */	stw r0, 0x14(r1)

@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80472F58
-lbl_80472F58:
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common14StateFlyUpDown,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common14StateFlyUpDown,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80291568
-	.4byte lbl_80291548
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common14StateFlyUpDown,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common14StateFlyUpDown,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80472F68
-lbl_80472F68:
+.global __vt__Q53scn4step5enemy6common14BrainFlyUpDown
+__vt__Q53scn4step5enemy6common14BrainFlyUpDown:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80291564
-	.4byte lbl_80291490
-	.4byte lbl_80291540
-	.4byte lbl_80291544
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy6common14BrainFlyUpDownFv
+	.4byte onStart__Q53scn4step5enemy6common14BrainFlyUpDownFv
+	.4byte onRecover__Q53scn4step5enemy6common14BrainFlyUpDownFv
+	.4byte onLanding__Q53scn4step5enemy6common14BrainFlyUpDownFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

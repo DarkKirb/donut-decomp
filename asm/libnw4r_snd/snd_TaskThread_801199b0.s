@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801199B0
-lbl_801199B0:
+.global __ct__Q44nw4r3snd6detail10TaskThreadFv
+__ct__Q44nw4r3snd6detail10TaskThreadFv:
 /* 801199B0 001157F0  38 00 00 00 */	li r0, 0x0
 /* 801199B4 001157F4  90 03 03 18 */	stw r0, 0x318(r3)
 /* 801199B8 001157F8  98 03 03 1C */	stb r0, 0x31c(r3)
@@ -11,8 +11,8 @@ lbl_801199B0:
 /* 801199C4 00115804  00 00 00 00 */	.4byte 0x00000000
 /* 801199C8 00115808  00 00 00 00 */	.4byte 0x00000000
 /* 801199CC 0011580C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_801199D0
-lbl_801199D0:
+.global __dt__Q44nw4r3snd6detail10TaskThreadFv
+__dt__Q44nw4r3snd6detail10TaskThreadFv:
 /* 801199D0 00115810  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801199D4 00115814  7C 08 02 A6 */	mflr r0
 /* 801199D8 00115818  2C 03 00 00 */	cmpwi r3, 0x0
@@ -27,11 +27,11 @@ lbl_801199D0:
 /* 801199FC 0011583C  41 82 00 28 */	beq lbl_80119A24
 /* 80119A00 00115840  38 00 00 01 */	li r0, 0x1
 /* 80119A04 00115844  98 03 03 1C */	stb r0, 0x31c(r3)
-/* 80119A08 00115848  4B FF F8 59 */	bl lbl_80119260
-/* 80119A0C 0011584C  4B FF FF 55 */	bl lbl_80119960
+/* 80119A08 00115848  4B FF F8 59 */	bl GetInstance__Q44nw4r3snd6detail11TaskManagerFv
+/* 80119A0C 0011584C  4B FF FF 55 */	bl CancelWaitTask__Q44nw4r3snd6detail11TaskManagerFv
 /* 80119A10 00115850  7F C3 F3 78 */	mr r3, r30
 /* 80119A14 00115854  38 80 00 00 */	li r4, 0x0
-/* 80119A18 00115858  4B F0 B8 79 */	bl lbl_80025290
+/* 80119A18 00115858  4B F0 B8 79 */	bl OSJoinThread
 /* 80119A1C 0011585C  38 00 00 00 */	li r0, 0x0
 /* 80119A20 00115860  98 1E 03 1D */	stb r0, 0x31d(r30)
 .global lbl_80119A24
@@ -39,7 +39,7 @@ lbl_80119A24:
 /* 80119A24 00115864  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80119A28 00115868  40 81 00 0C */	ble lbl_80119A34
 /* 80119A2C 0011586C  7F C3 F3 78 */	mr r3, r30
-/* 80119A30 00115870  48 0A 5C E5 */	bl lbl_801BF714
+/* 80119A30 00115870  48 0A 5C E5 */	bl __dl__FPv
 .global lbl_80119A34
 lbl_80119A34:
 /* 80119A34 00115874  7F C3 F3 78 */	mr r3, r30
@@ -49,8 +49,8 @@ lbl_80119A34:
 /* 80119A44 00115884  7C 08 03 A6 */	mtlr r0
 /* 80119A48 00115888  38 21 00 10 */	addi r1, r1, 0x10
 /* 80119A4C 0011588C  4E 80 00 20 */	blr
-.global lbl_80119A50
-lbl_80119A50:
+.global Create__Q44nw4r3snd6detail10TaskThreadFlPvUl
+Create__Q44nw4r3snd6detail10TaskThreadFlPvUl:
 /* 80119A50 00115890  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80119A54 00115894  7C 08 02 A6 */	mflr r0
 /* 80119A58 00115898  90 01 00 24 */	stw r0, 0x24(r1)
@@ -67,24 +67,24 @@ lbl_80119A50:
 /* 80119A84 001158C4  41 82 00 28 */	beq lbl_80119AAC
 /* 80119A88 001158C8  38 00 00 01 */	li r0, 0x1
 /* 80119A8C 001158CC  98 03 03 1C */	stb r0, 0x31c(r3)
-/* 80119A90 001158D0  4B FF F7 D1 */	bl lbl_80119260
-/* 80119A94 001158D4  4B FF FE CD */	bl lbl_80119960
+/* 80119A90 001158D0  4B FF F7 D1 */	bl GetInstance__Q44nw4r3snd6detail11TaskManagerFv
+/* 80119A94 001158D4  4B FF FE CD */	bl CancelWaitTask__Q44nw4r3snd6detail11TaskManagerFv
 /* 80119A98 001158D8  7F 83 E3 78 */	mr r3, r28
 /* 80119A9C 001158DC  38 80 00 00 */	li r4, 0x0
-/* 80119AA0 001158E0  4B F0 B7 F1 */	bl lbl_80025290
+/* 80119AA0 001158E0  4B F0 B7 F1 */	bl OSJoinThread
 /* 80119AA4 001158E4  38 00 00 00 */	li r0, 0x0
 /* 80119AA8 001158E8  98 1C 03 1D */	stb r0, 0x31d(r28)
 .global lbl_80119AAC
 lbl_80119AAC:
-/* 80119AAC 001158EC  3C 80 80 12 */	lis r4, lbl_80119B80@ha
+/* 80119AAC 001158EC  3C 80 80 12 */	lis r4, ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv@ha
 /* 80119AB0 001158F0  7F 83 E3 78 */	mr r3, r28
 /* 80119AB4 001158F4  7F 85 E3 78 */	mr r5, r28
 /* 80119AB8 001158F8  7F E7 FB 78 */	mr r7, r31
 /* 80119ABC 001158FC  7F A8 EB 78 */	mr r8, r29
-/* 80119AC0 00115900  38 84 9B 80 */	addi r4, r4, lbl_80119B80@l
+/* 80119AC0 00115900  38 84 9B 80 */	addi r4, r4, ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv@l
 /* 80119AC4 00115904  7C DE FA 14 */	add r6, r30, r31
 /* 80119AC8 00115908  39 20 00 00 */	li r9, 0x0
-/* 80119ACC 0011590C  4B F0 B2 85 */	bl lbl_80024D50
+/* 80119ACC 0011590C  4B F0 B2 85 */	bl OSCreateThread
 /* 80119AD0 00115910  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80119AD4 00115914  40 82 00 0C */	bne lbl_80119AE0
 /* 80119AD8 00115918  38 60 00 00 */	li r3, 0x0
@@ -97,7 +97,7 @@ lbl_80119AE0:
 /* 80119AEC 0011592C  7F 83 E3 78 */	mr r3, r28
 /* 80119AF0 00115930  98 9C 03 1C */	stb r4, 0x31c(r28)
 /* 80119AF4 00115934  98 1C 03 1D */	stb r0, 0x31d(r28)
-/* 80119AF8 00115938  4B F0 B8 E9 */	bl lbl_800253E0
+/* 80119AF8 00115938  4B F0 B8 E9 */	bl OSResumeThread
 /* 80119AFC 0011593C  38 60 00 01 */	li r3, 0x1
 .global lbl_80119B00
 lbl_80119B00:
@@ -109,8 +109,8 @@ lbl_80119B00:
 /* 80119B14 00115954  7C 08 03 A6 */	mtlr r0
 /* 80119B18 00115958  38 21 00 20 */	addi r1, r1, 0x20
 /* 80119B1C 0011595C  4E 80 00 20 */	blr
-.global lbl_80119B20
-lbl_80119B20:
+.global Destroy__Q44nw4r3snd6detail10TaskThreadFv
+Destroy__Q44nw4r3snd6detail10TaskThreadFv:
 /* 80119B20 00115960  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119B24 00115964  7C 08 02 A6 */	mflr r0
 /* 80119B28 00115968  90 01 00 14 */	stw r0, 0x14(r1)
@@ -121,11 +121,11 @@ lbl_80119B20:
 /* 80119B3C 0011597C  41 82 00 28 */	beq lbl_80119B64
 /* 80119B40 00115980  38 00 00 01 */	li r0, 0x1
 /* 80119B44 00115984  98 03 03 1C */	stb r0, 0x31c(r3)
-/* 80119B48 00115988  4B FF F7 19 */	bl lbl_80119260
-/* 80119B4C 0011598C  4B FF FE 15 */	bl lbl_80119960
+/* 80119B48 00115988  4B FF F7 19 */	bl GetInstance__Q44nw4r3snd6detail11TaskManagerFv
+/* 80119B4C 0011598C  4B FF FE 15 */	bl CancelWaitTask__Q44nw4r3snd6detail11TaskManagerFv
 /* 80119B50 00115990  7F E3 FB 78 */	mr r3, r31
 /* 80119B54 00115994  38 80 00 00 */	li r4, 0x0
-/* 80119B58 00115998  4B F0 B7 39 */	bl lbl_80025290
+/* 80119B58 00115998  4B F0 B7 39 */	bl OSJoinThread
 /* 80119B5C 0011599C  38 00 00 00 */	li r0, 0x0
 /* 80119B60 001159A0  98 1F 03 1D */	stb r0, 0x31d(r31)
 .global lbl_80119B64
@@ -137,8 +137,8 @@ lbl_80119B64:
 /* 80119B74 001159B4  4E 80 00 20 */	blr
 /* 80119B78 001159B8  00 00 00 00 */	.4byte 0x00000000
 /* 80119B7C 001159BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80119B80
-lbl_80119B80:
+.global ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv
+ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv:
 /* 80119B80 001159C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119B84 001159C4  7C 08 02 A6 */	mflr r0
 /* 80119B88 001159C8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -147,13 +147,13 @@ lbl_80119B80:
 /* 80119B94 001159D4  48 00 00 20 */	b lbl_80119BB4
 .global lbl_80119B98
 lbl_80119B98:
-/* 80119B98 001159D8  4B FF F6 C9 */	bl lbl_80119260
-/* 80119B9C 001159DC  4B FF FD 55 */	bl lbl_801198F0
+/* 80119B98 001159D8  4B FF F6 C9 */	bl GetInstance__Q44nw4r3snd6detail11TaskManagerFv
+/* 80119B9C 001159DC  4B FF FD 55 */	bl WaitTask__Q44nw4r3snd6detail11TaskManagerFv
 /* 80119BA0 001159E0  88 1F 03 1C */	lbz r0, 0x31c(r31)
 /* 80119BA4 001159E4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80119BA8 001159E8  40 82 00 18 */	bne lbl_80119BC0
-/* 80119BAC 001159EC  4B FF F6 B5 */	bl lbl_80119260
-/* 80119BB0 001159F0  4B FF FA D1 */	bl lbl_80119680
+/* 80119BAC 001159EC  4B FF F6 B5 */	bl GetInstance__Q44nw4r3snd6detail11TaskManagerFv
+/* 80119BB0 001159F0  4B FF FA D1 */	bl ExecuteTask__Q44nw4r3snd6detail11TaskManagerFv
 .global lbl_80119BB4
 lbl_80119BB4:
 /* 80119BB4 001159F4  88 1F 03 1C */	lbz r0, 0x31c(r31)

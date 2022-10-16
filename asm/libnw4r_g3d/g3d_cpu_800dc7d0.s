@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800DC7D0
-lbl_800DC7D0:
+.global Copy32ByteBlocks__Q34nw4r3g3d6detailFPvPCvUl
+Copy32ByteBlocks__Q34nw4r3g3d6detailFPvPCvUl:
 /* 800DC7D0 000D8610  54 A5 D9 7F */	srwi. r5, r5, 5
 /* 800DC7D4 000D8614  4D 82 00 20 */	beqlr
 /* 800DC7D8 000D8618  54 A0 F0 BF */	srwi. r0, r5, 2
@@ -65,10 +65,10 @@ lbl_800DC87C:
 /* 800DC8A4 000D86E4  42 00 FF D8 */	bdnz lbl_800DC87C
 /* 800DC8A8 000D86E8  4E 80 00 20 */	blr
 /* 800DC8AC 000D86EC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800DC8B0
-lbl_800DC8B0:
+.global ZeroMemory32ByteBlocks__Q34nw4r3g3d6detailFPvUl
+ZeroMemory32ByteBlocks__Q34nw4r3g3d6detailFPvUl:
 /* 800DC8B0 000D86F0  54 84 D9 7F */	srwi. r4, r4, 5
-/* 800DC8B4 000D86F4  C0 02 90 48 */	lfs f0, lbl_8055EFC8@sda21(r2)
+/* 800DC8B4 000D86F4  C0 02 90 48 */	lfs f0, "@1129"@sda21(r2)
 /* 800DC8B8 000D86F8  4D 82 00 20 */	beqlr
 /* 800DC8BC 000D86FC  54 80 E8 FF */	srwi. r0, r4, 3
 /* 800DC8C0 000D8700  7C 09 03 A6 */	mtctr r0
@@ -125,10 +125,10 @@ lbl_800DC960:
 /* 800DC974 000D87B4  42 00 FF EC */	bdnz lbl_800DC960
 /* 800DC978 000D87B8  4E 80 00 20 */	blr
 /* 800DC97C 000D87BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800DC980
-lbl_800DC980:
+.global ZeroMemory16ByteBlocks__Q34nw4r3g3d6detailFPvUl
+ZeroMemory16ByteBlocks__Q34nw4r3g3d6detailFPvUl:
 /* 800DC980 000D87C0  54 84 E1 3F */	srwi. r4, r4, 4
-/* 800DC984 000D87C4  C0 02 90 48 */	lfs f0, lbl_8055EFC8@sda21(r2)
+/* 800DC984 000D87C4  C0 02 90 48 */	lfs f0, "@1129"@sda21(r2)
 /* 800DC988 000D87C8  4D 82 00 20 */	beqlr
 /* 800DC98C 000D87CC  54 80 E8 FF */	srwi. r0, r4, 3
 /* 800DC990 000D87D0  7C 09 03 A6 */	mtctr r0

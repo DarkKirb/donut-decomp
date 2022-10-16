@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80461420
-lbl_80461420:
+.global "@53252_80461420"
+"@53252_80461420":
 
 	.4byte 0x68697374
 	.4byte 0x6F72792F
@@ -25,17 +25,17 @@ lbl_80461420:
 	.4byte 0x616C6500
 	.4byte 0
 
-.global lbl_80461470
-lbl_80461470:
+.global __vt__Q33scn7history7Package
+__vt__Q33scn7history7Package:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8020D6B0
-	.4byte lbl_8020DD50
-	.4byte lbl_800E9D20
-	.4byte lbl_800E9D30
-	.4byte lbl_800EC990
-	.4byte lbl_800EC9A0
+	.4byte __dt__Q33scn7history7PackageFv
+	.4byte ExecCallback_CALC_WORLD__Q33scn7history7PackageFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_VIEW__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
 	.4byte 0
 	.4byte 0
 	.4byte 0

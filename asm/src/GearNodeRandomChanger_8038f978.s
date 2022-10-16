@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8038F978
-lbl_8038F978:
+.global __ct__Q53scn4step4hero5stone21GearNodeRandomChangerFRQ43scn4step4hero4Gear
+__ct__Q53scn4step4hero5stone21GearNodeRandomChangerFRQ43scn4step4hero4Gear:
 /* 8038F978 0038B7B8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8038F97C 0038B7BC  38 00 00 00 */	li r0, 0x0
 /* 8038F980 0038B7C0  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8038F984 0038B7C4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8038F988 0038B7C8  98 03 00 0C */	stb r0, 0xc(r3)
 /* 8038F98C 0038B7CC  4E 80 00 20 */	blr
-.global lbl_8038F990
-lbl_8038F990:
+.global select__Q53scn4step4hero5stone21GearNodeRandomChangerFPCUlUl
+select__Q53scn4step4hero5stone21GearNodeRandomChangerFPCUlUl:
 /* 8038F990 0038B7D0  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8038F994 0038B7D4  7C 08 02 A6 */	mflr r0
 /* 8038F998 0038B7D8  90 01 00 64 */	stw r0, 0x64(r1)
@@ -19,10 +19,10 @@ lbl_8038F990:
 /* 8038F9A4 0038B7E4  7C 7A 1B 78 */	mr r26, r3
 /* 8038F9A8 0038B7E8  7C 9B 23 78 */	mr r27, r4
 /* 8038F9AC 0038B7EC  7C BC 2B 78 */	mr r28, r5
-/* 8038F9B0 0038B7F0  4B CC 44 41 */	bl lbl_80053DF0
+/* 8038F9B0 0038B7F0  4B CC 44 41 */	bl __wpadNoAlloc
 /* 8038F9B4 0038B7F4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8038F9B8 0038B7F8  41 82 00 20 */	beq lbl_8038F9D8
-/* 8038F9BC 0038B7FC  4B CC 44 35 */	bl lbl_80053DF0
+/* 8038F9BC 0038B7FC  4B CC 44 35 */	bl __wpadNoAlloc
 /* 8038F9C0 0038B800  38 03 FF FF */	addi r0, r3, -0x1
 /* 8038F9C4 0038B804  90 1A 00 04 */	stw r0, 0x4(r26)
 /* 8038F9C8 0038B808  93 9A 00 08 */	stw r28, 0x8(r26)
@@ -50,7 +50,7 @@ lbl_8038FA04:
 /* 8038FA08 0038B848  7F DE 02 14 */	add r30, r30, r0
 /* 8038FA0C 0038B84C  38 61 00 08 */	addi r3, r1, 0x8
 /* 8038FA10 0038B850  7F A4 EB 78 */	mr r4, r29
-/* 8038FA14 0038B854  4B E1 42 19 */	bl lbl_801A3C2C
+/* 8038FA14 0038B854  4B E1 42 19 */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 8038FA18 0038B858  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 8038FA1C 0038B85C  3B BD 00 01 */	addi r29, r29, 0x1
 /* 8038FA20 0038B860  3B FF 00 04 */	addi r31, r31, 0x4
@@ -59,7 +59,7 @@ lbl_8038FA24:
 /* 8038FA24 0038B864  7C 1D E0 40 */	cmplw r29, r28
 /* 8038FA28 0038B868  41 80 FF DC */	blt lbl_8038FA04
 /* 8038FA2C 0038B86C  7F C3 F3 78 */	mr r3, r30
-/* 8038FA30 0038B870  4B DE B0 9D */	bl lbl_8017AACC
+/* 8038FA30 0038B870  4B DE B0 9D */	bl RandU32__Q23app6RandomFUl
 /* 8038FA34 0038B874  7C 7F 1B 78 */	mr r31, r3
 /* 8038FA38 0038B878  38 00 00 00 */	li r0, 0x0
 /* 8038FA3C 0038B87C  98 1A 00 0C */	stb r0, 0xc(r26)
@@ -69,7 +69,7 @@ lbl_8038FA24:
 lbl_8038FA48:
 /* 8038FA48 0038B888  38 61 00 08 */	addi r3, r1, 0x8
 /* 8038FA4C 0038B88C  7F A4 EB 78 */	mr r4, r29
-/* 8038FA50 0038B890  4B E1 41 DD */	bl lbl_801A3C2C
+/* 8038FA50 0038B890  4B E1 41 DD */	bl "__vc__Q33hel6common34Array<PQ23hid15RumbleRequestor,16>FUl"
 /* 8038FA54 0038B894  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8038FA58 0038B898  7C 1F 00 40 */	cmplw r31, r0
 /* 8038FA5C 0038B89C  40 80 00 18 */	bge lbl_8038FA74

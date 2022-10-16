@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80496600
-lbl_80496600:
+.global "@50548_80496600"
+"@50548_80496600":
 
 	.4byte 0x736E642F
 	.4byte 0x69756B5F
@@ -11,15 +11,15 @@ lbl_80496600:
 	.4byte 0x4B2E6272
 	.4byte 0x73617200
 
-.global lbl_80496618
-lbl_80496618:
+.global __vt__Q23snd12SoundManager
+__vt__Q23snd12SoundManager:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80403150
+	.4byte __dt__Q23snd12SoundManagerFv
 
-.global lbl_80496624
-lbl_80496624:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -31,15 +31,15 @@ lbl_80496624:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80496648
-lbl_80496648:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80496654
-lbl_80496654:
+.global "@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -51,15 +51,15 @@ lbl_80496654:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80496678
-lbl_80496678:
+.global "@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80496684
-lbl_80496684:
+.global "@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -71,8 +71,8 @@ lbl_80496684:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_804966A8
-lbl_804966A8:
+.global "@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

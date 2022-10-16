@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055DBE8
-lbl_8055DBE8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DBF0
-lbl_8055DBF0:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DBF8
-lbl_8055DBF8:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DC00
-lbl_8055DC00:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DC08
-lbl_8055DC08:
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
 
-.global lbl_8055DC10
-lbl_8055DC10:
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8

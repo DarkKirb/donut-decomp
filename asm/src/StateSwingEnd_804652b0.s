@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804652B0
-lbl_804652B0:
+.global __vt__Q53scn4step4boss7bonkers13StateSwingEnd
+__vt__Q53scn4step4boss7bonkers13StateSwingEnd:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80239484
-	.4byte lbl_80239488
-	.4byte lbl_80239520
-	.4byte lbl_802344FC
-	.4byte lbl_80239574
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss7bonkers13StateSwingEndFv
+	.4byte procAnim__Q53scn4step4boss7bonkers13StateSwingEndFv
+	.4byte procMove__Q53scn4step4boss7bonkers13StateSwingEndFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss7bonkers13StateSwingEndFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

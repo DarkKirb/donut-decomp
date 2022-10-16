@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055D0A0
-lbl_8055D0A0:
+.global "mFormatBuffer__Q34nw4r2ut17TextWriterBase<c>"
+"mFormatBuffer__Q34nw4r2ut17TextWriterBase<c>":
 	.skip 0x4
 
-.global lbl_8055D0A4
-lbl_8055D0A4:
+.global "mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>"
+"mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>":
 	.skip 0x4
 
-.global lbl_8055D0A8
-lbl_8055D0A8:
+.global "mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>"
+"mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>":
 	.skip 0x4
 
-.global lbl_8055D0AC
-lbl_8055D0AC:
+.global "@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>"
+"@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>":
 	.skip 0x1
 
-.global lbl_8055D0AD
-lbl_8055D0AD:
+.global "@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>"
+"@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>":
 	.skip 0x3

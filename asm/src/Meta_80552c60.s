@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80552C60
-lbl_80552C60:
+.global "@LOCAL@Anim__Q53scn4step4hero9modeldesc4MetaFv@d"
+"@LOCAL@Anim__Q53scn4step4hero9modeldesc4MetaFv@d":
 	.skip 0xC
 
-.global lbl_80552C6C
-lbl_80552C6C:
+.global "@LOCAL@MeshFlip__Q53scn4step4hero9modeldesc4MetaFv@d"
+"@LOCAL@MeshFlip__Q53scn4step4hero9modeldesc4MetaFv@d":
 	.skip 0xC
 
-.global lbl_80552C78
-lbl_80552C78:
+.global "@LOCAL@MeshFlip__Q53scn4step4hero9modeldesc4MetaFv@NODES@0"
+"@LOCAL@MeshFlip__Q53scn4step4hero9modeldesc4MetaFv@NODES@0":
 	.skip 0x18
 
-.global lbl_80552C90
-lbl_80552C90:
+.global "@LOCAL@Model__Q53scn4step4hero9modeldesc4MetaFv@d"
+"@LOCAL@Model__Q53scn4step4hero9modeldesc4MetaFv@d":
 	.skip 0x58

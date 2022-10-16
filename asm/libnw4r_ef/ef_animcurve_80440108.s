@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80440108
-lbl_80440108:
+.global gCountStandBit__Q24nw4r2ef
+gCountStandBit__Q24nw4r2ef:
 
 	.4byte 0x00010102
 	.4byte 0x01020203
@@ -69,8 +69,8 @@ lbl_80440108:
 	.4byte 0x05060607
 	.4byte 0x06070708
 
-.global lbl_80440208
-lbl_80440208:
+.global gMSB__Q24nw4r2ef
+gMSB__Q24nw4r2ef:
 
 	.4byte 0x00010202
 	.4byte 0x04040404

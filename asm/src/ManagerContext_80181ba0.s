@@ -1,20 +1,20 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80181BA0
-lbl_80181BA0:
+.global DefaultEffectObjCountMax__Q36effect6detail14ManagerContextFv
+DefaultEffectObjCountMax__Q36effect6detail14ManagerContextFv:
 /* 80181BA0 0017D9E0  38 60 00 64 */	li r3, 0x64
 /* 80181BA4 0017D9E4  4E 80 00 20 */	blr
-.global lbl_80181BA8
-lbl_80181BA8:
+.global DefaultPtclEmitterCountMax__Q36effect6detail14ManagerContextFv
+DefaultPtclEmitterCountMax__Q36effect6detail14ManagerContextFv:
 /* 80181BA8 0017D9E8  38 60 00 96 */	li r3, 0x96
 /* 80181BAC 0017D9EC  4E 80 00 20 */	blr
-.global lbl_80181BB0
-lbl_80181BB0:
+.global DefaultPtclParticleCountMax__Q36effect6detail14ManagerContextFv
+DefaultPtclParticleCountMax__Q36effect6detail14ManagerContextFv:
 /* 80181BB0 0017D9F0  38 60 01 F4 */	li r3, 0x1f4
 /* 80181BB4 0017D9F4  4E 80 00 20 */	blr
-.global lbl_80181BB8
-lbl_80181BB8:
+.global __ct__Q36effect6detail14ManagerContextFUlUlUlRQ23mem10IAllocatorUlUlUlUlUlUlUl
+__ct__Q36effect6detail14ManagerContextFUlUlUlRQ23mem10IAllocatorUlUlUlUlUlUlUl:
 /* 80181BB8 0017D9F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80181BBC 0017D9FC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80181BC0 0017DA00  83 E1 00 18 */	lwz r31, 0x18(r1)

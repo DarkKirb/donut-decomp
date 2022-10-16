@@ -1,82 +1,82 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CE28
-lbl_8055CE28:
+.global _wudInitialized
+_wudInitialized:
 	.skip 0x4
 
-.global lbl_8055CE2C
-lbl_8055CE2C:
+.global _wudReadNand
+_wudReadNand:
 	.skip 0x4
 
-.global lbl_8055CE30
-lbl_8055CE30:
+.global _wudAbortSync
+_wudAbortSync:
 	.skip 0x4
 
-.global lbl_8055CE34
-lbl_8055CE34:
+.global _wudPatchRemoveCmd
+_wudPatchRemoveCmd:
 	.skip 0x1
 
-.global lbl_8055CE35
-lbl_8055CE35:
+.global __bte_trace_level
+__bte_trace_level:
 	.skip 0x3
 
-.global lbl_8055CE38
-lbl_8055CE38:
+.global _wudNandBufPtr
+_wudNandBufPtr:
 	.skip 0x4
 
-.global lbl_8055CE3C
-lbl_8055CE3C:
+.global _initWBC
+_initWBC:
 	.skip 0x4
 
-.global lbl_8055CE40
-lbl_8055CE40:
+.global _linkedWBC
+_linkedWBC:
 	.skip 0x4
 
-.global lbl_8055CE44
-lbl_8055CE44:
+.global _wudNandWbcCrc
+_wudNandWbcCrc:
 	.skip 0x4
 
-.global lbl_8055CE48
-lbl_8055CE48:
+.global _wudNandPhase
+_wudNandPhase:
 	.skip 0x4
 
-.global lbl_8055CE4C
-lbl_8055CE4C:
+.global _wudNandLocked
+_wudNandLocked:
 	.skip 0x1
 
-.global lbl_8055CE4D
-lbl_8055CE4D:
+.global _wudInstallNum
+_wudInstallNum:
 	.skip 0x1
 
-.global lbl_8055CE4E
-lbl_8055CE4E:
+.global _wudPatchNum
+_wudPatchNum:
 	.skip 0x2
 
-.global lbl_8055CE50
-lbl_8055CE50:
+.global _wudPatchAddress
+_wudPatchAddress:
 	.skip 0x4
 
-.global lbl_8055CE54
-lbl_8055CE54:
+.global _wudPatchOffset
+_wudPatchOffset:
 	.skip 0x4
 
-.global lbl_8055CE58
-lbl_8055CE58:
+.global _wudPatchSize
+_wudPatchSize:
 	.skip 0x4
 
-.global lbl_8055CE5C
-lbl_8055CE5C:
+.global _scFlush
+_scFlush:
 	.skip 0x1
 
-.global lbl_8055CE5D
-lbl_8055CE5D:
+.global _wudTarget
+_wudTarget:
 	.skip 0x1
 
-.global lbl_8055CE5E
-lbl_8055CE5E:
+.global _wudDiscRssi
+_wudDiscRssi:
 	.skip 0x1
 
-.global lbl_8055CE5F
-lbl_8055CE5F:
+.global _wudDiscNumResps
+_wudDiscNumResps:
 	.skip 0x1

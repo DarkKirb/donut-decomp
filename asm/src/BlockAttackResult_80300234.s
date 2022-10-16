@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80300234
-lbl_80300234:
+.global __ct__Q53scn4step7gimmick5block17BlockAttackResultFv
+__ct__Q53scn4step7gimmick5block17BlockAttackResultFv:
 /* 80300234 002FC074  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80300238 002FC078  7C 08 02 A6 */	mflr r0
 /* 8030023C 002FC07C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -16,7 +16,7 @@ lbl_80300234:
 .global lbl_8030025C
 lbl_8030025C:
 /* 8030025C 002FC09C  7F C3 F3 78 */	mr r3, r30
-/* 80300260 002FC0A0  48 00 04 A1 */	bl lbl_80300700
+/* 80300260 002FC0A0  48 00 04 A1 */	bl __ct__Q53scn4step7gimmick5block9BlockInfoFv
 /* 80300264 002FC0A4  3B DE 00 0C */	addi r30, r30, 0xc
 /* 80300268 002FC0A8  7C 1E F8 40 */	cmplw r30, r31
 /* 8030026C 002FC0AC  41 80 FF F0 */	blt lbl_8030025C
@@ -36,8 +36,8 @@ lbl_80300280:
 /* 8030029C 002FC0DC  7C 08 03 A6 */	mtlr r0
 /* 803002A0 002FC0E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 803002A4 002FC0E4  4E 80 00 20 */	blr
-.global lbl_803002A8
-lbl_803002A8:
+.global add__Q53scn4step7gimmick5block17BlockAttackResultFRCQ53scn4step7gimmick5block9BlockInfob
+add__Q53scn4step7gimmick5block17BlockAttackResultFRCQ53scn4step7gimmick5block9BlockInfob:
 /* 803002A8 002FC0E8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803002AC 002FC0EC  7C 08 02 A6 */	mflr r0
 /* 803002B0 002FC0F0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -52,7 +52,7 @@ lbl_803002A8:
 /* 803002D4 002FC114  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 803002D8 002FC118  7F E3 FB 78 */	mr r3, r31
 /* 803002DC 002FC11C  38 80 00 40 */	li r4, 0x40
-/* 803002E0 002FC120  4B D2 41 C1 */	bl lbl_800244A0
+/* 803002E0 002FC120  4B D2 41 C1 */	bl DefaultSwitchThreadCallback
 /* 803002E4 002FC124  1C 1F 00 0C */	mulli r0, r31, 0xc
 /* 803002E8 002FC128  7C 9C 02 14 */	add r4, r28, r0
 /* 803002EC 002FC12C  80 1D 00 00 */	lwz r0, 0x0(r29)
@@ -72,7 +72,7 @@ lbl_80300310:
 /* 8030031C 002FC15C  83 FC 03 04 */	lwz r31, 0x304(r28)
 /* 80300320 002FC160  7F E3 FB 78 */	mr r3, r31
 /* 80300324 002FC164  38 80 00 40 */	li r4, 0x40
-/* 80300328 002FC168  4B D2 41 79 */	bl lbl_800244A0
+/* 80300328 002FC168  4B D2 41 79 */	bl DefaultSwitchThreadCallback
 /* 8030032C 002FC16C  7C 7C FA 14 */	add r3, r28, r31
 /* 80300330 002FC170  9B C3 03 08 */	stb r30, 0x308(r3)
 /* 80300334 002FC174  80 7C 03 04 */	lwz r3, 0x304(r28)
@@ -86,8 +86,8 @@ lbl_80300340:
 /* 8030034C 002FC18C  7C 08 03 A6 */	mtlr r0
 /* 80300350 002FC190  38 21 00 20 */	addi r1, r1, 0x20
 /* 80300354 002FC194  4E 80 00 20 */	blr
-.global lbl_80300358
-lbl_80300358:
+.global hitBlockInfoAtIndex__Q53scn4step7gimmick5block17BlockAttackResultCFUl
+hitBlockInfoAtIndex__Q53scn4step7gimmick5block17BlockAttackResultCFUl:
 /* 80300358 002FC198  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030035C 002FC19C  7C 08 02 A6 */	mflr r0
 /* 80300360 002FC1A0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -98,10 +98,10 @@ lbl_80300358:
 /* 80300374 002FC1B4  7C BF 2B 78 */	mr r31, r5
 /* 80300378 002FC1B8  7F E3 FB 78 */	mr r3, r31
 /* 8030037C 002FC1BC  80 84 00 00 */	lwz r4, 0x0(r4)
-/* 80300380 002FC1C0  4B D2 41 21 */	bl lbl_800244A0
+/* 80300380 002FC1C0  4B D2 41 21 */	bl DefaultSwitchThreadCallback
 /* 80300384 002FC1C4  7F E3 FB 78 */	mr r3, r31
 /* 80300388 002FC1C8  38 80 00 40 */	li r4, 0x40
-/* 8030038C 002FC1CC  4B D2 41 15 */	bl lbl_800244A0
+/* 8030038C 002FC1CC  4B D2 41 15 */	bl DefaultSwitchThreadCallback
 /* 80300390 002FC1D0  1C 1F 00 0C */	mulli r0, r31, 0xc
 /* 80300394 002FC1D4  7C 7E 02 14 */	add r3, r30, r0
 /* 80300398 002FC1D8  80 03 00 04 */	lwz r0, 0x4(r3)
@@ -116,8 +116,8 @@ lbl_80300358:
 /* 803003BC 002FC1FC  7C 08 03 A6 */	mtlr r0
 /* 803003C0 002FC200  38 21 00 20 */	addi r1, r1, 0x20
 /* 803003C4 002FC204  4E 80 00 20 */	blr
-.global lbl_803003C8
-lbl_803003C8:
+.global isHitBlockBroken__Q53scn4step7gimmick5block17BlockAttackResultCFUl
+isHitBlockBroken__Q53scn4step7gimmick5block17BlockAttackResultCFUl:
 /* 803003C8 002FC208  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803003CC 002FC20C  7C 08 02 A6 */	mflr r0
 /* 803003D0 002FC210  90 01 00 14 */	stw r0, 0x14(r1)
@@ -127,10 +127,10 @@ lbl_803003C8:
 /* 803003E0 002FC220  7C 9F 23 78 */	mr r31, r4
 /* 803003E4 002FC224  7F E3 FB 78 */	mr r3, r31
 /* 803003E8 002FC228  80 9E 03 04 */	lwz r4, 0x304(r30)
-/* 803003EC 002FC22C  4B D2 40 B5 */	bl lbl_800244A0
+/* 803003EC 002FC22C  4B D2 40 B5 */	bl DefaultSwitchThreadCallback
 /* 803003F0 002FC230  7F E3 FB 78 */	mr r3, r31
 /* 803003F4 002FC234  38 80 00 40 */	li r4, 0x40
-/* 803003F8 002FC238  4B D2 40 A9 */	bl lbl_800244A0
+/* 803003F8 002FC238  4B D2 40 A9 */	bl DefaultSwitchThreadCallback
 /* 803003FC 002FC23C  7C 7E FA 14 */	add r3, r30, r31
 /* 80300400 002FC240  88 63 03 08 */	lbz r3, 0x308(r3)
 /* 80300404 002FC244  83 E1 00 0C */	lwz r31, 0xc(r1)

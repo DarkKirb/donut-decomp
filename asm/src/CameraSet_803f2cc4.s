@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803F2CC4
-lbl_803F2CC4:
+.global __ct__Q33scn9grandmenu9CameraSetFRQ33scn9grandmenu9Component
+__ct__Q33scn9grandmenu9CameraSetFRQ33scn9grandmenu9Component:
 /* 803F2CC4 003EEB04  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F2CC8 003EEB08  7C 08 02 A6 */	mflr r0
 /* 803F2CCC 003EEB0C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -14,19 +14,19 @@ lbl_803F2CC4:
 /* 803F2CE4 003EEB24  90 03 00 04 */	stw r0, 0x4(r3)
 /* 803F2CE8 003EEB28  90 03 00 08 */	stw r0, 0x8(r3)
 /* 803F2CEC 003EEB2C  38 60 00 18 */	li r3, 0x18
-/* 803F2CF0 003EEB30  4B DC CA 21 */	bl lbl_801BF710
+/* 803F2CF0 003EEB30  4B DC CA 21 */	bl __nw__FUl
 /* 803F2CF4 003EEB34  7C 7F 1B 78 */	mr r31, r3
 /* 803F2CF8 003EEB38  2C 03 00 00 */	cmpwi r3, 0x0
 /* 803F2CFC 003EEB3C  41 82 00 14 */	beq lbl_803F2D10
-/* 803F2D00 003EEB40  C0 22 E2 90 */	lfs f1, lbl_80564210@sda21(r2)
-/* 803F2D04 003EEB44  C0 42 E2 94 */	lfs f2, lbl_80564214@sda21(r2)
-/* 803F2D08 003EEB48  4B FF FE 15 */	bl lbl_803F2B1C
+/* 803F2D00 003EEB40  C0 22 E2 90 */	lfs f1, "@51461"@sda21(r2)
+/* 803F2D04 003EEB44  C0 42 E2 94 */	lfs f2, "@51462"@sda21(r2)
+/* 803F2D08 003EEB48  4B FF FE 15 */	bl __ct__Q33scn9grandmenu6CameraFff
 /* 803F2D0C 003EEB4C  7C 7F 1B 78 */	mr r31, r3
 .global lbl_803F2D10
 lbl_803F2D10:
 /* 803F2D10 003EEB50  38 7E 00 08 */	addi r3, r30, 0x8
 /* 803F2D14 003EEB54  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 803F2D18 003EEB58  4B E3 D8 9D */	bl lbl_802305B4
+/* 803F2D18 003EEB58  4B E3 D8 9D */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F2D1C 003EEB5C  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803F2D20 003EEB60  80 7E 00 04 */	lwz r3, 0x4(r30)
 /* 803F2D24 003EEB64  38 03 00 01 */	addi r0, r3, 0x1
@@ -38,8 +38,8 @@ lbl_803F2D10:
 /* 803F2D3C 003EEB7C  7C 08 03 A6 */	mtlr r0
 /* 803F2D40 003EEB80  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F2D44 003EEB84  4E 80 00 20 */	blr
-.global lbl_803F2D48
-lbl_803F2D48:
+.global "__dt__Q33hel6common42AutoDeleteArray<Q33scn9grandmenu6Camera,1>Fv"
+"__dt__Q33hel6common42AutoDeleteArray<Q33scn9grandmenu6Camera,1>Fv":
 /* 803F2D48 003EEB88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803F2D4C 003EEB8C  7C 08 02 A6 */	mflr r0
 /* 803F2D50 003EEB90  90 01 00 24 */	stw r0, 0x24(r1)
@@ -56,18 +56,18 @@ lbl_803F2D74:
 /* 803F2D74 003EEBB4  3B A3 FF FF */	addi r29, r3, -0x1
 /* 803F2D78 003EEBB8  38 7B 00 04 */	addi r3, r27, 0x4
 /* 803F2D7C 003EEBBC  7F A4 EB 78 */	mr r4, r29
-/* 803F2D80 003EEBC0  4B E3 D8 35 */	bl lbl_802305B4
+/* 803F2D80 003EEBC0  4B E3 D8 35 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F2D84 003EEBC4  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 803F2D88 003EEBC8  38 7B 00 04 */	addi r3, r27, 0x4
 /* 803F2D8C 003EEBCC  7F A4 EB 78 */	mr r4, r29
-/* 803F2D90 003EEBD0  4B E3 D8 25 */	bl lbl_802305B4
+/* 803F2D90 003EEBD0  4B E3 D8 25 */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F2D94 003EEBD4  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 803F2D98 003EEBD8  80 7B 00 00 */	lwz r3, 0x0(r27)
 /* 803F2D9C 003EEBDC  38 03 FF FF */	addi r0, r3, -0x1
 /* 803F2DA0 003EEBE0  90 1B 00 00 */	stw r0, 0x0(r27)
 /* 803F2DA4 003EEBE4  7F C3 F3 78 */	mr r3, r30
 /* 803F2DA8 003EEBE8  38 80 00 01 */	li r4, 0x1
-/* 803F2DAC 003EEBEC  4B D8 2D BD */	bl lbl_80175B68
+/* 803F2DAC 003EEBEC  4B D8 2D BD */	bl __dt__Q23scn6ISceneFv
 .global lbl_803F2DB0
 lbl_803F2DB0:
 /* 803F2DB0 003EEBF0  80 7B 00 00 */	lwz r3, 0x0(r27)
@@ -75,12 +75,12 @@ lbl_803F2DB0:
 /* 803F2DB8 003EEBF8  40 82 FF BC */	bne lbl_803F2D74
 /* 803F2DBC 003EEBFC  7F 63 DB 78 */	mr r3, r27
 /* 803F2DC0 003EEC00  38 80 00 00 */	li r4, 0x0
-/* 803F2DC4 003EEC04  4B D8 2D A5 */	bl lbl_80175B68
+/* 803F2DC4 003EEC04  4B D8 2D A5 */	bl __dt__Q23scn6ISceneFv
 /* 803F2DC8 003EEC08  7F 80 07 34 */	extsh r0, r28
 /* 803F2DCC 003EEC0C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803F2DD0 003EEC10  40 81 00 0C */	ble lbl_803F2DDC
 /* 803F2DD4 003EEC14  7F 63 DB 78 */	mr r3, r27
-/* 803F2DD8 003EEC18  4B DC C9 3D */	bl lbl_801BF714
+/* 803F2DD8 003EEC18  4B DC C9 3D */	bl __dl__FPv
 .global lbl_803F2DDC
 lbl_803F2DDC:
 /* 803F2DDC 003EEC1C  7F 63 DB 78 */	mr r3, r27
@@ -90,8 +90,8 @@ lbl_803F2DDC:
 /* 803F2DEC 003EEC2C  7C 08 03 A6 */	mtlr r0
 /* 803F2DF0 003EEC30  38 21 00 20 */	addi r1, r1, 0x20
 /* 803F2DF4 003EEC34  4E 80 00 20 */	blr
-.global lbl_803F2DF8
-lbl_803F2DF8:
+.global __dt__Q33scn9grandmenu9CameraSetFv
+__dt__Q33scn9grandmenu9CameraSetFv:
 /* 803F2DF8 003EEC38  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F2DFC 003EEC3C  7C 08 02 A6 */	mflr r0
 /* 803F2E00 003EEC40  90 01 00 14 */	stw r0, 0x14(r1)
@@ -103,12 +103,12 @@ lbl_803F2DF8:
 /* 803F2E18 003EEC58  41 82 00 24 */	beq lbl_803F2E3C
 /* 803F2E1C 003EEC5C  38 63 00 04 */	addi r3, r3, 0x4
 /* 803F2E20 003EEC60  38 80 FF FF */	li r4, -0x1
-/* 803F2E24 003EEC64  4B FF FF 25 */	bl lbl_803F2D48
+/* 803F2E24 003EEC64  4B FF FF 25 */	bl "__dt__Q33hel6common42AutoDeleteArray<Q33scn9grandmenu6Camera,1>Fv"
 /* 803F2E28 003EEC68  7F E0 07 34 */	extsh r0, r31
 /* 803F2E2C 003EEC6C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803F2E30 003EEC70  40 81 00 0C */	ble lbl_803F2E3C
 /* 803F2E34 003EEC74  7F C3 F3 78 */	mr r3, r30
-/* 803F2E38 003EEC78  4B DC C8 DD */	bl lbl_801BF714
+/* 803F2E38 003EEC78  4B DC C8 DD */	bl __dl__FPv
 .global lbl_803F2E3C
 lbl_803F2E3C:
 /* 803F2E3C 003EEC7C  7F C3 F3 78 */	mr r3, r30
@@ -118,13 +118,13 @@ lbl_803F2E3C:
 /* 803F2E4C 003EEC8C  7C 08 03 A6 */	mtlr r0
 /* 803F2E50 003EEC90  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F2E54 003EEC94  4E 80 00 20 */	blr
-.global lbl_803F2E58
-lbl_803F2E58:
+.global camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind
+camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind:
 /* 803F2E58 003EEC98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803F2E5C 003EEC9C  7C 08 02 A6 */	mflr r0
 /* 803F2E60 003EECA0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 803F2E64 003EECA4  38 63 00 08 */	addi r3, r3, 0x8
-/* 803F2E68 003EECA8  4B E3 D7 4D */	bl lbl_802305B4
+/* 803F2E68 003EECA8  4B E3 D7 4D */	bl "__vc__Q33hel6common11Array<Ul,1>FUl"
 /* 803F2E6C 003EECAC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803F2E70 003EECB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F2E74 003EECB4  7C 08 03 A6 */	mtlr r0

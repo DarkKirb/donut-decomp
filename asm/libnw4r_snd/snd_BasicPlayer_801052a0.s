@@ -1,11 +1,11 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801052A0
-lbl_801052A0:
-/* 801052A0 001010E0  C0 02 93 2C */	lfs f0, lbl_8055F2AC@sda21(r2)
+.global Init__Q44nw4r3snd6detail14PlayerParamSetFv
+Init__Q44nw4r3snd6detail14PlayerParamSetFv:
+/* 801052A0 001010E0  C0 02 93 2C */	lfs f0, "@2619"@sda21(r2)
 /* 801052A4 001010E4  38 80 00 00 */	li r4, 0x0
-/* 801052A8 001010E8  C0 22 93 28 */	lfs f1, lbl_8055F2A8@sda21(r2)
+/* 801052A8 001010E8  C0 22 93 28 */	lfs f1, "@2618"@sda21(r2)
 /* 801052AC 001010EC  38 00 00 01 */	li r0, 0x1
 /* 801052B0 001010F0  D0 23 00 00 */	stfs f1, 0x0(r3)
 /* 801052B4 001010F4  D0 23 00 04 */	stfs f1, 0x4(r3)
@@ -55,19 +55,19 @@ lbl_801052A0:
 /* 80105364 001011A4  00 00 00 00 */	.4byte 0x00000000
 /* 80105368 001011A8  00 00 00 00 */	.4byte 0x00000000
 /* 8010536C 001011AC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80105370
-lbl_80105370:
+.global __ct__Q44nw4r3snd6detail11BasicPlayerFv
+__ct__Q44nw4r3snd6detail11BasicPlayerFv:
 /* 80105370 001011B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80105374 001011B4  7C 08 02 A6 */	mflr r0
-/* 80105378 001011B8  3C 80 80 44 */	lis r4, lbl_80441FD8@ha
+/* 80105378 001011B8  3C 80 80 44 */	lis r4, __vt__Q44nw4r3snd6detail11BasicPlayer@ha
 /* 8010537C 001011BC  38 A3 00 68 */	addi r5, r3, 0x68
 /* 80105380 001011C0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80105384 001011C4  38 C3 00 B0 */	addi r6, r3, 0xb0
-/* 80105388 001011C8  C0 02 93 2C */	lfs f0, lbl_8055F2AC@sda21(r2)
+/* 80105388 001011C8  C0 02 93 2C */	lfs f0, "@2619"@sda21(r2)
 /* 8010538C 001011CC  7C 05 30 40 */	cmplw r5, r6
 /* 80105390 001011D0  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80105394 001011D4  38 84 1F D8 */	addi r4, r4, lbl_80441FD8@l
-/* 80105398 001011D8  C0 22 93 28 */	lfs f1, lbl_8055F2A8@sda21(r2)
+/* 80105394 001011D4  38 84 1F D8 */	addi r4, r4, __vt__Q44nw4r3snd6detail11BasicPlayer@l
+/* 80105398 001011D8  C0 22 93 28 */	lfs f1, "@2618"@sda21(r2)
 /* 8010539C 001011DC  7C 7F 1B 78 */	mr r31, r3
 /* 801053A0 001011E0  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801053A4 001011E4  D0 23 00 50 */	stfs f1, 0x50(r3)
@@ -96,11 +96,11 @@ lbl_801053D8:
 .global lbl_801053F8
 lbl_801053F8:
 /* 801053F8 00101238  38 63 00 04 */	addi r3, r3, 0x4
-/* 801053FC 0010123C  4B FF FE A5 */	bl lbl_801052A0
+/* 801053FC 0010123C  4B FF FE A5 */	bl Init__Q44nw4r3snd6detail14PlayerParamSetFv
 /* 80105400 00101240  38 00 FF FF */	li r0, -0x1
 /* 80105404 00101244  90 1F 00 B0 */	stw r0, 0xb0(r31)
 /* 80105408 00101248  38 7F 00 04 */	addi r3, r31, 0x4
-/* 8010540C 0010124C  4B FF FE 95 */	bl lbl_801052A0
+/* 8010540C 0010124C  4B FF FE 95 */	bl Init__Q44nw4r3snd6detail14PlayerParamSetFv
 /* 80105410 00101250  7F E3 FB 78 */	mr r3, r31
 /* 80105414 00101254  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80105418 00101258  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -109,52 +109,52 @@ lbl_801053F8:
 /* 80105424 00101264  4E 80 00 20 */	blr
 /* 80105428 00101268  00 00 00 00 */	.4byte 0x00000000
 /* 8010542C 0010126C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80105430
-lbl_80105430:
+.global InitParam__Q44nw4r3snd6detail11BasicPlayerFv
+InitParam__Q44nw4r3snd6detail11BasicPlayerFv:
 /* 80105430 00101270  38 63 00 04 */	addi r3, r3, 0x4
-/* 80105434 00101274  4B FF FE 6C */	b lbl_801052A0
+/* 80105434 00101274  4B FF FE 6C */	b Init__Q44nw4r3snd6detail14PlayerParamSetFv
 /* 80105438 00101278  00 00 00 00 */	.4byte 0x00000000
 /* 8010543C 0010127C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80105440
-lbl_80105440:
+.global SetFxSend__Q44nw4r3snd6detail11BasicPlayerFQ34nw4r3snd6AuxBusf
+SetFxSend__Q44nw4r3snd6detail11BasicPlayerFQ34nw4r3snd6AuxBusf:
 /* 80105440 00101280  54 80 10 3A */	slwi r0, r4, 2
 /* 80105444 00101284  7C 63 02 14 */	add r3, r3, r0
 /* 80105448 00101288  D0 23 00 34 */	stfs f1, 0x34(r3)
 /* 8010544C 0010128C  4E 80 00 20 */	blr
-.global lbl_80105450
-lbl_80105450:
+.global GetFxSend__Q44nw4r3snd6detail11BasicPlayerCFQ34nw4r3snd6AuxBus
+GetFxSend__Q44nw4r3snd6detail11BasicPlayerCFQ34nw4r3snd6AuxBus:
 /* 80105450 00101290  54 80 10 3A */	slwi r0, r4, 2
 /* 80105454 00101294  7C 63 02 14 */	add r3, r3, r0
 /* 80105458 00101298  C0 23 00 34 */	lfs f1, 0x34(r3)
 /* 8010545C 0010129C  4E 80 00 20 */	blr
-.global lbl_80105460
-lbl_80105460:
+.global SetBiquadFilter__Q44nw4r3snd6detail11BasicPlayerFif
+SetBiquadFilter__Q44nw4r3snd6detail11BasicPlayerFif:
 /* 80105460 001012A0  98 83 00 1C */	stb r4, 0x1c(r3)
 /* 80105464 001012A4  D0 23 00 18 */	stfs f1, 0x18(r3)
 /* 80105468 001012A8  4E 80 00 20 */	blr
 /* 8010546C 001012AC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80105470
-lbl_80105470:
+.global SetRemoteFilter__Q44nw4r3snd6detail11BasicPlayerFi
+SetRemoteFilter__Q44nw4r3snd6detail11BasicPlayerFi:
 /* 80105470 001012B0  98 83 00 1D */	stb r4, 0x1d(r3)
 /* 80105474 001012B4  4E 80 00 20 */	blr
 /* 80105478 001012B8  00 00 00 00 */	.4byte 0x00000000
 /* 8010547C 001012BC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80105480
-lbl_80105480:
+.global SetRemoteOutVolume__Q44nw4r3snd6detail11BasicPlayerFif
+SetRemoteOutVolume__Q44nw4r3snd6detail11BasicPlayerFif:
 /* 80105480 001012C0  54 80 10 3A */	slwi r0, r4, 2
 /* 80105484 001012C4  7C 63 02 14 */	add r3, r3, r0
 /* 80105488 001012C8  D0 23 00 40 */	stfs f1, 0x40(r3)
 /* 8010548C 001012CC  4E 80 00 20 */	blr
-.global lbl_80105490
-lbl_80105490:
+.global GetRemoteOutVolume__Q44nw4r3snd6detail11BasicPlayerCFi
+GetRemoteOutVolume__Q44nw4r3snd6detail11BasicPlayerCFi:
 /* 80105490 001012D0  54 80 10 3A */	slwi r0, r4, 2
 /* 80105494 001012D4  7C 63 02 14 */	add r3, r3, r0
 /* 80105498 001012D8  C0 23 00 40 */	lfs f1, 0x40(r3)
 /* 8010549C 001012DC  4E 80 00 20 */	blr
 
-.global lbl_801054A0
-lbl_801054A0:
-/* 801054A0 001012E0  4B F9 F9 10 */	b lbl_800A4DB0
+.global __dt__Q44nw4r3snd6detail11BasicPlayerFv
+__dt__Q44nw4r3snd6detail11BasicPlayerFv:
+/* 801054A0 001012E0  4B F9 F9 10 */	b __dt__Q34nw4r2ef7EmitterFv
 /* 801054A4 001012E4  00 00 00 00 */	.4byte 0x00000000
 /* 801054A8 001012E8  00 00 00 00 */	.4byte 0x00000000
 /* 801054AC 001012EC  00 00 00 00 */	.4byte 0x00000000

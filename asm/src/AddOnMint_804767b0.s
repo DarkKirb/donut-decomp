@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804767B0
-lbl_804767B0:
+.global "@56629"
+"@56629":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -89,79 +89,79 @@ lbl_804767B0:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80476900
-lbl_80476900:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCWR,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCWR,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B1BBC
-	.4byte lbl_802B1A3C
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCWR,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCWR,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80476910
-lbl_80476910:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802B1BB8
-	.4byte lbl_802B1A9C
-
-.global lbl_80476920
-lbl_80476920:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCCW,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCCW,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B1BB4
-	.4byte lbl_802B1AF8
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCCW,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer12StateMoveCCW,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80476940
-lbl_80476940:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer11StateAttack,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer11StateAttack,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B1BB0
-	.4byte lbl_802B1B14
-
-.global lbl_80476950
-lbl_80476950:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_802B1BAC
-	.4byte lbl_802B1B30
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer11StateAttack,PQ43scn4step5enemy5Enemy>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_80476970
-lbl_80476970:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateChase,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateChase,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B1BA8
-	.4byte lbl_8028DDD8
-	.4byte lbl_802B36D4
-	.4byte lbl_8028DDE0
-	.4byte lbl_802B3B20
-	.4byte lbl_8028DDE8
-	.4byte lbl_802B1A34
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateChase,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateChase,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80476994
-lbl_80476994:
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateAgony,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateAgony,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802B1B4C
-	.4byte lbl_8028DDD8
-	.4byte lbl_802B36D4
-	.4byte lbl_8028DDE0
-	.4byte lbl_802B3B20
-	.4byte lbl_8028DDE8
-	.4byte lbl_802B1A38
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateAgony,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6flamer10StateAgony,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q53scn4step5enemy6flamer12StateMoveCCW
+__vt__Q53scn4step5enemy6flamer12StateMoveCCW:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6flamer12StateMoveCCWFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy6flamer9StateMoveFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6flamer9StateMoveFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte isInitCWR__Q53scn4step5enemy6flamer12StateMoveCCWCFv
+
+.global __vt__Q53scn4step5enemy6flamer12StateMoveCWR
+__vt__Q53scn4step5enemy6flamer12StateMoveCWR:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6flamer12StateMoveCWRFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy6flamer9StateMoveFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6flamer9StateMoveFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+	.4byte isInitCWR__Q53scn4step5enemy6flamer12StateMoveCWRCFv
 	.4byte 0x41737365
 	.4byte 0x7274696F
 	.4byte 0x6E206661

@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C9B8
-lbl_8055C9B8:
+.global Vdac_Flag_Changed
+Vdac_Flag_Changed:
 	.skip 0x4
 
-.global lbl_8055C9BC
-lbl_8055C9BC:
+.global __current_3in1_video_mode
+__current_3in1_video_mode:
 	.skip 0x4
 
-.global lbl_8055C9C0
-lbl_8055C9C0:
+.global __level
+__level:
 	.skip 0x4
 
-.global lbl_8055C9C4
-lbl_8055C9C4:
+.global __gamma
+__gamma:
 	.skip 0x4
 
-.global lbl_8055C9C8
-lbl_8055C9C8:
+.global __type
+__type:
 	.skip 0x4
 
-.global lbl_8055C9CC
-lbl_8055C9CC:
+.global Vdac_Flag_Region
+Vdac_Flag_Region:
 	.skip 0x4

@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8049FF20
-lbl_8049FF20:
+.global __AXStackHead
+__AXStackHead:
 	.skip 0x80
 
-.global lbl_8049FFA0
-lbl_8049FFA0:
+.global __AXStackTail
+__AXStackTail:
 	.skip 0x61
 
 .global lbl_804A0001

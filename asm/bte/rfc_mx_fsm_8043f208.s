@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8043F208
-lbl_8043F208:
+.global "@759"
+"@759":
 
 	.4byte lbl_80098680
 	.4byte lbl_80098684
@@ -33,8 +33,8 @@ lbl_8043F208:
 	.4byte 0x69675F72
 	.4byte 0x65710000
 
-.global lbl_8043F278
-lbl_8043F278:
+.global "@781_8043F278"
+"@781_8043F278":
 
 	.4byte 0x5246434F
 	.4byte 0x4D4D204D
@@ -47,8 +47,8 @@ lbl_8043F278:
 	.4byte 0x6174653A
 	.4byte 0x25640000
 
-.global lbl_8043F2A0
-lbl_8043F2A0:
+.global "@784_8043F2A0"
+"@784_8043F2A0":
 
 	.4byte lbl_80098868
 	.4byte lbl_8009883C
@@ -83,8 +83,8 @@ lbl_8043F2A0:
 	.4byte 0x6576743A
 	.4byte 0x25640000
 
-.global lbl_8043F320
-lbl_8043F320:
+.global "@812_8043F320"
+"@812_8043F320":
 
 	.4byte lbl_80098AEC
 	.4byte lbl_80098B4C
@@ -105,8 +105,8 @@ lbl_8043F320:
 	.4byte 0x743A2564
 	.4byte 0
 
-.global lbl_8043F368
-lbl_8043F368:
+.global "@829"
+"@829":
 
 	.4byte lbl_80098CC0
 	.4byte lbl_80098C70
@@ -124,8 +124,8 @@ lbl_8043F368:
 	.4byte lbl_80098CC0
 	.4byte lbl_80098C5C
 
-.global lbl_8043F3A4
-lbl_8043F3A4:
+.global "@839_8043F3A4"
+"@839_8043F3A4":
 
 	.4byte 0x7266635F
 	.4byte 0x6D785F73
@@ -137,8 +137,8 @@ lbl_8043F3A4:
 	.4byte 0x20657674
 	.4byte 0x3A256400
 
-.global lbl_8043F3C8
-lbl_8043F3C8:
+.global "@851_8043F3C8"
+"@851_8043F3C8":
 
 	.4byte 0x7266635F
 	.4byte 0x6D785F73
@@ -150,8 +150,8 @@ lbl_8043F3C8:
 	.4byte 0x6576743A
 	.4byte 0x25640000
 
-.global lbl_8043F3EC
-lbl_8043F3EC:
+.global "@853_8043F3EC"
+"@853_8043F3EC":
 
 	.4byte lbl_80098ED0
 	.4byte lbl_80098EFC
@@ -166,8 +166,8 @@ lbl_8043F3EC:
 	.4byte lbl_80098EFC
 	.4byte lbl_80098EBC
 
-.global lbl_8043F41C
-lbl_8043F41C:
+.global "@868_8043F41C"
+"@868_8043F41C":
 
 	.4byte 0x7266635F
 	.4byte 0x6D785F73
@@ -180,8 +180,8 @@ lbl_8043F41C:
 	.4byte 0x76743A25
 	.4byte 0x64000000
 
-.global lbl_8043F444
-lbl_8043F444:
+.global "@871_8043F444"
+"@871_8043F444":
 
 	.4byte lbl_80099070
 	.4byte lbl_80098FB4
@@ -199,8 +199,8 @@ lbl_8043F444:
 	.4byte lbl_80099070
 	.4byte lbl_80099058
 
-.global lbl_8043F480
-lbl_8043F480:
+.global "@885_8043F480"
+"@885_8043F480":
 
 	.4byte 0x7266635F
 	.4byte 0x6D785F63
@@ -212,8 +212,8 @@ lbl_8043F480:
 	.4byte 0x65733A25
 	.4byte 0x64200000
 
-.global lbl_8043F4A4
-lbl_8043F4A4:
+.global "@895"
+"@895":
 
 	.4byte 0x7266635F
 	.4byte 0x6D785F63

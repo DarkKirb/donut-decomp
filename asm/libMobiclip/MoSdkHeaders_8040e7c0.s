@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040E7C0
-lbl_8040E7C0:
+.global RootPublicKey
+RootPublicKey:
 
 	.4byte 0xAC0EE159
 	.4byte 0xA92BAD58
@@ -45,8 +45,8 @@ lbl_8040E7C0:
 	.4byte 0x3D474255
 	.4byte 0x8DD4051F
 
-.global lbl_8040E860
-lbl_8040E860:
+.global RootPublicBarrett
+RootPublicBarrett:
 
 	.4byte 0x017CE500
 	.4byte 0x466A8D6E

@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80499EC0
-lbl_80499EC0:
+.global StmEhInBuf
+StmEhInBuf:
 	.skip 0x20
 
-.global lbl_80499EE0
-lbl_80499EE0:
+.global StmEhOutBuf
+StmEhOutBuf:
 	.skip 0x20
 
-.global lbl_80499F00
-lbl_80499F00:
+.global StmImInBuf
+StmImInBuf:
 	.skip 0x20
 
-.global lbl_80499F20
-lbl_80499F20:
+.global StmImOutBuf
+StmImOutBuf:
 	.skip 0x20
 
-.global lbl_80499F40
-lbl_80499F40:
+.global StmVdInBuf
+StmVdInBuf:
 	.skip 0x20
 
-.global lbl_80499F60
-lbl_80499F60:
+.global StmVdOutBuf
+StmVdOutBuf:
 	.skip 0x20

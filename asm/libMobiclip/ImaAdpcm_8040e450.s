@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040E450
-lbl_8040E450:
+.global g_Ima_Adpcm_StepTable
+g_Ima_Adpcm_StepTable:
 
 	.4byte 0x00070008
 	.4byte 0x0009000A
@@ -51,8 +51,8 @@ lbl_8040E450:
 	.4byte 0x7FFF0000
 	.4byte 0
 
-.global lbl_8040E508
-lbl_8040E508:
+.global g_Ima_Adpcm_IndexTable
+g_Ima_Adpcm_IndexTable:
 
 	.4byte 0xFFFFFFFF
 	.4byte 0x02040608

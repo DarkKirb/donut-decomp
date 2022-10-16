@@ -1,10 +1,10 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CF08
-lbl_8055CF08:
+.global _btu_g_count
+_btu_g_count:
 	.skip 0x4
 
-.global lbl_8055CF0C
-lbl_8055CF0C:
+.global _btu_last_timer_tick
+_btu_last_timer_tick:
 	.skip 0x4

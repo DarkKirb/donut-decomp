@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CC90
-lbl_8055CC90:
+.global __AXPB
+__AXPB:
 	.skip 0x4
 
-.global lbl_8055CC94
-lbl_8055CC94:
+.global __AXITD
+__AXITD:
 	.skip 0x4
 
-.global lbl_8055CC98
-lbl_8055CC98:
+.global __AXVPB
+__AXVPB:
 	.skip 0x4
 
-.global lbl_8055CC9C
-lbl_8055CC9C:
+.global __AXMaxVoices
+__AXMaxVoices:
 	.skip 0x4
 
-.global lbl_8055CCA0
-lbl_8055CCA0:
+.global __AXNumVoices
+__AXNumVoices:
 	.skip 0x4
 
-.global lbl_8055CCA4
-lbl_8055CCA4:
+.global __AXRecDspCycles
+__AXRecDspCycles:
 	.skip 0x4
 
-.global lbl_8055CCA8
-lbl_8055CCA8:
+.global __AXMaxDspCycles
+__AXMaxDspCycles:
 	.skip 0x8

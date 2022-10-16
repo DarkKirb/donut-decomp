@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804944D0
-lbl_804944D0:
+.global __vt__Q53scn4step6weapon16enemywaterbullet9StateMain
+__vt__Q53scn4step6weapon16enemywaterbullet9StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803E2E00
-	.4byte lbl_803E2E9C
-	.4byte lbl_803E3088
-	.4byte lbl_803E3158
-	.4byte lbl_803E3254
-	.4byte lbl_803E337C
+	.4byte __dt__Q53scn4step6weapon16enemywaterbullet9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon16enemywaterbullet9StateMainFv
+	.4byte procMove__Q53scn4step6weapon16enemywaterbullet9StateMainFv
+	.4byte procConstraint__Q53scn4step6weapon16enemywaterbullet9StateMainFv
+	.4byte procFixPos__Q53scn4step6weapon16enemywaterbullet9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon16enemywaterbullet9StateMainFv

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80409F20
-lbl_80409F20:
+.global coefTable__Q44nw4r3snd6detail15BiquadFilterLpf
+coefTable__Q44nw4r3snd6detail15BiquadFilterLpf:
 
 	.4byte 0x3AB37566
 	.4byte 0x3AB383B8
@@ -285,8 +285,8 @@ lbl_80409F20:
 	.4byte 0x00070004
 	.4byte 0x7DB0C241
 
-.global lbl_8040A380
-lbl_8040A380:
+.global coefTable__Q44nw4r3snd6detail15BiquadFilterHpf
+coefTable__Q44nw4r3snd6detail15BiquadFilterHpf:
 
 	.4byte 0x3BB58895
 	.4byte 0x3BB57E7B
@@ -532,8 +532,8 @@ lbl_8040A380:
 	.4byte 0x167B0DC1
 	.4byte 0xEE800000
 
-.global lbl_8040A74C
-lbl_8040A74C:
+.global coefTable__Q44nw4r3snd6detail18BiquadFilterBpf512
+coefTable__Q44nw4r3snd6detail18BiquadFilterBpf512:
 
 	.4byte 0x2EFA0000
 	.4byte 0xD10621D7
@@ -841,8 +841,8 @@ lbl_8040A74C:
 	.4byte 0x0000FDBC
 	.4byte 0x7ADFC488
 
-.global lbl_8040AC10
-lbl_8040AC10:
+.global coefTable__Q44nw4r3snd6detail19BiquadFilterBpf1024
+coefTable__Q44nw4r3snd6detail19BiquadFilterBpf1024:
 
 	.4byte 0x2F040000
 	.4byte 0xD0FC21DE
@@ -1078,8 +1078,8 @@ lbl_8040AC10:
 	.4byte 0xFC7676C8
 	.4byte 0xC7140000
 
-.global lbl_8040AFB4
-lbl_8040AFB4:
+.global coefTable__Q44nw4r3snd6detail19BiquadFilterBpf2048
+coefTable__Q44nw4r3snd6detail19BiquadFilterBpf2048:
 
 	.4byte 0x3F420000
 	.4byte 0xC0BE0136

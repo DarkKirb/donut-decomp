@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801DB318
-lbl_801DB318:
+.global Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb
+Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb:
 /* 801DB318 001D7158  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DB31C 001D715C  7C 08 02 A6 */	mflr r0
 /* 801DB320 001D7160  90 01 00 24 */	stw r0, 0x24(r1)
@@ -13,7 +13,7 @@ lbl_801DB318:
 /* 801DB334 001D7174  7C BD 2B 78 */	mr r29, r5
 /* 801DB338 001D7178  7C DE 33 78 */	mr r30, r6
 /* 801DB33C 001D717C  7C FF 3B 78 */	mr r31, r7
-/* 801DB340 001D7180  48 00 00 71 */	bl lbl_801DB3B0
+/* 801DB340 001D7180  48 00 00 71 */	bl __ct__Q25pause11ContextOpenFv
 /* 801DB344 001D7184  93 9B 00 00 */	stw r28, 0x0(r27)
 /* 801DB348 001D7188  93 DB 00 04 */	stw r30, 0x4(r27)
 /* 801DB34C 001D718C  9B FB 00 08 */	stb r31, 0x8(r27)
@@ -25,8 +25,8 @@ lbl_801DB318:
 /* 801DB364 001D71A4  7C 08 03 A6 */	mtlr r0
 /* 801DB368 001D71A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DB36C 001D71AC  4E 80 00 20 */	blr
-.global lbl_801DB370
-lbl_801DB370:
+.global isSamePageLayout__Q25pause11ContextOpenCFRCQ25pause11ContextOpen
+isSamePageLayout__Q25pause11ContextOpenCFRCQ25pause11ContextOpen:
 /* 801DB370 001D71B0  38 C0 00 00 */	li r6, 0x0
 /* 801DB374 001D71B4  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 801DB378 001D71B8  80 04 00 00 */	lwz r0, 0x0(r4)
@@ -45,15 +45,15 @@ lbl_801DB370:
 lbl_801DB3A8:
 /* 801DB3A8 001D71E8  7C C3 33 78 */	mr r3, r6
 /* 801DB3AC 001D71EC  4E 80 00 20 */	blr
-.global lbl_801DB3B0
-lbl_801DB3B0:
+.global __ct__Q25pause11ContextOpenFv
+__ct__Q25pause11ContextOpenFv:
 /* 801DB3B0 001D71F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DB3B4 001D71F4  7C 08 02 A6 */	mflr r0
 /* 801DB3B8 001D71F8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801DB3BC 001D71FC  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801DB3C0 001D7200  7C 7F 1B 78 */	mr r31, r3
 /* 801DB3C4 001D7204  38 63 00 0C */	addi r3, r3, 0xc
-/* 801DB3C8 001D7208  48 00 3E 3D */	bl lbl_801DF204
+/* 801DB3C8 001D7208  48 00 3E 3D */	bl __ct__Q25pause15PlayerEntryInfoFv
 /* 801DB3CC 001D720C  38 00 00 00 */	li r0, 0x0
 /* 801DB3D0 001D7210  90 01 00 08 */	stw r0, 0x8(r1)
 /* 801DB3D4 001D7214  90 01 00 0C */	stw r0, 0xc(r1)

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804236F8
-lbl_804236F8:
+.global InterruptPrioTable
+InterruptPrioTable:
 
 	.4byte 0x00000100
 	.4byte 0x00000040

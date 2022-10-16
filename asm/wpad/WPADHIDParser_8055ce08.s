@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CE08
-lbl_8055CE08:
+.global _wpadExtInitRetryCnt
+_wpadExtInitRetryCnt:
 	.skip 0x4
 
-.global lbl_8055CE0C
-lbl_8055CE0C:
+.global _wpadCLCompt
+_wpadCLCompt:
 	.skip 0x4
 
-.global lbl_8055CE10
-lbl_8055CE10:
+.global _wpadDevType2Sub
+_wpadDevType2Sub:
 	.skip 0x4
 
-.global lbl_8055CE14
-lbl_8055CE14:
+.global _wpadDevType2
+_wpadDevType2:
 	.skip 0x4
 
-.global lbl_8055CE18
-lbl_8055CE18:
+.global _wpadDevMode
+_wpadDevMode:
 	.skip 0x4
 
-.global lbl_8055CE1C
-lbl_8055CE1C:
+.global _wpadDevType
+_wpadDevType:
 	.skip 0x4

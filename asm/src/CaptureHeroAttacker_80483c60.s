@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80483C60
-lbl_80483C60:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -14,15 +14,15 @@ lbl_80483C60:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80483C84
-lbl_80483C84:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80483C90
-lbl_80483C90:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -34,15 +34,15 @@ lbl_80483C90:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80483CB4
-lbl_80483CB4:
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>,0>FPQ24util76ObjListNode<Q43scn4step4hero19CaptureHeroReceiver,Q24util16ObjListDummyType>":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80483CC0
-lbl_80483CC0:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -54,15 +54,15 @@ lbl_80483CC0:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80483CE4
-lbl_80483CE4:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80483CF0
-lbl_80483CF0:
+.global "@STRING@__ml__Q44nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -74,15 +74,15 @@ lbl_80483CF0:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80483D14
-lbl_80483D14:
+.global "@STRING@__ml__Q44nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80483D20
-lbl_80483D20:
+.global "@STRING@GetBack__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -94,8 +94,8 @@ lbl_80483D20:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_80483D44
-lbl_80483D44:
+.global "@STRING@GetBack__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut97LinkList<Q24util76ObjListNode<Q43scn4step4hero19CaptureHeroAttacker,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374

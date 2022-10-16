@@ -1,38 +1,38 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C9D0
-lbl_8055C9D0:
+.global __piReg
+__piReg:
 	.skip 0x4
 
-.global lbl_8055C9D4
-lbl_8055C9D4:
+.global __cpReg
+__cpReg:
 	.skip 0x4
 
-.global lbl_8055C9D8
-lbl_8055C9D8:
+.global __peReg
+__peReg:
 	.skip 0x4
 
-.global lbl_8055C9DC
-lbl_8055C9DC:
+.global __memReg
+__memReg:
 	.skip 0x4
 
-.global lbl_8055C9E0
-lbl_8055C9E0:
+.global "@LOCAL@__GXShutdown__FiUl@peCount"
+"@LOCAL@__GXShutdown__FiUl@peCount":
 	.skip 0x8
 
-.global lbl_8055C9E8
-lbl_8055C9E8:
+.global "@LOCAL@__GXShutdown__FiUl@time@0"
+"@LOCAL@__GXShutdown__FiUl@time@0":
 	.skip 0x4
 
 .global lbl_8055C9EC
 lbl_8055C9EC:
 	.skip 0x4
 
-.global lbl_8055C9F0
-lbl_8055C9F0:
+.global "@LOCAL@__GXShutdown__FiUl@calledOnce@1"
+"@LOCAL@__GXShutdown__FiUl@calledOnce@1":
 	.skip 0x4
 
-.global lbl_8055C9F4
-lbl_8055C9F4:
+.global "@LOCAL@GXInit__FPvUl@shutdownFuncRegistered"
+"@LOCAL@GXInit__FPvUl@shutdownFuncRegistered":
 	.skip 0x4

@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804664B0
-lbl_804664B0:
+.global __vt__Q53scn4step4boss6common18StateVacuumReceive
+__vt__Q53scn4step4boss6common18StateVacuumReceive:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80247880
-	.4byte lbl_80247884
-	.4byte lbl_802478F8
-	.4byte lbl_802344FC
-	.4byte lbl_802478FC
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procAnim__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procMove__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6common18StateVacuumReceiveFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

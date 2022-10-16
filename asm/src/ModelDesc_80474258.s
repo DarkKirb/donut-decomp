@@ -1,29 +1,29 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80474258
-lbl_80474258:
+.global "@50123_80474258"
+"@50123_80474258":
 
 	.4byte 0x43413255
 	.4byte 0x70426F64
 	.4byte 0x794A0000
 
-.global lbl_80474264
-lbl_80474264:
+.global "@50127_80474264"
+"@50127_80474264":
 
 	.4byte 0x4A756D70
 	.4byte 0x53746172
 	.4byte 0x74000000
 
-.global lbl_80474270
-lbl_80474270:
+.global "@50129_80474270"
+"@50129_80474270":
 
 	.4byte 0x44616D61
 	.4byte 0x67654574
 	.4byte 0x63000000
 
-.global lbl_8047427C
-lbl_8047427C:
+.global "@50132_8047427C"
+"@50132_8047427C":
 
 	.4byte 0x426F756E
 	.4byte 0x63792E41
@@ -38,8 +38,8 @@ lbl_8047427C:
 	.4byte 0x2E457865
 	.4byte 0x63000000
 
-.global lbl_804742AC
-lbl_804742AC:
+.global "@50133_804742AC"
+"@50133_804742AC":
 
 	.4byte 0x426F756E
 	.4byte 0x63792E41
@@ -53,8 +53,8 @@ lbl_804742AC:
 	.4byte 0x45786563
 	.4byte 0
 
-.global lbl_804742D8
-lbl_804742D8:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy6bouncy23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy6bouncy23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -96,19 +96,19 @@ lbl_804742D8:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8047427C
+	.4byte "@50132_8047427C"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_804742AC
+	.4byte "@50133_804742AC"
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_804743A0
-lbl_804743A0:
+.global "@50210_804743A0"
+"@50210_804743A0":
 
 	.4byte 0x73746570
 	.4byte 0x2F636861

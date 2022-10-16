@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80483E80
-lbl_80483E80:
+.global "__vt__Q24util91StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero,f>"
+"__vt__Q24util91StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero,f>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803356E0
-	.4byte lbl_803356A0
+	.4byte "__dt__Q24util91StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero,f>Fv"
+	.4byte "create__Q24util91StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero,f>Fv"
 
-.global lbl_80483E90
-lbl_80483E90:
+.global "__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero>"
+"__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803356DC
-	.4byte lbl_803356C0
+	.4byte "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common9StateDead,PQ43scn4step4hero4Hero>Fv"

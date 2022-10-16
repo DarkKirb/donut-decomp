@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80109EA0
-lbl_80109EA0:
+.global Parse__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackb
+Parse__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackb:
 /* 80109EA0 00105CE0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80109EA4 00105CE4  7C 08 02 A6 */	mflr r0
 /* 80109EA8 00105CE8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -95,7 +95,7 @@ lbl_80109FA4:
 /* 80109FD4 00105E14  7C 07 03 78 */	mr r7, r0
 .global lbl_80109FD8
 lbl_80109FD8:
-/* 80109FD8 00105E18  48 00 0E F9 */	bl lbl_8010AED0
+/* 80109FD8 00105E18  48 00 0E F9 */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 80109FDC 00105E1C  88 1A 00 8C */	lbz r0, 0x8c(r26)
 /* 80109FE0 00105E20  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 80109FE4 00105E24  7C 77 1B 78 */	mr r23, r3
@@ -191,7 +191,7 @@ lbl_8010A0F0:
 /* 8010A10C 00105F4C  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A110
 lbl_8010A110:
-/* 8010A110 00105F50  48 00 0D C1 */	bl lbl_8010AED0
+/* 8010A110 00105F50  48 00 0D C1 */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A114 00105F54  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8010A118 00105F58  41 82 03 F8 */	beq lbl_8010A510
 /* 8010A11C 00105F5C  90 7A 00 44 */	stw r3, 0x44(r26)
@@ -208,7 +208,7 @@ lbl_8010A124:
 /* 8010A140 00105F80  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A144
 lbl_8010A144:
-/* 8010A144 00105F84  48 00 0D 8D */	bl lbl_8010AED0
+/* 8010A144 00105F84  48 00 0D 8D */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A148 00105F88  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8010A14C 00105F8C  7C 66 1B 78 */	mr r6, r3
 /* 8010A150 00105F90  41 82 03 C0 */	beq lbl_8010A510
@@ -313,7 +313,7 @@ lbl_8010A2A0:
 /* 8010A2BC 001060FC  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A2C0
 lbl_8010A2C0:
-/* 8010A2C0 00106100  48 00 0C 11 */	bl lbl_8010AED0
+/* 8010A2C0 00106100  48 00 0C 11 */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A2C4 00106104  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 8010A2C8 00106108  7C 78 1B 78 */	mr r24, r3
 /* 8010A2CC 0010610C  41 82 00 20 */	beq lbl_8010A2EC
@@ -322,7 +322,7 @@ lbl_8010A2C0:
 /* 8010A2D8 00106118  7F 46 D3 78 */	mr r6, r26
 /* 8010A2DC 0010611C  7F C7 F3 78 */	mr r7, r30
 /* 8010A2E0 00106120  38 9A 00 20 */	addi r4, r26, 0x20
-/* 8010A2E4 00106124  48 00 0B ED */	bl lbl_8010AED0
+/* 8010A2E4 00106124  48 00 0B ED */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A2E8 00106128  7C 7B 1B 78 */	mr r27, r3
 .global lbl_8010A2EC
 lbl_8010A2EC:
@@ -374,7 +374,7 @@ lbl_8010A364:
 /* 8010A380 001061C0  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A384
 lbl_8010A384:
-/* 8010A384 001061C4  48 00 0B 4D */	bl lbl_8010AED0
+/* 8010A384 001061C4  48 00 0B 4D */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A388 001061C8  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8010A38C 001061CC  7C 66 07 34 */	extsh r6, r3
 /* 8010A390 001061D0  41 82 01 80 */	beq lbl_8010A510
@@ -434,7 +434,7 @@ lbl_8010A424:
 /* 8010A440 00106280  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A444
 lbl_8010A444:
-/* 8010A444 00106284  48 00 0A 8D */	bl lbl_8010AED0
+/* 8010A444 00106284  48 00 0A 8D */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A448 00106288  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8010A44C 0010628C  54 77 04 3E */	clrlwi r23, r3, 16
 /* 8010A450 00106290  41 82 00 94 */	beq lbl_8010A4E4
@@ -464,7 +464,7 @@ lbl_8010A480:
 /* 8010A4A8 001062E8  7C 07 03 78 */	mr r7, r0
 .global lbl_8010A4AC
 lbl_8010A4AC:
-/* 8010A4AC 001062EC  48 00 0A 25 */	bl lbl_8010AED0
+/* 8010A4AC 001062EC  48 00 0A 25 */	bl ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
 /* 8010A4B0 001062F0  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8010A4B4 001062F4  7C 7B 07 34 */	extsh r27, r3
 /* 8010A4B8 001062F8  41 82 00 2C */	beq lbl_8010A4E4
@@ -504,8 +504,8 @@ lbl_8010A514:
 /* 8010A528 00106368  4E 80 00 20 */	blr
 /* 8010A52C 0010636C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8010A530
-lbl_8010A530:
+.global CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll
+CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll:
 /* 8010A530 00106370  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8010A534 00106374  7C 08 02 A6 */	mflr r0
 /* 8010A538 00106378  90 01 00 44 */	stw r0, 0x44(r1)
@@ -524,9 +524,9 @@ lbl_8010A530:
 /* 8010A56C 001063AC  38 05 FF 7F */	addi r0, r5, -0x81
 /* 8010A570 001063B0  28 00 00 7C */	cmplwi r0, 0x7c
 /* 8010A574 001063B4  41 81 09 20 */	bgt lbl_8010AE94
-/* 8010A578 001063B8  3C 60 80 44 */	lis r3, lbl_80442138@ha
+/* 8010A578 001063B8  3C 60 80 44 */	lis r3, "@10414_80442138"@ha
 /* 8010A57C 001063BC  54 00 10 3A */	slwi r0, r0, 2
-/* 8010A580 001063C0  38 63 21 38 */	addi r3, r3, lbl_80442138@l
+/* 8010A580 001063C0  38 63 21 38 */	addi r3, r3, "@10414_80442138"@l
 /* 8010A584 001063C4  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8010A588 001063C8  7C 69 03 A6 */	mtctr r3
 /* 8010A58C 001063CC  4E 80 04 20 */	bctr
@@ -564,7 +564,7 @@ lbl_8010A5B8:
 lbl_8010A5D0:
 /* 8010A5D0 00106410  7F 83 E3 78 */	mr r3, r28
 /* 8010A5D4 00106414  7F 24 CB 78 */	mr r4, r25
-/* 8010A5D8 00106418  48 00 48 39 */	bl lbl_8010EE10
+/* 8010A5D8 00106418  48 00 48 39 */	bl SetMute__Q44nw4r3snd6detail8SeqTrackFQ34nw4r3snd7SeqMute
 /* 8010A5DC 0010641C  48 00 08 B8 */	b lbl_8010AE94
 
 .global lbl_8010A5E0
@@ -734,9 +734,9 @@ lbl_8010A788:
 lbl_8010A790:
 /* 8010A790 001065D0  54 C0 06 3E */	clrlwi r0, r6, 24
 /* 8010A794 001065D4  90 01 00 0C */	stw r0, 0xc(r1)
-/* 8010A798 001065D8  C8 42 93 E8 */	lfd f2, lbl_8055F368@sda21(r2)
+/* 8010A798 001065D8  C8 42 93 E8 */	lfd f2, "@10415"@sda21(r2)
 /* 8010A79C 001065DC  C8 21 00 08 */	lfd f1, 0x8(r1)
-/* 8010A7A0 001065E0  C0 02 93 D8 */	lfs f0, lbl_8055F358@sda21(r2)
+/* 8010A7A0 001065E0  C0 02 93 D8 */	lfs f0, "@10403"@sda21(r2)
 /* 8010A7A4 001065E4  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010A7A8 001065E8  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8010A7AC 001065EC  D0 1F 00 3C */	stfs f0, 0x3c(r31)
@@ -746,9 +746,9 @@ lbl_8010A790:
 lbl_8010A7B4:
 /* 8010A7B4 001065F4  54 C0 06 3E */	clrlwi r0, r6, 24
 /* 8010A7B8 001065F8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8010A7BC 001065FC  C8 42 93 E8 */	lfd f2, lbl_8055F368@sda21(r2)
+/* 8010A7BC 001065FC  C8 42 93 E8 */	lfd f2, "@10415"@sda21(r2)
 /* 8010A7C0 00106600  C8 21 00 10 */	lfd f1, 0x10(r1)
-/* 8010A7C4 00106604  C0 02 93 DC */	lfs f0, lbl_8055F35C@sda21(r2)
+/* 8010A7C4 00106604  C0 02 93 DC */	lfs f0, "@10404"@sda21(r2)
 /* 8010A7C8 00106608  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010A7CC 0010660C  EC 00 00 72 */	fmuls f0, f0, f1
 /* 8010A7D0 00106610  D0 1F 00 40 */	stfs f0, 0x40(r31)
@@ -775,9 +775,9 @@ lbl_8010A7E8:
 lbl_8010A7F8:
 /* 8010A7F8 00106638  6C C0 80 00 */	xoris r0, r6, 0x8000
 /* 8010A7FC 0010663C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 8010A800 00106640  C8 42 93 F0 */	lfd f2, lbl_8055F370@sda21(r2)
+/* 8010A800 00106640  C8 42 93 F0 */	lfd f2, "@10416"@sda21(r2)
 /* 8010A804 00106644  C8 21 00 08 */	lfd f1, 0x8(r1)
-/* 8010A808 00106648  C0 02 93 E0 */	lfs f0, lbl_8055F360@sda21(r2)
+/* 8010A808 00106648  C0 02 93 E0 */	lfs f0, "@10405"@sda21(r2)
 /* 8010A80C 0010664C  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010A810 00106650  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8010A814 00106654  D0 1F 00 50 */	stfs f0, 0x50(r31)
@@ -839,9 +839,9 @@ lbl_8010A888:
 /* 8010A894 001066D4  38 80 FF FF */	li r4, -0x1
 /* 8010A898 001066D8  54 00 0F FE */	srwi r0, r0, 31
 /* 8010A89C 001066DC  98 1F 00 0A */	stb r0, 0xa(r31)
-/* 8010A8A0 001066E0  48 00 3D 61 */	bl lbl_8010E600
+/* 8010A8A0 001066E0  48 00 3D 61 */	bl ReleaseAllChannel__Q44nw4r3snd6detail8SeqTrackFi
 /* 8010A8A4 001066E4  7F 83 E3 78 */	mr r3, r28
-/* 8010A8A8 001066E8  48 00 44 09 */	bl lbl_8010ECB0
+/* 8010A8A8 001066E8  48 00 44 09 */	bl FreeAllChannel__Q44nw4r3snd6detail8SeqTrackFv
 /* 8010A8AC 001066EC  48 00 05 E8 */	b lbl_8010AE94
 
 .global lbl_8010A8B0
@@ -853,9 +853,9 @@ lbl_8010A8B0:
 /* 8010A8C0 00106700  41 82 05 D4 */	beq lbl_8010AE94
 /* 8010A8C4 00106704  7F 83 E3 78 */	mr r3, r28
 /* 8010A8C8 00106708  38 80 FF FF */	li r4, -0x1
-/* 8010A8CC 0010670C  48 00 3D 35 */	bl lbl_8010E600
+/* 8010A8CC 0010670C  48 00 3D 35 */	bl ReleaseAllChannel__Q44nw4r3snd6detail8SeqTrackFi
 /* 8010A8D0 00106710  7F 83 E3 78 */	mr r3, r28
-/* 8010A8D4 00106714  48 00 43 DD */	bl lbl_8010ECB0
+/* 8010A8D4 00106714  48 00 43 DD */	bl FreeAllChannel__Q44nw4r3snd6detail8SeqTrackFv
 /* 8010A8D8 00106718  48 00 05 BC */	b lbl_8010AE94
 
 .global lbl_8010A8DC
@@ -878,10 +878,10 @@ lbl_8010A8F4:
 .global lbl_8010A908
 lbl_8010A908:
 /* 8010A908 00106748  38 06 FF C0 */	addi r0, r6, -0x40
-/* 8010A90C 0010674C  C8 42 93 F0 */	lfd f2, lbl_8055F370@sda21(r2)
+/* 8010A90C 0010674C  C8 42 93 F0 */	lfd f2, "@10416"@sda21(r2)
 /* 8010A910 00106750  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 8010A914 00106754  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8010A918 00106758  C0 02 93 E0 */	lfs f0, lbl_8055F360@sda21(r2)
+/* 8010A918 00106758  C0 02 93 E0 */	lfs f0, "@10405"@sda21(r2)
 /* 8010A91C 0010675C  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 8010A920 00106760  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010A924 00106764  EC 01 00 32 */	fmuls f0, f1, f0
@@ -897,9 +897,9 @@ lbl_8010A930:
 lbl_8010A938:
 /* 8010A938 00106778  6C C0 80 00 */	xoris r0, r6, 0x8000
 /* 8010A93C 0010677C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 8010A940 00106780  C8 42 93 F0 */	lfd f2, lbl_8055F370@sda21(r2)
+/* 8010A940 00106780  C8 42 93 F0 */	lfd f2, "@10416"@sda21(r2)
 /* 8010A944 00106784  C8 21 00 08 */	lfd f1, 0x8(r1)
-/* 8010A948 00106788  C0 02 93 E4 */	lfs f0, lbl_8055F364@sda21(r2)
+/* 8010A948 00106788  C0 02 93 E4 */	lfs f0, "@10406"@sda21(r2)
 /* 8010A94C 0010678C  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010A950 00106790  EC 01 00 24 */	fdivs f0, f1, f0
 /* 8010A954 00106794  D0 1F 00 84 */	stfs f0, 0x84(r31)
@@ -927,14 +927,14 @@ lbl_8010A974:
 
 .global lbl_8010A97C
 lbl_8010A97C:
-/* 8010A97C 001067BC  88 0D EB F0 */	lbz r0, lbl_8055D010@sda21(r13)
+/* 8010A97C 001067BC  88 0D EB F0 */	lbz r0, mPrintVarEnabledFlag__Q44nw4r3snd6detail9MmlParser@sda21(r13)
 /* 8010A980 001067C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8010A984 001067C4  41 82 05 10 */	beq lbl_8010AE94
 /* 8010A988 001067C8  2C 06 00 20 */	cmpwi r6, 0x20
 /* 8010A98C 001067CC  40 80 00 18 */	bge lbl_8010A9A4
 /* 8010A990 001067D0  7F 63 DB 78 */	mr r3, r27
 /* 8010A994 001067D4  7F 24 CB 78 */	mr r4, r25
-/* 8010A998 001067D8  48 00 26 B9 */	bl lbl_8010D050
+/* 8010A998 001067D8  48 00 26 B9 */	bl GetVariablePtr__Q44nw4r3snd6detail9SeqPlayerFi
 /* 8010A99C 001067DC  7C 64 1B 78 */	mr r4, r3
 /* 8010A9A0 001067E0  48 00 00 24 */	b lbl_8010A9C4
 .global lbl_8010A9A4
@@ -943,7 +943,7 @@ lbl_8010A9A4:
 /* 8010A9A8 001067E8  40 80 00 14 */	bge lbl_8010A9BC
 /* 8010A9AC 001067EC  7F 83 E3 78 */	mr r3, r28
 /* 8010A9B0 001067F0  38 86 FF E0 */	addi r4, r6, -0x20
-/* 8010A9B4 001067F4  48 00 45 CD */	bl lbl_8010EF80
+/* 8010A9B4 001067F4  48 00 45 CD */	bl GetVariablePtr__Q44nw4r3snd6detail8SeqTrackFi
 /* 8010A9B8 001067F8  48 00 00 08 */	b lbl_8010A9C0
 .global lbl_8010A9BC
 lbl_8010A9BC:
@@ -967,43 +967,43 @@ lbl_8010A9D4:
 lbl_8010A9E4:
 /* 8010A9E4 00106824  2C 19 00 20 */	cmpwi r25, 0x20
 /* 8010A9E8 00106828  41 80 00 0C */	blt lbl_8010A9F4
-/* 8010A9EC 0010682C  38 CD 86 38 */	addi r6, r13, lbl_80556A58@sda21
+/* 8010A9EC 0010682C  38 CD 86 38 */	addi r6, r13, "@10407"@sda21
 /* 8010A9F0 00106830  48 00 00 14 */	b lbl_8010AA04
 .global lbl_8010A9F4
 lbl_8010A9F4:
 /* 8010A9F4 00106834  2C 19 00 10 */	cmpwi r25, 0x10
-/* 8010A9F8 00106838  38 CD 86 40 */	addi r6, r13, lbl_80556A60@sda21
+/* 8010A9F8 00106838  38 CD 86 40 */	addi r6, r13, "@10409"@sda21
 /* 8010A9FC 0010683C  41 80 00 08 */	blt lbl_8010AA04
-/* 8010AA00 00106840  38 CD 86 3C */	addi r6, r13, lbl_80556A5C@sda21
+/* 8010AA00 00106840  38 CD 86 3C */	addi r6, r13, "@10408"@sda21
 .global lbl_8010AA04
 lbl_8010AA04:
-/* 8010AA04 00106844  3C 60 80 44 */	lis r3, lbl_80442110@ha
+/* 8010AA04 00106844  3C 60 80 44 */	lis r3, "@10410"@ha
 /* 8010AA08 00106848  A9 24 00 00 */	lha r9, 0x0(r4)
 /* 8010AA0C 0010684C  88 BC 00 04 */	lbz r5, 0x4(r28)
 /* 8010AA10 00106850  7F 64 DB 78 */	mr r4, r27
 /* 8010AA14 00106854  7F 28 CB 78 */	mr r8, r25
-/* 8010AA18 00106858  38 63 21 10 */	addi r3, r3, lbl_80442110@l
+/* 8010AA18 00106858  38 63 21 10 */	addi r3, r3, "@10410"@l
 /* 8010AA1C 0010685C  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8010AA20 00106860  4B F1 2F 71 */	bl lbl_8001D990
+/* 8010AA20 00106860  4B F1 2F 71 */	bl OSReport
 /* 8010AA24 00106864  48 00 04 70 */	b lbl_8010AE94
 
 .global lbl_8010AA28
 lbl_8010AA28:
 /* 8010AA28 00106868  7F 63 DB 78 */	mr r3, r27
 /* 8010AA2C 0010686C  7F 24 CB 78 */	mr r4, r25
-/* 8010AA30 00106870  48 00 24 D1 */	bl lbl_8010CF00
+/* 8010AA30 00106870  48 00 24 D1 */	bl GetPlayerTrack__Q44nw4r3snd6detail9SeqPlayerFi
 /* 8010AA34 00106874  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8010AA38 00106878  7C 7B 1B 78 */	mr r27, r3
 /* 8010AA3C 0010687C  41 82 04 58 */	beq lbl_8010AE94
 /* 8010AA40 00106880  7C 03 E0 40 */	cmplw r3, r28
 /* 8010AA44 00106884  41 82 04 50 */	beq lbl_8010AE94
-/* 8010AA48 00106888  48 00 38 89 */	bl lbl_8010E2D0
+/* 8010AA48 00106888  48 00 38 89 */	bl Close__Q44nw4r3snd6detail8SeqTrackFv
 /* 8010AA4C 0010688C  80 9F 00 00 */	lwz r4, 0x0(r31)
 /* 8010AA50 00106890  7F 63 DB 78 */	mr r3, r27
 /* 8010AA54 00106894  7F A5 EB 78 */	mr r5, r29
-/* 8010AA58 00106898  48 00 38 49 */	bl lbl_8010E2A0
+/* 8010AA58 00106898  48 00 38 49 */	bl SetSeqData__Q44nw4r3snd6detail8SeqTrackFPCvl
 /* 8010AA5C 0010689C  7F 63 DB 78 */	mr r3, r27
-/* 8010AA60 001068A0  48 00 38 51 */	bl lbl_8010E2B0
+/* 8010AA60 001068A0  48 00 38 51 */	bl Open__Q44nw4r3snd6detail8SeqTrackFv
 /* 8010AA64 001068A4  48 00 04 30 */	b lbl_8010AE94
 
 .global lbl_8010AA68
@@ -1120,7 +1120,7 @@ lbl_8010ABB8:
 /* 8010ABBC 001069FC  40 80 00 14 */	bge lbl_8010ABD0
 /* 8010ABC0 00106A00  7F 63 DB 78 */	mr r3, r27
 /* 8010ABC4 00106A04  7F 24 CB 78 */	mr r4, r25
-/* 8010ABC8 00106A08  48 00 24 89 */	bl lbl_8010D050
+/* 8010ABC8 00106A08  48 00 24 89 */	bl GetVariablePtr__Q44nw4r3snd6detail9SeqPlayerFi
 /* 8010ABCC 00106A0C  48 00 00 20 */	b lbl_8010ABEC
 .global lbl_8010ABD0
 lbl_8010ABD0:
@@ -1128,7 +1128,7 @@ lbl_8010ABD0:
 /* 8010ABD4 00106A14  40 80 00 14 */	bge lbl_8010ABE8
 /* 8010ABD8 00106A18  7F 83 E3 78 */	mr r3, r28
 /* 8010ABDC 00106A1C  38 86 FF E0 */	addi r4, r6, -0x20
-/* 8010ABE0 00106A20  48 00 43 A1 */	bl lbl_8010EF80
+/* 8010ABE0 00106A20  48 00 43 A1 */	bl GetVariablePtr__Q44nw4r3snd6detail8SeqTrackFi
 /* 8010ABE4 00106A24  48 00 00 08 */	b lbl_8010ABEC
 .global lbl_8010ABE8
 lbl_8010ABE8:
@@ -1253,7 +1253,7 @@ lbl_8010AD2C:
 /* 8010AD40 00106B80  7C 1D 07 34 */	extsh r29, r0
 .global lbl_8010AD44
 lbl_8010AD44:
-/* 8010AD44 00106B84  48 01 23 BD */	bl lbl_8011D100
+/* 8010AD44 00106B84  48 01 23 BD */	bl CalcRandom__Q44nw4r3snd6detail4UtilFv
 /* 8010AD48 00106B88  54 63 04 3E */	clrlwi r3, r3, 16
 /* 8010AD4C 00106B8C  38 1D 00 01 */	addi r0, r29, 0x1
 /* 8010AD50 00106B90  7C 63 01 D6 */	mullw r3, r3, r0
@@ -1362,7 +1362,7 @@ lbl_8010AE84:
 /* 8010AE84 00106CC4  7F 63 DB 78 */	mr r3, r27
 /* 8010AE88 00106CC8  7F 85 E3 78 */	mr r5, r28
 /* 8010AE8C 00106CCC  57 24 04 3E */	clrlwi r4, r25, 16
-/* 8010AE90 00106CD0  48 00 1E 11 */	bl lbl_8010CCA0
+/* 8010AE90 00106CD0  48 00 1E 11 */	bl CallSeqUserprocCallback__Q44nw4r3snd6detail9SeqPlayerFUsPQ44nw4r3snd6detail8SeqTrack
 
 .global lbl_8010AE94
 lbl_8010AE94:
@@ -1374,18 +1374,18 @@ lbl_8010AE94:
 /* 8010AEA8 00106CE8  4E 80 00 20 */	blr
 /* 8010AEAC 00106CEC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8010AEB0
-lbl_8010AEB0:
+.global NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb
+NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb:
 /* 8010AEB0 00106CF0  7C 83 23 78 */	mr r3, r4
 /* 8010AEB4 00106CF4  7C A4 2B 78 */	mr r4, r5
 /* 8010AEB8 00106CF8  7C C5 33 78 */	mr r5, r6
 /* 8010AEBC 00106CFC  7C E6 3B 78 */	mr r6, r7
 /* 8010AEC0 00106D00  7D 07 43 78 */	mr r7, r8
-/* 8010AEC4 00106D04  48 00 40 DC */	b lbl_8010EFA0
+/* 8010AEC4 00106D04  48 00 40 DC */	b NoteOn__Q44nw4r3snd6detail8SeqTrackFiilb
 /* 8010AEC8 00106D08  00 00 00 00 */	.4byte 0x00000000
 /* 8010AECC 00106D0C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_8010AED0
-lbl_8010AED0:
+.global ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType
+ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType:
 /* 8010AED0 00106D10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010AED4 00106D14  7C 08 02 A6 */	mflr r0
 /* 8010AED8 00106D18  2C 07 00 01 */	cmpwi r7, 0x1
@@ -1445,7 +1445,7 @@ lbl_8010AF78:
 /* 8010AF88 00106DC8  2C 04 00 20 */	cmpwi r4, 0x20
 /* 8010AF8C 00106DCC  40 80 00 10 */	bge lbl_8010AF9C
 /* 8010AF90 00106DD0  7C A3 2B 78 */	mr r3, r5
-/* 8010AF94 00106DD4  48 00 20 BD */	bl lbl_8010D050
+/* 8010AF94 00106DD4  48 00 20 BD */	bl GetVariablePtr__Q44nw4r3snd6detail9SeqPlayerFi
 /* 8010AF98 00106DD8  48 00 00 20 */	b lbl_8010AFB8
 .global lbl_8010AF9C
 lbl_8010AF9C:
@@ -1453,7 +1453,7 @@ lbl_8010AF9C:
 /* 8010AFA0 00106DE0  40 80 00 14 */	bge lbl_8010AFB4
 /* 8010AFA4 00106DE4  7C C3 33 78 */	mr r3, r6
 /* 8010AFA8 00106DE8  38 84 FF E0 */	addi r4, r4, -0x20
-/* 8010AFAC 00106DEC  48 00 3F D5 */	bl lbl_8010EF80
+/* 8010AFAC 00106DEC  48 00 3F D5 */	bl GetVariablePtr__Q44nw4r3snd6detail8SeqTrackFi
 /* 8010AFB0 00106DF0  48 00 00 08 */	b lbl_8010AFB8
 .global lbl_8010AFB4
 lbl_8010AFB4:
@@ -1482,7 +1482,7 @@ lbl_8010AFC8:
 /* 8010AFFC 00106E3C  90 04 00 00 */	stw r0, 0x0(r4)
 /* 8010B000 00106E40  8B E5 00 00 */	lbz r31, 0x0(r5)
 /* 8010B004 00106E44  50 7F 44 2E */	rlwimi r31, r3, 8, 16, 23
-/* 8010B008 00106E48  48 01 20 F9 */	bl lbl_8011D100
+/* 8010B008 00106E48  48 01 20 F9 */	bl CalcRandom__Q44nw4r3snd6detail4UtilFv
 /* 8010B00C 00106E4C  7F E0 07 34 */	extsh r0, r31
 /* 8010B010 00106E50  54 64 04 3E */	clrlwi r4, r3, 16
 /* 8010B014 00106E54  7C 7E 00 50 */	subf r3, r30, r0
@@ -1498,8 +1498,8 @@ lbl_8010B028:
 /* 8010B034 00106E74  7C 08 03 A6 */	mtlr r0
 /* 8010B038 00106E78  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010B03C 00106E7C  4E 80 00 20 */	blr
-.global lbl_8010B040
-lbl_8010B040:
+.global ParseAllocTrack__Q44nw4r3snd6detail9MmlParserFPCvUlPUl
+ParseAllocTrack__Q44nw4r3snd6detail9MmlParserFPCvUlPUl:
 /* 8010B040 00106E80  7C 04 18 AE */	lbzx r0, r4, r3
 /* 8010B044 00106E84  7C C4 1A 14 */	add r6, r4, r3
 /* 8010B048 00106E88  28 00 00 FE */	cmplwi r0, 0xfe

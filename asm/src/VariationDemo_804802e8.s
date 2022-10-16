@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804802E8
-lbl_804802E8:
+.global "datTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"
+"datTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -15,10 +15,10 @@ lbl_804802E8:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80552588
+	.4byte "datDemoLock_Hakobune__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"
 
-.global lbl_80480318
-lbl_80480318:
+.global "datSizeTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@"
+"datSizeTbl__Q53scn4step7gimmick10cameralock27@unnamed@VariationDemo_cpp@":
 
 	.4byte 0
 	.4byte 0
@@ -33,8 +33,8 @@ lbl_80480318:
 	.4byte 0
 	.4byte 0x00000009
 
-.global lbl_80480348
-lbl_80480348:
+.global "@55233_80480348"
+"@55233_80480348":
 
 	.4byte lbl_80303D60
 	.4byte lbl_80303D60
@@ -59,14 +59,14 @@ lbl_80480348:
 	.4byte lbl_80303D18
 	.4byte lbl_80303D20
 
-.global lbl_804803A0
-lbl_804803A0:
+.global __vt__Q53scn4step7gimmick10cameralock13VariationDemo
+__vt__Q53scn4step7gimmick10cameralock13VariationDemo:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80303B1C
-	.4byte lbl_80303DCC
-	.4byte lbl_80303DD8
-	.4byte lbl_80303DDC
-	.4byte lbl_803040A0
+	.4byte updateReady__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLock__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateReadyNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock13VariationDemoFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb
 	.4byte 0

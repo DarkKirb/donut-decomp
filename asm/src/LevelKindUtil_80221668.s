@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80221668
-lbl_80221668:
+.global ToLevelKind__Q33scn4step13LevelKindUtilFQ43scn4step3map4Kind
+ToLevelKind__Q33scn4step13LevelKindUtilFQ43scn4step3map4Kind:
 /* 80221668 0021D4A8  2C 03 00 2D */	cmpwi r3, 0x2d
 /* 8022166C 0021D4AC  40 82 00 0C */	bne lbl_80221678
 /* 80221670 0021D4B0  38 60 00 00 */	li r3, 0x0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80406768
-lbl_80406768:
+.global __ctype_mapC
+__ctype_mapC:
 
 	.4byte 0x00040004
 	.4byte 0x00040004
@@ -133,8 +133,8 @@ lbl_80406768:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80406968
-lbl_80406968:
+.global __lower_mapC
+__lower_mapC:
 
 	.4byte 0x00010203
 	.4byte 0x04050607
@@ -201,8 +201,8 @@ lbl_80406968:
 	.4byte 0xF8F9FAFB
 	.4byte 0xFCFDFEFF
 
-.global lbl_80406A68
-lbl_80406A68:
+.global __upper_mapC
+__upper_mapC:
 
 	.4byte 0x00010203
 	.4byte 0x04050607

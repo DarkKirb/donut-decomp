@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8050AA08
-lbl_8050AA08:
+.global mXUnitVec__Q34nw4r2ef16DrawStrategyImpl
+mXUnitVec__Q34nw4r2ef16DrawStrategyImpl:
 	.skip 0x18
 
-.global lbl_8050AA20
-lbl_8050AA20:
+.global mZUnitVec__Q34nw4r2ef16DrawStrategyImpl
+mZUnitVec__Q34nw4r2ef16DrawStrategyImpl:
 	.skip 0xC
 
-.global lbl_8050AA2C
-lbl_8050AA2C:
+.global mZeroVec__Q34nw4r2ef16DrawStrategyImpl
+mZeroVec__Q34nw4r2ef16DrawStrategyImpl:
 	.skip 0xC
 
-.global lbl_8050AA38
-lbl_8050AA38:
+.global mIdentityMtx__Q34nw4r2ef16DrawStrategyImpl
+mIdentityMtx__Q34nw4r2ef16DrawStrategyImpl:
 	.skip 0x30

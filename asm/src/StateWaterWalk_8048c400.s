@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048C400
-lbl_8048C400:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWalk,PQ43scn4step4hero4Hero>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWalk,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8036FF98
-	.4byte lbl_8036FF7C
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWalk,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common14StateWaterWalk,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048C410
-lbl_8048C410:
+.global __vt__Q53scn4step4hero6common14StateWaterWalk
+__vt__Q53scn4step4hero6common14StateWaterWalk:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8036FC08
-	.4byte lbl_8036FC80
-	.4byte lbl_8036FDEC
-	.4byte lbl_8035550C
-	.4byte lbl_8036FE6C
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero6common14StateWaterWalkFv
+	.4byte procAnim__Q53scn4step4hero6common14StateWaterWalkFv
+	.4byte procMove__Q53scn4step4hero6common14StateWaterWalkFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common14StateWaterWalkFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

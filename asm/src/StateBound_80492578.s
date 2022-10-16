@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80492578
-lbl_80492578:
+.global __vt__Q53scn4step4item5state10StateBound
+__vt__Q53scn4step4item5state10StateBound:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803C7578
-	.4byte lbl_803C760C
-	.4byte lbl_803C7648
-	.4byte lbl_803C76BC
+	.4byte __dt__Q53scn4step4item5state10StateBoundFv
+	.4byte procAnim__Q53scn4step4item5state10StateBoundFv
+	.4byte procMove__Q53scn4step4item5state10StateBoundFv
+	.4byte procFixPos__Q53scn4step4item5state10StateBoundFv

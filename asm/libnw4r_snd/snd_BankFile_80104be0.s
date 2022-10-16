@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80104BE0
-lbl_80104BE0:
+.global __ct__Q44nw4r3snd6detail14BankFileReaderFPCv
+__ct__Q44nw4r3snd6detail14BankFileReaderFPCv:
 /* 80104BE0 00100A20  38 00 00 00 */	li r0, 0x0
 /* 80104BE4 00100A24  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80104BE8 00100A28  90 03 00 04 */	stw r0, 0x4(r3)
@@ -47,8 +47,8 @@ lbl_80104C54:
 /* 80104C64 00100AA4  7C 00 22 14 */	add r0, r0, r4
 /* 80104C68 00100AA8  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80104C6C 00100AAC  4E 80 00 20 */	blr
-.global lbl_80104C70
-lbl_80104C70:
+.global GetInstParam__Q44nw4r3snd6detail14BankFileReaderCFiii
+GetInstParam__Q44nw4r3snd6detail14BankFileReaderCFiii:
 /* 80104C70 00100AB0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80104C74 00100AB4  7C 08 02 A6 */	mflr r0
 /* 80104C78 00100AB8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -87,7 +87,7 @@ lbl_80104CC0:
 lbl_80104CE0:
 /* 80104CE0 00100B20  28 00 00 01 */	cmplwi r0, 0x1
 /* 80104CE4 00100B24  41 82 00 1C */	beq lbl_80104D00
-/* 80104CE8 00100B28  48 00 02 39 */	bl lbl_80104F20
+/* 80104CE8 00100B28  48 00 02 39 */	bl "GetReferenceToSubRegion__Q44nw4r3snd6detail14BankFileReaderCFPCQ54nw4r3snd6detail4Util128DataRef<v,Q54nw4r3snd6detail8BankFile9InstParam,Q54nw4r3snd6detail8BankFile10RangeTable,Q54nw4r3snd6detail8BankFile10IndexTable>i"
 /* 80104CEC 00100B2C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80104CF0 00100B30  7C 64 1B 78 */	mr r4, r3
 /* 80104CF4 00100B34  40 82 00 0C */	bne lbl_80104D00
@@ -106,7 +106,7 @@ lbl_80104D14:
 /* 80104D18 00100B58  41 82 00 24 */	beq lbl_80104D3C
 /* 80104D1C 00100B5C  7F C3 F3 78 */	mr r3, r30
 /* 80104D20 00100B60  7F E5 FB 78 */	mr r5, r31
-/* 80104D24 00100B64  48 00 01 FD */	bl lbl_80104F20
+/* 80104D24 00100B64  48 00 01 FD */	bl "GetReferenceToSubRegion__Q44nw4r3snd6detail14BankFileReaderCFPCQ54nw4r3snd6detail4Util128DataRef<v,Q54nw4r3snd6detail8BankFile9InstParam,Q54nw4r3snd6detail8BankFile10RangeTable,Q54nw4r3snd6detail8BankFile10IndexTable>i"
 /* 80104D28 00100B68  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80104D2C 00100B6C  7C 64 1B 78 */	mr r4, r3
 /* 80104D30 00100B70  40 82 00 0C */	bne lbl_80104D3C
@@ -125,7 +125,7 @@ lbl_80104D50:
 /* 80104D54 00100B94  88 64 00 00 */	lbz r3, 0x0(r4)
 /* 80104D58 00100B98  80 84 00 04 */	lwz r4, 0x4(r4)
 /* 80104D5C 00100B9C  38 A5 00 08 */	addi r5, r5, 0x8
-/* 80104D60 00100BA0  48 01 83 D1 */	bl lbl_8011D130
+/* 80104D60 00100BA0  48 01 83 D1 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 .global lbl_80104D64
 lbl_80104D64:
 /* 80104D64 00100BA4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -135,8 +135,8 @@ lbl_80104D64:
 /* 80104D74 00100BB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80104D78 00100BB8  4E 80 00 20 */	blr
 /* 80104D7C 00100BBC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80104D80
-lbl_80104D80:
+.global ReadInstInfo__Q44nw4r3snd6detail14BankFileReaderCFPQ44nw4r3snd6detail8InstInfoiii
+ReadInstInfo__Q44nw4r3snd6detail14BankFileReaderCFPQ44nw4r3snd6detail8InstInfoiii:
 /* 80104D80 00100BC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80104D84 00100BC4  7C 08 02 A6 */	mflr r0
 /* 80104D88 00100BC8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -147,7 +147,7 @@ lbl_80104D80:
 /* 80104D9C 00100BDC  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80104DA0 00100BE0  7C 7E 1B 78 */	mr r30, r3
 /* 80104DA4 00100BE4  7C E6 3B 78 */	mr r6, r7
-/* 80104DA8 00100BE8  4B FF FE C9 */	bl lbl_80104C70
+/* 80104DA8 00100BE8  4B FF FE C9 */	bl GetInstParam__Q44nw4r3snd6detail14BankFileReaderCFiii
 /* 80104DAC 00100BEC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80104DB0 00100BF0  40 82 00 0C */	bne lbl_80104DBC
 /* 80104DB4 00100BF4  38 60 00 00 */	li r3, 0x0
@@ -232,7 +232,7 @@ lbl_80104E58:
 /* 80104EB0 00100CF0  48 00 00 14 */	b lbl_80104EC4
 .global lbl_80104EB4
 lbl_80104EB4:
-/* 80104EB4 00100CF4  C0 02 93 20 */	lfs f0, lbl_8055F2A0@sda21(r2)
+/* 80104EB4 00100CF4  C0 02 93 20 */	lfs f0, "@9016_8055F2A0"@sda21(r2)
 /* 80104EB8 00100CF8  38 00 00 7F */	li r0, 0x7f
 /* 80104EBC 00100CFC  98 1F 00 17 */	stb r0, 0x17(r31)
 /* 80104EC0 00100D00  D0 1F 00 18 */	stfs f0, 0x18(r31)
@@ -271,8 +271,8 @@ lbl_80104F08:
 /* 80104F14 00100D54  7C 08 03 A6 */	mtlr r0
 /* 80104F18 00100D58  38 21 00 10 */	addi r1, r1, 0x10
 /* 80104F1C 00100D5C  4E 80 00 20 */	blr
-.global lbl_80104F20
-lbl_80104F20:
+.global "GetReferenceToSubRegion__Q44nw4r3snd6detail14BankFileReaderCFPCQ54nw4r3snd6detail4Util128DataRef<v,Q54nw4r3snd6detail8BankFile9InstParam,Q54nw4r3snd6detail8BankFile10RangeTable,Q54nw4r3snd6detail8BankFile10IndexTable>i"
+"GetReferenceToSubRegion__Q44nw4r3snd6detail14BankFileReaderCFPCQ54nw4r3snd6detail4Util128DataRef<v,Q54nw4r3snd6detail8BankFile9InstParam,Q54nw4r3snd6detail8BankFile10RangeTable,Q54nw4r3snd6detail8BankFile10IndexTable>i":
 /* 80104F20 00100D60  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80104F24 00100D64  7C 08 02 A6 */	mflr r0
 /* 80104F28 00100D68  90 01 00 14 */	stw r0, 0x14(r1)
@@ -297,7 +297,7 @@ lbl_80104F60:
 /* 80104F64 00100DA4  88 64 00 00 */	lbz r3, 0x0(r4)
 /* 80104F68 00100DA8  80 84 00 04 */	lwz r4, 0x4(r4)
 /* 80104F6C 00100DAC  38 A5 00 08 */	addi r5, r5, 0x8
-/* 80104F70 00100DB0  48 01 81 C1 */	bl lbl_8011D130
+/* 80104F70 00100DB0  48 01 81 C1 */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80104F74 00100DB4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80104F78 00100DB8  40 82 00 0C */	bne lbl_80104F84
 /* 80104F7C 00100DBC  38 60 00 00 */	li r3, 0x0
@@ -334,7 +334,7 @@ lbl_80104FD4:
 /* 80104FD8 00100E18  88 64 00 00 */	lbz r3, 0x0(r4)
 /* 80104FDC 00100E1C  80 84 00 04 */	lwz r4, 0x4(r4)
 /* 80104FE0 00100E20  38 A5 00 08 */	addi r5, r5, 0x8
-/* 80104FE4 00100E24  48 01 81 4D */	bl lbl_8011D130
+/* 80104FE4 00100E24  48 01 81 4D */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80104FE8 00100E28  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80104FEC 00100E2C  40 82 00 0C */	bne lbl_80104FF8
 /* 80104FF0 00100E30  38 60 00 00 */	li r3, 0x0
@@ -367,8 +367,8 @@ lbl_8010502C:
 /* 80105034 00100E74  7C 08 03 A6 */	mtlr r0
 /* 80105038 00100E78  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010503C 00100E7C  4E 80 00 20 */	blr
-.global lbl_80105040
-lbl_80105040:
+.global ReadWaveInfo__Q44nw4r3snd6detail14BankFileReaderCFPQ44nw4r3snd6detail8WaveInfoRCQ54nw4r3snd6detail8InstInfo16WaveDataLocationPCvPPCQ44nw4r3snd6detail8WaveInfo
+ReadWaveInfo__Q44nw4r3snd6detail14BankFileReaderCFPQ44nw4r3snd6detail8WaveInfoRCQ54nw4r3snd6detail8InstInfo16WaveDataLocationPCvPPCQ44nw4r3snd6detail8WaveInfo:
 /* 80105040 00100E80  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80105044 00100E84  7C 08 02 A6 */	mflr r0
 /* 80105048 00100E88  2C 07 00 00 */	cmpwi r7, 0x0
@@ -400,10 +400,10 @@ lbl_80105088:
 /* 801050A0 00100EE0  40 82 00 4C */	bne lbl_801050EC
 /* 801050A4 00100EE4  7F A4 EB 78 */	mr r4, r29
 /* 801050A8 00100EE8  38 61 00 10 */	addi r3, r1, 0x10
-/* 801050AC 00100EEC  48 01 80 B5 */	bl lbl_8011D160
+/* 801050AC 00100EEC  48 01 80 B5 */	bl __ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv
 /* 801050B0 00100EF0  7F C4 F3 78 */	mr r4, r30
 /* 801050B4 00100EF4  38 61 00 10 */	addi r3, r1, 0x10
-/* 801050B8 00100EF8  48 01 81 29 */	bl lbl_8011D1E0
+/* 801050B8 00100EF8  48 01 81 29 */	bl GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi
 /* 801050BC 00100EFC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801050C0 00100F00  40 82 00 0C */	bne lbl_801050CC
 /* 801050C4 00100F04  38 60 00 00 */	li r3, 0x0
@@ -412,11 +412,11 @@ lbl_80105088:
 lbl_801050CC:
 /* 801050CC 00100F0C  7C 64 1B 78 */	mr r4, r3
 /* 801050D0 00100F10  38 61 00 0C */	addi r3, r1, 0xc
-/* 801050D4 00100F14  48 01 81 9D */	bl lbl_8011D270
+/* 801050D4 00100F14  48 01 81 9D */	bl __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader
 /* 801050D8 00100F18  7F E4 FB 78 */	mr r4, r31
 /* 801050DC 00100F1C  38 61 00 0C */	addi r3, r1, 0xc
 /* 801050E0 00100F20  38 A0 00 00 */	li r5, 0x0
-/* 801050E4 00100F24  48 01 81 AD */	bl lbl_8011D290
+/* 801050E4 00100F24  48 01 81 AD */	bl ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
 /* 801050E8 00100F28  48 00 01 98 */	b lbl_80105280
 .global lbl_801050EC
 lbl_801050EC:
@@ -432,7 +432,7 @@ lbl_80105104:
 /* 80105108 00100F48  7C 83 02 14 */	add r4, r3, r0
 /* 8010510C 00100F4C  88 64 00 0C */	lbz r3, 0xc(r4)
 /* 80105110 00100F50  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 80105114 00100F54  48 01 80 1D */	bl lbl_8011D130
+/* 80105114 00100F54  48 01 80 1D */	bl GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv
 /* 80105118 00100F58  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8010511C 00100F5C  40 82 00 0C */	bne lbl_80105128
 /* 80105120 00100F60  38 60 00 00 */	li r3, 0x0
@@ -441,11 +441,11 @@ lbl_80105104:
 lbl_80105128:
 /* 80105128 00100F68  7C 64 1B 78 */	mr r4, r3
 /* 8010512C 00100F6C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80105130 00100F70  4B FE 09 C1 */	bl lbl_800E5AF0
+/* 80105130 00100F70  4B FE 09 C1 */	bl __ct__Q34nw4r3g3d6CameraFPQ34nw4r3g3d10CameraData
 /* 80105134 00100F74  7F E4 FB 78 */	mr r4, r31
 /* 80105138 00100F78  7F A5 EB 78 */	mr r5, r29
 /* 8010513C 00100F7C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80105140 00100F80  48 01 81 51 */	bl lbl_8011D290
+/* 80105140 00100F80  48 01 81 51 */	bl ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
 /* 80105144 00100F84  48 00 01 3C */	b lbl_80105280
 .global lbl_80105148
 lbl_80105148:

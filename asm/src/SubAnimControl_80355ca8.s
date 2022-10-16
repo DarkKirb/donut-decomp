@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80355CA8
-lbl_80355CA8:
+.global __ct__Q43scn4step4hero14SubAnimControlFRQ43scn4step4hero4Hero
+__ct__Q43scn4step4hero14SubAnimControlFRQ43scn4step4hero4Hero:
 /* 80355CA8 00351AE8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80355CAC 00351AEC  38 80 00 00 */	li r4, 0x0
 /* 80355CB0 00351AF0  98 83 00 04 */	stb r4, 0x4(r3)
@@ -14,8 +14,8 @@ lbl_80355CA8:
 /* 80355CC8 00351B08  98 83 00 10 */	stb r4, 0x10(r3)
 /* 80355CCC 00351B0C  98 83 00 11 */	stb r4, 0x11(r3)
 /* 80355CD0 00351B10  4E 80 00 20 */	blr
-.global lbl_80355CD4
-lbl_80355CD4:
+.global update__Q43scn4step4hero14SubAnimControlFv
+update__Q43scn4step4hero14SubAnimControlFv:
 /* 80355CD4 00351B14  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80355CD8 00351B18  7C 08 02 A6 */	mflr r0
 /* 80355CDC 00351B1C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -24,7 +24,7 @@ lbl_80355CD4:
 /* 80355CE8 00351B28  88 03 00 04 */	lbz r0, 0x4(r3)
 /* 80355CEC 00351B2C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80355CF0 00351B30  41 82 00 0C */	beq lbl_80355CFC
-/* 80355CF4 00351B34  48 00 03 11 */	bl lbl_80356004
+/* 80355CF4 00351B34  48 00 03 11 */	bl updateLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFv
 /* 80355CF8 00351B38  48 00 00 48 */	b lbl_80355D40
 .global lbl_80355CFC
 lbl_80355CFC:
@@ -35,18 +35,18 @@ lbl_80355CFC:
 /* 80355D0C 00351B4C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80355D10 00351B50  41 82 00 28 */	beq lbl_80355D38
 /* 80355D14 00351B54  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80355D18 00351B58  4B FE A6 65 */	bl lbl_8034037C
-/* 80355D1C 00351B5C  48 00 00 39 */	bl lbl_80355D54
+/* 80355D18 00351B58  4B FE A6 65 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80355D1C 00351B5C  48 00 00 39 */	bl isCarryBombDanger__Q43scn4step4hero12StateCheckerCFv
 /* 80355D20 00351B60  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80355D24 00351B64  40 82 00 14 */	bne lbl_80355D38
 /* 80355D28 00351B68  7F E3 FB 78 */	mr r3, r31
-/* 80355D2C 00351B6C  48 00 02 2D */	bl lbl_80355F58
+/* 80355D2C 00351B6C  48 00 02 2D */	bl setLiftUpRHandCore__Q43scn4step4hero14SubAnimControlFv
 /* 80355D30 00351B70  38 00 00 00 */	li r0, 0x0
 /* 80355D34 00351B74  98 1F 00 11 */	stb r0, 0x11(r31)
 .global lbl_80355D38
 lbl_80355D38:
 /* 80355D38 00351B78  7F E3 FB 78 */	mr r3, r31
-/* 80355D3C 00351B7C  48 00 02 D1 */	bl lbl_8035600C
+/* 80355D3C 00351B7C  48 00 02 D1 */	bl updateLiftUpRHand__Q43scn4step4hero14SubAnimControlFv
 .global lbl_80355D40
 lbl_80355D40:
 /* 80355D40 00351B80  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -54,12 +54,12 @@ lbl_80355D40:
 /* 80355D48 00351B88  7C 08 03 A6 */	mtlr r0
 /* 80355D4C 00351B8C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80355D50 00351B90  4E 80 00 20 */	blr
-.global lbl_80355D54
-lbl_80355D54:
+.global isCarryBombDanger__Q43scn4step4hero12StateCheckerCFv
+isCarryBombDanger__Q43scn4step4hero12StateCheckerCFv:
 /* 80355D54 00351B94  88 63 00 1F */	lbz r3, 0x1f(r3)
 /* 80355D58 00351B98  4E 80 00 20 */	blr
-.global lbl_80355D5C
-lbl_80355D5C:
+.global setLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFb
+setLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFb:
 /* 80355D5C 00351B9C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80355D60 00351BA0  7C 08 02 A6 */	mflr r0
 /* 80355D64 00351BA4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -76,61 +76,61 @@ lbl_80355D5C:
 /* 80355D90 00351BD0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80355D94 00351BD4  41 82 00 18 */	beq lbl_80355DAC
 /* 80355D98 00351BD8  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80355D9C 00351BDC  4B FE A5 81 */	bl lbl_8034031C
+/* 80355D9C 00351BDC  4B FE A5 81 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355DA0 00351BE0  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355DA4 00351BE4  38 80 00 01 */	li r4, 0x1
-/* 80355DA8 00351BE8  4B E4 3A 55 */	bl lbl_801997FC
+/* 80355DA8 00351BE8  4B E4 3A 55 */	bl subAnimClear__Q24gobj4AnimFUl
 .global lbl_80355DAC
 lbl_80355DAC:
 /* 80355DAC 00351BEC  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355DB0 00351BF0  4B FE A5 6D */	bl lbl_8034031C
+/* 80355DB0 00351BF0  4B FE A5 6D */	bl model__Q43scn4step4hero4HeroFv
 /* 80355DB4 00351BF4  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355DB8 00351BF8  38 80 00 00 */	li r4, 0x0
 /* 80355DBC 00351BFC  38 A0 00 4A */	li r5, 0x4a
 /* 80355DC0 00351C00  38 C0 00 08 */	li r6, 0x8
-/* 80355DC4 00351C04  4B E4 39 8D */	bl lbl_80199750
+/* 80355DC4 00351C04  4B E4 39 8D */	bl subAnimSet__Q24gobj4AnimFUlUlUl
 /* 80355DC8 00351C08  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355DCC 00351C0C  4B FE A5 51 */	bl lbl_8034031C
+/* 80355DCC 00351C0C  4B FE A5 51 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355DD0 00351C10  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355DD4 00351C14  38 80 00 00 */	li r4, 0x0
 /* 80355DD8 00351C18  38 A0 00 09 */	li r5, 0x9
-/* 80355DDC 00351C1C  4B E4 3A 55 */	bl lbl_80199830
+/* 80355DDC 00351C1C  4B E4 3A 55 */	bl subAnimBindPartial__Q24gobj4AnimFUlUl
 /* 80355DE0 00351C20  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355DE4 00351C24  4B FE A5 39 */	bl lbl_8034031C
+/* 80355DE4 00351C24  4B FE A5 39 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355DE8 00351C28  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355DEC 00351C2C  38 80 00 00 */	li r4, 0x0
-/* 80355DF0 00351C30  4B E4 3A BD */	bl lbl_801998AC
+/* 80355DF0 00351C30  4B E4 3A BD */	bl subAnimAccessor__Q24gobj4AnimFUl
 /* 80355DF4 00351C34  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80355DF8 00351C38  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80355DFC 00351C3C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80355E00 00351C40  38 80 00 01 */	li r4, 0x1
-/* 80355E04 00351C44  4B E3 BE 8D */	bl lbl_80191C90
+/* 80355E04 00351C44  4B E3 BE 8D */	bl start__Q23g3d17ModelAnimAccessorCFb
 /* 80355E08 00351C48  38 00 00 4A */	li r0, 0x4a
 /* 80355E0C 00351C4C  90 1E 00 08 */	stw r0, 0x8(r30)
 /* 80355E10 00351C50  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355E14 00351C54  4B FE A6 81 */	bl lbl_80340494
-/* 80355E18 00351C58  48 00 57 11 */	bl lbl_8035B528
+/* 80355E14 00351C54  4B FE A6 81 */	bl wearBack__Q43scn4step4hero4HeroFv
+/* 80355E18 00351C58  48 00 57 11 */	bl setBack__Q43scn4step4hero8WearBackFv
 /* 80355E1C 00351C5C  48 00 00 64 */	b lbl_80355E80
 .global lbl_80355E20
 lbl_80355E20:
 /* 80355E20 00351C60  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80355E24 00351C64  4B FE A4 F9 */	bl lbl_8034031C
+/* 80355E24 00351C64  4B FE A4 F9 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355E28 00351C68  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355E2C 00351C6C  38 80 00 00 */	li r4, 0x0
-/* 80355E30 00351C70  4B E4 39 CD */	bl lbl_801997FC
+/* 80355E30 00351C70  4B E4 39 CD */	bl subAnimClear__Q24gobj4AnimFUl
 /* 80355E34 00351C74  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355E38 00351C78  4B FE A5 45 */	bl lbl_8034037C
-/* 80355E3C 00351C7C  4B FF FF 19 */	bl lbl_80355D54
+/* 80355E38 00351C78  4B FE A5 45 */	bl stateChecker__Q43scn4step4hero4HeroFv
+/* 80355E3C 00351C7C  4B FF FF 19 */	bl isCarryBombDanger__Q43scn4step4hero12StateCheckerCFv
 /* 80355E40 00351C80  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80355E44 00351C84  40 82 00 28 */	bne lbl_80355E6C
 /* 80355E48 00351C88  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355E4C 00351C8C  4B FE A6 49 */	bl lbl_80340494
-/* 80355E50 00351C90  48 00 58 21 */	bl lbl_8035B670
+/* 80355E4C 00351C8C  4B FE A6 49 */	bl wearBack__Q43scn4step4hero4HeroFv
+/* 80355E50 00351C90  48 00 58 21 */	bl unsetBack__Q43scn4step4hero8WearBackFv
 /* 80355E54 00351C94  88 1E 00 05 */	lbz r0, 0x5(r30)
 /* 80355E58 00351C98  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80355E5C 00351C9C  41 82 00 24 */	beq lbl_80355E80
 /* 80355E60 00351CA0  7F C3 F3 78 */	mr r3, r30
-/* 80355E64 00351CA4  48 00 00 F5 */	bl lbl_80355F58
+/* 80355E64 00351CA4  48 00 00 F5 */	bl setLiftUpRHandCore__Q43scn4step4hero14SubAnimControlFv
 /* 80355E68 00351CA8  48 00 00 18 */	b lbl_80355E80
 .global lbl_80355E6C
 lbl_80355E6C:
@@ -148,8 +148,8 @@ lbl_80355E80:
 /* 80355E90 00351CD0  7C 08 03 A6 */	mtlr r0
 /* 80355E94 00351CD4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80355E98 00351CD8  4E 80 00 20 */	blr
-.global lbl_80355E9C
-lbl_80355E9C:
+.global setLiftUpRHand__Q43scn4step4hero14SubAnimControlFb
+setLiftUpRHand__Q43scn4step4hero14SubAnimControlFb:
 /* 80355E9C 00351CDC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80355EA0 00351CE0  7C 08 02 A6 */	mflr r0
 /* 80355EA4 00351CE4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -170,15 +170,15 @@ lbl_80355E9C:
 /* 80355EE0 00351D20  48 00 00 24 */	b lbl_80355F04
 .global lbl_80355EE4
 lbl_80355EE4:
-/* 80355EE4 00351D24  48 00 00 75 */	bl lbl_80355F58
+/* 80355EE4 00351D24  48 00 00 75 */	bl setLiftUpRHandCore__Q43scn4step4hero14SubAnimControlFv
 /* 80355EE8 00351D28  48 00 00 18 */	b lbl_80355F00
 .global lbl_80355EEC
 lbl_80355EEC:
 /* 80355EEC 00351D2C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80355EF0 00351D30  4B FE A4 2D */	bl lbl_8034031C
+/* 80355EF0 00351D30  4B FE A4 2D */	bl model__Q43scn4step4hero4HeroFv
 /* 80355EF4 00351D34  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355EF8 00351D38  38 80 00 01 */	li r4, 0x1
-/* 80355EFC 00351D3C  4B E4 39 01 */	bl lbl_801997FC
+/* 80355EFC 00351D3C  4B E4 39 01 */	bl subAnimClear__Q24gobj4AnimFUl
 .global lbl_80355F00
 lbl_80355F00:
 /* 80355F00 00351D40  9B FE 00 05 */	stb r31, 0x5(r30)
@@ -190,25 +190,25 @@ lbl_80355F04:
 /* 80355F10 00351D50  7C 08 03 A6 */	mtlr r0
 /* 80355F14 00351D54  38 21 00 10 */	addi r1, r1, 0x10
 /* 80355F18 00351D58  4E 80 00 20 */	blr
-.global lbl_80355F1C
-lbl_80355F1C:
+.global clearAll__Q43scn4step4hero14SubAnimControlFv
+clearAll__Q43scn4step4hero14SubAnimControlFv:
 /* 80355F1C 00351D5C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80355F20 00351D60  7C 08 02 A6 */	mflr r0
 /* 80355F24 00351D64  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80355F28 00351D68  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80355F2C 00351D6C  7C 7F 1B 78 */	mr r31, r3
 /* 80355F30 00351D70  38 80 00 00 */	li r4, 0x0
-/* 80355F34 00351D74  4B FF FE 29 */	bl lbl_80355D5C
+/* 80355F34 00351D74  4B FF FE 29 */	bl setLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFb
 /* 80355F38 00351D78  7F E3 FB 78 */	mr r3, r31
 /* 80355F3C 00351D7C  38 80 00 00 */	li r4, 0x0
-/* 80355F40 00351D80  4B FF FF 5D */	bl lbl_80355E9C
+/* 80355F40 00351D80  4B FF FF 5D */	bl setLiftUpRHand__Q43scn4step4hero14SubAnimControlFb
 /* 80355F44 00351D84  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80355F48 00351D88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80355F4C 00351D8C  7C 08 03 A6 */	mtlr r0
 /* 80355F50 00351D90  38 21 00 10 */	addi r1, r1, 0x10
 /* 80355F54 00351D94  4E 80 00 20 */	blr
-.global lbl_80355F58
-lbl_80355F58:
+.global setLiftUpRHandCore__Q43scn4step4hero14SubAnimControlFv
+setLiftUpRHandCore__Q43scn4step4hero14SubAnimControlFv:
 /* 80355F58 00351D98  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80355F5C 00351D9C  7C 08 02 A6 */	mflr r0
 /* 80355F60 00351DA0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -216,8 +216,8 @@ lbl_80355F58:
 /* 80355F68 00351DA8  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 80355F6C 00351DAC  7C 7E 1B 78 */	mr r30, r3
 /* 80355F70 00351DB0  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80355F74 00351DB4  4B FE A3 89 */	bl lbl_803402FC
-/* 80355F78 00351DB8  4B E2 B7 5D */	bl lbl_801816D4
+/* 80355F74 00351DB4  4B FE A3 89 */	bl footState__Q43scn4step4hero4HeroFv
+/* 80355F78 00351DB8  4B E2 B7 5D */	bl dataType__Q36effect6detail10GenContextCFv
 /* 80355F7C 00351DBC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80355F80 00351DC0  3B E0 00 41 */	li r31, 0x41
 /* 80355F84 00351DC4  41 82 00 08 */	beq lbl_80355F8C
@@ -225,30 +225,30 @@ lbl_80355F58:
 .global lbl_80355F8C
 lbl_80355F8C:
 /* 80355F8C 00351DCC  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355F90 00351DD0  4B FE A3 E5 */	bl lbl_80340374
-/* 80355F94 00351DD4  4B DC AE DD */	bl lbl_80120E70
+/* 80355F90 00351DD0  4B FE A3 E5 */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 80355F94 00351DD4  4B DC AE DD */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 80355F98 00351DD8  2C 03 00 0B */	cmpwi r3, 0xb
 /* 80355F9C 00351DDC  40 82 00 08 */	bne lbl_80355FA4
 /* 80355FA0 00351DE0  3B E0 00 3B */	li r31, 0x3b
 .global lbl_80355FA4
 lbl_80355FA4:
 /* 80355FA4 00351DE4  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355FA8 00351DE8  4B FE A3 75 */	bl lbl_8034031C
+/* 80355FA8 00351DE8  4B FE A3 75 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355FAC 00351DEC  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355FB0 00351DF0  38 80 00 01 */	li r4, 0x1
 /* 80355FB4 00351DF4  7F E5 FB 78 */	mr r5, r31
 /* 80355FB8 00351DF8  38 C0 00 09 */	li r6, 0x9
-/* 80355FBC 00351DFC  4B E4 37 95 */	bl lbl_80199750
+/* 80355FBC 00351DFC  4B E4 37 95 */	bl subAnimSet__Q24gobj4AnimFUlUlUl
 /* 80355FC0 00351E00  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80355FC4 00351E04  4B FE A3 59 */	bl lbl_8034031C
+/* 80355FC4 00351E04  4B FE A3 59 */	bl model__Q43scn4step4hero4HeroFv
 /* 80355FC8 00351E08  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80355FCC 00351E0C  38 80 00 01 */	li r4, 0x1
-/* 80355FD0 00351E10  4B E4 38 DD */	bl lbl_801998AC
+/* 80355FD0 00351E10  4B E4 38 DD */	bl subAnimAccessor__Q24gobj4AnimFUl
 /* 80355FD4 00351E14  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80355FD8 00351E18  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80355FDC 00351E1C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80355FE0 00351E20  38 80 00 01 */	li r4, 0x1
-/* 80355FE4 00351E24  4B E3 BC AD */	bl lbl_80191C90
+/* 80355FE4 00351E24  4B E3 BC AD */	bl start__Q23g3d17ModelAnimAccessorCFb
 /* 80355FE8 00351E28  93 FE 00 0C */	stw r31, 0xc(r30)
 /* 80355FEC 00351E2C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80355FF0 00351E30  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -256,12 +256,12 @@ lbl_80355FA4:
 /* 80355FF8 00351E38  7C 08 03 A6 */	mtlr r0
 /* 80355FFC 00351E3C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80356000 00351E40  4E 80 00 20 */	blr
-.global lbl_80356004
-lbl_80356004:
+.global updateLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFv
+updateLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFv:
 /* 80356004 00351E44  38 80 00 00 */	li r4, 0x0
-/* 80356008 00351E48  4B FF FD 54 */	b lbl_80355D5C
-.global lbl_8035600C
-lbl_8035600C:
+/* 80356008 00351E48  4B FF FD 54 */	b setLiftUpTwoHand__Q43scn4step4hero14SubAnimControlFb
+.global updateLiftUpRHand__Q43scn4step4hero14SubAnimControlFv
+updateLiftUpRHand__Q43scn4step4hero14SubAnimControlFv:
 /* 8035600C 00351E4C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80356010 00351E50  7C 08 02 A6 */	mflr r0
 /* 80356014 00351E54  90 01 00 34 */	stw r0, 0x34(r1)
@@ -271,28 +271,28 @@ lbl_8035600C:
 /* 80356024 00351E64  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 80356028 00351E68  7C 7E 1B 78 */	mr r30, r3
 /* 8035602C 00351E6C  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80356030 00351E70  4B FE A2 CD */	bl lbl_803402FC
-/* 80356034 00351E74  4B E2 B6 A1 */	bl lbl_801816D4
+/* 80356030 00351E70  4B FE A2 CD */	bl footState__Q43scn4step4hero4HeroFv
+/* 80356034 00351E74  4B E2 B6 A1 */	bl dataType__Q36effect6detail10GenContextCFv
 /* 80356038 00351E78  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8035603C 00351E7C  3B E0 00 41 */	li r31, 0x41
 /* 80356040 00351E80  41 82 00 08 */	beq lbl_80356048
 /* 80356044 00351E84  3B E0 00 3B */	li r31, 0x3b
 .global lbl_80356048
 lbl_80356048:
-/* 80356048 00351E88  C3 E2 CF 30 */	lfs f31, lbl_80562EB0@sda21(r2)
+/* 80356048 00351E88  C3 E2 CF 30 */	lfs f31, "@56378_80562EB0"@sda21(r2)
 /* 8035604C 00351E8C  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80356050 00351E90  4B E6 08 61 */	bl lbl_801B68B0
-/* 80356054 00351E94  4B FE BB 99 */	bl lbl_80341BEC
+/* 80356050 00351E90  4B E6 08 61 */	bl collideTargetIndex__Q35mcoll6detail21CollidedDetectionInfoCFv
+/* 80356054 00351E94  4B FE BB 99 */	bl IsKirby__Q43scn4step4hero10IndiviUtilFQ43scn4step4hero4Kind
 /* 80356058 00351E98  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8035605C 00351E9C  41 82 00 B0 */	beq lbl_8035610C
 /* 80356060 00351EA0  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80356064 00351EA4  4B FE A2 B9 */	bl lbl_8034031C
+/* 80356064 00351EA4  4B FE A2 B9 */	bl model__Q43scn4step4hero4HeroFv
 /* 80356068 00351EA8  38 63 01 F8 */	addi r3, r3, 0x1f8
-/* 8035606C 00351EAC  4B D9 DA 35 */	bl lbl_800F3AA0
+/* 8035606C 00351EAC  4B D9 DA 35 */	bl GetMaterial__Q34nw4r3lyt4PaneCFv
 /* 80356070 00351EB0  28 03 00 39 */	cmplwi r3, 0x39
 /* 80356074 00351EB4  41 81 00 98 */	bgt lbl_8035610C
-/* 80356078 00351EB8  3C 80 80 48 */	lis r4, lbl_80485538@ha
-/* 8035607C 00351EBC  38 84 55 38 */	addi r4, r4, lbl_80485538@l
+/* 80356078 00351EB8  3C 80 80 48 */	lis r4, "@56381"@ha
+/* 8035607C 00351EBC  38 84 55 38 */	addi r4, r4, "@56381"@l
 /* 80356080 00351EC0  54 60 10 3A */	slwi r0, r3, 2
 /* 80356084 00351EC4  7C 84 00 2E */	lwzx r4, r4, r0
 /* 80356088 00351EC8  7C 89 03 A6 */	mtctr r4
@@ -311,7 +311,7 @@ lbl_80356098:
 .global lbl_803560A0
 lbl_803560A0:
 /* 803560A0 00351EE0  3B E0 00 3D */	li r31, 0x3d
-/* 803560A4 00351EE4  C3 E2 CF 34 */	lfs f31, lbl_80562EB4@sda21(r2)
+/* 803560A4 00351EE4  C3 E2 CF 34 */	lfs f31, "@56379_80562EB4"@sda21(r2)
 /* 803560A8 00351EE8  48 00 00 64 */	b lbl_8035610C
 
 .global lbl_803560AC
@@ -357,8 +357,8 @@ lbl_803560E4:
 .global lbl_803560EC
 lbl_803560EC:
 /* 803560EC 00351F2C  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 803560F0 00351F30  4B FE A2 85 */	bl lbl_80340374
-/* 803560F4 00351F34  4B DC AD 7D */	bl lbl_80120E70
+/* 803560F0 00351F30  4B FE A2 85 */	bl abilityManager__Q43scn4step4hero4HeroFv
+/* 803560F4 00351F34  4B DC AD 7D */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 803560F8 00351F38  2C 03 00 0B */	cmpwi r3, 0xb
 /* 803560FC 00351F3C  40 82 00 10 */	bne lbl_8035610C
 /* 80356100 00351F40  3B E0 00 3B */	li r31, 0x3b
@@ -374,32 +374,32 @@ lbl_8035610C:
 /* 80356110 00351F50  7C 1F 00 00 */	cmpw r31, r0
 /* 80356114 00351F54  41 82 00 74 */	beq lbl_80356188
 /* 80356118 00351F58  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 8035611C 00351F5C  4B FE A2 01 */	bl lbl_8034031C
+/* 8035611C 00351F5C  4B FE A2 01 */	bl model__Q43scn4step4hero4HeroFv
 /* 80356120 00351F60  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80356124 00351F64  38 80 00 01 */	li r4, 0x1
 /* 80356128 00351F68  7F E5 FB 78 */	mr r5, r31
 /* 8035612C 00351F6C  38 C0 00 09 */	li r6, 0x9
-/* 80356130 00351F70  4B E4 36 21 */	bl lbl_80199750
+/* 80356130 00351F70  4B E4 36 21 */	bl subAnimSet__Q24gobj4AnimFUlUlUl
 /* 80356134 00351F74  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80356138 00351F78  4B FE A1 E5 */	bl lbl_8034031C
+/* 80356138 00351F78  4B FE A1 E5 */	bl model__Q43scn4step4hero4HeroFv
 /* 8035613C 00351F7C  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80356140 00351F80  38 80 00 01 */	li r4, 0x1
-/* 80356144 00351F84  4B E4 37 69 */	bl lbl_801998AC
+/* 80356144 00351F84  4B E4 37 69 */	bl subAnimAccessor__Q24gobj4AnimFUl
 /* 80356148 00351F88  90 81 00 14 */	stw r4, 0x14(r1)
 /* 8035614C 00351F8C  90 61 00 10 */	stw r3, 0x10(r1)
 /* 80356150 00351F90  38 61 00 10 */	addi r3, r1, 0x10
 /* 80356154 00351F94  38 80 00 01 */	li r4, 0x1
-/* 80356158 00351F98  4B E3 BB 39 */	bl lbl_80191C90
+/* 80356158 00351F98  4B E3 BB 39 */	bl start__Q23g3d17ModelAnimAccessorCFb
 /* 8035615C 00351F9C  80 7E 00 00 */	lwz r3, 0x0(r30)
-/* 80356160 00351FA0  4B FE A1 BD */	bl lbl_8034031C
+/* 80356160 00351FA0  4B FE A1 BD */	bl model__Q43scn4step4hero4HeroFv
 /* 80356164 00351FA4  38 63 01 F8 */	addi r3, r3, 0x1f8
 /* 80356168 00351FA8  38 80 00 01 */	li r4, 0x1
-/* 8035616C 00351FAC  4B E4 37 41 */	bl lbl_801998AC
+/* 8035616C 00351FAC  4B E4 37 41 */	bl subAnimAccessor__Q24gobj4AnimFUl
 /* 80356170 00351FB0  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80356174 00351FB4  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80356178 00351FB8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8035617C 00351FBC  FC 20 F8 90 */	fmr f1, f31
-/* 80356180 00351FC0  4B E3 BC 29 */	bl lbl_80191DA8
+/* 80356180 00351FC0  4B E3 BC 29 */	bl setFrameRate__Q23g3d17ModelAnimAccessorCFf
 /* 80356184 00351FC4  93 FE 00 0C */	stw r31, 0xc(r30)
 .global lbl_80356188
 lbl_80356188:

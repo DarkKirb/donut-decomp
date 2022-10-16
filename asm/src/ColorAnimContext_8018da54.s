@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018DA54
-lbl_8018DA54:
+.global __ct__Q23g3d16ColorAnimContextFRCQ23g3d16MaterialAccessorb
+__ct__Q23g3d16ColorAnimContextFRCQ23g3d16MaterialAccessorb:
 /* 8018DA54 00189894  39 03 FF FC */	addi r8, r3, -0x4
 /* 8018DA58 00189898  38 E4 FF FC */	addi r7, r4, -0x4
 /* 8018DA5C 0018989C  38 00 00 06 */	li r0, 0x6

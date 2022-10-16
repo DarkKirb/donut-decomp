@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80477EC0
-lbl_80477EC0:
+.global "__vt__Q24util90StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4kabu9StateFall,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util90StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4kabu9StateFall,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802BC8C0
-	.4byte lbl_802BC8A0
+	.4byte "__dt__Q24util90StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4kabu9StateFall,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util90StateFactoryArg1<Q24util6IState,Q53scn4step5enemy4kabu9StateFall,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80477ED0
-lbl_80477ED0:
+.global __vt__Q53scn4step5enemy4kabu15BrainMoveAround
+__vt__Q53scn4step5enemy4kabu15BrainMoveAround:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802BC8BC
-	.4byte lbl_802BC788
-	.4byte lbl_802BC814
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy4kabu15BrainMoveAroundFv
+	.4byte onStart__Q53scn4step5enemy4kabu15BrainMoveAroundFv
+	.4byte onRecover__Q53scn4step5enemy4kabu15BrainMoveAroundFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

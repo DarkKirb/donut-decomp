@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8014C0EC
-lbl_8014C0EC:
+.global SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font
+SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font:
 /* 8014C0EC 00147F2C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014C0F0 00147F30  7C 08 02 A6 */	mflr r0
 /* 8014C0F4 00147F34  90 01 00 14 */	stw r0, 0x14(r1)
@@ -73,14 +73,14 @@ lbl_8014C1B0:
 lbl_8014C1CC:
 /* 8014C1CC 0014800C  2C 05 00 00 */	cmpwi r5, 0x0
 /* 8014C1D0 00148010  40 82 00 24 */	bne lbl_8014C1F4
-/* 8014C1D4 00148014  3C 60 80 44 */	lis r3, lbl_80446F74@ha
-/* 8014C1D8 00148018  38 63 6F 74 */	addi r3, r3, lbl_80446F74@l
+/* 8014C1D4 00148014  3C 60 80 44 */	lis r3, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font"@ha
+/* 8014C1D8 00148018  38 63 6F 74 */	addi r3, r3, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font"@l
 /* 8014C1DC 0014801C  38 80 00 41 */	li r4, 0x41
-/* 8014C1E0 00148020  3C A0 80 44 */	lis r5, lbl_80446F40@ha
-/* 8014C1E4 00148024  38 A5 6F 40 */	addi r5, r5, lbl_80446F40@l
+/* 8014C1E0 00148020  3C A0 80 44 */	lis r5, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@0"@ha
+/* 8014C1E4 00148024  38 A5 6F 40 */	addi r5, r5, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@0"@l
 /* 8014C1E8 00148028  7F C6 F3 78 */	mr r6, r30
 /* 8014C1EC 0014802C  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8014C1F0 00148030  4B FD C1 61 */	bl lbl_80128350
+/* 8014C1F0 00148030  4B FD C1 61 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8014C1F4
 lbl_8014C1F4:
 /* 8014C1F4 00148034  38 80 00 01 */	li r4, 0x1
@@ -146,14 +146,14 @@ lbl_8014C29C:
 lbl_8014C2B8:
 /* 8014C2B8 001480F8  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8014C2BC 001480FC  40 82 00 24 */	bne lbl_8014C2E0
-/* 8014C2C0 00148100  3C 60 80 44 */	lis r3, lbl_80446F30@ha
-/* 8014C2C4 00148104  38 63 6F 30 */	addi r3, r3, lbl_80446F30@l
+/* 8014C2C0 00148100  3C 60 80 44 */	lis r3, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@1"@ha
+/* 8014C2C4 00148104  38 63 6F 30 */	addi r3, r3, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@1"@l
 /* 8014C2C8 00148108  38 80 00 42 */	li r4, 0x42
-/* 8014C2CC 0014810C  3C A0 80 44 */	lis r5, lbl_80446EF8@ha
-/* 8014C2D0 00148110  38 A5 6E F8 */	addi r5, r5, lbl_80446EF8@l
+/* 8014C2CC 0014810C  3C A0 80 44 */	lis r5, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@2"@ha
+/* 8014C2D0 00148110  38 A5 6E F8 */	addi r5, r5, "@STRING@SetFont__Q34nw4r2ut10CharWriterFRCQ34nw4r2ut4Font@2"@l
 /* 8014C2D4 00148114  7F E6 FB 78 */	mr r6, r31
 /* 8014C2D8 00148118  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8014C2DC 0014811C  4B FD C0 75 */	bl lbl_80128350
+/* 8014C2DC 0014811C  4B FD C0 75 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8014C2E0
 lbl_8014C2E0:
 /* 8014C2E0 00148120  93 FE 00 48 */	stw r31, 0x48(r30)

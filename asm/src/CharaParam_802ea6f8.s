@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802EA6F8
-lbl_802EA6F8:
+.global Create__Q53scn4step5enemy9tsukikage10CharaParamFv
+Create__Q53scn4step5enemy9tsukikage10CharaParamFv:
 /* 802EA6F8 002E6538  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 802EA6FC 002E653C  7C 08 02 A6 */	mflr r0
 /* 802EA700 002E6540  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 802EA704 002E6544  93 E1 00 AC */	stw r31, 0xac(r1)
 /* 802EA708 002E6548  7C 7F 1B 78 */	mr r31, r3
 /* 802EA70C 002E654C  38 61 00 08 */	addi r3, r1, 0x8
-/* 802EA710 002E6550  4B FA 70 3D */	bl lbl_8029174C
+/* 802EA710 002E6550  4B FA 70 3D */	bl Create__Q53scn4step5enemy6common9ParamBaseFv
 /* 802EA714 002E6554  38 A1 00 54 */	addi r5, r1, 0x54
 /* 802EA718 002E6558  38 81 00 04 */	addi r4, r1, 0x4
 /* 802EA71C 002E655C  38 00 00 0A */	li r0, 0xa

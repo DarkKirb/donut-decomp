@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80473108
-lbl_80473108:
+.global "@56612_80473108"
+"@56612_80473108":
 
 	.4byte lbl_80292928
 	.4byte lbl_802928F8
@@ -57,14 +57,14 @@ lbl_80473108:
 	.4byte lbl_8029293C
 	.4byte lbl_80292908
 
-.global lbl_804731D8
-lbl_804731D8:
+.global __vt__Q53scn4step5enemy6common12StateGoodbye
+__vt__Q53scn4step5enemy6common12StateGoodbye:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80292984
-	.4byte lbl_80292988
-	.4byte lbl_802929AC
-	.4byte lbl_8028DDE0
-	.4byte lbl_80292A00
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy6common12StateGoodbyeFv
+	.4byte procAnim__Q53scn4step5enemy6common12StateGoodbyeFv
+	.4byte procMove__Q53scn4step5enemy6common12StateGoodbyeFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common12StateGoodbyeFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

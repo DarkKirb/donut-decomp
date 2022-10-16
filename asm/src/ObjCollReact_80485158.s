@@ -1,90 +1,90 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80485158
-lbl_80485158:
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage20StateSuperTeamAttack,PQ43scn4step4hero4Hero>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage20StateSuperTeamAttack,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350838
-	.4byte lbl_803506F4
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage20StateSuperTeamAttack,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage20StateSuperTeamAttack,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80485168
-lbl_80485168:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80350834
-	.4byte lbl_80350710
-
-.global lbl_80485178
-lbl_80485178:
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateGuard,PQ43scn4step4hero4Hero>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateGuard,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350830
-	.4byte lbl_8035072C
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateGuard,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateGuard,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_80485188
-lbl_80485188:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8035082C
-	.4byte lbl_80350748
-
-.global lbl_80485198
-lbl_80485198:
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateHover,PQ43scn4step4hero4Hero>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateHover,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350828
-	.4byte lbl_803506D4
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateHover,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage10StateHover,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_804851A8
-lbl_804851A8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80350824
-	.4byte lbl_80350768
-
-.global lbl_804851B8
-lbl_804851B8:
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350820
-	.4byte lbl_80350784
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_804851C8
-lbl_804851C8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8035081C
-	.4byte lbl_803507A0
-
-.global lbl_804851D8
-lbl_804851D8:
+.global "__vt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero,Q63scn4step4hero6damage12StateExtreme11DamageLevel>"
+"__vt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero,Q63scn4step4hero6damage12StateExtreme11DamageLevel>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350818
-	.4byte lbl_803507BC
+	.4byte "__dt__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero,Q63scn4step4hero6damage12StateExtreme11DamageLevel>Fv"
+	.4byte "create__Q24util144StateFactoryArg2<Q24util6IState,Q53scn4step4hero6damage12StateExtreme,PQ43scn4step4hero4Hero,Q63scn4step4hero6damage12StateExtreme11DamageLevel>Fv"
 
-.global lbl_804851E8
-lbl_804851E8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80350814
-	.4byte lbl_803507D8
-
-.global lbl_804851F8
-lbl_804851F8:
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv2,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv2,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80350810
-	.4byte lbl_803507F4
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv2,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv2,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv1,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv1,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv1,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv1,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateBodyHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateBodyHit,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateBodyHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateBodyHit,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv2,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv2,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv2,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv2,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv3,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv3,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv3,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage12StateFireLv3,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv3,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv3,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv3,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero6damage13StateSparkLv3,PQ43scn4step4hero4Hero>Fv"

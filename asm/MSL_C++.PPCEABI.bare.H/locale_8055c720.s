@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055C720
-lbl_8055C720:
+.global "@GUARD@id__Q23std8ctype<c>"
+"@GUARD@id__Q23std8ctype<c>":
 	.skip 0x1
 
-.global lbl_8055C721
-lbl_8055C721:
+.global "@GUARD@id__Q23std8ctype<w>"
+"@GUARD@id__Q23std8ctype<w>":
 	.skip 0x1
 
-.global lbl_8055C722
-lbl_8055C722:
+.global "@GUARD@id__Q23std14codecvt<c,c,i>"
+"@GUARD@id__Q23std14codecvt<c,c,i>":
 	.skip 0x1
 
-.global lbl_8055C723
-lbl_8055C723:
+.global "@GUARD@id__Q23std14codecvt<w,c,i>"
+"@GUARD@id__Q23std14codecvt<w,c,i>":
 	.skip 0x5

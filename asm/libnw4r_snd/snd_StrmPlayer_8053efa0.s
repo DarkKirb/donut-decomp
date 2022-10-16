@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_8053EFA0
-lbl_8053EFA0:
+.global sLoadBuffer__Q44nw4r3snd6detail10StrmPlayer
+sLoadBuffer__Q44nw4r3snd6detail10StrmPlayer:
 	.skip 0x105F
 
 .global lbl_8053FFFF
@@ -153,6 +153,6 @@ lbl_80540096:
 lbl_805401AC:
 	.skip 0x2DF4
 
-.global lbl_80542FA0
-lbl_80542FA0:
+.global sLoadBufferMutex__Q44nw4r3snd6detail10StrmPlayer
+sLoadBufferMutex__Q44nw4r3snd6detail10StrmPlayer:
 	.skip 0x18

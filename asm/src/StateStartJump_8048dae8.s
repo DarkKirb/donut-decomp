@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048DAE8
-lbl_8048DAE8:
+.global __vt__Q53scn4step4hero5stone14StateStartJump
+__vt__Q53scn4step4hero5stone14StateStartJump:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80391684
-	.4byte lbl_803916FC
-	.4byte lbl_80391778
-	.4byte lbl_8035550C
-	.4byte lbl_80391804
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero5stone14StateStartJumpFv
+	.4byte procAnim__Q53scn4step4hero5stone14StateStartJumpFv
+	.4byte procMove__Q53scn4step4hero5stone14StateStartJumpFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero5stone14StateStartJumpFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

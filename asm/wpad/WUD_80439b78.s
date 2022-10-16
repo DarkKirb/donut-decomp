@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80439B78
-lbl_80439B78:
+.global _wudWiiRemoteDescriptor
+_wudWiiRemoteDescriptor:
 
 	.4byte 0x05010905
 	.4byte 0xA1018510
@@ -60,15 +60,15 @@ lbl_80439B78:
 	.4byte 0x09018100
 	.4byte 0xC0000000
 
-.global lbl_80439C54
-lbl_80439C54:
+.global _wudSuperPeekPokeCmd
+_wudSuperPeekPokeCmd:
 
 	.4byte 0x05009A0E
 	.4byte 0x00010000
 	.4byte 0
 
-.global lbl_80439C60
-lbl_80439C60:
+.global _wudPatchData
+_wudPatchData:
 
 	.4byte 0x70990800
 	.4byte 0xB4000000
@@ -118,8 +118,8 @@ lbl_80439C60:
 	.4byte 0x30FC0E00
 	.4byte 0x7FFF0000
 
-.global lbl_80439D1C
-lbl_80439D1C:
+.global _wudPatchInstallCmd
+_wudPatchInstallCmd:
 
 	.4byte 0x0720BC65
 	.4byte 0x01008442
@@ -145,8 +145,8 @@ lbl_80439D1C:
 	.4byte 0x86F018FD
 	.4byte 0x214F3B60
 
-.global lbl_80439D78
-lbl_80439D78:
+.global _wudResetAuthCountCmd
+_wudResetAuthCountCmd:
 
 	.4byte 0x30360800
 	.4byte 0
@@ -156,8 +156,8 @@ lbl_80439D78:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80439D94
-lbl_80439D94:
+.global "@6246"
+"@6246":
 
 	.4byte 0x4E696E74
 	.4byte 0x656E646F
@@ -165,8 +165,8 @@ lbl_80439D94:
 	.4byte 0x2D434E54
 	.4byte 0
 
-.global lbl_80439DA8
-lbl_80439DA8:
+.global "@6247"
+"@6247":
 
 	.4byte 0x4E696E74
 	.4byte 0x656E646F
@@ -174,8 +174,8 @@ lbl_80439DA8:
 	.4byte 0x2D574243
 	.4byte 0
 
-.global lbl_80439DBC
-lbl_80439DBC:
+.global "@6546"
+"@6546":
 
 	.4byte 0x2F746974
 	.4byte 0x6C652F30
@@ -194,8 +194,8 @@ lbl_80439DBC:
 	.4byte 0x2D434E54
 	.4byte 0x2D303100
 
-.global lbl_80439DFC
-lbl_80439DFC:
+.global "@6792_80439DFC"
+"@6792_80439DFC":
 
 	.4byte 0x4572726F
 	.4byte 0x723A2074
@@ -219,8 +219,8 @@ lbl_80439DFC:
 	.4byte 0x65642E0A
 	.4byte 0
 
-.global lbl_80439E50
-lbl_80439E50:
+.global "@7511"
+"@7511":
 
 	.4byte 0x5741524E
 	.4byte 0x494E473A
@@ -232,8 +232,8 @@ lbl_80439E50:
 	.4byte 0x65736574
 	.4byte 0x2E0A0000
 
-.global lbl_80439E74
-lbl_80439E74:
+.global "@7554"
+"@7554":
 
 	.4byte 0x4D4F4455
 	.4byte 0x4C452046
@@ -241,8 +241,8 @@ lbl_80439E74:
 	.4byte 0x20455252
 	.4byte 0x4F520A00
 
-.global lbl_80439E88
-lbl_80439E88:
+.global "@7558"
+"@7558":
 
 	.4byte 0x2D2D2D2D
 	.4byte 0x20574152
@@ -255,8 +255,8 @@ lbl_80439E88:
 	.4byte 0x2D2D2D0A
 	.4byte 0
 
-.global lbl_80439EB0
-lbl_80439EB0:
+.global "@7592"
+"@7592":
 
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E20

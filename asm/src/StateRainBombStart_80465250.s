@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80465250
-lbl_80465250:
+.global "__vt__Q24util142StateFactoryArg2<Q24util6IState,Q53scn4step4boss7bonkers13StateRainBomb,PQ43scn4step4boss4Boss,Q63scn4step4boss7bonkers13StateRainBomb6Config>"
+"__vt__Q24util142StateFactoryArg2<Q24util6IState,Q53scn4step4boss7bonkers13StateRainBomb,PQ43scn4step4boss4Boss,Q63scn4step4boss7bonkers13StateRainBomb6Config>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80238FF8
-	.4byte lbl_80238FAC
+	.4byte "__dt__Q24util142StateFactoryArg2<Q24util6IState,Q53scn4step4boss7bonkers13StateRainBomb,PQ43scn4step4boss4Boss,Q63scn4step4boss7bonkers13StateRainBomb6Config>Fv"
+	.4byte "create__Q24util142StateFactoryArg2<Q24util6IState,Q53scn4step4boss7bonkers13StateRainBomb,PQ43scn4step4boss4Boss,Q63scn4step4boss7bonkers13StateRainBomb6Config>Fv"
 
-.global lbl_80465260
-lbl_80465260:
+.global __vt__Q53scn4step4boss7bonkers18StateRainBombStart
+__vt__Q53scn4step4boss7bonkers18StateRainBombStart:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80238D90
-	.4byte lbl_80238D94
-	.4byte lbl_80238E7C
-	.4byte lbl_802344FC
-	.4byte lbl_80238FA8
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss7bonkers18StateRainBombStartFv
+	.4byte procAnim__Q53scn4step4boss7bonkers18StateRainBombStartFv
+	.4byte procMove__Q53scn4step4boss7bonkers18StateRainBombStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss7bonkers18StateRainBombStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

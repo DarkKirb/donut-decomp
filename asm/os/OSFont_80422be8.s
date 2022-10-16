@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80422BE8
-lbl_80422BE8:
+.global HankakuToCode
+HankakuToCode:
 
 	.4byte 0x020C020D
 	.4byte 0x020E020F
@@ -101,8 +101,8 @@ lbl_80422BE8:
 	.4byte 0x02A602A7
 	.4byte 0x02A802A9
 
-.global lbl_80422D68
-lbl_80422D68:
+.global Zenkaku2Code
+Zenkaku2Code:
 
 	.4byte 0x00000001
 	.4byte 0x00020003

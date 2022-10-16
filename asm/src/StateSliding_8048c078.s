@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048C078
-lbl_8048C078:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateSlidingHit,PQ43scn4step4hero4Hero>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateSlidingHit,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8036A9C4
-	.4byte lbl_8036A988
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateSlidingHit,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateSlidingHit,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048C088
-lbl_8048C088:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_8036A9C0
-	.4byte lbl_8036A9A4
-
-.global lbl_8048C098
-lbl_8048C098:
+.global "__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common12StateSliding,PQ43scn4step4hero4Hero>"
+"__vt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common12StateSliding,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8036A4C8
-	.4byte lbl_8036A544
-	.4byte lbl_8036A698
-	.4byte lbl_8035550C
-	.4byte lbl_8036A758
-	.4byte lbl_8036A8D4
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common12StateSliding,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util93StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common12StateSliding,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero6common12StateSliding
+__vt__Q53scn4step4hero6common12StateSliding:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero6common12StateSlidingFv
+	.4byte procAnim__Q53scn4step4hero6common12StateSlidingFv
+	.4byte procMove__Q53scn4step4hero6common12StateSlidingFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common12StateSlidingFv
+	.4byte procObjCollReact__Q53scn4step4hero6common12StateSlidingFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

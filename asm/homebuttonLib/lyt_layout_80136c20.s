@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80136C20
-lbl_80136C20:
+.global "SetTagProcessorImpl__24@unnamed@lyt_layout_cpp@FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase<w>"
+"SetTagProcessorImpl__24@unnamed@lyt_layout_cpp@FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase<w>":
 /* 80136C20 00132A60  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80136C24 00132A64  7C 08 02 A6 */	mflr r0
 /* 80136C28 00132A68  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80136C2C 00132A6C  39 61 00 30 */	addi r11, r1, 0x30
 /* 80136C30 00132A70  4B ED 07 01 */	bl lbl_80007330
 /* 80136C34 00132A74  81 83 00 00 */	lwz r12, 0x0(r3)
-/* 80136C38 00132A78  3F 40 80 54 */	lis r26, lbl_80543788@ha
+/* 80136C38 00132A78  3F 40 80 54 */	lis r26, typeInfo__Q36nw4hbm3lyt7TextBox@ha
 /* 80136C3C 00132A7C  7C 7B 1B 78 */	mr r27, r3
 /* 80136C40 00132A80  7C 98 23 78 */	mr r24, r4
 /* 80136C44 00132A84  81 8C 00 0C */	lwz r12, 0xc(r12)
-/* 80136C48 00132A88  3B 5A 37 88 */	addi r26, r26, lbl_80543788@l
+/* 80136C48 00132A88  3B 5A 37 88 */	addi r26, r26, typeInfo__Q36nw4hbm3lyt7TextBox@l
 /* 80136C4C 00132A8C  7D 89 03 A6 */	mtctr r12
 /* 80136C50 00132A90  4E 80 04 21 */	bctrl
 /* 80136C54 00132A94  48 00 00 18 */	b lbl_80136C6C
@@ -47,10 +47,10 @@ lbl_80136C8C:
 /* 80136C94 00132AD4  93 03 00 F4 */	stw r24, 0xf4(r3)
 .global lbl_80136C98
 lbl_80136C98:
-/* 80136C98 00132AD8  3F 20 80 54 */	lis r25, lbl_80543788@ha
+/* 80136C98 00132AD8  3F 20 80 54 */	lis r25, typeInfo__Q36nw4hbm3lyt7TextBox@ha
 /* 80136C9C 00132ADC  83 FB 00 14 */	lwz r31, 0x14(r27)
 /* 80136CA0 00132AE0  3B 9B 00 14 */	addi r28, r27, 0x14
-/* 80136CA4 00132AE4  3B 39 37 88 */	addi r25, r25, lbl_80543788@l
+/* 80136CA4 00132AE4  3B 39 37 88 */	addi r25, r25, typeInfo__Q36nw4hbm3lyt7TextBox@l
 /* 80136CA8 00132AE8  48 00 00 F8 */	b lbl_80136DA0
 .global lbl_80136CAC
 lbl_80136CAC:
@@ -139,7 +139,7 @@ lbl_80136D70:
 lbl_80136D78:
 /* 80136D78 00132BB8  7F 04 C3 78 */	mr r4, r24
 /* 80136D7C 00132BBC  38 7D FF FC */	addi r3, r29, -0x4
-/* 80136D80 00132BC0  4B FF FE A1 */	bl lbl_80136C20
+/* 80136D80 00132BC0  4B FF FE A1 */	bl "SetTagProcessorImpl__24@unnamed@lyt_layout_cpp@FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase<w>"
 /* 80136D84 00132BC4  83 BD 00 00 */	lwz r29, 0x0(r29)
 .global lbl_80136D88
 lbl_80136D88:
@@ -161,15 +161,15 @@ lbl_80136DA0:
 /* 80136DB4 00132BF4  7C 08 03 A6 */	mtlr r0
 /* 80136DB8 00132BF8  38 21 00 30 */	addi r1, r1, 0x30
 /* 80136DBC 00132BFC  4E 80 00 20 */	blr
-.global lbl_80136DC0
-lbl_80136DC0:
-/* 80136DC0 00132C00  3C 80 80 41 */	lis r4, lbl_8040E1F8@ha
+.global __ct__Q36nw4hbm3lyt6LayoutFv
+__ct__Q36nw4hbm3lyt6LayoutFv:
+/* 80136DC0 00132C00  3C 80 80 41 */	lis r4, "@9387"@ha
 /* 80136DC4 00132C04  38 00 00 00 */	li r0, 0x0
-/* 80136DC8 00132C08  C0 04 E1 F8 */	lfs f0, lbl_8040E1F8@l(r4)
-/* 80136DCC 00132C0C  3C 80 80 44 */	lis r4, lbl_80443FC0@ha
+/* 80136DC8 00132C08  C0 04 E1 F8 */	lfs f0, "@9387"@l(r4)
+/* 80136DCC 00132C0C  3C 80 80 44 */	lis r4, __vt__Q36nw4hbm3lyt6Layout@ha
 /* 80136DD0 00132C10  38 A3 00 08 */	addi r5, r3, 0x8
 /* 80136DD4 00132C14  90 03 00 04 */	stw r0, 0x4(r3)
-/* 80136DD8 00132C18  38 84 3F C0 */	addi r4, r4, lbl_80443FC0@l
+/* 80136DD8 00132C18  38 84 3F C0 */	addi r4, r4, __vt__Q36nw4hbm3lyt6Layout@l
 /* 80136DDC 00132C1C  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80136DE0 00132C20  90 A3 00 08 */	stw r5, 0x8(r3)
 /* 80136DE4 00132C24  90 A3 00 0C */	stw r5, 0xc(r3)
@@ -180,8 +180,8 @@ lbl_80136DC0:
 /* 80136DF8 00132C38  98 03 00 20 */	stb r0, 0x20(r3)
 /* 80136DFC 00132C3C  4E 80 00 20 */	blr
 
-.global lbl_80136E00
-lbl_80136E00:
+.global __dt__Q36nw4hbm3lyt6LayoutFv
+__dt__Q36nw4hbm3lyt6LayoutFv:
 /* 80136E00 00132C40  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80136E04 00132C44  7C 08 02 A6 */	mflr r0
 /* 80136E08 00132C48  90 01 00 34 */	stw r0, 0x34(r1)
@@ -192,18 +192,18 @@ lbl_80136E00:
 /* 80136E1C 00132C5C  7C 9B 23 78 */	mr r27, r4
 /* 80136E20 00132C60  41 82 00 EC */	beq lbl_80136F0C
 /* 80136E24 00132C64  80 03 00 14 */	lwz r0, 0x14(r3)
-/* 80136E28 00132C68  3C 80 80 44 */	lis r4, lbl_80443FC0@ha
-/* 80136E2C 00132C6C  38 84 3F C0 */	addi r4, r4, lbl_80443FC0@l
+/* 80136E28 00132C68  3C 80 80 44 */	lis r4, __vt__Q36nw4hbm3lyt6Layout@ha
+/* 80136E2C 00132C6C  38 84 3F C0 */	addi r4, r4, __vt__Q36nw4hbm3lyt6Layout@l
 /* 80136E30 00132C70  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80136E34 00132C74  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80136E38 00132C78  41 82 00 20 */	beq lbl_80136E58
 /* 80136E3C 00132C7C  7C 03 03 78 */	mr r3, r0
 /* 80136E40 00132C80  38 80 FF FF */	li r4, -0x1
-/* 80136E44 00132C84  4B FF FC 4D */	bl lbl_80136A90
-/* 80136E48 00132C88  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 80136E44 00132C84  4B FF FC 4D */	bl __dt__Q36nw4hbm3lyt14GroupContainerFv
+/* 80136E48 00132C88  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80136E4C 00132C8C  80 9A 00 14 */	lwz r4, 0x14(r26)
-/* 80136E50 00132C90  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
-/* 80136E54 00132C94  4B F6 C9 AD */	bl lbl_800A3800
+/* 80136E50 00132C90  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
+/* 80136E54 00132C94  4B F6 C9 AD */	bl MEMFreeToAllocator
 .global lbl_80136E58
 lbl_80136E58:
 /* 80136E58 00132C98  80 7A 00 10 */	lwz r3, 0x10(r26)
@@ -217,15 +217,15 @@ lbl_80136E58:
 /* 80136E78 00132CB8  81 8C 00 08 */	lwz r12, 0x8(r12)
 /* 80136E7C 00132CBC  7D 89 03 A6 */	mtctr r12
 /* 80136E80 00132CC0  4E 80 04 21 */	bctrl
-/* 80136E84 00132CC4  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 80136E84 00132CC4  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80136E88 00132CC8  80 9A 00 10 */	lwz r4, 0x10(r26)
-/* 80136E8C 00132CCC  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
-/* 80136E90 00132CD0  4B F6 C9 71 */	bl lbl_800A3800
+/* 80136E8C 00132CCC  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
+/* 80136E90 00132CD0  4B F6 C9 71 */	bl MEMFreeToAllocator
 .global lbl_80136E94
 lbl_80136E94:
 /* 80136E94 00132CD4  83 FA 00 08 */	lwz r31, 0x8(r26)
 /* 80136E98 00132CD8  3B DA 00 08 */	addi r30, r26, 0x8
-/* 80136E9C 00132CDC  3F A0 80 54 */	lis r29, lbl_80543770@ha
+/* 80136E9C 00132CDC  3F A0 80 54 */	lis r29, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80136EA0 00132CE0  48 00 00 44 */	b lbl_80136EE4
 .global lbl_80136EA4
 lbl_80136EA4:
@@ -234,7 +234,7 @@ lbl_80136EA4:
 /* 80136EAC 00132CEC  38 7A 00 04 */	addi r3, r26, 0x4
 /* 80136EB0 00132CF0  38 81 00 08 */	addi r4, r1, 0x8
 /* 80136EB4 00132CF4  93 81 00 08 */	stw r28, 0x8(r1)
-/* 80136EB8 00132CF8  4B FE 8E 59 */	bl lbl_8011FD10
+/* 80136EB8 00132CF8  4B FE 8E 59 */	bl Erase__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8Iterator
 /* 80136EBC 00132CFC  3B 9C FF FC */	addi r28, r28, -0x4
 /* 80136EC0 00132D00  38 80 FF FF */	li r4, -0x1
 /* 80136EC4 00132D04  81 9C 00 00 */	lwz r12, 0x0(r28)
@@ -242,9 +242,9 @@ lbl_80136EA4:
 /* 80136ECC 00132D0C  81 8C 00 08 */	lwz r12, 0x8(r12)
 /* 80136ED0 00132D10  7D 89 03 A6 */	mtctr r12
 /* 80136ED4 00132D14  4E 80 04 21 */	bctrl
-/* 80136ED8 00132D18  80 7D 37 70 */	lwz r3, lbl_80543770@l(r29)
+/* 80136ED8 00132D18  80 7D 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r29)
 /* 80136EDC 00132D1C  7F 84 E3 78 */	mr r4, r28
-/* 80136EE0 00132D20  4B F6 C9 21 */	bl lbl_800A3800
+/* 80136EE0 00132D20  4B F6 C9 21 */	bl MEMFreeToAllocator
 .global lbl_80136EE4
 lbl_80136EE4:
 /* 80136EE4 00132D24  7C 1F F0 40 */	cmplw r31, r30
@@ -252,13 +252,13 @@ lbl_80136EE4:
 /* 80136EEC 00132D2C  34 7A 00 04 */	addic. r3, r26, 0x4
 /* 80136EF0 00132D30  41 82 00 0C */	beq lbl_80136EFC
 /* 80136EF4 00132D34  38 80 00 00 */	li r4, 0x0
-/* 80136EF8 00132D38  4B FE 8D 89 */	bl lbl_8011FC80
+/* 80136EF8 00132D38  4B FE 8D 89 */	bl __dt__Q44nw4r2ut6detail12LinkListImplFv
 .global lbl_80136EFC
 lbl_80136EFC:
 /* 80136EFC 00132D3C  2C 1B 00 00 */	cmpwi r27, 0x0
 /* 80136F00 00132D40  40 81 00 0C */	ble lbl_80136F0C
 /* 80136F04 00132D44  7F 43 D3 78 */	mr r3, r26
-/* 80136F08 00132D48  48 08 88 0D */	bl lbl_801BF714
+/* 80136F08 00132D48  48 08 88 0D */	bl __dl__FPv
 .global lbl_80136F0C
 lbl_80136F0C:
 /* 80136F0C 00132D4C  39 61 00 30 */	addi r11, r1, 0x30
@@ -271,20 +271,20 @@ lbl_80136F0C:
 /* 80136F28 00132D68  00 00 00 00 */	.4byte 0x00000000
 /* 80136F2C 00132D6C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80136F30
-lbl_80136F30:
+.global Build__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor
+Build__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor:
 /* 80136F30 00132D70  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80136F34 00132D74  7C 08 02 A6 */	mflr r0
 /* 80136F38 00132D78  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80136F3C 00132D7C  39 61 00 60 */	addi r11, r1, 0x60
-/* 80136F40 00132D80  4B ED 03 C9 */	bl lbl_80007308
+/* 80136F40 00132D80  4B ED 03 C9 */	bl __save_gpr
 /* 80136F44 00132D84  7C 9F 23 78 */	mr r31, r4
 /* 80136F48 00132D88  3C 80 52 4C */	lis r4, 0x524c
 /* 80136F4C 00132D8C  7C 7E 1B 78 */	mr r30, r3
 /* 80136F50 00132D90  7C AE 2B 78 */	mr r14, r5
 /* 80136F54 00132D94  38 84 59 54 */	addi r4, r4, 0x5954
 /* 80136F58 00132D98  7F E3 FB 78 */	mr r3, r31
-/* 80136F5C 00132D9C  4B FF ED 55 */	bl lbl_80135CB0
+/* 80136F5C 00132D9C  4B FF ED 55 */	bl TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeaderUl
 /* 80136F60 00132DA0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80136F64 00132DA4  40 82 00 0C */	bne lbl_80136F70
 /* 80136F68 00132DA8  38 60 00 00 */	li r3, 0x0
@@ -305,7 +305,7 @@ lbl_80136F70:
 /* 80136F9C 00132DDC  3F 80 74 78 */	lis r28, 0x7478
 /* 80136FA0 00132DE0  92 C1 00 10 */	stw r22, 0x10(r1)
 /* 80136FA4 00132DE4  3F 20 62 6E */	lis r25, 0x626e
-/* 80136FA8 00132DE8  3F A0 80 54 */	lis r29, lbl_80543770@ha
+/* 80136FA8 00132DE8  3F A0 80 54 */	lis r29, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80136FAC 00132DEC  3D C0 6C 79 */	lis r14, 0x6c79
 /* 80136FB0 00132DF0  A0 1F 00 0C */	lhz r0, 0xc(r31)
 /* 80136FB4 00132DF4  3F 40 67 72 */	lis r26, 0x6772
@@ -413,7 +413,7 @@ lbl_801370E8:
 lbl_801370F0:
 /* 801370F0 00132F30  7E 04 83 78 */	mr r4, r16
 /* 801370F4 00132F34  38 A1 00 08 */	addi r5, r1, 0x8
-/* 801370F8 00132F38  48 00 05 79 */	bl lbl_80137670
+/* 801370F8 00132F38  48 00 05 79 */	bl BuildPaneObj__Q36nw4hbm3lyt6LayoutFlPCvRCQ36nw4hbm3lyt11ResBlockSet
 /* 801370FC 00132F3C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80137100 00132F40  7C 75 1B 78 */	mr r21, r3
 /* 80137104 00132F44  41 82 00 FC */	beq lbl_80137200
@@ -427,7 +427,7 @@ lbl_80137118:
 /* 8013711C 00132F5C  41 82 00 10 */	beq lbl_8013712C
 /* 80137120 00132F60  7E 83 A3 78 */	mr r3, r20
 /* 80137124 00132F64  7E A4 AB 78 */	mr r4, r21
-/* 80137128 00132F68  48 00 3B B9 */	bl lbl_8013ACE0
+/* 80137128 00132F68  48 00 3B B9 */	bl AppendChild__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt4Pane
 .global lbl_8013712C
 lbl_8013712C:
 /* 8013712C 00132F6C  7E B3 AB 78 */	mr r19, r21
@@ -445,10 +445,10 @@ lbl_8013713C:
 lbl_80137148:
 /* 80137148 00132F88  2C 12 00 00 */	cmpwi r18, 0x0
 /* 8013714C 00132F8C  40 82 00 48 */	bne lbl_80137194
-/* 80137150 00132F90  80 7D 37 70 */	lwz r3, lbl_80543770@l(r29)
+/* 80137150 00132F90  80 7D 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r29)
 /* 80137154 00132F94  3A 40 00 01 */	li r18, 0x1
 /* 80137158 00132F98  38 80 00 0C */	li r4, 0xc
-/* 8013715C 00132F9C  4B F6 C6 95 */	bl lbl_800A37F0
+/* 8013715C 00132F9C  4B F6 C6 95 */	bl MEMAllocFromAllocator
 /* 80137160 00132FA0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80137164 00132FA4  41 82 00 24 */	beq lbl_80137188
 /* 80137168 00132FA8  41 82 00 24 */	beq lbl_8013718C
@@ -476,14 +476,14 @@ lbl_80137194:
 /* 801371A8 00132FE8  82 BE 00 10 */	lwz r21, 0x10(r30)
 /* 801371AC 00132FEC  38 80 00 2C */	li r4, 0x2c
 /* 801371B0 00132FF0  80 7D 37 70 */	lwz r3, 0x3770(r29)
-/* 801371B4 00132FF4  4B F6 C6 3D */	bl lbl_800A37F0
+/* 801371B4 00132FF4  4B F6 C6 3D */	bl MEMAllocFromAllocator
 /* 801371B8 00132FF8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801371BC 00132FFC  41 82 00 20 */	beq lbl_801371DC
 /* 801371C0 00133000  7C 64 1B 78 */	mr r4, r3
 /* 801371C4 00133004  41 82 00 1C */	beq lbl_801371E0
 /* 801371C8 00133008  7E 04 83 78 */	mr r4, r16
 /* 801371CC 0013300C  7E A5 AB 78 */	mr r5, r21
-/* 801371D0 00133010  4B FF F7 01 */	bl lbl_801368D0
+/* 801371D0 00133010  4B FF F7 01 */	bl __ct__Q36nw4hbm3lyt5GroupFPCQ46nw4hbm3lyt3res5GroupPQ36nw4hbm3lyt4Pane
 /* 801371D4 00133014  7C 64 1B 78 */	mr r4, r3
 /* 801371D8 00133018  48 00 00 08 */	b lbl_801371E0
 .global lbl_801371DC
@@ -494,7 +494,7 @@ lbl_801371E0:
 /* 801371E0 00133020  2C 04 00 00 */	cmpwi r4, 0x0
 /* 801371E4 00133024  41 82 00 1C */	beq lbl_80137200
 /* 801371E8 00133028  80 7E 00 14 */	lwz r3, 0x14(r30)
-/* 801371EC 0013302C  4B FF F9 75 */	bl lbl_80136B60
+/* 801371EC 0013302C  4B FF F9 75 */	bl AppendGroup__Q36nw4hbm3lyt14GroupContainerFPQ36nw4hbm3lyt5Group
 /* 801371F0 00133030  48 00 00 10 */	b lbl_80137200
 .global lbl_801371F4
 lbl_801371F4:
@@ -517,7 +517,7 @@ lbl_8013720C:
 .global lbl_8013721C
 lbl_8013721C:
 /* 8013721C 0013305C  39 61 00 60 */	addi r11, r1, 0x60
-/* 80137220 00133060  4B ED 01 35 */	bl lbl_80007354
+/* 80137220 00133060  4B ED 01 35 */	bl __restore_gpr
 /* 80137224 00133064  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80137228 00133068  7C 08 03 A6 */	mtlr r0
 /* 8013722C 0013306C  38 21 00 60 */	addi r1, r1, 0x60
@@ -526,8 +526,8 @@ lbl_8013721C:
 /* 80137238 00133078  00 00 00 00 */	.4byte 0x00000000
 /* 8013723C 0013307C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80137240
-lbl_80137240:
+.global CreateAnimTransform__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor
+CreateAnimTransform__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor:
 /* 80137240 00133080  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80137244 00133084  7C 08 02 A6 */	mflr r0
 /* 80137248 00133088  90 01 00 34 */	stw r0, 0x34(r1)
@@ -537,7 +537,7 @@ lbl_80137240:
 /* 80137258 00133098  7C 78 1B 78 */	mr r24, r3
 /* 8013725C 0013309C  7C B9 2B 78 */	mr r25, r5
 /* 80137260 001330A0  7F A3 EB 78 */	mr r3, r29
-/* 80137264 001330A4  4B FF EA 1D */	bl lbl_80135C80
+/* 80137264 001330A4  4B FF EA 1D */	bl TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeader
 /* 80137268 001330A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8013726C 001330AC  40 82 00 0C */	bne lbl_80137278
 /* 80137270 001330B0  38 60 00 00 */	li r3, 0x0
@@ -547,7 +547,7 @@ lbl_80137278:
 /* 80137278 001330B8  A0 1D 00 0C */	lhz r0, 0xc(r29)
 /* 8013727C 001330BC  3B 60 00 00 */	li r27, 0x0
 /* 80137280 001330C0  3B 40 00 00 */	li r26, 0x0
-/* 80137284 001330C4  3F E0 80 54 */	lis r31, lbl_80543770@ha
+/* 80137284 001330C4  3F E0 80 54 */	lis r31, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80137288 001330C8  7F 9D 02 14 */	add r28, r29, r0
 /* 8013728C 001330CC  48 00 00 D4 */	b lbl_80137360
 .global lbl_80137290
@@ -574,14 +574,14 @@ lbl_80137290:
 /* 801372DC 0013311C  40 82 00 58 */	bne lbl_80137334
 .global lbl_801372E0
 lbl_801372E0:
-/* 801372E0 00133120  80 7F 37 70 */	lwz r3, lbl_80543770@l(r31)
+/* 801372E0 00133120  80 7F 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r31)
 /* 801372E4 00133124  38 80 00 20 */	li r4, 0x20
-/* 801372E8 00133128  4B F6 C5 09 */	bl lbl_800A37F0
+/* 801372E8 00133128  4B F6 C5 09 */	bl MEMAllocFromAllocator
 /* 801372EC 0013312C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801372F0 00133130  41 82 00 18 */	beq lbl_80137308
 /* 801372F4 00133134  7C 7E 1B 78 */	mr r30, r3
 /* 801372F8 00133138  41 82 00 14 */	beq lbl_8013730C
-/* 801372FC 0013313C  4B FF DC D5 */	bl lbl_80134FD0
+/* 801372FC 0013313C  4B FF DC D5 */	bl __ct__Q36nw4hbm3lyt18AnimTransformBasicFv
 /* 80137300 00133140  7C 7E 1B 78 */	mr r30, r3
 /* 80137304 00133144  48 00 00 08 */	b lbl_8013730C
 .global lbl_80137308
@@ -608,7 +608,7 @@ lbl_80137334:
 /* 80137344 00133184  38 78 00 04 */	addi r3, r24, 0x4
 /* 80137348 00133188  38 81 00 08 */	addi r4, r1, 0x8
 /* 8013734C 0013318C  38 BB 00 04 */	addi r5, r27, 0x4
-/* 80137350 00133190  4B FE 8A 61 */	bl lbl_8011FDB0
+/* 80137350 00133190  4B FE 8A 61 */	bl Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode
 .global lbl_80137354
 lbl_80137354:
 /* 80137354 00133194  80 1C 00 04 */	lwz r0, 0x4(r28)
@@ -631,8 +631,8 @@ lbl_80137370:
 /* 80137388 001331C8  00 00 00 00 */	.4byte 0x00000000
 /* 8013738C 001331CC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80137390
-lbl_80137390:
+.global BindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform
+BindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform:
 /* 80137390 001331D0  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 80137394 001331D4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80137398 001331D8  4D 82 00 20 */	beqlr
@@ -646,15 +646,15 @@ lbl_80137390:
 /* 801373B8 001331F8  00 00 00 00 */	.4byte 0x00000000
 /* 801373BC 001331FC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801373C0
-lbl_801373C0:
-/* 801373C0 00133200  4B FB D3 00 */	b lbl_800F46C0
+.global UnbindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform
+UnbindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform:
+/* 801373C0 00133200  4B FB D3 00 */	b UnbindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform
 /* 801373C4 00133204  00 00 00 00 */	.4byte 0x00000000
 /* 801373C8 00133208  00 00 00 00 */	.4byte 0x00000000
 /* 801373CC 0013320C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801373D0
-lbl_801373D0:
+.global UnbindAllAnimation__Q36nw4hbm3lyt6LayoutFv
+UnbindAllAnimation__Q36nw4hbm3lyt6LayoutFv:
 /* 801373D0 00133210  81 83 00 00 */	lwz r12, 0x0(r3)
 /* 801373D4 00133214  38 80 00 00 */	li r4, 0x0
 /* 801373D8 00133218  81 8C 00 18 */	lwz r12, 0x18(r12)
@@ -664,8 +664,8 @@ lbl_801373D0:
 /* 801373E8 00133228  00 00 00 00 */	.4byte 0x00000000
 /* 801373EC 0013322C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801373F0
-lbl_801373F0:
+.global SetAnimationEnable__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransformb
+SetAnimationEnable__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransformb:
 /* 801373F0 00133230  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801373F4 00133234  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801373F8 00133238  4D 82 00 20 */	beqlr
@@ -679,36 +679,36 @@ lbl_801373F0:
 /* 80137418 00133258  00 00 00 00 */	.4byte 0x00000000
 /* 8013741C 0013325C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80137420
-lbl_80137420:
-/* 80137420 00133260  4B FB D5 C0 */	b lbl_800F49E0
+.global CalculateMtx__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo
+CalculateMtx__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo:
+/* 80137420 00133260  4B FB D5 C0 */	b CalculateMtx__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
 /* 80137424 00133264  00 00 00 00 */	.4byte 0x00000000
 /* 80137428 00133268  00 00 00 00 */	.4byte 0x00000000
 /* 8013742C 0013326C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80137430
-lbl_80137430:
-/* 80137430 00133270  4B FB D5 D0 */	b lbl_800F4A00
+.global Draw__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo
+Draw__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo:
+/* 80137430 00133270  4B FB D5 D0 */	b Draw__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo
 /* 80137434 00133274  00 00 00 00 */	.4byte 0x00000000
 /* 80137438 00133278  00 00 00 00 */	.4byte 0x00000000
 /* 8013743C 0013327C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80137440
-lbl_80137440:
-/* 80137440 00133280  4B FB D5 E0 */	b lbl_800F4A20
+.global Animate__Q36nw4hbm3lyt6LayoutFUl
+Animate__Q36nw4hbm3lyt6LayoutFUl:
+/* 80137440 00133280  4B FB D5 E0 */	b Animate__Q34nw4r3lyt6LayoutFUl
 /* 80137444 00133284  00 00 00 00 */	.4byte 0x00000000
 /* 80137448 00133288  00 00 00 00 */	.4byte 0x00000000
 /* 8013744C 0013328C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80137450
-lbl_80137450:
+.global GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv
+GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv:
 /* 80137450 00133290  88 04 00 20 */	lbz r0, 0x20(r4)
 /* 80137454 00133294  28 00 00 01 */	cmplwi r0, 0x1
 /* 80137458 00133298  40 82 00 40 */	bne lbl_80137498
 /* 8013745C 0013329C  C0 84 00 1C */	lfs f4, 0x1c(r4)
-/* 80137460 001332A0  3C A0 80 41 */	lis r5, lbl_8040E1FC@ha
+/* 80137460 001332A0  3C A0 80 41 */	lis r5, "@9664_8040E1FC"@ha
 /* 80137464 001332A4  C0 24 00 18 */	lfs f1, 0x18(r4)
 /* 80137468 001332A8  FC 60 20 50 */	fneg f3, f4
-/* 8013746C 001332AC  C0 45 E1 FC */	lfs f2, lbl_8040E1FC@l(r5)
+/* 8013746C 001332AC  C0 45 E1 FC */	lfs f2, "@9664_8040E1FC"@l(r5)
 /* 80137470 001332B0  FC 00 08 50 */	fneg f0, f1
 /* 80137474 001332B4  EC A1 00 B2 */	fmuls f5, f1, f2
 /* 80137478 001332B8  EC 63 00 B2 */	fmuls f3, f3, f2
@@ -721,9 +721,9 @@ lbl_80137450:
 /* 80137494 001332D4  4E 80 00 20 */	blr
 .global lbl_80137498
 lbl_80137498:
-/* 80137498 001332D8  3C A0 80 41 */	lis r5, lbl_8040E1F8@ha
+/* 80137498 001332D8  3C A0 80 41 */	lis r5, "@9387"@ha
 /* 8013749C 001332DC  C0 44 00 1C */	lfs f2, 0x1c(r4)
-/* 801374A0 001332E0  C0 05 E1 F8 */	lfs f0, lbl_8040E1F8@l(r5)
+/* 801374A0 001332E0  C0 05 E1 F8 */	lfs f0, "@9387"@l(r5)
 /* 801374A4 001332E4  C0 24 00 18 */	lfs f1, 0x18(r4)
 /* 801374A8 001332E8  D0 03 00 00 */	stfs f0, 0x0(r3)
 /* 801374AC 001332EC  D0 03 00 04 */	stfs f0, 0x4(r3)
@@ -732,19 +732,19 @@ lbl_80137498:
 /* 801374B8 001332F8  4E 80 00 20 */	blr
 /* 801374BC 001332FC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_801374C0
-lbl_801374C0:
+.global "SetTagProcessor__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm2ut19TagProcessorBase<w>"
+"SetTagProcessor__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm2ut19TagProcessorBase<w>":
 /* 801374C0 00133300  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801374C4 00133304  7C 08 02 A6 */	mflr r0
 /* 801374C8 00133308  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801374CC 0013330C  39 61 00 30 */	addi r11, r1, 0x30
 /* 801374D0 00133310  4B EC FE 61 */	bl lbl_80007330
 /* 801374D4 00133314  83 23 00 10 */	lwz r25, 0x10(r3)
-/* 801374D8 00133318  3F 00 80 54 */	lis r24, lbl_80543788@ha
+/* 801374D8 00133318  3F 00 80 54 */	lis r24, typeInfo__Q36nw4hbm3lyt7TextBox@ha
 /* 801374DC 0013331C  7C 9F 23 78 */	mr r31, r4
 /* 801374E0 00133320  81 99 00 00 */	lwz r12, 0x0(r25)
 /* 801374E4 00133324  7F 23 CB 78 */	mr r3, r25
-/* 801374E8 00133328  3B 18 37 88 */	addi r24, r24, lbl_80543788@l
+/* 801374E8 00133328  3B 18 37 88 */	addi r24, r24, typeInfo__Q36nw4hbm3lyt7TextBox@l
 /* 801374EC 0013332C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801374F0 00133330  7D 89 03 A6 */	mtctr r12
 /* 801374F4 00133334  4E 80 04 21 */	bctrl
@@ -780,10 +780,10 @@ lbl_80137534:
 /* 8013753C 0013337C  93 E3 00 F4 */	stw r31, 0xf4(r3)
 .global lbl_80137540
 lbl_80137540:
-/* 80137540 00133380  3F 00 80 54 */	lis r24, lbl_80543788@ha
+/* 80137540 00133380  3F 00 80 54 */	lis r24, typeInfo__Q36nw4hbm3lyt7TextBox@ha
 /* 80137544 00133384  83 D9 00 14 */	lwz r30, 0x14(r25)
 /* 80137548 00133388  3B 79 00 14 */	addi r27, r25, 0x14
-/* 8013754C 0013338C  3B 18 37 88 */	addi r24, r24, lbl_80543788@l
+/* 8013754C 0013338C  3B 18 37 88 */	addi r24, r24, typeInfo__Q36nw4hbm3lyt7TextBox@l
 /* 80137550 00133390  48 00 00 F8 */	b lbl_80137648
 .global lbl_80137554
 lbl_80137554:
@@ -872,7 +872,7 @@ lbl_80137618:
 lbl_80137620:
 /* 80137620 00133460  7F E4 FB 78 */	mr r4, r31
 /* 80137624 00133464  38 7C FF FC */	addi r3, r28, -0x4
-/* 80137628 00133468  4B FF F5 F9 */	bl lbl_80136C20
+/* 80137628 00133468  4B FF F5 F9 */	bl "SetTagProcessorImpl__24@unnamed@lyt_layout_cpp@FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase<w>"
 /* 8013762C 0013346C  83 9C 00 00 */	lwz r28, 0x0(r28)
 .global lbl_80137630
 lbl_80137630:
@@ -896,8 +896,8 @@ lbl_80137648:
 /* 80137664 001334A4  4E 80 00 20 */	blr
 /* 80137668 001334A8  00 00 00 00 */	.4byte 0x00000000
 /* 8013766C 001334AC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_80137670
-lbl_80137670:
+.global BuildPaneObj__Q36nw4hbm3lyt6LayoutFlPCvRCQ36nw4hbm3lyt11ResBlockSet
+BuildPaneObj__Q36nw4hbm3lyt6LayoutFlPCvRCQ36nw4hbm3lyt11ResBlockSet:
 /* 80137670 001334B0  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80137674 001334B4  7C 08 02 A6 */	mflr r0
 /* 80137678 001334B8  90 01 00 54 */	stw r0, 0x54(r1)
@@ -920,16 +920,16 @@ lbl_80137670:
 /* 801376BC 001334FC  48 00 01 98 */	b lbl_80137854
 .global lbl_801376C0
 lbl_801376C0:
-/* 801376C0 00133500  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 801376C0 00133500  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 801376C4 00133504  7C 9F 23 78 */	mr r31, r4
-/* 801376C8 00133508  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
+/* 801376C8 00133508  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
 /* 801376CC 0013350C  38 80 00 D4 */	li r4, 0xd4
-/* 801376D0 00133510  4B F6 C1 21 */	bl lbl_800A37F0
+/* 801376D0 00133510  4B F6 C1 21 */	bl MEMAllocFromAllocator
 /* 801376D4 00133514  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801376D8 00133518  41 82 00 14 */	beq lbl_801376EC
 /* 801376DC 0013351C  41 82 01 7C */	beq lbl_80137858
 /* 801376E0 00133520  7F E4 FB 78 */	mr r4, r31
-/* 801376E4 00133524  48 00 33 9D */	bl lbl_8013AA80
+/* 801376E4 00133524  48 00 33 9D */	bl __ct__Q36nw4hbm3lyt4PaneFPCQ46nw4hbm3lyt3res4Pane
 /* 801376E8 00133528  48 00 01 70 */	b lbl_80137858
 .global lbl_801376EC
 lbl_801376EC:
@@ -938,24 +938,24 @@ lbl_801376EC:
 .global lbl_801376F4
 lbl_801376F4:
 /* 801376F4 00133534  81 05 00 00 */	lwz r8, 0x0(r5)
-/* 801376F8 00133538  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 801376F8 00133538  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 801376FC 0013353C  80 E5 00 04 */	lwz r7, 0x4(r5)
 /* 80137700 00133540  7C 9F 23 78 */	mr r31, r4
 /* 80137704 00133544  80 C5 00 08 */	lwz r6, 0x8(r5)
 /* 80137708 00133548  38 80 00 EC */	li r4, 0xec
 /* 8013770C 0013354C  80 05 00 0C */	lwz r0, 0xc(r5)
 /* 80137710 00133550  91 01 00 38 */	stw r8, 0x38(r1)
-/* 80137714 00133554  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
+/* 80137714 00133554  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
 /* 80137718 00133558  90 E1 00 3C */	stw r7, 0x3c(r1)
 /* 8013771C 0013355C  90 C1 00 40 */	stw r6, 0x40(r1)
 /* 80137720 00133560  90 01 00 44 */	stw r0, 0x44(r1)
-/* 80137724 00133564  4B F6 C0 CD */	bl lbl_800A37F0
+/* 80137724 00133564  4B F6 C0 CD */	bl MEMAllocFromAllocator
 /* 80137728 00133568  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8013772C 0013356C  41 82 00 18 */	beq lbl_80137744
 /* 80137730 00133570  41 82 01 28 */	beq lbl_80137858
 /* 80137734 00133574  7F E4 FB 78 */	mr r4, r31
 /* 80137738 00133578  38 A1 00 38 */	addi r5, r1, 0x38
-/* 8013773C 0013357C  48 00 44 05 */	bl lbl_8013BB40
+/* 8013773C 0013357C  48 00 44 05 */	bl __ct__Q36nw4hbm3lyt7PictureFPCQ46nw4hbm3lyt3res7PictureRCQ36nw4hbm3lyt11ResBlockSet
 /* 80137740 00133580  48 00 01 18 */	b lbl_80137858
 .global lbl_80137744
 lbl_80137744:
@@ -964,24 +964,24 @@ lbl_80137744:
 .global lbl_8013774C
 lbl_8013774C:
 /* 8013774C 0013358C  81 05 00 00 */	lwz r8, 0x0(r5)
-/* 80137750 00133590  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 80137750 00133590  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80137754 00133594  80 E5 00 04 */	lwz r7, 0x4(r5)
 /* 80137758 00133598  7C 9F 23 78 */	mr r31, r4
 /* 8013775C 0013359C  80 C5 00 08 */	lwz r6, 0x8(r5)
 /* 80137760 001335A0  38 80 01 00 */	li r4, 0x100
 /* 80137764 001335A4  80 05 00 0C */	lwz r0, 0xc(r5)
 /* 80137768 001335A8  91 01 00 28 */	stw r8, 0x28(r1)
-/* 8013776C 001335AC  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
+/* 8013776C 001335AC  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
 /* 80137770 001335B0  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 80137774 001335B4  90 C1 00 30 */	stw r6, 0x30(r1)
 /* 80137778 001335B8  90 01 00 34 */	stw r0, 0x34(r1)
-/* 8013777C 001335BC  4B F6 C0 75 */	bl lbl_800A37F0
+/* 8013777C 001335BC  4B F6 C0 75 */	bl MEMAllocFromAllocator
 /* 80137780 001335C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80137784 001335C4  41 82 00 18 */	beq lbl_8013779C
 /* 80137788 001335C8  41 82 00 D0 */	beq lbl_80137858
 /* 8013778C 001335CC  7F E4 FB 78 */	mr r4, r31
 /* 80137790 001335D0  38 A1 00 28 */	addi r5, r1, 0x28
-/* 80137794 001335D4  48 00 49 3D */	bl lbl_8013C0D0
+/* 80137794 001335D4  48 00 49 3D */	bl __ct__Q36nw4hbm3lyt7TextBoxFPCQ46nw4hbm3lyt3res7TextBoxRCQ36nw4hbm3lyt11ResBlockSet
 /* 80137798 001335D8  48 00 00 C0 */	b lbl_80137858
 .global lbl_8013779C
 lbl_8013779C:
@@ -990,24 +990,24 @@ lbl_8013779C:
 .global lbl_801377A4
 lbl_801377A4:
 /* 801377A4 001335E4  81 05 00 00 */	lwz r8, 0x0(r5)
-/* 801377A8 001335E8  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 801377A8 001335E8  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 801377AC 001335EC  80 E5 00 04 */	lwz r7, 0x4(r5)
 /* 801377B0 001335F0  7C 9F 23 78 */	mr r31, r4
 /* 801377B4 001335F4  80 C5 00 08 */	lwz r6, 0x8(r5)
 /* 801377B8 001335F8  38 80 01 04 */	li r4, 0x104
 /* 801377BC 001335FC  80 05 00 0C */	lwz r0, 0xc(r5)
 /* 801377C0 00133600  91 01 00 18 */	stw r8, 0x18(r1)
-/* 801377C4 00133604  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
+/* 801377C4 00133604  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
 /* 801377C8 00133608  90 E1 00 1C */	stw r7, 0x1c(r1)
 /* 801377CC 0013360C  90 C1 00 20 */	stw r6, 0x20(r1)
 /* 801377D0 00133610  90 01 00 24 */	stw r0, 0x24(r1)
-/* 801377D4 00133614  4B F6 C0 1D */	bl lbl_800A37F0
+/* 801377D4 00133614  4B F6 C0 1D */	bl MEMAllocFromAllocator
 /* 801377D8 00133618  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801377DC 0013361C  41 82 00 18 */	beq lbl_801377F4
 /* 801377E0 00133620  41 82 00 78 */	beq lbl_80137858
 /* 801377E4 00133624  7F E4 FB 78 */	mr r4, r31
 /* 801377E8 00133628  38 A1 00 18 */	addi r5, r1, 0x18
-/* 801377EC 0013362C  48 00 5D 05 */	bl lbl_8013D4F0
+/* 801377EC 0013362C  48 00 5D 05 */	bl __ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet
 /* 801377F0 00133630  48 00 00 68 */	b lbl_80137858
 .global lbl_801377F4
 lbl_801377F4:
@@ -1016,24 +1016,24 @@ lbl_801377F4:
 .global lbl_801377FC
 lbl_801377FC:
 /* 801377FC 0013363C  81 05 00 00 */	lwz r8, 0x0(r5)
-/* 80137800 00133640  3C 60 80 54 */	lis r3, lbl_80543770@ha
+/* 80137800 00133640  3C 60 80 54 */	lis r3, mspAllocator__Q36nw4hbm3lyt6Layout@ha
 /* 80137804 00133644  80 E5 00 04 */	lwz r7, 0x4(r5)
 /* 80137808 00133648  7C 9F 23 78 */	mr r31, r4
 /* 8013780C 0013364C  80 C5 00 08 */	lwz r6, 0x8(r5)
 /* 80137810 00133650  38 80 00 D4 */	li r4, 0xd4
 /* 80137814 00133654  80 05 00 0C */	lwz r0, 0xc(r5)
 /* 80137818 00133658  91 01 00 08 */	stw r8, 0x8(r1)
-/* 8013781C 0013365C  80 63 37 70 */	lwz r3, lbl_80543770@l(r3)
+/* 8013781C 0013365C  80 63 37 70 */	lwz r3, mspAllocator__Q36nw4hbm3lyt6Layout@l(r3)
 /* 80137820 00133660  90 E1 00 0C */	stw r7, 0xc(r1)
 /* 80137824 00133664  90 C1 00 10 */	stw r6, 0x10(r1)
 /* 80137828 00133668  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8013782C 0013366C  4B F6 BF C5 */	bl lbl_800A37F0
+/* 8013782C 0013366C  4B F6 BF C5 */	bl MEMAllocFromAllocator
 /* 80137830 00133670  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80137834 00133674  41 82 00 18 */	beq lbl_8013784C
 /* 80137838 00133678  41 82 00 20 */	beq lbl_80137858
 /* 8013783C 0013367C  7F E4 FB 78 */	mr r4, r31
 /* 80137840 00133680  38 A1 00 08 */	addi r5, r1, 0x8
-/* 80137844 00133684  4B FF E2 ED */	bl lbl_80135B30
+/* 80137844 00133684  4B FF E2 ED */	bl __ct__Q36nw4hbm3lyt8BoundingFPCQ46nw4hbm3lyt3res8BoundingRCQ36nw4hbm3lyt11ResBlockSet
 /* 80137848 00133688  48 00 00 10 */	b lbl_80137858
 .global lbl_8013784C
 lbl_8013784C:

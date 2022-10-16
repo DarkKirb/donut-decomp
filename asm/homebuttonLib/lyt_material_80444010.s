@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80444010
-lbl_80444010:
+.global "@LOCAL@SetupGX__Q36nw4hbm3lyt8MaterialFbUc@kColSels"
+"@LOCAL@SetupGX__Q36nw4hbm3lyt8MaterialFbUc@kColSels":
 
 	.4byte 0x0000001F
 	.4byte 0x0000001B
@@ -13,8 +13,8 @@ lbl_80444010:
 	.4byte 0x00000016
 	.4byte 0x00000012
 
-.global lbl_80444030
-lbl_80444030:
+.global "@LOCAL@SetupGX__Q36nw4hbm3lyt8MaterialFbUc@kAlpSels@0"
+"@LOCAL@SetupGX__Q36nw4hbm3lyt8MaterialFbUc@kAlpSels@0":
 
 	.4byte 0x0000001F
 	.4byte 0x0000001B
@@ -25,22 +25,22 @@ lbl_80444030:
 	.4byte 0x00000016
 	.4byte 0x00000012
 
-.global lbl_80444050
-lbl_80444050:
+.global __vt__Q36nw4hbm3lyt8Material
+__vt__Q36nw4hbm3lyt8Material:
 
-	.4byte lbl_80444090
+	.4byte __RTTI__Q36nw4hbm3lyt8Material
 	.4byte 0
-	.4byte lbl_80138D40
-	.4byte lbl_801399D0
-	.4byte lbl_8013A7F0
-	.4byte lbl_8013A800
-	.4byte lbl_8013A880
-	.4byte lbl_8013A890
-	.4byte lbl_8013A950
-	.4byte lbl_8013A960
+	.4byte __dt__Q36nw4hbm3lyt8MaterialFv
+	.4byte SetupGX__Q36nw4hbm3lyt8MaterialFbUc
+	.4byte BindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.4byte UnbindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.4byte UnbindAllAnimation__Q36nw4hbm3lyt8MaterialFv
+	.4byte Animate__Q36nw4hbm3lyt8MaterialFv
+	.4byte FindAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform
+	.4byte SetAnimationEnable__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransformb
 
-.global lbl_80444078
-lbl_80444078:
+.global "@8504"
+"@8504":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -49,8 +49,8 @@ lbl_80444078:
 	.4byte 0x65726961
 	.4byte 0x6C000000
 
-.global lbl_80444090
-lbl_80444090:
+.global __RTTI__Q36nw4hbm3lyt8Material
+__RTTI__Q36nw4hbm3lyt8Material:
 
-	.4byte lbl_80444078
+	.4byte "@8504"
 	.4byte 0

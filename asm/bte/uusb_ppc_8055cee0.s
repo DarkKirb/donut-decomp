@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CEE0
-lbl_8055CEE0:
+.global uusb_g_usb_devid_found
+uusb_g_usb_devid_found:
 	.skip 0x1
 
-.global lbl_8055CEE1
-lbl_8055CEE1:
+.global uusb_g_trace_state_initialized
+uusb_g_trace_state_initialized:
 	.skip 0x3
 
-.global lbl_8055CEE4
-lbl_8055CEE4:
+.global __ntd_ohci
+__ntd_ohci:
 	.skip 0x4
 
-.global lbl_8055CEE8
-lbl_8055CEE8:
+.global __ntd_ohci_init_flag
+__ntd_ohci_init_flag:
 	.skip 0x4
 
-.global lbl_8055CEEC
-lbl_8055CEEC:
+.global __ntd_pid_vid_specified
+__ntd_pid_vid_specified:
 	.skip 0x4
 
-.global lbl_8055CEF0
-lbl_8055CEF0:
+.global __ntd_vid
+__ntd_vid:
 	.skip 0x4
 
-.global lbl_8055CEF4
-lbl_8055CEF4:
+.global __ntd_pid
+__ntd_pid:
 	.skip 0x4

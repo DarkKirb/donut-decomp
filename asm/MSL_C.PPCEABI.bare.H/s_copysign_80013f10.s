@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80013F10
-lbl_80013F10:
+.global copysign
+copysign:
 /* 80013F10 0000FD50  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80013F14 0000FD54  D8 21 00 08 */	stfd f1, 0x8(r1)
 /* 80013F18 0000FD58  D8 41 00 10 */	stfd f2, 0x10(r1)

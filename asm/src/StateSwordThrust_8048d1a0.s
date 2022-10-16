@@ -1,32 +1,32 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048D1A0
-lbl_8048D1A0:
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword19StateSwordThrustEnd,PQ43scn4step4hero4Hero>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword19StateSwordThrustEnd,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803893CC
-	.4byte lbl_80389390
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword19StateSwordThrustEnd,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword19StateSwordThrustEnd,PQ43scn4step4hero4Hero>Fv"
 
-.global lbl_8048D1B0
-lbl_8048D1B0:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_803893C8
-	.4byte lbl_803893AC
-
-.global lbl_8048D1C0
-lbl_8048D1C0:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword16StateSwordThrust,PQ43scn4step4hero4Hero>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword16StateSwordThrust,PQ43scn4step4hero4Hero>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80389078
-	.4byte lbl_803890F4
-	.4byte lbl_80389298
-	.4byte lbl_8035550C
-	.4byte lbl_8038938C
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword16StateSwordThrust,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero5sword16StateSwordThrust,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero5sword16StateSwordThrust
+__vt__Q53scn4step4hero5sword16StateSwordThrust:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero5sword16StateSwordThrustFv
+	.4byte procAnim__Q53scn4step4hero5sword16StateSwordThrustFv
+	.4byte procMove__Q53scn4step4hero5sword16StateSwordThrustFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero5sword16StateSwordThrustFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

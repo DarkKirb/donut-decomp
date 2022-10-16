@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000D918
-lbl_8000D918:
+.global raise
+raise:
 /* 8000D918 00009758  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000D91C 0000975C  7C 08 02 A6 */	mflr r0
 /* 8000D920 00009760  90 01 00 14 */	stw r0, 0x14(r1)
@@ -16,9 +16,9 @@ lbl_8000D918:
 /* 8000D940 00009780  48 00 00 68 */	b lbl_8000D9A8
 .global lbl_8000D944
 lbl_8000D944:
-/* 8000D944 00009784  3C 80 80 49 */	lis r4, lbl_80496BB8@ha
+/* 8000D944 00009784  3C 80 80 49 */	lis r4, signal_funcs@ha
 /* 8000D948 00009788  54 05 10 3A */	slwi r5, r0, 2
-/* 8000D94C 0000978C  38 84 6B B8 */	addi r4, r4, lbl_80496BB8@l
+/* 8000D94C 0000978C  38 84 6B B8 */	addi r4, r4, signal_funcs@l
 /* 8000D950 00009790  7F E4 28 2E */	lwzx r31, r4, r5
 /* 8000D954 00009794  28 1F 00 01 */	cmplwi r31, 0x1
 /* 8000D958 00009798  41 82 00 0C */	beq lbl_8000D964
@@ -41,7 +41,7 @@ lbl_8000D984:
 /* 8000D984 000097C4  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8000D988 000097C8  40 82 00 0C */	bne lbl_8000D994
 /* 8000D98C 000097CC  38 60 00 00 */	li r3, 0x0
-/* 8000D990 000097D0  48 01 AC 11 */	bl func_800285A0
+/* 8000D990 000097D0  48 01 AC 11 */	bl exit
 .global lbl_8000D994
 lbl_8000D994:
 /* 8000D994 000097D4  7F EC FB 78 */	mr r12, r31

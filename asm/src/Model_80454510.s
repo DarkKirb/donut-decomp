@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80454510
-lbl_80454510:
+.global "@56416_80454510"
+"@56416_80454510":
 
 	.4byte 0x76656374
 	.4byte 0x6F72206C
@@ -11,30 +11,30 @@ lbl_80454510:
 	.4byte 0x726F7200
 	.4byte 0
 
-.global lbl_80454528
-lbl_80454528:
+.global __vt__Q33g3d5Model14ScnObjCallback
+__vt__Q33g3d5Model14ScnObjCallback:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80190270
-	.4byte lbl_801903A4
-	.4byte lbl_800E9D20
-	.4byte lbl_801904C4
-	.4byte lbl_800EC990
-	.4byte lbl_800EC9A0
+	.4byte __dt__Q33g3d5Model14ScnObjCallbackFv
+	.4byte ExecCallback_CALC_WORLD__Q33g3d5Model14ScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_VIEW__Q33g3d5Model14ScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
 
-.global lbl_80454548
-lbl_80454548:
+.global __vt__Q33g3d5Model17CalcWorldCallback
+__vt__Q33g3d5Model17CalcWorldCallback:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8018FFB0
-	.4byte lbl_80190024
-	.4byte lbl_800E3740
-	.4byte lbl_800E3750
+	.4byte __dt__Q33g3d5Model17CalcWorldCallbackFv
+	.4byte ExecCallbackA__Q33g3d5Model17CalcWorldCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.4byte ExecCallbackB__Q34nw4r3g3d18ICalcWorldCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.4byte ExecCallbackC__Q34nw4r3g3d18ICalcWorldCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
 
-.global lbl_80454560
-lbl_80454560:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -46,15 +46,15 @@ lbl_80454560:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_80454584
-lbl_80454584:
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_80454590
-lbl_80454590:
+.global "@STRING@__ml__Q44nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
@@ -66,15 +66,15 @@ lbl_80454590:
 	.4byte 0x4C202870
 	.4byte 0x29000000
 
-.global lbl_804545B4
-lbl_804545B4:
+.global "@STRING@__ml__Q44nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>8IteratorCFv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_804545C0
-lbl_804545C0:
+.global "@STRING@GetBack__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>Fv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -86,15 +86,15 @@ lbl_804545C0:
 	.4byte 0x74792829
 	.4byte 0
 
-.global lbl_804545E4
-lbl_804545E4:
+.global "@STRING@GetBack__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut72LinkList<Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>,0>Fv":
 
 	.4byte 0x4C696E6B
 	.4byte 0x4C697374
 	.4byte 0x2E680000
 
-.global lbl_804545F0
-lbl_804545F0:
+.global "@STRING@ref__Q34nw4r3g3d6ResMatCFv@0"
+"@STRING@ref__Q34nw4r3g3d6ResMatCFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -105,16 +105,16 @@ lbl_804545F0:
 	.4byte 0x2E000000
 	.4byte 0
 
-.global lbl_80454610
-lbl_80454610:
+.global "@STRING@ref__Q34nw4r3g3d6ResMatCFv"
+"@STRING@ref__Q34nw4r3g3d6ResMatCFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736D
 	.4byte 0x61745F61
 	.4byte 0x632E6800
 
-.global lbl_80454620
-lbl_80454620:
+.global "@STRING@__ct__Q34nw4r3g3d7ResNodeFPv@0"
+"@STRING@__ct__Q34nw4r3g3d7ResNodeFPv@0":
 
 	.4byte 0x4E573452
 	.4byte 0x3A466169
@@ -127,8 +127,8 @@ lbl_80454620:
 	.4byte 0x20307833
 	.4byte 0x29000000
 
-.global lbl_80454648
-lbl_80454648:
+.global "@STRING@__ct__Q34nw4r3g3d7ResNodeFPv"
+"@STRING@__ct__Q34nw4r3g3d7ResNodeFPv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736E
@@ -136,8 +136,8 @@ lbl_80454648:
 	.4byte 0x61632E68
 	.4byte 0
 
-.global lbl_8045465C
-lbl_8045465C:
+.global "@STRING@ref__Q34nw4r3g3d7ResNodeFv@0"
+"@STRING@ref__Q34nw4r3g3d7ResNodeFv@0":
 
 	.4byte 0x25733A3A
 	.4byte 0x25733A20
@@ -147,8 +147,8 @@ lbl_8045465C:
 	.4byte 0x616C6964
 	.4byte 0x2E000000
 
-.global lbl_80454678
-lbl_80454678:
+.global "@STRING@ref__Q34nw4r3g3d7ResNodeFv"
+"@STRING@ref__Q34nw4r3g3d7ResNodeFv":
 
 	.4byte 0x6733645F
 	.4byte 0x7265736E

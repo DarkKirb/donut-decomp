@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8011FE90
-lbl_8011FE90:
+.global ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv:
 /* 8011FE90 0011BCD0  80 E3 00 00 */	lwz r7, 0x0(r3)
 /* 8011FE94 0011BCD4  88 C7 00 00 */	lbz r6, 0x0(r7)
 /* 8011FE98 0011BCD8  54 C0 06 31 */	rlwinm. r0, r6, 0, 24, 24
@@ -42,8 +42,8 @@ lbl_8011FF00:
 /* 8011FF08 0011BD48  00 00 00 00 */	.4byte 0x00000000
 /* 8011FF0C 0011BD4C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8011FF10
-lbl_8011FF10:
+.global ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv:
 /* 8011FF10 0011BD50  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 8011FF14 0011BD54  7C 66 1B 78 */	mr r6, r3
 /* 8011FF18 0011BD58  80 83 00 00 */	lwz r4, 0x0(r3)
@@ -53,8 +53,8 @@ lbl_8011FF10:
 /* 8011FF28 0011BD68  4E 80 00 20 */	blr
 /* 8011FF2C 0011BD6C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8011FF30
-lbl_8011FF30:
+.global ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv:
 /* 8011FF30 0011BD70  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 8011FF34 0011BD74  7C 66 1B 78 */	mr r6, r3
 /* 8011FF38 0011BD78  80 83 00 00 */	lwz r4, 0x0(r3)
@@ -64,8 +64,8 @@ lbl_8011FF30:
 /* 8011FF48 0011BD88  4E 80 00 20 */	blr
 /* 8011FF4C 0011BD8C  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_8011FF50
-lbl_8011FF50:
+.global ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv
+ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv:
 /* 8011FF50 0011BD90  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 8011FF54 0011BD94  38 00 00 00 */	li r0, 0x0
 /* 8011FF58 0011BD98  88 A4 00 00 */	lbz r5, 0x0(r4)

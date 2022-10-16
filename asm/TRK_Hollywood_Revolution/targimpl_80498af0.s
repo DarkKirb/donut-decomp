@@ -1,26 +1,26 @@
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
-.global lbl_80498AF0
-lbl_80498AF0:
+.global gTRKRestoreFlags
+gTRKRestoreFlags:
 	.skip 0x10
 
-.global lbl_80498B00
-lbl_80498B00:
+.global gTRKStepStatus
+gTRKStepStatus:
 	.skip 0x18
 
-.global lbl_80498B18
-lbl_80498B18:
+.global gTRKSaveState
+gTRKSaveState:
 	.skip 0x98
 
-.global lbl_80498BB0
-lbl_80498BB0:
+.global TRKvalue128_temp
+TRKvalue128_temp:
 	.skip 0x10
 
-.global lbl_80498BC0
-lbl_80498BC0:
+.global gTRKState
+gTRKState:
 	.skip 0xA8
 
-.global lbl_80498C68
-lbl_80498C68:
+.global gTRKCPUState
+gTRKCPUState:
 	.skip 0x438

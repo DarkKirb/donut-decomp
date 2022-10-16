@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80407C50
-lbl_80407C50:
+.global ConfDirName
+ConfDirName:
 
 	.4byte 0x2F736861
 	.4byte 0x72656432
 	.4byte 0x2F737973
 	.4byte 0
 
-.global lbl_80407C60
-lbl_80407C60:
+.global ConfFileName
+ConfFileName:
 
 	.4byte 0x2F736861
 	.4byte 0x72656432
@@ -19,8 +19,8 @@ lbl_80407C60:
 	.4byte 0x434F4E46
 	.4byte 0
 
-.global lbl_80407C78
-lbl_80407C78:
+.global ProductInfoFileName
+ProductInfoFileName:
 
 	.4byte 0x2F746974
 	.4byte 0x6C652F30

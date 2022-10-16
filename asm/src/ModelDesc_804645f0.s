@@ -1,22 +1,20 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804645F0
-lbl_804645F0:
+.global "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"
+"T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
-	.4byte lbl_8025C810
-	.4byte lbl_802522B8
+	.4byte Create__Q53scn4step4boss6whispy9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss10gigantedge9ModelDescFUlb
 	.4byte 0
-	.4byte lbl_80259DE4
-	.4byte lbl_8025388C
-	.4byte lbl_80260D68
-	.4byte lbl_80237C08
-	.4byte lbl_8024D75C
+	.4byte Create__Q53scn4step4boss13watergalboros9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss8kingsdoo9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss9zankibble9ModelDescFUlb
+	.4byte CreateNormal__Q53scn4step4boss7bonkers9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss6dubior9ModelDescFUlb
 	.4byte 0
-	.4byte lbl_80255AC8
-	.4byte 0
-	.4byte 0
+	.4byte Create__Q53scn4step4boss9moundeath9ModelDescFUlb
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -26,14 +24,16 @@ lbl_804645F0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8023DAC8
-	.4byte lbl_8024B6D4
-	.4byte lbl_80247C58
-	.4byte lbl_802486A8
-	.4byte lbl_80249D44
+	.4byte 0
+	.4byte 0
+	.4byte Create__Q53scn4step4boss15challengemaster9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss10creditroah9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss12creditdedede9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss9creditdee9ModelDescFUlb
+	.4byte Create__Q53scn4step4boss10creditmeta9ModelDescFUlb
 
-.global lbl_8046465C
-lbl_8046465C:
+.global "@50315_8046465C"
+"@50315_8046465C":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570

@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804941C0
-lbl_804941C0:
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7rollexp9StateMain,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7rollexp9StateMain,PQ43scn4step6weapon6Weapon>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DEB3C
-	.4byte lbl_803DEB1C
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7rollexp9StateMain,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step6weapon7rollexp9StateMain,PQ43scn4step6weapon6Weapon>Fv"
 
-.global lbl_804941D0
-lbl_804941D0:
+.global __vt__Q53scn4step6weapon7rollexp6Custom
+__vt__Q53scn4step6weapon7rollexp6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DEB18
-	.4byte lbl_803DEB38
-	.4byte lbl_803DEA94
-	.4byte lbl_803D3768
-	.4byte lbl_803D376C
+	.4byte GetRuntimeTypeInfo__Q53scn4step6weapon7rollexp6CustomCFv
+	.4byte __dt__Q53scn4step6weapon7rollexp6CustomFv
+	.4byte onInit__Q53scn4step6weapon7rollexp6CustomFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
 	.4byte 0

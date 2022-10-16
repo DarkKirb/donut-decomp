@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802F7294
-lbl_802F7294:
+.global isEqualsMapAndScene__Q43scn4step7gimmick12StepMoveInfoCFRCQ43scn4step7gimmick12StepMoveInfo
+isEqualsMapAndScene__Q43scn4step7gimmick12StepMoveInfoCFRCQ43scn4step7gimmick12StepMoveInfo:
 /* 802F7294 002F30D4  38 C0 00 00 */	li r6, 0x0
 /* 802F7298 002F30D8  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 802F729C 002F30DC  80 04 00 00 */	lwz r0, 0x0(r4)

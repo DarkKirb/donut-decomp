@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8030EB08
-lbl_8030EB08:
+.global __ct__Q53scn4step7gimmick9enemylist7ManagerFRQ33scn4step9Component
+__ct__Q53scn4step7gimmick9enemylist7ManagerFRQ33scn4step9Component:
 /* 8030EB08 0030A948  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8030EB0C 0030A94C  7C 08 02 A6 */	mflr r0
 /* 8030EB10 0030A950  90 01 00 34 */	stw r0, 0x34(r1)
@@ -11,8 +11,8 @@ lbl_8030EB08:
 /* 8030EB1C 0030A95C  7C 7A 1B 78 */	mr r26, r3
 /* 8030EB20 0030A960  7C 9B 23 78 */	mr r27, r4
 /* 8030EB24 0030A964  7F 63 DB 78 */	mr r3, r27
-/* 8030EB28 0030A968  4B F1 21 65 */	bl lbl_80220C8C
-/* 8030EB2C 0030A96C  48 0B BC 2D */	bl lbl_803CA758
+/* 8030EB28 0030A968  4B F1 21 65 */	bl mapMemManager__Q33scn4step9ComponentFv
+/* 8030EB2C 0030A96C  48 0B BC 2D */	bl allocator__Q43scn4step3map10MemManagerFv
 /* 8030EB30 0030A970  90 7A 00 00 */	stw r3, 0x0(r26)
 /* 8030EB34 0030A974  38 80 00 00 */	li r4, 0x0
 /* 8030EB38 0030A978  90 9A 00 04 */	stw r4, 0x4(r26)
@@ -25,14 +25,14 @@ lbl_8030EB48:
 /* 8030EB4C 0030A98C  94 83 00 08 */	stwu r4, 0x8(r3)
 /* 8030EB50 0030A990  42 00 FF F8 */	bdnz lbl_8030EB48
 /* 8030EB54 0030A994  7F 63 DB 78 */	mr r3, r27
-/* 8030EB58 0030A998  4B ED BE 99 */	bl lbl_801EA9F0
-/* 8030EB5C 0030A99C  48 0B AF 3D */	bl lbl_803C9A98
+/* 8030EB58 0030A998  4B ED BE 99 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 8030EB5C 0030A99C  48 0B AF 3D */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 8030EB60 0030A9A0  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8030EB64 0030A9A4  38 61 00 08 */	addi r3, r1, 0x8
-/* 8030EB68 0030A9A8  48 0B A5 C5 */	bl lbl_803C912C
+/* 8030EB68 0030A9A8  48 0B A5 C5 */	bl gimmickDataAccessor__Q43scn4step3map12DataAccessorCFv
 /* 8030EB6C 0030A9AC  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8030EB70 0030A9B0  38 61 00 0C */	addi r3, r1, 0xc
-/* 8030EB74 0030A9B4  48 0B B2 9D */	bl lbl_803C9E10
+/* 8030EB74 0030A9B4  48 0B B2 9D */	bl enemyListEntryCount__Q43scn4step3map19GimmickDataAccessorCFv
 /* 8030EB78 0030A9B8  7C 7D 1B 78 */	mr r29, r3
 /* 8030EB7C 0030A9BC  28 03 00 18 */	cmplwi r3, 0x18
 /* 8030EB80 0030A9C0  40 81 00 08 */	ble lbl_8030EB88
@@ -47,23 +47,23 @@ lbl_8030EB88:
 lbl_8030EB98:
 /* 8030EB98 0030A9D8  38 61 00 0C */	addi r3, r1, 0xc
 /* 8030EB9C 0030A9DC  7F 84 E3 78 */	mr r4, r28
-/* 8030EBA0 0030A9E0  48 0B B2 79 */	bl lbl_803C9E18
+/* 8030EBA0 0030A9E0  48 0B B2 79 */	bl enemyListEntryAt__Q43scn4step3map19GimmickDataAccessorCFUl
 /* 8030EBA4 0030A9E4  7C 7F 1B 78 */	mr r31, r3
 /* 8030EBA8 0030A9E8  38 60 00 28 */	li r3, 0x28
 /* 8030EBAC 0030A9EC  80 9A 00 00 */	lwz r4, 0x0(r26)
-/* 8030EBB0 0030A9F0  4B EB 0B 5D */	bl lbl_801BF70C
+/* 8030EBB0 0030A9F0  4B EB 0B 5D */	bl __nw__FUlRQ23mem10IAllocator
 /* 8030EBB4 0030A9F4  7C 7E 1B 78 */	mr r30, r3
 /* 8030EBB8 0030A9F8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8030EBBC 0030A9FC  41 82 00 14 */	beq lbl_8030EBD0
 /* 8030EBC0 0030AA00  7F E4 FB 78 */	mr r4, r31
 /* 8030EBC4 0030AA04  7F 65 DB 78 */	mr r5, r27
-/* 8030EBC8 0030AA08  4B FF FE 99 */	bl lbl_8030EA60
+/* 8030EBC8 0030AA08  4B FF FE 99 */	bl __ct__Q53scn4step7gimmick9enemylist9EnemyListFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 /* 8030EBCC 0030AA0C  7C 7E 1B 78 */	mr r30, r3
 .global lbl_8030EBD0
 lbl_8030EBD0:
 /* 8030EBD0 0030AA10  38 7A 00 08 */	addi r3, r26, 0x8
 /* 8030EBD4 0030AA14  80 9A 00 04 */	lwz r4, 0x4(r26)
-/* 8030EBD8 0030AA18  4B FE A9 BD */	bl lbl_802F9594
+/* 8030EBD8 0030AA18  4B FE A9 BD */	bl "__vc__Q33hel6common36Array<PQ43scn4step7gimmick5Model,24>FUl"
 /* 8030EBDC 0030AA1C  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 8030EBE0 0030AA20  80 7A 00 04 */	lwz r3, 0x4(r26)
 /* 8030EBE4 0030AA24  38 03 00 01 */	addi r0, r3, 0x1
@@ -82,8 +82,8 @@ lbl_8030EBF8:
 /* 8030EC08 0030AA48  7C 08 03 A6 */	mtlr r0
 /* 8030EC0C 0030AA4C  38 21 00 30 */	addi r1, r1, 0x30
 /* 8030EC10 0030AA50  4E 80 00 20 */	blr
-.global lbl_8030EC14
-lbl_8030EC14:
+.global "__dt__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>Fv"
+"__dt__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>Fv":
 /* 8030EC14 0030AA54  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030EC18 0030AA58  7C 08 02 A6 */	mflr r0
 /* 8030EC1C 0030AA5C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -100,11 +100,11 @@ lbl_8030EC40:
 /* 8030EC40 0030AA80  3B A3 FF FF */	addi r29, r3, -0x1
 /* 8030EC44 0030AA84  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8030EC48 0030AA88  7F A4 EB 78 */	mr r4, r29
-/* 8030EC4C 0030AA8C  4B FE A9 49 */	bl lbl_802F9594
+/* 8030EC4C 0030AA8C  4B FE A9 49 */	bl "__vc__Q33hel6common36Array<PQ43scn4step7gimmick5Model,24>FUl"
 /* 8030EC50 0030AA90  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 8030EC54 0030AA94  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8030EC58 0030AA98  7F A4 EB 78 */	mr r4, r29
-/* 8030EC5C 0030AA9C  4B FE A9 39 */	bl lbl_802F9594
+/* 8030EC5C 0030AA9C  4B FE A9 39 */	bl "__vc__Q33hel6common36Array<PQ43scn4step7gimmick5Model,24>FUl"
 /* 8030EC60 0030AAA0  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 8030EC64 0030AAA4  80 7B 00 04 */	lwz r3, 0x4(r27)
 /* 8030EC68 0030AAA8  38 03 FF FF */	addi r0, r3, -0x1
@@ -113,7 +113,7 @@ lbl_8030EC40:
 /* 8030EC74 0030AAB4  41 82 00 10 */	beq lbl_8030EC84
 /* 8030EC78 0030AAB8  38 7E 00 04 */	addi r3, r30, 0x4
 /* 8030EC7C 0030AABC  38 80 FF FF */	li r4, -0x1
-/* 8030EC80 0030AAC0  4B E9 11 BD */	bl lbl_8019FE3C
+/* 8030EC80 0030AAC0  4B E9 11 BD */	bl __dt__Q33hel3geo4RectFv
 .global lbl_8030EC84
 lbl_8030EC84:
 /* 8030EC84 0030AAC4  80 7B 00 00 */	lwz r3, 0x0(r27)
@@ -129,12 +129,12 @@ lbl_8030EC9C:
 /* 8030ECA4 0030AAE4  40 82 FF 9C */	bne lbl_8030EC40
 /* 8030ECA8 0030AAE8  7F 63 DB 78 */	mr r3, r27
 /* 8030ECAC 0030AAEC  38 80 00 00 */	li r4, 0x0
-/* 8030ECB0 0030AAF0  4B E6 6E B9 */	bl lbl_80175B68
+/* 8030ECB0 0030AAF0  4B E6 6E B9 */	bl __dt__Q23scn6ISceneFv
 /* 8030ECB4 0030AAF4  7F 80 07 34 */	extsh r0, r28
 /* 8030ECB8 0030AAF8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8030ECBC 0030AAFC  40 81 00 0C */	ble lbl_8030ECC8
 /* 8030ECC0 0030AB00  7F 63 DB 78 */	mr r3, r27
-/* 8030ECC4 0030AB04  4B EB 0A 51 */	bl lbl_801BF714
+/* 8030ECC4 0030AB04  4B EB 0A 51 */	bl __dl__FPv
 .global lbl_8030ECC8
 lbl_8030ECC8:
 /* 8030ECC8 0030AB08  7F 63 DB 78 */	mr r3, r27
@@ -144,8 +144,8 @@ lbl_8030ECC8:
 /* 8030ECD8 0030AB18  7C 08 03 A6 */	mtlr r0
 /* 8030ECDC 0030AB1C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8030ECE0 0030AB20  4E 80 00 20 */	blr
-.global lbl_8030ECE4
-lbl_8030ECE4:
+.global __dt__Q53scn4step7gimmick9enemylist7ManagerFv
+__dt__Q53scn4step7gimmick9enemylist7ManagerFv:
 /* 8030ECE4 0030AB24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8030ECE8 0030AB28  7C 08 02 A6 */	mflr r0
 /* 8030ECEC 0030AB2C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -156,12 +156,12 @@ lbl_8030ECE4:
 /* 8030ED00 0030AB40  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8030ED04 0030AB44  41 82 00 20 */	beq lbl_8030ED24
 /* 8030ED08 0030AB48  38 80 FF FF */	li r4, -0x1
-/* 8030ED0C 0030AB4C  4B FF FF 09 */	bl lbl_8030EC14
+/* 8030ED0C 0030AB4C  4B FF FF 09 */	bl "__dt__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>Fv"
 /* 8030ED10 0030AB50  7F E0 07 34 */	extsh r0, r31
 /* 8030ED14 0030AB54  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8030ED18 0030AB58  40 81 00 0C */	ble lbl_8030ED24
 /* 8030ED1C 0030AB5C  7F C3 F3 78 */	mr r3, r30
-/* 8030ED20 0030AB60  4B EB 09 F5 */	bl lbl_801BF714
+/* 8030ED20 0030AB60  4B EB 09 F5 */	bl __dl__FPv
 .global lbl_8030ED24
 lbl_8030ED24:
 /* 8030ED24 0030AB64  7F C3 F3 78 */	mr r3, r30
@@ -171,8 +171,8 @@ lbl_8030ED24:
 /* 8030ED34 0030AB74  7C 08 03 A6 */	mtlr r0
 /* 8030ED38 0030AB78  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030ED3C 0030AB7C  4E 80 00 20 */	blr
-.global lbl_8030ED40
-lbl_8030ED40:
+.global isInEnemyListArea__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2
+isInEnemyListArea__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2:
 /* 8030ED40 0030AB80  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8030ED44 0030AB84  7C 08 02 A6 */	mflr r0
 /* 8030ED48 0030AB88  90 01 00 34 */	stw r0, 0x34(r1)
@@ -187,26 +187,26 @@ lbl_8030ED40:
 lbl_8030ED68:
 /* 8030ED68 0030ABA8  7F 83 E3 78 */	mr r3, r28
 /* 8030ED6C 0030ABAC  7F C4 F3 78 */	mr r4, r30
-/* 8030ED70 0030ABB0  48 00 00 75 */	bl lbl_8030EDE4
+/* 8030ED70 0030ABB0  48 00 00 75 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
 /* 8030ED74 0030ABB4  7C 64 1B 78 */	mr r4, r3
 /* 8030ED78 0030ABB8  38 61 00 08 */	addi r3, r1, 0x8
-/* 8030ED7C 0030ABBC  4B F5 66 61 */	bl lbl_802653DC
+/* 8030ED7C 0030ABBC  4B F5 66 61 */	bl getViewRect__Q43scn4step6camera12IndiviCameraCFv
 /* 8030ED80 0030ABC0  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030ED84 0030ABC4  C0 3D 00 00 */	lfs f1, 0x0(r29)
 /* 8030ED88 0030ABC8  C0 5D 00 04 */	lfs f2, 0x4(r29)
-/* 8030ED8C 0030ABCC  4B E9 11 4D */	bl lbl_8019FED8
+/* 8030ED8C 0030ABCC  4B E9 11 4D */	bl isInclude__Q33hel3geo4RectCFff
 /* 8030ED90 0030ABD0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8030ED94 0030ABD4  41 82 00 18 */	beq lbl_8030EDAC
 /* 8030ED98 0030ABD8  3B E0 00 01 */	li r31, 0x1
 /* 8030ED9C 0030ABDC  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EDA0 0030ABE0  38 80 FF FF */	li r4, -0x1
-/* 8030EDA4 0030ABE4  4B E9 10 99 */	bl lbl_8019FE3C
+/* 8030EDA4 0030ABE4  4B E9 10 99 */	bl __dt__Q33hel3geo4RectFv
 /* 8030EDA8 0030ABE8  48 00 00 20 */	b lbl_8030EDC8
 .global lbl_8030EDAC
 lbl_8030EDAC:
 /* 8030EDAC 0030ABEC  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EDB0 0030ABF0  38 80 FF FF */	li r4, -0x1
-/* 8030EDB4 0030ABF4  4B E9 10 89 */	bl lbl_8019FE3C
+/* 8030EDB4 0030ABF4  4B E9 10 89 */	bl __dt__Q33hel3geo4RectFv
 /* 8030EDB8 0030ABF8  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8030EDBC
 lbl_8030EDBC:
@@ -222,8 +222,8 @@ lbl_8030EDC8:
 /* 8030EDD8 0030AC18  7C 08 03 A6 */	mtlr r0
 /* 8030EDDC 0030AC1C  38 21 00 30 */	addi r1, r1, 0x30
 /* 8030EDE0 0030AC20  4E 80 00 20 */	blr
-.global lbl_8030EDE4
-lbl_8030EDE4:
+.global "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+"__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl":
 /* 8030EDE4 0030AC24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8030EDE8 0030AC28  7C 08 02 A6 */	mflr r0
 /* 8030EDEC 0030AC2C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -233,10 +233,10 @@ lbl_8030EDE4:
 /* 8030EDFC 0030AC3C  7C 9F 23 78 */	mr r31, r4
 /* 8030EE00 0030AC40  7F E3 FB 78 */	mr r3, r31
 /* 8030EE04 0030AC44  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8030EE08 0030AC48  4B D1 56 99 */	bl lbl_800244A0
+/* 8030EE08 0030AC48  4B D1 56 99 */	bl DefaultSwitchThreadCallback
 /* 8030EE0C 0030AC4C  7F E3 FB 78 */	mr r3, r31
 /* 8030EE10 0030AC50  38 80 00 18 */	li r4, 0x18
-/* 8030EE14 0030AC54  4B D1 56 8D */	bl lbl_800244A0
+/* 8030EE14 0030AC54  4B D1 56 8D */	bl DefaultSwitchThreadCallback
 /* 8030EE18 0030AC58  57 E0 10 3A */	slwi r0, r31, 2
 /* 8030EE1C 0030AC5C  7C 7E 02 14 */	add r3, r30, r0
 /* 8030EE20 0030AC60  80 63 00 08 */	lwz r3, 0x8(r3)
@@ -246,8 +246,8 @@ lbl_8030EDE4:
 /* 8030EE30 0030AC70  7C 08 03 A6 */	mtlr r0
 /* 8030EE34 0030AC74  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030EE38 0030AC78  4E 80 00 20 */	blr
-.global lbl_8030EE3C
-lbl_8030EE3C:
+.global isInEnemyListAreaByID__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2Ul
+isInEnemyListAreaByID__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2Ul:
 /* 8030EE3C 0030AC7C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8030EE40 0030AC80  7C 08 02 A6 */	mflr r0
 /* 8030EE44 0030AC84  90 01 00 34 */	stw r0, 0x34(r1)
@@ -263,32 +263,32 @@ lbl_8030EE3C:
 lbl_8030EE68:
 /* 8030EE68 0030ACA8  7F 63 DB 78 */	mr r3, r27
 /* 8030EE6C 0030ACAC  7F C4 F3 78 */	mr r4, r30
-/* 8030EE70 0030ACB0  4B FF FF 75 */	bl lbl_8030EDE4
-/* 8030EE74 0030ACB4  4B E1 1F ED */	bl lbl_80120E60
+/* 8030EE70 0030ACB0  4B FF FF 75 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030EE74 0030ACB4  4B E1 1F ED */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030EE78 0030ACB8  7C 03 E8 40 */	cmplw r3, r29
 /* 8030EE7C 0030ACBC  40 82 00 54 */	bne lbl_8030EED0
 /* 8030EE80 0030ACC0  7F 63 DB 78 */	mr r3, r27
 /* 8030EE84 0030ACC4  7F C4 F3 78 */	mr r4, r30
-/* 8030EE88 0030ACC8  4B FF FF 5D */	bl lbl_8030EDE4
+/* 8030EE88 0030ACC8  4B FF FF 5D */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
 /* 8030EE8C 0030ACCC  7C 64 1B 78 */	mr r4, r3
 /* 8030EE90 0030ACD0  38 61 00 08 */	addi r3, r1, 0x8
-/* 8030EE94 0030ACD4  4B F5 65 49 */	bl lbl_802653DC
+/* 8030EE94 0030ACD4  4B F5 65 49 */	bl getViewRect__Q43scn4step6camera12IndiviCameraCFv
 /* 8030EE98 0030ACD8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EE9C 0030ACDC  C0 3C 00 00 */	lfs f1, 0x0(r28)
 /* 8030EEA0 0030ACE0  C0 5C 00 04 */	lfs f2, 0x4(r28)
-/* 8030EEA4 0030ACE4  4B E9 10 35 */	bl lbl_8019FED8
+/* 8030EEA4 0030ACE4  4B E9 10 35 */	bl isInclude__Q33hel3geo4RectCFff
 /* 8030EEA8 0030ACE8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8030EEAC 0030ACEC  41 82 00 18 */	beq lbl_8030EEC4
 /* 8030EEB0 0030ACF0  3B E0 00 01 */	li r31, 0x1
 /* 8030EEB4 0030ACF4  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EEB8 0030ACF8  38 80 FF FF */	li r4, -0x1
-/* 8030EEBC 0030ACFC  4B E9 0F 81 */	bl lbl_8019FE3C
+/* 8030EEBC 0030ACFC  4B E9 0F 81 */	bl __dt__Q33hel3geo4RectFv
 /* 8030EEC0 0030AD00  48 00 00 20 */	b lbl_8030EEE0
 .global lbl_8030EEC4
 lbl_8030EEC4:
 /* 8030EEC4 0030AD04  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EEC8 0030AD08  38 80 FF FF */	li r4, -0x1
-/* 8030EECC 0030AD0C  4B E9 0F 71 */	bl lbl_8019FE3C
+/* 8030EECC 0030AD0C  4B E9 0F 71 */	bl __dt__Q33hel3geo4RectFv
 .global lbl_8030EED0
 lbl_8030EED0:
 /* 8030EED0 0030AD10  3B DE 00 01 */	addi r30, r30, 0x1
@@ -306,8 +306,8 @@ lbl_8030EEE0:
 /* 8030EEF0 0030AD30  7C 08 03 A6 */	mtlr r0
 /* 8030EEF4 0030AD34  38 21 00 30 */	addi r1, r1, 0x30
 /* 8030EEF8 0030AD38  4E 80 00 20 */	blr
-.global lbl_8030EEFC
-lbl_8030EEFC:
+.global getGroupID__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2
+getGroupID__Q53scn4step7gimmick9enemylist7ManagerCFRCQ33hel4math7Vector2:
 /* 8030EEFC 0030AD3C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8030EF00 0030AD40  7C 08 02 A6 */	mflr r0
 /* 8030EF04 0030AD44  90 01 00 34 */	stw r0, 0x34(r1)
@@ -322,30 +322,30 @@ lbl_8030EEFC:
 lbl_8030EF24:
 /* 8030EF24 0030AD64  7F 83 E3 78 */	mr r3, r28
 /* 8030EF28 0030AD68  7F C4 F3 78 */	mr r4, r30
-/* 8030EF2C 0030AD6C  4B FF FE B9 */	bl lbl_8030EDE4
+/* 8030EF2C 0030AD6C  4B FF FE B9 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
 /* 8030EF30 0030AD70  7C 64 1B 78 */	mr r4, r3
 /* 8030EF34 0030AD74  38 61 00 08 */	addi r3, r1, 0x8
-/* 8030EF38 0030AD78  4B F5 64 A5 */	bl lbl_802653DC
+/* 8030EF38 0030AD78  4B F5 64 A5 */	bl getViewRect__Q43scn4step6camera12IndiviCameraCFv
 /* 8030EF3C 0030AD7C  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EF40 0030AD80  C0 3D 00 00 */	lfs f1, 0x0(r29)
 /* 8030EF44 0030AD84  C0 5D 00 04 */	lfs f2, 0x4(r29)
-/* 8030EF48 0030AD88  4B E9 0F 91 */	bl lbl_8019FED8
+/* 8030EF48 0030AD88  4B E9 0F 91 */	bl isInclude__Q33hel3geo4RectCFff
 /* 8030EF4C 0030AD8C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8030EF50 0030AD90  41 82 00 28 */	beq lbl_8030EF78
 /* 8030EF54 0030AD94  7F 83 E3 78 */	mr r3, r28
 /* 8030EF58 0030AD98  7F C4 F3 78 */	mr r4, r30
-/* 8030EF5C 0030AD9C  4B FF FE 89 */	bl lbl_8030EDE4
-/* 8030EF60 0030ADA0  4B E1 1F 11 */	bl lbl_80120E70
+/* 8030EF5C 0030AD9C  4B FF FE 89 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030EF60 0030ADA0  4B E1 1F 11 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030EF64 0030ADA4  7C 7F 1B 78 */	mr r31, r3
 /* 8030EF68 0030ADA8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EF6C 0030ADAC  38 80 FF FF */	li r4, -0x1
-/* 8030EF70 0030ADB0  4B E9 0E CD */	bl lbl_8019FE3C
+/* 8030EF70 0030ADB0  4B E9 0E CD */	bl __dt__Q33hel3geo4RectFv
 /* 8030EF74 0030ADB4  48 00 00 20 */	b lbl_8030EF94
 .global lbl_8030EF78
 lbl_8030EF78:
 /* 8030EF78 0030ADB8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8030EF7C 0030ADBC  38 80 FF FF */	li r4, -0x1
-/* 8030EF80 0030ADC0  4B E9 0E BD */	bl lbl_8019FE3C
+/* 8030EF80 0030ADC0  4B E9 0E BD */	bl __dt__Q33hel3geo4RectFv
 /* 8030EF84 0030ADC4  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8030EF88
 lbl_8030EF88:
@@ -361,8 +361,8 @@ lbl_8030EF94:
 /* 8030EFA4 0030ADE4  7C 08 03 A6 */	mtlr r0
 /* 8030EFA8 0030ADE8  38 21 00 30 */	addi r1, r1, 0x30
 /* 8030EFAC 0030ADEC  4E 80 00 20 */	blr
-.global lbl_8030EFB0
-lbl_8030EFB0:
+.global getMaxEnemyCount__Q53scn4step7gimmick9enemylist7ManagerCFUlUl
+getMaxEnemyCount__Q53scn4step7gimmick9enemylist7ManagerCFUlUl:
 /* 8030EFB0 0030ADF0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030EFB4 0030ADF4  7C 08 02 A6 */	mflr r0
 /* 8030EFB8 0030ADF8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -378,20 +378,20 @@ lbl_8030EFB0:
 lbl_8030EFDC:
 /* 8030EFDC 0030AE1C  7F 43 D3 78 */	mr r3, r26
 /* 8030EFE0 0030AE20  7F A4 EB 78 */	mr r4, r29
-/* 8030EFE4 0030AE24  4B FF FE 01 */	bl lbl_8030EDE4
-/* 8030EFE8 0030AE28  4B E1 1E 89 */	bl lbl_80120E70
+/* 8030EFE4 0030AE24  4B FF FE 01 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030EFE8 0030AE28  4B E1 1E 89 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030EFEC 0030AE2C  7C 7F 1B 78 */	mr r31, r3
 /* 8030EFF0 0030AE30  7F 43 D3 78 */	mr r3, r26
 /* 8030EFF4 0030AE34  7F A4 EB 78 */	mr r4, r29
-/* 8030EFF8 0030AE38  4B FF FD ED */	bl lbl_8030EDE4
-/* 8030EFFC 0030AE3C  4B E1 1E 65 */	bl lbl_80120E60
+/* 8030EFF8 0030AE38  4B FF FD ED */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030EFFC 0030AE3C  4B E1 1E 65 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F000 0030AE40  7C 03 D8 40 */	cmplw r3, r27
 /* 8030F004 0030AE44  40 82 00 20 */	bne lbl_8030F024
 /* 8030F008 0030AE48  7C 1F E0 40 */	cmplw r31, r28
 /* 8030F00C 0030AE4C  40 82 00 18 */	bne lbl_8030F024
 /* 8030F010 0030AE50  7F 43 D3 78 */	mr r3, r26
 /* 8030F014 0030AE54  7F A4 EB 78 */	mr r4, r29
-/* 8030F018 0030AE58  4B FF FD CD */	bl lbl_8030EDE4
+/* 8030F018 0030AE58  4B FF FD CD */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
 /* 8030F01C 0030AE5C  83 C3 00 1C */	lwz r30, 0x1c(r3)
 /* 8030F020 0030AE60  48 00 00 14 */	b lbl_8030F034
 .global lbl_8030F024
@@ -411,8 +411,8 @@ lbl_8030F034:
 /* 8030F044 0030AE84  7C 08 03 A6 */	mtlr r0
 /* 8030F048 0030AE88  38 21 00 20 */	addi r1, r1, 0x20
 /* 8030F04C 0030AE8C  4E 80 00 20 */	blr
-.global lbl_8030F050
-lbl_8030F050:
+.global getLockFrame__Q53scn4step7gimmick9enemylist7ManagerCFUlUl
+getLockFrame__Q53scn4step7gimmick9enemylist7ManagerCFUlUl:
 /* 8030F050 0030AE90  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030F054 0030AE94  7C 08 02 A6 */	mflr r0
 /* 8030F058 0030AE98  90 01 00 24 */	stw r0, 0x24(r1)
@@ -428,20 +428,20 @@ lbl_8030F050:
 lbl_8030F07C:
 /* 8030F07C 0030AEBC  7F 43 D3 78 */	mr r3, r26
 /* 8030F080 0030AEC0  7F A4 EB 78 */	mr r4, r29
-/* 8030F084 0030AEC4  4B FF FD 61 */	bl lbl_8030EDE4
-/* 8030F088 0030AEC8  4B E1 1D E9 */	bl lbl_80120E70
+/* 8030F084 0030AEC4  4B FF FD 61 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F088 0030AEC8  4B E1 1D E9 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F08C 0030AECC  7C 7F 1B 78 */	mr r31, r3
 /* 8030F090 0030AED0  7F 43 D3 78 */	mr r3, r26
 /* 8030F094 0030AED4  7F A4 EB 78 */	mr r4, r29
-/* 8030F098 0030AED8  4B FF FD 4D */	bl lbl_8030EDE4
-/* 8030F09C 0030AEDC  4B E1 1D C5 */	bl lbl_80120E60
+/* 8030F098 0030AED8  4B FF FD 4D */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F09C 0030AEDC  4B E1 1D C5 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F0A0 0030AEE0  7C 03 D8 40 */	cmplw r3, r27
 /* 8030F0A4 0030AEE4  40 82 00 20 */	bne lbl_8030F0C4
 /* 8030F0A8 0030AEE8  7C 1F E0 40 */	cmplw r31, r28
 /* 8030F0AC 0030AEEC  40 82 00 18 */	bne lbl_8030F0C4
 /* 8030F0B0 0030AEF0  7F 43 D3 78 */	mr r3, r26
 /* 8030F0B4 0030AEF4  7F A4 EB 78 */	mr r4, r29
-/* 8030F0B8 0030AEF8  4B FF FD 2D */	bl lbl_8030EDE4
+/* 8030F0B8 0030AEF8  4B FF FD 2D */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
 /* 8030F0BC 0030AEFC  83 C3 00 20 */	lwz r30, 0x20(r3)
 /* 8030F0C0 0030AF00  48 00 00 14 */	b lbl_8030F0D4
 .global lbl_8030F0C4
@@ -461,8 +461,8 @@ lbl_8030F0D4:
 /* 8030F0E4 0030AF24  7C 08 03 A6 */	mtlr r0
 /* 8030F0E8 0030AF28  38 21 00 20 */	addi r1, r1, 0x20
 /* 8030F0EC 0030AF2C  4E 80 00 20 */	blr
-.global lbl_8030F0F0
-lbl_8030F0F0:
+.global getNextGroupID__Q53scn4step7gimmick9enemylist7ManagerCFUlUl
+getNextGroupID__Q53scn4step7gimmick9enemylist7ManagerCFUlUl:
 /* 8030F0F0 0030AF30  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030F0F4 0030AF34  7C 08 02 A6 */	mflr r0
 /* 8030F0F8 0030AF38  90 01 00 24 */	stw r0, 0x24(r1)
@@ -479,21 +479,21 @@ lbl_8030F0F0:
 lbl_8030F120:
 /* 8030F120 0030AF60  7F 43 D3 78 */	mr r3, r26
 /* 8030F124 0030AF64  7F A4 EB 78 */	mr r4, r29
-/* 8030F128 0030AF68  4B FF FC BD */	bl lbl_8030EDE4
-/* 8030F12C 0030AF6C  4B E1 1D 45 */	bl lbl_80120E70
+/* 8030F128 0030AF68  4B FF FC BD */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F12C 0030AF6C  4B E1 1D 45 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F130 0030AF70  7C 7F 1B 78 */	mr r31, r3
 /* 8030F134 0030AF74  7F 43 D3 78 */	mr r3, r26
 /* 8030F138 0030AF78  7F A4 EB 78 */	mr r4, r29
-/* 8030F13C 0030AF7C  4B FF FC A9 */	bl lbl_8030EDE4
-/* 8030F140 0030AF80  4B E1 1D 21 */	bl lbl_80120E60
+/* 8030F13C 0030AF7C  4B FF FC A9 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F140 0030AF80  4B E1 1D 21 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F144 0030AF84  7C 03 D8 40 */	cmplw r3, r27
 /* 8030F148 0030AF88  40 82 00 24 */	bne lbl_8030F16C
 /* 8030F14C 0030AF8C  7C 1F E0 40 */	cmplw r31, r28
 /* 8030F150 0030AF90  40 82 00 1C */	bne lbl_8030F16C
 /* 8030F154 0030AF94  7F 43 D3 78 */	mr r3, r26
 /* 8030F158 0030AF98  7F A4 EB 78 */	mr r4, r29
-/* 8030F15C 0030AF9C  4B FF FC 89 */	bl lbl_8030EDE4
-/* 8030F160 0030AFA0  4B E1 AA 61 */	bl lbl_80129BC0
+/* 8030F15C 0030AF9C  4B FF FC 89 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F160 0030AFA0  4B E1 AA 61 */	bl getDrawInfo__Q310homebutton3gui11PaneManagerFv
 /* 8030F164 0030AFA4  7C 7E 1B 78 */	mr r30, r3
 /* 8030F168 0030AFA8  48 00 00 14 */	b lbl_8030F17C
 .global lbl_8030F16C
@@ -513,8 +513,8 @@ lbl_8030F17C:
 /* 8030F18C 0030AFCC  7C 08 03 A6 */	mtlr r0
 /* 8030F190 0030AFD0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8030F194 0030AFD4  4E 80 00 20 */	blr
-.global lbl_8030F198
-lbl_8030F198:
+.global getMinGroupID__Q53scn4step7gimmick9enemylist7ManagerCFUl
+getMinGroupID__Q53scn4step7gimmick9enemylist7ManagerCFUl:
 /* 8030F198 0030AFD8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030F19C 0030AFDC  7C 08 02 A6 */	mflr r0
 /* 8030F1A0 0030AFE0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -530,13 +530,13 @@ lbl_8030F198:
 lbl_8030F1C4:
 /* 8030F1C4 0030B004  7F 63 DB 78 */	mr r3, r27
 /* 8030F1C8 0030B008  7F C4 F3 78 */	mr r4, r30
-/* 8030F1CC 0030B00C  4B FF FC 19 */	bl lbl_8030EDE4
-/* 8030F1D0 0030B010  4B E1 1C A1 */	bl lbl_80120E70
+/* 8030F1CC 0030B00C  4B FF FC 19 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F1D0 0030B010  4B E1 1C A1 */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F1D4 0030B014  7C 7D 1B 78 */	mr r29, r3
 /* 8030F1D8 0030B018  7F 63 DB 78 */	mr r3, r27
 /* 8030F1DC 0030B01C  7F C4 F3 78 */	mr r4, r30
-/* 8030F1E0 0030B020  4B FF FC 05 */	bl lbl_8030EDE4
-/* 8030F1E4 0030B024  4B E1 1C 7D */	bl lbl_80120E60
+/* 8030F1E0 0030B020  4B FF FC 05 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F1E4 0030B024  4B E1 1C 7D */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F1E8 0030B028  7C 03 E0 40 */	cmplw r3, r28
 /* 8030F1EC 0030B02C  40 82 00 10 */	bne lbl_8030F1FC
 /* 8030F1F0 0030B030  7C 1F E8 40 */	cmplw r31, r29
@@ -557,8 +557,8 @@ lbl_8030F200:
 /* 8030F21C 0030B05C  7C 08 03 A6 */	mtlr r0
 /* 8030F220 0030B060  38 21 00 20 */	addi r1, r1, 0x20
 /* 8030F224 0030B064  4E 80 00 20 */	blr
-.global lbl_8030F228
-lbl_8030F228:
+.global isSimulAppear__Q53scn4step7gimmick9enemylist7ManagerCFUl
+isSimulAppear__Q53scn4step7gimmick9enemylist7ManagerCFUl:
 /* 8030F228 0030B068  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8030F22C 0030B06C  7C 08 02 A6 */	mflr r0
 /* 8030F230 0030B070  90 01 00 24 */	stw r0, 0x24(r1)
@@ -574,15 +574,15 @@ lbl_8030F228:
 lbl_8030F254:
 /* 8030F254 0030B094  7F 63 DB 78 */	mr r3, r27
 /* 8030F258 0030B098  7F A4 EB 78 */	mr r4, r29
-/* 8030F25C 0030B09C  4B FF FB 89 */	bl lbl_8030EDE4
-/* 8030F260 0030B0A0  4B E1 1C 01 */	bl lbl_80120E60
+/* 8030F25C 0030B09C  4B FF FB 89 */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F260 0030B0A0  4B E1 1C 01 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
 /* 8030F264 0030B0A4  7C 1C 18 40 */	cmplw r28, r3
 /* 8030F268 0030B0A8  40 82 00 24 */	bne lbl_8030F28C
 /* 8030F26C 0030B0AC  3B FF 00 01 */	addi r31, r31, 0x1
 /* 8030F270 0030B0B0  7F 63 DB 78 */	mr r3, r27
 /* 8030F274 0030B0B4  7F A4 EB 78 */	mr r4, r29
-/* 8030F278 0030B0B8  4B FF FB 6D */	bl lbl_8030EDE4
-/* 8030F27C 0030B0BC  4B E1 A9 45 */	bl lbl_80129BC0
+/* 8030F278 0030B0B8  4B FF FB 6D */	bl "__vc__Q23mem67ExplicitAutoDeleteArray<Q53scn4step7gimmick9enemylist9EnemyList,24>CFUl"
+/* 8030F27C 0030B0BC  4B E1 A9 45 */	bl getDrawInfo__Q310homebutton3gui11PaneManagerFv
 /* 8030F280 0030B0C0  28 03 FF FF */	cmplwi r3, 0xffff
 /* 8030F284 0030B0C4  40 82 00 08 */	bne lbl_8030F28C
 /* 8030F288 0030B0C8  3B DE 00 01 */	addi r30, r30, 0x1

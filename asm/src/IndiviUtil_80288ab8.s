@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80288AB8
-lbl_80288AB8:
+.global ModelDesc__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindbb
+ModelDesc__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindbb:
 /* 80288AB8 002848F8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 80288ABC 002848FC  41 82 00 28 */	beq lbl_80288AE4
-/* 80288AC0 00284900  3C 80 80 47 */	lis r4, lbl_80471F18@ha
-/* 80288AC4 00284904  38 84 1F 18 */	addi r4, r4, lbl_80471F18@l
+/* 80288AC0 00284900  3C 80 80 47 */	lis r4, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@ha
+/* 80288AC4 00284904  38 84 1F 18 */	addi r4, r4, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@l
 /* 80288AC8 00284908  1C 03 00 0C */	mulli r0, r3, 0xc
 /* 80288ACC 0028490C  7C 84 02 14 */	add r4, r4, r0
 /* 80288AD0 00284910  81 84 00 08 */	lwz r12, 0x8(r4)
@@ -17,28 +17,28 @@ lbl_80288AB8:
 .global lbl_80288AE4
 lbl_80288AE4:
 /* 80288AE4 00284924  1C 03 00 0C */	mulli r0, r3, 0xc
-/* 80288AE8 00284928  3C 60 80 47 */	lis r3, lbl_80471F18@ha
-/* 80288AEC 0028492C  38 63 1F 18 */	addi r3, r3, lbl_80471F18@l
+/* 80288AE8 00284928  3C 60 80 47 */	lis r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@ha
+/* 80288AEC 0028492C  38 63 1F 18 */	addi r3, r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@l
 /* 80288AF0 00284930  7D 83 00 2E */	lwzx r12, r3, r0
 /* 80288AF4 00284934  7D 89 03 A6 */	mtctr r12
 /* 80288AF8 00284938  4E 80 04 20 */	bctr
-.global lbl_80288AFC
-lbl_80288AFC:
-/* 80288AFC 0028493C  3C A0 80 47 */	lis r5, lbl_80471F18@ha
-/* 80288B00 00284940  38 A5 1F 18 */	addi r5, r5, lbl_80471F18@l
+.global CharaParam__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindUl
+CharaParam__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindUl:
+/* 80288AFC 0028493C  3C A0 80 47 */	lis r5, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@ha
+/* 80288B00 00284940  38 A5 1F 18 */	addi r5, r5, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@l
 /* 80288B04 00284944  1C 04 00 0C */	mulli r0, r4, 0xc
 /* 80288B08 00284948  7C 85 02 14 */	add r4, r5, r0
 /* 80288B0C 0028494C  81 84 00 04 */	lwz r12, 0x4(r4)
 /* 80288B10 00284950  7D 89 03 A6 */	mtctr r12
 /* 80288B14 00284954  4E 80 04 20 */	bctr
 
-.global lbl_80288B18
-lbl_80288B18:
-/* 80288B18 00284958  80 02 AF 20 */	lwz r0, lbl_80560EA0@sda21(r2)
-/* 80288B1C 0028495C  3C 60 80 47 */	lis r3, lbl_80471F18@ha
-/* 80288B20 00284960  38 63 1F 18 */	addi r3, r3, lbl_80471F18@l
+.global "__sinit_@@1IndiviUtil_cpp"
+"__sinit_@@1IndiviUtil_cpp":
+/* 80288B18 00284958  80 02 AF 20 */	lwz r0, "T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@sda21(r2)
+/* 80288B1C 0028495C  3C 60 80 47 */	lis r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@ha
+/* 80288B20 00284960  38 63 1F 18 */	addi r3, r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@l
 /* 80288B24 00284964  90 03 00 84 */	stw r0, 0x84(r3)
-/* 80288B28 00284968  80 82 AF 24 */	lwz r4, lbl_80560EA4@sda21(r2)
+/* 80288B28 00284968  80 82 AF 24 */	lwz r4, "T_CHARA_PARAM_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@sda21(r2)
 /* 80288B2C 0028496C  90 83 00 88 */	stw r4, 0x88(r3)
 /* 80288B30 00284970  90 03 00 9C */	stw r0, 0x9c(r3)
 /* 80288B34 00284974  90 83 00 A0 */	stw r4, 0xa0(r3)

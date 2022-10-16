@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80465DD8
-lbl_80465DD8:
+.global "__vt__Q24util147StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster12StateFlyWall,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>"
+"__vt__Q24util147StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster12StateFlyWall,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80240CD4
-	.4byte lbl_80240C90
+	.4byte "__dt__Q24util147StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster12StateFlyWall,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>Fv"
+	.4byte "create__Q24util147StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster12StateFlyWall,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>Fv"
 
-.global lbl_80465DE8
-lbl_80465DE8:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_80240CD0
-	.4byte lbl_80240CB0
-
-.global lbl_80465DF8
-lbl_80465DF8:
+.global "__vt__Q24util152StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster17StateFlyWallStart,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>"
+"__vt__Q24util152StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster17StateFlyWallStart,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80240B5C
-	.4byte lbl_80240BF0
-	.4byte lbl_80240C88
-	.4byte lbl_802344FC
-	.4byte lbl_80240C8C
-	.4byte lbl_80234504
+	.4byte "__dt__Q24util152StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster17StateFlyWallStart,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>Fv"
+	.4byte "create__Q24util152StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster17StateFlyWallStart,PQ43scn4step4boss4Boss,Q53scn4step4boss15challengemaster9AvoidType>Fv"
+
+.global __vt__Q53scn4step4boss15challengemaster17StateFlyWallStart
+__vt__Q53scn4step4boss15challengemaster17StateFlyWallStart:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss15challengemaster17StateFlyWallStartFv
+	.4byte procAnim__Q53scn4step4boss15challengemaster17StateFlyWallStartFv
+	.4byte procMove__Q53scn4step4boss15challengemaster17StateFlyWallStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss15challengemaster17StateFlyWallStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

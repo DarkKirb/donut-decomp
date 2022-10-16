@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420BF0
-lbl_80420BF0:
+.global "T_BG_DATA_TABLE__Q33scn11staffcredit23@unnamed@BgManager_cpp@"
+"T_BG_DATA_TABLE__Q33scn11staffcredit23@unnamed@BgManager_cpp@":
 
 	.4byte 0x00000019
 	.4byte 0x3FD9999A

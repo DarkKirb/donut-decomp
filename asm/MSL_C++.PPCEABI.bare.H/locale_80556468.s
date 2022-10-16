@@ -1,31 +1,31 @@
 .include "macros.inc"
 
 .section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
-.global lbl_80556468
-lbl_80556468:
+.global __RTTI__Q23std12out_of_range
+__RTTI__Q23std12out_of_range:
 
-	.4byte lbl_80407658
-	.4byte lbl_80421A58
+	.4byte "@10379"
+	.4byte "@10380"
 
-.global lbl_80556470
-lbl_80556470:
+.global __RTTI__Q23std12length_error
+__RTTI__Q23std12length_error:
 
-	.4byte lbl_8040766C
-	.4byte lbl_80421A80
+	.4byte "@10381"
+	.4byte "@10382"
 
-.global lbl_80556478
-lbl_80556478:
+.global __RTTI__Q23std11logic_error
+__RTTI__Q23std11logic_error:
 
-	.4byte lbl_80407680
-	.4byte lbl_80421AA8
+	.4byte "@10387"
+	.4byte "@10388"
 
-.global lbl_80556480
-lbl_80556480:
+.global "@11481"
+"@11481":
 
 	.byte 0x00
 
-.global lbl_80556481
-lbl_80556481:
+.global "@11495"
+"@11495":
 
 	.balign 4
 	.4byte 0

@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045E7A8
-lbl_8045E7A8:
+.global "@52079_8045E7A8"
+"@52079_8045E7A8":
 
 	.4byte 0x6368616C
 	.4byte 0x6C656E67
@@ -19,27 +19,27 @@ lbl_8045E7A8:
 	.4byte 0x6469744E
 	.4byte 0x65770000
 
-.global lbl_8045E7E0
-lbl_8045E7E0:
+.global "@52124_8045E7E0"
+"@52124_8045E7E0":
 
 	.4byte 0x4F70656E
 	.4byte 0x536D616C
 	.4byte 0x6C000000
 
-.global lbl_8045E7EC
-lbl_8045E7EC:
+.global __vt__Q33scn19challengefileselect11StaffCredit
+__vt__Q33scn19challengefileselect11StaffCredit:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801E5938
-	.4byte lbl_801E9324
-	.4byte lbl_801E935C
-	.4byte lbl_801E936C
-	.4byte lbl_801E9378
-	.4byte lbl_801E9384
-	.4byte lbl_801E9390
-	.4byte lbl_801E9394
-	.4byte lbl_801E939C
+	.4byte __dt__Q33scn19challengefileselect11StaffCreditFv
+	.4byte updateFrame__Q33scn19challengefileselect11StaffCreditFv
+	.4byte appear__Q33scn19challengefileselect11StaffCreditFv
+	.4byte focus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte unfocus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte decide__Q33scn19challengefileselect11StaffCreditFv
+	.4byte isAnimEnd__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte kind__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte cursorPane__Q33scn19challengefileselect11StaffCreditFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

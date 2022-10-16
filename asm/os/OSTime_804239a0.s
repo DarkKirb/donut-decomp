@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804239A0
-lbl_804239A0:
+.global YearDays
+YearDays:
 
 	.4byte 0
 	.4byte 0x0000001F
@@ -17,8 +17,8 @@ lbl_804239A0:
 	.4byte 0x00000130
 	.4byte 0x0000014E
 
-.global lbl_804239D0
-lbl_804239D0:
+.global LeapYearDays
+LeapYearDays:
 
 	.4byte 0
 	.4byte 0x0000001F

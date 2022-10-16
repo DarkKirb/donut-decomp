@@ -1,24 +1,24 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_804042FC
-lbl_804042FC:
+.global init__Q27storage15BackupFileData2Fv
+init__Q27storage15BackupFileData2Fv:
 /* 804042FC 0040013C  38 80 00 00 */	li r4, 0x0
 /* 80404300 00400140  38 A0 02 9C */	li r5, 0x29c
-/* 80404304 00400144  4B C0 00 4C */	b func_80004350
-.global lbl_80404308
-lbl_80404308:
+/* 80404304 00400144  4B C0 00 4C */	b memset
+.global isBlank__Q27storage15BackupFileData2CFv
+isBlank__Q27storage15BackupFileData2CFv:
 /* 80404308 00400148  94 21 FD 50 */	stwu r1, -0x2b0(r1)
 /* 8040430C 0040014C  7C 08 02 A6 */	mflr r0
 /* 80404310 00400150  90 01 02 B4 */	stw r0, 0x2b4(r1)
 /* 80404314 00400154  93 E1 02 AC */	stw r31, 0x2ac(r1)
 /* 80404318 00400158  7C 7F 1B 78 */	mr r31, r3
 /* 8040431C 0040015C  38 61 00 08 */	addi r3, r1, 0x8
-/* 80404320 00400160  4B FF FF DD */	bl lbl_804042FC
+/* 80404320 00400160  4B FF FF DD */	bl init__Q27storage15BackupFileData2Fv
 /* 80404324 00400164  7F E3 FB 78 */	mr r3, r31
 /* 80404328 00400168  38 81 00 08 */	addi r4, r1, 0x8
 /* 8040432C 0040016C  38 A0 02 9C */	li r5, 0x29c
-/* 80404330 00400170  4B C0 6B 41 */	bl lbl_8000AE70
+/* 80404330 00400170  4B C0 6B 41 */	bl memcmp
 /* 80404334 00400174  7C 60 00 34 */	cntlzw r0, r3
 /* 80404338 00400178  54 03 D9 7E */	srwi r3, r0, 5
 /* 8040433C 0040017C  83 E1 02 AC */	lwz r31, 0x2ac(r1)
@@ -26,8 +26,8 @@ lbl_80404308:
 /* 80404344 00400184  7C 08 03 A6 */	mtlr r0
 /* 80404348 00400188  38 21 02 B0 */	addi r1, r1, 0x2b0
 /* 8040434C 0040018C  4E 80 00 20 */	blr
-.global lbl_80404350
-lbl_80404350:
+.global unlock__Q37storage15BackupFileData213ChallengeDataFv
+unlock__Q37storage15BackupFileData213ChallengeDataFv:
 /* 80404350 00400190  80 83 00 1C */	lwz r4, 0x1c(r3)
 /* 80404354 00400194  38 04 00 01 */	addi r0, r4, 0x1
 /* 80404358 00400198  90 03 00 1C */	stw r0, 0x1c(r3)
@@ -36,13 +36,13 @@ lbl_80404350:
 /* 80404364 004001A4  38 00 00 03 */	li r0, 0x3
 /* 80404368 004001A8  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 8040436C 004001AC  4E 80 00 20 */	blr
-.global lbl_80404370
-lbl_80404370:
+.global challengeData__Q27storage15BackupFileData2FQ33scn4step13ChallengeKind
+challengeData__Q27storage15BackupFileData2FQ33scn4step13ChallengeKind:
 /* 80404370 004001B0  1C 04 00 24 */	mulli r0, r4, 0x24
 /* 80404374 004001B4  7C 63 02 14 */	add r3, r3, r0
 /* 80404378 004001B8  4E 80 00 20 */	blr
-.global lbl_8040437C
-lbl_8040437C:
+.global challengeTotalScore__Q27storage15BackupFileData2CFv
+challengeTotalScore__Q27storage15BackupFileData2CFv:
 /* 8040437C 004001BC  38 C0 00 00 */	li r6, 0x0
 /* 80404380 004001C0  38 E0 00 00 */	li r7, 0x0
 /* 80404384 004001C4  38 80 00 00 */	li r4, 0x0
@@ -66,8 +66,8 @@ lbl_804043B4:
 /* 804043BC 004001FC  42 00 FF D4 */	bdnz lbl_80404390
 /* 804043C0 00400200  7C C3 33 78 */	mr r3, r6
 /* 804043C4 00400204  4E 80 00 20 */	blr
-.global lbl_804043C8
-lbl_804043C8:
+.global updateChallengeHighScore__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindiQ33scn4step18ChallengeMedalKindi
+updateChallengeHighScore__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindiQ33scn4step18ChallengeMedalKindi:
 /* 804043C8 00400208  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 804043CC 0040020C  7C 08 02 A6 */	mflr r0
 /* 804043D0 00400210  90 01 00 24 */	stw r0, 0x24(r1)
@@ -118,10 +118,10 @@ lbl_80404450:
 /* 80404464 004002A4  90 E3 00 10 */	stw r7, 0x10(r3)
 /* 80404468 004002A8  2C 06 00 00 */	cmpwi r6, 0x0
 /* 8040446C 004002AC  40 82 00 24 */	bne lbl_80404490
-/* 80404470 004002B0  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 80404474 004002B4  4B D7 22 51 */	bl lbl_801766C4
+/* 80404470 004002B0  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 80404474 004002B4  4B D7 22 51 */	bl storageManager__Q23app11ApplicationFv
 /* 80404478 004002B8  7F 84 E3 78 */	mr r4, r28
-/* 8040447C 004002BC  48 00 09 A5 */	bl lbl_80404E20
+/* 8040447C 004002BC  48 00 09 A5 */	bl onGhostUpdate__Q27storage14StorageManagerFi
 /* 80404480 004002C0  48 00 00 10 */	b lbl_80404490
 .global lbl_80404484
 lbl_80404484:
@@ -148,18 +148,18 @@ lbl_804044B0:
 /* 804044BC 004002FC  7C 08 03 A6 */	mtlr r0
 /* 804044C0 00400300  38 21 00 20 */	addi r1, r1, 0x20
 /* 804044C4 00400304  4E 80 00 20 */	blr
-.global lbl_804044C8
-lbl_804044C8:
+.global getIsAreaOpened__Q27storage15BackupFileData2CFQ33scn4step9LevelKind
+getIsAreaOpened__Q27storage15BackupFileData2CFQ33scn4step9LevelKind:
 /* 804044C8 00400308  7C 63 22 14 */	add r3, r3, r4
 /* 804044CC 0040030C  88 63 02 42 */	lbz r3, 0x242(r3)
 /* 804044D0 00400310  4E 80 00 20 */	blr
-.global lbl_804044D4
-lbl_804044D4:
+.global setIsAreaOpened__Q27storage15BackupFileData2FQ33scn4step9LevelKindb
+setIsAreaOpened__Q27storage15BackupFileData2FQ33scn4step9LevelKindb:
 /* 804044D4 00400314  7C 63 22 14 */	add r3, r3, r4
 /* 804044D8 00400318  98 A3 02 42 */	stb r5, 0x242(r3)
 /* 804044DC 0040031C  4E 80 00 20 */	blr
-.global lbl_804044E0
-lbl_804044E0:
+.global setLastClearLevel__Q27storage15BackupFileData2Fv
+setLastClearLevel__Q27storage15BackupFileData2Fv:
 /* 804044E0 00400320  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 804044E4 00400324  7C 08 02 A6 */	mflr r0
 /* 804044E8 00400328  90 01 00 14 */	stw r0, 0x14(r1)
@@ -167,9 +167,9 @@ lbl_804044E0:
 /* 804044F0 00400330  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 804044F4 00400334  7C 7E 1B 78 */	mr r30, r3
 /* 804044F8 00400338  3B E0 00 00 */	li r31, 0x0
-/* 804044FC 0040033C  80 6D ED 10 */	lwz r3, lbl_8055D130@sda21(r13)
-/* 80404500 00400340  4B D7 21 C5 */	bl lbl_801766C4
-/* 80404504 00400344  48 00 0A 21 */	bl lbl_80404F24
+/* 804044FC 0040033C  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
+/* 80404500 00400340  4B D7 21 C5 */	bl storageManager__Q23app11ApplicationFv
+/* 80404504 00400344  48 00 0A 21 */	bl volatileData2__Q27storage14StorageManagerFv
 /* 80404508 00400348  80 63 10 54 */	lwz r3, 0x1054(r3)
 /* 8040450C 0040034C  80 1E 02 48 */	lwz r0, 0x248(r30)
 /* 80404510 00400350  7C 00 18 00 */	cmpw r0, r3
@@ -185,8 +185,8 @@ lbl_80404520:
 /* 80404530 00400370  7C 08 03 A6 */	mtlr r0
 /* 80404534 00400374  38 21 00 10 */	addi r1, r1, 0x10
 /* 80404538 00400378  4E 80 00 20 */	blr
-.global lbl_8040453C
-lbl_8040453C:
+.global hasAllPlatinumMedal__Q27storage15BackupFileData2CFv
+hasAllPlatinumMedal__Q27storage15BackupFileData2CFv:
 /* 8040453C 0040037C  38 80 00 00 */	li r4, 0x0
 /* 80404540 00400380  38 00 00 0D */	li r0, 0xd
 /* 80404544 00400384  7C 09 03 A6 */	mtctr r0
@@ -204,8 +204,8 @@ lbl_80404560:
 /* 80404564 004003A4  42 00 FF E4 */	bdnz lbl_80404548
 /* 80404568 004003A8  38 60 00 01 */	li r3, 0x1
 /* 8040456C 004003AC  4E 80 00 20 */	blr
-.global lbl_80404570
-lbl_80404570:
+.global isAllStageCleared__Q27storage15BackupFileData2CFv
+isAllStageCleared__Q27storage15BackupFileData2CFv:
 /* 80404570 004003B0  38 80 00 00 */	li r4, 0x0
 /* 80404574 004003B4  38 00 00 0D */	li r0, 0xd
 /* 80404578 004003B8  7C 09 03 A6 */	mtctr r0
@@ -222,8 +222,8 @@ lbl_80404590:
 /* 80404594 004003D4  42 00 FF E8 */	bdnz lbl_8040457C
 /* 80404598 004003D8  38 60 00 01 */	li r3, 0x1
 /* 8040459C 004003DC  4E 80 00 20 */	blr
-.global lbl_804045A0
-lbl_804045A0:
+.global getMasterMedalP__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind
+getMasterMedalP__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind:
 /* 804045A0 004003E0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 804045A4 004003E4  39 20 00 00 */	li r9, 0x0
 /* 804045A8 004003E8  38 04 FF F6 */	addi r0, r4, -0xa
@@ -239,8 +239,8 @@ lbl_804045C4:
 /* 804045C8 00400408  39 60 FF FF */	li r11, -0x1
 /* 804045CC 0040040C  39 80 00 00 */	li r12, 0x0
 /* 804045D0 00400410  38 C0 00 00 */	li r6, 0x0
-/* 804045D4 00400414  3C E0 80 42 */	lis r7, lbl_80421000@ha
-/* 804045D8 00400418  38 E7 10 00 */	addi r7, r7, lbl_80421000@l
+/* 804045D4 00400414  3C E0 80 42 */	lis r7, "challengeMasterDataTbl__Q27storage29@unnamed@BackupFileData2_cpp@"@ha
+/* 804045D8 00400418  38 E7 10 00 */	addi r7, r7, "challengeMasterDataTbl__Q27storage29@unnamed@BackupFileData2_cpp@"@l
 /* 804045DC 0040041C  38 00 00 04 */	li r0, 0x4
 /* 804045E0 00400420  7C 09 03 A6 */	mtctr r0
 .global lbl_804045E4
@@ -299,14 +299,14 @@ lbl_80404688:
 /* 80404688 004004C8  7D 23 4B 78 */	mr r3, r9
 /* 8040468C 004004CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80404690 004004D0  4E 80 00 20 */	blr
-.global lbl_80404694
-lbl_80404694:
+.global getMasterMedal__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind
+getMasterMedal__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind:
 /* 80404694 004004D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80404698 004004D8  7C 08 02 A6 */	mflr r0
 /* 8040469C 004004DC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 804046A0 004004E0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 804046A4 004004E4  3B E0 00 00 */	li r31, 0x0
-/* 804046A8 004004E8  4B FF FE F9 */	bl lbl_804045A0
+/* 804046A8 004004E8  4B FF FE F9 */	bl getMasterMedalP__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind
 /* 804046AC 004004EC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 804046B0 004004F0  41 82 00 08 */	beq lbl_804046B8
 /* 804046B4 004004F4  83 E3 00 00 */	lwz r31, 0x0(r3)
@@ -318,14 +318,14 @@ lbl_804046B8:
 /* 804046C4 00400504  7C 08 03 A6 */	mtlr r0
 /* 804046C8 00400508  38 21 00 10 */	addi r1, r1, 0x10
 /* 804046CC 0040050C  4E 80 00 20 */	blr
-.global lbl_804046D0
-lbl_804046D0:
+.global setMasterMedal__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKindQ33scn4step18ChallengeMedalKind
+setMasterMedal__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKindQ33scn4step18ChallengeMedalKind:
 /* 804046D0 00400510  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 804046D4 00400514  7C 08 02 A6 */	mflr r0
 /* 804046D8 00400518  90 01 00 14 */	stw r0, 0x14(r1)
 /* 804046DC 0040051C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 804046E0 00400520  7C DF 33 78 */	mr r31, r6
-/* 804046E4 00400524  4B FF FE BD */	bl lbl_804045A0
+/* 804046E4 00400524  4B FF FE BD */	bl getMasterMedalP__Q27storage15BackupFileData2FQ33scn4step13ChallengeKindQ43scn4step4hero11AbilityKind
 /* 804046E8 00400528  2C 03 00 00 */	cmpwi r3, 0x0
 /* 804046EC 0040052C  41 82 00 1C */	beq lbl_80404708
 /* 804046F0 00400530  80 03 00 00 */	lwz r0, 0x0(r3)
@@ -344,8 +344,8 @@ lbl_8040470C:
 /* 80404714 00400554  7C 08 03 A6 */	mtlr r0
 /* 80404718 00400558  38 21 00 10 */	addi r1, r1, 0x10
 /* 8040471C 0040055C  4E 80 00 20 */	blr
-.global lbl_80404720
-lbl_80404720:
+.global hasAllAbilityPlatinumMedal__Q27storage15BackupFileData2CFQ33scn4step13ChallengeKind
+hasAllAbilityPlatinumMedal__Q27storage15BackupFileData2CFQ33scn4step13ChallengeKind:
 /* 80404720 00400560  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80404724 00400564  38 04 FF F6 */	addi r0, r4, -0xa
 /* 80404728 00400568  28 00 00 01 */	cmplwi r0, 0x1
@@ -358,8 +358,8 @@ lbl_80404720:
 lbl_80404740:
 /* 80404740 00400580  39 00 00 00 */	li r8, 0x0
 /* 80404744 00400584  38 A0 00 00 */	li r5, 0x0
-/* 80404748 00400588  3C C0 80 42 */	lis r6, lbl_80421000@ha
-/* 8040474C 0040058C  38 C6 10 00 */	addi r6, r6, lbl_80421000@l
+/* 80404748 00400588  3C C0 80 42 */	lis r6, "challengeMasterDataTbl__Q27storage29@unnamed@BackupFileData2_cpp@"@ha
+/* 8040474C 0040058C  38 C6 10 00 */	addi r6, r6, "challengeMasterDataTbl__Q27storage29@unnamed@BackupFileData2_cpp@"@l
 /* 80404750 00400590  38 00 00 04 */	li r0, 0x4
 /* 80404754 00400594  7C 09 03 A6 */	mtctr r0
 .global lbl_80404758

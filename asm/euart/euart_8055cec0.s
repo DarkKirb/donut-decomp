@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CEC0
-lbl_8055CEC0:
+.global __EUARTInitialized
+__EUARTInitialized:
 	.skip 0x4
 
-.global lbl_8055CEC4
-lbl_8055CEC4:
+.global __EUARTLastErrorCode
+__EUARTLastErrorCode:
 	.skip 0x4
 
-.global lbl_8055CEC8
-lbl_8055CEC8:
+.global __EUARTSendStop
+__EUARTSendStop:
 	.skip 0x4
 
-.global lbl_8055CECC
-lbl_8055CECC:
+.global Enabled_8055CECC
+Enabled_8055CECC:
 	.skip 0x4

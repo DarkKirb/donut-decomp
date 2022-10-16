@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804964C8
-lbl_804964C8:
+.global __vt__Q23seq12SequenceRoot
+__vt__Q23seq12SequenceRoot:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803FF9FC
-	.4byte lbl_803FFA00
-	.4byte lbl_803FF984
-	.4byte lbl_803FF988
-	.4byte lbl_803FF9F0
-	.4byte lbl_803FF9F4
-	.4byte lbl_803FF9F8
+	.4byte GetRuntimeTypeInfo__Q23seq12SequenceRootCFv
+	.4byte __dt__Q23seq12SequenceRootFv
+	.4byte nextAction__Q23seq12SequenceRootCFv
+	.4byte createChildSequence__Q23seq12SequenceRootCFv
+	.4byte onChildSequenceEnd__Q23seq12SequenceRootFRQ23seq9ISequence
+	.4byte createScene__Q23seq12SequenceRootCFv
+	.4byte onSceneEnd__Q23seq12SequenceRootFRQ23scn6IScene
 	.4byte 0

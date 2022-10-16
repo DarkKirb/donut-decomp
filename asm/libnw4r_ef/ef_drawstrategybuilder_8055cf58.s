@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CF58
-lbl_8055CF58:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@billboardStrategy"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@billboardStrategy":
 	.skip 0x1
 
-.global lbl_8055CF59
-lbl_8055CF59:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@directionalStrategy@0"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@directionalStrategy@0":
 	.skip 0x1
 
-.global lbl_8055CF5A
-lbl_8055CF5A:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@freeStrategy@1"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@freeStrategy@1":
 	.skip 0x1
 
-.global lbl_8055CF5B
-lbl_8055CF5B:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@lineStrategy@2"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@lineStrategy@2":
 	.skip 0x1
 
-.global lbl_8055CF5C
-lbl_8055CF5C:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@pointStrategy@3"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@pointStrategy@3":
 	.skip 0x1
 
-.global lbl_8055CF5D
-lbl_8055CF5D:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@stripeStrategy@4"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@stripeStrategy@4":
 	.skip 0x1
 
-.global lbl_8055CF5E
-lbl_8055CF5E:
+.global "@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@smoothStripeStrategy@5"
+"@GUARD@Create__Q34nw4r2ef19DrawStrategyBuilderFUl@smoothStripeStrategy@5":
 	.skip 0x2

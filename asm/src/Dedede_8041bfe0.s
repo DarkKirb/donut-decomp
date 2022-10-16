@@ -1,56 +1,56 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8041BFE0
-lbl_8041BFE0:
+.global "@LOCAL@Anim__Q53scn4step4hero9modeldesc6DededeFv@ENTRIES@0"
+"@LOCAL@Anim__Q53scn4step4hero9modeldesc6DededeFv@ENTRIES@0":
 
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA58
+	.4byte "@48728_8055AA58"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA60
+	.4byte "@48729_8055AA60"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA68
+	.4byte "@48730_8055AA68"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA70
+	.4byte "@48731_8055AA70"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA78
+	.4byte "@48732_8055AA78"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA80
+	.4byte "@48733_8055AA80"
 	.4byte 0x0000000D
-	.4byte lbl_80488CF8
+	.4byte "@48734_80488CF8"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA88
+	.4byte "@48735_8055AA88"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA90
+	.4byte "@48736_8055AA90"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA98
+	.4byte "@48737_8055AA98"
 	.4byte 0x0000000D
-	.4byte lbl_80488D04
+	.4byte "@48738_80488D04"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAA0
+	.4byte "@48739_8055AAA0"
 	.4byte 0x0000000D
-	.4byte lbl_80488D10
+	.4byte "@48740_80488D10"
 	.4byte 0x0000000D
-	.4byte lbl_80488D1C
+	.4byte "@48741_80488D1C"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAA8
+	.4byte "@48742_8055AAA8"
 	.4byte 0x0000000D
-	.4byte lbl_80488D2C
+	.4byte "@48743_80488D2C"
 	.4byte 0x0000000D
-	.4byte lbl_80488D38
+	.4byte "@48744_80488D38"
 	.4byte 0x0000000D
-	.4byte lbl_80488D44
+	.4byte "@48745_80488D44"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAB0
+	.4byte "@48746_8055AAB0"
 	.4byte 0x0000000D
-	.4byte lbl_80488D50
+	.4byte "@48747_80488D50"
 	.4byte 0x0000000D
-	.4byte lbl_80488D5C
+	.4byte "@48748_80488D5C"
 	.4byte 0x0000000D
-	.4byte lbl_80488D6C
+	.4byte "@48749_80488D6C"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAB8
+	.4byte "@48750_8055AAB8"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -64,15 +64,15 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AAC0
+	.4byte "@48751_8055AAC0"
 	.4byte 0x0000000D
-	.4byte lbl_80488D7C
+	.4byte "@48752_80488D7C"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAC8
+	.4byte "@48753_8055AAC8"
 	.4byte 0x0000000D
-	.4byte lbl_80488D88
+	.4byte "@48754_80488D88"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAD0
+	.4byte "@48755_8055AAD0"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -94,7 +94,7 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AAC0
+	.4byte "@48751_8055AAC0"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -106,21 +106,21 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80488D94
+	.4byte "@48756_80488D94"
 	.4byte 0x0000000D
-	.4byte lbl_80488DA4
+	.4byte "@48757_80488DA4"
 	.4byte 0x0000000D
-	.4byte lbl_80488DB0
+	.4byte "@48758_80488DB0"
 	.4byte 0x0000000D
-	.4byte lbl_80488DC0
+	.4byte "@48759_80488DC0"
 	.4byte 0x0000000D
-	.4byte lbl_80488DD0
+	.4byte "@48760_80488DD0"
 	.4byte 0x0000000D
-	.4byte lbl_80488DDC
+	.4byte "@48761_80488DDC"
 	.4byte 0x0000000D
-	.4byte lbl_80488D7C
+	.4byte "@48752_80488D7C"
 	.4byte 0x0000000D
-	.4byte lbl_80488DE8
+	.4byte "@48762_80488DE8"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -144,25 +144,25 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AAD4
+	.4byte "@48763_8055AAD4"
 	.4byte 0x0000000D
-	.4byte lbl_80488DF4
+	.4byte "@48764_80488DF4"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAD4
+	.4byte "@48763_8055AAD4"
 	.4byte 0x0000000D
-	.4byte lbl_80488DF4
+	.4byte "@48764_80488DF4"
 	.4byte 0x0000000D
-	.4byte lbl_80488E00
+	.4byte "@48765_80488E00"
 	.4byte 0x0000000D
-	.4byte lbl_8055AADC
+	.4byte "@48766_8055AADC"
 	.4byte 0x0000000D
-	.4byte lbl_80488E0C
+	.4byte "@48767_80488E0C"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAE4
+	.4byte "@48768_8055AAE4"
 	.4byte 0x0000000D
-	.4byte lbl_80488E18
+	.4byte "@48769_80488E18"
 	.4byte 0x0000000D
-	.4byte lbl_80488E30
+	.4byte "@48770_80488E30"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -176,115 +176,115 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AAE8
+	.4byte "@48771_8055AAE8"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAF0
+	.4byte "@48772_8055AAF0"
 	.4byte 0x0000000D
-	.4byte lbl_8055AAF8
+	.4byte "@48773_8055AAF8"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB00
+	.4byte "@48774_8055AB00"
 	.4byte 0x0000000D
-	.4byte lbl_80488E44
+	.4byte "@48775_80488E44"
 	.4byte 0x0000000D
-	.4byte lbl_80488E50
+	.4byte "@48776_80488E50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB08
+	.4byte "@48777_8055AB08"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB10
+	.4byte "@48778_8055AB10"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB18
+	.4byte "@48779_8055AB18"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB20
+	.4byte "@48780_8055AB20"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB28
+	.4byte "@48781_8055AB28"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB30
+	.4byte "@48782_8055AB30"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB38
+	.4byte "@48783_8055AB38"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB40
+	.4byte "@48784_8055AB40"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA78
+	.4byte "@48732_8055AA78"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB48
+	.4byte "@48785_8055AB48"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AB50
+	.4byte "@48786_8055AB50"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8055AB58
+	.4byte "@48787_8055AB58"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB60
+	.4byte "@48788_8055AB60"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80488E5C
+	.4byte "@48789_80488E5C"
 	.4byte 0x0000000D
-	.4byte lbl_80488E68
+	.4byte "@48790_80488E68"
 	.4byte 0x0000000D
-	.4byte lbl_80488E74
+	.4byte "@48791_80488E74"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA88
+	.4byte "@48735_8055AA88"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB68
+	.4byte "@48792_8055AB68"
 	.4byte 0x0000000D
-	.4byte lbl_80488E80
+	.4byte "@48793_80488E80"
 	.4byte 0x0000000D
-	.4byte lbl_80488E8C
+	.4byte "@48794_80488E8C"
 	.4byte 0x0000000D
-	.4byte lbl_80488EA0
+	.4byte "@48795_80488EA0"
 	.4byte 0x0000000D
-	.4byte lbl_80488EB0
+	.4byte "@48796_80488EB0"
 	.4byte 0x0000000D
-	.4byte lbl_80488EBC
+	.4byte "@48797_80488EBC"
 	.4byte 0x0000000D
-	.4byte lbl_80488ECC
+	.4byte "@48798_80488ECC"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB70
+	.4byte "@48799_8055AB70"
 	.4byte 0x0000000D
-	.4byte lbl_80488EDC
+	.4byte "@48800_80488EDC"
 	.4byte 0x0000000D
-	.4byte lbl_80488EE8
+	.4byte "@48801_80488EE8"
 	.4byte 0x0000000D
-	.4byte lbl_80488EF8
+	.4byte "@48802_80488EF8"
 	.4byte 0x0000000D
-	.4byte lbl_80488F04
+	.4byte "@48803_80488F04"
 	.4byte 0x0000000D
-	.4byte lbl_80488F10
+	.4byte "@48804_80488F10"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB78
+	.4byte "@48805_8055AB78"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_80488F20
+	.4byte "@48806_80488F20"
 	.4byte 0x0000000D
-	.4byte lbl_80488F2C
+	.4byte "@48807_80488F2C"
 	.4byte 0x0000000D
-	.4byte lbl_80488F38
+	.4byte "@48808_80488F38"
 	.4byte 0x0000000D
-	.4byte lbl_80488F48
+	.4byte "@48809_80488F48"
 	.4byte 0x0000000D
-	.4byte lbl_80488F58
+	.4byte "@48810_80488F58"
 	.4byte 0x0000000D
-	.4byte lbl_80488F70
+	.4byte "@48811_80488F70"
 	.4byte 0x0000000D
-	.4byte lbl_80488F80
+	.4byte "@48812_80488F80"
 	.4byte 0x0000000D
-	.4byte lbl_80488F98
+	.4byte "@48813_80488F98"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB80
+	.4byte "@48814_8055AB80"
 	.4byte 0x0000000D
-	.4byte lbl_80488FA4
+	.4byte "@48815_80488FA4"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -724,59 +724,59 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80488FB0
+	.4byte "@48816_80488FB0"
 	.4byte 0x0000000D
-	.4byte lbl_80488FC8
+	.4byte "@48817_80488FC8"
 	.4byte 0x0000000D
-	.4byte lbl_80488FDC
+	.4byte "@48818_80488FDC"
 	.4byte 0x0000000D
-	.4byte lbl_80488FF0
+	.4byte "@48819_80488FF0"
 	.4byte 0x0000000D
-	.4byte lbl_80489000
+	.4byte "@48820_80489000"
 	.4byte 0x0000000D
-	.4byte lbl_80489014
+	.4byte "@48821_80489014"
 	.4byte 0x0000000D
-	.4byte lbl_80489028
+	.4byte "@48822_80489028"
 	.4byte 0x0000000D
-	.4byte lbl_8048903C
+	.4byte "@48823_8048903C"
 	.4byte 0x0000000D
-	.4byte lbl_80489050
+	.4byte "@48824_80489050"
 	.4byte 0x0000000D
-	.4byte lbl_80489068
+	.4byte "@48825_80489068"
 	.4byte 0x0000000D
-	.4byte lbl_80489078
+	.4byte "@48826_80489078"
 	.4byte 0x0000000D
-	.4byte lbl_80489088
+	.4byte "@48827_80489088"
 	.4byte 0x0000000D
-	.4byte lbl_80489098
+	.4byte "@48828_80489098"
 	.4byte 0x0000000D
-	.4byte lbl_804890A4
+	.4byte "@48829_804890A4"
 	.4byte 0x0000000D
-	.4byte lbl_804890B0
+	.4byte "@48830_804890B0"
 	.4byte 0x0000000D
-	.4byte lbl_804890C0
+	.4byte "@48831_804890C0"
 	.4byte 0x0000000D
-	.4byte lbl_804890CC
+	.4byte "@48832_804890CC"
 	.4byte 0x0000000D
-	.4byte lbl_804890E0
+	.4byte "@48833_804890E0"
 	.4byte 0x0000000D
-	.4byte lbl_804890F0
+	.4byte "@48834_804890F0"
 	.4byte 0x0000000D
-	.4byte lbl_80489100
+	.4byte "@48835_80489100"
 	.4byte 0x0000000D
-	.4byte lbl_80489110
+	.4byte "@48836_80489110"
 	.4byte 0x0000000D
-	.4byte lbl_80489128
+	.4byte "@48837_80489128"
 	.4byte 0x0000000D
-	.4byte lbl_8048913C
+	.4byte "@48838_8048913C"
 	.4byte 0x0000000D
-	.4byte lbl_8048914C
+	.4byte "@48839_8048914C"
 	.4byte 0x0000000D
-	.4byte lbl_80489160
+	.4byte "@48840_80489160"
 	.4byte 0x0000000D
-	.4byte lbl_80489170
+	.4byte "@48841_80489170"
 	.4byte 0x0000000D
-	.4byte lbl_80489180
+	.4byte "@48842_80489180"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0
@@ -858,39 +858,39 @@ lbl_8041BFE0:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80489194
+	.4byte "@48843_80489194"
 	.4byte 0x0000000D
-	.4byte lbl_804891A0
+	.4byte "@48844_804891A0"
 	.4byte 0x0000000D
-	.4byte lbl_804891AC
+	.4byte "@48845_804891AC"
 	.4byte 0x0000000D
-	.4byte lbl_804891B8
+	.4byte "@48846_804891B8"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB88
+	.4byte "@48847_8055AB88"
 	.4byte 0x0000000D
-	.4byte lbl_804891C4
+	.4byte "@48848_804891C4"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AA50
+	.4byte "@48727_8055AA50"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB90
+	.4byte "@48849_8055AB90"
 	.4byte 0x0000000D
-	.4byte lbl_8055AB98
+	.4byte "@48850_8055AB98"
 	.4byte 0x0000000D
-	.4byte lbl_804891D0
+	.4byte "@48851_804891D0"
 	.4byte 0x0000000D
-	.4byte lbl_8055ABA0
+	.4byte "@48852_8055ABA0"
 	.4byte 0x0000000D
-	.4byte lbl_804891DC
+	.4byte "@48853_804891DC"
 	.4byte 0x0000000D
 	.4byte 0
 	.4byte 0

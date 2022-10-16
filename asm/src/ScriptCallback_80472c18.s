@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80472C18
-lbl_80472C18:
+.global __vt__Q43scn4step5enemy14ScriptCallback
+__vt__Q43scn4step5enemy14ScriptCallback:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8028DA5C
-	.4byte lbl_8028DAD8
-	.4byte lbl_8028DB04
-	.4byte lbl_8028DB10
+	.4byte __dt__Q43scn4step5enemy14ScriptCallbackFv
+	.4byte onScriptRequested__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6ScriptUlUl
+	.4byte onScriptExecPre__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script
+	.4byte onScriptExecPost__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script

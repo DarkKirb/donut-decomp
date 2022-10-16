@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80436020
-lbl_80436020:
+.global __EarlySizeTable
+__EarlySizeTable:
 
 	.4byte 0x0000009D
 	.4byte 0x000001DF
@@ -53,8 +53,8 @@ lbl_80436020:
 	.4byte 0x3F333333
 	.4byte 0x3E99999A
 
-.global lbl_804360E0
-lbl_804360E0:
+.global __FilterSizeTable
+__FilterSizeTable:
 
 	.4byte 0x000006FD
 	.4byte 0x000007CF

@@ -1,29 +1,29 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_804056C0
-lbl_804056C0:
+.global __ct__Q24util14AnimControllerFf
+__ct__Q24util14AnimControllerFf:
 /* 804056C0 00401500  D0 23 00 00 */	stfs f1, 0x0(r3)
-/* 804056C4 00401504  C0 02 E4 08 */	lfs f0, lbl_80564388@sda21(r2)
+/* 804056C4 00401504  C0 02 E4 08 */	lfs f0, "@48941_80564388"@sda21(r2)
 /* 804056C8 00401508  D0 03 00 04 */	stfs f0, 0x4(r3)
-/* 804056CC 0040150C  C0 02 E4 0C */	lfs f0, lbl_8056438C@sda21(r2)
+/* 804056CC 0040150C  C0 02 E4 0C */	lfs f0, "@48942_8056438C"@sda21(r2)
 /* 804056D0 00401510  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 804056D4 00401514  38 00 00 00 */	li r0, 0x0
 /* 804056D8 00401518  98 03 00 0C */	stb r0, 0xc(r3)
 /* 804056DC 0040151C  98 03 00 0D */	stb r0, 0xd(r3)
 /* 804056E0 00401520  98 03 00 0E */	stb r0, 0xe(r3)
 /* 804056E4 00401524  4E 80 00 20 */	blr
-.global lbl_804056E8
-lbl_804056E8:
-/* 804056E8 00401528  C0 02 E4 08 */	lfs f0, lbl_80564388@sda21(r2)
+.global setFrameToHead__Q24util14AnimControllerFv
+setFrameToHead__Q24util14AnimControllerFv:
+/* 804056E8 00401528  C0 02 E4 08 */	lfs f0, "@48941_80564388"@sda21(r2)
 /* 804056EC 0040152C  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 804056F0 00401530  4E 80 00 20 */	blr
-.global lbl_804056F4
-lbl_804056F4:
+.global setFrameToTail__Q24util14AnimControllerFv
+setFrameToTail__Q24util14AnimControllerFv:
 /* 804056F4 00401534  C0 23 00 00 */	lfs f1, 0x0(r3)
-/* 804056F8 00401538  4B D2 50 08 */	b lbl_8012A700
-.global lbl_804056FC
-lbl_804056FC:
+/* 804056F8 00401538  4B D2 50 08 */	b setSpeakerVol__Q210homebutton10ControllerFf
+.global updateFrame__Q24util14AnimControllerFv
+updateFrame__Q24util14AnimControllerFv:
 /* 804056FC 0040153C  88 03 00 0D */	lbz r0, 0xd(r3)
 /* 80405700 00401540  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80405704 00401544  4D 82 00 20 */	beqlr
@@ -35,7 +35,7 @@ lbl_804056FC:
 /* 8040571C 0040155C  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 80405720 00401560  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80405724 00401564  41 82 00 68 */	beq lbl_8040578C
-/* 80405728 00401568  C0 02 E4 08 */	lfs f0, lbl_80564388@sda21(r2)
+/* 80405728 00401568  C0 02 E4 08 */	lfs f0, "@48941_80564388"@sda21(r2)
 /* 8040572C 0040156C  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 80405730 00401570  41 82 00 5C */	beq lbl_8040578C
 /* 80405734 00401574  C0 43 00 00 */	lfs f2, 0x0(r3)
@@ -73,26 +73,26 @@ lbl_80405784:
 .global lbl_8040578C
 lbl_8040578C:
 /* 8040578C 004015CC  D0 63 00 04 */	stfs f3, 0x4(r3)
-/* 80405790 004015D0  48 00 00 A0 */	b lbl_80405830
+/* 80405790 004015D0  48 00 00 A0 */	b checkAnimEnd__Q24util14AnimControllerFv
 /* 80405794 004015D4  4E 80 00 20 */	blr
-.global lbl_80405798
-lbl_80405798:
+.global start__Q24util14AnimControllerFb
+start__Q24util14AnimControllerFb:
 /* 80405798 004015D8  98 83 00 0C */	stb r4, 0xc(r3)
 /* 8040579C 004015DC  38 00 00 01 */	li r0, 0x1
 /* 804057A0 004015E0  98 03 00 0D */	stb r0, 0xd(r3)
 /* 804057A4 004015E4  38 00 00 00 */	li r0, 0x0
 /* 804057A8 004015E8  98 03 00 0E */	stb r0, 0xe(r3)
-/* 804057AC 004015EC  48 00 00 84 */	b lbl_80405830
-.global lbl_804057B0
-lbl_804057B0:
+/* 804057AC 004015EC  48 00 00 84 */	b checkAnimEnd__Q24util14AnimControllerFv
+.global stop__Q24util14AnimControllerFv
+stop__Q24util14AnimControllerFv:
 /* 804057B0 004015F0  88 03 00 0D */	lbz r0, 0xd(r3)
 /* 804057B4 004015F4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 804057B8 004015F8  4D 82 00 20 */	beqlr
 /* 804057BC 004015FC  38 00 00 00 */	li r0, 0x0
 /* 804057C0 00401600  98 03 00 0D */	stb r0, 0xd(r3)
 /* 804057C4 00401604  4E 80 00 20 */	blr
-.global lbl_804057C8
-lbl_804057C8:
+.global isAnimEnd__Q24util14AnimControllerCFv
+isAnimEnd__Q24util14AnimControllerCFv:
 /* 804057C8 00401608  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 804057CC 0040160C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 804057D0 00401610  41 82 00 0C */	beq lbl_804057DC
@@ -100,7 +100,7 @@ lbl_804057C8:
 /* 804057D8 00401618  4E 80 00 20 */	blr
 .global lbl_804057DC
 lbl_804057DC:
-/* 804057DC 0040161C  C0 22 E4 08 */	lfs f1, lbl_80564388@sda21(r2)
+/* 804057DC 0040161C  C0 22 E4 08 */	lfs f1, "@48941_80564388"@sda21(r2)
 /* 804057E0 00401620  C0 03 00 08 */	lfs f0, 0x8(r3)
 /* 804057E4 00401624  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 804057E8 00401628  40 80 00 20 */	bge lbl_80405808
@@ -125,14 +125,14 @@ lbl_80405808:
 lbl_80405828:
 /* 80405828 00401668  38 60 00 00 */	li r3, 0x0
 /* 8040582C 0040166C  4E 80 00 20 */	blr
-.global lbl_80405830
-lbl_80405830:
+.global checkAnimEnd__Q24util14AnimControllerFv
+checkAnimEnd__Q24util14AnimControllerFv:
 /* 80405830 00401670  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80405834 00401674  7C 08 02 A6 */	mflr r0
 /* 80405838 00401678  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8040583C 0040167C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80405840 00401680  7C 7F 1B 78 */	mr r31, r3
-/* 80405844 00401684  4B FF FF 85 */	bl lbl_804057C8
+/* 80405844 00401684  4B FF FF 85 */	bl isAnimEnd__Q24util14AnimControllerCFv
 /* 80405848 00401688  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8040584C 0040168C  41 82 00 0C */	beq lbl_80405858
 /* 80405850 00401690  38 00 00 00 */	li r0, 0x0

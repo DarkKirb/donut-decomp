@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803CA19C
-lbl_803CA19C:
+.global at__Q43scn4step3map16ItemDataAccessorCFUl
+at__Q43scn4step3map16ItemDataAccessorCFUl:
 /* 803CA19C 003C5FDC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803CA1A0 003C5FE0  1C 04 00 18 */	mulli r0, r4, 0x18
 /* 803CA1A4 003C5FE4  7C 63 02 14 */	add r3, r3, r0

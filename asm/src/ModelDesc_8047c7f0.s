@@ -1,29 +1,29 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047C7F0
-lbl_8047C7F0:
+.global "@50123_8047C7F0"
+"@50123_8047C7F0":
 
 	.4byte 0x43413255
 	.4byte 0x70426F64
 	.4byte 0x794A0000
 
-.global lbl_8047C7FC
-lbl_8047C7FC:
+.global "@50129_8047C7FC"
+"@50129_8047C7FC":
 
 	.4byte 0x44616D61
 	.4byte 0x67654574
 	.4byte 0x63000000
 
-.global lbl_8047C808
-lbl_8047C808:
+.global "@50131_8047C808"
+"@50131_8047C808":
 
 	.4byte 0x4A756D70
 	.4byte 0x53746172
 	.4byte 0x74000000
 
-.global lbl_8047C814
-lbl_8047C814:
+.global "@50133_8047C814"
+"@50133_8047C814":
 
 	.4byte 0x53697374
 	.4byte 0x6572426F
@@ -35,8 +35,8 @@ lbl_8047C814:
 	.4byte 0x45786563
 	.4byte 0
 
-.global lbl_8047C838
-lbl_8047C838:
+.global "@50134_8047C838"
+"@50134_8047C838":
 
 	.4byte 0x53697374
 	.4byte 0x6572426F
@@ -49,15 +49,15 @@ lbl_8047C838:
 	.4byte 0x2E457865
 	.4byte 0x63000000
 
-.global lbl_8047C860
-lbl_8047C860:
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy11sisterbound23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy11sisterbound23@unnamed@ModelDesc_cpp@":
 
 	.4byte 0
 	.4byte 0
 	.4byte 0x00000004
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8047C814
+	.4byte "@50133_8047C814"
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -92,7 +92,7 @@ lbl_8047C860:
 	.4byte 0x00000002
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8047C838
+	.4byte "@50134_8047C838"
 	.4byte 0
 	.4byte 0
 	.4byte 0

@@ -1,12 +1,12 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801D8CA4
-lbl_801D8CA4:
+.global __ct__Q25ocoll18SearchAttackResultFv
+__ct__Q25ocoll18SearchAttackResultFv:
 /* 801D8CA4 001D4AE4  38 80 00 00 */	li r4, 0x0
 /* 801D8CA8 001D4AE8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801D8CAC 001D4AEC  38 A3 00 08 */	addi r5, r3, 0x8
-/* 801D8CB0 001D4AF0  C0 02 9D 20 */	lfs f0, lbl_8055FCA0@sda21(r2)
+/* 801D8CB0 001D4AF0  C0 02 9D 20 */	lfs f0, "@50028"@sda21(r2)
 /* 801D8CB4 001D4AF4  38 03 01 48 */	addi r0, r3, 0x148
 .global lbl_801D8CB8
 lbl_801D8CB8:
@@ -21,8 +21,8 @@ lbl_801D8CB8:
 /* 801D8CD8 001D4B18  7C 05 00 40 */	cmplw r5, r0
 /* 801D8CDC 001D4B1C  41 80 FF DC */	blt lbl_801D8CB8
 /* 801D8CE0 001D4B20  4E 80 00 20 */	blr
-.global lbl_801D8CE4
-lbl_801D8CE4:
+.global add__Q25ocoll18SearchAttackResultFRCQ35ocoll18SearchAttackResult5Datum
+add__Q25ocoll18SearchAttackResultFRCQ35ocoll18SearchAttackResult5Datum:
 /* 801D8CE4 001D4B24  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D8CE8 001D4B28  7C 08 02 A6 */	mflr r0
 /* 801D8CEC 001D4B2C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -36,7 +36,7 @@ lbl_801D8CE4:
 /* 801D8D0C 001D4B4C  83 E3 00 00 */	lwz r31, 0x0(r3)
 /* 801D8D10 001D4B50  7F E3 FB 78 */	mr r3, r31
 /* 801D8D14 001D4B54  38 80 00 0A */	li r4, 0xa
-/* 801D8D18 001D4B58  4B E4 B7 89 */	bl lbl_800244A0
+/* 801D8D18 001D4B58  4B E4 B7 89 */	bl DefaultSwitchThreadCallback
 /* 801D8D1C 001D4B5C  57 E0 28 34 */	slwi r0, r31, 5
 /* 801D8D20 001D4B60  7C 9D 02 14 */	add r4, r29, r0
 /* 801D8D24 001D4B64  80 1E 00 00 */	lwz r0, 0x0(r30)
@@ -64,8 +64,8 @@ lbl_801D8D68:
 /* 801D8D74 001D4BB4  7C 08 03 A6 */	mtlr r0
 /* 801D8D78 001D4BB8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D8D7C 001D4BBC  4E 80 00 20 */	blr
-.global lbl_801D8D80
-lbl_801D8D80:
+.global getData__Q25ocoll18SearchAttackResultCFUl
+getData__Q25ocoll18SearchAttackResultCFUl:
 /* 801D8D80 001D4BC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D8D84 001D4BC4  7C 08 02 A6 */	mflr r0
 /* 801D8D88 001D4BC8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -75,10 +75,10 @@ lbl_801D8D80:
 /* 801D8D98 001D4BD8  7C 9F 23 78 */	mr r31, r4
 /* 801D8D9C 001D4BDC  7F E3 FB 78 */	mr r3, r31
 /* 801D8DA0 001D4BE0  80 9E 00 00 */	lwz r4, 0x0(r30)
-/* 801D8DA4 001D4BE4  4B E4 B6 FD */	bl lbl_800244A0
+/* 801D8DA4 001D4BE4  4B E4 B6 FD */	bl DefaultSwitchThreadCallback
 /* 801D8DA8 001D4BE8  7F E3 FB 78 */	mr r3, r31
 /* 801D8DAC 001D4BEC  38 80 00 0A */	li r4, 0xa
-/* 801D8DB0 001D4BF0  4B E4 B6 F1 */	bl lbl_800244A0
+/* 801D8DB0 001D4BF0  4B E4 B6 F1 */	bl DefaultSwitchThreadCallback
 /* 801D8DB4 001D4BF4  57 E0 28 34 */	slwi r0, r31, 5
 /* 801D8DB8 001D4BF8  7C 7E 02 14 */	add r3, r30, r0
 /* 801D8DBC 001D4BFC  38 63 00 08 */	addi r3, r3, 0x8

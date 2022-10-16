@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8032B1D0
-lbl_8032B1D0:
+.global __ct__Q53scn4step7gimmick10zoneswitch7ManagerFRQ33scn4step9Component
+__ct__Q53scn4step7gimmick10zoneswitch7ManagerFRQ33scn4step9Component:
 /* 8032B1D0 00327010  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8032B1D4 00327014  7C 08 02 A6 */	mflr r0
 /* 8032B1D8 00327018  90 01 00 34 */	stw r0, 0x34(r1)
@@ -11,8 +11,8 @@ lbl_8032B1D0:
 /* 8032B1E4 00327024  7C 7A 1B 78 */	mr r26, r3
 /* 8032B1E8 00327028  7C 9B 23 78 */	mr r27, r4
 /* 8032B1EC 0032702C  7F 63 DB 78 */	mr r3, r27
-/* 8032B1F0 00327030  4B EF 5A 9D */	bl lbl_80220C8C
-/* 8032B1F4 00327034  48 09 F5 65 */	bl lbl_803CA758
+/* 8032B1F0 00327030  4B EF 5A 9D */	bl mapMemManager__Q33scn4step9ComponentFv
+/* 8032B1F4 00327034  48 09 F5 65 */	bl allocator__Q43scn4step3map10MemManagerFv
 /* 8032B1F8 00327038  90 7A 00 00 */	stw r3, 0x0(r26)
 /* 8032B1FC 0032703C  38 80 00 00 */	li r4, 0x0
 /* 8032B200 00327040  90 9A 00 04 */	stw r4, 0x4(r26)
@@ -25,14 +25,14 @@ lbl_8032B210:
 /* 8032B214 00327054  94 83 00 08 */	stwu r4, 0x8(r3)
 /* 8032B218 00327058  42 00 FF F8 */	bdnz lbl_8032B210
 /* 8032B21C 0032705C  7F 63 DB 78 */	mr r3, r27
-/* 8032B220 00327060  4B EB F7 D1 */	bl lbl_801EA9F0
-/* 8032B224 00327064  48 09 E8 75 */	bl lbl_803C9A98
+/* 8032B220 00327060  4B EB F7 D1 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
+/* 8032B224 00327064  48 09 E8 75 */	bl accessor__Q43scn4step3map8DataFileCFv
 /* 8032B228 00327068  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8032B22C 0032706C  38 61 00 08 */	addi r3, r1, 0x8
-/* 8032B230 00327070  48 09 DE FD */	bl lbl_803C912C
+/* 8032B230 00327070  48 09 DE FD */	bl gimmickDataAccessor__Q43scn4step3map12DataAccessorCFv
 /* 8032B234 00327074  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8032B238 00327078  38 61 00 0C */	addi r3, r1, 0xc
-/* 8032B23C 0032707C  48 09 ED C9 */	bl lbl_803CA004
+/* 8032B23C 0032707C  48 09 ED C9 */	bl zoneSwitchEntryCount__Q43scn4step3map19GimmickDataAccessorCFv
 /* 8032B240 00327080  7C 7D 1B 78 */	mr r29, r3
 /* 8032B244 00327084  28 03 00 20 */	cmplwi r3, 0x20
 /* 8032B248 00327088  40 81 00 08 */	ble lbl_8032B250
@@ -47,23 +47,23 @@ lbl_8032B250:
 lbl_8032B260:
 /* 8032B260 003270A0  38 61 00 0C */	addi r3, r1, 0xc
 /* 8032B264 003270A4  7F 84 E3 78 */	mr r4, r28
-/* 8032B268 003270A8  48 09 ED A5 */	bl lbl_803CA00C
+/* 8032B268 003270A8  48 09 ED A5 */	bl zoneSwitchEntryAt__Q43scn4step3map19GimmickDataAccessorCFUl
 /* 8032B26C 003270AC  7C 7F 1B 78 */	mr r31, r3
 /* 8032B270 003270B0  38 60 00 24 */	li r3, 0x24
 /* 8032B274 003270B4  80 9A 00 00 */	lwz r4, 0x0(r26)
-/* 8032B278 003270B8  4B E9 44 95 */	bl lbl_801BF70C
+/* 8032B278 003270B8  4B E9 44 95 */	bl __nw__FUlRQ23mem10IAllocator
 /* 8032B27C 003270BC  7C 7E 1B 78 */	mr r30, r3
 /* 8032B280 003270C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8032B284 003270C4  41 82 00 14 */	beq lbl_8032B298
 /* 8032B288 003270C8  7F E4 FB 78 */	mr r4, r31
 /* 8032B28C 003270CC  7F 65 DB 78 */	mr r5, r27
-/* 8032B290 003270D0  48 00 02 21 */	bl lbl_8032B4B0
+/* 8032B290 003270D0  48 00 02 21 */	bl __ct__Q53scn4step7gimmick10zoneswitch10ZoneSwitchFRCQ43scn4step3map18BinGmkGeneralEntryRQ33scn4step9Component
 /* 8032B294 003270D4  7C 7E 1B 78 */	mr r30, r3
 .global lbl_8032B298
 lbl_8032B298:
 /* 8032B298 003270D8  38 7A 00 08 */	addi r3, r26, 0x8
 /* 8032B29C 003270DC  80 9A 00 04 */	lwz r4, 0x4(r26)
-/* 8032B2A0 003270E0  4B E9 4C E5 */	bl lbl_801BFF84
+/* 8032B2A0 003270E0  4B E9 4C E5 */	bl "__vc__Q33hel6common26Array<PQ23mem8HeapUnit,32>FUl"
 /* 8032B2A4 003270E4  93 C3 00 00 */	stw r30, 0x0(r3)
 /* 8032B2A8 003270E8  80 7A 00 04 */	lwz r3, 0x4(r26)
 /* 8032B2AC 003270EC  38 03 00 01 */	addi r0, r3, 0x1
@@ -82,8 +82,8 @@ lbl_8032B2C0:
 /* 8032B2D0 00327110  7C 08 03 A6 */	mtlr r0
 /* 8032B2D4 00327114  38 21 00 30 */	addi r1, r1, 0x30
 /* 8032B2D8 00327118  4E 80 00 20 */	blr
-.global lbl_8032B2DC
-lbl_8032B2DC:
+.global "__dt__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>Fv"
+"__dt__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>Fv":
 /* 8032B2DC 0032711C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8032B2E0 00327120  7C 08 02 A6 */	mflr r0
 /* 8032B2E4 00327124  90 01 00 24 */	stw r0, 0x24(r1)
@@ -100,11 +100,11 @@ lbl_8032B308:
 /* 8032B308 00327148  3B A3 FF FF */	addi r29, r3, -0x1
 /* 8032B30C 0032714C  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8032B310 00327150  7F A4 EB 78 */	mr r4, r29
-/* 8032B314 00327154  4B E9 4C 71 */	bl lbl_801BFF84
+/* 8032B314 00327154  4B E9 4C 71 */	bl "__vc__Q33hel6common26Array<PQ23mem8HeapUnit,32>FUl"
 /* 8032B318 00327158  83 C3 00 00 */	lwz r30, 0x0(r3)
 /* 8032B31C 0032715C  38 7B 00 08 */	addi r3, r27, 0x8
 /* 8032B320 00327160  7F A4 EB 78 */	mr r4, r29
-/* 8032B324 00327164  4B E9 4C 61 */	bl lbl_801BFF84
+/* 8032B324 00327164  4B E9 4C 61 */	bl "__vc__Q33hel6common26Array<PQ23mem8HeapUnit,32>FUl"
 /* 8032B328 00327168  93 E3 00 00 */	stw r31, 0x0(r3)
 /* 8032B32C 0032716C  80 7B 00 04 */	lwz r3, 0x4(r27)
 /* 8032B330 00327170  38 03 FF FF */	addi r0, r3, -0x1
@@ -113,7 +113,7 @@ lbl_8032B308:
 /* 8032B33C 0032717C  41 82 00 10 */	beq lbl_8032B34C
 /* 8032B340 00327180  38 7E 00 04 */	addi r3, r30, 0x4
 /* 8032B344 00327184  38 80 FF FF */	li r4, -0x1
-/* 8032B348 00327188  4B E7 4A F5 */	bl lbl_8019FE3C
+/* 8032B348 00327188  4B E7 4A F5 */	bl __dt__Q33hel3geo4RectFv
 .global lbl_8032B34C
 lbl_8032B34C:
 /* 8032B34C 0032718C  80 7B 00 00 */	lwz r3, 0x0(r27)
@@ -129,12 +129,12 @@ lbl_8032B364:
 /* 8032B36C 003271AC  40 82 FF 9C */	bne lbl_8032B308
 /* 8032B370 003271B0  7F 63 DB 78 */	mr r3, r27
 /* 8032B374 003271B4  38 80 00 00 */	li r4, 0x0
-/* 8032B378 003271B8  4B E4 A7 F1 */	bl lbl_80175B68
+/* 8032B378 003271B8  4B E4 A7 F1 */	bl __dt__Q23scn6ISceneFv
 /* 8032B37C 003271BC  7F 80 07 34 */	extsh r0, r28
 /* 8032B380 003271C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8032B384 003271C4  40 81 00 0C */	ble lbl_8032B390
 /* 8032B388 003271C8  7F 63 DB 78 */	mr r3, r27
-/* 8032B38C 003271CC  4B E9 43 89 */	bl lbl_801BF714
+/* 8032B38C 003271CC  4B E9 43 89 */	bl __dl__FPv
 .global lbl_8032B390
 lbl_8032B390:
 /* 8032B390 003271D0  7F 63 DB 78 */	mr r3, r27
@@ -144,8 +144,8 @@ lbl_8032B390:
 /* 8032B3A0 003271E0  7C 08 03 A6 */	mtlr r0
 /* 8032B3A4 003271E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032B3A8 003271E8  4E 80 00 20 */	blr
-.global lbl_8032B3AC
-lbl_8032B3AC:
+.global __dt__Q53scn4step7gimmick10zoneswitch7ManagerFv
+__dt__Q53scn4step7gimmick10zoneswitch7ManagerFv:
 /* 8032B3AC 003271EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8032B3B0 003271F0  7C 08 02 A6 */	mflr r0
 /* 8032B3B4 003271F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -156,12 +156,12 @@ lbl_8032B3AC:
 /* 8032B3C8 00327208  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8032B3CC 0032720C  41 82 00 20 */	beq lbl_8032B3EC
 /* 8032B3D0 00327210  38 80 FF FF */	li r4, -0x1
-/* 8032B3D4 00327214  4B FF FF 09 */	bl lbl_8032B2DC
+/* 8032B3D4 00327214  4B FF FF 09 */	bl "__dt__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>Fv"
 /* 8032B3D8 00327218  7F E0 07 34 */	extsh r0, r31
 /* 8032B3DC 0032721C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8032B3E0 00327220  40 81 00 0C */	ble lbl_8032B3EC
 /* 8032B3E4 00327224  7F C3 F3 78 */	mr r3, r30
-/* 8032B3E8 00327228  4B E9 43 2D */	bl lbl_801BF714
+/* 8032B3E8 00327228  4B E9 43 2D */	bl __dl__FPv
 .global lbl_8032B3EC
 lbl_8032B3EC:
 /* 8032B3EC 0032722C  7F C3 F3 78 */	mr r3, r30
@@ -171,8 +171,8 @@ lbl_8032B3EC:
 /* 8032B3FC 0032723C  7C 08 03 A6 */	mtlr r0
 /* 8032B400 00327240  38 21 00 10 */	addi r1, r1, 0x10
 /* 8032B404 00327244  4E 80 00 20 */	blr
-.global lbl_8032B408
-lbl_8032B408:
+.global updateFrame__Q53scn4step7gimmick10zoneswitch7ManagerFv
+updateFrame__Q53scn4step7gimmick10zoneswitch7ManagerFv:
 /* 8032B408 00327248  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8032B40C 0032724C  7C 08 02 A6 */	mflr r0
 /* 8032B410 00327250  90 01 00 24 */	stw r0, 0x24(r1)
@@ -186,8 +186,8 @@ lbl_8032B408:
 lbl_8032B42C:
 /* 8032B42C 0032726C  7F A3 EB 78 */	mr r3, r29
 /* 8032B430 00327270  7F C4 F3 78 */	mr r4, r30
-/* 8032B434 00327274  48 00 00 2D */	bl lbl_8032B460
-/* 8032B438 00327278  48 00 01 1D */	bl lbl_8032B554
+/* 8032B434 00327274  48 00 00 2D */	bl "__vc__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>FUl"
+/* 8032B438 00327278  48 00 01 1D */	bl updateFrame__Q53scn4step7gimmick10zoneswitch10ZoneSwitchFv
 /* 8032B43C 0032727C  3B DE 00 01 */	addi r30, r30, 0x1
 .global lbl_8032B440
 lbl_8032B440:
@@ -199,8 +199,8 @@ lbl_8032B440:
 /* 8032B454 00327294  7C 08 03 A6 */	mtlr r0
 /* 8032B458 00327298  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032B45C 0032729C  4E 80 00 20 */	blr
-.global lbl_8032B460
-lbl_8032B460:
+.global "__vc__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>FUl"
+"__vc__Q23mem71ExplicitAutoDeleteArray<Q53scn4step7gimmick10zoneswitch10ZoneSwitch,32>FUl":
 /* 8032B460 003272A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8032B464 003272A4  7C 08 02 A6 */	mflr r0
 /* 8032B468 003272A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -210,10 +210,10 @@ lbl_8032B460:
 /* 8032B478 003272B8  7C 9F 23 78 */	mr r31, r4
 /* 8032B47C 003272BC  7F E3 FB 78 */	mr r3, r31
 /* 8032B480 003272C0  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8032B484 003272C4  4B CF 90 1D */	bl lbl_800244A0
+/* 8032B484 003272C4  4B CF 90 1D */	bl DefaultSwitchThreadCallback
 /* 8032B488 003272C8  38 7E 00 08 */	addi r3, r30, 0x8
 /* 8032B48C 003272CC  7F E4 FB 78 */	mr r4, r31
-/* 8032B490 003272D0  4B E9 4A F5 */	bl lbl_801BFF84
+/* 8032B490 003272D0  4B E9 4A F5 */	bl "__vc__Q33hel6common26Array<PQ23mem8HeapUnit,32>FUl"
 /* 8032B494 003272D4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8032B498 003272D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032B49C 003272DC  83 C1 00 08 */	lwz r30, 0x8(r1)

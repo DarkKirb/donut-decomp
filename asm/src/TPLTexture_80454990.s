@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80454990
-lbl_80454990:
+.global __vt__Q23gfx10TPLTexture
+__vt__Q23gfx10TPLTexture:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80195854
+	.4byte __dt__Q23gfx10TPLTextureFv
 
-.global lbl_8045499C
-lbl_8045499C:
+.global __vt__Q23gfx10TextureObj
+__vt__Q23gfx10TextureObj:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801958C0
+	.4byte __dt__Q23gfx10TextureObjFv

@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80495B90
-lbl_80495B90:
+.global "@51655"
+"@51655":
 
 	.4byte 0x4F6E6550
 	.4byte 0x6572736F
 	.4byte 0x6E730000
 
-.global lbl_80495B9C
-lbl_80495B9C:
+.global "@51656"
+"@51656":
 
 	.4byte 0x4F6E655F
 	.4byte 0x54776F50
@@ -17,20 +17,20 @@ lbl_80495B9C:
 	.4byte 0x6E730000
 	.4byte 0
 
-.global lbl_80495BB0
-lbl_80495BB0:
+.global "@51657_80495BB0"
+"@51657_80495BB0":
 
 	.4byte 0x4F6E655F
 	.4byte 0x466F7572
 	.4byte 0x50657273
 	.4byte 0x6F6E7300
 
-.global lbl_80495BC0
-lbl_80495BC0:
+.global "t_getTextLabel__Q43scn9grandmenu4menu26@unnamed@PlayerWindow_cpp@"
+"t_getTextLabel__Q43scn9grandmenu4menu26@unnamed@PlayerWindow_cpp@":
 
-	.4byte lbl_80495B90
-	.4byte lbl_80495B9C
-	.4byte lbl_80495BB0
+	.4byte "@51655"
+	.4byte "@51656"
+	.4byte "@51657_80495BB0"
 	.4byte 0x6772616E
 	.4byte 0x646D656E
 	.4byte 0x752F4D61

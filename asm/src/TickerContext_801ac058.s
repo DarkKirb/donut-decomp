@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801AC058
-lbl_801AC058:
-/* 801AC058 001A7E98  C0 22 99 F8 */	lfs f1, lbl_8055F978@sda21(r2)
+.global DefaultScrollSpeed__Q34info6ticker13TickerContextFv
+DefaultScrollSpeed__Q34info6ticker13TickerContextFv:
+/* 801AC058 001A7E98  C0 22 99 F8 */	lfs f1, "@52069_8055F978"@sda21(r2)
 /* 801AC05C 001A7E9C  4E 80 00 20 */	blr
-.global lbl_801AC060
-lbl_801AC060:
+.global DefaultStartWait__Q34info6ticker13TickerContextFv
+DefaultStartWait__Q34info6ticker13TickerContextFv:
 /* 801AC060 001A7EA0  38 60 00 3C */	li r3, 0x3c
 /* 801AC064 001A7EA4  4E 80 00 20 */	blr
-.global lbl_801AC068
-lbl_801AC068:
+.global __ct__Q34info6ticker13TickerContextFQ23lyt12PaneAccessorQ23lyt12PaneAccessorfUlUlb
+__ct__Q34info6ticker13TickerContextFQ23lyt12PaneAccessorQ23lyt12PaneAccessorfUlUlb:
 /* 801AC068 001A7EA8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801AC06C 001A7EAC  7C 08 02 A6 */	mflr r0
 /* 801AC070 001A7EB0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -23,10 +23,10 @@ lbl_801AC068:
 /* 801AC08C 001A7ECC  7C DD 33 78 */	mr r29, r6
 /* 801AC090 001A7ED0  7C FE 3B 78 */	mr r30, r7
 /* 801AC094 001A7ED4  7D 1F 43 78 */	mr r31, r8
-/* 801AC098 001A7ED8  4B FF FA 79 */	bl lbl_801ABB10
+/* 801AC098 001A7ED8  4B FF FA 79 */	bl __ct__Q23lyt12PaneAccessorFRCQ23lyt12PaneAccessor
 /* 801AC09C 001A7EDC  38 7B 00 14 */	addi r3, r27, 0x14
 /* 801AC0A0 001A7EE0  7F 84 E3 78 */	mr r4, r28
-/* 801AC0A4 001A7EE4  4B FF FA 6D */	bl lbl_801ABB10
+/* 801AC0A4 001A7EE4  4B FF FA 6D */	bl __ct__Q23lyt12PaneAccessorFRCQ23lyt12PaneAccessor
 /* 801AC0A8 001A7EE8  D3 FB 00 28 */	stfs f31, 0x28(r27)
 /* 801AC0AC 001A7EEC  93 BB 00 2C */	stw r29, 0x2c(r27)
 /* 801AC0B0 001A7EF0  93 DB 00 30 */	stw r30, 0x30(r27)

@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80153830
-lbl_80153830:
+.global __ct__26MoSdkPcmPassthroughDecoderFP20MoSdkAudioRepositoryPvUlUl
+__ct__26MoSdkPcmPassthroughDecoderFP20MoSdkAudioRepositoryPvUlUl:
 /* 80153830 0014F670  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80153834 0014F674  7C 08 02 A6 */	mflr r0
 /* 80153838 0014F678  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8015383C 0014F67C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80153840 0014F680  7C 7F 1B 78 */	mr r31, r3
-/* 80153844 0014F684  4B FF E7 ED */	bl lbl_80152030
-/* 80153848 0014F688  3C 80 80 45 */	lis r4, lbl_804484B0@ha
+/* 80153844 0014F684  4B FF E7 ED */	bl __ct__17MoSdkAudioDecoderFP20MoSdkAudioRepositoryPvUlUl
+/* 80153848 0014F688  3C 80 80 45 */	lis r4, __vt__26MoSdkPcmPassthroughDecoder@ha
 /* 8015384C 0014F68C  7F E3 FB 78 */	mr r3, r31
-/* 80153850 0014F690  38 84 84 B0 */	addi r4, r4, lbl_804484B0@l
+/* 80153850 0014F690  38 84 84 B0 */	addi r4, r4, __vt__26MoSdkPcmPassthroughDecoder@l
 /* 80153854 0014F694  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 80153858 0014F698  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015385C 0014F69C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -20,22 +20,22 @@ lbl_80153830:
 /* 80153868 0014F6A8  4E 80 00 20 */	blr
 /* 8015386C 0014F6AC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80153870
-lbl_80153870:
-/* 80153870 0014F6B0  4B FF EC 70 */	b lbl_801524E0
+.global __dt__26MoSdkPcmPassthroughDecoderFv
+__dt__26MoSdkPcmPassthroughDecoderFv:
+/* 80153870 0014F6B0  4B FF EC 70 */	b __dt__21MoSdkFastAudioDecoderFv
 /* 80153874 0014F6B4  00 00 00 00 */	.4byte 0x00000000
 /* 80153878 0014F6B8  00 00 00 00 */	.4byte 0x00000000
 /* 8015387C 0014F6BC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80153880
-lbl_80153880:
+.global getPcmSizeFromPacket__26MoSdkPcmPassthroughDecoderFUl
+getPcmSizeFromPacket__26MoSdkPcmPassthroughDecoderFUl:
 /* 80153880 0014F6C0  7C 83 23 78 */	mr r3, r4
 /* 80153884 0014F6C4  4E 80 00 20 */	blr
 /* 80153888 0014F6C8  00 00 00 00 */	.4byte 0x00000000
 /* 8015388C 0014F6CC  00 00 00 00 */	.4byte 0x00000000
 
-.global lbl_80153890
-lbl_80153890:
+.global decodeIntoBuffer__26MoSdkPcmPassthroughDecoderFPCUcUlPUsPUl
+decodeIntoBuffer__26MoSdkPcmPassthroughDecoderFPCUcUlPUsPUl:
 /* 80153890 0014F6D0  54 AA F8 7E */	srwi r10, r5, 1
 /* 80153894 0014F6D4  28 0A 00 00 */	cmplwi r10, 0x0
 /* 80153898 0014F6D8  40 81 00 E8 */	ble lbl_80153980

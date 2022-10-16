@@ -102,8 +102,8 @@ lbl_8040E558:
 	.4byte 0xFFFFFFFF
 	.4byte 0xFFFFFFFF
 
-.global lbl_8040E698
-lbl_8040E698:
+.global Alpha
+Alpha:
 
 	.4byte 0
 	.4byte 0
@@ -143,8 +143,8 @@ lbl_8040E698:
 	.4byte 0x000000FB
 	.4byte 0x000000FF
 
-.global lbl_8040E72C
-lbl_8040E72C:
+.global Beta
+Beta:
 
 	.4byte 0
 	.4byte 0

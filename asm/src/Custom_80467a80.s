@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80467A80
-lbl_80467A80:
+.global "@57877"
+"@57877":
 
 	.4byte 0x53636E2E
 	.4byte 0x53746570
@@ -69,13 +69,13 @@ lbl_80467A80:
 	.4byte 0x6E677279
 	.4byte 0
 
-.global lbl_80467B80
-lbl_80467B80:
+.global "__vt__Q24util127StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss10gigantedge8NodeKind>"
+"__vt__Q24util127StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss10gigantedge8NodeKind>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802522B4
-	.4byte lbl_802522AC
+	.4byte "__dt__Q24util127StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss10gigantedge8NodeKind>Fv"
+	.4byte "create__Q24util127StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss10gigantedge8NodeKind>Fv"
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -89,30 +89,30 @@ lbl_80467B80:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80467BC0
-lbl_80467BC0:
+.global __vt__Q53scn4step4boss10gigantedge6Custom
+__vt__Q53scn4step4boss10gigantedge6Custom:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802522A8
-	.4byte lbl_802522B0
-	.4byte lbl_80251B80
-	.4byte lbl_80251E30
-	.4byte lbl_80251E34
-	.4byte lbl_80251E38
-	.4byte lbl_80251E3C
-	.4byte lbl_8022E5D8
-	.4byte lbl_8022E5DC
-	.4byte lbl_8022E5E0
-	.4byte lbl_8022E5E4
-	.4byte lbl_8022E5E8
-	.4byte lbl_8022E5EC
-	.4byte lbl_80251ED4
-	.4byte lbl_8022E5F4
-	.4byte lbl_80251ED8
-	.4byte lbl_8022E5FC
-	.4byte lbl_8022E600
-	.4byte lbl_8022E604
+	.4byte GetRuntimeTypeInfo__Q53scn4step4boss10gigantedge6CustomCFv
+	.4byte __dt__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onInit__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onAppear__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onStart__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onDamage__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onDead__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onProcMove__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcFixPos__Q53scn4step4boss10gigantedge6CustomFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0x4E573452
 	.4byte 0x3A506F69
 	.4byte 0x6E746572

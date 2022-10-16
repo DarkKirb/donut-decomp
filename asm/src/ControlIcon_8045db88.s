@@ -1,21 +1,21 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045DB88
-lbl_8045DB88:
+.global "@51820_8045DB88"
+"@51820_8045DB88":
 
 	.4byte 0x466F7277
 	.4byte 0x6172644E
 	.4byte 0
 	.4byte 0
 
-.global lbl_8045DB98
-lbl_8045DB98:
+.global "PANES__Q33scn5anime25@unnamed@ControlIcon_cpp@"
+"PANES__Q33scn5anime25@unnamed@ControlIcon_cpp@":
 
-	.4byte lbl_80557930
-	.4byte lbl_80557938
-	.4byte lbl_80557940
-	.4byte lbl_8045DB88
+	.4byte "@51817_80557930"
+	.4byte "@51818_80557938"
+	.4byte "@51819_80557940"
+	.4byte "@51820_8045DB88"
 	.4byte 0x68697374
 	.4byte 0x6F72792F
 	.4byte 0x44657461
@@ -31,8 +31,8 @@ lbl_8045DB98:
 	.4byte 0x49636F6E
 	.4byte 0
 
-.global lbl_8045DBE0
-lbl_8045DBE0:
+.global "@52469_8045DBE0"
+"@52469_8045DBE0":
 
 	.4byte 0x44697361
 	.4byte 0x70706561

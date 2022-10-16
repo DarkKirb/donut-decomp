@@ -1,5 +1,5 @@
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte lbl_801EC444
-	.4byte lbl_80203844
+	.4byte "__sinit_@@1Commander_cpp_801EC444"
+	.4byte "__sinit_@@1Commander_cpp_80203844"

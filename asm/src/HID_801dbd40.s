@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801DBD40
-lbl_801DBD40:
+.global __ct__Q25pause3HIDFv
+__ct__Q25pause3HIDFv:
 /* 801DBD40 001D7B80  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DBD44 001D7B84  7C 08 02 A6 */	mflr r0
 /* 801DBD48 001D7B88  90 01 00 14 */	stw r0, 0x14(r1)
@@ -11,15 +11,15 @@ lbl_801DBD40:
 /* 801DBD54 001D7B94  38 00 00 00 */	li r0, 0x0
 /* 801DBD58 001D7B98  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801DBD5C 001D7B9C  38 63 00 04 */	addi r3, r3, 0x4
-/* 801DBD60 001D7BA0  4B E9 A1 91 */	bl lbl_80075EF0
+/* 801DBD60 001D7BA0  4B E9 A1 91 */	bl GKI_init_timer_list
 /* 801DBD64 001D7BA4  7F E3 FB 78 */	mr r3, r31
 /* 801DBD68 001D7BA8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801DBD6C 001D7BAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801DBD70 001D7BB0  7C 08 03 A6 */	mtlr r0
 /* 801DBD74 001D7BB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DBD78 001D7BB8  4E 80 00 20 */	blr
-.global lbl_801DBD7C
-lbl_801DBD7C:
+.global reset__Q25pause3HIDFUl
+reset__Q25pause3HIDFUl:
 /* 801DBD7C 001D7BBC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DBD80 001D7BC0  7C 08 02 A6 */	mflr r0
 /* 801DBD84 001D7BC4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -27,38 +27,38 @@ lbl_801DBD7C:
 /* 801DBD8C 001D7BCC  7C 7F 1B 78 */	mr r31, r3
 /* 801DBD90 001D7BD0  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801DBD94 001D7BD4  38 61 00 08 */	addi r3, r1, 0x8
-/* 801DBD98 001D7BD8  4B E9 A1 59 */	bl lbl_80075EF0
+/* 801DBD98 001D7BD8  4B E9 A1 59 */	bl GKI_init_timer_list
 /* 801DBD9C 001D7BDC  7C 64 1B 78 */	mr r4, r3
 /* 801DBDA0 001D7BE0  38 7F 00 04 */	addi r3, r31, 0x4
-/* 801DBDA4 001D7BE4  4B FC 86 41 */	bl lbl_801A43E4
+/* 801DBDA4 001D7BE4  4B FC 86 41 */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 801DBDA8 001D7BE8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801DBDAC 001D7BEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801DBDB0 001D7BF0  7C 08 03 A6 */	mtlr r0
 /* 801DBDB4 001D7BF4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DBDB8 001D7BF8  4E 80 00 20 */	blr
-.global lbl_801DBDBC
-lbl_801DBDBC:
+.global update__Q25pause3HIDFv
+update__Q25pause3HIDFv:
 /* 801DBDBC 001D7BFC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DBDC0 001D7C00  7C 08 02 A6 */	mflr r0
 /* 801DBDC4 001D7C04  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801DBDC8 001D7C08  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801DBDCC 001D7C0C  7C 7F 1B 78 */	mr r31, r3
-/* 801DBDD0 001D7C10  80 6D ED 18 */	lwz r3, lbl_8055D138@sda21(r13)
+/* 801DBDD0 001D7C10  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 801DBDD4 001D7C14  80 9F 00 00 */	lwz r4, 0x0(r31)
-/* 801DBDD8 001D7C18  4B FC 77 A1 */	bl lbl_801A3578
+/* 801DBDD8 001D7C18  4B FC 77 A1 */	bl gameHID__Q23hid10HIDManagerCFUl
 /* 801DBDDC 001D7C1C  7C 64 1B 78 */	mr r4, r3
 /* 801DBDE0 001D7C20  38 61 00 08 */	addi r3, r1, 0x8
-/* 801DBDE4 001D7C24  4B FC 6A 15 */	bl lbl_801A27F8
+/* 801DBDE4 001D7C24  4B FC 6A 15 */	bl button__Q23hid11HIDAccessorCFv
 /* 801DBDE8 001D7C28  38 7F 00 04 */	addi r3, r31, 0x4
 /* 801DBDEC 001D7C2C  38 81 00 08 */	addi r4, r1, 0x8
-/* 801DBDF0 001D7C30  4B FC 85 F5 */	bl lbl_801A43E4
+/* 801DBDF0 001D7C30  4B FC 85 F5 */	bl __ct__Q23hid5StickFRCQ23hid5Stick
 /* 801DBDF4 001D7C34  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801DBDF8 001D7C38  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801DBDFC 001D7C3C  7C 08 03 A6 */	mtlr r0
 /* 801DBE00 001D7C40  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DBE04 001D7C44  4E 80 00 20 */	blr
-.global lbl_801DBE08
-lbl_801DBE08:
+.global btn__Q25pause3HIDCFv
+btn__Q25pause3HIDCFv:
 /* 801DBE08 001D7C48  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 801DBE0C 001D7C4C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801DBE10 001D7C50  80 04 00 08 */	lwz r0, 0x8(r4)

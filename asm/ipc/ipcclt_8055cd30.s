@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
-.global lbl_8055CD30
-lbl_8055CD30:
+.global __relnchFl
+__relnchFl:
 	.skip 0x4
 
-.global lbl_8055CD34
-lbl_8055CD34:
+.global __relnchRpc
+__relnchRpc:
 	.skip 0x4
 
-.global lbl_8055CD38
-lbl_8055CD38:
+.global __relnchRpcSave
+__relnchRpcSave:
 	.skip 0x4
 
-.global lbl_8055CD3C
-lbl_8055CD3C:
+.global "@LOCAL@IPCCltInit__Fv@initialized"
+"@LOCAL@IPCCltInit__Fv@initialized":
 	.skip 0x4

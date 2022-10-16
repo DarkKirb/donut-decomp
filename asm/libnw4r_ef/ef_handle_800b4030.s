@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800B4030
-lbl_800B4030:
+.global __ct__Q34nw4r2ef10HandleBaseFRCQ34nw4r2ef10HandleBase
+__ct__Q34nw4r2ef10HandleBaseFRCQ34nw4r2ef10HandleBase:
 /* 800B4030 000AFE70  80 A4 00 00 */	lwz r5, 0x0(r4)
 /* 800B4034 000AFE74  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 800B4038 000AFE78  90 A3 00 00 */	stw r5, 0x0(r3)
@@ -11,8 +11,8 @@ lbl_800B4030:
 /* 800B4044 000AFE84  00 00 00 00 */	.4byte 0x00000000
 /* 800B4048 000AFE88  00 00 00 00 */	.4byte 0x00000000
 /* 800B404C 000AFE8C  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800B4050
-lbl_800B4050:
+.global __ct__Q34nw4r2ef10HandleBaseFPQ34nw4r2ef12LinkedObject
+__ct__Q34nw4r2ef10HandleBaseFPQ34nw4r2ef12LinkedObject:
 /* 800B4050 000AFE90  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800B4054 000AFE94  40 82 00 14 */	bne lbl_800B4068
 /* 800B4058 000AFE98  38 00 00 00 */	li r0, 0x0
@@ -27,8 +27,8 @@ lbl_800B4068:
 /* 800B4074 000AFEB4  4E 80 00 20 */	blr
 /* 800B4078 000AFEB8  00 00 00 00 */	.4byte 0x00000000
 /* 800B407C 000AFEBC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800B4080
-lbl_800B4080:
+.global IsValid__Q34nw4r2ef10HandleBaseCFv
+IsValid__Q34nw4r2ef10HandleBaseCFv:
 /* 800B4080 000AFEC0  80 83 00 04 */	lwz r4, 0x4(r3)
 /* 800B4084 000AFEC4  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800B4088 000AFEC8  40 82 00 0C */	bne lbl_800B4094
@@ -43,8 +43,8 @@ lbl_800B4094:
 /* 800B40A4 000AFEE4  54 03 D9 7E */	srwi r3, r0, 5
 /* 800B40A8 000AFEE8  4E 80 00 20 */	blr
 /* 800B40AC 000AFEEC  00 00 00 00 */	.4byte 0x00000000
-.global lbl_800B40B0
-lbl_800B40B0:
+.global GetPtr__Q34nw4r2ef10HandleBaseCFv
+GetPtr__Q34nw4r2ef10HandleBaseCFv:
 /* 800B40B0 000AFEF0  80 83 00 04 */	lwz r4, 0x4(r3)
 /* 800B40B4 000AFEF4  2C 04 00 00 */	cmpwi r4, 0x0
 /* 800B40B8 000AFEF8  40 82 00 0C */	bne lbl_800B40C4

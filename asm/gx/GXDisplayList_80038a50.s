@@ -1,13 +1,13 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80038A50
-lbl_80038A50:
+.global GXCallDisplayList
+GXCallDisplayList:
 /* 80038A50 00034890  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80038A54 00034894  7C 08 02 A6 */	mflr r0
 /* 80038A58 00034898  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80038A5C 0003489C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 80038A60 000348A0  83 E2 86 08 */	lwz r31, lbl_8055E588@sda21(r2)
+/* 80038A60 000348A0  83 E2 86 08 */	lwz r31, __GXData@sda21(r2)
 /* 80038A64 000348A4  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 80038A68 000348A8  7C 9E 23 78 */	mr r30, r4
 /* 80038A6C 000348AC  93 A1 00 14 */	stw r29, 0x14(r1)
@@ -15,13 +15,13 @@ lbl_80038A50:
 /* 80038A74 000348B4  80 1F 05 FC */	lwz r0, 0x5fc(r31)
 /* 80038A78 000348B8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80038A7C 000348BC  41 82 00 08 */	beq lbl_80038A84
-/* 80038A80 000348C0  4B FF C5 71 */	bl lbl_80034FF0
+/* 80038A80 000348C0  4B FF C5 71 */	bl __GXSetDirtyState
 .global lbl_80038A84
 lbl_80038A84:
 /* 80038A84 000348C4  80 1F 00 00 */	lwz r0, 0x0(r31)
 /* 80038A88 000348C8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80038A8C 000348CC  40 82 00 08 */	bne lbl_80038A94
-/* 80038A90 000348D0  4B FF C9 31 */	bl lbl_800353C0
+/* 80038A90 000348D0  4B FF C9 31 */	bl __GXSendFlushPrim
 .global lbl_80038A94
 lbl_80038A94:
 /* 80038A94 000348D4  3C 60 CC 01 */	lis r3, 0xCC008000@ha

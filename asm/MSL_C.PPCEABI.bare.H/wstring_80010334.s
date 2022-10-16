@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80010334
-lbl_80010334:
+.global wcslen
+wcslen:
 /* 80010334 0000C174  38 83 FF FE */	addi r4, r3, -0x2
 /* 80010338 0000C178  38 60 FF FF */	li r3, -0x1
 .global lbl_8001033C
@@ -12,8 +12,8 @@ lbl_8001033C:
 /* 80010344 0000C184  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80010348 0000C188  40 82 FF F4 */	bne lbl_8001033C
 /* 8001034C 0000C18C  4E 80 00 20 */	blr
-.global lbl_80010350
-lbl_80010350:
+.global wcscpy
+wcscpy:
 /* 80010350 0000C190  38 84 FF FE */	addi r4, r4, -0x2
 /* 80010354 0000C194  38 A3 FF FE */	addi r5, r3, -0x2
 .global lbl_80010358
@@ -23,8 +23,8 @@ lbl_80010358:
 /* 80010360 0000C1A0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80010364 0000C1A4  40 82 FF F4 */	bne lbl_80010358
 /* 80010368 0000C1A8  4E 80 00 20 */	blr
-.global lbl_8001036C
-lbl_8001036C:
+.global wcsncpy
+wcsncpy:
 /* 8001036C 0000C1AC  38 84 FF FE */	addi r4, r4, -0x2
 /* 80010370 0000C1B0  38 C3 FF FE */	addi r6, r3, -0x2
 /* 80010374 0000C1B4  38 A5 00 01 */	addi r5, r5, 0x1
@@ -50,8 +50,8 @@ lbl_800103A4:
 /* 800103A4 0000C1E4  34 A5 FF FF */	addic. r5, r5, -0x1
 /* 800103A8 0000C1E8  40 82 FF D4 */	bne lbl_8001037C
 /* 800103AC 0000C1EC  4E 80 00 20 */	blr
-.global lbl_800103B0
-lbl_800103B0:
+.global wcschr
+wcschr:
 /* 800103B0 0000C1F0  38 63 FF FE */	addi r3, r3, -0x2
 /* 800103B4 0000C1F4  48 00 00 0C */	b lbl_800103C0
 .global lbl_800103B8

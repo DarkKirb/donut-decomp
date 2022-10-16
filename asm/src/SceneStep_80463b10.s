@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80463B10
-lbl_80463B10:
+.global "@52721"
+"@52721":
 
 	.4byte 0x53746570
 	.4byte 0x4C657665
@@ -53,8 +53,8 @@ lbl_80463B10:
 	.4byte 0x722E646E
 	.4byte 0
 
-.global lbl_80463BD0
-lbl_80463BD0:
+.global "@52732"
+"@52732":
 
 	.4byte lbl_80221AFC
 	.4byte lbl_80221AFC
@@ -73,18 +73,18 @@ lbl_80463BD0:
 	.4byte lbl_80221AFC
 	.4byte lbl_80221AFC
 
-.global lbl_80463C10
-lbl_80463C10:
+.global __vt__Q33scn4step9SceneStep
+__vt__Q33scn4step9SceneStep:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80221E74
-	.4byte lbl_80221D04
-	.4byte lbl_80221D98
-	.4byte lbl_80221D70
-	.4byte lbl_80221DC0
-	.4byte lbl_80221DE8
-	.4byte lbl_80221E10
+	.4byte GetRuntimeTypeInfo__Q33scn4step9SceneStepCFv
+	.4byte __dt__Q33scn4step9SceneStepFv
+	.4byte updateMain__Q33scn4step9SceneStepFv
+	.4byte updateUseGPU__Q33scn4step9SceneStepFv
+	.4byte updateDebug__Q33scn4step9SceneStepFv
+	.4byte draw__Q33scn4step9SceneStepFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn4step9SceneStepCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0

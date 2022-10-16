@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80473400
-lbl_80473400:
+.global "__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8armordee22StateGrandLowperAppear,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8armordee22StateGrandLowperAppear,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80296388
-	.4byte lbl_80296368
+	.4byte "__dt__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8armordee22StateGrandLowperAppear,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util108StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8armordee22StateGrandLowperAppear,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_80473410
-lbl_80473410:
+.global __vt__Q53scn4step5enemy8armordee16BrainGrandLowper
+__vt__Q53scn4step5enemy8armordee16BrainGrandLowper:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80296384
-	.4byte lbl_80296270
-	.4byte lbl_8027EE2C
-	.4byte lbl_802962EC
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy8armordee16BrainGrandLowperFv
+	.4byte onStart__Q53scn4step5enemy8armordee16BrainGrandLowperFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q53scn4step5enemy8armordee16BrainGrandLowperFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

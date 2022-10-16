@@ -1,44 +1,44 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442528
-lbl_80442528:
+.global __vt__Q44nw4r3snd6detail10StrmPlayer
+__vt__Q44nw4r3snd6detail10StrmPlayer:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801160B0
-	.4byte lbl_80116540
-	.4byte lbl_801168A0
-	.4byte lbl_80116A70
-	.4byte lbl_80118A20
-	.4byte lbl_80118A10
-	.4byte lbl_80118A00
+	.4byte __dt__Q44nw4r3snd6detail10StrmPlayerFv
+	.4byte Start__Q44nw4r3snd6detail10StrmPlayerFv
+	.4byte Stop__Q44nw4r3snd6detail10StrmPlayerFv
+	.4byte Pause__Q44nw4r3snd6detail10StrmPlayerFb
+	.4byte IsActive__Q44nw4r3snd6detail10StrmPlayerCFv
+	.4byte IsStarted__Q44nw4r3snd6detail10StrmPlayerCFv
+	.4byte IsPause__Q44nw4r3snd6detail10StrmPlayerCFv
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80118A60
-	.4byte lbl_80118A50
-	.4byte lbl_80118A40
-	.4byte lbl_80118A30
-	.4byte lbl_801189D0
-	.4byte lbl_801189E0
-	.4byte lbl_801189F0
+	.4byte "@180@__dt__Q44nw4r3snd6detail10StrmPlayerFv"
+	.4byte "@180@OnUpdateFrameSoundThread__Q44nw4r3snd6detail10StrmPlayerFv"
+	.4byte "@180@OnUpdateVoiceSoundThread__Q44nw4r3snd6detail10StrmPlayerFv"
+	.4byte "@180@OnShutdownSoundThread__Q44nw4r3snd6detail10StrmPlayerFv"
+	.4byte OnUpdateFrameSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.4byte OnUpdateVoiceSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
+	.4byte OnShutdownSoundThread__Q44nw4r3snd6detail10StrmPlayerFv
 
-.global lbl_80442570
-lbl_80442570:
-
-	.4byte 0
-	.4byte 0
-	.4byte lbl_801160A0
-	.4byte lbl_80118860
-	.4byte lbl_80118930
-	.4byte lbl_801189C0
-
-.global lbl_80442588
-lbl_80442588:
+.global __vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask
+__vt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTask:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80116090
-	.4byte lbl_80118700
-	.4byte lbl_80118750
-	.4byte lbl_80118760
+	.4byte __dt__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.4byte Execute__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.4byte Cancel__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+	.4byte OnCancel__Q54nw4r3snd6detail10StrmPlayer16StrmDataLoadTaskFv
+
+.global __vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask
+__vt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTask:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.4byte Execute__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.4byte Cancel__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv
+	.4byte OnCancel__Q54nw4r3snd6detail10StrmPlayer18StrmHeaderLoadTaskFv

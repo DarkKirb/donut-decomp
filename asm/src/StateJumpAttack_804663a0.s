@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804663A0
-lbl_804663A0:
+.global "__vt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,i>"
+"__vt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,i>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80246E98
-	.4byte lbl_80246E78
+	.4byte "__dt__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,i>Fv"
+	.4byte "create__Q24util95StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,i>Fv"
 
-.global lbl_804663B0
-lbl_804663B0:
+.global __vt__Q53scn4step4boss6common15StateJumpAttack
+__vt__Q53scn4step4boss6common15StateJumpAttack:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80246C88
-	.4byte lbl_80246C8C
-	.4byte lbl_80246CF8
-	.4byte lbl_802344FC
-	.4byte lbl_80246D40
-	.4byte lbl_80234504
+	.4byte __dt__Q53scn4step4boss6common15StateJumpAttackFv
+	.4byte procAnim__Q53scn4step4boss6common15StateJumpAttackFv
+	.4byte procMove__Q53scn4step4boss6common15StateJumpAttackFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6common15StateJumpAttackFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

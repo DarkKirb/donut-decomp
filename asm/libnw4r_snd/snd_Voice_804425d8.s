@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804425D8
-lbl_804425D8:
+.global "@11607"
+"@11607":
 
 	.4byte lbl_8011BA28
 	.4byte lbl_8011BA30
@@ -14,11 +14,11 @@ lbl_804425D8:
 	.4byte lbl_8011BA90
 	.4byte lbl_8011BAA4
 
-.global lbl_804425FC
-lbl_804425FC:
+.global __vt__Q44nw4r3snd6detail5Voice
+__vt__Q44nw4r3snd6detail5Voice:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80119CB0
-	.4byte lbl_8011C4D0
-	.4byte lbl_8011C380
+	.4byte __dt__Q44nw4r3snd6detail5VoiceFv
+	.4byte InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv
+	.4byte InvalidateWaveData__Q44nw4r3snd6detail5VoiceFPCvPCv

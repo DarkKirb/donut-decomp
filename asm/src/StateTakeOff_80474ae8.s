@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80474AE8
-lbl_80474AE8:
+.global __vt__Q53scn4step5enemy10brontoburt12StateTakeOff
+__vt__Q53scn4step5enemy10brontoburt12StateTakeOff:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802A030C
-	.4byte lbl_8028DDD8
-	.4byte lbl_802A0140
-	.4byte lbl_8028DDE0
-	.4byte lbl_8028DDE4
-	.4byte lbl_8028DDE8
+	.4byte __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

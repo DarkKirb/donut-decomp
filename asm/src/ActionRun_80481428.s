@@ -1,30 +1,30 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80481428
-lbl_80481428:
+.global "@53279_80481428"
+"@53279_80481428":
 
 	.4byte 0x43436861
 	.4byte 0x6E676531
 	.4byte 0
 
-.global lbl_80481434
-lbl_80481434:
+.global __vt__Q53scn4step7gimmick10guideboard9ActionRun
+__vt__Q53scn4step7gimmick10guideboard9ActionRun:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80310CF0
-	.4byte lbl_80310CF8
-	.4byte lbl_80310CFC
-	.4byte lbl_80310D4C
-	.4byte lbl_80310D50
-	.4byte lbl_80310570
-	.4byte lbl_8031056C
-	.4byte lbl_80310568
-	.4byte lbl_80310564
-	.4byte lbl_80310560
-	.4byte lbl_8031055C
-	.4byte lbl_80310558
-	.4byte lbl_80310554
-	.4byte lbl_80310550
-	.4byte lbl_80310574
+	.4byte topLName__Q53scn4step7gimmick10guideboard9ActionRunCFv
+	.4byte isInitState__Q53scn4step7gimmick10guideboard9ActionRunCFv
+	.4byte reset__Q53scn4step7gimmick10guideboard9ActionRunFb
+	.4byte updateFrame__Q53scn4step7gimmick10guideboard9ActionRunFv
+	.4byte onFrameEnd__Q53scn4step7gimmick10guideboard9ActionRunFv
+	.4byte onEat__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onVomit__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onDrink__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onRun__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onHover__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAbilityGet__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAbilityClear__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onVacuumSuper__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onThroughLand__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAttack__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3

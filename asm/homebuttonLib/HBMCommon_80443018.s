@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80443018
-lbl_80443018:
+.global "@9367"
+"@9367":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F53
@@ -23,12 +23,12 @@ lbl_80443018:
 	.4byte 0x3529203E
 	.4byte 0x3E000000
 
-.global lbl_80443060
-lbl_80443060:
+.global __HBMVersion
+__HBMVersion:
 
-	.4byte lbl_80443018
+	.4byte "@9367"
 
-.global lbl_80443064
-lbl_80443064:
+.global spAllocator
+spAllocator:
 
-	.4byte lbl_805436B0
+	.4byte sAllocator

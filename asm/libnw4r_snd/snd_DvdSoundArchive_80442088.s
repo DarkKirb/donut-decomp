@@ -1,44 +1,44 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80442088
-lbl_80442088:
+.global __vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream
+__vt__Q44nw4r3snd15DvdSoundArchive13DvdFileStream:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80108A80
-	.4byte lbl_80108AD0
-	.4byte lbl_80121020
-	.4byte lbl_80108920
-	.4byte lbl_80108A70
-	.4byte lbl_80120630
-	.4byte lbl_80120640
-	.4byte lbl_80108A40
-	.4byte lbl_80108A50
-	.4byte lbl_80108A20
-	.4byte lbl_80108A10
-	.4byte lbl_801089F0
-	.4byte lbl_801089E0
-	.4byte lbl_801089D0
-	.4byte lbl_80108A90
-	.4byte lbl_80108950
-	.4byte lbl_80121220
-	.4byte lbl_80120DF0
-	.4byte lbl_80108A30
-	.4byte lbl_80108A00
-	.4byte lbl_80108AA0
-	.4byte lbl_80121140
-	.4byte lbl_80108A60
+	.4byte GetRuntimeTypeInfo__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.4byte __dt__Q44nw4r3snd15DvdSoundArchive13DvdFileStreamFv
+	.4byte Close__Q34nw4r2ut19DvdLockedFileStreamFv
+	.4byte Read__Q44nw4r3snd15DvdSoundArchive13DvdFileStreamFPvUl
+	.4byte ReadAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte Write__Q34nw4r2ut8IOStreamFPCvUl
+	.4byte WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte IsBusy__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanAsync__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.4byte CanRead__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanWrite__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSizeAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSize__Q44nw4r3snd15DvdSoundArchive13DvdFileStreamCFv
+	.4byte Seek__Q44nw4r3snd15DvdSoundArchive13DvdFileStreamFlUl
+	.4byte Cancel__Q34nw4r2ut19DvdLockedFileStreamFv
+	.4byte CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte CanSeek__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanCancel__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Tell__Q44nw4r3snd15DvdSoundArchive13DvdFileStreamCFv
+	.4byte Peek__Q34nw4r2ut19DvdLockedFileStreamFPvUl
+	.4byte PeekAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
 	.4byte 0
 
-.global lbl_804420F0
-lbl_804420F0:
+.global __vt__Q34nw4r3snd15DvdSoundArchive
+__vt__Q34nw4r3snd15DvdSoundArchive:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80108450
-	.4byte lbl_80108AC0
-	.4byte lbl_80108AB0
-	.4byte lbl_801087F0
-	.4byte lbl_80108680
-	.4byte lbl_80108730
+	.4byte __dt__Q34nw4r3snd15DvdSoundArchiveFv
+	.4byte detail_GetFileAddress__Q34nw4r3snd15DvdSoundArchiveCFUl
+	.4byte detail_GetWaveDataFileAddress__Q34nw4r3snd15DvdSoundArchiveCFUl
+	.4byte detail_GetRequiredStreamBufferSize__Q34nw4r3snd15DvdSoundArchiveCFv
+	.4byte OpenStream__Q34nw4r3snd15DvdSoundArchiveCFPviUlUl
+	.4byte OpenExtStream__Q34nw4r3snd15DvdSoundArchiveCFPviPCcUlUl

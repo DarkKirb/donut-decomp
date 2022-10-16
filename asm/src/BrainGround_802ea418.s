@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_802EA418
-lbl_802EA418:
+.global __ct__Q53scn4step5enemy9tsukikage11BrainGroundFRQ43scn4step5enemy5Enemy
+__ct__Q53scn4step5enemy9tsukikage11BrainGroundFRQ43scn4step5enemy5Enemy:
 /* 802EA418 002E6258  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802EA41C 002E625C  7C 08 02 A6 */	mflr r0
 /* 802EA420 002E6260  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802EA424 002E6264  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802EA428 002E6268  7C 7F 1B 78 */	mr r31, r3
-/* 802EA42C 002E626C  4B F9 49 E9 */	bl lbl_8027EE14
-/* 802EA430 002E6270  3C 60 80 48 */	lis r3, lbl_8047D6C8@ha
-/* 802EA434 002E6274  38 03 D6 C8 */	addi r0, r3, lbl_8047D6C8@l
+/* 802EA42C 002E626C  4B F9 49 E9 */	bl __ct__Q43scn4step5enemy9BrainBaseFRQ43scn4step5enemy5Enemy
+/* 802EA430 002E6270  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy9tsukikage11BrainGround@ha
+/* 802EA434 002E6274  38 03 D6 C8 */	addi r0, r3, __vt__Q53scn4step5enemy9tsukikage11BrainGround@l
 /* 802EA438 002E6278  90 1F 00 00 */	stw r0, 0x0(r31)
 /* 802EA43C 002E627C  7F E3 FB 78 */	mr r3, r31
 /* 802EA440 002E6280  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -19,31 +19,31 @@ lbl_802EA418:
 /* 802EA44C 002E628C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802EA450 002E6290  4E 80 00 20 */	blr
 
-.global lbl_802EA454
-lbl_802EA454:
+.global onStart__Q53scn4step5enemy9tsukikage11BrainGroundFv
+onStart__Q53scn4step5enemy9tsukikage11BrainGroundFv:
 /* 802EA454 002E6294  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802EA458 002E6298  7C 08 02 A6 */	mflr r0
 /* 802EA45C 002E629C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802EA460 002E62A0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802EA464 002E62A4  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 802EA468 002E62A8  7C 7F 1B 78 */	mr r31, r3
-/* 802EA46C 002E62AC  4B E1 63 75 */	bl lbl_801007E0
+/* 802EA46C 002E62AC  4B E1 63 75 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802EA470 002E62B0  7C 7E 1B 78 */	mr r30, r3
 /* 802EA474 002E62B4  7F E3 FB 78 */	mr r3, r31
-/* 802EA478 002E62B8  4B E1 63 69 */	bl lbl_801007E0
-/* 802EA47C 002E62BC  4B F9 DD 29 */	bl lbl_802881A4
+/* 802EA478 002E62B8  4B E1 63 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 802EA47C 002E62BC  4B F9 DD 29 */	bl stateChanger__Q43scn4step5enemy5EnemyFv
 /* 802EA480 002E62C0  7C 7F 1B 78 */	mr r31, r3
-/* 802EA484 002E62C4  48 11 BA 7D */	bl lbl_80405F00
+/* 802EA484 002E62C4  48 11 BA 7D */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 802EA488 002E62C8  38 9F 00 10 */	addi r4, r31, 0x10
 /* 802EA48C 002E62CC  2C 04 00 00 */	cmpwi r4, 0x0
 /* 802EA490 002E62D0  41 82 00 28 */	beq lbl_802EA4B8
-/* 802EA494 002E62D4  3C 60 80 46 */	lis r3, lbl_80464478@ha
-/* 802EA498 002E62D8  38 03 44 78 */	addi r0, r3, lbl_80464478@l
+/* 802EA494 002E62D4  3C 60 80 46 */	lis r3, "__vt__Q24util28StateFactory<Q24util6IState>"@ha
+/* 802EA498 002E62D8  38 03 44 78 */	addi r0, r3, "__vt__Q24util28StateFactory<Q24util6IState>"@l
 /* 802EA49C 002E62DC  90 04 00 00 */	stw r0, 0x0(r4)
 /* 802EA4A0 002E62E0  38 1F 00 90 */	addi r0, r31, 0x90
 /* 802EA4A4 002E62E4  90 04 00 04 */	stw r0, 0x4(r4)
-/* 802EA4A8 002E62E8  3C 60 80 48 */	lis r3, lbl_8047D618@ha
-/* 802EA4AC 002E62EC  38 03 D6 18 */	addi r0, r3, lbl_8047D618@l
+/* 802EA4A8 002E62E8  3C 60 80 48 */	lis r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>"@ha
+/* 802EA4AC 002E62EC  38 03 D6 18 */	addi r0, r3, "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateWait,PQ43scn4step5enemy5Enemy>"@l
 /* 802EA4B0 002E62F0  90 04 00 00 */	stw r0, 0x0(r4)
 /* 802EA4B4 002E62F4  93 C4 00 08 */	stw r30, 0x8(r4)
 .global lbl_802EA4B8
@@ -57,6 +57,6 @@ lbl_802EA4B8:
 /* 802EA4D0 002E6310  38 21 00 10 */	addi r1, r1, 0x10
 /* 802EA4D4 002E6314  4E 80 00 20 */	blr
 
-.global lbl_802EA4D8
-lbl_802EA4D8:
-/* 802EA4D8 002E6318  4B FA 6B 94 */	b lbl_8029106C
+.global __dt__Q53scn4step5enemy9tsukikage11BrainGroundFv
+__dt__Q53scn4step5enemy9tsukikage11BrainGroundFv:
+/* 802EA4D8 002E6318  4B FA 6B 94 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv

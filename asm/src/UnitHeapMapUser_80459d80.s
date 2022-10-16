@@ -1,18 +1,18 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80459D80
-lbl_80459D80:
+.global __vt__Q23mem15UnitHeapMapUser
+__vt__Q23mem15UnitHeapMapUser:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801BEFB8
-	.4byte lbl_801BF7C0
-	.4byte lbl_801BF7D4
-	.4byte lbl_801BF7D8
-	.4byte lbl_801BF7EC
-	.4byte lbl_801BF84C
-	.4byte lbl_801BF8A0
-	.4byte lbl_801BF8DC
-	.4byte lbl_801BF94C
-	.4byte lbl_801BFA2C
+	.4byte __dt__Q23mem15UnitHeapMapUserFv
+	.4byte heapName__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte fragmentBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedBlockCount__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte totalHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedHeapSize__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte startAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte endAddress__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte drawFragmentBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer

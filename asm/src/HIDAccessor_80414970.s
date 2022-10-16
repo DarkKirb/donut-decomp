@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80414970
-lbl_80414970:
+.global "T_BUTTON_CONVDATA_CL__25@unnamed@HIDAccessor_cpp@"
+"T_BUTTON_CONVDATA_CL__25@unnamed@HIDAccessor_cpp@":
 
 	.4byte 0x00000002
 	.4byte 0x00000008
@@ -65,8 +65,8 @@ lbl_80414970:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80414A60
-lbl_80414A60:
+.global "T_BUTTON_CONVDATA_GC__25@unnamed@HIDAccessor_cpp@"
+"T_BUTTON_CONVDATA_GC__25@unnamed@HIDAccessor_cpp@":
 
 	.4byte 0x00000001
 	.4byte 0x00000008
@@ -117,8 +117,8 @@ lbl_80414A60:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80414B20
-lbl_80414B20:
+.global "T_STICK_CONVDATA__25@unnamed@HIDAccessor_cpp@"
+"T_STICK_CONVDATA__25@unnamed@HIDAccessor_cpp@":
 
 	.4byte 0x00000008
 	.4byte 0x00000004

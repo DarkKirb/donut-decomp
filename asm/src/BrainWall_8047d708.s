@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8047D708
-lbl_8047D708:
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateFall,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateFall,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA6F4
-	.4byte lbl_802EA6D4
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateFall,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9tsukikage9StateFall,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_8047D718
-lbl_8047D718:
+.global __vt__Q53scn4step5enemy9tsukikage9BrainWall
+__vt__Q53scn4step5enemy9tsukikage9BrainWall:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802EA6F0
-	.4byte lbl_802EA5DC
-	.4byte lbl_802EA658
-	.4byte lbl_8027EE30
-	.4byte lbl_8027EE34
+	.4byte __dt__Q53scn4step5enemy9tsukikage9BrainWallFv
+	.4byte onStart__Q53scn4step5enemy9tsukikage9BrainWallFv
+	.4byte onRecover__Q53scn4step5enemy9tsukikage9BrainWallFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0

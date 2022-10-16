@@ -1,22 +1,22 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804792C0
-lbl_804792C0:
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8needlous17StateWalkStraight,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8needlous17StateWalkStraight,PQ43scn4step5enemy5Enemy>":
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C5D18
-	.4byte lbl_802C5CF8
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8needlous17StateWalkStraight,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy8needlous17StateWalkStraight,PQ43scn4step5enemy5Enemy>Fv"
 
-.global lbl_804792D0
-lbl_804792D0:
+.global __vt__Q53scn4step5enemy8needlous19BrainAttackStraight
+__vt__Q53scn4step5enemy8needlous19BrainAttackStraight:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_802C5D14
-	.4byte lbl_8027EE28
-	.4byte lbl_802C5A80
-	.4byte lbl_802C5B50
-	.4byte lbl_802C5B54
+	.4byte __dt__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.4byte onStart__Q43scn4step5enemy9BrainBaseFv
+	.4byte onRecover__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.4byte onLanding__Q53scn4step5enemy8needlous19BrainAttackStraightFv
+	.4byte update__Q53scn4step5enemy8needlous19BrainAttackStraightFv
 	.4byte 0

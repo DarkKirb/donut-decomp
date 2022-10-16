@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80421DD8
-lbl_80421DD8:
+.global "@1_80421DD8"
+"@1_80421DD8":
 
 	.4byte 0x3C3C2052
 	.4byte 0x564C5F53
@@ -249,8 +249,8 @@ lbl_80421DD8:
 	.4byte 0x6E732E0A
 	.4byte 0
 
-.global lbl_804221A8
-lbl_804221A8:
+.global __OSExceptionLocations
+__OSExceptionLocations:
 
 	.4byte 0x00000100
 	.4byte 0x00000200

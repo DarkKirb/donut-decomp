@@ -1,48 +1,48 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8046B240
-lbl_8046B240:
+.global "T_SCORE_KIND_INFO_TABLE__21@unnamed@Manager_cpp@"
+"T_SCORE_KIND_INFO_TABLE__21@unnamed@Manager_cpp@":
 
 	.4byte 0x00000127
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026823C
+	.4byte resFile100__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268C84
+	.4byte incCoinSCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0x00000128
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026822C
+	.4byte resFile1000__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268CD8
+	.4byte incCoinLCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0x01000000
 	.4byte 0x00000126
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268234
+	.4byte resFile50__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268D2C
+	.4byte incEnemyCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0x00000128
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_8026822C
+	.4byte resFile1000__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268D88
+	.4byte incEnemyLCount__Q43scn4step9challenge7ManagerFv
 	.4byte 0x01000000
 	.4byte 0x00000244
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268224
+	.4byte resFile100Minus__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0xFFFFFFFF
-	.4byte lbl_80268DDC
+	.4byte incDamageScore__Q43scn4step9challenge7ManagerFv
 	.4byte 0
 	.4byte 0x73746570
 	.4byte 0x2F636861
@@ -81,8 +81,8 @@ lbl_8046B240:
 	.4byte 0x6D696E75
 	.4byte 0x73000000
 
-.global lbl_8046B370
-lbl_8046B370:
+.global "@55626_8046B370"
+"@55626_8046B370":
 
 	.4byte lbl_80268600
 	.4byte lbl_8026866C

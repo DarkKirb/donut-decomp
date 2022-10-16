@@ -1,20 +1,20 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801A4178
-lbl_801A4178:
+.global __ct__Q23hid14RumbleResourceFQ23hid18RumbleResourceKind
+__ct__Q23hid14RumbleResourceFQ23hid18RumbleResourceKind:
 /* 801A4178 0019FFB8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A417C 0019FFBC  7C 08 02 A6 */	mflr r0
 /* 801A4180 0019FFC0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801A4184 0019FFC4  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801A4188 0019FFC8  7C 7F 1B 78 */	mr r31, r3
 /* 801A418C 0019FFCC  54 80 10 3A */	slwi r0, r4, 2
-/* 801A4190 0019FFD0  38 8D 8A 80 */	addi r4, r13, lbl_80556EA0@sda21
+/* 801A4190 0019FFD0  38 8D 8A 80 */	addi r4, r13, "T_DAT_PATH_TABLE__Q23hid28@unnamed@RumbleResource_cpp@"@sda21
 /* 801A4194 0019FFD4  7C 84 00 2E */	lwzx r4, r4, r0
 /* 801A4198 0019FFD8  38 A0 00 00 */	li r5, 0x0
-/* 801A419C 0019FFDC  4B FE 38 B5 */	bl lbl_80187A50
+/* 801A419C 0019FFDC  4B FE 38 B5 */	bl __ct__Q24file12FileAccessorFPCcb
 /* 801A41A0 0019FFE0  7F E3 FB 78 */	mr r3, r31
-/* 801A41A4 0019FFE4  4B FE 39 35 */	bl lbl_80187AD8
+/* 801A41A4 0019FFE4  4B FE 39 35 */	bl block__Q24file12FileAccessorCFv
 /* 801A41A8 0019FFE8  90 81 00 0C */	stw r4, 0xc(r1)
 /* 801A41AC 0019FFEC  90 61 00 08 */	stw r3, 0x8(r1)
 /* 801A41B0 0019FFF0  90 9F 00 04 */	stw r4, 0x4(r31)
@@ -24,8 +24,8 @@ lbl_801A4178:
 /* 801A41C0 001A0000  7C 08 03 A6 */	mtlr r0
 /* 801A41C4 001A0004  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A41C8 001A0008  4E 80 00 20 */	blr
-.global lbl_801A41CC
-lbl_801A41CC:
+.global commandList__Q23hid14RumbleResourceCFUl
+commandList__Q23hid14RumbleResourceCFUl:
 /* 801A41CC 001A000C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A41D0 001A0010  7C 08 02 A6 */	mflr r0
 /* 801A41D4 001A0014  90 01 00 14 */	stw r0, 0x14(r1)
@@ -34,7 +34,7 @@ lbl_801A41CC:
 /* 801A41E0 001A0020  7C 7E 1B 78 */	mr r30, r3
 /* 801A41E4 001A0024  7C 9F 23 78 */	mr r31, r4
 /* 801A41E8 001A0028  38 63 00 04 */	addi r3, r3, 0x4
-/* 801A41EC 001A002C  4B FE 2F 81 */	bl lbl_8018716C
+/* 801A41EC 001A002C  4B FE 2F 81 */	bl isValidData__Q25xdata5XDataCFv
 /* 801A41F0 001A0030  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801A41F4 001A0034  41 82 00 10 */	beq lbl_801A4204
 /* 801A41F8 001A0038  80 7E 00 04 */	lwz r3, 0x4(r30)
@@ -49,7 +49,7 @@ lbl_801A4208:
 /* 801A420C 001A004C  7C 63 02 14 */	add r3, r3, r0
 /* 801A4210 001A0050  83 E3 00 04 */	lwz r31, 0x4(r3)
 /* 801A4214 001A0054  38 7E 00 04 */	addi r3, r30, 0x4
-/* 801A4218 001A0058  4B FE 2F 55 */	bl lbl_8018716C
+/* 801A4218 001A0058  4B FE 2F 55 */	bl isValidData__Q25xdata5XDataCFv
 /* 801A421C 001A005C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801A4220 001A0060  40 82 00 0C */	bne lbl_801A422C
 /* 801A4224 001A0064  38 60 00 00 */	li r3, 0x0

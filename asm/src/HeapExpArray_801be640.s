@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801BE640
-lbl_801BE640:
+.global __ct__Q23mem12HeapExpArrayFRQ23mem10IAllocatorUlUlPCc
+__ct__Q23mem12HeapExpArrayFRQ23mem10IAllocatorUlUlPCc:
 /* 801BE640 001BA480  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 801BE644 001BA484  7C 08 02 A6 */	mflr r0
 /* 801BE648 001BA488  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -14,7 +14,7 @@ lbl_801BE640:
 /* 801BE660 001BA4A0  7C DB 33 78 */	mr r27, r6
 /* 801BE664 001BA4A4  7C FC 3B 78 */	mr r28, r7
 /* 801BE668 001BA4A8  7F 84 E3 78 */	mr r4, r28
-/* 801BE66C 001BA4AC  48 00 01 35 */	bl lbl_801BE7A0
+/* 801BE66C 001BA4AC  48 00 01 35 */	bl "__ct__Q33hel6common15FixedString<32>FPCc"
 /* 801BE670 001BA4B0  3B F8 00 20 */	addi r31, r24, 0x20
 /* 801BE674 001BA4B4  93 3F 00 00 */	stw r25, 0x0(r31)
 /* 801BE678 001BA4B8  93 7F 00 04 */	stw r27, 0x4(r31)
@@ -23,23 +23,23 @@ lbl_801BE640:
 /* 801BE684 001BA4C4  2C 1B 00 00 */	cmpwi r27, 0x0
 /* 801BE688 001BA4C8  41 82 00 58 */	beq lbl_801BE6E0
 /* 801BE68C 001BA4CC  7F 23 CB 78 */	mr r3, r25
-/* 801BE690 001BA4D0  4B E6 5E 11 */	bl lbl_800244A0
+/* 801BE690 001BA4D0  4B E6 5E 11 */	bl DefaultSwitchThreadCallback
 /* 801BE694 001BA4D4  90 61 00 08 */	stw r3, 0x8(r1)
 /* 801BE698 001BA4D8  38 7F 00 08 */	addi r3, r31, 0x8
 /* 801BE69C 001BA4DC  1C 9B 00 6C */	mulli r4, r27, 0x6c
 /* 801BE6A0 001BA4E0  38 A0 00 04 */	li r5, 0x4
 /* 801BE6A4 001BA4E4  38 C1 00 08 */	addi r6, r1, 0x8
-/* 801BE6A8 001BA4E8  4B FC 49 FD */	bl lbl_801830A4
+/* 801BE6A8 001BA4E8  4B FC 49 FD */	bl "construct<Ul,l,Q33std3tr137reference_wrapper<Q23mem10IAllocator>>__Q24util30PlacementNew<Q23mem9DataBlock>FUllQ33std3tr137reference_wrapper<Q23mem10IAllocator>_v"
 /* 801BE6AC 001BA4EC  3B A0 00 00 */	li r29, 0x0
 /* 801BE6B0 001BA4F0  48 00 00 24 */	b lbl_801BE6D4
 .global lbl_801BE6B4
 lbl_801BE6B4:
 /* 801BE6B4 001BA4F4  7F E3 FB 78 */	mr r3, r31
-/* 801BE6B8 001BA4F8  48 00 01 3D */	bl lbl_801BE7F4
+/* 801BE6B8 001BA4F8  48 00 01 3D */	bl "head__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
 /* 801BE6BC 001BA4FC  7C 63 F2 14 */	add r3, r3, r30
 /* 801BE6C0 001BA500  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801BE6C4 001BA504  41 82 00 08 */	beq lbl_801BE6CC
-/* 801BE6C8 001BA508  48 00 03 C9 */	bl lbl_801BEA90
+/* 801BE6C8 001BA508  48 00 03 C9 */	bl __ct__Q33mem12HeapExpArray5BlockFv
 .global lbl_801BE6CC
 lbl_801BE6CC:
 /* 801BE6CC 001BA50C  3B BD 00 01 */	addi r29, r29, 0x1
@@ -59,20 +59,20 @@ lbl_801BE6EC:
 /* 801BE6EC 001BA52C  28 1B 00 01 */	cmplwi r27, 0x1
 /* 801BE6F0 001BA530  40 82 00 20 */	bne lbl_801BE710
 /* 801BE6F4 001BA534  38 61 00 50 */	addi r3, r1, 0x50
-/* 801BE6F8 001BA538  38 8D 8E 50 */	addi r4, r13, lbl_80557270@sda21
+/* 801BE6F8 001BA538  38 8D 8E 50 */	addi r4, r13, "@49831"@sda21
 /* 801BE6FC 001BA53C  7F 85 E3 78 */	mr r5, r28
 /* 801BE700 001BA540  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801BE704 001BA544  4B FB AB 29 */	bl lbl_8017922C
+/* 801BE704 001BA544  4B FB AB 29 */	bl "FromFormat__Q33hel6common19FixedStringIN<c,32>FPCce"
 /* 801BE708 001BA548  38 61 00 50 */	addi r3, r1, 0x50
 /* 801BE70C 001BA54C  48 00 00 20 */	b lbl_801BE72C
 .global lbl_801BE710
 lbl_801BE710:
 /* 801BE710 001BA550  38 61 00 30 */	addi r3, r1, 0x30
-/* 801BE714 001BA554  38 8D 8E 58 */	addi r4, r13, lbl_80557278@sda21
+/* 801BE714 001BA554  38 8D 8E 58 */	addi r4, r13, "@49832"@sda21
 /* 801BE718 001BA558  7F 85 E3 78 */	mr r5, r28
 /* 801BE71C 001BA55C  7F A6 EB 78 */	mr r6, r29
 /* 801BE720 001BA560  4C C6 31 82 */	crclr 4*cr1+eq
-/* 801BE724 001BA564  4B FB AB 09 */	bl lbl_8017922C
+/* 801BE724 001BA564  4B FB AB 09 */	bl "FromFormat__Q33hel6common19FixedStringIN<c,32>FPCce"
 /* 801BE728 001BA568  38 61 00 30 */	addi r3, r1, 0x30
 .global lbl_801BE72C
 lbl_801BE72C:
@@ -88,15 +88,15 @@ lbl_801BE738:
 /* 801BE748 001BA588  42 00 FF F0 */	bdnz lbl_801BE738
 /* 801BE74C 001BA58C  38 61 00 10 */	addi r3, r1, 0x10
 /* 801BE750 001BA590  38 81 00 70 */	addi r4, r1, 0x70
-/* 801BE754 001BA594  48 00 00 4D */	bl lbl_801BE7A0
+/* 801BE754 001BA594  48 00 00 4D */	bl "__ct__Q33hel6common15FixedString<32>FPCc"
 /* 801BE758 001BA598  7C 7F 1B 78 */	mr r31, r3
 /* 801BE75C 001BA59C  38 78 00 20 */	addi r3, r24, 0x20
 /* 801BE760 001BA5A0  7F A4 EB 78 */	mr r4, r29
-/* 801BE764 001BA5A4  48 00 01 61 */	bl lbl_801BE8C4
+/* 801BE764 001BA5A4  48 00 01 61 */	bl "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
 /* 801BE768 001BA5A8  7F 24 CB 78 */	mr r4, r25
 /* 801BE76C 001BA5AC  7F 45 D3 78 */	mr r5, r26
 /* 801BE770 001BA5B0  7F E6 FB 78 */	mr r6, r31
-/* 801BE774 001BA5B4  48 00 03 9D */	bl lbl_801BEB10
+/* 801BE774 001BA5B4  48 00 03 9D */	bl "initialize__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocatorUlRCQ33hel6common15FixedString<32>"
 /* 801BE778 001BA5B8  3B BD 00 01 */	addi r29, r29, 0x1
 .global lbl_801BE77C
 lbl_801BE77C:
@@ -109,8 +109,8 @@ lbl_801BE77C:
 /* 801BE794 001BA5D4  7C 08 03 A6 */	mtlr r0
 /* 801BE798 001BA5D8  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801BE79C 001BA5DC  4E 80 00 20 */	blr
-.global lbl_801BE7A0
-lbl_801BE7A0:
+.global "__ct__Q33hel6common15FixedString<32>FPCc"
+"__ct__Q33hel6common15FixedString<32>FPCc":
 /* 801BE7A0 001BA5E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BE7A4 001BA5E4  7C 08 02 A6 */	mflr r0
 /* 801BE7A8 001BA5E8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -127,20 +127,20 @@ lbl_801BE7C4:
 /* 801BE7CC 001BA60C  42 00 FF F8 */	bdnz lbl_801BE7C4
 /* 801BE7D0 001BA610  7F E3 FB 78 */	mr r3, r31
 /* 801BE7D4 001BA614  38 A0 00 20 */	li r5, 0x20
-/* 801BE7D8 001BA618  4B FD F1 E5 */	bl lbl_8019D9BC
+/* 801BE7D8 001BA618  4B FD F1 E5 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
 /* 801BE7DC 001BA61C  7F E3 FB 78 */	mr r3, r31
 /* 801BE7E0 001BA620  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801BE7E4 001BA624  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801BE7E8 001BA628  7C 08 03 A6 */	mtlr r0
 /* 801BE7EC 001BA62C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BE7F0 001BA630  4E 80 00 20 */	blr
-.global lbl_801BE7F4
-lbl_801BE7F4:
+.global "head__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
+"head__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv":
 /* 801BE7F4 001BA634  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BE7F8 001BA638  7C 08 02 A6 */	mflr r0
 /* 801BE7FC 001BA63C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801BE800 001BA640  80 63 00 08 */	lwz r3, 0x8(r3)
-/* 801BE804 001BA644  4B FC 49 35 */	bl lbl_80183138
+/* 801BE804 001BA644  4B FC 49 35 */	bl block__Q23mem9DataBlockCFv
 /* 801BE808 001BA648  90 81 00 0C */	stw r4, 0xc(r1)
 /* 801BE80C 001BA64C  90 61 00 08 */	stw r3, 0x8(r1)
 /* 801BE810 001BA650  7C 83 23 78 */	mr r3, r4
@@ -148,8 +148,8 @@ lbl_801BE7F4:
 /* 801BE818 001BA658  7C 08 03 A6 */	mtlr r0
 /* 801BE81C 001BA65C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BE820 001BA660  4E 80 00 20 */	blr
-.global lbl_801BE824
-lbl_801BE824:
+.global "__dt__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
+"__dt__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv":
 /* 801BE824 001BA664  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801BE828 001BA668  7C 08 02 A6 */	mflr r0
 /* 801BE82C 001BA66C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -166,29 +166,29 @@ lbl_801BE824:
 .global lbl_801BE858
 lbl_801BE858:
 /* 801BE858 001BA698  7F A3 EB 78 */	mr r3, r29
-/* 801BE85C 001BA69C  4B FF FF 99 */	bl lbl_801BE7F4
+/* 801BE85C 001BA69C  4B FF FF 99 */	bl "head__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
 /* 801BE860 001BA6A0  38 1F FF FF */	addi r0, r31, -0x1
 /* 801BE864 001BA6A4  1C 00 00 6C */	mulli r0, r0, 0x6c
 /* 801BE868 001BA6A8  7C 63 02 14 */	add r3, r3, r0
 /* 801BE86C 001BA6AC  38 80 FF FF */	li r4, -0x1
-/* 801BE870 001BA6B0  48 00 02 35 */	bl lbl_801BEAA4
+/* 801BE870 001BA6B0  48 00 02 35 */	bl __dt__Q33mem12HeapExpArray5BlockFv
 /* 801BE874 001BA6B4  3B FF FF FF */	addi r31, r31, -0x1
 .global lbl_801BE878
 lbl_801BE878:
 /* 801BE878 001BA6B8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 801BE87C 001BA6BC  40 82 FF DC */	bne lbl_801BE858
 /* 801BE880 001BA6C0  38 7D 00 08 */	addi r3, r29, 0x8
-/* 801BE884 001BA6C4  4B FB F8 75 */	bl lbl_8017E0F8
+/* 801BE884 001BA6C4  4B FB F8 75 */	bl "destruct__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 .global lbl_801BE888
 lbl_801BE888:
 /* 801BE888 001BA6C8  38 7D 00 08 */	addi r3, r29, 0x8
 /* 801BE88C 001BA6CC  38 80 FF FF */	li r4, -0x1
-/* 801BE890 001BA6D0  4B FB F8 AD */	bl lbl_8017E13C
+/* 801BE890 001BA6D0  4B FB F8 AD */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 801BE894 001BA6D4  7F C0 07 34 */	extsh r0, r30
 /* 801BE898 001BA6D8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BE89C 001BA6DC  40 81 00 0C */	ble lbl_801BE8A8
 /* 801BE8A0 001BA6E0  7F A3 EB 78 */	mr r3, r29
-/* 801BE8A4 001BA6E4  48 00 0E 71 */	bl lbl_801BF714
+/* 801BE8A4 001BA6E4  48 00 0E 71 */	bl __dl__FPv
 .global lbl_801BE8A8
 lbl_801BE8A8:
 /* 801BE8A8 001BA6E8  7F A3 EB 78 */	mr r3, r29
@@ -198,8 +198,8 @@ lbl_801BE8A8:
 /* 801BE8B8 001BA6F8  7C 08 03 A6 */	mtlr r0
 /* 801BE8BC 001BA6FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BE8C0 001BA700  4E 80 00 20 */	blr
-.global lbl_801BE8C4
-lbl_801BE8C4:
+.global "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
+"__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl":
 /* 801BE8C4 001BA704  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BE8C8 001BA708  7C 08 02 A6 */	mflr r0
 /* 801BE8CC 001BA70C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -209,9 +209,9 @@ lbl_801BE8C4:
 /* 801BE8DC 001BA71C  7C 9F 23 78 */	mr r31, r4
 /* 801BE8E0 001BA720  7F E3 FB 78 */	mr r3, r31
 /* 801BE8E4 001BA724  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 801BE8E8 001BA728  4B E6 5B B9 */	bl lbl_800244A0
+/* 801BE8E8 001BA728  4B E6 5B B9 */	bl DefaultSwitchThreadCallback
 /* 801BE8EC 001BA72C  7F C3 F3 78 */	mr r3, r30
-/* 801BE8F0 001BA730  4B FF FF 05 */	bl lbl_801BE7F4
+/* 801BE8F0 001BA730  4B FF FF 05 */	bl "head__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
 /* 801BE8F4 001BA734  1C 1F 00 6C */	mulli r0, r31, 0x6c
 /* 801BE8F8 001BA738  7C 63 02 14 */	add r3, r3, r0
 /* 801BE8FC 001BA73C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -220,8 +220,8 @@ lbl_801BE8C4:
 /* 801BE908 001BA748  7C 08 03 A6 */	mtlr r0
 /* 801BE90C 001BA74C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BE910 001BA750  4E 80 00 20 */	blr
-.global lbl_801BE914
-lbl_801BE914:
+.global __dt__Q23mem12HeapExpArrayFv
+__dt__Q23mem12HeapExpArrayFv:
 /* 801BE914 001BA754  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801BE918 001BA758  7C 08 02 A6 */	mflr r0
 /* 801BE91C 001BA75C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -237,8 +237,8 @@ lbl_801BE914:
 lbl_801BE940:
 /* 801BE940 001BA780  38 7D 00 20 */	addi r3, r29, 0x20
 /* 801BE944 001BA784  7F E4 FB 78 */	mr r4, r31
-/* 801BE948 001BA788  4B FF FF 7D */	bl lbl_801BE8C4
-/* 801BE94C 001BA78C  48 00 02 C1 */	bl lbl_801BEC0C
+/* 801BE948 001BA788  4B FF FF 7D */	bl "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
+/* 801BE94C 001BA78C  48 00 02 C1 */	bl clearIfUsing__Q33mem12HeapExpArray5BlockFv
 /* 801BE950 001BA790  3B FF 00 01 */	addi r31, r31, 0x1
 .global lbl_801BE954
 lbl_801BE954:
@@ -247,12 +247,12 @@ lbl_801BE954:
 /* 801BE95C 001BA79C  41 80 FF E4 */	blt lbl_801BE940
 /* 801BE960 001BA7A0  38 7D 00 20 */	addi r3, r29, 0x20
 /* 801BE964 001BA7A4  38 80 FF FF */	li r4, -0x1
-/* 801BE968 001BA7A8  4B FF FE BD */	bl lbl_801BE824
+/* 801BE968 001BA7A8  4B FF FE BD */	bl "__dt__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>Fv"
 /* 801BE96C 001BA7AC  7F C0 07 34 */	extsh r0, r30
 /* 801BE970 001BA7B0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BE974 001BA7B4  40 81 00 0C */	ble lbl_801BE980
 /* 801BE978 001BA7B8  7F A3 EB 78 */	mr r3, r29
-/* 801BE97C 001BA7BC  48 00 0D 99 */	bl lbl_801BF714
+/* 801BE97C 001BA7BC  48 00 0D 99 */	bl __dl__FPv
 .global lbl_801BE980
 lbl_801BE980:
 /* 801BE980 001BA7C0  7F A3 EB 78 */	mr r3, r29
@@ -262,8 +262,8 @@ lbl_801BE980:
 /* 801BE990 001BA7D0  7C 08 03 A6 */	mtlr r0
 /* 801BE994 001BA7D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BE998 001BA7D8  4E 80 00 20 */	blr
-.global lbl_801BE99C
-lbl_801BE99C:
+.global refHeap__Q23mem12HeapExpArrayFv
+refHeap__Q23mem12HeapExpArrayFv:
 /* 801BE99C 001BA7DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BE9A0 001BA7E0  7C 08 02 A6 */	mflr r0
 /* 801BE9A4 001BA7E4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -276,11 +276,11 @@ lbl_801BE99C:
 lbl_801BE9BC:
 /* 801BE9BC 001BA7FC  38 7E 00 20 */	addi r3, r30, 0x20
 /* 801BE9C0 001BA800  7F E4 FB 78 */	mr r4, r31
-/* 801BE9C4 001BA804  4B FF FF 01 */	bl lbl_801BE8C4
+/* 801BE9C4 001BA804  4B FF FF 01 */	bl "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
 /* 801BE9C8 001BA808  88 03 00 68 */	lbz r0, 0x68(r3)
 /* 801BE9CC 001BA80C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BE9D0 001BA810  40 82 00 0C */	bne lbl_801BE9DC
-/* 801BE9D4 001BA814  48 00 02 1D */	bl lbl_801BEBF0
+/* 801BE9D4 001BA814  48 00 02 1D */	bl ref__Q33mem12HeapExpArray5BlockFv
 /* 801BE9D8 001BA818  48 00 00 24 */	b lbl_801BE9FC
 .global lbl_801BE9DC
 lbl_801BE9DC:
@@ -292,8 +292,8 @@ lbl_801BE9E0:
 /* 801BE9E8 001BA828  41 80 FF D4 */	blt lbl_801BE9BC
 /* 801BE9EC 001BA82C  38 7E 00 20 */	addi r3, r30, 0x20
 /* 801BE9F0 001BA830  38 80 00 00 */	li r4, 0x0
-/* 801BE9F4 001BA834  4B FF FE D1 */	bl lbl_801BE8C4
-/* 801BE9F8 001BA838  48 00 01 F9 */	bl lbl_801BEBF0
+/* 801BE9F4 001BA834  4B FF FE D1 */	bl "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
+/* 801BE9F8 001BA838  48 00 01 F9 */	bl ref__Q33mem12HeapExpArray5BlockFv
 .global lbl_801BE9FC
 lbl_801BE9FC:
 /* 801BE9FC 001BA83C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -302,8 +302,8 @@ lbl_801BE9FC:
 /* 801BEA08 001BA848  7C 08 03 A6 */	mtlr r0
 /* 801BEA0C 001BA84C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BEA10 001BA850  4E 80 00 20 */	blr
-.global lbl_801BEA14
-lbl_801BEA14:
+.global unrefHeap__Q23mem12HeapExpArrayFRQ23mem10IAllocator
+unrefHeap__Q23mem12HeapExpArrayFRQ23mem10IAllocator:
 /* 801BEA14 001BA854  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801BEA18 001BA858  7C 08 02 A6 */	mflr r0
 /* 801BEA1C 001BA85C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -317,15 +317,15 @@ lbl_801BEA14:
 lbl_801BEA38:
 /* 801BEA38 001BA878  38 7C 00 20 */	addi r3, r28, 0x20
 /* 801BEA3C 001BA87C  7F E4 FB 78 */	mr r4, r31
-/* 801BEA40 001BA880  4B FF FE 85 */	bl lbl_801BE8C4
+/* 801BEA40 001BA880  4B FF FE 85 */	bl "__vc__Q23mem45RuntimeFixedArray<Q33mem12HeapExpArray5Block>FUl"
 /* 801BEA44 001BA884  7C 7E 1B 78 */	mr r30, r3
 /* 801BEA48 001BA888  7F A4 EB 78 */	mr r4, r29
-/* 801BEA4C 001BA88C  48 00 01 7D */	bl lbl_801BEBC8
+/* 801BEA4C 001BA88C  48 00 01 7D */	bl isSameAllocator__Q33mem12HeapExpArray5BlockCFRCQ23mem10IAllocator
 /* 801BEA50 001BA890  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801BEA54 001BA894  41 82 00 14 */	beq lbl_801BEA68
 /* 801BEA58 001BA898  7F C3 F3 78 */	mr r3, r30
 /* 801BEA5C 001BA89C  7F A4 EB 78 */	mr r4, r29
-/* 801BEA60 001BA8A0  48 00 01 A1 */	bl lbl_801BEC00
+/* 801BEA60 001BA8A0  48 00 01 A1 */	bl unref__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocator
 /* 801BEA64 001BA8A4  48 00 00 14 */	b lbl_801BEA78
 .global lbl_801BEA68
 lbl_801BEA68:
@@ -343,15 +343,15 @@ lbl_801BEA78:
 /* 801BEA84 001BA8C4  7C 08 03 A6 */	mtlr r0
 /* 801BEA88 001BA8C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BEA8C 001BA8CC  4E 80 00 20 */	blr
-.global lbl_801BEA90
-lbl_801BEA90:
+.global __ct__Q33mem12HeapExpArray5BlockFv
+__ct__Q33mem12HeapExpArray5BlockFv:
 /* 801BEA90 001BA8D0  38 00 00 00 */	li r0, 0x0
 /* 801BEA94 001BA8D4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801BEA98 001BA8D8  90 03 00 10 */	stw r0, 0x10(r3)
 /* 801BEA9C 001BA8DC  98 03 00 68 */	stb r0, 0x68(r3)
 /* 801BEAA0 001BA8E0  4E 80 00 20 */	blr
-.global lbl_801BEAA4
-lbl_801BEAA4:
+.global __dt__Q33mem12HeapExpArray5BlockFv
+__dt__Q33mem12HeapExpArray5BlockFv:
 /* 801BEAA4 001BA8E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BEAA8 001BA8E8  7C 08 02 A6 */	mflr r0
 /* 801BEAAC 001BA8EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -363,15 +363,15 @@ lbl_801BEAA4:
 /* 801BEAC4 001BA904  41 82 00 30 */	beq lbl_801BEAF4
 /* 801BEAC8 001BA908  38 63 00 10 */	addi r3, r3, 0x10
 /* 801BEACC 001BA90C  38 80 FF FF */	li r4, -0x1
-/* 801BEAD0 001BA910  4B FC 4D 7D */	bl lbl_8018384C
+/* 801BEAD0 001BA910  4B FC 4D 7D */	bl "__dt__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
 /* 801BEAD4 001BA914  7F C3 F3 78 */	mr r3, r30
 /* 801BEAD8 001BA918  38 80 FF FF */	li r4, -0x1
-/* 801BEADC 001BA91C  4B FB F6 61 */	bl lbl_8017E13C
+/* 801BEADC 001BA91C  4B FB F6 61 */	bl "__dt__Q24util30PlacementNew<Q23mem9DataBlock>Fv"
 /* 801BEAE0 001BA920  7F E0 07 34 */	extsh r0, r31
 /* 801BEAE4 001BA924  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BEAE8 001BA928  40 81 00 0C */	ble lbl_801BEAF4
 /* 801BEAEC 001BA92C  7F C3 F3 78 */	mr r3, r30
-/* 801BEAF0 001BA930  48 00 0C 25 */	bl lbl_801BF714
+/* 801BEAF0 001BA930  48 00 0C 25 */	bl __dl__FPv
 .global lbl_801BEAF4
 lbl_801BEAF4:
 /* 801BEAF4 001BA934  7F C3 F3 78 */	mr r3, r30
@@ -381,8 +381,8 @@ lbl_801BEAF4:
 /* 801BEB04 001BA944  7C 08 03 A6 */	mtlr r0
 /* 801BEB08 001BA948  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BEB0C 001BA94C  4E 80 00 20 */	blr
-.global lbl_801BEB10
-lbl_801BEB10:
+.global "initialize__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocatorUlRCQ33hel6common15FixedString<32>"
+"initialize__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocatorUlRCQ33hel6common15FixedString<32>":
 /* 801BEB10 001BA950  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 801BEB14 001BA954  7C 08 02 A6 */	mflr r0
 /* 801BEB18 001BA958  90 01 00 54 */	stw r0, 0x54(r1)
@@ -392,15 +392,15 @@ lbl_801BEB10:
 /* 801BEB28 001BA968  7C BE 2B 78 */	mr r30, r5
 /* 801BEB2C 001BA96C  7C DF 33 78 */	mr r31, r6
 /* 801BEB30 001BA970  7C 83 23 78 */	mr r3, r4
-/* 801BEB34 001BA974  4B E6 59 6D */	bl lbl_800244A0
+/* 801BEB34 001BA974  4B E6 59 6D */	bl DefaultSwitchThreadCallback
 /* 801BEB38 001BA978  90 61 00 08 */	stw r3, 0x8(r1)
 /* 801BEB3C 001BA97C  7F A3 EB 78 */	mr r3, r29
 /* 801BEB40 001BA980  7F C4 F3 78 */	mr r4, r30
 /* 801BEB44 001BA984  38 A0 00 04 */	li r5, 0x4
 /* 801BEB48 001BA988  38 C1 00 08 */	addi r6, r1, 0x8
-/* 801BEB4C 001BA98C  4B FC 45 59 */	bl lbl_801830A4
+/* 801BEB4C 001BA98C  4B FC 45 59 */	bl "construct<Ul,l,Q33std3tr137reference_wrapper<Q23mem10IAllocator>>__Q24util30PlacementNew<Q23mem9DataBlock>FUllQ33std3tr137reference_wrapper<Q23mem10IAllocator>_v"
 /* 801BEB50 001BA990  80 7D 00 00 */	lwz r3, 0x0(r29)
-/* 801BEB54 001BA994  4B FC 45 E5 */	bl lbl_80183138
+/* 801BEB54 001BA994  4B FC 45 E5 */	bl block__Q23mem9DataBlockCFv
 /* 801BEB58 001BA998  90 81 00 14 */	stw r4, 0x14(r1)
 /* 801BEB5C 001BA99C  90 61 00 10 */	stw r3, 0x10(r1)
 /* 801BEB60 001BA9A0  38 A1 00 14 */	addi r5, r1, 0x14
@@ -415,7 +415,7 @@ lbl_801BEB70:
 /* 801BEB7C 001BA9BC  94 05 00 08 */	stwu r0, 0x8(r5)
 /* 801BEB80 001BA9C0  42 00 FF F0 */	bdnz lbl_801BEB70
 /* 801BEB84 001BA9C4  38 7D 00 10 */	addi r3, r29, 0x10
-/* 801BEB88 001BA9C8  4B FC 4D 1D */	bl lbl_801838A4
+/* 801BEB88 001BA9C8  4B FC 4D 1D */	bl "destruct__Q24util28PlacementNew<Q23mem7HeapExp>Fv"
 /* 801BEB8C 001BA9CC  38 7D 00 14 */	addi r3, r29, 0x14
 /* 801BEB90 001BA9D0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801BEB94 001BA9D4  41 82 00 18 */	beq lbl_801BEBAC
@@ -423,7 +423,7 @@ lbl_801BEB70:
 /* 801BEB9C 001BA9DC  38 A1 00 10 */	addi r5, r1, 0x10
 /* 801BEBA0 001BA9E0  38 C0 00 00 */	li r6, 0x0
 /* 801BEBA4 001BA9E4  38 E0 00 00 */	li r7, 0x0
-/* 801BEBA8 001BA9E8  4B FF F7 09 */	bl lbl_801BE2B0
+/* 801BEBA8 001BA9E8  4B FF F7 09 */	bl "__ct__Q23mem7HeapExpFRCQ33hel6common15FixedString<32>RCQ23mem8MemBlockbb"
 .global lbl_801BEBAC
 lbl_801BEBAC:
 /* 801BEBAC 001BA9EC  90 7D 00 10 */	stw r3, 0x10(r29)
@@ -433,8 +433,8 @@ lbl_801BEBAC:
 /* 801BEBBC 001BA9FC  7C 08 03 A6 */	mtlr r0
 /* 801BEBC0 001BAA00  38 21 00 50 */	addi r1, r1, 0x50
 /* 801BEBC4 001BAA04  4E 80 00 20 */	blr
-.global lbl_801BEBC8
-lbl_801BEBC8:
+.global isSameAllocator__Q33mem12HeapExpArray5BlockCFRCQ23mem10IAllocator
+isSameAllocator__Q33mem12HeapExpArray5BlockCFRCQ23mem10IAllocator:
 /* 801BEBC8 001BAA08  38 A0 00 00 */	li r5, 0x0
 /* 801BEBCC 001BAA0C  88 03 00 68 */	lbz r0, 0x68(r3)
 /* 801BEBD0 001BAA10  2C 00 00 00 */	cmpwi r0, 0x0
@@ -447,22 +447,22 @@ lbl_801BEBC8:
 lbl_801BEBE8:
 /* 801BEBE8 001BAA28  7C A3 2B 78 */	mr r3, r5
 /* 801BEBEC 001BAA2C  4E 80 00 20 */	blr
-.global lbl_801BEBF0
-lbl_801BEBF0:
+.global ref__Q33mem12HeapExpArray5BlockFv
+ref__Q33mem12HeapExpArray5BlockFv:
 /* 801BEBF0 001BAA30  38 00 00 01 */	li r0, 0x1
 /* 801BEBF4 001BAA34  98 03 00 68 */	stb r0, 0x68(r3)
 /* 801BEBF8 001BAA38  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801BEBFC 001BAA3C  4E 80 00 20 */	blr
-.global lbl_801BEC00
-lbl_801BEC00:
+.global unref__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocator
+unref__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocator:
 /* 801BEC00 001BAA40  38 00 00 00 */	li r0, 0x0
 /* 801BEC04 001BAA44  98 03 00 68 */	stb r0, 0x68(r3)
 /* 801BEC08 001BAA48  4E 80 00 20 */	blr
-.global lbl_801BEC0C
-lbl_801BEC0C:
+.global clearIfUsing__Q33mem12HeapExpArray5BlockFv
+clearIfUsing__Q33mem12HeapExpArray5BlockFv:
 /* 801BEC0C 001BAA4C  88 03 00 68 */	lbz r0, 0x68(r3)
 /* 801BEC10 001BAA50  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801BEC14 001BAA54  4D 82 00 20 */	beqlr
 /* 801BEC18 001BAA58  80 83 00 10 */	lwz r4, 0x10(r3)
-/* 801BEC1C 001BAA5C  4B FF FF E4 */	b lbl_801BEC00
+/* 801BEC1C 001BAA5C  4B FF FF E4 */	b unref__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocator
 /* 801BEC20 001BAA60  4E 80 00 20 */	blr

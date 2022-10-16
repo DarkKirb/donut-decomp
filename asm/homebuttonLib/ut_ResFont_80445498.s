@@ -1,34 +1,34 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80445498
-lbl_80445498:
+.global __vt__Q36nw4hbm2ut7ResFont
+__vt__Q36nw4hbm2ut7ResFont:
 
-	.4byte lbl_80445518
+	.4byte __RTTI__Q36nw4hbm2ut7ResFont
 	.4byte 0
-	.4byte lbl_80141910
-	.4byte lbl_80141B20
-	.4byte lbl_80141B30
-	.4byte lbl_80141B40
-	.4byte lbl_80141B50
-	.4byte lbl_80141B60
-	.4byte lbl_80141B70
-	.4byte lbl_80141B80
-	.4byte lbl_80141B90
-	.4byte lbl_80141BA0
-	.4byte lbl_80141BB0
-	.4byte lbl_80141BC0
-	.4byte lbl_80141BD0
-	.4byte lbl_80141BE0
-	.4byte lbl_80141BF0
-	.4byte lbl_80141C90
-	.4byte lbl_80141CA0
-	.4byte lbl_80141CB0
-	.4byte lbl_80141DB0
-	.4byte lbl_80141E60
+	.4byte __dt__Q36nw4hbm2ut7ResFontFv
+	.4byte GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv
+	.4byte SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths
+	.4byte SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs
+	.4byte SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi
+	.4byte GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.4byte GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs
+	.4byte GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs
+	.4byte GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv
 
-.global lbl_804454F0
-lbl_804454F0:
+.global "@355"
+"@355":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -36,23 +36,23 @@ lbl_804454F0:
 	.4byte 0x52657346
 	.4byte 0x6F6E7400
 
-.global lbl_80445504
-lbl_80445504:
+.global "@356"
+"@356":
 
-	.4byte lbl_80445570
+	.4byte __RTTI__Q36nw4hbm2ut4Font
 	.4byte 0
-	.4byte lbl_80445550
+	.4byte __RTTI__Q46nw4hbm2ut6detail11ResFontBase
 	.4byte 0
 	.4byte 0
 
-.global lbl_80445518
-lbl_80445518:
+.global __RTTI__Q36nw4hbm2ut7ResFont
+__RTTI__Q36nw4hbm2ut7ResFont:
 
-	.4byte lbl_804454F0
-	.4byte lbl_80445504
+	.4byte "@355"
+	.4byte "@356"
 
-.global lbl_80445520
-lbl_80445520:
+.global "@357"
+"@357":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -63,22 +63,22 @@ lbl_80445520:
 	.4byte 0x6F6E7442
 	.4byte 0x61736500
 
-.global lbl_80445540
-lbl_80445540:
+.global "@358"
+"@358":
 
-	.4byte lbl_80445570
+	.4byte __RTTI__Q36nw4hbm2ut4Font
 	.4byte 0
 	.4byte 0
 	.4byte 0
 
-.global lbl_80445550
-lbl_80445550:
+.global __RTTI__Q46nw4hbm2ut6detail11ResFontBase
+__RTTI__Q46nw4hbm2ut6detail11ResFontBase:
 
-	.4byte lbl_80445520
-	.4byte lbl_80445540
+	.4byte "@357"
+	.4byte "@358"
 
-.global lbl_80445558
-lbl_80445558:
+.global "@359"
+"@359":
 
 	.4byte 0x6E773468
 	.4byte 0x626D3A3A
@@ -87,8 +87,8 @@ lbl_80445558:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80445570
-lbl_80445570:
+.global __RTTI__Q36nw4hbm2ut4Font
+__RTTI__Q36nw4hbm2ut4Font:
 
-	.4byte lbl_80445558
+	.4byte "@359"
 	.4byte 0

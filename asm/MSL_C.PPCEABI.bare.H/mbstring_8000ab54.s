@@ -1,17 +1,17 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8000AB54
-lbl_8000AB54:
-/* 8000AB54 00006994  3C C0 80 42 */	lis r6, lbl_80421510@ha
-/* 8000AB58 00006998  38 C6 15 10 */	addi r6, r6, lbl_80421510@l
+.global mbtowc
+mbtowc:
+/* 8000AB54 00006994  3C C0 80 42 */	lis r6, _current_locale@ha
+/* 8000AB58 00006998  38 C6 15 10 */	addi r6, r6, _current_locale@l
 /* 8000AB5C 0000699C  80 C6 00 38 */	lwz r6, 0x38(r6)
 /* 8000AB60 000069A0  81 86 00 20 */	lwz r12, 0x20(r6)
 /* 8000AB64 000069A4  7D 89 03 A6 */	mtctr r12
 /* 8000AB68 000069A8  4E 80 04 20 */	bctr
 
-.global lbl_8000AB6C
-lbl_8000AB6C:
+.global __mbtowc_noconv
+__mbtowc_noconv:
 /* 8000AB6C 000069AC  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8000AB70 000069B0  40 82 00 0C */	bne lbl_8000AB7C
 /* 8000AB74 000069B4  38 60 00 00 */	li r3, 0x0
@@ -40,8 +40,8 @@ lbl_8000ABB0:
 /* 8000ABB0 000069F0  38 60 00 01 */	li r3, 0x1
 /* 8000ABB4 000069F4  4E 80 00 20 */	blr
 
-.global lbl_8000ABB8
-lbl_8000ABB8:
+.global __wctomb_noconv
+__wctomb_noconv:
 /* 8000ABB8 000069F8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8000ABBC 000069FC  40 82 00 0C */	bne lbl_8000ABC8
 /* 8000ABC0 00006A00  38 60 00 00 */	li r3, 0x0
@@ -51,8 +51,8 @@ lbl_8000ABC8:
 /* 8000ABC8 00006A08  98 83 00 00 */	stb r4, 0x0(r3)
 /* 8000ABCC 00006A0C  38 60 00 01 */	li r3, 0x1
 /* 8000ABD0 00006A10  4E 80 00 20 */	blr
-.global lbl_8000ABD4
-lbl_8000ABD4:
+.global mbstowcs
+mbstowcs:
 /* 8000ABD4 00006A14  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8000ABD8 00006A18  7C 08 02 A6 */	mflr r0
 /* 8000ABDC 00006A1C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -61,13 +61,13 @@ lbl_8000ABD4:
 /* 8000ABE8 00006A28  7C 7A 1B 78 */	mr r26, r3
 /* 8000ABEC 00006A2C  7C BC 2B 78 */	mr r28, r5
 /* 8000ABF0 00006A30  7F 63 DB 78 */	mr r3, r27
-/* 8000ABF4 00006A34  4B FF BE 99 */	bl lbl_80006A8C
+/* 8000ABF4 00006A34  4B FF BE 99 */	bl strlen
 /* 8000ABF8 00006A38  2C 1A 00 00 */	cmpwi r26, 0x0
 /* 8000ABFC 00006A3C  7C 7D 1B 78 */	mr r29, r3
 /* 8000AC00 00006A40  41 82 00 78 */	beq lbl_8000AC78
-/* 8000AC04 00006A44  3F E0 80 42 */	lis r31, lbl_80421510@ha
+/* 8000AC04 00006A44  3F E0 80 42 */	lis r31, _current_locale@ha
 /* 8000AC08 00006A48  3B C0 00 00 */	li r30, 0x0
-/* 8000AC0C 00006A4C  3B FF 15 10 */	addi r31, r31, lbl_80421510@l
+/* 8000AC0C 00006A4C  3B FF 15 10 */	addi r31, r31, _current_locale@l
 /* 8000AC10 00006A50  48 00 00 5C */	b lbl_8000AC6C
 .global lbl_8000AC14
 lbl_8000AC14:
@@ -117,8 +117,8 @@ lbl_8000AC80:
 /* 8000AC88 00006AC8  7C 08 03 A6 */	mtlr r0
 /* 8000AC8C 00006ACC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8000AC90 00006AD0  4E 80 00 20 */	blr
-.global lbl_8000AC94
-lbl_8000AC94:
+.global wcstombs
+wcstombs:
 /* 8000AC94 00006AD4  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8000AC98 00006AD8  7C 08 02 A6 */	mflr r0
 /* 8000AC9C 00006ADC  2C 03 00 00 */	cmpwi r3, 0x0
@@ -136,9 +136,9 @@ lbl_8000ACC0:
 /* 8000ACC4 00006B04  48 00 00 74 */	b lbl_8000AD38
 .global lbl_8000ACC8
 lbl_8000ACC8:
-/* 8000ACC8 00006B08  3F E0 80 42 */	lis r31, lbl_80421510@ha
+/* 8000ACC8 00006B08  3F E0 80 42 */	lis r31, _current_locale@ha
 /* 8000ACCC 00006B0C  7C 9C 23 78 */	mr r28, r4
-/* 8000ACD0 00006B10  3B FF 15 10 */	addi r31, r31, lbl_80421510@l
+/* 8000ACD0 00006B10  3B FF 15 10 */	addi r31, r31, _current_locale@l
 /* 8000ACD4 00006B14  48 00 00 58 */	b lbl_8000AD2C
 .global lbl_8000ACD8
 lbl_8000ACD8:
@@ -163,7 +163,7 @@ lbl_8000ACF0:
 /* 8000AD18 00006B58  7F C5 F3 78 */	mr r5, r30
 /* 8000AD1C 00006B5C  7C 7A EA 14 */	add r3, r26, r29
 /* 8000AD20 00006B60  38 81 00 08 */	addi r4, r1, 0x8
-/* 8000AD24 00006B64  48 00 2D 5D */	bl lbl_8000DA80
+/* 8000AD24 00006B64  48 00 2D 5D */	bl strncpy
 /* 8000AD28 00006B68  7F BD F2 14 */	add r29, r29, r30
 .global lbl_8000AD2C
 lbl_8000AD2C:

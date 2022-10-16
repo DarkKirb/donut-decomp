@@ -1,48 +1,48 @@
 .include "macros.inc"
 
 .section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
-.global lbl_80563480
-lbl_80563480:
+.global "@59162"
+"@59162":
 
 	.4byte 0
 
-.global lbl_80563484
-lbl_80563484:
+.global "@59191_80563484"
+"@59191_80563484":
 
 	.4byte 0xBF000000
 
-.global lbl_80563488
-lbl_80563488:
+.global "@59230_80563488"
+"@59230_80563488":
 
 	.4byte 0x42B40000
 
-.global lbl_8056348C
-lbl_8056348C:
+.global "@59231"
+"@59231":
 
 	.4byte 0x3F800000
 
-.global lbl_80563490
-lbl_80563490:
+.global "@59232"
+"@59232":
 
 	.4byte 0x4222F983
 
-.global lbl_80563494
-lbl_80563494:
+.global "@59233"
+"@59233":
 
 	.4byte 0x3C8EFA35
 
-.global lbl_80563498
-lbl_80563498:
+.global "@59234"
+"@59234":
 
 	.4byte 0x43340000
 
-.global lbl_8056349C
-lbl_8056349C:
+.global "@59235"
+"@59235":
 
 	.4byte 0x40200000
 
-.global lbl_805634A0
-lbl_805634A0:
+.global "@59238_805634A0"
+"@59238_805634A0":
 
 	.4byte 0x43300000
 	.4byte 0

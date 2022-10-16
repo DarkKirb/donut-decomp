@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80419D50
-lbl_80419D50:
+.global "T_BUTTONCONVDATA_WR__17@unnamed@Hid_cpp@"
+"T_BUTTONCONVDATA_WR__17@unnamed@Hid_cpp@":
 
 	.4byte 0x00000008
 	.4byte 0x00000001

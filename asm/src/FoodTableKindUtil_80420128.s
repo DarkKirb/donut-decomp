@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80420128
-lbl_80420128:
+.global "T_TABLE_STANDARD__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_STANDARD__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0
 	.4byte 0x00000001
@@ -10,8 +10,8 @@ lbl_80420128:
 	.4byte 0x00000003
 	.4byte 0x00000004
 
-.global lbl_8042013C
-lbl_8042013C:
+.global "T_TABLE_LV1__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV1__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0
 	.4byte 0x00000006
@@ -19,8 +19,8 @@ lbl_8042013C:
 	.4byte 0x00000003
 	.4byte 0x00000013
 
-.global lbl_80420150
-lbl_80420150:
+.global "T_TABLE_LV2__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV2__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000001
 	.4byte 0x00000009
@@ -28,8 +28,8 @@ lbl_80420150:
 	.4byte 0x00000004
 	.4byte 0x00000020
 
-.global lbl_80420164
-lbl_80420164:
+.global "T_TABLE_LV3__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV3__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000007
 	.4byte 0x00000005
@@ -37,8 +37,8 @@ lbl_80420164:
 	.4byte 0x0000000C
 	.4byte 0x00000021
 
-.global lbl_80420178
-lbl_80420178:
+.global "T_TABLE_LV4__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV4__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000014
 	.4byte 0x0000000D
@@ -46,8 +46,8 @@ lbl_80420178:
 	.4byte 0x00000019
 	.4byte 0x0000001F
 
-.global lbl_8042018C
-lbl_8042018C:
+.global "T_TABLE_LV5__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV5__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x0000000A
 	.4byte 0x00000015
@@ -55,8 +55,8 @@ lbl_8042018C:
 	.4byte 0x0000001D
 	.4byte 0x0000001A
 
-.global lbl_804201A0
-lbl_804201A0:
+.global "T_TABLE_LV6__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV6__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000011
 	.4byte 0x0000000D
@@ -64,8 +64,8 @@ lbl_804201A0:
 	.4byte 0x00000018
 	.4byte 0x00000017
 
-.global lbl_804201B4
-lbl_804201B4:
+.global "T_TABLE_LV7__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLE_LV7__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000003
 	.4byte 0x00000002
@@ -73,22 +73,22 @@ lbl_804201B4:
 	.4byte 0x00000022
 	.4byte 0x0000001C
 
-.global lbl_804201C8
-lbl_804201C8:
+.global "T_TABLES__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
+"T_TABLES__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@":
 
 	.4byte 0x00000005
-	.4byte lbl_80420128
+	.4byte "T_TABLE_STANDARD__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_8042013C
+	.4byte "T_TABLE_LV1__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_80420150
+	.4byte "T_TABLE_LV2__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_80420164
+	.4byte "T_TABLE_LV3__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_80420178
+	.4byte "T_TABLE_LV4__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_8042018C
+	.4byte "T_TABLE_LV5__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_804201A0
+	.4byte "T_TABLE_LV6__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"
 	.4byte 0x00000005
-	.4byte lbl_804201B4
+	.4byte "T_TABLE_LV7__Q43scn4step4item31@unnamed@FoodTableKindUtil_cpp@"

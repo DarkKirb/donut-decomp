@@ -1,14 +1,14 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80493F98
-lbl_80493F98:
+.global __vt__Q53scn4step6weapon11starshotlv19StateMain
+__vt__Q53scn4step6weapon11starshotlv19StateMain:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803DC4A4
-	.4byte lbl_803DC51C
-	.4byte lbl_803DC774
-	.4byte lbl_803D895C
-	.4byte lbl_803DC7C4
-	.4byte lbl_803DC7C8
+	.4byte __dt__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procMove__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11starshotlv19StateMainFv

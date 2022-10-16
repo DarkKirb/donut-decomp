@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80047550
-lbl_80047550:
+.global __DSP_debug_printf
+__DSP_debug_printf:
 /* 80047550 00043390  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80047554 00043394  40 86 00 24 */	bne cr1, lbl_80047578
 /* 80047558 00043398  D8 21 00 28 */	stfd f1, 0x28(r1)

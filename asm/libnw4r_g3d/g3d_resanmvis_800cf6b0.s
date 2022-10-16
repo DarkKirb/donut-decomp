@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_800CF6B0
-lbl_800CF6B0:
+.global GetAnmResult__Q34nw4r3g3d9ResAnmVisCFUlf
+GetAnmResult__Q34nw4r3g3d9ResAnmVisCFUlf:
 /* 800CF6B0 000CB4F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800CF6B4 000CB4F4  7C 08 02 A6 */	mflr r0
 /* 800CF6B8 000CB4F8  80 A3 00 00 */	lwz r5, 0x0(r3)
@@ -45,7 +45,7 @@ lbl_800CF710:
 /* 800CF724 000CB564  48 00 00 98 */	b lbl_800CF7BC
 .global lbl_800CF728
 lbl_800CF728:
-/* 800CF728 000CB568  C0 02 8F 08 */	lfs f0, lbl_8055EE88@sda21(r2)
+/* 800CF728 000CB568  C0 02 8F 08 */	lfs f0, "@5876"@sda21(r2)
 /* 800CF72C 000CB56C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800CF730 000CB570  4C 40 13 82 */	cror eq, lt, eq
 /* 800CF734 000CB574  40 82 00 08 */	bne lbl_800CF73C
@@ -55,7 +55,7 @@ lbl_800CF73C:
 /* 800CF73C 000CB57C  A0 63 00 20 */	lhz r3, 0x20(r3)
 /* 800CF740 000CB580  3C 00 43 30 */	lis r0, 0x4330
 /* 800CF744 000CB584  90 61 00 0C */	stw r3, 0xc(r1)
-/* 800CF748 000CB588  C8 42 8F 10 */	lfd f2, lbl_8055EE90@sda21(r2)
+/* 800CF748 000CB588  C8 42 8F 10 */	lfd f2, "@5879"@sda21(r2)
 /* 800CF74C 000CB58C  90 01 00 08 */	stw r0, 0x8(r1)
 /* 800CF750 000CB590  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 800CF754 000CB594  EC 00 10 28 */	fsubs f0, f0, f2
@@ -73,7 +73,7 @@ lbl_800CF778:
 .global lbl_800CF77C
 lbl_800CF77C:
 /* 800CF77C 000CB5BC  FC 20 00 90 */	fmr f1, f0
-/* 800CF780 000CB5C0  4B F4 48 85 */	bl lbl_80014004
+/* 800CF780 000CB5C0  4B F4 48 85 */	bl floor
 /* 800CF784 000CB5C4  FC 00 08 18 */	frsp f0, f1
 /* 800CF788 000CB5C8  3C 60 80 00 */	lis r3, 0x8000
 /* 800CF78C 000CB5CC  FC 00 00 1E */	fctiwz f0, f0

@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804955F0
-lbl_804955F0:
+.global __vt__Q33scn2vc7SceneVC
+__vt__Q33scn2vc7SceneVC:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_803F2AAC
-	.4byte lbl_803F2AB0
-	.4byte lbl_803F29FC
-	.4byte lbl_803F29D4
-	.4byte lbl_803F2A24
-	.4byte lbl_803F2A4C
-	.4byte lbl_803F2A84
+	.4byte GetRuntimeTypeInfo__Q33scn2vc7SceneVCCFv
+	.4byte __dt__Q33scn2vc7SceneVCFv
+	.4byte updateMain__Q33scn2vc7SceneVCFv
+	.4byte updateUseGPU__Q33scn2vc7SceneVCFv
+	.4byte updateDebug__Q33scn2vc7SceneVCFv
+	.4byte draw__Q33scn2vc7SceneVCFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn2vc7SceneVCCFv
 	.4byte 0

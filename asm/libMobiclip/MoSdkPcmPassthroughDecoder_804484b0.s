@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804484B0
-lbl_804484B0:
+.global __vt__26MoSdkPcmPassthroughDecoder
+__vt__26MoSdkPcmPassthroughDecoder:
 
-	.4byte lbl_80556AE8
+	.4byte __RTTI__26MoSdkPcmPassthroughDecoder
 	.4byte 0
-	.4byte lbl_80153890
-	.4byte lbl_80153880
-	.4byte lbl_80153870
-	.4byte lbl_801520C0
-	.4byte lbl_8014F970
+	.4byte decodeIntoBuffer__26MoSdkPcmPassthroughDecoderFPCUcUlPUsPUl
+	.4byte getPcmSizeFromPacket__26MoSdkPcmPassthroughDecoderFUl
+	.4byte __dt__26MoSdkPcmPassthroughDecoderFv
+	.4byte decode__17MoSdkAudioDecoderFPCUcUl
+	.4byte seekPerformed__17MoSdkAudioDecoderFv
 
-.global lbl_804484CC
-lbl_804484CC:
+.global "@2523"
+"@2523":
 
 	.4byte 0x4D6F5364
 	.4byte 0x6B50636D
@@ -23,10 +23,10 @@ lbl_804484CC:
 	.4byte 0x65636F64
 	.4byte 0x65720000
 
-.global lbl_804484E8
-lbl_804484E8:
+.global "@2524_804484E8"
+"@2524_804484E8":
 
-	.4byte lbl_80556AD0
+	.4byte __RTTI__17MoSdkAudioDecoder
 	.4byte 0
 	.4byte 0
 	.4byte 0

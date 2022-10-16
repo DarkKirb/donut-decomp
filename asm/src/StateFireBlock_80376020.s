@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_80376020
-lbl_80376020:
+.global __ct__Q53scn4step4hero6damage14StateFireBlockFPQ43scn4step4hero4Hero
+__ct__Q53scn4step4hero6damage14StateFireBlockFPQ43scn4step4hero4Hero:
 /* 80376020 00371E60  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80376024 00371E64  7C 08 02 A6 */	mflr r0
 /* 80376028 00371E68  90 01 00 64 */	stw r0, 0x64(r1)
@@ -10,11 +10,11 @@ lbl_80376020:
 /* 80376030 00371E70  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 80376034 00371E74  93 E1 00 4C */	stw r31, 0x4c(r1)
 /* 80376038 00371E78  7C 7F 1B 78 */	mr r31, r3
-/* 8037603C 00371E7C  4B FD F4 B5 */	bl lbl_803554F0
-/* 80376040 00371E80  3C 60 80 49 */	lis r3, lbl_8048C668@ha
-/* 80376044 00371E84  38 03 C6 68 */	addi r0, r3, lbl_8048C668@l
+/* 8037603C 00371E7C  4B FD F4 B5 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
+/* 80376040 00371E80  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero6damage14StateFireBlock@ha
+/* 80376044 00371E84  38 03 C6 68 */	addi r0, r3, __vt__Q53scn4step4hero6damage14StateFireBlock@l
 /* 80376048 00371E88  90 1F 00 00 */	stw r0, 0x0(r31)
-/* 8037604C 00371E8C  C0 02 D3 50 */	lfs f0, lbl_805632D0@sda21(r2)
+/* 8037604C 00371E8C  C0 02 D3 50 */	lfs f0, "@57204_805632D0"@sda21(r2)
 /* 80376050 00371E90  D0 1F 00 08 */	stfs f0, 0x8(r31)
 /* 80376054 00371E94  38 60 00 00 */	li r3, 0x0
 /* 80376058 00371E98  98 7F 00 0C */	stb r3, 0xc(r31)
@@ -22,26 +22,26 @@ lbl_80376020:
 /* 80376060 00371EA0  90 1F 00 10 */	stw r0, 0x10(r31)
 /* 80376064 00371EA4  90 7F 00 14 */	stw r3, 0x14(r31)
 /* 80376068 00371EA8  7F E3 FB 78 */	mr r3, r31
-/* 8037606C 00371EAC  4B D8 A7 75 */	bl lbl_801007E0
-/* 80376070 00371EB0  4B FC A2 8D */	bl lbl_803402FC
-/* 80376074 00371EB4  4B E1 14 C5 */	bl lbl_80187538
+/* 8037606C 00371EAC  4B D8 A7 75 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376070 00371EB0  4B FC A2 8D */	bl footState__Q43scn4step4hero4HeroFv
+/* 80376074 00371EB4  4B E1 14 C5 */	bl __ct__Q24file8DNOptionFv
 /* 80376078 00371EB8  7F E3 FB 78 */	mr r3, r31
-/* 8037607C 00371EBC  4B D8 A7 65 */	bl lbl_801007E0
-/* 80376080 00371EC0  4B FC A2 9D */	bl lbl_8034031C
+/* 8037607C 00371EBC  4B D8 A7 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376080 00371EC0  4B FC A2 9D */	bl model__Q43scn4step4hero4HeroFv
 /* 80376084 00371EC4  38 63 02 24 */	addi r3, r3, 0x224
 /* 80376088 00371EC8  38 80 00 49 */	li r4, 0x49
-/* 8037608C 00371ECC  4B E2 5D 6D */	bl lbl_8019BDF8
-/* 80376090 00371ED0  C0 22 D3 50 */	lfs f1, lbl_805632D0@sda21(r2)
+/* 8037608C 00371ECC  4B E2 5D 6D */	bl start__Q24gobj6ScriptFUl
+/* 80376090 00371ED0  C0 22 D3 50 */	lfs f1, "@57204_805632D0"@sda21(r2)
 /* 80376094 00371ED4  D0 21 00 14 */	stfs f1, 0x14(r1)
-/* 80376098 00371ED8  C0 02 D3 54 */	lfs f0, lbl_805632D4@sda21(r2)
+/* 80376098 00371ED8  C0 02 D3 54 */	lfs f0, "@57205_805632D4"@sda21(r2)
 /* 8037609C 00371EDC  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 803760A0 00371EE0  D0 21 00 1C */	stfs f1, 0x1c(r1)
 /* 803760A4 00371EE4  7F E3 FB 78 */	mr r3, r31
-/* 803760A8 00371EE8  4B D8 A7 39 */	bl lbl_801007E0
-/* 803760AC 00371EEC  4B FC A2 59 */	bl lbl_80340304
+/* 803760A8 00371EE8  4B D8 A7 39 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803760AC 00371EEC  4B FC A2 59 */	bl location__Q43scn4step4hero4HeroCFv
 /* 803760B0 00371EF0  7C 64 1B 78 */	mr r4, r3
 /* 803760B4 00371EF4  38 61 00 20 */	addi r3, r1, 0x20
-/* 803760B8 00371EF8  4B EF 95 FD */	bl lbl_8026F6B4
+/* 803760B8 00371EF8  4B EF 95 FD */	bl pos__Q43scn4step5chara8LocationCFv
 /* 803760BC 00371EFC  80 61 00 20 */	lwz r3, 0x20(r1)
 /* 803760C0 00371F00  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803760C4 00371F04  90 61 00 08 */	stw r3, 0x8(r1)
@@ -67,40 +67,40 @@ lbl_80376020:
 /* 80376114 00371F54  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 80376118 00371F58  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8037611C 00371F5C  7F E3 FB 78 */	mr r3, r31
-/* 80376120 00371F60  4B D8 A6 C1 */	bl lbl_801007E0
-/* 80376124 00371F64  4B CF F6 0D */	bl lbl_80075730
-/* 80376128 00371F68  4B E8 F4 A1 */	bl lbl_802055C8
+/* 80376120 00371F60  4B D8 A6 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376124 00371F64  4B CF F6 0D */	bl GKI_getfirst
+/* 80376128 00371F68  4B E8 F4 A1 */	bl commander__Q33scn10grandtitle9ComponentFv
 /* 8037612C 00371F6C  38 63 00 D0 */	addi r3, r3, 0xd0
 /* 80376130 00371F70  38 80 00 73 */	li r4, 0x73
 /* 80376134 00371F74  38 A1 00 2C */	addi r5, r1, 0x2c
-/* 80376138 00371F78  4B F0 1E 3D */	bl lbl_80277F74
-/* 8037613C 00371F7C  3C 60 80 54 */	lis r3, lbl_805452E8@ha
-/* 80376140 00371F80  38 83 52 E8 */	addi r4, r3, lbl_805452E8@l
+/* 80376138 00371F78  4B F0 1E 3D */	bl requestP__Q43scn4step4core16PermEffectDetailFQ43scn4step6effect4KindRCQ33hel4math7Vector3
+/* 8037613C 00371F7C  3C 60 80 54 */	lis r3, BASIS_X__Q33hel4math7Vector3@ha
+/* 80376140 00371F80  38 83 52 E8 */	addi r4, r3, BASIS_X__Q33hel4math7Vector3@l
 /* 80376144 00371F84  80 64 00 00 */	lwz r3, 0x0(r4)
 /* 80376148 00371F88  80 04 00 04 */	lwz r0, 0x4(r4)
 /* 8037614C 00371F8C  90 61 00 38 */	stw r3, 0x38(r1)
 /* 80376150 00371F90  90 01 00 3C */	stw r0, 0x3c(r1)
 /* 80376154 00371F94  80 04 00 08 */	lwz r0, 0x8(r4)
 /* 80376158 00371F98  90 01 00 40 */	stw r0, 0x40(r1)
-/* 8037615C 00371F9C  C3 E2 D3 58 */	lfs f31, lbl_805632D8@sda21(r2)
-/* 80376160 00371FA0  4B E0 4A 4D */	bl lbl_8017ABAC
-/* 80376164 00371FA4  C0 02 D3 5C */	lfs f0, lbl_805632DC@sda21(r2)
+/* 8037615C 00371F9C  C3 E2 D3 58 */	lfs f31, "@57206_805632D8"@sda21(r2)
+/* 80376160 00371FA0  4B E0 4A 4D */	bl RandAF__Q23app6RandomFv
+/* 80376164 00371FA4  C0 02 D3 5C */	lfs f0, "@57207_805632DC"@sda21(r2)
 /* 80376168 00371FA8  EF E0 F8 7A */	fmadds f31, f0, f1, f31
 /* 8037616C 00371FAC  38 61 00 38 */	addi r3, r1, 0x38
-/* 80376170 00371FB0  3C 80 80 54 */	lis r4, lbl_80545300@ha
-/* 80376174 00371FB4  38 84 53 00 */	addi r4, r4, lbl_80545300@l
-/* 80376178 00371FB8  C0 02 D3 60 */	lfs f0, lbl_805632E0@sda21(r2)
+/* 80376170 00371FB0  3C 80 80 54 */	lis r4, BASIS_Z__Q33hel4math7Vector3@ha
+/* 80376174 00371FB4  38 84 53 00 */	addi r4, r4, BASIS_Z__Q33hel4math7Vector3@l
+/* 80376178 00371FB8  C0 02 D3 60 */	lfs f0, "@57208_805632E0"@sda21(r2)
 /* 8037617C 00371FBC  EC 20 07 F2 */	fmuls f1, f0, f31
-/* 80376180 00371FC0  4B E2 97 0D */	bl lbl_8019F88C
+/* 80376180 00371FC0  4B E2 97 0D */	bl rotate__Q33hel4math7Vector3FRCQ33hel4math7Vector3f
 /* 80376184 00371FC4  7F E3 FB 78 */	mr r3, r31
-/* 80376188 00371FC8  4B D8 A6 59 */	bl lbl_801007E0
-/* 8037618C 00371FCC  4B FC A1 69 */	bl lbl_803402F4
-/* 80376190 00371FD0  4B E2 5F 11 */	bl lbl_8019C0A0
-/* 80376194 00371FD4  C0 02 D3 64 */	lfs f0, lbl_805632E4@sda21(r2)
+/* 80376188 00371FC8  4B D8 A6 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037618C 00371FCC  4B FC A1 69 */	bl target__Q43scn4step4hero4HeroFv
+/* 80376190 00371FD0  4B E2 5F 11 */	bl getSign__Q24gobj6TargetCFv
+/* 80376194 00371FD4  C0 02 D3 64 */	lfs f0, "@57209"@sda21(r2)
 /* 80376198 00371FD8  EC 20 00 72 */	fmuls f1, f0, f1
 /* 8037619C 00371FDC  C0 01 00 38 */	lfs f0, 0x38(r1)
 /* 803761A0 00371FE0  EC 00 00 72 */	fmuls f0, f0, f1
-/* 803761A4 00371FE4  C0 22 D3 68 */	lfs f1, lbl_805632E8@sda21(r2)
+/* 803761A4 00371FE4  C0 22 D3 68 */	lfs f1, "@57210"@sda21(r2)
 /* 803761A8 00371FE8  EC 00 00 72 */	fmuls f0, f0, f1
 /* 803761AC 00371FEC  D0 01 00 38 */	stfs f0, 0x38(r1)
 /* 803761B0 00371FF0  C0 01 00 3C */	lfs f0, 0x3c(r1)
@@ -110,32 +110,32 @@ lbl_80376020:
 /* 803761C0 00372000  EC 00 00 72 */	fmuls f0, f0, f1
 /* 803761C4 00372004  D0 01 00 40 */	stfs f0, 0x40(r1)
 /* 803761C8 00372008  7F E3 FB 78 */	mr r3, r31
-/* 803761CC 0037200C  4B D8 A6 15 */	bl lbl_801007E0
-/* 803761D0 00372010  4B FC A1 3D */	bl lbl_8034030C
+/* 803761CC 0037200C  4B D8 A6 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803761D0 00372010  4B FC A1 3D */	bl move__Q43scn4step4hero4HeroFv
 /* 803761D4 00372014  38 81 00 38 */	addi r4, r1, 0x38
-/* 803761D8 00372018  4B E2 51 A1 */	bl lbl_8019B378
+/* 803761D8 00372018  4B E2 51 A1 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
 /* 803761DC 0037201C  7F E3 FB 78 */	mr r3, r31
-/* 803761E0 00372020  4B D8 A6 01 */	bl lbl_801007E0
-/* 803761E4 00372024  4B FC A1 A1 */	bl lbl_80340384
-/* 803761E8 00372028  4B FC C2 CD */	bl lbl_803424B4
+/* 803761E0 00372020  4B D8 A6 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803761E4 00372024  4B FC A1 A1 */	bl invincible__Q43scn4step4hero4HeroFv
+/* 803761E8 00372028  4B FC C2 CD */	bl setPerm__Q43scn4step4hero10InvincibleFv
 /* 803761EC 0037202C  7F E3 FB 78 */	mr r3, r31
-/* 803761F0 00372030  4B D8 A5 F1 */	bl lbl_801007E0
-/* 803761F4 00372034  4B FC A1 31 */	bl lbl_80340324
+/* 803761F0 00372030  4B D8 A5 F1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803761F4 00372034  4B FC A1 31 */	bl effect__Q43scn4step4hero4HeroFv
 /* 803761F8 00372038  38 63 00 58 */	addi r3, r3, 0x58
 /* 803761FC 0037203C  38 80 00 74 */	li r4, 0x74
 /* 80376200 00372040  38 A0 00 01 */	li r5, 0x1
-/* 80376204 00372044  4B EF 7D 75 */	bl lbl_8026DF78
+/* 80376204 00372044  4B EF 7D 75 */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUl
 /* 80376208 00372048  7F E3 FB 78 */	mr r3, r31
-/* 8037620C 0037204C  4B D8 A5 D5 */	bl lbl_801007E0
-/* 80376210 00372050  4B FC A1 DD */	bl lbl_803403EC
+/* 8037620C 0037204C  4B D8 A5 D5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376210 00372050  4B FC A1 DD */	bl damageFlash__Q43scn4step4hero4HeroFv
 /* 80376214 00372054  38 80 00 02 */	li r4, 0x2
-/* 80376218 00372058  4B FB EF 05 */	bl lbl_8033511C
+/* 80376218 00372058  4B FB EF 05 */	bl set__Q43scn4step4hero11DamageFlashFQ43scn4step5ocoll7Element
 /* 8037621C 0037205C  7F E3 FB 78 */	mr r3, r31
-/* 80376220 00372060  4B D8 A5 C1 */	bl lbl_801007E0
-/* 80376224 00372064  4B FC A1 81 */	bl lbl_803403A4
+/* 80376220 00372060  4B D8 A5 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376224 00372064  4B FC A1 81 */	bl soundSE__Q43scn4step4hero4HeroFv
 /* 80376228 00372068  38 63 00 04 */	addi r3, r3, 0x4
 /* 8037622C 0037206C  38 80 01 E9 */	li r4, 0x1e9
-/* 80376230 00372070  48 08 CA A5 */	bl lbl_80402CD4
+/* 80376230 00372070  48 08 CA A5 */	bl start__Q23snd11SERequestorFUl
 /* 80376234 00372074  7F E3 FB 78 */	mr r3, r31
 /* 80376238 00372078  38 00 00 58 */	li r0, 0x58
 /* 8037623C 0037207C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
@@ -146,8 +146,8 @@ lbl_80376020:
 /* 80376250 00372090  38 21 00 60 */	addi r1, r1, 0x60
 /* 80376254 00372094  4E 80 00 20 */	blr
 
-.global lbl_80376258
-lbl_80376258:
+.global __dt__Q53scn4step4hero6damage14StateFireBlockFv
+__dt__Q53scn4step4hero6damage14StateFireBlockFv:
 /* 80376258 00372098  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8037625C 0037209C  7C 08 02 A6 */	mflr r0
 /* 80376260 003720A0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -157,37 +157,37 @@ lbl_80376258:
 /* 80376270 003720B0  7C 9F 23 78 */	mr r31, r4
 /* 80376274 003720B4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80376278 003720B8  41 82 00 80 */	beq lbl_803762F8
-/* 8037627C 003720BC  3C 80 80 49 */	lis r4, lbl_8048C668@ha
-/* 80376280 003720C0  38 04 C6 68 */	addi r0, r4, lbl_8048C668@l
+/* 8037627C 003720BC  3C 80 80 49 */	lis r4, __vt__Q53scn4step4hero6damage14StateFireBlock@ha
+/* 80376280 003720C0  38 04 C6 68 */	addi r0, r4, __vt__Q53scn4step4hero6damage14StateFireBlock@l
 /* 80376284 003720C4  90 03 00 00 */	stw r0, 0x0(r3)
-/* 80376288 003720C8  4B D8 A5 59 */	bl lbl_801007E0
-/* 8037628C 003720CC  4B FC A0 91 */	bl lbl_8034031C
+/* 80376288 003720C8  4B D8 A5 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037628C 003720CC  4B FC A0 91 */	bl model__Q43scn4step4hero4HeroFv
 /* 80376290 003720D0  38 63 02 90 */	addi r3, r3, 0x290
-/* 80376294 003720D4  C0 22 D3 50 */	lfs f1, lbl_805632D0@sda21(r2)
-/* 80376298 003720D8  4B EE E6 E5 */	bl lbl_8026497C
+/* 80376294 003720D4  C0 22 D3 50 */	lfs f1, "@57204_805632D0"@sda21(r2)
+/* 80376298 003720D8  4B EE E6 E5 */	bl setCameraHeightMax__Q43scn4step6camera16CameraControllerFf
 /* 8037629C 003720DC  7F C3 F3 78 */	mr r3, r30
-/* 803762A0 003720E0  4B D8 A5 41 */	bl lbl_801007E0
-/* 803762A4 003720E4  4B FC A0 79 */	bl lbl_8034031C
+/* 803762A0 003720E0  4B D8 A5 41 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803762A4 003720E4  4B FC A0 79 */	bl model__Q43scn4step4hero4HeroFv
 /* 803762A8 003720E8  38 63 02 90 */	addi r3, r3, 0x290
-/* 803762AC 003720EC  C0 22 D3 50 */	lfs f1, lbl_805632D0@sda21(r2)
-/* 803762B0 003720F0  4B EF B4 95 */	bl lbl_80271744
+/* 803762AC 003720EC  C0 22 D3 50 */	lfs f1, "@57204_805632D0"@sda21(r2)
+/* 803762B0 003720F0  4B EF B4 95 */	bl setRotH__Q43scn4step5chara12ModelRotCtrlFf
 /* 803762B4 003720F4  7F C3 F3 78 */	mr r3, r30
-/* 803762B8 003720F8  4B D8 A5 29 */	bl lbl_801007E0
-/* 803762BC 003720FC  4B FC A1 31 */	bl lbl_803403EC
-/* 803762C0 00372100  4B E3 05 0D */	bl lbl_801A67CC
+/* 803762B8 003720F8  4B D8 A5 29 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803762BC 003720FC  4B FC A1 31 */	bl damageFlash__Q43scn4step4hero4HeroFv
+/* 803762C0 00372100  4B E3 05 0D */	bl reset__Q34info8sequence7CommandFv
 /* 803762C4 00372104  7F C3 F3 78 */	mr r3, r30
-/* 803762C8 00372108  4B D8 A5 19 */	bl lbl_801007E0
-/* 803762CC 0037210C  4B FC A0 B9 */	bl lbl_80340384
+/* 803762C8 00372108  4B D8 A5 19 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803762CC 0037210C  4B FC A0 B9 */	bl invincible__Q43scn4step4hero4HeroFv
 /* 803762D0 00372110  38 80 00 78 */	li r4, 0x78
-/* 803762D4 00372114  4B FC C1 29 */	bl lbl_803423FC
+/* 803762D4 00372114  4B FC C1 29 */	bl set__Q43scn4step4hero10InvincibleFUl
 /* 803762D8 00372118  7F C3 F3 78 */	mr r3, r30
 /* 803762DC 0037211C  38 80 00 00 */	li r4, 0x0
-/* 803762E0 00372120  4B FD F2 3D */	bl lbl_8035551C
+/* 803762E0 00372120  4B FD F2 3D */	bl __dt__Q43scn4step4hero9StateBaseFv
 /* 803762E4 00372124  7F E0 07 34 */	extsh r0, r31
 /* 803762E8 00372128  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803762EC 0037212C  40 81 00 0C */	ble lbl_803762F8
 /* 803762F0 00372130  7F C3 F3 78 */	mr r3, r30
-/* 803762F4 00372134  4B E4 94 21 */	bl lbl_801BF714
+/* 803762F4 00372134  4B E4 94 21 */	bl __dl__FPv
 .global lbl_803762F8
 lbl_803762F8:
 /* 803762F8 00372138  7F C3 F3 78 */	mr r3, r30
@@ -198,8 +198,8 @@ lbl_803762F8:
 /* 8037630C 0037214C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80376310 00372150  4E 80 00 20 */	blr
 
-.global lbl_80376314
-lbl_80376314:
+.global procAnim__Q53scn4step4hero6damage14StateFireBlockFv
+procAnim__Q53scn4step4hero6damage14StateFireBlockFv:
 /* 80376314 00372154  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80376318 00372158  7C 08 02 A6 */	mflr r0
 /* 8037631C 0037215C  90 01 00 44 */	stw r0, 0x44(r1)
@@ -212,19 +212,19 @@ lbl_80376314:
 /* 80376338 00372178  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8037633C 0037217C  28 00 00 3C */	cmplwi r0, 0x3c
 /* 80376340 00372180  41 80 00 10 */	blt lbl_80376350
-/* 80376344 00372184  4B D8 A4 9D */	bl lbl_801007E0
-/* 80376348 00372188  4B FD FF 7D */	bl lbl_803562C4
+/* 80376344 00372184  4B D8 A4 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376348 00372188  4B FD FF 7D */	bl ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 8037634C 0037218C  48 00 01 34 */	b lbl_80376480
 .global lbl_80376350
 lbl_80376350:
-/* 80376350 00372190  4B D8 A4 91 */	bl lbl_801007E0
-/* 80376354 00372194  4B FC 9F A1 */	bl lbl_803402F4
-/* 80376358 00372198  4B E2 5D 49 */	bl lbl_8019C0A0
-/* 8037635C 0037219C  C0 42 D3 6C */	lfs f2, lbl_805632EC@sda21(r2)
+/* 80376350 00372190  4B D8 A4 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376354 00372194  4B FC 9F A1 */	bl target__Q43scn4step4hero4HeroFv
+/* 80376358 00372198  4B E2 5D 49 */	bl getSign__Q24gobj6TargetCFv
+/* 8037635C 0037219C  C0 42 D3 6C */	lfs f2, "@57257"@sda21(r2)
 /* 80376360 003721A0  C0 1F 00 08 */	lfs f0, 0x8(r31)
 /* 80376364 003721A4  EC 22 00 7A */	fmadds f1, f2, f1, f0
 /* 80376368 003721A8  D0 3F 00 08 */	stfs f1, 0x8(r31)
-/* 8037636C 003721AC  C0 02 D3 70 */	lfs f0, lbl_805632F0@sda21(r2)
+/* 8037636C 003721AC  C0 02 D3 70 */	lfs f0, "@57258"@sda21(r2)
 /* 80376370 003721B0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80376374 003721B4  4C 41 13 82 */	cror eq, gt, eq
 /* 80376378 003721B8  40 82 00 0C */	bne lbl_80376384
@@ -233,10 +233,10 @@ lbl_80376350:
 .global lbl_80376384
 lbl_80376384:
 /* 80376384 003721C4  C0 3F 00 08 */	lfs f1, 0x8(r31)
-/* 80376388 003721C8  C0 02 D3 50 */	lfs f0, lbl_805632D0@sda21(r2)
+/* 80376388 003721C8  C0 02 D3 50 */	lfs f0, "@57204_805632D0"@sda21(r2)
 /* 8037638C 003721CC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80376390 003721D0  40 80 00 10 */	bge lbl_803763A0
-/* 80376394 003721D4  C0 02 D3 70 */	lfs f0, lbl_805632F0@sda21(r2)
+/* 80376394 003721D4  C0 02 D3 70 */	lfs f0, "@57258"@sda21(r2)
 /* 80376398 003721D8  EC 01 00 2A */	fadds f0, f1, f0
 /* 8037639C 003721DC  D0 1F 00 08 */	stfs f0, 0x8(r31)
 .global lbl_803763A0
@@ -245,20 +245,20 @@ lbl_803763A0:
 /* 803763A4 003721E4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803763A8 003721E8  40 82 00 A8 */	bne lbl_80376450
 /* 803763AC 003721EC  7F E3 FB 78 */	mr r3, r31
-/* 803763B0 003721F0  4B D8 A4 31 */	bl lbl_801007E0
-/* 803763B4 003721F4  4B FC 9F 59 */	bl lbl_8034030C
+/* 803763B0 003721F0  4B D8 A4 31 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803763B4 003721F4  4B FC 9F 59 */	bl move__Q43scn4step4hero4HeroFv
 /* 803763B8 003721F8  7C 64 1B 78 */	mr r4, r3
 /* 803763BC 003721FC  38 61 00 10 */	addi r3, r1, 0x10
-/* 803763C0 00372200  4B E2 4F 9D */	bl lbl_8019B35C
+/* 803763C0 00372200  4B E2 4F 9D */	bl velocity__Q24gobj4MoveCFv
 /* 803763C4 00372204  C0 21 00 14 */	lfs f1, 0x14(r1)
 /* 803763C8 00372208  C0 41 00 10 */	lfs f2, 0x10(r1)
 /* 803763CC 0037220C  D0 41 00 08 */	stfs f2, 0x8(r1)
 /* 803763D0 00372210  D0 21 00 0C */	stfs f1, 0xc(r1)
 /* 803763D4 00372214  38 00 00 00 */	li r0, 0x0
-/* 803763D8 00372218  C0 0D EE 28 */	lfs f0, lbl_8055D248@sda21(r13)
+/* 803763D8 00372218  C0 0D EE 28 */	lfs f0, ZERO__Q33hel4math7Vector2@sda21(r13)
 /* 803763DC 0037221C  FC 02 00 00 */	fcmpu cr0, f2, f0
 /* 803763E0 00372220  40 82 00 18 */	bne lbl_803763F8
-/* 803763E4 00372224  38 6D EE 28 */	addi r3, r13, lbl_8055D248@sda21
+/* 803763E4 00372224  38 6D EE 28 */	addi r3, r13, ZERO__Q33hel4math7Vector2@sda21
 /* 803763E8 00372228  C0 03 00 04 */	lfs f0, 0x4(r3)
 /* 803763EC 0037222C  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 803763F0 00372230  40 82 00 08 */	bne lbl_803763F8
@@ -268,41 +268,41 @@ lbl_803763F8:
 /* 803763F8 00372238  2C 00 00 00 */	cmpwi r0, 0x0
 /* 803763FC 0037223C  40 82 00 38 */	bne lbl_80376434
 /* 80376400 00372240  38 61 00 08 */	addi r3, r1, 0x8
-/* 80376404 00372244  4B E2 8C 19 */	bl lbl_8019F01C
-/* 80376408 00372248  38 6D EE 40 */	addi r3, r13, lbl_8055D260@sda21
+/* 80376404 00372244  4B E2 8C 19 */	bl normalize__Q33hel4math7Vector2Fv
+/* 80376408 00372248  38 6D EE 40 */	addi r3, r13, BASIS_Y__Q33hel4math7Vector2@sda21
 /* 8037640C 0037224C  38 81 00 08 */	addi r4, r1, 0x8
-/* 80376410 00372250  4B E2 8E 21 */	bl lbl_8019F230
+/* 80376410 00372250  4B E2 8E 21 */	bl signedAngle__Q33hel4math7Vector2CFRCQ33hel4math7Vector2
 /* 80376414 00372254  FF E0 08 90 */	fmr f31, f1
 /* 80376418 00372258  7F E3 FB 78 */	mr r3, r31
-/* 8037641C 0037225C  4B D8 A3 C5 */	bl lbl_801007E0
-/* 80376420 00372260  4B FC 9E FD */	bl lbl_8034031C
+/* 8037641C 0037225C  4B D8 A3 C5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376420 00372260  4B FC 9E FD */	bl model__Q43scn4step4hero4HeroFv
 /* 80376424 00372264  38 63 02 90 */	addi r3, r3, 0x290
-/* 80376428 00372268  C0 02 D3 74 */	lfs f0, lbl_805632F4@sda21(r2)
+/* 80376428 00372268  C0 02 D3 74 */	lfs f0, "@57259"@sda21(r2)
 /* 8037642C 0037226C  EC 20 07 F2 */	fmuls f1, f0, f31
-/* 80376430 00372270  4B EE E5 4D */	bl lbl_8026497C
+/* 80376430 00372270  4B EE E5 4D */	bl setCameraHeightMax__Q43scn4step6camera16CameraControllerFf
 .global lbl_80376434
 lbl_80376434:
 /* 80376434 00372274  7F E3 FB 78 */	mr r3, r31
-/* 80376438 00372278  4B D8 A3 A9 */	bl lbl_801007E0
-/* 8037643C 0037227C  4B FC 9E E1 */	bl lbl_8034031C
+/* 80376438 00372278  4B D8 A3 A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037643C 0037227C  4B FC 9E E1 */	bl model__Q43scn4step4hero4HeroFv
 /* 80376440 00372280  38 63 02 90 */	addi r3, r3, 0x290
 /* 80376444 00372284  C0 3F 00 08 */	lfs f1, 0x8(r31)
-/* 80376448 00372288  4B EF B2 FD */	bl lbl_80271744
+/* 80376448 00372288  4B EF B2 FD */	bl setRotH__Q43scn4step5chara12ModelRotCtrlFf
 /* 8037644C 0037228C  48 00 00 34 */	b lbl_80376480
 .global lbl_80376450
 lbl_80376450:
 /* 80376450 00372290  7F E3 FB 78 */	mr r3, r31
-/* 80376454 00372294  4B D8 A3 8D */	bl lbl_801007E0
-/* 80376458 00372298  4B FC 9E C5 */	bl lbl_8034031C
+/* 80376454 00372294  4B D8 A3 8D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376458 00372298  4B FC 9E C5 */	bl model__Q43scn4step4hero4HeroFv
 /* 8037645C 0037229C  38 63 02 90 */	addi r3, r3, 0x290
-/* 80376460 003722A0  C0 22 D3 78 */	lfs f1, lbl_805632F8@sda21(r2)
-/* 80376464 003722A4  4B EF B2 E1 */	bl lbl_80271744
+/* 80376460 003722A0  C0 22 D3 78 */	lfs f1, "@57260"@sda21(r2)
+/* 80376464 003722A4  4B EF B2 E1 */	bl setRotH__Q43scn4step5chara12ModelRotCtrlFf
 /* 80376468 003722A8  7F E3 FB 78 */	mr r3, r31
-/* 8037646C 003722AC  4B D8 A3 75 */	bl lbl_801007E0
-/* 80376470 003722B0  4B FC 9E AD */	bl lbl_8034031C
+/* 8037646C 003722AC  4B D8 A3 75 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376470 003722B0  4B FC 9E AD */	bl model__Q43scn4step4hero4HeroFv
 /* 80376474 003722B4  38 63 02 90 */	addi r3, r3, 0x290
 /* 80376478 003722B8  C0 3F 00 08 */	lfs f1, 0x8(r31)
-/* 8037647C 003722BC  4B EE E5 01 */	bl lbl_8026497C
+/* 8037647C 003722BC  4B EE E5 01 */	bl setCameraHeightMax__Q43scn4step6camera16CameraControllerFf
 .global lbl_80376480
 lbl_80376480:
 /* 80376480 003722C0  38 00 00 38 */	li r0, 0x38
@@ -314,28 +314,28 @@ lbl_80376480:
 /* 80376498 003722D8  38 21 00 40 */	addi r1, r1, 0x40
 /* 8037649C 003722DC  4E 80 00 20 */	blr
 
-.global lbl_803764A0
-lbl_803764A0:
+.global procMove__Q53scn4step4hero6damage14StateFireBlockFv
+procMove__Q53scn4step4hero6damage14StateFireBlockFv:
 /* 803764A0 003722E0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 803764A4 003722E4  7C 08 02 A6 */	mflr r0
 /* 803764A8 003722E8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803764AC 003722EC  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 803764B0 003722F0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 803764B4 003722F4  7C 7E 1B 78 */	mr r30, r3
-/* 803764B8 003722F8  C0 22 D3 7C */	lfs f1, lbl_805632FC@sda21(r2)
-/* 803764BC 003722FC  4B E2 55 41 */	bl lbl_8019B9FC
+/* 803764B8 003722F8  C0 22 D3 7C */	lfs f1, "@57265"@sda21(r2)
+/* 803764BC 003722FC  4B E2 55 41 */	bl Create__Q24gobj14MoveParamDecelFf
 /* 803764C0 00372300  90 61 00 08 */	stw r3, 0x8(r1)
 /* 803764C4 00372304  7F C3 F3 78 */	mr r3, r30
-/* 803764C8 00372308  4B D8 A3 19 */	bl lbl_801007E0
-/* 803764CC 0037230C  4B FC 9E 11 */	bl lbl_803402DC
-/* 803764D0 00372310  4B FD AB 91 */	bl lbl_80351060
+/* 803764C8 00372308  4B D8 A3 19 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803764CC 0037230C  4B FC 9E 11 */	bl param__Q43scn4step4hero4HeroFv
+/* 803764D0 00372310  4B FD AB 91 */	bl common__Q43scn4step4hero5ParamCFv
 /* 803764D4 00372314  7C 7F 1B 78 */	mr r31, r3
 /* 803764D8 00372318  7F C3 F3 78 */	mr r3, r30
-/* 803764DC 0037231C  4B D8 A3 05 */	bl lbl_801007E0
-/* 803764E0 00372320  4B FC 9E 2D */	bl lbl_8034030C
+/* 803764DC 0037231C  4B D8 A3 05 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803764E0 00372320  4B FC 9E 2D */	bl move__Q43scn4step4hero4HeroFv
 /* 803764E4 00372324  38 81 00 08 */	addi r4, r1, 0x8
 /* 803764E8 00372328  38 BF 00 90 */	addi r5, r31, 0x90
-/* 803764EC 0037232C  4B E2 50 3D */	bl lbl_8019B528
+/* 803764EC 0037232C  4B E2 50 3D */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 803764F0 00372330  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803764F4 00372334  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803764F8 00372338  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -343,22 +343,22 @@ lbl_803764A0:
 /* 80376500 00372340  38 21 00 20 */	addi r1, r1, 0x20
 /* 80376504 00372344  4E 80 00 20 */	blr
 
-.global lbl_80376508
-lbl_80376508:
+.global procFixPos__Q53scn4step4hero6damage14StateFireBlockFv
+procFixPos__Q53scn4step4hero6damage14StateFireBlockFv:
 /* 80376508 00372348  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 8037650C 0037234C  7C 08 02 A6 */	mflr r0
 /* 80376510 00372350  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80376514 00372354  93 E1 00 6C */	stw r31, 0x6c(r1)
 /* 80376518 00372358  93 C1 00 68 */	stw r30, 0x68(r1)
 /* 8037651C 0037235C  7C 7F 1B 78 */	mr r31, r3
-/* 80376520 00372360  4B D8 A2 C1 */	bl lbl_801007E0
-/* 80376524 00372364  4B FC 9E 19 */	bl lbl_8034033C
+/* 80376520 00372360  4B D8 A2 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376524 00372364  4B FC 9E 19 */	bl mapColl__Q43scn4step4hero4HeroFv
 /* 80376528 00372368  7C 64 1B 78 */	mr r4, r3
 /* 8037652C 0037236C  38 61 00 34 */	addi r3, r1, 0x34
-/* 80376530 00372370  4B FB EA 41 */	bl lbl_80334F70
+/* 80376530 00372370  4B FB EA 41 */	bl result__Q43scn4step4hero7MapCollCFv
 /* 80376534 00372374  7F E3 FB 78 */	mr r3, r31
-/* 80376538 00372378  4B D8 A2 A9 */	bl lbl_801007E0
-/* 8037653C 0037237C  48 00 21 F9 */	bl lbl_80378734
+/* 80376538 00372378  4B D8 A2 A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037653C 0037237C  48 00 21 F9 */	bl ReflectWallS__Q53scn4step4hero6damage7UtilityFRQ43scn4step4hero4Hero
 /* 80376540 00372380  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 80376544 00372384  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80376548 00372388  41 82 00 10 */	beq lbl_80376558
@@ -371,36 +371,36 @@ lbl_80376558:
 /* 8037655C 0037239C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80376560 003723A0  41 82 00 98 */	beq lbl_803765F8
 /* 80376564 003723A4  7F E3 FB 78 */	mr r3, r31
-/* 80376568 003723A8  4B D8 A2 79 */	bl lbl_801007E0
-/* 8037656C 003723AC  4B FC 9D D1 */	bl lbl_8034033C
+/* 80376568 003723A8  4B D8 A2 79 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037656C 003723AC  4B FC 9D D1 */	bl mapColl__Q43scn4step4hero4HeroFv
 /* 80376570 003723B0  7C 64 1B 78 */	mr r4, r3
 /* 80376574 003723B4  38 61 00 08 */	addi r3, r1, 0x8
-/* 80376578 003723B8  4B FB E9 F9 */	bl lbl_80334F70
+/* 80376578 003723B8  4B FB E9 F9 */	bl result__Q43scn4step4hero7MapCollCFv
 /* 8037657C 003723BC  88 01 00 08 */	lbz r0, 0x8(r1)
 /* 80376580 003723C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80376584 003723C4  41 82 00 A8 */	beq lbl_8037662C
 /* 80376588 003723C8  7F E3 FB 78 */	mr r3, r31
-/* 8037658C 003723CC  4B D8 A2 55 */	bl lbl_801007E0
-/* 80376590 003723D0  4B FC 9D 7D */	bl lbl_8034030C
-/* 80376594 003723D4  4B E2 4D FD */	bl lbl_8019B390
+/* 8037658C 003723CC  4B D8 A2 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 80376590 003723D0  4B FC 9D 7D */	bl move__Q43scn4step4hero4HeroFv
+/* 80376594 003723D4  4B E2 4D FD */	bl resetVelocity__Q24gobj4MoveFv
 /* 80376598 003723D8  7F E3 FB 78 */	mr r3, r31
-/* 8037659C 003723DC  4B D8 A2 45 */	bl lbl_801007E0
+/* 8037659C 003723DC  4B D8 A2 45 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803765A0 003723E0  7C 7E 1B 78 */	mr r30, r3
 /* 803765A4 003723E4  7F E3 FB 78 */	mr r3, r31
-/* 803765A8 003723E8  4B D8 A2 39 */	bl lbl_801007E0
-/* 803765AC 003723EC  4B FC 9D 69 */	bl lbl_80340314
+/* 803765A8 003723E8  4B D8 A2 39 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 803765AC 003723EC  4B FC 9D 69 */	bl stateChanger__Q43scn4step4hero4HeroFv
 /* 803765B0 003723F0  7C 7F 1B 78 */	mr r31, r3
-/* 803765B4 003723F4  48 08 F9 4D */	bl lbl_80405F00
+/* 803765B4 003723F4  48 08 F9 4D */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
 /* 803765B8 003723F8  38 9F 00 10 */	addi r4, r31, 0x10
 /* 803765BC 003723FC  2C 04 00 00 */	cmpwi r4, 0x0
 /* 803765C0 00372400  41 82 00 30 */	beq lbl_803765F0
-/* 803765C4 00372404  3C 60 80 46 */	lis r3, lbl_80464478@ha
-/* 803765C8 00372408  38 03 44 78 */	addi r0, r3, lbl_80464478@l
+/* 803765C4 00372404  3C 60 80 46 */	lis r3, "__vt__Q24util28StateFactory<Q24util6IState>"@ha
+/* 803765C8 00372408  38 03 44 78 */	addi r0, r3, "__vt__Q24util28StateFactory<Q24util6IState>"@l
 /* 803765CC 0037240C  90 04 00 00 */	stw r0, 0x0(r4)
 /* 803765D0 00372410  38 1F 00 90 */	addi r0, r31, 0x90
 /* 803765D4 00372414  90 04 00 04 */	stw r0, 0x4(r4)
-/* 803765D8 00372418  3C 60 80 49 */	lis r3, lbl_8048C630@ha
-/* 803765DC 0037241C  38 03 C6 30 */	addi r0, r3, lbl_8048C630@l
+/* 803765D8 00372418  3C 60 80 49 */	lis r3, "__vt__Q24util94StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common10StateFaint,PQ43scn4step4hero4Hero,Ul>"@ha
+/* 803765DC 0037241C  38 03 C6 30 */	addi r0, r3, "__vt__Q24util94StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common10StateFaint,PQ43scn4step4hero4Hero,Ul>"@l
 /* 803765E0 00372420  90 04 00 00 */	stw r0, 0x0(r4)
 /* 803765E4 00372424  93 C4 00 08 */	stw r30, 0x8(r4)
 /* 803765E8 00372428  38 00 00 02 */	li r0, 0x2
@@ -415,9 +415,9 @@ lbl_803765F8:
 /* 803765FC 0037243C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80376600 00372440  41 82 00 2C */	beq lbl_8037662C
 /* 80376604 00372444  7F E3 FB 78 */	mr r3, r31
-/* 80376608 00372448  4B D8 A1 D9 */	bl lbl_801007E0
-/* 8037660C 0037244C  4B FC 9D 01 */	bl lbl_8034030C
-/* 80376610 00372450  4B E2 4D 8D */	bl lbl_8019B39C
+/* 80376608 00372448  4B D8 A1 D9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
+/* 8037660C 0037244C  4B FC 9D 01 */	bl move__Q43scn4step4hero4HeroFv
+/* 80376610 00372450  4B E2 4D 8D */	bl resetSpeedH__Q24gobj4MoveFv
 /* 80376614 00372454  38 00 00 01 */	li r0, 0x1
 /* 80376618 00372458  98 1F 00 0C */	stb r0, 0xc(r31)
 /* 8037661C 0037245C  38 00 00 14 */	li r0, 0x14

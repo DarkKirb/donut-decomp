@@ -1,15 +1,15 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_8018E44C
-lbl_8018E44C:
+.global __ct__Q23g3d11FogAccessorFRCQ34nw4r3g3d3Fog
+__ct__Q23g3d11FogAccessorFRCQ34nw4r3g3d3Fog:
 /* 8018E44C 0018A28C  80 04 00 00 */	lwz r0, 0x0(r4)
 /* 8018E450 0018A290  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8018E454 0018A294  38 00 00 01 */	li r0, 0x1
 /* 8018E458 0018A298  98 03 00 04 */	stb r0, 0x4(r3)
 /* 8018E45C 0018A29C  4E 80 00 20 */	blr
-.global lbl_8018E460
-lbl_8018E460:
+.global setFogType__Q23g3d11FogAccessorF10_GXFogType
+setFogType__Q23g3d11FogAccessorF10_GXFogType:
 /* 8018E460 0018A2A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E464 0018A2A4  7C 08 02 A6 */	mflr r0
 /* 8018E468 0018A2A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -20,13 +20,13 @@ lbl_8018E460:
 /* 8018E47C 0018A2BC  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8018E480 0018A2C0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018E484 0018A2C4  40 82 00 20 */	bne lbl_8018E4A4
-/* 8018E488 0018A2C8  3C 60 80 45 */	lis r3, lbl_80454470@ha
-/* 8018E48C 0018A2CC  38 63 44 70 */	addi r3, r3, lbl_80454470@l
+/* 8018E488 0018A2C8  3C 60 80 45 */	lis r3, "@STRING@SetFogType__Q34nw4r3g3d3FogF10_GXFogType"@ha
+/* 8018E48C 0018A2CC  38 63 44 70 */	addi r3, r3, "@STRING@SetFogType__Q34nw4r3g3d3FogF10_GXFogType"@l
 /* 8018E490 0018A2D0  38 80 00 41 */	li r4, 0x41
-/* 8018E494 0018A2D4  3C A0 80 45 */	lis r5, lbl_80454450@ha
-/* 8018E498 0018A2D8  38 A5 44 50 */	addi r5, r5, lbl_80454450@l
+/* 8018E494 0018A2D4  3C A0 80 45 */	lis r5, "@STRING@SetFogType__Q34nw4r3g3d3FogF10_GXFogType@0"@ha
+/* 8018E498 0018A2D8  38 A5 44 50 */	addi r5, r5, "@STRING@SetFogType__Q34nw4r3g3d3FogF10_GXFogType@0"@l
 /* 8018E49C 0018A2DC  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8018E4A0 0018A2E0  4B F9 9E B1 */	bl lbl_80128350
+/* 8018E4A0 0018A2E0  4B F9 9E B1 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8018E4A4
 lbl_8018E4A4:
 /* 8018E4A4 0018A2E4  80 7E 00 00 */	lwz r3, 0x0(r30)
@@ -41,8 +41,8 @@ lbl_8018E4B4:
 /* 8018E4C0 0018A300  7C 08 03 A6 */	mtlr r0
 /* 8018E4C4 0018A304  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018E4C8 0018A308  4E 80 00 20 */	blr
-.global lbl_8018E4CC
-lbl_8018E4CC:
+.global setZ__Q23g3d11FogAccessorFff
+setZ__Q23g3d11FogAccessorFff:
 /* 8018E4CC 0018A30C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018E4D0 0018A310  7C 08 02 A6 */	mflr r0
 /* 8018E4D4 0018A314  90 01 00 24 */	stw r0, 0x24(r1)
@@ -55,13 +55,13 @@ lbl_8018E4CC:
 /* 8018E4F0 0018A330  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8018E4F4 0018A334  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018E4F8 0018A338  40 82 00 20 */	bne lbl_8018E518
-/* 8018E4FC 0018A33C  3C 60 80 45 */	lis r3, lbl_804544A0@ha
-/* 8018E500 0018A340  38 63 44 A0 */	addi r3, r3, lbl_804544A0@l
+/* 8018E4FC 0018A33C  3C 60 80 45 */	lis r3, "@STRING@SetZ__Q34nw4r3g3d3FogFff"@ha
+/* 8018E500 0018A340  38 63 44 A0 */	addi r3, r3, "@STRING@SetZ__Q34nw4r3g3d3FogFff"@l
 /* 8018E504 0018A344  38 80 00 4B */	li r4, 0x4b
-/* 8018E508 0018A348  3C A0 80 45 */	lis r5, lbl_80454480@ha
-/* 8018E50C 0018A34C  38 A5 44 80 */	addi r5, r5, lbl_80454480@l
+/* 8018E508 0018A348  3C A0 80 45 */	lis r5, "@STRING@SetZ__Q34nw4r3g3d3FogFff@0"@ha
+/* 8018E50C 0018A34C  38 A5 44 80 */	addi r5, r5, "@STRING@SetZ__Q34nw4r3g3d3FogFff@0"@l
 /* 8018E510 0018A350  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8018E514 0018A354  4B F9 9E 3D */	bl lbl_80128350
+/* 8018E514 0018A354  4B F9 9E 3D */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8018E518
 lbl_8018E518:
 /* 8018E518 0018A358  80 7F 00 00 */	lwz r3, 0x0(r31)
@@ -78,8 +78,8 @@ lbl_8018E52C:
 /* 8018E53C 0018A37C  7C 08 03 A6 */	mtlr r0
 /* 8018E540 0018A380  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018E544 0018A384  4E 80 00 20 */	blr
-.global lbl_8018E548
-lbl_8018E548:
+.global setFogColor__Q23g3d11FogAccessorF8_GXColor
+setFogColor__Q23g3d11FogAccessorF8_GXColor:
 /* 8018E548 0018A388  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018E54C 0018A38C  7C 08 02 A6 */	mflr r0
 /* 8018E550 0018A390  90 01 00 24 */	stw r0, 0x24(r1)
@@ -90,13 +90,13 @@ lbl_8018E548:
 /* 8018E564 0018A3A4  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8018E568 0018A3A8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018E56C 0018A3AC  40 82 00 20 */	bne lbl_8018E58C
-/* 8018E570 0018A3B0  3C 60 80 45 */	lis r3, lbl_804544D0@ha
-/* 8018E574 0018A3B4  38 63 44 D0 */	addi r3, r3, lbl_804544D0@l
+/* 8018E570 0018A3B0  3C 60 80 45 */	lis r3, "@STRING@SetFogColor__Q34nw4r3g3d3FogF8_GXColor"@ha
+/* 8018E574 0018A3B4  38 63 44 D0 */	addi r3, r3, "@STRING@SetFogColor__Q34nw4r3g3d3FogF8_GXColor"@l
 /* 8018E578 0018A3B8  38 80 00 63 */	li r4, 0x63
-/* 8018E57C 0018A3BC  3C A0 80 45 */	lis r5, lbl_804544B0@ha
-/* 8018E580 0018A3C0  38 A5 44 B0 */	addi r5, r5, lbl_804544B0@l
+/* 8018E57C 0018A3BC  3C A0 80 45 */	lis r5, "@STRING@SetFogColor__Q34nw4r3g3d3FogF8_GXColor@0"@ha
+/* 8018E580 0018A3C0  38 A5 44 B0 */	addi r5, r5, "@STRING@SetFogColor__Q34nw4r3g3d3FogF8_GXColor@0"@l
 /* 8018E584 0018A3C4  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8018E588 0018A3C8  4B F9 9D C9 */	bl lbl_80128350
+/* 8018E588 0018A3C8  4B F9 9D C9 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8018E58C
 lbl_8018E58C:
 /* 8018E58C 0018A3CC  80 7F 00 00 */	lwz r3, 0x0(r31)
@@ -117,8 +117,8 @@ lbl_8018E5B8:
 /* 8018E5C0 0018A400  7C 08 03 A6 */	mtlr r0
 /* 8018E5C4 0018A404  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018E5C8 0018A408  4E 80 00 20 */	blr
-.global lbl_8018E5CC
-lbl_8018E5CC:
+.global setFogRangeAdj__Q23g3d11FogAccessorFb
+setFogRangeAdj__Q23g3d11FogAccessorFb:
 /* 8018E5CC 0018A40C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E5D0 0018A410  7C 08 02 A6 */	mflr r0
 /* 8018E5D4 0018A414  90 01 00 14 */	stw r0, 0x14(r1)
@@ -129,13 +129,13 @@ lbl_8018E5CC:
 /* 8018E5E8 0018A428  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 8018E5EC 0018A42C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8018E5F0 0018A430  40 82 00 20 */	bne lbl_8018E610
-/* 8018E5F4 0018A434  3C 60 80 45 */	lis r3, lbl_80454500@ha
-/* 8018E5F8 0018A438  38 63 45 00 */	addi r3, r3, lbl_80454500@l
+/* 8018E5F4 0018A434  3C 60 80 45 */	lis r3, "@STRING@SetFogRangeAdj__Q34nw4r3g3d3FogFb"@ha
+/* 8018E5F8 0018A438  38 63 45 00 */	addi r3, r3, "@STRING@SetFogRangeAdj__Q34nw4r3g3d3FogFb"@l
 /* 8018E5FC 0018A43C  38 80 00 75 */	li r4, 0x75
-/* 8018E600 0018A440  3C A0 80 45 */	lis r5, lbl_804544E0@ha
-/* 8018E604 0018A444  38 A5 44 E0 */	addi r5, r5, lbl_804544E0@l
+/* 8018E600 0018A440  3C A0 80 45 */	lis r5, "@STRING@SetFogRangeAdj__Q34nw4r3g3d3FogFb@0"@ha
+/* 8018E604 0018A444  38 A5 44 E0 */	addi r5, r5, "@STRING@SetFogRangeAdj__Q34nw4r3g3d3FogFb@0"@l
 /* 8018E608 0018A448  4C C6 31 82 */	crclr 4*cr1+eq
-/* 8018E60C 0018A44C  4B F9 9D 45 */	bl lbl_80128350
+/* 8018E60C 0018A44C  4B F9 9D 45 */	bl Panic__Q24nw4r2dbFPCciPCce
 .global lbl_8018E610
 lbl_8018E610:
 /* 8018E610 0018A450  80 7E 00 00 */	lwz r3, 0x0(r30)

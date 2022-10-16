@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_804413A8
-lbl_804413A8:
+.global "@LOCAL@GetTexutreFlipInfo__Q34nw4r3lyt24@unnamed@lyt_window_cpp@FUc@flipInfos"
+"@LOCAL@GetTexutreFlipInfo__Q34nw4r3lyt24@unnamed@lyt_window_cpp@FUc@flipInfos":
 
 	.4byte 0x00000100
 	.4byte 0x00010101
@@ -20,41 +20,41 @@ lbl_804413A8:
 	.4byte 0x01010000
 	.4byte 0x00010100
 
-.global lbl_804413E4
-lbl_804413E4:
+.global __vt__Q34nw4r3lyt6Window
+__vt__Q34nw4r3lyt6Window:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800F6D40
-	.4byte lbl_800F9030
-	.4byte lbl_800F30D0
-	.4byte lbl_800F33D0
-	.4byte lbl_800F7020
-	.4byte lbl_800F3470
-	.4byte lbl_800F7200
-	.4byte lbl_800F6F90
-	.4byte lbl_800F6FB0
-	.4byte lbl_800F2EC0
-	.4byte lbl_800F2EF0
-	.4byte lbl_800F6FE0
-	.4byte lbl_800F7000
-	.4byte lbl_800F2F40
-	.4byte lbl_800F6E90
-	.4byte lbl_800F35C0
-	.4byte lbl_800F35E0
-	.4byte lbl_800F3670
-	.4byte lbl_800F7290
-	.4byte lbl_800F3730
-	.4byte lbl_800F3740
-	.4byte lbl_800F3750
-	.4byte lbl_800F3850
-	.4byte lbl_800F8FB0
-	.4byte lbl_800F3AA0
-	.4byte lbl_800F8FC0
-	.4byte lbl_800F3950
-	.4byte lbl_800F9020
-	.4byte lbl_800F8FF0
-	.4byte lbl_800F7320
-	.4byte lbl_800F7430
-	.4byte lbl_800F7A40
-	.4byte lbl_800F8180
+	.4byte __dt__Q34nw4r3lyt6WindowFv
+	.4byte GetRuntimeTypeInfo__Q34nw4r3lyt6WindowCFv
+	.4byte CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte DrawSelf__Q34nw4r3lyt6WindowFRCQ34nw4r3lyt8DrawInfo
+	.4byte Animate__Q34nw4r3lyt4PaneFUl
+	.4byte AnimateSelf__Q34nw4r3lyt6WindowFUl
+	.4byte GetVtxColor__Q34nw4r3lyt6WindowCFUl
+	.4byte SetVtxColor__Q34nw4r3lyt6WindowFUlQ34nw4r2ut5Color
+	.4byte GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.4byte SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.4byte GetVtxColorElement__Q34nw4r3lyt6WindowCFUl
+	.4byte SetVtxColorElement__Q34nw4r3lyt6WindowFUlUc
+	.4byte FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte FindMaterialByName__Q34nw4r3lyt6WindowFPCcb
+	.4byte BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.4byte UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.4byte UnbindAnimationSelf__Q34nw4r3lyt6WindowFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.4byte GetMaterialNum__Q34nw4r3lyt6WindowCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt6WindowCFUl
+	.4byte LoadMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte GetContentMaterial__Q34nw4r3lyt6WindowCFv
+	.4byte GetFrameMaterial__Q34nw4r3lyt6WindowCFUl
+	.4byte DrawContent__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ34nw4r3lyt15WindowFrameSizeUc
+	.4byte DrawFrame__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc
+	.4byte DrawFrame4__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc
+	.4byte DrawFrame8__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc

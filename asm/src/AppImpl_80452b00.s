@@ -1,19 +1,19 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80452B00
-lbl_80452B00:
+.global __vt__Q23app7AppImpl
+__vt__Q23app7AppImpl:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80175364
-	.4byte lbl_80175750
+	.4byte __dt__Q23app7AppImplFv
+	.4byte drawerExecDraw__Q23app7AppImplFv
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80176260
+	.4byte "@4@__dt__Q23app7AppImplFv"
 
-.global lbl_80452B1C
-lbl_80452B1C:
+.global "@STRING@NoName__Q33hel6common15RuntimeTypeInfoFv"
+"@STRING@NoName__Q33hel6common15RuntimeTypeInfoFv":
 
 	.4byte 0x6E6F206E
 	.4byte 0x616D6520

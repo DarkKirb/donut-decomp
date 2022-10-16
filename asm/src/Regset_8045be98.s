@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8045BE98
-lbl_8045BE98:
+.global "@51070_8045BE98"
+"@51070_8045BE98":
 
 	.4byte 0x52656773
 	.4byte 0x65742E63
@@ -13,8 +13,8 @@ lbl_8045BE98:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045BEB8
-lbl_8045BEB8:
+.global "@51100"
+"@51100":
 
 	.4byte 0x5B657272
 	.4byte 0x6F725D20
@@ -33,8 +33,8 @@ lbl_8045BEB8:
 	.4byte 0x82DC82B5
 	.4byte 0x82BD0A00
 
-.global lbl_8045BEF8
-lbl_8045BEF8:
+.global "@51120"
+"@51120":
 
 	.4byte 0x5B657272
 	.4byte 0x6F725D20
@@ -53,8 +53,8 @@ lbl_8045BEF8:
 	.4byte 0x82DC82B5
 	.4byte 0x82BD0A00
 
-.global lbl_8045BF38
-lbl_8045BF38:
+.global "@51201"
+"@51201":
 
 	.4byte 0x5B657272
 	.4byte 0x6F725D20
@@ -74,8 +74,8 @@ lbl_8045BF38:
 	.4byte 0x82B982F1
 	.4byte 0x0A000000
 
-.global lbl_8045BF7C
-lbl_8045BF7C:
+.global "@51224"
+"@51224":
 
 	.4byte 0x5B657272
 	.4byte 0x6F725D20
@@ -96,8 +96,8 @@ lbl_8045BF7C:
 	.4byte 0xB982F10A
 	.4byte 0
 
-.global lbl_8045BFC4
-lbl_8045BFC4:
+.global "@51229"
+"@51229":
 
 	.4byte 0x5B657272
 	.4byte 0x6F725D20
@@ -164,15 +164,15 @@ lbl_8045BFC4:
 	.4byte 0x28253264
 	.4byte 0x29200000
 
-.global lbl_8045C0C4
-lbl_8045C0C4:
+.global __vt__Q26mintvm6Regset
+__vt__Q26mintvm6Regset:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801C0838
+	.4byte __dt__Q26mintvm6RegsetFv
 	.4byte 0
 	.4byte 0
-	.4byte lbl_801C0928
+	.4byte __dt__Q26mintvm8RNObjectFv
 	.4byte 0
 	.4byte 0x696E6465
 	.4byte 0x78203D20
@@ -194,8 +194,8 @@ lbl_8045C0C4:
 	.4byte 0x61792E68
 	.4byte 0x70700000
 
-.global lbl_8045C12C
-lbl_8045C12C:
+.global "@STRING@spInc__Q26mintvm6RegsetFUi@0"
+"@STRING@spInc__Q26mintvm6RegsetFUi@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -203,15 +203,15 @@ lbl_8045C12C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C140
-lbl_8045C140:
+.global "@STRING@spInc__Q26mintvm6RegsetFUi"
+"@STRING@spInc__Q26mintvm6RegsetFUi":
 
 	.4byte 0x52656773
 	.4byte 0x65742E68
 	.4byte 0x70700000
 
-.global lbl_8045C14C
-lbl_8045C14C:
+.global "@STRING@spDec__Q26mintvm6RegsetFUi@0"
+"@STRING@spDec__Q26mintvm6RegsetFUi@0":
 
 	.4byte 0x41737365
 	.4byte 0x7274696F
@@ -219,8 +219,8 @@ lbl_8045C14C:
 	.4byte 0x696C6564
 	.4byte 0x2E0A0000
 
-.global lbl_8045C160
-lbl_8045C160:
+.global "@STRING@spDec__Q26mintvm6RegsetFUi"
+"@STRING@spDec__Q26mintvm6RegsetFUi":
 
 	.4byte 0x52656773
 	.4byte 0x65742E68

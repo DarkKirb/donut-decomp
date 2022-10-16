@@ -1,63 +1,63 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80440E10
-lbl_80440E10:
+.global __vt__Q34nw4r3g3d9AnmScnRes
+__vt__Q34nw4r3g3d9AnmScnRes:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800DBC40
-	.4byte lbl_800DB250
-	.4byte lbl_800DB110
-	.4byte lbl_800DBCE0
-	.4byte lbl_800DBCD0
-	.4byte lbl_800DB120
-	.4byte lbl_800DB180
-	.4byte lbl_800DB190
-	.4byte lbl_800DB1C0
-	.4byte lbl_800DB1D0
-	.4byte lbl_800DAD60
-	.4byte lbl_800DAD70
-	.4byte lbl_800DADC0
-	.4byte lbl_800DADD0
-	.4byte lbl_800DADE0
-	.4byte lbl_800DADF0
-	.4byte lbl_800DAE00
-	.4byte lbl_800DAE10
-	.4byte lbl_800DAE20
-	.4byte lbl_800DAE30
-	.4byte lbl_800DAE40
-	.4byte lbl_800DAE50
-	.4byte lbl_800DAE60
-	.4byte lbl_800DB2A0
-	.4byte lbl_800DB3E0
-	.4byte lbl_800DB450
-	.4byte lbl_800DB5D0
-	.4byte lbl_800DB680
-	.4byte lbl_800DBA30
-	.4byte lbl_800DBA70
-	.4byte lbl_800DB7E0
-	.4byte lbl_800DB880
-	.4byte lbl_800DB910
-	.4byte lbl_800DB9A0
+	.4byte IsDerivedFrom__Q34nw4r3g3d9AnmScnResCFQ44nw4r3g3d6G3dObj7TypeObj
+	.4byte G3dProc__Q34nw4r3g3d9AnmScnResFUlUlPv
+	.4byte __dt__Q34nw4r3g3d9AnmScnResFv
+	.4byte GetTypeObj__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetTypeName__Q34nw4r3g3d9AnmScnResCFv
+	.4byte SetFrame__Q34nw4r3g3d9AnmScnResFf
+	.4byte GetFrame__Q34nw4r3g3d9AnmScnResCFv
+	.4byte SetUpdateRate__Q34nw4r3g3d9AnmScnResFf
+	.4byte GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv
+	.4byte UpdateFrame__Q34nw4r3g3d9AnmScnResFv
+	.4byte Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes
+	.4byte Detach__Q34nw4r3g3d6AnmScnFi
+	.4byte GetNumLightSet__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetNumAmbLight__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetNumDiffuseLight__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetNumSpecularLight__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetNumFog__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetNumCamera__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetLightSetMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetAmbLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetDiffuseLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetFogMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetCameraMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv
+	.4byte GetLightSet__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d8LightSetUl
+	.4byte GetAmbLightColor__Q34nw4r3g3d9AnmScnResFUl
+	.4byte GetLight__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d8LightObjPQ34nw4r3g3d8LightObjUl
+	.4byte GetFog__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d3FogUl
+	.4byte GetCamera__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d6CameraUl
+	.4byte GetSpecularLightID__Q34nw4r3g3d9AnmScnResCFUl
+	.4byte HasSpecularLight__Q34nw4r3g3d9AnmScnResCFUl
+	.4byte GetAmbLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d17AmbLightAnmResultUl
+	.4byte GetLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d14LightAnmResultUl
+	.4byte GetFogResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d12FogAnmResultUl
+	.4byte GetCameraResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d15CameraAnmResultUl
 
-.global lbl_80440EA0
-lbl_80440EA0:
+.global __vt__Q34nw4r3g3d6AnmScn
+__vt__Q34nw4r3g3d6AnmScn:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800DBC90
+	.4byte IsDerivedFrom__Q34nw4r3g3d6AnmScnCFQ44nw4r3g3d6G3dObj7TypeObj
 	.4byte 0
-	.4byte lbl_800DAD80
-	.4byte lbl_800DBD00
-	.4byte lbl_800DBCF0
-	.4byte 0
-	.4byte 0
+	.4byte __dt__Q34nw4r3g3d6AnmScnFv
+	.4byte GetTypeObj__Q34nw4r3g3d6AnmScnCFv
+	.4byte GetTypeName__Q34nw4r3g3d6AnmScnCFv
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_800DAD60
-	.4byte lbl_800DAD70
+	.4byte 0
+	.4byte 0
+	.4byte Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes
+	.4byte Detach__Q34nw4r3g3d6AnmScnFi
 	.4byte 0
 	.4byte 0
 	.4byte 0

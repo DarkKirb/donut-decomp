@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80419FE0
-lbl_80419FE0:
+.global "EFFECT_TABLE_L__Q43scn4step4hero27@unnamed@LandAttribute_cpp@"
+"EFFECT_TABLE_L__Q43scn4step4hero27@unnamed@LandAttribute_cpp@":
 
 	.4byte 0x00000015
 	.4byte 0x00000009
@@ -17,8 +17,8 @@ lbl_80419FE0:
 	.4byte 0x0000000C
 	.4byte 0x00000006
 
-.global lbl_8041A010
-lbl_8041A010:
+.global "EFFECT_TABLE_S__Q43scn4step4hero27@unnamed@LandAttribute_cpp@"
+"EFFECT_TABLE_S__Q43scn4step4hero27@unnamed@LandAttribute_cpp@":
 
 	.4byte 0x00000014
 	.4byte 0x00000008
@@ -33,8 +33,8 @@ lbl_8041A010:
 	.4byte 0x0000000B
 	.4byte 0x00000005
 
-.global lbl_8041A040
-lbl_8041A040:
+.global "EFFECT_TABLE_LANDING__Q43scn4step4hero27@unnamed@LandAttribute_cpp@"
+"EFFECT_TABLE_LANDING__Q43scn4step4hero27@unnamed@LandAttribute_cpp@":
 
 	.4byte 0x00000013
 	.4byte 0x00000007
@@ -49,8 +49,8 @@ lbl_8041A040:
 	.4byte 0x0000000A
 	.4byte 0x00000004
 
-.global lbl_8041A070
-lbl_8041A070:
+.global "SE_TABLE__Q43scn4step4hero27@unnamed@LandAttribute_cpp@"
+"SE_TABLE__Q43scn4step4hero27@unnamed@LandAttribute_cpp@":
 
 	.4byte 0x00000064
 	.4byte 0x0000006F

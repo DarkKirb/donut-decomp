@@ -1,16 +1,16 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_8048CDE0
-lbl_8048CDE0:
+.global __vt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBound
+__vt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBound:
 
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80385208
-	.4byte lbl_803852C8
-	.4byte lbl_80385434
-	.4byte lbl_8035550C
-	.4byte lbl_8038548C
-	.4byte lbl_80355514
-	.4byte lbl_80355518
+	.4byte __dt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv
+	.4byte procAnim__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv
+	.4byte procMove__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0

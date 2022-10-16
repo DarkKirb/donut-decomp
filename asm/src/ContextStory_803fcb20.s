@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_803FCB20
-lbl_803FCB20:
+.global Create__Q23seq12ContextStoryFv
+Create__Q23seq12ContextStoryFv:
 /* 803FCB20 003F8960  94 21 FB F0 */	stwu r1, -0x410(r1)
 /* 803FCB24 003F8964  7C 08 02 A6 */	mflr r0
 /* 803FCB28 003F8968  90 01 04 14 */	stw r0, 0x414(r1)
@@ -18,7 +18,7 @@ lbl_803FCB44:
 /* 803FCB48 003F8988  94 64 00 08 */	stwu r3, 0x8(r4)
 /* 803FCB4C 003F898C  42 00 FF F8 */	bdnz lbl_803FCB44
 /* 803FCB50 003F8990  38 61 00 08 */	addi r3, r1, 0x8
-/* 803FCB54 003F8994  4B E2 46 B9 */	bl lbl_8022120C
+/* 803FCB54 003F8994  4B E2 46 B9 */	bl Create__Q33scn4step11ContextHeroFv
 /* 803FCB58 003F8998  80 01 00 08 */	lwz r0, 0x8(r1)
 /* 803FCB5C 003F899C  90 01 03 B4 */	stw r0, 0x3b4(r1)
 /* 803FCB60 003F89A0  80 01 00 0C */	lwz r0, 0xc(r1)

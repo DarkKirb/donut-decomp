@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_8040B6A8
-lbl_8040B6A8:
+.global NoteTable__Q44nw4r3snd6detail4Util
+NoteTable__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x3F800000
 	.4byte 0x3F879C7D
@@ -17,8 +17,8 @@ lbl_8040B6A8:
 	.4byte 0x3FE411F0
 	.4byte 0x3FF1A1BF
 
-.global lbl_8040B6D8
-lbl_8040B6D8:
+.global PitchTable__Q44nw4r3snd6detail4Util
+PitchTable__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x3F800000
 	.4byte 0x3F800765
@@ -277,8 +277,8 @@ lbl_8040B6D8:
 	.4byte 0x3F878CD3
 	.4byte 0x3F8794A8
 
-.global lbl_8040BAD8
-lbl_8040BAD8:
+.global Decibel2RatioTable__Q44nw4r3snd6detail4Util
+Decibel2RatioTable__Q44nw4r3snd6detail4Util:
 
 	.4byte 0
 	.4byte 0x380021F4
@@ -1246,8 +1246,8 @@ lbl_8040BAD8:
 	.4byte 0x3FFC7859
 	.4byte 0x3FFF64C1
 
-.global lbl_8040C9EC
-lbl_8040C9EC:
+.global Pan2RatioTableSqrt__Q44nw4r3snd6detail4Util
+Pan2RatioTableSqrt__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x3F800000
 	.4byte 0x3F7F7FE0
@@ -1507,8 +1507,8 @@ lbl_8040C9EC:
 	.4byte 0x3D800000
 	.4byte 0
 
-.global lbl_8040CDF0
-lbl_8040CDF0:
+.global Pan2RatioTableSinCos__Q44nw4r3snd6detail4Util
+Pan2RatioTableSinCos__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x3F800000
 	.4byte 0x3F7FFEC4
@@ -1768,8 +1768,8 @@ lbl_8040CDF0:
 	.4byte 0x3BC90F89
 	.4byte 0
 
-.global lbl_8040D1F4
-lbl_8040D1F4:
+.global Pan2RatioTableLinear__Q44nw4r3snd6detail4Util
+Pan2RatioTableLinear__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x3F800000
 	.4byte 0x3F7F0000
@@ -2029,8 +2029,8 @@ lbl_8040D1F4:
 	.4byte 0x3B800000
 	.4byte 0
 
-.global lbl_8040D5F8
-lbl_8040D5F8:
+.global RemoteFilterCoefTable__Q44nw4r3snd6detail4Util
+RemoteFilterCoefTable__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x387C70F7
 	.4byte 0x387C8144
@@ -2353,8 +2353,8 @@ lbl_8040D5F8:
 	.4byte 0x00010001
 	.4byte 0x7F18C0E6
 
-.global lbl_8040DAF8
-lbl_8040DAF8:
+.global CalcLpfFreqTable__Q44nw4r3snd6detail4Util
+CalcLpfFreqTable__Q44nw4r3snd6detail4Util:
 
 	.4byte 0x00500064
 	.4byte 0x008000A0

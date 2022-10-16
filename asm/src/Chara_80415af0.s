@@ -1,48 +1,48 @@
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
-.global lbl_80415AF0
-lbl_80415AF0:
+.global "T_CHARA_INFO_TABLE__Q33scn10grandtitle19@unnamed@Chara_cpp@"
+"T_CHARA_INFO_TABLE__Q33scn10grandtitle19@unnamed@Chara_cpp@":
 
-	.4byte lbl_805583B0
-	.4byte lbl_804606B8
-	.4byte lbl_804606B8
-	.4byte lbl_805583B8
-	.4byte lbl_804606CC
-	.4byte lbl_804606CC
-	.4byte lbl_805583C0
-	.4byte lbl_804606E4
-	.4byte lbl_804606E4
-	.4byte lbl_805583B0
-	.4byte lbl_804606F8
-	.4byte lbl_80460718
-	.4byte lbl_805583B8
-	.4byte lbl_8046072C
-	.4byte lbl_80460750
-	.4byte lbl_805583C0
-	.4byte lbl_80460768
-	.4byte lbl_80460768
-	.4byte lbl_805583C8
-	.4byte lbl_80460778
-	.4byte lbl_80460778
-	.4byte lbl_805583D0
-	.4byte lbl_80460778
-	.4byte lbl_80460778
-	.4byte lbl_805583D8
-	.4byte lbl_80460788
-	.4byte lbl_80460788
-	.4byte lbl_804607A0
-	.4byte lbl_804607AC
-	.4byte lbl_804607AC
-	.4byte lbl_804607C0
-	.4byte lbl_804607CC
-	.4byte lbl_804607CC
+	.4byte "@53143_805583B0"
+	.4byte "@53144_804606B8"
+	.4byte "@53144_804606B8"
+	.4byte "@53145_805583B8"
+	.4byte "@53146_804606CC"
+	.4byte "@53146_804606CC"
+	.4byte "@53147_805583C0"
+	.4byte "@53148_804606E4"
+	.4byte "@53148_804606E4"
+	.4byte "@53143_805583B0"
+	.4byte "@53149_804606F8"
+	.4byte "@53150_80460718"
+	.4byte "@53145_805583B8"
+	.4byte "@53151_8046072C"
+	.4byte "@53152_80460750"
+	.4byte "@53147_805583C0"
+	.4byte "@53153_80460768"
+	.4byte "@53153_80460768"
+	.4byte "@53154_805583C8"
+	.4byte "@53155_80460778"
+	.4byte "@53155_80460778"
+	.4byte "@53156_805583D0"
+	.4byte "@53155_80460778"
+	.4byte "@53155_80460778"
+	.4byte "@53157_805583D8"
+	.4byte "@53158"
+	.4byte "@53158"
+	.4byte "@53159"
+	.4byte "@53160"
+	.4byte "@53160"
+	.4byte "@53161"
+	.4byte "@53162_804607CC"
+	.4byte "@53162_804607CC"
 
-.global lbl_80415B74
-lbl_80415B74:
+.global "@53204_80415B74"
+"@53204_80415B74":
 
-	.4byte lbl_804607E4
-	.4byte lbl_804607F4
-	.4byte lbl_80460804
-	.4byte lbl_80460814
-	.4byte lbl_80460824
+	.4byte "@53199"
+	.4byte "@53200_804607F4"
+	.4byte "@53201"
+	.4byte "@53202_80460814"
+	.4byte "@53203_80460824"

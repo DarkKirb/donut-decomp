@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
-.global lbl_80423A00
-lbl_80423A00:
+.global UcsAnsiTable
+UcsAnsiTable:
 
 	.4byte 0x20AC0000
 	.4byte 0x201A0192
@@ -21,8 +21,8 @@ lbl_80423A00:
 	.4byte 0x01530000
 	.4byte 0x017E0178
 
-.global lbl_80423A40
-lbl_80423A40:
+.global Ucs00
+Ucs00:
 
 	.4byte 0
 	.4byte 0
@@ -153,8 +153,8 @@ lbl_80423A40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80423C40
-lbl_80423C40:
+.global Ucs03
+Ucs03:
 
 	.4byte 0
 	.4byte 0
@@ -285,8 +285,8 @@ lbl_80423C40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80423E40
-lbl_80423E40:
+.global Ucs04
+Ucs04:
 
 	.4byte 0x00008446
 	.4byte 0
@@ -417,8 +417,8 @@ lbl_80423E40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424040
-lbl_80424040:
+.global Ucs20
+Ucs20:
 
 	.4byte 0
 	.4byte 0
@@ -549,8 +549,8 @@ lbl_80424040:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424240
-lbl_80424240:
+.global Ucs21
+Ucs21:
 
 	.4byte 0
 	.4byte 0x0000818E
@@ -681,8 +681,8 @@ lbl_80424240:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424440
-lbl_80424440:
+.global Ucs22
+Ucs22:
 
 	.4byte 0x81CD0000
 	.4byte 0x81DD81CE
@@ -813,8 +813,8 @@ lbl_80424440:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424640
-lbl_80424640:
+.global Ucs23
+Ucs23:
 
 	.4byte 0
 	.4byte 0
@@ -945,8 +945,8 @@ lbl_80424640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424840
-lbl_80424840:
+.global Ucs25
+Ucs25:
 
 	.4byte 0x849F84AA
 	.4byte 0x84A084AB
@@ -1077,8 +1077,8 @@ lbl_80424840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424A40
-lbl_80424A40:
+.global Ucs26
+Ucs26:
 
 	.4byte 0
 	.4byte 0
@@ -1209,8 +1209,8 @@ lbl_80424A40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80424C40
-lbl_80424C40:
+.global Ucs30
+Ucs30:
 
 	.4byte 0x81408141
 	.4byte 0x81428156
@@ -1341,8 +1341,8 @@ lbl_80424C40:
 	.4byte 0x815B8152
 	.4byte 0x81530000
 
-.global lbl_80424E40
-lbl_80424E40:
+.global Ucs4E
+Ucs4E:
 
 	.4byte 0x88EA929A
 	.4byte 0x00008EB5
@@ -1473,8 +1473,8 @@ lbl_80424E40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80425040
-lbl_80425040:
+.global Ucs4F
+Ucs4F:
 
 	.4byte 0x00008AE9
 	.4byte 0
@@ -1605,8 +1605,8 @@ lbl_80425040:
 	.4byte 0
 	.4byte 0x98EA0000
 
-.global lbl_80425240
-lbl_80425240:
+.global Ucs50
+Ucs50:
 
 	.4byte 0
 	.4byte 0
@@ -1737,8 +1737,8 @@ lbl_80425240:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80425440
-lbl_80425440:
+.global Ucs51
+Ucs51:
 
 	.4byte 0x8B56994D
 	.4byte 0x994E0000
@@ -1869,8 +1869,8 @@ lbl_80425440:
 	.4byte 0x0000949F
 	.4byte 0x99820000
 
-.global lbl_80425640
-lbl_80425640:
+.global Ucs52
+Ucs52:
 
 	.4byte 0x93810000
 	.4byte 0x0000906E
@@ -2001,8 +2001,8 @@ lbl_80425640:
 	.4byte 0
 	.4byte 0x8CF996DC
 
-.global lbl_80425840
-lbl_80425840:
+.global Ucs53
+Ucs53:
 
 	.4byte 0x000096E6
 	.4byte 0x93F50000
@@ -2133,8 +2133,8 @@ lbl_80425840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80425A40
-lbl_80425A40:
+.global Ucs54
+Ucs54:
 
 	.4byte 0x000099DC
 	.4byte 0x00008B68
@@ -2265,8 +2265,8 @@ lbl_80425A40:
 	.4byte 0x00009A4A
 	.4byte 0
 
-.global lbl_80425C40
-lbl_80425C40:
+.global Ucs55
+Ucs55:
 
 	.4byte 0
 	.4byte 0
@@ -2397,8 +2397,8 @@ lbl_80425C40:
 	.4byte 0x00009A75
 	.4byte 0x9A740000
 
-.global lbl_80425E40
-lbl_80425E40:
+.global Ucs56
+Ucs56:
 
 	.4byte 0
 	.4byte 0
@@ -2529,8 +2529,8 @@ lbl_80425E40:
 	.4byte 0x00008D91
 	.4byte 0x00009A9C
 
-.global lbl_80426040
-lbl_80426040:
+.global Ucs57
+Ucs57:
 
 	.4byte 0x9A9B0000
 	.4byte 0x000095DE
@@ -2661,8 +2661,8 @@ lbl_80426040:
 	.4byte 0x8DE90000
 	.4byte 0
 
-.global lbl_80426240
-lbl_80426240:
+.global Ucs58
+Ucs58:
 
 	.4byte 0x96780000
 	.4byte 0x93B00000
@@ -2793,8 +2793,8 @@ lbl_80426240:
 	.4byte 0x9AE59AE6
 	.4byte 0
 
-.global lbl_80426440
-lbl_80426440:
+.global Ucs59
+Ucs59:
 
 	.4byte 0
 	.4byte 0x9AE70000
@@ -2925,8 +2925,8 @@ lbl_80426440:
 	.4byte 0
 	.4byte 0x00008E70
 
-.global lbl_80426640
-lbl_80426640:
+.global Ucs5A
+Ucs5A:
 
 	.4byte 0x000088D0
 	.4byte 0x000088A1
@@ -3057,8 +3057,8 @@ lbl_80426640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80426840
-lbl_80426840:
+.global Ucs5B
+Ucs5B:
 
 	.4byte 0
 	.4byte 0
@@ -3189,8 +3189,8 @@ lbl_80426840:
 	.4byte 0
 	.4byte 0x91CE8EF5
 
-.global lbl_80426A40
-lbl_80426A40:
+.global Ucs5C
+Ucs5C:
 
 	.4byte 0x00009595
 	.4byte 0x90EA0000
@@ -3321,8 +3321,8 @@ lbl_80426A40:
 	.4byte 0x00009BB5
 	.4byte 0
 
-.global lbl_80426C40
-lbl_80426C40:
+.global Ucs5D
+Ucs5D:
 
 	.4byte 0
 	.4byte 0
@@ -3453,8 +3453,8 @@ lbl_80426C40:
 	.4byte 0x00009246
 	.4byte 0x8BD00000
 
-.global lbl_80426E40
-lbl_80426E40:
+.global Ucs5E
+Ucs5E:
 
 	.4byte 0
 	.4byte 0x8E73957A
@@ -3585,8 +3585,8 @@ lbl_80426E40:
 	.4byte 0x94550000
 	.4byte 0x9C4F93F9
 
-.global lbl_80427040
-lbl_80427040:
+.global Ucs5F
+Ucs5F:
 
 	.4byte 0x000095D9
 	.4byte 0x00009C50
@@ -3717,8 +3717,8 @@ lbl_80427040:
 	.4byte 0x00008D9A
 	.4byte 0x00009C7C
 
-.global lbl_80427240
-lbl_80427240:
+.global Ucs60
+Ucs60:
 
 	.4byte 0
 	.4byte 0
@@ -3849,8 +3849,8 @@ lbl_80427240:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80427440
-lbl_80427440:
+.global Ucs61
+Ucs61:
 
 	.4byte 0x9CB58F44
 	.4byte 0x00009CB8
@@ -3981,8 +3981,8 @@ lbl_80427440:
 	.4byte 0x9CF49CF3
 	.4byte 0x9CF59CF2
 
-.global lbl_80427640
-lbl_80427640:
+.global Ucs62
+Ucs62:
 
 	.4byte 0x9CF60000
 	.4byte 0
@@ -4113,8 +4113,8 @@ lbl_80427640:
 	.4byte 0
 	.4byte 0x8F459D5C
 
-.global lbl_80427840
-lbl_80427840:
+.global Ucs63
+Ucs63:
 
 	.4byte 0x00008E9D
 	.4byte 0x9D6B0000
@@ -4245,8 +4245,8 @@ lbl_80427840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80427A40
-lbl_80427A40:
+.global Ucs64
+Ucs64:
 
 	.4byte 0
 	.4byte 0
@@ -4377,8 +4377,8 @@ lbl_80427A40:
 	.4byte 0x00009DB4
 	.4byte 0x8FEF0000
 
-.global lbl_80427C40
-lbl_80427C40:
+.global Ucs65
+Ucs65:
 
 	.4byte 0x9DB30000
 	.4byte 0
@@ -4509,8 +4509,8 @@ lbl_80427C40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80427E40
-lbl_80427E40:
+.global Ucs66
+Ucs66:
 
 	.4byte 0
 	.4byte 0x8D569DDE
@@ -4641,8 +4641,8 @@ lbl_80427E40:
 	.4byte 0x99D6915D
 	.4byte 0x915C91D6
 
-.global lbl_80428040
-lbl_80428040:
+.global Ucs67
+Ucs67:
 
 	.4byte 0x8DC50000
 	.4byte 0x000098F0
@@ -4773,8 +4773,8 @@ lbl_80428040:
 	.4byte 0
 	.4byte 0x968F8A60
 
-.global lbl_80428240
-lbl_80428240:
+.global Ucs68
+Ucs68:
 
 	.4byte 0
 	.4byte 0x92CC93C8
@@ -4905,8 +4905,8 @@ lbl_80428240:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80428440
-lbl_80428440:
+.global Ucs69
+Ucs69:
 
 	.4byte 0x986F9E96
 	.4byte 0
@@ -5037,8 +5037,8 @@ lbl_80428440:
 	.4byte 0x00009185
 	.4byte 0x00009EDB
 
-.global lbl_80428640
-lbl_80428640:
+.global Ucs6A
+Ucs6A:
 
 	.4byte 0
 	.4byte 0x9ED90000
@@ -5169,8 +5169,8 @@ lbl_80428640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80428840
-lbl_80428840:
+.global Ucs6B
+Ucs6B:
 
 	.4byte 0
 	.4byte 0
@@ -5301,8 +5301,8 @@ lbl_80428840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80428A40
-lbl_80428A40:
+.global Ucs6C
+Ucs6C:
 
 	.4byte 0
 	.4byte 0
@@ -5433,8 +5433,8 @@ lbl_80428A40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80428C40
-lbl_80428C40:
+.global Ucs6D
+Ucs6D:
 
 	.4byte 0
 	.4byte 0
@@ -5565,8 +5565,8 @@ lbl_80428C40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80428E40
-lbl_80428E40:
+.global Ucs6E
+Ucs6E:
 
 	.4byte 0
 	.4byte 0
@@ -5697,8 +5697,8 @@ lbl_80428E40:
 	.4byte 0
 	.4byte 0x9FF69FDE
 
-.global lbl_80429040
-lbl_80429040:
+.global Ucs6F
+Ucs6F:
 
 	.4byte 0x00008B99
 	.4byte 0x95590000
@@ -5829,8 +5829,8 @@ lbl_80429040:
 	.4byte 0
 	.4byte 0xE0680000
 
-.global lbl_80429240
-lbl_80429240:
+.global Ucs70
+Ucs70:
 
 	.4byte 0x0000E066
 	.4byte 0
@@ -5961,8 +5961,8 @@ lbl_80429240:
 	.4byte 0x0000E082
 	.4byte 0
 
-.global lbl_80429440
-lbl_80429440:
+.global Ucs71
+Ucs71:
 
 	.4byte 0
 	.4byte 0
@@ -6093,8 +6093,8 @@ lbl_80429440:
 	.4byte 0xE09E0000
 	.4byte 0x0000E0A0
 
-.global lbl_80429640
-lbl_80429640:
+.global Ucs72
+Ucs72:
 
 	.4byte 0
 	.4byte 0
@@ -6225,8 +6225,8 @@ lbl_80429640:
 	.4byte 0x98549482
 	.4byte 0
 
-.global lbl_80429840
-lbl_80429840:
+.global Ucs73
+Ucs73:
 
 	.4byte 0
 	.4byte 0
@@ -6357,8 +6357,8 @@ lbl_80429840:
 	.4byte 0
 	.4byte 0x8CBB0000
 
-.global lbl_80429A40
-lbl_80429A40:
+.global Ucs74
+Ucs74:
 
 	.4byte 0
 	.4byte 0x00008B85
@@ -6489,8 +6489,8 @@ lbl_80429A40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_80429C40
-lbl_80429C40:
+.global Ucs75
+Ucs75:
 
 	.4byte 0
 	.4byte 0x0000E14B
@@ -6621,8 +6621,8 @@ lbl_80429C40:
 	.4byte 0xE1800000
 	.4byte 0xE17DE17E
 
-.global lbl_80429E40
-lbl_80429E40:
+.global Ucs76
+Ucs76:
 
 	.4byte 0x0000E181
 	.4byte 0
@@ -6753,8 +6753,8 @@ lbl_80429E40:
 	.4byte 0
 	.4byte 0x8F820000
 
-.global lbl_8042A040
-lbl_8042A040:
+.global Ucs77
+Ucs77:
 
 	.4byte 0x00008FC8
 	.4byte 0
@@ -6885,8 +6885,8 @@ lbl_8042A040:
 	.4byte 0xE1E30000
 	.4byte 0
 
-.global lbl_8042A240
-lbl_8042A240:
+.global Ucs78
+Ucs78:
 
 	.4byte 0
 	.4byte 0x8DBB0000
@@ -7017,8 +7017,8 @@ lbl_8042A240:
 	.4byte 0x0000E242
 	.4byte 0
 
-.global lbl_8042A440
-lbl_8042A440:
+.global Ucs79
+Ucs79:
 
 	.4byte 0x00008FCA
 	.4byte 0
@@ -7149,8 +7149,8 @@ lbl_8042A440:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042A640
-lbl_8042A640:
+.global Ucs7A
+Ucs7A:
 
 	.4byte 0x8B480000
 	.4byte 0
@@ -7281,8 +7281,8 @@ lbl_8042A640:
 	.4byte 0
 	.4byte 0x00008AC6
 
-.global lbl_8042A840
-lbl_8042A840:
+.global Ucs7B
+Ucs7B:
 
 	.4byte 0
 	.4byte 0xE2930000
@@ -7413,8 +7413,8 @@ lbl_8042A840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042AA40
-lbl_8042AA40:
+.global Ucs7C
+Ucs7C:
 
 	.4byte 0xE2C50000
 	.4byte 0
@@ -7545,8 +7545,8 @@ lbl_8042AA40:
 	.4byte 0
 	.4byte 0x8B8A0000
 
-.global lbl_8042AC40
-lbl_8042AC40:
+.global Ucs7D
+Ucs7D:
 
 	.4byte 0x8B490000
 	.4byte 0xE3400000
@@ -7677,8 +7677,8 @@ lbl_8042AC40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042AE40
-lbl_8042AE40:
+.global Ucs7E
+Ucs7E:
 
 	.4byte 0x0000898F
 	.4byte 0
@@ -7809,8 +7809,8 @@ lbl_8042AE40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042B040
-lbl_8042B040:
+.global Ucs7F
+Ucs7F:
 
 	.4byte 0
 	.4byte 0
@@ -7941,8 +7941,8 @@ lbl_8042B040:
 	.4byte 0x97830000
 	.4byte 0
 
-.global lbl_8042B240
-lbl_8042B240:
+.global Ucs80
+Ucs80:
 
 	.4byte 0x97739856
 	.4byte 0x00008D6C
@@ -8073,8 +8073,8 @@ lbl_8042B240:
 	.4byte 0xE445945C
 	.4byte 0
 
-.global lbl_8042B440
-lbl_8042B440:
+.global Ucs81
+Ucs81:
 
 	.4byte 0
 	.4byte 0x8E890000
@@ -8205,8 +8205,8 @@ lbl_8042B440:
 	.4byte 0x89500000
 	.4byte 0xE46B0000
 
-.global lbl_8042B640
-lbl_8042B640:
+.global Ucs82
+Ucs82:
 
 	.4byte 0x0000E46C
 	.4byte 0xE46D0000
@@ -8337,8 +8337,8 @@ lbl_8042B640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042B840
-lbl_8042B840:
+.global Ucs83
+Ucs83:
 
 	.4byte 0
 	.4byte 0x96CEE497
@@ -8469,8 +8469,8 @@ lbl_8042B840:
 	.4byte 0x0000E4C1
 	.4byte 0
 
-.global lbl_8042BA40
-lbl_8042BA40:
+.global Ucs84
+Ucs84:
 
 	.4byte 0
 	.4byte 0x0000E4C2
@@ -8601,8 +8601,8 @@ lbl_8042BA40:
 	.4byte 0xE4F80000
 	.4byte 0x0000E4F0
 
-.global lbl_8042BC40
-lbl_8042BC40:
+.global Ucs85
+Ucs85:
 
 	.4byte 0x8EC10000
 	.4byte 0
@@ -8733,8 +8733,8 @@ lbl_8042BC40:
 	.4byte 0
 	.4byte 0xE5600000
 
-.global lbl_8042BE40
-lbl_8042BE40:
+.global Ucs86
+Ucs86:
 
 	.4byte 0
 	.4byte 0xE5410000
@@ -8865,8 +8865,8 @@ lbl_8042BE40:
 	.4byte 0
 	.4byte 0x89E90000
 
-.global lbl_8042C040
-lbl_8042C040:
+.global Ucs87
+Ucs87:
 
 	.4byte 0xE5860000
 	.4byte 0x9649E587
@@ -8997,8 +8997,8 @@ lbl_8042C040:
 	.4byte 0
 	.4byte 0xE5B70000
 
-.global lbl_8042C240
-lbl_8042C240:
+.global Ucs88
+Ucs88:
 
 	.4byte 0
 	.4byte 0
@@ -9129,8 +9129,8 @@ lbl_8042C240:
 	.4byte 0xE5E790BB
 	.4byte 0x909E0000
 
-.global lbl_8042C440
-lbl_8042C440:
+.global Ucs89
+Ucs89:
 
 	.4byte 0
 	.4byte 0xE5E60000
@@ -9261,8 +9261,8 @@ lbl_8042C440:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042C640
-lbl_8042C640:
+.global Ucs8A
+Ucs8A:
 
 	.4byte 0x8CBE0000
 	.4byte 0x92F9E65D
@@ -9393,8 +9393,8 @@ lbl_8042C640:
 	.4byte 0
 	.4byte 0x91F80000
 
-.global lbl_8042C840
-lbl_8042C840:
+.global Ucs8B
+Ucs8B:
 
 	.4byte 0x96648979
 	.4byte 0x88E00000
@@ -9525,8 +9525,8 @@ lbl_8042C840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042CA40
-lbl_8042CA40:
+.global Ucs8C
+Ucs8C:
 
 	.4byte 0
 	.4byte 0
@@ -9657,8 +9657,8 @@ lbl_8042CA40:
 	.4byte 0x8D77E6CE
 	.4byte 0
 
-.global lbl_8042CC40
-lbl_8042CC40:
+.global Ucs8D
+Ucs8D:
 
 	.4byte 0
 	.4byte 0
@@ -9789,8 +9789,8 @@ lbl_8042CC40:
 	.4byte 0xE6F00000
 	.4byte 0x0000E6F3
 
-.global lbl_8042CE40
-lbl_8042CE40:
+.global Ucs8E
+Ucs8E:
 
 	.4byte 0
 	.4byte 0
@@ -9921,8 +9921,8 @@ lbl_8042CE40:
 	.4byte 0xE7648C79
 	.4byte 0xE7670000
 
-.global lbl_8042D040
-lbl_8042D040:
+.global Ucs8F
+Ucs8F:
 
 	.4byte 0
 	.4byte 0x00008A72
@@ -10053,8 +10053,8 @@ lbl_8042D040:
 	.4byte 0x000092C7
 	.4byte 0
 
-.global lbl_8042D240
-lbl_8042D240:
+.global Ucs90
+Ucs90:
 
 	.4byte 0x91DE9197
 	.4byte 0x000093A6
@@ -10185,8 +10185,8 @@ lbl_8042D240:
 	.4byte 0x00009373
 	.4byte 0
 
-.global lbl_8042D440
-lbl_8042D440:
+.global Ucs91
+Ucs91:
 
 	.4byte 0
 	.4byte 0xE7BD0000
@@ -10317,8 +10317,8 @@ lbl_8042D440:
 	.4byte 0xE7DD0000
 	.4byte 0x0000E7E1
 
-.global lbl_8042D640
-lbl_8042D640:
+.global Ucs92
+Ucs92:
 
 	.4byte 0
 	.4byte 0
@@ -10449,8 +10449,8 @@ lbl_8042D640:
 	.4byte 0x8D7C0000
 	.4byte 0
 
-.global lbl_8042D840
-lbl_8042D840:
+.global Ucs93
+Ucs93:
 
 	.4byte 0
 	.4byte 0
@@ -10581,8 +10581,8 @@ lbl_8042D840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042DA40
-lbl_8042DA40:
+.global Ucs94
+Ucs94:
 
 	.4byte 0
 	.4byte 0x0000E85E
@@ -10713,8 +10713,8 @@ lbl_8042DA40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042DC40
-lbl_8042DC40:
+.global Ucs95
+Ucs95:
 
 	.4byte 0
 	.4byte 0
@@ -10845,8 +10845,8 @@ lbl_8042DC40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042DE40
-lbl_8042DE40:
+.global Ucs96
+Ucs96:
 
 	.4byte 0
 	.4byte 0
@@ -10977,8 +10977,8 @@ lbl_8042DE40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042E040
-lbl_8042E040:
+.global Ucs97
+Ucs97:
 
 	.4byte 0x8EF90000
 	.4byte 0
@@ -11109,8 +11109,8 @@ lbl_8042E040:
 	.4byte 0
 	.4byte 0x00008BBF
 
-.global lbl_8042E240
-lbl_8042E240:
+.global Ucs98
+Ucs98:
 
 	.4byte 0x000095C5
 	.4byte 0x92B88DA0
@@ -11241,8 +11241,8 @@ lbl_8042E240:
 	.4byte 0x8E94964F
 	.4byte 0x8FFC0000
 
-.global lbl_8042E440
-lbl_8042E440:
+.global Ucs99
+Ucs99:
 
 	.4byte 0
 	.4byte 0x0000E94C
@@ -11373,8 +11373,8 @@ lbl_8042E440:
 	.4byte 0
 	.4byte 0x00008F78
 
-.global lbl_8042E640
-lbl_8042E640:
+.global Ucs9A
+Ucs9A:
 
 	.4byte 0x0000E974
 	.4byte 0
@@ -11505,8 +11505,8 @@ lbl_8042E640:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042E840
-lbl_8042E840:
+.global Ucs9B
+Ucs9B:
 
 	.4byte 0
 	.4byte 0
@@ -11637,8 +11637,8 @@ lbl_8042E840:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042EA40
-lbl_8042EA40:
+.global Ucs9C
+Ucs9C:
 
 	.4byte 0
 	.4byte 0
@@ -11769,8 +11769,8 @@ lbl_8042EA40:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042EC40
-lbl_8042EC40:
+.global Ucs9D
+Ucs9D:
 
 	.4byte 0
 	.4byte 0x0000E9EE
@@ -11901,8 +11901,8 @@ lbl_8042EC40:
 	.4byte 0x0000EA5E
 	.4byte 0
 
-.global lbl_8042EE40
-lbl_8042EE40:
+.global Ucs9E
+Ucs9E:
 
 	.4byte 0
 	.4byte 0
@@ -12033,8 +12033,8 @@ lbl_8042EE40:
 	.4byte 0xEA85EA86
 	.4byte 0
 
-.global lbl_8042F040
-lbl_8042F040:
+.global Ucs9F
+Ucs9F:
 
 	.4byte 0
 	.4byte 0
@@ -12165,8 +12165,8 @@ lbl_8042F040:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042F240
-lbl_8042F240:
+.global UcsFF
+UcsFF:
 
 	.4byte 0x00008149
 	.4byte 0x00008194
@@ -12297,14 +12297,14 @@ lbl_8042F240:
 	.4byte 0
 	.4byte 0
 
-.global lbl_8042F440
-lbl_8042F440:
+.global UcsSjisTable
+UcsSjisTable:
 
-	.4byte lbl_80423A40
+	.4byte Ucs00
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80423C40
-	.4byte lbl_80423E40
+	.4byte Ucs03
+	.4byte Ucs04
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12332,13 +12332,13 @@ lbl_8042F440:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80424040
-	.4byte lbl_80424240
-	.4byte lbl_80424440
-	.4byte lbl_80424640
+	.4byte Ucs20
+	.4byte Ucs21
+	.4byte Ucs22
+	.4byte Ucs23
 	.4byte 0
-	.4byte lbl_80424840
-	.4byte lbl_80424A40
+	.4byte Ucs25
+	.4byte Ucs26
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12348,7 +12348,7 @@ lbl_8042F440:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80424C40
+	.4byte Ucs30
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12378,88 +12378,88 @@ lbl_8042F440:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80424E40
-	.4byte lbl_80425040
-	.4byte lbl_80425240
-	.4byte lbl_80425440
-	.4byte lbl_80425640
-	.4byte lbl_80425840
-	.4byte lbl_80425A40
-	.4byte lbl_80425C40
-	.4byte lbl_80425E40
-	.4byte lbl_80426040
-	.4byte lbl_80426240
-	.4byte lbl_80426440
-	.4byte lbl_80426640
-	.4byte lbl_80426840
-	.4byte lbl_80426A40
-	.4byte lbl_80426C40
-	.4byte lbl_80426E40
-	.4byte lbl_80427040
-	.4byte lbl_80427240
-	.4byte lbl_80427440
-	.4byte lbl_80427640
-	.4byte lbl_80427840
-	.4byte lbl_80427A40
-	.4byte lbl_80427C40
-	.4byte lbl_80427E40
-	.4byte lbl_80428040
-	.4byte lbl_80428240
-	.4byte lbl_80428440
-	.4byte lbl_80428640
-	.4byte lbl_80428840
-	.4byte lbl_80428A40
-	.4byte lbl_80428C40
-	.4byte lbl_80428E40
-	.4byte lbl_80429040
-	.4byte lbl_80429240
-	.4byte lbl_80429440
-	.4byte lbl_80429640
-	.4byte lbl_80429840
-	.4byte lbl_80429A40
-	.4byte lbl_80429C40
-	.4byte lbl_80429E40
-	.4byte lbl_8042A040
-	.4byte lbl_8042A240
-	.4byte lbl_8042A440
-	.4byte lbl_8042A640
-	.4byte lbl_8042A840
-	.4byte lbl_8042AA40
-	.4byte lbl_8042AC40
-	.4byte lbl_8042AE40
-	.4byte lbl_8042B040
-	.4byte lbl_8042B240
-	.4byte lbl_8042B440
-	.4byte lbl_8042B640
-	.4byte lbl_8042B840
-	.4byte lbl_8042BA40
-	.4byte lbl_8042BC40
-	.4byte lbl_8042BE40
-	.4byte lbl_8042C040
-	.4byte lbl_8042C240
-	.4byte lbl_8042C440
-	.4byte lbl_8042C640
-	.4byte lbl_8042C840
-	.4byte lbl_8042CA40
-	.4byte lbl_8042CC40
-	.4byte lbl_8042CE40
-	.4byte lbl_8042D040
-	.4byte lbl_8042D240
-	.4byte lbl_8042D440
-	.4byte lbl_8042D640
-	.4byte lbl_8042D840
-	.4byte lbl_8042DA40
-	.4byte lbl_8042DC40
-	.4byte lbl_8042DE40
-	.4byte lbl_8042E040
-	.4byte lbl_8042E240
-	.4byte lbl_8042E440
-	.4byte lbl_8042E640
-	.4byte lbl_8042E840
-	.4byte lbl_8042EA40
-	.4byte lbl_8042EC40
-	.4byte lbl_8042EE40
-	.4byte lbl_8042F040
+	.4byte Ucs4E
+	.4byte Ucs4F
+	.4byte Ucs50
+	.4byte Ucs51
+	.4byte Ucs52
+	.4byte Ucs53
+	.4byte Ucs54
+	.4byte Ucs55
+	.4byte Ucs56
+	.4byte Ucs57
+	.4byte Ucs58
+	.4byte Ucs59
+	.4byte Ucs5A
+	.4byte Ucs5B
+	.4byte Ucs5C
+	.4byte Ucs5D
+	.4byte Ucs5E
+	.4byte Ucs5F
+	.4byte Ucs60
+	.4byte Ucs61
+	.4byte Ucs62
+	.4byte Ucs63
+	.4byte Ucs64
+	.4byte Ucs65
+	.4byte Ucs66
+	.4byte Ucs67
+	.4byte Ucs68
+	.4byte Ucs69
+	.4byte Ucs6A
+	.4byte Ucs6B
+	.4byte Ucs6C
+	.4byte Ucs6D
+	.4byte Ucs6E
+	.4byte Ucs6F
+	.4byte Ucs70
+	.4byte Ucs71
+	.4byte Ucs72
+	.4byte Ucs73
+	.4byte Ucs74
+	.4byte Ucs75
+	.4byte Ucs76
+	.4byte Ucs77
+	.4byte Ucs78
+	.4byte Ucs79
+	.4byte Ucs7A
+	.4byte Ucs7B
+	.4byte Ucs7C
+	.4byte Ucs7D
+	.4byte Ucs7E
+	.4byte Ucs7F
+	.4byte Ucs80
+	.4byte Ucs81
+	.4byte Ucs82
+	.4byte Ucs83
+	.4byte Ucs84
+	.4byte Ucs85
+	.4byte Ucs86
+	.4byte Ucs87
+	.4byte Ucs88
+	.4byte Ucs89
+	.4byte Ucs8A
+	.4byte Ucs8B
+	.4byte Ucs8C
+	.4byte Ucs8D
+	.4byte Ucs8E
+	.4byte Ucs8F
+	.4byte Ucs90
+	.4byte Ucs91
+	.4byte Ucs92
+	.4byte Ucs93
+	.4byte Ucs94
+	.4byte Ucs95
+	.4byte Ucs96
+	.4byte Ucs97
+	.4byte Ucs98
+	.4byte Ucs99
+	.4byte Ucs9A
+	.4byte Ucs9B
+	.4byte Ucs9C
+	.4byte Ucs9D
+	.4byte Ucs9E
+	.4byte Ucs9F
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -12555,4 +12555,4 @@ lbl_8042F440:
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte lbl_8042F240
+	.4byte UcsFF

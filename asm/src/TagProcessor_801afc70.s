@@ -1,8 +1,8 @@
 .include "macros.inc"
 
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
-.global lbl_801AFC70
-lbl_801AFC70:
+.global "Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext<w>"
+"Process__Q23lyt12TagProcessorFUsPQ34nw4r2ut15PrintContext<w>":
 /* 801AFC70 001ABAB0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801AFC74 001ABAB4  7C 08 02 A6 */	mflr r0
 /* 801AFC78 001ABAB8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -16,7 +16,7 @@ lbl_801AFC70:
 /* 801AFC98 001ABAD8  38 A1 00 08 */	addi r5, r1, 0x8
 /* 801AFC9C 001ABADC  7C A6 2B 78 */	mr r6, r5
 /* 801AFCA0 001ABAE0  38 E1 00 0C */	addi r7, r1, 0xc
-/* 801AFCA4 001ABAE4  48 00 02 F5 */	bl lbl_801AFF98
+/* 801AFCA4 001ABAE4  48 00 02 F5 */	bl ParseStartTag__Q23lyt7TagUtilFPCwRUsRUsRUsRPUc
 /* 801AFCA8 001ABAE8  A0 01 00 0A */	lhz r0, 0xa(r1)
 /* 801AFCAC 001ABAEC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801AFCB0 001ABAF0  40 82 00 24 */	bne lbl_801AFCD4
@@ -46,8 +46,8 @@ lbl_801AFCF0:
 /* 801AFD00 001ABB40  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AFD04 001ABB44  4E 80 00 20 */	blr
 
-.global lbl_801AFD08
-lbl_801AFD08:
+.global "CalcRect__Q23lyt12TagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>"
+"CalcRect__Q23lyt12TagProcessorFPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>":
 /* 801AFD08 001ABB48  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801AFD0C 001ABB4C  7C 08 02 A6 */	mflr r0
 /* 801AFD10 001ABB50  90 01 00 24 */	stw r0, 0x24(r1)
@@ -62,7 +62,7 @@ lbl_801AFD08:
 /* 801AFD34 001ABB74  38 A1 00 08 */	addi r5, r1, 0x8
 /* 801AFD38 001ABB78  7C A6 2B 78 */	mr r6, r5
 /* 801AFD3C 001ABB7C  38 E1 00 0C */	addi r7, r1, 0xc
-/* 801AFD40 001ABB80  48 00 02 59 */	bl lbl_801AFF98
+/* 801AFD40 001ABB80  48 00 02 59 */	bl ParseStartTag__Q23lyt7TagUtilFPCwRUsRUsRUsRPUc
 /* 801AFD44 001ABB84  A0 01 00 0A */	lhz r0, 0xa(r1)
 /* 801AFD48 001ABB88  2C 00 00 00 */	cmpwi r0, 0x0
 /* 801AFD4C 001ABB8C  40 82 00 28 */	bne lbl_801AFD74
@@ -93,15 +93,15 @@ lbl_801AFD94:
 /* 801AFDA0 001ABBE0  7C 08 03 A6 */	mtlr r0
 /* 801AFDA4 001ABBE4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AFDA8 001ABBE8  4E 80 00 20 */	blr
-.global lbl_801AFDAC
-lbl_801AFDAC:
+.global setDefaultFontSize__Q23lyt12TagProcessorFRCQ34nw4r3lyt4Size
+setDefaultFontSize__Q23lyt12TagProcessorFRCQ34nw4r3lyt4Size:
 /* 801AFDAC 001ABBEC  C0 04 00 00 */	lfs f0, 0x0(r4)
 /* 801AFDB0 001ABBF0  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 801AFDB4 001ABBF4  C0 04 00 04 */	lfs f0, 0x4(r4)
 /* 801AFDB8 001ABBF8  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 801AFDBC 001ABBFC  4E 80 00 20 */	blr
-.global lbl_801AFDC0
-lbl_801AFDC0:
+.global setDefaultColor__Q23lyt12TagProcessorFRCQ34nw4r2ut5Color
+setDefaultColor__Q23lyt12TagProcessorFRCQ34nw4r2ut5Color:
 /* 801AFDC0 001ABC00  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 801AFDC4 001ABC04  98 03 00 10 */	stb r0, 0x10(r3)
 /* 801AFDC8 001ABC08  88 04 00 01 */	lbz r0, 0x1(r4)
@@ -111,11 +111,11 @@ lbl_801AFDC0:
 /* 801AFDD8 001ABC18  88 04 00 03 */	lbz r0, 0x3(r4)
 /* 801AFDDC 001ABC1C  98 03 00 13 */	stb r0, 0x13(r3)
 /* 801AFDE0 001ABC20  4E 80 00 20 */	blr
-.global lbl_801AFDE4
-lbl_801AFDE4:
+.global updatePrivateCharAnim__Q23lyt12TagProcessorFv
+updatePrivateCharAnim__Q23lyt12TagProcessorFv:
 /* 801AFDE4 001ABC24  38 63 00 14 */	addi r3, r3, 0x14
-/* 801AFDE8 001ABC28  48 00 13 68 */	b lbl_801B1150
-.global lbl_801AFDEC
-lbl_801AFDEC:
+/* 801AFDE8 001ABC28  48 00 13 68 */	b updatePrivateCharAnim__Q23lyt16UserTagProcessorFv
+.global setUseButtonPushedChar__Q23lyt12TagProcessorFb
+setUseButtonPushedChar__Q23lyt12TagProcessorFb:
 /* 801AFDEC 001ABC2C  38 63 00 14 */	addi r3, r3, 0x14
-/* 801AFDF0 001ABC30  48 00 13 E0 */	b lbl_801B11D0
+/* 801AFDF0 001ABC30  48 00 13 E0 */	b setUsePrivateCharButtonPushed__Q23lyt16UserTagProcessorFb

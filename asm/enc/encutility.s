@@ -191,3 +191,41 @@ lbl_8004D974:
 /* 8004D984 000497C4  7C 08 03 A6 */	mtlr r0
 /* 8004D988 000497C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D98C 000497CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@669"
+"@669":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20454E43
+	.4byte 0x20097265
+	.4byte 0x6C656173
+	.4byte 0x65206275
+	.4byte 0x696C643A
+	.4byte 0x20417567
+	.4byte 0x20323320
+	.4byte 0x32303130
+	.4byte 0x2031373A
+	.4byte 0x33343A30
+	.4byte 0x37202830
+	.4byte 0x78343330
+	.4byte 0x325F3134
+	.4byte 0x3529203E
+	.4byte 0x3E000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __ENCVersion
+__ENCVersion:
+
+	.4byte "@669"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global encRegistered
+encRegistered:
+	.skip 0x8

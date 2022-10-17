@@ -857,3 +857,27 @@ lbl_800FE888:
 /* 800FE894 000FA6D4  7C 08 03 A6 */	mtlr r0
 /* 800FE898 000FA6D8  38 21 00 30 */	addi r1, r1, 0x30
 /* 800FE89C 000FA6DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc@texCoords"
+"@LOCAL@SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc@texCoords":
+	.skip 0x20
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc@texCoords"
+"@GUARD@SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc@texCoords":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@8721"
+"@8721":
+
+	.4byte 0
+
+.global "@8722"
+"@8722":
+
+	.4byte 0x3F800000

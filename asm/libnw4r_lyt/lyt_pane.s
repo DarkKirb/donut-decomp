@@ -1213,3 +1213,89 @@ GetRuntimeTypeInfo__Q34nw4r3lyt4PaneCFv:
 /* 800F3AE4 000EF924  90 0D EB 80 */	stw r0, typeInfo__Q34nw4r3lyt4Pane@sda21(r13)
 /* 800F3AE8 000EF928  4E 80 00 20 */	blr
 /* 800F3AEC 000EF92C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1lyt_pane_cpp_800F3AE0"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@10224"
+"@10224":
+
+	.4byte 0x526F6F74
+	.4byte 0x50616E65
+	.4byte 0
+
+.global __vt__Q34nw4r3lyt4Pane
+__vt__Q34nw4r3lyt4Pane:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34nw4r3lyt4PaneFv
+	.4byte GetRuntimeTypeInfo__Q34nw4r3lyt4PaneCFv
+	.4byte CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte DrawSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Animate__Q34nw4r3lyt4PaneFUl
+	.4byte AnimateSelf__Q34nw4r3lyt4PaneFUl
+	.4byte GetVtxColor__Q34nw4r3lyt4PaneCFUl
+	.4byte SetVtxColor__Q34nw4r3lyt4PaneFUlQ34nw4r2ut5Color
+	.4byte GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.4byte SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.4byte GetVtxColorElement__Q34nw4r3lyt4PaneCFUl
+	.4byte SetVtxColorElement__Q34nw4r3lyt4PaneFUlUc
+	.4byte FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte FindMaterialByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.4byte UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.4byte UnbindAnimationSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.4byte GetMaterialNum__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFUl
+	.4byte LoadMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global typeInfo__Q34nw4r3lyt4Pane
+typeInfo__Q34nw4r3lyt4Pane:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@9820"
+"@9820":
+
+	.4byte 0
+
+.global "@9821"
+"@9821":
+
+	.4byte 0x3F800000
+
+.global "@10109"
+"@10109":
+
+	.4byte 0x3F000000
+
+.global "@10419"
+"@10419":
+
+	.4byte 0x3C8EFA35
+
+.global "@10420"
+"@10420":
+
+	.4byte 0x3B808081
+	.4byte 0
+
+.global "@10424"
+"@10424":
+
+	.4byte 0x43300000
+	.4byte 0

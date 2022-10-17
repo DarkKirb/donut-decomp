@@ -137,3 +137,17 @@ lbl_800FC1C4:
 /* 800FC1D4 000F8014  7C 08 03 A6 */	mtlr r0
 /* 800FC1D8 000F8018  38 21 00 20 */	addi r1, r1, 0x20
 /* 800FC1DC 000F801C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@7564"
+"@7564":
+
+	.4byte 0x3B800000
+	.4byte 0
+
+.global "@7568"
+"@7568":
+
+	.4byte 0x43300000
+	.4byte 0

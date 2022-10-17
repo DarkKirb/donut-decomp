@@ -42,3 +42,25 @@ __dt__Q34nw4r3lyt8DrawInfoFv:
 /* 800FC264 000F80A4  00 00 00 00 */	.4byte 0x00000000
 /* 800FC268 000F80A8  00 00 00 00 */	.4byte 0x00000000
 /* 800FC26C 000F80AC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q34nw4r3lyt8DrawInfo
+__vt__Q34nw4r3lyt8DrawInfo:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@5034_8055F1A8"
+"@5034_8055F1A8":
+
+	.4byte 0
+
+.global "@5035_8055F1AC"
+"@5035_8055F1AC":
+
+	.4byte 0x3F800000

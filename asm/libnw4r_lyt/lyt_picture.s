@@ -416,3 +416,57 @@ GetRuntimeTypeInfo__Q34nw4r3lyt7PictureCFv:
 /* 800F5334 000F1174  90 0D EB 90 */	stw r0, typeInfo__Q34nw4r3lyt7Picture@sda21(r13)
 /* 800F5338 000F1178  4E 80 00 20 */	blr
 /* 800F533C 000F117C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1lyt_picture_cpp_800F5330"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q34nw4r3lyt7Picture
+__vt__Q34nw4r3lyt7Picture:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34nw4r3lyt7PictureFv
+	.4byte GetRuntimeTypeInfo__Q34nw4r3lyt7PictureCFv
+	.4byte CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte DrawSelf__Q34nw4r3lyt7PictureFRCQ34nw4r3lyt8DrawInfo
+	.4byte Animate__Q34nw4r3lyt4PaneFUl
+	.4byte AnimateSelf__Q34nw4r3lyt4PaneFUl
+	.4byte GetVtxColor__Q34nw4r3lyt7PictureCFUl
+	.4byte SetVtxColor__Q34nw4r3lyt7PictureFUlQ34nw4r2ut5Color
+	.4byte GetColorElement__Q34nw4r3lyt4PaneCFUl
+	.4byte SetColorElement__Q34nw4r3lyt4PaneFUlUc
+	.4byte GetVtxColorElement__Q34nw4r3lyt7PictureCFUl
+	.4byte SetVtxColorElement__Q34nw4r3lyt7PictureFUlUc
+	.4byte FindPaneByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte FindMaterialByName__Q34nw4r3lyt4PaneFPCcb
+	.4byte BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb
+	.4byte UnbindAllAnimation__Q34nw4r3lyt4PaneFb
+	.4byte UnbindAnimationSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform
+	.4byte FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb
+	.4byte SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb
+	.4byte GetMaterialNum__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFv
+	.4byte GetMaterial__Q34nw4r3lyt4PaneCFUl
+	.4byte LoadMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo
+	.4byte Append__Q34nw4r3lyt7PictureFRCQ34nw4r3lyt6TexMap
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global typeInfo__Q34nw4r3lyt7Picture
+typeInfo__Q34nw4r3lyt7Picture:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@8804"
+"@8804":
+
+	.4byte 0
+	.4byte 0

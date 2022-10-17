@@ -262,3 +262,13 @@ lbl_800F3E2C:
 /* 800F3E44 000EFC84  38 21 00 20 */	addi r1, r1, 0x20
 /* 800F3E48 000EFC88  4E 80 00 20 */	blr
 /* 800F3E4C 000EFC8C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q34nw4r3lyt5Group
+__vt__Q34nw4r3lyt5Group:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34nw4r3lyt5GroupFv
+	.4byte 0

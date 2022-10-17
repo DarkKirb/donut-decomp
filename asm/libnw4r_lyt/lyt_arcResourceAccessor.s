@@ -352,3 +352,27 @@ lbl_800FDD20:
 /* 800FDD34 000F9B74  38 21 00 10 */	addi r1, r1, 0x10
 /* 800FDD38 000F9B78  4E 80 00 20 */	blr
 /* 800FDD3C 000F9B7C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q34nw4r3lyt19ArcResourceAccessor
+__vt__Q34nw4r3lyt19ArcResourceAccessor:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q34nw4r3lyt19ArcResourceAccessorFv
+	.4byte GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl
+	.4byte GetFont__Q34nw4r3lyt19ArcResourceAccessorFPCc
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@3486_80556A50"
+"@3486_80556A50":
+
+	.4byte 0x2E000000
+
+.global "@3487_80556A54"
+"@3487_80556A54":
+
+	.4byte 0x2E2E0000

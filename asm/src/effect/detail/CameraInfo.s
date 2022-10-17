@@ -24,3 +24,15 @@ __ct__Q36effect6detail10CameraInfoFv:
 /* 8017F380 0017B1C0  7C 08 03 A6 */	mtlr r0
 /* 8017F384 0017B1C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017F388 0017B1C8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51288"
+"@51288":
+
+	.4byte 0
+
+.global "@51289"
+"@51289":
+
+	.4byte 0x3F800000

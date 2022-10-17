@@ -243,3 +243,11 @@ ptclNameRef__Q36effect6detail10GenContextCFv:
 polyModelPrefixRef__Q36effect6detail10GenContextCFv:
 /* 80181704 0017D544  38 63 00 06 */	addi r3, r3, 0x6
 /* 80181708 0017D548  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49006_80556CD8"
+"@49006_80556CD8":
+
+	.4byte 0x25730000
+	.4byte 0

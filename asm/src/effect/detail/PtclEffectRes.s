@@ -426,3 +426,23 @@ lbl_80186B60:
 /* 80186BC4 00182A04  7C 08 03 A6 */	mtlr r0
 /* 80186BC8 00182A08  38 21 00 90 */	addi r1, r1, 0x90
 /* 80186BCC 00182A0C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50371_804537B8"
+"@50371_804537B8":
+
+	.4byte 0x65666665
+	.4byte 0x63742F25
+	.4byte 0x732E6272
+	.4byte 0x6566662E
+	.4byte 0x636D7000
+
+.global "@50372_804537CC"
+"@50372_804537CC":
+
+	.4byte 0x65666665
+	.4byte 0x63742F25
+	.4byte 0x732E6272
+	.4byte 0x6566742E
+	.4byte 0x636D7000

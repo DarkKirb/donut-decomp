@@ -89,3 +89,13 @@ request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo:
 /* 801813C8 0017D208  88 08 00 20 */	lbz r0, 0x20(r8)
 /* 801813CC 0017D20C  7C 08 07 74 */	extsb r8, r0
 /* 801813D0 0017D210  4B FF F6 E8 */	b autoRequest__Q36effect6detail13EffectManagerFRCQ23g3d18AutoReqAnimReqInfoRCQ23g3d13ModelAccessorPQ26effect9RequestorPQ26effect5GroupSc
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q36effect6detail22G3DAutoReqAnimCallback
+__vt__Q36effect6detail22G3DAutoReqAnimCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q36effect6detail22G3DAutoReqAnimCallbackFv
+	.4byte request__Q36effect6detail22G3DAutoReqAnimCallbackFRCQ23g3d18AutoReqAnimReqInfo

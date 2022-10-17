@@ -665,29 +665,30 @@ $(BUILD_DIR)/asm/src/effect/Manager.o \
 $(BUILD_DIR)/asm/src/effect/Requestor.o \
 $(BUILD_DIR)/asm/src/effect/StdRequestor.o \
 \
+$(BUILD_DIR)/asm/src/effect/detail/CameraInfo.o \
+$(BUILD_DIR)/asm/src/effect/detail/DrawInfo.o \
+$(BUILD_DIR)/asm/src/effect/detail/Effect.o \
+$(BUILD_DIR)/asm/src/effect/detail/EffectComponent.o \
+$(BUILD_DIR)/asm/src/effect/detail/EffectManager.o \
+$(BUILD_DIR)/asm/src/effect/detail/EffectObjListUtil.o \
+$(BUILD_DIR)/asm/src/effect/detail/G3DAutoReqAnimCallback.o \
+$(BUILD_DIR)/asm/src/effect/detail/GenContext.o \
+$(BUILD_DIR)/asm/src/effect/detail/GenContextTable.o \
+$(BUILD_DIR)/asm/src/effect/detail/ManagerContext.o \
+$(BUILD_DIR)/asm/src/effect/detail/PolyEffect.o \
+$(BUILD_DIR)/asm/src/effect/detail/PolyEffectAllocator.o \
+$(BUILD_DIR)/asm/src/effect/detail/PolyEffectManager.o \
+$(BUILD_DIR)/asm/src/effect/detail/PolyEffectMemManager.o \
+$(BUILD_DIR)/asm/src/effect/detail/PolyEffectRes.o \
+$(BUILD_DIR)/asm/src/effect/detail/PtclEffect.o \
+$(BUILD_DIR)/asm/src/effect/detail/PtclEffectManager.o \
+$(BUILD_DIR)/asm/src/effect/detail/PtclEffectMemManager.o \
+$(BUILD_DIR)/asm/src/effect/detail/PtclEffectRes.o \
+$(BUILD_DIR)/asm/src/effect/detail/RequestArg.o \
+$(BUILD_DIR)/asm/src/effect/detail/RequestArgOption.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/CameraInfo_8017f338.o \
-$(BUILD_DIR)/asm/src/DrawInfo_8017f38c.o \
-$(BUILD_DIR)/asm/src/Effect_8017f550.o \
-$(BUILD_DIR)/asm/src/EffectComponent_80180410.o \
-$(BUILD_DIR)/asm/src/EffectManager_80180420.o \
-$(BUILD_DIR)/asm/src/EffectObjListUtil_80180ff8.o \
-$(BUILD_DIR)/asm/src/G3DAutoReqAnimCallback_801812b0.o \
-$(BUILD_DIR)/asm/src/GenContext_801813d4.o \
-$(BUILD_DIR)/asm/src/GenContextTable_8018170c.o \
-$(BUILD_DIR)/asm/src/ManagerContext_80181ba0.o \
-$(BUILD_DIR)/asm/src/PolyEffect_80181c08.o \
-$(BUILD_DIR)/asm/src/PolyEffectAllocator_80182eec.o \
-$(BUILD_DIR)/asm/src/PolyEffectManager_80182f6c.o \
-$(BUILD_DIR)/asm/src/PolyEffectMemManager_801834e0.o \
-$(BUILD_DIR)/asm/src/PolyEffectRes_80183a10.o \
-$(BUILD_DIR)/asm/src/PtclEffect_80183ccc.o \
-$(BUILD_DIR)/asm/src/PtclEffectManager_801848bc.o \
-$(BUILD_DIR)/asm/src/PtclEffectMemManager_80185694.o \
-$(BUILD_DIR)/asm/src/PtclEffectRes_8018661c.o \
-$(BUILD_DIR)/asm/src/RequestArg_80186bd0.o \
-$(BUILD_DIR)/asm/src/RequestArgOption_80186dc8.o \
 $(BUILD_DIR)/asm/src/FDGAccessor_801870ec.o \
 $(BUILD_DIR)/asm/src/DNOption_80187538.o \
 $(BUILD_DIR)/asm/src/FDGManager_80187544.o \
@@ -3145,14 +3146,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Effect_804532f0.o \
-$(BUILD_DIR)/asm/src/EffectManager_80453350.o \
-$(BUILD_DIR)/asm/src/G3DAutoReqAnimCallback_804533e0.o \
-$(BUILD_DIR)/asm/src/GenContextTable_804533f0.o \
-$(BUILD_DIR)/asm/src/PolyEffectMemManager_80453408.o \
-$(BUILD_DIR)/asm/src/PtclEffectManager_80453420.o \
-$(BUILD_DIR)/asm/src/PtclEffectMemManager_804535e8.o \
-$(BUILD_DIR)/asm/src/PtclEffectRes_804537b8.o \
 $(BUILD_DIR)/asm/src/FDGManager_804537e0.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_804537f0.o \
 $(BUILD_DIR)/asm/src/Console_804538a0.o \
@@ -4782,8 +4775,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/GenContext_80556cd8.o \
-$(BUILD_DIR)/asm/src/PolyEffect_80556ce0.o \
 $(BUILD_DIR)/asm/src/FDGManager_80556d10.o \
 $(BUILD_DIR)/asm/src/FileLoader_80556d18.o \
 $(BUILD_DIR)/asm/src/Utility_80556d20.o \
@@ -5147,9 +5138,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/EffectManager_8055d168.o \
-$(BUILD_DIR)/asm/src/PtclEffectManager_8055d170.o \
-$(BUILD_DIR)/asm/src/PtclEffectMemManager_8055d178.o \
 $(BUILD_DIR)/asm/src/Utility_8055d180.o \
 $(BUILD_DIR)/asm/src/Exception_8055d188.o \
 $(BUILD_DIR)/asm/src/FreezeManager_8055d190.o \
@@ -5283,10 +5271,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/CameraInfo_8055f630.o \
-$(BUILD_DIR)/asm/src/DrawInfo_8055f638.o \
-$(BUILD_DIR)/asm/src/PolyEffect_8055f640.o \
-$(BUILD_DIR)/asm/src/RequestArgOption_8055f648.o \
 $(BUILD_DIR)/asm/src/FDGManager_8055f650.o \
 $(BUILD_DIR)/asm/src/Exception_8055f658.o \
 $(BUILD_DIR)/asm/src/AutoReqAnim_8055f660.o \

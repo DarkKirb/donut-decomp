@@ -226,3 +226,15 @@ node__Q36effect6detail16RequestArgOptionCFv:
 /* 801870E0 00182F20  7C 08 03 A6 */	mtlr r0
 /* 801870E4 00182F24  38 21 00 20 */	addi r1, r1, 0x20
 /* 801870E8 00182F28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global DEFAULT_SCALE__Q36effect6detail16RequestArgOption
+DEFAULT_SCALE__Q36effect6detail16RequestArgOption:
+
+	.4byte 0x3F800000
+
+.global "@52276_8055F64C"
+"@52276_8055F64C":
+
+	.4byte 0x3F800000

@@ -401,3 +401,15 @@ free__Q46effect6detail20PolyEffectMemManager8OneBlockFv:
 /* 80183A04 0017F844  38 00 00 00 */	li r0, 0x0
 /* 80183A08 0017F848  98 03 00 58 */	stb r0, 0x58(r3)
 /* 80183A0C 0017F84C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49795"
+"@49795":
+
+	.4byte 0x506F6C79
+	.4byte 0x45666665
+	.4byte 0x63744D65
+	.4byte 0x6D426C6F
+	.4byte 0x636B0000
+	.4byte 0

@@ -220,11 +220,12 @@ $(BUILD_DIR)/asm/nand/NANDCheck.o \
 $(BUILD_DIR)/asm/nand/NANDLogging.o \
 $(BUILD_DIR)/asm/nand/NANDErrorMessage.o \
 \
+$(BUILD_DIR)/asm/sc/scsystem.o \
+$(BUILD_DIR)/asm/sc/scapi.o \
+$(BUILD_DIR)/asm/sc/scapi_prdinfo.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/sc/scsystem_8004b430.o \
-$(BUILD_DIR)/asm/sc/scapi_8004cce0.o \
-$(BUILD_DIR)/asm/sc/scapi_prdinfo_8004d1f0.o \
 $(BUILD_DIR)/asm/wenc/wenc_8004d474.o \
 $(BUILD_DIR)/asm/enc/encutility_8004d750.o \
 $(BUILD_DIR)/asm/enc/encunicode_8004d990.o \
@@ -3000,7 +3001,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/sc/scsystem_80407c50.o \
 $(BUILD_DIR)/asm/wenc/wenc_80407ca8.o \
 $(BUILD_DIR)/asm/wpad/WPAD_80407ce8.o \
 $(BUILD_DIR)/asm/wpad/WPADHIDParser_80407db8.o \
@@ -3227,8 +3227,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/sc/scsystem_804381f8.o \
-$(BUILD_DIR)/asm/sc/scapi_prdinfo_804383f0.o \
 $(BUILD_DIR)/asm/enc/encutility_80438450.o \
 $(BUILD_DIR)/asm/arc/arc_80438498.o \
 $(BUILD_DIR)/asm/fs/fs_80438508.o \
@@ -5016,7 +5014,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/sc/scsystem_804b5b80.o \
 $(BUILD_DIR)/asm/ipc/ipcclt_804bdd20.o \
 $(BUILD_DIR)/asm/ipc/memory_804bde60.o \
 $(BUILD_DIR)/asm/ipc/ipcProfile_804bdee0.o \
@@ -5145,8 +5142,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/sc/scsystem_80556678.o \
-$(BUILD_DIR)/asm/sc/scapi_prdinfo_80556788.o \
 $(BUILD_DIR)/asm/enc/encutility_80556798.o \
 $(BUILD_DIR)/asm/arc/arc_805567a0.o \
 $(BUILD_DIR)/asm/ipc/ipcclt_805567a8.o \
@@ -5577,7 +5572,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/sc/scsystem_8055ccf8.o \
 $(BUILD_DIR)/asm/enc/encutility_8055cd10.o \
 $(BUILD_DIR)/asm/ipc/ipcMain_8055cd18.o \
 $(BUILD_DIR)/asm/ipc/ipcclt_8055cd30.o \

@@ -253,9 +253,10 @@ $(BUILD_DIR)/asm/kpad/KPAD.o \
 $(BUILD_DIR)/asm/kpad/KMPLS.o \
 $(BUILD_DIR)/asm/kpad/KZMplsTestSub.o \
 \
+$(BUILD_DIR)/asm/euart/euart.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/euart/euart_80072ed0.o \
 $(BUILD_DIR)/asm/usb/usb_80073250.o \
 $(BUILD_DIR)/asm/bte/gki_buffer_80074790.o \
 $(BUILD_DIR)/asm/bte/gki_time_80075c30.o \
@@ -5549,7 +5550,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/euart/euart_8055cec0.o \
 $(BUILD_DIR)/asm/usb/usb_8055ced0.o \
 $(BUILD_DIR)/asm/bte/uusb_ppc_8055cee0.o \
 $(BUILD_DIR)/asm/bte/bte_hcisu_8055cef8.o \

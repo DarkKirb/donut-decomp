@@ -281,3 +281,21 @@ lbl_80073238:
 /* 80073244 0006F084  7C 08 03 A6 */	mtlr r0
 /* 80073248 0006F088  38 21 00 30 */	addi r1, r1, 0x30
 /* 8007324C 0006F08C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __EUARTInitialized
+__EUARTInitialized:
+	.skip 0x4
+
+.global __EUARTLastErrorCode
+__EUARTLastErrorCode:
+	.skip 0x4
+
+.global __EUARTSendStop
+__EUARTSendStop:
+	.skip 0x4
+
+.global Enabled_8055CECC
+Enabled_8055CECC:
+	.skip 0x4

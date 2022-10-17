@@ -707,3 +707,69 @@ GXResetOverflowCount:
 /* 80033794 0002F5D4  38 00 00 00 */	li r0, 0x0
 /* 80033798 0002F5D8  90 0D E5 DC */	stw r0, __GXOverflowCount@sda21(r13)
 /* 8003379C 0002F5DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1961"
+"@1961":
+
+	.4byte 0x43505546
+	.4byte 0x69666F3A
+	.4byte 0x20253038
+	.4byte 0x58202D20
+	.4byte 0x25303858
+	.4byte 0x0A000000
+
+.global "@1962"
+"@1962":
+
+	.4byte 0x47502046
+	.4byte 0x69666F3A
+	.4byte 0x20253038
+	.4byte 0x58202D20
+	.4byte 0x25303858
+	.4byte 0x0A000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global GPFifo
+GPFifo:
+	.skip 0x24
+
+.global CPUFifo
+CPUFifo:
+	.skip 0x5C
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global CPUFifoReady
+CPUFifoReady:
+	.skip 0x1
+
+.global GPFifoReady
+GPFifoReady:
+	.skip 0x3
+
+.global __GXOverflowCount
+__GXOverflowCount:
+	.skip 0x4
+
+.global __GXCurrentBP
+__GXCurrentBP:
+	.skip 0x4
+
+.global BreakPointCB
+BreakPointCB:
+	.skip 0x4
+
+.global GXOverflowSuspendInProgress
+GXOverflowSuspendInProgress:
+	.skip 0x4
+
+.global __GXCurrentThread
+__GXCurrentThread:
+	.skip 0x4
+
+.global CPGPLinked
+CPGPLinked:
+	.skip 0x8

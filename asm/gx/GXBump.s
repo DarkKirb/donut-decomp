@@ -321,3 +321,11 @@ __GXFlushTextureState:
 /* 80037BB4 000339F4  00 00 00 00 */	.4byte 0x00000000
 /* 80037BB8 000339F8  00 00 00 00 */	.4byte 0x00000000
 /* 80037BBC 000339FC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@2555_8055E628"
+"@2555_8055E628":
+
+	.4byte 0x44800000
+	.4byte 0

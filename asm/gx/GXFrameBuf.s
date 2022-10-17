@@ -607,3 +607,89 @@ GXClearBoundingBox:
 /* 80035E44 00031C84  4E 80 00 20 */	blr
 /* 80035E48 00031C88  00 00 00 00 */	.4byte 0x00000000
 /* 80035E4C 00031C8C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global GXNtsc480IntDf
+GXNtsc480IntDf:
+
+	.4byte 0
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
+.global GXMpal480IntDf
+GXMpal480IntDf:
+
+	.4byte 0x00000008
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
+.global GXPal528IntDf
+GXPal528IntDf:
+
+	.4byte 0x00000004
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
+.global GXEurgb60Hz480IntDf
+GXEurgb60Hz480IntDf:
+
+	.4byte 0x00000014
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@2195"
+"@2195":
+
+	.4byte 0x43800000
+	.4byte 0

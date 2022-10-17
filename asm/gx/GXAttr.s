@@ -1395,3 +1395,171 @@ GXSetNumTexGens:
 /* 80034704 00030544  00 00 00 00 */	.4byte 0x00000000
 /* 80034708 00030548  00 00 00 00 */	.4byte 0x00000000
 /* 8003470C 0003054C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@3194_80430A70"
+"@3194_80430A70":
+
+	.4byte lbl_800337C0
+	.4byte lbl_800337D4
+	.4byte lbl_800337E8
+	.4byte lbl_800337FC
+	.4byte lbl_80033810
+	.4byte lbl_80033824
+	.4byte lbl_80033838
+	.4byte lbl_8003384C
+	.4byte lbl_80033860
+	.4byte lbl_80033874
+	.4byte lbl_80033888
+	.4byte lbl_800338F0
+	.4byte lbl_80033904
+	.4byte lbl_80033918
+	.4byte lbl_8003392C
+	.4byte lbl_80033940
+	.4byte lbl_80033954
+	.4byte lbl_80033968
+	.4byte lbl_8003397C
+	.4byte lbl_80033990
+	.4byte lbl_800339A4
+	.4byte lbl_800339B4
+	.4byte lbl_800339B4
+	.4byte lbl_800339B4
+	.4byte lbl_800339B4
+	.4byte lbl_800338BC
+
+.global "@3337"
+"@3337":
+
+	.4byte lbl_80033C10
+	.4byte lbl_80033C20
+	.4byte lbl_80033C30
+	.4byte lbl_80033C40
+	.4byte lbl_80033C50
+	.4byte lbl_80033C60
+	.4byte lbl_80033C70
+	.4byte lbl_80033C80
+	.4byte lbl_80033C90
+	.4byte lbl_80033CA0
+	.4byte lbl_80033CB0
+	.4byte lbl_80033CF8
+	.4byte lbl_80033D08
+	.4byte lbl_80033D18
+	.4byte lbl_80033D28
+	.4byte lbl_80033D38
+	.4byte lbl_80033D48
+	.4byte lbl_80033D58
+	.4byte lbl_80033D68
+	.4byte lbl_80033D78
+	.4byte lbl_80033D88
+	.4byte lbl_80033D98
+	.4byte lbl_80033D98
+	.4byte lbl_80033D98
+	.4byte lbl_80033D98
+	.4byte lbl_80033CD4
+
+.global "@3383_80430B40"
+"@3383_80430B40":
+
+	.4byte lbl_80033E20
+	.4byte lbl_80033E38
+	.4byte lbl_80033E74
+	.4byte lbl_80033E88
+	.4byte lbl_80033E9C
+	.4byte lbl_80033EB4
+	.4byte lbl_80033ECC
+	.4byte lbl_80033EE4
+	.4byte lbl_80033EFC
+	.4byte lbl_80033F1C
+	.4byte lbl_80033F34
+	.4byte lbl_80033F4C
+	.4byte lbl_80033F60
+	.4byte lbl_80033F60
+	.4byte lbl_80033F60
+	.4byte lbl_80033F60
+	.4byte lbl_80033E38
+
+.global "@3413"
+"@3413":
+
+	.4byte lbl_80033FD8
+	.4byte lbl_80033FF0
+	.4byte lbl_8003402C
+	.4byte lbl_80034040
+	.4byte lbl_80034054
+	.4byte lbl_8003406C
+	.4byte lbl_80034084
+	.4byte lbl_8003409C
+	.4byte lbl_800340B4
+	.4byte lbl_800340D4
+	.4byte lbl_800340EC
+	.4byte lbl_80034104
+	.4byte lbl_80034118
+	.4byte lbl_80034118
+	.4byte lbl_80034118
+	.4byte lbl_80034118
+	.4byte lbl_80033FF0
+
+.global "@3456"
+"@3456":
+
+	.4byte lbl_80034210
+	.4byte lbl_80034238
+	.4byte lbl_8003429C
+	.4byte lbl_800342C0
+	.4byte lbl_800342E4
+	.4byte lbl_8003430C
+	.4byte lbl_80034334
+	.4byte lbl_8003435C
+	.4byte lbl_80034384
+	.4byte lbl_800343AC
+	.4byte lbl_800343D4
+	.4byte lbl_800343FC
+	.4byte lbl_80034424
+	.4byte lbl_80034424
+	.4byte lbl_80034424
+	.4byte lbl_80034424
+	.4byte lbl_80034238
+
+.global "@3589"
+"@3589":
+
+	.4byte lbl_800344BC
+	.4byte lbl_800344C8
+	.4byte lbl_800344D4
+	.4byte lbl_800344E0
+	.4byte lbl_800344FC
+	.4byte lbl_80034504
+	.4byte lbl_8003450C
+	.4byte lbl_80034514
+	.4byte lbl_8003451C
+	.4byte lbl_80034524
+	.4byte lbl_8003452C
+	.4byte lbl_80034534
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_80034538
+	.4byte lbl_800344EC
+	.4byte lbl_800344F4
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@LOCAL@__GXCalculateVLim__Fv@tbl1"
+"@LOCAL@__GXCalculateVLim__Fv@tbl1":
+
+	.4byte 0x00040102
+
+.global "@LOCAL@__GXCalculateVLim__Fv@tbl2@0"
+"@LOCAL@__GXCalculateVLim__Fv@tbl2@0":
+
+	.4byte 0x00080102
+
+.global "@LOCAL@__GXCalculateVLim__Fv@tbl3@1"
+"@LOCAL@__GXCalculateVLim__Fv@tbl3@1":
+
+	.4byte 0x000C0102
+	.4byte 0

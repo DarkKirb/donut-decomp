@@ -1204,3 +1204,261 @@ lbl_80032CA8:
 /* 80032DA4 0002EBE4  7C 08 03 A6 */	mtlr r0
 /* 80032DA8 0002EBE8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 80032DAC 0002EBEC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_80430800"
+"@1_80430800":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20475820
+	.4byte 0x0972656C
+	.4byte 0x65617365
+	.4byte 0x20627569
+	.4byte 0x6C643A20
+	.4byte 0x41756720
+	.4byte 0x32332032
+	.4byte 0x30313020
+	.4byte 0x31373A33
+	.4byte 0x323A3530
+	.4byte 0x20283078
+	.4byte 0x34333032
+	.4byte 0x5F313435
+	.4byte 0x29203E3E
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000009
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000A
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000B
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0x0000000D
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000E
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x0000000F
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000011
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000012
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000013
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000014
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0x3F800000
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0xC0000000
+	.4byte 0
+	.4byte 0
+
+.global GXTexRegionAddrTable
+GXTexRegionAddrTable:
+
+	.4byte 0
+	.4byte 0x00010000
+	.4byte 0x00020000
+	.4byte 0x00030000
+	.4byte 0x00040000
+	.4byte 0x00050000
+	.4byte 0x00060000
+	.4byte 0x00070000
+	.4byte 0x00008000
+	.4byte 0x00018000
+	.4byte 0x00028000
+	.4byte 0x00038000
+	.4byte 0x00048000
+	.4byte 0x00058000
+	.4byte 0x00068000
+	.4byte 0x00078000
+	.4byte 0
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00098000
+	.4byte 0x00060000
+	.4byte 0x000B8000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00088000
+	.4byte 0x00050000
+	.4byte 0x000A8000
+	.4byte 0x00070000
+	.4byte 0
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00090000
+	.4byte 0x00060000
+	.4byte 0x000B0000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00080000
+	.4byte 0x00050000
+	.4byte 0x000A0000
+	.4byte 0x00070000
+
+.global GXShutdownFuncInfo
+GXShutdownFuncInfo:
+
+	.4byte __GXShutdown
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global FifoObj
+FifoObj:
+	.skip 0x80
+
+.global gxData
+gxData:
+	.skip 0x600
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __GXVersion
+__GXVersion:
+
+	.4byte "@1_80430800"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __piReg
+__piReg:
+	.skip 0x4
+
+.global __cpReg
+__cpReg:
+	.skip 0x4
+
+.global __peReg
+__peReg:
+	.skip 0x4
+
+.global __memReg
+__memReg:
+	.skip 0x4
+
+.global "@LOCAL@__GXShutdown__FiUl@peCount"
+"@LOCAL@__GXShutdown__FiUl@peCount":
+	.skip 0x8
+
+.global "@LOCAL@__GXShutdown__FiUl@time@0"
+"@LOCAL@__GXShutdown__FiUl@time@0":
+	.skip 0x4
+
+.global lbl_8055C9EC
+lbl_8055C9EC:
+	.skip 0x4
+
+.global "@LOCAL@__GXShutdown__FiUl@calledOnce@1"
+"@LOCAL@__GXShutdown__FiUl@calledOnce@1":
+	.skip 0x4
+
+.global "@LOCAL@GXInit__FPvUl@shutdownFuncRegistered"
+"@LOCAL@GXInit__FPvUl@shutdownFuncRegistered":
+	.skip 0x4
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global __GXData
+__GXData:
+
+	.4byte gxData
+
+.global "@2712"
+"@2712":
+
+	.4byte 0x4B800000
+
+.global "@2713"
+"@2713":
+
+	.4byte 0
+
+.global "@2366"
+"@2366":
+
+	.4byte 0x404040FF
+
+.global "@2370"
+"@2370":
+
+	.4byte 0xFFFFFFFF
+
+.global "@2746_8055E59C"
+"@2746_8055E59C":
+
+	.4byte 0x3F800000
+
+.global "@2747_8055E5A0"
+"@2747_8055E5A0":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0
+
+.global "@2750_8055E5A8"
+"@2750_8055E5A8":
+
+	.4byte 0x43300000
+	.4byte 0

@@ -1347,3 +1347,271 @@ lbl_80037760:
 /* 80037764 000335A4  83 C1 00 08 */	lwz r30, 0x8(r1)
 /* 80037768 000335A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003776C 000335AC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@2689_80430D50"
+"@2689_80430D50":
+
+	.4byte lbl_800365E0
+	.4byte lbl_800365EC
+	.4byte lbl_800365EC
+	.4byte lbl_800365F8
+	.4byte lbl_800365F8
+	.4byte lbl_800365F8
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_800365E0
+	.4byte lbl_800365EC
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365E0
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365EC
+	.4byte lbl_80036604
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365E0
+	.4byte lbl_80036604
+	.4byte lbl_800365EC
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365EC
+	.4byte lbl_800365EC
+	.4byte lbl_800365EC
+	.4byte lbl_800365EC
+	.4byte lbl_800365F8
+	.4byte lbl_800365F8
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365E0
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_80036604
+	.4byte lbl_800365EC
+	.4byte lbl_800365EC
+	.4byte lbl_80036604
+	.4byte lbl_800365F8
+
+.global "@2732"
+"@2732":
+
+	.4byte lbl_80036710
+	.4byte lbl_8003671C
+	.4byte lbl_8003671C
+	.4byte lbl_80036728
+	.4byte lbl_80036728
+	.4byte lbl_80036728
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036710
+	.4byte lbl_8003671C
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036710
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_8003671C
+	.4byte lbl_80036734
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036710
+	.4byte lbl_80036734
+	.4byte lbl_8003671C
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_8003671C
+	.4byte lbl_8003671C
+	.4byte lbl_8003671C
+	.4byte lbl_8003671C
+	.4byte lbl_80036728
+	.4byte lbl_80036728
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036710
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_80036734
+	.4byte lbl_8003671C
+	.4byte lbl_8003671C
+	.4byte lbl_80036734
+	.4byte lbl_80036728
+
+.global "@2762"
+"@2762":
+
+	.4byte lbl_800368F4
+	.4byte lbl_80036908
+	.4byte lbl_80036908
+	.4byte lbl_8003691C
+	.4byte lbl_8003691C
+	.4byte lbl_8003691C
+	.4byte lbl_80036930
+	.4byte lbl_80036958
+	.4byte lbl_800368F4
+	.4byte lbl_80036908
+	.4byte lbl_8003691C
+	.4byte lbl_80036958
+	.4byte lbl_80036958
+	.4byte lbl_80036958
+	.4byte lbl_80036944
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global GXTexMode0Ids
+GXTexMode0Ids:
+
+	.4byte 0x80818283
+	.4byte 0xA0A1A2A3
+
+.global GXTexMode1Ids
+GXTexMode1Ids:
+
+	.4byte 0x84858687
+	.4byte 0xA4A5A6A7
+
+.global GXTexImage0Ids
+GXTexImage0Ids:
+
+	.4byte 0x88898A8B
+	.4byte 0xA8A9AAAB
+
+.global GXTexImage1Ids
+GXTexImage1Ids:
+
+	.4byte 0x8C8D8E8F
+	.4byte 0xACADAEAF
+
+.global GXTexImage2Ids
+GXTexImage2Ids:
+
+	.4byte 0x90919293
+	.4byte 0xB0B1B2B3
+
+.global GXTexImage3Ids
+GXTexImage3Ids:
+
+	.4byte 0x94959697
+	.4byte 0xB4B5B6B7
+
+.global GXTexTlutIds
+GXTexTlutIds:
+
+	.4byte 0x98999A9B
+	.4byte 0xB8B9BABB
+
+.global GX2HWFiltConv
+GX2HWFiltConv:
+
+	.4byte 0x00040105
+	.4byte 0x02060000
+
+.global HW2GXFiltConv
+HW2GXFiltConv:
+
+	.4byte 0x00020400
+	.4byte 0x01030500
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@2756_8055E5F0"
+"@2756_8055E5F0":
+
+	.4byte 0x41800000
+	.4byte 0
+
+.global "@2760"
+"@2760":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@2784"
+"@2784":
+
+	.4byte 0xC0800000
+
+.global "@2785"
+"@2785":
+
+	.4byte 0x407F5C29
+
+.global "@2786_8055E608"
+"@2786_8055E608":
+
+	.4byte 0x40800000
+
+.global "@2787_8055E60C"
+"@2787_8055E60C":
+
+	.4byte 0x42000000
+
+.global "@2788_8055E610"
+"@2788_8055E610":
+
+	.4byte 0
+
+.global "@2789"
+"@2789":
+
+	.4byte 0x41200000
+
+.global "@2862"
+"@2862":
+
+	.4byte 0x3D800000
+
+.global "@2863"
+"@2863":
+
+	.4byte 0x3D000000
+
+.global "@2875"
+"@2875":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

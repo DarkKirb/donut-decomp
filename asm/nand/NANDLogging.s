@@ -461,3 +461,59 @@ lbl_8004B10C:
 /* 8004B124 00046F64  00 00 00 00 */	.4byte 0x00000000
 /* 8004B128 00046F68  00 00 00 00 */	.4byte 0x00000000
 /* 8004B12C 00046F6C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1150"
+"@1150":
+
+	.4byte 0x2F736861
+	.4byte 0x72656432
+	.4byte 0x2F746573
+	.4byte 0x74322F6E
+	.4byte 0x616E6465
+	.4byte 0x72722E6C
+	.4byte 0x6F670000
+
+.global "@1155"
+"@1155":
+
+	.4byte 0x25642025
+	.4byte 0x3034642F
+	.4byte 0x25303264
+	.4byte 0x2F253032
+	.4byte 0x64202530
+	.4byte 0x32643A25
+	.4byte 0x3032643A
+	.4byte 0x25303264
+	.4byte 0x20257320
+	.4byte 0x25730000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global s_message
+s_message:
+	.skip 0x300
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global s_fd
+s_fd:
+
+	.4byte 0xFFFFFF01
+
+.global s_err
+s_err:
+
+	.4byte 0xFFFFFF8B
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global s_callback
+s_callback:
+	.skip 0x4
+
+.global s_stage
+s_stage:
+	.skip 0x4

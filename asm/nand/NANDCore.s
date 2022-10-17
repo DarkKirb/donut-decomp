@@ -1378,3 +1378,243 @@ nandGetHomeDir:
 /* 8004A904 00046744  38 63 58 20 */	addi r3, r3, s_homeDir@l
 /* 8004A908 00046748  4E 80 00 20 */	blr
 /* 8004A90C 0004674C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@3073"
+"@3073":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0xFFFFFF9A
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFF99
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFF8E
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFF97
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFF8C
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFF9B
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFF94
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFF93
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFF95
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFF92
+	.4byte 0xFFFFFFF0
+	.4byte 0xFFFFFF96
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFF8D
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFF98
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF91
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFF8B
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF8A
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFF89
+	.4byte 0xFFFFFF80
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFF9
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF0
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEF
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEE
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFED
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEC
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEA
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFE9
+	.4byte 0xFFFFFFC0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@2807_80436380"
+"@2807_80436380":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x204E414E
+	.4byte 0x44200972
+	.4byte 0x656C6561
+	.4byte 0x73652062
+	.4byte 0x75696C64
+	.4byte 0x3A204175
+	.4byte 0x67203233
+	.4byte 0x20323031
+	.4byte 0x30203137
+	.4byte 0x3A33333A
+	.4byte 0x34362028
+	.4byte 0x30783433
+	.4byte 0x30325F31
+	.4byte 0x34352920
+	.4byte 0x3E3E0000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global s_currentDir
+s_currentDir:
+
+	.4byte 0x2F000000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte nandOnShutdown
+	.4byte 0x000000FF
+	.4byte 0
+	.4byte 0
+
+.global "@3814"
+"@3814":
+
+	.4byte 0x2F736861
+	.4byte 0x72656432
+	.4byte 0
+
+.global "@3818"
+"@3818":
+
+	.4byte 0x2F736861
+	.4byte 0x72656432
+	.4byte 0x2F000000
+	.4byte 0x49534653
+	.4byte 0x20657272
+	.4byte 0x6F722063
+	.4byte 0x6F64653A
+	.4byte 0x20256400
+	.4byte 0x43415554
+	.4byte 0x494F4E21
+	.4byte 0x2020556E
+	.4byte 0x65787065
+	.4byte 0x63746564
+	.4byte 0x20657272
+	.4byte 0x6F722063
+	.4byte 0x6F646520
+	.4byte 0x5B25645D
+	.4byte 0x20776173
+	.4byte 0x20666F75
+	.4byte 0x6E642E0A
+	.4byte 0
+	.4byte 0x49534653
+	.4byte 0x20756E65
+	.4byte 0x78706563
+	.4byte 0x74656420
+	.4byte 0x6572726F
+	.4byte 0x7220636F
+	.4byte 0x64653A20
+	.4byte 0x25640000
+	.4byte 0x4661696C
+	.4byte 0x65642074
+	.4byte 0x6F207365
+	.4byte 0x7420686F
+	.4byte 0x6D652064
+	.4byte 0x69726563
+	.4byte 0x746F7279
+	.4byte 0x2E0A0000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global s_homeDir
+s_homeDir:
+	.skip 0x60
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __NANDVersion
+__NANDVersion:
+
+	.4byte "@2807_80436380"
+
+.global "@3783"
+"@3783":
+
+	.4byte 0x2F000000
+
+.global "@3784"
+"@3784":
+
+	.4byte 0
+
+.global "@3797"
+"@3797":
+
+	.4byte 0x2E000000
+
+.global "@3798"
+"@3798":
+
+	.4byte 0x2E2E0000
+
+.global "@3799"
+"@3799":
+
+	.4byte 0x2F257300
+
+.global "@3800"
+"@3800":
+
+	.4byte 0x25732F25
+	.4byte 0x73000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global s_libState
+s_libState:
+	.skip 0x8

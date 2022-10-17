@@ -417,3 +417,79 @@ lbl_8017DDF8:
 /* 8017DDFC 00179C3C  7C 08 03 A6 */	mtlr r0
 /* 8017DE00 00179C40  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017DE04 00179C44  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@AsinRad__Q24nw4r4mathFf@0"
+"@STRING@AsinRad__Q24nw4r4mathFf@0":
+
+	.4byte 0x4173696E
+	.4byte 0x5261643A
+	.4byte 0x20496E70
+	.4byte 0x75742069
+	.4byte 0x73206F75
+	.4byte 0x74206F66
+	.4byte 0x20746865
+	.4byte 0x20646F6D
+	.4byte 0x61696E2E
+	.4byte 0
+
+.global "@STRING@AsinRad__Q24nw4r4mathFf"
+"@STRING@AsinRad__Q24nw4r4mathFf":
+
+	.4byte 0x74726961
+	.4byte 0x6E67756C
+	.4byte 0x61722E68
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51710_8055F608"
+"@51710_8055F608":
+
+	.4byte 0x3727C5AC
+
+.global "@51731_8055F60C"
+"@51731_8055F60C":
+
+	.4byte 0
+
+.global "@51760_8055F610"
+"@51760_8055F610":
+
+	.4byte 0x3F800000
+
+.global "@51761"
+"@51761":
+
+	.4byte 0xBF800000
+
+.global "@51762"
+"@51762":
+
+	.4byte 0x40490FDB
+
+.global "@51842_8055F61C"
+"@51842_8055F61C":
+
+	.4byte 0x00800000
+
+.global "@51843_8055F620"
+"@51843_8055F620":
+
+	.4byte 0x3FC90FDB
+
+.global "@51844_8055F624"
+"@51844_8055F624":
+
+	.4byte 0xBFC90FDB
+
+.global "@51845_8055F628"
+"@51845_8055F628":
+
+	.4byte 0x4222F983
+
+.global "@51853_8055F62C"
+"@51853_8055F62C":
+
+	.4byte 0x3CC90FDB

@@ -1154,3 +1154,59 @@ __md__Q33hel4math7Vector3CFRCQ33hel4math7Vector3:
 /* 8017D2E0 00179120  D0 23 00 04 */	stfs f1, 0x4(r3)
 /* 8017D2E4 00179124  D0 C3 00 08 */	stfs f6, 0x8(r3)
 /* 8017D2E8 00179128  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@FSqrt__Q24nw4r4mathFf@0"
+"@STRING@FSqrt__Q24nw4r4mathFf@0":
+
+	.4byte 0x46537172
+	.4byte 0x743A2049
+	.4byte 0x6E707574
+	.4byte 0x20697320
+	.4byte 0x6F757420
+	.4byte 0x6F662074
+	.4byte 0x68652064
+	.4byte 0x6F6D6169
+	.4byte 0x6E2E0000
+
+.global "@STRING@FSqrt__Q24nw4r4mathFf"
+"@STRING@FSqrt__Q24nw4r4mathFf":
+
+	.4byte 0x61726974
+	.4byte 0x686D6574
+	.4byte 0x69632E68
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53498"
+"@53498":
+
+	.4byte 0x3C8EFA35
+
+.global "@53499"
+"@53499":
+
+	.4byte 0
+
+.global "@53589_8055F5F8"
+"@53589_8055F5F8":
+
+	.4byte 0x3727C5AC
+
+.global "@53675"
+"@53675":
+
+	.4byte 0xBF800000
+
+.global "@53676"
+"@53676":
+
+	.4byte 0x4222F983
+
+.global "@53677"
+"@53677":
+
+	.4byte 0x3F800000

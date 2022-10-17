@@ -655,12 +655,13 @@ $(BUILD_DIR)/asm/src/app/RomFontWrapper.o \
 $(BUILD_DIR)/asm/src/app/SaveInfo.o \
 $(BUILD_DIR)/asm/src/app/System.o \
 \
+$(BUILD_DIR)/asm/src/dynamics/Dynamics.o \
+$(BUILD_DIR)/asm/src/dynamics/ModelNode.o \
+$(BUILD_DIR)/asm/src/dynamics/ModelTree.o \
+$(BUILD_DIR)/asm/src/dynamics/Util.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Dynamics_8017bd88.o \
-$(BUILD_DIR)/asm/src/ModelNode_8017c2a8.o \
-$(BUILD_DIR)/asm/src/ModelTree_8017d2ec.o \
-$(BUILD_DIR)/asm/src/Util_8017d880.o \
 $(BUILD_DIR)/asm/src/Group_8017de08.o \
 $(BUILD_DIR)/asm/src/Manager_8017e53c.o \
 $(BUILD_DIR)/asm/src/Requestor_8017e670.o \
@@ -3143,9 +3144,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Dynamics_80453100.o \
-$(BUILD_DIR)/asm/src/ModelNode_80453130.o \
-$(BUILD_DIR)/asm/src/Util_80453168.o \
 $(BUILD_DIR)/asm/src/Group_804531a0.o \
 $(BUILD_DIR)/asm/src/Requestor_80453260.o \
 $(BUILD_DIR)/asm/src/Effect_804532f0.o \
@@ -5287,8 +5285,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/ModelNode_8055f5f0.o \
-$(BUILD_DIR)/asm/src/Util_8055f608.o \
 $(BUILD_DIR)/asm/src/CameraInfo_8055f630.o \
 $(BUILD_DIR)/asm/src/DrawInfo_8055f638.o \
 $(BUILD_DIR)/asm/src/PolyEffect_8055f640.o \

@@ -6123,3 +6123,501 @@ lbl_80070368:
 /* 80070384 0006C1C4  7C 08 03 A6 */	mtlr r0
 /* 80070388 0006C1C8  38 21 00 60 */	addi r1, r1, 0x60
 /* 8007038C 0006C1CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1614"
+"@1614":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x204B5041
+	.4byte 0x44200972
+	.4byte 0x656C6561
+	.4byte 0x73652062
+	.4byte 0x75696C64
+	.4byte 0x3A204175
+	.4byte 0x67203233
+	.4byte 0x20323031
+	.4byte 0x30203139
+	.4byte 0x3A34383A
+	.4byte 0x32332028
+	.4byte 0x30783433
+	.4byte 0x30325F31
+	.4byte 0x34352920
+	.4byte 0x3E3E0000
+
+.global "@4805"
+"@4805":
+
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBDC
+	.4byte lbl_8006BBE0
+	.4byte lbl_8006BBE0
+
+.global "@LOCAL@KPADiSamplingCallback__Fl@table"
+"@LOCAL@KPADiSamplingCallback__Fl@table":
+
+	.4byte 0x00010302
+	.4byte 0x00040105
+	.4byte 0x00070108
+	.4byte 0x000B010B
+	.4byte 0x000F010F
+	.4byte 0x000C000C
+	.4byte 0x000A000A
+	.4byte 0x00110111
+	.4byte 0x00100110
+	.4byte 0x00130013
+	.4byte 0x00140014
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global inside_kpads
+inside_kpads:
+	.skip 0x1A20
+
+.global kp_fs_rot
+kp_fs_rot:
+	.skip 0x30
+
+.global kp_wbc_weight_ave
+kp_wbc_weight_ave:
+	.skip 0x20
+
+.global kp_wbc_ave_sample
+kp_wbc_ave_sample:
+	.skip 0x30
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __KPADVersion
+__KPADVersion:
+
+	.4byte "@1614"
+
+.global idist_org
+idist_org:
+
+	.4byte 0x3F800000
+
+.global iaccXY_nrm_hori
+iaccXY_nrm_hori:
+
+	.4byte 0
+
+.global lbl_80556814
+lbl_80556814:
+
+	.4byte 0xBF800000
+
+.global isec_nrm_hori
+isec_nrm_hori:
+
+	.4byte 0x3F800000
+
+.global lbl_8055681C
+lbl_8055681C:
+
+	.4byte 0
+
+.global kp_obj_interval
+kp_obj_interval:
+
+	.4byte 0x3E4CCCCD
+
+.global kp_acc_horizon_pw
+kp_acc_horizon_pw:
+
+	.4byte 0x3D4CCCCD
+
+.global kp_ah_circle_radius
+kp_ah_circle_radius:
+
+	.4byte 0x3D8F5C29
+
+.global kp_ah_circle_pw
+kp_ah_circle_pw:
+
+	.4byte 0x3D75C28F
+
+.global kp_ah_circle_ct
+kp_ah_circle_ct:
+
+	.4byte 0x00640000
+
+.global kp_err_outside_frame
+kp_err_outside_frame:
+
+	.4byte 0x3D4CCCCD
+
+.global kp_err_dist_max
+kp_err_dist_max:
+
+	.4byte 0x40400000
+
+.global kp_err_dist_speed
+kp_err_dist_speed:
+
+	.4byte 0x3D23D70A
+
+.global kp_err_first_inpr
+kp_err_first_inpr:
+
+	.4byte 0x3F666666
+
+.global kp_err_next_inpr
+kp_err_next_inpr:
+
+	.4byte 0x3F666666
+
+.global kp_err_acc_inpr
+kp_err_acc_inpr:
+
+	.4byte 0x3F666666
+
+.global kp_err_up_inpr
+kp_err_up_inpr:
+
+	.4byte 0x3F333333
+
+.global kp_err_near_pos
+kp_err_near_pos:
+
+	.4byte 0x3DCCCCCD
+
+.global kp_fs_fstick_min
+kp_fs_fstick_min:
+
+	.4byte 0x0000000F
+
+.global kp_fs_fstick_max
+kp_fs_fstick_max:
+
+	.4byte 0x00000047
+
+.global kp_cl_stick_min
+kp_cl_stick_min:
+
+	.4byte 0x0000003C
+
+.global kp_cl_stick_max
+kp_cl_stick_max:
+
+	.4byte 0x00000134
+
+.global kp_cl_trigger_min
+kp_cl_trigger_min:
+
+	.4byte 0x0000001E
+
+.global kp_cl_trigger_max
+kp_cl_trigger_max:
+
+	.4byte 0x000000B4
+
+.global kp_rm_acc_max
+kp_rm_acc_max:
+
+	.4byte 0x4059999A
+
+.global kp_fs_acc_max
+kp_fs_acc_max:
+
+	.4byte 0x40066666
+
+.global kp_ex_trigger_max
+kp_ex_trigger_max:
+
+	.4byte 0x00000100
+
+.global kp_ex_analog_max
+kp_ex_analog_max:
+
+	.4byte 0x00000400
+
+.global kp_wbc_ave_count
+kp_wbc_ave_count:
+
+	.4byte 0x43C80000
+
+.global kp_wbc_calib_count
+kp_wbc_calib_count:
+
+	.4byte 0xC8000000
+
+.global kp_wbc_stable_count
+kp_wbc_stable_count:
+
+	.4byte 0x02020305
+	.4byte 0x05050000
+
+.global kp_fs_revise_deg
+kp_fs_revise_deg:
+
+	.4byte 0x41C00000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global icenter_org
+icenter_org:
+	.skip 0x4
+
+.global lbl_8055CE64
+lbl_8055CE64:
+	.skip 0x4
+
+.global kp_stick_clamp_cross
+kp_stick_clamp_cross:
+	.skip 0x4
+
+.global kp_ex_trigger_min
+kp_ex_trigger_min:
+	.skip 0x4
+
+.global kp_ex_analog_min
+kp_ex_analog_min:
+	.skip 0x4
+
+.global kp_initialized
+kp_initialized:
+	.skip 0x4
+
+.global Vec2_0
+Vec2_0:
+	.skip 0x4
+
+.global lbl_8055CE7C
+lbl_8055CE7C:
+	.skip 0x4
+
+.global kp_wbc_stable_width
+kp_wbc_stable_width:
+	.skip 0x8
+
+.global kp_wbc_max_weight
+kp_wbc_max_weight:
+	.skip 0x8
+
+.global kp_wbc_min_weight
+kp_wbc_min_weight:
+	.skip 0x8
+
+.global kp_wbc_tgc_weight
+kp_wbc_tgc_weight:
+	.skip 0x8
+
+.global kp_wbc_ave_sample_count
+kp_wbc_ave_sample_count:
+	.skip 0x2
+
+.global kp_wbc_failure_count
+kp_wbc_failure_count:
+	.skip 0x1
+
+.global kp_wbc_zero_point_done
+kp_wbc_zero_point_done:
+	.skip 0x1
+
+.global kp_wbc_zero_point_wait
+kp_wbc_zero_point_wait:
+	.skip 0x1
+
+.global kp_wbc_tgc_weight_done
+kp_wbc_tgc_weight_done:
+	.skip 0x1
+
+.global kp_wbc_tgc_weight_wait
+kp_wbc_tgc_weight_wait:
+	.skip 0x2
+
+.global kp_wbc_tgc_weight_err
+kp_wbc_tgc_weight_err:
+	.skip 0x1
+
+.global kp_wbc_enabled
+kp_wbc_enabled:
+	.skip 0x1
+
+.global kp_wbc_issued
+kp_wbc_issued:
+	.skip 0x2
+
+.global kp_dist_vv1
+kp_dist_vv1:
+	.skip 0x4
+
+.global kp_err_dist_min
+kp_err_dist_min:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@4535"
+"@4535":
+
+	.4byte 0
+
+.global "@4536"
+"@4536":
+
+	.4byte 0x3F000000
+
+.global "@4537"
+"@4537":
+
+	.4byte 0x43480000
+
+.global "@4580"
+"@4580":
+
+	.4byte 0xBF800000
+
+.global "@4581"
+"@4581":
+
+	.4byte 0x3F800000
+
+.global "@4582"
+"@4582":
+
+	.4byte 0xBF400000
+
+.global "@4583"
+"@4583":
+
+	.4byte 0x3F400000
+
+.global "@4712"
+"@4712":
+
+	.4byte 0x40000000
+
+.global "@4806"
+"@4806":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@5024"
+"@5024":
+
+	.4byte 0x3B000000
+
+.global "@5025_8055E7FC"
+"@5025_8055E7FC":
+
+	.4byte 0x3F7FC000
+
+.global "@5026_8055E800"
+"@5026_8055E800":
+
+	.4byte 0x3F3FC000
+	.4byte 0
+
+.global "@5391"
+"@5391":
+
+	.4byte 0x4062C000
+	.4byte 0
+
+.global "@5392"
+"@5392":
+
+	.4byte 0x3E4CCCCD
+	.4byte 0
+
+.global "@5393"
+"@5393":
+
+	.4byte 0x40410000
+	.4byte 0
+
+.global "@5394"
+"@5394":
+
+	.4byte 0x40000000
+	.4byte 0
+
+.global "@5395"
+"@5395":
+
+	.4byte 0
+	.4byte 0
+
+.global "@5396"
+"@5396":
+
+	.4byte 0xBFF00000
+	.4byte 0
+
+.global "@5397"
+"@5397":
+
+	.4byte 0x3FE00000
+	.4byte 0
+
+.global "@5403"
+"@5403":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@5550"
+"@5550":
+
+	.4byte 0x3FD33333
+	.4byte 0x33333333
+
+.global "@5613"
+"@5613":
+
+	.4byte 0x3EC489D2
+
+.global "@5614"
+"@5614":
+
+	.4byte 0x3C8EFA35
+
+.global "@5799"
+"@5799":
+
+	.4byte 0x3BA3D70A
+
+.global "@5800"
+"@5800":
+
+	.4byte 0x3C23D70A
+
+.global "@3159"
+"@3159":
+
+	.4byte 0x00010001
+
+.global lbl_8055E864
+lbl_8055E864:
+
+	.4byte 0x00010000
+
+.global "@6007"
+"@6007":
+
+	.4byte 0xBE4CCCCD
+	.4byte 0

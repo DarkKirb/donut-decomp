@@ -249,11 +249,12 @@ $(BUILD_DIR)/asm/wpad/lint.o \
 $(BUILD_DIR)/asm/wpad/WUD.o \
 $(BUILD_DIR)/asm/wpad/WUDHidHost.o \
 \
+$(BUILD_DIR)/asm/kpad/KPAD.o \
+$(BUILD_DIR)/asm/kpad/KMPLS.o \
+$(BUILD_DIR)/asm/kpad/KZMplsTestSub.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/kpad/KPAD_8006b280.o \
-$(BUILD_DIR)/asm/kpad/KMPLS_80070390.o \
-$(BUILD_DIR)/asm/kpad/KZMplsTestSub_800724c0.o \
 $(BUILD_DIR)/asm/euart/euart_80072ed0.o \
 $(BUILD_DIR)/asm/usb/usb_80073250.o \
 $(BUILD_DIR)/asm/bte/gki_buffer_80074790.o \
@@ -3231,9 +3232,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/kpad/KPAD_80439f00.o \
-$(BUILD_DIR)/asm/kpad/KMPLS_80439fc8.o \
-$(BUILD_DIR)/asm/kpad/KZMplsTestSub_8043a010.o \
 $(BUILD_DIR)/asm/usb/usb_8043a038.o \
 $(BUILD_DIR)/asm/bte/gki_buffer_8043a868.o \
 $(BUILD_DIR)/asm/bte/hcisu_h2_8043a9b0.o \
@@ -5009,7 +5007,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/kpad/KPAD_804c7c08.o \
 $(BUILD_DIR)/asm/bte/gki_ppc_804c96a8.o \
 $(BUILD_DIR)/asm/bte/hcisu_h2_804f2188.o \
 $(BUILD_DIR)/asm/bte/uusb_ppc_804f21c0.o \
@@ -5130,7 +5127,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/kpad/KPAD_80556808.o \
 $(BUILD_DIR)/asm/usb/usb_80556890.o \
 $(BUILD_DIR)/asm/bte/uusb_ppc_805568a0.o \
 $(BUILD_DIR)/asm/bte/bta_dm_cfg_805568b0.o \
@@ -5553,8 +5549,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/kpad/KPAD_8055ce60.o \
-$(BUILD_DIR)/asm/kpad/KMPLS_8055ceb8.o \
 $(BUILD_DIR)/asm/euart/euart_8055cec0.o \
 $(BUILD_DIR)/asm/usb/usb_8055ced0.o \
 $(BUILD_DIR)/asm/bte/uusb_ppc_8055cee0.o \
@@ -5747,9 +5741,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/kpad/KPAD_8055e7d0.o \
-$(BUILD_DIR)/asm/kpad/KMPLS_8055e870.o \
-$(BUILD_DIR)/asm/kpad/KZMplsTestSub_8055e8f8.o \
 $(BUILD_DIR)/asm/bte/hcisu_h2_8055e908.o \
 $(BUILD_DIR)/asm/bte/bta_sys_cfg_8055e918.o \
 $(BUILD_DIR)/asm/bte/bta_dm_act_8055e920.o \

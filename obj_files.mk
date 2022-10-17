@@ -77,20 +77,15 @@ $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/MSL_Common_Embedded/Math/Double_precision/
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/MSL_Common_Embedded/Math/Double_precision/w_sqrt.o \
 $(BUILD_DIR)/asm/MSL_C.PPCEABI.bare.H/MSL_Common/Src/extras.o \
 \
+$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios.o \
+$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale.o \
+$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread.o \
+\
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/__exception_80004380.o \
 $(BUILD_DIR)/asm/os/__start_800062c0.o \
 $(BUILD_DIR)/asm/os/__ppc_eabi_init_80006620.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_800067f4.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80006804.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread_800068bc.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_80006964.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_8000697c.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread_800069ac.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_8001488c.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80014944.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/msl_thread_80014f18.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/targsupp_80015034.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/cc_gdev_80015054.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/MWCriticalSection_gc_800152c4.o \
@@ -2882,7 +2877,6 @@ $(BUILD_DIR)/asm/src/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80406264.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_80406268.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_particlemanager_8040626c.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_resource_80406270.o \
@@ -2989,8 +2983,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_804075b8.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80407658.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/targimpl_80407778.o \
 $(BUILD_DIR)/asm/os/OSCrc_80407800.o \
 $(BUILD_DIR)/asm/mtx/quat_80407840.o \
@@ -3226,8 +3218,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_80421a28.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80421a48.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/dispatch_80421ab8.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/dolphin_trk_80421b28.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/dolphin_trk_glue_80421b68.o \
@@ -5242,8 +5232,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/ios_80556450.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_80556468.o \
 $(BUILD_DIR)/asm/os/OS_80556488.o \
 $(BUILD_DIR)/asm/os/OSAlloc_805564b8.o \
 $(BUILD_DIR)/asm/os/OSArena_805564c0.o \
@@ -5711,7 +5699,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/MSL_C++.PPCEABI.bare.H/locale_8055c720.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/cc_gdev_8055c728.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/main_TRK_8055c730.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/dolphin_trk_8055c738.o \

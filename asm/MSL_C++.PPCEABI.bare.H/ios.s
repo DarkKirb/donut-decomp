@@ -1,5 +1,28 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@10911"
+"@10911":
+
+	.4byte 0x08080000
+	.4byte 0
+
+.global "@10953"
+"@10953":
+
+	.4byte 0x10080000
+	.4byte 0
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+	.4byte "get_deleter__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>CFRCQ23std9type_info"
+	.4byte 0x0000004C
+	.4byte "@10911"
+	.4byte "__dt__Q210Metrowerks48move_ptr<c,RQ33std6detail20default_delete<A0_c>>Fv"
+	.4byte 0x00000060
+	.4byte "@10953"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global "get_deleter__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>CFRCQ23std9type_info"
 "get_deleter__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>CFRCQ23std9type_info":
@@ -66,3 +89,95 @@ lbl_80014924:
 .global "__dt__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>Fv"
 "__dt__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>Fv":
 /* 80014940 00010780  4B FF 22 90 */	b __dt__Q23std9exceptionFv
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@9022"
+"@9022":
+
+	.4byte 0x7374643A
+	.4byte 0x3A747231
+	.4byte 0x3A3A6465
+	.4byte 0x7461696C
+	.4byte 0x3A3A7368
+	.4byte 0x61726564
+	.4byte 0x5F707472
+	.4byte 0x5F64656C
+	.4byte 0x65746572
+	.4byte 0x3C636861
+	.4byte 0x722C2073
+	.4byte 0x74643A3A
+	.4byte 0x64657461
+	.4byte 0x696C3A3A
+	.4byte 0x64656661
+	.4byte 0x756C745F
+	.4byte 0x64656C65
+	.4byte 0x74653C63
+	.4byte 0x6861725B
+	.4byte 0x5D3E3E00
+
+.global "@9050"
+"@9050":
+
+	.4byte 0x7374643A
+	.4byte 0x3A747231
+	.4byte 0x3A3A6465
+	.4byte 0x7461696C
+	.4byte 0x3A3A7368
+	.4byte 0x61726564
+	.4byte 0x5F707472
+	.4byte 0x5F64656C
+	.4byte 0x65746572
+	.4byte 0x5F636F6D
+	.4byte 0x6D6F6E00
+
+.global "@9165"
+"@9165":
+
+	.4byte 0x7374643A
+	.4byte 0x3A646574
+	.4byte 0x61696C3A
+	.4byte 0x3A646566
+	.4byte 0x61756C74
+	.4byte 0x5F64656C
+	.4byte 0x6574653C
+	.4byte 0x63686172
+	.4byte 0x5B5D3E00
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>"
+"__vt__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>":
+
+	.4byte "__RTTI__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>"
+	.4byte 0
+	.4byte "__dt__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>Fv"
+	.4byte "get_deleter__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>CFRCQ23std9type_info"
+	.4byte "dispose__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>Fv"
+
+.global "@9023"
+"@9023":
+
+	.4byte __RTTI__Q43std3tr16detail25shared_ptr_deleter_common
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "__RTTI__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>"
+"__RTTI__Q43std3tr16detail57shared_ptr_deleter<c,Q33std6detail20default_delete<A0_c>>":
+
+	.4byte "@9022"
+	.4byte "@9023"
+
+.global __RTTI__Q43std3tr16detail25shared_ptr_deleter_common
+__RTTI__Q43std3tr16detail25shared_ptr_deleter_common:
+
+	.4byte "@9050"
+	.4byte 0
+
+.global "__RTTI__Q33std6detail20default_delete<A0_c>"
+"__RTTI__Q33std6detail20default_delete<A0_c>":
+
+	.4byte "@9165"
+	.4byte 0

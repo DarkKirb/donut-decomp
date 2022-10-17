@@ -1,5 +1,28 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@8323"
+"@8323":
+
+	.4byte 0x08080000
+	.4byte 0
+
+.global "@8430"
+"@8430":
+
+	.4byte 0x10080000
+	.4byte 0
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+	.4byte release__Q43std3tr16detail25shared_ptr_deleter_commonFv
+	.4byte 0x00000078
+	.4byte "@8323"
+	.4byte "__dt__Q33std3tr114function<Fv_v>Fv"
+	.4byte 0x000000A0
+	.4byte "@8430"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global release__Q43std3tr16detail25shared_ptr_deleter_commonFv
 release__Q43std3tr16detail25shared_ptr_deleter_commonFv:

@@ -1,5 +1,84 @@
 .include "macros.inc"
 
+.section extab_, "wa"  # 0x80006740 - 0x800068E0 ; 0x000001A0
+.global "@25556"
+"@25556":
+
+	.4byte 0x18180000
+	.4byte 0x00000048
+	.4byte 0x00000018
+	.4byte 0x00000054
+	.4byte 0x00000024
+	.4byte 0
+	.4byte 0x8F000000
+	.4byte 0x0000004C
+	.4byte 0x00000008
+	.4byte 0x8D000008
+
+.global "@26577"
+"@26577":
+
+	.4byte 0x10080000
+	.4byte 0
+
+.global "@27127"
+"@27127":
+
+	.4byte 0x68080000
+	.4byte 0x00000094
+	.4byte 0x00000038
+	.4byte 0x000000B0
+	.4byte 0x00000030
+	.4byte 0x0000019C
+	.4byte 0x0000004C
+	.4byte 0x000001B8
+	.4byte 0x00000044
+	.4byte 0x0000035C
+	.4byte 0x00000058
+	.4byte 0
+	.4byte 0x02000028
+	.4byte "__dt__Q210Metrowerks48move_ptr<c,RQ33std6detail20default_delete<A0_c>>Fv"
+	.4byte 0x8680001D
+	.4byte 0
+	.4byte __dt__Q23std9exceptionFv
+	.4byte 0x02000020
+	.4byte "__dt__Q210Metrowerks48move_ptr<c,RQ33std6detail20default_delete<A0_c>>Fv"
+	.4byte 0x8680001E
+	.4byte 0
+	.4byte __dt__Q23std9exceptionFv
+	.4byte 0x82000030
+	.4byte "__dt__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+
+.global "@27197"
+"@27197":
+
+	.4byte 0x18180000
+	.4byte 0x0000004C
+	.4byte 0x00000018
+	.4byte 0x00000058
+	.4byte 0x00000024
+	.4byte 0
+	.4byte 0x8F000000
+	.4byte 0x00000050
+	.4byte 0x00000008
+	.4byte 0x8D000008
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+	.4byte __dt__Q23std11logic_errorFv
+	.4byte 0x00000090
+	.4byte "@25556"
+	.4byte "__dt__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>Fv"
+	.4byte 0x00000064
+	.4byte "@26577"
+	.4byte "do_replace__Q23std59basic_string<c,Q23std14char_traits<c>,Q23std12allocator<c>>FUlUlPCcPCcQ23std26random_access_iterator_tag"
+	.4byte 0x000003F0
+	.4byte "@27127"
+	.4byte __dt__Q23std12length_errorFv
+	.4byte 0x00000094
+	.4byte "@27197"
+.include "macros.inc"
+
 .section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
 .global what__Q23std11logic_errorCFv
 what__Q23std11logic_errorCFv:
@@ -466,3 +545,200 @@ lbl_80014F00:
 /* 80014F0C 00010D4C  38 00 00 01 */	li r0, 0x1
 /* 80014F10 00010D50  98 0D E3 03 */	stb r0, "@GUARD@id__Q23std14codecvt<w,c,i>"@sda21(r13)
 /* 80014F14 00010D54  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1locale_cpp"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@10379"
+"@10379":
+
+	.4byte 0x7374643A
+	.4byte 0x3A6F7574
+	.4byte 0x5F6F665F
+	.4byte 0x72616E67
+	.4byte 0x65000000
+
+.global "@10381"
+"@10381":
+
+	.4byte 0x7374643A
+	.4byte 0x3A6C656E
+	.4byte 0x6774685F
+	.4byte 0x6572726F
+	.4byte 0x72000000
+
+.global "@10387"
+"@10387":
+
+	.4byte 0x7374643A
+	.4byte 0x3A6C6F67
+	.4byte 0x69635F65
+	.4byte 0x72726F72
+	.4byte 0
+
+.global "@stringBase0_80407694"
+"@stringBase0_80407694":
+
+	.4byte 0x76656374
+	.4byte 0x6F72206C
+	.4byte 0x656E6774
+	.4byte 0x68206572
+	.4byte 0x726F7200
+	.4byte 0x21737464
+	.4byte 0x3A3A6578
+	.4byte 0x63657074
+	.4byte 0x696F6E21
+	.4byte 0x21737464
+	.4byte 0x3A3A6C6F
+	.4byte 0x6769635F
+	.4byte 0x6572726F
+	.4byte 0x72212173
+	.4byte 0x74643A3A
+	.4byte 0x6C656E67
+	.4byte 0x74685F65
+	.4byte 0x72726F72
+	.4byte 0x21210062
+	.4byte 0x61736963
+	.4byte 0x5F737472
+	.4byte 0x696E673A
+	.4byte 0x206F7574
+	.4byte 0x5F6F665F
+	.4byte 0x72616E67
+	.4byte 0x65002173
+	.4byte 0x74643A3A
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E212173
+	.4byte 0x74643A3A
+	.4byte 0x6C6F6769
+	.4byte 0x635F6572
+	.4byte 0x726F7221
+	.4byte 0x21737464
+	.4byte 0x3A3A6F75
+	.4byte 0x745F6F66
+	.4byte 0x5F72616E
+	.4byte 0x67652121
+	.4byte 0x0043002A
+	.4byte 0x00626173
+	.4byte 0x69635F73
+	.4byte 0x7472696E
+	.4byte 0x673A206C
+	.4byte 0x656E6774
+	.4byte 0x685F6572
+	.4byte 0x726F7200
+	.4byte 0x62617369
+	.4byte 0x635F7374
+	.4byte 0x72696E67
+	.4byte 0x3A3A7265
+	.4byte 0x73657276
+	.4byte 0x65206C65
+	.4byte 0x6E677468
+	.4byte 0x5F657272
+	.4byte 0x6F720000
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23std12out_of_range
+__vt__Q23std12out_of_range:
+
+	.4byte __RTTI__Q23std12out_of_range
+	.4byte 0
+	.4byte __dt__Q23std12out_of_rangeFv
+	.4byte what__Q23std11logic_errorCFv
+
+.global "@10380"
+"@10380":
+
+	.4byte __RTTI__Q23std9exception
+	.4byte 0
+	.4byte __RTTI__Q23std11logic_error
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q23std12length_error
+__vt__Q23std12length_error:
+
+	.4byte __RTTI__Q23std12length_error
+	.4byte 0
+	.4byte __dt__Q23std12length_errorFv
+	.4byte what__Q23std11logic_errorCFv
+
+.global "@10382"
+"@10382":
+
+	.4byte __RTTI__Q23std9exception
+	.4byte 0
+	.4byte __RTTI__Q23std11logic_error
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q23std11logic_error
+__vt__Q23std11logic_error:
+
+	.4byte __RTTI__Q23std11logic_error
+	.4byte 0
+	.4byte __dt__Q23std11logic_errorFv
+	.4byte what__Q23std11logic_errorCFv
+
+.global "@10388"
+"@10388":
+
+	.4byte __RTTI__Q23std9exception
+	.4byte 0
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __RTTI__Q23std12out_of_range
+__RTTI__Q23std12out_of_range:
+
+	.4byte "@10379"
+	.4byte "@10380"
+
+.global __RTTI__Q23std12length_error
+__RTTI__Q23std12length_error:
+
+	.4byte "@10381"
+	.4byte "@10382"
+
+.global __RTTI__Q23std11logic_error
+__RTTI__Q23std11logic_error:
+
+	.4byte "@10387"
+	.4byte "@10388"
+
+.global "@11481"
+"@11481":
+
+	.byte 0x00
+
+.global "@11495"
+"@11495":
+
+	.balign 4
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@id__Q23std8ctype<c>"
+"@GUARD@id__Q23std8ctype<c>":
+	.skip 0x1
+
+.global "@GUARD@id__Q23std8ctype<w>"
+"@GUARD@id__Q23std8ctype<w>":
+	.skip 0x1
+
+.global "@GUARD@id__Q23std14codecvt<c,c,i>"
+"@GUARD@id__Q23std14codecvt<c,c,i>":
+	.skip 0x1
+
+.global "@GUARD@id__Q23std14codecvt<w,c,i>"
+"@GUARD@id__Q23std14codecvt<w,c,i>":
+	.skip 0x5

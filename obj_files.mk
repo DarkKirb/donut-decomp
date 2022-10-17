@@ -326,9 +326,10 @@ $(BUILD_DIR)/asm/bte/sdp_main.o \
 $(BUILD_DIR)/asm/bte/sdp_server.o \
 $(BUILD_DIR)/asm/bte/sdp_utils.o \
 \
+$(BUILD_DIR)/asm/tpl/TPL.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/tpl/TPL_800a1e00.o \
 $(BUILD_DIR)/asm/esp/esp_800a2020.o \
 $(BUILD_DIR)/asm/mem/mem_heapCommon_800a2640.o \
 $(BUILD_DIR)/asm/mem/mem_expHeap_800a2ab0.o \
@@ -3226,7 +3227,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/tpl/TPL_80440030.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_draworder_80440060.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effect_80440078.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_80440098.o \
@@ -5062,7 +5062,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/tpl/TPL_80556940.o \
 $(BUILD_DIR)/asm/esp/esp_80556948.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_80556958.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_util_80556960.o \
@@ -5656,7 +5655,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/tpl/TPL_8055e960.o \
 $(BUILD_DIR)/asm/mem/mem_allocator_8055e968.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effect_8055e970.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_8055e978.o \

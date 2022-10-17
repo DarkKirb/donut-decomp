@@ -153,3 +153,37 @@ TPLGetGXTexObjFromPalette:
 /* 800A2014 0009DE54  7C 08 03 A6 */	mtlr r0
 /* 800A2018 0009DE58  38 21 00 30 */	addi r1, r1, 0x30
 /* 800A201C 0009DE5C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@773"
+"@773":
+
+	.4byte 0x696E7661
+	.4byte 0x6C696420
+	.4byte 0x76657273
+	.4byte 0x696F6E20
+	.4byte 0x6E756D62
+	.4byte 0x65722066
+	.4byte 0x6F722074
+	.4byte 0x65787475
+	.4byte 0x72652070
+	.4byte 0x616C6574
+	.4byte 0x74650000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@772"
+"@772":
+
+	.4byte 0x54504C2E
+	.4byte 0x63000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@795_8055E960"
+"@795_8055E960":
+
+	.4byte 0x43300000
+	.4byte 0

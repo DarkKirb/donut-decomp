@@ -328,9 +328,10 @@ $(BUILD_DIR)/asm/bte/sdp_utils.o \
 \
 $(BUILD_DIR)/asm/tpl/TPL.o \
 \
+$(BUILD_DIR)/asm/esp/esp.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/esp/esp_800a2020.o \
 $(BUILD_DIR)/asm/mem/mem_heapCommon_800a2640.o \
 $(BUILD_DIR)/asm/mem/mem_expHeap_800a2ab0.o \
 $(BUILD_DIR)/asm/mem/mem_frameHeap_800a32e0.o \
@@ -5062,7 +5063,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/esp/esp_80556948.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_80556958.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_util_80556960.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_drawbillboardstrategy_80556980.o \

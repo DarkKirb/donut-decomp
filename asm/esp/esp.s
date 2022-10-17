@@ -483,3 +483,17 @@ lbl_800A2628:
 /* 800A2634 0009E474  7C 08 03 A6 */	mtlr r0
 /* 800A2638 0009E478  7D 41 53 78 */	mr r1, r10
 /* 800A263C 0009E47C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __esFd
+__esFd:
+
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global "@1766_80556950"
+"@1766_80556950":
+
+	.4byte 0x2F646576
+	.4byte 0x2F657300

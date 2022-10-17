@@ -241,13 +241,13 @@ $(BUILD_DIR)/asm/fs/fs.o \
 $(BUILD_DIR)/asm/pad/Padclamp.o \
 $(BUILD_DIR)/asm/pad/Pad.o \
 \
-$(BUILD_DIR)/asm/wpad/WPAD_80053df0.o \
-$(BUILD_DIR)/asm/wpad/WPADHIDParser_8005ec90.o \
-$(BUILD_DIR)/asm/wpad/WPADEncrypt_80063f00.o \
-$(BUILD_DIR)/asm/wpad/WPADMem_80064dc0.o \
-$(BUILD_DIR)/asm/wpad/lint_80064ed0.o \
-$(BUILD_DIR)/asm/wpad/WUD_80065740.o \
-$(BUILD_DIR)/asm/wpad/WUDHidHost_8006ae40.o \
+$(BUILD_DIR)/asm/wpad/WPAD.o \
+$(BUILD_DIR)/asm/wpad/WPADHIDParser.o \
+$(BUILD_DIR)/asm/wpad/WPADEncrypt.o \
+$(BUILD_DIR)/asm/wpad/WPADMem.o \
+$(BUILD_DIR)/asm/wpad/lint.o \
+$(BUILD_DIR)/asm/wpad/WUD.o \
+$(BUILD_DIR)/asm/wpad/WUDHidHost.o \
 \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \

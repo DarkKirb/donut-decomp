@@ -301,3 +301,59 @@ Cancel__Q34nw4r2ut19DvdLockedFileStreamFv:
 /* 80121284 0011D0C4  90 0D EC 60 */	stw r0, typeInfo__Q34nw4r2ut19DvdLockedFileStream@sda21(r13)
 /* 80121288 0011D0C8  4E 80 00 20 */	blr
 /* 8012128C 0011D0CC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ut_DvdLockedFileStream_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q34nw4r2ut19DvdLockedFileStream
+__vt__Q34nw4r2ut19DvdLockedFileStream:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.4byte __dt__Q34nw4r2ut19DvdLockedFileStreamFv
+	.4byte Close__Q34nw4r2ut19DvdLockedFileStreamFv
+	.4byte Read__Q34nw4r2ut19DvdLockedFileStreamFPvUl
+	.4byte ReadAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte Write__Q34nw4r2ut8IOStreamFPCvUl
+	.4byte WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte IsBusy__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanAsync__Q34nw4r2ut19DvdLockedFileStreamCFv
+	.4byte CanRead__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanWrite__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetOffsetAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSizeAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetBufferAlign__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte GetSize__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Seek__Q34nw4r2ut13DvdFileStreamFlUl
+	.4byte Cancel__Q34nw4r2ut19DvdLockedFileStreamFv
+	.4byte CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte CanSeek__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte CanCancel__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Tell__Q34nw4r2ut13DvdFileStreamCFv
+	.4byte Peek__Q34nw4r2ut19DvdLockedFileStreamFPvUl
+	.4byte PeekAsync__Q34nw4r2ut19DvdLockedFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global sMutex__Q34nw4r2ut19DvdLockedFileStream
+sMutex__Q34nw4r2ut19DvdLockedFileStream:
+	.skip 0x18
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global typeInfo__Q34nw4r2ut19DvdLockedFileStream
+typeInfo__Q34nw4r2ut19DvdLockedFileStream:
+	.skip 0x8
+
+.global sThreadQueue__Q34nw4r2ut19DvdLockedFileStream
+sThreadQueue__Q34nw4r2ut19DvdLockedFileStream:
+	.skip 0x8
+
+.global sInitialized__Q34nw4r2ut19DvdLockedFileStream
+sInitialized__Q34nw4r2ut19DvdLockedFileStream:
+	.skip 0x8

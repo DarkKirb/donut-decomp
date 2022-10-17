@@ -21,3 +21,13 @@ WriteAsync__Q34nw4r2ut8IOStreamFPCvUlPFlPQ34nw4r2ut8IOStreamPv_vPv:
 /* 80120654 0011C494  90 0D EC 48 */	stw r0, typeInfo__Q34nw4r2ut8IOStream@sda21(r13)
 /* 80120658 0011C498  4E 80 00 20 */	blr
 /* 8012065C 0011C49C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ut_IOStream_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global typeInfo__Q34nw4r2ut8IOStream
+typeInfo__Q34nw4r2ut8IOStream:
+	.skip 0x8

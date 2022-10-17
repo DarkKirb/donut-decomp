@@ -3452,3 +3452,71 @@ lbl_80126CC4:
 /* 80126CD4 00122B14  00 00 00 00 */	.4byte 0x00000000
 /* 80126CD8 00122B18  00 00 00 00 */	.4byte 0x00000000
 /* 80126CDC 00122B1C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ut_TextWriterBase_cpp_80126C50"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@6159"
+"@6159":
+	.skip 0xC
+
+.global "@6683"
+"@6683":
+	.skip 0xC
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "mFormatBufferSize__Q34nw4r2ut17TextWriterBase<c>"
+"mFormatBufferSize__Q34nw4r2ut17TextWriterBase<c>":
+
+	.4byte 0x00000100
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "mFormatBuffer__Q34nw4r2ut17TextWriterBase<c>"
+"mFormatBuffer__Q34nw4r2ut17TextWriterBase<c>":
+	.skip 0x4
+
+.global "mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>"
+"mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>":
+	.skip 0x4
+
+.global "mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>"
+"mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>":
+	.skip 0x4
+
+.global "@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>"
+"@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<c>":
+	.skip 0x1
+
+.global "@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>"
+"@GUARD@mDefaultTagProcessor__Q34nw4r2ut17TextWriterBase<w>":
+	.skip 0x3
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@8480"
+"@8480":
+
+	.4byte 0x7F7FFFFF
+
+.global "@8481"
+"@8481":
+
+	.4byte 0
+
+.global "@8501"
+"@8501":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@9845"
+"@9845":
+
+	.4byte 0x3F000000
+	.4byte 0

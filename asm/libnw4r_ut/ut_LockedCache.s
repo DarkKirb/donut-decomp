@@ -158,3 +158,13 @@ StoreData__Q34nw4r2ut2LCFPvPvUl:
 /* 80121464 0011D2A4  4B F0 16 FC */	b OSInitMutex
 /* 80121468 0011D2A8  00 00 00 00 */	.4byte 0x00000000
 /* 8012146C 0011D2AC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ut_LockedCache_cpp"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "sLCImpl__Q34nw4r2ut28@unnamed@ut_LockedCache_cpp@"
+"sLCImpl__Q34nw4r2ut28@unnamed@ut_LockedCache_cpp@":
+	.skip 0x20

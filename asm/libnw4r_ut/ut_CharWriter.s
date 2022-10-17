@@ -1561,3 +1561,49 @@ lbl_80123A48:
 /* 80123CF4 0011FB34  38 21 00 20 */	addi r1, r1, 0x20
 /* 80123CF8 0011FB38  4E 80 00 20 */	blr
 /* 80123CFC 0011FB3C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global mLoadingTexture__Q34nw4r2ut10CharWriter
+mLoadingTexture__Q34nw4r2ut10CharWriter:
+	.skip 0x10
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@SetupGXCommon__27@unnamed@ut_CharWriter_cpp@Fv@fog"
+"@GUARD@SetupGXCommon__27@unnamed@ut_CharWriter_cpp@Fv@fog":
+	.skip 0x4
+
+.global "@LOCAL@SetupGXCommon__27@unnamed@ut_CharWriter_cpp@Fv@fog"
+"@LOCAL@SetupGXCommon__27@unnamed@ut_CharWriter_cpp@Fv@fog":
+	.skip 0x4
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@6180"
+"@6180":
+
+	.4byte 0
+
+.global "@6181"
+"@6181":
+
+	.4byte 0x3F800000
+
+.global "@6269"
+"@6269":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@6299"
+"@6299":
+
+	.4byte 0x3F000000
+	.4byte 0
+
+.global "@6307"
+"@6307":
+
+	.4byte 0x43300000
+	.4byte 0

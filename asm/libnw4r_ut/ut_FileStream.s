@@ -96,3 +96,13 @@ lbl_80120750:
 /* 80120764 0011C5A4  90 0D EC 50 */	stw r0, typeInfo__Q34nw4r2ut10FileStream@sda21(r13)
 /* 80120768 0011C5A8  4E 80 00 20 */	blr
 /* 8012076C 0011C5AC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ut_FileStream_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global typeInfo__Q34nw4r2ut10FileStream
+typeInfo__Q34nw4r2ut10FileStream:
+	.skip 0x8

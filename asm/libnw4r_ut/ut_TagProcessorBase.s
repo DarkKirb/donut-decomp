@@ -495,3 +495,31 @@ lbl_801205FC:
 /* 80120624 0011C464  00 00 00 00 */	.4byte 0x00000000
 /* 80120628 0011C468  00 00 00 00 */	.4byte 0x00000000
 /* 8012062C 0011C46C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q34nw4r2ut19TagProcessorBase<w>"
+"__vt__Q34nw4r2ut19TagProcessorBase<w>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q34nw4r2ut19TagProcessorBase<w>Fv"
+	.4byte "Process__Q34nw4r2ut19TagProcessorBase<w>FUsPQ34nw4r2ut15PrintContext<w>"
+	.4byte "CalcRect__Q34nw4r2ut19TagProcessorBase<w>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w>"
+
+.global "__vt__Q34nw4r2ut19TagProcessorBase<c>"
+"__vt__Q34nw4r2ut19TagProcessorBase<c>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q34nw4r2ut19TagProcessorBase<c>Fv"
+	.4byte "Process__Q34nw4r2ut19TagProcessorBase<c>FUsPQ34nw4r2ut15PrintContext<c>"
+	.4byte "CalcRect__Q34nw4r2ut19TagProcessorBase<c>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<c>"
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@4919"
+"@4919":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

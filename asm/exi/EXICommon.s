@@ -117,3 +117,11 @@ lbl_8002A39C:
 /* 8002A3B4 000261F4  4E 80 00 20 */	blr
 /* 8002A3B8 000261F8  00 00 00 00 */	.4byte 0x00000000
 /* 8002A3BC 000261FC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global __EXIFreq
+__EXIFreq:
+
+	.4byte 0x00000004
+	.4byte 0

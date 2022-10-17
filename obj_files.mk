@@ -145,11 +145,12 @@ $(BUILD_DIR)/asm/os/OSCrc.o \
 $(BUILD_DIR)/asm/os/OSLaunch.o \
 $(BUILD_DIR)/asm/os/__ppc_eabi_init.o \
 \
+$(BUILD_DIR)/asm/exi/EXIBios.o \
+$(BUILD_DIR)/asm/exi/EXIUart.o \
+$(BUILD_DIR)/asm/exi/EXICommon.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/exi/EXIBios_800285f0.o \
-$(BUILD_DIR)/asm/exi/EXIUart_80029ef0.o \
-$(BUILD_DIR)/asm/exi/EXICommon_8002a230.o \
 $(BUILD_DIR)/asm/si/SIBios_8002a3c0.o \
 $(BUILD_DIR)/asm/si/SISamplingRate_8002b9c0.o \
 $(BUILD_DIR)/asm/db/db_8002bab0.o \
@@ -3218,7 +3219,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/exi/EXIBios_8042fb40.o \
 $(BUILD_DIR)/asm/si/SIBios_8042fb88.o \
 $(BUILD_DIR)/asm/si/SISamplingRate_8042fbf8.o \
 $(BUILD_DIR)/asm/vi/vi_8042fc90.o \
@@ -5038,7 +5038,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/exi/EXIBios_8049a290.o \
 $(BUILD_DIR)/asm/si/SIBios_8049a350.o \
 $(BUILD_DIR)/asm/vi/vi_8049a570.o \
 $(BUILD_DIR)/asm/vi/vi3in1_8049a6e0.o \
@@ -5186,7 +5185,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/exi/EXIBios_80556518.o \
 $(BUILD_DIR)/asm/si/SIBios_80556520.o \
 $(BUILD_DIR)/asm/vi/vi_80556528.o \
 $(BUILD_DIR)/asm/vi/i2c_80556548.o \
@@ -5641,8 +5639,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/exi/EXIBios_8055c8c8.o \
-$(BUILD_DIR)/asm/exi/EXIUart_8055c8d0.o \
 $(BUILD_DIR)/asm/si/SIBios_8055c8e0.o \
 $(BUILD_DIR)/asm/si/SISamplingRate_8055c8f0.o \
 $(BUILD_DIR)/asm/db/db_8055c8f8.o \
@@ -5877,7 +5873,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/exi/EXICommon_8055e528.o \
 $(BUILD_DIR)/asm/mtx/mtx_8055e530.o \
 $(BUILD_DIR)/asm/mtx/mtx44_8055e550.o \
 $(BUILD_DIR)/asm/mtx/vec_8055e568.o \

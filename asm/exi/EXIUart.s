@@ -243,3 +243,21 @@ lbl_8002A214:
 /* 8002A224 00026064  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002A228 00026068  4E 80 00 20 */	blr
 /* 8002A22C 0002606C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global Enabled_8055C8D0
+Enabled_8055C8D0:
+	.skip 0x4
+
+.global BarnacleEnabled
+BarnacleEnabled:
+	.skip 0x4
+
+.global Dev
+Dev:
+	.skip 0x4
+
+.global Chan
+Chan:
+	.skip 0x4

@@ -47,3 +47,13 @@ lbl_801741FC:
 /* 80174204 00170044  00 00 00 00 */	.4byte 0x00000000
 /* 80174208 00170048  00 00 00 00 */	.4byte 0x00000000
 /* 8017420C 0017004C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global g_pMalloc
+g_pMalloc:
+	.skip 0x4
+
+.global g_pFree
+g_pFree:
+	.skip 0x4

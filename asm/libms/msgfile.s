@@ -183,3 +183,39 @@ lbl_80174454:
 /* 80174464 001702A4  4E 80 00 20 */	blr
 /* 80174468 001702A8  00 00 00 00 */	.4byte 0x00000000
 /* 8017446C 001702AC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@2545"
+"@2545":
+
+	.4byte 0x4D736753
+	.4byte 0x7464426E
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@2546"
+"@2546":
+
+	.4byte 0x4C424C31
+	.4byte 0
+
+.global "@2547"
+"@2547":
+
+	.4byte 0x54585432
+	.4byte 0
+
+.global "@2548"
+"@2548":
+
+	.4byte 0x41545231
+	.4byte 0
+
+.global "@2549_80556B08"
+"@2549_80556B08":
+
+	.4byte 0x54535931
+	.4byte 0

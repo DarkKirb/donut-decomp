@@ -627,12 +627,13 @@ $(BUILD_DIR)/asm/libMobiclip/VX2_InverseQuantization.o \
 $(BUILD_DIR)/asm/libMobiclip/VX2_MotionCompensation.o \
 $(BUILD_DIR)/asm/libMobiclip/VX2_Pred.o \
 \
+$(BUILD_DIR)/asm/libms/libms.o \
+$(BUILD_DIR)/asm/libms/msgfile.o \
+$(BUILD_DIR)/asm/libms/commonbin.o \
+$(BUILD_DIR)/asm/libms/projfile.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/libms/libms_80174190.o \
-$(BUILD_DIR)/asm/libms/msgfile_80174210.o \
-$(BUILD_DIR)/asm/libms/commonbin_80174470.o \
-$(BUILD_DIR)/asm/libms/projfile_801746a0.o \
 $(BUILD_DIR)/asm/src/Main_80174ad8.o \
 $(BUILD_DIR)/asm/src/TPL_80174af8.o \
 $(BUILD_DIR)/asm/src/AddOnMint_80174cb8.o \
@@ -3133,8 +3134,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/libms/msgfile_80452ae0.o \
-$(BUILD_DIR)/asm/libms/projfile_80452af0.o \
 $(BUILD_DIR)/asm/src/AppImpl_80452b00.o \
 $(BUILD_DIR)/asm/src/DvdWatch_80452b30.o \
 $(BUILD_DIR)/asm/src/DvdWatch_ENG_80452bc0.o \
@@ -4781,8 +4780,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/libms/msgfile_80556af0.o \
-$(BUILD_DIR)/asm/libms/projfile_80556b10.o \
 $(BUILD_DIR)/asm/src/Main_80556b70.o \
 $(BUILD_DIR)/asm/src/DvdWatch_ENG_80556b78.o \
 $(BUILD_DIR)/asm/src/HIDErrorMenu_80556b80.o \
@@ -5153,7 +5150,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/libms/libms_8055d0e8.o \
 $(BUILD_DIR)/asm/src/AppImpl_8055d0f0.o \
 $(BUILD_DIR)/asm/src/Application_8055d130.o \
 $(BUILD_DIR)/asm/src/AutoResetTimer_8055d138.o \

@@ -229,9 +229,10 @@ $(BUILD_DIR)/asm/wenc/wenc.o \
 $(BUILD_DIR)/asm/enc/encutility.o \
 $(BUILD_DIR)/asm/enc/encunicode.o \
 \
+$(BUILD_DIR)/asm/arc/arc.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/arc/arc_8004dd70.o \
 $(BUILD_DIR)/asm/ipc/ipcMain_8004e730.o \
 $(BUILD_DIR)/asm/ipc/ipcclt_8004e820.o \
 $(BUILD_DIR)/asm/ipc/memory_80050280.o \
@@ -3228,7 +3229,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/arc/arc_80438498.o \
 $(BUILD_DIR)/asm/fs/fs_80438508.o \
 $(BUILD_DIR)/asm/pad/Pad_80438530.o \
 $(BUILD_DIR)/asm/wpad/WPAD_80438588.o \
@@ -5142,7 +5142,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/arc/arc_805567a0.o \
 $(BUILD_DIR)/asm/ipc/ipcclt_805567a8.o \
 $(BUILD_DIR)/asm/fs/fs_805567b0.o \
 $(BUILD_DIR)/asm/pad/Pad_805567c0.o \

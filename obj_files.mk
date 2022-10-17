@@ -443,12 +443,13 @@ $(BUILD_DIR)/asm/libnw4r_lyt/lyt_arcResourceAccessor.o \
 $(BUILD_DIR)/asm/libnw4r_lyt/lyt_common.o \
 $(BUILD_DIR)/asm/libnw4r_lyt/lyt_util.o \
 \
+$(BUILD_DIR)/asm/libnw4r_math/math_arithmetic.o \
+$(BUILD_DIR)/asm/libnw4r_math/math_triangular.o \
+$(BUILD_DIR)/asm/libnw4r_math/math_types.o \
+$(BUILD_DIR)/asm/libnw4r_math/math_geometry.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_arithmetic_800fe910.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_triangular_800feaa0.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_types_800fedc0.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_geometry_800ff1f0.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_AnimSound_800ffde0.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_AxManager_800ffe40.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_AxVoice_80100fd0.o \
@@ -3010,7 +3011,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_triangular_80408f10.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_BiquadFilterPreset_80409f20.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_EnvGenerator_8040b358.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_Lfo_8040b658.o \
@@ -3196,8 +3196,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_arithmetic_804415c0.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_triangular_80441ed0.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_BasicPlayer_80441fd8.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_BasicSound_80442000.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_BiquadFilterPreset_80442038.o \
@@ -5522,10 +5520,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_arithmetic_8055f1d8.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_triangular_8055f1f8.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_types_8055f218.o \
-$(BUILD_DIR)/asm/libnw4r_math/math_geometry_8055f230.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_AxManager_8055f240.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_AxVoice_8055f258.o \
 $(BUILD_DIR)/asm/libnw4r_snd/snd_Bank_8055f280.o \

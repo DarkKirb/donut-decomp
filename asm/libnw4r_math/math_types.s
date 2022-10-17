@@ -307,3 +307,27 @@ MTX44Copy__Q24nw4r4mathFPQ34nw4r4math5MTX44PCQ34nw4r4math5MTX44:
 /* 800FF1E4 000FB024  00 00 00 00 */	.4byte 0x00000000
 /* 800FF1E8 000FB028  00 00 00 00 */	.4byte 0x00000000
 /* 800FF1EC 000FB02C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@4187"
+"@4187":
+
+	.4byte 0
+
+.global "@4190"
+"@4190":
+
+	.4byte 0x3F800000
+
+.global "@4265"
+"@4265":
+
+	.4byte 0x3CC90FDB
+	.4byte 0
+
+.global "@4279"
+"@4279":
+
+	.4byte 0x47800000
+	.4byte 0x47800000

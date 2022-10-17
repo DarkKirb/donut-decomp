@@ -849,3 +849,25 @@ lbl_800FFDD4:
 /* 800FFDD4 000FBC14  38 21 00 20 */	addi r1, r1, 0x20
 /* 800FFDD8 000FBC18  4E 80 00 20 */	blr
 /* 800FFDDC 000FBC1C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@10654"
+"@10654":
+
+	.4byte 0x3F000000
+
+.global "@10655"
+"@10655":
+
+	.4byte 0
+
+.global "@10661"
+"@10661":
+
+	.4byte 0x3CC90FDB
+
+.global "@10662"
+"@10662":
+
+	.4byte 0x3F360B61

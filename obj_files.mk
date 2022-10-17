@@ -152,9 +152,10 @@ $(BUILD_DIR)/asm/exi/EXICommon.o \
 $(BUILD_DIR)/asm/si/SIBios.o \
 $(BUILD_DIR)/asm/si/SISamplingRate.o \
 \
+$(BUILD_DIR)/asm/db/db.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/db/db_8002bab0.o \
 $(BUILD_DIR)/asm/vi/vi_8002bad0.o \
 $(BUILD_DIR)/asm/vi/i2c_8002e490.o \
 $(BUILD_DIR)/asm/vi/vi3in1_8002edb0.o \
@@ -5636,7 +5637,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/db/db_8055c8f8.o \
 $(BUILD_DIR)/asm/vi/vi_8055c900.o \
 $(BUILD_DIR)/asm/vi/i2c_8055c9b0.o \
 $(BUILD_DIR)/asm/vi/vi3in1_8055c9b8.o \

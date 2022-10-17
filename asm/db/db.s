@@ -13,3 +13,9 @@ lbl_8002BAC4:
 /* 8002BAC4 00027904  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8002BAC8 00027908  4E 80 00 20 */	blr
 /* 8002BACC 0002790C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __DBInterface
+__DBInterface:
+	.skip 0x8

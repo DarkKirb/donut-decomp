@@ -1823,3 +1823,141 @@ lbl_80053DD0:
 /* 80053DE4 0004FC24  38 21 00 10 */	addi r1, r1, 0x10
 /* 80053DE8 0004FC28  4E 80 00 20 */	blr
 /* 80053DEC 0004FC2C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_80438530"
+"@1_80438530":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20504144
+	.4byte 0x20097265
+	.4byte 0x6C656173
+	.4byte 0x65206275
+	.4byte 0x696C643A
+	.4byte 0x20417567
+	.4byte 0x20323320
+	.4byte 0x32303130
+	.4byte 0x2031373A
+	.4byte 0x33333A31
+	.4byte 0x37202830
+	.4byte 0x78343330
+	.4byte 0x325F3134
+	.4byte 0x3529203E
+	.4byte 0x3E000000
+
+.global ShutdownFunctionInfo_80438578
+ShutdownFunctionInfo_80438578:
+
+	.4byte OnShutdown_80053C60
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global Origin
+Origin:
+	.skip 0x30
+
+.global Type_804C1990
+Type_804C1990:
+	.skip 0x10
+
+.global CmdProbeDevice
+CmdProbeDevice:
+	.skip 0x40
+
+.global "@LOCAL@PADRead__FP9PADStatus@pre_status@1"
+"@LOCAL@PADRead__FP9PADStatus@pre_status@1":
+	.skip 0x40
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __PADVersion
+__PADVersion:
+
+	.4byte "@1_80438530"
+
+.global ResettingChan
+ResettingChan:
+
+	.4byte 0x00000020
+
+.global XPatchBits
+XPatchBits:
+
+	.4byte 0xF0000000
+
+.global AnalogMode
+AnalogMode:
+
+	.4byte 0x00000300
+
+.global Spec
+Spec:
+
+	.4byte 0x00000005
+
+.global MakeStatus
+MakeStatus:
+
+	.4byte SPEC2_MakeStatus
+
+.global CmdReadOrigin
+CmdReadOrigin:
+
+	.4byte 0x41000000
+
+.global CmdCalibrate
+CmdCalibrate:
+
+	.4byte 0x42000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@LOCAL@OnShutdown__FiUl@recalibrated"
+"@LOCAL@OnShutdown__FiUl@recalibrated":
+	.skip 0x4
+
+.global SamplingCallback
+SamplingCallback:
+	.skip 0x4
+
+.global __PADSpec
+__PADSpec:
+	.skip 0x4
+
+.global BarrelBits
+BarrelBits:
+	.skip 0x4
+
+.global PendingBits
+PendingBits:
+	.skip 0x4
+
+.global CheckingBits
+CheckingBits:
+	.skip 0x4
+
+.global WaitingBits
+WaitingBits:
+	.skip 0x4
+
+.global RecalibrateBits
+RecalibrateBits:
+	.skip 0x4
+
+.global ResettingBits
+ResettingBits:
+	.skip 0x4
+
+.global EnabledBits
+EnabledBits:
+	.skip 0x4
+
+.global Initialized_8055CD88
+Initialized_8055CD88:
+	.skip 0x8

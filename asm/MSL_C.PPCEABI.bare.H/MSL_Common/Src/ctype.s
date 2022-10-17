@@ -1,0 +1,289 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
+.global toupper
+toupper:
+/* 8000A3BC 000061FC  28 03 00 FF */	cmplwi r3, 0xff
+/* 8000A3C0 00006200  38 00 00 01 */	li r0, 0x1
+/* 8000A3C4 00006204  41 81 00 08 */	bgt lbl_8000A3CC
+/* 8000A3C8 00006208  38 00 00 00 */	li r0, 0x0
+.global lbl_8000A3CC
+lbl_8000A3CC:
+/* 8000A3CC 0000620C  2C 00 00 00 */	cmpwi r0, 0x0
+/* 8000A3D0 00006210  4C 82 00 20 */	bnelr
+/* 8000A3D4 00006214  3C 80 80 42 */	lis r4, _current_locale@ha
+/* 8000A3D8 00006218  38 84 15 10 */	addi r4, r4, _current_locale@l
+/* 8000A3DC 0000621C  80 84 00 38 */	lwz r4, 0x38(r4)
+/* 8000A3E0 00006220  80 84 00 0C */	lwz r4, 0xc(r4)
+/* 8000A3E4 00006224  7C 64 18 AE */	lbzx r3, r4, r3
+/* 8000A3E8 00006228  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global __ctype_mapC
+__ctype_mapC:
+
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040106
+	.4byte 0x01040104
+	.4byte 0x01040104
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x014200D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00651
+	.4byte 0x06510651
+	.4byte 0x06510651
+	.4byte 0x06510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x025100D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00471
+	.4byte 0x04710471
+	.4byte 0x04710471
+	.4byte 0x04710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x007100D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __lower_mapC
+__lower_mapC:
+
+	.4byte 0x00010203
+	.4byte 0x04050607
+	.4byte 0x08090A0B
+	.4byte 0x0C0D0E0F
+	.4byte 0x10111213
+	.4byte 0x14151617
+	.4byte 0x18191A1B
+	.4byte 0x1C1D1E1F
+	.4byte 0x20212223
+	.4byte 0x24252627
+	.4byte 0x28292A2B
+	.4byte 0x2C2D2E2F
+	.4byte 0x30313233
+	.4byte 0x34353637
+	.4byte 0x38393A3B
+	.4byte 0x3C3D3E3F
+	.4byte 0x40616263
+	.4byte 0x64656667
+	.4byte 0x68696A6B
+	.4byte 0x6C6D6E6F
+	.4byte 0x70717273
+	.4byte 0x74757677
+	.4byte 0x78797A5B
+	.4byte 0x5C5D5E5F
+	.4byte 0x60616263
+	.4byte 0x64656667
+	.4byte 0x68696A6B
+	.4byte 0x6C6D6E6F
+	.4byte 0x70717273
+	.4byte 0x74757677
+	.4byte 0x78797A7B
+	.4byte 0x7C7D7E7F
+	.4byte 0x80818283
+	.4byte 0x84858687
+	.4byte 0x88898A8B
+	.4byte 0x8C8D8E8F
+	.4byte 0x90919293
+	.4byte 0x94959697
+	.4byte 0x98999A9B
+	.4byte 0x9C9D9E9F
+	.4byte 0xA0A1A2A3
+	.4byte 0xA4A5A6A7
+	.4byte 0xA8A9AAAB
+	.4byte 0xACADAEAF
+	.4byte 0xB0B1B2B3
+	.4byte 0xB4B5B6B7
+	.4byte 0xB8B9BABB
+	.4byte 0xBCBDBEBF
+	.4byte 0xC0C1C2C3
+	.4byte 0xC4C5C6C7
+	.4byte 0xC8C9CACB
+	.4byte 0xCCCDCECF
+	.4byte 0xD0D1D2D3
+	.4byte 0xD4D5D6D7
+	.4byte 0xD8D9DADB
+	.4byte 0xDCDDDEDF
+	.4byte 0xE0E1E2E3
+	.4byte 0xE4E5E6E7
+	.4byte 0xE8E9EAEB
+	.4byte 0xECEDEEEF
+	.4byte 0xF0F1F2F3
+	.4byte 0xF4F5F6F7
+	.4byte 0xF8F9FAFB
+	.4byte 0xFCFDFEFF
+
+.global __upper_mapC
+__upper_mapC:
+
+	.4byte 0x00010203
+	.4byte 0x04050607
+	.4byte 0x08090A0B
+	.4byte 0x0C0D0E0F
+	.4byte 0x10111213
+	.4byte 0x14151617
+	.4byte 0x18191A1B
+	.4byte 0x1C1D1E1F
+	.4byte 0x20212223
+	.4byte 0x24252627
+	.4byte 0x28292A2B
+	.4byte 0x2C2D2E2F
+	.4byte 0x30313233
+	.4byte 0x34353637
+	.4byte 0x38393A3B
+	.4byte 0x3C3D3E3F
+	.4byte 0x40414243
+	.4byte 0x44454647
+	.4byte 0x48494A4B
+	.4byte 0x4C4D4E4F
+	.4byte 0x50515253
+	.4byte 0x54555657
+	.4byte 0x58595A5B
+	.4byte 0x5C5D5E5F
+	.4byte 0x60414243
+	.4byte 0x44454647
+	.4byte 0x48494A4B
+	.4byte 0x4C4D4E4F
+	.4byte 0x50515253
+	.4byte 0x54555657
+	.4byte 0x58595A7B
+	.4byte 0x7C7D7E7F
+	.4byte 0x80818283
+	.4byte 0x84858687
+	.4byte 0x88898A8B
+	.4byte 0x8C8D8E8F
+	.4byte 0x90919293
+	.4byte 0x94959697
+	.4byte 0x98999A9B
+	.4byte 0x9C9D9E9F
+	.4byte 0xA0A1A2A3
+	.4byte 0xA4A5A6A7
+	.4byte 0xA8A9AAAB
+	.4byte 0xACADAEAF
+	.4byte 0xB0B1B2B3
+	.4byte 0xB4B5B6B7
+	.4byte 0xB8B9BABB
+	.4byte 0xBCBDBEBF
+	.4byte 0xC0C1C2C3
+	.4byte 0xC4C5C6C7
+	.4byte 0xC8C9CACB
+	.4byte 0xCCCDCECF
+	.4byte 0xD0D1D2D3
+	.4byte 0xD4D5D6D7
+	.4byte 0xD8D9DADB
+	.4byte 0xDCDDDEDF
+	.4byte 0xE0E1E2E3
+	.4byte 0xE4E5E6E7
+	.4byte 0xE8E9EAEB
+	.4byte 0xECEDEEEF
+	.4byte 0xF0F1F2F3
+	.4byte 0xF4F5F6F7
+	.4byte 0xF8F9FAFB
+	.4byte 0xFCFDFEFF

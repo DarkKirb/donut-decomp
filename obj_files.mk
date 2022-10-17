@@ -189,9 +189,10 @@ $(BUILD_DIR)/asm/dvd/dvdFatal.o \
 $(BUILD_DIR)/asm/dvd/dvdDeviceError.o \
 $(BUILD_DIR)/asm/dvd/dvd_broadway.o \
 \
+$(BUILD_DIR)/asm/ai/ai.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/ai/ai_80042860.o \
 $(BUILD_DIR)/asm/ax/AX_80042e10.o \
 $(BUILD_DIR)/asm/ax/AXAlloc_80042e80.o \
 $(BUILD_DIR)/asm/ax/AXAux_80043370.o \
@@ -3222,7 +3223,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/ai/ai_80432f40.o \
 $(BUILD_DIR)/asm/ax/AX_80432f88.o \
 $(BUILD_DIR)/asm/ax/AXVPB_80432fd0.o \
 $(BUILD_DIR)/asm/ax/AXComp_80433060.o \
@@ -5160,7 +5160,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/ai/ai_80556610.o \
 $(BUILD_DIR)/asm/ax/AX_80556618.o \
 $(BUILD_DIR)/asm/ax/DSPCode_80556620.o \
 $(BUILD_DIR)/asm/axfx/AXFXHooks_80556628.o \
@@ -5601,7 +5600,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/ai/ai_8055cb40.o \
 $(BUILD_DIR)/asm/ax/AX_8055cb80.o \
 $(BUILD_DIR)/asm/ax/AXAlloc_8055cb88.o \
 $(BUILD_DIR)/asm/ax/AXAux_8055cb90.o \

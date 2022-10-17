@@ -411,3 +411,97 @@ lbl_80042DD4:
 /* 80042E04 0003EC44  38 21 00 20 */	addi r1, r1, 0x20
 /* 80042E08 0003EC48  4E 80 00 20 */	blr
 /* 80042E0C 0003EC4C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_80432F40"
+"@1_80432F40":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20414920
+	.4byte 0x0972656C
+	.4byte 0x65617365
+	.4byte 0x20627569
+	.4byte 0x6C643A20
+	.4byte 0x41756720
+	.4byte 0x32332032
+	.4byte 0x30313020
+	.4byte 0x31373A32
+	.4byte 0x393A3437
+	.4byte 0x20283078
+	.4byte 0x34333032
+	.4byte 0x5F313435
+	.4byte 0x29203E3E
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __AIVersion
+__AIVersion:
+
+	.4byte "@1_80432F40"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AI_init_flag
+__AI_init_flag:
+	.skip 0x4
+
+.global __AID_Active
+__AID_Active:
+	.skip 0x4
+
+.global buffer
+buffer:
+	.skip 0x4
+
+.global lbl_8055CB4C
+lbl_8055CB4C:
+	.skip 0x4
+
+.global max_wait
+max_wait:
+	.skip 0x4
+
+.global lbl_8055CB54
+lbl_8055CB54:
+	.skip 0x4
+
+.global min_wait
+min_wait:
+	.skip 0x4
+
+.global lbl_8055CB5C
+lbl_8055CB5C:
+	.skip 0x4
+
+.global bound_48KHz
+bound_48KHz:
+	.skip 0x4
+
+.global lbl_8055CB64
+lbl_8055CB64:
+	.skip 0x4
+
+.global bound_32KHz
+bound_32KHz:
+	.skip 0x4
+
+.global lbl_8055CB6C
+lbl_8055CB6C:
+	.skip 0x4
+
+.global __OldStack
+__OldStack:
+	.skip 0x4
+
+.global __CallbackStack
+__CallbackStack:
+	.skip 0x4
+
+.global __AID_Callback
+__AID_Callback:
+	.skip 0x8

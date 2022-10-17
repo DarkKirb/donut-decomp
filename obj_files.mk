@@ -687,17 +687,19 @@ $(BUILD_DIR)/asm/src/effect/detail/PtclEffectRes.o \
 $(BUILD_DIR)/asm/src/effect/detail/RequestArg.o \
 $(BUILD_DIR)/asm/src/effect/detail/RequestArgOption.o \
 \
+$(BUILD_DIR)/asm/src/fdg/FDGAccessor.o \
+\
+$(BUILD_DIR)/asm/src/file/DNOption.o \
+$(BUILD_DIR)/asm/src/file/FDGManager.o \
+$(BUILD_DIR)/asm/src/file/FileAccessor.o \
+$(BUILD_DIR)/asm/src/file/FileClearDisableScope.o \
+$(BUILD_DIR)/asm/src/file/FileLoader.o \
+$(BUILD_DIR)/asm/src/file/FileManager.o \
+$(BUILD_DIR)/asm/src/file/FileTree.o \
+$(BUILD_DIR)/asm/src/file/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/FDGAccessor_801870ec.o \
-$(BUILD_DIR)/asm/src/DNOption_80187538.o \
-$(BUILD_DIR)/asm/src/FDGManager_80187544.o \
-$(BUILD_DIR)/asm/src/FileAccessor_80187a50.o \
-$(BUILD_DIR)/asm/src/FileClearDisableScope_80187b5c.o \
-$(BUILD_DIR)/asm/src/FileLoader_80187c00.o \
-$(BUILD_DIR)/asm/src/FileManager_80188204.o \
-$(BUILD_DIR)/asm/src/FileTree_801882bc.o \
-$(BUILD_DIR)/asm/src/Utility_80188bf4.o \
 $(BUILD_DIR)/asm/src/Font_8018917c.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_8018933c.o \
 $(BUILD_DIR)/asm/src/FontLoader_801893fc.o \
@@ -3013,7 +3015,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/FDGManager_80414518.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_80414528.o \
 $(BUILD_DIR)/asm/src/FreezeThread_80414570.o \
 $(BUILD_DIR)/asm/src/ColorAnimMaterialTarget_80414598.o \
@@ -3146,7 +3147,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/FDGManager_804537e0.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_804537f0.o \
 $(BUILD_DIR)/asm/src/Console_804538a0.o \
 $(BUILD_DIR)/asm/src/Exception_80453990.o \
@@ -4775,9 +4775,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/FDGManager_80556d10.o \
-$(BUILD_DIR)/asm/src/FileLoader_80556d18.o \
-$(BUILD_DIR)/asm/src/Utility_80556d20.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_80556d28.o \
 $(BUILD_DIR)/asm/src/FontManager_80556d30.o \
 $(BUILD_DIR)/asm/src/Exception_80556d38.o \
@@ -5138,7 +5135,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Utility_8055d180.o \
 $(BUILD_DIR)/asm/src/Exception_8055d188.o \
 $(BUILD_DIR)/asm/src/FreezeManager_8055d190.o \
 $(BUILD_DIR)/asm/src/MapFile_8055d1a0.o \
@@ -5271,7 +5267,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/FDGManager_8055f650.o \
 $(BUILD_DIR)/asm/src/Exception_8055f658.o \
 $(BUILD_DIR)/asm/src/AutoReqAnim_8055f660.o \
 $(BUILD_DIR)/asm/src/CharaAnimBlender_8055f670.o \

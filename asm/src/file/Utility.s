@@ -433,3 +433,17 @@ UncompressedFile__Q24file7UtilityFRCQ23mem8MemBlockRQ23mem10IAllocator:
 /* 80189170 00184FB0  7C 08 03 A6 */	mtlr r0
 /* 80189174 00184FB4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80189178 00184FB8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49660"
+"@49660":
+
+	.4byte 0x25732E25
+	.4byte 0x73257300
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_isFileLoadWarningEnable__Q24file21@unnamed@Utility_cpp@"
+"t_isFileLoadWarningEnable__Q24file21@unnamed@Utility_cpp@":
+	.skip 0x8

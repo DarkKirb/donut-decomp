@@ -374,3 +374,39 @@ reset__Q24file10FDGManagerFv:
 /* 80187A44 00183884  7C 08 03 A6 */	mtlr r0
 /* 80187A48 00183888  38 21 00 20 */	addi r1, r1, 0x20
 /* 80187A4C 0018388C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_PREFIX_EXFLAG__Q24file24@unnamed@FDGManager_cpp@"
+"T_PREFIX_EXFLAG__Q24file24@unnamed@FDGManager_cpp@":
+
+	.4byte 0x3A455846
+	.4byte 0x6C61673A
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49254_804537E0"
+"@49254_804537E0":
+
+	.4byte 0x6664672F
+	.4byte 0x41726368
+	.4byte 0x6976652E
+	.4byte 0x64617400
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_FILE_PATH__Q24file24@unnamed@FDGManager_cpp@"
+"T_FILE_PATH__Q24file24@unnamed@FDGManager_cpp@":
+
+	.4byte "@49254_804537E0"
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_PREFIX_MSG__Q24file24@unnamed@FDGManager_cpp@"
+"T_PREFIX_MSG__Q24file24@unnamed@FDGManager_cpp@":
+
+	.4byte 0x3A4D5347
+	.4byte 0x3A000000

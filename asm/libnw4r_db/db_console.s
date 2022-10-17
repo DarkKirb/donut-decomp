@@ -859,3 +859,35 @@ lbl_80128328:
 /* 80128344 00124184  38 21 00 10 */	addi r1, r1, 0x10
 /* 80128348 00124188  4E 80 00 20 */	blr
 /* 8012834C 0012418C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global sMutex__Q24nw4r2db
+sMutex__Q24nw4r2db:
+	.skip 0x18
+
+.global "@LOCAL@Console_VFPrintf__Q24nw4r2dbFQ34nw4r2db17ConsoleOutputTypePQ44nw4r2db6detail11ConsoleHeadPCcP16__va_list_struct@sStrBuf@0"
+"@LOCAL@Console_VFPrintf__Q24nw4r2dbFQ34nw4r2db17ConsoleOutputTypePQ44nw4r2db6detail11ConsoleHeadPCcP16__va_list_struct@sStrBuf@0":
+	.skip 0x400
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@8595"
+"@8595":
+
+	.4byte 0x25730A00
+
+.global "@8712_80556A8C"
+"@8712_80556A8C":
+
+	.4byte 0x25730000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global sConsoleList__Q24nw4r2db
+sConsoleList__Q24nw4r2db:
+	.skip 0x4
+
+.global sInitialized__Q24nw4r2db_8055D0BC
+sInitialized__Q24nw4r2db_8055D0BC:
+	.skip 0x4

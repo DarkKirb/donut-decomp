@@ -181,3 +181,45 @@ WarningAlarmFunc___Q24nw4r2dbFP7OSAlarmP9OSContext:
 /* 801285C4 00124404  4E 80 00 20 */	blr
 /* 801285C8 00124408  00 00 00 00 */	.4byte 0x00000000
 /* 801285CC 0012440C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@6682"
+"@6682":
+
+	.4byte 0x25733A25
+	.4byte 0x64205761
+	.4byte 0x726E696E
+	.4byte 0x673A0000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@GetWarningAlarm___Q24nw4r2dbFv@sWarningAlarm@0"
+"@LOCAL@GetWarningAlarm___Q24nw4r2dbFv@sWarningAlarm@0":
+	.skip 0x30
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global sDispWarningAuto__Q24nw4r2db
+sDispWarningAuto__Q24nw4r2db:
+
+	.4byte 0x01000000
+
+.global "@6647"
+"@6647":
+
+	.4byte 0x0A000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global sWarningTime__Q24nw4r2db
+sWarningTime__Q24nw4r2db:
+	.skip 0x4
+
+.global sAssertionConsole__Q24nw4r2db
+sAssertionConsole__Q24nw4r2db:
+	.skip 0x4
+
+.global "@LOCAL@GetWarningAlarm___Q24nw4r2dbFv@sInitializedAlarm"
+"@LOCAL@GetWarningAlarm___Q24nw4r2dbFv@sInitializedAlarm":
+	.skip 0x8

@@ -523,11 +523,12 @@ $(BUILD_DIR)/asm/libnw4r_ut/ut_ResFont.o \
 $(BUILD_DIR)/asm/libnw4r_ut/ut_CharWriter.o \
 $(BUILD_DIR)/asm/libnw4r_ut/ut_TextWriterBase.o \
 \
+$(BUILD_DIR)/asm/libnw4r_db/db_directPrint.o \
+$(BUILD_DIR)/asm/libnw4r_db/db_console.o \
+$(BUILD_DIR)/asm/libnw4r_db/db_assert.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_80126ce0.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_console_80127830.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_assert_80128350.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMFrameController_801285d0.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMAnmController_80128780.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMGUIManager_80128860.o \
@@ -3001,7 +3002,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_8040db28.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMFrameController_8040dde0.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMGUIManager_8040dde8.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMController_8040ddf8.o \
@@ -3181,8 +3181,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_80442998.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_assert_804429a8.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMFrameController_804429b8.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMAnmController_804429e0.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMGUIManager_80442a28.o \
@@ -4827,9 +4825,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_80543088.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_console_805430b0.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_assert_805434c8.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMGUIManager_805434f8.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMController_80543500.o \
 $(BUILD_DIR)/asm/homebuttonLib/HBMRemoteSpk_805436a0.o \
@@ -4902,8 +4897,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_console_80556a88.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_assert_80556a90.o \
 $(BUILD_DIR)/asm/nrel/ExpHeapMapUser_80556a98.o \
 $(BUILD_DIR)/asm/nrel/ExpHeapAccessor_80556aa8.o \
 $(BUILD_DIR)/asm/libMobiclip/MoApi_80556ab0.o \
@@ -5285,9 +5278,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_8055d0b0.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_console_8055d0b8.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_assert_8055d0c0.o \
 $(BUILD_DIR)/asm/libMobiclip/MoApi_8055d0d0.o \
 $(BUILD_DIR)/asm/libMobiclip/MoSdkMem_8055d0d8.o \
 $(BUILD_DIR)/asm/libms/libms_8055d0e8.o \
@@ -5432,7 +5422,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/libnw4r_db/db_directPrint_8055f520.o \
 $(BUILD_DIR)/asm/nrel/Alert_8055f550.o \
 $(BUILD_DIR)/asm/nrel/HeapMapBlockDrawer_8055f558.o \
 $(BUILD_DIR)/asm/nrel/GXSettingFor2D_8055f568.o \

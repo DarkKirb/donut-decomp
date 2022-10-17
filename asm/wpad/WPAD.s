@@ -12734,3 +12734,496 @@ lbl_8005EC6C:
 /* 8005EC84 0005AAC4  00 00 00 00 */	.4byte 0x00000000
 /* 8005EC88 0005AAC8  00 00 00 00 */	.4byte 0x00000000
 /* 8005EC8C 0005AACC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global certn
+certn:
+
+	.4byte 0x00000010
+	.4byte 0xA3DC5F11
+	.4byte 0x1B2EC797
+	.4byte 0xAC9657B8
+	.4byte 0xCBEB788D
+	.4byte 0x991EF8B8
+	.4byte 0x70CAA54E
+	.4byte 0x071CE896
+	.4byte 0x63252CD0
+	.4byte 0xFD8B6316
+	.4byte 0x9E835020
+	.4byte 0xBF9ED1EF
+	.4byte 0x0F870932
+	.4byte 0xBC88B819
+	.4byte 0xAF2C02E5
+	.4byte 0x657BBFB9
+	.4byte 0x81194F1C
+	.4byte 0
+
+.global certv
+certv:
+
+	.4byte 0x00000010
+	.4byte 0x99D2071A
+	.4byte 0x8D823A01
+	.4byte 0x4C50A978
+	.4byte 0xD8A5BFFF
+	.4byte 0x4CAF5CE8
+	.4byte 0x13A71CBA
+	.4byte 0x6FCFF21B
+	.4byte 0x8C5399BF
+	.4byte 0x8896982D
+	.4byte 0xCB6EC891
+	.4byte 0x6BA136DA
+	.4byte 0x25B8F224
+	.4byte 0x8F0F42C0
+	.4byte 0x15EA9941
+	.4byte 0xFDD1903E
+	.4byte 0x1AF308B6
+	.4byte 0
+
+.global "@LOCAL@WPADControlDpd__FlUlPFll_v@cfg1"
+"@LOCAL@WPADControlDpd__FlUlPFll_v@cfg1":
+
+	.4byte 0x02000071
+	.4byte 0x01006400
+	.4byte 0xFE020000
+	.4byte 0x71010096
+	.4byte 0x00B40200
+	.4byte 0x00710100
+	.4byte 0xAA006402
+	.4byte 0x00007101
+	.4byte 0x00C80036
+	.4byte 0x07000071
+	.4byte 0x01007200
+	.4byte 0x20000000
+
+.global "@LOCAL@WPADControlDpd__FlUlPFll_v@cfg2@0"
+"@LOCAL@WPADControlDpd__FlUlPFll_v@cfg2@0":
+
+	.4byte 0xFD05B304
+	.4byte 0x63033503
+	.4byte 0x1F030000
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1504"
+"@1504":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20575041
+	.4byte 0x44200972
+	.4byte 0x656C6561
+	.4byte 0x73652062
+	.4byte 0x75696C64
+	.4byte 0x3A204175
+	.4byte 0x67203233
+	.4byte 0x20323031
+	.4byte 0x30203139
+	.4byte 0x3A34393A
+	.4byte 0x30362028
+	.4byte 0x30783433
+	.4byte 0x30325F31
+	.4byte 0x34352920
+	.4byte 0x3E3E0000
+
+.global ShutdownFunctionInfo_804385D0
+ShutdownFunctionInfo_804385D0:
+
+	.4byte OnShutdown_80053EA0
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
+
+.global "@6806"
+"@6806":
+
+	.4byte lbl_80054354
+	.4byte lbl_80054354
+	.4byte lbl_80054354
+	.4byte lbl_8005435C
+	.4byte lbl_8005435C
+	.4byte lbl_8005435C
+	.4byte lbl_8005438C
+	.4byte lbl_8005436C
+	.4byte lbl_8005435C
+	.4byte lbl_8005437C
+	.4byte lbl_80054384
+	.4byte lbl_8005439C
+	.4byte lbl_8005435C
+	.4byte lbl_80054394
+	.4byte lbl_8005435C
+	.4byte lbl_8005435C
+	.4byte lbl_80054364
+	.4byte lbl_80054374
+
+.global "@7538"
+"@7538":
+
+	.4byte lbl_80054734
+	.4byte lbl_80054734
+	.4byte lbl_80054734
+	.4byte lbl_800548AC
+	.4byte lbl_800548AC
+	.4byte lbl_800548AC
+	.4byte lbl_800550CC
+	.4byte lbl_80054A48
+	.4byte lbl_800548AC
+	.4byte lbl_80054B48
+	.4byte lbl_80054C84
+	.4byte lbl_800550CC
+	.4byte lbl_800548AC
+	.4byte lbl_80054CA8
+	.4byte lbl_800548AC
+	.4byte lbl_800548AC
+	.4byte lbl_800550CC
+	.4byte lbl_80054AC0
+
+.global "@8163"
+"@8163":
+
+	.4byte 0x4E696E74
+	.4byte 0x656E646F
+	.4byte 0x2052564C
+	.4byte 0x2D574243
+	.4byte 0
+
+.global "@8218"
+"@8218":
+
+	.4byte 0x4E696E74
+	.4byte 0x656E646F
+	.4byte 0x2052564C
+	.4byte 0x2D434E54
+	.4byte 0
+
+.global "@8277"
+"@8277":
+
+	.4byte 0x5741524E
+	.4byte 0x494E473A
+	.4byte 0x204F7665
+	.4byte 0x72777269
+	.4byte 0x7474656E
+	.4byte 0x20746865
+	.4byte 0x2063616C
+	.4byte 0x6C626163
+	.4byte 0x6B206E65
+	.4byte 0x65646564
+	.4byte 0x20627920
+	.4byte 0x4B504144
+	.4byte 0x2E0A0000
+
+.global "@8278"
+"@8278":
+
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20506C65
+	.4byte 0x61736520
+	.4byte 0x63616C6C
+	.4byte 0x204B5041
+	.4byte 0x44536574
+	.4byte 0x53616D70
+	.4byte 0x6C696E67
+	.4byte 0x43616C6C
+	.4byte 0x6261636B
+	.4byte 0x20696E73
+	.4byte 0x74656164
+	.4byte 0x206F6620
+	.4byte 0x57504144
+	.4byte 0x53657453
+	.4byte 0x616D706C
+	.4byte 0x696E6743
+	.4byte 0x616C6C62
+	.4byte 0x61636B2E
+	.4byte 0x0A000000
+
+.global "@8284"
+"@8284":
+
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20506C65
+	.4byte 0x61736520
+	.4byte 0x63616C6C
+	.4byte 0x204B5041
+	.4byte 0x44536574
+	.4byte 0x436F6E6E
+	.4byte 0x65637443
+	.4byte 0x616C6C62
+	.4byte 0x61636B20
+	.4byte 0x696E7374
+	.4byte 0x65616420
+	.4byte 0x6F662057
+	.4byte 0x50414453
+	.4byte 0x6574436F
+	.4byte 0x6E6E6563
+	.4byte 0x7443616C
+	.4byte 0x6C626163
+	.4byte 0x6B2E0A00
+
+.global "@9104"
+"@9104":
+
+	.4byte lbl_8005C91C
+	.4byte lbl_8005B864
+	.4byte lbl_8005C1B0
+	.4byte lbl_8005C394
+	.4byte lbl_8005C554
+	.4byte lbl_8005C570
+	.4byte lbl_8005C754
+	.4byte lbl_8005C910
+	.4byte lbl_8005C914
+
+.global "@9220"
+"@9220":
+
+	.4byte lbl_8005CE38
+	.4byte lbl_8005CE44
+	.4byte lbl_8005CE50
+	.4byte lbl_8005CE5C
+	.4byte lbl_8005CE68
+	.4byte lbl_8005CE74
+	.4byte lbl_8005CE80
+	.4byte lbl_8005CE8C
+	.4byte lbl_8005CE98
+	.4byte lbl_8005CEA4
+	.4byte lbl_8005CEB0
+	.4byte lbl_8005CEBC
+	.4byte lbl_8005CEF8
+	.4byte lbl_8005CF04
+	.4byte lbl_8005CF24
+	.4byte lbl_8005CEC8
+	.4byte lbl_8005CF1C
+	.4byte lbl_8005CF10
+	.4byte lbl_8005CED4
+	.4byte lbl_8005CEE0
+	.4byte lbl_8005CEEC
+
+.global "@9559_804387E8"
+"@9559_804387E8":
+
+	.4byte lbl_8005E01C
+	.4byte lbl_8005E1A0
+	.4byte lbl_8005E3AC
+	.4byte lbl_8005E5F0
+	.4byte lbl_8005E77C
+	.4byte lbl_8005E900
+	.4byte lbl_8005EB74
+	.4byte lbl_8005EB7C
+	.4byte lbl_8005EBCC
+	.4byte lbl_8005EBD4
+	.4byte lbl_8005EC00
+	.4byte lbl_8005EC08
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global _wpadManageAlarm
+_wpadManageAlarm:
+	.skip 0x30
+
+.global __rvl_p_wpadcb
+__rvl_p_wpadcb:
+	.skip 0x10
+
+.global __wpadManageHandlerStack
+__wpadManageHandlerStack:
+	.skip 0x1000
+
+.global _wpadHandle2PortTable
+_wpadHandle2PortTable:
+	.skip 0x2FA0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __WPADVersion
+__WPADVersion:
+
+	.4byte "@1504"
+
+.global _wpadOnReconnect
+_wpadOnReconnect:
+
+	.4byte 0xFFFFFFFF
+
+.global _wpad_diff_count_threshold
+_wpad_diff_count_threshold:
+
+	.4byte 0x00060004
+	.4byte 0x0006000C
+
+.global _wpad_hyst_count_threshold
+_wpad_hyst_count_threshold:
+
+	.4byte 0x001E001E
+	.4byte 0x001E001E
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global _wpadRegisterShutdownFunc
+_wpadRegisterShutdownFunc:
+	.skip 0x2
+
+.global _wpadSenseCnt
+_wpadSenseCnt:
+	.skip 0x2
+
+.global _wpadCheckCnt
+_wpadCheckCnt:
+	.skip 0x2
+
+.global _wpadAfhCnt
+_wpadAfhCnt:
+	.skip 0x2
+
+.global _wpadExtCnt
+_wpadExtCnt:
+	.skip 0x4
+
+.global _wpadRumbleCnt
+_wpadRumbleCnt:
+	.skip 0x4
+
+.global _wpadStartup
+_wpadStartup:
+	.skip 0x4
+
+.global _wpadReconnectWait
+_wpadReconnectWait:
+	.skip 0x4
+
+.global _wpadVSMInit
+_wpadVSMInit:
+	.skip 0x4
+
+.global _wpadTRNInit
+_wpadTRNInit:
+	.skip 0x4
+
+.global _wpadGTRInit
+_wpadGTRInit:
+	.skip 0x4
+
+.global _wpadDRMInit
+_wpadDRMInit:
+	.skip 0x4
+
+.global _wpadTKOInit
+_wpadTKOInit:
+	.skip 0x4
+
+.global _wpadTBLInit
+_wpadTBLInit:
+	.skip 0x4
+
+.global _wpadBLKInit
+_wpadBLKInit:
+	.skip 0x4
+
+.global _wpadDRWInit
+_wpadDRWInit:
+	.skip 0x4
+
+.global _enabledVSM
+_enabledVSM:
+	.skip 0x4
+
+.global _enabledTRN
+_enabledTRN:
+	.skip 0x4
+
+.global _enabledGTR
+_enabledGTR:
+	.skip 0x4
+
+.global _enabledDRM
+_enabledDRM:
+	.skip 0x4
+
+.global _enabledTKO
+_enabledTKO:
+	.skip 0x4
+
+.global _enabledTBL
+_enabledTBL:
+	.skip 0x4
+
+.global _enabledBLK
+_enabledBLK:
+	.skip 0x4
+
+.global _enabledDRW
+_enabledDRW:
+	.skip 0x4
+
+.global _wpadUsedCallback
+_wpadUsedCallback:
+	.skip 0x4
+
+.global _wpadInitialized
+_wpadInitialized:
+	.skip 0x4
+
+.global _wpadIsUsedChannel
+_wpadIsUsedChannel:
+	.skip 0x4
+
+.global _wpadAfhChannel
+_wpadAfhChannel:
+	.skip 0x1
+
+.global _wpadShutdownFlag
+_wpadShutdownFlag:
+	.skip 0x1
+
+.global _wpadSCSetting
+_wpadSCSetting:
+	.skip 0x1
+
+.global _wpadSpeakerVol
+_wpadSpeakerVol:
+	.skip 0x1
+
+.global _wpadRumbleFlag
+_wpadRumbleFlag:
+	.skip 0x4
+
+.global _wpadSensorBarPos
+_wpadSensorBarPos:
+	.skip 0x1
+
+.global _wpadDpdSense
+_wpadDpdSense:
+	.skip 0x1
+
+.global _wpadSleepTime
+_wpadSleepTime:
+	.skip 0x2
+
+.global _wpadGameCode
+_wpadGameCode:
+	.skip 0x4
+
+.global _wpadGameType
+_wpadGameType:
+	.skip 0x4
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@2723_8055E748"
+"@2723_8055E748":
+
+	.4byte 0x0000D007
+
+.global lbl_8055E74C
+lbl_8055E74C:
+
+	.2byte 0x400C
+
+.global lbl_8055E74E
+lbl_8055E74E:
+
+	.2byte 0x0E00

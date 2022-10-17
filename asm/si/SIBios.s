@@ -1623,3 +1623,109 @@ lbl_8002B994:
 /* 8002B9B4 000277F4  7C 08 03 A6 */	mtlr r0
 /* 8002B9B8 000277F8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002B9BC 000277FC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_8042FB88"
+"@1_8042FB88":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20534920
+	.4byte 0x0972656C
+	.4byte 0x65617365
+	.4byte 0x20627569
+	.4byte 0x6C643A20
+	.4byte 0x41756720
+	.4byte 0x32332032
+	.4byte 0x30313020
+	.4byte 0x31373A33
+	.4byte 0x333A3138
+	.4byte 0x20283078
+	.4byte 0x34333032
+	.4byte 0x5F313435
+	.4byte 0x29203E3E
+	.4byte 0
+
+.global Si
+Si:
+
+	.4byte 0xFFFFFFFF
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global Type_8042FBE8
+Type_8042FBE8:
+
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global Packet
+Packet:
+	.skip 0x80
+
+.global XferTime
+XferTime:
+	.skip 0x20
+
+.global TypeTime
+TypeTime:
+	.skip 0x20
+
+.global Alarm
+Alarm:
+	.skip 0xC0
+
+.global InputBuffer
+InputBuffer:
+	.skip 0x20
+
+.global InputBufferValid
+InputBufferValid:
+	.skip 0x10
+
+.global InputBufferVcount
+InputBufferVcount:
+	.skip 0x10
+
+.global RDSTHandler
+RDSTHandler:
+	.skip 0x20
+
+.global TypeCallback
+TypeCallback:
+	.skip 0x40
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __SIVersion
+__SIVersion:
+
+	.4byte "@1_8042FB88"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@LOCAL@SIInterruptHandler__FsP9OSContext@cmdTypeAndStatus"
+"@LOCAL@SIInterruptHandler__FsP9OSContext@cmdTypeAndStatus":
+	.skip 0x4
+
+.global "@LOCAL@SIInit__Fv@Initialized"
+"@LOCAL@SIInit__Fv@Initialized":
+	.skip 0x4
+
+.global "@LOCAL@SIGetType__Fl@cmdTypeAndStatus"
+"@LOCAL@SIGetType__Fl@cmdTypeAndStatus":
+	.skip 0x4
+
+.global __PADFixBits
+__PADFixBits:
+	.skip 0x4

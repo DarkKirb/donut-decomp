@@ -747,3 +747,55 @@ AXSetAuxCReturnVolume:
 /* 800446E4 00040524  4E 80 00 20 */	blr
 /* 800446E8 00040528  00 00 00 00 */	.4byte 0x00000000
 /* 800446EC 0004052C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __AXCommandList
+__AXCommandList:
+	.skip 0x100
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AXAuxCVolume
+__AXAuxCVolume:
+	.skip 0x2
+
+.global __AXAuxBVolume
+__AXAuxBVolume:
+	.skip 0x2
+
+.global __AXAuxAVolume
+__AXAuxAVolume:
+	.skip 0x2
+
+.global __AXMasterVolume
+__AXMasterVolume:
+	.skip 0x2
+
+.global __AXCompressorReleaseFrames
+__AXCompressorReleaseFrames:
+	.skip 0x4
+
+.global __AXCompressorTable
+__AXCompressorTable:
+	.skip 0x4
+
+.global __AXCompressor
+__AXCompressor:
+	.skip 0x4
+
+.global __AXCommandListCycles
+__AXCommandListCycles:
+	.skip 0x4
+
+.global __AXClMode
+__AXClMode:
+	.skip 0x4
+
+.global __AXClWrite
+__AXClWrite:
+	.skip 0x4
+
+.global __AXCommandListPosition
+__AXCommandListPosition:
+	.skip 0x8

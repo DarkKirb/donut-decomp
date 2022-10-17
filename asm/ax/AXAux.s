@@ -627,3 +627,147 @@ AXGetAuxCCallback:
 /* 80043C04 0003FA44  00 00 00 00 */	.4byte 0x00000000
 /* 80043C08 0003FA48  00 00 00 00 */	.4byte 0x00000000
 /* 80043C0C 0003FA4C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __AXBufferAuxA
+__AXBufferAuxA:
+	.skip 0x4
+
+.global lbl_804A0024
+lbl_804A0024:
+	.skip 0x4
+
+.global lbl_804A0028
+lbl_804A0028:
+	.skip 0x4
+
+.global lbl_804A002C
+lbl_804A002C:
+	.skip 0x4
+
+.global lbl_804A0030
+lbl_804A0030:
+	.skip 0x10
+
+.global lbl_804A0040
+lbl_804A0040:
+	.skip 0x4
+
+.global lbl_804A0044
+lbl_804A0044:
+	.skip 0x4
+
+.global lbl_804A0048
+lbl_804A0048:
+	.skip 0x4
+
+.global lbl_804A004C
+lbl_804A004C:
+	.skip 0x4
+
+.global lbl_804A0050
+lbl_804A0050:
+	.skip 0x10
+
+.global lbl_804A0060
+lbl_804A0060:
+	.skip 0x4
+
+.global lbl_804A0064
+lbl_804A0064:
+	.skip 0x4
+
+.global lbl_804A0068
+lbl_804A0068:
+	.skip 0x4
+
+.global lbl_804A006C
+lbl_804A006C:
+	.skip 0x4
+
+.global lbl_804A0070
+lbl_804A0070:
+	.skip 0x11B0
+
+.global __AXBufferAuxB
+__AXBufferAuxB:
+	.skip 0x1200
+
+.global __AXBufferAuxC
+__AXBufferAuxC:
+	.skip 0xD80
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AXAuxCpuReadWritePosition
+__AXAuxCpuReadWritePosition:
+	.skip 0x4
+
+.global __AXAuxDspReadPosition
+__AXAuxDspReadPosition:
+	.skip 0x4
+
+.global __AXAuxDspWritePosition
+__AXAuxDspWritePosition:
+	.skip 0x4
+
+.global __AXAuxCDspRead
+__AXAuxCDspRead:
+	.skip 0x4
+
+.global __AXAuxCDspWrite
+__AXAuxCDspWrite:
+	.skip 0x4
+
+.global __AXAuxBDspRead
+__AXAuxBDspRead:
+	.skip 0x4
+
+.global __AXAuxBDspWrite
+__AXAuxBDspWrite:
+	.skip 0x4
+
+.global __AXAuxADspRead
+__AXAuxADspRead:
+	.skip 0x4
+
+.global __AXAuxADspWrite
+__AXAuxADspWrite:
+	.skip 0x4
+
+.global __AXContextAuxC
+__AXContextAuxC:
+	.skip 0x4
+
+.global __AXContextAuxB
+__AXContextAuxB:
+	.skip 0x4
+
+.global __AXContextAuxA
+__AXContextAuxA:
+	.skip 0x4
+
+.global __AXCallbackAuxC
+__AXCallbackAuxC:
+	.skip 0x4
+
+.global __AXCallbackAuxB
+__AXCallbackAuxB:
+	.skip 0x4
+
+.global __AXCallbackAuxA
+__AXCallbackAuxA:
+	.skip 0x4
+
+.global __clearAuxC
+__clearAuxC:
+	.skip 0x4
+
+.global __clearAuxB
+__clearAuxB:
+	.skip 0x4
+
+.global __clearAuxA
+__clearAuxA:
+	.skip 0x4

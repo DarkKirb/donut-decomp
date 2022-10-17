@@ -21,3 +21,21 @@ __AXGetCurrentProfile:
 lbl_80046158:
 /* 80046158 00041F98  38 60 00 00 */	li r3, 0x0
 /* 8004615C 00041F9C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AXProfileInitialized
+__AXProfileInitialized:
+	.skip 0x4
+
+.global __AXCurrentProfile
+__AXCurrentProfile:
+	.skip 0x4
+
+.global __AXMaxProfiles
+__AXMaxProfiles:
+	.skip 0x4
+
+.global __AXProfile
+__AXProfile:
+	.skip 0x4

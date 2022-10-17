@@ -625,3 +625,79 @@ lbl_80044F04:
 /* 80044F24 00040D64  4E 80 00 20 */	blr
 /* 80044F28 00040D68  00 00 00 00 */	.4byte 0x00000000
 /* 80044F2C 00040D6C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __AXLocalProfile
+__AXLocalProfile:
+	.skip 0x40
+
+.global __AXRmtOutBuffer
+__AXRmtOutBuffer:
+	.skip 0x8A0
+
+.global __AXOutBuffer
+__AXOutBuffer:
+	.skip 0x480
+
+.global __AXDSPTask
+__AXDSPTask:
+	.skip 0x60
+
+.global __AXDramImage
+__AXDramImage:
+	.skip 0x40
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AXExceedCallback
+__AXExceedCallback:
+	.skip 0x4
+
+.global __AXRmtCpuPtr
+__AXRmtCpuPtr:
+	.skip 0x4
+
+.global __AXRmtDspPtr
+__AXRmtDspPtr:
+	.skip 0x4
+
+.global __AXRmtBuffLen
+__AXRmtBuffLen:
+	.skip 0x4
+
+.global __AXOutputBufferMode
+__AXOutputBufferMode:
+	.skip 0x8
+
+.global __AXOutThreadQueue
+__AXOutThreadQueue:
+	.skip 0x8
+
+.global __AXDebugSteppingMode
+__AXDebugSteppingMode:
+	.skip 0x4
+
+.global __AXDSPDoneFlag
+__AXDSPDoneFlag:
+	.skip 0x4
+
+.global __AXDSPInitFlag
+__AXDSPInitFlag:
+	.skip 0x4
+
+.global __AXUserFrameCallback
+__AXUserFrameCallback:
+	.skip 0x4
+
+.global __AXOutDspReady
+__AXOutDspReady:
+	.skip 0x4
+
+.global __AXAiDmaFrame
+__AXAiDmaFrame:
+	.skip 0x4
+
+.global __AXOutFrame
+__AXOutFrame:
+	.skip 0x8

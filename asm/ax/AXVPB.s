@@ -1061,3 +1061,131 @@ AXGetMaxVoices:
 /* 80046114 00041F54  4E 80 00 20 */	blr
 /* 80046118 00041F58  00 00 00 00 */	.4byte 0x00000000
 /* 8004611C 00041F5C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __AXMixCycles
+__AXMixCycles:
+
+	.4byte 0x00000002
+	.4byte 0x00000198
+	.4byte 0x00000198
+	.4byte 0x0000032A
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x00000198
+	.4byte 0x00000330
+	.4byte 0x00000330
+	.4byte 0x000004C2
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+
+.global __AXRmtMixCycles
+__AXRmtMixCycles:
+
+	.4byte 0x00000004
+	.4byte 0x00000056
+	.4byte 0x00000097
+	.4byte 0x00000097
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __s_AXPB
+__s_AXPB:
+	.skip 0x3F2A
+
+.global lbl_804A804A
+lbl_804A804A:
+	.skip 0x38D6
+
+.global __s_AXITD
+__s_AXITD:
+	.skip 0x1800
+
+.global __s_AXVPB
+__s_AXVPB:
+	.skip 0x8700
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __AXPB
+__AXPB:
+	.skip 0x4
+
+.global __AXITD
+__AXITD:
+	.skip 0x4
+
+.global __AXVPB
+__AXVPB:
+	.skip 0x4
+
+.global __AXMaxVoices
+__AXMaxVoices:
+	.skip 0x4
+
+.global __AXNumVoices
+__AXNumVoices:
+	.skip 0x4
+
+.global __AXRecDspCycles
+__AXRecDspCycles:
+	.skip 0x4
+
+.global __AXMaxDspCycles
+__AXMaxDspCycles:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@3525"
+"@3525":
+
+	.4byte 0x40000000
+
+.global "@3526"
+"@3526":
+
+	.4byte 0x40C90FDB
+
+.global "@3527"
+"@3527":
+
+	.4byte 0x46FA0000
+
+.global "@3528"
+"@3528":
+
+	.4byte 0x3F800000
+
+.global "@3529"
+"@3529":
+
+	.4byte 0x47000000
+	.4byte 0
+
+.global "@3533_8055E6C0"
+"@3533_8055E6C0":
+
+	.4byte 0x43300000
+	.4byte 0

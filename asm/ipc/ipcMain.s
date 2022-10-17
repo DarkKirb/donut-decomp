@@ -77,3 +77,25 @@ IPCSetBufferLo:
 /* 8004E814 0004A654  4E 80 00 20 */	blr
 /* 8004E818 0004A658  00 00 00 00 */	.4byte 0x00000000
 /* 8004E81C 0004A65C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global Initialized_8055CD18
+Initialized_8055CD18:
+	.skip 0x4
+
+.global IPCCurrentBufferLo
+IPCCurrentBufferLo:
+	.skip 0x4
+
+.global IPCCurrentBufferHi
+IPCCurrentBufferHi:
+	.skip 0x4
+
+.global IPCBufferLo
+IPCBufferLo:
+	.skip 0x4
+
+.global IPCBufferHi
+IPCBufferHi:
+	.skip 0x8

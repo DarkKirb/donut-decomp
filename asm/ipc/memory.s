@@ -403,3 +403,9 @@ lbl_80050784:
 /* 800507A4 0004C5E4  4E 80 00 20 */	blr
 /* 800507A8 0004C5E8  00 00 00 00 */	.4byte 0x00000000
 /* 800507AC 0004C5EC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __heaps
+__heaps:
+	.skip 0x80

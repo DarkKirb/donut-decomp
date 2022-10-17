@@ -293,3 +293,47 @@ lbl_80050BA4:
 /* 80050BB4 0004C9F4  38 21 00 30 */	addi r1, r1, 0x30
 /* 80050BB8 0004C9F8  4E 80 00 20 */	blr
 /* 80050BBC 0004C9FC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global IpcReqArray
+IpcReqArray:
+	.skip 0x2130
+
+.global lbl_804C0010
+lbl_804C0010:
+	.skip 0x10
+
+.global lbl_804C0020
+lbl_804C0020:
+	.skip 0x10
+
+.global lbl_804C0030
+lbl_804C0030:
+	.skip 0x10
+
+.global lbl_804C0040
+lbl_804C0040:
+	.skip 0x10
+
+.global lbl_804C0050
+lbl_804C0050:
+	.skip 0x10
+
+.global lbl_804C0060
+lbl_804C0060:
+	.skip 0x10
+
+.global lbl_804C0070
+lbl_804C0070:
+	.skip 0x18F0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global IpcNumPendingReqs
+IpcNumPendingReqs:
+	.skip 0x4
+
+.global IpcNumUnIssuedReqs
+IpcNumUnIssuedReqs:
+	.skip 0x4

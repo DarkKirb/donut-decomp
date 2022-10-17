@@ -2075,3 +2075,47 @@ lbl_80050258:
 /* 80050274 0004C0B4  00 00 00 00 */	.4byte 0x00000000
 /* 80050278 0004C0B8  00 00 00 00 */	.4byte 0x00000000
 /* 8005027C 0004C0BC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __responses
+__responses:
+	.skip 0xD0
+
+.global __timeout_alarm
+__timeout_alarm:
+	.skip 0x30
+
+.global __rpcBuf
+__rpcBuf:
+	.skip 0x40
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __mailboxAck
+__mailboxAck:
+
+	.4byte 0x00000001
+
+.global hid
+hid:
+
+	.4byte 0xFFFFFFFF
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __relnchFl
+__relnchFl:
+	.skip 0x4
+
+.global __relnchRpc
+__relnchRpc:
+	.skip 0x4
+
+.global __relnchRpcSave
+__relnchRpcSave:
+	.skip 0x4
+
+.global "@LOCAL@IPCCltInit__Fv@initialized"
+"@LOCAL@IPCCltInit__Fv@initialized":
+	.skip 0x4

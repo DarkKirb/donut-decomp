@@ -102,3 +102,25 @@ lbl_8014C420:
 setViewportSetting__Q34nrel8ezrender14GXSettingFor2DFRCQ34nrel8ezrender15ViewportSetting:
 /* 8014C438 00148278  38 63 00 18 */	addi r3, r3, 0x18
 /* 8014C43C 0014827C  4B FF FF A0 */	b __as__Q34nrel8ezrender18OrthoCameraSettingFRCQ34nrel8ezrender18OrthoCameraSetting
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@795_8055F568"
+"@795_8055F568":
+
+	.4byte 0
+
+.global "@796_8055F56C"
+"@796_8055F56C":
+
+	.4byte 0x44200000
+
+.global "@797_8055F570"
+"@797_8055F570":
+
+	.4byte 0x43F00000
+
+.global "@798_8055F574"
+"@798_8055F574":
+
+	.4byte 0x3F800000

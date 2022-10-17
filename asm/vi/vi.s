@@ -3188,3 +3188,613 @@ __VIResetSIIdle:
 /* 8002E484 0002A2C4  90 0D E5 70 */	stw r0, __VIDimmingFlag_SI_IDLE@sda21(r13)
 /* 8002E488 0002A2C8  38 60 00 01 */	li r3, 0x1
 /* 8002E48C 0002A2CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_8042FC90"
+"@1_8042FC90":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20564920
+	.4byte 0x0972656C
+	.4byte 0x65617365
+	.4byte 0x20627569
+	.4byte 0x6C643A20
+	.4byte 0x41756720
+	.4byte 0x32332032
+	.4byte 0x30313020
+	.4byte 0x31373A33
+	.4byte 0x333A3139
+	.4byte 0x20283078
+	.4byte 0x34333032
+	.4byte 0x5F313435
+	.4byte 0x29203E3E
+	.4byte 0
+
+.global timing
+timing:
+
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x00040C0C
+	.4byte 0x0C0C0208
+	.4byte 0x02080208
+	.4byte 0x0208020E
+	.4byte 0x01AD4047
+	.4byte 0x69A20175
+	.4byte 0x7A00019C
+	.4byte 0x0500011F
+	.4byte 0x00230024
+	.4byte 0x00010000
+	.4byte 0x0D0C0B0A
+	.4byte 0x026B026A
+	.4byte 0x0269026C
+	.4byte 0x027101B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C8500
+	.4byte 0x01A40500
+	.4byte 0x011F0021
+	.4byte 0x00210002
+	.4byte 0x00020D0B
+	.4byte 0x0D0B026B
+	.4byte 0x026D026B
+	.4byte 0x026D0270
+	.4byte 0x01B0404B
+	.4byte 0x6AAC017C
+	.4byte 0x850001A4
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x100F0E0D
+	.4byte 0x02060205
+	.4byte 0x02040207
+	.4byte 0x020D01AD
+	.4byte 0x404E70A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x0004100E
+	.4byte 0x100E0206
+	.4byte 0x02080206
+	.4byte 0x0208020E
+	.4byte 0x01AD404E
+	.4byte 0x70A20175
+	.4byte 0x7A00019C
+	.4byte 0x0C0001E0
+	.4byte 0x00300030
+	.4byte 0x00060006
+	.4byte 0x18181818
+	.4byte 0x040E040E
+	.4byte 0x040E040E
+	.4byte 0x041A01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0C00
+	.4byte 0x01E0002C
+	.4byte 0x002C000A
+	.4byte 0x000A1818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69A8017B
+	.4byte 0x7A00019C
+	.4byte 0x060000F1
+	.4byte 0x00180019
+	.4byte 0x00010000
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x4047699F
+	.4byte 0x01727A00
+	.4byte 0x019C0C00
+	.4byte 0x01E00030
+	.4byte 0x00300006
+	.4byte 0x00061818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69B40187
+	.4byte 0x7A00019C
+	.4byte 0x0A000240
+	.4byte 0x003E003E
+	.4byte 0x00060006
+	.4byte 0x14141414
+	.4byte 0x04D804D8
+	.4byte 0x04D804D8
+	.4byte 0x04E201B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C7A00
+	.4byte 0x019C0000
+
+.global taps
+taps:
+
+	.4byte 0x01F001DC
+	.4byte 0x01AE0174
+	.4byte 0x012900DB
+	.4byte 0x008E0046
+	.4byte 0x000C00E2
+	.4byte 0x00CB00C0
+	.4byte 0x00C400CF
+	.4byte 0x00DE00EC
+	.4byte 0x00FC0008
+	.4byte 0x000F0013
+	.4byte 0x0013000F
+	.4byte 0x000C0008
+	.4byte 0x00010000
+	.4byte 0x00000006
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060000
+	.4byte 0x15161500
+	.4byte 0
+	.4byte 0x00000006
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+	.4byte 0x00000006
+	.4byte 0x02800108
+	.4byte 0x020C0028
+	.4byte 0x00170280
+	.4byte 0x020C0000
+	.4byte 0
+	.4byte 0x00010302
+	.4byte 0x0906030A
+	.4byte 0x03020906
+	.4byte 0x030A0902
+	.4byte 0x0306090A
+	.4byte 0x09020306
+	.4byte 0x090A0408
+	.4byte 0x0C100C08
+	.4byte 0x04000000
+	.4byte 0
+
+.global ShutdownFunctionInfo_8042FF68
+ShutdownFunctionInfo_8042FF68:
+
+	.4byte OnShutdown_8002BAD0
+	.4byte 0x0000007F
+	.4byte 0
+	.4byte 0
+
+.global "@3436"
+"@3436":
+
+	.4byte lbl_8002BFC0
+	.4byte lbl_8002BFC8
+	.4byte lbl_8002BFD0
+	.4byte lbl_8002BFC0
+	.4byte lbl_8002BFC8
+	.4byte lbl_8002BFD0
+	.4byte lbl_8002BFC0
+	.4byte lbl_8002BFC0
+	.4byte lbl_8002BFC0
+
+.global "@3466"
+"@3466":
+
+	.4byte lbl_8002C540
+	.4byte lbl_8002C54C
+	.4byte lbl_8002C5B8
+	.4byte lbl_8002C5C8
+	.4byte lbl_8002C55C
+	.4byte lbl_8002C56C
+	.4byte lbl_8002C618
+	.4byte lbl_8002C630
+	.4byte lbl_8002C598
+	.4byte lbl_8002C5A8
+	.4byte lbl_8002C5B8
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C5D8
+	.4byte lbl_8002C5E8
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C57C
+	.4byte lbl_8002C588
+	.4byte lbl_8002C5B8
+	.4byte lbl_8002C630
+	.4byte lbl_8002C5F8
+	.4byte lbl_8002C630
+
+.global lbl_80430004
+lbl_80430004:
+
+	.4byte lbl_8002C608
+
+.global lbl_80430008
+lbl_80430008:
+
+	.4byte lbl_8002C630
+	.4byte lbl_8002C628
+	.4byte lbl_8002C628
+	.4byte lbl_8002C628
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C630
+	.4byte lbl_8002C628
+
+.global "@3633"
+"@3633":
+
+	.4byte lbl_8002CCD4
+	.4byte lbl_8002CCDC
+	.4byte lbl_8002CCE4
+	.4byte lbl_8002CCD4
+	.4byte lbl_8002CCDC
+	.4byte lbl_8002CCE4
+	.4byte lbl_8002CCD4
+	.4byte lbl_8002CCD4
+	.4byte lbl_8002CCD4
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A2A
+	.4byte 0x2A2A2A0A
+	.4byte 0
+	.4byte 0x20212021
+	.4byte 0x20212043
+	.4byte 0x20412055
+	.4byte 0x20542049
+	.4byte 0x204F204E
+	.4byte 0x20212021
+	.4byte 0x20212020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x2020200A
+	.4byte 0
+	.4byte 0x54686973
+	.4byte 0x20545620
+	.4byte 0x666F726D
+	.4byte 0x61742022
+	.4byte 0x44454255
+	.4byte 0x475F5041
+	.4byte 0x4C222069
+	.4byte 0x73206F6E
+	.4byte 0x6C792066
+	.4byte 0x6F72200A
+	.4byte 0
+	.4byte 0x74656D70
+	.4byte 0x6F726172
+	.4byte 0x7920736F
+	.4byte 0x6C757469
+	.4byte 0x6F6E2075
+	.4byte 0x6E74696C
+	.4byte 0x2050414C
+	.4byte 0x20444143
+	.4byte 0x20626F61
+	.4byte 0x7264200A
+	.4byte 0
+	.4byte 0x69732061
+	.4byte 0x7661696C
+	.4byte 0x61626C65
+	.4byte 0x2E20506C
+	.4byte 0x65617365
+	.4byte 0x20646F20
+	.4byte 0x4E4F5420
+	.4byte 0x75736520
+	.4byte 0x74686973
+	.4byte 0x2020200A
+	.4byte 0
+	.4byte 0x6D6F6465
+	.4byte 0x20696E20
+	.4byte 0x7265616C
+	.4byte 0x2067616D
+	.4byte 0x65732121
+	.4byte 0x21202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x2020200A
+	.4byte 0
+	.4byte 0x5649436F
+	.4byte 0x6E666967
+	.4byte 0x75726528
+	.4byte 0x293A2054
+	.4byte 0x72696564
+	.4byte 0x20746F20
+	.4byte 0x6368616E
+	.4byte 0x6765206D
+	.4byte 0x6F646520
+	.4byte 0x66726F6D
+	.4byte 0x20282564
+	.4byte 0x2920746F
+	.4byte 0x20282564
+	.4byte 0x292C2077
+	.4byte 0x68696368
+	.4byte 0x20697320
+	.4byte 0x666F7262
+	.4byte 0x69646465
+	.4byte 0x6E0A0000
+
+.global "@4121"
+"@4121":
+
+	.4byte lbl_8002E048
+	.4byte lbl_8002E050
+	.4byte lbl_8002E054
+	.4byte lbl_8002E048
+	.4byte lbl_8002E050
+	.4byte lbl_8002E054
+	.4byte lbl_8002E048
+	.4byte lbl_8002E048
+	.4byte lbl_8002E048
+
+.global "@4441"
+"@4441":
+
+	.4byte lbl_8002E394
+	.4byte lbl_8002E39C
+	.4byte lbl_8002E3A0
+	.4byte lbl_8002E394
+	.4byte lbl_8002E39C
+	.4byte lbl_8002E3A0
+	.4byte lbl_8002E394
+	.4byte lbl_8002E394
+	.4byte lbl_8002E394
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global shdwRegs
+shdwRegs:
+	.skip 0x78
+
+.global regs
+regs:
+	.skip 0x78
+
+.global HorVer
+HorVer:
+	.skip 0x58
+
+.global __VIDimmingFlag_DEV_IDLE
+__VIDimmingFlag_DEV_IDLE:
+	.skip 0x28
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __VIVersion
+__VIVersion:
+
+	.4byte "@1_8042FC90"
+
+.global "@LOCAL@OnShutdown__FiUl@first"
+"@LOCAL@OnShutdown__FiUl@first":
+
+	.4byte 0x00000001
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@old_dtvStatus"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@old_dtvStatus":
+
+	.4byte 0x000003E7
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@old_tvtype@0"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@old_tvtype@0":
+
+	.4byte 0x000003E7
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@__VIDimmingFlag_Enable_old@1"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@__VIDimmingFlag_Enable_old@1":
+
+	.4byte 0x00000001
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@__VIDVDStopFlag_Enable_old@2"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@__VIDVDStopFlag_Enable_old@2":
+
+	.4byte 0x00000001
+
+.global "@3937"
+"@3937":
+
+	.4byte 0x76692E63
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global IsInitialized
+IsInitialized:
+	.skip 0x4
+
+.global vsync_timing_err_cnt
+vsync_timing_err_cnt:
+	.skip 0x4
+
+.global vsync_timing_test_flag
+vsync_timing_test_flag:
+	.skip 0x4
+
+.global __VIDimming_All_Clear
+__VIDimming_All_Clear:
+	.skip 0x4
+
+.global THD_TIME_TO_DIMMING
+THD_TIME_TO_DIMMING:
+	.skip 0x4
+
+.global NEW_TIME_TO_DIMMING
+NEW_TIME_TO_DIMMING:
+	.skip 0x4
+
+.global THD_TIME_TO_DVD_STOP
+THD_TIME_TO_DVD_STOP:
+	.skip 0x4
+
+.global _gIdleCount_dimming
+_gIdleCount_dimming:
+	.skip 0x4
+
+.global _gIdleCount_dvd
+_gIdleCount_dvd:
+	.skip 0x4
+
+.global __VIDimmingState
+__VIDimmingState:
+	.skip 0x4
+
+.global PositionCallback
+PositionCallback:
+	.skip 0x4
+
+.global displayOffsetH
+displayOffsetH:
+	.skip 0x2
+
+.global displayOffsetV
+displayOffsetV:
+	.skip 0x2
+
+.global changeMode
+changeMode:
+	.skip 0x8
+
+.global changed
+changed:
+	.skip 0x4
+
+.global lbl_8055C93C
+lbl_8055C93C:
+	.skip 0x4
+
+.global shdwChangeMode
+shdwChangeMode:
+	.skip 0x8
+
+.global shdwChanged
+shdwChanged:
+	.skip 0x4
+
+.global lbl_8055C94C
+lbl_8055C94C:
+	.skip 0x4
+
+.global FBSet
+FBSet:
+	.skip 0x4
+
+.global timingExtra
+timingExtra:
+	.skip 0x4
+
+.global "@LOCAL@OnShutdown__FiUl@count@0"
+"@LOCAL@OnShutdown__FiUl@count@0":
+	.skip 0x4
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingON_Pending@3"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingON_Pending@3":
+	.skip 0x4
+
+.global "@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingOFF_Pending@4"
+"@LOCAL@__VIRetraceHandler__FsP9OSContext@DimmingOFF_Pending@4":
+	.skip 0x4
+
+.global "@LOCAL@PrintDebugPalCaution__Fv@message"
+"@LOCAL@PrintDebugPalCaution__Fv@message":
+	.skip 0x4
+
+.global CurrBufAddr
+CurrBufAddr:
+	.skip 0x4
+
+.global NextBufAddr
+NextBufAddr:
+	.skip 0x4
+
+.global CurrTvMode
+CurrTvMode:
+	.skip 0x4
+
+.global CurrTiming
+CurrTiming:
+	.skip 0x4
+
+.global encoderType
+encoderType:
+	.skip 0x4
+
+.global PostCB
+PostCB:
+	.skip 0x4
+
+.global PreCB
+PreCB:
+	.skip 0x8
+
+.global retraceQueue
+retraceQueue:
+	.skip 0x8
+
+.global __VIDimmingFlag_SI_IDLE
+__VIDimmingFlag_SI_IDLE:
+	.skip 0x4
+
+.global __VIDimmingFlag_RF_IDLE
+__VIDimmingFlag_RF_IDLE:
+	.skip 0x4
+
+.global g_current_time_to_dim
+g_current_time_to_dim:
+	.skip 0x4
+
+.global __VIDVDStopFlag_Enable
+__VIDVDStopFlag_Enable:
+	.skip 0x4
+
+.global __VIDimmingFlag_Enable
+__VIDimmingFlag_Enable:
+	.skip 0x4
+
+.global flushFlag3in1
+flushFlag3in1:
+	.skip 0x4
+
+.global flushFlag
+flushFlag:
+	.skip 0x4
+
+.global retraceCount
+retraceCount:
+	.skip 0x4

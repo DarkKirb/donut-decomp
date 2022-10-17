@@ -154,11 +154,12 @@ $(BUILD_DIR)/asm/si/SISamplingRate.o \
 \
 $(BUILD_DIR)/asm/db/db.o \
 \
+$(BUILD_DIR)/asm/vi/vi.o \
+$(BUILD_DIR)/asm/vi/i2c.o \
+$(BUILD_DIR)/asm/vi/vi3in1.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/vi/vi_8002bad0.o \
-$(BUILD_DIR)/asm/vi/i2c_8002e490.o \
-$(BUILD_DIR)/asm/vi/vi3in1_8002edb0.o \
 $(BUILD_DIR)/asm/mtx/mtx_800304e0.o \
 $(BUILD_DIR)/asm/mtx/mtxvec_800310f0.o \
 $(BUILD_DIR)/asm/mtx/mtx44_800311b0.o \
@@ -3221,8 +3222,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/vi/vi_8042fc90.o \
-$(BUILD_DIR)/asm/vi/vi3in1_804301e8.o \
 $(BUILD_DIR)/asm/gx/GXInit_80430800.o \
 $(BUILD_DIR)/asm/gx/GXFifo_80430a40.o \
 $(BUILD_DIR)/asm/gx/GXAttr_80430a70.o \
@@ -5038,8 +5037,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/vi/vi_8049a570.o \
-$(BUILD_DIR)/asm/vi/vi3in1_8049a6e0.o \
 $(BUILD_DIR)/asm/gx/GXInit_8049a700.o \
 $(BUILD_DIR)/asm/gx/GXFifo_8049ad80.o \
 $(BUILD_DIR)/asm/dvd/dvd_8049ae00.o \
@@ -5184,9 +5181,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/vi/vi_80556528.o \
-$(BUILD_DIR)/asm/vi/i2c_80556548.o \
-$(BUILD_DIR)/asm/vi/vi3in1_80556550.o \
 $(BUILD_DIR)/asm/mtx/mtx_80556560.o \
 $(BUILD_DIR)/asm/gx/GXInit_80556568.o \
 $(BUILD_DIR)/asm/gx/GXAttr_80556570.o \
@@ -5637,9 +5631,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/vi/vi_8055c900.o \
-$(BUILD_DIR)/asm/vi/i2c_8055c9b0.o \
-$(BUILD_DIR)/asm/vi/vi3in1_8055c9b8.o \
 $(BUILD_DIR)/asm/gx/GXInit_8055c9d0.o \
 $(BUILD_DIR)/asm/gx/GXFifo_8055c9f8.o \
 $(BUILD_DIR)/asm/gx/GXMisc_8055ca18.o \

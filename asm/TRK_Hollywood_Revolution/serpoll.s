@@ -97,3 +97,9 @@ TRKProcessInput:
 /* 80016578 000123B8  7C 08 03 A6 */	mtlr r0
 /* 8001657C 000123BC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80016580 000123C0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global gTRKInputPendingPtr
+gTRKInputPendingPtr:
+	.skip 0x8

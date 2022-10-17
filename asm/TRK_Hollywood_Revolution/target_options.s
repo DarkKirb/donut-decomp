@@ -11,3 +11,9 @@ GetUseSerialIO:
 /* 8001A0A4 00015EE4  4E 80 00 20 */	blr
 /* 8001A0A8 00015EE8  00 00 00 00 */	.4byte 0x00000000
 /* 8001A0AC 00015EEC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global bUseSerialIO
+bUseSerialIO:
+	.skip 0x8

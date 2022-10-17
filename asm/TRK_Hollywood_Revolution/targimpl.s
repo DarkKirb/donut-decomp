@@ -1803,3 +1803,97 @@ lbl_8001A088:
 lbl_8001A090:
 /* 8001A090 00015ED0  90 C3 00 00 */	stw r6, 0x0(r3)
 /* 8001A094 00015ED4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global gTRKMemMap
+gTRKMemMap:
+
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000001
+
+.global "@984"
+"@984":
+
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+
+.global "@999"
+"@999":
+
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+
+.global "@1022"
+"@1022":
+
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global gTRKExceptionStatus
+gTRKExceptionStatus:
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x01000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global gTRKRestoreFlags
+gTRKRestoreFlags:
+	.skip 0x10
+
+.global gTRKStepStatus
+gTRKStepStatus:
+	.skip 0x18
+
+.global gTRKSaveState
+gTRKSaveState:
+	.skip 0x98
+
+.global TRKvalue128_temp
+TRKvalue128_temp:
+	.skip 0x10
+
+.global gTRKState
+gTRKState:
+	.skip 0xA8
+
+.global gTRKCPUState
+gTRKCPUState:
+	.skip 0x438
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global TRK_saved_exceptionID
+TRK_saved_exceptionID:
+	.skip 0x8

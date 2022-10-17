@@ -265,3 +265,87 @@ InitializeProgramEndTrap:
 /* 800160C4 00011F04  7C 08 03 A6 */	mtlr r0
 /* 800160C8 00011F08  38 21 00 10 */	addi r1, r1, 0x10
 /* 800160CC 00011F0C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@stringBase0_80421B68"
+"@stringBase0_80421B68":
+
+	.4byte 0x4465766B
+	.4byte 0x69742073
+	.4byte 0x65742074
+	.4byte 0x6F203A20
+	.4byte 0x256C640A
+	.4byte 0x004D6574
+	.4byte 0x726F5452
+	.4byte 0x4B203A20
+	.4byte 0x53697A65
+	.4byte 0x6F662052
+	.4byte 0x65706C79
+	.4byte 0x202D2025
+	.4byte 0x6C642062
+	.4byte 0x79746573
+	.4byte 0x0A004D65
+	.4byte 0x74726F54
+	.4byte 0x524B203A
+	.4byte 0x20536574
+	.4byte 0x20746F20
+	.4byte 0x4E444556
+	.4byte 0x20686172
+	.4byte 0x64776172
+	.4byte 0x650A004D
+	.4byte 0x6574726F
+	.4byte 0x54524B20
+	.4byte 0x3A205365
+	.4byte 0x7420746F
+	.4byte 0x20554E4B
+	.4byte 0x4E4F574E
+	.4byte 0x20686172
+	.4byte 0x64776172
+	.4byte 0x652E2028
+	.4byte 0x256C6429
+	.4byte 0x0A004D65
+	.4byte 0x74726F54
+	.4byte 0x524B203A
+	.4byte 0x20496E76
+	.4byte 0x616C6964
+	.4byte 0x20686172
+	.4byte 0x64776172
+	.4byte 0x65204944
+	.4byte 0x20706173
+	.4byte 0x73656420
+	.4byte 0x66726F6D
+	.4byte 0x204F530A
+	.4byte 0x004D6574
+	.4byte 0x726F5452
+	.4byte 0x4B203A20
+	.4byte 0x44656661
+	.4byte 0x756C7469
+	.4byte 0x6E672074
+	.4byte 0x6F204744
+	.4byte 0x45562048
+	.4byte 0x61726477
+	.4byte 0x6172650A
+	.4byte 0x0025730A
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global gDBCommTable
+gDBCommTable:
+	.skip 0x28
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global TRK_Use_BBA
+TRK_Use_BBA:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global EndofProgramInstruction$631
+EndofProgramInstruction$631:
+
+	.4byte 0x00454E44
+	.4byte 0

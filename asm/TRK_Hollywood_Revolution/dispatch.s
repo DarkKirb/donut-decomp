@@ -114,3 +114,37 @@ lbl_800159F8:
 /* 80015A08 00011848  7C 08 03 A6 */	mtlr r0
 /* 80015A0C 0001184C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80015A10 00011850  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@109"
+"@109":
+
+	.4byte lbl_800159F8
+	.4byte lbl_8001593C
+	.4byte lbl_8001594C
+	.4byte lbl_8001595C
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_8001596C
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_8001597C
+	.4byte lbl_8001598C
+	.4byte lbl_8001599C
+	.4byte lbl_800159AC
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159F8
+	.4byte lbl_800159EC
+	.4byte lbl_800159BC
+	.4byte lbl_800159CC
+	.4byte lbl_800159DC
+	.4byte 0

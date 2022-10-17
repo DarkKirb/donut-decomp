@@ -242,3 +242,31 @@ __TRKreset:
 /* 80015D2C 00011B6C  38 80 00 00 */	li r4, 0x0
 /* 80015D30 00011B70  38 A0 00 00 */	li r5, 0x0
 /* 80015D34 00011B74  48 00 DA EC */	b OSResetSystem
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global TRK_ISR_OFFSETS
+TRK_ISR_OFFSETS:
+
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000300
+	.4byte 0x00000400
+	.4byte 0x00000500
+	.4byte 0x00000600
+	.4byte 0x00000700
+	.4byte 0x00000800
+	.4byte 0x00000900
+	.4byte 0x00000C00
+	.4byte 0x00000D00
+	.4byte 0x00000F00
+	.4byte 0x00001300
+	.4byte 0x00001400
+	.4byte 0x00001700
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global lc_base
+lc_base:
+	.skip 0x8

@@ -20,3 +20,9 @@ lbl_8001558C:
 /* 80015598 000113D8  7C 08 03 A6 */	mtlr r0
 /* 8001559C 000113DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800155A0 000113E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global TRK_mainError
+TRK_mainError:
+	.skip 0x8

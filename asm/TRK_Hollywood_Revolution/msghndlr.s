@@ -1198,3 +1198,53 @@ lbl_80018694:
 /* 800186EC 0001452C  7C 08 03 A6 */	mtlr r0
 /* 800186F0 00014530  38 21 00 50 */	addi r1, r1, 0x50
 /* 800186F4 00014534  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@781_80421D28"
+"@781_80421D28":
+
+	.4byte lbl_80017AE4
+	.4byte lbl_80017B04
+	.4byte lbl_80017ADC
+	.4byte lbl_80017B04
+	.4byte lbl_80017AEC
+	.4byte lbl_80017AF4
+	.4byte lbl_80017AFC
+
+.global "@826_80421D44"
+"@826_80421D44":
+
+	.4byte lbl_80017CF4
+	.4byte lbl_80017D14
+	.4byte lbl_80017CEC
+	.4byte lbl_80017D14
+	.4byte lbl_80017CFC
+	.4byte lbl_80017D04
+	.4byte lbl_80017D0C
+
+.global "@stringBase0_80421D60"
+"@stringBase0_80421D60":
+
+	.4byte 0x0A4D6574
+	.4byte 0x726F5452
+	.4byte 0x4B204F70
+	.4byte 0x74696F6E
+	.4byte 0x203A2053
+	.4byte 0x65726961
+	.4byte 0x6C494F20
+	.4byte 0x2D200045
+	.4byte 0x6E61626C
+	.4byte 0x650A0044
+	.4byte 0x69736162
+	.4byte 0x6C650A00
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global g_CurrentSequence
+g_CurrentSequence:
+	.skip 0x4
+
+.global IsTRKConnected
+IsTRKConnected:
+	.skip 0x4

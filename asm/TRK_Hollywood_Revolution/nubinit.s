@@ -109,3 +109,23 @@ lbl_80016434:
 lbl_80016444:
 /* 80016444 00012284  38 21 00 10 */	addi r1, r1, 0x10
 /* 80016448 00012288  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@stringBase0_80421C70"
+"@stringBase0_80421C70":
+
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x20666F72
+	.4byte 0x20526576
+	.4byte 0x6F6C7574
+	.4byte 0x696F6E20
+	.4byte 0x76302E34
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global gTRKBigEndian
+gTRKBigEndian:
+	.skip 0x8

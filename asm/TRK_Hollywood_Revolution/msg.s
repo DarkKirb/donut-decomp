@@ -32,3 +32,25 @@ lbl_80016F54:
 /* 80016F5C 00012D9C  7C 08 03 A6 */	mtlr r0
 /* 80016F60 00012DA0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80016F64 00012DA4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@stringBase0_80421CD8"
+"@stringBase0_80421CD8":
+
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x202D2054
+	.4byte 0x524B5F57
+	.4byte 0x72697465
+	.4byte 0x55415254
+	.4byte 0x4E207265
+	.4byte 0x7475726E
+	.4byte 0x65642025
+	.4byte 0x6C640A00
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global gPacketSeq
+gPacketSeq:
+	.skip 0x8

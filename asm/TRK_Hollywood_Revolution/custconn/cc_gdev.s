@@ -205,3 +205,19 @@ gdev_cc_initinterrupts:
 /* 800152B8 000110F8  7C 08 03 A6 */	mtlr r0
 /* 800152BC 000110FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800152C0 00011100  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global gRecvBuf
+gRecvBuf:
+	.skip 0x500
+
+.global gRecvCB
+gRecvCB:
+	.skip 0x20
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global gIsInitialized
+gIsInitialized:
+	.skip 0x8

@@ -112,3 +112,9 @@ updatePolyMtxAll__Q26effect7ManagerFv:
 .global updatePtclAll__Q26effect7ManagerFRCQ36effect6detail10CameraInfo
 updatePtclAll__Q26effect7ManagerFRCQ36effect6detail10CameraInfo:
 /* 8017E66C 0017A4AC  48 00 28 C4 */	b updatePtclAll__Q36effect6detail13EffectManagerFRCQ36effect6detail10CameraInfo
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "isExist___Q33hel6common35PrivateSingleton<Q26effect7Manager>"
+"isExist___Q33hel6common35PrivateSingleton<Q26effect7Manager>":
+	.skip 0x8

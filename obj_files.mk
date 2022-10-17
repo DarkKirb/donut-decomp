@@ -660,12 +660,13 @@ $(BUILD_DIR)/asm/src/dynamics/ModelNode.o \
 $(BUILD_DIR)/asm/src/dynamics/ModelTree.o \
 $(BUILD_DIR)/asm/src/dynamics/Util.o \
 \
+$(BUILD_DIR)/asm/src/effect/Group.o \
+$(BUILD_DIR)/asm/src/effect/Manager.o \
+$(BUILD_DIR)/asm/src/effect/Requestor.o \
+$(BUILD_DIR)/asm/src/effect/StdRequestor.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Group_8017de08.o \
-$(BUILD_DIR)/asm/src/Manager_8017e53c.o \
-$(BUILD_DIR)/asm/src/Requestor_8017e670.o \
-$(BUILD_DIR)/asm/src/StdRequestor_8017eeac.o \
 $(BUILD_DIR)/asm/src/CameraInfo_8017f338.o \
 $(BUILD_DIR)/asm/src/DrawInfo_8017f38c.o \
 $(BUILD_DIR)/asm/src/Effect_8017f550.o \
@@ -3144,8 +3145,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Group_804531a0.o \
-$(BUILD_DIR)/asm/src/Requestor_80453260.o \
 $(BUILD_DIR)/asm/src/Effect_804532f0.o \
 $(BUILD_DIR)/asm/src/EffectManager_80453350.o \
 $(BUILD_DIR)/asm/src/G3DAutoReqAnimCallback_804533e0.o \
@@ -5148,7 +5147,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Manager_8055d160.o \
 $(BUILD_DIR)/asm/src/EffectManager_8055d168.o \
 $(BUILD_DIR)/asm/src/PtclEffectManager_8055d170.o \
 $(BUILD_DIR)/asm/src/PtclEffectMemManager_8055d178.o \

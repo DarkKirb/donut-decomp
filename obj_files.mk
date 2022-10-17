@@ -209,11 +209,12 @@ $(BUILD_DIR)/asm/axfx/AXFXHooks.o \
 $(BUILD_DIR)/asm/cx/CXUncompression.o \
 $(BUILD_DIR)/asm/cx/CXSecureUncompression.o \
 \
+$(BUILD_DIR)/asm/dsp/dsp.o \
+$(BUILD_DIR)/asm/dsp/dsp_debug.o \
+$(BUILD_DIR)/asm/dsp/dsp_task.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/dsp/dsp_800472f0.o \
-$(BUILD_DIR)/asm/dsp/dsp_debug_80047550.o \
-$(BUILD_DIR)/asm/dsp/dsp_task_800475a0.o \
 $(BUILD_DIR)/asm/nand/nand_80047e40.o \
 $(BUILD_DIR)/asm/nand/NANDOpenClose_800492a0.o \
 $(BUILD_DIR)/asm/nand/NANDCore_800497b0.o \
@@ -3228,8 +3229,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/dsp/dsp_804361c0.o \
-$(BUILD_DIR)/asm/dsp/dsp_task_80436240.o \
 $(BUILD_DIR)/asm/nand/NANDCore_80436380.o \
 $(BUILD_DIR)/asm/nand/NANDCheck_804364d0.o \
 $(BUILD_DIR)/asm/nand/NANDLogging_80436580.o \
@@ -5154,7 +5153,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/dsp/dsp_80556630.o \
 $(BUILD_DIR)/asm/nand/nand_80556638.o \
 $(BUILD_DIR)/asm/nand/NANDCore_80556640.o \
 $(BUILD_DIR)/asm/nand/NANDCheck_80556660.o \
@@ -5591,8 +5589,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/dsp/dsp_8055ccc0.o \
-$(BUILD_DIR)/asm/dsp/dsp_task_8055ccc8.o \
 $(BUILD_DIR)/asm/nand/NANDCore_8055cce0.o \
 $(BUILD_DIR)/asm/nand/NANDLogging_8055cce8.o \
 $(BUILD_DIR)/asm/nand/NANDErrorMessage_8055ccf0.o \

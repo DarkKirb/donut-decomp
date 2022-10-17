@@ -181,3 +181,55 @@ lbl_80047534:
 /* 80047544 00043384  38 21 00 10 */	addi r1, r1, 0x10
 /* 80047548 00043388  4E 80 00 20 */	blr
 /* 8004754C 0004338C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_804361C0"
+"@1_804361C0":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20445350
+	.4byte 0x20097265
+	.4byte 0x6C656173
+	.4byte 0x65206275
+	.4byte 0x696C643A
+	.4byte 0x20417567
+	.4byte 0x20323320
+	.4byte 0x32303130
+	.4byte 0x2031373A
+	.4byte 0x33303A30
+	.4byte 0x33202830
+	.4byte 0x78343330
+	.4byte 0x325F3134
+	.4byte 0x3529203E
+	.4byte 0x3E000000
+	.4byte 0x44535049
+	.4byte 0x6E697428
+	.4byte 0x293A2042
+	.4byte 0x75696C64
+	.4byte 0x20446174
+	.4byte 0x653A2025
+	.4byte 0x73202573
+	.4byte 0x0A000000
+	.4byte 0x41756720
+	.4byte 0x32332032
+	.4byte 0x30313000
+	.4byte 0x31373A33
+	.4byte 0x303A3033
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __DSPVersion
+__DSPVersion:
+
+	.4byte "@1_804361C0"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __DSP_init_flag
+__DSP_init_flag:
+	.skip 0x8

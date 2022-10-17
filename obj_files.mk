@@ -107,11 +107,12 @@ $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/mslsupp.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/targimpl.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/target_options.o \
 \
+$(BUILD_DIR)/asm/base/PPCArch.o \
+\
 $(BUILD_DIR)/asm/os/__start_800062c0.o \
 $(BUILD_DIR)/asm/os/__ppc_eabi_init_80006620.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/base/PPCArch_8001a0b0.o \
 $(BUILD_DIR)/asm/os/OS_8001a2c0.o \
 $(BUILD_DIR)/asm/os/OSAlarm_8001b7a0.o \
 $(BUILD_DIR)/asm/os/OSAlloc_8001c050.o \
@@ -3218,7 +3219,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/base/PPCArch_80421da0.o \
 $(BUILD_DIR)/asm/os/OS_80421dd8.o \
 $(BUILD_DIR)/asm/os/OSAlarm_804221e8.o \
 $(BUILD_DIR)/asm/os/OSAudioSystem_804221f8.o \

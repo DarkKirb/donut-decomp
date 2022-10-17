@@ -214,3 +214,33 @@ lbl_8004D718:
 /* 8004D744 00049584  38 21 00 90 */	addi r1, r1, 0x90
 /* 8004D748 00049588  4E 80 00 20 */	blr
 /* 8004D74C 0004958C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@1993"
+"@1993":
+
+	.4byte 0x3FECC000
+	.4byte 0
+	.4byte 0x3FECC000
+	.4byte 0
+	.4byte 0x3FECC000
+	.4byte 0
+	.4byte 0x3FECC000
+	.4byte 0
+	.4byte 0x3FF33000
+	.4byte 0
+	.4byte 0x3FF99000
+	.4byte 0
+	.4byte 0x40000000
+	.4byte 0
+	.4byte 0x40033000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@2084_8055E740"
+"@2084_8055E740":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

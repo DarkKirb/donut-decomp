@@ -224,9 +224,10 @@ $(BUILD_DIR)/asm/sc/scsystem.o \
 $(BUILD_DIR)/asm/sc/scapi.o \
 $(BUILD_DIR)/asm/sc/scapi_prdinfo.o \
 \
+$(BUILD_DIR)/asm/wenc/wenc.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/wenc/wenc_8004d474.o \
 $(BUILD_DIR)/asm/enc/encutility_8004d750.o \
 $(BUILD_DIR)/asm/enc/encunicode_8004d990.o \
 $(BUILD_DIR)/asm/arc/arc_8004dd70.o \
@@ -3001,7 +3002,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/wenc/wenc_80407ca8.o \
 $(BUILD_DIR)/asm/wpad/WPAD_80407ce8.o \
 $(BUILD_DIR)/asm/wpad/WPADHIDParser_80407db8.o \
 $(BUILD_DIR)/asm/bte/hcisu_h2_80407de8.o \
@@ -5776,7 +5776,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/wenc/wenc_8055e740.o \
 $(BUILD_DIR)/asm/wpad/WPAD_8055e748.o \
 $(BUILD_DIR)/asm/wpad/WPADHIDParser_8055e750.o \
 $(BUILD_DIR)/asm/wpad/WUD_8055e7c8.o \

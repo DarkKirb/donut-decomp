@@ -180,16 +180,17 @@ $(BUILD_DIR)/asm/gx/GXDisplayList.o \
 $(BUILD_DIR)/asm/gx/GXTransform.o \
 $(BUILD_DIR)/asm/gx/GXPerf.o \
 \
+$(BUILD_DIR)/asm/dvd/dvdfs.o \
+$(BUILD_DIR)/asm/dvd/dvd.o \
+$(BUILD_DIR)/asm/dvd/dvdqueue.o \
+$(BUILD_DIR)/asm/dvd/dvderror.o \
+$(BUILD_DIR)/asm/dvd/dvdidutils.o \
+$(BUILD_DIR)/asm/dvd/dvdFatal.o \
+$(BUILD_DIR)/asm/dvd/dvdDeviceError.o \
+$(BUILD_DIR)/asm/dvd/dvd_broadway.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/dvd/dvdfs_800398f0.o \
-$(BUILD_DIR)/asm/dvd/dvd_8003a140.o \
-$(BUILD_DIR)/asm/dvd/dvdqueue_8003f050.o \
-$(BUILD_DIR)/asm/dvd/dvderror_8003f2d0.o \
-$(BUILD_DIR)/asm/dvd/dvdidutils_8003fcf0.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_8003fde0.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_8003ff50.o \
-$(BUILD_DIR)/asm/dvd/dvd_broadway_800401e0.o \
 $(BUILD_DIR)/asm/ai/ai_80042860.o \
 $(BUILD_DIR)/asm/ax/AX_80042e10.o \
 $(BUILD_DIR)/asm/ax/AXAlloc_80042e80.o \
@@ -2991,8 +2992,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_80407850.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_80407888.o \
 $(BUILD_DIR)/asm/nand/nand_804078a8.o \
 $(BUILD_DIR)/asm/nand/NANDCore_804078f0.o \
 $(BUILD_DIR)/asm/nand/NANDErrorMessage_80407a38.o \
@@ -3223,12 +3222,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/dvd/dvdfs_804310f8.o \
-$(BUILD_DIR)/asm/dvd/dvd_80431260.o \
-$(BUILD_DIR)/asm/dvd/dvderror_804316a8.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_804316d8.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_80431ea0.o \
-$(BUILD_DIR)/asm/dvd/dvd_broadway_80432038.o \
 $(BUILD_DIR)/asm/ai/ai_80432f40.o \
 $(BUILD_DIR)/asm/ax/AX_80432f88.o \
 $(BUILD_DIR)/asm/ax/AXVPB_80432fd0.o \
@@ -5030,11 +5023,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/dvd/dvd_8049ae00.o \
-$(BUILD_DIR)/asm/dvd/dvdqueue_8049fab0.o \
-$(BUILD_DIR)/asm/dvd/dvderror_8049fae0.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_8049fd40.o \
-$(BUILD_DIR)/asm/dvd/dvd_broadway_8049fd60.o \
 $(BUILD_DIR)/asm/ax/AXAlloc_8049ff20.o \
 $(BUILD_DIR)/asm/ax/AXAux_804a0020.o \
 $(BUILD_DIR)/asm/ax/AXCL_804a31a0.o \
@@ -5172,11 +5160,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/dvd/dvdfs_805565c8.o \
-$(BUILD_DIR)/asm/dvd/dvd_805565d8.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_805565f0.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_805565f8.o \
-$(BUILD_DIR)/asm/dvd/dvd_broadway_80556600.o \
 $(BUILD_DIR)/asm/ai/ai_80556610.o \
 $(BUILD_DIR)/asm/ax/AX_80556618.o \
 $(BUILD_DIR)/asm/ax/DSPCode_80556620.o \
@@ -5618,12 +5601,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/dvd/dvdfs_8055ca30.o \
-$(BUILD_DIR)/asm/dvd/dvd_8055ca60.o \
-$(BUILD_DIR)/asm/dvd/dvderror_8055caf8.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_8055cb08.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_8055cb10.o \
-$(BUILD_DIR)/asm/dvd/dvd_broadway_8055cb18.o \
 $(BUILD_DIR)/asm/ai/ai_8055cb40.o \
 $(BUILD_DIR)/asm/ax/AX_8055cb80.o \
 $(BUILD_DIR)/asm/ax/AXAlloc_8055cb88.o \
@@ -5843,8 +5820,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/dvd/dvdFatal_8055e698.o \
-$(BUILD_DIR)/asm/dvd/dvdDeviceError_8055e6a0.o \
 $(BUILD_DIR)/asm/ax/AXVPB_8055e6a8.o \
 $(BUILD_DIR)/asm/axfx/AXFXReverbHi_8055e6c8.o \
 $(BUILD_DIR)/asm/axfx/AXFXReverbHiExp_8055e6d0.o \

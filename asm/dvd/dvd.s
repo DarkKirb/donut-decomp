@@ -6119,3 +6119,531 @@ __DVDTestAlarm:
 lbl_8003F048:
 /* 8003F048 0003AE88  48 01 4D A8 */	b __wpadNoAlloc
 /* 8003F04C 0003AE8C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1_80431260"
+"@1_80431260":
+
+	.4byte 0x3C3C2052
+	.4byte 0x564C5F53
+	.4byte 0x444B202D
+	.4byte 0x20445644
+	.4byte 0x20097265
+	.4byte 0x6C656173
+	.4byte 0x65206275
+	.4byte 0x696C643A
+	.4byte 0x20417567
+	.4byte 0x20323320
+	.4byte 0x32303130
+	.4byte 0x2031373A
+	.4byte 0x33303A30
+	.4byte 0x35202830
+	.4byte 0x78343330
+	.4byte 0x325F3134
+	.4byte 0x3529203E
+	.4byte 0x3E000000
+
+.global "@4255_804312A8"
+"@4255_804312A8":
+
+	.4byte 0x44564443
+	.4byte 0x68616E67
+	.4byte 0x65446973
+	.4byte 0x6B28293A
+	.4byte 0x20465354
+	.4byte 0x20696E20
+	.4byte 0x74686520
+	.4byte 0x6E657720
+	.4byte 0x64697363
+	.4byte 0x20697320
+	.4byte 0x746F6F20
+	.4byte 0x6269672E
+	.4byte 0x20202000
+
+.global "@4490"
+"@4490":
+
+	.4byte lbl_8003C448
+	.4byte lbl_8003C43C
+	.4byte lbl_8003C43C
+	.4byte lbl_8003C448
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C448
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C41C
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C424
+	.4byte lbl_8003C424
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C424
+	.4byte lbl_8003C448
+	.4byte lbl_8003C448
+	.4byte lbl_8003C3E8
+	.4byte lbl_8003C3E8
+
+.global "@4658"
+"@4658":
+
+	.4byte lbl_8003D790
+	.4byte lbl_8003D324
+	.4byte lbl_8003D44C
+	.4byte lbl_8003D468
+	.4byte lbl_8003D324
+	.4byte lbl_8003D300
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D498
+	.4byte lbl_8003D4B8
+	.4byte lbl_8003D480
+	.4byte lbl_8003D4DC
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D790
+	.4byte lbl_8003D4FC
+	.4byte lbl_8003D514
+	.4byte lbl_8003D63C
+	.4byte lbl_8003D668
+	.4byte lbl_8003D690
+	.4byte lbl_8003D6A0
+	.4byte lbl_8003D680
+	.4byte lbl_8003D790
+	.4byte lbl_8003D6BC
+	.4byte lbl_8003D6E8
+	.4byte lbl_8003D75C
+
+.global "@4657"
+"@4657":
+
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D258
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D258
+	.4byte lbl_8003D258
+	.4byte lbl_8003D258
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D2DC
+	.4byte lbl_8003D258
+	.4byte lbl_8003D258
+
+.global ImmCommand
+ImmCommand:
+
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+
+.global "@5033_804314EC"
+"@5033_804314EC":
+
+	.4byte lbl_8003E704
+	.4byte lbl_8003E6A4
+	.4byte lbl_8003E6A4
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E684
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E684
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E704
+	.4byte lbl_8003E684
+	.4byte lbl_8003E684
+
+.global "@5032_80431598"
+"@5032_80431598":
+
+	.4byte lbl_8003E590
+	.4byte lbl_8003E590
+	.4byte lbl_8003E5B0
+	.4byte lbl_8003E614
+	.4byte lbl_8003E660
+	.4byte lbl_8003E730
+	.4byte lbl_8003E730
+	.4byte lbl_8003E730
+	.4byte lbl_8003E730
+	.4byte lbl_8003E87C
+	.4byte lbl_8003E87C
+	.4byte lbl_8003E590
+	.4byte lbl_8003E730
+	.4byte lbl_8003E82C
+
+.global "@5040"
+"@5040":
+
+	.4byte lbl_8003E948
+	.4byte lbl_8003E948
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E948
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E948
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E948
+	.4byte lbl_8003E948
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E948
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E93C
+	.4byte lbl_8003E948
+	.4byte lbl_8003E948
+
+.global "@5139"
+"@5139":
+
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBDC
+	.4byte lbl_8003EB7C
+	.4byte lbl_8003EB7C
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBDC
+	.4byte lbl_8003EB7C
+	.4byte lbl_8003EB7C
+	.4byte lbl_8003EBAC
+	.4byte lbl_8003EBAC
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global __DVDTicketViewBuffer
+__DVDTicketViewBuffer:
+	.skip 0x100
+
+.global __DVDTmdBuffer
+__DVDTmdBuffer:
+	.skip 0x4A00
+
+.global BB2
+BB2:
+	.skip 0x20
+
+.global DummyCommandBlock
+DummyCommandBlock:
+	.skip 0x30
+
+.global FatalAlarm
+FatalAlarm:
+	.skip 0x30
+
+.global CoverAlarm
+CoverAlarm:
+	.skip 0x40
+
+.global CurrDiskID
+CurrDiskID:
+	.skip 0x20
+
+.global __DVDGameTocBuffer
+__DVDGameTocBuffer:
+	.skip 0x20
+
+.global __DVDPartInfoBuffer
+__DVDPartInfoBuffer:
+	.skip 0x20
+
+.global ResetAlarm
+ResetAlarm:
+	.skip 0x30
+
+.global __DVDStopMotorCommandBlock
+__DVDStopMotorCommandBlock:
+	.skip 0x60
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __DVDVersion
+__DVDVersion:
+
+	.4byte "@1_80431260"
+
+.global autoInvalidation
+autoInvalidation:
+
+	.4byte 0x00000001
+
+.global checkOptionalCommand
+checkOptionalCommand:
+
+	.4byte defaultOptionalCommandChecker
+
+.global "@4254_805565E4"
+"@4254_805565E4":
+
+	.4byte 0x6476642E
+	.4byte 0x63000000
+
+.global DmaCommand
+DmaCommand:
+
+	.4byte 0xFFFFFFFF
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global CommandInfoCounter
+CommandInfoCounter:
+	.skip 0x4
+
+.global PauseFlag
+PauseFlag:
+	.skip 0x4
+
+.global PausingFlag
+PausingFlag:
+	.skip 0x4
+
+.global FatalErrorFlag
+FatalErrorFlag:
+	.skip 0x4
+
+.global Canceling
+Canceling:
+	.skip 0x4
+
+.global ResumeFromHere
+ResumeFromHere:
+	.skip 0x4
+
+.global NumInternalRetry
+NumInternalRetry:
+	.skip 0x4
+
+.global FirstTimeInBootrom
+FirstTimeInBootrom:
+	.skip 0x4
+
+.global Breaking
+Breaking:
+	.skip 0x4
+
+.global WaitingForCoverOpen
+WaitingForCoverOpen:
+	.skip 0x4
+
+.global WaitingForCoverClose
+WaitingForCoverClose:
+	.skip 0x4
+
+.global MotorStopped
+MotorStopped:
+	.skip 0x4
+
+.global ChangedDisc
+ChangedDisc:
+	.skip 0x4
+
+.global PreparingCover
+PreparingCover:
+	.skip 0x4
+
+.global __DVDLayoutFormat
+__DVDLayoutFormat:
+	.skip 0x4
+
+.global DVDInitialized
+DVDInitialized:
+	.skip 0x4
+
+.global __BS2DVDLowIntType
+__BS2DVDLowIntType:
+	.skip 0x4
+
+.global Prepared_8055CAA4
+Prepared_8055CAA4:
+	.skip 0x4
+
+.global BootGameInfo
+BootGameInfo:
+	.skip 0x4
+
+.global PartInfo
+PartInfo:
+	.skip 0x4
+
+.global GameToc
+GameToc:
+	.skip 0x10
+
+.global __DVDNumTmdBytes
+__DVDNumTmdBytes:
+	.skip 0x8
+
+.global LastResetEnd
+LastResetEnd:
+	.skip 0x4
+
+.global lbl_8055CACC
+lbl_8055CACC:
+	.skip 0x4
+
+.global MotorState
+MotorState:
+	.skip 0x4
+
+.global ResetRequired
+ResetRequired:
+	.skip 0x4
+
+.global LastError
+LastError:
+	.skip 0x4
+
+.global CancelLastError
+CancelLastError:
+	.skip 0x4
+
+.global CancelCallback
+CancelCallback:
+	.skip 0x4
+
+.global CurrCommand
+CurrCommand:
+	.skip 0x4
+
+.global bootInfo
+bootInfo:
+	.skip 0x4
+
+.global IDShouldBe
+IDShouldBe:
+	.skip 0x4
+
+.global executing
+executing:
+	.skip 0x4
+
+.global LastState
+LastState:
+	.skip 0x4

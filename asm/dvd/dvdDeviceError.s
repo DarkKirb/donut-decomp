@@ -213,3 +213,177 @@ lbl_800401C0:
 /* 800401D4 0003C014  38 21 00 30 */	addi r1, r1, 0x30
 /* 800401D8 0003C018  4E 80 00 20 */	blr
 /* 800401DC 0003C01C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global __DVDDeviceErrorMessage
+__DVDDeviceErrorMessage:
+
+	.4byte "@835_80431EA0"
+	.4byte "@836_80431EDC"
+	.4byte "@837_80431F14"
+	.4byte "@838_80431F54"
+	.4byte "@839_80431F90"
+	.4byte "@840_80431FCC"
+	.4byte "@841_80432008"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@835_80431EA0"
+"@835_80431EA0":
+
+	.4byte 0x0A0A0A83
+	.4byte 0x47838981
+	.4byte 0x5B835281
+	.4byte 0x5B836882
+	.4byte 0x4F824F82
+	.4byte 0x5081420A
+	.4byte 0x957396BE
+	.4byte 0x82C88366
+	.4byte 0x836F8343
+	.4byte 0x835882AA
+	.4byte 0x8CA982C2
+	.4byte 0x82A982E8
+	.4byte 0x82DC82B5
+	.4byte 0x82BD8142
+	.4byte 0
+
+.global "@836_80431EDC"
+"@836_80431EDC":
+
+	.4byte 0x0A0A0A45
+	.4byte 0x72726F72
+	.4byte 0x20233030
+	.4byte 0x312C0A75
+	.4byte 0x6E617574
+	.4byte 0x686F7269
+	.4byte 0x7A656420
+	.4byte 0x64657669
+	.4byte 0x63652068
+	.4byte 0x61732062
+	.4byte 0x65656E20
+	.4byte 0x64657465
+	.4byte 0x63746564
+	.4byte 0x2E000000
+
+.global "@837_80431F14"
+"@837_80431F14":
+
+	.4byte 0x0A0A0A46
+	.4byte 0x65686C65
+	.4byte 0x72202330
+	.4byte 0x30313A0A
+	.4byte 0x45732077
+	.4byte 0x75726465
+	.4byte 0x2065696E
+	.4byte 0x6520756E
+	.4byte 0x7A756CE4
+	.4byte 0x73736967
+	.4byte 0x65204B6F
+	.4byte 0x6D706F6E
+	.4byte 0x656E7465
+	.4byte 0x0A656E74
+	.4byte 0x6465636B
+	.4byte 0x742E0000
+
+.global "@838_80431F54"
+"@838_80431F54":
+
+	.4byte 0x0A0A0A45
+	.4byte 0x72726575
+	.4byte 0x72203030
+	.4byte 0x313A0A75
+	.4byte 0x6E206469
+	.4byte 0x73706F73
+	.4byte 0x69746966
+	.4byte 0x206E6F6E
+	.4byte 0x20617574
+	.4byte 0x6F726973
+	.4byte 0xE9206120
+	.4byte 0xE974E920
+	.4byte 0x64E97465
+	.4byte 0x6374E92E
+	.4byte 0
+
+.global "@839_80431F90"
+"@839_80431F90":
+
+	.4byte 0x0A0A0A45
+	.4byte 0x72726F72
+	.4byte 0x20303031
+	.4byte 0x3A0A5365
+	.4byte 0x20686120
+	.4byte 0x64657465
+	.4byte 0x63746164
+	.4byte 0x6F20756E
+	.4byte 0x20646973
+	.4byte 0x706F7369
+	.4byte 0x7469766F
+	.4byte 0x206E6F0A
+	.4byte 0x6175746F
+	.4byte 0x72697A61
+	.4byte 0x646F2E00
+
+.global "@840_80431FCC"
+"@840_80431FCC":
+
+	.4byte 0x0A0A0A45
+	.4byte 0x72726F72
+	.4byte 0x65202330
+	.4byte 0x30313A0A
+	.4byte 0x72696C65
+	.4byte 0x7661746F
+	.4byte 0x20756E20
+	.4byte 0x64697370
+	.4byte 0x6F736974
+	.4byte 0x69766F20
+	.4byte 0x6E6F6E20
+	.4byte 0x6175746F
+	.4byte 0x72697A7A
+	.4byte 0x61746F2E
+	.4byte 0
+
+.global "@841_80432008"
+"@841_80432008":
+
+	.4byte 0x0A0A0A46
+	.4byte 0x6F757420
+	.4byte 0x23303031
+	.4byte 0x3A0A6F6E
+	.4byte 0x67656F6F
+	.4byte 0x726C6F6F
+	.4byte 0x6664206F
+	.4byte 0x6E646572
+	.4byte 0x6465656C
+	.4byte 0x20676576
+	.4byte 0x6F6E6465
+	.4byte 0x6E2E0000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global CheckBuffer
+CheckBuffer:
+	.skip 0x20
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global lowDone
+lowDone:
+
+	.4byte 0x00000001
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global lowIntType
+lowIntType:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@850_8055E6A0"
+"@850_8055E6A0":
+
+	.4byte 0xFFFFFF00
+	.4byte 0

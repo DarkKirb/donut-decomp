@@ -468,3 +468,47 @@ dvdCheckDiskCallback__Q23app5ResetFlP15DVDCommandBlock:
 /* 8017B1EC 0017702C  80 6D ED 38 */	lwz r3, "object___Q33hel6common31ExplicitSingleton<Q23app5Reset>"@sda21(r13)
 /* 8017B1F0 00177030  38 80 00 02 */	li r4, 0x2
 /* 8017B1F4 00177034  4B FF FF 10 */	b onCallback__Q23app5ResetFQ33app5Reset12CallbackKindl
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50602_80556CB8"
+"@50602_80556CB8":
+
+	.4byte 0
+
+.global "@50603_80556CBC"
+"@50603_80556CBC":
+
+	.4byte 0x437F0000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "tIsPushedReset__Q23app19@unnamed@Reset_cpp@"
+"tIsPushedReset__Q23app19@unnamed@Reset_cpp@":
+	.skip 0x1
+
+.global "tIsPushedPower__Q23app19@unnamed@Reset_cpp@"
+"tIsPushedPower__Q23app19@unnamed@Reset_cpp@":
+	.skip 0x3
+
+.global "object___Q33hel6common41ExplicitSingleton<Q23hbm14HomeButtonMenu>"
+"object___Q33hel6common41ExplicitSingleton<Q23hbm14HomeButtonMenu>":
+	.skip 0x4
+
+.global "object___Q33hel6common31ExplicitSingleton<Q23app5Reset>"
+"object___Q33hel6common31ExplicitSingleton<Q23app5Reset>":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51058"
+"@51058":
+
+	.4byte 0x41A00000
+	.4byte 0
+
+.global "@51061"
+"@51061":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

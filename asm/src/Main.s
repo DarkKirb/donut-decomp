@@ -15,3 +15,11 @@ lbl_80174AF0:
 .global lbl_80174AF4
 lbl_80174AF4:
 /* 80174AF4 00170934  48 00 2B C8 */	b Run__Q23app10EntryPointFbPCc
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48781_80556B70"
+"@48781_80556B70":
+
+	.4byte 0
+	.4byte 0

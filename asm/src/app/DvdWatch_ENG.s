@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global ERROR_MSG_ENG__Q23app8DvdWatch
+ERROR_MSG_ENG__Q23app8DvdWatch:
+
+	.4byte "@48836_80556B78"
+	.4byte "@48837_80452BC0"
+	.4byte "@48837_80452BC0"
+	.4byte "@48838_80452C04"
+	.4byte "@48839_80452C50"
+	.4byte 0
+.include "macros.inc"
+
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
 .global "@48837_80452BC0"
 "@48837_80452BC0":
@@ -90,3 +102,11 @@
 	.4byte 0x74727563
 	.4byte 0x74696F6E
 	.4byte 0x732E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48836_80556B78"
+"@48836_80556B78":
+
+	.4byte 0
+	.4byte 0

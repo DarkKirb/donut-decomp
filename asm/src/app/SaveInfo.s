@@ -433,3 +433,79 @@ requestSave__Q23app8SaveInfoFv:
 /* 8017BBD0 00177A10  7C 08 03 A6 */	mtlr r0
 /* 8017BBD4 00177A14  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017BBD8 00177A18  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52513_80453068"
+"@52513_80453068":
+
+	.4byte 0x72657369
+	.4byte 0x64656E74
+	.4byte 0x2F4D6169
+	.4byte 0x6E000000
+	.4byte 0x53617665
+	.4byte 0x496E666F
+	.4byte 0x42617365
+	.4byte 0
+	.4byte 0x53617665
+	.4byte 0x496E666F
+	.4byte 0
+	.4byte 0x54657874
+	.4byte 0x53617665
+	.4byte 0
+	.4byte 0x53617665
+	.4byte 0x496E666F
+	.4byte 0x4E6F7753
+	.4byte 0x6176696E
+	.4byte 0x67000000
+
+.global "@52582_804530B4"
+"@52582_804530B4":
+
+	.4byte 0x53617665
+	.4byte 0x42617365
+	.4byte 0x314E0000
+
+.global "@52583_804530C0"
+"@52583_804530C0":
+
+	.4byte 0x53617665
+	.4byte 0x42617365
+	.4byte 0x324E0000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52516_80556CC0"
+"@52516_80556CC0":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52584_80556CC8"
+"@52584_80556CC8":
+
+	.4byte 0
+
+.global "@52585_80556CCC"
+"@52585_80556CCC":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@52621_80556CD4"
+"@52621_80556CD4":
+
+	.4byte 0x456E6400

@@ -183,3 +183,27 @@ lbl_80177920:
 /* 80177930 00173770  7C 08 03 A6 */	mtlr r0
 /* 80177934 00173774  38 21 00 10 */	addi r1, r1, 0x10
 /* 80177938 00173778  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49240_80452CF8"
+"@49240_80452CF8":
+
+	.4byte 0x48424D5F
+	.4byte 0x52455345
+	.4byte 0x54000000
+	.4byte 0
+
+.global "@49241_80452D08"
+"@49241_80452D08":
+
+	.4byte 0x57494953
+	.4byte 0x59535445
+	.4byte 0x4D5F5245
+	.4byte 0x53455400
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "isExist___Q33hel6common31PrivateSingleton<Q23app6System>"
+"isExist___Q33hel6common31PrivateSingleton<Q23app6System>":
+	.skip 0x8

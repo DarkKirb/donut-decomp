@@ -243,3 +243,43 @@ lbl_8017B500:
 /* 8017B53C 0017737C  7C 08 03 A6 */	mtlr r0
 /* 8017B540 00177380  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 8017B544 00177384  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51961"
+"@51961":
+
+	.4byte 0x6C79742F
+	.4byte 0x72657369
+	.4byte 0x64656E74
+	.4byte 0x2F4D6169
+	.4byte 0x6E2E6172
+	.4byte 0x632E636D
+	.4byte 0x70000000
+
+.global "@52401_8045303C"
+"@52401_8045303C":
+
+	.4byte 0x52657369
+	.4byte 0x64656E74
+	.4byte 0x46696C65
+	.4byte 0x4C6F6164
+	.4byte 0x54687265
+	.4byte 0x61640000
+
+.global "@52478"
+"@52478":
+
+	.4byte 0x52657369
+	.4byte 0x64656E74
+	.4byte 0x2E6D7362
+	.4byte 0x74000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_FILE_TABLE__Q23app26@unnamed@ResidentFile_cpp@"
+"T_FILE_TABLE__Q23app26@unnamed@ResidentFile_cpp@":
+
+	.4byte "@51961"
+	.4byte 0

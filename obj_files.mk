@@ -632,28 +632,31 @@ $(BUILD_DIR)/asm/libms/msgfile.o \
 $(BUILD_DIR)/asm/libms/commonbin.o \
 $(BUILD_DIR)/asm/libms/projfile.o \
 \
+$(BUILD_DIR)/asm/src/Main.o \
+$(BUILD_DIR)/asm/src/TPL.o \
+$(BUILD_DIR)/asm/src/app/AddOnMint.o \
+$(BUILD_DIR)/asm/src/app/AppImpl.o \
+$(BUILD_DIR)/asm/src/app/Application.o \
+$(BUILD_DIR)/asm/src/app/AutoResetTimer.o \
+$(BUILD_DIR)/asm/src/app/BackupFileAccessor.o \
+$(BUILD_DIR)/asm/src/app/Constant.o \
+$(BUILD_DIR)/asm/src/app/DvdWatch.o \
+$(BUILD_DIR)/asm/src/app/DvdWatch_ENG.o \
+$(BUILD_DIR)/asm/src/app/EntryPoint.o \
+$(BUILD_DIR)/asm/src/app/HIDErrorMenu.o \
+$(BUILD_DIR)/asm/src/app/Locale.o \
+$(BUILD_DIR)/asm/src/app/Message.o \
+$(BUILD_DIR)/asm/src/app/NANDErrorMenu.o \
+$(BUILD_DIR)/asm/src/app/PerformanceController.o \
+$(BUILD_DIR)/asm/src/app/Random.o \
+$(BUILD_DIR)/asm/src/app/Reset.o \
+$(BUILD_DIR)/asm/src/app/ResidentFile.o \
+$(BUILD_DIR)/asm/src/app/RomFontWrapper.o \
+$(BUILD_DIR)/asm/src/app/SaveInfo.o \
+$(BUILD_DIR)/asm/src/app/System.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Main_80174ad8.o \
-$(BUILD_DIR)/asm/src/TPL_80174af8.o \
-$(BUILD_DIR)/asm/src/AddOnMint_80174cb8.o \
-$(BUILD_DIR)/asm/src/AppImpl_80174cec.o \
-$(BUILD_DIR)/asm/src/Application_80176268.o \
-$(BUILD_DIR)/asm/src/AutoResetTimer_80176714.o \
-$(BUILD_DIR)/asm/src/BackupFileAccessor_80176804.o \
-$(BUILD_DIR)/asm/src/DvdWatch_801768b4.o \
-$(BUILD_DIR)/asm/src/EntryPoint_801776bc.o \
-$(BUILD_DIR)/asm/src/HIDErrorMenu_8017793c.o \
-$(BUILD_DIR)/asm/src/Locale_801793ac.o \
-$(BUILD_DIR)/asm/src/Message_801793bc.o \
-$(BUILD_DIR)/asm/src/NANDErrorMenu_801798a8.o \
-$(BUILD_DIR)/asm/src/PerformanceController_8017a588.o \
-$(BUILD_DIR)/asm/src/Random_8017a9dc.o \
-$(BUILD_DIR)/asm/src/Reset_8017ac2c.o \
-$(BUILD_DIR)/asm/src/ResidentFile_8017b1f8.o \
-$(BUILD_DIR)/asm/src/RomFontWrapper_8017b548.o \
-$(BUILD_DIR)/asm/src/SaveInfo_8017b63c.o \
-$(BUILD_DIR)/asm/src/System_8017bbdc.o \
 $(BUILD_DIR)/asm/src/Dynamics_8017bd88.o \
 $(BUILD_DIR)/asm/src/ModelNode_8017c2a8.o \
 $(BUILD_DIR)/asm/src/ModelTree_8017d2ec.o \
@@ -2922,8 +2925,9 @@ $(BUILD_DIR)/asm/src/Mutex_80405a9c.o \
 $(BUILD_DIR)/asm/src/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/Thread_80405f14.o \
-$(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/PerformanceController_804062dc.o \
+$(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
+# .ctors
+O_FILES += \
 $(BUILD_DIR)/asm/src/MintModelAccessor_804062e0.o \
 $(BUILD_DIR)/asm/src/MintNodeAccessor_804062e4.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_804062e8.o \
@@ -2998,11 +3002,14 @@ $(BUILD_DIR)/asm/src/ModelDesc_804064e8.o \
 $(BUILD_DIR)/asm/src/MintCommander_80406520.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
-$(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
-$(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/src/DvdWatch_ENG_804144c8.o \
-$(BUILD_DIR)/asm/src/Locale_804144e0.o \
-$(BUILD_DIR)/asm/src/PerformanceController_80414500.o \
+$(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o 
+
+#.dtors
+O_FILES += \
+$(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
+
+# .rodata
+O_FILES += \
 $(BUILD_DIR)/asm/src/FDGManager_80414518.o \
 $(BUILD_DIR)/asm/src/FontKindUtil_80414528.o \
 $(BUILD_DIR)/asm/src/FreezeThread_80414570.o \
@@ -3133,15 +3140,9 @@ $(BUILD_DIR)/asm/src/Explanation_80420b40.o \
 $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
-$(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/src/AppImpl_80452b00.o \
-$(BUILD_DIR)/asm/src/DvdWatch_80452b30.o \
-$(BUILD_DIR)/asm/src/DvdWatch_ENG_80452bc0.o \
-$(BUILD_DIR)/asm/src/EntryPoint_80452cf8.o \
-$(BUILD_DIR)/asm/src/HIDErrorMenu_80452d18.o \
-$(BUILD_DIR)/asm/src/NANDErrorMenu_80452ee0.o \
-$(BUILD_DIR)/asm/src/ResidentFile_80453020.o \
-$(BUILD_DIR)/asm/src/SaveInfo_80453068.o \
+$(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
+# .data
+O_FILES += \
 $(BUILD_DIR)/asm/src/Dynamics_80453100.o \
 $(BUILD_DIR)/asm/src/ModelNode_80453130.o \
 $(BUILD_DIR)/asm/src/Util_80453168.o \
@@ -4727,7 +4728,9 @@ $(BUILD_DIR)/asm/src/SoundManager_80496600.o \
 $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
-$(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
+$(BUILD_DIR)/asm/src/StateChanger_804966f0.o
+# .bss
+O_FILES += \
 $(BUILD_DIR)/asm/src/FreezeManager_80544520.o \
 $(BUILD_DIR)/asm/src/MintModelAccessor_805447e8.o \
 $(BUILD_DIR)/asm/src/MintNodeAccessor_80544808.o \
@@ -4779,14 +4782,9 @@ $(BUILD_DIR)/asm/src/Food_805533c0.o \
 $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
-$(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/src/Main_80556b70.o \
-$(BUILD_DIR)/asm/src/DvdWatch_ENG_80556b78.o \
-$(BUILD_DIR)/asm/src/HIDErrorMenu_80556b80.o \
-$(BUILD_DIR)/asm/src/Locale_80556bf8.o \
-$(BUILD_DIR)/asm/src/NANDErrorMenu_80556c30.o \
-$(BUILD_DIR)/asm/src/Reset_80556cb8.o \
-$(BUILD_DIR)/asm/src/SaveInfo_80556cc0.o \
+$(BUILD_DIR)/asm/src/Table_80556398.o
+# .sdata
+O_FILES += \
 $(BUILD_DIR)/asm/src/GenContext_80556cd8.o \
 $(BUILD_DIR)/asm/src/PolyEffect_80556ce0.o \
 $(BUILD_DIR)/asm/src/FDGManager_80556d10.o \
@@ -5149,13 +5147,9 @@ $(BUILD_DIR)/asm/src/StaffRoll_8055c628.o \
 $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
-$(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/src/AppImpl_8055d0f0.o \
-$(BUILD_DIR)/asm/src/Application_8055d130.o \
-$(BUILD_DIR)/asm/src/AutoResetTimer_8055d138.o \
-$(BUILD_DIR)/asm/src/EntryPoint_8055d140.o \
-$(BUILD_DIR)/asm/src/PerformanceController_8055d148.o \
-$(BUILD_DIR)/asm/src/Reset_8055d150.o \
+$(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
+# .sbss
+O_FILES += \
 $(BUILD_DIR)/asm/src/Manager_8055d160.o \
 $(BUILD_DIR)/asm/src/EffectManager_8055d168.o \
 $(BUILD_DIR)/asm/src/PtclEffectManager_8055d170.o \
@@ -5290,11 +5284,9 @@ $(BUILD_DIR)/asm/src/SequenceGrandMenu_8055df18.o \
 $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
-$(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/src/Constant_8055f5a0.o \
-$(BUILD_DIR)/asm/src/DvdWatch_8055f5a8.o \
-$(BUILD_DIR)/asm/src/Reset_8055f5d8.o \
-$(BUILD_DIR)/asm/src/ResidentFile_8055f5e8.o \
+$(BUILD_DIR)/asm/src/Alarm_8055df68.o
+# .sdata2
+O_FILES += \
 $(BUILD_DIR)/asm/src/ModelNode_8055f5f0.o \
 $(BUILD_DIR)/asm/src/Util_8055f608.o \
 $(BUILD_DIR)/asm/src/CameraInfo_8055f630.o \
@@ -6303,7 +6295,9 @@ $(BUILD_DIR)/asm/src/Alarm_80564378.o \
 $(BUILD_DIR)/asm/src/AnimController_80564388.o \
 $(BUILD_DIR)/asm/src/CurveUtility_80564390.o \
 $(BUILD_DIR)/asm/src/FrameCounter_80564398.o \
-$(BUILD_DIR)/asm/src/UIntAABBox_805643a8.o \
+$(BUILD_DIR)/asm/src/UIntAABBox_805643a8.o
+# .sbss2
+O_FILES += \
 $(BUILD_DIR)/asm/src/RenderSetting_805643d8.o \
 $(BUILD_DIR)/asm/src/LandLayer_805643e0.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_805643e8.o \

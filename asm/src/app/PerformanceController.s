@@ -343,3 +343,29 @@ calcedFrameCount__Q23app21PerformanceControllerCFv:
 "__sinit_@@1PerformanceController_cpp":
 /* 8017A9D4 00176814  38 6D ED 28 */	addi r3, r13, "t_instance__35@unnamed@PerformanceController_cpp@"@sda21
 /* 8017A9D8 00176818  4B F6 2A 08 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1PerformanceController_cpp"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_DRAW_FRAME_INTERVAL_TABLE__35@unnamed@PerformanceController_cpp@"
+"T_DRAW_FRAME_INTERVAL_TABLE__35@unnamed@PerformanceController_cpp@":
+
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_instance__35@unnamed@PerformanceController_cpp@"
+"t_instance__35@unnamed@PerformanceController_cpp@":
+	.skip 0x4
+
+.global "isExist___Q33hel6common47PrivateSingleton<Q23app21PerformanceController>"
+"isExist___Q33hel6common47PrivateSingleton<Q23app21PerformanceController>":
+	.skip 0x4

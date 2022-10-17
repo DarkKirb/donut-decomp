@@ -354,3 +354,9 @@ saveInfo__Q23app11ApplicationFv:
 /* 80176708 00172548  7C 08 03 A6 */	mtlr r0
 /* 8017670C 0017254C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80176710 00172550  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"
+"object___Q33hel6common38ExplicitSingleton<Q23app11Application>":
+	.skip 0x8

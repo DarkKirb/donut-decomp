@@ -75,3 +75,9 @@ lbl_801767EC:
 /* 801767F8 00172638  7C 08 03 A6 */	mtlr r0
 /* 801767FC 0017263C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80176800 00172640  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"
+"object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>":
+	.skip 0x8

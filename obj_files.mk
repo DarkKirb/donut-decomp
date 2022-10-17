@@ -158,14 +158,15 @@ $(BUILD_DIR)/asm/vi/vi.o \
 $(BUILD_DIR)/asm/vi/i2c.o \
 $(BUILD_DIR)/asm/vi/vi3in1.o \
 \
+$(BUILD_DIR)/asm/mtx/mtx.o \
+$(BUILD_DIR)/asm/mtx/mtxvec.o \
+$(BUILD_DIR)/asm/mtx/mtx44.o \
+$(BUILD_DIR)/asm/mtx/mtx44vec.o \
+$(BUILD_DIR)/asm/mtx/vec.o \
+$(BUILD_DIR)/asm/mtx/quat.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/mtx/mtx_800304e0.o \
-$(BUILD_DIR)/asm/mtx/mtxvec_800310f0.o \
-$(BUILD_DIR)/asm/mtx/mtx44_800311b0.o \
-$(BUILD_DIR)/asm/mtx/mtx44vec_800314f0.o \
-$(BUILD_DIR)/asm/mtx/vec_80031570.o \
-$(BUILD_DIR)/asm/mtx/quat_800317b0.o \
 $(BUILD_DIR)/asm/gx/GXInit_80031c20.o \
 $(BUILD_DIR)/asm/gx/GXFifo_80032db0.o \
 $(BUILD_DIR)/asm/gx/GXAttr_800337a0.o \
@@ -2989,7 +2990,6 @@ $(BUILD_DIR)/asm/src/MintSERequestor_80406524.o \
 $(BUILD_DIR)/asm/src/Alarm_80406528.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_8040652c.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o \
-$(BUILD_DIR)/asm/mtx/quat_80407840.o \
 $(BUILD_DIR)/asm/dvd/dvdFatal_80407850.o \
 $(BUILD_DIR)/asm/dvd/dvdDeviceError_80407888.o \
 $(BUILD_DIR)/asm/nand/nand_804078a8.o \
@@ -5181,7 +5181,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/mtx/mtx_80556560.o \
 $(BUILD_DIR)/asm/gx/GXInit_80556568.o \
 $(BUILD_DIR)/asm/gx/GXAttr_80556570.o \
 $(BUILD_DIR)/asm/gx/GXTexture_80556580.o \
@@ -5859,10 +5858,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/mtx/mtx_8055e530.o \
-$(BUILD_DIR)/asm/mtx/mtx44_8055e550.o \
-$(BUILD_DIR)/asm/mtx/vec_8055e568.o \
-$(BUILD_DIR)/asm/mtx/quat_8055e578.o \
 $(BUILD_DIR)/asm/gx/GXInit_8055e588.o \
 $(BUILD_DIR)/asm/gx/GXFrameBuf_8055e5b0.o \
 $(BUILD_DIR)/asm/gx/GXLight_8055e5b8.o \

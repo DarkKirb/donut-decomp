@@ -309,3 +309,35 @@ lbl_80031B80:
 /* 80031C14 0002DA54  38 21 00 60 */	addi r1, r1, 0x60
 /* 80031C18 0002DA58  4E 80 00 20 */	blr
 /* 80031C1C 0002DA5C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@1420"
+"@1420":
+
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@1598"
+"@1598":
+
+	.4byte 0x3F800000
+
+.global "@1599"
+"@1599":
+
+	.4byte 0
+
+.global "@1603"
+"@1603":
+
+	.4byte 0x3F000000
+
+.global "@1754"
+"@1754":
+
+	.4byte 0x3F7FFF58

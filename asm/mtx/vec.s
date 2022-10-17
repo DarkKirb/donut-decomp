@@ -163,3 +163,21 @@ PSVECSquareDistance:
 /* 800317A4 0002D5E4  4E 80 00 20 */	blr
 /* 800317A8 0002D5E8  00 00 00 00 */	.4byte 0x00000000
 /* 800317AC 0002D5EC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@1414"
+"@1414":
+
+	.4byte 0x3F000000
+
+.global "@1415_8055E56C"
+"@1415_8055E56C":
+
+	.4byte 0x40400000
+
+.global "@1443"
+"@1443":
+
+	.4byte 0
+	.4byte 0

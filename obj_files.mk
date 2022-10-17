@@ -202,11 +202,12 @@ $(BUILD_DIR)/asm/ax/AXProf.o \
 $(BUILD_DIR)/asm/ax/AXComp.o \
 $(BUILD_DIR)/asm/ax/DSPCode.o \
 \
+$(BUILD_DIR)/asm/axfx/AXFXReverbHi.o \
+$(BUILD_DIR)/asm/axfx/AXFXReverbHiExp.o \
+$(BUILD_DIR)/asm/axfx/AXFXHooks.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/axfx/AXFXReverbHi_80046160.o \
-$(BUILD_DIR)/asm/axfx/AXFXReverbHiExp_80046210.o \
-$(BUILD_DIR)/asm/axfx/AXFXHooks_80047040.o \
 $(BUILD_DIR)/asm/cx/CXUncompression_80047090.o \
 $(BUILD_DIR)/asm/cx/CXSecureUncompression_800470d0.o \
 $(BUILD_DIR)/asm/dsp/dsp_800472f0.o \
@@ -3226,7 +3227,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/axfx/AXFXReverbHiExp_80436020.o \
 $(BUILD_DIR)/asm/dsp/dsp_804361c0.o \
 $(BUILD_DIR)/asm/dsp/dsp_task_80436240.o \
 $(BUILD_DIR)/asm/nand/NANDCore_80436380.o \
@@ -5153,7 +5153,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/axfx/AXFXHooks_80556628.o \
 $(BUILD_DIR)/asm/dsp/dsp_80556630.o \
 $(BUILD_DIR)/asm/nand/nand_80556638.o \
 $(BUILD_DIR)/asm/nand/NANDCore_80556640.o \
@@ -5801,8 +5800,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/axfx/AXFXReverbHi_8055e6c8.o \
-$(BUILD_DIR)/asm/axfx/AXFXReverbHiExp_8055e6d0.o \
 $(BUILD_DIR)/asm/nand/NANDErrorMessage_8055e710.o \
 $(BUILD_DIR)/asm/wenc/wenc_8055e740.o \
 $(BUILD_DIR)/asm/wpad/WPAD_8055e748.o \

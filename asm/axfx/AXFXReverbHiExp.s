@@ -1069,3 +1069,175 @@ lbl_80047004:
 /* 80047034 00042E74  00 00 00 00 */	.4byte 0x00000000
 /* 80047038 00042E78  00 00 00 00 */	.4byte 0x00000000
 /* 8004703C 00042E7C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __EarlySizeTable
+__EarlySizeTable:
+
+	.4byte 0x0000009D
+	.4byte 0x000001DF
+	.4byte 0x0000033D
+	.4byte 0x0000013D
+	.4byte 0x00000329
+	.4byte 0x0000045D
+	.4byte 0x000001DF
+	.4byte 0x000003AD
+	.4byte 0x000005CF
+	.4byte 0x00000281
+	.4byte 0x000004EB
+	.4byte 0x0000079D
+	.4byte 0x0000031D
+	.4byte 0x00000683
+	.4byte 0x00000A13
+	.4byte 0x000003C7
+	.4byte 0x0000076D
+	.4byte 0x00000B57
+	.4byte 0x00000463
+	.4byte 0x00000883
+	.4byte 0x00000D55
+	.4byte 0x000004FF
+	.4byte 0x000009AD
+	.4byte 0x00000F31
+	.4byte 0x3ECCCCCD
+	.4byte 0xBF800000
+	.4byte 0x3E99999A
+	.4byte 0x3F000000
+	.4byte 0xBF733333
+	.4byte 0x3E99999A
+	.4byte 0x3F19999A
+	.4byte 0xBF666666
+	.4byte 0x3E99999A
+	.4byte 0x3F400000
+	.4byte 0xBF59999A
+	.4byte 0x3E99999A
+	.4byte 0xBF666666
+	.4byte 0x3F4CCCCD
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+
+.global __FilterSizeTable
+__FilterSizeTable:
+
+	.4byte 0x000006FD
+	.4byte 0x000007CF
+	.4byte 0x0000091D
+	.4byte 0x000001B1
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x00000095
+	.4byte 0x00000125
+	.4byte 0x000001C1
+	.4byte 0x000000FB
+	.4byte 0x00000067
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000003B3
+	.4byte 0x00000551
+	.4byte 0x000005FB
+	.4byte 0x000001B1
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000004FF
+	.4byte 0x000005FB
+	.4byte 0x000007B5
+	.4byte 0x000001FD
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000005FB
+	.4byte 0x00000737
+	.4byte 0x000008F9
+	.4byte 0x00000233
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@3078"
+"@3078":
+
+	.4byte 0x46FA0000
+
+.global "@3123"
+"@3123":
+
+	.4byte 0
+
+.global "@3288"
+"@3288":
+
+	.4byte 0x3F800000
+
+.global "@3289"
+"@3289":
+
+	.4byte 0x3F19999A
+
+.global "@3290"
+"@3290":
+
+	.4byte 0x3F000000
+	.4byte 0
+
+.global "@3294"
+"@3294":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@3484"
+"@3484":
+
+	.4byte 0xC0400000
+	.4byte 0
+
+.global "@3485_8055E6F8"
+"@3485_8055E6F8":
+
+	.4byte 0x40240000
+	.4byte 0
+
+.global "@3486_8055E700"
+"@3486_8055E700":
+
+	.4byte 0x3F733333
+	.4byte 0
+
+.global "@3489_8055E708"
+"@3489_8055E708":
+
+	.4byte 0x43300000
+	.4byte 0

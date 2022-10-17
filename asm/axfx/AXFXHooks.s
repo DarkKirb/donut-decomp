@@ -30,3 +30,15 @@ AXFXGetHooks:
 /* 80047084 00042EC4  00 00 00 00 */	.4byte 0x00000000
 /* 80047088 00042EC8  00 00 00 00 */	.4byte 0x00000000
 /* 8004708C 00042ECC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __AXFXAlloc
+__AXFXAlloc:
+
+	.4byte __AXFXAllocFunction
+
+.global __AXFXFree
+__AXFXFree:
+
+	.4byte __AXFXFreeFunction

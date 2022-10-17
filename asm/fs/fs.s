@@ -1737,3 +1737,59 @@ lbl_80052288:
 /* 80052294 0004E0D4  7C 08 03 A6 */	mtlr r0
 /* 80052298 0004E0D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005229C 0004E0DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@1709_80438508"
+"@1709_80438508":
+
+	.4byte 0x41505020
+	.4byte 0x4552524F
+	.4byte 0x523A204E
+	.4byte 0x6F742065
+	.4byte 0x6E6F7567
+	.4byte 0x68204950
+	.4byte 0x43206172
+	.4byte 0x656E610A
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global __fsFd
+__fsFd:
+
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global "@1710_805567B8"
+"@1710_805567B8":
+
+	.4byte 0x2F646576
+	.4byte 0x2F667300
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global __fsInitialized
+__fsInitialized:
+	.skip 0x4
+
+.global __devfs
+__devfs:
+	.skip 0x4
+
+.global _asynCnt
+_asynCnt:
+	.skip 0x4
+
+.global "@LOCAL@ISFS_OpenLib__Fv@lo"
+"@LOCAL@ISFS_OpenLib__Fv@lo":
+	.skip 0x4
+
+.global "@LOCAL@ISFS_OpenLib__Fv@hi@0"
+"@LOCAL@ISFS_OpenLib__Fv@hi@0":
+	.skip 0x4
+
+.global hId_8055CD5C
+hId_8055CD5C:
+	.skip 0x4

@@ -236,9 +236,10 @@ $(BUILD_DIR)/asm/ipc/ipcclt.o \
 $(BUILD_DIR)/asm/ipc/memory.o \
 $(BUILD_DIR)/asm/ipc/ipcProfile.o \
 \
+$(BUILD_DIR)/asm/fs/fs.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/fs/fs_80050bc0.o \
 $(BUILD_DIR)/asm/pad/Padclamp_800522a0.o \
 $(BUILD_DIR)/asm/pad/Pad_800524c0.o \
 $(BUILD_DIR)/asm/wpad/WPAD_80053df0.o \
@@ -3230,7 +3231,6 @@ $(BUILD_DIR)/asm/src/BgManager_80420bf0.o \
 $(BUILD_DIR)/asm/src/StaffRoll_80420d08.o \
 $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o \
-$(BUILD_DIR)/asm/fs/fs_80438508.o \
 $(BUILD_DIR)/asm/pad/Pad_80438530.o \
 $(BUILD_DIR)/asm/wpad/WPAD_80438588.o \
 $(BUILD_DIR)/asm/wpad/WPADHIDParser_80438818.o \
@@ -5140,7 +5140,6 @@ $(BUILD_DIR)/asm/src/ScoreCoin_80554888.o \
 $(BUILD_DIR)/asm/src/EffectLocatorModelDesc_805549b8.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o \
-$(BUILD_DIR)/asm/fs/fs_805567b0.o \
 $(BUILD_DIR)/asm/pad/Pad_805567c0.o \
 $(BUILD_DIR)/asm/wpad/WPAD_805567e0.o \
 $(BUILD_DIR)/asm/wpad/WUD_805567f8.o \
@@ -5567,7 +5566,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/fs/fs_8055cd48.o \
 $(BUILD_DIR)/asm/pad/Pad_8055cd60.o \
 $(BUILD_DIR)/asm/wpad/WPAD_8055cd90.o \
 $(BUILD_DIR)/asm/wpad/WPADHIDParser_8055ce08.o \

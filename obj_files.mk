@@ -206,10 +206,11 @@ $(BUILD_DIR)/asm/axfx/AXFXReverbHi.o \
 $(BUILD_DIR)/asm/axfx/AXFXReverbHiExp.o \
 $(BUILD_DIR)/asm/axfx/AXFXHooks.o \
 \
+$(BUILD_DIR)/asm/cx/CXUncompression.o \
+$(BUILD_DIR)/asm/cx/CXSecureUncompression.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/cx/CXUncompression_80047090.o \
-$(BUILD_DIR)/asm/cx/CXSecureUncompression_800470d0.o \
 $(BUILD_DIR)/asm/dsp/dsp_800472f0.o \
 $(BUILD_DIR)/asm/dsp/dsp_debug_80047550.o \
 $(BUILD_DIR)/asm/dsp/dsp_task_800475a0.o \

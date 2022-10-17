@@ -330,14 +330,15 @@ $(BUILD_DIR)/asm/tpl/TPL.o \
 \
 $(BUILD_DIR)/asm/esp/esp.o \
 \
+$(BUILD_DIR)/asm/mem/mem_heapCommon.o \
+$(BUILD_DIR)/asm/mem/mem_expHeap.o \
+$(BUILD_DIR)/asm/mem/mem_frameHeap.o \
+$(BUILD_DIR)/asm/mem/mem_unitHeap.o \
+$(BUILD_DIR)/asm/mem/mem_allocator.o \
+$(BUILD_DIR)/asm/mem/mem_list.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/mem/mem_heapCommon_800a2640.o \
-$(BUILD_DIR)/asm/mem/mem_expHeap_800a2ab0.o \
-$(BUILD_DIR)/asm/mem/mem_frameHeap_800a32e0.o \
-$(BUILD_DIR)/asm/mem/mem_unitHeap_800a3530.o \
-$(BUILD_DIR)/asm/mem/mem_allocator_800a37d0.o \
-$(BUILD_DIR)/asm/mem/mem_list_800a3830.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_draworder_800a3950.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effect_800a3a70.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_800a4670.o \
@@ -4961,7 +4962,6 @@ $(BUILD_DIR)/asm/src/WaveHandle_804966b8.o \
 $(BUILD_DIR)/asm/src/StorageUtil_804966d0.o \
 $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o \
-$(BUILD_DIR)/asm/mem/mem_heapCommon_804fe258.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_804fe280.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_particlemanager_8050a398.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_resource_8050a3c8.o \
@@ -5470,7 +5470,6 @@ $(BUILD_DIR)/asm/src/StepMain_8055c688.o \
 $(BUILD_DIR)/asm/src/CinemaScopeModel_8055c6a0.o \
 $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o \
-$(BUILD_DIR)/asm/mem/mem_heapCommon_8055cf18.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_8055cf20.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_particlemanager_8055cf30.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_emform_8055cf38.o \
@@ -5655,7 +5654,6 @@ $(BUILD_DIR)/asm/src/SequenceProductRoot_8055df48.o \
 $(BUILD_DIR)/asm/src/MintSERequestor_8055df58.o \
 $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o \
-$(BUILD_DIR)/asm/mem/mem_allocator_8055e968.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effect_8055e970.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_effectsystem_8055e978.o \
 $(BUILD_DIR)/asm/libnw4r_ef/ef_emitter_8055e980.o \

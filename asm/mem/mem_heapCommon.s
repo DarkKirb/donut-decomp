@@ -369,3 +369,19 @@ lbl_800A2A74:
 /* 800A2AA4 0009E8E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 800A2AA8 0009E8E8  4E 80 00 20 */	blr
 /* 800A2AAC 0009E8EC  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global sRootList
+sRootList:
+	.skip 0x10
+
+.global sRootMutex
+sRootMutex:
+	.skip 0x18
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global sRootListInitialized
+sRootListInitialized:
+	.skip 0x8

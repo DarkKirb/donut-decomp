@@ -36,3 +36,11 @@ MEMInitAllocatorForExpHeap:
 /* 800A3824 0009F664  90 03 00 0C */	stw r0, 0xc(r3)
 /* 800A3828 0009F668  4E 80 00 20 */	blr
 /* 800A382C 0009F66C  00 00 00 00 */	.4byte 0x00000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@LOCAL@MEMInitAllocatorForExpHeap__FP12MEMAllocatorP12MEMiHeapHeadi@sAllocatorFunc"
+"@LOCAL@MEMInitAllocatorForExpHeap__FP12MEMAllocatorP12MEMiHeapHeadi@sAllocatorFunc":
+
+	.4byte AllocatorAllocForExpHeap_
+	.4byte AllocatorFreeForExpHeap_

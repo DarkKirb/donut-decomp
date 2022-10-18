@@ -499,3 +499,55 @@ VReport__Q26freeze13FreezeManagerFPCcP16__va_list_struct:
 /* 8018AC04 00186A44  7C 08 03 A6 */	mtlr r0
 /* 8018AC08 00186A48  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018AC0C 00186A4C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49629_80453EE8"
+"@49629_80453EE8":
+
+	.4byte 0x25732069
+	.4byte 0x6E202573
+	.4byte 0x206F6E20
+	.4byte 0x6C696E65
+	.4byte 0x2025642E
+	.4byte 0x0A000000
+
+.global "@49630_80453F00"
+"@49630_80453F00":
+
+	.4byte 0x6E6F7420
+	.4byte 0x636F6E73
+	.4byte 0x74727563
+	.4byte 0x74204672
+	.4byte 0x65657A65
+	.4byte 0x4D616E61
+	.4byte 0x6765720A
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global debug_context
+debug_context:
+	.skip 0x2C8
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global doSerialReport
+doSerialReport:
+
+	.4byte 0x01000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global write_proc_org
+write_proc_org:
+	.skip 0x4
+
+.global doReportBuffer
+doReportBuffer:
+	.skip 0x4
+
+.global "object___Q33hel6common43ExplicitSingleton<Q26freeze13FreezeManager>"
+"object___Q33hel6common43ExplicitSingleton<Q26freeze13FreezeManager>":
+	.skip 0x8

@@ -703,17 +703,18 @@ $(BUILD_DIR)/asm/src/font/FontKindUtil.o \
 $(BUILD_DIR)/asm/src/font/FontLoader.o \
 $(BUILD_DIR)/asm/src/font/FontManager.o \
 \
+$(BUILD_DIR)/asm/src/freeze/Console.o \
+$(BUILD_DIR)/asm/src/freeze/Exception.o \
+$(BUILD_DIR)/asm/src/freeze/FreezeHandler.o \
+$(BUILD_DIR)/asm/src/freeze/FreezeManager.o \
+$(BUILD_DIR)/asm/src/freeze/FreezeThread.o \
+$(BUILD_DIR)/asm/src/freeze/MapFile.o \
+$(BUILD_DIR)/asm/src/freeze/Message.o \
+$(BUILD_DIR)/asm/src/freeze/NW4RAssert.o \
+$(BUILD_DIR)/asm/src/freeze/XFBRestore.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Console_80189648.o \
-$(BUILD_DIR)/asm/src/Exception_801899d0.o \
-$(BUILD_DIR)/asm/src/FreezeHandler_8018a2d0.o \
-$(BUILD_DIR)/asm/src/FreezeManager_8018a548.o \
-$(BUILD_DIR)/asm/src/FreezeThread_8018ac10.o \
-$(BUILD_DIR)/asm/src/MapFile_8018b16c.o \
-$(BUILD_DIR)/asm/src/Message_8018b498.o \
-$(BUILD_DIR)/asm/src/NW4RAssert_8018b504.o \
-$(BUILD_DIR)/asm/src/XFBRestore_8018b57c.o \
 $(BUILD_DIR)/asm/src/AddOnMint_8018b6a8.o \
 $(BUILD_DIR)/asm/src/AutoReqAnim_8018b910.o \
 $(BUILD_DIR)/asm/src/AutoReqAnimReqInfo_8018be34.o \
@@ -3016,7 +3017,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/FreezeThread_80414570.o \
 $(BUILD_DIR)/asm/src/ColorAnimMaterialTarget_80414598.o \
 $(BUILD_DIR)/asm/src/VISetting_804145b8.o \
 $(BUILD_DIR)/asm/src/HIDAccessor_80414970.o \
@@ -3147,12 +3147,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Console_804538a0.o \
-$(BUILD_DIR)/asm/src/Exception_80453990.o \
-$(BUILD_DIR)/asm/src/FreezeHandler_80453eb8.o \
-$(BUILD_DIR)/asm/src/FreezeManager_80453ee8.o \
-$(BUILD_DIR)/asm/src/FreezeThread_80453f20.o \
-$(BUILD_DIR)/asm/src/NW4RAssert_80454038.o \
 $(BUILD_DIR)/asm/src/AddOnMint_80454048.o \
 $(BUILD_DIR)/asm/src/CameraAccessor_80454158.o \
 $(BUILD_DIR)/asm/src/CharaAnimBlender_80454198.o \
@@ -4720,7 +4714,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/FreezeManager_80544520.o \
 $(BUILD_DIR)/asm/src/MintModelAccessor_805447e8.o \
 $(BUILD_DIR)/asm/src/MintNodeAccessor_80544808.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_80544828.o \
@@ -4774,10 +4767,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Exception_80556d38.o \
-$(BUILD_DIR)/asm/src/FreezeManager_80556d68.o \
-$(BUILD_DIR)/asm/src/FreezeThread_80556d70.o \
-$(BUILD_DIR)/asm/src/NW4RAssert_80556d78.o \
 $(BUILD_DIR)/asm/src/ColorAnimTevManager_80556d80.o \
 $(BUILD_DIR)/asm/src/Model_80556d90.o \
 $(BUILD_DIR)/asm/src/ModelAnim_80556db0.o \
@@ -5132,9 +5121,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Exception_8055d188.o \
-$(BUILD_DIR)/asm/src/FreezeManager_8055d190.o \
-$(BUILD_DIR)/asm/src/MapFile_8055d1a0.o \
 $(BUILD_DIR)/asm/src/ModelAnimAccessor_8055d1a8.o \
 $(BUILD_DIR)/asm/src/Root_8055d1b0.o \
 $(BUILD_DIR)/asm/src/GXFifoMemoryManager_8055d1b8.o \
@@ -5264,7 +5250,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Exception_8055f658.o \
 $(BUILD_DIR)/asm/src/AutoReqAnim_8055f660.o \
 $(BUILD_DIR)/asm/src/CharaAnimBlender_8055f670.o \
 $(BUILD_DIR)/asm/src/CharaAnimInterpolation_8055f680.o \

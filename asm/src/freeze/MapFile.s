@@ -286,3 +286,9 @@ lbl_8018B480:
 /* 8018B48C 001872CC  7C 08 03 A6 */	mtlr r0
 /* 8018B490 001872D0  38 21 00 30 */	addi r1, r1, 0x30
 /* 8018B494 001872D4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global sMapFileList__6freeze
+sMapFileList__6freeze:
+	.skip 0x8

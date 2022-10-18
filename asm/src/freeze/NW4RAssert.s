@@ -33,3 +33,21 @@ VPanic__Q24nw4r2dbFPCciPCcP16__va_list_structb:
 /* 8018B570 001873B0  7C 08 03 A6 */	mtlr r0
 /* 8018B574 001873B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018B578 001873B8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48782_80454038"
+"@48782_80454038":
+
+	.4byte 0x4E573452
+	.4byte 0x20415353
+	.4byte 0x4552543A
+	.4byte 0x20000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48783_80556D78"
+"@48783_80556D78":
+
+	.4byte 0
+	.4byte 0

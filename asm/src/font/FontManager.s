@@ -123,3 +123,11 @@ isSetupFinished__Q24font11FontManagerCFv:
 font__Q24font11FontManagerFQ24font8FontKind:
 /* 80189640 00185480  38 63 00 60 */	addi r3, r3, 0x60
 /* 80189644 00185484  4B FF FF 9C */	b "__vc__Q23mem39ExplicitAutoDeleteArray<Q24font4Font,9>FUl"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49284_80556D30"
+"@49284_80556D30":
+
+	.4byte 0x466F6E74
+	.4byte 0

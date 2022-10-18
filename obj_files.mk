@@ -698,12 +698,13 @@ $(BUILD_DIR)/asm/src/file/FileManager.o \
 $(BUILD_DIR)/asm/src/file/FileTree.o \
 $(BUILD_DIR)/asm/src/file/Utility.o \
 \
+$(BUILD_DIR)/asm/src/font/Font.o \
+$(BUILD_DIR)/asm/src/font/FontKindUtil.o \
+$(BUILD_DIR)/asm/src/font/FontLoader.o \
+$(BUILD_DIR)/asm/src/font/FontManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Font_8018917c.o \
-$(BUILD_DIR)/asm/src/FontKindUtil_8018933c.o \
-$(BUILD_DIR)/asm/src/FontLoader_801893fc.o \
-$(BUILD_DIR)/asm/src/FontManager_801894a8.o \
 $(BUILD_DIR)/asm/src/Console_80189648.o \
 $(BUILD_DIR)/asm/src/Exception_801899d0.o \
 $(BUILD_DIR)/asm/src/FreezeHandler_8018a2d0.o \
@@ -3015,7 +3016,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/FontKindUtil_80414528.o \
 $(BUILD_DIR)/asm/src/FreezeThread_80414570.o \
 $(BUILD_DIR)/asm/src/ColorAnimMaterialTarget_80414598.o \
 $(BUILD_DIR)/asm/src/VISetting_804145b8.o \
@@ -3147,7 +3147,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/FontKindUtil_804537f0.o \
 $(BUILD_DIR)/asm/src/Console_804538a0.o \
 $(BUILD_DIR)/asm/src/Exception_80453990.o \
 $(BUILD_DIR)/asm/src/FreezeHandler_80453eb8.o \
@@ -4775,8 +4774,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/FontKindUtil_80556d28.o \
-$(BUILD_DIR)/asm/src/FontManager_80556d30.o \
 $(BUILD_DIR)/asm/src/Exception_80556d38.o \
 $(BUILD_DIR)/asm/src/FreezeManager_80556d68.o \
 $(BUILD_DIR)/asm/src/FreezeThread_80556d70.o \

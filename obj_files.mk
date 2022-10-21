@@ -825,10 +825,11 @@ $(BUILD_DIR)/asm/src/hel/math/Random.o \
 $(BUILD_DIR)/asm/src/hel/math/Vector2.o \
 $(BUILD_DIR)/asm/src/hel/math/Vector3.o \
 \
+$(BUILD_DIR)/asm/src/hel/geo/AABBox.o \
+$(BUILD_DIR)/asm/src/hel/geo/Rect.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AABBox_8019fd4c.o \
-$(BUILD_DIR)/asm/src/Rect_8019fd54.o \
 $(BUILD_DIR)/asm/src/Closest_801a01fc.o \
 $(BUILD_DIR)/asm/src/Intersection_801a05e0.o \
 $(BUILD_DIR)/asm/src/AddOnCast_801a0d9c.o \
@@ -5178,8 +5179,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AABBox_8055f8a0.o \
-$(BUILD_DIR)/asm/src/Rect_8055f8a8.o \
 $(BUILD_DIR)/asm/src/Closest_8055f8b8.o \
 $(BUILD_DIR)/asm/src/Intersection_8055f8c8.o \
 $(BUILD_DIR)/asm/src/AddOnCast_8055f8e0.o \

@@ -109,3 +109,47 @@ lbl_801CCF78:
 /* 801CCF84 001C8DC4  40 82 FF DC */	bne lbl_801CCF60
 /* 801CCF88 001C8DC8  38 60 FF FF */	li r3, -0x1
 /* 801CCF8C 001C8DCC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50536_8045CAD0"
+"@50536_8045CAD0":
+
+	.4byte 0x27202865
+	.4byte 0x782E2027
+	.4byte 0x766F6964
+	.4byte 0x20417373
+	.4byte 0x65727428
+	.4byte 0x696E7429
+	.4byte 0x27290000
+	.4byte 0x4E6F7420
+	.4byte 0x466F756E
+	.4byte 0x64205265
+	.4byte 0x7475726E
+	.4byte 0x54797065
+	.4byte 0x20270000
+	.4byte 0x564D4675
+	.4byte 0x6E637469
+	.4byte 0x6F6E3A3A
+	.4byte 0x70617273
+	.4byte 0x654E616D
+	.4byte 0x65206661
+	.4byte 0x696C0000
+	.4byte 0x41737365
+	.4byte 0x7274696F
+	.4byte 0x6E206661
+	.4byte 0x696C6564
+	.4byte 0x2E0A0000
+	.4byte 0x546D7053
+	.4byte 0x796D626F
+	.4byte 0x6C2E6870
+	.4byte 0x70000000
+	.4byte 0x41737365
+	.4byte 0x7274696F
+	.4byte 0x6E206661
+	.4byte 0x696C6564
+	.4byte 0x2E0A0000
+	.4byte 0x546D7053
+	.4byte 0x796D626F
+	.4byte 0x6C2E6870
+	.4byte 0x70000000

@@ -115,3 +115,49 @@ lbl_801C62A4:
 /* 801C62C0 001C2100  7C 08 03 A6 */	mtlr r0
 /* 801C62C4 001C2104  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C62C8 001C2108  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@setRet_s32__Q26mintvm13MintFuncProxyFi@0"
+"@STRING@setRet_s32__Q26mintvm13MintFuncProxyFi@0":
+
+	.4byte 0x41737365
+	.4byte 0x7274696F
+	.4byte 0x6E206661
+	.4byte 0x696C6564
+	.4byte 0x2E0A0000
+
+.global "@STRING@setRet_s32__Q26mintvm13MintFuncProxyFi"
+"@STRING@setRet_s32__Q26mintvm13MintFuncProxyFi":
+
+	.4byte 0x4D696E74
+	.4byte 0x46756E63
+	.4byte 0x50726F78
+	.4byte 0x792E6870
+	.4byte 0x70000000
+
+.global "@STRING@setRet_f32__Q26mintvm13MintFuncProxyFf@0"
+"@STRING@setRet_f32__Q26mintvm13MintFuncProxyFf@0":
+
+	.4byte 0x41737365
+	.4byte 0x7274696F
+	.4byte 0x6E206661
+	.4byte 0x696C6564
+	.4byte 0x2E0A0000
+
+.global "@STRING@setRet_f32__Q26mintvm13MintFuncProxyFf"
+"@STRING@setRet_f32__Q26mintvm13MintFuncProxyFf":
+
+	.4byte 0x4D696E74
+	.4byte 0x46756E63
+	.4byte 0x50726F78
+	.4byte 0x792E6870
+	.4byte 0x70000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49893_8055FBD8"
+"@49893_8055FBD8":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

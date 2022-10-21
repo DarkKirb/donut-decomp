@@ -169,3 +169,35 @@ lbl_801CD1B8:
 /* 801CD1D4 001C9014  7C 08 03 A6 */	mtlr r0
 /* 801CD1D8 001C9018  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CD1DC 001C901C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q26mintvm14VMFunctionList
+__vt__Q26mintvm14VMFunctionList:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm14VMFunctionListFv
+
+.global __vt__Q26mintvm10VMFunction
+__vt__Q26mintvm10VMFunction:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm10VMFunctionFv
+
+.global "@STRING@addPtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FPQ26mintvm10VMFunction@0"
+"@STRING@addPtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FPQ26mintvm10VMFunction@0":
+
+	.4byte 0x6D4D6178
+	.4byte 0x203D2025
+	.4byte 0x640A0000
+
+.global "@STRING@addPtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FPQ26mintvm10VMFunction"
+"@STRING@addPtr__Q26mintvm32MPtrArray<Q26mintvm10VMFunction>FPQ26mintvm10VMFunction":
+
+	.4byte 0x4D507472
+	.4byte 0x41727261
+	.4byte 0x792E6870
+	.4byte 0x70000000
+	.4byte 0

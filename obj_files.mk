@@ -946,25 +946,26 @@ $(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Block.o \
 $(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Chara.o \
 $(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Commander.o \
 \
+$(BUILD_DIR)/asm/src/mintvm/BCModule.o \
+$(BUILD_DIR)/asm/src/mintvm/BCOpCode.o \
+$(BUILD_DIR)/asm/src/mintvm/MintSetting.o \
+$(BUILD_DIR)/asm/src/mintvm/MintSystemCall.o \
+$(BUILD_DIR)/asm/src/mintvm/N_Mint_Cast.o \
+$(BUILD_DIR)/asm/src/mintvm/N_Mint_Debug.o \
+$(BUILD_DIR)/asm/src/mintvm/Regset.o \
+$(BUILD_DIR)/asm/src/mintvm/Runner.o \
+$(BUILD_DIR)/asm/src/mintvm/VMCore.o \
+$(BUILD_DIR)/asm/src/mintvm/VMFunction.o \
+$(BUILD_DIR)/asm/src/mintvm/VMFunctionList.o \
+$(BUILD_DIR)/asm/src/mintvm/VMModule.o \
+$(BUILD_DIR)/asm/src/mintvm/VMObjectType.o \
+$(BUILD_DIR)/asm/src/mintvm/VMObjectTypeList.o \
+$(BUILD_DIR)/asm/src/mintvm/VMSymbolTable.o \
+$(BUILD_DIR)/asm/src/mintvm/VMVariable.o \
+$(BUILD_DIR)/asm/src/mintvm/VMVariableList.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/BCModule_801c54d0.o \
-$(BUILD_DIR)/asm/src/BCOpCode_801c55dc.o \
-$(BUILD_DIR)/asm/src/MintSetting_801c5af0.o \
-$(BUILD_DIR)/asm/src/MintSystemCall_801c5fa4.o \
-$(BUILD_DIR)/asm/src/N_Mint_Cast_801c6134.o \
-$(BUILD_DIR)/asm/src/N_Mint_Debug_801c62cc.o \
-$(BUILD_DIR)/asm/src/Regset_801c6898.o \
-$(BUILD_DIR)/asm/src/Runner_801c872c.o \
-$(BUILD_DIR)/asm/src/VMCore_801c9d5c.o \
-$(BUILD_DIR)/asm/src/VMFunction_801cce30.o \
-$(BUILD_DIR)/asm/src/VMFunctionList_801ccf90.o \
-$(BUILD_DIR)/asm/src/VMModule_801cd1e0.o \
-$(BUILD_DIR)/asm/src/VMObjectType_801cd3d4.o \
-$(BUILD_DIR)/asm/src/VMObjectTypeList_801cd780.o \
-$(BUILD_DIR)/asm/src/VMSymbolTable_801cdbd4.o \
-$(BUILD_DIR)/asm/src/VMVariable_801cdda8.o \
-$(BUILD_DIR)/asm/src/VMVariableList_801cddb8.o \
 $(BUILD_DIR)/asm/src/DvdControl_801cdf28.o \
 $(BUILD_DIR)/asm/src/MovieAudio_801ce5c4.o \
 $(BUILD_DIR)/asm/src/MovieCommand_801ce904.o \
@@ -3139,20 +3140,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/BCOpCode_8045b628.o \
-$(BUILD_DIR)/asm/src/MintSetting_8045ba30.o \
-$(BUILD_DIR)/asm/src/MintSystemCall_8045bca0.o \
-$(BUILD_DIR)/asm/src/N_Mint_Cast_8045bcc8.o \
-$(BUILD_DIR)/asm/src/N_Mint_Debug_8045bd18.o \
-$(BUILD_DIR)/asm/src/Regset_8045be98.o \
-$(BUILD_DIR)/asm/src/Runner_8045c198.o \
-$(BUILD_DIR)/asm/src/VMCore_8045c580.o \
-$(BUILD_DIR)/asm/src/VMFunction_8045cad0.o \
-$(BUILD_DIR)/asm/src/VMFunctionList_8045cb68.o \
-$(BUILD_DIR)/asm/src/VMModule_8045cba0.o \
-$(BUILD_DIR)/asm/src/VMObjectType_8045cbc8.o \
-$(BUILD_DIR)/asm/src/VMObjectTypeList_8045cc28.o \
-$(BUILD_DIR)/asm/src/VMSymbolTable_8045cc80.o \
 $(BUILD_DIR)/asm/src/DvdControl_8045cca8.o \
 $(BUILD_DIR)/asm/src/MovieKindUtil_8045cce8.o \
 $(BUILD_DIR)/asm/src/MoviePlayer_8045d018.o \
@@ -4679,11 +4666,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/BCOpCode_80557310.o \
-$(BUILD_DIR)/asm/src/MintSetting_80557528.o \
-$(BUILD_DIR)/asm/src/N_Mint_Debug_80557548.o \
-$(BUILD_DIR)/asm/src/Regset_80557558.o \
-$(BUILD_DIR)/asm/src/VMCore_80557578.o \
 $(BUILD_DIR)/asm/src/Manager_805575d0.o \
 $(BUILD_DIR)/asm/src/Message_80557628.o \
 $(BUILD_DIR)/asm/src/NandThread_80557638.o \
@@ -5092,9 +5074,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/N_Mint_Cast_8055fbd8.o \
-$(BUILD_DIR)/asm/src/N_Mint_Debug_8055fbe0.o \
-$(BUILD_DIR)/asm/src/Regset_8055fbe8.o \
 $(BUILD_DIR)/asm/src/MovieKindUtil_8055fc00.o \
 $(BUILD_DIR)/asm/src/MoviePlayer_8055fc08.o \
 $(BUILD_DIR)/asm/src/MovieYuv_8055fc40.o \

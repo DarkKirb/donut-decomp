@@ -142,3 +142,27 @@ lbl_801CD3AC:
 /* 801CD3C8 001C9208  7C 08 03 A6 */	mtlr r0
 /* 801CD3CC 001C920C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CD3D0 001C9210  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q26mintvm8VMModule
+__vt__Q26mintvm8VMModule:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm8VMModuleFv
+
+.global __vt__Q26mintvm13VMSymbolTable
+__vt__Q26mintvm13VMSymbolTable:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm13VMSymbolTableFv
+
+.global __vt__Q26mintvm15VMConstantTable
+__vt__Q26mintvm15VMConstantTable:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26mintvm15VMConstantTableFv
+	.4byte 0

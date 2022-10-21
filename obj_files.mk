@@ -814,10 +814,11 @@ $(BUILD_DIR)/asm/src/hel/common/Color.o \
 $(BUILD_DIR)/asm/src/hel/common/FixedString.o \
 $(BUILD_DIR)/asm/src/hel/common/Locale.o \
 \
+$(BUILD_DIR)/asm/src/hel/debug/Assert.o \
+$(BUILD_DIR)/asm/src/hel/debug/Print.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Assert_8019de24.o \
-$(BUILD_DIR)/asm/src/Print_8019de98.o \
 $(BUILD_DIR)/asm/src/Direction3_8019df7c.o \
 $(BUILD_DIR)/asm/src/Matrix34_8019e590.o \
 $(BUILD_DIR)/asm/src/Matrix44_8019eaec.o \

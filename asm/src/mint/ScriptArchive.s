@@ -104,3 +104,23 @@ lbl_801C0C48:
 /* 801C0C50 001BCA90  7C 08 03 A6 */	mtlr r0
 /* 801C0C54 001BCA94  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C0C58 001BCA98  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48751_80459E10"
+"@48751_80459E10":
+
+	.4byte 0x6D696E74
+	.4byte 0x2F417263
+	.4byte 0x68697665
+	.4byte 0x2E62696E
+	.4byte 0x2E636D70
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_FILE_NAME__Q24mint27@unnamed@ScriptArchive_cpp@"
+"T_FILE_NAME__Q24mint27@unnamed@ScriptArchive_cpp@":
+
+	.4byte "@48751_80459E10"
+	.4byte 0

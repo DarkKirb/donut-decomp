@@ -112,3 +112,27 @@ lbl_801C0754:
 scriptArchive__Q24mint7ManagerCFv:
 /* 801C0770 001BC5B0  38 63 01 24 */	addi r3, r3, 0x124
 /* 801C0774 001BC5B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51648_80459DC0"
+"@51648_80459DC0":
+
+	.4byte 0x4D616E61
+	.4byte 0x6765722E
+	.4byte 0x63707000
+
+.global "@51649_80459DCC"
+"@51649_80459DCC":
+
+	.4byte 0x48616C74
+	.4byte 0x206F6E20
+	.4byte 0x4D696E74
+	.4byte 0x2E000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "isExist___Q33hel6common33PrivateSingleton<Q24mint7Manager>"
+"isExist___Q33hel6common33PrivateSingleton<Q24mint7Manager>":
+	.skip 0x8

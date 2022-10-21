@@ -151,3 +151,17 @@ lbl_801BFCC4:
 /* 801BFCE0 001BBB20  7C 08 03 A6 */	mtlr r0
 /* 801BFCE4 001BBB24  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 801BFCE8 001BBB28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51818_805572B8"
+"@51818_805572B8":
+
+	.4byte 0x4D696E74
+	.4byte 0
+
+.global "@51855_805572C0"
+"@51855_805572C0":
+
+	.4byte 0x25732E00
+	.4byte 0

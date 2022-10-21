@@ -701,3 +701,37 @@ lbl_801C05D0:
 /* 801C05F0 001BC430  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 801C05F4 001BC434  54 03 00 3C */	clrrwi r3, r0, 1
 /* 801C05F8 001BC438  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52930"
+"@52930":
+
+	.4byte 0x6D696E74
+	.4byte 0x2F486561
+	.4byte 0x70000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52931_805572C8"
+"@52931_805572C8":
+
+	.4byte 0x4D696E74
+	.4byte 0
+
+.global "@52932_805572D0"
+"@52932_805572D0":
+
+	.4byte 0x4D4E5425
+	.4byte 0x73000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_heapPtr__Q24mint18@unnamed@Heap_cpp@"
+"t_heapPtr__Q24mint18@unnamed@Heap_cpp@":
+	.skip 0x4
+
+.global "t_isAlreadyPrintWarn__Q24mint18@unnamed@Heap_cpp@"
+"t_isAlreadyPrintWarn__Q24mint18@unnamed@Heap_cpp@":
+	.skip 0x4

@@ -931,22 +931,23 @@ $(BUILD_DIR)/asm/src/mem/SDKAllocator.o \
 $(BUILD_DIR)/asm/src/mem/UnitHeapMapUser.o \
 $(BUILD_DIR)/asm/src/mem/Utility.o \
 \
+$(BUILD_DIR)/asm/src/mint/Engine.o \
+$(BUILD_DIR)/asm/src/mint/Heap.o \
+$(BUILD_DIR)/asm/src/mint/Manager.o \
+$(BUILD_DIR)/asm/src/mint/Runner.o \
+$(BUILD_DIR)/asm/src/mint/ScriptArchive.o \
+$(BUILD_DIR)/asm/src/mint/App__Alert.o \
+$(BUILD_DIR)/asm/src/mint/App__Random.o \
+$(BUILD_DIR)/asm/src/mint/HEL__Math__Vector2.o \
+$(BUILD_DIR)/asm/src/mint/HEL__Math__Vector3.o \
+$(BUILD_DIR)/asm/src/mint/Scn__ChallengeTitle__Chara.o \
+$(BUILD_DIR)/asm/src/mint/Scn__ChallengeTitle__Commander.o \
+$(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Block.o \
+$(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Chara.o \
+$(BUILD_DIR)/asm/src/mint/Scn__GrandTitle__Commander.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Engine_801bfad4.o \
-$(BUILD_DIR)/asm/src/Heap_801bfcec.o \
-$(BUILD_DIR)/asm/src/Manager_801c05fc.o \
-$(BUILD_DIR)/asm/src/Runner_801c0778.o \
-$(BUILD_DIR)/asm/src/ScriptArchive_801c0b00.o \
-$(BUILD_DIR)/asm/src/App__Alert_801c0c5c.o \
-$(BUILD_DIR)/asm/src/App__Random_801c15c8.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector2_801c1868.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector3_801c2340.o \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_801c3464.o \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Commander_801c3d24.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Block_801c4098.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Chara_801c42dc.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Commander_801c4f0c.o \
 $(BUILD_DIR)/asm/src/BCModule_801c54d0.o \
 $(BUILD_DIR)/asm/src/BCOpCode_801c55dc.o \
 $(BUILD_DIR)/asm/src/MintSetting_801c5af0.o \
@@ -3138,19 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Heap_80459db0.o \
-$(BUILD_DIR)/asm/src/Manager_80459dc0.o \
-$(BUILD_DIR)/asm/src/Runner_80459de0.o \
-$(BUILD_DIR)/asm/src/ScriptArchive_80459e10.o \
-$(BUILD_DIR)/asm/src/App__Alert_80459e28.o \
-$(BUILD_DIR)/asm/src/App__Random_8045a0e8.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector2_8045a1c0.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector3_8045a510.o \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_8045aa88.o \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Commander_8045acc0.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Block_8045af18.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Chara_8045afe0.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Commander_8045b2b8.o \
 $(BUILD_DIR)/asm/src/BCOpCode_8045b628.o \
 $(BUILD_DIR)/asm/src/MintSetting_8045ba30.o \
 $(BUILD_DIR)/asm/src/MintSystemCall_8045bca0.o \
@@ -4691,14 +4679,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Engine_805572b8.o \
-$(BUILD_DIR)/asm/src/Heap_805572c8.o \
-$(BUILD_DIR)/asm/src/ScriptArchive_805572d8.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector2_805572e0.o \
-$(BUILD_DIR)/asm/src/HEL__Math__Vector3_805572e8.o \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_805572f8.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Block_80557300.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Chara_80557308.o \
 $(BUILD_DIR)/asm/src/BCOpCode_80557310.o \
 $(BUILD_DIR)/asm/src/MintSetting_80557528.o \
 $(BUILD_DIR)/asm/src/N_Mint_Debug_80557548.o \
@@ -5010,9 +4990,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Heap_8055d2b0.o \
-$(BUILD_DIR)/asm/src/Manager_8055d2b8.o \
-$(BUILD_DIR)/asm/src/Runner_8055d2c0.o \
 $(BUILD_DIR)/asm/src/DvdControl_8055d2c8.o \
 $(BUILD_DIR)/asm/src/Manager_8055d2d8.o \
 $(BUILD_DIR)/asm/src/SceneAnime_8055d2e0.o \
@@ -5115,8 +5092,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_8055fbc8.o \
-$(BUILD_DIR)/asm/src/Scn__GrandTitle__Chara_8055fbd0.o \
 $(BUILD_DIR)/asm/src/N_Mint_Cast_8055fbd8.o \
 $(BUILD_DIR)/asm/src/N_Mint_Debug_8055fbe0.o \
 $(BUILD_DIR)/asm/src/Regset_8055fbe8.o \

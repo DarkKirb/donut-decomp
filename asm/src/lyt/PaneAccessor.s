@@ -433,3 +433,11 @@ lbl_801AE53C:
 /* 801AE544 001AA384  7C 08 03 A6 */	mtlr r0
 /* 801AE548 001AA388  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AE54C 001AA38C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53421_8055F990"
+"@53421_8055F990":
+
+	.4byte 0
+	.4byte 0

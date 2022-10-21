@@ -135,3 +135,37 @@ SetupGX__Q23lyt7UtilityFv:
 /* 801B13A4 001AD1E4  7C 08 03 A6 */	mtlr r0
 /* 801B13A8 001AD1E8  38 21 00 60 */	addi r1, r1, 0x60
 /* 801B13AC 001AD1EC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51538_8055F9C0"
+"@51538_8055F9C0":
+
+	.4byte 0x3DCCCCCD
+
+.global "@51540_8055F9C4"
+"@51540_8055F9C4":
+
+	.4byte 0x43480000
+
+.global "@51542"
+"@51542":
+
+	.4byte 0x3F000000
+	.4byte 0
+
+.global "@51544"
+"@51544":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@51552_8055F9D8"
+"@51552_8055F9D8":
+
+	.4byte 0
+
+.global "@51553_8055F9DC"
+"@51553_8055F9DC":
+
+	.4byte 0x42C7E666

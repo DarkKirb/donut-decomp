@@ -869,18 +869,19 @@ $(BUILD_DIR)/asm/src/info/cutin/Manager.o \
 $(BUILD_DIR)/asm/src/info/ticker/Ticker.o \
 $(BUILD_DIR)/asm/src/info/ticker/TickerContext.o \
 \
+$(BUILD_DIR)/asm/src/lyt/AllocatorChanger.o \
+$(BUILD_DIR)/asm/src/lyt/Layout.o \
+$(BUILD_DIR)/asm/src/lyt/LayoutContext.o \
+$(BUILD_DIR)/asm/src/lyt/MaterialAccessor.o \
+$(BUILD_DIR)/asm/src/lyt/PaneAccessor.o \
+$(BUILD_DIR)/asm/src/lyt/SystemTagProcessor.o \
+$(BUILD_DIR)/asm/src/lyt/TagProcessor.o \
+$(BUILD_DIR)/asm/src/lyt/TagUtil.o \
+$(BUILD_DIR)/asm/src/lyt/UserTagProcessor.o \
+$(BUILD_DIR)/asm/src/lyt/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AllocatorChanger_801ac0d8.o \
-$(BUILD_DIR)/asm/src/Layout_801ac190.o \
-$(BUILD_DIR)/asm/src/LayoutContext_801add64.o \
-$(BUILD_DIR)/asm/src/MaterialAccessor_801addf8.o \
-$(BUILD_DIR)/asm/src/PaneAccessor_801adfc8.o \
-$(BUILD_DIR)/asm/src/SystemTagProcessor_801ae550.o \
-$(BUILD_DIR)/asm/src/TagProcessor_801afc70.o \
-$(BUILD_DIR)/asm/src/TagUtil_801afdf4.o \
-$(BUILD_DIR)/asm/src/UserTagProcessor_801b012c.o \
-$(BUILD_DIR)/asm/src/Utility_801b11d8.o \
 $(BUILD_DIR)/asm/src/Actor_801b13b0.o \
 $(BUILD_DIR)/asm/src/LandManager_801b16d8.o \
 $(BUILD_DIR)/asm/src/ActorDetectOption_801b27e8.o \
@@ -3016,7 +3017,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/UserTagProcessor_80414b70.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80414c30.o \
 $(BUILD_DIR)/asm/src/MoveGridManager_80414c48.o \
 $(BUILD_DIR)/asm/src/NandThread_80414dd0.o \
@@ -3141,12 +3141,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Layout_80457870.o \
-$(BUILD_DIR)/asm/src/MaterialAccessor_80457988.o \
-$(BUILD_DIR)/asm/src/SystemTagProcessor_80457a00.o \
-$(BUILD_DIR)/asm/src/TagProcessor_80457da0.o \
-$(BUILD_DIR)/asm/src/TagUtil_80457db8.o \
-$(BUILD_DIR)/asm/src/UserTagProcessor_80457de0.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80458078.o \
 $(BUILD_DIR)/asm/src/LandLayer_80458098.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_80458e68.o \
@@ -4712,8 +4706,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Layout_80557158.o \
-$(BUILD_DIR)/asm/src/UserTagProcessor_80557170.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80557200.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_80557260.o \
 $(BUILD_DIR)/asm/src/HeapCompaction_80557268.o \
@@ -5147,10 +5139,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Layout_8055f980.o \
-$(BUILD_DIR)/asm/src/PaneAccessor_8055f990.o \
-$(BUILD_DIR)/asm/src/SystemTagProcessor_8055f998.o \
-$(BUILD_DIR)/asm/src/Utility_8055f9c0.o \
 $(BUILD_DIR)/asm/src/LandManager_8055f9e0.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_8055f9f0.o \
 $(BUILD_DIR)/asm/src/CollidedAction_8055fa38.o \

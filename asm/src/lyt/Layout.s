@@ -2089,3 +2089,165 @@ lbl_801ADCD4:
 /* 801ADD58 001A9B98  7C 08 03 A6 */	mtlr r0
 /* 801ADD5C 001A9B9C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801ADD60 001A9BA0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55792"
+"@55792":
+
+	.4byte 0x6C79742F
+	.4byte 0x25732E61
+	.4byte 0x72632E63
+	.4byte 0x6D700000
+
+.global "@56286_80457880"
+"@56286_80457880":
+
+	.4byte 0x25732E62
+	.4byte 0x726C7974
+	.4byte 0
+
+.global "@56339_8045788C"
+"@56339_8045788C":
+
+	.4byte 0x726F6F74
+	.4byte 0x2F616E69
+	.4byte 0x6D000000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>FPQ34nw4r2ut12LinkListNode@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>FPQ34nw4r2ut12LinkListNode":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@__ml__Q44nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>8IteratorCFv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@__ml__Q44nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut28LinkList<Q34nw4r3lyt4Pane,4>8IteratorCFv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@__ml__Q44nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@__ml__Q44nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>8IteratorCFv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetBack__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>Fv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A466169
+	.4byte 0x6C656420
+	.4byte 0x61737365
+	.4byte 0x7274696F
+	.4byte 0x6E202149
+	.4byte 0x73456D70
+	.4byte 0x74792829
+	.4byte 0
+
+.global "@STRING@GetBack__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut73LinkList<Q24util52ObjListNode<Q23lyt6Layout,Q24util16ObjListDummyType>,0>Fv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55793"
+"@55793":
+
+	.4byte 0
+
+.global "@55794"
+"@55794":
+
+	.4byte 0x726F6F74
+	.4byte 0
+
+.global "@56337_80557164"
+"@56337_80557164":
+
+	.4byte 0x25735F00
+
+.global "@56338"
+"@56338":
+
+	.4byte 0x616E696D
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56461_8055F980"
+"@56461_8055F980":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@56509_8055F988"
+"@56509_8055F988":
+
+	.4byte 0
+	.4byte 0

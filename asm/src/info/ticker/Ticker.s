@@ -458,3 +458,21 @@ scrollWindowWidth__Q34info6ticker6TickerFv:
 /* 801AC04C 001A7E8C  7C 08 03 A6 */	mtlr r0
 /* 801AC050 001A7E90  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AC054 001A7E94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52326_8055F968"
+"@52326_8055F968":
+
+	.4byte 0
+
+.global "@52327_8055F96C"
+"@52327_8055F96C":
+
+	.4byte 0x461C3C00
+
+.global "@52423"
+"@52423":
+
+	.4byte 0x43300000
+	.4byte 0

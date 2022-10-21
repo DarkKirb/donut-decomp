@@ -866,10 +866,11 @@ $(BUILD_DIR)/asm/src/info/common/WiiButton.o \
 $(BUILD_DIR)/asm/src/info/cutin/CutIn.o \
 $(BUILD_DIR)/asm/src/info/cutin/Manager.o \
 \
+$(BUILD_DIR)/asm/src/info/ticker/Ticker.o \
+$(BUILD_DIR)/asm/src/info/ticker/TickerContext.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Ticker_801aba4c.o \
-$(BUILD_DIR)/asm/src/TickerContext_801ac058.o \
 $(BUILD_DIR)/asm/src/AllocatorChanger_801ac0d8.o \
 $(BUILD_DIR)/asm/src/Layout_801ac190.o \
 $(BUILD_DIR)/asm/src/LayoutContext_801add64.o \
@@ -5146,8 +5147,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Ticker_8055f968.o \
-$(BUILD_DIR)/asm/src/TickerContext_8055f978.o \
 $(BUILD_DIR)/asm/src/Layout_8055f980.o \
 $(BUILD_DIR)/asm/src/PaneAccessor_8055f990.o \
 $(BUILD_DIR)/asm/src/SystemTagProcessor_8055f998.o \

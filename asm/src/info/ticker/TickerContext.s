@@ -39,3 +39,11 @@ __ct__Q34info6ticker13TickerContextFQ23lyt12PaneAccessorQ23lyt12PaneAccessorfUlU
 /* 801AC0CC 001A7F0C  7C 08 03 A6 */	mtlr r0
 /* 801AC0D0 001A7F10  38 21 00 30 */	addi r1, r1, 0x30
 /* 801AC0D4 001A7F14  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52069_8055F978"
+"@52069_8055F978":
+
+	.4byte 0x3FC00000
+	.4byte 0

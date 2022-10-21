@@ -831,12 +831,13 @@ $(BUILD_DIR)/asm/src/hel/geo/Rect.o \
 $(BUILD_DIR)/asm/src/hel/geo2d/Closest.o \
 $(BUILD_DIR)/asm/src/hel/geo2d/Intersection.o \
 \
+$(BUILD_DIR)/asm/src/hel/mint/AddOnCast.o \
+$(BUILD_DIR)/asm/src/hel/mint/AddOnMathDirection3.o \
+$(BUILD_DIR)/asm/src/hel/mint/AddOnMathMath.o \
+$(BUILD_DIR)/asm/src/hel/mint/AddOnMathVector3.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AddOnCast_801a0d9c.o \
-$(BUILD_DIR)/asm/src/AddOnMathDirection3_801a0f00.o \
-$(BUILD_DIR)/asm/src/AddOnMathMath_801a1b1c.o \
-$(BUILD_DIR)/asm/src/AddOnMathVector3_801a1db4.o \
 $(BUILD_DIR)/asm/src/Accel_801a21fc.o \
 $(BUILD_DIR)/asm/src/Button_801a2224.o \
 $(BUILD_DIR)/asm/src/DPD_801a2268.o \
@@ -3138,9 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnCast_804569e0.o \
-$(BUILD_DIR)/asm/src/AddOnMathDirection3_80456a60.o \
-$(BUILD_DIR)/asm/src/AddOnMathMath_80456e38.o \
 $(BUILD_DIR)/asm/src/RumbleResource_80456f40.o \
 $(BUILD_DIR)/asm/src/Util_80456f80.o \
 $(BUILD_DIR)/asm/src/Sequence_804571e8.o \
@@ -4681,8 +4679,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMathDirection3_80545310.o \
-$(BUILD_DIR)/asm/src/AddOnMathVector3_80545338.o \
 $(BUILD_DIR)/asm/src/HIDManager_80545378.o \
 $(BUILD_DIR)/asm/src/HeapMapUserRepos_805453e8.o \
 $(BUILD_DIR)/asm/src/Memory_80545bf8.o \
@@ -4728,7 +4724,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMathDirection3_80556e88.o \
 $(BUILD_DIR)/asm/src/RumbleResource_80556ea0.o \
 $(BUILD_DIR)/asm/src/Util_80556ea8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_80556f28.o \
@@ -5067,8 +5062,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMathDirection3_8055d268.o \
-$(BUILD_DIR)/asm/src/AddOnMathVector3_8055d270.o \
 $(BUILD_DIR)/asm/src/HIDManager_8055d278.o \
 $(BUILD_DIR)/asm/src/LibInitializer_8055d280.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_8055d288.o \
@@ -5180,9 +5173,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnCast_8055f8e0.o \
-$(BUILD_DIR)/asm/src/AddOnMathMath_8055f8e8.o \
-$(BUILD_DIR)/asm/src/AddOnMathVector3_8055f900.o \
 $(BUILD_DIR)/asm/src/DPD_8055f908.o \
 $(BUILD_DIR)/asm/src/HIDAccessor_8055f910.o \
 $(BUILD_DIR)/asm/src/LibInitializer_8055f918.o \

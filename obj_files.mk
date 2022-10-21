@@ -713,50 +713,51 @@ $(BUILD_DIR)/asm/src/freeze/Message.o \
 $(BUILD_DIR)/asm/src/freeze/NW4RAssert.o \
 $(BUILD_DIR)/asm/src/freeze/XFBRestore.o \
 \
+$(BUILD_DIR)/asm/src/g3d/AddOnMint.o \
+$(BUILD_DIR)/asm/src/g3d/AutoReqAnim.o \
+$(BUILD_DIR)/asm/src/g3d/AutoReqAnimReqInfo.o \
+$(BUILD_DIR)/asm/src/g3d/CameraAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/CharaAnimBlender.o \
+$(BUILD_DIR)/asm/src/g3d/CharaAnimInterpolation.o \
+$(BUILD_DIR)/asm/src/g3d/CharaAnimInterpolationContext.o \
+$(BUILD_DIR)/asm/src/g3d/CharaModel.o \
+$(BUILD_DIR)/asm/src/g3d/CharaModelContext.o \
+$(BUILD_DIR)/asm/src/g3d/ColorAnim.o \
+$(BUILD_DIR)/asm/src/g3d/ColorAnimContext.o \
+$(BUILD_DIR)/asm/src/g3d/ColorAnimFlash.o \
+$(BUILD_DIR)/asm/src/g3d/ColorAnimMaterialTarget.o \
+$(BUILD_DIR)/asm/src/g3d/ColorAnimTevManager.o \
+$(BUILD_DIR)/asm/src/g3d/FogAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/Group.o \
+$(BUILD_DIR)/asm/src/g3d/LightSetAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/MaterialAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/MintModelAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/MintNodeAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/Model.o \
+$(BUILD_DIR)/asm/src/g3d/ModelAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/ModelAnim.o \
+$(BUILD_DIR)/asm/src/g3d/ModelAnimAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/ModelAnimContext.o \
+$(BUILD_DIR)/asm/src/g3d/ModelBufferOption.o \
+$(BUILD_DIR)/asm/src/g3d/ModelContext.o \
+$(BUILD_DIR)/asm/src/g3d/ModelMultiAnim.o \
+$(BUILD_DIR)/asm/src/g3d/ModelMultiAnimContext.o \
+$(BUILD_DIR)/asm/src/g3d/NodeAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/NodeLocalMtx.o \
+$(BUILD_DIR)/asm/src/g3d/NodeLocalMtxAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/ResFile.o \
+$(BUILD_DIR)/asm/src/g3d/ResFileAccessor.o \
+$(BUILD_DIR)/asm/src/g3d/ResFileRepository.o \
+$(BUILD_DIR)/asm/src/g3d/ResModel.o \
+$(BUILD_DIR)/asm/src/g3d/ResModelContext.o \
+$(BUILD_DIR)/asm/src/g3d/ResNode.o \
+$(BUILD_DIR)/asm/src/g3d/Root.o \
+$(BUILD_DIR)/asm/src/g3d/RootContext.o \
+$(BUILD_DIR)/asm/src/g3d/SceneAnim.o \
+$(BUILD_DIR)/asm/src/g3d/StdModel.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AddOnMint_8018b6a8.o \
-$(BUILD_DIR)/asm/src/AutoReqAnim_8018b910.o \
-$(BUILD_DIR)/asm/src/AutoReqAnimReqInfo_8018be34.o \
-$(BUILD_DIR)/asm/src/CameraAccessor_8018be84.o \
-$(BUILD_DIR)/asm/src/CharaAnimBlender_8018bfdc.o \
-$(BUILD_DIR)/asm/src/CharaAnimInterpolation_8018cc84.o \
-$(BUILD_DIR)/asm/src/CharaAnimInterpolationContext_8018cf5c.o \
-$(BUILD_DIR)/asm/src/CharaModel_8018cf8c.o \
-$(BUILD_DIR)/asm/src/CharaModelContext_8018d760.o \
-$(BUILD_DIR)/asm/src/ColorAnim_8018d888.o \
-$(BUILD_DIR)/asm/src/ColorAnimContext_8018da54.o \
-$(BUILD_DIR)/asm/src/ColorAnimFlash_8018da90.o \
-$(BUILD_DIR)/asm/src/ColorAnimMaterialTarget_8018dd4c.o \
-$(BUILD_DIR)/asm/src/ColorAnimTevManager_8018ddb8.o \
-$(BUILD_DIR)/asm/src/FogAccessor_8018e44c.o \
-$(BUILD_DIR)/asm/src/Group_8018e63c.o \
-$(BUILD_DIR)/asm/src/LightSetAccessor_8018e64c.o \
-$(BUILD_DIR)/asm/src/MaterialAccessor_8018e758.o \
-$(BUILD_DIR)/asm/src/MintModelAccessor_8018e944.o \
-$(BUILD_DIR)/asm/src/MintNodeAccessor_8018e9ec.o \
-$(BUILD_DIR)/asm/src/Model_8018eb4c.o \
-$(BUILD_DIR)/asm/src/ModelAccessor_80190634.o \
-$(BUILD_DIR)/asm/src/ModelAnim_80190760.o \
-$(BUILD_DIR)/asm/src/ModelAnimAccessor_80191c90.o \
-$(BUILD_DIR)/asm/src/ModelAnimContext_80191eec.o \
-$(BUILD_DIR)/asm/src/ModelBufferOption_80191f30.o \
-$(BUILD_DIR)/asm/src/ModelContext_801920e8.o \
-$(BUILD_DIR)/asm/src/ModelMultiAnim_80192208.o \
-$(BUILD_DIR)/asm/src/ModelMultiAnimContext_80192c20.o \
-$(BUILD_DIR)/asm/src/NodeAccessor_80192ce4.o \
-$(BUILD_DIR)/asm/src/NodeLocalMtx_801930bc.o \
-$(BUILD_DIR)/asm/src/NodeLocalMtxAccessor_80193208.o \
-$(BUILD_DIR)/asm/src/ResFile_80193230.o \
-$(BUILD_DIR)/asm/src/ResFileAccessor_80193438.o \
-$(BUILD_DIR)/asm/src/ResFileRepository_80193760.o \
-$(BUILD_DIR)/asm/src/ResModel_80193b9c.o \
-$(BUILD_DIR)/asm/src/ResModelContext_80193cc8.o \
-$(BUILD_DIR)/asm/src/ResNode_80193d38.o \
-$(BUILD_DIR)/asm/src/Root_80193f74.o \
-$(BUILD_DIR)/asm/src/RootContext_8019461c.o \
-$(BUILD_DIR)/asm/src/SceneAnim_80194634.o \
-$(BUILD_DIR)/asm/src/StdModel_801949ec.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_80194fc4.o \
 $(BUILD_DIR)/asm/src/EasyTex3D_80195854.o \
 $(BUILD_DIR)/asm/src/EFBToLetterBox_80195934.o \
@@ -2935,8 +2936,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/MintModelAccessor_804062e0.o \
-$(BUILD_DIR)/asm/src/MintNodeAccessor_804062e4.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_804062e8.o \
 $(BUILD_DIR)/asm/src/MintAnim_804062ec.o \
 $(BUILD_DIR)/asm/src/MintFootState_804062f0.o \
@@ -3017,7 +3016,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ColorAnimMaterialTarget_80414598.o \
 $(BUILD_DIR)/asm/src/VISetting_804145b8.o \
 $(BUILD_DIR)/asm/src/HIDAccessor_80414970.o \
 $(BUILD_DIR)/asm/src/Util_80414b40.o \
@@ -3147,19 +3145,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMint_80454048.o \
-$(BUILD_DIR)/asm/src/CameraAccessor_80454158.o \
-$(BUILD_DIR)/asm/src/CharaAnimBlender_80454198.o \
-$(BUILD_DIR)/asm/src/CharaModel_80454380.o \
-$(BUILD_DIR)/asm/src/ColorAnimTevManager_80454390.o \
-$(BUILD_DIR)/asm/src/FogAccessor_80454450.o \
-$(BUILD_DIR)/asm/src/Model_80454510.o \
-$(BUILD_DIR)/asm/src/ModelAnim_80454690.o \
-$(BUILD_DIR)/asm/src/ModelAnimAccessor_80454808.o \
-$(BUILD_DIR)/asm/src/ResFile_80454818.o \
-$(BUILD_DIR)/asm/src/ResFileAccessor_80454868.o \
-$(BUILD_DIR)/asm/src/ResNode_804548b0.o \
-$(BUILD_DIR)/asm/src/SceneAnim_80454950.o \
 $(BUILD_DIR)/asm/src/TPLTexture_80454990.o \
 $(BUILD_DIR)/asm/src/VISetting_804549a8.o \
 $(BUILD_DIR)/asm/src/AddOnMint_804549e0.o \
@@ -4714,8 +4699,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/MintModelAccessor_805447e8.o \
-$(BUILD_DIR)/asm/src/MintNodeAccessor_80544808.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_80544828.o \
 $(BUILD_DIR)/asm/src/RenderSetting_80544860.o \
 $(BUILD_DIR)/asm/src/Direction3_80545260.o \
@@ -4767,14 +4750,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ColorAnimTevManager_80556d80.o \
-$(BUILD_DIR)/asm/src/Model_80556d90.o \
-$(BUILD_DIR)/asm/src/ModelAnim_80556db0.o \
-$(BUILD_DIR)/asm/src/ModelMultiAnim_80556dc8.o \
-$(BUILD_DIR)/asm/src/ModelMultiAnimContext_80556dd0.o \
-$(BUILD_DIR)/asm/src/ResModelContext_80556de0.o \
-$(BUILD_DIR)/asm/src/ResNode_80556df0.o \
-$(BUILD_DIR)/asm/src/SceneAnim_80556df8.o \
 $(BUILD_DIR)/asm/src/AnimScript_80556e00.o \
 $(BUILD_DIR)/asm/src/GearModelDesc_80556e08.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80556e18.o \
@@ -5121,8 +5096,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/ModelAnimAccessor_8055d1a8.o \
-$(BUILD_DIR)/asm/src/Root_8055d1b0.o \
 $(BUILD_DIR)/asm/src/GXFifoMemoryManager_8055d1b8.o \
 $(BUILD_DIR)/asm/src/MintAnim_8055d1c0.o \
 $(BUILD_DIR)/asm/src/MintFootState_8055d1c8.o \
@@ -5250,13 +5223,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AutoReqAnim_8055f660.o \
-$(BUILD_DIR)/asm/src/CharaAnimBlender_8055f670.o \
-$(BUILD_DIR)/asm/src/CharaAnimInterpolation_8055f680.o \
-$(BUILD_DIR)/asm/src/ModelAnim_8055f688.o \
-$(BUILD_DIR)/asm/src/NodeLocalMtx_8055f698.o \
-$(BUILD_DIR)/asm/src/Root_8055f6a0.o \
-$(BUILD_DIR)/asm/src/SceneAnim_8055f6b8.o \
 $(BUILD_DIR)/asm/src/EasyRender3D_8055f6c8.o \
 $(BUILD_DIR)/asm/src/EFBToLetterBox_8055f6f0.o \
 $(BUILD_DIR)/asm/src/FullScreenPlate_8055f710.o \

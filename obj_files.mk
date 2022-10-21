@@ -863,10 +863,11 @@ $(BUILD_DIR)/asm/src/info/common/SkipHelp.o \
 $(BUILD_DIR)/asm/src/info/common/TotalScore.o \
 $(BUILD_DIR)/asm/src/info/common/WiiButton.o \
 \
+$(BUILD_DIR)/asm/src/info/cutin/CutIn.o \
+$(BUILD_DIR)/asm/src/info/cutin/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/CutIn_801ab11c.o \
-$(BUILD_DIR)/asm/src/Manager_801ab604.o \
 $(BUILD_DIR)/asm/src/Ticker_801aba4c.o \
 $(BUILD_DIR)/asm/src/TickerContext_801ac058.o \
 $(BUILD_DIR)/asm/src/AllocatorChanger_801ac0d8.o \
@@ -3139,7 +3140,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/CutIn_80457768.o \
 $(BUILD_DIR)/asm/src/Layout_80457870.o \
 $(BUILD_DIR)/asm/src/MaterialAccessor_80457988.o \
 $(BUILD_DIR)/asm/src/SystemTagProcessor_80457a00.o \
@@ -4711,7 +4711,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/CutIn_80557138.o \
 $(BUILD_DIR)/asm/src/Layout_80557158.o \
 $(BUILD_DIR)/asm/src/UserTagProcessor_80557170.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80557200.o \

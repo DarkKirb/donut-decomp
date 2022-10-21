@@ -333,3 +333,101 @@ procReadyToRender__Q34info5cutin5CutInFv:
 .global draw__Q34info5cutin5CutInCFv
 draw__Q34info5cutin5CutInCFv:
 /* 801AB600 001A7440  48 00 1D 78 */	b draw__Q23lyt6LayoutCFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52354"
+"@52354":
+
+	.4byte 0x73746570
+	.4byte 0x2F6C766D
+	.4byte 0x61702F43
+	.4byte 0x7574696E
+	.4byte 0x616E696D
+	.4byte 0x65000000
+	.4byte 0x43757469
+	.4byte 0x6E416E69
+	.4byte 0x6D650000
+	.4byte 0x4C762564
+	.4byte 0x54657874
+	.4byte 0x4E000000
+	.4byte 0x5469746C
+	.4byte 0x65546578
+	.4byte 0x74000000
+	.4byte 0x4C762564
+	.4byte 0x5469746C
+	.4byte 0x65000000
+	.4byte 0x5469746C
+	.4byte 0x65546578
+	.4byte 0x74536800
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x4D61704E
+	.4byte 0x616D6554
+	.4byte 0x65787400
+	.4byte 0x4C762564
+	.4byte 0x5469746C
+	.4byte 0x654D6169
+	.4byte 0x6E5F3030
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x4D61704E
+	.4byte 0x616D6554
+	.4byte 0x65787453
+	.4byte 0x68000000
+	.4byte 0x4C762564
+	.4byte 0x4D61704E
+	.4byte 0x616D6554
+	.4byte 0x65787432
+	.4byte 0
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x5469746C
+	.4byte 0x65537562
+	.4byte 0x5F303000
+	.4byte 0x4C762564
+	.4byte 0x41726561
+	.4byte 0x54657874
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x41726561
+	.4byte 0x54657874
+	.4byte 0x53680000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52448_80557138"
+"@52448_80557138":
+
+	.4byte 0x4C762564
+	.4byte 0
+
+.global "@52452"
+"@52452":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@52455_80557148"
+"@52455_80557148":
+
+	.4byte 0x456E6400
+
+.global "@52458"
+"@52458":
+
+	.4byte 0x57616974
+	.4byte 0
+	.4byte 0

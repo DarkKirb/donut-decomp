@@ -851,9 +851,10 @@ $(BUILD_DIR)/asm/src/hid/Stick.o \
 \
 $(BUILD_DIR)/asm/src/info/Util.o \
 \
+$(BUILD_DIR)/asm/src/info/sequence/Sequence.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Sequence_801a5b58.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_801a701c.o \
 $(BUILD_DIR)/asm/src/Button_801a7db0.o \
 $(BUILD_DIR)/asm/src/ButtonHelp_801a830c.o \
@@ -3138,7 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Sequence_804571e8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_804572a8.o \
 $(BUILD_DIR)/asm/src/Button_80457340.o \
 $(BUILD_DIR)/asm/src/ButtonHelp_804573c8.o \

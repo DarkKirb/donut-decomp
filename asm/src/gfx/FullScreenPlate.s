@@ -67,3 +67,21 @@ draw__Q23gfx15FullScreenPlateCFv:
 /* 80196044 00191E84  7C 08 03 A6 */	mtlr r0
 /* 80196048 00191E88  38 21 00 60 */	addi r1, r1, 0x60
 /* 8019604C 00191E8C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49012_8055F710"
+"@49012_8055F710":
+
+	.4byte 0x3F800000
+
+.global "@49023_8055F714"
+"@49023_8055F714":
+
+	.4byte 0
+
+.global "@49026_8055F718"
+"@49026_8055F718":
+
+	.4byte 0x43300000
+	.4byte 0

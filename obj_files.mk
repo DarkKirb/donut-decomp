@@ -756,22 +756,23 @@ $(BUILD_DIR)/asm/src/g3d/RootContext.o \
 $(BUILD_DIR)/asm/src/g3d/SceneAnim.o \
 $(BUILD_DIR)/asm/src/g3d/StdModel.o \
 \
+$(BUILD_DIR)/asm/src/gfx/EasyRender3D.o \
+$(BUILD_DIR)/asm/src/gfx/EasyTex3D.o \
+$(BUILD_DIR)/asm/src/gfx/EFBToLetterBox.o \
+$(BUILD_DIR)/asm/src/gfx/FullScreenPlate.o \
+$(BUILD_DIR)/asm/src/gfx/GameScreen.o \
+$(BUILD_DIR)/asm/src/gfx/GXFifoMemoryManager.o \
+$(BUILD_DIR)/asm/src/gfx/GXFifoProtectCanceler.o \
+$(BUILD_DIR)/asm/src/gfx/RenderSetting.o \
+$(BUILD_DIR)/asm/src/gfx/TexBuffer.o \
+$(BUILD_DIR)/asm/src/gfx/TPLTexture.o \
+$(BUILD_DIR)/asm/src/gfx/TPLTexturePlate.o \
+$(BUILD_DIR)/asm/src/gfx/Utility.o \
+$(BUILD_DIR)/asm/src/gfx/VISetting.o \
+$(BUILD_DIR)/asm/src/gfx/XFBManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/EasyRender3D_80194fc4.o \
-$(BUILD_DIR)/asm/src/EasyTex3D_80195854.o \
-$(BUILD_DIR)/asm/src/EFBToLetterBox_80195934.o \
-$(BUILD_DIR)/asm/src/FullScreenPlate_80195f58.o \
-$(BUILD_DIR)/asm/src/GameScreen_80196050.o \
-$(BUILD_DIR)/asm/src/GXFifoMemoryManager_8019607c.o \
-$(BUILD_DIR)/asm/src/GXFifoProtectCanceler_801961fc.o \
-$(BUILD_DIR)/asm/src/RenderSetting_801962a8.o \
-$(BUILD_DIR)/asm/src/TexBuffer_80196e2c.o \
-$(BUILD_DIR)/asm/src/TPLTexture_80196f38.o \
-$(BUILD_DIR)/asm/src/TPLTexturePlate_80197024.o \
-$(BUILD_DIR)/asm/src/Utility_801974c0.o \
-$(BUILD_DIR)/asm/src/VISetting_801979ac.o \
-$(BUILD_DIR)/asm/src/XFBManager_80197d50.o \
 $(BUILD_DIR)/asm/src/AddOnMint_80197ef4.o \
 $(BUILD_DIR)/asm/src/Anim_80199324.o \
 $(BUILD_DIR)/asm/src/ColorAnim_80199914.o \
@@ -2936,7 +2937,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/EasyRender3D_804062e8.o \
 $(BUILD_DIR)/asm/src/MintAnim_804062ec.o \
 $(BUILD_DIR)/asm/src/MintFootState_804062f0.o \
 $(BUILD_DIR)/asm/src/MintGearAnim_804062f4.o \
@@ -3016,7 +3016,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/VISetting_804145b8.o \
 $(BUILD_DIR)/asm/src/HIDAccessor_80414970.o \
 $(BUILD_DIR)/asm/src/Util_80414b40.o \
 $(BUILD_DIR)/asm/src/Button_80414b60.o \
@@ -3145,8 +3144,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/TPLTexture_80454990.o \
-$(BUILD_DIR)/asm/src/VISetting_804549a8.o \
 $(BUILD_DIR)/asm/src/AddOnMint_804549e0.o \
 $(BUILD_DIR)/asm/src/AnimScript_80454fd0.o \
 $(BUILD_DIR)/asm/src/GearModel_80455020.o \
@@ -4699,8 +4696,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/EasyRender3D_80544828.o \
-$(BUILD_DIR)/asm/src/RenderSetting_80544860.o \
 $(BUILD_DIR)/asm/src/Direction3_80545260.o \
 $(BUILD_DIR)/asm/src/Vector3_805452d0.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80545310.o \
@@ -5096,7 +5091,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/GXFifoMemoryManager_8055d1b8.o \
 $(BUILD_DIR)/asm/src/MintAnim_8055d1c0.o \
 $(BUILD_DIR)/asm/src/MintFootState_8055d1c8.o \
 $(BUILD_DIR)/asm/src/MintGearAnim_8055d1d0.o \
@@ -5223,13 +5217,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/EasyRender3D_8055f6c8.o \
-$(BUILD_DIR)/asm/src/EFBToLetterBox_8055f6f0.o \
-$(BUILD_DIR)/asm/src/FullScreenPlate_8055f710.o \
-$(BUILD_DIR)/asm/src/RenderSetting_8055f720.o \
-$(BUILD_DIR)/asm/src/TPLTexturePlate_8055f738.o \
-$(BUILD_DIR)/asm/src/Utility_8055f758.o \
-$(BUILD_DIR)/asm/src/VISetting_8055f770.o \
 $(BUILD_DIR)/asm/src/AddOnMint_8055f778.o \
 $(BUILD_DIR)/asm/src/Anim_8055f780.o \
 $(BUILD_DIR)/asm/src/ColorAnim_8055f788.o \
@@ -6219,7 +6206,6 @@ $(BUILD_DIR)/asm/src/FrameCounter_80564398.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_805643a8.o
 # .sbss2
 O_FILES += \
-$(BUILD_DIR)/asm/src/RenderSetting_805643d8.o \
 $(BUILD_DIR)/asm/src/LandLayer_805643e0.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_805643e8.o \
 $(BUILD_DIR)/asm/src/VariationNpc_805643f0.o \

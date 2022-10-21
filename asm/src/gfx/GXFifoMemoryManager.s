@@ -111,3 +111,9 @@ setWriteEnable__Q23gfx19GXFifoMemoryManagerFv:
 /* 801961F0 00192030  38 00 00 01 */	li r0, 0x1
 /* 801961F4 00192034  98 03 00 0C */	stb r0, 0xc(r3)
 /* 801961F8 00192038  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "isExist___Q33hel6common45PrivateSingleton<Q23gfx19GXFifoMemoryManager>"
+"isExist___Q33hel6common45PrivateSingleton<Q23gfx19GXFifoMemoryManager>":
+	.skip 0x8

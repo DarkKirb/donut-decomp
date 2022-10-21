@@ -344,3 +344,31 @@ SetRenderType__Q23gfx7UtilityFQ33gfx13RenderSetting4Type:
 /* 801979A0 001937E0  7C 08 03 A6 */	mtlr r0
 /* 801979A4 001937E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801979A8 001937E8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51743_8055F758"
+"@51743_8055F758":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@51748_8055F760"
+"@51748_8055F760":
+
+	.4byte 0x3F000000
+
+.global "@51755_8055F764"
+"@51755_8055F764":
+
+	.4byte 0
+
+.global "@51796"
+"@51796":
+
+	.4byte 0x3F800000
+
+.global "@51797_8055F76C"
+"@51797_8055F76C":
+
+	.4byte 0xBF800000

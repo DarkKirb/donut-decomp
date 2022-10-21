@@ -316,3 +316,33 @@ setPos__Q23gfx15TPLTexturePlateFRCQ33hel4math7Vector2:
 /* 801974B4 001932F4  C0 44 00 04 */	lfs f2, 0x4(r4)
 /* 801974B8 001932F8  C0 62 97 B8 */	lfs f3, "@50129_8055F738"@sda21(r2)
 /* 801974BC 001932FC  4B E9 96 A4 */	b PSMTXTrans
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50129_8055F738"
+"@50129_8055F738":
+
+	.4byte 0
+
+.global "@50161_8055F73C"
+"@50161_8055F73C":
+
+	.4byte 0x3F800000
+
+.global "@50183_8055F740"
+"@50183_8055F740":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@50188_8055F748"
+"@50188_8055F748":
+
+	.4byte 0x3F000000
+	.4byte 0
+
+.global "@50192_8055F750"
+"@50192_8055F750":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

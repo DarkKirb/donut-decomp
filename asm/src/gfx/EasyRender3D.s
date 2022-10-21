@@ -587,3 +587,57 @@ DrawLine__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34RCQ33hel4math7Vector3RCQ33h
 /* 80195848 00191688  3C 60 80 54 */	lis r3, "t_viewMtx__26@unnamed@EasyRender3D_cpp@"@ha
 /* 8019584C 0019168C  38 63 48 28 */	addi r3, r3, "t_viewMtx__26@unnamed@EasyRender3D_cpp@"@l
 /* 80195850 00191690  4B FF F7 D4 */	b __ct__Q33hel4math8Matrix34Fv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1EasyRender3D_cpp"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "t_viewMtx__26@unnamed@EasyRender3D_cpp@"
+"t_viewMtx__26@unnamed@EasyRender3D_cpp@":
+	.skip 0x38
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51446_8055F6C8"
+"@51446_8055F6C8":
+
+	.4byte 0x4040C0FF
+
+.global "@51747_8055F6CC"
+"@51747_8055F6CC":
+
+	.4byte 0xFFFFFFFF
+
+.global "@51775"
+"@51775":
+
+	.4byte 0x40000000
+
+.global "@51776_8055F6D4"
+"@51776_8055F6D4":
+
+	.4byte 0
+
+.global "@51777"
+"@51777":
+
+	.4byte 0x40490FDB
+	.4byte 0
+
+.global "@51782"
+"@51782":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@51809_8055F6E8"
+"@51809_8055F6E8":
+
+	.4byte 0x4222F983
+
+.global "@51844_8055F6EC"
+"@51844_8055F6EC":
+
+	.4byte 0x40C00000

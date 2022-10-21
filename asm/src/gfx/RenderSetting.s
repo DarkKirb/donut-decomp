@@ -826,3 +826,39 @@ endAABottomHalf__Q23gfx13RenderSettingFPv:
 /* 80196E20 00192C60  7C 08 03 A6 */	mtlr r0
 /* 80196E24 00192C64  38 21 00 20 */	addi r1, r1, 0x20
 /* 80196E28 00192C68  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "garbage__27@unnamed@RenderSetting_cpp@"
+"garbage__27@unnamed@RenderSetting_cpp@":
+	.skip 0xA00
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48878_8055F720"
+"@48878_8055F720":
+
+	.4byte 0x000000FF
+
+.global "@49375"
+"@49375":
+
+	.4byte 0
+
+.global "@49379"
+"@49379":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@49423"
+"@49423":
+
+	.4byte 0x3F800000
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss2, "", @nobits  # 0x805643C0 - 0x805643FC ; 0x0000003C
+.global "VIEWPORT_NEAR__27@unnamed@RenderSetting_cpp@"
+"VIEWPORT_NEAR__27@unnamed@RenderSetting_cpp@":
+	.skip 0x8

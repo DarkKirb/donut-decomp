@@ -1,0 +1,199 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006A00 - 0x80406260 ; 0x003FF860
+.global __ct__Q24gobj5ModelFRCQ24gobj9ModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRCQ24gobj8Location
+__ct__Q24gobj5ModelFRCQ24gobj9ModelDescRQ23mem10IAllocatorRCQ23g3d15ResFileAccessorRCQ24gobj8Location:
+/* 8019AFD8 00196E18  94 21 FE E0 */	stwu r1, -0x120(r1)
+/* 8019AFDC 00196E1C  7C 08 02 A6 */	mflr r0
+/* 8019AFE0 00196E20  90 01 01 24 */	stw r0, 0x124(r1)
+/* 8019AFE4 00196E24  39 61 01 20 */	addi r11, r1, 0x120
+/* 8019AFE8 00196E28  4B E6 C3 49 */	bl lbl_80007330
+/* 8019AFEC 00196E2C  7C 78 1B 78 */	mr r24, r3
+/* 8019AFF0 00196E30  7C 99 23 78 */	mr r25, r4
+/* 8019AFF4 00196E34  7C BA 2B 78 */	mr r26, r5
+/* 8019AFF8 00196E38  7C DB 33 78 */	mr r27, r6
+/* 8019AFFC 00196E3C  7C FC 3B 78 */	mr r28, r7
+/* 8019B000 00196E40  3C 80 80 45 */	lis r4, __vt__Q24gobj5Model@ha
+/* 8019B004 00196E44  38 04 50 30 */	addi r0, r4, __vt__Q24gobj5Model@l
+/* 8019B008 00196E48  90 03 00 00 */	stw r0, 0x0(r3)
+/* 8019B00C 00196E4C  38 81 00 3C */	addi r4, r1, 0x3c
+/* 8019B010 00196E50  38 60 00 00 */	li r3, 0x0
+/* 8019B014 00196E54  38 00 00 04 */	li r0, 0x4
+/* 8019B018 00196E58  7C 09 03 A6 */	mtctr r0
+.global lbl_8019B01C
+lbl_8019B01C:
+/* 8019B01C 00196E5C  90 64 00 04 */	stw r3, 0x4(r4)
+/* 8019B020 00196E60  94 64 00 08 */	stwu r3, 0x8(r4)
+/* 8019B024 00196E64  42 00 FF F8 */	bdnz lbl_8019B01C
+/* 8019B028 00196E68  38 61 00 40 */	addi r3, r1, 0x40
+/* 8019B02C 00196E6C  7F 24 CB 78 */	mr r4, r25
+/* 8019B030 00196E70  38 A0 00 20 */	li r5, 0x20
+/* 8019B034 00196E74  48 00 29 89 */	bl "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
+/* 8019B038 00196E78  3B A1 00 40 */	addi r29, r1, 0x40
+/* 8019B03C 00196E7C  88 19 00 4D */	lbz r0, 0x4d(r25)
+/* 8019B040 00196E80  2C 00 00 00 */	cmpwi r0, 0x0
+/* 8019B044 00196E84  41 82 00 14 */	beq lbl_8019B058
+/* 8019B048 00196E88  38 61 00 30 */	addi r3, r1, 0x30
+/* 8019B04C 00196E8C  4B FF 27 29 */	bl DefaultModelBufferOption__Q23g3d17CharaModelContextFv
+/* 8019B050 00196E90  3B C1 00 30 */	addi r30, r1, 0x30
+/* 8019B054 00196E94  48 00 00 10 */	b lbl_8019B064
+.global lbl_8019B058
+lbl_8019B058:
+/* 8019B058 00196E98  38 61 00 20 */	addi r3, r1, 0x20
+/* 8019B05C 00196E9C  4B FF 6E D5 */	bl __ct__Q23g3d17ModelBufferOptionFv
+/* 8019B060 00196EA0  7C 7E 1B 78 */	mr r30, r3
+.global lbl_8019B064
+lbl_8019B064:
+/* 8019B064 00196EA4  4B FF 27 15 */	bl DefaultNumView__Q23g3d17CharaModelContextFv
+/* 8019B068 00196EA8  7C 7F 1B 78 */	mr r31, r3
+/* 8019B06C 00196EAC  38 61 00 60 */	addi r3, r1, 0x60
+/* 8019B070 00196EB0  7F 64 DB 78 */	mr r4, r27
+/* 8019B074 00196EB4  38 B9 00 18 */	addi r5, r25, 0x18
+/* 8019B078 00196EB8  4B FF 8C 59 */	bl __ct__Q23g3d15ResModelContextFRCQ23g3d15ResFileAccessorPCc
+/* 8019B07C 00196EBC  7C 64 1B 78 */	mr r4, r3
+/* 8019B080 00196EC0  80 19 00 44 */	lwz r0, 0x44(r25)
+/* 8019B084 00196EC4  90 01 00 08 */	stw r0, 0x8(r1)
+/* 8019B088 00196EC8  93 A1 00 0C */	stw r29, 0xc(r1)
+/* 8019B08C 00196ECC  38 61 00 8C */	addi r3, r1, 0x8c
+/* 8019B090 00196ED0  7F C5 F3 78 */	mr r5, r30
+/* 8019B094 00196ED4  80 D9 00 48 */	lwz r6, 0x48(r25)
+/* 8019B098 00196ED8  7F E7 FB 78 */	mr r7, r31
+/* 8019B09C 00196EDC  81 19 00 40 */	lwz r8, 0x40(r25)
+/* 8019B0A0 00196EE0  7F 49 D3 78 */	mr r9, r26
+/* 8019B0A4 00196EE4  89 59 00 4C */	lbz r10, 0x4c(r25)
+/* 8019B0A8 00196EE8  4B FF 26 D9 */	bl "__ct__Q23g3d17CharaModelContextFRCQ23g3d15ResModelContextRCQ23g3d17ModelBufferOptionUlUlUlRQ23mem10IAllocatorbUlRCQ33hel6common15FixedString<32>"
+/* 8019B0AC 00196EEC  7C 64 1B 78 */	mr r4, r3
+/* 8019B0B0 00196EF0  38 78 00 04 */	addi r3, r24, 0x4
+/* 8019B0B4 00196EF4  4B FF 1E D9 */	bl __ct__Q23g3d10CharaModelFRCQ23g3d17CharaModelContext
+/* 8019B0B8 00196EF8  93 98 01 68 */	stw r28, 0x168(r24)
+/* 8019B0BC 00196EFC  38 61 00 10 */	addi r3, r1, 0x10
+/* 8019B0C0 00196F00  38 98 00 04 */	addi r4, r24, 0x4
+/* 8019B0C4 00196F04  4B FF 20 49 */	bl model__Q23g3d10CharaModelFv
+/* 8019B0C8 00196F08  38 78 01 6C */	addi r3, r24, 0x16c
+/* 8019B0CC 00196F0C  38 99 00 50 */	addi r4, r25, 0x50
+/* 8019B0D0 00196F10  7F 45 D3 78 */	mr r5, r26
+/* 8019B0D4 00196F14  38 C1 00 10 */	addi r6, r1, 0x10
+/* 8019B0D8 00196F18  48 00 09 49 */	bl __ct__Q24gobj9NodeReposFRCQ24gobj13NodeReposDescRQ23mem10IAllocatorRCQ23g3d13ModelAccessor
+/* 8019B0DC 00196F1C  38 61 00 10 */	addi r3, r1, 0x10
+/* 8019B0E0 00196F20  38 80 FF FF */	li r4, -0x1
+/* 8019B0E4 00196F24  4B FE 0E 65 */	bl __dt__Q23g3d13ModelAccessorFv
+/* 8019B0E8 00196F28  38 78 01 94 */	addi r3, r24, 0x194
+/* 8019B0EC 00196F2C  4B FF 9F 39 */	bl __ct__Q33hel4math8Matrix34Fv
+/* 8019B0F0 00196F30  38 78 01 C4 */	addi r3, r24, 0x1c4
+/* 8019B0F4 00196F34  3C 80 80 54 */	lis r4, ALL_ONE__Q33hel4math7Vector3@ha
+/* 8019B0F8 00196F38  38 84 52 DC */	addi r4, r4, ALL_ONE__Q33hel4math7Vector3@l
+/* 8019B0FC 00196F3C  4B FE 14 CD */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8019B100 00196F40  7F 03 C3 78 */	mr r3, r24
+/* 8019B104 00196F44  39 61 01 20 */	addi r11, r1, 0x120
+/* 8019B108 00196F48  4B E6 C2 75 */	bl lbl_8000737C
+/* 8019B10C 00196F4C  80 01 01 24 */	lwz r0, 0x124(r1)
+/* 8019B110 00196F50  7C 08 03 A6 */	mtlr r0
+/* 8019B114 00196F54  38 21 01 20 */	addi r1, r1, 0x120
+/* 8019B118 00196F58  4E 80 00 20 */	blr
+
+.global __dt__Q24gobj5ModelFv
+__dt__Q24gobj5ModelFv:
+/* 8019B11C 00196F5C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8019B120 00196F60  7C 08 02 A6 */	mflr r0
+/* 8019B124 00196F64  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8019B128 00196F68  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8019B12C 00196F6C  93 C1 00 08 */	stw r30, 0x8(r1)
+/* 8019B130 00196F70  7C 7E 1B 78 */	mr r30, r3
+/* 8019B134 00196F74  7C 9F 23 78 */	mr r31, r4
+/* 8019B138 00196F78  2C 03 00 00 */	cmpwi r3, 0x0
+/* 8019B13C 00196F7C  41 82 00 3C */	beq lbl_8019B178
+/* 8019B140 00196F80  38 63 01 6C */	addi r3, r3, 0x16c
+/* 8019B144 00196F84  38 80 FF FF */	li r4, -0x1
+/* 8019B148 00196F88  48 00 0B 19 */	bl __dt__Q24gobj9NodeReposFv
+/* 8019B14C 00196F8C  38 7E 00 04 */	addi r3, r30, 0x4
+/* 8019B150 00196F90  38 80 FF FF */	li r4, -0x1
+/* 8019B154 00196F94  4B FF 1F 0D */	bl __dt__Q23g3d10CharaModelFv
+/* 8019B158 00196F98  7F C3 F3 78 */	mr r3, r30
+/* 8019B15C 00196F9C  38 80 00 00 */	li r4, 0x0
+/* 8019B160 00196FA0  4B FD AA 09 */	bl __dt__Q23scn6ISceneFv
+/* 8019B164 00196FA4  7F E0 07 34 */	extsh r0, r31
+/* 8019B168 00196FA8  2C 00 00 00 */	cmpwi r0, 0x0
+/* 8019B16C 00196FAC  40 81 00 0C */	ble lbl_8019B178
+/* 8019B170 00196FB0  7F C3 F3 78 */	mr r3, r30
+/* 8019B174 00196FB4  48 02 45 A1 */	bl __dl__FPv
+.global lbl_8019B178
+lbl_8019B178:
+/* 8019B178 00196FB8  7F C3 F3 78 */	mr r3, r30
+/* 8019B17C 00196FBC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8019B180 00196FC0  83 C1 00 08 */	lwz r30, 0x8(r1)
+/* 8019B184 00196FC4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8019B188 00196FC8  7C 08 03 A6 */	mtlr r0
+/* 8019B18C 00196FCC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8019B190 00196FD0  4E 80 00 20 */	blr
+
+.global g3dModel__Q24gobj5ModelFv
+g3dModel__Q24gobj5ModelFv:
+/* 8019B194 00196FD4  38 84 00 04 */	addi r4, r4, 0x4
+/* 8019B198 00196FD8  4B FF 1F 74 */	b model__Q23g3d10CharaModelFv
+.global setRotateMtx__Q24gobj5ModelFRCQ33hel4math8Matrix34
+setRotateMtx__Q24gobj5ModelFRCQ33hel4math8Matrix34:
+/* 8019B19C 00196FDC  38 03 01 94 */	addi r0, r3, 0x194
+/* 8019B1A0 00196FE0  7C 00 20 40 */	cmplw r0, r4
+/* 8019B1A4 00196FE4  4D 82 00 20 */	beqlr
+/* 8019B1A8 00196FE8  7C 83 23 78 */	mr r3, r4
+/* 8019B1AC 00196FEC  7C 04 03 78 */	mr r4, r0
+/* 8019B1B0 00196FF0  4B E9 53 60 */	b PSMTXCopy
+/* 8019B1B4 00196FF4  4E 80 00 20 */	blr
+.global setScale__Q24gobj5ModelFRCQ33hel4math7Vector3
+setScale__Q24gobj5ModelFRCQ33hel4math7Vector3:
+/* 8019B1B8 00196FF8  C0 04 00 00 */	lfs f0, 0x0(r4)
+/* 8019B1BC 00196FFC  D0 03 01 C4 */	stfs f0, 0x1c4(r3)
+/* 8019B1C0 00197000  C0 04 00 04 */	lfs f0, 0x4(r4)
+/* 8019B1C4 00197004  D0 03 01 C8 */	stfs f0, 0x1c8(r3)
+/* 8019B1C8 00197008  C0 04 00 08 */	lfs f0, 0x8(r4)
+/* 8019B1CC 0019700C  D0 03 01 CC */	stfs f0, 0x1cc(r3)
+/* 8019B1D0 00197010  4E 80 00 20 */	blr
+.global updateWorldMtx__Q24gobj5ModelFv
+updateWorldMtx__Q24gobj5ModelFv:
+/* 8019B1D4 00197014  94 21 FF 80 */	stwu r1, -0x80(r1)
+/* 8019B1D8 00197018  7C 08 02 A6 */	mflr r0
+/* 8019B1DC 0019701C  90 01 00 84 */	stw r0, 0x84(r1)
+/* 8019B1E0 00197020  93 E1 00 7C */	stw r31, 0x7c(r1)
+/* 8019B1E4 00197024  93 C1 00 78 */	stw r30, 0x78(r1)
+/* 8019B1E8 00197028  7C 7E 1B 78 */	mr r30, r3
+/* 8019B1EC 0019702C  38 61 00 08 */	addi r3, r1, 0x8
+/* 8019B1F0 00197030  80 9E 01 68 */	lwz r4, 0x168(r30)
+/* 8019B1F4 00197034  4B FE 13 D5 */	bl __ct__Q33hel4math7Vector3FRCQ33hel4math7Vector3
+/* 8019B1F8 00197038  38 61 00 18 */	addi r3, r1, 0x18
+/* 8019B1FC 0019703C  38 81 00 08 */	addi r4, r1, 0x8
+/* 8019B200 00197040  48 00 33 91 */	bl CreateTrans__Q33hel4math8Matrix34FRCQ33hel4math7Vector3
+/* 8019B204 00197044  3B E1 00 18 */	addi r31, r1, 0x18
+/* 8019B208 00197048  38 61 00 48 */	addi r3, r1, 0x48
+/* 8019B20C 0019704C  4B E9 52 D5 */	bl PSMTXIdentity
+/* 8019B210 00197050  7F E3 FB 78 */	mr r3, r31
+/* 8019B214 00197054  38 9E 01 94 */	addi r4, r30, 0x194
+/* 8019B218 00197058  38 A1 00 48 */	addi r5, r1, 0x48
+/* 8019B21C 0019705C  4B E9 53 35 */	bl PSMTXConcat
+/* 8019B220 00197060  38 7E 00 04 */	addi r3, r30, 0x4
+/* 8019B224 00197064  38 81 00 48 */	addi r4, r1, 0x48
+/* 8019B228 00197068  4B FF 1F 51 */	bl setModelRTMtx__Q23g3d10CharaModelFRCQ33hel4math8Matrix34
+/* 8019B22C 0019706C  38 7E 00 04 */	addi r3, r30, 0x4
+/* 8019B230 00197070  38 9E 01 C4 */	addi r4, r30, 0x1c4
+/* 8019B234 00197074  4B FF 1F 7D */	bl setModelScale__Q23g3d10CharaModelFRCQ33hel4math7Vector3
+/* 8019B238 00197078  38 7E 00 04 */	addi r3, r30, 0x4
+/* 8019B23C 0019707C  4B FF 1F 25 */	bl updateWorldMtx__Q23g3d10CharaModelFv
+/* 8019B240 00197080  83 E1 00 7C */	lwz r31, 0x7c(r1)
+/* 8019B244 00197084  83 C1 00 78 */	lwz r30, 0x78(r1)
+/* 8019B248 00197088  80 01 00 84 */	lwz r0, 0x84(r1)
+/* 8019B24C 0019708C  7C 08 03 A6 */	mtlr r0
+/* 8019B250 00197090  38 21 00 80 */	addi r1, r1, 0x80
+/* 8019B254 00197094  4E 80 00 20 */	blr
+.global registerToRoot__Q24gobj5ModelFRQ23g3d4Root
+registerToRoot__Q24gobj5ModelFRQ23g3d4Root:
+/* 8019B258 00197098  38 63 00 04 */	addi r3, r3, 0x4
+/* 8019B25C 0019709C  4B FF 1E A0 */	b registerToRoot__Q23g3d10CharaModelFRQ23g3d4Root
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q24gobj5Model
+__vt__Q24gobj5Model:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q24gobj5ModelFv
+	.4byte g3dModel__Q24gobj5ModelFv

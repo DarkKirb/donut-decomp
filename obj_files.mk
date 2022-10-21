@@ -771,39 +771,41 @@ $(BUILD_DIR)/asm/src/gfx/Utility.o \
 $(BUILD_DIR)/asm/src/gfx/VISetting.o \
 $(BUILD_DIR)/asm/src/gfx/XFBManager.o \
 \
+$(BUILD_DIR)/asm/src/gobj/AddOnMint.o \
+$(BUILD_DIR)/asm/src/gobj/Anim.o \
+$(BUILD_DIR)/asm/src/gobj/AnimScript.o \
+$(BUILD_DIR)/asm/src/gobj/ColorAnim.o \
+$(BUILD_DIR)/asm/src/gobj/FootState.o \
+$(BUILD_DIR)/asm/src/gobj/G3DAnimData.o \
+$(BUILD_DIR)/asm/src/gobj/G3DAnimDataRepos.o \
+$(BUILD_DIR)/asm/src/gobj/GearAnim.o \
+$(BUILD_DIR)/asm/src/gobj/GearModel.o \
+$(BUILD_DIR)/asm/src/gobj/GearModelDesc.o \
+$(BUILD_DIR)/asm/src/gobj/Location.o \
+$(BUILD_DIR)/asm/src/gobj/LocationDesc.o \
+$(BUILD_DIR)/asm/src/gobj/MeshFlip.o \
+$(BUILD_DIR)/asm/src/gobj/MintAnim.o \
+$(BUILD_DIR)/asm/src/gobj/MintFootState.o \
+$(BUILD_DIR)/asm/src/gobj/MintGearAnim.o \
+$(BUILD_DIR)/asm/src/gobj/MintLocation.o \
+$(BUILD_DIR)/asm/src/gobj/MintMeshFlip.o \
+$(BUILD_DIR)/asm/src/gobj/MintModel.o \
+$(BUILD_DIR)/asm/src/gobj/MintMove.o \
+$(BUILD_DIR)/asm/src/gobj/MintScript.o \
+$(BUILD_DIR)/asm/src/gobj/MintTarget.o \
+$(BUILD_DIR)/asm/src/gobj/Model.o \
+$(BUILD_DIR)/asm/src/gobj/ModelDesc.o \
+$(BUILD_DIR)/asm/src/gobj/Move.o \
+$(BUILD_DIR)/asm/src/gobj/MoveParamAccel.o \
+$(BUILD_DIR)/asm/src/gobj/MoveParamDecel.o \
+$(BUILD_DIR)/asm/src/gobj/MoveParamFall.o \
+$(BUILD_DIR)/asm/src/gobj/NodeRepos.o \
+$(BUILD_DIR)/asm/src/gobj/Script.o \
+$(BUILD_DIR)/asm/src/gobj/Target.o \
+$(BUILD_DIR)/asm/src/gobj/TargetDesc.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AddOnMint_80197ef4.o \
-$(BUILD_DIR)/asm/src/Anim_80199324.o \
-$(BUILD_DIR)/asm/src/ColorAnim_80199914.o \
-$(BUILD_DIR)/asm/src/FootState_80199eb8.o \
-$(BUILD_DIR)/asm/src/G3DAnimData_80199ed4.o \
-$(BUILD_DIR)/asm/src/G3DAnimDataRepos_80199ee4.o \
-$(BUILD_DIR)/asm/src/GearAnim_8019a224.o \
-$(BUILD_DIR)/asm/src/GearModel_8019a5f4.o \
-$(BUILD_DIR)/asm/src/GearModelDesc_8019a8a0.o \
-$(BUILD_DIR)/asm/src/Location_8019a954.o \
-$(BUILD_DIR)/asm/src/LocationDesc_8019a9d0.o \
-$(BUILD_DIR)/asm/src/MeshFlip_8019aa1c.o \
-$(BUILD_DIR)/asm/src/MintAnim_8019abc4.o \
-$(BUILD_DIR)/asm/src/MintFootState_8019ac68.o \
-$(BUILD_DIR)/asm/src/MintGearAnim_8019ac94.o \
-$(BUILD_DIR)/asm/src/MintLocation_8019ad34.o \
-$(BUILD_DIR)/asm/src/MintMeshFlip_8019adc0.o \
-$(BUILD_DIR)/asm/src/MintModel_8019ade8.o \
-$(BUILD_DIR)/asm/src/MintMove_8019ae8c.o \
-$(BUILD_DIR)/asm/src/MintScript_8019af44.o \
-$(BUILD_DIR)/asm/src/MintTarget_8019af68.o \
-$(BUILD_DIR)/asm/src/Model_8019afd8.o \
-$(BUILD_DIR)/asm/src/ModelDesc_8019b260.o \
-$(BUILD_DIR)/asm/src/Move_8019b314.o \
-$(BUILD_DIR)/asm/src/MoveParamAccel_8019b9a4.o \
-$(BUILD_DIR)/asm/src/MoveParamDecel_8019b9f4.o \
-$(BUILD_DIR)/asm/src/MoveParamFall_8019ba10.o \
-$(BUILD_DIR)/asm/src/NodeRepos_8019ba20.o \
-$(BUILD_DIR)/asm/src/Script_8019bd40.o \
-$(BUILD_DIR)/asm/src/Target_8019c094.o \
-$(BUILD_DIR)/asm/src/TargetDesc_8019c14c.o \
 $(BUILD_DIR)/asm/src/DisableIcon_8019c158.o \
 $(BUILD_DIR)/asm/src/HomeButtonMenu_8019c390.o \
 $(BUILD_DIR)/asm/src/Resource_8019d5d8.o \
@@ -2937,15 +2939,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/MintAnim_804062ec.o \
-$(BUILD_DIR)/asm/src/MintFootState_804062f0.o \
-$(BUILD_DIR)/asm/src/MintGearAnim_804062f4.o \
-$(BUILD_DIR)/asm/src/MintLocation_804062f8.o \
-$(BUILD_DIR)/asm/src/MintMeshFlip_804062fc.o \
-$(BUILD_DIR)/asm/src/MintModel_80406300.o \
-$(BUILD_DIR)/asm/src/MintMove_80406304.o \
-$(BUILD_DIR)/asm/src/MintScript_80406308.o \
-$(BUILD_DIR)/asm/src/MintTarget_8040630c.o \
 $(BUILD_DIR)/asm/src/DisableIcon_80406310.o \
 $(BUILD_DIR)/asm/src/Color_80406314.o \
 $(BUILD_DIR)/asm/src/Direction3_80406318.o \
@@ -3144,11 +3137,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMint_804549e0.o \
-$(BUILD_DIR)/asm/src/AnimScript_80454fd0.o \
-$(BUILD_DIR)/asm/src/GearModel_80455020.o \
-$(BUILD_DIR)/asm/src/Model_80455030.o \
-$(BUILD_DIR)/asm/src/Script_80455040.o \
 $(BUILD_DIR)/asm/src/DisableIconResource_80455060.o \
 $(BUILD_DIR)/asm/src/HomeButtonMenu_80456920.o \
 $(BUILD_DIR)/asm/src/ResourceFileName_80456930.o \
@@ -4745,10 +4733,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/AnimScript_80556e00.o \
-$(BUILD_DIR)/asm/src/GearModelDesc_80556e08.o \
-$(BUILD_DIR)/asm/src/ModelDesc_80556e18.o \
-$(BUILD_DIR)/asm/src/Script_80556e28.o \
 $(BUILD_DIR)/asm/src/HomeButtonMenu_80556e30.o \
 $(BUILD_DIR)/asm/src/ResourceFileName_80556e48.o \
 $(BUILD_DIR)/asm/src/Locale_80556e60.o \
@@ -5091,15 +5075,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/MintAnim_8055d1c0.o \
-$(BUILD_DIR)/asm/src/MintFootState_8055d1c8.o \
-$(BUILD_DIR)/asm/src/MintGearAnim_8055d1d0.o \
-$(BUILD_DIR)/asm/src/MintLocation_8055d1d8.o \
-$(BUILD_DIR)/asm/src/MintMeshFlip_8055d1e0.o \
-$(BUILD_DIR)/asm/src/MintModel_8055d1e8.o \
-$(BUILD_DIR)/asm/src/MintMove_8055d1f0.o \
-$(BUILD_DIR)/asm/src/MintScript_8055d1f8.o \
-$(BUILD_DIR)/asm/src/MintTarget_8055d200.o \
 $(BUILD_DIR)/asm/src/DisableIcon_8055d208.o \
 $(BUILD_DIR)/asm/src/Color_8055d218.o \
 $(BUILD_DIR)/asm/src/Point2_8055d240.o \
@@ -5217,14 +5192,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddOnMint_8055f778.o \
-$(BUILD_DIR)/asm/src/Anim_8055f780.o \
-$(BUILD_DIR)/asm/src/ColorAnim_8055f788.o \
-$(BUILD_DIR)/asm/src/Move_8055f790.o \
-$(BUILD_DIR)/asm/src/MoveParamAccel_8055f798.o \
-$(BUILD_DIR)/asm/src/MoveParamDecel_8055f7a0.o \
-$(BUILD_DIR)/asm/src/MoveParamFall_8055f7a8.o \
-$(BUILD_DIR)/asm/src/Target_8055f7b0.o \
 $(BUILD_DIR)/asm/src/DisableIcon_8055f7b8.o \
 $(BUILD_DIR)/asm/src/HomeButtonMenu_8055f7e0.o \
 $(BUILD_DIR)/asm/src/ResourceFileName_8055f818.o \

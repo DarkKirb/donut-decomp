@@ -625,8 +625,8 @@ registerToRoot__Q53scn4step7gimmick5ghost5GhostFRQ23g3d4Root:
 /* 8030FB7C 0030B9BC  38 63 00 04 */	addi r3, r3, 0x4
 /* 8030FB80 0030B9C0  4B F5 A5 B4 */	b registerToRoot__Q43scn4step9challenge9ScoreInfoFRQ23g3d4Root
 
-.global "__sinit_@@1Ghost_cpp"
-"__sinit_@@1Ghost_cpp":
+.global "__sinit_\\Ghost_cpp"
+"__sinit_\\Ghost_cpp":
 /* 8030FB84 0030B9C4  3C 60 80 55 */	lis r3, "Offset__19@unnamed@Ghost_cpp@"@ha
 /* 8030FB88 0030B9C8  38 63 25 F8 */	addi r3, r3, "Offset__19@unnamed@Ghost_cpp@"@l
 /* 8030FB8C 0030B9CC  C0 22 C9 1C */	lfs f1, "@54510_8056289C"@sda21(r2)

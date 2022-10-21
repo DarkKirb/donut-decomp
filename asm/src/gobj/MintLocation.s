@@ -47,14 +47,14 @@ PrevPos__Q24gobj12MintLocationFv:
 /* 8019ADB0 00196BF0  80 8D ED B8 */	lwz r4, "t_obj__Q24gobj26@unnamed@MintLocation_cpp@"@sda21(r13)
 /* 8019ADB4 00196BF4  4B FF FB F4 */	b prevPos__Q24gobj8LocationCFv
 
-.global "__sinit_@@1MintLocation_cpp"
-"__sinit_@@1MintLocation_cpp":
+.global "__sinit_\\MintLocation_cpp"
+"__sinit_\\MintLocation_cpp":
 /* 8019ADB8 00196BF8  38 6D ED B8 */	addi r3, r13, "t_obj__Q24gobj26@unnamed@MintLocation_cpp@"@sda21
 /* 8019ADBC 00196BFC  4B F4 26 24 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1MintLocation_cpp"
+	.4byte "__sinit_\\MintLocation_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

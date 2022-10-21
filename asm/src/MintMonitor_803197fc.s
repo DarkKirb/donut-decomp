@@ -6,7 +6,7 @@ Obj__Q53scn4step7gimmick7monitor11MintMonitorFv:
 /* 803197FC 0031563C  80 6D F7 B8 */	lwz r3, "t_obj__Q53scn4step7gimmick7monitor25@unnamed@MintMonitor_cpp@"@sda21(r13)
 /* 80319800 00315640  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintMonitor_cpp"
-"__sinit_@@1MintMonitor_cpp":
+.global "__sinit_\\MintMonitor_cpp"
+"__sinit_\\MintMonitor_cpp":
 /* 80319804 00315644  38 6D F7 B8 */	addi r3, r13, "t_obj__Q53scn4step7gimmick7monitor25@unnamed@MintMonitor_cpp@"@sda21
 /* 80319808 00315648  4B DC 3B D8 */	b __ct__Q34nw4r3g3d8LightObjFv

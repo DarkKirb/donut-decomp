@@ -182,8 +182,8 @@ lbl_802D1F68:
 /* 802D1FB8 002CDDF8  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 802D1FBC 002CDDFC  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_802D1FC0"
-"__sinit_@@1ModelDesc_cpp_802D1FC0":
+.global "__sinit_\\ModelDesc_cpp_802D1FC0"
+"__sinit_\\ModelDesc_cpp_802D1FC0":
 /* 802D1FC0 002CDE00  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 802D1FC4 002CDE04  3C 60 80 48 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy10poppybrojr23@unnamed@ModelDesc_cpp@"@ha
 /* 802D1FC8 002CDE08  90 03 A7 98 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy10poppybrojr23@unnamed@ModelDesc_cpp@"@l(r3)

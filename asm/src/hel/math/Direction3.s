@@ -359,8 +359,8 @@ lbl_8019E420:
 /* 8019E44C 0019A28C  38 21 00 80 */	addi r1, r1, 0x80
 /* 8019E450 0019A290  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Direction3_cpp"
-"__sinit_@@1Direction3_cpp":
+.global "__sinit_\\Direction3_cpp"
+"__sinit_\\Direction3_cpp":
 /* 8019E454 0019A294  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 8019E458 0019A298  7C 08 02 A6 */	mflr r0
 /* 8019E45C 0019A29C  90 01 00 94 */	stw r0, 0x94(r1)
@@ -443,7 +443,7 @@ lbl_8019E420:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1Direction3_cpp"
+	.4byte "__sinit_\\Direction3_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

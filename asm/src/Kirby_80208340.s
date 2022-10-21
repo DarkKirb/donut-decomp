@@ -1726,8 +1726,8 @@ lbl_80209B84:
 /* 80209BCC 00205A0C  38 21 00 80 */	addi r1, r1, 0x80
 /* 80209BD0 00205A10  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Kirby_cpp"
-"__sinit_@@1Kirby_cpp":
+.global "__sinit_\\Kirby_cpp"
+"__sinit_\\Kirby_cpp":
 /* 80209BD4 00205A14  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80209BD8 00205A18  7C 08 02 A6 */	mflr r0
 /* 80209BDC 00205A1C  90 01 00 14 */	stw r0, 0x14(r1)

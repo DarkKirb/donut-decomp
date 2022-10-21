@@ -111,7 +111,7 @@ BindEffectWarp__Q43scn4step4hero8MintGearFv:
 /* 8034B684 003474C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8034B688 003474C8  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintGear_cpp"
-"__sinit_@@1MintGear_cpp":
+.global "__sinit_\\MintGear_cpp"
+"__sinit_\\MintGear_cpp":
 /* 8034B68C 003474CC  38 6D F8 00 */	addi r3, r13, "t_obj__Q43scn4step4hero22@unnamed@MintGear_cpp@"@sda21
 /* 8034B690 003474D0  4B D9 1D 50 */	b __ct__Q34nw4r3g3d8LightObjFv

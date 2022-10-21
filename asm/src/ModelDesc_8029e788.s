@@ -101,8 +101,8 @@ lbl_8029E880:
 /* 8029E8E8 0029A728  38 21 00 30 */	addi r1, r1, 0x30
 /* 8029E8EC 0029A72C  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_8029E8F0"
-"__sinit_@@1ModelDesc_cpp_8029E8F0":
+.global "__sinit_\\ModelDesc_cpp_8029E8F0"
+"__sinit_\\ModelDesc_cpp_8029E8F0":
 /* 8029E8F0 0029A730  80 8D 89 E0 */	lwz r4, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 8029E8F4 0029A734  3C 60 80 47 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy5bowby23@unnamed@ModelDesc_cpp@"@ha
 /* 8029E8F8 0029A738  38 63 46 44 */	addi r3, r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy5bowby23@unnamed@ModelDesc_cpp@"@l

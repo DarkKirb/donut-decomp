@@ -50,8 +50,8 @@ lbl_802C35A8:
 /* 802C360C 002BF44C  38 21 00 30 */	addi r1, r1, 0x30
 /* 802C3610 002BF450  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_802C3614"
-"__sinit_@@1ModelDesc_cpp_802C3614":
+.global "__sinit_\\ModelDesc_cpp_802C3614"
+"__sinit_\\ModelDesc_cpp_802C3614":
 /* 802C3614 002BF454  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 802C3618 002BF458  3C 60 80 48 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy6leafan23@unnamed@ModelDesc_cpp@"@ha
 /* 802C361C 002BF45C  90 03 8E 70 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy6leafan23@unnamed@ModelDesc_cpp@"@l(r3)

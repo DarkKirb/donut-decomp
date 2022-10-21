@@ -15,7 +15,7 @@ Obj__Q43scn4step5enemy9MintEnemyFv:
 /* 8028ADCC 00286C0C  80 6D F5 68 */	lwz r3, "t_obj__Q43scn4step5enemy23@unnamed@MintEnemy_cpp@"@sda21(r13)
 /* 8028ADD0 00286C10  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintEnemy_cpp"
-"__sinit_@@1MintEnemy_cpp":
+.global "__sinit_\\MintEnemy_cpp"
+"__sinit_\\MintEnemy_cpp":
 /* 8028ADD4 00286C14  38 6D F5 68 */	addi r3, r13, "t_obj__Q43scn4step5enemy23@unnamed@MintEnemy_cpp@"@sda21
 /* 8028ADD8 00286C18  4B E5 26 08 */	b __ct__Q34nw4r3g3d8LightObjFv

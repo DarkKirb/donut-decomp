@@ -384,7 +384,7 @@ RequestND__Q43scn4step5chara10MintEffectFUlUlRCQ33hel4math10Direction3RCQ33hel4m
 /* 8026FD70 0026BBB0  7C 06 03 78 */	mr r6, r0
 /* 8026FD74 0026BBB4  4B FF E5 08 */	b requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3f
 
-.global "__sinit_@@1MintEffect_cpp"
-"__sinit_@@1MintEffect_cpp":
+.global "__sinit_\\MintEffect_cpp"
+"__sinit_\\MintEffect_cpp":
 /* 8026FD78 0026BBB8  38 6D F1 B8 */	addi r3, r13, "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"@sda21
 /* 8026FD7C 0026BBBC  4B E6 D6 64 */	b __ct__Q34nw4r3g3d8LightObjFv

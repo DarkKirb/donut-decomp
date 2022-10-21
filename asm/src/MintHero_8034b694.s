@@ -15,7 +15,7 @@ Obj__Q43scn4step4hero8MintHeroFv:
 /* 8034B6A8 003474E8  80 6D F8 08 */	lwz r3, "t_obj__Q43scn4step4hero22@unnamed@MintHero_cpp@"@sda21(r13)
 /* 8034B6AC 003474EC  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintHero_cpp"
-"__sinit_@@1MintHero_cpp":
+.global "__sinit_\\MintHero_cpp"
+"__sinit_\\MintHero_cpp":
 /* 8034B6B0 003474F0  38 6D F8 08 */	addi r3, r13, "t_obj__Q43scn4step4hero22@unnamed@MintHero_cpp@"@sda21
 /* 8034B6B4 003474F4  4B D9 1D 2C */	b __ct__Q34nw4r3g3d8LightObjFv

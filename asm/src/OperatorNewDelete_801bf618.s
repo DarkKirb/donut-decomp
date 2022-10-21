@@ -101,8 +101,8 @@ UnsetGlobalNewDeleteAllocator__Q23mem17OperatorNewDeleteFRQ23mem10IAllocator:
 /* 801BF72C 001BB56C  90 0D EE 8C */	stw r0, "t_globalNewDeleteAllocator__31@unnamed@OperatorNewDelete_cpp@"@sda21(r13)
 /* 801BF730 001BB570  4E 80 00 20 */	blr
 
-.global "__sinit_@@1OperatorNewDelete_cpp"
-"__sinit_@@1OperatorNewDelete_cpp":
+.global "__sinit_\\OperatorNewDelete_cpp"
+"__sinit_\\OperatorNewDelete_cpp":
 /* 801BF734 001BB574  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BF738 001BB578  7C 08 02 A6 */	mflr r0
 /* 801BF73C 001BB57C  90 01 00 14 */	stw r0, 0x14(r1)

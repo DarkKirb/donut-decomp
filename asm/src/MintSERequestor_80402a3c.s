@@ -20,7 +20,7 @@ Stop__Q23snd15MintSERequestorFv:
 /* 80402A5C 003FE89C  80 6D FB 38 */	lwz r3, "t_obj__Q23snd29@unnamed@MintSERequestor_cpp@"@sda21(r13)
 /* 80402A60 003FE8A0  48 00 02 D8 */	b stop__Q23snd11SERequestorFv
 
-.global "__sinit_@@1MintSERequestor_cpp"
-"__sinit_@@1MintSERequestor_cpp":
+.global "__sinit_\\MintSERequestor_cpp"
+"__sinit_\\MintSERequestor_cpp":
 /* 80402A64 003FE8A4  38 6D FB 38 */	addi r3, r13, "t_obj__Q23snd29@unnamed@MintSERequestor_cpp@"@sda21
 /* 80402A68 003FE8A8  4B CD A9 78 */	b __ct__Q34nw4r3g3d8LightObjFv

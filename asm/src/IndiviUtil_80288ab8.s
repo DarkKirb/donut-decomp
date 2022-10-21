@@ -32,8 +32,8 @@ CharaParam__Q43scn4step5enemy10IndiviUtilFQ43scn4step3map12BinEnemyKindUl:
 /* 80288B10 00284950  7D 89 03 A6 */	mtctr r12
 /* 80288B14 00284954  4E 80 04 20 */	bctr
 
-.global "__sinit_@@1IndiviUtil_cpp"
-"__sinit_@@1IndiviUtil_cpp":
+.global "__sinit_\\IndiviUtil_cpp"
+"__sinit_\\IndiviUtil_cpp":
 /* 80288B18 00284958  80 02 AF 20 */	lwz r0, "T_MODEL_DESC_FUNC_DUMMY__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@sda21(r2)
 /* 80288B1C 0028495C  3C 60 80 47 */	lis r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@ha
 /* 80288B20 00284960  38 63 1F 18 */	addi r3, r3, "T_INDIVI_TABLE__Q43scn4step5enemy24@unnamed@IndiviUtil_cpp@"@l

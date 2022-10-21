@@ -1556,8 +1556,8 @@ lbl_801BB2A4:
 /* 801BB2B0 001B70F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BB2B4 001B70F4  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MoveGridGroup_cpp"
-"__sinit_@@1MoveGridGroup_cpp":
+.global "__sinit_\\MoveGridGroup_cpp"
+"__sinit_\\MoveGridGroup_cpp":
 /* 801BB2B8 001B70F8  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 801BB2BC 001B70FC  7C 08 02 A6 */	mflr r0
 /* 801BB2C0 001B7100  90 01 00 B4 */	stw r0, 0xb4(r1)

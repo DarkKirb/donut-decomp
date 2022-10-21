@@ -49,14 +49,14 @@ SetScale__Q24gobj9MintModelFfff:
 /* 8019AE7C 00196CBC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019AE80 00196CC0  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintModel_cpp_8019AE84"
-"__sinit_@@1MintModel_cpp_8019AE84":
+.global "__sinit_\\MintModel_cpp_8019AE84"
+"__sinit_\\MintModel_cpp_8019AE84":
 /* 8019AE84 00196CC4  38 6D ED C8 */	addi r3, r13, "t_obj__Q24gobj23@unnamed@MintModel_cpp@"@sda21
 /* 8019AE88 00196CC8  4B F4 25 58 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1MintModel_cpp_8019AE84"
+	.4byte "__sinit_\\MintModel_cpp_8019AE84"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

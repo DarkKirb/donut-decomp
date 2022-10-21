@@ -53,8 +53,8 @@ lbl_80247CA4:
 /* 80247D0C 00243B4C  38 21 00 30 */	addi r1, r1, 0x30
 /* 80247D10 00243B50  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_80247D14"
-"__sinit_@@1ModelDesc_cpp_80247D14":
+.global "__sinit_\\ModelDesc_cpp_80247D14"
+"__sinit_\\ModelDesc_cpp_80247D14":
 /* 80247D14 00243B54  80 8D 89 E0 */	lwz r4, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 80247D18 00243B58  3C 60 80 46 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step4boss12creditdedede23@unnamed@ModelDesc_cpp@"@ha
 /* 80247D1C 00243B5C  90 83 66 18 */	stw r4, "T_SCRIPT_ENTRIES__Q53scn4step4boss12creditdedede23@unnamed@ModelDesc_cpp@"@l(r3)

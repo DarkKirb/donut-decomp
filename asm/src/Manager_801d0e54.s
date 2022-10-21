@@ -429,7 +429,7 @@ MemFree__Q23msg7ManagerFPv:
 /* 801D13F4 001CD234  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D13F8 001CD238  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Manager_cpp"
-"__sinit_@@1Manager_cpp":
+.global "__sinit_\\Manager_cpp"
+"__sinit_\\Manager_cpp":
 /* 801D13FC 001CD23C  38 6D EE B8 */	addi r3, r13, "t_manager__Q23msg21@unnamed@Manager_cpp@"@sda21
 /* 801D1400 001CD240  4B F0 BF E0 */	b __ct__Q34nw4r3g3d8LightObjFv

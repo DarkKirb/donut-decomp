@@ -15,7 +15,7 @@ Obj__Q53scn4step7gimmick13challengedoor17MintChallengeDoorFv:
 /* 8030B060 00306EA0  80 6D F7 A8 */	lwz r3, "t_obj__Q53scn4step7gimmick13challengedoor31@unnamed@MintChallengeDoor_cpp@"@sda21(r13)
 /* 8030B064 00306EA4  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintChallengeDoor_cpp"
-"__sinit_@@1MintChallengeDoor_cpp":
+.global "__sinit_\\MintChallengeDoor_cpp"
+"__sinit_\\MintChallengeDoor_cpp":
 /* 8030B068 00306EA8  38 6D F7 A8 */	addi r3, r13, "t_obj__Q53scn4step7gimmick13challengedoor31@unnamed@MintChallengeDoor_cpp@"@sda21
 /* 8030B06C 00306EAC  4B DD 23 74 */	b __ct__Q34nw4r3g3d8LightObjFv

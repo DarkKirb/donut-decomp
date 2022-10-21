@@ -54,7 +54,7 @@ SetVolume__Q43scn4step4core17MintBGMControllerFif:
 /* 8027762C 0027346C  80 6D F1 E8 */	lwz r3, "t_obj__Q43scn4step4core31@unnamed@MintBGMController_cpp@"@sda21(r13)
 /* 80277630 00273470  4B FF D2 DC */	b setVolume__Q43scn4step4core13BGMControllerFQ43scn4step4core11BGMCategoryf
 
-.global "__sinit_@@1MintBGMController_cpp"
-"__sinit_@@1MintBGMController_cpp":
+.global "__sinit_\\MintBGMController_cpp"
+"__sinit_\\MintBGMController_cpp":
 /* 80277634 00273474  38 6D F1 E8 */	addi r3, r13, "t_obj__Q43scn4step4core31@unnamed@MintBGMController_cpp@"@sda21
 /* 80277638 00273478  4B E6 5D A8 */	b __ct__Q34nw4r3g3d8LightObjFv

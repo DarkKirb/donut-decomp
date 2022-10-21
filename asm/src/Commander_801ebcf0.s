@@ -541,7 +541,7 @@ execScript__Q33scn14challengetitle9CommanderFv:
 /* 801EC43C 001E827C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801EC440 001E8280  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Commander_cpp_801EC444"
-"__sinit_@@1Commander_cpp_801EC444":
+.global "__sinit_\\Commander_cpp_801EC444"
+"__sinit_\\Commander_cpp_801EC444":
 /* 801EC444 001E8284  38 6D EE F8 */	addi r3, r13, "t_obj__Q33scn14challengetitle23@unnamed@Commander_cpp@"@sda21
 /* 801EC448 001E8288  4B EF 0F 98 */	b __ct__Q34nw4r3g3d8LightObjFv

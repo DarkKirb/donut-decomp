@@ -1139,8 +1139,8 @@ lbl_80210A54:
 /* 80210A54 0020C894  38 60 00 00 */	li r3, 0x0
 /* 80210A58 0020C898  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Stage_cpp"
-"__sinit_@@1Stage_cpp":
+.global "__sinit_\\Stage_cpp"
+"__sinit_\\Stage_cpp":
 /* 80210A5C 0020C89C  3C 60 80 54 */	lis r3, "FUTURE_EFFECT_OFFSET__19@unnamed@Stage_cpp@"@ha
 /* 80210A60 0020C8A0  38 63 67 E0 */	addi r3, r3, "FUTURE_EFFECT_OFFSET__19@unnamed@Stage_cpp@"@l
 /* 80210A64 0020C8A4  C0 22 A1 CC */	lfs f1, "@55028_8056014C"@sda21(r2)

@@ -15,14 +15,14 @@ PrevScriptIndex__Q24gobj10MintScriptFv:
 /* 8019AF58 00196D98  80 6D ED D8 */	lwz r3, "t_obj__Q24gobj24@unnamed@MintScript_cpp@"@sda21(r13)
 /* 8019AF5C 00196D9C  48 00 11 30 */	b prevScriptIndex__Q24gobj6ScriptCFv
 
-.global "__sinit_@@1MintScript_cpp"
-"__sinit_@@1MintScript_cpp":
+.global "__sinit_\\MintScript_cpp"
+"__sinit_\\MintScript_cpp":
 /* 8019AF60 00196DA0  38 6D ED D8 */	addi r3, r13, "t_obj__Q24gobj24@unnamed@MintScript_cpp@"@sda21
 /* 8019AF64 00196DA4  4B F4 24 7C */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1MintScript_cpp"
+	.4byte "__sinit_\\MintScript_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

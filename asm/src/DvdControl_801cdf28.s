@@ -507,8 +507,8 @@ GetSize__FPvPv:
 /* 801CE590 001CA3D0  80 64 00 54 */	lwz r3, 0x54(r4)
 /* 801CE594 001CA3D4  4E 80 00 20 */	blr
 
-.global "__sinit_@@1DvdControl_cpp"
-"__sinit_@@1DvdControl_cpp":
+.global "__sinit_\\DvdControl_cpp"
+"__sinit_\\DvdControl_cpp":
 /* 801CE598 001CA3D8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CE59C 001CA3DC  7C 08 02 A6 */	mflr r0
 /* 801CE5A0 001CA3E0  90 01 00 14 */	stw r0, 0x14(r1)

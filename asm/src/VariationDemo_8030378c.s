@@ -718,8 +718,8 @@ lbl_80304070:
 setIsPose__Q53scn4step7gimmick10cameralock13VariationDemoFb:
 /* 803040A0 002FFEE0  4E 80 00 20 */	blr
 
-.global "__sinit_@@1VariationDemo_cpp"
-"__sinit_@@1VariationDemo_cpp":
+.global "__sinit_\\VariationDemo_cpp"
+"__sinit_\\VariationDemo_cpp":
 /* 803040A4 002FFEE4  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 803040A8 002FFEE8  7C 08 02 A6 */	mflr r0
 /* 803040AC 002FFEEC  90 01 00 84 */	stw r0, 0x84(r1)

@@ -124,8 +124,8 @@ lbl_8021A01C:
 /* 8021A01C 00215E5C  38 60 00 00 */	li r3, 0x0
 /* 8021A020 00215E60  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Product_cpp"
-"__sinit_@@1Product_cpp":
+.global "__sinit_\\Product_cpp"
+"__sinit_\\Product_cpp":
 /* 8021A024 00215E64  94 21 FE 90 */	stwu r1, -0x170(r1)
 /* 8021A028 00215E68  7C 08 02 A6 */	mflr r0
 /* 8021A02C 00215E6C  90 01 01 74 */	stw r0, 0x174(r1)

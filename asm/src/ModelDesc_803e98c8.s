@@ -77,8 +77,8 @@ lbl_803E99A0:
 /* 803E99CC 003E580C  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E99D0 003E5810  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_803E99D4"
-"__sinit_@@1ModelDesc_cpp_803E99D4":
+.global "__sinit_\\ModelDesc_cpp_803E99D4"
+"__sinit_\\ModelDesc_cpp_803E99D4":
 /* 803E99D4 003E5814  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 803E99D8 003E5818  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23@unnamed@ModelDesc_cpp@"@ha
 /* 803E99DC 003E581C  90 03 58 08 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon17tsukikageshuriken23@unnamed@ModelDesc_cpp@"@l(r3)

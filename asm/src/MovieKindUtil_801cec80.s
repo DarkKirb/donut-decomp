@@ -54,8 +54,8 @@ PreFadeColor__Q23mov13MovieKindUtilFQ23mov9MovieKind:
 /* 801CED28 001CAB68  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CED2C 001CAB6C  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MovieKindUtil_cpp"
-"__sinit_@@1MovieKindUtil_cpp":
+.global "__sinit_\\MovieKindUtil_cpp"
+"__sinit_\\MovieKindUtil_cpp":
 /* 801CED30 001CAB70  80 02 9C 84 */	lwz r0, "T_BLACK__Q23mov27@unnamed@MovieKindUtil_cpp@"@sda21(r2)
 /* 801CED34 001CAB74  3C 60 80 46 */	lis r3, "MOVIE_INFO_TABLE__Q23mov27@unnamed@MovieKindUtil_cpp@"@ha
 /* 801CED38 001CAB78  38 63 CE E0 */	addi r3, r3, "MOVIE_INFO_TABLE__Q23mov27@unnamed@MovieKindUtil_cpp@"@l

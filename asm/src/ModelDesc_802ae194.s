@@ -101,8 +101,8 @@ CreateEx__Q53scn4step5enemy8dubiorjr9ModelDescFv:
 /* 802AE2F4 002AA134  38 21 00 10 */	addi r1, r1, 0x10
 /* 802AE2F8 002AA138  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_802AE2FC"
-"__sinit_@@1ModelDesc_cpp_802AE2FC":
+.global "__sinit_\\ModelDesc_cpp_802AE2FC"
+"__sinit_\\ModelDesc_cpp_802AE2FC":
 /* 802AE2FC 002AA13C  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 802AE300 002AA140  3C 60 80 47 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy8dubiorjr23@unnamed@ModelDesc_cpp@"@ha
 /* 802AE304 002AA144  90 03 62 04 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy8dubiorjr23@unnamed@ModelDesc_cpp@"@l(r3)

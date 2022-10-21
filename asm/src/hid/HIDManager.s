@@ -1120,8 +1120,8 @@ resetGCControllerAll__Q23hid10HIDManagerFv:
 /* 801A3800 0019F640  3C 60 F0 00 */	lis r3, 0xf000
 /* 801A3804 0019F644  4B EA F6 1C */	b PADRecalibrate
 
-.global "__sinit_@@1HIDManager_cpp"
-"__sinit_@@1HIDManager_cpp":
+.global "__sinit_\\HIDManager_cpp"
+"__sinit_\\HIDManager_cpp":
 /* 801A3808 0019F648  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A380C 0019F64C  7C 08 02 A6 */	mflr r0
 /* 801A3810 0019F650  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1138,7 +1138,7 @@ resetGCControllerAll__Q23hid10HIDManagerFv:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1HIDManager_cpp"
+	.4byte "__sinit_\\HIDManager_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

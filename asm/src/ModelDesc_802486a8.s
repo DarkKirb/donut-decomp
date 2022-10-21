@@ -169,8 +169,8 @@ lbl_80248838:
 /* 802488F4 00244734  38 21 00 90 */	addi r1, r1, 0x90
 /* 802488F8 00244738  4E 80 00 20 */	blr
 
-.global "__sinit_@@1ModelDesc_cpp_802488FC"
-"__sinit_@@1ModelDesc_cpp_802488FC":
+.global "__sinit_\\ModelDesc_cpp_802488FC"
+"__sinit_\\ModelDesc_cpp_802488FC":
 /* 802488FC 0024473C  80 8D 89 E0 */	lwz r4, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 80248900 00244740  3C 60 80 46 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step4boss9creditdee23@unnamed@ModelDesc_cpp@"@ha
 /* 80248904 00244744  90 83 69 C0 */	stw r4, "T_SCRIPT_ENTRIES__Q53scn4step4boss9creditdee23@unnamed@ModelDesc_cpp@"@l(r3)

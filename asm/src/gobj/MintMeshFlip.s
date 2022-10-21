@@ -16,14 +16,14 @@ Flip__Q24gobj12MintMeshFlipFUl:
 /* 8019ADD8 00196C18  80 6D ED C0 */	lwz r3, "t_obj__Q24gobj26@unnamed@MintMeshFlip_cpp@"@sda21(r13)
 /* 8019ADDC 00196C1C  4B FF FC FC */	b flip__Q24gobj8MeshFlipFUl
 
-.global "__sinit_@@1MintMeshFlip_cpp"
-"__sinit_@@1MintMeshFlip_cpp":
+.global "__sinit_\\MintMeshFlip_cpp"
+"__sinit_\\MintMeshFlip_cpp":
 /* 8019ADE0 00196C20  38 6D ED C0 */	addi r3, r13, "t_obj__Q24gobj26@unnamed@MintMeshFlip_cpp@"@sda21
 /* 8019ADE4 00196C24  4B F4 25 FC */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_@@1MintMeshFlip_cpp"
+	.4byte "__sinit_\\MintMeshFlip_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

@@ -15,7 +15,7 @@ Obj__Q33scn11staffcredit13MintCommanderFv:
 /* 803F9B6C 003F59AC  80 6D FA 80 */	lwz r3, "t_obj__Q33scn11staffcredit27@unnamed@MintCommander_cpp@"@sda21(r13)
 /* 803F9B70 003F59B0  4E 80 00 20 */	blr
 
-.global "__sinit_@@1MintCommander_cpp"
-"__sinit_@@1MintCommander_cpp":
+.global "__sinit_\\MintCommander_cpp"
+"__sinit_\\MintCommander_cpp":
 /* 803F9B74 003F59B4  38 6D FA 80 */	addi r3, r13, "t_obj__Q33scn11staffcredit27@unnamed@MintCommander_cpp@"@sda21
 /* 803F9B78 003F59B8  4B CE 38 68 */	b __ct__Q34nw4r3g3d8LightObjFv

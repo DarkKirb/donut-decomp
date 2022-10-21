@@ -122,8 +122,8 @@ lbl_801BEE30:
 /* 801BEE40 001BAC80  38 21 00 20 */	addi r1, r1, 0x20
 /* 801BEE44 001BAC84  4E 80 00 20 */	blr
 
-.global "__sinit_@@1HeapMapUserRepos_cpp"
-"__sinit_@@1HeapMapUserRepos_cpp":
+.global "__sinit_\\HeapMapUserRepos_cpp"
+"__sinit_\\HeapMapUserRepos_cpp":
 /* 801BEE48 001BAC88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801BEE4C 001BAC8C  7C 08 02 A6 */	mflr r0
 /* 801BEE50 001BAC90  90 01 00 14 */	stw r0, 0x14(r1)

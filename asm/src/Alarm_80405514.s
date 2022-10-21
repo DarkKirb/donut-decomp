@@ -101,8 +101,8 @@ final__Q24util5AlarmFv:
 /* 80405664 004014A4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80405668 004014A8  4E 80 00 20 */	blr
 
-.global "__sinit_@@1Alarm_cpp"
-"__sinit_@@1Alarm_cpp":
+.global "__sinit_\\Alarm_cpp"
+"__sinit_\\Alarm_cpp":
 /* 8040566C 004014AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80405670 004014B0  7C 08 02 A6 */	mflr r0
 /* 80405674 004014B4  90 01 00 14 */	stw r0, 0x14(r1)

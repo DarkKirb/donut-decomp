@@ -16,7 +16,7 @@ Flip__Q24gobj12MintMeshFlipFUl:
 /* 8019ADD8 00196C18  80 6D ED C0 */	lwz r3, "t_obj__Q24gobj26@unnamed@MintMeshFlip_cpp@"@sda21(r13)
 /* 8019ADDC 00196C1C  4B FF FC FC */	b flip__Q24gobj8MeshFlipFUl
 
-.global "__sinit_@@1MintMeshFlip_cpp"
-"__sinit_@@1MintMeshFlip_cpp":
+.global "__sinit_\\MintMeshFlip_cpp"
+"__sinit_\\MintMeshFlip_cpp":
 /* 8019ADE0 00196C20  38 6D ED C0 */	addi r3, r13, "t_obj__Q24gobj26@unnamed@MintMeshFlip_cpp@"@sda21
 /* 8019ADE4 00196C24  4B F4 25 FC */	b __ct__Q34nw4r3g3d8LightObjFv

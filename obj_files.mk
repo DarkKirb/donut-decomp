@@ -810,11 +810,12 @@ $(BUILD_DIR)/asm/src/hbm/HomeButtonMenu.o \
 $(BUILD_DIR)/asm/src/hbm/Resource.o \
 $(BUILD_DIR)/asm/src/hbm/ResourceFileName.o \
 \
+$(BUILD_DIR)/asm/src/hel/common/Color.o \
+$(BUILD_DIR)/asm/src/hel/common/FixedString.o \
+$(BUILD_DIR)/asm/src/hel/common/Locale.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Color_8019d88c.o \
-$(BUILD_DIR)/asm/src/FixedString_8019d994.o \
-$(BUILD_DIR)/asm/src/Locale_8019da54.o \
 $(BUILD_DIR)/asm/src/Assert_8019de24.o \
 $(BUILD_DIR)/asm/src/Print_8019de98.o \
 $(BUILD_DIR)/asm/src/Direction3_8019df7c.o \
@@ -2941,7 +2942,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/Color_80406314.o \
 $(BUILD_DIR)/asm/src/Direction3_80406318.o \
 $(BUILD_DIR)/asm/src/Point2_8040631c.o \
 $(BUILD_DIR)/asm/src/Vector2_80406320.o \
@@ -3138,7 +3138,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Locale_804569d0.o \
 $(BUILD_DIR)/asm/src/AddOnCast_804569e0.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80456a60.o \
 $(BUILD_DIR)/asm/src/AddOnMathMath_80456e38.o \
@@ -4731,7 +4730,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Locale_80556e60.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80556e88.o \
 $(BUILD_DIR)/asm/src/RumbleResource_80556ea0.o \
 $(BUILD_DIR)/asm/src/Util_80556ea8.o \
@@ -5071,7 +5069,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Color_8055d218.o \
 $(BUILD_DIR)/asm/src/Point2_8055d240.o \
 $(BUILD_DIR)/asm/src/Vector2_8055d248.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_8055d268.o \

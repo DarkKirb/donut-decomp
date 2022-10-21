@@ -71,3 +71,45 @@ __ct__Q33hel6common5ColorFUcUcUcUc:
 /* 8019D988 001997C8  98 C3 00 02 */	stb r6, 0x2(r3)
 /* 8019D98C 001997CC  98 E3 00 03 */	stb r7, 0x3(r3)
 /* 8019D990 001997D0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Color_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global BLACK__Q33hel6common5Color
+BLACK__Q33hel6common5Color:
+	.skip 0x4
+
+.global GRAY__Q33hel6common5Color
+GRAY__Q33hel6common5Color:
+	.skip 0x4
+
+.global WHITE__Q33hel6common5Color
+WHITE__Q33hel6common5Color:
+	.skip 0x4
+
+.global RED__Q33hel6common5Color
+RED__Q33hel6common5Color:
+	.skip 0x4
+
+.global GREEN__Q33hel6common5Color
+GREEN__Q33hel6common5Color:
+	.skip 0x4
+
+.global BLUE__Q33hel6common5Color
+BLUE__Q33hel6common5Color:
+	.skip 0x4
+
+.global YELLOW__Q33hel6common5Color
+YELLOW__Q33hel6common5Color:
+	.skip 0x4
+
+.global MAGENTA__Q33hel6common5Color
+MAGENTA__Q33hel6common5Color:
+	.skip 0x4
+
+.global CYAN__Q33hel6common5Color
+CYAN__Q33hel6common5Color:
+	.skip 0x8

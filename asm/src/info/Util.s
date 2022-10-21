@@ -1435,3 +1435,363 @@ lbl_801A5B40:
 /* 801A5B4C 001A198C  7C 08 03 A6 */	mtlr r0
 /* 801A5B50 001A1990  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A5B54 001A1994  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@51998"
+"@51998":
+
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000001
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_HERO_PANE_NAMES__18@unnamed@Util_cpp@"
+"T_HERO_PANE_NAMES__18@unnamed@Util_cpp@":
+
+	.4byte "@51913"
+	.4byte "@51914"
+	.4byte "@51915"
+	.4byte "@51916"
+	.4byte "@51917_80556EC8"
+	.4byte "@51918"
+	.4byte "@51919_80556ED8"
+
+.global "@54066"
+"@54066":
+
+	.4byte 0xFF10FF11
+	.4byte 0xFF12FF13
+	.4byte 0xFF14FF15
+	.4byte 0xFF16FF17
+	.4byte 0xFF18FF19
+	.4byte 0
+
+.global "@54067"
+"@54067":
+
+	.4byte 0x53706865
+	.4byte 0x7265436F
+	.4byte 0x756E7400
+
+.global "@54078"
+"@54078":
+
+	.4byte 0x506C6179
+	.4byte 0x65724E75
+	.4byte 0x6D000000
+
+.global __vt__Q24info22Iterator$52761Util_cpp
+__vt__Q24info22Iterator$52761Util_cpp:
+
+	.4byte 0
+	.4byte 0
+	.4byte onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q24info22Iterator$52761Util_cppFPCwUlUsUs
+	.4byte onNormalChar__Q24info22Iterator$52761Util_cppFw
+
+.global __vt__Q24info22Iterator$52705Util_cpp
+__vt__Q24info22Iterator$52705Util_cpp:
+
+	.4byte 0
+	.4byte 0
+	.4byte onStartTag__Q24info22Iterator$52705Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q24info22Iterator$52705Util_cppFPCwUlUsUs
+	.4byte onNormalChar__Q24info22Iterator$52705Util_cppFw
+
+.global "@54197"
+"@54197":
+
+	.4byte 0x6261645F
+	.4byte 0x66756E63
+	.4byte 0x74696F6E
+	.4byte 0x5F63616C
+	.4byte 0x6C000000
+
+.global __vt__Q24info22Iterator$52503Util_cpp
+__vt__Q24info22Iterator$52503Util_cpp:
+
+	.4byte 0
+	.4byte 0
+	.4byte onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q33lyt7TagUtil14StringIteratorFPCwUlUsUs
+	.4byte onNormalChar__Q33lyt7TagUtil14StringIteratorFw
+
+.global "__vt__Q218@unnamed@Util_cpp@22Iterator$52007Util_cpp"
+"__vt__Q218@unnamed@Util_cpp@22Iterator$52007Util_cpp":
+
+	.4byte 0
+	.4byte 0
+	.4byte "onStartTag__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFPCwUlUsUsUsPUc"
+	.4byte "onEndTag__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFPCwUlUsUs"
+	.4byte "onNormalChar__Q218@unnamed@Util_cpp@22Iterator$52007Util_cppFw"
+
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@2"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@2":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A73
+	.4byte 0x7472283D
+	.4byte 0x25702920
+	.4byte 0x6973206E
+	.4byte 0x6F742076
+	.4byte 0x616C6964
+	.4byte 0x20706F69
+	.4byte 0x6E746572
+	.4byte 0x2E000000
+
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@1"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@1":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@0"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A74
+	.4byte 0x68697328
+	.4byte 0x3D257029
+	.4byte 0x20697320
+	.4byte 0x6E6F7420
+	.4byte 0x76616C69
+	.4byte 0x6420706F
+	.4byte 0x696E7465
+	.4byte 0x722E0000
+
+.global "@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw"
+"@STRING@CalcStringWidth__Q34nw4r2ut17TextWriterBase<w>CFPCw":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@2"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@2":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A74
+	.4byte 0x61675072
+	.4byte 0x6F636573
+	.4byte 0x736F7228
+	.4byte 0x3D257029
+	.4byte 0x20697320
+	.4byte 0x6E6F7420
+	.4byte 0x76616C69
+	.4byte 0x6420706F
+	.4byte 0x696E7465
+	.4byte 0x722E0000
+
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@1"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@1":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@0"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A74
+	.4byte 0x68697328
+	.4byte 0x3D257029
+	.4byte 0x20697320
+	.4byte 0x6E6F7420
+	.4byte 0x76616C69
+	.4byte 0x6420706F
+	.4byte 0x696E7465
+	.4byte 0x722E0000
+
+.global "@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>"
+"@STRING@SetTagProcessor__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut19TagProcessorBase<w>":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+
+.global "@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0"
+"@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A74
+	.4byte 0x68697328
+	.4byte 0x3D257029
+	.4byte 0x20697320
+	.4byte 0x6E6F7420
+	.4byte 0x76616C69
+	.4byte 0x6420706F
+	.4byte 0x696E7465
+	.4byte 0x722E0000
+
+.global "@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff"
+"@STRING@SetCharSpace__Q34nw4r2ut17TextWriterBase<w>Ff":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+
+.global "@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0"
+"@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x20457272
+	.4byte 0x6F720A74
+	.4byte 0x68697328
+	.4byte 0x3D257029
+	.4byte 0x20697320
+	.4byte 0x6E6F7420
+	.4byte 0x76616C69
+	.4byte 0x6420706F
+	.4byte 0x696E7465
+	.4byte 0x722E0000
+
+.global "@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff"
+"@STRING@SetLineSpace__Q34nw4r2ut17TextWriterBase<w>Ff":
+
+	.4byte 0x54657874
+	.4byte 0x57726974
+	.4byte 0x65724261
+	.4byte 0x73652E68
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51913"
+"@51913":
+
+	.4byte 0x4B697262
+	.4byte 0x794E0000
+
+.global "@51914"
+"@51914":
+
+	.4byte 0x4B697262
+	.4byte 0x79594E00
+
+.global "@51915"
+"@51915":
+
+	.4byte 0x4B697262
+	.4byte 0x79524E00
+
+.global "@51916"
+"@51916":
+
+	.4byte 0x4B697262
+	.4byte 0x79474E00
+
+.global "@51917_80556EC8"
+"@51917_80556EC8":
+
+	.4byte 0x4D657461
+	.4byte 0x4E000000
+
+.global "@51918"
+"@51918":
+
+	.4byte 0x44656465
+	.4byte 0x64654E00
+
+.global "@51919_80556ED8"
+"@51919_80556ED8":
+
+	.4byte 0x5761646F
+	.4byte 0x4E000000
+
+.global "@54065"
+"@54065":
+
+	.4byte 0x00250075
+	.4byte 0
+
+.global "@54094_80556EE8"
+"@54094_80556EE8":
+
+	.4byte 0x46696C65
+	.4byte 0x4E756D00
+
+.global "@54215"
+"@54215":
+
+	.4byte 0x5265706C
+	.4byte 0x61636500
+
+.global "@STRING@onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc@0"
+"@STRING@onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc@0":
+
+	.4byte 0x53757370
+	.4byte 0x656E6400
+
+.global "@STRING@onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc"
+"@STRING@onStartTag__Q24info22Iterator$52761Util_cppFPCwUlUsUsUsPUc":
+
+	.4byte 0x41637469
+	.4byte 0x6F6E0000
+
+.global "@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@2"
+"@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@2":
+
+	.4byte 0
+	.4byte 0
+
+.global "@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@1"
+"@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@1":
+
+	.4byte 0x53757370
+	.4byte 0x656E6400
+
+.global "@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@0"
+"@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc@0":
+
+	.4byte 0x53757370
+	.4byte 0x656E6400
+
+.global "@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc"
+"@STRING@onStartTag__Q24info22Iterator$52503Util_cppFPCwUlUsUsUsPUc":
+
+	.4byte 0x41637469
+	.4byte 0x6F6E0000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53983"
+"@53983":
+
+	.4byte 0
+	.4byte 0

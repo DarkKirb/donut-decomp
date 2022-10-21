@@ -847,11 +847,12 @@ $(BUILD_DIR)/asm/src/hid/RumbleRequestor.o \
 $(BUILD_DIR)/asm/src/hid/RumbleResource.o \
 $(BUILD_DIR)/asm/src/hid/SimpleGCHID.o \
 $(BUILD_DIR)/asm/src/hid/SimpleWRHID.o \
+$(BUILD_DIR)/asm/src/hid/Stick.o \
+\
+$(BUILD_DIR)/asm/src/info/Util.o \
 \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Stick_801a4778.o \
-$(BUILD_DIR)/asm/src/Util_801a4810.o \
 $(BUILD_DIR)/asm/src/Sequence_801a5b58.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_801a701c.o \
 $(BUILD_DIR)/asm/src/Button_801a7db0.o \
@@ -3011,7 +3012,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Util_80414b40.o \
 $(BUILD_DIR)/asm/src/Button_80414b60.o \
 $(BUILD_DIR)/asm/src/UserTagProcessor_80414b70.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80414c30.o \
@@ -3138,7 +3138,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Util_80456f80.o \
 $(BUILD_DIR)/asm/src/Sequence_804571e8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_804572a8.o \
 $(BUILD_DIR)/asm/src/Button_80457340.o \
@@ -4721,7 +4720,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Util_80556ea8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_80556f28.o \
 $(BUILD_DIR)/asm/src/Button_80556f98.o \
 $(BUILD_DIR)/asm/src/ButtonHelp_80556fd8.o \
@@ -5167,8 +5165,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Stick_8055f930.o \
-$(BUILD_DIR)/asm/src/Util_8055f938.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_8055f940.o \
 $(BUILD_DIR)/asm/src/Button_8055f948.o \
 $(BUILD_DIR)/asm/src/Confirm_8055f950.o \

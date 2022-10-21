@@ -91,3 +91,11 @@ toActorDetectOption__Q35mcoll6detail9DetectArgCFv:
 /* 801B72C0 001B3100  7C 08 03 A6 */	mtlr r0
 /* 801B72C4 001B3104  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B72C8 001B3108  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49806"
+"@49806":
+
+	.4byte 0
+	.4byte 0

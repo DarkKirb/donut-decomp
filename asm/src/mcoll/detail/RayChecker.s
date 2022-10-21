@@ -557,3 +557,21 @@ lbl_801BCCCC:
 /* 801BCCD8 001B8B18  94 06 00 08 */	stwu r0, 0x8(r6)
 /* 801BCCDC 001B8B1C  42 00 FF F0 */	bdnz lbl_801BCCCC
 /* 801BCCE0 001B8B20  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51870_8055FBA0"
+"@51870_8055FBA0":
+
+	.4byte 0
+
+.global "@51871_8055FBA4"
+"@51871_8055FBA4":
+
+	.4byte 0xFF7FFFFF
+
+.global "@51872_8055FBA8"
+"@51872_8055FBA8":
+
+	.4byte 0x7F7FFFFF
+	.4byte 0

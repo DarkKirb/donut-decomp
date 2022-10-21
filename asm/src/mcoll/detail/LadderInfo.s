@@ -30,3 +30,11 @@ __ct__Q35mcoll6detail10LadderInfoFRCQ33hel4math7Vector2:
 leftBottomPos__Q35mcoll6detail10LadderInfoCFv:
 /* 801B78F0 001B3730  38 84 00 04 */	addi r4, r4, 0x4
 /* 801B78F4 001B3734  4B F9 40 74 */	b __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49664"
+"@49664":
+
+	.4byte 0
+	.4byte 0

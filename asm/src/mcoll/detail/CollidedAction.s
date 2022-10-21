@@ -28,3 +28,15 @@ __ct__Q35mcoll6detail14CollidedActionFv:
 /* 801B66E0 001B2520  C0 02 9A B8 */	lfs f0, "@48848_8055FA38"@sda21(r2)
 /* 801B66E4 001B2524  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 801B66E8 001B2528  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48848_8055FA38"
+"@48848_8055FA38":
+
+	.4byte 0
+
+.global "@48852_8055FA3C"
+"@48852_8055FA3C":
+
+	.4byte 0x3F800000

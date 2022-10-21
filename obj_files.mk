@@ -883,37 +883,38 @@ $(BUILD_DIR)/asm/src/lyt/Utility.o \
 $(BUILD_DIR)/asm/src/mcoll/Actor.o \
 $(BUILD_DIR)/asm/src/mcoll/LandManager.o \
 \
+$(BUILD_DIR)/asm/src/mcoll/detail/ActorDetectOption.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/ActorDiamond.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/ActorDiamondContext.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/ActorInfo.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollidedAction.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollidedDetectionInfo.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollidedInfo.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollidedLog.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollideTarget.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollideTargetRepos.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/CollideTargetReposSet.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/DetectArg.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/DetectResult.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/DetectResultContext.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/FixedGridManager.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LadderInfo.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandAttribute.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandGatherOption.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandGrid.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandLayer.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandProperty.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/LandSet.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/MoveGrid.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/MoveGridGroup.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/MoveGridGroupId.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/MoveGridManager.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/RayChecker.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/ShapeDiamondContext.o \
+$(BUILD_DIR)/asm/src/mcoll/detail/StdResponder.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/ActorDetectOption_801b27e8.o \
-$(BUILD_DIR)/asm/src/ActorDiamond_801b287c.o \
-$(BUILD_DIR)/asm/src/ActorDiamondContext_801b6530.o \
-$(BUILD_DIR)/asm/src/ActorInfo_801b65a8.o \
-$(BUILD_DIR)/asm/src/CollidedAction_801b6698.o \
-$(BUILD_DIR)/asm/src/CollidedDetectionInfo_801b66ec.o \
-$(BUILD_DIR)/asm/src/CollidedInfo_801b68c8.o \
-$(BUILD_DIR)/asm/src/CollidedLog_801b6b0c.o \
-$(BUILD_DIR)/asm/src/CollideTarget_801b6c84.o \
-$(BUILD_DIR)/asm/src/CollideTargetRepos_801b6d10.o \
-$(BUILD_DIR)/asm/src/CollideTargetReposSet_801b6dfc.o \
-$(BUILD_DIR)/asm/src/DetectArg_801b71c4.o \
-$(BUILD_DIR)/asm/src/DetectResult_801b72cc.o \
-$(BUILD_DIR)/asm/src/DetectResultContext_801b7558.o \
-$(BUILD_DIR)/asm/src/FixedGridManager_801b75c4.o \
-$(BUILD_DIR)/asm/src/LadderInfo_801b789c.o \
-$(BUILD_DIR)/asm/src/LandAttribute_801b78f8.o \
-$(BUILD_DIR)/asm/src/LandGatherOption_801b7904.o \
-$(BUILD_DIR)/asm/src/LandGrid_801b7934.o \
-$(BUILD_DIR)/asm/src/LandLayer_801b80d4.o \
-$(BUILD_DIR)/asm/src/LandProperty_801b9ad0.o \
-$(BUILD_DIR)/asm/src/LandSet_801b9ae0.o \
-$(BUILD_DIR)/asm/src/MoveGrid_801b9b6c.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_801b9d78.o \
-$(BUILD_DIR)/asm/src/MoveGridGroupId_801bba6c.o \
-$(BUILD_DIR)/asm/src/MoveGridManager_801bba84.o \
-$(BUILD_DIR)/asm/src/RayChecker_801bc514.o \
-$(BUILD_DIR)/asm/src/ShapeDiamondContext_801bcce4.o \
-$(BUILD_DIR)/asm/src/StdResponder_801bcf04.o \
 $(BUILD_DIR)/asm/src/AutoHeapExp_801bd204.o \
 $(BUILD_DIR)/asm/src/DataBlock_801bd2a4.o \
 $(BUILD_DIR)/asm/src/GlobalNewDeleteChanger_801bd370.o \
@@ -2955,8 +2956,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/LandLayer_8040632c.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_80406330.o \
 $(BUILD_DIR)/asm/src/HeapMapUserRepos_80406334.o \
 $(BUILD_DIR)/asm/src/OperatorNewDelete_80406338.o \
 $(BUILD_DIR)/asm/src/DvdControl_8040633c.o \
@@ -3018,8 +3017,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ActorDiamond_80414c30.o \
-$(BUILD_DIR)/asm/src/MoveGridManager_80414c48.o \
 $(BUILD_DIR)/asm/src/NandThread_80414dd0.o \
 $(BUILD_DIR)/asm/src/Gimmick_80414e88.o \
 $(BUILD_DIR)/asm/src/Constant_80415068.o \
@@ -3142,11 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/ActorDiamond_80458078.o \
-$(BUILD_DIR)/asm/src/LandLayer_80458098.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_80458e68.o \
-$(BUILD_DIR)/asm/src/MoveGridManager_80459c38.o \
-$(BUILD_DIR)/asm/src/StdResponder_80459c98.o \
 $(BUILD_DIR)/asm/src/HeapCompaction_80459cb0.o \
 $(BUILD_DIR)/asm/src/HeapExp_80459d10.o \
 $(BUILD_DIR)/asm/src/HeapUnit_80459d48.o \
@@ -4707,8 +4699,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ActorDiamond_80557200.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_80557260.o \
 $(BUILD_DIR)/asm/src/HeapCompaction_80557268.o \
 $(BUILD_DIR)/asm/src/HeapExpArray_80557270.o \
 $(BUILD_DIR)/asm/src/Memory_80557280.o \
@@ -5031,8 +5021,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/ActorDiamond_8055d288.o \
-$(BUILD_DIR)/asm/src/MoveGrid_8055d290.o \
 $(BUILD_DIR)/asm/src/Memory_8055d2a0.o \
 $(BUILD_DIR)/asm/src/OperatorNewDelete_8055d2a8.o \
 $(BUILD_DIR)/asm/src/Heap_8055d2b0.o \
@@ -5140,18 +5128,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/ActorDiamond_8055f9f0.o \
-$(BUILD_DIR)/asm/src/CollidedAction_8055fa38.o \
-$(BUILD_DIR)/asm/src/CollidedInfo_8055fa40.o \
-$(BUILD_DIR)/asm/src/DetectArg_8055fa48.o \
-$(BUILD_DIR)/asm/src/DetectResultContext_8055fa50.o \
-$(BUILD_DIR)/asm/src/FixedGridManager_8055fa58.o \
-$(BUILD_DIR)/asm/src/LadderInfo_8055fa60.o \
-$(BUILD_DIR)/asm/src/LandLayer_8055fa68.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_8055faf8.o \
-$(BUILD_DIR)/asm/src/MoveGridManager_8055fb90.o \
-$(BUILD_DIR)/asm/src/RayChecker_8055fba0.o \
-$(BUILD_DIR)/asm/src/ShapeDiamondContext_8055fbb0.o \
 $(BUILD_DIR)/asm/src/SDKAllocator_8055fbb8.o \
 $(BUILD_DIR)/asm/src/UnitHeapMapUser_8055fbc0.o \
 $(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_8055fbc8.o \
@@ -6089,7 +6065,5 @@ $(BUILD_DIR)/asm/src/FrameCounter_80564398.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_805643a8.o
 # .sbss2
 O_FILES += \
-$(BUILD_DIR)/asm/src/LandLayer_805643e0.o \
-$(BUILD_DIR)/asm/src/MoveGridGroup_805643e8.o \
 $(BUILD_DIR)/asm/src/VariationNpc_805643f0.o \
 $(BUILD_DIR)/asm/src/Utility_805643f8.o \

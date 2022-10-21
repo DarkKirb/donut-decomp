@@ -155,3 +155,11 @@ getToLeftDist__Q35mcoll6detail19ShapeDiamondContextCFv:
 getToBottomDist__Q35mcoll6detail19ShapeDiamondContextCFv:
 /* 801BCEFC 001B8D3C  C0 23 00 14 */	lfs f1, 0x14(r3)
 /* 801BCF00 001B8D40  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49753"
+"@49753":
+
+	.4byte 0
+	.4byte 0

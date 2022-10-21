@@ -32,3 +32,11 @@ lbl_801B7594:
 /* 801B75B8 001B33F8  7C 08 03 A6 */	mtlr r0
 /* 801B75BC 001B33FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B75C0 001B3400  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50294_8055FA50"
+"@50294_8055FA50":
+
+	.4byte 0
+	.4byte 0

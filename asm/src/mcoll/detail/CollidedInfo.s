@@ -164,3 +164,11 @@ groupId__Q35mcoll6detail12CollidedInfoCFv:
 landVelocity__Q35mcoll6detail12CollidedInfoCFv:
 /* 801B6B04 001B2944  38 84 00 48 */	addi r4, r4, 0x48
 /* 801B6B08 001B2948  4B F9 4E 60 */	b __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50421_8055FA40"
+"@50421_8055FA40":
+
+	.4byte 0
+	.4byte 0

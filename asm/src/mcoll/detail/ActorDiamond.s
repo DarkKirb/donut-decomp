@@ -4401,3 +4401,241 @@ isSpine__Q35mcoll6detail12LandGridDataCFv:
 /* 801B6524 001B2364  30 03 FF FF */	addic r0, r3, -0x1
 /* 801B6528 001B2368  7C 60 19 10 */	subfe r3, r0, r3
 /* 801B652C 001B236C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_BELTCONVEYOR_SPEED__Q35mcoll6detail26@unnamed@ActorDiamond_cpp@"
+"T_BELTCONVEYOR_SPEED__Q35mcoll6detail26@unnamed@ActorDiamond_cpp@":
+
+	.4byte 0
+	.4byte 0x3D0F5C29
+	.4byte 0x3D4CCCCD
+	.4byte 0x3D8F5C29
+	.4byte 0x3E800000
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q35mcoll6detail12ActorDiamond
+__vt__Q35mcoll6detail12ActorDiamond:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q35mcoll6detail12ActorDiamondFv
+	.4byte actorCurrentPos__Q35mcoll6detail12ActorDiamondCFv
+	.4byte actorSetCurrentPos__Q35mcoll6detail12ActorDiamondFRCQ33hel4math7Vector2
+	.4byte actorDetect__Q35mcoll6detail12ActorDiamondFRCQ35mcoll6detail7LandSetRQ35mcoll6detail10IResponderRCQ33hel4math7Vector2RCQ35mcoll6detail17ActorDetectOption
+	.4byte actorDrawDebug__Q35mcoll6detail12ActorDiamondCFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53991_80557200"
+"@53991_80557200":
+
+	.4byte 0x00000002
+
+.global "@53994_80557204"
+"@53994_80557204":
+
+	.4byte 0x00000003
+
+.global "@53995_80557208"
+"@53995_80557208":
+
+	.4byte 0x00000001
+
+.global "@53997_8055720C"
+"@53997_8055720C":
+
+	.4byte 0x00000001
+
+.global "@53998_80557210"
+"@53998_80557210":
+
+	.4byte 0x00000003
+
+.global "@53999_80557214"
+"@53999_80557214":
+
+	.4byte 0
+
+.global "@54001_80557218"
+"@54001_80557218":
+
+	.4byte 0x00000001
+
+.global "@54004_8055721C"
+"@54004_8055721C":
+
+	.4byte 0
+
+.global "@54005_80557220"
+"@54005_80557220":
+
+	.4byte 0x00000002
+
+.global "@54007"
+"@54007":
+
+	.4byte 0x00000002
+
+.global "@54008"
+"@54008":
+
+	.4byte 0
+
+.global "@54009"
+"@54009":
+
+	.4byte 0x00000003
+
+.global "@54013_80557230"
+"@54013_80557230":
+
+	.4byte 0x00000003
+
+.global "@54016"
+"@54016":
+
+	.4byte 0x00000002
+
+.global "@54017"
+"@54017":
+
+	.4byte 0
+
+.global "@54019"
+"@54019":
+
+	.4byte 0
+
+.global "@54020"
+"@54020":
+
+	.4byte 0x00000002
+
+.global "@54021_80557244"
+"@54021_80557244":
+
+	.4byte 0x00000001
+
+.global "@54023"
+"@54023":
+
+	.4byte 0
+
+.global "@54026_8055724C"
+"@54026_8055724C":
+
+	.4byte 0x00000001
+
+.global "@54027_80557250"
+"@54027_80557250":
+
+	.4byte 0x00000003
+
+.global "@54029_80557254"
+"@54029_80557254":
+
+	.4byte 0x00000003
+
+.global "@54030_80557258"
+"@54030_80557258":
+
+	.4byte 0x00000001
+
+.global "@54031_8055725C"
+"@54031_8055725C":
+
+	.4byte 0x00000002
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "object___Q33hel6common57ExplicitSingleton<Q35mcoll6detail21CollideTargetReposSet>"
+"object___Q33hel6common57ExplicitSingleton<Q35mcoll6detail21CollideTargetReposSet>":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@59613_8055F9F0"
+"@59613_8055F9F0":
+
+	.4byte 0
+
+.global "@59746"
+"@59746":
+
+	.4byte 0x358637BD
+
+.global "@LOCAL@exec__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@distMin"
+"@LOCAL@exec__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@distMin":
+
+	.4byte 0
+
+.global "@LOCAL@collide__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@STATIC_ARGS"
+"@LOCAL@collide__Q45mcoll6detail26@unnamed@ActorDiamond_cpp@4WorkFv@STATIC_ARGS":
+
+	.4byte 0x00000101
+
+.global "@59758"
+"@59758":
+
+	.4byte 0x3F800000
+
+.global "@54672_8055FA04"
+"@54672_8055FA04":
+
+	.4byte 0xFF8040FF
+
+.global "@54674_8055FA08"
+"@54674_8055FA08":
+
+	.4byte 0xFFFF80FF
+
+.global "@59916"
+"@59916":
+
+	.4byte 0x3DCCCCCD
+
+.global "@59917"
+"@59917":
+
+	.4byte 0xBF800000
+
+.global "@59918"
+"@59918":
+
+	.4byte 0x3727C5AC
+
+.global "@59919_8055FA18"
+"@59919_8055FA18":
+
+	.4byte 0x3F000000
+
+.global "@60302_8055FA1C"
+"@60302_8055FA1C":
+
+	.4byte 0xBF35C28F
+
+.global "@60305_8055FA20"
+"@60305_8055FA20":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@60531"
+"@60531":
+
+	.4byte 0xB727C5AC
+
+.global "@60603"
+"@60603":
+
+	.4byte 0x3F8CCCCD
+
+.global "@60610_8055FA30"
+"@60610_8055FA30":
+
+	.4byte 0x43300000
+	.4byte 0

@@ -160,3 +160,13 @@ attribute__Q35mcoll6detail8MoveGridCFv:
 shapeKind__Q35mcoll6detail8MoveGridCFv:
 /* 801B9D70 001B5BB0  38 63 00 01 */	addi r3, r3, 0x1
 /* 801B9D74 001B5BB4  4B FC 79 70 */	b animPlayType__Q36effect6detail10GenContextCFv
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@Default__Q35mcoll6detail8MoveGridFv@defaultObj"
+"@GUARD@Default__Q35mcoll6detail8MoveGridFv@defaultObj":
+	.skip 0x8
+
+.global "@LOCAL@Default__Q35mcoll6detail8MoveGridFv@defaultObj"
+"@LOCAL@Default__Q35mcoll6detail8MoveGridFv@defaultObj":
+	.skip 0x8

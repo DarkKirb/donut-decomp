@@ -1102,3 +1102,45 @@ allocatorFree__Q33mem14HeapCompaction22AllocFromTailAllocatorFPv:
 "@4@__dt__Q23mem14HeapCompactionFv":
 /* 801BE1F0 001BA030  38 63 FF FC */	addi r3, r3, -0x4
 /* 801BE1F4 001BA034  4B FF F5 2C */	b __dt__Q23mem14HeapCompactionFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23mem14HeapCompaction
+__vt__Q23mem14HeapCompaction:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q23mem14HeapCompactionFv
+	.4byte heapName__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte fragmentBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedBlockCount__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte totalHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte usedHeapSize__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte startAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte endAddress__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMap
+	.4byte drawUsedBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte drawFragmentBlocks__Q23mem14HeapCompactionCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nrel6devkit7heapmap18HeapMapBlockDrawer
+	.4byte 0
+	.4byte 0
+	.4byte "@4@__dt__Q23mem14HeapCompactionFv"
+	.4byte "@4@allocatorAlloc__Q23mem14HeapCompactionFUll"
+	.4byte "@4@allocatorFree__Q23mem14HeapCompactionFPv"
+	.4byte allocatorAlloc__Q23mem14HeapCompactionFUll
+	.4byte allocatorFree__Q23mem14HeapCompactionFPv
+
+.global __vt__Q33mem14HeapCompaction22AllocFromTailAllocator
+__vt__Q33mem14HeapCompaction22AllocFromTailAllocator:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q33mem14HeapCompaction22AllocFromTailAllocatorFv
+	.4byte allocatorAlloc__Q33mem14HeapCompaction22AllocFromTailAllocatorFUll
+	.4byte allocatorFree__Q33mem14HeapCompaction22AllocFromTailAllocatorFPv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49358"
+"@49358":
+
+	.4byte 0x00000020
+	.4byte 0

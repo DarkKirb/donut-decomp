@@ -913,25 +913,26 @@ $(BUILD_DIR)/asm/src/mcoll/detail/RayChecker.o \
 $(BUILD_DIR)/asm/src/mcoll/detail/ShapeDiamondContext.o \
 $(BUILD_DIR)/asm/src/mcoll/detail/StdResponder.o \
 \
+$(BUILD_DIR)/asm/src/mem/AutoHeapExp.o \
+$(BUILD_DIR)/asm/src/mem/DataBlock.o \
+$(BUILD_DIR)/asm/src/mem/GlobalNewDeleteChanger.o \
+$(BUILD_DIR)/asm/src/mem/HeapCompaction.o \
+$(BUILD_DIR)/asm/src/mem/HeapCompactionNode.o \
+$(BUILD_DIR)/asm/src/mem/HeapCompactionNodeHandle.o \
+$(BUILD_DIR)/asm/src/mem/HeapExp.o \
+$(BUILD_DIR)/asm/src/mem/HeapExpArray.o \
+$(BUILD_DIR)/asm/src/mem/HeapExpArrayUser.o \
+$(BUILD_DIR)/asm/src/mem/HeapMapUserRepos.o \
+$(BUILD_DIR)/asm/src/mem/HeapUnit.o \
+$(BUILD_DIR)/asm/src/mem/MemBlock.o \
+$(BUILD_DIR)/asm/src/mem/Memory.o \
+$(BUILD_DIR)/asm/src/mem/OperatorNewDelete.o \
+$(BUILD_DIR)/asm/src/mem/SDKAllocator.o \
+$(BUILD_DIR)/asm/src/mem/UnitHeapMapUser.o \
+$(BUILD_DIR)/asm/src/mem/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AutoHeapExp_801bd204.o \
-$(BUILD_DIR)/asm/src/DataBlock_801bd2a4.o \
-$(BUILD_DIR)/asm/src/GlobalNewDeleteChanger_801bd370.o \
-$(BUILD_DIR)/asm/src/HeapCompaction_801bd404.o \
-$(BUILD_DIR)/asm/src/HeapCompactionNode_801be1f8.o \
-$(BUILD_DIR)/asm/src/HeapCompactionNodeHandle_801be2a8.o \
-$(BUILD_DIR)/asm/src/HeapExp_801be2b0.o \
-$(BUILD_DIR)/asm/src/HeapExpArray_801be640.o \
-$(BUILD_DIR)/asm/src/HeapExpArrayUser_801bec24.o \
-$(BUILD_DIR)/asm/src/HeapMapUserRepos_801becc0.o \
-$(BUILD_DIR)/asm/src/HeapUnit_801beeb8.o \
-$(BUILD_DIR)/asm/src/MemBlock_801bf1b4.o \
-$(BUILD_DIR)/asm/src/Memory_801bf1f8.o \
-$(BUILD_DIR)/asm/src/OperatorNewDelete_801bf618.o \
-$(BUILD_DIR)/asm/src/SDKAllocator_801bf760.o \
-$(BUILD_DIR)/asm/src/UnitHeapMapUser_801bf7ac.o \
-$(BUILD_DIR)/asm/src/Utility_801bfa30.o \
 $(BUILD_DIR)/asm/src/Engine_801bfad4.o \
 $(BUILD_DIR)/asm/src/Heap_801bfcec.o \
 $(BUILD_DIR)/asm/src/Manager_801c05fc.o \
@@ -2956,8 +2957,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/HeapMapUserRepos_80406334.o \
-$(BUILD_DIR)/asm/src/OperatorNewDelete_80406338.o \
 $(BUILD_DIR)/asm/src/DvdControl_8040633c.o \
 $(BUILD_DIR)/asm/src/MovieKindUtil_80406340.o \
 $(BUILD_DIR)/asm/src/Manager_80406344.o \
@@ -3139,11 +3138,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/HeapCompaction_80459cb0.o \
-$(BUILD_DIR)/asm/src/HeapExp_80459d10.o \
-$(BUILD_DIR)/asm/src/HeapUnit_80459d48.o \
-$(BUILD_DIR)/asm/src/Memory_80459d70.o \
-$(BUILD_DIR)/asm/src/UnitHeapMapUser_80459d80.o \
 $(BUILD_DIR)/asm/src/Heap_80459db0.o \
 $(BUILD_DIR)/asm/src/Manager_80459dc0.o \
 $(BUILD_DIR)/asm/src/Runner_80459de0.o \
@@ -4655,8 +4649,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/HeapMapUserRepos_805453e8.o \
-$(BUILD_DIR)/asm/src/Memory_80545bf8.o \
 $(BUILD_DIR)/asm/src/Trophy_80545ed0.o \
 $(BUILD_DIR)/asm/src/Table_80545ee0.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_80545f20.o \
@@ -4699,9 +4691,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/HeapCompaction_80557268.o \
-$(BUILD_DIR)/asm/src/HeapExpArray_80557270.o \
-$(BUILD_DIR)/asm/src/Memory_80557280.o \
 $(BUILD_DIR)/asm/src/Engine_805572b8.o \
 $(BUILD_DIR)/asm/src/Heap_805572c8.o \
 $(BUILD_DIR)/asm/src/ScriptArchive_805572d8.o \
@@ -5021,8 +5010,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Memory_8055d2a0.o \
-$(BUILD_DIR)/asm/src/OperatorNewDelete_8055d2a8.o \
 $(BUILD_DIR)/asm/src/Heap_8055d2b0.o \
 $(BUILD_DIR)/asm/src/Manager_8055d2b8.o \
 $(BUILD_DIR)/asm/src/Runner_8055d2c0.o \
@@ -5128,8 +5115,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/SDKAllocator_8055fbb8.o \
-$(BUILD_DIR)/asm/src/UnitHeapMapUser_8055fbc0.o \
 $(BUILD_DIR)/asm/src/Scn__ChallengeTitle__Chara_8055fbc8.o \
 $(BUILD_DIR)/asm/src/Scn__GrandTitle__Chara_8055fbd0.o \
 $(BUILD_DIR)/asm/src/N_Mint_Cast_8055fbd8.o \

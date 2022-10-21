@@ -466,3 +466,17 @@ clearIfUsing__Q33mem12HeapExpArray5BlockFv:
 /* 801BEC18 001BAA58  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 801BEC1C 001BAA5C  4B FF FF E4 */	b unref__Q33mem12HeapExpArray5BlockFRQ23mem10IAllocator
 /* 801BEC20 001BAA60  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49831"
+"@49831":
+
+	.4byte 0x25730000
+	.4byte 0
+
+.global "@49832"
+"@49832":
+
+	.4byte 0x25732530
+	.4byte 0x326C7500

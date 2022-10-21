@@ -289,3 +289,73 @@ debugHeap__Q23mem6MemoryFv:
 seqHeap__Q23mem6MemoryFv:
 /* 801BF610 001BB450  38 63 02 78 */	addi r3, r3, 0x278
 /* 801BF614 001BB454  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49237_80459D70"
+"@49237_80459D70":
+
+	.4byte 0x45787465
+	.4byte 0x726E616C
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@48941_80545BF8"
+"@48941_80545BF8":
+	.skip 0xC
+
+.global "@LOCAL@SetupIfNotSetup__Q23mem6MemoryFv@obj"
+"@LOCAL@SetupIfNotSetup__Q23mem6MemoryFv@obj":
+	.skip 0x2CC
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49232_80557280"
+"@49232_80557280":
+
+	.4byte 0x4172656E
+	.4byte 0x614D3100
+
+.global "@49233_80557288"
+"@49233_80557288":
+
+	.4byte 0x4172656E
+	.4byte 0x614D3200
+
+.global "@49234_80557290"
+"@49234_80557290":
+
+	.4byte 0x4D656D31
+	.4byte 0x46697800
+
+.global "@49235_80557298"
+"@49235_80557298":
+
+	.4byte 0x5363656E
+	.4byte 0x65000000
+
+.global "@49236_805572A0"
+"@49236_805572A0":
+
+	.4byte 0x4D656D32
+	.4byte 0x46697800
+
+.global "@49238_805572A8"
+"@49238_805572A8":
+
+	.4byte 0x44656275
+	.4byte 0x67000000
+
+.global "@49239_805572B0"
+"@49239_805572B0":
+
+	.4byte 0x53657100
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@SetupIfNotSetup__Q23mem6MemoryFv@obj"
+"@GUARD@SetupIfNotSetup__Q23mem6MemoryFv@obj":
+	.skip 0x8

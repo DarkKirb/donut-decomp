@@ -158,3 +158,17 @@ lbl_801BEEA4:
 .global "__dt__Q33hel6common55MutableArray<PQ44nrel6devkit7heapmap12IHeapMapUser,512>Fv"
 "__dt__Q33hel6common55MutableArray<PQ44nrel6devkit7heapmap12IHeapMapUser,512>Fv":
 /* 801BEEB4 001BACF4  4B FB 6C B4 */	b __dt__Q23scn6ISceneFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_\\HeapMapUserRepos_cpp"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@48741_805453E8"
+"@48741_805453E8":
+	.skip 0xC
+
+.global "t_repos__Q23mem30@unnamed@HeapMapUserRepos_cpp@"
+"t_repos__Q23mem30@unnamed@HeapMapUserRepos_cpp@":
+	.skip 0x804

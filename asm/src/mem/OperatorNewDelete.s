@@ -114,3 +114,17 @@ UnsetGlobalNewDeleteAllocator__Q23mem17OperatorNewDeleteFRQ23mem10IAllocator:
 /* 801BF754 001BB594  7C 08 03 A6 */	mtlr r0
 /* 801BF758 001BB598  38 21 00 10 */	addi r1, r1, 0x10
 /* 801BF75C 001BB59C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_\\OperatorNewDelete_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_allocator__31@unnamed@OperatorNewDelete_cpp@"
+"t_allocator__31@unnamed@OperatorNewDelete_cpp@":
+	.skip 0x4
+
+.global "t_globalNewDeleteAllocator__31@unnamed@OperatorNewDelete_cpp@"
+"t_globalNewDeleteAllocator__31@unnamed@OperatorNewDelete_cpp@":
+	.skip 0x4

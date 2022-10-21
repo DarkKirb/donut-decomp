@@ -880,10 +880,11 @@ $(BUILD_DIR)/asm/src/lyt/TagUtil.o \
 $(BUILD_DIR)/asm/src/lyt/UserTagProcessor.o \
 $(BUILD_DIR)/asm/src/lyt/Utility.o \
 \
+$(BUILD_DIR)/asm/src/mcoll/Actor.o \
+$(BUILD_DIR)/asm/src/mcoll/LandManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Actor_801b13b0.o \
-$(BUILD_DIR)/asm/src/LandManager_801b16d8.o \
 $(BUILD_DIR)/asm/src/ActorDetectOption_801b27e8.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_801b287c.o \
 $(BUILD_DIR)/asm/src/ActorDiamondContext_801b6530.o \
@@ -5139,7 +5140,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/LandManager_8055f9e0.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_8055f9f0.o \
 $(BUILD_DIR)/asm/src/CollidedAction_8055fa38.o \
 $(BUILD_DIR)/asm/src/CollidedInfo_8055fa40.o \

@@ -1257,3 +1257,17 @@ lbl_801B27D0:
 /* 801B27DC 001AE61C  7C 08 03 A6 */	mtlr r0
 /* 801B27E0 001AE620  38 21 00 40 */	addi r1, r1, 0x40
 /* 801B27E4 001AE624  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53368_8055F9E0"
+"@53368_8055F9E0":
+
+	.4byte 0
+	.4byte 0
+
+.global "@53373_8055F9E8"
+"@53373_8055F9E8":
+
+	.4byte 0x43300000
+	.4byte 0

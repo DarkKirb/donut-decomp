@@ -804,12 +804,14 @@ $(BUILD_DIR)/asm/src/gobj/Script.o \
 $(BUILD_DIR)/asm/src/gobj/Target.o \
 $(BUILD_DIR)/asm/src/gobj/TargetDesc.o \
 \
+$(BUILD_DIR)/asm/src/hbm/DisableIcon.o \
+$(BUILD_DIR)/asm/src/hbm/DisableIconResource.o \
+$(BUILD_DIR)/asm/src/hbm/HomeButtonMenu.o \
+$(BUILD_DIR)/asm/src/hbm/Resource.o \
+$(BUILD_DIR)/asm/src/hbm/ResourceFileName.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/DisableIcon_8019c158.o \
-$(BUILD_DIR)/asm/src/HomeButtonMenu_8019c390.o \
-$(BUILD_DIR)/asm/src/Resource_8019d5d8.o \
-$(BUILD_DIR)/asm/src/ResourceFileName_8019d834.o \
 $(BUILD_DIR)/asm/src/Color_8019d88c.o \
 $(BUILD_DIR)/asm/src/FixedString_8019d994.o \
 $(BUILD_DIR)/asm/src/Locale_8019da54.o \
@@ -2939,7 +2941,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/DisableIcon_80406310.o \
 $(BUILD_DIR)/asm/src/Color_80406314.o \
 $(BUILD_DIR)/asm/src/Direction3_80406318.o \
 $(BUILD_DIR)/asm/src/Point2_8040631c.o \
@@ -3137,9 +3138,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/DisableIconResource_80455060.o \
-$(BUILD_DIR)/asm/src/HomeButtonMenu_80456920.o \
-$(BUILD_DIR)/asm/src/ResourceFileName_80456930.o \
 $(BUILD_DIR)/asm/src/Locale_804569d0.o \
 $(BUILD_DIR)/asm/src/AddOnCast_804569e0.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80456a60.o \
@@ -4733,8 +4731,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/HomeButtonMenu_80556e30.o \
-$(BUILD_DIR)/asm/src/ResourceFileName_80556e48.o \
 $(BUILD_DIR)/asm/src/Locale_80556e60.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80556e88.o \
 $(BUILD_DIR)/asm/src/RumbleResource_80556ea0.o \
@@ -5075,7 +5071,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/DisableIcon_8055d208.o \
 $(BUILD_DIR)/asm/src/Color_8055d218.o \
 $(BUILD_DIR)/asm/src/Point2_8055d240.o \
 $(BUILD_DIR)/asm/src/Vector2_8055d248.o \
@@ -5192,9 +5187,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/DisableIcon_8055f7b8.o \
-$(BUILD_DIR)/asm/src/HomeButtonMenu_8055f7e0.o \
-$(BUILD_DIR)/asm/src/ResourceFileName_8055f818.o \
 $(BUILD_DIR)/asm/src/Direction3_8055f828.o \
 $(BUILD_DIR)/asm/src/Matrix34_8055f838.o \
 $(BUILD_DIR)/asm/src/Point2_8055f848.o \

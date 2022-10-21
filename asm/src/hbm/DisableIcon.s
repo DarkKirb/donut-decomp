@@ -168,3 +168,61 @@ forceEndAnim__Q23hbm11DisableIconFv:
 /* 8019C384 001981C4  7C 08 03 A6 */	mtlr r0
 /* 8019C388 001981C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019C38C 001981CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1DisableIcon_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "DISABLE_ICON_POS_4x3__25@unnamed@DisableIcon_cpp@"
+"DISABLE_ICON_POS_4x3__25@unnamed@DisableIcon_cpp@":
+	.skip 0x8
+
+.global "DISABLE_ICON_POS_16x9__25@unnamed@DisableIcon_cpp@"
+"DISABLE_ICON_POS_16x9__25@unnamed@DisableIcon_cpp@":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50030"
+"@50030":
+
+	.4byte 0x41700000
+
+.global "@50031"
+"@50031":
+
+	.4byte 0x437F0000
+
+.global "@50032"
+"@50032":
+
+	.4byte 0x3F800000
+	.4byte 0
+
+.global "@50035"
+"@50035":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@50056"
+"@50056":
+
+	.4byte 0xC35C0000
+
+.global "@50057"
+"@50057":
+
+	.4byte 0x42D20000
+
+.global "@50058"
+"@50058":
+
+	.4byte 0xC39E0000
+
+.global "@50059"
+"@50059":
+
+	.4byte 0x430C0000

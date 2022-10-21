@@ -218,3 +218,31 @@ randCoreF32__Q33hel4math6RandomFv:
 /* 8019EF4C 0019AD8C  7C 08 03 A6 */	mtlr r0
 /* 8019EF50 0019AD90  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019EF54 0019AD94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49032_8055F850"
+"@49032_8055F850":
+
+	.4byte 0
+
+.global "@49057_8055F854"
+"@49057_8055F854":
+
+	.4byte 0xBF800000
+
+.global "@49058_8055F858"
+"@49058_8055F858":
+
+	.4byte 0x40000000
+
+.global "@49069_8055F85C"
+"@49069_8055F85C":
+
+	.4byte 0x47800000
+
+.global "@49072_8055F860"
+"@49072_8055F860":
+
+	.4byte 0x43300000
+	.4byte 0

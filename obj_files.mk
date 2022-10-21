@@ -817,15 +817,16 @@ $(BUILD_DIR)/asm/src/hel/common/Locale.o \
 $(BUILD_DIR)/asm/src/hel/debug/Assert.o \
 $(BUILD_DIR)/asm/src/hel/debug/Print.o \
 \
+$(BUILD_DIR)/asm/src/hel/math/Direction3.o \
+$(BUILD_DIR)/asm/src/hel/math/Matrix34.o \
+$(BUILD_DIR)/asm/src/hel/math/Matrix44.o \
+$(BUILD_DIR)/asm/src/hel/math/Point2.o \
+$(BUILD_DIR)/asm/src/hel/math/Random.o \
+$(BUILD_DIR)/asm/src/hel/math/Vector2.o \
+$(BUILD_DIR)/asm/src/hel/math/Vector3.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Direction3_8019df7c.o \
-$(BUILD_DIR)/asm/src/Matrix34_8019e590.o \
-$(BUILD_DIR)/asm/src/Matrix44_8019eaec.o \
-$(BUILD_DIR)/asm/src/Point2_8019ec6c.o \
-$(BUILD_DIR)/asm/src/Random_8019ec7c.o \
-$(BUILD_DIR)/asm/src/Vector2_8019ef58.o \
-$(BUILD_DIR)/asm/src/Vector3_8019f50c.o \
 $(BUILD_DIR)/asm/src/AABBox_8019fd4c.o \
 $(BUILD_DIR)/asm/src/Rect_8019fd54.o \
 $(BUILD_DIR)/asm/src/Closest_801a01fc.o \
@@ -2943,10 +2944,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/Direction3_80406318.o \
-$(BUILD_DIR)/asm/src/Point2_8040631c.o \
-$(BUILD_DIR)/asm/src/Vector2_80406320.o \
-$(BUILD_DIR)/asm/src/Vector3_80406324.o \
 $(BUILD_DIR)/asm/src/HIDManager_80406328.o \
 $(BUILD_DIR)/asm/src/LandLayer_8040632c.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_80406330.o \
@@ -4682,8 +4679,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Direction3_80545260.o \
-$(BUILD_DIR)/asm/src/Vector3_805452d0.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_80545310.o \
 $(BUILD_DIR)/asm/src/AddOnMathVector3_80545338.o \
 $(BUILD_DIR)/asm/src/HIDManager_80545378.o \
@@ -5070,8 +5065,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Point2_8055d240.o \
-$(BUILD_DIR)/asm/src/Vector2_8055d248.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_8055d268.o \
 $(BUILD_DIR)/asm/src/AddOnMathVector3_8055d270.o \
 $(BUILD_DIR)/asm/src/HIDManager_8055d278.o \
@@ -5185,12 +5178,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Direction3_8055f828.o \
-$(BUILD_DIR)/asm/src/Matrix34_8055f838.o \
-$(BUILD_DIR)/asm/src/Point2_8055f848.o \
-$(BUILD_DIR)/asm/src/Random_8055f850.o \
-$(BUILD_DIR)/asm/src/Vector2_8055f868.o \
-$(BUILD_DIR)/asm/src/Vector3_8055f880.o \
 $(BUILD_DIR)/asm/src/AABBox_8055f8a0.o \
 $(BUILD_DIR)/asm/src/Rect_8055f8a8.o \
 $(BUILD_DIR)/asm/src/Closest_8055f8b8.o \

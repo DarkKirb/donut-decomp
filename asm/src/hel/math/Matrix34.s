@@ -368,3 +368,25 @@ lbl_8019EACC:
 /* 8019EAE0 0019A920  7C 08 03 A6 */	mtlr r0
 /* 8019EAE4 0019A924  38 21 00 50 */	addi r1, r1, 0x50
 /* 8019EAE8 0019A928  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51888_8055F838"
+"@51888_8055F838":
+
+	.4byte 0x4222F983
+
+.global "@51900_8055F83C"
+"@51900_8055F83C":
+
+	.4byte 0x3F360B61
+
+.global "@51977"
+"@51977":
+
+	.4byte 0x3727C5AC
+
+.global "@51978"
+"@51978":
+
+	.4byte 0x3F800000

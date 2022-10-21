@@ -453,3 +453,57 @@ __ami__Q33hel4math7Vector2FRCQ33hel4math7Vector2:
 /* 8019F500 0019B340  7C 08 03 A6 */	mtlr r0
 /* 8019F504 0019B344  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019F508 0019B348  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Vector2_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global ZERO__Q33hel4math7Vector2
+ZERO__Q33hel4math7Vector2:
+	.skip 0x4
+
+.global lbl_8055D24C
+lbl_8055D24C:
+	.skip 0x4
+
+.global ALL_ONE__Q33hel4math7Vector2
+ALL_ONE__Q33hel4math7Vector2:
+	.skip 0x8
+
+.global BASIS_X__Q33hel4math7Vector2
+BASIS_X__Q33hel4math7Vector2:
+	.skip 0x8
+
+.global BASIS_Y__Q33hel4math7Vector2
+BASIS_Y__Q33hel4math7Vector2:
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50690_8055F868"
+"@50690_8055F868":
+
+	.4byte 0
+
+.global "@50708"
+"@50708":
+
+	.4byte 0x3F800000
+
+.global "@50709"
+"@50709":
+
+	.4byte 0xBF800000
+
+.global "@50737"
+"@50737":
+
+	.4byte 0x3727C5AC
+
+.global "@50738"
+"@50738":
+
+	.4byte 0x40490FDB
+	.4byte 0

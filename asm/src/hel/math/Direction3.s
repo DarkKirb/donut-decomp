@@ -440,3 +440,39 @@ lbl_8019E420:
 /* 8019E584 0019A3C4  7C 08 03 A6 */	mtlr r0
 /* 8019E588 0019A3C8  38 21 00 90 */	addi r1, r1, 0x90
 /* 8019E58C 0019A3CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Direction3_cpp"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global BASIS__Q33hel4math10Direction3
+BASIS__Q33hel4math10Direction3:
+	.skip 0x24
+
+.global FRONT_TO_RIGHT__Q33hel4math10Direction3
+FRONT_TO_RIGHT__Q33hel4math10Direction3:
+	.skip 0x24
+
+.global FRONT_TO_LEFT__Q33hel4math10Direction3
+FRONT_TO_LEFT__Q33hel4math10Direction3:
+	.skip 0x28
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55184_8055F828"
+"@55184_8055F828":
+
+	.4byte 0
+
+.global "@55436"
+"@55436":
+
+	.4byte 0x3F800000
+
+.global "@55438"
+"@55438":
+
+	.4byte 0xBF800000
+	.4byte 0

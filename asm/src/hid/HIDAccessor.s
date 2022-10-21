@@ -472,3 +472,145 @@ checkInputSubStick__Q23hid11HIDAccessorCFRCQ33hel4math7Vector2f:
 /* 801A292C 0019E76C  7C 60 00 26 */	mfcr r3
 /* 801A2930 0019E770  54 63 17 FE */	extrwi r3, r3, 1, 1
 /* 801A2934 0019E774  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_BUTTON_CONVDATA_CL__25@unnamed@HIDAccessor_cpp@"
+"T_BUTTON_CONVDATA_CL__25@unnamed@HIDAccessor_cpp@":
+
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0x00008000
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00004000
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0x00000400
+	.4byte 0x00000010
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0
+	.4byte 0x00000800
+	.4byte 0x00008000
+	.4byte 0x00008000
+	.4byte 0
+	.4byte 0x00000008
+	.4byte 0x00000100
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0
+	.4byte 0x00002000
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000200
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000400
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0x00000400
+	.4byte 0
+	.4byte 0
+
+.global "T_BUTTON_CONVDATA_GC__25@unnamed@HIDAccessor_cpp@"
+"T_BUTTON_CONVDATA_GC__25@unnamed@HIDAccessor_cpp@":
+
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0x00000100
+	.4byte 0
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00000010
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000010
+	.4byte 0x00001000
+	.4byte 0x00001000
+	.4byte 0
+	.4byte 0x00000400
+	.4byte 0x00000100
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0x00000800
+	.4byte 0x00000200
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000800
+	.4byte 0
+	.4byte 0
+
+.global "T_STICK_CONVDATA__25@unnamed@HIDAccessor_cpp@"
+"T_STICK_CONVDATA__25@unnamed@HIDAccessor_cpp@":
+
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000001
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50596_8055F910"
+"@50596_8055F910":
+
+	.4byte 0x3E800000
+
+.global "@50617_8055F914"
+"@50617_8055F914":
+
+	.4byte 0x3DCCCCCD

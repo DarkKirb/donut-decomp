@@ -836,19 +836,20 @@ $(BUILD_DIR)/asm/src/hel/mint/AddOnMathDirection3.o \
 $(BUILD_DIR)/asm/src/hel/mint/AddOnMathMath.o \
 $(BUILD_DIR)/asm/src/hel/mint/AddOnMathVector3.o \
 \
+$(BUILD_DIR)/asm/src/hid/Accel.o \
+$(BUILD_DIR)/asm/src/hid/Button.o \
+$(BUILD_DIR)/asm/src/hid/DPD.o \
+$(BUILD_DIR)/asm/src/hid/HIDAccessor.o \
+$(BUILD_DIR)/asm/src/hid/HIDManager.o \
+$(BUILD_DIR)/asm/src/hid/LibInitializer.o \
+$(BUILD_DIR)/asm/src/hid/RumbleManager.o \
+$(BUILD_DIR)/asm/src/hid/RumbleRequestor.o \
+$(BUILD_DIR)/asm/src/hid/RumbleResource.o \
+$(BUILD_DIR)/asm/src/hid/SimpleGCHID.o \
+$(BUILD_DIR)/asm/src/hid/SimpleWRHID.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Accel_801a21fc.o \
-$(BUILD_DIR)/asm/src/Button_801a2224.o \
-$(BUILD_DIR)/asm/src/DPD_801a2268.o \
-$(BUILD_DIR)/asm/src/HIDAccessor_801a22ec.o \
-$(BUILD_DIR)/asm/src/HIDManager_801a2938.o \
-$(BUILD_DIR)/asm/src/LibInitializer_801a383c.o \
-$(BUILD_DIR)/asm/src/RumbleManager_801a3a5c.o \
-$(BUILD_DIR)/asm/src/RumbleRequestor_801a3e44.o \
-$(BUILD_DIR)/asm/src/RumbleResource_801a4178.o \
-$(BUILD_DIR)/asm/src/SimpleGCHID_801a4268.o \
-$(BUILD_DIR)/asm/src/SimpleWRHID_801a4408.o \
 $(BUILD_DIR)/asm/src/Stick_801a4778.o \
 $(BUILD_DIR)/asm/src/Util_801a4810.o \
 $(BUILD_DIR)/asm/src/Sequence_801a5b58.o \
@@ -2947,7 +2948,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/HIDManager_80406328.o \
 $(BUILD_DIR)/asm/src/LandLayer_8040632c.o \
 $(BUILD_DIR)/asm/src/MoveGridGroup_80406330.o \
 $(BUILD_DIR)/asm/src/HeapMapUserRepos_80406334.o \
@@ -3011,7 +3011,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/HIDAccessor_80414970.o \
 $(BUILD_DIR)/asm/src/Util_80414b40.o \
 $(BUILD_DIR)/asm/src/Button_80414b60.o \
 $(BUILD_DIR)/asm/src/UserTagProcessor_80414b70.o \
@@ -3139,7 +3138,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/RumbleResource_80456f40.o \
 $(BUILD_DIR)/asm/src/Util_80456f80.o \
 $(BUILD_DIR)/asm/src/Sequence_804571e8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_804572a8.o \
@@ -4679,7 +4677,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/HIDManager_80545378.o \
 $(BUILD_DIR)/asm/src/HeapMapUserRepos_805453e8.o \
 $(BUILD_DIR)/asm/src/Memory_80545bf8.o \
 $(BUILD_DIR)/asm/src/Trophy_80545ed0.o \
@@ -4724,7 +4721,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/RumbleResource_80556ea0.o \
 $(BUILD_DIR)/asm/src/Util_80556ea8.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_80556f28.o \
 $(BUILD_DIR)/asm/src/Button_80556f98.o \
@@ -5062,8 +5058,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/HIDManager_8055d278.o \
-$(BUILD_DIR)/asm/src/LibInitializer_8055d280.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_8055d288.o \
 $(BUILD_DIR)/asm/src/MoveGrid_8055d290.o \
 $(BUILD_DIR)/asm/src/Memory_8055d2a0.o \
@@ -5173,9 +5167,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/DPD_8055f908.o \
-$(BUILD_DIR)/asm/src/HIDAccessor_8055f910.o \
-$(BUILD_DIR)/asm/src/LibInitializer_8055f918.o \
 $(BUILD_DIR)/asm/src/Stick_8055f930.o \
 $(BUILD_DIR)/asm/src/Util_8055f938.o \
 $(BUILD_DIR)/asm/src/AddWiiRemote_8055f940.o \

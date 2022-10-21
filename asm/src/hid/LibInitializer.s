@@ -153,3 +153,37 @@ lbl_801A3A40:
 /* 801A3A50 0019F890  7C 08 03 A6 */	mtlr r0
 /* 801A3A54 0019F894  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A3A58 0019F898  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "isExist___Q33hel6common40PrivateSingleton<Q23hid14LibInitializer>"
+"isExist___Q33hel6common40PrivateSingleton<Q23hid14LibInitializer>":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49040_8055F918"
+"@49040_8055F918":
+
+	.4byte 0x3DCCCCCD
+
+.global "@49041_8055F91C"
+"@49041_8055F91C":
+
+	.4byte 0x3F000000
+
+.global "@49042_8055F920"
+"@49042_8055F920":
+
+	.4byte 0x3E4CCCCD
+
+.global "@49043_8055F924"
+"@49043_8055F924":
+
+	.4byte 0x3D8F5C29
+
+.global "@49044_8055F928"
+"@49044_8055F928":
+
+	.4byte 0x3F800000
+	.4byte 0

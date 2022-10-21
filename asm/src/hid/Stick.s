@@ -45,3 +45,11 @@ normalized__Q23hid5StickCFv:
 /* 801A4804 001A0644  D0 63 00 04 */	stfs f3, 0x4(r3)
 /* 801A4808 001A0648  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A480C 001A064C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49704"
+"@49704":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

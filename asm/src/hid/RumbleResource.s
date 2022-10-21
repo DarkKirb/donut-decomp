@@ -77,3 +77,37 @@ lbl_801A4250:
 /* 801A425C 001A009C  7C 08 03 A6 */	mtlr r0
 /* 801A4260 001A00A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4264 001A00A4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48751_80456F40"
+"@48751_80456F40":
+
+	.4byte 0x6869642F
+	.4byte 0x72756D62
+	.4byte 0x6C652F52
+	.4byte 0x756D626C
+	.4byte 0x652E6461
+	.4byte 0x742E636D
+	.4byte 0x70000000
+
+.global "@48752_80456F5C"
+"@48752_80456F5C":
+
+	.4byte 0x6869642F
+	.4byte 0x72756D62
+	.4byte 0x6C652F73
+	.4byte 0x75626761
+	.4byte 0x6D652F52
+	.4byte 0x756D626C
+	.4byte 0x652E6461
+	.4byte 0x742E636D
+	.4byte 0x70000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_DAT_PATH_TABLE__Q23hid28@unnamed@RumbleResource_cpp@"
+"T_DAT_PATH_TABLE__Q23hid28@unnamed@RumbleResource_cpp@":
+
+	.4byte "@48751_80456F40"
+	.4byte "@48752_80456F5C"

@@ -577,3 +577,31 @@ lbl_801A0D7C:
 /* 801A0D90 0019CBD0  7C 00 00 34 */	cntlzw r0, r0
 /* 801A0D94 0019CBD4  54 03 D9 7E */	srwi r3, r0, 5
 /* 801A0D98 0019CBD8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50828"
+"@50828":
+
+	.4byte 0
+
+.global "@50829"
+"@50829":
+
+	.4byte 0xB58637BD
+
+.global "@50830"
+"@50830":
+
+	.4byte 0x358637BD
+
+.global "@50831"
+"@50831":
+
+	.4byte 0xBF800000
+
+.global "@50946"
+"@50946":
+
+	.4byte 0x3F800000
+	.4byte 0

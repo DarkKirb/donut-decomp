@@ -828,10 +828,11 @@ $(BUILD_DIR)/asm/src/hel/math/Vector3.o \
 $(BUILD_DIR)/asm/src/hel/geo/AABBox.o \
 $(BUILD_DIR)/asm/src/hel/geo/Rect.o \
 \
+$(BUILD_DIR)/asm/src/hel/geo2d/Closest.o \
+$(BUILD_DIR)/asm/src/hel/geo2d/Intersection.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Closest_801a01fc.o \
-$(BUILD_DIR)/asm/src/Intersection_801a05e0.o \
 $(BUILD_DIR)/asm/src/AddOnCast_801a0d9c.o \
 $(BUILD_DIR)/asm/src/AddOnMathDirection3_801a0f00.o \
 $(BUILD_DIR)/asm/src/AddOnMathMath_801a1b1c.o \
@@ -5179,8 +5180,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Closest_8055f8b8.o \
-$(BUILD_DIR)/asm/src/Intersection_8055f8c8.o \
 $(BUILD_DIR)/asm/src/AddOnCast_8055f8e0.o \
 $(BUILD_DIR)/asm/src/AddOnMathMath_8055f8e8.o \
 $(BUILD_DIR)/asm/src/AddOnMathVector3_8055f900.o \

@@ -283,3 +283,21 @@ __pl__Q33hel4math7Vector2CFRCQ33hel4math7Vector2:
 /* 801A05D4 0019C414  7C 08 03 A6 */	mtlr r0
 /* 801A05D8 0019C418  38 21 00 20 */	addi r1, r1, 0x20
 /* 801A05DC 0019C41C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50353_8055F8B8"
+"@50353_8055F8B8":
+
+	.4byte 0
+
+.global "@50354_8055F8BC"
+"@50354_8055F8BC":
+
+	.4byte 0x3F800000
+
+.global "@50429_8055F8C0"
+"@50429_8055F8C0":
+
+	.4byte 0x3727C5AC
+	.4byte 0

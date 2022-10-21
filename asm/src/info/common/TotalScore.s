@@ -430,3 +430,83 @@ lbl_801AAB40:
 /* 801AAB4C 001A698C  7C 08 03 A6 */	mtlr r0
 /* 801AAB50 001A6990  38 21 03 B0 */	addi r1, r1, 0x3b0
 /* 801AAB54 001A6994  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "NAMES__Q34info6common24@unnamed@TotalScore_cpp@"
+"NAMES__Q34info6common24@unnamed@TotalScore_cpp@":
+
+	.4byte "@51545_805570D0"
+	.4byte "@51545_805570D0"
+	.4byte "@51546_805570D8"
+	.4byte "@51547_805570E0"
+	.4byte "@51548_805570E8"
+	.4byte "@51548_805570E8"
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F4D
+	.4byte 0x61696E00
+	.4byte 0x546F7461
+	.4byte 0x6C53636F
+	.4byte 0x72654261
+	.4byte 0x73650000
+	.4byte 0x546F7461
+	.4byte 0x6C53636F
+	.4byte 0x72654E75
+	.4byte 0x6D626572
+	.4byte 0
+	.4byte 0x4E756D62
+	.4byte 0x65722564
+	.4byte 0x4E000000
+	.4byte 0x53636F72
+	.4byte 0x65436F6D
+	.4byte 0x6D614E00
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51545_805570D0"
+"@51545_805570D0":
+
+	.4byte 0x42726F6E
+	.4byte 0x7A650000
+
+.global "@51546_805570D8"
+"@51546_805570D8":
+
+	.4byte 0x53696C76
+	.4byte 0x65720000
+
+.global "@51547_805570E0"
+"@51547_805570E0":
+
+	.4byte 0x476F6C64
+	.4byte 0
+
+.global "@51548_805570E8"
+"@51548_805570E8":
+
+	.4byte 0x506C6174
+	.4byte 0x696E6100
+
+.global "@52572_805570F0"
+"@52572_805570F0":
+
+	.4byte 0x25732564
+	.4byte 0
+
+.global "@52573_805570F8"
+"@52573_805570F8":
+
+	.4byte 0x2573436F
+	.4byte 0x6D6D6100

@@ -993,3 +993,149 @@ setPhaseOn__Q44info6common12AddWiiRemote6RemoteFv:
 /* 801A7DA4 001A3BE4  7C 08 03 A6 */	mtlr r0
 /* 801A7DA8 001A3BE8  38 21 00 40 */	addi r1, r1, 0x40
 /* 801A7DAC 001A3BEC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52041"
+"@52041":
+
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F52
+	.4byte 0x656D6F74
+	.4byte 0x65000000
+	.4byte 0x506C7573
+	.4byte 0x42757474
+	.4byte 0x6F6E4E00
+	.4byte 0x4261636B
+	.4byte 0x54657874
+	.4byte 0
+	.4byte 0x53797374
+	.4byte 0x656D5769
+	.4byte 0x6952656D
+	.4byte 0x6F746541
+	.4byte 0x64644274
+	.4byte 0x6E000000
+	.4byte 0x52656D6F
+	.4byte 0x74653025
+	.4byte 0x644E0000
+	.4byte 0x42746E4C
+	.4byte 0x616D7030
+	.4byte 0x314E0000
+	.4byte 0x42746E4C
+	.4byte 0x616D7030
+	.4byte 0x324E0000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_RES_PATH__Q34info6common26@unnamed@AddWiiRemote_cpp@"
+"T_RES_PATH__Q34info6common26@unnamed@AddWiiRemote_cpp@":
+
+	.4byte "@52041"
+
+.global "@53617"
+"@53617":
+
+	.4byte 0x42617365
+	.4byte 0
+
+.global "@53710"
+"@53710":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53727"
+"@53727":
+
+	.4byte 0x4F757400
+
+.global "@53751_80556F40"
+"@53751_80556F40":
+
+	.4byte 0x52656D6F
+	.4byte 0x74650000
+
+.global "@53752"
+"@53752":
+
+	.4byte 0x42746E4C
+	.4byte 0x616D7000
+
+.global "@53753"
+"@53753":
+
+	.4byte 0x4C454400
+
+.global "@53757_80556F54"
+"@53757_80556F54":
+
+	.4byte 0x4C45444E
+	.4byte 0
+
+.global "@53758_80556F5C"
+"@53758_80556F5C":
+
+	.4byte 0x4C454430
+	.4byte 0x31000000
+
+.global "@53759_80556F64"
+"@53759_80556F64":
+
+	.4byte 0x4C454430
+	.4byte 0x32000000
+
+.global "@53760_80556F6C"
+"@53760_80556F6C":
+
+	.4byte 0x4C454430
+	.4byte 0x33000000
+
+.global "@53761_80556F74"
+"@53761_80556F74":
+
+	.4byte 0x4C454430
+	.4byte 0x34000000
+
+.global "@53790_80556F7C"
+"@53790_80556F7C":
+
+	.4byte 0x546F4F6E
+	.4byte 0
+
+.global "@53799"
+"@53799":
+
+	.4byte 0x546F4F66
+	.4byte 0x66000000
+
+.global "@53807"
+"@53807":
+
+	.4byte 0x4F666600
+
+.global "@53810_80556F90"
+"@53810_80556F90":
+
+	.4byte 0x4F6E0000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53693_8055F940"
+"@53693_8055F940":
+
+	.4byte 0x3F800000
+	.4byte 0

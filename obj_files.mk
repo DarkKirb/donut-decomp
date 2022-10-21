@@ -853,17 +853,18 @@ $(BUILD_DIR)/asm/src/info/Util.o \
 \
 $(BUILD_DIR)/asm/src/info/sequence/Sequence.o \
 \
+$(BUILD_DIR)/asm/src/info/common/AddWiiRemote.o \
+$(BUILD_DIR)/asm/src/info/common/Button.o \
+$(BUILD_DIR)/asm/src/info/common/ButtonHelp.o \
+$(BUILD_DIR)/asm/src/info/common/CheckWindow.o \
+$(BUILD_DIR)/asm/src/info/common/Confirm.o \
+$(BUILD_DIR)/asm/src/info/common/LowBattery.o \
+$(BUILD_DIR)/asm/src/info/common/SkipHelp.o \
+$(BUILD_DIR)/asm/src/info/common/TotalScore.o \
+$(BUILD_DIR)/asm/src/info/common/WiiButton.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AddWiiRemote_801a701c.o \
-$(BUILD_DIR)/asm/src/Button_801a7db0.o \
-$(BUILD_DIR)/asm/src/ButtonHelp_801a830c.o \
-$(BUILD_DIR)/asm/src/CheckWindow_801a857c.o \
-$(BUILD_DIR)/asm/src/Confirm_801a9348.o \
-$(BUILD_DIR)/asm/src/LowBattery_801a9dc0.o \
-$(BUILD_DIR)/asm/src/SkipHelp_801aa114.o \
-$(BUILD_DIR)/asm/src/TotalScore_801aa56c.o \
-$(BUILD_DIR)/asm/src/WiiButton_801aab58.o \
 $(BUILD_DIR)/asm/src/CutIn_801ab11c.o \
 $(BUILD_DIR)/asm/src/Manager_801ab604.o \
 $(BUILD_DIR)/asm/src/Ticker_801aba4c.o \
@@ -3013,7 +3014,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Button_80414b60.o \
 $(BUILD_DIR)/asm/src/UserTagProcessor_80414b70.o \
 $(BUILD_DIR)/asm/src/ActorDiamond_80414c30.o \
 $(BUILD_DIR)/asm/src/MoveGridManager_80414c48.o \
@@ -3139,15 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddWiiRemote_804572a8.o \
-$(BUILD_DIR)/asm/src/Button_80457340.o \
-$(BUILD_DIR)/asm/src/ButtonHelp_804573c8.o \
-$(BUILD_DIR)/asm/src/CheckWindow_80457430.o \
-$(BUILD_DIR)/asm/src/Confirm_80457518.o \
-$(BUILD_DIR)/asm/src/LowBattery_804575d0.o \
-$(BUILD_DIR)/asm/src/SkipHelp_804575e8.o \
-$(BUILD_DIR)/asm/src/TotalScore_80457640.o \
-$(BUILD_DIR)/asm/src/WiiButton_804576d0.o \
 $(BUILD_DIR)/asm/src/CutIn_80457768.o \
 $(BUILD_DIR)/asm/src/Layout_80457870.o \
 $(BUILD_DIR)/asm/src/MaterialAccessor_80457988.o \
@@ -4720,15 +4711,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddWiiRemote_80556f28.o \
-$(BUILD_DIR)/asm/src/Button_80556f98.o \
-$(BUILD_DIR)/asm/src/ButtonHelp_80556fd8.o \
-$(BUILD_DIR)/asm/src/CheckWindow_80556ff0.o \
-$(BUILD_DIR)/asm/src/Confirm_80557060.o \
-$(BUILD_DIR)/asm/src/LowBattery_80557098.o \
-$(BUILD_DIR)/asm/src/SkipHelp_805570b0.o \
-$(BUILD_DIR)/asm/src/TotalScore_805570d0.o \
-$(BUILD_DIR)/asm/src/WiiButton_80557100.o \
 $(BUILD_DIR)/asm/src/CutIn_80557138.o \
 $(BUILD_DIR)/asm/src/Layout_80557158.o \
 $(BUILD_DIR)/asm/src/UserTagProcessor_80557170.o \
@@ -5165,10 +5147,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AddWiiRemote_8055f940.o \
-$(BUILD_DIR)/asm/src/Button_8055f948.o \
-$(BUILD_DIR)/asm/src/Confirm_8055f950.o \
-$(BUILD_DIR)/asm/src/SkipHelp_8055f958.o \
 $(BUILD_DIR)/asm/src/Ticker_8055f968.o \
 $(BUILD_DIR)/asm/src/TickerContext_8055f978.o \
 $(BUILD_DIR)/asm/src/Layout_8055f980.o \

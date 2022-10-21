@@ -313,3 +313,75 @@ setTransTopRight__Q34info6common8SkipHelpFv:
 /* 801AA560 001A63A0  7C 08 03 A6 */	mtlr r0
 /* 801AA564 001A63A4  38 21 00 40 */	addi r1, r1, 0x40
 /* 801AA568 001A63A8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52391_804575E8"
+"@52391_804575E8":
+
+	.4byte 0x73746570
+	.4byte 0x2F67616D
+	.4byte 0x652F4D61
+	.4byte 0x696E0000
+	.4byte 0x536B6970
+	.4byte 0x54657874
+	.4byte 0
+	.4byte 0x536B6970
+	.4byte 0x54657874
+	.4byte 0x53647700
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52392_805570B0"
+"@52392_805570B0":
+
+	.4byte 0x536B6970
+	.4byte 0
+
+.global "@52438_805570B8"
+"@52438_805570B8":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@52439_805570C0"
+"@52439_805570C0":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52440_805570C8"
+"@52440_805570C8":
+
+	.4byte 0x456E6400
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52465"
+"@52465":
+
+	.4byte 0x3F51EB85
+
+.global "@52466"
+"@52466":
+
+	.4byte 0
+
+.global "@52469_8055F960"
+"@52469_8055F960":
+
+	.4byte 0x43300000
+	.4byte 0

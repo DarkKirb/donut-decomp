@@ -396,3 +396,123 @@ lbl_801A82F0:
 /* 801A8300 001A4140  7C 08 03 A6 */	mtlr r0
 /* 801A8304 001A4144  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A8308 001A4148  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@51957"
+"@51957":
+
+	.4byte "@51953"
+	.4byte "@51954_80556FB8"
+	.4byte "@51955"
+	.4byte "@51956"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52299_80457340"
+"@52299_80457340":
+
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F4D
+	.4byte 0x61696E00
+
+.global "@52300_8045734C"
+"@52300_8045734C":
+
+	.4byte 0x426C7565
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
+
+.global "@52306_80457358"
+"@52306_80457358":
+
+	.4byte 0x42757474
+	.4byte 0x6F6E5465
+	.4byte 0x78740000
+	.4byte 0x47726179
+	.4byte 0x43686F69
+	.4byte 0x63650000
+	.4byte 0x47726179
+	.4byte 0x4E6F4368
+	.4byte 0x6F696365
+	.4byte 0
+	.4byte 0x4E6F4368
+	.4byte 0x6F696365
+	.4byte 0
+
+.global "@52370"
+"@52370":
+
+	.4byte 0x47726179
+	.4byte 0x44656369
+	.4byte 0x64650000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52301_80556F98"
+"@52301_80556F98":
+
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
+
+.global "@52359"
+"@52359":
+
+	.4byte 0x43686F69
+	.4byte 0x63650000
+
+.global "@52371_80556FA8"
+"@52371_80556FA8":
+
+	.4byte 0x44656369
+	.4byte 0x64650000
+
+.global "@51953"
+"@51953":
+
+	.4byte 0x426F756E
+	.4byte 0x64000000
+
+.global "@51954_80556FB8"
+"@51954_80556FB8":
+
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
+
+.global "@51955"
+"@51955":
+
+	.4byte 0x43686F69
+	.4byte 0x63650000
+
+.global "@51956"
+"@51956":
+
+	.4byte 0x426C6163
+	.4byte 0x6B000000
+
+.global "@51965_80556FD0"
+"@51965_80556FD0":
+
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52388"
+"@52388":
+
+	.4byte 0x42700000
+	.4byte 0

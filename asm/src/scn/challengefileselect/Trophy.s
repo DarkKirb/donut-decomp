@@ -884,3 +884,191 @@ lbl_801EA0A4:
 /* 801EA0C4 001E5F04  C0 42 9E 04 */	lfs f2, "@54070"@sda21(r2)
 /* 801EA0C8 001E5F08  C0 62 9E 08 */	lfs f3, "@54071"@sda21(r2)
 /* 801EA0CC 001E5F0C  4B ED 3F F4 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_\\Trophy_cpp"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@52758"
+"@52758":
+
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52317_8045E878"
+"@52317_8045E878":
+
+	.4byte 0x436F7070
+	.4byte 0x65727472
+	.4byte 0x6F706879
+	.4byte 0
+
+.global "@52318_8045E888"
+"@52318_8045E888":
+
+	.4byte 0x53696C76
+	.4byte 0x65727472
+	.4byte 0x6F706879
+	.4byte 0
+
+.global "@52319_8045E898"
+"@52319_8045E898":
+
+	.4byte 0x476F6C64
+	.4byte 0x74726F70
+	.4byte 0x68790000
+
+.global "@52320_8045E8A4"
+"@52320_8045E8A4":
+
+	.4byte 0x506C6174
+	.4byte 0x696E756D
+	.4byte 0x74726F70
+	.4byte 0x68790000
+
+.global "@52321_8045E8B4"
+"@52321_8045E8B4":
+
+	.4byte 0x4B696E67
+	.4byte 0x74726F70
+	.4byte 0x68790000
+	.4byte "@52317_8045E878"
+	.4byte "@52317_8045E878"
+	.4byte "@52318_8045E888"
+	.4byte "@52319_8045E898"
+	.4byte "@52320_8045E8A4"
+	.4byte "@52321_8045E8B4"
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x54726F70
+	.4byte 0x6879616E
+	.4byte 0x696D6500
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x54726F70
+	.4byte 0x68797377
+	.4byte 0x69746368
+	.4byte 0
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x25730000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "MODEL_TRANS__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"
+"MODEL_TRANS__Q33scn19challengefileselect20@unnamed@Trophy_cpp@":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53905_80557C80"
+"@53905_80557C80":
+
+	.4byte 0x496E0000
+
+.global "@53906_80557C84"
+"@53906_80557C84":
+
+	.4byte 0x42617365
+	.4byte 0x30310000
+
+.global "@53909_80557C8C"
+"@53909_80557C8C":
+
+	.4byte 0x57616974
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "LAYER_DEPTH__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"
+"LAYER_DEPTH__Q33scn19challengefileselect20@unnamed@Trophy_cpp@":
+
+	.4byte 0x447A0000
+
+.global "MODEL_SCALE__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"
+"MODEL_SCALE__Q33scn19challengefileselect20@unnamed@Trophy_cpp@":
+
+	.4byte 0x42C80000
+
+.global "WAIT_ANIM_START_FRAME__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"
+"WAIT_ANIM_START_FRAME__Q33scn19challengefileselect20@unnamed@Trophy_cpp@":
+
+	.4byte 0x437F0000
+
+.global "@53904_8055FD64"
+"@53904_8055FD64":
+
+	.4byte 0
+
+.global "@53907_8055FD68"
+"@53907_8055FD68":
+
+	.4byte 0x3F800000
+	.4byte 0
+
+.global "@53915"
+"@53915":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@53993_8055FD78"
+"@53993_8055FD78":
+
+	.4byte 0x40000000
+
+.global "@53994_8055FD7C"
+"@53994_8055FD7C":
+
+	.4byte 0xC0000000
+
+.global "@54069"
+"@54069":
+
+	.4byte 0xC39B0000
+
+.global "@54070"
+"@54070":
+
+	.4byte 0xC1C80000
+
+.global "@54071"
+"@54071":
+
+	.4byte 0xC3FA0000
+	.4byte 0

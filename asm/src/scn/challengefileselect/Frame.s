@@ -95,3 +95,53 @@ back__Q33scn19challengefileselect5FrameFv:
 isBackEnd__Q33scn19challengefileselect5FrameCFv:
 /* 801E42F4 001E0134  38 63 01 D0 */	addi r3, r3, 0x1d0
 /* 801E42F8 001E0138  4B FC 41 AC */	b isPushEnd__Q34info6common10ButtonHelpCFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51962"
+"@51962":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x4D61696E
+	.4byte 0
+	.4byte 0x4261636B
+	.4byte 0x42757474
+	.4byte 0x6F6E3032
+	.4byte 0x4E000000
+	.4byte 0x46696C65
+	.4byte 0x53656C65
+	.4byte 0x63740000
+	.4byte 0x46696C65
+	.4byte 0x53656C65
+	.4byte 0x63744247
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51963_80557B48"
+"@51963_80557B48":
+
+	.4byte 0x4672616D
+	.4byte 0x65000000
+
+.global "@52008_80557B50"
+"@52008_80557B50":
+
+	.4byte 0x53746172
+	.4byte 0x74000000

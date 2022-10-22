@@ -92,3 +92,71 @@ cursorPane__Q33scn19challengefileselect6RumbleFv:
 .global __dt__Q33scn19challengefileselect6RumbleFv
 __dt__Q33scn19challengefileselect6RumbleFv:
 /* 801E43F0 001E0230  4B FF EF 0C */	b __dt__Q33scn19challengefileselect6DeleteFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51963_8045E278"
+"@51963_8045E278":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@52003_8045E294"
+"@52003_8045E294":
+
+	.4byte 0x4F70656E
+	.4byte 0x536D616C
+	.4byte 0x6C000000
+
+.global __vt__Q33scn19challengefileselect6Rumble
+__vt__Q33scn19challengefileselect6Rumble:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q33scn19challengefileselect6RumbleFv
+	.4byte updateFrame__Q33scn19challengefileselect6RumbleFv
+	.4byte appear__Q33scn19challengefileselect6RumbleFv
+	.4byte focus__Q33scn19challengefileselect6RumbleFv
+	.4byte unfocus__Q33scn19challengefileselect6RumbleFv
+	.4byte decide__Q33scn19challengefileselect6RumbleFv
+	.4byte isAnimEnd__Q33scn19challengefileselect6RumbleCFv
+	.4byte kind__Q33scn19challengefileselect6RumbleCFv
+	.4byte cursorPane__Q33scn19challengefileselect6RumbleFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51964_80557B58"
+"@51964_80557B58":
+
+	.4byte 0x52756D62
+	.4byte 0x6C650000
+
+.global "@52006"
+"@52006":
+
+	.4byte 0x466F6375
+	.4byte 0x73000000
+
+.global "@52009_80557B68"
+"@52009_80557B68":
+
+	.4byte 0x556E466F
+	.4byte 0x63757300
+
+.global "@52012"
+"@52012":
+
+	.4byte 0x44656369
+	.4byte 0x64650000
+
+.global "@52018"
+"@52018":
+
+	.4byte 0x43757273
+	.4byte 0x6F724E00

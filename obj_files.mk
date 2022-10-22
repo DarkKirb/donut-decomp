@@ -1040,18 +1040,19 @@ $(BUILD_DIR)/asm/src/scn/anime/Main.o \
 $(BUILD_DIR)/asm/src/scn/anime/Player.o \
 $(BUILD_DIR)/asm/src/scn/anime/SceneAnime.o \
 \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/Cursor.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/Delete.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/DeleteConfirm.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/File.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/Frame.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/Rumble.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/RumbleSetting.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/SceneChallengeFileSelect.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/StaffCredit.o \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/Trophy.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Cursor_801e2f84.o \
-$(BUILD_DIR)/asm/src/Delete_801e3200.o \
-$(BUILD_DIR)/asm/src/DeleteConfirm_801e3368.o \
-$(BUILD_DIR)/asm/src/File_801e39d8.o \
-$(BUILD_DIR)/asm/src/Frame_801e41b0.o \
-$(BUILD_DIR)/asm/src/Rumble_801e42fc.o \
-$(BUILD_DIR)/asm/src/RumbleSetting_801e43f4.o \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_801e49bc.o \
-$(BUILD_DIR)/asm/src/StaffCredit_801e91f4.o \
-$(BUILD_DIR)/asm/src/Trophy_801e9478.o \
 $(BUILD_DIR)/asm/src/Table_801ea0d0.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_801ea168.o \
 $(BUILD_DIR)/asm/src/BGModel_801ea59c.o \
@@ -2969,7 +2970,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/Trophy_80406348.o \
 $(BUILD_DIR)/asm/src/Commander_8040634c.o \
 $(BUILD_DIR)/asm/src/BG_80406354.o \
 $(BUILD_DIR)/asm/src/Kirby_80406358.o \
@@ -3025,10 +3025,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Cursor_804154c8.o \
-$(BUILD_DIR)/asm/src/File_804154f0.o \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_80415508.o \
-$(BUILD_DIR)/asm/src/Trophy_804155f8.o \
 $(BUILD_DIR)/asm/src/Chara_80415620.o \
 $(BUILD_DIR)/asm/src/Flash_80415688.o \
 $(BUILD_DIR)/asm/src/Table_804158c8.o \
@@ -3140,16 +3136,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Cursor_8045df30.o \
-$(BUILD_DIR)/asm/src/Delete_8045df68.o \
-$(BUILD_DIR)/asm/src/DeleteConfirm_8045dfc8.o \
-$(BUILD_DIR)/asm/src/File_8045e0d8.o \
-$(BUILD_DIR)/asm/src/Frame_8045e200.o \
-$(BUILD_DIR)/asm/src/Rumble_8045e278.o \
-$(BUILD_DIR)/asm/src/RumbleSetting_8045e2d0.o \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8045e380.o \
-$(BUILD_DIR)/asm/src/StaffCredit_8045e7a8.o \
-$(BUILD_DIR)/asm/src/Trophy_8045e878.o \
 $(BUILD_DIR)/asm/src/Table_8045e968.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8045e998.o \
 $(BUILD_DIR)/asm/src/BGModel_8045eab0.o \
@@ -4594,7 +4580,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Trophy_80545ed0.o \
 $(BUILD_DIR)/asm/src/Table_80545ee0.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_80545f20.o \
 $(BUILD_DIR)/asm/src/Table_805461d0.o \
@@ -4636,16 +4621,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Cursor_80557a18.o \
-$(BUILD_DIR)/asm/src/Delete_80557a70.o \
-$(BUILD_DIR)/asm/src/DeleteConfirm_80557a98.o \
-$(BUILD_DIR)/asm/src/File_80557ab0.o \
-$(BUILD_DIR)/asm/src/Frame_80557b48.o \
-$(BUILD_DIR)/asm/src/Rumble_80557b58.o \
-$(BUILD_DIR)/asm/src/RumbleSetting_80557b80.o \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_80557b90.o \
-$(BUILD_DIR)/asm/src/StaffCredit_80557c38.o \
-$(BUILD_DIR)/asm/src/Trophy_80557c80.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_80557c98.o \
 $(BUILD_DIR)/asm/src/BGModel_80557cb0.o \
 $(BUILD_DIR)/asm/src/Chara_80557cb8.o \
@@ -4922,7 +4897,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055d2f0.o \
 $(BUILD_DIR)/asm/src/Table_8055d300.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8055d308.o \
 $(BUILD_DIR)/asm/src/Commander_8055d318.o \
@@ -5021,8 +4995,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055fd28.o \
-$(BUILD_DIR)/asm/src/Trophy_8055fd58.o \
 $(BUILD_DIR)/asm/src/Table_8055fd90.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8055fda0.o \
 $(BUILD_DIR)/asm/src/Chara_8055fda8.o \

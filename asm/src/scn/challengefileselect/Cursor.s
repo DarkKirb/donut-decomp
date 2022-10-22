@@ -175,3 +175,115 @@ decide__Q33scn19challengefileselect6CursorFRCQ23lyt12PaneAccessor:
 /* 801E31F4 001DF034  7C 08 03 A6 */	mtlr r0
 /* 801E31F8 001DF038  38 21 00 80 */	addi r1, r1, 0x80
 /* 801E31FC 001DF03C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@51586_804154C8"
+"@51586_804154C8":
+
+	.4byte "@51578_80557A28"
+	.4byte "@51579_80557A30"
+	.4byte "@51580_80557A38"
+	.4byte "@51581_80557A40"
+	.4byte "@51582_8045DF4C"
+	.4byte "@51582_8045DF4C"
+	.4byte "@51583_80557A48"
+	.4byte "@51584_80557A50"
+	.4byte "@51585_80557A58"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51991_8045DF30"
+"@51991_8045DF30":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@51582_8045DF4C"
+"@51582_8045DF4C":
+
+	.4byte 0x506C6174
+	.4byte 0x696E614E
+	.4byte 0
+
+.global __vt__Q33scn19challengefileselect6Cursor
+__vt__Q33scn19challengefileselect6Cursor:
+
+	.4byte 0
+	.4byte 0
+	.4byte updateFrame__Q33scn19challengefileselect6CursorFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51992"
+"@51992":
+
+	.4byte 0x43757273
+	.4byte 0x6F720000
+
+.global "@51993_80557A20"
+"@51993_80557A20":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@51578_80557A28"
+"@51578_80557A28":
+
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
+
+.global "@51579_80557A30"
+"@51579_80557A30":
+
+	.4byte 0x42726F6E
+	.4byte 0x7A654E00
+
+.global "@51580_80557A38"
+"@51580_80557A38":
+
+	.4byte 0x53696C76
+	.4byte 0x65724E00
+
+.global "@51581_80557A40"
+"@51581_80557A40":
+
+	.4byte 0x476F6C64
+	.4byte 0x4E000000
+
+.global "@51583_80557A48"
+"@51583_80557A48":
+
+	.4byte 0x44656C65
+	.4byte 0x74654E00
+
+.global "@51584_80557A50"
+"@51584_80557A50":
+
+	.4byte 0x52756D62
+	.4byte 0x6C654E00
+
+.global "@51585_80557A58"
+"@51585_80557A58":
+
+	.4byte 0x456E6469
+	.4byte 0x6E674E00
+
+.global "@52034"
+"@52034":
+
+	.4byte 0x466F6375
+	.4byte 0x73000000
+
+.global "@52044_80557A68"
+"@52044_80557A68":
+
+	.4byte 0x44656369
+	.4byte 0x64650000

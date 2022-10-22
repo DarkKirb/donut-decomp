@@ -196,3 +196,125 @@ hideNew__Q33scn19challengefileselect11StaffCreditFv:
 /* 801E946C 001E52AC  7C 08 03 A6 */	mtlr r0
 /* 801E9470 001E52B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801E9474 001E52B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52079_8045E7A8"
+"@52079_8045E7A8":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x6566696C
+	.4byte 0x6573656C
+	.4byte 0x6563742F
+	.4byte 0x4D61696E
+	.4byte 0
+	.4byte 0x53746166
+	.4byte 0x66437265
+	.4byte 0x64697400
+	.4byte 0x53746166
+	.4byte 0x66437265
+	.4byte 0x6469744E
+	.4byte 0x65770000
+
+.global "@52124_8045E7E0"
+"@52124_8045E7E0":
+
+	.4byte 0x4F70656E
+	.4byte 0x536D616C
+	.4byte 0x6C000000
+
+.global __vt__Q33scn19challengefileselect11StaffCredit
+__vt__Q33scn19challengefileselect11StaffCredit:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q33scn19challengefileselect11StaffCreditFv
+	.4byte updateFrame__Q33scn19challengefileselect11StaffCreditFv
+	.4byte appear__Q33scn19challengefileselect11StaffCreditFv
+	.4byte focus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte unfocus__Q33scn19challengefileselect11StaffCreditFv
+	.4byte decide__Q33scn19challengefileselect11StaffCreditFv
+	.4byte isAnimEnd__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte kind__Q33scn19challengefileselect11StaffCreditCFv
+	.4byte cursorPane__Q33scn19challengefileselect11StaffCreditFv
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52080_80557C38"
+"@52080_80557C38":
+
+	.4byte 0x456E6469
+	.4byte 0x6E670000
+
+.global "@52081_80557C40"
+"@52081_80557C40":
+
+	.4byte 0x4E657700
+
+.global "@52083_80557C44"
+"@52083_80557C44":
+
+	.4byte 0x4E65774E
+	.4byte 0
+
+.global "@52084_80557C4C"
+"@52084_80557C4C":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52127_80557C54"
+"@52127_80557C54":
+
+	.4byte 0x466F6375
+	.4byte 0x73000000
+	.4byte 0
+
+.global "@52130_80557C60"
+"@52130_80557C60":
+
+	.4byte 0x556E466F
+	.4byte 0x63757300
+
+.global "@52133_80557C68"
+"@52133_80557C68":
+
+	.4byte 0x44656369
+	.4byte 0x64650000
+
+.global "@52139"
+"@52139":
+
+	.4byte 0x43757273
+	.4byte 0x6F724E00
+
+.global "@52143_80557C78"
+"@52143_80557C78":
+
+	.4byte 0x4F70656E
+	.4byte 0x42696700

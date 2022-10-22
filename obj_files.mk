@@ -1031,9 +1031,10 @@ $(BUILD_DIR)/asm/src/pause/PlayerEntryInfo.o \
 $(BUILD_DIR)/asm/src/pause/ResultSetter.o \
 $(BUILD_DIR)/asm/src/pause/WindowPanel.o \
 \
+$(BUILD_DIR)/asm/src/preload/PreLoadManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/PreLoadManager_801df3e0.o \
 $(BUILD_DIR)/asm/src/ControlIcon_801dfc90.o \
 $(BUILD_DIR)/asm/src/ControlPanel_801e001c.o \
 $(BUILD_DIR)/asm/src/LoadIcon_801e0bc0.o \

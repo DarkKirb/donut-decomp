@@ -1033,14 +1033,15 @@ $(BUILD_DIR)/asm/src/pause/WindowPanel.o \
 \
 $(BUILD_DIR)/asm/src/preload/PreLoadManager.o \
 \
+$(BUILD_DIR)/asm/src/scn/anime/ControlIcon.o \
+$(BUILD_DIR)/asm/src/scn/anime/ControlPanel.o \
+$(BUILD_DIR)/asm/src/scn/anime/LoadIcon.o \
+$(BUILD_DIR)/asm/src/scn/anime/Main.o \
+$(BUILD_DIR)/asm/src/scn/anime/Player.o \
+$(BUILD_DIR)/asm/src/scn/anime/SceneAnime.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/ControlIcon_801dfc90.o \
-$(BUILD_DIR)/asm/src/ControlPanel_801e001c.o \
-$(BUILD_DIR)/asm/src/LoadIcon_801e0bc0.o \
-$(BUILD_DIR)/asm/src/Main_801e0e84.o \
-$(BUILD_DIR)/asm/src/Player_801e1f44.o \
-$(BUILD_DIR)/asm/src/SceneAnime_801e2954.o \
 $(BUILD_DIR)/asm/src/Cursor_801e2f84.o \
 $(BUILD_DIR)/asm/src/Delete_801e3200.o \
 $(BUILD_DIR)/asm/src/DeleteConfirm_801e3368.o \
@@ -3024,7 +3025,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Player_804154a0.o \
 $(BUILD_DIR)/asm/src/Cursor_804154c8.o \
 $(BUILD_DIR)/asm/src/File_804154f0.o \
 $(BUILD_DIR)/asm/src/SceneChallengeFileSelect_80415508.o \
@@ -3140,11 +3140,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/ControlIcon_8045db88.o \
-$(BUILD_DIR)/asm/src/ControlPanel_8045dc20.o \
-$(BUILD_DIR)/asm/src/LoadIcon_8045dd40.o \
-$(BUILD_DIR)/asm/src/Main_8045dd98.o \
-$(BUILD_DIR)/asm/src/SceneAnime_8045de60.o \
 $(BUILD_DIR)/asm/src/Cursor_8045df30.o \
 $(BUILD_DIR)/asm/src/Delete_8045df68.o \
 $(BUILD_DIR)/asm/src/DeleteConfirm_8045dfc8.o \
@@ -4641,11 +4636,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ControlIcon_80557930.o \
-$(BUILD_DIR)/asm/src/ControlPanel_80557958.o \
-$(BUILD_DIR)/asm/src/LoadIcon_805579e0.o \
-$(BUILD_DIR)/asm/src/Main_80557a00.o \
-$(BUILD_DIR)/asm/src/Player_80557a10.o \
 $(BUILD_DIR)/asm/src/Cursor_80557a18.o \
 $(BUILD_DIR)/asm/src/Delete_80557a70.o \
 $(BUILD_DIR)/asm/src/DeleteConfirm_80557a98.o \
@@ -4932,7 +4922,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/SceneAnime_8055d2e0.o \
 $(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055d2f0.o \
 $(BUILD_DIR)/asm/src/Table_8055d300.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8055d308.o \
@@ -5032,10 +5021,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/ControlPanel_8055fce0.o \
-$(BUILD_DIR)/asm/src/LoadIcon_8055fce8.o \
-$(BUILD_DIR)/asm/src/Main_8055fcf0.o \
-$(BUILD_DIR)/asm/src/Player_8055fcf8.o \
 $(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055fd28.o \
 $(BUILD_DIR)/asm/src/Trophy_8055fd58.o \
 $(BUILD_DIR)/asm/src/Table_8055fd90.o \

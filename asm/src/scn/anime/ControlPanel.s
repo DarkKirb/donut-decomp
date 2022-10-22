@@ -838,3 +838,225 @@ unselectAllCursor__Q33scn5anime12ControlPanelFv:
 /* 801E0BB4 001DC9F4  7C 08 03 A6 */	mtlr r0
 /* 801E0BB8 001DC9F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801E0BBC 001DC9FC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52991"
+"@52991":
+
+	.4byte 0x4D757369
+	.4byte 0x63436F6E
+	.4byte 0x74726F6C
+	.4byte 0x50616E65
+	.4byte 0x6C000000
+	.4byte 0x416E696D
+	.4byte 0x65436F6E
+	.4byte 0x74726F6C
+	.4byte 0x50616E65
+	.4byte 0x6C000000
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x44657461
+	.4byte 0x696C0000
+	.4byte 0x416E696D
+	.4byte 0x65536372
+	.4byte 0x6F6C6C54
+	.4byte 0x61620000
+	.4byte 0x52655769
+	.4byte 0x6E644275
+	.4byte 0x74746F6E
+	.4byte 0
+	.4byte 0x416E696D
+	.4byte 0x65427574
+	.4byte 0x746F6E43
+	.4byte 0x7572736F
+	.4byte 0x72000000
+	.4byte 0x506C6179
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
+	.4byte 0x466F7277
+	.4byte 0x61726442
+	.4byte 0x7574746F
+	.4byte 0x6E000000
+	.4byte 0x466F7277
+	.4byte 0x6172644E
+	.4byte 0
+	.4byte 0x54616243
+	.4byte 0x7572736F
+	.4byte 0x724E0000
+
+.global "@53065_8045DCC0"
+"@53065_8045DCC0":
+
+	.4byte 0x44697361
+	.4byte 0x70706561
+	.4byte 0x72000000
+
+.global "@53082_8045DCCC"
+"@53082_8045DCCC":
+
+	.4byte 0x43757272
+	.4byte 0x656E744D
+	.4byte 0x696E5400
+
+.global "@53084_8045DCD8"
+"@53084_8045DCD8":
+
+	.4byte 0x43757272
+	.4byte 0x656E7453
+	.4byte 0x65636F6E
+	.4byte 0x64540000
+
+.global "@53095_8045DCE8"
+"@53095_8045DCE8":
+
+	.4byte 0x546F7461
+	.4byte 0x6C4D696E
+	.4byte 0x54000000
+
+.global "@53096_8045DCF4"
+"@53096_8045DCF4":
+
+	.4byte 0x546F7461
+	.4byte 0x6C536563
+	.4byte 0x6F6E6454
+	.4byte 0
+
+.global "@53145_8045DD04"
+"@53145_8045DD04":
+
+	.4byte 0x4E6F7453
+	.4byte 0x656C6563
+	.4byte 0x74000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52999"
+"@52999":
+
+	.4byte 0x4261636B
+	.4byte 0x4E000000
+
+.global "@53000"
+"@53000":
+
+	.4byte 0x5461624E
+	.4byte 0
+
+.global "@53001"
+"@53001":
+
+	.4byte 0x52657769
+	.4byte 0x6E644E00
+
+.global "@53002_80557970"
+"@53002_80557970":
+
+	.4byte 0x43757273
+	.4byte 0x6F724E00
+
+.global "@53003_80557978"
+"@53003_80557978":
+
+	.4byte 0x506C6179
+	.4byte 0x4E000000
+
+.global "@53005_80557980"
+"@53005_80557980":
+
+	.4byte 0x456E6400
+
+.global "@53006"
+"@53006":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53008"
+"@53008":
+
+	.4byte 0x57616974
+	.4byte 0x32000000
+
+.global "@53061_80557994"
+"@53061_80557994":
+
+	.4byte 0x41707065
+	.4byte 0x61720000
+
+.global "@53083_8055799C"
+"@53083_8055799C":
+
+	.4byte 0x25303275
+	.4byte 0
+
+.global "@52254_805579A4"
+"@52254_805579A4":
+
+	.4byte 0
+
+.global "@52255_805579A8"
+"@52255_805579A8":
+
+	.4byte 0x3F800000
+
+.global "@53110_805579AC"
+"@53110_805579AC":
+
+	.4byte 0x53656C65
+	.4byte 0x63740000
+
+.global "@53114_805579B4"
+"@53114_805579B4":
+
+	.4byte 0x50757368
+	.4byte 0
+
+.global "@53119_805579BC"
+"@53119_805579BC":
+
+	.4byte 0x50757368
+	.4byte 0x32000000
+
+.global "@53120_805579C4"
+"@53120_805579C4":
+
+	.4byte 0x57616974
+	.4byte 0x31000000
+
+.global "@53121_805579CC"
+"@53121_805579CC":
+
+	.4byte 0x50757368
+	.4byte 0x31000000
+	.4byte 0
+
+.global "@53139_805579D8"
+"@53139_805579D8":
+
+	.4byte 0x52656C65
+	.4byte 0x61736500
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53102_8055FCE0"
+"@53102_8055FCE0":
+
+	.4byte 0
+
+.global "@53103_8055FCE4"
+"@53103_8055FCE4":
+
+	.4byte 0x42C60000

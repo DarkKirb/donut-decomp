@@ -202,3 +202,69 @@ disappear__Q33scn5anime8LoadIconFv:
 /* 801E0E78 001DCCB8  38 00 00 00 */	li r0, 0x0
 /* 801E0E7C 001DCCBC  90 03 00 00 */	stw r0, 0x0(r3)
 /* 801E0E80 001DCCC0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52060_8045DD40"
+"@52060_8045DD40":
+
+	.4byte 0x6D6F7669
+	.4byte 0x652F4D61
+	.4byte 0x696E0000
+	.4byte 0x4C6F6164
+	.4byte 0x42617365
+	.4byte 0
+	.4byte 0x4C6F6164
+	.4byte 0x49636F6E
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52063"
+"@52063":
+
+	.4byte 0x49636F6E
+	.4byte 0x4E000000
+
+.global "@52066"
+"@52066":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52106_805579F0"
+"@52106_805579F0":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@52107_805579F8"
+"@52107_805579F8":
+
+	.4byte 0x456E6400
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52064"
+"@52064":
+
+	.4byte 0xC2C80000
+
+.global "@52065"
+"@52065":
+
+	.4byte 0

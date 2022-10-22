@@ -976,10 +976,11 @@ $(BUILD_DIR)/asm/src/msg/Manager.o \
 $(BUILD_DIR)/asm/src/msg/Message.o \
 $(BUILD_DIR)/asm/src/msg/Project.o \
 \
+$(BUILD_DIR)/asm/src/nand/NandManager.o \
+$(BUILD_DIR)/asm/src/nand/NandThread.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/NandManager_801d17cc.o \
-$(BUILD_DIR)/asm/src/NandThread_801d1950.o \
 $(BUILD_DIR)/asm/src/Manager_801d3028.o \
 $(BUILD_DIR)/asm/src/Nururi_801d347c.o \
 $(BUILD_DIR)/asm/src/Attack_801d3a10.o \
@@ -3017,7 +3018,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/NandThread_80414dd0.o \
 $(BUILD_DIR)/asm/src/Gimmick_80414e88.o \
 $(BUILD_DIR)/asm/src/Constant_80415068.o \
 $(BUILD_DIR)/asm/src/ManualData_80415080.o \
@@ -3139,7 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/NandThread_8045d2b8.o \
 $(BUILD_DIR)/asm/src/Nururi_8045d3c8.o \
 $(BUILD_DIR)/asm/src/Hit_8045d3d8.o \
 $(BUILD_DIR)/asm/src/SearchAttack_8045d3e8.o \
@@ -4657,7 +4656,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/NandThread_80557638.o \
 $(BUILD_DIR)/asm/src/ParamAccessor_80557658.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_80557660.o \
 $(BUILD_DIR)/asm/src/Component_80557670.o \

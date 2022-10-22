@@ -1053,26 +1053,27 @@ $(BUILD_DIR)/asm/src/scn/challengefileselect/Trophy.o \
 \
 $(BUILD_DIR)/asm/src/scn/challengefileselect/effect/Table.o \
 \
+$(BUILD_DIR)/asm/src/scn/challengetitle/AbilityKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/BGModel.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Chara.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/CharaManager.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/CinemaScope.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Commander.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Component.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/EffectManager.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Flash.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/G3DRootSet.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Gear.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Hat.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Mahoroa.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Main.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/MintManager.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/SceneChallengeTitle.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/Shadow.o \
+$(BUILD_DIR)/asm/src/scn/challengetitle/TitleInfo.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_801ea168.o \
-$(BUILD_DIR)/asm/src/BGModel_801ea59c.o \
-$(BUILD_DIR)/asm/src/Chara_801ea674.o \
-$(BUILD_DIR)/asm/src/CharaManager_801eb280.o \
-$(BUILD_DIR)/asm/src/CinemaScope_801ebc64.o \
-$(BUILD_DIR)/asm/src/Commander_801ebcf0.o \
-$(BUILD_DIR)/asm/src/Component_801ec44c.o \
-$(BUILD_DIR)/asm/src/EffectManager_801ed0dc.o \
-$(BUILD_DIR)/asm/src/Flash_801ed4a0.o \
-$(BUILD_DIR)/asm/src/G3DRootSet_801ed900.o \
-$(BUILD_DIR)/asm/src/Gear_801edea8.o \
-$(BUILD_DIR)/asm/src/Hat_801ee1dc.o \
-$(BUILD_DIR)/asm/src/Mahoroa_801ee6f8.o \
-$(BUILD_DIR)/asm/src/Main_801eebd0.o \
-$(BUILD_DIR)/asm/src/MintManager_801ef484.o \
-$(BUILD_DIR)/asm/src/SceneChallengeTitle_801ef56c.o \
-$(BUILD_DIR)/asm/src/Shadow_801efbc0.o \
-$(BUILD_DIR)/asm/src/TitleInfo_801efde8.o \
 $(BUILD_DIR)/asm/src/Table_801f045c.o \
 $(BUILD_DIR)/asm/src/SceneChallengeResult_801f0548.o \
 $(BUILD_DIR)/asm/src/Manager_801f10c0.o \
@@ -2971,7 +2972,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/Commander_8040634c.o \
 $(BUILD_DIR)/asm/src/BG_80406354.o \
 $(BUILD_DIR)/asm/src/Kirby_80406358.o \
 $(BUILD_DIR)/asm/src/Package_8040635c.o \
@@ -3026,8 +3026,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Chara_80415620.o \
-$(BUILD_DIR)/asm/src/Flash_80415688.o \
 $(BUILD_DIR)/asm/src/Table_804158c8.o \
 $(BUILD_DIR)/asm/src/AbilityPanel_804158f0.o \
 $(BUILD_DIR)/asm/src/AbilitySelect_80415948.o \
@@ -3137,21 +3135,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_8045e998.o \
-$(BUILD_DIR)/asm/src/BGModel_8045eab0.o \
-$(BUILD_DIR)/asm/src/Chara_8045ead0.o \
-$(BUILD_DIR)/asm/src/CharaManager_8045eb78.o \
-$(BUILD_DIR)/asm/src/CinemaScope_8045eb98.o \
-$(BUILD_DIR)/asm/src/Commander_8045eba8.o \
-$(BUILD_DIR)/asm/src/Component_8045ec30.o \
-$(BUILD_DIR)/asm/src/Gear_8045ec48.o \
-$(BUILD_DIR)/asm/src/Hat_8045ec58.o \
-$(BUILD_DIR)/asm/src/Mahoroa_8045ec78.o \
-$(BUILD_DIR)/asm/src/Main_8045ed18.o \
-$(BUILD_DIR)/asm/src/MintManager_8045ed60.o \
-$(BUILD_DIR)/asm/src/SceneChallengeTitle_8045ed78.o \
-$(BUILD_DIR)/asm/src/Shadow_8045ee68.o \
-$(BUILD_DIR)/asm/src/TitleInfo_8045ee88.o \
 $(BUILD_DIR)/asm/src/Table_8045ef38.o \
 $(BUILD_DIR)/asm/src/SceneChallengeResult_8045eff0.o \
 $(BUILD_DIR)/asm/src/Table_8045f028.o \
@@ -4580,7 +4563,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_80545f20.o \
 $(BUILD_DIR)/asm/src/Table_805461d0.o \
 $(BUILD_DIR)/asm/src/BG_80546780.o \
 $(BUILD_DIR)/asm/src/Kirby_80546790.o \
@@ -4620,16 +4602,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_80557c98.o \
-$(BUILD_DIR)/asm/src/BGModel_80557cb0.o \
-$(BUILD_DIR)/asm/src/Chara_80557cb8.o \
-$(BUILD_DIR)/asm/src/CharaManager_80557cf8.o \
-$(BUILD_DIR)/asm/src/Gear_80557d30.o \
-$(BUILD_DIR)/asm/src/Hat_80557d40.o \
-$(BUILD_DIR)/asm/src/Mahoroa_80557d70.o \
-$(BUILD_DIR)/asm/src/MintManager_80557d78.o \
-$(BUILD_DIR)/asm/src/Shadow_80557d90.o \
-$(BUILD_DIR)/asm/src/TitleInfo_80557da8.o \
 $(BUILD_DIR)/asm/src/Table_80557dd8.o \
 $(BUILD_DIR)/asm/src/SceneChallengeResult_80557de8.o \
 $(BUILD_DIR)/asm/src/Table_80557df0.o \
@@ -4896,9 +4868,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_8055d308.o \
-$(BUILD_DIR)/asm/src/Commander_8055d318.o \
-$(BUILD_DIR)/asm/src/SceneChallengeTitle_8055d320.o \
 $(BUILD_DIR)/asm/src/Table_8055d330.o \
 $(BUILD_DIR)/asm/src/SceneChallengeResult_8055d338.o \
 $(BUILD_DIR)/asm/src/Table_8055d348.o \
@@ -4993,17 +4962,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AbilityKindUtil_8055fda0.o \
-$(BUILD_DIR)/asm/src/Chara_8055fda8.o \
-$(BUILD_DIR)/asm/src/CharaManager_8055fdb8.o \
-$(BUILD_DIR)/asm/src/Commander_8055fdc8.o \
-$(BUILD_DIR)/asm/src/Component_8055fdd0.o \
-$(BUILD_DIR)/asm/src/EffectManager_8055fdd8.o \
-$(BUILD_DIR)/asm/src/Flash_8055fde0.o \
-$(BUILD_DIR)/asm/src/Gear_8055fe00.o \
-$(BUILD_DIR)/asm/src/Mahoroa_8055fe08.o \
-$(BUILD_DIR)/asm/src/Main_8055fe10.o \
-$(BUILD_DIR)/asm/src/TitleInfo_8055fe18.o \
 $(BUILD_DIR)/asm/src/Table_8055fe20.o \
 $(BUILD_DIR)/asm/src/SceneChallengeResult_8055fe28.o \
 $(BUILD_DIR)/asm/src/Manager_8055fe50.o \

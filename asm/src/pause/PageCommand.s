@@ -520,3 +520,105 @@ lbl_801DCE4C:
 /* 801DCE5C 001D8C9C  7C 08 03 A6 */	mtlr r0
 /* 801DCE60 001D8CA0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DCE64 001D8CA4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52946"
+"@52946":
+
+	.4byte 0x436F6D6D
+	.4byte 0x616E6457
+	.4byte 0x696E646F
+	.4byte 0x77000000
+	.4byte 0x4672616D
+	.4byte 0x6555704E
+	.4byte 0
+	.4byte 0x4672616D
+	.4byte 0x65446F77
+	.4byte 0x6E4E0000
+	.4byte 0x436F6D6D
+	.4byte 0x616E6454
+	.4byte 0x65787400
+	.4byte 0x436F6D6D
+	.4byte 0x616E6425
+	.4byte 0x6C75256C
+	.4byte 0x754E0000
+	.4byte 0
+	.4byte 0x536B696C
+	.4byte 0x6C4E616D
+	.4byte 0x65546578
+	.4byte 0x744C3400
+	.4byte 0x436F6D6D
+	.4byte 0x616E6454
+	.4byte 0x6578744C
+	.4byte 0x34000000
+	.4byte 0x436F6D6D
+	.4byte 0x656E7454
+	.4byte 0x65787400
+	.4byte 0
+	.4byte 0x536B696C
+	.4byte 0x6C4E616D
+	.4byte 0x65546578
+	.4byte 0x744C3200
+	.4byte 0x436F6D6D
+	.4byte 0x616E6454
+	.4byte 0x6578744C
+	.4byte 0x31000000
+	.4byte 0x436F6D6D
+	.4byte 0x616E6454
+	.4byte 0x6578744C
+	.4byte 0x32000000
+
+.global __vt__Q25pause11PageCommand
+__vt__Q25pause11PageCommand:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q25pause11PageCommandFv
+	.4byte pageFrameTitle__Q25pause11PageCommandCFv
+	.4byte pageMainLayout__Q25pause11PageCommandFv
+	.4byte pageProcAnim__Q25pause11PageCommandFv
+	.4byte pageProcHID__Q25pause11PageCommandFv
+	.4byte pageIsBusy__Q25pause11PageCommandCFv
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52951"
+"@52951":
+
+	.4byte 0x4C324E00
+
+.global "@52954"
+"@52954":
+
+	.4byte 0x4C344E00
+
+.global "@52955"
+"@52955":
+
+	.4byte 0x47726F75
+	.4byte 0x70314E00
+
+.global "@52957"
+"@52957":
+
+	.4byte 0x47726F75
+	.4byte 0x70324E00
+
+.global "@53024_805578D0"
+"@53024_805578D0":
+
+	.4byte 0x25732564
+	.4byte 0

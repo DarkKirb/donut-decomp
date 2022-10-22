@@ -110,3 +110,13 @@ decide__Q25pause10ClosePanelFv:
 isDecideAnimating__Q25pause10ClosePanelCFv:
 /* 801DA8C8 001D6708  88 63 03 A8 */	lbz r3, 0x3a8(r3)
 /* 801DA8CC 001D670C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52084_8045D460"
+"@52084_8045D460":
+
+	.4byte 0x50617573
+	.4byte 0x65436C6F
+	.4byte 0x73654E00
+	.4byte 0

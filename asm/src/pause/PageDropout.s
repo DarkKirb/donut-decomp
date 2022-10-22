@@ -851,3 +851,231 @@ lbl_801DD99C:
 /* 801DD9AC 001D97EC  7C 08 03 A6 */	mtlr r0
 /* 801DD9B0 001D97F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DD9B4 001D97F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ENTRIES_CHALLENGE__Q25pause25@unnamed@PageDropout_cpp@"
+"T_ENTRIES_CHALLENGE__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte 0
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0
+
+.global "T_ENTRY_CONTEXTS__Q25pause25@unnamed@PageDropout_cpp@"
+"T_ENTRY_CONTEXTS__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte "T_ENTRIES_STAGE__Q25pause25@unnamed@PageDropout_cpp@"
+	.4byte 0x00000002
+	.4byte "T_ENTRIES_LEVELMAP__Q25pause25@unnamed@PageDropout_cpp@"
+	.4byte 0x00000002
+	.4byte "T_ENTRIES_CHALLENGE__Q25pause25@unnamed@PageDropout_cpp@"
+	.4byte 0x00000003
+	.4byte "T_ENTRIES_ABILITYROOM__Q25pause25@unnamed@PageDropout_cpp@"
+	.4byte 0x00000002
+
+.global "T_LABELS__Q25pause25@unnamed@PageDropout_cpp@"
+"T_LABELS__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte "@52145_8045D8E8"
+	.4byte "@52146_8045D8F4"
+	.4byte "@52146_8045D8F4"
+	.4byte "@52147_8045D900"
+	.4byte "@52148_8045D914"
+	.4byte "@52149"
+	.4byte "@52149"
+	.4byte "@52146_8045D8F4"
+	.4byte "@52150"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52145_8045D8E8"
+"@52145_8045D8E8":
+
+	.4byte 0x436F6E74
+	.4byte 0x696E7565
+	.4byte 0
+
+.global "@52146_8045D8F4"
+"@52146_8045D8F4":
+
+	.4byte 0x45786974
+	.4byte 0x53746167
+	.4byte 0x65000000
+
+.global "@52147_8045D900"
+"@52147_8045D900":
+
+	.4byte 0x52657475
+	.4byte 0x726E4669
+	.4byte 0x6C655365
+	.4byte 0x6C656374
+	.4byte 0
+
+.global "@52148_8045D914"
+"@52148_8045D914":
+
+	.4byte 0x52657475
+	.4byte 0x726E4172
+	.4byte 0x65614D61
+	.4byte 0x70000000
+
+.global "@52150"
+"@52150":
+
+	.4byte 0x42617474
+	.4byte 0x6C654B69
+	.4byte 0x6E670000
+	.4byte 0x44726F70
+	.4byte 0x6F757457
+	.4byte 0x696E646F
+	.4byte 0x77000000
+	.4byte 0x436F6E66
+	.4byte 0x69726D4E
+	.4byte 0
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F4D
+	.4byte 0x61696E00
+	.4byte 0x436F6E66
+	.4byte 0x69726D57
+	.4byte 0x696E646F
+	.4byte 0x77000000
+	.4byte 0x42757474
+	.4byte 0x6F6E4131
+	.4byte 0x4E000000
+	.4byte 0x42757474
+	.4byte 0x6F6E4132
+	.4byte 0x4E000000
+	.4byte 0x42757474
+	.4byte 0x6F6E4231
+	.4byte 0x4E000000
+	.4byte 0x42757474
+	.4byte 0x6F6E4232
+	.4byte 0x4E000000
+	.4byte 0x42757474
+	.4byte 0x6F6E4233
+	.4byte 0x4E000000
+	.4byte 0x44726F70
+	.4byte 0x6F757425
+	.4byte 0x73000000
+
+.global "@53415_8045D9B0"
+"@53415_8045D9B0":
+
+	.4byte 0x50616765
+	.4byte 0x5469746C
+	.4byte 0x6544726F
+	.4byte 0x706F7574
+	.4byte 0
+	.4byte 0x44726F70
+	.4byte 0x6F757441
+	.4byte 0x6761696E
+	.4byte 0x32000000
+	.4byte 0x44726F70
+	.4byte 0x6F757452
+	.4byte 0x65747572
+	.4byte 0x6E46696C
+	.4byte 0x6553656C
+	.4byte 0x65637432
+	.4byte 0
+	.4byte 0x44726F70
+	.4byte 0x6F757442
+	.4byte 0x6174746C
+	.4byte 0x654B696E
+	.4byte 0x67320000
+	.4byte 0x436F6E66
+	.4byte 0x69726D4E
+	.4byte 0x6F745361
+	.4byte 0x76656432
+	.4byte 0
+	.4byte 0x436F6E66
+	.4byte 0x69726D4E
+	.4byte 0x6F745361
+	.4byte 0x76656400
+
+.global __vt__Q25pause11PageDropout
+__vt__Q25pause11PageDropout:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q25pause11PageDropoutFv
+	.4byte pageFrameTitle__Q25pause11PageDropoutCFv
+	.4byte pageMainLayout__Q25pause11PageDropoutFv
+	.4byte pageProcAnim__Q25pause11PageDropoutFv
+	.4byte pageProcHID__Q25pause11PageDropoutFv
+	.4byte pageIsBusy__Q25pause11PageDropoutCFv
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52149"
+"@52149":
+
+	.4byte 0x41676169
+	.4byte 0x6E000000
+
+.global "@53328"
+"@53328":
+
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
+
+.global "@53330_805578E8"
+"@53330_805578E8":
+
+	.4byte 0
+
+.global "@53338"
+"@53338":
+
+	.4byte 0
+
+.global "@53340"
+"@53340":
+
+	.4byte 0x42757474
+	.4byte 0x6F6E0000
+
+.global "@53493_805578F8"
+"@53493_805578F8":
+
+	.4byte 0x25735F59
+	.4byte 0x65730000
+
+.global "@53494_80557900"
+"@53494_80557900":
+
+	.4byte 0x25735F4E
+	.4byte 0x6F000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_ENTRIES_STAGE__Q25pause25@unnamed@PageDropout_cpp@"
+"T_ENTRIES_STAGE__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte 0
+	.4byte 0x00000002
+
+.global "T_ENTRIES_LEVELMAP__Q25pause25@unnamed@PageDropout_cpp@"
+"T_ENTRIES_LEVELMAP__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte 0
+	.4byte 0x00000003
+
+.global "T_ENTRIES_ABILITYROOM__Q25pause25@unnamed@PageDropout_cpp@"
+"T_ENTRIES_ABILITYROOM__Q25pause25@unnamed@PageDropout_cpp@":
+
+	.4byte 0
+	.4byte 0x00000004

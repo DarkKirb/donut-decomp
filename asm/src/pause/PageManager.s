@@ -1112,3 +1112,133 @@ Create__Q35pause11PageManager10PageRecipeFQ35pause11PageManager8PageKindUl:
 /* 801DE908 001DA748  90 81 00 0C */	stw r4, 0xc(r1)
 /* 801DE90C 001DA74C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DE910 001DA750  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@52644_80415490"
+"@52644_80415490":
+
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52168_8045DA78"
+"@52168_8045DA78":
+
+	.4byte 0x57696E64
+	.4byte 0x6F774669
+	.4byte 0x784E0000
+	.4byte 0x50617573
+	.4byte 0x65506167
+	.4byte 0x65000000
+	.4byte 0x50617573
+	.4byte 0x65437572
+	.4byte 0x736F7242
+	.4byte 0x61736500
+	.4byte 0x43757273
+	.4byte 0x6F724C4E
+	.4byte 0
+	.4byte 0x50617573
+	.4byte 0x65437572
+	.4byte 0x736F724C
+	.4byte 0
+	.4byte 0x43757273
+	.4byte 0x6F72524E
+	.4byte 0
+	.4byte 0x50617573
+	.4byte 0x65437572
+	.4byte 0x736F7252
+	.4byte 0
+	.4byte 0x50617573
+	.4byte 0x65437572
+	.4byte 0x736F724E
+	.4byte 0
+
+.global "@53970"
+"@53970":
+
+	.4byte 0x4E657874
+	.4byte 0x50616765
+	.4byte 0x32000000
+
+.global "@53971"
+"@53971":
+
+	.4byte 0x50726576
+	.4byte 0x50616765
+	.4byte 0x32000000
+
+.global "@54026_8045DB00"
+"@54026_8045DB00":
+
+	.4byte 0x6C79742F
+	.4byte 0x25732E61
+	.4byte 0x72630000
+
+.global "@54027_8045DB0C"
+"@54027_8045DB0C":
+
+	.4byte 0x25732E63
+	.4byte 0x6D706269
+	.4byte 0x6E000000
+
+.global "@54051_8045DB18"
+"@54051_8045DB18":
+
+	.4byte 0x4E657874
+	.4byte 0x50616765
+	.4byte 0x31000000
+
+.global "@54052_8045DB24"
+"@54052_8045DB24":
+
+	.4byte 0x50726576
+	.4byte 0x50616765
+	.4byte 0x31000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52167_80557908"
+"@52167_80557908":
+
+	.4byte 0x57696E64
+	.4byte 0x6F774E00
+
+.global "@53830"
+"@53830":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@54028"
+"@54028":
+
+	.4byte 0x25732E63
+	.4byte 0x6D700000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_MOVE_NODE_NAME__Q25pause25@unnamed@PageManager_cpp@"
+"T_MOVE_NODE_NAME__Q25pause25@unnamed@PageManager_cpp@":
+
+	.4byte "@52167_80557908"
+
+.global "T_FIX_NODE_NAME__Q25pause25@unnamed@PageManager_cpp@"
+"T_FIX_NODE_NAME__Q25pause25@unnamed@PageManager_cpp@":
+
+	.4byte "@52168_8045DA78"

@@ -58,3 +58,27 @@ __ct__Q25pause11WindowPanelFRQ25pause9ComponentRCQ23lyt12PaneAccessorb:
 /* 801DF3D4 001DB214  7C 08 03 A6 */	mtlr r0
 /* 801DF3D8 001DB218  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801DF3DC 001DB21C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52028"
+"@52028":
+
+	.4byte 0x50617474
+	.4byte 0x65726E30
+	.4byte 0x314E0000
+
+.global "@52029"
+"@52029":
+
+	.4byte 0x50617474
+	.4byte 0x65726E30
+	.4byte 0x324E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52027"
+"@52027":
+
+	.4byte 0x57696E64
+	.4byte 0x6F770000

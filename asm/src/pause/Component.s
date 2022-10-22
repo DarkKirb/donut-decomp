@@ -732,3 +732,27 @@ addWiiRemote__Q25pause9ComponentCFv:
 pageManager__Q25pause9ComponentFv:
 /* 801DB284 001D70C4  38 63 00 C0 */	addi r3, r3, 0xc0
 /* 801DB288 001D70C8  4B F9 C9 64 */	b "__rf__Q23mem43ExplicitScopedPtr<Q23app16HIDErrorMenuImpl>CFv"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53837_80557670"
+"@53837_80557670":
+
+	.4byte 0x50617573
+	.4byte 0x65000000
+
+.global "@53838_80557678"
+"@53838_80557678":
+
+	.4byte 0x42670000
+
+.global "@53839_8055767C"
+"@53839_8055767C":
+
+	.4byte 0x42674E00
+
+.global "@53840_80557680"
+"@53840_80557680":
+
+	.4byte 0x57616974
+	.4byte 0

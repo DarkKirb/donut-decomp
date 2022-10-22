@@ -1012,26 +1012,27 @@ $(BUILD_DIR)/asm/src/ostop/ReqHandle.o \
 $(BUILD_DIR)/asm/src/param/JITParam.o \
 $(BUILD_DIR)/asm/src/param/ParamAccessor.o \
 \
+$(BUILD_DIR)/asm/src/pause/ButtonPanel.o \
+$(BUILD_DIR)/asm/src/pause/ClosePanel.o \
+$(BUILD_DIR)/asm/src/pause/Component.o \
+$(BUILD_DIR)/asm/src/pause/Constant.o \
+$(BUILD_DIR)/asm/src/pause/ContextInit.o \
+$(BUILD_DIR)/asm/src/pause/ContextOpen.o \
+$(BUILD_DIR)/asm/src/pause/CursorPanel.o \
+$(BUILD_DIR)/asm/src/pause/FramePanel.o \
+$(BUILD_DIR)/asm/src/pause/HID.o \
+$(BUILD_DIR)/asm/src/pause/ManualData.o \
+$(BUILD_DIR)/asm/src/pause/PageAbility.o \
+$(BUILD_DIR)/asm/src/pause/PageCommand.o \
+$(BUILD_DIR)/asm/src/pause/PageDropout.o \
+$(BUILD_DIR)/asm/src/pause/PageManager.o \
+$(BUILD_DIR)/asm/src/pause/Pause.o \
+$(BUILD_DIR)/asm/src/pause/PlayerEntryInfo.o \
+$(BUILD_DIR)/asm/src/pause/ResultSetter.o \
+$(BUILD_DIR)/asm/src/pause/WindowPanel.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/ButtonPanel_801da574.o \
-$(BUILD_DIR)/asm/src/ClosePanel_801da754.o \
-$(BUILD_DIR)/asm/src/Component_801da8d0.o \
-$(BUILD_DIR)/asm/src/Constant_801db28c.o \
-$(BUILD_DIR)/asm/src/ContextInit_801db2ac.o \
-$(BUILD_DIR)/asm/src/ContextOpen_801db318.o \
-$(BUILD_DIR)/asm/src/CursorPanel_801db404.o \
-$(BUILD_DIR)/asm/src/FramePanel_801db5d0.o \
-$(BUILD_DIR)/asm/src/HID_801dbd40.o \
-$(BUILD_DIR)/asm/src/ManualData_801dbe24.o \
-$(BUILD_DIR)/asm/src/PageAbility_801dc458.o \
-$(BUILD_DIR)/asm/src/PageCommand_801dc734.o \
-$(BUILD_DIR)/asm/src/PageDropout_801dce68.o \
-$(BUILD_DIR)/asm/src/PageManager_801dd9b8.o \
-$(BUILD_DIR)/asm/src/Pause_801de914.o \
-$(BUILD_DIR)/asm/src/PlayerEntryInfo_801df204.o \
-$(BUILD_DIR)/asm/src/ResultSetter_801df2e4.o \
-$(BUILD_DIR)/asm/src/WindowPanel_801df304.o \
 $(BUILD_DIR)/asm/src/PreLoadManager_801df3e0.o \
 $(BUILD_DIR)/asm/src/ControlIcon_801dfc90.o \
 $(BUILD_DIR)/asm/src/ControlPanel_801e001c.o \
@@ -3022,10 +3023,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Constant_80415068.o \
-$(BUILD_DIR)/asm/src/ManualData_80415080.o \
-$(BUILD_DIR)/asm/src/PageDropout_80415438.o \
-$(BUILD_DIR)/asm/src/PageManager_80415490.o \
 $(BUILD_DIR)/asm/src/Player_804154a0.o \
 $(BUILD_DIR)/asm/src/Cursor_804154c8.o \
 $(BUILD_DIR)/asm/src/File_804154f0.o \
@@ -3142,17 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/ButtonPanel_8045d420.o \
-$(BUILD_DIR)/asm/src/ClosePanel_8045d460.o \
-$(BUILD_DIR)/asm/src/Constant_8045d470.o \
-$(BUILD_DIR)/asm/src/FramePanel_8045d4a8.o \
-$(BUILD_DIR)/asm/src/ManualData_8045d558.o \
-$(BUILD_DIR)/asm/src/PageAbility_8045d768.o \
-$(BUILD_DIR)/asm/src/PageCommand_8045d7f0.o \
-$(BUILD_DIR)/asm/src/PageDropout_8045d8e8.o \
-$(BUILD_DIR)/asm/src/PageManager_8045da78.o \
-$(BUILD_DIR)/asm/src/Pause_8045db60.o \
-$(BUILD_DIR)/asm/src/WindowPanel_8045db70.o \
 $(BUILD_DIR)/asm/src/ControlIcon_8045db88.o \
 $(BUILD_DIR)/asm/src/ControlPanel_8045dc20.o \
 $(BUILD_DIR)/asm/src/LoadIcon_8045dd40.o \
@@ -4654,17 +4640,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ButtonPanel_80557660.o \
-$(BUILD_DIR)/asm/src/Component_80557670.o \
-$(BUILD_DIR)/asm/src/CursorPanel_80557688.o \
-$(BUILD_DIR)/asm/src/FramePanel_805576a0.o \
-$(BUILD_DIR)/asm/src/ManualData_80557710.o \
-$(BUILD_DIR)/asm/src/PageAbility_80557898.o \
-$(BUILD_DIR)/asm/src/PageCommand_805578b8.o \
-$(BUILD_DIR)/asm/src/PageDropout_805578d8.o \
-$(BUILD_DIR)/asm/src/PageManager_80557908.o \
-$(BUILD_DIR)/asm/src/Pause_80557920.o \
-$(BUILD_DIR)/asm/src/WindowPanel_80557928.o \
 $(BUILD_DIR)/asm/src/ControlIcon_80557930.o \
 $(BUILD_DIR)/asm/src/ControlPanel_80557958.o \
 $(BUILD_DIR)/asm/src/LoadIcon_805579e0.o \
@@ -5056,9 +5031,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/FramePanel_8055fcb8.o \
-$(BUILD_DIR)/asm/src/PageDropout_8055fcc0.o \
-$(BUILD_DIR)/asm/src/PageManager_8055fcd8.o \
 $(BUILD_DIR)/asm/src/ControlPanel_8055fce0.o \
 $(BUILD_DIR)/asm/src/LoadIcon_8055fce8.o \
 $(BUILD_DIR)/asm/src/Main_8055fcf0.o \

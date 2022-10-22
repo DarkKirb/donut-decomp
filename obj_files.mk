@@ -1051,9 +1051,10 @@ $(BUILD_DIR)/asm/src/scn/challengefileselect/SceneChallengeFileSelect.o \
 $(BUILD_DIR)/asm/src/scn/challengefileselect/StaffCredit.o \
 $(BUILD_DIR)/asm/src/scn/challengefileselect/Trophy.o \
 \
+$(BUILD_DIR)/asm/src/scn/challengefileselect/effect/Table.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Table_801ea0d0.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_801ea168.o \
 $(BUILD_DIR)/asm/src/BGModel_801ea59c.o \
 $(BUILD_DIR)/asm/src/Chara_801ea674.o \
@@ -3136,7 +3137,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Table_8045e968.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8045e998.o \
 $(BUILD_DIR)/asm/src/BGModel_8045eab0.o \
 $(BUILD_DIR)/asm/src/Chara_8045ead0.o \
@@ -4580,7 +4580,6 @@ $(BUILD_DIR)/asm/src/Alarm_804966e0.o \
 $(BUILD_DIR)/asm/src/StateChanger_804966f0.o
 # .bss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Table_80545ee0.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_80545f20.o \
 $(BUILD_DIR)/asm/src/Table_805461d0.o \
 $(BUILD_DIR)/asm/src/BG_80546780.o \
@@ -4897,7 +4896,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Table_8055d300.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8055d308.o \
 $(BUILD_DIR)/asm/src/Commander_8055d318.o \
 $(BUILD_DIR)/asm/src/SceneChallengeTitle_8055d320.o \
@@ -4995,7 +4993,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Table_8055fd90.o \
 $(BUILD_DIR)/asm/src/AbilityKindUtil_8055fda0.o \
 $(BUILD_DIR)/asm/src/Chara_8055fda8.o \
 $(BUILD_DIR)/asm/src/CharaManager_8055fdb8.o \

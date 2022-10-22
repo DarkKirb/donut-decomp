@@ -47,3 +47,59 @@ PtclResPath__Q43scn19challengefileselect6effect5TableFQ43scn19challengefileselec
 /* 801EA15C 001E5F9C  7C 64 02 14 */	add r3, r4, r0
 /* 801EA160 001E5FA0  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801EA164 001E5FA4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48738_8045E968"
+"@48738_8045E968":
+
+	.4byte 0x46696C65
+	.4byte 0x44656C65
+	.4byte 0x74650000
+
+.global "@48739_8045E974"
+"@48739_8045E974":
+
+	.4byte 0x73746570
+	.4byte 0x2F6F626A
+	.4byte 0x2F507446
+	.4byte 0x696C6544
+	.4byte 0x656C6574
+	.4byte 0x65000000
+
+.global "@48839_8045E98C"
+"@48839_8045E98C":
+
+	.4byte 0x46696C65
+	.4byte 0x44656C65
+	.4byte 0x74650000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@t_genContextHeader__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@LOCAL@t_genContextHeader__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x40
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@t_genContextHeader__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@GUARD@t_genContextHeader__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_PTCL_INFOS__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@"
+"T_PTCL_INFOS__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@":
+
+	.4byte "@48738_8045E968"
+	.4byte "@48739_8045E974"
+
+.global "@48833_8055FD98"
+"@48833_8055FD98":
+
+	.4byte 0x00000001
+
+.global lbl_8055FD9C
+lbl_8055FD9C:
+
+	.4byte "@LOCAL@t_genContextHeader__Q43scn19challengefileselect6effect19@unnamed@Table_cpp@Fv@CONTEXTS"

@@ -15,7 +15,7 @@ VacuumCount__Q43scn4step6vacuum12MintAttackerFv:
 /* 803D30AC 003CEEEC  80 6D F9 38 */	lwz r3, "t_obj__Q43scn4step6vacuum26@unnamed@MintAttacker_cpp@"@sda21(r13)
 /* 803D30B0 003CEEF0  4B D4 DD C0 */	b Tell__Q34nw4r2ut13DvdFileStreamCFv
 
-.global "__sinit_\\MintAttacker_cpp"
-"__sinit_\\MintAttacker_cpp":
+.global "__sinit_@@1MintAttacker_cpp"
+"__sinit_@@1MintAttacker_cpp":
 /* 803D30B4 003CEEF4  38 6D F9 38 */	addi r3, r13, "t_obj__Q43scn4step6vacuum26@unnamed@MintAttacker_cpp@"@sda21
 /* 803D30B8 003CEEF8  4B D0 A3 28 */	b __ct__Q34nw4r3g3d8LightObjFv

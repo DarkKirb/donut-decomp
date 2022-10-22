@@ -68,14 +68,14 @@ CurrentG3DAnimIndex__Q24gobj12MintGearAnimFv:
 /* 8019AD24 00196B64  80 6D ED B0 */	lwz r3, "t_obj__Q24gobj26@unnamed@MintGearAnim_cpp@"@sda21(r13)
 /* 8019AD28 00196B68  4B F8 F2 88 */	b getPane__Q310homebutton3gui13PaneComponentFv
 
-.global "__sinit_\\MintGearAnim_cpp"
-"__sinit_\\MintGearAnim_cpp":
+.global "__sinit_@@1MintGearAnim_cpp"
+"__sinit_@@1MintGearAnim_cpp":
 /* 8019AD2C 00196B6C  38 6D ED B0 */	addi r3, r13, "t_obj__Q24gobj26@unnamed@MintGearAnim_cpp@"@sda21
 /* 8019AD30 00196B70  4B F4 26 B0 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintGearAnim_cpp"
+	.4byte "__sinit_@@1MintGearAnim_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

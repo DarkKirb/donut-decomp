@@ -148,8 +148,8 @@ lbl_802B7860:
 /* 802B78C0 002B3700  38 21 00 30 */	addi r1, r1, 0x30
 /* 802B78C4 002B3704  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_802B78C8"
-"__sinit_\\ModelDesc_cpp_802B78C8":
+.global "__sinit_@@1ModelDesc_cpp_802B78C8"
+"__sinit_@@1ModelDesc_cpp_802B78C8":
 /* 802B78C8 002B3708  80 0D 89 E4 */	lwz r0, PLAY_ONE_SHOT__Q24gobj10AnimScript@sda21(r13)
 /* 802B78CC 002B370C  3C 60 80 47 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@ha
 /* 802B78D0 002B3710  90 03 73 90 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@l(r3)

@@ -62,14 +62,14 @@ SetSpeedD__Q24gobj8MintMoveFf:
 /* 8019AF34 00196D74  80 6D ED D0 */	lwz r3, "t_obj__Q24gobj22@unnamed@MintMove_cpp@"@sda21(r13)
 /* 8019AF38 00196D78  48 00 04 50 */	b setSpeedD__Q24gobj4MoveFf
 
-.global "__sinit_\\MintMove_cpp"
-"__sinit_\\MintMove_cpp":
+.global "__sinit_@@1MintMove_cpp"
+"__sinit_@@1MintMove_cpp":
 /* 8019AF3C 00196D7C  38 6D ED D0 */	addi r3, r13, "t_obj__Q24gobj22@unnamed@MintMove_cpp@"@sda21
 /* 8019AF40 00196D80  4B F4 24 A0 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintMove_cpp"
+	.4byte "__sinit_@@1MintMove_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

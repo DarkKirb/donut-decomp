@@ -582,15 +582,15 @@ DrawLine__Q23gfx12EasyRender3DFRCQ33hel4math8Matrix34RCQ33hel4math7Vector3RCQ33h
 /* 80195840 00191680  38 21 00 30 */	addi r1, r1, 0x30
 /* 80195844 00191684  4E 80 00 20 */	blr
 
-.global "__sinit_\\EasyRender3D_cpp"
-"__sinit_\\EasyRender3D_cpp":
+.global "__sinit_@@1EasyRender3D_cpp"
+"__sinit_@@1EasyRender3D_cpp":
 /* 80195848 00191688  3C 60 80 54 */	lis r3, "t_viewMtx__26@unnamed@EasyRender3D_cpp@"@ha
 /* 8019584C 0019168C  38 63 48 28 */	addi r3, r3, "t_viewMtx__26@unnamed@EasyRender3D_cpp@"@l
 /* 80195850 00191690  4B FF F7 D4 */	b __ct__Q33hel4math8Matrix34Fv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\EasyRender3D_cpp"
+	.4byte "__sinit_@@1EasyRender3D_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

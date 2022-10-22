@@ -15,7 +15,7 @@ Obj__Q53scn4step7gimmick9shipevent13MintShipEventFv:
 /* 8031F7B4 0031B5F4  80 6D F7 C0 */	lwz r3, "t_obj__Q53scn4step7gimmick9shipevent27@unnamed@MintShipEvent_cpp@"@sda21(r13)
 /* 8031F7B8 0031B5F8  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintShipEvent_cpp"
-"__sinit_\\MintShipEvent_cpp":
+.global "__sinit_@@1MintShipEvent_cpp"
+"__sinit_@@1MintShipEvent_cpp":
 /* 8031F7BC 0031B5FC  38 6D F7 C0 */	addi r3, r13, "t_obj__Q53scn4step7gimmick9shipevent27@unnamed@MintShipEvent_cpp@"@sda21
 /* 8031F7C0 0031B600  4B DB DC 20 */	b __ct__Q34nw4r3g3d8LightObjFv

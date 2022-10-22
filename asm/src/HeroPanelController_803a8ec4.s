@@ -309,8 +309,8 @@ lbl_803A927C:
 /* 803A9308 003A5148  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A930C 003A514C  4E 80 00 20 */	blr
 
-.global "__sinit_\\HeroPanelController_cpp"
-"__sinit_\\HeroPanelController_cpp":
+.global "__sinit_@@1HeroPanelController_cpp"
+"__sinit_@@1HeroPanelController_cpp":
 /* 803A9310 003A5150  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 803A9314 003A5154  7C 08 02 A6 */	mflr r0
 /* 803A9318 003A5158  90 01 00 14 */	stw r0, 0x14(r1)

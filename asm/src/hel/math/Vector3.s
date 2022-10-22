@@ -586,8 +586,8 @@ __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3:
 /* 8019FCB4 0019BAF4  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 8019FCB8 0019BAF8  4E 80 00 20 */	blr
 
-.global "__sinit_\\Vector3_cpp"
-"__sinit_\\Vector3_cpp":
+.global "__sinit_@@1Vector3_cpp"
+"__sinit_@@1Vector3_cpp":
 /* 8019FCBC 0019BAFC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8019FCC0 0019BB00  7C 08 02 A6 */	mflr r0
 /* 8019FCC4 0019BB04  90 01 00 14 */	stw r0, 0x14(r1)
@@ -627,7 +627,7 @@ __ami__Q33hel4math7Vector3FRCQ33hel4math7Vector3:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\Vector3_cpp"
+	.4byte "__sinit_@@1Vector3_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

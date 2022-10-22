@@ -88,8 +88,8 @@ SetVisibilityBelow__Q23g3d16MintNodeAccessorFb:
 /* 8018EAFC 0018A93C  38 63 48 14 */	addi r3, r3, "t_obj__Q23g3d30@unnamed@MintNodeAccessor_cpp@"@l
 /* 8018EB00 0018A940  48 00 45 A8 */	b setVisibilityBelow__Q23g3d12NodeAccessorCFb
 
-.global "__sinit_\\MintNodeAccessor_cpp"
-"__sinit_\\MintNodeAccessor_cpp":
+.global "__sinit_@@1MintNodeAccessor_cpp"
+"__sinit_@@1MintNodeAccessor_cpp":
 /* 8018EB04 0018A944  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018EB08 0018A948  7C 08 02 A6 */	mflr r0
 /* 8018EB0C 0018A94C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -111,7 +111,7 @@ SetVisibilityBelow__Q23g3d16MintNodeAccessorFb:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintNodeAccessor_cpp"
+	.4byte "__sinit_@@1MintNodeAccessor_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

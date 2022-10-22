@@ -686,7 +686,7 @@ isValidBGMChange__Q33scn10grandtitle9CommanderCFv:
 /* 8020383C 001FF67C  88 63 00 CA */	lbz r3, 0xca(r3)
 /* 80203840 001FF680  4E 80 00 20 */	blr
 
-.global "__sinit_\\Commander_cpp_80203844"
-"__sinit_\\Commander_cpp_80203844":
+.global "__sinit_@@1Commander_cpp_80203844"
+"__sinit_@@1Commander_cpp_80203844":
 /* 80203844 001FF684  38 6D EF 50 */	addi r3, r13, "t_obj__Q33scn10grandtitle23@unnamed@Commander_cpp@"@sda21
 /* 80203848 001FF688  4B ED 9B 98 */	b __ct__Q34nw4r3g3d8LightObjFv

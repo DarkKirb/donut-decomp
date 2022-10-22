@@ -26,7 +26,7 @@ SetScale3__Q43scn4step5chara9MintModelFfff:
 /* 8026FDC0 0026BC00  38 21 00 20 */	addi r1, r1, 0x20
 /* 8026FDC4 0026BC04  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintModel_cpp_8026FDC8"
-"__sinit_\\MintModel_cpp_8026FDC8":
+.global "__sinit_@@1MintModel_cpp_8026FDC8"
+"__sinit_@@1MintModel_cpp_8026FDC8":
 /* 8026FDC8 0026BC08  38 6D F1 C0 */	addi r3, r13, "t_obj__Q43scn4step5chara23@unnamed@MintModel_cpp@"@sda21
 /* 8026FDCC 0026BC0C  4B E6 D6 14 */	b __ct__Q34nw4r3g3d8LightObjFv

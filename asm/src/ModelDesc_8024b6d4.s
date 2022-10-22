@@ -79,8 +79,8 @@ lbl_8024B7B4:
 /* 8024B7E0 00247620  38 21 00 50 */	addi r1, r1, 0x50
 /* 8024B7E4 00247624  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_8024B7E8"
-"__sinit_\\ModelDesc_cpp_8024B7E8":
+.global "__sinit_@@1ModelDesc_cpp_8024B7E8"
+"__sinit_@@1ModelDesc_cpp_8024B7E8":
 /* 8024B7E8 00247628  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 8024B7EC 0024762C  3C 60 80 46 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step4boss10creditroah23@unnamed@ModelDesc_cpp@"@ha
 /* 8024B7F0 00247630  90 03 70 AC */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step4boss10creditroah23@unnamed@ModelDesc_cpp@"@l(r3)

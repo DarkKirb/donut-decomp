@@ -42,14 +42,14 @@ LoadDirection3__Q24gobj10MintTargetFv:
 /* 8019AFC8 00196E08  38 21 00 30 */	addi r1, r1, 0x30
 /* 8019AFCC 00196E0C  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintTarget_cpp"
-"__sinit_\\MintTarget_cpp":
+.global "__sinit_@@1MintTarget_cpp"
+"__sinit_@@1MintTarget_cpp":
 /* 8019AFD0 00196E10  38 6D ED E0 */	addi r3, r13, "t_obj__Q24gobj24@unnamed@MintTarget_cpp@"@sda21
 /* 8019AFD4 00196E14  4B F4 24 0C */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintTarget_cpp"
+	.4byte "__sinit_@@1MintTarget_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

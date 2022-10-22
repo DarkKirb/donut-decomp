@@ -597,7 +597,7 @@ SetBodyCollStateCaptureOnly__Q43scn4step5chara11MintObjCollFv:
 /* 8027067C 0026C4BC  80 6D F1 D0 */	lwz r3, "t_obj__Q43scn4step5chara25@unnamed@MintObjColl_cpp@"@sda21(r13)
 /* 80270680 0026C4C0  48 00 1C C0 */	b setBodyCollStateCaptureOnly__Q43scn4step5chara7ObjCollFv
 
-.global "__sinit_\\MintObjColl_cpp"
-"__sinit_\\MintObjColl_cpp":
+.global "__sinit_@@1MintObjColl_cpp"
+"__sinit_@@1MintObjColl_cpp":
 /* 80270684 0026C4C4  38 6D F1 D0 */	addi r3, r13, "t_obj__Q43scn4step5chara25@unnamed@MintObjColl_cpp@"@sda21
 /* 80270688 0026C4C8  4B E6 CD 58 */	b __ct__Q34nw4r3g3d8LightObjFv

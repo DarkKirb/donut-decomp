@@ -15,7 +15,7 @@ Obj__Q53scn4step7gimmick11areamapdemo8MintDemoFv:
 /* 802FDDA8 002F9BE8  80 6D F7 A0 */	lwz r3, "t_obj__Q53scn4step7gimmick11areamapdemo22@unnamed@MintDemo_cpp@"@sda21(r13)
 /* 802FDDAC 002F9BEC  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintDemo_cpp"
-"__sinit_\\MintDemo_cpp":
+.global "__sinit_@@1MintDemo_cpp"
+"__sinit_@@1MintDemo_cpp":
 /* 802FDDB0 002F9BF0  38 6D F7 A0 */	addi r3, r13, "t_obj__Q53scn4step7gimmick11areamapdemo22@unnamed@MintDemo_cpp@"@sda21
 /* 802FDDB4 002F9BF4  4B DD F6 2C */	b __ct__Q34nw4r3g3d8LightObjFv

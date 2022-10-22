@@ -678,8 +678,8 @@ lbl_80383C88:
 "__dt__Q24util102StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick17StateWarpStarFall,PQ43scn4step4hero4Hero,Ul>Fv":
 /* 80383CBC 0037FAFC  4B EA A9 E4 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
 
-.global "__sinit_\\StateWarpStarIn_cpp"
-"__sinit_\\StateWarpStarIn_cpp":
+.global "__sinit_@@1StateWarpStarIn_cpp"
+"__sinit_@@1StateWarpStarIn_cpp":
 /* 80383CC0 0037FB00  3C 60 80 55 */	lis r3, "TARGET_OFFSET__29@unnamed@StateWarpStarIn_cpp@"@ha
 /* 80383CC4 0037FB04  38 63 33 18 */	addi r3, r3, "TARGET_OFFSET__29@unnamed@StateWarpStarIn_cpp@"@l
 /* 80383CC8 0037FB08  C0 22 D5 38 */	lfs f1, "@60736"@sda21(r2)

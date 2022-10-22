@@ -342,8 +342,8 @@ lbl_80392DAC:
 /* 80392DCC 0038EC0C  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 80392DD0 0038EC10  4E 80 00 20 */	blr
 
-.global "__sinit_\\StateParasolCapture_cpp"
-"__sinit_\\StateParasolCapture_cpp":
+.global "__sinit_@@1StateParasolCapture_cpp"
+"__sinit_@@1StateParasolCapture_cpp":
 /* 80392DD4 0038EC14  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80392DD8 0038EC18  7C 08 02 A6 */	mflr r0
 /* 80392DDC 0038EC1C  90 01 00 14 */	stw r0, 0x14(r1)

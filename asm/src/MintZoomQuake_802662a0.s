@@ -15,7 +15,7 @@ Obj__Q43scn4step6camera13MintZoomQuakeFv:
 /* 802662B4 002620F4  80 6D F1 B0 */	lwz r3, "t_obj__Q43scn4step6camera27@unnamed@MintZoomQuake_cpp@"@sda21(r13)
 /* 802662B8 002620F8  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintZoomQuake_cpp"
-"__sinit_\\MintZoomQuake_cpp":
+.global "__sinit_@@1MintZoomQuake_cpp"
+"__sinit_@@1MintZoomQuake_cpp":
 /* 802662BC 002620FC  38 6D F1 B0 */	addi r3, r13, "t_obj__Q43scn4step6camera27@unnamed@MintZoomQuake_cpp@"@sda21
 /* 802662C0 00262100  4B E7 71 20 */	b __ct__Q34nw4r3g3d8LightObjFv

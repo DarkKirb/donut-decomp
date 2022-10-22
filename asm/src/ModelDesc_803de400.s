@@ -121,8 +121,8 @@ CreateEx__Q53scn4step6weapon13whispyairball9ModelDescFv:
 /* 803DE5B0 003DA3F0  38 21 00 40 */	addi r1, r1, 0x40
 /* 803DE5B4 003DA3F4  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_803DE5B8"
-"__sinit_\\ModelDesc_cpp_803DE5B8":
+.global "__sinit_@@1ModelDesc_cpp_803DE5B8"
+"__sinit_@@1ModelDesc_cpp_803DE5B8":
 /* 803DE5B8 003DA3F8  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 803DE5BC 003DA3FC  3C 60 80 49 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@"@ha
 /* 803DE5C0 003DA400  90 03 41 00 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@"@l(r3)

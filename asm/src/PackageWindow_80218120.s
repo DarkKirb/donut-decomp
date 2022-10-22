@@ -2096,8 +2096,8 @@ lbl_80219E4C:
 /* 80219E4C 00215C8C  38 60 00 00 */	li r3, 0x0
 /* 80219E50 00215C90  4E 80 00 20 */	blr
 
-.global "__sinit_\\PackageWindow_cpp"
-"__sinit_\\PackageWindow_cpp":
+.global "__sinit_@@1PackageWindow_cpp"
+"__sinit_@@1PackageWindow_cpp":
 /* 80219E54 00215C94  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80219E58 00215C98  7C 08 02 A6 */	mflr r0
 /* 80219E5C 00215C9C  90 01 00 24 */	stw r0, 0x24(r1)

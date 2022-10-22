@@ -99,8 +99,8 @@ lbl_802D6724:
 /* 802D6784 002D25C4  38 21 00 30 */	addi r1, r1, 0x30
 /* 802D6788 002D25C8  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_802D678C"
-"__sinit_\\ModelDesc_cpp_802D678C":
+.global "__sinit_@@1ModelDesc_cpp_802D678C"
+"__sinit_@@1ModelDesc_cpp_802D678C":
 /* 802D678C 002D25CC  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 802D6790 002D25D0  3C 60 80 48 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy8rollball23@unnamed@ModelDesc_cpp@"@ha
 /* 802D6794 002D25D4  90 03 B0 1C */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy8rollball23@unnamed@ModelDesc_cpp@"@l(r3)

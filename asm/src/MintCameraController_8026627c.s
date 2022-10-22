@@ -15,7 +15,7 @@ Obj__Q43scn4step6camera20MintCameraControllerFv:
 /* 80266290 002620D0  80 6D F1 A8 */	lwz r3, "t_obj__Q43scn4step6camera34@unnamed@MintCameraController_cpp@"@sda21(r13)
 /* 80266294 002620D4  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintCameraController_cpp"
-"__sinit_\\MintCameraController_cpp":
+.global "__sinit_@@1MintCameraController_cpp"
+"__sinit_@@1MintCameraController_cpp":
 /* 80266298 002620D8  38 6D F1 A8 */	addi r3, r13, "t_obj__Q43scn4step6camera34@unnamed@MintCameraController_cpp@"@sda21
 /* 8026629C 002620DC  4B E7 71 44 */	b __ct__Q34nw4r3g3d8LightObjFv

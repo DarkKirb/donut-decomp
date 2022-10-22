@@ -876,8 +876,8 @@ lbl_801EA0A4:
 /* 801EA0B0 001E5EF0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801EA0B4 001E5EF4  4E 80 00 20 */	blr
 
-.global "__sinit_\\Trophy_cpp"
-"__sinit_\\Trophy_cpp":
+.global "__sinit_@@1Trophy_cpp"
+"__sinit_@@1Trophy_cpp":
 /* 801EA0B8 001E5EF8  3C 60 80 54 */	lis r3, "MODEL_TRANS__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"@ha
 /* 801EA0BC 001E5EFC  38 63 5E D0 */	addi r3, r3, "MODEL_TRANS__Q33scn19challengefileselect20@unnamed@Trophy_cpp@"@l
 /* 801EA0C0 001E5F00  C0 22 9E 00 */	lfs f1, "@54069"@sda21(r2)
@@ -887,7 +887,7 @@ lbl_801EA0A4:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\Trophy_cpp"
+	.4byte "__sinit_@@1Trophy_cpp"
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0

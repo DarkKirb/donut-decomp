@@ -1323,8 +1323,8 @@ lbl_801B92E4:
 /* 801B9314 001B5154  38 21 01 70 */	addi r1, r1, 0x170
 /* 801B9318 001B5158  4E 80 00 20 */	blr
 
-.global "__sinit_\\LandLayer_cpp"
-"__sinit_\\LandLayer_cpp":
+.global "__sinit_@@1LandLayer_cpp"
+"__sinit_@@1LandLayer_cpp":
 /* 801B931C 001B515C  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 801B9320 001B5160  7C 08 02 A6 */	mflr r0
 /* 801B9324 001B5164  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -1821,7 +1821,7 @@ lbl_801B92E4:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\LandLayer_cpp"
+	.4byte "__sinit_@@1LandLayer_cpp"
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0

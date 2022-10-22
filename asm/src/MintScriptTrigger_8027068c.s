@@ -16,7 +16,7 @@ Set__Q43scn4step5chara17MintScriptTriggerFUl:
 /* 802706A4 0026C4E4  80 6D F1 D8 */	lwz r3, "t_obj__Q43scn4step5chara31@unnamed@MintScriptTrigger_cpp@"@sda21(r13)
 /* 802706A8 0026C4E8  48 00 23 DC */	b set__Q43scn4step5chara13ScriptTriggerFUl
 
-.global "__sinit_\\MintScriptTrigger_cpp"
-"__sinit_\\MintScriptTrigger_cpp":
+.global "__sinit_@@1MintScriptTrigger_cpp"
+"__sinit_@@1MintScriptTrigger_cpp":
 /* 802706AC 0026C4EC  38 6D F1 D8 */	addi r3, r13, "t_obj__Q43scn4step5chara31@unnamed@MintScriptTrigger_cpp@"@sda21
 /* 802706B0 0026C4F0  4B E6 CD 30 */	b __ct__Q34nw4r3g3d8LightObjFv

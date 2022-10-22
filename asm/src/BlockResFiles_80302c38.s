@@ -148,8 +148,8 @@ entryName__Q53scn4step7gimmick5block13BlockResFilesCFQ43scn4step3map15BinGmkBloc
 /* 80302E28 002FEC68  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80302E2C 002FEC6C  4E 80 00 20 */	blr
 
-.global "__sinit_\\BlockResFiles_cpp"
-"__sinit_\\BlockResFiles_cpp":
+.global "__sinit_@@1BlockResFiles_cpp"
+"__sinit_@@1BlockResFiles_cpp":
 /* 80302E30 002FEC70  80 02 C7 78 */	lwz r0, "T_DEFAULT_ENTRY_NAME__Q53scn4step7gimmick5block27@unnamed@BlockResFiles_cpp@"@sda21(r2)
 /* 80302E34 002FEC74  3C 60 80 48 */	lis r3, "T_CONTEXT_TABLE__Q53scn4step7gimmick5block27@unnamed@BlockResFiles_cpp@"@ha
 /* 80302E38 002FEC78  38 63 00 B0 */	addi r3, r3, "T_CONTEXT_TABLE__Q53scn4step7gimmick5block27@unnamed@BlockResFiles_cpp@"@l

@@ -15,7 +15,7 @@ Ref__Q43scn4step5ocoll16MintOCollManagerFv:
 /* 803CABAC 003C69EC  80 6D F9 10 */	lwz r3, "t_manager__Q43scn4step5ocoll30@unnamed@MintOCollManager_cpp@"@sda21(r13)
 /* 803CABB0 003C69F0  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintOCollManager_cpp"
-"__sinit_\\MintOCollManager_cpp":
+.global "__sinit_@@1MintOCollManager_cpp"
+"__sinit_@@1MintOCollManager_cpp":
 /* 803CABB4 003C69F4  38 6D F9 10 */	addi r3, r13, "t_manager__Q43scn4step5ocoll30@unnamed@MintOCollManager_cpp@"@sda21
 /* 803CABB8 003C69F8  4B D1 28 28 */	b __ct__Q34nw4r3g3d8LightObjFv

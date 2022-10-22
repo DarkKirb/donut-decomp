@@ -930,8 +930,8 @@ shadowScales__Q33scn7history7PackageCFv:
 /* 8020DFF4 00209E34  38 63 05 2C */	addi r3, r3, 0x52c
 /* 8020DFF8 00209E38  4B FF FF 88 */	b dataHeadAddress__Q25xdata5XDataCFv
 
-.global "__sinit_\\Package_cpp"
-"__sinit_\\Package_cpp":
+.global "__sinit_@@1Package_cpp"
+"__sinit_@@1Package_cpp":
 /* 8020DFFC 00209E3C  3C 60 80 54 */	lis r3, "BIG_SHADOW_OFFSET__Q33scn7history21@unnamed@Package_cpp@"@ha
 /* 8020E000 00209E40  38 63 67 D0 */	addi r3, r3, "BIG_SHADOW_OFFSET__Q33scn7history21@unnamed@Package_cpp@"@l
 /* 8020E004 00209E44  C0 22 A1 74 */	lfs f1, "@53466"@sda21(r2)

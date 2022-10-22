@@ -726,8 +726,8 @@ __ct__Q63scn4step7gimmick7mahoroa7Mahoroa11ModelRTCtrlFRCQ33hel4math7Vector3:
 /* 80313D38 0030FB78  38 21 00 10 */	addi r1, r1, 0x10
 /* 80313D3C 0030FB7C  4E 80 00 20 */	blr
 
-.global "__sinit_\\Mahoroa_cpp"
-"__sinit_\\Mahoroa_cpp":
+.global "__sinit_@@1Mahoroa_cpp"
+"__sinit_@@1Mahoroa_cpp":
 /* 80313D40 0030FB80  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 80313D44 0030FB84  3C 60 80 48 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21@unnamed@Mahoroa_cpp@"@ha
 /* 80313D48 0030FB88  38 63 17 00 */	addi r3, r3, "T_SCRIPT_ENTRIES__Q53scn4step7gimmick7mahoroa21@unnamed@Mahoroa_cpp@"@l

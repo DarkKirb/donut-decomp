@@ -96,8 +96,8 @@ lbl_80232A90:
 /* 80232B1C 0022E95C  38 21 00 60 */	addi r1, r1, 0x60
 /* 80232B20 0022E960  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_80232B24"
-"__sinit_\\ModelDesc_cpp_80232B24":
+.global "__sinit_@@1ModelDesc_cpp_80232B24"
+"__sinit_@@1ModelDesc_cpp_80232B24":
 /* 80232B24 0022E964  80 02 A3 E0 */	lwz r0, "T_MODEL_DESC_FUNC_DUMMY__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@sda21(r2)
 /* 80232B28 0022E968  3C 60 80 46 */	lis r3, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@ha
 /* 80232B2C 0022E96C  90 03 45 F0 */	stw r0, "T_INDIVI_TABLE__Q43scn4step4boss23@unnamed@ModelDesc_cpp@"@l(r3)

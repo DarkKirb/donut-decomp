@@ -77,8 +77,8 @@ lbl_803E857C:
 /* 803E85A8 003E43E8  38 21 00 50 */	addi r1, r1, 0x50
 /* 803E85AC 003E43EC  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_803E85B0"
-"__sinit_\\ModelDesc_cpp_803E85B0":
+.global "__sinit_@@1ModelDesc_cpp_803E85B0"
+"__sinit_@@1ModelDesc_cpp_803E85B0":
 /* 803E85B0 003E43F0  80 0D 89 E4 */	lwz r0, PLAY_ONE_SHOT__Q24gobj10AnimScript@sda21(r13)
 /* 803E85B4 003E43F4  3C 60 80 49 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@"@ha
 /* 803E85B8 003E43F8  90 03 4A 80 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@"@l(r3)

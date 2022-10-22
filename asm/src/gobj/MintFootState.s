@@ -19,14 +19,14 @@ IsAir__Q24gobj13MintFootStateFv:
 /* 8019AC84 00196AC4  80 6D ED A8 */	lwz r3, "t_obj__Q24gobj27@unnamed@MintFootState_cpp@"@sda21(r13)
 /* 8019AC88 00196AC8  4B FF F2 30 */	b isAir__Q24gobj9FootStateCFv
 
-.global "__sinit_\\MintFootState_cpp"
-"__sinit_\\MintFootState_cpp":
+.global "__sinit_@@1MintFootState_cpp"
+"__sinit_@@1MintFootState_cpp":
 /* 8019AC8C 00196ACC  38 6D ED A8 */	addi r3, r13, "t_obj__Q24gobj27@unnamed@MintFootState_cpp@"@sda21
 /* 8019AC90 00196AD0  4B F4 27 50 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintFootState_cpp"
+	.4byte "__sinit_@@1MintFootState_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

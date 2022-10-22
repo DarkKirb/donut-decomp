@@ -478,8 +478,8 @@ lbl_803832BC:
 "__dt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay,PQ43scn4step4hero4Hero,i>Fv":
 /* 803832F4 0037F134  4B EA B3 AC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
 
-.global "__sinit_\\StateWarpStarFall_cpp"
-"__sinit_\\StateWarpStarFall_cpp":
+.global "__sinit_@@1StateWarpStarFall_cpp"
+"__sinit_@@1StateWarpStarFall_cpp":
 /* 803832F8 0037F138  3C 60 80 55 */	lis r3, "TARGET_OFFSET__31@unnamed@StateWarpStarFall_cpp@"@ha
 /* 803832FC 0037F13C  38 63 33 08 */	addi r3, r3, "TARGET_OFFSET__31@unnamed@StateWarpStarFall_cpp@"@l
 /* 80383300 0037F140  C0 22 D5 28 */	lfs f1, "@60208"@sda21(r2)

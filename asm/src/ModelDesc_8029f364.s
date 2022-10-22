@@ -99,8 +99,8 @@ lbl_8029F45C:
 /* 8029F4BC 0029B2FC  38 21 00 30 */	addi r1, r1, 0x30
 /* 8029F4C0 0029B300  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_8029F4C4"
-"__sinit_\\ModelDesc_cpp_8029F4C4":
+.global "__sinit_@@1ModelDesc_cpp_8029F4C4"
+"__sinit_@@1ModelDesc_cpp_8029F4C4":
 /* 8029F4C4 0029B304  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 8029F4C8 0029B308  3C 60 80 47 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy10brontoburt23@unnamed@ModelDesc_cpp@"@ha
 /* 8029F4CC 0029B30C  90 03 49 98 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy10brontoburt23@unnamed@ModelDesc_cpp@"@l(r3)

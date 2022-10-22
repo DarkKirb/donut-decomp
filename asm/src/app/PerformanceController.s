@@ -339,14 +339,14 @@ calcedFrameCount__Q23app21PerformanceControllerCFv:
 /* 8017A9CC 0017680C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017A9D0 00176810  4E 80 00 20 */	blr
 
-.global "__sinit_\\PerformanceController_cpp"
-"__sinit_\\PerformanceController_cpp":
+.global "__sinit_@@1PerformanceController_cpp"
+"__sinit_@@1PerformanceController_cpp":
 /* 8017A9D4 00176814  38 6D ED 28 */	addi r3, r13, "t_instance__35@unnamed@PerformanceController_cpp@"@sda21
 /* 8017A9D8 00176818  4B F6 2A 08 */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\PerformanceController_cpp"
+	.4byte "__sinit_@@1PerformanceController_cpp"
 .include "macros.inc"
 
 .section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0

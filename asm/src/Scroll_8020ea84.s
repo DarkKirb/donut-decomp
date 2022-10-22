@@ -648,8 +648,8 @@ stop__Q33scn7history6ScrollFv:
 /* 8020F29C 0020B0DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8020F2A0 0020B0E0  4E 80 00 20 */	blr
 
-.global "__sinit_\\Scroll_cpp"
-"__sinit_\\Scroll_cpp":
+.global "__sinit_@@1Scroll_cpp"
+"__sinit_@@1Scroll_cpp":
 /* 8020F2A4 0020B0E4  C0 22 A1 D8 */	lfs f1, WIDTH__Q33scn7history10StageParts@sda21(r2)
 /* 8020F2A8 0020B0E8  D0 2D EF 80 */	stfs f1, "STEP_WIDTH__Q33scn7history20@unnamed@Scroll_cpp@"@sda21(r13)
 /* 8020F2AC 0020B0EC  C0 02 A1 98 */	lfs f0, "@53220_80560118"@sda21(r2)

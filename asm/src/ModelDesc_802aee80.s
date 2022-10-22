@@ -77,8 +77,8 @@ lbl_802AEF58:
 /* 802AEF84 002AADC4  38 21 00 50 */	addi r1, r1, 0x50
 /* 802AEF88 002AADC8  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_802AEF8C"
-"__sinit_\\ModelDesc_cpp_802AEF8C":
+.global "__sinit_@@1ModelDesc_cpp_802AEF8C"
+"__sinit_@@1ModelDesc_cpp_802AEF8C":
 /* 802AEF8C 002AADCC  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 802AEF90 002AADD0  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step5enemy11dubiorspark23@unnamed@ModelDesc_cpp@"@ha
 /* 802AEF94 002AADD4  90 03 04 78 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step5enemy11dubiorspark23@unnamed@ModelDesc_cpp@"@l(r3)

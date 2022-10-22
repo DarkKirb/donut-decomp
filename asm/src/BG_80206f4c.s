@@ -216,8 +216,8 @@ update__Q33scn7history2BGFRCQ33hel4math7Vector3:
 /* 8020727C 002030BC  38 21 00 60 */	addi r1, r1, 0x60
 /* 80207280 002030C0  4E 80 00 20 */	blr
 
-.global "__sinit_\\BG_cpp"
-"__sinit_\\BG_cpp":
+.global "__sinit_@@1BG_cpp"
+"__sinit_@@1BG_cpp":
 /* 80207284 002030C4  3C 60 80 54 */	lis r3, "MODEL_OFFSET__Q33scn7history16@unnamed@BG_cpp@"@ha
 /* 80207288 002030C8  38 63 67 80 */	addi r3, r3, "MODEL_OFFSET__Q33scn7history16@unnamed@BG_cpp@"@l
 /* 8020728C 002030CC  C0 22 A0 8C */	lfs f1, "@53252_8056000C"@sda21(r2)

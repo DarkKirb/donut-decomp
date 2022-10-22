@@ -16,7 +16,7 @@ Request__Q43scn4step5chara9MintShakeFi:
 /* 802706CC 0026C50C  80 6D F1 E0 */	lwz r3, "t_obj__Q43scn4step5chara23@unnamed@MintShake_cpp@"@sda21(r13)
 /* 802706D0 0026C510  4B F6 55 58 */	b __ct__Q25ocoll7GimmickFRQ25ocoll7Manager
 
-.global "__sinit_\\MintShake_cpp"
-"__sinit_\\MintShake_cpp":
+.global "__sinit_@@1MintShake_cpp"
+"__sinit_@@1MintShake_cpp":
 /* 802706D4 0026C514  38 6D F1 E0 */	addi r3, r13, "t_obj__Q43scn4step5chara23@unnamed@MintShake_cpp@"@sda21
 /* 802706D8 0026C518  4B E6 CD 08 */	b __ct__Q34nw4r3g3d8LightObjFv

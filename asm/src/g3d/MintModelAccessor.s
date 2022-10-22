@@ -32,8 +32,8 @@ SetVisibility__Q23g3d17MintModelAccessorFb:
 /* 8018E99C 0018A7DC  38 63 47 F8 */	addi r3, r3, "t_obj__Q23g3d31@unnamed@MintModelAccessor_cpp@"@l
 /* 8018E9A0 0018A7E0  48 00 1D A0 */	b setVisibility__Q23g3d13ModelAccessorCFb
 
-.global "__sinit_\\MintModelAccessor_cpp"
-"__sinit_\\MintModelAccessor_cpp":
+.global "__sinit_@@1MintModelAccessor_cpp"
+"__sinit_@@1MintModelAccessor_cpp":
 /* 8018E9A4 0018A7E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018E9A8 0018A7E8  7C 08 02 A6 */	mflr r0
 /* 8018E9AC 0018A7EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -55,7 +55,7 @@ SetVisibility__Q23g3d17MintModelAccessorFb:
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintModelAccessor_cpp"
+	.4byte "__sinit_@@1MintModelAccessor_cpp"
 .include "macros.inc"
 
 .section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20

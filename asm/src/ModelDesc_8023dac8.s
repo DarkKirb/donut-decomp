@@ -52,8 +52,8 @@ lbl_8023DB10:
 /* 8023DB78 002399B8  38 21 00 30 */	addi r1, r1, 0x30
 /* 8023DB7C 002399BC  4E 80 00 20 */	blr
 
-.global "__sinit_\\ModelDesc_cpp_8023DB80"
-"__sinit_\\ModelDesc_cpp_8023DB80":
+.global "__sinit_@@1ModelDesc_cpp_8023DB80"
+"__sinit_@@1ModelDesc_cpp_8023DB80":
 /* 8023DB80 002399C0  80 0D 89 E0 */	lwz r0, PLAY_LOOP__Q24gobj10AnimScript@sda21(r13)
 /* 8023DB84 002399C4  3C 60 80 46 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step4boss15challengemaster23@unnamed@ModelDesc_cpp@"@ha
 /* 8023DB88 002399C8  38 63 5B 00 */	addi r3, r3, "T_SCRIPT_ENTRIES__Q53scn4step4boss15challengemaster23@unnamed@ModelDesc_cpp@"@l

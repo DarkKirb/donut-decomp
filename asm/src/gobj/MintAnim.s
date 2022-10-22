@@ -73,14 +73,14 @@ CurrentG3DAnimIndex__Q24gobj8MintAnimFv:
 CheckIsReachableFrame__Q24gobj8MintAnimFUl:
 /* 8019AC5C 00196A9C  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintAnim_cpp"
-"__sinit_\\MintAnim_cpp":
+.global "__sinit_@@1MintAnim_cpp"
+"__sinit_@@1MintAnim_cpp":
 /* 8019AC60 00196AA0  38 6D ED A0 */	addi r3, r13, "t_obj__Q24gobj22@unnamed@MintAnim_cpp@"@sda21
 /* 8019AC64 00196AA4  4B F4 27 7C */	b __ct__Q34nw4r3g3d8LightObjFv
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
-	.4byte "__sinit_\\MintAnim_cpp"
+	.4byte "__sinit_@@1MintAnim_cpp"
 .include "macros.inc"
 
 .section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0

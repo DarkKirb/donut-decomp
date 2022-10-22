@@ -92,7 +92,7 @@ SetRotDIntoTarget__Q43scn4step5chara16MintModelRotCtrlFv:
 /* 8026FE80 0026BCC0  80 6D F1 C8 */	lwz r3, "t_obj__Q43scn4step5chara30@unnamed@MintModelRotCtrl_cpp@"@sda21(r13)
 /* 8026FE84 0026BCC4  48 00 19 F8 */	b setRotDIntoTarget__Q43scn4step5chara12ModelRotCtrlFv
 
-.global "__sinit_\\MintModelRotCtrl_cpp"
-"__sinit_\\MintModelRotCtrl_cpp":
+.global "__sinit_@@1MintModelRotCtrl_cpp"
+"__sinit_@@1MintModelRotCtrl_cpp":
 /* 8026FE88 0026BCC8  38 6D F1 C8 */	addi r3, r13, "t_obj__Q43scn4step5chara30@unnamed@MintModelRotCtrl_cpp@"@sda21
 /* 8026FE8C 0026BCCC  4B E6 D5 54 */	b __ct__Q34nw4r3g3d8LightObjFv

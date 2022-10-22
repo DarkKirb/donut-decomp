@@ -134,8 +134,8 @@ clearObjStopRequestor__Q43scn4step4hero11ItemCatcherFv:
 /* 80342C58 0033EA98  38 63 00 08 */	addi r3, r3, 0x8
 /* 80342C5C 0033EA9C  48 07 E1 38 */	b clearObjStopRequestor__Q43scn4step4item7CatcherFv
 
-.global "__sinit_\\ItemCatcher_cpp"
-"__sinit_\\ItemCatcher_cpp":
+.global "__sinit_@@1ItemCatcher_cpp"
+"__sinit_@@1ItemCatcher_cpp":
 /* 80342C60 0033EAA0  38 6D F7 F8 */	addi r3, r13, "T_DEFAULT_OFFSET__Q43scn4step4hero25@unnamed@ItemCatcher_cpp@"@sda21
 /* 80342C64 0033EAA4  C0 22 CC B0 */	lfs f1, "@53107_80562C30"@sda21(r2)
 /* 80342C68 0033EAA8  C0 42 CC B4 */	lfs f2, "@53162_80562C34"@sda21(r2)

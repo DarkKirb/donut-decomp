@@ -473,8 +473,8 @@ lbl_80241654:
 "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster9StateLose,PQ43scn4step4boss4Boss>Fv":
 /* 802416B8 0023D4F8  4B FE CF E8 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
 
-.global "__sinit_\\StateLoseFly_cpp"
-"__sinit_\\StateLoseFly_cpp":
+.global "__sinit_@@1StateLoseFly_cpp"
+"__sinit_@@1StateLoseFly_cpp":
 /* 802416BC 0023D4FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802416C0 0023D500  7C 08 02 A6 */	mflr r0
 /* 802416C4 0023D504  90 01 00 14 */	stw r0, 0x14(r1)

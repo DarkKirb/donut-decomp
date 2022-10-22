@@ -131,7 +131,7 @@ ReleaseEffectNonStop2__Q43scn4step3sfx20MintSuperBackPictureFv:
 /* 803CDCCC 003C9B0C  80 6D F9 18 */	lwz r3, "t_obj__Q43scn4step3sfx34@unnamed@MintSuperBackPicture_cpp@"@sda21(r13)
 /* 803CDCD0 003C9B10  48 00 29 E0 */	b releaseEffectNonStop2__Q43scn4step3sfx16SuperBackPictureFv
 
-.global "__sinit_\\MintSuperBackPicture_cpp"
-"__sinit_\\MintSuperBackPicture_cpp":
+.global "__sinit_@@1MintSuperBackPicture_cpp"
+"__sinit_@@1MintSuperBackPicture_cpp":
 /* 803CDCD4 003C9B14  38 6D F9 18 */	addi r3, r13, "t_obj__Q43scn4step3sfx34@unnamed@MintSuperBackPicture_cpp@"@sda21
 /* 803CDCD8 003C9B18  4B D0 F7 08 */	b __ct__Q34nw4r3g3d8LightObjFv

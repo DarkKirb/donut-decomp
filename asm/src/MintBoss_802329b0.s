@@ -15,7 +15,7 @@ Obj__Q43scn4step4boss8MintBossFv:
 /* 802329C4 0022E804  80 6D F0 D8 */	lwz r3, "t_obj__Q43scn4step4boss22@unnamed@MintBoss_cpp@"@sda21(r13)
 /* 802329C8 0022E808  4E 80 00 20 */	blr
 
-.global "__sinit_\\MintBoss_cpp"
-"__sinit_\\MintBoss_cpp":
+.global "__sinit_@@1MintBoss_cpp"
+"__sinit_@@1MintBoss_cpp":
 /* 802329CC 0022E80C  38 6D F0 D8 */	addi r3, r13, "t_obj__Q43scn4step4boss22@unnamed@MintBoss_cpp@"@sda21
 /* 802329D0 0022E810  4B EA AA 10 */	b __ct__Q34nw4r3g3d8LightObjFv

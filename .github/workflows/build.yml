@@ -15,6 +15,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Cache wineprefix
+      id: cache-wineprefix
+      uses: actions/cache@v3
+      with:
+        path: /tmp/wineprefix
+        key: ${{ runner.os }}-wineprefix
     - name: Install dependencies
       run: |
         sudo dpkg --add-architecture i386
@@ -23,12 +29,18 @@ jobs:
         curl -L https://cdn.discordapp.com/attachments/727918646525165659/917185027656286218/GC_WII_COMPILERS.zip \
           | bsdtar -xvf- -C tools
         mv tools/Wii/* tools/mwcc_compiler/
+    - name: Start wine
+      if: steps.cache-wineprefix.outputs.cache-hit != 'true'
+      run: |
+        mkdir /tmp/wineprefix
+        export WINEPREFIX=/tmp/wineprefix/.wine
+        wineboot
     - name: Build
       run: |
-        export WINEPREFIX=$(mktemp -d)/.wine
+        export WINEPREFIX=/tmp/wineprefix/.wine
         make -j$(nproc) 
     - name: Upload map
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: donut-${{matrix.version}}.MAP
         path: build/*/donut.MAP

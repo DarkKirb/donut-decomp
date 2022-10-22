@@ -119,3 +119,23 @@ lbl_801DA554:
 str__Q25param13ParamAccessorCFUi:
 /* 801DA56C 001D63AC  38 63 00 04 */	addi r3, r3, 0x4
 /* 801DA570 001D63B0  4B FA CD E4 */	b labelAddressWithReference__Q25xdata5XDataCFUi
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49124"
+"@49124":
+
+	.4byte 0x70617261
+	.4byte 0x6D2F4172
+	.4byte 0x63686976
+	.4byte 0x652E6269
+	.4byte 0x6E2E636D
+	.4byte 0x70000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49125"
+"@49125":
+
+	.4byte 0x25732E62
+	.4byte 0x696E0000

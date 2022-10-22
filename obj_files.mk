@@ -1009,10 +1009,11 @@ $(BUILD_DIR)/asm/src/ostop/Actor.o \
 $(BUILD_DIR)/asm/src/ostop/Manager.o \
 $(BUILD_DIR)/asm/src/ostop/ReqHandle.o \
 \
+$(BUILD_DIR)/asm/src/param/JITParam.o \
+$(BUILD_DIR)/asm/src/param/ParamAccessor.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/JITParam_801da2fc.o \
-$(BUILD_DIR)/asm/src/ParamAccessor_801da3fc.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_801da574.o \
 $(BUILD_DIR)/asm/src/ClosePanel_801da754.o \
 $(BUILD_DIR)/asm/src/Component_801da8d0.o \
@@ -3141,7 +3142,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/ParamAccessor_8045d408.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_8045d420.o \
 $(BUILD_DIR)/asm/src/ClosePanel_8045d460.o \
 $(BUILD_DIR)/asm/src/Constant_8045d470.o \
@@ -4654,7 +4654,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/ParamAccessor_80557658.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_80557660.o \
 $(BUILD_DIR)/asm/src/Component_80557670.o \
 $(BUILD_DIR)/asm/src/CursorPanel_80557688.o \

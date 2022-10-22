@@ -93,3 +93,13 @@ listItemName__Q23msg7ProjectCFUsUsUsUs:
 /* 801D17C0 001CD600  54 C6 04 3E */	clrlwi r6, r6, 16
 /* 801D17C4 001CD604  54 E7 04 3E */	clrlwi r7, r7, 16
 /* 801D17C8 001CD608  4B FA 30 F8 */	b LMS_GetTagListItemName
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49096_8045D2A8"
+"@49096_8045D2A8":
+
+	.4byte 0x6D73672F
+	.4byte 0x25732E6D
+	.4byte 0x73627000
+	.4byte 0

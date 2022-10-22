@@ -433,3 +433,181 @@ MemFree__Q23msg7ManagerFPv:
 "__sinit_\\Manager_cpp":
 /* 801D13FC 001CD23C  38 6D EE B8 */	addi r3, r13, "t_manager__Q23msg21@unnamed@Manager_cpp@"@sda21
 /* 801D1400 001CD240  4B F0 BF E0 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_\\Manager_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49094"
+"@49094":
+
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65000000
+
+.global "@49095"
+"@49095":
+
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65546974
+	.4byte 0x6C650000
+
+.global "@49096_8045D124"
+"@49096_8045D124":
+
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x6546696C
+	.4byte 0x6553656C
+	.4byte 0x65637400
+
+.global "@49103"
+"@49103":
+
+	.4byte 0x506C6179
+	.4byte 0x4D6F7669
+	.4byte 0x65000000
+
+.global "@49104_8045D144"
+"@49104_8045D144":
+
+	.4byte 0x52657369
+	.4byte 0x64656E74
+	.4byte 0
+
+.global "@49105"
+"@49105":
+
+	.4byte 0x4772616E
+	.4byte 0x644D656E
+	.4byte 0x75000000
+
+.global "@49106"
+"@49106":
+
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C650000
+
+.global "@49107"
+"@49107":
+
+	.4byte 0x53746166
+	.4byte 0x66437265
+	.4byte 0x64697400
+	.4byte 0
+
+.global "t_fileNames__Q23msg21@unnamed@Manager_cpp@"
+"t_fileNames__Q23msg21@unnamed@Manager_cpp@":
+
+	.4byte "@49090"
+	.4byte "@49091"
+	.4byte "@49092"
+	.4byte "@49093"
+	.4byte "@49094"
+	.4byte "@49095"
+	.4byte "@49096_8045D124"
+	.4byte "@49097_805575F0"
+	.4byte "@49098"
+	.4byte "@49099"
+	.4byte "@49100"
+	.4byte "@49101"
+	.4byte "@49102"
+	.4byte "@49103"
+	.4byte "@49104_8045D144"
+	.4byte "@49105"
+	.4byte "@49106"
+	.4byte "@49107"
+
+.global "@49787"
+"@49787":
+
+	.4byte 0x4D73674D
+	.4byte 0x616E6167
+	.4byte 0x65720000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49090"
+"@49090":
+
+	.4byte 0x4E616D65
+	.4byte 0
+
+.global "@49091"
+"@49091":
+
+	.4byte 0x4C764D61
+	.4byte 0x70000000
+
+.global "@49092"
+"@49092":
+
+	.4byte 0x53686970
+	.4byte 0
+
+.global "@49093"
+"@49093":
+
+	.4byte 0x53746570
+	.4byte 0
+
+.global "@49097_805575F0"
+"@49097_805575F0":
+
+	.4byte 0x50617573
+	.4byte 0x65000000
+
+.global "@49098"
+"@49098":
+
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E0000
+
+.global "@49099"
+"@49099":
+
+	.4byte 0x4F707469
+	.4byte 0x6F6E0000
+
+.global "@49100"
+"@49100":
+
+	.4byte 0x48697374
+	.4byte 0x6F727900
+
+.global "@49101"
+"@49101":
+
+	.4byte 0x50726F64
+	.4byte 0x75637400
+
+.global "@49102"
+"@49102":
+
+	.4byte 0x4E657773
+	.4byte 0
+
+.global "@49848"
+"@49848":
+
+	.4byte 0x49554B00
+
+.global "@49870_80557624"
+"@49870_80557624":
+
+	.4byte 0x003F0000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_manager__Q23msg21@unnamed@Manager_cpp@"
+"t_manager__Q23msg21@unnamed@Manager_cpp@":
+	.skip 0x4
+
+.global "isExist___Q33hel6common32PrivateSingleton<Q23msg7Manager>"
+"isExist___Q33hel6common32PrivateSingleton<Q23msg7Manager>":
+	.skip 0x4

@@ -972,11 +972,12 @@ $(BUILD_DIR)/asm/src/mov/MoviePlayer.o \
 $(BUILD_DIR)/asm/src/mov/MovieThread.o \
 $(BUILD_DIR)/asm/src/mov/MovieYuv.o \
 \
+$(BUILD_DIR)/asm/src/msg/Manager.o \
+$(BUILD_DIR)/asm/src/msg/Message.o \
+$(BUILD_DIR)/asm/src/msg/Project.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Manager_801d0e54.o \
-$(BUILD_DIR)/asm/src/Message_801d1404.o \
-$(BUILD_DIR)/asm/src/Project_801d168c.o \
 $(BUILD_DIR)/asm/src/NandManager_801d17cc.o \
 $(BUILD_DIR)/asm/src/NandThread_801d1950.o \
 $(BUILD_DIR)/asm/src/Manager_801d3028.o \
@@ -2960,7 +2961,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/Manager_80406344.o \
 $(BUILD_DIR)/asm/src/Trophy_80406348.o \
 $(BUILD_DIR)/asm/src/Commander_8040634c.o \
 $(BUILD_DIR)/asm/src/BG_80406354.o \
@@ -3139,9 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Manager_8045d108.o \
-$(BUILD_DIR)/asm/src/Message_8045d1d0.o \
-$(BUILD_DIR)/asm/src/Project_8045d2a8.o \
 $(BUILD_DIR)/asm/src/NandThread_8045d2b8.o \
 $(BUILD_DIR)/asm/src/Nururi_8045d3c8.o \
 $(BUILD_DIR)/asm/src/Hit_8045d3d8.o \
@@ -4660,8 +4657,6 @@ $(BUILD_DIR)/asm/src/ModelDesc_80554a50.o \
 $(BUILD_DIR)/asm/src/Table_80556398.o
 # .sdata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Manager_805575d0.o \
-$(BUILD_DIR)/asm/src/Message_80557628.o \
 $(BUILD_DIR)/asm/src/NandThread_80557638.o \
 $(BUILD_DIR)/asm/src/ParamAccessor_80557658.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_80557660.o \
@@ -4966,7 +4961,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/Manager_8055d2d8.o \
 $(BUILD_DIR)/asm/src/SceneAnime_8055d2e0.o \
 $(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055d2f0.o \
 $(BUILD_DIR)/asm/src/Table_8055d300.o \

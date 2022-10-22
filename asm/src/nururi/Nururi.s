@@ -423,3 +423,41 @@ centerPos__Q26nururi6NururiCFv:
 /* 801D3A04 001CF844  C0 04 00 18 */	lfs f0, 0x18(r4)
 /* 801D3A08 001CF848  EC 43 00 BA */	fmadds f2, f3, f2, f0
 /* 801D3A0C 001CF84C  4B FC B9 9C */	b set__Q33hel4math7Vector2Fff
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q26nururi6Nururi
+__vt__Q26nururi6Nururi:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q26nururi6NururiFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49890"
+"@49890":
+
+	.4byte 0
+
+.global "@49939"
+"@49939":
+
+	.4byte 0x3F000000
+
+.global "@49952"
+"@49952":
+
+	.4byte 0xBF800000
+
+.global "@49953"
+"@49953":
+
+	.4byte 0x3F800000
+
+.global "@49988_8055FC68"
+"@49988_8055FC68":
+
+	.4byte 0x3727C5AC
+	.4byte 0

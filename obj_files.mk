@@ -979,10 +979,11 @@ $(BUILD_DIR)/asm/src/msg/Project.o \
 $(BUILD_DIR)/asm/src/nand/NandManager.o \
 $(BUILD_DIR)/asm/src/nand/NandThread.o \
 \
+$(BUILD_DIR)/asm/src/nururi/Manager.o \
+$(BUILD_DIR)/asm/src/nururi/Nururi.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Manager_801d3028.o \
-$(BUILD_DIR)/asm/src/Nururi_801d347c.o \
 $(BUILD_DIR)/asm/src/Attack_801d3a10.o \
 $(BUILD_DIR)/asm/src/AttackCenter_801d450c.o \
 $(BUILD_DIR)/asm/src/AttackLog_801d475c.o \
@@ -3139,7 +3140,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Nururi_8045d3c8.o \
 $(BUILD_DIR)/asm/src/Hit_8045d3d8.o \
 $(BUILD_DIR)/asm/src/SearchAttack_8045d3e8.o \
 $(BUILD_DIR)/asm/src/SearchHit_8045d3f8.o \
@@ -5059,7 +5059,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/Nururi_8055fc58.o \
 $(BUILD_DIR)/asm/src/AttackNode_8055fc70.o \
 $(BUILD_DIR)/asm/src/AttackResult_8055fc78.o \
 $(BUILD_DIR)/asm/src/AttackResultGimmick_8055fc80.o \

@@ -1005,11 +1005,12 @@ $(BUILD_DIR)/asm/src/ocoll/SearchHitNode.o \
 $(BUILD_DIR)/asm/src/ocoll/SearchHitResult.o \
 $(BUILD_DIR)/asm/src/ocoll/Shape.o \
 \
+$(BUILD_DIR)/asm/src/ostop/Actor.o \
+$(BUILD_DIR)/asm/src/ostop/Manager.o \
+$(BUILD_DIR)/asm/src/ostop/ReqHandle.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Actor_801d98a4.o \
-$(BUILD_DIR)/asm/src/Manager_801d9ba4.o \
-$(BUILD_DIR)/asm/src/ReqHandle_801da2dc.o \
 $(BUILD_DIR)/asm/src/JITParam_801da2fc.o \
 $(BUILD_DIR)/asm/src/ParamAccessor_801da3fc.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_801da574.o \

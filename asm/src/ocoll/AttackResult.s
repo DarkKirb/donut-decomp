@@ -270,3 +270,11 @@ lbl_801D50BC:
 /* 801D5114 001D0F54  7C 08 03 A6 */	mtlr r0
 /* 801D5118 001D0F58  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D511C 001D0F5C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50282_8055FC78"
+"@50282_8055FC78":
+
+	.4byte 0
+	.4byte 0

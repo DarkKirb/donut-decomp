@@ -234,3 +234,11 @@ lbl_801D4D78:
 /* 801D4D80 001D0BC0  7C 08 03 A6 */	mtlr r0
 /* 801D4D84 001D0BC4  38 21 01 D0 */	addi r1, r1, 0x1d0
 /* 801D4D88 001D0BC8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52016_8055FC70"
+"@52016_8055FC70":
+
+	.4byte 0xFF000080
+	.4byte 0

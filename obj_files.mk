@@ -982,30 +982,31 @@ $(BUILD_DIR)/asm/src/nand/NandThread.o \
 $(BUILD_DIR)/asm/src/nururi/Manager.o \
 $(BUILD_DIR)/asm/src/nururi/Nururi.o \
 \
+$(BUILD_DIR)/asm/src/ocoll/Attack.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackCenter.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackLog.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackNode.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackResult.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackResultGimmick.o \
+$(BUILD_DIR)/asm/src/ocoll/AttackRoot.o \
+$(BUILD_DIR)/asm/src/ocoll/CollDataTable.o \
+$(BUILD_DIR)/asm/src/ocoll/Gimmick.o \
+$(BUILD_DIR)/asm/src/ocoll/Hit.o \
+$(BUILD_DIR)/asm/src/ocoll/HitNode.o \
+$(BUILD_DIR)/asm/src/ocoll/HitResult.o \
+$(BUILD_DIR)/asm/src/ocoll/Manager.o \
+$(BUILD_DIR)/asm/src/ocoll/NodeDesc.o \
+$(BUILD_DIR)/asm/src/ocoll/Owner.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchAttack.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchAttackNode.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchAttackResult.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchHit.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchHitNode.o \
+$(BUILD_DIR)/asm/src/ocoll/SearchHitResult.o \
+$(BUILD_DIR)/asm/src/ocoll/Shape.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/Attack_801d3a10.o \
-$(BUILD_DIR)/asm/src/AttackCenter_801d450c.o \
-$(BUILD_DIR)/asm/src/AttackLog_801d475c.o \
-$(BUILD_DIR)/asm/src/AttackNode_801d4a38.o \
-$(BUILD_DIR)/asm/src/AttackResult_801d4d8c.o \
-$(BUILD_DIR)/asm/src/AttackResultGimmick_801d5120.o \
-$(BUILD_DIR)/asm/src/AttackRoot_801d51cc.o \
-$(BUILD_DIR)/asm/src/CollDataTable_801d57fc.o \
-$(BUILD_DIR)/asm/src/Gimmick_801d5c28.o \
-$(BUILD_DIR)/asm/src/Hit_801d5fb8.o \
-$(BUILD_DIR)/asm/src/HitNode_801d68bc.o \
-$(BUILD_DIR)/asm/src/HitResult_801d6c1c.o \
-$(BUILD_DIR)/asm/src/Manager_801d6f9c.o \
-$(BUILD_DIR)/asm/src/NodeDesc_801d805c.o \
-$(BUILD_DIR)/asm/src/Owner_801d8160.o \
-$(BUILD_DIR)/asm/src/SearchAttack_801d8318.o \
-$(BUILD_DIR)/asm/src/SearchAttackNode_801d89f0.o \
-$(BUILD_DIR)/asm/src/SearchAttackResult_801d8ca4.o \
-$(BUILD_DIR)/asm/src/SearchHit_801d8dd8.o \
-$(BUILD_DIR)/asm/src/SearchHitNode_801d93e0.o \
-$(BUILD_DIR)/asm/src/SearchHitResult_801d9528.o \
-$(BUILD_DIR)/asm/src/Shape_801d9634.o \
 $(BUILD_DIR)/asm/src/Actor_801d98a4.o \
 $(BUILD_DIR)/asm/src/Manager_801d9ba4.o \
 $(BUILD_DIR)/asm/src/ReqHandle_801da2dc.o \
@@ -3019,7 +3020,6 @@ $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80406548.o
 
 # .rodata
 O_FILES += \
-$(BUILD_DIR)/asm/src/Gimmick_80414e88.o \
 $(BUILD_DIR)/asm/src/Constant_80415068.o \
 $(BUILD_DIR)/asm/src/ManualData_80415080.o \
 $(BUILD_DIR)/asm/src/PageDropout_80415438.o \
@@ -3140,9 +3140,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/Hit_8045d3d8.o \
-$(BUILD_DIR)/asm/src/SearchAttack_8045d3e8.o \
-$(BUILD_DIR)/asm/src/SearchHit_8045d3f8.o \
 $(BUILD_DIR)/asm/src/ParamAccessor_8045d408.o \
 $(BUILD_DIR)/asm/src/ButtonPanel_8045d420.o \
 $(BUILD_DIR)/asm/src/ClosePanel_8045d460.o \
@@ -5059,15 +5056,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/AttackNode_8055fc70.o \
-$(BUILD_DIR)/asm/src/AttackResult_8055fc78.o \
-$(BUILD_DIR)/asm/src/AttackResultGimmick_8055fc80.o \
-$(BUILD_DIR)/asm/src/HitNode_8055fc88.o \
-$(BUILD_DIR)/asm/src/NodeDesc_8055fc90.o \
-$(BUILD_DIR)/asm/src/SearchAttackNode_8055fc98.o \
-$(BUILD_DIR)/asm/src/SearchAttackResult_8055fca0.o \
-$(BUILD_DIR)/asm/src/SearchHitNode_8055fca8.o \
-$(BUILD_DIR)/asm/src/Shape_8055fcb0.o \
 $(BUILD_DIR)/asm/src/FramePanel_8055fcb8.o \
 $(BUILD_DIR)/asm/src/PageDropout_8055fcc0.o \
 $(BUILD_DIR)/asm/src/PageManager_8055fcd8.o \

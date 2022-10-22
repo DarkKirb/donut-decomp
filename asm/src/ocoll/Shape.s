@@ -181,3 +181,15 @@ lbl_801D9838:
 setDebugColor__Q25ocoll5ShapeFRC8_GXColor:
 /* 801D989C 001D56DC  38 63 00 1C */	addi r3, r3, 0x1c
 /* 801D98A0 001D56E0  4B F7 20 74 */	b __as__8_GXColorFRC8_GXColor
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52228"
+"@52228":
+
+	.4byte 0x3F000000
+
+.global "@52229"
+"@52229":
+
+	.4byte 0

@@ -59,12 +59,12 @@ endif
 # Tools
 #-------------------------------------------------------------------------------
 
-MWCC_VERSION := 4.3
+MWCC_VERSION := 1.7
 ifeq ($(EPILOGUE_PROCESS),1)
 MWCC_EPI_VERSION := 1.2.5
 MWCC_EPI_EXE := mwcceppc.exe
 endif
-MWLD_VERSION := 4.3
+MWLD_VERSION := 1.7
 
 # Programs
 ifeq ($(WINDOWS),1)

@@ -520,3 +520,55 @@ GetSize__FPvPv:
 /* 801CE5B8 001CA3F8  7C 08 03 A6 */	mtlr r0
 /* 801CE5BC 001CA3FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CE5C0 001CA400  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_\\DvdControl_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49342"
+"@49342":
+
+	.4byte 0x44766443
+	.4byte 0x6F6E7472
+	.4byte 0x6F6C2E63
+	.4byte 0x70700000
+
+.global "@49343"
+"@49343":
+
+	.4byte 0x57696946
+	.4byte 0x696C653A
+	.4byte 0x3A436C6F
+	.4byte 0x73650000
+
+.global dvdControlBlock
+dvdControlBlock:
+
+	.4byte Open__FPvPCv
+	.4byte GetStatus__FPvPv
+	.4byte Close__FPvPv
+	.4byte GetSize__FPvPv
+	.4byte Tell__FPvPv
+	.4byte Seek__FPvPvUl
+	.4byte Read__FPvPvPUcUl
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global meFile
+meFile:
+	.skip 0x4
+
+.global InterruptEnabled
+InterruptEnabled:
+	.skip 0x4
+
+.global handleRingBuffer
+handleRingBuffer:
+	.skip 0x4
+
+.global handleLinearBuffer
+handleLinearBuffer:
+	.skip 0x4

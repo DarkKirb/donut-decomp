@@ -614,3 +614,49 @@ getImage__Q23mov8MovieYuvFPv:
 /* 801D0E48 001CCC88  7C 08 03 A6 */	mtlr r0
 /* 801D0E4C 001CCC8C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D0E50 001CCC90  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23mov8MovieYuv
+__vt__Q23mov8MovieYuv:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q23mov8MovieYuvFv
+	.4byte getImage__Q23mov8MovieYuvFPv
+	.4byte setupRender__Q23mov8MovieYuvCFv
+	.4byte restoreRender__Q23mov8MovieYuvCFv
+	.4byte setupTexObjs__Q23mov8MovieYuvCFP9_GXTexObj
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49275"
+"@49275":
+
+	.4byte 0xFFA60000
+
+.global lbl_8055FC44
+lbl_8055FC44:
+
+	.4byte 0xFF8E0087
+
+.global "@49278_8055FC48"
+"@49278_8055FC48":
+
+	.4byte 0x0000E258
+
+.global "@49281"
+"@49281":
+
+	.4byte 0xB30000B6
+
+.global "@49284_8055FC50"
+"@49284_8055FC50":
+
+	.4byte 0xFF00FF40
+
+.global "@49305_8055FC54"
+"@49305_8055FC54":
+
+	.4byte 0

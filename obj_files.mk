@@ -964,15 +964,16 @@ $(BUILD_DIR)/asm/src/mintvm/VMSymbolTable.o \
 $(BUILD_DIR)/asm/src/mintvm/VMVariable.o \
 $(BUILD_DIR)/asm/src/mintvm/VMVariableList.o \
 \
+$(BUILD_DIR)/asm/src/mov/DvdControl.o \
+$(BUILD_DIR)/asm/src/mov/MovieAudio.o \
+$(BUILD_DIR)/asm/src/mov/MovieCommand.o \
+$(BUILD_DIR)/asm/src/mov/MovieKindUtil.o \
+$(BUILD_DIR)/asm/src/mov/MoviePlayer.o \
+$(BUILD_DIR)/asm/src/mov/MovieThread.o \
+$(BUILD_DIR)/asm/src/mov/MovieYuv.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_80006684.o \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File_800069c4.o \
-$(BUILD_DIR)/asm/src/DvdControl_801cdf28.o \
-$(BUILD_DIR)/asm/src/MovieAudio_801ce5c4.o \
-$(BUILD_DIR)/asm/src/MovieCommand_801ce904.o \
-$(BUILD_DIR)/asm/src/MovieKindUtil_801cec80.o \
-$(BUILD_DIR)/asm/src/MoviePlayer_801cedac.o \
-$(BUILD_DIR)/asm/src/MovieThread_801cfa28.o \
-$(BUILD_DIR)/asm/src/MovieYuv_801d055c.o \
 $(BUILD_DIR)/asm/src/Manager_801d0e54.o \
 $(BUILD_DIR)/asm/src/Message_801d1404.o \
 $(BUILD_DIR)/asm/src/Project_801d168c.o \
@@ -2959,8 +2960,6 @@ $(BUILD_DIR)/asm/src/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/UIntAABBox_8040603c.o 
 # .ctors
 O_FILES += \
-$(BUILD_DIR)/asm/src/DvdControl_8040633c.o \
-$(BUILD_DIR)/asm/src/MovieKindUtil_80406340.o \
 $(BUILD_DIR)/asm/src/Manager_80406344.o \
 $(BUILD_DIR)/asm/src/Trophy_80406348.o \
 $(BUILD_DIR)/asm/src/Commander_8040634c.o \
@@ -3140,11 +3139,6 @@ $(BUILD_DIR)/asm/src/SoundManager_80420f28.o \
 $(BUILD_DIR)/asm/src/BackupFileData2_80420fc8.o
 # .data
 O_FILES += \
-$(BUILD_DIR)/asm/src/DvdControl_8045cca8.o \
-$(BUILD_DIR)/asm/src/MovieKindUtil_8045cce8.o \
-$(BUILD_DIR)/asm/src/MoviePlayer_8045d018.o \
-$(BUILD_DIR)/asm/src/MovieThread_8045d040.o \
-$(BUILD_DIR)/asm/src/MovieYuv_8045d0e8.o \
 $(BUILD_DIR)/asm/src/Manager_8045d108.o \
 $(BUILD_DIR)/asm/src/Message_8045d1d0.o \
 $(BUILD_DIR)/asm/src/Project_8045d2a8.o \
@@ -4972,7 +4966,6 @@ $(BUILD_DIR)/asm/src/FullScreenModel_8055c6b8.o \
 $(BUILD_DIR)/asm/src/Wipe_8055c6c0.o
 # .sbss
 O_FILES += \
-$(BUILD_DIR)/asm/src/DvdControl_8055d2c8.o \
 $(BUILD_DIR)/asm/src/Manager_8055d2d8.o \
 $(BUILD_DIR)/asm/src/SceneAnime_8055d2e0.o \
 $(BUILD_DIR)/asm/src/SceneChallengeFileSelect_8055d2f0.o \
@@ -5074,9 +5067,6 @@ $(BUILD_DIR)/asm/src/SoundSystem_8055df60.o \
 $(BUILD_DIR)/asm/src/Alarm_8055df68.o
 # .sdata2
 O_FILES += \
-$(BUILD_DIR)/asm/src/MovieKindUtil_8055fc00.o \
-$(BUILD_DIR)/asm/src/MoviePlayer_8055fc08.o \
-$(BUILD_DIR)/asm/src/MovieYuv_8055fc40.o \
 $(BUILD_DIR)/asm/src/Nururi_8055fc58.o \
 $(BUILD_DIR)/asm/src/AttackNode_8055fc70.o \
 $(BUILD_DIR)/asm/src/AttackResult_8055fc78.o \

@@ -4,9 +4,6 @@ endif
 ifneq ($(findstring MSYS,$(shell uname)),)
   WINDOWS := 1
 endif
-ifeq ($(findstring not found,$(shell which nix)),)
-  NIX := 1
-endif
 
 # If 0, tells the console to chill out. (Quiets the make process.)
 VERBOSE ?= 1

@@ -733,3 +733,41 @@ lbl_803D3080:
 /* 803D308C 003CEECC  7C 08 03 A6 */	mtlr r0
 /* 803D3090 003CEED0  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 803D3094 003CEED4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55168_80492DC0"
+"@55168_80492DC0":
+
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F3C
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F34
+	.4byte lbl_803D2F44
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F4C
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F54
+	.4byte lbl_803D2F5C
+	.4byte lbl_803D2F64
+	.4byte lbl_803D2F6C
+	.4byte lbl_803D2F74
+	.4byte lbl_803D2F7C
+	.4byte lbl_803D2F88
+	.4byte lbl_803D2F84

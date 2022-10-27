@@ -419,3 +419,29 @@ lbl_80392DAC:
 /* 80392EF4 0038ED34  7C 08 03 A6 */	mtlr r0
 /* 80392EF8 0038ED38  38 21 00 10 */	addi r1, r1, 0x10
 /* 80392EFC 0038ED3C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1StateParasolCapture_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero7parasol19StateParasolCapture
+__vt__Q53scn4step4hero7parasol19StateParasolCapture:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7parasol19StateParasolCaptureFv
+	.4byte procAnim__Q53scn4step4hero7parasol19StateParasolCaptureFv
+	.4byte procMove__Q53scn4step4hero7parasol19StateParasolCaptureFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7parasol19StateParasolCaptureFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "OFFSET_TABLE__Q53scn4step4hero7parasol33@unnamed@StateParasolCapture_cpp@"
+"OFFSET_TABLE__Q53scn4step4hero7parasol33@unnamed@StateParasolCapture_cpp@":
+	.skip 0x80

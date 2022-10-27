@@ -84,3 +84,15 @@ onScriptExecPost__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script:
 /* 8028DB10 00289950  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8028DB14 00289954  38 80 00 00 */	li r4, 0x0
 /* 8028DB18 00289958  48 00 0B 48 */	b MintUnregister__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemyb
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step5enemy14ScriptCallback
+__vt__Q43scn4step5enemy14ScriptCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step5enemy14ScriptCallbackFv
+	.4byte onScriptRequested__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6ScriptUlUl
+	.4byte onScriptExecPre__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script
+	.4byte onScriptExecPost__Q43scn4step5enemy14ScriptCallbackFRCQ24gobj6Script

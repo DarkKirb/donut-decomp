@@ -3786,3 +3786,179 @@ resDrawEntryAt__Q43scn4step2bg7ResPartCFUl:
 gridHeight__Q43scn4step2bg7ResPartCFv:
 /* 80227258 00223098  88 63 00 1D */	lbz r3, 0x1d(r3)
 /* 8022725C 0022309C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@GetClassName__Q34nw4r3g3d9ResVtxPosFv"
+"@STRING@GetClassName__Q34nw4r3g3d9ResVtxPosFv":
+
+	.4byte 0x52657356
+	.4byte 0x7478506F
+	.4byte 0x73000000
+
+.global "@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv@0"
+"@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv@0":
+
+	.4byte 0x25733A3A
+	.4byte 0x25733A20
+	.4byte 0x4F626A65
+	.4byte 0x6374206E
+	.4byte 0x6F742076
+	.4byte 0x616C6964
+	.4byte 0x2E000000
+
+.global "@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv"
+"@STRING@ref__Q34nw4r3g3d9ResVtxPosCFv":
+
+	.4byte 0x6733645F
+	.4byte 0x72657376
+	.4byte 0x74785F61
+	.4byte 0x632E6800
+
+.global "@STRING@ref__Q34nw4r3g3d6ResMdlFv@0"
+"@STRING@ref__Q34nw4r3g3d6ResMdlFv@0":
+
+	.4byte 0x25733A3A
+	.4byte 0x25733A20
+	.4byte 0x4F626A65
+	.4byte 0x6374206E
+	.4byte 0x6F742076
+	.4byte 0x616C6964
+	.4byte 0x2E000000
+	.4byte 0
+
+.global "@STRING@ref__Q34nw4r3g3d6ResMdlFv"
+"@STRING@ref__Q34nw4r3g3d6ResMdlFv":
+
+	.4byte 0x6733645F
+	.4byte 0x7265736D
+	.4byte 0x646C5F61
+	.4byte 0x632E6800
+
+.global "@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv@0"
+"@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A466169
+	.4byte 0x6C656420
+	.4byte 0x61737365
+	.4byte 0x7274696F
+	.4byte 0x6E202128
+	.4byte 0x28753332
+	.4byte 0x29702026
+	.4byte 0x20307833
+	.4byte 0x29000000
+
+.global "@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv"
+"@STRING@__ct__Q34nw4r3g3d10ResMdlInfoFPv":
+
+	.4byte 0x6733645F
+	.4byte 0x7265736D
+	.4byte 0x646C5F61
+	.4byte 0x632E6800
+
+.global "@STRING@GetClassName__Q34nw4r3g3d10ResMdlInfoFv"
+"@STRING@GetClassName__Q34nw4r3g3d10ResMdlInfoFv":
+
+	.4byte 0x5265734D
+	.4byte 0x646C496E
+	.4byte 0x666F0000
+
+.global "@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv@0"
+"@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv@0":
+
+	.4byte 0x25733A3A
+	.4byte 0x25733A20
+	.4byte 0x4F626A65
+	.4byte 0x6374206E
+	.4byte 0x6F742076
+	.4byte 0x616C6964
+	.4byte 0x2E000000
+
+.global "@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv"
+"@STRING@ref__Q34nw4r3g3d10ResMdlInfoCFv":
+
+	.4byte 0x6733645F
+	.4byte 0x7265736D
+	.4byte 0x646C5F61
+	.4byte 0x632E6800
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@next__Q43scn4step2bg14DrawEntryReposFb@dummyObj"
+"@LOCAL@next__Q43scn4step2bg14DrawEntryReposFb@dummyObj":
+	.skip 0x38
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53352_80558E98"
+"@53352_80558E98":
+
+	.4byte 0
+
+.global "@53355_80558E9C"
+"@53355_80558E9C":
+
+	.4byte 0
+
+.global "@58266"
+"@58266":
+
+	.4byte 0x25732530
+	.4byte 0x346C7500
+
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0":
+
+	.4byte 0xFFFFFFFC
+
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortXlu_v@shuffle@0":
+
+	.4byte 0xFFFFFFFC
+
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,Q53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0":
+
+	.4byte 0xFFFFFFFC
+
+.global "@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0"
+"@LOCAL@sort<PQ43scn4step2bg16DrawEntryWrapper,RQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa>__3stdFPQ43scn4step2bg16DrawEntryWrapperPQ43scn4step2bg16DrawEntryWrapperRQ53scn4step2bg33@unnamed@DecorationMaproColl_cpp@9T_SortOpa_v@shuffle@0":
+
+	.4byte 0xFFFFFFFC
+
+.global __FUNCTION__$34959_80558EB8
+__FUNCTION__$34959_80558EB8:
+
+	.4byte 0x72656600
+
+.global __FUNCTION__$32217
+__FUNCTION__$32217:
+
+	.4byte 0x72656600
+
+.global __FUNCTION__$31454
+__FUNCTION__$31454:
+
+	.4byte 0x72656600
+
+.global __FUNCTION__$31183
+__FUNCTION__$31183:
+
+	.4byte 0x72656600
+
+.global __FUNCTION__$30538_80558EC8
+__FUNCTION__$30538_80558EC8:
+
+	.4byte 0x72656600
+
+.global __FUNCTION__$30525_80558ECC
+__FUNCTION__$30525_80558ECC:
+
+	.4byte 0x72656600
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@next__Q43scn4step2bg14DrawEntryReposFb@dummyObj"
+"@GUARD@next__Q43scn4step2bg14DrawEntryReposFb@dummyObj":
+	.skip 0x8

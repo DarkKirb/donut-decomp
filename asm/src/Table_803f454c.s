@@ -56,3 +56,51 @@ PtclResPath__Q43scn9grandmenu6effect5TableFQ43scn9grandmenu6effect11PtclResSlot:
 /* 803F45FC 003F043C  7C 64 02 14 */	add r3, r4, r0
 /* 803F4600 003F0440  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 803F4604 003F0444  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48738_804956F0"
+"@48738_804956F0":
+
+	.4byte 0x4772616E
+	.4byte 0x644D656E
+	.4byte 0x75000000
+
+.global "@48739_804956FC"
+"@48739_804956FC":
+
+	.4byte 0x73746570
+	.4byte 0x2F677261
+	.4byte 0x6E646D65
+	.4byte 0x6E752F50
+	.4byte 0x74477261
+	.4byte 0x6E644D65
+	.4byte 0x6E750000
+
+.global "@48845_80495718"
+"@48845_80495718":
+
+	.4byte 0x4772616E
+	.4byte 0x644D656E
+	.4byte 0x754C6967
+	.4byte 0x68740000
+
+.global "@48846_80495728"
+"@48846_80495728":
+
+	.4byte 0x4772616E
+	.4byte 0x644D656E
+	.4byte 0x75446563
+	.4byte 0x69646500
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@t_genContextHeader__Q43scn9grandmenu6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@LOCAL@t_genContextHeader__Q43scn9grandmenu6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x88
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@t_genContextHeader__Q43scn9grandmenu6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@GUARD@t_genContextHeader__Q43scn9grandmenu6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x8

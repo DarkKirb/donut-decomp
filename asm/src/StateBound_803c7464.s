@@ -301,3 +301,15 @@ lbl_803C7884:
 /* 803C7890 003C36D0  7C 08 03 A6 */	mtlr r0
 /* 803C7894 003C36D4  38 21 00 40 */	addi r1, r1, 0x40
 /* 803C7898 003C36D8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4item5state10StateBound
+__vt__Q53scn4step4item5state10StateBound:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4item5state10StateBoundFv
+	.4byte procAnim__Q53scn4step4item5state10StateBoundFv
+	.4byte procMove__Q53scn4step4item5state10StateBoundFv
+	.4byte procFixPos__Q53scn4step4item5state10StateBoundFv

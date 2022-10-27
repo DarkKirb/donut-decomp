@@ -20,3 +20,13 @@ Set__Q43scn4step5chara17MintScriptTriggerFUl:
 "__sinit_@@1MintScriptTrigger_cpp":
 /* 802706AC 0026C4EC  38 6D F1 D8 */	addi r3, r13, "t_obj__Q43scn4step5chara31@unnamed@MintScriptTrigger_cpp@"@sda21
 /* 802706B0 0026C4F0  4B E6 CD 30 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintScriptTrigger_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step5chara31@unnamed@MintScriptTrigger_cpp@"
+"t_obj__Q43scn4step5chara31@unnamed@MintScriptTrigger_cpp@":
+	.skip 0x8

@@ -140,3 +140,17 @@ procMove__Q53scn4step4boss6dubior16StateDashWallHitFv:
 .global procFixPos__Q53scn4step4boss6dubior16StateDashWallHitFv
 procFixPos__Q53scn4step4boss6dubior16StateDashWallHitFv:
 /* 8024E5CC 0024A40C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss6dubior16StateDashWallHit
+__vt__Q53scn4step4boss6dubior16StateDashWallHit:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss6dubior16StateDashWallHitFv
+	.4byte procAnim__Q53scn4step4boss6dubior16StateDashWallHitFv
+	.4byte procMove__Q53scn4step4boss6dubior16StateDashWallHitFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6dubior16StateDashWallHitFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

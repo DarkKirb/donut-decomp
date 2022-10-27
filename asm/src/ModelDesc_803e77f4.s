@@ -83,3 +83,25 @@ lbl_803E78CC:
 /* 803E7904 003E3744  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon15sirkibblecutter23@unnamed@ModelDesc_cpp@"@ha
 /* 803E7908 003E3748  90 03 54 60 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon15sirkibblecutter23@unnamed@ModelDesc_cpp@"@l(r3)
 /* 803E790C 003E374C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50239_804949E0"
+"@50239_804949E0":
+
+	.4byte 0x5369726B
+	.4byte 0x6962626C
+	.4byte 0x65437574
+	.4byte 0x74657200
+
+.global "@50240_804949F0"
+"@50240_804949F0":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x7369726B
+	.4byte 0x6962626C
+	.4byte 0x652F4375
+	.4byte 0x74746572
+	.4byte 0

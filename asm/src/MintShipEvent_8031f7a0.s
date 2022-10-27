@@ -19,3 +19,13 @@ Obj__Q53scn4step7gimmick9shipevent13MintShipEventFv:
 "__sinit_@@1MintShipEvent_cpp":
 /* 8031F7BC 0031B5FC  38 6D F7 C0 */	addi r3, r13, "t_obj__Q53scn4step7gimmick9shipevent27@unnamed@MintShipEvent_cpp@"@sda21
 /* 8031F7C0 0031B600  4B DB DC 20 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintShipEvent_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q53scn4step7gimmick9shipevent27@unnamed@MintShipEvent_cpp@"
+"t_obj__Q53scn4step7gimmick9shipevent27@unnamed@MintShipEvent_cpp@":
+	.skip 0x8

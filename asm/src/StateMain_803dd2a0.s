@@ -1286,3 +1286,41 @@ lbl_803DE3E8:
 .global __dt__Q53scn4step6weapon9swordbeam9StateMainFv
 __dt__Q53scn4step6weapon9swordbeam9StateMainFv:
 /* 803DE3FC 003DA23C  4B FF A6 44 */	b __dt__Q43scn4step6weapon11StateNormalFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon11starshotlv39StateMain
+__vt__Q53scn4step6weapon11starshotlv39StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procMove__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11starshotlv39StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11starshotlv39StateMainFv
+
+.global __vt__Q53scn4step6weapon11waterpistol9StateMain
+__vt__Q53scn4step6weapon11waterpistol9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procMove__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11waterpistol9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11waterpistol9StateMainFv
+
+.global __vt__Q53scn4step6weapon9swordbeam9StateMain
+__vt__Q53scn4step6weapon9swordbeam9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procMove__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon9swordbeam9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon9swordbeam9StateMainFv

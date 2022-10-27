@@ -120,3 +120,29 @@ lbl_8020030C:
 /* 80200318 001FC158  7C 08 03 A6 */	mtlr r0
 /* 8020031C 001FC15C  38 21 02 30 */	addi r1, r1, 0x230
 /* 80200320 001FC160  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49044_80460328"
+"@49044_80460328":
+
+	.4byte 0x6C79742F
+	.4byte 0x25732E61
+	.4byte 0x72632E63
+	.4byte 0x6D700000
+	.4byte 0x50616765
+	.4byte 0x25303264
+	.4byte 0x2E62726C
+	.4byte 0x79740000
+	.4byte 0x50616765
+	.4byte 0x53253032
+	.4byte 0x642E6272
+	.4byte 0x6C797400
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49045_80558310"
+"@49045_80558310":
+
+	.4byte 0x726F6F74
+	.4byte 0

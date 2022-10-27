@@ -222,3 +222,21 @@ lbl_80333DA4:
 .global "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv"
 "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv":
 /* 80333E00 0032FC40  4B EF A8 A0 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>"
+"__vt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util106StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick24StateChallengeBattleLose,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>"
+"__vt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util105StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero>Fv"

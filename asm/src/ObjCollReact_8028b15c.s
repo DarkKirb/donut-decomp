@@ -1117,3 +1117,103 @@ lbl_8028BF74:
 .global "__dt__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>Fv"
 "__dt__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>Fv":
 /* 8028C028 00287E68  4B FA 26 78 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_HITEFFECT_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@"
+"T_HITEFFECT_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x00000072
+	.4byte 0x00000071
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007B
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007C
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000076
+
+.global "T_HITSE_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@"
+"T_HITSE_TABLE__Q43scn4step5enemy26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x000001E5
+	.4byte 0x000001E5
+	.4byte 0x000001EB
+	.4byte 0x000001E9
+	.4byte 0x000001E8
+	.4byte 0x000001E7
+	.4byte 0x0000016F
+	.4byte 0x000001A4
+	.4byte 0x000001A4
+	.4byte 0x000001EA
+	.4byte 0x000001D8
+	.4byte 0x000001D9
+	.4byte 0x000001A5
+	.4byte 0x00000257
+	.4byte 0x000001E3
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>"
+"__vt__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>Fv"
+	.4byte "create__Q24util103StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage16StateDeadExtreme,PQ43scn4step5enemy5Enemy,Ul>Fv"
+
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage14StateDeadSuper,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage14StateDeadSuper,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage14StateDeadSuper,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage14StateDeadSuper,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage19StateDamageWingToss,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage19StateDamageWingToss,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage19StateDamageWingToss,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util103StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage19StateDamageWingToss,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage17StateDamageNormal,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage17StateDamageNormal,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage17StateDamageNormal,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage17StateDamageNormal,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage18StateDamageExtreme,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage18StateDamageExtreme,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage18StateDamageExtreme,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6damage18StateDamageExtreme,PQ43scn4step5enemy5Enemy>Fv"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56339_80559630"
+"@56339_80559630":
+
+	.4byte 0x00000001
+	.4byte 0

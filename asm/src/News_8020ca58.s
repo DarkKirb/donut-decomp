@@ -606,3 +606,129 @@ lbl_8020D2AC:
 lbl_8020D2BC:
 /* 8020D2BC 002090FC  38 60 00 00 */	li r3, 0x0
 /* 8020D2C0 00209100  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "IS_LARGE__Q33scn7history18@unnamed@News_cpp@"
+"IS_LARGE__Q33scn7history18@unnamed@News_cpp@":
+
+	.4byte 0x01000000
+	.4byte 0x01010001
+	.4byte 0x00000100
+	.4byte 0x01010101
+	.4byte 0x00010001
+	.4byte 0x01010000
+
+.global "SHOW_DECORATION__Q33scn7history18@unnamed@News_cpp@"
+"SHOW_DECORATION__Q33scn7history18@unnamed@News_cpp@":
+
+	.4byte 0
+	.4byte 0x01000001
+	.4byte 0
+	.4byte 0x01010000
+	.4byte 0x00000001
+	.4byte 0x01010000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53381_80461360"
+"@53381_80461360":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x4D61696E
+	.4byte 0
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x4E657773
+	.4byte 0x49636F6E
+	.4byte 0
+	.4byte 0x48617264
+	.4byte 0x50696374
+	.4byte 0x75726500
+	.4byte 0x48617264
+	.4byte 0x5069634E
+	.4byte 0
+	.4byte 0x50696374
+	.4byte 0x75726553
+	.4byte 0x6D616C6C
+	.4byte 0
+	.4byte 0x50696374
+	.4byte 0x7572654C
+	.4byte 0x61726765
+	.4byte 0
+	.4byte 0x4E657773
+	.4byte 0x5469746C
+	.4byte 0x65426566
+	.4byte 0x6F726531
+	.4byte 0x39393100
+	.4byte 0x4E657773
+	.4byte 0x5469746C
+	.4byte 0x65000000
+	.4byte 0x5469746C
+	.4byte 0x655F5368
+	.4byte 0x61646F77
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53382"
+"@53382":
+
+	.4byte 0x4E657773
+	.4byte 0
+
+.global "@53384_805585B8"
+"@53384_805585B8":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53510_805585C0"
+"@53510_805585C0":
+
+	.4byte 0x53746172
+	.4byte 0x4E000000
+
+.global "@53511_805585C8"
+"@53511_805585C8":
+
+	.4byte 0x54657874
+	.4byte 0x30310000
+
+.global "@53512_805585D0"
+"@53512_805585D0":
+
+	.4byte 0x4E657773
+	.4byte 0x25640000
+
+.global "@53515_805585D8"
+"@53515_805585D8":
+
+	.4byte 0x5469746C
+	.4byte 0x65000000
+
+.global "@53528_805585E0"
+"@53528_805585E0":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@53532_805585E8"
+"@53532_805585E8":
+
+	.4byte 0x456E6400
+	.4byte 0

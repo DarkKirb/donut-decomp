@@ -338,3 +338,27 @@ lbl_803A927C:
 /* 803A9370 003A51B0  7C 08 03 A6 */	mtlr r0
 /* 803A9374 003A51B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A9378 003A51B8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1HeroPanelController_cpp"
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "INVALID_POS__Q43scn4step4info33@unnamed@HeroPanelController_cpp@"
+"INVALID_POS__Q43scn4step4info33@unnamed@HeroPanelController_cpp@":
+	.skip 0xC
+
+.global "HERO_POS_TO_CENTER_OFFSET__Q43scn4step4info33@unnamed@HeroPanelController_cpp@"
+"HERO_POS_TO_CENTER_OFFSET__Q43scn4step4info33@unnamed@HeroPanelController_cpp@":
+	.skip 0xC
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "INVALID_POS_VEC2__Q43scn4step4info33@unnamed@HeroPanelController_cpp@"
+"INVALID_POS_VEC2__Q43scn4step4info33@unnamed@HeroPanelController_cpp@":
+	.skip 0x8
+
+.global "HITTEST_MARGIN__Q43scn4step4info33@unnamed@HeroPanelController_cpp@"
+"HITTEST_MARGIN__Q43scn4step4info33@unnamed@HeroPanelController_cpp@":
+	.skip 0x8

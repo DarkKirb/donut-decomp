@@ -143,3 +143,17 @@ lbl_80249858:
 /* 80249870 002456B0  7C 08 03 A6 */	mtlr r0
 /* 80249874 002456B4  38 21 00 30 */	addi r1, r1, 0x30
 /* 80249878 002456B8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss9creditdee8StateRun
+__vt__Q53scn4step4boss9creditdee8StateRun:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss9creditdee8StateRunFv
+	.4byte procAnim__Q53scn4step4boss9creditdee8StateRunFv
+	.4byte procMove__Q53scn4step4boss9creditdee8StateRunFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss9creditdee8StateRunFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

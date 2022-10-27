@@ -313,3 +313,125 @@ hide__Q53scn4step4info5lvmap10PlayerIconFv:
 /* 803BEA34 003BA874  7C 08 03 A6 */	mtlr r0
 /* 803BEA38 003BA878  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 803BEA3C 003BA87C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52394_80491820"
+"@52394_80491820":
+
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F4D
+	.4byte 0x61696E00
+
+.global "@52395"
+"@52395":
+
+	.4byte 0x506C6179
+	.4byte 0x65724963
+	.4byte 0x6F6E0000
+	.4byte 0x46696768
+	.4byte 0x7465724E
+	.4byte 0
+	.4byte 0x50617261
+	.4byte 0x736F6C4E
+	.4byte 0
+	.4byte 0x4D61686F
+	.4byte 0x726F614E
+	.4byte 0
+
+.global "@52453"
+"@52453":
+
+	.4byte lbl_803BE6FC
+	.4byte lbl_803BE79C
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE7EC
+	.4byte lbl_803BE724
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE814
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE774
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE7C4
+	.4byte lbl_803BE864
+	.4byte lbl_803BE74C
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE83C
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE864
+	.4byte lbl_803BE888
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52442_8055BC30"
+"@52442_8055BC30":
+
+	.4byte 0x4E6F726D
+	.4byte 0x616C4E00
+
+.global "@52443_8055BC38"
+"@52443_8055BC38":
+
+	.4byte 0x46697265
+	.4byte 0x4E000000
+
+.global "@52446_8055BC40"
+"@52446_8055BC40":
+
+	.4byte 0x53776F72
+	.4byte 0x644E0000
+
+.global "@52447_8055BC48"
+"@52447_8055BC48":
+
+	.4byte 0x57696E67
+	.4byte 0x4E000000
+
+.global "@52448_8055BC50"
+"@52448_8055BC50":
+
+	.4byte 0x57686970
+	.4byte 0x4E000000
+
+.global "@52449_8055BC58"
+"@52449_8055BC58":
+
+	.4byte 0x53706172
+	.4byte 0x6B4E0000
+
+.global "@52450_8055BC60"
+"@52450_8055BC60":
+
+	.4byte 0x536D6173
+	.4byte 0x684E0000

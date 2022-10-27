@@ -127,3 +127,33 @@ lbl_80200A20:
 /* 80200A28 001FC868  7C 08 03 A6 */	mtlr r0
 /* 80200A2C 001FC86C  38 21 00 30 */	addi r1, r1, 0x30
 /* 80200A30 001FC870  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51541_80460468"
+"@51541_80460468":
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F4D
+	.4byte 0x61696E00
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51954_80558318"
+"@51954_80558318":
+
+	.4byte 0x42470000
+
+.global "@51993_8055831C"
+"@51993_8055831C":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@51999"
+"@51999":
+
+	.4byte 0x57616974
+	.4byte 0
+	.4byte 0

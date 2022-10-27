@@ -295,3 +295,17 @@ lbl_802F1EC8:
 /* 802F1EE0 002EDD20  7C 08 03 A6 */	mtlr r0
 /* 802F1EE4 002EDD24  38 21 00 40 */	addi r1, r1, 0x40
 /* 802F1EE8 002EDD28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy11whispyapple14StateBoundNear
+__vt__Q53scn4step5enemy11whispyapple14StateBoundNear:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy11whispyapple14StateBoundNearFv
+	.4byte procAnim__Q53scn4step5enemy11whispyapple14StateBoundNearFv
+	.4byte procMove__Q53scn4step5enemy11whispyapple14StateBoundNearFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11whispyapple14StateBoundNearFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

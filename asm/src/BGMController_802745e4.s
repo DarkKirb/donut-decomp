@@ -467,3 +467,15 @@ __ct__Q53scn4step4core13BGMController4MemoFv:
 /* 80274BE8 00270A28  98 03 00 11 */	stb r0, 0x11(r3)
 /* 80274BEC 00270A2C  98 03 00 12 */	stb r0, 0x12(r3)
 /* 80274BF0 00270A30  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49495_80559468"
+"@49495_80559468":
+
+	.4byte 0
+
+.global "@49496_8055946C"
+"@49496_8055946C":
+
+	.4byte 0x3F800000

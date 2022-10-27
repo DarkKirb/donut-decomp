@@ -240,3 +240,35 @@ lbl_8020E64C:
 lbl_8020E65C:
 /* 8020E65C 0020A49C  38 60 00 00 */	li r3, 0x0
 /* 8020E660 0020A4A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52124_80461500"
+"@52124_80461500":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x5061636B
+	.4byte 0x61676548
+	.4byte 0x656C7050
+	.4byte 0x6F730000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52169"
+"@52169":
+
+	.4byte 0x416E696D
+	.4byte 0x65000000
+
+.global "@52170_80558668"
+"@52170_80558668":
+
+	.4byte 0x436F6D69
+	.4byte 0x63000000
+
+.global "@52171"
+"@52171":
+
+	.4byte 0x56430000
+	.4byte 0

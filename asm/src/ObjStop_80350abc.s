@@ -218,3 +218,17 @@ onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor:
 /* 80350D98 0034CBD8  7C 08 03 A6 */	mtlr r0
 /* 80350D9C 0034CBDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80350DA0 0034CBE0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4hero7ObjStop
+__vt__Q43scn4step4hero7ObjStop:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4hero7ObjStopFv
+	.4byte onStopNormalStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step4hero7ObjStopFRCQ25ostop5Actor
+	.4byte 0

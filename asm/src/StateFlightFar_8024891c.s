@@ -420,3 +420,25 @@ lbl_80248EA4:
 .global "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>Fv"
 "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>Fv":
 /* 80248EE4 00244D24  4B FE 57 BC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step4boss9creditdee14StateFlightFar,PQ43scn4step4boss4Boss>Fv"
+
+.global __vt__Q53scn4step4boss9creditdee14StateFlightFar
+__vt__Q53scn4step4boss9creditdee14StateFlightFar:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss9creditdee14StateFlightFarFv
+	.4byte procAnim__Q53scn4step4boss9creditdee14StateFlightFarFv
+	.4byte procMove__Q53scn4step4boss9creditdee14StateFlightFarFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss9creditdee14StateFlightFarFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

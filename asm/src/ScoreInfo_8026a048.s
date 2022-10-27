@@ -72,3 +72,17 @@ registerToRoot__Q43scn4step9challenge9ScoreInfoFRQ23g3d4Root:
 isAlive__Q43scn4step9challenge9ScoreInfoCFv:
 /* 8026A13C 00265F7C  38 63 00 08 */	addi r3, r3, 0x8
 /* 8026A140 00265F80  4B F2 AC CC */	b isAnimating__Q23g3d8StdModelCFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51676_80559440"
+"@51676_80559440":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@51677_80559448"
+"@51677_80559448":
+
+	.4byte 0x4D61696E
+	.4byte 0

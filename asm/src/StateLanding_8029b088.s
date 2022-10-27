@@ -157,3 +157,25 @@ lbl_8029B280:
 .global __dt__Q53scn4step5enemy7blipper12StateLandingFv
 __dt__Q53scn4step5enemy7blipper12StateLandingFv:
 /* 8029B298 002970D8  4B FF 67 20 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy7blipper12StateLanding
+__vt__Q53scn4step5enemy7blipper12StateLanding:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy7blipper12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54872_80559730"
+"@54872_80559730":
+
+	.4byte 0
+	.4byte 0

@@ -116,3 +116,17 @@ lbl_8029AB48:
 .global __dt__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv
 __dt__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv:
 /* 8029AB60 002969A0  4B FF 6E 58 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNear
+__vt__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNear:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv
+	.4byte procAnim__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv
+	.4byte procMove__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy7blipper26StateFattyBufferEscapeNearFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

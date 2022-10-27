@@ -207,3 +207,57 @@ lbl_8022E6E0:
 /* 8022E6F0 0022A530  7C 08 03 A6 */	mtlr r0
 /* 8022E6F4 0022A534  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022E6F8 0022A538  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>"
+"__vt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+
+.global "__vt__Q24util28StateFactory<Q24util6IState>"
+"__vt__Q24util28StateFactory<Q24util6IState>":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q43scn4step4boss10CustomBase
+__vt__Q43scn4step4boss10CustomBase:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q43scn4step4boss10CustomBaseCFv
+	.4byte __dt__Q43scn4step4boss10CustomBaseFv
+	.4byte onInit__Q43scn4step4boss10CustomBaseFv
+	.4byte onAppear__Q43scn4step4boss10CustomBaseFv
+	.4byte onStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onDamage__Q43scn4step4boss10CustomBaseFv
+	.4byte onDead__Q43scn4step4boss10CustomBaseFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcMove__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step4boss10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step4boss10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4boss10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4boss10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

@@ -367,3 +367,13 @@ lbl_802EF794:
 .global "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>Fv":
 /* 802EF7C8 002EB608  4B F3 EE D8 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy9waddledee12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"

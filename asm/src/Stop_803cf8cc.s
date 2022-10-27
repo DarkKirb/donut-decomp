@@ -329,3 +329,17 @@ lbl_803CFCE4:
 /* 803CFCFC 003CBB3C  7C 08 03 A6 */	mtlr r0
 /* 803CFD00 003CBB40  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CFD04 003CBB44  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step3sfx4Stop
+__vt__Q43scn4step3sfx4Stop:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step3sfx4StopFv
+	.4byte onStopNormalStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopNormalFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopPowerfulStarted__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte onStopPowerfulFinished__Q43scn4step3sfx4StopFRCQ25ostop5Actor
+	.4byte 0

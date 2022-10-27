@@ -71,3 +71,17 @@ updateLockNonStop__Q53scn4step7gimmick10cameralock17VariationDownsideFRQ53scn4st
 .global setIsPose__Q53scn4step7gimmick10cameralock17VariationDownsideFb
 setIsPose__Q53scn4step7gimmick10cameralock17VariationDownsideFb:
 /* 80304300 00300140  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick10cameralock17VariationDownside
+__vt__Q53scn4step7gimmick10cameralock17VariationDownside:
+
+	.4byte 0
+	.4byte 0
+	.4byte updateReady__Q53scn4step7gimmick10cameralock17VariationDownsideFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLock__Q53scn4step7gimmick10cameralock17VariationDownsideFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateReadyNonStop__Q53scn4step7gimmick10cameralock17VariationDownsideFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock17VariationDownsideFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte setIsPose__Q53scn4step7gimmick10cameralock17VariationDownsideFb
+	.4byte 0

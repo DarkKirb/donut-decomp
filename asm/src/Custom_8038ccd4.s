@@ -62,3 +62,13 @@ lbl_8038CD80:
 .global GetRuntimeTypeInfo__Q53scn4step4hero5spark6CustomCFv
 GetRuntimeTypeInfo__Q53scn4step4hero5spark6CustomCFv:
 /* 8038CD9C 00388BDC  4B F9 EA B0 */	b "RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero5spark6Custom
+__vt__Q53scn4step4hero5spark6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step4hero5spark6CustomCFv
+	.4byte __dt__Q53scn4step4hero5spark6CustomFv

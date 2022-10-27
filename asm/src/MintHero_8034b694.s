@@ -19,3 +19,13 @@ Obj__Q43scn4step4hero8MintHeroFv:
 "__sinit_@@1MintHero_cpp":
 /* 8034B6B0 003474F0  38 6D F8 08 */	addi r3, r13, "t_obj__Q43scn4step4hero22@unnamed@MintHero_cpp@"@sda21
 /* 8034B6B4 003474F4  4B D9 1D 2C */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintHero_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step4hero22@unnamed@MintHero_cpp@"
+"t_obj__Q43scn4step4hero22@unnamed@MintHero_cpp@":
+	.skip 0x8

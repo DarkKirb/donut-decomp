@@ -399,3 +399,17 @@ lbl_802EBF64:
 .global __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
 __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv:
 /* 802EBF7C 002E7DBC  4B FA 5A 3C */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy9tsukikage15StateJumpAttack
+__vt__Q53scn4step5enemy9tsukikage15StateJumpAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.4byte procAnim__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.4byte procMove__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9tsukikage15StateJumpAttackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

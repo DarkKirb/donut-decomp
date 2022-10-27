@@ -96,3 +96,13 @@ SetRotDIntoTarget__Q43scn4step5chara16MintModelRotCtrlFv:
 "__sinit_@@1MintModelRotCtrl_cpp":
 /* 8026FE88 0026BCC8  38 6D F1 C8 */	addi r3, r13, "t_obj__Q43scn4step5chara30@unnamed@MintModelRotCtrl_cpp@"@sda21
 /* 8026FE8C 0026BCCC  4B E6 D5 54 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintModelRotCtrl_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step5chara30@unnamed@MintModelRotCtrl_cpp@"
+"t_obj__Q43scn4step5chara30@unnamed@MintModelRotCtrl_cpp@":
+	.skip 0x8

@@ -221,3 +221,25 @@ lbl_8029C810:
 .global "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>Fv":
 /* 8029C844 00298684  4B F9 1E 5C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11bonkersbomb12StateLanding,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy11bonkersbomb9StateShot
+__vt__Q53scn4step5enemy11bonkersbomb9StateShot:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy11bonkersbomb9StateShotFv
+	.4byte procAnim__Q53scn4step5enemy11bonkersbomb9StateShotFv
+	.4byte procMove__Q53scn4step5enemy11bonkersbomb9StateShotFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11bonkersbomb9StateShotFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

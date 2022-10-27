@@ -55,3 +55,211 @@ ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv:
 /* 8035C958 00358798  90 C3 00 04 */	stw r6, 0x4(r3)
 /* 8035C95C 0035879C  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8035C960 003587A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@entries@1"
+"@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@entries@1":
+
+	.4byte "@48740_8055B240"
+	.4byte 0
+	.4byte "@48741_8055B248"
+	.4byte 0
+	.4byte "@48742_8048B390"
+	.4byte 0
+	.4byte "@48743_8048B39C"
+	.4byte 0
+	.4byte "@48744_8048B3A8"
+	.4byte 0
+	.4byte "@48745_8055B250"
+	.4byte 0
+	.4byte "@48746_8055B258"
+	.4byte 0
+	.4byte "@48747_8055B260"
+	.4byte 0
+	.4byte "@48748_8048B3B4"
+	.4byte 0
+	.4byte "@48749_8055B268"
+	.4byte 0
+	.4byte "@48750_8048B3C0"
+	.4byte 0
+	.4byte "@48751_8048B3CC"
+	.4byte 0
+	.4byte "@48752_8048B3DC"
+	.4byte 0
+	.4byte "@48753_8048B3F0"
+	.4byte 0
+	.4byte "@48754_8048B400"
+	.4byte 0
+	.4byte "@48755_8055B270"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48808_8048B368"
+"@48808_8048B368":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F68
+	.4byte 0x65726F2F
+	.4byte 0x6B697262
+	.4byte 0x792F7061
+	.4byte 0x7261736F
+	.4byte 0x6C2F5061
+	.4byte 0x7261736F
+	.4byte 0x6C000000
+
+.global "@48742_8048B390"
+"@48742_8048B390":
+
+	.4byte 0x5377696E
+	.4byte 0x67456E64
+	.4byte 0
+
+.global "@48743_8048B39C"
+"@48743_8048B39C":
+
+	.4byte 0x50617261
+	.4byte 0x63687574
+	.4byte 0x65000000
+
+.global "@48744_8048B3A8"
+"@48744_8048B3A8":
+
+	.4byte 0x44697665
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@48748_8048B3B4"
+"@48748_8048B3B4":
+
+	.4byte 0x4472696C
+	.4byte 0x6C537461
+	.4byte 0x72740000
+
+.global "@48750_8048B3C0"
+"@48750_8048B3C0":
+
+	.4byte 0x4472696C
+	.4byte 0x6C456E64
+	.4byte 0
+
+.global "@48751_8048B3CC"
+"@48751_8048B3CC":
+
+	.4byte 0x50617261
+	.4byte 0x736F6C43
+	.4byte 0x61746368
+	.4byte 0
+
+.global "@48752_8048B3DC"
+"@48752_8048B3DC":
+
+	.4byte 0x50617261
+	.4byte 0x736F6C50
+	.4byte 0x6572666F
+	.4byte 0x726D616E
+	.4byte 0x63650000
+
+.global "@48753_8048B3F0"
+"@48753_8048B3F0":
+
+	.4byte 0x50617261
+	.4byte 0x736F6C54
+	.4byte 0x68726F77
+	.4byte 0
+
+.global "@48754_8048B400"
+"@48754_8048B400":
+
+	.4byte 0x436C6F73
+	.4byte 0x65537461
+	.4byte 0x72740000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@desc"
+"@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@desc":
+	.skip 0x58
+
+.global "@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@desc"
+"@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@desc":
+	.skip 0x10
+
+.global "@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@dataDesc@0"
+"@LOCAL@ParasolAnim__Q53scn4step4hero9modeldesc7ParasolFv@dataDesc@0":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48732_8055B228"
+"@48732_8055B228":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@48733_8055B230"
+"@48733_8055B230":
+
+	.4byte 0x416C6C4C
+	.4byte 0
+
+.global "@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@names@1"
+"@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@names@1":
+
+	.4byte "@48732_8055B228"
+	.4byte "@48733_8055B230"
+
+.global "@48740_8055B240"
+"@48740_8055B240":
+
+	.4byte 0x43617272
+	.4byte 0x79000000
+
+.global "@48741_8055B248"
+"@48741_8055B248":
+
+	.4byte 0x5377696E
+	.4byte 0x67000000
+
+.global "@48745_8055B250"
+"@48745_8055B250":
+
+	.4byte 0x44697665
+	.4byte 0
+
+.global "@48746_8055B258"
+"@48746_8055B258":
+
+	.4byte 0x44697665
+	.4byte 0x456E6400
+
+.global "@48747_8055B260"
+"@48747_8055B260":
+
+	.4byte 0x53686965
+	.4byte 0x6C640000
+
+.global "@48749_8055B268"
+"@48749_8055B268":
+
+	.4byte 0x4472696C
+	.4byte 0x6C000000
+
+.global "@48755_8055B270"
+"@48755_8055B270":
+
+	.4byte 0x436C6F73
+	.4byte 0x65000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@desc"
+"@GUARD@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@desc":
+	.skip 0x8
+
+.global "@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@nodeReposDesc@0"
+"@LOCAL@ParasolModel__Q53scn4step4hero9modeldesc7ParasolFv@nodeReposDesc@0":
+	.skip 0x8

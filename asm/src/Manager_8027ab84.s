@@ -335,3 +335,11 @@ createCameraInfo__Q43scn4step6effect7ManagerFQ43scn4step6camera4Kind:
 /* 8027AFE0 00276E20  7C 08 03 A6 */	mtlr r0
 /* 8027AFE4 00276E24  38 21 00 60 */	addi r1, r1, 0x60
 /* 8027AFE8 00276E28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53081_80559490"
+"@53081_80559490":
+
+	.4byte 0x45666665
+	.4byte 0x63740000

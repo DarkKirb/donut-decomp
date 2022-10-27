@@ -58,3 +58,319 @@ lbl_80253924:
 /* 8025394C 0024F78C  7C 08 03 A6 */	mtlr r0
 /* 80253950 0024F790  38 21 00 30 */	addi r1, r1, 0x30
 /* 80253954 0024F794  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_NODE_NAMES__Q53scn4step4boss8kingsdoo23@unnamed@ModelDesc_cpp@"
+"T_NODE_NAMES__Q53scn4step4boss8kingsdoo23@unnamed@ModelDesc_cpp@":
+
+	.4byte "@50130_80559210"
+	.4byte "@50131_80559218"
+	.4byte "@50132_80559220"
+	.4byte "@50133_80559228"
+	.4byte "@50134_80559230"
+
+.global "@50138_804683E4"
+"@50138_804683E4":
+
+	.4byte 0x50726541
+	.4byte 0x70706561
+	.4byte 0x72000000
+
+.global "@50141_804683F0"
+"@50141_804683F0":
+
+	.4byte 0x41747461
+	.4byte 0x636B5374
+	.4byte 0x61727400
+
+.global "@50145_804683FC"
+"@50145_804683FC":
+
+	.4byte 0x4A756D70
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@50148_80468408"
+"@50148_80468408":
+
+	.4byte 0x44656174
+	.4byte 0x6844616D
+	.4byte 0x61676500
+
+.global "@50149_80468414"
+"@50149_80468414":
+
+	.4byte 0x44656174
+	.4byte 0x68537461
+	.4byte 0x72740000
+
+.global "@50152_80468420"
+"@50152_80468420":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x57616974
+	.4byte 0x2E457865
+	.4byte 0x63000000
+
+.global "@50153_80468440"
+"@50153_80468440":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x41707065
+	.4byte 0x61722E45
+	.4byte 0x78656300
+
+.global "@50154_80468460"
+"@50154_80468460":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4C616E64
+	.4byte 0x696E672E
+	.4byte 0x45786563
+	.4byte 0
+
+.global "@50155_80468484"
+"@50155_80468484":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x46616C6C
+	.4byte 0x2E457865
+	.4byte 0x63000000
+
+.global "@50156_804684A4"
+"@50156_804684A4":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x44656164
+	.4byte 0x2E457865
+	.4byte 0x63000000
+
+.global "@50157_804684C4"
+"@50157_804684C4":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x44617368
+	.4byte 0x2E457865
+	.4byte 0x63000000
+
+.global "@50158_804684E4"
+"@50158_804684E4":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x44617368
+	.4byte 0x57616C6C
+	.4byte 0x4869742E
+	.4byte 0x45786563
+	.4byte 0
+
+.global "@50159_8046850C"
+"@50159_8046850C":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x44617368
+	.4byte 0x456E642E
+	.4byte 0x45786563
+	.4byte 0
+
+.global "@50160_80468530"
+"@50160_80468530":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x41747461
+	.4byte 0x636B2E45
+	.4byte 0x78656300
+
+.global "@50161_80468550"
+"@50161_80468550":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4D6F7665
+	.4byte 0x466F7277
+	.4byte 0x6172642E
+	.4byte 0x45786563
+	.4byte 0
+
+.global "@50162_80468578"
+"@50162_80468578":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x53746172
+	.4byte 0x742E4578
+	.4byte 0x65630000
+
+.global "@50163_8046859C"
+"@50163_8046859C":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x2E457865
+	.4byte 0x63000000
+
+.global "@50164_804685BC"
+"@50164_804685BC":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x41747461
+	.4byte 0x636B5374
+	.4byte 0x6172742E
+	.4byte 0x45786563
+	.4byte 0
+
+.global "@50165_804685E8"
+"@50165_804685E8":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x41747461
+	.4byte 0x636B2E45
+	.4byte 0x78656328
+	.4byte 0x696E7429
+	.4byte 0
+
+.global "@50166_80468614"
+"@50166_80468614":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x4D616368
+	.4byte 0x696E6567
+	.4byte 0x756E5374
+	.4byte 0x6172742E
+	.4byte 0x45786563
+	.4byte 0
+	.4byte 0
+
+.global "@50167_80468648"
+"@50167_80468648":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x4A756D70
+	.4byte 0x4D616368
+	.4byte 0x696E6567
+	.4byte 0x756E2E45
+	.4byte 0x78656300
+
+.global "@50168_80468670"
+"@50168_80468670":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x43686172
+	.4byte 0x67654174
+	.4byte 0x7461636B
+	.4byte 0x53746172
+	.4byte 0x742E4578
+	.4byte 0x65630000
+
+.global "@50169_8046869C"
+"@50169_8046869C":
+
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0x2E416E69
+	.4byte 0x6D536372
+	.4byte 0x6970742E
+	.4byte 0x43686172
+	.4byte 0x67654174
+	.4byte 0x7461636B
+	.4byte 0x2E457865
+	.4byte 0x63000000
+	.4byte 0x4B696E67
+	.4byte 0x73446F6F
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F65
+	.4byte 0x6E656D79
+	.4byte 0x2F626568
+	.4byte 0x6F6C646F
+	.4byte 0x6F2F4D6F
+	.4byte 0x74696F6E
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F65
+	.4byte 0x6E656D79
+	.4byte 0x2F626568
+	.4byte 0x6F6C646F
+	.4byte 0x6F2F4D6F
+	.4byte 0x64656C45
+	.4byte 0x78000000
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F65
+	.4byte 0x6E656D79
+	.4byte 0x2F626568
+	.4byte 0x6F6C646F
+	.4byte 0x6F2F4D6F
+	.4byte 0x64656C00

@@ -219,3 +219,17 @@ lbl_802EFF8C:
 .global __dt__Q53scn4step5enemy9waddledoo9StateJumpFv
 __dt__Q53scn4step5enemy9waddledoo9StateJumpFv:
 /* 802EFFA4 002EBDE4  4B FA 1A 14 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy9waddledoo9StateJump
+__vt__Q53scn4step5enemy9waddledoo9StateJump:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy9waddledoo9StateJumpFv
+	.4byte procAnim__Q53scn4step5enemy9waddledoo9StateJumpFv
+	.4byte procMove__Q53scn4step5enemy9waddledoo9StateJumpFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9waddledoo9StateJumpFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

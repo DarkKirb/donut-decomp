@@ -371,3 +371,17 @@ initBrush__Q53scn4step5enemy11broomhatter15StateWalkAroundFv:
 .global __dt__Q53scn4step5enemy11broomhatter15StateWalkAroundFv
 __dt__Q53scn4step5enemy11broomhatter15StateWalkAroundFv:
 /* 802A2100 0029DF40  4B FE F8 B8 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy11broomhatter15StateWalkAround
+__vt__Q53scn4step5enemy11broomhatter15StateWalkAround:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy11broomhatter15StateWalkAroundFv
+	.4byte procAnim__Q53scn4step5enemy11broomhatter15StateWalkAroundFv
+	.4byte procMove__Q53scn4step5enemy11broomhatter15StateWalkAroundFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11broomhatter15StateWalkAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

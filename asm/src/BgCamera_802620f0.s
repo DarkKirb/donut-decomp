@@ -657,3 +657,35 @@ lbl_802629F8:
 /* 80262A0C 0025E84C  7C 08 03 A6 */	mtlr r0
 /* 80262A10 0025E850  38 21 00 30 */	addi r1, r1, 0x30
 /* 80262A14 0025E854  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@AsinDeg__Q24nw4r4mathFf@0"
+"@STRING@AsinDeg__Q24nw4r4mathFf@0":
+
+	.4byte 0x4173696E
+	.4byte 0x4465673A
+	.4byte 0x20496E70
+	.4byte 0x75742069
+	.4byte 0x73206F75
+	.4byte 0x74206F66
+	.4byte 0x20746865
+	.4byte 0x20646F6D
+	.4byte 0x61696E2E
+	.4byte 0
+
+.global "@STRING@AsinDeg__Q24nw4r4mathFf"
+"@STRING@AsinDeg__Q24nw4r4mathFf":
+
+	.4byte 0x74726961
+	.4byte 0x6E67756C
+	.4byte 0x61722E68
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51615"
+"@51615":
+
+	.4byte 0x42B40000
+	.4byte 0

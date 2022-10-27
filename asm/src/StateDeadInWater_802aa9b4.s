@@ -413,3 +413,25 @@ lbl_802AAE7C:
 /* 802AAF68 002A6DA8  7C 08 03 A6 */	mtlr r0
 /* 802AAF6C 002A6DAC  38 21 00 60 */	addi r1, r1, 0x60
 /* 802AAF70 002A6DB0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6damage16StateDeadInWater
+__vt__Q53scn4step5enemy6damage16StateDeadInWater:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.4byte procAnim__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.4byte procMove__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6damage16StateDeadInWaterFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56983"
+"@56983":
+
+	.4byte 0x42B40000
+	.4byte 0

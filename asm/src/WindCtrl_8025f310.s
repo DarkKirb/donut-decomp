@@ -161,3 +161,17 @@ clear__Q53scn4step4boss6whispy8WindCtrlFv:
 /* 8025F534 0025B374  FC 40 08 90 */	fmr f2, f1
 /* 8025F538 0025B378  FC 60 08 90 */	fmr f3, f1
 /* 8025F53C 0025B37C  4B FF FF E4 */	b set__Q53scn4step4boss6whispy8WindCtrlFfff
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_AREA_RATE__Q53scn4step4boss6whispy22@unnamed@WindCtrl_cpp@"
+"T_AREA_RATE__Q53scn4step4boss6whispy22@unnamed@WindCtrl_cpp@":
+
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F8CCCCD
+	.4byte 0x3FA00000
+	.4byte 0x3FB33333
+	.4byte 0x3FC00000
+	.4byte 0x3FCCCCCD
+	.4byte 0

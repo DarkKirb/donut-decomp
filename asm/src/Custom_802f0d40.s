@@ -259,3 +259,35 @@ __dt__Q53scn4step5enemy11whispyapple6CustomFv:
 .global "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>Fv":
 /* 802F10A4 002ECEE4  4B F3 D5 FC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple11StateAppear,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy11whispyapple6Custom
+__vt__Q53scn4step5enemy11whispyapple6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy11whispyapple6CustomCFv
+	.4byte __dt__Q53scn4step5enemy11whispyapple6CustomFv
+	.4byte onInit__Q53scn4step5enemy11whispyapple6CustomFv
+	.4byte onHitPointIsZero__Q53scn4step5enemy11whispyapple6CustomFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q53scn4step5enemy11whispyapple6CustomFv
+	.4byte onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q53scn4step5enemy11whispyapple6CustomFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0

@@ -975,3 +975,47 @@ lbl_8037B468:
 .global "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>Fv"
 "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>Fv":
 /* 8037B4C4 00377304  4B EB 31 DC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>"
+"__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>Fv"
+	.4byte "create__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick23StateChallengeBattleWin,PQ43scn4step4hero4Hero,b>Fv"
+
+.global "__vt__Q24util167StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateChallengeBattleWinPre,PQ43scn4step4hero4Hero,Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase>"
+"__vt__Q24util167StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateChallengeBattleWinPre,PQ43scn4step4hero4Hero,Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util167StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateChallengeBattleWinPre,PQ43scn4step4hero4Hero,Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase>Fv"
+	.4byte "create__Q24util167StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick26StateChallengeBattleWinPre,PQ43scn4step4hero4Hero,Q63scn4step4hero7gimmick26StateChallengeBattleWinPre5Phase>Fv"
+
+.global __vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre
+__vt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPre:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.4byte procAnim__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.4byte procMove__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48855_8055B340"
+"@48855_8055B340":
+
+	.4byte 0
+
+.global "@48856_8055B344"
+"@48856_8055B344":
+
+	.4byte 0x3F800000

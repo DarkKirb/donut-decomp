@@ -253,3 +253,17 @@ addObjColl__Q53scn4step6weapon13owgulffeather9StateMainFv:
 /* 803E8498 003E42D8  7C 08 03 A6 */	mtlr r0
 /* 803E849C 003E42DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803E84A0 003E42E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon13owgulffeather9StateMain
+__vt__Q53scn4step6weapon13owgulffeather9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon13owgulffeather9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon13owgulffeather9StateMainFv
+	.4byte procMove__Q53scn4step6weapon13owgulffeather9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q43scn4step6weapon9StateBaseFv
+	.4byte procObjCollReact__Q53scn4step6weapon13owgulffeather9StateMainFv

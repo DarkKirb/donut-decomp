@@ -422,3 +422,37 @@ lbl_80369A9C:
 .global procFixPos__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
 procFixPos__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv:
 /* 80369AB0 003658F0  4B FF F9 F8 */	b procFixPos__Q53scn4step4hero6common24StateShipRepairDemoAfterFv
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_DEPTH_LIST24__44@unnamed@StateShipRepairDemoAfterFollow_cpp@"
+"T_DEPTH_LIST24__44@unnamed@StateShipRepairDemoAfterFollow_cpp@":
+
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0xC0000000
+	.4byte 0
+
+.global "T_DEPTH_LIST3__44@unnamed@StateShipRepairDemoAfterFollow_cpp@"
+"T_DEPTH_LIST3__44@unnamed@StateShipRepairDemoAfterFollow_cpp@":
+
+	.4byte 0
+	.4byte 0xBF800000
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow
+__vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.4byte procAnim__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.4byte procMove__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

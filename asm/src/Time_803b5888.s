@@ -130,3 +130,53 @@ set__Q53scn4step4info9challenge4TimeFUl:
 /* 803B5A58 003B1898  7C 08 03 A6 */	mtlr r0
 /* 803B5A5C 003B189C  38 21 04 E0 */	addi r1, r1, 0x4e0
 /* 803B5A60 003B18A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52024"
+"@52024":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+
+.global "@52084_804908AC"
+"@52084_804908AC":
+
+	.4byte 0x4672616D
+	.4byte 0x65546578
+	.4byte 0x74000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52025"
+"@52025":
+
+	.4byte 0x54696D65
+	.4byte 0
+
+.global "@52080_8055B8B8"
+"@52080_8055B8B8":
+
+	.4byte 0x4D696E54
+	.4byte 0x65787400
+
+.global "@52081_8055B8C0"
+"@52081_8055B8C0":
+
+	.4byte 0x25750000
+	.4byte 0
+
+.global "@52082_8055B8C8"
+"@52082_8055B8C8":
+
+	.4byte 0x53656354
+	.4byte 0x65787400
+
+.global "@52083_8055B8D0"
+"@52083_8055B8D0":
+
+	.4byte 0x25303275
+	.4byte 0

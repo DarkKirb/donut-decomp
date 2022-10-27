@@ -1147,3 +1147,25 @@ lbl_80210A54:
 /* 80210A68 0020C8A8  C0 42 A1 D0 */	lfs f2, "@55029_80560150"@sda21(r2)
 /* 80210A6C 0020C8AC  C0 62 A1 C8 */	lfs f3, "@54735"@sda21(r2)
 /* 80210A70 0020C8B0  4B EA D6 50 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Stage_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54734_804615A0"
+"@54734_804615A0":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x5061636B
+	.4byte 0x6167654F
+	.4byte 0x66667365
+	.4byte 0x74000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "FUTURE_EFFECT_OFFSET__19@unnamed@Stage_cpp@"
+"FUTURE_EFFECT_OFFSET__19@unnamed@Stage_cpp@":
+	.skip 0x10

@@ -231,3 +231,39 @@ procObjCollReact__Q53scn4step6weapon12hammerhammer14StateExplosionFv:
 .global __dt__Q53scn4step6weapon12hammerhammer14StateExplosionFv
 __dt__Q53scn4step6weapon12hammerhammer14StateExplosionFv:
 /* 803E5784 003E15C4  4B FF 32 BC */	b __dt__Q43scn4step6weapon11StateNormalFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon12hammerhammer14StateExplosion
+__vt__Q53scn4step6weapon12hammerhammer14StateExplosion:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.4byte procAnim__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.4byte procMove__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+	.4byte procObjCollReact__Q53scn4step6weapon12hammerhammer14StateExplosionFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56495_8055C308"
+"@56495_8055C308":
+
+	.4byte 0x00000019
+
+.global "@56497_8055C30C"
+"@56497_8055C30C":
+
+	.4byte 0x0000001A
+
+.global "@56499_8055C310"
+"@56499_8055C310":
+
+	.4byte 0x0000001B
+
+.global "@56505"
+"@56505":
+
+	.4byte 0x00000019

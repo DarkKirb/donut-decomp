@@ -513,3 +513,19 @@ construct__Q53scn4step4hero6common9StateWaitFv:
 /* 8036E03C 00369E7C  7C 08 03 A6 */	mtlr r0
 /* 8036E040 00369E80  38 21 00 10 */	addi r1, r1, 0x10
 /* 8036E044 00369E84  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero6common9StateWait
+__vt__Q53scn4step4hero6common9StateWait:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero6common9StateWaitFv
+	.4byte procAnim__Q53scn4step4hero6common9StateWaitFv
+	.4byte procMove__Q53scn4step4hero6common9StateWaitFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common9StateWaitFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

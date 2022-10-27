@@ -197,3 +197,11 @@ reqFixColor__Q43scn4step5enemy11DamageFlashFv:
 getColor__Q43scn4step5enemy11DamageFlashCFv:
 /* 802845D8 00280418  80 63 00 06 */	lwz r3, 0x6(r3)
 /* 802845DC 0028041C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50026_80559620"
+"@50026_80559620":
+
+	.4byte 0x42B40000
+	.4byte 0

@@ -108,3 +108,13 @@ lbl_8025C7A8:
 /* 8025C804 00258644  7C 08 03 A6 */	mtlr r0
 /* 8025C808 00258648  38 21 00 30 */	addi r1, r1, 0x30
 /* 8025C80C 0025864C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_TARGET_NODE__Q53scn4step4boss6whispy25@unnamed@FaceRotCtrl_cpp@"
+"T_TARGET_NODE__Q53scn4step4boss6whispy25@unnamed@FaceRotCtrl_cpp@":
+
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x0000000B
+	.4byte 0

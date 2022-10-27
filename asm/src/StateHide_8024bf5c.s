@@ -104,3 +104,17 @@ procMove__Q53scn4step4boss10creditroah9StateHideFv:
 .global procFixPos__Q53scn4step4boss10creditroah9StateHideFv
 procFixPos__Q53scn4step4boss10creditroah9StateHideFv:
 /* 8024C0B4 00247EF4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss10creditroah9StateHide
+__vt__Q53scn4step4boss10creditroah9StateHide:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procAnim__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procMove__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss10creditroah9StateHideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

@@ -152,3 +152,29 @@ onObjStopChanged__Q43scn4step4info11HelpPushAllFb:
 /* 803A6B48 003A2988  7C 08 03 A6 */	mtlr r0
 /* 803A6B4C 003A298C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803A6B50 003A2990  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52048_8048F628"
+"@52048_8048F628":
+
+	.4byte 0x73746570
+	.4byte 0x2F67616D
+	.4byte 0x652F4D61
+	.4byte 0x696E0000
+
+.global "@52049_8048F638"
+"@52049_8048F638":
+
+	.4byte 0x48656C70
+	.4byte 0x50757368
+	.4byte 0x416C6C00
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52111_8055B4E8"
+"@52111_8055B4E8":
+
+	.4byte 0x546F704E
+	.4byte 0

@@ -4795,3 +4795,58 @@ lbl_80348DB4:
 .global "__dt__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>Fv"
 "__dt__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>Fv":
 /* 80348E2C 00344C6C  4B EE 58 74 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@66848"
+"@66848":
+
+	.4byte 0x496E6163
+	.4byte 0x74697665
+	.4byte 0x4865726F
+	.4byte 0
+
+.global "__vt__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>"
+"__vt__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>Fv"
+	.4byte "create__Q24util179StateFactoryArg3<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState,Q33hel4math7Vector3>Fv"
+
+.global "__vt__Q24util159StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState>"
+"__vt__Q24util159StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util159StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState>Fv"
+	.4byte "create__Q24util159StateFactoryArg2<Q24util6IState,Q53scn4step4hero12interference14StateSpaceJump,PQ43scn4step4hero4Hero,Q63scn4step4hero12interference14StateSpaceJump9NextState>Fv"
+
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick17StateEnterMahoroa,PQ43scn4step4hero4Hero>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick17StateEnterMahoroa,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick17StateEnterMahoroa,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick17StateEnterMahoroa,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateClearDanceFall,PQ43scn4step4hero4Hero>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateClearDanceFall,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateClearDanceFall,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common19StateClearDanceFall,PQ43scn4step4hero4Hero>Fv"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@66847"
+"@66847":
+
+	.4byte 0x4865726F
+	.byte 0x00
+
+.global "@60218"
+"@60218":
+
+	.balign 4

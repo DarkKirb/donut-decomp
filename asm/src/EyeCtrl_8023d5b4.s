@@ -149,3 +149,15 @@ lbl_8023D794:
 /* 8023D798 002395D8  7C 08 03 A6 */	mtlr r0
 /* 8023D79C 002395DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023D7A0 002395E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21@unnamed@EyeCtrl_cpp@"
+"T_WAIT_FRAME_TABLE__Q53scn4step4boss15challengemaster21@unnamed@EyeCtrl_cpp@":
+
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x0000003C
+	.4byte 0x00000078
+	.4byte 0x00000078
+	.4byte 0x0000001E

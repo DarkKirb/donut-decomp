@@ -1045,3 +1045,13 @@ helpShakeSuccess__Q43scn4step4info9HeroPanelFv:
 /* 803A8EB8 003A4CF8  7C 08 03 A6 */	mtlr r0
 /* 803A8EBC 003A4CFC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A8EC0 003A4D00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@56777"
+"@56777":
+
+	.4byte 0x49664872
+	.4byte 0x50616E65
+	.4byte 0x6C000000
+	.4byte 0

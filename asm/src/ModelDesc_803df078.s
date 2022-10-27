@@ -72,3 +72,31 @@ lbl_803DF140:
 /* 803DF168 003DAFA8  7C 08 03 A6 */	mtlr r0
 /* 803DF16C 003DAFAC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803DF170 003DAFB0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50122_80494210"
+"@50122_80494210":
+
+	.4byte 0x70537068
+	.4byte 0x65726531
+	.4byte 0
+
+.global "@50233_8049421C"
+"@50233_8049421C":
+
+	.4byte 0x4C656166
+	.4byte 0x616E5365
+	.4byte 0x65640000
+
+.global "@50234_80494228"
+"@50234_80494228":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x6C656166
+	.4byte 0x616E2F4C
+	.4byte 0x65616661
+	.4byte 0x6E736565
+	.4byte 0x64000000

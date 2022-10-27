@@ -19,3 +19,13 @@ VacuumCount__Q43scn4step6vacuum12MintAttackerFv:
 "__sinit_@@1MintAttacker_cpp":
 /* 803D30B4 003CEEF4  38 6D F9 38 */	addi r3, r13, "t_obj__Q43scn4step6vacuum26@unnamed@MintAttacker_cpp@"@sda21
 /* 803D30B8 003CEEF8  4B D0 A3 28 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintAttacker_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step6vacuum26@unnamed@MintAttacker_cpp@"
+"t_obj__Q43scn4step6vacuum26@unnamed@MintAttacker_cpp@":
+	.skip 0x8

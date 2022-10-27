@@ -25,3 +25,15 @@ lbl_8035CA98:
 /* 8035CAAC 003588EC  7C 08 03 A6 */	mtlr r0
 /* 8035CAB0 003588F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035CAB4 003588F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@BodyModel__Q53scn4step4hero9modeldesc5StoneFv@desc"
+"@LOCAL@BodyModel__Q53scn4step4hero9modeldesc5StoneFv@desc":
+	.skip 0x58
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@BodyModel__Q53scn4step4hero9modeldesc5StoneFv@desc"
+"@GUARD@BodyModel__Q53scn4step4hero9modeldesc5StoneFv@desc":
+	.skip 0x8

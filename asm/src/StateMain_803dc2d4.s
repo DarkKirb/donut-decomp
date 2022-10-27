@@ -569,3 +569,41 @@ deadWithEffect__Q53scn4step6weapon11starshotlv19StateMainFv:
 /* 803DCA9C 003D88DC  7C 08 03 A6 */	mtlr r0
 /* 803DCAA0 003D88E0  38 21 00 40 */	addi r1, r1, 0x40
 /* 803DCAA4 003D88E4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_WN_NODE_INTERVAL__Q53scn4step6weapon16enemywaterbullet23@unnamed@StateMain_cpp@"
+"T_WN_NODE_INTERVAL__Q53scn4step6weapon16enemywaterbullet23@unnamed@StateMain_cpp@":
+
+	.4byte 0x00000004
+	.4byte 0x00000007
+	.4byte 0x00000007
+
+.global "T_WN_GRAVITY__Q53scn4step6weapon16enemywaterbullet23@unnamed@StateMain_cpp@"
+"T_WN_GRAVITY__Q53scn4step6weapon16enemywaterbullet23@unnamed@StateMain_cpp@":
+
+	.4byte 0x3C23D70A
+	.4byte 0x3C23D70A
+	.4byte 0x3CA3D70A
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon11starshotlv19StateMain
+__vt__Q53scn4step6weapon11starshotlv19StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procMove__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11starshotlv19StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11starshotlv19StateMainFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56548"
+"@56548":
+
+	.4byte 0x3F800000
+	.4byte 0

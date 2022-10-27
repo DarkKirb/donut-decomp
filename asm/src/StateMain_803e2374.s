@@ -492,3 +492,29 @@ lbl_803E29F8:
 /* 803E2A00 003DE840  7C 08 03 A6 */	mtlr r0
 /* 803E2A04 003DE844  38 21 00 20 */	addi r1, r1, 0x20
 /* 803E2A08 003DE848  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon10comothread9StateMain
+__vt__Q53scn4step6weapon10comothread9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon10comothread9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon10comothread9StateMainFv
+	.4byte procMove__Q53scn4step6weapon10comothread9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon10comothread9StateMainFv
+	.4byte procObjCollReact__Q43scn4step6weapon9StateBaseFv
+
+.global __vt__Q53scn4step6weapon18watergalboroswater9StateMain
+__vt__Q53scn4step6weapon18watergalboroswater9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon18watergalboroswater9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon18watergalboroswater9StateMainFv
+	.4byte procMove__Q53scn4step6weapon18watergalboroswater9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon18watergalboroswater9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon18watergalboroswater9StateMainFv

@@ -1199,3 +1199,51 @@ lbl_8023AE40:
 /* 8023AE4C 00236C8C  7C 08 03 A6 */	mtlr r0
 /* 8023AE50 00236C90  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023AE54 00236C94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut85LinkList<Q24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>,0>FPQ24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut85LinkList<Q24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>,0>FPQ24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut85LinkList<Q24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>,0>FPQ24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut85LinkList<Q24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>,0>FPQ24util64ObjListNode<Q43scn4step6weapon6Weapon,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step6weapon7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step6weapon7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step6weapon7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step6weapon7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step6weapon10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step6weapon10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step6weapon10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step6weapon10CustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

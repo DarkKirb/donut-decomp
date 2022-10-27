@@ -463,3 +463,41 @@ drawFrontXlu__Q43scn4step2bg15DecorationMaproCFv:
 /* 802240F8 0021FF38  3C 63 00 04 */	addis r3, r3, 0x4
 /* 802240FC 0021FF3C  38 63 CF 9C */	addi r3, r3, -0x3064
 /* 80224100 0021FF40  48 00 15 C0 */	b drawXlu__Q43scn4step2bg19DecorationMaproCollCFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52744_80463CB0"
+"@52744_80463CB0":
+
+	.4byte 0x73746570
+	.4byte 0x2F6D6170
+	.4byte 0x2F25732F
+	.4byte 0x50617274
+	.4byte 0x73000000
+
+.global "@52770_80463CC4"
+"@52770_80463CC4":
+
+	.4byte 0x5363656E
+	.4byte 0x65416E69
+	.4byte 0x6D000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52745_80558E80"
+"@52745_80558E80":
+
+	.4byte 0x424C616E
+	.4byte 0x64000000
+
+.global "@52746_80558E88"
+"@52746_80558E88":
+
+	.4byte 0x4D4C616E
+	.4byte 0x64000000
+
+.global "@52747_80558E90"
+"@52747_80558E90":
+
+	.4byte 0x464C616E
+	.4byte 0x64000000

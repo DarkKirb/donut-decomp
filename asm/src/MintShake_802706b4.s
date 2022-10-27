@@ -20,3 +20,13 @@ Request__Q43scn4step5chara9MintShakeFi:
 "__sinit_@@1MintShake_cpp":
 /* 802706D4 0026C514  38 6D F1 E0 */	addi r3, r13, "t_obj__Q43scn4step5chara23@unnamed@MintShake_cpp@"@sda21
 /* 802706D8 0026C518  4B E6 CD 08 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintShake_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step5chara23@unnamed@MintShake_cpp@"
+"t_obj__Q43scn4step5chara23@unnamed@MintShake_cpp@":
+	.skip 0x8

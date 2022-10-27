@@ -12,3 +12,13 @@ __ct__Q43scn4step4hero21InactiveStateCallbackFRQ43scn4step4hero12InactiveHero:
 .global onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger
 onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger:
 /* 803418A0 0033D6E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4hero21InactiveStateCallback
+__vt__Q43scn4step4hero21InactiveStateCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4hero21InactiveStateCallbackFv
+	.4byte onStateChanged__Q43scn4step4hero21InactiveStateCallbackFRCQ24util13IStateChanger

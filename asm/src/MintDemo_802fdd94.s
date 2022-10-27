@@ -19,3 +19,13 @@ Obj__Q53scn4step7gimmick11areamapdemo8MintDemoFv:
 "__sinit_@@1MintDemo_cpp":
 /* 802FDDB0 002F9BF0  38 6D F7 A0 */	addi r3, r13, "t_obj__Q53scn4step7gimmick11areamapdemo22@unnamed@MintDemo_cpp@"@sda21
 /* 802FDDB4 002F9BF4  4B DD F6 2C */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintDemo_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q53scn4step7gimmick11areamapdemo22@unnamed@MintDemo_cpp@"
+"t_obj__Q53scn4step7gimmick11areamapdemo22@unnamed@MintDemo_cpp@":
+	.skip 0x8

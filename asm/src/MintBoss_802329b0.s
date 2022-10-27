@@ -19,3 +19,13 @@ Obj__Q43scn4step4boss8MintBossFv:
 "__sinit_@@1MintBoss_cpp":
 /* 802329CC 0022E80C  38 6D F0 D8 */	addi r3, r13, "t_obj__Q43scn4step4boss22@unnamed@MintBoss_cpp@"@sda21
 /* 802329D0 0022E810  4B EA AA 10 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintBoss_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step4boss22@unnamed@MintBoss_cpp@"
+"t_obj__Q43scn4step4boss22@unnamed@MintBoss_cpp@":
+	.skip 0x8

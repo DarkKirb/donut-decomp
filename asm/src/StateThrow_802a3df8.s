@@ -286,3 +286,17 @@ lbl_802A41F0:
 /* 802A4214 002A0054  7C 08 03 A6 */	mtlr r0
 /* 802A4218 002A0058  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 802A421C 002A005C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy8cappyhat10StateThrow
+__vt__Q53scn4step5enemy8cappyhat10StateThrow:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy8cappyhat10StateThrowFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy8cappyhat10StateThrowFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy8cappyhat10StateThrowFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

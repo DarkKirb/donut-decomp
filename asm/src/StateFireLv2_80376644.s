@@ -341,3 +341,19 @@ lbl_80376AEC:
 /* 80376AF8 00372938  7C 08 03 A6 */	mtlr r0
 /* 80376AFC 0037293C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80376B00 00372940  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero6damage12StateFireLv2
+__vt__Q53scn4step4hero6damage12StateFireLv2:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero6damage12StateFireLv2Fv
+	.4byte procAnim__Q53scn4step4hero6damage12StateFireLv2Fv
+	.4byte procMove__Q53scn4step4hero6damage12StateFireLv2Fv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6damage12StateFireLv2Fv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

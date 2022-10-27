@@ -302,3 +302,125 @@ updateFrame__Q53scn4step4info5lvmap12RankingPanelFv:
 /* 803BF86C 003BB6AC  7C 08 03 A6 */	mtlr r0
 /* 803BF870 003BB6B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803BF874 003BB6B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52661"
+"@52661":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67657368
+	.4byte 0x69702F4D
+	.4byte 0x61696E00
+	.4byte 0x506C6179
+	.4byte 0x65724963
+	.4byte 0x6F6E4E00
+	.4byte 0
+	.4byte 0x546F7461
+	.4byte 0x6C53636F
+	.4byte 0x72654261
+	.4byte 0x73654E00
+	.4byte 0x52616E6B
+	.4byte 0x696E674E
+	.4byte 0
+	.4byte 0x46696C65
+	.4byte 0x4B697262
+	.4byte 0x79310000
+	.4byte 0x46696C65
+	.4byte 0x4B697262
+	.4byte 0x79320000
+	.4byte 0x46696C65
+	.4byte 0x4B697262
+	.4byte 0x79330000
+	.4byte 0x46696C65
+	.4byte 0x4D61686F
+	.4byte 0x726F6100
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52660"
+"@52660":
+
+	.4byte 0x506C6174
+	.4byte 0x65000000
+
+.global "@52662"
+"@52662":
+
+	.4byte 0x52616E6B
+	.4byte 0x696E6700
+
+.global "@52734_8055BCC8"
+"@52734_8055BCC8":
+
+	.4byte 0x31737400
+
+.global "@52735_8055BCCC"
+"@52735_8055BCCC":
+
+	.4byte 0x31000000
+
+.global "@52736_8055BCD0"
+"@52736_8055BCD0":
+
+	.4byte 0x326E6400
+
+.global "@52737_8055BCD4"
+"@52737_8055BCD4":
+
+	.4byte 0x32000000
+
+.global "@52738_8055BCD8"
+"@52738_8055BCD8":
+
+	.4byte 0x33726400
+
+.global "@52739_8055BCDC"
+"@52739_8055BCDC":
+
+	.4byte 0x33000000
+
+.global "@52740_8055BCE0"
+"@52740_8055BCE0":
+
+	.4byte 0x4B697262
+	.4byte 0x79310000
+
+.global "@52741_8055BCE8"
+"@52741_8055BCE8":
+
+	.4byte 0x4E616D65
+	.4byte 0
+
+.global "@52743_8055BCF0"
+"@52743_8055BCF0":
+
+	.4byte 0x4B697262
+	.4byte 0x79320000
+
+.global "@52745_8055BCF8"
+"@52745_8055BCF8":
+
+	.4byte 0x4B697262
+	.4byte 0x79330000
+
+.global "@52747_8055BD00"
+"@52747_8055BD00":
+
+	.4byte 0x4D61686F
+	.4byte 0x726F6100

@@ -220,3 +220,55 @@ onEndTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUs:
 .global onNormalChar__Q43scn15challengeresult4info10TimeStringFw
 onNormalChar__Q43scn15challengeresult4info10TimeStringFw:
 /* 801F52A8 001F10E8  4B FB 05 5C */	b onNormalChar__Q24info22Iterator$52705Util_cppFw
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49497"
+"@49497":
+
+	.4byte 0x00250030
+	.4byte 0x00310064
+	.4byte 0
+
+.global "@49499"
+"@49499":
+
+	.4byte 0x00250030
+	.4byte 0x00320064
+	.4byte 0
+
+.global __vt__Q43scn15challengeresult4info10TimeString
+__vt__Q43scn15challengeresult4info10TimeString:
+
+	.4byte 0
+	.4byte 0
+	.4byte onStartTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUsUsPUc
+	.4byte onEndTag__Q43scn15challengeresult4info10TimeStringFPCwUlUsUs
+	.4byte onNormalChar__Q43scn15challengeresult4info10TimeStringFw
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49495_80557F88"
+"@49495_80557F88":
+
+	.4byte 0x5265706C
+	.4byte 0x61636500
+
+.global "@49496_80557F90"
+"@49496_80557F90":
+
+	.4byte 0x4D696E75
+	.4byte 0x74657300
+
+.global "@49498"
+"@49498":
+
+	.4byte 0x5365636F
+	.4byte 0x6E647300
+
+.global "@49500"
+"@49500":
+
+	.4byte 0x4672616D
+	.4byte 0x65730000

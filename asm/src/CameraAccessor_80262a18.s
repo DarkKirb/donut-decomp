@@ -496,3 +496,15 @@ toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel
 /* 80263088 0025EEC8  7C 08 03 A6 */	mtlr r0
 /* 8026308C 0025EECC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80263090 0025EED0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@__ct__Q43scn4step6camera13ParamAccessorFv"
+"@STRING@__ct__Q43scn4step6camera13ParamAccessorFv":
+
+	.4byte 0x73746570
+	.4byte 0x2F63616D
+	.4byte 0x6572612F
+	.4byte 0x43616D65
+	.4byte 0x72610000
+	.4byte 0

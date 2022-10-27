@@ -327,3 +327,35 @@ lbl_8038E024:
 .global "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>Fv"
 "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>Fv":
 /* 8038E074 00389EB4  4B EA 06 2C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>"
+"__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark14StateAttackEnd,PQ43scn4step4hero4Hero>Fv"
+
+.global "__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark11StateAttack,PQ43scn4step4hero4Hero>"
+"__vt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark11StateAttack,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark11StateAttack,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util91StateFactoryArg1<Q24util6IState,Q53scn4step4hero5spark11StateAttack,PQ43scn4step4hero4Hero>Fv"
+
+.global __vt__Q53scn4step4hero5spark11StateAttack
+__vt__Q53scn4step4hero5spark11StateAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero5spark11StateAttackFv
+	.4byte procAnim__Q53scn4step4hero5spark11StateAttackFv
+	.4byte procMove__Q53scn4step4hero5spark11StateAttackFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero5spark11StateAttackFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

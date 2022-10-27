@@ -449,3 +449,37 @@ mfStartStrike__Q53scn4step7gimmick5stake5StakeFv:
 /* 80325B88 003219C8  7C 08 03 A6 */	mtlr r0
 /* 80325B8C 003219CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80325B90 003219D0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@58060_80482488"
+"@58060_80482488":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F537461
+	.4byte 0x6B650000
+
+.global "@58062_8048249C"
+"@58062_8048249C":
+
+	.4byte 0x5374616E
+	.4byte 0x64627953
+	.4byte 0x74616B65
+	.4byte 0
+
+.global "@58184_804824AC"
+"@58184_804824AC":
+
+	.4byte 0x53747269
+	.4byte 0x6B655374
+	.4byte 0x616B6500
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@58061"
+"@58061":
+
+	.4byte 0x546F704C
+	.4byte 0

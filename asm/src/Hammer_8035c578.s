@@ -56,3 +56,245 @@ HammerAnim__Q53scn4step4hero9modeldesc6HammerFv:
 /* 8035C628 00358468  90 C3 00 04 */	stw r6, 0x4(r3)
 /* 8035C62C 0035846C  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8035C630 00358470  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@entries@1"
+"@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@entries@1":
+
+	.4byte "@48744_8055ADE0"
+	.4byte 0
+	.4byte "@48745_80489A28"
+	.4byte 0
+	.4byte "@48746_80489A40"
+	.4byte 0
+	.4byte "@48747_80489A54"
+	.4byte 0
+	.4byte "@48748_80489A68"
+	.4byte 0
+	.4byte "@48749_80489A78"
+	.4byte 0
+	.4byte "@48750_80489A8C"
+	.4byte 0
+	.4byte "@48751_80489AA0"
+	.4byte 0
+	.4byte "@48752_80489AB4"
+	.4byte 0
+	.4byte "@48753_80489AC8"
+	.4byte 0
+	.4byte "@48754_80489AE0"
+	.4byte 0
+	.4byte "@48755_80489AF0"
+	.4byte 0
+	.4byte "@48756_80489AFC"
+	.4byte 0
+	.4byte "@48757_80489B08"
+	.4byte 0
+	.4byte "@48758_80489B20"
+	.4byte 0
+	.4byte "@48759_80489B30"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48814_804899E8"
+"@48814_804899E8":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F68
+	.4byte 0x65726F2F
+	.4byte 0x6B697262
+	.4byte 0x792F6861
+	.4byte 0x6D6D6572
+	.4byte 0x2F48616D
+	.4byte 0x6D657200
+
+.global "@48737_80489A0C"
+"@48737_80489A0C":
+
+	.4byte 0x48616D6D
+	.4byte 0x65726865
+	.4byte 0x61644A00
+
+.global "@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@names@1"
+"@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@names@1":
+
+	.4byte "@48735_8055ADD0"
+	.4byte "@48736_8055ADD8"
+	.4byte "@48737_80489A0C"
+	.4byte 0
+
+.global "@48745_80489A28"
+"@48745_80489A28":
+
+	.4byte 0x48616D6D
+	.4byte 0x65724174
+	.4byte 0x7461636B
+	.4byte 0x43686172
+	.4byte 0x67655374
+	.4byte 0x61727400
+
+.global "@48746_80489A40"
+"@48746_80489A40":
+
+	.4byte 0x48616D6D
+	.4byte 0x65724174
+	.4byte 0x7461636B
+	.4byte 0x43686172
+	.4byte 0x67650000
+
+.global "@48747_80489A54"
+"@48747_80489A54":
+
+	.4byte 0x48616D6D
+	.4byte 0x65724174
+	.4byte 0x7461636B
+	.4byte 0
+	.4byte 0
+
+.global "@48748_80489A68"
+"@48748_80489A68":
+
+	.4byte 0x48616D6D
+	.4byte 0x65724174
+	.4byte 0x7461636B
+	.4byte 0x48697400
+
+.global "@48749_80489A78"
+"@48749_80489A78":
+
+	.4byte 0x48616D6D
+	.4byte 0x65724174
+	.4byte 0x7461636B
+	.4byte 0x4D697373
+	.4byte 0
+
+.global "@48750_80489A8C"
+"@48750_80489A8C":
+
+	.4byte 0x54726970
+	.4byte 0x6C654861
+	.4byte 0x6D6D6572
+	.4byte 0x41747461
+	.4byte 0x636B3100
+
+.global "@48751_80489AA0"
+"@48751_80489AA0":
+
+	.4byte 0x54726970
+	.4byte 0x6C654861
+	.4byte 0x6D6D6572
+	.4byte 0x41747461
+	.4byte 0x636B3200
+
+.global "@48752_80489AB4"
+"@48752_80489AB4":
+
+	.4byte 0x54726970
+	.4byte 0x6C654861
+	.4byte 0x6D6D6572
+	.4byte 0x41747461
+	.4byte 0x636B3300
+
+.global "@48753_80489AC8"
+"@48753_80489AC8":
+
+	.4byte 0x54726970
+	.4byte 0x6C654861
+	.4byte 0x6D6D6572
+	.4byte 0x41747461
+	.4byte 0x636B3348
+	.4byte 0x69740000
+
+.global "@48754_80489AE0"
+"@48754_80489AE0":
+
+	.4byte 0x47757269
+	.4byte 0x67757269
+	.4byte 0x48616D6D
+	.4byte 0x65720000
+
+.global "@48755_80489AF0"
+"@48755_80489AF0":
+
+	.4byte 0x4769616E
+	.4byte 0x74537769
+	.4byte 0x6E670000
+
+.global "@48756_80489AFC"
+"@48756_80489AFC":
+
+	.4byte 0x57686565
+	.4byte 0x6C48616D
+	.4byte 0x6D657200
+
+.global "@48757_80489B08"
+"@48757_80489B08":
+
+	.4byte 0x5374726F
+	.4byte 0x6E675768
+	.4byte 0x65656C48
+	.4byte 0x616D6D65
+	.4byte 0x72000000
+	.4byte 0
+
+.global "@48758_80489B20"
+"@48758_80489B20":
+
+	.4byte 0x4F6E6967
+	.4byte 0x6F726F73
+	.4byte 0x6948616D
+	.4byte 0x6D657200
+
+.global "@48759_80489B30"
+"@48759_80489B30":
+
+	.4byte 0x48616D6D
+	.4byte 0x65725468
+	.4byte 0x726F7700
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@desc"
+"@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@desc":
+	.skip 0x58
+
+.global "@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@desc"
+"@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@desc":
+	.skip 0x10
+
+.global "@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@dataDesc@0"
+"@LOCAL@HammerAnim__Q53scn4step4hero9modeldesc6HammerFv@dataDesc@0":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48735_8055ADD0"
+"@48735_8055ADD0":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@48736_8055ADD8"
+"@48736_8055ADD8":
+
+	.4byte 0x416C6C4C
+	.4byte 0
+
+.global "@48744_8055ADE0"
+"@48744_8055ADE0":
+
+	.4byte 0x43617272
+	.4byte 0x79000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@desc"
+"@GUARD@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@desc":
+	.skip 0x8
+
+.global "@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@nodeReposDesc@0"
+"@LOCAL@HammerModel__Q53scn4step4hero9modeldesc6HammerFv@nodeReposDesc@0":
+	.skip 0x8

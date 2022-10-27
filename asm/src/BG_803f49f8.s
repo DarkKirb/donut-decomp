@@ -84,3 +84,33 @@ startAnim__Q43scn9grandmenu4menu2BGFv:
 /* 803F4B18 003F0958  7C 08 03 A6 */	mtlr r0
 /* 803F4B1C 003F095C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F4B20 003F0960  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51625"
+"@51625":
+
+	.4byte 0x6772616E
+	.4byte 0x646D656E
+	.4byte 0x752F4D61
+	.4byte 0x696E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51626"
+"@51626":
+
+	.4byte 0x42470000
+
+.global "@51637"
+"@51637":
+
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@51640"
+"@51640":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+	.4byte 0

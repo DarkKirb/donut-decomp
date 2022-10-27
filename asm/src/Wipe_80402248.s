@@ -242,3 +242,21 @@ lbl_80402564:
 /* 80402570 003FE3B0  7C 08 03 A6 */	mtlr r0
 /* 80402574 003FE3B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80402578 003FE3B8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51793_8055C6C0"
+"@51793_8055C6C0":
+
+	.4byte 0x57697065
+	.4byte 0
+
+.global "@51832_8055C6C8"
+"@51832_8055C6C8":
+
+	.4byte 0x546F704C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

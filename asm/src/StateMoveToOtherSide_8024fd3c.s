@@ -423,3 +423,27 @@ procMove__Q53scn4step4boss6dubior20StateMoveToOtherSideFv:
 .global procFixPos__Q53scn4step4boss6dubior20StateMoveToOtherSideFv
 procFixPos__Q53scn4step4boss6dubior20StateMoveToOtherSideFv:
 /* 80250330 0024C170  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "WaitFrameTable__Q53scn4step4boss6dubior34@unnamed@StateMoveToOtherSide_cpp@"
+"WaitFrameTable__Q53scn4step4boss6dubior34@unnamed@StateMoveToOtherSide_cpp@":
+
+	.4byte 0x0000000A
+	.4byte 0x0000001E
+	.4byte 0x0000000A
+	.4byte 0x0000000A
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide
+__vt__Q53scn4step4boss6dubior20StateMoveToOtherSide:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss6dubior20StateMoveToOtherSideFv
+	.4byte procAnim__Q53scn4step4boss6dubior20StateMoveToOtherSideFv
+	.4byte procMove__Q53scn4step4boss6dubior20StateMoveToOtherSideFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6dubior20StateMoveToOtherSideFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

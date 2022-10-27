@@ -938,3 +938,121 @@ shadowScales__Q33scn7history7PackageCFv:
 /* 8020E008 00209E48  C0 42 A1 68 */	lfs f2, "@53278_805600E8"@sda21(r2)
 /* 8020E00C 00209E4C  C0 62 A1 78 */	lfs f3, "@53467_805600F8"@sda21(r2)
 /* 8020E010 00209E50  4B EB 00 B0 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Package_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53252_80461420"
+"@53252_80461420":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x25732F25
+	.4byte 0x73000000
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x426F7861
+	.4byte 0x6E696D00
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x5061636B
+	.4byte 0x61676553
+	.4byte 0x63616C65
+	.4byte 0
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x53686164
+	.4byte 0x6F775363
+	.4byte 0x616C6500
+	.4byte 0
+
+.global __vt__Q33scn7history7Package
+__vt__Q33scn7history7Package:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q33scn7history7PackageFv
+	.4byte ExecCallback_CALC_WORLD__Q33scn7history7PackageFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_MAT__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_CALC_VIEW__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_OPA__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte ExecCallback_DRAW_XLU__Q34nw4r3g3d15IScnObjCallbackFQ44nw4r3g3d6ScnObj6TimingPQ34nw4r3g3d6ScnObjUlPv
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "BIG_SHADOW_OFFSET__Q33scn7history21@unnamed@Package_cpp@"
+"BIG_SHADOW_OFFSET__Q33scn7history21@unnamed@Package_cpp@":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53254_805585F0"
+"@53254_805585F0":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@53257"
+"@53257":
+
+	.4byte 0x526F7459
+	.4byte 0x4C000000
+
+.global "@53258_80558600"
+"@53258_80558600":
+
+	.4byte 0x5363616C
+	.4byte 0x654C0000
+
+.global "@53259_80558608"
+"@53259_80558608":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@53368_80558610"
+"@53368_80558610":
+
+	.4byte 0x56616375
+	.4byte 0x756D0000
+
+.global "@53369"
+"@53369":
+
+	.4byte 0x56616375
+	.4byte 0x756D3200
+
+.global "@53383_80558620"
+"@53383_80558620":
+
+	.4byte 0x5368616B
+	.4byte 0x65000000
+
+.global "@53427_80558628"
+"@53427_80558628":
+
+	.4byte 0x426F784D
+	.4byte 0

@@ -430,3 +430,43 @@ lbl_803DD16C:
 /* 803DD178 003D8FB8  7C 08 03 A6 */	mtlr r0
 /* 803DD17C 003D8FBC  38 21 00 20 */	addi r1, r1, 0x20
 /* 803DD180 003D8FC0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ROT_TABLE__Q53scn4step6weapon10whispyroot23@unnamed@StateMain_cpp@"
+"T_ROT_TABLE__Q53scn4step6weapon10whispyroot23@unnamed@StateMain_cpp@":
+
+	.4byte 0x41700000
+	.4byte 0x41C80000
+	.4byte 0x420C0000
+	.4byte 0x42340000
+
+.global "T_HOLD_FRAME__Q53scn4step6weapon10whispyroot23@unnamed@StateMain_cpp@"
+"T_HOLD_FRAME__Q53scn4step6weapon10whispyroot23@unnamed@StateMain_cpp@":
+
+	.4byte 0x0000001E
+	.4byte 0x0000003C
+	.4byte 0x0000005A
+	.4byte 0x00000078
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon11starshotlv29StateMain
+__vt__Q53scn4step6weapon11starshotlv29StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon11starshotlv29StateMainFv
+	.4byte procAnim__Q53scn4step6weapon11starshotlv29StateMainFv
+	.4byte procMove__Q53scn4step6weapon11starshotlv29StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon11starshotlv29StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon11starshotlv29StateMainFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56804_8055C0D8"
+"@56804_8055C0D8":
+
+	.4byte 0x3F800000
+	.4byte 0

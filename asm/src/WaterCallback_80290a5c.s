@@ -60,3 +60,15 @@ lbl_80290B04:
 /* 80290B0C 0028C94C  7C 08 03 A6 */	mtlr r0
 /* 80290B10 0028C950  38 21 00 10 */	addi r1, r1, 0x10
 /* 80290B14 0028C954  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step5enemy13WaterCallback
+__vt__Q43scn4step5enemy13WaterCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step5enemy13WaterCallbackFv
+	.4byte onInWater__Q43scn4step5enemy13WaterCallbackFv
+	.4byte onOutWater__Q43scn4step5enemy13WaterCallbackFv
+	.4byte 0

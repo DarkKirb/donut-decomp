@@ -347,3 +347,25 @@ lbl_8025D484:
 /* 8025D490 002592D0  7C 08 03 A6 */	mtlr r0
 /* 8025D494 002592D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8025D498 002592D8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss6whispy9StateDead
+__vt__Q53scn4step4boss6whispy9StateDead:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss6whispy9StateDeadFv
+	.4byte procAnim__Q53scn4step4boss6whispy9StateDeadFv
+	.4byte procMove__Q53scn4step4boss6whispy9StateDeadFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6whispy9StateDeadFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@57422"
+"@57422":
+
+	.4byte 0x3F800000
+	.4byte 0

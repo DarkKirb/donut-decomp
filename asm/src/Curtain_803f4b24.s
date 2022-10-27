@@ -219,3 +219,51 @@ isOpening__Q43scn9grandmenu4menu7CurtainCFv:
 /* 803F4DE8 003F0C28  7C 00 00 34 */	cntlzw r0, r0
 /* 803F4DEC 003F0C2C  54 03 D9 7E */	srwi r3, r0, 5
 /* 803F4DF0 003F0C30  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51703_804957A0"
+"@51703_804957A0":
+
+	.4byte 0x6772616E
+	.4byte 0x646D656E
+	.4byte 0x752F4D61
+	.4byte 0x696E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51704_8055C4C0"
+"@51704_8055C4C0":
+
+	.4byte 0x43757274
+	.4byte 0x61696E00
+
+.global "@51718_8055C4C8"
+"@51718_8055C4C8":
+
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@51723_8055C4D0"
+"@51723_8055C4D0":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@51728_8055C4D8"
+"@51728_8055C4D8":
+
+	.4byte 0x456E6400
+
+.global "@51733_8055C4DC"
+"@51733_8055C4DC":
+
+	.4byte 0x53746172
+	.4byte 0x74320000
+
+.global "@51738_8055C4E4"
+"@51738_8055C4E4":
+
+	.4byte 0x456E6432
+	.4byte 0
+	.4byte 0

@@ -83,3 +83,51 @@ lbl_803E2AE4:
 /* 803E2B1C 003DE95C  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon16enemywaterbullet23@unnamed@ModelDesc_cpp@"@ha
 /* 803E2B20 003DE960  90 03 50 88 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon16enemywaterbullet23@unnamed@ModelDesc_cpp@"@l(r3)
 /* 803E2B24 003DE964  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50123_80494458"
+"@50123_80494458":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C31
+	.4byte 0x4A000000
+
+.global "@50124_80494464"
+"@50124_80494464":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C32
+	.4byte 0x4A000000
+
+.global "@50125_80494470"
+"@50125_80494470":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C33
+	.4byte 0x4A000000
+
+.global "@50126_8049447C"
+"@50126_8049447C":
+
+	.4byte 0x576E5761
+	.4byte 0x7465724D
+	.4byte 0
+	.4byte "@50122_8055C148"
+	.4byte "@50123_80494458"
+	.4byte "@50124_80494464"
+	.4byte "@50125_80494470"
+	.4byte "@50126_8049447C"
+	.4byte 0x456E656D
+	.4byte 0x79576174
+	.4byte 0x65724275
+	.4byte 0x6C6C6574
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x7767616C
+	.4byte 0x626F2F57
+	.4byte 0x61746572
+	.4byte 0
+	.4byte 0

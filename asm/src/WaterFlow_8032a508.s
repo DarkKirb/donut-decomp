@@ -913,3 +913,37 @@ lbl_8032B1A8:
 /* 8032B1C4 00327004  7C 08 03 A6 */	mtlr r0
 /* 8032B1C8 00327008  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032B1CC 0032700C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "DIR_ROTATION__Q53scn4step7gimmick9waterflow23@unnamed@WaterFlow_cpp@"
+"DIR_ROTATION__Q53scn4step7gimmick9waterflow23@unnamed@WaterFlow_cpp@":
+
+	.4byte 0
+	.4byte 0x439D8000
+	.4byte 0x43870000
+	.4byte 0x43610000
+	.4byte 0x43340000
+	.4byte 0x43070000
+	.4byte 0x42B40000
+	.4byte 0x42340000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53562"
+"@53562":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F576174
+	.4byte 0x6572466C
+	.4byte 0x6F770000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53723_8055A9F0"
+"@53723_8055A9F0":
+
+	.4byte 0x546F704C
+	.4byte 0

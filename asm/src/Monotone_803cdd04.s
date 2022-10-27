@@ -658,3 +658,15 @@ lbl_803CE5F4:
 /* 803CE5FC 003CA43C  7C 08 03 A6 */	mtlr r0
 /* 803CE600 003CA440  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CE604 003CA444  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53437"
+"@53437":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F4D6F6E
+	.4byte 0x6F746F6E
+	.4byte 0x65000000
+	.4byte 0

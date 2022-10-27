@@ -712,3 +712,35 @@ __dt__Q53scn4step5enemy5sheld6CustomFv:
 .global "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>Fv":
 /* 802DD8F4 002D9734  4B F5 0D AC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util95StateFactoryArg1<Q24util6IState,Q53scn4step5enemy5sheld12StateSmashed,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy5sheld6Custom
+__vt__Q53scn4step5enemy5sheld6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy5sheld6CustomCFv
+	.4byte __dt__Q53scn4step5enemy5sheld6CustomFv
+	.4byte onInit__Q53scn4step5enemy5sheld6CustomFv
+	.4byte onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumReceive__Q53scn4step5enemy5sheld6CustomFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q53scn4step5enemy5sheld6CustomFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0

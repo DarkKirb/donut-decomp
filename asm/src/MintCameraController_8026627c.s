@@ -19,3 +19,13 @@ Obj__Q43scn4step6camera20MintCameraControllerFv:
 "__sinit_@@1MintCameraController_cpp":
 /* 80266298 002620D8  38 6D F1 A8 */	addi r3, r13, "t_obj__Q43scn4step6camera34@unnamed@MintCameraController_cpp@"@sda21
 /* 8026629C 002620DC  4B E7 71 44 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintCameraController_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step6camera34@unnamed@MintCameraController_cpp@"
+"t_obj__Q43scn4step6camera34@unnamed@MintCameraController_cpp@":
+	.skip 0x8

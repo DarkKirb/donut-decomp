@@ -415,3 +415,19 @@ setParam__Q23snd10WaveHandleFUlUlQ34nw4r3snd12SampleFormat:
 /* 80404290 004000D0  7C 08 03 A6 */	mtlr r0
 /* 80404294 004000D4  38 21 00 50 */	addi r1, r1, 0x50
 /* 80404298 004000D8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23snd10WaveHandle
+__vt__Q23snd10WaveHandle:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q23snd10WaveHandleFv
+
+.global __vt__Q33snd10WaveHandle10WavePacket
+__vt__Q33snd10WaveHandle10WavePacket:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q33snd10WaveHandle10WavePacketFv

@@ -1498,3 +1498,61 @@ lbl_8032CB2C:
 /* 8032CB38 00328978  7C 08 03 A6 */	mtlr r0
 /* 8032CB3C 0032897C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8032CB40 00328980  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@61578"
+"@61578":
+
+	.4byte lbl_8032C850
+	.4byte lbl_8032C634
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C680
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C6CC
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C718
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C764
+	.4byte lbl_8032C848
+	.4byte lbl_8032C7B0
+	.4byte lbl_8032C848
+	.4byte lbl_8032C848
+	.4byte lbl_8032C7FC
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero5spark6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7parasol6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step4hero7fighter6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

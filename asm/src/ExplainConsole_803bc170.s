@@ -1015,3 +1015,183 @@ lbl_803BCF40:
 /* 803BCF4C 003B8D8C  7C 08 03 A6 */	mtlr r0
 /* 803BCF50 003B8D90  38 21 00 10 */	addi r1, r1, 0x10
 /* 803BCF54 003B8D94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "cdDataTbl__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"cdDataTbl__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+	.4byte "bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+	.4byte "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdTraining3__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+
+.global "cdDataTblG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"cdDataTblG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000004
+	.4byte "bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000003
+	.4byte "bIdTraining3__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+	.4byte 0x00000002
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdChallenge__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0
+
+.global "bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdChallengeG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000003
+
+.global "bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdMasterG__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x00000003
+
+.global "bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdTraining1__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+
+.global "bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdTraining2__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x00000008
+	.4byte 0x42757474
+	.4byte 0x6F6E4261
+	.4byte 0x73650000
+	.4byte 0x42757474
+	.4byte 0x6F6E4247
+	.4byte 0
+	.4byte 0x42757474
+	.4byte 0x6F6E4247
+	.4byte 0x4E000000
+	.4byte 0x54726169
+	.4byte 0x6E696E67
+	.4byte 0x4C763300
+	.4byte 0x54726169
+	.4byte 0x6E696E67
+	.4byte 0
+	.4byte 0x4D617374
+	.4byte 0x65724768
+	.4byte 0x6F737400
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x6547686F
+	.4byte 0x73740000
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65000000
+	.4byte 0x42757474
+	.4byte 0x6F6E2564
+	.4byte 0x4E000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdMaster__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0
+	.4byte 0x00000003
+
+.global "bIdTraining3__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@"
+"bIdTraining3__Q53scn4step4info5lvmap28@unnamed@ExplainConsole_cpp@":
+
+	.4byte 0x0000000B
+	.4byte 0x0000000A
+
+.global "@53494_8055BB48"
+"@53494_8055BB48":
+
+	.4byte 0x43757273
+	.4byte 0x6F724E00
+
+.global "@53693_8055BB50"
+"@53693_8055BB50":
+
+	.4byte 0x4D617374
+	.4byte 0x65720000

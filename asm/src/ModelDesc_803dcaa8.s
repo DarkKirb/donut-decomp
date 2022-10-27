@@ -83,3 +83,81 @@ lbl_803DCB80:
 /* 803DCBB8 003D89F8  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon11starshotlv223@unnamed@ModelDesc_cpp@"@ha
 /* 803DCBBC 003D89FC  90 03 4B 98 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon11starshotlv223@unnamed@ModelDesc_cpp@"@l(r3)
 /* 803DCBC0 003D8A00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23@unnamed@ModelDesc_cpp@"
+"T_ANIM_ENTRIES__Q53scn4step6weapon10spearspear23@unnamed@ModelDesc_cpp@":
+
+	.4byte "@50125_80494610"
+	.4byte 0
+	.4byte "@50126_8055C190"
+	.4byte 0
+	.4byte "@50127_8055C198"
+	.4byte 0
+
+.global "T_ANIM_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@"
+"T_ANIM_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@":
+
+	.4byte "@50124_8055C244"
+	.4byte 0
+	.4byte "@50125_8055C24C"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50123_80493FB8"
+"@50123_80493FB8":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C4C
+	.4byte 0
+
+.global "@50125_80493FC4"
+"@50125_80493FC4":
+
+	.4byte 0x536D616C
+	.4byte 0x6C537461
+	.4byte 0x724D0000
+	.4byte "@50122_8055C090"
+	.4byte "@50123_80493FB8"
+	.4byte "@50124_8055C098"
+	.4byte "@50125_80493FC4"
+	.4byte 0x53746172
+	.4byte 0x53686F74
+	.4byte 0x4C763200
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x6E6F726D
+	.4byte 0x616C2F53
+	.4byte 0x74726F6E
+	.4byte 0x67537461
+	.4byte 0x72000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50122_8055C0B8"
+"@50122_8055C0B8":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@50124_8055C0C0"
+"@50124_8055C0C0":
+
+	.4byte 0x5074636C
+	.4byte 0x4C000000
+
+.global "@50128_8055C0C8"
+"@50128_8055C0C8":
+
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@50244_8055C0D0"
+"@50244_8055C0D0":
+
+	.4byte 0x546F704C
+	.4byte 0

@@ -418,3 +418,25 @@ lbl_80261DA0:
 .global "__dt__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>Fv"
 "__dt__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>Fv":
 /* 80261E0C 0025DC4C  4B FC C8 94 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>"
+"__vt__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>Fv"
+	.4byte "create__Q24util132StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common12StateLanding,PQ43scn4step4boss4Boss,Q53scn4step4boss9zankibble10ScriptKind>Fv"
+
+.global __vt__Q53scn4step4boss9zankibble15StateJumpAttack
+__vt__Q53scn4step4boss9zankibble15StateJumpAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.4byte procAnim__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.4byte procMove__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss9zankibble15StateJumpAttackFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

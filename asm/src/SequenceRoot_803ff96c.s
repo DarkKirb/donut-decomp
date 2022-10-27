@@ -88,3 +88,19 @@ lbl_803FFA40:
 /* 803FFA50 003FB890  7C 08 03 A6 */	mtlr r0
 /* 803FFA54 003FB894  38 21 00 10 */	addi r1, r1, 0x10
 /* 803FFA58 003FB898  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23seq12SequenceRoot
+__vt__Q23seq12SequenceRoot:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q23seq12SequenceRootCFv
+	.4byte __dt__Q23seq12SequenceRootFv
+	.4byte nextAction__Q23seq12SequenceRootCFv
+	.4byte createChildSequence__Q23seq12SequenceRootCFv
+	.4byte onChildSequenceEnd__Q23seq12SequenceRootFRQ23seq9ISequence
+	.4byte createScene__Q23seq12SequenceRootCFv
+	.4byte onSceneEnd__Q23seq12SequenceRootFRQ23scn6IScene
+	.4byte 0

@@ -909,3 +909,15 @@ mfReleasePtclEffect__Q53scn4step7gimmick4door4DoorFv:
 /* 8030E544 0030A384  7C 08 03 A6 */	mtlr r0
 /* 8030E548 0030A388  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030E54C 0030A38C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54039_804812E0"
+"@54039_804812E0":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F446F6F
+	.4byte 0x72000000
+	.4byte 0

@@ -24,3 +24,49 @@ G3DLightSetCount__Q43scn4step4core17DrawLayerKindUtilFQ43scn4step4core13DrawLaye
 /* 80275FB4 00271DF4  7C 60 22 14 */	add r3, r0, r4
 /* 80275FB8 00271DF8  80 63 00 08 */	lwz r3, 0x8(r3)
 /* 80275FBC 00271DFC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ENTRIES__Q43scn4step4core31@unnamed@DrawLayerKindUtil_cpp@"
+"T_ENTRIES__Q43scn4step4core31@unnamed@DrawLayerKindUtil_cpp@":
+
+	.4byte 0x00000001
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00001000
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000100
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000100
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0x00000080
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0

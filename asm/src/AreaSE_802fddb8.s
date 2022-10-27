@@ -228,3 +228,11 @@ lbl_802FE0B8:
 /* 802FE0C0 002F9F00  7C 08 03 A6 */	mtlr r0
 /* 802FE0C4 002F9F04  38 21 00 40 */	addi r1, r1, 0x40
 /* 802FE0C8 002F9F08  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "SE_LABEL_TABLE__Q53scn4step7gimmick6arease20@unnamed@AreaSE_cpp@"
+"SE_LABEL_TABLE__Q53scn4step7gimmick6arease20@unnamed@AreaSE_cpp@":
+
+	.4byte 0x00000262
+	.4byte 0

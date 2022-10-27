@@ -71,3 +71,13 @@ updateForNormal__Q43scn4step5ostop7ManagerFv:
 updateForPauseMenu__Q43scn4step5ostop7ManagerFv:
 /* 803CAD38 003C6B78  38 80 00 00 */	li r4, 0x0
 /* 803CAD3C 003C6B7C  4B E0 F1 50 */	b update__Q25ostop7ManagerFb
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55166"
+"@55166":
+
+	.4byte 0x4F47656E
+	.4byte 0x4D616E61
+	.4byte 0x67657200
+	.4byte 0

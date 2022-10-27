@@ -393,3 +393,11 @@ draw__Q23sfx15FullScreenModelFv:
 /* 804011C8 003FD008  7C 08 03 A6 */	mtlr r0
 /* 804011CC 003FD00C  38 21 00 10 */	addi r1, r1, 0x10
 /* 804011D0 003FD010  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52811_8055C6B8"
+"@52811_8055C6B8":
+
+	.4byte 0x546F704C
+	.4byte 0

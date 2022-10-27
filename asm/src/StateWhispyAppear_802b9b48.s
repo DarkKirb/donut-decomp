@@ -184,3 +184,37 @@ procFixPos__Q53scn4step5enemy5gordo17StateWhispyAppearFv:
 .global "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>Fv":
 /* 802B9DB0 002B5BF0  4B F7 48 F0 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy11whispyapple9StateFall,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy5gordo17StateWhispyAppear
+__vt__Q53scn4step5enemy5gordo17StateWhispyAppear:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.4byte procAnim__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.4byte procMove__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5gordo17StateWhispyAppearFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55825_80559B70"
+"@55825_80559B70":
+
+	.4byte 0x3DCCCCCD
+
+.global "@55826_80559B74"
+"@55826_80559B74":
+
+	.4byte 0x3F800000

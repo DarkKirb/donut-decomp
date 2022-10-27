@@ -178,3 +178,51 @@ Func__Q63scn4step5enemy4elec9AddOnMint39Mint_SetViewOffset_0$56476AddOnMint_cppF
 /* 802AF3E8 002AB228  7C 08 03 A6 */	mtlr r0
 /* 802AF3EC 002AB22C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802AF3F0 002AB230  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@56662_80476408"
+"@56662_80476408":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E456E65
+	.4byte 0x6D792E45
+	.4byte 0x6C65632E
+	.4byte 0x43757374
+	.4byte 0x6F6D0000
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20536574
+	.4byte 0x56696577
+	.4byte 0x4F666673
+	.4byte 0x65742866
+	.4byte 0x6C6F6174
+	.4byte 0x2C666C6F
+	.4byte 0x61742900
+	.4byte 0x766F6964
+	.4byte 0x20417474
+	.4byte 0x61636B45
+	.4byte 0x66666563
+	.4byte 0x74302829
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20417474
+	.4byte 0x61636B45
+	.4byte 0x66666563
+	.4byte 0x74312829
+	.4byte 0
+	.4byte 0x696E6465
+	.4byte 0x78203D20
+	.4byte 0x25642C20
+	.4byte 0x636F756E
+	.4byte 0x74203D20
+	.4byte 0x25640A00
+	.4byte 0x4D417272
+	.4byte 0x61792E68
+	.4byte 0x70700000
+	.4byte 0x6E6F206E
+	.4byte 0x616D6520
+	.4byte 0x636C6173
+	.4byte 0x73000000
+	.4byte 0

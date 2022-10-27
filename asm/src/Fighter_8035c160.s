@@ -303,3 +303,105 @@ lbl_8035C534:
 /* 8035C56C 003583AC  7C 08 03 A6 */	mtlr r0
 /* 8035C570 003583B0  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8035C574 003583B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49834"
+"@49834":
+
+	.4byte 0x73746570
+	.4byte 0x2F686572
+	.4byte 0x6F2F6D6F
+	.4byte 0x64656C64
+	.4byte 0x6573632F
+	.4byte 0x46696768
+	.4byte 0x74657200
+
+.global "@49851"
+"@49851":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F68
+	.4byte 0x65726F2F
+	.4byte 0x6B697262
+	.4byte 0x792F6669
+	.4byte 0x67687465
+	.4byte 0x722F4861
+	.4byte 0x74000000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0x58
+
+.global "@LOCAL@HatDynaL__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@LOCAL@HatDynaL__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0xE4
+
+.global "@LOCAL@HatDynaR__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@LOCAL@HatDynaR__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0xE4
+
+.global "@LOCAL@HatDescNode0__Q53scn4step4hero9modeldesc7FighterFv@descNode0"
+"@LOCAL@HatDescNode0__Q53scn4step4hero9modeldesc7FighterFv@descNode0":
+	.skip 0x24
+
+.global "@LOCAL@HatDescNode1__Q53scn4step4hero9modeldesc7FighterFv@descNode1"
+"@LOCAL@HatDescNode1__Q53scn4step4hero9modeldesc7FighterFv@descNode1":
+	.skip 0x24
+
+.global "@LOCAL@HatDescNode2__Q53scn4step4hero9modeldesc7FighterFv@descNode2"
+"@LOCAL@HatDescNode2__Q53scn4step4hero9modeldesc7FighterFv@descNode2":
+	.skip 0x28
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49541_8055ADA8"
+"@49541_8055ADA8":
+
+	.4byte 0x4861744D
+	.4byte 0
+
+.global "@49542_8055ADB0"
+"@49542_8055ADB0":
+
+	.4byte 0x48617442
+	.4byte 0x69674D00
+
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@names@1"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@names@1":
+
+	.4byte "@49541_8055ADA8"
+	.4byte "@49542_8055ADB0"
+
+.global "@49857"
+"@49857":
+
+	.4byte 0x4C42616E
+	.4byte 0x64315300
+
+.global "@49888_8055ADC8"
+"@49888_8055ADC8":
+
+	.4byte 0x5242616E
+	.4byte 0x64315300
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@HatModel__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@GUARD@HatModel__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0x8
+
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@nodeReposDesc@0"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc7FighterFv@nodeReposDesc@0":
+	.skip 0x8
+
+.global "@GUARD@HatDynaL__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@GUARD@HatDynaL__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0x1
+
+.global "@GUARD@HatDynaR__Q53scn4step4hero9modeldesc7FighterFv@desc"
+"@GUARD@HatDynaR__Q53scn4step4hero9modeldesc7FighterFv@desc":
+	.skip 0x7

@@ -426,3 +426,87 @@ lbl_80233F80:
 /* 80233F8C 0022FDCC  7C 08 03 A6 */	mtlr r0
 /* 80233F90 0022FDD0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80233F94 0022FDD4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49988_804646D8"
+"@49988_804646D8":
+
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F426F
+	.4byte 0x6E6B6572
+	.4byte 0x73000000
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4368
+	.4byte 0x616C6C65
+	.4byte 0x6E67654D
+	.4byte 0x61737465
+	.4byte 0x72000000
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F436F
+	.4byte 0x6D6D6F6E
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4372
+	.4byte 0x65646974
+	.4byte 0x44656465
+	.4byte 0x64650000
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4372
+	.4byte 0x65646974
+	.4byte 0x44656500
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4372
+	.4byte 0x65646974
+	.4byte 0x4D657461
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4372
+	.4byte 0x65646974
+	.4byte 0x526F6168
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4475
+	.4byte 0x62696F72
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4769
+	.4byte 0x67616E74
+	.4byte 0x45646765
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4B69
+	.4byte 0x6E677344
+	.4byte 0x6F6F0000
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F4D6F
+	.4byte 0x756E6465
+	.4byte 0x61746800
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F7300
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F5768
+	.4byte 0x69737079
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F626F73
+	.4byte 0x732F5A61
+	.4byte 0x6E6B6962
+	.4byte 0x626C6500

@@ -124,3 +124,31 @@ final__Q24util5AlarmFv:
 /* 804056B4 004014F4  7C 08 03 A6 */	mtlr r0
 /* 804056B8 004014F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 804056BC 004014FC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Alarm_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q24util5Alarm
+__vt__Q24util5Alarm:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q24util5AlarmFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "T_PERIOD__19@unnamed@Alarm_cpp@"
+"T_PERIOD__19@unnamed@Alarm_cpp@":
+	.skip 0x4
+
+.global lbl_8055DF6C
+lbl_8055DF6C:
+	.skip 0x4
+
+.global "object___Q33hel6common32ExplicitSingleton<Q24util5Alarm>"
+"object___Q33hel6common32ExplicitSingleton<Q24util5Alarm>":
+	.skip 0x10

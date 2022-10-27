@@ -238,3 +238,13 @@ lbl_803D0E78:
 /* 803D0E84 003CCCC4  7C 08 03 A6 */	mtlr r0
 /* 803D0E88 003CCCC8  38 21 00 20 */	addi r1, r1, 0x20
 /* 803D0E8C 003CCCCC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon13vacuumedblock6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon13vacuumedblock6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon13vacuumedblock6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon13vacuumedblock6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

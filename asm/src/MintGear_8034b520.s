@@ -115,3 +115,13 @@ BindEffectWarp__Q43scn4step4hero8MintGearFv:
 "__sinit_@@1MintGear_cpp":
 /* 8034B68C 003474CC  38 6D F8 00 */	addi r3, r13, "t_obj__Q43scn4step4hero22@unnamed@MintGear_cpp@"@sda21
 /* 8034B690 003474D0  4B D9 1D 50 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintGear_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step4hero22@unnamed@MintGear_cpp@"
+"t_obj__Q43scn4step4hero22@unnamed@MintGear_cpp@":
+	.skip 0x8

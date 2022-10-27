@@ -24,3 +24,13 @@ Stop__Q23snd15MintSERequestorFv:
 "__sinit_@@1MintSERequestor_cpp":
 /* 80402A64 003FE8A4  38 6D FB 38 */	addi r3, r13, "t_obj__Q23snd29@unnamed@MintSERequestor_cpp@"@sda21
 /* 80402A68 003FE8A8  4B CD A9 78 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintSERequestor_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q23snd29@unnamed@MintSERequestor_cpp@"
+"t_obj__Q23snd29@unnamed@MintSERequestor_cpp@":
+	.skip 0x8

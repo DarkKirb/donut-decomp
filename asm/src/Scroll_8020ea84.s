@@ -669,3 +669,33 @@ stop__Q33scn7history6ScrollFv:
 /* 8020F2E4 0020B124  EC 00 00 B2 */	fmuls f0, f0, f2
 /* 8020F2E8 0020B128  D0 0D EF 94 */	stfs f0, "MAX_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"@sda21(r13)
 /* 8020F2EC 0020B12C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Scroll_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "STEP_WIDTH__Q33scn7history20@unnamed@Scroll_cpp@"
+"STEP_WIDTH__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4
+
+.global "FAST_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4
+
+.global "FAST_MOVE_INIT_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_INIT_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4
+
+.global "FAST_MOVE_ACCEL__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_ACCEL__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4
+
+.global "FAST_MOVE_ACCEL_DELTA__Q33scn7history20@unnamed@Scroll_cpp@"
+"FAST_MOVE_ACCEL_DELTA__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4
+
+.global "MAX_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@"
+"MAX_MOVE_SPEED__Q33scn7history20@unnamed@Scroll_cpp@":
+	.skip 0x4

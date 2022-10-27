@@ -168,3 +168,17 @@ lbl_80255DD4:
 /* 80255DE0 00251C20  7C 08 03 A6 */	mtlr r0
 /* 80255DE4 00251C24  38 21 00 50 */	addi r1, r1, 0x50
 /* 80255DE8 00251C28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss9moundeath9StateJump
+__vt__Q53scn4step4boss9moundeath9StateJump:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss9moundeath9StateJumpFv
+	.4byte procAnim__Q53scn4step4boss9moundeath9StateJumpFv
+	.4byte procMove__Q53scn4step4boss9moundeath9StateJumpFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss9moundeath9StateJumpFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

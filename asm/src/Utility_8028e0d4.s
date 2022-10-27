@@ -2256,3 +2256,55 @@ lbl_8028FE24:
 /* 8028FE48 0028BC88  7C 08 03 A6 */	mtlr r0
 /* 8028FE4C 0028BC8C  38 21 00 60 */	addi r1, r1, 0x60
 /* 8028FE50 0028BC90  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@61649"
+"@61649":
+
+	.4byte lbl_8028E910
+	.4byte lbl_8028E910
+	.4byte lbl_8028E904
+	.4byte lbl_8028E8E4
+	.4byte lbl_8028E8D4
+	.4byte lbl_8028E8F4
+	.4byte lbl_8028E90C
+	.4byte lbl_8028E8DC
+	.4byte lbl_8028E8FC
+	.4byte lbl_8028E8EC
+
+.global "@61690"
+"@61690":
+
+	.4byte lbl_8028EB08
+	.4byte lbl_8028E978
+	.4byte lbl_8028E9E0
+	.4byte lbl_8028EA04
+	.4byte lbl_8028EA28
+	.4byte lbl_8028EA4C
+	.4byte lbl_8028EA70
+	.4byte lbl_8028EA98
+	.4byte lbl_8028EABC
+	.4byte lbl_8028EAE0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@59859"
+"@59859":
+
+	.4byte 0x42480000
+
+.global "@59860"
+"@59860":
+
+	.4byte 0
+
+.global "@59862"
+"@59862":
+
+	.4byte 0x42480000
+
+.global "@59863"
+"@59863":
+
+	.4byte 0x43340000

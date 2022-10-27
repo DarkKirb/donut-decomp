@@ -134,3 +134,33 @@ updateMaterial__Q43scn4step3sfx12ShadowSphereFv:
 /* 803CEF98 003CADD8  7C 08 03 A6 */	mtlr r0
 /* 803CEF9C 003CADDC  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 803CEFA0 003CADE0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52021"
+"@52021":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F536861
+	.4byte 0x646F7700
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52022"
+"@52022":
+
+	.4byte 0x53706865
+	.4byte 0x72650000
+
+.global "@52072_8055C018"
+"@52072_8055C018":
+
+	.4byte 0x46726F6E
+	.4byte 0x74414D00
+
+.global "@52073_8055C020"
+"@52073_8055C020":
+
+	.4byte 0x46726F6E
+	.4byte 0x74434D00

@@ -129,3 +129,49 @@ CreateEx__Q53scn4step6weapon13whispyairball9ModelDescFv:
 /* 803DE5C4 003DA404  38 63 41 00 */	addi r3, r3, 0x4100
 /* 803DE5C8 003DA408  90 03 00 14 */	stw r0, 0x14(r3)
 /* 803DE5CC 003DA40C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x77686973
+	.4byte 0x70792F62
+	.4byte 0x72656174
+	.4byte 0x682F4D6F
+	.4byte 0x64656C00
+	.4byte 0x57686973
+	.4byte 0x70794169
+	.4byte 0x7242616C
+	.4byte 0x6C000000
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x77686973
+	.4byte 0x70792F62
+	.4byte 0x72656174
+	.4byte 0x682F4D6F
+	.4byte 0x74696F6E
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x77686973
+	.4byte 0x70792F62
+	.4byte 0x72656174
+	.4byte 0x682F4D6F
+	.4byte 0x64656C45
+	.4byte 0x78000000

@@ -48,3 +48,15 @@ lbl_803C5248:
 /* 803C5258 003C1098  7C 08 03 A6 */	mtlr r0
 /* 803C525C 003C109C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C5260 003C10A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4item9StateBase
+__vt__Q43scn4step4item9StateBase:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4item9StateBaseFv
+	.4byte procAnim__Q43scn4step4item9StateBaseFv
+	.4byte procMove__Q43scn4step4item9StateBaseFv
+	.4byte procFixPos__Q43scn4step4item9StateBaseFv

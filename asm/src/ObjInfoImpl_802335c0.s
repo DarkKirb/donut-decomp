@@ -142,3 +142,29 @@ state__Q43scn4step4boss11ObjInfoImplCFv:
 /* 80233764 0022F5A4  7C 08 03 A6 */	mtlr r0
 /* 80233768 0022F5A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8023376C 0022F5AC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4boss11ObjInfoImpl
+__vt__Q43scn4step4boss11ObjInfoImpl:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4boss11ObjInfoImplFv
+	.4byte name__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte anim__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte footState__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte hitPoint__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte location__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte move__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte script__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte state__Q43scn4step4boss11ObjInfoImplCFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54747"
+"@54747":
+
+	.4byte 0x837B8358
+	.4byte 0

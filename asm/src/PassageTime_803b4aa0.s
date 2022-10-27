@@ -258,3 +258,85 @@ lbl_803B4E3C:
 /* 803B4E50 003B0C90  7C 08 03 A6 */	mtlr r0
 /* 803B4E54 003B0C94  38 21 04 E0 */	addi r1, r1, 0x4e0
 /* 803B4E58 003B0C98  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53861"
+"@53861":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+	.4byte 0x50617373
+	.4byte 0x61676554
+	.4byte 0x696D6500
+
+.global "@53867"
+"@53867":
+
+	.4byte 0x4672616D
+	.4byte 0x65546578
+	.4byte 0x74000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53863"
+"@53863":
+
+	.4byte 0x4D696E54
+	.4byte 0x65787400
+
+.global "@53864"
+"@53864":
+
+	.4byte 0x30000000
+	.4byte 0
+
+.global "@53865"
+"@53865":
+
+	.4byte 0x53656354
+	.4byte 0x65787400
+
+.global "@53866"
+"@53866":
+
+	.4byte 0x30300000
+
+.global "@53906_8055B864"
+"@53906_8055B864":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53909_8055B86C"
+"@53909_8055B86C":
+
+	.4byte 0x476F616C
+	.4byte 0
+
+.global "@53945_8055B874"
+"@53945_8055B874":
+
+	.4byte 0x25750000
+
+.global "@53946_8055B878"
+"@53946_8055B878":
+
+	.4byte 0x25303275
+	.4byte 0

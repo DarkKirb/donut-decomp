@@ -65,3 +65,17 @@ procMove__Q53scn4step5enemy6common16StateFallNoDecelFv:
 .global procFixPos__Q53scn4step5enemy6common16StateFallNoDecelFv
 procFixPos__Q53scn4step5enemy6common16StateFallNoDecelFv:
 /* 80291D3C 0028DB7C  4B FF FE 68 */	b procFixPos__Q53scn4step5enemy6common9StateFallFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6common16StateFallNoDecel
+__vt__Q53scn4step5enemy6common16StateFallNoDecel:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6common16StateFallNoDecelFv
+	.4byte procAnim__Q53scn4step5enemy6common16StateFallNoDecelFv
+	.4byte procMove__Q53scn4step5enemy6common16StateFallNoDecelFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common16StateFallNoDecelFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

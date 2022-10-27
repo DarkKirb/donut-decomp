@@ -999,3 +999,33 @@ lbl_80312B48:
 /* 80312B4C 0030E98C  7C 08 03 A6 */	mtlr r0
 /* 80312B50 0030E990  38 21 00 10 */	addi r1, r1, 0x10
 /* 80312B54 0030E994  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55157"
+"@55157":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F477569
+	.4byte 0x6465426F
+	.4byte 0x61726400
+
+.global "@55422"
+"@55422":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F53776F
+	.4byte 0x7264426F
+	.4byte 0x61726400
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55290_8055A7A0"
+"@55290_8055A7A0":
+
+	.4byte 0x45666665
+	.4byte 0x63744C00

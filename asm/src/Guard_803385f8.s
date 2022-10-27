@@ -60,3 +60,29 @@ lbl_80338690:
 /* 803386A8 003344E8  80 61 00 08 */	lwz r3, 0x8(r1)
 /* 803386AC 003344EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 803386B0 003344F0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ALPHA_TABLE__19@unnamed@Guard_cpp@"
+"T_ALPHA_TABLE__19@unnamed@Guard_cpp@":
+
+	.4byte 0x000000C0
+	.4byte 0x000000C0
+	.4byte 0x000000A0
+	.4byte 0x00000090
+	.4byte 0x00000080
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0

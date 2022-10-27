@@ -101,3 +101,25 @@ procFixPos__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStartFv:
 .global "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>Fv"
 "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>Fv":
 /* 802549C4 00250804  4B FD 9C DC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>"
+"__vt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss8kingsdoo19StateJumpMachinegun,PQ43scn4step4boss4Boss>Fv"
+
+.global __vt__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStart
+__vt__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStart:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStartFv
+	.4byte procAnim__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStartFv
+	.4byte procMove__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStartFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss8kingsdoo24StateJumpMachinegunStartFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

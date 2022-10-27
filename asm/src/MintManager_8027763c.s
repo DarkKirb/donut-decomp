@@ -38,3 +38,45 @@ __ct__Q43scn4step4core11MintManagerFv:
 /* 802776BC 002734FC  7C 08 03 A6 */	mtlr r0
 /* 802776C0 00273500  38 21 00 10 */	addi r1, r1, 0x10
 /* 802776C4 00273504  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51597_8046C828"
+"@51597_8046C828":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0
+	.4byte 0
+
+.global "@51599"
+"@51599":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746166
+	.4byte 0x66437265
+	.4byte 0x64697400
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51594_80559478"
+"@51594_80559478":
+
+	.4byte 0x41707000
+
+.global "@51595_8055947C"
+"@51595_8055947C":
+
+	.4byte 0x474F626A
+	.4byte 0
+
+.global "@51596_80559484"
+"@51596_80559484":
+
+	.4byte 0x48454C00
+
+.global "@51598_80559488"
+"@51598_80559488":
+
+	.4byte 0x536E6400
+	.4byte 0

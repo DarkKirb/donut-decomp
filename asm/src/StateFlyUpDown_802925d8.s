@@ -162,3 +162,17 @@ lbl_802927EC:
 /* 80292800 0028E640  7C 08 03 A6 */	mtlr r0
 /* 80292804 0028E644  38 21 00 90 */	addi r1, r1, 0x90
 /* 80292808 0028E648  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6common14StateFlyUpDown
+__vt__Q53scn4step5enemy6common14StateFlyUpDown:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.4byte procAnim__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.4byte procMove__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common14StateFlyUpDownFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

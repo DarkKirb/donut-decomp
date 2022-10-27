@@ -413,3 +413,41 @@ lbl_803CD4FC:
 lbl_803CD504:
 /* 803CD504 003C9344  C0 22 DC 10 */	lfs f1, "@52572_80563B90"@sda21(r2)
 /* 803CD508 003C9348  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52574"
+"@52574":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F446172
+	.4byte 0x6B6E6573
+	.4byte 0x734C6967
+	.4byte 0x68740000
+
+.global "@52694"
+"@52694":
+
+	.4byte lbl_803CD4C4
+	.4byte lbl_803CD4CC
+	.4byte lbl_803CD4D4
+	.4byte lbl_803CD4DC
+	.4byte lbl_803CD4E4
+	.4byte lbl_803CD4EC
+	.4byte lbl_803CD4F4
+	.4byte lbl_803CD4FC
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52675_8055C000"
+"@52675_8055C000":
+
+	.4byte 0x4269674C
+	.4byte 0
+
+.global "@52676_8055C008"
+"@52676_8055C008":
+
+	.4byte 0x536D616C
+	.4byte 0x6C4C0000

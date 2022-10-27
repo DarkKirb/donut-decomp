@@ -27,3 +27,23 @@ startIn__Q33scn10grandtitle11CinemaScopeFv:
 /* 80202F10 001FED50  38 63 00 04 */	addi r3, r3, 0x4
 /* 80202F14 001FED54  80 8D 9F F0 */	lwz r4, "T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25@unnamed@CinemaScope_cpp@"@sda21(r13)
 /* 80202F18 001FED58  48 1F D6 A8 */	b requestIn__Q23sfx16CinemaScopeModelFPCc
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51791_804608E8"
+"@51791_804608E8":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F435354
+	.4byte 0x69746C65
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25@unnamed@CinemaScope_cpp@"
+"T_CINEMASCOPE_FILE_PATH__Q33scn10grandtitle25@unnamed@CinemaScope_cpp@":
+
+	.4byte "@51791_804608E8"
+	.4byte 0

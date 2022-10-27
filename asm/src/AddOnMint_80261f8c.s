@@ -104,3 +104,53 @@ Func__Q53scn4step6camera9AddOnMint34Mint_ReqQuake_0$53080AddOnMint_cppFRQ26mintv
 /* 802620E4 0025DF24  3C 60 80 26 */	lis r3, "t_CameraController_ReqQuake__Q43scn4step6camera23@unnamed@AddOnMint_cpp@Fi"@ha
 /* 802620E8 0025DF28  38 63 1F 8C */	addi r3, r3, "t_CameraController_ReqQuake__Q43scn4step6camera23@unnamed@AddOnMint_cpp@Fi"@l
 /* 802620EC 0025DF2C  4B F3 67 00 */	b "mintCallWrappedFunc<Ul>__FPFUl_vPQ26mintvm13MintFuncProxy_v"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53242"
+"@53242":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E43616D
+	.4byte 0x6572612E
+	.4byte 0x43616D65
+	.4byte 0x7261436F
+	.4byte 0x6E74726F
+	.4byte 0x6C6C6572
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20526571
+	.4byte 0x5175616B
+	.4byte 0x6528696E
+	.4byte 0x74290000
+	.4byte 0x766F6964
+	.4byte 0x20526571
+	.4byte 0x5A6F6F6D
+	.4byte 0x5175616B
+	.4byte 0x6528696E
+	.4byte 0x74290000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E43616D
+	.4byte 0x6572612E
+	.4byte 0x5A6F6F6D
+	.4byte 0x5175616B
+	.4byte 0x652E4D65
+	.4byte 0x74686F64
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20536574
+	.4byte 0x4F666673
+	.4byte 0x28666C6F
+	.4byte 0x61742900
+	.4byte 0x696E6465
+	.4byte 0x78203D20
+	.4byte 0x25642C20
+	.4byte 0x636F756E
+	.4byte 0x74203D20
+	.4byte 0x25640A00
+	.4byte 0x4D417272
+	.4byte 0x61792E68
+	.4byte 0x70700000
+	.4byte 0

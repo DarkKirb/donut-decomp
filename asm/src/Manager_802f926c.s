@@ -557,3 +557,45 @@ lbl_802F99C4:
 /* 802F99D8 002F5818  7C 08 03 A6 */	mtlr r0
 /* 802F99DC 002F581C  38 21 00 30 */	addi r1, r1, 0x30
 /* 802F99E0 002F5820  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@57185_804196C8"
+"@57185_804196C8":
+
+	.4byte 0x00000003
+	.4byte 0x00000007
+	.4byte 0x0000000A
+
+.global "@57316"
+"@57316":
+
+	.4byte "@57311"
+	.4byte "@57312"
+	.4byte "@57313"
+	.4byte "@57314_8047F930"
+	.4byte "@57315"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@__ct__Q43scn4step7gimmick21FlowEffectManager<24>FRQ33scn4step9Component"
+"@STRING@__ct__Q43scn4step7gimmick21FlowEffectManager<24>FRQ33scn4step9Component":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F45
+	.4byte 0x66666563
+	.4byte 0x744C6F63
+	.4byte 0x61746F72
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@STRING@__ct__Q43scn4step7gimmick21FlowEffectManager<24>FRQ33scn4step9Component@0"
+"@STRING@__ct__Q43scn4step7gimmick21FlowEffectManager<24>FRQ33scn4step9Component@0":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000

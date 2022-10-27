@@ -388,3 +388,17 @@ lbl_802EB9EC:
 /* 802EBA34 002E7874  7C 08 03 A6 */	mtlr r0
 /* 802EBA38 002E7878  38 21 00 60 */	addi r1, r1, 0x60
 /* 802EBA3C 002E787C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy9tsukikage9StateJump
+__vt__Q53scn4step5enemy9tsukikage9StateJump:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy9tsukikage9StateJumpFv
+	.4byte procAnim__Q53scn4step5enemy9tsukikage9StateJumpFv
+	.4byte procMove__Q53scn4step5enemy9tsukikage9StateJumpFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9tsukikage9StateJumpFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

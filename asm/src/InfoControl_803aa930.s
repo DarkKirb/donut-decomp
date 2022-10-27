@@ -1089,3 +1089,17 @@ lbl_803AB77C:
 /* 803AB78C 003A75CC  7C 08 03 A6 */	mtlr r0
 /* 803AB790 003A75D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 803AB794 003A75D4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55923"
+"@55923":
+
+	.4byte lbl_803AAA48
+	.4byte lbl_803AAA54
+	.4byte lbl_803AAB5C
+	.4byte lbl_803AAB80
+	.4byte lbl_803AAB8C
+	.4byte lbl_803AABE8
+	.4byte lbl_803AABF4
+	.4byte lbl_803AAC30

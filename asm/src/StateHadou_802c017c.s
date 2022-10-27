@@ -148,3 +148,17 @@ lbl_802C036C:
 .global procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv
 procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv:
 /* 802C0380 002BC1C0  4B FE 17 AC */	b procFixPos__Q53scn4step5enemy11broomhatter9StateWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10knucklejoe10StateHadou
+__vt__Q53scn4step5enemy10knucklejoe10StateHadou:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.4byte procAnim__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10knucklejoe10StateHadouFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

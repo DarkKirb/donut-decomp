@@ -20,3 +20,13 @@ SetBack__Q43scn4step3sfx13MintSuperFadeFb:
 "__sinit_@@1MintSuperFade_cpp":
 /* 803CDCFC 003C9B3C  38 6D F9 20 */	addi r3, r13, "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"@sda21
 /* 803CDD00 003C9B40  4B D0 F6 E0 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintSuperFade_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@"
+"t_obj__Q43scn4step3sfx27@unnamed@MintSuperFade_cpp@":
+	.skip 0x8

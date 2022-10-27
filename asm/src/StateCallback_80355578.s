@@ -214,3 +214,13 @@ lbl_8035587C:
 /* 80355894 003516D4  7C 08 03 A6 */	mtlr r0
 /* 80355898 003516D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035589C 003516DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4hero13StateCallback
+__vt__Q43scn4step4hero13StateCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4hero13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4hero13StateCallbackFRCQ24util13IStateChanger

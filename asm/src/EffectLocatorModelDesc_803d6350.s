@@ -46,3 +46,61 @@ lbl_803D6398:
 /* 803D63E8 003D2228  7C 08 03 A6 */	mtlr r0
 /* 803D63EC 003D222C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D63F0 003D2230  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50196_80493778"
+"@50196_80493778":
+
+	.4byte 0x45666665
+	.4byte 0x63744C6F
+	.4byte 0x6361746F
+	.4byte 0x72000000
+
+.global "@50197_80493788"
+"@50197_80493788":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F45
+	.4byte 0x66666563
+	.4byte 0x744C6F63
+	.4byte 0x61746F72
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50122_8055C038"
+"@50122_8055C038":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "T_NODE_NAMES__Q43scn4step6weapon36@unnamed@EffectLocatorModelDesc_cpp@"
+"T_NODE_NAMES__Q43scn4step6weapon36@unnamed@EffectLocatorModelDesc_cpp@":
+
+	.4byte "@50122_8055C038"
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<67>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x8

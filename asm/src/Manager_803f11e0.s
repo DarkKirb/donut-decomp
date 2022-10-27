@@ -1074,3 +1074,17 @@ createContext__Q43scn4step5ghost7ManagerFv:
 /* 803F20E0 003EDF20  7C 08 03 A6 */	mtlr r0
 /* 803F20E4 003EDF24  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F20E8 003EDF28  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52659"
+"@52659":
+
+	.4byte lbl_803F18F8
+	.4byte lbl_803F1904
+	.4byte lbl_803F1928
+	.4byte lbl_803F19B0
+	.4byte lbl_803F19C0
+	.4byte lbl_803F19D0
+	.4byte lbl_803F19E0
+	.4byte lbl_803F19F0

@@ -90,3 +90,47 @@ lbl_803C4DB4:
 /* 803C4E20 003C0C60  7C 08 03 A6 */	mtlr r0
 /* 803C4E24 003C0C64  38 21 00 70 */	addi r1, r1, 0x70
 /* 803C4E28 003C0C68  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_SCRIPT_ENTRIES__Q43scn4step4item27@unnamed@ModelDescUtil_cpp@"
+"T_SCRIPT_ENTRIES__Q43scn4step4item27@unnamed@ModelDescUtil_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50281_80491ED8"
+"@50281_80491ED8":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E497465
+	.4byte 0x6D000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil
+SCRIPT_ENTRIES__Q43scn4step4item13ModelDescUtil:
+
+	.4byte "T_SCRIPT_ENTRIES__Q43scn4step4item27@unnamed@ModelDescUtil_cpp@"
+
+.global "@50143_8055BD74"
+"@50143_8055BD74":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@LOCAL@Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry@NODE_NAMES"
+"@LOCAL@Set__Q43scn4step4item13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry@NODE_NAMES":
+
+	.4byte "@50143_8055BD74"

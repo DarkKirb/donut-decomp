@@ -241,3 +241,45 @@ lbl_8035B840:
 /* 8035B84C 0035768C  7C 08 03 A6 */	mtlr r0
 /* 8035B850 00357690  38 21 00 20 */	addi r1, r1, 0x20
 /* 8035B854 00357694  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55703"
+"@55703":
+
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B6C4
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B6C4
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B6C4
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B6E0
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B6C4
+	.4byte lbl_8035B6E0
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B71C
+	.4byte lbl_8035B710
+	.4byte lbl_8035B710
+	.4byte lbl_8035B710

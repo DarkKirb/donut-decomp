@@ -1464,3 +1464,17 @@ lbl_8022E4D0:
 /* 8022E4E4 0022A324  7C 08 03 A6 */	mtlr r0
 /* 8022E4E8 0022A328  38 21 00 50 */	addi r1, r1, 0x50
 /* 8022E4EC 0022A32C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_RETRY_HP_RATE_TABLE__Q43scn4step4boss23@unnamed@Commander_cpp@"
+"T_RETRY_HP_RATE_TABLE__Q43scn4step4boss23@unnamed@Commander_cpp@":
+
+	.4byte 0x3F800000
+	.4byte 0x3F7851EC
+	.4byte 0x3F68F5C3
+	.4byte 0x3F6147AE
+	.4byte 0x3F51EB85
+	.4byte 0x3F3D70A4
+	.4byte 0x3F1EB852
+	.4byte 0

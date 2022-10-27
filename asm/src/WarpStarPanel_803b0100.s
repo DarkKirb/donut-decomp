@@ -1074,3 +1074,71 @@ isOpenAreaDemoEnd__Q53scn4step4info13WarpStarPanel19WarpStarPanelIndiviCFv:
 /* 803B0F38 003ACD78  7C 08 03 A6 */	mtlr r0
 /* 803B0F3C 003ACD7C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803B0F40 003ACD80  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@58551_804900D8"
+"@58551_804900D8":
+
+	.4byte 0x73746570
+	.4byte 0x2F6C766D
+	.4byte 0x61702F4D
+
+.global lbl_804900E4
+lbl_804900E4:
+
+	.4byte 0x61696E00
+	.4byte 0x57617270
+	.4byte 0x53746172
+	.4byte 0x42617365
+	.4byte 0
+	.4byte 0x57617270
+	.4byte 0x53746172
+	.4byte 0x4E616D65
+	.4byte 0
+	.4byte 0x57617270
+	.4byte 0x53746172
+	.4byte 0x5F310000
+	.4byte 0x57617270
+	.4byte 0x53746172
+	.4byte 0x5F320000
+	.4byte 0x57617270
+	.4byte 0x53746172
+	.4byte 0x5F330000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@58555_8055B720"
+"@58555_8055B720":
+
+	.4byte 0
+
+.global "@58645_8055B724"
+"@58645_8055B724":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@58646_8055B72C"
+"@58646_8055B72C":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@58649_8055B734"
+"@58649_8055B734":
+
+	.4byte 0x456E6400

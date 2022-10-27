@@ -835,3 +835,23 @@ lbl_8023D584:
 .global "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>Fv":
 /* 8023D5B0 002393F0  4B FF 10 F0 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util101StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common17StateMasterSummon,PQ43scn4step5enemy5Enemy>Fv"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon26challengemastersummonlight6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon26challengemastersummonlight6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon26challengemastersummonlight6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon26challengemastersummonlight6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

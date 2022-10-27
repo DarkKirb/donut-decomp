@@ -106,3 +106,13 @@ lbl_80338ED4:
 /* 80338ED8 00334D18  7C 08 03 A6 */	mtlr r0
 /* 80338EDC 00334D1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80338EE0 00334D20  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50138_80483EA0"
+"@50138_80483EA0":
+
+	.4byte 0x4865726F
+	.4byte 0x47656172
+	.4byte 0x2530326C
+	.4byte 0x75000000

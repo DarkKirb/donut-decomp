@@ -633,3 +633,57 @@ registerToRoot__Q53scn4step7gimmick5ghost5GhostFRQ23g3d4Root:
 /* 8030FB90 0030B9D0  C0 42 C9 38 */	lfs f2, "@54587"@sda21(r2)
 /* 8030FB94 0030B9D4  C0 62 C9 3C */	lfs f3, "@54588"@sda21(r2)
 /* 8030FB98 0030B9D8  4B DA E5 28 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Ghost_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54434"
+"@54434":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F67
+	.4byte 0x686F7374
+	.4byte 0x2F47686F
+	.4byte 0x73740000
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "Offset__19@unnamed@Ghost_cpp@"
+"Offset__19@unnamed@Ghost_cpp@":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54435"
+"@54435":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@54437"
+"@54437":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@54505_8055A6F0"
+"@54505_8055A6F0":
+
+	.4byte 0x446F6F72
+	.4byte 0
+
+.global "@54506"
+"@54506":
+
+	.4byte 0x41707065
+	.4byte 0x61720000
+
+.global "@54507"
+"@54507":
+
+	.4byte 0x476F616C
+	.4byte 0

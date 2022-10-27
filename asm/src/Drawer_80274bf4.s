@@ -1425,3 +1425,25 @@ lbl_80275F60:
 /* 80275F70 00271DB0  7C 08 03 A6 */	mtlr r0
 /* 80275F74 00271DB4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80275F78 00271DB8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "VIEW_PORT_SETTINGS__Q43scn4step4core20@unnamed@Drawer_cpp@"
+"VIEW_PORT_SETTINGS__Q43scn4step4core20@unnamed@Drawer_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000
+	.4byte 0x43A00000
+	.4byte 0x43640000

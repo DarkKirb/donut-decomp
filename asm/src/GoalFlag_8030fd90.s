@@ -108,3 +108,29 @@ lbl_8030FEF4:
 /* 8030FF00 0030BD40  7C 08 03 A6 */	mtlr r0
 /* 8030FF04 0030BD44  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030FF08 0030BD48  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52652_80481310"
+"@52652_80481310":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F476F61
+	.4byte 0x6C466C61
+	.4byte 0x67000000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52653"
+"@52653":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@52655"
+"@52655":
+
+	.4byte 0x4D61696E
+	.4byte 0

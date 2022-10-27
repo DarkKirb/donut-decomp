@@ -139,3 +139,37 @@ viewShip__Q53scn4step7gimmick7monitor7MonitorFv:
 /* 803199E8 00315828  7C 08 03 A6 */	mtlr r0
 /* 803199EC 0031582C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803199F0 00315830  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51935"
+"@51935":
+
+	.4byte 0x73637265
+	.4byte 0x656E3030
+	.4byte 0
+
+.global "@51936"
+"@51936":
+
+	.4byte 0x73637265
+	.4byte 0x656E3033
+	.4byte 0
+
+.global "@52077"
+"@52077":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F4D6F6E
+	.4byte 0x69746F72
+	.4byte 0x30350000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52078"
+"@52078":
+
+	.4byte 0x546F704C
+	.4byte 0

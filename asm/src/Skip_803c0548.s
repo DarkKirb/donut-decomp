@@ -141,3 +141,41 @@ lbl_803C072C:
 /* 803C0734 003BC574  7C 08 03 A6 */	mtlr r0
 /* 803C0738 003BC578  38 21 00 30 */	addi r1, r1, 0x30
 /* 803C073C 003BC57C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52007_80491C98"
+"@52007_80491C98":
+
+	.4byte 0x73746570
+	.4byte 0x2F64656D
+	.4byte 0x6F2F4D61
+	.4byte 0x696E0000
+
+.global "@52009_80491CA8"
+"@52009_80491CA8":
+
+	.4byte 0x44656D6F
+	.4byte 0x536B6970
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52008_8055BD48"
+"@52008_8055BD48":
+
+	.4byte 0x536B6970
+	.4byte 0
+
+.global "@52047_8055BD50"
+"@52047_8055BD50":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52051_8055BD58"
+"@52051_8055BD58":
+
+	.4byte 0x496E0000
+	.4byte 0

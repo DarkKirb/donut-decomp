@@ -199,3 +199,17 @@ procMove__Q53scn4step5enemy8dubiorjr9StateBackFv:
 .global procFixPos__Q53scn4step5enemy8dubiorjr9StateBackFv
 procFixPos__Q53scn4step5enemy8dubiorjr9StateBackFv:
 /* 802AE5E0 002AA420  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy8dubiorjr9StateBack
+__vt__Q53scn4step5enemy8dubiorjr9StateBack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy8dubiorjr9StateBackFv
+	.4byte procAnim__Q53scn4step5enemy8dubiorjr9StateBackFv
+	.4byte procMove__Q53scn4step5enemy8dubiorjr9StateBackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy8dubiorjr9StateBackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

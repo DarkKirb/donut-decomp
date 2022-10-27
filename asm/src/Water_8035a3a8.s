@@ -1275,3 +1275,51 @@ lbl_8035B430:
 .global "__dt__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>Fv"
 "__dt__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>Fv":
 /* 8035B524 00357364  4B ED 31 7C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "CHECK_DEEP_OFFS_ARRAY__19@unnamed@Water_cpp@"
+"CHECK_DEEP_OFFS_ARRAY__19@unnamed@Water_cpp@":
+
+	.4byte 0xBF7AE148
+	.4byte 0x3F7AE148
+	.4byte 0
+	.4byte 0x3F9CCCCD
+	.4byte 0
+	.4byte 0x3F1CCCCD
+	.4byte 0x3F7AE148
+	.4byte 0x3F7AE148
+	.4byte 0x3F9CCCCD
+	.4byte 0
+	.4byte 0x3F1CCCCD
+	.4byte 0
+	.4byte 0x3F7AE148
+	.4byte 0xBF7AE148
+	.4byte 0
+	.4byte 0xBF9CCCCD
+	.4byte 0
+	.4byte 0xBF1CCCCD
+	.4byte 0xBF7AE148
+	.4byte 0xBF7AE148
+	.4byte 0xBF9CCCCD
+	.4byte 0
+	.4byte 0xBF1CCCCD
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>"
+"__vt__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>Fv"
+	.4byte "create__Q24util92StateFactoryArg2<Q24util6IState,Q53scn4step4hero6common9StateJump,PQ43scn4step4hero4Hero,Ul>Fv"
+
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateWaterFloat,PQ43scn4step4hero4Hero>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateWaterFloat,PQ43scn4step4hero4Hero>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateWaterFloat,PQ43scn4step4hero4Hero>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4hero6common15StateWaterFloat,PQ43scn4step4hero4Hero>Fv"

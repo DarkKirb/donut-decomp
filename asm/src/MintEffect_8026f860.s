@@ -388,3 +388,13 @@ RequestND__Q43scn4step5chara10MintEffectFUlUlRCQ33hel4math10Direction3RCQ33hel4m
 "__sinit_@@1MintEffect_cpp":
 /* 8026FD78 0026BBB8  38 6D F1 B8 */	addi r3, r13, "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"@sda21
 /* 8026FD7C 0026BBBC  4B E6 D6 64 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintEffect_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"
+"t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@":
+	.skip 0x8

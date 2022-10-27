@@ -224,3 +224,37 @@ update__Q33scn7history2BGFRCQ33hel4math7Vector3:
 /* 80207290 002030D0  C0 42 A0 90 */	lfs f2, "@53253_80560010"@sda21(r2)
 /* 80207294 002030D4  C0 62 A0 94 */	lfs f3, "@53254_80560014"@sda21(r2)
 /* 80207298 002030D8  4B EB 6E 28 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1BG_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53189"
+"@53189":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x536B7900
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "MODEL_OFFSET__Q33scn7history16@unnamed@BG_cpp@"
+"MODEL_OFFSET__Q33scn7history16@unnamed@BG_cpp@":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53190"
+"@53190":
+
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@53192"
+"@53192":
+
+	.4byte 0x546F704C
+	.4byte 0

@@ -189,3 +189,23 @@ mfCreateMoveLand__Q53scn4step7gimmick9otachidai9OtachidaiFv:
 /* 8031A6AC 003164EC  7C 08 03 A6 */	mtlr r0
 /* 8031A6B0 003164F0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8031A6B4 003164F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53405_80481B90"
+"@53405_80481B90":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F4F7461
+	.4byte 0x63686964
+	.4byte 0x61690000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53406_8055A858"
+"@53406_8055A858":
+
+	.4byte 0x546F704C
+	.4byte 0

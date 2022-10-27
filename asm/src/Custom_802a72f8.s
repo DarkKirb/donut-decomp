@@ -120,3 +120,27 @@ lbl_802A7454:
 /* 802A7464 002A32A4  7C 08 03 A6 */	mtlr r0
 /* 802A7468 002A32A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 802A746C 002A32AC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy4como6Custom
+__vt__Q53scn4step5enemy4como6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy4como6CustomCFv
+	.4byte __dt__Q53scn4step5enemy4como6CustomFv
+	.4byte onInit__Q43scn4step5enemy10CustomBaseFv
+	.4byte onHitPointIsZero__Q53scn4step5enemy4como6CustomFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q53scn4step5enemy4como6CustomFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q53scn4step5enemy4como6CustomFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0

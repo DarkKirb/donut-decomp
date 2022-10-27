@@ -175,3 +175,13 @@ onSetNextStateFactory__Q24util16StateChangerBaseFv:
 /* 80405F08 00401D48  4D 82 00 20 */	beqlr
 /* 80405F0C 00401D4C  4B FF FF AC */	b releaseNextStateFactory__Q24util16StateChangerBaseFv
 /* 80405F10 00401D50  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q24util16StateChangerBase
+__vt__Q24util16StateChangerBase:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q24util16StateChangerBaseFv
+	.4byte 0

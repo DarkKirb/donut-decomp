@@ -471,3 +471,29 @@ isEnableInputs__Q43scn4step4hero3HidCFv:
 /* 80340EB0 0033CCF0  7C 00 00 34 */	cntlzw r0, r0
 /* 80340EB4 0033CCF4  54 03 D9 7E */	srwi r3, r0, 5
 /* 80340EB8 0033CCF8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_BUTTONCONVDATA_WR__17@unnamed@Hid_cpp@"
+"T_BUTTONCONVDATA_WR__17@unnamed@Hid_cpp@":
+
+	.4byte 0x00000008
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000002
+	.4byte 0x00000008
+	.4byte 0x00000100
+	.4byte 0x00000010
+	.4byte 0x00000200
+	.4byte 0x00000020
+	.4byte 0x00000800
+	.4byte 0x00000080
+	.4byte 0x00000800
+	.4byte 0x00000040
+	.4byte 0x00000400
+	.4byte 0x00000200
+	.4byte 0x00001000
+	.4byte 0x00000100

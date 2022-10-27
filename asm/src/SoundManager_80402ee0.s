@@ -558,3 +558,129 @@ final__Q23snd12SoundManagerFv:
 /* 8040362C 003FF46C  7C 08 03 A6 */	mtlr r0
 /* 80403630 003FF470  38 21 00 10 */	addi r1, r1, 0x10
 /* 80403634 003FF474  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@49464"
+"@49464":
+
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x0000000A
+	.4byte 0x00000009
+	.4byte 0x0000000C
+	.4byte 0x0000000B
+	.4byte 0x0000000D
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x00000013
+	.4byte 0x00000015
+	.4byte 0x00000016
+	.4byte 0x00000017
+	.4byte 0x00000018
+	.4byte 0x0000001A
+	.4byte 0x0000001C
+	.4byte 0x00000019
+	.4byte 0x0000001D
+	.4byte 0x00000010
+	.4byte 0x00000011
+	.4byte 0x00000012
+	.4byte 0x00000014
+	.4byte 0x0000001B
+	.4byte 0x00000020
+	.4byte 0x00000021
+	.4byte 0x00000022
+	.4byte 0x00000023
+	.4byte 0x00000024
+	.4byte 0x00000025
+	.4byte 0x00000026
+	.4byte 0x00000027
+	.4byte 0x0000001F
+	.4byte 0x00000028
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50548_80496600"
+"@50548_80496600":
+
+	.4byte 0x736E642F
+	.4byte 0x69756B5F
+	.4byte 0x736F756E
+	.4byte 0x642F4955
+	.4byte 0x4B2E6272
+	.4byte 0x73617200
+
+.global __vt__Q23snd12SoundManager
+__vt__Q23snd12SoundManager:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q23snd12SoundManagerFv
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>8IteratorCFv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A466169
+	.4byte 0x6C656420
+	.4byte 0x61737365
+	.4byte 0x7274696F
+	.4byte 0x6E202149
+	.4byte 0x73456D70
+	.4byte 0x74792829
+	.4byte 0
+
+.global "@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut79LinkList<Q24util58ObjListNode<Q23snd11SERequestor,Q24util16ObjListDummyType>,0>Fv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0

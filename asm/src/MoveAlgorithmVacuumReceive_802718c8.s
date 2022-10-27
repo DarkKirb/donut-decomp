@@ -304,3 +304,11 @@ lbl_80271D20:
 /* 80271D28 0026DB68  7C 08 03 A6 */	mtlr r0
 /* 80271D2C 0026DB6C  38 21 01 40 */	addi r1, r1, 0x140
 /* 80271D30 0026DB70  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51342"
+"@51342":
+
+	.4byte 0x3F800000
+	.4byte 0

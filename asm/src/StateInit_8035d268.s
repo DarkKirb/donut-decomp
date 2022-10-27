@@ -237,3 +237,13 @@ lbl_8035D578:
 /* 8035D584 003593C4  7C 08 03 A6 */	mtlr r0
 /* 8035D588 003593C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8035D58C 003593CC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero8inactive9StateInit
+__vt__Q53scn4step4hero8inactive9StateInit:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero8inactive9StateInitFv
+	.4byte proc__Q53scn4step4hero8inactive9StateInitFv

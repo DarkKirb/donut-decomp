@@ -237,3 +237,37 @@ lbl_802065FC:
 flash__Q33scn10grandtitle6ShadowFv:
 /* 80206650 00202490  80 63 01 B8 */	lwz r3, 0x1b8(r3)
 /* 80206654 00202494  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52146_80460A78"
+"@52146_80460A78":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x65746974
+	.4byte 0x6C652F54
+	.4byte 0x69746C65
+	.4byte 0x5363656E
+	.4byte 0x65000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "G3D_RES_FILE_PATH__Q33scn10grandtitle20@unnamed@Shadow_cpp@"
+"G3D_RES_FILE_PATH__Q33scn10grandtitle20@unnamed@Shadow_cpp@":
+
+	.4byte "@52146_80460A78"
+
+.global "@52859"
+"@52859":
+
+	.4byte 0x53686164
+	.4byte 0x6F770000
+
+.global "@52900_8055843C"
+"@52900_8055843C":
+
+	.4byte 0x546F704C
+	.4byte 0
+	.4byte 0

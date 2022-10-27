@@ -49,3 +49,23 @@ lbl_802E7ED0:
 /* 802E7F28 002E3D68  7C 08 03 A6 */	mtlr r0
 /* 802E7F2C 002E3D6C  38 21 00 30 */	addi r1, r1, 0x30
 /* 802E7F30 002E3D70  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50198_8047D310"
+"@50198_8047D310":
+
+	.4byte 0x53746172
+	.4byte 0x45666665
+	.4byte 0x63740000
+
+.global "@50199_8047D31C"
+"@50199_8047D31C":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F65
+	.4byte 0x6E656D79
+	.4byte 0x2F537461
+	.4byte 0x72456666
+	.4byte 0x65637400

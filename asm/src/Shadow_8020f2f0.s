@@ -252,3 +252,35 @@ update__Q33scn7history6ShadowFRCQ33hel4math7Vector3:
 /* 8020F680 0020B4C0  7C 08 03 A6 */	mtlr r0
 /* 8020F684 0020B4C4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8020F688 0020B4C8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52296_80461568"
+"@52296_80461568":
+
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F53
+	.4byte 0x6861646F
+	.4byte 0x77000000
+
+.global "@52348_80461578"
+"@52348_80461578":
+
+	.4byte 0x4C696768
+	.4byte 0x74456E64
+	.4byte 0
+
+.global "@52351_80461584"
+"@52351_80461584":
+
+	.4byte 0x4C696768
+	.4byte 0x74537461
+	.4byte 0x72740000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52297_80558678"
+"@52297_80558678":
+
+	.4byte 0x53686164
+	.4byte 0x6F774D00

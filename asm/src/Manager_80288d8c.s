@@ -1607,3 +1607,45 @@ lbl_8028A1F0:
 .global "__dt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv"
 "__dt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv":
 /* 8028A278 002860B8  4B FA 44 28 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@59391_80472618"
+"@59391_80472618":
+
+	.4byte 0x456E656D
+	.4byte 0x794D616E
+	.4byte 0x61676572
+	.4byte 0
+
+.global "__vt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>"
+"__vt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv"
+	.4byte "create__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6bouncy11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv"
+
+.global "__vt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6sparky11StatePraise,PQ43scn4step5enemy5Enemy,b>"
+"__vt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6sparky11StatePraise,PQ43scn4step5enemy5Enemy,b>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6sparky11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv"
+	.4byte "create__Q24util97StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6sparky11StatePraise,PQ43scn4step5enemy5Enemy,b>Fv"
+
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common12StateGoodbye,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common12StateGoodbye,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common12StateGoodbye,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6common12StateGoodbye,PQ43scn4step5enemy5Enemy>Fv"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@59392_80559628"
+"@59392_80559628":
+
+	.4byte 0x456E656D
+	.4byte 0x79000000

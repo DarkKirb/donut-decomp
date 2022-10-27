@@ -116,3 +116,39 @@ Func__Q63scn4step7gimmick7monitor9AddOnMint35Mint_ViewNoise_0$54784AddOnMint_cpp
 .global Func__Q63scn4step7gimmick7monitor9AddOnMint31Mint_SeReq_0$54782AddOnMint_cppFRQ26mintvm13MintFuncProxy
 Func__Q63scn4step7gimmick7monitor9AddOnMint31Mint_SeReq_0$54782AddOnMint_cppFRQ26mintvm13MintFuncProxy:
 /* 803193E8 00315228  4B FF FE 90 */	b "t_seReq__Q53scn4step7gimmick7monitor23@unnamed@AddOnMint_cpp@Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54867_80481AC0"
+"@54867_80481AC0":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E47696D
+	.4byte 0x6D69636B
+	.4byte 0x2E4D6F6E
+	.4byte 0x69746F72
+	.4byte 0x2E437573
+	.4byte 0x746F6D00
+	.4byte 0x766F6964
+	.4byte 0x20536552
+	.4byte 0x65712829
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20566965
+	.4byte 0x774E6F69
+	.4byte 0x73652829
+	.4byte 0
+	.4byte 0x766F6964
+	.4byte 0x20566965
+	.4byte 0x77436175
+	.4byte 0x74696F6E
+	.4byte 0x28290000
+	.4byte 0x766F6964
+	.4byte 0x20566965
+	.4byte 0x774D6170
+	.4byte 0x28290000
+	.4byte 0x766F6964
+	.4byte 0x20566965
+	.4byte 0x77536869
+	.4byte 0x70282900

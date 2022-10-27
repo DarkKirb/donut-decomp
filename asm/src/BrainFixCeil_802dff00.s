@@ -143,3 +143,17 @@ lbl_802E0094:
 .global __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv
 __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv:
 /* 802E00D4 002DBF14  4B FB 0F 98 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6shotzo12BrainFixCeil
+__vt__Q53scn4step5enemy6shotzo12BrainFixCeil:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+	.4byte onStart__Q53scn4step5enemy6shotzo12BrainFixCeilFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
+	.4byte 0

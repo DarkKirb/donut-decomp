@@ -221,3 +221,17 @@ lbl_802CB6C8:
 .global __dt__Q53scn4step5enemy7parasol9StateRiseFv
 __dt__Q53scn4step5enemy7parasol9StateRiseFv:
 /* 802CB6DC 002C751C  4B FC 62 DC */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy7parasol9StateRise
+__vt__Q53scn4step5enemy7parasol9StateRise:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy7parasol9StateRiseFv
+	.4byte procAnim__Q53scn4step5enemy7parasol9StateRiseFv
+	.4byte procMove__Q53scn4step5enemy7parasol9StateRiseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy7parasol9StateRiseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -686,3 +686,61 @@ lbl_80383C88:
 /* 80383CCC 0037FB0C  C0 42 D5 40 */	lfs f2, "@60835"@sda21(r2)
 /* 80383CD0 0037FB10  FC 60 08 90 */	fmr f3, f1
 /* 80383CD4 0037FB14  4B D3 A3 EC */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1StateWarpStarIn_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@60738"
+"@60738":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F576172
+	.4byte 0x70537461
+	.4byte 0x72000000
+
+.global "__vt__Q24util102StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick17StateWarpStarFall,PQ43scn4step4hero4Hero,Ul>"
+"__vt__Q24util102StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick17StateWarpStarFall,PQ43scn4step4hero4Hero,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util102StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick17StateWarpStarFall,PQ43scn4step4hero4Hero,Ul>Fv"
+	.4byte "create__Q24util102StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick17StateWarpStarFall,PQ43scn4step4hero4Hero,Ul>Fv"
+
+.global __vt__Q53scn4step4hero7gimmick15StateWarpStarIn
+__vt__Q53scn4step4hero7gimmick15StateWarpStarIn:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procAnim__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procMove__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procConstraint__Q53scn4step4hero7gimmick15StateWarpStarInFv
+	.4byte procFixPos__Q43scn4step4hero9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "TARGET_OFFSET__29@unnamed@StateWarpStarIn_cpp@"
+"TARGET_OFFSET__29@unnamed@StateWarpStarIn_cpp@":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@60737"
+"@60737":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@60739"
+"@60739":
+
+	.4byte 0x416E696D
+	.4byte 0x4C000000

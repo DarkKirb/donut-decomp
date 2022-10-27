@@ -649,3 +649,15 @@ lbl_803CF8B8:
 /* 803CF8C0 003CB700  7C 08 03 A6 */	mtlr r0
 /* 803CF8C4 003CB704  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CF8C8 003CB708  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51067"
+"@51067":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F537069
+	.4byte 0x72616C53
+	.4byte 0x63726565
+	.4byte 0x6E000000

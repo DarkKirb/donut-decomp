@@ -269,3 +269,33 @@ lbl_8031A058:
 /* 8031A060 00315EA0  7C 08 03 A6 */	mtlr r0
 /* 8031A064 00315EA4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8031A068 00315EA8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54149"
+"@54149":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F45
+	.4byte 0x66666563
+	.4byte 0x744C6F63
+	.4byte 0x61746F72
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54150"
+"@54150":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@54151"
+"@54151":
+
+	.4byte 0x546F704C
+	.4byte 0

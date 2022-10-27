@@ -34,3 +34,37 @@ __ct__Q33scn10grandtitle11MintManagerFv:
 /* 80205D38 00201B78  7C 08 03 A6 */	mtlr r0
 /* 80205D3C 00201B7C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80205D40 00201B80  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51597_80460990"
+"@51597_80460990":
+
+	.4byte 0x53636E2E
+	.4byte 0x4772616E
+	.4byte 0x64546974
+	.4byte 0x6C650000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51594_80558418"
+"@51594_80558418":
+
+	.4byte 0x41707000
+
+.global "@51595_8055841C"
+"@51595_8055841C":
+
+	.4byte 0x474F626A
+	.4byte 0
+
+.global "@51596_80558424"
+"@51596_80558424":
+
+	.4byte 0x48454C00
+
+.global "@51598_80558428"
+"@51598_80558428":
+
+	.4byte 0x536E6400
+	.4byte 0

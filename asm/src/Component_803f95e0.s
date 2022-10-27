@@ -391,3 +391,43 @@ lbl_803F9B3C:
 /* 803F9B4C 003F598C  7C 08 03 A6 */	mtlr r0
 /* 803F9B50 003F5990  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F9B54 003F5994  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55625_80495F40"
+"@55625_80495F40":
+
+	.4byte 0x73746166
+	.4byte 0x66637265
+	.4byte 0x6469742F
+	.4byte 0x50617261
+	.4byte 0x6D000000
+	.4byte 0x73746166
+	.4byte 0x66637265
+	.4byte 0x64697473
+	.4byte 0x2F4D6169
+	.4byte 0x6E000000
+	.4byte 0x54657874
+	.4byte 0x42617365
+	.4byte 0x4E000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55627"
+"@55627":
+
+	.4byte 0x42617365
+	.4byte 0

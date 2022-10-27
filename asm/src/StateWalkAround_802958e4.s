@@ -262,3 +262,17 @@ lbl_80295C3C:
 /* 80295C54 00291A94  7C 08 03 A6 */	mtlr r0
 /* 80295C58 00291A98  38 21 00 70 */	addi r1, r1, 0x70
 /* 80295C5C 00291A9C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6common15StateWalkAround
+__vt__Q53scn4step5enemy6common15StateWalkAround:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6common15StateWalkAroundFv
+	.4byte procAnim__Q53scn4step5enemy6common15StateWalkAroundFv
+	.4byte procMove__Q53scn4step5enemy6common15StateWalkAroundFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy6common15StateWalkAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

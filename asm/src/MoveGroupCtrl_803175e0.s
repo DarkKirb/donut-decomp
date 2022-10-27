@@ -2000,3 +2000,27 @@ lbl_80319188:
 /* 8031918C 00314FCC  38 04 00 01 */	addi r0, r4, 0x1
 /* 80319190 00314FD0  B0 03 00 04 */	sth r0, 0x4(r3)
 /* 80319194 00314FD4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27@unnamed@MoveGroupCtrl_cpp@"
+"t_VibrationSize__Q53scn4step7gimmick13movegroupctrl27@unnamed@MoveGroupCtrl_cpp@":
+
+	.4byte 0
+	.4byte 0x3CF5C28F
+	.4byte 0x3D75C28F
+	.4byte 0x3DF5C28F
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl
+__vt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrl:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.4byte onSwitchOn__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.4byte onSwitchOff__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
+	.4byte onSwitchToggle__Q43scn4step7gimmick14SwitchReceiverFv
+	.4byte onSwitchOnFromSuperBeamSwitch__Q43scn4step7gimmick14SwitchReceiverFv
+	.4byte checkDemoPos__Q43scn4step7gimmick14SwitchReceiverCFRQ33hel4math7Vector2

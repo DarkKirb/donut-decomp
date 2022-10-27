@@ -621,3 +621,33 @@ GetRuntimeTypeInfo__Q53scn4step5enemy10parasoldoo6CustomCFv:
 "@8@__dt__Q53scn4step5enemy10parasoldoo6CustomFv":
 /* 802CE474 002CA2B4  38 63 FF F8 */	addi r3, r3, -0x8
 /* 802CE478 002CA2B8  4B FF F8 24 */	b __dt__Q53scn4step5enemy10parasoldoo6CustomFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10parasoldoo6Custom
+__vt__Q53scn4step5enemy10parasoldoo6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy10parasoldoo6CustomCFv
+	.4byte __dt__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onInit__Q43scn4step5enemy10CustomBaseFv
+	.4byte onHitPointIsZero__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onVacuumReceive__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onInWater__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onDead__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte onProcFixPos__Q53scn4step5enemy10parasoldoo6CustomFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0
+	.4byte 0
+	.4byte "@8@__dt__Q53scn4step5enemy10parasoldoo6CustomFv"
+	.4byte "@8@onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom"
+	.4byte "@8@onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom"
+	.4byte onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
+	.4byte onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom

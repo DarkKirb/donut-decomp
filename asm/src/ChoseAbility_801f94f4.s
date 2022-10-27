@@ -318,3 +318,51 @@ preLoadStage__Q43scn17challengetutorial4info12ChoseAbilityFv:
 /* 801F9934 001F5774  7C 08 03 A6 */	mtlr r0
 /* 801F9938 001F5778  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F993C 001F577C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53002_8045FC98"
+"@53002_8045FC98":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x65616269
+	.4byte 0x6C697479
+	.4byte 0x2F4D6169
+	.4byte 0x6E000000
+
+.global "@53003_8045FCB0"
+"@53003_8045FCB0":
+
+	.4byte 0x4162696C
+	.4byte 0x69747946
+	.4byte 0x72616D65
+	.4byte 0
+
+.global "@53105_8045FCC0"
+"@53105_8045FCC0":
+
+	.4byte 0x436C6F73
+	.4byte 0x65536861
+	.4byte 0x646F7700
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53004_80558150"
+"@53004_80558150":
+
+	.4byte 0x4672616D
+	.4byte 0x654E0000
+
+.global "@53086_80558158"
+"@53086_80558158":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@53104_80558160"
+"@53104_80558160":
+
+	.4byte 0x456E6400
+	.4byte 0

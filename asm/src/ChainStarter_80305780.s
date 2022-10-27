@@ -89,3 +89,17 @@ onSwitchOn__Q53scn4step7gimmick12chainstarter12ChainStarterFv:
 /* 803058AC 003016EC  7C 08 03 A6 */	mtlr r0
 /* 803058B0 003016F0  38 21 00 20 */	addi r1, r1, 0x20
 /* 803058B4 003016F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick12chainstarter12ChainStarter
+__vt__Q53scn4step7gimmick12chainstarter12ChainStarter:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick12chainstarter12ChainStarterFv
+	.4byte onSwitchOn__Q53scn4step7gimmick12chainstarter12ChainStarterFv
+	.4byte onSwitchOff__Q43scn4step7gimmick14SwitchReceiverFv
+	.4byte onSwitchToggle__Q43scn4step7gimmick14SwitchReceiverFv
+	.4byte onSwitchOnFromSuperBeamSwitch__Q43scn4step7gimmick14SwitchReceiverFv
+	.4byte checkDemoPos__Q43scn4step7gimmick14SwitchReceiverCFRQ33hel4math7Vector2

@@ -62,3 +62,17 @@ lbl_8029F1C0:
 .global __dt__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv
 __dt__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv:
 /* 8029F1E0 0029B020  4B FF 1E 8C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit
+__vt__Q53scn4step5enemy10brontoburt16BrainWaitPursuit:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv
+	.4byte onStart__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv
+	.4byte onRecover__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
+	.4byte 0

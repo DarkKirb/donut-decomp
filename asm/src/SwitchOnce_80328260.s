@@ -63,3 +63,27 @@ onChangeOffToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv:
 .global onChangeToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv
 onChangeToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv:
 /* 80328308 00324148  4B FF FB 7C */	b sendSwitchOn__Q53scn4step7gimmick8switch_n6SwitchFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick8switch_n10SwitchOnce
+__vt__Q53scn4step7gimmick8switch_n10SwitchOnce:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick8switch_n10SwitchOnceFv
+	.4byte isChangeToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv
+	.4byte isChangeToOff__Q53scn4step7gimmick8switch_n10SwitchOnceFv
+	.4byte onChangeOffToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv
+	.4byte onChangeToOn__Q53scn4step7gimmick8switch_n10SwitchOnceFv
+	.4byte onChangeOnToOff__Q53scn4step7gimmick8switch_n6SwitchFv
+	.4byte onChangeToOff__Q53scn4step7gimmick8switch_n6SwitchFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52477"
+"@52477":
+
+	.4byte 0x4F6E6365
+	.4byte 0

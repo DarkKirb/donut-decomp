@@ -605,3 +605,19 @@ lbl_8037C1C0:
 /* 8037C1C8 00378008  7C 08 03 A6 */	mtlr r0
 /* 8037C1CC 0037800C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8037C1D0 00378010  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero7gimmick16StateChallengeIn
+__vt__Q53scn4step4hero7gimmick16StateChallengeIn:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7gimmick16StateChallengeInFv
+	.4byte procAnim__Q53scn4step4hero7gimmick16StateChallengeInFv
+	.4byte procMove__Q53scn4step4hero7gimmick16StateChallengeInFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick16StateChallengeInFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

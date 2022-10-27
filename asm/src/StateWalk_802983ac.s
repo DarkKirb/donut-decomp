@@ -74,3 +74,17 @@ procMove__Q53scn4step5enemy11bladeknight9StateWalkFv:
 .global procFixPos__Q53scn4step5enemy11bladeknight9StateWalkFv
 procFixPos__Q53scn4step5enemy11bladeknight9StateWalkFv:
 /* 80298494 002942D4  4B FF D9 9C */	b procFixPos__Q53scn4step5enemy6common17StateWalkStraightFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy11bladeknight9StateWalk
+__vt__Q53scn4step5enemy11bladeknight9StateWalk:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy11bladeknight9StateWalkFv
+	.4byte procAnim__Q53scn4step5enemy11bladeknight9StateWalkFv
+	.4byte procMove__Q53scn4step5enemy11bladeknight9StateWalkFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11bladeknight9StateWalkFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

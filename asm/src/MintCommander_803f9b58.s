@@ -19,3 +19,13 @@ Obj__Q33scn11staffcredit13MintCommanderFv:
 "__sinit_@@1MintCommander_cpp":
 /* 803F9B74 003F59B4  38 6D FA 80 */	addi r3, r13, "t_obj__Q33scn11staffcredit27@unnamed@MintCommander_cpp@"@sda21
 /* 803F9B78 003F59B8  4B CE 38 68 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintCommander_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q33scn11staffcredit27@unnamed@MintCommander_cpp@"
+"t_obj__Q33scn11staffcredit27@unnamed@MintCommander_cpp@":
+	.skip 0x8

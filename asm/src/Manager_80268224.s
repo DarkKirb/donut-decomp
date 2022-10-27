@@ -1525,3 +1525,99 @@ lbl_80269634:
 /* 8026964C 0026548C  7C 08 03 A6 */	mtlr r0
 /* 80269650 00265490  38 21 00 20 */	addi r1, r1, 0x20
 /* 80269654 00265494  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_SCORE_KIND_INFO_TABLE__21@unnamed@Manager_cpp@"
+"T_SCORE_KIND_INFO_TABLE__21@unnamed@Manager_cpp@":
+
+	.4byte 0x00000127
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resFile100__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte incCoinSCount__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0x00000128
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resFile1000__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte incCoinLCount__Q43scn4step9challenge7ManagerFv
+	.4byte 0x01000000
+	.4byte 0x00000126
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resFile50__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte incEnemyCount__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0x00000128
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resFile1000__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte incEnemyLCount__Q43scn4step9challenge7ManagerFv
+	.4byte 0x01000000
+	.4byte 0x00000244
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte resFile100Minus__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte incDamageScore__Q43scn4step9challenge7ManagerFv
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F43
+	.4byte 0x68616C6C
+	.4byte 0x656E6765
+	.4byte 0
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F696E66
+	.4byte 0x6F2F7363
+	.4byte 0x6F72652F
+	.4byte 0x53636F72
+	.4byte 0x65353000
+	.4byte 0x73746570
+	.4byte 0x2F696E66
+	.4byte 0x6F2F7363
+	.4byte 0x6F72652F
+	.4byte 0x53636F72
+	.4byte 0x65313030
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F696E66
+	.4byte 0x6F2F7363
+	.4byte 0x6F72652F
+	.4byte 0x53636F72
+	.4byte 0x65313030
+	.4byte 0x30000000
+	.4byte 0x73746570
+	.4byte 0x2F696E66
+	.4byte 0x6F2F7363
+	.4byte 0x6F72652F
+	.4byte 0x53636F72
+	.4byte 0x65313030
+	.4byte 0x6D696E75
+	.4byte 0x73000000
+
+.global "@55626_8046B370"
+"@55626_8046B370":
+
+	.4byte lbl_80268600
+	.4byte lbl_8026866C
+	.4byte lbl_802685DC
+	.4byte lbl_8026866C
+	.4byte lbl_80268600
+	.4byte lbl_802685E8
+	.4byte lbl_80268618
+	.4byte lbl_8026860C
+	.4byte lbl_8026860C
+	.4byte lbl_802685F4

@@ -326,3 +326,17 @@ lbl_802C1114:
 /* 802C112C 002BCF6C  7C 08 03 A6 */	mtlr r0
 /* 802C1130 002BCF70  38 21 00 90 */	addi r1, r1, 0x90
 /* 802C1134 002BCF74  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10knucklejoe9StateWalk
+__vt__Q53scn4step5enemy10knucklejoe9StateWalk:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10knucklejoe9StateWalkFv
+	.4byte procAnim__Q53scn4step5enemy10knucklejoe9StateWalkFv
+	.4byte procMove__Q53scn4step5enemy10knucklejoe9StateWalkFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10knucklejoe9StateWalkFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

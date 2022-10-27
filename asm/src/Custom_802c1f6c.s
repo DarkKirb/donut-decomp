@@ -174,3 +174,39 @@ GetRuntimeTypeInfo__Q53scn4step5enemy6lanzer6CustomCFv:
 .global __dt__Q53scn4step5enemy6lanzer6CustomFv
 __dt__Q53scn4step5enemy6lanzer6CustomFv:
 /* 802C2184 002BDFC4  4B FD 44 4C */	b __dt__Q53scn4step5enemy8armordee6CustomFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy6lanzer6Custom
+__vt__Q53scn4step5enemy6lanzer6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy6lanzer6CustomCFv
+	.4byte __dt__Q53scn4step5enemy6lanzer6CustomFv
+	.4byte onInit__Q53scn4step5enemy6lanzer6CustomFv
+	.4byte onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q53scn4step5enemy6lanzer6CustomFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55826_8055A130"
+"@55826_8055A130":
+
+	.4byte 0xC2B40000
+
+.global "@55827_8055A134"
+"@55827_8055A134":
+
+	.4byte 0x42B40000

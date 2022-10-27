@@ -60,3 +60,17 @@ lbl_802DCC2C:
 .global __dt__Q53scn4step5enemy5sheld11BrainEscapeFv
 __dt__Q53scn4step5enemy5sheld11BrainEscapeFv:
 /* 802DCC4C 002D8A8C  4B FB 44 20 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5sheld11BrainEscape
+__vt__Q53scn4step5enemy5sheld11BrainEscape:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5sheld11BrainEscapeFv
+	.4byte onStart__Q43scn4step5enemy9BrainBaseFv
+	.4byte onRecover__Q43scn4step5enemy9BrainBaseFv
+	.4byte onLanding__Q53scn4step5enemy5sheld11BrainEscapeFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
+	.4byte 0

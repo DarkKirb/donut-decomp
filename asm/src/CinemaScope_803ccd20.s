@@ -70,3 +70,31 @@ isNeedToDraw__Q43scn4step3sfx11CinemaScopeCFv:
 .global draw__Q43scn4step3sfx11CinemaScopeFv
 draw__Q43scn4step3sfx11CinemaScopeFv:
 /* 803CCDE8 003C8C28  48 03 39 8C */	b draw__Q23sfx16CinemaScopeModelFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51630"
+"@51630":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F435341
+	.4byte 0x72726F77
+	.4byte 0
+	.4byte 0
+
+.global "@51631_80492C28"
+"@51631_80492C28":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F435354
+	.4byte 0x616C6B00
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25@unnamed@CinemaScope_cpp@"
+"T_CINEMASCOPE_FILE_PATH_TABLE__Q43scn4step3sfx25@unnamed@CinemaScope_cpp@":
+
+	.4byte "@51630"
+	.4byte "@51631_80492C28"

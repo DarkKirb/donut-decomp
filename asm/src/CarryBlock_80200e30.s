@@ -106,3 +106,37 @@ update__Q33scn10grandtitle10CarryBlockFv:
 /* 80200FB8 001FCDF8  7C 08 03 A6 */	mtlr r0
 /* 80200FBC 001FCDFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80200FC0 001FCE00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51790"
+"@51790":
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F42
+	.4byte 0x6C6F636B
+	.4byte 0x53746172
+	.4byte 0
+
+.global "@52260"
+"@52260":
+
+	.4byte 0x43413342
+	.4byte 0x6F64794A
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "G3D_RES_FILE_PATH__Q33scn10grandtitle24@unnamed@CarryBlock_cpp@"
+"G3D_RES_FILE_PATH__Q33scn10grandtitle24@unnamed@CarryBlock_cpp@":
+
+	.4byte "@51790"
+
+.global "@52259"
+"@52259":
+
+	.4byte 0x546F704C
+	.4byte 0
+	.4byte 0

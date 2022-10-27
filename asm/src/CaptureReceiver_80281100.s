@@ -792,3 +792,105 @@ setIsDeadRelease__Q43scn4step5enemy15CaptureReceiverFb:
 isIgnoredNonSuper__Q43scn4step5enemy15CaptureReceiverCFv:
 /* 80281B4C 0027D98C  88 63 00 2D */	lbz r3, 0x2d(r3)
 /* 80281B50 0027D990  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut93LinkList<Q24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>,0>FPQ24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut93LinkList<Q24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>,0>FPQ24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut93LinkList<Q24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>,0>FPQ24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut93LinkList<Q24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>,0>FPQ24util72ObjListNode<Q43scn4step4hero15CaptureAttacker,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0"
+"@STRING@GetPointerFromNode__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetPointerFromNode__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode"
+"@STRING@GetPointerFromNode__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>FPQ34nw4r2ut12LinkListNode":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@__ml__Q44nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>8IteratorCFv@0"
+"@STRING@__ml__Q44nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>8IteratorCFv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@__ml__Q44nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>8IteratorCFv"
+"@STRING@__ml__Q44nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>8IteratorCFv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetBack__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>Fv@0"
+"@STRING@GetBack__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>Fv@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A466169
+	.4byte 0x6C656420
+	.4byte 0x61737365
+	.4byte 0x7274696F
+	.4byte 0x6E202149
+	.4byte 0x73456D70
+	.4byte 0x74792829
+	.4byte 0
+
+.global "@STRING@GetBack__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>Fv"
+"@STRING@GetBack__Q34nw4r2ut94LinkList<Q24util73ObjListNode<Q43scn4step5enemy15CaptureReceiver,Q24util16ObjListDummyType>,0>Fv":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000

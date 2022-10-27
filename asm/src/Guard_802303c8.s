@@ -71,3 +71,17 @@ lbl_80230494:
 /* 802304AC 0022C2EC  7C 08 03 A6 */	mtlr r0
 /* 802304B0 0022C2F0  38 21 00 40 */	addi r1, r1, 0x40
 /* 802304B4 0022C2F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19@unnamed@Guard_cpp@"
+"T_DAMAGE_PASS_RATE_TABLE__Q43scn4step4boss19@unnamed@Guard_cpp@":
+
+	.4byte 0x3F800000
+	.4byte 0x3F333333
+	.4byte 0x3F000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E99999A
+	.4byte 0x3E4CCCCD
+	.4byte 0
+	.4byte 0

@@ -474,3 +474,15 @@ isRight__Q43scn9grandmenu4menu5InputCFv:
 /* 803F5B18 003F1958  30 03 FF FF */	addic r0, r3, -0x1
 /* 803F5B1C 003F195C  7C 60 19 10 */	subfe r3, r0, r3
 /* 803F5B20 003F1960  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51081"
+"@51081":
+
+	.4byte 0x6261645F
+	.4byte 0x66756E63
+	.4byte 0x74696F6E
+	.4byte 0x5F63616C
+	.4byte 0x6C000000
+	.4byte 0

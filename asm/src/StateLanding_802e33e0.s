@@ -106,3 +106,17 @@ lbl_802E3528:
 /* 802E3534 002DF374  7C 08 03 A6 */	mtlr r0
 /* 802E3538 002DF378  38 21 00 40 */	addi r1, r1, 0x40
 /* 802E353C 002DF37C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy11sisterbound12StateLanding
+__vt__Q53scn4step5enemy11sisterbound12StateLanding:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procAnim__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy11sisterbound12StateLandingFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

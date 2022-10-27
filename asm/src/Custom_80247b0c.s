@@ -121,3 +121,39 @@ __dt__Q53scn4step4boss12creditdedede6CustomFv:
 .global "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>Fv"
 "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>Fv":
 /* 80247C54 00243A94  4B FE 6A 4C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step4boss12creditdedede9StateHide,PQ43scn4step4boss4Boss>Fv"
+
+.global __vt__Q53scn4step4boss12creditdedede6Custom
+__vt__Q53scn4step4boss12creditdedede6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step4boss12creditdedede6CustomCFv
+	.4byte __dt__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onInit__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onAppear__Q43scn4step4boss10CustomBaseFv
+	.4byte onStart__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onDamage__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onDead__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onProcMove__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onProcFixPos__Q53scn4step4boss12creditdedede6CustomFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
+	.4byte 0

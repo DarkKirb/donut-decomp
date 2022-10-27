@@ -118,3 +118,15 @@ lbl_803C541C:
 /* 803C5424 003C1264  7C 08 03 A6 */	mtlr r0
 /* 803C5428 003C1268  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C542C 003C126C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4item9SuperStop
+__vt__Q43scn4step4item9SuperStop:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4item9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step4item9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte 0

@@ -323,3 +323,123 @@ lbl_803AFACC:
 /* 803AFAD4 003AB914  7C 08 03 A6 */	mtlr r0
 /* 803AFAD8 003AB918  38 21 00 10 */	addi r1, r1, 0x10
 /* 803AFADC 003AB91C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@53080_8041FDD8"
+"@53080_8041FDD8":
+
+	.4byte "@53076_8055B680"
+	.4byte "@53077_8055B688"
+	.4byte "@53078_8055B690"
+	.4byte "@53079_8055B694"
+
+.global "@53090_8041FDE8"
+"@53090_8041FDE8":
+
+	.4byte "@53076_8055B680"
+	.4byte "@53077_8055B688"
+	.4byte "@53078_8055B690"
+	.4byte "@53079_8055B694"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53551_8048FF98"
+"@53551_8048FF98":
+
+	.4byte 0x73746570
+	.4byte 0x2F67616D
+	.4byte 0x652F4D61
+	.4byte 0x696E0000
+	.4byte 0x4E657874
+	.4byte 0x4172726F
+	.4byte 0x77426173
+	.4byte 0x65000000
+	.4byte 0x4E657874
+	.4byte 0x4172726F
+	.4byte 0x77000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53076_8055B680"
+"@53076_8055B680":
+
+	.4byte 0x52696768
+	.4byte 0x744E0000
+
+.global "@53077_8055B688"
+"@53077_8055B688":
+
+	.4byte 0x4C656674
+	.4byte 0x4E000000
+
+.global "@53078_8055B690"
+"@53078_8055B690":
+
+	.4byte 0x55704E00
+
+.global "@53079_8055B694"
+"@53079_8055B694":
+
+	.4byte 0x446F776E
+	.4byte 0x4E000000
+
+.global "@53554_8055B69C"
+"@53554_8055B69C":
+
+	.4byte 0x52696768
+	.4byte 0x744E0000
+
+.global "@53555_8055B6A4"
+"@53555_8055B6A4":
+
+	.4byte 0x4C656674
+	.4byte 0x4E000000
+
+.global "@53556_8055B6AC"
+"@53556_8055B6AC":
+
+	.4byte 0x55704E00
+
+.global "@53557_8055B6B0"
+"@53557_8055B6B0":
+
+	.4byte 0x446F776E
+	.4byte 0x4E000000
+
+.global "@53599"
+"@53599":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53600"
+"@53600":
+
+	.4byte 0x53746172
+	.4byte 0x74520000
+
+.global "@53601"
+"@53601":
+
+	.4byte 0x57616974
+	.4byte 0x52000000
+
+.global "@53612"
+"@53612":
+
+	.4byte 0x456E6452
+	.4byte 0

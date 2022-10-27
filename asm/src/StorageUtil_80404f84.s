@@ -155,3 +155,13 @@ hasAllPlatinumMedal__Q27storage11StorageUtilCFi:
 /* 80405188 00400FC8  7C 08 03 A6 */	mtlr r0
 /* 8040518C 00400FCC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80405190 00400FD0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49178_804966D0"
+"@49178_804966D0":
+
+	.4byte 0x73746F72
+	.4byte 0x6167652F
+	.4byte 0x50617261
+	.4byte 0x6D000000

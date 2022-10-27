@@ -21,3 +21,13 @@ onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger:
 /* 803C5294 003C10D4  7C 08 03 A6 */	mtlr r0
 /* 803C5298 003C10D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C529C 003C10DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4item13StateCallback
+__vt__Q43scn4step4item13StateCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4item13StateCallbackFv
+	.4byte onStateChanged__Q43scn4step4item13StateCallbackFRCQ24util13IStateChanger

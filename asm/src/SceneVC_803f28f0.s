@@ -171,3 +171,29 @@ lbl_803F2B00:
 /* 803F2B10 003EE950  7C 08 03 A6 */	mtlr r0
 /* 803F2B14 003EE954  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F2B18 003EE958  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q33scn2vc7SceneVC
+__vt__Q33scn2vc7SceneVC:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q33scn2vc7SceneVCCFv
+	.4byte __dt__Q33scn2vc7SceneVCFv
+	.4byte updateMain__Q33scn2vc7SceneVCFv
+	.4byte updateUseGPU__Q33scn2vc7SceneVCFv
+	.4byte updateDebug__Q33scn2vc7SceneVCFv
+	.4byte draw__Q33scn2vc7SceneVCFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn2vc7SceneVCCFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q33scn2vc7SceneVC>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q33scn2vc7SceneVC>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q33scn2vc7SceneVC>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q33scn2vc7SceneVC>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

@@ -735,3 +735,75 @@ reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv:
 .global "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>Fv"
 "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>Fv":
 /* 80236588 002323C8  4B FF 81 18 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common18StateVacuumReceive,PQ43scn4step4boss4Boss>Fv"
+
+.global __vt__Q43scn4step4boss14VacuumReceiver
+__vt__Q43scn4step4boss14VacuumReceiver:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4boss14VacuumReceiverFv
+	.4byte chkVacuum__Q43scn4step4boss14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.4byte prechkVacuum__Q43scn4step4boss14VacuumReceiverFRCQ33hel3geo4Rect
+	.4byte reqDeadEnf__Q43scn4step4boss14VacuumReceiverFv
+	.4byte reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte "setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle<Q43scn4step6weapon6Weapon>UlUl"
+	.4byte chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.4byte isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.4byte setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.4byte deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.4byte isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.4byte drawDebug__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte handle__Q43scn4step6vacuum12ReceiverBaseFv
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut88LinkList<Q24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>,0>FPQ24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut88LinkList<Q24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>,0>FPQ24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut88LinkList<Q24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>,0>FPQ24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut88LinkList<Q24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>,0>FPQ24util67ObjListNode<Q43scn4step6vacuum9IReceiver,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut87LinkList<Q24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>,0>FPQ24util66ObjListNode<Q43scn4step6vacuum8Attacker,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000

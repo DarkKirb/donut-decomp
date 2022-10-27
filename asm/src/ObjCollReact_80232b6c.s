@@ -760,3 +760,73 @@ lbl_80233590:
 /* 802335B4 0022F3F4  7C 08 03 A6 */	mtlr r0
 /* 802335B8 0022F3F8  38 21 01 10 */	addi r1, r1, 0x110
 /* 802335BC 0022F3FC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_HITEFFECT_TABLE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@"
+"T_HITEFFECT_TABLE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x00000072
+	.4byte 0x00000071
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007B
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x00000072
+	.4byte 0x0000007C
+	.4byte 0x00000073
+	.4byte 0x00000075
+	.4byte 0x00000075
+	.4byte 0x00000078
+	.4byte 0x00000072
+	.4byte 0x00000076
+
+.global "T_HITSE_TABLE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@"
+"T_HITSE_TABLE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x000001E5
+	.4byte 0x000001E5
+	.4byte 0x000001EB
+	.4byte 0x000001E9
+	.4byte 0x000001E8
+	.4byte 0x000001E7
+	.4byte 0x0000016F
+	.4byte 0x000001A4
+	.4byte 0x000001A4
+	.4byte 0x000001EA
+	.4byte 0x000001D8
+	.4byte 0x000001E8
+	.4byte 0x000001A5
+	.4byte 0x00000257
+	.4byte 0x000001E3
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@"
+"T_DAMAGERATE_BY_PLAYERCOUNT__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F4CCCCD
+	.4byte 0x3F400000
+	.4byte 0x3F333333
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "T_DAMAGERATE_BY_PILE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@"
+"T_DAMAGERATE_BY_PILE__Q43scn4step4boss26@unnamed@ObjCollReact_cpp@":
+
+	.4byte 0x3F800000
+	.4byte 0x3F400000

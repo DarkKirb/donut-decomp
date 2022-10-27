@@ -152,3 +152,15 @@ lbl_802F7BA8:
 /* 802F7BB0 002F39F0  7C 08 03 A6 */	mtlr r0
 /* 802F7BB4 002F39F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 802F7BB8 002F39F8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step7gimmick9SuperStop
+__vt__Q43scn4step7gimmick9SuperStop:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step7gimmick9SuperStopFv
+	.4byte onSuperStopStarted__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte onSuperStopFinished__Q43scn4step7gimmick9SuperStopFRCQ43scn4step6spstop7Manager
+	.4byte 0

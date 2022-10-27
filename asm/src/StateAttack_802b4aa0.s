@@ -383,3 +383,17 @@ lbl_802B4FE4:
 /* 802B4FEC 002B0E2C  7C 08 03 A6 */	mtlr r0
 /* 802B4FF0 002B0E30  38 21 00 40 */	addi r1, r1, 0x40
 /* 802B4FF4 002B0E34  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5foley11StateAttack
+__vt__Q53scn4step5enemy5foley11StateAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5foley11StateAttackFv
+	.4byte procAnim__Q53scn4step5enemy5foley11StateAttackFv
+	.4byte procMove__Q53scn4step5enemy5foley11StateAttackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5foley11StateAttackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

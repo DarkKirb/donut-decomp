@@ -671,3 +671,111 @@ isTargetScoreEnd__Q53scn4step4info5lvmap5FrameCFv:
 /* 803BDF0C 003B9D4C  7C 08 03 A6 */	mtlr r0
 /* 803BDF10 003B9D50  38 21 00 10 */	addi r1, r1, 0x10
 /* 803BDF14 003B9D54  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53212_80491710"
+"@53212_80491710":
+
+	.4byte 0x73746570
+	.4byte 0x2F6C766D
+	.4byte 0x61702F43
+	.4byte 0x7574696E
+	.4byte 0x616E696D
+	.4byte 0x65000000
+	.4byte 0x546F7461
+	.4byte 0x6C53636F
+	.4byte 0x72654E00
+	.4byte 0x54617267
+	.4byte 0x65745363
+	.4byte 0x6F726542
+	.4byte 0x6173654E
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x54657874
+	.4byte 0x4E000000
+	.4byte 0x5469746C
+	.4byte 0x65546578
+	.4byte 0x74000000
+	.4byte 0x4C762564
+	.4byte 0x5469746C
+	.4byte 0x65000000
+	.4byte 0x5469746C
+	.4byte 0x65546578
+	.4byte 0x74536800
+	.4byte 0x4C762564
+	.4byte 0x41726561
+	.4byte 0x54657874
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x41726561
+	.4byte 0x54657874
+	.4byte 0x53680000
+	.4byte 0x4C762564
+	.4byte 0x4D61704E
+	.4byte 0x616D6554
+	.4byte 0x65787400
+	.4byte 0x4C762564
+	.4byte 0x5469746C
+	.4byte 0x654D6169
+	.4byte 0x6E5F3030
+	.4byte 0
+	.4byte 0x4C762564
+	.4byte 0x4D61704E
+	.4byte 0x616D6554
+	.4byte 0x65787453
+	.4byte 0x68000000
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53213_8055BBF0"
+"@53213_8055BBF0":
+
+	.4byte 0x4672616D
+	.4byte 0x65000000
+
+.global "@53221_8055BBF8"
+"@53221_8055BBF8":
+
+	.4byte 0x4C762564
+	.4byte 0
+
+.global "@53310_8055BC00"
+"@53310_8055BC00":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@53322"
+"@53322":
+
+	.4byte 0x496E0000
+
+.global "@53330_8055BC0C"
+"@53330_8055BC0C":
+
+	.4byte 0x496E5300
+
+.global "@53337_8055BC10"
+"@53337_8055BC10":
+
+	.4byte 0x4F757400
+
+.global "@53344_8055BC14"
+"@53344_8055BC14":
+
+	.4byte 0x4F757453
+	.4byte 0
+	.4byte 0

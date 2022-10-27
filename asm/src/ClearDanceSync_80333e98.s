@@ -165,3 +165,23 @@ lbl_80334080:
 /* 8033408C 0032FECC  7C 08 03 A6 */	mtlr r0
 /* 80334090 0032FED0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80334094 0032FED4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "ANIM_KIND_TABLE_A__Q43scn4step4hero28@unnamed@ClearDanceSync_cpp@"
+"ANIM_KIND_TABLE_A__Q43scn4step4hero28@unnamed@ClearDanceSync_cpp@":
+
+	.4byte 0x00000056
+	.4byte 0x00000057
+	.4byte 0x00000058
+	.4byte 0
+
+.global "ANIM_KIND_TABLE_B__Q43scn4step4hero28@unnamed@ClearDanceSync_cpp@"
+"ANIM_KIND_TABLE_B__Q43scn4step4hero28@unnamed@ClearDanceSync_cpp@":
+
+	.4byte 0x00000056
+	.4byte 0x00000057
+	.4byte 0x00000058
+	.4byte 0x0000005C
+	.4byte 0x0000005D
+	.4byte 0x0000005E

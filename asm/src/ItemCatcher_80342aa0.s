@@ -140,3 +140,13 @@ clearObjStopRequestor__Q43scn4step4hero11ItemCatcherFv:
 /* 80342C64 0033EAA4  C0 22 CC B0 */	lfs f1, "@53107_80562C30"@sda21(r2)
 /* 80342C68 0033EAA8  C0 42 CC B4 */	lfs f2, "@53162_80562C34"@sda21(r2)
 /* 80342C6C 0033EAAC  4B E5 C7 3C */	b set__Q33hel4math7Vector2Fff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1ItemCatcher_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "T_DEFAULT_OFFSET__Q43scn4step4hero25@unnamed@ItemCatcher_cpp@"
+"T_DEFAULT_OFFSET__Q43scn4step4hero25@unnamed@ItemCatcher_cpp@":
+	.skip 0x8

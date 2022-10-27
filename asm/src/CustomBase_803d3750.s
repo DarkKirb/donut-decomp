@@ -56,3 +56,17 @@ lbl_803D37C4:
 /* 803D37D4 003CF614  7C 08 03 A6 */	mtlr r0
 /* 803D37D8 003CF618  38 21 00 10 */	addi r1, r1, 0x10
 /* 803D37DC 003CF61C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step6weapon10CustomBase
+__vt__Q43scn4step6weapon10CustomBase:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q43scn4step6weapon10CustomBaseCFv
+	.4byte __dt__Q43scn4step6weapon10CustomBaseFv
+	.4byte onInit__Q43scn4step6weapon10CustomBaseFv
+	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step6weapon10CustomBaseFv
+	.4byte 0

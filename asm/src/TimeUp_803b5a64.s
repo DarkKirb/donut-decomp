@@ -116,3 +116,41 @@ lbl_803B5BEC:
 /* 803B5BF4 003B1A34  7C 08 03 A6 */	mtlr r0
 /* 803B5BF8 003B1A38  38 21 00 10 */	addi r1, r1, 0x10
 /* 803B5BFC 003B1A3C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51948"
+"@51948":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51949"
+"@51949":
+
+	.4byte 0x54696D65
+	.4byte 0x55700000
+
+.global "@51983"
+"@51983":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@51984_8055B8E8"
+"@51984_8055B8E8":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@51994"
+"@51994":
+
+	.4byte 0x456E6400
+	.4byte 0

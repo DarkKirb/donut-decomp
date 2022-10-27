@@ -308,3 +308,47 @@ lbl_80311084:
 /* 803110B0 0030CEF0  7C 08 03 A6 */	mtlr r0
 /* 803110B4 0030CEF4  38 21 00 90 */	addi r1, r1, 0x90
 /* 803110B8 0030CEF8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53279_80481428"
+"@53279_80481428":
+
+	.4byte 0x43436861
+	.4byte 0x6E676531
+	.4byte 0
+
+.global __vt__Q53scn4step7gimmick10guideboard9ActionRun
+__vt__Q53scn4step7gimmick10guideboard9ActionRun:
+
+	.4byte 0
+	.4byte 0
+	.4byte topLName__Q53scn4step7gimmick10guideboard9ActionRunCFv
+	.4byte isInitState__Q53scn4step7gimmick10guideboard9ActionRunCFv
+	.4byte reset__Q53scn4step7gimmick10guideboard9ActionRunFb
+	.4byte updateFrame__Q53scn4step7gimmick10guideboard9ActionRunFv
+	.4byte onFrameEnd__Q53scn4step7gimmick10guideboard9ActionRunFv
+	.4byte onEat__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onVomit__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onDrink__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onRun__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onHover__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAbilityGet__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAbilityClear__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onVacuumSuper__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onThroughLand__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+	.4byte onAttack__Q53scn4step7gimmick10guideboard6ActionFRCQ33hel4math7Vector3
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53250"
+"@53250":
+
+	.4byte 0x43546F70
+	.4byte 0x4C000000
+
+.global "@53254_8055A758"
+"@53254_8055A758":
+
+	.4byte 0x43576169
+	.4byte 0x74310000

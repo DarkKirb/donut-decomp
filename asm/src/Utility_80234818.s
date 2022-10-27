@@ -1481,3 +1481,141 @@ lbl_80235C28:
 /* 80235C4C 00231A8C  7C 08 03 A6 */	mtlr r0
 /* 80235C50 00231A90  38 21 00 70 */	addi r1, r1, 0x70
 /* 80235C54 00231A94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@59919_80416490"
+"@59919_80416490":
+
+	.4byte 0x0000000F
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x0000000F
+	.4byte 0x00000003
+	.4byte 0x00000005
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x0000000B
+	.4byte 0x0000000F
+	.4byte 0x0000000D
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x00000012
+	.4byte 0x00000013
+	.4byte 0x00000014
+	.4byte 0x00000015
+	.4byte 0x00000016
+
+.global "@59947"
+"@59947":
+
+	.4byte 0x0000000F
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0x0000000F
+	.4byte 0x00000004
+	.4byte 0x00000006
+	.4byte 0x00000008
+	.4byte 0x0000000A
+	.4byte 0x0000000C
+	.4byte 0x0000000F
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x0000000F
+	.4byte 0x00000012
+	.4byte 0x00000013
+	.4byte 0x00000014
+	.4byte 0x00000015
+	.4byte 0x00000016
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4item4Item,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut83LinkList<Q24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>,0>FPQ24util62ObjListNode<Q43scn4step5enemy5Enemy,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@60100"
+"@60100":
+
+	.4byte 0x42480000
+
+.global "@60101_80558EF4"
+"@60101_80558EF4":
+
+	.4byte 0
+
+.global "@60103"
+"@60103":
+
+	.4byte 0x42480000
+
+.global "@60104"
+"@60104":
+
+	.4byte 0x43340000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step5enemy7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step5enemy7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step5enemy7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step5enemy7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

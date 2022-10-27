@@ -68,3 +68,17 @@ lbl_802F0118:
 .global __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv
 __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv:
 /* 802F0130 002EBF70  4B FA 0F 3C */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10watergalbo11BrainAttack
+__vt__Q53scn4step5enemy10watergalbo11BrainAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10watergalbo11BrainAttackFv
+	.4byte onStart__Q43scn4step5enemy9BrainBaseFv
+	.4byte onRecover__Q53scn4step5enemy10watergalbo11BrainAttackFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
+	.4byte 0

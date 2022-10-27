@@ -109,3 +109,15 @@ lbl_80272F94:
 /* 80272FB8 0026EDF8  7C 08 03 A6 */	mtlr r0
 /* 80272FBC 0026EDFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80272FC0 0026EE00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51502_80559460"
+"@51502_80559460":
+
+	.4byte 0x3F800000
+
+.global "@51505"
+"@51505":
+
+	.4byte 0

@@ -305,3 +305,41 @@ lbl_802A45C8:
 .global "__dt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv"
 "__dt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv":
 /* 802A4634 002A0474  4B F8 A0 6C */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>"
+"__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv"
+	.4byte "create__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage18StateThrownFighter,PQ43scn4step5enemy5Enemy,Ux>Fv"
+
+.global "__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>"
+"__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>Fv"
+	.4byte "create__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step5enemy6damage23StateDeadCaptureRelease,PQ43scn4step5enemy5Enemy,b>Fv"
+
+.global __vt__Q53scn4step5enemy8captured20StateCapturedFighter
+__vt__Q53scn4step5enemy8captured20StateCapturedFighter:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procAnim__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procMove__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procConstraint__Q53scn4step5enemy8captured20StateCapturedFighterFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55917_80559870"
+"@55917_80559870":
+
+	.4byte 0x3F800000
+	.4byte 0

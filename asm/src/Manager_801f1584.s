@@ -401,3 +401,29 @@ drawFront__Q43scn15challengeresult4info7ManagerCFv:
 /* 801F1B20 001ED960  7C 08 03 A6 */	mtlr r0
 /* 801F1B24 001ED964  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F1B28 001ED968  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52774_8045F0E0"
+"@52774_8045F0E0":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52773_80557DF8"
+"@52773_80557DF8":
+
+	.4byte 0x496E666F
+	.4byte 0
+
+.global "@52775_80557E00"
+"@52775_80557E00":
+
+	.4byte 0x42617365
+	.4byte 0

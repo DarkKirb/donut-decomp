@@ -98,3 +98,15 @@ onEnd__Q43scn4step4boss15HitStopCallbackFv:
 /* 80230BD8 0022CA18  7C 08 03 A6 */	mtlr r0
 /* 80230BDC 0022CA1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80230BE0 0022CA20  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q43scn4step4boss15HitStopCallback
+__vt__Q43scn4step4boss15HitStopCallback:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onStart__Q43scn4step4boss15HitStopCallbackFv
+	.4byte onEnd__Q43scn4step4boss15HitStopCallbackFv
+	.4byte 0

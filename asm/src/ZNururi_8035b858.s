@@ -250,3 +250,11 @@ lbl_8035BB94:
 /* 8035BBA0 003579E0  7C 08 03 A6 */	mtlr r0
 /* 8035BBA4 003579E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8035BBA8 003579E8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51249"
+"@51249":
+
+	.4byte 0
+	.4byte 0

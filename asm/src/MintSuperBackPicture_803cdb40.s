@@ -135,3 +135,13 @@ ReleaseEffectNonStop2__Q43scn4step3sfx20MintSuperBackPictureFv:
 "__sinit_@@1MintSuperBackPicture_cpp":
 /* 803CDCD4 003C9B14  38 6D F9 18 */	addi r3, r13, "t_obj__Q43scn4step3sfx34@unnamed@MintSuperBackPicture_cpp@"@sda21
 /* 803CDCD8 003C9B18  4B D0 F7 08 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintSuperBackPicture_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step3sfx34@unnamed@MintSuperBackPicture_cpp@"
+"t_obj__Q43scn4step3sfx34@unnamed@MintSuperBackPicture_cpp@":
+	.skip 0x8

@@ -627,3 +627,27 @@ sceneChange__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv:
 /* 8037A77C 003765BC  7C 08 03 A6 */	mtlr r0
 /* 8037A780 003765C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8037A784 003765C4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero7gimmick23StateChallengeBattleWin
+__vt__Q53scn4step4hero7gimmick23StateChallengeBattleWin:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.4byte procAnim__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.4byte procMove__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@59503_8055B338"
+"@59503_8055B338":
+
+	.4byte 0
+	.4byte 0

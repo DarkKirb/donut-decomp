@@ -110,3 +110,23 @@ lbl_8022F228:
 /* 8022F234 0022B074  7C 08 03 A6 */	mtlr r0
 /* 8022F238 0022B078  38 21 00 10 */	addi r1, r1, 0x10
 /* 8022F23C 0022B07C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30@unnamed@DamageInvincible_cpp@"
+"T_FRAME_BY_DAMAGE_TABLE__Q43scn4step4boss30@unnamed@DamageInvincible_cpp@":
+
+	.4byte 0x00000023
+	.4byte 0x00000024
+	.4byte 0x00000019
+	.4byte 0x0000001C
+	.4byte 0x00000014
+	.4byte 0x00000014
+	.4byte 0x0000000B
+	.4byte 0x00000010
+	.4byte 0x00000006
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0
+	.4byte 0

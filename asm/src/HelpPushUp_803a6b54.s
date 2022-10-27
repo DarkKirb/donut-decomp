@@ -365,3 +365,47 @@ startDisappearAnim__Q43scn4step4info10HelpPushUpFv:
 /* 803A7030 003A2E70  7C 08 03 A6 */	mtlr r0
 /* 803A7034 003A2E74  38 21 00 10 */	addi r1, r1, 0x10
 /* 803A7038 003A2E78  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52107_8048F648"
+"@52107_8048F648":
+
+	.4byte 0x73746570
+	.4byte 0x2F67616D
+	.4byte 0x652F4D61
+	.4byte 0x696E0000
+
+.global "@52108_8048F658"
+"@52108_8048F658":
+
+	.4byte 0x48656C70
+	.4byte 0x50757368
+	.4byte 0x55700000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52109_8055B4F0"
+"@52109_8055B4F0":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@52189"
+"@52189":
+
+	.4byte 0x546F704E
+	.4byte 0
+
+.global "@52192_8055B500"
+"@52192_8055B500":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@52195_8055B508"
+"@52195_8055B508":
+
+	.4byte 0x456E6400
+	.4byte 0

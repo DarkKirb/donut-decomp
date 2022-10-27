@@ -300,3 +300,17 @@ lbl_802D5228:
 /* 802D5240 002D1080  7C 08 03 A6 */	mtlr r0
 /* 802D5244 002D1084  38 21 00 60 */	addi r1, r1, 0x60
 /* 802D5248 002D1088  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5rocky10StateSlope
+__vt__Q53scn4step5enemy5rocky10StateSlope:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5rocky10StateSlopeFv
+	.4byte procAnim__Q53scn4step5enemy5rocky10StateSlopeFv
+	.4byte procMove__Q53scn4step5enemy5rocky10StateSlopeFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5rocky10StateSlopeFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -1519,3 +1519,1191 @@ lbl_803C7050:
 /* 803C70B8 003C2EF8  7C 08 03 A6 */	mtlr r0
 /* 803C70BC 003C2EFC  38 21 00 50 */	addi r1, r1, 0x50
 /* 803C70C0 003C2F00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52580"
+"@52580":
+
+	.4byte 0x46644368
+	.4byte 0x65727279
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x68657272
+	.4byte 0x79000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F48
+	.4byte 0x756D6275
+	.4byte 0x72676572
+	.4byte 0
+	.4byte 0x46644875
+	.4byte 0x6D627572
+	.4byte 0x67657200
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4A
+	.4byte 0x75696365
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4D
+	.4byte 0x65617400
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F50
+	.4byte 0x6F746174
+	.4byte 0x6F000000
+	.4byte 0x4664506F
+	.4byte 0x7465746F
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F42
+	.4byte 0x616E616E
+	.4byte 0x61000000
+	.4byte 0x46644261
+	.4byte 0x6E616E61
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F47
+	.4byte 0x72617065
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F50
+	.4byte 0x696E6561
+	.4byte 0x70706C65
+	.4byte 0
+	.4byte 0x46645069
+	.4byte 0x6E656170
+	.4byte 0x706C6500
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F44
+	.4byte 0x6F756768
+	.4byte 0x6E757400
+	.4byte 0x4664446F
+	.4byte 0x7567686E
+	.4byte 0x75740000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F48
+	.4byte 0x6F74646F
+	.4byte 0x67000000
+	.4byte 0x4664486F
+	.4byte 0x74646F67
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F50
+	.4byte 0x75646469
+	.4byte 0x6E670000
+	.4byte 0x46645075
+	.4byte 0x6464696E
+	.4byte 0x67000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F54
+	.4byte 0x6F6D6174
+	.4byte 0x6F000000
+	.4byte 0x4664546F
+	.4byte 0x6D61746F
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x616E6479
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x68696E65
+	.4byte 0x73654E6F
+	.4byte 0x6F646C65
+	.4byte 0x73000000
+	.4byte 0x46644368
+	.4byte 0x696E6573
+	.4byte 0x656E6F6F
+	.4byte 0x646C6573
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x686F636F
+	.4byte 0x43616B65
+	.4byte 0
+	.4byte 0x46644368
+	.4byte 0x6F636F63
+	.4byte 0x616B6500
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x75727279
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4C
+	.4byte 0x656D6F6E
+	.4byte 0x4A756963
+	.4byte 0x65000000
+	.4byte 0x46644C65
+	.4byte 0x6D6F6E6A
+	.4byte 0x75696365
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4F
+	.4byte 0x6D656C65
+	.4byte 0x74000000
+	.4byte 0x46644F6D
+	.4byte 0x656C6574
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F50
+	.4byte 0x697A7A61
+	.4byte 0
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x616E6477
+	.4byte 0x69636800
+	.4byte 0x46645361
+	.4byte 0x6E647769
+	.4byte 0x63680000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x686F7274
+	.4byte 0x43616B65
+	.4byte 0
+	.4byte 0x46645368
+	.4byte 0x6F727463
+	.4byte 0x616B6500
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x6F667443
+	.4byte 0x7265616D
+	.4byte 0
+	.4byte 0x4664536F
+	.4byte 0x66746372
+	.4byte 0x6565616D
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F46
+	.4byte 0x72696564
+	.4byte 0x52696365
+	.4byte 0
+	.4byte 0x46644672
+	.4byte 0x69656472
+	.4byte 0x69636500
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F47
+	.4byte 0x796F7A61
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x70616768
+	.4byte 0x65747469
+	.4byte 0
+	.4byte 0x46645370
+	.4byte 0x61676865
+	.4byte 0x74746900
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F43
+	.4byte 0x75704361
+	.4byte 0x6B650000
+	.4byte 0x46644375
+	.4byte 0x7063616B
+	.4byte 0x65000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F44
+	.4byte 0x6F756768
+	.4byte 0x6E757450
+	.4byte 0x696E6B00
+	.4byte 0x4664446F
+	.4byte 0x7567686E
+	.4byte 0x75747069
+	.4byte 0x6E6B0000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F48
+	.4byte 0x6F744361
+	.4byte 0x6B650000
+	.4byte 0x4664486F
+	.4byte 0x7463616B
+	.4byte 0x65000000
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F49
+	.4byte 0x63656372
+	.4byte 0x65616D00
+	.4byte 0x46644963
+	.4byte 0x65637265
+	.4byte 0x616D0000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F50
+	.4byte 0x61726661
+	.4byte 0x69740000
+	.4byte 0x46645061
+	.4byte 0x72666169
+	.4byte 0x74000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x6F757361
+	.4byte 0x67650000
+	.4byte 0x4664536F
+	.4byte 0x75736167
+	.4byte 0x65000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F54
+	.4byte 0x65610000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4E
+	.4byte 0x696B756D
+	.4byte 0x616E0000
+	.4byte 0x46644E69
+	.4byte 0x6B756D61
+	.4byte 0x6E000000
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F4D
+	.4byte 0x696C6B00
+	.4byte 0x73746570
+	.4byte 0x2F697465
+	.4byte 0x6D2F666F
+	.4byte 0x6F642F53
+	.4byte 0x6F667443
+	.4byte 0x7265616D
+	.4byte 0x50696E6B
+	.4byte 0
+	.4byte 0x4664536F
+	.4byte 0x66746372
+	.4byte 0x65616D70
+	.4byte 0x696E6B00
+
+.global "@52651_80492468"
+"@52651_80492468":
+
+	.4byte lbl_803C5C24
+	.4byte lbl_803C5C38
+	.4byte lbl_803C5CCC
+	.4byte lbl_803C5D60
+	.4byte lbl_803C5DF4
+	.4byte lbl_803C5E88
+	.4byte lbl_803C5F1C
+	.4byte lbl_803C5FB0
+	.4byte lbl_803C6044
+	.4byte lbl_803C60D8
+	.4byte lbl_803C616C
+	.4byte lbl_803C6200
+	.4byte lbl_803C6294
+	.4byte lbl_803C6328
+	.4byte lbl_803C63BC
+	.4byte lbl_803C6450
+	.4byte lbl_803C64E4
+	.4byte lbl_803C6578
+	.4byte lbl_803C660C
+	.4byte lbl_803C66A0
+	.4byte lbl_803C6734
+	.4byte lbl_803C67C8
+	.4byte lbl_803C685C
+	.4byte lbl_803C68F0
+	.4byte lbl_803C6984
+	.4byte lbl_803C6A18
+	.4byte lbl_803C6AAC
+	.4byte lbl_803C6B40
+	.4byte lbl_803C6BD4
+	.4byte lbl_803C6C68
+	.4byte lbl_803C6CFC
+	.4byte lbl_803C6D90
+	.4byte lbl_803C6E24
+	.4byte lbl_803C6EB8
+	.4byte lbl_803C6F4C
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x80
+
+.global "@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0"
+"@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@animDesc@0":
+	.skip 0xC
+
+.global "@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1"
+"@LOCAL@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@scriptDesc@1":
+	.skip 0xC
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52582_8055BD80"
+"@52582_8055BD80":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@52586"
+"@52586":
+
+	.4byte 0x46644A75
+	.4byte 0x69636500
+
+.global "@52588"
+"@52588":
+
+	.4byte 0x46644D65
+	.4byte 0x61740000
+
+.global "@52594_8055BD98"
+"@52594_8055BD98":
+
+	.4byte 0x46644772
+	.4byte 0x61706500
+
+.global "@52606"
+"@52606":
+
+	.4byte 0x46644361
+	.4byte 0x6E647900
+
+.global "@52612"
+"@52612":
+
+	.4byte 0x46644375
+	.4byte 0x72727900
+
+.global "@52618_8055BDB0"
+"@52618_8055BDB0":
+
+	.4byte 0x46645069
+	.4byte 0x7A7A6100
+
+.global "@52628_8055BDB8"
+"@52628_8055BDB8":
+
+	.4byte 0x46644779
+	.4byte 0x6F7A6100
+
+.global "@52644_8055BDC0"
+"@52644_8055BDC0":
+
+	.4byte 0x46645465
+	.4byte 0x61000000
+
+.global "@52648_8055BDC8"
+"@52648_8055BDC8":
+
+	.4byte 0x46644D69
+	.4byte 0x6C6B0000
+
+.global "@STRING@CreateGeneral<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+
+.global "@STRING@CreateGeneral<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc"
+"@STRING@CreateGeneral<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCc_RQ43scn4step5chara9ModelDesc":
+
+	.4byte 0x4D6F6465
+	.4byte 0x6C000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,34>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,33>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,32>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,31>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,30>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,29>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,28>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,27>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,26>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,25>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,24>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,23>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,22>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,21>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,20>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,19>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,18>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,17>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,16>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,15>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,14>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,13>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,12>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,11>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,10>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,9>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,8>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,7>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,6>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,5>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,4>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,3>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,2>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,1>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x1
+
+.global "@GUARD@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
+"@GUARD@CreateTmpl<3,0>__Q43scn4step4item13ModelDescUtilFPCcPCcPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
+	.skip 0x6

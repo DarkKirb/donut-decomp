@@ -461,3 +461,11 @@ lbl_8023CA54:
 /* 8023CA68 002388A8  7C 08 03 A6 */	mtlr r0
 /* 8023CA6C 002388AC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023CA70 002388B0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55334_80558F50"
+"@55334_80558F50":
+
+	.4byte 0x3F800000
+	.4byte 0

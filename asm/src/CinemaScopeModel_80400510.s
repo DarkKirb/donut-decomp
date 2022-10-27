@@ -188,3 +188,33 @@ draw__Q23sfx16CinemaScopeModelFv:
 /* 80400780 003FC5C0  38 63 00 04 */	addi r3, r3, 0x4
 /* 80400784 003FC5C4  48 00 0A 18 */	b draw__Q23sfx15FullScreenModelFv
 /* 80400788 003FC5C8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@51766"
+"@51766":
+
+	.4byte 0x43696E65
+	.4byte 0x6D615363
+	.4byte 0x6F706500
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@51772"
+"@51772":
+
+	.4byte 0x53746172
+	.4byte 0x74000000
+
+.global "@51776_8055C6A8"
+"@51776_8055C6A8":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@51793_8055C6B0"
+"@51793_8055C6B0":
+
+	.4byte 0x456E6400
+	.4byte 0

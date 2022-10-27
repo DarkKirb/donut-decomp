@@ -1393,3 +1393,39 @@ lbl_80231EF8:
 /* 80231F0C 0022DD4C  7C 08 03 A6 */	mtlr r0
 /* 80231F10 0022DD50  38 21 00 20 */	addi r1, r1, 0x20
 /* 80231F14 0022DD54  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55431"
+"@55431":
+
+	.4byte 0x426F7373
+	.4byte 0x4D616E61
+	.4byte 0x67657200
+
+.global "@55433_804645DC"
+"@55433_804645DC":
+
+	.4byte 0x426F7373
+	.4byte 0x436F6D6D
+	.4byte 0x616E6465
+	.4byte 0x72000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55432"
+"@55432":
+
+	.4byte 0x426F7373
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4hero17AbilityCustomBase>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

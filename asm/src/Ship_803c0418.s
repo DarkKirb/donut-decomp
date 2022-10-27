@@ -85,3 +85,27 @@ procAnim__Q53scn4step4info4ship4ShipFv:
 /* 803C053C 003BC37C  7C 08 03 A6 */	mtlr r0
 /* 803C0540 003BC380  38 21 00 10 */	addi r1, r1, 0x10
 /* 803C0544 003BC384  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52067"
+"@52067":
+
+	.4byte 0x73746570
+	.4byte 0x2F64656D
+	.4byte 0x6F2F4D61
+	.4byte 0x696E0000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52068_8055BD38"
+"@52068_8055BD38":
+
+	.4byte 0x42617365
+	.4byte 0
+
+.global "@52069_8055BD40"
+"@52069_8055BD40":
+
+	.4byte 0x536B6970
+	.4byte 0x4E000000

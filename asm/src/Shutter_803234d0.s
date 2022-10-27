@@ -2138,3 +2138,135 @@ lbl_80325130:
 mfReleaseWaitEffect__Q53scn4step7gimmick7shutter7ShutterFv:
 /* 80325144 00320F84  38 63 02 90 */	addi r3, r3, 0x290
 /* 80325148 00320F88  4B FC ED DC */	b release__Q43scn4step7gimmick6EffectFv
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@54624"
+"@54624":
+
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFFB
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "SUB_KIND_POSTFIX__21@unnamed@Shutter_cpp@"
+"SUB_KIND_POSTFIX__21@unnamed@Shutter_cpp@":
+
+	.4byte "@53500"
+	.4byte "@53501"
+	.4byte "@53502_8055A8FC"
+	.4byte "@53503_8055A904"
+
+.global "@56118_80482430"
+"@56118_80482430":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F536875
+	.4byte 0x74746572
+	.4byte 0
+
+.global "@56218"
+"@56218":
+
+	.4byte lbl_80323B04
+	.4byte lbl_80323B24
+	.4byte lbl_80323B44
+	.4byte lbl_80323B64
+	.4byte lbl_80323B84
+	.4byte lbl_80323BA4
+	.4byte lbl_80323BC4
+	.4byte lbl_80323BE4
+
+.global __vt__Q53scn4step7gimmick7shutter7Shutter
+__vt__Q53scn4step7gimmick7shutter7Shutter:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOn__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOff__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchToggle__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte onSwitchOnFromSuperBeamSwitch__Q53scn4step7gimmick7shutter7ShutterFv
+	.4byte checkDemoPos__Q53scn4step7gimmick7shutter7ShutterCFRQ33hel4math7Vector2
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53500"
+"@53500":
+
+	.4byte 0x55700000
+
+.global "@53501"
+"@53501":
+
+	.4byte 0x52696768
+	.4byte 0x74000000
+
+.global "@53502_8055A8FC"
+"@53502_8055A8FC":
+
+	.4byte 0x4C656674
+	.4byte 0
+
+.global "@53503_8055A904"
+"@53503_8055A904":
+
+	.4byte 0x556E6465
+	.4byte 0x72000000
+
+.global "@56074_8055A90C"
+"@56074_8055A90C":
+
+	.4byte 0x25732573
+	.4byte 0
+
+.global "@56119_8055A914"
+"@56119_8055A914":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@56121_8055A91C"
+"@56121_8055A91C":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@56287_8055A924"
+"@56287_8055A924":
+
+	.4byte 0x4F70656E
+	.4byte 0
+
+.global "@56352_8055A92C"
+"@56352_8055A92C":
+
+	.4byte 0x436C6F73
+	.4byte 0x65000000
+	.4byte 0
+
+.global "@56570_8055A938"
+"@56570_8055A938":
+
+	.4byte 0x45666665
+	.4byte 0x63744C00

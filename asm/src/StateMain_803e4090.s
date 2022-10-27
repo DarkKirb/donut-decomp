@@ -429,3 +429,49 @@ procObjCollReact__Q53scn4step6weapon10spearspear9StateMainFv:
 .global "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>Fv"
 "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>Fv":
 /* 803E463C 003E047C  4B E4 A0 64 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>"
+"__vt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>Fv"
+	.4byte "create__Q24util104StateFactoryArg1<Q24util6IState,Q53scn4step6weapon10spearspear12StateReflect,PQ43scn4step6weapon6Weapon>Fv"
+
+.global "__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear13StateStickObj,PQ43scn4step6weapon6Weapon,f>"
+"__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear13StateStickObj,PQ43scn4step6weapon6Weapon,f>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear13StateStickObj,PQ43scn4step6weapon6Weapon,f>Fv"
+	.4byte "create__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear13StateStickObj,PQ43scn4step6weapon6Weapon,f>Fv"
+
+.global "__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear11StateVanish,PQ43scn4step6weapon6Weapon,f>"
+"__vt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear11StateVanish,PQ43scn4step6weapon6Weapon,f>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear11StateVanish,PQ43scn4step6weapon6Weapon,f>Fv"
+	.4byte "create__Q24util105StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear11StateVanish,PQ43scn4step6weapon6Weapon,f>Fv"
+
+.global "__vt__Q24util108StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear14StateStickWall,PQ43scn4step6weapon6Weapon,f>"
+"__vt__Q24util108StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear14StateStickWall,PQ43scn4step6weapon6Weapon,f>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util108StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear14StateStickWall,PQ43scn4step6weapon6Weapon,f>Fv"
+	.4byte "create__Q24util108StateFactoryArg2<Q24util6IState,Q53scn4step6weapon10spearspear14StateStickWall,PQ43scn4step6weapon6Weapon,f>Fv"
+
+.global __vt__Q53scn4step6weapon10spearspear9StateMain
+__vt__Q53scn4step6weapon10spearspear9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon10spearspear9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon10spearspear9StateMainFv
+	.4byte procMove__Q53scn4step6weapon10spearspear9StateMainFv
+	.4byte procConstraint__Q53scn4step6weapon10spearspear9StateMainFv
+	.4byte procFixPos__Q53scn4step6weapon10spearspear9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon10spearspear9StateMainFv

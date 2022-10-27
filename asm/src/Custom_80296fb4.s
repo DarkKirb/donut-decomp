@@ -155,3 +155,111 @@ GetRuntimeTypeInfo__Q53scn4step5enemy11bladeknight6CustomCFv:
 .global __dt__Q53scn4step5enemy11bladeknight6CustomFv
 __dt__Q53scn4step5enemy11bladeknight6CustomFv:
 /* 802971C0 00293000  4B FF F4 10 */	b __dt__Q53scn4step5enemy8armordee6CustomFv
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ALPHA_TABLE_1__20@unnamed@Custom_cpp@"
+"T_ALPHA_TABLE_1__20@unnamed@Custom_cpp@":
+
+	.4byte 0x00000030
+	.4byte 0x00000060
+	.4byte 0x00000080
+	.4byte 0x00000070
+	.4byte 0x00000060
+	.4byte 0x00000050
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global "T_ALPHA_TABLE_2__20@unnamed@Custom_cpp@"
+"T_ALPHA_TABLE_2__20@unnamed@Custom_cpp@":
+
+	.4byte 0x00000060
+	.4byte 0x00000080
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000040
+	.4byte 0x00000060
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000020
+	.4byte 0x00000010
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy11bladeknight6Custom
+__vt__Q53scn4step5enemy11bladeknight6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step5enemy11bladeknight6CustomCFv
+	.4byte __dt__Q53scn4step5enemy11bladeknight6CustomFv
+	.4byte onInit__Q43scn4step5enemy10CustomBaseFv
+	.4byte onHitPointIsZero__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumReceive__Q43scn4step5enemy10CustomBaseFv
+	.4byte onVacuumResist__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDamaged__Q43scn4step5enemy10CustomBaseFv
+	.4byte onInWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onOutWater__Q43scn4step5enemy10CustomBaseFv
+	.4byte onRecover__Q43scn4step5enemy10CustomBaseFv
+	.4byte onCaptured__Q43scn4step5enemy10CustomBaseFv
+	.4byte onDead__Q43scn4step5enemy10CustomBaseFv
+	.4byte onProcFixPos__Q43scn4step5enemy10CustomBaseFv
+	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon7rollexp6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q53scn4step6weapon7rollexp6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon7rollexp6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon7rollexp6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

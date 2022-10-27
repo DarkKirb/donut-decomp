@@ -407,3 +407,17 @@ lbl_80239B08:
 /* 80239B14 00235954  7C 08 03 A6 */	mtlr r0
 /* 80239B18 00235958  38 21 00 90 */	addi r1, r1, 0x90
 /* 80239B1C 0023595C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss7bonkers17StateSwingPursuit
+__vt__Q53scn4step4boss7bonkers17StateSwingPursuit:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss7bonkers17StateSwingPursuitFv
+	.4byte procAnim__Q53scn4step4boss7bonkers17StateSwingPursuitFv
+	.4byte procMove__Q53scn4step4boss7bonkers17StateSwingPursuitFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss7bonkers17StateSwingPursuitFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

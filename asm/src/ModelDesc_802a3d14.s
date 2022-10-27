@@ -65,3 +65,67 @@ lbl_802A3D5C:
 /* 802A3DEC 0029FC2C  90 03 00 78 */	stw r0, 0x78(r3)
 /* 802A3DF0 0029FC30  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 802A3DF4 0029FC34  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50122_804752E0"
+"@50122_804752E0":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C4C
+	.4byte 0
+	.4byte 0
+
+.global "T_SCRIPT_ENTRIES__Q53scn4step5enemy8cappyhat23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step5enemy8cappyhat23@unnamed@ModelDesc_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000002
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000004
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x43617070
+	.4byte 0x79486174
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F65
+	.4byte 0x6E656D79
+	.4byte 0x2F436170
+	.4byte 0x70794861
+	.4byte 0x74000000

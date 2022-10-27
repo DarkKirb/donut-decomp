@@ -31,3 +31,11 @@ __ct__Q43scn4step5chara9ModelDescFv:
 /* 80271574 0026D3B4  7C 08 03 A6 */	mtlr r0
 /* 80271578 0026D3B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027157C 0026D3BC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50160_80559450"
+"@50160_80559450":
+
+	.4byte 0
+	.4byte 0

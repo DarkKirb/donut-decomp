@@ -166,3 +166,17 @@ lbl_802A02F4:
 .global __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv
 __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv:
 /* 802A030C 0029C14C  4B FF 16 AC */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10brontoburt12StateTakeOff
+__vt__Q53scn4step5enemy10brontoburt12StateTakeOff:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy10brontoburt12StateTakeOffFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

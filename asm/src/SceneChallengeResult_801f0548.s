@@ -832,3 +832,45 @@ lbl_801F10B4:
 .global GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv
 GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv:
 /* 801F10BC 001ECEFC  4B FF F4 8C */	b "RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54440"
+"@54440":
+
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65726573
+	.4byte 0x756C742E
+	.4byte 0x646E0000
+
+.global __vt__Q33scn15challengeresult20SceneChallengeResult
+__vt__Q33scn15challengeresult20SceneChallengeResult:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q33scn15challengeresult20SceneChallengeResultCFv
+	.4byte __dt__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateMain__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateUseGPU__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte updateDebug__Q33scn15challengeresult20SceneChallengeResultFv
+	.4byte draw__Q33scn15challengeresult20SceneChallengeResultFRCQ23scn11DrawReqInfo
+	.4byte isSceneEnd__Q33scn15challengeresult20SceneChallengeResultCFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54439"
+"@54439":
+
+	.4byte 0x45666665
+	.4byte 0x63740000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q33scn15challengeresult20SceneChallengeResult>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

@@ -386,3 +386,507 @@ lbl_803CA680:
 .global ToLevelIndex__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
 ToLevelIndex__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind:
 /* 803CA688 003C64C8  4B FF FE 80 */	b ToLevelKind__Q43scn4step3map8KindUtilFQ43scn4step3map4Kind
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_INFOS__Q43scn4step3map22@unnamed@KindUtil_cpp@"
+"T_INFOS__Q43scn4step3map22@unnamed@KindUtil_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49156_8055BF28"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49157_8055BF30"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49158"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49155"
+	.4byte "@49159_8055BF40"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49157_8055BF30"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49158"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49159_8055BF40"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49161_8055BF50"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49162"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49160_8055BF48"
+	.4byte "@49163"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49157_8055BF30"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49158"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49164"
+	.4byte "@49159_8055BF40"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49156_8055BF28"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49157_8055BF30"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49158"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49165"
+	.4byte "@49159_8055BF40"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49157_8055BF30"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49158"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49159_8055BF40"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49161_8055BF50"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49166"
+	.4byte "@49162"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49167"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49157_8055BF30"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49158"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49168"
+	.4byte "@49159_8055BF40"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49157_8055BF30"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49158"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49169"
+	.4byte "@49159_8055BF40"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49156_8055BF28"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49157_8055BF30"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49158"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49170"
+	.4byte "@49159_8055BF40"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49171"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49172"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49173"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49174"
+	.4byte "@49156_8055BF28"
+	.4byte 0
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49175"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49176_804928D0"
+	.4byte "@49156_8055BF28"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49154"
+	.4byte "@49177"
+	.4byte "@49156_8055BF28"
+	.4byte 0
+	.4byte 0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49180"
+	.4byte 0x00000001
+	.4byte 0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49181"
+	.4byte 0x00000002
+	.4byte 0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49179"
+	.4byte "@49182"
+	.4byte 0
+	.4byte 0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49183"
+	.4byte "@49184"
+	.4byte 0
+	.4byte 0
+	.4byte "@49178_8055BFC0"
+	.4byte "@49185"
+	.4byte "@49186"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@49154"
+"@49154":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x65000000
+
+.global "@49175"
+"@49175":
+
+	.4byte 0x6162696C
+	.4byte 0x69747931
+	.4byte 0
+
+.global "@49176_804928D0"
+"@49176_804928D0":
+
+	.4byte 0x6162696C
+	.4byte 0x69747932
+	.4byte 0
+
+.global "@49177"
+"@49177":
+
+	.4byte 0x6162696C
+	.4byte 0x69747933
+	.4byte 0
+
+.global "@49184"
+"@49184":
+
+	.4byte 0x43726564
+	.4byte 0x69743031
+	.4byte 0
+
+.global "@49185"
+"@49185":
+
+	.4byte 0x66697273
+	.4byte 0x7464656D
+	.4byte 0x6F000000
+
+.global "@49186"
+"@49186":
+
+	.4byte 0x46697273
+	.4byte 0x7464656D
+	.4byte 0x6F303100
+	.4byte 0x53746570
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E2E64
+	.4byte 0x6E000000
+	.4byte 0x53746570
+	.4byte 0x4C657665
+	.4byte 0x6C4D6170
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E2E64
+	.4byte 0x6E000000
+	.4byte 0x53746570
+	.4byte 0x46697273
+	.4byte 0x7444656D
+	.4byte 0x6F2E646E
+	.4byte 0
+
+.global "@50078"
+"@50078":
+
+	.4byte 0x6D61702F
+	.4byte 0x73746570
+	.4byte 0x2F25732F
+	.4byte 0x25732F25
+	.4byte 0x732E6461
+	.4byte 0x74000000
+	.4byte 0x25732F25
+	.4byte 0x732F2573
+	.4byte 0
+
+.global "@50108"
+"@50108":
+
+	.4byte 0x53746570
+	.4byte 0x4D617044
+	.4byte 0x61746125
+	.4byte 0x73257325
+	.4byte 0x732E646E
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49155"
+"@49155":
+
+	.4byte 0x73746167
+	.4byte 0x65303100
+
+.global "@49156_8055BF28"
+"@49156_8055BF28":
+
+	.4byte 0x53746570
+	.4byte 0x30310000
+
+.global "@49157_8055BF30"
+"@49157_8055BF30":
+
+	.4byte 0x53746570
+	.4byte 0x30320000
+
+.global "@49158"
+"@49158":
+
+	.4byte 0x53746570
+	.4byte 0x30330000
+
+.global "@49159_8055BF40"
+"@49159_8055BF40":
+
+	.4byte 0x53746570
+	.4byte 0x30340000
+
+.global "@49160_8055BF48"
+"@49160_8055BF48":
+
+	.4byte 0x73746167
+	.4byte 0x65303200
+
+.global "@49161_8055BF50"
+"@49161_8055BF50":
+
+	.4byte 0x53746570
+	.4byte 0x30350000
+
+.global "@49162"
+"@49162":
+
+	.4byte 0x53746570
+	.4byte 0x30360000
+
+.global "@49163"
+"@49163":
+
+	.4byte 0x53746570
+	.4byte 0x30370000
+
+.global "@49164"
+"@49164":
+
+	.4byte 0x73746167
+	.4byte 0x65303300
+
+.global "@49165"
+"@49165":
+
+	.4byte 0x73746167
+	.4byte 0x65303400
+
+.global "@49166"
+"@49166":
+
+	.4byte 0x73746167
+	.4byte 0x65303500
+
+.global "@49167"
+"@49167":
+
+	.4byte 0x73746167
+	.4byte 0x65303600
+
+.global "@49168"
+"@49168":
+
+	.4byte 0x73746167
+	.4byte 0x65303700
+
+.global "@49169"
+"@49169":
+
+	.4byte 0x73746167
+	.4byte 0x65303800
+
+.global "@49170"
+"@49170":
+
+	.4byte 0x73746167
+	.4byte 0x65313000
+
+.global "@49171"
+"@49171":
+
+	.4byte 0x6D617374
+	.4byte 0x65723100
+
+.global "@49172"
+"@49172":
+
+	.4byte 0x6D617374
+	.4byte 0x65723200
+
+.global "@49173"
+"@49173":
+
+	.4byte 0x6D617374
+	.4byte 0x65723300
+
+.global "@49174"
+"@49174":
+
+	.4byte 0x6D617374
+	.4byte 0x65723400
+
+.global "@49178_8055BFC0"
+"@49178_8055BFC0":
+
+	.4byte 0x6F746865
+	.4byte 0x72000000
+
+.global "@49179"
+"@49179":
+
+	.4byte 0x6C766D61
+	.4byte 0x70000000
+
+.global "@49180"
+"@49180":
+
+	.4byte 0x4C657665
+	.4byte 0x6C303100
+
+.global "@49181"
+"@49181":
+
+	.4byte 0x4C657665
+	.4byte 0x6C303200
+
+.global "@49182"
+"@49182":
+
+	.4byte 0x4C657665
+	.4byte 0x6C303300
+
+.global "@49183"
+"@49183":
+
+	.4byte 0x63726564
+	.4byte 0x69740000

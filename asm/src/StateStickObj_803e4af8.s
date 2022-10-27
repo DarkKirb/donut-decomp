@@ -137,3 +137,17 @@ lbl_803E4CB8:
 procMove__Q53scn4step6weapon10spearspear13StateStickObjFv:
 /* 803E4CCC 003E0B0C  38 63 00 08 */	addi r3, r3, 0x8
 /* 803E4CD0 003E0B10  4B FF 3F 98 */	b procMove__Q43scn4step6weapon17StickObjAlgorithmFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon10spearspear13StateStickObj
+__vt__Q53scn4step6weapon10spearspear13StateStickObj:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon10spearspear13StateStickObjFv
+	.4byte procAnim__Q53scn4step6weapon10spearspear13StateStickObjFv
+	.4byte procMove__Q53scn4step6weapon10spearspear13StateStickObjFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q43scn4step6weapon9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step6weapon9StateBaseFv

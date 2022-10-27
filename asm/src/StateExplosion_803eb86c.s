@@ -178,3 +178,17 @@ lbl_803EBA7C:
 lbl_803EBA84:
 /* 803EBA84 003E78C4  38 6D DE F4 */	addi r3, r13, "@56505"@sda21
 /* 803EBA88 003E78C8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion
+__vt__Q53scn4step6weapon23combinationdededebomber14StateExplosion:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procAnim__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procMove__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv
+	.4byte procObjCollReact__Q53scn4step6weapon23combinationdededebomber14StateExplosionFv

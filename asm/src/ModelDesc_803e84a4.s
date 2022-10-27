@@ -86,3 +86,29 @@ lbl_803E857C:
 /* 803E85C0 003E4400  38 63 4A 80 */	addi r3, r3, 0x4a80
 /* 803E85C4 003E4404  90 03 00 14 */	stw r0, 0x14(r3)
 /* 803E85C8 003E4408  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@"
+"T_SCRIPT_ENTRIES__Q53scn4step6weapon9foleyleaf23@unnamed@ModelDesc_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x466F6C65
+	.4byte 0x794C6561
+	.4byte 0x66000000
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x666F6C65
+	.4byte 0x792F4C65
+	.4byte 0x61660000
+	.4byte 0

@@ -486,3 +486,37 @@ lbl_803832BC:
 /* 80383304 0037F144  C0 42 D5 2C */	lfs f2, "@60209"@sda21(r2)
 /* 80383308 0037F148  FC 60 08 90 */	fmr f3, f1
 /* 8038330C 0037F14C  4B D3 AD B4 */	b __ct__Q34nw4r4math4VEC3Ffff
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1StateWarpStarFall_cpp"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay,PQ43scn4step4hero4Hero,i>"
+"__vt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay,PQ43scn4step4hero4Hero,i>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay,PQ43scn4step4hero4Hero,i>Fv"
+	.4byte "create__Q24util109StateFactoryArg2<Q24util6IState,Q53scn4step4hero7gimmick25StateAreaMapDemoFirstPlay,PQ43scn4step4hero4Hero,i>Fv"
+
+.global __vt__Q53scn4step4hero7gimmick17StateWarpStarFall
+__vt__Q53scn4step4hero7gimmick17StateWarpStarFall:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7gimmick17StateWarpStarFallFv
+	.4byte procAnim__Q53scn4step4hero7gimmick17StateWarpStarFallFv
+	.4byte procMove__Q53scn4step4hero7gimmick17StateWarpStarFallFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7gimmick17StateWarpStarFallFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "TARGET_OFFSET__31@unnamed@StateWarpStarFall_cpp@"
+"TARGET_OFFSET__31@unnamed@StateWarpStarFall_cpp@":
+	.skip 0x10

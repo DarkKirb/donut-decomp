@@ -29,3 +29,15 @@ lbl_8022F3EC:
 /* 8022F3F8 0022B238  7C 04 00 AE */	lbzx r0, r4, r0
 /* 8022F3FC 0022B23C  98 03 00 03 */	stb r0, 0x3(r3)
 /* 8022F400 0022B240  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ALPHA_TABLE__Q43scn4step4boss23@unnamed@DeadFlash_cpp@"
+"T_ALPHA_TABLE__Q43scn4step4boss23@unnamed@DeadFlash_cpp@":
+
+	.4byte 0x50607080
+	.4byte 0x78706860
+	.4byte 0x58504030
+	.4byte 0x18000000
+	.4byte 0
+	.4byte 0

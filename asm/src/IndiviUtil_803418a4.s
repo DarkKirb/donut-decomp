@@ -309,3 +309,31 @@ lbl_80341C60:
 /* 80341C68 0033DAA8  7C 08 03 A6 */	mtlr r0
 /* 80341C6C 0033DAAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80341C70 0033DAB0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52523_80484CD0"
+"@52523_80484CD0":
+
+	.4byte 0x73746570
+	.4byte 0x2F686572
+	.4byte 0x6F2F6E6F
+	.4byte 0x64656174
+	.4byte 0x74616368
+	.4byte 0x2F4D6574
+	.4byte 0x61000000
+	.4byte 0x73746570
+	.4byte 0x2F686572
+	.4byte 0x6F2F6E6F
+	.4byte 0x64656174
+	.4byte 0x74616368
+	.4byte 0x2F446564
+	.4byte 0x65646500
+	.4byte 0x73746570
+	.4byte 0x2F686572
+	.4byte 0x6F2F6E6F
+	.4byte 0x64656174
+	.4byte 0x74616368
+	.4byte 0x2F446565
+	.4byte 0
+	.4byte 0

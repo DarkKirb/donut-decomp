@@ -16,7 +16,10 @@
       devShells.default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
           yapf
+          gnumake
+          vbindiff
         ];
+        NIX = 1;
       };
     });
 }

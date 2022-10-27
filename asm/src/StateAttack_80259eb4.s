@@ -161,3 +161,17 @@ procMove__Q53scn4step4boss13watergalboros11StateAttackFv:
 .global procFixPos__Q53scn4step4boss13watergalboros11StateAttackFv
 procFixPos__Q53scn4step4boss13watergalboros11StateAttackFv:
 /* 8025A0B0 00255EF0  4B FD DF 10 */	b procFixPos__Q53scn4step4boss7bonkers9StateBombFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss13watergalboros11StateAttack
+__vt__Q53scn4step4boss13watergalboros11StateAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss13watergalboros11StateAttackFv
+	.4byte procAnim__Q53scn4step4boss13watergalboros11StateAttackFv
+	.4byte procMove__Q53scn4step4boss13watergalboros11StateAttackFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss13watergalboros11StateAttackFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

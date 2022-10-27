@@ -121,3 +121,17 @@ lbl_802B6428:
 /* 802B6430 002B2270  7C 08 03 A6 */	mtlr r0
 /* 802B6434 002B2274  38 21 00 10 */	addi r1, r1, 0x10
 /* 802B6438 002B2278  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5gemra11StateAttack
+__vt__Q53scn4step5enemy5gemra11StateAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5gemra11StateAttackFv
+	.4byte procAnim__Q53scn4step5enemy5gemra11StateAttackFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q43scn4step5enemy9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

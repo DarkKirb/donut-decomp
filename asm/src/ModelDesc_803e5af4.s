@@ -83,3 +83,49 @@ lbl_803E5BCC:
 /* 803E5C04 003E1A44  3C 60 80 55 */	lis r3, "T_SCRIPT_ENTRIES__Q53scn4step6weapon8wingshot23@unnamed@ModelDesc_cpp@"@ha
 /* 803E5C08 003E1A48  90 03 53 18 */	stw r0, "T_SCRIPT_ENTRIES__Q53scn4step6weapon8wingshot23@unnamed@ModelDesc_cpp@"@l(r3)
 /* 803E5C0C 003E1A4C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50238_80494800"
+"@50238_80494800":
+
+	.4byte 0x57696E67
+	.4byte 0x53686F74
+	.4byte 0
+
+.global "@50239_8049480C"
+"@50239_8049480C":
+
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x77696E67
+	.4byte 0x2F466561
+	.4byte 0x74686572
+	.4byte 0x47756E00
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50122_8055C328"
+"@50122_8055C328":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@50123_8055C330"
+"@50123_8055C330":
+
+	.4byte 0x526F744C
+	.4byte 0
+
+.global "@50124_8055C338"
+"@50124_8055C338":
+
+	.4byte 0x5074634C
+	.4byte 0
+
+.global "@50237_8055C340"
+"@50237_8055C340":
+
+	.4byte 0x546F704C
+	.4byte 0

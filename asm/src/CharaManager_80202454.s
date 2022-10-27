@@ -775,3 +775,31 @@ chara__Q33scn10grandtitle12CharaManagerFQ33scn10grandtitle9CharaKind:
 block__Q33scn10grandtitle12CharaManagerFUl:
 /* 80202EBC 001FECFC  38 63 01 F0 */	addi r3, r3, 0x1f0
 /* 80202EC0 001FED00  4B FF FC D4 */	b "__vc__Q33hel6common44AutoDeleteArray<Q33scn10grandtitle5Block,38>FUl"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@54349"
+"@54349":
+
+	.4byte 0x6772616E
+	.4byte 0x64746974
+	.4byte 0x6C652F54
+	.4byte 0x69746C65
+	.4byte 0x5363656E
+	.4byte 0x65000000
+
+.global "@54457"
+"@54457":
+
+	.4byte 0x42674566
+	.4byte 0x66656374
+	.4byte 0x4C000000
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@54350"
+"@54350":
+
+	.4byte 0x546F704C
+	.4byte 0

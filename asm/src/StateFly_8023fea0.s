@@ -262,3 +262,25 @@ lbl_802401D4:
 /* 802401E0 0023C020  7C 08 03 A6 */	mtlr r0
 /* 802401E4 0023C024  38 21 00 20 */	addi r1, r1, 0x20
 /* 802401E8 0023C028  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4boss15challengemaster8StateFly
+__vt__Q53scn4step4boss15challengemaster8StateFly:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss15challengemaster8StateFlyFv
+	.4byte procAnim__Q53scn4step4boss15challengemaster8StateFlyFv
+	.4byte procMove__Q53scn4step4boss15challengemaster8StateFlyFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss15challengemaster8StateFlyFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55233_80559008"
+"@55233_80559008":
+
+	.4byte 0x0000001E
+	.4byte 0

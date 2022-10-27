@@ -442,3 +442,139 @@ lbl_80244B78:
 /* 80244B80 002409C0  7C 08 03 A6 */	mtlr r0
 /* 80244B84 002409C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80244B88 002409C8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@57483"
+"@57483":
+
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244990
+	.4byte lbl_80244978
+	.4byte 0
+
+.global __vt__Q53scn4step4boss6common11StateAppear
+__vt__Q53scn4step4boss6common11StateAppear:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss6common11StateAppearFv
+	.4byte procAnim__Q53scn4step4boss6common11StateAppearFv
+	.4byte procMove__Q53scn4step4boss6common11StateAppearFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss6common11StateAppearFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv

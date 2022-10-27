@@ -700,3 +700,31 @@ lbl_8035F2AC:
 /* 8035F2C4 0035B104  7C 08 03 A6 */	mtlr r0
 /* 8035F2C8 0035B108  38 21 00 40 */	addi r1, r1, 0x40
 /* 8035F2CC 0035B10C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero6common15StateAnyWhereIn
+__vt__Q53scn4step4hero6common15StateAnyWhereIn:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero6common15StateAnyWhereInFv
+	.4byte procAnim__Q53scn4step4hero6common15StateAnyWhereInFv
+	.4byte procMove__Q53scn4step4hero6common15StateAnyWhereInFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero6common15StateAnyWhereInFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@58805_8055B330"
+"@58805_8055B330":
+
+	.4byte 0x3F800000
+
+.global "@58808_8055B334"
+"@58808_8055B334":
+
+	.4byte 0x3F800000

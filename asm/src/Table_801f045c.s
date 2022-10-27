@@ -68,3 +68,121 @@ PtclResPath__Q43scn14challengetitle6effect5TableFQ43scn14challengetitle6effect11
 /* 801F053C 001EC37C  7C 64 02 14 */	add r3, r4, r0
 /* 801F0540 001EC380  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801F0544 001EC384  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_PTCL_INFOS__Q43scn14challengetitle6effect19@unnamed@Table_cpp@"
+"T_PTCL_INFOS__Q43scn14challengetitle6effect19@unnamed@Table_cpp@":
+
+	.4byte "@48738_8045EF38"
+	.4byte "@48739_8045EF48"
+	.4byte "@48740_80557DD8"
+	.4byte "@48741_8045EF68"
+	.4byte "@48742_80557DE0"
+	.4byte "@48743_8045EF7C"
+
+.global "T_PTCL_INFOS__Q43scn15challengeresult6effect19@unnamed@Table_cpp@"
+"T_PTCL_INFOS__Q43scn15challengeresult6effect19@unnamed@Table_cpp@":
+
+	.4byte "@48738_80557DF0"
+	.4byte "@48739_8045F028"
+	.4byte "@48738_80557DF0"
+	.4byte "@48740_8045F038"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48738_8045EF38"
+"@48738_8045EF38":
+
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65546974
+	.4byte 0x6C650000
+
+.global "@48739_8045EF48"
+"@48739_8045EF48":
+
+	.4byte 0x6368616C
+	.4byte 0x6C656E67
+	.4byte 0x65746974
+	.4byte 0x6C652F50
+	.4byte 0x74436861
+	.4byte 0x6C6C656E
+	.4byte 0x67655469
+	.4byte 0x746C6500
+
+.global "@48741_8045EF68"
+"@48741_8045EF68":
+
+	.4byte 0x73746570
+	.4byte 0x2F6F626A
+	.4byte 0x2F507443
+	.4byte 0x6F6D6D6F
+	.4byte 0x6E000000
+
+.global "@48743_8045EF7C"
+"@48743_8045EF7C":
+
+	.4byte 0x73746570
+	.4byte 0x2F6F626A
+	.4byte 0x2F507453
+	.4byte 0x7061726B
+	.4byte 0
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65546974
+	.4byte 0x6C654761
+	.4byte 0x6D655469
+	.4byte 0x746C6553
+	.4byte 0x74617200
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65546974
+	.4byte 0x6C654B69
+	.4byte 0x72627950
+	.4byte 0x61727469
+	.4byte 0x636C6500
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E4162
+	.4byte 0x696C6974
+	.4byte 0x79476574
+	.4byte 0
+	.4byte 0x53706172
+	.4byte 0x6B486174
+	.4byte 0x53706172
+	.4byte 0x6B000000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@t_genContextHeader__Q43scn14challengetitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@LOCAL@t_genContextHeader__Q43scn14challengetitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0xE8
+
+.global "@LOCAL@t_genContextHeader__Q43scn15challengeresult6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@LOCAL@t_genContextHeader__Q43scn15challengeresult6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x128
+
+.global "@LOCAL@t_genContextHeader__Q43scn10grandtitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@LOCAL@t_genContextHeader__Q43scn10grandtitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x3A0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48740_80557DD8"
+"@48740_80557DD8":
+
+	.4byte 0x436F6D6D
+	.4byte 0x6F6E0000
+
+.global "@48742_80557DE0"
+"@48742_80557DE0":
+
+	.4byte 0x53706172
+	.4byte 0x6B000000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@t_genContextHeader__Q43scn14challengetitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@GUARD@t_genContextHeader__Q43scn14challengetitle6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x8

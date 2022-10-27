@@ -38,3 +38,13 @@ __ct__Q53scn4step7gimmick8shooting8ShootingFRCQ43scn4step3map18BinGmkGeneralEntr
 .global __dt__Q53scn4step7gimmick8shooting8ShootingFv
 __dt__Q53scn4step7gimmick8shooting8ShootingFv:
 /* 8032303C 0031EE7C  4B E5 2B 2C */	b __dt__Q23scn6ISceneFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick8shooting8Shooting
+__vt__Q53scn4step7gimmick8shooting8Shooting:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick8shooting8ShootingFv
+	.4byte 0

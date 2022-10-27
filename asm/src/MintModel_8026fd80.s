@@ -30,3 +30,13 @@ SetScale3__Q43scn4step5chara9MintModelFfff:
 "__sinit_@@1MintModel_cpp_8026FDC8":
 /* 8026FDC8 0026BC08  38 6D F1 C0 */	addi r3, r13, "t_obj__Q43scn4step5chara23@unnamed@MintModel_cpp@"@sda21
 /* 8026FDCC 0026BC0C  4B E6 D6 14 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintModel_cpp_8026FDC8"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_obj__Q43scn4step5chara23@unnamed@MintModel_cpp@"
+"t_obj__Q43scn4step5chara23@unnamed@MintModel_cpp@":
+	.skip 0x8

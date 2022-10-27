@@ -52,3 +52,27 @@ _bss_init_info_:
 /* 80006734 00002834  00 00 00 00 */	.4byte 0x00000000
 /* 80006738 00002838  00 00 00 00 */	.4byte 0x00000000
 /* 8000673C 0000283C  00 00 00 00 */	.4byte 0x00000000
+
+.include "macros.inc"
+
+.section extabindex_, "wa"  # 0x800068E0 - 0x80006A00 ; 0x00000120
+.global _eti_init_info_
+_eti_init_info_:
+
+	.4byte "@191"
+	.4byte _eti_init_info_
+	.4byte __dt__Q23std9exceptionFv
+	.4byte 0x0000E460
+	.4byte 0
+.space 32
+/*
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte 0
+
+.include "macros.inc"
+
+.section .dtors, "wa"  # 0x80406540 - 0x80406560 ; 0x00000020
+	.4byte 0
+*/

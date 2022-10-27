@@ -19,3 +19,13 @@ Ref__Q43scn4step5ocoll16MintOCollManagerFv:
 "__sinit_@@1MintOCollManager_cpp":
 /* 803CABB4 003C69F4  38 6D F9 10 */	addi r3, r13, "t_manager__Q43scn4step5ocoll30@unnamed@MintOCollManager_cpp@"@sda21
 /* 803CABB8 003C69F8  4B D1 28 28 */	b __ct__Q34nw4r3g3d8LightObjFv
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1MintOCollManager_cpp"
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_manager__Q43scn4step5ocoll30@unnamed@MintOCollManager_cpp@"
+"t_manager__Q43scn4step5ocoll30@unnamed@MintOCollManager_cpp@":
+	.skip 0x8

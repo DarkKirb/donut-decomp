@@ -137,3 +137,17 @@ lbl_802D2730:
 .global procFixPos__Q53scn4step5enemy10poppybrojr10StateThrowFv
 procFixPos__Q53scn4step5enemy10poppybrojr10StateThrowFv:
 /* 802D2748 002CE588  4B FC F3 E4 */	b procFixPos__Q53scn4step5enemy11broomhatter9StateWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10poppybrojr10StateThrow
+__vt__Q53scn4step5enemy10poppybrojr10StateThrow:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10poppybrojr10StateThrowFv
+	.4byte procAnim__Q53scn4step5enemy10poppybrojr10StateThrowFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10poppybrojr10StateThrowFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

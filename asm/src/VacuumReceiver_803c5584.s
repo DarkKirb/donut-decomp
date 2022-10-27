@@ -469,3 +469,35 @@ getCollideRect__Q43scn4step4item14VacuumReceiverCFv:
 .global "__dt__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>Fv"
 "__dt__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>Fv":
 /* 803C5BE4 003C1A24  4B E6 8A BC */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>"
+"__vt__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>Fv"
+	.4byte "create__Q24util101StateFactoryArg2<Q24util6IState,Q53scn4step4item5state18StateVacuumReceive,PQ43scn4step4item4Item,Ul>Fv"
+
+.global __vt__Q43scn4step4item14VacuumReceiver
+__vt__Q43scn4step4item14VacuumReceiver:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q43scn4step4item14VacuumReceiverFv
+	.4byte chkVacuum__Q43scn4step4item14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel3geo4Rectbb
+	.4byte prechkVacuum__Q43scn4step4item14VacuumReceiverFRCQ33hel3geo4Rect
+	.4byte reqDeadEnf__Q43scn4step4item14VacuumReceiverFv
+	.4byte reqReleaseEnf__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte "setConstraintWeapon__Q43scn4step6vacuum12ReceiverBaseFQ24util39ObjRefHandle<Q43scn4step6weapon6Weapon>UlUl"
+	.4byte chkDrainAbility__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte onAttackerEndVacuum__Q43scn4step6vacuum12ReceiverBaseFRQ43scn4step6vacuum8Attacker
+	.4byte isMighty__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte mightyFrame__Q43scn4step6vacuum12ReceiverBaseFv
+	.4byte setMighty__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.4byte setCure__Q43scn4step6vacuum12ReceiverBaseFRCQ43scn4step6vacuum8AttackerUl
+	.4byte deadWithAttacker__Q43scn4step6vacuum12ReceiverBaseFQ43scn4step4hero10DeadFactorRCQ33hel4math7Vector2
+	.4byte isMainPlayer__Q43scn4step6vacuum12ReceiverBaseCFv
+	.4byte drawDebug__Q43scn4step4item14VacuumReceiverFv
+	.4byte handle__Q43scn4step6vacuum12ReceiverBaseFv

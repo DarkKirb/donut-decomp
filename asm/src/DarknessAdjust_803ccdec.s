@@ -119,3 +119,15 @@ draw__Q43scn4step3sfx14DarknessAdjustFv:
 /* 803CCFA0 003C8DE0  7C 08 03 A6 */	mtlr r0
 /* 803CCFA4 003C8DE4  38 21 01 00 */	addi r1, r1, 0x100
 /* 803CCFA8 003C8DE8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52031"
+"@52031":
+
+	.4byte 0x73746570
+	.4byte 0x2F736678
+	.4byte 0x2F446172
+	.4byte 0x6B6E6573
+	.4byte 0x7341646A
+	.4byte 0x75737400

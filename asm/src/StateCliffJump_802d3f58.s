@@ -226,3 +226,17 @@ lbl_802D4238:
 .global procFixPos__Q53scn4step5enemy5rocky14StateCliffJumpFv
 procFixPos__Q53scn4step5enemy5rocky14StateCliffJumpFv:
 /* 802D4250 002D0090  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5rocky14StateCliffJump
+__vt__Q53scn4step5enemy5rocky14StateCliffJump:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5rocky14StateCliffJumpFv
+	.4byte procAnim__Q53scn4step5enemy5rocky14StateCliffJumpFv
+	.4byte procMove__Q53scn4step5enemy5rocky14StateCliffJumpFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5rocky14StateCliffJumpFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

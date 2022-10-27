@@ -279,3 +279,31 @@ draw__Q43scn17challengetutorial4info7ManagerCFv:
 /* 801F9D1C 001F5B5C  7C 08 03 A6 */	mtlr r0
 /* 801F9D20 001F5B60  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F9D24 001F5B64  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@52572_8045FCD0"
+"@52572_8045FCD0":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+
+.global "@52573_8045FCE4"
+"@52573_8045FCE4":
+
+	.4byte 0x5475746F
+	.4byte 0x7269616C
+	.4byte 0x42617365
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52571"
+"@52571":
+
+	.4byte 0x496E666F
+	.4byte 0

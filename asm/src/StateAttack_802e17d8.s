@@ -121,3 +121,17 @@ procMove__Q53scn4step5enemy9sirkibble11StateAttackFv:
 .global procFixPos__Q53scn4step5enemy9sirkibble11StateAttackFv
 procFixPos__Q53scn4step5enemy9sirkibble11StateAttackFv:
 /* 802E195C 002DD79C  4B FB 12 40 */	b procFixPos__Q53scn4step5enemy6common12StateLandingFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy9sirkibble11StateAttack
+__vt__Q53scn4step5enemy9sirkibble11StateAttack:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy9sirkibble11StateAttackFv
+	.4byte procAnim__Q53scn4step5enemy9sirkibble11StateAttackFv
+	.4byte procMove__Q53scn4step5enemy9sirkibble11StateAttackFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9sirkibble11StateAttackFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

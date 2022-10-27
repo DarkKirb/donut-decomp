@@ -370,3 +370,43 @@ lbl_8021A01C:
 /* 8021A3E8 00216228  7C 08 03 A6 */	mtlr r0
 /* 8021A3EC 0021622C  38 21 01 70 */	addi r1, r1, 0x170
 /* 8021A3F0 00216230  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .ctors, "wa"  # 0x80406260 - 0x80406540 ; 0x000002E0
+	.4byte "__sinit_@@1Product_cpp"
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "@49032_80416058"
+"@49032_80416058":
+
+	.4byte 0x01010100
+	.4byte 0
+	.4byte 0
+
+.global "@49039_80416064"
+"@49039_80416064":
+
+	.4byte 0x01010000
+	.4byte 0
+	.4byte 0
+
+.global "@48746_80416070"
+"@48746_80416070":
+
+	.4byte 0x00000001
+	.4byte 0
+	.4byte 0
+
+.global "@49050_8041607C"
+"@49050_8041607C":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0x00000101
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "PRODUCT_INFO_TABLE__Q43scn7history6detail21@unnamed@Product_cpp@"
+"PRODUCT_INFO_TABLE__Q43scn7history6detail21@unnamed@Product_cpp@":
+	.skip 0x160

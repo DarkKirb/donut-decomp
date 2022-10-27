@@ -201,3 +201,49 @@ __dt__Q53scn4step5enemy6pierce8BrainFlyFv:
 .global "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>Fv"
 "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>Fv":
 /* 802CF88C 002CB6CC  4B F5 EE 14 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util96StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce12StateFlyWait,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce14StateFlyAround,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce14StateFlyAround,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce14StateFlyAround,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util98StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce14StateFlyAround,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce15StateFlyPursuit,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce15StateFlyPursuit,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce15StateFlyPursuit,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util99StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce15StateFlyPursuit,PQ43scn4step5enemy5Enemy>Fv"
+
+.global "__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce16StateFlySinCurve,PQ43scn4step5enemy5Enemy>"
+"__vt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce16StateFlySinCurve,PQ43scn4step5enemy5Enemy>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce16StateFlySinCurve,PQ43scn4step5enemy5Enemy>Fv"
+	.4byte "create__Q24util100StateFactoryArg1<Q24util6IState,Q53scn4step5enemy6pierce16StateFlySinCurve,PQ43scn4step5enemy5Enemy>Fv"
+
+.global __vt__Q53scn4step5enemy6pierce8BrainFly
+__vt__Q53scn4step5enemy6pierce8BrainFly:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy6pierce8BrainFlyFv
+	.4byte onStart__Q53scn4step5enemy6pierce8BrainFlyFv
+	.4byte onRecover__Q53scn4step5enemy6pierce8BrainFlyFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q43scn4step5enemy9BrainBaseFv
+	.4byte 0

@@ -401,3 +401,17 @@ lbl_802E3E80:
 /* 802E3E8C 002DFCCC  7C 08 03 A6 */	mtlr r0
 /* 802E3E90 002DFCD0  38 21 00 50 */	addi r1, r1, 0x50
 /* 802E3E94 002DFCD4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5snowl14StateFlyAround
+__vt__Q53scn4step5enemy5snowl14StateFlyAround:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procAnim__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procMove__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5snowl14StateFlyAroundFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -351,3 +351,19 @@ lbl_8039E640:
 /* 8039E644 0039A484  7C 08 03 A6 */	mtlr r0
 /* 8039E648 0039A488  38 21 00 10 */	addi r1, r1, 0x10
 /* 8039E64C 0039A48C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step4hero7fighter9StateShot
+__vt__Q53scn4step4hero7fighter9StateShot:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4hero7fighter9StateShotFv
+	.4byte procAnim__Q53scn4step4hero7fighter9StateShotFv
+	.4byte procMove__Q53scn4step4hero7fighter9StateShotFv
+	.4byte procConstraint__Q43scn4step4hero9StateBaseFv
+	.4byte procFixPos__Q53scn4step4hero7fighter9StateShotFv
+	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
+	.4byte procEnd__Q43scn4step4hero9StateBaseFv
+	.4byte 0

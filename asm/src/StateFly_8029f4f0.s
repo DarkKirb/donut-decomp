@@ -256,3 +256,17 @@ lbl_8029F838:
 .global __dt__Q53scn4step5enemy10brontoburt8StateFlyFv
 __dt__Q53scn4step5enemy10brontoburt8StateFlyFv:
 /* 8029F86C 0029B6AC  4B FF 21 4C */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10brontoburt8StateFly
+__vt__Q53scn4step5enemy10brontoburt8StateFly:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10brontoburt8StateFlyFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy10brontoburt8StateFlyFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy10brontoburt8StateFlyFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

@@ -169,3 +169,27 @@ onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv:
 /* 803284FC 0032433C  7C 08 03 A6 */	mtlr r0
 /* 80328500 00324340  38 21 00 10 */	addi r1, r1, 0x10
 /* 80328504 00324344  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick8switch_n12SwitchReturn
+__vt__Q53scn4step7gimmick8switch_n12SwitchReturn:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte isChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte isChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeOffToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeToOn__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeOnToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte onChangeToOff__Q53scn4step7gimmick8switch_n12SwitchReturnFv
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@52608_8055A980"
+"@52608_8055A980":
+
+	.4byte 0x52657475
+	.4byte 0x726E0000

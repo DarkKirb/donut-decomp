@@ -982,3 +982,149 @@ masterResult__Q53scn4step4info9challenge9ChallengeFv:
 /* 803B1D4C 003ADB8C  7C 08 03 A6 */	mtlr r0
 /* 803B1D50 003ADB90  38 21 00 10 */	addi r1, r1, 0x10
 /* 803B1D54 003ADB94  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53888_80490160"
+"@53888_80490160":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61696E00
+	.4byte 0x4D617374
+	.4byte 0x65725363
+	.4byte 0x6F72654E
+	.4byte 0
+	.4byte 0x496E7465
+	.4byte 0x7276616C
+	.4byte 0x4E000000
+	.4byte 0x53637265
+	.4byte 0x656E4F75
+	.4byte 0x74426173
+	.4byte 0x65324E00
+	.4byte 0x53637265
+	.4byte 0x656E4F75
+
+.global lbl_804901A8
+lbl_804901A8:
+
+	.4byte 0x74426173
+	.4byte 0x654E0000
+	.4byte 0x50617373
+	.4byte 0x61676554
+	.4byte 0x696D654E
+	.4byte 0
+	.4byte 0x47616D65
+	.4byte 0x4F766572
+	.4byte 0
+	.4byte 0x47616D65
+	.4byte 0x4F766572
+	.4byte 0x5F596573
+	.4byte 0
+	.4byte 0x47616D65
+	.4byte 0x4F766572
+	.4byte 0x5F4E6F00
+	.4byte 0x52657375
+	.4byte 0x6C744D65
+	.4byte 0x6E755F48
+	.4byte 0x696E7400
+	.4byte 0x636F6D6D
+	.4byte 0x6F6E2F4D
+	.4byte 0x61696E00
+	.4byte 0x436F6E66
+	.4byte 0x69726D57
+	.4byte 0x696E646F
+	.4byte 0x77000000
+	.4byte 0x54696D65
+	.4byte 0x53636F72
+	.4byte 0x654E0000
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x61737465
+	.4byte 0x72000000
+	.4byte 0x54696D65
+	.4byte 0x53636F72
+	.4byte 0x654D6173
+	.4byte 0x74657200
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4D
+	.4byte 0x75736F75
+	.4byte 0
+	.4byte 0x54696D65
+	.4byte 0x53636F72
+	.4byte 0x654D7573
+	.4byte 0x6F750000
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x6C6C656E
+	.4byte 0x67652F4E
+	.4byte 0x6F726D61
+	.4byte 0x6C000000
+	.4byte 0x54696D65
+	.4byte 0x53636F72
+	.4byte 0x65436861
+	.4byte 0x6C6C656E
+	.4byte 0x67650000
+	.4byte 0x50696374
+	.4byte 0x7572654E
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53889_8055B738"
+"@53889_8055B738":
+
+	.4byte 0x42617365
+	.4byte 0
+
+.global "@53891_8055B740"
+"@53891_8055B740":
+
+	.4byte 0x53636F72
+	.4byte 0x654E0000
+
+.global "@53892_8055B748"
+"@53892_8055B748":
+
+	.4byte 0x54696D65
+	.4byte 0x4E000000
+
+.global "@53903_8055B750"
+"@53903_8055B750":
+
+	.4byte 0x57616974
+	.4byte 0
+
+.global "@54058_8055B758"
+"@54058_8055B758":
+
+	.4byte 0x4F757400
+
+.global "@54061_8055B75C"
+"@54061_8055B75C":
+
+	.4byte 0x496E0000
+
+.global "@54064_8055B760"
+"@54064_8055B760":
+
+	.4byte 0x4F757453
+	.4byte 0

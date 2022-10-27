@@ -1056,3 +1056,37 @@ lbl_802F9258:
 /* 802F9260 002F50A0  7C 08 03 A6 */	mtlr r0
 /* 802F9264 002F50A4  38 21 00 20 */	addi r1, r1, 0x20
 /* 802F9268 002F50A8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "DIR_ROTATION__Q53scn4step7gimmick7airflow21@unnamed@AirFlow_cpp@"
+"DIR_ROTATION__Q53scn4step7gimmick7airflow21@unnamed@AirFlow_cpp@":
+
+	.4byte 0
+	.4byte 0x439D8000
+	.4byte 0x43870000
+	.4byte 0x43610000
+	.4byte 0x43340000
+	.4byte 0x43070000
+	.4byte 0x42B40000
+	.4byte 0x42340000
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@53529_8047EFF0"
+"@53529_8047EFF0":
+
+	.4byte 0x73746570
+	.4byte 0x2F67696D
+	.4byte 0x6D69636B
+	.4byte 0x2F416972
+	.4byte 0x466C6F77
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@53684_8055A4E8"
+"@53684_8055A4E8":
+
+	.4byte 0x546F704C
+	.4byte 0

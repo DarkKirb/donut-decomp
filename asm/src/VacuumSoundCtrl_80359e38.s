@@ -417,3 +417,11 @@ lbl_8035A388:
 /* 8035A39C 003561DC  7C 08 03 A6 */	mtlr r0
 /* 8035A3A0 003561E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8035A3A4 003561E4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50536_8055AA40"
+"@50536_8055AA40":
+
+	.4byte 0x3F800000
+	.4byte 0

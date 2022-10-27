@@ -73,3 +73,73 @@ PtclResPath__Q43scn15challengeresult6effect5TableFQ43scn15challengeresult6effect
 /* 801F1578 001ED3B8  7C 64 02 14 */	add r3, r4, r0
 /* 801F157C 001ED3BC  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 801F1580 001ED3C0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48739_8045F028"
+"@48739_8045F028":
+
+	.4byte 0x73746570
+	.4byte 0x2F6F626A
+	.4byte 0x2F507449
+	.4byte 0x6E666F00
+
+.global "@48740_8045F038"
+"@48740_8045F038":
+
+	.4byte 0x73746570
+	.4byte 0x2F6F626A
+	.4byte 0x2F507443
+	.4byte 0x68616C6C
+	.4byte 0x656E6765
+	.4byte 0x496E666F
+	.4byte 0
+	.4byte 0x496E666F
+	.4byte 0x436F6E66
+	.4byte 0x65747469
+	.4byte 0
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65496E66
+	.4byte 0x6F526573
+	.4byte 0x756C744D
+	.4byte 0x476F6C64
+	.4byte 0
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65496E66
+	.4byte 0x6F526573
+	.4byte 0x756C744D
+	.4byte 0x53696C76
+	.4byte 0x65720000
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65496E66
+	.4byte 0x6F526573
+	.4byte 0x756C744D
+	.4byte 0x506C6174
+	.4byte 0x696E756D
+	.4byte 0
+	.4byte 0x4368616C
+	.4byte 0x6C656E67
+	.4byte 0x65496E66
+	.4byte 0x6F526573
+	.4byte 0x756C744D
+	.4byte 0x506C6174
+	.4byte 0x696E756D
+	.4byte 0x57616974
+	.4byte 0
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48738_80557DF0"
+"@48738_80557DF0":
+
+	.4byte 0x496E666F
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@t_genContextHeader__Q43scn15challengeresult6effect19@unnamed@Table_cpp@Fv@CONTEXTS"
+"@GUARD@t_genContextHeader__Q43scn15challengeresult6effect19@unnamed@Table_cpp@Fv@CONTEXTS":
+	.skip 0x8

@@ -536,3 +536,11 @@ lbl_8026A034:
 /* 8026A03C 00265E7C  7C 08 03 A6 */	mtlr r0
 /* 8026A040 00265E80  38 21 00 10 */	addi r1, r1, 0x10
 /* 8026A044 00265E84  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49451"
+"@49451":
+
+	.4byte 0
+	.4byte 0

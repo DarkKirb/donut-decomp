@@ -540,3 +540,53 @@ GetRuntimeTypeInfo__Q23seq26SequenceChallengeTitleRootCFv:
 .global __dt__Q23seq26SequenceChallengeTitleRootFv
 __dt__Q23seq26SequenceChallengeTitleRootFv:
 /* 803FE024 003F9E64  4B FF EE A8 */	b __dt__Q23seq21SequenceChallengeRootFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q23seq26SequenceChallengeTitleRoot
+__vt__Q23seq26SequenceChallengeTitleRoot:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q23seq26SequenceChallengeTitleRootCFv
+	.4byte __dt__Q23seq26SequenceChallengeTitleRootFv
+	.4byte nextAction__Q23seq26SequenceChallengeTitleRootCFv
+	.4byte createChildSequence__Q23seq26SequenceChallengeTitleRootCFv
+	.4byte onChildSequenceEnd__Q23seq26SequenceChallengeTitleRootFRQ23seq9ISequence
+	.4byte createScene__Q23seq26SequenceChallengeTitleRootCFv
+	.4byte onSceneEnd__Q23seq26SequenceChallengeTitleRootFRQ23scn6IScene
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq26SequenceChallengeTitleRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceFirstDemo>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq17SequenceLvMapRoot>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@GUARD@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q23seq19SequenceStaffCredit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

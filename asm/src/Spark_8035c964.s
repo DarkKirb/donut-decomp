@@ -78,3 +78,75 @@ HatAnim__Q53scn4step4hero9modeldesc5SparkFv:
 /* 8035CA5C 0035889C  90 C3 00 04 */	stw r6, 0x4(r3)
 /* 8035CA60 003588A0  90 03 00 08 */	stw r0, 0x8(r3)
 /* 8035CA64 003588A4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@48824_8048B410"
+"@48824_8048B410":
+
+	.4byte 0x73746570
+	.4byte 0x2F636861
+	.4byte 0x72612F68
+	.4byte 0x65726F2F
+	.4byte 0x6B697262
+	.4byte 0x792F7370
+	.4byte 0x61726B2F
+	.4byte 0x48617400
+
+.global "@48733_8048B430"
+"@48733_8048B430":
+
+	.4byte 0x50746350
+	.4byte 0x6F696E74
+	.4byte 0x4C000000
+	.4byte 0
+.include "macros.inc"
+
+.section .bss, "", @nobits  # 0x80496700 - 0x80556420 ; 0x000BFD20
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@desc"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@desc":
+	.skip 0x58
+
+.global "@LOCAL@HatAnim__Q53scn4step4hero9modeldesc5SparkFv@desc"
+"@LOCAL@HatAnim__Q53scn4step4hero9modeldesc5SparkFv@desc":
+	.skip 0x10
+
+.global "@LOCAL@HatAnim__Q53scn4step4hero9modeldesc5SparkFv@dataDesc@0"
+"@LOCAL@HatAnim__Q53scn4step4hero9modeldesc5SparkFv@dataDesc@0":
+	.skip 0x10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@48732_8055B278"
+"@48732_8055B278":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@names@1"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@names@1":
+
+	.4byte "@48732_8055B278"
+	.4byte "@48733_8048B430"
+
+.global "@48831_8055B288"
+"@48831_8055B288":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@48766_8055B290"
+"@48766_8055B290":
+
+	.4byte 0x4D61696E
+	.4byte 0
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@HatModel__Q53scn4step4hero9modeldesc5SparkFv@desc"
+"@GUARD@HatModel__Q53scn4step4hero9modeldesc5SparkFv@desc":
+	.skip 0x8
+
+.global "@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@nodeReposDesc@0"
+"@LOCAL@HatModel__Q53scn4step4hero9modeldesc5SparkFv@nodeReposDesc@0":
+	.skip 0x8

@@ -253,3 +253,35 @@ __ct__Q43scn4step4boss8AccessorFRCQ43scn4step4boss8Accessor:
 .global isValid__Q43scn4step4boss8AccessorCFv
 isValid__Q43scn4step4boss8AccessorCFv:
 /* 80227A10 00223850  4B F6 0C B8 */	b wasSetParent__Q24file8FileTreeCFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>@0"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>@0":
+
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+
+.global "@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>"
+"@STRING@GetNodeFromPointer__Q34nw4r2ut81LinkList<Q24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>,0>FPQ24util60ObjListNode<Q43scn4step4boss4Boss,Q24util16ObjListDummyType>":
+
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "@GUARD@RuntimeTypeInfoImpl<Q43scn4step4boss7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@GUARD@RuntimeTypeInfoImpl<Q43scn4step4boss7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8
+
+.global "@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4boss7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
+"@LOCAL@RuntimeTypeInfoImpl<Q43scn4step4boss7ICustom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
+	.skip 0x8

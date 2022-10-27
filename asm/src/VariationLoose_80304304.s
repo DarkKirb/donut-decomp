@@ -660,3 +660,39 @@ lbl_80304BF4:
 /* 80304C00 00300A40  7C 08 03 A6 */	mtlr r0
 /* 80304C04 00300A44  38 21 00 10 */	addi r1, r1, 0x10
 /* 80304C08 00300A48  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_SPACEJUMP_FRAME__Q53scn4step7gimmick10cameralock28@unnamed@VariationLoose_cpp@"
+"T_SPACEJUMP_FRAME__Q53scn4step7gimmick10cameralock28@unnamed@VariationLoose_cpp@":
+
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0
+	.4byte 0x0000001E
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step7gimmick10cameralock14VariationLoose
+__vt__Q53scn4step7gimmick10cameralock14VariationLoose:
+
+	.4byte 0
+	.4byte 0
+	.4byte updateReady__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLock__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateReadyNonStop__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock14VariationLooseFRQ53scn4step7gimmick10cameralock10CameraLock
+	.4byte setIsPose__Q53scn4step7gimmick10cameralock14VariationLooseFb
+	.4byte 0

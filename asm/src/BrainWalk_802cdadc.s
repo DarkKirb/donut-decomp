@@ -66,3 +66,17 @@ update__Q53scn4step5enemy10parasoldoo9BrainWalkFv:
 .global __dt__Q53scn4step5enemy10parasoldoo9BrainWalkFv
 __dt__Q53scn4step5enemy10parasoldoo9BrainWalkFv:
 /* 802CDB9C 002C99DC  4B FC 34 D0 */	b __dt__Q53scn4step5enemy6common17BrainCreditPraiseFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy10parasoldoo9BrainWalk
+__vt__Q53scn4step5enemy10parasoldoo9BrainWalk:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy10parasoldoo9BrainWalkFv
+	.4byte onStart__Q53scn4step5enemy10parasoldoo9BrainWalkFv
+	.4byte onRecover__Q53scn4step5enemy10parasoldoo9BrainWalkFv
+	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
+	.4byte update__Q53scn4step5enemy10parasoldoo9BrainWalkFv
+	.4byte 0

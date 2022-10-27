@@ -137,3 +137,15 @@ setEnd__Q43scn4step4boss11AttackFlashF8_GXColor:
 /* 80229264 002250A4  38 00 00 02 */	li r0, 0x2
 /* 80229268 002250A8  90 03 00 04 */	stw r0, 0x4(r3)
 /* 8022926C 002250AC  4B F2 26 A8 */	b __as__8_GXColorFRC8_GXColor
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@49258_80558ED0"
+"@49258_80558ED0":
+
+	.4byte 0
+
+.global "@49259_80558ED4"
+"@49259_80558ED4":
+
+	.4byte 0x000000FF

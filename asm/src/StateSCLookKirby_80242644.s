@@ -323,3 +323,41 @@ procFixPos__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv:
 .global "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>Fv"
 "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>Fv":
 /* 80242A78 0023E8B8  4B FE BC 28 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>"
+"__vt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>Fv"
+	.4byte "create__Q24util107StateFactoryArg2<Q24util6IState,Q53scn4step4boss15challengemaster14StateSCPursuit,PQ43scn4step4boss4Boss,b>Fv"
+
+.global "__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster16StateSCLookKirby,PQ43scn4step4boss4Boss>"
+"__vt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster16StateSCLookKirby,PQ43scn4step4boss4Boss>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster16StateSCLookKirby,PQ43scn4step4boss4Boss>Fv"
+	.4byte "create__Q24util107StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster16StateSCLookKirby,PQ43scn4step4boss4Boss>Fv"
+
+.global __vt__Q53scn4step4boss15challengemaster16StateSCLookKirby
+__vt__Q53scn4step4boss15challengemaster16StateSCLookKirby:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.4byte procAnim__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.4byte procMove__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
+	.4byte procFixPos__Q53scn4step4boss15challengemaster16StateSCLookKirbyFv
+	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55360_80559020"
+"@55360_80559020":
+
+	.4byte 0
+	.4byte 0

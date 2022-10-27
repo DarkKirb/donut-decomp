@@ -46,3 +46,61 @@ lbl_803DC278:
 /* 803DC2C8 003D8108  7C 08 03 A6 */	mtlr r0
 /* 803DC2CC 003D810C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803DC2D0 003D8110  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .rodata, "wa"  # 0x80406560 - 0x80421040 ; 0x0001AAE0
+.global "T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@"
+"T_ANIM_ENTRIES__Q53scn4step6weapon13whispyairball23@unnamed@ModelDesc_cpp@":
+
+	.4byte "@50124_8055C0EC"
+	.4byte 0
+	.4byte "@50125_8055C0F8"
+	.4byte 0
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@50123_80493F58"
+"@50123_80493F58":
+
+	.4byte 0x436F6E74
+	.4byte 0x726F6C4C
+	.4byte 0
+	.4byte "@50122_8055C078"
+	.4byte "@50123_80493F58"
+	.4byte "@50124_8055C080"
+	.4byte 0x53746172
+	.4byte 0x53686F74
+	.4byte 0x4C763100
+	.4byte 0
+	.4byte 0x73746570
+	.4byte 0x2F776561
+	.4byte 0x706F6E2F
+	.4byte 0x6E6F726D
+	.4byte 0x616C2F53
+	.4byte 0x74617200
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@50122_8055C090"
+"@50122_8055C090":
+
+	.4byte 0x546F704C
+	.4byte 0
+
+.global "@50124_8055C098"
+"@50124_8055C098":
+
+	.4byte 0x5074636C
+	.4byte 0x4C000000
+
+.global "@50127_8055C0A0"
+"@50127_8055C0A0":
+
+	.4byte 0x4D61696E
+	.4byte 0
+
+.global "@50243_8055C0A8"
+"@50243_8055C0A8":
+
+	.4byte 0x546F704C
+	.4byte 0

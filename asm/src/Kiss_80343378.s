@@ -1192,3 +1192,26 @@ lbl_80344378:
 /* 80344388 003401C8  7C 08 03 A6 */	mtlr r0
 /* 8034438C 003401CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80344390 003401D0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "__vt__Q24util211StateFactoryArg5<Q24util6IState,Q53scn4step4hero12interference9StateKiss,PQ43scn4step4hero4Hero,Q33hel4math7Vector3,Q33hel4math7Vector3,Q24util35ObjRefHandle<Q43scn4step4hero4Hero>,Q43scn4step4hero11KissContext>"
+"__vt__Q24util211StateFactoryArg5<Q24util6IState,Q53scn4step4hero12interference9StateKiss,PQ43scn4step4hero4Hero,Q33hel4math7Vector3,Q33hel4math7Vector3,Q24util35ObjRefHandle<Q43scn4step4hero4Hero>,Q43scn4step4hero11KissContext>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util211StateFactoryArg5<Q24util6IState,Q53scn4step4hero12interference9StateKiss,PQ43scn4step4hero4Hero,Q33hel4math7Vector3,Q33hel4math7Vector3,Q24util35ObjRefHandle<Q43scn4step4hero4Hero>,Q43scn4step4hero11KissContext>Fv"
+	.4byte "create__Q24util211StateFactoryArg5<Q24util6IState,Q53scn4step4hero12interference9StateKiss,PQ43scn4step4hero4Hero,Q33hel4math7Vector3,Q33hel4math7Vector3,Q24util35ObjRefHandle<Q43scn4step4hero4Hero>,Q43scn4step4hero11KissContext>Fv"
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@56609"
+"@56609":
+
+	.byte 0x00
+
+.global "@56610"
+"@56610":
+
+	.balign 4
+	.4byte 0

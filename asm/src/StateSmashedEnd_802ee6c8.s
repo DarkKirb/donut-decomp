@@ -234,3 +234,17 @@ lbl_802EE9EC:
 .global procFixPos__Q53scn4step5enemy9waddledee15StateSmashedEndFv
 procFixPos__Q53scn4step5enemy9waddledee15StateSmashedEndFv:
 /* 802EEA04 002EA844  4B FA 41 98 */	b procFixPos__Q53scn4step5enemy6common12StateLandingFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy9waddledee15StateSmashedEnd
+__vt__Q53scn4step5enemy9waddledee15StateSmashedEnd:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy9waddledee15StateSmashedEndFv
+	.4byte procAnim__Q53scn4step5enemy9waddledee15StateSmashedEndFv
+	.4byte procMove__Q43scn4step5enemy9StateBaseFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy9waddledee15StateSmashedEndFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

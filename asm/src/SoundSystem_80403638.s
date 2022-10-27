@@ -490,3 +490,9 @@ lbl_80403C64:
 /* 80403C68 003FFAA8  7C 08 03 A6 */	mtlr r0
 /* 80403C6C 003FFAAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80403C70 003FFAB0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sbss, "", @nobits  # 0x8055C6E0 - 0x8055DF80 ; 0x000018A0
+.global "t_pauseCounter__25@unnamed@SoundSystem_cpp@"
+"t_pauseCounter__25@unnamed@SoundSystem_cpp@":
+	.skip 0x8

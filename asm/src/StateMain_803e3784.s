@@ -604,3 +604,65 @@ procObjCollReact__Q53scn4step6weapon12sparkshotlv39StateMainFv:
 .global __dt__Q53scn4step6weapon12sparkshotlv39StateMainFv
 __dt__Q53scn4step6weapon12sparkshotlv39StateMainFv:
 /* 803E3F60 003DFDA0  4B FF 4A E0 */	b __dt__Q43scn4step6weapon11StateNormalFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain
+__vt__Q53scn4step6weapon20enemywaterbulletwarp9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon20enemywaterbulletwarp9StateMainFv
+	.4byte procAnim__Q43scn4step6weapon9StateBaseFv
+	.4byte procMove__Q43scn4step6weapon9StateBaseFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q43scn4step6weapon9StateBaseFv
+	.4byte procObjCollReact__Q43scn4step6weapon9StateBaseFv
+
+.global __vt__Q53scn4step6weapon15cutterfinalwave9StateMain
+__vt__Q53scn4step6weapon15cutterfinalwave9StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procAnim__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procMove__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon15cutterfinalwave9StateMainFv
+
+.global __vt__Q53scn4step6weapon12sparkshotlv19StateMain
+__vt__Q53scn4step6weapon12sparkshotlv19StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv19StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv19StateMainFv
+
+.global __vt__Q53scn4step6weapon12sparkshotlv29StateMain
+__vt__Q53scn4step6weapon12sparkshotlv29StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv29StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv29StateMainFv
+
+.global __vt__Q53scn4step6weapon12sparkshotlv39StateMain
+__vt__Q53scn4step6weapon12sparkshotlv39StateMain:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procAnim__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procMove__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procConstraint__Q43scn4step6weapon9StateBaseFv
+	.4byte procFixPos__Q53scn4step6weapon12sparkshotlv39StateMainFv
+	.4byte procObjCollReact__Q53scn4step6weapon12sparkshotlv39StateMainFv

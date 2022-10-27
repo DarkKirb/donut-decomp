@@ -641,3 +641,111 @@ lbl_8021C8D8:
 .global "__dt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
 "__dt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv":
 /* 8021C950 00218790  4B FC C7 D4 */	b "__dt__Q43std3tr16detail362function_imp<PFv_b,Q43std3tr16detail318bound_func<b,Q43std3tr16detail56mem_fn_0_c<b,Q33scn19challengefileselect13DeleteConfirm>,Q33std3tr1215tuple<Q33std3tr161reference_wrapper<Q33scn19challengefileselect13DeleteConfirm>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@55596_80463800"
+"@55596_80463800":
+
+	.4byte 0x68697374
+	.4byte 0x6F72792F
+	.4byte 0x56696577
+	.4byte 0
+	.4byte 0x5061636B
+	.4byte 0x6167654C
+	.4byte 0x69737454
+	.4byte 0x69746C65
+	.4byte 0
+	.4byte 0x5469746C
+	.4byte 0x65536861
+	.4byte 0x646F7700
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isPushEnd__Q34info6common10ButtonHelpCFv
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte setColor__Q23sfx4FadeFRC8_GXColor
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte setFadeOut__Q23sfx4FadeFUl
+	.4byte 0
+	.4byte 0xFFFFFFFF
+	.4byte isEnd__Q23sfx4FadeCFv
+
+.global "__vt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>"
+"__vt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte "clone__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFv"
+	.4byte "clone__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>CFPv"
+	.4byte "__cl__Q43std3tr16detail330function_imp<PFv_b,Q43std3tr16detail286bound_func<b,Q43std3tr16detail40mem_fn_0_c<b,Q34info6common10ButtonHelp>,Q33std3tr1199tuple<Q33std3tr145reference_wrapper<Q34info6common10ButtonHelp>,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat,Q33std3tr13nat>>,0,0>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x4E573452
+	.4byte 0x3A506F69
+	.4byte 0x6E746572
+	.4byte 0x206D7573
+	.4byte 0x74206E6F
+	.4byte 0x74206265
+	.4byte 0x204E554C
+	.4byte 0x4C202870
+	.4byte 0x29000000
+	.4byte 0x4C696E6B
+	.4byte 0x4C697374
+	.4byte 0x2E680000
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@55597_80558D80"
+"@55597_80558D80":
+
+	.4byte 0x42617365
+	.4byte 0
+
+.global "@55598"
+"@55598":
+
+	.4byte 0x4261636B
+	.4byte 0x4E000000
+
+.global "@55599"
+"@55599":
+
+	.4byte 0x5469746C
+	.4byte 0x65000000
+
+.global "@55602"
+"@55602":
+
+	.4byte 0x57616974
+	.4byte 0

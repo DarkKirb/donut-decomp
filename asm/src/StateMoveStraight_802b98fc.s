@@ -171,3 +171,17 @@ lbl_802B9B30:
 .global __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv
 __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv:
 /* 802B9B44 002B5984  4B FD 7E 74 */	b __dt__Q53scn4step5enemy6common15StateCreditWalkFv
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global __vt__Q53scn4step5enemy5gordo17StateMoveStraight
+__vt__Q53scn4step5enemy5gordo17StateMoveStraight:
+
+	.4byte 0
+	.4byte 0
+	.4byte __dt__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.4byte procAnim__Q43scn4step5enemy9StateBaseFv
+	.4byte procMove__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
+	.4byte procFixPos__Q53scn4step5enemy5gordo17StateMoveStraightFv
+	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv

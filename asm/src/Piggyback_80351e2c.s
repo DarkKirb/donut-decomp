@@ -1940,3 +1940,41 @@ lbl_80353788:
 /* 80353794 0034F5D4  7C 08 03 A6 */	mtlr r0
 /* 80353798 0034F5D8  38 21 00 30 */	addi r1, r1, 0x30
 /* 8035379C 0034F5DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@61676"
+"@61676":
+
+	.4byte lbl_80352B68
+	.4byte lbl_80352AE4
+	.4byte lbl_80352B3C
+	.4byte lbl_80352B68
+	.4byte lbl_80352AE4
+	.4byte lbl_80352B10
+	.4byte lbl_80352B68
+	.4byte lbl_80352B68
+	.4byte lbl_80352AE4
+	.4byte lbl_80352AE4
+	.4byte lbl_80352B68
+	.4byte lbl_80352B3C
+	.4byte lbl_80352B68
+	.4byte lbl_80352B68
+	.4byte lbl_80352B68
+	.4byte lbl_80352B68
+	.4byte lbl_80352B68
+	.4byte lbl_80352B10
+	.4byte lbl_80352B68
+	.4byte lbl_80352B10
+.include "macros.inc"
+
+.section .sdata, "wa"  # 0x80556420 - 0x8055C6E0 ; 0x000062C0
+.global "@58605_8055AA28"
+"@58605_8055AA28":
+
+	.4byte 0xBF800000
+
+.global "@58606_8055AA2C"
+"@58606_8055AA2C":
+
+	.4byte 0x3F800000

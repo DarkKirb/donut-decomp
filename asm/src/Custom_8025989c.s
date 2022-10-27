@@ -400,3 +400,129 @@ lbl_80259DC4:
 .global "__dt__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>Fv"
 "__dt__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>Fv":
 /* 80259DE0 00255C20  4B FD 48 C0 */	b "__dt__Q24util89StateFactoryArg1<Q24util6IState,Q53scn4step4boss6common9StateWait,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.global "@56473_80469438"
+"@56473_80469438":
+
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563426F
+	.4byte 0x73735275
+	.4byte 0x73684578
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x65634578
+	.4byte 0
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563416E
+	.4byte 0x67727945
+	.4byte 0x78000000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563426F
+	.4byte 0x73735275
+	.4byte 0x73680000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x65630000
+	.4byte 0x53636E2E
+	.4byte 0x53746570
+	.4byte 0x2E426F73
+	.4byte 0x732E5761
+	.4byte 0x74657247
+	.4byte 0x616C626F
+	.4byte 0x726F732E
+	.4byte 0x42726169
+	.4byte 0x6E2E4578
+	.4byte 0x6563416E
+	.4byte 0x67727900
+	.4byte 0
+
+.global "__vt__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>"
+"__vt__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>":
+
+	.4byte 0
+	.4byte 0
+	.4byte "__dt__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>Fv"
+	.4byte "create__Q24util130StateFactoryArg2<Q24util6IState,Q53scn4step4boss6common9StateDead,PQ43scn4step4boss4Boss,Q53scn4step4boss13watergalboros8NodeKind>Fv"
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__Q53scn4step4boss13watergalboros6Custom
+__vt__Q53scn4step4boss13watergalboros6Custom:
+
+	.4byte 0
+	.4byte 0
+	.4byte GetRuntimeTypeInfo__Q53scn4step4boss13watergalboros6CustomCFv
+	.4byte __dt__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onInit__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onAppear__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onStart__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onDamage__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onDead__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onStateChange__Q43scn4step4boss10CustomBaseFv
+	.4byte onScriptRequested__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopStart__Q43scn4step4boss10CustomBaseFv
+	.4byte onHitStopEnd__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopStarted__Q43scn4step4boss10CustomBaseFv
+	.4byte onObjStopFinished__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcAnim__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onProcMove__Q43scn4step4boss10CustomBaseFv
+	.4byte onProcFixPos__Q53scn4step4boss13watergalboros6CustomFv
+	.4byte onProcObjCollReact__Q43scn4step4boss10CustomBaseFv
+	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
+	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
+	.4byte 0x6E6F206E
+	.4byte 0x616D6520
+	.4byte 0x636C6173
+	.4byte 0x73000000
+	.4byte 0

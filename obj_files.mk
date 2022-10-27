@@ -1120,7 +1120,7 @@ $(BUILD_DIR)/asm/src/scn/history/Controller_802079f4.o \
 $(BUILD_DIR)/asm/src/scn/history/EffectManager_80207ab0.o \
 $(BUILD_DIR)/asm/src/scn/history/G3DRootSet_80207f3c.o \
 $(BUILD_DIR)/asm/src/scn/history/Input_80208074.o \
-$(BUILD_DIR)/asm/src/Kirby_80208340.o \
+$(BUILD_DIR)/asm/src/scn/history/Kirby_80208340.o \
 $(BUILD_DIR)/asm/src/Main_80209c64.o \
 $(BUILD_DIR)/asm/src/News_8020ca58.o \
 $(BUILD_DIR)/asm/src/Package_8020d2c4.o \
@@ -1161,7 +1161,7 @@ $(BUILD_DIR)/asm/src/scn/step/ContextHero_802210e8.o \
 $(BUILD_DIR)/asm/src/scn/step/ContextLvMap_80221338.o \
 $(BUILD_DIR)/asm/src/scn/step/ContextMode_802213bc.o \
 $(BUILD_DIR)/asm/src/scn/step/GridPos_802214bc.o \
-$(BUILD_DIR)/asm/src/LevelKindUtil_80221668.o \
+$(BUILD_DIR)/asm/src/scn/step/LevelKindUtil_80221668.o \
 $(BUILD_DIR)/asm/src/MaproPos_8022169c.o \
 $(BUILD_DIR)/asm/src/MaproRect_802216f4.o \
 $(BUILD_DIR)/asm/src/SceneStep_802217a4.o \
@@ -1436,10 +1436,10 @@ $(BUILD_DIR)/asm/src/scn/step/chara/GroundChecker_8026e6bc.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/HitPoint_8026eae0.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/HitStop_8026ece8.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/Invincible_8026ee48.o \
-$(BUILD_DIR)/asm/src/Knockback_8026efa8.o \
-$(BUILD_DIR)/asm/src/LandConstraint_8026f0f4.o \
-$(BUILD_DIR)/asm/src/Lifetime_8026f618.o \
-$(BUILD_DIR)/asm/src/Location_8026f65c.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/Knockback_8026efa8.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/LandConstraint_8026f0f4.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/Lifetime_8026f618.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/Location_8026f65c.o \
 $(BUILD_DIR)/asm/src/MapCollConstant_8026f748.o \
 $(BUILD_DIR)/asm/src/MapCollResult_8026f748.o \
 $(BUILD_DIR)/asm/src/MintEffect_8026f860.o \
@@ -2328,10 +2328,10 @@ $(BUILD_DIR)/asm/src/scn/step/hero/Invincible_80342180.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/InvisibleControl_803429d0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/ItemCatcher_80342aa0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/ItemCollReact_80342c70.o \
-$(BUILD_DIR)/asm/src/Kiss_80343378.o \
-$(BUILD_DIR)/asm/src/LandAttribute_80344394.o \
-$(BUILD_DIR)/asm/src/Landing_80344a84.o \
-$(BUILD_DIR)/asm/src/LogoutController_80344c44.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/Kiss_80343378.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/LandAttribute_80344394.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/Landing_80344a84.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/LogoutController_80344c44.o \
 $(BUILD_DIR)/asm/src/Mahoroa_80344e68.o \
 $(BUILD_DIR)/asm/src/Manager_80344fe8.o \
 $(BUILD_DIR)/asm/src/MapColl_80348e30.o \
@@ -2398,7 +2398,7 @@ $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dee_8035bce8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dynamics_8035c0fc.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Fighter_8035c160.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Hammer_8035c578.o \
-$(BUILD_DIR)/asm/src/Kirby_8035c634.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Kirby_8035c634.o \
 $(BUILD_DIR)/asm/src/Meta_8035c77c.o \
 $(BUILD_DIR)/asm/src/Parasol_8035c8ac.o \
 $(BUILD_DIR)/asm/src/Spark_8035c964.o \
@@ -2668,7 +2668,7 @@ $(BUILD_DIR)/asm/src/scn/step/info/challenge/CountDown_803b1d58.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn_803b1ff8.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/GhostIcon_803b2578.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/Goal_803b3498.o \
-$(BUILD_DIR)/asm/src/Lose_803b36c8.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Lose_803b36c8.o \
 $(BUILD_DIR)/asm/src/MasterIcon_803b38b8.o \
 $(BUILD_DIR)/asm/src/Medal_803b4734.o \
 $(BUILD_DIR)/asm/src/PassageTime_803b4aa0.o \
@@ -2689,7 +2689,7 @@ $(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainCursor_803bcf58.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainUtil_803bd338.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/Frame_803bd588.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/FrameControl_803bdf18.o \
-$(BUILD_DIR)/asm/src/LvMap_803bdfd8.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/LvMap_803bdfd8.o \
 $(BUILD_DIR)/asm/src/PlayerIcon_803be5fc.o \
 $(BUILD_DIR)/asm/src/Ranking_803bea40.o \
 $(BUILD_DIR)/asm/src/RankingPanel_803bf434.o \
@@ -2738,8 +2738,8 @@ $(BUILD_DIR)/asm/src/scn/step/map/DecorationDataAccessor_803c9bd8.o \
 $(BUILD_DIR)/asm/src/scn/step/map/EnemyDataAccessor_803c9d34.o \
 $(BUILD_DIR)/asm/src/scn/step/map/GimmickDataAccessor_803c9d48.o \
 $(BUILD_DIR)/asm/src/scn/step/map/ItemDataAccessor_803ca19c.o \
-$(BUILD_DIR)/asm/src/KindUtil_803ca1b0.o \
-$(BUILD_DIR)/asm/src/LandManager_803ca68c.o \
+$(BUILD_DIR)/asm/src/scn/step/map/KindUtil_803ca1b0.o \
+$(BUILD_DIR)/asm/src/scn/step/map/LandManager_803ca68c.o \
 $(BUILD_DIR)/asm/src/MemManager_803ca710.o \
 $(BUILD_DIR)/asm/src/MoveGroupAccessor_803ca780.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/AddOnMint_803ca898.o \
@@ -2893,7 +2893,7 @@ $(BUILD_DIR)/asm/src/StateReady_803f0788.o \
 $(BUILD_DIR)/asm/src/StateWait_803f1074.o \
 $(BUILD_DIR)/asm/src/Manager_803f11e0.o \
 $(BUILD_DIR)/asm/src/SceneStrap_803f20ec.o \
-$(BUILD_DIR)/asm/src/Loader_803f2834.o \
+$(BUILD_DIR)/asm/src/scn/vc/Loader_803f2834.o \
 $(BUILD_DIR)/asm/src/Main_803f2894.o \
 $(BUILD_DIR)/asm/src/SceneVC_803f28f0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_803f2b1c.o \
@@ -2998,7 +2998,7 @@ $(BUILD_DIR)/asm/src/scn/history/BG_80560008.o \
 $(BUILD_DIR)/asm/src/scn/history/CameraCtrl_80560018.o \
 $(BUILD_DIR)/asm/src/scn/history/Component_80560038.o \
 $(BUILD_DIR)/asm/src/scn/history/EffectManager_80560040.o \
-$(BUILD_DIR)/asm/src/Kirby_80560048.o \
+$(BUILD_DIR)/asm/src/scn/history/Kirby_80560048.o \
 $(BUILD_DIR)/asm/src/Main_805600c0.o \
 $(BUILD_DIR)/asm/src/News_805600d8.o \
 $(BUILD_DIR)/asm/src/Package_805600e0.o \
@@ -3148,8 +3148,8 @@ $(BUILD_DIR)/asm/src/scn/step/chara/DamageInfo_80560c58.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/FreeRotController_80560c60.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/GroundChecker_80560c78.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/HitPoint_80560c88.o \
-$(BUILD_DIR)/asm/src/Knockback_80560c90.o \
-$(BUILD_DIR)/asm/src/LandConstraint_80560cb0.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/Knockback_80560c90.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/LandConstraint_80560cb0.o \
 $(BUILD_DIR)/asm/src/MapCollConstant_80560cb8.o \
 $(BUILD_DIR)/asm/src/Model_80560cd0.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80560cd8.o \
@@ -3567,9 +3567,9 @@ $(BUILD_DIR)/asm/src/scn/step/hero/InfoUtil_80562c20.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/Invincible_80562c28.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/ItemCatcher_80562c30.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/ItemCollReact_80562c38.o \
-$(BUILD_DIR)/asm/src/Kiss_80562c48.o \
-$(BUILD_DIR)/asm/src/LandAttribute_80562c58.o \
-$(BUILD_DIR)/asm/src/Landing_80562c60.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/Kiss_80562c48.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/LandAttribute_80562c58.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/Landing_80562c60.o \
 $(BUILD_DIR)/asm/src/Manager_80562c68.o \
 $(BUILD_DIR)/asm/src/MapColl_80562cb0.o \
 $(BUILD_DIR)/asm/src/MintUtility_80562d08.o \

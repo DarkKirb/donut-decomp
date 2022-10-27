@@ -1103,7 +1103,7 @@ $(BUILD_DIR)/asm/src/scn/grandtitle/CharaManager_80202454.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/CinemaScope_80202ec4.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/Commander_80202f1c.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/Component_8020384c.o \
-$(BUILD_DIR)/asm/src/EffectManager_802043e4.o \
+$(BUILD_DIR)/asm/src/scn/grandtitle/EffectManager_802043e4.o \
 $(BUILD_DIR)/asm/src/Flash_802049ac.o \
 $(BUILD_DIR)/asm/src/G3DRootSet_80205020.o \
 $(BUILD_DIR)/asm/src/Main_802054a0.o \
@@ -1117,7 +1117,7 @@ $(BUILD_DIR)/asm/src/scn/history/CameraCtrl_8020729c.o \
 $(BUILD_DIR)/asm/src/scn/history/Chronology_80207464.o \
 $(BUILD_DIR)/asm/src/scn/history/Component_802075e0.o \
 $(BUILD_DIR)/asm/src/scn/history/Controller_802079f4.o \
-$(BUILD_DIR)/asm/src/EffectManager_80207ab0.o \
+$(BUILD_DIR)/asm/src/scn/history/EffectManager_80207ab0.o \
 $(BUILD_DIR)/asm/src/G3DRootSet_80207f3c.o \
 $(BUILD_DIR)/asm/src/Input_80208074.o \
 $(BUILD_DIR)/asm/src/Kirby_80208340.o \
@@ -1190,7 +1190,7 @@ $(BUILD_DIR)/asm/src/scn/step/boss/DamageInvincible_8022f0ec.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/DamagePrevent_8022f240.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/DeadFlash_8022f3ac.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Desc_8022f404.o \
-$(BUILD_DIR)/asm/src/Effect_8022f4dc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/Effect_8022f4dc.o \
 $(BUILD_DIR)/asm/src/Flash_8022f80c.o \
 $(BUILD_DIR)/asm/src/Gear_8022fb78.o \
 $(BUILD_DIR)/asm/src/GearManager_8022ff30.o \
@@ -1234,9 +1234,9 @@ $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AddOnMint_80239b20.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AttackBallCtrl_80239e30.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AvoidEnemyCtrl_8023ae58.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/Custom_8023b510.o \
-$(BUILD_DIR)/asm/src/EmotionCtrl_8023c43c.o \
-$(BUILD_DIR)/asm/src/EnemySummonCtrl_8023ca74.o \
-$(BUILD_DIR)/asm/src/EyeCtrl_8023d5b4.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/EmotionCtrl_8023c43c.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/EnemySummonCtrl_8023ca74.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/EyeCtrl_8023d5b4.o \
 $(BUILD_DIR)/asm/src/ItemCatcher_8023d7a4.o \
 $(BUILD_DIR)/asm/src/ModelDesc_8023dac8.o \
 $(BUILD_DIR)/asm/src/MoveCtrl_8023dba0.o \
@@ -1312,7 +1312,7 @@ $(BUILD_DIR)/asm/src/StateHide_8024bf5c.o \
 $(BUILD_DIR)/asm/src/StateWaitFar_8024c0b8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/AddOnMint_8024c390.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom_8024c994.o \
-$(BUILD_DIR)/asm/src/EnemyCtrl_8024d41c.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/EnemyCtrl_8024d41c.o \
 $(BUILD_DIR)/asm/src/ModelDesc_8024d75c.o \
 $(BUILD_DIR)/asm/src/StateCall_8024d82c.o \
 $(BUILD_DIR)/asm/src/StateDash_8024dfec.o \
@@ -1369,8 +1369,8 @@ $(BUILD_DIR)/asm/src/scn/step/boss/whispy/AddOnMint_8025b0a0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/CaptureCtrl_8025b8f0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/Custom_8025bb08.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/DamageEyeCtrl_8025c16c.o \
-$(BUILD_DIR)/asm/src/EnemyCtrl_8025c25c.o \
-$(BUILD_DIR)/asm/src/EnemyReqBuff_8025c56c.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/whispy/EnemyCtrl_8025c25c.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/whispy/EnemyReqBuff_8025c56c.o \
 $(BUILD_DIR)/asm/src/FaceRotCtrl_8025c6a4.o \
 $(BUILD_DIR)/asm/src/ModelDesc_8025c810.o \
 $(BUILD_DIR)/asm/src/StateAppear_8025c8f8.o \
@@ -1395,7 +1395,7 @@ $(BUILD_DIR)/asm/src/TSCtrl_8025f188.o \
 $(BUILD_DIR)/asm/src/WindCtrl_8025f310.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/zankibble/AddOnMint_8025f540.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/zankibble/Custom_80260388.o \
-$(BUILD_DIR)/asm/src/EnemyCtrl_80260810.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/EnemyCtrl_80260810.o \
 $(BUILD_DIR)/asm/src/ModelDesc_80260d68.o \
 $(BUILD_DIR)/asm/src/StateAttack_80260e38.o \
 $(BUILD_DIR)/asm/src/StateCatch_80261650.o \
@@ -1430,7 +1430,7 @@ $(BUILD_DIR)/asm/src/scn/step/chara/BodyColl_8026cdb4.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/CliffChecker_8026d514.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/Culling_8026d728.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/DamageInfo_8026db60.o \
-$(BUILD_DIR)/asm/src/Effect_8026dea4.o \
+$(BUILD_DIR)/asm/src/scn/step/chara/Effect_8026dea4.o \
 $(BUILD_DIR)/asm/src/FreeRotController_8026e350.o \
 $(BUILD_DIR)/asm/src/GroundChecker_8026e6bc.o \
 $(BUILD_DIR)/asm/src/HitPoint_8026eae0.o \
@@ -1481,7 +1481,7 @@ $(BUILD_DIR)/asm/src/PermSoundSE_80278310.o \
 $(BUILD_DIR)/asm/src/PreLoadReq_802783c4.o \
 $(BUILD_DIR)/asm/src/SceneChanger_80278514.o \
 $(BUILD_DIR)/asm/src/Updater_802795f4.o \
-$(BUILD_DIR)/asm/src/EnemyKiller_8027a434.o \
+$(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_8027a434.o \
 $(BUILD_DIR)/asm/src/GeneralDrawer_8027a5d0.o \
 $(BUILD_DIR)/asm/src/ObjInfoRepos_8027a9ac.o \
 $(BUILD_DIR)/asm/src/ObjPlacement_8027ab34.o \
@@ -1500,8 +1500,8 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/CustomFactory_80281fbc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFieldReact_80283e30.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFlash_80284360.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/Desc_802845e0.o \
-$(BUILD_DIR)/asm/src/Effect_802846f0.o \
-$(BUILD_DIR)/asm/src/Enemy_80284898.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/Effect_802846f0.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/Enemy_80284898.o \
 $(BUILD_DIR)/asm/src/Flash_80288214.o \
 $(BUILD_DIR)/asm/src/GenerateUtil_8028862c.o \
 $(BUILD_DIR)/asm/src/HitStopCallback_80288a20.o \
@@ -2150,7 +2150,7 @@ $(BUILD_DIR)/asm/src/StateCircle_802f2b4c.o \
 $(BUILD_DIR)/asm/src/StateSlant_802f30c0.o \
 $(BUILD_DIR)/asm/src/StateStraight_802f348c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/AddOnMint_802f395c.o \
-$(BUILD_DIR)/asm/src/Effect_802f39a0.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Effect_802f39a0.o \
 $(BUILD_DIR)/asm/src/FallLandController_802f4058.o \
 $(BUILD_DIR)/asm/src/Manager_802f4254.o \
 $(BUILD_DIR)/asm/src/Model_802f70c8.o \
@@ -2217,7 +2217,7 @@ $(BUILD_DIR)/asm/src/Manager_8030d4e0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_8030d910.o \
 $(BUILD_DIR)/asm/src/Manager_8030e550.o \
 $(BUILD_DIR)/asm/src/Result_8030ea10.o \
-$(BUILD_DIR)/asm/src/EnemyList_8030ea60.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/EnemyList_8030ea60.o \
 $(BUILD_DIR)/asm/src/Manager_8030eb08.o \
 $(BUILD_DIR)/asm/src/Ghost_8030f2d0.o \
 $(BUILD_DIR)/asm/src/Manager_8030fb9c.o \
@@ -2300,8 +2300,8 @@ $(BUILD_DIR)/asm/src/scn/step/hero/DamageFieldReact_80334b34.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/DamageFlash_80335078.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/Dead_803351fc.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/Door_803356e4.o \
-$(BUILD_DIR)/asm/src/Effect_80335e94.o \
-$(BUILD_DIR)/asm/src/ExUtil_803364f0.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/Effect_80335e94.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/ExUtil_803364f0.o \
 $(BUILD_DIR)/asm/src/Flash_803365a0.o \
 $(BUILD_DIR)/asm/src/FloaterRotCtrl_80336c70.o \
 $(BUILD_DIR)/asm/src/FlowSoundCtrl_80336cd4.o \
@@ -2681,12 +2681,12 @@ $(BUILD_DIR)/asm/src/TimeUp_803b5a64.o \
 $(BUILD_DIR)/asm/src/Result_803b5c00.o \
 $(BUILD_DIR)/asm/src/TotalScore_803b84f8.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_803b9934.o \
-$(BUILD_DIR)/asm/src/Explain_803b9ddc.o \
-$(BUILD_DIR)/asm/src/ExplainBase_803ba630.o \
-$(BUILD_DIR)/asm/src/ExplainButton_803bbcb8.o \
-$(BUILD_DIR)/asm/src/ExplainConsole_803bc170.o \
-$(BUILD_DIR)/asm/src/ExplainCursor_803bcf58.o \
-$(BUILD_DIR)/asm/src/ExplainUtil_803bd338.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Explain_803b9ddc.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainBase_803ba630.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainButton_803bbcb8.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole_803bc170.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainCursor_803bcf58.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainUtil_803bd338.o \
 $(BUILD_DIR)/asm/src/Frame_803bd588.o \
 $(BUILD_DIR)/asm/src/FrameControl_803bdf18.o \
 $(BUILD_DIR)/asm/src/LvMap_803bdfd8.o \
@@ -2735,7 +2735,7 @@ $(BUILD_DIR)/asm/src/scn/step/map/BossDataAccessor_803c9030.o \
 $(BUILD_DIR)/asm/src/scn/step/map/DataAccessor_803c9050.o \
 $(BUILD_DIR)/asm/src/scn/step/map/DataFile_803c9a3c.o \
 $(BUILD_DIR)/asm/src/scn/step/map/DecorationDataAccessor_803c9bd8.o \
-$(BUILD_DIR)/asm/src/EnemyDataAccessor_803c9d34.o \
+$(BUILD_DIR)/asm/src/scn/step/map/EnemyDataAccessor_803c9d34.o \
 $(BUILD_DIR)/asm/src/GimmickDataAccessor_803c9d48.o \
 $(BUILD_DIR)/asm/src/ItemDataAccessor_803ca19c.o \
 $(BUILD_DIR)/asm/src/KindUtil_803ca1b0.o \
@@ -2782,8 +2782,8 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/CameraTarget_803d36b0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CustomBase_803d3750.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CustomFactory_803d37e0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/Desc_803d6064.o \
-$(BUILD_DIR)/asm/src/Effect_803d6230.o \
-$(BUILD_DIR)/asm/src/EffectLocatorModelDesc_803d6350.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/Effect_803d6230.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/EffectLocatorModelDesc_803d6350.o \
 $(BUILD_DIR)/asm/src/Flash_803d63f4.o \
 $(BUILD_DIR)/asm/src/HitStopCallback_803d64cc.o \
 $(BUILD_DIR)/asm/src/IndiviUtil_803d6564.o \
@@ -2899,7 +2899,7 @@ $(BUILD_DIR)/asm/src/SceneVC_803f28f0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_803f2b1c.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_803f2cc4.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Component_803f2e80.o \
-$(BUILD_DIR)/asm/src/EffectManager_803f3308.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/EffectManager_803f3308.o \
 $(BUILD_DIR)/asm/src/G3DRootSet_803f3638.o \
 $(BUILD_DIR)/asm/src/Main_803f39f4.o \
 $(BUILD_DIR)/asm/src/SceneGrandMenu_803f3f90.o \
@@ -2907,7 +2907,7 @@ $(BUILD_DIR)/asm/src/Table_803f454c.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BackButton_803f4608.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BG_803f49f8.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Curtain_803f4b24.o \
-$(BUILD_DIR)/asm/src/Explanation_803f4df4.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Explanation_803f4df4.o \
 $(BUILD_DIR)/asm/src/Input_803f54b0.o \
 $(BUILD_DIR)/asm/src/Item_803f5b24.o \
 $(BUILD_DIR)/asm/src/Menu_803f6188.o \
@@ -2988,7 +2988,7 @@ $(BUILD_DIR)/asm/src/scn/grandtitle/Chara_8055ff50.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/CharaManager_8055ff80.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/Commander_8055ff88.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/Component_8055ff90.o \
-$(BUILD_DIR)/asm/src/EffectManager_8055ffa0.o \
+$(BUILD_DIR)/asm/src/scn/grandtitle/EffectManager_8055ffa0.o \
 $(BUILD_DIR)/asm/src/Flash_8055ffa8.o \
 $(BUILD_DIR)/asm/src/Main_8055ffd0.o \
 $(BUILD_DIR)/asm/src/Shadow_8055ffe0.o \
@@ -2997,7 +2997,7 @@ $(BUILD_DIR)/asm/src/Table_8055fff8.o \
 $(BUILD_DIR)/asm/src/scn/history/BG_80560008.o \
 $(BUILD_DIR)/asm/src/scn/history/CameraCtrl_80560018.o \
 $(BUILD_DIR)/asm/src/scn/history/Component_80560038.o \
-$(BUILD_DIR)/asm/src/EffectManager_80560040.o \
+$(BUILD_DIR)/asm/src/scn/history/EffectManager_80560040.o \
 $(BUILD_DIR)/asm/src/Kirby_80560048.o \
 $(BUILD_DIR)/asm/src/Main_805600c0.o \
 $(BUILD_DIR)/asm/src/News_805600d8.o \
@@ -3044,8 +3044,8 @@ $(BUILD_DIR)/asm/src/StateSwingPursuit_80560458.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AttackBallCtrl_80560468.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AvoidEnemyCtrl_80560470.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/Custom_80560478.o \
-$(BUILD_DIR)/asm/src/EmotionCtrl_80560488.o \
-$(BUILD_DIR)/asm/src/EnemySummonCtrl_805604b0.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/EmotionCtrl_80560488.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/EnemySummonCtrl_805604b0.o \
 $(BUILD_DIR)/asm/src/ItemCatcher_805604c8.o \
 $(BUILD_DIR)/asm/src/MoveCtrl_805604d0.o \
 $(BUILD_DIR)/asm/src/ProgressCtrl_80560518.o \
@@ -3114,7 +3114,7 @@ $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint_80560988.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom_80560990.o \
 $(BUILD_DIR)/asm/src/StateQuivery_805609a0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/Custom_805609b8.o \
-$(BUILD_DIR)/asm/src/EnemyCtrl_805609c0.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/whispy/EnemyCtrl_805609c0.o \
 $(BUILD_DIR)/asm/src/FaceRotCtrl_805609d8.o \
 $(BUILD_DIR)/asm/src/StateDead_805609e0.o \
 $(BUILD_DIR)/asm/src/StateGrow_80560a00.o \
@@ -3166,13 +3166,13 @@ $(BUILD_DIR)/asm/src/scn/step/core/BGMController_80560d90.o \
 $(BUILD_DIR)/asm/src/scn/step/core/Drawer_80560da0.o \
 $(BUILD_DIR)/asm/src/G3DRootSet_80560db8.o \
 $(BUILD_DIR)/asm/src/MoveLimit_80560dc8.o \
-$(BUILD_DIR)/asm/src/EnemyKiller_80560dd8.o \
+$(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_80560dd8.o \
 $(BUILD_DIR)/asm/src/GeneralDrawer_80560de0.o \
 $(BUILD_DIR)/asm/src/Table_80560de8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/CaptureReceiver_80560df0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFieldReact_80560df8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFlash_80560e08.o \
-$(BUILD_DIR)/asm/src/Enemy_80560e50.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/Enemy_80560e50.o \
 $(BUILD_DIR)/asm/src/Flash_80560e68.o \
 $(BUILD_DIR)/asm/src/IndiviUtil_80560ea0.o \
 $(BUILD_DIR)/asm/src/Manager_80560ea8.o \
@@ -3752,7 +3752,7 @@ $(BUILD_DIR)/asm/src/Radar_80563950.o \
 $(BUILD_DIR)/asm/src/Result_80563960.o \
 $(BUILD_DIR)/asm/src/TotalScore_80563968.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_80563990.o \
-$(BUILD_DIR)/asm/src/ExplainConsole_80563998.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole_80563998.o \
 $(BUILD_DIR)/asm/src/SphereComplete_805639a0.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Catcher_805639a8.o \
 $(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl_805639b0.o \
@@ -3839,7 +3839,7 @@ $(BUILD_DIR)/asm/src/SceneStrap_805641e0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_805641f0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_80564210.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Component_80564218.o \
-$(BUILD_DIR)/asm/src/EffectManager_80564220.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/EffectManager_80564220.o \
 $(BUILD_DIR)/asm/src/Main_80564228.o \
 $(BUILD_DIR)/asm/src/Table_80564230.o \
 $(BUILD_DIR)/asm/src/Menu_80564240.o \

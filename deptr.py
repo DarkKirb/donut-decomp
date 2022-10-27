@@ -7,6 +7,7 @@
 import re
 import sys
 
+
 def format(symbol):
     illegal_symbols = ('<', '>', '@', '\\', ',', '-')
     symbol.replace("\\", "\\\\")
@@ -16,6 +17,7 @@ def format(symbol):
             break
 
     return symbol
+
 
 if len(sys.argv) != 3:
     print('Usage: %s MAP_FILE ASM_FILE' % sys.argv[0])
@@ -28,7 +30,9 @@ double_labels = set()
 
 with open(sys.argv[1], "r") as mapfile:
     for line in mapfile:
-        match = re.match('  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [0-9a-f]{8} [ 0-9][0-9] ([^ 0-9.][^ ]*)', line)
+        match = re.match(
+            '  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [0-9a-f]{8} [ 0-9][0-9] ([^ 0-9.][^ ]*)',
+            line)
         if match:
             addr = int(match.group(1), 16)
             name = format(match.group(2))

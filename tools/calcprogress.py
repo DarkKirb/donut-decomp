@@ -10,9 +10,6 @@
 # Usage: No arguments needed                                                   #
 ################################################################################
 
-
-
-
 ###############################################
 #                                             #
 #                  Imports                    #
@@ -58,9 +55,9 @@ REGEX_TO_USE = MW_GC_SYMBOL_REGEX
 
 TEXT_SECTIONS = ["init", "text"]
 DATA_SECTIONS = [
-"rodata", "data", "bss", "sdata", "sbss", "sdata2", "sbss2",
-"ctors", "_ctors", "dtors", "ctors$99", "_ctors$99", "ctors$00", "dtors$99",
-"extab_", "extabindex_", "_extab", "_exidx"
+    "rodata", "data", "bss", "sdata", "sbss", "sdata2", "sbss2", "ctors",
+    "_ctors", "dtors", "ctors$99", "_ctors$99", "ctors$00", "dtors$99",
+    "extab_", "extabindex_", "_extab", "_exidx"
 ]
 
 # DOL info
@@ -71,10 +68,10 @@ SECTION_TEXT = 0
 SECTION_DATA = 1
 
 # Progress flavor
-codeFrac = 120              # total code "item" amount
-dataFrac = 37               # total data "item" amount
-codeItem = "energy spheres" # code flavor item
-dataItem = "stages"        # data flavor item
+codeFrac = 120  # total code "item" amount
+dataFrac = 37  # total data "item" amount
+codeItem = "energy spheres"  # code flavor item
+dataItem = "stages"  # data flavor item
 
 ###############################################
 #                                             #
@@ -105,19 +102,18 @@ if __name__ == "__main__":
     for i in range(DATA_SECTION_COUNT):
         data_sizes.append(int.from_bytes(dol_handle.read(4), byteorder='big'))
 
-
-
     # BSS address + length
     bss_start = int.from_bytes(dol_handle.read(4), byteorder='big')
     bss_size = int.from_bytes(dol_handle.read(4), byteorder='big')
     bss_end = bss_start + bss_size
 
-
     dol_code_size = 0
     dol_data_size = 0
     for i in range(DATA_SECTION_COUNT):
         # Ignore sections inside BSS
-        if (data_starts[i] >= bss_start) and (data_starts[i] + data_sizes[i] <= bss_end): continue
+        if (data_starts[i] >= bss_start) and (data_starts[i] + data_sizes[i] <=
+                                              bss_end):
+            continue
         dol_data_size += data_sizes[i]
 
     dol_data_size += bss_size
@@ -135,19 +131,24 @@ if __name__ == "__main__":
 
     # Find first section
     first_section = 0
-    while (symbols[first_section].startswith(".") == False and "section layout" not in symbols[first_section]): first_section += 1
-    assert(first_section < len(symbols)), "Map file contains no sections!!!"
+    while (symbols[first_section].startswith(".") == False
+           and "section layout" not in symbols[first_section]):
+        first_section += 1
+    assert (first_section < len(symbols)), "Map file contains no sections!!!"
 
     cur_object = None
     cur_size = 0
     j = 0
     for i in range(first_section, len(symbols)):
         # New section
-        if (symbols[i].startswith(".") == True or "section layout" in symbols[i]):
+        if (symbols[i].startswith(".") == True
+                or "section layout" in symbols[i]):
             # Grab section name (i.e. ".init section layout" -> "init")
-            sectionName = re.search(r"\.*(?P<Name>\w+)\s", symbols[i]).group("Name")
+            sectionName = re.search(r"\.*(?P<Name>\w+)\s",
+                                    symbols[i]).group("Name")
             # Determine type of section
-            section_type = SECTION_DATA if (sectionName in DATA_SECTIONS) else SECTION_TEXT
+            section_type = SECTION_DATA if (sectionName
+                                            in DATA_SECTIONS) else SECTION_TEXT
         # Parse symbols until we hit the next section declaration
         else:
             if "UNUSED" in symbols[i]: continue
@@ -161,7 +162,8 @@ if __name__ == "__main__":
                     #print(f"Line* {j}: {symbols[j]}")
                 #print(f"Line {i}: {symbols[i]}")
                 continue
-            assert(section_type != None), f"Symbol found outside of a section!!!\n{symbols[i]}"
+            assert (section_type != None
+                    ), f"Symbol found outside of a section!!!\n{symbols[i]}"
             match_obj = re.search(REGEX_TO_USE, symbols[i])
             # Should be a symbol in ASM (so we discard it)
             if (match_obj == None):
@@ -173,7 +175,10 @@ if __name__ == "__main__":
             if last_object != cur_object: continue
             # Is the symbol a file-wide section?
             symb = match_obj.group("Symbol")
-            if (symb.startswith("*fill*")) or (symb.startswith(".") and symb[1:] in TEXT_SECTIONS or symb[1:] in DATA_SECTIONS): continue
+            if (symb.startswith("*fill*")) or (symb.startswith(".")
+                                               and symb[1:] in TEXT_SECTIONS
+                                               or symb[1:] in DATA_SECTIONS):
+                continue
             # For sections that don't start with "."
             if (symb in DATA_SECTIONS): continue
             # If not, we accumulate the file size
@@ -185,15 +190,23 @@ if __name__ == "__main__":
                 decomp_data_size += cur_size
 
     # Calculate percentages
-    codeCompletionPcnt = (decomp_code_size / dol_code_size) # code completion percent
-    dataCompletionPcnt = (decomp_data_size / dol_data_size) # data completion percent
-    bytesPerCodeItem = dol_code_size / codeFrac # bytes per code item
-    bytesPerDataItem = dol_data_size / dataFrac # bytes per data item
+    codeCompletionPcnt = (decomp_code_size / dol_code_size
+                          )  # code completion percent
+    dataCompletionPcnt = (decomp_data_size / dol_data_size
+                          )  # data completion percent
+    bytesPerCodeItem = dol_code_size / codeFrac  # bytes per code item
+    bytesPerDataItem = dol_data_size / dataFrac  # bytes per data item
 
     codeCount = math.floor(decomp_code_size / bytesPerCodeItem)
     dataCount = math.floor(decomp_data_size / bytesPerDataItem)
 
     print("Progress:")
-    print(f"\tCode sections: {decomp_code_size} / {dol_code_size}\tbytes in src ({codeCompletionPcnt:%})")
-    print(f"\tData sections: {decomp_data_size} / {dol_data_size}\tbytes in src ({dataCompletionPcnt:%})")
-    print("\nYou have collected {} out of {} {} and completed {} out of {} {}.".format(codeCount, codeFrac, codeItem, dataCount, dataFrac, dataItem))
+    print(
+        f"\tCode sections: {decomp_code_size} / {dol_code_size}\tbytes in src ({codeCompletionPcnt:%})"
+    )
+    print(
+        f"\tData sections: {decomp_data_size} / {dol_data_size}\tbytes in src ({dataCompletionPcnt:%})"
+    )
+    print(
+        "\nYou have collected {} out of {} {} and completed {} out of {} {}.".
+        format(codeCount, codeFrac, codeItem, dataCount, dataFrac, dataItem))

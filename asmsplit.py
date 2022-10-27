@@ -15,11 +15,16 @@ lastfile = None
 
 with open(sys.argv[1]) as mapfile:
     for mapline in mapfile:
-        match = re.match('  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [0-9a-f]{8} [ 0-9][0-9] [^ ]+ \t(.+)', mapline)
+        match = re.match(
+            '  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [0-9a-f]{8} [ 0-9][0-9] [^ ]+ \t(.+)',
+            mapline)
         if match and match.group(2) != lastfile:
             lastfile = match.group(2)
             addr = int(match.group(1), 16)
-            fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], match.group(2).strip().split(' '))) + f"_{hex(addr)[2:]}" + '.s'
+            fname = basedir + '/'.join(
+                map(lambda s: os.path.splitext(s)[0],
+                    match.group(2).strip().split(
+                        ' '))) + f"_{hex(addr)[2:]}" + '.s'
             filenames[addr] = fname
 
 curfile = open(macros, 'w')
@@ -45,7 +50,7 @@ while asmline := remainder or sys.stdin.readline():
                     curfile = open(fname, 'a')
                     curfile.write('\n')
                 else:
-                    os.makedirs(os.path.dirname(fname), exist_ok = True)
+                    os.makedirs(os.path.dirname(fname), exist_ok=True)
                     curfile = open(fname, 'x')
                     curfile.write('.include "' + macros + '"\n\n')
 
@@ -62,12 +67,15 @@ while asmline := remainder or sys.stdin.readline():
                 elif s == 0: continue
 
                 k = 1
-                while (curaddr + k) not in filenames and k < s: k += 1
+                while (curaddr + k) not in filenames and k < s:
+                    k += 1
                 curaddr += k
 
                 if k < s:
-                    asmline = f + ', 0x' + format(a, 'X') + ', 0x' + format(k, 'X') + '\n'
-                    remainder = f + ', 0x' + format(a + k, 'X') + ', 0x' + format(s - k, 'X') + '\n'
+                    asmline = f + ', 0x' + format(a, 'X') + ', 0x' + format(
+                        k, 'X') + '\n'
+                    remainder = f + ', 0x' + format(
+                        a + k, 'X') + ', 0x' + format(s - k, 'X') + '\n'
             elif trim.startswith(".balign"):
                 _, alignment = asmline.split(' ')
                 alignment = int(alignment)

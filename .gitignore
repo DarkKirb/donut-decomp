@@ -38,3 +38,6 @@ Debug/
 .vs/
 
 ctx.c
+
+.direnv
+result

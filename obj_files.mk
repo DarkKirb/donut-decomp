@@ -1094,11 +1094,12 @@ $(BUILD_DIR)/asm/src/scn/challengetutorial/info/ChoseAbility.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/Manager.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/Tutorial.o \
 \
+$(BUILD_DIR)/asm/src/scn/comic/Main.o \
+$(BUILD_DIR)/asm/src/scn/comic/PageCounter.o \
+$(BUILD_DIR)/asm/src/scn/comic/SceneComic.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/comic/Main_801fd0c8.o \
-$(BUILD_DIR)/asm/src/scn/comic/PageCounter_80200180.o \
-$(BUILD_DIR)/asm/src/scn/comic/SceneComic_80200324.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/AbilityGetFade_802006e0.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/BGLayout_80200874.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/BGModel_80200a34.o \
@@ -2975,7 +2976,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/comic/Main_8055fed0.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/AbilityGetFade_8055ff08.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/BGLayout_8055ff28.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/Block_8055ff30.o \

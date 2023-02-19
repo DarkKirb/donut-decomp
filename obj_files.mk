@@ -1077,8 +1077,8 @@ $(BUILD_DIR)/asm/src/scn/challengeresult/SceneChallengeResult.o \
 \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Manager_801f10c0.o \
-$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Table_801f1484.o \
+$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Manager.o \
+$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Table.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/Manager_801f1584.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/ResultLyt_801f1b2c.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/ScoreLine_801f4594.o \
@@ -2971,8 +2971,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Manager_8055fe50.o \
-$(BUILD_DIR)/asm/src/scn/challengeresult/effect/Table_8055fe60.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/ResultLyt_8055fe68.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/TotalScore_8055fe70.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/SceneChallengeTutorial_8055fe98.o \

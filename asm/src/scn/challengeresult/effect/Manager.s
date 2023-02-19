@@ -262,3 +262,21 @@ drawFront__Q43scn15challengeresult6effect7ManagerFv:
 /* 801F1478 001ED2B8  7C 08 03 A6 */	mtlr r0
 /* 801F147C 001ED2BC  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 801F1480 001ED2C0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52901_8055FE50"
+"@52901_8055FE50":
+
+	.4byte 0x3DCCCCCD
+
+.global "@52902_8055FE54"
+"@52902_8055FE54":
+
+	.4byte 0x447A0000
+
+.global "@52904_8055FE58"
+"@52904_8055FE58":
+
+	.4byte 0xBF800000
+	.4byte 0

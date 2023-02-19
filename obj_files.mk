@@ -1086,15 +1086,16 @@ $(BUILD_DIR)/asm/src/scn/challengeresult/info/TotalScore.o \
 \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/SceneChallengeTutorial.o \
 \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityCursor.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanel.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanelContext.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilitySelect.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/ChoseAbility.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/Manager.o \
+$(BUILD_DIR)/asm/src/scn/challengetutorial/info/Tutorial.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityCursor_801f7048.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanel_801f7670.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanelContext_801f7d10.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilitySelect_801f7d7c.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/ChoseAbility_801f94f4.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/Manager_801f9940.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/Tutorial_801f9d28.o \
 $(BUILD_DIR)/asm/src/scn/comic/Main_801fd0c8.o \
 $(BUILD_DIR)/asm/src/scn/comic/PageCounter_80200180.o \
 $(BUILD_DIR)/asm/src/scn/comic/SceneComic_80200324.o \
@@ -2974,8 +2975,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityCursor_8055fec0.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilitySelect_8055fec8.o \
 $(BUILD_DIR)/asm/src/scn/comic/Main_8055fed0.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/AbilityGetFade_8055ff08.o \
 $(BUILD_DIR)/asm/src/scn/grandtitle/BGLayout_8055ff28.o \

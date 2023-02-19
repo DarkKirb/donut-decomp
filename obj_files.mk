@@ -1075,16 +1075,19 @@ $(BUILD_DIR)/asm/src/scn/challengetitle/effect/Table.o \
 \
 $(BUILD_DIR)/asm/src/scn/challengeresult/SceneChallengeResult.o \
 \
-$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
-\
 $(BUILD_DIR)/asm/src/scn/challengeresult/effect/Manager.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/effect/Table.o \
+\
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/Manager.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/ResultLyt.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/ScoreLine.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/TimeString.o \
 $(BUILD_DIR)/asm/src/scn/challengeresult/info/TotalScore.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/SceneChallengeTutorial_801f6780.o \
+\
+$(BUILD_DIR)/asm/src/scn/challengetutorial/SceneChallengeTutorial.o \
+\
+$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
+\
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityCursor_801f7048.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanel_801f7670.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityPanelContext_801f7d10.o \
@@ -2971,7 +2974,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/challengetutorial/SceneChallengeTutorial_8055fe98.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilityCursor_8055fec0.o \
 $(BUILD_DIR)/asm/src/scn/challengetutorial/info/AbilitySelect_8055fec8.o \
 $(BUILD_DIR)/asm/src/scn/comic/Main_8055fed0.o \

@@ -1773,12 +1773,13 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateBack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateFly.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/StateShot.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/CharaParam_802aec08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/Custom_802aecc0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc_802aee80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/StateShot_802aefbc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint_802af168.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainAttack_802af3f4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMove_802af4dc.o \
@@ -3028,8 +3029,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/CharaParam_805617e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc_805617e8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint_805617f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMoveAttack_805617f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/CharaParam_80561808.o \

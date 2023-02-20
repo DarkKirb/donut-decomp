@@ -377,3 +377,45 @@ __vt__Q53scn4step5enemy6sodory15StateWalkAround:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6sodory15StateWalkAroundFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56319_80562390"
+"@56319_80562390":
+
+	.4byte 0x3F000000
+
+.global "@56356_80562394"
+"@56356_80562394":
+
+	.4byte 0
+
+.global "@56357_80562398"
+"@56357_80562398":
+
+	.4byte 0x3DCCCCCD
+
+.global "@56358_8056239C"
+"@56358_8056239C":
+
+	.4byte 0x3F800000
+
+.global "@56359_805623A0"
+"@56359_805623A0":
+
+	.4byte 0xBF800000
+
+.global "@56360"
+"@56360":
+
+	.4byte 0x40200000
+
+.global "@56361_805623A8"
+"@56361_805623A8":
+
+	.4byte 0x40000000
+
+.global "@56362_805623AC"
+"@56362_805623AC":
+
+	.4byte 0xC0000000

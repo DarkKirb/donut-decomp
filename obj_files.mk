@@ -2131,26 +2131,28 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJump.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJumpStart.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateLanding.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyStraight.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainWalkAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateGroundAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWalkAround.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/BrainFly_802e3540.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/CharaParam_802e36a4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/Custom_802e372c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/ModelDesc_802e3840.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyAround_802e3928.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyStraight_802e3e98.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/AddOnMint_802e42ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainFly_802e4810.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainWait_802e495c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/BrainWalkAround_802e4b08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/CharaParam_802e4c3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/Custom_802e4ccc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/ModelDesc_802e53d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateAttack_802e54b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateFly_802e6080.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateGroundAttack_802e62b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWait_802e6428.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWalkAround_802e6568.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/AddOnMint_802e6a60.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/BrainCreditPraise_802e6bec.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/CharaParam_802e6cb8.o \
@@ -3063,14 +3065,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyAround_80562300.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyStraight_80562310.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/AddOnMint_80562320.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/CharaParam_80562328.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/Custom_80562330.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateAttack_80562348.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateFly_80562388.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWalkAround_80562390.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/CharaParam_805623b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/Custom_805623b8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StateBound_805623d0.o \

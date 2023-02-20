@@ -1380,19 +1380,20 @@ $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollJump.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoChase.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoRise.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/CaptureCtrl.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateAttackJoint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateCapture.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateCaptureAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateQuivery.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateVomit.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/WeaponCtrl.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint_80258964.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/CaptureCtrl_80259634.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom_8025989c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/ModelDesc_80259de4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateAttack_80259eb4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateAttackJoint_8025a0b4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateCapture_8025a130.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateCaptureAttack_8025a438.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateQuivery_8025a814.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateVomit_8025ab28.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/WeaponCtrl_8025acd8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/AddOnMint_8025b0a0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/CaptureCtrl_8025b8f0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/Custom_8025bb08.o \
@@ -2997,9 +2998,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint_80560988.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom_80560990.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateQuivery_805609a0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/Custom_805609b8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/EnemyCtrl_805609c0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/FaceRotCtrl_805609d8.o \

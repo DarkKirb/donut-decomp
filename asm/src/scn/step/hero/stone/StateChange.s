@@ -524,3 +524,11 @@ __vt__Q53scn4step4hero5stone11StateChange:
 	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@58219_805635C8"
+"@58219_805635C8":
+
+	.4byte 0
+	.4byte 0

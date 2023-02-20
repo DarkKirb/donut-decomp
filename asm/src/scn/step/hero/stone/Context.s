@@ -15,3 +15,11 @@ __ct__Q53scn4step4hero5stone7ContextFRQ53scn4step4hero5stone21GearNodeRandomChan
 /* 8038F96C 0038B7AC  38 00 00 01 */	li r0, 0x1
 /* 8038F970 0038B7B0  98 03 00 14 */	stb r0, 0x14(r3)
 /* 8038F974 0038B7B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48858_805635C0"
+"@48858_805635C0":
+
+	.4byte 0
+	.4byte 0

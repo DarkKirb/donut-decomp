@@ -2716,20 +2716,21 @@ $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnderEnd.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateShot.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/Context.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/GearNodeRandomChanger.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateChange.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateFallScrewStart.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateSlip.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateStartJump.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/Stone.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/stone/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/Context_8038f948.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/GearNodeRandomChanger_8038f978.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateChange_8038fa98.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateEnd_803900d4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateFall_803902b4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateFallScrewStart_803907b0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateLanding_80390a5c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateSlip_80390e6c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateStartJump_80391534.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateWait_80391870.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/Stone_80391b38.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/Utility_80391b5c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/Barrier_8039211c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/Custom_8039246c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/Parasol_80392558.o \
@@ -3125,12 +3126,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/Utility_805635b0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/Context_805635c0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateChange_805635c8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateEnd_805635d0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/stone/StateSlip_805635e0.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Utility_805635e8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/Barrier_80563610.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolCapture_80563618.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDive_80563650.o \

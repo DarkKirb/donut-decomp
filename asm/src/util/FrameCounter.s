@@ -94,3 +94,17 @@ inversedNormalizedFrame__Q24util12FrameCounterCFv:
 /* 80405A90 004018D0  7C 08 03 A6 */	mtlr r0
 /* 80405A94 004018D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80405A98 004018D8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48873_80564398"
+"@48873_80564398":
+
+	.4byte 0x3F800000
+	.4byte 0
+
+.global "@48876_805643A0"
+"@48876_805643A0":
+
+	.4byte 0x43300000
+	.4byte 0

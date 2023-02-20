@@ -3182,21 +3182,15 @@ $(BUILD_DIR)/asm/src/storage/StorageManager.o \
 $(BUILD_DIR)/asm/src/storage/StorageUtil.o \
 $(BUILD_DIR)/asm/src/storage/VolatileData2.o \
 \
-$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
+$(BUILD_DIR)/asm/src/util/Alarm.o \
+$(BUILD_DIR)/asm/src/util/AnimController.o \
+$(BUILD_DIR)/asm/src/util/CharacterEncodeUtil.o \
+$(BUILD_DIR)/asm/src/util/CurveUtility.o \
+$(BUILD_DIR)/asm/src/util/FrameCounter.o \
+$(BUILD_DIR)/asm/src/util/Mutex.o \
+$(BUILD_DIR)/asm/src/util/SIntAABBox.o \
+$(BUILD_DIR)/asm/src/util/StateChanger.o \
+$(BUILD_DIR)/asm/src/util/Thread.o \
+$(BUILD_DIR)/asm/src/util/UIntAABBox.o \
 \
-$(BUILD_DIR)/asm/src/util/Alarm_80405514.o \
-$(BUILD_DIR)/asm/src/util/AnimController_804056c0.o \
-$(BUILD_DIR)/asm/src/util/CharacterEncodeUtil_8040586c.o \
-$(BUILD_DIR)/asm/src/util/CurveUtility_80405948.o \
-$(BUILD_DIR)/asm/src/util/FrameCounter_80405980.o \
-$(BUILD_DIR)/asm/src/util/Mutex_80405a9c.o \
-$(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
-$(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
-$(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
-$(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-\
-$(BUILD_DIR)/asm/src/util/Alarm_80564378.o \
-$(BUILD_DIR)/asm/src/util/AnimController_80564388.o \
-$(BUILD_DIR)/asm/src/util/CurveUtility_80564390.o \
-$(BUILD_DIR)/asm/src/util/FrameCounter_80564398.o \
-$(BUILD_DIR)/asm/src/util/UIntAABBox_805643a8.o \
+$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o

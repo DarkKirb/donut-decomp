@@ -19,3 +19,11 @@ invSquare__Q24util12CurveUtilityFf:
 /* 80405974 004017B4  7C 08 03 A6 */	mtlr r0
 /* 80405978 004017B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8040597C 004017BC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49344"
+"@49344":
+
+	.4byte 0x3F800000
+	.4byte 0

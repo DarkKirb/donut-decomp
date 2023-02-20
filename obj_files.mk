@@ -2548,11 +2548,12 @@ $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Sword.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Whip.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Wing.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateInit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateSelect.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/inactive/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateInit_8035d268.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateSelect_8035d590.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/inactive/Utility_8035e2b4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateAirJump_8035e394.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateAnyWhereIn_8035e884.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateClearDance_8035f2d0.o \

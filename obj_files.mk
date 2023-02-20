@@ -2912,11 +2912,12 @@ $(BUILD_DIR)/asm/src/scn/step/map/LandManager.o \
 $(BUILD_DIR)/asm/src/scn/step/map/MemManager.o \
 $(BUILD_DIR)/asm/src/scn/step/map/MoveGroupAccessor.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/ocoll/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/ocoll/ManagerCreator.o \
+$(BUILD_DIR)/asm/src/scn/step/ocoll/MintOCollManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/ocoll/AddOnMint_803ca898.o \
-$(BUILD_DIR)/asm/src/scn/step/ocoll/ManagerCreator_803caae4.o \
-$(BUILD_DIR)/asm/src/scn/step/ocoll/MintOCollManager_803cab98.o \
 $(BUILD_DIR)/asm/src/scn/step/ostop/Actor_803cabbc.o \
 $(BUILD_DIR)/asm/src/scn/step/ostop/Manager_803cac88.o \
 $(BUILD_DIR)/asm/src/scn/step/ostop/Requestor_803cad40.o \

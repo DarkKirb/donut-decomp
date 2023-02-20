@@ -1633,13 +1633,14 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateJump.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateLanding.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateShot.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/CharaParam_8029bb80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/Custom_8029bc14.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/ModelDesc_8029c0e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateLanding_8029c190.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateShot_8029c568.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/AddOnMint_8029c848.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainCreditPraise_8029cb40.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainGrandLowper_8029cc0c.o \
@@ -3014,9 +3015,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/CharaParam_80561310.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateLanding_80561318.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateShot_80561320.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/Custom_80561328.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperAppear_80561330.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateJump_80561340.o \

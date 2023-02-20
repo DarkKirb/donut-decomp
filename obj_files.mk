@@ -1677,20 +1677,21 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateTakeOff.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWhispyAppear.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainCreditWalkToPraise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainWalkAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateCreditWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalkAround.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/AddOnMint_802a090c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainCreditWalkToPraise_802a0bd0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainGrandLowper_802a0c94.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainWalkAround_802a0d7c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/CharaParam_802a0e60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/ModelDesc_802a0ee8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateCreditWalk_802a0fc8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperAppear_802a1320.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperEscape_802a14ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperEscapeStart_802a1724.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalk_802a1858.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalkAround_802a1bd4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/AddOnMint_802a2104.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/BrainAttack_802a2408.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/CharaParam_802a2704.o \
@@ -3018,11 +3019,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/CharaParam_80561408.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateCreditWalk_80561410.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperAppear_80561420.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalk_80561438.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalkAround_80561448.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/CharaParam_80561460.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateAttack_80561478.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam_80561480.o \

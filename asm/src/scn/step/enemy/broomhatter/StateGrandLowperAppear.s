@@ -148,3 +148,35 @@ __vt__Q53scn4step5enemy11broomhatter22StateGrandLowperAppear:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy11broomhatter22StateGrandLowperAppearFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56597_80561420"
+"@56597_80561420":
+
+	.4byte 0x4222F983
+
+.global "@56598_80561424"
+"@56598_80561424":
+
+	.4byte 0x3C8EFA35
+
+.global "@56599_80561428"
+"@56599_80561428":
+
+	.4byte 0x42B40000
+
+.global "@56600_8056142C"
+"@56600_8056142C":
+
+	.4byte 0xC4340000
+
+.global "@56601_80561430"
+"@56601_80561430":
+
+	.4byte 0x3F800000
+
+.global "@56602_80561434"
+"@56602_80561434":
+
+	.4byte 0

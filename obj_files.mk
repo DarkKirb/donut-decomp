@@ -3091,13 +3091,14 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateVacuumReceive.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/VacuumReceiver.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/ModelDesc_803ef5ec.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/StateMain_803ef708.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/StateMain.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/StateMain.o \
 \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/Custom_803ef98c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/StateMain_803efa7c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/Custom_803f0214.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateMain_803f04dc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateReady_803f0788.o \

@@ -422,3 +422,15 @@ Func__Q63scn4step5enemy10knucklejoe9AddOnMint30Mint_Walk_0$55523AddOnMint_cppFRQ
 	.4byte 0x636C6173
 	.4byte 0x73000000
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56059_80561B70"
+"@56059_80561B70":
+
+	.4byte 0
+
+.global "@56060_80561B74"
+"@56060_80561B74":
+
+	.4byte 0x3F800000

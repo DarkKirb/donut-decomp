@@ -1873,21 +1873,22 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMove.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMoveAround.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateTeleport.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalkStepBack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateHadou.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateRising.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateVulcan.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalkStepBack.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/AddOnMint_802bec5c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalk_802bf0a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalkStepBack_802bf168.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/CharaParam_802bf2c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/Custom_802bf350.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/ModelDesc_802bf8c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateAttack_802bfc58.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateHadou_802c017c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateRising_802c0384.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateSpin_802c0768.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateVulcan_802c0aa4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalk_802c0cac.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalkStepBack_802c1138.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/AddOnMint_802c1740.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWait_802c1b04.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWalk_802c1c64.o \
@@ -3038,16 +3039,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/AddOnMint_80561b70.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/Custom_80561b78.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/ModelDesc_80561b90.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateAttack_80561bd0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateHadou_80561bd8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateRising_80561bf0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateSpin_80561c08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateVulcan_80561c20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalk_80561c38.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalkStepBack_80561c48.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/AddOnMint_80561c50.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/Custom_80561c58.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateAttack_80561c60.o \

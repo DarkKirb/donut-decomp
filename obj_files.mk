@@ -1157,9 +1157,10 @@ $(BUILD_DIR)/asm/src/scn/history/detail/SelectButtonContent.o \
 $(BUILD_DIR)/asm/src/scn/history/detail/Text.o \
 $(BUILD_DIR)/asm/src/scn/history/detail/Year.o \
 \
+$(BUILD_DIR)/asm/src/scn/history/effect/Table.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/history/effect/Table_8021b648.o \
 $(BUILD_DIR)/asm/src/scn/init/SceneInit_8021b7d4.o \
 $(BUILD_DIR)/asm/src/scn/packagelist/Main_8021c05c.o \
 $(BUILD_DIR)/asm/src/scn/packagelist/ScenePackageList_8021c954.o \
@@ -2980,7 +2981,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/history/effect/Table_805601f0.o \
 $(BUILD_DIR)/asm/src/scn/init/SceneInit_805601f8.o \
 $(BUILD_DIR)/asm/src/scn/step/GridPos_80560200.o \
 $(BUILD_DIR)/asm/src/scn/step/MaproPos_80560210.o \

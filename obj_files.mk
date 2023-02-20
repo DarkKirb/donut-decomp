@@ -2309,20 +2309,21 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationUpside.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/ChainStarter.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoor.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMaster.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMasterEx.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusou.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusouEx.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorNormal.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorTraining.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/DoorUnlockStar.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/MintChallengeDoor.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Result.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/AddOnMint_80305afc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoor_80306478.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMaster_80307ed0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMasterEx_80308a54.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusou_803090d0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusouEx_80309414.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorNormal_803098d8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorTraining_80309afc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/DoorUnlockStar_80309d10.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Manager_8030a5c0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/MintChallengeDoor_8030b04c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Result_8030b070.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/ConsecutiveBattle_8030b098.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/Manager_8030b680.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep_8030b888.o \
@@ -3084,12 +3085,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoor_80562790.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMaster_805627b0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusou_805627c8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorNormal_805627d0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/DoorUnlockStar_805627d8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Result_80562800.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/ConsecutiveBattle_80562808.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep_80562818.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_80562870.o \

@@ -13,3 +13,11 @@ __ct__Q53scn4step7gimmick13challengedoor6ResultFv:
 /* 8030B08C 00306ECC  38 00 00 FF */	li r0, 0xff
 /* 8030B090 00306ED0  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8030B094 00306ED4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49649_80562800"
+"@49649_80562800":
+
+	.4byte 0
+	.4byte 0

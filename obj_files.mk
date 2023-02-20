@@ -2800,13 +2800,14 @@ $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoGrandLowper.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoStart.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWalk.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_803a3c74.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_803a3e80.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_803a4634.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWait_803a4d98.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWalk_803a5118.o \
 $(BUILD_DIR)/asm/src/scn/step/info/BossPanel_803a5584.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll_803a6920.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp_803a6b54.o \
@@ -3132,9 +3133,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_80563860.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_80563868.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_80563870.o \
 $(BUILD_DIR)/asm/src/scn/step/info/BossPanel_80563890.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll_805638a0.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp_805638a8.o \

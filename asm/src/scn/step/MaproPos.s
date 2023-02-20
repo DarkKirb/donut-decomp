@@ -25,3 +25,11 @@ toWorldPos__Q33scn4step8MaproPosCFv:
 /* 802216E8 0021D528  D0 63 00 04 */	stfs f3, 0x4(r3)
 /* 802216EC 0021D52C  38 21 00 20 */	addi r1, r1, 0x20
 /* 802216F0 0021D530  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49677_80560210"
+"@49677_80560210":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

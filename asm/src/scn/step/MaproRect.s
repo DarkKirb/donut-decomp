@@ -49,3 +49,17 @@ toWorldRect__Q33scn4step9MaproRectCFv:
 /* 80221798 0021D5D8  7C 08 03 A6 */	mtlr r0
 /* 8022179C 0021D5DC  38 21 00 20 */	addi r1, r1, 0x20
 /* 802217A0 0021D5E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49776"
+"@49776":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@49777"
+"@49777":
+
+	.4byte 0x43300000
+	.4byte 0

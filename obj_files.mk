@@ -1164,23 +1164,24 @@ $(BUILD_DIR)/asm/src/scn/init/SceneInit.o \
 $(BUILD_DIR)/asm/src/scn/packagelist/Main.o \
 $(BUILD_DIR)/asm/src/scn/packagelist/ScenePackageList.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/ChallengeKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/Component.o \
+$(BUILD_DIR)/asm/src/scn/step/ContextChallenge.o \
+$(BUILD_DIR)/asm/src/scn/step/ContextGhost.o \
+$(BUILD_DIR)/asm/src/scn/step/ContextHero.o \
+$(BUILD_DIR)/asm/src/scn/step/ContextLvMap.o \
+$(BUILD_DIR)/asm/src/scn/step/ContextMode.o \
+$(BUILD_DIR)/asm/src/scn/step/GridPos.o \
+$(BUILD_DIR)/asm/src/scn/step/LevelKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/MaproPos.o \
+$(BUILD_DIR)/asm/src/scn/step/MaproRect.o \
+$(BUILD_DIR)/asm/src/scn/step/SceneStep.o \
+$(BUILD_DIR)/asm/src/scn/step/StepReleaseUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/StorageAccessor2.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/AddOnMint_8021ccc8.o \
-$(BUILD_DIR)/asm/src/scn/step/ChallengeKindUtil_8021cd3c.o \
-$(BUILD_DIR)/asm/src/scn/step/Component_8021d0d4.o \
-$(BUILD_DIR)/asm/src/scn/step/ContextChallenge_80220f6c.o \
-$(BUILD_DIR)/asm/src/scn/step/ContextGhost_802210c4.o \
-$(BUILD_DIR)/asm/src/scn/step/ContextHero_802210e8.o \
-$(BUILD_DIR)/asm/src/scn/step/ContextLvMap_80221338.o \
-$(BUILD_DIR)/asm/src/scn/step/ContextMode_802213bc.o \
-$(BUILD_DIR)/asm/src/scn/step/GridPos_802214bc.o \
-$(BUILD_DIR)/asm/src/scn/step/LevelKindUtil_80221668.o \
-$(BUILD_DIR)/asm/src/scn/step/MaproPos_8022169c.o \
-$(BUILD_DIR)/asm/src/scn/step/MaproRect_802216f4.o \
-$(BUILD_DIR)/asm/src/scn/step/SceneStep_802217a4.o \
-$(BUILD_DIR)/asm/src/scn/step/StepReleaseUtil_80221e78.o \
-$(BUILD_DIR)/asm/src/scn/step/StorageAccessor2_80221eb8.o \
 $(BUILD_DIR)/asm/src/scn/step/bg/DecorationBG_802224a4.o \
 $(BUILD_DIR)/asm/src/scn/step/bg/DecorationManager_80222948.o \
 $(BUILD_DIR)/asm/src/scn/step/bg/DecorationMapro_80223acc.o \
@@ -2777,8 +2778,8 @@ $(BUILD_DIR)/asm/src/scn/step/sfx/MintSuperFade_803cdcdc.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/Monotone_803cdd04.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/ReverseWorld_803ce608.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/ScreenFade_803ced4c.o \
-$(BUILD_DIR)/asm/src/sfx/ShadowRoot_803ced50.o \
-$(BUILD_DIR)/asm/src/sfx/ShadowSphere_803cedc0.o \
+$(BUILD_DIR)/asm/src/scn/step/sfx/ShadowRoot_803ced50.o \
+$(BUILD_DIR)/asm/src/scn/step/sfx/ShadowSphere_803cedc0.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SpiralScreen_803cefa4.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/Stop_803cf8cc.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SuperBackPicture_803cfd08.o \
@@ -2951,7 +2952,7 @@ $(BUILD_DIR)/asm/src/seq/SequenceVC_80400440.o \
 $(BUILD_DIR)/asm/src/sfx/CinemaScopeModel_80400510.o \
 $(BUILD_DIR)/asm/src/sfx/Fade_8040078c.o \
 $(BUILD_DIR)/asm/src/sfx/FullScreenModel_80400c6c.o \
-$(BUILD_DIR)/asm/src/scn/step/sfx/Manager_804011d4.o \
+$(BUILD_DIR)/asm/src/sfx/Manager_804011d4.o \
 $(BUILD_DIR)/asm/src/sfx/Monotone_8040130c.o \
 $(BUILD_DIR)/asm/src/sfx/ScreenRemap_80401708.o \
 $(BUILD_DIR)/asm/src/sfx/Utility_80401a64.o \
@@ -2983,9 +2984,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/GridPos_80560200.o \
-$(BUILD_DIR)/asm/src/scn/step/MaproPos_80560210.o \
-$(BUILD_DIR)/asm/src/scn/step/MaproRect_80560218.o \
 $(BUILD_DIR)/asm/src/scn/step/bg/DecorationManager_80560228.o \
 $(BUILD_DIR)/asm/src/scn/step/bg/DecorationMaproColl_80560258.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Angry_80560260.o \
@@ -3754,7 +3752,7 @@ $(BUILD_DIR)/asm/src/scn/step/sfx/DarknessLight_80563b90.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/DarknessRoot_80563bc8.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/Monotone_80563bf8.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/ReverseWorld_80563c18.o \
-$(BUILD_DIR)/asm/src/sfx/ShadowSphere_80563c60.o \
+$(BUILD_DIR)/asm/src/scn/step/sfx/ShadowSphere_80563c60.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SpiralScreen_80563c68.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SuperBackPicture_80563ca0.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SuperFade_80563cb0.o \

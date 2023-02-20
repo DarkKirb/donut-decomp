@@ -118,3 +118,17 @@ isPositivePos__Q33scn4step7GridPosCFv:
 lbl_80221660:
 /* 80221660 0021D4A0  7C 83 23 78 */	mr r3, r4
 /* 80221664 0021D4A4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49743"
+"@49743":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@49758"
+"@49758":
+
+	.4byte 0x3F000000
+	.4byte 0

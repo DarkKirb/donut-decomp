@@ -3064,10 +3064,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_803eacac.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain_803eadc8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateExplosion_803eb86c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateMain_803eba8c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/ModelDesc_803ebe30.o \
@@ -3175,8 +3176,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_805640a0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain_805640a8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion_805640d0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain_805640e8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect_80564100.o \

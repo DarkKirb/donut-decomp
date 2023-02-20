@@ -2840,10 +2840,11 @@ $(BUILD_DIR)/asm/src/scn/step/info/challenge/Start.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/Time.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/TimeUp.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result_803b5c00.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore_803b84f8.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_803b9934.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/Explain_803b9ddc.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainBase_803ba630.o \
@@ -3135,8 +3136,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result_80563960.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore_80563968.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_80563990.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole_80563998.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/SphereComplete_805639a0.o \

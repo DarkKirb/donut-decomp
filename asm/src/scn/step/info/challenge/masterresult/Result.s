@@ -3527,3 +3527,11 @@ hideIcons__Q63scn4step4info9challenge12masterresult6ResultFRQ23lyt6Layout:
 
 	.4byte 0x426F6E75
 	.4byte 0x734E0000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57776"
+"@57776":
+
+	.4byte 0x425C0000
+	.4byte 0

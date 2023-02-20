@@ -795,3 +795,15 @@ __vt__Q33scn4init9SceneInit:
 .global "@LOCAL@RuntimeTypeInfoImpl<Q33scn4init9SceneInit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
 "@LOCAL@RuntimeTypeInfoImpl<Q33scn4init9SceneInit>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52157_805601F8"
+"@52157_805601F8":
+
+	.4byte 0x000000FF
+
+.global "@52160"
+"@52160":
+
+	.4byte 0xFFFFFFFF

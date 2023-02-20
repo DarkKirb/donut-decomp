@@ -3001,14 +3001,16 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/StateMain.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/Custom_803e0174.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/ModelDesc_803e02b8.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/StateMain_803e04f8.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/Custom_803e1f4c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/ModelDesc_803e2278.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/comothread/StateMain_803e2374.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/ModelDesc_803e2a0c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/StateMain_803e2b28.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc_803e3668.o \

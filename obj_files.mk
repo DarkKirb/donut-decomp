@@ -2982,11 +2982,12 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/Weapon.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/airball/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/airball/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/Custom_803dbc08.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/ModelDesc_803dc230.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/StateMain_803dc2d4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/ModelDesc_803dcaa8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/StateMain_803dcbc4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc_803dd184.o \
@@ -3151,7 +3152,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/ModelDesc_80563da8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/StateMain_80563db0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc_80563dd0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/StateMain_80563dd8.o \

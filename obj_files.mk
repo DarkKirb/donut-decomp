@@ -2656,16 +2656,17 @@ $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateWarpStarFall.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateWarpStarIn.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosEat.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosVomit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyChewing.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyRelease.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVacuum.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitBound.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitSoft.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosEat_80383e24.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosVomit_80384128.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyChewing_803845b8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyRelease_80384730.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVacuum_803849a4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomit_80384d54.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitBound_803850c4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitSoft_80385638.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/mix/ShuffleManager_80385aa4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAirSpin_803862ac.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack_8038669c.o \
@@ -3120,11 +3121,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosEat_805634f8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWaterGalborosVomit_80563500.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVacuum_80563508.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitBound_80563518.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitSoft_80563530.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack_80563540.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChoppingHit_80563548.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordFloatSpin_80563560.o \

@@ -2945,9 +2945,10 @@ $(BUILD_DIR)/asm/src/scn/step/sfx/SuperBackPicture.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SuperFade.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/Wipe.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/spstop/Manager_803d0b9c.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/spstop/Manager_803d0b9c.o \
 $(BUILD_DIR)/asm/src/scn/step/vacuum/AddOnMint_803d0e90.o \
 $(BUILD_DIR)/asm/src/scn/step/vacuum/Attacker_803d0f4c.o \
 $(BUILD_DIR)/asm/src/scn/step/vacuum/Manager_803d2758.o \

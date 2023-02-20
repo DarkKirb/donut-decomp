@@ -2824,23 +2824,24 @@ $(BUILD_DIR)/asm/src/scn/step/info/NextArrowPanel.o \
 $(BUILD_DIR)/asm/src/scn/step/info/TotalScorePanel.o \
 $(BUILD_DIR)/asm/src/scn/step/info/WarpStarPanel.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Challenge.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/CountDown.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/GhostIcon.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Goal.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Lose.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/MasterIcon.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Medal.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/PassageTime.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Radar.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/RadarIcon.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Score.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Start.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/Time.o \
+$(BUILD_DIR)/asm/src/scn/step/info/challenge/TimeUp.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Challenge_803b0f44.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/CountDown_803b1d58.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn_803b1ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/GhostIcon_803b2578.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Goal_803b3498.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Lose_803b36c8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/MasterIcon_803b38b8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Medal_803b4734.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/PassageTime_803b4aa0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Radar_803b4e5c.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/RadarIcon_803b5390.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Score_803b5454.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Start_803b5524.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Time_803b5888.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/TimeUp_803b5a64.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result_803b5c00.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore_803b84f8.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_803b9934.o \
@@ -3134,10 +3135,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn_80563918.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/GhostIcon_80563920.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/MasterIcon_80563938.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/Radar_80563950.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result_80563960.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore_80563968.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_80563990.o \

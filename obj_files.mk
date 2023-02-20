@@ -1421,16 +1421,17 @@ $(BUILD_DIR)/asm/src/scn/step/boss/whispy/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/TSCtrl.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/whispy/WindCtrl.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/EnemyCtrl.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateCatch.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttackStart.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/AddOnMint_8025f540.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/Custom_80260388.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/EnemyCtrl_80260810.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/ModelDesc_80260d68.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateAttack_80260e38.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateCatch_80261650.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttack_8026185c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttackStart_80261e10.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/AddOnMint_80261f8c.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/BgCamera_802620f0.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/CameraAccessor_80262a18.o \
@@ -2999,10 +3000,7 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/AddOnMint_80560a50.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/Custom_80560a58.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateAttack_80560a68.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttack_80560a80.o \
+\
 $(BUILD_DIR)/asm/src/scn/step/camera/BgCamera_80560a98.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/CameraAccessor_80560ab8.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/CameraController_80560ac0.o \

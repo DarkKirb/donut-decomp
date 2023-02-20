@@ -2168,13 +2168,14 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StateBound.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StatePuff.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sun/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sun/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sun/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/BrainMove_802e86d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/CharaParam_802e87b4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom_802e8878.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/ModelDesc_802e8c44.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove_802e8d28.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/toughdee/CharaParam_802e9cd4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/AddOnMint_802e9d54.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainGround_802ea418.o \
@@ -3067,9 +3068,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/CharaParam_805623e8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom_805623f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove_80562418.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/Custom_80562450.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJump_80562468.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJumpAttack_80562478.o \

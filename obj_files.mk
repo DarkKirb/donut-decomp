@@ -2806,25 +2806,26 @@ $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWalk.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/info/BossPanel.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HelpShake.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroLifeBar.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroPanel.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroPanelController.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroStatus.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroStatusIcon.o \
+$(BUILD_DIR)/asm/src/scn/step/info/HeroStatusIconSyncer.o \
+$(BUILD_DIR)/asm/src/scn/step/info/InfoControl.o \
+$(BUILD_DIR)/asm/src/scn/step/info/InfoGameStatus.o \
+$(BUILD_DIR)/asm/src/scn/step/info/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/info/MessageWindow.o \
+$(BUILD_DIR)/asm/src/scn/step/info/NextArrowPanel.o \
+$(BUILD_DIR)/asm/src/scn/step/info/TotalScorePanel.o \
+$(BUILD_DIR)/asm/src/scn/step/info/WarpStarPanel.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/BossPanel_803a5584.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll_803a6920.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp_803a6b54.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpShake_803a703c.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroLifeBar_803a74f8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroPanel_803a807c.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroPanelController_803a8ec4.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroStatus_803a937c.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroStatusIcon_803a9dc8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroStatusIconSyncer_803aa614.o \
-$(BUILD_DIR)/asm/src/scn/step/info/InfoControl_803aa930.o \
-$(BUILD_DIR)/asm/src/scn/step/info/InfoGameStatus_803ab798.o \
-$(BUILD_DIR)/asm/src/scn/step/info/Manager_803ac808.o \
-$(BUILD_DIR)/asm/src/scn/step/info/MessageWindow_803ada1c.o \
-$(BUILD_DIR)/asm/src/scn/step/info/NextArrowPanel_803af648.o \
-$(BUILD_DIR)/asm/src/scn/step/info/TotalScorePanel_803afae0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/WarpStarPanel_803b0100.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/Challenge_803b0f44.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/CountDown_803b1d58.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn_803b1ff8.o \
@@ -3133,16 +3134,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/BossPanel_80563890.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll_805638a0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp_805638a8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HelpShake_805638b8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroLifeBar_805638c0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroPanel_805638d0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroPanelController_805638d8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/HeroStatus_805638e8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/Manager_805638f0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/WarpStarPanel_80563908.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/CutIn_80563918.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/GhostIcon_80563920.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/MasterIcon_80563938.o \

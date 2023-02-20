@@ -400,3 +400,11 @@ startDisappearAnim__Q43scn4step4info9HelpShakeFv:
 
 	.4byte 0x456E6400
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52132"
+"@52132":
+
+	.4byte 0
+	.4byte 0

@@ -854,3 +854,11 @@ lbl_803A9DB4:
 
 	.4byte 0x4974614E
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54301"
+"@54301":
+
+	.4byte 0
+	.4byte 0

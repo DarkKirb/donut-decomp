@@ -2281,12 +2281,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMasterEx.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/MintDemo.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/arease/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE_802fddb8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arease/Manager_802fe0cc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard_802fe3a4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/Manager_802feb08.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_802fee98.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockAttackResult_80300234.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo_8030041c.o \
@@ -3079,7 +3078,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE_80562688.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard_80562698.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_805626a0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo_805626b0.o \

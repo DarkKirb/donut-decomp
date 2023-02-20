@@ -712,3 +712,35 @@ initActor__Q43scn4step6weapon7MapCollFv:
 /* 803D7A58 003D3898  7C 08 03 A6 */	mtlr r0
 /* 803D7A5C 003D389C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D7A60 003D38A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53837_80563D08"
+"@53837_80563D08":
+
+	.4byte 0
+
+.global "@53838_80563D0C"
+"@53838_80563D0C":
+
+	.4byte 0x3F800000
+
+.global "@53839_80563D10"
+"@53839_80563D10":
+
+	.4byte 0xBDCCCCCD
+
+.global "@53840_80563D14"
+"@53840_80563D14":
+
+	.4byte 0x3DCCCCCD
+
+.global "@53960"
+"@53960":
+
+	.4byte 0x3BF5C28F
+
+.global "@53961"
+"@53961":
+
+	.4byte 0xBF000000

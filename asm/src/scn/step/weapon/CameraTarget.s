@@ -47,3 +47,11 @@ lbl_803D373C:
 /* 803D3744 003CF584  7C 08 03 A6 */	mtlr r0
 /* 803D3748 003CF588  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D374C 003CF58C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53235_80563D00"
+"@53235_80563D00":
+
+	.4byte 0
+	.4byte 0

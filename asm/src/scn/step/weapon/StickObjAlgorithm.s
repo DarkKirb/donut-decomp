@@ -97,3 +97,11 @@ procMove__Q43scn4step6weapon17StickObjAlgorithmFv:
 /* 803D8C9C 003D4ADC  7C 08 03 A6 */	mtlr r0
 /* 803D8CA0 003D4AE0  38 21 00 20 */	addi r1, r1, 0x20
 /* 803D8CA4 003D4AE4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53717"
+"@53717":
+
+	.4byte 0xC0000000
+	.4byte 0

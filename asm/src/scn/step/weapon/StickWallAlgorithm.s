@@ -110,3 +110,11 @@ lbl_803D8DFC:
 /* 803D8E08 003D4C48  7C 08 03 A6 */	mtlr r0
 /* 803D8E0C 003D4C4C  38 21 00 30 */	addi r1, r1, 0x30
 /* 803D8E10 003D4C50  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53191_80563D30"
+"@53191_80563D30":
+
+	.4byte 0xBDCCCCCD
+	.4byte 0

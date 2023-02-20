@@ -3077,15 +3077,16 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateMain.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickObj.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickWall.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateVanish.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/ModelDesc_803ecf88.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateMain_803ed0b4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect_803ed654.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickObj_803edb0c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickWall_803edc7c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateVanish_803edef0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/Utility_803ee190.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/Custom_803ee29c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/ModelDesc_803ee568.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateMain_803eee68.o \
@@ -3179,10 +3180,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect_80564100.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickWall_80564118.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateVanish_80564128.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/deespear/Utility_80564130.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/ModelDesc_80564138.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/StateMain_80564140.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/Custom_80564178.o \

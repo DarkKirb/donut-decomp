@@ -2797,7 +2797,7 @@ $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoStart_803a2c04.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_803a2c24.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_803a3c74.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_803a3e80.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/StateLookBoss_803a4634.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_803a4634.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWait_803a4d98.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateWalk_803a5118.o \
 $(BUILD_DIR)/asm/src/scn/step/info/BossPanel_803a5584.o \
@@ -3166,7 +3166,7 @@ $(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterRise_80563828.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_80563830.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_80563860.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_80563868.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/StateLookBoss_80563870.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_80563870.o \
 $(BUILD_DIR)/asm/src/scn/step/info/BossPanel_80563890.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushAll_805638a0.o \
 $(BUILD_DIR)/asm/src/scn/step/info/HelpPushUp_805638a8.o \

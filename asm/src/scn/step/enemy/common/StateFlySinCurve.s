@@ -296,3 +296,71 @@ __vt__Q53scn4step5enemy6common16StateFlySinCurve:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6common16StateFlySinCurveFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55895_80561008"
+"@55895_80561008":
+
+	.4byte 0
+
+.global "@55896_8056100C"
+"@55896_8056100C":
+
+	.4byte 0x3F800000
+
+.global "@55897_80561010"
+"@55897_80561010":
+
+	.4byte 0xBF800000
+
+.global "@55898_80561014"
+"@55898_80561014":
+
+	.4byte 0x3D23D70A
+
+.global "@55916"
+"@55916":
+
+	.4byte 0x3CA3D70A
+
+.global "@55917_8056101C"
+"@55917_8056101C":
+
+	.4byte 0x40200000
+
+.global "@55918_80561020"
+"@55918_80561020":
+
+	.4byte 0x43B40000
+
+.global "@55919_80561024"
+"@55919_80561024":
+
+	.4byte 0x4222F983
+
+.global "@55920_80561028"
+"@55920_80561028":
+
+	.4byte 0x3C8EFA35
+
+.global "@55921_8056102C"
+"@55921_8056102C":
+
+	.4byte 0x3FC00000
+
+.global "@55940_80561030"
+"@55940_80561030":
+
+	.4byte 0x40000000
+
+.global "@55941_80561034"
+"@55941_80561034":
+
+	.4byte 0x42B40000
+
+.global "@55942_80561038"
+"@55942_80561038":
+
+	.4byte 0x43870000
+	.4byte 0

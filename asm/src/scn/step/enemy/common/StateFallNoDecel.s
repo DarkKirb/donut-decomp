@@ -79,3 +79,21 @@ __vt__Q53scn4step5enemy6common16StateFallNoDecel:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6common16StateFallNoDecelFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55747"
+"@55747":
+
+	.4byte 0x3E19999A
+
+.global "@55748_80560FD4"
+"@55748_80560FD4":
+
+	.4byte 0x3BC49BA6
+
+.global "@55749_80560FD8"
+"@55749_80560FD8":
+
+	.4byte 0x3BA3D70A
+	.4byte 0

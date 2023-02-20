@@ -288,3 +288,15 @@ lbl_8027A994:
 /* 8027A9A0 002767E0  7C 08 03 A6 */	mtlr r0
 /* 8027A9A4 002767E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8027A9A8 002767E8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "DEFAULT_COLOR__Q43scn4step5debug27@unnamed@GeneralDrawer_cpp@"
+"DEFAULT_COLOR__Q43scn4step5debug27@unnamed@GeneralDrawer_cpp@":
+
+	.4byte 0xFFFFFF80
+
+.global "@52239"
+"@52239":
+
+	.4byte 0x3727C5AC

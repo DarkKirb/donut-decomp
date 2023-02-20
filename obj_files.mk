@@ -1514,12 +1514,13 @@ $(BUILD_DIR)/asm/src/scn/step/core/PreLoadReq.o \
 $(BUILD_DIR)/asm/src/scn/step/core/SceneChanger.o \
 $(BUILD_DIR)/asm/src/scn/step/core/Updater.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller.o \
+$(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer.o \
+$(BUILD_DIR)/asm/src/scn/step/debug/ObjInfoRepos.o \
+$(BUILD_DIR)/asm/src/scn/step/debug/ObjPlacement.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_8027a434.o \
-$(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer_8027a5d0.o \
-$(BUILD_DIR)/asm/src/scn/step/debug/ObjInfoRepos_8027a9ac.o \
-$(BUILD_DIR)/asm/src/scn/step/debug/ObjPlacement_8027ab34.o \
 $(BUILD_DIR)/asm/src/scn/step/effect/Manager_8027ab84.o \
 $(BUILD_DIR)/asm/src/scn/step/effect/Requestor_8027afec.o \
 $(BUILD_DIR)/asm/src/scn/step/effect/Table_8027b128.o \
@@ -3006,8 +3007,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_80560dd8.o \
-$(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer_80560de0.o \
 $(BUILD_DIR)/asm/src/scn/step/effect/Table_80560de8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/CaptureReceiver_80560df0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFieldReact_80560df8.o \

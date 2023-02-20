@@ -116,3 +116,11 @@ lbl_8027A5B4:
 /* 8027A5C4 00276404  7C 08 03 A6 */	mtlr r0
 /* 8027A5C8 00276408  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027A5CC 0027640C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52852_80560DD8"
+"@52852_80560DD8":
+
+	.4byte 0x41C80000
+	.4byte 0

@@ -508,3 +508,15 @@ toLayoutPos__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindRCQ33hel
 	.4byte 0x43616D65
 	.4byte 0x72610000
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52507"
+"@52507":
+
+	.4byte 0
+
+.global "@52508"
+"@52508":
+
+	.4byte 0x42C80000

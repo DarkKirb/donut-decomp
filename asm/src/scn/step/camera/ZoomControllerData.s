@@ -54,3 +54,11 @@ __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomController
 /* 802680B0 00263EF0  7C 08 03 A6 */	mtlr r0
 /* 802680B4 00263EF4  38 21 00 40 */	addi r1, r1, 0x40
 /* 802680B8 00263EF8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49761"
+"@49761":
+
+	.4byte 0
+	.4byte 0

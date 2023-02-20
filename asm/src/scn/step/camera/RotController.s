@@ -554,3 +554,15 @@ lbl_8026787C:
 /* 8026788C 002636CC  7C 08 03 A6 */	mtlr r0
 /* 80267890 002636D0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80267894 002636D4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50424_80560BC8"
+"@50424_80560BC8":
+
+	.4byte 0x3F800000
+
+.global "@50477_80560BCC"
+"@50477_80560BCC":
+
+	.4byte 0x3DCCCCCD

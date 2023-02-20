@@ -17,3 +17,11 @@ __ct__Q43scn4step6camera17RotControllerDataFUlffb:
 /* 802678BC 002636FC  D0 43 00 08 */	stfs f2, 0x8(r3)
 /* 802678C0 00263700  98 A3 00 0C */	stb r5, 0xc(r3)
 /* 802678C4 00263704  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49657_80560BD0"
+"@49657_80560BD0":
+
+	.4byte 0
+	.4byte 0

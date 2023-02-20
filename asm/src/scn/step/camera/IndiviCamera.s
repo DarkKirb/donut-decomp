@@ -241,3 +241,21 @@ setCameraRect__Q43scn4step6camera12IndiviCameraFRCQ33hel3geo4Rectf:
 /* 802654AC 002612EC  7C 08 03 A6 */	mtlr r0
 /* 802654B0 002612F0  38 21 00 50 */	addi r1, r1, 0x50
 /* 802654B4 002612F4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51843_80560B10"
+"@51843_80560B10":
+
+	.4byte 0x3F800000
+
+.global "@51844_80560B14"
+"@51844_80560B14":
+
+	.4byte 0xBF800000
+
+.global "@51864_80560B18"
+"@51864_80560B18":
+
+	.4byte 0x3C8EFA35
+	.4byte 0

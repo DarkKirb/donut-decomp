@@ -473,3 +473,21 @@ getFovy__Q43scn4step6camera11DebugCameraCFv:
 getBGFovy__Q43scn4step6camera11DebugCameraCFv:
 /* 80265138 00260F78  C0 23 00 58 */	lfs f1, 0x58(r3)
 /* 8026513C 00260F7C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53482"
+"@53482":
+
+	.4byte 0
+
+.global "@53734"
+"@53734":
+
+	.4byte 0x3C8EFA35
+
+.global "@53831"
+"@53831":
+
+	.4byte 0x3FB40000
+	.4byte 0

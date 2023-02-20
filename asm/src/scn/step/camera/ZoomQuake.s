@@ -207,3 +207,11 @@ execute__Q43scn4step6camera9ZoomQuakeFv:
 	.4byte 0x652E2573
 	.4byte 0
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51687"
+"@51687":
+
+	.4byte 0
+	.4byte 0

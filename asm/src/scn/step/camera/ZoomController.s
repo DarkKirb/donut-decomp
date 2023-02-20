@@ -581,3 +581,15 @@ lbl_80267FDC:
 /* 80267FEC 00263E2C  7C 08 03 A6 */	mtlr r0
 /* 80267FF0 00263E30  38 21 00 20 */	addi r1, r1, 0x20
 /* 80267FF4 00263E34  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50412_80560BD8"
+"@50412_80560BD8":
+
+	.4byte 0x3DCCCCCD
+
+.global "@50470_80560BDC"
+"@50470_80560BDC":
+
+	.4byte 0x41100000

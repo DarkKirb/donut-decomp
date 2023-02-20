@@ -1430,27 +1430,28 @@ $(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateCatch.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/zankibble/StateJumpAttackStart.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/camera/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/BgCamera.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/CameraAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/CameraController.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/CameraLockPauseRequestor.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/DebugCamera.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/IndiviCamera.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/IndiviCameraManager.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/MainCamera.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/MintCameraController.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/MintZoomQuake.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/Quake.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/QuakeData.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/QuakePiece.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/RotController.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/RotControllerData.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/ZoomController.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/ZoomControllerData.o \
+$(BUILD_DIR)/asm/src/scn/step/camera/ZoomQuake.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/camera/AddOnMint_80261f8c.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/BgCamera_802620f0.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/CameraAccessor_80262a18.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/CameraController_80263094.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/CameraLockPauseRequestor_80264a50.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/DebugCamera_80264ae8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/IndiviCamera_80265140.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/IndiviCameraManager_802654b8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/MainCamera_8026561c.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/MintCameraController_8026627c.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/MintZoomQuake_802662a0.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/Quake_802662c4.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/QuakeData_8026647c.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/QuakePiece_80267174.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/RotController_802671a4.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/RotControllerData_80267898.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomController_802678c8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomControllerData_80267ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomQuake_802680bc.o \
 $(BUILD_DIR)/asm/src/scn/step/challenge/Manager_80268224.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/RankItem_80269658.o \
 $(BUILD_DIR)/asm/src/scn/step/challenge/Score_8026999c.o \
@@ -3001,19 +3002,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/camera/BgCamera_80560a98.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/CameraAccessor_80560ab8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/CameraController_80560ac0.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/DebugCamera_80560b00.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/IndiviCamera_80560b10.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/MainCamera_80560b20.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/Quake_80560b50.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/QuakeData_80560b58.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/RotController_80560bc8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/RotControllerData_80560bd0.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomController_80560bd8.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomControllerData_80560be0.o \
-$(BUILD_DIR)/asm/src/scn/step/camera/ZoomQuake_80560be8.o \
 $(BUILD_DIR)/asm/src/scn/step/challenge/Manager_80560bf0.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/AreaLight_80560c08.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/CliffChecker_80560c20.o \

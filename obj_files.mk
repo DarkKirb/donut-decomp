@@ -2265,10 +2265,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/SwitchReceiverManager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/TalkManager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/Util.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow_802f83b8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/Manager_802f926c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/AddOnMint_802f99e4.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl_802fa448.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo_802fad04.o \
@@ -3077,7 +3078,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow_805625e0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl_805625f0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo_80562600.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAllStageClear_80562608.o \

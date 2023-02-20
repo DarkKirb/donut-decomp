@@ -2358,10 +2358,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/MasterAttackArea.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/MasterMarker.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80315cd0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/MasterMarker_80316d58.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/Manager_80316e14.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/MoveGroupCtrl_803175e0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/MoveGroupCtrlOrder_80319198.o \
@@ -3094,8 +3095,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80562948.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/MasterMarker_80562958.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/Manager_80562960.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/MoveGroupCtrl_80562968.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/OrderUtil_805629a0.o \

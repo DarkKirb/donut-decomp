@@ -50,3 +50,11 @@ __ct__Q53scn4step7gimmick12mastermarker12MasterMarkerFRCQ43scn4step3map18BinGmkG
 /* 80316E08 00312C48  7C 08 03 A6 */	mtlr r0
 /* 80316E0C 00312C4C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80316E10 00312C50  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49893_80562958"
+"@49893_80562958":
+
+	.4byte 0
+	.4byte 0

@@ -1661,23 +1661,24 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/StateAttack.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFlyFarSinCurve.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainPursuit.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWaitFlyStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWaitPursuit.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWhispy.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFlyFarSinCurve.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StatePursuit.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateTakeOff.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWhispyAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/AddOnMint_8029ec18.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFly_8029ed04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFlyFarSinCurve_8029edec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainPursuit_8029eee4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWaitFlyStraight_8029efcc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWaitPursuit_8029f124.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainWhispy_8029f1e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/CharaParam_8029f2dc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/ModelDesc_8029f364.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFly_8029f4f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFlyFarSinCurve_8029f870.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StatePursuit_8029fa7c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateTakeOff_802a00cc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWait_802a0310.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWhispyAppear_802a0488.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/AddOnMint_802a090c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainCreditWalkToPraise_802a0bd0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/BrainGrandLowper_802a0c94.o \
@@ -3017,14 +3018,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFlyFarSinCurve_80561388.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/CharaParam_80561390.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFly_80561398.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFlyFarSinCurve_805613a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StatePursuit_805613c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateTakeOff_805613d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWait_805613e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateWhispyAppear_805613f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/CharaParam_80561408.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateCreditWalk_80561410.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperAppear_80561420.o \

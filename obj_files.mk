@@ -2109,18 +2109,19 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateAim.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateShot.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/BrainJumpAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateCatch.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJumpAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/AddOnMint_802e0ef0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/BrainJumpAttack_802e11f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/CharaParam_802e12dc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/Custom_802e136c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/ModelDesc_802e16e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateAttack_802e17d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateCatch_802e1960.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJump_802e1a54.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJumpAttack_802e1e0c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateWait_802e203c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/AddOnMint_802e22c4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainMove_802e25a0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainWait_802e2724.o \
@@ -3061,9 +3062,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/CharaParam_805622b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/Custom_805622c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJump_805622c8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/CharaParam_805622d0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/Custom_805622d8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateFall_805622e0.o \

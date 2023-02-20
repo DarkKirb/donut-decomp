@@ -2796,11 +2796,12 @@ $(BUILD_DIR)/asm/src/scn/step/hero/smash/StateSmashKickCharge.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcan.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcanEnd.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoStart.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoGrandLowper_803a2bfc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoStart_803a2c04.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_803a2c24.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_803a3c74.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_803a3e80.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_803a4634.o \
@@ -3131,7 +3132,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_80563830.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_80563860.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_80563868.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateLookBoss_80563870.o \

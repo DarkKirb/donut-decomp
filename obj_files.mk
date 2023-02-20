@@ -3070,10 +3070,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateExplosion.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/ModelDesc_803ebe30.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/StateMain_803ebf2c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/ModelDesc_803ec79c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion_803ec898.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain_803ecbd4.o \

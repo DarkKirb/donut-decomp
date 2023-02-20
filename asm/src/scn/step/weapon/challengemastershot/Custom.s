@@ -245,3 +245,11 @@ __vt__Q53scn4step6weapon19challengemastershot6Custom:
 	.4byte onDead__Q43scn4step6weapon10CustomBaseFv
 	.4byte reqCustomDeadEffect__Q53scn4step6weapon19challengemastershot6CustomFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56594_80564178"
+"@56594_80564178":
+
+	.4byte 0
+	.4byte 0

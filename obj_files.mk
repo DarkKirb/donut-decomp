@@ -3097,12 +3097,13 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateMain.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateReady.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/Custom_803f0214.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateMain_803f04dc.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateReady_803f0788.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateWait_803f1074.o \
 $(BUILD_DIR)/asm/src/scn/step/ghost/Manager_803f11e0.o \
 $(BUILD_DIR)/asm/src/scn/strap/SceneStrap_803f20ec.o \
 $(BUILD_DIR)/asm/src/scn/vc/Loader_803f2834.o \
@@ -3183,8 +3184,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/Custom_80564178.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateReady_80564180.o \
 $(BUILD_DIR)/asm/src/sfx/Manager_805641b8.o \
 $(BUILD_DIR)/asm/src/scn/strap/SceneStrap_805641e0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_805641f0.o \

@@ -1654,14 +1654,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateJump.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateLanding.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StatePraise.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/StateAttack.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/AddOnMint_8029dfdc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/BrainFly_8029e244.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/CharaParam_8029e30c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/Custom_8029e394.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/ModelDesc_8029e788.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/StateAttack_8029e914.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/AddOnMint_8029ec18.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFly_8029ed04.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFlyFarSinCurve_8029edec.o \
@@ -3016,9 +3017,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/CharaParam_80561350.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/Custom_80561358.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bowby/StateAttack_80561380.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/BrainFlyFarSinCurve_80561388.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/CharaParam_80561390.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/brontoburt/StateFly_80561398.o \

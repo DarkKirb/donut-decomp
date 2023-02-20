@@ -41,3 +41,11 @@ lbl_8029E36C:
 /* 8029E388 0029A1C8  7C 08 03 A6 */	mtlr r0
 /* 8029E38C 0029A1CC  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 8029E390 0029A1D0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_80561350"
+"@48778_80561350":
+
+	.4byte 0
+	.4byte 0

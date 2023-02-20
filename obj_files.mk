@@ -2379,9 +2379,10 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Otachidai.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/rollball/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/roomguarder/RoomGuarder.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/roomguarder/RoomGuarder_8031b40c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguardermarker/Manager_8031e08c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguardermarker/RoomGuarderMarker_8031e360.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/AddOnMint_8031e3e8.o \
@@ -3100,7 +3101,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/roomguarder/RoomGuarder_805629f8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/ShipEvent_80562a20.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shutter/Shutter_80562a38.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/stake/Stake_80562a78.o \

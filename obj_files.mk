@@ -2338,10 +2338,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Ghost.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag_8030fd90.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/Manager_8030ff0c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack_80310230.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionDrink_8031057c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionHover_803109fc.o \
@@ -3090,7 +3091,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag_805628c0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack_805628c8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionHover_805628d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionRun_805628d8.o \

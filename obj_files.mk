@@ -1364,23 +1364,24 @@ $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpCenterAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegun.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegunStart.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateMoveForward.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFall.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFallStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressJump.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressJumpStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRolling.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollingEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollingStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollJump.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoChase.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoRise.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/AddOnMint_802549c8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/Custom_8025563c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/ModelDesc_80255ac8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateJump_80255b98.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateMoveForward_80255dec.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFall_8025601c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFallStart_802564f0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressJump_80256798.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressJumpStart_80256d34.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRolling_80256f64.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollingEnd_80257624.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollingStart_802576e4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollJump_80257a60.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoChase_80257f90.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoRise_80258570.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint_80258964.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/CaptureCtrl_80259634.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom_8025989c.o \
@@ -2996,17 +2997,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/Custom_805608b0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateJump_805608c0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateMoveForward_805608c8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFall_805608e8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressFallStart_805608f0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StatePressJump_805608f8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRolling_80560918.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollingStart_80560930.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateRollJump_80560940.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoChase_80560960.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateTornadoRise_80560970.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/AddOnMint_80560988.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/Custom_80560990.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/watergalboros/StateQuivery_805609a0.o \

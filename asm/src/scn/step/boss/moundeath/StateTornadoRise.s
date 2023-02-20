@@ -304,3 +304,31 @@ __vt__Q53scn4step4boss9moundeath16StateTornadoRise:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss9moundeath16StateTornadoRiseFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56270_80560970"
+"@56270_80560970":
+
+	.4byte 0x4222F983
+
+.global "@56271_80560974"
+"@56271_80560974":
+
+	.4byte 0x3C8EFA35
+
+.global "@56272_80560978"
+"@56272_80560978":
+
+	.4byte 0x42B40000
+
+.global "@56273_8056097C"
+"@56273_8056097C":
+
+	.4byte 0x3F800000
+
+.global "@56276_80560980"
+"@56276_80560980":
+
+	.4byte 0x43300000
+	.4byte 0

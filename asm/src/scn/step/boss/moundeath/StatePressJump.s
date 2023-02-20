@@ -428,3 +428,37 @@ __vt__Q53scn4step4boss9moundeath14StatePressJump:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss9moundeath14StatePressJumpFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55442"
+"@55442":
+
+	.4byte 0
+
+.global "@55464_805608FC"
+"@55464_805608FC":
+
+	.4byte 0x43B40000
+
+.global "@55467_80560900"
+"@55467_80560900":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@55475_80560908"
+"@55475_80560908":
+
+	.4byte 0x4222F983
+
+.global "@55476_8056090C"
+"@55476_8056090C":
+
+	.4byte 0x3C8EFA35
+
+.global "@55477_80560910"
+"@55477_80560910":
+
+	.4byte 0x42B40000
+	.4byte 0

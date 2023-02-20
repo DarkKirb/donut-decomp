@@ -2174,9 +2174,10 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/toughdee/CharaParam.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/toughdee/CharaParam_802e9cd4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/AddOnMint_802e9d54.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainGround_802ea418.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainSmoke_802ea4dc.o \

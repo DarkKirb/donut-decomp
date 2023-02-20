@@ -324,3 +324,11 @@ __vt__Q53scn4step4boss15challengemaster14StateSCPursuit:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss15challengemaster14StateSCPursuitFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56097_80560590"
+"@56097_80560590":
+
+	.4byte 0
+	.4byte 0

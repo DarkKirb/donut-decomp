@@ -347,3 +347,11 @@ isLosing__Q53scn4step4boss15challengemaster12ProgressCtrlCFv:
 	.4byte 0
 	.4byte "__dt__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster11StateWinFly,PQ43scn4step4boss4Boss>Fv"
 	.4byte "create__Q24util102StateFactoryArg1<Q24util6IState,Q53scn4step4boss15challengemaster11StateWinFly,PQ43scn4step4boss4Boss>Fv"
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54746_80560518"
+"@54746_80560518":
+
+	.4byte 0
+	.4byte 0

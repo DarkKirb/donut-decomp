@@ -1247,3 +1247,15 @@ lbl_8023AE40:
 .global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
 "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon19challengemastershot6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@59619"
+"@59619":
+
+	.4byte 0
+
+.global "@59714"
+"@59714":
+
+	.4byte 0x3F000000

@@ -559,3 +559,47 @@ __vt__Q53scn4step4boss15challengemaster12StateFlyWall:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss15challengemaster12StateFlyWallFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55893_80560528"
+"@55893_80560528":
+
+	.4byte 0x3F800000
+
+.global "@55897_8056052C"
+"@55897_8056052C":
+
+	.4byte 0
+
+.global "@55958_80560530"
+"@55958_80560530":
+
+	.4byte 0x3F000000
+
+.global "@55959_80560534"
+"@55959_80560534":
+
+	.4byte 0x43340000
+
+.global "@55960_80560538"
+"@55960_80560538":
+
+	.4byte 0x4222F983
+
+.global "@55961_8056053C"
+"@55961_8056053C":
+
+	.4byte 0x3C8EFA35
+
+.global "@55964"
+"@55964":
+
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global "@56023_80560548"
+"@56023_80560548":
+
+	.4byte 0x40000000
+	.4byte 0

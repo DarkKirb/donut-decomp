@@ -228,3 +228,11 @@ lbl_8023DAA4:
 /* 8023DABC 002398FC  7C 08 03 A6 */	mtlr r0
 /* 8023DAC0 00239900  38 21 00 20 */	addi r1, r1, 0x20
 /* 8023DAC4 00239904  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54426"
+"@54426":
+
+	.4byte 0
+	.4byte 0

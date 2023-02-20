@@ -3043,10 +3043,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc_803e77f4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain_803e7910.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/ModelDesc_803e8040.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/StateMain_803e813c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/ModelDesc_803e84a4.o \
@@ -3168,8 +3169,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc_80563fe0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain_80563fe8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_80564048.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain_80564050.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_805640a0.o \

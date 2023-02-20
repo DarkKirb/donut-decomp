@@ -1592,9 +1592,10 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/common/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/common/StateWalkAround.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/common/StateWalkStraight.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/algorithm/AlgorithmGrandLowperAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/algorithm/AlgorithmGrandLowperAppear_80295f30.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/AddOnMint_802960e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/BrainGrandLowper_80296234.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/CharaParam_8029638c.o \
@@ -3010,7 +3011,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/algorithm/AlgorithmGrandLowperAppear_80561150.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/CharaParam_80561178.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/Custom_80561190.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/armordee/StateGrandLowperAppear_805611a0.o \

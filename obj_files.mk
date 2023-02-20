@@ -2884,18 +2884,19 @@ $(BUILD_DIR)/asm/src/scn/step/item/VacuumReceiver.o \
 $(BUILD_DIR)/asm/src/scn/step/item/modeldesc/Food.o \
 $(BUILD_DIR)/asm/src/scn/step/item/modeldesc/ScoreCoin.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateBound.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateFallFeathery.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateFixed.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateGather.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StatePreciousAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateRoah.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateVacuumReceive.o \
+$(BUILD_DIR)/asm/src/scn/step/item/state/StateWaft.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach_803c728c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateBound_803c7464.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateFall_803c789c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateFallFeathery_803c7b70.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateFixed_803c7d48.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateGather_803c7e0c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StatePreciousAppear_803c80d8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateRoah_803c8658.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateVacuumReceive_803c88cc.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateWaft_803c8be8.o \
 $(BUILD_DIR)/asm/src/scn/step/map/BinCarryItemKindUtil_803c8e48.o \
 $(BUILD_DIR)/asm/src/scn/step/map/BinDecorationKindUtil_803c8e5c.o \
 $(BUILD_DIR)/asm/src/scn/step/map/BinMaproPos_803c8fdc.o \
@@ -3140,14 +3141,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach_80563a70.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateBound_80563a78.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateFall_80563a90.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateGather_80563a98.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StatePreciousAppear_80563ac0.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateRoah_80563ad8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateVacuumReceive_80563af8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/state/StateWaft_80563b00.o \
 $(BUILD_DIR)/asm/src/scn/step/map/Constant_80563b20.o \
 $(BUILD_DIR)/asm/src/scn/step/map/DataAccessor_80563b28.o \
 $(BUILD_DIR)/asm/src/scn/step/ogen/Generator_80563b30.o \

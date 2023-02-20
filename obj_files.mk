@@ -1887,19 +1887,20 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateVulcan.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalk.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/StateWalkStepBack.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWalkAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalkAround.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/AddOnMint_802c1740.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWait_802c1b04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWalk_802c1c64.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/BrainWalkAround_802c1d2c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/CharaParam_802c1ee4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/Custom_802c1f6c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/ModelDesc_802c2188.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateAttack_802c2268.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWait_802c269c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalk_802c2750.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalkAround_802c2c58.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/leafan/AddOnMint_802c3270.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/leafan/BrainAttack_802c33fc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/leafan/CharaParam_802c34e4.o \
@@ -3039,12 +3040,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/AddOnMint_80561c50.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/Custom_80561c58.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateAttack_80561c60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWait_80561c70.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalk_80561c78.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalkAround_80561c80.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateAttack_80561c98.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateJump_80561ca0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/CharaParam_80561cb0.o \

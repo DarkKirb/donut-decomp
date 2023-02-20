@@ -210,3 +210,15 @@ __vt__Q53scn4step5enemy6lanzer6Custom:
 "@55827_8055A134":
 
 	.4byte 0x42B40000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51376"
+"@51376":
+
+	.4byte 0
+
+.global "@51377"
+"@51377":
+
+	.4byte 0x3D23D70A

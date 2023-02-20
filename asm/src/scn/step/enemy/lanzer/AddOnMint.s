@@ -380,3 +380,15 @@ Func__Q63scn4step5enemy6lanzer9AddOnMint30Mint_Wait_0$55480AddOnMint_cppFRQ26min
 	.4byte 0x616D6520
 	.4byte 0x636C6173
 	.4byte 0x73000000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55820_80561C50"
+"@55820_80561C50":
+
+	.4byte 0
+
+.global "@55821"
+"@55821":
+
+	.4byte 0x3F800000

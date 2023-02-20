@@ -507,3 +507,57 @@ __vt__Q53scn4step4boss6dubior16StateMoveThunder:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss6dubior16StateMoveThunderFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57085_805607B0"
+"@57085_805607B0":
+
+	.4byte 0x3F800000
+
+.global "@57086_805607B4"
+"@57086_805607B4":
+
+	.4byte 0xBF800000
+
+.global "@57087_805607B8"
+"@57087_805607B8":
+
+	.4byte 0
+
+.global "@57159_805607BC"
+"@57159_805607BC":
+
+	.4byte 0x3FC00000
+
+.global "@57160_805607C0"
+"@57160_805607C0":
+
+	.4byte 0x3F000000
+
+.global "@57161_805607C4"
+"@57161_805607C4":
+
+	.4byte 0x4222F983
+
+.global "@57162_805607C8"
+"@57162_805607C8":
+
+	.4byte 0x3C8EFA35
+
+.global "@57163_805607CC"
+"@57163_805607CC":
+
+	.4byte 0x43B40000
+
+.global "@57164_805607D0"
+"@57164_805607D0":
+
+	.4byte 0x42B40000
+	.4byte 0
+
+.global "@57167_805607D8"
+"@57167_805607D8":
+
+	.4byte 0x43300000
+	.4byte 0

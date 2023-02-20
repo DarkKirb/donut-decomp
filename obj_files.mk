@@ -1332,24 +1332,25 @@ $(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateFlyAway.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateHide.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateWaitFar.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/EnemyCtrl.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateCall.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateDash.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateDashWallHit.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateGlide.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateHeightAdjust.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunder.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunderStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveToOtherSide.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateShot.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunder.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunderStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/AddOnMint_8024c390.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom_8024c994.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/EnemyCtrl_8024d41c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/ModelDesc_8024d75c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateCall_8024d82c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateDash_8024dfec.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateDashWallHit_8024e3e4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateGlide_8024e5d0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateHeightAdjust_8024ef14.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunder_8024f2bc.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunderStart_8024f97c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveToOtherSide_8024fd3c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateShot_80250334.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunder_80250658.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunderStart_8025087c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateWait_80250e10.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/AddOnMint_80250ea0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/Custom_80251b44.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/ModelDesc_802522b8.o \
@@ -2993,15 +2994,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom_80560738.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateCall_80560750.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateGlide_80560758.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateHeightAdjust_80560798.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunder_805607b0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveThunderStart_805607e0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateMoveToOtherSide_805607f8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateShot_80560818.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunderStart_80560820.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/Custom_80560840.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint_80560858.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom_80560860.o \

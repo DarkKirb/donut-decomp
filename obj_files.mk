@@ -3106,11 +3106,12 @@ $(BUILD_DIR)/asm/src/scn/step/ghost/Manager.o \
 \
 $(BUILD_DIR)/asm/src/scn/strap/SceneStrap.o \
 \
+$(BUILD_DIR)/asm/src/scn/vc/Loader.o \
+$(BUILD_DIR)/asm/src/scn/vc/Main.o \
+$(BUILD_DIR)/asm/src/scn/vc/SceneVC.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/vc/Loader_803f2834.o \
-$(BUILD_DIR)/asm/src/scn/vc/Main_803f2894.o \
-$(BUILD_DIR)/asm/src/scn/vc/SceneVC_803f28f0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_803f2b1c.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_803f2cc4.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Component_803f2e80.o \

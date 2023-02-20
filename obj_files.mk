@@ -2916,11 +2916,12 @@ $(BUILD_DIR)/asm/src/scn/step/ocoll/AddOnMint.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/ManagerCreator.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/MintOCollManager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/ostop/Actor.o \
+$(BUILD_DIR)/asm/src/scn/step/ostop/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/ostop/Requestor.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/ostop/Actor_803cabbc.o \
-$(BUILD_DIR)/asm/src/scn/step/ostop/Manager_803cac88.o \
-$(BUILD_DIR)/asm/src/scn/step/ostop/Requestor_803cad40.o \
 $(BUILD_DIR)/asm/src/scn/step/ogen/Generator_803caf38.o \
 $(BUILD_DIR)/asm/src/scn/step/ogen/Manager_803cbef0.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/AbilityGetFade_803cc8a4.o \

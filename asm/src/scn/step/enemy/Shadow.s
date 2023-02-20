@@ -201,3 +201,11 @@ lbl_8028DDAC:
 /* 8028DDB8 00289BF8  7C 08 03 A6 */	mtlr r0
 /* 8028DDBC 00289BFC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8028DDC0 00289C00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52264"
+"@52264":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0

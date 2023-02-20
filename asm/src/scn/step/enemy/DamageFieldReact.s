@@ -363,3 +363,21 @@ attackPower__Q43scn4step5chara10DamageInfoCFv:
 /* 80284354 00280194  7C 08 03 A6 */	mtlr r0
 /* 80284358 00280198  38 21 00 10 */	addi r1, r1, 0x10
 /* 8028435C 0028019C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56861"
+"@56861":
+
+	.4byte 0
+
+.global "@56862"
+"@56862":
+
+	.4byte 0x3727C5AC
+
+.global "@56863"
+"@56863":
+
+	.4byte 0x3F666666
+	.4byte 0

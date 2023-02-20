@@ -193,3 +193,25 @@ changeSetting__Q43scn4step5enemy6NururiFRCQ33hel4math7Vector2ffQ26nururi4Mode:
 /* 8028B150 00286F90  D0 43 00 48 */	stfs f2, 0x48(r3)
 /* 8028B154 00286F94  90 A3 00 4C */	stw r5, 0x4c(r3)
 /* 8028B158 00286F98  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50754"
+"@50754":
+
+	.4byte 0
+
+.global "@50755"
+"@50755":
+
+	.4byte 0x40000000
+
+.global "@50789"
+"@50789":
+
+	.4byte 0x3DCCCCCD
+
+.global "@50790"
+"@50790":
+
+	.4byte 0x3F000000

@@ -1818,16 +1818,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateFly.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAim.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/AddOnMint_802b6624.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/BrainAttack_802b69c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam_802b6aa8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/Custom_802b6b60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/ModelDesc_802b76b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAim_802b78fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAttack_802b7d84.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateWait_802b8858.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainMove_802b8a40.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainWhispy_802b8c2c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/CharaParam_802b8d28.o \
@@ -3033,10 +3034,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam_805619b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/Custom_805619c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAim_80561a00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAttack_80561a20.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/CharaParam_80561a48.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/Custom_80561a50.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveCircle_80561a58.o \

@@ -275,3 +275,11 @@ updateSaveTiming__Q27storage13VolatileData2FQ27storage10SaveTiming:
 setLevelKind__Q27storage13VolatileData2FQ33scn4step9LevelKind:
 /* 8040550C 0040134C  90 83 10 54 */	stw r4, 0x1054(r3)
 /* 80405510 00401350  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49921"
+"@49921":
+
+	.4byte 0
+	.4byte 0

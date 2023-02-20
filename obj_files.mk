@@ -3173,16 +3173,17 @@ $(BUILD_DIR)/asm/src/snd/SoundSystem.o \
 $(BUILD_DIR)/asm/src/snd/SystemSERequestor.o \
 $(BUILD_DIR)/asm/src/snd/WaveHandle.o \
 \
+$(BUILD_DIR)/asm/src/storage/BackupData.o \
+$(BUILD_DIR)/asm/src/storage/BackupFileData2.o \
+$(BUILD_DIR)/asm/src/storage/GhostData.o \
+$(BUILD_DIR)/asm/src/storage/GhostFileData.o \
+$(BUILD_DIR)/asm/src/storage/StorageData.o \
+$(BUILD_DIR)/asm/src/storage/StorageManager.o \
+$(BUILD_DIR)/asm/src/storage/StorageUtil.o \
+$(BUILD_DIR)/asm/src/storage/VolatileData2.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/storage/BackupData_8040429c.o \
-$(BUILD_DIR)/asm/src/storage/BackupFileData2_804042fc.o \
-$(BUILD_DIR)/asm/src/storage/GhostData_804047e4.o \
-$(BUILD_DIR)/asm/src/storage/GhostFileData_80404824.o \
-$(BUILD_DIR)/asm/src/storage/StorageData_804048ac.o \
-$(BUILD_DIR)/asm/src/storage/StorageManager_80404914.o \
-$(BUILD_DIR)/asm/src/storage/StorageUtil_80404f84.o \
-$(BUILD_DIR)/asm/src/storage/VolatileData2_80405194.o \
 $(BUILD_DIR)/asm/src/util/Alarm_80405514.o \
 $(BUILD_DIR)/asm/src/util/AnimController_804056c0.o \
 $(BUILD_DIR)/asm/src/util/CharacterEncodeUtil_8040586c.o \
@@ -3194,8 +3195,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/storage/StorageManager_80564368.o \
-$(BUILD_DIR)/asm/src/storage/VolatileData2_80564370.o \
 $(BUILD_DIR)/asm/src/util/Alarm_80564378.o \
 $(BUILD_DIR)/asm/src/util/AnimController_80564388.o \
 $(BUILD_DIR)/asm/src/util/CurveUtility_80564390.o \

@@ -477,3 +477,11 @@ selectedBackupFileData2__Q27storage14StorageManagerFv:
 /* 80404F78 00400DB8  7C 08 03 A6 */	mtlr r0
 /* 80404F7C 00400DBC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80404F80 00400DC0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50677_80564368"
+"@50677_80564368":
+
+	.4byte 0
+	.4byte 0

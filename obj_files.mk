@@ -2748,19 +2748,20 @@ $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrillEnd.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttackWallHit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDiveAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateFlight.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShot.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShuttleLoop.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShuttleLoopEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateToss.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttackLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/wing/Wing.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_80397250.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttackWallHit_80397dc0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDiveAttack_8039806c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateFlight_803988dc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShot_80398ebc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShuttleLoop_80399880.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShuttleLoopEnd_80399d18.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateToss_80399fac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttack_8039a538.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttackLanding_8039ab18.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/Wing_8039afd4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/CommandManager_8039b2a4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/Custom_8039b400.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/Fighter_8039b4c4.o \
@@ -3128,14 +3129,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_805636d8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttackWallHit_805636e8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDiveAttack_80563700.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShot_80563720.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateShuttleLoop_80563740.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateToss_80563760.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttack_80563768.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/wing/StateUnderAttackLanding_80563778.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateCatch_80563780.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateCharge_80563798.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateDoubleKick_805637a0.o \

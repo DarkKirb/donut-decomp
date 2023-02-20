@@ -433,3 +433,25 @@ __vt__Q53scn4step4hero4wing16StateUnderAttack:
 	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57184_80563768"
+"@57184_80563768":
+
+	.4byte 0
+
+.global "@57220_8056376C"
+"@57220_8056376C":
+
+	.4byte 0x43870000
+
+.global "@57235"
+"@57235":
+
+	.4byte 0x4222F983
+
+.global "@57236"
+"@57236":
+
+	.4byte 0x3C8EFA35

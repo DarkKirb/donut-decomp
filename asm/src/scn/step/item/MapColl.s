@@ -452,3 +452,31 @@ lbl_803C4CCC:
 isDead__Q43scn4step4item7MapCollCFv:
 /* 803C4CE8 003C0B28  88 63 00 4C */	lbz r3, 0x4c(r3)
 /* 803C4CEC 003C0B2C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54075"
+"@54075":
+
+	.4byte 0
+
+.global "@54135"
+"@54135":
+
+	.4byte 0x3F000000
+
+.global "@54228"
+"@54228":
+
+	.4byte 0x3EC7AE14
+
+.global "@54229"
+"@54229":
+
+	.4byte 0x3EFAE148
+
+.global "@54230"
+"@54230":
+
+	.4byte 0x3ED1EB84
+	.4byte 0

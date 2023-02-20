@@ -2862,26 +2862,27 @@ $(BUILD_DIR)/asm/src/scn/step/info/lvmap/TargetScorePanel.o \
 $(BUILD_DIR)/asm/src/scn/step/info/ship/Ship.o \
 $(BUILD_DIR)/asm/src/scn/step/info/ship/Skip.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/item/Catcher.o \
+$(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl.o \
+$(BUILD_DIR)/asm/src/scn/step/item/Desc.o \
+$(BUILD_DIR)/asm/src/scn/step/item/FoodTableKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/item/GenerateFromObj.o \
+$(BUILD_DIR)/asm/src/scn/step/item/GetInfo.o \
+$(BUILD_DIR)/asm/src/scn/step/item/IndiviUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/item/Item.o \
+$(BUILD_DIR)/asm/src/scn/step/item/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/item/MapColl.o \
+$(BUILD_DIR)/asm/src/scn/step/item/ModelDescUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/item/ObjStop.o \
+$(BUILD_DIR)/asm/src/scn/step/item/RotAnim.o \
+$(BUILD_DIR)/asm/src/scn/step/item/StateBase.o \
+$(BUILD_DIR)/asm/src/scn/step/item/StateCallback.o \
+$(BUILD_DIR)/asm/src/scn/step/item/SuperStop.o \
+$(BUILD_DIR)/asm/src/scn/step/item/Utility.o \
+$(BUILD_DIR)/asm/src/scn/step/item/VacuumReceiver.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/item/Catcher_803c0740.o \
-$(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl_803c0e40.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Desc_803c0f2c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/FoodTableKindUtil_803c0f94.o \
-$(BUILD_DIR)/asm/src/scn/step/info/GenerateFromObj_803c0fdc.o \
-$(BUILD_DIR)/asm/src/scn/step/item/GetInfo_803c1404.o \
-$(BUILD_DIR)/asm/src/scn/step/item/IndiviUtil_803c1418.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Item_803c1488.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Manager_803c3974.o \
-$(BUILD_DIR)/asm/src/scn/step/item/MapColl_803c466c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/ModelDescUtil_803c4cf0.o \
-$(BUILD_DIR)/asm/src/scn/step/item/ObjStop_803c4e2c.o \
-$(BUILD_DIR)/asm/src/scn/step/item/RotAnim_803c5060.o \
-$(BUILD_DIR)/asm/src/scn/step/item/StateBase_803c51e8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/StateCallback_803c5264.o \
-$(BUILD_DIR)/asm/src/scn/step/item/SuperStop_803c52a0.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Utility_803c5430.o \
-$(BUILD_DIR)/asm/src/scn/step/item/VacuumReceiver_803c5584.o \
 $(BUILD_DIR)/asm/src/scn/step/item/modeldesc/Food_803c5be8.o \
 $(BUILD_DIR)/asm/src/scn/step/item/modeldesc/ScoreCoin_803c70c4.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach_803c728c.o \
@@ -3138,16 +3139,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/item/Catcher_805639a8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl_805639b0.o \
-$(BUILD_DIR)/asm/src/scn/step/info/GenerateFromObj_805639b8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/IndiviUtil_805639e8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Item_805639f0.o \
-$(BUILD_DIR)/asm/src/scn/step/item/Manager_80563a10.o \
-$(BUILD_DIR)/asm/src/scn/step/item/MapColl_80563a20.o \
-$(BUILD_DIR)/asm/src/scn/step/item/RotAnim_80563a38.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Utility_80563a50.o \
-$(BUILD_DIR)/asm/src/scn/step/item/VacuumReceiver_80563a58.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach_80563a70.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateBound_80563a78.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateFall_80563a90.o \

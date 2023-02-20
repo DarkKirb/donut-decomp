@@ -76,3 +76,15 @@ lbl_803C0F0C:
 /* 803C0F20 003BCD60  7C 08 03 A6 */	mtlr r0
 /* 803C0F24 003BCD64  38 21 00 20 */	addi r1, r1, 0x20
 /* 803C0F28 003BCD68  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52540_805639B0"
+"@52540_805639B0":
+
+	.4byte 0x3F800000
+
+.global "@52541_805639B4"
+"@52541_805639B4":
+
+	.4byte 0xBF800000

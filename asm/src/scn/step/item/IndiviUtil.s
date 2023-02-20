@@ -47,3 +47,15 @@ CenterOffs__Q43scn4step4item10IndiviUtilFQ43scn4step3map11BinItemKind:
 /* 803C147C 003BD2BC  C0 02 DA 68 */	lfs f0, "@50317_805639E8"@sda21(r2)
 /* 803C1480 003BD2C0  D0 03 00 04 */	stfs f0, 0x4(r3)
 /* 803C1484 003BD2C4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50317_805639E8"
+"@50317_805639E8":
+
+	.4byte 0x3F000000
+
+.global "@50325_805639EC"
+"@50325_805639EC":
+
+	.4byte 0

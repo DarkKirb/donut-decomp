@@ -96,3 +96,11 @@ lbl_803C5568:
 /* 803C5578 003C13B8  7C 08 03 A6 */	mtlr r0
 /* 803C557C 003C13BC  38 21 00 60 */	addi r1, r1, 0x60
 /* 803C5580 003C13C0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53795_80563A50"
+"@53795_80563A50":
+
+	.4byte 0
+	.4byte 0

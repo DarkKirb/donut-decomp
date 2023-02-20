@@ -1899,17 +1899,18 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalk.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/lanzer/StateWalkAround.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/AddOnMint_802c3270.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/BrainAttack_802c33fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/CharaParam_802c34e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/ModelDesc_802c3564.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateAttack_802c3648.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateFall_802c39a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateJump_802c3b3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateLanding_802c3dd8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateWait_802c4020.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/CharaParam_802c4154.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/Custom_802c4238.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/ModelDesc_802c4698.o \
@@ -3040,8 +3041,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateAttack_80561c98.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/leafan/StateJump_80561ca0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/CharaParam_80561cb0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/Custom_80561cc8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/StateMain_80561cd8.o \

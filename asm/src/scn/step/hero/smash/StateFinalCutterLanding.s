@@ -240,3 +240,25 @@ __vt__Q53scn4step4hero5smash23StateFinalCutterLanding:
 	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@59013_80563818"
+"@59013_80563818":
+
+	.4byte 0x3E19999A
+
+.global "@59014"
+"@59014":
+
+	.4byte 0x3E4CCCCD
+
+.global "@59015"
+"@59015":
+
+	.4byte 0x3F066666
+
+.global "@59016"
+"@59016":
+
+	.4byte 0

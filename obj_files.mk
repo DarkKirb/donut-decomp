@@ -2783,20 +2783,21 @@ $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateThrow.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateVulcan.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/fighter/StateVulcanEnd.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/Smash.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateAirSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterDrop.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterPre.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterRise.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateHammerAirSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateHammerStrongSwing.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateSmashKick.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateSmashKickCharge.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcan.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcanEnd.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/Smash_803a0508.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateAirSpin_803a0d18.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterDrop_803a0fa0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterLanding_803a1368.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterPre_803a1694.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterRise_803a1918.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateHammerAirSpin_803a1cb4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateHammerStrongSwing_803a204c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateSmashKick_803a22cc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateSmashKickCharge_803a25c4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcan_803a2900.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateVulcanEnd_803a2b98.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoGrandLowper_803a2bfc.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoStart_803a2c04.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_803a2c24.o \
@@ -3130,9 +3131,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateAirSpin_80563810.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterLanding_80563818.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/smash/StateFinalCutterRise_80563828.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/bossdemo/StateBossDemoWait_80563830.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateInit_80563860.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/staffcredit/StateJump_80563868.o \

@@ -258,3 +258,25 @@ update__Q33scn7history2BGFRCQ33hel4math7Vector3:
 
 	.4byte 0x546F704C
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53191_80560008"
+"@53191_80560008":
+
+	.4byte 0x40900000
+
+.global "@53252_8056000C"
+"@53252_8056000C":
+
+	.4byte 0x42480000
+
+.global "@53253_80560010"
+"@53253_80560010":
+
+	.4byte 0x40C00000
+
+.global "@53254_80560014"
+"@53254_80560014":
+
+	.4byte 0xC0A00000

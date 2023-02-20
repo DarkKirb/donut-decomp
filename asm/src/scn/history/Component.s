@@ -290,3 +290,15 @@ lbl_802079D8:
 /* 802079E8 00203828  7C 08 03 A6 */	mtlr r0
 /* 802079EC 0020382C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802079F0 00203830  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52828_80560038"
+"@52828_80560038":
+
+	.4byte 0xFFFFFFFF
+
+.global "@52833"
+"@52833":
+
+	.4byte 0xFFFFFFFF

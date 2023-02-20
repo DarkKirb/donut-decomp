@@ -310,3 +310,15 @@ drawWarp__Q33scn7history13EffectManagerFv:
 /* 80207F30 00203D70  7C 08 03 A6 */	mtlr r0
 /* 80207F34 00203D74  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 80207F38 00203D78  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53274_80560040"
+"@53274_80560040":
+
+	.4byte 0x3DCCCCCD
+
+.global "@53275_80560044"
+"@53275_80560044":
+
+	.4byte 0x447A0000

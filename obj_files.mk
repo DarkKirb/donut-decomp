@@ -2371,10 +2371,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/MintMonitor.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Monitor.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/MoveLandAttack.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/Manager_803199f4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/MoveLandAttack_80319c8c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Manager_8031a06c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Otachidai_8031a410.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/rollball/Manager_8031a6b8.o \
@@ -3097,7 +3098,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/MoveLandAttack_805629c0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Otachidai_805629d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/rollball/Manager_805629e8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguarder/RoomGuarder_805629f8.o \

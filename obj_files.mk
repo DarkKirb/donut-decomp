@@ -3012,10 +3012,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/comothread/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc_803e3668.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/StateMain_803e3784.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/ModelDesc_803e3f64.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateMain_803e4090.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateReflect_803e4640.o \
@@ -3160,8 +3161,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc_80563f00.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/StateMain_80563f08.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateReflect_80563f18.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickWall_80563f30.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateVanish_80563f40.o \

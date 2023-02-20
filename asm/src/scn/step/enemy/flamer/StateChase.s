@@ -373,3 +373,61 @@ __vt__Q53scn4step5enemy6flamer10StateChase:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6flamer10StateChaseFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55211_805618F8"
+"@55211_805618F8":
+
+	.4byte 0
+
+.global "@55239"
+"@55239":
+
+	.4byte 0x3727C5AC
+
+.global "@55240"
+"@55240":
+
+	.4byte 0x42F00000
+
+.global "@55241"
+"@55241":
+
+	.4byte 0x3F800000
+
+.global "@55242"
+"@55242":
+
+	.4byte 0x42700000
+
+.global "@55243"
+"@55243":
+
+	.4byte 0x3DA3D70A
+
+.global "@55291_80561910"
+"@55291_80561910":
+
+	.4byte 0x3F000000
+
+.global "@55299_80561914"
+"@55299_80561914":
+
+	.4byte 0x4222F983
+
+.global "@55300_80561918"
+"@55300_80561918":
+
+	.4byte 0x3C8EFA35
+
+.global "@55301_8056191C"
+"@55301_8056191C":
+
+	.4byte 0x43B40000
+
+.global "@55305"
+"@55305":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

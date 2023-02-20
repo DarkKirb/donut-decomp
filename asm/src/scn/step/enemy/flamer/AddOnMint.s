@@ -931,3 +931,21 @@ __vt__Q53scn4step5enemy6flamer12StateMoveCWR:
 	.4byte 0x636C6173
 	.4byte 0x73000000
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56592"
+"@56592":
+
+	.4byte 0
+
+.global "@56607"
+"@56607":
+
+	.4byte 0x3F800000
+
+.global "@56627"
+"@56627":
+
+	.4byte 0xBF800000
+	.4byte 0

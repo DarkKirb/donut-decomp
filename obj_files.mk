@@ -2120,18 +2120,19 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJump.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJumpAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJumpStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateLanding.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/AddOnMint_802e22c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainMove_802e25a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/BrainWait_802e2724.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/CharaParam_802e2890.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/Custom_802e2930.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/ModelDesc_802e2af4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateFall_802e2bd4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJump_802e2e64.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJumpStart_802e30e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateLanding_802e33e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/snowl/BrainFly_802e3540.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/snowl/CharaParam_802e36a4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/snowl/Custom_802e372c.o \
@@ -3062,11 +3063,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/CharaParam_805622d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/Custom_805622d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateFall_805622e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJump_805622e8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sisterbound/StateJumpStart_805622f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyAround_80562300.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/snowl/StateFlyStraight_80562310.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sodory/AddOnMint_80562320.o \

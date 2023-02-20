@@ -47,3 +47,11 @@ lbl_802E2908:
 /* 802E2924 002DE764  7C 08 03 A6 */	mtlr r0
 /* 802E2928 002DE768  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802E292C 002DE76C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_805622D0"
+"@48778_805622D0":
+
+	.4byte 0x3E99999A
+	.4byte 0

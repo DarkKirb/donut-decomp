@@ -2729,23 +2729,24 @@ $(BUILD_DIR)/asm/src/scn/step/hero/stone/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/Stone.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Barrier.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Parasol.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolCapture.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDive.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDrill.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDrillEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachute.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachuteFall.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolShield.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolSwing.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolUnder.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDive.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrill.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrillEnd.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Barrier_8039211c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Custom_8039246c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Parasol_80392558.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolCapture_803928fc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDive_80392f00.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDrill_803934c4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDrillEnd_80393a6c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachute_80393bc4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachuteFall_803942ac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolShield_80394710.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolSwing_803948b8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolUnder_8039528c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDive_803956b0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrill_80395e10.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrillEnd_803965f4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin_80396898.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow_80396f2c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_80397250.o \
@@ -3126,15 +3127,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/Barrier_80563610.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolCapture_80563618.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDive_80563650.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolDrill_80563658.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachute_80563668.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolParachuteFall_80563678.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolSwing_80563680.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDive_80563698.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrill_805636a8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin_805636c8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow_805636d0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_805636d8.o \

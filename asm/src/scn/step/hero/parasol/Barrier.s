@@ -231,3 +231,11 @@ lbl_8039240C:
 /* 80392460 0038E2A0  7C 08 03 A6 */	mtlr r0
 /* 80392464 0038E2A4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80392468 0038E2A8  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@59019"
+"@59019":
+
+	.4byte 0x3F4CCCCD
+	.4byte 0

@@ -2881,10 +2881,11 @@ $(BUILD_DIR)/asm/src/scn/step/item/SuperStop.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Utility.o \
 $(BUILD_DIR)/asm/src/scn/step/item/VacuumReceiver.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/item/modeldesc/Food.o \
+$(BUILD_DIR)/asm/src/scn/step/item/modeldesc/ScoreCoin.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/item/modeldesc/Food_803c5be8.o \
-$(BUILD_DIR)/asm/src/scn/step/item/modeldesc/ScoreCoin_803c70c4.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateApproach_803c728c.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateBound_803c7464.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateFall_803c789c.o \

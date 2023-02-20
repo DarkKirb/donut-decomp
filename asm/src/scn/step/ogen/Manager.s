@@ -724,3 +724,11 @@ lbl_803CC870:
 /* 803CC898 003C86D8  7C 08 03 A6 */	mtlr r0
 /* 803CC89C 003C86DC  38 21 00 80 */	addi r1, r1, 0x80
 /* 803CC8A0 003C86E0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55341_80563B58"
+"@55341_80563B58":
+
+	.4byte 0
+	.4byte 0

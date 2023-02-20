@@ -2920,10 +2920,11 @@ $(BUILD_DIR)/asm/src/scn/step/ostop/Actor.o \
 $(BUILD_DIR)/asm/src/scn/step/ostop/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/ostop/Requestor.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/ogen/Generator.o \
+$(BUILD_DIR)/asm/src/scn/step/ogen/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/ogen/Generator_803caf38.o \
-$(BUILD_DIR)/asm/src/scn/step/ogen/Manager_803cbef0.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/AbilityGetFade_803cc8a4.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/AddOnMint_803ccaac.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/BGFade_803cccd4.o \
@@ -3145,8 +3146,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/ogen/Generator_80563b30.o \
-$(BUILD_DIR)/asm/src/scn/step/ogen/Manager_80563b58.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/AbilityGetFade_80563b60.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/DarknessAdjust_80563b80.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/DarknessLight_80563b90.o \

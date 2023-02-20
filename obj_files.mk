@@ -1594,14 +1594,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/common/StateWalkStraight.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/enemy/algorithm/AlgorithmGrandLowperAppear.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/StateGrandLowperAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/AddOnMint_802960e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/BrainGrandLowper_80296234.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/CharaParam_8029638c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/Custom_80296468.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/ModelDesc_8029662c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/StateGrandLowperAppear_80296708.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/AddOnMint_80296978.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/BrainGrandLowper_80296d08.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/BrainWalk_80296dec.o \
@@ -3011,9 +3012,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/CharaParam_80561178.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/Custom_80561190.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/armordee/StateGrandLowperAppear_805611a0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/Custom_805611b8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/ModelDesc_805611d0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/StateDoubleAttack_80561200.o \

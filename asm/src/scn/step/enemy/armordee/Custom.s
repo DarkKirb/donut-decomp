@@ -169,3 +169,25 @@ __vt__Q53scn4step5enemy8armordee6Custom:
 	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51899"
+"@51899":
+
+	.4byte 0x3F800000
+
+.global "@51900_80561194"
+"@51900_80561194":
+
+	.4byte 0x3FC00000
+
+.global "@51901"
+"@51901":
+
+	.4byte 0x40000000
+
+.global "@51902"
+"@51902":
+
+	.4byte 0x40400000

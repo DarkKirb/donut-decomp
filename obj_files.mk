@@ -2843,23 +2843,24 @@ $(BUILD_DIR)/asm/src/scn/step/info/challenge/TimeUp.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/Result.o \
 $(BUILD_DIR)/asm/src/scn/step/info/challenge/masterresult/TotalScore.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Explain.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainBase.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainButton.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainCursor.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Frame.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/FrameControl.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/LvMap.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/PlayerIcon.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Ranking.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/RankingPanel.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/SphereComplete.o \
+$(BUILD_DIR)/asm/src/scn/step/info/lvmap/TargetScorePanel.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_803b9934.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Explain_803b9ddc.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainBase_803ba630.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainButton_803bbcb8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole_803bc170.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainCursor_803bcf58.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainUtil_803bd338.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Frame_803bd588.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/FrameControl_803bdf18.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/LvMap_803bdfd8.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/PlayerIcon_803be5fc.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/Ranking_803bea40.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/RankingPanel_803bf434.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/SphereComplete_803bf878.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/TargetScorePanel_803bfd88.o \
 $(BUILD_DIR)/asm/src/scn/step/info/ship/Ship_803c0418.o \
 $(BUILD_DIR)/asm/src/scn/step/info/ship/Skip_803c0548.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Catcher_803c0740.o \
@@ -3136,9 +3137,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/AllStageClear_80563990.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/ExplainConsole_80563998.o \
-$(BUILD_DIR)/asm/src/scn/step/info/lvmap/SphereComplete_805639a0.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Catcher_805639a8.o \
 $(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl_805639b0.o \
 $(BUILD_DIR)/asm/src/scn/step/info/GenerateFromObj_805639b8.o \

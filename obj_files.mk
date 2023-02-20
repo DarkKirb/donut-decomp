@@ -2077,27 +2077,28 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/searches/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/StateFly.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainDash.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateDash.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJumpStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashed.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashedEnd.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/AddOnMint_802dc558.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainChase_802dc83c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainDash_802dca04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainEscape_802dcb8c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/BrainGrandLowper_802dcc50.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/CharaParam_802dce78.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/Custom_802dcf08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/ModelDesc_802dd8f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateChase_802dd9e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateDash_802dded8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateEscape_802de25c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateFall_802de53c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperAppear_802de75c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperEscape_802de928.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperEscapeStart_802deb60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJump_802dec94.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJumpStart_802df010.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashed_802df2d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashedEnd_802df800.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/AddOnMint_802dfae0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFix_802dfda0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFixCeil_802dff00.o \
@@ -3059,17 +3060,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/CharaParam_80562198.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/Custom_805621a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateChase_805621b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateDash_805621c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateEscape_805621d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateFall_805621e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateGrandLowperAppear_805621e8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJump_80562200.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJumpStart_80562208.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashed_80562210.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashedEnd_80562230.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFixCeil_80562240.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/CharaParam_80562250.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/Custom_80562260.o \

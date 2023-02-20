@@ -286,3 +286,21 @@ __vt__Q53scn4step5enemy5sheld9StateDash:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy5sheld9StateDashFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56210_805621C0"
+"@56210_805621C0":
+
+	.4byte 0
+
+.global "@56211_805621C4"
+"@56211_805621C4":
+
+	.4byte 0x3F000000
+
+.global "@56222"
+"@56222":
+
+	.4byte 0x3A83126F
+	.4byte 0

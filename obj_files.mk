@@ -3023,11 +3023,12 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickWall.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateVanish.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateExplosion.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/ModelDesc_803e5350.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateExplosion_803e544c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain_803e5788.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/ModelDesc_803e5af4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/StateMain_803e5c10.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateExplosion_803e6284.o \
@@ -3162,8 +3163,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateExplosion_80563f50.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain_80563f68.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/ModelDesc_80563f78.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/StateMain_80563f80.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion_80563fb0.o \

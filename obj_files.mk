@@ -2410,9 +2410,10 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstarcontinue/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow_8032a508.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/Manager_8032b1d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/ZoneSwitch_8032b4b0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AbilityBase_8032b780.o \
@@ -3110,7 +3111,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow_80562ab8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AdditionalMove_80562ad0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/Blink_80562b00.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/BossDemoCtrl_80562b10.o \

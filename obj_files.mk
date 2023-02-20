@@ -2151,16 +2151,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateGroundAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWait.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sodory/StateWalkAround.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/BrainCreditPraise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StatePraise.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/AddOnMint_802e6a60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/BrainCreditPraise_802e6bec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/CharaParam_802e6cb8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/Custom_802e6d48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/ModelDesc_802e6e78.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateAttack_802e6f6c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateJump_802e7104.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StatePraise_802e74ac.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainBound_802e77e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainPuff_802e78c4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/CharaParam_802e79a8.o \

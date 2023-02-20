@@ -235,3 +235,11 @@ lbl_803D0B88:
 	.4byte "@51703_80492D54"
 	.4byte "@51704_80492D68"
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51871_80563CC8"
+"@51871_80563CC8":
+
+	.4byte 0
+	.4byte 0

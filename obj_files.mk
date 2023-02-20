@@ -1450,12 +1450,13 @@ $(BUILD_DIR)/asm/src/scn/step/camera/ZoomController.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/ZoomControllerData.o \
 $(BUILD_DIR)/asm/src/scn/step/camera/ZoomQuake.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/challenge/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/challenge/RankItem.o \
+$(BUILD_DIR)/asm/src/scn/step/challenge/Score.o \
+$(BUILD_DIR)/asm/src/scn/step/challenge/ScoreInfo.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/challenge/Manager_80268224.o \
-$(BUILD_DIR)/asm/src/scn/step/info/challenge/RankItem_80269658.o \
-$(BUILD_DIR)/asm/src/scn/step/challenge/Score_8026999c.o \
-$(BUILD_DIR)/asm/src/scn/step/challenge/ScoreInfo_8026a048.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/AddOnMint_8026a144.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/AreaLight_8026c63c.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/BodyColl_8026cdb4.o \
@@ -3002,7 +3003,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/challenge/Manager_80560bf0.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/AreaLight_80560c08.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/CliffChecker_80560c20.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/Culling_80560c38.o \

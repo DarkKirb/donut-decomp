@@ -2351,11 +2351,12 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVomit.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/GuideBoard.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa_80313300.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Manager_80313d80.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc_80314314.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/Manager_80315744.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/MasterAttackArea_80315c14.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80315cd0.o \
@@ -3092,8 +3093,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa_80562900.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc_80562918.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80562948.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/MasterMarker_80562958.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/Manager_80562960.o \

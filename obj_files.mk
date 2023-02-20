@@ -3052,10 +3052,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/ModelDesc_803e87f4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/StateMain_803e8974.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/ModelDesc_803e9494.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/StateMain_803e9590.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_803e98c8.o \
